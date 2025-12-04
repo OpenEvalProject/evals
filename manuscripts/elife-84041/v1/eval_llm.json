@@ -1,0 +1,279 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C20",
+      "C21",
+      "C22",
+      "C24",
+      "C25"
+    ],
+    "result": "Asynchronous release events comprise two spatially distinct subpopulations: approximately 73-75% occur inside the active zone (AZ) with a bias toward the AZ center, while approximately 25-27% occur ectopically outside the functionally defined AZ. This spatial distribution is non-random and consistent across different imaging modalities and temporal windows.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple independent measurements using vGlut1-pHluorin (C2, C3, C15) and SF-iGluSnFR (C24) consistently demonstrate two spatially distinct populations. The spatial distribution differs significantly from random simulations (C16), and the in-AZ subpopulation localizes closer to the AZ center than synchronous events (C17). The findings are robust across different acquisition rates (C21, C22) and reach an asymptote with sufficient sampling (C20), supporting genuine spatial heterogeneity rather than sampling artifacts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C32",
+      "C33",
+      "C23"
+    ],
+    "result": "Ectopic asynchronous events display significantly longer temporal intervals from synchronous events compared to asynchronous events inside the AZ, establishing temporal as well as spatial distinctions between the two asynchronous subpopulations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4 and C32 demonstrate statistically significant temporal differences between ectopic and in-AZ asynchronous events relative to synchronous events. Claim C33 shows no temporal differences within the in-AZ subpopulation when comparing events inside versus outside release sites, supporting that the temporal distinction is specific to the ectopic population. The temporal analysis is internally consistent and supported by data in Figures 4A-D.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C29",
+      "C30",
+      "C31",
+      "C67"
+    ],
+    "result": "Synchronous and asynchronous release events show limited spatial overlap at the same release sites, with only approximately 15-25% of asynchronous events occurring at release sites defined by synchronous events.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple independent spatial analyses support limited overlap: hierarchical clustering shows 25.4% overlap (C29), nearest-neighbor analysis shows ~20% overlap (C31), and the overall calculated overlap is ~15% (C30). The finding is consistent in Sr2+ conditions with modest increase to 31% (C67). The convergence of multiple analytical approaches strengthens the conclusion, though the authors acknowledge temporal limitations of the observation window may underestimate overlap.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Synchronous and asynchronous release events differ in their exo-endocytosis coupling, with synchronous events showing significantly larger average amplitude and greater contribution from the fast calcium-dependent component of endocytosis (~800 ms), while both forms share similar ultrafast endocytosis (~60 ms).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The kinetic analysis identifies two distinct decay components (C34, C35) corresponding to ultrafast and fast endocytosis. Synchronous events show significantly larger amplitude (C37) and fast component (C38), while ultrafast components are similar (C39). The differences are specific to the two release forms rather than spatial subpopulations of asynchronous events (C40). The findings are supported by quantitative data in Figure 5 and consistent with previous literature on endocytosis mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Synchronous event amplitude and fast endocytosis component increase with distance from the AZ center in a calcium-dependent manner, while asynchronous events show uniform properties across the AZ. This spatial gradient is abolished by EGTA-AM and is independent of multivesicular release.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The distance-dependent increase in synchronous event amplitude (C41, C44) and fast endocytosis (C47) is well-documented, while asynchronous events lack this spatial dependence (C42, C45, C50). The phenomenon is calcium-dependent (abolished by EGTA-AM: C43, C49, C51, C55) and persists after excluding MVR events (C52, C54). Both population-level (C44, C45) and single-bouton analyses (C53-C56) support the findings. The ultrafast component remains spatially uniform for synchronous events (C48), indicating specificity to the fast calcium-dependent pathway.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Sr2+-evoked asynchronous release exhibits similar spatial organization to calcium-evoked asynchronous release (76.5% in-AZ, 23.5% ectopic) but eliminates the differences in endocytosis kinetics between synchronous and asynchronous events, with synchronous events in Sr2+ resembling asynchronous events in normal conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Sr2+ enhances asynchronous release (C61-C63) while preserving its spatial organization (C64-C66), including the proportion of ectopic events and central bias of in-AZ events. The key finding is that Sr2+ eliminates endocytosis differences between synchronous and asynchronous events (C68, C69) and abolishes the distance-dependent gradient in synchronous events (C70), while asynchronous events remain unchanged (C71, C72). This supports the calcium-dependence of the observed differences and validates the spatial findings across different experimental conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C12",
+      "C18",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "The study achieved ~27 nm localization precision for individual release events using vGlut1-pHluorin, identified 8.9 \u00b1 0.2 release sites per AZ with 2.8 \u00b1 0.1 repeatedly reused sites, with comparable localization precision across different event types and spatial locations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The technical specifications are clearly stated (C12) and validated by consistent localization precision across event types and locations (C18). The number of release sites (C27, C28) aligns with previous estimates using independent methods. SF-iGluSnFR measurements have lower precision (~75 nm, C26) but provide independent validation. These methodological details are critical for interpreting the spatial findings and are well-documented with appropriate citations to previous work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C19",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "The functional definition of AZ dimensions using synchronous event clustering agrees with ultrastructural measurements and uses a 50 nm cluster diameter derived from inconsistency coefficient calculations, providing better spatial resolution than SF-iGluSnFR-based approaches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The functional AZ definition is validated against EM measurements (C19) and the 50 nm clustering diameter is algorithmically derived (C87) rather than arbitrarily chosen. The authors provide critical analysis of SF-iGluSnFR limitations (C88, C89), explaining how lower localization precision and larger cluster diameters could overestimate spatial overlap. This methodological rigor strengthens confidence in the spatial findings, though the authors appropriately acknowledge limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C46",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Control experiments demonstrate that the observed differences in event amplitude are endocytosis-dependent (abolished by dynamin inhibition), not due to lateral diffusion (similar spatial profiles and temperature-independence) or photobleaching (minimal contribution).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple control experiments systematically exclude alternative explanations: dyngo-4a eliminates amplitude differences (C46), spatial profiles are similar across the AZ (C57), temperature changes don't affect early event profiles despite 10-fold diffusion changes (C58, C59), and photobleaching is minimal (C60). These controls strengthen the interpretation that endocytosis differences drive the observed amplitude variations, though the dyngo-4a experiment has limited spatial resolution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C90"
+    ],
+    "result": "The current findings reconcile previous contradictory studies by showing that synchronous and asynchronous events can overlap at the same release sites in ~15-20% of cases but are largely spatially segregated, with methodological differences (observation duration, localization precision) explaining previous discrepancies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The authors provide a thoughtful synthesis (C84, C90) explaining how their findings bridge previous flash-freeze EM and SF-iGluSnFR studies. They identify specific methodological limitations affecting spatial overlap estimates: temporal constraints from synaptic drift (C85, C86) and differences in localization precision. This reconciliation is logical and well-reasoned, though it relies partly on inference about methodological limitations rather than direct experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "Prior work established that asynchronous release is ubiquitous in central synapses, regulates multiple aspects of synaptic function, but previous studies reached contradictory conclusions about its spatial organization at the active zone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims accurately represent prior literature through appropriate citations. The functional importance of asynchronous release (C6, C7, C8) is well-established. The authors correctly identify the contradiction between flash-freeze EM studies showing central localization (C9, C10) and SF-iGluSnFR studies showing broader distribution (C11). This sets up the rationale for the current study and is appropriately supported by citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Ectopic release has been previously observed for synchronous events in multiple synapse types and is associated with extrasynaptic SNARE protein nanoclusters, including Syntaxin-1A clusters that are smaller and less stable than those in the AZ.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The discussion appropriately contextualizes ectopic asynchronous release within existing literature on ectopic synchronous release (C73-C75) and molecular organization (C76-C81). The citations support the presence of extrasynaptic SNARE clusters and their properties. Claim C81 is appropriately qualified as speculative. This provides important context for interpreting the novel finding of ectopic asynchronous release.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C82",
+      "C83"
+    ],
+    "result": "Previous studies using flash-freeze EM suggested distinct spatial organization with preferential NMDA receptor alignment for asynchronous events, while SF-iGluSnFR studies observed ~50% overlap between synchronous and asynchronous release.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims accurately represent the contradictory findings from prior studies (Kusick et al., 2020; Li et al., 2021 vs. Mendon\u00e7a et al., 2022) that motivated the current work. The citations are appropriate and the characterization of the discrepancy is fair, setting up the need for the reconciliation provided by the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "The observed differences in exo-endocytosis coupling between synchronous and asynchronous release are consistent with calcium-dependent mechanisms involving calmodulin and synaptotagmin, and may involve differential SNARE protein distribution across the AZ.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The synthesis (C91) is well-supported by the experimental data. The mechanistic interpretations (C92-C96) are appropriately qualified and supported by relevant citations. The authors propose plausible mechanisms while acknowledging that future work is needed to define precise molecular mechanisms. This represents appropriate scientific interpretation of the findings within the context of existing literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Experiments used hippocampal neurons from E16-17 rat pups cultured and infected at DIV3, with imaging performed at DIV16-19 at 37\u00b0C using 1 Hz field stimulation synchronized with frame acquisition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These methodological details are clearly stated and appropriate for the experimental design. The use of 37\u00b0C (C99) is important for physiological relevance, and the synchronized stimulation protocol (C100) is critical for temporal classification of events. These details are sufficient for reproducibility and are standard for this type of study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1"
+    ],
+    "result": "Asynchronous release persists for tens to hundreds of milliseconds after an action potential.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is a well-established characteristic of asynchronous release supported by extensive prior literature and consistent with the temporal windows used in the current study (50-100+ ms post-stimulus). This foundational definition is appropriate and uncontroversial.",
+    "result_type": "MINOR"
+  }
+]

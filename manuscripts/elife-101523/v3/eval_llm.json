@@ -1,0 +1,193 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C59",
+      "C77",
+      "C78"
+    ],
+    "result": "CGRP neurons encode aversive stimulus intensity through variations in firing duration and amplitude. Electrophysiological recordings show that CGRP neurons respond more strongly to the US than the CS, with differential responses to stimuli of varying threat levels (pinprick < robot chasing < tail pinch), where tail pinch elicited the highest firing rate (average 58 Hz).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C16-C22, C59, C77-C78 provide converging electrophysiological evidence that CGRP neurons encode stimulus intensity through firing patterns. The optical tagging methodology (C77-C78) validates neuron identification, and the graded responses to different aversive stimuli (C19-C22) with statistical support demonstrate intensity encoding. The preferential US vs. CS response (C16-C18, C59) is well-documented in Figures 1F-1I.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C34",
+      "C82"
+    ],
+    "result": "Optogenetic activation of CGRP neurons during robot chasing elevated flight responses during both conditioning and retention tests. ChR2 stimulation increased flight scores and velocity compared to control, Jaws, and unpaired groups, while maintaining equivalent physical contact with the robot across groups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C25-C30, C34 demonstrate that ChR2 activation enhances active defensive behaviors with robot chasing as US. The behavioral data in Figures 3C-F show significantly elevated flight scores and velocities in ChR2 group. Control for physical contact (C82) rules out confounding effects. The mechanistic interpretation (C5) about threat perception amplification is reasonable given the data pattern, though remains inferential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C31",
+      "C32",
+      "C33",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Optogenetic inhibition of CGRP neurons with Jaws reduced flight responses during conditioning but did not significantly reduce freezing during retention testing. This unexpected result is attributed to post-illumination rebound excitation from Jaws, which may have allowed fear memory formation despite transient inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C6, C27, C31-C33, C65-C67 describe Jaws inhibition results that partially contradict expectations. While C6 and C27 show reduced flight during conditioning, C32 shows no difference in freezing during retention. The authors' explanation invoking Jaws rebound excitation (C33, C66-C67) is plausible but speculative. The failure to block memory formation undermines strong conclusions about necessity. This is addressed more definitively with TetTox experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "CGRP activation during footshock conditioning amplified freezing but not fleeing responses. ChR2 stimulation during footshock US enhanced conditioned freezing in retention tests, while all groups showed equivalently low flight responses, demonstrating that CGRP neurons primarily drive passive defensive behaviors in this context.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C40, C72-C74 demonstrate US-dependent effects of CGRP manipulation. With footshock as US, ChR2 activation enhanced freezing (C38, C73) but not fleeing (C37, C39), contrasting with robot chasing results. This supports the conclusion (C40, C74) that CGRP neurons primarily mediate passive defenses but can engage active defenses depending on threat context. Data in Figure 4 support these claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C84",
+      "C85",
+      "C94"
+    ],
+    "result": "Increasing robot speed from 70 to 90 cm/s systematically increased flight responses and decreased freezing during retention, mimicking the effect of optogenetic CGRP activation. The 90 cm/s condition produced flight responses similar to 70 cm/s with ChR2 stimulation, suggesting CGRP activity amplifies perceived threat.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C49, C61-C64, C84-C85, C94 demonstrate that manipulating physical threat level (robot speed) produces behavioral effects similar to manipulating CGRP activity. The positive correlation between speed and flight (C46, C85) and negative correlation with freezing (C47) support graded threat encoding. The equivalence between 90 cm/s and 70 cm/s+ChR2 (C48, C63) provides strong evidence for the threat amplification hypothesis (C49, C64). Bumping data (C84-C85, C94) confirm increased physical contact at higher speeds.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C68",
+      "C71",
+      "C87",
+      "C88"
+    ],
+    "result": "Chronic silencing of CGRP neurons with TetTox reduced both freezing and fleeing responses during conditioning and retention with high-speed robot (90 cm/s), demonstrating that CGRP neurons are necessary for threat perception and defensive behavior expression. However, progressive freezing increases during conditioning suggest involvement of other pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C54, C68, C71, C87-C88 show that TetTox silencing, unlike transient Jaws inhibition, effectively blocks both active and passive defensive behaviors. The sustained reduction in both freezing and flight during retention (C52) demonstrates necessity. The observation of progressive freezing despite silencing (C68) appropriately acknowledges alternative pathways (C69-C70). Control for bumping (C87) rules out confounds. Data in Figure 6 strongly support these claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C7",
+      "C75",
+      "C76"
+    ],
+    "result": "CGRP neurons function as a critical alarm system that dynamically regulates defensive behaviors by amplifying threat perception, predominantly driving freezing but also enabling active responses under heightened danger to ensure adaptive responses aligned with threat intensity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C75-C76 represent the main conclusions integrating all experimental findings. The evidence from optogenetic manipulation (activation and silencing), threat level manipulation (robot speed), and US type manipulation (robot vs. footshock) converges to support this model. CGRP neurons show graded responses to threat intensity, their manipulation bidirectionally modulates defensive behaviors, and the behavioral output depends on threat context. This synthesis is well-supported by the collective data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C60",
+      "C69",
+      "C70"
+    ],
+    "result": "Prior research established that CGRP neurons respond to diverse aversive stimuli and primarily mediate passive freezing responses, with limited exploration of active defensive behaviors. The choice of defensive strategy depends on perceived threat severity, and most prior CGRP research used footshock in small arenas, potentially limiting observation of fleeing responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C8-C15, C55-C58, C60, C69-C70 summarize established knowledge and prior work. These are appropriately cited and provide context for the current study. The characterization of the literature gap (C2, C14-C15, C58) justifies the experimental approach. The discussion of alternative pathways (C69-C70) appropriately acknowledges complexity. These background claims are well-supported by citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C95",
+      "C96"
+    ],
+    "result": "Methodological details include the use of CalcaCre/+ mice, optrode recordings, specific behavioral definitions (freezing \u22650.8s immobility, flight >8 cm/s velocity), robot speeds (70-90 cm/s), and experimental timing (dark phase, 3-6 month old mice of both sexes with no sex differences observed).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C81, C89-C93, C95-C96 provide essential methodological details. These are clearly stated and internally consistent. The behavioral definitions (C80-C81) are operationally defined. The animal details (C89, C95-C96) are appropriate. The robot speed specifications (C91-C93) are precise. These methodological claims are well-documented and support reproducibility.",
+    "result_type": "MINOR"
+  }
+]

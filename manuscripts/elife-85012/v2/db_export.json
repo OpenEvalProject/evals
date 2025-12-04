@@ -1,0 +1,1618 @@
+{
+  "submission": {
+    "id": "cb46dec0-2cf8-404c-ae31-75fdbc34dccc",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-04T03:53:28.162425Z",
+    "updated_at": "2025-12-04T03:53:28.162425Z"
+  },
+  "content": [
+    {
+      "id": "79a459a7-6a54-4496-9a7a-5d3e09442df2",
+      "submission_id": "cb46dec0-2cf8-404c-ae31-75fdbc34dccc",
+      "content_type": "manuscript",
+      "content_text": "# Eelbrain, a Python toolkit for time-continuous analysis with temporal response functions\n\n## Authors\n\n- Christian Brodbeck<sup>1</sup> ([ORCID: 0000-0001-8380-639X](https://orcid.org/0000-0001-8380-639X)) \u2020\n- Proloy Das<sup>2</sup> ([ORCID: 0000-0002-8807-042X](https://orcid.org/0000-0002-8807-042X))\n- Marlies Gillis<sup>3</sup> ([ORCID: 0000-0002-3967-2950](https://orcid.org/0000-0002-3967-2950))\n- Joshua P Kulasingham<sup>4</sup>\n- Shohini Bhattasali<sup>5</sup> ([ORCID: 0000-0002-6767-6529](https://orcid.org/0000-0002-6767-6529))\n- Phoebe Gaston<sup>1</sup>\n- Philip Resnik<sup>6</sup>\n- Jonathan Z Simon<sup>6</sup> ([ORCID: 0000-0003-0858-0698](https://orcid.org/0000-0003-0858-0698))\n\n### Affiliations\n\n1. McMaster University Hamilton Canada ([ROR:02fa3aq29](https://ror.org/02fa3aq29))\n2. Stanford University Stanford United States ([ROR:00f54p054](https://ror.org/00f54p054))\n3. Katholieke Universiteit Leuven Leuven Belgium ([ROR:05f950310](https://ror.org/05f950310))\n4. Link\u00f6ping University Link\u00f6ping Sweden ([ROR:05ynxx418](https://ror.org/05ynxx418))\n5. University of Toronto Toronto Canada ([ROR:03dbr7087](https://ror.org/03dbr7087))\n6. University of Maryland, College Park College Park United States ([ROR:047s2c258](https://ror.org/047s2c258))\n\n\u2020 Corresponding author\n\n## Abstract\n\nEven though human experience unfolds continuously in time, it is not strictly linear; instead, it entails cascading processes building hierarchical cognitive structures. For instance, during speech perception, humans transform a continuously varying acoustic signal into phonemes, words, and meaning, and these levels all have distinct but interdependent temporal structures. Time-lagged regression using temporal response functions (TRFs) has recently emerged as a promising tool for disentangling electrophysiological brain responses related to such complex models of perception. Here, we introduce the Eelbrain Python toolkit, which makes this kind of analysis easy and accessible. We demonstrate its use, using continuous speech as a sample paradigm, with a freely available EEG dataset of audiobook listening. A companion GitHub repository provides the complete source code for the analysis, from raw data to group-level statistics. More generally, we advocate a hypothesis-driven approach in which the experimenter specifies a hierarchy of time-continuous representations that are hypothesized to have contributed to brain responses, and uses those as predictor variables for the electrophysiological signal. This is analogous to a multiple regression problem, but with the addition of a time dimension. TRF analysis decomposes the brain signal into distinct responses associated with the different predictor variables by estimating a multivariate TRF (mTRF), quantifying the influence of each predictor on brain responses as a function of time(-lags). This allows asking two questions about the predictor variables: (1) Is there a significant neural representation corresponding to this predictor variable? And if so, (2) what are the temporal characteristics of the neural response associated with it? Thus, different predictor variables can be systematically combined and evaluated to jointly model neural processing at multiple hierarchical levels. We discuss applications of this approach, including the potential for linking algorithmic/representational theories at different cognitive levels to brain responses through computational models with appropriate linking hypotheses.\n\n## Introduction\n\nThis paper introduces Eelbrain, a Python toolkit that makes it straightforward to express cognitive hypotheses as predictive computational models and evaluate those predictions against electrophysiological brain responses. The toolkit is based on the idea of decomposing brain signals into distinct responses associated with different predictor variables by estimating a multivariate temporal response function (mTRF), which maps those predictors to brain responses elicited by time-continuous stimulation (Theunissen et al., 2001; Lalor et al., 2006; David et al., 2007). This form of analysis has yielded valuable insights into the way that perception and cognitive processes unfold over time (e.g. Ding and Simon, 2012; Broderick et al., 2018; Brodbeck et al., 2018a; Daube et al., 2019; Liberto et al., 2021; Sohoglu and Davis, 2020).\n\n### How to read this Paper\n\nTime-lagged regression using TRFs is a mathematical method for analyzing the stimulus-response relationship between two signals that are evolving as a function of time, i.e., time series, like speech and brain activity measurements. The goal of this paper is to introduce several categories of cognitive neuroscience questions that can be asked using TRFs, and provide recipes for answering them. As such, the paper is not necessarily meant to be read in a linear fashion. The Introduction provides a general motivation for the approach and explains the underlying concepts in an accessible way. The Results section demonstrates how the technique can be applied to answer specific questions. The Discussion section highlights some more advanced considerations and caveats that should be kept in mind. The Materials and methods section explains the technical details and implementation in Eelbrain. The accompanying GitHub repository (Brodbeck et al., 2023) provides the source code for everything discussed in the paper (README.md contains instructions on how to get started). In addition, the Examples section on the Eelbrain website provides source code examples for many other basic tasks.\n\nDepending on the background of the reader, these resources can be approached differently \u2013 for example, for readers new to mTRFs, we recommend reading the Introduction and Results sections first to get an idea of the questions that can be answered, and then referring to the Materials and methods for more detailed background information. On the other hand, readers specifically interested in the Eelbrain toolbox may want to skip ahead to the Materials and methods section early on.\n\n### The convolution model for brain responses\n\nThe mTRF approach is built on the assumption that the brain response is continuously evolving in time as a function of the recently encountered stimulus (Lalor et al., 2006). Brain responses do not directly mirror a physical stimulus, but rather reflect a variety of transformations of that stimulus. For example, while speech is transmitted through air pressure variations in the kHz range, this signal is transformed by the auditory periphery, and macroscopic cortical responses are better described as responses to the slowly varying envelope of the original broadband signal. Thus, instead of directly predicting brain responses from the stimulus, the experimenter commonly selects one or several appropriate predictor variables to represent the stimulus, for example the low-frequency speech envelope (Lalor and Foxe, 2010).\n\nThe convolution model is a formal specification of how the stimulus, as characterized by the predictor variables, leads to the response. The stimulus-response relationship is modeled as a linear convolution in time, as illustrated in Figure 1. In contrast to classical analysis approaches that require averaging, the convolution model applies to single trial data and does not require any repetition of identical stimuli. A convolution kernel, or impulse response, characterizes the influence of each elementary unit in a predictor on the response. This kernel is also called the TRF, to distinguish it from the measured response to the stimulus as a whole. In addition to modeling an individual predictor variable (Figure 1B, C), the convolution model can also incorporate multiple predictor variables through the assumption that responses are additive (Figure 1D). Each predictor variable is associated with its own TRF, and thus predicts a separable response component. The ultimate response is the sum of those response components at each time point. This additive model is consistent with the fact that macroscopic measurements of electrical brain signals reflect an additive superposition of signals from different brain regions, potentially reflecting separable neural processes (Nunez and Srinivasan, 2006). When multiple predictor variables are jointly predicting a response, the collection of their TRFs is called an mTRF. As such, predictor variables can be thought of as hypotheses about how stimuli are represented by the brain, and multiple concurrent predictors can embody distinct hypotheses about how the stimulus is transformed across different brain regions (Brodbeck and Simon, 2020). The additive nature of the convolution model allows it to be applied to comparatively natural stimulus conditions, such as audiobook listening (Hamilton and Huth, 2020; Alday, 2019), while modeling natural variability through different predictor variables rather than minimizing it through experimental design.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/85012/elife-85012-fig1-v2.jpg)\n\n**Figure 1.:** (A) The traditional event-related analysis method assumes that each stimulus (blue arrows) evokes an identical, discrete response, and this response can be recovered by averaging. This model assumes that responses are clearly separated in time. (B) In contrast, the convolution model assumes that each time point in the stimulus could potentially evoke a response. This is implemented with time series predictor variables, illustrated here with a time series containing several impulses. These impulses represent discrete events in the stimulus that are associated with a response, for example, the occurrence of words. This predictor time series is convolved with some kernel characterizing the general shape of responses to this event type \u2013 the temporal response function (TRF), depicted on the right. Gray arrows illustrate the convolution, with each impulse producing a TRF-shaped contribution to the response. As can be seen, the size of the impulse determines the magnitude of the contribution to the response. This allows testing hypotheses about stimulus events that systematically differ in the magnitude of the responses they elicit, for example, that responses increase in magnitude the more surprising a word is. A major advantage over the traditional averaging model is that responses can overlap in time. (C) Rather than discrete impulses, the predictor variable in this example is a continuously varying time series. Such continuously varying predictor variables can represent dynamic properties of sensory input, for example: the acoustic envelope of the speech signal. The response is dependent on the stimulus in the same manner as in (B), but now every time point of the stimulus evokes its own response shaped like the TRF and scaled by the magnitude of the predictor. Responses are, therefore, heavily overlapping. (D) The multivariate TRF (mTRF) model is a generalization of the TRF model with multiple predictors: like in a multiple regression model, each time series predictor variable is convolved with its own corresponding TRF, resulting in multiple partial responses. These partial responses are summed to generate the actual complete response. Source code: figures/Convolution.py.\n\nIn most practical data analysis scenarios, the true TRFs are unknown, but the stimulus and the brain responses are known. A TRF estimation algorithm addresses this, by estimating the mTRF that is optimal to predict the brain response from the predictor variables representing the stimulus. Figure 2 illustrates this with EEG responses being predicted from the speech envelope. Typically, this is a very high-dimensional problem \u2013 including several predictor variables, each of which can influence the brain response at a range of latencies. Due to the large number of parameters, mTRFs are prone to overfitting, meaning that the mTRFs learn properties of the noise in the specific dataset rather than the underlying, generalizable responses. TRF estimation methods deal with this problem by employing different regularization schemes, i.e., by bringing additional assumptions to the problem that are designed to limit overfitting (see Sparsity prior below). A further step to avoid spurious results due to overfitting is evaluating model quality with cross-validation, i.e., evaluating the model on data that was never used during training. This step allows evaluating whether the mTRF model can generalize to unseen data and predict novel responses, as opposed to merely explaining the responses it was trained on.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/85012/elife-85012-fig2-v2.jpg)\n\n**Figure 2.:** The left half illustrates the estimation of a TRF model, the right half the evaluation of this model with cross-validation. First, the stimulus is used to generate a predictor variable, here the acoustic envelope (A). The predictor and corresponding EEG data (here only one sensor is shown) are then used to estimate a TRF (B). This TRF is then convolved with the predictor for the held-out testing data to predict the neural response in the testing data (C; measured: black; predicted: red). This predicted response is compared with the actual, measured EEG response to evaluate the predictive power of the model (D). A topographic map shows the % of the variability in the EEG response that is explained by the TRF model, estimated independently at each sensor. This head-map illustrates how the predictive power of a predictor differs across the scalp, depending on which neural sources a specific site is sensitive to. The sensor whose data and TRF are shown is marked in green. Source code: figures/TRF.py.\n\n### Nonlinear responses\n\nConvolution can only model linear responses to a given input, whereas true neural responses are known to be nonlinear. Indeed, nonlinear transformations of the stimulus are arguably the most interesting, because they can show how the brain transforms and abstracts away from the stimulus, rather than merely mirroring it. We advocate a model-driven approach to study such nonlinear responses. A non-linear response can be modeled by generating a predictor variable that applies a non-linear transformation to the original stimulus, and then predicting brain responses as a linear response to this new predictor variable. For instance, it is known that the auditory cortex is disproportionately sensitive to acoustic onsets. This sensitivity has been described with a neural model of auditory edge detection, implemented as a signal processing routine (Fishbach et al., 2001). When this edge detection model is applied to the acoustic spectrogram, this results in a spectrogram of acoustic onsets, effectively mapping regions in the signal to which specific neuron populations should respond. This transformed spectrogram as a predictor variable thus operationalizes the hypothesis that neurons perform this non-linear transformation. Indeed, such acoustic onset spectrograms are highly significant predictors of auditory magnetoencephalography (MEG) responses (Daube et al., 2019; Brodbeck et al., 2020). Because mTRF models can only use linear transformations of the predictor variables to predict brain responses, a significant contribution from this predictor variable suggests that this non-linear transformation captures the non-linear nature of the neural processes giving rise to the brain responses.\n\nThis logic for studying nonlinear responses is taken to an even further level of abstraction when language models are used to predict brain responses. For instance, linguistic theory suggests that during speech comprehension, the continuous acoustic signal is transformed into discrete representations such as phonemes and words. However, we do not yet have an explicit, computational model of this transformation that could be used to generate an appropriate predictor. Instead, experimenters can estimate the result of an implicitly specified transformation based on extraneous knowledge, such as linguistic labels and corpus data. For example, responses to phonemes or phonetic features have been modeled through predictors reflecting discrete categories (Di Liberto et al., 2015). Furthermore, a series of such investigations suggests that brain responses to speech reflect linguistic representations at different hierarchical levels (Brodbeck et al., 2018a; Broderick et al., 2018; Weissbart et al., 2020; Gillis et al., 2021; Brodbeck et al., 2022). Such linguistic properties are commonly modeled as impulses corresponding to the onsets of words or phonemes. This does not necessarily entail the hypothesis that responses occur at word onsets. Rather, since the mTRFs allow responses at various latencies relative to the stimulus, such predictor variables can predict any time-locked responses that occur in an approximately fixed temporal relationship with the stimulus (within the pre-specified latency window).\n\nDuring all this, it is important to keep in mind that even predictor variables that implement highly non-linear transformations are still likely to be correlated with the original stimulus (or linear transformations of it). For example, words and phonemes are associated with specific spectro-temporal acoustic patterns which systematically relate to their linguistic significance. Before drawing conclusions about non-linear transformations implemented by the brain, it is thus always important to control for more basic stimulus representations. In the domain of speech processing, this includes at least an acoustic spectrogram and an acoustic onset spectrogram (see Auditory response functions below). The latter in particular has been found to account for many responses that might otherwise be attributed to phonetic feature representations (Daube et al., 2019).\n\n### This tutorial\n\nFor this tutorial, we use the openly available Alice dataset (Bhattasali et al., 2020) which contains EEG data from 33 participants who listened to the first chapter of Alice in Wonderland (12.4 min; 2129 words). The dataset also includes several word-level regressors derived from different syntactic language models, described in more detail in the original publication (Brennan et al., 2019). Here, we implement a complete group-level analysis for different levels of representation using Eelbrain.\n\nEelbrain implements mTRF estimation using boosting (David et al., 2007), as well as a variety of statistical tests, and ways to extract results for further analysis with other tools. The overall implementation of Eelbrain has been guided by the goal of facilitating mTRF estimation, group-level analysis, and visualization of results, for a general audience. The choice of boosting is significant as it encourages TRFs with a small number of non-zero coefficients, i.e., the boosting algorithm prefers a simpler explanation over a complex one (Kulasingham and Simon, 2023). This makes boosting suitable for estimating mTRFs for models consisting of structured, highly correlated, and possibly redundant predictor variables (David and Shamma, 2013), as is typical for models in cognitive neuroscience problems.\n\n## Results\n\nA critical goal of mTRF analysis for studying perception is evaluating brain responses that are nonlinear functions of the stimulus. In this section, we illustrate this by addressing increasingly complex nonlinear responses.\n\n### Response scale\n\nA basic nonlinearity is that of scale: brain responses can grow nonlinearly with the scale of the input. For instance, in the auditory system, neural responses tend to scale logarithmically with acoustic power encoded in a spectrogram (Rahman et al., 2020). This means that the same amount of power increase in the acoustic signal will cause a different increase in the brain response depending on the initial acoustic power value (see Figure 3A). Such nonlinear responses are typically modeled by scaling the predictor variable and assuming a linear relationship between the scaled predictor and response (e.g. Fox, 2008). Here, we determine the nonlinear relationship between acoustic power and brain response by comparing linear, logarithmic, and power law (Biesmans et al., 2017) scales.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/85012/elife-85012-fig3-v2.jpg)\n\n**Figure 3.:** (A) Illustration of logarithmic and power-law scales, compared to linear scale. (B) Gammatone spectrograms were ransformed to correspond to linear, power-law, and logarithmic response scales. Topographic maps show the predictive power of the three different spectrogram models. The color represents the percent of the variability in the EEG data that is explained by the respective multivariate TRF (mTRF) model. (C) Statistical comparison of the predictive power, averaged across all sensors. Error bars indicate the within-subject standard error of the mean, and significance is indicated for pairwise t-tests (df = 32). ***p\u22640.001; Source code: figures/Auditory-scale.py.\n\nFigure 3B shows the gammatone spectrogram, transformed to linear, power-law, and logarithmic response scales, along with the predictive power for EEG data resulting from the different transformations. When considering the average predictive power at all electrodes, the power-law scale spectrogram was a better predictor than the linear scale (t(32) = 4.59, p<0.001), and the log scale further improved predictions compared to the power-law scale (t(32) = 4.67, p<0.001). Furthermore, nonlinear responses may mix properties of different scales. We thus tested whether the response may exhibit a linear component in addition to the logarithmic component by fitting a model including both the linear and the logarithmic spectrogram (i.e. twice as many predictors; similarly, polynomial regression combines multiple nonlinear transformations [Fox, 2008]). The linear + log combined model did not improve predictions over the logarithmic model (Figure 3C), suggesting that the EEG responses to the acoustic power are sufficiently described by the logarithmic response scale and do not contain an additional linear component.\n\n### Auditory response functions\n\nOne goal of perception is to detect complex patterns present in the input signal, and we thus expect brain responses to represent features beyond simple acoustic intensity. Such features can be described as increasingly complex nonlinear transformations. Here, we illustrate this using acoustic onsets, a nonlinear transformation that is associated with strong responses and is a critical potential confound for higher-level features (Daube et al., 2019). Acoustic features of speech input are shown in Figure 4A: The upper panel shows the log-transformed gammatone spectrogram, quantifying acoustic energy as a function of time in different frequency bands. The gammatone filters simulate response characteristics of the peripheral auditory system. A simplified, one-dimensional representation of this spectrogram is the envelope, which is the summed energy across all frequency bands (blue line). The lower panel of Figure 4A shows an acoustic onset spectrogram based on a neurally inspired acoustic edge detection model (Fishbach et al., 2001), as described in Brodbeck et al., 2020. Again, a simplified one-dimensional version of this predictor, summing across all bands, signifies the presence of onsets across frequency bands (blue line).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/85012/elife-85012-fig4-v2.jpg)\n\n**Figure 4.:** (A) Common representations of auditory speech features: an auditory spectrogram (upper panel), and the acoustic envelope, tracking total acoustic energy across frequencies over time (blue line); and an acoustic onset spectrogram (lower panel), also with a one-dimensional summary characterizing the presence of acoustic onsets over time (blue line). (B) Brain responses are predicted from the acoustic envelope of speech alone. Left: Cross-validated predictive power is highly significant (p<0.001) at a large cluster covering all sensors. Right: the envelope temporal response function (TRF) \u2013 the y-axis represents the different EEG channels (in an arbitrary order), and the x-axis represents predictor-response time lags. The green vertical lines indicate specific (manually selected) time points of interest, for which head map topographies are shown. The black outlines mark significant clusters (p\u22640.05, corrected for the whole TRF). For the boosting algorithm, predictors and responses are typically normalized, and the TRF is analyzed and displayed in this normalized scale. (C) Results for an multivariate TRF (mTRF) model including the acoustic envelope and acoustic onsets (blue lines in A). The left-most head map shows the percentage increase in predictive power over the TRF model using just the envelope (p<0.001; color represents the change in the percent variability explained; black outlines mark significant clusters, p\u22640.05, family-wise error corrected for the whole head map). Details are analogous to (B). (D) Results for an mTRF model including spectrogram and onset spectrogram, further increasing predictive power over the one-dimensional envelope and onset model (p<0.001; color represents the change in percent variability explained). Since the resulting mTRFs distinguish between different frequencies in the stimulus, they are called spectro-temporal response functions (STRFs). In (D), these STRFs are visualized by summing across the different frequency bands. (E) To visualize the sensitivity of the STRFs to the different frequency bands, STRFs are instead averaged across sensors sensitive to the acoustic features. The relevant sensors are marked in the head map on the left, which also shows the predictive power of the full spectro-temporal model (color represents the percent variability explained). Because boosting generates sparse STRFs, especially when predictors are correlated, as are adjacent frequency bands in a spectrogram, STRFs were smoothed across frequency bands for visualization. a.u.: arbitrary units. Source code: figures/Auditory-TRFs.py.\n\nTo illustrate auditory features of increasing complexity we analyzed the following (m)TRF models:\n\n$$\nacousticenvelope\n$$\n\n\n\n$$\nacousticenvelope+acousticonsets\n$$\n\n\n\n$$\nacousticspectrogram+onsetspectrogram\n$$\n\nFigure 4B shows response characteristics to the acoustic envelope alone. A topographic head-map shows the envelope\u2019s predictive power. The envelope alone is already a very good predictor of held-out EEG responses, with variability explained reaching 82% of that of the full spectro-temporal model (Equation 3) at anterior electrodes. The TRF to the envelope exhibits features characteristic of auditory evoked responses to simple acoustic stimuli such as tones or isolated syllables, including a P1-N1-P2 sequence.\n\nFigure 4C shows the result of adding the one-dimensional acoustic onset predictor to the model. Together, onset and envelope significantly improve the prediction of held-out responses compared to just the envelope (p<0.001), indicating that the onset representation is able to predict some aspects of the EEG responses that the envelope alone cannot. The typical TRF to the onsets is of shorter duration than that to the envelope, and is characterized by two prominent peaks around 60 and 180 ms. The envelope TRF here is not much affected by adding the onset to the model (compare with Figure 4B).\n\nFigure 4D shows the additional benefit of representing the envelope and onsets in different frequency bands, i.e., predicting EEG from an auditory spectrogram and an onset spectrogram (here eight bands were used in each, for a total of 16 predictors). As the predictors are two-dimensional (frequency \u00d7 time), the resulting mTRFs are three-dimensional (frequency \u00d7 lag \u00d7 EEG sensor), posing a challenge for visualization on a two-dimensional page. One approach, assuming that response functions are similar across frequency bands, is to sum responses across frequency bands. As shown in Figure 4D, this indeed results in response functions that look very similar to the one-dimensional versions of the same predictors (Figure 4C). To visualize how the response functions differ for different frequency bands in the spectrograms, Figure 4E shows the full spectro-temporal response functions (STRFs), averaged across the electrodes that are most sensitive to the auditory stimulus features.\n\nIn sum, while the acoustic envelope is a powerful predictor of EEG responses to speech, additional acoustic features can improve predictions further, suggesting that they characterize neural representations that are not exhaustively described by the envelope. While the increase in prediction accuracy might seem small, more importantly, it allows the critical inference that the different predictors are characterizing separable neural representations. For instance, a significant response to acoustic onsets (after controlling for the envelope/spectrogram) provides evidence for a nonlinear component of the brain response to speech that represents acoustic onsets. Separating the influence of different predictors is also important because different neural representations can have different response characteristics under different situations. For example, acoustic onsets might be especially important in segregating multiple auditory streams (Brodbeck et al., 2020; Fiedler et al., 2019).\n\n### Word onsets as discrete events: Comparing ERPs and TRFs\n\nWhile speech is continuous, perception is often characterized through discrete events. For example, in speech, words may be perceived as perceptual units. Such events have been analyzed using ERPs, but they can also be incorporated into an mTRF model, by using predictors that contain impulses at relevant time points (see Figure 1). In contrast to an ERP analysis, the mTRF analysis allows controlling for brain responses related to acoustic processing, and overlapping responses to events (words) that are close in time. Here, we directly compare these two analysis approaches.\n\nWord onset TRFs controlling for acoustic processing were estimated using model Equation 4:\n\n$$\nacousticspectrogram+onsetspectrogram+allwords\n$$\n\nThese word onset TRFs are shown in Figure 5 alongside the classical ERP. As expected from the earlier discussion, the TRF and ERP patterns are similar. The time and scalp regions where the two estimates of the brain response to words differ significantly are marked with gray bars (Figure 5A) and contours (Figure 5B, C; assessed via related-measures t-tests controlling for multiple comparisons). A prominent difference is that the ERP contains stronger activity in the baseline period, and a larger deflection at late lags (starting at 600 ms), with a topography similar to acoustic activity (compare with Figure 4), indicating artifactual leakage from acoustic responses. Additionally, there is a significant difference at around 200\u2013450 ms which could be attributed to the temporal spread of the observed P2 peak in the ERPs, as the P2 peak in the TRF is temporally better defined (i.e. sharper) than in the ERPs.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/85012/elife-85012-fig5-v2.jpg)\n\n**Figure 5.:** To visualize ERP and TRF on a similar scale, both ERP and TRF were normalized (parametric normalization). (A) Visualization of the ERP and TRF response over time for a frontocentral channel, as indicated on the inset. The gray bars on the time axis indicate the temporal clusters in which the ERP and TRF differ significantly. Shading indicates within-subject standard errors (n = 33). (B) Visualization of ERP and TRF responses across all channels: the ERP responses to word onsets (left), the TRF to word onsets while controlling for acoustic processing (middle), and the difference between the ERP and the TRF (right). The black outline marks clusters in which the ERP and the TRF differ significantly in time and across sensors, assessed by a mass-univariate related-measures t-test. (C) Visualization of the topographies at selected time points, indicated by the vertical, dashed lines in (B), for respectively the ERP (top row), TRF (middle row), and their difference (bottom row). The contours mark regions where the ERP differs significantly from the TRF, as determined by the same mass-univariate related-measures t-test as in (B). a.u.: arbitrary units. Source code: figures/Comparison-ERP-TRF.py.\n\nConsistent with expectations, the ERPs overestimate the responses to words. The elevated baseline activity in particular suggests that the ERP is more prone to including brain activity that is not strictly a response to the stimulus feature, because the baseline period precedes the onset of the word. This is not surprising considering that the ERP is just an average of neural signals before and after word onsets, which includes, besides the responses to the words, neural responses to the acoustic signal, as well as activities that are not time-locked (including overlapping responses to the previous and next word, given that the average interval between word onsets in this stimulus set is only 334 ms). This highlights an advantage of the TRF paradigm over classical ERPs: the TRF enables characterization of only the neural response time-locked to the particular feature of interest, while explicitly controlling for signal variability due to other features of the stimuli.\n\n### Categories of events: Function and content words\n\nGiven the powerful response to acoustic features of speech, it is important to take these responses into account when investigating linguistic representations. To illustrate the advantage of an mTRF analysis that can take into account the acoustic stimulus features, we revisit an old question: do brain responses differentiate between content words (roughly, words conveying a meaning) and function words (words necessary for a grammatical construction)? In a first, naive approach, we ask literally whether brain responses differ between function and content words, while ignoring any potential confounding influences from acoustic differences. For this, we compare the predictive power of models Equation 5 and Equation 6, all based on predictors with unit magnitude impulses at word onsets:\n\n$$\nAllwords+functionwords+contentwords\n$$\n\n\n\n$$\nAllwords\n$$\n\nNote that all words and the two word-class-based predictors are mathematically redundant because the all words vector equals the sum of the function words and content words vectors. However, because of the sparsity prior employed through the boosting algorithm and cross-validation, such redundant predictors can still improve a model \u2013 for example, if there is a shared response among all words, then attributing this response once as a TRF to all words is sparser than attributing it twice, once for function words and once for content words separately (see also Sparsity prior below).\n\nThe predictive power of the model with the word class distinction (Equation 5) is significantly higher compared to the model without it (Equation 6) at a right anterior electrode cluster (p=0.002, Figure 6A, top). To investigate why the word class distinction improves the model\u2019s predictive power, we compare the TRFs to function and content words (Figure 6B). Both TRFs are reconstructed from the relevant model components: Whenever a function word occurs in the stimulus, there will be both an impulse in the all words, and one in the function words predictor (and vice versa for content words). Accordingly, the full EEG response occurring at the function word is split into two components, one in the all words, and one in the function words TRF. In order to visualize these full EEG responses, the displayed TRF for function words consists of the sum of the TRFs of the all words and the function words predictors, and the TRF for content words consists of the sum of the TRFs of all words and content words. This comparison suggests that function words are associated with a larger positive response at anterior sensors than content words.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/85012/elife-85012-fig6-v2.jpg)\n\n**Figure 6.:** (A) Model comparisons of predictive power across the scalp. Each plot shows a head-map of the change in predictive power between different pairs of models. Top: Equation 5 > Equation 6; middle: Equation 7 > Equation 4; bottom: Equation 4 > Equation 6. Color represents the difference in percent variability explained. (B) Brain responses occurring after function words differ from brain responses after content words. Responses were estimated from the temporal response functions (TRFs) of model Equation 5 by adding the word-class-specific TRF to the all words TRF. The contours mark the regions that are significantly different between function and content words based on a mass-univariate related-measures t-test. (C) Function words are associated with a sharper acoustic onset than content words. The average spectrograms associated with function and content words were estimated with time-lagged regression, using the same algorithm also used for TRF estimation, but predicting the acoustic spectrogram from the function and content word predictors. A dotted line is plotted at 70 ms to help visual comparison. Color scale is normalized. Source code: figures/Word-class-acoustic.py.\n\nTo investigate whether this difference in responses might be due to acoustic confounds, we control for brain responses to acoustic features in both models and compare Equation 7 with Equation 4, repeated here for convenience:\n\n$$\nacousticspectrogram+onsetspectrogram+allwords+functionwords+contentwords\n$$\n\nIn contrast to the comparison without acoustics, the comparison of the predictive power of Equation 7 with Equation 4 no longer indicates a significant difference (p=0.065, Figure 6A, middle). This suggests that the information in the acoustic predictors can explain the difference between brain responses to function and content words in model Equation 5. To directly characterize the influence of the acoustic features we plot the predictive power of the acoustic features by comparing models Equation 4 and Equation 6. This comparison suggests that acoustic features are highly predictive of brain signals at anterior sensors (Figure 6A, bottom), encompassing the region in which the word class distinction originally showed an effect.\n\nIf the difference between brain responses to function and content words disappears when controlling for acoustic features, that suggests that acoustic features should differ between function and content words. We can assess this directly with another time-lagged regression model. First, we estimated filter kernels (analogous to the mTRFs) to predict the auditory spectrogram from models Equation 6 and Equation 5 (script: analysis/estimate_word_acoustics.py). To be able to statistically evaluate these results, we used 15-fold cross-validation and treated the predictive accuracy from each test fold as an independent estimate of predictive power (for a similar approach see Etard et al., 2019). With predictive power averaged across frequency bands, the model distinguishing function and content words is significantly better at predicting the spectrogram than the model treating all words equally (t(14) = 13.49, p<0.001), suggesting that function and content words indeed differ acoustically. Finally, the filter kernels to function and content words from this analysis can be interpreted as average acoustic patterns corresponding to the two word-classes (Figure 6C). This comparison suggests that function words, on average, have a sharper acoustic onset. Since auditory cortex responses are known to be sensitive to acoustic onsets, a reasonable explanation for the difference in neural responses by word class, when not controlling for acoustic features, is that it reflects these sharper acoustic onsets of function words.\n\n## Discussion\n\nWhile the sections above provide recipes for various aspects of mTRF analysis, we use this section to discuss a number of advanced considerations and caveats, and possible extensions.\n\n### TRF analysis vs. predictive power\n\nIn the various Results sections, we always tested the predictive power of a predictor variable before analyzing the corresponding TRF. This has a good reason: model comparisons based on predictive power are generally more conservative than comparisons based on TRF estimates. First, TRFs are directly estimated on the training data, and are still prone to some overfitting (although the boosting algorithm aims to minimize that using the validation step and early stopping). Second, as in conventional regression models, if two predictors are correlated, that means that they might share some of their predictive power. Model comparisons address this by testing for the unique predictive power of a variable, after controlling for all other variables, i.e., by testing for variability in the dependent measure that can only be explained by the predictor under investigation. The mTRFs (i.e. regression coefficients) cannot properly be disentangled in this way (Freckleton, 2002), and will usually divide the shared explanatory power amongst themselves. This means that mTRF estimates may always be contaminated by responses to correlated variables, especially when the correlations among predictor variables are high. This consideration highlights the importance of testing the predictive power of individual model components before interpreting the corresponding TRFs to avoid spurious conclusions due to correlated predictors. In sum, a significant result in a model comparison provides strong evidence that a given predictor contributes unique predictive power when compared to the other predictors included in the model. In contrast, a significant effect in a TRF should always be interpreted with care, as it may also reflect the influence of other, correlated variables, even if those are included in the model.\n\nTRF analysis may have an additional utility in diagnosing a special relationship between predictors. Assume that the brain represents a signal, say $x_{t}$, and this signal can be decomposed into $x_{1,t}$ and $x_{2,t}$ such that $x_{t}=x_{1,t}+x_{2,t}$. In a model using the predictors $x_{1,t}$ and $x_{2,t}$, both will contribute significantly. Thus, one might conclude that the brain represents two quantities separately, when in fact it represents only the average of them. However, because $x_{t}=x_{1,t}+x_{2,t}$, TRFs to $x_{1,t}$ and $x_{2,t}$ in the model including only these two predictors should look identical, thus providing a diagnostic for such a case. If the TRF shapes do not look identical, then that means that the properties in $x_{1,t}$ and $x_{2,t}$ are represented at different latencies, i.e., that they are separable.\n\n### Sparsity prior\n\nIn its general formulation, mTRF analysis is a regression problem, albeit a high-dimensional one. Such high-dimensional analysis methods are almost always marred by overfitting. The presence of a large number of free parameters and correlated predictor variables makes the mTRFs prone to discovering noise patterns that are idiosyncratic to the particular dataset, and which do not generalize well to other datasets. Most regression analysis methods deal with this problem through regularization using a well-informed prior and some form of cross-validation. These regularization schemes vary considerably; some employ an explicitly formulated prior, e.g., the regularization in ridge regression (Crosse et al., 2016a); while others are defined on the algorithmic level, e.g., the early stopping criterion for boosting (see Background: The boosting algorithm). The implicit prior in the boosting algorithm promotes sparsity, i.e., it forces unimportant filter kernel coefficients to exactly 0. For problems with a large number of correlated predictors, the boosting algorithm may be preferable to other sparsity-enforcing algorithms such as LASSO (Hastie et al., 2007).\n\nThis sparsity prior has some consequences that might be counterintuitive at first. For example, in regression models, it is common to center predictors. This does not affect the explanatory power of individual regressors, because a shift in the mean of one predictor will simply lead to a corresponding shift in the coefficient for the intercept term. In contrast to this, a sparsity prior will favor a model with smaller coefficients. Consequently, an uncentered predictor that can explain responses with a small coefficient in the intercept term will be preferable over a centered predictor that requires a larger intercept coefficient.\n\nAnother consequence of the same preference for sparser models is that sometimes mathematically redundant predictors can improve the predictive power of a model. An example is that when splitting an impulse predictor into two categories, such as when dividing words into function and content words, the original all words predictor does not necessarily become redundant (see Categories of events: Function and content words). This can make model construction more complex, but it can also be informative, for example by showing whether there is a common response component to all words that can be learned better by including an all words predictor, in addition to word-class-specific responses.\n\n### Discrete events and coding\n\nIn practice, the assumption of millisecond-precise time-locking to force-aligned features might seem hard to defend. For example, identification of clear word and phoneme boundaries is an artificial imposition, because the actual acoustic-phonetic features blend into each other due to co-articulation. An mTRF analysis only requires time-locking on average to produce some consistent responses. Nevertheless, more precise time estimates enhance the model\u2019s ability to isolate the response. In order to model cognitive events more precisely, one might thus want to consider alternative event locations, for example the words\u2019 uniqueness points instead of word onsets.\n\nImpulse coding is not the only coding that is available. Impulses are based on the linking hypothesis of a fixed amount of response per impulse. An alternative linking hypothesis assumes that the brain response is increased for the duration of an event. This could be modeled using a step function instead of impulses. Yet another type of hypothesis might concern a modulation of another predictor. For example, the hypothesis that the magnitude of the neural representation of the speech envelope is modulated by how linguistically informative a given segment is can be implemented by scaling the speech envelope according to each phoneme\u2019s linguistic surprisal (Donhauser and Baillet, 2020). A related set of questions concerns whether the same predictor is more or less powerful in different experimental conditions (Sohoglu and Davis, 2020).\n\n### Source localization\n\nEEG data is often analyzed in sensor space. However, because each sensor records a mixture of underlying neural (and artifactual) signals from different sources, sensor space data is inherently noisy. When data is recorded from a dense enough sensor array, neural source localization can be used to estimate a reconstruction of the sources contributing to the mixture signal, and assign the different brain responses to their cortical locations (Nunez and Srinivasan, 2006). Approaches combining source localization with mTRF analysis can differentiate responses related to processing of continuous stimuli anatomically as well as temporally, and thus provide a way to investigate hierarchical models of sensory and cognitive processing involving multiple anatomical regions. In many cases, source localization can also improve the signal-to-noise ratio of a specific response, because it acts as a spatial filter, aggregating information that is relevant for a given brain region across sensors, and suppressing signals whose likely origin is a different location.\n\nA straight-forward extension of the approach described here is to apply a linear inverse solution to the continuous data, and apply mTRF analyses to the virtual current dipoles (Brodbeck et al., 2018b). For this purpose, Eelbrain contains functions that directly convert MNE-Python source estimate objects to NDVars. A more advanced approach is the Neuro-Current Response Function technique, which performs mTRF estimation and source localization jointly, in a unified estimation problem. This approach allows an mTRF model at each virtual current dipole, and estimates those mTRFs collectively to optimize the prediction of MEG measurements in sensor space (Das et al., 2020).\n\n### Choosing the reference strategy\n\nSince EEG data consists of voltage measurements, but only voltage differences are physically meaningful, the choice of referencing strategy matters. There are several common choices for a voltage reference for EEG data, including the average signal recorded at the mastoid electrodes, the central electrode Cz, and the average across all channels (also called the common average reference). Although the reference has minimal influence on the magnitude of the prediction accuracies averaged across channels or the latencies of the TRF peaks, it does have a substantial impact on the distribution across the EEG channels (Figure 7). This is because, depending on the chosen referencing strategy, the neural sources are projected differently across the scalp. Therefore, the activity of the neural dipoles of interest might be more (or less) prominent depending on the chosen referencing strategy.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/85012/elife-85012-fig7-v2.jpg)\n\n**Figure 7.:** Predictive power topographies and temporal response functions (TRFs) to the acoustic envelope, according to three different referencing strategies: the average of the left and right mastoids (top), the central electrode Cz (middle), and the common average (bottom). (A) Visualization of the predictive power obtained with the different referencing strategies (color represents the percent variability explained). (B) The envelope TRFs for the different referencing strategies. The insets indicate the topographies corresponding to the vertical red dashed lines at latencies of 40, 140, and 240 ms. Source code: figures/Reference-strategy.py.\n\n### Further applications\n\nWhile cortical processing of speech has been a primary application for mTRF analysis, the technique has potential applications in any domain where stimuli unfold in time, and has already been successfully applied to music perception (Liberto et al., 2021; Leahy et al., 2021), audiovisual speech perception (Crosse et al., 2016b), and subcortical auditory processing (Maddox and Lee, 2018). Furthermore, mTRF analysis as discussed here assumes that TRFs are static across time. However, this is not always a valid assumption. For example, in multi-talker speech, TRFs to speech features change as a function of whether the listener attends to the given speech stream or not (Ding and Simon, 2012; Brodbeck et al., 2018a; Broderick et al., 2018). Thus, moment-to-moment fluctuations in attention might be associated with corresponding changes in the TRFs. While modeling this is a highly complex problem, with even more degrees of freedom, some initial progress has been made toward estimating mTRF models with dynamic TRFs that can change over time (Babadi et al., 2010; Miran et al., 2018; Presacco et al., 2019).\n\n### Conclusions\n\nTRF analysis has several advantages over ERP-based methods. In the Results section we demonstrated, with several examples, how TRFs can be used to estimate the brain response associated with a given feature while controlling for (1) responses associated with other features that are correlated with the feature of interest, including correlations across different time lags (e.g. controlling for acoustics while analyzing responses to words), and (2) overlapping responses to events close in time (e.g. disentangling early responses to the current word from late responses to the previous word). In addition, analysis of the prediction accuracy allows for determining whether a given feature makes a unique contribution over and beyond other features of the same stimulus. This is especially important in naturalistic stimuli, where features are correlated in complex ways, because neural response estimates may be reliably different from zero even if the corresponding predictor does not provide unique predictive power. Finally, using cross-validation, models are assessed based on their predictive power, not just their explanatory power, thus providing an overall stronger test than conventional models.\n\n## Materials and methods\n\nThis section describes each step towards a group-level analysis, starting from the data that is included in the open Alice EEG dataset (Bhattasali et al., 2020): EEG recordings, stimulus Wave (audio) files, and a comma-separated values (CSV) table with information about the words contained in the audiobook stimuli.\n\n### Overall architecture of the Eelbrain toolbox\n\nEelbrain provides high-level functionality to represent time series data (such as EEG) and functions to work with this data. The Dataset class provides a data-table in which each row represents a measurement case (e.g. a trial), similar to a dataframe in R. The Var and Factor classes represent continuous and categorical columns in such a Dataset. In addition, the NDVar class (n-dimensional variable) provides a container for n-dimensional data. An NDVar instance also carries meta-information, for example the sampling rate of a time series, and sensor locations in EEG data. This allows other functions to access that information without user intervention. For example, a plotting function can directly generate topographic plots of an NDVar representing event-related potential data, without the user specifying which data point corresponds to which sensor, which dimension corresponds to the time axis, what the sampling rate is, etc. More detailed introductions can be found in the Examples section of the Eelbrain online documentation.\n\n### Time series data\n\nIn the mTRF paradigm, a time series (for example, voltage at an EEG channel) is modeled as a linear function of one or several other time series (for example, the acoustic envelope of speech). The first step for an mTRF model is thus bringing different time-dependent variables into a common representational format. This is illustrated in Figure 8, which shows an excerpt from the first stimulus in the Alice dataset aligned to the EEG data from the first subject, along with different representations of the stimulus, which can model different neural representations.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/85012/elife-85012-fig8-v2.jpg)\n\n**Figure 8.:** EEG: band-pass filtered EEG responses. Sound Wave: acoustic wave form, time-aligned to the EEG data. Gammatone Spectrogram: spectrogram representation modeling processing at the auditory periphery. Gammatone 8 Bands: the gammatone spectrogram binned into 8 equal-width frequency bins for computational efficiency. Gammatone Envelope: sum of the gammatone spectrogram across all frequency bands, reflecting the broadband acoustic envelope. Acoustic Onsets: acoustic onset spectrogram, a transformation of the gammatone spectrogram using a neurally inspired model of auditory edge detection. Words: a uniform impulse at each word onsets, predicting a constant response to all words. N-Gram: an impulse at each word onset, scaled with that word\u2019s surprisal, estimated from an n-gram language model. This predictor will predict brain responses to words that scale with how surprising each word is in its context. N-Gram Lexical: N-Gram surprisal only at content words, predicting a response that scales with surprisal and occurs at content words only. Source code: figures/Time-series.py.\n\nAs Figure 8 suggests, time series will often have different dimensions. For example, EEG data might be two-dimensional with a time and a sensor dimension; a predictor might be one-dimensional, such as the acoustic envelope, or also have multiple dimensions, such as a spectrogram with time and frequency dimensions. To simplify working with different arbitrary dimensions, Eelbrain uses the NDVar ($n$-dimensional variable) class. An NDVar instance associates an $n$-dimensional numpy array (Harris et al., 2020) with $n$ dimension descriptors. For example, the EEG measurements can be represented by a two-dimensional NDVar with two dimensions characterizing the EEG sensor layout (Sensor) and the time axis, as a uniform time series (UTS).\n\nThe first step for the mTRF analysis is thus to import the EEG measurements and predictor variables as NDVar objects, and align them on the time axis, i.e., make sure they are described by identical UTS dimensions. The eelbrain.load module provides functions for importing different formats directly, such as MNE-Python objects and Wave files (NDVar objects can also be constructed directly from numpy arrays). Keeping information about dimensions on the NDVar objects allows for concise and readable code for tasks such as aligning, plotting, etc. The code for Figure 2 includes an example of loading a Wave file and aligning its time axis to the EEG data through filtering and resampling.\n\n#### EEG data\n\nEEG data should be pre-processed according to common standards. In the Python ecosystem, MNE-Python offers a unified interface to a variety of EEG file formats and preprocessing routines (Gramfort et al., 2014). Here, we rely on the preprocessed data provided with the Alice EEG dataset, referenced to the averaged mastoids, and processed for artifact reduction with independent component analysis (see Bhattasali et al., 2020). However, a crucial additional step is filtering and downsampling the EEG data. When analyzing continuous electrophysiological recordings, removing low frequencies (i.e. high-pass filtering) takes the place of baseline correction, by removing high-amplitude slow drifts in the EEG signal which would otherwise overshadow effects of interest. Removing high frequencies, beyond the signals of interest (low-pass filtering), reduces noise and, more crucially, allows conducting the analysis at a lower sampling rate. This makes the analysis faster, because TRF estimation is computationally demanding, and processing times scale with the sampling rate. The major cortical phase-locked responses decrease quickly above 10 Hz (Ding et al., 2014), although there can be exceptions, such as a pitch-following response up to 100 Hz (Kulasingham et al., 2020). For the purpose of this tutorial, we are interested in the range of common cortical responses and apply a 0.5\u201320 Hz band-pass filter. Theoretically, a sampling rate exceeding two times the highest frequency (also known as Nyquist frequency) is necessary for a faithful representation of the signal. However, Nunez and Srinivasan, 2006 recommend a sampling rate of 2.5 times the highest frequency due to various empirical considerations, such as the presence of random jitters, finite roll-off of the band-pass filter, etc. An even higher rate could be desirable for some secondary analysis and visualization, since it leads to smoother results. Here, we conduct the analysis with a sampling rate of 100 Hz.\n\nEEG data usually contain markers that indicate the start of the stimulus presentation. These can be used to quickly extract EEG data time-locked to the stimuli in the required time series format, i.e., as a two-dimensional NDVar with Sensor and UTS dimensions (see source code to Figure 2).\n\n#### Predictor variables\n\nAny hypothesis about time-locked neural processing that can be quantified can be represented by a time series derived from the stimulus. Here, we will illustrate two approaches: The first approach implements hypotheses about spectro-temporal transformations of the acoustic signal by directly applying those transformations to the speech waveform. The second approach implements hypotheses about linguistic processing based on experimenter-determined, discrete linguistic events.\n\n##### Time-continuous predictor variables: Gammatone spectrogram and derivatives\n\nA common starting point for modeling acoustic responses is through a model of the cochlear transformation of the sound. Here, we use the gammatone spectrogram method to estimate cochlear transformations (Patterson et al., 1992; Heeris, 2018). A gammatone spectrogram is initially a high-dimensional representation, with more than a hundred time series representing the acoustic power at different frequency bands. For computational efficacy, the number of bands can be reduced by summarizing several contiguous bands into one. Here, we use eight bands as a compromise that leaves the global acoustic structure intact (Figure 8). An extreme form of this dimension reduction is using the acoustic envelope, which summarizes the entire spectrogram with a single band.\n\nIn addition to representing raw acoustic features, the auditory cortex is known to prominently represent acoustic onsets (Daube et al., 2019). Here, we model such representations by applying the neurally inspired auditory edge detection transformation to the gammatone spectrogram (Brodbeck et al., 2020). It is also common to approximate such a transformation through the half-wave rectified derivative of the acoustic envelope (Fiedler et al., 2017; Daube et al., 2019).\n\nBecause these predictor variables will be used repeatedly, it is convenient to generate them once and save them for future use. The script predictors/make_gammatone.py loops through all stimuli, computes a high-dimensional gammatone spectrogram (a two-dimensional NDVar with frequency and UTS dimensions), and saves it as a Python pickle file via the eelbrain.save module. The script predictors/make_gammatone_predictors.py loads these high-dimensional spectrograms via the eelbrain.load module and resamples them to serve as predictors, and it also applies the onset transformation and saves the resulting predictors.\n\nEelbrain provides functions to quickly generate this auditory model from audio files (gammatone_bank and edge_detector), as well as some basic signal processing routines for NDVars (e.g. filter_data; see the Reference section of the online documentation for a list). Different models can be constructed using different tools and converted to NDVars (for an example of importing data from a *.mat file, see the EEG speech envelope TRF example of the online documentation).\n\n##### Discrete predictor variables\n\nThe analysis of linguistic representations commonly relies on forced alignment, a method that infers time-stamps for phoneme and word boundaries by comparing the sound waveform with a transcript. An example of an open-source forced aligner with extensive documentation is the Montreal Forced Aligner (McAuliffe et al., 2017). Because the forced alignment procedure requires some additional steps that are well documented by the respective aligners we skip it here, and instead use the word-onset time-stamps provided with the Alice dataset.\n\nDiscrete predictors come in two varieties: constant magnitude impulses and variable magnitude impulses (see Figure 8, lower half). Constant magnitude impulses always have the same magnitude, for example an impulse of magnitude 1 at each word onset. Such a predictor implements the hypothesis that all words are associated with a shared characteristic brain response, similar to an event-related potential (ERP). The TRF estimation algorithm will then determine the latencies relative to those impulses at which the brain exhibits a consistent response. Variable magnitude impulses implement the hypothesis that the brain response to each word varies systematically in amplitude with some quantity. For example, the N400 amplitude is assumed to co-vary with how surprising the word is in its context. A predictor with an impulse at each word onset, whose magnitude is equal to the surprisal of that word, will enable predicting a stereotyped response to words whose amplitude linearly varies with word surprisal. The linking hypothesis here is that for each event, the brain responds with population activity that scales in amplitude with how surprising that event is, or how much new information it provides (see e.g. Brodbeck et al., 2022).\n\nThe Alice dataset comes with a table including all time-stamps and several linguistic properties (stimuli/AliceChapterOne-EEG.csv). Each row of this table represents one word, and contains the time point at which the word starts in the audio file, as well the surprisal values that were used to relate the EEG signal to several language models in the original analysis (Brennan et al., 2019). Such a table listing event times and corresponding feature values is sufficient for constructing appropriate regressors on the fly, and has a much lower memory footprint than a complete time series. The script predictors/make_word_predictors.py converts the table into the Eelbrain Dataset format that can be directly used to construct the regressor as an NDVar. To keep a common file structure scheme with the continuous regressors, such a table is generated for each stimulus.\n\nEelbrain provides a function for turning any time/value combination reflecting the occurrence of discrete events into a continuous predictor variable: event_impulse_predictor. The time/value pairs can either be constructed directly in Python, or can be imported, for example from a text file, using the load.tsv function.\n\n### TRF estimation\n\n#### Background: The convolution model\n\nThe key assumption behind the mTRF approach is that the dependent variable, $y$, is the result of a convolution (linear filtering) of one or several predictor variables, $x$, with a corresponding filter kernel $h$. For a single predictor variable, the model is formulated as the convolution of the predictor variable with a one-dimensional filter kernel. For example, if $y_{t}$ is the value of an EEG channel at time $t$, and $x_{t}$ the value of the acoustic envelope at time $t$:\n\n$$\ny_{t}=\\sum_{\\tau=\\tau_{min}}^{\\tau_{max}}h_{\\tau}x_{t-\\tau}\n$$\n\nHere $h$ represents the filter kernel, also known as TRF, and $\\tau$ enumerates the time delays or lags between $y$ and $x$ at which $x$ can influence $y$. To extend this approach to multiple predictor variables, it is assumed that the individual filter responses are additive. In that case, $x$ consists of $n$ predictor time series and thus has two dimensions, one being the time axis and the other reflecting $n$ different predictor variables. The corresponding mTRF is also two-dimensional, consisting of one TRF for each predictor variable:\n\n$$\ny_{t}=\\sum_{i=0}^{n}\\sum_{\\tau=\\tau_{min}}^{\\tau_{max}}h_{i,\\tau}x_{i,t-\\tau}\n$$\n\nThis model allows predicting a dependent variable $y$, given predictors $x$ and mTRF $h$.\n\nIn neural data analysis scenarios, typically the measured brain response and the stimuli are known, whereas the filter kernel $h$ is unknown. This leads to two reformulations of the general problem in which $x$ and $y$ are known, and $h$ is to be estimated; these represent alternative approaches for analysis. In the first, the so-called forward or encoding model, $h$ is optimized to predict brain responses from stimulus representations. In the second, the so-called backward, or decoding model, $h$ is optimized to reconstruct a stimulus representation from the neural measurements. The problems can both be expressed in the same general form and solved with the same algorithms. Eelbrain provides an implementation of the boosting algorithm (David et al., 2007), further described in Background: Boosting implementation below.\n\n#### Forward model (encoding)\n\nGiven a continuous measurement and one or more temporally aligned predictor variables, the reverse correlation problem consists of finding the filter kernel, or mTRF, that optimally predicts the response from the stimuli. The result of the convolution now becomes the predicted response:\n\n$$\ny_{t}^=\\sumi=0n\\sum\\tau=\\tau_{min}\\tau_{max}h_{i,\\tau}x_{i,t\u2212\\tau}\n$$\n\nThe goal of the algorithm estimating the mTRF $h$ is to minimize the difference between the measured response $y_{t}$ and the predicted response $y_{t}^$. Figure 2 illustrates the estimation of a forward model for EEG data.\n\nThe eelbrain.boosting function provides a high-level interface for estimating mTRFs and returns a BoostingResult object with different attributes containing the mTRF and several model fit metrics for further analysis. Usually, for a forward model, the brain response is predicted from the predictors using positive (i.e. causal) lags. For example,\n\ntrf = boosting(eeg, envelope, 0, 0.500)\n\nwould estimate a TRF to predict EEG data from the acoustic envelope, with stimulus lags ranging from 0 to 500 ms (Eelbrain uses seconds as the default time unit). This means that an event at a specific time in the acoustic envelope could influence the EEG response in a window between 0 and 500 ms later. If the dependent variable has multiple measurements, for example multiple EEG channels, Eelbrain automatically assumes a mass-univariate approach and estimates a TRF for each channel. Negative lags, as in\n\ntrf = boosting(eeg, envelope, \u20130.100, 0.500)\n\nare non-causal in the sense that they assume a brain response that precedes the stimulus event. Such estimates can nevertheless be useful for at least two reasons. First, if the stimulus genuinely represents information in time, then non-causal lags can be used as an estimate of the noise floor. As such they are analogous to the baseline in ERP analyses, i.e., they indicate how variable TRFs are at time points at which no true response is expected. Second, when predictor variables are experimenter-determined, the temporal precision of the predictor time series might often be reduced, and information in the acoustic speech signal might in fact precede the predictor variable. In such cases, the negative lags might be diagnostic. For example, force-aligned word and phoneme onsets assume the existence of strict boundaries in the speech signal, when in fact the speech signal can be highly predictive of future phonemes due to coarticulation (e.g. Salverda et al., 2003).\n\nAn advantage of the forward model is that it can combine information from multiple predictor variables. The boosting algorithm in particular is robust with a large number of (possibly correlated) predictor variables (e.g. David and Shamma, 2013). Eelbrain supports two ways to specify multiple predictor variables. The first is using a multi-dimensional predictor, for example a two-dimensional NDVar, representing a spectrogram with multiple frequency bands. These are used with the boosting function just like one-dimensional time series, and will be treated as multi-dimensional predictor variables, i.e., the different frequency bands will be jointly used for the optimal prediction of the dependent variable:\n\nmtrf = boosting(eeg, spectrogram, 0, 0.500)\n\nThe second option for using multiple predictor variables is specifying them as a list of NDVar (one and/or two-dimensional), for example:\n\nmtrf = boosting(eeg, [envelope, spectrogram], 0, 0.500)\n\n#### Backward model (decoding)\n\nInstead of predicting the EEG measurement from the stimulus, the same algorithm can attempt to reconstruct the stimulus from the EEG response. The filter kernel is then also called a decoder. This can be expressed with Equation 8, but now $y_{t}$ refers to a stimulus variable, for example the speech envelope, and $x_{i,t}$ refers to the EEG measurement at sensor $i$ and time $t$. Accordingly, a backward model can be estimated with the same boosting function. For example,\n\ndecoder = boosting(envelope, eeg, \u20130.500, 0)\n\nestimates a decoder model to reconstruct the envelope from the EEG data using a 500 ms window. Note the specification of delay values $\\tau$ in the boosting function, from the point of view of the predictor variable: because each point in the EEG response reflects the stimulus preceding it, the delay values are negative, i.e., a given point in the EEG response should be used to reconstruct the envelope in the 500 ms window preceding the EEG response.\n\nBecause the EEG channels now function as the multivariate predictor variable, all EEG channels are used jointly to reconstruct the envelope. An advantage of the backward model is that it combines data from all EEG sensors to reconstruct a stimulus feature. It provides a powerful measure of how much information about the stimulus is contained in the brain responses, taken as a whole. A downside is that it does not provide a straight-forward way for distinguishing responses that are due to several, correlated predictor variables. For this reason, we will not further discuss it here. However, backward models have applications in other domains, where questions are not about specific representations, for instance attention decoding in auditory scenes (O\u2019Sullivan et al., 2015).\n\n### Background: The boosting algorithm\n\nThe general TRF estimation problem, i.e., finding the optimal filter kernels in forward and backward models, can be solved with different approaches. The Eelbrain toolkit implements the boosting algorithm, which is resilient to over-fitting and performs well with correlated predictor variables (David et al., 2007; David and Shamma, 2013). The boosting algorithm is intentionally designed with a bias to produce sparse mTRFs, i.e., mTRFs in which many elements are exactly zero. The algorithm thus incorporates a so-called sparsity prior, i.e., a prior to favor sparser models over alternatives (see Sparsity prior above).\n\nBoosting starts by dividing the data into training and validation folds, and initializing an empty mTRF (all values $h_{i,\\tau}$ are initially set to 0). It then iteratively uses the training data to find the element in the filter kernel which, when changed by a fixed small amount delta, leads to the largest error reduction. The following pseudo-code shows the general boosting algorithm:\n\nmTRF[:] = 0\nn_validation_error_increased = 0\n\nwhile n_validation_error_increased < 2:\n\u00a0 current_training_error = error of mTRF in training set\n\u00a0 current_validation_error = error of mTRF in validation set\n\n\u00a0 # Find training error for all possible coordinate steps\n\u00a0 for element in mTRF:\n\u00a0 \u00a0 error_add[element] = error of mTRF with element = element + \u2206\n\u00a0 \u00a0 error_sub[element] = error of mTRF with element = element - \u2206\n\n\u00a0 # If no error reduction is possible, reduce \u2206 or stop\n\u00a0 if smallest error in error_add, error_sub > current_training_error:\n\u00a0 \u00a0\u2206 *= 0.5\n\u00a0 \u00a0if \u2206 \u2265 mindelta:\n\u00a0 \u00a0 \u00a0continue\n\u00a0 \u00a0else:\n\u00a0 \u00a0 \u00a0break\n\n\u00a0 # Update the mTRF and check validation set error\n\u00a0 mTRF = mTRF corresponding to smallest error in error_add, error_sub\n\u00a0 new_validation_error = error of mTRF in validation set\n\u00a0if new_validation_error > current_validation_error:\n\u00a0\u00a0n_validation_error_increased += \nelse:\n\u00a0 n_validation_error_increased = 0\n\nmTRF = the mTRF in the history with the smallest validation error\n\nFor multiple predictors, the search is performed over all the predictors as well as time lags, essentially letting the different predictors compete to explain the dependent variable. At each step, only a single element in the mTRF is modified. In that respect, boosting is a coordinate descent algorithm because it moves only at right angles in the parameter space. This promotes sparsity, as most elements stay at zero in every step. After each such delta change, the validation data is consulted to verify that the error is also reduced in the validation data. Once the error starts increasing in the validation data, the training stops. This early stopping strategy prevents the model from overfitting to the training data. In other words, the early stopping strategy in the boosting algorithm acts as an implicit prior to promote sparsity, i.e., it forces unimportant filter kernel coefficients to remain exactly 0.\n\nThe default implementation of the boosting algorithm constructs the kernel from impulses (each element $h_{i,\\tau}$ is modified independently), which can lead to temporally discontinuous TRFs. In order to derive smoother TRFs, TRFs can be constructed from a basis of smooth window functions instead. In Eelbrain, the basis shape and window size are controlled by the basis and basis_window parameters in the boosting function. Their use is described in more detail in Meta-parameter: Basis function below.\n\nAdditionally, when using multiple predictors, it may be undesirable to stop the entire model training when a single predictor starts overfitting. In that case, the selective_stopping option allows freezing only the predictor which caused the overfitting, while training of the TRF components corresponding to the remaining predictors continues, until all predictors are frozen.\n\nFinally, the default error metric for evaluating model quality is the widely used $\u2113_{2}$ error. Due to squaring, however, the \ufeff\ufeff$\u2113_{2}$ error is disproportionately sensitive to time points with large errors. In electrophysiology, large errors are typically produced by artifacts, and it is undesirable to give such artifacts a large influence on the model estimation. Since it is not trivial to exclude time intervals containing such artifacts from the analysis in continuous data, Eelbrain also allows the use of the $\u2113_{1}$ error norm through the error='l1' argument, which improves robustness against such outlier data.\n\nUsually, both the dependent variable and the predictor are centered around zero, and either standardized against the standard deviation (for $\u2113_{2}$ error) or normalized by the $\u2113_{1}$ norm (for $\u2113_{1}$ error) before starting the boosting algorithm. The centering step is crucial to eliminate the intercept, since the boosting algorithm prefers sparse solutions, i.e., solutions with exact zero coefficients. When multiple predictors are used, this preprocessing step is applied separately to each of them, to ensure none of them affects the boosting procedure disproportionately. If required, this preprocessing step can be skipped through an argument to the boosting function: scale_data=False.\n\n#### Cross-validation\n\nBy default, the boosting function trains an mTRF model on all available data. Reserving some data for cross-validation, which allows model evaluation without overfitting, can be enabled by setting the test parameter to test=True. Since the boosting algorithm already divides the data into training and validation sets, enabling cross-validation entails splitting the data into three sets for each run: training, validation, and test sets. While the training and validation segments are consulted for estimating the TRFs (as described above), the test segment does not influence the estimation of the TRFs at all. Only once the TRF estimation is finalized, the final TRF is used to predict the responses in the test segment. To use the data optimally, Eelbrain automatically implements $k$-fold cross-validation, whereby the data is divided into $k$ partitions, and each partition serves as the test set once (see the Data partitions Eelbrain example). Thus, through $k$-fold cross-validation, the whole response time series can be predicted from unseen data. The proportion of the explained variability in this response constitutes an unbiased estimate of the predictive power of the given predictors. The BoostingResult object returned by the boosting function contains all these metrics as attributes for further analysis.\n\n#### Comparison to ridge regression\n\nAn alternative approach to boosting is ridge regression (Crosse et al., 2021), which uses Tikonov regularization. Tikonov regularization biases the mTRFs to suppress mTRFs in the stimulus subspace with a low signal-to-noise ratio, effectively imposing a smooth prior on the mTRF. In other words, Tikonov regularization tends to distribute the TRF power over all time lags. In contrast, boosting minimizes nonzero parameters in mTRFs, effectively imposing a sparseness prior on the mTRF, i.e., boosting concentrates the TRF power within a few time-lags. For a detailed discussion on the differences between boosting and ridge regression see David et al., 2007. Figure 9 shows a side-by-side comparison between boosting and ridge regression in a simulation study where a gammatone spectrogram was used to simulate the time-locked EEG response.\n\n![Figure 9.](https://cdn.elifesciences.org/articles/85012/elife-85012-fig9-v2.jpg)\n\n**Figure 9.:** (A) A pre-defined multivariate temporal response functions (mTRF) was used to generate simulated EEG data (left panel), and then reconstructed by boosting and ridge regression (middle and right panel). (B) Overlays of boosting, ridge regression, and ground truth TRFs at different center frequencies for comparison. Note that the ridge TRF follows the ground truth closely, but produces many false positives. On the contrary, the boosting TRF enjoys an excellent true negative rate, at the expense of biasing TRF peaks and troughs toward 0. a.u.: arbitrary units. Source code: figures/Collinearity.py.\n\nBriefly, two adjacent gammatone bands (structured, highly correlated variables) were assumed to drive the auditory response with a spatiotemporally alternating pattern (Figure 9A, left panel). The simulated auditory response was then corrupted with additive pink noise to simulate EEG activity. We used the boosting function from Eelbrain and the ridge regression implementation from the pyEEG toolbox (Weissbart et al., 2023) to recover the mTRFs from the simulated EEG. For both algorithms, we used 10-fold cross-validation to select the optimum amount of regularization. With boosting we further tuned the selective_stopping hyper-parameter according to the explained variances in unseen data (with the test = True setting), i.e., we chose the model with the maximal selective_stopping, after which the explained variance started decreasing. For boosting, the TRFs are constructed from a basis of hamming windows with a window length of 50 ms, resulting in smoother TRFs. Both the mTRFs recovered by boosting and ridge regression capture the dominant features of the ground truth mTRF. However, the boosting mTRF has only a few peaks and troughs, giving a simpler representation with peaks and troughs closely corresponding to those of the ground truth, while the ridge regression mTRF includes many additional noisy peaks and troughs (Figure 9A, middle, and right panel; see also David et al., 2007; David and Shamma, 2013). In order to emphasize the differences between the estimates, the mTRF components are shown at the two Gammatone frequency bands driving the response (Figure 9B, left and middle panel), and at another frequency band with no response (rightmost panel). The ridge regression follows the dominant peaks and troughs of the ground truth mTRF closely, but, in doing so, acquires numerous false positives, i.e., small non-zero values when the true mTRF is actually zero. On the other hand, the boosting mTRF displays a high true negative rate, while biasing the peaks and troughs towards zero. The two algorithms are further compared using multiple criteria in Kulasingham and Simon, 2023.\n\n### Evaluating predictive power\n\nIn practice, a research question can often be operationalized by asking whether a specific predictor variable is neurally represented, i.e., whether it is a significant predictor of brain activity. However, different predictor variables of interest are very often correlated in naturalistic stimuli such as speech. It is thus important to test the explanatory power of a given variable while controlling for the effect of other, correlated variables. A powerful method for this is comparing the predictive power of minimally differing sets of predictor variables using cross-validation.\n\nIn this context, we use the term \u2018model\u2019 to refer to a set of predictor variables, and \u2018model comparison\u2019 refers to the practice of comparing the predictive power of two models on held-out data. It is important to re-estimate the mTRFs for each model under investigation to determine the effective predictive power of that model, because mTRFs are sensitive to correlation between predictors and can thus change depending on what other predictors are included during estimation.\n\nWhen building models for a specific model comparison, we recommend a hierarchical approach: both models should include lower-level properties that the experimenter wants to control for, while the models should differ only in the feature of interest. For example, to investigate whether words are associated with a significant response after controlling for acoustic representations, one could compare the explained variability of Equation 9 and Equation 10:\n\n$$\ngammatone\u00a0spectrogram\u00a0+onset\u00a0spectrogram\n$$\n\n\n\n$$\ngammatone\u00a0spectrogram\u00a0+onset\u00a0spectrogram\u00a0+word\u00a0onset\u00a0impulses\n$$\n\nIf the model in Equation 10 is able to predict held-out test data better than that in Equation 9, then this difference can be attributed to a predictive power of word onset impulses over and above the spectrogram-based representations.\n\nEstimating such mTRF models is the computationally most demanding part of this analysis. For this reason, it usually makes sense to store the result of the individual estimates. The script analysis/estimate_trfs.py implements this, by looping through all subjects, fitting mTRFs for multiple models, and saving the results for future analysis.\n\n### Group analysis\n\nIn order to statistically answer questions about the predictive power of different models we will need to combine the data from different measurements, usually from different subjects. To combine data from multiple subjects along with meta-information such as subject and condition labels, Eelbrain provides the Dataset class, analogous to data-table representations in other statistics programs, such as a dataframe in R or Pandas, but with the added capability of handling data from NDVars with arbitrary dimensionality.\n\nA standard way of constructing a Dataset is collecting the individual cases, or rows, of the desired data table, and then combining them. The following short script provides a template for assembling a table of model predictive power for several subjects and two models (assuming the mTRF models have been estimated and saved accordingly):\n\ncases = []\nfor subject in ['1', '2', '3']:\n\u2003\u2003\u2003for model in ['sgrams', 'sgrams+words']:\n\u2003\u2003\u2003\u2003\u2003mtrf =\u00a0load.unpickle(f\"path/to/{subject}_{model}.pickle\")\u2003\u2003\u2003\u2003\u2003cases.append([subject, model, mtrf.proportion_explained])\n\ncolumn_names = ['subject', 'model', 'explained']\ndata = Dataset.from_caselist(column_names, cases)\n\nThus, even though the proportion_explained attribute might contain 64 EEG channels (i.e. an NDVar with Sensor dimension) it can be handled as a single entry in this data table.\n\n#### Statistical tests\n\nStatistical analysis of mTRFs faces the issue of multiple comparisons common in neuroimaging (Maris and Oostenveld, 2007). One way around this is to derive a univariate outcome measure. The (average) predictive power across all sensors is a measure of the overall predictive power of a model. If a prior hypothesis about the location of an effect is available, then the average predictive power at a pre-specified group of sensors can serve as a more targeted measure, for example:\n\nsensors = ['45', '34', '35']\ndata['explained_average'] = data['explained'].mean(sensor = sensors)\n\nEelbrain implements a limited number of basic univariate statistical tests in the test module, but more advanced statistical analysis can be performed after exporting the data into other libraries. All univariate entries in a Dataset can be transferred to a pandas.DataFrame (Reback et al., 2021) with\n\ndataframe = data.as_dataframe()\n\nfor analysis with other Python libraries like Pingouin (Vallat, 2018), or saved as a text file with\n\ndata.save_txt('data.txt')\n\nto be transferred to another statistics environment like R (R Development Core Team, 2021).\n\nInstead of restricting the analysis to a priori sensor groups, Eelbrain implements several mass-univariate tests (Nichols and Holmes, 2002; Maris and Oostenveld, 2007; Smith and Nichols, 2009). These tests, implemented in the eelbrain.testnd module (for n-dimensional tests), are generally based on calculating a univariate statistic at each outcome measure (for example, a t value corresponding to a repeated-measures t-test comparing the predictive power of two models at each EEG sensor), and then using a permutation-based approach for estimating a null distribution for calculating p-values that control for family-wise error. In Eelbrain, these tests can be applied to NDVars similarly to univariate tests, with additional arguments for controlling multiple comparison corrections. The code corresponding to Figure 4 demonstrates a complete group analysis pipeline, from loading pickled mTRF models into a Dataset to plotting statistical results.\n\nMass-univariate tests can provide a detailed characterization of a given comparison, but calculating effect sizes for such results is not straightforward. For power analyses, carefully selected univariate outcome variables are usually more effective.\n\n### TRF analysis\n\nWhile predictive power is the primary measure to assess the quality of a model, the TRFs themselves also provide information about the temporal relationship between the brain response and the stimuli. A TRF is an estimate of the brain\u2019s response to an impulse stimulus of magnitude 1 (i.e. the impulse response). It thus characterizes the brain response as a function of time, relative to stimulus events, analogous to an ERP to a simple stimulus. For example, the TRF estimated to an acoustic envelope representation of speech commonly resembles the ERP to simple tone stimuli. The mTRFs can thus be analyzed in ways that are analogous to ERPs, for example using mass-univariate tests or based on component latencies. Figure 4 demonstrates a representative analysis of TRFs and mTRFs corresponding to different auditory features.\n\n### Meta-parameter: Basis function\n\nBy default, the fitting algorithm controls each element of a TRF independently of other elements. When a basis function is chosen, the algorithm instead generates the TRF by combining copies of that basis function, one centered on each element of the TRF. There are at least two reasons for selecting a basis function as part of the boosting algorithm for TRF estimation. First, constraining the TRFs to neurally more realistic shapes may increase the predictive power of the TRF model. Second, the resulting TRFs are smoother and thus easier to interpret and compare across subjects. Figure 9 illustrates the effect of using a basis function, comparing a 50 or 100 ms wide Hamming window basis with the default impulse basis (\u20180\u2019). In this case, a 50 ms Hamming window basis leads to significantly better predictive power than the default impulse basis (Figure 10A). TRFs are illustrated using a single sensor which exhibits a strong auditory response (Figure 10B). Figure 10C shows that using a wider basis window leads to markedly smoother TRFs, and increases the overlap of the TRFs between subjects. The basis windows themselves are shown in inset D.\n\n![Figure 10.](https://cdn.elifesciences.org/articles/85012/elife-85012-fig10-v2.jpg)\n\n**Figure 10.:** (A) Predictive power of the TRFs estimated with different basis windows (expressed as a percent of the variability in the EEG data that is explained by the respective TRF model). Error bars indicate the within-subject standard error of the mean, and significance is indicated for pairwise t-tests (df = 32; *p\u22640.05). (B) The sensor selected for illustrating the TRFs. (C) TRFs for two subject (upper and middle plots) and the average across all subjects (bottom). (D) Basis windows. Notice that the impulse basis (\u20180\u2019) is only a single sample wide, but it appears as a triangle in a line plot with the apparent width determined by the sampling rate. Source code: figures/TRF-Basis.py.\n",
+      "created_at": "2025-12-04T03:53:28.162425Z"
+    },
+    {
+      "id": "bade5dcf-bb7f-4b07-a46c-7df0d63c6ec6",
+      "submission_id": "cb46dec0-2cf8-404c-ae31-75fdbc34dccc",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Andrea E Martin, https://ror.org/00671me87 Max Planck Institute for Psycholinguistics Netherlands\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.85012.sa0](https://doi.org/10.7554/eLife.85012.sa0)\n\nBrodbeck et al. offer a timely and important contribution to how neural signals in response to continuous temporal modulations (as seen in speech and language processing) can be modelled effectively using temporal response functions. They offer a compelling new approach that includes a novel application of a boosting algorithm in addition to an accessible and didactically useful toolbox for analysis. A comparison of boosting and ridge regression via simulation shows the important impact on methods in speech and language neuroscience, as well as in cognitive neuroscience more broadly.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Andrea E Martin, https://ror.org/00671me87 Max Planck Institute for Psycholinguistics Netherlands\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.85012.sa1](https://doi.org/10.7554/eLife.85012.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Eelbrain: A Python toolkit for time-continuous analysis with temporal response functions\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Barbara Shinn-Cunningham as the Senior Editor. The following individual involved in the review of your submission has agreed to reveal their identity: Sophie Slaats (Reviewer #1).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1) Both Reviewers helpfully point that more clarity is needed regarding the boosting algorithm; its efficacy needs to be directly compared with existing toolboxes (e.g., Crosse et al., 2016, Weissbart/Reichenbach);\n\n2) Reviewer 2's comments about ridge regression need to be addressed \u2013 perhaps comparing boosting and ridge regression with regard to collinearity via simulation could better support the conclusions;\n\n3) Reviewer 2 rightly comments on the importance of accessibility and clarity in the documentation. This needs to be fully addressed in order for the work to have the impact it deserves.\n\n4) Please respond to each of the Reviewer's main concerns, and also take care that important details that impact future users of the toolbox are double-checked (e.g., the broken links need to be fixed).\n\nReviewer #1 (Recommendations for the authors):\n\nThis was a great read!\n\nA few questions remain regarding the Boosting algorithm. Firstly, it is not exactly clear how the Sparsity prior is different from the Boosting algorithm, since both appear to favor sparse TRFs (a large number of zeros). Can the boosting algorithm be implemented without a sparsity prior, or is one a logical consequence of the other? It seems like early stopping and assuming an empty mTRF together determine the Sparsity prior. It would be helpful to include this explicitly in section 3.3 (Background: The boosting algorithm), to facilitate the interpretation of (the title of) section 5.2 (Sparsity prior).\n\nSecondly, since the Boosting algorithm sets Eelbrain apart from other TRF implementations, such as the mTRF Toolbox (Crosse et al., 2016) or pyEEG from the Reichenbach lab (https://github.com/Hugo-W/pyEEG), a short comparison of results between two methods would be very informative. Which of the two resulting TRFs is closest to the actual neural response? Why is this the case? Would it be possible that boosting works better in some cases, but not in others?\n\nOn page 28 under header 5.4 (Source localization) there is a mention of source localization improving the signal-to-noise ratio of a specific response. While this is undoubtedly true, does this not also lead to the artificial decrease of signal-to-noise ratio for other responses (which might also be relevant, and even modeled)? In other words, is it possible that source localization might lead to an artificial overestimation of the contribution of a given predictor?\n\nThe code is easy to use thanks to the wonderful documentation. All the scripts run on the first try. There was only a single error in the scripts as I ran them: in Auditory-TRFs.py, under the header \"TRFs\", the second cell does not run. The error was the following: [TypeError: 'TTestOneSample' object is not iterable]. All the other cells above it ran to completion. There was a tiny typo under the header \"Generate figure\" in the same script: the first comment says 'preditive' instead of 'predictive'. Finally, the implementation of the plots yields many warnings if the chosen fonts are not installed (as was the case for me), but this is easy to fix as a user.\n\nThe TRFs ran to completion for subjects 1 to 20 \u2013 the other ones were omitted due to time constraints. The visual comparison between the newly calculated TRFs and the downloaded ones (for the same subjects, of course) showed minuscule differences in the scalp maps \u2013 one or two electrodes were flipped for significance. Unfortunately, the reason for this difference is not clear to me at this point. The other figures were fully identical to the paper.\n\nReviewer #2 (Recommendations for the authors):\n\n1) The main issue I have is that the current toolbox heavily relies on a single way to solve the TRF estimation problem. This is the boosting algorithm. While there are certainly benefits and downsides to any of the solutions, the toolbox forces a method on the user. As the authors explain, the boosting algorithm could come up with a solution in which fully colinear predictors still end up in the model. This would not happen using other algorithms. Interpreting the added benefit of individual predictors to the model could therefore lead to very different conclusions depending on the toolbox you use. It becomes very difficult for any lay audience to compare results from this algorithm to methods implemented in other toolboxes, for example in the mTRF toolbox introduced by Crosse et al. (2016). I am very positive that the authors are open about this and even provide counterintuitive examples of this problem. However, to make the differences clearer for a lay audience I have two improvements here that could be made:\n\nA) Ideally, the toolbox should provide an easy way to implement different ways to solve the TRF estimation. Now, the boosting methods seem difficult to get around in the current implementation (to me). If the authors could provide at least options to change the solution by provide also other solutions themselves. Personally, adding ridge regression would be beneficial as that has been used e.g. in the Crosse et al., (2016) toolbox lot. But if the toolbox is made in a way that custom-made solutions or future solutions can easily be added and compared that would be a great benefit.\n\nB) In the manuscript these methods should be quantitatively compared rather than only describing some counter-intuitive examples of the boosting algorithm. What would ridge regression do for this collinearity problem? I think the manuscript could benefit from a thorough comparison between the different methods.\n\n2) The provided github code together with the manuscript is not very straightforward. While the installation of the toolbox was very smooth, to actually get to the figures provided in the manuscript required going back and forth within all the folders a couple of times. It was not clear to me that first all the code in the predictor/analysis folders must be run before ending up with the results figures etc. Some more instructions on this could have been helpful.\n\n3) If the code in the github should provide the 'easy' way to do the TRF analysis, to me this was not necessarily extremely straightforward. Besides the order issues as described above, getting to the TRF required many steps that remain unexplained. In the code, the main bulk of work is going into making the predictors themselves. This to me makes sense as that is complicated work, however the manuscript itself they give illustrators how to make predictors and provide the code, but it doesn't seem very integral to eelbrain itself to make the predictors in a straightforward manner. So this is left up to the user. If I am a layperson using the toolbox, I, therefore, need to figure out myself outside of the toolbox (potentially based on the code the authors provide, but this does not seem to be an integral part of eelbrain) to make the predictors before I can continue using the code. Of course, a toolbox that helps with the TRF itself is useful, but a user that never has used a TRF before also needs help potentially making the predictors. I guess this is a choice for the authors, which potentially is not clear in the current version of the manuscript. Is the toolbox for solving the TRF problem using the boosting algorithm or is it also intended to provide a means to generate reasonable predictors? If the former is not solving some of the major issues that a lay audience might have if the latter then the manuscript should have way more explanation on how to generate the predictors using eelbrain. This involves not only showing it in the figure but also providing the relevant code, the current descriptions seem insufficient. It seems that the authors focus on making an easy-to-use TRF tool, but provide tools to make predictors but these are not integral to eelbrain. Thus, if the authors aim to provide a tool to go from data to the TRF (including making the predictors), then the manuscript should explain better how this is done and link this to the code. If they do not intend to do this, then they should more clearly separate what eelbrain can and cannot do.\n\n4) Related to issue 3. The use of trftools. In the code for making the predictors, trftools is used a lot. However, when going to the github page of trftools it seems that the authors are not confident about the stability of the code of trftools (\"Tools for data analysis with multivariate temporal response functions (mTRFs). This repository mostly contains tools that extend Eelbrain but are not yet stable enough to be included in the main release.\"). If the code they provide for a publication refers to a toolbox they themselves don't deem stable I find it difficult to judge the value of the toolbox. A layperson might just go along and use the code provided with a published paper.\n\n5) In general, the paper does not provide any tools or directions to use the toolbox. What is the benefit of this toolbox to what is already available? The overall logic of the toolbox and implementation would have been helpful. Now very often the authors refer to function and class types within the toolbox (e.g. NDVar objects etc.), but without any context, this is very difficult to grasp. I understand the manuscript is not the place to provide a full tutorial, but now the manuscript fails to provide an overall logic of the toolbox and how to approach a problem.\n\n6) Regarding this piece of text: \"Because the default implementation of the boosting algorithm constructs 1 the kernel from impulses (each element hi,\u03c4 is modified independently), this can lead to temporally discontinuous TRFs. In order to derive smoother TRFs, TRFs can be constructed from a basis of smooth window functions instead. In Eelbrain, the basis shape and window size are controlled by the basis and basis_window parameters in the boosting function.\" Would it be helpful to demonstrate this and also to show what are the default options in the bases and basis_window and why these are chosen in this way? I think it would be useful for a user to know that these are critical choices that are made for them by the toolbox.\n",
+      "created_at": "2025-12-04T03:53:28.162425Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T03:53:28.162425Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T03:53:28.162425Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "544ce3a8-72cb-4fa1-a8b5-bffc68ec1bb9",
+      "content_id": "79a459a7-6a54-4496-9a7a-5d3e09442df2",
+      "claim_id": "C1",
+      "claim": "Human experience unfolds continuously in time but is not strictly linear, entailing cascading processes building hierarchical cognitive structures.",
+      "claim_type": "EXPLICIT",
+      "source": "Even though human experience unfolds continuously in time, it is not strictly linear; instead, it entails cascading processes building hierarchical cognitive structures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about human cognition presented in the abstract without specific experimental data or citations in this sentence.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:53:28.162425Z"
+    },
+    {
+      "id": "54747049-5bfc-4513-a08b-9cc8edfe4525",
+      "content_id": "79a459a7-6a54-4496-9a7a-5d3e09442df2",
+      "claim_id": "C2",
+      "claim": "During speech perception, humans transform a continuously varying acoustic signal into phonemes, words, and meaning.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, during speech perception, humans transform a continuously varying acoustic signal into phonemes, words, and meaning, and these levels all have distinct but interdependent temporal structures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a well-established fact about speech perception presented as background knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:53:28.162425Z"
+    },
+    {
+      "id": "6462e112-9e3c-47ac-9d9b-3b15cf0951c4",
+      "content_id": "79a459a7-6a54-4496-9a7a-5d3e09442df2",
+      "claim_id": "C3",
+      "claim": "Phonemes, words, and meaning have distinct but interdependent temporal structures during speech perception.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, during speech perception, humans transform a continuously varying acoustic signal into phonemes, words, and meaning, and these levels all have distinct but interdependent temporal structures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as established knowledge about the temporal organization of speech processing.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:53:28.162425Z"
+    },
+    {
+      "id": "bbcfa5c1-b720-4efc-9d90-4121f6d09736",
+      "content_id": "79a459a7-6a54-4496-9a7a-5d3e09442df2",
+      "claim_id": "C4",
+      "claim": "Time-lagged regression using temporal response functions (TRFs) has emerged as a promising tool for disentangling electrophysiological brain responses related to complex models of perception.",
+      "claim_type": "EXPLICIT",
+      "source": "Time-lagged regression using temporal response functions (TRFs) has recently emerged as a promising tool for disentangling electrophysiological brain responses related to such complex models of perception.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general claim about the utility of TRFs, supported by the context of the paper and implied prior work.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:53:28.162425Z"
+    },
+    {
+      "id": "30301435-fc3d-44b7-af71-7757f5ff65a1",
+      "content_id": "79a459a7-6a54-4496-9a7a-5d3e09442df2",
+      "claim_id": "C5",
+      "claim": "The Eelbrain Python toolkit makes TRF analysis easy and accessible.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we introduce the Eelbrain Python toolkit, which makes this kind of analysis easy and accessible.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the toolkit being introduced in the paper, supported by the demonstration and examples provided throughout the manuscript.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:53:28.162425Z"
+    },
+    {
+      "id": "c53d3c44-8b65-40e7-8434-f4054daad4a2",
+      "content_id": "79a459a7-6a54-4496-9a7a-5d3e09442df2",
+      "claim_id": "C6",
+      "claim": "The Alice dataset contains EEG data from 33 participants who listened to the first chapter of Alice in Wonderland.",
+      "claim_type": "EXPLICIT",
+      "source": "For this tutorial, we use the openly available Alice dataset (Bhattasali et al., 2020) which contains EEG data from 33 participants who listened to the first chapter of Alice in Wonderland (12.4 min; 2129 words).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual description of the dataset used, with a citation to the source.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:53:28.162425Z"
+    },
+    {
+      "id": "b97ca41b-dc0d-4c10-b666-8a43f1e20aef",
+      "content_id": "79a459a7-6a54-4496-9a7a-5d3e09442df2",
+      "claim_id": "C7",
+      "claim": "The first chapter of Alice in Wonderland used in the Alice dataset is 12.4 minutes long and contains 2129 words.",
+      "claim_type": "EXPLICIT",
+      "source": "For this tutorial, we use the openly available Alice dataset (Bhattasali et al., 2020) which contains EEG data from 33 participants who listened to the first chapter of Alice in Wonderland (12.4 min; 2129 words).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual description of the stimulus properties.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:53:28.162425Z"
+    },
+    {
+      "id": "b1154954-70c2-4313-ac4d-12894889ae98",
+      "content_id": "79a459a7-6a54-4496-9a7a-5d3e09442df2",
+      "claim_id": "C8",
+      "claim": "The Alice dataset includes several word-level regressors derived from different syntactic language models.",
+      "claim_type": "EXPLICIT",
+      "source": "The dataset also includes several word-level regressors derived from different syntactic language models, described in more detail in the original publication (Brennan et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the contents of the dataset with a citation to the original publication.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:53:28.162425Z"
+    },
+    {
+      "id": "12e6218d-9be8-4efd-ac04-15b42e30efbe",
+      "content_id": "79a459a7-6a54-4496-9a7a-5d3e09442df2",
+      "claim_id": "C9",
+      "claim": "Eelbrain implements mTRF estimation using boosting.",
+      "claim_type": "EXPLICIT",
+      "source": "Eelbrain implements mTRF estimation using boosting (David et al., 2007), as well as a variety of statistical tests, and ways to extract results for further analysis with other tools.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about the implementation of the toolkit with a citation to the boosting algorithm.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:53:28.162425Z"
+    },
+    {
+      "id": "5fac067a-2938-4300-8d3e-754fcb28a6ce",
+      "content_id": "79a459a7-6a54-4496-9a7a-5d3e09442df2",
+      "claim_id": "C10",
+      "claim": "Boosting encourages TRFs with a small number of non-zero coefficients.",
+      "claim_type": "EXPLICIT",
+      "source": "The choice of boosting is significant as it encourages TRFs with a small number of non-zero coefficients, i.e., the boosting algorithm prefers a simpler explanation over a complex one (Kulasingham and Simon, 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the properties of the boosting algorithm, supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:53:28.162425Z"
+    },
+    {
+      "id": "2f848101-b1ae-4826-8bae-372a4ea95d0a",
+      "content_id": "79a459a7-6a54-4496-9a7a-5d3e09442df2",
+      "claim_id": "C11",
+      "claim": "Boosting is suitable for estimating mTRFs for models consisting of structured, highly correlated, and possibly redundant predictor variables.",
+      "claim_type": "EXPLICIT",
+      "source": "This makes boosting suitable for estimating mTRFs for models consisting of structured, highly correlated, and possibly redundant predictor variables (David and Shamma, 2013), as is typical for models in cognitive neuroscience problems.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the suitability of boosting for certain types of problems, supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:53:28.162425Z"
+    },
+    {
+      "id": "240f73cd-0b9c-4159-9a69-93a2da1e8a18",
+      "content_id": "79a459a7-6a54-4496-9a7a-5d3e09442df2",
+      "claim_id": "C12",
+      "claim": "The mTRF approach is built on the assumption that the brain response is continuously evolving in time as a function of the recently encountered stimulus.",
+      "claim_type": "EXPLICIT",
+      "source": "The mTRF approach is built on the assumption that the brain response is continuously evolving in time as a function of the recently encountered stimulus (Lalor et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a fundamental assumption of the method, supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:53:28.162425Z"
+    },
+    {
+      "id": "750d8725-6c01-4cde-b739-10419559bc20",
+      "content_id": "79a459a7-6a54-4496-9a7a-5d3e09442df2",
+      "claim_id": "C13",
+      "claim": "Brain responses do not directly mirror a physical stimulus, but rather reflect a variety of transformations of that stimulus.",
+      "claim_type": "EXPLICIT",
+      "source": "Brain responses do not directly mirror a physical stimulus, but rather reflect a variety of transformations of that stimulus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as established knowledge about neural processing.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:53:28.162425Z"
+    },
+    {
+      "id": "149c9db8-6b3d-432d-84b3-1cb4f2785691",
+      "content_id": "79a459a7-6a54-4496-9a7a-5d3e09442df2",
+      "claim_id": "C14",
+      "claim": "Macroscopic cortical responses to speech are better described as responses to the slowly varying envelope of the original broadband signal rather than air pressure variations in the kHz range.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, while speech is transmitted through air pressure variations in the kHz range, this signal is transformed by the auditory periphery, and macroscopic cortical responses are better described as responses to the slowly varying envelope of the original broadband signal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as established knowledge about auditory processing.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:53:28.162425Z"
+    },
+    {
+      "id": "87e1c2c0-42b4-49c8-991f-5407eb9b3a32",
+      "content_id": "79a459a7-6a54-4496-9a7a-5d3e09442df2",
+      "claim_id": "C15",
+      "claim": "In contrast to classical analysis approaches that require averaging, the convolution model applies to single trial data and does not require any repetition of identical stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to classical analysis approaches that require averaging, the convolution model applies to single trial data and does not require any repetition of identical stimuli.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the advantages of the convolution model compared to traditional approaches.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:53:28.162425Z"
+    },
+    {
+      "id": "0f825094-d26e-4d5a-9337-f816013b41af",
+      "content_id": "79a459a7-6a54-4496-9a7a-5d3e09442df2",
+      "claim_id": "C16",
+      "claim": "The additive model of multiple predictor variables is consistent with the fact that macroscopic measurements of electrical brain signals reflect an additive superposition of signals from different brain regions.",
+      "claim_type": "EXPLICIT",
+      "source": "This additive model is consistent with the fact that macroscopic measurements of electrical brain signals reflect an additive superposition of signals from different brain regions, potentially reflecting separable neural processes (Nunez and Srinivasan, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to established knowledge about EEG signal properties.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:53:28.162425Z"
+    },
+    {
+      "id": "053fd466-c3a8-4ca6-a92f-d342c3a6cf6e",
+      "content_id": "79a459a7-6a54-4496-9a7a-5d3e09442df2",
+      "claim_id": "C17",
+      "claim": "Predictor variables can be thought of as hypotheses about how stimuli are represented by the brain.",
+      "claim_type": "EXPLICIT",
+      "source": "As such, predictor variables can be thought of as hypotheses about how stimuli are represented by the brain, and multiple concurrent predictors can embody distinct hypotheses about how the stimulus is transformed across different brain regions (Brodbeck and Simon, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conceptual claim about the interpretation of predictor variables, supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:53:28.162425Z"
+    },
+    {
+      "id": "7c6a75e0-d2b8-4f71-9c76-c865c90b7202",
+      "content_id": "79a459a7-6a54-4496-9a7a-5d3e09442df2",
+      "claim_id": "C18",
+      "claim": "The additive nature of the convolution model allows it to be applied to comparatively natural stimulus conditions, such as audiobook listening.",
+      "claim_type": "EXPLICIT",
+      "source": "The additive nature of the convolution model allows it to be applied to comparatively natural stimulus conditions, such as audiobook listening (Hamilton and Huth, 2020; Alday, 2019), while modeling natural variability through different predictor variables rather than minimizing it through experimental design.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the applicability of the method, supported by citations to examples.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:53:28.162425Z"
+    },
+    {
+      "id": "892c7386-80ba-4f98-8c68-05d1434231ad",
+      "content_id": "79a459a7-6a54-4496-9a7a-5d3e09442df2",
+      "claim_id": "C19",
+      "claim": "TRF analysis has yielded valuable insights into the way that perception and cognitive processes unfold over time.",
+      "claim_type": "EXPLICIT",
+      "source": "This form of analysis has yielded valuable insights into the way that perception and cognitive processes unfold over time (e.g. Ding and Simon, 2012; Broderick et al., 2018; Brodbeck et al., 2018a; Daube et al., 2019; Liberto et al., 2021; Sohoglu and Davis, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general claim about the utility of TRF analysis, supported by multiple citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:53:28.162425Z"
+    },
+    {
+      "id": "26c0d741-4a00-4a93-be30-50cd901e0b1f",
+      "content_id": "79a459a7-6a54-4496-9a7a-5d3e09442df2",
+      "claim_id": "C20",
+      "claim": "The auditory cortex is disproportionately sensitive to acoustic onsets.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, it is known that the auditory cortex is disproportionately sensitive to acoustic onsets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as established knowledge about auditory cortex function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:53:28.162425Z"
+    },
+    {
+      "id": "c6141db3-61d9-439a-b43d-cc2a1d829041",
+      "content_id": "79a459a7-6a54-4496-9a7a-5d3e09442df2",
+      "claim_id": "C21",
+      "claim": "Acoustic onset spectrograms are highly significant predictors of auditory magnetoencephalography (MEG) responses.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, such acoustic onset spectrograms are highly significant predictors of auditory magnetoencephalography (MEG) responses (Daube et al., 2019; Brodbeck et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the predictive power of acoustic onset spectrograms, supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:53:28.162425Z"
+    },
+    {
+      "id": "80e1aaa9-2913-4aa0-97f6-0f692e027141",
+      "content_id": "79a459a7-6a54-4496-9a7a-5d3e09442df2",
+      "claim_id": "C22",
+      "claim": "A series of investigations suggests that brain responses to speech reflect linguistic representations at different hierarchical levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, a series of such investigations suggests that brain responses to speech reflect linguistic representations at different hierarchical levels (Brodbeck et al., 2018a; Broderick et al., 2018; Weissbart et al., 2020; Gillis et al., 2021; Brodbeck et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about hierarchical linguistic processing in the brain, supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:53:28.162425Z"
+    },
+    {
+      "id": "1dd0cf78-c2f1-4c7c-be21-ab5c36fe0dc5",
+      "content_id": "79a459a7-6a54-4496-9a7a-5d3e09442df2",
+      "claim_id": "C23",
+      "claim": "The power-law scale spectrogram was a better predictor of EEG data than the linear scale.",
+      "claim_type": "EXPLICIT",
+      "source": "When considering the average predictive power at all electrodes, the power-law scale spectrogram was a better predictor than the linear scale (t(32) = 4.59, p<0.001)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical finding from the analysis presented in the paper.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:53:28.162425Z"
+    },
+    {
+      "id": "0ee31f94-2bb0-4f5f-9721-73a2bc9fcbbd",
+      "content_id": "79a459a7-6a54-4496-9a7a-5d3e09442df2",
+      "claim_id": "C24",
+      "claim": "The log scale spectrogram improved predictions compared to the power-law scale.",
+      "claim_type": "EXPLICIT",
+      "source": "and the log scale further improved predictions compared to the power-law scale (t(32) = 4.67, p<0.001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical finding from the analysis presented in the paper.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:53:28.162425Z"
+    },
+    {
+      "id": "caca0188-7348-4e36-9a0d-0ac6a0633ccd",
+      "content_id": "79a459a7-6a54-4496-9a7a-5d3e09442df2",
+      "claim_id": "C25",
+      "claim": "The linear + log combined model did not improve predictions over the logarithmic model.",
+      "claim_type": "EXPLICIT",
+      "source": "The linear + log combined model did not improve predictions over the logarithmic model (Figure 3C), suggesting that the EEG responses to the acoustic power are sufficiently described by the logarithmic response scale and do not contain an additional linear component.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the analysis, supported by data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:53:28.162425Z"
+    },
+    {
+      "id": "be85b66b-7ef6-4b08-b55d-54ca1b6653d8",
+      "content_id": "79a459a7-6a54-4496-9a7a-5d3e09442df2",
+      "claim_id": "C26",
+      "claim": "EEG responses to acoustic power are sufficiently described by the logarithmic response scale and do not contain an additional linear component.",
+      "claim_type": "EXPLICIT",
+      "source": "The linear + log combined model did not improve predictions over the logarithmic model (Figure 3C), suggesting that the EEG responses to the acoustic power are sufficiently described by the logarithmic response scale and do not contain an additional linear component.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference drawn from the statistical comparison of models.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:53:28.162425Z"
+    },
+    {
+      "id": "4e44114a-83d1-4919-ac5f-79a1e7d503cc",
+      "content_id": "79a459a7-6a54-4496-9a7a-5d3e09442df2",
+      "claim_id": "C27",
+      "claim": "Neural responses tend to scale logarithmically with acoustic power encoded in a spectrogram.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, in the auditory system, neural responses tend to scale logarithmically with acoustic power encoded in a spectrogram (Rahman et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about neural response properties, supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:53:28.162425Z"
+    },
+    {
+      "id": "99c99d03-d5db-4297-ae11-59a377f13e33",
+      "content_id": "79a459a7-6a54-4496-9a7a-5d3e09442df2",
+      "claim_id": "C28",
+      "claim": "The acoustic envelope alone is a very good predictor of held-out EEG responses, with variability explained reaching 82% of that of the full spectro-temporal model at anterior electrodes.",
+      "claim_type": "EXPLICIT",
+      "source": "The envelope alone is already a very good predictor of held-out EEG responses, with variability explained reaching 82% of that of the full spectro-temporal model (Equation 3) at anterior electrodes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from the analysis presented in the paper.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:53:28.162425Z"
+    },
+    {
+      "id": "8e4c8529-f764-4985-be29-52d56f090f5d",
+      "content_id": "79a459a7-6a54-4496-9a7a-5d3e09442df2",
+      "claim_id": "C29",
+      "claim": "The TRF to the envelope exhibits features characteristic of auditory evoked responses to simple acoustic stimuli such as tones or isolated syllables, including a P1-N1-P2 sequence.",
+      "claim_type": "EXPLICIT",
+      "source": "The TRF to the envelope exhibits features characteristic of auditory evoked responses to simple acoustic stimuli such as tones or isolated syllables, including a P1-N1-P2 sequence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the TRF analysis, comparing it to known ERP components.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:53:28.162425Z"
+    },
+    {
+      "id": "a65594ba-fada-4c19-9a6a-5fa18f0b04fa",
+      "content_id": "79a459a7-6a54-4496-9a7a-5d3e09442df2",
+      "claim_id": "C30",
+      "claim": "Adding the one-dimensional acoustic onset predictor to the envelope model significantly improves the prediction of held-out responses compared to just the envelope (p<0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "Together, onset and envelope significantly improve the prediction of held-out responses compared to just the envelope (p<0.001), indicating that the onset representation is able to predict some aspects of the EEG responses that the envelope alone cannot.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical finding from the model comparison.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:53:28.162425Z"
+    },
+    {
+      "id": "d495f859-c5ab-4e46-bf64-a573f0e9892a",
+      "content_id": "79a459a7-6a54-4496-9a7a-5d3e09442df2",
+      "claim_id": "C31",
+      "claim": "The onset representation is able to predict some aspects of the EEG responses that the envelope alone cannot.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, onset and envelope significantly improve the prediction of held-out responses compared to just the envelope (p<0.001), indicating that the onset representation is able to predict some aspects of the EEG responses that the envelope alone cannot.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the statistical finding of improved prediction.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:53:28.162425Z"
+    },
+    {
+      "id": "cc26ca7a-c5a9-4dfa-99a8-cd9c14e1547e",
+      "content_id": "79a459a7-6a54-4496-9a7a-5d3e09442df2",
+      "claim_id": "C32",
+      "claim": "The typical TRF to acoustic onsets is of shorter duration than that to the envelope, and is characterized by two prominent peaks around 60 and 180 ms.",
+      "claim_type": "EXPLICIT",
+      "source": "The typical TRF to the onsets is of shorter duration than that to the envelope, and is characterized by two prominent peaks around 60 and 180 ms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a descriptive observation from the TRF analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:53:28.162425Z"
+    },
+    {
+      "id": "4de39227-de72-4523-a232-be471d812086",
+      "content_id": "79a459a7-6a54-4496-9a7a-5d3e09442df2",
+      "claim_id": "C33",
+      "claim": "While the acoustic envelope is a powerful predictor of EEG responses to speech, additional acoustic features can improve predictions further.",
+      "claim_type": "EXPLICIT",
+      "source": "In sum, while the acoustic envelope is a powerful predictor of EEG responses to speech, additional acoustic features can improve predictions further, suggesting that they characterize neural representations that are not exhaustively described by the envelope.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion drawn from the analyses presented.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:53:28.162425Z"
+    },
+    {
+      "id": "99e7ef65-a6e6-4f62-805d-46e2c15498dd",
+      "content_id": "79a459a7-6a54-4496-9a7a-5d3e09442df2",
+      "claim_id": "C34",
+      "claim": "Additional acoustic features beyond the envelope characterize neural representations that are not exhaustively described by the envelope.",
+      "claim_type": "EXPLICIT",
+      "source": "In sum, while the acoustic envelope is a powerful predictor of EEG responses to speech, additional acoustic features can improve predictions further, suggesting that they characterize neural representations that are not exhaustively described by the envelope.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the improved predictive power of models with additional features.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:53:28.162425Z"
+    },
+    {
+      "id": "00b06c24-0f7f-439a-bd4a-d0c018f691c4",
+      "content_id": "79a459a7-6a54-4496-9a7a-5d3e09442df2",
+      "claim_id": "C35",
+      "claim": "A significant response to acoustic onsets (after controlling for the envelope/spectrogram) provides evidence for a nonlinear component of the brain response to speech that represents acoustic onsets.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, a significant response to acoustic onsets (after controlling for the envelope/spectrogram) provides evidence for a nonlinear component of the brain response to speech that represents acoustic onsets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological claim about the interpretation of significant predictor contributions.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:53:28.162425Z"
+    },
+    {
+      "id": "aee01464-a41f-4f66-b8dd-e4202b7a97f3",
+      "content_id": "79a459a7-6a54-4496-9a7a-5d3e09442df2",
+      "claim_id": "C36",
+      "claim": "Acoustic onsets might be especially important in segregating multiple auditory streams.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, acoustic onsets might be especially important in segregating multiple auditory streams (Brodbeck et al., 2020; Fiedler et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the functional role of acoustic onsets, supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:53:28.162425Z"
+    },
+    {
+      "id": "28c4aea0-2b24-4f64-b52c-8ff113fcb797",
+      "content_id": "79a459a7-6a54-4496-9a7a-5d3e09442df2",
+      "claim_id": "C37",
+      "claim": "The ERP contains stronger activity in the baseline period compared to the TRF.",
+      "claim_type": "EXPLICIT",
+      "source": "A prominent difference is that the ERP contains stronger activity in the baseline period, and a larger deflection at late lags (starting at 600 ms), with a topography similar to acoustic activity (compare with Figure 4), indicating artifactual leakage from acoustic responses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the comparison between ERP and TRF shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:53:28.162425Z"
+    },
+    {
+      "id": "021d418f-404d-4c12-950e-ff752286d9eb",
+      "content_id": "79a459a7-6a54-4496-9a7a-5d3e09442df2",
+      "claim_id": "C38",
+      "claim": "The ERP shows artifactual leakage from acoustic responses at late lags (starting at 600 ms).",
+      "claim_type": "EXPLICIT",
+      "source": "A prominent difference is that the ERP contains stronger activity in the baseline period, and a larger deflection at late lags (starting at 600 ms), with a topography similar to acoustic activity (compare with Figure 4), indicating artifactual leakage from acoustic responses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the observed differences between ERP and TRF.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:53:28.162425Z"
+    },
+    {
+      "id": "1b3cbc65-6188-4de9-8549-f34604e4ea62",
+      "content_id": "79a459a7-6a54-4496-9a7a-5d3e09442df2",
+      "claim_id": "C39",
+      "claim": "The P2 peak in the TRF is temporally better defined (i.e. sharper) than in the ERPs.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, there is a significant difference at around 200\u2013450 ms which could be attributed to the temporal spread of the observed P2 peak in the ERPs, as the P2 peak in the TRF is temporally better defined (i.e. sharper) than in the ERPs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the comparison between ERP and TRF.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:53:28.162425Z"
+    },
+    {
+      "id": "9eac0027-dd02-44a8-87f0-5eb2bf23730e",
+      "content_id": "79a459a7-6a54-4496-9a7a-5d3e09442df2",
+      "claim_id": "C40",
+      "claim": "The ERPs overestimate the responses to words.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with expectations, the ERPs overestimate the responses to words.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the comparison between ERP and TRF analyses.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:53:28.162425Z"
+    },
+    {
+      "id": "f04333f3-d357-4501-84a6-7e6ba3c53337",
+      "content_id": "79a459a7-6a54-4496-9a7a-5d3e09442df2",
+      "claim_id": "C41",
+      "claim": "The elevated baseline activity in ERPs suggests that the ERP is more prone to including brain activity that is not strictly a response to the stimulus feature.",
+      "claim_type": "EXPLICIT",
+      "source": "The elevated baseline activity in particular suggests that the ERP is more prone to including brain activity that is not strictly a response to the stimulus feature, because the baseline period precedes the onset of the word.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the observed baseline differences.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:53:28.162425Z"
+    },
+    {
+      "id": "0d7ab686-064b-4a6b-805e-2e72a1ff2605",
+      "content_id": "79a459a7-6a54-4496-9a7a-5d3e09442df2",
+      "claim_id": "C42",
+      "claim": "The TRF enables characterization of only the neural response time-locked to the particular feature of interest, while explicitly controlling for signal variability due to other features of the stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "This highlights an advantage of the TRF paradigm over classical ERPs: the TRF enables characterization of only the neural response time-locked to the particular feature of interest, while explicitly controlling for signal variability due to other features of the stimuli.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological claim about the advantages of TRF analysis, supported by the comparison with ERPs.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:53:28.162425Z"
+    },
+    {
+      "id": "e42cfe18-b327-41d6-a150-8996278552d1",
+      "content_id": "79a459a7-6a54-4496-9a7a-5d3e09442df2",
+      "claim_id": "C43",
+      "claim": "The predictive power of the model with the word class distinction (Equation 5) is significantly higher compared to the model without it (Equation 6) at a right anterior electrode cluster (p=0.002).",
+      "claim_type": "EXPLICIT",
+      "source": "The predictive power of the model with the word class distinction (Equation 5) is significantly higher compared to the model without it (Equation 6) at a right anterior electrode cluster (p=0.002, Figure 6A, top).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical finding from the model comparison.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:53:28.162425Z"
+    },
+    {
+      "id": "7b2e268c-0c8b-4fdb-8ee2-af5b7f846ff5",
+      "content_id": "79a459a7-6a54-4496-9a7a-5d3e09442df2",
+      "claim_id": "C44",
+      "claim": "Function words are associated with a larger positive response at anterior sensors than content words (when not controlling for acoustics).",
+      "claim_type": "EXPLICIT",
+      "source": "This comparison suggests that function words are associated with a larger positive response at anterior sensors than content words.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the TRF comparison shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:53:28.162425Z"
+    },
+    {
+      "id": "4eb44394-5a9e-40e1-b8d5-bb90b1962b4e",
+      "content_id": "79a459a7-6a54-4496-9a7a-5d3e09442df2",
+      "claim_id": "C45",
+      "claim": "When controlling for acoustic features, the comparison of the predictive power of Equation 7 with Equation 4 no longer indicates a significant difference (p=0.065).",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to the comparison without acoustics, the comparison of the predictive power of Equation 7 with Equation 4 no longer indicates a significant difference (p=0.065, Figure 6A, middle).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical finding from the model comparison.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:53:28.162425Z"
+    },
+    {
+      "id": "498c641c-9a90-4e26-a527-8585cc7d6f0c",
+      "content_id": "79a459a7-6a54-4496-9a7a-5d3e09442df2",
+      "claim_id": "C46",
+      "claim": "The information in the acoustic predictors can explain the difference between brain responses to function and content words in model Equation 5.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that the information in the acoustic predictors can explain the difference between brain responses to function and content words in model Equation 5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the non-significant difference when controlling for acoustics.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:53:28.162425Z"
+    },
+    {
+      "id": "413f769a-3377-4162-bf9a-34f5f5be1ced",
+      "content_id": "79a459a7-6a54-4496-9a7a-5d3e09442df2",
+      "claim_id": "C47",
+      "claim": "The model distinguishing function and content words is significantly better at predicting the spectrogram than the model treating all words equally (t(14) = 13.49, p<0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "With predictive power averaged across frequency bands, the model distinguishing function and content words is significantly better at predicting the spectrogram than the model treating all words equally (t(14) = 13.49, p<0.001), suggesting that function and content words indeed differ acoustically.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical finding from the reverse analysis predicting spectrograms from word classes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:53:28.162425Z"
+    },
+    {
+      "id": "b0647f6e-feed-49bd-8c55-9021e8ad7613",
+      "content_id": "79a459a7-6a54-4496-9a7a-5d3e09442df2",
+      "claim_id": "C48",
+      "claim": "Function and content words differ acoustically.",
+      "claim_type": "EXPLICIT",
+      "source": "With predictive power averaged across frequency bands, the model distinguishing function and content words is significantly better at predicting the spectrogram than the model treating all words equally (t(14) = 13.49, p<0.001), suggesting that function and content words indeed differ acoustically.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the statistical finding that word class predicts acoustic features.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:53:28.162425Z"
+    },
+    {
+      "id": "81a14ade-d322-474f-8c60-863825ab3c7a",
+      "content_id": "79a459a7-6a54-4496-9a7a-5d3e09442df2",
+      "claim_id": "C49",
+      "claim": "Function words, on average, have a sharper acoustic onset than content words.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, the filter kernels to function and content words from this analysis can be interpreted as average acoustic patterns corresponding to the two word-classes (Figure 6C). This comparison suggests that function words, on average, have a sharper acoustic onset.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the acoustic analysis shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:53:28.162425Z"
+    },
+    {
+      "id": "6a457b92-343a-43e1-9675-6e7e54d623d2",
+      "content_id": "79a459a7-6a54-4496-9a7a-5d3e09442df2",
+      "claim_id": "C50",
+      "claim": "A reasonable explanation for the difference in neural responses by word class, when not controlling for acoustic features, is that it reflects sharper acoustic onsets of function words.",
+      "claim_type": "EXPLICIT",
+      "source": "Since auditory cortex responses are known to be sensitive to acoustic onsets, a reasonable explanation for the difference in neural responses by word class, when not controlling for acoustic features, is that it reflects these sharper acoustic onsets of function words.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference combining the acoustic findings with known properties of auditory cortex.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:53:28.162425Z"
+    },
+    {
+      "id": "dd6555e5-6e20-474c-aa39-6d1c07897073",
+      "content_id": "79a459a7-6a54-4496-9a7a-5d3e09442df2",
+      "claim_id": "C51",
+      "claim": "Model comparisons based on predictive power are generally more conservative than comparisons based on TRF estimates.",
+      "claim_type": "EXPLICIT",
+      "source": "This has a good reason: model comparisons based on predictive power are generally more conservative than comparisons based on TRF estimates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological claim about the relative conservativeness of different analysis approaches.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:53:28.162425Z"
+    },
+    {
+      "id": "54cf054e-6327-4c6a-84a4-ff161a367843",
+      "content_id": "79a459a7-6a54-4496-9a7a-5d3e09442df2",
+      "claim_id": "C52",
+      "claim": "TRFs are directly estimated on the training data, and are still prone to some overfitting.",
+      "claim_type": "EXPLICIT",
+      "source": "First, TRFs are directly estimated on the training data, and are still prone to some overfitting (although the boosting algorithm aims to minimize that using the validation step and early stopping).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological consideration about the properties of TRF estimation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:53:28.162425Z"
+    },
+    {
+      "id": "0ea80f09-5aa2-4d16-b974-998be67b7d21",
+      "content_id": "79a459a7-6a54-4496-9a7a-5d3e09442df2",
+      "claim_id": "C53",
+      "claim": "If two predictors are correlated, they might share some of their predictive power.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, as in conventional regression models, if two predictors are correlated, that means that they might share some of their predictive power.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general principle of regression analysis.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:53:28.162425Z"
+    },
+    {
+      "id": "8242c9ef-85f7-429a-8773-91564f76947a",
+      "content_id": "79a459a7-6a54-4496-9a7a-5d3e09442df2",
+      "claim_id": "C54",
+      "claim": "mTRF estimates may always be contaminated by responses to correlated variables, especially when the correlations among predictor variables are high.",
+      "claim_type": "EXPLICIT",
+      "source": "This means that mTRF estimates may always be contaminated by responses to correlated variables, especially when the correlations among predictor variables are high.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological consideration about the interpretation of mTRFs.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:53:28.162425Z"
+    },
+    {
+      "id": "32bfcf8a-f075-47ab-825e-108a00816770",
+      "content_id": "79a459a7-6a54-4496-9a7a-5d3e09442df2",
+      "claim_id": "C55",
+      "claim": "A significant result in a model comparison provides strong evidence that a given predictor contributes unique predictive power when compared to the other predictors included in the model.",
+      "claim_type": "EXPLICIT",
+      "source": "In sum, a significant result in a model comparison provides strong evidence that a given predictor contributes unique predictive power when compared to the other predictors included in the model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological claim about the interpretation of model comparisons.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:53:28.162425Z"
+    },
+    {
+      "id": "6b8dd93e-76d4-444e-9d23-510b55f661e7",
+      "content_id": "79a459a7-6a54-4496-9a7a-5d3e09442df2",
+      "claim_id": "C56",
+      "claim": "A significant effect in a TRF should always be interpreted with care, as it may also reflect the influence of other, correlated variables, even if those are included in the model.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, a significant effect in a TRF should always be interpreted with care, as it may also reflect the influence of other, correlated variables, even if those are included in the model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological caution about interpreting TRF results.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:53:28.162425Z"
+    },
+    {
+      "id": "b7837b7d-8f54-4087-b40f-882388667ea1",
+      "content_id": "79a459a7-6a54-4496-9a7a-5d3e09442df2",
+      "claim_id": "C57",
+      "claim": "The sparsity prior in the boosting algorithm will favor a model with smaller coefficients.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to this, a sparsity prior will favor a model with smaller coefficients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a property of the sparsity prior used in boosting.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:53:28.162425Z"
+    },
+    {
+      "id": "d612b57b-13bc-449f-a877-04c5a59bba28",
+      "content_id": "79a459a7-6a54-4496-9a7a-5d3e09442df2",
+      "claim_id": "C58",
+      "claim": "An uncentered predictor that can explain responses with a small coefficient in the intercept term will be preferable over a centered predictor that requires a larger intercept coefficient (under a sparsity prior).",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, an uncentered predictor that can explain responses with a small coefficient in the intercept term will be preferable over a centered predictor that requires a larger intercept coefficient.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a consequence of the sparsity prior's preference for smaller coefficients.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:53:28.162425Z"
+    },
+    {
+      "id": "da66fd15-c97d-4df6-8aab-6bdcdef32e6a",
+      "content_id": "79a459a7-6a54-4496-9a7a-5d3e09442df2",
+      "claim_id": "C59",
+      "claim": "Sometimes mathematically redundant predictors can improve the predictive power of a model under a sparsity prior.",
+      "claim_type": "EXPLICIT",
+      "source": "Another consequence of the same preference for sparser models is that sometimes mathematically redundant predictors can improve the predictive power of a model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a consequence of the sparsity prior in boosting.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:53:28.162425Z"
+    },
+    {
+      "id": "fcddc075-8cd5-4634-932c-ae66c57e480c",
+      "content_id": "79a459a7-6a54-4496-9a7a-5d3e09442df2",
+      "claim_id": "C60",
+      "claim": "When data is recorded from a dense enough sensor array, neural source localization can be used to estimate a reconstruction of the sources contributing to the mixture signal, and assign the different brain responses to their cortical locations.",
+      "claim_type": "EXPLICIT",
+      "source": "When data is recorded from a dense enough sensor array, neural source localization can be used to estimate a reconstruction of the sources contributing to the mixture signal, and assign the different brain responses to their cortical locations (Nunez and Srinivasan, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about source localization methods, supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:53:28.162425Z"
+    },
+    {
+      "id": "5e628c78-8d8c-48c8-9513-ed79793c75e7",
+      "content_id": "79a459a7-6a54-4496-9a7a-5d3e09442df2",
+      "claim_id": "C61",
+      "claim": "Source localization can improve the signal-to-noise ratio of a specific response, because it acts as a spatial filter.",
+      "claim_type": "EXPLICIT",
+      "source": "In many cases, source localization can also improve the signal-to-noise ratio of a specific response, because it acts as a spatial filter, aggregating information that is relevant for a given brain region across sensors, and suppressing signals whose likely origin is a different location.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the benefits of source localization.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:53:28.162425Z"
+    },
+    {
+      "id": "40dfeffc-0927-4f59-aa0b-adc995f588f5",
+      "content_id": "79a459a7-6a54-4496-9a7a-5d3e09442df2",
+      "claim_id": "C62",
+      "claim": "The choice of referencing strategy has minimal influence on the magnitude of the prediction accuracies averaged across channels or the latencies of the TRF peaks.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the reference has minimal influence on the magnitude of the prediction accuracies averaged across channels or the latencies of the TRF peaks, it does have a substantial impact on the distribution across the EEG channels (Figure 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the comparison of different referencing strategies shown in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:53:28.162425Z"
+    },
+    {
+      "id": "ecce9bb8-3dc5-4673-8ead-a9528e4d88b1",
+      "content_id": "79a459a7-6a54-4496-9a7a-5d3e09442df2",
+      "claim_id": "C63",
+      "claim": "The choice of referencing strategy has a substantial impact on the distribution of predictive power across the EEG channels.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the reference has minimal influence on the magnitude of the prediction accuracies averaged across channels or the latencies of the TRF peaks, it does have a substantial impact on the distribution across the EEG channels (Figure 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the comparison shown in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:53:28.162425Z"
+    },
+    {
+      "id": "7a3f38e2-d2ec-4a2a-97a4-5fd1b9ef269b",
+      "content_id": "79a459a7-6a54-4496-9a7a-5d3e09442df2",
+      "claim_id": "C64",
+      "claim": "TRF analysis has been successfully applied to music perception.",
+      "claim_type": "EXPLICIT",
+      "source": "While cortical processing of speech has been a primary application for mTRF analysis, the technique has potential applications in any domain where stimuli unfold in time, and has already been successfully applied to music perception (Liberto et al., 2021; Leahy et al., 2021)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about applications of TRF analysis, supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:53:28.162425Z"
+    },
+    {
+      "id": "a585958a-e0a3-4134-9915-69459348a6f9",
+      "content_id": "79a459a7-6a54-4496-9a7a-5d3e09442df2",
+      "claim_id": "C65",
+      "claim": "TRF analysis has been successfully applied to audiovisual speech perception.",
+      "claim_type": "EXPLICIT",
+      "source": "and has already been successfully applied to music perception (Liberto et al., 2021; Leahy et al., 2021), audiovisual speech perception (Crosse et al., 2016b)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about applications of TRF analysis, supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:53:28.162425Z"
+    },
+    {
+      "id": "437330c5-dfb3-444b-98df-99e3aec580a0",
+      "content_id": "79a459a7-6a54-4496-9a7a-5d3e09442df2",
+      "claim_id": "C66",
+      "claim": "TRF analysis has been successfully applied to subcortical auditory processing.",
+      "claim_type": "EXPLICIT",
+      "source": "and has already been successfully applied to music perception (Liberto et al., 2021; Leahy et al., 2021), audiovisual speech perception (Crosse et al., 2016b), and subcortical auditory processing (Maddox and Lee, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about applications of TRF analysis, supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:53:28.162425Z"
+    },
+    {
+      "id": "c9a277a9-52be-45b2-8aef-8d31e22c08d2",
+      "content_id": "79a459a7-6a54-4496-9a7a-5d3e09442df2",
+      "claim_id": "C67",
+      "claim": "In multi-talker speech, TRFs to speech features change as a function of whether the listener attends to the given speech stream or not.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, in multi-talker speech, TRFs to speech features change as a function of whether the listener attends to the given speech stream or not (Ding and Simon, 2012; Brodbeck et al., 2018a; Broderick et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about attention-dependent TRF changes, supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:53:28.162425Z"
+    },
+    {
+      "id": "7fa74da7-6bee-4fa5-80b7-6c0bd8cec730",
+      "content_id": "79a459a7-6a54-4496-9a7a-5d3e09442df2",
+      "claim_id": "C68",
+      "claim": "TRF analysis allows for determining whether a given feature makes a unique contribution over and beyond other features of the same stimulus.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, analysis of the prediction accuracy allows for determining whether a given feature makes a unique contribution over and beyond other features of the same stimulus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological claim about the capabilities of TRF analysis.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:53:28.162425Z"
+    },
+    {
+      "id": "8e8480f9-c706-4747-91ee-3bb0402abed3",
+      "content_id": "79a459a7-6a54-4496-9a7a-5d3e09442df2",
+      "claim_id": "C69",
+      "claim": "Using cross-validation, models are assessed based on their predictive power, not just their explanatory power, thus providing an overall stronger test than conventional models.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, using cross-validation, models are assessed based on their predictive power, not just their explanatory power, thus providing an overall stronger test than conventional models.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological claim about the advantages of cross-validation in TRF analysis.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:53:28.162425Z"
+    },
+    {
+      "id": "2cc63575-5418-4f77-b9d1-d86964307496",
+      "content_id": "79a459a7-6a54-4496-9a7a-5d3e09442df2",
+      "claim_id": "C70",
+      "claim": "Major cortical phase-locked responses decrease quickly above 10 Hz.",
+      "claim_type": "EXPLICIT",
+      "source": "The major cortical phase-locked responses decrease quickly above 10 Hz (Ding et al., 2014), although there can be exceptions, such as a pitch-following response up to 100 Hz (Kulasingham et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the frequency characteristics of cortical responses, supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:53:28.162425Z"
+    },
+    {
+      "id": "e1f050d4-eaee-4130-bfc6-7378bfb54502",
+      "content_id": "79a459a7-6a54-4496-9a7a-5d3e09442df2",
+      "claim_id": "C71",
+      "claim": "A 50 ms Hamming window basis leads to significantly better predictive power than the default impulse basis.",
+      "claim_type": "EXPLICIT",
+      "source": "In this case, a 50 ms Hamming window basis leads to significantly better predictive power than the default impulse basis (Figure 10A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the comparison of different basis functions shown in Figure 10.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:53:28.162425Z"
+    },
+    {
+      "id": "29ce4731-df7d-408e-979c-dcc99b33042e",
+      "content_id": "79a459a7-6a54-4496-9a7a-5d3e09442df2",
+      "claim_id": "C72",
+      "claim": "Using a wider basis window leads to markedly smoother TRFs, and increases the overlap of the TRFs between subjects.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 10C shows that using a wider basis window leads to markedly smoother TRFs, and increases the overlap of the TRFs between subjects.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the comparison shown in Figure 10C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:53:28.162425Z"
+    },
+    {
+      "id": "e61bf060-76a9-489b-9bef-39af5f2bd851",
+      "content_id": "79a459a7-6a54-4496-9a7a-5d3e09442df2",
+      "claim_id": "C73",
+      "claim": "Boosting mTRF captures the dominant features of the ground truth mTRF.",
+      "claim_type": "EXPLICIT",
+      "source": "Both the mTRFs recovered by boosting and ridge regression capture the dominant features of the ground truth mTRF.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the simulation study shown in Figure 9.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:53:28.162425Z"
+    },
+    {
+      "id": "5d5ef851-a11f-4449-b7e1-c3232c3e144c",
+      "content_id": "79a459a7-6a54-4496-9a7a-5d3e09442df2",
+      "claim_id": "C74",
+      "claim": "The boosting mTRF has only a few peaks and troughs, giving a simpler representation with peaks and troughs closely corresponding to those of the ground truth.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the boosting mTRF has only a few peaks and troughs, giving a simpler representation with peaks and troughs closely corresponding to those of the ground truth, while the ridge regression mTRF includes many additional noisy peaks and troughs (Figure 9A, middle, and right panel; see also David et al., 2007; David and Shamma, 2013).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the simulation study, supported by references to prior work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:53:28.162425Z"
+    },
+    {
+      "id": "b6cd4f44-2dd2-4842-8efd-67d7dbcec00a",
+      "content_id": "79a459a7-6a54-4496-9a7a-5d3e09442df2",
+      "claim_id": "C75",
+      "claim": "The ridge regression mTRF includes many additional noisy peaks and troughs compared to the boosting mTRF.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the boosting mTRF has only a few peaks and troughs, giving a simpler representation with peaks and troughs closely corresponding to those of the ground truth, while the ridge regression mTRF includes many additional noisy peaks and troughs (Figure 9A, middle, and right panel; see also David et al., 2007; David and Shamma, 2013).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the simulation study shown in Figure 9.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:53:28.162425Z"
+    },
+    {
+      "id": "e4ebe6ec-f9b8-4a64-83a6-da32a769d643",
+      "content_id": "79a459a7-6a54-4496-9a7a-5d3e09442df2",
+      "claim_id": "C76",
+      "claim": "Ridge regression follows the dominant peaks and troughs of the ground truth mTRF closely, but acquires numerous false positives.",
+      "claim_type": "EXPLICIT",
+      "source": "The ridge regression follows the dominant peaks and troughs of the ground truth mTRF closely, but, in doing so, acquires numerous false positives, i.e., small non-zero values when the true mTRF is actually zero.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the simulation study shown in Figure 9B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:53:28.162425Z"
+    },
+    {
+      "id": "3b8141b3-522a-4290-b056-fc586cc1874e",
+      "content_id": "79a459a7-6a54-4496-9a7a-5d3e09442df2",
+      "claim_id": "C77",
+      "claim": "The boosting mTRF displays a high true negative rate, while biasing the peaks and troughs towards zero.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, the boosting mTRF displays a high true negative rate, while biasing the peaks and troughs towards zero.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the simulation study shown in Figure 9B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:53:28.162425Z"
+    },
+    {
+      "id": "285cb014-9c37-4e6f-a4b2-b80e90d14046",
+      "content_id": "79a459a7-6a54-4496-9a7a-5d3e09442df2",
+      "claim_id": "C78",
+      "claim": "The average interval between word onsets in the Alice stimulus set is 334 ms.",
+      "claim_type": "EXPLICIT",
+      "source": "This is not surprising considering that the ERP is just an average of neural signals before and after word onsets, which includes, besides the responses to the words, neural responses to the acoustic signal, as well as activities that are not time-locked (including overlapping responses to the previous and next word, given that the average interval between word onsets in this stimulus set is only 334 ms).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about the stimulus properties.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:53:28.162425Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "74862486-da8f-4114-87b6-f619ef83add7",
+      "content_id": "79a459a7-6a54-4496-9a7a-5d3e09442df2",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The Eelbrain Python toolkit implements mTRF estimation using boosting, which encourages sparse TRFs and is suitable for models with correlated predictor variables, making TRF analysis accessible.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C9, C10, and C11 collectively establish that Eelbrain implements boosting-based mTRF estimation with desirable properties (sparsity, handling correlated predictors). The paper demonstrates the toolkit's functionality through multiple worked examples with the Alice dataset, supporting the accessibility claim.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:53:28.162425Z"
+    },
+    {
+      "id": "20e69ddf-28a7-4a55-8a39-4eaa66c66c64",
+      "content_id": "79a459a7-6a54-4496-9a7a-5d3e09442df2",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "EEG responses to acoustic power scale logarithmically rather than linearly, as demonstrated by comparing linear, power-law, and logarithmic spectrogram transformations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C26 present statistical comparisons showing logarithmic scaling provides the best fit (p<0.001), with no additional benefit from combining linear and logarithmic models. This is consistent with prior knowledge (C27) about auditory system response properties. The analysis includes appropriate statistical tests and cross-validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:53:28.162425Z"
+    },
+    {
+      "id": "2d5fab66-d581-4aa6-8dd5-c32480901af0",
+      "content_id": "79a459a7-6a54-4496-9a7a-5d3e09442df2",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The acoustic envelope is a powerful predictor of EEG responses (82% of full model), but adding acoustic onset information significantly improves predictions (p<0.001), indicating separable neural representations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C34 demonstrate that while the envelope alone predicts EEG well, acoustic onsets contribute unique predictive power. Statistical significance is established (C30), and the TRF characteristics differ between predictors (C32), supporting the inference of separable representations. The analysis appropriately controls for confounds.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:53:28.162425Z"
+    },
+    {
+      "id": "09e80e1f-dd0c-4bc1-89d8-25381d319987",
+      "content_id": "79a459a7-6a54-4496-9a7a-5d3e09442df2",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "TRF analysis provides advantages over traditional ERP analysis by controlling for acoustic confounds and overlapping responses, as demonstrated by comparing word-onset TRFs with ERPs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C42 show systematic differences between ERP and TRF approaches, with ERPs showing baseline activity and late-lag artifacts (C37-C38) that TRFs avoid. The comparison is supported by statistical testing and visual evidence (Figure 5), validating the methodological advantage claimed in C42.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:53:28.162425Z"
+    },
+    {
+      "id": "df83287c-a561-4431-ad1f-21ebe4f53532",
+      "content_id": "79a459a7-6a54-4496-9a7a-5d3e09442df2",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Apparent differences in brain responses between function and content words (p=0.002) are explained by acoustic differences rather than linguistic category per se, as the effect disappears when controlling for acoustic features.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C50 present a complete analysis showing: (1) initial word-class effect (C43-C44), (2) effect disappears with acoustic controls (C45-C46), (3) word classes differ acoustically (C47-C49), and (4) acoustic differences explain neural differences (C50). The reverse analysis predicting spectrograms from word class (C47, t(14)=13.49, p<0.001) provides strong evidence for the acoustic confound explanation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:53:28.162425Z"
+    },
+    {
+      "id": "3be1d336-3a2f-4e9c-a632-a15bca49d0ea",
+      "content_id": "79a459a7-6a54-4496-9a7a-5d3e09442df2",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Model comparisons based on predictive power are more conservative than TRF-based comparisons because TRFs can be contaminated by correlated predictors, making predictive power the preferred metric for establishing unique contributions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C56 provide a coherent methodological argument about the relative conservativeness of different analysis approaches. The reasoning is sound: TRFs estimated on training data are prone to overfitting (C52), correlated predictors share predictive power (C53-C54), and model comparisons test unique contributions (C55) while TRF estimates may reflect correlated variables (C56).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:53:28.162425Z"
+    },
+    {
+      "id": "a5969f03-7c72-448b-a02e-bb786490a3e7",
+      "content_id": "79a459a7-6a54-4496-9a7a-5d3e09442df2",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Using a 50 ms Hamming window basis function significantly improves predictive power over impulse basis and produces smoother, more consistent TRFs across subjects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71-C72 are supported by statistical comparison (Figure 10A showing significant improvement) and visual evidence (Figure 10C showing smoother TRFs with increased inter-subject overlap). The analysis appropriately demonstrates both quantitative and qualitative benefits of basis function selection.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:53:28.162425Z"
+    },
+    {
+      "id": "3de98950-eb86-4905-b853-23e38063d30e",
+      "content_id": "79a459a7-6a54-4496-9a7a-5d3e09442df2",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "In simulation studies, boosting produces sparser mTRFs with fewer false positives compared to ridge regression, though with some bias toward zero in peak amplitudes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C73-C77 describe simulation results (Figure 9) comparing boosting and ridge regression. Both methods capture dominant features (C73), but boosting produces simpler representations (C74) with high true negative rates (C77), while ridge regression has more false positives (C75-C76). The trade-offs are clearly documented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:53:28.162425Z"
+    },
+    {
+      "id": "aa160a0a-94e0-48bf-9b07-1c74a1097351",
+      "content_id": "79a459a7-6a54-4496-9a7a-5d3e09442df2",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "EEG referencing strategy has minimal effect on average predictive power or TRF peak latencies but substantially affects the spatial distribution of predictive power across channels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C63 are supported by empirical comparison of three referencing strategies (Figure 7), showing consistent overall metrics but different topographic distributions. This is an important practical consideration for EEG analysis, appropriately documented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:53:28.162425Z"
+    },
+    {
+      "id": "34ea9b42-4dc7-4166-8190-ba25bf37c0b5",
+      "content_id": "79a459a7-6a54-4496-9a7a-5d3e09442df2",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "TRF analysis is well-suited for studying hierarchical cognitive processes in continuous perception because it models brain responses as convolutions of stimulus features, applies to single trials, and can incorporate multiple correlated predictors representing different processing levels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C19 establish the conceptual foundation and prior validation of TRF methods. These include established knowledge about hierarchical processing (C1-C3), the utility of TRFs (C4, C19), fundamental assumptions (C12-C14), and methodological advantages (C15-C18). All claims are either well-established knowledge or supported by appropriate citations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:53:28.162425Z"
+    },
+    {
+      "id": "ce950d9d-a9bf-411f-a943-5369d62948fe",
+      "content_id": "79a459a7-6a54-4496-9a7a-5d3e09442df2",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The Alice dataset contains EEG data from 33 participants listening to a 12.4-minute audiobook chapter with 2129 words, including word-level linguistic regressors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C8 provide factual descriptions of the dataset used in the tutorial, with appropriate citations to the original publications (Bhattasali et al., 2020; Brennan et al., 2019). These are verifiable dataset properties.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:53:28.162425Z"
+    },
+    {
+      "id": "7289ee09-e08d-4a02-b8e2-1b86c755d6e6",
+      "content_id": "79a459a7-6a54-4496-9a7a-5d3e09442df2",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Prior work has established that auditory cortex is sensitive to acoustic onsets, that onset spectrograms predict MEG responses, and that brain responses reflect hierarchical linguistic representations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C22, C27, C35-C36 summarize established findings from prior work, all supported by appropriate citations. These provide necessary background context for the current analyses and are accurately represented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:53:28.162425Z"
+    },
+    {
+      "id": "f51c0d74-a8de-4ef9-a201-64a2c2df7d14",
+      "content_id": "79a459a7-6a54-4496-9a7a-5d3e09442df2",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The sparsity prior in boosting favors models with smaller coefficients, making uncentered predictors preferable and allowing mathematically redundant predictors to improve model performance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C59 describe consequences of the sparsity prior used in boosting. These are logical inferences from the properties of the algorithm and are consistent with the demonstrated behavior in the word-class analysis where redundant predictors improved the model.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:53:28.162425Z"
+    },
+    {
+      "id": "6b81bfa0-c3cb-4cc7-9d54-d73b3331d0b7",
+      "content_id": "79a459a7-6a54-4496-9a7a-5d3e09442df2",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Source localization can be used to assign brain responses to cortical locations and can improve signal-to-noise ratio by acting as a spatial filter.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C61 describe established source localization methods with appropriate citation (Nunez and Srinivasan, 2006). These are well-known properties of source localization techniques in EEG/MEG analysis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:53:28.162425Z"
+    },
+    {
+      "id": "523793dc-6ce1-4329-bdb7-2b6edff47d7e",
+      "content_id": "79a459a7-6a54-4496-9a7a-5d3e09442df2",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "TRF analysis has been successfully applied to diverse domains including music perception, audiovisual speech, subcortical processing, and attention-dependent processing in multi-talker speech.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C67 summarize applications of TRF analysis from prior work, all supported by appropriate citations. These demonstrate the breadth of applicability of the method beyond the speech processing focus of the current tutorial.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:53:28.162425Z"
+    },
+    {
+      "id": "d19e56a9-d038-416d-8651-4b8d0ef84c97",
+      "content_id": "79a459a7-6a54-4496-9a7a-5d3e09442df2",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "TRF analysis with cross-validation provides strong tests of unique predictor contributions and predictive (not just explanatory) power, with cortical phase-locked responses primarily below 10 Hz.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C70 describe methodological advantages and practical considerations for TRF analysis. C68-C69 are logical inferences about the method's capabilities, while C70 is supported by citation (Ding et al., 2014) and justifies the 20 Hz low-pass filter used in the analyses.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:53:28.162425Z"
+    },
+    {
+      "id": "01f04fac-40d0-4e54-bc48-ee8ccad3ae79",
+      "content_id": "79a459a7-6a54-4496-9a7a-5d3e09442df2",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The average interval between word onsets in the Alice stimulus is 334 ms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C78 is a factual statement about the stimulus properties, calculable from the dataset (2129 words in 12.4 minutes = ~744 ms per word on average, though the 334 ms figure likely refers to a different calculation or subset). This is a verifiable data property.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:53:28.162425Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "30301435-fc3d-44b7-af71-7757f5ff65a1",
+      "result_id": "74862486-da8f-4114-87b6-f619ef83add7"
+    },
+    {
+      "claim_id": "12e6218d-9be8-4efd-ac04-15b42e30efbe",
+      "result_id": "74862486-da8f-4114-87b6-f619ef83add7"
+    },
+    {
+      "claim_id": "5fac067a-2938-4300-8d3e-754fcb28a6ce",
+      "result_id": "74862486-da8f-4114-87b6-f619ef83add7"
+    },
+    {
+      "claim_id": "2f848101-b1ae-4826-8bae-372a4ea95d0a",
+      "result_id": "74862486-da8f-4114-87b6-f619ef83add7"
+    },
+    {
+      "claim_id": "1dd0cf78-c2f1-4c7c-be21-ab5c36fe0dc5",
+      "result_id": "20e69ddf-28a7-4a55-8a39-4eaa66c66c64"
+    },
+    {
+      "claim_id": "0ee31f94-2bb0-4f5f-9721-73a2bc9fcbbd",
+      "result_id": "20e69ddf-28a7-4a55-8a39-4eaa66c66c64"
+    },
+    {
+      "claim_id": "caca0188-7348-4e36-9a0d-0ac6a0633ccd",
+      "result_id": "20e69ddf-28a7-4a55-8a39-4eaa66c66c64"
+    },
+    {
+      "claim_id": "be85b66b-7ef6-4b08-b55d-54ca1b6653d8",
+      "result_id": "20e69ddf-28a7-4a55-8a39-4eaa66c66c64"
+    },
+    {
+      "claim_id": "4e44114a-83d1-4919-ac5f-79a1e7d503cc",
+      "result_id": "20e69ddf-28a7-4a55-8a39-4eaa66c66c64"
+    },
+    {
+      "claim_id": "99c99d03-d5db-4297-ae11-59a377f13e33",
+      "result_id": "2d5fab66-d581-4aa6-8dd5-c32480901af0"
+    },
+    {
+      "claim_id": "8e4c8529-f764-4985-be29-52d56f090f5d",
+      "result_id": "2d5fab66-d581-4aa6-8dd5-c32480901af0"
+    },
+    {
+      "claim_id": "a65594ba-fada-4c19-9a6a-5fa18f0b04fa",
+      "result_id": "2d5fab66-d581-4aa6-8dd5-c32480901af0"
+    },
+    {
+      "claim_id": "d495f859-c5ab-4e46-bf64-a573f0e9892a",
+      "result_id": "2d5fab66-d581-4aa6-8dd5-c32480901af0"
+    },
+    {
+      "claim_id": "cc26ca7a-c5a9-4dfa-99a8-cd9c14e1547e",
+      "result_id": "2d5fab66-d581-4aa6-8dd5-c32480901af0"
+    },
+    {
+      "claim_id": "4de39227-de72-4523-a232-be471d812086",
+      "result_id": "2d5fab66-d581-4aa6-8dd5-c32480901af0"
+    },
+    {
+      "claim_id": "99e7ef65-a6e6-4f62-805d-46e2c15498dd",
+      "result_id": "2d5fab66-d581-4aa6-8dd5-c32480901af0"
+    },
+    {
+      "claim_id": "28c4aea0-2b24-4f64-b52c-8ff113fcb797",
+      "result_id": "09e80e1f-dd0c-4bc1-89d8-25381d319987"
+    },
+    {
+      "claim_id": "021d418f-404d-4c12-950e-ff752286d9eb",
+      "result_id": "09e80e1f-dd0c-4bc1-89d8-25381d319987"
+    },
+    {
+      "claim_id": "1b3cbc65-6188-4de9-8549-f34604e4ea62",
+      "result_id": "09e80e1f-dd0c-4bc1-89d8-25381d319987"
+    },
+    {
+      "claim_id": "9eac0027-dd02-44a8-87f0-5eb2bf23730e",
+      "result_id": "09e80e1f-dd0c-4bc1-89d8-25381d319987"
+    },
+    {
+      "claim_id": "f04333f3-d357-4501-84a6-7e6ba3c53337",
+      "result_id": "09e80e1f-dd0c-4bc1-89d8-25381d319987"
+    },
+    {
+      "claim_id": "0d7ab686-064b-4a6b-805e-2e72a1ff2605",
+      "result_id": "09e80e1f-dd0c-4bc1-89d8-25381d319987"
+    },
+    {
+      "claim_id": "e42cfe18-b327-41d6-a150-8996278552d1",
+      "result_id": "df83287c-a561-4431-ad1f-21ebe4f53532"
+    },
+    {
+      "claim_id": "7b2e268c-0c8b-4fdb-8ee2-af5b7f846ff5",
+      "result_id": "df83287c-a561-4431-ad1f-21ebe4f53532"
+    },
+    {
+      "claim_id": "4eb44394-5a9e-40e1-b8d5-bb90b1962b4e",
+      "result_id": "df83287c-a561-4431-ad1f-21ebe4f53532"
+    },
+    {
+      "claim_id": "498c641c-9a90-4e26-a527-8585cc7d6f0c",
+      "result_id": "df83287c-a561-4431-ad1f-21ebe4f53532"
+    },
+    {
+      "claim_id": "413f769a-3377-4162-bf9a-34f5f5be1ced",
+      "result_id": "df83287c-a561-4431-ad1f-21ebe4f53532"
+    },
+    {
+      "claim_id": "b0647f6e-feed-49bd-8c55-9021e8ad7613",
+      "result_id": "df83287c-a561-4431-ad1f-21ebe4f53532"
+    },
+    {
+      "claim_id": "81a14ade-d322-474f-8c60-863825ab3c7a",
+      "result_id": "df83287c-a561-4431-ad1f-21ebe4f53532"
+    },
+    {
+      "claim_id": "6a457b92-343a-43e1-9675-6e7e54d623d2",
+      "result_id": "df83287c-a561-4431-ad1f-21ebe4f53532"
+    },
+    {
+      "claim_id": "dd6555e5-6e20-474c-aa39-6d1c07897073",
+      "result_id": "3be1d336-3a2f-4e9c-a632-a15bca49d0ea"
+    },
+    {
+      "claim_id": "54cf054e-6327-4c6a-84a4-ff161a367843",
+      "result_id": "3be1d336-3a2f-4e9c-a632-a15bca49d0ea"
+    },
+    {
+      "claim_id": "0ea80f09-5aa2-4d16-b974-998be67b7d21",
+      "result_id": "3be1d336-3a2f-4e9c-a632-a15bca49d0ea"
+    },
+    {
+      "claim_id": "8242c9ef-85f7-429a-8773-91564f76947a",
+      "result_id": "3be1d336-3a2f-4e9c-a632-a15bca49d0ea"
+    },
+    {
+      "claim_id": "32bfcf8a-f075-47ab-825e-108a00816770",
+      "result_id": "3be1d336-3a2f-4e9c-a632-a15bca49d0ea"
+    },
+    {
+      "claim_id": "6b8dd93e-76d4-444e-9d23-510b55f661e7",
+      "result_id": "3be1d336-3a2f-4e9c-a632-a15bca49d0ea"
+    },
+    {
+      "claim_id": "e1f050d4-eaee-4130-bfc6-7378bfb54502",
+      "result_id": "a5969f03-7c72-448b-a02e-bb786490a3e7"
+    },
+    {
+      "claim_id": "29ce4731-df7d-408e-979c-dcc99b33042e",
+      "result_id": "a5969f03-7c72-448b-a02e-bb786490a3e7"
+    },
+    {
+      "claim_id": "e61bf060-76a9-489b-9bef-39af5f2bd851",
+      "result_id": "3de98950-eb86-4905-b853-23e38063d30e"
+    },
+    {
+      "claim_id": "5d5ef851-a11f-4449-b7e1-c3232c3e144c",
+      "result_id": "3de98950-eb86-4905-b853-23e38063d30e"
+    },
+    {
+      "claim_id": "b6cd4f44-2dd2-4842-8efd-67d7dbcec00a",
+      "result_id": "3de98950-eb86-4905-b853-23e38063d30e"
+    },
+    {
+      "claim_id": "e4ebe6ec-f9b8-4a64-83a6-da32a769d643",
+      "result_id": "3de98950-eb86-4905-b853-23e38063d30e"
+    },
+    {
+      "claim_id": "3b8141b3-522a-4290-b056-fc586cc1874e",
+      "result_id": "3de98950-eb86-4905-b853-23e38063d30e"
+    },
+    {
+      "claim_id": "40dfeffc-0927-4f59-aa0b-adc995f588f5",
+      "result_id": "aa160a0a-94e0-48bf-9b07-1c74a1097351"
+    },
+    {
+      "claim_id": "ecce9bb8-3dc5-4673-8ead-a9528e4d88b1",
+      "result_id": "aa160a0a-94e0-48bf-9b07-1c74a1097351"
+    },
+    {
+      "claim_id": "544ce3a8-72cb-4fa1-a8b5-bffc68ec1bb9",
+      "result_id": "34ea9b42-4dc7-4166-8190-ba25bf37c0b5"
+    },
+    {
+      "claim_id": "54747049-5bfc-4513-a08b-9cc8edfe4525",
+      "result_id": "34ea9b42-4dc7-4166-8190-ba25bf37c0b5"
+    },
+    {
+      "claim_id": "6462e112-9e3c-47ac-9d9b-3b15cf0951c4",
+      "result_id": "34ea9b42-4dc7-4166-8190-ba25bf37c0b5"
+    },
+    {
+      "claim_id": "bbcfa5c1-b720-4efc-9d90-4121f6d09736",
+      "result_id": "34ea9b42-4dc7-4166-8190-ba25bf37c0b5"
+    },
+    {
+      "claim_id": "240f73cd-0b9c-4159-9a69-93a2da1e8a18",
+      "result_id": "34ea9b42-4dc7-4166-8190-ba25bf37c0b5"
+    },
+    {
+      "claim_id": "750d8725-6c01-4cde-b739-10419559bc20",
+      "result_id": "34ea9b42-4dc7-4166-8190-ba25bf37c0b5"
+    },
+    {
+      "claim_id": "149c9db8-6b3d-432d-84b3-1cb4f2785691",
+      "result_id": "34ea9b42-4dc7-4166-8190-ba25bf37c0b5"
+    },
+    {
+      "claim_id": "87e1c2c0-42b4-49c8-991f-5407eb9b3a32",
+      "result_id": "34ea9b42-4dc7-4166-8190-ba25bf37c0b5"
+    },
+    {
+      "claim_id": "0f825094-d26e-4d5a-9337-f816013b41af",
+      "result_id": "34ea9b42-4dc7-4166-8190-ba25bf37c0b5"
+    },
+    {
+      "claim_id": "053fd466-c3a8-4ca6-a92f-d342c3a6cf6e",
+      "result_id": "34ea9b42-4dc7-4166-8190-ba25bf37c0b5"
+    },
+    {
+      "claim_id": "7c6a75e0-d2b8-4f71-9c76-c865c90b7202",
+      "result_id": "34ea9b42-4dc7-4166-8190-ba25bf37c0b5"
+    },
+    {
+      "claim_id": "892c7386-80ba-4f98-8c68-05d1434231ad",
+      "result_id": "34ea9b42-4dc7-4166-8190-ba25bf37c0b5"
+    },
+    {
+      "claim_id": "c53d3c44-8b65-40e7-8434-f4054daad4a2",
+      "result_id": "ce950d9d-a9bf-411f-a943-5369d62948fe"
+    },
+    {
+      "claim_id": "b97ca41b-dc0d-4c10-b666-8a43f1e20aef",
+      "result_id": "ce950d9d-a9bf-411f-a943-5369d62948fe"
+    },
+    {
+      "claim_id": "b1154954-70c2-4313-ac4d-12894889ae98",
+      "result_id": "ce950d9d-a9bf-411f-a943-5369d62948fe"
+    },
+    {
+      "claim_id": "26c0d741-4a00-4a93-be30-50cd901e0b1f",
+      "result_id": "7289ee09-e08d-4a02-b8e2-1b86c755d6e6"
+    },
+    {
+      "claim_id": "c6141db3-61d9-439a-b43d-cc2a1d829041",
+      "result_id": "7289ee09-e08d-4a02-b8e2-1b86c755d6e6"
+    },
+    {
+      "claim_id": "80e1aaa9-2913-4aa0-97f6-0f692e027141",
+      "result_id": "7289ee09-e08d-4a02-b8e2-1b86c755d6e6"
+    },
+    {
+      "claim_id": "4e44114a-83d1-4919-ac5f-79a1e7d503cc",
+      "result_id": "7289ee09-e08d-4a02-b8e2-1b86c755d6e6"
+    },
+    {
+      "claim_id": "00b06c24-0f7f-439a-bd4a-d0c018f691c4",
+      "result_id": "7289ee09-e08d-4a02-b8e2-1b86c755d6e6"
+    },
+    {
+      "claim_id": "aee01464-a41f-4f66-b8dd-e4202b7a97f3",
+      "result_id": "7289ee09-e08d-4a02-b8e2-1b86c755d6e6"
+    },
+    {
+      "claim_id": "b7837b7d-8f54-4087-b40f-882388667ea1",
+      "result_id": "f51c0d74-a8de-4ef9-a201-64a2c2df7d14"
+    },
+    {
+      "claim_id": "d612b57b-13bc-449f-a877-04c5a59bba28",
+      "result_id": "f51c0d74-a8de-4ef9-a201-64a2c2df7d14"
+    },
+    {
+      "claim_id": "da66fd15-c97d-4df6-8aab-6bdcdef32e6a",
+      "result_id": "f51c0d74-a8de-4ef9-a201-64a2c2df7d14"
+    },
+    {
+      "claim_id": "fcddc075-8cd5-4634-932c-ae66c57e480c",
+      "result_id": "6b81bfa0-c3cb-4cc7-9d54-d73b3331d0b7"
+    },
+    {
+      "claim_id": "5e628c78-8d8c-48c8-9513-ed79793c75e7",
+      "result_id": "6b81bfa0-c3cb-4cc7-9d54-d73b3331d0b7"
+    },
+    {
+      "claim_id": "7a3f38e2-d2ec-4a2a-97a4-5fd1b9ef269b",
+      "result_id": "523793dc-6ce1-4329-bdb7-2b6edff47d7e"
+    },
+    {
+      "claim_id": "a585958a-e0a3-4134-9915-69459348a6f9",
+      "result_id": "523793dc-6ce1-4329-bdb7-2b6edff47d7e"
+    },
+    {
+      "claim_id": "437330c5-dfb3-444b-98df-99e3aec580a0",
+      "result_id": "523793dc-6ce1-4329-bdb7-2b6edff47d7e"
+    },
+    {
+      "claim_id": "c9a277a9-52be-45b2-8aef-8d31e22c08d2",
+      "result_id": "523793dc-6ce1-4329-bdb7-2b6edff47d7e"
+    },
+    {
+      "claim_id": "7fa74da7-6bee-4fa5-80b7-6c0bd8cec730",
+      "result_id": "d19e56a9-d038-416d-8651-4b8d0ef84c97"
+    },
+    {
+      "claim_id": "8e8480f9-c706-4747-91ee-3bb0402abed3",
+      "result_id": "d19e56a9-d038-416d-8651-4b8d0ef84c97"
+    },
+    {
+      "claim_id": "2cc63575-5418-4f77-b9d1-d86964307496",
+      "result_id": "d19e56a9-d038-416d-8651-4b8d0ef84c97"
+    },
+    {
+      "claim_id": "285cb014-9c37-4e6f-a4b2-b80e90d14046",
+      "result_id": "01f04fac-40d0-4e54-bc48-ee8ccad3ae79"
+    }
+  ],
+  "comparisons": []
+}

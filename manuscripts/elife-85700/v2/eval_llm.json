@@ -1,0 +1,289 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "The study collected ACL specimens from 4 healthy and 4 degenerated samples, performed scRNA-seq quality control, and obtained 49,356 cells (24,635 normal, 24,721 degenerated) with an average of 2,435 genes per cell for analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C107-C109 provide consistent sample collection and quality control metrics. The sample sizes are clearly stated, and the distribution between normal and degenerated groups is balanced. However, the study lacks information about technical replicates, batch effects mitigation beyond visualization, and whether the 'healthy' controls from amputation patients are truly appropriate controls for osteoarthritis-related degeneration.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C13"
+    ],
+    "result": "Four major cell classes were identified in ACL tissue: fibroblasts (66.14%), immune cells (16.25%), endothelial cells (7.83%), and pericytes (9.78%), with fibroblasts being the dominant cell type in both normal and degenerated ligaments. The degenerated group showed higher immune cell and lower pericyte ratios compared to normal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C10 and C13 describe the major cell type identification with specific markers and proportions. The lineage-defining markers are well-established (e.g., PECAM1 for endothelial cells, PTPRC for immune cells). The validation with bulk RNA-seq (C13) strengthens confidence. However, the study does not report statistical significance for the proportion differences between groups, and the small sample size (n=4 per group) limits generalizability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C11",
+      "C12"
+    ],
+    "result": "Fibroblasts showed the largest number of differentially expressed genes between healthy and degenerated ligaments, indicating they undergo significant changes during the degenerative process.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C12 are supported by DEG analysis shown in Figure 1H. However, the manuscript does not provide statistical thresholds for DEG calling (fold-change cutoffs, adjusted p-values), making it difficult to assess the rigor of this conclusion. The inference that fibroblasts 'undergo significant changes' is reasonable but would benefit from functional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Ten fibroblast subsets (Fib.1-Fib.10) were identified with distinct functional characteristics. Disease-associated subsets (Fib.1, Fib.2, Fib.8, Fib.9) showed increased proportions in degenerated ligaments, while homeostatic subsets (Fib.3, Fib.4, Fib.7) were enriched in healthy tissue.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C14-C26 describe fibroblast subclustering and functional annotation. While the marker genes are provided, the functional assignments (e.g., 'ECM remodeling-associated', 'homeostasis-associated') are largely inferential based on gene expression patterns without functional validation. The classification of Fib.6 as 'chondrocytes' within a fibroblast cluster is conceptually problematic and may represent chondroid metaplasia rather than true chondrocytes. Statistical testing of proportion differences is not reported. The claim that Fib.10 'may have' damage repair function (C26) is appropriately tentative but lacks supporting evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "Fibroblasts in degenerated ligaments upregulate ECM remodeling genes (CFD, SPP1, COL1A2, COL3A1, FN1, PRG4) and activate pathways related to ECM organization, TGF-beta signaling, complement cascades, and leukocyte trans-endothelial migration, indicating that ECM remodeling and inflammation are key events in ligament degeneration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C32 and C119-C126 are supported by multiple lines of evidence including DEG analysis, GO/KEGG enrichment, GSEA, and gene interaction networks. The findings are internally consistent and align with prior literature (C125). However, the study does not provide adjusted p-values for enrichment analyses, and the causal relationship between ECM changes and biomechanical failure (C126) is inferred rather than demonstrated. The consistency with bulk RNA-seq strengthens the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C127",
+      "C128"
+    ],
+    "result": "Pseudotime trajectory analysis revealed two distinct cell fates during ligament degeneration: cell fate 1 characterized by inflammatory damage and ECM degradation (Fib.2, Fib.9), and cell fate 2 characterized by ECM remodeling and damage repair (Fib.10).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C33-C41 and C127-C128 describe trajectory analysis using Monocle 3. While the computational approach is appropriate, several concerns arise: (1) the choice of Fib.4 and Fib.5 as starting points is based on biological reasoning but may introduce bias; (2) trajectory inference assumes continuous transitions that may not reflect discrete cell state changes; (3) the interpretation of two 'opposite' trajectories (damage vs. repair) is speculative without longitudinal data or functional validation; (4) the study does not address whether these represent true developmental trajectories or simply different disease states. The gene module analysis (C39-C40) supports the interpretation but does not validate causality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "Seven blood vessel-derived cell clusters were identified, including five endothelial cell subsets and two pericyte subsets. Pericyte1 (myocyte-like) increased while pericyte2 (fibroblast-like) decreased in degenerated ligaments, potentially altering tissue properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C42-C53 and C131-C133 describe vascular cell characterization. The identification of EC and pericyte subsets is supported by marker expression, and immunofluorescence validation (C56-C57) strengthens the findings. However, the functional assignments (e.g., 'anti-angiogenesis' for EC2, 'damage repair' for EC3) are inferential. The speculation that pericyte1 increase 'may change tissue properties' (C53, C133) lacks mechanistic evidence. The claim that pericytes can differentiate into fibroblasts and chondrocytes (C110) is cited but not demonstrated in this study. Statistical testing of proportion differences is not reported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C62"
+    ],
+    "result": "Endothelial cells in degenerated ligaments upregulate inflammation-related genes (C1QA, PLA2G2A), ECM-related genes (PRG4, VIM, POSTN), and activate TGF-beta and chemokine signaling pathways, indicating their involvement in inflammation and ECM remodeling during degeneration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54, C55, and C62 are supported by DEG analysis, enrichment analysis, and GSEA. The findings are consistent with the fibroblast analysis and suggest coordinated cellular responses. However, the study does not demonstrate whether ECs actively contribute to pathology or respond to the altered microenvironment. The consistency with macrophage findings (C62) is noted but not mechanistically explored.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C129",
+      "C130"
+    ],
+    "result": "Six immune cell subpopulations were identified, with macrophages being the most abundant. Macrophage proportion increased in degenerated ligaments, and these cells upregulated ECM remodeling genes (PRG4, FN1, HTRA1), suggesting their contribution to ligament degeneration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C61 and C129-C130 describe immune cell characterization with focus on macrophages. The identification is supported by marker expression and proportion analysis. The upregulation of ECM-related genes in macrophages is consistent with their known role in tissue remodeling. However, the study does not distinguish macrophage polarization states (M1/M2), which is critical for understanding their functional role. The inference that macrophages 'contribute to' degeneration (C130) is reasonable but not causally demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C134",
+      "C135"
+    ],
+    "result": "Cell-cell interaction analysis revealed that FGF signaling (Fib.9 expressing FGF7 acting on FGFR1 in fibroblasts) and TGF-\u03b2 signaling (macrophages and Fib.8 expressing TGFB1 acting on TGFBR1/2 in fibroblasts and endothelial cells) are key pathways in ligament degeneration, validated by immunofluorescence showing increased Fib.8 and Fib.9 in diseased tissue.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C73 and C134-C135 describe ligand-receptor interaction analysis using CellPhoneDB and CellChat. The identification of FGF and TGF-\u03b2 signaling is supported by computational analysis and validated by immunofluorescence (C71-C73). The inference that these pathways 'disrupt homeostasis' (C67) and 'promote disease' (C70) is reasonable given the known roles of these pathways in fibrosis and ECM remodeling. However, the study does not demonstrate causality or test whether blocking these pathways would ameliorate degeneration. The spatial proximity shown in spatial transcriptomics (C78-C79) supports the possibility of these interactions but does not prove they occur.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Spatial transcriptomics validated that disease-associated fibroblast subsets (Fib.9) are more abundant in degenerated samples (L8) compared to normal (L1), with increased immune cells and endothelial cells. Disease-associated fibroblasts are spatially adjacent to immune and endothelial cells, supporting cell-cell interaction findings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C79 describe spatial transcriptomics validation. The spatial distribution patterns are consistent with scRNA-seq findings, and the observation of spatial proximity between disease-associated cell types (C78) provides supporting evidence for the interaction analysis. However, the study only analyzed two samples (L1 and L8), limiting generalizability. The inference that spatial proximity 'makes it possible' for interactions (C79) is reasonable but does not prove functional interactions occur. Quantitative analysis of spatial relationships (e.g., spatial statistics) is not provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C115",
+      "C116"
+    ],
+    "result": "FGF and TGF-\u03b2 signaling pathways may induce ECM remodeling in ligament degeneration, and FGF7-FGFR1 and TGFB1-TGFBR2 may be potential therapeutic targets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C115-C116 represent the translational implications of the study. While the involvement of FGF and TGF-\u03b2 pathways is supported by multiple lines of evidence, the suggestion that they 'may induce' ECM remodeling (C115) is inferential and not causally demonstrated. The proposal of FGF7-FGFR1 and TGFB1-TGFBR2 as 'potential therapeutic targets' (C116) is speculative and would require functional validation through perturbation experiments (e.g., pathway inhibition studies) and ideally animal models. The study provides correlative evidence but not mechanistic proof.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C117",
+      "C118"
+    ],
+    "result": "This study provides a comprehensive single-cell and spatial transcriptomic atlas of human ACL, revealing cellular heterogeneity, identifying cell interactions, and demonstrating the roles of FGF and TGF-\u03b2 signaling in ligament degeneration, offering insights for developing diagnostic and therapeutic strategies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C106 and C117-C118 summarize the study's contributions. The study successfully generates a comprehensive cell atlas with spatial information, identifies cellular heterogeneity, and reveals signaling networks. These are significant contributions to the field. However, the claim that findings 'provide crucial clues for establishing new diagnostic and therapeutic strategies' (C118) is aspirational rather than demonstrated. The study is primarily descriptive and correlative, lacking functional validation or therapeutic intervention experiments. The potential for clinical translation exists but requires substantial follow-up work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "The introduction and discussion appropriately cite prior literature on ligament biology, ACL function, degeneration mechanisms, ECM composition, and the roles of TGF-\u03b2, complement, inflammation, FGF signaling, and pericytes in tissue pathology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C103 and C110-C114 represent background knowledge and literature citations. These claims are appropriately referenced and provide context for the study. The citations appear accurate and relevant. However, the evaluation of these claims depends on the accuracy of the cited literature, which is beyond the scope of this review. The claim that 'mechanisms of ACL aging and degeneration remain unclear' (C85, C103) appropriately motivates the study.",
+    "result_type": "MINOR"
+  }
+]

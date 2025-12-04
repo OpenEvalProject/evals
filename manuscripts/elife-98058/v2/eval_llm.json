@@ -1,0 +1,290 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C54",
+      "C55",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "The study identified 1513 unique FISNA-NACHT and 567 NLR-associated B30.2 sequences from 93 zebrafish representing four wild populations and two laboratory strains using targeted sequencing with bait-based exon capture and PacBio SMRT technology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C54, C55 provide the primary quantitative findings (1513 FISNA-NACHT, 567 NLR-B30.2), while C42-C44 describe the sample composition and methodology. The orthology clustering approach is clearly described, and the numbers are consistently reported across the manuscript with supporting figures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C61",
+      "C63",
+      "C6",
+      "C7",
+      "C88",
+      "C89",
+      "C172",
+      "C173",
+      "C174",
+      "C175",
+      "C176"
+    ],
+    "result": "Individual zebrafish possess 100-550 NLR genes, with laboratory strains having significantly fewer NLRs than wild populations. Mathematical modeling estimated ~520-570 NLRs in laboratory strains versus ~2000-2900 NLRs in wild populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61, C63 report observed ranges supported by Figure 2, while C6-C7 provide comparative statements. The mathematical modeling results (C88-C89, C172-C176) are derived from nonlinear fitting described in the methods and shown in Figure 3D and Table 1. The convergence of multiple analytical approaches strengthens these findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C163",
+      "C164",
+      "C123",
+      "C124",
+      "C168",
+      "C169",
+      "C170"
+    ],
+    "result": "Approximately 60% of NLR genes are present in all wild populations, but only 4% constitute the core pan-NLRome (found in \u226580% of individuals). The majority (51%) fall in the 'shell' (20-80% of fish), while 45% are rare variants (<20% of fish).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C5 from the abstract are supported by detailed findings in C163-C164, C123-C124, and C168-C170. The pan-NLRome structure (core/shell/cloud) is clearly defined and quantified, with supporting data in Figure 3B-C. The consistency between abstract and results sections strengthens this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C72",
+      "C78",
+      "C10"
+    ],
+    "result": "Zebrafish NLR genes exhibit very low nucleotide diversity, with approximately half of gene copies being monomorphic and the remainder having few polymorphisms, interpreted as a signature of purifying selection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C9, C72, C78 report the low diversity findings supported by Figure 4. Claim C10 interprets this pattern as purifying selection based on the \u03b8\u03c0/\u03b8w ratio being <1 (Figure 4D), which is theoretically sound. However, the interpretation relies on population genetic theory and could benefit from additional tests (e.g., Tajima's D).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C62"
+    ],
+    "result": "NLRs sequenced in this study often differ from the GRCz11 reference genome, with only 50-75% of identified NLRs having high-quality matches. Even the TU strain (basis for GRCz11) showed only ~75% alignment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C68 describe mapping results supported by Figure 2\u2014figure supplement 2. The finding that even the reference strain shows incomplete alignment (C65-C66) is particularly notable and well-documented. Claim C62 provides the overall range. The poor mapping quality (mostly 1) for non-matching sequences (C69) supports genuine differences rather than technical artifacts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Nearly 10% of identified NLR sequences contain premature stop codons, and 101 FISNA-NACHT sequences have N-terminal PYD domains, with 97 of these belonging to group 1 NLR-C genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C57 report premature stop codons in 145 FISNA-NACHT and 64 NLR-B30.2 sequences. Claims C58-C59 describe PYD domain distribution. These are straightforward sequence analysis results, though the functional significance of truncated proteins is not explored.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C178",
+      "C179",
+      "C180",
+      "C181"
+    ],
+    "result": "Copy number variation analysis revealed considerable variability in NLR representation both between and within populations, with each NLR showing distinct patterns and wild populations generally having higher copy numbers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C178-C181 describe copy number variation patterns supported by Figure 3A. The interpretation that read depth reflects copy number (C179) is reasonable but indirect, as the method cannot definitively distinguish copy number from allelic variation without additional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C87",
+      "C92",
+      "C94"
+    ],
+    "result": "Mathematical modeling suggests investigated populations possess closed pan-NLRomes, but capturing 90% of wild population NLRomes would require up to several hundred thousand fish, indicating the species-wide pan-NLRome is vastly larger than detected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87, C92 are based on nonlinear fitting to a harmonic function (Equation 2) with \u03b2>1 indicating closed pan-NLRomes. The extrapolation to sample sizes needed (Table 1) is mathematically sound but represents extreme extrapolation. Claim C94 is a reasonable inference given the limited geographic sampling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C106",
+      "C111",
+      "C112"
+    ],
+    "result": "Laboratory strains show heavily reduced NLR copy number variation compared to wild populations, likely due to population bottlenecks during strain establishment, warranting caution when extrapolating immune studies from laboratory to wild zebrafish or other species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C107 reports the finding, C108 provides the interpretation based on population genetics theory, and C106 cites prior work on SNP reduction. Claims C111-C112 offer reasonable recommendations. The bottleneck explanation is plausible but alternative mechanisms (C110) are also mentioned.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C184",
+      "C185",
+      "C52",
+      "C53"
+    ],
+    "result": "The study distinguished 567 NLR-associated B30.2 domains from 732 non-NLR B30.2 domains using a highly conserved 47 bp exon that precedes B30.2 in NLRs but not other genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C184-C185 describe the methodological approach supported by Figure 2\u2014figure supplement 3, which shows the conserved exon sequence. Claims C52-C53 confirm the capability to distinguish sequences. This is a clear methodological achievement addressing a specific technical challenge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "Zebrafish NLR diversity is comparable to that in Arabidopsis thaliana (~2000 NLRs per population), suggesting convergent evolutionary trajectories despite structural similarities arising from convergent evolution. However, zebrafish show more extreme variation in copy numbers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C127 draw comparisons with A. thaliana based on cited literature (C119-C122) and current findings (C123-C124). The comparison is well-supported, though the inference about convergent evolutionary trajectories (C126) is speculative. The distinction between structural convergence (C125) and evolutionary trajectory convergence is appropriately nuanced.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Some NLR counts may be underestimated due to low sequencing depth and the homology requirement of bait-capture, particularly affecting shorter B30.2 exons. However, saturation analysis suggests few NLRs were missed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C85 acknowledge methodological limitations, while C86 provides evidence that the impact is limited based on saturation curves. This balanced assessment of limitations and their likely impact is appropriate. The acknowledgment that B30.2 is more affected (C85) is logical given length differences.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C149"
+    ],
+    "result": "The targeted sequencing approach cannot determine which exons belong to the same gene due to NLR exons being spread across tens of kilobases, nor can it elucidate genomic arrangement of gene copies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C51, C149 clearly describe a fundamental limitation of the methodology. This is an honest assessment of what the approach cannot achieve, which is important for interpreting the results. The limitation is inherent to the PCR-based amplification approach described in C48-C49.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148"
+    ],
+    "result": "Two mechanisms may contribute to NLR copy number variation: haplotypic variation (supported by chromosome 4 variation) and duplication events via unequal recombination or transposon activity. Tandem duplication likely played the most important role based on genomic clustering.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C139-C148 propose mechanisms but are largely speculative (C139, C140, C144, C148 explicitly use 'could' or 'reasonable to assume'). While C141-C142 cite supporting evidence for haplotypic variation and C146 makes an inference from genomic organization, the study's methodology (C149) cannot directly test these mechanisms. The speculation is reasonable but not definitively supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "Shared NLR genes likely provide fitness advantages against common pathogens, while population-specific NLRs may represent local adaptations. Functional redundancy within the NLRome is also possible.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C128-C130 are explicitly speculative ('postulate', 'may represent', 'could be') and lack direct functional evidence. While these are reasonable hypotheses based on the distribution patterns observed, they require experimental validation through pathogen challenge experiments or functional studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "All zebrafish NLR-C proteins possess a FISNA domain preceding the NACHT domain, encoded by the same large exon. Many have a B30.2 domain at the C-terminus separated by LRR-containing exons, and some have an N-terminal PYD domain encoded by a separate exon.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C37 describe the structural organization of NLR-C proteins, supported by Figure 1A and citations to prior work (Howe et al., 2016). This represents established knowledge about the gene family being studied and provides essential context for interpreting the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C105",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "A single high-quality reference genome is insufficient to identify or understand the diversity of large gene families like NLRs, due to assembly difficulties (especially on chromosome 4), challenges in analyzing multi-copy families, and limitations in distinguishing paralogs from orthologs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C105 is a conclusion well-supported by the study's findings (C64-C68) and acknowledged challenges (C97-C102). The specific issues with chromosome 4 assembly (C98-C99) are supported by citations. This represents an important general conclusion about genomic resources and their limitations.",
+    "result_type": "MAJOR"
+  }
+]

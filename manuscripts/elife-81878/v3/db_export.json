@@ -1,0 +1,2480 @@
+{
+  "submission": {
+    "id": "f1dc4e25-ad3f-48e8-b516-e095438ad75c",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-04T03:18:27.069917Z",
+    "updated_at": "2025-12-04T03:18:27.069917Z"
+  },
+  "content": [
+    {
+      "id": "1c55975b-9693-4060-86fd-cb7483bb64b1",
+      "submission_id": "f1dc4e25-ad3f-48e8-b516-e095438ad75c",
+      "content_type": "manuscript",
+      "content_text": "# Prediction of diabetic kidney disease risk using machine learning models: A population-based cohort study of Asian adults\n\n## Authors\n\n- Charumathi Sabanayagam<sup>1</sup> ([ORCID: 0000-0002-4042-4719](https://orcid.org/0000-0002-4042-4719)) \u2020\n- Feng He<sup>1</sup> ([ORCID: 0000-0002-4717-2243](https://orcid.org/0000-0002-4717-2243))\n- Simon Nusinovici<sup>1</sup>\n- Jialiang Li<sup>3</sup>\n- Cynthia Lim<sup>4</sup>\n- Gavin Tan<sup>1</sup>\n- Ching Yu Cheng<sup>1</sup>\n\n### Affiliations\n\n1. Singapore Eye Research Institute Singapore Singapore ([ROR:02crz6e12](https://ror.org/02crz6e12))\n2. Ophthalmology and Visual Sciences Academic Clinical Program, Duke-NUS Medical School Singapore Singapore ([ROR:01tgyzw49](https://ror.org/01tgyzw49))\n3. Department of Statistics and Data Science, National University of Singapore Singapore Singapore ([ROR:01tgyzw49](https://ror.org/01tgyzw49))\n4. Department of Renal Medicine, Singapore General Hospital Singapore Singapore ([ROR:036j6sg82](https://ror.org/036j6sg82))\n\n\u2020 Corresponding author\n\n## Abstract\n\nBackground:Machine learning (ML) techniques improve disease prediction by identifying the most relevant features in multidimensional data. We compared the accuracy of ML algorithms for predicting incident diabetic kidney disease (DKD).Methods:We utilized longitudinal data from 1365 Chinese, Malay, and Indian participants aged 40\u201380 y with diabetes but free of DKD who participated in the baseline and 6-year follow-up visit of the Singapore Epidemiology of Eye Diseases Study (2004\u20132017). Incident DKD (11.9%) was defined as an estimated glomerular filtration rate (eGFR) <60 mL/min/1.73 m2 with at least 25% decrease in eGFR at follow-up from baseline. A total of 339 features, including participant characteristics, retinal imaging, and genetic and blood metabolites, were used as predictors. Performances of several ML models were compared to each other and to logistic regression (LR) model based on established features of DKD (age, sex, ethnicity, duration of diabetes, systolic blood pressure, HbA1c, and body mass index) using area under the receiver operating characteristic curve (AUC).Results:ML model Elastic Net (EN) had the best AUC (95% CI) of 0.851 (0.847\u20130.856), which was 7.0% relatively higher than by LR 0.795 (0.790\u20130.801). Sensitivity and specificity of EN were 88.2 and 65.9% vs. 73.0 and 72.8% by LR. The top 15 predictors included age, ethnicity, antidiabetic medication, hypertension, diabetic retinopathy, systolic blood pressure, HbA1c, eGFR, and metabolites related to lipids, lipoproteins, fatty acids, and ketone bodies.Conclusions:Our results showed that ML, together with feature selection, improves prediction accuracy of DKD risk in an asymptomatic stable population and identifies novel risk factors, including metabolites.Funding:This study was supported by the Singapore Ministry of Health\u2019s National Medical Research Council, NMRC/OFLCG/MOH-001327-03 and NMRC/HCSAINV/MOH-001019-00. The funders had no role in study design, data collection and analysis, decision to publish, or preparation of the manuscript.\n\n## Introduction\n\nDiabetes affected an estimated 415 million people worldwide in 2015, and this number is expected to increase to 642 million by 2040, with the greatest increase expected in Asia, particularly in India and China (Ogurtsova et al., 2017). With the rising prevalence of diabetes and an aging population, the burden of diabetic kidney disease (DKD), a leading cause of end-stage kidney disease (ESKD), cardiovascular disease (CVD), and premature deaths, is also set to rise in parallel. Diabetes accounts for 30\u201350% of all chronic kidney disease (CKD) cases, affecting 285 million people worldwide (Webster et al., 2017). As CKD is asymptomatic till more than 50% of kidney function decline, early detection of individuals with diabetes who are at risk of developing DKD may facilitate prevention and appropriate intervention for DKD (Hill et al., 2016; Hirst et al., 2020). However, early identification of individuals at risk of developing CKD in type 2 diabetes is challenging (Alicic et al., 2017). Although most ESKD cases are due to diabetes, awareness of diabetes as a risk factor for CKD is markedly lower in several countries, which may constitute a barrier for early detection of CKD (White et al., 2008; Hussain et al., 2019; Couser et al., 2011). Moreover, in people with diabetes, adherence to annual screening for DKD with estimated glomerular filtration rate (eGFR) and urine albumin-creatinine ratio (UACR) remains a challenge (Manski-Nankervis et al., 2018). Therefore, there is an urgent need for the characterization of new biomarkers to identify individuals at risk of progressive eGFR decline and enable timely intervention for improving outcomes in DKD (Alicic et al., 2017).\n\nSeveral risk prediction models have been developed in the past for predicting progression to ESKD, but studies predicting onset of CKD in diabetic populations are limited. These studies were focused on clinical populations utilizing data from clinical trials (Dunkler et al., 2015) or heterogeneous cohorts of patients with different CKD definitions (Jiang et al., 2020). Dunkler et al. showed that albuminuria and eGFR were the key predictors and addition of demographic, clinical, or laboratory variables did not improve predictive performance beyond 69% (Dunkler et al., 2015). Current CKD risk prediction models developed using traditional regression models (e.g., logistic regression [LR] or linear regression) perform well when there are only small or moderate numbers of variables or predictors but tend to overfit if there is a large number of variables. Machine learning (ML) methods using \u2018Big data,\u2019 or multidimensional data, may improve prediction as they have fewer restrictive statistical assumptions compared to traditional regression models that assume linear relationships between risk factors and the logit of the outcomes and absence of multicollinearity among explanatory variables (Sundstr\u00f6m and Sch\u00f6n, 2020; Doupe et al., 2019; Bi et al., 2019).\n\nDiabetes is a metabolic disorder, and the metabolic changes associated with diabetes can lead to glomerular hypertrophy, glomerulosclerosis, tubulointerstitial inflammation, and fibrosis (Alicic et al., 2017). Several blood metabolites have been shown to be associated with DKD (Colhoun and Marcovecchio, 2018). Similarly, genetic abnormalities in diabetes have also been linked to an increased risk of DKD (Cole and Florez, 2020). We, and several others, have previously shown that retinal microvascular changes, including retinopathy, vessel narrowing, or dilation, and vessel tortuosity, were associated with CKD (Yau et al., 2011; Yip et al., 2017). Integrating high-dimensional data from multiple domains, including patient characteristics, clinical and \u2018Omics\u2019 data, has the potential to aid in risk stratification, prediction of future risk, and provide insights into the pathogenesis (Eddy et al., 2020). These features may contribute to prediction in very complicated ways, and they may not fully satisfy the requirement for a simple linear logistic model. It is thus more appropriate to consider ML approaches for a comprehensive study.\n\nIn the current study, we aimed to evaluate the performance of a set of the most common ML models, including traditional LR, for predicting the 6-year risk of DKD and identifying important predictors of DKD in a large population-based cohort study in Singapore with multidimensional data, including imaging, metabolites, and genetic biomarkers.\n\n## Methods\n\n### Study population\n\nData for this study was derived from the Singapore Epidemiology of Eye Diseases (SEED) study, a population-based prospective study of eye diseases in 10,033 Asian adults aged 40\u201380 y in Singapore. The follow-up study was conducted after a median duration of 6.08 y (interquartile range: [5.56, 6.79]), with 6762 participants. The detailed methodology of SEED has been published elsewhere (Majithia et al., 2021). Briefly, the name list of adults residing in the southwestern part of Singapore was provided by the Ministry of Home Affairs, and then an age-stratified random sampling procedure was conducted. A total of 3280 Malays (2004\u20132007) (Foong et al., 2007), 3400 Indians (2007\u20132009), and 3353 Chinese (2009\u20132011) (Lavanya et al., 2009) participated in the baseline study with response rates of 78.7, 75.6 and 72.8%, respectively. As all three studies followed the same methodology and were conducted in the same study clinic, we combined the three populations for the present study. For the current analysis, we included only those with diabetes, defined as random glucose \u226511.1 mmol/L, HbA1c \u2265 6.5% (48 mmol/mol), self-reported antidiabetic medication use, or having been diagnosed with diabetes by a physician. Of the 6762 participants who attended both baseline and follow-up visit, after excluding those without diabetes (n = 5307), prevalent CKD (n = 315), missing information on eGFR (n = 90), the final sample size for analysis was 1365 (47.5% Indians, 27.8% Malays, and 24.7% Chinese). The sample size available for each dataset after removing participants missing >10% data was between 976 and 1364 (Supplementary file 1-Table 1a). SEED was conducted in accordance with the Declaration of Helsinki and was approved by the SingHealth Centralised Institutional Review Board (2018/2717, 2018/2921, 2012/487/A, 2015/2279, 2018/2006, 2018/2594, 2018/2570). Informed consent was obtained from all participants.\n\n### Assessment of DKD\n\nIncident DKD was defined as an eGFR <60 mL/min/1.73 m2 with at least a 25% decrease in eGFR at follow-up in participants who had eGFR \u2265 60 mL/min/1.73 m2 at baseline. Combining change in eGFR category together with a minimal percent change ensures that small changes in eGFR, for example, from 61 to 59 mL/min/1.73 m2, are not misinterpreted as incident CKD as the eGFR is < 60 mL/min/1.73 m2 (Yip et al., 2017; Stevens et al., 2013). The reduction in eGFR at follow-up was calculated as a percentage of the baseline eGFR as (eGFR at baseline \u2013 eGFR at follow-up)/eGFR at baseline * 100%. GFR was estimated from plasma creatinine using the Chronic Kidney Disease Epidemiology Collaboration (CKD-EPI) equation (Levey et al., 2009). Blood creatinine was measured by the Jaffe method on the Beckman DXC800 analyzer calibrated to the Isotope Dilution Mass Spectrometry (IDMS) method using the National Institute of Standards and Technology (NIST) Reference material.\n\n### Variables for prediction\n\nWe evaluated 339 features such as demographic, lifestyle, socioeconomic, physical, laboratory, retinal imaging, genetic and blood metabolomics profile. The entire list of variables is presented in Supplementary file 1-Table 1b. We organized the variables into five different domains: traditional risk factors, extended risk factors, imaging parameters, genetic parameters, and blood metabolites. For ML analysis, based on different combinations of the five domains, we tested six models (A to F): A = traditional risk factors; B = A + extended risk factors; C = B + imaging parameters; D = B + genetic parameters; E = B + blood metabolites; F = B + imaging parameters + blood metabolites + genetic parameters.\n\n### Traditional risk factors (n = 7)\n\nAge, sex, ethnicity (Chinese, Malays, and Indians), body mass index (BMI, kg/m2), systolic blood pressure (BP, mm Hg), duration of diabetes (years), and HbA1c% were included as traditional risk factors.\n\n### Extended risk factors (n = 22)\n\nParticipant information was collected using an interviewer-administered questionnaire (demographic, socioeconomic, lifestyle factors, and personal history of diseases and medication use), physical examination (height, weight, BP), and laboratory examination (blood glucose, creatinine, lipid profile) (Majithia et al., 2021). Marital status, educational level (primary/below [\u22646 y], secondary/above [7 y and above of education]), monthly income, smoking status (current smokers vs. former and nonsmokers), alcohol consumption (ever vs. nondrinkers), history of CVD (self-reported history of myocardial infarction, stroke or angina), hypertension status, diastolic BP, pulse pressure, blood glucose, total, high-density lipoprotein (HDL) and low-density lipoprotein (LDL) cholesterol levels, antidiabetic including oral hypoglycemia drugs and insulin, antihypertensive, and anticholesterol medication use were included as part of extended risk factors.\n\n### Blood metabolites (n = 223)\n\nWe quantified 228 metabolic measures from stored serum/plasma samples at baseline using a high-throughput NMR metabolomics platform (Nightingale Health, Helsinki, Finland). The metabolites included routine lipids, lipoprotein subclasses with lipid concentrations within 14 subclasses, fatty acids, amino acids, ketone bodies, and glycolysis-related metabolites. The 14 lipoprotein subclasses include six subclasses of VLDL (extremely large, very large, large, medium, small, very small), IDL, three subclasses of LDL (large, medium, small), and four subclasses of HDL (very large, large, medium, small). Lipid concentration within each lipoprotein particle included triacylglycerol, total cholesterol, non-esterified cholesterol and cholesteryl ester levels, and phospholipid concentrations (Quek et al., 2021). Of the 228 metabolites, pyruvate, glycerol, and glycine were not available in Malays. In addition, creatinine and glucose were measured as part of the blood biochemistry. After excluding these five metabolites, 223 were included under the metabolites dataset.\n\n### Genetic parameters (n = 76)\n\nWe included 76 type 2 diabetes-associated single-nucleotide polymorphisms (SNPs) identified in the largest meta-analysis of type 2 diabetes genome-wide association studies by the DIAbetes Genetics Replication and Meta-analysis consortium (Chong et al., 2017).\n\n### Imaging parameters (n = 11)\n\nUsing a semi-automated computer program (Singapore I Vessel Assessment, SIVA), we quantified retinal imaging parameters from digital retinal photographs. The parameters included retinal arteriolar and venular diameters, vessel tortuosity, branching angle, fractal dimension, etc. (Yip et al., 2017). Diabetic retinopathy (DR) was assessed by trained graders using a standard protocol (Sabanayagam et al., 2019).\n\n### Machine learning algorithms\n\nWe tested nine different ML algorithms, including LR, least absolute shrinkage and selection operator (LASSO), elastic net (EN), classification and regression tree (CART), random forest (RF), gradient boosting decision tree (GBDT), extreme gradient boosting (XGB), support vector machine (SVM), and na\u00efve Bayes (NB) (Hastie et al., 2009).\n\n### Model development\n\nWe split the study samples randomly into training (80%) and test sets (20%) of equal CKD case rate by stratified sampling, with 40 random repeats of 5-fold cross-validation to evaluate the model performance. Predictive accuracy was assessed using metrics such as area under the receiver operating characteristic curve (AUC) with 95% confidence interval (CI) , sensitivity and specificity calculated at the optimal cut-point (determined by Youden\u2019s index). In preliminary analyses, testing different combinations of features (Figure 1A\u2013F), performance of all ML models was below 0.80 in dataset D including genetic features (best AUC = 0.785 by RF) and dataset F including all 339 features (best AUC = 0.788 by XGB). Hence, we dropped these two datasets (D and F) from further analyses. The performance of all ML models based on AUC (IQR) in datasets 1A\u2013F is shown in Supplementary file 1-Table 1c and based on sensitivity and specificity is shown in Supplementary file 1-Table 1d.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/81878/elife-81878-fig1-v3.jpg)\n\n**Figure 1.:** Abbreviations: CART, classification and regression tree; EN, elastic net; GBDT, gradient boosting decision tree; LASSO, least absolute shrinkage and selection operator; LR, logistic regression; NB, na\u00efve Bayes; RF, random forest; SVM, support vector machine; XGB, extreme gradient boosting.\n\nOf the ML models, performances of CART, SVM, and NB were lower compared to other models, hence these models were also dropped. Consequently, ML models EN, GBDT, LASSO, XGB, and RF were considered for subsequent analyses using datasets A, B, C, and E including 252 features.\n\n### Feature selection\n\nAll algorithms included in the current study can perform feature selection but using different selection criteria. In LR, stepwise selection according to the Akaike information criterion (AIC) is widely used but it lacks stability. LASSO is an extension of LR with L1 regularization to drop the less important variables. EN is like LASSO but with a milder regularization, resulting in a larger number of retained variables. In order to select only the most predictive features, we recursively apply EN until the retained variable subset is optimized, that is, recursive feature selection (RFE). In RF, GBDT, and XGB, the most predictive variables were identified based on their relative importance to model performance. Feature selection was also performed according to their selection frequency during repeated cross-validation. We identified the top 15 predictors by each of the best-performing ML models, then compared the performance of the ML models based on the top variables with that of LR based on seven traditional risk factors (age, sex, ethnicity, BMI, HbA1c, duration of diabetes, and systolic BP) in another 40 random repeats of 5-fold cross-validation. Subgroup analyses were conducted for the three ethnic groups separately.\n\n### Statistical analyses\n\nWe compared the baseline characteristics of participants with diabetes by incident DKD status using \u03c72 test or Mann\u2013Whitney U test as appropriate for the variable and compared the socioeconomic status by ethnicity using \u03c72 test and Kruskal\u2013Wallis test as appropriate for the variable. Statistical significance was defined as a p-value<0.05. Subgroup numbers such as DR status may not add up due to the presence of missing data. For modeling, we used mean values/modes for missing value imputation as appropriate for each variable because the missing proportions were all below 10%. Improvement in prediction accuracy by ML over the traditional risk factor model was calculated as (ML AUC \u2013 traditional model AUC)/traditional model AUC * 100%. All analyses were conducted using R software version 4.0.2. To assess whether the features selected by ML models were meaningful, we visualized the association of top 15 variables with incident DKD in forest plots or a variable importance plot as appropriate for the algorithm.\n\n## Results\n\nThe 6-year incidence of DKD was 11.9% in the study population. The incidence of DKD was the highest in Malays (18.4%), followed by Chinese (12.8%). Although Indians represent nearly half of the total diabetic population (648 of the 1365 diabetic participants, 47.5%), DKD incidence was the lowest in Indians (7.6%).\n\nAs shown in Table 1, compared to those without incident DKD, those with were significantly older, more likely to be Malays, primary/below educated, had higher prevalence of hypertension, DR, CVD, antidiabetic medication use; had longer duration of diabetes, and higher levels of systolic BP and HbA1c%.\n\n**Table 1.**\n Baseline characteristics of SEED diabetic participants by incident DKD status.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Characteristics</th>\n      <th>No DKD(n = 1203)</th>\n      <th>DKD(n = 162)</th>\n      <th>p-value</th>\n      <th>Overall(n = 1365)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Age (years)</td>\n      <td>57.95 (8.78)</td>\n      <td>64.63 (7.98)</td>\n      <td>&lt;0.001</td>\n      <td>58.74 (8.95)</td>\n    </tr>\n    <tr>\n      <td>Sex, female</td>\n      <td>580 (48.2)</td>\n      <td>87 (53.7)</td>\n      <td>0.219</td>\n      <td>667 (48.9)</td>\n    </tr>\n    <tr>\n      <td>Ethnicity</td>\n      <td></td>\n      <td></td>\n      <td>&lt;0.001</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Indians (ref)</td>\n      <td>599 (49.8)</td>\n      <td>49 (30.2)</td>\n      <td></td>\n      <td>648 (47.5)</td>\n    </tr>\n    <tr>\n      <td>Malays</td>\n      <td>310 (25.8)</td>\n      <td>70 (43.2)</td>\n      <td></td>\n      <td>380 (27.8)</td>\n    </tr>\n    <tr>\n      <td>Chinese</td>\n      <td>294 (24.4)</td>\n      <td>43 (26.5)</td>\n      <td></td>\n      <td>337 (24.7)</td>\n    </tr>\n    <tr>\n      <td>Primary/below education (%)</td>\n      <td>706 (58.7)</td>\n      <td>121 (74.7)</td>\n      <td>&lt;0.001</td>\n      <td>827 (60.6)</td>\n    </tr>\n    <tr>\n      <td>Current smoker (%)</td>\n      <td>173 (14.4)</td>\n      <td>16 (9.9)</td>\n      <td>0.15</td>\n      <td>189 (13.9)</td>\n    </tr>\n    <tr>\n      <td>Alcohol consumption (%)</td>\n      <td>111 (9.2)</td>\n      <td>11 (6.8)</td>\n      <td>0.389</td>\n      <td>122 (9.0)</td>\n    </tr>\n    <tr>\n      <td>Hypertension (%)</td>\n      <td>845 (70.4)</td>\n      <td>155 (95.7)</td>\n      <td>&lt;0.001</td>\n      <td>1000 (73.4)</td>\n    </tr>\n    <tr>\n      <td>Diabetic retinopathy (%)</td>\n      <td>228 (19.2)</td>\n      <td>56 (35.4)</td>\n      <td>&lt;0.001</td>\n      <td>284 (21.1)</td>\n    </tr>\n    <tr>\n      <td>Cardiovascular disease (%)</td>\n      <td>153 (12.7)</td>\n      <td>32 (19.8)</td>\n      <td>0.02</td>\n      <td>185 (13.6)</td>\n    </tr>\n    <tr>\n      <td>Duration of diabetes (years)</td>\n      <td>2.68 [0.00, 8.56]</td>\n      <td>6.08 [1.44, 11.63]</td>\n      <td>&lt;0.001</td>\n      <td>3.20 [0.00, 9.37]</td>\n    </tr>\n    <tr>\n      <td>Antidiabetic medication (%)</td>\n      <td>681 (56.6)</td>\n      <td>122 (75.3)</td>\n      <td>&lt;0.001</td>\n      <td>803 (58.8)</td>\n    </tr>\n    <tr>\n      <td>Insulin use (%)</td>\n      <td>39 (3.3)</td>\n      <td>11 (7.1)</td>\n      <td>0.036</td>\n      <td>50 (3.8)</td>\n    </tr>\n    <tr>\n      <td>Body mass index (kg/m2)</td>\n      <td>26.96 (4.62)</td>\n      <td>27.05 (4.36)</td>\n      <td>0.764</td>\n      <td>26.97 (4.59)</td>\n    </tr>\n    <tr>\n      <td>Systolic blood pressure (mm Hg)</td>\n      <td>139.42 (18.95)</td>\n      <td>155.24 (20.01)</td>\n      <td>&lt;0.001</td>\n      <td>141.29 (19.74)</td>\n    </tr>\n    <tr>\n      <td>Diastolic blood pressure (mm Hg)</td>\n      <td>78.25 (9.74)</td>\n      <td>79.14 (10.70)</td>\n      <td>0.278</td>\n      <td>78.35 (9.85)</td>\n    </tr>\n    <tr>\n      <td>Random blood glucose (mmol/L)</td>\n      <td>9.53 (4.26)</td>\n      <td>10.44 (5.01)</td>\n      <td>0.052</td>\n      <td>9.64 (4.36)</td>\n    </tr>\n    <tr>\n      <td>HbA1c (%)</td>\n      <td>7.61 (1.58)</td>\n      <td>8.04 (1.83)</td>\n      <td>0.003</td>\n      <td>7.66 (1.62)</td>\n    </tr>\n    <tr>\n      <td>Blood total cholesterol (mmol/L)</td>\n      <td>5.14 (1.14)</td>\n      <td>4.98 (1.15)</td>\n      <td>0.124</td>\n      <td>5.12 (1.15)</td>\n    </tr>\n    <tr>\n      <td>Blood HDL cholesterol (mmol/L)</td>\n      <td>1.12 (0.31)</td>\n      <td>1.16 (0.35)</td>\n      <td>0.178</td>\n      <td>1.12 (0.32)</td>\n    </tr>\n    <tr>\n      <td>eGFR (mL/min/1.73 m2)</td>\n      <td>89.98 (14.34)</td>\n      <td>79.40 (11.69)</td>\n      <td>&lt;0.001</td>\n      <td>88.72 (14.46)</td>\n    </tr>\n    <tr>\n      <td colspan=\"5\"></td>\n    </tr>\n  </tbody>\n</table>\n\n_Values for categorical variables are presented as number (percentages); values for continuous variables are given as mean (SD) or median [IQR]. p-values are given by \u03c72 test or Mann\u2013Whitney U test as appropriate for the variable.DKD, diabetic kidney disease; HDL, high-density lipoprotein cholesterol; IQR, interquartile range; SD, standard deviation; SEED, Singapore Epidemiology of Eye Diseases._\n\n### Performance of LR using traditional risk factors (reference) and other domain features\n\nThe LR using the seven traditional risk factors (age, sex, ethnicity, BMI, HbA1c, duration of diabetes, and systolic BP) had an AUC of 0.796. The performance of LR improved to 0.821 using the traditional + extended risk factors. With additional features, the performance of LR dropped significantly (AUC of 0.622 in E and 0.811 in C).\n\n### Performance of ML models using multidimensional data\n\nUsing datasets, A, B, C, and E, the performances of the five ML models (Figure 1A\u2013C and E) were as follows:\n\nFigure 2 shows the AUCs of the top 3 performing models. Using the top 15 predictors generated by feature selection, the performance of EN improved further with an AUC (95% CI) of 0.851 (0.847\u20130.856), sensitivity and specificity of 88.2 and 65.9% compared to LR using seven established features with AUC of 0.795 (0.790\u20130.801), and sensitivity and specificity of 73.0 and 72.8%.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/81878/elife-81878-fig2-v3.jpg)\n\n**Figure 2.:** Abbreviations: EN, Elastic net; GBDT, gradient boosting decision tree; LASSO; least absolute shrinkage and selection operator; LR, logistic regression.\n\nThe corresponding estimates for LASSO were 0.820 (0.816\u20130.825), 84.4% and 67.0%; 0.819 (0.814\u20130.824), 80.6% and 70.1% for GBDT. The AUCs of EN, LASSO, and GBDT were 7.0, 3.1, and 3.0% relatively higher than that of LR.\n\n### Top 15 predictors\n\nFigure 3 shows the top 15 predictors visualized using forest plots for EN and LASSO and a variable importance plot for GBDT. We found low collinearity in EN-selected features (Spearman\u2019s correlation coefficients: \u20130.49 to 0.43), while LASSO and GBDT selected some variables of higher correlation (e.g., systolic BP and pulse pressure).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/81878/elife-81878-fig3-v3.jpg)\n\n**Figure 3.:** Abbreviations: LASSO, least absolute shrinkage and selection operator; GBDT, Gradient boosting decision tree.Variables: anti-HTN Meds, anti hypertensive medications; DM, diabetes mellitus; GFR-EPI, glomerular filtration rate estimated using CKD-EPI equation; HDL, high-density lipoprotein.Metabolites: DHA: 22:6, docosahexaenoic acid; DHAFA, Ratio of 22:6 docosahexaenoic acid to total fatty acids; IDL-CE%, Cholesterol esters to total lipids ratio in IDL; M-HDL-PL%, Phospholipids to total lipids ratio in medium HDL; M-VLDL-PL%, Phospholipids to total lipids ratio in medium VLDL; S-HDL-FC% Free cholesterol to total lipids ratio in small HDL; XL-HDL-CE%, Cholesterol esters to total lipids ratio in very large HDL; L-LDL-CE%, Cholesterol esters to total lipids ratio in large LDL; M-HDL-PL%, Phospholipids to total lipids ratio in medium HDL; IDL-C% Total cholesterol to total lipids ratio in IDL; M-HDL-PL% Phospholipids to total lipids ratio in medium HDL.\n\nAmong the traditional and extended risk factors, all three models chose age, SBP, DR, and lower levels of eGFR as the top 15 predictors. In addition, antidiabetic medication use, HbA1c, hypertension, and ethnicity (Malays and Chinese compared to Indians) were chosen as risk factors by EN and LASSO; antihypertensive medication and low housing type by LASSO; and duration of diabetes, BMI, and HDL cholesterol by GBDT. Among the metabolites, phospholipids to total lipids ratio in MHDL and DHA were selected by all three models. Free cholesterol to total lipids ratio in small HDL/XSVLDL, and cholesterol esters to total lipids ratio in IDL/LLDL/XLHDL were also found to be of high frequency. Additionally, higher levels of acetate were shown to be protective by LR based on EN-selected variables, while tyrosine and lactate were identified as important factors by GBDT. Source data for the forest plots are shown in Supplementary file 1-Table 1e. Using the same approach, we also identified the top variables by each ethnicity in Supplementary file 1-Table 1f, and found baseline eGFR linked to incident DKD in all three subgroups, whereas acetate, SBP, antidiabetic medication use, and housing type were important in two ethnic subgroups.\n\n## Discussion\n\nThe results of the current study suggest that prediction using ML models with selected features provided improved prediction compared to LR model based on seven established features in this extensively phenotyped large-scale epidemiological study. The best performance was obtained by the EN model based on dataset E including risk factors and metabolites with an AUC of 0.851, which was 7.0% higher than that of LR using seven established risk factors. Sensitivity was also higher by EN (88.2 and 65.9%) compared to LR (73.0 and 72.8%). The top 15 predictors by EN using RFE identified several metabolites related to lipid concentration, lipoprotein subclasses, fatty acids, and ketone bodies as novel predictors besides confirming traditional predictors, including age, ethnicity, antidiabetic medication use, presence of hypertension, DR, higher levels of systolic BP, HbA1c, and lower levels of eGFR. Contrary to conventional risk factors, sex, BMI, and duration of diabetes did not come in the top 15-predictors.\n\nOur results showed that ML models combined with feature selection improved the accuracy for predicting incident DKD in high-dimensional datasets. The AUC of MLs based on dataset E including metabolites (+risk factors) scored the highest, while the one based on dataset D including genetic features scored the lowest compared to other domain features. This finding suggests that modifiable risk factors and metabolites predict DKD risk better than genetic features. The predictive performance was the best by EN, followed by LASSO and GBDT. The top 15 predictors selected by LASSO and GBDT were largely consistent to that by EN.\n\nFew previous studies have evaluated the performance of ML models for predicting the risk of incident DKD (Table 2). Ravizza et al. identified seven key features (age, BMI, eGFR, concentration of creatinine, glucose, albumin, and HbA1c%) by a data-driven feature selection strategy for predicting DKD using electronic health records (EHR) data from 417,912 people with diabetes retrieved from the IBM Explorys Database and developed a random forest model in 82,912 people with diabetes retrieved from the Indiana Network for Patient Care (INPC). The RF algorithm using seven prioritized key features achieved an AUC of 0.833 compared to 0.827 by LR (Ravizza et al., 2019).\n\n**Table 2.**\n Machine learning model for predicting incident CKD in literature.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Author, journal</th>\n      <th>Study cohort,country</th>\n      <th>Study populationFollow-up</th>\n      <th>CKD definition and incidence</th>\n      <th>Number of predictors</th>\n      <th>ML performance</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Ravizza et al., 2019, Nature Medicine</td>\n      <td>EHR data from the IBM Explorys and INPC datasets, the United States</td>\n      <td>Development cohort (IBM): &gt;500,000 adults with diabetes. Validation (INPC) = 82,912 adults with T2DM; FU = 3 y.</td>\n      <td>ICD 9/10 codes</td>\n      <td>300 features</td>\n      <td>Based on seven prioritized features, AUC by RF = 0.833 and the Roche/IBM supervised algorithm by LR = 0.827</td>\n    </tr>\n    <tr>\n      <td>Song et al., 2020., JMIR</td>\n      <td>EHR data, the United States (2007\u20132017)</td>\n      <td>14,039 adults with T2DM.FU = 1 y.</td>\n      <td>eGFR &lt; 60 or UACR \u226530 mg/g;34.1%</td>\n      <td>&gt;3000</td>\n      <td>GBMAUC = 0.83</td>\n    </tr>\n    <tr>\n      <td>Huang et al., 2020a., Diabetes</td>\n      <td>KORA cohort, Germany</td>\n      <td>1838 adults with prediabetes and T2DM.FU = 6.5 y.</td>\n      <td>eGFR &lt; 60 or UACR \u226530 mg/g at FU;10.9%</td>\n      <td>125 mets + 14 clinical factors</td>\n      <td>SVM, RF, Ada BoostBest set: Mets-SM and PC + age, TC, FPG, eGFR, UACR, AUC = 0.857Traditional LR using 14 variables, AUC = 0.809</td>\n    </tr>\n    <tr>\n      <td>Sabanayagam et al., 2023, current study</td>\n      <td>SEED population data, Singapore</td>\n      <td>1365 adults with diabetes.FU = 6 y.</td>\n      <td>eGFR &lt; 60 + 25% decline in eGFR from baseline</td>\n      <td>339 features</td>\n      <td>EN + RFE selected 15 features, AUC = 0.851 vs. 0.795 using seven features by traditional LR</td>\n    </tr>\n  </tbody>\n</table>\n\n_AUC, area under the receiver operating characteristic curve; CKD, chronic kidney disease; eGFR, estimated glomerular filtration rate; EHR, electronic health records; EN, Elastic Net; FPG, Fasting plasma glucose; FU, follow-up; GBM, Gradient Boosting Machine; ICD, International Classification of Diseases; INPC, Indiana Network for Patient Care; LR, logistic regression; ML, machine learning; RF, random forest; RFE, recursive feature selection; SEED, Singapore Epidemiology of Eye Diseases; SVM, support vector machine; T2DM, type 2 diabetes mellitus; TC, total cholesterol; UACR, urine albumin-creatinine ratio._\n\nSong et al. predicted 1-year risk of DKD based on electronic health records (EHR) data using gradient boosting machine (GBM) algorithm with an AUC of 83% (Song et al., 2020). As the median duration of development of DKD was ~10 y since the onset of diabetes, predicting 1-year risk may not be sufficient. Huang et al. predicted DKD risk in 1838 adults with diabetes and prediabetes who participated in the KORA study in Germany. The authors used ML models SVM, RF, and Ada Boost based on 14 clinical factors and 125 metabolites. The best achieved AUC was 0.857, which is similar to that of our model using EN (AUC = 0.851) (Huang et al., 2020a).\n\nIn the current study, we observed that when the features were limited to the traditional risk factors, the performance of LR was similar to that of the best ML model EN. However, when the number of features was large, LR\u2019s performance dropped significantly compared to the top-performing ML models, including EN, LASSO, and GBDT. While ML models are capable of addressing complex variable effects and nonlinearity issues, herein we found regularized regression models (EN and LASSO) outperforming other more sophisticated models. This suggests that the pathophysiological progression from diabetes to CKD may not be as nonlinear as previously assumed. At CKD stage 4, heterogeneity in terms of disease trajectory is primarily low, and nonadditive effects are likely to be negligible, which could explain the superior performance of EN and LASSO in our study. In a previous study based on the same dataset as the current study, Nusinovici et al. tested the performance of several ML models utilizing 20 risk factors alone and found that the performance of LR (AUC = 0.905) was similar to that of the best ML model, GBDT (AUC = 0.903), for predicting incident CKD in those with and without diabetes (Nusinovici et al., 2020). When a large number of features are present, more advanced ML methods may capture the complex functional dependency of the incident CKD outcome much better than the linear approach used in LR.\n\nThe top-performing ML models (EN, LASSO, GBDT) identified established risk factors for DKD, such as age, ethnicity, antidiabetic medication use, presence of hypertension, DR, higher levels of systolic BP, HbA1c, and lower levels of eGFR. Additionally, antihypertensive medication use and low housing type were identified by LASSO while BMI and duration of diabetes by GBDT. Increasing age, longer duration of diabetes, higher levels of HbA1c, systolic BP/hypertension are well-known risk factors of DKD. A meta-analysis conducted by Nelson et al., including 15 multinational cohorts with diabetes as part of the CKD Prognosis Consortium (Nelson et al., 2019), also identified older age, hypertension, lower eGFR, higher levels of BMI, HbA1c, and antidiabetic medication use as significant risk factors for incident CKD in those with diabetes. While black ethnicity was a risk factor for CKD in the meta-analysis, in our study, we found Chinese and Malay ethnicity to be at higher risk of developing incident DKD compared to Indian ethnicity. Compared to the Indian population, the Chinese population was generally older, while Malay participants had lower education levels and higher prevalence of smoking (Supplementary file 1 -Table 1g). Both Chinese and Malays had a higher prevalence of hypertension and lower levels of antidiabetic medication use, which may contribute to the ethnic difference in DKD incidence. Another reason for the lower risk of developing DKD in the Indian ethnicity could be that as a high-risk group for diabetes they may be more aware of the risk and comply with screening, medication, and other measures that can reduce their risk of developing DKD. Malay ethnicity has been identified to be a high-risk group for CKD by several studies conducted in Singapore (Sabanayagam et al., 2010; Lim et al., 2021; National Registry of Diseases Office, 2020). Surprisingly, sex was not identified to be a risk factor by any of the three ML models, which is consistent with the findings of the Ravizza et al. algorithm based on data-driven feature selection that did not pick up sex as one of the priority features (Ravizza et al., 2019).\n\nIn the current study, several new predictors from the metabolites domain were identified. Specifically, lipid metabolites, including phospholipids in HDL and VLDL subclasses, cholesterol esters, and free cholesterol in HDL subclasses, were found to be associated with an increased risk of DKD, while cholesterol esters in IDL were found to be protective against DKD. Furthermore, higher levels of DHA, acetate, and tyrosine also showed a protective association (odds ratios not shown). These findings are consistent with previous studies. For example, in the ADVANCE trial, higher tyrosine levels were associated with an increased risk of microvascular complications in diabetic participants. DHA, a n-3 polyunsaturated fatty acid (PUFA), has been shown to reduce renal inflammation and fibrosis and slow down the progression of CKD in animal models with type 2 diabetes (Mathi Thumilan et al., 2016). PUFA supplementation has also been shown to reduce hyperglycemia-induced pathogenic mechanisms by its anti-inflammatory and antioxidant properties, and improve renal function in diabetic nephropathy patients . Furthermore, higher levels of the short-chain fatty acid acetate have been shown to be inversely associated with diabetic nephropathy in type 2 diabetic patients (Huang et al., 2020b), and have beneficial effects in mice models with type 2 diabetes by reducing oxidative stress and inflammation.\n\nThe strengths of our study include a multiethnic Asian population with a long follow-up and the availability of a wealth of information. The use of RFE for dimension reduction and feature selection reduced overfitting of data. ML models identified the relative importance of one domain over the other domains (like metabolite features in our study compared to genetic features) and the best predictors within one domain. However, our study results should be interpreted in light of a few limitations. First, our definition of DKD was based on the measurement of a single blood creatinine both at baseline and follow-up. This could have resulted in some misclassification, but the bias would be nondifferential and similar across both outcomes. Second, albuminuria, an important predictor of DKD, was not included as it was missing in a substantial number of participants. Third, external validation was not performed. Fourth, ML models are computationally intensive compared to traditional regression models.\n\nIn conclusion, in a population-based sample of multiethnic Asian adults, we found that EN with specific metabolites outperformed the current DKD risk prediction models using demographic and clinical variables. Our results provide evidence that combining metabolites and ML models could improve the prediction accuracy for DKD and that increasing the use of ML techniques may discover new risk factors for DKD. Further testing in external populations would support the validity of the model.\n",
+      "created_at": "2025-12-04T03:18:27.069917Z"
+    },
+    {
+      "id": "27b9608f-90fc-4a8a-9b94-f729803585d7",
+      "submission_id": "f1dc4e25-ad3f-48e8-b516-e095438ad75c",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Girish N Nadkarni, https://ror.org/04a9tmd77 Icahn School of Medicine at Mount Sinai United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.81878.sa0](https://doi.org/10.7554/eLife.81878.sa0)\n\nThe authors wanted to see which patients with diabetes develop kidney disease and outcomes. They used clinical characteristics, eye pictures, genetic factors and blood levels of metabolites, and they found a combination of these factors predicted kidney disease in people with diabetes.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Girish N Nadkarni, https://ror.org/04a9tmd77 Icahn School of Medicine at Mount Sinai United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.81878.sa1](https://doi.org/10.7554/eLife.81878.sa1)\n\nOur editorial process produces two outputs: i) public reviews designed to be posted alongside the preprint for the benefit of readers; ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Prediction of diabetic kidney disease risk using machine learning models: a population-based cohort study of Asian adults\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Martin Pollak as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1) Statistical significance versus clinical significance:\n\nThe authors seem to use recursive feature elimination to come up with a set of top features for each Ml algorithm and select features from a varied feature set. However, the authors may need to pay attention to what the features (that come up as significant) are trying to allude to? for e.g. the authors seem to have dropped the datasets with features that contain the genetic and imaging parameters: D= B+ Genetic parameters and F= B+ Imaging parameters+ Blood metabolites+ Genetic parameters. They provide reasons for the low performance of the ML models for dropping the features but do not elaborate on whether they investigated the reasons for the drop in performance.\n\n2) The authors speak about the advantage of using ML approaches to overcome shortcomings of traditional assumptions from linear models, however, in the consideration of their covariates they might also want to understand the clinical association between some of their selected features. for e.g. BMI, HbA1c, duration of diabetes, and systolic BP may somehow not be entirely independent of each other (especially in the context of influencing one another and driving diabetes) and multi-collinearity may need to be looked into.\n\n3) One of the biggest limitations of the study is its longitudinal nature with 6 yr timeframe for the development of DKD. That is a long timeframe to be able to discount factors other than those mentioned that could have affected the development of kidney disease. For example, patients with diabetes are also at risk for heart diseases, infections, and other hospital admissions, all of which can affect the development of kidney disease over that timeframe and haven't been controlled for in the dataset. Without controlling for these factors, the results have the risk of being hugely biased.\n\n4) How were patients who died within that timeframe treated? Were they classified as DKD or censored? A competing risk methodology (with or without ML) might be better suited for this question or at least merit a sensitivity analysis with it.\n\n5) The definition of DKD solely relies on a decrease in eGFR. Though understandable, it has the potential to be highly flawed, especially with factors discussed in #1. Adding measures to proteinuria/albuminuria, if available, would greatly add to its value.\n\n6) The authors define incident DKD as eGFR < 60. Albuminuria is generally the earliest sign of DKD \u2013 the authors say this is because of missing data. This omission may underestimate the incidence of CKD in this study. Screening for DKD with annual UACR should be addressed as well in the introduction, as the authors say that early detection is challenging.\n\n7) Ethnicity should not be included as a \"traditional risk factor\" as it is not a biological variable, but rather a social construct. How was ethnicity determined in the SEED study?\n\n8) What was the rationale for the hundreds of metabolites that were chosen?\n\n9) We suggest performing subgroup analysis on each of the 3 ethnic groups (Chinese, Malay, and Indian) to look for differences that may be explained by other variables as all \"Asians\" are not the same.\n\nReviewer #1 (Recommendations for the authors):\n\nI would recommend the authors look at their wealth of features and their data and perform more association analysis and try and explain their feature selections instead of just depending on the outcome from the RFE.\n\nI would also encourage the authors to look at the development of the model in association with a clinician and a biostatistician so as to understand the outcome of the model in the context of the disease and explain what the model outcomes are telling them about the progression of the disease.\n\nThe authors should also try and address the issue of bias that can creep into the model due to the features selected. is the model giving you the 6 yr risk of developing CKD and stating that Malays and Chinese populations are at higher risk for CKD from diabetes or does the model allude to some sort of socioeconomic factors playing a role in not getting medically examined regularly enough to miss the progression of diabetes to CKD?\n\nReviewer #2 (Recommendations for the authors):\n\nIt is an interesting study using various supervised machine learning methods to identify the risk and risk factors for the development of diabetic kidney disease. The study is overall well done. Few comments \u2013\n\n1. One of the biggest limitations of the study is its longitudinal nature with 6 yr timeframe for the development of DKD. That is a long timeframe to be able to discount factors other than those mentioned that could have affected the development of kidney disease. For example, patients with diabetes are also at risk for heart diseases, infections, and other hospital admissions, all of which can affect the development of kidney disease over that timeframe and haven't been controlled for in the dataset. Without controlling for these factors, the results have the risk of being hugely biased.\n\n2. How were patients who died within that timeframe treated? Were they classified as DKD or censored? A competing risk methodology (with or without ML) might be better suited for this question or at least merit a sensitivity analysis with it.\n\n3. The definition of DKD solely relies on a decrease in eGFR. Though understandable, it has the potential to be highly flawed especially with factors as discussed in #1. Adding measures to proteinuria/albuminuria, if available, would greatly add to its value.\n\n4. Another 2 questions that I wasn't able to find answers to were \u2013 the average length of follow-up and how much was loss to follow-up.\n\nReviewer #3 (Recommendations for the authors):\n\n1. The authors define incident DKD as eGFR < 60. Albuminuria is generally the earliest sign of DKD \u2013 the authors say this is because of missing data. This omission may underestimate the incidence of CKD in this study. Screening for DKD with annual UACR should be addressed as well in the introduction, as the authors say that early detection is challenging.\n\n2. Ethnicity should not be included as a \"traditional risk factor\" as it is not a biological variable, but rather a social construct. How was ethnicity determined in the SEED study?\n\n3. What was the rationale for the hundreds of metabolites that were chosen?\n\n4. Suggest performing subgroup analysis on each of the 3 ethnic groups (Chinese, Malay, and Indian) to look for differences that may be explained by other variables as all \u201cAsians\u201d are not the same.\n\n5. There are several mentions in the discussion of ethnicity being a risk factor for CKD or diabetes \u2013 ethnicity is not the risk factor.\n\n6. This sentence is problematic on page 16: \"One reason for the Indian ethnicity to be at lower risk of developing DKD could be Indian ethnicity being a high-risk group for diabetes, they may be well aware of the risk, and comply with screening, medication, etc. that could reduce their risk of developing DKD.\"\n\n7. Suggest expanding the discussion of metabolites: why were they chosen and what is the proposed mechanism that increases the risk of DKD?\n\n8. What were the \"anti-DM\" meds? What percentage were insulin-dependent? This would suggest potentially higher DM severity.\n\n9. Suggest discussing the \u201ctop 15\u201d predictors in the 3 models and proposed mechanisms that are not traditional risk factors (e.g. 3-hydroxybutyrate in the GBDT model; acetate in the EN model).\n\n[Editors\u2019 note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Prediction of diabetic kidney disease risk using machine learning models: a population-based cohort study of Asian adults\" for further consideration by eLife. Your revised article has been evaluated by Martin Pollak (Senior Editor) and a Reviewing Editor.\n\nThe manuscript has been improved but there are some remaining issues that need to be addressed, as outlined below:\n\nReviewer #2 (Recommendations for the authors):\n\nThe authors have answered most of the questions adequately. One major concern I still have is its longitudinal nature with 6 yr timeframe for the development of DKD. The authors have noted that as the AUC of the model is 0.85, baseline characteristics are good enough to predict DKD. If we look closely though the incidence of DKD was <12%. It is thus an unbalanced dataset and therefore AUC is likely an inflated value that needs to be interpreted with caution. I realize that ultimately this is the data that the authors have and it is still a valuable addition to the literature but this is an important limitation that needs to be acknowledged upfront.\n",
+      "created_at": "2025-12-04T03:18:27.069917Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T03:18:27.069917Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T03:18:27.069917Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "988ba69f-2750-4aae-b2a8-01c8cc1c2b29",
+      "content_id": "1c55975b-9693-4060-86fd-cb7483bb64b1",
+      "claim_id": "C1",
+      "claim": "Diabetes affected an estimated 415 million people worldwide in 2015.",
+      "claim_type": "EXPLICIT",
+      "source": "Diabetes affected an estimated 415 million people worldwide in 2015, and this number is expected to increase to 642 million by 2040, with the greatest increase expected in Asia, particularly in India and China (Ogurtsova et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Ogurtsova et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:18:27.069917Z"
+    },
+    {
+      "id": "b1986a1c-b521-4caf-b4c5-f7b55f23ef33",
+      "content_id": "1c55975b-9693-4060-86fd-cb7483bb64b1",
+      "claim_id": "C2",
+      "claim": "The number of people with diabetes is expected to increase to 642 million by 2040.",
+      "claim_type": "EXPLICIT",
+      "source": "Diabetes affected an estimated 415 million people worldwide in 2015, and this number is expected to increase to 642 million by 2040, with the greatest increase expected in Asia, particularly in India and China (Ogurtsova et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Ogurtsova et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:18:27.069917Z"
+    },
+    {
+      "id": "1e0af370-ce87-4b8c-a003-b606b3ce3ee8",
+      "content_id": "1c55975b-9693-4060-86fd-cb7483bb64b1",
+      "claim_id": "C3",
+      "claim": "The greatest increase in diabetes is expected in Asia, particularly in India and China.",
+      "claim_type": "EXPLICIT",
+      "source": "Diabetes affected an estimated 415 million people worldwide in 2015, and this number is expected to increase to 642 million by 2040, with the greatest increase expected in Asia, particularly in India and China (Ogurtsova et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Ogurtsova et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:18:27.069917Z"
+    },
+    {
+      "id": "59f09482-1d88-4639-a9ad-1d3f455710aa",
+      "content_id": "1c55975b-9693-4060-86fd-cb7483bb64b1",
+      "claim_id": "C4",
+      "claim": "Diabetic kidney disease is a leading cause of end-stage kidney disease.",
+      "claim_type": "EXPLICIT",
+      "source": "With the rising prevalence of diabetes and an aging population, the burden of diabetic kidney disease (DKD), a leading cause of end-stage kidney disease (ESKD), cardiovascular disease (CVD), and premature deaths, is also set to rise in parallel.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as established knowledge in the introduction",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:18:27.069917Z"
+    },
+    {
+      "id": "adccfcfc-c69d-4948-a7d5-3a95e6b8bbbb",
+      "content_id": "1c55975b-9693-4060-86fd-cb7483bb64b1",
+      "claim_id": "C5",
+      "claim": "Diabetic kidney disease is a leading cause of cardiovascular disease.",
+      "claim_type": "EXPLICIT",
+      "source": "With the rising prevalence of diabetes and an aging population, the burden of diabetic kidney disease (DKD), a leading cause of end-stage kidney disease (ESKD), cardiovascular disease (CVD), and premature deaths, is also set to rise in parallel.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as established knowledge in the introduction",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:18:27.069917Z"
+    },
+    {
+      "id": "bfffc526-56a4-4dcf-8014-a85de1cf08ae",
+      "content_id": "1c55975b-9693-4060-86fd-cb7483bb64b1",
+      "claim_id": "C6",
+      "claim": "Diabetic kidney disease is a leading cause of premature deaths.",
+      "claim_type": "EXPLICIT",
+      "source": "With the rising prevalence of diabetes and an aging population, the burden of diabetic kidney disease (DKD), a leading cause of end-stage kidney disease (ESKD), cardiovascular disease (CVD), and premature deaths, is also set to rise in parallel.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as established knowledge in the introduction",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:18:27.069917Z"
+    },
+    {
+      "id": "b286bab3-8db1-4254-9969-71b2a0fc8af9",
+      "content_id": "1c55975b-9693-4060-86fd-cb7483bb64b1",
+      "claim_id": "C7",
+      "claim": "Diabetes accounts for 30\u201350% of all chronic kidney disease cases.",
+      "claim_type": "EXPLICIT",
+      "source": "Diabetes accounts for 30\u201350% of all chronic kidney disease (CKD) cases, affecting 285 million people worldwide (Webster et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Webster et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:18:27.069917Z"
+    },
+    {
+      "id": "425de0ad-55b8-4943-a0c0-d4818b93b7ea",
+      "content_id": "1c55975b-9693-4060-86fd-cb7483bb64b1",
+      "claim_id": "C8",
+      "claim": "Chronic kidney disease affects 285 million people worldwide.",
+      "claim_type": "EXPLICIT",
+      "source": "Diabetes accounts for 30\u201350% of all chronic kidney disease (CKD) cases, affecting 285 million people worldwide (Webster et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Webster et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:18:27.069917Z"
+    },
+    {
+      "id": "4a167260-4785-4716-80bc-25993bdc020e",
+      "content_id": "1c55975b-9693-4060-86fd-cb7483bb64b1",
+      "claim_id": "C9",
+      "claim": "CKD is asymptomatic till more than 50% of kidney function decline.",
+      "claim_type": "EXPLICIT",
+      "source": "As CKD is asymptomatic till more than 50% of kidney function decline, early detection of individuals with diabetes who are at risk of developing DKD may facilitate prevention and appropriate intervention for DKD (Hill et al., 2016; Hirst et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Hill et al., 2016 and Hirst et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:18:27.069917Z"
+    },
+    {
+      "id": "844d77f2-31e8-44f2-90a8-006dc9962983",
+      "content_id": "1c55975b-9693-4060-86fd-cb7483bb64b1",
+      "claim_id": "C10",
+      "claim": "Early detection of individuals with diabetes who are at risk of developing DKD may facilitate prevention and appropriate intervention for DKD.",
+      "claim_type": "EXPLICIT",
+      "source": "As CKD is asymptomatic till more than 50% of kidney function decline, early detection of individuals with diabetes who are at risk of developing DKD may facilitate prevention and appropriate intervention for DKD (Hill et al., 2016; Hirst et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Hill et al., 2016 and Hirst et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:18:27.069917Z"
+    },
+    {
+      "id": "dc665017-b6c9-4a02-8b58-471efccc698b",
+      "content_id": "1c55975b-9693-4060-86fd-cb7483bb64b1",
+      "claim_id": "C11",
+      "claim": "Early identification of individuals at risk of developing CKD in type 2 diabetes is challenging.",
+      "claim_type": "EXPLICIT",
+      "source": "However, early identification of individuals at risk of developing CKD in type 2 diabetes is challenging (Alicic et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Alicic et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:18:27.069917Z"
+    },
+    {
+      "id": "f7df5d47-532c-4fc0-88f7-e0ba91a4cd4d",
+      "content_id": "1c55975b-9693-4060-86fd-cb7483bb64b1",
+      "claim_id": "C12",
+      "claim": "Awareness of diabetes as a risk factor for CKD is markedly lower in several countries.",
+      "claim_type": "EXPLICIT",
+      "source": "Although most ESKD cases are due to diabetes, awareness of diabetes as a risk factor for CKD is markedly lower in several countries, which may constitute a barrier for early detection of CKD (White et al., 2008; Hussain et al., 2019; Couser et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to White et al., 2008; Hussain et al., 2019; Couser et al., 2011",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:18:27.069917Z"
+    },
+    {
+      "id": "6e47601d-b754-4172-8036-fa3d69bc1f63",
+      "content_id": "1c55975b-9693-4060-86fd-cb7483bb64b1",
+      "claim_id": "C13",
+      "claim": "Low awareness of diabetes as a risk factor for CKD may constitute a barrier for early detection of CKD.",
+      "claim_type": "EXPLICIT",
+      "source": "Although most ESKD cases are due to diabetes, awareness of diabetes as a risk factor for CKD is markedly lower in several countries, which may constitute a barrier for early detection of CKD (White et al., 2008; Hussain et al., 2019; Couser et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to White et al., 2008; Hussain et al., 2019; Couser et al., 2011",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:18:27.069917Z"
+    },
+    {
+      "id": "859c5e67-1927-487c-8ba0-1ece9dcb4730",
+      "content_id": "1c55975b-9693-4060-86fd-cb7483bb64b1",
+      "claim_id": "C14",
+      "claim": "In people with diabetes, adherence to annual screening for DKD with estimated glomerular filtration rate and urine albumin-creatinine ratio remains a challenge.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, in people with diabetes, adherence to annual screening for DKD with estimated glomerular filtration rate (eGFR) and urine albumin-creatinine ratio (UACR) remains a challenge (Manski-Nankervis et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Manski-Nankervis et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:18:27.069917Z"
+    },
+    {
+      "id": "6cf284fc-b8d6-4c16-9986-c72fe4d5478a",
+      "content_id": "1c55975b-9693-4060-86fd-cb7483bb64b1",
+      "claim_id": "C15",
+      "claim": "There is an urgent need for the characterization of new biomarkers to identify individuals at risk of progressive eGFR decline.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, there is an urgent need for the characterization of new biomarkers to identify individuals at risk of progressive eGFR decline and enable timely intervention for improving outcomes in DKD (Alicic et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Alicic et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:18:27.069917Z"
+    },
+    {
+      "id": "d3e8d083-f2b0-429b-aebd-6c3fba6d4c2c",
+      "content_id": "1c55975b-9693-4060-86fd-cb7483bb64b1",
+      "claim_id": "C16",
+      "claim": "Studies predicting onset of CKD in diabetic populations are limited.",
+      "claim_type": "EXPLICIT",
+      "source": "Several risk prediction models have been developed in the past for predicting progression to ESKD, but studies predicting onset of CKD in diabetic populations are limited.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a gap in the literature",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:18:27.069917Z"
+    },
+    {
+      "id": "d2a578f8-ae64-4650-ab23-272edc15d195",
+      "content_id": "1c55975b-9693-4060-86fd-cb7483bb64b1",
+      "claim_id": "C17",
+      "claim": "Albuminuria and eGFR were the key predictors in Dunkler et al.'s study.",
+      "claim_type": "EXPLICIT",
+      "source": "Dunkler et al. showed that albuminuria and eGFR were the key predictors and addition of demographic, clinical, or laboratory variables did not improve predictive performance beyond 69% (Dunkler et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Dunkler et al., 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:18:27.069917Z"
+    },
+    {
+      "id": "1ce5f6b9-2b2e-4f6e-bc21-76ebd05b57b8",
+      "content_id": "1c55975b-9693-4060-86fd-cb7483bb64b1",
+      "claim_id": "C18",
+      "claim": "Addition of demographic, clinical, or laboratory variables did not improve predictive performance beyond 69% in Dunkler et al.'s study.",
+      "claim_type": "EXPLICIT",
+      "source": "Dunkler et al. showed that albuminuria and eGFR were the key predictors and addition of demographic, clinical, or laboratory variables did not improve predictive performance beyond 69% (Dunkler et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Dunkler et al., 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:18:27.069917Z"
+    },
+    {
+      "id": "024be2ee-37a8-4977-8c97-632f7f00433a",
+      "content_id": "1c55975b-9693-4060-86fd-cb7483bb64b1",
+      "claim_id": "C19",
+      "claim": "Traditional regression models tend to overfit if there is a large number of variables.",
+      "claim_type": "EXPLICIT",
+      "source": "Current CKD risk prediction models developed using traditional regression models (e.g., logistic regression [LR] or linear regression) perform well when there are only small or moderate numbers of variables or predictors but tend to overfit if there is a large number of variables.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as established knowledge about statistical methods",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:18:27.069917Z"
+    },
+    {
+      "id": "ef4c098c-1b5d-4edd-aeab-a60016f4cfd2",
+      "content_id": "1c55975b-9693-4060-86fd-cb7483bb64b1",
+      "claim_id": "C20",
+      "claim": "Machine learning methods using 'Big data' may improve prediction as they have fewer restrictive statistical assumptions compared to traditional regression models.",
+      "claim_type": "EXPLICIT",
+      "source": "Machine learning (ML) methods using 'Big data,' or multidimensional data, may improve prediction as they have fewer restrictive statistical assumptions compared to traditional regression models that assume linear relationships between risk factors and the logit of the outcomes and absence of multicollinearity among explanatory variables (Sundstr\u00f6m and Sch\u00f6n, 2020; Doupe et al., 2019; Bi et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Sundstr\u00f6m and Sch\u00f6n, 2020; Doupe et al., 2019; Bi et al., 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:18:27.069917Z"
+    },
+    {
+      "id": "887f9f12-3143-4988-8f8a-a15525a29827",
+      "content_id": "1c55975b-9693-4060-86fd-cb7483bb64b1",
+      "claim_id": "C21",
+      "claim": "Metabolic changes associated with diabetes can lead to glomerular hypertrophy.",
+      "claim_type": "EXPLICIT",
+      "source": "Diabetes is a metabolic disorder, and the metabolic changes associated with diabetes can lead to glomerular hypertrophy, glomerulosclerosis, tubulointerstitial inflammation, and fibrosis (Alicic et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Alicic et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:18:27.069917Z"
+    },
+    {
+      "id": "1620a66d-1956-48a9-b09a-4629fecff6af",
+      "content_id": "1c55975b-9693-4060-86fd-cb7483bb64b1",
+      "claim_id": "C22",
+      "claim": "Metabolic changes associated with diabetes can lead to glomerulosclerosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Diabetes is a metabolic disorder, and the metabolic changes associated with diabetes can lead to glomerular hypertrophy, glomerulosclerosis, tubulointerstitial inflammation, and fibrosis (Alicic et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Alicic et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:18:27.069917Z"
+    },
+    {
+      "id": "27ce9c1d-e8f6-4d02-a330-06ba8d008f7d",
+      "content_id": "1c55975b-9693-4060-86fd-cb7483bb64b1",
+      "claim_id": "C23",
+      "claim": "Metabolic changes associated with diabetes can lead to tubulointerstitial inflammation.",
+      "claim_type": "EXPLICIT",
+      "source": "Diabetes is a metabolic disorder, and the metabolic changes associated with diabetes can lead to glomerular hypertrophy, glomerulosclerosis, tubulointerstitial inflammation, and fibrosis (Alicic et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Alicic et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:18:27.069917Z"
+    },
+    {
+      "id": "085213c5-2e65-451b-ad35-45921ec6aea6",
+      "content_id": "1c55975b-9693-4060-86fd-cb7483bb64b1",
+      "claim_id": "C24",
+      "claim": "Metabolic changes associated with diabetes can lead to fibrosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Diabetes is a metabolic disorder, and the metabolic changes associated with diabetes can lead to glomerular hypertrophy, glomerulosclerosis, tubulointerstitial inflammation, and fibrosis (Alicic et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Alicic et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:18:27.069917Z"
+    },
+    {
+      "id": "a894e65d-ae8e-464a-ba13-a072c97daa76",
+      "content_id": "1c55975b-9693-4060-86fd-cb7483bb64b1",
+      "claim_id": "C25",
+      "claim": "Several blood metabolites have been shown to be associated with DKD.",
+      "claim_type": "EXPLICIT",
+      "source": "Several blood metabolites have been shown to be associated with DKD (Colhoun and Marcovecchio, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Colhoun and Marcovecchio, 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:18:27.069917Z"
+    },
+    {
+      "id": "2f4527c5-e073-4761-9cc4-711dfa86d7d5",
+      "content_id": "1c55975b-9693-4060-86fd-cb7483bb64b1",
+      "claim_id": "C26",
+      "claim": "Genetic abnormalities in diabetes have been linked to an increased risk of DKD.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, genetic abnormalities in diabetes have also been linked to an increased risk of DKD (Cole and Florez, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Cole and Florez, 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:18:27.069917Z"
+    },
+    {
+      "id": "0f18ec84-30d5-4cfe-af82-0614007ca739",
+      "content_id": "1c55975b-9693-4060-86fd-cb7483bb64b1",
+      "claim_id": "C27",
+      "claim": "Retinal microvascular changes, including retinopathy, vessel narrowing, or dilation, and vessel tortuosity, were associated with CKD.",
+      "claim_type": "EXPLICIT",
+      "source": "We, and several others, have previously shown that retinal microvascular changes, including retinopathy, vessel narrowing, or dilation, and vessel tortuosity, were associated with CKD (Yau et al., 2011; Yip et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Yau et al., 2011; Yip et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:18:27.069917Z"
+    },
+    {
+      "id": "bc1ace0b-3520-4ea5-9b20-49e93b48f0b0",
+      "content_id": "1c55975b-9693-4060-86fd-cb7483bb64b1",
+      "claim_id": "C28",
+      "claim": "Integrating high-dimensional data from multiple domains has the potential to aid in risk stratification, prediction of future risk, and provide insights into the pathogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Integrating high-dimensional data from multiple domains, including patient characteristics, clinical and 'Omics' data, has the potential to aid in risk stratification, prediction of future risk, and provide insights into the pathogenesis (Eddy et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Eddy et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:18:27.069917Z"
+    },
+    {
+      "id": "fcc630d7-b19a-411b-a041-01fdb19aaf8f",
+      "content_id": "1c55975b-9693-4060-86fd-cb7483bb64b1",
+      "claim_id": "C29",
+      "claim": "The study utilized longitudinal data from 1365 Chinese, Malay, and Indian participants aged 40\u201380 y with diabetes.",
+      "claim_type": "EXPLICIT",
+      "source": "We utilized longitudinal data from 1365 Chinese, Malay, and Indian participants aged 40\u201380 y with diabetes but free of DKD who participated in the baseline and 6-year follow-up visit of the Singapore Epidemiology of Eye Diseases Study (2004\u20132017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of the study population in the abstract",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:18:27.069917Z"
+    },
+    {
+      "id": "7ff69d3c-9905-4336-800d-44a056e7518e",
+      "content_id": "1c55975b-9693-4060-86fd-cb7483bb64b1",
+      "claim_id": "C30",
+      "claim": "Incident DKD was 11.9%.",
+      "claim_type": "EXPLICIT",
+      "source": "Incident DKD (11.9%) was defined as an estimated glomerular filtration rate (eGFR) <60 mL/min/1.73 m2 with at least 25% decrease in eGFR at follow-up from baseline.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reported outcome rate in the abstract",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:18:27.069917Z"
+    },
+    {
+      "id": "a8ccff19-477a-4935-99f7-13f999ef2835",
+      "content_id": "1c55975b-9693-4060-86fd-cb7483bb64b1",
+      "claim_id": "C31",
+      "claim": "A total of 339 features were used as predictors.",
+      "claim_type": "EXPLICIT",
+      "source": "A total of 339 features, including participant characteristics, retinal imaging, and genetic and blood metabolites, were used as predictors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of the study methodology in the abstract",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:18:27.069917Z"
+    },
+    {
+      "id": "6adf4762-50cc-4b05-bd24-98fe2d57e4aa",
+      "content_id": "1c55975b-9693-4060-86fd-cb7483bb64b1",
+      "claim_id": "C32",
+      "claim": "ML model Elastic Net had the best AUC (95% CI) of 0.851 (0.847\u20130.856).",
+      "claim_type": "EXPLICIT",
+      "source": "ML model Elastic Net (EN) had the best AUC (95% CI) of 0.851 (0.847\u20130.856), which was 7.0% relatively higher than by LR 0.795 (0.790\u20130.801).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Primary result reported in the abstract",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:18:27.069917Z"
+    },
+    {
+      "id": "61d25e51-ab97-42ff-b770-65df03b12d77",
+      "content_id": "1c55975b-9693-4060-86fd-cb7483bb64b1",
+      "claim_id": "C33",
+      "claim": "Elastic Net's AUC was 7.0% relatively higher than logistic regression's AUC of 0.795 (0.790\u20130.801).",
+      "claim_type": "EXPLICIT",
+      "source": "ML model Elastic Net (EN) had the best AUC (95% CI) of 0.851 (0.847\u20130.856), which was 7.0% relatively higher than by LR 0.795 (0.790\u20130.801).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison of model performance in the abstract",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:18:27.069917Z"
+    },
+    {
+      "id": "7641e581-59cb-4099-b828-47a10ea60f6b",
+      "content_id": "1c55975b-9693-4060-86fd-cb7483bb64b1",
+      "claim_id": "C34",
+      "claim": "Sensitivity and specificity of EN were 88.2 and 65.9%.",
+      "claim_type": "EXPLICIT",
+      "source": "Sensitivity and specificity of EN were 88.2 and 65.9% vs. 73.0 and 72.8% by LR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Performance metrics reported in the abstract",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:18:27.069917Z"
+    },
+    {
+      "id": "1f20f3e1-3b7b-4675-8045-1e22b953dc3b",
+      "content_id": "1c55975b-9693-4060-86fd-cb7483bb64b1",
+      "claim_id": "C35",
+      "claim": "Sensitivity and specificity of LR were 73.0 and 72.8%.",
+      "claim_type": "EXPLICIT",
+      "source": "Sensitivity and specificity of EN were 88.2 and 65.9% vs. 73.0 and 72.8% by LR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Performance metrics reported in the abstract",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:18:27.069917Z"
+    },
+    {
+      "id": "cadbdd33-f709-447d-8ff0-ac7703d6259d",
+      "content_id": "1c55975b-9693-4060-86fd-cb7483bb64b1",
+      "claim_id": "C36",
+      "claim": "The top 15 predictors included age, ethnicity, antidiabetic medication, hypertension, diabetic retinopathy, systolic blood pressure, HbA1c, eGFR, and metabolites related to lipids, lipoproteins, fatty acids, and ketone bodies.",
+      "claim_type": "EXPLICIT",
+      "source": "The top 15 predictors included age, ethnicity, antidiabetic medication, hypertension, diabetic retinopathy, systolic blood pressure, HbA1c, eGFR, and metabolites related to lipids, lipoproteins, fatty acids, and ketone bodies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of identified predictors in the abstract",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:18:27.069917Z"
+    },
+    {
+      "id": "c22726db-2345-4167-a68d-91b0e2316c8a",
+      "content_id": "1c55975b-9693-4060-86fd-cb7483bb64b1",
+      "claim_id": "C37",
+      "claim": "ML, together with feature selection, improves prediction accuracy of DKD risk in an asymptomatic stable population.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results showed that ML, together with feature selection, improves prediction accuracy of DKD risk in an asymptomatic stable population and identifies novel risk factors, including metabolites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion stated in the abstract",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:18:27.069917Z"
+    },
+    {
+      "id": "ece64e85-90c6-4ff2-a388-da34661f6222",
+      "content_id": "1c55975b-9693-4060-86fd-cb7483bb64b1",
+      "claim_id": "C38",
+      "claim": "ML identifies novel risk factors, including metabolites.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results showed that ML, together with feature selection, improves prediction accuracy of DKD risk in an asymptomatic stable population and identifies novel risk factors, including metabolites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion stated in the abstract",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:18:27.069917Z"
+    },
+    {
+      "id": "ba8a4a1b-f7bd-4ae7-b9f9-76dafacb3229",
+      "content_id": "1c55975b-9693-4060-86fd-cb7483bb64b1",
+      "claim_id": "C39",
+      "claim": "The SEED study is a population-based prospective study of eye diseases in 10,033 Asian adults aged 40\u201380 y in Singapore.",
+      "claim_type": "EXPLICIT",
+      "source": "Data for this study was derived from the Singapore Epidemiology of Eye Diseases (SEED) study, a population-based prospective study of eye diseases in 10,033 Asian adults aged 40\u201380 y in Singapore.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of the study cohort in Methods",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:18:27.069917Z"
+    },
+    {
+      "id": "281f2f13-2237-42a1-a260-d6ae68ed02c7",
+      "content_id": "1c55975b-9693-4060-86fd-cb7483bb64b1",
+      "claim_id": "C40",
+      "claim": "The follow-up study was conducted after a median duration of 6.08 y (interquartile range: [5.56, 6.79]).",
+      "claim_type": "EXPLICIT",
+      "source": "The follow-up study was conducted after a median duration of 6.08 y (interquartile range: [5.56, 6.79]), with 6762 participants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of follow-up duration in Methods",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:18:27.069917Z"
+    },
+    {
+      "id": "0e36c7aa-36e4-40ae-a895-e8edd0373152",
+      "content_id": "1c55975b-9693-4060-86fd-cb7483bb64b1",
+      "claim_id": "C41",
+      "claim": "6762 participants attended the follow-up study.",
+      "claim_type": "EXPLICIT",
+      "source": "The follow-up study was conducted after a median duration of 6.08 y (interquartile range: [5.56, 6.79]), with 6762 participants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of follow-up participation in Methods",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:18:27.069917Z"
+    },
+    {
+      "id": "60b50ca8-23f1-48be-885a-05855cec7676",
+      "content_id": "1c55975b-9693-4060-86fd-cb7483bb64b1",
+      "claim_id": "C42",
+      "claim": "The response rate for Malays was 78.7%.",
+      "claim_type": "EXPLICIT",
+      "source": "A total of 3280 Malays (2004\u20132007) (Foong et al., 2007), 3400 Indians (2007\u20132009), and 3353 Chinese (2009\u20132011) (Lavanya et al., 2009) participated in the baseline study with response rates of 78.7, 75.6 and 72.8%, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of response rates in Methods",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:18:27.069917Z"
+    },
+    {
+      "id": "3a60ddfe-e858-442e-a2cb-5730bed11126",
+      "content_id": "1c55975b-9693-4060-86fd-cb7483bb64b1",
+      "claim_id": "C43",
+      "claim": "The response rate for Indians was 75.6%.",
+      "claim_type": "EXPLICIT",
+      "source": "A total of 3280 Malays (2004\u20132007) (Foong et al., 2007), 3400 Indians (2007\u20132009), and 3353 Chinese (2009\u20132011) (Lavanya et al., 2009) participated in the baseline study with response rates of 78.7, 75.6 and 72.8%, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of response rates in Methods",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:18:27.069917Z"
+    },
+    {
+      "id": "b9102493-d5a1-422b-a15f-2292c3fc7614",
+      "content_id": "1c55975b-9693-4060-86fd-cb7483bb64b1",
+      "claim_id": "C44",
+      "claim": "The response rate for Chinese was 72.8%.",
+      "claim_type": "EXPLICIT",
+      "source": "A total of 3280 Malays (2004\u20132007) (Foong et al., 2007), 3400 Indians (2007\u20132009), and 3353 Chinese (2009\u20132011) (Lavanya et al., 2009) participated in the baseline study with response rates of 78.7, 75.6 and 72.8%, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of response rates in Methods",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:18:27.069917Z"
+    },
+    {
+      "id": "22c8ff52-49a0-4407-9b9f-768febc0d3fe",
+      "content_id": "1c55975b-9693-4060-86fd-cb7483bb64b1",
+      "claim_id": "C45",
+      "claim": "The final sample size for analysis was 1365 (47.5% Indians, 27.8% Malays, and 24.7% Chinese).",
+      "claim_type": "EXPLICIT",
+      "source": "Of the 6762 participants who attended both baseline and follow-up visit, after excluding those without diabetes (n = 5307), prevalent CKD (n = 315), missing information on eGFR (n = 90), the final sample size for analysis was 1365 (47.5% Indians, 27.8% Malays, and 24.7% Chinese).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of final sample in Methods",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:18:27.069917Z"
+    },
+    {
+      "id": "3c48c078-b73b-4f6b-bbeb-15a05d2db048",
+      "content_id": "1c55975b-9693-4060-86fd-cb7483bb64b1",
+      "claim_id": "C46",
+      "claim": "Incident DKD was defined as an eGFR <60 mL/min/1.73 m2 with at least a 25% decrease in eGFR at follow-up in participants who had eGFR \u2265 60 mL/min/1.73 m2 at baseline.",
+      "claim_type": "EXPLICIT",
+      "source": "Incident DKD was defined as an eGFR <60 mL/min/1.73 m2 with at least a 25% decrease in eGFR at follow-up in participants who had eGFR \u2265 60 mL/min/1.73 m2 at baseline.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Definition of outcome in Methods",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:18:27.069917Z"
+    },
+    {
+      "id": "a6505634-5639-439f-854f-eeadba811f60",
+      "content_id": "1c55975b-9693-4060-86fd-cb7483bb64b1",
+      "claim_id": "C47",
+      "claim": "GFR was estimated from plasma creatinine using the Chronic Kidney Disease Epidemiology Collaboration (CKD-EPI) equation.",
+      "claim_type": "EXPLICIT",
+      "source": "GFR was estimated from plasma creatinine using the Chronic Kidney Disease Epidemiology Collaboration (CKD-EPI) equation (Levey et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of measurement method with citation to Levey et al., 2009",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:18:27.069917Z"
+    },
+    {
+      "id": "e5242617-2e7a-42b2-b3a6-bcd786201122",
+      "content_id": "1c55975b-9693-4060-86fd-cb7483bb64b1",
+      "claim_id": "C48",
+      "claim": "339 features were evaluated including demographic, lifestyle, socioeconomic, physical, laboratory, retinal imaging, genetic and blood metabolomics profile.",
+      "claim_type": "EXPLICIT",
+      "source": "We evaluated 339 features such as demographic, lifestyle, socioeconomic, physical, laboratory, retinal imaging, genetic and blood metabolomics profile.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of predictors in Methods",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:18:27.069917Z"
+    },
+    {
+      "id": "c73652b8-66f6-4688-8de7-fc8ad73a19e5",
+      "content_id": "1c55975b-9693-4060-86fd-cb7483bb64b1",
+      "claim_id": "C49",
+      "claim": "228 metabolic measures were quantified from stored serum/plasma samples at baseline using a high-throughput NMR metabolomics platform.",
+      "claim_type": "EXPLICIT",
+      "source": "We quantified 228 metabolic measures from stored serum/plasma samples at baseline using a high-throughput NMR metabolomics platform (Nightingale Health, Helsinki, Finland).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of metabolite measurement in Methods",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:18:27.069917Z"
+    },
+    {
+      "id": "7fb20265-ee71-4d0d-a6a5-4a939fd989f0",
+      "content_id": "1c55975b-9693-4060-86fd-cb7483bb64b1",
+      "claim_id": "C50",
+      "claim": "76 type 2 diabetes-associated single-nucleotide polymorphisms were included.",
+      "claim_type": "EXPLICIT",
+      "source": "We included 76 type 2 diabetes-associated single-nucleotide polymorphisms (SNPs) identified in the largest meta-analysis of type 2 diabetes genome-wide association studies by the DIAbetes Genetics Replication and Meta-analysis consortium (Chong et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of genetic parameters with citation to Chong et al., 2017",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:18:27.069917Z"
+    },
+    {
+      "id": "6bc0b64c-58c7-4ca4-927b-f49f298187e4",
+      "content_id": "1c55975b-9693-4060-86fd-cb7483bb64b1",
+      "claim_id": "C51",
+      "claim": "The study tested nine different ML algorithms.",
+      "claim_type": "EXPLICIT",
+      "source": "We tested nine different ML algorithms, including LR, least absolute shrinkage and selection operator (LASSO), elastic net (EN), classification and regression tree (CART), random forest (RF), gradient boosting decision tree (GBDT), extreme gradient boosting (XGB), support vector machine (SVM), and na\u00efve Bayes (NB) (Hastie et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of ML methods with citation to Hastie et al., 2009",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:18:27.069917Z"
+    },
+    {
+      "id": "4bc3bfc5-801e-42d4-bbdb-f9d5d11fea06",
+      "content_id": "1c55975b-9693-4060-86fd-cb7483bb64b1",
+      "claim_id": "C52",
+      "claim": "The study samples were split randomly into training (80%) and test sets (20%).",
+      "claim_type": "EXPLICIT",
+      "source": "We split the study samples randomly into training (80%) and test sets (20%) of equal CKD case rate by stratified sampling, with 40 random repeats of 5-fold cross-validation to evaluate the model performance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of model development approach in Methods",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:18:27.069917Z"
+    },
+    {
+      "id": "9a0095bd-70a7-45e3-b2a3-6354ab3ebed1",
+      "content_id": "1c55975b-9693-4060-86fd-cb7483bb64b1",
+      "claim_id": "C53",
+      "claim": "The 6-year incidence of DKD was 11.9% in the study population.",
+      "claim_type": "EXPLICIT",
+      "source": "The 6-year incidence of DKD was 11.9% in the study population.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Primary outcome reported in Results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:18:27.069917Z"
+    },
+    {
+      "id": "c742bde8-443d-4345-baf7-90c583048324",
+      "content_id": "1c55975b-9693-4060-86fd-cb7483bb64b1",
+      "claim_id": "C54",
+      "claim": "The incidence of DKD was the highest in Malays (18.4%).",
+      "claim_type": "EXPLICIT",
+      "source": "The incidence of DKD was the highest in Malays (18.4%), followed by Chinese (12.8%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Ethnic-specific incidence reported in Results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:18:27.069917Z"
+    },
+    {
+      "id": "52194165-c865-4119-9611-cb87ea029012",
+      "content_id": "1c55975b-9693-4060-86fd-cb7483bb64b1",
+      "claim_id": "C55",
+      "claim": "DKD incidence was 12.8% in Chinese.",
+      "claim_type": "EXPLICIT",
+      "source": "The incidence of DKD was the highest in Malays (18.4%), followed by Chinese (12.8%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Ethnic-specific incidence reported in Results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:18:27.069917Z"
+    },
+    {
+      "id": "457cde55-e35c-4b8a-85dd-4d7990b3d9bc",
+      "content_id": "1c55975b-9693-4060-86fd-cb7483bb64b1",
+      "claim_id": "C56",
+      "claim": "DKD incidence was the lowest in Indians (7.6%).",
+      "claim_type": "EXPLICIT",
+      "source": "Although Indians represent nearly half of the total diabetic population (648 of the 1365 diabetic participants, 47.5%), DKD incidence was the lowest in Indians (7.6%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Ethnic-specific incidence reported in Results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:18:27.069917Z"
+    },
+    {
+      "id": "066995eb-8e0e-479d-959e-04fe678701bb",
+      "content_id": "1c55975b-9693-4060-86fd-cb7483bb64b1",
+      "claim_id": "C57",
+      "claim": "Those with incident DKD were significantly older compared to those without incident DKD.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Table 1, compared to those without incident DKD, those with were significantly older, more likely to be Malays, primary/below educated, had higher prevalence of hypertension, DR, CVD, antidiabetic medication use; had longer duration of diabetes, and higher levels of systolic BP and HbA1c%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison of baseline characteristics in Results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:18:27.069917Z"
+    },
+    {
+      "id": "43cad27d-df7a-4410-84fd-20ea163b6d46",
+      "content_id": "1c55975b-9693-4060-86fd-cb7483bb64b1",
+      "claim_id": "C58",
+      "claim": "Those with incident DKD were more likely to be Malays compared to those without incident DKD.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Table 1, compared to those without incident DKD, those with were significantly older, more likely to be Malays, primary/below educated, had higher prevalence of hypertension, DR, CVD, antidiabetic medication use; had longer duration of diabetes, and higher levels of systolic BP and HbA1c%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison of baseline characteristics in Results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:18:27.069917Z"
+    },
+    {
+      "id": "0f47caf2-2053-44c4-9dbd-4be69bbb4d90",
+      "content_id": "1c55975b-9693-4060-86fd-cb7483bb64b1",
+      "claim_id": "C59",
+      "claim": "Those with incident DKD had higher prevalence of hypertension compared to those without incident DKD.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Table 1, compared to those without incident DKD, those with were significantly older, more likely to be Malays, primary/below educated, had higher prevalence of hypertension, DR, CVD, antidiabetic medication use; had longer duration of diabetes, and higher levels of systolic BP and HbA1c%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison of baseline characteristics in Results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:18:27.069917Z"
+    },
+    {
+      "id": "aed024f1-f116-409f-be63-cf910aa14d7f",
+      "content_id": "1c55975b-9693-4060-86fd-cb7483bb64b1",
+      "claim_id": "C60",
+      "claim": "Those with incident DKD had higher prevalence of diabetic retinopathy compared to those without incident DKD.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Table 1, compared to those without incident DKD, those with were significantly older, more likely to be Malays, primary/below educated, had higher prevalence of hypertension, DR, CVD, antidiabetic medication use; had longer duration of diabetes, and higher levels of systolic BP and HbA1c%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison of baseline characteristics in Results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:18:27.069917Z"
+    },
+    {
+      "id": "82a60b36-3105-4b3a-b6cc-7af818d23d3e",
+      "content_id": "1c55975b-9693-4060-86fd-cb7483bb64b1",
+      "claim_id": "C61",
+      "claim": "Those with incident DKD had higher prevalence of cardiovascular disease compared to those without incident DKD.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Table 1, compared to those without incident DKD, those with were significantly older, more likely to be Malays, primary/below educated, had higher prevalence of hypertension, DR, CVD, antidiabetic medication use; had longer duration of diabetes, and higher levels of systolic BP and HbA1c%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison of baseline characteristics in Results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:18:27.069917Z"
+    },
+    {
+      "id": "58a6e0c7-8c4b-43ba-8604-31f903110b39",
+      "content_id": "1c55975b-9693-4060-86fd-cb7483bb64b1",
+      "claim_id": "C62",
+      "claim": "Those with incident DKD had longer duration of diabetes compared to those without incident DKD.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Table 1, compared to those without incident DKD, those with were significantly older, more likely to be Malays, primary/below educated, had higher prevalence of hypertension, DR, CVD, antidiabetic medication use; had longer duration of diabetes, and higher levels of systolic BP and HbA1c%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison of baseline characteristics in Results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:18:27.069917Z"
+    },
+    {
+      "id": "69d58b4f-1a40-433a-ac34-c0c1c502e3d3",
+      "content_id": "1c55975b-9693-4060-86fd-cb7483bb64b1",
+      "claim_id": "C63",
+      "claim": "Those with incident DKD had higher levels of systolic BP compared to those without incident DKD.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Table 1, compared to those without incident DKD, those with were significantly older, more likely to be Malays, primary/below educated, had higher prevalence of hypertension, DR, CVD, antidiabetic medication use; had longer duration of diabetes, and higher levels of systolic BP and HbA1c%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison of baseline characteristics in Results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:18:27.069917Z"
+    },
+    {
+      "id": "e3e5febc-d21f-4664-9f7c-d7241ee36fd7",
+      "content_id": "1c55975b-9693-4060-86fd-cb7483bb64b1",
+      "claim_id": "C64",
+      "claim": "Those with incident DKD had higher levels of HbA1c% compared to those without incident DKD.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Table 1, compared to those without incident DKD, those with were significantly older, more likely to be Malays, primary/below educated, had higher prevalence of hypertension, DR, CVD, antidiabetic medication use; had longer duration of diabetes, and higher levels of systolic BP and HbA1c%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison of baseline characteristics in Results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:18:27.069917Z"
+    },
+    {
+      "id": "b02c6365-d404-4fe1-b30b-e6abfe07b532",
+      "content_id": "1c55975b-9693-4060-86fd-cb7483bb64b1",
+      "claim_id": "C65",
+      "claim": "The LR using the seven traditional risk factors had an AUC of 0.796.",
+      "claim_type": "EXPLICIT",
+      "source": "The LR using the seven traditional risk factors (age, sex, ethnicity, BMI, HbA1c, duration of diabetes, and systolic BP) had an AUC of 0.796.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Performance metric reported in Results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:18:27.069917Z"
+    },
+    {
+      "id": "eb3618fa-be1e-4208-9ab9-344c7393bd52",
+      "content_id": "1c55975b-9693-4060-86fd-cb7483bb64b1",
+      "claim_id": "C66",
+      "claim": "The performance of LR improved to 0.821 using the traditional + extended risk factors.",
+      "claim_type": "EXPLICIT",
+      "source": "The performance of LR improved to 0.821 using the traditional + extended risk factors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Performance metric reported in Results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:18:27.069917Z"
+    },
+    {
+      "id": "9714db82-49eb-4623-b116-7a8e23e8095e",
+      "content_id": "1c55975b-9693-4060-86fd-cb7483bb64b1",
+      "claim_id": "C67",
+      "claim": "Using the top 15 predictors generated by feature selection, the performance of EN improved further with an AUC (95% CI) of 0.851 (0.847\u20130.856).",
+      "claim_type": "EXPLICIT",
+      "source": "Using the top 15 predictors generated by feature selection, the performance of EN improved further with an AUC (95% CI) of 0.851 (0.847\u20130.856), sensitivity and specificity of 88.2 and 65.9% compared to LR using seven established features with AUC of 0.795 (0.790\u20130.801), and sensitivity and specificity of 73.0 and 72.8%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Performance metric reported in Results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:18:27.069917Z"
+    },
+    {
+      "id": "e5a52829-fdc6-4b60-b994-3d11e25bb12a",
+      "content_id": "1c55975b-9693-4060-86fd-cb7483bb64b1",
+      "claim_id": "C68",
+      "claim": "The AUCs of EN, LASSO, and GBDT were 7.0, 3.1, and 3.0% relatively higher than that of LR.",
+      "claim_type": "EXPLICIT",
+      "source": "The AUCs of EN, LASSO, and GBDT were 7.0, 3.1, and 3.0% relatively higher than that of LR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison of model performance in Results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:18:27.069917Z"
+    },
+    {
+      "id": "285f4176-0977-46a5-88d3-e630576ef96c",
+      "content_id": "1c55975b-9693-4060-86fd-cb7483bb64b1",
+      "claim_id": "C69",
+      "claim": "Low collinearity was found in EN-selected features (Spearman's correlation coefficients: \u20130.49 to 0.43).",
+      "claim_type": "EXPLICIT",
+      "source": "We found low collinearity in EN-selected features (Spearman's correlation coefficients: \u20130.49 to 0.43), while LASSO and GBDT selected some variables of higher correlation (e.g., systolic BP and pulse pressure).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Analysis of feature correlation in Results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:18:27.069917Z"
+    },
+    {
+      "id": "6c891aa0-55c3-4215-913e-9a37f69c75ef",
+      "content_id": "1c55975b-9693-4060-86fd-cb7483bb64b1",
+      "claim_id": "C70",
+      "claim": "LASSO and GBDT selected some variables of higher correlation (e.g., systolic BP and pulse pressure).",
+      "claim_type": "EXPLICIT",
+      "source": "We found low collinearity in EN-selected features (Spearman's correlation coefficients: \u20130.49 to 0.43), while LASSO and GBDT selected some variables of higher correlation (e.g., systolic BP and pulse pressure).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Analysis of feature correlation in Results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:18:27.069917Z"
+    },
+    {
+      "id": "0243f285-959e-4443-a8f4-7ab8c653cfc1",
+      "content_id": "1c55975b-9693-4060-86fd-cb7483bb64b1",
+      "claim_id": "C71",
+      "claim": "All three models chose age, SBP, DR, and lower levels of eGFR as the top 15 predictors.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the traditional and extended risk factors, all three models chose age, SBP, DR, and lower levels of eGFR as the top 15 predictors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of top predictors in Results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:18:27.069917Z"
+    },
+    {
+      "id": "574f21f9-443c-4258-a5e6-32eaee8ff4c7",
+      "content_id": "1c55975b-9693-4060-86fd-cb7483bb64b1",
+      "claim_id": "C72",
+      "claim": "Antidiabetic medication use, HbA1c, hypertension, and ethnicity (Malays and Chinese compared to Indians) were chosen as risk factors by EN and LASSO.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, antidiabetic medication use, HbA1c, hypertension, and ethnicity (Malays and Chinese compared to Indians) were chosen as risk factors by EN and LASSO; antihypertensive medication and low housing type by LASSO; and duration of diabetes, BMI, and HDL cholesterol by GBDT.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of top predictors in Results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:18:27.069917Z"
+    },
+    {
+      "id": "e5ef33b4-34d8-4245-8fb7-a4cbe3c20178",
+      "content_id": "1c55975b-9693-4060-86fd-cb7483bb64b1",
+      "claim_id": "C73",
+      "claim": "Phospholipids to total lipids ratio in MHDL and DHA were selected by all three models.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the metabolites, phospholipids to total lipids ratio in MHDL and DHA were selected by all three models.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of metabolite predictors in Results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:18:27.069917Z"
+    },
+    {
+      "id": "e02aabf5-5ba0-4952-a0ee-c8080c43b262",
+      "content_id": "1c55975b-9693-4060-86fd-cb7483bb64b1",
+      "claim_id": "C74",
+      "claim": "Higher levels of acetate were shown to be protective by LR based on EN-selected variables.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, higher levels of acetate were shown to be protective by LR based on EN-selected variables, while tyrosine and lactate were identified as important factors by GBDT.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of metabolite predictors in Results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:18:27.069917Z"
+    },
+    {
+      "id": "9d22becb-8901-4852-8972-5600c843328b",
+      "content_id": "1c55975b-9693-4060-86fd-cb7483bb64b1",
+      "claim_id": "C75",
+      "claim": "Tyrosine and lactate were identified as important factors by GBDT.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, higher levels of acetate were shown to be protective by LR based on EN-selected variables, while tyrosine and lactate were identified as important factors by GBDT.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of metabolite predictors in Results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:18:27.069917Z"
+    },
+    {
+      "id": "89d1a8f9-ec4d-4e96-a8b7-ef24faf5f727",
+      "content_id": "1c55975b-9693-4060-86fd-cb7483bb64b1",
+      "claim_id": "C76",
+      "claim": "Prediction using ML models with selected features provided improved prediction compared to LR model based on seven established features.",
+      "claim_type": "EXPLICIT",
+      "source": "The results of the current study suggest that prediction using ML models with selected features provided improved prediction compared to LR model based on seven established features in this extensively phenotyped large-scale epidemiological study.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary conclusion in Discussion",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:18:27.069917Z"
+    },
+    {
+      "id": "2e4cae16-ab11-4048-bb20-2e45e3a0d8d1",
+      "content_id": "1c55975b-9693-4060-86fd-cb7483bb64b1",
+      "claim_id": "C77",
+      "claim": "The best performance was obtained by the EN model based on dataset E including risk factors and metabolites with an AUC of 0.851.",
+      "claim_type": "EXPLICIT",
+      "source": "The best performance was obtained by the EN model based on dataset E including risk factors and metabolites with an AUC of 0.851, which was 7.0% higher than that of LR using seven established risk factors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of best model performance in Discussion",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:18:27.069917Z"
+    },
+    {
+      "id": "860615b9-feed-4e42-8ab2-02d99a63af40",
+      "content_id": "1c55975b-9693-4060-86fd-cb7483bb64b1",
+      "claim_id": "C78",
+      "claim": "Ravizza et al. identified seven key features for predicting DKD using electronic health records data.",
+      "claim_type": "EXPLICIT",
+      "source": "Ravizza et al. identified seven key features (age, BMI, eGFR, concentration of creatinine, glucose, albumin, and HbA1c%) by a data-driven feature selection strategy for predicting DKD using electronic health records (EHR) data from 417,912 people with diabetes retrieved from the IBM Explorys Database and developed a random forest model in 82,912 people with diabetes retrieved from the Indiana Network for Patient Care (INPC).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of prior study with citation to Ravizza et al., 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:18:27.069917Z"
+    },
+    {
+      "id": "b3cd4cdb-ff6e-4496-899e-1b3f614753d5",
+      "content_id": "1c55975b-9693-4060-86fd-cb7483bb64b1",
+      "claim_id": "C79",
+      "claim": "The RF algorithm using seven prioritized key features achieved an AUC of 0.833 compared to 0.827 by LR in Ravizza et al.'s study.",
+      "claim_type": "EXPLICIT",
+      "source": "The RF algorithm using seven prioritized key features achieved an AUC of 0.833 compared to 0.827 by LR (Ravizza et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of prior study results with citation to Ravizza et al., 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:18:27.069917Z"
+    },
+    {
+      "id": "c6776bed-64c2-411f-b581-88437a2bc604",
+      "content_id": "1c55975b-9693-4060-86fd-cb7483bb64b1",
+      "claim_id": "C80",
+      "claim": "Song et al. predicted 1-year risk of DKD based on electronic health records data using gradient boosting machine algorithm with an AUC of 83%.",
+      "claim_type": "EXPLICIT",
+      "source": "Song et al. predicted 1-year risk of DKD based on electronic health records (EHR) data using gradient boosting machine (GBM) algorithm with an AUC of 83% (Song et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of prior study with citation to Song et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:18:27.069917Z"
+    },
+    {
+      "id": "27425d63-3433-40a6-b399-a1bf4b02d6fa",
+      "content_id": "1c55975b-9693-4060-86fd-cb7483bb64b1",
+      "claim_id": "C81",
+      "claim": "Huang et al. predicted DKD risk in 1838 adults with diabetes and prediabetes who participated in the KORA study in Germany.",
+      "claim_type": "EXPLICIT",
+      "source": "Huang et al. predicted DKD risk in 1838 adults with diabetes and prediabetes who participated in the KORA study in Germany.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of prior study",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:18:27.069917Z"
+    },
+    {
+      "id": "06100910-51aa-4d29-bedc-659f1f68fd4f",
+      "content_id": "1c55975b-9693-4060-86fd-cb7483bb64b1",
+      "claim_id": "C82",
+      "claim": "The best achieved AUC in Huang et al.'s study was 0.857.",
+      "claim_type": "EXPLICIT",
+      "source": "The best achieved AUC was 0.857, which is similar to that of our model using EN (AUC = 0.851) (Huang et al., 2020a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of prior study results with citation to Huang et al., 2020a",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:18:27.069917Z"
+    },
+    {
+      "id": "76ec2eae-0ab7-4f4a-8a84-6a78ae256463",
+      "content_id": "1c55975b-9693-4060-86fd-cb7483bb64b1",
+      "claim_id": "C83",
+      "claim": "When the features were limited to the traditional risk factors, the performance of LR was similar to that of the best ML model EN.",
+      "claim_type": "EXPLICIT",
+      "source": "In the current study, we observed that when the features were limited to the traditional risk factors, the performance of LR was similar to that of the best ML model EN.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observation from the study results in Discussion",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:18:27.069917Z"
+    },
+    {
+      "id": "a5ecb2bf-73a9-4050-a175-adc46d540ceb",
+      "content_id": "1c55975b-9693-4060-86fd-cb7483bb64b1",
+      "claim_id": "C84",
+      "claim": "When the number of features was large, LR's performance dropped significantly compared to the top-performing ML models.",
+      "claim_type": "EXPLICIT",
+      "source": "However, when the number of features was large, LR's performance dropped significantly compared to the top-performing ML models, including EN, LASSO, and GBDT.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observation from the study results in Discussion",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:18:27.069917Z"
+    },
+    {
+      "id": "beaf41fc-c75c-4e5b-b4e6-01fc026f31fe",
+      "content_id": "1c55975b-9693-4060-86fd-cb7483bb64b1",
+      "claim_id": "C85",
+      "claim": "Regularized regression models (EN and LASSO) outperformed other more sophisticated models.",
+      "claim_type": "EXPLICIT",
+      "source": "While ML models are capable of addressing complex variable effects and nonlinearity issues, herein we found regularized regression models (EN and LASSO) outperforming other more sophisticated models.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observation from the study results in Discussion",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:18:27.069917Z"
+    },
+    {
+      "id": "d1cbaa8b-1bbf-444c-b71a-4292e213dc9e",
+      "content_id": "1c55975b-9693-4060-86fd-cb7483bb64b1",
+      "claim_id": "C86",
+      "claim": "The pathophysiological progression from diabetes to CKD may not be as nonlinear as previously assumed.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that the pathophysiological progression from diabetes to CKD may not be as nonlinear as previously assumed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from the study results in Discussion",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:18:27.069917Z"
+    },
+    {
+      "id": "5f43b38b-4f3e-4ff3-8d76-d675f7efd6e7",
+      "content_id": "1c55975b-9693-4060-86fd-cb7483bb64b1",
+      "claim_id": "C87",
+      "claim": "Nusinovici et al. found that the performance of LR (AUC = 0.905) was similar to that of the best ML model, GBDT (AUC = 0.903), for predicting incident CKD.",
+      "claim_type": "EXPLICIT",
+      "source": "In a previous study based on the same dataset as the current study, Nusinovici et al. tested the performance of several ML models utilizing 20 risk factors alone and found that the performance of LR (AUC = 0.905) was similar to that of the best ML model, GBDT (AUC = 0.903), for predicting incident CKD in those with and without diabetes (Nusinovici et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of prior study with citation to Nusinovici et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:18:27.069917Z"
+    },
+    {
+      "id": "ad0f1435-bb55-4a84-b360-064b960d9688",
+      "content_id": "1c55975b-9693-4060-86fd-cb7483bb64b1",
+      "claim_id": "C88",
+      "claim": "Increasing age is a well-known risk factor of DKD.",
+      "claim_type": "EXPLICIT",
+      "source": "Increasing age, longer duration of diabetes, higher levels of HbA1c, systolic BP/hypertension are well-known risk factors of DKD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as established knowledge in Discussion",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:18:27.069917Z"
+    },
+    {
+      "id": "cb4fbdf2-0b62-4063-8a58-fef204d0d82c",
+      "content_id": "1c55975b-9693-4060-86fd-cb7483bb64b1",
+      "claim_id": "C89",
+      "claim": "Longer duration of diabetes is a well-known risk factor of DKD.",
+      "claim_type": "EXPLICIT",
+      "source": "Increasing age, longer duration of diabetes, higher levels of HbA1c, systolic BP/hypertension are well-known risk factors of DKD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as established knowledge in Discussion",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:18:27.069917Z"
+    },
+    {
+      "id": "18c22bc5-5bca-4ccb-866c-8b0a04501c18",
+      "content_id": "1c55975b-9693-4060-86fd-cb7483bb64b1",
+      "claim_id": "C90",
+      "claim": "Higher levels of HbA1c is a well-known risk factor of DKD.",
+      "claim_type": "EXPLICIT",
+      "source": "Increasing age, longer duration of diabetes, higher levels of HbA1c, systolic BP/hypertension are well-known risk factors of DKD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as established knowledge in Discussion",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:18:27.069917Z"
+    },
+    {
+      "id": "974beb81-8265-439f-869a-ecf043957e9e",
+      "content_id": "1c55975b-9693-4060-86fd-cb7483bb64b1",
+      "claim_id": "C91",
+      "claim": "Systolic BP/hypertension is a well-known risk factor of DKD.",
+      "claim_type": "EXPLICIT",
+      "source": "Increasing age, longer duration of diabetes, higher levels of HbA1c, systolic BP/hypertension are well-known risk factors of DKD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as established knowledge in Discussion",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:18:27.069917Z"
+    },
+    {
+      "id": "676fd939-5b17-4e36-91bb-770b1b04ed59",
+      "content_id": "1c55975b-9693-4060-86fd-cb7483bb64b1",
+      "claim_id": "C92",
+      "claim": "A meta-analysis by Nelson et al. identified older age, hypertension, lower eGFR, higher levels of BMI, HbA1c, and antidiabetic medication use as significant risk factors for incident CKD in those with diabetes.",
+      "claim_type": "EXPLICIT",
+      "source": "A meta-analysis conducted by Nelson et al., including 15 multinational cohorts with diabetes as part of the CKD Prognosis Consortium (Nelson et al., 2019), also identified older age, hypertension, lower eGFR, higher levels of BMI, HbA1c, and antidiabetic medication use as significant risk factors for incident CKD in those with diabetes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of prior meta-analysis with citation to Nelson et al., 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:18:27.069917Z"
+    },
+    {
+      "id": "897044b8-c4cb-4318-8ad6-c8ec1baf7382",
+      "content_id": "1c55975b-9693-4060-86fd-cb7483bb64b1",
+      "claim_id": "C93",
+      "claim": "Chinese and Malay ethnicity are at higher risk of developing incident DKD compared to Indian ethnicity.",
+      "claim_type": "EXPLICIT",
+      "source": "While black ethnicity was a risk factor for CKD in the meta-analysis, in our study, we found Chinese and Malay ethnicity to be at higher risk of developing incident DKD compared to Indian ethnicity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Finding from the current study in Discussion",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:18:27.069917Z"
+    },
+    {
+      "id": "361dacba-8844-49fb-8c4c-5163fe7df6ba",
+      "content_id": "1c55975b-9693-4060-86fd-cb7483bb64b1",
+      "claim_id": "C94",
+      "claim": "Compared to the Indian population, the Chinese population was generally older.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to the Indian population, the Chinese population was generally older, while Malay participants had lower education levels and higher prevalence of smoking (Supplementary file 1 -Table 1g).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison of ethnic groups with reference to supplementary table",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:18:27.069917Z"
+    },
+    {
+      "id": "059395a1-3270-461f-9ee4-b406690db5ed",
+      "content_id": "1c55975b-9693-4060-86fd-cb7483bb64b1",
+      "claim_id": "C95",
+      "claim": "Malay participants had lower education levels compared to the Indian population.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to the Indian population, the Chinese population was generally older, while Malay participants had lower education levels and higher prevalence of smoking (Supplementary file 1 -Table 1g).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison of ethnic groups with reference to supplementary table",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:18:27.069917Z"
+    },
+    {
+      "id": "cf26959c-43e9-4b49-a765-fd6b67c8c1d8",
+      "content_id": "1c55975b-9693-4060-86fd-cb7483bb64b1",
+      "claim_id": "C96",
+      "claim": "Malay participants had higher prevalence of smoking compared to the Indian population.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to the Indian population, the Chinese population was generally older, while Malay participants had lower education levels and higher prevalence of smoking (Supplementary file 1 -Table 1g).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison of ethnic groups with reference to supplementary table",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:18:27.069917Z"
+    },
+    {
+      "id": "954b4a66-5c26-4b5a-a524-bfffb152a256",
+      "content_id": "1c55975b-9693-4060-86fd-cb7483bb64b1",
+      "claim_id": "C97",
+      "claim": "Both Chinese and Malays had a higher prevalence of hypertension compared to Indians.",
+      "claim_type": "EXPLICIT",
+      "source": "Both Chinese and Malays had a higher prevalence of hypertension and lower levels of antidiabetic medication use, which may contribute to the ethnic difference in DKD incidence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison of ethnic groups in Discussion",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:18:27.069917Z"
+    },
+    {
+      "id": "19c0ca01-8cbd-4934-bda5-007d46c5e0ae",
+      "content_id": "1c55975b-9693-4060-86fd-cb7483bb64b1",
+      "claim_id": "C98",
+      "claim": "Both Chinese and Malays had lower levels of antidiabetic medication use compared to Indians.",
+      "claim_type": "EXPLICIT",
+      "source": "Both Chinese and Malays had a higher prevalence of hypertension and lower levels of antidiabetic medication use, which may contribute to the ethnic difference in DKD incidence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison of ethnic groups in Discussion",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:18:27.069917Z"
+    },
+    {
+      "id": "9c67c5c2-1572-4970-881a-c7397cd5cee0",
+      "content_id": "1c55975b-9693-4060-86fd-cb7483bb64b1",
+      "claim_id": "C99",
+      "claim": "Higher prevalence of hypertension and lower levels of antidiabetic medication use may contribute to the ethnic difference in DKD incidence.",
+      "claim_type": "EXPLICIT",
+      "source": "Both Chinese and Malays had a higher prevalence of hypertension and lower levels of antidiabetic medication use, which may contribute to the ethnic difference in DKD incidence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference about ethnic differences in Discussion",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:18:27.069917Z"
+    },
+    {
+      "id": "7a5bbe82-ba23-4fd4-a59b-bc605885199a",
+      "content_id": "1c55975b-9693-4060-86fd-cb7483bb64b1",
+      "claim_id": "C100",
+      "claim": "Indians as a high-risk group for diabetes may be more aware of the risk and comply with screening, medication, and other measures that can reduce their risk of developing DKD.",
+      "claim_type": "EXPLICIT",
+      "source": "Another reason for the lower risk of developing DKD in the Indian ethnicity could be that as a high-risk group for diabetes they may be more aware of the risk and comply with screening, medication, and other measures that can reduce their risk of developing DKD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative explanation for ethnic differences in Discussion",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:18:27.069917Z"
+    },
+    {
+      "id": "9158f1f1-0757-49bf-8e88-ab88c950518d",
+      "content_id": "1c55975b-9693-4060-86fd-cb7483bb64b1",
+      "claim_id": "C101",
+      "claim": "Malay ethnicity has been identified to be a high-risk group for CKD by several studies conducted in Singapore.",
+      "claim_type": "EXPLICIT",
+      "source": "Malay ethnicity has been identified to be a high-risk group for CKD by several studies conducted in Singapore (Sabanayagam et al., 2010; Lim et al., 2021; National Registry of Diseases Office, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Sabanayagam et al., 2010; Lim et al., 2021; National Registry of Diseases Office, 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:18:27.069917Z"
+    },
+    {
+      "id": "f596deba-bbe9-481a-ae59-dccab2dc2528",
+      "content_id": "1c55975b-9693-4060-86fd-cb7483bb64b1",
+      "claim_id": "C102",
+      "claim": "Sex was not identified to be a risk factor by any of the three ML models.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, sex was not identified to be a risk factor by any of the three ML models, which is consistent with the findings of the Ravizza et al. algorithm based on data-driven feature selection that did not pick up sex as one of the priority features (Ravizza et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Finding from the current study with comparison to prior study",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:18:27.069917Z"
+    },
+    {
+      "id": "df533493-ddfe-4d1d-8ef1-be8fd0d07edc",
+      "content_id": "1c55975b-9693-4060-86fd-cb7483bb64b1",
+      "claim_id": "C103",
+      "claim": "Lipid metabolites, including phospholipids in HDL and VLDL subclasses, cholesterol esters, and free cholesterol in HDL subclasses, were found to be associated with an increased risk of DKD.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, lipid metabolites, including phospholipids in HDL and VLDL subclasses, cholesterol esters, and free cholesterol in HDL subclasses, were found to be associated with an increased risk of DKD, while cholesterol esters in IDL were found to be protective against DKD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Finding from the current study in Discussion",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:18:27.069917Z"
+    },
+    {
+      "id": "2f27ce24-0829-4543-8577-5c0d922332bc",
+      "content_id": "1c55975b-9693-4060-86fd-cb7483bb64b1",
+      "claim_id": "C104",
+      "claim": "Cholesterol esters in IDL were found to be protective against DKD.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, lipid metabolites, including phospholipids in HDL and VLDL subclasses, cholesterol esters, and free cholesterol in HDL subclasses, were found to be associated with an increased risk of DKD, while cholesterol esters in IDL were found to be protective against DKD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Finding from the current study in Discussion",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:18:27.069917Z"
+    },
+    {
+      "id": "6f8f31fa-e9c3-4a72-b9d6-0706a4745403",
+      "content_id": "1c55975b-9693-4060-86fd-cb7483bb64b1",
+      "claim_id": "C105",
+      "claim": "Higher levels of DHA showed a protective association with DKD.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, higher levels of DHA, acetate, and tyrosine also showed a protective association (odds ratios not shown).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Finding from the current study in Discussion",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:18:27.069917Z"
+    },
+    {
+      "id": "0e207a68-aa3a-497c-814d-6638cc7bd133",
+      "content_id": "1c55975b-9693-4060-86fd-cb7483bb64b1",
+      "claim_id": "C106",
+      "claim": "Higher levels of acetate showed a protective association with DKD.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, higher levels of DHA, acetate, and tyrosine also showed a protective association (odds ratios not shown).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Finding from the current study in Discussion",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:18:27.069917Z"
+    },
+    {
+      "id": "3a1aa82b-a8ff-4715-b257-d0d4473d1540",
+      "content_id": "1c55975b-9693-4060-86fd-cb7483bb64b1",
+      "claim_id": "C107",
+      "claim": "Higher levels of tyrosine showed a protective association with DKD.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, higher levels of DHA, acetate, and tyrosine also showed a protective association (odds ratios not shown).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Finding from the current study in Discussion",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:18:27.069917Z"
+    },
+    {
+      "id": "c90ef107-c616-47f1-a396-873c45dd43d4",
+      "content_id": "1c55975b-9693-4060-86fd-cb7483bb64b1",
+      "claim_id": "C108",
+      "claim": "In the ADVANCE trial, higher tyrosine levels were associated with an increased risk of microvascular complications in diabetic participants.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, in the ADVANCE trial, higher tyrosine levels were associated with an increased risk of microvascular complications in diabetic participants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reference to prior study findings",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:18:27.069917Z"
+    },
+    {
+      "id": "1ea01279-8d35-492e-b853-0e00ba05cc2f",
+      "content_id": "1c55975b-9693-4060-86fd-cb7483bb64b1",
+      "claim_id": "C109",
+      "claim": "DHA has been shown to reduce renal inflammation and fibrosis and slow down the progression of CKD in animal models with type 2 diabetes.",
+      "claim_type": "EXPLICIT",
+      "source": "DHA, a n-3 polyunsaturated fatty acid (PUFA), has been shown to reduce renal inflammation and fibrosis and slow down the progression of CKD in animal models with type 2 diabetes (Mathi Thumilan et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Mathi Thumilan et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:18:27.069917Z"
+    },
+    {
+      "id": "42869808-9520-40dc-aeb3-22dc16825ec3",
+      "content_id": "1c55975b-9693-4060-86fd-cb7483bb64b1",
+      "claim_id": "C110",
+      "claim": "PUFA supplementation has been shown to reduce hyperglycemia-induced pathogenic mechanisms by its anti-inflammatory and antioxidant properties.",
+      "claim_type": "EXPLICIT",
+      "source": "PUFA supplementation has also been shown to reduce hyperglycemia-induced pathogenic mechanisms by its anti-inflammatory and antioxidant properties, and improve renal function in diabetic nephropathy patients .",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reference to prior study findings (citation appears incomplete in manuscript)",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:18:27.069917Z"
+    },
+    {
+      "id": "84115555-7db4-42bc-9d2a-500680d617c9",
+      "content_id": "1c55975b-9693-4060-86fd-cb7483bb64b1",
+      "claim_id": "C111",
+      "claim": "PUFA supplementation improves renal function in diabetic nephropathy patients.",
+      "claim_type": "EXPLICIT",
+      "source": "PUFA supplementation has also been shown to reduce hyperglycemia-induced pathogenic mechanisms by its anti-inflammatory and antioxidant properties, and improve renal function in diabetic nephropathy patients .",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reference to prior study findings (citation appears incomplete in manuscript)",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:18:27.069917Z"
+    },
+    {
+      "id": "62c7f04c-9e18-4e86-9afd-0f35468adbb8",
+      "content_id": "1c55975b-9693-4060-86fd-cb7483bb64b1",
+      "claim_id": "C112",
+      "claim": "Higher levels of the short-chain fatty acid acetate have been shown to be inversely associated with diabetic nephropathy in type 2 diabetic patients.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, higher levels of the short-chain fatty acid acetate have been shown to be inversely associated with diabetic nephropathy in type 2 diabetic patients (Huang et al., 2020b), and have beneficial effects in mice models with type 2 diabetes by reducing oxidative stress and inflammation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Huang et al., 2020b",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:18:27.069917Z"
+    },
+    {
+      "id": "a3bd8d09-9101-41ac-9d69-df52167127fc",
+      "content_id": "1c55975b-9693-4060-86fd-cb7483bb64b1",
+      "claim_id": "C113",
+      "claim": "Acetate has beneficial effects in mice models with type 2 diabetes by reducing oxidative stress and inflammation.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, higher levels of the short-chain fatty acid acetate have been shown to be inversely associated with diabetic nephropathy in type 2 diabetic patients (Huang et al., 2020b), and have beneficial effects in mice models with type 2 diabetes by reducing oxidative stress and inflammation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reference to prior study findings",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:18:27.069917Z"
+    },
+    {
+      "id": "40064724-92ae-49de-ab88-0e4723d55c74",
+      "content_id": "1c55975b-9693-4060-86fd-cb7483bb64b1",
+      "claim_id": "C114",
+      "claim": "The use of RFE for dimension reduction and feature selection reduced overfitting of data.",
+      "claim_type": "EXPLICIT",
+      "source": "The use of RFE for dimension reduction and feature selection reduced overfitting of data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about methodological strength in Discussion",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:18:27.069917Z"
+    },
+    {
+      "id": "91c00235-06bd-4da1-86f8-5ee4b911cf3b",
+      "content_id": "1c55975b-9693-4060-86fd-cb7483bb64b1",
+      "claim_id": "C115",
+      "claim": "ML models identified the relative importance of one domain over the other domains.",
+      "claim_type": "EXPLICIT",
+      "source": "ML models identified the relative importance of one domain over the other domains (like metabolite features in our study compared to genetic features) and the best predictors within one domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of ML model capabilities in Discussion",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:18:27.069917Z"
+    },
+    {
+      "id": "684241b4-5fc7-4bdb-a0eb-7d719e7d9961",
+      "content_id": "1c55975b-9693-4060-86fd-cb7483bb64b1",
+      "claim_id": "C116",
+      "claim": "The definition of DKD was based on the measurement of a single blood creatinine both at baseline and follow-up.",
+      "claim_type": "EXPLICIT",
+      "source": "First, our definition of DKD was based on the measurement of a single blood creatinine both at baseline and follow-up.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Limitation stated in Discussion",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:18:27.069917Z"
+    },
+    {
+      "id": "32f4bd71-4572-436b-b64f-fd0611b1a4cb",
+      "content_id": "1c55975b-9693-4060-86fd-cb7483bb64b1",
+      "claim_id": "C117",
+      "claim": "Single blood creatinine measurement could have resulted in some misclassification.",
+      "claim_type": "EXPLICIT",
+      "source": "This could have resulted in some misclassification, but the bias would be nondifferential and similar across both outcomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Discussion of limitation",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:18:27.069917Z"
+    },
+    {
+      "id": "39c7786b-d9ea-4aef-a834-da9c959e0f53",
+      "content_id": "1c55975b-9693-4060-86fd-cb7483bb64b1",
+      "claim_id": "C118",
+      "claim": "Albuminuria was not included as it was missing in a substantial number of participants.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, albuminuria, an important predictor of DKD, was not included as it was missing in a substantial number of participants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Limitation stated in Discussion",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:18:27.069917Z"
+    },
+    {
+      "id": "d90f154b-b518-4b1e-8ea1-bae2678142fa",
+      "content_id": "1c55975b-9693-4060-86fd-cb7483bb64b1",
+      "claim_id": "C119",
+      "claim": "External validation was not performed.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, external validation was not performed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Limitation stated in Discussion",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:18:27.069917Z"
+    },
+    {
+      "id": "27a723bd-09df-4bf4-931c-7d0fe4dd7472",
+      "content_id": "1c55975b-9693-4060-86fd-cb7483bb64b1",
+      "claim_id": "C120",
+      "claim": "ML models are computationally intensive compared to traditional regression models.",
+      "claim_type": "EXPLICIT",
+      "source": "Fourth, ML models are computationally intensive compared to traditional regression models.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Limitation stated in Discussion",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:18:27.069917Z"
+    },
+    {
+      "id": "ba4e23f4-9fcd-47c3-912b-2e16ddc78ee7",
+      "content_id": "1c55975b-9693-4060-86fd-cb7483bb64b1",
+      "claim_id": "C121",
+      "claim": "EN with specific metabolites outperformed the current DKD risk prediction models using demographic and clinical variables.",
+      "claim_type": "EXPLICIT",
+      "source": "In conclusion, in a population-based sample of multiethnic Asian adults, we found that EN with specific metabolites outperformed the current DKD risk prediction models using demographic and clinical variables.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion stated in Discussion",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:18:27.069917Z"
+    },
+    {
+      "id": "4792d135-26a2-4f02-ba97-e4edcabc0611",
+      "content_id": "1c55975b-9693-4060-86fd-cb7483bb64b1",
+      "claim_id": "C122",
+      "claim": "Combining metabolites and ML models could improve the prediction accuracy for DKD.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results provide evidence that combining metabolites and ML models could improve the prediction accuracy for DKD and that increasing the use of ML techniques may discover new risk factors for DKD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion stated in Discussion",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:18:27.069917Z"
+    },
+    {
+      "id": "da6e7896-0725-454a-b292-608081c1f196",
+      "content_id": "1c55975b-9693-4060-86fd-cb7483bb64b1",
+      "claim_id": "C123",
+      "claim": "Increasing the use of ML techniques may discover new risk factors for DKD.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results provide evidence that combining metabolites and ML models could improve the prediction accuracy for DKD and that increasing the use of ML techniques may discover new risk factors for DKD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion stated in Discussion",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:18:27.069917Z"
+    },
+    {
+      "id": "6f1a906b-9ee3-4731-9fe9-376e2b05d853",
+      "content_id": "1c55975b-9693-4060-86fd-cb7483bb64b1",
+      "claim_id": "C124",
+      "claim": "The performance of all ML models was below 0.80 in dataset D including genetic features (best AUC = 0.785 by RF).",
+      "claim_type": "EXPLICIT",
+      "source": "In preliminary analyses, testing different combinations of features (Figure 1A\u2013F), performance of all ML models was below 0.80 in dataset D including genetic features (best AUC = 0.785 by RF) and dataset F including all 339 features (best AUC = 0.788 by XGB).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Results from preliminary analyses with reference to Figure 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:18:27.069917Z"
+    },
+    {
+      "id": "f1e8662d-89e1-4c78-8c56-f1f08457f6c3",
+      "content_id": "1c55975b-9693-4060-86fd-cb7483bb64b1",
+      "claim_id": "C125",
+      "claim": "The performance of all ML models was below 0.80 in dataset F including all 339 features (best AUC = 0.788 by XGB).",
+      "claim_type": "EXPLICIT",
+      "source": "In preliminary analyses, testing different combinations of features (Figure 1A\u2013F), performance of all ML models was below 0.80 in dataset D including genetic features (best AUC = 0.785 by RF) and dataset F including all 339 features (best AUC = 0.788 by XGB).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Results from preliminary analyses with reference to Figure 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:18:27.069917Z"
+    },
+    {
+      "id": "0e9cb778-c803-45f5-aaa5-ad8e204a30ee",
+      "content_id": "1c55975b-9693-4060-86fd-cb7483bb64b1",
+      "claim_id": "C126",
+      "claim": "Datasets D and F were dropped from further analyses due to poor performance.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, we dropped these two datasets (D and F) from further analyses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Methodological decision based on preliminary results",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:18:27.069917Z"
+    },
+    {
+      "id": "6d2aa95b-7931-49a1-a8fe-dc97eb85fd82",
+      "content_id": "1c55975b-9693-4060-86fd-cb7483bb64b1",
+      "claim_id": "C127",
+      "claim": "Performances of CART, SVM, and NB were lower compared to other models.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the ML models, performances of CART, SVM, and NB were lower compared to other models, hence these models were also dropped.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Results from model comparison",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:18:27.069917Z"
+    },
+    {
+      "id": "66a124d0-48c4-4de8-9b97-83ad77fc5152",
+      "content_id": "1c55975b-9693-4060-86fd-cb7483bb64b1",
+      "claim_id": "C128",
+      "claim": "ML models EN, GBDT, LASSO, XGB, and RF were considered for subsequent analyses using datasets A, B, C, and E including 252 features.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, ML models EN, GBDT, LASSO, XGB, and RF were considered for subsequent analyses using datasets A, B, C, and E including 252 features.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of final model selection",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:18:27.069917Z"
+    },
+    {
+      "id": "cb1a6695-5e7c-4845-8c87-323e679cc151",
+      "content_id": "1c55975b-9693-4060-86fd-cb7483bb64b1",
+      "claim_id": "C129",
+      "claim": "Baseline eGFR was linked to incident DKD in all three ethnic subgroups.",
+      "claim_type": "EXPLICIT",
+      "source": "Using the same approach, we also identified the top variables by each ethnicity in Supplementary file 1-Table 1f, and found baseline eGFR linked to incident DKD in all three subgroups, whereas acetate, SBP, antidiabetic medication use, and housing type were important in two ethnic subgroups.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Results from subgroup analyses with reference to supplementary table",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:18:27.069917Z"
+    },
+    {
+      "id": "1bbaa8b6-6443-488a-803a-526e5387f350",
+      "content_id": "1c55975b-9693-4060-86fd-cb7483bb64b1",
+      "claim_id": "C130",
+      "claim": "Acetate, SBP, antidiabetic medication use, and housing type were important in two ethnic subgroups.",
+      "claim_type": "EXPLICIT",
+      "source": "Using the same approach, we also identified the top variables by each ethnicity in Supplementary file 1-Table 1f, and found baseline eGFR linked to incident DKD in all three subgroups, whereas acetate, SBP, antidiabetic medication use, and housing type were important in two ethnic subgroups.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Results from subgroup analyses with reference to supplementary table",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:18:27.069917Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "762578c3-c98f-4cc2-9665-5bbe7b9ec22e",
+      "content_id": "1c55975b-9693-4060-86fd-cb7483bb64b1",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The study analyzed 1365 Asian adults with diabetes from the SEED cohort over 6 years, using 339 features including metabolites, genetic markers, and imaging parameters to predict incident DKD (11.9% incidence). The outcome was defined as eGFR <60 mL/min/1.73 m\u00b2 with \u226525% decline, and nine ML algorithms were tested using 80/20 train-test split with 5-fold cross-validation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C53 provide comprehensive methodological details including cohort characteristics, outcome definition, predictor variables, and analytical approach. The study design is clearly described with appropriate sample size (n=1365), follow-up duration (median 6.08 years), and rigorous cross-validation methodology. The 11.9% incidence rate is consistent with the sample size and exclusion criteria.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:18:27.069917Z"
+    },
+    {
+      "id": "d7e81810-a203-4b36-8b70-334cc87218f2",
+      "content_id": "1c55975b-9693-4060-86fd-cb7483bb64b1",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Incident DKD varied significantly by ethnicity (Malays 18.4%, Chinese 12.8%, Indians 7.6%). Participants who developed DKD were older, more likely to be Malay, had higher prevalence of hypertension, diabetic retinopathy, cardiovascular disease, longer diabetes duration, and higher systolic BP and HbA1c levels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C64 describe baseline characteristics and ethnic differences in DKD incidence, supported by Table 1 showing statistically significant differences (p<0.001 for most comparisons). The ethnic variation in incidence is substantial and well-documented, though the reasons for lower Indian incidence require further investigation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:18:27.069917Z"
+    },
+    {
+      "id": "7f1f7a5d-ade9-43bf-ab91-2bd230f83391",
+      "content_id": "1c55975b-9693-4060-86fd-cb7483bb64b1",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Elastic Net (EN) achieved the best predictive performance with AUC 0.851 (95% CI: 0.847-0.856), representing a 7.0% relative improvement over logistic regression (AUC 0.795). EN demonstrated higher sensitivity (88.2% vs 73.0%) but lower specificity (65.9% vs 72.8%) compared to LR. LASSO and GBDT also outperformed LR with AUCs of 0.820 and 0.819, respectively.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C68, C76-C77 demonstrate clear superiority of ML models, particularly EN, over traditional LR. The confidence intervals are narrow and non-overlapping, indicating statistically significant differences. However, the trade-off between sensitivity and specificity should be noted\u2014EN prioritizes sensitivity, which may be clinically appropriate for screening but could lead to more false positives.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:18:27.069917Z"
+    },
+    {
+      "id": "aaf323b4-3338-4468-9e55-95716ee15ac0",
+      "content_id": "1c55975b-9693-4060-86fd-cb7483bb64b1",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The top 15 predictors identified by ML models included traditional risk factors (age, ethnicity, systolic BP, HbA1c, eGFR, diabetic retinopathy, hypertension, antidiabetic medication) and novel metabolite biomarkers. Lipid metabolites (phospholipids in HDL/VLDL, cholesterol esters, free cholesterol) were associated with increased DKD risk, while DHA, acetate, and tyrosine showed protective associations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36, C71-C75, C103-C107 identify both established and novel predictors through feature selection. The inclusion of metabolites represents a key finding, though the manuscript notes that odds ratios for protective metabolites were not shown (C105-C107), limiting full assessment. The consistency across three ML models (EN, LASSO, GBDT) strengthens confidence in these findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:18:27.069917Z"
+    },
+    {
+      "id": "5b4027a0-d1c2-47a4-8d1b-eee85816ed1b",
+      "content_id": "1c55975b-9693-4060-86fd-cb7483bb64b1",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "EN-selected features showed low collinearity (Spearman's correlation: -0.49 to 0.43), while LASSO and GBDT selected some highly correlated variables such as systolic BP and pulse pressure.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69-C70 address an important methodological consideration. The low collinearity in EN-selected features suggests better feature independence, which is desirable for model interpretability and stability. The selection of correlated features by LASSO and GBDT may explain their slightly lower performance.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:18:27.069917Z"
+    },
+    {
+      "id": "2d76cb6c-c3ba-4ee0-ad3c-907d74e624a3",
+      "content_id": "1c55975b-9693-4060-86fd-cb7483bb64b1",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "When limited to traditional risk factors, LR performed similarly to EN, but LR performance dropped significantly with high-dimensional data. Regularized regression models (EN and LASSO) outperformed more sophisticated models, suggesting that the pathophysiological progression from diabetes to CKD may be more linear than previously assumed.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C83-C86 provide important insights into model behavior and disease progression. The observation that simpler regularized models outperform complex non-linear models is well-supported by the data (Figure 1) and suggests that the relationship between predictors and DKD may be predominantly additive. However, C86 is somewhat speculative and would benefit from additional mechanistic validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:18:27.069917Z"
+    },
+    {
+      "id": "56b5810f-9968-4da7-9674-cf418f5c0c51",
+      "content_id": "1c55975b-9693-4060-86fd-cb7483bb64b1",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Preliminary analyses showed that genetic features (dataset D, best AUC=0.785) and all 339 features combined (dataset F, best AUC=0.788) performed poorly. CART, SVM, and NB models also underperformed. Consequently, datasets D and F and models CART, SVM, and NB were excluded from further analysis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C124-C128 describe methodological decisions based on preliminary results. The exclusion of poorly performing datasets and models is justified by the data shown in Figure 1. However, the poor performance of genetic features is notable and suggests that the 76 T2D-associated SNPs may not be strongly predictive of DKD specifically, which is an important negative finding.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:18:27.069917Z"
+    },
+    {
+      "id": "7eaf424e-7d42-4a41-a934-7bb8f7beb4a6",
+      "content_id": "1c55975b-9693-4060-86fd-cb7483bb64b1",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Chinese and Malay ethnicities showed higher DKD risk compared to Indians. Chinese participants were older, while Malays had lower education and higher smoking prevalence. Both Chinese and Malays had higher hypertension prevalence and lower antidiabetic medication use, which may contribute to ethnic differences in DKD incidence. Indians, as a high-risk group for diabetes, may have greater awareness and better compliance with preventive measures.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C93-C101 describe ethnic differences and propose explanations. While the ethnic differences in incidence are well-documented (C93, supported by data), the explanations for these differences (C94-C100) are largely speculative. C99 uses cautious language ('may contribute') but lacks statistical testing of mediation. C100 is purely speculative without supporting data on awareness or compliance. These hypotheses require validation in future studies.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:18:27.069917Z"
+    },
+    {
+      "id": "6484624a-d9e0-414c-8401-4339c50fa8df",
+      "content_id": "1c55975b-9693-4060-86fd-cb7483bb64b1",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Sex was not identified as a risk factor by any of the three ML models, consistent with findings from Ravizza et al. (2019).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C102 reports a surprising negative finding that is consistent with prior literature. This is well-supported and represents an important observation, as sex is often considered in risk prediction models. The consistency with Ravizza et al. strengthens this finding.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:18:27.069917Z"
+    },
+    {
+      "id": "bd1ed279-f63a-4d67-a3a0-8f240c4fa697",
+      "content_id": "1c55975b-9693-4060-86fd-cb7483bb64b1",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Prior studies using ML for DKD prediction achieved AUCs ranging from 0.83-0.857. Ravizza et al. (2019) achieved AUC 0.833 with RF vs 0.827 with LR using EHR data. Song et al. (2020) achieved AUC 0.83 for 1-year risk prediction. Huang et al. (2020a) achieved AUC 0.857 in the KORA study. Nusinovici et al. (2020) found similar performance between LR (0.905) and GBDT (0.903) for incident CKD prediction in the same SEED dataset.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C78-C82, C87 accurately summarize prior literature and provide appropriate context for the current study's findings. The comparisons are fair and acknowledge both similarities and differences with previous work. The reference to Nusinovici et al. using the same dataset is particularly valuable for understanding the contribution of metabolite data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:18:27.069917Z"
+    },
+    {
+      "id": "e61e0148-a92c-4296-8552-807154b135b9",
+      "content_id": "1c55975b-9693-4060-86fd-cb7483bb64b1",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Prior studies have shown that tyrosine is associated with microvascular complications in diabetes (ADVANCE trial), DHA reduces renal inflammation and fibrosis in animal models, PUFA supplementation improves renal function in diabetic nephropathy patients, and acetate is inversely associated with diabetic nephropathy and reduces oxidative stress in mouse models.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C108-C113 provide biological plausibility for the metabolite findings by citing relevant prior studies. However, C110-C111 reference an incomplete citation. The mechanistic support from animal and human studies strengthens the interpretation of the metabolite associations, though the direction of effect for tyrosine appears inconsistent between C107 (protective) and C108 (risk factor).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:18:27.069917Z"
+    },
+    {
+      "id": "c8d8bbc7-fcca-4acc-b6f6-414afa14e72c",
+      "content_id": "1c55975b-9693-4060-86fd-cb7483bb64b1",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Subgroup analyses by ethnicity found that baseline eGFR was linked to incident DKD in all three ethnic groups, while acetate, systolic BP, antidiabetic medication use, and housing type were important in two ethnic subgroups.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C129-C130 describe ethnic-specific predictor analyses with reference to supplementary data. The finding that eGFR is universally important across ethnicities is expected and strengthens the model's validity. The ethnic variation in other predictors is interesting but would benefit from more detailed presentation and discussion.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:18:27.069917Z"
+    },
+    {
+      "id": "3934ab03-3141-4be3-8322-41850d58fd9e",
+      "content_id": "1c55975b-9693-4060-86fd-cb7483bb64b1",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The use of recursive feature elimination (RFE) reduced overfitting, and ML models identified the relative importance of different data domains, showing that metabolite features were more important than genetic features.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C114-C115 describe methodological strengths. The use of RFE is appropriate for high-dimensional data, though the claim that it 'reduced overfitting' (C114) is not directly demonstrated with validation metrics. C115 is supported by the superior performance of dataset E (metabolites) over dataset D (genetics).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:18:27.069917Z"
+    },
+    {
+      "id": "54d300b0-a16d-4b66-834b-2a3647e97914",
+      "content_id": "1c55975b-9693-4060-86fd-cb7483bb64b1",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Study limitations include: (1) DKD definition based on single creatinine measurements at baseline and follow-up, potentially causing non-differential misclassification; (2) exclusion of albuminuria due to substantial missing data; (3) lack of external validation; and (4) computational intensity of ML models compared to traditional regression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C116-C120 appropriately acknowledge important limitations. C116-C117 correctly identify potential misclassification from single measurements, though the assertion of 'non-differential' bias (C117) is speculative. C118 is a significant limitation as albuminuria is a key DKD marker. C119 is critical\u2014without external validation, generalizability is uncertain. C120 is a practical consideration but less scientifically important.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:18:27.069917Z"
+    },
+    {
+      "id": "0d90c2e5-31c9-4dd9-8632-e734f7906dd9",
+      "content_id": "1c55975b-9693-4060-86fd-cb7483bb64b1",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The study concludes that ML with feature selection improves DKD risk prediction accuracy in asymptomatic populations and identifies novel metabolite risk factors. Combining metabolites with ML models could improve prediction accuracy, and increased use of ML techniques may discover new DKD risk factors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C37-C38, C121-C123 present the main conclusions. While C37, C121-C122 are reasonably supported by the data showing improved AUC with EN and metabolites, the conclusions are limited by lack of external validation (C119). C38 and C123 regarding 'novel' risk factors and 'discovery' are overstated\u2014the metabolites were pre-selected based on prior knowledge, not discovered de novo. The claim that ML 'may discover' new risk factors (C123) is speculative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:18:27.069917Z"
+    },
+    {
+      "id": "481d6731-d297-47ef-ad70-e4e1bcc053e2",
+      "content_id": "1c55975b-9693-4060-86fd-cb7483bb64b1",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The introduction establishes the global burden of diabetes and DKD, challenges in early detection, limitations of existing prediction models, and rationale for using ML with multi-domain data including metabolites, genetics, and imaging. Prior literature is cited to support the association of metabolites, genetic factors, and retinal changes with DKD.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C28, C88-C92 provide appropriate background and context from prior literature. All claims are supported by citations to relevant studies. The introduction effectively motivates the study by identifying gaps in existing prediction models and the potential value of integrating high-dimensional multi-domain data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:18:27.069917Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "fcc630d7-b19a-411b-a041-01fdb19aaf8f",
+      "result_id": "762578c3-c98f-4cc2-9665-5bbe7b9ec22e"
+    },
+    {
+      "claim_id": "7ff69d3c-9905-4336-800d-44a056e7518e",
+      "result_id": "762578c3-c98f-4cc2-9665-5bbe7b9ec22e"
+    },
+    {
+      "claim_id": "ba8a4a1b-f7bd-4ae7-b9f9-76dafacb3229",
+      "result_id": "762578c3-c98f-4cc2-9665-5bbe7b9ec22e"
+    },
+    {
+      "claim_id": "281f2f13-2237-42a1-a260-d6ae68ed02c7",
+      "result_id": "762578c3-c98f-4cc2-9665-5bbe7b9ec22e"
+    },
+    {
+      "claim_id": "0e36c7aa-36e4-40ae-a895-e8edd0373152",
+      "result_id": "762578c3-c98f-4cc2-9665-5bbe7b9ec22e"
+    },
+    {
+      "claim_id": "60b50ca8-23f1-48be-885a-05855cec7676",
+      "result_id": "762578c3-c98f-4cc2-9665-5bbe7b9ec22e"
+    },
+    {
+      "claim_id": "3a60ddfe-e858-442e-a2cb-5730bed11126",
+      "result_id": "762578c3-c98f-4cc2-9665-5bbe7b9ec22e"
+    },
+    {
+      "claim_id": "b9102493-d5a1-422b-a15f-2292c3fc7614",
+      "result_id": "762578c3-c98f-4cc2-9665-5bbe7b9ec22e"
+    },
+    {
+      "claim_id": "22c8ff52-49a0-4407-9b9f-768febc0d3fe",
+      "result_id": "762578c3-c98f-4cc2-9665-5bbe7b9ec22e"
+    },
+    {
+      "claim_id": "3c48c078-b73b-4f6b-bbeb-15a05d2db048",
+      "result_id": "762578c3-c98f-4cc2-9665-5bbe7b9ec22e"
+    },
+    {
+      "claim_id": "a6505634-5639-439f-854f-eeadba811f60",
+      "result_id": "762578c3-c98f-4cc2-9665-5bbe7b9ec22e"
+    },
+    {
+      "claim_id": "e5242617-2e7a-42b2-b3a6-bcd786201122",
+      "result_id": "762578c3-c98f-4cc2-9665-5bbe7b9ec22e"
+    },
+    {
+      "claim_id": "c73652b8-66f6-4688-8de7-fc8ad73a19e5",
+      "result_id": "762578c3-c98f-4cc2-9665-5bbe7b9ec22e"
+    },
+    {
+      "claim_id": "7fb20265-ee71-4d0d-a6a5-4a939fd989f0",
+      "result_id": "762578c3-c98f-4cc2-9665-5bbe7b9ec22e"
+    },
+    {
+      "claim_id": "6bc0b64c-58c7-4ca4-927b-f49f298187e4",
+      "result_id": "762578c3-c98f-4cc2-9665-5bbe7b9ec22e"
+    },
+    {
+      "claim_id": "4bc3bfc5-801e-42d4-bbdb-f9d5d11fea06",
+      "result_id": "762578c3-c98f-4cc2-9665-5bbe7b9ec22e"
+    },
+    {
+      "claim_id": "9a0095bd-70a7-45e3-b2a3-6354ab3ebed1",
+      "result_id": "762578c3-c98f-4cc2-9665-5bbe7b9ec22e"
+    },
+    {
+      "claim_id": "c742bde8-443d-4345-baf7-90c583048324",
+      "result_id": "d7e81810-a203-4b36-8b70-334cc87218f2"
+    },
+    {
+      "claim_id": "52194165-c865-4119-9611-cb87ea029012",
+      "result_id": "d7e81810-a203-4b36-8b70-334cc87218f2"
+    },
+    {
+      "claim_id": "457cde55-e35c-4b8a-85dd-4d7990b3d9bc",
+      "result_id": "d7e81810-a203-4b36-8b70-334cc87218f2"
+    },
+    {
+      "claim_id": "066995eb-8e0e-479d-959e-04fe678701bb",
+      "result_id": "d7e81810-a203-4b36-8b70-334cc87218f2"
+    },
+    {
+      "claim_id": "43cad27d-df7a-4410-84fd-20ea163b6d46",
+      "result_id": "d7e81810-a203-4b36-8b70-334cc87218f2"
+    },
+    {
+      "claim_id": "0f47caf2-2053-44c4-9dbd-4be69bbb4d90",
+      "result_id": "d7e81810-a203-4b36-8b70-334cc87218f2"
+    },
+    {
+      "claim_id": "aed024f1-f116-409f-be63-cf910aa14d7f",
+      "result_id": "d7e81810-a203-4b36-8b70-334cc87218f2"
+    },
+    {
+      "claim_id": "82a60b36-3105-4b3a-b6cc-7af818d23d3e",
+      "result_id": "d7e81810-a203-4b36-8b70-334cc87218f2"
+    },
+    {
+      "claim_id": "58a6e0c7-8c4b-43ba-8604-31f903110b39",
+      "result_id": "d7e81810-a203-4b36-8b70-334cc87218f2"
+    },
+    {
+      "claim_id": "69d58b4f-1a40-433a-ac34-c0c1c502e3d3",
+      "result_id": "d7e81810-a203-4b36-8b70-334cc87218f2"
+    },
+    {
+      "claim_id": "e3e5febc-d21f-4664-9f7c-d7241ee36fd7",
+      "result_id": "d7e81810-a203-4b36-8b70-334cc87218f2"
+    },
+    {
+      "claim_id": "6adf4762-50cc-4b05-bd24-98fe2d57e4aa",
+      "result_id": "7f1f7a5d-ade9-43bf-ab91-2bd230f83391"
+    },
+    {
+      "claim_id": "61d25e51-ab97-42ff-b770-65df03b12d77",
+      "result_id": "7f1f7a5d-ade9-43bf-ab91-2bd230f83391"
+    },
+    {
+      "claim_id": "7641e581-59cb-4099-b828-47a10ea60f6b",
+      "result_id": "7f1f7a5d-ade9-43bf-ab91-2bd230f83391"
+    },
+    {
+      "claim_id": "1f20f3e1-3b7b-4675-8045-1e22b953dc3b",
+      "result_id": "7f1f7a5d-ade9-43bf-ab91-2bd230f83391"
+    },
+    {
+      "claim_id": "b02c6365-d404-4fe1-b30b-e6abfe07b532",
+      "result_id": "7f1f7a5d-ade9-43bf-ab91-2bd230f83391"
+    },
+    {
+      "claim_id": "eb3618fa-be1e-4208-9ab9-344c7393bd52",
+      "result_id": "7f1f7a5d-ade9-43bf-ab91-2bd230f83391"
+    },
+    {
+      "claim_id": "9714db82-49eb-4623-b116-7a8e23e8095e",
+      "result_id": "7f1f7a5d-ade9-43bf-ab91-2bd230f83391"
+    },
+    {
+      "claim_id": "e5a52829-fdc6-4b60-b994-3d11e25bb12a",
+      "result_id": "7f1f7a5d-ade9-43bf-ab91-2bd230f83391"
+    },
+    {
+      "claim_id": "89d1a8f9-ec4d-4e96-a8b7-ef24faf5f727",
+      "result_id": "7f1f7a5d-ade9-43bf-ab91-2bd230f83391"
+    },
+    {
+      "claim_id": "2e4cae16-ab11-4048-bb20-2e45e3a0d8d1",
+      "result_id": "7f1f7a5d-ade9-43bf-ab91-2bd230f83391"
+    },
+    {
+      "claim_id": "cadbdd33-f709-447d-8ff0-ac7703d6259d",
+      "result_id": "aaf323b4-3338-4468-9e55-95716ee15ac0"
+    },
+    {
+      "claim_id": "0243f285-959e-4443-a8f4-7ab8c653cfc1",
+      "result_id": "aaf323b4-3338-4468-9e55-95716ee15ac0"
+    },
+    {
+      "claim_id": "574f21f9-443c-4258-a5e6-32eaee8ff4c7",
+      "result_id": "aaf323b4-3338-4468-9e55-95716ee15ac0"
+    },
+    {
+      "claim_id": "e5ef33b4-34d8-4245-8fb7-a4cbe3c20178",
+      "result_id": "aaf323b4-3338-4468-9e55-95716ee15ac0"
+    },
+    {
+      "claim_id": "e02aabf5-5ba0-4952-a0ee-c8080c43b262",
+      "result_id": "aaf323b4-3338-4468-9e55-95716ee15ac0"
+    },
+    {
+      "claim_id": "9d22becb-8901-4852-8972-5600c843328b",
+      "result_id": "aaf323b4-3338-4468-9e55-95716ee15ac0"
+    },
+    {
+      "claim_id": "df533493-ddfe-4d1d-8ef1-be8fd0d07edc",
+      "result_id": "aaf323b4-3338-4468-9e55-95716ee15ac0"
+    },
+    {
+      "claim_id": "2f27ce24-0829-4543-8577-5c0d922332bc",
+      "result_id": "aaf323b4-3338-4468-9e55-95716ee15ac0"
+    },
+    {
+      "claim_id": "6f8f31fa-e9c3-4a72-b9d6-0706a4745403",
+      "result_id": "aaf323b4-3338-4468-9e55-95716ee15ac0"
+    },
+    {
+      "claim_id": "0e207a68-aa3a-497c-814d-6638cc7bd133",
+      "result_id": "aaf323b4-3338-4468-9e55-95716ee15ac0"
+    },
+    {
+      "claim_id": "3a1aa82b-a8ff-4715-b257-d0d4473d1540",
+      "result_id": "aaf323b4-3338-4468-9e55-95716ee15ac0"
+    },
+    {
+      "claim_id": "285f4176-0977-46a5-88d3-e630576ef96c",
+      "result_id": "5b4027a0-d1c2-47a4-8d1b-eee85816ed1b"
+    },
+    {
+      "claim_id": "6c891aa0-55c3-4215-913e-9a37f69c75ef",
+      "result_id": "5b4027a0-d1c2-47a4-8d1b-eee85816ed1b"
+    },
+    {
+      "claim_id": "76ec2eae-0ab7-4f4a-8a84-6a78ae256463",
+      "result_id": "2d76cb6c-c3ba-4ee0-ad3c-907d74e624a3"
+    },
+    {
+      "claim_id": "a5ecb2bf-73a9-4050-a175-adc46d540ceb",
+      "result_id": "2d76cb6c-c3ba-4ee0-ad3c-907d74e624a3"
+    },
+    {
+      "claim_id": "beaf41fc-c75c-4e5b-b4e6-01fc026f31fe",
+      "result_id": "2d76cb6c-c3ba-4ee0-ad3c-907d74e624a3"
+    },
+    {
+      "claim_id": "d1cbaa8b-1bbf-444c-b71a-4292e213dc9e",
+      "result_id": "2d76cb6c-c3ba-4ee0-ad3c-907d74e624a3"
+    },
+    {
+      "claim_id": "6f1a906b-9ee3-4731-9fe9-376e2b05d853",
+      "result_id": "56b5810f-9968-4da7-9674-cf418f5c0c51"
+    },
+    {
+      "claim_id": "f1e8662d-89e1-4c78-8c56-f1f08457f6c3",
+      "result_id": "56b5810f-9968-4da7-9674-cf418f5c0c51"
+    },
+    {
+      "claim_id": "0e9cb778-c803-45f5-aaa5-ad8e204a30ee",
+      "result_id": "56b5810f-9968-4da7-9674-cf418f5c0c51"
+    },
+    {
+      "claim_id": "6d2aa95b-7931-49a1-a8fe-dc97eb85fd82",
+      "result_id": "56b5810f-9968-4da7-9674-cf418f5c0c51"
+    },
+    {
+      "claim_id": "66a124d0-48c4-4de8-9b97-83ad77fc5152",
+      "result_id": "56b5810f-9968-4da7-9674-cf418f5c0c51"
+    },
+    {
+      "claim_id": "897044b8-c4cb-4318-8ad6-c8ec1baf7382",
+      "result_id": "7eaf424e-7d42-4a41-a934-7bb8f7beb4a6"
+    },
+    {
+      "claim_id": "361dacba-8844-49fb-8c4c-5163fe7df6ba",
+      "result_id": "7eaf424e-7d42-4a41-a934-7bb8f7beb4a6"
+    },
+    {
+      "claim_id": "059395a1-3270-461f-9ee4-b406690db5ed",
+      "result_id": "7eaf424e-7d42-4a41-a934-7bb8f7beb4a6"
+    },
+    {
+      "claim_id": "cf26959c-43e9-4b49-a765-fd6b67c8c1d8",
+      "result_id": "7eaf424e-7d42-4a41-a934-7bb8f7beb4a6"
+    },
+    {
+      "claim_id": "954b4a66-5c26-4b5a-a524-bfffb152a256",
+      "result_id": "7eaf424e-7d42-4a41-a934-7bb8f7beb4a6"
+    },
+    {
+      "claim_id": "19c0ca01-8cbd-4934-bda5-007d46c5e0ae",
+      "result_id": "7eaf424e-7d42-4a41-a934-7bb8f7beb4a6"
+    },
+    {
+      "claim_id": "9c67c5c2-1572-4970-881a-c7397cd5cee0",
+      "result_id": "7eaf424e-7d42-4a41-a934-7bb8f7beb4a6"
+    },
+    {
+      "claim_id": "7a5bbe82-ba23-4fd4-a59b-bc605885199a",
+      "result_id": "7eaf424e-7d42-4a41-a934-7bb8f7beb4a6"
+    },
+    {
+      "claim_id": "9158f1f1-0757-49bf-8e88-ab88c950518d",
+      "result_id": "7eaf424e-7d42-4a41-a934-7bb8f7beb4a6"
+    },
+    {
+      "claim_id": "f596deba-bbe9-481a-ae59-dccab2dc2528",
+      "result_id": "6484624a-d9e0-414c-8401-4339c50fa8df"
+    },
+    {
+      "claim_id": "860615b9-feed-4e42-8ab2-02d99a63af40",
+      "result_id": "bd1ed279-f63a-4d67-a3a0-8f240c4fa697"
+    },
+    {
+      "claim_id": "b3cd4cdb-ff6e-4496-899e-1b3f614753d5",
+      "result_id": "bd1ed279-f63a-4d67-a3a0-8f240c4fa697"
+    },
+    {
+      "claim_id": "c6776bed-64c2-411f-b581-88437a2bc604",
+      "result_id": "bd1ed279-f63a-4d67-a3a0-8f240c4fa697"
+    },
+    {
+      "claim_id": "27425d63-3433-40a6-b399-a1bf4b02d6fa",
+      "result_id": "bd1ed279-f63a-4d67-a3a0-8f240c4fa697"
+    },
+    {
+      "claim_id": "06100910-51aa-4d29-bedc-659f1f68fd4f",
+      "result_id": "bd1ed279-f63a-4d67-a3a0-8f240c4fa697"
+    },
+    {
+      "claim_id": "5f43b38b-4f3e-4ff3-8d76-d675f7efd6e7",
+      "result_id": "bd1ed279-f63a-4d67-a3a0-8f240c4fa697"
+    },
+    {
+      "claim_id": "c90ef107-c616-47f1-a396-873c45dd43d4",
+      "result_id": "e61e0148-a92c-4296-8552-807154b135b9"
+    },
+    {
+      "claim_id": "1ea01279-8d35-492e-b853-0e00ba05cc2f",
+      "result_id": "e61e0148-a92c-4296-8552-807154b135b9"
+    },
+    {
+      "claim_id": "42869808-9520-40dc-aeb3-22dc16825ec3",
+      "result_id": "e61e0148-a92c-4296-8552-807154b135b9"
+    },
+    {
+      "claim_id": "84115555-7db4-42bc-9d2a-500680d617c9",
+      "result_id": "e61e0148-a92c-4296-8552-807154b135b9"
+    },
+    {
+      "claim_id": "62c7f04c-9e18-4e86-9afd-0f35468adbb8",
+      "result_id": "e61e0148-a92c-4296-8552-807154b135b9"
+    },
+    {
+      "claim_id": "a3bd8d09-9101-41ac-9d69-df52167127fc",
+      "result_id": "e61e0148-a92c-4296-8552-807154b135b9"
+    },
+    {
+      "claim_id": "cb1a6695-5e7c-4845-8c87-323e679cc151",
+      "result_id": "c8d8bbc7-fcca-4acc-b6f6-414afa14e72c"
+    },
+    {
+      "claim_id": "1bbaa8b6-6443-488a-803a-526e5387f350",
+      "result_id": "c8d8bbc7-fcca-4acc-b6f6-414afa14e72c"
+    },
+    {
+      "claim_id": "40064724-92ae-49de-ab88-0e4723d55c74",
+      "result_id": "3934ab03-3141-4be3-8322-41850d58fd9e"
+    },
+    {
+      "claim_id": "91c00235-06bd-4da1-86f8-5ee4b911cf3b",
+      "result_id": "3934ab03-3141-4be3-8322-41850d58fd9e"
+    },
+    {
+      "claim_id": "684241b4-5fc7-4bdb-a0eb-7d719e7d9961",
+      "result_id": "54d300b0-a16d-4b66-834b-2a3647e97914"
+    },
+    {
+      "claim_id": "32f4bd71-4572-436b-b64f-fd0611b1a4cb",
+      "result_id": "54d300b0-a16d-4b66-834b-2a3647e97914"
+    },
+    {
+      "claim_id": "39c7786b-d9ea-4aef-a834-da9c959e0f53",
+      "result_id": "54d300b0-a16d-4b66-834b-2a3647e97914"
+    },
+    {
+      "claim_id": "d90f154b-b518-4b1e-8ea1-bae2678142fa",
+      "result_id": "54d300b0-a16d-4b66-834b-2a3647e97914"
+    },
+    {
+      "claim_id": "27a723bd-09df-4bf4-931c-7d0fe4dd7472",
+      "result_id": "54d300b0-a16d-4b66-834b-2a3647e97914"
+    },
+    {
+      "claim_id": "c22726db-2345-4167-a68d-91b0e2316c8a",
+      "result_id": "0d90c2e5-31c9-4dd9-8632-e734f7906dd9"
+    },
+    {
+      "claim_id": "ece64e85-90c6-4ff2-a388-da34661f6222",
+      "result_id": "0d90c2e5-31c9-4dd9-8632-e734f7906dd9"
+    },
+    {
+      "claim_id": "ba4e23f4-9fcd-47c3-912b-2e16ddc78ee7",
+      "result_id": "0d90c2e5-31c9-4dd9-8632-e734f7906dd9"
+    },
+    {
+      "claim_id": "4792d135-26a2-4f02-ba97-e4edcabc0611",
+      "result_id": "0d90c2e5-31c9-4dd9-8632-e734f7906dd9"
+    },
+    {
+      "claim_id": "da6e7896-0725-454a-b292-608081c1f196",
+      "result_id": "0d90c2e5-31c9-4dd9-8632-e734f7906dd9"
+    },
+    {
+      "claim_id": "988ba69f-2750-4aae-b2a8-01c8cc1c2b29",
+      "result_id": "481d6731-d297-47ef-ad70-e4e1bcc053e2"
+    },
+    {
+      "claim_id": "b1986a1c-b521-4caf-b4c5-f7b55f23ef33",
+      "result_id": "481d6731-d297-47ef-ad70-e4e1bcc053e2"
+    },
+    {
+      "claim_id": "1e0af370-ce87-4b8c-a003-b606b3ce3ee8",
+      "result_id": "481d6731-d297-47ef-ad70-e4e1bcc053e2"
+    },
+    {
+      "claim_id": "59f09482-1d88-4639-a9ad-1d3f455710aa",
+      "result_id": "481d6731-d297-47ef-ad70-e4e1bcc053e2"
+    },
+    {
+      "claim_id": "adccfcfc-c69d-4948-a7d5-3a95e6b8bbbb",
+      "result_id": "481d6731-d297-47ef-ad70-e4e1bcc053e2"
+    },
+    {
+      "claim_id": "bfffc526-56a4-4dcf-8014-a85de1cf08ae",
+      "result_id": "481d6731-d297-47ef-ad70-e4e1bcc053e2"
+    },
+    {
+      "claim_id": "b286bab3-8db1-4254-9969-71b2a0fc8af9",
+      "result_id": "481d6731-d297-47ef-ad70-e4e1bcc053e2"
+    },
+    {
+      "claim_id": "425de0ad-55b8-4943-a0c0-d4818b93b7ea",
+      "result_id": "481d6731-d297-47ef-ad70-e4e1bcc053e2"
+    },
+    {
+      "claim_id": "4a167260-4785-4716-80bc-25993bdc020e",
+      "result_id": "481d6731-d297-47ef-ad70-e4e1bcc053e2"
+    },
+    {
+      "claim_id": "844d77f2-31e8-44f2-90a8-006dc9962983",
+      "result_id": "481d6731-d297-47ef-ad70-e4e1bcc053e2"
+    },
+    {
+      "claim_id": "dc665017-b6c9-4a02-8b58-471efccc698b",
+      "result_id": "481d6731-d297-47ef-ad70-e4e1bcc053e2"
+    },
+    {
+      "claim_id": "f7df5d47-532c-4fc0-88f7-e0ba91a4cd4d",
+      "result_id": "481d6731-d297-47ef-ad70-e4e1bcc053e2"
+    },
+    {
+      "claim_id": "6e47601d-b754-4172-8036-fa3d69bc1f63",
+      "result_id": "481d6731-d297-47ef-ad70-e4e1bcc053e2"
+    },
+    {
+      "claim_id": "859c5e67-1927-487c-8ba0-1ece9dcb4730",
+      "result_id": "481d6731-d297-47ef-ad70-e4e1bcc053e2"
+    },
+    {
+      "claim_id": "6cf284fc-b8d6-4c16-9986-c72fe4d5478a",
+      "result_id": "481d6731-d297-47ef-ad70-e4e1bcc053e2"
+    },
+    {
+      "claim_id": "d3e8d083-f2b0-429b-aebd-6c3fba6d4c2c",
+      "result_id": "481d6731-d297-47ef-ad70-e4e1bcc053e2"
+    },
+    {
+      "claim_id": "d2a578f8-ae64-4650-ab23-272edc15d195",
+      "result_id": "481d6731-d297-47ef-ad70-e4e1bcc053e2"
+    },
+    {
+      "claim_id": "1ce5f6b9-2b2e-4f6e-bc21-76ebd05b57b8",
+      "result_id": "481d6731-d297-47ef-ad70-e4e1bcc053e2"
+    },
+    {
+      "claim_id": "024be2ee-37a8-4977-8c97-632f7f00433a",
+      "result_id": "481d6731-d297-47ef-ad70-e4e1bcc053e2"
+    },
+    {
+      "claim_id": "ef4c098c-1b5d-4edd-aeab-a60016f4cfd2",
+      "result_id": "481d6731-d297-47ef-ad70-e4e1bcc053e2"
+    },
+    {
+      "claim_id": "887f9f12-3143-4988-8f8a-a15525a29827",
+      "result_id": "481d6731-d297-47ef-ad70-e4e1bcc053e2"
+    },
+    {
+      "claim_id": "1620a66d-1956-48a9-b09a-4629fecff6af",
+      "result_id": "481d6731-d297-47ef-ad70-e4e1bcc053e2"
+    },
+    {
+      "claim_id": "27ce9c1d-e8f6-4d02-a330-06ba8d008f7d",
+      "result_id": "481d6731-d297-47ef-ad70-e4e1bcc053e2"
+    },
+    {
+      "claim_id": "085213c5-2e65-451b-ad35-45921ec6aea6",
+      "result_id": "481d6731-d297-47ef-ad70-e4e1bcc053e2"
+    },
+    {
+      "claim_id": "a894e65d-ae8e-464a-ba13-a072c97daa76",
+      "result_id": "481d6731-d297-47ef-ad70-e4e1bcc053e2"
+    },
+    {
+      "claim_id": "2f4527c5-e073-4761-9cc4-711dfa86d7d5",
+      "result_id": "481d6731-d297-47ef-ad70-e4e1bcc053e2"
+    },
+    {
+      "claim_id": "0f18ec84-30d5-4cfe-af82-0614007ca739",
+      "result_id": "481d6731-d297-47ef-ad70-e4e1bcc053e2"
+    },
+    {
+      "claim_id": "bc1ace0b-3520-4ea5-9b20-49e93b48f0b0",
+      "result_id": "481d6731-d297-47ef-ad70-e4e1bcc053e2"
+    },
+    {
+      "claim_id": "ad0f1435-bb55-4a84-b360-064b960d9688",
+      "result_id": "481d6731-d297-47ef-ad70-e4e1bcc053e2"
+    },
+    {
+      "claim_id": "cb4fbdf2-0b62-4063-8a58-fef204d0d82c",
+      "result_id": "481d6731-d297-47ef-ad70-e4e1bcc053e2"
+    },
+    {
+      "claim_id": "18c22bc5-5bca-4ccb-866c-8b0a04501c18",
+      "result_id": "481d6731-d297-47ef-ad70-e4e1bcc053e2"
+    },
+    {
+      "claim_id": "974beb81-8265-439f-869a-ecf043957e9e",
+      "result_id": "481d6731-d297-47ef-ad70-e4e1bcc053e2"
+    },
+    {
+      "claim_id": "676fd939-5b17-4e36-91bb-770b1b04ed59",
+      "result_id": "481d6731-d297-47ef-ad70-e4e1bcc053e2"
+    }
+  ],
+  "comparisons": []
+}

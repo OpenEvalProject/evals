@@ -1,0 +1,539 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "Current databases contain hundreds of millions of human single-nucleotide variants, but only ~2% of amino acid replacement variants have been clinically interpreted, with ~80% of those classified as variants of uncertain significance, representing a major interpretative bottleneck for human genomics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4 are well-supported by citations (Fayer et al., 2021; Starita et al., 2017) and Figure 1. These are factual statements about the current state of variant databases and interpretation. C5 logically follows as an inference about the field's challenges. The statistics are specific and appropriately referenced.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "MAVEs experimentally assess variant effects at scale by saturating genes/regulatory regions with variants and measuring functional consequences, enabling interpretation of variants of uncertain significance. Integration of MAVE data has led to reinterpretation of ~70% of VUS in TP53, ~50% in BRCA1, and ~15% in PTEN.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C10 describe established MAVE methodology with appropriate citations (Esposito et al., 2019; Findlay, 2021; etc.). Claims C11-C13 provide specific quantitative outcomes from Fayer et al., 2021. Claims C14-C15 about widespread deployment are supported by multiple citations. The reinterpretation percentages are concrete data points from cited work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "MAVEs have not been extended to structural variation, copy number variation in repetitive DNA, and other large complex variants, which are likely numerous and highly impactful, requiring new experimental and computational approaches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C18 accurately describe current limitations of MAVE technology with appropriate citations supporting the importance of these variant types (Manolio et al., 2009; Miller et al., 2021; etc.). This is a fair assessment of the field's current state and gaps.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Existing MAVEs generally do not account for genetic, environmental, or tissue/developmental context, which is essential for fully characterizing variant effects. This lack of context constrains understanding of how variants interact with genetic background, affect non-cell-autonomous phenotypes, and alter organismal phenotype in interplay with environmental factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C23 provide a well-reasoned critique of current MAVE limitations, supported by citation (Claussnitzer and Susztak, 2021) and Figure 2. These are logical inferences about what current cell-based assays cannot capture. The assessment is fair and well-established in the field.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Disease onset, severity, and incidence vary widely among carriers of disease-associated variants, particularly for GWAS variants which explain little heritability and have limited predictive power. This 'missing heritability' and variable expressivity are commonly attributed to uncharacterized non-additive genetic interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C29 describe well-established phenomena in human genetics with appropriate citations (Eichler et al., 2010; Gibson, 2012; Khera et al., 2018; Manolio et al., 2009). The missing heritability problem is a recognized challenge in the field, and the attribution to epistasis is a common hypothesis supported by the literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Epistasis describes non-additive genetic interactions where combined effects deviate from the sum of individual effects. While its importance for complex traits is debated and difficult to quantify genome-wide, model organism research has identified many examples, and accounting for epistasis can improve phenotype predictions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C37 provide a balanced overview of epistasis research with extensive citations spanning foundational work (Fisher, 1919) to recent studies. The claims acknowledge both evidence for epistasis (C33-C34, C36-C37) and ongoing debates/limitations (C31-C32), which is appropriate for a review. The citations support both the existence of epistasis and its potential utility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "The Omnigenic model proposes that complex diseases arise through additive action of many regulatory variants, with 'core genes' carrying small-effect variants contributing little to heritability, while bulk heritability comes from numerous 'peripheral' variants affecting core gene expression. This model, while not universally accepted, offers an explanation for missing heritability and is supported by recent empirical studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C45 accurately describe the Omnigenic model framework with appropriate context. The claims acknowledge the model is not universally accepted (C43, with citations to critiques) while noting empirical support (C45, with citations to Sinnott-Armstrong et al., 2021; Smith et al., 2022). This balanced presentation is appropriate for a review article.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Systematic study of compound heterozygotes and combinations of GWAS variants with rare variants in the same locus represents a promising approach for understanding variant effects in genetic context. While executing pairwise variant experiments will require technological innovation, such systematic evaluation will yield actionable clinical information.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C46-C48 describe established knowledge about compound heterozygotes. However, C49-C52 are largely speculative proposals about future experiments. While the logic is sound, these are untested hypotheses. C52's claim about yielding 'actionable information' is speculative without experimental validation. The technical challenges (C51) are acknowledged but solutions are not demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Experimentally addressing complex genetic interactions will require sophisticated technological innovations and novel data analysis methods. Proposed approaches include introducing variant libraries into diverse cell lines, cells with programmed perturbations, or whole animals, though these face formidable challenges. Experimental efforts must be paired with innovative theoretical studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C53-C59 are primarily speculative proposals (C54, C56, C57, C58) with acknowledged challenges (C53, C55). While the proposals are logical and build on existing technologies, they represent future directions rather than demonstrated capabilities. C59 is a reasonable recommendation but not a testable result. These are thoughtful suggestions but lack experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C66",
+      "C69"
+    ],
+    "result": "Computational approaches combining variant effect maps with polygenic risk scores, biobank data, and GWAS stratification could identify genetic modifiers and improve understanding of epistatic effects at individual genes, though experimental validation is needed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C60-C62 and C66 propose computational approaches with some supporting citations (Schiabor Barrett et al., 2022; Tabet et al., 2022; Lehner et al., 2006; Queitsch et al., 2012). However, these are largely speculative proposals rather than demonstrated results. C69 acknowledges the anticipated value is speculative. While the approaches are reasonable, they require implementation and validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "The major histocompatibility complex (MHC) is a known genetic modifier locus that encodes cell surface proteins essential for adaptive immunity. Different MHC alleles display different sets of variant peptides, offering avenues for MHC variation to alter penetrance and expressivity of many other variants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C64 describe established knowledge about MHC function. C65 is a logical inference based on known MHC biology about how allelic variation could affect other variants' effects. This is well-reasoned speculation grounded in established immunology, though direct experimental evidence for widespread modifier effects would strengthen the claim.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C67",
+      "C68"
+    ],
+    "result": "There is limited evidence for dominance in human genotype-phenotype mapping and epistasis remains difficult to quantify genome-wide.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C68 accurately describe current limitations in the field. These are fair assessments of the state of evidence and technical challenges in human genetics, consistent with the literature cited throughout the manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Variants more often exert tissue-specific and developmental stage-specific effects rather than affecting all cell types uniformly. Examples include BRCA1/2 variants conferring increased risk for specific cancer types, and LMNA variants causing different diseases (cardiomyopathy, muscular dystrophy, lipodystrophy, or progeria).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C76 describe well-established phenomena in genetics with appropriate citations (Welcsh and King, 2001; Immonen et al., 2017; Kurian and Hayflick, 2013; Novelli and D'Apice, 2003). The examples of BRCA1/2 and LMNA are well-documented cases of tissue-specific and pleiotropic variant effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Regulatory variants can have pleiotropic effects on tissue specificity because enhancers can activate multiple genes. While recent approaches have improved linking regulatory variants to target genes, this remains an area of ongoing work. Numerous studies have applied MAVE technologies to regulatory regions using similar assumptions as coding variant MAVEs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C81 provide an accurate assessment of regulatory variant research with appropriate citations (Hu and Tee, 2017; Andersson et al., 2014; Dey et al., 2022; etc.). C80 is supported by multiple citations to studies applying MAVEs to regulatory regions. The acknowledgment of ongoing challenges (C79) is appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Most MAVEs have been executed in cell lines with simple phenotypes, but recent efforts have demonstrated potential for investigating complex phenotypes like cell morphology and transcriptional programs. While disentangling phenotypic relationships is challenging due to pleiotropy, MAVEs can determine the full spectrum of allele-specific effects on scalable phenotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C86 accurately describe current MAVE applications and recent advances. C84 is supported by multiple citations to recent studies (Hasle et al., 2020; Martin-Rufino et al., 2023; etc.). The acknowledgment of challenges (C82, C85) balanced with capabilities (C86) provides a fair assessment of the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Researchers have begun exploring iPSC-derived differentiated cells and primary cells for variant effect mapping. While MAVEs in iPSCs are in their infancy due to genome engineering challenges, combining primary cell approaches with base/prime editing could enable characterization of large variant libraries in correct cellular context, as demonstrated by proof-of-principle studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C91 describe emerging approaches with appropriate citations (Bajpai et al., 2021; Lv et al., 2018; Claussnitzer et al., 2015; Shifrut et al., 2018; Erwood et al., 2022; Hanna et al., 2021; Martin-Rufino et al., 2023). While some claims are speculative (C89-C90), C91 provides evidence of proof-of-principle work. The assessment of current limitations (C88) is fair.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Primary cell approaches require knowing the correct cell type(s) for phenotypes of interest. While this information is often unavailable, deriving cell type-disease associations is the subject of ongoing work, and recent computational methods have enabled accurate in silico estimation of cell types of action.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C94 accurately describe a key challenge and emerging solutions. C93 and C94 are supported by citations to ongoing work (Tabet et al., 2022; Jones et al., 2022; Jagadeesh et al., 2022; Yu et al., 2022). This provides a balanced view of limitations and progress.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Even differentiated cells do not recapitulate cell-cell interactions or developmental complexity. Organoids, especially patient-derived, offer a possible solution for modeling various tissues, though challenges remain in developing genome engineering approaches that yield large sets of clonal organoids while accounting for phenotypic variation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C98 provide a fair assessment of organoid approaches with appropriate citations (Dorrity et al., 2022; Saunders et al., 2022; Hendriks et al., 2021; Meng et al., 2022; Sockell et al., 2022). The acknowledgment of both potential (C97) and challenges (C98) is balanced and supported by the literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Model organisms have proven useful for probing tissue and developmental effects of variants. Pairing model organism approaches with single-cell transcriptomics is particularly powerful, as demonstrated by a zebrafish study investigating 23 genetic perturbations affecting cell lineage development, which detected perturbation-dependent effects on cell type composition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C102 describe established utility and requirements for model organism studies. Claims C103-C105 are supported by citation to Saunders et al., 2022, which provides concrete evidence of the approach's power. This is a good example of citing specific prior work to support the potential of a methodology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "Single-cell genomics could theoretically be applied to large numbers of animals to determine variant consequences on multiple phenotypes. However, enabling MAVEs in whole animals requires new technology to introduce variant libraries into germlines such that each genome contains one variant present in many animals. C. elegans, D. melanogaster, and D. rerio are suitable models, but successfully implementing this remains a formidable, unsolved challenge.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C106 is speculative about potential applications. Claims C107-C112 accurately describe technical challenges and identify suitable model organisms based on their characteristics. However, C112 explicitly states this is an 'unsolved challenge,' indicating these are proposals rather than demonstrated capabilities. The reasoning is sound but lacks experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "Environmental context plays a large role in variant penetrance and expressivity, particularly for common diseases whose incidence has risen sharply in recent decades. Since human genetics hasn't fundamentally changed in 50 years, changing environmental context (altered pathogen exposure, dietary shifts, environmental stress) has either altered genetic contributions or shifted liability thresholds for these disorders.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C119 describe well-established phenomena with appropriate citations (Bingley and Gale, 1989; Cockram, 2000; Ebrahim et al., 2010; etc.). C114 provides specific data on disease incidence trends. C115 is established knowledge about human evolution timescales. C116 is a logical inference from C114-C115. C117-C119 describe documented environmental changes. The reasoning is sound and well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C120",
+      "C121"
+    ],
+    "result": "The authors posit that environmental context is more crucial than genetic or developmental context for understanding variant penetrance and expressivity, though environment is also the hardest context to fully define and measure in the laboratory.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C120 is explicitly speculative ('we posit') and represents the authors' opinion rather than demonstrated fact. While C121 about measurement difficulty is reasonable, C120's assertion about relative importance lacks direct supporting evidence. This is a hypothesis that would require systematic comparison across contexts to validate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "The TEDDY study followed ~9000 children with high-risk type 1 diabetes alleles for 15 years, collecting extensive clinical and omics data. Challenges included 26% participant dropout and only ~300 children developing diabetes, limiting power to detect gene-environment interactions. Published results suggest little effect of many environmental factors (breastfeeding, antibiotics, vaccinations, maternal exposures) while reporting evidence for infection as a risk factor and vitamin D/probiotics as possible interventions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122-C133 accurately describe the TEDDY study design, challenges, and findings with appropriate citations (Johnson et al., 2011, 2014; Hummel et al., 2021; Kemppainen et al., 2017; etc.). This provides a concrete example of the difficulties in studying gene-environment interactions in humans. The specific statistics and findings are supported by the cited publications.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138"
+    ],
+    "result": "Large human studies of gene-environment interactions hold promise when combined with experimental variant effect maps. Dense variant effect maps could be supplemented with human phenotype data, accounting for genetic background through sibling studies, kinship analyses, or polygenic risk scores. Increasing GWAS size and sophistication make this approach feasible, though it may be insufficient for traits with large epistatic components.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C134-C138 propose computational approaches with some methodological support (Mostafavi et al., 2020). While the logic is sound and builds on existing methods, these are largely speculative proposals about combining data types. C137 acknowledges feasibility based on current GWAS resources, but C138 notes important limitations. These are reasonable proposals requiring implementation and validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145"
+    ],
+    "result": "Large sibling and twin cohorts may aid in deciphering gene-environment interaction effect sizes. Since relatives share genome and environment to varying degrees, increasing disease concordance would be expected for relatives carrying variants associated with moderate/low disease risk. Family and migration studies, combined with direct modeling approaches and quasi-experimental methods, can help isolate gene-environment effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C139-C145 propose analytical approaches with some methodological citations (Lea et al., 2023; Kerin and Marchini, 2020; etc.). C140 states established knowledge, but C139, C141-C142 are speculative about what family studies 'may' reveal. C143-C145 cite methodological papers but don't demonstrate application to variant effect maps. These are reasonable proposals but lack demonstrated results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153"
+    ],
+    "result": "Efforts to determine gene-environment interactions with MAVEs are nascent. MTHFR provides an example where variant effects depend on environmental context (folate levels). MTHFR deficiency ranges from severe (homocysteine accumulation) to mild (thromboembolism) to very mild (Ala222Val variant causing neural tube defect risk remediated by dietary folate). This dependency on folate levels was captured for nearly every MTHFR missense variant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C146-C153 provide a concrete example of gene-environment interaction studies. C146 accurately describes the nascent state of the field. C147-C152 describe well-established knowledge about MTHFR. C153 is supported by citation to Weile et al., 2021, which provides experimental evidence. This is a good example of demonstrated gene-environment interaction mapping.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159"
+    ],
+    "result": "Other examples of accounting for environmental context include evaluating transcription factor variants under proteotoxic stress. However, none of these examples captures the full complexity of environmental context, as only a few variables were altered individually. While relevant environmental factors can be incorporated for some genes like MTHFR, even for MTHFR, interactions with riboflavin and broader variant combinations remain unexplored.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C154-C159 provide additional examples with citations (Dorrity et al., 2018; Morton et al., 2020; Jarrett et al., 2022; McNulty et al., 2006) while honestly acknowledging limitations (C155, C159). This balanced assessment of what has been done and what remains to be explored is appropriate for a review article.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C160",
+      "C161",
+      "C162",
+      "C163"
+    ],
+    "result": "The authors propose focusing on three broad categories of environmental factors: those altering metabolism, causing abiotic stress, and challenging the immune system. These can be modeled in the laboratory with increasing difficulty and studied individually and in combination. Combinatorial studies are essential as responses to individual perturbations are often not predictive of responses to combinations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C160-C161 propose a framework for organizing environmental perturbations, which is reasonable but speculative. C162 is supported by citation to work on combinatorial perturbations (Ammeux et al., 2016) in model organisms. C163 is a speculative proposal. While the framework is logical, it represents a proposed approach rather than demonstrated results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C164",
+      "C165",
+      "C166",
+      "C167"
+    ],
+    "result": "Internal cellular conditions can be manipulated to study variant effects. Approaches include inducing mistranslation across the proteome, manipulating splicing/protein folding/turnover/mitochondrial function to mimic aging effects, and pharmacological perturbation of cellular processes to alter cell-cell interactions and understand intra-organismal effects of variants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C164-C167 propose experimental approaches with some supporting citations (Billman, 2020; Berg et al., 2019; Cozma et al., 2022; Johnson et al., 1999; Leutert et al., 2023). While the cited technologies exist, their application to systematic variant effect mapping is largely speculative. These are reasonable proposals but lack demonstrated implementation for the proposed purpose.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C168",
+      "C169",
+      "C170",
+      "C171",
+      "C172",
+      "C173"
+    ],
+    "result": "Quantifying gene-environment effects on organismal traits requires considering variant effects on gene function, consequences for cellular function within the organism, and environmental exposures. Gene-environment interactions affect traits at multiple levels (genes, cells, tissues, organisms). Under simplifying assumptions, variant effects can be separated into variant-to-gene and gene-to-trait components. Incorporating environmental context makes models more complex but more reflective of biology and predictive. MAVE-derived data will enable systematic disentanglement of these contributions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C168-C173 propose a modeling framework building on Mostafavi et al., 2022 (C171). While the conceptual framework is logical and well-reasoned, claims about what MAVEs 'will make possible' (C173) and models being 'more predictive' (C172) are speculative. The framework requires implementation and validation to demonstrate these claimed benefits.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C174",
+      "C175",
+      "C176",
+      "C177",
+      "C178",
+      "C179",
+      "C180",
+      "C181"
+    ],
+    "result": "The authors argue that MAVEs in genetic, developmental, and environmental contexts will enable systematic characterization of context importance for variant effects and identification of context-sensitive variants. As complex-phenotype MAVEs are deployed, mechanistic insights will be gathered at scale. While current variant-to-function analyses are laborious, conducting MAVEs in context offers promise of scale and systematic analysis. Contextual MAVE data will enable machine learning/AI approaches to infer variant-specific mechanisms, informing individualized disease risk predictions and facilitating prevention and treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C174-C181 represent the authors' vision for future applications. While C174 states established knowledge and C178 accurately describes current limitations (with citations), claims about what contextual MAVEs 'will' enable (C175-C177, C180-C181) are speculative. These are aspirational goals rather than demonstrated capabilities. The logic is sound but requires extensive future work to validate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R32",
+    "claim_ids": [
+      "C182",
+      "C183",
+      "C184",
+      "C185"
+    ],
+    "result": "A key question is which genes/regulatory regions should be prioritized for MAVEs in context. A simple answer is focusing on genes with many VUS that are actionable with existing treatments, but this would exclude many GWAS variants where context likely matters most. Understanding complex common diseases will require experimentalists and theoreticians to innovate strategies for studying variants at genome scale in multiple contexts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C182-C185 provide a thoughtful discussion of prioritization challenges. C183 proposes a simple strategy, C184 identifies its limitations, and C185 calls for collaborative innovation. This is appropriate reasoning for a perspective article, acknowledging trade-offs in prioritization strategies. The logic is sound even though specific prioritization criteria remain to be determined.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,323 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C44",
+      "C46",
+      "C47",
+      "C48",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Novel pathogen introduction triggers rapid evolutionary emergence (within ~100 generations) of distinct coexisting social movement strategies (agent-avoiding, handler-tracking, agent-tracking) that differ in how they trade social information benefits against infection risk. These strategies show increased importance of social cues and substantial individual variation in social information use.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, C44, C46-C48, and C91-C94 collectively demonstrate rapid evolutionary transitions in social movement strategies following pathogen introduction, supported by model simulation data shown in Figures 2A-B. The coexistence of distinct strategies with different trade-offs between social information and infection risk is well-documented through multiple lines of evidence from the individual-based model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C49",
+      "C52",
+      "C58",
+      "C59"
+    ],
+    "result": "Pathogen-risk-adapted populations exhibit increased movement (from 52% to 62% of lifetime) and substantially reduced social associations (fivefold decrease in encounters) compared to pathogen-risk-naive ancestors, with populations becoming more spatially dispersed across the landscape.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C6, C49, C52, C58, and C59 are supported by simulation data shown in Figures 2C, 2E, and 4A-B. The quantitative changes in movement and associations are clearly documented, and the spatial distribution changes are visualized in network diagrams. These represent emergent population-level consequences of individual strategy evolution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C7",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C103"
+    ],
+    "result": "Reduced social associations in pathogen-risk-adapted populations decrease disease spread. Initial infection rates of ~75% drop to below 50% within 100 generations. Network epidemiological models show adapted populations are more resilient to multiple-encounter infections (~50% infected) compared to naive populations (>75% infected), suggesting decreased sociality could slow transmission of future novel pathogens.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C63-C66, and C103 are supported by simulation data (Figure 5A-B) and network epidemiological modeling results. The reduction in infection prevalence is clearly demonstrated, and the network models provide independent validation that evolved social structures reduce disease transmission. The inference about future pathogens (C103) is reasonable given the demonstrated network resilience.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C105",
+      "C106",
+      "C107",
+      "C109"
+    ],
+    "result": "In scenario 2 with vertical transmission, host evolution toward reduced sociality can eliminate pathogens from populations, followed by rapid recovery of social strategies. Pathogen elimination depends on infection cost and vertical transmission probability, with elimination more common at higher costs and lower vertical transmission. Single introduction events can lead to pathogen persistence across generations or rapid elimination depending on evolutionary dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C9 and C71-C77, C105-C107, C109 are supported by scenario 2 simulation results shown in Figure 7A-B. The model demonstrates divergent outcomes (persistence vs. elimination) across replicates and parameter combinations. The rapid recovery of social strategies after pathogen elimination is clearly shown. The parameter dependencies (infection cost, vertical transmission probability) are systematically explored and documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "The three coexisting social movement strategies show distinct behavioral trade-offs: agent-avoiding individuals move more but have lower intake than handler-tracking or agent-tracking individuals, yet all three strategies achieve comparable net energy and equivalent fitness. Movement and associations show a quadratic relationship, with agent-avoiding individuals having lower infection rates (~25%) than handler-tracking individuals (~33%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C57 are supported by detailed strategy-specific analyses shown in Figure 3A-E. The data clearly demonstrate the movement-intake-infection trade-offs that allow coexistence of the three strategies. The fitness equivalence (C55) is expected given coexistence and is supported by Figure 3C. The quadratic movement-association relationship and differential infection rates provide mechanistic explanation for strategy coexistence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C61",
+      "C62"
+    ],
+    "result": "The model produces superspreading dynamics, with individual reproductive number distributions that are strongly left-skewed but have long right-hand tails. Most infected individuals infect no neighbors, but a small number are responsible for disproportionately large numbers of secondary infections (up to 12), consistent with the phenomenological definition of superspreading.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C62 are supported by data shown in Figure 4D and comparison to the established definition of superspreading from Lloyd-Smith et al. 2005. The distribution characteristics are clearly documented and persist even after population adaptation. This demonstrates that superspreading emerges from the spatial-social dynamics of the model without being explicitly programmed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C100",
+      "C70",
+      "C97"
+    ],
+    "result": "Infection cost affects which social movement strategies evolve, with higher costs (\u03b4E = 0.5) leading to greater agent avoidance and lower costs (\u03b4E = 0.1) allowing handler-tracking persistence. Surprisingly, landscape productivity (R) does not strongly influence the evolution of social movement strategies, though it may be important when movement is inherently costly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100, C70, and C97 are supported by systematic parameter exploration shown in Figure 6. The effect of infection cost is clearly demonstrated across multiple productivity levels. The lack of productivity effect (C70, C97) is surprising but well-documented, with appropriate caveats about potential importance under different conditions. The authors acknowledge this unexpected result and provide reasonable speculation about when productivity might matter.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C99"
+    ],
+    "result": "Landscape spatial structure influences pre-introduction social movement strategies (uniform landscapes favor handler-tracking, patchy landscapes favor agent-tracking), but pathogen introduction results in convergence to similar mixtures of handler-tracking and agent-avoiding strategies across different spatial structures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C88 and C99 are supported by simulations across different landscape structures shown in Figure 10A-B. The pre-introduction differences are clearly documented and mechanistically explained. The post-introduction convergence is a novel finding that suggests evolutionary responses to pathogens may override spatial structure effects. This has implications for understanding disease spread across heterogeneous landscapes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C89",
+      "C104"
+    ],
+    "result": "Sporadic pathogen introductions (once every few generations) do not cause evolutionary shifts in social movement strategies, with handler-tracking remaining the dominant strategy across parameter combinations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89 and C104 are supported by simulations with probabilistic pathogen introduction shown in Figure 11. The lack of evolutionary response to sporadic introductions is clearly demonstrated across different spillover rates and infection costs. This finding highlights the importance of sustained pathogen pressure for evolutionary change and provides context for the main scenario 1 results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C81"
+    ],
+    "result": "The model is broadly robust to implementing large-scale natal dispersal, with evolutionary outcomes very similar to those with small-scale natal dispersal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C81 is supported by simulations with large-scale dispersal (SD=10) shown in Figure 9A. The robustness check demonstrates that the main findings are not dependent on local adaptation through ecological inheritance, strengthening the generality of the results. This addresses a potential criticism about the biological realism of local dispersal assumptions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C50",
+      "C51"
+    ],
+    "result": "The evolutionary shift in social movement strategies does not reduce mean per-capita intake, but there is a sharp drop in mean per-capita energy due to infection costs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C51 are supported by data in Figure 2D showing intake remains stable (green line) while net energy drops substantially (purple line) after pathogen introduction. This surprising result demonstrates that increased movement and reduced associations do not compromise foraging success, but infection costs still reduce fitness. The mechanism appears to be that reduced competition offsets any foraging disadvantages of avoidance strategies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C60"
+    ],
+    "result": "Pre-introduction individuals encounter somewhat more unique neighbors than pathogen-risk-adapted individuals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C60 is supported by degree distribution data shown in Figure 4C. The difference in network structure between pre- and post-introduction populations is clearly documented. This provides additional characterization of how social network structure changes with pathogen adaptation, complementing the association frequency data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C90",
+      "C113"
+    ],
+    "result": "The mechanistic combination of ecological, evolutionary, and epidemiological dynamics in a spatial setting is unprecedented for host movement-disease models and demonstrates the importance of considering evolutionary responses in movement-disease studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90 and C113 are supported by comparison to prior work (citations to White et al., Manlove et al.) and the demonstrated novel integration of spatial movement, evolutionary dynamics, and disease transmission. The model's capabilities and insights justify the claim of novelty. However, the claim of being \"unprecedented\" is strong and relies on the authors' knowledge of the literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C101",
+      "C102"
+    ],
+    "result": "Animal populations may adapt relatively quickly to pathogen spillover even without detecting infected individuals, and population-level behavioral changes can occur without mortality effects due to evolutionary shifts in sociality alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C102 are supported by model results showing rapid adaptation without explicit infection detection mechanisms and behavioral changes driven by selection on movement strategies rather than mortality. These are reasonable inferences from the model, though they represent predictions about natural systems rather than direct observations. The model assumes non-lethal pathogens, which is appropriate for the stated goal.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C108",
+      "C110"
+    ],
+    "result": "Novel pathogens should become established readily in species with greater parent-offspring social associations, and pathogen extirpation may lead to unexpected increases in sociality and potentially novel social behaviors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C108 and C110 are inferences from model results (scenario 2 and pathogen elimination dynamics) but represent predictions about natural systems that extend beyond what the model directly demonstrates. C108 is qualified with appropriate caveats about counteracting behaviors. C110 is speculative about consequences of pathogen range shifts. These are reasonable hypotheses generated by the model but would require empirical validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C10",
+      "C11",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C32"
+    ],
+    "result": "Background claims about animal sociality, disease transmission, and theoretical expectations establish the context and motivation for the study, including that sociality emerges from cost-benefit trade-offs, that pathogens transmit through social contacts, and that pathogen introduction is expected to select against sociality.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C10-C11, C16-C28, and C32 are background claims supported by extensive citations to prior empirical and theoretical work. These establish the scientific context and justify the research questions. The claims accurately represent established knowledge in the field based on the citations provided. These are not novel findings but rather the foundation for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Wildlife pathogen outbreaks affect most animal taxa and are primarily studied for immediate demographic, medical, and economic implications rather than evolutionary consequences, with most introductions only detected during mass mortality events.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C15 and C29-C31 are supported by citations to empirical studies of wildlife disease across taxa. These claims establish the practical importance and current gaps in understanding of wildlife disease, motivating the need for evolutionary perspectives. The characterization of the field's focus is based on literature review and is reasonable given the citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Existing analytical and network models have limitations in capturing individual variation, spatial dynamics, and evolutionary consequences of disease, while individual-based models can address these gaps but have lacked evolutionary components.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C41 are supported by citations to prior modeling work and accurately characterize limitations of different modeling approaches. These claims justify the methodological choices in the current study. The characterization of IBMs lacking evolutionary components (C41) is supported by citations and identifies the gap the current work fills.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C111",
+      "C112"
+    ],
+    "result": "The model makes general assumptions for broad applicability, and while pathogen evolution is not included (a necessary simplification), the framework could be expanded for specific real-world scenarios. Rapid decreases in social interactions raise concerns about erosion of animal culture.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C96 and C111-C112 are methodological justifications and discussions of model scope. C95 is a reasonable inference about implications for animal culture supported by citations. C96 and C111 acknowledge modeling limitations with appropriate justification. C112 discusses future applications. These are appropriate framing of the model's scope and limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C114"
+    ],
+    "result": "The model implements individuals that move and forage on a landscape with patchily distributed food items, selecting movement directions based on inherited preferences for environmental cues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C114 is a basic description of the model structure supported by Figure 1 and the Methods section. This is a straightforward methodological description that accurately represents the model implementation. The model structure is clearly documented and visualized.",
+    "result_type": "MINOR"
+  }
+]

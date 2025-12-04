@@ -1,0 +1,1966 @@
+{
+  "submission": {
+    "id": "d5399da8-e841-47f5-9073-1b18aec6f6f1",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-04T02:18:21.214565Z",
+    "updated_at": "2025-12-04T02:18:21.214565Z"
+  },
+  "content": [
+    {
+      "id": "2940c0c4-5eba-40de-a1a2-5e8f4c3cb507",
+      "submission_id": "d5399da8-e841-47f5-9073-1b18aec6f6f1",
+      "content_type": "manuscript",
+      "content_text": "# The ER folding sensor UGGT1 acts on TAPBPR-chaperoned peptide-free MHC I\n\n## Authors\n\n- Lina Sagert<sup>1</sup>\n- Christian Winter<sup>1</sup>\n- Ina Ruppert<sup>1</sup> ([ORCID: 0000-0002-0448-2815](https://orcid.org/0000-0002-0448-2815))\n- Maximilian Zehetmaier<sup>1</sup>\n- Christoph Thomas<sup>1</sup> ([ORCID: 0000-0001-7441-1089](https://orcid.org/0000-0001-7441-1089))\n- Robert Tamp\u00e9<sup>1</sup> ([ORCID: 0000-0002-0403-2160](https://orcid.org/0000-0002-0403-2160)) \u2020\n\n### Affiliations\n\n1. Institute of Biochemistry, Biocenter, Goethe University Frankfurt Frankfurt am Main Germany ([ROR:04cvxnb49](https://ror.org/04cvxnb49))\n\n\u2020 Corresponding author\n\n## Abstract\n\nAdaptive immune responses are triggered by antigenic peptides presented on major histocompatibility complex class I (MHC I) at the surface of pathogen-infected or cancerous cells. Formation of stable peptide-MHC I complexes is facilitated by tapasin and TAPBPR, two related MHC I-specific chaperones that catalyze selective loading of suitable peptides onto MHC I in a process called peptide editing or proofreading. On their journey to the cell surface, MHC I complexes must pass a quality control step performed by UGGT1, which senses the folding status of the transiting N-linked glycoproteins in the endoplasmic reticulum (ER). UGGT1 reglucosylates non-native glycoproteins and thereby allows them to revisit the ER folding machinery. Here, we describe a reconstituted in-vitro system of purified human proteins that enabled us to delineate the function of TAPBPR during the UGGT1-catalyzed quality control and reglucosylation of MHC I. By combining glycoengineering with liquid chromatography-mass spectrometry, we show that TAPBPR promotes reglucosylation of peptide-free MHC I by UGGT1. Thus, UGGT1 cooperates with TAPBPR in fulfilling a crucial function in the quality control mechanisms of antigen processing and presentation.\n\n## Introduction\n\nThe adaptive immune system is able to detect diseased cells by scanning cell-surface-presented major histocompatibility complex class I (MHC I) molecules loaded with peptides (Blum et al., 2013; Pishesha et al., 2022; Rock et al., 2016). The peptidic ligands of these peptide-MHC I (pMHC I) complexes are primarily derived from proteasomal degradation products of cytosolic proteins and are transported into the endoplasmic reticulum (ER) by the ATP-binding cassette (ABC) transporter associated with antigen processing (TAP1/2) (Thomas and Tamp\u00e9, 2020; Thomas and Tamp\u00e9, 2021). Inside the ER, peptides can be further trimmed by aminopeptidases, in particular ERAP1/2, generating ligands of optimal length for fitting in the MHC I binding groove (Hammer et al., 2007; Hattori and Tsujimoto, 2013). The antigen transporter TAP1/2 is the central component of a dynamic supramolecular machinery called the peptide-loading complex (PLC) coordinating peptide transfer across the ER membrane with peptide loading onto MHC I inside the ER lumen (Blees et al., 2017; Trowitzsch and Tamp\u00e9, 2020). Peptide loading and optimization is facilitated by the MHC I-specific chaperones tapasin (Tsn) and TAPBPR (TAP binding protein related; Margulies et al., 2022; Thomas and Tamp\u00e9, 2021). Both Tsn and TAPBPR stabilize intrinsically unstable peptide-deficient MHC I and act as peptide editors or proofreaders by accelerating peptide exchange and selecting high-affinity peptide ligands (Boyle et al., 2013; Chen and Bouvier, 2007; Fleischmann et al., 2015; Hermann et al., 2013; Hermann et al., 2015; Morozov et al., 2016; Sagert et al., 2020; Tan et al., 2002; Wearsch and Cresswell, 2007). The affinity optimization of MHC I-associated peptides is crucial for immunosurveillance by T lymphocytes, priming of naive T cells, and T cell differentiation. The catalytic principles of peptide optimization have been revealed by crystal structures of the TAPBPR-MHC I complex (Jiang et al., 2017; Thomas and Tamp\u00e9, 2017). Insights into the interaction characteristics between Tsn and peptide-receptive MHC I have been gained by structures of Tsn-ERp57-H2-Db (M\u00fcller et al., 2022) and Tsn-HLA-B*44:05 (Jiang et al., 2022), respectively. While Tsn is a key constituent of the PLC, TAPBPR functions outside the PLC and downstream of Tsn in the secretory pathway, even beyond the ER in the Golgi compartment (Boyle et al., 2013).\n\nAs glycoproteins consisting of a highly polymorphic, N-glycosylated heavy chain and the invariant light chain \u03b22-microglobulin (\u03b22m), MHC I complexes are also subject to quality control by the calnexin/calreticulin cycle in which the major glycoprotein folding sensor UDP-glucose:glycoprotein glucosyltransferase 1 (UGGT1) fulfills a crucial role (Wearsch et al., 2011; Zhang et al., 2011): The two outermost glucose residues of the core N-glycan Glc3Man9GlcNAc2, which is co-translationally transferred to a conserved asparagine of the nascent MHC I heavy chain, are sequentially cleaved off by \u03b1-glucosidase I and II (GluI/II), and the resulting mono-glucosylated dodecasaccharide (Glc1Man9GlcNAc2) is specifically recognized by the scaffolding lectin-like ER chaperones calnexin and calreticulin. The latter escorts MHC I to the PLC for peptide loading. Once pMHC I complexes are no longer protected by calreticulin, GluII can cleave off the terminal glucose (Domnick et al., 2022). Those pMHC I complexes that have acquired optimal peptides via the PLC or in a PLC-independent fashion and have adopted their native fold when their last glucose residue is removed, can exit the ER and travel via the Golgi apparatus to the cell surface where they are scanned by T cell receptors (TCRs) on cytotoxic T cells and natural killer (NK) cell receptors. However, the Man9GlcNAc2 glycan of MHC I complexes that are suboptimally loaded or empty and partially misfolded is recognized and reglucosylated by UGGT1, allowing the newly formed mono-glucosylated MHC I species to be re-engaged by calnexin or calreticulin and given another chance to acquire a suitable peptide, for example, by revisiting the PLC (Wearsch et al., 2011; Zhang et al., 2011).\n\nMost interestingly, the UGGT1-mediated quality control of MHC I has recently been shown to be directly promoted by the peptide editor TAPBPR, based on a combination of immunoprecipitation experiments from cell lysates and mass spectrometry (Neerincx et al., 2017). Here, we aimed to characterize the cooperation and allosteric crosstalk between UGGT1 and TAPBPR in the quality control of human MHC I, using purified components under defined reaction conditions. We describe an in-vitro reglucosylation assay that is based on a combination of protein glycoengineering and top-down liquid chromatography-mass spectrometry (LC-MS) that enabled us to show that TAPBPR is both necessary and sufficient to mediate reglucosylation of the human MHC I allomorph HLA-A*68:02 by UGGT1. We demonstrate a direct interaction between TAPBPR-MHC I and UGGT1 using purified human proteins. Our findings corroborate the notion that TAPBPR unmediatedly aids UGGT1 in reglucosylating peptide-deficient MHC I, thereby affecting the maturation and quality control of MHC I in antigen processing and presentation beyond its peptide selector function.\n\n## Results\n\n### Design of an in-vitro system of UGGT1-catalyzed quality control\n\nTo investigate the role of TAPBPR in the UGGT1-catalyzed quality control of MHC I, we developed an in-vitro reglucosylation system consisting of human UGGT1 and peptide-receptive MHC I-TAPBPR complexes containing the ER-lumenal domains of TAPBPR and the MHC I allomorph HLA-A*68:02. HLA-A*68:02 is a favored client of TAPBPR (Boyle et al., 2013). The conditions of this experimental system mimicked the peptide-depleted physiological environments TAPBPR is operating in. Constructs for co-expression and secretion of TAPBPR and HLA-A*68:02 from HEK293-F cells were designed as previously described (O\u2019Rourke et al., 2019). In short, HLA-A*68:02 was expressed as a fusion between \u03b22m and heavy chain, with a cleavable C-terminal Fos leucine zipper domain (Figure 1A), whereas the TAPBPR construct contained a cleavable C-terminal Jun leucine zipper domain and a Twin-Strep-tag (Figure 1A). Co-expression of MHC I with TAPBPR was carried out in the presence of the alkaloid kifunensine to obtain the HLA-A*68:02 species carrying at Asn86 the Man9GlcNAc2 glycan that is recognized by UGGT1 (Figure 1B). Kifunensine is an \u03b1-mannosidase I inhibitor that arrests glycan processing primarily at the Man9GlcNAc2 stage (Chang et al., 2007; Elbein, 1991). We examined different kifunensine concentrations to optimize the proportion of Man9GlcNAc2 among the Man7-9GlcNAc2 MHC I glycan species, as determined by LC-MS. The highest yield of Man9GlcNAc2 was achieved with 10 \u00b5M kifunensine, while increasing the concentration to 20 \u00b5M did not improve the yield (Figure 1\u2014figure supplement 1). After Strep-Tactin affinity purification and Tobacco etch virus (TEV) protease cleavage, the peptide-receptive HLA-A*68:02-TAPBPR complex eluted as monodisperse sample at the expected size of 90 kDa during size-exclusion chromatography (SEC) (Figure 1C). His-tagged human UGGT1 was co-expressed and secreted from insect cells with its binding partner Sep15 (15 kDa selenoprotein), which has been shown to enhance UGGT1 activity (Takeda et al., 2014). The UGGT1-Sep15 complex (hereafter referred to simply as UGGT1) was purified from the cell culture supernatant by immobilized-metal affinity chromatography (IMAC) via the C-terminal histidine tag of the UGGT1 construct (Figure 1D and Figure 1\u2014figure supplement 2). In addition to full-length UGGT1, we detected small amounts of a degradation product at ~37 kDa by SDS-PAGE and immunoblotting, representing the C-terminal catalytic glucosyltransferase domain, in line with previous observations (Guerin and Parodi, 2003; Figure 1D and Figure 1\u2014figure supplement 2A). To analyze UGGT1-mediated quality control of MHC I in our in-vitro reglucosylation assay, we started the reaction by adding purified UGGT1 together with UDP-glucose in Ca2+-containing buffer to the purified peptide-receptive HLA-A*68:02-TAPBPR complex (Figure 1E). LC-MS analysis allowed us to monitor the progress of the reglucosylation reaction on the TAPBPR-chaperoned HLA-A*68:02.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/85432/elife-85432-fig1-v2.jpg)\n\n**Figure 1.:** (A) Construct design to obtain peptide-receptive HLA-A*68:02-TAPBPR complexes by transient co-transfection of HEK293-F cells. (B) Co-expression of HLA-A*68:02 and TAPBPR was performed in the presence of the \u03b1-mannosidase I inhibitor kifunensine to generate a defined Man9GlcNAc2 glycan tree on the MHC I that can be recognized by UGGT1. (C) The secreted leucine zippered complex was isolated from the cell culture supernatant by Strep-Tactin affinity purification. Leucine zippers and the Twin-Strep-tag of TAPBPR were removed by protease treatment. The MHC I-chaperone complexes were further analyzed and purified by size exclusion chromatography (SEC) on a Superdex 200 (Increase 10/300) column. (D) SDS-PAGE analysis of immobilized metal-affinity chromatography (IMAC)-purified human wildtype (wt) UGGT1 co-expressed with Sep15 and secreted from insect cells. The asterisk (*) indicates a degradation product of UGGT1. (E) The purified UGGT1-Sep15 complex was employed in the reglucosylation assay with the peptide-receptive HLA-A*68:02-TAPBPR complex of (C) harboring the high-mannose glycan on MHC I. Abbreviations: A280: absorption at 280 nm; aa: amino acids; kDa: kilodalton; mAU: milli-absorption units; MHC I hc: MHC I heavy chain; sp: signal peptide; UDP-Glc: UDP-glucose; V0: void volume.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/85432/elife-85432-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** The glycan status of TAPBPR-bound HLA-A*68:02 was analyzed by LC-MS after expression in presence of various concentrations of kifunensine. Proportion of Man9GlcNAc2 was calculated based on the total glycan intensity (Man7-9GlcNAc2). Data represent mean \u00b1 SEM (n=2) from two independent protein expressions and purifications.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/85432/elife-85432-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) Anti-UGGT1 immunoblot analysis after immobilized metal-affinity chromatography (IMAC) purification of wildtype (wt) human UGGT1 co-expressed with Sep15 and secreted from insect cells. The asterisks (*) indicate degradation products of UGGT1. (B) Compositional analysis of purified UGGT1wt-Sep15 by liquid chromatography-mass spectrometry (LC-MS) (deconvoluted spectrum). The voltages and desolvation temperature were adjusted for optimal ionization of the 15 kDa protein Sep15, precluding simultaneous efficient ionization of the 175 kDa protein UGGT1 within the same measurement. (C) Non-reducing SDS-PAGE analysis of the catalytically inactive UGGT1D1316N mutant expressed in HEK293-F cells and purified by IMAC.\n\n### UGGT1 catalyzes the reglucosylation of TAPBPR-bound HLA-A*68:02\n\nOur reglucosylation assay allowed us to investigate the activity of UGGT1 towards TAPBPR-bound HLA-A*68:02 harboring the Man9GlcNAc2 glycan. UGGT1 exhibited clear UDP-glucose-dependent glucosyltransferase activity towards Man9GlcNAc2-HLA-A*68:02-TAPBPR, as judged by the appearance of the peak corresponding to the HLA-A*68:02-linked mono-glucosylated Glc1Man9GlcNAc2 glycan species in the mass spectra (Figure 2A\u2013C). The D1316N mutant of UGGT1, in which the first aspartate of the Ca2+-coordinating DxD motif in the catalytic site (Roversi et al., 2017) is mutated, was inactive (Figure 2D). Activity of mutant UGGT1D1316N could not be restored by adding 5 \u00b5M purified Sep15 (Figure 2D). Interestingly, UGGT1-catalyzed reglucosylation reactions in general reached saturation at ~80% product formation (Figure 2E). This saturation could be overcome neither by raising the temperature (Figure 2F) nor by increasing the enzyme concentration (Figure 2\u2014figure supplement 1).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/85432/elife-85432-fig2-v2.jpg)\n\n**Figure 2.:** Protein identities in the reconstituted glucosylation system and the glycan status of HLA-A*68:02 (Man7-9GlcNAc2 and Glc1Man9GlcNAc2) during the UGGT1-catalyzed reglucosylation reaction were determined by liquid chromatography-mass spectrometry (LC-MS). (A) Deconvoluted mass spectrum of TAPBPR. (B) HLA-A*68:02-TAPBPR (3 \u00b5M) complex was incubated with UGGT1 (1 \u00b5M) in the absence (-) and (C) presence (+) of UDP-glucose (UDP-Glc) for 1 h at room temperature. In the presence of UDP-Glc, UGGT1 catalyzed the glucose transfer, generating the mono-glucosylated glycan (Glc1Man9GlcNAc2), whereas the native glycan pattern remained unchanged in the absence of UDP-Glc. Exemplary deconvoluted mass spectra of glycosylated HLA-A*68:02 representing LC-MS analyses summarized in (D) are shown. (D) Comparison of glucosyltransferase activity, as measured by the amount of produced Glc1Man9GlcNAc2-HLA-A*68:02, upon incubating HLA-A*68:02-TAPBPR (3 \u00b5M) with UGGT1 proteins (1 \u00b5M) in the absence (-) and presence (+) of UDP-Glc and additional purified Sep15 (5 \u00b5M), respectively. Data represent mean \u00b1 SD (n=3) and (n=2), respectively. (E) Kinetics of reglucosylation of HLA-A*68:02-TAPBPR (3 \u00b5M) catalyzed by UGGT1 (1 \u00b5M). (F) Temperature dependence of UGGT1-catalyzed reglucosylation of HLA-A*68:02-TAPBPR (3 \u00b5M). Reactions were stopped after 60 min. Data represent mean \u00b1 SEM (n=2). Abbreviations: Da: dalton; Glc: glucose; GlcNAc: N-acetylglucosamine; Hex: hexose; Man: mannose; Mcalc: calculated mass; Mobs: observed mass.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/85432/elife-85432-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Dependence of Man9GlcNAc2-HLA-A*68:02-TAPBPR (3 \u00b5M) reglucosylation kinetics on UGGT1 concentration. Reactions were stopped after 10 min by adding EGTA (25 mM). Data represent mean \u00b1 SEM (n=2).\n\n### TAPBPR is indispensable for UGGT1-catalyzed reglucosylation of HLA-A*68:02\n\nAfter having verified that our UGGT1 preparation is active towards the TAPBPR-chaperoned HLA-A*68:02 in its peptide-receptive state, we wondered whether the MHC I must be chaperoned by TAPBPR in order to be recognized as a substrate by UGGT1. Moreover, we wanted to scrutinize the importance of the peptide-loading status of the MHC I for the UGGT1-catalyzed reglucosylation reaction. To this end, we loaded HLA-A*68:02 with a photo-cleavable peptide by incubating the purified HLA-A*68:02-TAPBPR complex overnight with a 250-fold molar excess of the peptide (Figure 3A). Binding of high-affinity peptide leads to TAPBPR dissociation, allowing the peptide-loaded Man9GlcNAc2-HLA-A*68:02 to be isolated by size-exclusion chromatography (SEC; Figure 3A and B). The peptide-deficient state of the MHC I was generated by photo-cleavage of the bound peptide and dissociation of the resulting low-affinity peptide fragments. The peptide-loading status of pMHC I and empty MHC I was confirmed by LC-MS (Figure 3C and Figure 3\u2014figure supplement 1). Additionally, the generated peptide-free Man9GlcNAc2-HLA-A*68:02 was shown to bind the conformation-specific antibody W6/32, demonstrating that the peptide-receptive MHC I remain stable throughout the experiment (Figure 3\u2014figure supplement 2). Most strikingly, neither the peptide-loaded nor the peptide-deficient HLA-A*68:02 were reglucosylated by UGGT1 in the absence of TAPBPR (Figure 3D\u2013F), but we were able to restore UGGT1 activity towards peptide-deficient HLA-A*68:02 by adding TAPBPR (Figure 3F). Moreover, loading of a low-affinity (suboptimal) peptide onto the peptide-receptive MHC I could not restore the susceptibility of UGGT1 (Figure 3\u2014figure supplement 3), further emphasizing the critical role of TAPBPR. These results demonstrate that the MHC I-specific chaperone TAPBPR is an essential mediator in the UGGT1-catalyzed reglucosylation of the human MHC I allomorph HLA-A*68:02.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/85432/elife-85432-fig3-v2.jpg)\n\n**Figure 3.:** (A) Schematic representation of loading a photo-cleavable peptide onto Man9GlcNAc2-HLA-A*68:02 via pre-assembled MHC I-TAPBPR complexes. Peptide binding results in TAPBPR dissociation, permitting isolation of photo-conditional pMHC I complexes. (B) Non-reducing SDS-PAGE analysis of SEC-isolated pMHC I. (C) Isotope-resolved raw mass spectrum of the double-charged photo-cleavable peptide ETVSKQSJ*V (J*, 3-amino-3-(2-nitrophenyl)-propanoic acid) bound to HLA-A*68:02 before (black) and after (violet) UV illumination at 365 nm. (D) Reglucosylation experiment of peptide-loaded and (E) peptide-free HLA-A*68:02 (1 \u00b5M) in the absence of TAPBPR. Man9GlcNAc2-HLA-A*68:02 devoid of peptide was produced by photo-cleavage and release of peptide fragments prior to incubation with UGGT1 (600 nM). Shown are representative LC-MS analyses of data depicted in F. (F) Reglucosylation activity of UGGT1 (600 nM) towards TAPBPR-bound HLA-A*68:02 (1 \u00b5M), peptide-bound HLA-A*68:02 (pMHC I, 1 \u00b5M), and UV-illuminated HLA-A*68:02 lacking peptide (1 \u00b5M). If TAPBPR (6 \u00b5M) is added back to peptide-deficient MHC I (1 \u00b5M), recognition of MHC I as a substrate by UGGT1 is restored. The amount of produced Glc1Man9GlcNAc2 glycan was determined after 60 min for all reactions. Data represent mean \u00b1 SEM (n=3). Abbreviations: calc.: calculated; Da: dalton; kDa: kilodalton; SEC: size-exclusion chromatography.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/85432/elife-85432-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** This bar diagram quantifies the SEC-MS measurements in Figure 3C of bound peptide before (grey) and after UV exposure (purple). The N- and C-terminal peptide fragments generated by UV exposure are released from the MHC I peptide-binding groove. Data represent mean \u00b1 SEM (n=3).\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/85432/elife-85432-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** The binding of the W6/32 antibody (2 \u00b5M) to (A) peptide-loaded HLA-A*68:02 (1 \u00b5M) and (B) peptide-free UV-illuminated HLA-A*68:02 (1 \u00b5M) as analyzed by UPLC-SEC. (C) UV-illuminated, peptide-free HLA-A*68:02 (1 \u00b5M) was incubated for 60 min at 21 \u00b0C prior to incubation with W6/32 (2 \u00b5M) and UPLC-SEC analysis. SEC profiles of 1 \u00b5M pMHC I and 2 \u00b5M W6/32, respectively, are shown as dashed lines for all UPLC-SEC runs.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/85432/elife-85432-fig3-figsupp3-v2.jpg)\n\n**Figure 3\u2014figure supplement 3.:** Reglucosylation activity of UGGT1 (600 nM) towards TAPBPR-bound HLA-A*68:02 (1 \u03bcM) and MHC I (1 \u00b5M) loaded with low-affinity peptide. Pre-incubation of the UV-illuminated HLA-A*68:02 (1 \u03bcM) with various concentrations of low-affinity peptide could not restore the reglucosylation activity. The original data for HLA-A*68:02-TAPBPR are depicted in Figure 3 and are shown here for comparison. Data represent mean \u00b1 SEM (n=2/3).\n\n### Cys97 of TAPBPR is not required for interaction with UGGT1\n\nThe ER-lumenal part of the peptide proofreader TAPBPR consists of an N-terminal composite domain composed of coalesced seven-stranded \u03b2 barrel and immunoglobulin (Ig)-like (V type) folds, and a C-terminal IgC1 domain (Jiang et al., 2017; Thomas and Tamp\u00e9, 2017; Figure 4A). TAPBPR contacts the peptide-receptive MHC I client through a large concave surface of its N-terminal composite domain, which interacts mainly with the \u03b12\u20131-helix region of the MHC I, and via interfaces of its C-terminal IgC1 domain with \u03b22m and the \u03b13 domain of the MHC I heavy chain (Jiang et al., 2017; Thomas and Tamp\u00e9, 2017). Of the seven cysteines in the ER-lumenal portion of TAPBPR, four are involved in two disulfide bridges in the N-terminal domain, and two form a disulfide bond in the C-terminal domain (Jiang et al., 2017; Thomas and Tamp\u00e9, 2017; Figure 4A). The seventh cysteine residue, C97, is surface-exposed and located opposite to the concave surface in the N-terminal domain (Thomas and Tamp\u00e9, 2017; Figure 4A). Mutating C97 to alanine was shown to have no effect on the catalytic activity of TAPBPR (Neerincx et al., 2017). With respect to UGGT1 binding, C97 is not engaged in an intermolecular disulfide bond with UGGT1, but seems necessary for the interaction with UGGT1 in immunoprecipitates (Neerincx et al., 2017). In addition, HeLaM cells expressing TAPBPRC97A instead of TAPBPRwt displayed an altered peptide repertoire with a decrease in canonical anchor residues for HLA-A*68:02 and an increasing amount of peptide-deficient HLA-A*68:02 (Neerincx et al., 2017).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/85432/elife-85432-fig4-v2.jpg)\n\n**Figure 4.:** (A) Cartoon representation of the MHC I-TAPBPR complex (PDB ID: 5opi). Disulfide bridges in TAPBPR and C97, which was mutated to alanine, are shown as sticks and highlighted in yellow. The glycosylated N86 (depicted as sticks) of the MHC I heavy chain (hc) lies in the vicinity of C97. (B) UGGT1wt-catalyzed (1 \u00b5M) reglucosylation of Man9GlcNAc2-HLA-A*68:02 bound to TAPBPRwt (3 \u00b5M) or TAPBPRC97A (3 \u00b5M). Data represent mean \u00b1 SD (n=3 and 4). Statistical analysis was performed using unpaired t-test. Asterisks indicate the level of significance (p-values): **p\u22640.01. (C) Pull-down experiment with UGGT1wt (3 \u00b5M, present in each lane) using Twin-Strep-tagged Man9GlcNAc2-HLA-A*68:02-TAPBPR complexes (5 \u00b5M) captured on Strep-Tactin Sepharose. (D) Ca2+ (green sphere) coordination in the active site of the Thermomyces dupontii UGGT glucosyltransferase domain (PDB ID: 5h18). The side chain of the corresponding aspartate residue that has been mutated to asparagine in human UGGT1D1316N (see panel (F)) is shown in red. The red sphere represents a water molecule that occupies one of the coordination sites. (E) Pull-down experiment with UGGT1wt (5 \u00b5M) and the catalytically inactive mutant UGGT1D1316N (5 \u00b5M) using Twin-Strep-tagged Man9GlcNAc2-HLA-A*68:02-TAPBPRwt complex (3 \u00b5M) in the presence of 5 mM CaCl2. Eluates of the pull-down experiments were analyzed by SDS-PAGE (12.5%, non-reducing, Coomassie-stained). (F) Ca2+ dependence of UGGT1wt (3 \u00b5M) binding to Man9GlcNAc2-HLA-A*68:02-TAPBPRwt (5 \u00b5M) was analyzed in presence (+) and absence (-) of EGTA. The asterisk (*) indicates a degradation product of UGGT1, representing the glycosyltransferase domain. The data are representative of two independent experiments. Abbreviation: kDa: kilodalton. The numbering of TAPBPR refers to the mature protein as defined by N-terminal sequencing (Zhang and Henzel, 2004).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/85432/elife-85432-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) The peptide content of tethered MHC IFos-TAPBPRJun complexes (3 \u00b5M) after pre-incubation with a 250-fold molar excess of low- or high-affinity peptides was analyzed by LC-MS. Neither high-affinity nor low-affinity peptides can bind to tethered MHC I-chaperone complexes containing wildtype (wt) or C97A TAPBPR. (B) Isotope-resolved raw spectrum of the double-charged mass of the high-affinity ETVSKQSJ*V peptide as shown in A.\n\nTo explore the role of C97 in our in-vitro system of TAPBPR-mediated quality control of MHC I by UGGT1, we tested Man9GlcNAc2-HLA-A*68:02 bound to the TAPBPRC97A mutant for reglucosylation. To our surprise, UGGT1 exhibited consistently and significantly higher reglucosylation activity towards the mutant MHC I-TAPBPRC97A complex than towards the wildtype complex (Figure 4B). To exclude that the effect is caused by potentially pre-bound peptides of the purified MHC I-TAPBPR complexes, we analyzed the peptide-binding competence of the tethered complexes. Unless the Jun-Fos zippers have been removed, neither low- nor high-affinity peptides could bind to the complexes (Figure 4\u2014figure supplement 1), verifying that the observed differences in reglucosylation are not caused by different peptides. Furthermore, in a pull-down experiment with UGGT1 (3 \u00b5M) using Man9GlcNAc2-HLA-A*68:02 bound to Twin-Strep-tagged TAPBPR (5 \u00b5M) and captured on Strep-Tactin Sepharose, we observed that the interaction between UGGT1 and HLA-A*68:02-TAPBPR was not affected by the C97A mutation (Figure 4C). We also noticed that in the eluate of this pull-down experiment, the degradation product at ~37 kDa representing the C-terminal catalytic glucosyltransferase domain of UGGT1 was not present, indicating that the interface of UGGT1 with HLA-A*68:02-TAPBPR extends beyond the glucosyltransferase domain (Figure 4C, asterisk).\n\nUGGT1 requires calcium ions for its glucosyltransferase activity (Trombetta and Parodi, 1992). Ca2+ is coordinated by the DxD motif in the catalytic site that is typical of most A-type glycosyltransferases (Lairson et al., 2008; Roversi et al., 2017; Satoh et al., 2017; Figure 4D). The interaction with the Man9GlcNAc2-MHC I-TAPBPR complex was not affected by the active-site mutation in UGGT1D1316N which disrupts the Ca2+-coordinating DxD motif (Figure 4E). To test whether Ca2+ influences the interaction between UGGT1 and Man9GlcNAc2-MHC I-TAPBPR in the absence of the donor substrate UDP-glucose, we performed the Strep-Tactin-based pull-down experiment in the absence and presence of the Ca2+ chelator EGTA. We found no difference in the amount of UGGT1 that was pulled down by HLA-A*68:02-TAPBPR between the two different conditions (Figure 4F), suggesting that the binding of UGGT1 to TAPBPR-associated Man9GlcNAc2-HLA-A*68:02 is Ca2+-independent.\n\n## Discussion\n\nUGGT1 is a pivotal component of the multi-chaperone machinery constituting the ER quality-control network in eukaryotes. The physiological significance of this enzyme is illustrated by the fact that deletion of its gene in mice is embryonically lethal (Molinari et al., 2005). UGGT1 functions as the major eukaryotic glycoprotein folding sensor and gatekeeper in the calnexin/calreticulin cycle, preventing deglucosylated, non-natively folded N-glycosylated proteins from leaving the ER (Adams et al., 2020; Caramelo and Parodi, 2015). Gaining insights into how UGGT1 recognizes its client proteins and feeds them back into the cycle of the lectin-like scaffolding chaperones calnexin and calreticulin is therefore of fundamental importance for a deeper understanding of cellular proteostasis. The catalytic activity of UGGT1 has so far been studied by employing a small set of specially prepared model substrates (Ritter and Helenius, 2000; Ritter et al., 2005), glycopeptides (Taylor et al., 2003), or synthetic substrates (Kiuchi et al., 2018; Totani et al., 2005; Totani et al., 2009).\n\nHere, we designed an experimental in-vitro approach to investigate UGGT1-catalyzed quality control and reglucosylation of MHC I, a physiological client of outstanding importance in human biology. Our strategy utilizes protein glycoengineering in human cells, taking advantage of the \u03b1-mannosidase I inhibitor kifunensine to generate Man9GlcNAc2-MHC I molecules. This approach is combined with LC-MS, which allows the UGGT1-catalyzed glucosylation reaction to be monitored (Figure 1). Using our reglucosylation system, we were able to successfully reconstruct the cellular process of UGGT1-mediated quality control of MHC I in-vitro with purified protein components (Figure 2). Under the chosen conditions, the UGGT1-catalyzed conversion of Man9GlcNAc2-MHC I to Glc1Man9GlcNAc2-MHC I reached saturation at about 80%, similar to previous observations with rat UGGT (Totani et al., 2005), and could not be increased by higher temperatures or higher enzyme concentrations (Figure 2D\u2013F). Importantly, when analyzing the glucosylation reaction in the absence of TAPBPR on the isolated pMHC I charged with a high-affinity, photo-cleavable peptide, we observed no activity (Figure 3D). This is in agreement with the expectation that the quality-control sensor UGGT1 does not act on MHC I clients that are already loaded with optimal peptide cargo. This result highlights the ability of our reglucosylation assay to faithfully reconstruct in-vivo events of ER quality control. Most interestingly, when we converted the high-affinity peptide into dissociating low-affinity fragments by UV illumination, essentially generating a peptide-deficient, \u2018frustrated\u2019 MHC I which should meet the criteria of a bona-fide UGGT1 substrate, there was still no reglucosylation by UGGT1 detectable (Figure 3E). Only the addition of TAPBPR could restore UGGT1-catalyzed reglucosylation (Figure 3F). These findings demonstrate that TAPBPR is an essential mediator in the reglucosylation of HLA-A*68:02 by UGGT1. The strict dependence of UGGT1 on TAPBPR in acting towards HLA-A*68:02 is most likely not valid for all MHC I allomorphs, since the various allomorphs differ in their reliance on TAPBPR as a peptide editor. Indeed, experimental evidence suggests that UGGT1 can operate on MHC I in a TAPBPR-independent manner (Neerincx et al., 2017), and it appears that UGGT1 interacts with most HC10-reactive MHC I allomorphs independent of TAPBPR, whereas the binding of W6/32-reactive MHC I allomorphs is TAPBPR-dependent (Neerincx et al., 2017). Notably, previous studies reported a preferred glucosylation by Drosophila UGGT1 towards the human allomorph HLA-B*08:01 when loaded with suboptimal peptides (Wearsch et al., 2011; Zhang et al., 2011). However, both studies applied MHC I complexes expressed in insect cells but glycan modification and a potential role of TAPBPR were not further addressed. In addition, it has been demonstrated that HLA-B*08:01 displays no detectable interaction with human TAPBPR and thus, it seems likely that UGGT1 can act on some MHC I allomorphs in a TAPBPR-independent manner (Ilca et al., 2019; Sun et al., 2023). The strategic approach applied in this study combines protein glycoengineering in human cells with LC-MS analysis, providing the major advantage of a fully defined glycan pattern on HLA-A*68:02 which allowed us to monitor the UGGT1-catalyzed reglucosylation in detail.\n\nThe importance of C97, the sole free cysteine in TAPBPR, for the interaction with UGGT1 is called into question by our data. While a previous study concluded that C97 is essential for the association between TAPBPR and UGGT1 (Neerincx et al., 2017), we found that the mutation of C97 to alanine affected neither the catalyzed reglucosylation of MHC I-TAPBPRC97A nor the interaction with the glucosyltransferase (Figure 4B and C). According to one of the TAPBPR-MHC I crystal structures (Thomas and Tamp\u00e9, 2017), C97 is an exposed surface residue positioned opposite the concave surface in the N-terminal domain that engulfs the \u03b12\u20131 region of the MHC I, relatively close to the glycosylated N86 in the MHC I (C\u03b1-C\u03b1 distance: 23.5 \u00c5; Figure 4A). While we do not exclude that C97 is part of the interface with UGGT1, we have no experimental evidence that its mutation has any negative effects on complex formation.\n\nDespite Ca2+ being an essential cofactor for UGGT1 to function as a catalyst of the glucosyl transfer reaction, we reveal that the metal ion is not required for the recognition of Man9GlcNAc2-MHC I-TAPBPR as substrate. Neither the mutation of the Ca2+-coordinating DxD sequence motif in UGGT1 nor the presence of the Ca2+ chelator EGTA changed the binding of the glucosyltransferase to Man9GlcNAc2-MHC I-TAPBPR (Figure 4E and F).\n\nTaken together, the data we present here add to our current picture of MHC I quality control inside the ER, where UGGT1 and TAPBPR emerge as team players, with TAPBPR tracking down and stabilizing empty or suboptimally loaded MHC I complexes. For those MHC I complexes that have been deglucosylated by GluII and cannot be loaded with optimal peptide due to scarcity of suitable cargo, TAPBPR acts as a mediator for UGGT1-catalyzed reglucosylation. This appears to apply to at least a large subset of HLA-A allomorphs, many of which obtain their peptide in a Tsn-independent manner (Greenwood et al., 1994). Thus, the TAPBPR-UGGT1 complex promotes recycling of immature MHC I to the Glc1Man9GlcNAc2-specific calnexin/calreticulin cycle and/or to the second peptide editor tapasin inside the PLC via calreticulin (Neerincx et al., 2017; Wearsch et al., 2011). Exactly how the handover from one MHC I chaperone to the other via calreticulin is taking place is an important question and remains to be investigated.\n\nFuture studies of TAPBPR-UGGT1-mediated MHC I quality control will need to decipher the detailed molecular mechanisms of this fundamental process to understand how TAPBPR binds UGGT1 and how UGGT1 interacts with MHC I clients. Is C97 of TAPBPR involved in the interface with UGGT1, and how can the seemingly contradictory findings concerning its significance for the interaction be explained? Does UGGT1 recognize only the MHC I glycan or maybe also features of the peptide-receptive conformation adopted by the MHC when bound to TAPBPR? Answers to these questions would most likely be provided by a structure of the MHC I-TAPBPR-UGGT1 complex captured in flagranti before the reglucosylation reaction happens. In terms of functional studies, we are confident that the in-vitro system described here will help dissect the synergistic interplay between ER chaperones in shepherding and assisting immunity-related glycoproteins and the N-glycoproteome in general along their maturation pathways and in cellular proteostasis.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Gene (human)</td>\n      <td>TAPBPRwt-Jun</td>\n      <td>O\u2019Rourke et al., 2019</td>\n      <td></td>\n      <td>Lumenal region</td>\n    </tr>\n    <tr>\n      <td>Gene (human)</td>\n      <td>TAPBPRC97A-Jun</td>\n      <td>This study</td>\n      <td></td>\n      <td>Lumenal region, TAPBPR version of TAPBPRwt-Jun (see material and methods, DNA constructs)</td>\n    </tr>\n    <tr>\n      <td>Gene (human)</td>\n      <td>\u03b22m-HLA-A*68:02</td>\n      <td>O\u2019Rourke et al., 2019</td>\n      <td></td>\n      <td>Lumenal region</td>\n    </tr>\n    <tr>\n      <td>Gene (human)</td>\n      <td>UGGT1wt-Sep15</td>\n      <td>This study</td>\n      <td></td>\n      <td>See Materials and methods, DNA constructs</td>\n    </tr>\n    <tr>\n      <td>Gene (human)</td>\n      <td>UGGT1D1316N</td>\n      <td>This study</td>\n      <td></td>\n      <td>UGGT version of UGGT1wt (Dr. Pietro Roversi, Zitzmann lab, University of Oxford)</td>\n    </tr>\n    <tr>\n      <td>Gene (human)</td>\n      <td>Sep15</td>\n      <td>This study</td>\n      <td></td>\n      <td>See Materials and methods, DNA constructs</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Escherichia coli)</td>\n      <td>BL21 (DE3)</td>\n      <td>Sigma-Aldrich</td>\n      <td>CMC0014</td>\n      <td>Chemically competent</td>\n    </tr>\n    <tr>\n      <td>Cell line (Spodoptera Frugiperda)</td>\n      <td>Sf21</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>11496015</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (Human embryonic kidney)</td>\n      <td>HEK293-F</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>R79007</td>\n      <td>Routinely tested for mycoplasma contamination</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-human HLA-A/B/C (W6/32) (Mouse monoclonal)</td>\n      <td>BioLegend</td>\n      <td>Cat# 311402 RRID:AB_314871</td>\n      <td>WB (1:3000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-UGGT/UGT1 (Rabbit monoclonal)</td>\n      <td>Abcam</td>\n      <td>Cat# ab124879 RRID:AB_10971344</td>\n      <td>WB (1:3000)</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pFastBacI-gp67</td>\n      <td>PMID:2905996</td>\n      <td></td>\n      <td>Transfer vector for Bac-to-Bac system</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pcDNA3.1(+)</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>V79020</td>\n      <td>Mammalian expression vector</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pOPINGTTGneo</td>\n      <td>Dr. Pietro Roversi, Zitzmann lab, University of Oxford</td>\n      <td></td>\n      <td>Mammalian expression vector</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>ETVSKQSJ*V</td>\n      <td>Dr. Ines Katharina M\u00fcller, Tamp\u00e9 lab</td>\n      <td></td>\n      <td>J* denotes photo-cleavable amino acid, see material and methods, peptide loading onto MHC I</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>ILKCLEEPSV</td>\n      <td>This study</td>\n      <td></td>\n      <td>See Materials and methods, UGGT1-mediated reglucosylation</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>UDP-Glc</td>\n      <td>Sigma-Aldrich</td>\n      <td>U4625</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Kifunensine</td>\n      <td>BioMol</td>\n      <td>10009437</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>VPA</td>\n      <td>Merck Millipore</td>\n      <td>P4543</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Polyethyleneimine, linear</td>\n      <td>Sigma-Aldrich</td>\n      <td>765090</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>OriginPro 2022b</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Prism 10</td>\n      <td>GraphPad Software</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Unify 1.9.4.053</td>\n      <td>Walters</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Superdex 200 Increase 10/300</td>\n      <td>GE Healthcare</td>\n      <td>28990944</td>\n      <td>SEC column, see Materials and methods, Purification of MHC IFos-TAPBPRJun complexes</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Superdex 200 Increase 3.2/300</td>\n      <td>GE Healthcare</td>\n      <td>28990946</td>\n      <td>SEC column, see Materials and methods, peptide loading onto MHC I</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>UPLC Peptide BEH C18 Column</td>\n      <td>Walters</td>\n      <td>186003555</td>\n      <td>UPLC-column, see Materials and methods, LC-MS analysis</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>UPLC Protein BEH C4 Column</td>\n      <td>Walters</td>\n      <td>186008471</td>\n      <td>UPLC-column, see Materials and methods, LC-MS analysis</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>\u00c4kta Purifier</td>\n      <td>Cytiva</td>\n      <td></td>\n      <td>Protein purification</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>\u00c4kta Ettan</td>\n      <td>GE Healthcare</td>\n      <td></td>\n      <td>Protein purification</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>BioAccord LC-MS system</td>\n      <td>Walters</td>\n      <td></td>\n      <td>See Materials and methods, LC-MS analysis</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Tabacco Etch Virus</td>\n      <td>In house production</td>\n      <td></td>\n      <td>TEV protease cleavage</td>\n    </tr>\n  </tbody>\n</table>\n\n### DNA constructs\n\nThe previously described codon-optimized DNA constructs of single-chain (sc) \u03b22m-HLA-A*68:02Fos and TAPBPRJun (O\u2019Rourke et al., 2019) were ligated into pcDNA3.1. The mutant TAPBPRC97A was generated by site-directed mutagenesis using the following primers:\n\n5\u2019-TTTGCTCCACGCAGATGCCTCAGGCAAGGA-3\u2019 (forward)\n\n5\u2019-TCCTTGCCTGAGGCATCTGCGTGGAGCAAA-3\u2019 (reverse)\n\nThe numbering of TAPBPR refers to the mature protein as defined by N-terminal sequencing (Zhang and Henzel, 2004). The construct of human UGGT1wt in the pOPINTTGneo vector containing a C-terminal His6-tag was kindly provided by Dr. Pietro Roversi of the Zitzmann lab (University of Oxford). UGGT1D1316N was produced by site-direct mutagenesis using the following primers:\n\n5\u2019-TGACAAGTTCCTGTTTGTGAATGCTGATCAGATTGTACG-3\u2019 (forward)\n\n5\u2019-CGTACAATCTGATCAGCATTCACAAACAGGAACTTGTCA-3\u2019 (reverse)\n\nA customized version of the pFastBac vector containing the gp67 signal peptide was used to express human Sep15 in insect cells. For co-expression of human UGGT1 and Sep15 in insect cells, a customized version of the pFastBac Dual vector was used which contained the gp67 and melittin signal peptides. All constructs contained N-terminal signal peptides for secretion, and the selenocysteine of Sep15 was mutated to cysteine.\n\n### Cell culture and transfection of HEK293 cells\n\nHEK293-F cells were grown in FreeStyle 293 Expression Medium (Gibco) at 37 \u00b0C, 5% CO2 and shaken at 120 rpm. For co-expression of the MHC IFos and TAPBPRJun, 5 mL expression medium was supplemented with 75 \u00b5g \u03b22m-HLA-A*68:02Fos and 75 \u00b5g TAPBPRJun DNA (equimolar ratio) and mixed with a 4-fold molar excess of linear PEI (Polysciences) diluted in 5 mL expression medium. DNA used for transfection was purified using the PureYield Plasmid Midiprep System (Promega). After incubation for 30 min, the transfection mixture was added to 50 mL of HEK293-F cells at a density of 16\u00d7106 cells/mL. Cells were diluted to 3\u00d7106 cells/mL 3 hr post transfection. Protein expression was performed in the presence of 3.5 mM valproic acid (Merck Millipore) and 10 \u00b5M kifunensine (Biomol). The culture supernatant containing the secreted proteins was harvested after five days. The HsUGGT1D1316N construct was transfected into HEK293-F cells at a density of 1.6\u00d7106 cells/mL. The cell suspension was diluted to 0.8\u00d7106 cells/mL 3 hr post transfection and was further cultured for five days.\n\n### Expression of UGGT1 and Sep15 in insect cells\n\nHuman UGGT1wt-Sep15 and Sep15 were expressed in Spodoptera frugiperda (Sf21) insect cells according to standard protocols for the Bac-to-Bac system (Thermo Fisher Scientific). Sf21 cells were typically grown in Sf-900 II SFM medium (Thermo Fisher Scientific) at 29 \u00b0C, and a high-titer recombinant baculovirus stock was used to infect 2\u00d7106 cells/mL. The cell culture medium containing secreted proteins was harvested 4 days after infection.\n\n### Purification of MHC IFos-TAPBPRJun complexes\n\nThe HEK293 culture supernatant was harvested at 250\u00d7g for 10 min before adding avidin (7.5 mg/L) and adjusting to 25 mM Tris-HCl pH 8.0. Affinity chromatography was performed with Strep-Tactin Sepharose slurry (1 mL/L) (IBA Lifesciences), using 1xTris buffer (25 mM Tris-HCl pH 8.0, 100 mM NaCl) as wash buffer. The tethered complex was eluted in wash buffer supplemented with 5 mM desthiobiotin, and leucine zippers were removed by overnight digestion at 4 \u00b0C with Tobacco Etch Virus (TEV) protease. The complex was isolated by size-exclusion chromatography (SEC) (Superdex 200 Increase 10/300, GE Healthcare) in 1xHBS buffer (10 mM Hepes-NaOH pH 7.2, 150 mM NaCl) and concentrated by ultrafiltration (Amicon Ultra 50 kDa MWCO, Merck).\n\n### Purification of UGGT1 proteins and immunoblotting\n\nCulture media was harvested at 500\u00d7g for 10 min prior to dialysis (Spectra/Por 7, cellulose, 3.5 kDa MWCO, Spectrum Labs) in phosphate-buffered saline (1\u00d7PBS pH 7.6: 1.8 mM KH2PO4, 10 mM NaH2PO4, 2.7 mM KCl, 140 mM NaCl) for 3 hr at 4 \u00b0C. After dialysis overnight, the supernatant was supplemented with Ni-NTA agarose slurry (1 mL/L) for affinity chromatography and incubated at 4 \u00b0C overnight. The affinity matrix was washed in 1\u00d7PBS pH 7.6, 20 mM imidazole, 5% (v/v) glycerol and eluted in wash buffer containing 200 mM imidazole. Subsequently, the buffer was exchanged to HBS buffer (1\u00d7HBS pH 7.2, 5% (v/v) glycerol) by gel filtration (Zeba Spin Desalting column, 2 mL, Thermo Fisher). For immunoblotting, UGGT1wt-Sep15 was separated by SDS-PAGE (12.5%, non-reducing, Coomassie-stained) and transferred onto a nitrocellulose membrane. The membrane was blocked with 3% (w/v) dried milk in PBS-T (0.1% (v/v) Tween 20 in PBS) for 1 hr, followed by incubation with an anti-UGGT1 antibody (Abcam, Cat. No. 124879, dilution 1:3000) for 1 hr. The membrane was washed three times in PBS-T and incubated with the species-specific HRP-conjugated secondary antibody.\n\n### Purification of Sep15\n\nThe culture supernatant was precleared by centrifugation for 15 min at 2000\u00d7g before adding 50 mM Tris-HCl pH 8.0, 1 mM NiCl2, 5 mM CaCl2. The resulting suspension was stirred for 30 min, followed by centrifugation at 5000\u00d7g for 30 min. The supernatant was supplemented with Ni-NTA agarose slurry (1 mL/L) and incubated overnight. The affinity matrix was washed with 1\u00d7HBS supplemented with 20 mM imidazole and finally eluted in wash buffer containing 200 mM imidazole. Buffer exchange to 1xHBS and protein concentration was conducted by ultrafiltration (Amicon Ultra 10 kDa MWCO, Merck).\n\n### UGGT1-mediated reglucosylation\n\nMHC I-TAPBPR complexes (3 \u00b5M) were incubated with UGGT1 (0.2\u20136 \u00b5M) at 21 \u00b0C in 1\u00d7HBS supplemented with 200 \u00b5M UDP-glucose (UDP-Glc) and 5 mM CaCl2 (1 \u00b5M). To analyze the reglucosylation in the absence of TAPBPR, MHC I loaded with a photo-cleavable peptide (pMHC I, 1 \u00b5M) was isolated by SEC, and peptide-free MHC I (1 \u00b5M) was produced by UV illumination (365 nm, 185\u00a0mW/cm2, 120 s) on ice. The mixture was incubated for 10 min at room temperature before the reglucosylation was started by adding UGGT1wt-Sep15 (600 nM). Recovery of MHC I-TAPBPR was conducted by UV illumination of pMHC I (1 \u00b5M) in the presence of 6 \u00b5M TAPBPR on ice. Complex formation was initiated by incubation for 10 min at room temperature. To analyze the reglucosylation of MHC I with bound low-affinity (suboptimal) peptide, peptide-receptive HLA-A*68:02 was incubated with increasing concentrations (0.1\u201310 \u00b5M) of the low-affinity peptide ILKCLEEPSV (predicted affinity 41 \u00b5M) before starting the reglucosylation reaction by adding UGGT (600 nM). If not otherwise specified, the reaction was stopped after 60 min by adding 25 mM of EGTA, and samples were analyzed by LC-MS. The reglucosylation reaction was monitored on the Glc1Man9GlcNAc2/Man9GlcNAc2 intensity ratio.\n\n### Peptide loading onto MHC I\n\nThe peptide-receptive MHC I-TAPBPRwt complex (10 \u00b5M) was dissociated by adding a 250-fold molar excess of the high-affinity, photo-cleavable peptide ETVSKQSJ*V (J*=3-amino-3-(2-nitro)phenyl-propionic acid) prior to incubation overnight at 4 \u00b0C. The affinity of the corresponding non-photo-cleavable peptide was predicted to be 16 nM (Reynisson et al., 2020). Dissociated pMHC I and TAPBPR were isolated by SEC (Superdex 200 Increase 3.2/300, GE Healthcare) in 1\u00d7HBS. ETVSKQSJ*V binding to MHC I before and after UV illumination was analyzed by LC-MS.\n\n### Pulldown using Strep-Tactin Sepharose\n\nMHC IFos-TAPBPRJun complexes (5 \u00b5M) were incubated either without or with UGGT1 (3 \u00b5M) in 1\u00d7HBS containing 5 mM CaCl2 for 1 h on a rotator. To analyze the calcium dependence of the reglucosylation reaction by UGGT1, 25 mM EGTA were added to the samples. To exclude unspecific binding, UGGTwt-Sep15 without MHC I was incubated with Step-Tactin Sepharose. UGGT1 transiently interacting with MHC IFos-TAPBPRJun was pulled down by incubation with Strep-Tactin Sepharose (50% (v/v)) for 30 min. The affinity matrix was washed twice with 1xTris buffer, and proteins were specifically eluted in 1xTris buffer with 5 mM desthiobiotin. Co-eluted proteins were analyzed by SDS-PAGE (12.5%, non-reducing, Coomassie-stained).\n\n### Peptide loading of tethered HLA-A*68:02Fos-TAPBPRJun complexes\n\nPurified HLA-A*68:02Fos-TAPBPRJun complexes (3 \u00b5M) were incubated with a 250-fold molar excess of the low-affinity peptide ILKCLEEPSV (predicted affinity 41 \u00b5M) or the high-affinity, photocleavable peptide ETVSKQSJ*V (predicted affinity 16 nM), respectively, prior to incubation for 30 min at 21 \u00b0C. Excess of non-bound peptides was removed within 120 s by rapid-spin SEC (Zeba Spin Desalting Columns, 7 kDa MWCO, Thermo Scientific). Peptides bound to isolated pMHC I (3 \u00b5M) and HLA-A*68:02Fos-TAPBPRJun complexes were analyzed by LC-MS.\n\n### W6/32 binding to MHC I\n\nPeptide-loaded HLA-A*68:02 molecules (1 \u00b5M) were generated by dissociation of the Jun-Fos-cleaved HLA-A*68:02-TAPBPRwt complex and incubated with the W6/32 antibody (2 \u00b5M, BioLegend) for 10 min at 21 \u00b0C. To analyze W6/32 binding to peptide-free HLA-A*68:02 (1 \u00b5M), pMHC I was UV-illuminated on ice (365 nm, 185 mW/cm2, 120 s). Peptide-free HLA-A*68:02 was confirmed by LC-MS (see Figure 3\u2014figure supplement 1). Complex formation was initiated by adding W6/32 (2 \u00b5M) either directly or after 1 hr after UV illumination. The mixture was subsequently incubated for 10 min at 21 \u00b0C and W6/32 binding to pMHC I or MHC I was analyzed by UPLC-SEC. UPLC-SEC experiments were performed on a BioAccord System (Waters) using an ACQUITY UPLC Protein BEH SEC Column, 200 \u00c5, 1.7 \u03bcm, 2.1 mm \u00d7 150 mm (Waters) and 1xHBS buffer. UV spectra were recorded at 280 nm with a sampling rate of 10 Hz.\n\n### LC-MS analysis\n\nAll LC-MS analyses were conducted on a BioAccord System (Waters). Peptides were analyzed on an ACQUITY UPLC Peptide BEH C18 Column, 130 \u00c5, 1.7 \u00b5m, 2.1 mm \u00d7 100 mm (Waters), with a linear water/acetonitrile gradient (5\u201380% acetonitrile in 5.0 min) complemented with 0.1% (v/v) formic acid at 60 \u00b0C, 30 V cone voltage, 0.8 kV capillary voltage, and a desolvation temperature of 550 \u00b0C in positive mode at 50\u20132000 m/z. Top-down LC-MS data for glycan analysis was acquired using a cone voltage of 45 V (30 V for Sep15), 1.5 kV capillary voltage, and a desolvation temperature of 500 \u00b0C on an ACQUITY UPLC Protein BEH C4 Column, 300 \u00c5, 1.7 \u03bcm, 2.1 mm \u00d7 50 mm (Waters) at 80 \u00b0C running a linear water/acetonitrile gradient (5\u201345% acetonitrile in 8.0 min) supplemented with 0.1% (v/v) formic acid. Mass spectra were recorded in positive polarity at 2 Hz in full scan mode at 400\u20137000 m/z. Reglucosylation mixtures were spun down at 10,000\u00d7g for 5 min and directly injected into the system. SEC-MS measurements were performed on an ACQUITY UPLC Protein BEH SEC Column, 200 \u00c5, 1.7 \u03bcm, 2.1 mm \u00d7 150 mm (Waters) in 20 mM ammonium acetate. Mass spectra were recorded in positive polarity at 1 Hz in full scan mode at 400\u20137000 m/z with a cone voltage of 42 V, capillary voltage of 1.5 kV, and a desolvation temperature of 400 \u00b0C. Masses of peptides and glycoproteins were calculated and confirmed using the software platform UNIFY (Waters). Peptides bound to pMHC I molecules were analyzed using an ACQUITY UPLC Protein BEH C4 column (Waters). pMHC I molecules were on-column dissociated. Bound peptides were analyzed at 80 \u00b0C column temperature, 30 V cone voltage, 1.5 kV capillary voltage, and a desolvation temperature of 500 \u00b0C in positive mode at 400\u20137000 m/z. Using the Unify small-molecule workflow, the response of peptide intensities was subsequently normalized to the signal of peptide-loaded MHC I. Combined intact mass spectra of glycoproteins were deconvoluted in UNIFY utilizing the quantitative MaxEnt1 algorithm iterating to convergence with 1.0 Da model width. Spectra with high background noise were subjected to automatic baseline correction before deconvolution. Deconvoluted spectra were centroidized based on peak height and plotted in OriginPro 2022b. UV spectra were recorded at 280 nm with a sampling rate of 10 Hz.\n",
+      "created_at": "2025-12-04T02:18:21.214565Z"
+    },
+    {
+      "id": "9695211e-7ce5-4b79-a3e9-8cbd7389e011",
+      "submission_id": "d5399da8-e841-47f5-9073-1b18aec6f6f1",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Pramod K Srivastava, UConn Health United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.85432.sa0](https://doi.org/10.7554/eLife.85432.sa0)\n\nThis valuable study reports a complete in-vitro system where different steps and direct interactions between different components of MHC I maturation can be monitored, hence leading to a better mechanistic understanding of MHC I maturation. The evidence supporting the findings is solid and the methods, data and analyses broadly support the claims with only minor weaknesses. This work will be of interest to immunologists and biochemists.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Pramod K Srivastava, UConn Health United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.85432.sa1](https://doi.org/10.7554/eLife.85432.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"The ER folding sensor UGGT1 acts on TAPBPR-chaperoned peptide-free MHC I\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Tadatsugu Taniguchi as the Senior Editor. The following individual involved in the review of your submission has agreed to reveal their identity: Scheherazade Sadegh-Nasseri (Reviewer #2).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1) Please consider comment 2 of Reviewer 1: \" This may be a phenomenon specific to HLA-A*68:02 as previous studies have shown that HLA-B*08 associated with a low-affinity peptide is recognized by UGGT1 in the absence of TAPBPR (Zhang et al., 2011). It would be good if the authors carried out a similar assay using another allele, in particular B*08, to see if this is something specific to their assay or to the allele.\"\n\n2) Please consider comment 4 of Reviewer 1. \"Since the expression of mutant TAPBPR is known to impact the peptides presented by HLA-A*68:02, it is imperative that the authors analyze whether any peptides are bound to the complexes purified from the cells.\"\n\nReviewer #1 (Recommendations for the authors):\n\nAlthough this in vitro study breaks down the quality control of MHC-I by reglucosylation to its principal components, there are some issues that need to be addressed, which may also further contribute to the understanding of this process.\n\n1. It is assumed that the pMHC-I/TAPBPR complex isolated is 'empty', or without associated peptide. O'Rourke et al. and Sagert et al. both show that these complexes can be loaded with high-affinity peptides but they do not actually carry out MS analysis to show conclusively that no peptide is associated with the purified complexes. If low-affinity peptides are indeed associated, that could influence the interpretation of the data.\n\n2. It is striking in Figure 3 that peptide-free MHC-I molecules are not recognized by UGGT1 in the absence of TAPBPR. This may be a phenomenon specific to HLA-A*68:02 as previous studies have shown that HLA-B*08 associated with a low-affinity peptide is recognized by UGGT1 in the absence of TAPBPR (Zhang et al., 2011). It would be good if the authors carried out a similar assay using another allele, in particular B*08, to see if this is something specific to their assay or to the allele. One concern is how long after peptide removal by UV irradiation is reglucosylation attempted, which ideally would be addressed in a kinetic experiment, adding back TAPBR at different times. The enzyme reaction itself takes one hour. However, after UV irradiation and peptide cleavage empty class I molecules are likely unstable and the \u03b22m component, even though it is covalently linked to the heavy chain, may locally 'dissociate', leaving a denatured substrate that is no longer susceptible to the action of UGGT1. Asking whether the MHC-I molecules react post peptide cleavage with conformationally susceptible antibodies, such as w6/32, or heavy chain reactive antibodies, such as HC10, could potentially address this question. UGGT1 is known to be incapable of glucosylating substrates that are heavily denatured. The presence of TAPBPR may stabilize a susceptible conformation.\n\n3. 'Empty' MHC-I molecules vs. MHC-I associated with low-affinity peptides may be recognized differently by UGGT1, perhaps because these peptides also sufficiently stabilize a susceptible population. Can the addition of a low-affinity peptide after photo cleavage restore susceptibility to UGGT1 activity in the absence of TAPBPR? Points 2 and 3 together address the issue of whether TAPBPR and low-affinity peptides are functionally equivalent, i.e. do both bind to MHC-I-\u03b22m dimers to stabilize a UGGT1-susceptible conformation?\n\n4. It is surprising that the MHC-I associated with TAPBPRC97A is glucosylated to a greater extent by UGGT1 (Figure 4B). Since the expression of mutant TAPBPR is known to impact the peptides presented by HLA-A*68:02, it is imperative that the authors analyze whether any peptides are bound to the complexes purified from the cells. If HLA-A*68:02/TAPBPRC97A complexes are associated with low-affinity peptides, (as suggested by Neerincx et al., 2017), it may explain why there is greater glucosylation of the MHC-I heavy chain seen in Figure 4B.\n\nReviewer #2 (Recommendations for the authors):\n\nThe authors do a good job of providing the background information in the introduction section of the manuscript; however, they miss out on spelling out the outstanding question that led to the work presented here. As written, the manuscript reads as an exercise done to check out the previous findings. Also, the discussion is mainly a reiteration of the Results sections. It would be better to discuss their results in comparison with the literature focusing on differences and similarities and how the new findings can be useful to move the field forward.\n",
+      "created_at": "2025-12-04T02:18:21.214565Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T02:18:21.214565Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T02:18:21.214565Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "ac01f003-380c-4cf0-ac48-dc6d187fdb03",
+      "content_id": "2940c0c4-5eba-40de-a1a2-5e8f4c3cb507",
+      "claim_id": "C1",
+      "claim": "Adaptive immune responses are triggered by antigenic peptides presented on major histocompatibility complex class I (MHC I) at the surface of pathogen-infected or cancerous cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Adaptive immune responses are triggered by antigenic peptides presented on major histocompatibility complex class I (MHC I) at the surface of pathogen-infected or cancerous cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by established scientific knowledge about the adaptive immune system and MHC I function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:18:21.214565Z"
+    },
+    {
+      "id": "657cd805-2ece-4df4-9918-92c381932a80",
+      "content_id": "2940c0c4-5eba-40de-a1a2-5e8f4c3cb507",
+      "claim_id": "C2",
+      "claim": "Formation of stable peptide-MHC I complexes is facilitated by tapasin and TAPBPR.",
+      "claim_type": "EXPLICIT",
+      "source": "Formation of stable peptide-MHC I complexes is facilitated by tapasin and TAPBPR, two related MHC I-specific chaperones that catalyze selective loading of suitable peptides onto MHC I in a process called peptide editing or proofreading.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by established scientific knowledge and citations in the manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:18:21.214565Z"
+    },
+    {
+      "id": "99321d3f-6f3d-4caf-98cf-a05bd57cb444",
+      "content_id": "2940c0c4-5eba-40de-a1a2-5e8f4c3cb507",
+      "claim_id": "C3",
+      "claim": "Tapasin and TAPBPR are MHC I-specific chaperones that catalyze selective loading of suitable peptides onto MHC I in a process called peptide editing or proofreading.",
+      "claim_type": "EXPLICIT",
+      "source": "Formation of stable peptide-MHC I complexes is facilitated by tapasin and TAPBPR, two related MHC I-specific chaperones that catalyze selective loading of suitable peptides onto MHC I in a process called peptide editing or proofreading.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by established scientific knowledge and citations in the manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:18:21.214565Z"
+    },
+    {
+      "id": "bd1c0c43-6dde-4db6-8bd8-5960a6902812",
+      "content_id": "2940c0c4-5eba-40de-a1a2-5e8f4c3cb507",
+      "claim_id": "C4",
+      "claim": "MHC I complexes must pass a quality control step performed by UGGT1 on their journey to the cell surface.",
+      "claim_type": "EXPLICIT",
+      "source": "On their journey to the cell surface, MHC I complexes must pass a quality control step performed by UGGT1, which senses the folding status of the transiting N-linked glycoproteins in the endoplasmic reticulum (ER).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by established scientific knowledge about ER quality control.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:18:21.214565Z"
+    },
+    {
+      "id": "6c841f0a-af1e-4643-b85d-de9c6f2423ac",
+      "content_id": "2940c0c4-5eba-40de-a1a2-5e8f4c3cb507",
+      "claim_id": "C5",
+      "claim": "UGGT1 senses the folding status of transiting N-linked glycoproteins in the endoplasmic reticulum (ER).",
+      "claim_type": "EXPLICIT",
+      "source": "On their journey to the cell surface, MHC I complexes must pass a quality control step performed by UGGT1, which senses the folding status of the transiting N-linked glycoproteins in the endoplasmic reticulum (ER).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by established scientific knowledge about UGGT1 function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:18:21.214565Z"
+    },
+    {
+      "id": "46ebd8bc-0b7b-4f25-bb99-0104139dc367",
+      "content_id": "2940c0c4-5eba-40de-a1a2-5e8f4c3cb507",
+      "claim_id": "C6",
+      "claim": "UGGT1 reglucosylates non-native glycoproteins and thereby allows them to revisit the ER folding machinery.",
+      "claim_type": "EXPLICIT",
+      "source": "UGGT1 reglucosylates non-native glycoproteins and thereby allows them to revisit the ER folding machinery.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by established scientific knowledge about UGGT1 function in the calnexin/calreticulin cycle.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:18:21.214565Z"
+    },
+    {
+      "id": "221bd32f-bec8-4967-81f6-0c726d0959b8",
+      "content_id": "2940c0c4-5eba-40de-a1a2-5e8f4c3cb507",
+      "claim_id": "C7",
+      "claim": "TAPBPR promotes reglucosylation of peptide-free MHC I by UGGT1.",
+      "claim_type": "EXPLICIT",
+      "source": "By combining glycoengineering with liquid chromatography-mass spectrometry, we show that TAPBPR promotes reglucosylation of peptide-free MHC I by UGGT1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from the in-vitro reglucosylation assay using LC-MS analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:18:21.214565Z"
+    },
+    {
+      "id": "3991b510-f89a-4ca6-8c29-66903312b52e",
+      "content_id": "2940c0c4-5eba-40de-a1a2-5e8f4c3cb507",
+      "claim_id": "C8",
+      "claim": "UGGT1 cooperates with TAPBPR in fulfilling a crucial function in the quality control mechanisms of antigen processing and presentation.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, UGGT1 cooperates with TAPBPR in fulfilling a crucial function in the quality control mechanisms of antigen processing and presentation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental data showing TAPBPR-mediated reglucosylation of MHC I by UGGT1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:18:21.214565Z"
+    },
+    {
+      "id": "96c64365-3fca-45b5-a3b0-f4042fb189bc",
+      "content_id": "2940c0c4-5eba-40de-a1a2-5e8f4c3cb507",
+      "claim_id": "C9",
+      "claim": "Peptidic ligands of pMHC I complexes are primarily derived from proteasomal degradation products of cytosolic proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "The peptidic ligands of these peptide-MHC I (pMHC I) complexes are primarily derived from proteasomal degradation products of cytosolic proteins and are transported into the endoplasmic reticulum (ER) by the ATP-binding cassette (ABC) transporter associated with antigen processing (TAP1/2) (Thomas and Tamp\u00e9, 2020; Thomas and Tamp\u00e9, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:18:21.214565Z"
+    },
+    {
+      "id": "4eeb3805-30b6-4c59-93eb-1056fe0f1951",
+      "content_id": "2940c0c4-5eba-40de-a1a2-5e8f4c3cb507",
+      "claim_id": "C10",
+      "claim": "Peptides are transported into the endoplasmic reticulum (ER) by the ATP-binding cassette (ABC) transporter associated with antigen processing (TAP1/2).",
+      "claim_type": "EXPLICIT",
+      "source": "The peptidic ligands of these peptide-MHC I (pMHC I) complexes are primarily derived from proteasomal degradation products of cytosolic proteins and are transported into the endoplasmic reticulum (ER) by the ATP-binding cassette (ABC) transporter associated with antigen processing (TAP1/2) (Thomas and Tamp\u00e9, 2020; Thomas and Tamp\u00e9, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:18:21.214565Z"
+    },
+    {
+      "id": "1c0bc421-a9dc-4131-8b66-5a7ac2d31c34",
+      "content_id": "2940c0c4-5eba-40de-a1a2-5e8f4c3cb507",
+      "claim_id": "C11",
+      "claim": "Inside the ER, peptides can be further trimmed by aminopeptidases, in particular ERAP1/2, generating ligands of optimal length for fitting in the MHC I binding groove.",
+      "claim_type": "EXPLICIT",
+      "source": "Inside the ER, peptides can be further trimmed by aminopeptidases, in particular ERAP1/2, generating ligands of optimal length for fitting in the MHC I binding groove (Hammer et al., 2007; Hattori and Tsujimoto, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:18:21.214565Z"
+    },
+    {
+      "id": "3496e9db-53d7-4db2-b25c-ab18cfa448a1",
+      "content_id": "2940c0c4-5eba-40de-a1a2-5e8f4c3cb507",
+      "claim_id": "C12",
+      "claim": "The antigen transporter TAP1/2 is the central component of a dynamic supramolecular machinery called the peptide-loading complex (PLC).",
+      "claim_type": "EXPLICIT",
+      "source": "The antigen transporter TAP1/2 is the central component of a dynamic supramolecular machinery called the peptide-loading complex (PLC) coordinating peptide transfer across the ER membrane with peptide loading onto MHC I inside the ER lumen (Blees et al., 2017; Trowitzsch and Tamp\u00e9, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:18:21.214565Z"
+    },
+    {
+      "id": "68d25b5f-4951-485b-a414-409bd436587a",
+      "content_id": "2940c0c4-5eba-40de-a1a2-5e8f4c3cb507",
+      "claim_id": "C13",
+      "claim": "The peptide-loading complex (PLC) coordinates peptide transfer across the ER membrane with peptide loading onto MHC I inside the ER lumen.",
+      "claim_type": "EXPLICIT",
+      "source": "The antigen transporter TAP1/2 is the central component of a dynamic supramolecular machinery called the peptide-loading complex (PLC) coordinating peptide transfer across the ER membrane with peptide loading onto MHC I inside the ER lumen (Blees et al., 2017; Trowitzsch and Tamp\u00e9, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:18:21.214565Z"
+    },
+    {
+      "id": "14cb53b0-e122-4e12-b19c-9aca796420be",
+      "content_id": "2940c0c4-5eba-40de-a1a2-5e8f4c3cb507",
+      "claim_id": "C14",
+      "claim": "Tapasin and TAPBPR stabilize intrinsically unstable peptide-deficient MHC I.",
+      "claim_type": "EXPLICIT",
+      "source": "Both Tsn and TAPBPR stabilize intrinsically unstable peptide-deficient MHC I and act as peptide editors or proofreaders by accelerating peptide exchange and selecting high-affinity peptide ligands (Boyle et al., 2013; Chen and Bouvier, 2007; Fleischmann et al., 2015; Hermann et al., 2013; Hermann et al., 2015; Morozov et al., 2016; Sagert et al., 2020; Tan et al., 2002; Wearsch and Cresswell, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:18:21.214565Z"
+    },
+    {
+      "id": "bc6751c9-44e7-4e5b-b1d8-a3bafc9cf6c0",
+      "content_id": "2940c0c4-5eba-40de-a1a2-5e8f4c3cb507",
+      "claim_id": "C15",
+      "claim": "Tapasin and TAPBPR act as peptide editors or proofreaders by accelerating peptide exchange and selecting high-affinity peptide ligands.",
+      "claim_type": "EXPLICIT",
+      "source": "Both Tsn and TAPBPR stabilize intrinsically unstable peptide-deficient MHC I and act as peptide editors or proofreaders by accelerating peptide exchange and selecting high-affinity peptide ligands (Boyle et al., 2013; Chen and Bouvier, 2007; Fleischmann et al., 2015; Hermann et al., 2013; Hermann et al., 2015; Morozov et al., 2016; Sagert et al., 2020; Tan et al., 2002; Wearsch and Cresswell, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:18:21.214565Z"
+    },
+    {
+      "id": "48b3f0c7-82a9-4cae-be90-84f2e4ef3ed0",
+      "content_id": "2940c0c4-5eba-40de-a1a2-5e8f4c3cb507",
+      "claim_id": "C16",
+      "claim": "The affinity optimization of MHC I-associated peptides is crucial for immunosurveillance by T lymphocytes, priming of naive T cells, and T cell differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "The affinity optimization of MHC I-associated peptides is crucial for immunosurveillance by T lymphocytes, priming of naive T cells, and T cell differentiation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by established scientific knowledge about T cell biology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:18:21.214565Z"
+    },
+    {
+      "id": "ccdd9ff7-8077-4451-abdc-0f9c70c36b1a",
+      "content_id": "2940c0c4-5eba-40de-a1a2-5e8f4c3cb507",
+      "claim_id": "C17",
+      "claim": "The catalytic principles of peptide optimization have been revealed by crystal structures of the TAPBPR-MHC I complex.",
+      "claim_type": "EXPLICIT",
+      "source": "The catalytic principles of peptide optimization have been revealed by crystal structures of the TAPBPR-MHC I complex (Jiang et al., 2017; Thomas and Tamp\u00e9, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous structural studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:18:21.214565Z"
+    },
+    {
+      "id": "a955c1c8-3b1e-43d6-ba8b-a712a0cd6c4d",
+      "content_id": "2940c0c4-5eba-40de-a1a2-5e8f4c3cb507",
+      "claim_id": "C18",
+      "claim": "Insights into the interaction characteristics between Tsn and peptide-receptive MHC I have been gained by structures of Tsn-ERp57-H2-Db and Tsn-HLA-B*44:05.",
+      "claim_type": "EXPLICIT",
+      "source": "Insights into the interaction characteristics between Tsn and peptide-receptive MHC I have been gained by structures of Tsn-ERp57-H2-Db (M\u00fcller et al., 2022) and Tsn-HLA-B*44:05 (Jiang et al., 2022), respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous structural studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:18:21.214565Z"
+    },
+    {
+      "id": "b4ca4e81-dd66-4300-8f39-0f498b21846f",
+      "content_id": "2940c0c4-5eba-40de-a1a2-5e8f4c3cb507",
+      "claim_id": "C19",
+      "claim": "Tapasin is a key constituent of the PLC.",
+      "claim_type": "EXPLICIT",
+      "source": "While Tsn is a key constituent of the PLC, TAPBPR functions outside the PLC and downstream of Tsn in the secretory pathway, even beyond the ER in the Golgi compartment (Boyle et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:18:21.214565Z"
+    },
+    {
+      "id": "29ae709b-3a13-4f9d-8791-62378f4773d5",
+      "content_id": "2940c0c4-5eba-40de-a1a2-5e8f4c3cb507",
+      "claim_id": "C20",
+      "claim": "TAPBPR functions outside the PLC and downstream of Tsn in the secretory pathway, even beyond the ER in the Golgi compartment.",
+      "claim_type": "EXPLICIT",
+      "source": "While Tsn is a key constituent of the PLC, TAPBPR functions outside the PLC and downstream of Tsn in the secretory pathway, even beyond the ER in the Golgi compartment (Boyle et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:18:21.214565Z"
+    },
+    {
+      "id": "2f7a9718-6771-4748-9ce8-f4e3970571b9",
+      "content_id": "2940c0c4-5eba-40de-a1a2-5e8f4c3cb507",
+      "claim_id": "C21",
+      "claim": "MHC I complexes are glycoproteins consisting of a highly polymorphic, N-glycosylated heavy chain and the invariant light chain \u03b22-microglobulin (\u03b22m).",
+      "claim_type": "EXPLICIT",
+      "source": "As glycoproteins consisting of a highly polymorphic, N-glycosylated heavy chain and the invariant light chain \u03b22-microglobulin (\u03b22m), MHC I complexes are also subject to quality control by the calnexin/calreticulin cycle in which the major glycoprotein folding sensor UDP-glucose:glycoprotein glucosyltransferase 1 (UGGT1) fulfills a crucial role (Wearsch et al., 2011; Zhang et al., 2011)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by established scientific knowledge about MHC I structure.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:18:21.214565Z"
+    },
+    {
+      "id": "badf8f75-f7b7-4ecb-856f-1d9d716da83e",
+      "content_id": "2940c0c4-5eba-40de-a1a2-5e8f4c3cb507",
+      "claim_id": "C22",
+      "claim": "MHC I complexes are subject to quality control by the calnexin/calreticulin cycle in which UGGT1 fulfills a crucial role.",
+      "claim_type": "EXPLICIT",
+      "source": "As glycoproteins consisting of a highly polymorphic, N-glycosylated heavy chain and the invariant light chain \u03b22-microglobulin (\u03b22m), MHC I complexes are also subject to quality control by the calnexin/calreticulin cycle in which the major glycoprotein folding sensor UDP-glucose:glycoprotein glucosyltransferase 1 (UGGT1) fulfills a crucial role (Wearsch et al., 2011; Zhang et al., 2011)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:18:21.214565Z"
+    },
+    {
+      "id": "523027fe-cb8e-463c-94f8-c76450d9327b",
+      "content_id": "2940c0c4-5eba-40de-a1a2-5e8f4c3cb507",
+      "claim_id": "C23",
+      "claim": "The two outermost glucose residues of the core N-glycan Glc3Man9GlcNAc2 are sequentially cleaved off by \u03b1-glucosidase I and II (GluI/II).",
+      "claim_type": "EXPLICIT",
+      "source": "The two outermost glucose residues of the core N-glycan Glc3Man9GlcNAc2, which is co-translationally transferred to a conserved asparagine of the nascent MHC I heavy chain, are sequentially cleaved off by \u03b1-glucosidase I and II (GluI/II), and the resulting mono-glucosylated dodecasaccharide (Glc1Man9GlcNAc2) is specifically recognized by the scaffolding lectin-like ER chaperones calnexin and calreticulin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by established scientific knowledge about N-glycan processing.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:18:21.214565Z"
+    },
+    {
+      "id": "20c49064-c852-46d1-9d1f-e93567e465b8",
+      "content_id": "2940c0c4-5eba-40de-a1a2-5e8f4c3cb507",
+      "claim_id": "C24",
+      "claim": "The core N-glycan Glc3Man9GlcNAc2 is co-translationally transferred to a conserved asparagine of the nascent MHC I heavy chain.",
+      "claim_type": "EXPLICIT",
+      "source": "The two outermost glucose residues of the core N-glycan Glc3Man9GlcNAc2, which is co-translationally transferred to a conserved asparagine of the nascent MHC I heavy chain, are sequentially cleaved off by \u03b1-glucosidase I and II (GluI/II), and the resulting mono-glucosylated dodecasaccharide (Glc1Man9GlcNAc2) is specifically recognized by the scaffolding lectin-like ER chaperones calnexin and calreticulin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by established scientific knowledge about N-glycosylation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:18:21.214565Z"
+    },
+    {
+      "id": "fc05e9ad-25cf-40b8-9546-1fde6955e4cf",
+      "content_id": "2940c0c4-5eba-40de-a1a2-5e8f4c3cb507",
+      "claim_id": "C25",
+      "claim": "The mono-glucosylated dodecasaccharide (Glc1Man9GlcNAc2) is specifically recognized by the scaffolding lectin-like ER chaperones calnexin and calreticulin.",
+      "claim_type": "EXPLICIT",
+      "source": "The two outermost glucose residues of the core N-glycan Glc3Man9GlcNAc2, which is co-translationally transferred to a conserved asparagine of the nascent MHC I heavy chain, are sequentially cleaved off by \u03b1-glucosidase I and II (GluI/II), and the resulting mono-glucosylated dodecasaccharide (Glc1Man9GlcNAc2) is specifically recognized by the scaffolding lectin-like ER chaperones calnexin and calreticulin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by established scientific knowledge about the calnexin/calreticulin cycle.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:18:21.214565Z"
+    },
+    {
+      "id": "a336d0e3-7c90-41f5-a2f8-1e9fab906fb9",
+      "content_id": "2940c0c4-5eba-40de-a1a2-5e8f4c3cb507",
+      "claim_id": "C26",
+      "claim": "Calreticulin escorts MHC I to the PLC for peptide loading.",
+      "claim_type": "EXPLICIT",
+      "source": "The latter escorts MHC I to the PLC for peptide loading.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by established scientific knowledge about calreticulin function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:18:21.214565Z"
+    },
+    {
+      "id": "9dbf57ba-0ef1-4033-92de-411d29542e88",
+      "content_id": "2940c0c4-5eba-40de-a1a2-5e8f4c3cb507",
+      "claim_id": "C27",
+      "claim": "GluII can cleave off the terminal glucose once pMHC I complexes are no longer protected by calreticulin.",
+      "claim_type": "EXPLICIT",
+      "source": "Once pMHC I complexes are no longer protected by calreticulin, GluII can cleave off the terminal glucose (Domnick et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:18:21.214565Z"
+    },
+    {
+      "id": "883d4da4-9f4d-4c16-80d2-ee46bca0a814",
+      "content_id": "2940c0c4-5eba-40de-a1a2-5e8f4c3cb507",
+      "claim_id": "C28",
+      "claim": "pMHC I complexes that have acquired optimal peptides via the PLC or in a PLC-independent fashion and have adopted their native fold when their last glucose residue is removed can exit the ER and travel via the Golgi apparatus to the cell surface.",
+      "claim_type": "EXPLICIT",
+      "source": "Those pMHC I complexes that have acquired optimal peptides via the PLC or in a PLC-independent fashion and have adopted their native fold when their last glucose residue is removed, can exit the ER and travel via the Golgi apparatus to the cell surface where they are scanned by T cell receptors (TCRs) on cytotoxic T cells and natural killer (NK) cell receptors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by established scientific knowledge about MHC I trafficking.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:18:21.214565Z"
+    },
+    {
+      "id": "e673a2ed-c8f6-42f5-9d50-a68e5b542ad7",
+      "content_id": "2940c0c4-5eba-40de-a1a2-5e8f4c3cb507",
+      "claim_id": "C29",
+      "claim": "pMHC I complexes at the cell surface are scanned by T cell receptors (TCRs) on cytotoxic T cells and natural killer (NK) cell receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "Those pMHC I complexes that have acquired optimal peptides via the PLC or in a PLC-independent fashion and have adopted their native fold when their last glucose residue is removed, can exit the ER and travel via the Golgi apparatus to the cell surface where they are scanned by T cell receptors (TCRs) on cytotoxic T cells and natural killer (NK) cell receptors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by established scientific knowledge about immune surveillance.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:18:21.214565Z"
+    },
+    {
+      "id": "6ebbb17c-bf70-4ed6-a2d5-b3285b5c7065",
+      "content_id": "2940c0c4-5eba-40de-a1a2-5e8f4c3cb507",
+      "claim_id": "C30",
+      "claim": "The Man9GlcNAc2 glycan of MHC I complexes that are suboptimally loaded or empty and partially misfolded is recognized and reglucosylated by UGGT1.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the Man9GlcNAc2 glycan of MHC I complexes that are suboptimally loaded or empty and partially misfolded is recognized and reglucosylated by UGGT1, allowing the newly formed mono-glucosylated MHC I species to be re-engaged by calnexin or calreticulin and given another chance to acquire a suitable peptide, for example, by revisiting the PLC (Wearsch et al., 2011; Zhang et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:18:21.214565Z"
+    },
+    {
+      "id": "32e88fdb-47d9-4196-8755-ff88d6a72536",
+      "content_id": "2940c0c4-5eba-40de-a1a2-5e8f4c3cb507",
+      "claim_id": "C31",
+      "claim": "Reglucosylation by UGGT1 allows the newly formed mono-glucosylated MHC I species to be re-engaged by calnexin or calreticulin and given another chance to acquire a suitable peptide.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the Man9GlcNAc2 glycan of MHC I complexes that are suboptimally loaded or empty and partially misfolded is recognized and reglucosylated by UGGT1, allowing the newly formed mono-glucosylated MHC I species to be re-engaged by calnexin or calreticulin and given another chance to acquire a suitable peptide, for example, by revisiting the PLC (Wearsch et al., 2011; Zhang et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:18:21.214565Z"
+    },
+    {
+      "id": "7114c685-d606-4488-a00d-a939d24f2aae",
+      "content_id": "2940c0c4-5eba-40de-a1a2-5e8f4c3cb507",
+      "claim_id": "C32",
+      "claim": "The UGGT1-mediated quality control of MHC I has been shown to be directly promoted by the peptide editor TAPBPR, based on immunoprecipitation experiments from cell lysates and mass spectrometry.",
+      "claim_type": "EXPLICIT",
+      "source": "Most interestingly, the UGGT1-mediated quality control of MHC I has recently been shown to be directly promoted by the peptide editor TAPBPR, based on a combination of immunoprecipitation experiments from cell lysates and mass spectrometry (Neerincx et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:18:21.214565Z"
+    },
+    {
+      "id": "2a2ce759-4c42-42ea-b1d8-2f235978e861",
+      "content_id": "2940c0c4-5eba-40de-a1a2-5e8f4c3cb507",
+      "claim_id": "C33",
+      "claim": "HLA-A*68:02 is a favored client of TAPBPR.",
+      "claim_type": "EXPLICIT",
+      "source": "HLA-A*68:02 is a favored client of TAPBPR (Boyle et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:18:21.214565Z"
+    },
+    {
+      "id": "8baea423-f561-4468-80a4-32a098d75cee",
+      "content_id": "2940c0c4-5eba-40de-a1a2-5e8f4c3cb507",
+      "claim_id": "C34",
+      "claim": "Kifunensine is an \u03b1-mannosidase I inhibitor that arrests glycan processing primarily at the Man9GlcNAc2 stage.",
+      "claim_type": "EXPLICIT",
+      "source": "Kifunensine is an \u03b1-mannosidase I inhibitor that arrests glycan processing primarily at the Man9GlcNAc2 stage (Chang et al., 2007; Elbein, 1991).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:18:21.214565Z"
+    },
+    {
+      "id": "be43ade2-15da-41f1-9991-413d4f5a5186",
+      "content_id": "2940c0c4-5eba-40de-a1a2-5e8f4c3cb507",
+      "claim_id": "C35",
+      "claim": "The highest yield of Man9GlcNAc2 was achieved with 10 \u00b5M kifunensine.",
+      "claim_type": "EXPLICIT",
+      "source": "The highest yield of Man9GlcNAc2 was achieved with 10 \u00b5M kifunensine, while increasing the concentration to 20 \u00b5M did not improve the yield (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:18:21.214565Z"
+    },
+    {
+      "id": "658f277e-5dd3-4136-85d5-8e848c8c050c",
+      "content_id": "2940c0c4-5eba-40de-a1a2-5e8f4c3cb507",
+      "claim_id": "C36",
+      "claim": "Increasing kifunensine concentration to 20 \u00b5M did not improve the yield of Man9GlcNAc2.",
+      "claim_type": "EXPLICIT",
+      "source": "The highest yield of Man9GlcNAc2 was achieved with 10 \u00b5M kifunensine, while increasing the concentration to 20 \u00b5M did not improve the yield (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:18:21.214565Z"
+    },
+    {
+      "id": "f9a4eda7-fc5a-46cb-9515-acbf8e3cdb0a",
+      "content_id": "2940c0c4-5eba-40de-a1a2-5e8f4c3cb507",
+      "claim_id": "C37",
+      "claim": "After Strep-Tactin affinity purification and TEV protease cleavage, the peptide-receptive HLA-A*68:02-TAPBPR complex eluted as monodisperse sample at the expected size of 90 kDa during size-exclusion chromatography (SEC).",
+      "claim_type": "EXPLICIT",
+      "source": "After Strep-Tactin affinity purification and Tobacco etch virus (TEV) protease cleavage, the peptide-receptive HLA-A*68:02-TAPBPR complex eluted as monodisperse sample at the expected size of 90 kDa during size-exclusion chromatography (SEC) (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:18:21.214565Z"
+    },
+    {
+      "id": "8eb8ea6e-5851-4f41-904c-f057ea05bd67",
+      "content_id": "2940c0c4-5eba-40de-a1a2-5e8f4c3cb507",
+      "claim_id": "C38",
+      "claim": "Sep15 has been shown to enhance UGGT1 activity.",
+      "claim_type": "EXPLICIT",
+      "source": "His-tagged human UGGT1 was co-expressed and secreted from insect cells with its binding partner Sep15 (15 kDa selenoprotein), which has been shown to enhance UGGT1 activity (Takeda et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:18:21.214565Z"
+    },
+    {
+      "id": "70eda262-344d-49e2-80fe-146195a4b8c5",
+      "content_id": "2940c0c4-5eba-40de-a1a2-5e8f4c3cb507",
+      "claim_id": "C39",
+      "claim": "Small amounts of a degradation product at ~37 kDa representing the C-terminal catalytic glucosyltransferase domain were detected in addition to full-length UGGT1.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to full-length UGGT1, we detected small amounts of a degradation product at ~37 kDa by SDS-PAGE and immunoblotting, representing the C-terminal catalytic glucosyltransferase domain, in line with previous observations (Guerin and Parodi, 2003; Figure 1D and Figure 1\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1D and Figure 1\u2014figure supplement 2A, and citations to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:18:21.214565Z"
+    },
+    {
+      "id": "262ed2cf-335d-44fc-aa5e-5476103e0357",
+      "content_id": "2940c0c4-5eba-40de-a1a2-5e8f4c3cb507",
+      "claim_id": "C40",
+      "claim": "UGGT1 exhibited clear UDP-glucose-dependent glucosyltransferase activity towards Man9GlcNAc2-HLA-A*68:02-TAPBPR.",
+      "claim_type": "EXPLICIT",
+      "source": "UGGT1 exhibited clear UDP-glucose-dependent glucosyltransferase activity towards Man9GlcNAc2-HLA-A*68:02-TAPBPR, as judged by the appearance of the peak corresponding to the HLA-A*68:02-linked mono-glucosylated Glc1Man9GlcNAc2 glycan species in the mass spectra (Figure 2A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2A\u2013C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:18:21.214565Z"
+    },
+    {
+      "id": "e1a5b518-6838-43e7-a735-d8754f881afb",
+      "content_id": "2940c0c4-5eba-40de-a1a2-5e8f4c3cb507",
+      "claim_id": "C41",
+      "claim": "The D1316N mutant of UGGT1 was inactive.",
+      "claim_type": "EXPLICIT",
+      "source": "The D1316N mutant of UGGT1, in which the first aspartate of the Ca2+-coordinating DxD motif in the catalytic site (Roversi et al., 2017) is mutated, was inactive (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2D and citations to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:18:21.214565Z"
+    },
+    {
+      "id": "d4435c92-9823-48f0-88fb-e1d94cafb626",
+      "content_id": "2940c0c4-5eba-40de-a1a2-5e8f4c3cb507",
+      "claim_id": "C42",
+      "claim": "Activity of mutant UGGT1D1316N could not be restored by adding 5 \u00b5M purified Sep15.",
+      "claim_type": "EXPLICIT",
+      "source": "Activity of mutant UGGT1D1316N could not be restored by adding 5 \u00b5M purified Sep15 (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:18:21.214565Z"
+    },
+    {
+      "id": "5399d101-8e4f-4586-8d2f-4214c46c1359",
+      "content_id": "2940c0c4-5eba-40de-a1a2-5e8f4c3cb507",
+      "claim_id": "C43",
+      "claim": "UGGT1-catalyzed reglucosylation reactions reached saturation at ~80% product formation.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, UGGT1-catalyzed reglucosylation reactions in general reached saturation at ~80% product formation (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:18:21.214565Z"
+    },
+    {
+      "id": "e01622fe-0ecc-4933-ad15-a4eb22d3305e",
+      "content_id": "2940c0c4-5eba-40de-a1a2-5e8f4c3cb507",
+      "claim_id": "C44",
+      "claim": "Saturation of UGGT1-catalyzed reglucosylation could not be overcome by raising the temperature.",
+      "claim_type": "EXPLICIT",
+      "source": "This saturation could be overcome neither by raising the temperature (Figure 2F) nor by increasing the enzyme concentration (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:18:21.214565Z"
+    },
+    {
+      "id": "eed20350-f5d5-43f1-922c-65ff608c1d0b",
+      "content_id": "2940c0c4-5eba-40de-a1a2-5e8f4c3cb507",
+      "claim_id": "C45",
+      "claim": "Saturation of UGGT1-catalyzed reglucosylation could not be overcome by increasing the enzyme concentration.",
+      "claim_type": "EXPLICIT",
+      "source": "This saturation could be overcome neither by raising the temperature (Figure 2F) nor by increasing the enzyme concentration (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:18:21.214565Z"
+    },
+    {
+      "id": "88ff947d-447a-4e0f-8f84-609f1a904a70",
+      "content_id": "2940c0c4-5eba-40de-a1a2-5e8f4c3cb507",
+      "claim_id": "C46",
+      "claim": "Binding of high-affinity peptide leads to TAPBPR dissociation.",
+      "claim_type": "EXPLICIT",
+      "source": "Binding of high-affinity peptide leads to TAPBPR dissociation, allowing the peptide-loaded Man9GlcNAc2-HLA-A*68:02 to be isolated by size-exclusion chromatography (SEC; Figure 3A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:18:21.214565Z"
+    },
+    {
+      "id": "14d45e12-f2e8-4ed2-acc3-761c4a4ccb04",
+      "content_id": "2940c0c4-5eba-40de-a1a2-5e8f4c3cb507",
+      "claim_id": "C47",
+      "claim": "The peptide-deficient state of the MHC I was generated by photo-cleavage of the bound peptide and dissociation of the resulting low-affinity peptide fragments.",
+      "claim_type": "EXPLICIT",
+      "source": "The peptide-deficient state of the MHC I was generated by photo-cleavage of the bound peptide and dissociation of the resulting low-affinity peptide fragments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the experimental design described in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:18:21.214565Z"
+    },
+    {
+      "id": "8fecee16-f575-4a85-bf13-c6a5ef2b934f",
+      "content_id": "2940c0c4-5eba-40de-a1a2-5e8f4c3cb507",
+      "claim_id": "C48",
+      "claim": "The peptide-loading status of pMHC I and empty MHC I was confirmed by LC-MS.",
+      "claim_type": "EXPLICIT",
+      "source": "The peptide-loading status of pMHC I and empty MHC I was confirmed by LC-MS (Figure 3C and Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3C and Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:18:21.214565Z"
+    },
+    {
+      "id": "263e7876-cc28-4fb0-bf9a-67d556c26744",
+      "content_id": "2940c0c4-5eba-40de-a1a2-5e8f4c3cb507",
+      "claim_id": "C49",
+      "claim": "The generated peptide-free Man9GlcNAc2-HLA-A*68:02 was shown to bind the conformation-specific antibody W6/32, demonstrating that the peptide-receptive MHC I remain stable throughout the experiment.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, the generated peptide-free Man9GlcNAc2-HLA-A*68:02 was shown to bind the conformation-specific antibody W6/32, demonstrating that the peptide-receptive MHC I remain stable throughout the experiment (Figure 3\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:18:21.214565Z"
+    },
+    {
+      "id": "d61fb8e2-0f59-4fff-8980-95631a869453",
+      "content_id": "2940c0c4-5eba-40de-a1a2-5e8f4c3cb507",
+      "claim_id": "C50",
+      "claim": "Neither the peptide-loaded nor the peptide-deficient HLA-A*68:02 were reglucosylated by UGGT1 in the absence of TAPBPR.",
+      "claim_type": "EXPLICIT",
+      "source": "Most strikingly, neither the peptide-loaded nor the peptide-deficient HLA-A*68:02 were reglucosylated by UGGT1 in the absence of TAPBPR (Figure 3D\u2013F), but we were able to restore UGGT1 activity towards peptide-deficient HLA-A*68:02 by adding TAPBPR (Figure 3F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3D\u2013F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:18:21.214565Z"
+    },
+    {
+      "id": "6d095340-2360-4d19-88c4-643277be3abd",
+      "content_id": "2940c0c4-5eba-40de-a1a2-5e8f4c3cb507",
+      "claim_id": "C51",
+      "claim": "UGGT1 activity towards peptide-deficient HLA-A*68:02 was restored by adding TAPBPR.",
+      "claim_type": "EXPLICIT",
+      "source": "Most strikingly, neither the peptide-loaded nor the peptide-deficient HLA-A*68:02 were reglucosylated by UGGT1 in the absence of TAPBPR (Figure 3D\u2013F), but we were able to restore UGGT1 activity towards peptide-deficient HLA-A*68:02 by adding TAPBPR (Figure 3F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:18:21.214565Z"
+    },
+    {
+      "id": "15284967-7924-4b79-bff2-958c35319d91",
+      "content_id": "2940c0c4-5eba-40de-a1a2-5e8f4c3cb507",
+      "claim_id": "C52",
+      "claim": "Loading of a low-affinity (suboptimal) peptide onto the peptide-receptive MHC I could not restore the susceptibility of UGGT1.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, loading of a low-affinity (suboptimal) peptide onto the peptide-receptive MHC I could not restore the susceptibility of UGGT1 (Figure 3\u2014figure supplement 3), further emphasizing the critical role of TAPBPR.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:18:21.214565Z"
+    },
+    {
+      "id": "d0887f9d-4e49-4015-bf44-a9cec0d20c74",
+      "content_id": "2940c0c4-5eba-40de-a1a2-5e8f4c3cb507",
+      "claim_id": "C53",
+      "claim": "TAPBPR is an essential mediator in the UGGT1-catalyzed reglucosylation of the human MHC I allomorph HLA-A*68:02.",
+      "claim_type": "EXPLICIT",
+      "source": "These results demonstrate that the MHC I-specific chaperone TAPBPR is an essential mediator in the UGGT1-catalyzed reglucosylation of the human MHC I allomorph HLA-A*68:02.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental data showing that TAPBPR is necessary and sufficient for UGGT1-mediated reglucosylation of HLA-A*68:02.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:18:21.214565Z"
+    },
+    {
+      "id": "7ea7acbd-4daa-4199-a298-eb16ebed4795",
+      "content_id": "2940c0c4-5eba-40de-a1a2-5e8f4c3cb507",
+      "claim_id": "C54",
+      "claim": "The ER-lumenal part of TAPBPR consists of an N-terminal composite domain composed of coalesced seven-stranded \u03b2 barrel and immunoglobulin (Ig)-like (V type) folds, and a C-terminal IgC1 domain.",
+      "claim_type": "EXPLICIT",
+      "source": "The ER-lumenal part of the peptide proofreader TAPBPR consists of an N-terminal composite domain composed of coalesced seven-stranded \u03b2 barrel and immunoglobulin (Ig)-like (V type) folds, and a C-terminal IgC1 domain (Jiang et al., 2017; Thomas and Tamp\u00e9, 2017; Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citations to previous structural studies and Figure 4A.",
+      "evidence_type": "[\"CITATION\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:18:21.214565Z"
+    },
+    {
+      "id": "6a332f80-e603-4dd2-a556-82d41e4e5a89",
+      "content_id": "2940c0c4-5eba-40de-a1a2-5e8f4c3cb507",
+      "claim_id": "C55",
+      "claim": "TAPBPR contacts the peptide-receptive MHC I client through a large concave surface of its N-terminal composite domain, which interacts mainly with the \u03b12\u20131-helix region of the MHC I.",
+      "claim_type": "EXPLICIT",
+      "source": "TAPBPR contacts the peptide-receptive MHC I client through a large concave surface of its N-terminal composite domain, which interacts mainly with the \u03b12\u20131-helix region of the MHC I, and via interfaces of its C-terminal IgC1 domain with \u03b22m and the \u03b13 domain of the MHC I heavy chain (Jiang et al., 2017; Thomas and Tamp\u00e9, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous structural studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:18:21.214565Z"
+    },
+    {
+      "id": "23589487-063f-4c09-9422-f938f2df17ab",
+      "content_id": "2940c0c4-5eba-40de-a1a2-5e8f4c3cb507",
+      "claim_id": "C56",
+      "claim": "TAPBPR contacts the peptide-receptive MHC I client via interfaces of its C-terminal IgC1 domain with \u03b22m and the \u03b13 domain of the MHC I heavy chain.",
+      "claim_type": "EXPLICIT",
+      "source": "TAPBPR contacts the peptide-receptive MHC I client through a large concave surface of its N-terminal composite domain, which interacts mainly with the \u03b12\u20131-helix region of the MHC I, and via interfaces of its C-terminal IgC1 domain with \u03b22m and the \u03b13 domain of the MHC I heavy chain (Jiang et al., 2017; Thomas and Tamp\u00e9, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous structural studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:18:21.214565Z"
+    },
+    {
+      "id": "df0b3350-bfa1-4101-bb7b-90e5917d2570",
+      "content_id": "2940c0c4-5eba-40de-a1a2-5e8f4c3cb507",
+      "claim_id": "C57",
+      "claim": "Of the seven cysteines in the ER-lumenal portion of TAPBPR, four are involved in two disulfide bridges in the N-terminal domain, and two form a disulfide bond in the C-terminal domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the seven cysteines in the ER-lumenal portion of TAPBPR, four are involved in two disulfide bridges in the N-terminal domain, and two form a disulfide bond in the C-terminal domain (Jiang et al., 2017; Thomas and Tamp\u00e9, 2017; Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citations to previous structural studies and Figure 4A.",
+      "evidence_type": "[\"CITATION\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:18:21.214565Z"
+    },
+    {
+      "id": "b1a0f2fd-3704-4f95-8ad4-d4ecc54f7fdb",
+      "content_id": "2940c0c4-5eba-40de-a1a2-5e8f4c3cb507",
+      "claim_id": "C58",
+      "claim": "The seventh cysteine residue, C97, is surface-exposed and located opposite to the concave surface in the N-terminal domain.",
+      "claim_type": "EXPLICIT",
+      "source": "The seventh cysteine residue, C97, is surface-exposed and located opposite to the concave surface in the N-terminal domain (Thomas and Tamp\u00e9, 2017; Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citations to previous structural studies and Figure 4A.",
+      "evidence_type": "[\"CITATION\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:18:21.214565Z"
+    },
+    {
+      "id": "c8dfea75-fd2d-4197-8b42-6328730c32e5",
+      "content_id": "2940c0c4-5eba-40de-a1a2-5e8f4c3cb507",
+      "claim_id": "C59",
+      "claim": "Mutating C97 to alanine was shown to have no effect on the catalytic activity of TAPBPR.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutating C97 to alanine was shown to have no effect on the catalytic activity of TAPBPR (Neerincx et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:18:21.214565Z"
+    },
+    {
+      "id": "d9111766-c9bf-4fa7-9c8a-a83dca7d51e3",
+      "content_id": "2940c0c4-5eba-40de-a1a2-5e8f4c3cb507",
+      "claim_id": "C60",
+      "claim": "C97 is not engaged in an intermolecular disulfide bond with UGGT1.",
+      "claim_type": "EXPLICIT",
+      "source": "With respect to UGGT1 binding, C97 is not engaged in an intermolecular disulfide bond with UGGT1, but seems necessary for the interaction with UGGT1 in immunoprecipitates (Neerincx et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:18:21.214565Z"
+    },
+    {
+      "id": "4b99d686-6bb9-43ee-b1d1-74515115eb7b",
+      "content_id": "2940c0c4-5eba-40de-a1a2-5e8f4c3cb507",
+      "claim_id": "C61",
+      "claim": "C97 seems necessary for the interaction with UGGT1 in immunoprecipitates.",
+      "claim_type": "EXPLICIT",
+      "source": "With respect to UGGT1 binding, C97 is not engaged in an intermolecular disulfide bond with UGGT1, but seems necessary for the interaction with UGGT1 in immunoprecipitates (Neerincx et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:18:21.214565Z"
+    },
+    {
+      "id": "9edb8007-c168-47dd-b678-08b6806381ef",
+      "content_id": "2940c0c4-5eba-40de-a1a2-5e8f4c3cb507",
+      "claim_id": "C62",
+      "claim": "HeLaM cells expressing TAPBPRC97A instead of TAPBPRwt displayed an altered peptide repertoire with a decrease in canonical anchor residues for HLA-A*68:02 and an increasing amount of peptide-deficient HLA-A*68:02.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, HeLaM cells expressing TAPBPRC97A instead of TAPBPRwt displayed an altered peptide repertoire with a decrease in canonical anchor residues for HLA-A*68:02 and an increasing amount of peptide-deficient HLA-A*68:02 (Neerincx et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:18:21.214565Z"
+    },
+    {
+      "id": "363028b8-d8b1-454e-a53d-c297687e8196",
+      "content_id": "2940c0c4-5eba-40de-a1a2-5e8f4c3cb507",
+      "claim_id": "C63",
+      "claim": "UGGT1 exhibited consistently and significantly higher reglucosylation activity towards the mutant MHC I-TAPBPRC97A complex than towards the wildtype complex.",
+      "claim_type": "EXPLICIT",
+      "source": "To our surprise, UGGT1 exhibited consistently and significantly higher reglucosylation activity towards the mutant MHC I-TAPBPRC97A complex than towards the wildtype complex (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:18:21.214565Z"
+    },
+    {
+      "id": "7c357b16-ee6f-4188-aefd-d8715629a28d",
+      "content_id": "2940c0c4-5eba-40de-a1a2-5e8f4c3cb507",
+      "claim_id": "C64",
+      "claim": "Unless the Jun-Fos zippers have been removed, neither low- nor high-affinity peptides could bind to the tethered MHC I-TAPBPR complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "Unless the Jun-Fos zippers have been removed, neither low- nor high-affinity peptides could bind to the complexes (Figure 4\u2014figure supplement 1), verifying that the observed differences in reglucosylation are not caused by different peptides.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:18:21.214565Z"
+    },
+    {
+      "id": "cbc048bd-e064-4b01-b0dc-753345735e95",
+      "content_id": "2940c0c4-5eba-40de-a1a2-5e8f4c3cb507",
+      "claim_id": "C65",
+      "claim": "The interaction between UGGT1 and HLA-A*68:02-TAPBPR was not affected by the C97A mutation.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, in a pull-down experiment with UGGT1 (3 \u00b5M) using Man9GlcNAc2-HLA-A*68:02 bound to Twin-Strep-tagged TAPBPR (5 \u00b5M) and captured on Strep-Tactin Sepharose, we observed that the interaction between UGGT1 and HLA-A*68:02-TAPBPR was not affected by the C97A mutation (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:18:21.214565Z"
+    },
+    {
+      "id": "848c3992-f0f0-4e2e-bb12-cd65236aedad",
+      "content_id": "2940c0c4-5eba-40de-a1a2-5e8f4c3cb507",
+      "claim_id": "C66",
+      "claim": "In the eluate of the pull-down experiment, the degradation product at ~37 kDa representing the C-terminal catalytic glucosyltransferase domain of UGGT1 was not present, indicating that the interface of UGGT1 with HLA-A*68:02-TAPBPR extends beyond the glucosyltransferase domain.",
+      "claim_type": "EXPLICIT",
+      "source": "We also noticed that in the eluate of this pull-down experiment, the degradation product at ~37 kDa representing the C-terminal catalytic glucosyltransferase domain of UGGT1 was not present, indicating that the interface of UGGT1 with HLA-A*68:02-TAPBPR extends beyond the glucosyltransferase domain (Figure 4C, asterisk).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the experimental data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:18:21.214565Z"
+    },
+    {
+      "id": "036e5dcf-990e-406d-ae1e-2ad180453603",
+      "content_id": "2940c0c4-5eba-40de-a1a2-5e8f4c3cb507",
+      "claim_id": "C67",
+      "claim": "UGGT1 requires calcium ions for its glucosyltransferase activity.",
+      "claim_type": "EXPLICIT",
+      "source": "UGGT1 requires calcium ions for its glucosyltransferase activity (Trombetta and Parodi, 1992).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:18:21.214565Z"
+    },
+    {
+      "id": "c25bb3d9-b349-4150-8cd2-4651cbfc27a9",
+      "content_id": "2940c0c4-5eba-40de-a1a2-5e8f4c3cb507",
+      "claim_id": "C68",
+      "claim": "Ca2+ is coordinated by the DxD motif in the catalytic site that is typical of most A-type glycosyltransferases.",
+      "claim_type": "EXPLICIT",
+      "source": "Ca2+ is coordinated by the DxD motif in the catalytic site that is typical of most A-type glycosyltransferases (Lairson et al., 2008; Roversi et al., 2017; Satoh et al., 2017; Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citations to previous work and Figure 4D.",
+      "evidence_type": "[\"CITATION\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:18:21.214565Z"
+    },
+    {
+      "id": "b830ba44-fa5c-4060-9798-12c0f7083058",
+      "content_id": "2940c0c4-5eba-40de-a1a2-5e8f4c3cb507",
+      "claim_id": "C69",
+      "claim": "The interaction with the Man9GlcNAc2-MHC I-TAPBPR complex was not affected by the active-site mutation in UGGT1D1316N which disrupts the Ca2+-coordinating DxD motif.",
+      "claim_type": "EXPLICIT",
+      "source": "The interaction with the Man9GlcNAc2-MHC I-TAPBPR complex was not affected by the active-site mutation in UGGT1D1316N which disrupts the Ca2+-coordinating DxD motif (Figure 4E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:18:21.214565Z"
+    },
+    {
+      "id": "e513de8c-45ac-4730-a3fb-b418ccbd1460",
+      "content_id": "2940c0c4-5eba-40de-a1a2-5e8f4c3cb507",
+      "claim_id": "C70",
+      "claim": "The binding of UGGT1 to TAPBPR-associated Man9GlcNAc2-HLA-A*68:02 is Ca2+-independent.",
+      "claim_type": "EXPLICIT",
+      "source": "We found no difference in the amount of UGGT1 that was pulled down by HLA-A*68:02-TAPBPR between the two different conditions (Figure 4F), suggesting that the binding of UGGT1 to TAPBPR-associated Man9GlcNAc2-HLA-A*68:02 is Ca2+-independent.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the experimental data shown in Figure 4F.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:18:21.214565Z"
+    },
+    {
+      "id": "a392fafd-e943-4e89-9463-0d1ea804f85f",
+      "content_id": "2940c0c4-5eba-40de-a1a2-5e8f4c3cb507",
+      "claim_id": "C71",
+      "claim": "UGGT1 is a pivotal component of the multi-chaperone machinery constituting the ER quality-control network in eukaryotes.",
+      "claim_type": "EXPLICIT",
+      "source": "UGGT1 is a pivotal component of the multi-chaperone machinery constituting the ER quality-control network in eukaryotes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by established scientific knowledge about UGGT1 function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:18:21.214565Z"
+    },
+    {
+      "id": "b313663b-6e4b-418d-881b-fbe7a8b894cb",
+      "content_id": "2940c0c4-5eba-40de-a1a2-5e8f4c3cb507",
+      "claim_id": "C72",
+      "claim": "Deletion of the UGGT1 gene in mice is embryonically lethal.",
+      "claim_type": "EXPLICIT",
+      "source": "The physiological significance of this enzyme is illustrated by the fact that deletion of its gene in mice is embryonically lethal (Molinari et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:18:21.214565Z"
+    },
+    {
+      "id": "3f7662c9-cf14-431e-b721-eed22541dca5",
+      "content_id": "2940c0c4-5eba-40de-a1a2-5e8f4c3cb507",
+      "claim_id": "C73",
+      "claim": "UGGT1 functions as the major eukaryotic glycoprotein folding sensor and gatekeeper in the calnexin/calreticulin cycle, preventing deglucosylated, non-natively folded N-glycosylated proteins from leaving the ER.",
+      "claim_type": "EXPLICIT",
+      "source": "UGGT1 functions as the major eukaryotic glycoprotein folding sensor and gatekeeper in the calnexin/calreticulin cycle, preventing deglucosylated, non-natively folded N-glycosylated proteins from leaving the ER (Adams et al., 2020; Caramelo and Parodi, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:18:21.214565Z"
+    },
+    {
+      "id": "7a4f855a-a1af-42a3-a099-b8c1cf25c816",
+      "content_id": "2940c0c4-5eba-40de-a1a2-5e8f4c3cb507",
+      "claim_id": "C74",
+      "claim": "Under the chosen conditions, the UGGT1-catalyzed conversion of Man9GlcNAc2-MHC I to Glc1Man9GlcNAc2-MHC I reached saturation at about 80%, similar to previous observations with rat UGGT.",
+      "claim_type": "EXPLICIT",
+      "source": "Under the chosen conditions, the UGGT1-catalyzed conversion of Man9GlcNAc2-MHC I to Glc1Man9GlcNAc2-MHC I reached saturation at about 80%, similar to previous observations with rat UGGT (Totani et al., 2005), and could not be increased by higher temperatures or higher enzyme concentrations (Figure 2D\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2D\u2013F and citations to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:18:21.214565Z"
+    },
+    {
+      "id": "29f45d6a-c707-4563-aec1-94b08000aa96",
+      "content_id": "2940c0c4-5eba-40de-a1a2-5e8f4c3cb507",
+      "claim_id": "C75",
+      "claim": "The UGGT1-catalyzed conversion of Man9GlcNAc2-MHC I to Glc1Man9GlcNAc2-MHC I could not be increased by higher temperatures or higher enzyme concentrations.",
+      "claim_type": "EXPLICIT",
+      "source": "Under the chosen conditions, the UGGT1-catalyzed conversion of Man9GlcNAc2-MHC I to Glc1Man9GlcNAc2-MHC I reached saturation at about 80%, similar to previous observations with rat UGGT (Totani et al., 2005), and could not be increased by higher temperatures or higher enzyme concentrations (Figure 2D\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2D\u2013F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:18:21.214565Z"
+    },
+    {
+      "id": "c6e3ef25-9a1a-4775-951e-f74ec130084a",
+      "content_id": "2940c0c4-5eba-40de-a1a2-5e8f4c3cb507",
+      "claim_id": "C76",
+      "claim": "When analyzing the glucosylation reaction in the absence of TAPBPR on the isolated pMHC I charged with a high-affinity, photo-cleavable peptide, no activity was observed.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, when analyzing the glucosylation reaction in the absence of TAPBPR on the isolated pMHC I charged with a high-affinity, photo-cleavable peptide, we observed no activity (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:18:21.214565Z"
+    },
+    {
+      "id": "e4f32a3f-b1ae-45bd-9f60-7dbcab51cfb8",
+      "content_id": "2940c0c4-5eba-40de-a1a2-5e8f4c3cb507",
+      "claim_id": "C77",
+      "claim": "The quality-control sensor UGGT1 does not act on MHC I clients that are already loaded with optimal peptide cargo.",
+      "claim_type": "EXPLICIT",
+      "source": "This is in agreement with the expectation that the quality-control sensor UGGT1 does not act on MHC I clients that are already loaded with optimal peptide cargo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental data and established knowledge about UGGT1 function.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:18:21.214565Z"
+    },
+    {
+      "id": "c7ac68cc-6299-4920-b3b6-64c14d1477fd",
+      "content_id": "2940c0c4-5eba-40de-a1a2-5e8f4c3cb507",
+      "claim_id": "C78",
+      "claim": "When the high-affinity peptide was converted into dissociating low-affinity fragments by UV illumination, essentially generating a peptide-deficient, 'frustrated' MHC I, there was still no reglucosylation by UGGT1 detectable.",
+      "claim_type": "EXPLICIT",
+      "source": "Most interestingly, when we converted the high-affinity peptide into dissociating low-affinity fragments by UV illumination, essentially generating a peptide-deficient, 'frustrated' MHC I which should meet the criteria of a bona-fide UGGT1 substrate, there was still no reglucosylation by UGGT1 detectable (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:18:21.214565Z"
+    },
+    {
+      "id": "6d434dee-9862-4aa9-8217-b73ec75bdc96",
+      "content_id": "2940c0c4-5eba-40de-a1a2-5e8f4c3cb507",
+      "claim_id": "C79",
+      "claim": "Only the addition of TAPBPR could restore UGGT1-catalyzed reglucosylation of peptide-deficient MHC I.",
+      "claim_type": "EXPLICIT",
+      "source": "Only the addition of TAPBPR could restore UGGT1-catalyzed reglucosylation (Figure 3F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:18:21.214565Z"
+    },
+    {
+      "id": "d0838937-e72d-46d8-b024-5798f60833e7",
+      "content_id": "2940c0c4-5eba-40de-a1a2-5e8f4c3cb507",
+      "claim_id": "C80",
+      "claim": "The strict dependence of UGGT1 on TAPBPR in acting towards HLA-A*68:02 is most likely not valid for all MHC I allomorphs, since the various allomorphs differ in their reliance on TAPBPR as a peptide editor.",
+      "claim_type": "EXPLICIT",
+      "source": "The strict dependence of UGGT1 on TAPBPR in acting towards HLA-A*68:02 is most likely not valid for all MHC I allomorphs, since the various allomorphs differ in their reliance on TAPBPR as a peptide editor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental data and established knowledge about MHC I allomorph diversity.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:18:21.214565Z"
+    },
+    {
+      "id": "a4a22110-c81f-4956-845a-d5eda85f1974",
+      "content_id": "2940c0c4-5eba-40de-a1a2-5e8f4c3cb507",
+      "claim_id": "C81",
+      "claim": "Experimental evidence suggests that UGGT1 can operate on MHC I in a TAPBPR-independent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, experimental evidence suggests that UGGT1 can operate on MHC I in a TAPBPR-independent manner (Neerincx et al., 2017), and it appears that UGGT1 interacts with most HC10-reactive MHC I allomorphs independent of TAPBPR, whereas the binding of W6/32-reactive MHC I allomorphs is TAPBPR-dependent (Neerincx et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:18:21.214565Z"
+    },
+    {
+      "id": "ab49fb65-c8e5-4931-95de-c48e96b52b49",
+      "content_id": "2940c0c4-5eba-40de-a1a2-5e8f4c3cb507",
+      "claim_id": "C82",
+      "claim": "UGGT1 interacts with most HC10-reactive MHC I allomorphs independent of TAPBPR, whereas the binding of W6/32-reactive MHC I allomorphs is TAPBPR-dependent.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, experimental evidence suggests that UGGT1 can operate on MHC I in a TAPBPR-independent manner (Neerincx et al., 2017), and it appears that UGGT1 interacts with most HC10-reactive MHC I allomorphs independent of TAPBPR, whereas the binding of W6/32-reactive MHC I allomorphs is TAPBPR-dependent (Neerincx et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:18:21.214565Z"
+    },
+    {
+      "id": "6fca9266-26a7-490d-963e-a3353cdfb212",
+      "content_id": "2940c0c4-5eba-40de-a1a2-5e8f4c3cb507",
+      "claim_id": "C83",
+      "claim": "Previous studies reported a preferred glucosylation by Drosophila UGGT1 towards the human allomorph HLA-B*08:01 when loaded with suboptimal peptides.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, previous studies reported a preferred glucosylation by Drosophila UGGT1 towards the human allomorph HLA-B*08:01 when loaded with suboptimal peptides (Wearsch et al., 2011; Zhang et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:18:21.214565Z"
+    },
+    {
+      "id": "ec5104b2-b756-439f-b3d5-5225b81dbe5b",
+      "content_id": "2940c0c4-5eba-40de-a1a2-5e8f4c3cb507",
+      "claim_id": "C84",
+      "claim": "HLA-B*08:01 displays no detectable interaction with human TAPBPR.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, it has been demonstrated that HLA-B*08:01 displays no detectable interaction with human TAPBPR and thus, it seems likely that UGGT1 can act on some MHC I allomorphs in a TAPBPR-independent manner (Ilca et al., 2019; Sun et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:18:21.214565Z"
+    },
+    {
+      "id": "93923563-06d4-41d5-934b-964b1434fdfe",
+      "content_id": "2940c0c4-5eba-40de-a1a2-5e8f4c3cb507",
+      "claim_id": "C85",
+      "claim": "It seems likely that UGGT1 can act on some MHC I allomorphs in a TAPBPR-independent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, it has been demonstrated that HLA-B*08:01 displays no detectable interaction with human TAPBPR and thus, it seems likely that UGGT1 can act on some MHC I allomorphs in a TAPBPR-independent manner (Ilca et al., 2019; Sun et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from citations to previous work.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:18:21.214565Z"
+    },
+    {
+      "id": "c73e3fd0-1722-42b3-a175-5c473903afcc",
+      "content_id": "2940c0c4-5eba-40de-a1a2-5e8f4c3cb507",
+      "claim_id": "C86",
+      "claim": "The mutation of C97 to alanine affected neither the catalyzed reglucosylation of MHC I-TAPBPRC97A nor the interaction with the glucosyltransferase.",
+      "claim_type": "EXPLICIT",
+      "source": "While a previous study concluded that C97 is essential for the association between TAPBPR and UGGT1 (Neerincx et al., 2017), we found that the mutation of C97 to alanine affected neither the catalyzed reglucosylation of MHC I-TAPBPRC97A nor the interaction with the glucosyltransferase (Figure 4B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4B and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:18:21.214565Z"
+    },
+    {
+      "id": "67effb1d-1081-4f0f-bec0-f94e01227794",
+      "content_id": "2940c0c4-5eba-40de-a1a2-5e8f4c3cb507",
+      "claim_id": "C87",
+      "claim": "C97 is an exposed surface residue positioned opposite the concave surface in the N-terminal domain that engulfs the \u03b12\u20131 region of the MHC I, relatively close to the glycosylated N86 in the MHC I (C\u03b1-C\u03b1 distance: 23.5 \u00c5).",
+      "claim_type": "EXPLICIT",
+      "source": "According to one of the TAPBPR-MHC I crystal structures (Thomas and Tamp\u00e9, 2017), C97 is an exposed surface residue positioned opposite the concave surface in the N-terminal domain that engulfs the \u03b12\u20131 region of the MHC I, relatively close to the glycosylated N86 in the MHC I (C\u03b1-C\u03b1 distance: 23.5 \u00c5; Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citations to previous structural studies and Figure 4A.",
+      "evidence_type": "[\"CITATION\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:18:21.214565Z"
+    },
+    {
+      "id": "7eb6e6d6-1059-4cfc-b7a8-3c9e04c57efa",
+      "content_id": "2940c0c4-5eba-40de-a1a2-5e8f4c3cb507",
+      "claim_id": "C88",
+      "claim": "Ca2+ is an essential cofactor for UGGT1 to function as a catalyst of the glucosyl transfer reaction.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite Ca2+ being an essential cofactor for UGGT1 to function as a catalyst of the glucosyl transfer reaction, we reveal that the metal ion is not required for the recognition of Man9GlcNAc2-MHC I-TAPBPR as substrate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by established scientific knowledge about UGGT1 catalysis.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:18:21.214565Z"
+    },
+    {
+      "id": "a5dcbbf1-903e-4fc3-bcdd-7b4d20b48b57",
+      "content_id": "2940c0c4-5eba-40de-a1a2-5e8f4c3cb507",
+      "claim_id": "C89",
+      "claim": "The metal ion Ca2+ is not required for the recognition of Man9GlcNAc2-MHC I-TAPBPR as substrate by UGGT1.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite Ca2+ being an essential cofactor for UGGT1 to function as a catalyst of the glucosyl transfer reaction, we reveal that the metal ion is not required for the recognition of Man9GlcNAc2-MHC I-TAPBPR as substrate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental data showing Ca2+-independent binding.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:18:21.214565Z"
+    },
+    {
+      "id": "3264a348-fea1-4f7e-bcec-eaf287f17a9e",
+      "content_id": "2940c0c4-5eba-40de-a1a2-5e8f4c3cb507",
+      "claim_id": "C90",
+      "claim": "Neither the mutation of the Ca2+-coordinating DxD sequence motif in UGGT1 nor the presence of the Ca2+ chelator EGTA changed the binding of the glucosyltransferase to Man9GlcNAc2-MHC I-TAPBPR.",
+      "claim_type": "EXPLICIT",
+      "source": "Neither the mutation of the Ca2+-coordinating DxD sequence motif in UGGT1 nor the presence of the Ca2+ chelator EGTA changed the binding of the glucosyltransferase to Man9GlcNAc2-MHC I-TAPBPR (Figure 4E and F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4E and F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:18:21.214565Z"
+    },
+    {
+      "id": "2ee2a230-e233-453c-8099-841f5ee959e7",
+      "content_id": "2940c0c4-5eba-40de-a1a2-5e8f4c3cb507",
+      "claim_id": "C91",
+      "claim": "TAPBPR tracks down and stabilizes empty or suboptimally loaded MHC I complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, the data we present here add to our current picture of MHC I quality control inside the ER, where UGGT1 and TAPBPR emerge as team players, with TAPBPR tracking down and stabilizing empty or suboptimally loaded MHC I complexes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental data and established knowledge about TAPBPR function.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:18:21.214565Z"
+    },
+    {
+      "id": "3ee606c1-786d-4018-badf-f88f34ac4518",
+      "content_id": "2940c0c4-5eba-40de-a1a2-5e8f4c3cb507",
+      "claim_id": "C92",
+      "claim": "For MHC I complexes that have been deglucosylated by GluII and cannot be loaded with optimal peptide due to scarcity of suitable cargo, TAPBPR acts as a mediator for UGGT1-catalyzed reglucosylation.",
+      "claim_type": "EXPLICIT",
+      "source": "For those MHC I complexes that have been deglucosylated by GluII and cannot be loaded with optimal peptide due to scarcity of suitable cargo, TAPBPR acts as a mediator for UGGT1-catalyzed reglucosylation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental data showing TAPBPR-mediated reglucosylation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:18:21.214565Z"
+    },
+    {
+      "id": "b9d6c474-2512-4b0e-aa6a-7821304353dd",
+      "content_id": "2940c0c4-5eba-40de-a1a2-5e8f4c3cb507",
+      "claim_id": "C93",
+      "claim": "The TAPBPR-UGGT1 complex promotes recycling of immature MHC I to the Glc1Man9GlcNAc2-specific calnexin/calreticulin cycle and/or to the second peptide editor tapasin inside the PLC via calreticulin.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the TAPBPR-UGGT1 complex promotes recycling of immature MHC I to the Glc1Man9GlcNAc2-specific calnexin/calreticulin cycle and/or to the second peptide editor tapasin inside the PLC via calreticulin (Neerincx et al., 2017; Wearsch et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental data and citations to previous work.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:18:21.214565Z"
+    },
+    {
+      "id": "67dfc790-a03f-4085-976a-bd4eb16eabb4",
+      "content_id": "2940c0c4-5eba-40de-a1a2-5e8f4c3cb507",
+      "claim_id": "C94",
+      "claim": "The in-vitro reglucosylation system consists of human UGGT1 and peptide-receptive MHC I-TAPBPR complexes containing the ER-lumenal domains of TAPBPR and the MHC I allomorph HLA-A*68:02.",
+      "claim_type": "EXPLICIT",
+      "source": "To investigate the role of TAPBPR in the UGGT1-catalyzed quality control of MHC I, we developed an in-vitro reglucosylation system consisting of human UGGT1 and peptide-receptive MHC I-TAPBPR complexes containing the ER-lumenal domains of TAPBPR and the MHC I allomorph HLA-A*68:02.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the experimental design described in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:18:21.214565Z"
+    },
+    {
+      "id": "1c87ec33-c611-44f1-a5e3-9cb1088b1cbc",
+      "content_id": "2940c0c4-5eba-40de-a1a2-5e8f4c3cb507",
+      "claim_id": "C95",
+      "claim": "The conditions of the experimental system mimicked the peptide-depleted physiological environments TAPBPR is operating in.",
+      "claim_type": "EXPLICIT",
+      "source": "The conditions of this experimental system mimicked the peptide-depleted physiological environments TAPBPR is operating in.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the experimental design described in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:18:21.214565Z"
+    },
+    {
+      "id": "f4b662d8-d0f6-4389-88ac-d5339314adfb",
+      "content_id": "2940c0c4-5eba-40de-a1a2-5e8f4c3cb507",
+      "claim_id": "C96",
+      "claim": "HLA-A*68:02 was expressed as a fusion between \u03b22m and heavy chain, with a cleavable C-terminal Fos leucine zipper domain.",
+      "claim_type": "EXPLICIT",
+      "source": "In short, HLA-A*68:02 was expressed as a fusion between \u03b22m and heavy chain, with a cleavable C-terminal Fos leucine zipper domain (Figure 1A), whereas the TAPBPR construct contained a cleavable C-terminal Jun leucine zipper domain and a Twin-Strep-tag (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the experimental design shown in Figure 1A.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:18:21.214565Z"
+    },
+    {
+      "id": "c13cfc1f-1040-497e-9157-cc4f3b1a0406",
+      "content_id": "2940c0c4-5eba-40de-a1a2-5e8f4c3cb507",
+      "claim_id": "C97",
+      "claim": "The TAPBPR construct contained a cleavable C-terminal Jun leucine zipper domain and a Twin-Strep-tag.",
+      "claim_type": "EXPLICIT",
+      "source": "In short, HLA-A*68:02 was expressed as a fusion between \u03b22m and heavy chain, with a cleavable C-terminal Fos leucine zipper domain (Figure 1A), whereas the TAPBPR construct contained a cleavable C-terminal Jun leucine zipper domain and a Twin-Strep-tag (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the experimental design shown in Figure 1A.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:18:21.214565Z"
+    },
+    {
+      "id": "fc2090eb-8307-46dc-8663-dd0e834fefb7",
+      "content_id": "2940c0c4-5eba-40de-a1a2-5e8f4c3cb507",
+      "claim_id": "C98",
+      "claim": "Co-expression of MHC I with TAPBPR was carried out in the presence of the alkaloid kifunensine to obtain the HLA-A*68:02 species carrying at Asn86 the Man9GlcNAc2 glycan that is recognized by UGGT1.",
+      "claim_type": "EXPLICIT",
+      "source": "Co-expression of MHC I with TAPBPR was carried out in the presence of the alkaloid kifunensine to obtain the HLA-A*68:02 species carrying at Asn86 the Man9GlcNAc2 glycan that is recognized by UGGT1 (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the experimental design shown in Figure 1B.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:18:21.214565Z"
+    },
+    {
+      "id": "9c174dfb-51b5-4f92-a64a-db2e24bb4b16",
+      "content_id": "2940c0c4-5eba-40de-a1a2-5e8f4c3cb507",
+      "claim_id": "C99",
+      "claim": "The strategic approach applied in this study combines protein glycoengineering in human cells with LC-MS analysis, providing the major advantage of a fully defined glycan pattern on HLA-A*68:02 which allowed monitoring of the UGGT1-catalyzed reglucosylation in detail.",
+      "claim_type": "EXPLICIT",
+      "source": "The strategic approach applied in this study combines protein glycoengineering in human cells with LC-MS analysis, providing the major advantage of a fully defined glycan pattern on HLA-A*68:02 which allowed us to monitor the UGGT1-catalyzed reglucosylation in detail.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the experimental design and methodology described in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:18:21.214565Z"
+    },
+    {
+      "id": "2bae6a1f-8d0d-458f-aa6c-68d2ffe97665",
+      "content_id": "2940c0c4-5eba-40de-a1a2-5e8f4c3cb507",
+      "claim_id": "C100",
+      "claim": "A direct interaction between TAPBPR-MHC I and UGGT1 was demonstrated using purified human proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "We demonstrate a direct interaction between TAPBPR-MHC I and UGGT1 using purified human proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the pull-down experiments described in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:18:21.214565Z"
+    },
+    {
+      "id": "4fd1050f-83df-4787-920c-ada0efd06245",
+      "content_id": "2940c0c4-5eba-40de-a1a2-5e8f4c3cb507",
+      "claim_id": "C101",
+      "claim": "TAPBPR is both necessary and sufficient to mediate reglucosylation of the human MHC I allomorph HLA-A*68:02 by UGGT1.",
+      "claim_type": "EXPLICIT",
+      "source": "We describe an in-vitro reglucosylation assay that is based on a combination of protein glycoengineering and top-down liquid chromatography-mass spectrometry (LC-MS) that enabled us to show that TAPBPR is both necessary and sufficient to mediate reglucosylation of the human MHC I allomorph HLA-A*68:02 by UGGT1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the experimental data showing that TAPBPR is required for reglucosylation and that adding TAPBPR restores activity.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:18:21.214565Z"
+    },
+    {
+      "id": "a14b29b1-a6a9-4655-b54e-53ceca2f9646",
+      "content_id": "2940c0c4-5eba-40de-a1a2-5e8f4c3cb507",
+      "claim_id": "C102",
+      "claim": "TAPBPR unmediatedly aids UGGT1 in reglucosylating peptide-deficient MHC I, thereby affecting the maturation and quality control of MHC I in antigen processing and presentation beyond its peptide selector function.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings corroborate the notion that TAPBPR unmediatedly aids UGGT1 in reglucosylating peptide-deficient MHC I, thereby affecting the maturation and quality control of MHC I in antigen processing and presentation beyond its peptide selector function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental data showing TAPBPR-mediated reglucosylation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:18:21.214565Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "1f173ca3-5c75-4417-bae3-98fd082f0dd9",
+      "content_id": "2940c0c4-5eba-40de-a1a2-5e8f4c3cb507",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors developed an in-vitro reglucosylation system using human UGGT1 and peptide-receptive MHC I-TAPBPR complexes. The system utilized glycoengineering with kifunensine to generate Man9GlcNAc2-HLA-A*68:02, and LC-MS analysis to monitor reglucosylation. Optimization showed 10 \u00b5M kifunensine yielded the highest Man9GlcNAc2 proportion, and the purified complex eluted as a monodisperse 90 kDa sample.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C94-C99 describe the experimental system design and optimization. The data in Figures 1 and Figure 1\u2014figure supplement 1 support the construct design, kifunensine optimization, and successful purification of the complex. The approach is well-documented with appropriate controls and characterization.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:18:21.214565Z"
+    },
+    {
+      "id": "a55d95a7-0ed3-4df0-a36b-a5e31f551467",
+      "content_id": "2940c0c4-5eba-40de-a1a2-5e8f4c3cb507",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Human UGGT1 co-expressed with Sep15 exhibited UDP-glucose-dependent glucosyltransferase activity towards Man9GlcNAc2-HLA-A*68:02-TAPBPR. The D1316N mutant was catalytically inactive, and activity could not be restored by adding Sep15. A degradation product representing the C-terminal catalytic domain was detected.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C42 are supported by experimental data in Figures 1D, 2A-D, and Figure 1\u2014figure supplement 2. The LC-MS data clearly show UDP-glucose-dependent activity, and the D1316N mutant serves as an appropriate negative control. The detection of the degradation product is consistent with prior literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:18:21.214565Z"
+    },
+    {
+      "id": "4ade7a68-2615-4e57-9bac-dc59228e81c5",
+      "content_id": "2940c0c4-5eba-40de-a1a2-5e8f4c3cb507",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "UGGT1-catalyzed reglucosylation reactions reached saturation at approximately 80% product formation, similar to previous observations with rat UGGT. This saturation could not be overcome by raising temperature or increasing enzyme concentration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C45 and C74-C75 are supported by kinetic data in Figures 2E-F and Figure 2\u2014figure supplement 1. The ~80% saturation is consistently observed across different conditions and is corroborated by citation to prior work with rat UGGT. The inability to overcome saturation by varying temperature or enzyme concentration is experimentally demonstrated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:18:21.214565Z"
+    },
+    {
+      "id": "384c91d6-d86c-44bc-ba6c-3b2250965093",
+      "content_id": "2940c0c4-5eba-40de-a1a2-5e8f4c3cb507",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The authors generated peptide-loaded and peptide-deficient MHC I by using a photo-cleavable peptide. High-affinity peptide binding led to TAPBPR dissociation, allowing isolation of pMHC I. UV illumination generated peptide-deficient MHC I, which remained stable and bound the conformation-specific antibody W6/32.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C49 are supported by data in Figures 3A-C and Figure 3\u2014figure supplements 1-2. The experimental design is sound, with LC-MS confirmation of peptide-loading status and W6/32 binding demonstrating MHC I stability. The photo-cleavable peptide approach is well-validated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:18:21.214565Z"
+    },
+    {
+      "id": "8643d574-f291-48d1-95ce-664b6ba2eb0e",
+      "content_id": "2940c0c4-5eba-40de-a1a2-5e8f4c3cb507",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "TAPBPR is both necessary and sufficient for UGGT1-catalyzed reglucosylation of HLA-A*68:02. Neither peptide-loaded nor peptide-deficient HLA-A*68:02 were reglucosylated by UGGT1 in the absence of TAPBPR. Adding TAPBPR restored UGGT1 activity towards peptide-deficient MHC I, while loading a low-affinity peptide could not restore susceptibility to UGGT1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C53, C76-C79, and C101 represent the central finding and are strongly supported by data in Figures 3D-F and Figure 3\u2014figure supplement 3. The experiments include appropriate controls (peptide-loaded vs. peptide-free MHC I, with and without TAPBPR) and demonstrate both necessity and sufficiency of TAPBPR. The low-affinity peptide control further strengthens the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:18:21.214565Z"
+    },
+    {
+      "id": "c8814257-e7fd-4d22-9102-c0f167e2d019",
+      "content_id": "2940c0c4-5eba-40de-a1a2-5e8f4c3cb507",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "TAPBPR promotes reglucosylation of peptide-free MHC I by UGGT1, and UGGT1 cooperates with TAPBPR in fulfilling a crucial function in the quality control mechanisms of antigen processing and presentation. TAPBPR aids UGGT1 in reglucosylating peptide-deficient MHC I, affecting MHC I maturation and quality control beyond its peptide selector function.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C8, and C102 represent the main conclusions of the study. They are well-supported by the experimental data showing TAPBPR-mediated reglucosylation (Figures 2-3) and are consistent with the broader understanding of MHC I quality control. The inference that this represents cooperation in quality control is reasonable given the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:18:21.214565Z"
+    },
+    {
+      "id": "0fae2c77-5956-4ef4-be92-44a3452712c2",
+      "content_id": "2940c0c4-5eba-40de-a1a2-5e8f4c3cb507",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "UGGT1 exhibited significantly higher reglucosylation activity towards the TAPBPRC97A mutant complex compared to wildtype. The C97A mutation did not affect the interaction between UGGT1 and HLA-A*68:02-TAPBPR or the catalyzed reglucosylation. Control experiments verified that observed differences were not caused by different peptides.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C65 and C86 are supported by data in Figures 4B-C and Figure 4\u2014figure supplement 1. The statistical analysis shows significant differences (p\u22640.01), and appropriate controls exclude peptide-binding artifacts. This finding contradicts prior work (C61) but is well-documented experimentally.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:18:21.214565Z"
+    },
+    {
+      "id": "17feed07-64ac-4810-acdf-508bfa4fbe00",
+      "content_id": "2940c0c4-5eba-40de-a1a2-5e8f4c3cb507",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "In pull-down experiments, the degradation product representing the C-terminal catalytic glucosyltransferase domain of UGGT1 was not present in the eluate, indicating that the interface of UGGT1 with HLA-A*68:02-TAPBPR extends beyond the glucosyltransferase domain.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C66 is supported by the observation in Figure 4C. The inference that the interface extends beyond the glucosyltransferase domain is reasonable given that the isolated domain does not co-purify with the complex. This provides insight into the binding mechanism.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:18:21.214565Z"
+    },
+    {
+      "id": "12083eb8-5129-4435-9975-3775d9939640",
+      "content_id": "2940c0c4-5eba-40de-a1a2-5e8f4c3cb507",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "While Ca2+ is essential for UGGT1 catalytic activity, it is not required for recognition of Man9GlcNAc2-MHC I-TAPBPR as substrate. Neither the D1316N mutation disrupting the Ca2+-coordinating DxD motif nor the presence of EGTA changed UGGT1 binding to the complex.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69-C70 and C88-C90 are supported by pull-down data in Figures 4E-F. The experiments appropriately separate binding from catalysis by using the catalytically inactive mutant and EGTA. The conclusion that Ca2+ is required for catalysis but not substrate recognition is well-supported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:18:21.214565Z"
+    },
+    {
+      "id": "cd0c2d2e-e83b-4b4e-abdb-00a0ed573ec2",
+      "content_id": "2940c0c4-5eba-40de-a1a2-5e8f4c3cb507",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "A direct interaction between TAPBPR-MHC I and UGGT1 was demonstrated using purified human proteins.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C100 is supported by pull-down experiments in Figures 4C, E, and F. The use of purified components demonstrates direct interaction without cellular context confounders. This is a key technical achievement of the study.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:18:21.214565Z"
+    },
+    {
+      "id": "83b4fa5a-2602-4973-a58b-6c1ac875e89b",
+      "content_id": "2940c0c4-5eba-40de-a1a2-5e8f4c3cb507",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The strict dependence of UGGT1 on TAPBPR for acting towards HLA-A*68:02 is likely not valid for all MHC I allomorphs. Evidence suggests UGGT1 can operate on some MHC I allomorphs in a TAPBPR-independent manner, particularly HC10-reactive allomorphs like HLA-B*08:01 which shows no detectable interaction with TAPBPR.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C80-C85 are supported by citations to prior work and represent appropriate contextualization of the findings. The authors acknowledge limitations of their specific system (HLA-A*68:02) and cite evidence for TAPBPR-independent mechanisms with other allomorphs. This demonstrates scientific rigor in interpretation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:18:21.214565Z"
+    },
+    {
+      "id": "476fc56d-3c0c-4e93-9b8a-7f0cd635a956",
+      "content_id": "2940c0c4-5eba-40de-a1a2-5e8f4c3cb507",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "TAPBPR tracks down and stabilizes empty or suboptimally loaded MHC I complexes. For MHC I that have been deglucosylated by GluII and cannot be loaded with optimal peptide, TAPBPR acts as a mediator for UGGT1-catalyzed reglucosylation. The TAPBPR-UGGT1 complex promotes recycling of immature MHC I to the calnexin/calreticulin cycle and/or to tapasin inside the PLC.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C91-C93 represent the mechanistic model proposed by the authors. These are reasonable inferences from the experimental data (Figures 2-4) combined with established knowledge about MHC I quality control. The model is consistent with prior work and provides a coherent framework for understanding the results.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:18:21.214565Z"
+    },
+    {
+      "id": "5622f1b9-f354-4f5a-87f0-8ca73236e034",
+      "content_id": "2940c0c4-5eba-40de-a1a2-5e8f4c3cb507",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The manuscript provides extensive background on MHC I antigen processing and presentation, the roles of tapasin and TAPBPR, the calnexin/calreticulin cycle, UGGT1 function, and structural features of TAPBPR. This includes information about peptide transport, the PLC, glycan processing, and prior findings about C97 in TAPBPR.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C33, C54-C62, C67-C68, C71-C73, and C87 represent background information supported by established knowledge and citations to prior work. These claims provide necessary context for the study but are not novel findings. They are appropriately cited and accurately represent the current understanding of the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:18:21.214565Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "67dfc790-a03f-4085-976a-bd4eb16eabb4",
+      "result_id": "1f173ca3-5c75-4417-bae3-98fd082f0dd9"
+    },
+    {
+      "claim_id": "1c87ec33-c611-44f1-a5e3-9cb1088b1cbc",
+      "result_id": "1f173ca3-5c75-4417-bae3-98fd082f0dd9"
+    },
+    {
+      "claim_id": "f4b662d8-d0f6-4389-88ac-d5339314adfb",
+      "result_id": "1f173ca3-5c75-4417-bae3-98fd082f0dd9"
+    },
+    {
+      "claim_id": "c13cfc1f-1040-497e-9157-cc4f3b1a0406",
+      "result_id": "1f173ca3-5c75-4417-bae3-98fd082f0dd9"
+    },
+    {
+      "claim_id": "fc2090eb-8307-46dc-8663-dd0e834fefb7",
+      "result_id": "1f173ca3-5c75-4417-bae3-98fd082f0dd9"
+    },
+    {
+      "claim_id": "8baea423-f561-4468-80a4-32a098d75cee",
+      "result_id": "1f173ca3-5c75-4417-bae3-98fd082f0dd9"
+    },
+    {
+      "claim_id": "be43ade2-15da-41f1-9991-413d4f5a5186",
+      "result_id": "1f173ca3-5c75-4417-bae3-98fd082f0dd9"
+    },
+    {
+      "claim_id": "658f277e-5dd3-4136-85d5-8e848c8c050c",
+      "result_id": "1f173ca3-5c75-4417-bae3-98fd082f0dd9"
+    },
+    {
+      "claim_id": "f9a4eda7-fc5a-46cb-9515-acbf8e3cdb0a",
+      "result_id": "1f173ca3-5c75-4417-bae3-98fd082f0dd9"
+    },
+    {
+      "claim_id": "9c174dfb-51b5-4f92-a64a-db2e24bb4b16",
+      "result_id": "1f173ca3-5c75-4417-bae3-98fd082f0dd9"
+    },
+    {
+      "claim_id": "8eb8ea6e-5851-4f41-904c-f057ea05bd67",
+      "result_id": "a55d95a7-0ed3-4df0-a36b-a5e31f551467"
+    },
+    {
+      "claim_id": "70eda262-344d-49e2-80fe-146195a4b8c5",
+      "result_id": "a55d95a7-0ed3-4df0-a36b-a5e31f551467"
+    },
+    {
+      "claim_id": "262ed2cf-335d-44fc-aa5e-5476103e0357",
+      "result_id": "a55d95a7-0ed3-4df0-a36b-a5e31f551467"
+    },
+    {
+      "claim_id": "e1a5b518-6838-43e7-a735-d8754f881afb",
+      "result_id": "a55d95a7-0ed3-4df0-a36b-a5e31f551467"
+    },
+    {
+      "claim_id": "d4435c92-9823-48f0-88fb-e1d94cafb626",
+      "result_id": "a55d95a7-0ed3-4df0-a36b-a5e31f551467"
+    },
+    {
+      "claim_id": "5399d101-8e4f-4586-8d2f-4214c46c1359",
+      "result_id": "4ade7a68-2615-4e57-9bac-dc59228e81c5"
+    },
+    {
+      "claim_id": "e01622fe-0ecc-4933-ad15-a4eb22d3305e",
+      "result_id": "4ade7a68-2615-4e57-9bac-dc59228e81c5"
+    },
+    {
+      "claim_id": "eed20350-f5d5-43f1-922c-65ff608c1d0b",
+      "result_id": "4ade7a68-2615-4e57-9bac-dc59228e81c5"
+    },
+    {
+      "claim_id": "7a4f855a-a1af-42a3-a099-b8c1cf25c816",
+      "result_id": "4ade7a68-2615-4e57-9bac-dc59228e81c5"
+    },
+    {
+      "claim_id": "29f45d6a-c707-4563-aec1-94b08000aa96",
+      "result_id": "4ade7a68-2615-4e57-9bac-dc59228e81c5"
+    },
+    {
+      "claim_id": "88ff947d-447a-4e0f-8f84-609f1a904a70",
+      "result_id": "384c91d6-d86c-44bc-ba6c-3b2250965093"
+    },
+    {
+      "claim_id": "14d45e12-f2e8-4ed2-acc3-761c4a4ccb04",
+      "result_id": "384c91d6-d86c-44bc-ba6c-3b2250965093"
+    },
+    {
+      "claim_id": "8fecee16-f575-4a85-bf13-c6a5ef2b934f",
+      "result_id": "384c91d6-d86c-44bc-ba6c-3b2250965093"
+    },
+    {
+      "claim_id": "263e7876-cc28-4fb0-bf9a-67d556c26744",
+      "result_id": "384c91d6-d86c-44bc-ba6c-3b2250965093"
+    },
+    {
+      "claim_id": "d61fb8e2-0f59-4fff-8980-95631a869453",
+      "result_id": "8643d574-f291-48d1-95ce-664b6ba2eb0e"
+    },
+    {
+      "claim_id": "6d095340-2360-4d19-88c4-643277be3abd",
+      "result_id": "8643d574-f291-48d1-95ce-664b6ba2eb0e"
+    },
+    {
+      "claim_id": "15284967-7924-4b79-bff2-958c35319d91",
+      "result_id": "8643d574-f291-48d1-95ce-664b6ba2eb0e"
+    },
+    {
+      "claim_id": "d0887f9d-4e49-4015-bf44-a9cec0d20c74",
+      "result_id": "8643d574-f291-48d1-95ce-664b6ba2eb0e"
+    },
+    {
+      "claim_id": "c6e3ef25-9a1a-4775-951e-f74ec130084a",
+      "result_id": "8643d574-f291-48d1-95ce-664b6ba2eb0e"
+    },
+    {
+      "claim_id": "e4f32a3f-b1ae-45bd-9f60-7dbcab51cfb8",
+      "result_id": "8643d574-f291-48d1-95ce-664b6ba2eb0e"
+    },
+    {
+      "claim_id": "c7ac68cc-6299-4920-b3b6-64c14d1477fd",
+      "result_id": "8643d574-f291-48d1-95ce-664b6ba2eb0e"
+    },
+    {
+      "claim_id": "6d434dee-9862-4aa9-8217-b73ec75bdc96",
+      "result_id": "8643d574-f291-48d1-95ce-664b6ba2eb0e"
+    },
+    {
+      "claim_id": "4fd1050f-83df-4787-920c-ada0efd06245",
+      "result_id": "8643d574-f291-48d1-95ce-664b6ba2eb0e"
+    },
+    {
+      "claim_id": "221bd32f-bec8-4967-81f6-0c726d0959b8",
+      "result_id": "c8814257-e7fd-4d22-9102-c0f167e2d019"
+    },
+    {
+      "claim_id": "3991b510-f89a-4ca6-8c29-66903312b52e",
+      "result_id": "c8814257-e7fd-4d22-9102-c0f167e2d019"
+    },
+    {
+      "claim_id": "a14b29b1-a6a9-4655-b54e-53ceca2f9646",
+      "result_id": "c8814257-e7fd-4d22-9102-c0f167e2d019"
+    },
+    {
+      "claim_id": "363028b8-d8b1-454e-a53d-c297687e8196",
+      "result_id": "0fae2c77-5956-4ef4-be92-44a3452712c2"
+    },
+    {
+      "claim_id": "7c357b16-ee6f-4188-aefd-d8715629a28d",
+      "result_id": "0fae2c77-5956-4ef4-be92-44a3452712c2"
+    },
+    {
+      "claim_id": "cbc048bd-e064-4b01-b0dc-753345735e95",
+      "result_id": "0fae2c77-5956-4ef4-be92-44a3452712c2"
+    },
+    {
+      "claim_id": "c73e3fd0-1722-42b3-a175-5c473903afcc",
+      "result_id": "0fae2c77-5956-4ef4-be92-44a3452712c2"
+    },
+    {
+      "claim_id": "848c3992-f0f0-4e2e-bb12-cd65236aedad",
+      "result_id": "17feed07-64ac-4810-acdf-508bfa4fbe00"
+    },
+    {
+      "claim_id": "b830ba44-fa5c-4060-9798-12c0f7083058",
+      "result_id": "12083eb8-5129-4435-9975-3775d9939640"
+    },
+    {
+      "claim_id": "e513de8c-45ac-4730-a3fb-b418ccbd1460",
+      "result_id": "12083eb8-5129-4435-9975-3775d9939640"
+    },
+    {
+      "claim_id": "7eb6e6d6-1059-4cfc-b7a8-3c9e04c57efa",
+      "result_id": "12083eb8-5129-4435-9975-3775d9939640"
+    },
+    {
+      "claim_id": "a5dcbbf1-903e-4fc3-bcdd-7b4d20b48b57",
+      "result_id": "12083eb8-5129-4435-9975-3775d9939640"
+    },
+    {
+      "claim_id": "3264a348-fea1-4f7e-bcec-eaf287f17a9e",
+      "result_id": "12083eb8-5129-4435-9975-3775d9939640"
+    },
+    {
+      "claim_id": "2bae6a1f-8d0d-458f-aa6c-68d2ffe97665",
+      "result_id": "cd0c2d2e-e83b-4b4e-abdb-00a0ed573ec2"
+    },
+    {
+      "claim_id": "d0838937-e72d-46d8-b024-5798f60833e7",
+      "result_id": "83b4fa5a-2602-4973-a58b-6c1ac875e89b"
+    },
+    {
+      "claim_id": "a4a22110-c81f-4956-845a-d5eda85f1974",
+      "result_id": "83b4fa5a-2602-4973-a58b-6c1ac875e89b"
+    },
+    {
+      "claim_id": "ab49fb65-c8e5-4931-95de-c48e96b52b49",
+      "result_id": "83b4fa5a-2602-4973-a58b-6c1ac875e89b"
+    },
+    {
+      "claim_id": "6fca9266-26a7-490d-963e-a3353cdfb212",
+      "result_id": "83b4fa5a-2602-4973-a58b-6c1ac875e89b"
+    },
+    {
+      "claim_id": "ec5104b2-b756-439f-b3d5-5225b81dbe5b",
+      "result_id": "83b4fa5a-2602-4973-a58b-6c1ac875e89b"
+    },
+    {
+      "claim_id": "93923563-06d4-41d5-934b-964b1434fdfe",
+      "result_id": "83b4fa5a-2602-4973-a58b-6c1ac875e89b"
+    },
+    {
+      "claim_id": "2ee2a230-e233-453c-8099-841f5ee959e7",
+      "result_id": "476fc56d-3c0c-4e93-9b8a-7f0cd635a956"
+    },
+    {
+      "claim_id": "3ee606c1-786d-4018-badf-f88f34ac4518",
+      "result_id": "476fc56d-3c0c-4e93-9b8a-7f0cd635a956"
+    },
+    {
+      "claim_id": "b9d6c474-2512-4b0e-aa6a-7821304353dd",
+      "result_id": "476fc56d-3c0c-4e93-9b8a-7f0cd635a956"
+    },
+    {
+      "claim_id": "ac01f003-380c-4cf0-ac48-dc6d187fdb03",
+      "result_id": "5622f1b9-f354-4f5a-87f0-8ca73236e034"
+    },
+    {
+      "claim_id": "657cd805-2ece-4df4-9918-92c381932a80",
+      "result_id": "5622f1b9-f354-4f5a-87f0-8ca73236e034"
+    },
+    {
+      "claim_id": "99321d3f-6f3d-4caf-98cf-a05bd57cb444",
+      "result_id": "5622f1b9-f354-4f5a-87f0-8ca73236e034"
+    },
+    {
+      "claim_id": "bd1c0c43-6dde-4db6-8bd8-5960a6902812",
+      "result_id": "5622f1b9-f354-4f5a-87f0-8ca73236e034"
+    },
+    {
+      "claim_id": "6c841f0a-af1e-4643-b85d-de9c6f2423ac",
+      "result_id": "5622f1b9-f354-4f5a-87f0-8ca73236e034"
+    },
+    {
+      "claim_id": "46ebd8bc-0b7b-4f25-bb99-0104139dc367",
+      "result_id": "5622f1b9-f354-4f5a-87f0-8ca73236e034"
+    },
+    {
+      "claim_id": "96c64365-3fca-45b5-a3b0-f4042fb189bc",
+      "result_id": "5622f1b9-f354-4f5a-87f0-8ca73236e034"
+    },
+    {
+      "claim_id": "4eeb3805-30b6-4c59-93eb-1056fe0f1951",
+      "result_id": "5622f1b9-f354-4f5a-87f0-8ca73236e034"
+    },
+    {
+      "claim_id": "1c0bc421-a9dc-4131-8b66-5a7ac2d31c34",
+      "result_id": "5622f1b9-f354-4f5a-87f0-8ca73236e034"
+    },
+    {
+      "claim_id": "3496e9db-53d7-4db2-b25c-ab18cfa448a1",
+      "result_id": "5622f1b9-f354-4f5a-87f0-8ca73236e034"
+    },
+    {
+      "claim_id": "68d25b5f-4951-485b-a414-409bd436587a",
+      "result_id": "5622f1b9-f354-4f5a-87f0-8ca73236e034"
+    },
+    {
+      "claim_id": "14cb53b0-e122-4e12-b19c-9aca796420be",
+      "result_id": "5622f1b9-f354-4f5a-87f0-8ca73236e034"
+    },
+    {
+      "claim_id": "bc6751c9-44e7-4e5b-b1d8-a3bafc9cf6c0",
+      "result_id": "5622f1b9-f354-4f5a-87f0-8ca73236e034"
+    },
+    {
+      "claim_id": "48b3f0c7-82a9-4cae-be90-84f2e4ef3ed0",
+      "result_id": "5622f1b9-f354-4f5a-87f0-8ca73236e034"
+    },
+    {
+      "claim_id": "ccdd9ff7-8077-4451-abdc-0f9c70c36b1a",
+      "result_id": "5622f1b9-f354-4f5a-87f0-8ca73236e034"
+    },
+    {
+      "claim_id": "a955c1c8-3b1e-43d6-ba8b-a712a0cd6c4d",
+      "result_id": "5622f1b9-f354-4f5a-87f0-8ca73236e034"
+    },
+    {
+      "claim_id": "b4ca4e81-dd66-4300-8f39-0f498b21846f",
+      "result_id": "5622f1b9-f354-4f5a-87f0-8ca73236e034"
+    },
+    {
+      "claim_id": "29ae709b-3a13-4f9d-8791-62378f4773d5",
+      "result_id": "5622f1b9-f354-4f5a-87f0-8ca73236e034"
+    },
+    {
+      "claim_id": "2f7a9718-6771-4748-9ce8-f4e3970571b9",
+      "result_id": "5622f1b9-f354-4f5a-87f0-8ca73236e034"
+    },
+    {
+      "claim_id": "badf8f75-f7b7-4ecb-856f-1d9d716da83e",
+      "result_id": "5622f1b9-f354-4f5a-87f0-8ca73236e034"
+    },
+    {
+      "claim_id": "523027fe-cb8e-463c-94f8-c76450d9327b",
+      "result_id": "5622f1b9-f354-4f5a-87f0-8ca73236e034"
+    },
+    {
+      "claim_id": "20c49064-c852-46d1-9d1f-e93567e465b8",
+      "result_id": "5622f1b9-f354-4f5a-87f0-8ca73236e034"
+    },
+    {
+      "claim_id": "fc05e9ad-25cf-40b8-9546-1fde6955e4cf",
+      "result_id": "5622f1b9-f354-4f5a-87f0-8ca73236e034"
+    },
+    {
+      "claim_id": "a336d0e3-7c90-41f5-a2f8-1e9fab906fb9",
+      "result_id": "5622f1b9-f354-4f5a-87f0-8ca73236e034"
+    },
+    {
+      "claim_id": "9dbf57ba-0ef1-4033-92de-411d29542e88",
+      "result_id": "5622f1b9-f354-4f5a-87f0-8ca73236e034"
+    },
+    {
+      "claim_id": "883d4da4-9f4d-4c16-80d2-ee46bca0a814",
+      "result_id": "5622f1b9-f354-4f5a-87f0-8ca73236e034"
+    },
+    {
+      "claim_id": "e673a2ed-c8f6-42f5-9d50-a68e5b542ad7",
+      "result_id": "5622f1b9-f354-4f5a-87f0-8ca73236e034"
+    },
+    {
+      "claim_id": "6ebbb17c-bf70-4ed6-a2d5-b3285b5c7065",
+      "result_id": "5622f1b9-f354-4f5a-87f0-8ca73236e034"
+    },
+    {
+      "claim_id": "32e88fdb-47d9-4196-8755-ff88d6a72536",
+      "result_id": "5622f1b9-f354-4f5a-87f0-8ca73236e034"
+    },
+    {
+      "claim_id": "7114c685-d606-4488-a00d-a939d24f2aae",
+      "result_id": "5622f1b9-f354-4f5a-87f0-8ca73236e034"
+    },
+    {
+      "claim_id": "2a2ce759-4c42-42ea-b1d8-2f235978e861",
+      "result_id": "5622f1b9-f354-4f5a-87f0-8ca73236e034"
+    },
+    {
+      "claim_id": "7ea7acbd-4daa-4199-a298-eb16ebed4795",
+      "result_id": "5622f1b9-f354-4f5a-87f0-8ca73236e034"
+    },
+    {
+      "claim_id": "6a332f80-e603-4dd2-a556-82d41e4e5a89",
+      "result_id": "5622f1b9-f354-4f5a-87f0-8ca73236e034"
+    },
+    {
+      "claim_id": "23589487-063f-4c09-9422-f938f2df17ab",
+      "result_id": "5622f1b9-f354-4f5a-87f0-8ca73236e034"
+    },
+    {
+      "claim_id": "df0b3350-bfa1-4101-bb7b-90e5917d2570",
+      "result_id": "5622f1b9-f354-4f5a-87f0-8ca73236e034"
+    },
+    {
+      "claim_id": "b1a0f2fd-3704-4f95-8ad4-d4ecc54f7fdb",
+      "result_id": "5622f1b9-f354-4f5a-87f0-8ca73236e034"
+    },
+    {
+      "claim_id": "c8dfea75-fd2d-4197-8b42-6328730c32e5",
+      "result_id": "5622f1b9-f354-4f5a-87f0-8ca73236e034"
+    },
+    {
+      "claim_id": "d9111766-c9bf-4fa7-9c8a-a83dca7d51e3",
+      "result_id": "5622f1b9-f354-4f5a-87f0-8ca73236e034"
+    },
+    {
+      "claim_id": "4b99d686-6bb9-43ee-b1d1-74515115eb7b",
+      "result_id": "5622f1b9-f354-4f5a-87f0-8ca73236e034"
+    },
+    {
+      "claim_id": "9edb8007-c168-47dd-b678-08b6806381ef",
+      "result_id": "5622f1b9-f354-4f5a-87f0-8ca73236e034"
+    },
+    {
+      "claim_id": "036e5dcf-990e-406d-ae1e-2ad180453603",
+      "result_id": "5622f1b9-f354-4f5a-87f0-8ca73236e034"
+    },
+    {
+      "claim_id": "c25bb3d9-b349-4150-8cd2-4651cbfc27a9",
+      "result_id": "5622f1b9-f354-4f5a-87f0-8ca73236e034"
+    },
+    {
+      "claim_id": "a392fafd-e943-4e89-9463-0d1ea804f85f",
+      "result_id": "5622f1b9-f354-4f5a-87f0-8ca73236e034"
+    },
+    {
+      "claim_id": "b313663b-6e4b-418d-881b-fbe7a8b894cb",
+      "result_id": "5622f1b9-f354-4f5a-87f0-8ca73236e034"
+    },
+    {
+      "claim_id": "3f7662c9-cf14-431e-b721-eed22541dca5",
+      "result_id": "5622f1b9-f354-4f5a-87f0-8ca73236e034"
+    },
+    {
+      "claim_id": "67effb1d-1081-4f0f-bec0-f94e01227794",
+      "result_id": "5622f1b9-f354-4f5a-87f0-8ca73236e034"
+    }
+  ],
+  "comparisons": []
+}

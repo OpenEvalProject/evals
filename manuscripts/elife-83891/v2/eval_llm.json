@@ -1,0 +1,531 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Context-dependent value representation is a pervasive phenomenon across species and experimental paradigms. Rewards are represented in a context-dependent manner, with values normalized as a function of alternative options, reflecting a fundamental computational trade-off in neuron-based decision systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C13 establish the widespread nature of context-dependent value representation through extensive citations to prior literature across multiple species and paradigms. These are well-established findings in the field that provide the foundational motivation for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "The dominant theoretical view proposes that value context-dependence is achieved via divisive normalization, where subjective value is rescaled by the sum of all available option values. This framework has been validated in perceptual domains and extended to some reinforcement learning contexts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C15-C19 accurately describe the prevailing theoretical framework in the field, supported by appropriate citations. This represents an accurate characterization of prior work that the current study aims to test.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Range normalization represents an alternative mechanism for value normalization, where option values are rescaled as a function of the maximum and minimum values in a context, irrespective of the number of options. This account is supported by behavioral and neural evidence but has not been consensually accepted.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C20-C22 accurately describe the alternative range normalization hypothesis with appropriate citations to supporting evidence. This establishes the competing theoretical framework that motivates the experimental design.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C24",
+      "C34"
+    ],
+    "result": "Previous experimental designs in reinforcement learning were ill-suited to distinguish between divisive and range normalization because these models generate similar behavioral predictions in many circumstances.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C24, C34 identify a critical gap in prior research with appropriate citations. This assessment is supported by the mathematical analysis showing that the two normalization functions produce similar predictions in typical experimental designs.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C6",
+      "C25",
+      "C36",
+      "C38",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "A new reinforcement learning task was designed where the number of options (binary vs. trinary) and value ranges (narrow vs. wide) were orthogonally manipulated across learning contexts. Model simulations using UNBIASED, DIVISIVE, and RANGE models showed that this design produces qualitatively different predictions for each model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C25, C36, C38, C40-C47 describe the experimental design and ex ante model simulations. The design rationale is sound and the simulations (Figure 1C) clearly demonstrate that the three models make distinguishable predictions. The use of complete feedback and a transfer phase is well-justified by citations to prior work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Ex ante model simulations predict distinct patterns for each model: UNBIASED predicts higher choice rates for wide vs. narrow contexts but no effect of binary vs. trinary; DIVISIVE predicts smaller wide/narrow differences and strong binary/trinary effects; RANGE predicts similar choice rates across all high-value options regardless of context.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C55 describe the specific predictions from the ex ante simulations shown in Figure 1C. These predictions follow logically from the mathematical formulations of each model (Equations 1-2) and are clearly illustrated in the figure.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "In Experiment 1 (N=50), participants learned significantly above chance in both learning and transfer phases. Learning performance was higher in binary vs. trinary contexts but was not affected by range amplitude.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C60 report basic performance metrics with appropriate statistical tests (all p<0.01, Figure 2A). The results confirm that participants successfully learned the task, providing a foundation for testing the normalization hypotheses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Transfer phase results contradicted divisive normalization predictions: high-value options in trinary contexts showed equal or higher (not lower) choice rates compared to binary contexts. Mid-value options displayed choice rates closer to low-value than high-value options, inconsistent with all three models to varying degrees.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C67 report key behavioral findings with appropriate statistical tests. The results clearly contradict the DIVISIVE model's prediction of lower choice rates in trinary contexts (C61: WT86 vs WB86, t(49)=2.80, p=0.0072). The mid-value option pattern (C67) is an unexpected finding that none of the models fully capture.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Two additional experiments with forced-choice trials (N=50 each, with complete or partial feedback) were conducted to rule out attention-based explanations for mid-value option effects. Forced-choice trials did not significantly affect performance in learning or transfer phases, suggesting the mid-value pattern reflects underlying valuation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C74 describe control experiments with appropriate statistical tests showing no significant differences (learning: F(2,147)=2.75, p=0.067; transfer: F(2,147)=0.64, p=0.53). This strengthens the interpretation that the mid-value effect reflects valuation rather than attention.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Behavioral results across multiple experiments converge to show that transfer phase choices are inconsistent with divisive normalization predictions and more consistent with range normalization, though not perfectly captured by the basic RANGE model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C77 provide an accurate summary of the behavioral findings across experiments. The conclusion is supported by the pattern of results showing absence of set-size effects and presence of range effects, though the imperfect fit of the RANGE model is appropriately acknowledged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Formal model comparison using out-of-sample log-likelihood showed that the RANGE model displayed significantly higher fit than both DIVISIVE and UNBIASED models (oosLL: RANGE vs DIVISIVE, t(149)=10.10, p<0.0001, d=0.41; RANGE vs UNBIASED, t(149)=8.34, p<0.0001, d=0.82). Ex post simulations confirmed that RANGE predictions were much closer to observed behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C84 report rigorous model comparison results with appropriate statistics (Table 2, Figure 3). The out-of-sample validation approach is methodologically sound and the effect sizes are substantial. Results were replicated across multiple experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Despite the superiority of the RANGE model, it failed to perfectly capture mid-value option preferences. The findings add to evidence that value representations are highly context-dependent in reinforcement learning, with behavioral data inconsistent with unbiased value encoding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C89 provide an accurate assessment of the model comparison results and their implications. The acknowledgment of the RANGE model's limitations (C85) is appropriate, and the conclusion about context-dependence (C89) is well-supported by the data and extensive citations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "The study provides robust evidence against divisive normalization in reinforcement learning by demonstrating the absence of the predicted set-size effect. Virtually any instantiation of divisive normalization would predict lower subjective values in trinary vs. binary contexts, but no such effect was found. Model fitting and simulations showed that divisive normalization (including fully parameterized versions) dramatically failed to reproduce behavioral patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C95 present the core negative finding against divisive normalization. The logic is sound (C91), the empirical result is clear (C92-C93), and the model comparison is rigorous (C94-C95, Figure 3-supplement 1). This represents a strong falsification of the divisive normalization hypothesis in this context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "The RANGE model was improved by adding a nonlinear weighting parameter (\u03c9) that power-transforms normalized values. This RANGE\u03c9 model substantially improved fit both qualitatively and quantitatively, with \u03c9>1 indicating that mid-value options are perceived closer to low-value options. Adding the same parameter to the DIVISIVE model did not improve its performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C107 describe a theoretically motivated model extension with clear empirical support (Table 2, Figure 4). The nonlinear weighting is justified by prior literature (C104), and the improvement is substantial. The specificity test showing no improvement for DIVISIVE (C106) strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "Experiment 3 (N=200) tested whether the nonlinear weighting reflects attentional mechanisms by manipulating the availability of high-value options. The manipulation successfully increased mid-value option valuation. A RANGE\u03c9+ model with separate weighting parameters for chosen (\u03c9c, concave) and unchosen (\u03c9u, convex) outcomes successfully captured this pattern, supporting the hypothesis that outcome valuation interacts with attentional deployment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C115 describe a well-designed follow-up experiment that tests a specific mechanistic hypothesis. The manipulation was effective (C110), the model extension was appropriate (C111-C112), and the interpretation is supported by prior literature on attention and value (C114, citations). This provides insight into the cognitive mechanisms underlying the weighting parameter.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "Explicit ratings of option values were remarkably consistent with choice-based preferences, despite literature suggesting these methods often diverge. Transfer phase choices could almost perfectly be reproduced from explicit ratings, which were more consistent with range than divisive normalization. This demonstrates that context-dependent valuation spans procedural and declarative representational systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C121 report convergent evidence from an alternative measurement method (Figure 6). The consistency between ratings and choices (C119, Spearman's \u03c1=0.99) is striking and strengthens confidence in the main findings. The interpretation about representational systems (C121) is appropriately supported by citations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "Neural evidence shows that while divisive normalization provides a good account of perceptual system encoding, value-related signals in dopaminergic neurons and orbitofrontal cortex (key valuation areas) follow range normalization. Similar findings have been replicated in human fMRI, while neural evidence for divisive normalization in value-based decision-making is scant in the valuation system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C130-C134 accurately characterize the neural literature with appropriate citations. The contrast between perceptual and value systems is well-supported and provides important context for interpreting the behavioral findings. The acknowledgment of limited evidence for divisive normalization in valuation areas (C133) is appropriately cautious.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139"
+    ],
+    "result": "The study demonstrates that divisive normalization does not provide a good account of subjective value representation in human reinforcement learning at the outcome stage. However, the divisive normalization rule may still apply in other value-based decision-making domains, particularly those involving described options rather than experience-based learning, or other outcome attributes like probability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C135-C139 provide an appropriately nuanced conclusion that acknowledges the scope and limitations of the findings. The distinction between outcome-stage normalization in reinforcement learning (C136) vs. other domains (C137-C139) is important and well-supported by citations to relevant literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C140",
+      "C141",
+      "C142",
+      "C143"
+    ],
+    "result": "Evidence for divisive normalization in humans has been recently challenged, and alternative accounts like range normalization have not been systematically tested in prior datasets. The range normalization principle has been successfully adapted to decision-making under risk, though one recent study found evidence for divisive normalization in multi-attribute decisions. These findings call for critical appraisal of normalization in value-based decision-making using highly diagnostic experimental designs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C140-C143 provide important context about the broader literature and appropriately acknowledge mixed evidence (C142). The call for critical appraisal with diagnostic designs (C143) is well-justified by the current findings and represents a reasonable recommendation for the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165"
+    ],
+    "result": "Across three experiments, 500 participants were recruited via Prolific and provided informed consent. The study was approved by the INSERM Ethical Review Committee and followed Declaration of Helsinki principles. Participants received performance-based bonuses and performed significantly above chance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C160-C165 describe standard methodological details about participant recruitment, ethics, and incentives. These are appropriately documented and meet standard requirements for human subjects research.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C166",
+      "C167",
+      "C168",
+      "C169",
+      "C170",
+      "C171",
+      "C172",
+      "C173",
+      "C174",
+      "C175",
+      "C176",
+      "C177",
+      "C178",
+      "C179",
+      "C180",
+      "C182",
+      "C183",
+      "C184",
+      "C185",
+      "C186",
+      "C187",
+      "C188",
+      "C189",
+      "C190",
+      "C191",
+      "C192"
+    ],
+    "result": "The task consisted of a learning phase (180 trials with fixed pairs/triplets, outcomes drawn from normal distributions with variance \u03c3\u00b2=4) followed by two counterbalanced elicitation phases: a transfer phase (180 trials with all binary combinations, no feedback) and an explicit rating phase (40 trials). Abstract stimuli were used with controlled color properties, randomized positions, and self-paced responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C166-C192 provide detailed methodological description of the task design. The design is well-specified with appropriate controls (position randomization, counterbalancing, no feedback in elicitation phases). The use of abstract stimuli with controlled perceptual properties is methodologically sound.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C193",
+      "C194",
+      "C195",
+      "C196",
+      "C197",
+      "C198"
+    ],
+    "result": "In experimental versions b and c, forced-choice trials were added (5 per option, 230 total trials) where only one option was selectable. Version b provided complete feedback while version c provided partial feedback (chosen option only). The elicitation phases remained unchanged across versions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C193-C198 describe methodological variations designed to test attention-based explanations. The design is appropriate for the research question and the variations are clearly specified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C199",
+      "C200",
+      "C201",
+      "C202",
+      "C203",
+      "C204"
+    ],
+    "result": "Experiment 3 used a 2\u00d72 design manipulating range spread and option availability, with the high-value option unavailable on 50% (Exp 3a) or 75% (Exp 3b) of trials in half the contexts. The unavailable option was displayed but not clickable, with shaded outcome feedback. Transfer and explicit phases had 132 and 24 trials respectively.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C199-C204 describe the design of Experiment 3, which appropriately tests the attentional hypothesis by manipulating option availability. The design is well-specified and the manipulation is clearly described.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C205",
+      "C206",
+      "C207",
+      "C208",
+      "C209",
+      "C210",
+      "C211",
+      "C212"
+    ],
+    "result": "Statistical analyses used repeated-measures ANOVAs with range amplitude and number of options as within-participant factors and experiment version as between-participant factor. Post hoc tests used t-tests, with performance compared to chance levels. Effect sizes were reported using Cohen's d and eta-squared. The large sample size (n=500) justified assumptions of normality via central limit theorem.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C205-C212 describe appropriate statistical methods with proper reporting of effect sizes and corrections. The justification for parametric tests based on sample size (C210) is reasonable, though normality assumptions could have been empirically tested rather than assumed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C213",
+      "C219",
+      "C224",
+      "C227",
+      "C230"
+    ],
+    "result": "Four computational models were compared: UNBIASED (absolute value encoding), RANGE (normalization by max-min), DIVISIVE (normalization by sum), and RANGE\u03c9 (range normalization with power transformation). All models used Q-learning with separate learning rates for chosen and unchosen options and softmax choice. For partial feedback versions, unchosen outcomes were replaced with last-seen values.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C213, C219, C224, C227, C230 describe the computational models with appropriate mathematical specifications. The models are clearly defined and the approach to handling partial feedback (using last-seen values) is reasonable and cited to prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C232",
+      "C234",
+      "C236",
+      "C237",
+      "C238"
+    ],
+    "result": "Ex ante model predictions were generated by simulating 50 agents per experiment with parameters drawn from prior distributions (Beta(1.1,1.1) for learning rates, Gamma(1.2,5) for inverse temperature). Complete feedback made inverse temperature irrelevant during learning. An argmax decision rule was used in the transfer phase to obtain preference rankings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C232, C234, C236-C238 describe the simulation procedure with appropriate parameter priors cited to prior work (Daw et al., 2011). The use of argmax in transfer phase (C238) is justified for obtaining clear preference rankings, though this differs from the softmax used for actual participants.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "Context-dependent preferences may be ecologically rational, conveying statistical or strategic advantages, or may reflect computational efficiency of relative encoding. Evidence suggests some flexibility in value representations, though fully context-independent encoding has not been demonstrated. The widespread nature of relative encoding across species suggests deep preserved principles of neural information encoding, with normalization emerging as a solution to maximize gain functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122-C129 discuss the functional significance of context-dependent encoding with appropriate citations. The discussion appropriately acknowledges both adaptive (C122) and computational efficiency (C123) explanations, while noting the limitations of current evidence for flexibility (C126).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151"
+    ],
+    "result": "The reinforcement learning framework has translational potential for animal research. Range normalization presents computational advantages (e.g., applicability to partial feedback tasks) but the fit was imperfect. The weighted range normalization rule lacks mechanistic explanation. Future research should use eye-tracking to investigate cognitive mechanisms, test applicability to larger choice sets, and generalize to partial feedback situations requiring inference of contextual variables.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C144-C151 provide appropriate discussion of translational potential, model limitations, and future directions. The acknowledgment of the model's descriptive rather than mechanistic nature (C148) is important, and the suggestions for future research are reasonable and specific.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157"
+    ],
+    "result": "Despite improvements from the weighting parameter, some data features remain unaccounted for. Across experiments, high-value options in trinary contexts showed slightly higher choice rates than binary contexts, providing strong evidence against divisive normalization but also inconsistent with range normalization. This may reflect additional cognitive mechanisms such as instance-based or comparison-based valuation processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C152-C157 appropriately acknowledge remaining unexplained variance in the data. The observation about trinary>binary choice rates (C154) is honest reporting of an effect not predicted by any model. The speculation about alternative mechanisms (C157) is appropriately tentative and cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C158",
+      "C159"
+    ],
+    "result": "The results cast serious doubt on the relevance of divisive normalization in value-based decision-making while establishing that context-dependence is a pervasive feature of human cognition. The findings provide insights into the algorithmic instantiation of context-dependence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C158-C159 provide an appropriate concluding summary that accurately reflects the strength and scope of the findings. The conclusion is appropriately nuanced, acknowledging both what was demonstrated (rejection of divisive normalization in this context) and what remains established (pervasiveness of context-dependence).",
+    "result_type": "MAJOR"
+  }
+]

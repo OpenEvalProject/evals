@@ -1,0 +1,989 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "result": "GWAS have successfully identified thousands of genetic loci associated with complex traits, but the underlying mechanisms remain poorly understood in most cases. Complex traits are highly heterogeneous, involving contributions from hundreds of genetic variants, each explaining a small fraction of susceptibility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4 represent well-established knowledge about GWAS findings and the nature of complex traits. These are consensus statements in the field supported by extensive literature, accurately describing both the successes and limitations of GWAS approaches.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "The majority of fine-mapped SNPs are located in non-coding regions with no obvious link to protein function. While it is often assumed these SNPs regulate proximal genes, this can be difficult to prove, and in some cases (e.g., FTO) has been shown to be incorrect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C7 accurately describe a major challenge in GWAS interpretation. The FTO example (C7) is supported by a specific citation (Claussnitzer et al., 2015), providing concrete evidence for the broader claim that assumptions about proximal gene regulation can be incorrect.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "Systems genetics uses high-throughput omics technologies to examine how molecular phenotypes are perturbed by natural genetic variation and relates these to clinical traits. This approach has proven useful for identifying causal genes, pathways, and interactions, with vast amounts of data now available in public databases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C10 provide a clear definition and assessment of systems genetics approaches. These represent established methodological knowledge and accurate characterization of the current state of the field, including data availability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Human biomedical studies face limitations including restricted tissue access and inability to control environmental factors. Model systems (mice/rats) are especially valuable for systems genetics because environmental variables can be controlled, reducing the number of individuals required.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C14 accurately describe practical limitations of human studies and advantages of model organisms. These are well-recognized considerations in study design, based on established experimental principles and field experience.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "The unidirectional flow of information from DNA enables causal pathway modeling and identification of mediators through statistical approaches. Various causal inference tests (mediation analysis) have been developed, including Mendelian randomization, which has been particularly informative in human studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C18 describe established statistical methods for causal inference in genetics. These are supported by appropriate citations (Schadt et al., 2005; Zhu et al., 2016) and represent well-validated methodological approaches based on the central dogma of molecular biology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Reductionist approaches establish causality but have limitations for understanding complex trait architecture. They typically involve single-gene perturbations in single genetic backgrounds, making them unlikely to detect genetic interactions. Engineered mutations in mice often show different phenotypes across strains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C22 provide a balanced assessment of reductionist approaches. The limitation regarding genetic interactions is supported by citation (Riordan and Nadeau, 2017), and the strain-specific phenotype observation is supported by Sittig et al., 2016. These represent valid critiques based on empirical evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Systems genetics approaches are relatively unbiased compared to reductionist approaches. More than one-quarter of coding genes have never been studied, while ~2000 genes dominate the literature. The power of natural variation derives from multiple genetic perturbations occurring in all combinations in a population.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C26 are well-supported. The publication bias data (C24-C25) is backed by citation to Stoeger et al., 2018. The characterization of systems genetics as unbiased and the explanation of natural variation's power (C26, supported by Heinz et al., 2013; Battle et al., 2017) are accurate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Orozco et al., 2015 examined DNA methylation in 90 HMDP mouse strains, identifying methylation hotspots and demonstrating that ~25% of clinical trait associations were predicted to be causal. The study identified Mtrr as a candidate gene whose causal role was validated using genetically engineered mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C38 describe a specific published study with appropriate citation. The findings are presented as results from that study, including the identification of methylation hotspots, the 25% causal prediction rate, and experimental validation of Mtrr. This represents a well-documented example of systems genetics application.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C49",
+      "C50"
+    ],
+    "result": "Chatterjee et al., 2022 created a Drosophila cancer model and used scRNA-seq to identify a link between Keap1 and Nrf2 as upstream components of tumorigenesis by comparing cancerous and normal flies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C50 describe a specific published study with appropriate citation. The use of scRNA-seq to identify molecular mechanisms in a disease model represents a valid application of single-cell approaches in systems genetics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C52",
+      "C53"
+    ],
+    "result": "Iba\u00f1ez-Sol\u00e9 et al., 2022 developed Scallop, a tool for quantifying transcriptional noise from scRNA-seq data. Application to aging datasets demonstrated that previously inferred transcriptional noise could be attributed to shifting cellular identities rather than being entirely stochastic.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C53 describe a specific methodological development and its application with appropriate citation. The finding that apparent noise reflects biological changes rather than stochasticity represents a meaningful insight into scRNA-seq data interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C54",
+      "C55"
+    ],
+    "result": "Single-nuclei RNA-seq of brain tissue in 192 individuals identified 7607 genes with local eQTLs, 46% showing cell-type-specific effects. These eQTLs colocalized with GWAS loci for Alzheimer's, Parkinson's, and schizophrenia in a cell-type-specific manner.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C55 describe findings from Bryois et al., 2022 with specific quantitative results. The identification of cell-type-specific eQTLs and their colocalization with disease GWAS loci represents important evidence for cell-type-specific disease mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C90",
+      "C91"
+    ],
+    "result": "A systems genetics study in ~100 inbred mouse strains identified Roseburia intestinalis as associated with atherosclerosis resistance. Germ-free mouse studies confirmed this association and identified butyrate, a Roseburia metabolite, as the intermediate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C91 describe findings from Kasahara et al., 2018, including both the initial association and experimental validation. The progression from association to mechanistic validation using germ-free mice represents a strong example of systems genetics followed by experimental confirmation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C92"
+    ],
+    "result": "Hazen and colleagues identified trimethylamine-N-oxide, derived from dietary choline and carnitine, as a significant cause of atherosclerosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C92 describes a finding from Tang et al., 2019. This represents an important discovery linking diet-derived metabolites to cardiovascular disease through microbiome metabolism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C112"
+    ],
+    "result": "A study using the BXD panel identified alleles in Mutyh that modulate germline mutagenesis signatures by taking advantage of 50 years of accumulated de novo mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C112 describes a finding from Sasani et al., 2022. This represents a creative use of the BXD resource to study mutation processes over time, linking genetic variation to mutation signatures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C115",
+      "C116"
+    ],
+    "result": "An integrative systems genetics study in the BXD identified Ces1c as a master regulator of plasma tauroursodeoxycholic acid, a bile acid with health-promoting actions, using diet manipulation, bile acid profiling, transcriptomics, and metabolic phenotyping.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C116 describe findings from Li et al., 2022. The multi-modal approach (diet, metabolomics, transcriptomics, phenotyping) to identify a master regulator represents a comprehensive systems genetics study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C124"
+    ],
+    "result": "The HMDP was used to identify coagulation factor XI as an endocrine factor produced in the liver that impacts cardiac fibrosis, inflammation, and heart failure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C124 describes a finding from Cao et al., 2022. This represents a discovery of inter-organ communication relevant to heart disease using systems genetics approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C137",
+      "C138"
+    ],
+    "result": "The HXB/BXH rat panel was used to identify a pleiotropic QTL affecting hippocampal neurogenesis and serum glucose. Systems genetics integration of transcriptomics identified Tti2 as a candidate, which was validated using a knockout.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C137-C138 describe findings from Senko et al., 2022. The identification of a pleiotropic QTL and validation of the candidate gene represents a complete systems genetics workflow from mapping to validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C175",
+      "C176"
+    ],
+    "result": "Auwerx et al., 2023 developed an integrative MR framework that uncovered new molecular links between omics datatypes, such as SLC6A12 correlating with serum creatinine through modulation of betaine levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C175-C176 describe a methodological development and its application with specific findings. The identification of molecular links between genes, metabolites, and phenotypes represents a meaningful application of integrative approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C179",
+      "C180"
+    ],
+    "result": "Colocalization of GTEx eQTLs with BMD GWAS loci uncovered >500 candidate genes for BMD. PPP6R3 was validated as a causal driver by gene ablation in mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C179-C180 describe findings from AlBarghouthi et al., 2022. The large-scale colocalization analysis followed by experimental validation represents a powerful application of integrative genomics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C183"
+    ],
+    "result": "A method for identifying endocrine circuits was used to identify coagulation factor 11 as a novel mediator of liver-heart crosstalk with significant impact on heart function and heart failure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C183 describes a finding from Cao et al., 2022 using a method from Seldin et al., 2018. This represents a discovery of inter-organ communication mechanisms relevant to cardiovascular disease.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C192",
+      "C193",
+      "C194"
+    ],
+    "result": "A co-expression network from human adipose tissue identified a module associated with WHRadjBMI. Regions around the 347 module genes were enriched for WHRadjBMI heritability, and a transcription factor in the module was validated by knockdown experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C192-C194 describe findings from Pan et al., 2021. The integration of network analysis, heritability enrichment, and experimental validation represents a comprehensive approach to identifying causal genes for body fat distribution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C195"
+    ],
+    "result": "A co-expression network from mouse bone identified the 'osteoblast functional module' and predicted MARK3 regulates osteoblast activity and BMD, which was validated using an osteoblast-specific knockout.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C195 describes findings from Calabrese et al., 2017 with validation from Zhang et al., 2021b. The progression from network prediction to cell-type-specific validation represents a strong example of network-based gene discovery.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C196",
+      "C197",
+      "C198"
+    ],
+    "result": "WGCNA on intestinal transcriptomics in 54 BXD strains identified module QTLs for IBD phenotypes. Intersection with human IBD GWAS prioritized MUC4 and EPHA6 as key genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C196-C198 describe findings from Li et al., 2023. The cross-species integration of mouse network analysis with human GWAS represents a translational approach to identifying disease genes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C203",
+      "C204",
+      "C205"
+    ],
+    "result": "Tissue-specific Bayesian networks integrated with CAD GWAS identified key driver genes defined as GWAS-implicated genes connected to known disease genes. This framework identified tissue-specific relations and prioritized likely causal drivers of CAD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C203-C205 describe findings from Zhao et al., 2016. The integration of Bayesian networks with GWAS to identify key drivers represents an important methodological approach for prioritizing causal genes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C206",
+      "C207",
+      "C208"
+    ],
+    "result": "Bayesian network analysis of mouse bone transcriptomics integrated with BMD GWAS identified 66 high-priority causal genes including Glt8d2, which was experimentally validated for BMD regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C206-C208 describe findings from AlBarghouthi et al., 2021. The application of Bayesian networks to identify and validate causal genes represents a successful implementation of network-based approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C213",
+      "C214"
+    ],
+    "result": "Sixty loci were identified for insulin secretion in DO mice, and genes at these loci were significantly enriched for genes at human GWAS loci for diabetes-related traits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C213-C214 describe findings from Keller et al., 2019. The cross-species enrichment provides evidence for conservation of genetic mechanisms between mice and humans for diabetes-related traits.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C215",
+      "C216"
+    ],
+    "result": "Integration of human lipid GWAS with mouse liver co-expression networks identified SESN1 (Sestrin1) as associated with cholesterol levels, a previously unknown role in lipid metabolism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C215-C216 describe findings from Li et al., 2020. The discovery of a novel function for Sestrin1 through cross-species integration represents a successful application of comparative systems genetics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C217",
+      "C218"
+    ],
+    "result": "GWAS in humans and rats identified 29 overlapping BMI-associated genes. Integration of molecular networks revealed even greater convergence of GWAS signals between species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C217-C218 describe findings from Wright et al., 2023. The demonstration that network integration improves cross-species translation represents an important methodological insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C225",
+      "C226"
+    ],
+    "result": "Measurement of liver isotope flux, transcriptomics, and proteomics across five species revealed ~30,000-fold variation in substrate usage and species-specific metabolic adaptations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C225-C226 describe findings from Akingbesote et al., 2023. The massive variation in substrate utilization across species represents an important finding about metabolic diversity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C228",
+      "C229"
+    ],
+    "result": "Analysis of two longitudinal human cohorts identified an interaction between polygenic cardiovascular risk and Fusobacterium nucleatum infection, highlighting gene-by-environment complexity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C228-C229 describe findings from Hodel et al., 2023. The identification of a specific gene-by-microbe interaction in cardiovascular disease represents an important example of GXE effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C235",
+      "C236",
+      "C237"
+    ],
+    "result": "Muscle proteomics in diverse outbred mice with varying glucose metabolism identified pQTL signatures that were used to screen compounds, leading to identification of thiostrepton as affecting glucose metabolism independent of insulin signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C235-C237 describe findings from Masson et al., 2023. The use of systems genetics data for drug screening represents an innovative application with potential therapeutic implications.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R32",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Epigenetic modifications (methylation, acetylation, phosphorylation) vary between individuals and cell types. High-throughput methylation arrays can evaluate >800,000 sites, designed to capture promoters and regulatory regions. Analytical methods can deconvolute leukocyte populations from methylation data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C31 describe established knowledge about epigenetic variation and current technology capabilities. The deconvolution methods (C31) are supported by citations (Houseman et al., 2012; Salas et al., 2022). These represent accurate characterizations of the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R33",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Most systems genetics studies use transcriptomic data from RNA-seq. Over 90% of GWAS disease associations implicate non-coding variation. eQTLs (local and distant) are widely used to connect variants to genes, and TWASs use eQTLs to impute gene expression in larger populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C46 provide accurate descriptions of transcriptomic approaches in systems genetics. The >90% non-coding variation statistic (C40) is supported by citation (Buniello et al., 2019). These represent established methodological knowledge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R34",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C51",
+      "C56",
+      "C57"
+    ],
+    "result": "Genetic influences on gene regulation are often cell-type specific. scRNA-seq enables single-cell transcriptomes but has technical limitations requiring fresh tissue. With only 1-10 RNA copies per gene per cell, accurate quantification is likely restricted to abundant transcripts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C48, C51, C56-C57 accurately describe scRNA-seq capabilities and limitations. The cell-type specificity (C47) and low RNA copy numbers (C56) are supported by appropriate citations. The inference about quantification limitations (C57) follows logically from the low copy numbers.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R35",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Alternative splicing is a major regulatory mechanism underlying disease. Short-read RNA-seq is not ideal for quantifying individual transcripts from alternative splicing. Long-read RNA-seq can identify full-length transcripts and promises to improve understanding of alternative splicing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C61 accurately describe the limitations of short-read and advantages of long-read RNA-seq. The importance of alternative splicing (C58) is supported by citation (Castaldi et al., 2022). The promise of long-read sequencing (C61) is appropriately presented as prospective.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R36",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Advances in proteomics enable measurement of >5000 proteins with minimalist methods, or 10,000-13,000 with deeper fractionation. Systems genetics studies have utilized tissue proteomics effectively. SOMAscan can measure >5000 proteins and has been used in tens of thousands of subjects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C67 accurately describe current proteomics capabilities. The quantitative claims are supported by appropriate citations (Wang et al., 2019 for deep proteomics; Gold et al., 2010 for SOMAscan). These represent accurate characterizations of technological capabilities.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R37",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Transcript-protein correlations are modest, and genetic loci affecting proteins often differ from those affecting mRNA. Protein turnover varies widely (minutes to days), is controlled by post-translational modifications, and is affected by complex assembly requirements and genetic variations affecting translation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C76 accurately describe the complexity of protein regulation. Key points are supported by appropriate citations (Liu et al., 2016 for modest correlations; Williams et al., 2022 for distinct loci; Minard et al., 2016 for turnover; Weissman, 1994 for complex assembly). These represent established knowledge about protein biology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R38",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Metabolomics uses LC/GC-MS (detecting thousands of molecules but requiring standards for quantification) or NMR (providing absolute levels with minimal processing but lower sensitivity). Both have been applied in thousands of subjects. Coupling with genetics enables mQTL analyses revealing genetic determinants of metabolites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C85 accurately describe metabolomics technologies and their applications. The widespread application (C83) and mQTL utility (C85) are supported by citations (Wishart, 2019; Kastenm\u00fcller et al., 2015). These represent accurate characterizations of metabolomics approaches.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R39",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C93",
+      "C94"
+    ],
+    "result": "Gut microbes can be identified using shotgun sequencing (species-level) or 16S sequencing (less expensive, broader scale). Microbiome composition is determined by diet, host genetics, and aging. The lactase locus is a significant host genetic factor affecting microbiome composition through lactose availability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C89, C93-C94 accurately describe microbiome analysis methods and factors affecting composition. The lactase example represents well-established knowledge about host genetics-microbiome interactions. The inference about bacterial utilization of lactose (C94) is logical and well-founded.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R40",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Rodents are popular for systems genetics due to physiological similarity to humans, lower cost, tissue access, and designed populations. GRPs offer identical, replicable animals ideal for GXE studies and low-heritability traits but have limited sample sizes. Outbred stocks enable detection of subtle effects with increasing resolution but require de novo genotyping.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C107 provide accurate descriptions of rodent population types and their trade-offs. The advantages and disadvantages are well-established in the field. Citations support specific points (Parks et al., 2013; AlBarghouthi and Farber, 2019 for applications; Bennett et al., 2010; Keele, 2023 for heritability).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R41",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C113",
+      "C114",
+      "C117"
+    ],
+    "result": "The BXD is a recombinant inbred panel from C57BL/6J and DBA/2J founders, developed in the 1970s and expanded to ~140 strains. Over 7500 phenotypes and >100 omics datasets have been collected. All data are available on GeneNetwork2 for interactive studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C111, C113-C114, C117 accurately describe the BXD resource. The historical information is supported by citations (Taylor et al., 1973; Peirce et al., 2004; Ashbrook et al., 2021). The data availability and scope represent accurate characterizations of this major resource.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R42",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "The HMDP combines recombinant inbred strains and classical strains (~100 total) to address power and resolution limitations. It has been used to study diverse phenotypes including lipids, obesity, bone mass, liver disease, atherosclerosis, and heart failure, and is ideal for GXE experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C123 accurately describe the HMDP design and applications. The design rationale and applications are supported by multiple citations (Bennett et al., 2010 and others). These represent accurate characterizations of this resource.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R43",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "The CC and DO mice are multi-parental populations from eight diverse founders with ~45 million segregating variants, exceeding variation in other mouse GRPs and human populations. The CC has 50-70 accessible strains due to founder incompatibilities. The DO requires larger sample sizes but provides a powerful platform for polygenic trait studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125-C134 accurately describe the CC/DO resources. The genetic variation data (C126) is supported by citation (Keane et al., 2011). The challenges and applications are well-documented (Churchill et al., 2004; Svenson et al., 2012). These represent accurate characterizations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R44",
+    "claim_ids": [
+      "C135",
+      "C136"
+    ],
+    "result": "The HXB/BXH rat panel consists of 30 RILs from hypertensive and normotensive founders. It has been used for genetic studies of blood pressure, alcohol-related traits, and metabolic/cardiovascular traits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C135-C136 accurately describe the HXB/BXH resource and its applications. The description and applications are supported by multiple citations (Pravenec et al., 1989, 2014; Vanderlinden et al., 2014; and others).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R45",
+    "claim_ids": [
+      "C139",
+      "C140",
+      "C141",
+      "C142"
+    ],
+    "result": "The HRDP is a rat panel similar to the HMDP, comprising 99 strains (35 inbred, 30 HXB/BXH, 34 LEXF/FXLE). Simulations suggest 80% power to detect QTL explaining ~12% of variance. The panel has a median haplotype block of ~150 kbp.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C139-C142 accurately describe the HRDP resource. The composition and power estimates are supported by citations (Voigt et al., 2008; Tabakoff et al., 2019). These represent accurate characterizations of this resource.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R46",
+    "claim_ids": [
+      "C143",
+      "C144",
+      "C145"
+    ],
+    "result": "Large-scale GWAS have been instrumental in elucidating genetic architecture of complex traits. The Global Biobank Meta-analysis Initiative (GBMI) includes 24 biobanks with >2.2 million genotyped multi-ancestry subjects to facilitate large-scale genetic analyses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C143-C145 accurately describe the impact of GWAS and the formation of GBMI. The GBMI description is supported by citation (Zhou et al., 2022). These represent accurate characterizations of major collaborative efforts.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R47",
+    "claim_ids": [
+      "C146",
+      "C147",
+      "C148"
+    ],
+    "result": "GTEx consists of >500 postmortem samples from ~50 tissues, initiated to provide tissue-specific eQTL resources. Recent expansions include chromatin accessibility, long-read RNA-seq, and single-nuclear RNA-seq in the same individuals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C146-C148 accurately describe the GTEx project and its evolution. The initial goal (C147) and expansions (C148) are supported by appropriate citations (Consortium, 2013; Zhang et al., 2021a; Glinos et al., 2022; Jones et al., 2022a).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R48",
+    "claim_ids": [
+      "C149",
+      "C150",
+      "C151"
+    ],
+    "result": "UK Biobank recruited 503,325 individuals (2006-2010) with data on ~6700 phenotypes including biological measurements, lifestyle, imaging, biomarkers, metabolomics, proteomics, and genomics. Hundreds of research groups have published thousands of studies using this cohort.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C149-C151 accurately describe UK Biobank. The recruitment numbers and data scope are supported by citation (Bycroft et al., 2018). The extensive use of this resource is well-documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R49",
+    "claim_ids": [
+      "C152",
+      "C153",
+      "C154"
+    ],
+    "result": "FinnGen aims to recruit ~500,000 subjects from Finnish cohorts. As of December 2022, >356,000 participants have been genotyped. GWAS results for >2200 disease phenotypes are publicly released twice yearly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C152-C154 accurately describe FinnGen. The goals and current status are supported by citation (Tabassum et al., 2019). The data release schedule represents accurate information about this resource.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R50",
+    "claim_ids": [
+      "C155",
+      "C156",
+      "C157"
+    ],
+    "result": "Biobank Japan enrolled ~260,000 patients from 12 hospitals (2003-2008), examining 51 common diseases. SNP array data is available for >215,000 subjects. China Kadoorie Biobank recruited >500,000 adults from 10 diverse areas (2004-2008).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C155-C157 accurately describe these Asian biobanks. The descriptions are supported by appropriate citations (Hirata et al., 2017; Nagai et al., 2017; Chen et al., 2011).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R51",
+    "claim_ids": [
+      "C158",
+      "C159",
+      "C160"
+    ],
+    "result": "TOPMed is an NIH precision medicine initiative with >200,000 participants from >85 cohorts, integrating clinical, genetic, and multi-omics data for heart, lung, blood, and sleep disorders. A notable advantage is broad ancestry diversity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C158-C160 accurately describe TOPMed. The scope and goals are supported by citation (Brody et al., 2017). The emphasis on diversity represents an important feature of this resource.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R52",
+    "claim_ids": [
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166"
+    ],
+    "result": "BioVU is an EHR-based biobank at Vanderbilt with >300,000 participants. MVP is a VA program that has recruited >950,000 subjects of diverse ancestries to understand relationships between health outcomes, genetics, behavior, and environment, representing one of the world's largest programs studying genes and health.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C161-C166 accurately describe these EHR-based biobanks. The descriptions are supported by appropriate citations (Roden et al., 2008; Gaziano et al., 2016). The scale and scope represent accurate characterizations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R53",
+    "claim_ids": [
+      "C167",
+      "C168",
+      "C169"
+    ],
+    "result": "Geisinger MyCode is an EMR-based biobank in rural Pennsylvania. A unique feature is returning clinically actionable genetic findings to participants, based on surveys indicating participants favor receiving such information.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C167-C169 accurately describe Geisinger MyCode and its distinctive approach. The return of results policy and participant preferences are supported by citations (Carey et al., 2016; Jones et al., 2022b; Schwartz et al., 2018).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R54",
+    "claim_ids": [
+      "C170",
+      "C171",
+      "C172",
+      "C173",
+      "C174"
+    ],
+    "result": "Mendelian randomization uses genetic variants as instrumental variables mimicking randomization in clinical trials. It has been successfully applied to cardiometabolic risk factors. MR assumes valid instruments without pleiotropy, though variants may be weak instruments. Various modifications address these limitations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C170-C174 accurately describe MR methodology, applications, and limitations. The successful applications (C171) and methodological modifications (C174) are supported by appropriate citations (Jansen et al., 2014; Hemani et al., 2018; Sanderson et al., 2019; Woolf et al., 2022).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R55",
+    "claim_ids": [
+      "C177",
+      "C178",
+      "C181"
+    ],
+    "result": "Colocalization analysis determines if associations with molecular phenotypes and complex traits are driven by the same variants, identifying candidate causal genes and prioritizing functional variants. This approach has been applied to multi-omic data to distinguish related traits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C177-C178, C181 accurately describe colocalization approaches and their utility. The application to distinguish traits (C181, Aberra et al., 2023) represents a valid use of this methodology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R56",
+    "claim_ids": [
+      "C182"
+    ],
+    "result": "A method for identifying endocrine circuits using correlation structure between gene expression in different tissues was first developed by Seldin et al., 2018.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C182 accurately attributes the methodological development with appropriate citation. This represents proper acknowledgment of methodological contributions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R57",
+    "claim_ids": [
+      "C184",
+      "C185",
+      "C186",
+      "C187",
+      "C188",
+      "C189"
+    ],
+    "result": "A major premise of systems genetics is that biological components participate in complex networks at cellular, tissue, and organismal levels. Network reconstruction is a key component. In co-expression networks, genes that co-vary often share functions and pathways. WGCNA is a widely used tool, and co-expression networks retain tissue/cell-type identity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C184-C189 accurately describe network approaches in systems genetics. The premise (C184) is supported by citations (Nadeau and Dudley, 2011; Civelek and Lusis, 2014). The functional similarity of co-expressed genes (C188) is supported by multiple citations (McCarroll et al., 2004; Singer et al., 2005; Ala et al., 2008).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R58",
+    "claim_ids": [
+      "C190",
+      "C191"
+    ],
+    "result": "Early WGCNA studies identified liver modules correlating with body weight in mice. Co-expression networks have provided insights into diverse traits and diseases including chronic fatigue syndrome, CAD, and diabetes in rodents and humans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C190-C191 accurately describe applications of co-expression networks. The examples are supported by appropriate citations (Ghazalpour et al., 2006; Presson et al., 2008; McDermott-Roe et al., 2011; Keller et al., 2008).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R59",
+    "claim_ids": [
+      "C199"
+    ],
+    "result": "A limitation of co-expression networks is that the direction of effect between genes is missing, making definitive conclusions about causality nearly impossible from a statistical perspective.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C199 accurately identifies a fundamental limitation of co-expression networks. This represents an honest assessment of methodological constraints.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R60",
+    "claim_ids": [
+      "C200",
+      "C201",
+      "C202"
+    ],
+    "result": "Bayesian networks are graphical models representing probabilistic relationships among variables, widely used in AI, machine learning, and biology. Early systems genetics applications used transcriptomic data from segregating mouse populations to identify gene networks contributing to metabolic phenotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C200-C202 accurately describe Bayesian networks and their applications. The definition (C200) is supported by citation (Koller and Friedman, 2009). Early applications (C202) are supported by citations (Zhu et al., 2004; Mehrabian et al., 2005; Chen et al., 2008).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R61",
+    "claim_ids": [
+      "C209",
+      "C210",
+      "C211"
+    ],
+    "result": "Mergeomics is a Bayesian network approach incorporating biological information (e.g., eQTL), hypothesizing that multi-omics modalities are functionally related. It uses summary-level data from different studies or species. Recent applications have revealed tissue-specific processes and regulatory genes in individual and shared diseases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C209-C211 accurately describe Mergeomics methodology and applications. The approach is supported by citations (Arneson et al., 2016; Shu et al., 2016). Applications (C211) are supported by citations (Shu et al., 2017; von Scheidt et al., 2017; Chella Krishnan et al., 2018).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R62",
+    "claim_ids": [
+      "C212"
+    ],
+    "result": "Identification of conserved association signals at syntenic loci has not been widely observed in cross-species integration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C212 accurately describes a challenge in cross-species genetics. This represents an honest assessment of the difficulty in translating genetic findings across species.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R63",
+    "claim_ids": [
+      "C219",
+      "C220",
+      "C221",
+      "C222",
+      "C223"
+    ],
+    "result": "Technical and computational innovations in multi-omics will continue, speeding progress. Long-read RNA-seq has potential to refine causal gene impacts through isoform-specific changes. Spatially resolved single-cell quantification is now widely applicable. AI is beginning to be applied to systems genetics data, and databases will grow with increasingly powerful in silico analyses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C219-C223 represent reasonable projections about future developments. The spatial single-cell advances (C221) are supported by citation (Moses and Pachter, 2022). These are appropriately presented as prospective statements about technological and analytical progress.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R64",
+    "claim_ids": [
+      "C224"
+    ],
+    "result": "Over the past decade, researchers have significantly refined mass-spectrometry-based methods to detect substrate utilization using stable isotope tracing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C224 accurately describes advances in metabolic flux analysis, supported by citation (Jang et al., 2018). This represents an accurate characterization of methodological progress.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R65",
+    "claim_ids": [
+      "C227"
+    ],
+    "result": "Systems genetics data present unique appeal for quantifying complex interactions such as gene-by-diet responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C227 accurately describes an application of systems genetics, supported by citation (Nelson et al., 2022). This represents a valid characterization of systems genetics utility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R66",
+    "claim_ids": [
+      "C230",
+      "C231",
+      "C232",
+      "C233",
+      "C234"
+    ],
+    "result": "An important challenge is developing better methods for curating, storing, sharing, and integrating systems genetics data. A useful goal would be combining data into one searchable database. The Alliance of Genome Resources provides such a mechanism. FAIR data principles (proposed 2016) have been adopted by organizations and proposed as critical for machine learning success.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C230-C234 accurately describe data management challenges and solutions. The Alliance description (C232) and FAIR principles (C233-C234) are supported by appropriate citations (Alliance of Genome Resources Consortium, 2022; Scheffler et al., 2022).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R67",
+    "claim_ids": [
+      "C238",
+      "C239",
+      "C240"
+    ],
+    "result": "Systems genetics approaches are limited by natural variation captured in studied cohorts. In human studies, certain ethnic groups have been disproportionately studied, so results may not apply to less-studied groups. Clear racial, ethnic, and gender disparities exist for most common diseases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C238-C240 accurately identify important limitations and disparities in genetic research. These represent honest assessments of current limitations and the need for more diverse populations in research.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R68",
+    "claim_ids": [
+      "C77"
+    ],
+    "result": "Molendijk et al., 2022 demonstrated that UFMylation impacts muscle physiology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C77 describes a finding from a cited study about a protein modification affecting muscle physiology. This represents a valid example of protein modification studies in systems genetics.",
+    "result_type": "MINOR"
+  }
+]

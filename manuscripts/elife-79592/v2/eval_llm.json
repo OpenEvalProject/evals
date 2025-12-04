@@ -1,0 +1,230 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C68",
+      "C69"
+    ],
+    "result": "Random transgene integration via viral vectors poses safety risks including gene silencing, dysregulation of endogenous genes, and malignant transformation that has led to leukemia cases in gene therapy trials.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4, C68-C69 establish the background motivation for seeking genomic safe harbors. These claims are well-supported by appropriate citations to prior work (Ellis 2005, Mok et al. 2007, Howe et al. 2008, Hacein-Bey-Abina et al. 2003, Mitchell et al. 2004) and represent established knowledge in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Previously proposed criteria for genomic safe harbors include distance requirements from genes, oncogenes, miRNAs, and avoidance of transcriptional units and ultra-conserved regions. Commonly used sites like AAVS1, CCR5, and Rosa26 do not meet these criteria.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C8, C42-C45 accurately summarize prior work on GSH criteria and limitations of existing integration sites. These are well-supported by appropriate citations (Papapetrou and Schambach 2016, Sadelain et al. 2011) and provide important context for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C66",
+      "C67",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "A computational pipeline identified 25 unique putative genomic safe harbor loci that meet safety criteria and reside in active chromosomal compartments predicted to be accessible in multiple cell types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C18, C66-C67, C70-C73 describe the computational methodology and results. The approach is systematic, using publicly available data (Hi-C, GTEx, ENCODE) with clearly defined filters. The progression from 12,766 initial sites to 25 final candidates through multiple filtering steps is well-documented and methodologically sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C58",
+      "C59",
+      "C76"
+    ],
+    "result": "Three candidate GSH sites on chromosomes 1, 18, and 19 (named Pansio-1, Ol\u00f4nne-18, and Keppel-19) were successfully targeted in H1 and H9 hESC lines using CRISPR/Cas9 with no detectable off-target activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C22, C58-C59, C76 describe successful targeting validated by junction-PCR, digital-PCR, and Sanger sequencing. The use of enhanced-specificity Cas9 and verification of top five predicted off-targets strengthens confidence. The sites are >80kb from TAD borders, supporting their selection rationale.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C53"
+    ],
+    "result": "qPCR analysis showed minimal changes in expression of the nearest genes to the three targeted GSH sites, with log2 fold-changes ranging from -0.14 to 0.065 and only three comparisons showing p<0.05.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C25, C53 present qPCR data showing minimal expression changes in nearest genes. The small fold-changes and limited statistical significance support the safety of these sites. However, the statistical approach (one-sample t-tests) could be strengthened, and the biological significance of the few p<0.05 results is appropriately questioned.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C48",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "RNA-seq analysis revealed very low numbers of differentially expressed genes in GSH-targeted lines (96-119 in H1, 60-91 in H9), with CASP9 (from the targeting construct) being the most significant. The nearest DE genes were >1 Mb away, beyond typical enhancer-promoter interaction distances.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C31, C48, C60-C63 present comprehensive transcriptomic analysis. The low numbers of DE genes, their distance from integration sites, and overlap with wild-type control comparisons strongly support minimal genomic disruption. The identification of CASP9 as expected from the construct validates the analysis. The >1 Mb distance argument is well-supported by citation to enhancer-promoter interaction literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C49"
+    ],
+    "result": "Functional enrichment analysis revealed relatively few enriched terms, and observed differences may result from clonal heterogeneity rather than transgene integration effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C32-C33 report functional enrichment results, while C49 offers an alternative explanation for observed differences. The speculation about clonal heterogeneity (C49) is reasonable but not directly tested. This interpretation requires additional validation to distinguish integration effects from clonal variation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C34",
+      "C35"
+    ],
+    "result": "Karyotyping showed no abnormalities in the established GSH lines, and all three lines generated teratomas containing tissues from all three germ lineages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C35 provide important safety validation. Karyotyping confirms chromosomal stability, and teratoma formation demonstrates maintained pluripotency. These are standard validation approaches for engineered hESC lines and are appropriately executed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C50",
+      "C55",
+      "C74",
+      "C75"
+    ],
+    "result": "The three GSH sites support stable constitutive transgene expression (Clover fluorophore driven by CAGG promoter) in hESCs and differentiated cell types from all three germ lineages, with >98% positive cells maintained over 15 passages and 75-99% correlation in differentiated cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C39, C50, C55, C74-C75 demonstrate stable transgene expression across multiple cell types. The high percentages of positive cells over extended passages and across differentiation protocols provide strong evidence for the functionality of these GSH sites. The quantification by flow cytometry and high-content imaging strengthens these conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C40",
+      "C51"
+    ],
+    "result": "The GSH sites support inducible transgene expression, with doxycycline treatment driving GFP expression in 73% of cells after 24 hours.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C51 demonstrate that the GSH sites can support both constitutive and inducible expression systems. The 73% induction efficiency is reasonable for a tet-inducible system, though optimization might improve this. The result validates the versatility of these GSH sites.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C13",
+      "C56"
+    ],
+    "result": "Landing pad expression lines were established in H1 and H9 hESC for all three validated GSH sites to enable easy targeted transgene expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13, C56 describe the generation of landing pad cell lines. The experimental data on plasmid construction and cell line generation support these claims. These represent useful research tools, though their broader utility will depend on adoption by the research community.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C41",
+      "C46",
+      "C47",
+      "C52",
+      "C77"
+    ],
+    "result": "Previously reported integration sites lack criteria for avoiding regulatory elements or ensuring universal accessibility, and AAVS1 shows variable expression and silencing in hepatocytes and cardiomyocytes. The current study addresses these limitations by testing expression across multiple cell types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41, C46-C47, C52, C77 provide important context comparing the current work to prior studies. The citations appropriately support the limitations of existing sites and the advantages of the current approach. The testing across multiple germ lineages represents a significant improvement over prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C57"
+    ],
+    "result": "DNaseI hypersensitive regions were excluded from candidate sites as they are likely enriched in transcription factor binding and regulatory elements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C57 describes an additional filtering criterion beyond previously published GSH criteria. This is well-supported by citation to Meuleman et al. 2020 and represents a reasonable refinement to improve safety predictions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C64",
+      "C65"
+    ],
+    "result": "hESCs offer the best available model for testing GSH stability, and future advances in genome engineering technologies will facilitate integration of more complex constructs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C65 provide appropriate context about the model system and future directions. C64 is supported by established knowledge about hESC capabilities, while C65 appropriately speculates about future technological developments with relevant citations.",
+    "result_type": "MINOR"
+  }
+]

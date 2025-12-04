@@ -1,0 +1,2032 @@
+{
+  "submission": {
+    "id": "53e035cf-e0db-42a4-a595-1e1bc8579b7f",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-04T04:30:24.132897Z",
+    "updated_at": "2025-12-04T04:30:24.132897Z"
+  },
+  "content": [
+    {
+      "id": "264dcc4b-2953-421d-9ef5-7f1fc05c1fcf",
+      "submission_id": "53e035cf-e0db-42a4-a595-1e1bc8579b7f",
+      "content_type": "manuscript",
+      "content_text": "# Tissue-specific O-GlcNAcylation profiling identifies substrates in translational machinery in Drosophila mushroom body contributing to olfactory learning\n\n## Authors\n\n- Haibin Yu<sup>1</sup> ([ORCID: 0000-0002-8002-1316](https://orcid.org/0000-0002-8002-1316))\n- Dandan Liu<sup>2</sup>\n- Yaowen Zhang<sup>1</sup>\n- Ruijun Tang<sup>1</sup>\n- Xunan Fan<sup>1</sup>\n- Song Mao<sup>1</sup>\n- Lu Lv<sup>1</sup>\n- Fang Chen<sup>1</sup> ([ORCID: 0009-0000-6521-6580](https://orcid.org/0009-0000-6521-6580))\n- Hongtao Qin<sup>3</sup>\n- Zhuohua Zhang<sup>1</sup>\n- Daan MF van Aalten<sup>5</sup>\n- Bing Yang<sup>2</sup>\n- Kai Yuan<sup>1</sup> ([ORCID: 0000-0001-7002-5703](https://orcid.org/0000-0001-7002-5703)) \u2020\n\n### Affiliations\n\n1. Hunan Key Laboratory of Molecular Precision Medicine, Department of Oncology, Xiangya Hospital & Center for Medical Genetics, School of Life Sciences, Central South University Changsha China ([ROR:00f1zfq44](https://ror.org/00f1zfq44))\n2. Life Sciences Institute, Zhejiang University, Hangzhou Zhejiang China ([ROR:00a2xv884](https://ror.org/00a2xv884))\n3. State Key Laboratory of Chemo/Biosensing and Chemometrics, College of Biology, Hunan University Changsha China ([ROR:05htk5m33](https://ror.org/05htk5m33))\n4. National Clinical Research Center for Geriatric Disorders, Xiangya Hospital, Central South University Changsha China ([ROR:00f1zfq44](https://ror.org/00f1zfq44))\n5. Department of Molecular Biology and Genetics, University of Aarhus Aarhus Denmark ([ROR:01aj84f44](https://ror.org/01aj84f44))\n6. The Biobank of Xiangya Hospital, Central South University Changsha China ([ROR:00f1zfq44](https://ror.org/00f1zfq44))\n\n\u2020 Corresponding author\n\n## Abstract\n\nO-GlcNAcylation is a dynamic post-translational modification that diversifies the proteome. Its dysregulation is associated with neurological disorders that impair cognitive function, and yet identification of phenotype-relevant candidate substrates in a brain-region specific manner remains unfeasible. By combining an O-GlcNAc binding activity derived from Clostridium perfringens OGA (CpOGA) with TurboID proximity labeling in Drosophila, we developed an O-GlcNAcylation profiling tool that translates O-GlcNAc modification into biotin conjugation for tissue-specific candidate substrates enrichment. We mapped the O-GlcNAc interactome in major brain regions of Drosophila and found that components of the translational machinery, particularly ribosomal subunits, were abundantly O-GlcNAcylated in the mushroom body of Drosophila brain. Hypo-O-GlcNAcylation induced by ectopic expression of active CpOGA in the mushroom body decreased local translational activity, leading to olfactory learning deficits that could be rescued by dMyc overexpression-induced increase of protein synthesis. Our study provides a useful tool for future dissection of tissue-specific functions of O-GlcNAcylation in Drosophila, and suggests a possibility that O-GlcNAcylation impacts cognitive function via regulating regional translational activity in the brain.\n\n## Introduction\n\nProtein O-GlcNAcylation is a ubiquitous post-translational modification that occurs on thousands of nuclear and cytoplasmic proteins, conveying various stimuli or stressors such as fluctuating nutrient levels to distinct cellular processes (Yang and Qian, 2017; Olivier-Van Stichelen and Hanover, 2015; Davie et al., 2018). It involves reversible attachment of \u03b2-N-acetylglucosamine (GlcNAc) to the hydroxyl group of serine and threonine residues of protein substrates, catalyzed by a pair of evolutionarily conserved enzymes, O-GlcNAc transferase (OGT) and O-GlcNAcase (OGA) (Vocadlo, 2012). As a monosaccharide modification, the addition and removal of O-GlcNAc moiety are dynamic, with cycling rates ranging from several minutes to the lifetime of a protein (Miller et al., 1999; Roquemore et al., 1996). By modifying different protein substrates, O-GlcNAcylation exerts critical regulatory functions in a wide range of basic cellular processes, including transcription, translation, and protein homeostasis (Yang and Qian, 2017; Uygar and Lagerl\u00f6f, 2023; Wang et al., 2023). O-GlcNAcylation is ubiquitously distributed but more abundant in some tissues, such as the brain (Fehl and Hanover, 2022; Wulff-Fuentes et al., 2021). Given its enrichment in brain tissues and essential biological functions, it is not surprising that O-GlcNAc cycling is required for the development and functions of central nervous system (Olivier-Van Stichelen and Hanover, 2015; Lagerl\u00f6f, 2018; Akan et al., 2018), and its dysregulation is linked to numerous neurological disorders (Uygar and Lagerl\u00f6f, 2023; Lagerl\u00f6f, 2018; Lee et al., 2021; Banerjee et al., 2016).\n\nO-GlcNAc homeostasis appears to be required for proper cognitive function, although the molecular connections between the dysregulated O-GlcNAcome and cognitive impairment are not fully understood. Hypomorphic mutations of OGT are implicated in an X-linked intellectual disability syndrome (Pravata et al., 2020a; Pravata et al., 2019; Selvan et al., 2018; Willems et al., 2017; Vaidyanathan et al., 2017), a severe neurodevelopmental disorder now termed OGT-associated Congenital Disorder of Glycosylation (OGT-CDG) (Pravata et al., 2020b). Drosophila models of OGT-CDG that carry the equivalent human disease-related OGT missense mutations manifest deficits in sleep and habituation, an evolutionarily conserved form of non-associative learning (Fenckova et al., 2022). Our recent work has shown that decreased O-GlcNAcylation level in Drosophila, induced through overexpression of a bacterial OGA from Clostridium perfringens (CpOGA), leads to a deficit of associative olfactory learning. More interestingly, ectopic expression of CpOGA during early embryogenesis results in reduced brain size and learning defects in adult flies, likely due to interference of the sog-Dpp signaling required for neuroectoderm specification (Zhang et al., 2023). These studies reveal that disturbed O-GlcNAc homeostasis can impact cognitive function by compromising neuronal development. On the other hand, a number of studies have revealed that impaired O-GlcNAcylation is implicated in aging-related neurodegenerative diseases such as Alzheimer\u2019s disease (AD ) (Uygar and Lagerl\u00f6f, 2023; Lagerl\u00f6f, 2018; Lee et al., 2021; Banerjee et al., 2016; Balana and Pratt, 2021; Quan et al., 2023). In the cerebrum of AD patients, O-GlcNAcylation levels are significantly lower than that of healthy controls (Liu et al., 2009). Upregulation of O-GlcNAcylation levels by limiting OGA activity recovers the impaired cognitive function in AD mice models (Park et al., 2021; Kim et al., 2013). Interestingly, during normal aging in mice, reduction of O-GlcNAcylation levels also occurs in the hippocampus, and elevation of neuronal O-GlcNAc modification ameliorates associative learning and memory (Wheatley et al., 2019). These results indicate that, in addition to its involvement in neurodevelopment, O-GlcNAc homeostasis is also required for normal neuronal activity and cognitive function. However, the identity of key O-GlcNAc protein substrates supporting the cognitive abilities in adult brain and their spatial distribution remain largely unknown.\n\nAn obstacle to comprehensively identifying the O-GlcNAc conveyors of various cognitive functions is the lack of an effective tissue-specific O-GlcNAc profiling method. Given the structural diversity and relatively low abundance, enrichment of O-GlcNAc-modified proteins is required for mass spectrometry (MS)-based profiling of O-GlcNAcylation (Yin et al., 2021). The enrichment strategies roughly fall into two categories. One category involves direct capture of O-GlcNAcylated proteins by antibodies or lectins that recognize the GlcNAc moiety (Yin et al., 2021; Hu et al., 2022; Dupas et al., 2022; Saha et al., 2021; Maynard and Chalkley, 2021; Ma et al., 2021a; Ma et al., 2021b). O-GlcNAc antibodies including RL2 and CTD110.6, as well as O-GlcNAc-binding lectins such as wheat germ agglutinin (WGA), are commonly used for enrichment. In addition, the catalytic-dead mutant of CpOGA that retains the ability to recognize O-GlcNAcylated substrates was successfully repurposed to concentrate many developmental regulators from Drosophila embryo lysates (Selvan et al., 2017). Another category of enrichment strategies relies on chemoenzymatic or metabolic labeling (Yin et al., 2021; Hu et al., 2022; Dupas et al., 2022; Saha et al., 2021; Maynard and Chalkley, 2021; Ma et al., 2021a; Ma et al., 2021b). Azido-modified intermediates, such as N-azidoacetylglucosamine (GlcNAz) and N-azidoacetylgalactosamine (GalNAz), are used to introduce specific tags (e.g. biotin) to protein substrates via Staudinger ligation or click chemistry, allowing for capture and enrichment of O-GlcNAcylated proteins. A recent study coupled the O-GlcNAc-binding lectin GafD to the proximity labeling TurboID yielding the GlycoID tool (Liu et al., 2022), in which GafD domain recognizes O-GlcNAcylated substrates and the TurboID enzyme attaches nonhydrolyzable biotin tags to proximal proteins within approximately 10 nm radius (Branon et al., 2018). The GlycoID tool was used to profile O-GlcNAcylation in different subcellular spaces including the nucleus and cytosol (Liu et al., 2022). It is noteworthy that the O-GlcNAcylated proteins identified by different O-GlcNAcylation profiling strategies are quite diverse, probably due to the dynamic nature of O-GlcNAc cycling as well as the potential bias in substrates preference intrinsic to the methods (Zachara et al., 2004; Ma and Hart, 2014). Nonetheless, these advancements have greatly expanded the pan-O-GlcNAcome over the past 30 years (Wulff-Fuentes et al., 2021Ma et al., 2021a). However, none of them has been adopted for tissue-specific identification of O-GlcNAcylated proteins.\n\nHere, we generated transgenic Drosophila lines that allow specific expression of CpOGA in different brain regions. Ectopic expression of CpOGA in the major learning center of Drosophila brain, the mushroom body, reduced local O-GlcNAcylation levels and impaired olfactory learning. We further combined a catalytically incompetent CpOGA mutant (CpOGACD) with the proximity labeling enzyme TurboID to develop an O-GlcNAcylation profiling tool. By conditional expression of this tool to translate O-GlcNAc modification into biotin conjugation in specific brain structures, we mapped the O-GlcNAc interactome and generated an O-GlcNAc atlas for different brain regions of Drosophila (tsOGA, https://www.kyuanlab.com/tsOGA). Particularly, we detected abundant O-GlcNAc modifications associated with protein components of the translational machinery in the mushroom body. Lowering the mushroom body O-GlcNAcylation levels reduced the synthesis of new proteins, interfering with olfactory learning, which could be reversed by increasing ribosomal biogenesis via overexpression of dMyc. We propose that compromised translational activity in the brain learning center contributes to the cognitive deficits of O-GlcNAcylation insufficiency-associated neurological diseases.\n\n## Results\n\n### Perturbation of the mushroom body O-GlcNAcylation leads to olfactory learning deficits\n\nWe previously reported that ubiquitous expression of CpOGA in Drosophila reduced global O-GlcNAcylation levels and resulted in impaired olfactory learning (Zhang et al., 2023). To determine which brain region was responsible for this hypo-O-GlcNAcylation induced learning defect, we conditionally expressed wild-type CpOGA (CpOGAWT) in different brain structures of Drosophila (Figure 1A). CpOGADM, which carries two point-mutations (D298N and D401A) that inactivate both the catalytic and binding activities toward O-GlcNAc modification, was used as a control. We dissected brains from the adult flies and validated tissue-specific expression patterns via immunostaining. As expected, Elav-Gal4 induced CpOGAWT expression in the whole brain (Figure 1B), leading to decreased O-GlcNAcylation levels compared to the CpOGADM (Figure 1C). Similarly, other tissue-specific Gal4 drivers activated CpOGA expression in different brain structures and perturbed local O-GlcNAc modifications. For instance, OK107-Gal4 drove CpOGAWT expression in the mushroom body and downregulated O-GlcNAcylation levels in the Kenyon cells (Figure 1D and E).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/91269/elife-91269-fig1-v2.jpg)\n\n**Figure 1.:** (A) Scheme for expression of CpOGAWT or CpOGADM in various Drosophila brain structures using different Gal4 drivers. (B) Immunostaining of adult Drosophila brains. Brains were stained with anti-O-GlcNAc antibody RL2 (red) to assess O-GlcNAcylation level, and anti-GFP (green) antibody to validate tissue-specific expression of CpOGA. Nuclei were stained with DAPI (blue). Scale bar: 100 \u03bcm. (C) Quantification of fluorescent intensity of O-GlcNAc staining in CpOGAWT or CpOGADM expressed brains. n = 4. (D) Immunostaining of adult Drosophila brains. Outlined areas indicate the cell bodies of Kenyon cells in mushroom body. Scale bar: 100 \u03bcm. (E) Quantification of relative fluorescent intensity of O-GlcNAc staining in CpOGAWT or CpOGADM expressed brain structures. n = 8. (F) A compilation of performance index in learning test of the indicated flies expressing either CpOGAWT or CpOGADM. n = 6-8. (G) A compilation of learning performance index of flies expressing CpOGAWT or CpOGADM only in the mushroom body at adult stage. n = 6. Each datapoint represents an independent experiment with approximately 200 flies. p-values were determined by unpaired t-test, and the stars indicate significant differences (***p<0.001, **p<0.01 and ns, not significant, p\u22650.05). Error bars represent SD.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/91269/elife-91269-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A\u2013B) Bar graphs showing the odor acuity performance index of flies expressing CpOGAWT or CpOGADM in the indicated brain regions. n = 6-8. p values were determined by unpaired t-test, the stars indicate significant differences (***p<0.001, **p<0.01, *p<0.05, and ns, not significant, p\u22650.05). Error bars represent SD. (C) Schematic of Drosophila learning test. Black spots represent flies. In one trial, about 100 flies were trained to associate one of the two aversive odors (MCH or OCT) with electric shock on the upper part of a T-maze, and tested for odor preference on the lower part of the T-maze. Each independent experiment consisted of two trials with different odors coupled to the electric shock. The mean PI was calculated and plotted as one datapoint. (D) Temperature shifting scheme for Gal80ts restricted expression of Clostridium perfringens OGA (CpOGA) till adulthood.\n\nWe then evaluated the cognitive ability of these flies using an olfactory learning assay as previously reported (Jia et al., 2021; Mariano et al., 2020; Busto et al., 2010). To rule out the possibility that overexpression of CpOGAWT or CpOGADM differentially disrupted odor preference, we tested their olfactory acuity toward either 4-methylcyclohexanol (MCH) or octanol (OCT) using air as a control. Tissue-specific expression of CpOGAWT or CpOGADM in the antennal and optic lobes caused differences in odor susceptibility toward MCH or OCT, and these flies were, therefore, not included in subsequent olfactory learning tests (Figure 1\u2014figure supplement 1A and B). Flies expressing CpOGAWT or CpOGADM in brain neurons, mushroom body, or ellipsoid body were trained to associate electric shock punishment with an air current containing MCH or OCT, and then tested for the ability to remember the electric shock-associated odor using a T-maze apparatus (Figure 1\u2014figure supplement 1C). Compared to CpOGADM, conditional expression of CpOGAWT in brain neurons or mushroom body compromised the ability to establish the association between odor and electric shock (Figure 1F), suggesting that decreased O-GlcNAcylation levels in these brain regions resulted in a deficit in olfactory learning. In contrast, flies expressing CpOGAWT or CpOGADM in the ellipsoid body, as well as the control flies without a Gal4 driver, showed no statistical difference in the learning performance (Figure 1F). Ectopic expression of CpOGAWT in the mushroom body driven by OK107-Gal4 might impact neuronal development during the larval stages (Zhang et al., 2023). To directly investigate whether perturbation of O-GlcNAcylation compromised neuronal function in adult flies, we used the temperature-sensitive Gal80 (Gal80ts) to restrict CpOGA expression until adulthood (Figure 1\u2014figure supplement 1D). This temporally controlled expression of CpOGAWT specifically in the adult mushroom body did not affect the odor acuity but significantly disrupted olfactory learning relative to CpOGADM control (Figure 1G, Figure 1\u2014figure supplement 1A and B). These results suggested that proper O-GlcNAcylation homeostasis is essential for the mushroom body function.\n\n### O-GlcNAcylation profiling through CpOGA proximity labeling\n\nThe mushroom body is known to be the associative learning center in Drosophila brain (Heisenberg, 2003; McGuire et al., 2001). Having discovered that O-GlcNAcylation homeostasis in the mushroom body was critical for olfactory learning, we developed an O-GlcNAc profiling method that allows the identification of candidate O-GlcNAcylated protein substrates in this brain region. Mutation of the catalytic residue Asp298 to Asn (D298N) of CpOGA (CpOGACD) inactivates the enzymatic activity but retains its ability to bind O-GlcNAcylated peptides. Taking advantage of this property, far western, gel electrophoresis, proximity ligation, and imaging methods have been developed (Selvan et al., 2017; Zhang et al., 2022; Song et al., 2021; Mariappa et al., 2015; Estevez et al., 2020), and immobilized CpOGACD has been successfully used to enrich O-GlcNAcylated substrates in vitro (Selvan et al., 2017). We linked this O-GlcNAc binding activity of CpOGACD with TurboID, a biotin ligase that catalyzes biotinylation of adjacent proteins (Branon et al., 2018), to tag the O-GlcNAcylated proteins with biotin for subsequent enrichment and Mass Spectrometry (MS) identification (Figure 2A and B). CpOGADM was adopted as a control to eliminate O-GlcNAc-independent protein-protein interactions (Figure 2B). Once induced by different tissue-specific drivers, this tool could tag and enrich O-GlcNAc substrates and their interactors in a tissue-specific manner, as endogenous protein biotinylation level is low in most organisms including Drosophila.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/91269/elife-91269-fig2-v2.jpg)\n\n**Figure 2.:** (A) Diagram of the constructs used for the expression of TurboID-CpOGACD/DM. (B) Schematic representation of TurboID-CpOGACD based profiling strategy. In the presence of biotin, TurboID biotinylates the CpOGACD-bound O-GlcNAc proteins, which can be further purified by streptavidin pull-down for mass spectrometry (MS) identification. TurboID-CpOGADM is used as a negative control for O-GlcNAc-independent protein-protein interactions. (C) Immunoprecipitation of biotinylated proteins from HEK293T cell lysates using streptavidin-magnetic beads. Biotinylation was detected by immunoblotting with streptavidin-HRP, and O-GlcNAcylation with anti-O-GlcNAc antibody (RL2). The expression of TurboID-CpOGACD/DM was verified by anti-HA immunoblotting. (D) Venn diagram showing the overlap of potentially O-GlcNAcylated proteins identified with TurboID-CpOGA versus that with another two commonly used methods. (E) STRING visualization of protein-protein interaction network of the 48 highly-confident O-GlcNAc substrates in HEK293T cells.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/91269/elife-91269-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A\u2013B) Determination of the optimal biotin concentration and incubation time for TurboID-CpOGACD labeling in HEK293T cells. Biotinylated proteins were detected by immunoblotting with streptavidin-HRP. (C\u2013D) Immunoblotting of cells treated with Thiamet-G or OSMI-1 using anti-O-GlcNAc antibody (RL2) or streptavidin-HRP. The expression of TurboID-CpOGACD/DM was detected by anti-HA immunoblotting. (E) Bubble plot showing the Gene Ontology (GO) enrichment analysis of candidate O-GlcNAcylated substrates identified by the indicated methods. Bubble color indicates the -log10 (p-value), and bubble size represents the ratio of genes in each category.\n\nAs proof of concept, we generated stable HEK293T cells expressing TurboID-CpOGACD or its reference construct TurboID-CpOGADM. To characterize labeling activity, treatment with 10 mM or 100 mM biotin from an aqueous stock was first applied on these cells for 60 min, and the cell lysates were subject to western blot with streptavidin-HRP (Figure 2\u2014figure supplement 1A). 10 mM biotin treatment yielded robust biotinylation of proteins, and this concentration was selected for subsequent experiments on cultured cells. To determine optimal incubation time, the cells were treated with 10 mM biotin from 15 to 180 min. Significant time-dependent labeling activity of proteins was observed, and 120 min was selected because it generated strong biotinylation in cells expressing CpOGACD compared to the CpOGADM control (Figure 2\u2014figure supplement 1B). We validated whether a fluctuation in O-GlcNAcylation could be translated into biotinylation alterations. To this end, the cells were first treated with OGA inhibitor Thiamet-G or OGT inhibitor OSMI-1 for 6 hr followed by biotin incubation. Thiamet-G increased global O-GlcNAcylation levels, and the overall biotinylation was consistently upregulated. Conversely, OSMI-1 treatment decreased both O-GlcNAcylation and biotinylation in the cell lysates, suggesting that TurboID-CpOGACD effectively translates O-GlcNAc modification into biotin conjugation (Figure 2\u2014figure supplement 1C and D).\n\nTo test whether TurboID-CpOGACD could be used to enrich and identify O-GlcNAcylated substrates, we performed immunoprecipitation with streptavidin magnetic beads from equal amount of cell lysates expressing either TurboID-CpOGACD or TurboID-CpOGADM after biotin incubation (Figure 2C). TurboID-CpOGACD labeled more proteins with biotin in the input compared to TurboID-CpOGADM, and consistently, more biotinylated proteins were immunoprecipitated. Importantly, western blot with anti-O-GlcNAc antibody RL2 detected strong O-GlcNAcylation signals in immunoprecipitants from the cells expressing TurboID-CpOGACD but not TurboID-CpOGADM, indicating successful enrichment of O-GlcNAc substrates using the biotin tags (Figure 2C). We scaled up the experiments and carried out MS analysis on the immunoprecipitants. Proteins that were selectively enriched in the TurboID-CpOGACD group relative to the TurboID-CpOGADM control (log2 FC >1) were regarded as O-GlcNAcylated substrates (Figure 2B). We, therefore, identified 336 O-GlcNAc candidate substrates from HEK293T cells (Supplementary file 1). To compare this result with known O-GlcNAc modifications, we compiled two lists of the previously identified O-GlcNAcylated proteins in HEK293T cells via either direct capture (Zhao et al., 2011; Teo et al., 2010) or chemoenzymatic labeling methods (Wang et al., 2021; Zhu et al., 2020; Li et al., 2019; Li et al., 2016; Hahne et al., 2013; Supplementary file 2). Gene ontology (GO) analysis on these three datasets showed that they were enriched in similar biological processes (Figure 2\u2014figure supplement 1E). Overlap analysis revealed that 52% (178/336) of the O-GlcNAc candidate substrates identified in our study were also present in previous reports (Figure 2D). 48 proteins were shared among the three lists (Supplementary file 3), encompassing many well-known O-GlcNAcylated proteins such as OGT (Griffin et al., 2016), NUP153 (Li et al., 2022), NUP62 (Zhu et al., 2016), and HCFC1 (Capotosti et al., 2011). Protein-protein interaction networks of these 48 proteins highlighted four cellular component clusters: the MLL1 complex, nuclear pores, COPII vesicle coats, and cytoplasmic stress granules (Figure 2E). Additionally, of the 158 candidate proteins that were unique in our result, 113 were annotated as O-GlcNAcylation substrates in the O-GlcNAc database (https://www.oglcnac.mcw.edu/). These results validated that TurboID-CpOGACD was able to selectively tag O-GlcNAcylated proteins with biotin for enrichment and identification.\n\n### Region-specific O-GlcNAcylation profiling of Drosophila brain\n\nWe next generated transgenic flies harboring UAS-TurboID-CpOGACD or UAS-TurboID-CpOGADM via \u03c6C31 integrase-mediated site-specific recombination. To test biotinylation efficiency, we used Da-Gal4 to drive ubiquitous expression and raised the flies on biotin-containing food (100 mM) from early embryonic stage to adulthood according to previous reports (Branon et al., 2018; Zhang et al., 2021; Figure 3A). Flies were homogenized and equal amounts of lysate were used in immunoprecipitation experiments. Similar to the result with HEK293T cells, TurboID-CpOGACD catalyzed more biotinylation in the input relative to TurboID-CpOGADM, and more biotinylated proteins were immunoprecipitated, in which strong O-GlcNAcylation signals were detected (Figure 3B). To validate whether TurboID-CpOGACD could achieve brain region-specific labeling of O-GlcNAcome with a biotin tag, we selected different Gal4 to drive TurboID-CpOGACD in distinct brain regions and fed the flies with biotin. Whole-mount staining of the brains showed that TurboID-CpOGACD displayed specific expression patterns as expected. More importantly, staining with streptavidin-Cy3 detected strong biotinylation in the brain regions expressing TurboID-CpOGACD, whereas the rest of the brain showed negligible background signals (Figure 3C).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/91269/elife-91269-fig3-v2.jpg)\n\n**Figure 3.:** (A) Scheme for validating TurboID-CpOGACD/DM in flies. (B) Immunoprecipitation of biotinylated proteins from flies. Biotinylation was detected by immunoblotting with streptavidin-HRP, and O-GlcNAcylation with anti-O-GlcNAc antibody (RL2). The expression of TurboID-CpOGACD/DM was validated by anti-HA immunoblotting. (C) Immunostaining of Drosophila brains expressing TurboID-CpOGACD in different brain structures. Biotinylated proteins were stained with streptavidin-Cy3 (red), and TurboID-CpOGACD with anti-HA antibody. Nuclei were visualized by DAPI (blue). Scale bar: 100 \u03bcm. (D) Bar graph showing the number of O-GlcNAcylated protein candidates identified from different brain structures of Drosophila. (E) Gene Ontology (GO) enrichment analysis of O-GlcNAcylated protein candidates detected in the mushroom body. Bubble color indicates the -log10 (p-value), and bubble size represents the ratio of genes in each category.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/91269/elife-91269-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A\u2013D) Gene Ontology (GO) enrichment analysis of potentially O-GlcNAcylated proteins in whole brain neurons (A), antennal lobe (B), ellipsoid body (C), and optic lobe (D). Bubble color indicates the -log10 (p-value), and bubble size represents the ratio of genes in each category. (E) Strategy to normalize the O-GlcNAcylated protein level with expression level for each candidate substrate in different brain regions. A normalizing factor for each substrate in a given brain region was calculated using single-cell RNA-seq expression data, and the adjusted O-GlcNAc level was determined as the log2 FC divided by its normalizing factor. (F) The front-page of the tsOGA (tissue-specific O-GlcNAcylation Atlas of Drosophila brain) website.\n\nSubsequently, we immunoprecipitated biotinylated proteins from these fly brain lysates using streptavidin magnetic beads and performed MS analysis to identify putative O-GlcNAc substrates in different brain regions. Proteins with higher LFQ (label-free quantitation) intensity in the TurboID-CpOGACD group relative to the TurboID-CpOGADM control (log2 FC >1 or p<0.05) were considered as potentially O-GlcNAcylated substrates. We, therefore, identified 491 putative O-GlcNAcylated proteins in all neurons in the fly brain (Elav-Gal4), 455 in the mushroom body (OK107-Gal4), 377 in the antennal lobe (GMR14H04-Gal4), 234 in the optic lobe (GMR33H10-Gal4), and 289 in the ellipsoid body (c232-Gal4) (Figure 3D, Supplementary files 4-8). To obtain a functional overview of the O-GlcNAc interactome in different brain regions, GO analysis was performed to highlight the most enriched functional modules (Figure 3E, Figure 3\u2014figure supplement 1A\u2013D). The O-GlcNAc interactome in brain neurons was enriched in chemical synaptic transmission, neurotransmitter secretion, as well as chromatin remodeling, whereas putative O-GlcNAcylated substrates in specific brain regions were involved in rather diverse biological processes, ranging from mRNA splicing to chitin-base cuticle development. Of particular interest, putative O-GlcNAcylation modifications in the mushroom body were highly clustered in processes linked to translation, including cytoplasmic translation, translational initiation, ribosome assembly, and ribosome biogenesis. To eliminate possible interference caused by varying abundance of these candidate proteins in different brain regions, we normalized the calculated O-GlcNAc level (log2 FC) of each substrate using its corresponding brain region-specific normalizing factor generated from the single-cell transcriptome atlas of the adult Drosophila brain (Davie et al., 2018; Figure 3\u2014figure supplement 1E). For ease of search and use, we created an online database for tissue-specific O-GlcNAcylation Atlas of Drosophila Brain (tsOGA, http://kyuanlab.com/tsOGA/) to host these datasets (Figure 3\u2014figure supplement 1F).\n\n### O-GlcNAcylation affects cognitive function of Drosophila by regulating translational activity in the mushroom body\n\nWe calculated the percentage of ribosomal components in all the proteins identified from different brain regions, and found that nearly 10% of the putative O-GlcNAc substrates in the mushroom body were from ribosomes, much higher than that in other brain regions (Figure 4\u2014figure supplement 1A). To validate that the observed enrichment was not due to higher expression levels of these ribosomal subunits in the mushroom body, we plotted the normalized O-GlcNAc levels of the putative ribosomal substrates alongside their mRNA abundances in different brain regions. While the O-GlcNAc levels were highest in the mushroom body, their mRNA abundances were not (Figure 4A). Moreover, in the mushroom body, the O-GlcNAc levels of these ribosomal proteins showed no correlation with their mRNA abundances (Figure 4\u2014figure supplement 1B).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/91269/elife-91269-fig4-v2.jpg)\n\n**Figure 4.:** (A) Heatmaps showing the mRNA levels (upper) and the normalized O-GlcNAc levels (lower) of the identified ribosomal candidates in different brain regions. (B) Immunoprecipitation of ribosomes using FLAG-tagged RpL13A. The expression of RpL13A-FLAG was validated by immunoblotting with anti-FLAG antibody. Ribosomal proteins were visualized using silver staining, and O-GlcNAcylation of ribosomes was analyzed by immunoblotting with anti-O-GlcNAc antibody RL2. (C) A compilation of the performance index of the indicated flies in the learning test. Learning defect of flies expressing CpOGAWT was corrected by selective expression of dMyc in mushroom body. n = 6-7. Each datapoint represents an independent experiment with approximately 200 flies. (D) Ex vivo measurement of protein synthesis in mushroom body using the O-propargyl-puromycin (OPP) assay. Brains from the indicated flies were stained with anti-GFP (green) antibody to validate CpOGA expression, and OPP (gray) to quantify protein synthesis. Nuclei were visualized with DAPI (blue). Outlined areas indicate the cell bodies of Kenyon cells of mushroom body. Scale bar: 100 \u03bcm. (E) Quantification of relative OPP fluorescent intensity in mushroom body regions. n = 8-12. p-values were determined by unpaired t-test, the stars indicate significant differences (***p<0.001, **p<0.01, *p<0.05). Error bars represent SD.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/91269/elife-91269-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Bar chart representing the proportion of ribosomal proteins in the O-GlcNAcome of different brain structures identified by TurboID-CpOGA. (B) Correlation analysis between mRNA levels and O-GlcNAc levels of candidate ribosomal substrates in mushroom body. Linear regression analysis was performed and no significance was noted (p\u22650.05). (C) qPCR analysis of the indicated ribosomal components expression after shRNA-mediated knockdown. n = 3. (D) A compilation of the performance index of the control and ribosomal subunits knockdown flies in the learning test. n = 4-6. Each datapoint represents an independent experiment with approximately 200 flies. (E\u2013F) Bar graphs showing the odor acuity performance index of the control and ribosomal subunits knockdown flies. n = 6. p values were determined by unpaired t-test, the stars indicate significant differences (***p<0.001, **p<0.01, *p<0.05, and ns, not significant, p\u22650.05). Error bars represent SD.\n\nTo directly verify whether mushroom body ribosomes were hyper-O-GlcNAcylated, Flag-tagged RPL13A, a core component of the large ribosomal subunit, was expressed in brain neurons or specifically in the mushroom body, driven by Elav-Gal4, or OK107-Gal4, respectively. Intact ribosomes were then isolated from these brain regions by anti-Flag immunoprecipitation (Huang et al., 2019; Figure 4B). Silver staining detected an array of specific bands on SDS-PAGE gel in the immunoprecipitants, indicating successful enrichment of ribosomal components. Western blot with anti-O-GlcNAc antibody RL2 showed that ribosomes purified from mushroom body contained more O-GlcNAc modifications than that from whole brain neurons. These results ascertained that ribosomal components were abundantly O-GlcNAc modified in the learning center of Drosophila brain.\n\nTo investigate whether high O-GlcNAcylation is required for translational activity in mushroom body, we dissected the brains of flies expressing CpOGAWT driven by OK107-Gal4 and measured translation ex vivo using an O-propargyl-puromycin (OPP)-based protein synthesis assay (Liu et al., 2012; Figure 4D). Ectopic expression of CpOGAWT but not the control CpOGADM in the mushroom body decreased local protein synthesis as visualized by the OPP fluorescent intensity (Figure 4D and E), suggesting that tuning down the O-GlcNAcylation compromised local translational activity. Hypo-O-GlcNAcylation in the mushroom body resulted in an olfactory learning defect (Figure 1D and F). We next investigated whether this cognitive phenotype was due to compromised translational activity. To this end, we selected a panel of representative ribosomal components that were significantly O-GlcNAcylated in the mushroom body, and performed RNA interference (RNAi)-mediated knockdown. The RNAi induced by Da-Gal4 reduced the expression of the targeted ribosomal genes to varying degrees (Figure 4\u2014figure supplement 1C). We then crossed the RNAi lines to OK107-Gal4 to drive specific knockdowns in the mushroom body, and conducted an olfactory learning assay with these flies. Downregulation of RPL11 and RPL24 in the ribosomal large subunit, and RPS3 and RPS6 in the ribosomal small subunit did not alter olfactory acuity but led to compromised olfactory learning ability (Figure 4\u2014figure supplement 1D\u2013F), suggesting that reduction of translational activity was sufficient to cause learning impairment. We then reasoned that upregulation of translation might ameliorate the cognitive defect caused by CpOGAWT-induced hypo-O-GlcNAcylation. Myc serves as a direct regulator of ribosome biogenesis, promoting protein synthesis through transcriptional control of RNA and protein components of ribosomes, as well as factors involved in the processing and nuclear export of these ribosomal subunits (Gallant, 2013; Jiao et al., 2023; van Riggelen et al., 2010). We overexpressed dMyc in the mushroom body to boost local translational activity. The results revealed that dMyc expression restored local protein synthesis, and more importantly, rescued the hypo-O-GlcNAcylation-induced olfactory learning defect (Figure 4C\u2013E), indicating that O-GlcNAcylation insufficiency-induced cognitive impairment involves compromised translational activity in the brain learning center.\n\n## Discussion\n\nProtein O-GlcNAcylation is controlled by a very simple system consisting of only two enzymes, OGT and OGA. Yet it can dynamically modify more than 5000 protein substrates in different tissues to regulate their stability, protein-protein interactions, enzymatic activity, as well as subcellular localization upon changes in cellular metabolisms. Deciphering the spatial-temporal profiles of protein O-GlcNAcome and linking subsets of O-GlcNAc substrates to different physiological and pathological phenotypes are major obstacles in the field. In this study, we developed an O-GlcNAcylation profiling tool that allowed tissue-specific identification of O-GlcNAc candidate substrates. With this tool, we depicted the O-GlcNAc interactome in different brain regions of Drosophila and established an online database tsOGA (http://kyuanlab.com/tsOGA/) to facilitate future functional dissection of O-GlcNAcylation. Moreover, we consolidated a causal relationship between hypo-O-GlcNAcylation and cognitive impairment in Drosophila, and revealed that insufficient O-GlcNAcylation in the mushroom body of Drosophila brain reduced local translational activity that contributed to the observed olfactory learning deficits.\n\nThe O-GlcNAcome in different tissues and cell populations is heterogeneous and pleiotropic, and our understanding of the tissue-specific functions of O-GlcNAc modification remains quite limited, mainly relying on conditional knockout studies of OGT or OGA (Issad et al., 2022). Establishment of O-GlcNAcylation landscapes in different tissues under healthy and diseased conditions is needed to fully appreciate its multifaceted functions. The strategy reported here has achieved mapping the O-GlcNAcylated candidates with high spatial precision in Drosophila brain. With small modifications, this strategy can be readily applied to other tissues or even other model organisms in future studies. However, there are two potential caveats that need to be taken into consideration. First, the method relies on the ectopic expression of bacterial CpOGA mutants fused with TurboID to label the O-GlcNAcome. The introduction of these foreign proteins could interfere with the normal functions of the targeted tissue. Although Drosophila seemed to tolerate this bacterial protein well when we assessed the functional consequences of expressing CpOGA or its mutants in different tissues, their impacts on other model organisms remain unknown. Second, given that our method is based on the differential enrichment in the TurboID-CpOGACD experimental group relative to the TurboID-CpOGADM control group to identify putative O-GlcNAc substrates, the sensitivity is limited compared to the chemoenzymatic labeling methods. Additionally, because the TurboID biotinylates all proximal proteins within ~10 nm radius, the identified proteins can be in complex with other O-GlcNAc substrates but itself is not directly O-GlcNAcylated. Further biochemical validations are needed to ascertain the bona fide substrates and their modification sites. Nonetheless, using the O-GlcNAc profiling data generated with this method, we established a framework of a tissue-specific O-GlcNAcylation database for Drosophila. As more tissue-specific O-GlcNAc profiling data are generated and deposited, it will undoubtedly be a useful resource for the community to facilitate future functional interrogations of different O-GlcNAcylation substrates at the organismal level.\n\nThe brain manifests high OGT expression and relies on protein O-GlcNAcylation to regulate many of its functions. Perturbed O-GlcNAcylation has been linked to neurodegenerative diseases and several key etiological factors are known O-GlcNAc substrates, such as tau (Liu et al., 2009; Yuzwa et al., 2012), \u03b2-amyloid (A\u03b2) (Park et al., 2021), neurofilaments (NFs) (L\u00fcdemann et al., 2005), TDP-43 (Zhao et al., 2021), and \u03b1-synuclein (Levine et al., 2019; Marotta et al., 2015). Particularly, O-GlcNAcylation can antagonize hyperphosphorylation of tau and stabilize it from aggregation, preventing neuronal death and tauopathies (Lee et al., 2021). Hence, OGA inhibitors have been tested in several clinical trials to target tauopathy and early symptomatic AD, leading to a recent FDA approval of the OGA inhibitor MK-8719 as an orphan drug for tau-driven neurodegenerative disease (Wang et al., 2020). Our study strengthened a causal relationship between hypo-O-GlcNAcylation and cognitive impairment, and suggested that O-GlcNAcylation influences associative learning by regulating translational activity in the brain computational center. Consistent with previous reports (Ohn et al., 2008; Shu et al., 2022; Zeidan et al., 2010), we identified components in the translational machinery as putative O-GlcNAc substrates, including several translational initiation factors and particularly many ribosomal subunits. The potential regulation of ribosomal activity by O-GlcNAcylation warrants future structural and biochemical characterizations. Our O-GlcNAc profiling results also provide a rich resource for the discovery of other conveyors of O-GlcNAc-associated cognitive deficits. For instance, the brain O-GlcNAc substrates, scu and Upf3 possess human homologs, HSD17B10, and UPF3B, that are known X-linked intellectual disability risk genes (Firth et al., 2009; Vissers et al., 2016). In addition, recent studies have revealed that stress granules are tightly linked with autism spectrum disorders (Jia et al., 2022). The enrichment of stress granule components in the O-GlcNAc substrate list suggests that O-GlcNAcylation dysregulation might be involved in autism as well. We anticipate that this study will galvanize further studies into targeting O-GlcNAcylation insufficiency to ameliorate cognitive defects commonly seen in many neurological diseases.\n\n## Materials and methods\n\n### Cell cultures and generation of stable cell lines\n\nHEK293T cells (Meisen CTCC) were cultured in a DMEM/high glucose medium (Biological Industries, 01-052-1A) with 10% FBS (VISTECH, SE100-B) at 37\u2103 under 5% CO2. The CpOGACD and CpOGADM sequences were codon optimized to Homo sapiens and Drosophila using Jcat (Grote et al., 2005). The fragments of TurboID-CpOGACD and TurboID-CpOGADM (TurboID-CpOGACD/DM) were PCR amplified and cloned into pCDH-CMV-HA vectors, respectively. For lentivirus preparation, HEK293T cells were transfected with TurboID-CpOGACD/DM plasmid with the packaging plasmids pPAX2 and pMD.2G using Polyethylenimine Linear (PEI, Polysciences, 24765). The PEI-containing medium was replaced with fresh serum-containing DMEM medium after 8 hr, and the viral supernatants were collected 48 hr and 72 hr post-transfection. The viral supernatants were centrifuged at 10,000 g for 1 hr at 4\u2103, and the pellet was dissolved in PBS (Biological Industries, 02-023-1A). HEK293T cells were infected in six-well plates and selected with 1 \u00b5g/mL Puromycin (Selleck, s7417) in the medium for at least 5 days. For biotin labeling, the TurboID-CpOGACD or TurboID-CpOGADM expressing HEK293T cells were labeled with 10\u2013100 \u00b5M biotin (Merck, B4501) in the medium for 15 min to 3 hr. Labeling was stopped by placing cells on ice and washing cells three times with PBS (Biological Industries, 02-023-1A).\n\n### Drosophila stocks and genetics\n\nAll flies were raised on standard fly food at 25 \u00b0C. Biotin food was prepared by adding 200 mM biotin (Merck, B4501) to hot (~60\u2103) standard fly food and dissolved to a final concentration of 100 \u03bcM (Zhang et al., 2021). The strains used in this study were as follows: w1118,;sco/cyo;TM3/TM6B, Da-Gal4 (Gift from Kun Xia\u2019s lab), Elav-Gal4 (Gift from Zhuohua Zhang\u2019s lab), OK107-Gal4, 201Y-Gal4 (Gift from Ranhui Duan\u2019s lab), C232-Gal4 (BDSC, #30828), GMR14H04-Gal4 (BDSC, #48655), GMR33H10-Gal4 (BDSC, #49762), Tub-Gal80ts, uas-RPL13A-FLAG, uas-dMyc (Gift from Jun Ma\u2019s lab), uas-shLuciferase (Gift from Zhuohua Zhang\u2019s lab), uas-shRPL5 (THU0670), uas-shRPs26 (THU0747), uas-shRPL24 (THU1411), uas-shRPS6 (THU0864), uas-shRPL11 (TH201500769.S), uas-shRPS3 (THU1958), uas-shRPL32 (TH201500773.S), uas-shRPS28b (THU1037). Our study established two transgenic fly lines (UAS-HA-TurboID-CpOGACD and UAS-HA-TurboID-CpOGADM). TurboID-CpOGACD/DM fragments were cloned into pUASz-HS-HA vectors, respectively using Gibson assembly (NEB). Constructs with the attB sequence were injected into flies (y1, w67c23; P(CaryP) attP2) to initiate the \u03c6C31 integrase-mediated site-specific integration (UniHuaii). The resulted adult flies (G0) were crossed to double balancer to get the F1 generations.\n\n### Olfactory learning and memory\n\nBehavioral experiments were carried out in an environmental chamber at 25 \u00b0C and 70% humidity as previously described (Jia et al., 2021). We tested the acuity of flies against two aversive odors, 4-methylcyclohexanol (MCH, Sigma, 104191) and 3-octanol (OCT, Sigma, 218405). Approximately 100 flies were placed in the center compartment of the T-maze, where the collection tubes were snapped into place at the choice point and the air and aversive odor tubes were connected with the distal ends of the collection tubes. Flies were allowed to choose between air versus aversive odor for 2 min. After the choice period, the sliding center compartment was pulled up quickly, trapping the flies in the collection tubes they had chosen. Flies in each collection tube were anesthetized and counted. Performance index (PIodor) was determined as the number of flies on the air side (n(Air)) minus the number on the aversive odor side (n(odor)) divided by the total number of flies (n(Air)+n(odor)) and multiplied by 100%.\n\nPIodor=[n(Air)-n(odor)]/[n(Air)+n(odor)]\u00d7100%.\n\nIf the experimental group flies have similar odor avoidance to that of control, they will be used for subsequent olfactory learning tests.\n\nAfter confirming that the flies to be tested have avoidance behavior in response to electric shock, flies were trained to associate an aversive odor (MCH or OCT) used as a conditioned stimulus (CS) with electric shock. The experiment comprised two phases: the flies were trained in the first phase, and the trained flies were tested in the second phase. During training, approximately 100 flies were simultaneously exposed to odor 1 (CS+) and electric shock (60 V) in a training tube for 1 min. Then, they were exposed to the blank odor (air) for 1 min before receiving odor 2 (CS-) without electric shock for 1 min, followed by the blank odor (air) for 1 min. Immediately after training, flies were transferred to the central chamber of the T-maze and retained there for 1 min. To measure learning, The center chamber was slid smoothly into the register with the choice point of the T-maze and the MCH and OCT odor tubes were supplied from the two distal ends of the collection tube to let the flies choose between the two odors for 2 min. The central chamber then was pulled up quickly, trapping the flies in the collection tube they had chosen. Flies in each collection tube were anesthetized and counted. We calculated the Performance Index (PI) for each condition as the number of flies avoiding the shock-paired odor (CS-) minus the number of flies choosing the shock-paired odor (CS+) divided by the total number of flies (CS- + CS+) and multiplied by 100%.\n\nPI = [n(CS-)-n(CS+)]/[n(CS+)+n(CS-)]\u00d7100%.\n\nIn each experiment, we calculated the mean PI from two trials: one in which MCH was the shock-paired odor, and the other in which OCT was the shock-paired odor. This method removed any potential bias caused by the flies having a stronger preference for one odor over the other. Therefore, each point in the bar graph consisted of approximately 200 flies (male: female = 1:1), with half of the flies trained to one odor, and the other half trained to the other odor.\n\nFor the temporally controlled CpOGA expression in the adult mushroom body, the flies were initially maintained at 19\u2103 until adulthood. Then, the flies were transferred to 29\u2103 for 3\u20135 days to inactivate Gal80ts and hence allow the expression of CpOGA. The behavioral experiments were carried out subsequently.\n\n### Western blot assay\n\nThe HEK293T cells and flies were lysed in lysis buffer (2% SDS, 10% glycerol, and 62.5 mM Tris-HCl, pH 6.8) supplemented with protease inhibitor cocktail (1:100, Sigma, P8340), and PMSF (1:100, Sigma, P7626) and 50 \u00b5M Thiamet-G (Selleck, s7213). Lysates were clarified by centrifugation at 13,000 rpm for 30 min at 4\u2103, and the protein concentration was determined using BCA assay (Beyotime, p0009). Proteins were mixed with an equal volume of SDS sample buffer (2% \u03b2-Mercaptoethanol) and boiled for 10 min at 95\u2103. Proteins were separated by 10% SDS-PAGE (90 V, 30 min; 120 V, 1 hr) and transferred to a Polyvinylidene Fluoride (PVDF, Millipore, IPVH00010) membrane (290 mA, 90 min). The PVDF membrane was blocked with 5% non-fat milk for 1 hr, then incubated with primary antibodies overnight at 4\u2103, and then incubated with secondary antibodies (1:5000, Thermo Fisher Scientific) for 1 hr at room temperature. The signal was detected using ECL substrates (Millipore). Primary antibodies were dissolved in 5% BSA (Biofroxx, 4240GR005) and the dilutions were: Streptavidin-HRP (1:2000, GenScript, M00091), RL2 (1:1000, Abcam, ab2739), HA (1:3000, Cell Signaling Technology, 3724), Tubulin (1:3000, Cell Signaling Technology, 12351 S), FLAG (1:3000, Cell Signaling Technology, 14793). For the Western blot experiment in Figure 2\u2014figure supplement 1C and D, cells were cultured in the medium supplemented with 25 \u03bcM Thiamet-G (Selleck, s7213) or 25 \u03bcM OSMI-1(Sigma, SML1621) for 6 hr before lysis. For the experiment in Figure 4D, the gel was stained with a Fast Silver Stain Kit (Beyotime, P0017S).\n\n### Immunoprecipitation\n\nFor the immunoprecipitation experiment in Figures 2C and 3B, the HEK293T cells (1\u00d7107 cells per sample) and flies (~20 flies per sample) were lysed in RIPA lysis buffer (50 mM Tris pH 8.0, 150 mM NaCl, 0.1% SDS, 0.5% Sodium deoxycholate, 1% NP40, 10 mM NaF, 10 mM Na2VO4, 50 \u00b5M Thiamet-G) supplemented with protease inhibitor cocktail (1:100, Sigma, P8340) and PMSF (1:100, Sigma, P7626) on ice for 30 min. After centrifugation at 13,000 g for 30 min at 4\u2103, the supernatants were transferred to new tubes. The protein concentration was determined using a BCA assay (Beyotime, p0009). Streptavidin magnetic beads (MCE, HY-K0208) were washed twice with RIPA lysis buffer, and incubated with the same amount of lysate from TurboID-CpOGACD or control samples on a rotator overnight at 4\u2103. The beads were washed twice with 1 mL of RIPA lysis buffer, once with 1 mL of 1 M KCl, once with 1 mL of 0.1 M Na2CO3, once with 1 mL of 2 M urea in 10 mM Tris-HCl (pH 8.0), and twice with 1 mL RIPA lysis buffer. After that, the beads were resuspended in SDS sample buffer and boiled for 10 min at 95\u2103. Finally, samples were stored at \u221280\u2103 for future analysis.\n\nThe immunoprecipitation experiment in Figure 4B was performed as previously described (Huang et al., 2019). Briefly, fly brains (~40 fly brains per sample) were lysed in ribo-lysis buffer (50 mM Tris-HCl pH 7.4, 12 mM MgCl2, 100 mM KCl, 1 mM DTT, 1% NP-40, 100 \u00b5g/mL cycloheximide, 50 \u00b5M Thiamet-G) supplemented with protease inhibitor cocktail (1:100, Sigma, P8340) and PMSF (1:100, Sigma, P7626) on ice for 30 min. After centrifugation at 13,000 g for 30 min at 4\u2103, the supernatants were transferred to new tubes. The protein concentration was determined using a BCA assay (Beyotime, p0009). Anti-FLAG M2 affinity gels (Sigma, A2220) were washed twice with ribo-lysis buffer, and incubated with tissue lysates on a rotator overnight at 4\u2103. The beads were washed three times with 1 mL of high salt buffer (50 mM Tris-HCl pH 7.4, 12 mM MgCl2, 300 mM KCl, 1 mM DTT, 1% NP-40, 100 \u00b5g/mL cycloheximide). The beads were resuspended in SDS sample buffer and boiled for 10 min at 95\u2103. Finally, samples were stored at \u221280\u2103 for future analysis.\n\n### Immunofluorescence\n\nThe adult fly brains were dissected in PBS and fixed with 4% paraformaldehyde (PFA, Biosharp, BL539A) for 1 hr at room temperature. The brains were washed three times with PBS (Biological Industries, 02-023-1A) and then permeabilized and blocked in 5% BSA (Biofroxx, 4240GR005) in 0.3% PBST (PBS with 0.3% Triton X-100) for 90 min at room temperature. After being washed three times with PBS, the brains were incubated with primary antibodies overnight at 4\u2103, washed three times with PBS, and incubated with secondary antibodies (1:200, Thermo Fisher Scientific) and DAPI (1:500, Sigma, D9542) for 1 hr at room temperature. The brains were then washed three times with PBS and imaged by confocal fluorescence microscopy (Zeiss LSM880) with a 20x objective. Z-stacks were acquired with a spacing of 1 \u03bcm. Primary antibodies were dissolved in 5% BSA (Biofroxx, 4240GR005) and the dilutions were: Streptavidin-Cy3 (1:200, BioLegend, 405215), RL2 (1:200, Abcam, ab2739), HA (1:200, Cell Signaling Technology, 3724), and GFP (1:200, Cell Signaling Technology, 2955).\n\n### Measurement of protein synthesis\n\nThe protein synthesis in fly brains was assessed using the Click-iT Plus OPP Alexa Fluor 594 Protein Synthesis Assay Kit (Thermo Fisher Scientific, C10457). Fly brains were dissected in Drosophila medium (Gibco, 21720024) and then incubated in a medium containing 1:1000 (20 \u00b5M) of Click-iT OPP reagent at room temperature for 30 min. The brains were washed three times with PBS, and then fixed with 4% PFA (Biosharp, BL539A) for 1 hr at room temperature. The brains were permeabilized and blocked in 5% BSA (Biofroxx, 4240GR005) in 0.3% PBST (PBS with 0.3% Triton X-100) for 90 min at room temperature, and then washed three times with PBS. The brains were incubated with primary antibodies (GFP, 1:200, Cell Signaling Technology, 2955) overnight at 4\u2103, washed three times with PBS, and incubated with secondary antibodies (1:200, Thermo Fisher Scientific) and DAPI (1:500, Sigma, D9542) for 1 hr at room temperature. For the Click-iT reaction, brains were incubated in the Click-iT reaction cocktail in the dark at room temperature for 30 min. Brains were then washed three times with PBS and imaged by confocal fluorescence microscopy (ZEISS LSM880).\n\n### RT-qPCR\n\nRNA was extracted from flies using TRIzol (Life Technologies, 87804), and 1 \u03bcg total RNA was reverse transcribed to generate cDNA using RevertAid First Strand cDNA Synthesis Kit (Thermo Fisher Scientific, K1621). The cDNA was then used as templates and qPCR was performed using the SYBR Green qPCR Master Mix (Solomon Biotech, QST-100) on the QuantStudio3 Real-Time PCR system (Applied Biosystems). The expression levels for each gene were normalized to Actin. Detailed information about the primers was listed in Supplementary file 9.\n\n### Protein identification by LC-MS/MS\n\nThe HEK293T cells (2\u00d7107 cells per sample) and fly brains (~200 fly brains that expressed TurboID-CpOGACD/DM in brain neurons per sample, ~800 fly brains that expressed TurboID-CpOGACD/DM in other brain structures per sample, three biological replicates) were immunoprecipitated with streptavidin magnetic beads as described above. The supernatants were used for SDS-PAGE separation and minimally stained with Coomassie brilliant blue (Solarbio, C8430-10g). The gels were cut into small pieces, and reduced and alkylated in 10 mM DTT and 55 mM IAA (Merck, I6125), respectively. For digestion, 0.5 \u00b5g sequencing-grade modified trypsin was added and incubated at 37\u2103 overnight. The peptides were then collected, desalted by StageTip (Thermo Fisher Scientific, 87782), and resolved in 0.1% formic acid before analysis by mass spectrometry. Mass spectrometry analysis was performed using Q Exactive HF-X mass spectrometer (Thermo Fisher Scientific) coupled with Easy-nLC 1200 system. Mobile phases A and B were water and 80% acetonitrile, respectively, with 0.1% formic acid. Protein digests were loaded directly onto an analytical column (75 \u00b5m\u00d715 cm, 1.9 \u00b5m C18, 1 \u00b5m tip) at a flow rate of 450 nL/min. Data were collected in a data-dependent manner using a top 25 method with a full MS mass range from 400 to 1400 m/z, 60,000 resolutions, and an AGC target of 3\u00d7106. MS2 scans were triggered when an ion intensity threshold of 4\u00d7105 was reached. A dynamic exclusion time of 30 s was used. Ions with charge state 6\u20138 and more than eight were excluded.\n\n### Data analysis\n\nThe raw data were imported into the MaxQuant software to identify and quantify the proteins. The following parameters were used: trypsin for enzyme digestion; oxidation of methionine, acetylation of the protein N terminus, biotinylation of lysine and protein N terminus and HexNAc (ST) as variable modifications; carbamidomethyl (C) as fixed modification. We used the canonical human protein database (containing 20,379 reviewed protein isoforms) or Drosophila melanogaster protein database (containing 22,088 protein isoforms, including reviewed and unreviewed sequences) for database searching separately. The false discovery rate (FDR) was 1% for peptide-spectrum matches (PSM) and protein levels. For the proteomics data of different brain regions of Drosophila, we used label-free quantitation (LFQ) to determine the relative amounts of proteins among three replicates. Perseus software was used to filter out all contaminates identified by MaxQuant (contaminant proteins, reversed proteins, proteins only identified by site). A pseudocount of 1 was added to protein intensities in order to avoid taking the log of 0. We generated log2 Fold Change (log2 FC) values for each protein in the TurboID-CpOGACD group relative to the TurboID-CpOGADM control. For the proteomics data of HEK293T cell, only proteins identified with at least 2 peptides were considered for further analysis. Proteins were considered as O-GlcNAcylated substrates when differences in log2 FC of TurboID-CpOGACD group with relative to the TurboID-CpOGADM control were higher than 1. For the proteomics data from different brain regions of Drosophila, only proteins identified with at least 2 peptides and in at least 2 of the 3 replicates of TurboID-CpOGACD were included for further analysis. A two-tailed unpaired student\u2019s t-test was applied in order to determine the statistical significance of the differences. Proteins were considered as O-GlcNAcylated substrates when differences in log2 FC of TurboID-CpOGACD group with relative to the TurboID-CpOGADM control were higher than 1 or statistically significant (p<0.05).\n\nTo adjust the interference caused by varying abundance of the putative O-GlcNAc substrates in different brain regions, single-cell transcriptomic data of the entire adult Drosophila brain (GEO: GSE107451) (Davie et al., 2018) was used to generate a normalizing factor for each substrate. Briefly, the annotated cell clusters were categorized into different brain regions. Then, the average mRNA expression level of each gene within a certain brain region was calculated. The normalizing factor was defined as the ratio of the average mRNA expression level of a given gene in neurons from a specific brain region to the average mRNA expression level of the same gene in neurons from the whole brain (Supplementary file 10). The normalized O-GlcNAc level was generated as the O-GlcNAc level (log2 FC) of a putative O-GlcNAcylated protein divided by its normalizing factor in a certain brain region (Supplementary file 11).\n\n### Website\n\nThe website was created to browse through the O-GlcNAc database (https://www.kyuanlab.com/tsOGA), using the database managem the ent system Centos and the uWSGI web framework. Backend servers were developed by Python programming language (version 3.7). GNU/Linux Debian-based systems with Gunicorn (Python HTTP) and NginX were used for the development and production of the website. The website search function was based on MySQL database.\n\n### Quantification and statistical analysis\n\nTo quantify fluorescent intensities in different Drosophila brain regions, whole brain images were stitched together using the stitching algorithm in ZEN software (Zeiss), and maximum intensity projection was produced. The images were then analyzed using ImageJ software. Mean fluorescent intensity of the whole brain or ROI was measured, and the relative fluorescent intensity was calculated as a ratio of the mean fluorescent intensity in ROI to that of the whole brain.\n\nGO enrichment analyses of O-GlcNAcome in HEK293T cells and Drosophila were performed using DAVID. Protein-protein interaction (PPI) network of O-GlcNAcome in HEK293T cells was performed using STRING. GraphPad Prism was used for statistical analysis and the student\u2019s t-test was used to determine statistical significance. Bubble plots, pie plots and bar graphs were created using Hiplot, venn plots were created using jvenn.\n\n### Materials availability\n\nAll cells and fly strains generated in this study are available upon request to the lead contact (see above).\n\n### Lead contact\n\nFurther information and requests for resources and reagents should be directed to and will be fulfilled by the lead contact, Dr. Kai Yuan (yuankai@csu.edu.cn).\n",
+      "created_at": "2025-12-04T04:30:24.132897Z"
+    },
+    {
+      "id": "c34f28bc-3a1c-4746-a818-ba667946a0b2",
+      "submission_id": "53e035cf-e0db-42a4-a595-1e1bc8579b7f",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Mani Ramaswami, https://ror.org/02tyrky19 Trinity College Dublin Ireland\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.91269.sa0](https://doi.org/10.7554/eLife.91269.sa0)\n\nThis valuable study provides solid evidence that within the Drosophila brain there are regionally regulated patterns of O-linked modification of proteins with the monosaccharide N-Acetyl glucosamine. Using a novel and powerful method of identifying proteins bearing this modification, the authors provide evidence that in a region of the Drosophila brain critical for associative learning, the mushroom body, there is a high representation of modified proteins affecting protein translation. Reductions in GlcNAc modification affects both an associative learning task and new protein synthesis, suggesting a critical function of these monosaccharide modifications in the regulation of protein synthesis required for memory formation. These findings provide a putative mechanism for human neurological deficits that accompany reductions in this ubiquitous carbohydrate modification.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Mani Ramaswami, https://ror.org/02tyrky19 Trinity College Dublin Ireland\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.91269.sa1](https://doi.org/10.7554/eLife.91269.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Olfactory learning in Drosophila requires O-GlcNAcylation of mushroom body ribosomal subunits\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and K VijayRaghavan as the Senior Editor.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions (for the authors):\n\n1) Potential reasons for the very low overlap with other methods to identify GlycNac-modified proteins requires more discussion o, as well as potential problems with the authors own approach\n\n2) The current data do not rule out the possibility that altering GLcNAC affects LTM through a mechanism independent of ribosome modification and/or activity dependent translational control. It should be clearly acknowledged in the abstract and discussion that the data fall short of causally connecting ribosomal protein modification with translational control required for LTM. Phrases like \"consistent with\" may be useful.\n\n3) Please respond carefully and as you consider appropriate all of the other comments of the reviewers.\n\nReviewer #1 (Recommendations for the authors):\n\n1. This study relies almost exclusively on the over-expression of foreign proteins and interpreting their effects based solely on their known affinity and activity for O-GlcNac modifications. The effects of high levels of over-expression are often hard to identify or know and while there are appropriate controls in their studies, using catalytically inactive mutant forms for comparison, there is no discussion of this issue. The authors do describe that over-expression in optic and antennal lobes for example, provided reason for exclusion by virtue of differences in susceptibility (that term is not explained), indicating there are behavioral effects that can interfere with their assays. Some direct discussion of this potential problem is warranted.\n\n2. Their comparison of several methods of identifying O-GlcNAc-modified proteins was tested in HEK293 cells, providing a measure of their method of proximity-labelling using their Clostridium OGA construct. The set of proteins identified by all three tested methods revealed 48, a modest number compared to the total sets for each method (2119, 273 and 336) for chemoenzymatic, direct capture and TurboID-CpOGA. This level of concordance suggests that different methods might well identify different sets of proteins, a concern for interpreting the functional significance of these changes. Do the authors argue that these results only affect sensitivity or could it possibly bias the classes of O-GlcNAc modified proteins identified?\n\n3. The rescue of associative learning phenotypes mediated by reductions in O-GlcNAc modification by over-expression of dMyc is a very important experiment that supports their conclusion that translational deficits are the basis of the learning defects. The authors should explain further in the text the rationale and basis for this experiment, namely, how dMyc affects the protein synthetic machinery and why these changes could rescue loss of O-GlcNAc modifications.\n\n4. The paper is challenging to read, and I suggest the authors provide it for reading and editing by someone not in their immediate field in order to make changes that make it more accessible to a general reader.\n\n5. Their graphics are terrific and provide great assistance in clarifying the figures. Well done.\n\nReviewer #2 (Recommendations for the authors):\n\nAs it stands the manuscript does not support the idea that O-GlcNAcylation of ribosomal proteins in the mushroom body (MB) is required for protein synthesis and olfactory learning. Experiments targeting specific ribosomal components could be a compelling demonstration. For example, Ser/Thr residues that get O-GlcNAcylated in RPL24 or RPS3 could be mutated. If these mutants showed learning defects it would be an important result. Same type of mutants in ex vivo OPP assays could be performed to determine their effect on protein synthesis. These types of experiments would definitely show specific requirement of ribosomal protein modification for ribosomal activity and associative learning.\n",
+      "created_at": "2025-12-04T04:30:24.132897Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T04:30:24.132897Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T04:30:24.132897Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "16fb43d6-402b-492f-8805-7b9541c89c40",
+      "content_id": "264dcc4b-2953-421d-9ef5-7f1fc05c1fcf",
+      "claim_id": "C1",
+      "claim": "O-GlcNAcylation is a dynamic post-translational modification that diversifies the proteome.",
+      "claim_type": "EXPLICIT",
+      "source": "O-GlcNAcylation is a dynamic post-translational modification that diversifies the proteome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about O-GlcNAcylation that draws from established scientific knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:30:24.132897Z"
+    },
+    {
+      "id": "621c3f4b-e85b-4bc9-9144-9074ef001df1",
+      "content_id": "264dcc4b-2953-421d-9ef5-7f1fc05c1fcf",
+      "claim_id": "C2",
+      "claim": "Dysregulation of O-GlcNAcylation is associated with neurological disorders that impair cognitive function.",
+      "claim_type": "EXPLICIT",
+      "source": "Its dysregulation is associated with neurological disorders that impair cognitive function",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous literature throughout the manuscript and represents established knowledge in the field.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:30:24.132897Z"
+    },
+    {
+      "id": "80ff332e-ee43-4e19-99a1-86715bce93fa",
+      "content_id": "264dcc4b-2953-421d-9ef5-7f1fc05c1fcf",
+      "claim_id": "C3",
+      "claim": "The authors developed an O-GlcNAcylation profiling tool that combines O-GlcNAc binding activity from CpOGA with TurboID proximity labeling in Drosophila.",
+      "claim_type": "EXPLICIT",
+      "source": "By combining an O-GlcNAc binding activity derived from Clostridium perfringens OGA (CpOGA) with TurboID proximity labeling in Drosophila, we developed an O-GlcNAcylation profiling tool that translates O-GlcNAc modification into biotin conjugation for tissue-specific candidate substrates enrichment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data presented in the manuscript showing the development and validation of the tool.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:30:24.132897Z"
+    },
+    {
+      "id": "21f9be8d-2959-4872-b2b9-cc0acbcd8eea",
+      "content_id": "264dcc4b-2953-421d-9ef5-7f1fc05c1fcf",
+      "claim_id": "C4",
+      "claim": "Components of the translational machinery, particularly ribosomal subunits, were abundantly O-GlcNAcylated in the mushroom body of Drosophila brain.",
+      "claim_type": "EXPLICIT",
+      "source": "We mapped the O-GlcNAc interactome in major brain regions of Drosophila and found that components of the translational machinery, particularly ribosomal subunits, were abundantly O-GlcNAcylated in the mushroom body of Drosophila brain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by mass spectrometry data and GO enrichment analysis presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:30:24.132897Z"
+    },
+    {
+      "id": "1879f5f2-1af1-4839-97bb-fb0dea3e17ae",
+      "content_id": "264dcc4b-2953-421d-9ef5-7f1fc05c1fcf",
+      "claim_id": "C5",
+      "claim": "Hypo-O-GlcNAcylation induced by ectopic expression of active CpOGA in the mushroom body decreased local translational activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Hypo-O-GlcNAcylation induced by ectopic expression of active CpOGA in the mushroom body decreased local translational activity, leading to olfactory learning deficits that could be rescued by dMyc overexpression-induced increase of protein synthesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by OPP protein synthesis assay data shown in Figure 4D and E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:30:24.132897Z"
+    },
+    {
+      "id": "d271f904-4542-4c71-92a8-087f8cc38084",
+      "content_id": "264dcc4b-2953-421d-9ef5-7f1fc05c1fcf",
+      "claim_id": "C6",
+      "claim": "Hypo-O-GlcNAcylation in the mushroom body leads to olfactory learning deficits.",
+      "claim_type": "EXPLICIT",
+      "source": "Hypo-O-GlcNAcylation induced by ectopic expression of active CpOGA in the mushroom body decreased local translational activity, leading to olfactory learning deficits that could be rescued by dMyc overexpression-induced increase of protein synthesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by behavioral learning assay data presented in Figure 1F and 1G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:30:24.132897Z"
+    },
+    {
+      "id": "4e45ddb2-e699-4685-84d6-7f437e79ed13",
+      "content_id": "264dcc4b-2953-421d-9ef5-7f1fc05c1fcf",
+      "claim_id": "C7",
+      "claim": "dMyc overexpression-induced increase of protein synthesis can rescue olfactory learning deficits caused by hypo-O-GlcNAcylation.",
+      "claim_type": "EXPLICIT",
+      "source": "Hypo-O-GlcNAcylation induced by ectopic expression of active CpOGA in the mushroom body decreased local translational activity, leading to olfactory learning deficits that could be rescued by dMyc overexpression-induced increase of protein synthesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by rescue experiment data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:30:24.132897Z"
+    },
+    {
+      "id": "00c1c32d-0260-411d-8b20-faa74f9038c2",
+      "content_id": "264dcc4b-2953-421d-9ef5-7f1fc05c1fcf",
+      "claim_id": "C8",
+      "claim": "O-GlcNAcylation involves reversible attachment of \u03b2-N-acetylglucosamine (GlcNAc) to the hydroxyl group of serine and threonine residues of protein substrates.",
+      "claim_type": "EXPLICIT",
+      "source": "It involves reversible attachment of \u03b2-N-acetylglucosamine (GlcNAc) to the hydroxyl group of serine and threonine residues of protein substrates, catalyzed by a pair of evolutionarily conserved enzymes, O-GlcNAc transferase (OGT) and O-GlcNAcase (OGA) (Vocadlo, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Vocadlo, 2012 and represents established knowledge.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:30:24.132897Z"
+    },
+    {
+      "id": "e1002960-854d-4a60-82e7-4fb748fa48fa",
+      "content_id": "264dcc4b-2953-421d-9ef5-7f1fc05c1fcf",
+      "claim_id": "C9",
+      "claim": "O-GlcNAcylation is catalyzed by a pair of evolutionarily conserved enzymes, O-GlcNAc transferase (OGT) and O-GlcNAcase (OGA).",
+      "claim_type": "EXPLICIT",
+      "source": "It involves reversible attachment of \u03b2-N-acetylglucosamine (GlcNAc) to the hydroxyl group of serine and threonine residues of protein substrates, catalyzed by a pair of evolutionarily conserved enzymes, O-GlcNAc transferase (OGT) and O-GlcNAcase (OGA) (Vocadlo, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Vocadlo, 2012 and represents established knowledge.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:30:24.132897Z"
+    },
+    {
+      "id": "e77a42f9-345e-4ce2-87b6-d931c790d0a7",
+      "content_id": "264dcc4b-2953-421d-9ef5-7f1fc05c1fcf",
+      "claim_id": "C10",
+      "claim": "The addition and removal of O-GlcNAc moiety are dynamic, with cycling rates ranging from several minutes to the lifetime of a protein.",
+      "claim_type": "EXPLICIT",
+      "source": "As a monosaccharide modification, the addition and removal of O-GlcNAc moiety are dynamic, with cycling rates ranging from several minutes to the lifetime of a protein (Miller et al., 1999; Roquemore et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to Miller et al., 1999 and Roquemore et al., 1996.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:30:24.132897Z"
+    },
+    {
+      "id": "b2a5d752-b88b-43da-8c90-57431d014367",
+      "content_id": "264dcc4b-2953-421d-9ef5-7f1fc05c1fcf",
+      "claim_id": "C11",
+      "claim": "O-GlcNAcylation exerts critical regulatory functions in transcription, translation, and protein homeostasis.",
+      "claim_type": "EXPLICIT",
+      "source": "By modifying different protein substrates, O-GlcNAcylation exerts critical regulatory functions in a wide range of basic cellular processes, including transcription, translation, and protein homeostasis (Yang and Qian, 2017; Uygar and Lagerl\u00f6f, 2023; Wang et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to Yang and Qian, 2017; Uygar and Lagerl\u00f6f, 2023; Wang et al., 2023.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:30:24.132897Z"
+    },
+    {
+      "id": "0d2fb18d-650a-4bb2-8fdc-90e81b179730",
+      "content_id": "264dcc4b-2953-421d-9ef5-7f1fc05c1fcf",
+      "claim_id": "C12",
+      "claim": "O-GlcNAcylation is ubiquitously distributed but more abundant in some tissues, such as the brain.",
+      "claim_type": "EXPLICIT",
+      "source": "O-GlcNAcylation is ubiquitously distributed but more abundant in some tissues, such as the brain (Fehl and Hanover, 2022; Wulff-Fuentes et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to Fehl and Hanover, 2022 and Wulff-Fuentes et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:30:24.132897Z"
+    },
+    {
+      "id": "16c6c581-2775-4d6d-8752-2f8a02e27fdc",
+      "content_id": "264dcc4b-2953-421d-9ef5-7f1fc05c1fcf",
+      "claim_id": "C13",
+      "claim": "O-GlcNAc cycling is required for the development and functions of central nervous system.",
+      "claim_type": "EXPLICIT",
+      "source": "Given its enrichment in brain tissues and essential biological functions, it is not surprising that O-GlcNAc cycling is required for the development and functions of central nervous system (Olivier-Van Stichelen and Hanover, 2015; Lagerl\u00f6f, 2018; Akan et al., 2018)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to Olivier-Van Stichelen and Hanover, 2015; Lagerl\u00f6f, 2018; Akan et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:30:24.132897Z"
+    },
+    {
+      "id": "3c4a7df3-34b5-4415-a617-730c1cc37fd7",
+      "content_id": "264dcc4b-2953-421d-9ef5-7f1fc05c1fcf",
+      "claim_id": "C14",
+      "claim": "Dysregulation of O-GlcNAcylation is linked to numerous neurological disorders.",
+      "claim_type": "EXPLICIT",
+      "source": "its dysregulation is linked to numerous neurological disorders (Uygar and Lagerl\u00f6f, 2023; Lagerl\u00f6f, 2018; Lee et al., 2021; Banerjee et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to Uygar and Lagerl\u00f6f, 2023; Lagerl\u00f6f, 2018; Lee et al., 2021; Banerjee et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:30:24.132897Z"
+    },
+    {
+      "id": "c4ce5e58-dece-470a-bcd1-69fda6ad236f",
+      "content_id": "264dcc4b-2953-421d-9ef5-7f1fc05c1fcf",
+      "claim_id": "C15",
+      "claim": "Hypomorphic mutations of OGT are implicated in an X-linked intellectual disability syndrome.",
+      "claim_type": "EXPLICIT",
+      "source": "Hypomorphic mutations of OGT are implicated in an X-linked intellectual disability syndrome (Pravata et al., 2020a; Pravata et al., 2019; Selvan et al., 2018; Willems et al., 2017; Vaidyanathan et al., 2017)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to Pravata et al., 2020a; Pravata et al., 2019; Selvan et al., 2018; Willems et al., 2017; Vaidyanathan et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:30:24.132897Z"
+    },
+    {
+      "id": "3840c6ee-327b-4334-9f7e-643e92b1d08c",
+      "content_id": "264dcc4b-2953-421d-9ef5-7f1fc05c1fcf",
+      "claim_id": "C16",
+      "claim": "The X-linked intellectual disability syndrome caused by OGT mutations is now termed OGT-associated Congenital Disorder of Glycosylation (OGT-CDG).",
+      "claim_type": "EXPLICIT",
+      "source": "a severe neurodevelopmental disorder now termed OGT-associated Congenital Disorder of Glycosylation (OGT-CDG) (Pravata et al., 2020b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Pravata et al., 2020b.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:30:24.132897Z"
+    },
+    {
+      "id": "1163f0eb-c34b-43c8-ac4a-fb1a7e242977",
+      "content_id": "264dcc4b-2953-421d-9ef5-7f1fc05c1fcf",
+      "claim_id": "C17",
+      "claim": "Drosophila models of OGT-CDG that carry the equivalent human disease-related OGT missense mutations manifest deficits in sleep and habituation.",
+      "claim_type": "EXPLICIT",
+      "source": "Drosophila models of OGT-CDG that carry the equivalent human disease-related OGT missense mutations manifest deficits in sleep and habituation, an evolutionarily conserved form of non-associative learning (Fenckova et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Fenckova et al., 2022.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:30:24.132897Z"
+    },
+    {
+      "id": "d35b2368-289f-4803-aea2-18148a4187ee",
+      "content_id": "264dcc4b-2953-421d-9ef5-7f1fc05c1fcf",
+      "claim_id": "C18",
+      "claim": "Decreased O-GlcNAcylation level in Drosophila, induced through overexpression of CpOGA, leads to a deficit of associative olfactory learning.",
+      "claim_type": "EXPLICIT",
+      "source": "Our recent work has shown that decreased O-GlcNAcylation level in Drosophila, induced through overexpression of a bacterial OGA from Clostridium perfringens (CpOGA), leads to a deficit of associative olfactory learning.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement refers to the authors' recent work and is supported by data in the manuscript.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:30:24.132897Z"
+    },
+    {
+      "id": "41b980cf-4aaf-4c06-98f1-eae9def6fa11",
+      "content_id": "264dcc4b-2953-421d-9ef5-7f1fc05c1fcf",
+      "claim_id": "C19",
+      "claim": "Ectopic expression of CpOGA during early embryogenesis results in reduced brain size and learning defects in adult flies.",
+      "claim_type": "EXPLICIT",
+      "source": "More interestingly, ectopic expression of CpOGA during early embryogenesis results in reduced brain size and learning defects in adult flies, likely due to interference of the sog-Dpp signaling required for neuroectoderm specification (Zhang et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Zhang et al., 2023.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:30:24.132897Z"
+    },
+    {
+      "id": "0da84ba4-6ad4-4e69-b6ce-6da38f9ccac9",
+      "content_id": "264dcc4b-2953-421d-9ef5-7f1fc05c1fcf",
+      "claim_id": "C20",
+      "claim": "Disturbed O-GlcNAc homeostasis can impact cognitive function by compromising neuronal development.",
+      "claim_type": "EXPLICIT",
+      "source": "These studies reveal that disturbed O-GlcNAc homeostasis can impact cognitive function by compromising neuronal development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is an inference drawn from the cited studies.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:30:24.132897Z"
+    },
+    {
+      "id": "e652b77b-1caa-4695-8f6c-5b302abc98f2",
+      "content_id": "264dcc4b-2953-421d-9ef5-7f1fc05c1fcf",
+      "claim_id": "C21",
+      "claim": "Impaired O-GlcNAcylation is implicated in aging-related neurodegenerative diseases such as Alzheimer's disease (AD).",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, a number of studies have revealed that impaired O-GlcNAcylation is implicated in aging-related neurodegenerative diseases such as Alzheimer's disease (AD ) (Uygar and Lagerl\u00f6f, 2023; Lagerl\u00f6f, 2018; Lee et al., 2021; Banerjee et al., 2016; Balana and Pratt, 2021; Quan et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to Uygar and Lagerl\u00f6f, 2023; Lagerl\u00f6f, 2018; Lee et al., 2021; Banerjee et al., 2016; Balana and Pratt, 2021; Quan et al., 2023.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:30:24.132897Z"
+    },
+    {
+      "id": "827cf529-57d7-4fe9-8dfa-8a52dd77461c",
+      "content_id": "264dcc4b-2953-421d-9ef5-7f1fc05c1fcf",
+      "claim_id": "C22",
+      "claim": "In the cerebrum of AD patients, O-GlcNAcylation levels are significantly lower than that of healthy controls.",
+      "claim_type": "EXPLICIT",
+      "source": "In the cerebrum of AD patients, O-GlcNAcylation levels are significantly lower than that of healthy controls (Liu et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Liu et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:30:24.132897Z"
+    },
+    {
+      "id": "56ce0a0f-2af5-4209-b241-271e593393cf",
+      "content_id": "264dcc4b-2953-421d-9ef5-7f1fc05c1fcf",
+      "claim_id": "C23",
+      "claim": "Upregulation of O-GlcNAcylation levels by limiting OGA activity recovers the impaired cognitive function in AD mice models.",
+      "claim_type": "EXPLICIT",
+      "source": "Upregulation of O-GlcNAcylation levels by limiting OGA activity recovers the impaired cognitive function in AD mice models (Park et al., 2021; Kim et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to Park et al., 2021 and Kim et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:30:24.132897Z"
+    },
+    {
+      "id": "d5b32bd8-f7b6-40d5-897f-a7d6dde86fa2",
+      "content_id": "264dcc4b-2953-421d-9ef5-7f1fc05c1fcf",
+      "claim_id": "C24",
+      "claim": "During normal aging in mice, reduction of O-GlcNAcylation levels occurs in the hippocampus.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, during normal aging in mice, reduction of O-GlcNAcylation levels also occurs in the hippocampus, and elevation of neuronal O-GlcNAc modification ameliorates associative learning and memory (Wheatley et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Wheatley et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:30:24.132897Z"
+    },
+    {
+      "id": "3a15dcae-6d7e-40e0-a3d0-3b315c9b4f32",
+      "content_id": "264dcc4b-2953-421d-9ef5-7f1fc05c1fcf",
+      "claim_id": "C25",
+      "claim": "Elevation of neuronal O-GlcNAc modification ameliorates associative learning and memory in aging mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, during normal aging in mice, reduction of O-GlcNAcylation levels also occurs in the hippocampus, and elevation of neuronal O-GlcNAc modification ameliorates associative learning and memory (Wheatley et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Wheatley et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:30:24.132897Z"
+    },
+    {
+      "id": "1e8a7230-9350-4a15-accb-867d033627cf",
+      "content_id": "264dcc4b-2953-421d-9ef5-7f1fc05c1fcf",
+      "claim_id": "C26",
+      "claim": "O-GlcNAc homeostasis is required for normal neuronal activity and cognitive function.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that, in addition to its involvement in neurodevelopment, O-GlcNAc homeostasis is also required for normal neuronal activity and cognitive function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is an inference drawn from the cited studies.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:30:24.132897Z"
+    },
+    {
+      "id": "0604ef27-658e-4ba3-984d-c9b484bc0cbd",
+      "content_id": "264dcc4b-2953-421d-9ef5-7f1fc05c1fcf",
+      "claim_id": "C27",
+      "claim": "The identity of key O-GlcNAc protein substrates supporting cognitive abilities in adult brain and their spatial distribution remain largely unknown.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the identity of key O-GlcNAc protein substrates supporting the cognitive abilities in adult brain and their spatial distribution remain largely unknown.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement identifies a knowledge gap in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:30:24.132897Z"
+    },
+    {
+      "id": "37cabf17-13c3-4b1a-ba8b-6522a9a68f1f",
+      "content_id": "264dcc4b-2953-421d-9ef5-7f1fc05c1fcf",
+      "claim_id": "C28",
+      "claim": "Enrichment of O-GlcNAc-modified proteins is required for mass spectrometry (MS)-based profiling of O-GlcNAcylation.",
+      "claim_type": "EXPLICIT",
+      "source": "Given the structural diversity and relatively low abundance, enrichment of O-GlcNAc-modified proteins is required for mass spectrometry (MS)-based profiling of O-GlcNAcylation (Yin et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Yin et al., 2021 and represents established knowledge.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:30:24.132897Z"
+    },
+    {
+      "id": "bd8e68e7-2f97-4e5e-9dc5-a9c20fa812f2",
+      "content_id": "264dcc4b-2953-421d-9ef5-7f1fc05c1fcf",
+      "claim_id": "C29",
+      "claim": "O-GlcNAc antibodies including RL2 and CTD110.6, as well as O-GlcNAc-binding lectins such as wheat germ agglutinin (WGA), are commonly used for enrichment.",
+      "claim_type": "EXPLICIT",
+      "source": "O-GlcNAc antibodies including RL2 and CTD110.6, as well as O-GlcNAc-binding lectins such as wheat germ agglutinin (WGA), are commonly used for enrichment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement represents established knowledge about common methods in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:30:24.132897Z"
+    },
+    {
+      "id": "ccb5fcc1-935d-4c4d-bdc3-126ea9f34c04",
+      "content_id": "264dcc4b-2953-421d-9ef5-7f1fc05c1fcf",
+      "claim_id": "C30",
+      "claim": "The catalytic-dead mutant of CpOGA that retains the ability to recognize O-GlcNAcylated substrates was successfully repurposed to concentrate many developmental regulators from Drosophila embryo lysates.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the catalytic-dead mutant of CpOGA that retains the ability to recognize O-GlcNAcylated substrates was successfully repurposed to concentrate many developmental regulators from Drosophila embryo lysates (Selvan et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Selvan et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:30:24.132897Z"
+    },
+    {
+      "id": "ef649e85-e940-4379-8c69-8e1e0a4fb945",
+      "content_id": "264dcc4b-2953-421d-9ef5-7f1fc05c1fcf",
+      "claim_id": "C31",
+      "claim": "A recent study coupled the O-GlcNAc-binding lectin GafD to the proximity labeling TurboID yielding the GlycoID tool.",
+      "claim_type": "EXPLICIT",
+      "source": "A recent study coupled the O-GlcNAc-binding lectin GafD to the proximity labeling TurboID yielding the GlycoID tool (Liu et al., 2022)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Liu et al., 2022.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:30:24.132897Z"
+    },
+    {
+      "id": "bb6da326-061c-431a-b383-c3533f193ff9",
+      "content_id": "264dcc4b-2953-421d-9ef5-7f1fc05c1fcf",
+      "claim_id": "C32",
+      "claim": "TurboID enzyme attaches nonhydrolyzable biotin tags to proximal proteins within approximately 10 nm radius.",
+      "claim_type": "EXPLICIT",
+      "source": "in which GafD domain recognizes O-GlcNAcylated substrates and the TurboID enzyme attaches nonhydrolyzable biotin tags to proximal proteins within approximately 10 nm radius (Branon et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Branon et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:30:24.132897Z"
+    },
+    {
+      "id": "aa7f3dbd-0e27-41a2-ab0f-cf76dfd4bdc1",
+      "content_id": "264dcc4b-2953-421d-9ef5-7f1fc05c1fcf",
+      "claim_id": "C33",
+      "claim": "The GlycoID tool was used to profile O-GlcNAcylation in different subcellular spaces including the nucleus and cytosol.",
+      "claim_type": "EXPLICIT",
+      "source": "The GlycoID tool was used to profile O-GlcNAcylation in different subcellular spaces including the nucleus and cytosol (Liu et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Liu et al., 2022.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:30:24.132897Z"
+    },
+    {
+      "id": "32366402-16b9-46af-af9c-8734b54b0ecb",
+      "content_id": "264dcc4b-2953-421d-9ef5-7f1fc05c1fcf",
+      "claim_id": "C34",
+      "claim": "The O-GlcNAcylated proteins identified by different O-GlcNAcylation profiling strategies are quite diverse, probably due to the dynamic nature of O-GlcNAc cycling as well as the potential bias in substrates preference intrinsic to the methods.",
+      "claim_type": "EXPLICIT",
+      "source": "It is noteworthy that the O-GlcNAcylated proteins identified by different O-GlcNAcylation profiling strategies are quite diverse, probably due to the dynamic nature of O-GlcNAc cycling as well as the potential bias in substrates preference intrinsic to the methods (Zachara et al., 2004; Ma and Hart, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to Zachara et al., 2004 and Ma and Hart, 2014, and includes speculation about the reasons for diversity.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:30:24.132897Z"
+    },
+    {
+      "id": "7f6b86a7-b500-4e75-afa1-e56196dcbaad",
+      "content_id": "264dcc4b-2953-421d-9ef5-7f1fc05c1fcf",
+      "claim_id": "C35",
+      "claim": "None of the existing O-GlcNAcylation profiling methods has been adopted for tissue-specific identification of O-GlcNAcylated proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "However, none of them has been adopted for tissue-specific identification of O-GlcNAcylated proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement identifies a gap in existing methods.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:30:24.132897Z"
+    },
+    {
+      "id": "773ca858-c7b0-4fda-ac55-03a10a837bc0",
+      "content_id": "264dcc4b-2953-421d-9ef5-7f1fc05c1fcf",
+      "claim_id": "C36",
+      "claim": "Ectopic expression of CpOGA in the mushroom body reduced local O-GlcNAcylation levels and impaired olfactory learning.",
+      "claim_type": "EXPLICIT",
+      "source": "Ectopic expression of CpOGA in the major learning center of Drosophila brain, the mushroom body, reduced local O-GlcNAcylation levels and impaired olfactory learning.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figures 1D, 1E, and 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:30:24.132897Z"
+    },
+    {
+      "id": "c4f1fe56-e8ab-42d4-a7c5-43283ee73623",
+      "content_id": "264dcc4b-2953-421d-9ef5-7f1fc05c1fcf",
+      "claim_id": "C37",
+      "claim": "The mushroom body is the major learning center of Drosophila brain.",
+      "claim_type": "EXPLICIT",
+      "source": "Ectopic expression of CpOGA in the major learning center of Drosophila brain, the mushroom body, reduced local O-GlcNAcylation levels and impaired olfactory learning.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement represents established knowledge about Drosophila neurobiology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:30:24.132897Z"
+    },
+    {
+      "id": "3087d75a-91e0-4e58-b54f-80336c74f319",
+      "content_id": "264dcc4b-2953-421d-9ef5-7f1fc05c1fcf",
+      "claim_id": "C38",
+      "claim": "The authors generated an O-GlcNAc atlas for different brain regions of Drosophila (tsOGA, https://www.kyuanlab.com/tsOGA).",
+      "claim_type": "EXPLICIT",
+      "source": "By conditional expression of this tool to translate O-GlcNAc modification into biotin conjugation in specific brain structures, we mapped the O-GlcNAc interactome and generated an O-GlcNAc atlas for different brain regions of Drosophila (tsOGA, https://www.kyuanlab.com/tsOGA).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the creation of the online database described in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:30:24.132897Z"
+    },
+    {
+      "id": "c8a19e02-0d5c-4d32-8d42-05695d175322",
+      "content_id": "264dcc4b-2953-421d-9ef5-7f1fc05c1fcf",
+      "claim_id": "C39",
+      "claim": "Lowering the mushroom body O-GlcNAcylation levels reduced the synthesis of new proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Lowering the mushroom body O-GlcNAcylation levels reduced the synthesis of new proteins, interfering with olfactory learning, which could be reversed by increasing ribosomal biogenesis via overexpression of dMyc.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by OPP assay data shown in Figure 4D and E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:30:24.132897Z"
+    },
+    {
+      "id": "f76f7d65-eebc-4645-9719-e789694c3f5b",
+      "content_id": "264dcc4b-2953-421d-9ef5-7f1fc05c1fcf",
+      "claim_id": "C40",
+      "claim": "Reduced protein synthesis in the mushroom body interferes with olfactory learning.",
+      "claim_type": "EXPLICIT",
+      "source": "Lowering the mushroom body O-GlcNAcylation levels reduced the synthesis of new proteins, interfering with olfactory learning, which could be reversed by increasing ribosomal biogenesis via overexpression of dMyc.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by behavioral and protein synthesis data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:30:24.132897Z"
+    },
+    {
+      "id": "78db62b7-be08-4b72-8e26-e51d88237a49",
+      "content_id": "264dcc4b-2953-421d-9ef5-7f1fc05c1fcf",
+      "claim_id": "C41",
+      "claim": "Increasing ribosomal biogenesis via overexpression of dMyc can reverse the olfactory learning deficits caused by lowered O-GlcNAcylation.",
+      "claim_type": "EXPLICIT",
+      "source": "Lowering the mushroom body O-GlcNAcylation levels reduced the synthesis of new proteins, interfering with olfactory learning, which could be reversed by increasing ribosomal biogenesis via overexpression of dMyc.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by rescue experiment data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:30:24.132897Z"
+    },
+    {
+      "id": "469ef50b-dee3-4db1-8186-1237258d3e08",
+      "content_id": "264dcc4b-2953-421d-9ef5-7f1fc05c1fcf",
+      "claim_id": "C42",
+      "claim": "Compromised translational activity in the brain learning center contributes to the cognitive deficits of O-GlcNAcylation insufficiency-associated neurological diseases.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose that compromised translational activity in the brain learning center contributes to the cognitive deficits of O-GlcNAcylation insufficiency-associated neurological diseases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed mechanism based on the experimental findings in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:30:24.132897Z"
+    },
+    {
+      "id": "77bc5db6-5533-43f3-9d79-8a10a5f591a6",
+      "content_id": "264dcc4b-2953-421d-9ef5-7f1fc05c1fcf",
+      "claim_id": "C43",
+      "claim": "Elav-Gal4 induced CpOGAWT expression in the whole brain.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, Elav-Gal4 induced CpOGAWT expression in the whole brain (Figure 1B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunostaining data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:30:24.132897Z"
+    },
+    {
+      "id": "3366da14-ac73-441b-9b40-c65f52d03333",
+      "content_id": "264dcc4b-2953-421d-9ef5-7f1fc05c1fcf",
+      "claim_id": "C44",
+      "claim": "Elav-Gal4 driven CpOGAWT expression led to decreased O-GlcNAcylation levels compared to CpOGADM.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, Elav-Gal4 induced CpOGAWT expression in the whole brain (Figure 1B), leading to decreased O-GlcNAcylation levels compared to the CpOGADM (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunostaining and quantification data shown in Figures 1B and 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:30:24.132897Z"
+    },
+    {
+      "id": "f40e79fe-0105-49e0-a7f1-6562981663f8",
+      "content_id": "264dcc4b-2953-421d-9ef5-7f1fc05c1fcf",
+      "claim_id": "C45",
+      "claim": "OK107-Gal4 drove CpOGAWT expression in the mushroom body and downregulated O-GlcNAcylation levels in the Kenyon cells.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, OK107-Gal4 drove CpOGAWT expression in the mushroom body and downregulated O-GlcNAcylation levels in the Kenyon cells (Figure 1D and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunostaining and quantification data shown in Figures 1D and 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:30:24.132897Z"
+    },
+    {
+      "id": "8952f914-1dad-4941-8c7f-baa6f6c55a4b",
+      "content_id": "264dcc4b-2953-421d-9ef5-7f1fc05c1fcf",
+      "claim_id": "C46",
+      "claim": "Conditional expression of CpOGAWT in brain neurons or mushroom body compromised the ability to establish the association between odor and electric shock.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to CpOGADM, conditional expression of CpOGAWT in brain neurons or mushroom body compromised the ability to establish the association between odor and electric shock (Figure 1F)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by behavioral learning assay data shown in Figure 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:30:24.132897Z"
+    },
+    {
+      "id": "b92b16e2-77e6-4f1e-8c04-6b73846cd415",
+      "content_id": "264dcc4b-2953-421d-9ef5-7f1fc05c1fcf",
+      "claim_id": "C47",
+      "claim": "Flies expressing CpOGAWT or CpOGADM in the ellipsoid body showed no statistical difference in learning performance.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, flies expressing CpOGAWT or CpOGADM in the ellipsoid body, as well as the control flies without a Gal4 driver, showed no statistical difference in the learning performance (Figure 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by behavioral learning assay data shown in Figure 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:30:24.132897Z"
+    },
+    {
+      "id": "a1248ea3-150a-4351-841a-0353f78282bb",
+      "content_id": "264dcc4b-2953-421d-9ef5-7f1fc05c1fcf",
+      "claim_id": "C48",
+      "claim": "Temporally controlled expression of CpOGAWT specifically in the adult mushroom body did not affect odor acuity but significantly disrupted olfactory learning relative to CpOGADM control.",
+      "claim_type": "EXPLICIT",
+      "source": "This temporally controlled expression of CpOGAWT specifically in the adult mushroom body did not affect the odor acuity but significantly disrupted olfactory learning relative to CpOGADM control (Figure 1G, Figure 1\u2014figure supplement 1A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by behavioral assay data shown in Figure 1G and Figure 1\u2014figure supplement 1A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:30:24.132897Z"
+    },
+    {
+      "id": "e9b4d896-54ef-4886-b344-aae297540128",
+      "content_id": "264dcc4b-2953-421d-9ef5-7f1fc05c1fcf",
+      "claim_id": "C49",
+      "claim": "Proper O-GlcNAcylation homeostasis is essential for the mushroom body function.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggested that proper O-GlcNAcylation homeostasis is essential for the mushroom body function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the experimental results showing learning deficits when O-GlcNAcylation is perturbed in the mushroom body.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:30:24.132897Z"
+    },
+    {
+      "id": "dc85bf25-0307-4f13-9e6e-8862be547176",
+      "content_id": "264dcc4b-2953-421d-9ef5-7f1fc05c1fcf",
+      "claim_id": "C50",
+      "claim": "The mushroom body is the associative learning center in Drosophila brain.",
+      "claim_type": "EXPLICIT",
+      "source": "The mushroom body is known to be the associative learning center in Drosophila brain (Heisenberg, 2003; McGuire et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to Heisenberg, 2003 and McGuire et al., 2001.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:30:24.132897Z"
+    },
+    {
+      "id": "99e96be4-3bea-49ed-bba1-c2c8eb6c4439",
+      "content_id": "264dcc4b-2953-421d-9ef5-7f1fc05c1fcf",
+      "claim_id": "C51",
+      "claim": "Mutation of the catalytic residue Asp298 to Asn (D298N) of CpOGA (CpOGACD) inactivates the enzymatic activity but retains its ability to bind O-GlcNAcylated peptides.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutation of the catalytic residue Asp298 to Asn (D298N) of CpOGA (CpOGACD) inactivates the enzymatic activity but retains its ability to bind O-GlcNAcylated peptides.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement represents established knowledge about CpOGA mutants.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:30:24.132897Z"
+    },
+    {
+      "id": "d491777d-2ca5-47d1-b69a-02ade765432e",
+      "content_id": "264dcc4b-2953-421d-9ef5-7f1fc05c1fcf",
+      "claim_id": "C52",
+      "claim": "Immobilized CpOGACD has been successfully used to enrich O-GlcNAcylated substrates in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "Taking advantage of this property, far western, gel electrophoresis, proximity ligation, and imaging methods have been developed (Selvan et al., 2017; Zhang et al., 2022; Song et al., 2021; Mariappa et al., 2015; Estevez et al., 2020), and immobilized CpOGACD has been successfully used to enrich O-GlcNAcylated substrates in vitro (Selvan et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Selvan et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:30:24.132897Z"
+    },
+    {
+      "id": "451ab895-d237-45c3-9b3c-9ea2c5eee31f",
+      "content_id": "264dcc4b-2953-421d-9ef5-7f1fc05c1fcf",
+      "claim_id": "C53",
+      "claim": "Endogenous protein biotinylation level is low in most organisms including Drosophila.",
+      "claim_type": "EXPLICIT",
+      "source": "Once induced by different tissue-specific drivers, this tool could tag and enrich O-GlcNAc substrates and their interactors in a tissue-specific manner, as endogenous protein biotinylation level is low in most organisms including Drosophila.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement represents established knowledge about endogenous biotinylation levels.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:30:24.132897Z"
+    },
+    {
+      "id": "c9ddc5ca-782e-4dbc-ae82-87da50336696",
+      "content_id": "264dcc4b-2953-421d-9ef5-7f1fc05c1fcf",
+      "claim_id": "C54",
+      "claim": "10 mM biotin treatment yielded robust biotinylation of proteins in HEK293T cells expressing TurboID-CpOGACD.",
+      "claim_type": "EXPLICIT",
+      "source": "10 mM biotin treatment yielded robust biotinylation of proteins, and this concentration was selected for subsequent experiments on cultured cells.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by western blot data shown in Figure 2\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:30:24.132897Z"
+    },
+    {
+      "id": "3a50021e-f2d7-4a8c-9b65-c4077b34baa4",
+      "content_id": "264dcc4b-2953-421d-9ef5-7f1fc05c1fcf",
+      "claim_id": "C55",
+      "claim": "Thiamet-G increased global O-GlcNAcylation levels, and the overall biotinylation was consistently upregulated.",
+      "claim_type": "EXPLICIT",
+      "source": "Thiamet-G increased global O-GlcNAcylation levels, and the overall biotinylation was consistently upregulated.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by western blot data shown in Figure 2\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:30:24.132897Z"
+    },
+    {
+      "id": "591ba29b-dbee-4419-b56a-3c24a026b0f5",
+      "content_id": "264dcc4b-2953-421d-9ef5-7f1fc05c1fcf",
+      "claim_id": "C56",
+      "claim": "OSMI-1 treatment decreased both O-GlcNAcylation and biotinylation in the cell lysates.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, OSMI-1 treatment decreased both O-GlcNAcylation and biotinylation in the cell lysates",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by western blot data shown in Figure 2\u2014figure supplement 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:30:24.132897Z"
+    },
+    {
+      "id": "764757f0-728d-4786-89fa-9b7696f9b5f9",
+      "content_id": "264dcc4b-2953-421d-9ef5-7f1fc05c1fcf",
+      "claim_id": "C57",
+      "claim": "TurboID-CpOGACD effectively translates O-GlcNAc modification into biotin conjugation.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, OSMI-1 treatment decreased both O-GlcNAcylation and biotinylation in the cell lysates, suggesting that TurboID-CpOGACD effectively translates O-GlcNAc modification into biotin conjugation (Figure 2\u2014figure supplement 1C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by western blot data shown in Figure 2\u2014figure supplement 1C and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:30:24.132897Z"
+    },
+    {
+      "id": "f0cc48cc-f04a-43fa-a18f-f61c8eeae365",
+      "content_id": "264dcc4b-2953-421d-9ef5-7f1fc05c1fcf",
+      "claim_id": "C58",
+      "claim": "TurboID-CpOGACD labeled more proteins with biotin in the input compared to TurboID-CpOGADM.",
+      "claim_type": "EXPLICIT",
+      "source": "TurboID-CpOGACD labeled more proteins with biotin in the input compared to TurboID-CpOGADM, and consistently, more biotinylated proteins were immunoprecipitated.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by western blot data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:30:24.132897Z"
+    },
+    {
+      "id": "77239bbd-83c2-4a5b-8f89-537c843013d7",
+      "content_id": "264dcc4b-2953-421d-9ef5-7f1fc05c1fcf",
+      "claim_id": "C59",
+      "claim": "Western blot with anti-O-GlcNAc antibody RL2 detected strong O-GlcNAcylation signals in immunoprecipitants from cells expressing TurboID-CpOGACD but not TurboID-CpOGADM.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, western blot with anti-O-GlcNAc antibody RL2 detected strong O-GlcNAcylation signals in immunoprecipitants from the cells expressing TurboID-CpOGACD but not TurboID-CpOGADM, indicating successful enrichment of O-GlcNAc substrates using the biotin tags (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by western blot data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:30:24.132897Z"
+    },
+    {
+      "id": "ac2a984d-4fa1-41b0-a29b-86e6cfaa8c54",
+      "content_id": "264dcc4b-2953-421d-9ef5-7f1fc05c1fcf",
+      "claim_id": "C60",
+      "claim": "The authors identified 336 O-GlcNAc candidate substrates from HEK293T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We, therefore, identified 336 O-GlcNAc candidate substrates from HEK293T cells (Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by mass spectrometry data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:30:24.132897Z"
+    },
+    {
+      "id": "f786992f-33b5-4f73-8c18-647e9165cda5",
+      "content_id": "264dcc4b-2953-421d-9ef5-7f1fc05c1fcf",
+      "claim_id": "C61",
+      "claim": "52% (178/336) of the O-GlcNAc candidate substrates identified in this study were also present in previous reports.",
+      "claim_type": "EXPLICIT",
+      "source": "Overlap analysis revealed that 52% (178/336) of the O-GlcNAc candidate substrates identified in our study were also present in previous reports (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by overlap analysis shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:30:24.132897Z"
+    },
+    {
+      "id": "555e38fe-365e-452c-9230-811832a6bee2",
+      "content_id": "264dcc4b-2953-421d-9ef5-7f1fc05c1fcf",
+      "claim_id": "C62",
+      "claim": "48 proteins were shared among the three lists of O-GlcNAcylated proteins identified by different methods.",
+      "claim_type": "EXPLICIT",
+      "source": "48 proteins were shared among the three lists (Supplementary file 3), encompassing many well-known O-GlcNAcylated proteins such as OGT (Griffin et al., 2016), NUP153 (Li et al., 2022), NUP62 (Zhu et al., 2016), and HCFC1 (Capotosti et al., 2011).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by overlap analysis shown in Figure 2D and citations to previous studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:30:24.132897Z"
+    },
+    {
+      "id": "4be92e0a-9a4a-4e78-8cd5-fb9bd8d1864d",
+      "content_id": "264dcc4b-2953-421d-9ef5-7f1fc05c1fcf",
+      "claim_id": "C63",
+      "claim": "Of the 158 candidate proteins that were unique in this study's result, 113 were annotated as O-GlcNAcylation substrates in the O-GlcNAc database.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, of the 158 candidate proteins that were unique in our result, 113 were annotated as O-GlcNAcylation substrates in the O-GlcNAc database (https://www.oglcnac.mcw.edu/).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by comparison with the O-GlcNAc database.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:30:24.132897Z"
+    },
+    {
+      "id": "e774b4d0-aa28-49a4-bdc0-aa48b73c95c8",
+      "content_id": "264dcc4b-2953-421d-9ef5-7f1fc05c1fcf",
+      "claim_id": "C64",
+      "claim": "TurboID-CpOGACD was able to selectively tag O-GlcNAcylated proteins with biotin for enrichment and identification.",
+      "claim_type": "EXPLICIT",
+      "source": "These results validated that TurboID-CpOGACD was able to selectively tag O-GlcNAcylated proteins with biotin for enrichment and identification.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the validation experiments in HEK293T cells.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:30:24.132897Z"
+    },
+    {
+      "id": "6f583b73-9c1e-46f7-8e4e-3500d7c28f0b",
+      "content_id": "264dcc4b-2953-421d-9ef5-7f1fc05c1fcf",
+      "claim_id": "C65",
+      "claim": "TurboID-CpOGACD catalyzed more biotinylation in fly lysates relative to TurboID-CpOGADM.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to the result with HEK293T cells, TurboID-CpOGACD catalyzed more biotinylation in the input relative to TurboID-CpOGADM, and more biotinylated proteins were immunoprecipitated, in which strong O-GlcNAcylation signals were detected (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by western blot data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:30:24.132897Z"
+    },
+    {
+      "id": "e6c6779c-31c9-4831-82d6-2865b7cdc0c5",
+      "content_id": "264dcc4b-2953-421d-9ef5-7f1fc05c1fcf",
+      "claim_id": "C66",
+      "claim": "Staining with streptavidin-Cy3 detected strong biotinylation in the brain regions expressing TurboID-CpOGACD, whereas the rest of the brain showed negligible background signals.",
+      "claim_type": "EXPLICIT",
+      "source": "More importantly, staining with streptavidin-Cy3 detected strong biotinylation in the brain regions expressing TurboID-CpOGACD, whereas the rest of the brain showed negligible background signals (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunostaining data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:30:24.132897Z"
+    },
+    {
+      "id": "25fe6151-b00c-4609-bf15-db0d585743b4",
+      "content_id": "264dcc4b-2953-421d-9ef5-7f1fc05c1fcf",
+      "claim_id": "C67",
+      "claim": "The authors identified 491 putative O-GlcNAcylated proteins in all neurons in the fly brain.",
+      "claim_type": "EXPLICIT",
+      "source": "We, therefore, identified 491 putative O-GlcNAcylated proteins in all neurons in the fly brain (Elav-Gal4), 455 in the mushroom body (OK107-Gal4), 377 in the antennal lobe (GMR14H04-Gal4), 234 in the optic lobe (GMR33H10-Gal4), and 289 in the ellipsoid body (c232-Gal4) (Figure 3D, Supplementary files 4-8).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by mass spectrometry data analysis shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:30:24.132897Z"
+    },
+    {
+      "id": "87263652-931c-440f-bae0-ce26ffab87ba",
+      "content_id": "264dcc4b-2953-421d-9ef5-7f1fc05c1fcf",
+      "claim_id": "C68",
+      "claim": "The authors identified 455 putative O-GlcNAcylated proteins in the mushroom body.",
+      "claim_type": "EXPLICIT",
+      "source": "We, therefore, identified 491 putative O-GlcNAcylated proteins in all neurons in the fly brain (Elav-Gal4), 455 in the mushroom body (OK107-Gal4), 377 in the antennal lobe (GMR14H04-Gal4), 234 in the optic lobe (GMR33H10-Gal4), and 289 in the ellipsoid body (c232-Gal4) (Figure 3D, Supplementary files 4-8).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by mass spectrometry data analysis shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:30:24.132897Z"
+    },
+    {
+      "id": "2c271bbd-1be0-4a86-9cfd-f86859ad8bcc",
+      "content_id": "264dcc4b-2953-421d-9ef5-7f1fc05c1fcf",
+      "claim_id": "C69",
+      "claim": "The authors identified 377 putative O-GlcNAcylated proteins in the antennal lobe.",
+      "claim_type": "EXPLICIT",
+      "source": "We, therefore, identified 491 putative O-GlcNAcylated proteins in all neurons in the fly brain (Elav-Gal4), 455 in the mushroom body (OK107-Gal4), 377 in the antennal lobe (GMR14H04-Gal4), 234 in the optic lobe (GMR33H10-Gal4), and 289 in the ellipsoid body (c232-Gal4) (Figure 3D, Supplementary files 4-8).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by mass spectrometry data analysis shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:30:24.132897Z"
+    },
+    {
+      "id": "6542d558-6914-4a76-ba63-98f08a97bcb2",
+      "content_id": "264dcc4b-2953-421d-9ef5-7f1fc05c1fcf",
+      "claim_id": "C70",
+      "claim": "The authors identified 234 putative O-GlcNAcylated proteins in the optic lobe.",
+      "claim_type": "EXPLICIT",
+      "source": "We, therefore, identified 491 putative O-GlcNAcylated proteins in all neurons in the fly brain (Elav-Gal4), 455 in the mushroom body (OK107-Gal4), 377 in the antennal lobe (GMR14H04-Gal4), 234 in the optic lobe (GMR33H10-Gal4), and 289 in the ellipsoid body (c232-Gal4) (Figure 3D, Supplementary files 4-8).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by mass spectrometry data analysis shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:30:24.132897Z"
+    },
+    {
+      "id": "00113af6-8e52-477a-abad-48145db29dfc",
+      "content_id": "264dcc4b-2953-421d-9ef5-7f1fc05c1fcf",
+      "claim_id": "C71",
+      "claim": "The authors identified 289 putative O-GlcNAcylated proteins in the ellipsoid body.",
+      "claim_type": "EXPLICIT",
+      "source": "We, therefore, identified 491 putative O-GlcNAcylated proteins in all neurons in the fly brain (Elav-Gal4), 455 in the mushroom body (OK107-Gal4), 377 in the antennal lobe (GMR14H04-Gal4), 234 in the optic lobe (GMR33H10-Gal4), and 289 in the ellipsoid body (c232-Gal4) (Figure 3D, Supplementary files 4-8).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by mass spectrometry data analysis shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:30:24.132897Z"
+    },
+    {
+      "id": "207e8c03-2586-4124-8e82-a01e8d73f71f",
+      "content_id": "264dcc4b-2953-421d-9ef5-7f1fc05c1fcf",
+      "claim_id": "C72",
+      "claim": "The O-GlcNAc interactome in brain neurons was enriched in chemical synaptic transmission, neurotransmitter secretion, as well as chromatin remodeling.",
+      "claim_type": "EXPLICIT",
+      "source": "The O-GlcNAc interactome in brain neurons was enriched in chemical synaptic transmission, neurotransmitter secretion, as well as chromatin remodeling",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by GO enrichment analysis shown in Figure 3\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:30:24.132897Z"
+    },
+    {
+      "id": "722eba3b-9192-4116-bd52-7bb42c1b79ed",
+      "content_id": "264dcc4b-2953-421d-9ef5-7f1fc05c1fcf",
+      "claim_id": "C73",
+      "claim": "Putative O-GlcNAcylation modifications in the mushroom body were highly clustered in processes linked to translation, including cytoplasmic translation, translational initiation, ribosome assembly, and ribosome biogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Of particular interest, putative O-GlcNAcylation modifications in the mushroom body were highly clustered in processes linked to translation, including cytoplasmic translation, translational initiation, ribosome assembly, and ribosome biogenesis.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by GO enrichment analysis shown in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:30:24.132897Z"
+    },
+    {
+      "id": "1e4bef34-a06b-4bac-87d5-64efed11f400",
+      "content_id": "264dcc4b-2953-421d-9ef5-7f1fc05c1fcf",
+      "claim_id": "C74",
+      "claim": "Nearly 10% of the putative O-GlcNAc substrates in the mushroom body were from ribosomes, much higher than that in other brain regions.",
+      "claim_type": "EXPLICIT",
+      "source": "We calculated the percentage of ribosomal components in all the proteins identified from different brain regions, and found that nearly 10% of the putative O-GlcNAc substrates in the mushroom body were from ribosomes, much higher than that in other brain regions (Figure 4\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data analysis shown in Figure 4\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:30:24.132897Z"
+    },
+    {
+      "id": "307b2a5d-cbd4-4716-b0fd-a356a1357e64",
+      "content_id": "264dcc4b-2953-421d-9ef5-7f1fc05c1fcf",
+      "claim_id": "C75",
+      "claim": "While the O-GlcNAc levels of ribosomal proteins were highest in the mushroom body, their mRNA abundances were not.",
+      "claim_type": "EXPLICIT",
+      "source": "While the O-GlcNAc levels were highest in the mushroom body, their mRNA abundances were not (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by heatmap analysis shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:30:24.132897Z"
+    },
+    {
+      "id": "eec32531-ce04-40ad-afaa-500d1bcdf0eb",
+      "content_id": "264dcc4b-2953-421d-9ef5-7f1fc05c1fcf",
+      "claim_id": "C76",
+      "claim": "In the mushroom body, the O-GlcNAc levels of ribosomal proteins showed no correlation with their mRNA abundances.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, in the mushroom body, the O-GlcNAc levels of these ribosomal proteins showed no correlation with their mRNA abundances (Figure 4\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by correlation analysis shown in Figure 4\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:30:24.132897Z"
+    },
+    {
+      "id": "c296a6a7-c7d2-4044-872a-1de932dc4d35",
+      "content_id": "264dcc4b-2953-421d-9ef5-7f1fc05c1fcf",
+      "claim_id": "C77",
+      "claim": "Ribosomes purified from mushroom body contained more O-GlcNAc modifications than that from whole brain neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Western blot with anti-O-GlcNAc antibody RL2 showed that ribosomes purified from mushroom body contained more O-GlcNAc modifications than that from whole brain neurons.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by western blot data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:30:24.132897Z"
+    },
+    {
+      "id": "659f6aa2-610a-474b-9bc2-9cda9f2e5452",
+      "content_id": "264dcc4b-2953-421d-9ef5-7f1fc05c1fcf",
+      "claim_id": "C78",
+      "claim": "Ribosomal components were abundantly O-GlcNAc modified in the learning center of Drosophila brain.",
+      "claim_type": "EXPLICIT",
+      "source": "These results ascertained that ribosomal components were abundantly O-GlcNAc modified in the learning center of Drosophila brain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the ribosome immunoprecipitation and western blot experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:30:24.132897Z"
+    },
+    {
+      "id": "74ee74cd-1efb-4cde-9830-a6d62e72713e",
+      "content_id": "264dcc4b-2953-421d-9ef5-7f1fc05c1fcf",
+      "claim_id": "C79",
+      "claim": "Ectopic expression of CpOGAWT but not the control CpOGADM in the mushroom body decreased local protein synthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Ectopic expression of CpOGAWT but not the control CpOGADM in the mushroom body decreased local protein synthesis as visualized by the OPP fluorescent intensity (Figure 4D and E)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by OPP assay data shown in Figure 4D and E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:30:24.132897Z"
+    },
+    {
+      "id": "0024b2d4-51aa-4924-98da-a89743b6839b",
+      "content_id": "264dcc4b-2953-421d-9ef5-7f1fc05c1fcf",
+      "claim_id": "C80",
+      "claim": "Tuning down the O-GlcNAcylation compromised local translational activity in the mushroom body.",
+      "claim_type": "EXPLICIT",
+      "source": "Ectopic expression of CpOGAWT but not the control CpOGADM in the mushroom body decreased local protein synthesis as visualized by the OPP fluorescent intensity (Figure 4D and E), suggesting that tuning down the O-GlcNAcylation compromised local translational activity.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference drawn from the OPP assay results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:30:24.132897Z"
+    },
+    {
+      "id": "0f32d847-cde2-4eab-8cdb-0aae00b8f884",
+      "content_id": "264dcc4b-2953-421d-9ef5-7f1fc05c1fcf",
+      "claim_id": "C81",
+      "claim": "Downregulation of RPL11 and RPL24 in the ribosomal large subunit, and RPS3 and RPS6 in the ribosomal small subunit did not alter olfactory acuity but led to compromised olfactory learning ability.",
+      "claim_type": "EXPLICIT",
+      "source": "Downregulation of RPL11 and RPL24 in the ribosomal large subunit, and RPS3 and RPS6 in the ribosomal small subunit did not alter olfactory acuity but led to compromised olfactory learning ability (Figure 4\u2014figure supplement 1D\u2013F)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by RNAi knockdown and behavioral assay data shown in Figure 4\u2014figure supplement 1D\u2013F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:30:24.132897Z"
+    },
+    {
+      "id": "5b4e7a15-1244-4d14-87e2-86ba4794f753",
+      "content_id": "264dcc4b-2953-421d-9ef5-7f1fc05c1fcf",
+      "claim_id": "C82",
+      "claim": "Reduction of translational activity was sufficient to cause learning impairment.",
+      "claim_type": "EXPLICIT",
+      "source": "Downregulation of RPL11 and RPL24 in the ribosomal large subunit, and RPS3 and RPS6 in the ribosomal small subunit did not alter olfactory acuity but led to compromised olfactory learning ability (Figure 4\u2014figure supplement 1D\u2013F), suggesting that reduction of translational activity was sufficient to cause learning impairment.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference drawn from the ribosomal knockdown experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:30:24.132897Z"
+    },
+    {
+      "id": "510a90c9-37b9-4c75-a8b3-1eecc1aa80ad",
+      "content_id": "264dcc4b-2953-421d-9ef5-7f1fc05c1fcf",
+      "claim_id": "C83",
+      "claim": "Myc serves as a direct regulator of ribosome biogenesis, promoting protein synthesis through transcriptional control of RNA and protein components of ribosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Myc serves as a direct regulator of ribosome biogenesis, promoting protein synthesis through transcriptional control of RNA and protein components of ribosomes, as well as factors involved in the processing and nuclear export of these ribosomal subunits (Gallant, 2013; Jiao et al., 2023; van Riggelen et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to Gallant, 2013; Jiao et al., 2023; van Riggelen et al., 2010.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:30:24.132897Z"
+    },
+    {
+      "id": "59879a73-9316-4d9f-a4f3-92555c3fb484",
+      "content_id": "264dcc4b-2953-421d-9ef5-7f1fc05c1fcf",
+      "claim_id": "C84",
+      "claim": "dMyc expression restored local protein synthesis in the mushroom body.",
+      "claim_type": "EXPLICIT",
+      "source": "The results revealed that dMyc expression restored local protein synthesis, and more importantly, rescued the hypo-O-GlcNAcylation-induced olfactory learning defect (Figure 4C\u2013E)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by OPP assay data shown in Figure 4D and E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:30:24.132897Z"
+    },
+    {
+      "id": "a1c5c062-754b-47f2-b918-3477317c0827",
+      "content_id": "264dcc4b-2953-421d-9ef5-7f1fc05c1fcf",
+      "claim_id": "C85",
+      "claim": "dMyc expression rescued the hypo-O-GlcNAcylation-induced olfactory learning defect.",
+      "claim_type": "EXPLICIT",
+      "source": "The results revealed that dMyc expression restored local protein synthesis, and more importantly, rescued the hypo-O-GlcNAcylation-induced olfactory learning defect (Figure 4C\u2013E)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by behavioral learning assay data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:30:24.132897Z"
+    },
+    {
+      "id": "f5b0c041-34c8-403d-ac4b-e45cdcd5df56",
+      "content_id": "264dcc4b-2953-421d-9ef5-7f1fc05c1fcf",
+      "claim_id": "C86",
+      "claim": "O-GlcNAcylation insufficiency-induced cognitive impairment involves compromised translational activity in the brain learning center.",
+      "claim_type": "EXPLICIT",
+      "source": "The results revealed that dMyc expression restored local protein synthesis, and more importantly, rescued the hypo-O-GlcNAcylation-induced olfactory learning defect (Figure 4C\u2013E), indicating that O-GlcNAcylation insufficiency-induced cognitive impairment involves compromised translational activity in the brain learning center.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion drawn from the rescue experiments with dMyc.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:30:24.132897Z"
+    },
+    {
+      "id": "5b62136e-8884-473f-8592-34f86e30e7cf",
+      "content_id": "264dcc4b-2953-421d-9ef5-7f1fc05c1fcf",
+      "claim_id": "C87",
+      "claim": "The O-GlcNAcome in different tissues and cell populations is heterogeneous and pleiotropic.",
+      "claim_type": "EXPLICIT",
+      "source": "The O-GlcNAcome in different tissues and cell populations is heterogeneous and pleiotropic, and our understanding of the tissue-specific functions of O-GlcNAc modification remains quite limited, mainly relying on conditional knockout studies of OGT or OGA (Issad et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Issad et al., 2022 and represents current understanding in the field.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:30:24.132897Z"
+    },
+    {
+      "id": "8b104baa-5eb0-4144-89b8-63ceabf91157",
+      "content_id": "264dcc4b-2953-421d-9ef5-7f1fc05c1fcf",
+      "claim_id": "C88",
+      "claim": "The strategy reported in this study has achieved mapping the O-GlcNAcylated candidates with high spatial precision in Drosophila brain.",
+      "claim_type": "EXPLICIT",
+      "source": "The strategy reported here has achieved mapping the O-GlcNAcylated candidates with high spatial precision in Drosophila brain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental results presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:30:24.132897Z"
+    },
+    {
+      "id": "7bd8a693-ce23-482b-8c53-682d27737c8d",
+      "content_id": "264dcc4b-2953-421d-9ef5-7f1fc05c1fcf",
+      "claim_id": "C89",
+      "claim": "With small modifications, this strategy can be readily applied to other tissues or even other model organisms in future studies.",
+      "claim_type": "EXPLICIT",
+      "source": "With small modifications, this strategy can be readily applied to other tissues or even other model organisms in future studies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about the potential applications of the method.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:30:24.132897Z"
+    },
+    {
+      "id": "16460968-06db-4820-90fb-aee1a40ed19c",
+      "content_id": "264dcc4b-2953-421d-9ef5-7f1fc05c1fcf",
+      "claim_id": "C90",
+      "claim": "The sensitivity of the TurboID-CpOGA method is limited compared to the chemoenzymatic labeling methods.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, given that our method is based on the differential enrichment in the TurboID-CpOGACD experimental group relative to the TurboID-CpOGADM control group to identify putative O-GlcNAc substrates, the sensitivity is limited compared to the chemoenzymatic labeling methods.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an acknowledgment of a limitation of the method based on its design.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:30:24.132897Z"
+    },
+    {
+      "id": "94b89434-27da-440c-8a9a-42af9367d028",
+      "content_id": "264dcc4b-2953-421d-9ef5-7f1fc05c1fcf",
+      "claim_id": "C91",
+      "claim": "Because TurboID biotinylates all proximal proteins within ~10 nm radius, the identified proteins can be in complex with other O-GlcNAc substrates but itself is not directly O-GlcNAcylated.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, because the TurboID biotinylates all proximal proteins within ~10 nm radius, the identified proteins can be in complex with other O-GlcNAc substrates but itself is not directly O-GlcNAcylated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an acknowledgment of a limitation of the method based on the properties of TurboID.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:30:24.132897Z"
+    },
+    {
+      "id": "203e8400-3968-4c93-99f8-323ee77e3b0c",
+      "content_id": "264dcc4b-2953-421d-9ef5-7f1fc05c1fcf",
+      "claim_id": "C92",
+      "claim": "The brain manifests high OGT expression and relies on protein O-GlcNAcylation to regulate many of its functions.",
+      "claim_type": "EXPLICIT",
+      "source": "The brain manifests high OGT expression and relies on protein O-GlcNAcylation to regulate many of its functions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement represents established knowledge about O-GlcNAcylation in the brain.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:30:24.132897Z"
+    },
+    {
+      "id": "d0ccd19f-198f-4c18-a1cb-5d60919679ce",
+      "content_id": "264dcc4b-2953-421d-9ef5-7f1fc05c1fcf",
+      "claim_id": "C93",
+      "claim": "Perturbed O-GlcNAcylation has been linked to neurodegenerative diseases and several key etiological factors are known O-GlcNAc substrates, such as tau, \u03b2-amyloid (A\u03b2), neurofilaments (NFs), TDP-43, and \u03b1-synuclein.",
+      "claim_type": "EXPLICIT",
+      "source": "Perturbed O-GlcNAcylation has been linked to neurodegenerative diseases and several key etiological factors are known O-GlcNAc substrates, such as tau (Liu et al., 2009; Yuzwa et al., 2012), \u03b2-amyloid (A\u03b2) (Park et al., 2021), neurofilaments (NFs) (L\u00fcdemann et al., 2005), TDP-43 (Zhao et al., 2021), and \u03b1-synuclein (Levine et al., 2019; Marotta et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by multiple citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:30:24.132897Z"
+    },
+    {
+      "id": "931b6444-6171-4fba-bf29-ec1cac2c01c8",
+      "content_id": "264dcc4b-2953-421d-9ef5-7f1fc05c1fcf",
+      "claim_id": "C94",
+      "claim": "O-GlcNAcylation can antagonize hyperphosphorylation of tau and stabilize it from aggregation, preventing neuronal death and tauopathies.",
+      "claim_type": "EXPLICIT",
+      "source": "Particularly, O-GlcNAcylation can antagonize hyperphosphorylation of tau and stabilize it from aggregation, preventing neuronal death and tauopathies (Lee et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Lee et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:30:24.132897Z"
+    },
+    {
+      "id": "afd9e2d6-e30f-45d2-9c2b-51254d2623fa",
+      "content_id": "264dcc4b-2953-421d-9ef5-7f1fc05c1fcf",
+      "claim_id": "C95",
+      "claim": "OGA inhibitors have been tested in several clinical trials to target tauopathy and early symptomatic AD.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, OGA inhibitors have been tested in several clinical trials to target tauopathy and early symptomatic AD, leading to a recent FDA approval of the OGA inhibitor MK-8719 as an orphan drug for tau-driven neurodegenerative disease (Wang et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Wang et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:30:24.132897Z"
+    },
+    {
+      "id": "162620e6-7066-4264-8fab-a4050d26e667",
+      "content_id": "264dcc4b-2953-421d-9ef5-7f1fc05c1fcf",
+      "claim_id": "C96",
+      "claim": "The FDA approved the OGA inhibitor MK-8719 as an orphan drug for tau-driven neurodegenerative disease.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, OGA inhibitors have been tested in several clinical trials to target tauopathy and early symptomatic AD, leading to a recent FDA approval of the OGA inhibitor MK-8719 as an orphan drug for tau-driven neurodegenerative disease (Wang et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Wang et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:30:24.132897Z"
+    },
+    {
+      "id": "56e091e4-ff70-4a4f-8fb3-3a0a2031c154",
+      "content_id": "264dcc4b-2953-421d-9ef5-7f1fc05c1fcf",
+      "claim_id": "C97",
+      "claim": "This study strengthened a causal relationship between hypo-O-GlcNAcylation and cognitive impairment.",
+      "claim_type": "EXPLICIT",
+      "source": "Our study strengthened a causal relationship between hypo-O-GlcNAcylation and cognitive impairment",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental results in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:30:24.132897Z"
+    },
+    {
+      "id": "9d07c759-401c-4827-b868-eee76a87104e",
+      "content_id": "264dcc4b-2953-421d-9ef5-7f1fc05c1fcf",
+      "claim_id": "C98",
+      "claim": "O-GlcNAcylation influences associative learning by regulating translational activity in the brain computational center.",
+      "claim_type": "EXPLICIT",
+      "source": "Our study strengthened a causal relationship between hypo-O-GlcNAcylation and cognitive impairment, and suggested that O-GlcNAcylation influences associative learning by regulating translational activity in the brain computational center.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental results in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:30:24.132897Z"
+    },
+    {
+      "id": "65a5b629-91b1-42ed-b05e-f14875984d68",
+      "content_id": "264dcc4b-2953-421d-9ef5-7f1fc05c1fcf",
+      "claim_id": "C99",
+      "claim": "Components in the translational machinery, including several translational initiation factors and many ribosomal subunits, were identified as putative O-GlcNAc substrates.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with previous reports (Ohn et al., 2008; Shu et al., 2022; Zeidan et al., 2010), we identified components in the translational machinery as putative O-GlcNAc substrates, including several translational initiation factors and particularly many ribosomal subunits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by mass spectrometry data and citations to previous reports.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:30:24.132897Z"
+    },
+    {
+      "id": "69082441-67a1-4d09-a039-6fec40ff2b2e",
+      "content_id": "264dcc4b-2953-421d-9ef5-7f1fc05c1fcf",
+      "claim_id": "C100",
+      "claim": "The brain O-GlcNAc substrates scu and Upf3 possess human homologs, HSD17B10 and UPF3B, that are known X-linked intellectual disability risk genes.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, the brain O-GlcNAc substrates, scu and Upf3 possess human homologs, HSD17B10, and UPF3B, that are known X-linked intellectual disability risk genes (Firth et al., 2009; Vissers et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to Firth et al., 2009 and Vissers et al., 2016.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:30:24.132897Z"
+    },
+    {
+      "id": "c481926a-c9c3-4188-b678-ca48b9f952d4",
+      "content_id": "264dcc4b-2953-421d-9ef5-7f1fc05c1fcf",
+      "claim_id": "C101",
+      "claim": "Stress granules are tightly linked with autism spectrum disorders.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, recent studies have revealed that stress granules are tightly linked with autism spectrum disorders (Jia et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Jia et al., 2022.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:30:24.132897Z"
+    },
+    {
+      "id": "86859f0e-b8b3-4784-9956-e33c2b3d68bd",
+      "content_id": "264dcc4b-2953-421d-9ef5-7f1fc05c1fcf",
+      "claim_id": "C102",
+      "claim": "The enrichment of stress granule components in the O-GlcNAc substrate list suggests that O-GlcNAcylation dysregulation might be involved in autism.",
+      "claim_type": "EXPLICIT",
+      "source": "The enrichment of stress granule components in the O-GlcNAc substrate list suggests that O-GlcNAcylation dysregulation might be involved in autism as well.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation based on the identification of stress granule components as O-GlcNAc substrates.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:30:24.132897Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "98106cca-fdc0-4b98-a179-bb86c4bf5de7",
+      "content_id": "264dcc4b-2953-421d-9ef5-7f1fc05c1fcf",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors developed and validated a TurboID-CpOGACD fusion protein tool that selectively tags O-GlcNAcylated proteins with biotin for enrichment and mass spectrometry identification in HEK293T cells. The tool identified 336 O-GlcNAc candidate substrates, with 52% overlap with previously reported substrates, and successfully enriched known O-GlcNAcylated proteins.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C51-C64 collectively demonstrate successful development and validation of the TurboID-CpOGACD tool in HEK293T cells. Western blot data (C54-C59), mass spectrometry results (C60), and overlap analysis with previous studies (C61-C63) provide converging evidence. The 52% overlap with known substrates and identification of well-characterized O-GlcNAc proteins validates the method's specificity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:30:24.132897Z"
+    },
+    {
+      "id": "4cbc8362-9178-4bc7-aec7-903445cda6b1",
+      "content_id": "264dcc4b-2953-421d-9ef5-7f1fc05c1fcf",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The TurboID-CpOGACD tool was successfully adapted to Drosophila and used to map region-specific O-GlcNAc interactomes across five brain regions, identifying 491 proteins in all neurons, 455 in mushroom body, 377 in antennal lobe, 234 in optic lobe, and 289 in ellipsoid body. GO analysis revealed that mushroom body O-GlcNAcylation was enriched in translation-related processes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C73 and C38 demonstrate successful tissue-specific application in Drosophila. Western blot (C65), immunostaining (C66), and mass spectrometry data (C67-C71) confirm region-specific biotinylation and protein identification. GO enrichment analysis (C72-C73) provides functional context. The creation of the tsOGA database (C38) supports data accessibility.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:30:24.132897Z"
+    },
+    {
+      "id": "368d5b42-48be-422c-970e-ebbe4434f4af",
+      "content_id": "264dcc4b-2953-421d-9ef5-7f1fc05c1fcf",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Ribosomal components are abundantly O-GlcNAcylated in the Drosophila mushroom body, with nearly 10% of identified O-GlcNAc substrates being ribosomal proteins. This enrichment is independent of mRNA expression levels and was validated by direct immunoprecipitation of ribosomes showing higher O-GlcNAc modification in mushroom body compared to whole brain neurons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C74-C78 provide multiple lines of evidence for ribosomal O-GlcNAcylation in mushroom body. Mass spectrometry data (C74), normalization against mRNA levels (C75-C76), and direct ribosome immunoprecipitation with western blot (C77) converge to support this finding. The lack of correlation between O-GlcNAc levels and mRNA abundance strengthens the conclusion that this is a post-translational phenomenon.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:30:24.132897Z"
+    },
+    {
+      "id": "b647773a-d330-4c3c-8bd4-abe8bc50ab32",
+      "content_id": "264dcc4b-2953-421d-9ef5-7f1fc05c1fcf",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Ectopic expression of active CpOGA (CpOGAWT) in the Drosophila mushroom body reduces local O-GlcNAcylation levels and impairs olfactory learning. This effect is specific to the mushroom body and brain neurons, as expression in the ellipsoid body shows no learning deficit. Temporally controlled adult-specific expression confirms the effect is not due to developmental defects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36, C43-C49, and C6 are supported by immunostaining data showing reduced O-GlcNAcylation (C43-C45) and behavioral assays demonstrating learning deficits (C46-C48). The region-specificity (C47) and temporal control experiments (C48) strengthen causality. Multiple Gal4 drivers and controls provide robust evidence for the mushroom body-specific requirement of O-GlcNAcylation for learning.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:30:24.132897Z"
+    },
+    {
+      "id": "beffe42e-8d22-4e11-a1ac-76969b5cf3b0",
+      "content_id": "264dcc4b-2953-421d-9ef5-7f1fc05c1fcf",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Hypo-O-GlcNAcylation induced by CpOGAWT expression in the mushroom body decreases local protein synthesis as measured by OPP incorporation assay.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C39, C79-C80 are supported by OPP fluorescence data (Figure 4D-E) showing reduced protein synthesis in mushroom body upon CpOGAWT but not CpOGADM expression. The use of appropriate controls and quantification strengthens this finding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:30:24.132897Z"
+    },
+    {
+      "id": "d46b2d53-789e-41f7-b384-56edec68f31f",
+      "content_id": "264dcc4b-2953-421d-9ef5-7f1fc05c1fcf",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Overexpression of dMyc in the mushroom body rescues both the reduced protein synthesis and olfactory learning deficits caused by hypo-O-GlcNAcylation, demonstrating that compromised translational activity mediates the cognitive impairment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C41, C84-C86 are supported by rescue experiments showing dMyc overexpression restores protein synthesis (C84, Figure 4D-E) and learning performance (C85, Figure 4C). This genetic rescue experiment provides strong evidence for a causal link between O-GlcNAcylation, translation, and learning.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:30:24.132897Z"
+    },
+    {
+      "id": "8c02d44a-6088-4ff8-be73-ae307ea87f0c",
+      "content_id": "264dcc4b-2953-421d-9ef5-7f1fc05c1fcf",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "RNAi-mediated knockdown of specific ribosomal proteins (RPL11, RPL24, RPS3, RPS6) in the mushroom body impairs olfactory learning without affecting odor acuity, demonstrating that reduced translational activity is sufficient to cause learning deficits.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C81-C82 are supported by RNAi knockdown data (Figure 4\u2014figure supplement 1C-F) showing reduced ribosomal gene expression and learning deficits without affecting odor acuity. This provides independent evidence that translational capacity affects learning, supporting the proposed mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:30:24.132897Z"
+    },
+    {
+      "id": "d2bd2386-5cff-442d-99fb-b1c57c0e909f",
+      "content_id": "264dcc4b-2953-421d-9ef5-7f1fc05c1fcf",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The study proposes that compromised translational activity in the brain learning center contributes to cognitive deficits in O-GlcNAcylation insufficiency-associated neurological diseases, and that O-GlcNAcylation influences associative learning by regulating translational activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42, C97-C98 represent the main conclusions drawn from the experimental data. The convergence of evidence from O-GlcNAc profiling showing ribosomal enrichment, reduced protein synthesis upon hypo-O-GlcNAcylation, learning deficits from both CpOGA expression and ribosomal knockdown, and dMyc rescue experiments collectively support this mechanistic model.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:30:24.132897Z"
+    },
+    {
+      "id": "0199ddb2-70f5-4492-97dd-f9cdbba370f2",
+      "content_id": "264dcc4b-2953-421d-9ef5-7f1fc05c1fcf",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The TurboID-CpOGA strategy achieves high spatial precision for mapping O-GlcNAcylated candidates in Drosophila brain, though it has limitations including reduced sensitivity compared to chemoenzymatic methods and potential identification of interacting proteins rather than direct substrates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C88-C91 represent methodological conclusions and acknowledged limitations. The spatial precision is demonstrated by the region-specific profiling data (C88). The authors appropriately acknowledge limitations regarding sensitivity (C90) and the ~10 nm labeling radius of TurboID that may capture interacting proteins (C91). These are reasonable assessments based on the method's design.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:30:24.132897Z"
+    },
+    {
+      "id": "cc73a4c5-b0ca-4448-a152-ba6bd93c9e7d",
+      "content_id": "264dcc4b-2953-421d-9ef5-7f1fc05c1fcf",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "O-GlcNAcylation is a dynamic post-translational modification involving reversible attachment of GlcNAc to serine/threonine residues, catalyzed by OGT and OGA. It is enriched in brain tissue, regulates diverse cellular processes, and its dysregulation is linked to neurological disorders.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2, C8-C14 represent established background knowledge supported by multiple citations to the literature. These are well-accepted facts in the field and provide appropriate context for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:30:24.132897Z"
+    },
+    {
+      "id": "73b9b500-6bcf-4b7d-ba1b-4c17fef68c59",
+      "content_id": "264dcc4b-2953-421d-9ef5-7f1fc05c1fcf",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Hypomorphic OGT mutations cause OGT-CDG, an X-linked intellectual disability syndrome. Drosophila models show learning deficits, and disturbed O-GlcNAc homeostasis can impact cognitive function through effects on neuronal development.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C20 are supported by citations to previous literature including the authors' own work. These establish the rationale for studying O-GlcNAcylation in cognitive function and provide context for the current findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:30:24.132897Z"
+    },
+    {
+      "id": "4e774d30-c866-4f9b-aeab-9df29f0ceae0",
+      "content_id": "264dcc4b-2953-421d-9ef5-7f1fc05c1fcf",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Impaired O-GlcNAcylation is implicated in Alzheimer's disease and aging-related cognitive decline. O-GlcNAcylation levels are reduced in AD patients and aging mice, and upregulation of O-GlcNAcylation improves cognitive function in mouse models.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C26 are supported by multiple citations to the literature. These establish the clinical relevance of O-GlcNAcylation in neurodegenerative disease and provide motivation for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:30:24.132897Z"
+    },
+    {
+      "id": "5dfacc00-81d3-4055-86c1-075b86cc8bd1",
+      "content_id": "264dcc4b-2953-421d-9ef5-7f1fc05c1fcf",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The identity and spatial distribution of key O-GlcNAc substrates supporting cognitive function remain largely unknown. Existing enrichment methods include antibodies, lectins, and chemoenzymatic labeling, but none have been adopted for tissue-specific profiling. Different methods identify diverse substrates, likely due to O-GlcNAc dynamics and method-specific biases.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C35 identify the knowledge gap and methodological limitations that motivate the current study. These are supported by citations and represent accurate assessments of the field's state prior to this work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:30:24.132897Z"
+    },
+    {
+      "id": "5e82d057-069a-450d-a4b9-7c731263605d",
+      "content_id": "264dcc4b-2953-421d-9ef5-7f1fc05c1fcf",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The mushroom body is the major associative learning center in Drosophila brain.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37 and C50 represent established knowledge about Drosophila neurobiology, supported by citations to Heisenberg, 2003 and McGuire et al., 2001. This provides essential context for interpreting the learning experiments.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:30:24.132897Z"
+    },
+    {
+      "id": "eecd81ba-5754-4c50-ae6a-d22957e45007",
+      "content_id": "264dcc4b-2953-421d-9ef5-7f1fc05c1fcf",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Myc serves as a direct regulator of ribosome biogenesis, promoting protein synthesis through transcriptional control of ribosomal components and processing factors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C83 is supported by citations to Gallant, 2013; Jiao et al., 2023; van Riggelen et al., 2010. This established knowledge provides the rationale for using dMyc overexpression as a rescue strategy.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:30:24.132897Z"
+    },
+    {
+      "id": "e40f5a2d-fec3-4e0f-908f-9d91e33042da",
+      "content_id": "264dcc4b-2953-421d-9ef5-7f1fc05c1fcf",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The brain has high OGT expression and relies on O-GlcNAcylation for many functions. Perturbed O-GlcNAcylation is linked to neurodegenerative diseases, with key disease proteins (tau, A\u03b2, TDP-43, \u03b1-synuclein) being O-GlcNAc substrates. OGA inhibitors are being tested clinically, with MK-8719 receiving FDA orphan drug approval for tau-driven neurodegeneration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C92-C96 are supported by multiple citations and represent established knowledge about O-GlcNAcylation in neurodegeneration and therapeutic development. These provide clinical context for the study's findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:30:24.132897Z"
+    },
+    {
+      "id": "77af2229-7f24-4682-8356-e61ce85bbd89",
+      "content_id": "264dcc4b-2953-421d-9ef5-7f1fc05c1fcf",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Components of the translational machinery were identified as O-GlcNAc substrates, consistent with previous reports. Some identified brain O-GlcNAc substrates have human homologs that are X-linked intellectual disability risk genes. Stress granule components were enriched, suggesting possible involvement of O-GlcNAcylation dysregulation in autism.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C99-C102 include both supported findings (C99-C100, with data and citations) and speculation (C102). While the identification of translational machinery components and intellectual disability gene homologs is supported, the connection to autism (C102) is speculative and requires further validation. The enrichment of stress granule components is noted but the autism link is not experimentally tested.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:30:24.132897Z"
+    },
+    {
+      "id": "81379a68-e81d-4c58-b331-5e438bd4032d",
+      "content_id": "264dcc4b-2953-421d-9ef5-7f1fc05c1fcf",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The O-GlcNAcome in different tissues and cell populations is heterogeneous and pleiotropic, and understanding of tissue-specific functions remains limited.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C87 is supported by citation to Issad et al., 2022 and represents current understanding in the field. This provides context for the need for tissue-specific profiling methods.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:30:24.132897Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "80ff332e-ee43-4e19-99a1-86715bce93fa",
+      "result_id": "98106cca-fdc0-4b98-a179-bb86c4bf5de7"
+    },
+    {
+      "claim_id": "99e96be4-3bea-49ed-bba1-c2c8eb6c4439",
+      "result_id": "98106cca-fdc0-4b98-a179-bb86c4bf5de7"
+    },
+    {
+      "claim_id": "d491777d-2ca5-47d1-b69a-02ade765432e",
+      "result_id": "98106cca-fdc0-4b98-a179-bb86c4bf5de7"
+    },
+    {
+      "claim_id": "451ab895-d237-45c3-9b3c-9ea2c5eee31f",
+      "result_id": "98106cca-fdc0-4b98-a179-bb86c4bf5de7"
+    },
+    {
+      "claim_id": "c9ddc5ca-782e-4dbc-ae82-87da50336696",
+      "result_id": "98106cca-fdc0-4b98-a179-bb86c4bf5de7"
+    },
+    {
+      "claim_id": "3a50021e-f2d7-4a8c-9b65-c4077b34baa4",
+      "result_id": "98106cca-fdc0-4b98-a179-bb86c4bf5de7"
+    },
+    {
+      "claim_id": "591ba29b-dbee-4419-b56a-3c24a026b0f5",
+      "result_id": "98106cca-fdc0-4b98-a179-bb86c4bf5de7"
+    },
+    {
+      "claim_id": "764757f0-728d-4786-89fa-9b7696f9b5f9",
+      "result_id": "98106cca-fdc0-4b98-a179-bb86c4bf5de7"
+    },
+    {
+      "claim_id": "f0cc48cc-f04a-43fa-a18f-f61c8eeae365",
+      "result_id": "98106cca-fdc0-4b98-a179-bb86c4bf5de7"
+    },
+    {
+      "claim_id": "77239bbd-83c2-4a5b-8f89-537c843013d7",
+      "result_id": "98106cca-fdc0-4b98-a179-bb86c4bf5de7"
+    },
+    {
+      "claim_id": "ac2a984d-4fa1-41b0-a29b-86e6cfaa8c54",
+      "result_id": "98106cca-fdc0-4b98-a179-bb86c4bf5de7"
+    },
+    {
+      "claim_id": "f786992f-33b5-4f73-8c18-647e9165cda5",
+      "result_id": "98106cca-fdc0-4b98-a179-bb86c4bf5de7"
+    },
+    {
+      "claim_id": "555e38fe-365e-452c-9230-811832a6bee2",
+      "result_id": "98106cca-fdc0-4b98-a179-bb86c4bf5de7"
+    },
+    {
+      "claim_id": "4be92e0a-9a4a-4e78-8cd5-fb9bd8d1864d",
+      "result_id": "98106cca-fdc0-4b98-a179-bb86c4bf5de7"
+    },
+    {
+      "claim_id": "e774b4d0-aa28-49a4-bdc0-aa48b73c95c8",
+      "result_id": "98106cca-fdc0-4b98-a179-bb86c4bf5de7"
+    },
+    {
+      "claim_id": "6f583b73-9c1e-46f7-8e4e-3500d7c28f0b",
+      "result_id": "4cbc8362-9178-4bc7-aec7-903445cda6b1"
+    },
+    {
+      "claim_id": "e6c6779c-31c9-4831-82d6-2865b7cdc0c5",
+      "result_id": "4cbc8362-9178-4bc7-aec7-903445cda6b1"
+    },
+    {
+      "claim_id": "25fe6151-b00c-4609-bf15-db0d585743b4",
+      "result_id": "4cbc8362-9178-4bc7-aec7-903445cda6b1"
+    },
+    {
+      "claim_id": "87263652-931c-440f-bae0-ce26ffab87ba",
+      "result_id": "4cbc8362-9178-4bc7-aec7-903445cda6b1"
+    },
+    {
+      "claim_id": "2c271bbd-1be0-4a86-9cfd-f86859ad8bcc",
+      "result_id": "4cbc8362-9178-4bc7-aec7-903445cda6b1"
+    },
+    {
+      "claim_id": "6542d558-6914-4a76-ba63-98f08a97bcb2",
+      "result_id": "4cbc8362-9178-4bc7-aec7-903445cda6b1"
+    },
+    {
+      "claim_id": "00113af6-8e52-477a-abad-48145db29dfc",
+      "result_id": "4cbc8362-9178-4bc7-aec7-903445cda6b1"
+    },
+    {
+      "claim_id": "207e8c03-2586-4124-8e82-a01e8d73f71f",
+      "result_id": "4cbc8362-9178-4bc7-aec7-903445cda6b1"
+    },
+    {
+      "claim_id": "722eba3b-9192-4116-bd52-7bb42c1b79ed",
+      "result_id": "4cbc8362-9178-4bc7-aec7-903445cda6b1"
+    },
+    {
+      "claim_id": "3087d75a-91e0-4e58-b54f-80336c74f319",
+      "result_id": "4cbc8362-9178-4bc7-aec7-903445cda6b1"
+    },
+    {
+      "claim_id": "21f9be8d-2959-4872-b2b9-cc0acbcd8eea",
+      "result_id": "368d5b42-48be-422c-970e-ebbe4434f4af"
+    },
+    {
+      "claim_id": "1e4bef34-a06b-4bac-87d5-64efed11f400",
+      "result_id": "368d5b42-48be-422c-970e-ebbe4434f4af"
+    },
+    {
+      "claim_id": "307b2a5d-cbd4-4716-b0fd-a356a1357e64",
+      "result_id": "368d5b42-48be-422c-970e-ebbe4434f4af"
+    },
+    {
+      "claim_id": "eec32531-ce04-40ad-afaa-500d1bcdf0eb",
+      "result_id": "368d5b42-48be-422c-970e-ebbe4434f4af"
+    },
+    {
+      "claim_id": "c296a6a7-c7d2-4044-872a-1de932dc4d35",
+      "result_id": "368d5b42-48be-422c-970e-ebbe4434f4af"
+    },
+    {
+      "claim_id": "659f6aa2-610a-474b-9bc2-9cda9f2e5452",
+      "result_id": "368d5b42-48be-422c-970e-ebbe4434f4af"
+    },
+    {
+      "claim_id": "773ca858-c7b0-4fda-ac55-03a10a837bc0",
+      "result_id": "b647773a-d330-4c3c-8bd4-abe8bc50ab32"
+    },
+    {
+      "claim_id": "77bc5db6-5533-43f3-9d79-8a10a5f591a6",
+      "result_id": "b647773a-d330-4c3c-8bd4-abe8bc50ab32"
+    },
+    {
+      "claim_id": "3366da14-ac73-441b-9b40-c65f52d03333",
+      "result_id": "b647773a-d330-4c3c-8bd4-abe8bc50ab32"
+    },
+    {
+      "claim_id": "f40e79fe-0105-49e0-a7f1-6562981663f8",
+      "result_id": "b647773a-d330-4c3c-8bd4-abe8bc50ab32"
+    },
+    {
+      "claim_id": "8952f914-1dad-4941-8c7f-baa6f6c55a4b",
+      "result_id": "b647773a-d330-4c3c-8bd4-abe8bc50ab32"
+    },
+    {
+      "claim_id": "b92b16e2-77e6-4f1e-8c04-6b73846cd415",
+      "result_id": "b647773a-d330-4c3c-8bd4-abe8bc50ab32"
+    },
+    {
+      "claim_id": "a1248ea3-150a-4351-841a-0353f78282bb",
+      "result_id": "b647773a-d330-4c3c-8bd4-abe8bc50ab32"
+    },
+    {
+      "claim_id": "e9b4d896-54ef-4886-b344-aae297540128",
+      "result_id": "b647773a-d330-4c3c-8bd4-abe8bc50ab32"
+    },
+    {
+      "claim_id": "d271f904-4542-4c71-92a8-087f8cc38084",
+      "result_id": "b647773a-d330-4c3c-8bd4-abe8bc50ab32"
+    },
+    {
+      "claim_id": "1879f5f2-1af1-4839-97bb-fb0dea3e17ae",
+      "result_id": "beffe42e-8d22-4e11-a1ac-76969b5cf3b0"
+    },
+    {
+      "claim_id": "c8a19e02-0d5c-4d32-8d42-05695d175322",
+      "result_id": "beffe42e-8d22-4e11-a1ac-76969b5cf3b0"
+    },
+    {
+      "claim_id": "74ee74cd-1efb-4cde-9830-a6d62e72713e",
+      "result_id": "beffe42e-8d22-4e11-a1ac-76969b5cf3b0"
+    },
+    {
+      "claim_id": "0024b2d4-51aa-4924-98da-a89743b6839b",
+      "result_id": "beffe42e-8d22-4e11-a1ac-76969b5cf3b0"
+    },
+    {
+      "claim_id": "4e45ddb2-e699-4685-84d6-7f437e79ed13",
+      "result_id": "d46b2d53-789e-41f7-b384-56edec68f31f"
+    },
+    {
+      "claim_id": "78db62b7-be08-4b72-8e26-e51d88237a49",
+      "result_id": "d46b2d53-789e-41f7-b384-56edec68f31f"
+    },
+    {
+      "claim_id": "59879a73-9316-4d9f-a4f3-92555c3fb484",
+      "result_id": "d46b2d53-789e-41f7-b384-56edec68f31f"
+    },
+    {
+      "claim_id": "a1c5c062-754b-47f2-b918-3477317c0827",
+      "result_id": "d46b2d53-789e-41f7-b384-56edec68f31f"
+    },
+    {
+      "claim_id": "f5b0c041-34c8-403d-ac4b-e45cdcd5df56",
+      "result_id": "d46b2d53-789e-41f7-b384-56edec68f31f"
+    },
+    {
+      "claim_id": "0f32d847-cde2-4eab-8cdb-0aae00b8f884",
+      "result_id": "8c02d44a-6088-4ff8-be73-ae307ea87f0c"
+    },
+    {
+      "claim_id": "5b4e7a15-1244-4d14-87e2-86ba4794f753",
+      "result_id": "8c02d44a-6088-4ff8-be73-ae307ea87f0c"
+    },
+    {
+      "claim_id": "469ef50b-dee3-4db1-8186-1237258d3e08",
+      "result_id": "d2bd2386-5cff-442d-99fb-b1c57c0e909f"
+    },
+    {
+      "claim_id": "56e091e4-ff70-4a4f-8fb3-3a0a2031c154",
+      "result_id": "d2bd2386-5cff-442d-99fb-b1c57c0e909f"
+    },
+    {
+      "claim_id": "9d07c759-401c-4827-b868-eee76a87104e",
+      "result_id": "d2bd2386-5cff-442d-99fb-b1c57c0e909f"
+    },
+    {
+      "claim_id": "8b104baa-5eb0-4144-89b8-63ceabf91157",
+      "result_id": "0199ddb2-70f5-4492-97dd-f9cdbba370f2"
+    },
+    {
+      "claim_id": "7bd8a693-ce23-482b-8c53-682d27737c8d",
+      "result_id": "0199ddb2-70f5-4492-97dd-f9cdbba370f2"
+    },
+    {
+      "claim_id": "16460968-06db-4820-90fb-aee1a40ed19c",
+      "result_id": "0199ddb2-70f5-4492-97dd-f9cdbba370f2"
+    },
+    {
+      "claim_id": "94b89434-27da-440c-8a9a-42af9367d028",
+      "result_id": "0199ddb2-70f5-4492-97dd-f9cdbba370f2"
+    },
+    {
+      "claim_id": "16fb43d6-402b-492f-8805-7b9541c89c40",
+      "result_id": "cc73a4c5-b0ca-4448-a152-ba6bd93c9e7d"
+    },
+    {
+      "claim_id": "621c3f4b-e85b-4bc9-9144-9074ef001df1",
+      "result_id": "cc73a4c5-b0ca-4448-a152-ba6bd93c9e7d"
+    },
+    {
+      "claim_id": "00c1c32d-0260-411d-8b20-faa74f9038c2",
+      "result_id": "cc73a4c5-b0ca-4448-a152-ba6bd93c9e7d"
+    },
+    {
+      "claim_id": "e1002960-854d-4a60-82e7-4fb748fa48fa",
+      "result_id": "cc73a4c5-b0ca-4448-a152-ba6bd93c9e7d"
+    },
+    {
+      "claim_id": "e77a42f9-345e-4ce2-87b6-d931c790d0a7",
+      "result_id": "cc73a4c5-b0ca-4448-a152-ba6bd93c9e7d"
+    },
+    {
+      "claim_id": "b2a5d752-b88b-43da-8c90-57431d014367",
+      "result_id": "cc73a4c5-b0ca-4448-a152-ba6bd93c9e7d"
+    },
+    {
+      "claim_id": "0d2fb18d-650a-4bb2-8fdc-90e81b179730",
+      "result_id": "cc73a4c5-b0ca-4448-a152-ba6bd93c9e7d"
+    },
+    {
+      "claim_id": "16c6c581-2775-4d6d-8752-2f8a02e27fdc",
+      "result_id": "cc73a4c5-b0ca-4448-a152-ba6bd93c9e7d"
+    },
+    {
+      "claim_id": "3c4a7df3-34b5-4415-a617-730c1cc37fd7",
+      "result_id": "cc73a4c5-b0ca-4448-a152-ba6bd93c9e7d"
+    },
+    {
+      "claim_id": "c4ce5e58-dece-470a-bcd1-69fda6ad236f",
+      "result_id": "73b9b500-6bcf-4b7d-ba1b-4c17fef68c59"
+    },
+    {
+      "claim_id": "3840c6ee-327b-4334-9f7e-643e92b1d08c",
+      "result_id": "73b9b500-6bcf-4b7d-ba1b-4c17fef68c59"
+    },
+    {
+      "claim_id": "1163f0eb-c34b-43c8-ac4a-fb1a7e242977",
+      "result_id": "73b9b500-6bcf-4b7d-ba1b-4c17fef68c59"
+    },
+    {
+      "claim_id": "d35b2368-289f-4803-aea2-18148a4187ee",
+      "result_id": "73b9b500-6bcf-4b7d-ba1b-4c17fef68c59"
+    },
+    {
+      "claim_id": "41b980cf-4aaf-4c06-98f1-eae9def6fa11",
+      "result_id": "73b9b500-6bcf-4b7d-ba1b-4c17fef68c59"
+    },
+    {
+      "claim_id": "0da84ba4-6ad4-4e69-b6ce-6da38f9ccac9",
+      "result_id": "73b9b500-6bcf-4b7d-ba1b-4c17fef68c59"
+    },
+    {
+      "claim_id": "e652b77b-1caa-4695-8f6c-5b302abc98f2",
+      "result_id": "4e774d30-c866-4f9b-aeab-9df29f0ceae0"
+    },
+    {
+      "claim_id": "827cf529-57d7-4fe9-8dfa-8a52dd77461c",
+      "result_id": "4e774d30-c866-4f9b-aeab-9df29f0ceae0"
+    },
+    {
+      "claim_id": "56ce0a0f-2af5-4209-b241-271e593393cf",
+      "result_id": "4e774d30-c866-4f9b-aeab-9df29f0ceae0"
+    },
+    {
+      "claim_id": "d5b32bd8-f7b6-40d5-897f-a7d6dde86fa2",
+      "result_id": "4e774d30-c866-4f9b-aeab-9df29f0ceae0"
+    },
+    {
+      "claim_id": "3a15dcae-6d7e-40e0-a3d0-3b315c9b4f32",
+      "result_id": "4e774d30-c866-4f9b-aeab-9df29f0ceae0"
+    },
+    {
+      "claim_id": "1e8a7230-9350-4a15-accb-867d033627cf",
+      "result_id": "4e774d30-c866-4f9b-aeab-9df29f0ceae0"
+    },
+    {
+      "claim_id": "0604ef27-658e-4ba3-984d-c9b484bc0cbd",
+      "result_id": "5dfacc00-81d3-4055-86c1-075b86cc8bd1"
+    },
+    {
+      "claim_id": "37cabf17-13c3-4b1a-ba8b-6522a9a68f1f",
+      "result_id": "5dfacc00-81d3-4055-86c1-075b86cc8bd1"
+    },
+    {
+      "claim_id": "bd8e68e7-2f97-4e5e-9dc5-a9c20fa812f2",
+      "result_id": "5dfacc00-81d3-4055-86c1-075b86cc8bd1"
+    },
+    {
+      "claim_id": "ccb5fcc1-935d-4c4d-bdc3-126ea9f34c04",
+      "result_id": "5dfacc00-81d3-4055-86c1-075b86cc8bd1"
+    },
+    {
+      "claim_id": "ef649e85-e940-4379-8c69-8e1e0a4fb945",
+      "result_id": "5dfacc00-81d3-4055-86c1-075b86cc8bd1"
+    },
+    {
+      "claim_id": "bb6da326-061c-431a-b383-c3533f193ff9",
+      "result_id": "5dfacc00-81d3-4055-86c1-075b86cc8bd1"
+    },
+    {
+      "claim_id": "aa7f3dbd-0e27-41a2-ab0f-cf76dfd4bdc1",
+      "result_id": "5dfacc00-81d3-4055-86c1-075b86cc8bd1"
+    },
+    {
+      "claim_id": "32366402-16b9-46af-af9c-8734b54b0ecb",
+      "result_id": "5dfacc00-81d3-4055-86c1-075b86cc8bd1"
+    },
+    {
+      "claim_id": "7f6b86a7-b500-4e75-afa1-e56196dcbaad",
+      "result_id": "5dfacc00-81d3-4055-86c1-075b86cc8bd1"
+    },
+    {
+      "claim_id": "c4f1fe56-e8ab-42d4-a7c5-43283ee73623",
+      "result_id": "5e82d057-069a-450d-a4b9-7c731263605d"
+    },
+    {
+      "claim_id": "dc85bf25-0307-4f13-9e6e-8862be547176",
+      "result_id": "5e82d057-069a-450d-a4b9-7c731263605d"
+    },
+    {
+      "claim_id": "510a90c9-37b9-4c75-a8b3-1eecc1aa80ad",
+      "result_id": "eecd81ba-5754-4c50-ae6a-d22957e45007"
+    },
+    {
+      "claim_id": "203e8400-3968-4c93-99f8-323ee77e3b0c",
+      "result_id": "e40f5a2d-fec3-4e0f-908f-9d91e33042da"
+    },
+    {
+      "claim_id": "d0ccd19f-198f-4c18-a1cb-5d60919679ce",
+      "result_id": "e40f5a2d-fec3-4e0f-908f-9d91e33042da"
+    },
+    {
+      "claim_id": "931b6444-6171-4fba-bf29-ec1cac2c01c8",
+      "result_id": "e40f5a2d-fec3-4e0f-908f-9d91e33042da"
+    },
+    {
+      "claim_id": "afd9e2d6-e30f-45d2-9c2b-51254d2623fa",
+      "result_id": "e40f5a2d-fec3-4e0f-908f-9d91e33042da"
+    },
+    {
+      "claim_id": "162620e6-7066-4264-8fab-a4050d26e667",
+      "result_id": "e40f5a2d-fec3-4e0f-908f-9d91e33042da"
+    },
+    {
+      "claim_id": "65a5b629-91b1-42ed-b05e-f14875984d68",
+      "result_id": "77af2229-7f24-4682-8356-e61ce85bbd89"
+    },
+    {
+      "claim_id": "69082441-67a1-4d09-a039-6fec40ff2b2e",
+      "result_id": "77af2229-7f24-4682-8356-e61ce85bbd89"
+    },
+    {
+      "claim_id": "c481926a-c9c3-4188-b678-ca48b9f952d4",
+      "result_id": "77af2229-7f24-4682-8356-e61ce85bbd89"
+    },
+    {
+      "claim_id": "86859f0e-b8b3-4784-9956-e33c2b3d68bd",
+      "result_id": "77af2229-7f24-4682-8356-e61ce85bbd89"
+    },
+    {
+      "claim_id": "5b62136e-8884-473f-8592-34f86e30e7cf",
+      "result_id": "81379a68-e81d-4c58-b331-5e438bd4032d"
+    }
+  ],
+  "comparisons": []
+}

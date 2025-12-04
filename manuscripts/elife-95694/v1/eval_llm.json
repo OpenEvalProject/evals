@@ -1,0 +1,156 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Blue light pulses (470 nm, 4 ms, 9 mW) delivered through fiber optics evoke RdLight1 fluorescence transients in wild-type mice expressing RdLight1 in striatal regions (NAc, DLS, VLS) but lacking opsins. These transients resemble dopamine release signals, with magnitudes of 7.0\u00b10.1% \u0394F/F in NAc and 4.5\u00b10.2% \u0394F/F in DLS, peaking ~115-129 ms after light onset and decaying with time constants of 422-516 ms. The transients scale with blue light duration and intensity, are reproducible across laboratories and striatal regions, and are specific to RdLight1 (not observed with tdTomato).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C28 provide comprehensive experimental evidence from multiple striatal regions (NAc, DLS, VLS) and two independent laboratories showing that blue light alone evokes RdLight1 fluorescence transients in the absence of opsins. The data include quantitative characterization of magnitude, kinetics, dose-response relationships, and appropriate controls (tdTomato), all supporting the core finding that blue light directly affects RdLight1 fluorescence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Multiple lines of evidence demonstrate that blue light-evoked RdLight1 transients do not reflect dopamine release: (1) wild-type mice lack opsins and dopamine neurons are not intrinsically light-sensitive; (2) transients show minimal trial-to-trial variability; (3) no short-term plasticity is observed; (4) critically, reserpine treatment (which eliminates vesicular dopamine release) abolishes spontaneous RdLight1 fluctuations but does not eliminate\u2014and actually increases\u2014blue light-evoked transients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C36 provide converging evidence that blue light-evoked RdLight1 transients are artifacts rather than dopamine signals. The reserpine experiment (C34-C36) is particularly compelling: it demonstrates pharmacological dissociation between genuine dopamine-dependent signals (which disappear) and blue light-evoked transients (which persist/increase). The lack of synaptic properties (C32-C33) and absence of biological light sensitivity (C30-C31) further support this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "RdLight1 exhibits photoactivation when exposed to blue light under wide-field illumination conditions typical of in vivo optogenetic experiments. This photoactivation manifests as dopamine-independent fluorescence increases lasting hundreds of milliseconds and is detectable at blue light powers as low as 0.3 mW, creating signals that can be mistaken for phasic dopamine release.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C5 and C37-C39 synthesize the experimental findings into the key conclusion about RdLight1 photoactivation. The characterization is well-supported by the experimental data showing the phenomenon occurs at physiologically-relevant light intensities (0.3-9 mW) and has temporal characteristics (hundreds of milliseconds decay) that mimic dopamine transients. This represents the central finding of the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C3",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "The authors argue that the RdLight1 signals attributed to cholinergic interneuron-evoked dopamine release in Mohebi et al. 2023 likely reflect photoactivation artifacts rather than genuine dopamine release, based on similarities in magnitude, timing, and dynamics. They note that the 405 nm isosbestic control used in that study has not been validated for RdLight1, and that green dopamine sensors have different isosbestic points (e.g., 440 nm).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C42-C44 present a critical reinterpretation of published work. The argument is well-supported by the current experimental data showing photoactivation under similar conditions. However, the critique regarding the 405 nm isosbestic point (C43) is valid but somewhat speculative\u2014while 405 nm has not been validated as RdLight1's isosbestic point, the authors do not provide direct evidence that 405 nm illumination fails to control for photoactivation. The comparison to green sensors (C44) is informative but indirect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C40",
+      "C41"
+    ],
+    "result": "mApple-based sensors including RdLight1 are susceptible to photoactivation (blue light-induced changes in red fluorescence). While this was previously shown to be negligible for RdLight1 in cultured cells using laser-scanning microscopy, the authors suggest that wide-field illumination used in behavioral experiments produces stronger photoactivation, consistent with prior characterization of mApple showing differential photoswitching between imaging modalities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C18 and C40-C41 provide important context about photoactivation as a known property of mApple-based sensors. The explanation for why photoactivation was not detected in the original RdLight1 characterization (C40-C41) is reasonable and supported by citations to the mApple literature, though it remains somewhat speculative. The distinction between laser-scanning and wide-field illumination is well-established for mApple (C41).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "While acetylcholine-evoked dopamine release via nicotinic receptor activation on dopamine axons is well-established in brain slices, direct evidence for this mechanism in vivo remains limited and inconsistent. Correlational evidence exists (sub-second correlations between ACh and DA release), but interventional studies manipulating ACh signaling have not consistently demonstrated large effects on dopamine dynamics in behaving animals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 and C8-C14 accurately summarize the state of the literature on ACh-evoked DA release. The distinction between in vitro evidence (well-established, C1, C8-C9) and in vivo evidence (limited, C2, C11) is appropriately drawn. The authors cite their own work showing correlations (C13) but also negative results from interventional studies (C14), providing a balanced assessment. This contextualizes why the Mohebi et al. 2023 study was significant and why its reinterpretation matters.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "The authors recommend that RdLight1 measurements be interpreted with caution when combined with optogenetics, and that future experiments investigating ACh-evoked dopamine release should include appropriate controls (e.g., RdLight1 without opsin, mutant sensors) and minimize blue light power. Alternative approaches include using GFP-based dopamine sensors with red-shifted opsins, though this has its own caveats.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C7 and C46-C50 provide reasonable recommendations based on the experimental findings. The suggested controls (C47) are appropriate and would address the photoactivation artifact. The alternative approach using GFP sensors with red opsins (C49) is sensible, and the caveat about potential opsin activation from continuous blue light (C50) shows appropriate caution. These recommendations follow logically from the demonstrated photoactivation problem.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Photoactivation is not unique to RdLight1 but is a general property of many fluorescent sensors, including other mApple-based sensors (GRAB-rDA, R-GenGAR-DA, R-GECO) and fluorophores more broadly. Different constructs show varying photoactivation characteristics. This phenomenon underlies some super-resolution imaging methods, and experiments should be designed with appropriate controls, especially when introducing novel sensors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C56 appropriately contextualize the photoactivation issue as a general concern in fluorescence imaging rather than a problem specific to RdLight1. The citations to other mApple-based sensors (C52) and to photoactivation-based imaging methods (C55) are well-supported. The recommendation for careful experimental design (C56) is a reasonable general principle. This broader perspective strengthens the manuscript's contribution beyond a single sensor critique.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C45"
+    ],
+    "result": "It remains unknown whether illumination at isosbestic wavelengths can contribute to or modify photoactivation effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C45 identifies an important open question about whether isosbestic illumination affects photoactivation. This is presented as speculation about future work rather than a tested hypothesis. While relevant to the critique of Mohebi et al. 2023's use of 405 nm controls, no experimental data are provided to address this question.",
+    "result_type": "MINOR"
+  }
+]

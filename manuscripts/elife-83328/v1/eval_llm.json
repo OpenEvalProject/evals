@@ -1,0 +1,295 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C45"
+    ],
+    "result": "Drosophila larvae modulate locomotion speed primarily by varying the interwave phase duration rather than the wave phase duration. The interwave phase correlates more strongly with speed (r = -0.74) than the wave phase (r = -0.62), and its duty factor decreases with speed. As stride duration decreases, the interwave phase shortens while wave duration remains relatively constant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C9-C12, and C45 collectively demonstrate through kinematic analysis that larvae adjust locomotion frequency primarily by modulating the interwave phase. The correlation coefficients, duty factor analysis, and phase duration relationships provide converging quantitative evidence for this differential modulation strategy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C46"
+    ],
+    "result": "Lateral transverse (LT) muscles contract synchronously across segments A2-A7 exclusively during the interwave phase, and the duration and amplitude of these contractions correlate strongly with interwave phase duration (r = 0.89) and crawling speed (r = -0.59).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C3, C14-C17, and C46 are supported by side-view muscle imaging showing synchronous LT muscle activity during the interwave phase and strong correlations between LT contraction parameters and locomotor timing. The high correlation coefficient (r = 0.89) provides robust quantitative support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C47",
+      "C48"
+    ],
+    "result": "GABAergic interneuron A31c exhibits segmentally synchronized activity during the interwave phase, receives shared descending input from neuron S10, and synapses onto ascending neurons and local neurons including A26f.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C20 and C47-C48 are supported by immunostaining confirming GABAergic identity, calcium imaging showing near-zero intersegmental lag during interwave phase, and EM connectomics revealing connectivity patterns. Multiple complementary techniques provide strong converging evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "GABAergic premotor neuron A26f is postsynaptic to A31c, exhibits segmentally synchronized activity preceding fictive forward waves, and forms inhibitory synapses onto motor neurons innervating LT muscles across multiple segments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C22-C29 are supported by EM connectomics showing A31c-A26f connectivity and A26f connections to LT motor neurons, calcium imaging demonstrating synchronized activity, and immunostaining confirming GABAergic identity. The convergence of anatomical and functional data strongly supports these findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C30",
+      "C31"
+    ],
+    "result": "A26f neuronal activity is temporally 'bookended' by A31c activity peaks from neighboring segments, consistent with inhibitory A31c-A26f synapses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C31 are supported by simultaneous dual-color calcium imaging showing the temporal relationship between A31c and A26f activity. The alternating pattern is consistent with the known GABAergic/inhibitory nature of both neurons, though the inference about functional significance is reasonable but not directly tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Optogenetic manipulation of A26f and A31c neurons bidirectionally modulates LT muscle contraction amplitude. Activation of A26f reduces LT muscle contraction, while activation of A31c increases it. Silencing either neuron produces opposite effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C36 are supported by optogenetic experiments in sideways and fillet preparations combined with muscle imaging. The bidirectional effects and complementary activation/silencing experiments provide strong causal evidence for the necessity and sufficiency of these neurons in controlling LT muscle activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C6",
+      "C49"
+    ],
+    "result": "A26f neurons regulate locomotion speed by modulating LT muscle contractions and interwave phase duration. Activation of A26f decreases interwave duration and increases speed, while inhibition increases interwave duration and decreases speed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C40, C6, and C49 are supported by optogenetic manipulation during free crawling with kinematic analysis. The consistent bidirectional effects on interwave duration and speed, combined with muscle contraction data, establish a clear causal link between A26f activity and locomotion speed control.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Activation of A31c neurons increases interwave duration and stride duration (consistent with A26f inhibition effects), but inhibition of A31c does not affect crawling kinematics, suggesting additional cell types regulate A26f activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C44 are supported by optogenetic experiments showing asymmetric effects of A31c manipulation. The lack of effect from A31c inhibition is a negative result that is properly interpreted to suggest circuit redundancy. The inference about additional cell types (C44) is reasonable given the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C50"
+    ],
+    "result": "In freely crawling third-instar larvae, locomotion speed ranges from 0.35 to 1.23 mm/s and correlates more strongly with stride frequency than stride length, similar to findings in other species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C8 and C50 are supported by direct measurements from top-view crawling assays and correlation analysis. The consistency with cited previous work in Drosophila and other species strengthens the finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C13",
+      "C78"
+    ],
+    "result": "Longitudinal muscles exhibit anterior-to-posterior propagation during forward crawling, though posterior-most segment longitudinal muscles (VL4 and DO1 in A6-A7) contract during the interwave phase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13 and C78 are supported by side-view muscle imaging data and are consistent with cited previous work. The observation about posterior segment behavior during interwave phase is noted but not extensively explored.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C21"
+    ],
+    "result": "Descending neuron S10 provides a significant plurality of synaptic input to A31c neurons across segments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C21 is supported by EM connectomics reconstruction and quantitative analysis showing S10 comprises 32% of total input to A31c in segments A2-A3 and 62% in A7-A8. The anatomical data is clear and quantified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Descending input to A31c has the potential to shape speed modulation circuit activity and synchronize A31c activity across segments. Ascending projections postsynaptic to A31c could relay motor network state to higher brain centers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C71-C73 are based on anatomical connectivity data from EM but represent speculative functional interpretations. While the connectivity patterns are established (C71 supported by data), the proposed functional roles (C72-C73) are reasonable hypotheses but lack direct experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C51",
+      "C66",
+      "C69"
+    ],
+    "result": "Similar to limbed animals, Drosophila larvae show differential modulation of locomotor cycle phases with speed, with parallels in muscle activation patterns (transverse muscles during interwave phase analogous to extensor muscles during stance phase).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51, C66, and C69 draw comparisons between larval and limbed locomotion based on the current kinematic data and extensive cited literature. The parallel is well-supported by both the presented data and comparative citations, though the mechanistic basis for the similarity remains speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C70"
+    ],
+    "result": "The similarity in locomotor dynamics between limbed and axial locomotion may reflect kinematic constraints, with the relative invariance of wave phase potentially analogous to swing phase constraints in limbed locomotion. The inhibitory circuit motif underlying phase asymmetry may be conserved across species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C52-C55 and C70 represent speculative interpretations about evolutionary and mechanical constraints. While the observations are valid, the proposed explanations about rotational inertia, evolutionary adaptation, and circuit conservation are hypotheses that lack direct experimental support in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Transverse muscles are thought to be an evolutionary innovation in Diptera, as the urbilaterian ancestor likely had only circular and longitudinal muscles. These muscles are under independent neuromodulatory control with distinct innervation patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C59 are supported by cited evolutionary, comparative, and previous circuit studies. These represent established knowledge from the literature rather than novel findings from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C67",
+      "C68"
+    ],
+    "result": "Background on vertebrate and other model systems: The MLR controls locomotion speed in vertebrates, descending excitatory neurons drive locomotion rhythm across species, and inhibitory circuits shape rhythmic activity in multiple systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C65, C67-C68 represent established knowledge from cited literature providing context for the current study. These are accurately cited background claims rather than novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Previous work established that physically restricted larvae and isolated CNS have long cycle periods (2-20 s) compared to freely crawling larvae (0.6-2 s), and that intersegmental lag scales with cycle period.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C77 accurately represent cited previous work and provide context for why the current study focused on freely crawling larvae. These are background claims supported by appropriate citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Morphological characterization of A26f and A31c neurons: A26f axons extend across multiple neuromeres, with input sites dorsally and output sites near the DL tract. A31c neurons project dorsally approximately one neuromere with inputs along the DL tract and outputs near the midline.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C84 are supported by confocal imaging, EM reconstruction, and synaptic marker analysis. These anatomical descriptions provide important characterization of the neurons of interest.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C85"
+    ],
+    "result": "Most A31c-sp+ cells in the brain are neuroblasts (Deadpan-positive) rather than mature neurons, suggesting brain expression in the driver line does not represent functional neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C85 is supported by immunostaining showing dpn expression and morphological analysis. This addresses a potential confound in the optogenetic experiments and strengthens the interpretation that behavioral effects are due to VNC neurons.",
+    "result_type": "MINOR"
+  }
+]

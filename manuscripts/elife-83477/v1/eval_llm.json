@@ -1,0 +1,280 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "The M4 mAChR is a validated drug target for psychiatric and cognitive disorders, with PAMs LY298 and VU154 showing preclinical efficacy but facing challenges including species selectivity and optimization difficulties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C5, C6, and C7 establish the clinical relevance of M4 mAChR and characterize known limitations of the PAMs studied. These are well-supported by citations to prior work and represent established knowledge in the field that provides context for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "LY298 and VU154 bind to the M4 mAChR allosteric site with similar affinities (pKB ~5.7-5.8), but display differential binding cooperativity with agonists ACh and Ipx, demonstrating probe dependence. LY298 shows stronger cooperativity with ACh (~400-fold) than VU154 (~40-fold), and both PAMs show reduced cooperativity with Ipx.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C14 present quantitative binding data from radioligand assays with clear experimental measurements and statistical analysis. The probe-dependent effects are well-documented with specific fold-change values and are consistent with prior literature (C13, C14). The data directly support the conclusion of differential allosteric modulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "In functional signaling assays (TruPath and pERK1/2), the rank order of efficacy is ACh > Ipx > LY298 > VU154, while transducer coupling follows Ipx >> ACh ~ LY298 > VU154. VU154 displays neutral cooperativity with Ipx in the TruPath assay, and both PAMs primarily modulate binding affinity rather than efficacy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C20 present comprehensive functional data from two independent signaling assays with consistent rank orders and quantitative parameters. The operational model analysis appropriately separates binding and efficacy contributions. The classification of VU154 as 'neutral' with Ipx (C19) is justified by the \u03b1\u03b2 \u2248 1 value, though the biological significance of this distinction could be further explored.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C3",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Cryo-EM structures of M4R-Gi1 complexes bound to ACh, Ipx, LY298-Ipx, and VU154-Ipx were determined at 2.4-2.8 \u00c5 resolution. The structures are nearly identical (RMSD 0.3-0.5 \u00c5) and similar to other activated class A GPCRs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C21-C23 report high-resolution cryo-EM structures with appropriate resolution metrics and validation statistics (Table 2). The structural similarity (low RMSD values) is quantitatively documented. The comparison to other GPCRs (C22) is supported by citations and provides important context for interpreting the M4 structures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Structural and simulation analysis reveals that Ipx binds with >1000-fold higher affinity than ACh due to a smaller binding pocket (63 vs 77 \u00c5\u00b3) and more stable interactions with conserved orthosteric residues including W413^6.48. GaMD simulations show ACh undergoes higher fluctuations (RMSD) and W413^6.48 samples different conformational spaces between ACh- and Ipx-bound states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C26 and C56-C65 integrate structural observations with GaMD simulation data to explain binding affinity differences. The pocket volume calculations (C62) and interaction analyses (C58-C60) are directly observable from structures. The simulation results (C25, C26, C64, C65) provide quantitative dynamics data that complement static structures. The mechanistic interpretation linking stability to affinity (C24) is well-supported by the combined data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Both PAMs bind in the extracellular vestibule with three conserved interactions (\u03c0-stacking with F186^45.51 and W435^7.35, H-bonds with Y439^7.39 and Y89^2.61). However, LY298 shows more stable binding (RMSD 0.8-2.1 \u00c5) than VU154 (RMSD 1.5-15 \u00c5) in GaMD simulations. Mutagenesis of key residues abolishes PAM activity, validating their importance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C32 combine structural observations (C27, C29) with simulation dynamics (C28, C30) and mutagenesis validation (C31). The differential stability between LY298 and VU154 is quantitatively documented and provides a molecular explanation for their different pharmacological profiles. The mutagenesis data (C31) strongly validates the structural observations, though the complete abolishment suggests these are critical rather than modulatory interactions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C74"
+    ],
+    "result": "PAMs manifest higher cooperativity with less stable agonists. In GaMD simulations, ACh shows higher dynamics (RMSF 2.13 \u00c5) than Ipx (0.88 \u00c5), and PAM binding reduces ACh dynamics (to 1.23 \u00c5 with LY298, 1.82 \u00c5 with VU154), providing a mechanism for probe dependence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33, C34, and C74 present a mechanistic model for probe dependence supported by quantitative RMSF data from simulations. The interpretation that PAMs stabilize less stable agonists is logical and consistent with the binding cooperativity data. However, this mechanism represents one plausible explanation and alternative mechanisms (e.g., conformational selection) are not fully excluded.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C35",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "LY298 is a stronger PAM-agonist than VU154 because it better stabilizes the active conformation of M4 mAChR. GaMD simulations show LY298 undergoes lower RMSD fluctuations, better stabilizes W435^7.35 and W413^6.48 conformations, and maintains active receptor conformation longer after G protein removal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35 and C83-C86 integrate simulation data showing differential stabilization of activation motifs by the two PAMs. The simulations with and without G protein (C85, C86) provide mechanistic insight into allosteric agonism. The interpretation linking stability to efficacy (C35) is consistent with the pharmacological data (C15), though the simulations represent computational predictions that would benefit from experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "The rotamer toggle switch residue W413^6.48 is important for agonist and PAM-agonist efficacy but not for allosteric modulation. W413A mutation impairs ACh efficacy but only modestly reduces LY298 efficacy, while increasing functional cooperativity (\u03b1\u03b2) between ACh and LY298 by 20-fold to >3600.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C39 present surprising mutagenesis results showing differential effects on efficacy versus cooperativity. The data (C36, C37) are clearly presented with statistical analysis. The interpretation (C38) that W413^6.48 affects efficacy but not cooperativity is well-supported. The mechanistic proposal (C39) about conformational dynamics is reasonable but somewhat speculative, as it extends beyond the direct experimental observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "VU154 shows species selectivity, with 10-fold higher affinity at mouse M4 mAChR compared to human. Three residues differ in the transmembrane domain (V91L, D432E, T433R), and mutations at D432E and T433R in human M4 increase VU154 affinity and restore stable binding dynamics similar to LY298, demonstrating that receptor dynamics determine allosteric modulator selectivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C46 systematically investigate species selectivity through comparative pharmacology (C40, C42), sequence analysis (C41), mutagenesis (C43, C44), and simulations (C45). The data show clear species differences and identify key residues. The GaMD simulations on mutants (C45) elegantly demonstrate that mutations restore VU154 stability. The conclusion about receptor dynamics (C46) is well-supported by the integrated data, though the contribution of individual residues could be further dissected.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "ACh is more efficacious than Ipx despite having weaker binding and less stable interactions, a paradox potentially explained by ACh-bound M4 mAChR more readily sampling transducer-engaging conformations or having faster G protein turnover due to forming a less stable ternary complex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C47 correctly identifies the efficacy-affinity paradox from the data. However, C48 and C49 present speculative mechanistic explanations supported only by citations to prior work, not by direct experimental evidence in this study. The proposed mechanisms (conformational sampling, G protein turnover) are plausible but remain hypothetical without kinetic measurements or additional validation. The simulations performed do not directly test these specific mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C66",
+      "C67"
+    ],
+    "result": "Two PAMs with different pharmacological profiles (LY298 and VU154) bind to very similar receptor conformations in static structures, but 3DVA and GaMD simulations reveal differential dynamics. Complexes with high-affinity agonists or high-cooperativity PAMs exhibit lower dynamic fluctuations, suggesting GaMD simulations are valuable for drug discovery.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50, C66, and C67 highlight the importance of dynamics beyond static structures. The 3DVA analysis (C66) and GaMD simulations provide complementary evidence for differential dynamics despite structural similarity. The conclusion about simulation utility (C51) is reasonable but somewhat promotional. The correlation between stability and cooperativity (C67) is well-demonstrated, though causality is inferred rather than proven.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Stabilizing the ECV region by PAMs likely leads to increased efficacy through reciprocal allosteric coupling with G proteins. The two-state receptor model predicts that PAMs show greater modulation with more efficacious agonists, consistent with ACh being better modulated than Ipx. Conformational dynamics between agonist and receptor are important for functional signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52 and C53 present mechanistic interpretations supported by prior work (citations) and consistent with the current data. The two-state model explanation (C53) fits the observed probe dependence. However, these represent theoretical frameworks applied to the data rather than direct experimental tests. Claim C54 is a general statement supported by multiple citations that contextualizes the findings within broader GPCR literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C4"
+    ],
+    "result": "Orthosteric and allosteric ligand-receptor-transducer complex stability, mediated by conformational dynamics, plays a vital role in determining affinity, efficacy, cooperativity, probe dependence, and species variability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C4 represents the overarching conclusion of the study, integrating findings from multiple experimental approaches (binding, functional assays, structures, simulations, mutagenesis). The claim is well-supported by the comprehensive data showing correlations between complex stability and various pharmacological parameters. This represents a significant conceptual advance in understanding GPCR allostery, though the mechanistic links between stability and some parameters (e.g., species variability) are more correlative than causally proven.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C55"
+    ],
+    "result": "The M4R-Gi1 structures in this study are of higher quality than those reported by Wang et al., 2022, with better density and modeling in orthosteric and allosteric sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C55 is supported by detailed comparison of map quality and DAQ scores (Figure 2\u2014figure supplement 5). The authors provide objective metrics showing mismodeling in the prior structures. This quality assessment is important for establishing the reliability of the current structures, though the comparative criticism could be stated more diplomatically.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Detailed structural analysis reveals the conformational changes upon activation, including tyrosine lid closure, W435^7.35 rotamer changes, ECV contraction, and TM5-TM6 interface formation. PAM binding has minimal impact on ECL conformations but stabilizes W435^7.35 in a vertical position (LY298) or allows alternation between conformations (VU154).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C82 provide detailed structural and dynamic characterization of activation mechanisms. The structural observations (C75-C79) are directly supported by the cryo-EM data with quantitative measurements. The simulation results (C71-C73) complement the structures. The mutagenesis validation (C68, C69) supports the functional importance of observed interactions. The interpretation about shared activation mechanisms below W413^6.48 (C82) is well-reasoned from the structural comparisons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Systematic mutagenesis reveals that aromatic residues linking orthosteric and allosteric sites affect binding cooperativity, while residues affecting LY298 efficacy overlap with those affecting ACh efficacy. LY298 signaling requires a functional orthosteric site, consistent with thermodynamic reciprocity. Key residues (Y89^2.61, N423^6.58, W435^7.35, W440^7.40) significantly affect functional modulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C91 summarize extensive mutagenesis data from current and prior studies (Table 5). The identification of residue networks affecting different pharmacological parameters is well-documented. The interpretation about thermodynamic reciprocity (C90) is supported by the data and appropriate citations. However, the analysis relies heavily on prior work, and some mutants show complex effects that are not fully explained by simple models.",
+    "result_type": "MAJOR"
+  }
+]

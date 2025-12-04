@@ -1,0 +1,297 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "KIS regulates genome-wide exon usage during neuronal differentiation. RNA-seq analysis of KIS knockdown in cortical neurons revealed that KIS affects both exon inclusion and skipping with a bias toward inclusion (6.3% vs 2%), with 1141 exons upregulated and 1106 downregulated. Exons upregulated by KIS are enriched in genes encoding synaptic proteins and RNA-binding proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C49-C59 are well-supported by RNA-seq data (Figure 1), qRT-PCR validation (C50, C51), and gene ontology analyses (C53, C58, C59). The experimental design includes appropriate controls (shCtrl vs shKIS) with triplicate samples, and statistical significance is demonstrated (FDR <0.05). The enrichment of KIS-upregulated exons among those increasingly used during differentiation (C54) provides strong functional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "KIS phosphorylates PTBP2 at multiple serine residues, with Ser308 being the key phosphorylation site. Phosphoproteomics identified 9994 phospho-sites in 2743 proteins, with PTBP2 Ser308 among the top phosphosites (log2FC = 2.36). In vitro kinase assays confirmed Ser308 as critical for PTBP2 phosphorylation by KIS, with hierarchical phosphorylation suggested.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C61-C65 are strongly supported by complementary approaches: quantitative phosphoproteomics (C61-C63) and in vitro kinase assays (C64). The hierarchical phosphorylation pattern (C65) is appropriately labeled as inferred from data in Figure 2\u2014figure supplement 1C. The use of kinase-dead mutant (K54A) as a control strengthens the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "KIS-phosphorylated proteins are enriched in splicing regulators and RNA-binding proteins that decrease mRNA binding upon phosphorylation. GSEA analysis showed enrichment in regulation of splicing, RNA binding, and PTBP1/2 interactors, suggesting KIS phosphorylation promotes dissociation of protein complexes from mRNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C68 are supported by GSEA analysis (Figure 2C, 2D) comparing the KIS phosphoproteome to published RNA-interactomic data. The inference that KIS promotes dissociation of protein complexes from mRNA (C68) is appropriately cautious ('likely acts') and is supported by the directional enrichment (decreased binding upon phosphorylation, but not increased binding).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "KIS counteracts PTBP2 activity in alternative splicing. PTBP2-inhibited exons are significantly enriched (FDR = 0.001) among KIS-activated exons. KIS knockdown increased exclusion of CAMK2B exons 13 and 16 approximately fourfold without affecting expression levels of PTBP2, MATR3, or hnRNPM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C72 are well-supported by GSEA analysis (C69, Figure 3A) and RT-PCR validation (C71, Figure 3B). The control experiment showing no change in expression levels of splicing factors (C72) is critical for ruling out transcriptional effects and strengthens the conclusion that KIS acts post-translationally. The statistical significance (FDR = 0.001) is robust.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "KIS phosphorylation of PTBP2 regulates PSD95 expression through control of DLG4 exon 18 splicing. KIS expression decreased exon 18 exclusion in a kinase-dependent manner. Phospho-null PTBP2 (3SA) reduced PSD95 levels while phosphomimetic PTBP2 (3SD) had no effect. KIS rescued PTBP2-mediated PSD95 reduction in a kinase-dependent and phosphosite-dependent manner.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C79 are strongly supported by multiple complementary approaches: fluorescent reporter assays (C73, Figure 3C), immunofluorescence quantification (C74-C76, Figure 3D), and co-transfection experiments (C77-C79). The use of kinase-dead (K54A) and phospho-null (3SA) mutants as controls is rigorous. The convergence of evidence from reporter assays and endogenous protein measurements strengthens the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "KIS and PTBP2 display opposing functional interactions in synaptic spine maturation. PTBP2 overexpression reduced spine density, while phosphomimetic PTBP2 (3SD) resembled controls. KIS depletion hampered spine maturation, while PTBP2 knockdown drastically reduced mature spines. Double-knockdown of KIS and PTBP2 attenuated the effects of single knockdowns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C86 are well-supported by spine density analysis in hippocampal neurons (Figure 4A, 4B). The use of phosphomutants (C81, C82) provides mechanistic insight. The genetic interaction experiment (C86) showing that double-knockdown attenuates single knockdown effects is particularly strong evidence for opposing functions. Statistical significance is demonstrated with appropriate tests (Mann-Whitney). The consistency with published data (C80) adds credibility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "KIS phosphorylation disrupts PTBP2 protein-protein interactions with co-regulators. Co-transfection with KIS decreased PTBP2 binding to MATR3 and hnRNPM in a kinase-dependent manner, as shown by co-immunoprecipitation. FRET analysis confirmed reduced interaction between PTBP2 and hnRNPM in KIS-transfected neurons compared to kinase-dead mutant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C91 are strongly supported by two orthogonal approaches: co-immunoprecipitation (C87-C89, Figure 5A) and FRET analysis (C90, Figure 5B). The use of kinase-dead mutant (K54A) as a control in both assays is rigorous. The convergence of evidence from biochemical and live-cell imaging approaches strengthens the conclusion that KIS phosphorylation disrupts protein-protein interactions (C91).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "KIS phosphorylation of PTBP2 reduces its RNA-binding capability. CLIP assays showed that phosphomimetic PTBP2 (3SD) bound much less endogenous RNA and reporter mRNA compared to wild-type or phospho-null (3SA) PTBP2. Co-expression of KIS, but not kinase-dead mutant, reduced reporter mRNA levels in PTBP2 immunoprecipitates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C96 are well-supported by CLIP assays using both endogenous RNA (C92, Figure 6A) and a specific reporter (C93-C95, Figure 6B). The use of phosphomutants and kinase-dead controls is rigorous. The inference that phosphorylation of linker regions affects RRM-RNA interactions (C96) is appropriately cautious and supported by the experimental data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "AlphaFold2 predicts structural alterations in phosphomimetic PTBP2 mutants affecting RRM2. Phosphomimetic mutations (S178D, 3SD) are predicted to cause structural changes in RRM2, the minimal splicing repressor domain, including altered spatial orientation of Tyr244, a residue critical for co-regulatory protein interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C97-C99 rely on AlphaFold2 predictions (Figure 6C), which the authors acknowledge are not yet reliable for predicting structures with post-translational modifications. While the predictions are interesting and consistent with experimental observations, they remain computational predictions that require experimental validation. The authors appropriately note limitations of AlphaFold2 for phosphorylated residues in unstructured regions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C46",
+      "C47",
+      "C50",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "KIS expression increases during brain development and neuronal differentiation, inversely correlating with PTBP2 levels. KIS is upregulated during postnatal development and reaches maximal levels in mature brain and at 18 DIV in cortical cultures. This inverse expression pattern with PTBP2 suggests a molecular switch linking transcriptional and alternative exon usage programs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C46-C47, C50, C118-C120 are supported by qRT-PCR data (Figure 1B) and citations to published literature. The expression pattern is well-documented. The inference of a molecular switch (C120) is appropriately cautious and is supported by the functional data showing opposing activities of KIS and PTBP2. However, the claim would be strengthened by direct measurement of both proteins simultaneously during development.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C3",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "KIS contains a U2AF homology motif (UHM), a protein-recognition domain common to spliceosomal components. KIS is the only known protein kinase with a UHM, which shares 42% sequence similarity with U2AF65 and mediates protein-protein interactions but has lost RNA-binding ability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C42-C44 are well-established in the literature and supported by citations. The structural characterization of KIS and its UHM domain is well-documented. These claims provide important context for understanding KIS function in splicing regulation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C60"
+    ],
+    "result": "KIS knockdown does not affect transcript levels of splicing regulators that change during cortical neuron differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C60 is supported by RNA-seq analysis (Figure 2\u2014figure supplement 1A). This is an important control showing that KIS does not regulate splicing by changing expression of other splicing factors, supporting a post-translational mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "KIS may have a role in tumorigenesis through phosphorylation of PTBP1. Ser178 and Ser434 are conserved in PTBP1, and KIS has been implicated in gastric and hepatocellular cancer, with enrichment of splicing factors including PTBP1 in the KIS interactome in liver cancer cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C100-C105 are largely speculative (C101 is explicitly labeled as such). While the sequence conservation (C100) is factual and the cancer associations (C102-C105) are supported by citations, the connection between KIS phosphorylation of PTBP1 and tumorigenesis remains hypothetical. This represents an interesting direction for future research but is not directly tested in this manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "SUGP1, a spliceosome component that interacts with U2AF2 and plays a role in branch-site recognition, is highly enriched in the KIS phosphoproteome. SUGP1 shares homology with SUGP2, which interacts with PTBP1 RRM2, and has been implicated in cancer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C113 are supported by phosphoproteomics data (C109, Figure 2A) and citations to published literature (C107-C108, C110-C113). This provides additional context for KIS function in splicing regulation and suggests potential mechanisms beyond PTBP2 phosphorylation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C122",
+      "C123"
+    ],
+    "result": "KIS and PTBP2 show high expression variability at the single-cell level in hippocampal neurons, suggesting that differences in their expression could increase protein isoform variability and expand diversity in neural circuits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122-C123 are supported by single-cell transcriptomic data (Figure 6\u2014figure supplement 1B). The inference that expression variability could increase isoform diversity (C123) is appropriately cautious and is supported by the functional data showing that KIS and PTBP2 regulate alternative splicing. This provides an interesting perspective on potential cell-to-cell variability in splicing programs.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C45",
+      "C48",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C121"
+    ],
+    "result": "Background claims establishing the importance of alternative splicing in neuronal development and the role of PTBP1/2 as master regulators of neuronal fate, along with established properties of KIS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C41, C45, C48, C114-C117, C121 are background knowledge supported by citations to published literature. These claims provide essential context for the study but do not represent new findings from this manuscript.",
+    "result_type": "MINOR"
+  }
+]

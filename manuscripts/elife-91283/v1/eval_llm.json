@@ -1,0 +1,232 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "The current 300 mg (5 mg/kg) tafenoquine dose is insufficient for cure in all adults, and increasing to 450 mg (7.5 mg/kg) would halve vivax recurrence risk by four months. This conclusion is based on individual patient pharmacometric meta-analysis of pre-registration clinical trials demonstrating a clear dose-response relationship.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C52, C53, and C54 collectively demonstrate suboptimal efficacy of the current dose through pharmacometric modeling of pooled individual patient data. The dose-response relationship is characterized with statistical rigor (C19-C21, C28), and multiple independent datasets (DETECTIVE, INSPECTOR) support the weight-based dosing relationship (C16-C21, C35-C37). The meta-analysis methodology appears sound with sensitivity analyses confirming robustness (C30-C33).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C57"
+    ],
+    "result": "Clinical trials of higher tafenoquine doses (7.5 mg/kg) should be conducted to assess safety and tolerability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3 and C57 represent a logical recommendation following from the demonstrated suboptimal efficacy of current dosing (C1, C53). However, this is a recommendation for future work rather than a current finding. The recommendation is justified given the efficacy data, but the safety profile at higher doses remains uncharacterized (C4, C7, C51, C55).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C7",
+      "C8",
+      "C48",
+      "C50",
+      "C51",
+      "C55"
+    ],
+    "result": "The haemolytic safety profile of tafenoquine at different doses in G6PD deficient patients is poorly characterized. Available data for 300 mg comprises only 3 heterozygous females with >40% enzyme activity, and comparative risks between 5 mg/kg and 7.5 mg/kg doses are unknown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C7, C8, C48, C50, C51, and C55 consistently document the lack of safety data for dose-response relationships in G6PD deficiency. The specific citation of only 3 patients (C8) from Rueangweerayut et al., 2017 provides concrete evidence of data paucity. This represents a critical knowledge gap that limits definitive dosing recommendations despite clear efficacy benefits.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Tafenoquine may pose higher haemolytic risk than primaquine in G6PD deficient patients due to its long elimination half-life (approximately 16 days), which prevents drug discontinuation once administered, unlike primaquine which can be stopped and has short-lived effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C13 present a logical pharmacological argument based on established pharmacokinetic properties. The 16-day half-life (C12) is well-documented, and the inference that this prevents effective drug discontinuation (C13) is sound. The comparison to primaquine (C11) is based on established knowledge. However, the claim that tafenoquine has \"higher risk\" (C10) is qualified as conditional (\"if not used appropriately\") and represents inference rather than direct evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Reanalysis of the DETECTIVE phase 2 trial accounting for body weight variation shows odds ratios of 0.67 (95% CI 0.58-0.76) at 6 months and 0.62 (95% CI 0.51-0.72) at 4 months per mg/kg increase, consistent with pooled meta-analysis results.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C21 provide detailed statistical reanalysis of DETECTIVE data with specific effect estimates and confidence intervals. The consistency between 4-month results and the pooled dataset (C21) provides internal validation. The authors appropriately note limitations including small sample size (C16: n=57 and n=56), geographic heterogeneity (C17), and confounding by long-latency strains (C18). The statistical approach (logistic regression accounting for body weight) is methodologically sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "In the INSPECTOR study, treatment failure rates were 67% in patients \u226469kg versus 91% in patients >69kg, with an odds ratio of 5.3 (95% CI 1.0-27.5; P=0.07) for failure in heavier patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C35-C37 present data from the INSPECTOR study showing higher failure rates in heavier patients, consistent with weight-based underdosing. However, the wide confidence interval (1.0-27.5) and non-significant p-value (0.07) indicate substantial uncertainty. The authors appropriately note that \"p-value >0.05 does not prove the null hypothesis,\" but the evidence is suggestive rather than definitive. The direction of effect supports the main hypothesis but statistical power is clearly limited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C27",
+      "C28"
+    ],
+    "result": "Terminal elimination half-life is not correlated with mg/kg dose, and when adjusting for mg/kg dose, AUC shows no clear relationship with recurrence odds (adjusted OR 95% CI: 0.64-1.23).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27 and C28 demonstrate that mg/kg dose is the primary predictor of efficacy rather than pharmacokinetic parameters like AUC or half-life. The statistical analysis appropriately adjusts for dose to assess independent effects. The wide confidence interval crossing 1.0 (C28) indicates no residual association after dose adjustment. This supports the authors' argument that simple weight-based dosing is appropriate and that AUC-based thresholds (criticized in their response) are not independently predictive.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Methaemoglobin is a biomarker of tafenoquine efficacy, with higher day 7 MetHb levels correlating with lower recurrence probability (after dose adjustment). Each additional mg/kg increases day 7 MetHb by 19% (95% CI: 17-21%). This relationship, prespecified before meta-analysis, is consistent across 8-aminoquinolines (tafenoquine, primaquine, pamaquine) over 80 years of studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C44 present a mechanistic biomarker argument with strong methodological features: prespecification (C43), dose-adjusted correlation (C41), quantified dose-MetHb relationship (C44), and cross-drug consistency (C39, C42). The prespecification is particularly important for avoiding post-hoc rationalization. However, the causal mechanism (reactive intermediates, C40) remains inferential. The biomarker relationship supports the efficacy findings but does not independently establish optimal dosing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "The choice of 4-month versus 6-month follow-up endpoint is justified because >90% of P. vivax relapses occur within 4 months in tropical regions, and results are nearly identical at both timepoints. Longer follow-up increases sensitivity but decreases specificity due to reinfections.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C33 provide methodological justification for endpoint selection with supporting data (C31: >90% relapses within 4 months) and sensitivity analysis (C33: similar results at 6 months). The trade-off between sensitivity and specificity (C32) is appropriately acknowledged. This addresses a methodological criticism and demonstrates robustness of findings to endpoint choice.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C34",
+      "C47"
+    ],
+    "result": "The TEACH pediatric study had a mean tafenoquine dose of approximately 7.0 mg/kg but was a single-arm, non-randomized study without a control group, limiting causal inference about efficacy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34 and C47 appropriately critique the TEACH study's design limitations. The calculation of mean dose (C34) from reported body weights is straightforward. The identification of single-arm design without controls (C47) correctly notes that \"efficacy\" cannot be definitively established without comparison. This is a valid methodological criticism of using TEACH to validate dosing approaches.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C45"
+    ],
+    "result": "The Gini criterion used in CART analysis selects the threshold that equally balances sensitivity and specificity for continuous covariates with continuous outcome relationships, which may not represent a clinically optimal threshold.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C45 presents a methodological critique of CART-based threshold selection. The statistical description of the Gini criterion is accurate, and the accompanying figure (Figure 1) illustrates how this criterion would select a threshold at probability=0.5. This is a valid criticism of using CART to identify \"clinically relevant\" AUC thresholds, as statistical optimality does not necessarily correspond to clinical optimality.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Primaquine has had no regulatory studies, yet WHO approves 7 mg/kg for Southeast Asia, and pooled meta-analysis shows this dose is clearly more efficacious than 3.5 mg/kg.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C24 provide context comparing tafenoquine dose optimization to primaquine. The lack of regulatory studies for primaquine (C22) is verifiable historical fact. WHO approval of 7 mg/kg (C23) and meta-analysis evidence (C24, Commons et al., 2023) support dose optimization based on observational data. This contextualizes the authors' argument that dose optimization can proceed without formal regulatory trials.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C5",
+      "C6"
+    ],
+    "result": "Most antimalarial drugs have required dose optimization after initial introduction, and tafenoquine is likely not an exception.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5 and C6 present a general pattern in antimalarial drug development. C5 is a verifiable historical claim about drug development, while C6 is an inference applying this pattern to tafenoquine. This provides contextual justification for reconsidering initial dosing but does not constitute direct evidence. The inference is reasonable given the efficacy data presented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C9",
+      "C14",
+      "C15",
+      "C49"
+    ],
+    "result": "Tafenoquine is restricted to patients with G6PD activity >70%, but high doses up to 15 mg/kg are well-tolerated in G6PD normal individuals (the majority of patients), and preventing relapse provides substantial health benefits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C14, C15, and C49 establish the safety context for dose optimization. Current restrictions (C9, C49) are documented regulatory facts. Tolerability up to 15 mg/kg in G6PD normal patients (C14, Watson et al., 2022) provides safety margin for dose increases. Health benefits of relapse prevention (C15, Dini et al., 2020) justify pursuing optimization. These claims collectively support the risk-benefit argument for higher doses in appropriate patients.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C25"
+    ],
+    "result": "The statistical analysis code is openly accessible.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C25 addresses reproducibility and transparency. The manuscript references specific line numbers in RMarkdown files and GitHub repositories. This is verifiable and represents good scientific practice, though it is a methodological detail rather than a scientific finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C56"
+    ],
+    "result": "Tafenoquine's development and regulatory approval has provided a critical alternative for vivax radical cure in endemic countries.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C56 is a contextual statement about tafenoquine's public health importance. This is verifiable through regulatory approvals and represents established knowledge rather than a novel finding. It provides context for why dose optimization matters but is not itself a research result.",
+    "result_type": "MINOR"
+  }
+]

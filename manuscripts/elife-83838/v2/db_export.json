@@ -1,0 +1,1869 @@
+{
+  "submission": {
+    "id": "52e7a6f5-1925-4507-bb36-5dc03ce009e8",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-04T04:53:52.209833Z",
+    "updated_at": "2025-12-04T04:53:52.209833Z"
+  },
+  "content": [
+    {
+      "id": "add819e2-0c31-408d-9f7a-acf063b5c800",
+      "submission_id": "52e7a6f5-1925-4507-bb36-5dc03ce009e8",
+      "content_type": "manuscript",
+      "content_text": "# White matter structural bases for phase accuracy during tapping synchronization\n\n## Authors\n\n- Pamela Garcia-Saldivar<sup>1</sup> ([ORCID: 0000-0003-3274-4955](https://orcid.org/0000-0003-3274-4955))\n- Cynthia de Le\u00f3n<sup>1</sup> ([ORCID: 0000-0002-4488-2864](https://orcid.org/0000-0002-4488-2864))\n- Felipe A Mendez Salcido<sup>1</sup> ([ORCID: 0000-0002-1697-5203](https://orcid.org/0000-0002-1697-5203))\n- Luis Concha<sup>1</sup> ([ORCID: 0000-0002-7842-3869](https://orcid.org/0000-0002-7842-3869)) \u2020\n- Hugo Merchant<sup>1</sup> ([ORCID: 0000-0002-3488-9501](https://orcid.org/0000-0002-3488-9501)) \u2020\n\n### Affiliations\n\n1. Institute of Neurobiology, Universidad Nacional Aut\u00f3noma de M\u00e9xico, Campus Juriquilla Quer\u00e9taro Mexico ([ROR:01tmp8f25](https://ror.org/01tmp8f25))\n2. International Laboratory for Brain, Music and Sound (BRAMS) Montreal Canada ([ROR:05yfz9t60](https://ror.org/05yfz9t60))\n\n\u2020 Corresponding author\n\n## Abstract\n\nWe determined the intersubject association between the rhythmic entrainment abilities of human subjects during a synchronization-continuation tapping task (SCT) and the macro- and microstructural properties of their superficial (SWM) and deep (DWM) white matter. Diffusion-weighted images were obtained from 32 subjects who performed the SCT with auditory or visual metronomes and five tempos ranging from 550 to 950 ms. We developed a method to determine the density of short-range fibers that run underneath the cortical mantle, interconnecting nearby cortical regions (U-fibers). Notably, individual differences in the density of U-fibers in the right audiomotor system were correlated with the degree of phase accuracy between the stimuli and taps across subjects. These correlations were specific to the synchronization epoch with auditory metronomes and tempos around 1.5 Hz. In addition, a significant association was found between phase accuracy and the density and bundle diameter of the corpus callosum (CC), forming an interval-selective map where short and long intervals were behaviorally correlated with the anterior and posterior portions of the CC. These findings suggest that the structural properties of the SWM and DWM in the audiomotor system support the tapping synchronization abilities of subjects, as cortical U-fiber density is linked to the preferred tapping tempo and the bundle properties of the CC define an interval-selective topography.\n\n## Introduction\n\nMoving in synchrony with regular musical events (i.e., beat) is a basic and generalized human ability that can reach sophisticated levels in professional percussionists (Honing et al., 2015; Merchant et al., 2015b). Indeed, humans are extremely sensitive to auditory regularities and can entrain to auditory beats across a wide range of tempos, as well as use timed movements of different body parts (such as finger or foot taps or body swaying) to keep the beat (Mendoza and Merchant, 2014; Repp and Su, 2013). A classical task used to study rhythmic entrainment is the synchronization-continuation task (SCT), where subjects first entrain their tapping to a set of isochronous stimuli, also known as a metronome, and then continue tapping without the periodic stimulus using an internal clock (Merchant et al., 2008a; Wing, 2002; Wing and Kristofferson, 1973). In this type of task, humans show negative asynchronies, namely they tap a few milliseconds before the metronome, supporting the notion that entrainment depends on a predictive internal beat that is phase-locked to the stimuli (Lenc et al., 2021; Repp and Su, 2013; Zarco et al., 2009). Neurophysiological and functional imaging studies have shown that the internal beat representation during an SCT rests in the motor system, including the basal ganglia and supplementary motor regions (Bartolo et al., 2014; Merchant et al., 2013a; Merchant and Averbeck, 2017; Rao et al., 2001; S\u00e1nchez-Moncada et al., 2024). These areas produce a regenerating rhythmic signal (Crowe et al., 2014; G\u00e1mez et al., 2019; Merchant et al., 2015a) that dynamically interacts with the auditory areas, creating audiomotor loops where the motor prediction of the beat is flexibly compared and adjusted depending on changes in the input stream of rhythmic stimuli to phase-lock sensory and motor signals (Comstock et al., 2018; Merchant and Honing, 2014b; Patel and Iversen, 2014). In addition, neurons in the supplementary motor areas (SMAs) are tuned to the tempo duration of tapping (Merchant et al., 2014a; Merchant et al., 2013b), giving rise to interval-specific circuits that define a chronotopic map with short preferred intervals in the anterior portion and long preferred intervals in the posterior portion of the medial premotor areas (Protopapa et al., 2019; Merchant et al., 2024b).\n\nThe existence of neural circuits with preferred intervals comprising chronotopic maps is consistent with the human flexibility to tap in phase (with asynchronies close to zero) and high precision to isochronous stimuli over a wide range of interstimulus-onset intervals (ISIs), spanning from 400 to 1200 ms (Mates, 1994; Repp, 2005). Within this window, subjects demonstrate a spontaneous rhythmic tempo, which corresponds to the interval produced naturally when asked to tap in without external cues (McAuley et al., 2006; Zamm et al., 2018). This spontaneous or preferred tempo is around 600\u2013750 ms in human adults (Fischl, 2012; Fraisse, 1978, but see Parncutt, 1994), but is faster in early childhood and slower in late adulthood (McAuley et al., 2006). A recent study demonstrated that the perception of rhythmic stimuli also has a preferred tempo, with an optimal sampling rate of ~1.4 Hz (ISI of 714 ms) in audition and ~0.7 Hz (ISI of 1428 ms) in vision. Furthermore, motor tapping helps to synchronize the temporal fluctuations of attention with maximal effects at ~1.7 Hz (ISI of 588 ms), but only for the auditory modality (Zalta et al., 2020). These findings support the notion that ongoing motor activity shapes attention and beat perception, as it imposes temporal constraints on the sampling of sensory information within a narrow frequency range (Morillon et al., 2019). Hence, the audiomotor system is built to optimally work at a preferred tempo.\n\nAlthough rhythmic entrainment is prevalent across all human cultures and is a natural behavior for social interaction (Nettle, 2000; Jacoby et al., 2024), there are wide individual differences in the period (inter-tap interval) and phase (asynchronies) of movement synchronization. There are subjects who lack musical training, yet spontaneously synchronize to rhythmic stimuli ranging from strictly periodic metronomes to complex musical pieces, with performance comparable to that of trained musicians (Scheurich et al., 2018; Tranchant et al., 2016). Conversely, there are poor synchronizers (around 10% of the population) that show low period accuracy and large asynchronies to isochronous metronomes and musical excerpts (Phillips-Silver et al., 2011; Sowi\u0144ski and Dalla Bella, 2013; Tranchant et al., 2016). Furthermore, non-musicians synchronize less flexibly and less precisely across tempos than musicians (Scheurich et al., 2018). Hence, both genetic and learning factors influence the beat-entrainment abilities of humans. A large-scale genome-wide association study (GWAS) recently demonstrated a highly polygenic architecture of the human capacity to synchronize to a musical beat. The GWAS phenotype for beat synchronization was related to performance in beat synchronization tasks and rhythm perception tasks (Niarchou et al., 2022). Nevertheless, genetic influences account for only a small portion of human variation in beat synchronization, while environmental influences are the primary drivers of rhythmic accuracy. In fact, functional imaging has revealed that individual differences in beat perception depend on activation differences in the SMA and the posterior auditory cortex (Grahn and McAuley, 2009). In addition, the putamen, SMA, and auditory cortex show greater functional connectivity during rhythm perception, with larger modulation for musicians than non-musicians (Grahn and Rowe, 2009; Grahn and Rowe, 2013). Consequently, the magnitude of the anatomofunctional association between the auditory and motor control areas of the cerebral cortex seems to covary with the individual difference in how humans perceive and entrain to simple regular beats. Such brain networks rely on the structural connectivity provided by white matter, which can be evaluated through diffusion-weighted imaging (DWI). Long-range anatomical connectivity is supported by deep white matter (DWM) bundles, while short-range connectivity is achieved through fibers that run tangentially to the cortical surface and connect adjacent and proximal cortical regions. These fibers are collectively termed U-fibers due to their shape (Sch\u00fcz and Braitenberg, 2002; Schmahmann et al., 2006, Shastin et al., 2022). In this work, we individually analyze the role of these two forms of connectivity in rhythmic entrainment abilities. We hypothesize that if the cortical connectivity of the audiomotor system is defining rhythmic entrainment abilities, then individual differences in tapping synchronization should covary with the degree of anatomical connectivity (Assaneo et al., 2019; Steele et al., 2013). Previous evidence suggests that the audiomotor system is tuned at a limited interaction rate (Zalta et al., 2020; Morillon et al., 2019). Hence, we also hypothesize that the relationship between rhythmic tapping abilities and the structural connectivity of the audiomotor system should be more evident for intervals close to the preferred tempo.\n\nTo test these hypotheses, we acquired DWIs from 32 subjects that had previously performed an SCT using flashing visual or auditory tones as metronomes in the range of hundreds of milliseconds (Figure 1). SCT rhythmic performance across durations (ISI: 550, 650, 750, 850, or 950 ms) and modalities (auditory and visual) was characterized using the absolute asynchronies, the autocorrelation of the inter-tap interval time series during the synchronization epoch, the constant error, and the temporal variability during both synchronization and continuation epochs. These parameters measure the phase accuracy, error correction, period accuracy, and period precision of the rhythmic tapping of the subjects, respectively (Figure 2A). We used an ISI range of 550\u2013950 ms because it contains the preferred interval and is within the optimal window for tap synchronization (Repp, 2005). Hence, with this ISI range, we could potentially identify structural correlates for both the preferred tempo and interval selectivity. With this in mind, we evaluated DWM fascicles using a fixel-based approach (Dhollander et al., 2021) and developed two metrics for superficial white matter (SWM): fiber density corresponding to fibers entering or exiting the cortex and U-fibers running tangentially to the cortex. Widespread correlations in the right audiomotor circuit were found between the tangential U-fiber density and the phase accuracy of subjects during the synchronization epoch of the auditory condition for the 650 and 750 ms intervals. The interval specificity in these associations suggests that the preferred tempo for rhythmic entrainment has its origins in the structural properties of the U-fibers running superficially across the audiomotor circuit. In addition, there was a significant association between asynchronies in the auditory condition and the density and bundle diameter of the corpus callosum (CC), forming an interval-selective map with an anterior\u2013posterior gradient, similar to the topography of interval-tuned clusters observed with functional imaging. Crucially, the anatomo-behavioral associations were negative, indicating that subjects with good predictive abilities and small asynchronies exhibited large superficial and deep apparent fiber densities (AFDs), while subjects with large asynchronies showed low fiber densities.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/83838/elife-83838-fig1-v2.jpg)\n\n**Figure 1.:** Initially, the subjects placed their finger at the central-bottom target of a touchscreen to start the trial and maintained the finger in this position while observing a sequence of right\u2013left alternating visual stimuli with a constant interstimulus interval (target duration, perception epoch). The subjects were instructed to start tapping once they got the beat from the metronome; they had two to six stimuli to start tapping. Thus, when they considered they had extracted the beat, subjects tapped the touchscreen on the left or right target in synchrony with the alternating visual metronome for six intervals (synchronization epoch). Finally, they continued tapping on the right or left targets for another six intervals without the metronome (continuation epoch). The mean produced and the target interval were displayed at the end of each trial as feedback. Subjects also performed an auditory metronome version of the SCT, where the metronome consisted of 500 Hz tones that were presented on the right or left side of a headphone. Five target durations (550, 650, 750, 850, or 950 ms) were presented pseudorandomly, with the visual and auditory conditions interleaved between subjects.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/83838/elife-83838-fig2-v2.jpg)\n\n**Figure 2.:** (A) Parameters of rhythmic performance during the SCT. Asynchronies correspond to the time difference between stimulus (SO) and tap onset (TO) across the n intervals of the synchronization epoch. The constant error is the difference between produced (PI) and target intervals (TI), and the temporal variability is the standard deviation of the PI. Finally, the autocorrelation of the PI during synchronization and the lag 1 autocorrelation are computed. A negative value indicates that the subject is using an error correction mechanism (see the text). (B) Absolute asynchronies for each instructed interval and metronome modality (auditory: blue, visual: red) during the synchronization epoch. (C) Lag 1 autocorrelation for each interval and modality during the synchronization epoch. (D) Constant error as a function of target interval for both metronome modalities and the synchronization (left) and continuation (right) epochs of the SCT. The colored lines in D for the continuation epoch correspond to the linear fit between the constant error and the target interval; the indifference interval corresponds to 680 ms (blue vertical arrow) for the auditory condition. (E) Temporal variability as a function of target interval for both metronome modalities and the two epochs of the SCT.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/83838/elife-83838-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Note that only the correlation between the 650 and 750 ms intervals was significant for both the auditory and visual conditions.\n\n## Results\n\n### Rhythmic behavior\n\nThirty-two subjects performed a modified version of the classical SCT that included the following three epochs: beat perception, synchronization, and continuation (Figure 1). This task starts with the active perception of the isochronous beat defined by alternating left\u2013right visual stimuli, followed by tapping synchronization to the alternating stimuli, and the internally driven tapping continuation to the right or left targets without the metronome (P\u00e9rez et al., 2023). The subjects also performed an auditory version of the SCT (Figure 1, see Methods).\n\nAbsolute asynchronies correspond to the time difference between each stimulus and response pair and are a measure of the phase accuracy between taps and stimuli (Figure 2A). Hence, this parameter can only be measured during the synchronization epoch of the SCT. We performed a repeated-measures analysis of variance (ANOVA) on absolute asynchronies with metronome modality (auditory and visual: two levels) and instructed interval duration (550, 650, 750, 850, and 950 ms: five levels) as within-subject factors. The ANOVA showed significant main effects for duration (F(4,124) = 36.88, p < 0.0001) and modality (F(1,31) = 20, p < 0.0001), as well as a significant duration \u00d7 modality interaction (F(4,124) = 32.3, p < 0.0001). Tukey\u2019s honest significant difference (HSD) post hoc test showed significantly larger asynchronies for the visual than auditory modality across all durations (p < 0.0001 for 550, 650, 750, and 850 ms; p = 0.006 for 950 ms; with the interaction effect mainly driven by the difference in the 950 ms across modalities). These results confirm the preponderance of the auditory modality over the visual modality to produce phase alignment of the taps with the metronome (Comstock et al., 2018; G\u00e1mez et al., 2018; Merchant et al., 2015a). In addition, we computed the intersubject correlation matrix on the absolute asynchronies across instructed intervals and found a significant correlation between 650 and 750 ms for both the auditory and visual conditions (r = 0.67, p = 0.000026; r = 0.69, p = 0.000011, respectively) (Figure 2\u2014figure supplement 1). This finding suggests the existence of a shared mechanism for metronome-tap phase alignment in the intervals that correspond to the preferred tempo indicated in previous studies, thereby corroborating the notion that the audiomotor system is efficiently tuned to this tempo (Zalta et al., 2020).\n\nA negative lag 1 autocorrelation of the produced intervals during the synchronization epoch indicates the involvement of an error correction mechanism that maintains tap synchronization with the metronome, since a longer produced interval tends to be followed by a shorter interval, while a shorter interval tends to be followed by a longer produced duration (Figure 2A; Iversen et al., 2015; Repp and Su, 2013). The corresponding repeated-measures ANOVA on autocorrelation of the inter-tap interval time series (Figure 2C) showed no significant differences between modalities (F(1,31) = 1.6, p = 0.21), intervals (F(4,124) = 2.05, p = 0.09) or their interaction (F(4,124) = 2.34, p = 0.06). Thus, lag 1 autocorrelation across trials was negative (~80% of the trials) and similar across modalities and target durations, supporting the notion of a robust and amodal error correction mechanism during the SCT.\n\nConstant error is the difference between produced and target intervals and is a measure of period accuracy during the synchronization and continuation epochs (Figure 2A). A repeated-measures ANOVA on constant error with modality, target duration, and task epoch as within-subject factors revealed statistically significant main effects for modality (F(1,31) = 46.05, p < 0.0001), target duration (F(4,124) = 29.15, p < 0.0001), and epoch (F(1,31) = 6.44, p = 0.01), as well as significant interactions between modality \u00d7 interval (F(4,124) = 3.5, p = 0.008), epoch \u00d7 interval (F(4,124) = 48.33, p < 0.0001), and epoch \u00d7 modality (F(1,31) = 23.35, p < 0.0001). The post hoc Tukey HSD showed no significant differences for target duration in constant error during synchronization for both modalities, with accurate timing close to zero. In contrast, during continuation, the same post hoc test revealed that the significant interactions between factors were mainly due to the significant differences between distant intervals within the auditory and visual modalities (Figure 2D). In fact, for the continuation epoch, the constant error followed the bias effect, with overestimation for short durations and underestimation for long durations, especially for the auditory condition (Jazayeri and Shadlen, 2010; P\u00e9rez and Merchant, 2018; P\u00e9rez et al., 2023). Indeed, the indifference interval, which corresponds to the interval associated with zero constant error, was 654 ms for the auditory condition (Figure 2D, blue arrow) and 420 ms for the visual condition. This finding suggests that our subjects had a clear preferred interval in the auditory condition that is close to the 2 Hz reported in the literature (Zamm et al., 2016). Finally, temporal variability was defined as the standard deviation of the produced intervals and is a metric of timing period precision (Figure 2A). The same repeated-measures ANOVA on temporal variability showed significant main effects for target duration (F(4,124) = 110, p < 0.0001) and modality (F(1,31) = 58.06, p < 0.0001), but no significant main effect for task epoch (F(1,31) = 0.94, p = 0.33). In addition, significant effects were revealed for the following interactions: epoch-interval (F(4,124) = 3.42, p = 0.01), epoch-modality (F(1,31) = 70.68, p < 0.0001), interval-modality (F(4,124) = 11.34, p = 0.0001), and epoch-modality-interval (F(4,124) = 14.74, p = 0.0001). The HSD post hoc tests showed significantly greater temporal variability in the visual metronome than in the auditory metronome (for the intervals 650, 750, 850, and 950 ms: p < 0.0001) during the synchronization but not the continuation epoch, confirming the high period precision for auditory metronomes, especially during synchronization (Figure 2E; G\u00e1mez et al., 2018; Repp and Penel, 2004).\n\n### White matter analysis\n\nBefore the task performance session, participants were scanned in a 3T Philips Achieva TX MR scanner with a 32-channel head coil. T1-weighted volumes and DWIs were obtained (see Methods). For each subject, the gray/white matter interface was identified using a surface mesh (Fischl, 2012; Fischl et al., 2002). The AFD (Raffelt et al., 2012), a metric that non-invasively evaluates axonal density (Rojas-Vite et al., 2019), was derived from DWI using constrained spherical deconvolution (CSD) (Tournier et al., 2004), and sampled at each vertex of this mesh. To evaluate white matter properties at different depths with respect to the cortical mantle, we created synthetic trajectories that organically extended from each vertex at the gray/white matter interface toward the ventricles and sampled diffusion metrics along these trajectories every 0.5 mm (Figure 3A). Leveraging the ability of CSD to disentangle crossing fiber populations, AFD (Figure 3B) was evaluated separately for those fibers that enter or exit the cortex and are, therefore, parallel to the virtual trajectories (parAFD), and those that extend tangentially to the cortex, perpendicular to the virtual trajectories (tanAFD). Throughout this work, we assume that parAFD is related to association, commissural, and projection fibers that eventually enter or exit DWM bundles, while tanAFD is informative of short-range cortico-cortical connections through U-fibers (Sch\u00fcz and Braitenberg, 2002).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/83838/elife-83838-fig3-v2.jpg)\n\n**Figure 3.:** (A\u2013D) Apparent fiber density (AFD) of superficial white matter was systematically sampled (red dashes in C) along synthetic streamlines (red lines in A and C) that extend from each vertex (red circles) of the gray/white matter interface surface toward the ventricles following a Laplacian field (A\u2013C). The integral of all fiber orientation distribution functions (FOD, D) corresponds to the total apparent fiber density (totalAFD), further separated (B) into fiber densities corresponding to fibers entering/exiting the cortex parallel to the Laplacian streamlines (parAFD) and U-fibers running tangentially to the cortex (tanAFD). (E) There are widespread significant correlations between the subjects\u2019 asynchronies during the synchronization-continuation task (SCT) with an auditory metronome and totalAFD, shown here for the 650 ms interval (E). (F) Large areas within the frontal, parietal, and occipital lobes showed significant correlations between behavior and tanAFD. (G) Only restricted frontal and temporal regions showed correlation between parAFD and the asynchronies. (H) Coefficient of determination across the 32 subjects between the three AFD metrics and asynchronies for one exemplary vertex (yellow dot in E\u2013G).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/83838/elife-83838-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** The surface-based analysis (SBA) was used to assess the association between the performance metrics of the SCT and the metrics to characterize the SWM sampled in five depths with respect to the gray/white matter interface. The number of significant vertices (both hemispheres) after SBA is shown for the three diffusion-weighted imaging (DWI) metric maps, through five depths sampled, and the four behavioral metrics in five intervals, two epochs, and two modalities. The number of vertices for the three apparent fiber density (AFD) metrics showed association only with the absolute asynchronies of the different intervals of the auditory modality. The largest significant clusters were observed between the absolute asynchronies for the 650 and 750 ms intervals through the five depths sampled in the three AFD metrics. The SBA results were corrected to multiple comparisons, using as thresholds pcft < 0.001 and pcluster < 0.001. AFD: apparent fiber density; tanAFD: tangential apparent fiber density; parAFD: parallel apparent fiber density; Async: absolute asynchronies; Lag 1: lag 1 of the autocorrelation for each instructed interval; CE: constant error; TV: temporal variability; Sync: synchronization; Cont: continuation.\n\n### Correlations between behavior and SWM\n\nNext, we examined the association between behavioral performance and the microstructural properties of SWM inferred from DWIs. The surface-based analysis of SWM (see Methods) was performed to determine the possible association between the different metrics of rhythmic timing performance and the metrics of the SWM sampled at five depths with respect to the gray/white matter interface (0, 0.5, 1, 1.5, and 2 mm). This analysis showed the existence of negative correlations between the auditory absolute asynchronies and values of the AFD maps in the five depths sampled (Figure 3E\u2013G; also see Figure 3\u2014figure supplement 1). Thus, subjects with auditory asynchronies closer to zero, and hence with larger predictive abilities, had significantly higher AFD and tanAFD values than subjects with less predictive performance.\n\nNotably, these significant associations were observed mainly for the auditory asynchronies of the 650 and 750 ms intervals and the totalAFD and tanAFD values (see Figure 3\u2014videos 1\u20133). No significant correlations were found between the three AFD maps and the constant error, temporal variability, and lag 1 autocorrelation for the auditory condition. Furthermore, no correlations were observed between the three metrics of the SWM and all the behavioral parameters for the visual condition (see Figure 3\u2014figure supplement 1). We did not find significant correlations between the parameters of SCT rhythmic performance and the parAFD, except for a few clusters with low correlation coefficients for the auditory asynchronies at the 550, 650, and 750 ms intervals (Figure 3\u2014figure supplement 1 and Figure 3H). Indeed, the level of association between SCT phase accuracy and the AFD maps was greater for tanAFD than for parAFD (Figure 3H; compare Figure 5 with Figure 5\u2014figure supplement 1).\n\nAccording to Sch\u00fcz and Braitenberg, 2002, the average depth of the U-fiber system is approximately 1.5 mm. Thus, the following analyses were done at this depth. Figure 4 shows the correlation coefficient of determination values between the auditory asynchronies and tanAFD at 1.5 mm below the gray/white matter interface across all the tested tempos. After correction for multiple comparisons (pcft < 0.001 and pcluster < 0.001), only intervals of 650, 750, and 850 ms showed a significant association between the behavioral and structural parameters. Indeed, nine (with 2232 vertices), twelve (with 2827 vertices), and two (with 374 vertices) clusters showed significant correlations between auditory asynchronies and tanAFD for the 650, 750, and 850 ms intervals, respectively. Figure 4\u2014figure supplement 1 shows the association between asynchronies (650 ms intervals) and tanAFD at various depths from the gray/white matter interface.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/83838/elife-83838-fig4-v2.jpg)\n\n**Figure 4.:** Significant correlations were localized in large clusters within motor, auditory, and visual areas, particularly for 650 and 750 ms intervals.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/83838/elife-83838-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** tanAFD sampled at 0 mm shows significant correlations distributed throughout most of the brain, but specific regions (e.g., motor, auditory, and visual areas) consistently show significant correlations as depth increases.\n\nTo identify the anatomical regions with significant clusters of vertices, we parcellated the SWM based on the Brainnetome Atlas (Fan et al., 2016). Areas with significant vertices (after correction for multiple comparisons; pcft < 0.001 and pcluster < 0.001) were grouped into 14 regions: primary motor, dorsolateral secondary motor, medial motor (SMA and pre-SMA), dorsolateral prefrontal cortex, language motor, primary somatosensory, parietal association, precuneus, primary and secondary auditory areas (auditory), inferior temporal cortex, object and face recognition areas, primary and secondary visual areas (visual), and limbic association areas (Figure 5C).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/83838/elife-83838-fig5-v2.jpg)\n\n**Figure 5.:** (A, B) Interregional correlation plot of the auditory asynchronies and tanAFD as a function of the instructed interval and depth of the tanAFD. Significant clusters were aggregated into fourteen regions (y-axis) based on the Brainnetome Atlas shown in C. The color and size of the circle for each cluster correspond to the correlation coefficient of determination (critical value r > 0.355 at p < 0.02, df = 29) and the percent of significant vertices in each area, respectively. The left hemisphere (A) showed more areas with significant vertices than the right (B; 17541>16641). A systematic decrease in circle size as a function of depth was observed across areas of both hemispheres. At a depth of 1.5 mm, the regions with a larger percent of significant vertices for the right hemisphere at 750 ms were the medial premotor (supplementary motor area [SMA] and preSMA), auditory, and language motor areas (B). In contrast, few significant vertices were observed across the regions of the left hemisphere (A). (C) Brainnetome Atlas (Fan et al., 2016) showing the 14 regions of interest (ROIs) analyzed in A and B. (D) Interval selectivity curves for the correlation coefficients and percent of significant vertices across tanAFD depths (color coded) for preSMA. (E) Same as D but for the auditory cortex. Note that the preferred interval in the two areas is between 650 and 750 ms.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/83838/elife-83838-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A, B) Interregional correlation plot of the auditory asynchronies and parAFD as a function of the instructed interval and the depth of the parAFD calculation. (C) shows the brain parcellation used.\n\n### Canonical correlation between behavioral and AFD maps\n\nIn the previous section, we correlated many behavioral measures with all vertices of the AFD maps, risking inflation of type I error. To address this, we performed a canonical correlation analysis (rCCA) between the behavioral data of the SCT and the structural information of the SWM (see Methods). This approach allowed us to independently assess the correlation between our AFD measurements of every vertex and every variable of the SCT. Specifically, rCCA was calculated between the matrix of behavioral parameters from the synchronization phase of the SCT (i.e., absolute asynchrony, constant error, temporal variability, and lag 1 autocorrelation) for each sensory modality (auditory and visual), every target interval (550\u2013950 ms) and the AFD metrics from all vertices across the brain surface. Separate models were built for each AFD metric (i.e., totalAFD, tanAFD, and parAFD). Notably, all pairings of behavioral and AFD data rendered highly correlated canonical variates (Figure 6A). In line with the previous results, the highest correlation was found between the SCT data and the tanAFD, closely followed by totalAFD, and then parAFD (Figure 6A). The correlations between each behavioral parameter and tanAFD and their corresponding canonical variates revealed a clear structure between the predictive behavior of subjects and the structural differences in U-fibers of the white matter in the audiomotor system. Figure 6B depicts the correlations between each standardized SCT parameter and the corresponding canonical variate (U), where it is evident that the asynchronies of the auditory modality for the 650\u2013850 ms intervals are the parameters with a significant relation to the canonical variate. A novel result from the rCCA is the significant association between the temporal variability of the auditory phase in the same intervals (650\u2013850 ms). In addition, the tanAFD map shows a significant correlation between the tanAFD in audiomotor structures and the canonical variate. Again, the correlation between all vertices and their canonical variates was negative, corroborating the hypothesis that subjects with greater predictive abilities had a larger tanAFD in the audiomotor circuit (Figure 6C).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/83838/elife-83838-fig6-v2.jpg)\n\n**Figure 6.:** (A) Loadings (correlations) of the synchronization-continuation task (SCT) variables for the tanAFD model. Note the absolute asynchronies of the auditory modality showed the highest correlations with the structural data, at the 650\u2013850 ms intervals, in line with previous results. In addition, this approach identified the total variability in the same sensory modality and intervals as significant, although with a lower correlation coefficient and of the opposite sign. (B) Pearson\u2019s correlation of canonical variates (U = behavioral; V = tanAFD across vertices).(C) Loadings of the tanAFD map. Note that the audiomotor system is highly correlated with the SCT behavior.\n\n### DWM and structural selectivity to the interval\n\nWe also evaluated the association between the precision and accuracy of the SCT tapping period and phase and the DWM properties. Fixel-based analysis (FBA) (Dhollander et al., 2021; Raffelt et al., 2017) was used to estimate micro- and macrostructural differences within DWM voxels (Genc et al., 2018; Kelly et al., 2020; Mito et al., 2018; Rau et al., 2019). This method, similar to that of our SWM analysis, is based on the CSD of DWI data.\n\nFBA provides three fiber-specific indices (fiber density, fiber cross-section, and fiber density and cross-section; FD, FC, and FDC, respectively) (Raffelt et al., 2017). FD is derived from the integral of the fiber orientation distribution (FOD) lobes and is proportional to the total intra-axonal volume, thus reflecting the density of a population of fibers within a voxel (Rojas-Vite et al., 2019). Note that FD is identical to totalAFD used in our surface-based analyses, with nomenclature for FBA following Raffelt et al., 2017. If more than one fiber population coexists in a given voxel, the FOD is segmented, and an FD is assigned to each population, referred to as a fixel (fiber element). FC is a macroscopic metric of the fiber bundle diameter and, finally, FDC is a combination of FD and FC (see Methods). Briefly, the FBA analysis pipeline consists of five steps. First, the images of each subject are processed to obtain a white matter FOD map in native space using CSD. Second, an FOD template and a fixel mask are built. Third, the AFD map and the corresponding fixels for each voxel are computed for each subject in native space. The FD metric is obtained for each fixel computed from the total DWI signal per voxel. Fourth, the fixels and AFD map are reoriented to the template. Finally, fixel-wise statistics are performed at each spatial location in template space.\n\nThe FBA revealed significant negative correlations between the FDC in the CC and the absolute asynchronies to the auditory metronome for 650, 750, 850, and 950 ms intervals (Figure 7). Therefore, this analysis showed a tight relationship between the density and bundle diameter of CC fibers and beat entrainment. Subjects exhibiting large phase accuracy with asynchronies close to zero also showed large FDC values, and subjects with poor phase accuracy and large asynchronies had low FDC values (Figure 7\u2014figure supplement 1). As in the case of the U-fiber metrics, the FBA values were not correlated with period accuracy or precision, nor with the error correction for the auditory and visual conditions during the synchronization and continuation epochs.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/83838/elife-83838-fig7-v2.jpg)\n\n**Figure 7.:** (A\u2013E) Fiber bundles that showed significant correlations between the asynchronies in the synchronization-continuation task (SCT) auditory condition and the fiber density cross-section (FDC) of the corpus callosum (CC). Panels A\u2013C correspond to the anterior coronal sections of the sagittal map depicted in the center of the figure. Panels D and E correspond to the posterior axial sections of the same central sagittal map. An interval-selective map with an anterior posterior gradient is depicted. (F) Coronal section of the CC showing the fixels with a significant correlation coefficient (color-coded r values; only fixels with pcorr < 0.05 are shown) between asynchronies at the 750 ms interval in the auditory condition and FDC. (G) Distribution of the coefficients of determination (r2) of the FDC vs absolute asynchronies for the four intervals listed on the x-axis. The interquartile box plots are depicted on the right.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/83838/elife-83838-fig7-figsupp1-v2.jpg)\n\n**Figure 7\u2014figure supplement 1.:** Percent of significant fixels (five intervals) in the deep white matter in projection tracts in the (A) left hemisphere, (B) right hemisphere, and (C) commissural tracts. AF = arcuate fasciculus; ATR = anterior thalamic radiation; CB = cingulum bundle; CST = corticospinal tract; FX = fornix; IFO = inferior fronto-occipital fasciculus; MdLF = middle longitudinal fasciculus; SLF2 = superior longitudinal fasciculus 2; STR = superior thalamic radiation; AC = anterior commissure; CC = corpus callosum; FMI = forceps minor; FMA = forceps major; FD = fiber density; FC = fiber cross-section; FDC = fiber density and cross-section; MAs = mean asynchronies.\n\nThe association between entrainment phase and white matter properties defined an interval-selective map in the CC, with the FDC at different levels of the CC showing significant correlations with the absolute asynchronies at specific intervals (Figure 7). This map showed an anterior\u2013posterior gradient, with behavioral and structural associations for short and long intervals in the anterior and posterior portions of the CC, respectively. Thus, the FDC fixel values of the posterior midbody of the CC (interconnecting motor and premotor cortices and M1) showed a significant negative correlation with absolute auditory asynchronies for the 650 and 750 ms intervals (Figure 7BC; family-wise error-corrected p-value <0.05). For the asynchronies at the intermediate interval of 850 ms, a negative correlation was observed with FDC fixel values located in the isthmus and the splenium (Figure 7C; interconnecting primary motor, temporal, and visual cortices). Finally, the asynchronies of the 950 ms interval showed a significant negative correlation with fixels located in forceps minor and major (Figure 7A, D; interconnecting prefrontal and visual cortices, respectively).\n\nIt is evident in Figure 7A\u2013E that the streamline segments of the fixels with entrainment correlations were located mainly at the joint of the two hemispheres across the CC. Nevertheless, a lateralization effect was found for the left hemisphere, with fixels associated with auditory asynchronies of 750 and 950 ms in the isthmus and splenium, respectively. In addition to the CC, the right fornix showed a significant association with the asynchronies of the 750 ms interval for the FD metric (see Figure 7\u2014figure supplement 1).\n\nLastly, we carried out a correlation analysis between the mean absolute asynchronies across the five intervals and the FC (Figure 8) and FDC (see Figure 7\u2014figure supplement 1). Notably, for the auditory condition, the tracts with significant FC fixels were the left arcuate fasciculus (Figure 8A, E), CC M1 (Figure 8C, E), forceps major (Figure 8B, D), superior longitudinal fasciculus 2 (Figure 8F), and right fornix (see Figure 7\u2014figure supplement 1).\n\n![Figure 8.](https://cdn.elifesciences.org/articles/83838/elife-83838-fig8-v2.jpg)\n\n**Figure 8.:** (A) Sagittal brain section showing the p-value of significant fixels. (B) Example of the significant correlation between the fiber cross-section (FC) metric and the mean absolute asynchronies in a single illustrative fixel (red dot in panel D). (C\u2013F) Axial sections showing the negative correlation (r) between FC and mean absolute asynchronies for significant fixels. CC = corpus callosum (C), FMA = forceps major (D), AF = arcuate fasciculus (E), SLF 2 = superior longitudinal fasciculus 2 (F).\n\n![Figure 8\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/83838/elife-83838-fig8-figsupp1-v2.jpg)\n\n**Figure 8\u2014figure supplement 1.:** Percent of significant fixels (mean asynchronies) in thedeep white matterin projection tracts in the (A) left hemisphere, (B) right hemisphere, and (C) commissural tracts (C). AF = arcuate fasciculus; ATR = anterior thalamic radiation; CB = cingulum bundle; CST = corticospinal tract; FX = fornix; IFO = inferiorfronto-occipital fasciculus;MdLF = middle longitudinal fasciculus; SLF2 = superior longitudinal fasciculus 2; STR = superiorthalamicradiation;AC = anterior commissure; CC = corpus callosum; FMI = forceps minor; FMA = forceps major; FD = fiber density; FC = fiber cross-section; FDC = fiber density and cross-section; MAs = mean asynchronies.\n\n## Discussion\n\nThe present research determined the intersubject association between the structural properties of the SWM and DWM and different measures of rhythmic timing during a synchronization-continuation tapping task. Our study supports five conclusions: First, the tapping phase and period during the SCT showed precision and accuracy, as well as error corrections that were biased toward auditory rather than visual metronomes, thereby confirming previous observations. Second, the right audiomotor system exhibited individual differences in SWM and U-fiber density. These differences were correlated with the degree of phase accuracy of the tapping synchronization across subjects. Notably, the correlations were selective for the synchronization epoch of the auditory condition and were specific to the 650 and 750 ms intervals. Third, there was a significant association between the rhythmic entrainment phase and the density and bundle diameter of the CC, forming an interval-selective map with an anterior\u2013posterior trend. This implies that the behavioral and structural associations for short and long intervals tended to be in the anterior and posterior portions of the CC, respectively. Fourth, the fiber bundle diameter of the arcuate fasciculus, CC, forceps major, and superior longitudinal fasciculus showed a significant correlation with the mean asynchronies across all tested tempos. Finally, we found no significant associations between SWM and DWM properties and temporal variability, constant error, or lag 1 autocorrelation under the visual and auditory conditions during the synchronization and continuation epochs of the SCT. These last findings suggest that connectivity within the audiomotor system is tightly linked with the ability to synchronize in phase at the preferred tempo for auditory metronomes. We speculate that the structural white matter is associated with tapping-phase control, not with period representation, as the latter depends on neural population dynamics within the timing network (G\u00e1mez et al., 2019; Betancourt et al., 2023) and the former depends on a prior ability to detect changes in phase at the preferred tempo, whose intrinsic nature is defined in the audiomotor connectivity.\n\nMany studies have shown that performance tapping synchronized to an auditory metronome is more precise and accurate than synchronization to a flashing visual metronome with the same timing characteristics (Chen et al., 2002; Hove et al., 2013; Merchant et al., 2008c; Patel et al., 2005; Repp and Penel, 2004; Zarco et al., 2009). This auditory\u2013visual asymmetry can be cancelled out by visual moving metronomes (Hove et al., 2010; P\u00e9rez et al., 2023). Since the first processing relays, the auditory system has higher temporal resolution compared to the visual system (Duysens et al., 1996; He et al., 1997; Sayegh et al., 2011) and plays a critical role in time perception and reproduction across many tasks, not only in tapping SCTs (Grondin et al., 2005; Merchant et al., 2008b; Merchant and de Lafuente, 2014c). For example, when audiovisual stimuli are used in an oddball paradigm, the perceived duration is dominated by the auditory modality (Chen and Yeh, 2009). In addition, transcranial magnetic stimulation (TMS) disruption of the auditory cortex impaired time estimation for auditory and visual stimuli, while disruption in the visual cortex only produced timing impairments for visual stimuli (Kanai et al., 2011). Consequently, a current hypothesis is that the auditory cortex is engaged in multimodal temporal processing, and the interaction between the auditory and motor systems in the frontal lobe allows not only time encoding but also time prediction (Merchant and Honing, 2014b; Merchant and Yarrow, 2016; Patel and Iversen, 2014; Schwartze et al., 2012). Our present findings support this notion in different ways. First, the rhythmic timing performance of our subjects was biased toward the auditory condition across different behavioral measures. Second, the right audiomotor system showed widespread and significant correlations between the density of superficial U-fibers and the degree of sensorimotor phase accuracy across subjects. These anatomo-behavioral associations are selective to the intervals in the 650\u2013750 ms range. Third, the fiber bundle diameter of the left arcuate fasciculus, a key tract connecting the parietotemporal auditory system with the frontal lobe, showed a significant correlation with the mean asynchronies across all tested tempos. Furthermore, the clear clustering of subjects as either good or bad synchronizers in a syllabic isochronous entrainment task correlates with both the difference in the activation magnitude in frontal areas and the changes in white matter pathways (i.e., left arcuate fasciculus) that connect the auditory system with the premotor cortical system (Assaneo et al., 2019). Hence, our results accentuate the audiomotor structural foundation for rhythmic entrainment (Honing and Merchant, 2014; Miyata et al., 2022). The lack of structural associations in the visual condition is probably due to the larger variability in rhythmic tapping for this modality, making it difficult to infer statistical correlations between our metrics. As described above, the null anatomo-behavioral associations for the visual condition could also be due to the slow sampling rate of visual periodic temporal attention, with a sampling interval that is longer than our tested durations (Zalta et al., 2020).\n\nThe observed associations between the measured SWM and DWM properties and the accuracy in the synchronization phase were negative. This result indicates that the white matter parameter values were greater in subjects with asynchronies close to zero and an accurate tapping phase with the metronome than in subjects with large gaps in time between the stimuli and taps. These results support the theory that intersubject differences in rhythmic entrainment phase depend on micro- and macrostructural white matter properties, which could have a genetic and/or learned substrate. From a genetics perspective, we could speculate that the existence of poor and superior synchronizers (Blecher et al., 2016) may depend on the FD of superficial U-fibers in the right audiomotor system, as well as on the density of deep tracts such as the CC and arcuate fasciculus. From a training perspective, these SWM and DWM bundles may develop larger density and myelination during intense musical practice, distinguishing the audiomotor tracts between musicians and non-musicians (Palomar-Garc\u00eda et al., 2020; Vaquero et al., 2018; Zatorre et al., 2007).\n\nThe correlations between the density of tangential U-fibers in the right audiomotor circuit and the asynchronies for the auditory condition were interval-selective for the intermediate tested tempos. The observed interval specificity corroborates the existence of an spontaneous rhythmic tempo, already observed in many studies of rhythmic entrainment, and with values between 600 and 750 ms (Drake et al., 2000a; Drake et al., 2000b; McAuley et al., 2006: Dalla Bella et al., 2017). The biological intrinsic periodicity may depend on a biased distribution of preferred tempos toward 1.5 Hz in the interval-tuned neurons of the motor system (Bartolo et al., 2014; Bartolo and Merchant, 2009; P\u00e9rez et al., 2023; P\u00e9rez and Merchant, 2018). Interestingly, Zalta et al., 2020 showed that humans were best at following auditory rhythms at a rate of ~1.4 Hz and that overt motor activity optimizes auditory periodic temporal attention at a similar rate. This rate is close to the intervals with structural associations in the present study. Consequently, we suggest that cortico-cortical connectivity within the audiomotor system is especially designed to support the internal representation of an auditory beat at the preferred tempo, providing larger phase-locking abilities with the metronome for spontaneous motor tempos (Balasubramaniam et al., 2021). On the other hand, Zalta et al., 2020 also demonstrated that the best rate for visual rhythms was far slower, at ~0.7 Hz (Zalta et al., 2020). Therefore, it is possible that we did not get effects in the visual condition because our target interval of 950 ms was not slow enough for this modality.\n\nUltra-high-field (7T) functional imaging revealed that the medial premotor areas (SMA and pre-SMA) of the human brain possess neural circuits that are tuned to different durations, forming a topographical arrangement during a visual discrimination task. These chronomaps show units with enhanced responses for the preferred interval and suppressed activity for the non-preferred duration, and define a topographical gradient with short preferred intervals in the anterior portion and long preferred intervals in the posterior portion of the medial premotor areas (Protopapa et al., 2019; Schwartze et al., 2012). Protopapa et al., 2019 also showed chronomaps in the SMA during an interval reproduction task using auditory cues, which is similar to the task used in this study. Notably, chronomaps also showed an anterior\u2013posterior gradient, but they represent relative rather than absolute time, and they presented some flexibility in the location of the preferred interval depending on the task context (Bueti et al., 2021). In addition, a recent imaging study described the existence of large chronomaps covering the cortical mantle from the dorsal and ventral premotor areas to the occipital pole (Harvey et al., 2020; Hendrikx et al., 2022). Our measurements of the FDA also revealed a topographical arrangement in the correlations between FD in the DWM and CC and the sensorimotor phase accuracy of subjects. We also found significant anatomo-behavioral associations in the anterior part of the CC for short intervals and in the posterior CC for long tapping tempos (Schwartze et al., 2012). Nevertheless, our interval-selective map is defined by the correlation between asynchronies and FDA, with no topographic model of the distribution of preferred intervals as shown in functional magnetic resonance imaging (fMRI) studies. These studies have not explored individual differences. Moreover, we found a frontal CC cluster of fixels with longer interval selectivity, producing a discontinuity in the anterior\u2013posterior gradient of preferred intervals. These findings suggest that the map for duration selectivity starts anteriorly in the CC, which is linked to the premotor system, and ends in the CC of the visual areas of the occipital lobe. The anterior selectivity for the 650 and 750 ms ISI supports the notion that the motor system functions at 1.7 Hz during beat perception and entrainment and strongly influences the auditory system but not the visual system at this tempo (Zalta et al., 2020). The latter could explain why we did not find interval selectivity in the CC for the visual condition. Consequently, timing maps define a cortical processing framework for efficient timing integration that has both functional and anatomical bases, especially for the auditory modality (Merchant and de Lafuente, 2024a).\n\nPrevious studies have shown correlations between sensorimotor synchonization task performance and the microstructural characteristics of DWM. For instance, Blecher et al., 2016 found a positive association between the fractional anisotropy of the left arcuate fasciculus and CC and performance in an auditory-cued finger-tapping task. The SWM immediately below the cortex has received has been less studied than DWM fasciculi, even though it accounts for 60% of the total white matter volume and is pivotal in maintaining cortico-cortical connectivity (Sch\u00fcz and Braitenberg, 2002; Schmahmann et al., 2006). Nonetheless, recent studies have implicated SWM abnormalities in epilepsy (Liu et al., 2016), autism spectrum disorder (Hong et al., 2019), Alzheimer\u2019s disease (Phillips et al., 2016), schizophrenia (Nazeri et al., 2013), and stroke (Stockert et al., 2021). The SWM contains short-range association fibers that connect adjacent gyri (U-fibers) and the initial or final portions of long-range connections that traverse the DWM (Sch\u00fcz and Braitenberg, 2002; Guevara et al., 2020; Kirilina et al., 2020; Yoshino et al., 2020). The SWM is difficult to study because of its complicated geometry and abundance of fiber crossings (Guevara et al., 2020). To better characterize the SWM microstructure, we separated the two components of the SWM and performed a surface- and depth-wise evaluation. Complementarily, we analyzed the DWM using FBA, which addresses many of the shortcomings of voxel-wise analysis of diffusion tensor imaging (Dhollander et al., 2021). This two-pronged approach allowed us to evaluate the entire white matter volume and show the association between its mesoscopic characteristics (i.e., AFD) and predictive tapping synchronization.\n\nA potential limitation of our study is the relatively small number of participants, related to the time-consuming nature of the behavioral evaluation and the long scanning time. Moreover, many statistical tests were performed, relating several behavioral metrics to various diffusion metrics across the brain at different depths. To minimize the possibility of statistical errors, we performed an rCCA to jointly model the behavioral and imaging metrics, thus accounting for the numerous statistical tests and reducing the possibility of reporting false positive findings. This reinforced the importance of superficial cortico-cortical communication through U-fibers and the SCT for intervals around the preferred tempo. While we have attempted to control for statistical errors as much as possible, a sample of 32 young adults with specific inclusion and exclusion criteria may inevitably not represent the population. We expect our current findings to be replicated and extended in future studies.\n\nIn conclusion, our results showed that the subjects\u2019 accuracy in SCT performance was associated with higher FC, FDC, or FD values. This is consistent with the literature that shows that better performance in different tasks is associated with higher values of FBA metrics. For example, better performance in a bimanual coordination task was associated with higher FBA values in the CC (Zivari Adab et al., 2020).\n\n## Methods\n\nThis study was approved by the Ethics Committee of our Institution (049H-RM).\n\n### Participants\n\nThirty-two healthy human subjects (age = 25.37 \u00b1 3.21 years; 19 females) without musical training volunteered to participate and gave informed consent, which complied with the Declaration of Helsinki and was approved by our Institutional Review Board. All participants were right-handed and native Spanish speakers. They did not have MRI contraindications or neurological, psychiatric, or cognitive conditions.\n\n### Apparatus\n\nParticipants were seated comfortably in a quiet experimental room, facing a high-definition 23\u2033 touch screen (refresh rate: 60 Hz; ELO Touch solutions) located 50 cm away, which they were instructed to tap using the right index finger. Auditory stimuli were presented through noise-canceling headphones (Sony, MDR-NC50).\n\n### Experimental task\n\nThe SCT of the present study is similar to the standard SCT described elsewhere (Merchant et al., 2008b; Merchant et al., 2008b). However, instead of tapping a button, the subject tapped on the right or left halves of the touch screen. The task started when three empty white circles (radius 1 degree of visual angle) on a black background were presented simultaneously, forming an inverted isosceles triangle (2 degrees of visual angle on each side). Subjects were trained to place their finger at the central-bottom target to start the trial and attend to a sequence of two to six right/left alternating stimuli with a constant interstimulus interval (perception epoch). They were instructed to tap the touchscreen on the corresponding target in synchrony with a metronome for six intervals (synchronization epoch) and continue tapping on the screen for another six intervals without the metronome (continuation epoch; Figure 1). During the perception epoch, the subjects were instructed to start tapping once they got the beat from the metronome, and they had two to six stimuli to start tapping. The mean produced interval was presented at the end of the trial as feedback. A trial was considered correct if, for every interval, the absolute difference between the produced interval and the target interval was below 30% of the target interval during the synchronization and below 40% during the continuation epoch. The task was programmed using Psychtoolbox for Matlab (2018, Mathworks).\n\n### Stimuli\n\nThe visual metronome (33 ms, yellow circle, 0.5 degrees of visual angle) was alternatively displayed inside the right or left empty circles. The auditory metronome (33 ms , 550 Hz, 80\u201385 dB SPL) was also presented alternatively in the right or left headphone. The isochronous target intervals were 550, 650, 750, 850, and 950 ms, which were pseudorandomly presented within a block. Each subject performed 10 correct trials for each target interval.\n\n### Procedure\n\nThe MRIs were collected in the first session. In a second visit, the auditory and visual tasks were performed randomly across subjects outside of the MRI scanner.\n\n### Analysis of behavioral data\n\nFour metrics were calculated to assess the subjects\u2019 performance during SCT (Figure 2A; G\u00e1mez et al., 2018; Merchant et al., 2008c). During the synchronization epoch, we estimated the absolute asynchronies and autocorrelations of the inter-tap interval time series (Iversen et al., 2015; Wing, 2002). The constant error and temporal variability were calculated from the produced intervals during both the synchronization and continuation epochs. Absolute asynchronies were defined as the unsigned difference between stimulus onset and tap onset. Constant error was calculated as the difference between the produced interval and the target interval and is a measure of timing accuracy. Temporal variability was defined as the standard deviation of the total produced intervals and is a metric of timing precision. The autocorrelation of the six inter-tap intervals during a trial was calculated and averaged across trials. Thus, lag 1 autocorrelation is normally negative for isochronous metronomes, meaning that a longer produced interval tends to be followed by a shorter interval and vice versa, reflecting an error correction mechanism used to maintain the beat of the metronome during synchronization (Iversen et al., 2015). A repeated-measures ANOVA with two and three factors was carried out for the analysis of asynchronies, constant error, and temporal variability.\n\n### Imaging protocol\n\nImages were acquired using a 3T Philips Achieva TX scanner with a 32-channel head coil. T1-weighted volumes were obtained using a three-dimensionally encoded spoiled gradient echo sequence (repetition/echo times (TR/TE) = 8.2/3.7 ms, flip angle = 8\u00b0, field of view = 256 \u00d7 256 \u00d7 176 mm3, matrix size = 256 \u00d7 240 \u00d7 176 mm3 yielding voxel resolution = 1 \u00d7 1 \u00d7 1 mm3). DWIs were acquired with echo-planar imaging, 2 \u00d7 2 \u00d7 2 mm3 voxel resolution, FOV = 256 \u00d7 256 mm3, 62 axial slices, TR/TE = 16,500/72 ms. Images were sensitized to diffusion with b = 1000 s/mm\u00b2 (64 unique directions) and b = 3000 s/mm\u00b2 (96 directions). Five volumes without diffusion weighting (b = 0 s/mm2) were also acquired, along with an additional b = 0 s/mm2 volume obtained with reversed-phase encoding polarity for correction of geometric distortions.\n\n### Image processing\n\n### Fixel-based analysis\n\nWe analyzed individual fiber-specific properties in the presence of crossing fiber populations (\u2018fixels\u2019; Raffelt et al., 2015) following the steps described in Raffelt et al., 2017 and using the tools available in MRtrix3 (Tournier et al., 2019). A white matter mask was computed for each subject, followed by global signal intensity normalization of the DWI, which was performed across subjects by dividing all volumes by the median b = 0 s/mm2 intensity. Images were upsampled to 1 mm3 isometric resolution (Dyrby et al., 2014). White matter FODs were estimated using the multi-shell, multi-tissue CSD (MSMT-CSD) algorithm (Jeurissen et al., 2014). Tissue-specific response functions were calculated for each subject, from which we derived group-averaged response functions that were used to estimate FODs (lmax = 8) for each subject. An FOD template was constructed through iterative non-linear registration using the FODs of all 32 subjects followed by the calculation of the intersection of masks of all subjects. Fixels were derived at each voxel by FOD segmentation and reoriented to the study template. Finally, FBA metrics (FD, FC, and FDC) were calculated for each fixel.\n\n### Statistical analysis\n\nA whole-brain probabilistic tractogram was calculated based on the FOD population template, seeded from a whole-brain white matter mask to produce a tractogram of 20 million streamlines. Next, the SIFT algorithm (Smith et al., 2013) was used to select a subset of streamlines (n = 2 million) that best fit the diffusion signal and therefore reduce tractography biases. The structural connectivity metric between fixels was obtained according to probabilistic tractography using the connectivity-based fixel enhancement tool (Raffelt et al., 2015).\n\nThe FD, FC, and FDC measures were correlated with SCT for both conditions (visual and auditory) using a general linear model. Non-parametric permutation tests and connectivity-based fixel enhancement (Raffelt et al., 2015) were carried out for correction of multiple comparisons (Nichols and Holmes, 2002).\n\nAfter the statistical analysis, tracts with significant fixels in the group space were identified using the tract-selection regions from the XTRACT tool (Warrington et al., 2020) included in FSL software (FMRIB\u2019s Software Library \u2013 FSL, Oxford, UK) (Smith et al., 2004), which were warped into our population template. Tracts with significant fixels were reconstructed using MRTrix (Tournier et al., 2019).\n\n### SWM surfaces\n\nTo assess SWM properties, we used a synthetic representation of axons based on cortical topology. We computed a Laplacian potential field between the ventricles and the gray/white matter boundary (Jones et al., 2000; Lerch et al., 2008; Liu et al., 2016) using minclaplace (Lerch et al., 2008). Next, Laplacian streamlines were seeded at each vertex of the white matter surface and propagated toward the ventricles using Matlab, 2020A. Thus, one Laplacian streamline was obtained for every white matter surface vertex (Figure 3A). The distance between each step of the Laplacian streamline was 100 \u00b5m, and streamlines were truncated at 5 mm. This resulted in smooth and non-overlapping pathways that respect topology and traverse the SWM. Furthermore, the first segment of these streamlines is perpendicular to the gray-white matter (GM\u2013WM) surface, with subsequent segments gradually bending as they extend away from it. These aspects make the Laplacian streamlines behave similarly to what is expected from the anatomy of the SWM. Finally, all the white matter surfaces and synthetic streamlines were warped to their corresponding subject-specific DWI space via between-modality non-linear registration using ANTS (Avants et al., 2011). Data for one subject was discarded for SWM analysis (Figures 3\u20145) due to suboptimal registration between DWI metric maps and white matter surface.\n\nWe used the fixel-based information to independently evaluate the two fiber systems that coexist in the SWM: U-fibers subserving short-range cortico-cortical connectivity and long-range projection, association and commissural fibers (Kirilina et al., 2020; Sch\u00fcz and Braitenberg, 2002; Yoshino et al., 2020). With the assumption that U-fibers run tangentially to the gray/white matter surface and long-range fibers impinge on the surface in a perpendicular fashion, we attributed the fixels oriented parallel to the segments of the Laplacian streamlines to long-range fibers, and the remaining fixels to the U-fiber system. DWI-derived metrics were sampled along each Laplacian streamline at 0, 0.5, 1, 1.5, and 2 mm under the gray/white matter interface. The metrics sampled were totalAFD (the integral of all FODs within a given voxel) and AFD attributed to either long-range fibers (parAFD; the integral of the FOD of the fixel parallel to the Laplacian streamline) or U-fibers (tanAFD; defined as totalAFD \u2212 parAFD).\n\nAll metrics along the Laplacian streamlines were projected onto the gray/white matter surface of the fsaverage5 template for visualization and statistical analyses and smoothed using a two-dimensional kernel of 15 mm of full width at half maximum.\n\n### Surface-based analysis of SWM\n\nAnalyses were performed by fitting a general linear model at each vertex using SurfStat (https://www.math.mcgill.ca/keith/surfstat). This analysis assessed the relation between the value of diffusion metrics in each vertex (i) and the behavioral metrics from the SCT (absolute asynchronies, constant error, temporal variability, and lag 1 of the autocorrelation of the inter-tap-interval time series), as:\n\n$$\nSWM_{i}=\\beta_{0}+\\beta_{1}^{\u2217}STC_{metric}\n$$\n\nSurface vertex-wise analysis was corrected for multiple comparisons using random-field theory with a cluster-forming threshold pcft < 0.001 (Eklund et al., 2016). Clusters with pcluster < 0.001 were deemed significant (https://www.math.mcgill.ca/keith/surfstat).\n\nSignificant clusters were anatomically identified using the Brain Atlas Based on Connectional Architecture (Brainnetome) (Fan et al., 2016). All the analyses were carried out in Surfstat (Worsley et al., 2009) for Matlab (2018; Mathworks).\n\n### Regularized canonical correlation analysis\n\nAs an additional verification of the results obtained via random-field theory analysis, we performed a canonical correlation analysis between the behavioral data of the SCT and the structural information of the SWM. This approach allowed us to independently assess the correlation of the AFD measurements of every vertex with every variable of the SCT. Concretely, rCCA was calculated between the matrix of behavioral metrics from the synchronization phase of the SCT (i.e., absolute asynchrony, constant error, temporal variability, and lag 1 autocorrelation) for each sensory modality (auditory and visual), and every target interval (550\u2013950 ms) and the AFD matrix of the whole brain. Given the orthogonality between tanAFD and parAFD, and their collinearity with totalAFD individual models were built for every AFD metric.\n\nSince the number of variables (particularly the number of vertices) is much larger than the sample size, we included two regularizing parameters for the covariance matrices in the model (rCCA) (Mihalik et al., 2022). These parameters were optimized by a grid search algorithm that maximized the correlation of the canonical variates (Figure 6A). Confidence intervals (at 99%) for the loadings of the variables after model fitting were estimated by building null distributions of loadings based on random permutations (n = 10,000) of the original metrics. This was useful to identify the most relevant behavioral variables (Figure 6) associated with the structural data.\n",
+      "created_at": "2025-12-04T04:53:52.209833Z"
+    },
+    {
+      "id": "3af0e696-8c57-4771-bf54-24a2a3d53c4c",
+      "submission_id": "52e7a6f5-1925-4507-bb36-5dc03ce009e8",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Jonas Obleser, https://ror.org/00t3r8h32 University of L\u00fcbeck Germany\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.83838.sa0](https://doi.org/10.7554/eLife.83838.sa0)\n\nThis paper is valuable in that it provides a critical missing link between measures of structural connectivity and rhythmic tapping abilities, pointing to interesting possibilities for how tapping synchronization is carried out. The methodology and findings are convincing, and of interest to those studying the neural mechanisms of timing.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Jonas Obleser, https://ror.org/00t3r8h32 University of L\u00fcbeck Germany\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.83838.sa1](https://doi.org/10.7554/eLife.83838.sa1)\n\nOur editorial process produces two outputs: i) public reviews designed to be posted alongside the preprint for the benefit of readers; ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"White matter structural bases for predictive tapping synchronization\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Barbara Shinn\u2013Cunningham as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions (for the authors):\n\n1) The statistical approach will need streamlining and adequate correction for respective families of hypotheses where appropriate. As indicated by the reviews, Having multiple outcome measures also poses a potential risk of inflated type I error. See esp. comments by Rev #1 and Rev #2 in this regard! Sample size justifications and corresponding tempering statements/quantifications about statistical power are probably in order as well.\n\n2) More background information is needed for the structural MR data and analyses, see esp. Rev # 2.\n\n3) The reviewers' repeated calls for overall editing for clarity, in terms of structure as well as grammar, is not to be taken lightly. Thank you.\n\nReviewer #1 (Recommendations for the authors):\n\n\u2013 By far, one of the most major things to note here is that there are a wide variety of statistical tests carried out across levels. That is, there are 4 behavioral measures \u2013 not to mention multiple intervals and modalities and phases, 3 fiber density measures, at 5 depths, as well as other DWI measures tested. Was there any attempt to control for these multiple comparisons? I note that this is different from the within\u2013brain multiple comparisons (i.e. across voxels).\n\n\u2013 The second major claim of the paper is the chronotopic organization in the corpus callosum. I find it difficult to assess whether this is true or not. From my observation, there are certainly different parts associated with different intervals, but it does not seem to go in a gradient direction (anterior\u2013posterior, as the authors state). For example, the 750ms interval appears to cover most of the area, and the 950ms interval seems to be in a completely separate area. It's possible that there is a gradient here, but the authors have not convincingly presented it; perhaps by collapsing across dimensions this could be shown, but otherwise, any claims of \"chronotopy\" similar to what Protopapa and colleagues observed should be tempered.\n\n\u2013 There is, of course, concern about the sample size in this study. A group of 32 subjects can certainly show associations, but only if they are quite high and potentially subject to bias. This is not meant to say that the results are certainly false, but merely that there is an exploratory aspect to the findings that should be emphasized.\n\n\u2013 The motivation is a bit awkward and amounts to: \"we don't know the role of structural connectivity in rhythmic entrainment; we hypothesize that structural connectivity accounts for individual differences in rhythmic entrainment\". That is, we don't know if X is involved, therefore we hypothesize that X is involved? Why? While it's true that little work has been done in this specific area, the hypothesis is quite unformed.\n\n\u2013 The authors should likely read and cite a paper by Zalta, Petkoski, and Morillon (2018) on periodic temporal attention. Here, the authors observed that humans were best at attending to auditory rhythms at a rate of ~1.4Hz, very close to the rate observed in the present study. Moreover, for visual rhythms, the best rate was far slower, at ~0.7Hz. It is possible then that the reason for the lack of effects in the visual condition is that the authors did not test any intervals that were slow enough.\n\nZalta, A., Petkoski, S., and Morillon, B. (2020). Natural rhythms of periodic temporal attention. Nature communications, 11(1), 1\u201312.\n\n\u2013 How was the feedback conveyed? The methods state they are the mean asynchrony, but was this an offset value? A proportion? Did subjects know if they were tapping too fast or too slow?\n\n\u2013 There is some concern regarding the latencies for which the tapping information is collected. If the monitor was running at 60Hz, is this the same sample rate for the taps? In this case, there might be a concern that the measures being collected are not sufficiently precise to reveal individual differences, which may explain why there were so few correlations except for asynchrony.\n\n\u2013 What if subjects tapped the monitor but missed the target? Was the tap not collected? Did all subjects remain within the target?\n\n\u2013 More detail about the FWE correction is needed. Was this at the cluster level? Voxel level? The text describes \"FWE <0.0.001\" and \"Cluster<0.001\", so what does this mean, precisely? Also, the methods state at one point that a \"permutation test\" was done, then at another point state random field theory\n\n\u2013 For the continuation phase of the task, did the authors consider decomposing the inter\u2013tap\u2013interval variance using the Wing and Kristofferson (1973) model? This would provide measures of putative \"central\" and \"motor\" variance. Given that multiple intervals were tested, the authors should observe that central variance grows with the interval, whereas motor variance remains flat. Further, one might expect motor variance to relate more to connections within motor regions, whereas central variance could relate to audiomotor connections.\n\n\u2013 For continuation performance, a commonly observed phenomenon is \"drift\" in which subjects continuously speed up or slow down their responses. Was this observed at all? A typical method for drift correction is to detrend the time series with a first\u2013order polynomial and use the residuals for calculating measures of variance (Vorberg and Wing, 1996). Was this examined at all?\n\nVorberg, D., and Wing, A. (1996). Modeling variability and dependence in timing. In Handbook of perception and action (Vol. 2, pp. 181\u2013262). Academic Press.\n\n\u2013 Another prediction of the W\u2013K model is the negative lag 1 autocorrelation which the authors examine here. Yet, violations of this commonly do occur. Were there violations (i.e. trials) where subjects did not show negative autocorrelations?\n\nReviewer #2 (Recommendations for the authors):\n\nInteresting study, a nice simple task, and interesting white\u2013matter metrics that I do not see often in this literature.\n\nThe selection of interval ranges needs further justification\u2013why did the researchers choose these particular interval lengths, and did they predict differences between them? The preferred tempo range includes the 650 ms interval, as they note, but most authors would suggest that the 550 ms interval rate would be in this range for many people as well, as preferred beat rates tend to span 300\u2013900 ms (Parncutt, 1994). Thus, was the range of intervals selected to provide evidence of structural chronomaps in the brain, or did the researchers expect to see behavioural differences across the intervals (that may be related to structural brain measures) that they felt would be meaningful (being more or less related to optimal tapping rates), and therefore they used a range of intervals to assess this?\n\nThere are 2 modalities and 5 different interval lengths, all of which appear to be analyzed independently in the brain data. The MRI methods contain very little information about multiple comparisons correction related to the number of different tests that are performed\u2013this needs much clearer explication.\n\nUnsigned (absolute) asynchrony is not generally used as a measure of 'prediction'\u2013in fact, you explicitly cannot tell if the greater asynchrony is in advance of or after the intended target, therefore it specifically obscures predictive vs. reactive taps. Usually, asynchrony is given as a measure of phase accuracy, especially when unsigned. If the authors want to make conclusions about predictive ability specifically, they should report unsigned asynchronies. This leads to my next point.\n\nI think the 4 dependent behavioural variables would benefit from relating to a phase/period framework. Asynchronies index phase accuracy (but of course tend to relate to overall period accuracy, as tapping at an incorrect period would likely lead to being out of phase, but tapping at an incorrect phase does not necessarily lead to tapping at the incorrect period). The 'constant error' measures appear to be a measure of period accuracy that is relatively agnostic to phase, and the standard deviation is measured on reproduced intervals only, therefore also only seems to be a measure of period variability, agnostic to phase.\n\nMoreover, perhaps that could be part of the reason you only see relationships with asynchrony (i.e., that the precision of the alignment between taps and stimuli is what the auditory\u2013motor system is judging, but this same precision relative to an internal clock (which is more what your period measures are)) is not supported by the same system? And that relationship is not embodied in visual\u2013motor synchronization (perhaps because our visual system timing for punctate events is generally poor)? In any case, I think phase/period distinctions would make your measures easier to relate to existing literature (which does often distinguish between phase and period) and also may provide some explanation for the lack of relationship to the brain data for some measures but not others.\n",
+      "created_at": "2025-12-04T04:53:52.209833Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T04:53:52.209833Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T04:53:52.209833Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "9d6bb234-f2a3-4d9d-8785-72197eb2ddab",
+      "content_id": "add819e2-0c31-408d-9f7a-acf063b5c800",
+      "claim_id": "C1",
+      "claim": "32 subjects performed a synchronization-continuation tapping task (SCT) with auditory or visual metronomes and five tempos ranging from 550 to 950 ms.",
+      "claim_type": "EXPLICIT",
+      "source": "Diffusion-weighted images were obtained from 32 subjects who performed the SCT with auditory or visual metronomes and five tempos ranging from 550 to 950 ms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the number of subjects, task type, modalities, and tempo range used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:53:52.209833Z"
+    },
+    {
+      "id": "037d625d-d807-4eb4-887f-5ad7c929872a",
+      "content_id": "add819e2-0c31-408d-9f7a-acf063b5c800",
+      "claim_id": "C2",
+      "claim": "Individual differences in the density of U-fibers in the right audiomotor system were correlated with the degree of phase accuracy between the stimuli and taps across subjects.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, individual differences in the density of U-fibers in the right audiomotor system were correlated with the degree of phase accuracy between the stimuli and taps across subjects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding directly stated in the abstract, supported by the experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:53:52.209833Z"
+    },
+    {
+      "id": "1f84ab6b-b26e-4504-bc5f-9cc9079ee170",
+      "content_id": "add819e2-0c31-408d-9f7a-acf063b5c800",
+      "claim_id": "C3",
+      "claim": "The correlations between U-fiber density and phase accuracy were specific to the synchronization epoch with auditory metronomes and tempos around 1.5 Hz.",
+      "claim_type": "EXPLICIT",
+      "source": "These correlations were specific to the synchronization epoch with auditory metronomes and tempos around 1.5 Hz.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the specificity of the correlations to particular task conditions and tempo ranges.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:53:52.209833Z"
+    },
+    {
+      "id": "93fc7a27-9504-4a64-9ace-68e95225d638",
+      "content_id": "add819e2-0c31-408d-9f7a-acf063b5c800",
+      "claim_id": "C4",
+      "claim": "A significant association was found between phase accuracy and the density and bundle diameter of the corpus callosum (CC).",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, a significant association was found between phase accuracy and the density and bundle diameter of the corpus callosum (CC), forming an interval-selective map where short and long intervals were behaviorally correlated with the anterior and posterior portions of the CC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This finding is explicitly stated in the abstract and supported by fixel-based analysis data presented in the results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:53:52.209833Z"
+    },
+    {
+      "id": "ece0ab10-40b2-4be9-b72d-22b13e67e66f",
+      "content_id": "add819e2-0c31-408d-9f7a-acf063b5c800",
+      "claim_id": "C5",
+      "claim": "Short and long intervals were behaviorally correlated with the anterior and posterior portions of the corpus callosum, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, a significant association was found between phase accuracy and the density and bundle diameter of the corpus callosum (CC), forming an interval-selective map where short and long intervals were behaviorally correlated with the anterior and posterior portions of the CC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly describes an interval-selective topographic map in the corpus callosum.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:53:52.209833Z"
+    },
+    {
+      "id": "edcc08d0-0a60-4d94-b480-ac19be3c7d37",
+      "content_id": "add819e2-0c31-408d-9f7a-acf063b5c800",
+      "claim_id": "C6",
+      "claim": "Humans can entrain to auditory beats across a wide range of tempos.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, humans are extremely sensitive to auditory regularities and can entrain to auditory beats across a wide range of tempos, as well as use timed movements of different body parts (such as finger or foot taps or body swaying) to keep the beat (Mendoza and Merchant, 2014; Repp and Su, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research in the field.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:53:52.209833Z"
+    },
+    {
+      "id": "936e1823-2123-4bf1-b816-40376848e392",
+      "content_id": "add819e2-0c31-408d-9f7a-acf063b5c800",
+      "claim_id": "C7",
+      "claim": "Humans show negative asynchronies during synchronization-continuation tasks, tapping a few milliseconds before the metronome.",
+      "claim_type": "EXPLICIT",
+      "source": "In this type of task, humans show negative asynchronies, namely they tap a few milliseconds before the metronome, supporting the notion that entrainment depends on a predictive internal beat that is phase-locked to the stimuli (Lenc et al., 2021; Repp and Su, 2013; Zarco et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This behavioral phenomenon is described with supporting citations from the literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:53:52.209833Z"
+    },
+    {
+      "id": "7769fa74-5310-48b7-b892-de660308fbf6",
+      "content_id": "add819e2-0c31-408d-9f7a-acf063b5c800",
+      "claim_id": "C8",
+      "claim": "The internal beat representation during an SCT rests in the motor system, including the basal ganglia and supplementary motor regions.",
+      "claim_type": "EXPLICIT",
+      "source": "Neurophysiological and functional imaging studies have shown that the internal beat representation during an SCT rests in the motor system, including the basal ganglia and supplementary motor regions (Bartolo et al., 2014; Merchant et al., 2013a; Merchant and Averbeck, 2017; Rao et al., 2001; S\u00e1nchez-Moncada et al., 2024).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to neurophysiological and imaging studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:53:52.209833Z"
+    },
+    {
+      "id": "7283cbd9-a3dc-43df-9e0d-70adaab5e0fb",
+      "content_id": "add819e2-0c31-408d-9f7a-acf063b5c800",
+      "claim_id": "C9",
+      "claim": "Neurons in the supplementary motor areas (SMAs) are tuned to the tempo duration of tapping.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, neurons in the supplementary motor areas (SMAs) are tuned to the tempo duration of tapping (Merchant et al., 2014a; Merchant et al., 2013b), giving rise to interval-specific circuits that define a chronotopic map with short preferred intervals in the anterior portion and long preferred intervals in the posterior portion of the medial premotor areas (Protopapa et al., 2019; Merchant et al., 2024b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim about neural tuning is supported by citations to neurophysiological studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:53:52.209833Z"
+    },
+    {
+      "id": "427b298b-2730-4c51-aee1-eadc756dd7b5",
+      "content_id": "add819e2-0c31-408d-9f7a-acf063b5c800",
+      "claim_id": "C10",
+      "claim": "Interval-specific circuits define a chronotopic map with short preferred intervals in the anterior portion and long preferred intervals in the posterior portion of the medial premotor areas.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, neurons in the supplementary motor areas (SMAs) are tuned to the tempo duration of tapping (Merchant et al., 2014a; Merchant et al., 2013b), giving rise to interval-specific circuits that define a chronotopic map with short preferred intervals in the anterior portion and long preferred intervals in the posterior portion of the medial premotor areas (Protopapa et al., 2019; Merchant et al., 2024b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This topographic organization is described with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:53:52.209833Z"
+    },
+    {
+      "id": "e474522f-3278-42a0-b273-5fd6b89475c8",
+      "content_id": "add819e2-0c31-408d-9f7a-acf063b5c800",
+      "claim_id": "C11",
+      "claim": "Humans demonstrate a spontaneous rhythmic tempo around 600\u2013750 ms.",
+      "claim_type": "EXPLICIT",
+      "source": "This spontaneous or preferred tempo is around 600\u2013750 ms in human adults (Fischl, 2012; Fraisse, 1978, but see Parncutt, 1994), but is faster in early childhood and slower in late adulthood (McAuley et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim about spontaneous tempo is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:53:52.209833Z"
+    },
+    {
+      "id": "8c660c86-7b91-4fd4-a6d8-e40fed68e037",
+      "content_id": "add819e2-0c31-408d-9f7a-acf063b5c800",
+      "claim_id": "C12",
+      "claim": "The perception of rhythmic stimuli has a preferred tempo with an optimal sampling rate of ~1.4 Hz (ISI of 714 ms) in audition and ~0.7 Hz (ISI of 1428 ms) in vision.",
+      "claim_type": "EXPLICIT",
+      "source": "A recent study demonstrated that the perception of rhythmic stimuli also has a preferred tempo, with an optimal sampling rate of ~1.4 Hz (ISI of 714 ms) in audition and ~0.7 Hz (ISI of 1428 ms) in vision.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on a recent study cited in the text.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:53:52.209833Z"
+    },
+    {
+      "id": "2e51bb7a-1fd3-49f7-bdde-71328244f02b",
+      "content_id": "add819e2-0c31-408d-9f7a-acf063b5c800",
+      "claim_id": "C13",
+      "claim": "Motor tapping helps to synchronize the temporal fluctuations of attention with maximal effects at ~1.7 Hz (ISI of 588 ms), but only for the auditory modality.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, motor tapping helps to synchronize the temporal fluctuations of attention with maximal effects at ~1.7 Hz (ISI of 588 ms), but only for the auditory modality (Zalta et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Zalta et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:53:52.209833Z"
+    },
+    {
+      "id": "13b96008-6660-4d8e-9a99-d671e9f0e2db",
+      "content_id": "add819e2-0c31-408d-9f7a-acf063b5c800",
+      "claim_id": "C14",
+      "claim": "There are wide individual differences in the period and phase of movement synchronization across humans.",
+      "claim_type": "EXPLICIT",
+      "source": "Although rhythmic entrainment is prevalent across all human cultures and is a natural behavior for social interaction (Nettle, 2000; Jacoby et al., 2024), there are wide individual differences in the period (inter-tap interval) and phase (asynchronies) of movement synchronization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim about individual variability is stated with supporting citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:53:52.209833Z"
+    },
+    {
+      "id": "b6b6b30c-6823-499a-9a38-f4d1414ee3a6",
+      "content_id": "add819e2-0c31-408d-9f7a-acf063b5c800",
+      "claim_id": "C15",
+      "claim": "Around 10% of the population are poor synchronizers who show low period accuracy and large asynchronies to isochronous metronomes and musical excerpts.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, there are poor synchronizers (around 10% of the population) that show low period accuracy and large asynchronies to isochronous metronomes and musical excerpts (Phillips-Silver et al., 2011; Sowi\u0144ski and Dalla Bella, 2013; Tranchant et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim about the prevalence of poor synchronizers is supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:53:52.209833Z"
+    },
+    {
+      "id": "477bd93e-6563-4016-843f-c0a9bc662143",
+      "content_id": "add819e2-0c31-408d-9f7a-acf063b5c800",
+      "claim_id": "C16",
+      "claim": "A large-scale genome-wide association study demonstrated a highly polygenic architecture of the human capacity to synchronize to a musical beat.",
+      "claim_type": "EXPLICIT",
+      "source": "A large-scale genome-wide association study (GWAS) recently demonstrated a highly polygenic architecture of the human capacity to synchronize to a musical beat. The GWAS phenotype for beat synchronization was related to performance in beat synchronization tasks and rhythm perception tasks (Niarchou et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a GWAS study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:53:52.209833Z"
+    },
+    {
+      "id": "f6546b79-90d7-4f8a-920f-6737c894bfd7",
+      "content_id": "add819e2-0c31-408d-9f7a-acf063b5c800",
+      "claim_id": "C17",
+      "claim": "Genetic influences account for only a small portion of human variation in beat synchronization, while environmental influences are the primary drivers of rhythmic accuracy.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, genetic influences account for only a small portion of human variation in beat synchronization, while environmental influences are the primary drivers of rhythmic accuracy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim about the relative contributions of genetic and environmental factors is stated in the introduction.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:53:52.209833Z"
+    },
+    {
+      "id": "4bcb89c2-c19b-4023-8b0a-d6d29a6d202b",
+      "content_id": "add819e2-0c31-408d-9f7a-acf063b5c800",
+      "claim_id": "C18",
+      "claim": "Individual differences in beat perception depend on activation differences in the SMA and the posterior auditory cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, functional imaging has revealed that individual differences in beat perception depend on activation differences in the SMA and the posterior auditory cortex (Grahn and McAuley, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a functional imaging study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:53:52.209833Z"
+    },
+    {
+      "id": "bf958c53-88c5-4212-8775-78bef8abde3e",
+      "content_id": "add819e2-0c31-408d-9f7a-acf063b5c800",
+      "claim_id": "C19",
+      "claim": "The putamen, SMA, and auditory cortex show greater functional connectivity during rhythm perception, with larger modulation for musicians than non-musicians.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the putamen, SMA, and auditory cortex show greater functional connectivity during rhythm perception, with larger modulation for musicians than non-musicians (Grahn and Rowe, 2009; Grahn and Rowe, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim about functional connectivity differences is supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:53:52.209833Z"
+    },
+    {
+      "id": "b6147124-d602-426e-aba3-e9754ebaf966",
+      "content_id": "add819e2-0c31-408d-9f7a-acf063b5c800",
+      "claim_id": "C20",
+      "claim": "U-fibers are short-range fibers that run tangentially to the cortical surface and connect adjacent and proximal cortical regions.",
+      "claim_type": "EXPLICIT",
+      "source": "Long-range anatomical connectivity is supported by deep white matter (DWM) bundles, while short-range connectivity is achieved through fibers that run tangentially to the cortical surface and connect adjacent and proximal cortical regions. These fibers are collectively termed U-fibers due to their shape (Sch\u00fcz and Braitenberg, 2002; Schmahmann et al., 2006, Shastin et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This definition of U-fibers is provided with supporting citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:53:52.209833Z"
+    },
+    {
+      "id": "a27b7b41-101c-471e-9aef-1ea3232f8b5a",
+      "content_id": "add819e2-0c31-408d-9f7a-acf063b5c800",
+      "claim_id": "C21",
+      "claim": "Absolute asynchronies showed significant main effects for duration and modality, with significantly larger asynchronies for the visual than auditory modality across all durations.",
+      "claim_type": "EXPLICIT",
+      "source": "The ANOVA showed significant main effects for duration (F(4,124) = 36.88, p < 0.0001) and modality (F(1,31) = 20, p < 0.0001), as well as a significant duration \u00d7 modality interaction (F(4,124) = 32.3, p < 0.0001). Tukey's honest significant difference (HSD) post hoc test showed significantly larger asynchronies for the visual than auditory modality across all durations (p < 0.0001 for 550, 650, 750, and 850 ms; p = 0.006 for 950 ms; with the interaction effect mainly driven by the difference in the 950 ms across modalities).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by statistical analysis of the behavioral data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:53:52.209833Z"
+    },
+    {
+      "id": "ddd6e1b3-69c9-4e18-92e8-1068d689c4f1",
+      "content_id": "add819e2-0c31-408d-9f7a-acf063b5c800",
+      "claim_id": "C22",
+      "claim": "There was a significant correlation between absolute asynchronies at 650 and 750 ms intervals for both the auditory and visual conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we computed the intersubject correlation matrix on the absolute asynchronies across instructed intervals and found a significant correlation between 650 and 750 ms for both the auditory and visual conditions (r = 0.67, p = 0.000026; r = 0.69, p = 0.000011, respectively) (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This correlation is reported with statistical values and referenced to a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:53:52.209833Z"
+    },
+    {
+      "id": "bf446b8d-a61e-4ce1-961b-7d76e9c83867",
+      "content_id": "add819e2-0c31-408d-9f7a-acf063b5c800",
+      "claim_id": "C23",
+      "claim": "Lag 1 autocorrelation across trials was negative (~80% of the trials) and similar across modalities and target durations.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, lag 1 autocorrelation across trials was negative (~80% of the trials) and similar across modalities and target durations, supporting the notion of a robust and amodal error correction mechanism during the SCT.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This finding is stated based on the analysis of autocorrelation data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:53:52.209833Z"
+    },
+    {
+      "id": "592fe1f1-108f-48b4-928e-fdf5cec7a096",
+      "content_id": "add819e2-0c31-408d-9f7a-acf063b5c800",
+      "claim_id": "C24",
+      "claim": "During continuation, the constant error followed the bias effect, with overestimation for short durations and underestimation for long durations, especially for the auditory condition.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, for the continuation epoch, the constant error followed the bias effect, with overestimation for short durations and underestimation for long durations, especially for the auditory condition (Jazayeri and Shadlen, 2010; P\u00e9rez and Merchant, 2018; P\u00e9rez et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This behavioral pattern is described with supporting citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:53:52.209833Z"
+    },
+    {
+      "id": "7783c31c-0f6c-4e9e-8867-e4bfbdabd393",
+      "content_id": "add819e2-0c31-408d-9f7a-acf063b5c800",
+      "claim_id": "C25",
+      "claim": "The indifference interval was 654 ms for the auditory condition and 420 ms for the visual condition.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the indifference interval, which corresponds to the interval associated with zero constant error, was 654 ms for the auditory condition (Figure 2D, blue arrow) and 420 ms for the visual condition.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "These specific values are reported from the data analysis and shown in a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:53:52.209833Z"
+    },
+    {
+      "id": "8799a732-ddc2-473e-ba8f-754288ad11f0",
+      "content_id": "add819e2-0c31-408d-9f7a-acf063b5c800",
+      "claim_id": "C26",
+      "claim": "Temporal variability showed significantly greater values in the visual metronome than in the auditory metronome during the synchronization but not the continuation epoch.",
+      "claim_type": "EXPLICIT",
+      "source": "The HSD post hoc tests showed significantly greater temporal variability in the visual metronome than in the auditory metronome (for the intervals 650, 750, 850, and 950 ms: p < 0.0001) during the synchronization but not the continuation epoch, confirming the high period precision for auditory metronomes, especially during synchronization (Figure 2E; G\u00e1mez et al., 2018; Repp and Penel, 2004).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This finding is supported by statistical analysis and referenced to a figure and citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:53:52.209833Z"
+    },
+    {
+      "id": "18053972-3e1f-4ae5-b62c-d90864f6ca4e",
+      "content_id": "add819e2-0c31-408d-9f7a-acf063b5c800",
+      "claim_id": "C27",
+      "claim": "Negative correlations were found between auditory absolute asynchronies and values of the AFD maps in the five depths sampled.",
+      "claim_type": "EXPLICIT",
+      "source": "This analysis showed the existence of negative correlations between the auditory absolute asynchronies and values of the AFD maps in the five depths sampled (Figure 3E\u2013G; also see Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This correlation is reported based on surface-based analysis and shown in figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:53:52.209833Z"
+    },
+    {
+      "id": "cdd71435-1e37-4847-a2d7-48ecb5691e3b",
+      "content_id": "add819e2-0c31-408d-9f7a-acf063b5c800",
+      "claim_id": "C28",
+      "claim": "Subjects with auditory asynchronies closer to zero had significantly higher AFD and tanAFD values than subjects with less predictive performance.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, subjects with auditory asynchronies closer to zero, and hence with larger predictive abilities, had significantly higher AFD and tanAFD values than subjects with less predictive performance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This relationship between behavioral performance and structural measures is stated based on the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:53:52.209833Z"
+    },
+    {
+      "id": "d807fbcd-8fd3-45ca-b8c0-35d49d6dd847",
+      "content_id": "add819e2-0c31-408d-9f7a-acf063b5c800",
+      "claim_id": "C29",
+      "claim": "Significant associations between AFD maps and behavioral parameters were observed mainly for the auditory asynchronies of the 650 and 750 ms intervals and the totalAFD and tanAFD values.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, these significant associations were observed mainly for the auditory asynchronies of the 650 and 750 ms intervals and the totalAFD and tanAFD values (see Figure 3\u2014videos 1\u20133).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This specificity of the associations is reported based on the analysis and referenced to videos.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:53:52.209833Z"
+    },
+    {
+      "id": "08661f9a-4d05-4f1a-a5de-4f44eb76df15",
+      "content_id": "add819e2-0c31-408d-9f7a-acf063b5c800",
+      "claim_id": "C30",
+      "claim": "No significant correlations were found between the three AFD maps and the constant error, temporal variability, and lag 1 autocorrelation for the auditory condition.",
+      "claim_type": "EXPLICIT",
+      "source": "No significant correlations were found between the three AFD maps and the constant error, temporal variability, and lag 1 autocorrelation for the auditory condition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This null finding is explicitly stated in the results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:53:52.209833Z"
+    },
+    {
+      "id": "1edfe377-9fb0-47c9-b0a0-9b50924c39f6",
+      "content_id": "add819e2-0c31-408d-9f7a-acf063b5c800",
+      "claim_id": "C31",
+      "claim": "No correlations were observed between the three metrics of the SWM and all the behavioral parameters for the visual condition.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, no correlations were observed between the three metrics of the SWM and all the behavioral parameters for the visual condition (see Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This null finding for the visual condition is explicitly stated and referenced to a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:53:52.209833Z"
+    },
+    {
+      "id": "0c89e2f4-d2d6-445e-b5d6-22ea216c9d6e",
+      "content_id": "add819e2-0c31-408d-9f7a-acf063b5c800",
+      "claim_id": "C32",
+      "claim": "After correction for multiple comparisons, only intervals of 650, 750, and 850 ms showed a significant association between the behavioral and structural parameters.",
+      "claim_type": "EXPLICIT",
+      "source": "After correction for multiple comparisons (pcft < 0.001 and pcluster < 0.001), only intervals of 650, 750, and 850 ms showed a significant association between the behavioral and structural parameters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This finding is reported after statistical correction for multiple comparisons.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:53:52.209833Z"
+    },
+    {
+      "id": "7fa83aae-f7e4-4f18-a3ec-8b254568b065",
+      "content_id": "add819e2-0c31-408d-9f7a-acf063b5c800",
+      "claim_id": "C33",
+      "claim": "Nine clusters (with 2232 vertices), twelve clusters (with 2827 vertices), and two clusters (with 374 vertices) showed significant correlations between auditory asynchronies and tanAFD for the 650, 750, and 850 ms intervals, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, nine (with 2232 vertices), twelve (with 2827 vertices), and two (with 374 vertices) clusters showed significant correlations between auditory asynchronies and tanAFD for the 650, 750, and 850 ms intervals, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "These specific numbers of clusters and vertices are reported from the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:53:52.209833Z"
+    },
+    {
+      "id": "7e8e27a7-f377-47a5-9d62-f886d2838ceb",
+      "content_id": "add819e2-0c31-408d-9f7a-acf063b5c800",
+      "claim_id": "C34",
+      "claim": "At a depth of 1.5 mm, the regions with a larger percent of significant vertices for the right hemisphere at 750 ms were the medial premotor (SMA and preSMA), auditory, and language motor areas.",
+      "claim_type": "EXPLICIT",
+      "source": "At a depth of 1.5 mm, the regions with a larger percent of significant vertices for the right hemisphere at 750 ms were the medial premotor (supplementary motor area [SMA] and preSMA), auditory, and language motor areas (B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This anatomical specificity is reported from the analysis and shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:53:52.209833Z"
+    },
+    {
+      "id": "7fd2530c-4ea9-47ec-90d1-4b6b1c9c8937",
+      "content_id": "add819e2-0c31-408d-9f7a-acf063b5c800",
+      "claim_id": "C35",
+      "claim": "The highest correlation in the canonical correlation analysis was found between the SCT data and the tanAFD, closely followed by totalAFD, and then parAFD.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, all pairings of behavioral and AFD data rendered highly correlated canonical variates (Figure 6A). In line with the previous results, the highest correlation was found between the SCT data and the tanAFD, closely followed by totalAFD, and then parAFD (Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This ranking of correlations is reported from the canonical correlation analysis and shown in a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:53:52.209833Z"
+    },
+    {
+      "id": "3c850dcb-3cee-4e2e-b383-1e19c35f1a74",
+      "content_id": "add819e2-0c31-408d-9f7a-acf063b5c800",
+      "claim_id": "C36",
+      "claim": "The asynchronies of the auditory modality for the 650\u2013850 ms intervals are the parameters with a significant relation to the canonical variate.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 6B depicts the correlations between each standardized SCT parameter and the corresponding canonical variate (U), where it is evident that the asynchronies of the auditory modality for the 650\u2013850 ms intervals are the parameters with a significant relation to the canonical variate.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This finding from the canonical correlation analysis is shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:53:52.209833Z"
+    },
+    {
+      "id": "baa7e21b-5b8f-4179-a2f6-ceb86e2067c4",
+      "content_id": "add819e2-0c31-408d-9f7a-acf063b5c800",
+      "claim_id": "C37",
+      "claim": "The FBA revealed significant negative correlations between the FDC in the CC and the absolute asynchronies to the auditory metronome for 650, 750, 850, and 950 ms intervals.",
+      "claim_type": "EXPLICIT",
+      "source": "The FBA revealed significant negative correlations between the FDC in the CC and the absolute asynchronies to the auditory metronome for 650, 750, 850, and 950 ms intervals (Figure 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This finding from fixel-based analysis is reported and shown in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:53:52.209833Z"
+    },
+    {
+      "id": "386c301c-b33a-4568-ae1d-e2b2e15a71ce",
+      "content_id": "add819e2-0c31-408d-9f7a-acf063b5c800",
+      "claim_id": "C38",
+      "claim": "Subjects exhibiting large phase accuracy with asynchronies close to zero showed large FDC values, and subjects with poor phase accuracy and large asynchronies had low FDC values.",
+      "claim_type": "EXPLICIT",
+      "source": "Subjects exhibiting large phase accuracy with asynchronies close to zero also showed large FDC values, and subjects with poor phase accuracy and large asynchronies had low FDC values (Figure 7\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This relationship between behavioral and structural measures is reported and shown in a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:53:52.209833Z"
+    },
+    {
+      "id": "fd004153-68b9-479b-9bc9-ee2b4906461e",
+      "content_id": "add819e2-0c31-408d-9f7a-acf063b5c800",
+      "claim_id": "C39",
+      "claim": "The FDC fixel values of the posterior midbody of the CC showed a significant negative correlation with absolute auditory asynchronies for the 650 and 750 ms intervals.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the FDC fixel values of the posterior midbody of the CC (interconnecting motor and premotor cortices and M1) showed a significant negative correlation with absolute auditory asynchronies for the 650 and 750 ms intervals (Figure 7BC; family-wise error-corrected p-value <0.05).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This anatomically specific correlation is reported with statistical correction and shown in a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:53:52.209833Z"
+    },
+    {
+      "id": "59f690d4-019d-4c21-9c6b-ce083f36ee1a",
+      "content_id": "add819e2-0c31-408d-9f7a-acf063b5c800",
+      "claim_id": "C40",
+      "claim": "For the asynchronies at the intermediate interval of 850 ms, a negative correlation was observed with FDC fixel values located in the isthmus and the splenium.",
+      "claim_type": "EXPLICIT",
+      "source": "For the asynchronies at the intermediate interval of 850 ms, a negative correlation was observed with FDC fixel values located in the isthmus and the splenium (Figure 7C; interconnecting primary motor, temporal, and visual cortices).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This anatomically specific correlation is reported and shown in a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:53:52.209833Z"
+    },
+    {
+      "id": "6b5bfc75-39d4-4f30-8ab4-0c2c76dbf724",
+      "content_id": "add819e2-0c31-408d-9f7a-acf063b5c800",
+      "claim_id": "C41",
+      "claim": "The asynchronies of the 950 ms interval showed a significant negative correlation with fixels located in forceps minor and major.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, the asynchronies of the 950 ms interval showed a significant negative correlation with fixels located in forceps minor and major (Figure 7A, D; interconnecting prefrontal and visual cortices, respectively).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This anatomically specific correlation is reported and shown in a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:53:52.209833Z"
+    },
+    {
+      "id": "ae2a3631-c87a-4836-8950-8da147fb947b",
+      "content_id": "add819e2-0c31-408d-9f7a-acf063b5c800",
+      "claim_id": "C42",
+      "claim": "For the auditory condition, the tracts with significant FC fixels were the left arcuate fasciculus, CC M1, forceps major, superior longitudinal fasciculus 2, and right fornix.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, for the auditory condition, the tracts with significant FC fixels were the left arcuate fasciculus (Figure 8A, E), CC M1 (Figure 8C, E), forceps major (Figure 8B, D), superior longitudinal fasciculus 2 (Figure 8F), and right fornix (see Figure 7\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "These specific tracts are identified from the analysis and shown in figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:53:52.209833Z"
+    },
+    {
+      "id": "99ac5b3c-785e-4c69-aeac-0a800bd6bfee",
+      "content_id": "add819e2-0c31-408d-9f7a-acf063b5c800",
+      "claim_id": "C43",
+      "claim": "The tapping phase and period during the SCT showed precision and accuracy, as well as error corrections that were biased toward auditory rather than visual metronomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Our study supports five conclusions: First, the tapping phase and period during the SCT showed precision and accuracy, as well as error corrections that were biased toward auditory rather than visual metronomes, thereby confirming previous observations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as one of the main conclusions of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:53:52.209833Z"
+    },
+    {
+      "id": "8d293cda-d154-40e9-85d1-997ad980f9a5",
+      "content_id": "add819e2-0c31-408d-9f7a-acf063b5c800",
+      "claim_id": "C44",
+      "claim": "The right audiomotor system exhibited individual differences in SWM and U-fiber density that were correlated with the degree of phase accuracy of the tapping synchronization across subjects.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, the right audiomotor system exhibited individual differences in SWM and U-fiber density. These differences were correlated with the degree of phase accuracy of the tapping synchronization across subjects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as one of the main conclusions of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:53:52.209833Z"
+    },
+    {
+      "id": "0a632f4e-007b-4315-8b3d-760dee9b9d5c",
+      "content_id": "add819e2-0c31-408d-9f7a-acf063b5c800",
+      "claim_id": "C45",
+      "claim": "The correlations between U-fiber density and phase accuracy were selective for the synchronization epoch of the auditory condition and were specific to the 650 and 750 ms intervals.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the correlations were selective for the synchronization epoch of the auditory condition and were specific to the 650 and 750 ms intervals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This specificity is stated as part of the main conclusions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:53:52.209833Z"
+    },
+    {
+      "id": "d05d968d-4257-49f3-ba34-6d1fc43eda48",
+      "content_id": "add819e2-0c31-408d-9f7a-acf063b5c800",
+      "claim_id": "C46",
+      "claim": "There was a significant association between the rhythmic entrainment phase and the density and bundle diameter of the CC, forming an interval-selective map with an anterior\u2013posterior trend.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, there was a significant association between the rhythmic entrainment phase and the density and bundle diameter of the CC, forming an interval-selective map with an anterior\u2013posterior trend.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as one of the main conclusions of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:53:52.209833Z"
+    },
+    {
+      "id": "1319e157-5617-4b91-bcfc-7baf03e1ea25",
+      "content_id": "add819e2-0c31-408d-9f7a-acf063b5c800",
+      "claim_id": "C47",
+      "claim": "The fiber bundle diameter of the arcuate fasciculus, CC, forceps major, and superior longitudinal fasciculus showed a significant correlation with the mean asynchronies across all tested tempos.",
+      "claim_type": "EXPLICIT",
+      "source": "Fourth, the fiber bundle diameter of the arcuate fasciculus, CC, forceps major, and superior longitudinal fasciculus showed a significant correlation with the mean asynchronies across all tested tempos.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as one of the main conclusions of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:53:52.209833Z"
+    },
+    {
+      "id": "836ad98a-d2dc-4e71-9659-1e390d0b5d5a",
+      "content_id": "add819e2-0c31-408d-9f7a-acf063b5c800",
+      "claim_id": "C48",
+      "claim": "No significant associations were found between SWM and DWM properties and temporal variability, constant error, or lag 1 autocorrelation under the visual and auditory conditions during the synchronization and continuation epochs of the SCT.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we found no significant associations between SWM and DWM properties and temporal variability, constant error, or lag 1 autocorrelation under the visual and auditory conditions during the synchronization and continuation epochs of the SCT.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This null finding is stated as one of the main conclusions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:53:52.209833Z"
+    },
+    {
+      "id": "3e695331-fecd-4ca7-b77a-9c9aea9874d9",
+      "content_id": "add819e2-0c31-408d-9f7a-acf063b5c800",
+      "claim_id": "C49",
+      "claim": "Performance tapping synchronized to an auditory metronome is more precise and accurate than synchronization to a flashing visual metronome with the same timing characteristics.",
+      "claim_type": "EXPLICIT",
+      "source": "Many studies have shown that performance tapping synchronized to an auditory metronome is more precise and accurate than synchronization to a flashing visual metronome with the same timing characteristics (Chen et al., 2002; Hove et al., 2013; Merchant et al., 2008c; Patel et al., 2005; Repp and Penel, 2004; Zarco et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:53:52.209833Z"
+    },
+    {
+      "id": "e633d1a5-4f98-476b-a588-c14a79c8e754",
+      "content_id": "add819e2-0c31-408d-9f7a-acf063b5c800",
+      "claim_id": "C50",
+      "claim": "The auditory\u2013visual asymmetry in synchronization can be cancelled out by visual moving metronomes.",
+      "claim_type": "EXPLICIT",
+      "source": "This auditory\u2013visual asymmetry can be cancelled out by visual moving metronomes (Hove et al., 2010; P\u00e9rez et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to studies using moving visual stimuli.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:53:52.209833Z"
+    },
+    {
+      "id": "6217e6f9-c889-455c-9773-6c698c6c7a2c",
+      "content_id": "add819e2-0c31-408d-9f7a-acf063b5c800",
+      "claim_id": "C51",
+      "claim": "The auditory system has higher temporal resolution compared to the visual system since the first processing relays.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the first processing relays, the auditory system has higher temporal resolution compared to the visual system (Duysens et al., 1996; He et al., 1997; Sayegh et al., 2011) and plays a critical role in time perception and reproduction across many tasks, not only in tapping SCTs (Grondin et al., 2005; Merchant et al., 2008b; Merchant and de Lafuente, 2014c).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim about sensory system differences is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:53:52.209833Z"
+    },
+    {
+      "id": "f7249c09-a02a-4674-8110-19409b16b134",
+      "content_id": "add819e2-0c31-408d-9f7a-acf063b5c800",
+      "claim_id": "C52",
+      "claim": "When audiovisual stimuli are used in an oddball paradigm, the perceived duration is dominated by the auditory modality.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, when audiovisual stimuli are used in an oddball paradigm, the perceived duration is dominated by the auditory modality (Chen and Yeh, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a specific study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:53:52.209833Z"
+    },
+    {
+      "id": "0ae46ff7-2b5e-4b03-806a-dc56e83b2c07",
+      "content_id": "add819e2-0c31-408d-9f7a-acf063b5c800",
+      "claim_id": "C53",
+      "claim": "Transcranial magnetic stimulation (TMS) disruption of the auditory cortex impaired time estimation for auditory and visual stimuli, while disruption in the visual cortex only produced timing impairments for visual stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, transcranial magnetic stimulation (TMS) disruption of the auditory cortex impaired time estimation for auditory and visual stimuli, while disruption in the visual cortex only produced timing impairments for visual stimuli (Kanai et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim about TMS effects is supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:53:52.209833Z"
+    },
+    {
+      "id": "df8d4141-75ab-4ffe-9a9e-5c0037dca6ca",
+      "content_id": "add819e2-0c31-408d-9f7a-acf063b5c800",
+      "claim_id": "C54",
+      "claim": "The auditory cortex is engaged in multimodal temporal processing.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, a current hypothesis is that the auditory cortex is engaged in multimodal temporal processing, and the interaction between the auditory and motor systems in the frontal lobe allows not only time encoding but also time prediction (Merchant and Honing, 2014b; Merchant and Yarrow, 2016; Patel and Iversen, 2014; Schwartze et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This hypothesis is stated with supporting citations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:53:52.209833Z"
+    },
+    {
+      "id": "de8ba7e1-79e0-4863-8e98-6b3367cd34ad",
+      "content_id": "add819e2-0c31-408d-9f7a-acf063b5c800",
+      "claim_id": "C55",
+      "claim": "The fiber bundle diameter of the left arcuate fasciculus showed a significant correlation with the mean asynchronies across all tested tempos.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, the fiber bundle diameter of the left arcuate fasciculus, a key tract connecting the parietotemporal auditory system with the frontal lobe, showed a significant correlation with the mean asynchronies across all tested tempos.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This specific finding about the arcuate fasciculus is stated in the discussion.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:53:52.209833Z"
+    },
+    {
+      "id": "2b277f25-c586-447a-a031-3f8ddb07432f",
+      "content_id": "add819e2-0c31-408d-9f7a-acf063b5c800",
+      "claim_id": "C56",
+      "claim": "The clustering of subjects as either good or bad synchronizers in a syllabic isochronous entrainment task correlates with both the difference in the activation magnitude in frontal areas and the changes in white matter pathways (i.e., left arcuate fasciculus) that connect the auditory system with the premotor cortical system.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the clear clustering of subjects as either good or bad synchronizers in a syllabic isochronous entrainment task correlates with both the difference in the activation magnitude in frontal areas and the changes in white matter pathways (i.e., left arcuate fasciculus) that connect the auditory system with the premotor cortical system (Assaneo et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:53:52.209833Z"
+    },
+    {
+      "id": "e5d33503-2d87-4a8d-8066-0e32b3a98e29",
+      "content_id": "add819e2-0c31-408d-9f7a-acf063b5c800",
+      "claim_id": "C57",
+      "claim": "The lack of structural associations in the visual condition is probably due to the larger variability in rhythmic tapping for this modality.",
+      "claim_type": "EXPLICIT",
+      "source": "The lack of structural associations in the visual condition is probably due to the larger variability in rhythmic tapping for this modality, making it difficult to infer statistical correlations between our metrics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation offered by the authors to explain a null finding.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:53:52.209833Z"
+    },
+    {
+      "id": "1aeebf12-461e-43ee-abb2-4086cae28ff0",
+      "content_id": "add819e2-0c31-408d-9f7a-acf063b5c800",
+      "claim_id": "C58",
+      "claim": "The null anatomo-behavioral associations for the visual condition could be due to the slow sampling rate of visual periodic temporal attention, with a sampling interval that is longer than the tested durations.",
+      "claim_type": "EXPLICIT",
+      "source": "As described above, the null anatomo-behavioral associations for the visual condition could also be due to the slow sampling rate of visual periodic temporal attention, with a sampling interval that is longer than our tested durations (Zalta et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an alternative explanation offered by the authors with a supporting citation.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:53:52.209833Z"
+    },
+    {
+      "id": "669e1a55-2715-4a2b-8c75-66dfc150029c",
+      "content_id": "add819e2-0c31-408d-9f7a-acf063b5c800",
+      "claim_id": "C59",
+      "claim": "The associations between the measured SWM and DWM properties and the accuracy in the synchronization phase were negative.",
+      "claim_type": "EXPLICIT",
+      "source": "The observed associations between the measured SWM and DWM properties and the accuracy in the synchronization phase were negative.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the direction of the correlations found in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:53:52.209833Z"
+    },
+    {
+      "id": "f8a9c470-4230-4107-b122-c17e61023b9c",
+      "content_id": "add819e2-0c31-408d-9f7a-acf063b5c800",
+      "claim_id": "C60",
+      "claim": "The white matter parameter values were greater in subjects with asynchronies close to zero and an accurate tapping phase with the metronome than in subjects with large gaps in time between the stimuli and taps.",
+      "claim_type": "EXPLICIT",
+      "source": "This result indicates that the white matter parameter values were greater in subjects with asynchronies close to zero and an accurate tapping phase with the metronome than in subjects with large gaps in time between the stimuli and taps.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This interpretation of the negative correlations is stated in the discussion.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:53:52.209833Z"
+    },
+    {
+      "id": "0795ed4a-21af-4ab3-a336-14a62ec21320",
+      "content_id": "add819e2-0c31-408d-9f7a-acf063b5c800",
+      "claim_id": "C61",
+      "claim": "Intersubject differences in rhythmic entrainment phase depend on micro- and macrostructural white matter properties, which could have a genetic and/or learned substrate.",
+      "claim_type": "EXPLICIT",
+      "source": "These results support the theory that intersubject differences in rhythmic entrainment phase depend on micro- and macrostructural white matter properties, which could have a genetic and/or learned substrate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation and theoretical claim made by the authors based on their findings.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:53:52.209833Z"
+    },
+    {
+      "id": "80583a65-d4a2-47ca-8fe1-ee744f907444",
+      "content_id": "add819e2-0c31-408d-9f7a-acf063b5c800",
+      "claim_id": "C62",
+      "claim": "The existence of poor and superior synchronizers may depend on the FD of superficial U-fibers in the right audiomotor system, as well as on the density of deep tracts such as the CC and arcuate fasciculus.",
+      "claim_type": "EXPLICIT",
+      "source": "From a genetics perspective, we could speculate that the existence of poor and superior synchronizers (Blecher et al., 2016) may depend on the FD of superficial U-fibers in the right audiomotor system, as well as on the density of deep tracts such as the CC and arcuate fasciculus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative claim made by the authors based on their findings.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:53:52.209833Z"
+    },
+    {
+      "id": "8bfb06cf-9a0a-4d36-8e5a-64488850fbd4",
+      "content_id": "add819e2-0c31-408d-9f7a-acf063b5c800",
+      "claim_id": "C63",
+      "claim": "SWM and DWM bundles may develop larger density and myelination during intense musical practice, distinguishing the audiomotor tracts between musicians and non-musicians.",
+      "claim_type": "EXPLICIT",
+      "source": "From a training perspective, these SWM and DWM bundles may develop larger density and myelination during intense musical practice, distinguishing the audiomotor tracts between musicians and non-musicians (Palomar-Garc\u00eda et al., 2020; Vaquero et al., 2018; Zatorre et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative claim about training effects, supported by citations.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:53:52.209833Z"
+    },
+    {
+      "id": "d864b96b-806a-45eb-aac8-8a89a1c960bb",
+      "content_id": "add819e2-0c31-408d-9f7a-acf063b5c800",
+      "claim_id": "C64",
+      "claim": "The interval specificity in the associations suggests that the preferred tempo for rhythmic entrainment has its origins in the structural properties of the U-fibers running superficially across the audiomotor circuit.",
+      "claim_type": "EXPLICIT",
+      "source": "The interval specificity in these associations suggests that the preferred tempo for rhythmic entrainment has its origins in the structural properties of the U-fibers running superficially across the audiomotor circuit.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretive claim made by the authors based on their findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:53:52.209833Z"
+    },
+    {
+      "id": "718807da-77f6-4822-a03f-ee216c169cad",
+      "content_id": "add819e2-0c31-408d-9f7a-acf063b5c800",
+      "claim_id": "C65",
+      "claim": "Cortico-cortical connectivity within the audiomotor system is especially designed to support the internal representation of an auditory beat at the preferred tempo, providing larger phase-locking abilities with the metronome for spontaneous motor tempos.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, we suggest that cortico-cortical connectivity within the audiomotor system is especially designed to support the internal representation of an auditory beat at the preferred tempo, providing larger phase-locking abilities with the metronome for spontaneous motor tempos (Balasubramaniam et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical claim made by the authors with a supporting citation.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:53:52.209833Z"
+    },
+    {
+      "id": "661764dd-31ba-48b8-8815-1329af77e212",
+      "content_id": "add819e2-0c31-408d-9f7a-acf063b5c800",
+      "claim_id": "C66",
+      "claim": "It is possible that no effects were found in the visual condition because the target interval of 950 ms was not slow enough for this modality.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, it is possible that we did not get effects in the visual condition because our target interval of 950 ms was not slow enough for this modality.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation offered by the authors for a null finding.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:53:52.209833Z"
+    },
+    {
+      "id": "106b8504-5333-46f2-bbc2-bf868e8ff6f8",
+      "content_id": "add819e2-0c31-408d-9f7a-acf063b5c800",
+      "claim_id": "C67",
+      "claim": "Ultra-high-field (7T) functional imaging revealed that the medial premotor areas (SMA and pre-SMA) of the human brain possess neural circuits that are tuned to different durations, forming a topographical arrangement during a visual discrimination task.",
+      "claim_type": "EXPLICIT",
+      "source": "Ultra-high-field (7T) functional imaging revealed that the medial premotor areas (SMA and pre-SMA) of the human brain possess neural circuits that are tuned to different durations, forming a topographical arrangement during a visual discrimination task.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim about chronomaps is supported by citations to imaging studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:53:52.209833Z"
+    },
+    {
+      "id": "90ea1bea-fbd6-4b06-a6e0-59a35c4650f0",
+      "content_id": "add819e2-0c31-408d-9f7a-acf063b5c800",
+      "claim_id": "C68",
+      "claim": "Chronomaps show units with enhanced responses for the preferred interval and suppressed activity for the non-preferred duration, and define a topographical gradient with short preferred intervals in the anterior portion and long preferred intervals in the posterior portion of the medial premotor areas.",
+      "claim_type": "EXPLICIT",
+      "source": "These chronomaps show units with enhanced responses for the preferred interval and suppressed activity for the non-preferred duration, and define a topographical gradient with short preferred intervals in the anterior portion and long preferred intervals in the posterior portion of the medial premotor areas (Protopapa et al., 2019; Schwartze et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This description of chronomaps is supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:53:52.209833Z"
+    },
+    {
+      "id": "52cd197f-60a2-46fd-8841-a80b66e96f2a",
+      "content_id": "add819e2-0c31-408d-9f7a-acf063b5c800",
+      "claim_id": "C69",
+      "claim": "Chronomaps represent relative rather than absolute time, and they present some flexibility in the location of the preferred interval depending on the task context.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, chronomaps also showed an anterior\u2013posterior gradient, but they represent relative rather than absolute time, and they presented some flexibility in the location of the preferred interval depending on the task context (Bueti et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim about the nature of chronomaps is supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:53:52.209833Z"
+    },
+    {
+      "id": "1a419124-96a4-4596-8b1c-cafdb1d90878",
+      "content_id": "add819e2-0c31-408d-9f7a-acf063b5c800",
+      "claim_id": "C70",
+      "claim": "A recent imaging study described the existence of large chronomaps covering the cortical mantle from the dorsal and ventral premotor areas to the occipital pole.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, a recent imaging study described the existence of large chronomaps covering the cortical mantle from the dorsal and ventral premotor areas to the occipital pole (Harvey et al., 2020; Hendrikx et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to recent imaging studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:53:52.209833Z"
+    },
+    {
+      "id": "8e615463-526c-4b43-9808-167056f85953",
+      "content_id": "add819e2-0c31-408d-9f7a-acf063b5c800",
+      "claim_id": "C71",
+      "claim": "The interval-selective map found in this study is defined by the correlation between asynchronies and FDA, with no topographic model of the distribution of preferred intervals as shown in fMRI studies.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, our interval-selective map is defined by the correlation between asynchronies and FDA, with no topographic model of the distribution of preferred intervals as shown in functional magnetic resonance imaging (fMRI) studies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This distinguishes the current findings from previous fMRI studies.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:53:52.209833Z"
+    },
+    {
+      "id": "3ba7d5fc-f23b-4d1a-9dcf-59aa0f35f75a",
+      "content_id": "add819e2-0c31-408d-9f7a-acf063b5c800",
+      "claim_id": "C72",
+      "claim": "The map for duration selectivity starts anteriorly in the CC, which is linked to the premotor system, and ends in the CC of the visual areas of the occipital lobe.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings suggest that the map for duration selectivity starts anteriorly in the CC, which is linked to the premotor system, and ends in the CC of the visual areas of the occipital lobe.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the topographic findings made by the authors.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:53:52.209833Z"
+    },
+    {
+      "id": "fb0a748b-6f6d-4cc9-9274-1a33beaa5243",
+      "content_id": "add819e2-0c31-408d-9f7a-acf063b5c800",
+      "claim_id": "C73",
+      "claim": "The anterior selectivity for the 650 and 750 ms ISI supports the notion that the motor system functions at 1.7 Hz during beat perception and entrainment and strongly influences the auditory system but not the visual system at this tempo.",
+      "claim_type": "EXPLICIT",
+      "source": "The anterior selectivity for the 650 and 750 ms ISI supports the notion that the motor system functions at 1.7 Hz during beat perception and entrainment and strongly influences the auditory system but not the visual system at this tempo (Zalta et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This interpretation is supported by a citation to Zalta et al., 2020.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:53:52.209833Z"
+    },
+    {
+      "id": "ce34b617-113c-4a28-a41d-6299f5f1e8a8",
+      "content_id": "add819e2-0c31-408d-9f7a-acf063b5c800",
+      "claim_id": "C74",
+      "claim": "Timing maps define a cortical processing framework for efficient timing integration that has both functional and anatomical bases, especially for the auditory modality.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, timing maps define a cortical processing framework for efficient timing integration that has both functional and anatomical bases, especially for the auditory modality (Merchant and de Lafuente, 2024a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical claim made by the authors with a supporting citation.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:53:52.209833Z"
+    },
+    {
+      "id": "74a43e99-62c8-4cab-87b7-d35ede40b3ef",
+      "content_id": "add819e2-0c31-408d-9f7a-acf063b5c800",
+      "claim_id": "C75",
+      "claim": "Blecher et al., 2016 found a positive association between the fractional anisotropy of the left arcuate fasciculus and CC and performance in an auditory-cued finger-tapping task.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, Blecher et al., 2016 found a positive association between the fractional anisotropy of the left arcuate fasciculus and CC and performance in an auditory-cued finger-tapping task.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim about a previous study is supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:53:52.209833Z"
+    },
+    {
+      "id": "71e4879d-c171-4c14-8a2c-3ac2c1711d36",
+      "content_id": "add819e2-0c31-408d-9f7a-acf063b5c800",
+      "claim_id": "C76",
+      "claim": "The SWM immediately below the cortex accounts for 60% of the total white matter volume and is pivotal in maintaining cortico-cortical connectivity.",
+      "claim_type": "EXPLICIT",
+      "source": "The SWM immediately below the cortex has received has been less studied than DWM fasciculi, even though it accounts for 60% of the total white matter volume and is pivotal in maintaining cortico-cortical connectivity (Sch\u00fcz and Braitenberg, 2002; Schmahmann et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim about SWM is supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:53:52.209833Z"
+    },
+    {
+      "id": "e73e113b-e384-4823-bdfd-3de13625cfb8",
+      "content_id": "add819e2-0c31-408d-9f7a-acf063b5c800",
+      "claim_id": "C77",
+      "claim": "Recent studies have implicated SWM abnormalities in epilepsy, autism spectrum disorder, Alzheimer's disease, schizophrenia, and stroke.",
+      "claim_type": "EXPLICIT",
+      "source": "Nonetheless, recent studies have implicated SWM abnormalities in epilepsy (Liu et al., 2016), autism spectrum disorder (Hong et al., 2019), Alzheimer's disease (Phillips et al., 2016), schizophrenia (Nazeri et al., 2013), and stroke (Stockert et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim about clinical relevance is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:53:52.209833Z"
+    },
+    {
+      "id": "e709b044-3262-4c93-bfa6-68ab6ecc78c2",
+      "content_id": "add819e2-0c31-408d-9f7a-acf063b5c800",
+      "claim_id": "C78",
+      "claim": "The SWM contains short-range association fibers that connect adjacent gyri (U-fibers) and the initial or final portions of long-range connections that traverse the DWM.",
+      "claim_type": "EXPLICIT",
+      "source": "The SWM contains short-range association fibers that connect adjacent gyri (U-fibers) and the initial or final portions of long-range connections that traverse the DWM (Sch\u00fcz and Braitenberg, 2002; Guevara et al., 2020; Kirilina et al., 2020; Yoshino et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This anatomical description is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:53:52.209833Z"
+    },
+    {
+      "id": "580f5d9e-39eb-4679-8dbd-b90d7585518c",
+      "content_id": "add819e2-0c31-408d-9f7a-acf063b5c800",
+      "claim_id": "C79",
+      "claim": "The SWM is difficult to study because of its complicated geometry and abundance of fiber crossings.",
+      "claim_type": "EXPLICIT",
+      "source": "The SWM is difficult to study because of its complicated geometry and abundance of fiber crossings (Guevara et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This methodological challenge is stated with a supporting citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:53:52.209833Z"
+    },
+    {
+      "id": "535e09e2-405c-4259-adee-69f25708b0a9",
+      "content_id": "add819e2-0c31-408d-9f7a-acf063b5c800",
+      "claim_id": "C80",
+      "claim": "Better performance in a bimanual coordination task was associated with higher FBA values in the CC.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, better performance in a bimanual coordination task was associated with higher FBA values in the CC (Zivari Adab et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim about a previous study is supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:53:52.209833Z"
+    },
+    {
+      "id": "3b38fb9b-6e55-4a77-8931-6f3206ce5235",
+      "content_id": "add819e2-0c31-408d-9f7a-acf063b5c800",
+      "claim_id": "C81",
+      "claim": "Thirty-two healthy human subjects without musical training volunteered to participate in the study.",
+      "claim_type": "EXPLICIT",
+      "source": "Thirty-two healthy human subjects (age = 25.37 \u00b1 3.21 years; 19 females) without musical training volunteered to participate and gave informed consent, which complied with the Declaration of Helsinki and was approved by our Institutional Review Board.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the participant sample used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:53:52.209833Z"
+    },
+    {
+      "id": "8e22055d-b1b7-479a-a5dc-670243e31999",
+      "content_id": "add819e2-0c31-408d-9f7a-acf063b5c800",
+      "claim_id": "C82",
+      "claim": "All participants were right-handed and native Spanish speakers.",
+      "claim_type": "EXPLICIT",
+      "source": "All participants were right-handed and native Spanish speakers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes characteristics of the participant sample.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:53:52.209833Z"
+    },
+    {
+      "id": "0046eaf1-bf56-496e-8a6d-43239c330b78",
+      "content_id": "add819e2-0c31-408d-9f7a-acf063b5c800",
+      "claim_id": "C83",
+      "claim": "Participants did not have MRI contraindications or neurological, psychiatric, or cognitive conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "They did not have MRI contraindications or neurological, psychiatric, or cognitive conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the exclusion criteria for the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:53:52.209833Z"
+    },
+    {
+      "id": "e8c6cf68-9601-433d-bed3-d9b80d4eb03a",
+      "content_id": "add819e2-0c31-408d-9f7a-acf063b5c800",
+      "claim_id": "C84",
+      "claim": "The isochronous target intervals were 550, 650, 750, 850, and 950 ms.",
+      "claim_type": "EXPLICIT",
+      "source": "The isochronous target intervals were 550, 650, 750, 850, and 950 ms, which were pseudorandomly presented within a block.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental design parameters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:53:52.209833Z"
+    },
+    {
+      "id": "51d7ae6a-3b0a-4919-bdf0-22183cc85908",
+      "content_id": "add819e2-0c31-408d-9f7a-acf063b5c800",
+      "claim_id": "C85",
+      "claim": "Each subject performed 10 correct trials for each target interval.",
+      "claim_type": "EXPLICIT",
+      "source": "Each subject performed 10 correct trials for each target interval.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:53:52.209833Z"
+    },
+    {
+      "id": "56676d09-4502-4469-b9b4-7dd4a18ff3c6",
+      "content_id": "add819e2-0c31-408d-9f7a-acf063b5c800",
+      "claim_id": "C86",
+      "claim": "The MRIs were collected in the first session, and in a second visit, the auditory and visual tasks were performed randomly across subjects outside of the MRI scanner.",
+      "claim_type": "EXPLICIT",
+      "source": "The MRIs were collected in the first session. In a second visit, the auditory and visual tasks were performed randomly across subjects outside of the MRI scanner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:53:52.209833Z"
+    },
+    {
+      "id": "584a5020-3cc0-4edf-9320-a15658680bba",
+      "content_id": "add819e2-0c31-408d-9f7a-acf063b5c800",
+      "claim_id": "C87",
+      "claim": "Images were acquired using a 3T Philips Achieva TX scanner with a 32-channel head coil.",
+      "claim_type": "EXPLICIT",
+      "source": "Images were acquired using a 3T Philips Achieva TX scanner with a 32-channel head coil.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the imaging equipment used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:53:52.209833Z"
+    },
+    {
+      "id": "e13ee245-88e9-4bfa-af12-e315c3c7533a",
+      "content_id": "add819e2-0c31-408d-9f7a-acf063b5c800",
+      "claim_id": "C88",
+      "claim": "AFD is proportional to the total intra-axonal volume, thus reflecting the density of a population of fibers within a voxel.",
+      "claim_type": "EXPLICIT",
+      "source": "FD is derived from the integral of the fiber orientation distribution (FOD) lobes and is proportional to the total intra-axonal volume, thus reflecting the density of a population of fibers within a voxel (Rojas-Vite et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the interpretation of the FD metric with a supporting citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:53:52.209833Z"
+    },
+    {
+      "id": "c68445b9-bd37-4d00-99ea-57df1c3cbafd",
+      "content_id": "add819e2-0c31-408d-9f7a-acf063b5c800",
+      "claim_id": "C89",
+      "claim": "FC is a macroscopic metric of the fiber bundle diameter.",
+      "claim_type": "EXPLICIT",
+      "source": "FC is a macroscopic metric of the fiber bundle diameter and, finally, FDC is a combination of FD and FC (see Methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the interpretation of the FC metric.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:53:52.209833Z"
+    },
+    {
+      "id": "41076f76-f1ef-4b80-831e-2ea228642c52",
+      "content_id": "add819e2-0c31-408d-9f7a-acf063b5c800",
+      "claim_id": "C90",
+      "claim": "The average depth of the U-fiber system is approximately 1.5 mm.",
+      "claim_type": "EXPLICIT",
+      "source": "According to Sch\u00fcz and Braitenberg, 2002, the average depth of the U-fiber system is approximately 1.5 mm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This anatomical fact is stated with a supporting citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:53:52.209833Z"
+    },
+    {
+      "id": "64ea049b-31a7-489d-bdd9-7d6c1849981c",
+      "content_id": "add819e2-0c31-408d-9f7a-acf063b5c800",
+      "claim_id": "C91",
+      "claim": "Data for one subject was discarded for SWM analysis due to suboptimal registration between DWI metric maps and white matter surface.",
+      "claim_type": "EXPLICIT",
+      "source": "Data for one subject was discarded for SWM analysis (Figures 3\u20145) due to suboptimal registration between DWI metric maps and white matter surface.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a data exclusion in the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:53:52.209833Z"
+    },
+    {
+      "id": "b3009497-4c60-4c25-a8a4-4e2279c1f2eb",
+      "content_id": "add819e2-0c31-408d-9f7a-acf063b5c800",
+      "claim_id": "C92",
+      "claim": "parAFD is related to association, commissural, and projection fibers that eventually enter or exit DWM bundles.",
+      "claim_type": "EXPLICIT",
+      "source": "Throughout this work, we assume that parAFD is related to association, commissural, and projection fibers that eventually enter or exit DWM bundles, while tanAFD is informative of short-range cortico-cortical connections through U-fibers (Sch\u00fcz and Braitenberg, 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the interpretation of the parAFD metric with a supporting citation.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:53:52.209833Z"
+    },
+    {
+      "id": "3abaf2b4-1a82-4f8d-acfd-dfcd3b466e9c",
+      "content_id": "add819e2-0c31-408d-9f7a-acf063b5c800",
+      "claim_id": "C93",
+      "claim": "tanAFD is informative of short-range cortico-cortical connections through U-fibers.",
+      "claim_type": "EXPLICIT",
+      "source": "Throughout this work, we assume that parAFD is related to association, commissural, and projection fibers that eventually enter or exit DWM bundles, while tanAFD is informative of short-range cortico-cortical connections through U-fibers (Sch\u00fcz and Braitenberg, 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the interpretation of the tanAFD metric with a supporting citation.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:53:52.209833Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "73446f4f-15a1-472e-bae5-e657a8373ecc",
+      "content_id": "add819e2-0c31-408d-9f7a-acf063b5c800",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The study recruited 32 right-handed, native Spanish-speaking adults without musical training or neurological conditions, who performed a synchronization-continuation tapping task with auditory and visual metronomes at five tempos (550-950 ms). Diffusion-weighted imaging was acquired using a 3T scanner.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1 and C81-C87 provide clear methodological details about participant characteristics, experimental design, and imaging acquisition. The sample size, inclusion/exclusion criteria, task parameters, and imaging protocol are explicitly stated and internally consistent.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:53:52.209833Z"
+    },
+    {
+      "id": "ef735151-ee1a-4059-a042-0228e46e2e7f",
+      "content_id": "add819e2-0c31-408d-9f7a-acf063b5c800",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Behavioral analysis revealed that auditory metronomes produced significantly smaller asynchronies, greater temporal precision, and more robust error correction compared to visual metronomes. Asynchronies at 650 and 750 ms intervals were significantly correlated across subjects, and the indifference interval was 654 ms for auditory and 420 ms for visual conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C26 and C43 report behavioral findings with appropriate statistical tests (ANOVA, post-hoc tests, correlations) and specific p-values. The results confirm known auditory-visual asymmetries in sensorimotor synchronization and are supported by statistical evidence and figures.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:53:52.209833Z"
+    },
+    {
+      "id": "aead2f98-e69b-4a4b-af4a-b9e6cdc05b3f",
+      "content_id": "add819e2-0c31-408d-9f7a-acf063b5c800",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Individual differences in tangential U-fiber density (tanAFD) in the right audiomotor system were negatively correlated with absolute asynchronies during auditory synchronization, specifically for 650 and 750 ms intervals. Subjects with better phase accuracy (smaller asynchronies) showed higher U-fiber density.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C3, C27-C29, C32-C34, C44-C45 describe the primary finding linking superficial white matter structure to behavioral performance. The analysis used appropriate corrections for multiple comparisons (pcft < 0.001, pcluster < 0.001), and the interval-specificity and modality-specificity are clearly documented with anatomical localization.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:53:52.209833Z"
+    },
+    {
+      "id": "2a702bd5-5a7c-4080-a512-76b47cc7aa6c",
+      "content_id": "add819e2-0c31-408d-9f7a-acf063b5c800",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "No significant correlations were found between white matter metrics (SWM or DWM) and temporal variability, constant error, or lag 1 autocorrelation for either auditory or visual conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30, C31, and C48 explicitly report null findings. These are clearly stated and important for understanding the specificity of the structure-behavior relationships to phase accuracy rather than other timing parameters.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:53:52.209833Z"
+    },
+    {
+      "id": "694e80f9-60c6-4d16-8600-efb49558a0e4",
+      "content_id": "add819e2-0c31-408d-9f7a-acf063b5c800",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Canonical correlation analysis confirmed that tanAFD showed the strongest relationship with behavioral data, with auditory asynchronies at 650-850 ms intervals being the parameters most significantly related to the canonical variate.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C36 describe results from regularized canonical correlation analysis, which provides independent validation of the surface-based findings while controlling for multiple comparisons. The ranking of AFD metrics and identification of key behavioral parameters are supported by Figure 6.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:53:52.209833Z"
+    },
+    {
+      "id": "4a6ee4ad-6a7f-4c37-9528-fe5c8c12e3c9",
+      "content_id": "add819e2-0c31-408d-9f7a-acf063b5c800",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Fixel-based analysis revealed an interval-selective topographic map in the corpus callosum, where fiber density and cross-section (FDC) correlated with phase accuracy in an anterior-posterior gradient: short intervals (650-750 ms) associated with posterior midbody, intermediate intervals (850 ms) with isthmus/splenium, and long intervals (950 ms) with forceps minor/major.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C5, C37-C41, C46 describe a coherent topographic organization in the corpus callosum with interval selectivity. The analysis used family-wise error correction (p<0.05), and the anatomical specificity is well-documented in Figure 7. The anterior-posterior gradient is consistent across multiple intervals.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:53:52.209833Z"
+    },
+    {
+      "id": "c28e3cc7-54f7-413f-b39b-c9b8186633f7",
+      "content_id": "add819e2-0c31-408d-9f7a-acf063b5c800",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The fiber bundle diameter (FC) of the left arcuate fasciculus, corpus callosum M1, forceps major, and superior longitudinal fasciculus 2 showed significant correlations with mean asynchronies across all tested tempos.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42, C47, C55 identify specific deep white matter tracts associated with overall synchronization performance. The findings are supported by fixel-based analysis with appropriate corrections and are shown in Figure 8. The left arcuate fasciculus finding is particularly notable given its role in audiomotor connectivity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:53:52.209833Z"
+    },
+    {
+      "id": "c627d26f-9d00-44bb-b782-86ccb0fec2e4",
+      "content_id": "add819e2-0c31-408d-9f7a-acf063b5c800",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The negative correlations between white matter metrics and asynchronies indicate that subjects with better phase accuracy (asynchronies near zero) had higher fiber density values, suggesting that individual differences in rhythmic entrainment depend on white matter microstructure and macrostructure.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C61 provide interpretation of the direction of correlations found throughout the study. The interpretation is consistent with the data presented and logically follows from the negative correlation coefficients reported. However, C61 includes speculation about genetic/learned substrates that goes beyond the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:53:52.209833Z"
+    },
+    {
+      "id": "202dd61a-dd77-409b-a510-6eed2d0efd70",
+      "content_id": "add819e2-0c31-408d-9f7a-acf063b5c800",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The interval specificity of U-fiber associations suggests that the preferred tempo for rhythmic entrainment originates in the structural properties of superficial white matter in the audiomotor circuit, which is optimized to support internal beat representation at the preferred tempo.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C65 provide a mechanistic interpretation of the interval-specific findings. The interpretation is reasonable given the convergence of behavioral (preferred tempo ~650-750 ms) and structural (strongest correlations at 650-750 ms) findings, though it remains somewhat speculative about causality.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:53:52.209833Z"
+    },
+    {
+      "id": "108cc571-17ec-4922-a85e-f02a181ff1b5",
+      "content_id": "add819e2-0c31-408d-9f7a-acf063b5c800",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The lack of structural associations in the visual condition may be due to larger behavioral variability in visual tapping or because the visual system's optimal sampling rate (~0.7 Hz) is slower than the tested intervals.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C57, C58, C66 offer speculative explanations for null findings in the visual condition. While these are plausible hypotheses supported by citation to Zalta et al. 2020, they remain untested interpretations. The study design did not include slower intervals that might be optimal for visual synchronization.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:53:52.209833Z"
+    },
+    {
+      "id": "64eff7e2-a611-4039-ad3a-66ec9cd53cca",
+      "content_id": "add819e2-0c31-408d-9f7a-acf063b5c800",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Individual differences in synchronization ability may have both genetic origins (related to U-fiber and deep tract density) and training-related plasticity (musical practice increasing white matter density and myelination).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C62-C63 are explicitly speculative (\"we could speculate\") about genetic and training contributions. While supported by citations to relevant literature, these claims go beyond the cross-sectional data presented. The study did not include genetic analysis or longitudinal training data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:53:52.209833Z"
+    },
+    {
+      "id": "d75b8a4b-b97b-475a-a6dd-5f1d7438182a",
+      "content_id": "add819e2-0c31-408d-9f7a-acf063b5c800",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The interval-selective map in the corpus callosum parallels functional chronomaps previously described in medial premotor areas, suggesting that timing maps have both functional and anatomical bases, particularly for the auditory modality.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C74 contextualize the current findings within prior fMRI literature on chronomaps. The comparison is appropriate, though C71 correctly notes that the current structural map differs from functional maps in important ways. The interpretation linking structural and functional topography is reasonable but somewhat speculative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:53:52.209833Z"
+    },
+    {
+      "id": "29cf3c64-1ad2-4014-8d99-e4a60f78967b",
+      "content_id": "add819e2-0c31-408d-9f7a-acf063b5c800",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Background literature establishes that humans can entrain to auditory beats with negative asynchronies, that the motor system represents internal beat timing with interval-tuned neurons forming chronotopic maps, that there is a preferred tempo around 600-750 ms, and that individual differences exist with both genetic and environmental contributions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C20 summarize established findings from prior literature with appropriate citations. These provide necessary context for the current study and are accurately represented based on the cited sources.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:53:52.209833Z"
+    },
+    {
+      "id": "cbf314bb-0d37-45b2-a7dc-90b1fd17011e",
+      "content_id": "add819e2-0c31-408d-9f7a-acf063b5c800",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Prior research demonstrates auditory superiority in temporal processing and sensorimotor synchronization, with the auditory cortex engaged in multimodal temporal processing and audiomotor connectivity distinguishing good from poor synchronizers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C54, C56 accurately summarize prior literature on auditory-visual asymmetries and audiomotor connectivity with appropriate citations. These findings motivate the current study's focus on audiomotor white matter.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:53:52.209833Z"
+    },
+    {
+      "id": "d5ef8851-a850-4be7-be68-ad0710677e03",
+      "content_id": "add819e2-0c31-408d-9f7a-acf063b5c800",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Previous studies have linked white matter properties to sensorimotor performance, and superficial white matter (60% of total white matter volume) contains U-fibers and portions of long-range tracts, though it is difficult to study due to complex geometry and fiber crossings.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C75-C80 provide relevant background on white matter structure and prior diffusion imaging studies. The citations appropriately support the claims about SWM anatomy, clinical relevance, and methodological challenges.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:53:52.209833Z"
+    },
+    {
+      "id": "721d3011-624b-4965-bf58-db9d33cb8388",
+      "content_id": "add819e2-0c31-408d-9f7a-acf063b5c800",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The study used fixel-based metrics where AFD reflects fiber density (proportional to intra-axonal volume), FC reflects bundle diameter, and FDC combines both. For superficial white matter, parAFD was attributed to long-range fibers entering/exiting cortex while tanAFD was attributed to U-fibers running tangentially.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C88-C90, C92-C93 describe the interpretation of diffusion metrics used in the analysis. These are standard interpretations in the fixel-based analysis literature, appropriately cited, though the attribution of parAFD vs tanAFD to specific fiber populations (C92-C93) involves assumptions about fiber geometry.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:53:52.209833Z"
+    },
+    {
+      "id": "44649589-1798-454f-ba5d-4dda088c49c8",
+      "content_id": "add819e2-0c31-408d-9f7a-acf063b5c800",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "One subject was excluded from superficial white matter analysis due to poor registration quality between diffusion maps and white matter surface.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C91 transparently reports a data exclusion with clear justification. This is appropriate quality control for surface-based analysis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:53:52.209833Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "9d6bb234-f2a3-4d9d-8785-72197eb2ddab",
+      "result_id": "73446f4f-15a1-472e-bae5-e657a8373ecc"
+    },
+    {
+      "claim_id": "3b38fb9b-6e55-4a77-8931-6f3206ce5235",
+      "result_id": "73446f4f-15a1-472e-bae5-e657a8373ecc"
+    },
+    {
+      "claim_id": "8e22055d-b1b7-479a-a5dc-670243e31999",
+      "result_id": "73446f4f-15a1-472e-bae5-e657a8373ecc"
+    },
+    {
+      "claim_id": "0046eaf1-bf56-496e-8a6d-43239c330b78",
+      "result_id": "73446f4f-15a1-472e-bae5-e657a8373ecc"
+    },
+    {
+      "claim_id": "e8c6cf68-9601-433d-bed3-d9b80d4eb03a",
+      "result_id": "73446f4f-15a1-472e-bae5-e657a8373ecc"
+    },
+    {
+      "claim_id": "51d7ae6a-3b0a-4919-bdf0-22183cc85908",
+      "result_id": "73446f4f-15a1-472e-bae5-e657a8373ecc"
+    },
+    {
+      "claim_id": "56676d09-4502-4469-b9b4-7dd4a18ff3c6",
+      "result_id": "73446f4f-15a1-472e-bae5-e657a8373ecc"
+    },
+    {
+      "claim_id": "584a5020-3cc0-4edf-9320-a15658680bba",
+      "result_id": "73446f4f-15a1-472e-bae5-e657a8373ecc"
+    },
+    {
+      "claim_id": "a27b7b41-101c-471e-9aef-1ea3232f8b5a",
+      "result_id": "ef735151-ee1a-4059-a042-0228e46e2e7f"
+    },
+    {
+      "claim_id": "ddd6e1b3-69c9-4e18-92e8-1068d689c4f1",
+      "result_id": "ef735151-ee1a-4059-a042-0228e46e2e7f"
+    },
+    {
+      "claim_id": "bf446b8d-a61e-4ce1-961b-7d76e9c83867",
+      "result_id": "ef735151-ee1a-4059-a042-0228e46e2e7f"
+    },
+    {
+      "claim_id": "592fe1f1-108f-48b4-928e-fdf5cec7a096",
+      "result_id": "ef735151-ee1a-4059-a042-0228e46e2e7f"
+    },
+    {
+      "claim_id": "7783c31c-0f6c-4e9e-8867-e4bfbdabd393",
+      "result_id": "ef735151-ee1a-4059-a042-0228e46e2e7f"
+    },
+    {
+      "claim_id": "8799a732-ddc2-473e-ba8f-754288ad11f0",
+      "result_id": "ef735151-ee1a-4059-a042-0228e46e2e7f"
+    },
+    {
+      "claim_id": "99ac5b3c-785e-4c69-aeac-0a800bd6bfee",
+      "result_id": "ef735151-ee1a-4059-a042-0228e46e2e7f"
+    },
+    {
+      "claim_id": "037d625d-d807-4eb4-887f-5ad7c929872a",
+      "result_id": "aead2f98-e69b-4a4b-af4a-b9e6cdc05b3f"
+    },
+    {
+      "claim_id": "1f84ab6b-b26e-4504-bc5f-9cc9079ee170",
+      "result_id": "aead2f98-e69b-4a4b-af4a-b9e6cdc05b3f"
+    },
+    {
+      "claim_id": "18053972-3e1f-4ae5-b62c-d90864f6ca4e",
+      "result_id": "aead2f98-e69b-4a4b-af4a-b9e6cdc05b3f"
+    },
+    {
+      "claim_id": "cdd71435-1e37-4847-a2d7-48ecb5691e3b",
+      "result_id": "aead2f98-e69b-4a4b-af4a-b9e6cdc05b3f"
+    },
+    {
+      "claim_id": "d807fbcd-8fd3-45ca-b8c0-35d49d6dd847",
+      "result_id": "aead2f98-e69b-4a4b-af4a-b9e6cdc05b3f"
+    },
+    {
+      "claim_id": "0c89e2f4-d2d6-445e-b5d6-22ea216c9d6e",
+      "result_id": "aead2f98-e69b-4a4b-af4a-b9e6cdc05b3f"
+    },
+    {
+      "claim_id": "7fa83aae-f7e4-4f18-a3ec-8b254568b065",
+      "result_id": "aead2f98-e69b-4a4b-af4a-b9e6cdc05b3f"
+    },
+    {
+      "claim_id": "7e8e27a7-f377-47a5-9d62-f886d2838ceb",
+      "result_id": "aead2f98-e69b-4a4b-af4a-b9e6cdc05b3f"
+    },
+    {
+      "claim_id": "8d293cda-d154-40e9-85d1-997ad980f9a5",
+      "result_id": "aead2f98-e69b-4a4b-af4a-b9e6cdc05b3f"
+    },
+    {
+      "claim_id": "0a632f4e-007b-4315-8b3d-760dee9b9d5c",
+      "result_id": "aead2f98-e69b-4a4b-af4a-b9e6cdc05b3f"
+    },
+    {
+      "claim_id": "08661f9a-4d05-4f1a-a5de-4f44eb76df15",
+      "result_id": "2a702bd5-5a7c-4080-a512-76b47cc7aa6c"
+    },
+    {
+      "claim_id": "1edfe377-9fb0-47c9-b0a0-9b50924c39f6",
+      "result_id": "2a702bd5-5a7c-4080-a512-76b47cc7aa6c"
+    },
+    {
+      "claim_id": "836ad98a-d2dc-4e71-9659-1e390d0b5d5a",
+      "result_id": "2a702bd5-5a7c-4080-a512-76b47cc7aa6c"
+    },
+    {
+      "claim_id": "7fd2530c-4ea9-47ec-90d1-4b6b1c9c8937",
+      "result_id": "694e80f9-60c6-4d16-8600-efb49558a0e4"
+    },
+    {
+      "claim_id": "3c850dcb-3cee-4e2e-b383-1e19c35f1a74",
+      "result_id": "694e80f9-60c6-4d16-8600-efb49558a0e4"
+    },
+    {
+      "claim_id": "93fc7a27-9504-4a64-9ace-68e95225d638",
+      "result_id": "4a6ee4ad-6a7f-4c37-9528-fe5c8c12e3c9"
+    },
+    {
+      "claim_id": "ece0ab10-40b2-4be9-b72d-22b13e67e66f",
+      "result_id": "4a6ee4ad-6a7f-4c37-9528-fe5c8c12e3c9"
+    },
+    {
+      "claim_id": "baa7e21b-5b8f-4179-a2f6-ceb86e2067c4",
+      "result_id": "4a6ee4ad-6a7f-4c37-9528-fe5c8c12e3c9"
+    },
+    {
+      "claim_id": "386c301c-b33a-4568-ae1d-e2b2e15a71ce",
+      "result_id": "4a6ee4ad-6a7f-4c37-9528-fe5c8c12e3c9"
+    },
+    {
+      "claim_id": "fd004153-68b9-479b-9bc9-ee2b4906461e",
+      "result_id": "4a6ee4ad-6a7f-4c37-9528-fe5c8c12e3c9"
+    },
+    {
+      "claim_id": "59f690d4-019d-4c21-9c6b-ce083f36ee1a",
+      "result_id": "4a6ee4ad-6a7f-4c37-9528-fe5c8c12e3c9"
+    },
+    {
+      "claim_id": "6b5bfc75-39d4-4f30-8ab4-0c2c76dbf724",
+      "result_id": "4a6ee4ad-6a7f-4c37-9528-fe5c8c12e3c9"
+    },
+    {
+      "claim_id": "d05d968d-4257-49f3-ba34-6d1fc43eda48",
+      "result_id": "4a6ee4ad-6a7f-4c37-9528-fe5c8c12e3c9"
+    },
+    {
+      "claim_id": "ae2a3631-c87a-4836-8950-8da147fb947b",
+      "result_id": "c28e3cc7-54f7-413f-b39b-c9b8186633f7"
+    },
+    {
+      "claim_id": "1319e157-5617-4b91-bcfc-7baf03e1ea25",
+      "result_id": "c28e3cc7-54f7-413f-b39b-c9b8186633f7"
+    },
+    {
+      "claim_id": "de8ba7e1-79e0-4863-8e98-6b3367cd34ad",
+      "result_id": "c28e3cc7-54f7-413f-b39b-c9b8186633f7"
+    },
+    {
+      "claim_id": "669e1a55-2715-4a2b-8c75-66dfc150029c",
+      "result_id": "c627d26f-9d00-44bb-b782-86ccb0fec2e4"
+    },
+    {
+      "claim_id": "f8a9c470-4230-4107-b122-c17e61023b9c",
+      "result_id": "c627d26f-9d00-44bb-b782-86ccb0fec2e4"
+    },
+    {
+      "claim_id": "0795ed4a-21af-4ab3-a336-14a62ec21320",
+      "result_id": "c627d26f-9d00-44bb-b782-86ccb0fec2e4"
+    },
+    {
+      "claim_id": "d864b96b-806a-45eb-aac8-8a89a1c960bb",
+      "result_id": "202dd61a-dd77-409b-a510-6eed2d0efd70"
+    },
+    {
+      "claim_id": "718807da-77f6-4822-a03f-ee216c169cad",
+      "result_id": "202dd61a-dd77-409b-a510-6eed2d0efd70"
+    },
+    {
+      "claim_id": "e5d33503-2d87-4a8d-8066-0e32b3a98e29",
+      "result_id": "108cc571-17ec-4922-a85e-f02a181ff1b5"
+    },
+    {
+      "claim_id": "1aeebf12-461e-43ee-abb2-4086cae28ff0",
+      "result_id": "108cc571-17ec-4922-a85e-f02a181ff1b5"
+    },
+    {
+      "claim_id": "661764dd-31ba-48b8-8815-1329af77e212",
+      "result_id": "108cc571-17ec-4922-a85e-f02a181ff1b5"
+    },
+    {
+      "claim_id": "80583a65-d4a2-47ca-8fe1-ee744f907444",
+      "result_id": "64eff7e2-a611-4039-ad3a-66ec9cd53cca"
+    },
+    {
+      "claim_id": "8bfb06cf-9a0a-4d36-8e5a-64488850fbd4",
+      "result_id": "64eff7e2-a611-4039-ad3a-66ec9cd53cca"
+    },
+    {
+      "claim_id": "106b8504-5333-46f2-bbc2-bf868e8ff6f8",
+      "result_id": "d75b8a4b-b97b-475a-a6dd-5f1d7438182a"
+    },
+    {
+      "claim_id": "90ea1bea-fbd6-4b06-a6e0-59a35c4650f0",
+      "result_id": "d75b8a4b-b97b-475a-a6dd-5f1d7438182a"
+    },
+    {
+      "claim_id": "52cd197f-60a2-46fd-8841-a80b66e96f2a",
+      "result_id": "d75b8a4b-b97b-475a-a6dd-5f1d7438182a"
+    },
+    {
+      "claim_id": "1a419124-96a4-4596-8b1c-cafdb1d90878",
+      "result_id": "d75b8a4b-b97b-475a-a6dd-5f1d7438182a"
+    },
+    {
+      "claim_id": "8e615463-526c-4b43-9808-167056f85953",
+      "result_id": "d75b8a4b-b97b-475a-a6dd-5f1d7438182a"
+    },
+    {
+      "claim_id": "3ba7d5fc-f23b-4d1a-9dcf-59aa0f35f75a",
+      "result_id": "d75b8a4b-b97b-475a-a6dd-5f1d7438182a"
+    },
+    {
+      "claim_id": "fb0a748b-6f6d-4cc9-9274-1a33beaa5243",
+      "result_id": "d75b8a4b-b97b-475a-a6dd-5f1d7438182a"
+    },
+    {
+      "claim_id": "ce34b617-113c-4a28-a41d-6299f5f1e8a8",
+      "result_id": "d75b8a4b-b97b-475a-a6dd-5f1d7438182a"
+    },
+    {
+      "claim_id": "edcc08d0-0a60-4d94-b480-ac19be3c7d37",
+      "result_id": "29cf3c64-1ad2-4014-8d99-e4a60f78967b"
+    },
+    {
+      "claim_id": "936e1823-2123-4bf1-b816-40376848e392",
+      "result_id": "29cf3c64-1ad2-4014-8d99-e4a60f78967b"
+    },
+    {
+      "claim_id": "7769fa74-5310-48b7-b892-de660308fbf6",
+      "result_id": "29cf3c64-1ad2-4014-8d99-e4a60f78967b"
+    },
+    {
+      "claim_id": "7283cbd9-a3dc-43df-9e0d-70adaab5e0fb",
+      "result_id": "29cf3c64-1ad2-4014-8d99-e4a60f78967b"
+    },
+    {
+      "claim_id": "427b298b-2730-4c51-aee1-eadc756dd7b5",
+      "result_id": "29cf3c64-1ad2-4014-8d99-e4a60f78967b"
+    },
+    {
+      "claim_id": "e474522f-3278-42a0-b273-5fd6b89475c8",
+      "result_id": "29cf3c64-1ad2-4014-8d99-e4a60f78967b"
+    },
+    {
+      "claim_id": "8c660c86-7b91-4fd4-a6d8-e40fed68e037",
+      "result_id": "29cf3c64-1ad2-4014-8d99-e4a60f78967b"
+    },
+    {
+      "claim_id": "2e51bb7a-1fd3-49f7-bdde-71328244f02b",
+      "result_id": "29cf3c64-1ad2-4014-8d99-e4a60f78967b"
+    },
+    {
+      "claim_id": "13b96008-6660-4d8e-9a99-d671e9f0e2db",
+      "result_id": "29cf3c64-1ad2-4014-8d99-e4a60f78967b"
+    },
+    {
+      "claim_id": "b6b6b30c-6823-499a-9a38-f4d1414ee3a6",
+      "result_id": "29cf3c64-1ad2-4014-8d99-e4a60f78967b"
+    },
+    {
+      "claim_id": "477bd93e-6563-4016-843f-c0a9bc662143",
+      "result_id": "29cf3c64-1ad2-4014-8d99-e4a60f78967b"
+    },
+    {
+      "claim_id": "f6546b79-90d7-4f8a-920f-6737c894bfd7",
+      "result_id": "29cf3c64-1ad2-4014-8d99-e4a60f78967b"
+    },
+    {
+      "claim_id": "4bcb89c2-c19b-4023-8b0a-d6d29a6d202b",
+      "result_id": "29cf3c64-1ad2-4014-8d99-e4a60f78967b"
+    },
+    {
+      "claim_id": "bf958c53-88c5-4212-8775-78bef8abde3e",
+      "result_id": "29cf3c64-1ad2-4014-8d99-e4a60f78967b"
+    },
+    {
+      "claim_id": "b6147124-d602-426e-aba3-e9754ebaf966",
+      "result_id": "29cf3c64-1ad2-4014-8d99-e4a60f78967b"
+    },
+    {
+      "claim_id": "3e695331-fecd-4ca7-b77a-9c9aea9874d9",
+      "result_id": "cbf314bb-0d37-45b2-a7dc-90b1fd17011e"
+    },
+    {
+      "claim_id": "e633d1a5-4f98-476b-a588-c14a79c8e754",
+      "result_id": "cbf314bb-0d37-45b2-a7dc-90b1fd17011e"
+    },
+    {
+      "claim_id": "6217e6f9-c889-455c-9773-6c698c6c7a2c",
+      "result_id": "cbf314bb-0d37-45b2-a7dc-90b1fd17011e"
+    },
+    {
+      "claim_id": "f7249c09-a02a-4674-8110-19409b16b134",
+      "result_id": "cbf314bb-0d37-45b2-a7dc-90b1fd17011e"
+    },
+    {
+      "claim_id": "0ae46ff7-2b5e-4b03-806a-dc56e83b2c07",
+      "result_id": "cbf314bb-0d37-45b2-a7dc-90b1fd17011e"
+    },
+    {
+      "claim_id": "df8d4141-75ab-4ffe-9a9e-5c0037dca6ca",
+      "result_id": "cbf314bb-0d37-45b2-a7dc-90b1fd17011e"
+    },
+    {
+      "claim_id": "2b277f25-c586-447a-a031-3f8ddb07432f",
+      "result_id": "cbf314bb-0d37-45b2-a7dc-90b1fd17011e"
+    },
+    {
+      "claim_id": "74a43e99-62c8-4cab-87b7-d35ede40b3ef",
+      "result_id": "d5ef8851-a850-4be7-be68-ad0710677e03"
+    },
+    {
+      "claim_id": "71e4879d-c171-4c14-8a2c-3ac2c1711d36",
+      "result_id": "d5ef8851-a850-4be7-be68-ad0710677e03"
+    },
+    {
+      "claim_id": "e73e113b-e384-4823-bdfd-3de13625cfb8",
+      "result_id": "d5ef8851-a850-4be7-be68-ad0710677e03"
+    },
+    {
+      "claim_id": "e709b044-3262-4c93-bfa6-68ab6ecc78c2",
+      "result_id": "d5ef8851-a850-4be7-be68-ad0710677e03"
+    },
+    {
+      "claim_id": "580f5d9e-39eb-4679-8dbd-b90d7585518c",
+      "result_id": "d5ef8851-a850-4be7-be68-ad0710677e03"
+    },
+    {
+      "claim_id": "535e09e2-405c-4259-adee-69f25708b0a9",
+      "result_id": "d5ef8851-a850-4be7-be68-ad0710677e03"
+    },
+    {
+      "claim_id": "e13ee245-88e9-4bfa-af12-e315c3c7533a",
+      "result_id": "721d3011-624b-4965-bf58-db9d33cb8388"
+    },
+    {
+      "claim_id": "c68445b9-bd37-4d00-99ea-57df1c3cbafd",
+      "result_id": "721d3011-624b-4965-bf58-db9d33cb8388"
+    },
+    {
+      "claim_id": "41076f76-f1ef-4b80-831e-2ea228642c52",
+      "result_id": "721d3011-624b-4965-bf58-db9d33cb8388"
+    },
+    {
+      "claim_id": "b3009497-4c60-4c25-a8a4-4e2279c1f2eb",
+      "result_id": "721d3011-624b-4965-bf58-db9d33cb8388"
+    },
+    {
+      "claim_id": "3abaf2b4-1a82-4f8d-acfd-dfcd3b466e9c",
+      "result_id": "721d3011-624b-4965-bf58-db9d33cb8388"
+    },
+    {
+      "claim_id": "64ea049b-31a7-489d-bdd9-7d6c1849981c",
+      "result_id": "44649589-1798-454f-ba5d-4dda088c49c8"
+    }
+  ],
+  "comparisons": []
+}

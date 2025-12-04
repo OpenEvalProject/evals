@@ -1,0 +1,241 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C22",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C37",
+      "C59",
+      "C62",
+      "C63",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Obesity (WHR) is associated with two coupled but anatomically distinct brain systems: a prefrontal-temporal-striatal system showing increased tissue water content (ISOVF) and a medial temporal-occipital-striatal system showing increased neurite density (ICVF). These two systems are negatively correlated with each other (r=-0.366) but both positively correlated with WHR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims provide converging evidence from ~30,000 participants showing statistically significant associations (FDR=5%) in anatomically distinct regions. The correlation analysis (C29, C70) establishes that ISOVF and ICVF are independent metrics, and the spatial mapping (C31, C34) with functional characterization (C32, C35) demonstrates anatomical differentiation. The negative correlation between systems (C37) supports the coupling interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C45",
+      "C46",
+      "C47",
+      "C64",
+      "C65",
+      "C68",
+      "C81",
+      "C82"
+    ],
+    "result": "Gene expression analysis reveals that the ISOVF~WHR system is enriched for innate immune processes (pattern recognition receptors, IL-6 responses) while the ICVF~WHR system is enriched for taste receptor activity and G-protein coupled receptor signaling. The gene expression weights for the two systems are negatively correlated (r=-0.615).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The gene expression co-location analysis uses appropriate spatial permutation methods (spin permutation with FDR=5%) to control for spatial autocorrelation. The enrichment analysis identifies biologically plausible pathways that differentiate the two systems. However, the age mismatch between AHBA donors (24-57 years) and UK Biobank participants (44-80 years) noted in C87 introduces some uncertainty about the generalizability of these transcriptional associations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C67",
+      "C69"
+    ],
+    "result": "Neurotransmitter receptor mapping shows that the ISOVF~WHR system co-localizes with high densities of 5HTT, D1, H3, Mu, and VAChT receptors, while the ICVF~WHR system shows negative co-location with H3, Mu, CB1, and A4B2 receptors. The mu opioid receptor shows the strongest correlation with both systems but with opposite signs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The neurotransmitter receptor analysis uses rigorous spatial correlation methods with 10,000 spin permutations and FDR correction (C110). The opposite signs of association for the mu opioid receptor (C50, C51) provide strong evidence for functional differentiation between the two systems. The receptors identified are biologically relevant to feeding, reward, and appetite regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C66"
+    ],
+    "result": "Cell-type analysis reveals that the ISOVF~WHR system is significantly co-located with astrocytes, oligodendrocyte progenitor cells, and microglia, but not neurons. The ICVF~WHR system shows no significant co-location with any specific cell type.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The cell-type analysis uses appropriate spatial correlation methods with 10,000 spin permutations and FDR correction (C112). The finding that ISOVF associates with glial cells but not neurons is consistent with the interpretation that this metric reflects tissue water content and inflammatory processes. The lack of cell-type specificity for ICVF may reflect limitations in the cell-type atlas resolution or suggest that neurite density changes involve multiple cell types.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C56",
+      "C60",
+      "C89",
+      "C90",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "Genetic correlation analysis shows that ICVF is significantly genetically correlated with WHR (rg=0.112, P<9\u00d710\u207b\u2074) while ISOVF shows no genetic correlation with WHR (rg=-0.026, P=0.36). This suggests shared genetic effects between neurite density and obesity but not between brain water content and obesity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The genetic correlation analysis uses established LDSC methods (C115) with published GWAS data (C113, C114). The statistical significance for ICVF and lack of significance for ISOVF is clearly reported. However, the authors appropriately caution (C89, C90) that genetic correlations can arise from pleiotropy and do not prove causal relationships. The interpretation requires additional validation through methods like Mendelian randomization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "CRP analysis shows that the correlation between CRP-WHR maps is significantly stronger for ISOVF than ICVF (P<0.024), consistent with the hypothesis that inflammation mediates effects of obesity on brain water content.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The CRP analysis provides supporting evidence for the inflammatory hypothesis by showing differential associations with the two microstructural systems. The statistical comparison is appropriate, though the p-value is modest (P<0.024). This result is consistent with prior literature (C78) linking inflammatory markers to free water metrics and with the gene expression findings showing immune enrichment in the ISOVF system.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C83",
+      "C84"
+    ],
+    "result": "The authors propose a bidirectional mechanistic model where changes in neurite density (ICVF) may cause obesity through effects on taste sensation and reward processing (ICVF\u2192WHR), while obesity may cause changes in brain water content (WHR\u2192ISOVF) through inflammatory mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This is explicitly presented as a speculative model (C73, C74, C76, C83, C84 all marked as SPECULATION). While the model is consistent with the observed patterns of gene expression, receptor distributions, and genetic correlations, the cross-sectional design (C88) prevents causal inference. The authors appropriately acknowledge these limitations (C89, C90) and note that alternative explanations exist. Longitudinal data or causal inference methods would be needed to validate this model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "The study used rigorous MRI acquisition and processing methods including NODDI reconstruction, Freesurfer processing with T1 and T2 images, HCP parcellation, and appropriate quality control including exclusion of subjects without T2 scans and those with high CRP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The methodological claims describe standard, well-validated processing pipelines with appropriate citations (C94, C95, C96, C97, C98). The quality control measures (C99, C100, C101) are appropriate and the sensitivity analysis (C102) demonstrates robustness. The regression model (C103) includes appropriate covariates (age, sex, scan quality, scan site). The methods are sufficiently detailed and use established tools.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "Gene expression, neurotransmitter receptor, and cell-type analyses used appropriate spatial correlation methods with spin permutation testing (1,000-10,000 permutations) to control for spatial autocorrelation and FDR correction for multiple comparisons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The analytical methods are state-of-the-art for spatial transcriptomics-imaging integration. The use of spin permutation (C107, C110, C112) appropriately controls for spatial autocorrelation, which is critical for brain mapping studies. The modification of Webgestalt to incorporate spin permutation (C108) is methodologically sound. The exclusion of 43 regions without gene expression data (C106) is appropriately documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Study limitations include multi-site data collection (though site was included as a covariate and prior work shows reliability), age mismatch between AHBA donors and UK Biobank participants, and cross-sectional design preventing causal inference.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The authors appropriately acknowledge key limitations. The multi-site concern (C85) is partially addressed by citing reliability evidence (C86) and including site as a covariate. The age mismatch (C87) is a genuine limitation that could affect the gene expression findings. The cross-sectional design limitation (C88) is critical and appropriately emphasized, as it fundamentally limits causal interpretation despite the genetic correlation analyses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C61"
+    ],
+    "result": "Prior literature establishes that obesity is a major public health challenge associated with cardiovascular, metabolic, and neurodegenerative disorders. Previous studies have shown associations between obesity and reduced grey matter volume/cortical thickness, though results were initially contradictory due to methodological heterogeneity. The microstructural basis of these macrostructural changes remains largely unknown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims accurately summarize the prior literature with appropriate citations. The characterization of contradictory early findings (C6, C7) and emerging consensus (C8, C9, C10, C11) is well-supported. The identification of the knowledge gap regarding microstructural features (C17, C18, C21) appropriately motivates the current study. The claims about white matter microstructure studies (C19, C20) correctly note that grey matter microstructure has not been previously investigated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "NODDI modeling uses multi-shell diffusion MRI data to estimate three microstructural metrics: ICVF (neurite density), OD (orientation dispersion), and ISOVF (free water content), based on modeling diffusion as isotropic in free water, restricted within neurites, and hindered in extracellular space.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims accurately describe the NODDI model and its derived metrics. The definitions are consistent with the established literature on NODDI (referenced in C30 as Kamiya et al., 2020). The distinction between ICVF capturing neurite density (but not cell bodies) and ISOVF capturing free water is correctly stated and forms the basis for the study's interpretation.",
+    "result_type": "MINOR"
+  }
+]

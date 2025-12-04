@@ -1,0 +1,927 @@
+{
+  "submission": {
+    "id": "10ec2b25-ff76-40ab-889d-a105a05cf14d",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-04T04:36:47.464066Z",
+    "updated_at": "2025-12-04T04:36:47.464066Z"
+  },
+  "content": [
+    {
+      "id": "3d85af4d-fb38-4112-abd9-9aafd2dd3e60",
+      "submission_id": "10ec2b25-ff76-40ab-889d-a105a05cf14d",
+      "content_type": "manuscript",
+      "content_text": "# Theoretical principles explain the structure of the insect head direction circuit\n\n## Authors\n\n- Pau Vilimelis Aceituno<sup>1</sup> ([ORCID: 0000-0002-1218-4009](https://orcid.org/0000-0002-1218-4009)) \u2020\n- Dominic Dall'Osto<sup>1</sup> ([ORCID: 0000-0002-9549-4490](https://orcid.org/0000-0002-9549-4490))\n- Ioannis Pisokas<sup>2</sup> ([ORCID: 0000-0001-7426-3207](https://orcid.org/0000-0001-7426-3207)) \u2020\n\n### Affiliations\n\n1. Institute of Neuroinformatics, University of Z\u00fcrich and ETH Z\u00fcrich Zurich Switzerland\n2. School of Informatics, University of Edinburgh Edinburgh United Kingdom ([ROR:01nrxwf90](https://ror.org/01nrxwf90))\n\n\u2020 Corresponding author\n\n## Abstract\n\nTo navigate their environment, insects need to keep track of their orientation. Previous work has shown that insects encode their head direction as a sinusoidal activity pattern around a ring of neurons arranged in an eight-column structure. However, it is unclear whether this sinusoidal encoding of head direction is just an evolutionary coincidence or if it offers a particular functional advantage. To address this question, we establish the basic mathematical requirements for direction encoding and show that it can be performed by many circuits, all with different activity patterns. Among these activity patterns, we prove that the sinusoidal one is the most noise-resilient, but only when coupled with a sinusoidal connectivity pattern between the encoding neurons. We compare this predicted optimal connectivity pattern with anatomical data from the head direction circuits of the locust and the fruit fly, finding that our theory agrees with experimental evidence. Furthermore, we demonstrate that our predicted circuit can emerge using Hebbian plasticity, implying that the neural connectivity does not need to be explicitly encoded in the genetic program of the insect but rather can emerge during development. Finally, we illustrate that in our theory, the consistent presence of the eight-column organisation of head direction circuits across multiple insect species is not a chance artefact but instead can be explained by basic evolutionary principles.\n\n## Introduction\n\nInsects exhibit an impressive ability to navigate the world, travelling long distances to migrate, find food or reach places of interest before returning to their nests (M\u00fcller and Wehner, 1988; Menzel et al., 1996; Heinze et al., 2013; Collett, 2019), a feat that requires them to keep track of their orientation across long journeys (Mappes and Homberg, 2004; Merlin et al., 2012; Warren et al., 2019; Collett, 2019; Beetz et al., 2022). This orientation tracking is achieved by the use of visual cues as well as integrating angular velocity signals over time to maintain a heading estimate relative to a starting angle (Seelig and Jayaraman, 2015; Taube, 2007), known as heading integration.\n\nElectrophysiological and calcium imaging studies have shown that the neural population encoding the head direction in insects has a sinusoid-shaped activation pattern (Labhart, 1988; Labhart, 2000; Loesel and Homberg, 2001; Pfeiffer et al., 2005; Pfeiffer and Homberg, 2007; Kinoshita et al., 2007; Heinze et al., 2009; Homberg et al., 2011; El Jundi et al., 2014; El Jundi et al., 2019). Furthermore, downstream neural populations also encode velocity signals as sinusoidal activations (Lyu et al., 2022).\n\nTheoretical work has speculated that this recurring motif of sinusoidal activity patterns might be so prevalent because it enables easy elementwise vector addition, where vectors encoded as sinusoidal activity waveforms can be added together to give a sinusoidal waveform encoding the sum of the vectors (Touretzky et al., 1993; Wittmann and Schwegler, 1995; Vickerstaff and Di Paolo, 2005). This allows the encoded heading to be easily used by downstream circuitry to track the insect\u2019s position (Mittelstaedt, 1985; Wittmann and Schwegler, 1995; Vickerstaff and Di Paolo, 2005; Haferlach et al., 2007; Wessnitzer et al., 2008; Sakura et al., 2008; Stone et al., 2017). Further studies have shown that models closely aligned with biological data can indeed implement heading integration using sinusoidal activity patterns (Pisokas et al., 2020; Turner-Evans et al., 2020), and that such circuits can be learned (Vafidis et al., 2022).\n\nHere, we show that enabling easy vector addition cannot be the unique driving factor for the presence of sinusoidal heading encodings, as many other circuits with different activity patterns can perform vector addition in the same way. This finding led us to question whether the sinusoidal activation patterns seen in insect navigation circuits are a coincidence, or if they might offer a particular functional advantage that was selected for during evolution.\n\nTo address this question, we consider the basic principles necessary for a circuit encoding direction. Of all the circuits fulfilling these requirements, the sinusoidal activity pattern offers the best resilience to noise for the encoded information. However, obtaining this activity requires a circuit with a specific connectivity pattern between neurons. Thus, our theory predicts that the heading integration circuit will have a sinusoidal connectivity pattern. We compare our predicted circuit with connectivity data for the desert locust (Schistocerca gregaria) and fruit fly (Drosophila melanogaster) using network analysis tools, showing a strong agreement. We then ask how an insect brain might develop such a circuit, finding that a simple Hebbian learning rule is sufficient. Finally, we combine ideas from replication dynamics with our theory, which leads us to the conclusion that the eight-column structure is a consequence of basic theoretical principles, rather than an evolutionary coincidence.\n\n## Results\n\n### A theoretical circuit for heading integration\n\nWe consider a population of $N$ \u2018compass neurons\u2019 with an activity that encodes the direction of the insect as an angular variable \u03b8. We represent the activity of this population by a vector where each element corresponds to the activity of one neuron, $a(\\theta)=[a_{1}(\\theta),a_{2}(\\theta),...,a_{N}(\\theta)]$. We take $N=8$ neurons, consistent with data from many insect species which possess an eight-column organisation, with each column encoding a different direction (Honkanen et al., 2019; Stone et al., 2017; Pisokas et al., 2020).\n\nEach neuron\u2019s activity is updated depending on its current firing rate and the inputs it receives, both from other neurons in the circuit and externally. We formulate this update rule as follows:\n\n$$\na\u02d9(\\theta)=\u2212a(\\theta)+\u03d5[Wa(\\theta)+u(t)],\n$$\n\nwhere $W$ is the circuit\u2019s weight matrix, representing the connections between neurons; $\u03d5$ is the neural activation function, that converts the total neural input into an output firing rate; and $u(t)$ is the external input that encodes the insect\u2019s angular velocity, via the PEN population of neurons (Green et al., 2017; Turner-Evans et al., 2017; Sayre et al., 2021; Pisokas et al., 2020; Turner-Evans et al., 2020; Hulse et al., 2021).\n\nTo simplify our derivations we allow the neural activity values to be both positive and negative, interpreting these values as being relative to a baseline neural firing rate. Similarly, we allow the weights to be both positive and negative, a common simplification in computational models (Li et al., 2023; Cornford et al., 2020; Kriegeskorte and Golan, 2019). This simplification will be addressed in section \u2018Comparing the predicted circuit with biological data\u2019 where we compare our model with experimental data.\n\n#### Mathematical principles for neural heading integration\n\nA circuit capable of performing heading integration must fulfil the requirements outlined in Table 1. The first two requirements allow us to establish the family of possible path integration circuits. We then use the principle of noise minimisation to determine which circuits perform best.\n\n**Table 1.**\n Requirements for a heading integration circuit.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th></th>\n      <th></th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Circular topology</td>\n      <td>Rotational symmetry</td>\n      <td>Noise minimisation</td>\n    </tr>\n    <tr>\n      <td>The activity should have the same topology as the variable it is encoding to prevent discontinuities. To encode heading, the activity should have the topology of a 1D circle.</td>\n      <td>The heading integration circuit should work similarly, irrespective of the direction in which the insect travels. There should not be a bias for any direction.</td>\n      <td>The circuit should minimise the noise of the neural representation so the insect can navigate as precisely as possible.</td>\n    </tr>\n  </tbody>\n</table>\n\n#### Constraints on the neural activity\n\nThe neural activity should encode the insect\u2019s head direction with a matching topology. Because the heading is a single angular variable, the topology of the activity space should be a 1D circle.\n\nFurthermore, the symmetry requirement implies that rotating the heading of the insect should rotate the neural activity vector without changing its shape. Concretely, whether the insect is facing north or east, the activity of the neural population as a whole should be the same, but with the identity of the neuron with each activity value being different.\n\nWe can formalise the symmetry requirement by considering a head direction, \u03b8, and a rotation by an integer multiple, $k$, of the angular spacing between neurons, $\u0394\\theta=\\frac{2\\pik}{N}$. In this case, individual neuron activities follow the relation\n\n$$\na_{n}(\\theta+\u0394\\theta)=a_{n\u2212kmodN}(\\theta),\n$$\n\nwhich enforces that the neural activity vector is circularly rotated as the head direction changes. This relation can be expressed in the Fourier domain where, by the shift property, the circular rotation becomes a multiplication by a complex exponential:\n\n$$\nF_{f}[a(\\theta+\u0394\\theta)]=F_{f}[a(\\theta)]e^{\\frac{i2\\pikf}{N}},\n$$\n\nwhere $i=\\sqrt{\u22121}$ and $f\\in[0,...,N\u22121]$ is the index of the spatial frequency, also called the harmonic. Activity with spatial frequency $f$ has $f$ \u2018bumps\u2019 around the ring.\n\nSince the complex exponential has unit norm, the magnitude of the Fourier components remains the same for any rotation, $\u2016F[a(\\theta+\u0394\\theta)]\u2016=\u2016F[a(\\theta)]\u2016\u2200\u0394\\theta$. Therefore, the shape of the activity pattern, $a\u2261a(0)$, can also be fully specified by its Fourier domain representation, $F[a]$, and the phase of this activity profile around the network encodes the heading of the insect:\n\n$$\nF_{f}[a(\\theta)]=F_{f}[a]e^{i\\thetaf}.\n$$\n\nTaking the inverse Fourier transform with the constraint that the neural activities must be real, we get the following form for the neural activity,\n\n$$\na_{n}(\\theta)=\\sumf=0N\u22121\u2016F_{f}[a]\u2016cos\u2061(\\frac{2\\pifn}{N}+\\thetaf).\n$$\n\nIt should be noted that the phase offset, $\\thetaf$, of each cosine waveform scales with the spatial frequency. This is because higher frequency waveforms have shorter wavelengths (in terms of number of neurons), so need their phases to rotate more quickly to move at the same speed around the network.\n\nTo explain this in more detail, we consider the case where this scaling is not used and the phase offset is the same for all harmonics, shown in Figure 1 top row. For $f=1$ (red line in Figure 1), the waveform has one bump and a wavelength of 8 neurons, so a 180\u00b0 rotation corresponds to the waveform moving 4 neurons. But for $f=2$ (blue line in Figure 1), the waveform has two bumps and a wavelength of 4 neurons, so a 180\u00b0 rotation corresponds to moving only 2 neurons, while a 4 neuron shift would correspond to a full rotation. The fact that the waveforms for different frequencies move at different speeds through the network implies that, if multiple spatial frequencies are used to independently encode the heading, their positions would not be aligned and the combined waveform would change shape as different angles are encoded (purple line in Figure 1). This violates the rotational symmetry principle, as the activity would look significantly different when the insect is facing north compared to south.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/91533/elife-91533-fig1-v1.jpg)\n\n**Figure 1.:** Each panel shows the activity profiles encoding a particular heading value. Curves $f=1$, $f=2$, and $f=1+f=2$ respectively denote the waveform of the first harmonic, second harmonic, and the sum of the two. The vertical dashed ($f=1$ peak) and dotted lines ($f=2$ peaks) indicate the neurons which respond maximally for the first and second harmonic, respectively. Top row: Encoding the heading as the sum of two independent harmonics causes the waveform to change shape as the insect rotates, because the waveform for each harmonic can only rotate a distance of $\\frac{360^{\u2218}}{f}$ as the insect rotates a full revolution to ensure an unambiguous representation. Bottom row: If all harmonics are aligned to rotate at the same speed, the combined waveform shape does not change. However, this alignment implies that higher harmonic waveforms cannot be uniquely mapped back to a heading: here the $f=2$ encoding is the same for \u03b8 = 0\u00b0 and 180\u00b0.\n\nTo solve this problem of misaligned harmonics, we return to the case specified in Equation 5 where the phase offset is scaled linearly with the spatial frequency so that all waveforms move at the same speed and rotational symmetry is ensured, which is shown in Figure 1 bottom row. For a network with $N=8$ neurons, a 180\u00b0 rotation shifts the activity waveform by 4 neurons. This 4 neuron shift corresponds to a $\\frac{4}{8}$ or 180\u00b0 phase offset for the $f=1$ waveform, which has a wavelength of 8 neurons, but a $\\frac{4}{4}$ or 360\u00b0 phase offset for the $f=2$ waveform, which has a wavelength of 4 neurons. While this maintains rotational symmetry, it implies that the $f=2$ waveform is the same whether the heading angle 0\u00b0 or 180\u00b0 is encoded. As a consequence, a higher harmonic waveform (having $f>1$) cannot on its own specify the encoded angle. The activity in all harmonics must be considered simultaneously to decode the angle, but even then this decoding might not be unique in the presence of noise (see section \u2018Ambiguities in multiple harmonics decoding with drift\u2019). The difficulties associated with encodings utilising multiple harmonics will be further addressed in the following sections.\n\n#### Constraints on heading integration circuits\n\nThe basic assumptions outlined earlier also constrain the possible heading integration circuits \u2013 such circuits should allow for neural activity with the required topology and rotational symmetry to stably exist and propagate. Together, these two principles require that the activity in the circuit should have a constant total magnitude. We consider that this constraint is enforced by the nonlinear neural activation function, \u03d5, in Equation 1, as detailed in section \u2018Path integration dynamics for heading and position\u2019.\n\nIf the network activity is at the desired level, and the external input $u(t)$ is projected onto the ring attractor such that it does not alter the total network activity, then we can consider the network dynamics to be linear at this operating point. Therefore, while within the space of possible activities that corresponds to the ring attractor, our circuit dynamics are effectively described as,\n\n$$\na\u02d9(\\theta)=\u2212a(\\theta)+Wa(\\theta)+u(t).\n$$\n\nThe rotational symmetry principle also applies to the network. For the same shaped activity waveform to be able to stably exist at any position around the network, the network connectivity should also be rotationally symmetric. For example, the connection strength between the neurons encoding the north and north-east directions should be the same as between those encoding south and south-west. Mathematically, this imposes that the weight matrix, $W$, is circulant, specifically that $W_{n,m}=W_{n+k,m+k}$. This matrix is fully specified by its first row, called the connectivity profile and denoted $\\omega$, meaning that we can express the product of the matrix with the neural activity as\n\n$$\n(Wa(\\theta))_{k}=W_{k}a(\\theta)=\\summ=0N\u22121W_{k,m}a_{m}(\\theta)=\\summ=0N\u22121W_{0,m\u2212k}a_{m}(\\theta)=\\summ=0N\u22121\\omega_{m\u2212k}a_{m}(\\theta),\n$$\n\nwhich can be simplified in terms of the convolution operation,\n\n$$\nWa(\\theta)=\\omega\u2217a(\\theta).\n$$\n\nConsidering the case where the insect is not moving, $u(t)=0$, and the network activity is stable, $a\u02d9(\\theta)=0$, we can combine Equation 6 and Equation 8 to get a relation for the stable network activity\n\n$$\na(\\theta)=\\omega\u2217a(\\theta).\n$$\n\nIn the Fourier domain, this simplifies into\n\n$$\nF_{f}[a(\\theta)]=F_{f}[\\omega]F_{f}[a(\\theta)].\n$$\n\nAs for the activity waveform analysis, we note that the Fourier transform is taken on the neural indices, not on the temporal domain.\n\nHere, we have $N$ equations that have to be satisfied, since the Fourier transform of an $N$-dimensional vector is also $N$-dimensional. For each harmonic frequency $f$, Equation 10 has two solutions:\n\n#### Minimising noise propagation in the circuit\n\nThe only constraint on the connectivity weights given by Equation 10 is that, if a frequency is used for encoding then $F_{f}[\\omega]=1$. There is no restriction on the weights for the inactive harmonics \u2013 they remain free parameters.\n\nHowever, non-encoding channels can still propagate noise, which would be prevented by setting $F_{f}[\\omega]=0$. To illustrate this, we consider white noise, denoted by $\u03f5$, that is added to the neural activity. When this noisy activity evolves in accordance with the dynamics from Equation 8, we have\n\n$$\n\\omega\u2217(a(\\theta)+\u03f5)=\\omega\u2217a(\\theta)+\\omega\u2217\u03f5,\n$$\n\nwhere the term $\\omega\u2217\u03f5$ corresponds to noise and should therefore be dampened. We want to minimise the strength of that noise, which is quantified by its variance\n\n$$\nVar[\\omega\u2217\u03f5]=E[\u2016\\omega\u2217\u03f5\u2016^{2}]=\u2016\\omega\u2016^{2}Var[\u03f5].\n$$\n\nHence the magnitude of the noise that passes from one time interval to the next is modulated by the magnitude of the weight vector. By Parseval\u2019s theorem,\n\n$$\n\\sumf|F_{f}[\\omega]|^{2}=\\sumn|\\omega_{n}|^{2}=\u2016\\omega\u2016^{2},\n$$\n\nwhich implies that to minimise noise propagation in the network we should impose $F_{f}[\\omega]=0$ for all harmonics, $f$, where $F_{f}[a(\\theta)]=0$. We show this in simulation in Figure 2, where only the first harmonic encodes information and we vary the weights of the other harmonics. The noise is indeed minimised if the weights for all non-encoding harmonics are set to zero.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/91533/elife-91533-fig2-v1.jpg)\n\n**Figure 2.:** Increasing the number of active harmonic frequencies increases the effect of errors in the network. (A) Weight matrix profiles, $\\omega$, for networks with increasing numbers of harmonics. (B) Normally distributed noise with zero mean and standard deviation 0.3 was added to the network activity, then the network state updated until it reached steady state. Networks with fewer harmonics better filtered out noise. (C) Noise variance increases linearly as the number of active harmonics increases, as predicted by Equation 12. The sample size was n=1000 trials for each active harmonics set, and the error bars show the standard deviation over trials.\n\nThis result establishes that all non-encoding harmonics in the network should be set to 0 to minimise noise propagation, and allows us to recover the circuit connectivity\n\n$$\n\\omega_{n}=\\sumf\\inFcos\u2061(\\frac{2\\pin}{N}f),\n$$\n\nwhere $F$ is the set of harmonics used to encode the head direction, $F={f\\in[1...N\u22121]:\u2016F_{f}[a]\u2016\\neq0}$. The choice of $F$ therefore determines both the harmonics used for encoding the angle in the activity and the connectivity of the circuit that supports this activity.\n\nWe leverage the same logic to prove that the number of encoding channels does not affect the signal-to-noise ratio in the network. If we have $c$ encoding channels, each with the same activity, the total activity will grow linearly with $c$. The noise will also grow with $\u2016\\omega\u2016^{2}=c$, meaning that the signal-to-noise ratio will remain constant.\n\nWe now return to the question of whether using one or multiple harmonics is better. As mentioned, the signal-to-noise ratio in the network remains constant as additional encoding channels, $c$, are used. But additional channels imply additional harmonics, which by Parseval\u2019s theorem require a higher total neural activity. If the total activity in the network is limited, the signal-to-noise ratio is in fact decreased when using more than one harmonic.\n\n$$\nSNR\u221d\\frac{\u2016a\u2016^{2}}{\u2016\\omega\u2016^{2}}=\\frac{\u2016a\u2016^{2}}{c}.\n$$\n\nAdditionally, as detailed in sections \u2018Constraints on the neural activity\u2019 and \u2018Ambiguities in multiple harmonics decoding with drift\u2019, circuits using multiple harmonics perform worse in high noise environments because they are not guaranteed to provide an unambiguous orientation encoding. Finally, as we will discuss in sections \u2018Learning rules and development\u2019 and \u2018Convergence of Oja\u2019s rule with multiple harmonics\u2019, the use of multiple harmonics also complicates the circuit\u2019s development. We therefore only select circuits that use a single harmonic for further analysis, reducing the number of possibilities to $N$.\n\n### Determining the optimal circuit\n\nAs we consider networks with $N=8$ neurons, consistent with multiple insect species (Honkanen et al., 2019; Stone et al., 2017; Pisokas et al., 2020), the possible single harmonic circuits are $f={1,2,3,4,5,6,7}$, where the zeroth harmonic is discarded because it only represents the baseline neural activity. This gives the following activities and weights, derived from Equation 5 and Equation 14\n\n$$\na_{n}(\\theta)=cos\u2061(\\frac{2\\pinf}{N}+\\theta)\\omega_{n}=cos\u2061(\\frac{2\\pifn}{N}).\n$$\n\nThe circuits for the first four harmonics are plotted in Figure 3, but not all of these circuits are valid. In particular, circuits with even spatial frequencies have multiple neurons with identical activity values because they share a common divisor with $N=8$, as explained in detail in section \u2018Degenerate circuits\u2019.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/91533/elife-91533-fig3-v1.jpg)\n\n**Figure 3.:** We show four circuits corresponding to each of the individual harmonics $f=1,2,3,4$ in panels (A, B, C, and D), respectively. Excitatory synapses are marked in red and inhibitory in blue. Neurons are shown in yellow with each having a black arrow that marks the direction to which it is tuned from Equation 16. The $f=1$ circuit is the simplest and constitutes our baseline. For the other cases we plot the original connectivity in the upper row and the rearranged network in the lower row. We find that the $f=2$ circuit consists of two independent subnetworks encoding orthogonal directions, the $f=3$ case is identical to $f=1$ after permuting neuron indices, and the $f=4$ case results in two connected groups of neurons inhibiting each other, hence it can only encode one direction. As such, all cases either have a degenerate ring structure ($f=2,4$) or are equivalent to $f=1$ after permutation.\n\nFor $f=4$ there are only two unique activity values, $a_{n}=\\pmcos\u2061(\\theta)\u2200n$, so this circuit can only encode one dimension, not a circular topology (see Figure 3D). For $f=2$ and $f=6$ (not plotted), there are four unique activity values, allowing the angle to be properly encoded. However, these circuits are degenerate because they are composed of two independent subcircuits, each encoding one direction (see Figure 3B). Because the weights connecting the two subcircuits are all zero, the activity in each subcircuit is independent of the activity in the other, and so the overall activity cannot be constrained to have the required circular topology.\n\nAll circuits with odd harmonic frequencies are equivalent. For example, as shown in Figure 3, the connections in the circuit for $f=3$ are the same as those for the $f=1$ circuit after the neuron identities are permuted. As detailed in section \u2018Equivalence under permutation\u2019, the frequencies $f={1,3,5,7}$ always give the same circuit because the odd frequencies are coprime with the number of neurons $N=8$.\n\nSince the activities and weights of all the non-degenerate circuits $f={1,3,5,7}$ are the same as the base harmonic $f=1$ up to a permutation, we choose the lowest harmonic $f=1$, which gives us the following activity and weights:\n\n$$\na_{n}(\\theta)=cos\u2061(\\frac{2\\pin}{N}+\\theta)\\omega_{n}=cos\u2061(\\frac{2\\pin}{N}).\n$$\n\n### Comparing the predicted circuit with biological data\n\nOur theory proposes an optimally noise-resistant circuit for heading integration, and its corresponding activity. The prediction that heading should be encoded as a sinusoidal activity bump is consistent with previous theoretical models (Touretzky et al., 1993; Wittmann and Schwegler, 1995; Hartmann and Wehner, 1995; Zhang, 1996; Vickerstaff and Di Paolo, 2005; Haferlach et al., 2007; Stone et al., 2017), as well as experimental evidence in both the locust and fruit fly (Heinze et al., 2009; Turner-Evans et al., 2017). We note, however, that data from the fruit fly shows a more concentrated activity bump than what would be expected from a perfect sinusoidal profile (Seelig and Jayaraman, 2015; Turner-Evans et al., 2017), and that calcium imaging (which was used to measure the activity) can introduce biases in the activity measurements (Siegle et al., 2021; Huang et al., 2021). Thus the sinusoidal activity we model is an approximation of the true biological process rather than a perfect description.\n\nImportantly, our theory proposes that the optimally noise-resilient heading integration circuit should have synaptic weights that follow a sinusoidal pattern, even though such weights are not necessary for producing sinusoidal activity as discussed in section \u2018Minimising noise propagation in the circuit\u2019. This is the main prediction of our theory and we sought to validate it using connectivity data from the locust and fruit fly.\n\nHowever, before we can directly compare our model with biological circuits, we must address a number of modelling simplifications:\n\nTherefore, we simplified the biological connectivity to produce an equivalent circuit that could be directly compared with our model prediction. The neural population in our theoretical model corresponds to the biological EPG neurons, as these encode the integrated heading. We considered the other 3 neuron types that are part of the compass circuit (PEG, PEN, and Delta7 \u2013 see Kakaria and de Bivort, 2017; Pisokas et al., 2020) as just implementing connections between EPG neurons in accordance with biological constraints. We counted the number of different paths between EPG neurons, accounting for the sign of the connections (whether the path passed through an inhibitory Delta7 neuron), and used the net path count as a proxy for connectivity strength. This process is explained in detail in section \u2018Path counting\u2019.\n\nWe then computed the average connectivity profile, i.e., how each neuron connected to its neighbours around the ring, and compared this profile to the closest fitting sinusoid. Because the neuron gains, absolute synaptic strength and biophysical properties of the neurons are unknown, the units of the net path count are not necessarily equivalent to our abstract connection strength. We therefore fit an arbitrarily scaled and shifted sinusoid to the connection counts:\n\n$$\n\\omega_{m\u2212n}=\\betacos\u2061(\\frac{2\\pi(m\u2212n)}{N})+\\gamma,\n$$\n\nwhere $m\u2212n$ is the circular distance between 2 neurons while \u03b2 and \u03b3 are constants that are fit to minimise the precision-weighted mean squared error compared with the experimental connectivity profile (see section \u2018Fitting weights\u2019).\n\nAnalysing the data from Pisokas et al., 2020, we consider the shortest excitatory and inhibitory paths between EPG (also known as CL1a) neurons in the locust, which have lengths of 2 and 3, respectively. There are no direct connections of length 1, and all the paths of length \u22654 must pass through the same neuron-type multiple times. This path counting analysis for the locust is shown in Figure 4A, and the procedure is detailed in section \u2018Path counting\u2019. We find that the connectivity profile between neurons for the locust is very close to sinusoidal in shape, supporting our theoretical prediction.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/91533/elife-91533-fig4-v1.jpg)\n\n**Figure 4.:** The biological network models of (A) the locust and (B) the fruit fly, with four distinct neural populations each were simplified to equivalent networks with one population by counting paths of lengths 1, 2, and 3 between EPG neurons (which encode the integrated heading) and using the net signed path count as a proxy for connectivity strength. The average connectivity profile for each neuron to its neighbours around the ring was compared to the sinusoidal connectivity predicted by our theory. The locust network has no standard deviation because the data in Pisokas et al., 2020, are based on light microscopy which couldn\u2019t resolve variations between columns. Excitatory connections are shown in red and inhibitory connections in blue, while the strength of a connection is indicated by the line width.\n\nFor the fruit fly, we used data from Scheffer et al., 2020, which provides synapse counts between pairs of neurons. These synapse counts were used as a proxy for connectivity strength, a view that has been validated in previous experiments (Liu et al., 2022; Barnes et al., 2022). After identifying the neurons and connections of interest, we grouped the neurons in eight columns following the logic presented in Pisokas et al., 2020, with detailed methodology explained in section \u2018Data preprocessing\u2019. We repeated the path counting analysis for the fruit fly with synapse count data (Figure 4B), and found that while the data are noisy, the connectivity profile fits a single sinusoid pattern reasonably well. However, the high variability in the synapse counts makes our hypothesis difficult to differentiate from alternative shapes (see section \u2018Fitting weights\u2019).\n\nTaken together, this analysis shows that our theory is consistent with experimental data \u2013 using binary connectivity data for the desert locust and synapse count data for the fruit fly.\n\n### Learning rules and development\n\nHaving validated the connectivity of our theoretical circuit by comparing it to experimental data, we ask whether our circuit lends itself to biological development. Specifically, we show that even though our circuit requires precise connection strengths, this connectivity can be developed naturally by a Hebbian learning rule. Our approach follows from previous research which has shown that simple Hebbian learning rules can lead to the emergence of circular line attractors in large neural populations (Stringer et al., 2002), and that a head direction circuit can emerge from a predictive rule (Vafidis et al., 2022). In contrast to this work, we focus only on the self-sustaining nature of the heading integration circuit in insects and show that our proposed sinusoidal connectivity profile can emerge naturally.\n\nBecause the weight matrix is circulant, its eigenvalues are equal to the Fourier spectrum of its first row, which we derived to only have one nonzero value, for $f=1$. The network therefore only has a single eigenvalue and so projects activity into a single dimension. This operation is similar to classical dimensionality reduction methods such as principal component analysis, which can be implemented by Hebbian-like learning rules (Dayan and Abbott, 2001). We thus analyse the effects of incorporating a modified Oja\u2019s rule into our model, a classical variant of Hebbian learning where the synaptic strength between 2 neurons grows when both neurons are active simultaneously, and the total synaptic strength is regularised to prevent exploding weight growth,\n\n$$\n\\frac{dW_{n,m}}{dt}=\u03b7\\frac{d\\theta}{dt}(a_{m}(t)a_{n}(t)\u2212a_{n}^{2}(t)W_{n,m}),\n$$\n\nwhere $W_{n,m}$ is the synaptic connection strength from neuron $m$ to neuron $n$, $a_{m}$ and $a_{n}$ are the pre- and post-synaptic activities, respectively, and $\u03b7\\frac{d\\theta}{dt}$ is an adaptive learning rate where the plasticity is proportional to the rotational speed, whereas in the classical Oja\u2019s rule it would be constant.\n\nFor our analysis we assume that the insect faces all possible directions, and therefore that the neural activity goes around the full circle. We then integrate the weight updates over some long period of time,\n\n$$\n\u0394W_{n,m}=\\int\\frac{dW_{n,m}}{dt}dt=\\int\\frac{dW_{n,m}}{dt}(\\frac{d\\theta}{dt})^{\u22121}d\\theta=\u03b7\\int_{\\theta=0}^{2\\pi}[a_{m}(\\theta)a_{n}(\\theta)\u2212a_{n}(\\theta)^{2}W_{n,m}]d\\theta,\n$$\n\nwhere \u03b8 is the integration space. Applying the activity from Equation 17, we can find the fixed point of this update rule, when $\u0394W_{n,m}=0$:\n\n$$\nW_{n,m}=\\frac{\u03b7\\int_{\\theta}cos\u2061(\\theta+\\frac{2\\pin}{N})cos\u2061(\\theta+\\frac{2\\pim}{N})d\\theta}{\u03b7\\int_{\\theta}cos^{2}\u2061(\\theta+\\frac{2\\pin}{N})d\\theta}=cos\u2061(\\frac{2\\pi(n\u2212m)}{N}).\n$$\n\nCombined with Equation 7 and Equation 17, this result means that if there is sinusoidal activity in the network, the weights will naturally converge to the optimal sinusoidal values by way of our variant of Oja\u2019s rule. This leads to the emergence of sinusoidal activity and weights from self-consistency: initial noisy sinusoidal activity will enforce weights that are close to a sinusoid, and those weights will filter out noise to make the activity even closer to a sinusoid, which will in turn make the weights more sinusoidal. This process will iteratively make the activity and the weights converge to the solution from Equation 17.\n\nAn important point in the use of Oja\u2019s rule is that it would tend to concentrate the activity in a single harmonic. In a linear network, the harmonics would compete during learning, leading to one single harmonic emerging and all others being suppressed, as shown in section \u2018Linear neurons\u2019. For neurons with a nonlinear activation function, secondary harmonics would emerge, but would remain small under mild assumptions, as shown in section \u2018Neurons with nonlinear activations\u2019. Oja\u2019s rule will still cause the weights to converge to approximately sinusoidal connectivity.\n\nThe finding that the weights will converge to a sinusoidal connectivity with learning has two interesting consequences from a biological standpoint: First, our circuit can emerge even when starting with only very coarse initial weights, without the need for high precision initial connectivity. Second, this simple plasticity rule allows the system to repair or recover from perturbations in its synapses as shown by simulations in Figure 5. However, this learning rule only applies to the weights that ensure stable, self-sustaining activity in the network. The network connectivity responsible for correctly integrating angular velocity inputs (given by the PEN to EPG connections in the fly) might require more elements than a purely Hebbian rule (Stringer et al., 2002), such as the addition of a predictive component (Vafidis et al., 2022).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/91533/elife-91533-fig5-v1.jpg)\n\n**Figure 5.:** The synaptic weights converge to a sinusoidal pattern under our modified Oja\u2019s rule when the network activity is dynamic and a sinusoidal input is provided. (A) The weights start at zero and slowly converge to the prescribed sinusoidal profile, showing that this connectivity can emerge from scratch. (B) The sinusoidal weights are perturbed by noise but learning ensures that the weight profile is corrected. In both cases the network\u2019s initial activity is corrupted with zero mean Gaussian noise. Noisy sinusoidal input is provided to rotate the activity bump around the network at a constant speed of 1/8 neurons per timestep. The simulation runs for 100 periods. Parameters: $N=8,$ integration timestep $\u0394t=0.01,\u03b7=0.1,\u2016a\u2016=1,\\sigma_{W}=0.2,\\sigma_{a}=0.2,\\sigma_{u}=0.2$.\n\n### Evolution of the eight-column circuit\n\nHaving derived and experimentally validated the theoretical circuit, we now address another question: whether there might be a reason that insect head direction circuits have an eight-column architecture (Honkanen et al., 2019; Stone et al., 2017; Pisokas et al., 2020). The derivations leading to Equation 17 are valid for other values of $N$, so there is no a priori reason to expect $N=8$.\n\nOur reasoning follows recent studies in genetics (Johnston et al., 2022; Dingle et al., 2018), which argue that an observed organism is more likely to have resulted from a simple than a more complex genome: evolution favours simplicity. We note that powers of two are easier to generate with replication dynamics than other numbers, because they just require each cell to divide a set number of times. Other numbers require that, at some point, two cells resulting from a division must behave differently, necessitating more complex signalling mechanisms and rendering this possibility less likely to have been developed by evolution without some other driving factor. We therefore expect $N$ to be a power of two unless required to be otherwise.\n\nAs we show in section \u2018Circuits with different neuron counts\u2019, not all numbers of neurons enable a working circuit. The circuits for $N=2$ and $N=4$ are degenerate \u2013 either producing a single dimensional encoding, or two disconnected circuits that do not enforce the required circular topology. $N=8$ is the smallest power of two that could result in a non-degenerate circuit. This hints at the possibility that the eight-column architecture is not a chance evolutionary artefact, but rather that it is the genetically simplest circuit capable of performing heading integration.\n\n## Discussion\n\nIn this work we derived an optimal noise-minimising circuit for encoding heading and verified that this circuit matches experimental data from insects. Furthermore, we showed that such a circuit can be developed and maintained by a biological learning rule, and proposed a mathematical argument for the eight-column structure found in insect compass circuits. In this section, we discuss the implications and limitations of these contributions, and outline potential future work.\n\nHeading integration circuits in insects have been extensively studied, with models ranging in complexity from simplified conceptual networks (Wittmann and Schwegler, 1995; Cope et al., 2017) to sophisticated models constrained by biological data and featuring multiple neuron types (Kakaria and de Bivort, 2017; Su et al., 2017; Kim et al., 2017; Pisokas et al., 2020; Lyu et al., 2022). Previous theoretical work has argued that a sinusoidal activity encoding is such a common motif in insect navigation because it facilitates elementwise vector addition (Wittmann and Schwegler, 1995). However, this cannot be the only reason because as we show there is a whole family of circuits with different encoding patterns that enable easy vector addition. By showing that sinusoidal activity emerges from the theoretically most noise-resilient heading integration circuit, and verifying that the corresponding circuit matches experimental data, we close this explanatory gap.\n\nWe also show that our proposed circuit can be developed by a simple Hebbian-based learning rule, and that the presence of the eight-column structure can be explained from the perspective of replication dynamics. Both results align with the idea that evolution should be biased towards structures that are easier to encode in the genome (Johnston et al., 2022; Alon, 2007) and learn (Zador, 2019). To the best of our knowledge, this is the first time that such arguments have been put forward in the context of a specific circuit with a specific function.\n\nOur work still has some unaddressed limitations, in particular regarding the topology of the activity. The use of a circular topology to encode the head direction of the insect is valid only in 2D environments. But many species, including the fruit fly, can navigate in a 3D environment. We argue that even if these insects live in a 3D environment, the third dimension (up-down) is different from the other two due to gravity and the existence of a hard boundary (the ground). Further studies would be required to investigate the full effects of 3D motion.\n\nWe could also investigate circuits that integrate position, not only heading, which would require the activity to have a 2D plane topology instead of a circle. This would be particularly relevant for foraging insects such as bees or ants, whose ability to remember their position with respect to their nest has been the subject of many experimental and computational studies (Collett, 2019; Wehner and Srinivasan, 2003). The position integrating neurons in these insects are also predicted to have sinusoidal activation patterns (Wittmann and Schwegler, 1995; Vickerstaff and Di Paolo, 2005; Stone et al., 2017).\n\nFinally, another interesting avenue for future work is to compare the encoding of direction in insects with that of mammals, which encode heading in a fundamentally different way that uses many more neurons. This raises a critical question: why would the circuit and encoding be different if navigation follows similar principles across species? We speculate that the difference might lie in the type of navigation that the two classes of animals use. Insects often rely on a reference system that is globally anchored to a certain point or phenomenon, whether it is their nests for ants and bees, the sunlight polarisation pattern for locusts, or the milky way for dung beetles. On the other hand, mammals such as rodents typically do not use global cues but rely on local landmarks that are context-dependent and only occur in specific locations. Therefore, mammals must employ a flexible encoding that can be updated as different environments are explored. Further investigation of this possibility would require a different set of principles than those selected here.\n\n## Materials and methods\n\n### Path integration dynamics for heading and position\n\nHere, we make more precise statements about the dynamics of the circuit. The topology of the activity is a circular line attractor, so that any perturbation falls back into a circle and the position of the activity around the circle represents an angle. In our circuit with the dynamics from Equation 1, this circular line attractor is achieved by setting\n\n$$\n\u2016\u03d5^{\u2032}[Wa]\u2016=1\u2200\u2016a\u2016=r\u2016\u03d5^{\u2032}[Wa]\u2016<1\u2200\u2016a\u2016>r\u2016\u03d5^{\u2032}[Wa]\u2016>1\u2200\u2016a\u2016<r\n$$\n\nwhere $r$ is the radius of the attractor. Given that the dynamics are effectively linear we can apply a Fourier transform and write the original dynamics around the line attractor directly in the spatial Fourier basis,\n\n$$\nF_{f}[a\u02d9]=F_{f}[\u2212a+\\omega\u2217a+u(t)],\n$$\n\nwhich we can expand to obtain\n\n$$\nF_{f}[a\u02d9]=\u2212F_{f}[a]+F_{f}[\\omega]F_{f}[a]+F_{f}[u(t)],\n$$\n\nwhich only applies to the circular activity where the dynamics are linear. To incorporate the dynamics that force the activity to return to the cycle, we add a new term into the network dynamics which fulfils Equation 22 \u2013 increasing $\u2016F_{f}[a]\u2016$ if $\u2016a\u2016<r$ and decreasing it if $\u2016a\u2016>r$. This increase or decrease can be incorporated as a simple scaling factor on the activity decay term\n\n$$\nF_{f}[a\u02d9]=\u2212\\alpha(r\u2212\u2016a\u2016)F_{f}[a]+F_{f}[\\omega]F_{f}[a]+F_{f}[u(t)],\n$$\n\nwhere $\\alpha(r\u2212\u2016a\u2016)$ is a nonlinear smooth function with a single minimum and $\\alpha(0)=1$, which forces the activity to have the appropriate magnitude, $\u2016a\u2016=r$.\n\nNote that this doesn\u2019t require the neurons to have access to a global activity magnitude signal because each neuron receives a sufficient number of inputs to locally compute the total activity in the network. See the $f=1$ circuit in Figure 3: each neuron receives inputs from all others except those tuned to an orthogonal direction, but the activity of these orthogonal neurons can be computed from the correlated neurons next to them. For example, neuron 1 receives input from all neurons except 3 and 7, but the activities of these neurons can be computed from the activities of neurons 2 and 4 or 6 and 8, respectively. Note also that this is not the case for degenerate circuits such as $f=2$ in Figure 3, which would require an activation function with access to global information to constrain the total activity.\n\nAs the activity always falls back to the circular line attractor, the heading integration is linear around the circle. This implies that any small movement of the animal or the perception of a sensory cue is first projected onto the circle, then linearly integrated. We therefore only consider how network inputs cause the activity to rotate around the network,\n\n$$\nF_{f}[a\u02d9]=\u2212\\alpha(r\u2212\u2016a\u2016)F_{f}[a]+F_{f}[\\omega]F_{f}[a]+F_{f}[u(t)]_{\u22a5a},\n$$\n\nwhere $F_{f}[u(t)]_{\u22a5a}$ is the projection of the input signal perpendicular to the current activity pattern.\n\nIn more intuitive terms, the neurons have a saturating nonlinear activation function where they modulate their gain based on the total activity in the network. If the activity in the network is above the desired level, $r$, the gain is reduced and the activity decreases, and when the activity of the network is less than desired level, both the gain and the activity increase. Note that in this scenario transient deviations from the line attractor, which would induce nonlinear behaviour in the circuit dynamics, are tolerable. External inputs, $u(t)$, could transiently modify the shape of the activity, producing activity shapes deviating from what the linear model can accommodate. For example, the shape of the bump attractor could be modified through nonlinearities while the insect attains high angular velocity (Turner-Evans et al., 2017).\n\nSuch nonlinear dynamics do not conflict with the theory developed here, which only requires linearity when the activity is projected onto the circular line attractor. In our framework, the linearity of integration at the circular line attractor is not a computational assumption, but rather it emerges from the principle of symmetry.\n\n### Ambiguities in multiple harmonics decoding with drift\n\nWe consider the case where multiple harmonics are used, and their phases have drifted from each other. We only focus on angular drift, rather than noise in the full activity, because as noted in section \u2018Path integration dynamics for heading and position\u2019, any deviations in the overall activity level in the network will dissipate.\n\nFor example, we consider the harmonics $f_{1}$ and $f_{2}$. The activity is given by Equation 5\n\n$$\na_{n}(\\theta)=cos\u2061(\\frac{2\\pif_{1}n}{N}+f_{1}\\theta)+cos\u2061(\\frac{2\\pif_{2}n}{N}+f_{2}\\theta).\n$$\n\nIf the phase of the second harmonic drifts by $\\delta\\theta$,\n\n$$\na_{n}^{\\delta\\theta}(\\theta)=cos\u2061(\\frac{2\\pif_{1}n}{N}+f_{1}\\theta)+cos\u2061(\\frac{2\\pif_{2}n}{N}+f_{2}\\theta+\\delta\\theta).\n$$\n\nWe can calculate the alignment between the activity with drift and the activity without drift as a dot product of the activity vectors,\n\n$$\n\\frac{\u27e8a(\\theta),a^{\\delta\\theta}(\\theta)\u27e9}{\u2016a(\\theta)\u2016\u2016a^{\\delta\\theta}(\\theta)\u2016}=\\frac{1}{\u2016a(\\theta)\u2016^{2}}\\sumna_{n}(\\theta)a_{n}^{\\delta\\theta}(\\theta)=1+cos\u2061(\\delta\\theta).\n$$\n\nHowever, there are other angles where the alignment is better. For example, we can consider an estimate angle, $\\theta^$, with its corresponding activity, $a(\\theta^)$, which gives\n\n$$\n\\frac{\u27e8a(\\theta^),a^{\\delta\\theta}(\\theta)\u27e9}{\u2016a(\\theta^)\u2016\u2016a^{\\delta\\theta}(\\theta)\u2016}=\\frac{1}{\u2016a(\\theta)\u2016^{2}}\\sumna_{n}(\\theta^)a_{n}^{\\delta\\theta}(\\theta)=cos\u2061(\\theta\u2212\\theta^)+cos\u2061(\\theta\u2212\\theta^+\\delta\\theta).\n$$\n\nFor small $\\delta\\theta$, this is maximised when $\\theta^=\\theta+\\delta\\theta/2$. However, since \u03b8 is circular, if the drift is $\\pi$ then there are two possible positions given by $\\theta^=\\theta\\pm\\pi/2$.\n\nThis implies that an encoding using multiple harmonics does not necessarily offer a unique decoding in the presence of noise.\n\n### Equivalent circuits and degeneracies\n\n#### Equivalence under permutation\n\nThe activity of neurons given by Equation 5 implies that the preferred angle of neuron $n$ is given by\n\n$$\n\\phi_{n}=2\\pi\\frac{fnmodN}{N},\n$$\n\nwhere in our case $N=8$. Table 2 shows $nfmod(N)$ evaluated for all neurons in the network using different harmonics. We notice that for $f={1,3,5,7}$ all the numbers from zero to seven appear, while for $f={2,6}$ we only get the even numbers, for $f=4$ we get only zero and four, and for $f=8$ there is only zero.\n\n**Table 2.**\n Distribution of neural activity phases for different harmonics.We computed $fnmod8$ for $n={1,2,3,4,5,6,7}$ and $f={1,2,3,4,5,6,7,8}$ and found that all possible phases appear for any odd number. This happens because the $mod8$ operation imposes an abelian group structure, namely $Z/8$ and any coprime with 8 will be a generator of the whole group. If we use instead $f=2$ or $f=6$ we have that we can divide $N=8$ and $f$ by 2 and we get the abelian group $Z/4$ which has four elements. The same argument applies to $f=4$, leaving only two elements, and for $f=8$ we get a single element.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>n=0</th>\n      <th>n=1</th>\n      <th>n=2</th>\n      <th>n=3</th>\n      <th>n=4</th>\n      <th>n=5</th>\n      <th>n=6</th>\n      <th>n=7</th>\n      <th>gcd(8,f)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>f=1</td>\n      <td>0</td>\n      <td>1</td>\n      <td>2</td>\n      <td>3</td>\n      <td>4</td>\n      <td>5</td>\n      <td>6</td>\n      <td>7</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <td>f=2</td>\n      <td>0</td>\n      <td>2</td>\n      <td>4</td>\n      <td>6</td>\n      <td>0</td>\n      <td>2</td>\n      <td>4</td>\n      <td>6</td>\n      <td>2</td>\n    </tr>\n    <tr>\n      <td>f=3</td>\n      <td>0</td>\n      <td>3</td>\n      <td>6</td>\n      <td>1</td>\n      <td>4</td>\n      <td>7</td>\n      <td>2</td>\n      <td>5</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <td>f=4</td>\n      <td>0</td>\n      <td>4</td>\n      <td>0</td>\n      <td>4</td>\n      <td>0</td>\n      <td>4</td>\n      <td>0</td>\n      <td>4</td>\n      <td>4</td>\n    </tr>\n    <tr>\n      <td>f=5</td>\n      <td>0</td>\n      <td>5</td>\n      <td>2</td>\n      <td>7</td>\n      <td>4</td>\n      <td>1</td>\n      <td>6</td>\n      <td>3</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <td>f=6</td>\n      <td>0</td>\n      <td>6</td>\n      <td>4</td>\n      <td>2</td>\n      <td>0</td>\n      <td>6</td>\n      <td>4</td>\n      <td>2</td>\n      <td>2</td>\n    </tr>\n    <tr>\n      <td>f=7</td>\n      <td>0</td>\n      <td>7</td>\n      <td>6</td>\n      <td>5</td>\n      <td>4</td>\n      <td>3</td>\n      <td>2</td>\n      <td>1</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <td>f=8</td>\n      <td>0</td>\n      <td>0</td>\n      <td>0</td>\n      <td>0</td>\n      <td>0</td>\n      <td>0</td>\n      <td>0</td>\n      <td>0</td>\n      <td>8</td>\n    </tr>\n  </tbody>\n</table>\n\nThe explanation is based on number theory. If $f$ and $N$ have the greatest common divisor $gcd(N,f)=d$, then $nfmodN=0$ for $n=N/d$. This implies that the preferred angle of neuron $n=0$ is the same as that of $n=N/d$. When $N,f$ are coprime $d=1$, $n$ goes from 0 to $N\u22121$ without repeating any value. However, when $d>1$, the neuron $n=N/d$ has the same tuning as the neuron $n=0$, the neuron $n=N/d+1$ has the same tuning as the neuron $n=1$ and so on. In other words, the angular tuning of the neurons has a period of $gcd(N,f)$.\n\nThis divides the possible circuits into the following groups:\n\n#### Degenerate circuits\n\nGiven the groupings presented in the previous subsection, we notice that not all of them allow the encoding of a full range of angles, (0\u00b0, 360\u00b0). Notably, for $f=8$ the neurons only encode one angle, and for $f=4$ only two complementary angles are encoded, 0 and $\\pi$. This means that we cannot represent a full circle, because we need two different dimensions to do so, but in both of these cases we can only encode one.\n\nFor $f=2,6$ we obtain two groups of neurons, and in each group there are 2 neurons that encode two opposing directions, thus it is possible to cover a full circle. However, the circuit is degenerate, as shown in Figure 3. In this case there are no connections between even and odd neurons. Thus, we have two groups of neurons that are disconnected, and each group encodes only one direction (either north-south or east-west). While the encoding could work in principle, the circuit is decoupled, meaning that there is nothing in this circuit that prevents the activity from having activities outside the circular topology: as the two circuits are disconnected, a given value of activity in one group does not restrict the activity in the other.\n\n#### Circuits with different neuron counts\n\nWe evaluate the viability of circuits with other values of $N$. From findings in the the previous section, we note that choosing $N$ to be a prime number implies that all frequencies will be coprime with $N$, and thus that all the neurons will have a different tuning.\n\nFor $N=2$, the two angles are $0,\\pi$, in which case the circuit can only encode one dimension and thus cannot encode a full circle, as was the case for $N=8,f=4$ in section \u2018Degenerate circuits\u2019.\n\nFor $N=4$, if $f=2$ the circuit can encode only the angles $0,\\pi$ and we have the same case as for $N=2$. But if $f=1$ or $f=3$, the neurons are tuned to the angles $0,\\pi/2,\\pi,3\\pi/2$ which can encode a circle. However, by looking at the connectivity matrix from Equation 16, we find that neurons 1, 3 are connected to one another, but not to 2, 4, as was the case for $N=8,f=2$ in section \u2018Degenerate circuits\u2019. This implies that the circuit does not enforce a circular topology, and thus it does not work.\n\nNotice that we could think of another structure where each neuron encodes a different direction. Intuitively, we would have a north-south neuron and an east-west neuron, as we would have in Cartesian coordinates. However, this would have the same problem as $N=4$, where the 2 neurons would not interact and thus the topology would be wrong. Additionally, when the insect heads north, the north-south neuron would be very active, while when it heads south it would be very inactive. This means that the circuit as a whole would have a different firing rate depending on the direction, breaking the symmetry assumption.\n\n### Path counting\n\nWe counted the number of different paths between EPG neurons, accounting for the sign of the connections (whether the path passed through an inhibitory 7 neuron), and used the net path count as a proxy for connectivity strength. The results of this analysis are shown in section \u2018Comparing the predicted circuit with biological data\u2019, but we will detail the process here using the locust network from Pisokas et al., 2020, as an example, shown in Figure 6.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/91533/elife-91533-fig6-v1.jpg)\n\n**Figure 6.:** (A) The full locust connectivity network from Pisokas et al., 2020, and (B) the connections with path lengths 2 and 3 from $EPG_{1}$ to all other $EPG$ neurons in the network. Because the network is rotationally symmetric these path counts generalise to all $EPG$ neurons as shown in Table 3.\n\n**Table 3.**\n Net path count profile between $EPG$ neurons in the locust circuit.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>EPGn\u2192</th>\n      <th>n\u22124</th>\n      <th>n\u22123</th>\n      <th>n\u22122</th>\n      <th>n\u22121</th>\n      <th>n</th>\n      <th>n+1</th>\n      <th>n+2</th>\n      <th>n+3</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Excitatory path count</td>\n      <td>0</td>\n      <td>0</td>\n      <td>0</td>\n      <td>1</td>\n      <td>2</td>\n      <td>1</td>\n      <td>0</td>\n      <td>0</td>\n    </tr>\n    <tr>\n      <td>Inhibitory path count</td>\n      <td>4</td>\n      <td>3</td>\n      <td>1</td>\n      <td>0</td>\n      <td>0</td>\n      <td>0</td>\n      <td>1</td>\n      <td>3</td>\n    </tr>\n    <tr>\n      <td>Net path count</td>\n      <td>\u20134</td>\n      <td>-3</td>\n      <td>\u20131</td>\n      <td>1</td>\n      <td>2</td>\n      <td>1</td>\n      <td>\u20131</td>\n      <td>\u20133</td>\n    </tr>\n  </tbody>\n</table>\n\nWe consider the shortest excitatory and inhibitory pathways between EPG neurons, which have lengths of 2 and 3 respectively. There are no direct paths between $EPG$ neurons in the locust circuit. In this case there are two paths of length 2 that implement self-excitatory connections for $EPG_{1}$:\n\nAnd there is one connection of path length 2 that connects $EPG_{1}$ to each of its nearest neighbours:\n\nFor inhibitory connections there are four paths of length 3 that connect $EPG_{1}$ to the neuron on the opposite side of the ring, $EPG_{5}$. These are:\n\nThere are three connections of path length 3 connecting $EPG_{1}$ to $EPG_{4}$:\n\nFinally, there is one path of length 3 connecting $EPG_{1}$ to the neuron perpendicular to it around the ring, $EPG_{3}$:\n\nWe then add these connections together to obtain the net path count profile for the network. Because the network is rotationally symmetric, the connections from $EPG_{1}$ are the same as the connections from $EPG_{2}$ but with the neurons indices incremented by 1. The generalised profile is shown in Table 3.\n\n### Data preprocessing\n\nThe following section details our data preprocessing to produce a central complex circuit for the fruit fly similar to that in Pisokas et al., 2020, using synaptic counts from the fruit fly connectome dataset (Scheffer et al., 2020). Full details are shown in our available code.\n\nWe first identified the 6 neuron types which corresponded to the neurons of interest in the central complex (Table 4).\n\n**Table 4.**\n Neuron types and their numbers in the fruit fly connectome dataset (Scheffer et al., 2020).\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Neuron class</th>\n      <th>Number</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>PEN_a(PEN1)</td>\n      <td>20 neurons</td>\n    </tr>\n    <tr>\n      <td>PEN_b(PEN2)</td>\n      <td>22 neurons</td>\n    </tr>\n    <tr>\n      <td>PEG</td>\n      <td>18 neurons</td>\n    </tr>\n    <tr>\n      <td>EPG</td>\n      <td>46 neurons</td>\n    </tr>\n    <tr>\n      <td>EPGt</td>\n      <td>4 neurons</td>\n    </tr>\n    <tr>\n      <td>Delta7 (\u03947)</td>\n      <td>42 neurons</td>\n    </tr>\n  </tbody>\n</table>\n\nWe grouped the two PEN and two EPG populations together for further analysis.\n\nFrom the connectome data we created a connectivity matrix (Figure 7) containing the number of synapses between all pairs of neurons of the above-mentioned types. This contained 129,473 synapses between 152 neurons in total.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/91533/elife-91533-fig7-v1.jpg)\n\n**Figure 7.:** On the horizontal axis are the names of the pre-synaptic neurons while on the vertical axis the names of the post-synaptic neurons. Neurons of each cell type are ordered by the glomerulus they innervate and arbitrarily within glomerulus.\n\nNext, neurons in the same glomerulus were grouped together. The EPG neurons were divided between 18 glomeruli, L1-L9 and R1-R9. The PEN neurons were also divided between 16 glomeruli, L2-L9 and R2-R9. The PEG neurons were divided into 18 glomeruli with only 1 neuron in each, L1-L9 and R1-R9. The Delta7 neurons had 10 unique sub-types (Table 5) which were grouped into eight glomeruli based on their left glomerulus index \u2013 i.e., L4R5_R and L4R6_R were grouped in L4.\n\n**Table 5.**\n List of the Delta7 neuron sub-types in the fruit fly connectome dataset (Scheffer et al., 2020).These differ in the glomeruli their pre- and post-synaptic terminals innervate. We are referring to those altogether as Delta7 neurons in the present account.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Delta7 neuron sub-types</th>\n      <th>Glomerulus group</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Delta7(PB15)_L1L9R8_R</td>\n      <td>Delta7 L1</td>\n    </tr>\n    <tr>\n      <td>Delta7(PB15)_L2R7_R</td>\n      <td>Delta7 L2</td>\n    </tr>\n    <tr>\n      <td>Delta7(PB15)_L3R6_R</td>\n      <td>Delta7 L3</td>\n    </tr>\n    <tr>\n      <td>Delta7(PB15)_L4R5_R</td>\n      <td>Delta7 L4</td>\n    </tr>\n    <tr>\n      <td>Delta7(PB15)_L4R6_R</td>\n      <td>Delta7 L4</td>\n    </tr>\n    <tr>\n      <td>Delta7(PB15)_L5R4_L</td>\n      <td>Delta7 L5</td>\n    </tr>\n    <tr>\n      <td>Delta7(PB15)_L6R3_L</td>\n      <td>Delta7 L6</td>\n    </tr>\n    <tr>\n      <td>Delta7(PB15)_L6R4_L</td>\n      <td>Delta7 L6</td>\n    </tr>\n    <tr>\n      <td>Delta7(PB15)_L7R2_L</td>\n      <td>Delta7 L7</td>\n    </tr>\n    <tr>\n      <td>Delta7(PB15)_L7R3_L</td>\n      <td>Delta7 L7</td>\n    </tr>\n    <tr>\n      <td>Delta7(PB15)_L8R1R9_L</td>\n      <td>Delta7 L8</td>\n    </tr>\n  </tbody>\n</table>\n\nAfter this grouping we had a connectivity matrix of 60 neurons in total (Figure 8).\n\n![Figure 8.](https://cdn.elifesciences.org/articles/91533/elife-91533-fig8-v1.jpg)\n\n**Figure 8.:** On the horizontal axis are the names of the pre-synaptic neurons while on the vertical axis the names of the post-synaptic neurons. Neuron groups are ordered by the glomerulus they innervate.\n\nFor the EPG, PEN, and PEG neurons we then grouped glomeruli mirrored in the two hemispheres together \u2013 i.e., L1 and R1 were grouped into glomerulus 1. This resulted in a connectivity matrix of 34 neurons (Figure 9).\n\n![Figure 9.](https://cdn.elifesciences.org/articles/91533/elife-91533-fig9-v1.jpg)\n\n**Figure 9.:** On the horizontal axis are the names of the pre-synaptic neuron groups while on the vertical axis are the names of the post-synaptic neuron groups. Neuron groups are ordered by the glomerulus they innervate.\n\nFinally, as in Pisokas et al., 2020, we grouped the PEG9 and PEG1 neurons and EPG9 and EPG1 neurons together. The former because they both output to the same ellipsoid body segment, and the latter because they both receive common input. This resulted in a connectivity matrix with 32 neurons (Figure 10) which we used for the analysis in Figure 4 as this network had the eightfold rotational symmetry compatible with our theoretical model.\n\n![Figure 10.](https://cdn.elifesciences.org/articles/91533/elife-91533-fig10-v1.jpg)\n\n**Figure 10.:** On the horizontal axis are the names of the pre-synaptic neuron groups while on the vertical axis the names of the post-synaptic neuron groups. Neuron groups are ordered by the glomerulus they innervate.\n\n### Fitting weights\n\nHaving calculated the paths or synaptic strengths between $EPG$ neurons in the network, we next computed the average connectivity profile for the network \u2013 how each $EPG$ neuron connected to its neighbours a certain distance around the ring. We then compared this connectivity profile to the closest fitting sinusoid to quantify to what degree our prediction of sinusoidal weights was consistent with biological data.\n\nWe use the vector\n\n$$\n\\omega^_{d}=\\betacos\u2061(\\frac{2\\pid}{N})+\\gamma,\n$$\n\nwhere $d=((m\u2212n)+4mod8)\u22124\\in[\u22124...3]$ is the signed circular distance from neuron $m$ to neuron $n$.\n\nIn the networks from Pisokas et al., 2020, the weights are rotationally symmetric, so we minimise the mean squared error between the sinusoidal profile and the biological connectivity profile,\n\n$$\n\\beta^{\u2217},\\gamma^{\u2217}=argmin_{\\beta,\\gamma}\\frac{1}{N}\\sumd=\u2212N/2N/2\u22121(\\omega^_{d}(\\beta,\\gamma)\u2212\\omega_{d})^{2},\n$$\n\nby using least squares.\n\nThe network derived from the synaptic count data in Scheffer et al., 2020, is not rotationally symmetric so each value in the average connectivity profile, $\\omega_{d}$, has a corresponding standard deviation, $\\sigma_{d}$. In this case we minimise the precision-weighted mean squared error, which emphasises fitting connectivity profile values that are more consistently seen in the network:\n\n$$\n\\beta^{\u2217},\\gamma^{\u2217}=argmin_{\\beta,\\gamma}\\frac{1}{N}\\sumd=\u2212N/2N/2\u22121(\\frac{\\omega^_{d}(\\beta,\\gamma)\u2212\\omega_{d}}{\\sigma_{d}})^{2}.\n$$\n\nThe result of fitting sinusoidal profiles to the data is shown in section \u2018Comparing the predicted circuit with biological data\u2019. Since the fit for the fruit fly is not as clear as for the locust, we also compared the observed weights in the fruit fly with Gaussian and von Mises curves. Since both the Gaussian and von Mises distributions also have a parameter specifying their width, this requires fitting an extra parameter. For the Gaussian we have\n\n$$\n\\beta_{g}e^{\u2212\\frac{n^{2}}{\\sigma_{g}}}+\\gamma_{g},\n$$\n\nwhere $\\beta_{g},\\sigma_{g},\\gamma_{g}$ are parameters to fit. For the von Mises distribution we have\n\n$$\n\\beta_{v}e^{\u03ba_{v}cos\u2061(n)}+\\gamma_{v},\n$$\n\nwhere $\\beta_{v},\u03ba_{v},\\gamma_{v}$ are parameters to fit. For both the Gaussian and von Mises, we find a good agreement with the weights in Figure 11, and a lower root mean square error (RMSE) than with any combination of harmonics. However, we note that our sinusoidal model has two parameters instead of three, so to make a fair comparison we use the corrected Akaike information criterion (AICc) (Burnham and Anderson, 2004), which is given by\n\n$$\nAICc=2p\u22122ln\u2061(L)+\\frac{2p^{2}+2p}{N\u2212p\u22121}=2p+2NRMSE^{2}+\\frac{2p^{2}+2p}{N\u2212p\u22121},\n$$\n\n![Figure 11.](https://cdn.elifesciences.org/articles/91533/elife-91533-fig11-v1.jpg)\n\n**Figure 11.:** When fixing the width parameters of these distributions to match the sinusoid, all three distributions provide a very similar fit. Note that the \u20134 and 4 neuron indices are the same and just duplicated for visualisation purposes.\n\nwhere $p$ is the number of distribution parameters, $N$ the number of samples, and $ln\u2061(L)$ is the log-likelihood, which in this case is the sum of squared errors, $ln\u2061(L)=\u2212NRMSE^{2}$. We find that the lowest AICc (corresponding to the best model) corresponds to the harmonic $f=1$ (Table 6).\n\n**Table 6.**\n Quality of fit for different possible weight structures.The root mean square error (RMSE) is weighted by the variance attached to each connection (in units of standard deviations). The corrected Akaike information criterion (AICc) is also shown for the weight profiles in Figure 11. The best fit after correcting for model size is the Gaussian with fixed standard deviation, but it is very closely matched by the von Mises with fixed kappa and $f=1$.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Curve</th>\n      <th>RMSE</th>\n      <th>AICc</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>f=1</td>\n      <td>0.3213</td>\n      <td>8.05</td>\n    </tr>\n    <tr>\n      <td>Gaussian</td>\n      <td>0.1941</td>\n      <td>12.60</td>\n    </tr>\n    <tr>\n      <td>von Mises</td>\n      <td>0.1854</td>\n      <td>12.55</td>\n    </tr>\n    <tr>\n      <td>Gaussian (fixed stddev)</td>\n      <td>0.3142</td>\n      <td>7.98</td>\n    </tr>\n    <tr>\n      <td>von Mises (fixed kappa)</td>\n      <td>0.3178</td>\n      <td>8.02</td>\n    </tr>\n  </tbody>\n</table>\n\nAs a complementary approach to evaluate the shape of the distribution, we first fit the Gaussian and von Mises distributions to the best fit $f=1$ curve. We then freeze the width parameters of the distributions ($\\sigma_{g}$ for the Gaussian and $\u03ba_{v}$ for the von Mises) and only optimise the amplitude and vertical offset parameters (\u03b2 and \u03b3) to fit the data. This approach limits the number of free parameters for the Gaussian and von Mises distributions to two, to match the sinusoid. The results are shown in Figure 11 and Table 6. Both the fixed-width Gaussian and von Mises distributions are a slightly better fit to the data than the sinusoid, but the differences between the three curves are very small.\n\nIn simplifying the fruit fly connectome data, we assumed all synapses of different types were of equal weight, as no data to the contrary were available. Different synapse types having different strengths could introduce nonlinear distortions between our net synaptic path count and the true synaptic strength, which could in turn make the data a better or worse fit for a sinusoidal compared to a Gaussian profile. As such, we don\u2019t consider the 2% relative difference in RMSE between the $f=1$ sinusoid and fixed-width Gaussian and von Mises distributions to be conclusive.\n\nOverall, we find that the cosine weights that emerge from our derivations are a very close match for the locust, but less precise for the fly, where other functions fit slightly better. Given the limitations in using the currently available data to provide an exact estimate of synaptic strength (for the locust), and due to the high variability of the synaptic count (for the fruit fly), we consider that our theory is compatible with the observed data.\n\n### Convergence of Oja\u2019s rule with multiple harmonics\n\n#### Linear neurons\n\nIntegrating our modified Oja\u2019s learning rule updates (Equation 19) over all angles in the position space gives us the following:\n\n$$\n\u0394\\omega=a\u2217a\u2212\u2016a\u2016^{2}\\omega,\n$$\n\nwhich we can transform into the Fourier domain:\n\n$$\nF_{f}[\u0394\\omega]=F_{f}[a]^{2}\u2212\u2016a\u2016^{2}F_{f}[\\omega].\n$$\n\nThe steady-state solution when the weight update is 0 is:\n\n$$\nF_{f}[\\omega]=\\frac{F_{f}[a]^{2}}{\u2016a\u2016^{2}}.\n$$\n\nBy Parseval\u2019s theorem, $\u2016a\u2016^{2}=\\sumf\u2016F_{f}[a]\u2016^{2}$ so the Fourier spectrum of the steady-state weights is just the normalised Fourier spectrum of the input:\n\n$$\nF_{f}[\\omega]=\\frac{F_{f}[a]^{2}}{\\sumf\u2016F_{f}[a]\u2016^{2}}.\n$$\n\nFrom this we can see that the stable $L_{1}$ norm of $F[\\omega]$ is 1,\n\n$$\n\\sumf|F_{f}[\\omega]|=\\frac{1}{\\sumf\u2016F_{f}[a]\u2016^{2}}\\sumf|F_{f}[a]^{2}|=1.\n$$\n\nIf we combine this result with Equation 10, we find that in the case of a single encoding frequency, $F_{f^{\u2217}}[a]>0$, Oja\u2019s rule will result in a single stable harmonic with $F_{f^{\u2217}}[\\omega]=1$ because $\\sumfF_{f}[a]^{2}=F_{f^{\u2217}}[a]^{2}$.\n\nIf Oja\u2019s rule has a normalising factor added to account for the number of encoding harmonics used, $|F|$,\n\n$$\n\u0394\\omega=a\u2217a\u2212\\frac{1}{|F|}\u2016a\u2016^{2}\\omega,\n$$\n\nthen the steady-state solution for the weights becomes\n\n$$\nF_{f}[\\omega]=|F|\\frac{F_{f}[a]^{2}}{\\sumfF_{f}[a]^{2}},\n$$\n\nwhere the $L_{1}$ norm of $\\omega=|F|$. In this case multiple harmonics could develop stable values of $F_{f}[\\omega]=1$, but only if the activity magnitudes for these harmonics are identical. If any perturbation affects the activities, the harmonic which happens to have the larger activity will begin to dominate the other by the dynamics of Equation 43, until only one remains.\n\nTherefore, the only case where our learning rule results in a stable solution robust to perturbations is when only one harmonic is used.\n\n#### Neurons with nonlinear activations\n\nAn analysis similar to the previous case applies when the firing rate of the neurons has a nonlinear activation. For a given activity profile, Equation 41 still applies. Thus, for an activity profile $a$, it will generate the weight profile\n\n$$\n\\omega=\\frac{1}{\u2016a\u2016^{2}}\\sumf|F_{f}[a]|^{2},\n$$\n\nwhere we set $\u2016\\omega\u2016=1$ for convenience of notation. Note that the squaring process will induce a weight distribution in which the larger harmonic will be enhanced more than the rest.\n\nHaving obtained the weights, the equation for the activity profile can be solved through the self-consistency setting in which $u(t)=0$ and the activity is maintained,\n\n$$\na_{n}(\\theta)=\u03d5(\\summ=0N\\omega_{m}a_{n\u2212m}(\\theta)),\n$$\n\nwhere \u03d5 is the nonlinear activation function. Given the rotational symmetry from our assumptions, it is enough to solve for $a_{n}=a_{n}(0)$, which gives us a set of $N/2$ equations which can then be combined with Equation 45, which gives us the following equation to solve\n\n$$\na_{n}=\u03d5(\\summ=0N(\\sumf=1N\\frac{F_{f}[a]^{2}}{\u2016a\u2016^{2}}cos\u2061(\\frac{2\\pi(n\u2212m)}{N}))a_{n\u2212m})=\u03d5(\\frac{1}{\u2016a\u2016^{2}}\\summ=0N(\\sumf=1N[\\sumk=0Na_{k}cos\u2061(\\frac{2\\pikf}{N})]^{2}cos\u2061(\\frac{2\\pi(n\u2212m)}{N}))a_{n\u2212m}).\n$$\n\nSince $a_{n}=a_{\u2212nmodN}$, we obtain $N/2$ equations for $N/2$ values of $a_{n}$.\n\nNote that there is no closed form solution in general, but some generic properties can be inferred. For example, as long as we have a single bump of activity, $F_{1}[a]>|F_{f}[a]|,\u00a0\u2200f>1$, therefore $F_{1}[\\omega]>F_{f}[\\omega],\u00a0\u2200f>1$. More specifically,\n\n$$\nF_{f}[\\omega]=\\frac{|F_{f}[a]|^{2}}{|F_{1}[a]|^{2}}F_{1}[\\omega].\n$$\n\nFigure 12 shows the results of the same simulation as section \u2018Learning rules and development\u2019, but using neurons with a nonlinear ($tanh$) activation function, and distorting the network input to be a more square wave-like sinusoid. As predicted theoretically, our rule still reinforces the dominant spatial frequency in the network, causing the weights to converge to the sinusoidal profile our theory predicts.\n\n![Figure 12.](https://cdn.elifesciences.org/articles/91533/elife-91533-fig12-v1.jpg)\n\n**Figure 12.:** The synaptic weights converge to a sinusoidal pattern under Oja\u2019s rule when the neurons have a nonlinear ($tanh$) activation function and a distorted (more square wave-like) sinusoidal input is provided. (A) The weights start at zero and slowly converge to the prescribed sinusoidal profile, showing that this connectivity can emerge from scratch. (B) The sinusoidal weights are perturbed by noise but learning ensures that the weight profile is corrected. (C) The distorted sinusoidal input (orange) compared to a sinusoid profile (blue). Noise was added to the initial activity, weights, and input with the same parameters as in Figure 5, the only difference being that these simulations were run for 2500 periods.\n",
+      "created_at": "2025-12-04T04:36:47.464066Z"
+    },
+    {
+      "id": "2228884c-af82-42a6-98ad-68fc61c18ffe",
+      "submission_id": "10ec2b25-ff76-40ab-889d-a105a05cf14d",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Laura L Colgin, https://ror.org/00hj54h04 University of Texas at Austin United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.91533.sa0](https://doi.org/10.7554/eLife.91533.sa0)\n\nThis important work suggests that the observed cosine-like activity in the head direction circuit of insects not only subserves vector addition but also minimizes noise in the representation. The authors provide solid evidence using the locust and fruit fly connectomes. The work raises important theoretical questions about the organization of the navigation system and will be of interest to theoretical and experimental researchers studying navigation.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Laura L Colgin, https://ror.org/00hj54h04 University of Texas at Austin United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.91533.sa1](https://doi.org/10.7554/eLife.91533.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"The insect compass system: From theory to circuitry\" for consideration by eLife. Your article has been reviewed by 1 peer reviewer, and the evaluation has been overseen by a Reviewing Editor and Laura Colgin as the Senior Editor.\n\nThe reviewer and the Senior Editor have discussed your submission, and the Senior Editor has drafted this to help you prepare a revised submission.\n\nThank you for your patience. It was difficult to find reviewers for your manuscript. Then, one of the reviewers did not submit their review and did not respond to emails over the course of multiple months. In fairness to you, we decided to move forward with the decision on the basis of one review.\n\nEssential revisions (for the authors):\n\nReviewer #2 (Recommendations for the authors):\n\n\u2013 L. 186 \"..these extra encoding channels require a higher total neural activity\u2026\" A sentence explaining why this is the case would be helpful to the reader. For example, this might be because we require a localized bump of activity.\n\n\u2013 L. 18 \"finding a remarkable agreement between our theory and experimental evidence\", L. 267 \"We therefore confirm our prediction\u2026\" I believe the language here should be toned down (see weaknesses point 2).\n\n\u2013 Some explanation of how eq. 23 is derived would be beneficial.\n\n\u00ad\u2013 Methods section 3.2 is instructive but a sentence explaining the choice to model the impact of noise as a phase drift \u03b4\u03b8 would be beneficial. \u00ad\n\n\u2013 L. 427 the degeneracy argument holds if the weights between the two sets of neurons are zero. Another argument against this circuit is that it has half the spatial resolution.\n\n\u2013 L. 297-9 This statement seems a bit harsh. Picking up the dominant frequency would still be a great result.\n\n\u2013 L. 342-4 The idea to learn the HD system by simple Hebbian learning rules has been proposed before by Stringer et al. 2002, and potentially others. The authors should cite this work.\n",
+      "created_at": "2025-12-04T04:36:47.464066Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T04:36:47.464066Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T04:36:47.464066Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "336bf0b0-4860-40f1-82ea-35332d619bbc",
+      "content_id": "3d85af4d-fb38-4112-abd9-9aafd2dd3e60",
+      "claim_id": "C1",
+      "claim": "Insects encode their head direction as a sinusoidal activity pattern around a ring of neurons arranged in an eight-column structure.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous work has shown that insects encode their head direction as a sinusoidal activity pattern around a ring of neurons arranged in an eight-column structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous work in the field.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:47.464066Z"
+    },
+    {
+      "id": "2b6c6e82-f874-4675-9a54-8c784fcfcc83",
+      "content_id": "3d85af4d-fb38-4112-abd9-9aafd2dd3e60",
+      "claim_id": "C2",
+      "claim": "The sinusoidal encoding of head direction is the most noise-resilient activity pattern when coupled with a sinusoidal connectivity pattern between encoding neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Among these activity patterns, we prove that the sinusoidal one is the most noise-resilient, but only when coupled with a sinusoidal connectivity pattern between the encoding neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the theoretical analysis presented in the manuscript, with mathematical derivations provided in the Results section.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:47.464066Z"
+    },
+    {
+      "id": "c6987338-52e1-48f0-bb6b-a4bab5868458",
+      "content_id": "3d85af4d-fb38-4112-abd9-9aafd2dd3e60",
+      "claim_id": "C3",
+      "claim": "The predicted optimal connectivity pattern agrees with anatomical data from the head direction circuits of the locust and the fruit fly.",
+      "claim_type": "EXPLICIT",
+      "source": "We compare this predicted optimal connectivity pattern with anatomical data from the head direction circuits of the locust and the fruit fly, finding that our theory agrees with experimental evidence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by comparison of theoretical predictions with experimental connectivity data shown in Figure 4.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:47.464066Z"
+    },
+    {
+      "id": "d0f212b6-aba6-4e5d-bbcf-3c62434bb84a",
+      "content_id": "3d85af4d-fb38-4112-abd9-9aafd2dd3e60",
+      "claim_id": "C4",
+      "claim": "The predicted circuit can emerge using Hebbian plasticity.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we demonstrate that our predicted circuit can emerge using Hebbian plasticity, implying that the neural connectivity does not need to be explicitly encoded in the genetic program of the insect but rather can emerge during development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by mathematical analysis and simulations shown in the 'Learning rules and development' section and Figure 5.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:47.464066Z"
+    },
+    {
+      "id": "abebfa13-4c02-4498-83db-6a2c2d94e524",
+      "content_id": "3d85af4d-fb38-4112-abd9-9aafd2dd3e60",
+      "claim_id": "C5",
+      "claim": "The eight-column organisation of head direction circuits across multiple insect species can be explained by basic evolutionary principles.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we illustrate that in our theory, the consistent presence of the eight-column organisation of head direction circuits across multiple insect species is not a chance artefact but instead can be explained by basic evolutionary principles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by theoretical arguments based on replication dynamics presented in the 'Evolution of the eight-column circuit' section.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:47.464066Z"
+    },
+    {
+      "id": "4e3b23db-d3d3-4578-b579-68145deb6e95",
+      "content_id": "3d85af4d-fb38-4112-abd9-9aafd2dd3e60",
+      "claim_id": "C6",
+      "claim": "Insects keep track of their orientation by using visual cues and integrating angular velocity signals over time.",
+      "claim_type": "EXPLICIT",
+      "source": "This orientation tracking is achieved by the use of visual cues as well as integrating angular velocity signals over time to maintain a heading estimate relative to a starting angle (Seelig and Jayaraman, 2015; Taube, 2007), known as heading integration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous experimental work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:47.464066Z"
+    },
+    {
+      "id": "397ba7d3-553a-406f-8886-97caaf85039e",
+      "content_id": "3d85af4d-fb38-4112-abd9-9aafd2dd3e60",
+      "claim_id": "C7",
+      "claim": "Electrophysiological and calcium imaging studies have shown that the neural population encoding head direction in insects has a sinusoid-shaped activation pattern.",
+      "claim_type": "EXPLICIT",
+      "source": "Electrophysiological and calcium imaging studies have shown that the neural population encoding the head direction in insects has a sinusoid-shaped activation pattern (Labhart, 1988; Labhart, 2000; Loesel and Homberg, 2001; Pfeiffer et al., 2005; Pfeiffer and Homberg, 2007; Kinoshita et al., 2007; Heinze et al., 2009; Homberg et al., 2011; El Jundi et al., 2014; El Jundi et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to experimental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:47.464066Z"
+    },
+    {
+      "id": "42bc9ac9-811d-4b32-bd38-2ae2f2ddbc47",
+      "content_id": "3d85af4d-fb38-4112-abd9-9aafd2dd3e60",
+      "claim_id": "C8",
+      "claim": "Downstream neural populations encode velocity signals as sinusoidal activations.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, downstream neural populations also encode velocity signals as sinusoidal activations (Lyu et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to experimental work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:47.464066Z"
+    },
+    {
+      "id": "37214158-9db1-456e-aa23-6c4185586d7d",
+      "content_id": "3d85af4d-fb38-4112-abd9-9aafd2dd3e60",
+      "claim_id": "C9",
+      "claim": "Sinusoidal activity patterns enable easy elementwise vector addition.",
+      "claim_type": "EXPLICIT",
+      "source": "Theoretical work has speculated that this recurring motif of sinusoidal activity patterns might be so prevalent because it enables easy elementwise vector addition, where vectors encoded as sinusoidal activity waveforms can be added together to give a sinusoidal waveform encoding the sum of the vectors (Touretzky et al., 1993; Wittmann and Schwegler, 1995; Vickerstaff and Di Paolo, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous theoretical work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:47.464066Z"
+    },
+    {
+      "id": "3f36ff85-52ed-4768-b775-72548042709e",
+      "content_id": "3d85af4d-fb38-4112-abd9-9aafd2dd3e60",
+      "claim_id": "C10",
+      "claim": "Many other circuits with different activity patterns can perform vector addition in the same way as sinusoidal encodings.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show that enabling easy vector addition cannot be the unique driving factor for the presence of sinusoidal heading encodings, as many other circuits with different activity patterns can perform vector addition in the same way.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the theoretical analysis presented in the manuscript.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:47.464066Z"
+    },
+    {
+      "id": "ab371584-9e83-4a11-818a-f01b1731674b",
+      "content_id": "3d85af4d-fb38-4112-abd9-9aafd2dd3e60",
+      "claim_id": "C11",
+      "claim": "A circuit capable of performing heading integration must have circular topology.",
+      "claim_type": "EXPLICIT",
+      "source": "The activity should have the same topology as the variable it is encoding to prevent discontinuities. To encode heading, the activity should have the topology of a 1D circle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical requirement established in Table 1.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:47.464066Z"
+    },
+    {
+      "id": "158cefd2-2f5a-4bff-9bb7-807776341d65",
+      "content_id": "3d85af4d-fb38-4112-abd9-9aafd2dd3e60",
+      "claim_id": "C12",
+      "claim": "A heading integration circuit should have rotational symmetry.",
+      "claim_type": "EXPLICIT",
+      "source": "The heading integration circuit should work similarly, irrespective of the direction in which the insect travels. There should not be a bias for any direction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical requirement established in Table 1.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:47.464066Z"
+    },
+    {
+      "id": "d95a0ffb-86ee-474f-91bc-4c195178ef8e",
+      "content_id": "3d85af4d-fb38-4112-abd9-9aafd2dd3e60",
+      "claim_id": "C13",
+      "claim": "The circuit should minimise noise to enable precise navigation.",
+      "claim_type": "EXPLICIT",
+      "source": "The circuit should minimise the noise of the neural representation so the insect can navigate as precisely as possible.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical requirement established in Table 1.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:47.464066Z"
+    },
+    {
+      "id": "cc051af5-07fb-439f-9f39-ec34c639a0e1",
+      "content_id": "3d85af4d-fb38-4112-abd9-9aafd2dd3e60",
+      "claim_id": "C14",
+      "claim": "The neural activity vector is circularly rotated as the head direction changes.",
+      "claim_type": "EXPLICIT",
+      "source": "which enforces that the neural activity vector is circularly rotated as the head direction changes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is derived from the mathematical formulation of rotational symmetry in Equation 2.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:47.464066Z"
+    },
+    {
+      "id": "aeec4073-2997-4d70-adf5-5d1354cae044",
+      "content_id": "3d85af4d-fb38-4112-abd9-9aafd2dd3e60",
+      "claim_id": "C19",
+      "claim": "The signal-to-noise ratio decreases when using more than one harmonic if total activity is limited.",
+      "claim_type": "EXPLICIT",
+      "source": "If the total activity in the network is limited, the signal-to-noise ratio is in fact decreased when using more than one harmonic.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is derived mathematically in Equation 15.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:47.464066Z"
+    },
+    {
+      "id": "15c1f881-a556-4b2a-819e-5cb0db056fb3",
+      "content_id": "3d85af4d-fb38-4112-abd9-9aafd2dd3e60",
+      "claim_id": "C20",
+      "claim": "Circuits using multiple harmonics perform worse in high noise environments because they do not guarantee an unambiguous orientation encoding.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, as detailed in sections 'Constraints on the neural activity' and 'Ambiguities in multiple harmonics decoding with drift', circuits using multiple harmonics perform worse in high noise environments because they are not guaranteed to provide an unambiguous orientation encoding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through mathematical analysis in the Materials and methods section.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:47.464066Z"
+    },
+    {
+      "id": "04307a0d-5676-4aab-8d63-f7553e67868a",
+      "content_id": "3d85af4d-fb38-4112-abd9-9aafd2dd3e60",
+      "claim_id": "C25",
+      "claim": "The prediction that heading should be encoded as a sinusoidal activity bump is consistent with previous theoretical models.",
+      "claim_type": "EXPLICIT",
+      "source": "The prediction that heading should be encoded as a sinusoidal activity bump is consistent with previous theoretical models (Touretzky et al., 1993; Wittmann and Schwegler, 1995; Hartmann and Wehner, 1995; Zhang, 1996; Vickerstaff and Di Paolo, 2005; Haferlach et al., 2007; Stone et al., 2017), as well as experimental evidence in both the locust and fruit fly (Heinze et al., 2009; Turner-Evans et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous theoretical and experimental work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:47.464066Z"
+    },
+    {
+      "id": "a69d3abf-a8cb-4dbb-a67c-259590cd57e9",
+      "content_id": "3d85af4d-fb38-4112-abd9-9aafd2dd3e60",
+      "claim_id": "C26",
+      "claim": "Data from the fruit fly shows a more concentrated activity bump than expected from a perfect sinusoidal profile.",
+      "claim_type": "EXPLICIT",
+      "source": "We note, however, that data from the fruit fly shows a more concentrated activity bump than what would be expected from a perfect sinusoidal profile (Seelig and Jayaraman, 2015; Turner-Evans et al., 2017), and that calcium imaging (which was used to measure the activity) can introduce biases in the activity measurements (Siegle et al., 2021; Huang et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to experimental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:47.464066Z"
+    },
+    {
+      "id": "ce6f17ea-ec07-4005-9c53-3f46aee4117b",
+      "content_id": "3d85af4d-fb38-4112-abd9-9aafd2dd3e60",
+      "claim_id": "C27",
+      "claim": "The connectivity profile between neurons for the locust is very close to sinusoidal in shape.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that the connectivity profile between neurons for the locust is very close to sinusoidal in shape, supporting our theoretical prediction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through path counting analysis shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:47.464066Z"
+    },
+    {
+      "id": "998b88f6-f03e-4cc3-a7ed-a007ec885120",
+      "content_id": "3d85af4d-fb38-4112-abd9-9aafd2dd3e60",
+      "claim_id": "C28",
+      "claim": "For the fruit fly, the connectivity profile fits a single sinusoid pattern reasonably well despite high variability in synapse counts.",
+      "claim_type": "EXPLICIT",
+      "source": "We repeated the path counting analysis for the fruit fly with synapse count data (Figure 4B), and found that while the data are noisy, the connectivity profile fits a single sinusoid pattern reasonably well.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through analysis of synapse count data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:47.464066Z"
+    },
+    {
+      "id": "ffb8d505-4468-4814-b6b0-8af78c97d0bf",
+      "content_id": "3d85af4d-fb38-4112-abd9-9aafd2dd3e60",
+      "claim_id": "C29",
+      "claim": "Simple Hebbian learning rules can lead to the emergence of circular line attractors in large neural populations.",
+      "claim_type": "EXPLICIT",
+      "source": "Our approach follows from previous research which has shown that simple Hebbian learning rules can lead to the emergence of circular line attractors in large neural populations (Stringer et al., 2002), and that a head direction circuit can emerge from a predictive rule (Vafidis et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:47.464066Z"
+    },
+    {
+      "id": "27e5b686-4f30-4b72-8172-eab4ee4ed91f",
+      "content_id": "3d85af4d-fb38-4112-abd9-9aafd2dd3e60",
+      "claim_id": "C30",
+      "claim": "If there is sinusoidal activity in the network, the weights will naturally converge to the optimal sinusoidal values by way of a variant of Oja's rule.",
+      "claim_type": "EXPLICIT",
+      "source": "Combined with Equation 7 and Equation 17, this result means that if there is sinusoidal activity in the network, the weights will naturally converge to the optimal sinusoidal values by way of our variant of Oja's rule.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is derived mathematically in Equation 20 and demonstrated in simulations in Figure 5.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:47.464066Z"
+    },
+    {
+      "id": "2bc28f5e-6fe2-4892-a3c2-33c219c67f65",
+      "content_id": "3d85af4d-fb38-4112-abd9-9aafd2dd3e60",
+      "claim_id": "C31",
+      "claim": "Initial noisy sinusoidal activity will enforce weights that are close to a sinusoid through self-consistency.",
+      "claim_type": "EXPLICIT",
+      "source": "This leads to the emergence of sinusoidal activity and weights from self-consistency: initial noisy sinusoidal activity will enforce weights that are close to a sinusoid, and those weights will filter out noise to make the activity even closer to a sinusoid, which will in turn make the weights more sinusoidal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical prediction based on the mathematical analysis of the learning rule.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:47.464066Z"
+    },
+    {
+      "id": "beeb6d05-4c61-4cbb-9d72-77bf76c14a5e",
+      "content_id": "3d85af4d-fb38-4112-abd9-9aafd2dd3e60",
+      "claim_id": "C32",
+      "claim": "The circuit can emerge even when starting with only very coarse initial weights, without the need for high precision initial connectivity.",
+      "claim_type": "EXPLICIT",
+      "source": "First, our circuit can emerge even when starting with only very coarse initial weights, without the need for high precision initial connectivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated in simulations shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:47.464066Z"
+    },
+    {
+      "id": "12211f3b-d2f1-45b4-b39d-b70f9dbd5425",
+      "content_id": "3d85af4d-fb38-4112-abd9-9aafd2dd3e60",
+      "claim_id": "C33",
+      "claim": "The learning rule allows the system to repair or recover from perturbations in its synapses.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, this simple plasticity rule allows the system to repair or recover from perturbations in its synapses as shown by simulations in Figure 5.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in simulations shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:47.464066Z"
+    },
+    {
+      "id": "15445ad2-6e63-44be-91b3-a9ecd6d32271",
+      "content_id": "3d85af4d-fb38-4112-abd9-9aafd2dd3e60",
+      "claim_id": "C34",
+      "claim": "Powers of two are easier to generate with replication dynamics than other numbers.",
+      "claim_type": "EXPLICIT",
+      "source": "We note that powers of two are easier to generate with replication dynamics than other numbers, because they just require each cell to divide a set number of times.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on reasoning from genetics and replication dynamics.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:47.464066Z"
+    },
+    {
+      "id": "3aa4a811-968b-4c06-ab91-bd22c52490bb",
+      "content_id": "3d85af4d-fb38-4112-abd9-9aafd2dd3e60",
+      "claim_id": "C37",
+      "claim": "The eight-column architecture is the genetically simplest circuit capable of performing heading integration.",
+      "claim_type": "EXPLICIT",
+      "source": "This hints at the possibility that the eight-column architecture is not a chance evolutionary artefact, but rather that it is the genetically simplest circuit capable of performing heading integration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative conclusion based on combining replication dynamics with the theoretical analysis.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:47.464066Z"
+    },
+    {
+      "id": "28149767-7b27-4d16-8e8e-66b52804d87a",
+      "content_id": "3d85af4d-fb38-4112-abd9-9aafd2dd3e60",
+      "claim_id": "C38",
+      "claim": "The theory proposes an optimally noise-resistant circuit for heading integration that matches experimental data from insects.",
+      "claim_type": "EXPLICIT",
+      "source": "In this work we derived an optimal noise-minimising circuit for encoding heading and verified that this circuit matches experimental data from insects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main finding of the manuscript, supported by theoretical derivations and comparison with experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:47.464066Z"
+    },
+    {
+      "id": "03f862b0-5f9c-4ba1-b40c-ea883711174e",
+      "content_id": "3d85af4d-fb38-4112-abd9-9aafd2dd3e60",
+      "claim_id": "C39",
+      "claim": "The circuit can be developed and maintained by a biological learning rule.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we showed that such a circuit can be developed and maintained by a biological learning rule",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through mathematical analysis and simulations of Hebbian learning.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:47.464066Z"
+    },
+    {
+      "id": "57b1bed8-4ae0-446d-90ac-9e9ed2beb732",
+      "content_id": "3d85af4d-fb38-4112-abd9-9aafd2dd3e60",
+      "claim_id": "C40",
+      "claim": "Evolution should be biased towards structures that are easier to encode in the genome.",
+      "claim_type": "EXPLICIT",
+      "source": "Both results align with the idea that evolution should be biased towards structures that are easier to encode in the genome (Johnston et al., 2022; Alon, 2007) and learn (Zador, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous work on evolutionary principles.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:47.464066Z"
+    },
+    {
+      "id": "e5bda25e-cd9e-4cb5-b500-ca912a478205",
+      "content_id": "3d85af4d-fb38-4112-abd9-9aafd2dd3e60",
+      "claim_id": "C41",
+      "claim": "The use of a circular topology to encode head direction is valid only in 2D environments.",
+      "claim_type": "EXPLICIT",
+      "source": "The use of a circular topology to encode the head direction of the insect is valid only in 2D environments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a limitation acknowledged by the authors based on the theoretical framework.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:47.464066Z"
+    },
+    {
+      "id": "938fd428-1536-42c0-91d0-7a8fab3f1e1b",
+      "content_id": "3d85af4d-fb38-4112-abd9-9aafd2dd3e60",
+      "claim_id": "C43",
+      "claim": "The EPG neurons correspond to the compass neurons in the theoretical model.",
+      "claim_type": "EXPLICIT",
+      "source": "The neural population in our theoretical model corresponds to the biological EPG neurons, as these encode the integrated heading.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as part of the methodology for comparing theory with biological data.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:47.464066Z"
+    },
+    {
+      "id": "0aca4aa7-3f8e-4512-b351-2649c9ee49c9",
+      "content_id": "3d85af4d-fb38-4112-abd9-9aafd2dd3e60",
+      "claim_id": "C44",
+      "claim": "Synapse counts can be used as a proxy for connectivity strength.",
+      "claim_type": "EXPLICIT",
+      "source": "These synapse counts were used as a proxy for connectivity strength, a view that has been validated in previous experiments (Liu et al., 2022; Barnes et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous experimental validation studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:47.464066Z"
+    },
+    {
+      "id": "5445fef3-2c02-4245-ba1d-40a4bd7cffa5",
+      "content_id": "3d85af4d-fb38-4112-abd9-9aafd2dd3e60",
+      "claim_id": "C45",
+      "claim": "The locust network has no standard deviation in connectivity because the data are based on light microscopy which couldn't resolve variations between columns.",
+      "claim_type": "EXPLICIT",
+      "source": "The locust network has no standard deviation because the data in Pisokas et al., 2020, are based on light microscopy which couldn't resolve variations between columns.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an explanation for the data presentation in Figure 4.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:47.464066Z"
+    },
+    {
+      "id": "b75b2cf2-4cfd-4748-bf78-b847050d0b63",
+      "content_id": "3d85af4d-fb38-4112-abd9-9aafd2dd3e60",
+      "claim_id": "C46",
+      "claim": "In Oja's rule, harmonics would compete during learning in a linear network, leading to one single harmonic emerging.",
+      "claim_type": "EXPLICIT",
+      "source": "In a linear network, the harmonics would compete during learning, leading to one single harmonic emerging and all others being suppressed, as shown in section 'Linear neurons'.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through mathematical analysis in the Materials and methods section.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:47.464066Z"
+    },
+    {
+      "id": "80cdc3bb-6da2-41c0-b091-fa5095aa51d8",
+      "content_id": "3d85af4d-fb38-4112-abd9-9aafd2dd3e60",
+      "claim_id": "C47",
+      "claim": "For neurons with a nonlinear activation function, secondary harmonics would emerge but would remain small under mild assumptions.",
+      "claim_type": "EXPLICIT",
+      "source": "For neurons with a nonlinear activation function, secondary harmonics would emerge, but would remain small under mild assumptions, as shown in section 'Neurons with nonlinear activations'.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through mathematical analysis and simulations in the Materials and methods section.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:47.464066Z"
+    },
+    {
+      "id": "53a1b97b-0396-4001-a758-fb94c4eb4ad8",
+      "content_id": "3d85af4d-fb38-4112-abd9-9aafd2dd3e60",
+      "claim_id": "C48",
+      "claim": "The network connectivity responsible for correctly integrating angular velocity inputs might require more elements than a purely Hebbian rule.",
+      "claim_type": "EXPLICIT",
+      "source": "However, this learning rule only applies to the weights that ensure stable, self-sustaining activity in the network. The network connectivity responsible for correctly integrating angular velocity inputs (given by the PEN to EPG connections in the fly) might require more elements than a purely Hebbian rule (Stringer et al., 2002), such as the addition of a predictive component (Vafidis et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a limitation acknowledged by the authors, supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:47.464066Z"
+    },
+    {
+      "id": "6c0c38f8-6e33-4bba-8835-38f5e56a162a",
+      "content_id": "3d85af4d-fb38-4112-abd9-9aafd2dd3e60",
+      "claim_id": "C49",
+      "claim": "Insects exhibit an impressive ability to navigate the world, travelling long distances to migrate, find food or reach places of interest before returning to their nests.",
+      "claim_type": "EXPLICIT",
+      "source": "Insects exhibit an impressive ability to navigate the world, travelling long distances to migrate, find food or reach places of interest before returning to their nests (M\u00fcller and Wehner, 1988; Menzel et al., 1996; Heinze et al., 2013; Collett, 2019)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:47.464066Z"
+    },
+    {
+      "id": "49ccf624-0b59-4088-afae-2d2d8836daa9",
+      "content_id": "3d85af4d-fb38-4112-abd9-9aafd2dd3e60",
+      "claim_id": "C50",
+      "claim": "Navigation in insects requires them to keep track of their orientation across long journeys.",
+      "claim_type": "EXPLICIT",
+      "source": "a feat that requires them to keep track of their orientation across long journeys (Mappes and Homberg, 2004; Merlin et al., 2012; Warren et al., 2019; Collett, 2019; Beetz et al., 2022)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:47.464066Z"
+    },
+    {
+      "id": "70cb4567-cd74-4c86-990a-aa6efbf0e13a",
+      "content_id": "3d85af4d-fb38-4112-abd9-9aafd2dd3e60",
+      "claim_id": "C51",
+      "claim": "Models closely aligned with biological data can implement heading integration using sinusoidal activity patterns.",
+      "claim_type": "EXPLICIT",
+      "source": "Further studies have shown that models closely aligned with biological data can indeed implement heading integration using sinusoidal activity patterns (Pisokas et al., 2020; Turner-Evans et al., 2020), and that such circuits can be learned (Vafidis et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous modeling studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:47.464066Z"
+    },
+    {
+      "id": "a07dcd8e-24e0-4d5d-a3ec-73c0ac28d44a",
+      "content_id": "3d85af4d-fb38-4112-abd9-9aafd2dd3e60",
+      "claim_id": "C52",
+      "claim": "The magnitude of noise that passes from one time interval to the next is modulated by the magnitude of the weight vector.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence the magnitude of the noise that passes from one time interval to the next is modulated by the magnitude of the weight vector.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is derived mathematically in Equation 12.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:47.464066Z"
+    },
+    {
+      "id": "99406f27-160f-4da8-843d-63c2329b19f9",
+      "content_id": "3d85af4d-fb38-4112-abd9-9aafd2dd3e60",
+      "claim_id": "C53",
+      "claim": "Increasing the number of active harmonic frequencies increases the effect of errors in the network.",
+      "claim_type": "EXPLICIT",
+      "source": "Increasing the number of active harmonic frequencies increases the effect of errors in the network.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated in simulations shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:47.464066Z"
+    },
+    {
+      "id": "fab9e61a-e536-4382-990f-1e8dd295fb54",
+      "content_id": "3d85af4d-fb38-4112-abd9-9aafd2dd3e60",
+      "claim_id": "C54",
+      "claim": "Noise variance increases linearly as the number of active harmonics increases.",
+      "claim_type": "EXPLICIT",
+      "source": "Noise variance increases linearly as the number of active harmonics increases, as predicted by Equation 12.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated in simulations shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:47.464066Z"
+    },
+    {
+      "id": "e6eb3356-952e-4696-a1b9-82c611d79a75",
+      "content_id": "3d85af4d-fb38-4112-abd9-9aafd2dd3e60",
+      "claim_id": "C55",
+      "claim": "The sinusoidal activity is an approximation of the true biological process rather than a perfect description.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus the sinusoidal activity we model is an approximation of the true biological process rather than a perfect description.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is acknowledged as a limitation based on experimental observations.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:47.464066Z"
+    },
+    {
+      "id": "b998da90-e557-4d32-bd49-12560a8d6cdc",
+      "content_id": "3d85af4d-fb38-4112-abd9-9aafd2dd3e60",
+      "claim_id": "C56",
+      "claim": "Calcium imaging can introduce biases in activity measurements.",
+      "claim_type": "EXPLICIT",
+      "source": "and that calcium imaging (which was used to measure the activity) can introduce biases in the activity measurements (Siegle et al., 2021; Huang et al., 2021)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies on calcium imaging limitations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:47.464066Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "1647f810-fafa-4741-b9d0-45bcfbf6164a",
+      "content_id": "3d85af4d-fb38-4112-abd9-9aafd2dd3e60",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors derive that sinusoidal encoding with sinusoidal connectivity is the most noise-resilient pattern for heading integration circuits. This is established through mathematical analysis showing that (1) circuits must have circular topology and rotational symmetry, (2) noise propagation is minimized when non-encoding harmonics are set to zero, (3) using multiple harmonics decreases signal-to-noise ratio under activity constraints, and (4) simulations confirm noise variance increases linearly with active harmonics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The theoretical derivation is mathematically rigorous, proceeding logically from first principles (C11-C13) through Fourier analysis to the noise minimization result (C2, C19, C20, C52). The simulation results (C53, C54, Figure 2) provide empirical validation of the mathematical predictions. The constraint that multiple harmonics perform worse (C19, C20) is well-justified both theoretically and through analysis of decoding ambiguities.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:36:47.464066Z"
+    },
+    {
+      "id": "8a3857a6-0636-4477-91e9-f4490604c4ea",
+      "content_id": "3d85af4d-fb38-4112-abd9-9aafd2dd3e60",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The predicted sinusoidal connectivity pattern matches anatomical data from locust and fruit fly head direction circuits. Path counting analysis of EPG neuron connectivity shows very close agreement with sinusoidal profiles in the locust, and reasonable agreement in the fruit fly despite high variability in synapse counts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The locust data (C27, Figure 4A) shows strong agreement with the theoretical prediction. The fruit fly data (C28, Figure 4B) is noisier but still consistent with a sinusoidal pattern, though the authors acknowledge that Gaussian and von Mises distributions also fit well (Table 6). The methodological approach of using path counting (C44) and synapse counts as proxies for connectivity strength is validated by citations. The limitation regarding locust data resolution (C45) is appropriately disclosed.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:36:47.464066Z"
+    },
+    {
+      "id": "43f6718d-f49b-4736-a492-1493d18c16e0",
+      "content_id": "3d85af4d-fb38-4112-abd9-9aafd2dd3e60",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The optimal sinusoidal circuit can emerge through Hebbian plasticity without requiring precise initial connectivity. A modified Oja's rule causes weights to converge to sinusoidal values through self-consistency when sinusoidal activity is present, and this convergence occurs even from coarse initial weights and allows recovery from perturbations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The mathematical derivation (C30, Equation 20) rigorously shows convergence to sinusoidal weights under the modified Oja's rule. Simulations (C32, C33, Figure 5) demonstrate emergence from zero weights and recovery from perturbations. The analysis of harmonic competition in linear (C46) and nonlinear (C47) networks is thorough. However, the authors appropriately acknowledge (C48) that this only applies to self-sustaining activity, not to the full velocity integration circuit.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:36:47.464066Z"
+    },
+    {
+      "id": "e21f3768-483a-4d2b-a7ba-a32e0a102022",
+      "content_id": "3d85af4d-fb38-4112-abd9-9aafd2dd3e60",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The eight-column architecture observed across insect species can be explained by evolutionary principles favoring genetic simplicity. Powers of two are easier to generate through replication dynamics, and N=8 is the smallest power of two that produces a non-degenerate heading integration circuit.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While the reasoning about replication dynamics (C34) and the mathematical analysis showing N=2 and N=4 are degenerate is sound, the evolutionary argument (C5, C37) remains speculative. The claim relies on the assumption that evolution favors genetic simplicity (C40, supported by citations), but lacks direct empirical evidence that the eight-column structure arose through this mechanism rather than other evolutionary pressures. The authors appropriately use cautious language ('hints at the possibility').",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:36:47.464066Z"
+    },
+    {
+      "id": "91e12964-ec4e-4c77-8cf7-ca03de6b9308",
+      "content_id": "3d85af4d-fb38-4112-abd9-9aafd2dd3e60",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Prior work has established that insects use sinusoidal activity patterns for head direction encoding in eight-column circuits, and that these patterns enable vector addition for navigation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims accurately summarize established knowledge from the field, supported by extensive citations to experimental (C1, C6, C7, C8) and theoretical (C9, C25, C51) work. The claims serve as appropriate background context for the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:36:47.464066Z"
+    },
+    {
+      "id": "181840b7-02fd-4cb3-a7e3-894b1e14d94f",
+      "content_id": "3d85af4d-fb38-4112-abd9-9aafd2dd3e60",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The sinusoidal activity model is an approximation of biological reality, as fruit fly data shows more concentrated activity bumps than perfect sinusoids, potentially due to calcium imaging biases.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The authors appropriately acknowledge limitations in their model's correspondence to biological data (C26, C55), supported by citations to experimental studies. The recognition of potential measurement artifacts from calcium imaging (C56) demonstrates appropriate scientific caution. This transparency strengthens rather than weakens the overall work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:36:47.464066Z"
+    },
+    {
+      "id": "4cab17ac-bdf8-4c9c-a8e1-242fc7fe1c7d",
+      "content_id": "3d85af4d-fb38-4112-abd9-9aafd2dd3e60",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The study derives an optimal noise-minimizing circuit for heading integration that matches experimental data and can be developed through biological learning rules.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These summary claims (C38, C39) accurately reflect the major findings of the manuscript, which are well-supported by the theoretical derivations, simulations, and comparison with biological data discussed in other result groups.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:36:47.464066Z"
+    },
+    {
+      "id": "cb764425-f04a-41c3-9e17-2d024d6f62ec",
+      "content_id": "3d85af4d-fb38-4112-abd9-9aafd2dd3e60",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The authors acknowledge limitations: the circular topology assumption is valid only in 2D environments, and the Hebbian learning rule only applies to self-sustaining activity, not the full velocity integration circuit.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These limitations (C41, C48) are appropriately acknowledged by the authors with clear reasoning. The recognition that the theory doesn't address 3D navigation or the complete circuit for velocity integration demonstrates scientific rigor and sets appropriate boundaries for the claims.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:36:47.464066Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "2b6c6e82-f874-4675-9a54-8c784fcfcc83",
+      "result_id": "1647f810-fafa-4741-b9d0-45bcfbf6164a"
+    },
+    {
+      "claim_id": "3f36ff85-52ed-4768-b775-72548042709e",
+      "result_id": "1647f810-fafa-4741-b9d0-45bcfbf6164a"
+    },
+    {
+      "claim_id": "ab371584-9e83-4a11-818a-f01b1731674b",
+      "result_id": "1647f810-fafa-4741-b9d0-45bcfbf6164a"
+    },
+    {
+      "claim_id": "158cefd2-2f5a-4bff-9bb7-807776341d65",
+      "result_id": "1647f810-fafa-4741-b9d0-45bcfbf6164a"
+    },
+    {
+      "claim_id": "d95a0ffb-86ee-474f-91bc-4c195178ef8e",
+      "result_id": "1647f810-fafa-4741-b9d0-45bcfbf6164a"
+    },
+    {
+      "claim_id": "cc051af5-07fb-439f-9f39-ec34c639a0e1",
+      "result_id": "1647f810-fafa-4741-b9d0-45bcfbf6164a"
+    },
+    {
+      "claim_id": "aeec4073-2997-4d70-adf5-5d1354cae044",
+      "result_id": "1647f810-fafa-4741-b9d0-45bcfbf6164a"
+    },
+    {
+      "claim_id": "15c1f881-a556-4b2a-819e-5cb0db056fb3",
+      "result_id": "1647f810-fafa-4741-b9d0-45bcfbf6164a"
+    },
+    {
+      "claim_id": "a07dcd8e-24e0-4d5d-a3ec-73c0ac28d44a",
+      "result_id": "1647f810-fafa-4741-b9d0-45bcfbf6164a"
+    },
+    {
+      "claim_id": "99406f27-160f-4da8-843d-63c2329b19f9",
+      "result_id": "1647f810-fafa-4741-b9d0-45bcfbf6164a"
+    },
+    {
+      "claim_id": "fab9e61a-e536-4382-990f-1e8dd295fb54",
+      "result_id": "1647f810-fafa-4741-b9d0-45bcfbf6164a"
+    },
+    {
+      "claim_id": "c6987338-52e1-48f0-bb6b-a4bab5868458",
+      "result_id": "8a3857a6-0636-4477-91e9-f4490604c4ea"
+    },
+    {
+      "claim_id": "ce6f17ea-ec07-4005-9c53-3f46aee4117b",
+      "result_id": "8a3857a6-0636-4477-91e9-f4490604c4ea"
+    },
+    {
+      "claim_id": "998b88f6-f03e-4cc3-a7ed-a007ec885120",
+      "result_id": "8a3857a6-0636-4477-91e9-f4490604c4ea"
+    },
+    {
+      "claim_id": "938fd428-1536-42c0-91d0-7a8fab3f1e1b",
+      "result_id": "8a3857a6-0636-4477-91e9-f4490604c4ea"
+    },
+    {
+      "claim_id": "0aca4aa7-3f8e-4512-b351-2649c9ee49c9",
+      "result_id": "8a3857a6-0636-4477-91e9-f4490604c4ea"
+    },
+    {
+      "claim_id": "5445fef3-2c02-4245-ba1d-40a4bd7cffa5",
+      "result_id": "8a3857a6-0636-4477-91e9-f4490604c4ea"
+    },
+    {
+      "claim_id": "d0f212b6-aba6-4e5d-bbcf-3c62434bb84a",
+      "result_id": "43f6718d-f49b-4736-a492-1493d18c16e0"
+    },
+    {
+      "claim_id": "ffb8d505-4468-4814-b6b0-8af78c97d0bf",
+      "result_id": "43f6718d-f49b-4736-a492-1493d18c16e0"
+    },
+    {
+      "claim_id": "27e5b686-4f30-4b72-8172-eab4ee4ed91f",
+      "result_id": "43f6718d-f49b-4736-a492-1493d18c16e0"
+    },
+    {
+      "claim_id": "2bc28f5e-6fe2-4892-a3c2-33c219c67f65",
+      "result_id": "43f6718d-f49b-4736-a492-1493d18c16e0"
+    },
+    {
+      "claim_id": "beeb6d05-4c61-4cbb-9d72-77bf76c14a5e",
+      "result_id": "43f6718d-f49b-4736-a492-1493d18c16e0"
+    },
+    {
+      "claim_id": "12211f3b-d2f1-45b4-b39d-b70f9dbd5425",
+      "result_id": "43f6718d-f49b-4736-a492-1493d18c16e0"
+    },
+    {
+      "claim_id": "b75b2cf2-4cfd-4748-bf78-b847050d0b63",
+      "result_id": "43f6718d-f49b-4736-a492-1493d18c16e0"
+    },
+    {
+      "claim_id": "80cdc3bb-6da2-41c0-b091-fa5095aa51d8",
+      "result_id": "43f6718d-f49b-4736-a492-1493d18c16e0"
+    },
+    {
+      "claim_id": "abebfa13-4c02-4498-83db-6a2c2d94e524",
+      "result_id": "e21f3768-483a-4d2b-a7ba-a32e0a102022"
+    },
+    {
+      "claim_id": "15445ad2-6e63-44be-91b3-a9ecd6d32271",
+      "result_id": "e21f3768-483a-4d2b-a7ba-a32e0a102022"
+    },
+    {
+      "claim_id": "3aa4a811-968b-4c06-ab91-bd22c52490bb",
+      "result_id": "e21f3768-483a-4d2b-a7ba-a32e0a102022"
+    },
+    {
+      "claim_id": "57b1bed8-4ae0-446d-90ac-9e9ed2beb732",
+      "result_id": "e21f3768-483a-4d2b-a7ba-a32e0a102022"
+    },
+    {
+      "claim_id": "336bf0b0-4860-40f1-82ea-35332d619bbc",
+      "result_id": "91e12964-ec4e-4c77-8cf7-ca03de6b9308"
+    },
+    {
+      "claim_id": "4e3b23db-d3d3-4578-b579-68145deb6e95",
+      "result_id": "91e12964-ec4e-4c77-8cf7-ca03de6b9308"
+    },
+    {
+      "claim_id": "397ba7d3-553a-406f-8886-97caaf85039e",
+      "result_id": "91e12964-ec4e-4c77-8cf7-ca03de6b9308"
+    },
+    {
+      "claim_id": "42bc9ac9-811d-4b32-bd38-2ae2f2ddbc47",
+      "result_id": "91e12964-ec4e-4c77-8cf7-ca03de6b9308"
+    },
+    {
+      "claim_id": "37214158-9db1-456e-aa23-6c4185586d7d",
+      "result_id": "91e12964-ec4e-4c77-8cf7-ca03de6b9308"
+    },
+    {
+      "claim_id": "04307a0d-5676-4aab-8d63-f7553e67868a",
+      "result_id": "91e12964-ec4e-4c77-8cf7-ca03de6b9308"
+    },
+    {
+      "claim_id": "6c0c38f8-6e33-4bba-8835-38f5e56a162a",
+      "result_id": "91e12964-ec4e-4c77-8cf7-ca03de6b9308"
+    },
+    {
+      "claim_id": "49ccf624-0b59-4088-afae-2d2d8836daa9",
+      "result_id": "91e12964-ec4e-4c77-8cf7-ca03de6b9308"
+    },
+    {
+      "claim_id": "70cb4567-cd74-4c86-990a-aa6efbf0e13a",
+      "result_id": "91e12964-ec4e-4c77-8cf7-ca03de6b9308"
+    },
+    {
+      "claim_id": "a69d3abf-a8cb-4dbb-a67c-259590cd57e9",
+      "result_id": "181840b7-02fd-4cb3-a7e3-894b1e14d94f"
+    },
+    {
+      "claim_id": "e6eb3356-952e-4696-a1b9-82c611d79a75",
+      "result_id": "181840b7-02fd-4cb3-a7e3-894b1e14d94f"
+    },
+    {
+      "claim_id": "b998da90-e557-4d32-bd49-12560a8d6cdc",
+      "result_id": "181840b7-02fd-4cb3-a7e3-894b1e14d94f"
+    },
+    {
+      "claim_id": "28149767-7b27-4d16-8e8e-66b52804d87a",
+      "result_id": "4cab17ac-bdf8-4c9c-a8e1-242fc7fe1c7d"
+    },
+    {
+      "claim_id": "03f862b0-5f9c-4ba1-b40c-ea883711174e",
+      "result_id": "4cab17ac-bdf8-4c9c-a8e1-242fc7fe1c7d"
+    },
+    {
+      "claim_id": "e5bda25e-cd9e-4cb5-b500-ca912a478205",
+      "result_id": "cb764425-f04a-41c3-9e17-2d024d6f62ec"
+    },
+    {
+      "claim_id": "53a1b97b-0396-4001-a758-fb94c4eb4ad8",
+      "result_id": "cb764425-f04a-41c3-9e17-2d024d6f62ec"
+    }
+  ],
+  "comparisons": []
+}

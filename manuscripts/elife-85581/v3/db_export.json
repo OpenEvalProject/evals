@@ -1,0 +1,1359 @@
+{
+  "submission": {
+    "id": "a78f030e-028f-4105-855c-e82f9433b4eb",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-04T03:59:11.697208Z",
+    "updated_at": "2025-12-04T03:59:11.697208Z"
+  },
+  "content": [
+    {
+      "id": "1a5ca138-d3fa-4400-acaf-804535e22c50",
+      "submission_id": "a78f030e-028f-4105-855c-e82f9433b4eb",
+      "content_type": "manuscript",
+      "content_text": "# Core PCP mutations affect short-time mechanical properties but not tissue morphogenesis in the Drosophila pupal wing\n\n## Authors\n\n- Romina Piscitello-G\u00f3mez<sup>1</sup>\n- Franz S Gruber<sup>1</sup> ([ORCID: 0000-0003-2008-8460](https://orcid.org/0000-0003-2008-8460))\n- Abhijeet Krishna<sup>1</sup> ([ORCID: 0000-0002-9291-500X](https://orcid.org/0000-0002-9291-500X))\n- Charlie Duclut<sup>5</sup> ([ORCID: 0000-0002-8595-6815](https://orcid.org/0000-0002-8595-6815))\n- Carl D Modes<sup>1</sup>\n- Marko Popovi\u0107<sup>2</sup>\n- Frank J\u00fclicher<sup>2</sup> ([ORCID: 0000-0003-4731-9185](https://orcid.org/0000-0003-4731-9185))\n- Natalie A Dye<sup>1</sup> ([ORCID: 0000-0002-4859-6670](https://orcid.org/0000-0002-4859-6670)) \u2020\n- Suzanne Eaton<sup>1</sup>\n\n### Affiliations\n\n1. Max Planck Institute of Molecular Cell Biology and Genetics Dresden Germany ([ROR:05b8d3w18](https://ror.org/05b8d3w18))\n2. DFG Excellence Cluster Physics of Life, Technische Universit\u00e4t Dresden Dresden Germany ([ROR:018mejw64](https://ror.org/018mejw64))\n3. National Phenotypic Screening Centre, University of Dundee Dundee United Kingdom ([ROR:02p1e8c91](https://ror.org/02p1e8c91))\n4. Center for Systems Biology Dresden Dresden Germany ([ROR:05hrn3e05](https://ror.org/05hrn3e05))\n5. Laboratoire Physico-Chimie Curie, CNRS UMR 168, Institut Curie, Universit\u00e9 PSL, Sorbonne Universit\u00e9 Paris France ([ROR:02en5vm52](https://ror.org/02en5vm52))\n6. Max Planck Institute for Physics of Complex Systems Dresden Germany ([ROR:01bf9rw71](https://ror.org/01bf9rw71))\n7. Universit\u00e9 Paris Cit\u00e9, Laboratoire Mati\u00e8re et Syst\u00e8mes Complexes Paris France ([ROR:032w6q449](https://ror.org/032w6q449))\n8. Mildred Scheel Nachwuchszentrum P2, Medical Faculty, Technische Universit\u00e4t Dresden Dresden Germany ([ROR:042aqky30](https://ror.org/042aqky30))\n9. Biotechnologisches Zentrum, Technische Universit\u00e4t Dresden Dresden Germany ([ROR:042aqky30](https://ror.org/042aqky30))\n\n\u2020 Corresponding author\n\n## Abstract\n\nHow morphogenetic movements are robustly coordinated in space and time is a fundamental open question in biology. We study this question using the wing of Drosophila melanogaster, an epithelial tissue that undergoes large-scale tissue flows during pupal stages. Previously, we showed that pupal wing morphogenesis involves both cellular behaviors that allow relaxation of mechanical tissue stress, as well as cellular behaviors that appear to be actively patterned (Etournay et al., 2015). Here, we show that these active cellular behaviors are not guided by the core planar cell polarity (PCP) pathway, a conserved signaling system that guides tissue development in many other contexts. We find no significant phenotype on the cellular dynamics underlying pupal morphogenesis in mutants of core PCP. Furthermore, using laser ablation experiments, coupled with a rheological model to describe the dynamics of the response to laser ablation, we conclude that while core PCP mutations affect the fast timescale response to laser ablation they do not significantly affect overall tissue mechanics. In conclusion, our work shows that cellular dynamics and tissue shape changes during Drosophila pupal wing morphogenesis do not require core PCP as an orientational guiding cue.\n\n## Introduction\n\nThe spatial\u2013temporal pattern of mechanical deformation during tissue morphogenesis is often guided by patterns of chemical signaling. Precisely how chemical signaling couples with the mechanics of morphogenesis, however, remains an active area of research. One conserved chemical signaling pathway that is known to be patterned across tissues is the core planar cell polarity (PCP) pathway, composed of a dynamic set of interacting membrane proteins that polarizes intracellularly within the plane of a tissue. Tissue-scale alignment of this pathway is known to orient cellular structures, such as hairs and cilia, and influence dynamic cellular behaviors during morphogenesis, such as cellular movements and cell divisions, through interactions with the cytoskeleton (reviewed in Devenport, 2014; Butler and Wallingford, 2017; Deans, 2021).\n\nHere, we examine a potential role for the core PCP pathway in the dynamics and mechanics of morphogenesis using the Drosophila pupal wing. The Drosophila wing is a flat epithelium that can be imaged at high spatial\u2013temporal resolution in vivo during large-scale tissue flows that elongate the wing blade (Aigouy et al., 2010; Etournay et al., 2015; Guirao et al., 2015). During the pupal stage, the proximal hinge region of the wing contracts and pulls on the blade region, generating mechanical stress that is counteracted by marginal connections mediated by the extracellular matrix protein Dumpy (Etournay et al., 2015; Ray et al., 2015). As a consequence, the tissue elongates along the proximal\u2013distal (PD) axis and narrows along the anterior\u2013posterior (AP) axis to resemble the adult wing. Both cell elongation changes and cell rearrangements are important for tissue deformation. To some extent, mechanical stress induces these cell behaviors. However, the reduction of mechanical stress in a dumpy mutant does not completely eliminate cell rearrangements, suggesting that there could be other patterning cues that drive oriented cell rearrangements (Etournay et al., 2015). We therefore wondered whether chemical PCP systems could orient cell behaviors, such as cell rearrangements, during pupal blade elongation flows.\n\nIn the Drosophila wing, there are two PCP systems termed Fat and core PCP (Matis and Axelrod, 2013; Adler, 2012; Devenport, 2014; Butler and Wallingford, 2017). The Fat PCP system consists of two cadherins Fat and Dachsous, a cytoplasmic kinase Four-jointed, and an atypical myosin Dachs. The core PCP system is composed of two transmembrane proteins Frizzled (Fz) and Flamingo or Starry night (Fmi, Stan), the transmembrane protein Strabismus or Van Gogh (Stbm, Vang), and the cytosolic components Dishevelled (Dsh), Prickle (Pk), and Diego (Dgo).\n\nOur group has shown that tissue-scale patterns of PCP emerge during larval stages and then are dynamically reoriented during pupal tissue flows (Sagner et al., 2012; Aigouy et al., 2010; Merkel et al., 2014). At the onset of blade elongation flows, both systems are margin oriented, however as morphogenesis proceeds, core PCP reorients to point along the PD axis, whereas Fat PCP remains margin oriented until very late, when it reorients toward veins (Figure 1\u2014figure supplement 1A, B; Merkel et al., 2014). Whether these PCP systems and their reorientation influence tissue dynamics and mechanics during blade elongation flows is unknown.\n\nThe core PCP pathway has been shown to influence numerous processes in Drosophila tissue development. These include hexagonal cell packing in the late pupal wing (Classen et al., 2005; Sugimura et al., 2016), as well as patterning of ommatidial clusters in the developing eye (Zheng et al., 1995; Jenny, 2010), orientation of cell division in sensory organ precursors (Gho and Schweisguth, 1998), formation of joints in the legs (Capilla et al., 2012), and regulation of tracheal tube length (Chung et al., 2009). In many cases, the mechanism connecting the core PCP pathway to cell dynamics and tissue mechanics is unclear. Recent studies suggest, however, that core PCP may act in concert with Nemo kinase to regulate cell rearrangements in the eye (Mirkovic et al., 2011; Founounou et al., 2021) and with the Drosophila NuMA ortholog Mud to orient cell division orientation in the sensory organ precursors (S\u00e9galen et al., 2010).\n\nHere, we examine cellular dynamics in tissues mutant for core PCP and we find that they are largely unperturbed, indicating that core PCP does not have an essential role in organizing global patterns of cell rearrangements in the pupal wing. We also performed an extensive analysis of the mechanics using laser ablation, developing a rheological model to interpret the results. We find that mutants in core PCP differ from wild type in the initial recoil velocity upon laser ablation. We find, however, that this difference is produced from the very fast timescale response, which does not appear to affect morphogenesis and overall tissue stresses, consistent with the lack of phenotype in cellular dynamics.\n\n## Results\n\n### Core PCP does not guide cellular dynamics during pupal blade elongation flows\n\nTo investigate the role of core PCP in orienting cell behaviors during pupal blade elongation flows, we analyzed cell dynamics in wild type (wt) and three different core PCP mutant tissues: prickle (pk30, abbreviated as pk), strabismus (stbm6, abbreviated as stbm), and flamingo (fmifrz3, aka stanfrz3, abbreviated as fmi). In pk, the core and Fat PCP systems remain aligned together toward the margin and the magnitude of Stbm polarity is reduced (Merkel et al., 2014). The mutants stbm and fmi are strong hypomorphs, where the core PCP network is strongly reduced (Figure 1\u2014figure supplement 1B; Merkel et al., 2014). We analyzed shape changes of the wing blade during blade elongation flows and decomposed these changes into contributions from cell elongation changes and cell rearrangements, which include cell neighbor exchanges, cell divisions, cell extrusions, and correlation effects (Figure 1; Etournay et al., 2015; Merkel et al., 2017).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/85581/elife-85581-fig1-v3.jpg)\n\n**Figure 1.:** (B\u2013B\u2033) Images of a wt wing at \u22127, 0, and 9 hRPCE (for this movie these times correspond to 16, 23, and 32 hAPF). The green and orange regions correspond to the hinge and blade, respectively. Anterior is up; proximal to the left. Scale bar, 100 \u03bcm. (C) Schematic of the cellular contributions underlying anisotropic tissue deformation. The tissue shear rate component $v_{xx}$, which quantifies the rate of anisotropic tissue deformation along the proximal\u2013distal wing axis, is decomposed into deformations arising from the rate of change of cell shapes $DQ_{xx}/Dt$ and the deformations arising from the cellular rearrangements $R_{xx}$ (Etournay et al., 2015; Merkel et al., 2017). Total shear is the sum of cell elongation changes (green) and cell rearrangements (magenta). (D\u2013D\u2032\u2033) Accumulated proximal\u2013distal (Cum PD) tissue shear during blade elongation flows in the blade region averaged for (D) wt (n = 4), (D\u2032) pk (n = 3), (D\u2033) stbm (n = 3), and (D\u2032\u2033) fmi (n = 2) movies. Solid line indicates the mean, and the shaded regions enclose \u00b1 standard error of the mean (SEM). Differences in total accumulated shear are not statistically significant (Figure 1\u2014figure supplement 2C). Time is relative to peak cell elongation (hRPCE).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/85581/elife-85581-fig1-figsupp1-v3.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Evolution of the PCP network during pupal blade elongation flows (Merkel et al., 2014; Aigouy et al., 2010). Core PCP polarity is based on Stbm::YFP. Initially, core PCP polarity is organized toward the wing margin. As tissue flows occur, it reorients toward the distal tip. Fat PCP polarity is based on the pattern of Ds::EGFP. Fat PCP is initially also margin organized. By the end of the blade elongation, Fat PCP is perpendicularly oriented to core PCP. Cartoon adapted from Merkel et al., 2014. (B) Schematic of the core (green arrow) and Fat (purple arrow) PCP patterns in wt, pk, stbm, and fmi wings (Merkel et al., 2014). During pupal tissue flows in wt wings, core PCP reorients toward the distal tip of the wing. By the end of blade elongation flows, core and Fat PCP are perpendicularly aligned. In pk mutant wings, core and Fat PCP remain aligned and core polarity is reduced. In stbm and fmi wings, the core PCP network is strongly reduced (empty green arrow), whereas the Fat PCP pattern is unperturbed (purple arrow).\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/85581/elife-85581-fig1-figsupp2-v3.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (C) Statistical analysis of the final accumulated proximal\u2013distal (Cum PD) tissue shear in wt (n = 4 ), pk (n = 3), stbm (n = 3), and fmi (n = 2) movies. Significance is estimated using the Kruskal\u2013Wallis test. ns, p-val >0.05. (D) Isotropic tissue deformation is decomposed into contributions from change in cell area $a$, cell division rate $k_{d}$, and cell extrusion rate $k_{e}$. Quantification of accumulated isotropic tissue deformation and its components in wt (n = 4), pk (n = 3), stbm (n = 3), and fmi (n = 2) movies. The cellular contributions are cell area changes (green), cell divisions (yellow), and cell extrusions (cyan). Solid line indicates the mean, and the shaded regions enclose \u00b1 standard error of the mean (SEM). The time is relative to peak cell elongation (hRPCE). (E) Statistical analysis of the final pupal accumulated tissue area change in wt (n = 4), pk (n = 3), stbm (n = 3), and fmi (n = 2) movies. Significance is estimated using an analysis of variance (ANOVA) test. ns, p-val >0.05.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/85581/elife-85581-fig1-figsupp3-v3.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (F) Images of a wt wing at \u22127, 1, 5, and 9 hRPCE (relative to peak cell elongation), corresponding to 16, 24, 28, and 32 hAPF in this movie. The green region corresponds to the hinge, and the four blade subregions are shown in an orange color palette. Scale bar, 100 \u03bcm. (G) Total accumulated proximal\u2013distal (Cum PD) tissue shear (dark blue curve) and its decomposition into cell elongation changes (green curve) and cell rearrangements (magenta curve) for the hinge and four blade subregions for wt (n = 4), pk (n = 3), stbm (n = 3), and fmi (n = 2). Solid line indicates the mean, and the shaded regions enclose \u00b1 standard error of the mean (SEM). Time is relative to peak cell elongation (hRPCE).\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/85581/elife-85581-fig1-figsupp4-v3.jpg)\n\n**Figure 1\u2014figure supplement 4.:** (H) Quantification of the final accumulated proximal\u2013distal (Cum PD) total shear (top row), shear caused by cell elongation changes (middle row), and shear caused by cell rearrangements (bottom row) in the hinge (left column) and four blade subregions for wt (n = 4), pk (n = 3), stbm (n = 3), and fmi (n = 2). Significance is estimated using the Kruskal\u2013Wallis test. *p-val \u22640.05; ns, p-val >0.05.\n\n![Figure 1\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/85581/elife-85581-fig1-figsupp5-v3.jpg)\n\n**Figure 1\u2014figure supplement 5.:** (I) Quantification of the adult wing blade major (maj) to minor (min) ratio for wt, pk, stbm, and fmi wings (n \u2265 47). Scale bar, 500 \u03bcm. Each empty circle indicates one wing, and the box plots summarize the data: thick black line indicates the median; the boxes enclose the first and third quartiles; lines extend to the minimum and maximum without outliers, and filled circles mark outliers. Significance is estimated using the Kruskal\u2013Wallis test. ****p-val \u22640.0001; ns, p-val>0.05. (J) Percentage of statistically significant tests obtained by comparing random sampling of wt and the three PCP mutant adult wings. The statistical analysis was run 10,000 times with all the sample sizes studied (3, 4, 5, 6, 7, 8, 9, 10, 20, and 40). The random sample size was the same for all genotypes. The statistical significance was computed using the wt genotype as a reference group.\n\nIn wt, the wing blade elongates along the PD axis (blue line in Figure 1D). Cells first elongate along the PD axis and then relax to more isotropic shapes (green line in Figure 1D). Cell rearrangements, however, go the opposite direction, initially contributing to AP deformation, before turning around to contribute to PD deformation (magenta line in Figure 1D). We introduce here a relative timescale, where we measure time in hours relative to the peak in cell elongation (hRPCE). This new scale allows us to handle variation in the timing of the onset of the blade elongation flows, which we have observed recently (see Appendix 1).\n\nIn core PCP mutants, we find that the dynamics of tissue shear, cell elongation changes, and cell rearrangements, when averaged across the entire blade, occur normally (Figure 1D\u2013D\u2032\u2032\u2032). We observe that by the end of the process, only slightly lower total shear appears to occur in the core PCP mutants, caused by slightly less cell rearrangements, but these subtle changes are not statistically significant (Figure 1\u2014figure supplement 2C). The cellular dynamics contributing to isotropic tissue deformation are also broadly the same between wt and core PCP mutant tissues (Figure 1\u2014figure supplement 2D, E). We also looked for differences in the behavior of regions of the wing blade subdivided along the PD axis (Figure 1\u2014figure supplement 3), as previous work has shown that distal regions of the wing blade shear more at early times, whereas proximal regions start deforming later (Merkel et al., 2017). Again, we do not find strong differences between core PCP mutants and wt when we subdivide the wing into regions along the PD axis (Figure 1\u2014figure supplement 3, Figure 1\u2014figure supplement 4).\n\nFrom this analysis, we conclude that core PCP is not required to determine the global patterns of cell dynamics during blade elongation flows. Interestingly, core PCP mutants do have a subtle but significant phenotype in the adult wing shape: pk and stbm (but not fmi) mutant wings are slightly rounder and wider than wt (Figure 1\u2014figure supplement 5I). In principle, these small differences could arise after the blade elongation flows studied here. However, it is also possible that the we could not reliably detect these subtle differences in pupal wings due to the small number of wings per genotype that we were able to analyze (n = 2\u22124). To illustrate this point, we used the pool of adult wings ($n=53$ for wt, $n=47$ for pk, $n=74$ for stbm, and $n=56$ for fmi), where the phenotype is significant, to understand the probability that a sample of smaller size $m$ would provide a significant signal, see Figure 1\u2014figure supplement 5J. For $m=3$, corresponding to the number of pupal wings we analyzed, we find that only about 20% of samples show a significant phenotype. In other words, if the same magnitude of difference occurred during the blade elongation flows as in the adult, we would have only about a 20% chance to observe it. Therefore, core PCP could subtly influence the cell dynamics occurring at this stage. To investigate this possibility, we next looked for a possible difference in mechanical stresses in core PCP mutants.\n\n### A rheological model for the response to laser ablation\n\nWe investigated cell and tissue mechanics in core PCP mutants using laser ablation in a small region of the wing blade. We used a region located between the second and third sensory organs in the intervein region between the L3 and L4 longitudinal veins, which is a region that is easy to identify throughout blade elongation flows (Figure 2A). We cut three to four cells in a line along the AP axis and measured the displacement of the tissue (Figure 2A, Video 1). We calculate the initial recoil velocity $v$ by measuring the average displacement of ablated cell membranes at the first observed timepoint after the ablation, $\\deltat=0.65s$ (see Materials and methods, Linear laser ablations to calculate the initial recoil velocity). Previously, we reported that initial recoil velocity measured along the PD axis in wt peaks around \u22128 hRPCE (20 hAPF in Iyer et al., 2019), and therefore we first focus on this timepoint. We find that core PCP mutants have significantly lower initial recoil velocity (Figure 2B, Figure 2\u2014figure supplement 1A), suggesting that there is a mechanical defect in these mutants.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/85581/elife-85581-fig2-v3.jpg)\n\n**Figure 2.:** Linear laser ablation experiments were performed in the blade region enclosed by the red square. Dots on the wing cartoon indicate sensory organs. The red line corresponds to the ablation, and the kymograph was drawn perpendicularly to the cut (yellow). Scale bar, 5 \u03bcm. (B) Initial recoil velocity upon ablation (simplified as recoil velocity in the y-axis title) along the proximal\u2013distal (PD) axis at \u22128 hRPCE for wt (gray) and pk (blue) tissues (n \u2265 9). Significance is estimated using the Mann\u2013Whitney U-test. ***p-val \u22640.001. (C) Example of the measured displacement after laser ablation (black dots) and corresponding exponential fit of the mechanical model (red curve). The blue and green regions highlight the displacement in the fast and slow timescale, respectively. (D) Description of the mechanical model that was devised to analyze the tissue response upon laser ablation. After the cut, the spring with elastic constant $k$ is ablated (red scissor), and the tissue response is given by the combination of the two Kelvin\u2013Voigt models arranged in series. These two correspond to the fast response given by $k_{f}$ and $\u03b7_{f}$ and the slow response given by $k_{s}$ and $\u03b7_{s}$. The mechanical stress $\\sigma$ is constant. The membrane displacement $\u0394x(t)$ is calculated as a sum of the displacement ($X_{f}$) associated with the fast timescale ($\\tau_{f}$) and the displacement ($X_{s}$) associated with the slow timescale ($\\tau_{s}$). (E\u2013E\u2032\u2032\u2032) Values obtained for each of the four fitting parameters when fit to the data. (E) Displacement associated with the fast and (E\u2032) slow timescale for wt (gray) and pk (blue). (E\u2032\u2032) Fast and (E\u2032\u2032\u2032) slow timescale for wt (gray) and pk (blue) (n \u2265 5). Significance is estimated using the Student\u2019s t-test. **p-val \u22640.01; ns, p-val >0.05. (F) Example of a circular laser ablation used for analysis with elliptical shape after circular ablation (ESCA). The left image shows the final shape of the ablation around 2 min after cut, and the right image shows the corresponding segmented image, where the inner and outer pieces were fit with ellipses. After the fitting, the model outputs the anisotropic and isotropic stress (equations shown on the right side). Scale bar, 20 \u03bcm. A = anterior, P* = posterior, D = distal, P = proximal. (F\u2032) Anisotropic stress $\\sigma~/2K$ for wt (gray) and pk (blue) tissues at \u22128 hRPCE (n \u2265 4). Significance is estimated using the Mann\u2013Whitney U-test. ns, p-val >0.05. (F\u2033) Isotropic stress $\\sigma_{0}/K\u00af$ for wt (gray) and pk (blue) tissues at \u22128 hRPCE (n \u2265 4). Significance is estimated using the Mann\u2013Whitney U-test. ns, p-val >0.05. Time is relative to peak cell elongation (hRPCE). In all plots, each empty circle indicates one cut, and the box plots summarize the data: thick black line indicates the median; the boxes enclose the first and third quartiles; lines extend to the minimum and maximum without outliers, and filled circles mark outliers.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/85581/elife-85581-fig2-figsupp1-v3.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Initial recoil velocity upon ablation (simplified as recoil velocity in the y-axis title) along the proximal\u2013distal (PD) axis for wt (gray), stbm (green), and fmi (purple) mutant wings at \u22128 hRPCE (n \u2265 9). Significance is estimated using the Kruskal\u2013Wallis test. ***p-val \u22640.001; **p-val \u22640.01. (B) Example of exponential fits of the cell response to laser ablation in three different wt wings at \u22128 hRPCE. The left plots shows the double exponential plot used with the Kelvin\u2013Voigt model (red) and the slow exponential curve generated using the parameters from the double exponential fit (blue). The right plots show a single exponential fit (orange). These plots show that the double exponential fit captures both the fast and slow response to laser ablation. (C) Ratio of elastic constants ($2K/K\u00af$) for wt and pk (blue) at \u22128 hRPCE (n \u2265 4). Significance is estimated using the Mann\u2013Whitney U-test. ns, p-val >0.05. Time is relative to Peak Cell Elongation (hRPCE). In (A) and (C), each empty circle indicates one cut, and the box plots summarize the data: thick black line indicates the median; the boxes enclose the first and third quartiles; lines extend to the minimum and maximum without outliers, and filled circles mark outliers.\n\n![Video 1.](https://cdn.elifesciences.org/articles/85581/elife-85581-video1.mp4.jpg)\n\n**Video 1.:** The movie goes dark during the ablation itself. Thereafter, the tissue displaces. Anterior is up; proximal is left.\n\nAs initial recoil velocity is often used as a proxy for mechanical stress (e.g. Mayer et al., 2010; Etournay et al., 2015; Iyer et al., 2019; Farhadifar et al., 2007), this result seems to suggest that the PCP mutant wings generate less mechanical stress during blade elongation flows, even though the cellular dynamics are at best only subtly perturbed. To explore this phenotype in more detail, we considered that the response to laser ablation is not exactly a direct measure of mechanical stress, as it is also affected by cellular material properties. We thus further analyzed the full kinetics of the linear laser ablations, focusing on the pk mutant, and developed a rheological model to interpret the results. When plotting displacement of the nearest bond to ablation over time, we realized that a single exponential relaxation cannot account for the observed behavior (Figure 2\u2014figure supplement 1B, right). We obtained a good fit of the data by introducing a second relaxation timescale (Figure 2C). The slow timescale (\u223c20 s) accounts for most of the timecourse of displacement changes, but the fast timescale (<1 s) is required to account for first 5\u201310 datapoints, see Figure 2\u2014figure supplement 1B, left. We therefore developed a model consisting of two Kelvin\u2013Voigt (KV) elements in series (Figure 2D) to represent the tissue after ablation. The two KV elements have different elastic constants ($k_{f}$ and $k_{s}$) and viscosities ($\u03b7_{f}$ and $\u03b7_{s}$). Before ablation, the system is subjected to a constant stress ($\\sigma$) and contains a spring with elastic constant $k$, which represents the cell patch that will be ablated. Upon ablation, the third spring is removed which leads to change in strain of our rheological model. We represent this strain by a displacement $\u0394x$ as a function of time given by\n\n$$\n\u0394x(t)=X_{f}(1\u2212e^{\u2212t/\\tau_{f}})+X_{s}(1\u2212e^{\u2212t/\\tau_{s}}),\n$$\n\nwhere $X_{f}=\\sigma\u03ba/k_{f}$ is the displacement associated with the fast timescale, $\\tau_{f}=\u03b7_{f}/k_{f}$, and $X_{s}=\\sigma\u03ba/k_{s}$ is the displacement associated with the slow timescale, $\\tau_{s}=\u03b7_{s}/k_{s}$. Here, $\u03ba=k/(k+k\u00af)$ is the fraction of the overall system elasticity lost due to ablation (see Materials and methods, Kymograph analysis and fit to model) and $k\u00af=k_{s}k_{f}/(k_{s}+k_{f})$ is the elasticity of the two KV elements connected in series. With this model, we presume the properties of the ablated cell itself, including its membrane, adhesion proteins, and acto-myosin cortex likely dominate the fast timescale response. The slow timescale response is a collective effect emerging from the ablated cell together with its surrounding cellular network.\n\nWe analyzed the experimentally measured displacement over time for each ablation and then fit the data to our model with four parameters ($X_{f}$, $X_{s}$, $\\tau_{f}$, and $\\tau_{s}$) (Equation 1, Figure 2E\u2013E\u2032\u2032\u2032). Surprisingly, we find that the only parameter that changes between pk and wt is $X_{f}$, the displacement associated with the fast timescale (Figure 2E\u2013E\u2032\u2032\u2032). To interpret this result, we consider that these four fitted parameters constrain the five mechanical model parameters (Figure 2D) but do not provide a unique solution. Since only one measured parameter changes, we asked what is the simplest set of model parameter changes that could have such an effect. To this end, we first note that the measured values of $X_{f}$ and $X_{s}$ ($1.8-2.6\u2062\\mu\u2062m$ vs $6-8\u2062\\mu\u2062m$, respectively) indicate $k_{f}\u226bk_{s}$ and therefore the overall elasticity of our rheological model is largely determined by the elasticity of the slow relaxation $k\u00af\u2248k_{s}$. If we also consider that the contribution to the elasticity of the cellular patch from the ablated cells, represented by $k$ in the model, is small, then we can approximate $\u03ba\u2248k/k_{s}$ and therefore $X_{f}\u2248\\sigmak/(k_{s}k_{f})$ (see Materials and methods, Kymograph analysis and fit to model). Is the observed phenotype in the fast timescale displacement $X_{f}$ due to a change in tissue stress $\\sigma$ or a change in the elastic constants?\n\nTo address this question, we sought to probe mechanical stress in the wt and pk mutant, independent of the ablation recoil velocity. To do so, we used a method called ESCA (elliptical shape after circular ablation) (Dye et al., 2021), which uses circular laser ablation and quantifies the resulting elliptical tissue outline once the mechanical equilibrium is established (Figure 2F and Materials and methods, Elliptical shape after circular ablation). Analysis of the elliptical tissue outline provides information about two-dimensional stresses present in the tissue before the ablation. In particular, we measure the magnitude of the anisotropic shear stress tensor, normalized by the shear elastic modulus $\\sigma~/(2K)$ and the isotropic stress normalized by the area elastic modulus $\\sigma_{0}/K\u00af$. The stress $\\sigma$ in the simple rheological model presented above would correspond to tissue stress normal to the linear laser ablation axis and therefore it is a linear combination of both $\\sigma~/(2K)$ and $\\sigma_{0}/K\u00af$. ESCA also provides an estimate of the ratio of shear and area elastic constants $2K/K\u00af$.\n\nUsing ESCA, we find no significant difference between wt and pk mutants in anisotropic and isotropic stress magnitudes, nor in the ratio of elastic constants (Figure 2F\u2013F\u2033 and Figure 2\u2014figure supplement 1C). Since the ratio $\\sigma/k_{s}$ defined in the rheological model is related to the normalized tissue stresses and elastic moduli, which do not change as shown by ESCA, we conclude that that $\\sigma/k_{s}$ is not different between wt and pk. Therefore, we account for the observed changes of fast timescale displacement $X_{f}$ in the pk mutant with a change of the single elastic constant $k_{f}$. In this scenario, $\u03b7_{f}$ changes together with the $k_{f}$, such that $\\tau_{f}=\u03b7_{f}/k_{f}$ is conserved. This suggests that fast elasticity and viscosity are not independent but stem from a microscopic mechanism that controls the relaxation timescale. An example of such mechanism is turnover of the acto-myosin network, although this mechanism would be too slow to account for the fast relaxation timescale we observe. The conclusion that only the short-time response to the ablation, and not the tissue stress, is affected in the pk mutant is consistent with the lack of a clear phenotype in the large-scale tissue flows (Figure 1).\n\n### Dynamics of stress and cell elongation throughout blade elongation flows in wild type and core PCP mutants\n\nTo examine the effect of PCP mutation throughout blade elongation flows, we aimed to simplify the time intensive segmentation of the full ablation dynamics. To this end, we measured only the initial recoil velocity at different developmental timepoints. In terms of our model, the initial recoil velocity measured during first $\\deltat=0.65s$ can be expressed as $v=(X_{f}(1\u2212e^{\u2212\\deltat/\\tau_{f}})+X_{s}(1\u2212e^{\u2212\\deltat/\\tau_{s}}))/\\deltat$. Since the value of $\\deltat$ is comparable to the fast timescale $\\tau_{f}$, about 63% of the $X_{f}$ value relaxes over that time, while at the same time only about 5% of the $X_{s}$ value is relaxed. Using the measured values of $X_{f}$ and $X_{s}$, we estimate that the fast timescale dynamics contributes about 80%  of the $v$ value. Therefore, the initial recoil velocity is a good proxy for the fast displacement $X_{f}$.\n\nWe find that the initial recoil velocity along the PD axis peaks at \u22128 hRPCE before declining again by 4 hRPCE (Figure 3A), consistent with previous work (Iyer et al., 2019). The behavior of the initial recoil velocity in the pk mutant is qualitatively similar throughout blade elongation flows, however, with significantly lower magnitude than wt (Figure 3A). We also observed this behavior in stbm and fmi mutant tissues (Figure 3\u2014figure supplement 1A). This result indicates that $X_{f}$ is lower in core PCP mutants than in wt throughout blade elongation flows.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/85581/elife-85581-fig3-v3.jpg)\n\n**Figure 3.:** (A) Initial recoil velocity upon ablation (simplified as recoil velocity in the y-axis title) along the proximal\u2013distal (PD) axis throughout blade elongation flows for wt (gray) and pk (blue) tissues (n \u2265 3). Significance is estimated using the Mann\u2013Whitney U-test. ****p-val \u22640.0001; ***p-val \u22640.001; **p-val \u22640.01; ns, p-val >0.05. (B) Elliptical shape after circular ablation (ESCA) results for anisotropic stress $\\sigma~/2K$ for wt (gray) and pk (blue) tissues throughout blade elongation flows (n \u2265 3). Significance is estimated using the Mann\u2013Whitney U-test. *p-val <0.05; ns, p-val >0.05. (B\u2032) ESCA results for isotropic stress $\\sigma/K\u00af$ for wt (gray) and pk (blue) throughout blade elongation flows (n \u2265 3). Significance is estimated using the Mann\u2013Whitney U-test. *p-val <0.05; ns, p-val >0.05. (C) Color-coded PD component of cell elongation $Q$ in the blade region between the second and third sensory organs found in the intervein region between L2 and L3. The images correspond to wt (top row) and pk (bottom row) wings throughout blade elongation flows. Scale bar, 5 \u03bcm. (D) Quantification of the PD component of cell elongation $Q$ in this region throughout blade elongation flows for wt (gray) and pk (blue) (n \u2265 3). Significance is estimated using the Mann\u2013Whitney U-test. ns, p-val >0.05. Time is relative to peak cell elongation (hRPCE). In all plots, each empty circle indicates one experiment, and the box plots summarize the data: thick black line indicates the median; the boxes enclose the first and third quartiles; lines extend to the minimum and maximum without outliers, and filled circles mark outliers.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/85581/elife-85581-fig3-figsupp1-v3.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Initial recoil velocity upon ablation (simplified as recoil velocity in the y-axis title) along the proximal\u2013distal (PD) axis for wt (gray), stbm (green), and fmi (purple) mutant wings throughout blade elongation flows (n \u2265 4). Significance is estimated using the Kruskal\u2013Wallis test.  ***p-val \u22640.001; **p-val \u22640.01; *p-val \u22640.05; ns, p-val >0.05. (B) Ratio of elastic constants ($2K/K\u00af$) for wt and pk (blue) throughout blade elongation flows (n\u22653). Significance is estimated using the Kruskal\u2013Wallis test. ns, p-val >0.05. Time is relative to peak cell elongation (hRPCE). (C) Left: Schematic of a wt wing at \u22128 hRPCE. Linear laser ablation experiments were performed in the blade region enclosed by the red square. Dots on the cartoon indicate sensory organs. Red line corresponds to the ablation; the kymograph was drawn perpendicularly to the cut (yellow). Scale bar, 5 \u03bcm. Right: Initial recoil velocity upon ablation (simplified as recoil velocity in the y-axis title) along the anterior\u2013posterior (AP) axis for wt (gray) and pk (blue) mutant wings throughout blade elongation flows (n \u2265 3, n = 2 in wt wings at 0 hr). Significance is estimated using the Mann\u2013Whitney U-test. *p-val \u22640.05; ns, p-val >0.05. (D) Proxy for shear stress calculated as the difference between the initial recoil velocity along the PD (vPD) and AP (vAP) axes for wt (gray) and pk (blue) mutant wings (left plot), compared to the anisotropic stress ($\\sigma~/2K$) outputted by elliptical shape after circular ablation (ESCA; right plot). Filled colored dots correspond to the mean value, and the error bars report the standard error of the mean (SEM). Significance is estimated using the Kruskal\u2013Wallis test. **p-val \u22640.01; *p-val \u22640.05; ns, p-val >0.05. Time is relative to peak cell elongation (hRPCE). In (A\u2013C), each empty circle indicates one experiment, and the box plots summarize the data: thick black line indicates the median; the boxes enclose the first and third quartiles; lines extend to the minimum and maximum without outliers, and filled circles mark outliers.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/85581/elife-85581-fig3-figsupp2-v3.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (E) Quantification of $Q$ in the blade throughout blade elongation flows for wt (gray), stbm (green), and fmi (purple) mutant wings (n \u2265 4). Significance is estimated using the Kruskal\u2013Wallis test. **p-val \u22640.01; *p-val \u22640.05; ns, p-val >0.05. Time is relative to peak cell elongation (hRPCE). Each empty circle indicates one experiment, and the box plots summarize the data: thick black line indicates the median; the boxes enclose the first and third quartiles; lines extend to the minimum and maximum without outliers, and filled circles mark outliers.\n\nWe also performed ESCA at different timepoints in pk mutants and observe that anisotropic stress ($\\sigma~/2K$) rises early during blade elongation flows before eventually declining (Figure 3B), whereas isotropic stress ($\\sigma_{0}/K\u00af$) remains fairly constant (Figure 3B\u2032). Strikingly, ESCA does not report any difference in measured stresses between pk and wt, nor in the ratio of elastic constants ($2K/K\u00af$, Figure 3\u2014figure supplement 1B) throughout blade elongation flows. To further compare the information contained in the initial recoil velocity with the anisotropic stress measured by ESCA, we performed linear ablations also in the perpendicular orientation. With such data, we could quantify the difference in initial recoil velocity between the two orientations $\\deltav=v_{PD}\u2212v_{AP}$, which is expected to be proportional to the shear stress along the PD wing axis. We then quantified how $\\deltav$ evolves throughout the blade elongation flows (Figure 3\u2014figure supplement 1C, D). Whereas ESCA clearly shows that stresses in the tissue remain the same in wt and pk throughout blade elongation flows, the difference in initial recoil velocity $\\deltav$ is significantly lower in pk compared to wt. This result indicates that our conclusions based on the \u22128 hRPCE timepoint are true throughout blade elongation flows, namely that the differences in $X_{f}$ between wt and pk stem from the fast elastic constant $k_{f}$ and not from the differences in mechanical stresses in the tissue.\n\nTo further probe the possible role of core PCP in epithelial mechanics, we also measured the dynamics of the PD component of cell elongation ($Q$) in wt and core PCP mutants (Figure 3C, Figure 3\u2014figure supplement 2E). Interestingly, in both wt and pk, anisotropic stress peaks around \u22126 hRPCE (Figure 3B), whereas $Q$ peaks significantly later, between \u22124 and 0 hRPCE. We have previously related the tissue stress and cell elongation through a constitutive relation $\\sigma~=2KQ+\u03b6$, where $\u03b6$ represented an active anisotropic stress component (Etournay et al., 2015). The difference in timing of the peaks in stress and cell elongation indicate that the active stresses change over time. However, we observe no differences between wt and core PCP in the peak of cell elongation (Figure 3D, Figure 3\u2014figure supplement 2E), showing that core PCP also does not affect active anisotropic stresses underlying the dynamics of cell elongation during blade elongation flows.\n\n## Discussion\n\nHere, we used the Drosophila pupal wing as a model for studying the interplay between planar polarized chemical signaling components, specifically the core PCP pathway, and the mechanical forces underlying tissue morphogenesis.\n\nAn extensive analysis of core PCP mutants shows no significant phenotype in pupal wing morphogenesis during the blade elongation flows. We find no significant differences in overall tissue shape change, nor in the pattern or dynamics of underlying cellular contributions. Even if a larger sample size of pupal wings would reveal a statistically significant phenotype, as indicated by our analysis of adult wings, the differences to the wild type would be subtle. Furthermore, we found no significant differences in tissue mechanical stress or in cell elongation over time. Generally these results are consistent in mutants that greatly reduce core PCP polarity (stbm and fmi) or prevent its decoupling from Fat (pk).\n\nInterestingly, we do observe a phenotype in the initial recoil velocity upon laser ablation between core PCP mutants and wt, but this is not reflected in tissue stresses or large-scale morphogenetic flows that shape the wing. A detailed analysis of wt and pk suggests that the phenotype arises from a difference in the elastic constant $k_{f}$ underlying the fast timescale response ($\\tau_{f}=0.65s$) to the ablation. In our simple model, the fast and stiff spring $k_{f}$ has a small contribution to the effective tissue elasticity $k\u00af$, which is dominated by the slow and soft spring $k_{s}$ (See Results, A rheological model for the response to laser ablation). The observation that core PCP only affects $k_{f}$ is therefore consistent with the lack of phenotype at larger scales. What is the the biophysical nature of the fast response to laser ablation? We hypothesize that processes that react on timescaless <1 s to a laser ablation could be related to cortical mechanics of cell bonds or possibly changes in cell hydraulics, and it is unclear how core PCP would affect these processes. Whether this core PCP phenotype in $k_{f}$ leads to very subtle changes in tissue development not detected in our analyses here, or is only visible in response to a laser ablation, also remains unknown and would require a much larger sample size to address. For the adult wing, we have a sufficient sample size to reveal a weak but significant shape phenotype in core PCP mutant wings. This result suggests that a weak phenotype arises during pupal development that we could not reliably detect in our analysis of cell dynamics. We also cannot rule out the possibility that there is a compensating mechanism that prevents the phenotype from appearing at larger scales.\n\nInitial recoil velocity after a laser ablation is often used a proxy for tissue mechanical stresses. However, our results highlight a limitation of this approach for looking at how stress changes in different genotypes, as here we show how initial recoil velocity is influenced by differences in mechanics on small scales that are not necessarily related to differences in overall tissue stress.\n\nWhile we have shown that core PCP is not required to organize the dynamic patterns of cellular events underlying blade elongation flows, it might still affect later stages of wing development. Furthermore, there may still be other patterning systems acting redundantly or independently with core PCP. For example, the Fat PCP system and Toll-like receptors have been shown to influence the orientation of cellular rearrangements and cell divisions in other contexts (Bosveld et al., 2012; Mao et al., 2006; Par\u00e9 et al., 2014; Lavalou et al., 2021, reviewed in Umetsu, 2022). Whether and how other polarity systems influence pupal wing morphogenesis remains unknown. Alternatively, anisotropic mechanical stress induced by hinge contraction could itself provide a polarity cue through mechano-sensitive activity of the cytoskeleton. Our recent work in the larval wing disc shows that the cell polarity that drives the patterning of cell shape and mechanical stress contains a mechano-sensitive component (Dye et al., 2021). Here, we show a detailed analysis of tissues stress dynamics and cell elongation in the pupal wing revealing that the active cellular stresses that are relevant for pupal wing morphogenesis (Etournay et al., 2015) change in time (Figure 3). Whether the same mechano-sensitive mechanism established in the larval wing can also account for the dynamics of active stresses during the pupal blade elongation flows will be an important question to answer in the future.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>gene (Drosophila melanogaster)</td>\n      <td>w-</td>\n      <td>NA</td>\n      <td>FLYB:FBal0018186</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>gene (Drosophila melanogaster)</td>\n      <td>shg (shotgun; E-cadherin)</td>\n      <td>NA</td>\n      <td>FLYB:FBgn0003391</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>gene (Drosophila melanogaster)</td>\n      <td>pk30</td>\n      <td>NA</td>\n      <td>FLYB:FBal0101223</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>gene (Drosophila melanogaster)</td>\n      <td>stbm6</td>\n      <td>NA</td>\n      <td>FLYB:FBal0062423</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>gene (Drosophila melanogaster)</td>\n      <td>fmifrz3</td>\n      <td>NA</td>\n      <td>FLYB:FBal0143193</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>strain, strain background (Drosophila melanogaster, male)</td>\n      <td>wt</td>\n      <td>Other</td>\n      <td>PMID:19429710</td>\n      <td>Huang et al., 2009. Genotype: wt: w-; EcadGFP;</td>\n    </tr>\n    <tr>\n      <td>strain, strain background (Drosophila melanogaster, male)</td>\n      <td>pk</td>\n      <td>Bloomington Drosophila Stock Center</td>\n      <td>RRID:BDSC_44229</td>\n      <td>Gubb et al., 1999. Genotype: w-; EcadGFP, pk30;</td>\n    </tr>\n    <tr>\n      <td>strain, strain background (Drosophila melanogaster, male)</td>\n      <td>stbm</td>\n      <td>Bloomington Drosophila Stock Center</td>\n      <td>RRID:BDSC_6918</td>\n      <td>Wolff and Rubin, 1998. Genotype: w-; EcadGFP, stbm6;</td>\n    </tr>\n    <tr>\n      <td>strain, strain background (Drosophila melanogaster, male)</td>\n      <td>fmi</td>\n      <td>Bloomington Drosophila Stock Center</td>\n      <td>RRID:BDSC_6967</td>\n      <td>Wolff and Rubin, 1998. Genotype: w-; EcadGFP, fmifrz3;</td>\n    </tr>\n    <tr>\n      <td>chemical compound, drug</td>\n      <td>Euparal</td>\n      <td>Carl Roth</td>\n      <td>7356.1</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>chemical compound, drug</td>\n      <td>Holocarbon oil 700</td>\n      <td>Sigma-Aldrich</td>\n      <td>H8898</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>chemical compound, drug</td>\n      <td>Isopropanol (2-propanol)</td>\n      <td>Sigma-Aldrich</td>\n      <td>1.0104</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>software, algorithm</td>\n      <td>Fiji</td>\n      <td>Other</td>\n      <td>v. 2.0.0-rc-68/1.52e</td>\n      <td>Schindelin et al., 2012</td>\n    </tr>\n    <tr>\n      <td>software, algorithm</td>\n      <td>Ilastik</td>\n      <td>Other</td>\n      <td>v. 1.2.2</td>\n      <td>Berg et al., 2019</td>\n    </tr>\n    <tr>\n      <td>software, algorithm</td>\n      <td>MATLAB</td>\n      <td>Other</td>\n      <td>v. 9.2.0.1226206 (R2017a)</td>\n      <td>MATLAB, 2017</td>\n    </tr>\n    <tr>\n      <td>software, algorithm</td>\n      <td>PreMosa</td>\n      <td>Other</td>\n      <td></td>\n      <td>Blasse et al., 2017</td>\n    </tr>\n    <tr>\n      <td>software, algorithm</td>\n      <td>R</td>\n      <td>Other</td>\n      <td>v. 3.4.1</td>\n      <td>R Development Core Team, 2020</td>\n    </tr>\n    <tr>\n      <td>software, algorithm</td>\n      <td>Rstudio</td>\n      <td>Other</td>\n      <td>v. 3.6.1</td>\n      <td>RStudio Team, 2020</td>\n    </tr>\n    <tr>\n      <td>software, algorithm</td>\n      <td>TissueMiner</td>\n      <td>Other</td>\n      <td>v. TM_1.0.2</td>\n      <td>Etournay et al., 2016</td>\n    </tr>\n    <tr>\n      <td>other</td>\n      <td>Coverslip</td>\n      <td>Paul Marienfeld GmbH</td>\n      <td>107052</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>other</td>\n      <td>Microscope slides</td>\n      <td>Paul Marienfeld GmbH</td>\n      <td>1000200</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>other</td>\n      <td>Dumont #55 Forceps</td>\n      <td>Fine Science Tools</td>\n      <td>11295\u201351</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>other</td>\n      <td>Vannas Spring Scissors</td>\n      <td>Fine Science Tools</td>\n      <td>15000\u201308</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Fly husbandry\n\nFlies were maintained at 25\u00b0C and fed with standard fly food containing cornmeal, yeast extract, soy flour, malt, agar, methyl 4-hydroxybenzoate, sugar beet syrup, and propionic acid. Flies were kept at 25\u00b0C in a 12-hr light/dark cycle. Vials were flipped every 2\u20133 days to maintain a continuous production of pupae and adult flies. All experiments were performed with male flies, since they are slightly smaller and therefore the wings require less tiling on the microscope to be imaged than females.\n\n### Long-term timelapse imaging of pupal wing morphogenesis\n\n#### Acquisition\n\nWhite male pupae were collected, slightly washed with a wet brush, and transferred to a vial containing standard food. At 16 hAPF, the pupal case was carefully dissected so that the wing would be accessible. The pupae was then mounted onto a 0.017-mm coverslip on a self-built metal dish with a drop of Holocarbon oil 700 (Classen et al., 2008). Pupal wing morphogenesis was imaged every 5 min for approximately 24 hr, as in Etournay et al., 2015. Wings that did not develop after 4\u20135 hr of imaging were discarded and not analyzed.\n\nTwo different microscopes were used for acquisition of long-term timelapses. All wt, pk, and stbm movies were acquired using a Zeiss spinning disk microscope driven by ZEN 2.6 (blue edition). This microscope consists of a motorized XYZ stage, an inverted stand, a Yokogawa CSU-X1 scan head, and a temperature-controlled chamber set to 25\u00b0C. The sample was illuminated with a 488-nm laser, and the emission was collected using a 470/40 bandpass filter, through a Zeiss 63 \u00d7 1.3 W/Gly LCI Plan-Neofluar objective and a Zeiss AxioCam Monochrome CCD camera with 2 \u00d7 2 binning. The whole wing was imaged in 24 tiles with an 8 % overlap. Each tile consisted of 50\u201360 stacks with a Z-spacing of 1 \u03bcm. The laser power was set to 0.1 mW.\n\nThe two fmi movies were acquired with an Olympus IX 83 inverted stand driven by the Andor iQ 3.6 software. The microscope is equipped with a motorized xyz stage, a Yokogawa CSU-W1 scan head, and an Olympus 60 \u00d7 1.3 Sil Plan SApo objective. The setup was located inside a temperature-controlled chamber set to 25\u00b0C. The sample was illuminated with a 488-nm laser, and the emission was collected using a 525/50 bandpass filter. The whole wing was imaged by tiling with eight tiles with a 10 % overlap. Each tile consisted of 50\u201360 stacks with a distance of 1 \u03bcm between them. The laser power was set to 0.75 mW.\n\nTable 1 summarizes the date when the long-term timelapses were acquired and the age of the pupae during the imaging.\n\n**Table 1.**\n Date of acquisition of all long-term timelapses.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Genotype</th>\n      <th>Date of acquisition</th>\n      <th>Start [hAPF]</th>\n      <th>End [hAPF]</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td rowspan=\"5\">wt</td>\n      <td>March 30, 2016</td>\n      <td>16</td>\n      <td>39.83</td>\n    </tr>\n    <tr>\n      <td>April 2, 2016</td>\n      <td>16</td>\n      <td>36.58</td>\n    </tr>\n    <tr>\n      <td>April 3, 2016</td>\n      <td>16</td>\n      <td>36.50</td>\n    </tr>\n    <tr>\n      <td>April 13, 2016</td>\n      <td>16</td>\n      <td>32.58</td>\n    </tr>\n    <tr>\n      <td>June 20, 2018</td>\n      <td>16</td>\n      <td>41.17</td>\n    </tr>\n    <tr>\n      <td rowspan=\"3\">pk</td>\n      <td>April 9, 2016</td>\n      <td>16</td>\n      <td>39.00</td>\n    </tr>\n    <tr>\n      <td>June 28, 2016</td>\n      <td>16</td>\n      <td>36.00</td>\n    </tr>\n    <tr>\n      <td>June 29, 2016</td>\n      <td>16</td>\n      <td>39.92</td>\n    </tr>\n    <tr>\n      <td rowspan=\"3\">stbm</td>\n      <td>November 25, 2015</td>\n      <td>16</td>\n      <td>40.67</td>\n    </tr>\n    <tr>\n      <td>November 28, 2015</td>\n      <td>16</td>\n      <td>35.33</td>\n    </tr>\n    <tr>\n      <td>December 11, 2014</td>\n      <td>16</td>\n      <td>37.58</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">fmi</td>\n      <td>October 20, 2018</td>\n      <td>16</td>\n      <td>39.17</td>\n    </tr>\n    <tr>\n      <td>July 20, 2019</td>\n      <td>16</td>\n      <td>38.17</td>\n    </tr>\n  </tbody>\n</table>\n\n#### Processing, segmentation, tracking, and database generation\n\nRaw stacks were projected, corrected for illumination artifacts, and stitched using PreMosa (Blasse et al., 2017). The stitched images of individual timepoints were cropped to fit the wing size, registered using the Fiji plugin \u2018Descriptor-based series registration (2D/3D + t)\u2019, and converted to 8 bit with Fiji (Schindelin et al., 2012). The segmentation was performed with the Fiji plugin TissueAnalyzer (Schindelin et al., 2012; Aigouy et al., 2010; Aigouy et al., 2016). Segmentation errors were identified and manually corrected by looking at the cell divisions and deaths masks.\n\nSubsequent processing and quantifications were performed using TissueMiner (Etournay et al., 2016). Before generating the relational database, we rotated the movies so that the angle formed by a manually drawn line connecting the sensory organs would be 0. We manually defined the regions of interest, such as the blade, hinge, and the anterior and posterior regions, using the last frame of the movie. Next, we generated the relational database containing information about the cellular dynamics during blade elongation flows using TissueMiner (Etournay et al., 2016).\n\nWe queried and worked with the data using the Dockerized version of RStudio (Nickoloff, 2016), which loads all packages and functions required to work with TissueMiner. Movies were aligned by the peak of cell elongation by fitting a quadratic function around the cell elongation values 40 frames before and after the absolute maximum of cell elongation in the blade region for each movie. The maximum of this curve was identified and set as the timepoint 0 hRPCE.\n\n### Adult wing preparation and analysis of wing shape\n\nAdult male flies were fixed in isopropanol for at least 12 hr. One wing per fly was dissected in isopropanol, transferred to a microscope slide and covered with 50% euparal in isopropanol. Wings were mounted with 50\u201370 \u03bcl 75 % euparal/isopropanol.\n\nwt, pk, and stbm wings were imaged using a Zeiss widefield Axioscan Z1 microscope equipped with a Zeiss 10 \u00d7 0.45 air objective. fmi wings were imaged using a Zeiss widefield Axiovert 200 M microscope equipped with a Zeiss 5 \u00d7 0.15 Plan-Neofluar air objective.\n\nWing blade parameters were quantified using a custom-written Fiji macro (provided as Source code 1) (Schindelin et al., 2012). The shape or major-to-minor ratio was calculated using a custom RStudio script (R Development Core Team, 2020; RStudio Team, 2020).\n\n#### Subsampling and statistical analysis\n\nRandom sampling was done using a custom written RStudio pipeline (R Development Core Team, 2020; RStudio Team, 2020). A group of a given sample size was randomly selected with replacement for each group (wt, pk, stbm, and fmi), and a Kruskal\u2013Wallis test was ran to compare them. This analysis was repeated 10,000 times. The sample sizes analyzed were 3, 4, 5, 6, 7, 8, 9, 10, 20, and 40.\n\n### Quantification of the PD component of cell elongation Q\n\nPrior to all laser ablation experiments, we acquired a stack of 50 \u03bcm thick that was projected using PreMosa (Blasse et al., 2017). We cropped a region that enclosed the region that was ablated, segmented cells using TissueAnalyzer (Aigouy et al., 2010; Aigouy et al., 2016), and generated a relational database with TissueMiner (Etournay et al., 2016).\n\nThe definition of cell elongation was first presented in Aigouy et al., 2010 and it describes the angle and magnitude of the tensor. The cell elongation tensor is given by\n\n$$\n(\u03f5_{xx}\u03f5_{xy}\u03f5_{xy}\u2212\u03f5_{xx}),\n$$\n\nwhere\n\n$$\n\u03f5_{xx}=\\frac{1}{A_{c}}\\intcos(2\u03d5)dA\n$$\n\nand\n\n$$\n\u03f5_{xy}=\\frac{1}{A_{c}}\\intsin(2\u03d5)dA.\n$$\n\nCell elongation is normalized by the cell area $(A_{c})$ of each cell. The magnitude of cell elongation is:\n\n$$\n\u03f5=(\u03f5_{xx}^{2}+\u03f5_{xy}^{2})^{\\frac{1}{2}}\n$$\n\nHere, we plot $\u03f5_{xx}$ as $Q$, which we describe as the PD component of cell elongation.\n\n### Laser ablation experiments\n\nPupae were dissected and mounted as described for the long-term timelapses. Ablations were always performed in the same region of the wing blade, found in the intervein region between the longitudinal veins L3 and L4 and between the second and third sensory organs. This region was chosen because these landmarks are easily visible in all timepoints. Laser ablations were performed using a Zeiss spinning disk microscope equipped with a CSU-X1 Yokogawa scan head, an EMCCD Andor camera, a Zeiss 63 \u00d7 1.2 water immersion Korr UV-VIS-IR objective, and a custom-built laser ablation system using a 355-nm, 1000-Hz pulsed ultraviolet (UV) laser (Grill et al., 2001; Mayer et al., 2010). The imaging and cutting parameters for line and circular laser ablations are shown in Table 2. All laser ablation experiments were performed between January 2018 and July 2020, after the delay in pupal wing morphogenesis was identified.\n\n**Table 2.**\n Parameters used to perform laser ablations.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>Linear ablations</th>\n      <th>Circular ablations</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Exposure time [s]</td>\n      <td>0.05</td>\n      <td>0.05</td>\n    </tr>\n    <tr>\n      <td>488-nm laser intensity [%]</td>\n      <td>50</td>\n      <td>50</td>\n    </tr>\n    <tr>\n      <td>Time interval [s]</td>\n      <td>0.09</td>\n      <td>2.55</td>\n    </tr>\n    <tr>\n      <td>Pulses per shot</td>\n      <td>25</td>\n      <td>25</td>\n    </tr>\n    <tr>\n      <td>Shots per \u00b5m</td>\n      <td>2</td>\n      <td>2</td>\n    </tr>\n    <tr>\n      <td>Shooting time [s]</td>\n      <td>0.67</td>\n      <td>147.28</td>\n    </tr>\n    <tr>\n      <td>Thickness of stack ablated [\u00b5m]</td>\n      <td>1</td>\n      <td>20</td>\n    </tr>\n  </tbody>\n</table>\n\n#### Linear laser ablations to calculate the initial recoil velocity\n\nWe performed both types of linear ablations in only one plane of the tissue, in order to minimize the time required for ablation and therefore be able to acquire the initial recoil velocity upon ablation (no imaging is possible during ablation). The length of the linear laser ablations was 10 \u03bcm, ablating three to four cells. We drew kymographs perpendicularly to the cut to follow the two edges of one ablated cell using Fiji (Schindelin et al., 2012). The initial recoil velocity was calculated as the average displacement of two membranes of the same cell that occurred during the black frames of the ablation itself. This calculation was made using a self-written MATLAB script (MATLAB, 2017). Scripts used to make kymographs and analyze the laser ablations are provided in Source code 2; Source code 3; Source code 4. The image acquired prior to the laser ablation was used to compute $Q$ in that region, as described in Quantification of the PD component of cell elongation Q, and the time corresponding to the maximum of cell elongation was defined as 0 hRPCE.\n\n#### Elliptical shape after circular ablation\n\nCircular laser ablations used for ESCA were 20 \u03bcm in radius (approximately 10 cells). This radius was selected such that it would fit into the same blade region throughout the blade elongation flows. Due to the bigger size of these cuts and the curvature of the tissue, we cut the tissue along a stack of 20 \u03bcm thick. Approximately 2 min after the ablation, we acquired a stack of 50 \u03bcm. This image was projected using PreMosa (Blasse et al., 2017) and preprocessed by applying Gausian blur (\u03c3 = 1) and background subtraction filters (rolling ball radius = 30) in Fiji (Schindelin et al., 2012). The next steps were performed as in Dye et al., 2021: the image of the final shape of the cut was segmented using Ilastik (Berg et al., 2019) by defining three regions: membrane, cell, and dark regions. The segmented image was thresholded to obtain a binary image of the final shape of the cut. We fitted two ellipses to this image: one to the inner piece and another one to the outer outline of the cut. Based on the shape of these ellipses, the method outputs the anisotropic $\\frac{\\sigma~}{2K}$ and isotropic stress $\\frac{\\sigma}{K\u00af}$ as a function of their respective elastic constants, and the ratio of elastic constants $\\frac{2K}{K\u00af}$. A small number of experiments were fitted poorly (defined as an error per point greater than 0.3) and were therefore excluded from analysis. Prior to the circular ablation, a stack of 50 \u03bcm was acquired and used to calculate cell elongation before ablation (Quantification of the PD component of cell elongation Q). The time corresponding to the maximum of cell elongation was set to be 0 hRPCE.\n\n### Kymograph analysis and fit to model\n\nThe ablations used to calculate the mechanical stress along the PD axis for wt and pk were further analyzed with the rheological model. To do so, we processed the kymographs by applying a Gaussian blur (\u03c3 = 1) (Schindelin et al., 2012), and then we segmented these kymographs with Ilastik (Berg et al., 2019). Using a self-written Fiji macro (Schindelin et al., 2012), we extracted the intensity profile for each timepoint. Next, we wrote an R script (R Development Core Team, 2020; RStudio Team, 2020) to identify the membrane displacement over time and obtained a unique curve per kymograph, which could be fitted with our model. We modeled a local patch of tissue as a combination of a spring with spring constant $k$, representing the ablated cells, and two KV elements with spring constants $k_{f}$ and $k_{s}$ and viscosity coefficients $\u03b7_{f}$ and $\u03b7_{s}$, representing the unablated cells, as shown in Figure 2C, D. Because the local tissue strain in the experimental measurement is expressed by the displacement of the bond nearest to the ablation, in the rheological model we represent tissue strain by displacements of the two KV elements. In principle, the strain can be recovered by normalizing the displacements by the width of ablated cells. Displacements of the two KV elements are defined as a change in the distance between the end points of the KV elements $x_{i}(t)$, relative to their initial values $x_{i}(0)$, where $i\\in{f,s}$ for fast ($f$) and slow ($s$) element.\n\nMechanical stress in the tissue is represented by the $\\sigma$ acting on our model, and we assume that $\\sigma$ is not changed by the ablation. Before the ablation, the model is in mechanical equilibrium and we can write\n\n$$\n\\sigma=(k+k\u00af)x(0),\n$$\n\nwhere $x(0)$ is the initial distance between the two end points of the model, and $k\u00af=k_{f}k_{s}/(k_{f}+k_{s})$ is the elastic constant of the two KV elements connected in series. Upon ablation, the spring $k$ is removed and stresses in the model are imbalanced. The distance between the end points of the model $x(t)$ then evolves toward the new equilibrium position. The distance $x(t)$ can be decomposed as $x(t)=x_{f}(t)+x_{s}(t)$, where $x_{f}(t)$ and $x_{s}(t)$ are the time-dependent distances between end points of the two KV elements, representing their strains. The dynamics of $x(t)$ is then obtained by writing the force balance equation for the two KV elements\n\n$$\n\\sigma=k_{f}x_{f}(t)+\u03b7_{f}\\frac{dx_{f}(t)}{dt},\n$$\n\n\n\n$$\n\\sigma=k_{s}x_{s}(t)+\u03b7_{s}\\frac{dx_{s}(t)}{dt},\n$$\n\nWe solve for $x_{f}(t)$ and $x_{s}(t)$ to obtain\n\n$$\nx_{f}(t)=\\frac{\\sigma}{k_{f}}(1\u2212e^{\u2212t/\\tau_{f}})+x_{f}(0)e^{\u2212t/\\tau_{f}},\n$$\n\n\n\n$$\nx_{s}(t)=\\frac{\\sigma}{k_{s}}(1\u2212e^{\u2212t/\\tau_{s}})+x_{s}(0)e^{\u2212t/\\tau_{s}},\n$$\n\nwhere\n\n$$\nx_{f,s}(0)=\\frac{\\sigma(1\u2212\u03ba)}{k_{f,s}},\n$$\n\nand $\u03ba=k/(k+k\u00af)$ is the fraction of the overall model elasticity $k+k\u00af$ destroyed by the ablation. The displacement relative to the initial configuration $\u0394x(t)=x(t)\u2212x(0)$ is therefore\n\n$$\n\u0394x(t)=X_{f}(1\u2212e^{\u2212t/\\tau_{f}})+X_{s}(1\u2212e^{\u2212t/\\tau_{s}}),\n$$\n\nwhere we introduced the long time displacements associated with the two KV elements\n\n$$\nX_{f,s}=\\frac{\\sigma\u03ba}{k_{f,s}}.\n$$\n\nFor simplicity, in the main text we refer to the long time displacements $X_{f}$ and $X_{s}$ of the two KV elements simply as displacements.\n\n### Statistical analysis\n\nStatistical analysis was done using R (R Development Core Team, 2020; RStudio Team, 2020). We first tested normality of the data using the Shapiro\u2013Wilk test. When data were normal, we used Student\u2019s t-test to test statistical significance between two groups and analysis of variance test for multiple groups. When data were not normally distributed, significance was tested using the Mann\u2013Whitney U-test for two groups and Kruskal\u2013Wallis test for multiple groups. Statistical test results are shown on the figure captions.\n",
+      "created_at": "2025-12-04T03:59:11.697208Z"
+    },
+    {
+      "id": "52dab891-d7c7-47bd-a68c-0e2bbd9a3b27",
+      "submission_id": "a78f030e-028f-4105-855c-e82f9433b4eb",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Marcos Nahmad, Center for Research and Advanced Studies (Cinvestav) Mexico\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.85581.sa0](https://doi.org/10.7554/eLife.85581.sa0)\n\nThis valuable study shows that the core PCP pathway, which commonly orients morphogenetic processes in development, does not establish global cues for cellular movements in the Drosophila pupal wing. Using a combination of laser-ablation experiments and mathematical modelling, it provides compelling evidence that the core PCP pathway only affects the fast timescale cellular response, but does not appear to drive overall tissue dynamics. While the signalling pathway guiding this morphogenetic process remains to be elucidated, these relevant findings challenge the role of the core PCP pathway in morphogenesis.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Marcos Nahmad, Center for Research and Advanced Studies (Cinvestav) Mexico\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.85581.sa1](https://doi.org/10.7554/eLife.85581.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Core PCP mutations affect short time mechanical properties but not tissue morphogenesis in the Drosophila pupal wing\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, including Marcos Nahmad as Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Michael Eisen as the Senior Editor. The following individual involved in the review of your submission has agreed to reveal their identity: M. Lisa Manning (Reviewer #3).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1) Please revise the text to be more clear about how you reconcile your observations that PCP mutants have an effect on the local tissue dynamics (e.g., recoil velocity upon laser ablation) but this has no global consequences on wing morphogenesis. In particular, could the local effects explain the subtle, but significant effects on adult wing shapes in these mutants?\n\n2) Please justify your choice of pk30 mutants for most of the analysis, instead of using stbm6 or fmi mutants that completely disturb the core-PCP pathway.\n\n3) Please explain in your rheological model why you believe that the recoil velocity has two phases.\n\n4) Please reconsider the way you plot your data so that readers do not need to extract subtle differences on curves plotted in different graphs with different scales.\n\n4) Please revise the discussion on the ESCA analysis, as reviewers have a hard time following it.\n\nReviewer #1 (Recommendations for the authors):\n\nOverall the manuscript is well written and the results support the authors' conclusions; therefore I am supportive of publication. Here, I list a few comments that will improve the manuscript's readability, but will likely not affect the conclusions of the study:\n\n\u2013 Considering that pk30 mutants maintain the polarity towards the margin i.e., both core-PCP and Fat-PCP remain aligned (Figure S1.1), while stbm6 and fmi mutants completely disturb the core-PCP pathway, why did the authors focus their analysis in the pk30 mutants (line 118)? If the purpose of the study is to examine the perturbations of the core-PCP, why not choose stbm6 or fmi mutants? The authors should justify this further.\n\n\u2013 While it is clear that this study only focuses on the core-PCP pathway, perturbing only this pathway will not eliminate polarity and therefore it is not so surprising that oriented cell rearrangements persist. The authors should discuss which experiments (mutants) they suggest to perturb polarity altogether.\n\n\u2013 The authors chose a specific region of the wing (between veins L3 and L4) to perform their perturbations. The justification is that this is a region that is easy to identify. But, do the results depend on this choice? Isn't the strength of the polarity signal larger closer to the wing margin?\n\n\u2013 Use consistent English spelling throughout the manuscript (e.g., behaviour or behavior lines 169 vs. 171).\n\nReviewer #2 (Recommendations for the authors):\n\nThe authors have done a good job of trying to bring together what appear to be datasets generated over a fairly long period by different authors.\n\nI do have a few issues regarding the presentation and interpretation of the data (specific points noted below). The main concern is that the authors keep flipping between saying core PCP has no effect on wing morphogenesis, to saying it has subtle effects to saying it has effects but they are not statistically significant. This is hard to reconcile with the convincing effect on tissue mechanics reveals by the laser ablation work, and possibly also the changes in adult wing shape and known roles of core PCP in both the wing and other tissues in the fly. Mostly I think it's just a question of careful choice of words and most likely leaving the question of effects of core PCP on morphogenesis open until all the data is considered together in the Discussion e.g. try to stick to observations in the Results and try to only do interpretation in the Discussion.\n\nI also have queries about the rheological model and why the authors believe the recoil has 2 phases based on the data they show, and also about the way developmental timings have been recalibrated.\n\nSpecific points:\n\nThe references on lines 21 and 22 are an eclectic selection. The sentence seems to be about how polarized PCP proteins orient structures in epithelia, but the references include a mix of reviews and papers, some from before the polarization had been reported. For instance, Eaton 1997 was a seminal review that suggested planar polarization of stereocilia might be under the control of planar polarity pathways, but does not report such a result (I think the first papers were Montcouquiol et al. 2003 and Curtin et al. 2003?). It would probably be better for readers if the authors either cited reviews or if they want to cite primary papers, than just the first reports of polarized localization determining the orientation of structures (e.g. I think Usui et al. 1999 is the first in flies? Then Axelrod and Strutt?).\n\nThe references on lines 27 and 28 are mostly referring to Fat-Dachsous while the rest of the paragraph is about \"core\". There are papers about core PCP in flies affecting cell rearrangements/divisions. Segalen et al. 2010 is a good example, but not the first to report core PCP controlling SOP division orientation (Gho and Schweisguth 1998?). Sugimura and Ishihara 2013 report changes in cell rearrangements in the wing of a core PCP mutant. Others (moving away from the wing/notum) might include many papers about ommatidial rotation in the eye, joint formation in the legs, cell rearrangements in the tracheal system (and probably others). A better review of core PCP roles in tissue morphogenesis in flies would put the work in a better context.\n\nIn general, I would recommend thinking carefully about the references in the Introduction so that they are of the most help to readers from outside the field. It is hard to see an organizing principle behind the mixture of reviews from different decades, primary papers (but often not first reports), cloning, or genetic or biochemical characterization studies. As above, I would recommend recent reviews (where available) and primary papers that are the first reports, for each point the authors wish to make.\n\nLine 44 \u2013 Fz is not a cadherin.\n\nFigure S1A -I don't fully agree that 30 hAPF is the \"End of morphogenesis\" as suggested by the figure label. Even if you ignore the emergence of hairs and wing ridges, the epithelium itself will go on expanding and folding in subsequent hours. Similar statements are made on line 73 and on Figure 1.\n\nFigure S1A legend \u2013 do \"tissue flows reorganize Fat PCP\"? My guess is Fat PCP continues to follow the Ds and Fj gradients and its insensitivity to the tissue flows is why it ends up perpendicular to core PCP. Of course, tissue flow might also have an effect but do the authors have evidence for this (I'm not sure Merkel et al. show this?). The statement in the legend is also not the same as what lines 51-52 say, where the message is that Fat PCP remains margin oriented.\n\nLines 66 and 67 \u2013 in normal nomenclature pk30 = pk[30] (i.e. 30 in superscript) and stbm6 = stbm[6], consistent with fmi[frz3]. I think it would be simplest to refer to stbm[6] as stbm and pk[30] as pk after the first definition, in the same way, fmi[frz3] is referred to as fmi, but this is of course up to the authors. As an aside, fmi[frz3] was described as a strong hypomorph in Chae et al. 1999, so it seems unlikely that in frz3/frz3 the \"PCP network is absent\", as stronger phenotypes are seen for frz3/Df, implying some residual activity.\n\nFigure S1.2C \u2013 typo in the first word of the label.\n\nLine 84 \"these subtle changes are not statistically significant\". This all looks reasonable, but possibly the authors need to qualify this by saying something like \"considering the small numbers of wings analyzed\". I appreciate the work involved to get these datasets was enormous, so higher n numbers are not feasible. However, with larger n numbers there might be a difference. The average shear values for all three mutant conditions are lower than wt. Ideally, a power calculation would be done to place a numerical value on the likelihood of the shear being the same in each condition, but again I appreciate this is difficult and possibly not appropriate post hoc.\n\nLine 85 \"also do not show differences\" \u2013 see the previous point. Without stats, you can't say they don't differ, but here it is implied that the data in Figure S1.2C and D have been tested for differences and none was found. This is true for S1.2C with the caveat of small n numbers and no power calculation, but for S1.2D appears to be a judgment made by eye. However, by eye total tissue area at -2h looks lower for pk[3] and stbm[6] than for wt, and at e.g. 6h all 3 mutants show lower cell area changes than wild-type. I think the most the authors can say (unless I've missed something) is that the patterns of tissue behavior look broadly the same for the mutants as for wt, suggesting no gross differences. Note lines 89-90 say \"Again, we find only subtle differences\" which is not the same as no differences.\n\nLines 94-95 and Figure S1.4G \u2013 again I think it is deceptive to put weight on statistics with low n numbers and no power calculation. I'm not confident that you can \"conclude that core PCP does not guide the global patterns of cell dynamics during pupal morphogenesis\". The best that you can conclude is that changes are at best subtle (and in the experiments presented might be due to \"noise\" but could also be due to roles for core PCP in cell behavior). The authors rather undermine themselves by immediately going on to say that there is a reproducible difference in adult wing shape, although admittedly we don't know that this is due to events between 16-32h as the authors note. I think more nuanced conclusions would be better.\n\nLines 115-116 \"cellular dynamics is [are?] basically unperturbed\" is another example of wording that implies the authors think cellular dynamics are perturbed to some extent, but they want to minimize the significance of this observation. Similarly, lines 198-199 \"no significant phenotype\" belies the difficulty in making such an assertion when the genotypes do look different in some aspects and the tests have (apparently) minimal statistical power.\n\nLines 119-120 \"When plotting displacement of the nearest bond to ablation over time, we observe both a fast (<1 s) and a slow (<20 s) regime (Figure 2C).\" I think the authors are saying that their data fits a 2 phase exponential with a fast and slow phase, but I'm a bit nervous about this as the first phase seems to be based on a single data point at 1 sec. I'm not an expert on curve fitting, but only having 1 point to demonstrate the presence of a \"fast\" phase seems a bit unsafe. I couldn't find anything in the manuscript that describes why the authors decided a 2 phase fit was the correct choice. The subsequent model appears to assume 2 phases, but I'm interested to know if you can get just as good a fit with 1 phase and if you build a model with 1 phase does that still show pk30 having a significantly lower displacement over time? I'm concerned that a 1 phase model may have been unnecessarily ruled out.\n\nAppendix 1 \u2013 I understand the issue confronting the authors. Earlier studies from the lab (from Aigouy et al. 2010 onwards) consistently saw peak cell elongation at ~23h, then in Iyer et al. peak elongation appears to be at ~28h (I'm unsure if Iyer et al. comments on this). I have a couple of comments:\n\nLine 519 the statement \"we identified a delay on the onset of pupal wing morphogenesis\" is unclear to me. Do the authors mean that morphogenesis proceeds at a normal rate but just start late (similar to a train being delayed but running at the normal speed), or is everything just happening slower? The curves in panels A and B really look like the latter (e.g. in panel B the same sequence of events in 2016 takes 12h while in 2018 it takes 20h), but the authors seem to be saying it's the former.\n\nThe most obvious explanation would be lower incubation temperature (or possibly nutrition?) which is known to slow the rate of development, at least if it's not background genotype (which I'm assuming it isn't, as I assume the authors are saying all genotypes are now \"delayed\"). If it is a slower rate of development, then the rate of development needs recalibrating, not the reference time.\n\nGiven the prior literature (much of it from the Eaton lab) uses a linear time scheme with 0h at the start of pupal life, I'm unsure why the authors didn't just stick with this scheme and rescale the timings so peak elongation is at 23h? This would make the data much more comparable both internally in the manuscript and to past work.\n\nReviewer #3 (Recommendations for the authors):\n\nWe believe the manuscript is likely ultimately suitable for publication in eLife, but there are a few major comments we would like the authors to address before publication.\n\n1. We find the second paragraph of the discussion confusing. In it, the authors highlight that the difference in the initial recoil velocity between wt and core PCP mutants does not lead to a phenotype in tissue morphogenesis. Then they try to explain why this difference does not generate a global phenotype, but the explanation, \"the proportionality factor can depend on the genotype and can change in time\", is quite unclear.\n\nIn the paragraph that starts with line 153, it seems the authors are saying their data suggests that both $k_f$ and $\\eta_f$ are changing in the pk30 mutant. Is that the \"proportionality factor\" they mean above? If so, why not just come out and say more explicitly that the in the mutants the fast viscosity apparently changes along with $k_f$ so as to make the time scale constant? (As a side note isn't that an interesting coincidence? Would it be interesting/useful to speculate that there might be some sort of feedback loop or mechanical coupling that drives the compensating change in the viscosity?)\n\nAnd we believe the \"change in time\" clause above refers to the paragraph that starts at line 179, which is also confusing (see next comment). But isn't the change in viscosity alone already enough to explain the lack of large-scale phenotype? Do you need this change in time also? Would such a change in time be alone sufficient to explain the lack of a global phenotype?\n\n2. The paragraph starting at line 179 is apparently asking the reader to compare the data for the pk30 mutants in Figure 3B (blue data) to the data for the pk30 mutant in S3.1C (blue line). But it's very difficult to do that, as the axes for the two plots are different, and there are not even units given for the y-axis in Figure 3B. We think we're supposed to see that the blue curves in the two plots have different shapes in time. But that's really difficult to see toggling between them. Would it be possible to show both sets of data on the same plot (perhaps one set rescaled) so that we could directly compare the shapes? Moreover, it would be useful to state something more about the data than \"its different\". It looks like maybe the ESCA data peaks earlier in time than the initial recoil velocity. What does that mean?\n\n3. What is the possible reason for different times for the peaks in anisotropic stress and cell elongation (discussion in the last paragraph of section 2.3)? It seems the response time for the stresses is almost 2 to 4 h.\n\n4. The discussion on ESCA analysis is incomplete. It is not clear how \u03c3/Ks is related to anisotropic ((\u03c3\u00af/2K)) and isotropic stress (\u03c3/K\u00af). The variables K,K\u00af and \u03c3\u00af are not defined. It is mentioned in the caption of Figure 2 that the equations for anisotropic and isotropic stress are on the right side. However, there is no equation in Figure 2F.\n",
+      "created_at": "2025-12-04T03:59:11.697208Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T03:59:11.697208Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T03:59:11.697208Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "0848bb2c-af44-4a87-ae62-e50312445599",
+      "content_id": "1a5ca138-d3fa-4400-acaf-804535e22c50",
+      "claim_id": "C1",
+      "claim": "The Drosophila pupal wing undergoes large-scale tissue flows during pupal stages.",
+      "claim_type": "EXPLICIT",
+      "source": "We study this question using the wing of Drosophila melanogaster, an epithelial tissue that undergoes large-scale tissue flows during pupal stages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the abstract as a characteristic of the model system being studied.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:59:11.697208Z"
+    },
+    {
+      "id": "23bfa37c-24fc-453c-b5b2-ca8751865790",
+      "content_id": "1a5ca138-d3fa-4400-acaf-804535e22c50",
+      "claim_id": "C2",
+      "claim": "Pupal wing morphogenesis involves cellular behaviors that allow relaxation of mechanical tissue stress.",
+      "claim_type": "EXPLICIT",
+      "source": "Previously, we showed that pupal wing morphogenesis involves both cellular behaviors that allow relaxation of mechanical tissue stress, as well as cellular behaviors that appear to be actively patterned (Etournay et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous work by Etournay et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:59:11.697208Z"
+    },
+    {
+      "id": "424f465d-da09-414c-868d-81fe3cf73ff3",
+      "content_id": "1a5ca138-d3fa-4400-acaf-804535e22c50",
+      "claim_id": "C3",
+      "claim": "Pupal wing morphogenesis involves cellular behaviors that appear to be actively patterned.",
+      "claim_type": "EXPLICIT",
+      "source": "Previously, we showed that pupal wing morphogenesis involves both cellular behaviors that allow relaxation of mechanical tissue stress, as well as cellular behaviors that appear to be actively patterned (Etournay et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous work by Etournay et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:59:11.697208Z"
+    },
+    {
+      "id": "0a01b3eb-df53-4691-af57-7d563ba5d44c",
+      "content_id": "1a5ca138-d3fa-4400-acaf-804535e22c50",
+      "claim_id": "C4",
+      "claim": "Active cellular behaviors during pupal wing morphogenesis are not guided by the core planar cell polarity (PCP) pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show that these active cellular behaviors are not guided by the core planar cell polarity (PCP) pathway, a conserved signaling system that guides tissue development in many other contexts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study stated in the abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:59:11.697208Z"
+    },
+    {
+      "id": "4a395a4e-ce45-4100-b8f3-97b2be177c2f",
+      "content_id": "1a5ca138-d3fa-4400-acaf-804535e22c50",
+      "claim_id": "C5",
+      "claim": "There is no significant phenotype on the cellular dynamics underlying pupal morphogenesis in mutants of core PCP.",
+      "claim_type": "EXPLICIT",
+      "source": "We find no significant phenotype on the cellular dynamics underlying pupal morphogenesis in mutants of core PCP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by data presented in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:59:11.697208Z"
+    },
+    {
+      "id": "9f4c33dc-47d3-43f2-acd0-a5fa3718249c",
+      "content_id": "1a5ca138-d3fa-4400-acaf-804535e22c50",
+      "claim_id": "C6",
+      "claim": "Core PCP mutations affect the fast timescale response to laser ablation.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, using laser ablation experiments, coupled with a rheological model to describe the dynamics of the response to laser ablation, we conclude that while core PCP mutations affect the fast timescale response to laser ablation they do not significantly affect overall tissue mechanics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This finding is stated in the abstract and supported by experimental data in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:59:11.697208Z"
+    },
+    {
+      "id": "2ef051f9-fd54-487a-9701-2c25d68441a9",
+      "content_id": "1a5ca138-d3fa-4400-acaf-804535e22c50",
+      "claim_id": "C7",
+      "claim": "Core PCP mutations do not significantly affect overall tissue mechanics.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, using laser ablation experiments, coupled with a rheological model to describe the dynamics of the response to laser ablation, we conclude that while core PCP mutations affect the fast timescale response to laser ablation they do not significantly affect overall tissue mechanics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is stated in the abstract and supported by ESCA data in Figure 2F-F''.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:59:11.697208Z"
+    },
+    {
+      "id": "c4a05e98-674d-46b9-a7b3-76c63328028e",
+      "content_id": "1a5ca138-d3fa-4400-acaf-804535e22c50",
+      "claim_id": "C8",
+      "claim": "Cellular dynamics and tissue shape changes during Drosophila pupal wing morphogenesis do not require core PCP as an orientational guiding cue.",
+      "claim_type": "EXPLICIT",
+      "source": "In conclusion, our work shows that cellular dynamics and tissue shape changes during Drosophila pupal wing morphogenesis do not require core PCP as an orientational guiding cue.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion of the study stated in the abstract.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:59:11.697208Z"
+    },
+    {
+      "id": "3d4852a1-5b40-4708-9f23-c6ff990888aa",
+      "content_id": "1a5ca138-d3fa-4400-acaf-804535e22c50",
+      "claim_id": "C9",
+      "claim": "The core planar cell polarity pathway is composed of a dynamic set of interacting membrane proteins that polarizes intracellularly within the plane of a tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "One conserved chemical signaling pathway that is known to be patterned across tissues is the core planar cell polarity (PCP) pathway, composed of a dynamic set of interacting membrane proteins that polarizes intracellularly within the plane of a tissue.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the core PCP pathway.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:59:11.697208Z"
+    },
+    {
+      "id": "8f84258f-1ba0-4c32-a012-7f78900ae80b",
+      "content_id": "1a5ca138-d3fa-4400-acaf-804535e22c50",
+      "claim_id": "C10",
+      "claim": "Tissue-scale alignment of the core PCP pathway is known to orient cellular structures, such as hairs and cilia.",
+      "claim_type": "EXPLICIT",
+      "source": "Tissue-scale alignment of this pathway is known to orient cellular structures, such as hairs and cilia, and influence dynamic cellular behaviors during morphogenesis, such as cellular movements and cell divisions, through interactions with the cytoskeleton (reviewed in Devenport, 2014; Butler and Wallingford, 2017; Deans, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to review articles.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:59:11.697208Z"
+    },
+    {
+      "id": "a307baf9-2577-45ca-bfc8-ba2d94073358",
+      "content_id": "1a5ca138-d3fa-4400-acaf-804535e22c50",
+      "claim_id": "C11",
+      "claim": "The core PCP pathway influences dynamic cellular behaviors during morphogenesis, such as cellular movements and cell divisions, through interactions with the cytoskeleton.",
+      "claim_type": "EXPLICIT",
+      "source": "Tissue-scale alignment of this pathway is known to orient cellular structures, such as hairs and cilia, and influence dynamic cellular behaviors during morphogenesis, such as cellular movements and cell divisions, through interactions with the cytoskeleton (reviewed in Devenport, 2014; Butler and Wallingford, 2017; Deans, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to review articles.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:59:11.697208Z"
+    },
+    {
+      "id": "3217c9aa-6f29-4735-858e-dae57d700ee0",
+      "content_id": "1a5ca138-d3fa-4400-acaf-804535e22c50",
+      "claim_id": "C12",
+      "claim": "The Drosophila wing is a flat epithelium that can be imaged at high spatial\u2013temporal resolution in vivo during large-scale tissue flows that elongate the wing blade.",
+      "claim_type": "EXPLICIT",
+      "source": "The Drosophila wing is a flat epithelium that can be imaged at high spatial\u2013temporal resolution in vivo during large-scale tissue flows that elongate the wing blade (Aigouy et al., 2010; Etournay et al., 2015; Guirao et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:59:11.697208Z"
+    },
+    {
+      "id": "d374361e-da73-44e8-9d76-0b8eb0e6d410",
+      "content_id": "1a5ca138-d3fa-4400-acaf-804535e22c50",
+      "claim_id": "C13",
+      "claim": "During the pupal stage, the proximal hinge region of the wing contracts and pulls on the blade region, generating mechanical stress.",
+      "claim_type": "EXPLICIT",
+      "source": "During the pupal stage, the proximal hinge region of the wing contracts and pulls on the blade region, generating mechanical stress that is counteracted by marginal connections mediated by the extracellular matrix protein Dumpy (Etournay et al., 2015; Ray et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:59:11.697208Z"
+    },
+    {
+      "id": "729efd67-a33e-464b-b614-d7543d9c266d",
+      "content_id": "1a5ca138-d3fa-4400-acaf-804535e22c50",
+      "claim_id": "C14",
+      "claim": "Mechanical stress in the pupal wing is counteracted by marginal connections mediated by the extracellular matrix protein Dumpy.",
+      "claim_type": "EXPLICIT",
+      "source": "During the pupal stage, the proximal hinge region of the wing contracts and pulls on the blade region, generating mechanical stress that is counteracted by marginal connections mediated by the extracellular matrix protein Dumpy (Etournay et al., 2015; Ray et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:59:11.697208Z"
+    },
+    {
+      "id": "3b0d50ef-f107-476a-9ce0-e1913246206b",
+      "content_id": "1a5ca138-d3fa-4400-acaf-804535e22c50",
+      "claim_id": "C15",
+      "claim": "The pupal wing tissue elongates along the proximal\u2013distal (PD) axis and narrows along the anterior\u2013posterior (AP) axis to resemble the adult wing.",
+      "claim_type": "EXPLICIT",
+      "source": "As a consequence, the tissue elongates along the proximal\u2013distal (PD) axis and narrows along the anterior\u2013posterior (AP) axis to resemble the adult wing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the morphogenetic process being studied.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:59:11.697208Z"
+    },
+    {
+      "id": "81f15624-844d-4c6e-965a-930c5d2e986e",
+      "content_id": "1a5ca138-d3fa-4400-acaf-804535e22c50",
+      "claim_id": "C16",
+      "claim": "Both cell elongation changes and cell rearrangements are important for tissue deformation in the pupal wing.",
+      "claim_type": "EXPLICIT",
+      "source": "Both cell elongation changes and cell rearrangements are important for tissue deformation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about the system.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:59:11.697208Z"
+    },
+    {
+      "id": "8137e0cd-5422-4d87-9ae5-584b42249c2c",
+      "content_id": "1a5ca138-d3fa-4400-acaf-804535e22c50",
+      "claim_id": "C17",
+      "claim": "Mechanical stress induces cell behaviors in the pupal wing to some extent.",
+      "claim_type": "EXPLICIT",
+      "source": "To some extent, mechanical stress induces these cell behaviors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about the system.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:59:11.697208Z"
+    },
+    {
+      "id": "e70d6e3d-ff1b-4302-842b-8a8ac0beca50",
+      "content_id": "1a5ca138-d3fa-4400-acaf-804535e22c50",
+      "claim_id": "C18",
+      "claim": "The reduction of mechanical stress in a dumpy mutant does not completely eliminate cell rearrangements.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the reduction of mechanical stress in a dumpy mutant does not completely eliminate cell rearrangements, suggesting that there could be other patterning cues that drive oriented cell rearrangements (Etournay et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:59:11.697208Z"
+    },
+    {
+      "id": "c916ce69-0532-42c2-8222-39028b9a71bd",
+      "content_id": "1a5ca138-d3fa-4400-acaf-804535e22c50",
+      "claim_id": "C19",
+      "claim": "There could be other patterning cues that drive oriented cell rearrangements in the pupal wing.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the reduction of mechanical stress in a dumpy mutant does not completely eliminate cell rearrangements, suggesting that there could be other patterning cues that drive oriented cell rearrangements (Etournay et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation based on previous findings cited from Etournay et al., 2015.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:59:11.697208Z"
+    },
+    {
+      "id": "016c8494-269b-4851-9687-9772fc93a882",
+      "content_id": "1a5ca138-d3fa-4400-acaf-804535e22c50",
+      "claim_id": "C20",
+      "claim": "In the Drosophila wing, there are two PCP systems termed Fat and core PCP.",
+      "claim_type": "EXPLICIT",
+      "source": "In the Drosophila wing, there are two PCP systems termed Fat and core PCP (Matis and Axelrod, 2013; Adler, 2012; Devenport, 2014; Butler and Wallingford, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:59:11.697208Z"
+    },
+    {
+      "id": "2e711b12-da04-4c01-af0c-053a51311b56",
+      "content_id": "1a5ca138-d3fa-4400-acaf-804535e22c50",
+      "claim_id": "C21",
+      "claim": "The Fat PCP system consists of two cadherins Fat and Dachsous, a cytoplasmic kinase Four-jointed, and an atypical myosin Dachs.",
+      "claim_type": "EXPLICIT",
+      "source": "The Fat PCP system consists of two cadherins Fat and Dachsous, a cytoplasmic kinase Four-jointed, and an atypical myosin Dachs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the Fat PCP system.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:59:11.697208Z"
+    },
+    {
+      "id": "77902684-078e-4d2e-b79a-855d5642bc9b",
+      "content_id": "1a5ca138-d3fa-4400-acaf-804535e22c50",
+      "claim_id": "C22",
+      "claim": "The core PCP system is composed of two transmembrane proteins Frizzled (Fz) and Flamingo or Starry night (Fmi, Stan), the transmembrane protein Strabismus or Van Gogh (Stbm, Vang), and the cytosolic components Dishevelled (Dsh), Prickle (Pk), and Diego (Dgo).",
+      "claim_type": "EXPLICIT",
+      "source": "The core PCP system is composed of two transmembrane proteins Frizzled (Fz) and Flamingo or Starry night (Fmi, Stan), the transmembrane protein Strabismus or Van Gogh (Stbm, Vang), and the cytosolic components Dishevelled (Dsh), Prickle (Pk), and Diego (Dgo).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the core PCP system.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:59:11.697208Z"
+    },
+    {
+      "id": "1ce76504-f31d-4f75-99da-faf9877cacdc",
+      "content_id": "1a5ca138-d3fa-4400-acaf-804535e22c50",
+      "claim_id": "C23",
+      "claim": "Tissue-scale patterns of PCP emerge during larval stages and then are dynamically reoriented during pupal tissue flows.",
+      "claim_type": "EXPLICIT",
+      "source": "Our group has shown that tissue-scale patterns of PCP emerge during larval stages and then are dynamically reoriented during pupal tissue flows (Sagner et al., 2012; Aigouy et al., 2010; Merkel et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous work from the authors' group.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:59:11.697208Z"
+    },
+    {
+      "id": "85b921c1-66ad-4f8a-83e7-d838d15189e2",
+      "content_id": "1a5ca138-d3fa-4400-acaf-804535e22c50",
+      "claim_id": "C24",
+      "claim": "At the onset of blade elongation flows, both core and Fat PCP systems are margin oriented.",
+      "claim_type": "EXPLICIT",
+      "source": "At the onset of blade elongation flows, both systems are margin oriented, however as morphogenesis proceeds, core PCP reorients to point along the PD axis, whereas Fat PCP remains margin oriented until very late, when it reorients toward veins (Figure 1\u2014figure supplement 1A, B; Merkel et al., 2014).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by citation to previous work and reference to Figure 1\u2014figure supplement 1A, B.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:59:11.697208Z"
+    },
+    {
+      "id": "578f3977-5951-4fe7-9a76-3a7257636483",
+      "content_id": "1a5ca138-d3fa-4400-acaf-804535e22c50",
+      "claim_id": "C25",
+      "claim": "As morphogenesis proceeds, core PCP reorients to point along the PD axis.",
+      "claim_type": "EXPLICIT",
+      "source": "At the onset of blade elongation flows, both systems are margin oriented, however as morphogenesis proceeds, core PCP reorients to point along the PD axis, whereas Fat PCP remains margin oriented until very late, when it reorients toward veins (Figure 1\u2014figure supplement 1A, B; Merkel et al., 2014).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by citation to previous work and reference to Figure 1\u2014figure supplement 1A, B.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:59:11.697208Z"
+    },
+    {
+      "id": "44286b5d-e1cd-42c8-a01f-0c1c1607dc6f",
+      "content_id": "1a5ca138-d3fa-4400-acaf-804535e22c50",
+      "claim_id": "C26",
+      "claim": "Fat PCP remains margin oriented until very late, when it reorients toward veins.",
+      "claim_type": "EXPLICIT",
+      "source": "At the onset of blade elongation flows, both systems are margin oriented, however as morphogenesis proceeds, core PCP reorients to point along the PD axis, whereas Fat PCP remains margin oriented until very late, when it reorients toward veins (Figure 1\u2014figure supplement 1A, B; Merkel et al., 2014).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by citation to previous work and reference to Figure 1\u2014figure supplement 1A, B.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:59:11.697208Z"
+    },
+    {
+      "id": "78e54fc3-d5e7-4779-adbc-b0272a899243",
+      "content_id": "1a5ca138-d3fa-4400-acaf-804535e22c50",
+      "claim_id": "C27",
+      "claim": "The core PCP pathway has been shown to influence hexagonal cell packing in the late pupal wing.",
+      "claim_type": "EXPLICIT",
+      "source": "These include hexagonal cell packing in the late pupal wing (Classen et al., 2005; Sugimura et al., 2016), as well as patterning of ommatidial clusters in the developing eye (Zheng et al., 1995; Jenny, 2010), orientation of cell division in sensory organ precursors (Gho and Schweisguth, 1998), formation of joints in the legs (Capilla et al., 2012), and regulation of tracheal tube length (Chung et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:59:11.697208Z"
+    },
+    {
+      "id": "c7d59692-e1d3-4b6d-881f-388c348864bb",
+      "content_id": "1a5ca138-d3fa-4400-acaf-804535e22c50",
+      "claim_id": "C28",
+      "claim": "The core PCP pathway influences patterning of ommatidial clusters in the developing eye.",
+      "claim_type": "EXPLICIT",
+      "source": "These include hexagonal cell packing in the late pupal wing (Classen et al., 2005; Sugimura et al., 2016), as well as patterning of ommatidial clusters in the developing eye (Zheng et al., 1995; Jenny, 2010), orientation of cell division in sensory organ precursors (Gho and Schweisguth, 1998), formation of joints in the legs (Capilla et al., 2012), and regulation of tracheal tube length (Chung et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:59:11.697208Z"
+    },
+    {
+      "id": "faeddf75-1c23-49ee-a61f-4852510d7c34",
+      "content_id": "1a5ca138-d3fa-4400-acaf-804535e22c50",
+      "claim_id": "C29",
+      "claim": "The core PCP pathway influences orientation of cell division in sensory organ precursors.",
+      "claim_type": "EXPLICIT",
+      "source": "These include hexagonal cell packing in the late pupal wing (Classen et al., 2005; Sugimura et al., 2016), as well as patterning of ommatidial clusters in the developing eye (Zheng et al., 1995; Jenny, 2010), orientation of cell division in sensory organ precursors (Gho and Schweisguth, 1998), formation of joints in the legs (Capilla et al., 2012), and regulation of tracheal tube length (Chung et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:59:11.697208Z"
+    },
+    {
+      "id": "4cdaf721-884f-46ea-abba-dae75bfcf614",
+      "content_id": "1a5ca138-d3fa-4400-acaf-804535e22c50",
+      "claim_id": "C30",
+      "claim": "The core PCP pathway influences formation of joints in the legs.",
+      "claim_type": "EXPLICIT",
+      "source": "These include hexagonal cell packing in the late pupal wing (Classen et al., 2005; Sugimura et al., 2016), as well as patterning of ommatidial clusters in the developing eye (Zheng et al., 1995; Jenny, 2010), orientation of cell division in sensory organ precursors (Gho and Schweisguth, 1998), formation of joints in the legs (Capilla et al., 2012), and regulation of tracheal tube length (Chung et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:59:11.697208Z"
+    },
+    {
+      "id": "9f4a235d-bee4-437c-aafc-6bcae8f148b9",
+      "content_id": "1a5ca138-d3fa-4400-acaf-804535e22c50",
+      "claim_id": "C31",
+      "claim": "The core PCP pathway influences regulation of tracheal tube length.",
+      "claim_type": "EXPLICIT",
+      "source": "These include hexagonal cell packing in the late pupal wing (Classen et al., 2005; Sugimura et al., 2016), as well as patterning of ommatidial clusters in the developing eye (Zheng et al., 1995; Jenny, 2010), orientation of cell division in sensory organ precursors (Gho and Schweisguth, 1998), formation of joints in the legs (Capilla et al., 2012), and regulation of tracheal tube length (Chung et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:59:11.697208Z"
+    },
+    {
+      "id": "998640e1-d910-4111-b47f-a7198d656d9a",
+      "content_id": "1a5ca138-d3fa-4400-acaf-804535e22c50",
+      "claim_id": "C32",
+      "claim": "Core PCP may act in concert with Nemo kinase to regulate cell rearrangements in the eye.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent studies suggest, however, that core PCP may act in concert with Nemo kinase to regulate cell rearrangements in the eye (Mirkovic et al., 2011; Founounou et al., 2021) and with the Drosophila NuMA ortholog Mud to orient cell division orientation in the sensory organ precursors (S\u00e9galen et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to recent studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:59:11.697208Z"
+    },
+    {
+      "id": "16aa5acf-e314-4abd-872c-9f074a60dde1",
+      "content_id": "1a5ca138-d3fa-4400-acaf-804535e22c50",
+      "claim_id": "C33",
+      "claim": "Core PCP may act with the Drosophila NuMA ortholog Mud to orient cell division orientation in the sensory organ precursors.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent studies suggest, however, that core PCP may act in concert with Nemo kinase to regulate cell rearrangements in the eye (Mirkovic et al., 2011; Founounou et al., 2021) and with the Drosophila NuMA ortholog Mud to orient cell division orientation in the sensory organ precursors (S\u00e9galen et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to recent studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:59:11.697208Z"
+    },
+    {
+      "id": "aa564ebd-7922-4691-a7c9-7e4a1b9485ca",
+      "content_id": "1a5ca138-d3fa-4400-acaf-804535e22c50",
+      "claim_id": "C34",
+      "claim": "In pk mutant, the core and Fat PCP systems remain aligned together toward the margin and the magnitude of Stbm polarity is reduced.",
+      "claim_type": "EXPLICIT",
+      "source": "In pk, the core and Fat PCP systems remain aligned together toward the margin and the magnitude of Stbm polarity is reduced (Merkel et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:59:11.697208Z"
+    },
+    {
+      "id": "24204a0e-e858-45d0-9815-8cc06e2a0de4",
+      "content_id": "1a5ca138-d3fa-4400-acaf-804535e22c50",
+      "claim_id": "C35",
+      "claim": "The mutants stbm and fmi are strong hypomorphs, where the core PCP network is strongly reduced.",
+      "claim_type": "EXPLICIT",
+      "source": "The mutants stbm and fmi are strong hypomorphs, where the core PCP network is strongly reduced (Figure 1\u2014figure supplement 1B; Merkel et al., 2014).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by citation to previous work and reference to Figure 1\u2014figure supplement 1B.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:59:11.697208Z"
+    },
+    {
+      "id": "283f40b8-5f23-458a-853b-f877a7f3b40c",
+      "content_id": "1a5ca138-d3fa-4400-acaf-804535e22c50",
+      "claim_id": "C36",
+      "claim": "In wt, the wing blade elongates along the PD axis.",
+      "claim_type": "EXPLICIT",
+      "source": "In wt, the wing blade elongates along the PD axis (blue line in Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:59:11.697208Z"
+    },
+    {
+      "id": "d2fb244c-c03a-4171-b7bd-c4b0ecccd820",
+      "content_id": "1a5ca138-d3fa-4400-acaf-804535e22c50",
+      "claim_id": "C37",
+      "claim": "In wt, cells first elongate along the PD axis and then relax to more isotropic shapes.",
+      "claim_type": "EXPLICIT",
+      "source": "Cells first elongate along the PD axis and then relax to more isotropic shapes (green line in Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:59:11.697208Z"
+    },
+    {
+      "id": "23de9532-287e-4636-8b12-2cf5c0c0cd1c",
+      "content_id": "1a5ca138-d3fa-4400-acaf-804535e22c50",
+      "claim_id": "C38",
+      "claim": "In wt, cell rearrangements initially contribute to AP deformation, before turning around to contribute to PD deformation.",
+      "claim_type": "EXPLICIT",
+      "source": "Cell rearrangements, however, go the opposite direction, initially contributing to AP deformation, before turning around to contribute to PD deformation (magenta line in Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:59:11.697208Z"
+    },
+    {
+      "id": "00551e63-7d99-4b9c-97dc-9a1f169cffce",
+      "content_id": "1a5ca138-d3fa-4400-acaf-804535e22c50",
+      "claim_id": "C39",
+      "claim": "In core PCP mutants, the dynamics of tissue shear, cell elongation changes, and cell rearrangements, when averaged across the entire blade, occur normally.",
+      "claim_type": "EXPLICIT",
+      "source": "In core PCP mutants, we find that the dynamics of tissue shear, cell elongation changes, and cell rearrangements, when averaged across the entire blade, occur normally (Figure 1D\u2013D\u2032\u2032\u2032).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 1D\u2013D\u2032\u2032\u2032.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:59:11.697208Z"
+    },
+    {
+      "id": "08e2b6c0-820c-43aa-8e00-67d9bb86b353",
+      "content_id": "1a5ca138-d3fa-4400-acaf-804535e22c50",
+      "claim_id": "C40",
+      "claim": "By the end of the process, only slightly lower total shear appears to occur in the core PCP mutants, caused by slightly less cell rearrangements, but these subtle changes are not statistically significant.",
+      "claim_type": "EXPLICIT",
+      "source": "We observe that by the end of the process, only slightly lower total shear appears to occur in the core PCP mutants, caused by slightly less cell rearrangements, but these subtle changes are not statistically significant (Figure 1\u2014figure supplement 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by statistical analysis shown in Figure 1\u2014figure supplement 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:59:11.697208Z"
+    },
+    {
+      "id": "2ed25256-6c48-4377-b52d-4d4f5ec9c5be",
+      "content_id": "1a5ca138-d3fa-4400-acaf-804535e22c50",
+      "claim_id": "C41",
+      "claim": "The cellular dynamics contributing to isotropic tissue deformation are broadly the same between wt and core PCP mutant tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "The cellular dynamics contributing to isotropic tissue deformation are also broadly the same between wt and core PCP mutant tissues (Figure 1\u2014figure supplement 2D, E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 1\u2014figure supplement 2D, E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:59:11.697208Z"
+    },
+    {
+      "id": "10a83fc4-4245-46c6-abf5-034b390a5694",
+      "content_id": "1a5ca138-d3fa-4400-acaf-804535e22c50",
+      "claim_id": "C42",
+      "claim": "Core PCP is not required to determine the global patterns of cell dynamics during blade elongation flows.",
+      "claim_type": "EXPLICIT",
+      "source": "From this analysis, we conclude that core PCP is not required to determine the global patterns of cell dynamics during blade elongation flows.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the data analysis presented in Figure 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:59:11.697208Z"
+    },
+    {
+      "id": "391b4860-d64a-4371-97ec-895e2ace01e1",
+      "content_id": "1a5ca138-d3fa-4400-acaf-804535e22c50",
+      "claim_id": "C43",
+      "claim": "pk and stbm (but not fmi) mutant wings are slightly rounder and wider than wt.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, core PCP mutants do have a subtle but significant phenotype in the adult wing shape: pk and stbm (but not fmi) mutant wings are slightly rounder and wider than wt (Figure 1\u2014figure supplement 5I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 1\u2014figure supplement 5I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:59:11.697208Z"
+    },
+    {
+      "id": "713fae03-2d6d-4d05-a98e-0235d2862702",
+      "content_id": "1a5ca138-d3fa-4400-acaf-804535e22c50",
+      "claim_id": "C44",
+      "claim": "Core PCP mutants have significantly lower initial recoil velocity upon laser ablation compared to wt at -8 hRPCE.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that core PCP mutants have significantly lower initial recoil velocity (Figure 2B, Figure 2\u2014figure supplement 1A), suggesting that there is a mechanical defect in these mutants.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 2B and Figure 2\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:59:11.697208Z"
+    },
+    {
+      "id": "d9d31991-5891-4b3c-87e1-67bfa69dec1b",
+      "content_id": "1a5ca138-d3fa-4400-acaf-804535e22c50",
+      "claim_id": "C45",
+      "claim": "A single exponential relaxation cannot account for the observed behavior of displacement after laser ablation.",
+      "claim_type": "EXPLICIT",
+      "source": "When plotting displacement of the nearest bond to ablation over time, we realized that a single exponential relaxation cannot account for the observed behavior (Figure 2\u2014figure supplement 1B, right).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 2\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:59:11.697208Z"
+    },
+    {
+      "id": "37b2eae5-4ccc-4a6e-bf98-acd99e6481aa",
+      "content_id": "1a5ca138-d3fa-4400-acaf-804535e22c50",
+      "claim_id": "C46",
+      "claim": "A good fit of the displacement data is obtained by introducing a second relaxation timescale.",
+      "claim_type": "EXPLICIT",
+      "source": "We obtained a good fit of the data by introducing a second relaxation timescale (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:59:11.697208Z"
+    },
+    {
+      "id": "1a31d90f-5547-49d0-80ee-23d5685a77b8",
+      "content_id": "1a5ca138-d3fa-4400-acaf-804535e22c50",
+      "claim_id": "C47",
+      "claim": "The slow timescale accounts for most of the timecourse of displacement changes, but the fast timescale is required to account for first 5\u201310 datapoints.",
+      "claim_type": "EXPLICIT",
+      "source": "The slow timescale (\u223c20 s) accounts for most of the timecourse of displacement changes, but the fast timescale (<1 s) is required to account for first 5\u201310 datapoints, see Figure 2\u2014figure supplement 1B, left.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 2\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:59:11.697208Z"
+    },
+    {
+      "id": "6c113bce-274e-4fe6-950a-fd78ee230e03",
+      "content_id": "1a5ca138-d3fa-4400-acaf-804535e22c50",
+      "claim_id": "C49",
+      "claim": "Using ESCA, there is no significant difference between wt and pk mutants in anisotropic and isotropic stress magnitudes at -8 hRPCE.",
+      "claim_type": "EXPLICIT",
+      "source": "Using ESCA, we find no significant difference between wt and pk mutants in anisotropic and isotropic stress magnitudes, nor in the ratio of elastic constants (Figure 2F\u2013F\u2033 and Figure 2\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 2F\u2013F\u2033 and Figure 2\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:59:11.697208Z"
+    },
+    {
+      "id": "06fb5a73-90d0-4496-a092-22e8e807910d",
+      "content_id": "1a5ca138-d3fa-4400-acaf-804535e22c50",
+      "claim_id": "C50",
+      "claim": "Using ESCA, there is no significant difference between wt and pk mutants in the ratio of elastic constants at -8 hRPCE.",
+      "claim_type": "EXPLICIT",
+      "source": "Using ESCA, we find no significant difference between wt and pk mutants in anisotropic and isotropic stress magnitudes, nor in the ratio of elastic constants (Figure 2F\u2013F\u2033 and Figure 2\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 2F\u2013F\u2033 and Figure 2\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:59:11.697208Z"
+    },
+    {
+      "id": "2aa53f0b-8f46-42aa-8f98-198c40bee2d3",
+      "content_id": "1a5ca138-d3fa-4400-acaf-804535e22c50",
+      "claim_id": "C52",
+      "claim": "Only the short-time response to the ablation, and not the tissue stress, is affected in the pk mutant.",
+      "claim_type": "EXPLICIT",
+      "source": "The conclusion that only the short-time response to the ablation, and not the tissue stress, is affected in the pk mutant is consistent with the lack of a clear phenotype in the large-scale tissue flows (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion drawn from the combined analysis of rheological model and tissue flow data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:59:11.697208Z"
+    },
+    {
+      "id": "eff02cb2-3a34-4b9c-8af9-8990a586ad3d",
+      "content_id": "1a5ca138-d3fa-4400-acaf-804535e22c50",
+      "claim_id": "C53",
+      "claim": "The initial recoil velocity along the PD axis peaks at \u22128 hRPCE before declining again by 4 hRPCE.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that the initial recoil velocity along the PD axis peaks at \u22128 hRPCE before declining again by 4 hRPCE (Figure 3A), consistent with previous work (Iyer et al., 2019).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 3A and citation to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:59:11.697208Z"
+    },
+    {
+      "id": "70b2206b-145e-4cfb-9388-11addec28678",
+      "content_id": "1a5ca138-d3fa-4400-acaf-804535e22c50",
+      "claim_id": "C54",
+      "claim": "The behavior of the initial recoil velocity in the pk mutant is qualitatively similar throughout blade elongation flows, however, with significantly lower magnitude than wt.",
+      "claim_type": "EXPLICIT",
+      "source": "The behavior of the initial recoil velocity in the pk mutant is qualitatively similar throughout blade elongation flows, however, with significantly lower magnitude than wt (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:59:11.697208Z"
+    },
+    {
+      "id": "cac2ea7e-198a-4547-bba3-95f017f7376c",
+      "content_id": "1a5ca138-d3fa-4400-acaf-804535e22c50",
+      "claim_id": "C63",
+      "claim": "The difference in timing of the peaks in stress and cell elongation indicate that the active stresses change over time.",
+      "claim_type": "EXPLICIT",
+      "source": "The difference in timing of the peaks in stress and cell elongation indicate that the active stresses change over time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the observation of different peak times for stress and cell elongation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:59:11.697208Z"
+    },
+    {
+      "id": "60da0212-8ca1-48b5-b697-dc7783e0d983",
+      "content_id": "1a5ca138-d3fa-4400-acaf-804535e22c50",
+      "claim_id": "C64",
+      "claim": "There are no differences between wt and core PCP in the peak of cell elongation.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we observe no differences between wt and core PCP in the peak of cell elongation (Figure 3D, Figure 3\u2014figure supplement 2E), showing that core PCP also does not affect active anisotropic stresses underlying the dynamics of cell elongation during blade elongation flows.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 3D and Figure 3\u2014figure supplement 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:59:11.697208Z"
+    },
+    {
+      "id": "fe473684-d50b-40f9-9efe-838d3e973e96",
+      "content_id": "1a5ca138-d3fa-4400-acaf-804535e22c50",
+      "claim_id": "C65",
+      "claim": "Core PCP does not affect active anisotropic stresses underlying the dynamics of cell elongation during blade elongation flows.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we observe no differences between wt and core PCP in the peak of cell elongation (Figure 3D, Figure 3\u2014figure supplement 2E), showing that core PCP also does not affect active anisotropic stresses underlying the dynamics of cell elongation during blade elongation flows.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion drawn from the observation that cell elongation peaks are similar in wt and core PCP mutants.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:59:11.697208Z"
+    },
+    {
+      "id": "ad165e55-830c-4afd-99ce-6f8f94a44df8",
+      "content_id": "1a5ca138-d3fa-4400-acaf-804535e22c50",
+      "claim_id": "C66",
+      "claim": "An extensive analysis of core PCP mutants shows no significant phenotype in pupal wing morphogenesis during the blade elongation flows.",
+      "claim_type": "EXPLICIT",
+      "source": "An extensive analysis of core PCP mutants shows no significant phenotype in pupal wing morphogenesis during the blade elongation flows.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement of the findings presented in the Discussion.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:59:11.697208Z"
+    },
+    {
+      "id": "ec799032-875a-489e-bbbc-4c65405f8e01",
+      "content_id": "1a5ca138-d3fa-4400-acaf-804535e22c50",
+      "claim_id": "C67",
+      "claim": "There are no significant differences in overall tissue shape change in core PCP mutants compared to wt.",
+      "claim_type": "EXPLICIT",
+      "source": "We find no significant differences in overall tissue shape change, nor in the pattern or dynamics of underlying cellular contributions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement of the findings presented in the Discussion.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:59:11.697208Z"
+    },
+    {
+      "id": "47757918-74c7-4c2c-9123-1e875ad0436d",
+      "content_id": "1a5ca138-d3fa-4400-acaf-804535e22c50",
+      "claim_id": "C68",
+      "claim": "There are no significant differences in the pattern or dynamics of underlying cellular contributions in core PCP mutants compared to wt.",
+      "claim_type": "EXPLICIT",
+      "source": "We find no significant differences in overall tissue shape change, nor in the pattern or dynamics of underlying cellular contributions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement of the findings presented in the Discussion.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:59:11.697208Z"
+    },
+    {
+      "id": "7fb8515f-7b00-43e0-b124-2dc7c3c59692",
+      "content_id": "1a5ca138-d3fa-4400-acaf-804535e22c50",
+      "claim_id": "C69",
+      "claim": "There are no significant differences in tissue mechanical stress in core PCP mutants compared to wt.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we found no significant differences in tissue mechanical stress or in cell elongation over time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement of the findings presented in the Discussion.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:59:11.697208Z"
+    },
+    {
+      "id": "bd63e8d7-e424-47b8-893b-82a9a5744b7e",
+      "content_id": "1a5ca138-d3fa-4400-acaf-804535e22c50",
+      "claim_id": "C70",
+      "claim": "There are no significant differences in cell elongation over time in core PCP mutants compared to wt.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we found no significant differences in tissue mechanical stress or in cell elongation over time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement of the findings presented in the Discussion.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:59:11.697208Z"
+    },
+    {
+      "id": "38122e6f-2d6f-426e-8c77-ac8b041f361f",
+      "content_id": "1a5ca138-d3fa-4400-acaf-804535e22c50",
+      "claim_id": "C74",
+      "claim": "Processes that react on timescales <1 s to a laser ablation could be related to cortical mechanics of cell bonds or possibly changes in cell hydraulics.",
+      "claim_type": "EXPLICIT",
+      "source": "We hypothesize that processes that react on timescaless <1 s to a laser ablation could be related to cortical mechanics of cell bonds or possibly changes in cell hydraulics, and it is unclear how core PCP would affect these processes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about the biophysical nature of the fast response.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:59:11.697208Z"
+    },
+    {
+      "id": "0c7fd927-abad-471b-bb23-0e0a449b104a",
+      "content_id": "1a5ca138-d3fa-4400-acaf-804535e22c50",
+      "claim_id": "C75",
+      "claim": "Initial recoil velocity after a laser ablation is often used a proxy for tissue mechanical stresses.",
+      "claim_type": "EXPLICIT",
+      "source": "Initial recoil velocity after a laser ablation is often used a proxy for tissue mechanical stresses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about common practice in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:59:11.697208Z"
+    },
+    {
+      "id": "f864f811-ebd4-48bf-bb1c-a74c61cb9bf4",
+      "content_id": "1a5ca138-d3fa-4400-acaf-804535e22c50",
+      "claim_id": "C76",
+      "claim": "Initial recoil velocity is influenced by differences in mechanics on small scales that are not necessarily related to differences in overall tissue stress.",
+      "claim_type": "EXPLICIT",
+      "source": "However, our results highlight a limitation of this approach for looking at how stress changes in different genotypes, as here we show how initial recoil velocity is influenced by differences in mechanics on small scales that are not necessarily related to differences in overall tissue stress.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the findings of this study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:59:11.697208Z"
+    },
+    {
+      "id": "a7f9f831-aed9-402d-bf1e-5bca220cb8a9",
+      "content_id": "1a5ca138-d3fa-4400-acaf-804535e22c50",
+      "claim_id": "C77",
+      "claim": "Core PCP might still affect later stages of wing development.",
+      "claim_type": "EXPLICIT",
+      "source": "While we have shown that core PCP is not required to organize the dynamic patterns of cellular events underlying blade elongation flows, it might still affect later stages of wing development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about potential roles of core PCP not examined in this study.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:59:11.697208Z"
+    },
+    {
+      "id": "21213144-d083-4deb-9588-eccf00aa4949",
+      "content_id": "1a5ca138-d3fa-4400-acaf-804535e22c50",
+      "claim_id": "C78",
+      "claim": "There may still be other patterning systems acting redundantly or independently with core PCP.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, there may still be other patterning systems acting redundantly or independently with core PCP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about potential compensatory mechanisms.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:59:11.697208Z"
+    },
+    {
+      "id": "6ca1519b-6219-4147-aea9-2aebe1054108",
+      "content_id": "1a5ca138-d3fa-4400-acaf-804535e22c50",
+      "claim_id": "C79",
+      "claim": "The Fat PCP system and Toll-like receptors have been shown to influence the orientation of cellular rearrangements and cell divisions in other contexts.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the Fat PCP system and Toll-like receptors have been shown to influence the orientation of cellular rearrangements and cell divisions in other contexts (Bosveld et al., 2012; Mao et al., 2006; Par\u00e9 et al., 2014; Lavalou et al., 2021, reviewed in Umetsu, 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:59:11.697208Z"
+    },
+    {
+      "id": "1a5a080d-7311-4f2b-8bb7-77061fd84fe6",
+      "content_id": "1a5ca138-d3fa-4400-acaf-804535e22c50",
+      "claim_id": "C80",
+      "claim": "Anisotropic mechanical stress induced by hinge contraction could itself provide a polarity cue through mechano-sensitive activity of the cytoskeleton.",
+      "claim_type": "EXPLICIT",
+      "source": "Alternatively, anisotropic mechanical stress induced by hinge contraction could itself provide a polarity cue through mechano-sensitive activity of the cytoskeleton.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about an alternative mechanism for polarity.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:59:11.697208Z"
+    },
+    {
+      "id": "64b3d4fd-a4af-4ec1-8b8b-99bce79b4a08",
+      "content_id": "1a5ca138-d3fa-4400-acaf-804535e22c50",
+      "claim_id": "C81",
+      "claim": "Cell polarity that drives the patterning of cell shape and mechanical stress in the larval wing disc contains a mechano-sensitive component.",
+      "claim_type": "EXPLICIT",
+      "source": "Our recent work in the larval wing disc shows that the cell polarity that drives the patterning of cell shape and mechanical stress contains a mechano-sensitive component (Dye et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to recent work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:59:11.697208Z"
+    },
+    {
+      "id": "8a664958-3ded-41af-85c2-370992dee413",
+      "content_id": "1a5ca138-d3fa-4400-acaf-804535e22c50",
+      "claim_id": "C82",
+      "claim": "Active cellular stresses that are relevant for pupal wing morphogenesis change in time.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show a detailed analysis of tissues stress dynamics and cell elongation in the pupal wing revealing that the active cellular stresses that are relevant for pupal wing morphogenesis (Etournay et al., 2015) change in time (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 3 and citation to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:59:11.697208Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "65858a5d-7b41-44a4-97fb-6b5e44f939b5",
+      "content_id": "1a5ca138-d3fa-4400-acaf-804535e22c50",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Core PCP is not required for normal cellular dynamics during pupal wing morphogenesis. Analysis of tissue shear, cell elongation changes, and cell rearrangements in pk, stbm, and fmi mutants showed no significant differences from wild-type when averaged across the blade, with only subtle, statistically non-significant reductions in total shear by the end of the process.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C5, C39-C42, and C66-C68 collectively demonstrate that core PCP mutants exhibit normal cellular dynamics during blade elongation flows. The data in Figure 1D-D''' show quantitatively similar patterns of tissue shear, cell elongation, and cell rearrangements across all genotypes, with statistical analysis (Figure 1\u2014figure supplement 2C) confirming non-significant differences. The comprehensive analysis across multiple mutants and cellular processes provides strong support for this negative result.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:59:11.697208Z"
+    },
+    {
+      "id": "fdf07110-2d7d-466d-ab49-97e16e2e9e07",
+      "content_id": "1a5ca138-d3fa-4400-acaf-804535e22c50",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Core PCP mutants pk and stbm (but not fmi) exhibit subtle but significant differences in adult wing shape, appearing slightly rounder and wider than wild-type.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C43 is supported by quantitative data in Figure 1\u2014figure supplement 5I showing statistically significant differences in major-to-minor axis ratio for pk and stbm mutants. The power analysis (Figure 1\u2014figure supplement 5J) appropriately addresses the limitation that such subtle phenotypes would be difficult to detect in the smaller pupal wing sample sizes (n=2-4).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:59:11.697208Z"
+    },
+    {
+      "id": "fa116820-ceb5-4db8-9ab3-0feb66631528",
+      "content_id": "1a5ca138-d3fa-4400-acaf-804535e22c50",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Core PCP mutants exhibit significantly lower initial recoil velocity upon laser ablation compared to wild-type, and the displacement dynamics require a two-timescale exponential model with fast (<1 s) and slow (~20 s) components to adequately fit the data.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C47 are well-supported by experimental data in Figure 2B and Figure 2\u2014figure supplement 1. The statistical significance of the recoil velocity difference is demonstrated, and the inadequacy of single exponential fits versus the improved fit with two timescales is clearly shown in Figure 2\u2014figure supplement 1B. The rheological modeling provides a mechanistic framework for interpreting these observations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:59:11.697208Z"
+    },
+    {
+      "id": "9fa9bc76-3da0-48a4-8e1c-d4ec41bcd540",
+      "content_id": "1a5ca138-d3fa-4400-acaf-804535e22c50",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Despite differences in initial recoil velocity, core PCP mutants show no significant differences in overall tissue mechanical stress as measured by ESCA. The fast timescale elastic constant kf is affected in pk mutants, but tissue stress and the slow elastic constant ks remain unchanged.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49, C50, C7, C52, and C69 are supported by ESCA measurements (Figure 2F-F'') showing no significant differences in anisotropic stress, isotropic stress, or elastic constant ratios between wt and pk at -8 hRPCE. The rheological model analysis provides a coherent interpretation that only the fast timescale response (Xf) differs, attributable to changes in kf rather than tissue stress. This conclusion is consistent with the lack of phenotype in large-scale tissue flows.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:59:11.697208Z"
+    },
+    {
+      "id": "516cabf7-d485-4d7a-ac78-e95e4063f361",
+      "content_id": "1a5ca138-d3fa-4400-acaf-804535e22c50",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Initial recoil velocity along the PD axis peaks at \u22128 hRPCE in both wild-type and pk mutants, with pk showing qualitatively similar temporal dynamics but significantly lower magnitude throughout blade elongation flows.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53 and C54 are supported by data in Figure 3A showing the temporal profile of initial recoil velocity across developmental time. The peak timing is consistent with previous work (Iyer et al., 2019), and statistical analysis confirms significantly lower values in pk throughout the time course. Similar results in stbm and fmi (Figure 3\u2014figure supplement 1A) strengthen this conclusion.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:59:11.697208Z"
+    },
+    {
+      "id": "a4f8a394-e6de-40c3-adab-c92ace2b5e88",
+      "content_id": "1a5ca138-d3fa-4400-acaf-804535e22c50",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The timing of peaks in mechanical stress (\u22126 hRPCE) and cell elongation (\u22124 to 0 hRPCE) differ, indicating that active stresses change over time. However, core PCP does not affect the peak of cell elongation or the underlying active anisotropic stresses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C65 and C70 are supported by data in Figure 3B-D showing the temporal offset between stress and cell elongation peaks, and the lack of significant differences between wt and core PCP mutants in cell elongation dynamics (Figure 3D, Figure 3\u2014figure supplement 2E). The inference about changing active stresses is reasonable given the temporal mismatch, though the constitutive relation \u03c3\u0303 = 2KQ + \u03b6 is simplified.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:59:11.697208Z"
+    },
+    {
+      "id": "15016920-c515-4fa9-b8a6-c139947bdf71",
+      "content_id": "1a5ca138-d3fa-4400-acaf-804535e22c50",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Core PCP mutations affect the fast timescale response to laser ablation, but this does not reflect differences in overall tissue stress. Initial recoil velocity is influenced by small-scale mechanical differences not necessarily related to tissue-level stress.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6 and C76 synthesize the key finding that initial recoil velocity, commonly used as a stress proxy, can be misleading. The rheological model analysis demonstrates that the phenotype in pk arises from changes in the fast elastic constant kf affecting the fast displacement Xf, while ESCA measurements show no change in tissue stress. This represents an important methodological insight about interpreting laser ablation experiments.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:59:11.697208Z"
+    },
+    {
+      "id": "0dac2edd-35d2-4108-af18-c27d2151dca5",
+      "content_id": "1a5ca138-d3fa-4400-acaf-804535e22c50",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The fast timescale response (<1 s) to laser ablation may be related to cortical mechanics of cell bonds or cell hydraulics, though the mechanism by which core PCP affects these processes is unclear.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C74 is explicitly speculative. While the hypothesis about cortical mechanics or hydraulics is plausible given the timescale, no direct experimental evidence is provided to test these mechanisms. The connection between core PCP and such fast mechanical processes remains unexplained and would require additional investigation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:59:11.697208Z"
+    },
+    {
+      "id": "c176cc74-1aa6-4eec-a7e6-a1d6b87ee4d5",
+      "content_id": "1a5ca138-d3fa-4400-acaf-804535e22c50",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Core PCP might affect later developmental stages not examined in this study, and other patterning systems (Fat PCP, Toll-like receptors) or mechano-sensitive mechanisms could act redundantly or independently to guide morphogenesis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C77, C78, and C80 are explicitly speculative about mechanisms not tested in this study. While the authors appropriately acknowledge these possibilities in the Discussion, no experimental evidence is provided to support or refute these hypotheses. The subtle adult wing phenotype (C43) suggests some role for core PCP, but whether this occurs during or after blade elongation flows remains unknown.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:59:11.697208Z"
+    },
+    {
+      "id": "3f0a5ce7-e039-4046-9533-6b0b412fbb45",
+      "content_id": "1a5ca138-d3fa-4400-acaf-804535e22c50",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Background and context claims about the Drosophila wing system, PCP pathways, and prior findings establish the experimental framework and motivation for the study.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3, C9-C35, C79, C81-C82 provide established knowledge and prior findings from the literature that contextualize the current work. These are appropriately cited and represent accepted understanding of the system. While not novel findings of this study, they are accurately presented and relevant to the experimental design and interpretation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:59:11.697208Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "0a01b3eb-df53-4691-af57-7d563ba5d44c",
+      "result_id": "65858a5d-7b41-44a4-97fb-6b5e44f939b5"
+    },
+    {
+      "claim_id": "4a395a4e-ce45-4100-b8f3-97b2be177c2f",
+      "result_id": "65858a5d-7b41-44a4-97fb-6b5e44f939b5"
+    },
+    {
+      "claim_id": "c4a05e98-674d-46b9-a7b3-76c63328028e",
+      "result_id": "65858a5d-7b41-44a4-97fb-6b5e44f939b5"
+    },
+    {
+      "claim_id": "283f40b8-5f23-458a-853b-f877a7f3b40c",
+      "result_id": "65858a5d-7b41-44a4-97fb-6b5e44f939b5"
+    },
+    {
+      "claim_id": "d2fb244c-c03a-4171-b7bd-c4b0ecccd820",
+      "result_id": "65858a5d-7b41-44a4-97fb-6b5e44f939b5"
+    },
+    {
+      "claim_id": "23de9532-287e-4636-8b12-2cf5c0c0cd1c",
+      "result_id": "65858a5d-7b41-44a4-97fb-6b5e44f939b5"
+    },
+    {
+      "claim_id": "00551e63-7d99-4b9c-97dc-9a1f169cffce",
+      "result_id": "65858a5d-7b41-44a4-97fb-6b5e44f939b5"
+    },
+    {
+      "claim_id": "08e2b6c0-820c-43aa-8e00-67d9bb86b353",
+      "result_id": "65858a5d-7b41-44a4-97fb-6b5e44f939b5"
+    },
+    {
+      "claim_id": "2ed25256-6c48-4377-b52d-4d4f5ec9c5be",
+      "result_id": "65858a5d-7b41-44a4-97fb-6b5e44f939b5"
+    },
+    {
+      "claim_id": "10a83fc4-4245-46c6-abf5-034b390a5694",
+      "result_id": "65858a5d-7b41-44a4-97fb-6b5e44f939b5"
+    },
+    {
+      "claim_id": "ad165e55-830c-4afd-99ce-6f8f94a44df8",
+      "result_id": "65858a5d-7b41-44a4-97fb-6b5e44f939b5"
+    },
+    {
+      "claim_id": "ec799032-875a-489e-bbbc-4c65405f8e01",
+      "result_id": "65858a5d-7b41-44a4-97fb-6b5e44f939b5"
+    },
+    {
+      "claim_id": "47757918-74c7-4c2c-9123-1e875ad0436d",
+      "result_id": "65858a5d-7b41-44a4-97fb-6b5e44f939b5"
+    },
+    {
+      "claim_id": "391b4860-d64a-4371-97ec-895e2ace01e1",
+      "result_id": "fdf07110-2d7d-466d-ab49-97e16e2e9e07"
+    },
+    {
+      "claim_id": "713fae03-2d6d-4d05-a98e-0235d2862702",
+      "result_id": "fa116820-ceb5-4db8-9ab3-0feb66631528"
+    },
+    {
+      "claim_id": "d9d31991-5891-4b3c-87e1-67bfa69dec1b",
+      "result_id": "fa116820-ceb5-4db8-9ab3-0feb66631528"
+    },
+    {
+      "claim_id": "37b2eae5-4ccc-4a6e-bf98-acd99e6481aa",
+      "result_id": "fa116820-ceb5-4db8-9ab3-0feb66631528"
+    },
+    {
+      "claim_id": "1a31d90f-5547-49d0-80ee-23d5685a77b8",
+      "result_id": "fa116820-ceb5-4db8-9ab3-0feb66631528"
+    },
+    {
+      "claim_id": "6c113bce-274e-4fe6-950a-fd78ee230e03",
+      "result_id": "9fa9bc76-3da0-48a4-8e1c-d4ec41bcd540"
+    },
+    {
+      "claim_id": "06fb5a73-90d0-4496-a092-22e8e807910d",
+      "result_id": "9fa9bc76-3da0-48a4-8e1c-d4ec41bcd540"
+    },
+    {
+      "claim_id": "2ef051f9-fd54-487a-9701-2c25d68441a9",
+      "result_id": "9fa9bc76-3da0-48a4-8e1c-d4ec41bcd540"
+    },
+    {
+      "claim_id": "2aa53f0b-8f46-42aa-8f98-198c40bee2d3",
+      "result_id": "9fa9bc76-3da0-48a4-8e1c-d4ec41bcd540"
+    },
+    {
+      "claim_id": "7fb8515f-7b00-43e0-b124-2dc7c3c59692",
+      "result_id": "9fa9bc76-3da0-48a4-8e1c-d4ec41bcd540"
+    },
+    {
+      "claim_id": "eff02cb2-3a34-4b9c-8af9-8990a586ad3d",
+      "result_id": "516cabf7-d485-4d7a-ac78-e95e4063f361"
+    },
+    {
+      "claim_id": "70b2206b-145e-4cfb-9388-11addec28678",
+      "result_id": "516cabf7-d485-4d7a-ac78-e95e4063f361"
+    },
+    {
+      "claim_id": "cac2ea7e-198a-4547-bba3-95f017f7376c",
+      "result_id": "a4f8a394-e6de-40c3-adab-c92ace2b5e88"
+    },
+    {
+      "claim_id": "60da0212-8ca1-48b5-b697-dc7783e0d983",
+      "result_id": "a4f8a394-e6de-40c3-adab-c92ace2b5e88"
+    },
+    {
+      "claim_id": "fe473684-d50b-40f9-9efe-838d3e973e96",
+      "result_id": "a4f8a394-e6de-40c3-adab-c92ace2b5e88"
+    },
+    {
+      "claim_id": "bd63e8d7-e424-47b8-893b-82a9a5744b7e",
+      "result_id": "a4f8a394-e6de-40c3-adab-c92ace2b5e88"
+    },
+    {
+      "claim_id": "9f4c33dc-47d3-43f2-acd0-a5fa3718249c",
+      "result_id": "15016920-c515-4fa9-b8a6-c139947bdf71"
+    },
+    {
+      "claim_id": "f864f811-ebd4-48bf-bb1c-a74c61cb9bf4",
+      "result_id": "15016920-c515-4fa9-b8a6-c139947bdf71"
+    },
+    {
+      "claim_id": "38122e6f-2d6f-426e-8c77-ac8b041f361f",
+      "result_id": "0dac2edd-35d2-4108-af18-c27d2151dca5"
+    },
+    {
+      "claim_id": "a7f9f831-aed9-402d-bf1e-5bca220cb8a9",
+      "result_id": "c176cc74-1aa6-4eec-a7e6-a1d6b87ee4d5"
+    },
+    {
+      "claim_id": "21213144-d083-4deb-9588-eccf00aa4949",
+      "result_id": "c176cc74-1aa6-4eec-a7e6-a1d6b87ee4d5"
+    },
+    {
+      "claim_id": "1a5a080d-7311-4f2b-8bb7-77061fd84fe6",
+      "result_id": "c176cc74-1aa6-4eec-a7e6-a1d6b87ee4d5"
+    },
+    {
+      "claim_id": "0848bb2c-af44-4a87-ae62-e50312445599",
+      "result_id": "3f0a5ce7-e039-4046-9533-6b0b412fbb45"
+    },
+    {
+      "claim_id": "23bfa37c-24fc-453c-b5b2-ca8751865790",
+      "result_id": "3f0a5ce7-e039-4046-9533-6b0b412fbb45"
+    },
+    {
+      "claim_id": "424f465d-da09-414c-868d-81fe3cf73ff3",
+      "result_id": "3f0a5ce7-e039-4046-9533-6b0b412fbb45"
+    },
+    {
+      "claim_id": "3d4852a1-5b40-4708-9f23-c6ff990888aa",
+      "result_id": "3f0a5ce7-e039-4046-9533-6b0b412fbb45"
+    },
+    {
+      "claim_id": "8f84258f-1ba0-4c32-a012-7f78900ae80b",
+      "result_id": "3f0a5ce7-e039-4046-9533-6b0b412fbb45"
+    },
+    {
+      "claim_id": "a307baf9-2577-45ca-bfc8-ba2d94073358",
+      "result_id": "3f0a5ce7-e039-4046-9533-6b0b412fbb45"
+    },
+    {
+      "claim_id": "3217c9aa-6f29-4735-858e-dae57d700ee0",
+      "result_id": "3f0a5ce7-e039-4046-9533-6b0b412fbb45"
+    },
+    {
+      "claim_id": "d374361e-da73-44e8-9d76-0b8eb0e6d410",
+      "result_id": "3f0a5ce7-e039-4046-9533-6b0b412fbb45"
+    },
+    {
+      "claim_id": "729efd67-a33e-464b-b614-d7543d9c266d",
+      "result_id": "3f0a5ce7-e039-4046-9533-6b0b412fbb45"
+    },
+    {
+      "claim_id": "3b0d50ef-f107-476a-9ce0-e1913246206b",
+      "result_id": "3f0a5ce7-e039-4046-9533-6b0b412fbb45"
+    },
+    {
+      "claim_id": "81f15624-844d-4c6e-965a-930c5d2e986e",
+      "result_id": "3f0a5ce7-e039-4046-9533-6b0b412fbb45"
+    },
+    {
+      "claim_id": "8137e0cd-5422-4d87-9ae5-584b42249c2c",
+      "result_id": "3f0a5ce7-e039-4046-9533-6b0b412fbb45"
+    },
+    {
+      "claim_id": "e70d6e3d-ff1b-4302-842b-8a8ac0beca50",
+      "result_id": "3f0a5ce7-e039-4046-9533-6b0b412fbb45"
+    },
+    {
+      "claim_id": "c916ce69-0532-42c2-8222-39028b9a71bd",
+      "result_id": "3f0a5ce7-e039-4046-9533-6b0b412fbb45"
+    },
+    {
+      "claim_id": "016c8494-269b-4851-9687-9772fc93a882",
+      "result_id": "3f0a5ce7-e039-4046-9533-6b0b412fbb45"
+    },
+    {
+      "claim_id": "2e711b12-da04-4c01-af0c-053a51311b56",
+      "result_id": "3f0a5ce7-e039-4046-9533-6b0b412fbb45"
+    },
+    {
+      "claim_id": "77902684-078e-4d2e-b79a-855d5642bc9b",
+      "result_id": "3f0a5ce7-e039-4046-9533-6b0b412fbb45"
+    },
+    {
+      "claim_id": "1ce76504-f31d-4f75-99da-faf9877cacdc",
+      "result_id": "3f0a5ce7-e039-4046-9533-6b0b412fbb45"
+    },
+    {
+      "claim_id": "85b921c1-66ad-4f8a-83e7-d838d15189e2",
+      "result_id": "3f0a5ce7-e039-4046-9533-6b0b412fbb45"
+    },
+    {
+      "claim_id": "578f3977-5951-4fe7-9a76-3a7257636483",
+      "result_id": "3f0a5ce7-e039-4046-9533-6b0b412fbb45"
+    },
+    {
+      "claim_id": "44286b5d-e1cd-42c8-a01f-0c1c1607dc6f",
+      "result_id": "3f0a5ce7-e039-4046-9533-6b0b412fbb45"
+    },
+    {
+      "claim_id": "78e54fc3-d5e7-4779-adbc-b0272a899243",
+      "result_id": "3f0a5ce7-e039-4046-9533-6b0b412fbb45"
+    },
+    {
+      "claim_id": "c7d59692-e1d3-4b6d-881f-388c348864bb",
+      "result_id": "3f0a5ce7-e039-4046-9533-6b0b412fbb45"
+    },
+    {
+      "claim_id": "faeddf75-1c23-49ee-a61f-4852510d7c34",
+      "result_id": "3f0a5ce7-e039-4046-9533-6b0b412fbb45"
+    },
+    {
+      "claim_id": "4cdaf721-884f-46ea-abba-dae75bfcf614",
+      "result_id": "3f0a5ce7-e039-4046-9533-6b0b412fbb45"
+    },
+    {
+      "claim_id": "9f4a235d-bee4-437c-aafc-6bcae8f148b9",
+      "result_id": "3f0a5ce7-e039-4046-9533-6b0b412fbb45"
+    },
+    {
+      "claim_id": "998640e1-d910-4111-b47f-a7198d656d9a",
+      "result_id": "3f0a5ce7-e039-4046-9533-6b0b412fbb45"
+    },
+    {
+      "claim_id": "16aa5acf-e314-4abd-872c-9f074a60dde1",
+      "result_id": "3f0a5ce7-e039-4046-9533-6b0b412fbb45"
+    },
+    {
+      "claim_id": "aa564ebd-7922-4691-a7c9-7e4a1b9485ca",
+      "result_id": "3f0a5ce7-e039-4046-9533-6b0b412fbb45"
+    },
+    {
+      "claim_id": "24204a0e-e858-45d0-9815-8cc06e2a0de4",
+      "result_id": "3f0a5ce7-e039-4046-9533-6b0b412fbb45"
+    },
+    {
+      "claim_id": "6ca1519b-6219-4147-aea9-2aebe1054108",
+      "result_id": "3f0a5ce7-e039-4046-9533-6b0b412fbb45"
+    },
+    {
+      "claim_id": "64b3d4fd-a4af-4ec1-8b8b-99bce79b4a08",
+      "result_id": "3f0a5ce7-e039-4046-9533-6b0b412fbb45"
+    },
+    {
+      "claim_id": "8a664958-3ded-41af-85c2-370992dee413",
+      "result_id": "3f0a5ce7-e039-4046-9533-6b0b412fbb45"
+    }
+  ],
+  "comparisons": []
+}

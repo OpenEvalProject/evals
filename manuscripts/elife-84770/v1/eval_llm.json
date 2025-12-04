@@ -1,0 +1,286 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "Feedback loops in neural circuits, both internal and external, make it challenging to identify sites of plasticity underlying learning because changes in neural activity at a site do not necessarily reflect plasticity in nominally upstream inputs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C7 establish the conceptual framework and challenge addressed by the study. These claims are well-supported by established neuroscience knowledge (C1, C5), citations to prior work (C2, C3, C6), and logical inference from feedback loop properties (C4, C7). The claims coherently describe the fundamental problem motivating the research.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "Two competing models of cerebellar learning exist: the Marr-Albus-Ito model proposes LTD at parallel fiber-Purkinje cell synapses in a feedforward architecture, while the Miles-Lisberger model proposes that learning-related changes in Purkinje cells result from feedback of plasticity outside the cerebellar cortex, with LTP rather than LTD at parallel fiber-Purkinje cell synapses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C11 accurately describe two established competing models in the cerebellar learning literature, supported by appropriate citations to the original papers and subsequent experimental work. These claims represent prior work that frames the debate the current study aims to resolve.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "The oculomotor system provides a powerful experimental model for studying motor learning because it involves a relatively simple, well-characterized, and remarkably linear transformation from sensory inputs to motor outputs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C15 describe established properties of the oculomotor system, supported by appropriate citations (C14, C15) and general neuroscience knowledge (C12, C13). These claims justify the choice of experimental system and are well-established in the literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Linear filter models with varying efference copy feedback strength (from 0 to 1) all fit pre-learning neural and behavioral data equally well, demonstrating that the strength of efference copy feedback to Purkinje cells is unconstrained by oculomotor data before learning. While brainstem pathways were well-constrained, the vestibular and visual input filters to Purkinje cells varied systematically with assumed feedback strength.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C23 describe a major finding demonstrating model degeneracy before learning. The claims are well-supported by model fits to extensive experimental data (Figure 3, Figure 4), showing that multiple models with different feedback strengths can explain the same data. The mathematical basis for this degeneracy is established through both empirical fitting and theoretical analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Mathematical analysis of a simplified model reveals that brainstem pathways are fully constrained by the data, but there is strict degeneracy among the three inputs to Purkinje cells (vestibular, visual, and efference copy) because there are only two independently controllable variables (vestibular and visual stimuli) but three unknown input filters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C28 provide the mathematical explanation for the observed degeneracy. The analysis is supported by cost function landscapes (Figure 5) and closed-form analytical solutions. The reasoning is sound: with two independent inputs but three unknown filters to Purkinje cells, one degree of freedom remains unconstrained. This represents rigorous theoretical support for the empirical findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C40"
+    ],
+    "result": "All models successfully reproduced behavioral changes in the VOR after learning, but the inferred plasticity fundamentally differed: the No Feedback model required net depression of vestibular inputs to Purkinje cells (kPH), while the Strong Feedback model required net potentiation, with a gradual transition at feedback gain around 0.4. Both models correctly reproduce decreased Purkinje cell activity during the VOR but use oppositely directed plasticity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C40 describe the central finding that feedback strength determines the inferred direction of plasticity. The claims are well-supported by model fits to behavioral data across frequencies (Figure 6A-B) and analysis of filter changes (Figure 6C). The necessity of each direction of plasticity was confirmed by blocking experiments (C34, Figure 6\u2014figure supplement 3). This represents a major conceptual advance showing how the same behavioral and neural changes can arise from opposite plasticity depending on circuit architecture.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "All models, including those with depression of vestibular inputs to Purkinje cells, successfully replicated the paradoxical increase in Purkinje cell activity during VOR cancellation after learning. In the No Feedback model, this increase results from external visual feedback 'working harder' to cancel the VOR, while in the Strong Feedback model it results from potentiation of vestibular inputs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C47 resolve a longstanding paradox in the field. The models successfully predict experimental observations (Figure 7) that were previously interpreted as requiring potentiation. The mechanistic explanation for how depression can lead to increased activity through visual feedback is clearly demonstrated and represents a novel insight. The claims are well-supported by model simulations and mechanistic analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "In both No Feedback and Strong Feedback models, two sites of plasticity\u2014in the brainstem and cerebellar cortex\u2014are required to explain the paradox that learning decreases Purkinje cell firing during the VOR in the dark but increases firing during VOR cancellation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C50 identify a requirement for distributed plasticity across multiple sites. This is supported by simulations showing that blocking brainstem plasticity eliminates the paradoxical increase in Purkinje cell activity during VOR cancellation (Figure 7B, F, dashed lines) while still allowing successful motor learning. The claims represent an important mechanistic insight about multi-site plasticity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Transient perturbation of Purkinje cells disambiguates feedback strength: models with weak feedback produced brief eye velocity responses matching experimental data, while strong feedback models produced prolonged responses inconsistent with data, suggesting feedback in the VOR circuit is relatively weak.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C56 describe an orthogonal experimental constraint that breaks the degeneracy. The approach is theoretically sound (C51-C52), eliminates degeneracy mathematically (C53, Figure 8A), and model predictions match experimental data from Purkinje cell stimulation (C54-C55, Figure 8B-C). This provides strong evidence for weak feedback and represents a key methodological contribution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C64"
+    ],
+    "result": "Models with weak or no efference copy feedback are compatible with error-driven plasticity (LTD) in the cerebellar cortex and reconcile VOR learning with other cerebellum-dependent learning paradigms. Strong feedback models predict potentiation and are incompatible with transient stimulation data and have stability issues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C61, C64 synthesize the evidence to conclude that weak feedback models are most biologically plausible. The conclusion is supported by: (1) compatibility with error-driven LTD (C57-C58), (2) incompatibility of strong feedback with transient stimulation data (C60, Figure 8), and (3) stability concerns (C61). The inference is well-justified by the presented evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C62",
+      "C63"
+    ],
+    "result": "Despite evidence against strong efference copy feedback, some efference copy input to the cerebellum likely exists, as signals related to motor output have been identified anatomically and physiologically in inputs to the cerebellar cortex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C63 acknowledge anatomical and physiological evidence for efference copy pathways while reconciling this with the functional conclusion of weak feedback. The claims are supported by appropriate citations and represent a balanced interpretation of the evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "The model represents a single time point after systems consolidation has occurred. Before consolidation, learning-related decreases in Purkinje cell firing may be supported solely by cerebellar cortex plasticity, predicting that paradoxical increases during VOR cancellation would not occur at the earliest learning stages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C65-C69 discuss implications for systems consolidation. While C65-C67 accurately describe prior work and the current model's scope, C68-C69 are speculative predictions (marked as SPECULATION in evidence_type) that have not been tested. The reasoning is logical but requires experimental validation. This represents an interesting hypothesis for future work rather than a supported result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "The presence of multiple feedforward and feedback pathways converging on the same site leads to 'sloppiness' in inferring sites and signs of plasticity, but additional data from perturbations can constrain this sloppiness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C72 place the findings in the broader context of model degeneracy in biological systems. The claims are supported by citations to prior work on sloppiness (C70) and by the demonstrated resolution of degeneracy through perturbation experiments (C72, Figure 8). This represents an important conceptual contribution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Previous regression models that found evidence for efference copy feedback are special cases of the more general linear filter models analyzed here, which reveal inherent non-identifiability of inputs to Purkinje cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C75 reinterpret previous experimental findings in light of the current analysis. The claims are supported by citations to prior work (C73-C74) and logical inference from the degeneracy analysis (C75). This represents an important reinterpretation of existing literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Applying correlational plasticity rules to efference copy and visual pathways predicts specific patterns of plasticity: potentiation of efference copy for VOR increases and depression for decreases, and potentiation of visual pathways for both directions of learning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C76-C80 are speculative predictions (marked as SPECULATION in evidence_type) about plasticity in pathways not included in the model fits. While the reasoning is based on established plasticity rules and in vitro data, these predictions have not been tested experimentally or validated by the model. These represent testable hypotheses for future work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "The model is agnostic to the specific biological mechanism of depression at vestibular inputs to Purkinje cells, which could involve LTD at parallel fiber-Purkinje cell synapses, LTP at inhibitory synapses, or LTP at contralateral inputs, making weak feedback models consistent with multiple plasticity mechanisms including LTP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C84 clarify that the model's predictions about 'net depression' are compatible with multiple cellular mechanisms. This is a valid inference (C81) supported by citations to alternative mechanisms (C82-C84). The claims appropriately acknowledge the limitations of the modeling approach while maintaining consistency with diverse experimental findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C85",
+      "C86"
+    ],
+    "result": "Visual input was modeled only to the cerebellar cortex based on lesion studies, though some anatomical evidence exists for direct visual input to the brainstem.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C86 describe and justify a modeling assumption. The assumption is well-supported by citations to lesion studies (C85) while acknowledging alternative anatomical evidence (C86). This represents appropriate transparency about model assumptions and their justification.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Future experiments could test feedback strength by comparing motor responses to Purkinje cell stimulation with and without parallel fiber input, or by measuring VOR cancellation immediately after training before consolidation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C87-C89 propose future experimental tests. C87 is a proposed experiment (SPECULATION), C88 cites one relevant study in mice, and C89 is a model prediction (SPECULATION). While these represent valuable experimental proposals, they have not been conducted or validated. These are suggestions for future work rather than supported results.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,1868 @@
+{
+  "submission": {
+    "id": "f396cdb6-ced0-4bd7-94ac-6e1d426fe32b",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-04T01:33:24.044997Z",
+    "updated_at": "2025-12-04T01:33:24.044997Z"
+  },
+  "content": [
+    {
+      "id": "7207def0-56de-412e-a468-f5e0509f8cd8",
+      "submission_id": "f396cdb6-ced0-4bd7-94ac-6e1d426fe32b",
+      "content_type": "manuscript",
+      "content_text": "# Development of frequency tuning shaped by spatial cue reliability in the barn owl\u2019s auditory midbrain\n\n## Authors\n\n- Keanu Shadron<sup>1</sup> ([ORCID: 0000-0001-5217-9282](https://orcid.org/0000-0001-5217-9282)) \u2020\n- Jos\u00e9 Luis Pe\u00f1a<sup>1</sup>\n\n### Affiliations\n\n1. Dominick P Purpura Department of Neuroscience, Albert Einstein College of Medicine Bronx United States ([ROR:05cf8a891](https://ror.org/05cf8a891))\n\n\u2020 Corresponding author\n\n## Abstract\n\nSensory systems preferentially strengthen responses to stimuli based on their reliability at conveying accurate information. While previous reports demonstrate that the brain reweighs cues based on dynamic changes in reliability, how the brain may learn and maintain neural responses to sensory statistics expected to be stable over time is unknown. The barn owl\u2019s midbrain features a map of auditory space where neurons compute horizontal sound location from the interaural time difference (ITD). Frequency tuning of midbrain map neurons correlates with the most reliable frequencies for the neurons\u2019 preferred ITD (Cazettes et al., 2014). Removal of the facial ruff led to a specific decrease in the reliability of high frequencies from frontal space. To directly test whether permanent changes in ITD reliability drive frequency tuning, midbrain map neurons were recorded from adult owls, with the facial ruff removed during development, and juvenile owls, before facial ruff development. In both groups, frontally tuned neurons were tuned to frequencies lower than in normal adult owls, consistent with the change in ITD reliability. In addition, juvenile owls exhibited more heterogeneous frequency tuning, suggesting normal developmental processes refine tuning to match ITD reliability. These results indicate causality of long-term statistics of spatial cues in the development of midbrain frequency tuning properties, implementing probabilistic coding for sound localization.\n\n## Introduction\n\nTo accurately and efficiently perceive and react to the environmental scene, the brain must rely on the sensory cues that are naturally most reliable. The ability of the brain to quickly weigh ongoing reliability of sensory cues within different modalities has been well documented (Jacobs and Fine, 1999; Rosas et al., 2005; Fetsch et al., 2011; Dacke et al., 2019). However, in instances where sensory cue reliability is anticipated to be relatively stable and predictable, predetermined weights of sensory cues may be optimal. An example of this neural operation is particularly seen in human speech processing, where reliable phonetic properties are stable across speakers (Holt and Lotto, 2006; Iverson et al., 2003; Toscano and McMurray, 2010), and may only change over the course of decades (Toscano and Lansing, 2019). While extensive research has shown changes in neural responses induced by sensory statistics (David et al., 2004; Dean et al., 2005; Fetsch et al., 2011), properties and fundamental mechanisms of this adaptive coding are important for understanding whether and how brain development is influenced by specific high-order statistics of sensory cues. In this report, we used the barn owl as a model organism of sound localization to test whether and how the brain develops and adapts to changes in stimulus reliability by altering the tuning properties of sensory neurons in a manner predictive of these relevant natural statistics.\n\nThe barn owl is a highly specialized species, able to hunt in the dark solely using auditory stimuli (Payne, 1962). Barn owls use interaural time difference (ITD), the delay for a sound to reach one ear before the other, and interaural level difference (ILD), the difference in sound intensity between the two ears, to, respectively, compute sound location in azimuth and elevation (Moiseff and Konishi, 1981; Moiseff, 1989). ITD and ILD are represented in the barn owl\u2019s external nucleus of the inferior colliculus (ICx), creating a topographic midbrain map of sound location (Knudsen and Konishi, 1978). The barn owl shows specialization in its ability to compute ITD from frequencies as high as 10 kHz (Wagner et al., 1987; Carr and Konishi, 1990; K\u00f6ppl, 1997). The reliability of ITD is described as how corruptible the ITD cue is to concurrent sounds, which is determined by the acoustical properties of the head and the frequencies carrying the ITD cue (Keller and Takahashi, 2005; Cazettes et al., 2014; Fischer and Pe\u00f1a, 2017). These properties are summarized in the head-related transfer function (HRTF) (Wightman and Kistler, 1989; Poon and Brugge, 1993; Brugge et al., 1994; Brugge et al., 1994; Hartung and Sterbing, 1997; Keller et al., 1998), which describes the directional filtering that the external ears induce onto incoming sounds. These filtering properties vary across sound source location relative to the ears and the sound frequency. HRTF-based analysis has indicated that for sounds originating from frontal locations, ITD cues derived from the higher frequencies of the barn owl\u2019s hearing range are less susceptible to corruption from concurrent sounds; while for sounds from peripheral space, ITD cues derived from low frequencies are less susceptible to corruption (Cazettes et al., 2014; Fischer and Pe\u00f1a, 2017). Because ITD is detected by ongoing phase locking within narrow frequency bands in the lower brainstem (Carr and Konishi, 1990) and that the HRTF may induce instantaneous effects on stimulus shape, the reliability of interaural phase difference (IPD) is the most precise assessment of ITD cue reliability across single-frequency channels (Fischer and Pe\u00f1a, 2011; Cazettes et al., 2014; Fischer and Pe\u00f1a, 2017). In accordance with this, ITD reliability is considered equivalent to IPD reliability for the purposes of this report. Consistent with the hypothesis of anticipated coding of sensory cue reliability, neurons in the ICx are tuned to the frequencies that are most reliable for their preferred ITD, even if the ongoing statistics are briefly changed (i.e. using earphones which bypass the head\u2019s filtering properties) (Cazettes et al., 2014). A relationship between frequency tuning and ITD tuning has been reported in the midbrain and brainstem of mammalian models as well; however, this was proposed to be related to ITD neural coding and detection properties rather than anticipated ITD reliability (McAlpine et al., 2001; Hancock and Delgutte, 2004; Day and Semple, 2011; Bremen and Joris, 2013). In contrast, recent findings have shown that human spatial perception is driven by natural ITD statistics across frequencies, including ITD variability induced by concurrent sounds (Pav\u00e3o et al., 2020), suggesting commonalities between humans and owls in the anticipation of ITD cue reliability based on acoustic properties of the head. Overall, these previous studies indicate that the predictive coding of natural ITD reliability is inherent in the brain of humans and owls, but directly testing development and causality of this statistical property on the frequency tuning of neurons representing auditory space and whether this coding is innately fixed or experience dependent remain open questions.\n\nIn the barn owl, the facial ruff, a disc of stiff feathers that surrounds the head, acts as an external ear, modulating the gain and phase of sounds reaching the eardrums (Coles and Guppy, 1988; Keller et al., 1998; von Campenhausen and Wagner, 2006; Hausmann et al., 2009). Because the filtering effects of the facial ruff are direction and frequency dependent, we sought to assess whether the removal of the facial ruff would induce a change in the pattern of ITD reliability, and whether the barn owl\u2019s auditory system adapts to these long-term changes. Previous reports studying the facial ruff removal in barn owls have focused on changes to the ILD (i.e. elevational) tuning, while noting few changes to the ITD tuning of neurons in the owl\u2019s midbrain map of auditory space (Knudsen et al., 1984). However, to our knowledge, there have been no studies that assessed whether ITD reliability and frequency tuning of midbrain neurons changed after facial ruff removal.\n\nBased on these open questions, comparative analysis of ITD reliability was conducted using HRTFs from owls before and after facial ruff removal. Following this, the frequency tuning of neurons was measured in the ICx of barn owls where the facial ruff was removed during juvenile development. Additionally, the earliest-to-date recordings of the developing ICx were conducted in normal juvenile owls before the facial ruff develops but after hearing onset. We found frontally tuned ICx neurons of juvenile and ruff-removed owls were predominately tuned to frequencies lower than the observed frequency tuning in normal adult owls. These changes in both ruff-removed and juvenile owls are consistent with estimated differences in ITD reliability between normal and ruff-absent conditions. These results indicate that tuning to high frequencies of frontally tuned midbrain map neurons is developed and driven by the experience of natural auditory scenes during early life in the barn owl. In addition, recordings in the region immediately upstream of ICx confirmed that the ability to compute ITD from high frequencies (Carr and Konishi, 1990) was preserved in ruff-removed owls, but not inherited by ICx. Overall, this study demonstrates that the owl\u2019s sound localization pathway implements an experience-dependent representation of anticipated ITD statistics in the midbrain map of space, supporting the idea of the brain\u2019s adaptive anticipation of natural high-order sensory statistics.\n\n## Results\n\nTo first determine how ITD reliability changes after facial ruff removal, five HRTFs from barn owls before and after facial ruff removal were used, from the dataset originally published in von Campenhausen and Wagner, 2006. Given ITD is computed by comparing IPD across narrow frequency channels (Carr and Konishi, 1990; Fischer et al., 2011), ITD reliability is determined by IPD reliability. Thus, for the purposes of this analysis, IPD reliability underlies ITD reliability and will be used interchangeably. A signal\u2019s phase can be corrupted by concurrent sounds, altering the IPD in a frequency-dependent manner (Keller and Takahashi, 2005; Cazettes et al., 2014; Fischer and Pe\u00f1a, 2017). For a given sound source and frequency, the amount of corruption varies with the location of the masker sound. IPD reliability can be computed as the inverse of the standard deviation of this variability (Trommersh\u00e4user et al., 2011; Cazettes et al., 2014; Fischer and Pe\u00f1a, 2017). To this end, we calculated the IPD for a given sound source across different locations of a second sound source using the HRTFs before and after facial ruff removal, on a frequency-by-frequency manner. Before ruff removal, the pattern of higher IPD reliability for high and lower frequencies in, respectively, frontal and peripheral locations (Figure 1a) was largely the same as previously reported (Cazettes et al., 2014). After ruff removal, there was a sharp decrease in the reliability of high frequencies coming from frontal locations, with minimal changes elsewhere (Figure 1b). Computing the difference in reliability between the two conditions highlights that after ruff removal, the changes in reliability were stronger for frequencies above 4 kHz coming from within \u00b140\u00b0 of azimuth location (Figure 1c). As HRTFs can vary between individuals, we measured the variability in IPD standard deviation across owls for the normal (Figure 1d) and ruff-removed (Figure 1e) conditions. There was notably low variability across the owls, especially at the frequencies of interest. This suggests that this measurement, based on HRTF-based analysis, leads to largely common values among individual owls. Previous reports show that there is a uniform decrease in gain of sound level across frequencies after facial ruff removal (von Campenhausen and Wagner, 2006), nullifying the interpretation that this is merely due to a loss of gain specifically at these higher frequencies. Repeating this analysis under different conditions, where masker sounds were quieter (Figure 1\u2014figure supplement 1a and b) and using prey vocalizations as potentially natural sounds (Figure 1\u2014figure supplement 1c and d), produced qualitatively similar patterns of ITD reliability, suggesting these effects are stable across potential differences of acoustic environments. These acoustical simulations suggest that if ICx frequency tuning is driven by IPD reliability, and by extension ITD reliability, then we should expect lower frequency tuning in frontally tuned ICx neurons in owls raised without the facial ruff.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/84760/elife-84760-fig1-v2.jpg)\n\n**Figure 1.:** Target and masker broadband sounds across varying azimuth locations were convolved with HRTFs from owls before and after facial ruff removal, then summed. IPD reliability (s.d.\u20131) was computed across frequencies and normalized for each location, then averaged across owls (see \u2018Methods\u2019) before (a) and after (b) the facial ruff removal (right hemifield shown). The difference between normal and ruff-removed IPDs indicates a substantial decrease in reliability for frequencies above 4 kHz at frontal locations (c). HRTF data from von Campenhausen and Wagner, 2006.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/84760/elife-84760-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Same analysis as Figure 1, using alternative stimuli to produce IPD reliability. (a, b) Muted condition, where maskers were 50% the amplitude of targets, both broadband. (c, d) Natural sound condition, where target and maskers were 100 ms excerpts from prey vocalizations (see \u2018Methods\u2019). (a) and (c) used HRTFs from normal owls, while (b) and (d) used head-related transfer functions (HRTFs) from ruff-removed owls.\n\nTo test whether frequency tuning in the barn owl\u2019s ICx is shaped by ITD reliability, we modified ITD reliability by trimming the facial ruff from two barn owls as it grew in. While previous experiments have studied the effects of physical and virtual removal of the facial ruff on the spatial tuning of ICx neurons and sound localizing behavior (Knudsen et al., 1984; Hausmann et al., 2009), none of these reported an effect on neuronal frequency tuning in ruff-removed owls. Towards this goal, once these ruff-removed owls reached adulthood (6 mo of age), we performed electrophysiological recordings across the ICx. We recorded 117 ICx neurons across the two owls. ITD and frequency tunings were then assessed for each neuron. An example ICx unit is shown in Figure 2a\u2013c. Typical ICx neurons display sharp tunings to ITD and ILD, with relatively broad frequency tuning width (>2 kHz) (Moiseff and Konishi, 1983; Takahashi and Konishi, 1986). Thus, individual ICx neurons recorded from ruff-removed owls had typical ITD and ILD tuning properties. The recorded population spanned ITD tunings of 0\u2013230 \u00b5s, which equates to a range of 0\u201375\u00b0 azimuth. However, on a population-wide scale, ILD tuning was correlated with ITD tuning in these owls (Figure 2d). This arises from the loss of bilateral asymmetry conferred by the facial ruff, which causes ILD to covary with elevation in normal conditions (Coles and Guppy, 1988; Moiseff, 1989; Keller et al., 1998). Consistent with previous reports, ILD covaries with azimuth after facial ruff removal (von Campenhausen and Wagner, 2006; Hausmann et al., 2009; Knudsen et al., 1984; Figure 2d).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/84760/elife-84760-fig2-v2.jpg)\n\n**Figure 2.:** (a) Example interaural time difference (ITD) tuning curve. Yellow curve represents Gaussian fit to main peak, with the maximum of this curve termed best ITD. (b) Example frequency tuning curve. Black line indicates half-height used for determining half-width, low- and high-frequency bounds (black dots). Best frequency corresponds to the mean of the frequency bounds (red dot). (c) Example interaural level difference (ILD) tuning curve. (d) Best ILD plotted as a function of best ITD of neurons from ruff-removed (red dots) and normal owls (blue dots, from Cazettes et al., 2014). While there is no correlation between ITD and ILD tuning in normal owls (blue line), there is a correlation in ruff-removed owls (red line).\n\nThe correlation between ITD and frequency was markedly different in the ruff-removed owls compared to normal adult owls. In normal adult owls, neurons tuned to ITDs near 0 \u00b5s, or frontal locations, are driven by high frequencies, while neurons tuned to large ITDs, or peripheral locations, are driven by low frequencies (Cazettes et al., 2014), exposing a significant correlation between ITD and frequency tuning (r2 = 0.75, p=5.6e-55). In the ruff-removed owls, there was a shallower slope of the linear correlation between ITD and frequency tuning (r2 = 0.18, p=1.6e-06, Figure 3). These two correlations were significantly different (t-test: t = 8.97, p=3.0e-19). The y-intercepts of the regression lines, which can be used to compare the frequency tuning of frontal neurons, were also significantly different (normal owls = 5.6 kHz, ruff-removed owls = 4.6 kHz; t = 7.56, p=4.0e-14). In addition, a Mann\u2013Whitney U-test comparing the best frequency tuning of the frontally tuned neurons, defined here as preferring ITDs \u2264 30 \u00b5s (~10\u00b0 eccentricity), produced consistent results (u = 63, p=7.3e-08). We defined best frequency as the median of a neuron\u2019s frequency range (Figure 2b), so this suggests that the two groups cover different frequency ranges. In line with this, the frontally tuned neurons of ruff-removed owls showed little responsivity to tones above 6 kHz (Figure 3\u2014figure supplement 1). ICx neurons of ruff-removed owls showed little ITD selectivity to frequencies outside their frequency range (Figure 3\u2014figure supplement 2), suggesting that these neurons cannot use high frequencies for sound localization. The pattern of frequency tuning seen in the ruff-removed owls corresponds to the changes in ITD reliability, where the relationship between ITD and azimuth is approximately 3 \u00b5s/degrees (Keller et al., 1998; von Campenhausen and Wagner, 2006).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/84760/elife-84760-fig3-v2.jpg)\n\n**Figure 3.:** Best frequency plotted as a function of best ITD of inferior colliculus (ICx) neurons from ruff-removed owls (red dots) and normal owls (gray dots, from Cazettes et al., 2014). Arrows indicate frequency bounds of each neuron; vertical lines denote frequency range.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/84760/elife-84760-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Frequency tuning curves of ICx neurons with best interaural time differences (ITDs) < 30 \u00b5s (n = 33). Tuning curves are normalized by their max response. Thick black line indicates the average across neurons. Dashed black line indicates basal response.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/84760/elife-84760-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Two example ICx neurons shown in (a) and (b). ITD tuning for tones (colored) and broadband (black) plotted by firing rate (non-normalized). Solid colored lines indicate responses to frequencies that are within the neuron\u2019s preferred frequency range (i.e. above the half-height, see \u2018Methods\u2019), dashed lines indicate frequencies outside of the neuron\u2019s frequency range.\n\nOne potential cause of this change in frequency tuning could be due to disrupted ITD detection mechanisms induced by a change in gain of sound level, rather a change in ITD reliability. To test for this alternative, electrophysiological recordings of the lateral shell of the central nucleus of the inferior colliculus (ICCls), the immediate upstream region of ICx, were performed. ICCls neurons also display a topographic mapping of ITD, but, critically, are narrowly tuned to frequency, which increases along the dorsal-ventral axis, with tunings spanning the barn owl\u2019s hearing range of 0.5\u20139 kHz (Knudsen and Konishi, 1978; Wagner et al., 2007). We recorded 43 ICCls neurons from the same two ruff-removed owls in adulthood and found the normal frequency tuning range (1\u20138 kHz) across ITD-selective neurons (Figure 4). In particular, ICCls neurons tuned to high frequencies and frontal ITDs in ruff-removed owls were observed (Figure 4). This suggests that the auditory system is still able to use high frequencies to compute ITDs, but this is not passed onto the ICx.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/84760/elife-84760-fig4-v2.jpg)\n\n**Figure 4.:** Frequency tuning of ICCls neurons of ruff-removed owls plotted as a function of their best interaural time difference (ITD). Best frequency denoted by blue dots; frequency range denoted by arrows. Black dashed lines indicate the upper and lower typical frequency range of the barn owl\u2019s ICCls (from Wagner et al., 2007).\n\nIn addition, changes in directional gain were considered as an alternative cause driving frequency tuning changes in the ruff-removed condition. Towards this end, the gain across frequency and location was computed from normal and ruff-removed HRTFs. In line with previous reports (Keller et al., 1998; Cazettes et al., 2014), gain in the normal condition was strongest for high frequencies in frontal space, with negative gain at all other locations and frequencies (Figure 5a). In the ruff-removed condition, gain remained strongest for high frequencies in frontal space, but expanded slightly to include stronger gain in more peripheral locations (Figure 5b). In contrast, the gain of lower frequencies had a more limited increase, to approximately 0 dB (i.e. no net gain change), likely because the facial ruff normally attenuates these sounds (Figure 5a, Coles and Guppy, 1988; Keller et al., 1998). These findings are consistent with previous analysis of changes in gain across frequencies following ruff removal (von Campenhausen and Wagner, 2006). This analysis suggests that the limited changes in gain across frequencies are insufficient to explain the changes in frequency tuning as high frequencies remain the most audible in frontal locations after facial ruff removal.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/84760/elife-84760-fig5-v2.jpg)\n\n**Figure 5.:** Gain computed for each frequency using normal (a) and ruff-removed (b) head-related transfer functions (HRTFs). Positive gain indicates an increase in the sound level, relative to the absence of the head to filter the sounds (0 dB). Negative gain indicates a decrease in sound level.\n\nAlternatively, the change in the frequency tuning of frontal neurons could be due to a remapping of ITD and ILD in a frequency-dependent manner following facial ruff removal. To test this possibility, we modeled the spatial tuning of frontally tuned neurons across frequencies. Based on HRTFs from von Campenhausen and Wagner, 2006, the ITD and ILD was computed for each spatial location sampled, across frequencies (described in \u2018Methods\u2019 section). These ITDs and ILDs were passed through a model ICx neuron tuned to 0 \u00b5s ITD and 0 dB ILD to simulate the neuron\u2019s response across space (Figure 6a). This analysis was performed using the HRTFs of owls before (Figure 6b) and after (Figure 6c) facial ruff removal. In the ruff-removed condition, spatial tuning to elevation widened dramatically, as expected from previous reports (Knudsen et al., 1984; von Campenhausen and Wagner, 2006; Hausmann et al., 2009). However, we did not find any widening of modeled azimuthal spatial tuning nor any acoustical loss in the potential efficacy of high frequencies to compute ITD. In fact, after facial ruff removal, we noticed an increase in the potential efficacy of high frequencies for frontal space, likely due to ILD being correlated with azimuth after facial ruff removal (Knudsen et al., 1984; Figure 2d). These results further support the hypothesis that the barn owl\u2019s frequency tuning is driven by ITD reliability rather than solely spatial tuning.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/84760/elife-84760-fig6-v2.jpg)\n\n**Figure 6.:** (a) Schematic methodology to determine spatial tuning, using 6 kHz as an exemplary tone. Interaural time difference (ITD) (upper left) and interaural level difference (ILD) (upper right) were estimated as a function of the spatial location of the sound source. Neural responses were predicted by entering the estimated ITD and ILD into modeled tuning curves for a simulated frontally tuned neuron (middle plots). The overall spatial tuning was calculated by combinatorial multiplication then normalization of these modeled responses (lower plot). (b, c) Spatial tuning maps for owls before (b) and after (c) ruff removal, displayed for five example tones.\n\nWe next sought to determine the frequency tuning of juvenile owls before the facial ruff fully developed. Recordings were performed from two juvenile owls at 42 and 44 d post hatching. These time points corresponded to ongoing ruff development as the ruff feathers were still within the sheathed stalks, with the ruff not fully developing until approximately 60 d post hatching (Haresign and Moiseff, 1988). To our knowledge, these recordings are the earliest performed during the development of the barn owl\u2019s midbrain. We were able to identify 39 ICx neurons, which showed typical topographic ITD tuning, as well as latencies and thresholds. However, we found that ILD tuning did not change with depth along the dorsal-ventral axis, as observed in normal adult ICx (Figure 7\u2014figure supplement 1; Mogdans and Knudsen, 1993). Because the relationship between ILD and elevation is determined by the facial ruff (Knudsen et al., 1984; von Campenhausen and Wagner, 2006), this provided further evidence that the facial ruff was still underdeveloped in these juvenile owls. There was no correlation between ITD and best frequency in the juvenile owls (r2 = 0.18, p=0.28), although this may be attributed to the lack of recorded neurons tuned to ITDs >120 \u00b5s (Figure 7). Because this correlation was not significant, we confined our subsequent analyses to only frontally tuned neurons (best ITDs \u2264 30 \u00b5s) as the clearest differences between normal and ruff-removed conditions occurred in frontal space for both ITD reliability and frequency tunings. When we compared the best frequency tuning of frontal neurons, there was a significant difference between the juvenile owls and both the normal (u = 558, p=5.9e-04) and ruff-removed (u = 281, p=3.2e-03) adult owls (Figure 8a). The mean best frequency of the frontal neurons in juvenile owls was 4.9 kHz, which is between that of normal and ruff-removed adult owls. The size of these differences between juvenile owls and both normal and ruff-removed owls, measured by biserial rank correlation, further supported this result (r = 0.55 and r = 0.43, respectively). With a mean best frequency of 4.9 kHz for frontally tuned neurons, this suggests that the neurons in the ICx of juvenile owls do not begin development tuned primarily to high frequencies, but that this develops as the facial ruff develops. Later recordings done in these same birds\u2019 ICx, performed in the 160\u2013200-day-old age range, display the typical high-frequency tuning for frontally tuned neurons (data not shown), supporting this hypothesis.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/84760/elife-84760-fig7-v2.jpg)\n\n**Figure 7.:** ICx neurons recorded from juvenile owls, before the facial ruff developed, plotted by their best interaural time difference (ITD) and frequency tuning range. Weak correlation between ITD and frequency (green line).\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/84760/elife-84760-fig7-figsupp1-v2.jpg)\n\n**Figure 7\u2014figure supplement 1.:** Best ILD plotted as a function of best ITD of ICx neurons from juvenile (green dots) and normal owls (blue dots, from Cazettes et al., 2014). Linear correlations for juvenile (green line) and normal owls (blue line) plotted, showing a significant correlation of ITD and ILD tuning in juvenile owls.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/84760/elife-84760-fig8-v2.jpg)\n\n**Figure 8.:** (a) Box plots indicating the distribution of best frequencies for neurons tuned to frontal interaural time differences (ITDs) (\u00b130 \u00b5s, equivalent to approximately \u00b110\u00b0 azimuth) for normal (blue, n = 24), ruff-removed (red, n = 33) and juvenile (green, n = 30) owls . (b) Box plots for each group, denoting the high and low bounds of frequency tuning curves. (c) Box plots representing the responsive frequency range for neurons of each group. (d) Box plots representing the width of ITD tuning curves of each group. Individual neurons and Mann\u2013Whitney U-test p-values used to compare groups are shown over each box plot.\n\nWhile there were clear differences in best frequency across juvenile, ruff-removed and normal adult owl groups, we found additional differences when comparing the high and low boundaries of each neuron\u2019s frequency tuning (see Figure 2b for definitions). While there was a significant difference in the neurons\u2019 high-frequency bounds between the juvenile and ruff-removed owls (u = 206, p=6.2e-05), there was no significant difference between the juvenile and normal adult owls (u = 409, p=0.4). In contrast, we saw the opposite for the low-frequency bounds: there was a difference between the juvenile and normal adult owls (u = 600, p=3e-05), but no significant difference between the juvenile and ruff-removed owls (u = 466, p=0.7). These results are summarized in Figure 8b and suggest that the juvenile owls\u2019 ICx neurons are broader and more heterogeneously tuned to frequency than normal or ruff-removed adult owls, which then gets refined during development. In accordance with this, we found significant differences in the responsive frequency range of ICx neurons between the juvenile owls and both the normal adult owls (u = 190, p=0.003) and ruff-removed adults (u = 221, p=1.6e-04), but not between the normal and ruff-removed adults (u = 418, p=0.73) (Figure 8c). In addition, because there was no difference in the responsive frequency range between the adult groups, we can deduce that their neurons are sensitive to different frequencies based on the results from Figure 8a. Analysis of ITD tuning width of frontal neurons showed significantly broader tuning width in ruff-removed (u = 72, p=1.2e-07) and juvenile owls (u = 188, p=0.0028), consistent with their tuning to lower frequencies and the known relationship between frequency tuning and ITD tuning width of midbrain neurons (Takahashi and Konishi, 1986; Wagner et al., 2007; Figure 8d). These results indicate that the juvenile owls show larger heterogeneity and broadening of frequency tuning in the ICx, which adapts based on the pattern of ITD reliability that the bird experiences along early life.\n\n## Discussion\n\nWe report that in barn owls that developed without a facial ruff, there is an altered relationship between the tunings to ITD and frequency relative to previous reports from normal adult barn owls (Knudsen et al., 1984; Cazettes et al., 2014). These ruff-removed barn owls showed on average a decrease in frequency tuning for frontally tuned ICx neurons, from 6 kHz to 4.5 kHz, with no change in frequency tuning width (Figure 8c). This is consistent with the analysis of the effect of acoustical properties of the owl\u2019s head on ITD statistics. These observed changes are despite the overrepresentation of high frequencies in the cochlea (K\u00f6ppl, 1997) and adaptations to support phase locking at these high frequencies (Sullivan and Konishi, 1984; Carr and Konishi, 1990; K\u00f6ppl, 1997), which are extremely unlikely to change following ruff removal. In support of this, neurons immediately upstream of the ICx maintained the ability to resolve ITD at these high frequencies (Figure 4). The changes in ITD reliability and correlated frequency tuning support the hypothesis of an adaptive predictive coding of this ITD statistic in the owl midbrain along normal developmental and experimentally altered changes in the acoustical properties of the head.\n\nThe earliest recordings of the barn owl\u2019s midbrain, conducted in this study at 42 and 44 d after hatching, showed neuronal tuning to ITD and ILD (Figure 7). This is in line with previous reports on the auditory brainstem which indicate that the circuitry underlying ITD and ILD tuning are present (albeit immature) and that these binaural spatial cues are audible to the birds across their hearing range by approximately 20 d post hatching (Carr and Boudreau, 1996; K\u00f6ppl and Nickel, 2007; Kraemer et al., 2017). However, consistent with reports of disrupted ILD tuning after facial ruff removal (Knudsen et al., 1984), ILD tuning was correlated with azimuthal tuning in the juvenile owls (Figure 7\u2014figure supplement 1). This ILD tuning pattern indicates that the facial ruff was underdeveloped at this time, thus not contributing to auditory processing. The best frequency tuning we found for frontally tuned ICx neurons in juvenile owls were lower than what has been found in normal adults (Cazettes et al., 2014), but higher than what is found in ruff-removed owls (Figure 8). This suggests that at this time point the barn owl\u2019s ICx frequency tuning is not yet shaped by ITD reliability, which may change rapidly in response to the facial ruff\u2019s development. Consistent with this hypothesis, we found that juvenile ICx neurons had slightly wider and heterogenous frequency tuning widths than either the normal adult or ruff-removed adults, covering the ranges of both adult groups, but not a width that would indicate that each of these ICx neurons were sampling the entire frequency range available to the barn owl for ITD detection (0.5\u20139 kHz). This suggests high heterogeneity in the juvenile owl\u2019s ICx frequency tuning at the time that the facial ruff would begin to grow in. As the owl develops, these individual neurons may sharpen their frequency tuning to match the pattern of ITD reliability the owl experiences during development or the neurons that respond to unreliable frequencies could be pruned during development. Future work dissecting developmental and experience-dependent changes to the ICCls-ICx synapses may elucidate the fundamental mechanisms underlying this adaptive coding.\n\nThese results suggest a juvenile owl undergoes a process to refine the frequency tuning in the ICx based on the pattern of ITD reliability that the owl experiences during early-life development. Along normal development, the frequency tuning of frontally tuned neurons changes in a manner consistent with an increase in high-frequency reliability at frontal locations, determined by the acoustic properties of the facial ruff. It should be noted that the difference in frequency tuning of frontally tuned neurons between normal adults and juveniles (rank-biserial correlation, r = 0.55) is smaller than the difference between normal adult and ruff-removed owls (rank-biserial correlation, r = 0.84). This suggests that the ruff-removed owls still underwent a refinement in ICx frequency tuning, but toward lower frequencies compared to normal adults. The timing of ruff development, which completes at approximately 60 d post hatching, aligns with previous reports of a critical period in the barn owl, which can remain open to 200 d post hatching (Knudsen et al., 1984; Brainard and Knudsen, 1993; Brainard and Knudsen, 1998). Although not directly tested in this study, it is likely that the shift in frequency tuning occurs over this time period.\n\nIt is unlikely that the effect of ruff removal on ITD reliability is due solely to a change in gain of sound level as this and previous reports found that ruff removal decreases the gain across frequencies, yet the gain remains higher for higher frequencies around 6\u20138 kHz (Figure 5, Coles and Guppy, 1988; von Campenhausen and Wagner, 2006), inconsistent with the estimated lower ITD reliability of high-frequency sounds in frontal locations for these owls. Likewise, the rate of change of ITD (\u00b5s/deg), another significant statistic determining ITD discriminability (Feddersen et al., 1957; Gelfand, 2016; Pav\u00e3o et al., 2020), is not reported to change significantly across frequencies after ruff removal (von Campenhausen and Wagner, 2006), reducing the possibility of it being an alternative mechanism driving change of frequency tuning. This is consistent with previous work which reported that gain alone cannot explain the frequency tuning in the ICx (Cazettes et al., 2014). Additional testing of whether the observed change in frequency tuning of frontal neurons could be determined by the reported changes in the pattern of ITD and ILD across spatial locations after ruff removal (Knudsen et al., 1984; von Campenhausen and Wagner, 2006) showed no systematic frequency-dependent effects (Figure 6). While ruff removal enables the use of ILD to determine azimuthal location, we do not see a reason that this would induce a preference to lower frequencies in these neurons. Because of the shadowing effect of the head, high frequencies induce larger ILDs, increasing its resolution. Following ruff removal, the rate of change of ILD decreases across frequencies, decreasing its resolution of spatial location (von Campenhausen and Wagner, 2006). Thus, high frequencies would still be preferred for ILD tuning. In addition, ITD has sharper resolution than ILD overall, but especially at higher frequencies (Coles and Guppy, 1988; Keller et al., 1998; von Campenhausen and Wagner, 2006). Thus, spatial resolution does not explain the changes seen in frontally tuned ICx neurons. These conclusions support the premise that ITD reliability is a primary determinant of ICx frequency tuning.\n\nNevertheless, there may be limits to the extent that frequency tuning can be shifted due to ITD reliability. The majority of the barn owl\u2019s basilar papilla responds to 5\u201310 kHz (K\u00f6ppl et al., 1993), which may induce a bias toward high frequencies into the downstream auditory centers. The eardrum itself may also have detection biases for frequencies above 3 kHz (Kettler et al., 2016). Consistently, the ICCls and midbrain maps contain few neurons tuned to frequencies below 1 kHz (Figure 4, Wagner et al., 2007; Cazettes et al., 2014). While these properties are not expected to be affected by the facial ruff, they likely evolved simultaneously with the evolution of the facial ruff to facilitate the use of ITD detection at high frequencies. This is akin to reports that the barn owl\u2019s sound localization cannot fully adapt to large displacements in the visual field (Knudsen and Knudsen, 1989; Knudsen and Knudsen, 1990).\n\nWhile there were some changes in ITD reliability and gain for the most rearward located sounds (\u00b1160\u00b0) determined by HRTF-based analysis, we do not believe this would influence reported results focused on frontal and peripheral space. The ICx, as well as the downstream optic tectum, mostly cover 30\u00b0 ipsilateral to 90\u00b0 contralateral space, which equates to approximately +90 \u00b5s to \u2013300 \u00b5s ITD (Knudsen, 1982; Knudsen, 1984; Cazettes et al., 2014). This means that the most rearward locations are significantly underrepresented in the auditory midbrain. This is expected as the auditory space map in the ICx is projected onto the visual space map in the optic tectum, so there is no obvious visual equivalent for rearward space. Because the barn owl is binocular and relies on visual and auditory cues to locate and capture prey, the representation of rearward space in the auditory midbrain, which drives the motor response, would be unnecessary.\n\nThere has been extensive research on how the brain encodes and adapts to changes of sensory statistics. Reports of early-life exposure to low signal-to-noise ratios have suggested a delay in the maturation of sensory systems (Withington-Wray et al., 1990; Chang and Merzenich, 2003; Efrati and Gutfreund, 2011). In the auditory system, numerous reports showed that tonotopic maps can be adjusted in response to frequency-specific noise (Zhang et al., 2001; Nore\u00f1a et al., 2006; Villers et al., 2007) or notches (Gold and Knudsen, 2000). More recent findings suggest that certain noise contexts can alter tuning based on the stimulus statistics (Cruces-Sol\u00eds et al., 2018; Homma et al., 2020). While these previous reports demonstrated changes in the auditory system induced by altering the statistics between signal and noise that mediate spectrotemporal discrimination, this study further finds evidence of adaptive plasticity to statistics of the ITD sensory cue used for sound localization. Specifically, this study demonstrates that frequency tuning in the midbrain space map may also be driven by how well these frequencies convey a relevant spatial cue, ITD, which is initially computed in the brainstem (Carr and Konishi, 1990). This suggests that high-order statistics are detected across frequencies and locations and that adaptive coding is implemented in the barn owl\u2019s midbrain, where a map of auditory space emerges, suggesting that natural statistics are driving the implementation and development of a computational brain map (Knudsen et al., 1987). While the ongoing reliability of ITD cue is known to affect sound localization (Jeffress et al., 1962; Saberi et al., 1998), these findings support the theory of an essential role of anticipated ITD reliability, where its effect on neuronal tuning is acquired during development and maintained in spite of ongoing statistics, in the coding of sound location by population responses in the owl midbrain map (Fischer and Pe\u00f1a, 2011; Cazettes et al., 2014; Fischer and Pe\u00f1a, 2017; Ferger et al., 2021). In addition, the broader ITD tuning of frontal neurons in juvenile and ruff-removed owls (Figure 8d) was predicted by their tuning to lower frequencies and potentially consistent with a proposed theory that the shape of tuning curves encodes reliability in the midbrain map (Cazettes et al., 2016). The changes in frequency tuning we found occurred in animals maintained in regular group aviaries with daily feeding and absence of specific task training or survival needs such as hunting experience or auditory-driven tasks. Thus, the shaping of the owl\u2019s ICx frequency tuning based on anticipated ITD reliability may be a normal and robust step in owl\u2019s development. Because of this, the ruff-removed owl may be a useful model for future investigation of the molecular and synaptic mechanisms underlying experience-dependent coding of anticipated cue reliability.\n\nIn sum, this work provides evidence that the brain can assess the reliability of an auditory spatial cue along normal development and experience-dependent changes and use this information to drive neural tunings matching anticipated reliability across frequency and locations. To our knowledge, this is the first description of the natural learning of cue reliability, where the learning is implemented in a midbrain network, in contrast with previous work finding similar results in the forebrain (Keating et al., 2013). As anticipated ITD cue reliability has also been shown to drive spatial discriminability in humans (Pav\u00e3o et al., 2020), it is possible that a similar learning process could occur as the human head and ears grow and develop. In addition, previous reports suggest the capability of the human auditory system to compute (Saberi and Petrosyan, 2005) and infer high-order statistics (McWalter and McDermott, 2019), suggesting commonalities across species. Overall, this study supports causality of anticipated sensory cue statistics of spatial cues on neuronal tuning properties in the auditory system and developmental and experience dependent plasticity driving this statistical inference.\n\n## Methods\n\n### HRTF analysis\n\nPairs of HRTFs from five barn owls, with and without the facial ruff, were provided by Dr. Wagner (von Campenhausen and Wagner, 2006). The computation of estimated ITD reliability based on these HRTFs was conducted using a previously reported method (Cazettes et al., 2014). Briefly, two broadband signals, a target and masker, with flat spectrum across the owl\u2019s ITD detection frequency range (0.5\u201310 kHz; K\u00f6ppl, 1997; Carr and Konishi, 1990), were convolved with head-related impulse responses at each sampled sound source location of available HRTF datasets (azimuth: \u00b1160\u00b0 at 20\u00b0 steps, elevation: 0\u00b0). The summed target and masker sounds were passed through a gammatone filter bank (1\u20138 kHz, 0.2 kHz steps) as previously described (Fischer et al., 2009). Due to the sharp frequency selectivity of ITD detection neurons (Carr and Konishi, 1990; Fischer et al., 2011), IPD of narrow frequency bands, which ITD is computed from, was used for this analysis to more accurately analyze the effect of underlying acoustics across conditions. Additionally, because ITD is derived from IPD by carrier frequencies, this precludes the ability to meaningfully compare ITD reliability across frequency. As such, IPD reliability was used instead, with the term equating to ITD reliability for the purposes of this report. IPD was calculated for each frequency as the point of the maximum cross-correlation between the left and right inputs. To estimate reliability of ITD cues across frequency and locations, the circular standard deviation of IPD was computed for each target location, across all frequency ranges and masker locations. This procedure was repeated 10 times for each individual HRTF, and the circular standard deviation of IPD was averaged across repetitions. IPD reliability was calculated as the inverse standard deviation of the IPD (Trommersh\u00e4user et al., 2011). This procedure was repeated for alternate stimulus conditions. In the first condition, maskers were held at 0.5 the amplitude of the target sound. In the second condition, a 100 ms excerpt of a mouse scream, which has spectral power across the owl\u2019s hearing range, was used as both the target and masker sounds (recording from Netser et al., 2011).\n\nFor testing whether observed changes in neuronal tuning properties could be due to changes in spatial tuning, rather than ITD reliability, the same HRTFs from owls before and after ruff removal were used to compute the ITD and ILD across frequency and spatial locations sampled in these HRTFs. This analysis was conducted for tones within the range of frequencies where changes in tuning were observed (3\u20137 kHz, at 1 kHz steps) to estimate changes in ITD/ILD mappings for each tone. Model neuronal responses tuned to frontal space were constructed using the following equations for ITD and ILD, respectively:\n\n$$\na_{n}ITD= a_{max}\\frac{(e^{cos(2\\pifITD-\\mu_{n})}-e^{-1})}{e^{1}-e^{-1}}\n$$\n\n\n\n$$\na_{n}ILD=a_{max}e^{-\\frac{(ILD- \\delta_{n})^{2}}{\\sigma}}\n$$\n\nwhere f is the tone frequency (in Hz), \u03c3 is the width parameter for the ILD tuning. The neuron\u2019s best ITD, \u00b5n, and best ILD, \u03b4n, were defined as 0 \u00b5s and 0 dB, respectively. The maximum spike rate for both tuning curves was 10 spikes per second, set by amax. The spatial responses for ITD and ILD were then multiplied, as consistent with previously reported mechanisms of ICx neurons (Pe\u00f1a and Konishi, 2001) and normalized. This resulted in a full spatial tuning map of a frontally-tuned neuron across frequencies.\n\n### Facial ruff removal\n\nTwo juvenile barn owls were hand-raised (one starting at 14 days old and one at hatching). Facial ruff was trimmed as it developed, starting at approximately 1 month old. As they were comfortable with humans, trimming occurred as owls rested, without the need of anesthesia or stress. Surgeries were not performed on these owls until 3 mo of age, approximately 1 mo after sexual maturity.\n\n### Surgery\n\nData were collected in two adult owls that had undergone facial ruff removal (see above) and two normal juvenile owls. Surgeries of adult owls were performed as previously described (Wang et al., 2012; Ferger et al., 2021). Briefly, owls were first anesthetized with intramuscular injections of ketamine hydrochloride (Ketaset; 20 mg/kg) and xylazine (AnaSed, 4 mg/kg), then injected with lactated Ringer\u2019s solution (10 mL, s.c.). Supplemental injections of ketamine and xylazine were provided every 1\u20132 hr as needed to maintain sedation. In a preliminary surgery, a stainless-steel head-plate and reference post were attached to the skull using dental acrylic. Craniotomies were performed within dental acrylic wells above the coordinates for the auditory midbrain. During recordings, a small incision is made in the dura mater to insert electrodes. At the end of each recording, a sterile piece of plastic was fitted to cover the craniotomy, which was then covered in a fast-curing silicone elastomer (polyvinyl siloxane; Warner Tech Care). The owl was then administered carprofen (Rimadyl; 3 mg/kg, i.m.) to reduce pain. Recordings were repeated every 14 d or longer to allow proper recovery.\n\nBecause of the development of the skull precluding early surgeries in juvenile owls, the head-plate implantation surgery and electrophysiology recording were performed on the same day in these animals. Recording surgeries were performed at 42 and 44 d post hatching. At this time point, the juvenile barn owls are slightly above normal adult weight (Haresign and Moiseff, 1988), requiring administered anesthetics dosages similar to adults. Both owls recovered and were standing within 1 hr of surgery completion, and fully developed normally. Subsequent recordings were performed between 130 and 190 days old to verify normal frequency tuning in adulthood (observed but data not shown).\n\nAll procedures complied with the National Institute of Health guidelines and were approved by the institutional animal care and use committee of the Albert Einstein College of Medicine.\n\n### Acoustical stimuli\n\nAll experiments were performed in a sound-attenuating chamber (Industrial Acoustics). Stimuli were generated by System II hardware (Tucker-Davis Technologies), controlled by a computer with custom-created software. Dichotic stimuli were presented through custom-built earphones containing a speaker (model 1914, Knowles) and microphone (model EK-23 024, Knowles). Earphones were calibrated to adjust for irregularities in phase and amplitude across the owl\u2019s hearing range, from 0.5 to 13 kHz.\n\nAcoustic stimuli consisted of either broadband (0.5\u201311 kHz) or tonal signals with a 100 ms duration and 5 ms rise-fall time. For tonal stimuli, a step size of 200 Hz was used, between 0.5 and 10 kHz. A 300 ms inter-stimulus interval was used to prevent response adaptation effects (Singheiser et al., 2012; Ferger et al., 2018). All stimuli were binaural and presented at least 10 dB above the neuron\u2019s threshold. To present ILD, each earphone was increased or decreased equally, such that the sound level was maintained across ILDs.\n\n### Electrophysiological recordings\n\nSingle units were recorded extracellularly using 1 M\u03a9 tungsten electrodes (A-M Systems) and amplified by a DP-301 differential amplifier (Warner Instruments). Electrical traces were recorded by System II hardware (Tucker-Davis Technologies) and custom-made software. The ICx and ICCls midbrain regions were targeted stereotaxically (Knudsen and Knudsen, 1983). In addition, neurons were distinguished based on response properties. Single units were isolated based on the spike amplitude and the uniformity of spike shape. Nevertheless, neurons close to each other in the map are known to have similar tuning properties (Cazettes et al., 2014). Specifically, ICx neurons display tuning to both ITD and ILD, with side peaks in ITD tuning occurring at the reciprocal period of the unit\u2019s best frequency (Takahashi and Konishi, 1986; Fujita and Konishi, 1991; Wagner et al., 2007; Cazettes et al., 2016). The response rate of these side peaks was usually suppressed as compared to the main peak (Takahashi and Konishi, 1986; Mazer, 1998; Pe\u00f1a and Konishi, 2000). Recordings in ICCls were determined by their known change in the preferred frequency tuning of neurons: along the dorsal-ventral axis, tuning to frequency increases with depth (Knudsen and Konishi, 1978; Takahashi et al., 1989; Wagner et al., 2007). Additionally, ICCls neurons display broad contralateral ILD tuning and side peaks in ITD tuning that are indistinguishable in response rate to the main peak (Takahashi et al., 1989; Fujita and Konishi, 1991; Adolphs, 1993; Wagner et al., 2007). A minimum of 200 \u00b5m between units was used to ensure isolation of subsequently recorded neurons.\n\n### Data analysis\n\nFor each stimulus parameter, a response curve was computed by averaging the firing rate across stimulus repetitions. A Gaussian curve was fit onto the main peak of ITD tuning curve, with the best ITD determined by the maximum of the Gaussian. The main peak was defined as the peak in the ICx curve with the largest response as the side peaks in ICx are usually much smaller relative to the main peak (Figure 2). In ICCls, as there is no side peak suppression due to the narrow frequency tuning (Wagner et al., 1987; Fujita and Konishi, 1991), the peak corresponding to the neurons\u2019 characteristic delay was determined during the recording by comparing neurons along the dorsal-ventral axis, which share a characteristic delay but show different frequency tuning, which manifests in neurons along this axis sharing one peak response at their characteristic delay, with other peaks misaligned (Wagner et al., 1987; Fujita and Konishi, 1991; Wagner et al., 2007). Thus, the peak corresponding to preferred ITD was defined ad hoc for each recording and ITDs not comprising the main peak were ignored for fitting the Gaussian.\n\nAs previously reported (Cazettes et al., 2014; Cazettes et al., 2016), the frequency tuning range was defined as the range of frequencies that elicited more than 50% of the maximum response. The lower and upper edges of this range correspond to the lowest and highest frequencies of the response range. Because ICx frequency tuning curves are generally broad and without a single peak, the best frequency was defined as the mean of the lowest and highest frequencies of the frequency range.\n\nFrontally tuned neurons were defined as neurons with a best ITD between \u00b130 \u00b5s, which equates to \u00b110\u00b0. While it is possible that neurons with this tuning could instead be tuned to rearward directions, this is extremely unlikely, and steps were taken to ensure this did not occur. Firstly, as the ICx is topographic, the best ITD increases with eccentricity. The most peripheral regions of the map are not known to respond to small ITDs, suggesting that rearward locations are not represented. This is consistent with the ICx projecting topographically onto the optic tectum and vice versa (Hyde and Knudsen, 2000; DeBello et al., 2001), which is multimodal and would not need to accurately represent rearward space in a binocular species. In addition, visual information from the optic tectum calibrates the representation of auditory space in the ICx (Knudsen and Knudsen, 1989; Brainard and Knudsen, 1993; Gutfreund et al., 2002), limiting this possibility. The spatial tuning of optic tectum neurons that do respond to rearward locations are extremely broadly tuned, consistent with this notion (Knudsen, 1982). Additionally, as multiple penetration sites were used during a given surgery, the location of the recording site in the topographic map could be tracked; no unreasonably large changes in ITD tuning across nearby penetration sites were detected.\n\nPearson correlation coefficients were calculated for each experimental group, pooled across birds. Student\u2019s t-test was used to compare regression slope values. Mann\u2013Whitney U-test was used to compare frequency tunings for frontal neurons between groups. Effect sizes were derived from the rank-biserial correlation, which uses the U statistic to compute the overlap between groups by calculating the correlation between the data and its rank in the Mann\u2013Whitney U-test, on a scale of 0\u20131 (1 indicating no overlap).\n",
+      "created_at": "2025-12-04T01:33:24.044997Z"
+    },
+    {
+      "id": "6b5e24e1-df6a-473b-885e-2a563fc09b93",
+      "submission_id": "f396cdb6-ced0-4bd7-94ac-6e1d426fe32b",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Andrew J King, https://ror.org/052gg0110 University of Oxford United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.84760.sa0](https://doi.org/10.7554/eLife.84760.sa0)\n\nThis research advance shows that if juvenile barn owls experience experimentally altered interaural time differences \u2013 the binaural cue used for localizing sounds in the horizontal plane \u2013 the frequency tuning properties of neurons in the space-mapped region of the midbrain undergo adaptive changes. The results therefore suggest that the statistics of sound stimulation can influence the sensitivity of auditory midbrain neurons to a fundamental stimulus feature in the developing barn owl brain. These findings will be of interest to the fields of developmental and sensory neuroscience.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Andrew J King, https://ror.org/052gg0110 University of Oxford United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.84760.sa1](https://doi.org/10.7554/eLife.84760.sa1)\n\nOur editorial process produces two outputs: i) public reviews designed to be posted alongside the preprint for the benefit of readers; ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Development shaped by cue reliability in the barn owl's auditory midbrain\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, and the evaluation has been overseen by Andrew King as the Senior and Reviewing Editor. The following individual involved in the review of your submission has agreed to reveal their identity: Michael Pecka (Reviewer #1).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1. The paper does not establish a causal link between ITD reliability and the observed physiological changes. If the key conclusions of the paper are to be retained, stronger evidence needs to be provided that changes in the response properties of midbrain neurons can be accounted for by frequency-dependent changes in the reliability of this localization cue. If not, the authors should consider alternative explanations.\n\n2. A more comprehensive analysis of the acoustical effects of facial ruff removal and the extent to which this leads to changes in ITD reliability is needed since the reviewers had reservations about the robustness and ecological validity of the ITD reliability metric used. See the comments of reviewer 2 for more details on this point.\n\n3. ITD sensitivity at frequencies other than the neuronal best frequency needs to be considered, in particular, to demonstrate whether the neurons show ITD sensitivity at higher frequencies. This is particularly an issue given the changes in the tuning width of the neurons.\n\nReviewer #1 (Recommendations for the authors):\n\nI find the title difficult to interpret: development of what?\n\nAbstract: Can sensory systems \"choose\" stimuli? Do you mean \"are more responsive\" or are you referring to perceptual levels?\n\nLine 80f: Is this sentence correct? Shouldn't it read \"ICx neurons of juvenile and ruff-removed\u2026.were predominately tuned to frequencies lower than\u2026 In normal adults\"?\n\nCan the authors explain why a correlation between ITD and ILD tuning emerges as a function of ruff removal?\n\nReviewer #2 (Recommendations for the authors):\n\nL22: statistics of spatial cues are likely to vary over time, so I suspect what is meant here is a 'long-term average' rather than permanent.\n\nL45: it would be helpful to clearly identify where this definition of ITD reliability comes from and refer to possible alternatives. Also, the corruptibility of ITD cues is presumably not fully determined by the HRTFs but by the acoustical properties of the environment. Finally, the key variable of interest is presumably the spatial reliability of ITD cues, which may not be fully determined by ITD reliability.\n\nL80: how are frontally-tuned neurons distinguished from neurons tuned to rearward locations?\n\nL86: in conjunction with what is said elsewhere, this implies that high-frequency ITD sensitivity is not preserved in the ICx, but it is not clear what data support this claim.\n\nL113: although IPD reliability may be a factor in determining ITD reliability, the two are not necessarily the same.\n\nL124: it looks like there are changes in IPD reliability for low frequencies at ~160 degrees (i.e. behind the animal), but these do not seem to be obvious in Figure 1C.\n\nL126: what precise azimuth values were used? Referring to 45 degrees makes it seem as if a 5-degree resolution was used, but the methods suggest 20 degrees.\n\nFigure 1: it would be helpful to mark the azimuth values corresponding to the precise values tested. Also, it should be stated clearly if the data have been averaged for left and right hemifields (or whether only one hemifield is being shown).\n\nL127: if I have understood correctly, the measures in Figure 1 are partly determined by the gain associated with rearward locations. If so, is there a uniform decrease in gain for all frequencies at all locations following facial ruff removal? If not, what impact might this have on ITD reliability?\n\nL131: do the data also suggest the opposite for rearward locations (~160 degrees)? Also, does this predicted association between best frequency and ITD reliability assume a linear weighting of ITDs determined by the frequency tuning function? And if so, is this assumption true of ICX neurons?\n\nP4, paragraph 3, line 4: are neurons with a best ITD of 0 necessarily tuned to frontal locations or could they be tuned to rearward (or midline) locations?\n\nL189: this seems to imply that neurons can only represent ITDs at their best frequency. Could the ICx preserve sensitivity to ITDs at high frequencies using neurons that have slightly lower best frequencies?\n\nL197: it is unclear why there is a focus on frontally-tuned neurons here (and only frontal locations). Figure 3 shows changes in neurons with best ITDs > 150 microseconds and Figure 1 shows changes in IPD reliability for rearward locations.\n\nL205-207: 'ability to use high frequencies' is confusing since there is no behavioural measure. I'm not entirely sure what this means above and beyond what was already stated about the azimuthal spatial tuning.\n\nL210: If I've understood correctly, these results suggest that facial ruff removal does not affect ITD cues for azimuthal locations within 60 degrees of the midline and, if anything, enhance ILD cues available for these locations (although this would be clearer if the acoustical cues themselves were plotted). However, they do not say what happens to ITDs and ILDs (or overall gain) for rearward locations, which appear to contribute to the IPD variability measures used (even for frontal locations). Also, if facial ruff removal makes ILD cues available for azimuthal localization, then this may affect the need to use ITDs at high frequencies, even if IPD reliability is unchanged. Some discussion of these issues would therefore be helpful.\n\nP7, line 1: 'frontal neurons' seems to refer to neurons with a best ITD of 0, but could they be tuned to rearward locations (or to midline locations)?\n\nL322: I didn't fully understand how these results show that ITD reliability has already begun to refine neural tuning. I would have thought longitudinal recordings would be necessary to establish this, but perhaps I misunderstood what was intended.\n\nL346: following facial ruff removal, is the change in gain equal for all frequencies at all locations (including those to the rear)? If facial ruff removal increases the gain for high-frequency sounds behind the animal, what would this do to measures of IPD reliability?\n\nL350: is the rate of change for ITD unaffected by ruff removal for all locations (including rearward locations)?\n\nL354: how would these analyses differ if rearward locations were included and changes in gain were taken into account?\n\nL393: is this true of all locations, or is it limited to frontal locations?\n\nL395: are the results of that study consistent with the present study, or are there differences between the midbrain and forebrain?\n\nL414: I found it confusing to refer to 'location' here when what I think is meant is the IPD associated with the peak of the cross-correlation function.\n\nL415: IPD and ITD are sometimes used interchangeably in the manuscript, but it would be helpful to distinguish between them clearly since a given change in IPD does not always correspond to the same change in ITD.\n\nL432: 'full spatial tuning map' seems to imply that this analysis was done for all locations (including those to the rear), but this is not plotted in the relevant figure.\n\nL465: additional details (or references) should be provided to indicate whether all stimuli (including tones) were binaural and how ILDs were added to the stimulus (e.g. was level fixed in one ear etc.).\n\nL474: is it possible that facial ruff removal might change this?\n",
+      "created_at": "2025-12-04T01:33:24.044997Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T01:33:24.044997Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T01:33:24.044997Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "b05e3591-652a-4b0f-a429-f73c34d294b6",
+      "content_id": "7207def0-56de-412e-a468-f5e0509f8cd8",
+      "claim_id": "C1",
+      "claim": "The barn owl's midbrain features a map of auditory space where neurons compute horizontal sound location from the interaural time difference (ITD).",
+      "claim_type": "EXPLICIT",
+      "source": "The barn owl's midbrain features a map of auditory space where neurons compute horizontal sound location from the interaural time difference (ITD).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about barn owl auditory neuroscience, supported by the citation context of the manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:24.044997Z"
+    },
+    {
+      "id": "9029a2e8-347b-4e0d-8dd7-33998a51b85e",
+      "content_id": "7207def0-56de-412e-a468-f5e0509f8cd8",
+      "claim_id": "C2",
+      "claim": "Frequency tuning of midbrain map neurons correlates with the most reliable frequencies for the neurons' preferred ITD.",
+      "claim_type": "EXPLICIT",
+      "source": "Frequency tuning of midbrain map neurons correlates with the most reliable frequencies for the neurons' preferred ITD (Cazettes et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Cazettes et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:24.044997Z"
+    },
+    {
+      "id": "4c3bd6c2-737c-4732-baf3-25228a181217",
+      "content_id": "7207def0-56de-412e-a468-f5e0509f8cd8",
+      "claim_id": "C3",
+      "claim": "Removal of the facial ruff led to a specific decrease in the reliability of high frequencies from frontal space.",
+      "claim_type": "EXPLICIT",
+      "source": "Removal of the facial ruff led to a specific decrease in the reliability of high frequencies from frontal space.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study, supported by HRTF analysis data presented in Figure 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:24.044997Z"
+    },
+    {
+      "id": "6095a665-b16f-422a-bc8e-3beff7c778a6",
+      "content_id": "7207def0-56de-412e-a468-f5e0509f8cd8",
+      "claim_id": "C4",
+      "claim": "In ruff-removed adult owls, frontally tuned neurons were tuned to frequencies lower than in normal adult owls.",
+      "claim_type": "EXPLICIT",
+      "source": "In both groups, frontally tuned neurons were tuned to frequencies lower than in normal adult owls, consistent with the change in ITD reliability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by electrophysiological recordings presented in Figures 3 and 8.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:24.044997Z"
+    },
+    {
+      "id": "0b8ffd7f-fe2b-4cdf-b4f0-dee50d52d99c",
+      "content_id": "7207def0-56de-412e-a468-f5e0509f8cd8",
+      "claim_id": "C5",
+      "claim": "In juvenile owls, frontally tuned neurons were tuned to frequencies lower than in normal adult owls.",
+      "claim_type": "EXPLICIT",
+      "source": "In both groups, frontally tuned neurons were tuned to frequencies lower than in normal adult owls, consistent with the change in ITD reliability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by electrophysiological recordings presented in Figures 7 and 8.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:24.044997Z"
+    },
+    {
+      "id": "e93cf9f3-ac27-42dd-be46-ab64677384c8",
+      "content_id": "7207def0-56de-412e-a468-f5e0509f8cd8",
+      "claim_id": "C6",
+      "claim": "Juvenile owls exhibited more heterogeneous frequency tuning than adult owls.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, juvenile owls exhibited more heterogeneous frequency tuning, suggesting normal developmental processes refine tuning to match ITD reliability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data showing wider and more variable frequency tuning ranges in juvenile owls presented in Figure 8.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:24.044997Z"
+    },
+    {
+      "id": "9509cd00-90f6-4de9-9bfc-45cd777c4367",
+      "content_id": "7207def0-56de-412e-a468-f5e0509f8cd8",
+      "claim_id": "C7",
+      "claim": "Long-term statistics of spatial cues causally drive the development of midbrain frequency tuning properties.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate causality of long-term statistics of spatial cues in the development of midbrain frequency tuning properties, implementing probabilistic coding for sound localization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion inferred from the experimental manipulations and developmental observations.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:24.044997Z"
+    },
+    {
+      "id": "73bbb95a-e8a3-4e4e-887d-bce8ca3ef8c5",
+      "content_id": "7207def0-56de-412e-a468-f5e0509f8cd8",
+      "claim_id": "C8",
+      "claim": "Barn owls use interaural time difference (ITD) to compute sound location in azimuth.",
+      "claim_type": "EXPLICIT",
+      "source": "Barn owls use interaural time difference (ITD), the delay for a sound to reach one ear before the other, and interaural level difference (ILD), the difference in sound intensity between the two ears, to, respectively, compute sound location in azimuth and elevation (Moiseff and Konishi, 1981; Moiseff, 1989).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations to Moiseff and Konishi, 1981 and Moiseff, 1989.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:24.044997Z"
+    },
+    {
+      "id": "46feb841-8fef-4010-943d-b68298bab7af",
+      "content_id": "7207def0-56de-412e-a468-f5e0509f8cd8",
+      "claim_id": "C9",
+      "claim": "Barn owls use interaural level difference (ILD) to compute sound location in elevation.",
+      "claim_type": "EXPLICIT",
+      "source": "Barn owls use interaural time difference (ITD), the delay for a sound to reach one ear before the other, and interaural level difference (ILD), the difference in sound intensity between the two ears, to, respectively, compute sound location in azimuth and elevation (Moiseff and Konishi, 1981; Moiseff, 1989).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations to Moiseff and Konishi, 1981 and Moiseff, 1989.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:24.044997Z"
+    },
+    {
+      "id": "aec500a8-0a7f-4022-b920-6c8718f2a618",
+      "content_id": "7207def0-56de-412e-a468-f5e0509f8cd8",
+      "claim_id": "C10",
+      "claim": "ITD and ILD are represented in the barn owl's external nucleus of the inferior colliculus (ICx), creating a topographic midbrain map of sound location.",
+      "claim_type": "EXPLICIT",
+      "source": "ITD and ILD are represented in the barn owl's external nucleus of the inferior colliculus (ICx), creating a topographic midbrain map of sound location (Knudsen and Konishi, 1978).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citation to Knudsen and Konishi, 1978.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:24.044997Z"
+    },
+    {
+      "id": "ff3c002b-3337-407e-a7a2-bb6ec4085e1a",
+      "content_id": "7207def0-56de-412e-a468-f5e0509f8cd8",
+      "claim_id": "C11",
+      "claim": "The barn owl shows specialization in its ability to compute ITD from frequencies as high as 10 kHz.",
+      "claim_type": "EXPLICIT",
+      "source": "The barn owl shows specialization in its ability to compute ITD from frequencies as high as 10 kHz (Wagner et al., 1987; Carr and Konishi, 1990; K\u00f6ppl, 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations to Wagner et al., 1987; Carr and Konishi, 1990; and K\u00f6ppl, 1997.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:24.044997Z"
+    },
+    {
+      "id": "e8c91ede-1d36-4fb2-9d7a-4666c4f27d88",
+      "content_id": "7207def0-56de-412e-a468-f5e0509f8cd8",
+      "claim_id": "C12",
+      "claim": "For sounds originating from frontal locations, ITD cues derived from higher frequencies are less susceptible to corruption from concurrent sounds.",
+      "claim_type": "EXPLICIT",
+      "source": "HRTF-based analysis has indicated that for sounds originating from frontal locations, ITD cues derived from the higher frequencies of the barn owl's hearing range are less susceptible to corruption from concurrent sounds; while for sounds from peripheral space, ITD cues derived from low frequencies are less susceptible to corruption (Cazettes et al., 2014; Fischer and Pe\u00f1a, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Cazettes et al., 2014 and Fischer and Pe\u00f1a, 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:24.044997Z"
+    },
+    {
+      "id": "3d499ad8-af26-4d0b-8eaa-fcdf979fabcb",
+      "content_id": "7207def0-56de-412e-a468-f5e0509f8cd8",
+      "claim_id": "C13",
+      "claim": "For sounds from peripheral space, ITD cues derived from low frequencies are less susceptible to corruption from concurrent sounds.",
+      "claim_type": "EXPLICIT",
+      "source": "HRTF-based analysis has indicated that for sounds originating from frontal locations, ITD cues derived from the higher frequencies of the barn owl's hearing range are less susceptible to corruption from concurrent sounds; while for sounds from peripheral space, ITD cues derived from low frequencies are less susceptible to corruption (Cazettes et al., 2014; Fischer and Pe\u00f1a, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Cazettes et al., 2014 and Fischer and Pe\u00f1a, 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:24.044997Z"
+    },
+    {
+      "id": "b6e75a01-038c-42e4-af69-8a675ecf6f4f",
+      "content_id": "7207def0-56de-412e-a468-f5e0509f8cd8",
+      "claim_id": "C14",
+      "claim": "The facial ruff acts as an external ear, modulating the gain and phase of sounds reaching the eardrums.",
+      "claim_type": "EXPLICIT",
+      "source": "In the barn owl, the facial ruff, a disc of stiff feathers that surrounds the head, acts as an external ear, modulating the gain and phase of sounds reaching the eardrums (Coles and Guppy, 1988; Keller et al., 1998; von Campenhausen and Wagner, 2006; Hausmann et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations to Coles and Guppy, 1988; Keller et al., 1998; von Campenhausen and Wagner, 2006; and Hausmann et al., 2009.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:24.044997Z"
+    },
+    {
+      "id": "98c10e8d-1abd-4553-b958-ebeabc66cf3d",
+      "content_id": "7207def0-56de-412e-a468-f5e0509f8cd8",
+      "claim_id": "C15",
+      "claim": "After facial ruff removal, there was a sharp decrease in the reliability of high frequencies coming from frontal locations.",
+      "claim_type": "EXPLICIT",
+      "source": "After ruff removal, there was a sharp decrease in the reliability of high frequencies coming from frontal locations, with minimal changes elsewhere (Figure 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by HRTF-based analysis data presented in Figure 1b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:24.044997Z"
+    },
+    {
+      "id": "f3fb8206-d7a4-4d79-9f68-7918cf01c862",
+      "content_id": "7207def0-56de-412e-a468-f5e0509f8cd8",
+      "claim_id": "C16",
+      "claim": "After ruff removal, changes in reliability were stronger for frequencies above 4 kHz coming from within \u00b140\u00b0 of azimuth location.",
+      "claim_type": "EXPLICIT",
+      "source": "Computing the difference in reliability between the two conditions highlights that after ruff removal, the changes in reliability were stronger for frequencies above 4 kHz coming from within \u00b140\u00b0 of azimuth location (Figure 1c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the difference analysis presented in Figure 1c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:24.044997Z"
+    },
+    {
+      "id": "76ac0a2c-8cad-4561-9c8a-3c916d750db1",
+      "content_id": "7207def0-56de-412e-a468-f5e0509f8cd8",
+      "claim_id": "C17",
+      "claim": "117 ICx neurons were recorded across two ruff-removed owls.",
+      "claim_type": "EXPLICIT",
+      "source": "We recorded 117 ICx neurons across the two owls.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of the experimental data collected.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:24.044997Z"
+    },
+    {
+      "id": "83981c9c-9607-45fb-a7b8-14d8f2b237d6",
+      "content_id": "7207def0-56de-412e-a468-f5e0509f8cd8",
+      "claim_id": "C18",
+      "claim": "The recorded population of ICx neurons in ruff-removed owls spanned ITD tunings of 0\u2013230 \u00b5s, which equates to a range of 0\u201375\u00b0 azimuth.",
+      "claim_type": "EXPLICIT",
+      "source": "The recorded population spanned ITD tunings of 0\u2013230 \u00b5s, which equates to a range of 0\u201375\u00b0 azimuth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of the experimental data collected.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:24.044997Z"
+    },
+    {
+      "id": "a0e53813-cd0d-4577-aa48-40f0e91f47e7",
+      "content_id": "7207def0-56de-412e-a468-f5e0509f8cd8",
+      "claim_id": "C19",
+      "claim": "On a population-wide scale, ILD tuning was correlated with ITD tuning in ruff-removed owls.",
+      "claim_type": "EXPLICIT",
+      "source": "However, on a population-wide scale, ILD tuning was correlated with ITD tuning in these owls (Figure 2d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the correlation analysis presented in Figure 2d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:24.044997Z"
+    },
+    {
+      "id": "9188ad8b-61a8-4041-bb39-fa6dfa28267d",
+      "content_id": "7207def0-56de-412e-a468-f5e0509f8cd8",
+      "claim_id": "C20",
+      "claim": "In normal adult owls, neurons tuned to ITDs near 0 \u00b5s are driven by high frequencies.",
+      "claim_type": "EXPLICIT",
+      "source": "In normal adult owls, neurons tuned to ITDs near 0 \u00b5s, or frontal locations, are driven by high frequencies, while neurons tuned to large ITDs, or peripheral locations, are driven by low frequencies (Cazettes et al., 2014), exposing a significant correlation between ITD and frequency tuning (r2 = 0.75, p=5.6e-55).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Cazettes et al., 2014 and the correlation analysis.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:24.044997Z"
+    },
+    {
+      "id": "2e759674-83a7-4c43-b21a-8bbe5f1e7eaf",
+      "content_id": "7207def0-56de-412e-a468-f5e0509f8cd8",
+      "claim_id": "C21",
+      "claim": "In normal adult owls, neurons tuned to large ITDs are driven by low frequencies.",
+      "claim_type": "EXPLICIT",
+      "source": "In normal adult owls, neurons tuned to ITDs near 0 \u00b5s, or frontal locations, are driven by high frequencies, while neurons tuned to large ITDs, or peripheral locations, are driven by low frequencies (Cazettes et al., 2014), exposing a significant correlation between ITD and frequency tuning (r2 = 0.75, p=5.6e-55).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Cazettes et al., 2014 and the correlation analysis.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:24.044997Z"
+    },
+    {
+      "id": "4ef3fdb4-992e-4b5d-8bf1-bdaa37c03c6c",
+      "content_id": "7207def0-56de-412e-a468-f5e0509f8cd8",
+      "claim_id": "C22",
+      "claim": "In ruff-removed owls, there was a shallower slope of the linear correlation between ITD and frequency tuning (r2 = 0.18, p=1.6e-06) compared to normal owls.",
+      "claim_type": "EXPLICIT",
+      "source": "In the ruff-removed owls, there was a shallower slope of the linear correlation between ITD and frequency tuning (r2 = 0.18, p=1.6e-06, Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the correlation analysis presented in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:24.044997Z"
+    },
+    {
+      "id": "43582b61-d60b-48d6-ab1d-ff46abdbb134",
+      "content_id": "7207def0-56de-412e-a468-f5e0509f8cd8",
+      "claim_id": "C23",
+      "claim": "The correlations between ITD and frequency tuning in normal and ruff-removed owls were significantly different (t-test: t = 8.97, p=3.0e-19).",
+      "claim_type": "EXPLICIT",
+      "source": "These two correlations were significantly different (t-test: t = 8.97, p=3.0e-19).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical comparison of the two correlation slopes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:24.044997Z"
+    },
+    {
+      "id": "8c648ae9-b9ef-4546-89ef-380b87e09a58",
+      "content_id": "7207def0-56de-412e-a468-f5e0509f8cd8",
+      "claim_id": "C24",
+      "claim": "The y-intercepts of the regression lines for normal owls (5.6 kHz) and ruff-removed owls (4.6 kHz) were significantly different (t = 7.56, p=4.0e-14).",
+      "claim_type": "EXPLICIT",
+      "source": "The y-intercepts of the regression lines, which can be used to compare the frequency tuning of frontal neurons, were also significantly different (normal owls = 5.6 kHz, ruff-removed owls = 4.6 kHz; t = 7.56, p=4.0e-14).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical comparison of the y-intercepts of the regression lines.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:24.044997Z"
+    },
+    {
+      "id": "1d51d9b1-cca5-4680-9cc9-6bad8f37086a",
+      "content_id": "7207def0-56de-412e-a468-f5e0509f8cd8",
+      "claim_id": "C25",
+      "claim": "A Mann\u2013Whitney U-test comparing the best frequency tuning of frontally tuned neurons (ITDs \u2264 30 \u00b5s) showed significant differences between normal and ruff-removed owls (u = 63, p=7.3e-08).",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, a Mann\u2013Whitney U-test comparing the best frequency tuning of the frontally tuned neurons, defined here as preferring ITDs \u2264 30 \u00b5s (~10\u00b0 eccentricity), produced consistent results (u = 63, p=7.3e-08).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical comparison of frequency tuning between groups.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:24.044997Z"
+    },
+    {
+      "id": "2d064690-089a-430d-9b36-9566005e49de",
+      "content_id": "7207def0-56de-412e-a468-f5e0509f8cd8",
+      "claim_id": "C26",
+      "claim": "Frontally tuned neurons of ruff-removed owls showed little responsivity to tones above 6 kHz.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with this, the frontally tuned neurons of ruff-removed owls showed little responsivity to tones above 6 kHz (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the frequency tuning curves presented in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:24.044997Z"
+    },
+    {
+      "id": "7d614d3e-e154-4cfa-9b6f-30c994400a9e",
+      "content_id": "7207def0-56de-412e-a468-f5e0509f8cd8",
+      "claim_id": "C27",
+      "claim": "ICx neurons of ruff-removed owls showed little ITD selectivity to frequencies outside their frequency range.",
+      "claim_type": "EXPLICIT",
+      "source": "ICx neurons of ruff-removed owls showed little ITD selectivity to frequencies outside their frequency range (Figure 3\u2014figure supplement 2), suggesting that these neurons cannot use high frequencies for sound localization.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the ITD tuning curves for different frequencies presented in Figure 3\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:24.044997Z"
+    },
+    {
+      "id": "5ae2e4a3-1c51-4a6b-9a03-729c7ff5107e",
+      "content_id": "7207def0-56de-412e-a468-f5e0509f8cd8",
+      "claim_id": "C28",
+      "claim": "43 ICCls neurons were recorded from the two ruff-removed owls in adulthood.",
+      "claim_type": "EXPLICIT",
+      "source": "We recorded 43 ICCls neurons from the same two ruff-removed owls in adulthood and found the normal frequency tuning range (1\u20138 kHz) across ITD-selective neurons (Figure 4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of the experimental data collected.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:24.044997Z"
+    },
+    {
+      "id": "549e4b42-289f-40b5-b2c0-2f47a1f6437c",
+      "content_id": "7207def0-56de-412e-a468-f5e0509f8cd8",
+      "claim_id": "C29",
+      "claim": "ICCls neurons in ruff-removed owls showed the normal frequency tuning range (1\u20138 kHz) across ITD-selective neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "We recorded 43 ICCls neurons from the same two ruff-removed owls in adulthood and found the normal frequency tuning range (1\u20138 kHz) across ITD-selective neurons (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the data presented in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:24.044997Z"
+    },
+    {
+      "id": "d904d840-dac2-4caf-8d62-70f15df7caf0",
+      "content_id": "7207def0-56de-412e-a468-f5e0509f8cd8",
+      "claim_id": "C30",
+      "claim": "ICCls neurons tuned to high frequencies and frontal ITDs were observed in ruff-removed owls.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, ICCls neurons tuned to high frequencies and frontal ITDs in ruff-removed owls were observed (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the data presented in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:24.044997Z"
+    },
+    {
+      "id": "d9ab3f89-130f-4ba6-ac47-f7f9b293f9ed",
+      "content_id": "7207def0-56de-412e-a468-f5e0509f8cd8",
+      "claim_id": "C31",
+      "claim": "The auditory system in ruff-removed owls is still able to use high frequencies to compute ITDs, but this is not passed onto the ICx.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that the auditory system is still able to use high frequencies to compute ITDs, but this is not passed onto the ICx.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that ICCls neurons maintain high-frequency ITD tuning while ICx neurons do not.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:24.044997Z"
+    },
+    {
+      "id": "64cf7cf7-171e-4ab2-b3f3-b3511d2f0cef",
+      "content_id": "7207def0-56de-412e-a468-f5e0509f8cd8",
+      "claim_id": "C32",
+      "claim": "In the normal condition, gain was strongest for high frequencies in frontal space, with negative gain at all other locations and frequencies.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with previous reports (Keller et al., 1998; Cazettes et al., 2014), gain in the normal condition was strongest for high frequencies in frontal space, with negative gain at all other locations and frequencies (Figure 5a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the gain analysis presented in Figure 5a and citations to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:24.044997Z"
+    },
+    {
+      "id": "667218fc-e225-46ed-972b-2fbf0fa8adf1",
+      "content_id": "7207def0-56de-412e-a468-f5e0509f8cd8",
+      "claim_id": "C33",
+      "claim": "In the ruff-removed condition, gain remained strongest for high frequencies in frontal space, but expanded slightly to include stronger gain in more peripheral locations.",
+      "claim_type": "EXPLICIT",
+      "source": "In the ruff-removed condition, gain remained strongest for high frequencies in frontal space, but expanded slightly to include stronger gain in more peripheral locations (Figure 5b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the gain analysis presented in Figure 5b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:24.044997Z"
+    },
+    {
+      "id": "ac7a7686-8b4c-472f-9df7-4d73f31cecdb",
+      "content_id": "7207def0-56de-412e-a468-f5e0509f8cd8",
+      "claim_id": "C34",
+      "claim": "The gain of lower frequencies had a more limited increase to approximately 0 dB after ruff removal.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the gain of lower frequencies had a more limited increase, to approximately 0 dB (i.e. no net gain change), likely because the facial ruff normally attenuates these sounds (Figure 5a, Coles and Guppy, 1988; Keller et al., 1998).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the gain analysis presented in Figure 5 and citations to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:24.044997Z"
+    },
+    {
+      "id": "d359cb4e-4365-425b-8b4a-c186be7d205c",
+      "content_id": "7207def0-56de-412e-a468-f5e0509f8cd8",
+      "claim_id": "C35",
+      "claim": "High frequencies remain the most audible in frontal locations after facial ruff removal.",
+      "claim_type": "EXPLICIT",
+      "source": "This analysis suggests that the limited changes in gain across frequencies are insufficient to explain the changes in frequency tuning as high frequencies remain the most audible in frontal locations after facial ruff removal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the gain analysis presented in Figure 5.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:24.044997Z"
+    },
+    {
+      "id": "55dc8a64-0575-4c7c-8333-81df1036c1e9",
+      "content_id": "7207def0-56de-412e-a468-f5e0509f8cd8",
+      "claim_id": "C36",
+      "claim": "Recordings were performed from two juvenile owls at 42 and 44 d post hatching.",
+      "claim_type": "EXPLICIT",
+      "source": "Recordings were performed from two juvenile owls at 42 and 44 d post hatching.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of the experimental procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:24.044997Z"
+    },
+    {
+      "id": "cf4c6d91-c965-437e-a2a2-639bc80968d3",
+      "content_id": "7207def0-56de-412e-a468-f5e0509f8cd8",
+      "claim_id": "C37",
+      "claim": "At 42 and 44 d post hatching, the ruff feathers were still within the sheathed stalks.",
+      "claim_type": "EXPLICIT",
+      "source": "These time points corresponded to ongoing ruff development as the ruff feathers were still within the sheathed stalks, with the ruff not fully developing until approximately 60 d post hatching (Haresign and Moiseff, 1988).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by observation and citation to Haresign and Moiseff, 1988.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:24.044997Z"
+    },
+    {
+      "id": "9f3e1b7a-a61d-44e6-9159-ac60d918eee7",
+      "content_id": "7207def0-56de-412e-a468-f5e0509f8cd8",
+      "claim_id": "C38",
+      "claim": "The ruff does not fully develop until approximately 60 d post hatching.",
+      "claim_type": "EXPLICIT",
+      "source": "These time points corresponded to ongoing ruff development as the ruff feathers were still within the sheathed stalks, with the ruff not fully developing until approximately 60 d post hatching (Haresign and Moiseff, 1988).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Haresign and Moiseff, 1988.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:24.044997Z"
+    },
+    {
+      "id": "f791c404-7ae7-4239-9418-de9e983e4c79",
+      "content_id": "7207def0-56de-412e-a468-f5e0509f8cd8",
+      "claim_id": "C39",
+      "claim": "These recordings are the earliest performed during the development of the barn owl's midbrain.",
+      "claim_type": "EXPLICIT",
+      "source": "To our knowledge, these recordings are the earliest performed during the development of the barn owl's midbrain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the novelty of the recordings based on the authors' knowledge of the literature.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:24.044997Z"
+    },
+    {
+      "id": "f4f92752-565e-429a-8a3b-4f1310e6a66e",
+      "content_id": "7207def0-56de-412e-a468-f5e0509f8cd8",
+      "claim_id": "C40",
+      "claim": "39 ICx neurons were identified in juvenile owls.",
+      "claim_type": "EXPLICIT",
+      "source": "We were able to identify 39 ICx neurons, which showed typical topographic ITD tuning, as well as latencies and thresholds.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of the experimental data collected.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:24.044997Z"
+    },
+    {
+      "id": "df837572-6134-4891-b8d8-495cfed6fe0c",
+      "content_id": "7207def0-56de-412e-a468-f5e0509f8cd8",
+      "claim_id": "C41",
+      "claim": "ICx neurons in juvenile owls showed typical topographic ITD tuning, as well as latencies and thresholds.",
+      "claim_type": "EXPLICIT",
+      "source": "We were able to identify 39 ICx neurons, which showed typical topographic ITD tuning, as well as latencies and thresholds.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of the experimental observations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:24.044997Z"
+    },
+    {
+      "id": "2b0a9ae0-c862-4847-80ac-8b7004008f89",
+      "content_id": "7207def0-56de-412e-a468-f5e0509f8cd8",
+      "claim_id": "C42",
+      "claim": "ILD tuning did not change with depth along the dorsal-ventral axis in juvenile owls, as observed in normal adult ICx.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we found that ILD tuning did not change with depth along the dorsal-ventral axis, as observed in normal adult ICx (Figure 7\u2014figure supplement 1; Mogdans and Knudsen, 1993).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the data presented in Figure 7\u2014figure supplement 1 and citation to Mogdans and Knudsen, 1993.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:24.044997Z"
+    },
+    {
+      "id": "5a122332-2e02-40b7-9321-8f1a199394b7",
+      "content_id": "7207def0-56de-412e-a468-f5e0509f8cd8",
+      "claim_id": "C43",
+      "claim": "There was no correlation between ITD and best frequency in juvenile owls (r2 = 0.18, p=0.28).",
+      "claim_type": "EXPLICIT",
+      "source": "There was no correlation between ITD and best frequency in the juvenile owls (r2 = 0.18, p=0.28), although this may be attributed to the lack of recorded neurons tuned to ITDs >120 \u00b5s (Figure 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the correlation analysis presented in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:24.044997Z"
+    },
+    {
+      "id": "dcec663b-97ce-4e6a-8016-e02a90eb5d8b",
+      "content_id": "7207def0-56de-412e-a468-f5e0509f8cd8",
+      "claim_id": "C44",
+      "claim": "There was a significant difference in best frequency tuning of frontal neurons between juvenile owls and normal adult owls (u = 558, p=5.9e-04).",
+      "claim_type": "EXPLICIT",
+      "source": "When we compared the best frequency tuning of frontal neurons, there was a significant difference between the juvenile owls and both the normal (u = 558, p=5.9e-04) and ruff-removed (u = 281, p=3.2e-03) adult owls (Figure 8a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the Mann-Whitney U-test results presented in Figure 8a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:24.044997Z"
+    },
+    {
+      "id": "d6b81a23-0197-4145-8182-87efdcab2806",
+      "content_id": "7207def0-56de-412e-a468-f5e0509f8cd8",
+      "claim_id": "C45",
+      "claim": "There was a significant difference in best frequency tuning of frontal neurons between juvenile owls and ruff-removed adult owls (u = 281, p=3.2e-03).",
+      "claim_type": "EXPLICIT",
+      "source": "When we compared the best frequency tuning of frontal neurons, there was a significant difference between the juvenile owls and both the normal (u = 558, p=5.9e-04) and ruff-removed (u = 281, p=3.2e-03) adult owls (Figure 8a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the Mann-Whitney U-test results presented in Figure 8a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:24.044997Z"
+    },
+    {
+      "id": "27a6f160-8f1b-43ca-82f0-7e915d21d6a9",
+      "content_id": "7207def0-56de-412e-a468-f5e0509f8cd8",
+      "claim_id": "C46",
+      "claim": "The mean best frequency of frontal neurons in juvenile owls was 4.9 kHz.",
+      "claim_type": "EXPLICIT",
+      "source": "The mean best frequency of the frontal neurons in juvenile owls was 4.9 kHz, which is between that of normal and ruff-removed adult owls.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of the calculated mean from the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:24.044997Z"
+    },
+    {
+      "id": "a269fb32-f438-4b9f-abe9-3bb8d0ec8f14",
+      "content_id": "7207def0-56de-412e-a468-f5e0509f8cd8",
+      "claim_id": "C47",
+      "claim": "There was a significant difference in the high-frequency bounds between juvenile and ruff-removed owls (u = 206, p=6.2e-05).",
+      "claim_type": "EXPLICIT",
+      "source": "While there was a significant difference in the neurons' high-frequency bounds between the juvenile and ruff-removed owls (u = 206, p=6.2e-05), there was no significant difference between the juvenile and normal adult owls (u = 409, p=0.4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the Mann-Whitney U-test results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:24.044997Z"
+    },
+    {
+      "id": "22702258-a711-4d49-815b-a0f09bfef7ab",
+      "content_id": "7207def0-56de-412e-a468-f5e0509f8cd8",
+      "claim_id": "C48",
+      "claim": "There was no significant difference in the high-frequency bounds between juvenile and normal adult owls (u = 409, p=0.4).",
+      "claim_type": "EXPLICIT",
+      "source": "While there was a significant difference in the neurons' high-frequency bounds between the juvenile and ruff-removed owls (u = 206, p=6.2e-05), there was no significant difference between the juvenile and normal adult owls (u = 409, p=0.4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the Mann-Whitney U-test results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:24.044997Z"
+    },
+    {
+      "id": "cb94dddc-8baa-4e6a-8b57-2a23ff682910",
+      "content_id": "7207def0-56de-412e-a468-f5e0509f8cd8",
+      "claim_id": "C49",
+      "claim": "There was a significant difference in the low-frequency bounds between juvenile and normal adult owls (u = 600, p=3e-05).",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, we saw the opposite for the low-frequency bounds: there was a difference between the juvenile and normal adult owls (u = 600, p=3e-05), but no significant difference between the juvenile and ruff-removed owls (u = 466, p=0.7).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the Mann-Whitney U-test results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:24.044997Z"
+    },
+    {
+      "id": "10afe150-74fa-4e3e-9858-b5e08566e579",
+      "content_id": "7207def0-56de-412e-a468-f5e0509f8cd8",
+      "claim_id": "C50",
+      "claim": "There was no significant difference in the low-frequency bounds between juvenile and ruff-removed owls (u = 466, p=0.7).",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, we saw the opposite for the low-frequency bounds: there was a difference between the juvenile and normal adult owls (u = 600, p=3e-05), but no significant difference between the juvenile and ruff-removed owls (u = 466, p=0.7).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the Mann-Whitney U-test results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:24.044997Z"
+    },
+    {
+      "id": "23453bb9-ba6d-4320-bbcb-69d6f70b521b",
+      "content_id": "7207def0-56de-412e-a468-f5e0509f8cd8",
+      "claim_id": "C51",
+      "claim": "Juvenile owls' ICx neurons are broader and more heterogeneously tuned to frequency than normal or ruff-removed adult owls.",
+      "claim_type": "EXPLICIT",
+      "source": "These results are summarized in Figure 8b and suggest that the juvenile owls' ICx neurons are broader and more heterogeneously tuned to frequency than normal or ruff-removed adult owls, which then gets refined during development.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the frequency bound analysis presented in Figure 8b.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:24.044997Z"
+    },
+    {
+      "id": "76ecd732-500a-4ab1-9d06-4f82bcaf6771",
+      "content_id": "7207def0-56de-412e-a468-f5e0509f8cd8",
+      "claim_id": "C52",
+      "claim": "There were significant differences in the responsive frequency range of ICx neurons between juvenile owls and normal adult owls (u = 190, p=0.003).",
+      "claim_type": "EXPLICIT",
+      "source": "In accordance with this, we found significant differences in the responsive frequency range of ICx neurons between the juvenile owls and both the normal adult owls (u = 190, p=0.003) and ruff-removed adults (u = 221, p=1.6e-04), but not between the normal and ruff-removed adults (u = 418, p=0.73) (Figure 8c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the Mann-Whitney U-test results presented in Figure 8c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:24.044997Z"
+    },
+    {
+      "id": "f392dbf1-0537-4bbb-b14a-afe048f5519a",
+      "content_id": "7207def0-56de-412e-a468-f5e0509f8cd8",
+      "claim_id": "C53",
+      "claim": "There were significant differences in the responsive frequency range of ICx neurons between juvenile owls and ruff-removed adults (u = 221, p=1.6e-04).",
+      "claim_type": "EXPLICIT",
+      "source": "In accordance with this, we found significant differences in the responsive frequency range of ICx neurons between the juvenile owls and both the normal adult owls (u = 190, p=0.003) and ruff-removed adults (u = 221, p=1.6e-04), but not between the normal and ruff-removed adults (u = 418, p=0.73) (Figure 8c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the Mann-Whitney U-test results presented in Figure 8c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:24.044997Z"
+    },
+    {
+      "id": "b33f7750-07e6-43c0-a3b8-2675634666eb",
+      "content_id": "7207def0-56de-412e-a468-f5e0509f8cd8",
+      "claim_id": "C54",
+      "claim": "There was no significant difference in the responsive frequency range between normal and ruff-removed adults (u = 418, p=0.73).",
+      "claim_type": "EXPLICIT",
+      "source": "In accordance with this, we found significant differences in the responsive frequency range of ICx neurons between the juvenile owls and both the normal adult owls (u = 190, p=0.003) and ruff-removed adults (u = 221, p=1.6e-04), but not between the normal and ruff-removed adults (u = 418, p=0.73) (Figure 8c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the Mann-Whitney U-test results presented in Figure 8c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:24.044997Z"
+    },
+    {
+      "id": "656a0d0b-10d0-409c-b464-16fd55e7591a",
+      "content_id": "7207def0-56de-412e-a468-f5e0509f8cd8",
+      "claim_id": "C55",
+      "claim": "ITD tuning width of frontal neurons was significantly broader in ruff-removed owls (u = 72, p=1.2e-07) compared to normal owls.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of ITD tuning width of frontal neurons showed significantly broader tuning width in ruff-removed (u = 72, p=1.2e-07) and juvenile owls (u = 188, p=0.0028), consistent with their tuning to lower frequencies and the known relationship between frequency tuning and ITD tuning width of midbrain neurons (Takahashi and Konishi, 1986; Wagner et al., 2007; Figure 8d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the Mann-Whitney U-test results presented in Figure 8d and citations to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:24.044997Z"
+    },
+    {
+      "id": "78e28c4d-640c-4c1d-bf69-14e7bc93acaf",
+      "content_id": "7207def0-56de-412e-a468-f5e0509f8cd8",
+      "claim_id": "C56",
+      "claim": "ITD tuning width of frontal neurons was significantly broader in juvenile owls (u = 188, p=0.0028) compared to normal owls.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of ITD tuning width of frontal neurons showed significantly broader tuning width in ruff-removed (u = 72, p=1.2e-07) and juvenile owls (u = 188, p=0.0028), consistent with their tuning to lower frequencies and the known relationship between frequency tuning and ITD tuning width of midbrain neurons (Takahashi and Konishi, 1986; Wagner et al., 2007; Figure 8d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the Mann-Whitney U-test results presented in Figure 8d and citations to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:24.044997Z"
+    },
+    {
+      "id": "88f8f364-e666-42e8-a3d2-060607749ced",
+      "content_id": "7207def0-56de-412e-a468-f5e0509f8cd8",
+      "claim_id": "C57",
+      "claim": "In barn owls that developed without a facial ruff, there is an altered relationship between the tunings to ITD and frequency relative to normal adult barn owls.",
+      "claim_type": "EXPLICIT",
+      "source": "We report that in barn owls that developed without a facial ruff, there is an altered relationship between the tunings to ITD and frequency relative to previous reports from normal adult barn owls (Knudsen et al., 1984; Cazettes et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main finding of the study, supported by the experimental data.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:24.044997Z"
+    },
+    {
+      "id": "ca65af40-30c8-4712-9393-2bc99cf09d40",
+      "content_id": "7207def0-56de-412e-a468-f5e0509f8cd8",
+      "claim_id": "C58",
+      "claim": "Ruff-removed barn owls showed on average a decrease in frequency tuning for frontally tuned ICx neurons, from 6 kHz to 4.5 kHz.",
+      "claim_type": "EXPLICIT",
+      "source": "These ruff-removed barn owls showed on average a decrease in frequency tuning for frontally tuned ICx neurons, from 6 kHz to 4.5 kHz, with no change in frequency tuning width (Figure 8c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the data presented in Figure 8.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:24.044997Z"
+    },
+    {
+      "id": "67520f8a-c1ab-47ca-99e8-a7b6018e5dc1",
+      "content_id": "7207def0-56de-412e-a468-f5e0509f8cd8",
+      "claim_id": "C59",
+      "claim": "There was no change in frequency tuning width in ruff-removed owls compared to normal owls.",
+      "claim_type": "EXPLICIT",
+      "source": "These ruff-removed barn owls showed on average a decrease in frequency tuning for frontally tuned ICx neurons, from 6 kHz to 4.5 kHz, with no change in frequency tuning width (Figure 8c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the data presented in Figure 8c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:24.044997Z"
+    },
+    {
+      "id": "1b736f58-1ac5-4f95-b8c1-f4a1ba70b774",
+      "content_id": "7207def0-56de-412e-a468-f5e0509f8cd8",
+      "claim_id": "C60",
+      "claim": "Neurons immediately upstream of the ICx maintained the ability to resolve ITD at high frequencies in ruff-removed owls.",
+      "claim_type": "EXPLICIT",
+      "source": "In support of this, neurons immediately upstream of the ICx maintained the ability to resolve ITD at these high frequencies (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the ICCls recordings presented in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:24.044997Z"
+    },
+    {
+      "id": "256288bf-b488-43ef-96ea-65332a502970",
+      "content_id": "7207def0-56de-412e-a468-f5e0509f8cd8",
+      "claim_id": "C61",
+      "claim": "The best frequency tuning for frontally tuned ICx neurons in juvenile owls were lower than in normal adults but higher than in ruff-removed owls.",
+      "claim_type": "EXPLICIT",
+      "source": "The best frequency tuning we found for frontally tuned ICx neurons in juvenile owls were lower than what has been found in normal adults (Cazettes et al., 2014), but higher than what is found in ruff-removed owls (Figure 8).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the data presented in Figure 8 and citation to Cazettes et al., 2014.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:24.044997Z"
+    },
+    {
+      "id": "fdddcebc-5334-40f3-951e-02397be9766e",
+      "content_id": "7207def0-56de-412e-a468-f5e0509f8cd8",
+      "claim_id": "C62",
+      "claim": "At the time of recording (42-44 days post hatching), the barn owl's ICx frequency tuning is not yet shaped by ITD reliability.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that at this time point the barn owl's ICx frequency tuning is not yet shaped by ITD reliability, which may change rapidly in response to the facial ruff's development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that juvenile frequency tuning is intermediate between normal and ruff-removed conditions.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:24.044997Z"
+    },
+    {
+      "id": "a722d766-8a7d-405f-be81-ce928cf6feb4",
+      "content_id": "7207def0-56de-412e-a468-f5e0509f8cd8",
+      "claim_id": "C63",
+      "claim": "Juvenile ICx neurons had slightly wider and heterogenous frequency tuning widths than either normal adult or ruff-removed adults.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this hypothesis, we found that juvenile ICx neurons had slightly wider and heterogenous frequency tuning widths than either the normal adult or ruff-removed adults, covering the ranges of both adult groups, but not a width that would indicate that each of these ICx neurons were sampling the entire frequency range available to the barn owl for ITD detection (0.5\u20139 kHz).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the frequency range analysis presented in Figure 8.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:24.044997Z"
+    },
+    {
+      "id": "248d8f97-4413-47bb-9b5f-6d2c70d9e9eb",
+      "content_id": "7207def0-56de-412e-a468-f5e0509f8cd8",
+      "claim_id": "C64",
+      "claim": "Juvenile owl's ICx shows high heterogeneity in frequency tuning at the time that the facial ruff would begin to grow in.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests high heterogeneity in the juvenile owl's ICx frequency tuning at the time that the facial ruff would begin to grow in.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation of wider and more variable frequency tuning in juvenile owls.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:24.044997Z"
+    },
+    {
+      "id": "b8fd27e1-9109-4323-a4a2-b40f845b29a7",
+      "content_id": "7207def0-56de-412e-a468-f5e0509f8cd8",
+      "claim_id": "C65",
+      "claim": "As the owl develops, individual neurons may sharpen their frequency tuning to match the pattern of ITD reliability the owl experiences during development.",
+      "claim_type": "EXPLICIT",
+      "source": "As the owl develops, these individual neurons may sharpen their frequency tuning to match the pattern of ITD reliability the owl experiences during development or the neurons that respond to unreliable frequencies could be pruned during development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative hypothesis about the developmental mechanism.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:24.044997Z"
+    },
+    {
+      "id": "40292286-5c69-4ce0-8399-f0fe78a2f7d9",
+      "content_id": "7207def0-56de-412e-a468-f5e0509f8cd8",
+      "claim_id": "C66",
+      "claim": "Neurons that respond to unreliable frequencies could be pruned during development.",
+      "claim_type": "EXPLICIT",
+      "source": "As the owl develops, these individual neurons may sharpen their frequency tuning to match the pattern of ITD reliability the owl experiences during development or the neurons that respond to unreliable frequencies could be pruned during development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative hypothesis about the developmental mechanism.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:24.044997Z"
+    },
+    {
+      "id": "e2338623-71f6-4694-8497-e91d62180db8",
+      "content_id": "7207def0-56de-412e-a468-f5e0509f8cd8",
+      "claim_id": "C67",
+      "claim": "A juvenile owl undergoes a process to refine the frequency tuning in the ICx based on the pattern of ITD reliability experienced during early-life development.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest a juvenile owl undergoes a process to refine the frequency tuning in the ICx based on the pattern of ITD reliability that the owl experiences during early-life development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion inferred from the developmental observations.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:24.044997Z"
+    },
+    {
+      "id": "4c6adbe6-3b69-4ca2-9768-bfdc744ea90e",
+      "content_id": "7207def0-56de-412e-a468-f5e0509f8cd8",
+      "claim_id": "C68",
+      "claim": "Along normal development, the frequency tuning of frontally tuned neurons changes in a manner consistent with an increase in high-frequency reliability at frontal locations.",
+      "claim_type": "EXPLICIT",
+      "source": "Along normal development, the frequency tuning of frontally tuned neurons changes in a manner consistent with an increase in high-frequency reliability at frontal locations, determined by the acoustic properties of the facial ruff.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the comparison of juvenile and adult frequency tuning patterns.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:24.044997Z"
+    },
+    {
+      "id": "03c2f01f-9885-446f-b5e1-26d690b693c6",
+      "content_id": "7207def0-56de-412e-a468-f5e0509f8cd8",
+      "claim_id": "C69",
+      "claim": "The difference in frequency tuning of frontally tuned neurons between normal adults and juveniles (rank-biserial correlation, r = 0.55) is smaller than the difference between normal adult and ruff-removed owls (rank-biserial correlation, r = 0.84).",
+      "claim_type": "EXPLICIT",
+      "source": "It should be noted that the difference in frequency tuning of frontally tuned neurons between normal adults and juveniles (rank-biserial correlation, r = 0.55) is smaller than the difference between normal adult and ruff-removed owls (rank-biserial correlation, r = 0.84).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical comparison of effect sizes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:24.044997Z"
+    },
+    {
+      "id": "f7150e96-099c-489e-86ce-0f7493b91f02",
+      "content_id": "7207def0-56de-412e-a468-f5e0509f8cd8",
+      "claim_id": "C70",
+      "claim": "The ruff-removed owls still underwent a refinement in ICx frequency tuning, but toward lower frequencies compared to normal adults.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that the ruff-removed owls still underwent a refinement in ICx frequency tuning, but toward lower frequencies compared to normal adults.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the comparison of effect sizes between juvenile-normal and juvenile-ruff-removed differences.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:24.044997Z"
+    },
+    {
+      "id": "fbfba05f-b02e-42d3-8e61-476e9ceddc87",
+      "content_id": "7207def0-56de-412e-a468-f5e0509f8cd8",
+      "claim_id": "C71",
+      "claim": "The timing of ruff development, which completes at approximately 60 d post hatching, aligns with previous reports of a critical period in the barn owl.",
+      "claim_type": "EXPLICIT",
+      "source": "The timing of ruff development, which completes at approximately 60 d post hatching, aligns with previous reports of a critical period in the barn owl, which can remain open to 200 d post hatching (Knudsen et al., 1984; Brainard and Knudsen, 1993; Brainard and Knudsen, 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work on critical periods.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:24.044997Z"
+    },
+    {
+      "id": "f1fe14be-774d-4503-ba01-49383976bd48",
+      "content_id": "7207def0-56de-412e-a468-f5e0509f8cd8",
+      "claim_id": "C72",
+      "claim": "The shift in frequency tuning likely occurs over the critical period (60-200 days post hatching).",
+      "claim_type": "EXPLICIT",
+      "source": "Although not directly tested in this study, it is likely that the shift in frequency tuning occurs over this time period.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative inference based on the timing of ruff development and known critical periods.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:24.044997Z"
+    },
+    {
+      "id": "c4ee74ad-d916-4e03-ae52-89e21fdd23d5",
+      "content_id": "7207def0-56de-412e-a468-f5e0509f8cd8",
+      "claim_id": "C73",
+      "claim": "The effect of ruff removal on ITD reliability is unlikely to be due solely to a change in gain of sound level.",
+      "claim_type": "EXPLICIT",
+      "source": "It is unlikely that the effect of ruff removal on ITD reliability is due solely to a change in gain of sound level as this and previous reports found that ruff removal decreases the gain across frequencies, yet the gain remains higher for higher frequencies around 6\u20138 kHz (Figure 5, Coles and Guppy, 1988; von Campenhausen and Wagner, 2006), inconsistent with the estimated lower ITD reliability of high-frequency sounds in frontal locations for these owls.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the gain analysis and comparison with ITD reliability changes.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:24.044997Z"
+    },
+    {
+      "id": "667cf2df-bf5c-4ed0-ab97-06cd2bbe4a13",
+      "content_id": "7207def0-56de-412e-a468-f5e0509f8cd8",
+      "claim_id": "C74",
+      "claim": "The rate of change of ITD (\u00b5s/deg) is not reported to change significantly across frequencies after ruff removal.",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise, the rate of change of ITD (\u00b5s/deg), another significant statistic determining ITD discriminability (Feddersen et al., 1957; Gelfand, 2016; Pav\u00e3o et al., 2020), is not reported to change significantly across frequencies after ruff removal (von Campenhausen and Wagner, 2006), reducing the possibility of it being an alternative mechanism driving change of frequency tuning.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to von Campenhausen and Wagner, 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:24.044997Z"
+    },
+    {
+      "id": "3aed6386-b411-45d8-8a1f-1352f48be6f5",
+      "content_id": "7207def0-56de-412e-a468-f5e0509f8cd8",
+      "claim_id": "C75",
+      "claim": "Gain alone cannot explain the frequency tuning in the ICx.",
+      "claim_type": "EXPLICIT",
+      "source": "This is consistent with previous work which reported that gain alone cannot explain the frequency tuning in the ICx (Cazettes et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Cazettes et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:24.044997Z"
+    },
+    {
+      "id": "46499925-c1ef-4b8d-b515-497688bd3c77",
+      "content_id": "7207def0-56de-412e-a468-f5e0509f8cd8",
+      "claim_id": "C76",
+      "claim": "Testing of spatial tuning changes showed no systematic frequency-dependent effects after ruff removal.",
+      "claim_type": "EXPLICIT",
+      "source": "Additional testing of whether the observed change in frequency tuning of frontal neurons could be determined by the reported changes in the pattern of ITD and ILD across spatial locations after ruff removal (Knudsen et al., 1984; von Campenhausen and Wagner, 2006) showed no systematic frequency-dependent effects (Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the spatial tuning modeling presented in Figure 6.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:24.044997Z"
+    },
+    {
+      "id": "a53f70dc-235c-4615-8c09-ce330b82b35e",
+      "content_id": "7207def0-56de-412e-a468-f5e0509f8cd8",
+      "claim_id": "C77",
+      "claim": "After ruff removal, there was an increase in the potential efficacy of high frequencies for frontal space.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, after facial ruff removal, we noticed an increase in the potential efficacy of high frequencies for frontal space, likely due to ILD being correlated with azimuth after facial ruff removal (Knudsen et al., 1984; Figure 2d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the spatial tuning modeling and ILD-azimuth correlation.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:24.044997Z"
+    },
+    {
+      "id": "ffb6615e-cff5-4f76-819c-9e792a47774a",
+      "content_id": "7207def0-56de-412e-a468-f5e0509f8cd8",
+      "claim_id": "C78",
+      "claim": "The barn owl's frequency tuning is driven by ITD reliability rather than solely spatial tuning.",
+      "claim_type": "EXPLICIT",
+      "source": "These results further support the hypothesis that the barn owl's frequency tuning is driven by ITD reliability rather than solely spatial tuning.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion inferred from the various control analyses.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:24.044997Z"
+    },
+    {
+      "id": "9f9ade39-b89e-4b71-93cb-c162a3b7e77e",
+      "content_id": "7207def0-56de-412e-a468-f5e0509f8cd8",
+      "claim_id": "C79",
+      "claim": "The majority of the barn owl's basilar papilla responds to 5\u201310 kHz.",
+      "claim_type": "EXPLICIT",
+      "source": "The majority of the barn owl's basilar papilla responds to 5\u201310 kHz (K\u00f6ppl et al., 1993), which may induce a bias toward high frequencies into the downstream auditory centers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to K\u00f6ppl et al., 1993.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:24.044997Z"
+    },
+    {
+      "id": "ac5e0cdb-95a2-41c8-8ca3-7f89ea90ff83",
+      "content_id": "7207def0-56de-412e-a468-f5e0509f8cd8",
+      "claim_id": "C80",
+      "claim": "The eardrum may have detection biases for frequencies above 3 kHz.",
+      "claim_type": "EXPLICIT",
+      "source": "The eardrum itself may also have detection biases for frequencies above 3 kHz (Kettler et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Kettler et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:24.044997Z"
+    },
+    {
+      "id": "b77bc60f-bca5-42f4-aac5-c705a0dcefb9",
+      "content_id": "7207def0-56de-412e-a468-f5e0509f8cd8",
+      "claim_id": "C81",
+      "claim": "The ICCls and midbrain maps contain few neurons tuned to frequencies below 1 kHz.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, the ICCls and midbrain maps contain few neurons tuned to frequencies below 1 kHz (Figure 4, Wagner et al., 2007; Cazettes et al., 2014).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the data in Figure 4 and citations to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:24.044997Z"
+    },
+    {
+      "id": "c9a3df46-c726-4526-b13d-4f407397740b",
+      "content_id": "7207def0-56de-412e-a468-f5e0509f8cd8",
+      "claim_id": "C82",
+      "claim": "The cochlear and eardrum properties likely evolved simultaneously with the evolution of the facial ruff to facilitate the use of ITD detection at high frequencies.",
+      "claim_type": "EXPLICIT",
+      "source": "While these properties are not expected to be affected by the facial ruff, they likely evolved simultaneously with the evolution of the facial ruff to facilitate the use of ITD detection at high frequencies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative inference about evolutionary relationships.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:24.044997Z"
+    },
+    {
+      "id": "3a1ae995-2486-490a-a4c9-1e219b677fe1",
+      "content_id": "7207def0-56de-412e-a468-f5e0509f8cd8",
+      "claim_id": "C83",
+      "claim": "The ICx mostly covers 30\u00b0 ipsilateral to 90\u00b0 contralateral space, which equates to approximately +90 \u00b5s to \u2013300 \u00b5s ITD.",
+      "claim_type": "EXPLICIT",
+      "source": "The ICx, as well as the downstream optic tectum, mostly cover 30\u00b0 ipsilateral to 90\u00b0 contralateral space, which equates to approximately +90 \u00b5s to \u2013300 \u00b5s ITD (Knudsen, 1982; Knudsen, 1984; Cazettes et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:24.044997Z"
+    },
+    {
+      "id": "1f76eab0-61d5-4523-9bc5-b5749472792d",
+      "content_id": "7207def0-56de-412e-a468-f5e0509f8cd8",
+      "claim_id": "C84",
+      "claim": "The most rearward locations are significantly underrepresented in the auditory midbrain.",
+      "claim_type": "EXPLICIT",
+      "source": "This means that the most rearward locations are significantly underrepresented in the auditory midbrain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the spatial coverage of the ICx.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:24.044997Z"
+    },
+    {
+      "id": "4bea207f-5fda-4f26-86c8-48e85b40ac99",
+      "content_id": "7207def0-56de-412e-a468-f5e0509f8cd8",
+      "claim_id": "C85",
+      "claim": "The changes in frequency tuning occurred in animals maintained in regular group aviaries with daily feeding and absence of specific task training or survival needs.",
+      "claim_type": "EXPLICIT",
+      "source": "The changes in frequency tuning we found occurred in animals maintained in regular group aviaries with daily feeding and absence of specific task training or survival needs such as hunting experience or auditory-driven tasks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the experimental conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:24.044997Z"
+    },
+    {
+      "id": "65108b73-77b7-4bef-8b29-12ca77eb6c33",
+      "content_id": "7207def0-56de-412e-a468-f5e0509f8cd8",
+      "claim_id": "C86",
+      "claim": "The shaping of the owl's ICx frequency tuning based on anticipated ITD reliability may be a normal and robust step in owl's development.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the shaping of the owl's ICx frequency tuning based on anticipated ITD reliability may be a normal and robust step in owl's development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that changes occur without specific training.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:24.044997Z"
+    },
+    {
+      "id": "f565115f-120f-48a1-b9a4-fadde3595af1",
+      "content_id": "7207def0-56de-412e-a468-f5e0509f8cd8",
+      "claim_id": "C87",
+      "claim": "This work provides evidence that the brain can assess the reliability of an auditory spatial cue along normal development and experience-dependent changes.",
+      "claim_type": "EXPLICIT",
+      "source": "In sum, this work provides evidence that the brain can assess the reliability of an auditory spatial cue along normal development and experience-dependent changes and use this information to drive neural tunings matching anticipated reliability across frequency and locations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion of the study.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:24.044997Z"
+    },
+    {
+      "id": "8b55035f-2491-4f55-bc61-70149033bb94",
+      "content_id": "7207def0-56de-412e-a468-f5e0509f8cd8",
+      "claim_id": "C88",
+      "claim": "This is the first description of the natural learning of cue reliability implemented in a midbrain network.",
+      "claim_type": "EXPLICIT",
+      "source": "To our knowledge, this is the first description of the natural learning of cue reliability, where the learning is implemented in a midbrain network, in contrast with previous work finding similar results in the forebrain (Keating et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the novelty of the findings based on the authors' knowledge of the literature.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:24.044997Z"
+    },
+    {
+      "id": "99ab07ca-0ba3-40f4-a8c5-fced1332b190",
+      "content_id": "7207def0-56de-412e-a468-f5e0509f8cd8",
+      "claim_id": "C89",
+      "claim": "Anticipated ITD cue reliability has been shown to drive spatial discriminability in humans.",
+      "claim_type": "EXPLICIT",
+      "source": "As anticipated ITD cue reliability has also been shown to drive spatial discriminability in humans (Pav\u00e3o et al., 2020), it is possible that a similar learning process could occur as the human head and ears grow and develop.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Pav\u00e3o et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:24.044997Z"
+    },
+    {
+      "id": "fdba4c38-3013-4107-b773-4a0faefc9ded",
+      "content_id": "7207def0-56de-412e-a468-f5e0509f8cd8",
+      "claim_id": "C90",
+      "claim": "A similar learning process could occur in humans as the head and ears grow and develop.",
+      "claim_type": "EXPLICIT",
+      "source": "As anticipated ITD cue reliability has also been shown to drive spatial discriminability in humans (Pav\u00e3o et al., 2020), it is possible that a similar learning process could occur as the human head and ears grow and develop.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative inference about potential human development.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:24.044997Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "2fcde457-08a8-4f1a-8fd7-a49ad56244a4",
+      "content_id": "7207def0-56de-412e-a468-f5e0509f8cd8",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Removal of the facial ruff led to a specific decrease in the reliability of high frequencies (above 4 kHz) from frontal space (within \u00b140\u00b0 azimuth), as determined by HRTF-based analysis of ITD/IPD reliability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C15, and C16 are directly supported by HRTF analysis data presented in Figure 1, showing a sharp decrease in high-frequency reliability from frontal locations after ruff removal. The analysis methodology is clearly described and the results are consistent across multiple stimulus conditions (Figure 1\u2014figure supplement 1).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:33:24.044997Z"
+    },
+    {
+      "id": "df5d27f2-c75e-4f74-b8b8-f19a8c3e4eeb",
+      "content_id": "7207def0-56de-412e-a468-f5e0509f8cd8",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "In adult owls that developed without a facial ruff, frontally tuned ICx neurons showed significantly lower frequency tuning (mean ~4.5 kHz) compared to normal adult owls (mean ~6 kHz), with a weaker correlation between ITD and frequency tuning (r\u00b2=0.18 vs r\u00b2=0.75).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C22-C27, C57-C58 are well-supported by electrophysiological recordings from 117 ICx neurons across two ruff-removed owls (C17), with multiple statistical tests confirming significant differences (t-tests and Mann-Whitney U-tests with p<0.001). The data are presented in Figures 3 and 8 with appropriate controls and comparisons to normal owls.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:33:24.044997Z"
+    },
+    {
+      "id": "656e4e45-e72c-4f7e-9496-2a207de69331",
+      "content_id": "7207def0-56de-412e-a468-f5e0509f8cd8",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "ICCls neurons (immediately upstream of ICx) in ruff-removed owls maintained normal frequency tuning range (1-8 kHz) and the ability to compute ITD at high frequencies, indicating that the auditory system can still process high-frequency ITD information but this is not transmitted to ICx.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C31 and C60 are supported by recordings from 43 ICCls neurons showing normal frequency tuning across the owl's hearing range, including high-frequency frontal ITD tuning (Figure 4). This provides strong evidence that the change in ICx frequency tuning is not due to disrupted ITD detection mechanisms but rather selective transmission or plasticity at the ICCls-ICx interface.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:33:24.044997Z"
+    },
+    {
+      "id": "3e6d36a2-36b2-4a11-bca0-dd320c1b1a2c",
+      "content_id": "7207def0-56de-412e-a468-f5e0509f8cd8",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Juvenile owls (42-44 days post-hatching, before full ruff development) showed intermediate frequency tuning for frontally tuned ICx neurons (mean 4.9 kHz), significantly different from both normal adults (higher) and ruff-removed adults (lower).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C36-C46, and C61 are supported by recordings from 39 ICx neurons in two juvenile owls at a well-defined developmental stage. Statistical comparisons (Mann-Whitney U-tests) show significant differences from both adult groups (p<0.001). The timing of recordings relative to ruff development is well-documented (C37-C38), and ILD tuning patterns confirm underdeveloped ruff status (C42).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:33:24.044997Z"
+    },
+    {
+      "id": "4b514376-ac9a-4bc4-9e50-d6630cee8909",
+      "content_id": "7207def0-56de-412e-a468-f5e0509f8cd8",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Juvenile owls exhibited broader and more heterogeneous frequency tuning than either normal or ruff-removed adult owls, with significant differences in responsive frequency range but not between the two adult groups.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C47-C54, C63-C64 are supported by detailed analysis of frequency tuning bounds and ranges presented in Figure 8b-c. Multiple Mann-Whitney U-tests show significant differences between juveniles and both adult groups (p<0.01) but not between adult groups (p=0.73), supporting the interpretation of developmental refinement.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:33:24.044997Z"
+    },
+    {
+      "id": "cf2ef445-b112-44b4-89cb-7eb6da81b627",
+      "content_id": "7207def0-56de-412e-a468-f5e0509f8cd8",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The study demonstrates that long-term statistics of ITD reliability causally drive the development of midbrain frequency tuning properties, with juvenile owls showing initial heterogeneity that refines based on experienced ITD reliability patterns during development.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C62, C67-C68, C70, C86-C87 represent the main causal conclusion, supported by converging evidence from HRTF analysis (altered ITD reliability), ruff-removal experiments (altered frequency tuning matching predicted changes), and developmental recordings (intermediate tuning before ruff development). The experimental design with both developmental manipulation and observation provides strong support for causality.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:33:24.044997Z"
+    },
+    {
+      "id": "ac7af81e-109d-4444-b5f5-9c1e1d336017",
+      "content_id": "7207def0-56de-412e-a468-f5e0509f8cd8",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Changes in gain after ruff removal are insufficient to explain the observed changes in frequency tuning, as high frequencies remain most audible in frontal locations despite decreased frequency tuning of frontally tuned neurons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C35 and C73-C75 are supported by gain analysis from HRTFs (Figure 5) showing that high frequencies maintain strongest gain in frontal space after ruff removal, inconsistent with the observed shift to lower frequency tuning. This is further supported by citations to previous work (Cazettes et al., 2014) showing gain alone cannot explain ICx frequency tuning.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:33:24.044997Z"
+    },
+    {
+      "id": "bfb540cb-cc73-44c8-aad0-5bcf51dfe98e",
+      "content_id": "7207def0-56de-412e-a468-f5e0509f8cd8",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Spatial tuning modeling showed no systematic frequency-dependent effects after ruff removal that could explain the observed frequency tuning changes, further supporting that ITD reliability rather than spatial tuning drives frequency tuning.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C76-C78 are supported by spatial tuning modeling presented in Figure 6, which shows that changes in ITD/ILD spatial patterns after ruff removal do not produce frequency-dependent effects that would explain the observed neuronal tuning changes. The modeling approach is clearly described and appropriately tests an alternative hypothesis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:33:24.044997Z"
+    },
+    {
+      "id": "70abb556-65a0-43f9-a4e8-f9921f5466c1",
+      "content_id": "7207def0-56de-412e-a468-f5e0509f8cd8",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "ITD tuning width of frontal neurons was significantly broader in both ruff-removed and juvenile owls compared to normal adults, consistent with their tuning to lower frequencies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C56 are supported by Mann-Whitney U-tests showing significant differences (p<0.003) and are consistent with the known relationship between frequency tuning and ITD tuning width cited from previous work (Takahashi and Konishi, 1986; Wagner et al., 2007). Data are presented in Figure 8d.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:33:24.044997Z"
+    },
+    {
+      "id": "788eef9c-300f-477e-9f52-dd43bbaf3bf3",
+      "content_id": "7207def0-56de-412e-a468-f5e0509f8cd8",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "ILD tuning was correlated with ITD tuning in ruff-removed owls, unlike in normal owls where no such correlation exists.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C19 is supported by correlation analysis presented in Figure 2d, consistent with previous reports that ruff removal causes ILD to covary with azimuth rather than elevation. This serves as a control confirming the effectiveness of the ruff removal manipulation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:33:24.044997Z"
+    },
+    {
+      "id": "aa21f857-625a-43b0-a699-5103502daf79",
+      "content_id": "7207def0-56de-412e-a468-f5e0509f8cd8",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The difference in frequency tuning between juveniles and normal adults (r=0.55) is smaller than between normal and ruff-removed adults (r=0.84), suggesting ruff-removed owls underwent refinement toward lower frequencies. The timing aligns with the known critical period (60-200 days post-hatching).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69-C71 are supported by effect size comparisons and alignment with previously reported critical periods (cited from Knudsen et al., 1984; Brainard and Knudsen, 1993, 1998). However, C72 is explicitly noted as speculative and not directly tested, which is appropriately acknowledged by the authors.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:33:24.044997Z"
+    },
+    {
+      "id": "66fe1bcb-b857-4fae-8881-15aab49ff701",
+      "content_id": "7207def0-56de-412e-a468-f5e0509f8cd8",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The rate of change of ITD (\u00b5s/deg) does not change significantly across frequencies after ruff removal, ruling out this as an alternative mechanism for frequency tuning changes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C74 is supported by citation to von Campenhausen and Wagner, 2006, providing additional evidence against alternative explanations for the observed frequency tuning changes.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:33:24.044997Z"
+    },
+    {
+      "id": "e9ba5926-d46f-4387-80c8-d0188a80f5b2",
+      "content_id": "7207def0-56de-412e-a468-f5e0509f8cd8",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "There was no change in frequency tuning width between normal and ruff-removed adult owls, despite changes in best frequency.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59 and C54 are supported by statistical comparisons (Mann-Whitney U-test, p=0.73) showing no significant difference in responsive frequency range between adult groups, indicating that neurons are tuned to different frequencies but with similar bandwidth.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:33:24.044997Z"
+    },
+    {
+      "id": "f5b8d236-0b88-4365-b68d-2b19504567fa",
+      "content_id": "7207def0-56de-412e-a468-f5e0509f8cd8",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Background claims establishing the barn owl auditory system: ITD and ILD computation, midbrain map organization, high-frequency ITD specialization, and the relationship between frequency tuning and ITD reliability in normal owls.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2, C8-C14, C20-C21 are well-established background knowledge supported by multiple citations to previous work. These provide the necessary context for interpreting the experimental findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:33:24.044997Z"
+    },
+    {
+      "id": "9c9732c5-2fb4-4e08-8f5e-de2346893126",
+      "content_id": "7207def0-56de-412e-a468-f5e0509f8cd8",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The barn owl's cochlear and eardrum properties show biases toward high frequencies (5-10 kHz and >3 kHz respectively), which likely evolved simultaneously with the facial ruff to facilitate high-frequency ITD detection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C79-C81 are supported by citations to previous work, but C82 is explicitly speculative about evolutionary relationships. While the anatomical biases are documented, the evolutionary claim lacks direct evidence and is appropriately presented as inference.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:33:24.044997Z"
+    },
+    {
+      "id": "799c925b-90ef-48d8-9ab1-0637cd4e77d6",
+      "content_id": "7207def0-56de-412e-a468-f5e0509f8cd8",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The ICx primarily represents 30\u00b0 ipsilateral to 90\u00b0 contralateral space (+90 to -300 \u00b5s ITD), with rearward locations significantly underrepresented.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C83-C84 are supported by citations to previous work (Knudsen, 1982, 1984; Cazettes et al., 2014) and provide context for why changes in rearward space reliability would not affect the recorded neurons.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:33:24.044997Z"
+    },
+    {
+      "id": "476848ba-ac52-41d4-aa15-c18f6fcda7a9",
+      "content_id": "7207def0-56de-412e-a468-f5e0509f8cd8",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The observed frequency tuning changes occurred in owls maintained in standard aviary conditions without specific training, suggesting this is a normal and robust developmental process.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C85-C86 are supported by direct statements about experimental conditions. This strengthens the interpretation that the observed plasticity represents normal developmental processes rather than task-specific learning.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:33:24.044997Z"
+    },
+    {
+      "id": "fb412f51-9329-4e9e-91b2-8c4a5cfeef96",
+      "content_id": "7207def0-56de-412e-a468-f5e0509f8cd8",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "These are the earliest recordings of the barn owl's developing midbrain and the first description of natural learning of cue reliability implemented in a midbrain network.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C39 and C88 are novelty claims based on the authors' knowledge of the literature. While the recordings at 42-44 days post-hatching are indeed early and the findings are novel, these claims cannot be fully verified without comprehensive literature review and depend on the authors' assessment.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:33:24.044997Z"
+    },
+    {
+      "id": "37822231-ef90-4721-b068-e27099ab442e",
+      "content_id": "7207def0-56de-412e-a468-f5e0509f8cd8",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "ITD cue reliability drives spatial discriminability in humans, suggesting a similar learning process could occur during human development as the head and ears grow.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C89 is supported by citation to Pav\u00e3o et al., 2020, but C90 is explicitly speculative about potential human development. While the parallel is plausible, no direct evidence for developmental plasticity in humans is provided.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:33:24.044997Z"
+    },
+    {
+      "id": "991cd512-04d2-494a-b9e8-b3a32bc1aa49",
+      "content_id": "7207def0-56de-412e-a468-f5e0509f8cd8",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Two potential mechanisms for developmental refinement: individual neurons may sharpen their frequency tuning, or neurons responding to unreliable frequencies could be pruned.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C65-C66 are explicitly speculative hypotheses about developmental mechanisms. While consistent with the data showing broader tuning in juveniles, no direct evidence distinguishes between these mechanisms or confirms either occurs.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:33:24.044997Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "4c3bd6c2-737c-4732-baf3-25228a181217",
+      "result_id": "2fcde457-08a8-4f1a-8fd7-a49ad56244a4"
+    },
+    {
+      "claim_id": "98c10e8d-1abd-4553-b958-ebeabc66cf3d",
+      "result_id": "2fcde457-08a8-4f1a-8fd7-a49ad56244a4"
+    },
+    {
+      "claim_id": "f3fb8206-d7a4-4d79-9f68-7918cf01c862",
+      "result_id": "2fcde457-08a8-4f1a-8fd7-a49ad56244a4"
+    },
+    {
+      "claim_id": "6095a665-b16f-422a-bc8e-3beff7c778a6",
+      "result_id": "df5d27f2-c75e-4f74-b8b8-f19a8c3e4eeb"
+    },
+    {
+      "claim_id": "76ac0a2c-8cad-4561-9c8a-3c916d750db1",
+      "result_id": "df5d27f2-c75e-4f74-b8b8-f19a8c3e4eeb"
+    },
+    {
+      "claim_id": "83981c9c-9607-45fb-a7b8-14d8f2b237d6",
+      "result_id": "df5d27f2-c75e-4f74-b8b8-f19a8c3e4eeb"
+    },
+    {
+      "claim_id": "4ef3fdb4-992e-4b5d-8bf1-bdaa37c03c6c",
+      "result_id": "df5d27f2-c75e-4f74-b8b8-f19a8c3e4eeb"
+    },
+    {
+      "claim_id": "43582b61-d60b-48d6-ab1d-ff46abdbb134",
+      "result_id": "df5d27f2-c75e-4f74-b8b8-f19a8c3e4eeb"
+    },
+    {
+      "claim_id": "8c648ae9-b9ef-4546-89ef-380b87e09a58",
+      "result_id": "df5d27f2-c75e-4f74-b8b8-f19a8c3e4eeb"
+    },
+    {
+      "claim_id": "1d51d9b1-cca5-4680-9cc9-6bad8f37086a",
+      "result_id": "df5d27f2-c75e-4f74-b8b8-f19a8c3e4eeb"
+    },
+    {
+      "claim_id": "2d064690-089a-430d-9b36-9566005e49de",
+      "result_id": "df5d27f2-c75e-4f74-b8b8-f19a8c3e4eeb"
+    },
+    {
+      "claim_id": "7d614d3e-e154-4cfa-9b6f-30c994400a9e",
+      "result_id": "df5d27f2-c75e-4f74-b8b8-f19a8c3e4eeb"
+    },
+    {
+      "claim_id": "88f8f364-e666-42e8-a3d2-060607749ced",
+      "result_id": "df5d27f2-c75e-4f74-b8b8-f19a8c3e4eeb"
+    },
+    {
+      "claim_id": "ca65af40-30c8-4712-9393-2bc99cf09d40",
+      "result_id": "df5d27f2-c75e-4f74-b8b8-f19a8c3e4eeb"
+    },
+    {
+      "claim_id": "5ae2e4a3-1c51-4a6b-9a03-729c7ff5107e",
+      "result_id": "656e4e45-e72c-4f7e-9496-2a207de69331"
+    },
+    {
+      "claim_id": "549e4b42-289f-40b5-b2c0-2f47a1f6437c",
+      "result_id": "656e4e45-e72c-4f7e-9496-2a207de69331"
+    },
+    {
+      "claim_id": "d904d840-dac2-4caf-8d62-70f15df7caf0",
+      "result_id": "656e4e45-e72c-4f7e-9496-2a207de69331"
+    },
+    {
+      "claim_id": "d9ab3f89-130f-4ba6-ac47-f7f9b293f9ed",
+      "result_id": "656e4e45-e72c-4f7e-9496-2a207de69331"
+    },
+    {
+      "claim_id": "1b736f58-1ac5-4f95-b8c1-f4a1ba70b774",
+      "result_id": "656e4e45-e72c-4f7e-9496-2a207de69331"
+    },
+    {
+      "claim_id": "0b8ffd7f-fe2b-4cdf-b4f0-dee50d52d99c",
+      "result_id": "3e6d36a2-36b2-4a11-bca0-dd320c1b1a2c"
+    },
+    {
+      "claim_id": "55dc8a64-0575-4c7c-8333-81df1036c1e9",
+      "result_id": "3e6d36a2-36b2-4a11-bca0-dd320c1b1a2c"
+    },
+    {
+      "claim_id": "cf4c6d91-c965-437e-a2a2-639bc80968d3",
+      "result_id": "3e6d36a2-36b2-4a11-bca0-dd320c1b1a2c"
+    },
+    {
+      "claim_id": "9f3e1b7a-a61d-44e6-9159-ac60d918eee7",
+      "result_id": "3e6d36a2-36b2-4a11-bca0-dd320c1b1a2c"
+    },
+    {
+      "claim_id": "f4f92752-565e-429a-8a3b-4f1310e6a66e",
+      "result_id": "3e6d36a2-36b2-4a11-bca0-dd320c1b1a2c"
+    },
+    {
+      "claim_id": "df837572-6134-4891-b8d8-495cfed6fe0c",
+      "result_id": "3e6d36a2-36b2-4a11-bca0-dd320c1b1a2c"
+    },
+    {
+      "claim_id": "2b0a9ae0-c862-4847-80ac-8b7004008f89",
+      "result_id": "3e6d36a2-36b2-4a11-bca0-dd320c1b1a2c"
+    },
+    {
+      "claim_id": "5a122332-2e02-40b7-9321-8f1a199394b7",
+      "result_id": "3e6d36a2-36b2-4a11-bca0-dd320c1b1a2c"
+    },
+    {
+      "claim_id": "dcec663b-97ce-4e6a-8016-e02a90eb5d8b",
+      "result_id": "3e6d36a2-36b2-4a11-bca0-dd320c1b1a2c"
+    },
+    {
+      "claim_id": "d6b81a23-0197-4145-8182-87efdcab2806",
+      "result_id": "3e6d36a2-36b2-4a11-bca0-dd320c1b1a2c"
+    },
+    {
+      "claim_id": "27a6f160-8f1b-43ca-82f0-7e915d21d6a9",
+      "result_id": "3e6d36a2-36b2-4a11-bca0-dd320c1b1a2c"
+    },
+    {
+      "claim_id": "256288bf-b488-43ef-96ea-65332a502970",
+      "result_id": "3e6d36a2-36b2-4a11-bca0-dd320c1b1a2c"
+    },
+    {
+      "claim_id": "e93cf9f3-ac27-42dd-be46-ab64677384c8",
+      "result_id": "4b514376-ac9a-4bc4-9e50-d6630cee8909"
+    },
+    {
+      "claim_id": "a269fb32-f438-4b9f-abe9-3bb8d0ec8f14",
+      "result_id": "4b514376-ac9a-4bc4-9e50-d6630cee8909"
+    },
+    {
+      "claim_id": "22702258-a711-4d49-815b-a0f09bfef7ab",
+      "result_id": "4b514376-ac9a-4bc4-9e50-d6630cee8909"
+    },
+    {
+      "claim_id": "cb94dddc-8baa-4e6a-8b57-2a23ff682910",
+      "result_id": "4b514376-ac9a-4bc4-9e50-d6630cee8909"
+    },
+    {
+      "claim_id": "10afe150-74fa-4e3e-9858-b5e08566e579",
+      "result_id": "4b514376-ac9a-4bc4-9e50-d6630cee8909"
+    },
+    {
+      "claim_id": "23453bb9-ba6d-4320-bbcb-69d6f70b521b",
+      "result_id": "4b514376-ac9a-4bc4-9e50-d6630cee8909"
+    },
+    {
+      "claim_id": "76ecd732-500a-4ab1-9d06-4f82bcaf6771",
+      "result_id": "4b514376-ac9a-4bc4-9e50-d6630cee8909"
+    },
+    {
+      "claim_id": "f392dbf1-0537-4bbb-b14a-afe048f5519a",
+      "result_id": "4b514376-ac9a-4bc4-9e50-d6630cee8909"
+    },
+    {
+      "claim_id": "b33f7750-07e6-43c0-a3b8-2675634666eb",
+      "result_id": "4b514376-ac9a-4bc4-9e50-d6630cee8909"
+    },
+    {
+      "claim_id": "a722d766-8a7d-405f-be81-ce928cf6feb4",
+      "result_id": "4b514376-ac9a-4bc4-9e50-d6630cee8909"
+    },
+    {
+      "claim_id": "248d8f97-4413-47bb-9b5f-6d2c70d9e9eb",
+      "result_id": "4b514376-ac9a-4bc4-9e50-d6630cee8909"
+    },
+    {
+      "claim_id": "9509cd00-90f6-4de9-9bfc-45cd777c4367",
+      "result_id": "cf2ef445-b112-44b4-89cb-7eb6da81b627"
+    },
+    {
+      "claim_id": "fdddcebc-5334-40f3-951e-02397be9766e",
+      "result_id": "cf2ef445-b112-44b4-89cb-7eb6da81b627"
+    },
+    {
+      "claim_id": "e2338623-71f6-4694-8497-e91d62180db8",
+      "result_id": "cf2ef445-b112-44b4-89cb-7eb6da81b627"
+    },
+    {
+      "claim_id": "4c6adbe6-3b69-4ca2-9768-bfdc744ea90e",
+      "result_id": "cf2ef445-b112-44b4-89cb-7eb6da81b627"
+    },
+    {
+      "claim_id": "f7150e96-099c-489e-86ce-0f7493b91f02",
+      "result_id": "cf2ef445-b112-44b4-89cb-7eb6da81b627"
+    },
+    {
+      "claim_id": "65108b73-77b7-4bef-8b29-12ca77eb6c33",
+      "result_id": "cf2ef445-b112-44b4-89cb-7eb6da81b627"
+    },
+    {
+      "claim_id": "f565115f-120f-48a1-b9a4-fadde3595af1",
+      "result_id": "cf2ef445-b112-44b4-89cb-7eb6da81b627"
+    },
+    {
+      "claim_id": "64cf7cf7-171e-4ab2-b3f3-b3511d2f0cef",
+      "result_id": "ac7af81e-109d-4444-b5f5-9c1e1d336017"
+    },
+    {
+      "claim_id": "667218fc-e225-46ed-972b-2fbf0fa8adf1",
+      "result_id": "ac7af81e-109d-4444-b5f5-9c1e1d336017"
+    },
+    {
+      "claim_id": "ac7a7686-8b4c-472f-9df7-4d73f31cecdb",
+      "result_id": "ac7af81e-109d-4444-b5f5-9c1e1d336017"
+    },
+    {
+      "claim_id": "d359cb4e-4365-425b-8b4a-c186be7d205c",
+      "result_id": "ac7af81e-109d-4444-b5f5-9c1e1d336017"
+    },
+    {
+      "claim_id": "c4ee74ad-d916-4e03-ae52-89e21fdd23d5",
+      "result_id": "ac7af81e-109d-4444-b5f5-9c1e1d336017"
+    },
+    {
+      "claim_id": "3aed6386-b411-45d8-8a1f-1352f48be6f5",
+      "result_id": "ac7af81e-109d-4444-b5f5-9c1e1d336017"
+    },
+    {
+      "claim_id": "46499925-c1ef-4b8d-b515-497688bd3c77",
+      "result_id": "bfb540cb-cc73-44c8-aad0-5bcf51dfe98e"
+    },
+    {
+      "claim_id": "a53f70dc-235c-4615-8c09-ce330b82b35e",
+      "result_id": "bfb540cb-cc73-44c8-aad0-5bcf51dfe98e"
+    },
+    {
+      "claim_id": "ffb6615e-cff5-4f76-819c-9e792a47774a",
+      "result_id": "bfb540cb-cc73-44c8-aad0-5bcf51dfe98e"
+    },
+    {
+      "claim_id": "656a0d0b-10d0-409c-b464-16fd55e7591a",
+      "result_id": "70abb556-65a0-43f9-a4e8-f9921f5466c1"
+    },
+    {
+      "claim_id": "78e28c4d-640c-4c1d-bf69-14e7bc93acaf",
+      "result_id": "70abb556-65a0-43f9-a4e8-f9921f5466c1"
+    },
+    {
+      "claim_id": "a0e53813-cd0d-4577-aa48-40f0e91f47e7",
+      "result_id": "788eef9c-300f-477e-9f52-dd43bbaf3bf3"
+    },
+    {
+      "claim_id": "03c2f01f-9885-446f-b5e1-26d690b693c6",
+      "result_id": "aa21f857-625a-43b0-a699-5103502daf79"
+    },
+    {
+      "claim_id": "fbfba05f-b02e-42d3-8e61-476e9ceddc87",
+      "result_id": "aa21f857-625a-43b0-a699-5103502daf79"
+    },
+    {
+      "claim_id": "f1fe14be-774d-4503-ba01-49383976bd48",
+      "result_id": "aa21f857-625a-43b0-a699-5103502daf79"
+    },
+    {
+      "claim_id": "667cf2df-bf5c-4ed0-ab97-06cd2bbe4a13",
+      "result_id": "66fe1bcb-b857-4fae-8881-15aab49ff701"
+    },
+    {
+      "claim_id": "67520f8a-c1ab-47ca-99e8-a7b6018e5dc1",
+      "result_id": "e9ba5926-d46f-4387-80c8-d0188a80f5b2"
+    },
+    {
+      "claim_id": "b33f7750-07e6-43c0-a3b8-2675634666eb",
+      "result_id": "e9ba5926-d46f-4387-80c8-d0188a80f5b2"
+    },
+    {
+      "claim_id": "b05e3591-652a-4b0f-a429-f73c34d294b6",
+      "result_id": "f5b8d236-0b88-4365-b68d-2b19504567fa"
+    },
+    {
+      "claim_id": "9029a2e8-347b-4e0d-8dd7-33998a51b85e",
+      "result_id": "f5b8d236-0b88-4365-b68d-2b19504567fa"
+    },
+    {
+      "claim_id": "73bbb95a-e8a3-4e4e-887d-bce8ca3ef8c5",
+      "result_id": "f5b8d236-0b88-4365-b68d-2b19504567fa"
+    },
+    {
+      "claim_id": "46feb841-8fef-4010-943d-b68298bab7af",
+      "result_id": "f5b8d236-0b88-4365-b68d-2b19504567fa"
+    },
+    {
+      "claim_id": "aec500a8-0a7f-4022-b920-6c8718f2a618",
+      "result_id": "f5b8d236-0b88-4365-b68d-2b19504567fa"
+    },
+    {
+      "claim_id": "ff3c002b-3337-407e-a7a2-bb6ec4085e1a",
+      "result_id": "f5b8d236-0b88-4365-b68d-2b19504567fa"
+    },
+    {
+      "claim_id": "e8c91ede-1d36-4fb2-9d7a-4666c4f27d88",
+      "result_id": "f5b8d236-0b88-4365-b68d-2b19504567fa"
+    },
+    {
+      "claim_id": "3d499ad8-af26-4d0b-8eaa-fcdf979fabcb",
+      "result_id": "f5b8d236-0b88-4365-b68d-2b19504567fa"
+    },
+    {
+      "claim_id": "b6e75a01-038c-42e4-af69-8a675ecf6f4f",
+      "result_id": "f5b8d236-0b88-4365-b68d-2b19504567fa"
+    },
+    {
+      "claim_id": "9188ad8b-61a8-4041-bb39-fa6dfa28267d",
+      "result_id": "f5b8d236-0b88-4365-b68d-2b19504567fa"
+    },
+    {
+      "claim_id": "2e759674-83a7-4c43-b21a-8bbe5f1e7eaf",
+      "result_id": "f5b8d236-0b88-4365-b68d-2b19504567fa"
+    },
+    {
+      "claim_id": "9f9ade39-b89e-4b71-93cb-c162a3b7e77e",
+      "result_id": "9c9732c5-2fb4-4e08-8f5e-de2346893126"
+    },
+    {
+      "claim_id": "ac5e0cdb-95a2-41c8-8ca3-7f89ea90ff83",
+      "result_id": "9c9732c5-2fb4-4e08-8f5e-de2346893126"
+    },
+    {
+      "claim_id": "b77bc60f-bca5-42f4-aac5-c705a0dcefb9",
+      "result_id": "9c9732c5-2fb4-4e08-8f5e-de2346893126"
+    },
+    {
+      "claim_id": "c9a3df46-c726-4526-b13d-4f407397740b",
+      "result_id": "9c9732c5-2fb4-4e08-8f5e-de2346893126"
+    },
+    {
+      "claim_id": "3a1ae995-2486-490a-a4c9-1e219b677fe1",
+      "result_id": "799c925b-90ef-48d8-9ab1-0637cd4e77d6"
+    },
+    {
+      "claim_id": "1f76eab0-61d5-4523-9bc5-b5749472792d",
+      "result_id": "799c925b-90ef-48d8-9ab1-0637cd4e77d6"
+    },
+    {
+      "claim_id": "4bea207f-5fda-4f26-86c8-48e85b40ac99",
+      "result_id": "476848ba-ac52-41d4-aa15-c18f6fcda7a9"
+    },
+    {
+      "claim_id": "65108b73-77b7-4bef-8b29-12ca77eb6c33",
+      "result_id": "476848ba-ac52-41d4-aa15-c18f6fcda7a9"
+    },
+    {
+      "claim_id": "f791c404-7ae7-4239-9418-de9e983e4c79",
+      "result_id": "fb412f51-9329-4e9e-91b2-8c4a5cfeef96"
+    },
+    {
+      "claim_id": "8b55035f-2491-4f55-bc61-70149033bb94",
+      "result_id": "fb412f51-9329-4e9e-91b2-8c4a5cfeef96"
+    },
+    {
+      "claim_id": "99ab07ca-0ba3-40f4-a8c5-fced1332b190",
+      "result_id": "37822231-ef90-4721-b068-e27099ab442e"
+    },
+    {
+      "claim_id": "fdba4c38-3013-4107-b773-4a0faefc9ded",
+      "result_id": "37822231-ef90-4721-b068-e27099ab442e"
+    },
+    {
+      "claim_id": "b8fd27e1-9109-4323-a4a2-b40f845b29a7",
+      "result_id": "991cd512-04d2-494a-b9e8-b3a32bc1aa49"
+    },
+    {
+      "claim_id": "40292286-5c69-4ce0-8399-f0fe78a2f7d9",
+      "result_id": "991cd512-04d2-494a-b9e8-b3a32bc1aa49"
+    }
+  ],
+  "comparisons": []
+}

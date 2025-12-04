@@ -1,0 +1,194 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C51"
+    ],
+    "result": "Transfection of constructs carrying 35 CCCCGG repeats into HEK293 and NSC34 cells leads to robust expression of poly-PR and poly-PG DPRs, which are predominantly soluble and reduce cell survival. The luciferase signal correlates with western blot detection, validating it as an accurate readout for DPR production.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C20 and C51 are well-supported by experimental data from luciferase assays, western blotting, immunofluorescence, and cell viability assays shown in Figure 1. The correlation between luciferase and western blot signals validates the reporter system, and the reduced cell survival upon DPR expression demonstrates toxicity in this model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C21",
+      "C52",
+      "C53"
+    ],
+    "result": "Poly-PA was not detected in the experimental system, possibly because the initiation codon lies outside the 1000 bp intronic sequence used or the necessary regulatory machinery is absent in HEK293 and NSC34 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C21 is supported by negative experimental data (Figure 1B-C, Figure 1\u2014figure supplement 3), but claims C52-C53 are speculative explanations for the lack of detection. Without additional experiments to test these hypotheses, the underlying reason for poly-PA absence remains uncertain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C48"
+    ],
+    "result": "A single canonical AUG codon at -273 bp upstream of CCCCGG repeats is necessary and sufficient for poly-PR translation. Mutation of this AUG to CCC or UAG completely abolishes poly-PR expression and partially rescues cell toxicity, while mutation of a CUG at -366 bp has no effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C22-C24, and C48 are strongly supported by multiple complementary experimental approaches (western blotting, luciferase assays, immunofluorescence, and cell viability assays) shown in Figure 2. The complete loss of poly-PR upon AUG mutation and partial rescue of toxicity provide converging evidence. Claim C25 cites prior 5' RACE data supporting the presence of this AUG in endogenous transcripts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C6",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Three canonical AUG codons (at -212 bp, -194 bp, and -113 bp) can serve as translation initiation sites for poly-PG with functional redundancy. The AUG at -194 bp is the primary initiation codon, but when mutated, the other two AUGs can compensate. A CUG at -182 bp does not function as a start codon.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C26-C30 are well-supported by systematic mutagenesis experiments shown in Figures 3-4. The data demonstrate that simultaneous mutation of all four codons abolishes poly-PG, individual AUGs can initiate translation, and the -194 bp AUG is preferentially used. The redundancy is clearly demonstrated by the persistence of poly-PG expression when individual AUGs are mutated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C31",
+      "C32"
+    ],
+    "result": "Mutation of the AUG at -113 bp to a UAG stop codon completely blocks poly-PG expression, but does not rescue cell toxicity, suggesting poly-PG is not toxic under these experimental conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C32 are supported by experimental data in Figure 5 (western blotting, luciferase assays, immunofluorescence, and cell viability assays). The UAG mutation at -113 bp blocks all poly-PG production because it prevents translation from all upstream AUGs. The lack of toxicity rescue, in contrast to poly-PR, suggests differential toxicity of these DPRs in this system.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C7",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "EIF2D is not required for AUG-dependent translation of antisense DPRs poly-PR and poly-PG. Knockout or knockdown of EIF2D in HEK293 cells does not affect poly-PR or poly-PG expression levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C33-C35 are supported by experimental data from both EIF2D knockout and shRNA knockdown experiments shown in Figure 6. Multiple independent approaches (luciferase assays and western blotting) consistently show no effect of EIF2D loss on antisense DPR production, contrasting with its requirement for sense DPR synthesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "EIF2D knockdown selectively reduces poly-GA synthesis from the sense GGGGCC transcript but has no effect on poly-GR or poly-GP/PG levels in both cell-based models and iPSC-derived neurons from C9ORF72 carriers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C38 are supported by experimental data from HEK293 cells (Figure 6I) and iPSC-derived motor neurons (Figure 7B). The selective effect on poly-GA but not poly-GR or poly-GP/PG is consistent across experimental systems, extending prior findings to human neurons. However, the immunoassay cannot distinguish poly-PG from poly-GP, which is a noted limitation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C8",
+      "C39",
+      "C40",
+      "C43"
+    ],
+    "result": "Distinct translation initiation mechanisms and factors control DPR synthesis from sense versus antisense transcripts. Antisense DPRs use canonical AUG-dependent translation, while sense DPRs use non-canonical codons (CUG, AGG). EIF2D is required for sense but not antisense DPR translation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C39-C40, and C43 are well-supported by the collective experimental evidence showing differential codon usage (AUG vs. CUG/AGG) and differential EIF2D requirement for antisense vs. sense DPRs. This represents a major conceptual advance in understanding C9ORF72 pathology, though the inference about distinct regulatory mechanisms requires the assumption that the experimental systems accurately reflect endogenous biology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C58"
+    ],
+    "result": "Variable siRNA knockdown efficiency across different iPSC lines prevents drawing general conclusions about the role of EIF2D in DPR synthesis in motor neurons from C9ORF72 carriers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C58 is supported by the experimental observations in Figure 7, where robust EIF2D knockdown was achieved in one patient line (26#6) but not in two others (27#11, 40#3). This is an honest acknowledgment of a technical limitation that prevents broader conclusions about EIF2D's role in patient-derived neurons.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C41",
+      "C47",
+      "C59"
+    ],
+    "result": "DPR synthesis may involve at least three different modes of translation: near-cognate start codon-dependent translation (CUG, AGG), canonical AUG-dependent translation, and RAN translation using only the repeat sequence. All three modes may occur simultaneously in disease.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C41, C47, and C59 synthesize current findings with prior literature to propose a model of multiple translation modes. While the AUG-dependent and near-cognate mechanisms are well-supported, the contribution of pure RAN translation (without flanking sequences) remains uncertain. The claim that all three occur simultaneously in disease is speculative and requires validation in patient tissues.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C42",
+      "C60"
+    ],
+    "result": "The redundancy in AUG usage for poly-PG suggests that targeting a single translation initiation site may be insufficient for therapeutic intervention. Endogenous mutagenesis in the native C9ORF72 locus is needed to validate these findings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C42 is a reasonable inference from the demonstrated redundancy (C6, C27, C30), but whether this redundancy occurs in patient CNS remains uncertain. Claim C60 correctly identifies the need for validation in the endogenous genomic context. The therapeutic implications are speculative without additional evidence from patient-relevant models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C5",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C44",
+      "C45",
+      "C46",
+      "C49",
+      "C50",
+      "C54",
+      "C55",
+      "C56",
+      "C61",
+      "C62"
+    ],
+    "result": "Background and context claims about C9ORF72 ALS/FTD pathology, DPR toxicity, prior findings on translation mechanisms, and related nucleotide repeat expansion disorders.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C2-C3, C5, C9-C17, C44-C46, C49-C50, C54-C56, C61-C62) provide established background knowledge and cite prior literature appropriately. They are well-supported by the cited references and represent accurate summaries of the field's current understanding. These contextual claims frame the current study but are not novel findings.",
+    "result_type": "MINOR"
+  }
+]

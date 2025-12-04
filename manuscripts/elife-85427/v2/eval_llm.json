@@ -1,0 +1,249 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C14",
+      "C15",
+      "C31",
+      "C32"
+    ],
+    "result": "The COVID-19 pandemic increased the gender gap in research productivity by approximately 7% overall. Meta-analysis of 130 effect sizes from 55 studies showed women's relative productivity decreased by -0.071 (95% CI: -0.099 to -0.043, p<0.001) compared to pre-pandemic levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C14, C15, C31, and C32 converge on a well-supported finding from a rigorous meta-analysis with appropriate statistical methods, controlling for multiple effect sizes from the same study. The effect size is statistically significant with narrow confidence intervals, and the interpretation (7% decline) is mathematically correct. High heterogeneity (I\u00b2=97.9%) is acknowledged and partially explained by moderators.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "The magnitude of the gender gap increase varied by measurement method: survey-based studies showed larger effects (-0.192, 19% higher productivity reduction in women) compared to article-based studies measuring publications (-0.047, ~5% increase) or submissions (-0.053).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18, C19, C33, C34, and C35 are supported by statistical tests showing significant differences between measurement types (QM=37.130, P<0.001). However, the authors appropriately note that survey studies may suffer from recall bias, self-serving bias, and sampling issues (C79, C81), which could inflate effect sizes. The difference between measurement types is real but interpretation requires caution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C41",
+      "C50"
+    ],
+    "result": "The pandemic's effect on the gender gap varied across research fields, with social sciences (-0.084, P=0.006) and medicine (-0.066, P<0.001) showing the largest increases, while biological sciences, TEMCP, and multidisciplinary fields showed minimal or non-significant effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C20-C24 report field-specific effects, but C50 states there was 'little evidence of a significant differential impact' despite reporting P=0.001 for the omnibus test, which is contradictory. The P=0.001 suggests significant differences exist between fields, undermining the claim of 'little evidence.' Individual field effects for social sciences and medicine are significant, but the overall interpretation is inconsistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C40"
+    ],
+    "result": "Fields with smaller pre-pandemic gender gaps experienced greater increases in gender disparity during the pandemic. Meta-regression showed the pandemic increased the gender gap more in previously less gender-disparate journals/repositories (QM=10.285, P=0.001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25, C26, and C40 are supported by meta-regression analysis with significant results and visual evidence from Figure 4. The finding is counterintuitive but statistically robust. The authors appropriately note this contradicts their initial prediction and offer plausible explanations (fields closer to equality may have lost support structures). Sample size for this analysis (N=99) is adequate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C27",
+      "C43",
+      "C51"
+    ],
+    "result": "The pandemic significantly affected first authorship positions (-0.040, P=0.019) but not other authorship positions (corresponding, middle, last, or all authors combined).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C27 reports a significant effect for first authorship, but C51 states 'no evidence of a significant differential impact' despite P=0.022 for the omnibus test, which typically indicates significance. The contradiction in interpretation, combined with unequal sample sizes across authorship categories (N=54 for first vs N=3 for middle), makes this result uncertain. The authors acknowledge this limitation but still draw conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C28",
+      "C29"
+    ],
+    "result": "No evidence of publication bias was detected through multilevel meta-regression or visual inspection of funnel plots.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28 and C29 are supported by appropriate publication bias tests. However, the interpretation is nuanced: for article studies, slope=-0.025 (P=0.148, non-significant), but for survey studies, slope=-0.157 (P<0.001, significant), which the authors attribute to heterogeneity rather than bias. The visual inspection (Figure 6) corroborates the statistical tests. The conclusion of no publication bias is reasonable but requires careful interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C30"
+    ],
+    "result": "Sensitivity analysis excluding seven less comparable effect sizes from survey studies yielded similar results: overall estimate of -0.063 (95% CI: -0.089 to -0.037, P<0.001) and survey-only estimate of -0.239.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C30 demonstrates robustness of the main findings through appropriate sensitivity analysis. The overall estimate changes minimally from -0.071 to -0.063, and both remain highly significant, supporting the reliability of the primary conclusions. The leave-one-out analysis (Figure 6 supplement 1) further confirms no single study drives the results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "The study likely underestimates the pandemic's long-term effects because articles published during the pandemic were often started pre-pandemic, and most studies collected data relatively soon after pandemic onset (median 7 months). Survey studies suggest stronger real-time effects, with 5 of 6 showing negative interaction effects for female parents.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C39 present reasonable inferences about study limitations and temporal dynamics. The logic is sound: publication timelines are long (C36, supported by citation), research grants span multiple years (C37, general knowledge), and early data collection (C38, descriptive statistic) would miss long-term effects. The survey evidence about parental status (C39) provides convergent support. These are appropriate caveats about interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "A systematic literature review following PRISMA guidelines identified 55 studies meeting inclusion criteria, yielding 130 effect sizes (23 from surveys, 107 from article counts). The search process achieved high inter-rater reliability (Cohen's kappa=0.86, 97% agreement) and reasonable search efficiency (10.3% on Scopus).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C66 describe a rigorous systematic review methodology with appropriate documentation. The search strategy was iteratively refined using litsearchR, multiple databases were searched, inter-rater reliability was high, and the PRISMA framework was followed. The detailed reporting of search results, screening outcomes, and inclusion/exclusion at each stage demonstrates methodological transparency. Minor limitation: no grey literature databases were searched (acknowledged by authors).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Effect sizes were calculated using standardized methods: 120 used Campbell Collaboration's calculator with summary data or statistical tests, 10 used pre-calculated values from original studies, 10 were extracted from graphs using Adobe Acrobat, and 2 used sample sizes obtained through author correspondence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C70 describe transparent and appropriate effect size calculation methods. Using standardized calculators (Campbell Collaboration) ensures consistency. The authors acknowledge that 10 effect sizes used different modeling techniques from original studies, which could introduce heterogeneity. Double-checking by multiple authors (59 effect sizes) enhances reliability. The methods are adequately documented for reproducibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "The study has several important limitations: it cannot identify causal mechanisms (C74), gender is treated as binary using name-based inference that may misgender individuals and has ethnic biases (C75-C77), geographic representation is limited primarily to Western regions (C78-C79), and there is heterogeneity in time periods studied (C80-C81).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C81 appropriately acknowledge significant methodological limitations. The inability to identify mechanisms (C74) is a fundamental limitation of meta-analysis. The binary gender limitation (C75) and name-based inference issues (C76-C77) are serious concerns that could introduce systematic bias, particularly for non-Western names and non-binary individuals. Geographic bias (C78-C79) limits generalizability. Temporal heterogeneity (C80-C81) could affect comparability. These are honest, important limitations that affect interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C42",
+      "C45"
+    ],
+    "result": "Prior research establishes that women face disadvantages in research productivity metrics due to gender roles and biases (C1, C4), despite equal research contribution and impact (C5). The pandemic worsened conditions through increased caregiving demands (C6-C8), disproportionate non-promotable tasks (C9-C10), gendered labor roles (C11), and potentially biased peer review (C12-C13).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C4-C13, C42, and C45 establish context through citations to prior work. These are appropriately used to frame the research question and interpret findings. The citations appear relevant and the claims are consistent with established literature on gender bias in academia. However, as background claims, they are not directly tested in this study. The authors appropriately distinguish between established knowledge and their novel contributions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C16",
+      "C17"
+    ],
+    "result": "There was large variation among the 130 effect sizes, with 38 showing clear increases in the gender gap and 11 showing clear decreases. Total heterogeneity was high (I\u00b2=97.9%), with 46.6% explained by measurement type and 52.1% by individual effect sizes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16 and C17 accurately describe the heterogeneity in the dataset. High I\u00b2 (97.9%) indicates substantial variability, which is expected in meta-analyses spanning diverse contexts, fields, and measurement approaches. The decomposition of heterogeneity sources is appropriate. The authors acknowledge this heterogeneity and explore moderators (measurement type, field, authorship position) to explain it, which is methodologically sound.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C44",
+      "C45"
+    ],
+    "result": "The observed decline in women's authorship proportion is unlikely to represent normal temporal fluctuation, as it contrasts with historical trends showing steady increases in female authorship from 14% (1945) to 35% (2005) with no year-on-year declines since 1990.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44 and C45 make a reasonable inference by comparing the observed 5% decline to historical trends. The comparison to Huang et al. 2020 (C45) showing steady increases provides context suggesting the pandemic effect is anomalous. However, this is an inference rather than a direct statistical test. The logic is sound but would be strengthened by formal comparison to expected trends or control periods.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "The authors recommend that academic institutions accommodate the pandemic period when evaluating female academics, warn that tenure-clock extensions may inadvertently exacerbate gaps, and advocate for more holistic evaluation measures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C73 are reasonable policy recommendations based on the study findings. However, C72 is speculative about unintended consequences of tenure-clock extensions without empirical evidence. The recommendations follow logically from the results but represent opinions about policy rather than empirical findings. They are appropriately framed as suggestions rather than proven interventions.",
+    "result_type": "MINOR"
+  }
+]

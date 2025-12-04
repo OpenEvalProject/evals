@@ -1,0 +1,225 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "HVC neural sequences exist in isolated birds without tutor exposure, but these sequences are less robust than in typically tutored birds. The seqNMF algorithm revealed sequential activity in isolated birds (27\u00b19% variance explained, sequenciness 0.55\u00b10.88) compared to typical adults (46% variance, sequenciness 0.74). While many neurons participate reliably in sequences and correlate with vocal output, isolated bird sequences show weaker song locking (0.58\u00d7 typical strength), cover only 61% of song bouts, and are less robust than typical sequences but stronger than shuffled controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C26-C37, C71-C73 collectively demonstrate that neural sequences form without tutoring using calcium imaging and seqNMF analysis (Figures 1B-K). Quantitative metrics with appropriate controls (circular shift, typical bird comparisons) support the conclusion that sequences exist but are atypical. Statistical comparisons are provided for key measures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Isolated bird HVC sequences exhibit abnormal features including extended persistent activity (7/8 birds) and variable-duration truncations (8/8 birds), contrasting with the brief bursts typical of tutored birds. These abnormalities may explain characteristic isolate song features like abnormally long and variable-duration syllables.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C41 describe qualitative differences in isolated HVC with quantification across birds (Figure 1L). The persistent activity and truncations are documented observations, though the mechanistic link to syllable variability (C41) is speculative but reasonable given the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C42",
+      "C44",
+      "C45"
+    ],
+    "result": "HVC sequences are present in young isolated birds (57-64 dph) prior to the critical period, with no significant correlation between age and sequence features. The large inter-bird variability in sequence properties is attributed to individual differences in developmental timecourses rather than age.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42, C44-C45 are supported by data from 5 birds showing sequences before tutoring (Figure 1\u2014supplement 1A) and regression analysis finding no age correlation (p>0.5, Figure 1\u2014supplement 1B-F). The inference about individual variability (C45) is reasonable given the lack of age effect.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C6",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Half of late-tutored isolated birds learned new syllables (Imitation Score >0.5) while others remained isolate-like. Learners had fewer sequences (2 vs 3.25, p=0.029), weaker song correlation (0.20 vs 0.55, p=0.0034), and lower autocorrelation (0.125 vs 0.244, p=0.018) than non-learners prior to tutoring. Age of tutoring did not significantly predict learning outcome (p=0.11).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C46-C54 present a clear pattern with appropriate statistical tests (Wilcoxon rank sum) and visual data (Figure 2). The classification criterion (C47) is methodologically sound. Sample sizes are small (n=4 learners, n=4 non-learners) but statistical significance is achieved for key measures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C55",
+      "C56"
+    ],
+    "result": "The presence of robust, song-locked HVC sequences at the time of tutoring may inhibit learning, while more immature sequences that are decoupled from vocal output may better support learning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C56 are inferences from the quantitative differences between learners and non-learners (C51-C53). The correlation between sequence maturity and learning failure is well-supported by the data, making this a reasonable mechanistic interpretation, though causality is not definitively established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "In late-tutored learners, new syllables emerged within 1-2 days and appeared de-novo rather than by differentiation. Neural sequences associated with these new syllables existed prior to tutoring but were weakly coupled to vocal output. After tutoring, these pre-existing sequences became significantly more song-locked (p=0.0048) and correlated with the new syllables.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C64 describe tracking sequences across tutoring using neuron tracking methods (Figure 3A-D). Statistical tests with appropriate controls (time-shuffled, neuron-shuffled) support sequence persistence (C61-C62). The observation of increased song locking (C64) is statistically significant. The de-novo appearance claim (C58) is observational but reasonable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "HVC sequences may exist in a 'latent' state prior to tutoring\u2014present but weakly coupled to vocal output. Learner birds had two pre-tutoring sequences; those initially less correlated with song amplitude showed significant increases after tutoring (p=0.045), while initially stronger sequences did not change (p=1). This suggests new syllables co-opt existing latent sequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C70 extend the tracking analysis (Figure 3E-G) with appropriate statistical tests. The 'latent sequence' concept (C65, C70) is an interpretation well-supported by the differential changes in song locking for weak vs. strong pre-tutoring sequences (C68-C69). The observation of two sequences per bird (C67) is consistent across learners.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Sequences can form without prior tutor memory storage. Modeling work shows Hebbian learning with random inputs can generate sequences, though with durations matching variable isolate syllables rather than typical syllables. The findings are consistent with sequences emerging via Hebbian mechanisms and spontaneous HVC activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C77 integrate the empirical findings with computational models. C74 is a logical inference from C4. C75-C76 appropriately cite modeling work (Fiete et al., 2010) and connect predictions to observed isolate song features. C77 is a reasonable synthesis, though speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "The discovery of latent sequences suggests separation between building sequential state representations and associating actions with states. This is consistent with reinforcement learning models where HVC sequences remain stable during song changes, and parallels findings in motor cortex (brain-computer interface) and hippocampus (pre-existing place sequences).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C82 place findings in broader theoretical context. C78-C79 are reasonable interpretations of the latent sequence data. C80-C82 appropriately cite supporting work from other systems, strengthening the generalizability of the findings. The parallels drawn are conceptually sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Latent sequences lasted ~200ms, matching typical zebra finch syllable durations, suggesting species-specific timing may be genetically specified (via ion channel expression or feedback timing). These latent sequences appear capable of supporting delayed-tutoring learning, potentially representing a general mechanism for rapid learning from sparse data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C83-C88 mix observations (C84) with speculation (C85-C86, C88). While C84 is a data observation and C87 is supported by the learning results, the mechanistic hypotheses (C85-C86) are untested speculations. The generalization (C88) is interesting but highly speculative without additional evidence from other systems or species.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C95"
+    ],
+    "result": "Methods: Birds were foster-raised by females from \u226415 dph, isolated 35-50 dph. GCaMP6f was expressed via AAV9 injection. Neurons were extracted using CNMF_E algorithm. Most recorded neurons are likely projection neurons, not interneurons. SeqNMF algorithm measures sequential vs. synchronous patterns via 'sequenciness' score (0-1).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C93, C95 describe experimental and analytical methods with appropriate citations. The inference about neuron types (C92) is reasonable given interneuron firing properties and calcium imaging limitations. Methods are sufficiently detailed and use established, validated approaches.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C96"
+    ],
+    "result": "Background context: Behaviors emerge from experience and innate predispositions. Brain development involves both sensory experience and genetic processes. In songbirds, learning is influenced by tutor exposure and inherited preferences. Isolate birds develop atypical songs. HVC neurons mature from weakly coupled (subsong) to forming precise sequences in typical development. Critical period for learning typically ends ~65 dph.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C8-C25, C96 provide established background knowledge, all supported by appropriate citations to prior literature. These contextual claims accurately represent the field's understanding and properly frame the current study's questions.",
+    "result_type": "MINOR"
+  }
+]

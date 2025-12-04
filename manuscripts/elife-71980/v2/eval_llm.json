@@ -1,0 +1,366 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "The crystal structure of the ROR2 CRD-Kr tandem domain was determined at 2.48 \u00c5 resolution, revealing that the CRD comprises 5 \u03b1-helices and a single \u03b2-sheet stabilized by five disulfide bonds, while the Kr domain displays a single \u03b2-sheet stabilized by two disulfide bonds. The two domains form an associated structural unit with an interfacial area of 559 \u00c5\u00b2 and shape complementarity score of 0.7, dominated by van der Waals interactions with two hydrogen bonds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C34-C41 collectively describe the crystal structure determination and detailed structural features of the ROR2 CRD-Kr domains. The resolution, secondary structure elements, disulfide bond patterns, and interface characteristics are all directly supported by crystallographic data presented in Figure 1 and Supplementary file 1, with appropriate methods described.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C67"
+    ],
+    "result": "The ROR2 CRD lacks the signature hydrophobic groove characteristic of other FZ-type CRDs that binds lipid-modified proteins. Structural analysis reveals an additional helical insertion (\u03b15) in ROR2 that blocks the palmitoleate-binding groove observed in FZ8, making the ROR2 CRD incompatible with direct binding to the WNT5A palmitoleate moiety.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C61-C64, C67 describe a key structural finding supported by crystallographic data (Figure 2D-F) and structural superposition with FZ8-WNT complexes. The absence of the hydrophobic groove and the blocking \u03b15 helix are directly observable in the structure, though the functional implications (C64) are inferred from structural incompatibility rather than direct binding measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C42",
+      "C43",
+      "C45"
+    ],
+    "result": "The CRD and Kr domains share an extended interface, and deletion of the Kr domain severely impairs ROR2 construct secretion. The Kr structure closely resembles previously described ROR1/ROR2 and Nrk Kr domains, and the ROR2 Kr domain acts to stabilize the CRD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C33, C42-C43, C45 are supported by crystallographic data (Figure 1) showing the CRD-Kr interface, secretion assays (Figure 1\u2014figure supplement 1A) demonstrating reduced yield upon Kr deletion, and structural comparisons with published structures. The stabilization role (C45) is reasonably inferred from the secretion data, though direct stability measurements are not provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C82",
+      "C83",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "The ROR2 CRD is both required and minimally sufficient for WNT5A signaling. Domain truncation mutants lacking the CRD (\u0394CRD and \u0394CRD-Kr) completely failed to restore WNT5A signaling, while a minimal construct (mini-ROR2) containing only the CRD-Kr fused to a generic transmembrane helix substantially rescued WNT5A signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C7, C82-C83, C85-C87 are supported by functional complementation assays in ROR KO cells using the GFP-Pdzrn3 degradation reporter (Figure 3F, 3I) and DVL2 phosphorylation assays (Figure 3\u2014figure supplements 2-3). The data clearly demonstrate that the CRD is essential and sufficient, though the mini-ROR2 rescue is substantial but not complete compared to WT ROR2.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C130"
+    ],
+    "result": "WNT5A binds to the ROR2 CRD with lower affinity than to FZ2 and FZ7 CRDs, as demonstrated by pulldown assays. Despite lacking the hydrophobic groove, the ROR2 CRD can still bind WNT5A via a presumably lipid-independent manner.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C94, C130 are supported by the pulldown assay data shown in Figure 4A, which demonstrates differential binding of WNT5A to different CRDs. However, the assay is qualitative rather than quantitative (no KD values provided), and the lipid-independent binding mechanism (C94) is inferred from structural data rather than directly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C134",
+      "C135"
+    ],
+    "result": "Bivalent anti-FZ antibodies (F2.A and F1.C) potently activate WNT5A signaling in the absence of WNT5A (EC50 = 0.30 nM and 7.0 nM respectively), with reduced activity at post-saturating concentrations suggesting FZ dimerization. Monovalent F2.A Fab loses agonist activity but acts as a potent antagonist of WNT5A signaling, supporting a model where FZs function as signaling receptors for WNT5A.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C104, C134-C135 are supported by dose-response data (Figure 4B-F) and DVL2 phosphorylation assays (Figure 4\u2014figure supplement 1). The EC50 values are quantified, and the valency-dependent effects are clearly demonstrated. However, the FZ dimerization mechanism (C100) is inferred from the bell-shaped dose-response rather than directly observed, and blocking of WNT5A-FZ interaction by Fab (C103) is inferred rather than biochemically demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C113",
+      "C117",
+      "C157"
+    ],
+    "result": "Five Robinow syndrome mutations (C182Y, R184C, C223Y, G326A, R366W) exhibited strongly reduced WNT5A signaling capabilities and failed to traffic beyond the Golgi (Endo H sensitive), while two mutations (R189W, R272C) showed milder signaling deficits with partial Golgi trafficking and cell surface expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C110, C113, C117, C157 are supported by functional assays (Figure 5B, Figure 5\u2014figure supplement 1), glycosidase sensitivity assays (Figure 5C), and cell surface staining (Figure 5\u2014figure supplement 2). The data clearly demonstrate differential effects of mutations on trafficking and function, with appropriate controls and statistical analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "Structural analysis reveals that all 10 cysteines in the CRD are involved in disulfide bonds, and Robinow mutations C182Y and C223Y likely cause disease by destabilizing the CRD core structure. Kr domain mutations G326A and R366W are located near the CRD-Kr interface and may disrupt the structural unit through exposure of hydrophobic residues or disruption of the Kr fold.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C119, C127-C129 combine structural observations (Figure 1B, Figure 5D-G) with mechanistic interpretations. The disulfide bond assignments (C118) are directly supported by crystallographic data. The pathogenic mechanisms (C119, C128-C129) are reasonable structural inferences based on mutation locations, though they remain speculative without direct biophysical measurements of protein stability or folding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C10",
+      "C88",
+      "C89",
+      "C105",
+      "C136",
+      "C138",
+      "C149",
+      "C156"
+    ],
+    "result": "ROR2 acts via its CRD to potentiate the function of a receptor super-complex that includes FZ to transduce WNT5A signals. ROR2 cannot by itself function as the signaling receptor for WNT5A but instead facilitates FZ function, possibly by enhancing WNT5A-FZ interactions and/or promoting FZ dimerization, establishing a co-requirement for both ROR and FZ activities in noncanonical WNT5A signal transduction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C88-C89, C105, C136, C138, C149, C156 represent the main mechanistic model of the study. This model is supported by multiple lines of evidence: (1) structural data showing ROR2 CRD lacks lipid-binding groove, (2) functional data showing CRD is necessary and sufficient, (3) residual signaling in ROR KO cells, (4) antibody experiments demonstrating FZ involvement. However, the specific molecular mechanisms (super-complex formation, enhanced binding) remain speculative and require future biochemical validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "The full-length ROR2 ECD is monomeric in solution at concentrations up to 48 \u03bcM by SEC-MALS, indicating that the CRD does not mediate dimerization and the Ig and Kr domains do not facilitate oligomerization. SEC-SAXS analysis confirms the CRD-Kr arrangement observed in the crystal structure is conserved in solution, while the N-terminal Ig domain is flexible relative to the CRD-Kr unit.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C54 are supported by SEC-MALS data (Figure 1\u2014figure supplement 1B-C) and SEC-SAXS analysis (Figure 2\u2014figure supplement 1). The monomeric state is clearly demonstrated at physiologically relevant concentrations. The inference that CRD does not mediate dimerization (C50) is reasonable but contrasts with some FZ CRDs, and the possibility of TM/intracellular domain-mediated dimerization (C55) is appropriately acknowledged.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C68",
+      "C69",
+      "C70",
+      "C72"
+    ],
+    "result": "The spatial arrangement of CRD and Kr in ROR2 is substantially different from that in Drosophila Nrk, with structurally distinct CRD-Kr interfaces. The region of Nrk that interacts with a buried fatty acid does not superpose well with ROR2, and key lipid-binding residues (K170, R179) are absent or differently oriented in ROR2, suggesting ROR2 is unlikely to bind an internally buried fatty acid like Nrk.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C48, C68-C70, C72 are supported by structural comparisons shown in Figure 1\u2014figure supplement 2C and Figure 2\u2014figure supplement 2. The structural differences are clearly demonstrated, and the inference about lipid binding (C72) is reasonable based on the structural divergence and absence of key binding residues, though it remains an inference rather than direct experimental evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "A functional complementation system was established using immortalized MEFs from E12.5 Ror1f/f; Ror2f/f; CAG-CreER embryos with a GFP-Pdzrn3 degradation reporter. Loss of ROR1 and ROR2 substantially decreased WNT5A signaling, which can be fully rescued by exogenous WT ROR2, though ROR KO cells retain some basal WNT5A signaling activity indicating additional receptors exist to transmit WNT5A signals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C75, C79-C81 describe the experimental system and key control experiments shown in Figure 3A-C. The system is well-characterized with appropriate controls, and the dose-response data clearly demonstrate both the ROR requirement and residual signaling. The inference of additional receptors (C81) is reasonable from the data, though their identity is not determined in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "The ROR2 CRD is evolutionarily related to other FZ-type 'groove-containing' CRDs such as MuSK and FZ8, which are structurally distinct from 'pocket-type' CRDs. FZ-type CRDs from FZ8 and Smo exhibit shallow hydrophobic grooves that are structurally conserved when ligand-free, with minimal structural rearrangement upon ligand binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C60 are supported by phylogenetic analysis (Figure 1D, Supplementary file 2) and structural comparisons with published structures (Figure 2A-C). These claims establish the structural context for understanding ROR2's unique features. The evolutionary relationships and structural classifications are well-established in the literature and appropriately cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148"
+    ],
+    "result": "ROR2 mutants lacking the intracellular domain (\u0394ICD and mini-ROR2) can still support WNT5A signaling, suggesting ROR2 itself is unlikely to be the signal-transmitting receptor and that the cytoplasmic domain may play a regulatory role. This is supported by residual signaling in ROR1/ROR2 double knockout cells and the predicted catalytic inactivity of the ROR2 kinase domain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C144-C148 are supported by functional data (Figure 3F, 3I, Figure 3\u2014figure supplements 2-3) and citation to structural prediction of kinase inactivity (C148). The functional data clearly demonstrate that the intracellular domain is dispensable for signaling. However, the regulatory role proposed for the cytoplasmic domain (C146) is speculative and requires future investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122",
+      "C124",
+      "C125"
+    ],
+    "result": "Robinow mutations R184C and R272C, which introduce cysteines at solvent-exposed positions, may form cryptic intra- or intermolecular disulfide bonds causing protein misfolding or aggregation, with R184C likely more prone to these perturbations than R272C. R189W shows the least functional deficit, which may still be sufficient to cause disease or may affect other aspects of ROR2 regulation not detected in the assay system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C120-C122, C124-C125 are mechanistic speculations based on structural analysis (Figure 5D-F) and functional data (Figure 5B). While the structural locations are accurately described and the functional differences are demonstrated, the specific molecular mechanisms (cryptic disulfide bonds, aggregation) are not directly tested. The explanations for R189W (C124-C125) are entirely speculative without supporting data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C137",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143"
+    ],
+    "result": "A mechanistic model is proposed where the ROR2 CRD possesses a low-affinity WNT5A binding site analogous to site 2 in the WNT8-FZ8 complex, and could potentiate signaling by enhancing WNT5A-FZ binding via formation of an FZ:WNT:ROR2 super-complex. In this model, high-affinity WNT5A palmitoleate-FZ interaction provides an indiscriminate anchor while low-affinity WNT5A-ROR2 CRD interaction contributes to ligand-receptor specificity. Alternatively, ROR2 CRD may act allosterically to enhance FZ function or promote FZ dimerization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C137, C139-C143 present detailed mechanistic models that are speculative extrapolations from the data. While the models are consistent with the structural and functional observations, they lack direct biochemical evidence for super-complex formation, site 2 binding, or allosteric mechanisms. These represent testable hypotheses for future work rather than demonstrated findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C16",
+      "C17",
+      "C19",
+      "C20",
+      "C21",
+      "C23",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Background claims establish that ROR2 mediates noncanonical WNT5A signaling, dysfunction causes Robinow syndrome and other diseases, ROR proteins have specific domain architecture, and the ROR2 CRD was previously assumed to possess a hydrophobic groove similar to FZ CRD for WNT5A binding based on sequence similarity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C11-C14, C16-C17, C19-C21, C23, C25-C31 are background/context claims supported by citations to established literature. These claims appropriately set up the scientific context and prior assumptions that the current study challenges. The citations appear appropriate for the claims made, though detailed verification of each cited work is beyond the scope of this review.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155"
+    ],
+    "result": "The proposed model is consistent with previous in vivo work showing Ror1/Ror2 double knockout mice phenocopy Wnt5a KO mice, and that mutations in WNT5A, ROR2, or FZ2 all cause Robinow syndrome. Previous co-immunoprecipitation experiments have shown binding interactions between WNT5A-ROR2, WNT5A-FZ, and FZ-ROR proteins, though biochemical details remain to be characterized.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C150-C155 appropriately contextualize the current findings within prior literature. The citations to mouse genetics (C150) and human genetics (C151) support the model, and acknowledgment of prior binding studies (C152-C154) with the caveat that details remain unclear (C155) is appropriate. These claims accurately represent the state of prior knowledge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C90",
+      "C91"
+    ],
+    "result": "Members of the FZ family, particularly FZ1, FZ2, and FZ7, are plausible candidates for co-receptors in WNT5A signaling based on previous studies implicating them in noncanonical WNT5A signaling, and a human FZ2 mutation was recently identified in Robinow syndrome patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C91 are supported by appropriate citations to previous functional studies and human genetics. These claims provide the rationale for focusing on FZ receptors in the antibody experiments. The citations appear appropriate and the logic is sound.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "The experimental findings agree with previous modeling work predicting ROR2 CRD might not possess a hydrophobic groove for WNT lipid modification, and with the published MuSK structure which also lacks such a groove. Mammalian WNT5A is known to be lipidated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C131-C133 appropriately connect the current structural findings to prior predictions and established knowledge. The citations to Janda and Garcia modeling (C131), MuSK structure (C132), and WNT5A lipidation (C133) are appropriate and strengthen the interpretation of the current findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C161",
+      "C162"
+    ],
+    "result": "The authors envision that the experimental approach will serve as an important model for interrogating other mutations causing Robinow syndrome, brachydactyly B, and cancer metastasis, and more generally as a paradigm for modeling genetic disorders.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C161-C162 are forward-looking statements about the potential impact of the work. While the functional complementation system is indeed valuable, these claims are speculative about future applications rather than demonstrated results. The system's utility for other mutations and disorders remains to be established.",
+    "result_type": "MINOR"
+  }
+]

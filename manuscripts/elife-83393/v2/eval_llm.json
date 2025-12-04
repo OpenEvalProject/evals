@@ -1,0 +1,172 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Volume EM reveals detailed morphological features of GBCs including eccentric nuclei (25/26 cells), somatic surface areas averaging 1352 \u03bcm\u00b2, and complex dendritic structures with hubs (2-14 branches), swellings (51-126 per cell), and specific surface area distributions across compartments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are direct quantitative measurements from high-resolution EM data with clear sample sizes and statistical descriptions. The morphological observations are well-documented with specific counts and measurements, providing robust structural characterization of GBCs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "GBCs receive 5-12 endbulb inputs from auditory nerve fibers, with two distinct populations identified: coincidence-detection cells (12/21) where all inputs are subthreshold, and mixed-mode cells (9/21) with 1-2 suprathreshold inputs, based on a size threshold of 180 \u03bcm\u00b2 for the largest input.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The convergence numbers are directly measured from EM reconstructions (C10, C16). The classification into two groups is based on clear structural criteria (C12) with explicit cell counts. However, the functional interpretation (sub/suprathreshold) is a hypothesis requiring validation through modeling (C13-14), which is appropriately stated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "ANF branches to endbulbs are organized in fascicles, with 98/158 endbulbs traced to parent ANFs. Branch axons are thinner than parent fibers (1.4 vs 2.7 \u03bcm) but maintain the same g-ratio (0.76), yielding conduction velocities of 2.3-8.9 m/s and delays of 0-21 \u03bcs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Direct measurements from EM data provide the anatomical parameters (C16-19). The conduction velocity calculation (C20) applies established conversion factors from literature, though the specific formula's applicability to these small-diameter branches could benefit from experimental validation. The delay range is appropriately calculated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C58",
+      "C59"
+    ],
+    "result": "Computational models predict first spike latency SD of 0.232-0.404 ms and coefficient of variation of 0.45-0.73, matching in vivo mouse data. Models predict two operational modes (coincidence detection and mixed-mode) and identify dendrite geometry, soma size, and AIS length as key determinants of excitability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Model predictions (C22-23) align well with published in vivo data (C24), validating the modeling approach. The predictions about operational modes (C58) and morphological determinants (C59) are logical extensions of the structural data, though they remain computational predictions requiring experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Dendrite surface area is highly correlated with action potential threshold (p<0.001, r\u00b2=0.94), while soma area shows modest correlation (p=0.121, r\u00b2=0.352). AIS length (mean 16.8 \u03bcm, range 14.2-21.4 \u03bcm) modulates threshold by ~40% across the measured range. The axon hillock/AIS receives innervation from 1-4 endbulbs and 11.8 smaller terminals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The correlation analysis (C29-30) provides strong statistical evidence with appropriate p-values and effect sizes. The AIS measurements (C31-32) are direct from EM data, and the threshold modulation (C33) is a model prediction with clear quantification. The innervation patterns (C34-35) are directly counted from reconstructions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "GBCs segregate into two excitability groups based on synaptic efficacy growth patterns. The higher excitability group has half-maximal ASA of 148.6 \u03bcm\u00b2 and maximal efficacy of 0.72, while the lower excitability group has half-maximal ASA of 204.3 \u03bcm\u00b2. Smaller inputs show higher relative participation at 30 dB SPL than larger inputs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The grouping is based on model simulations with logistic function fits providing quantitative parameters (C26-27). The participation analysis (C28) is derived from model data. While these are computational predictions, they are well-constrained by the anatomical measurements and provide testable hypotheses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Model simulations predict that GBCs show enhanced vector strength (VS) relative to ANFs at low modulation frequencies (<300 Hz). Coincidence-detection GBCs show enhancement at 100-200 Hz, while mixed-mode GBCs show enhancement only at 200 Hz. Removing the largest input from mixed-mode cells improves VS at 50-100 Hz.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These are model predictions (C36-39) that lack direct experimental validation in mouse GBCs. The authors acknowledge limited comparable data exists for mouse CN responses to SAM stimuli. While the predictions are internally consistent with the model structure, experimental validation is needed to confirm these functional predictions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Complete synaptic mapping of GBC09 reveals 8 endbulb inputs and 97 small somatic terminals covering 83% of soma surface, plus 224 dendritic inputs. Innervation density is similar across most compartments (9-10/100 \u03bcm\u00b2) but highest on proximal dendrites (24/100 \u03bcm\u00b2). Some dendrite branches completely lack innervation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is the first complete synaptic map of a GBC with direct counts from EM reconstruction (C46-47). The density calculations (C48) are straightforward from the data. The observation of non-innervated dendrites (C50) is novel and well-documented. This represents a significant technical achievement providing unprecedented detail.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Computational modeling predicts that pruning non-innervated dendrites increases input resistance from 20.2 to 25.1 M\u03a9, decreases AP threshold from 0.439 to 0.348 nA, and increases synaptic efficacy of the four largest inputs by 14%, 216%, 733%, and 871% respectively.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are model predictions (C51-53) based on manipulating the reconstructed morphology. The calculations are internally consistent and demonstrate the functional significance of non-innervated dendrites. However, these remain computational predictions that would benefit from experimental validation through dendritic pruning experiments or developmental studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Volume EM of ~2000 serial sections covering 148\u00d7158\u00d7111 \u03bcm provides unprecedented reconstruction of 26 complete GBCs at 11\u00d711\u00d760 nm resolution, enabling identification of synaptic vesicles and postsynaptic densities. This represents the largest GBC dataset to date and reveals novel dendritic structures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The methodological descriptions (C54-55, C63-67) are detailed and appropriate. The sample represents 7-15% of total mouse ANFs (C17), providing substantial coverage. The resolution specifications (C64-66) are adequate for the analyses performed. The comparison with prior work (C56-57) appropriately contextualizes the advance. The choice of mouse is well-justified (C61-62).",
+    "result_type": "MINOR"
+  }
+]

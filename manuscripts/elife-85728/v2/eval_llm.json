@@ -1,0 +1,437 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "The manuscript establishes the clinical significance of Cryptococcus neoformans infections, noting its designation as a WHO high-priority pathogen, its responsibility for 15% of HIV/AIDS-related deaths (approximately 220,000 deaths annually), its 100% mortality rate if untreated, and the limited treatment options available (primarily amphotericin B and azoles).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4 and C74-C77 are well-supported by citations to WHO reports and published literature. These background claims establish the medical importance and treatment challenges of cryptococcosis, providing appropriate context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "The isw1\u0394 mutant exhibits profound resistance to azole compounds (fluconazole and ketoconazole), 5-FC, and 5-FU, but not to amphotericin B, as demonstrated by spotting assays and liquid growth assays.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C7 are supported by experimental data in Figure 1a-b showing clear drug resistance phenotypes. The complemented strain restores wild-type sensitivity, providing genetic validation. The specificity (resistance to azoles/5-FC but not Amp B) strengthens the finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C92",
+      "C93"
+    ],
+    "result": "ISW1 gene expression remains unchanged in the presence of drugs, but deletion of ISW1 leads to significant upregulation of drug resistance genes in the FLC-treated mutant, including 7 ABC transporter genes, 2 efflux protein genes, and 3 MFS transporter genes. Transcriptome analysis revealed 1275 genes (18.3% of genome) differentially expressed in isw1\u0394 when treated with FLC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C11, C92-C93 are supported by qRT-PCR (Figure 1\u2014figure supplement 1a) and transcriptome data (Figure 1c). The unchanged ISW1 expression with drug treatment combined with altered downstream gene expression supports a post-transcriptional or chromatin-level regulatory mechanism. Statistical significance is indicated for the differentially expressed genes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C12",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "The isw1\u0394 mutant shows substantially reduced intracellular FLC levels compared to wild-type, suggesting Isw1 regulates drug efflux mechanisms. The strong drug-resistance phenotype is attributed to concurrent modulation of multiple drug pump genes facilitating active drug removal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C12 is supported by HPLC quantification (Figure 1d) showing reduced intracellular FLC. Claims C123-C125 represent reasonable inferences from the combined transcriptome and drug accumulation data, though the mechanistic connection could be strengthened with additional efflux assays.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C13",
+      "C94",
+      "C95"
+    ],
+    "result": "Expression of 5-FC resistance genes (FCY1, FCY2, UGD1, UXS1) was significantly reduced in isw1\u0394 when treated with 5-FC. Isw1 represses genes responsible for FLC resistance while positively modulating genes required for 5-FC resistance, indicating drug-specific regulatory mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C13 is supported by qRT-PCR data (Figure 1f). Claims C94-C95 represent valid inferences from the opposing regulatory patterns observed for FLC vs. 5-FC resistance genes, though the mechanism underlying this differential regulation requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C14",
+      "C122"
+    ],
+    "result": "Isw1-Flag exhibits significant binding affinity to promoter regions of drug resistance genes, and the chromatin remodeler Isw1 functions as a primary regulator of antifungal drug resistance through direct interaction with target genes and alteration of gene expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C14 is supported by ChIP-PCR data (Figure 1g) showing Isw1 binding to drug resistance gene promoters. Claim C122 is a reasonable conclusion integrating the ChIP, transcriptome, and functional data, though additional ChIP-seq or mechanistic studies would strengthen the direct regulatory model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C15",
+      "C16"
+    ],
+    "result": "Truncation of DBD, SNF2, or helicase C domains significantly impairs Isw1 function, and these truncation mutant strains exhibit significant resistance to drug compounds, indicating critical roles for these domains in mediating Isw1 function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C16 are supported by spotting assay data (Figure 1h) and qRT-PCR analysis (Figure 1i) showing that domain truncations phenocopy the isw1\u0394 mutant. This structure-function analysis validates the importance of these conserved chromatin remodeling domains.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Mass spectrometry identified 22 Isw1-interacting proteins (11 predicted to be in the Isw1 network). Co-IP experiments confirmed that Itc1 and Chd1 interact with Isw1, while Sua7 does not.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C20 are supported by mass spectrometry (Figure 2a, Supplementary file 4) and co-IP data (Figure 2b-c). The identification of conserved ISWI complex components validates the approach, though the functional significance of novel interactors remains to be determined.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C113",
+      "C127"
+    ],
+    "result": "The itc1\u0394 strain shows resistance to antifungal agents similar to isw1\u0394, while chd1\u0394 demonstrates only limited drug resistance. This indicates that Isw1 drug resistance control relies on the Isw1-Itc1 complex rather than the Isw1-Chd1 pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C22 are supported by spotting and dose-response assays (Figure 2d-e). Claims C113 and C127 represent reasonable inferences from the differential phenotypes, though the conclusion would be strengthened by testing whether Itc1 is required for Isw1's chromatin binding or gene regulatory functions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Total Isw1 protein levels are unaffected by external stress inducers, and the isw1\u0394 strain shows no growth impairment under various stress conditions, only minor melanin production defects, and normal capsule development. This indicates Isw1 does not regulate fungal virulence factors and pathogenicity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C26 are supported by immunoblotting (Figure 3\u2014figure supplement 1) and phenotypic assays (Figure 3a-c). Claims C96-C98 represent reasonable conclusions, though the inference that Isw1 does not regulate virulence is somewhat overstated given the minor melanin defect and should be qualified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C99",
+      "C115"
+    ],
+    "result": "No significant differences in survival rates or CFUs were observed among wild-type, isw1\u0394, and complemented strains in untreated mice. However, the isw1\u0394 strain exhibits significantly enhanced fungal burdens when treated with FLC or 5-FC in vivo (p<0.0001), demonstrating Isw1's pivotal role as a regulator of drug resistance both in vitro and in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C28 are supported by mouse infection data (Figure 3d-e) with appropriate statistical analysis. The in vivo drug resistance phenotype validates the clinical relevance of the findings. Claims C99 and C115 are well-supported summary statements integrating the in vitro and in vivo data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C116"
+    ],
+    "result": "Isw1-Flag protein stability decreases in a concentration- and time-dependent manner upon FLC or 5-FC exposure, with 50% reduction observed 30 minutes after FLC treatment. C. neoformans actively reduces Isw1 protein levels through degradation in the presence of antifungal drugs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C31 are supported by cycloheximide chase experiments (Figure 4a-d) showing time- and dose-dependent Isw1 degradation. Claim C116 is a reasonable conclusion from these data, though the term \"actively\" implies regulated degradation which is supported by subsequent ubiquitination findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C32",
+      "C117",
+      "C118"
+    ],
+    "result": "Isw1 is ubiquitinated at 15 sites as identified by mass spectrometry. The ubiquitination machinery is actively initiated during drug exposure, and an interplay network exists between ubiquitination and acetylation to control Isw1 stability in response to antifungal drugs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C32 is supported by mass spectrometry data (Figure 4e-f). Claims C117-C118 represent reasonable inferences integrating the ubiquitination data with the observed degradation, though direct evidence for \"active initiation\" during drug exposure would require time-course ubiquitination measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C100"
+    ],
+    "result": "Antifungal agents strongly repress Isw1 acetylation levels, while deacetylation inhibitors (TSA and NAM) enhance acetylation. Total acetylation levels of Isw1 are reduced when cells are treated with FLC or 5-FC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C34 and C100 are supported by immunoblotting with anti-acetyl-lysine antibodies (Figure 5a-b). The opposing effects of drugs vs. deacetylation inhibitors provide strong evidence for regulated deacetylation in response to antifungal treatment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C101",
+      "C119"
+    ],
+    "result": "Triple-R mutations (K89R/K97R/K113R) mimic isw1\u0394 drug resistance, while triple-Q mutations show wild-type growth. The single K97R mutant shows robust drug resistance mimicking isw1\u0394, while K97Q shows no resistance. The K97 acetylation site functions as the essential regulating component and plays a critical role in regulating Isw1 stability and function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C38 are supported by spotting assays (Figure 5c-d, Figure 5\u2014figure supplement 1d). Claims C101 and C119 are well-supported conclusions from the mutagenesis data, with the K97 site showing the strongest individual effect among the tested residues.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C120",
+      "C121"
+    ],
+    "result": "Triple-R mutation significantly reduces Isw1-Flag levels while triple-Q mutation maintains wild-type levels. The K97R mutant shows lower Isw1-Flag levels and faster degradation compared to wild-type, while K97Q protein levels remain constant. Acetylation at K97 blocks Isw1 degradation while deacetylation facilitates it.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C44 are supported by immunoblotting and protein stability assays (Figure 5e-j). Claims C120-C121 represent well-supported mechanistic conclusions linking K97 acetylation status to protein stability, with quantitative data showing differential degradation rates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C110",
+      "C111"
+    ],
+    "result": "Both rapamycin (autophagy inhibitor) and MG132 (proteasome inhibitor) increase Isw1-Flag levels, with MG132 showing stronger effects. Both degradation pathways are utilized, but the ubiquitin-mediated proteasomal process has a more predominant role. MG132 blocks FLC-induced degradation but not 5-FC-induced degradation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C48 are supported by immunoblotting data (Figure 6a-c). Claims C110-C111 represent reasonable conclusions from the differential inhibitor effects, though the incomplete protection by MG132 against 5-FC suggests additional degradation mechanisms may be involved.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "MG132 treatment results in robust enhancement of Isw1K97R-Flag levels. Among ubiquitination site mutants, K113R and K441R mutations in the K97R background reduce drug resistance and show robust elevations in Isw1-Flag levels (5.6-fold and 14.5-fold respectively). K113 may undergo both acetylation and ubiquitination, while K441 undergoes only ubiquitination. These sites play predominant roles in regulating ubiquitin-proteasome degradation, with K97 acetylation broadly controlling ubiquitination at these sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C51 are supported by immunoblotting data (Figure 6d-g). Claims C106-C109 integrate mass spectrometry and mutagenesis data to propose a hierarchical regulatory model. The quantitative protein level changes support the predominant roles of K113 and K441, though the mechanism by which K97 acetylation controls distal ubiquitination sites requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Cdc4 is identified as an E3 ligase for Isw1 through screening of E3 ligase knockout mutants in the K97R background. The ISW1K97R/cdc4\u0394 strain becomes sensitive to antifungal agents and shows strong elevation in Isw1K97R-Flag levels. Disrupting CDC4 in wild-type H99 does not affect drug response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C55 are supported by genetic screening (Figure 7\u2014figure supplement 1a), spotting assays (Figure 7a), and immunoblotting (Figure 7b). The genetic epistasis analysis (cdc4\u0394 suppresses K97R resistance) provides strong evidence for Cdc4's role, though the incomplete suppression suggests additional E3 ligases may be involved (as noted in C105).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C103",
+      "C104"
+    ],
+    "result": "Cdc4-HA co-precipitates with Isw1-Flag. Cdc4 interacts with Isw1K97R but shows reduced interaction with Isw1K97Q, indicating that K97 acetylation hinders Cdc4 E3 ligase binding. When deacetylated, K97 triggers Isw1 degradation via the ubiquitin-proteasome process, while acetylated K97 blocks this interaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C59 are supported by co-IP experiments (Figure 7d-e) showing differential binding based on K97 acetylation status. Claims C103-C104 represent well-supported mechanistic conclusions integrating the binding, ubiquitination, and degradation data into a coherent regulatory model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Among 18 clinical isolates tested, 12 exhibited significant resistance to at least one antifungal drug despite lacking mutations in known drug-resistance genes (confirmed by PCR and sequencing). Six isolates showed no resistance and resembled H99 in drug response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C62 are supported by spotting assays (Figure 8\u2014figure supplement 1a) and sequencing data (Supplementary file 5). The absence of known resistance mutations in drug-resistant isolates motivates investigation of alternative mechanisms, though the sequencing approach (PCR-based) may have missed some mutations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Clinical isolates show three patterns: (1) multidrug-resistant strains have diminished Isw1-Flag levels, (2) drug-sensitive strains have robust Isw1-Flag levels, and (3) some resistant strains have Isw1-Flag levels comparable to H99. These changes are not due to transcriptional modifications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C66 are supported by immunoblotting (Figure 8a, Figure 8\u2014figure supplement 1b) and qRT-PCR (Figure 8\u2014figure supplement 1c). The correlation between Isw1 protein levels and drug sensitivity across multiple clinical isolates strengthens the clinical relevance, though the third category (resistant with normal Isw1 levels) suggests additional resistance mechanisms exist.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C67",
+      "C68"
+    ],
+    "result": "Clinical isolates show heightened Isw1 levels upon MG132 exposure and enhanced Isw1 acetylation upon TSA/NAM treatment, similar to the H99 strain, indicating conserved post-translational regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C68 are supported by immunoblotting data from clinical isolates (Figure 8b-d). The conservation of PTM regulation across clinical strains validates the generalizability of the mechanism, though only three isolates were tested for these specific experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C112"
+    ],
+    "result": "Overexpression of the non-degradable ISW1K97Q allele decreases drug resistance in H99 and four clinical strains (CDLC120, CDLC141, CDLC135, CDLC61). CDLC135 showed sensitivity to azoles but resistance to 5-FC, while CDLC141 resistance was suppressed by elevated Isw1 levels. This demonstrates that the acetylation-Isw1-ubiquitination axis is a naturally occurring mechanism modulating multidrug resistance in clinical strains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C72 are supported by dose-response assays (Figure 8e-i) showing that stabilizing Isw1 reduces drug resistance. Claim C112 is a well-supported conclusion integrating the clinical isolate data with the mechanistic findings, though the variable responses (especially CDLC135) indicate strain-specific factors also contribute.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C73",
+      "C126"
+    ],
+    "result": "Isw1 functions as a master regulator of multidrug responses in both laboratory and clinical strains, serving as a master transcriptional regulator of drug-resistance genes in C. neoformans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73 and C126 are summary statements well-supported by the comprehensive data including transcriptomics, ChIP, genetic analysis, and clinical isolate studies. The term \"master regulator\" is justified by the broad effects on multiple drug resistance pathways and the conservation across strains.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "The manuscript reviews established mechanisms of antifungal resistance including point mutations in drug targets (e.g., ERG11), DNA mismatch repair defects, mutations in drug uptake/metabolism genes (Fcy2, Fur1, Uxs1), and transcriptional regulation of efflux pumps and sterol biosynthesis genes in various fungal species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C84 are background claims supported by appropriate citations to published literature. These establish the context for investigating alternative resistance mechanisms and are appropriately referenced.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "The manuscript reviews the structure and function of ISWI chromatin remodeling complexes across species, including the conserved ATPase domain, complex composition in yeast (Isw1a/Isw1b with Ioc proteins, Isw2-Itc1), and functional interactions with Chd1 and Sua7.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C91 are background claims supported by appropriate citations establishing the evolutionary conservation and known functions of ISWI complexes. This provides important context for the C. neoformans studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C102",
+      "C105",
+      "C114"
+    ],
+    "result": "K97 acetylation acts as a molecular switch for ubiquitin conjugation and proteasome-mediated degradation. Isw1 may be modulated by additional uncharacterized E3 ligases and may function through alternative complex regulatory networks beyond the characterized Isw1-Itc1 complex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C102 is well-supported by the mutagenesis and degradation data. Claims C105 and C114 are speculative statements acknowledging limitations in the current model. The incomplete suppression by cdc4\u0394 and identification of multiple Isw1-interacting proteins support these possibilities, but they remain hypotheses requiring future investigation.",
+    "result_type": "MINOR"
+  }
+]

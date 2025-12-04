@@ -1,0 +1,271 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "The receptome, a measure of interareal chemoarchitectural similarity, was constructed from PET imaging data of 19 neurotransmitter receptors and transporters across over 1200 subjects. The receptor maps were parcellated into 100 regions and Spearman rank correlations were computed to generate the receptome matrix representing node-level interregional similarities in NTRM fingerprints.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C110-C114 provide a clear methodological foundation for the receptome construction. The dataset size (>1200 subjects), parcellation approach (100 Schaefer parcels), and validation against autoradiography data support the validity of this measure. The methodology is well-documented and the data source is appropriately cited.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Three main cortical receptome gradients were identified through diffusion map embedding: RC G1 (centro-temporal, 15% variance), RC G2 (occipito-frontal, 14% variance), and RC G3 (temporo-occipital, 13% variance). These gradients were driven by specific patterns of neurotransmitter receptor distributions and showed high correspondence to linear dimensionality reduction methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C29-C34, C74-C76 collectively demonstrate the identification and characterization of three cortical gradients. The variance explained (42% total), spatial patterns shown in Figure 1B, correlation with specific NTRM distributions (Figure 1C), and validation against null models (Figure 1\u2014figure supplement 1B) provide strong convergent evidence for these gradients as meaningful organizational axes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C77",
+      "C78"
+    ],
+    "result": "In subcortical nuclei, chemoarchitectural similarity distinguished functional communities through Leiden clustering and revealed a primary striato-thalamic gradient (sRC G1, 23% variance). Hierarchical clustering separated striatal structures and pallidum from thalamus and amygdala, with distinct NTRM co-expression patterns between striatum and thalamus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C35-C43, C77-C78 provide multiple lines of evidence for subcortical organization. The hierarchical clustering (Figure 2A), Leiden clustering stability, and gradient decomposition (Figure 2C) converge on a meaningful functional separation. The observation that spatial proximity does not determine gradient values (C41) strengthens the interpretation that chemoarchitecture reflects functional rather than purely anatomical organization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Cortical receptome gradients showed significant associations with meta-analytical functional activation patterns. RC G1 correlated with sensory-motor and control functions versus facial/emotion recognition. RC G2 separated control/memory from facial recognition and abstract functions. RC G3 distinguished language/speech from attention and memory functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C49 demonstrate functional associations through Neurosynth meta-analytic decoding (Figure 3B). The correlations are statistically significant and show interpretable patterns linking chemoarchitecture to functional specialization. However, the correlative nature limits causal inference, and spatial autocorrelation was appropriately controlled using variogram matching.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Receptome gradients correlated with disease-related cortical thickness alterations. RC G1 showed positive correlations with OCD cortical thickness profiles, while RC G2 showed negative correlations with BPD alterations. These associations align with known involvement of serotonergic (5-HTT, 5-HT2a) and GABAergic systems in OCD, and dopaminergic/glutamatergic systems in BPD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C52, C85-C89 link receptome organization to disease morphology using ENIGMA data (Figure 3C). The correlations are statistically significant and supported by literature on neurotransmitter involvement in these disorders. However, the cross-sectional correlative design cannot establish causality, and the associations represent hypothesis-generating findings requiring validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C93"
+    ],
+    "result": "The cortical receptome shared organizational traits with structural connectivity, functional connectivity, and microstructural profile covariance. Node-level coupling between receptome and these measures decreased along a primary-to-transmodal axis, with significantly stronger coupling in idiotypic cortices compared to heteromodal and paralimbic regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C5, C53-C65, C93 demonstrate multimodal correspondence through gradient correlations (Figure 4A) and row-wise coupling analyses (Figure 4B). Statistical testing (Kruskal-Wallis and post-hoc Dunn's tests) supports the sensory-fugal decoupling pattern. However, the authors acknowledge that results vary across parcellation granularities (C71-C73), suggesting some instability in these relationships.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Unimodal and heteromodal regions showed higher receptomic diversification compared to primary and paralimbic regions, as measured by modular stability analysis. This diversification may support functional flexibility, consistent with structure-function decoupling in transmodal cortices and high segregation of associative areas based on receptor architecture.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C6-C7, C66-C70, C96-C98 present an interesting pattern of receptomic diversity (Figure 4D), but the interpretation involves substantial speculation. The modular stability metric is novel and unvalidated (acknowledged in methods). The link to functional flexibility (C7, C96) is speculative and based on analogy to prior work rather than direct evidence. The disease vulnerability hypothesis (C98) is also speculative, though supported by citation to Hettwer et al., 2022.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Receptome gradients showed good replicability across parcellation granularities (100-400 parcels), though increasing granularity shifted gradient extremes toward temporal poles and caused component ranking switches at 200 and 400 parcels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C73 document important robustness analyses (Figure 1\u2014figure supplement 2). The general replicability is demonstrated, but the component ranking switches and spatial shifts indicate some instability. This is appropriately acknowledged as a limitation and suggests that specific gradient interpretations should be made cautiously, particularly regarding the distinction between RC G1 and RC G2.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Additional subcortical gradients (sRC G2: 17.5% variance, ventral-dorsal; sRC G3: 12% variance, medial-lateral) were identified. The first two cortical gradients correlated significantly with all subcortico-cortical gradients, while the third cortical gradient only correlated with the third subcortico-cortical gradient.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C84 describe additional subcortical organizational axes (Figure 2\u2014figure supplement 1) and their relationship to cortical organization. The variance explained and spatial patterns are clearly documented. The selective correlation pattern of RC G3 suggests some specificity in cortico-subcortical chemoarchitectural relationships, though the functional significance of these additional gradients receives less attention.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Visual and limbic cortices serve as relevant anchors in cortical chemoarchitectural similarity axes, appearing at gradient extremes. Hierarchical clustering separated visual and limbic networks from other functional networks, indicating more homogeneous chemoarchitectural compositions with little overlap between them.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C92 identify visual and limbic cortices as organizational anchors through gradient analysis and hierarchical clustering. The patterns are consistent across analyses and replicate autoradiography findings (Zilles and Palomero-Gallagher, 2017). However, the interpretation involves some inference from the spatial patterns, and the functional significance of this organization could be explored more deeply.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Prior work established that brain areas vary in cellular composition, neurotransmitter receptor distributions relate to cytoarchitecture and function, receptor fingerprints support functional specialization, and alterations in neurotransmitter systems are linked to psychiatric diseases. Subcortical projections may explain cortical structure-function disparities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C28 summarize established knowledge from prior literature, appropriately cited throughout. These claims provide context and motivation for the current work. The citations appear appropriate and the knowledge claims are generally accepted in the field. However, as background claims, they cannot be independently verified from the current manuscript's data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "Prior work showed structure-function coupling is stronger in unimodal cortices with decoupling toward transmodal cortices (hypothesized to support flexible cognition), primary regions show less interindividual variability than heteromodal regions, heteromodal regions show decreased heritability and cross-species similarity, and various neurotransmitter systems interact through complex signaling mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C95, C100-C103, C106-C109 cite relevant prior work that contextualizes the current findings. The citations appear appropriate and the knowledge claims are well-established. Claim C100 is noted as a potential confound for the sensory-fugal decoupling finding, showing appropriate critical evaluation. These background claims support interpretation but are not directly tested in the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C104",
+      "C105"
+    ],
+    "result": "5-HTT and \u03b14\u03b22 distributions are prominently anticorrelated in cortex but show similar distributions in subcortical nuclei, indicating differences in NTRM co-distribution patterns between cortical and subcortical regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C105 identify a specific example of divergent cortico-subcortical NTRM organization. This observation is supported by the correlation analyses with gradients in both compartments. The finding illustrates that while there are similarities in organizational principles, specific NTRM relationships differ between cortex and subcortex, which has implications for understanding neuromodulation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C115",
+      "C116"
+    ],
+    "result": "The MICA-MICs dataset of 50 healthy young adults was used to generate group-consensus structural connectivity, functional connectivity, and microstructural profile covariance matrices. Distance-dependent thresholding was applied to structural connectivity matrices to account for biases in tractography.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C116 describe the reference dataset used for multimodal comparisons. The sample size (n=50), acquisition parameters, and preprocessing steps are clearly documented. The distance-dependent thresholding for SC (C116) addresses a known methodological issue in tractography. However, the relatively small sample size and young adult age range limit generalizability.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,1950 @@
+{
+  "submission": {
+    "id": "23968c6e-f244-4633-b80f-a5dc2a1cdd5b",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-04T05:12:50.677630Z",
+    "updated_at": "2025-12-04T05:12:50.677630Z"
+  },
+  "content": [
+    {
+      "id": "a6d755ec-bbd4-4a3d-b1de-90f55e4b51c5",
+      "submission_id": "23968c6e-f244-4633-b80f-a5dc2a1cdd5b",
+      "content_type": "manuscript",
+      "content_text": "# Transparency of research practices in cardiovascular literature\n\n## Authors\n\n- Gabriel O Heckerman<sup>1</sup> ([ORCID: 0000-0001-6420-8909](https://orcid.org/0000-0001-6420-8909))\n- Eileen Tzng<sup>2</sup> ([ORCID: 0000-0002-7513-9192](https://orcid.org/0000-0002-7513-9192))\n- Arely Campos-Melendez<sup>2</sup> ([ORCID: 0000-0002-0322-1170](https://orcid.org/0000-0002-0322-1170))\n- Chisomaga Ekwueme<sup>2</sup>\n- Adrienne Mueller<sup>2</sup> ([ORCID: 0000-0001-9161-5323](https://orcid.org/0000-0001-9161-5323)) \u2020\n\n### Affiliations\n\n1. Western Kentucky University Bowling Green United States ([ROR:0446vnd56](https://ror.org/0446vnd56))\n2. Stanford Cardiovascular Institute Stanford United States\n3. Cornell University Ithaca United States ([ROR:05bnh6r87](https://ror.org/05bnh6r87))\n4. University of California, Los Angeles Los Angeles United States ([ROR:046rm7j60](https://ror.org/046rm7j60))\n5. University of California, Davis Davis United States ([ROR:05rrcem69](https://ror.org/05rrcem69))\n\n\u2020 Corresponding author\n\n## Abstract\n\nBackground:Several fields have described low reproducibility of scientific research and poor accessibility in research reporting practices. Although previous reports have investigated accessible reporting practices that lead to reproducible research in other fields, to date, no study has explored the extent of accessible and reproducible research practices in cardiovascular science literature.Methods:To study accessibility and reproducibility in cardiovascular research reporting, we screened 639 randomly selected articles published in 2019 in three top cardiovascular science publications: Circulation, the European Heart Journal, and the Journal of the American College of Cardiology (JACC). Of those 639 articles, 393 were empirical research articles. We screened each paper for accessible and reproducible research practices using a set of accessibility criteria including protocol, materials, data, and analysis script availability, as well as accessibility of the publication itself. We also quantified the consistency of open research practices within and across cardiovascular study types and journal formats.Results:We identified that fewer than 2% of cardiovascular research publications provide sufficient resources (materials, methods, data, and analysis scripts) to fully reproduce their studies. Of the 639 articles screened, 393 were empirical research studies for which reproducibility could be assessed using our protocol, as opposed to commentaries or reviews. After calculating an accessibility score as a measure of the extent to which an article makes its resources available, we also showed that the level of accessibility varies across study types with a score of 0.08 for case studies or case series and 0.39 for clinical trials (p = 5.500E\u22125) and across journals (0.19 through 0.34, p = 1.230E\u22122). We further showed that there are significant differences in which study types share which resources.Conclusions:Although the degree to which reproducible reporting practices are present in publications varies significantly across journals and study types, current cardiovascular science reports frequently do not provide sufficient materials, protocols, data, or analysis information to reproduce a study. In the future, having higher standards of accessibility mandated by either journals or funding bodies will help increase the reproducibility of cardiovascular research.Funding:Authors Gabriel Heckerman, Arely Campos-Melendez, and Chisomaga Ekwueme were supported by an NIH R25 grant from the National Heart Lung and Blood Institute (R25HL147666). Eileen Tzng was supported by an AHA Institutional Training Award fellowship (18UFEL33960207).\n\n## Introduction\n\nPrevious studies have reported on the lack of detailed methodology, data, and code provided that would be necessary for individual studies or study sets to be considered replicable and reproducible (Filazzola and Cahill, 2021). In addition, scientific publications are often behind paywalls that only users affiliated with a larger institution are readily able to access, meaning that research funded by public money is often inaccessible to the general public without paying a fee. Scientific practices have been evolving over time: data from a study can be complex and require a large amount of storage space, methods can be extremely sophisticated and require specialized equipment, and data analysis can require complex algorithms and code. Journals often do not specify requirements for materials sharing, data sharing, analysis code sharing, and methodological information \u2013 all of which have been shown to be important to be able to reproduce or replicate a study (Hamra et al., 2019; Munaf\u00f2 et al., 2017). Note that often there may be legitimate reasons for restricting accessibility, such as privacy concerns, restrictive company policies, and costliness of the process.\n\nSeveral efforts to improve transparency and accessibility are already underway. Among these are the Reproducible Evidence: Practices to Enhance and Achieve Transparency (REPEAT) initiative, a program dedicated to the improvement of transparency and reproducibility of database research in the healthcare sector (Repeat, 2023). REPEAT contributes to Wang et al., 2022, exploring reasons for irreproducibility, responsiveness of corresponding authors, and many more anecdotes in a study attempting to reproduce published results utilizing the same databases as the original investigators. Another example is the Reproducibility Project: Cancer Biology, meant to replicate experiments in cancer biology research papers to analyze their level or replicability (Davis et al., 2014). The Reproducibility Project: Cancer Biology demonstrated their work in preclinical cancer biology research replicability by repeating 50 experiments from 23 papers (Errington et al., 2021b) and 193 experiments from another 53 papers (Errington et al., 2021a), discussing challenges and barriers associated with replicability. In addition, several resources are readily available to aid with the transparency assessment, including but not limited to SciScore (Menke et al., 2022), DataSeer (DataSeer, 2023), and Ripeta (Sumner et al., 2021).\n\nAlthough some journals and funding agencies have implemented policies to support the public dissemination of research, we know from recent studies in several disciplines that accessible and reproducible research practices are still far from the norm (Borghi and Van Gulick, 2018; Walters et al., 2019; Kemper et al., 2020; Sherry et al., 2020; Smith et al., 2021). However, to date, no study has examined the degree of accessible and reproducible practices in cardiovascular science publications. Within the domain of cardiovascular science research, this type of analysis is extremely important for holding the latest cutting-edge discoveries in cardiovascular science to a high standard because of the impact on human health. We therefore investigate reproducible reporting practices using an adapted previously published screening process (National Academies of Sciences, Engineering, and Medicine, 2019).\n\nWith this study, we hoped to identify the prevalence of accessible and reproducible research practices in cardiovascular research. To achieve this aim, we defined what information is necessary to recreate research from a published work (reproducible). We screened randomly selected articles published in 2019 in Circulation, the European Heart Journal, and the Journal of the American College of Cardiology (JACC). We tested, both, that the simple majority, more than half of screened publications, would lack one or more specific criteria that facilitate reproducibility or replicability, and that the vast majority, over 90% of screened publications, would lack one or more specific criteria that facilitate reproducibility or replicability. In addition, we predicted that some study types (e.g. clinical trials) would satisfy significantly more accessibility criteria than other study types. We also predicted that some categories of accessibility criteria would be satisfied significantly more frequently than other categories in both study types and across separate journals (e.g. materials availability vs analysis script availability). We also specified that a lack of specific requirements by journals regarding what information to provide would lead to variability in which accessibility criteria are satisfied.\n\n## Materials and methods\n\n### Sampling plan\n\nTo determine the prevalence of accessible and reproducible research practices within cardiovascular literature, data was gathered from a random selection of all published studies in 2019 in the following three leading cardiology journals (Opthof, 2019): Circulation, European Heart Journal, and the Journal of the American College of Cardiology (JACC). To limit the scope of our analysis, we only included articles published in the year of 2019. This specific year was selected because it was the most recent full year not influenced by changes in reporting practices due to the COVID-19 pandemic.\n\nThe following PubMed search string was used to obtain the full list of articles screened: ((\u2018Circulation\u2019[Journal] OR \u2018J Am Coll Cardiol\u2019[Journal] OR \u2018Eur Heart J\u2019[Journal]) AND 2019/01/01:2019/12/31[Date \u2013 Publication]) NOT (Published Erratum[Publication Type]). This search string retrieved 2786 articles. This list was randomized and the first 639 were screened for our study, and researchers screened the listed articles sequentially. A PRISMA flow diagram (Appendix 1\u2014figure 1) of the inclusion and exclusion information is provided in the supplementary materials.\n\nNo blinding was involved in this study and each article was screened at least twice by separate individuals. Some researchers screened a higher proportion of articles than other authors, but each author screened at least 180 articles once. Any ambiguities identified during screening were resolved either through additional review, or through discussion among participating researchers to achieve consensus.\n\nWe initially screened 400 randomly selected articles, however of those articles only 153 were empirical research articles for which we could calculate accessibility measures. To increase the number of empirical research articles in our study, we therefore conducted a second round of screening. All aspects remained the same during additional screening other than generating the following new PubMed search string: (\u2018Circulation\u2019[Journal] OR \u2018J Am Coll Cardiol\u2019[Journal] OR \u2018Eur Heart J\u2019[Journal]) AND 2019/01/01:2019/12/31 [Date \u2013 Publication] NOT ((review[Publication Type]) OR (systematic review[Publication Type]) OR (editorial[Publication Type]) OR (comment[Publication Type]) OR (\u2018case reports\u2019[Publication Type]) OR (\u2018Introductory Journal Article\u2019[Publication Type]) OR (\u2018Historical Article\u2019[Publication Type]) OR (\u2018Practice Guideline\u2019[Publication Type])). This search string retrieved 1461 primarily empirical articles. This list was also randomized and the first 239 articles that had not already been screened were added to the first set of 400 screened articles. Researchers screened the new articles sequentially and any remaining non-empirical articles were removed from the list and replaced with an empirical research article.\n\n### Variables\n\nFollowing a modified version of a previously established coding protocol for reproducible and accessible research practices (Iqbal et al., 2016), the following criteria were screened during the evaluation process: type of reported study, pre-registration status, protocol availability, materials availability, data availability, analysis script availability, conflict of interest (COI) status, and open access of the article. An article\u2019s \u2018accessibility score\u2019 was calculated as the fraction of several accessibility criteria results with the specific criteria satisfied out of the total possible to be satisfied for that specific study type. See Table 1 for a list of screening criteria that contributed to the calculation of the accessibility score. Note that for papers without the ability to share Materials (e.g. Meta-analyses), the materials criterion was omitted from the accessibility score calculation. Our article coding form is derived from Iqbal et al., 2016 and can be found as Qualtrics.qsf and Word files in the pre-registration (Campos-Melendez et al., 2021).\n\n**Table 1.**\n Criteria determining accessibility score and criteria-satisfying responses.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Criteria screened</th>\n      <th>Criteria-satisfying responses</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>How clearly stated was the study type?</td>\n      <td>Stated (e.g. editorial comment, clinical trial)</td>\n    </tr>\n    <tr>\n      <td>Does the article state whether or not materials are available?</td>\n      <td>Yes the statement says that the materials (or some of the materials are available).*</td>\n    </tr>\n    <tr>\n      <td>Can you access, download, and open the materials files?</td>\n      <td>Yes.*</td>\n    </tr>\n    <tr>\n      <td>Does the article state whether or not data are available?</td>\n      <td>Yes \u2013 the statement says that the data (or some of the data) are available.</td>\n    </tr>\n    <tr>\n      <td>Can you access, download, and open the data files?</td>\n      <td>Yes.</td>\n    </tr>\n    <tr>\n      <td>Are the data files clearly documented?</td>\n      <td>Yes.</td>\n    </tr>\n    <tr>\n      <td>Do the data files appear to contain all of the raw data necessary to reproduce the reported findings?</td>\n      <td>Yes.</td>\n    </tr>\n    <tr>\n      <td>Does the article state whether or not analysis scripts are available?</td>\n      <td>Yes \u2013 the statement says that the analysis scripts (or some of the analysis scripts) are available.</td>\n    </tr>\n    <tr>\n      <td>Can you access, download, and open the analysis files?</td>\n      <td>Yes.</td>\n    </tr>\n    <tr>\n      <td>Does the article state whether or not the study (or some aspect of the study) was pre-registered?</td>\n      <td>Yes \u2013 the statement says that there was a pre-registration.</td>\n    </tr>\n    <tr>\n      <td>Can you access and open the pre-registration?</td>\n      <td>Yes.</td>\n    </tr>\n    <tr>\n      <td>What aspects of the study appear to be pre-registered? (select all that apply)</td>\n      <td>Hypotheses, Methods, AND Analysis Plan all available.</td>\n    </tr>\n    <tr>\n      <td>Does the article link to an accessible protocol?</td>\n      <td>Yes.</td>\n    </tr>\n    <tr>\n      <td>What aspects of the study appear to be included in the protocol? (select all that apply)</td>\n      <td>Hypotheses, Methods, AND Analysis Plan all available.</td>\n    </tr>\n    <tr>\n      <td>Does the article include a statement indicating whether there were any conflicts of interest?</td>\n      <td>Any of the following can be selected:Yes \u2013 the statement says that there are one or more conflicts of interest.Yes \u2013 the statement says that there is no conflict of interest.</td>\n    </tr>\n    <tr>\n      <td>Does the article include a statement indicating whether there were funding sources?</td>\n      <td>Any of the following can be selected:Yes \u2013 the statement says that there was funding from a private organization.Yes \u2013 the statement says that there was funding from a public organization.Yes \u2013 the statement says that there was funding from both public and private organizations.Yes \u2013 the statement says that no funding was provided.</td>\n    </tr>\n    <tr>\n      <td>Is the article open access?</td>\n      <td>Any of the following can be selected:Yes \u2013 found via Open Access Button.Yes \u2013 found via other means.</td>\n    </tr>\n  </tbody>\n</table>\n\n_*This criterion was not included for publications for which it was not possible to share materials._\n\nThe four criteria defining repeatability \u2013 methods (protocol or pre-registration), materials, data, and analysis script availability \u2013 are each considered an accessibility category. Each individual criterion in these four categories can be either satisfied or not. For a study to be considered fully \u2018replicable\u2019 all three of the following categories must be available: methods, data, and analysis scripts. For a study to be considered fully \u2018reproducible\u2019, all three of the following categories must be available: methods, data, and analysis scripts. If an article is either partially replicable or partially reproducible it is considered \u2018partially repeatable\u2019. Definitions of replicability and reproducibility were set based on those introduced by the National Academies of Sciences, Engineering and Medicine (NASEM) (2019). We defined the ability to replicate a study as the attempt to obtain the same results as a study by collecting new data. Reproducing a study describes the attempt to obtain the same results as a study by re-analyzing its data.\n\n### Analysis\n\nOnly articles that were fully screened and for which all ambiguities had been resolved were included in the final analysis. Papers written in a language other than English were also excluded, as well as any articles for which we could not access the full text. Articles without empirical data (e.g. review articles, commentaries, and editorials) were evaluated for author location, language, COI, funding statements, and public access of the article itself, but were otherwise not screened for accessibility criteria because these study types by their nature cannot share, for example, materials, data, or analysis code. We also screened whether studies could share materials or not. For example, meta-analyses are empirical research studies, but do not typically have any shareable materials. One such example is a meta-analysis (Russo et al., 2019), which was screened as an empirical paper but could not have materials due to the nature of the research conducted. Our analysis does assume, however, that all empirical research articles involve a protocol, the collection or re-use of data, and analysis of that data, and therefore methods, data, and analysis code or scripts should always be available.\n\nTo determine how frequently published cardiovascular research reports provide sufficient resources to replicate or reproduce their studies, we quantified the fraction of papers that are either partially replicable or partially reproducible \u2013 defined as partially repeatable. For all accessibility criteria, we calculated the proportion of papers in our dataset that exhibit each possible outcome. For example, for the accessibility criterion \u2018How does the statement indicate the materials are available\u2019, we calculated the proportion of papers that state that materials are available through an online third party repository, a personal or institutional webpage, supplemental information hosted by a journal, or upon request from authors. We also calculated the distribution of accessibility scores across our full dataset and further collected data regarding the location of the corresponding author. We use standard deviations to show the variability of the data.\n\nTo test for inconsistent, or variable, levels of accessibility, we examined our data using multi-way ANOVAs. Our independent variables included \u2018study type\u2019 and \u2018journal\u2019 and our dependent variable was the accessibility score. For the hypotheses addressing differences between the types of studies, journals, and accessibility scores using multi-way ANOVA, p-values <0.05 were considered to be statistically significant.\n\nTo evaluate the relationship between accessibility criteria (Materials, Methods, Data, and Analysis Code) and study types, we performed several sequential chi-squared tests of proportions. In cases with 0 samples in a group, we instead performed Fisher\u2019s exact tests. Tests were performed using R. We compared the proportion of papers that did and did not allow access to those four categories of information and resources, across all four categories. We also used chi-squared tests to further compare the proportion of papers that provided access to each category of information and which study types shared more or less of a specific type of information compared to other study types. We considered p-values \u22640.05 to indicate significant differences in proportions. We used Bonferroni correction to adjust the p-value for the number of tests performed. Note that this analysis differs slightly from that proposed in our pre-registration: Chi square Automatic Interaction Detection (CHAID).\n\n### Pre-registration\n\nThis study was pre-registered through the Open Science Foundation and can be accessed at https://doi.org/10.17605/OSF.IO/QFSTH (Campos-Melendez et al., 2021).\n\nAfter obtaining our data, not all exploratory analyses documented in the pre-registration were performed. We did not test the relationship between the articles described as accessible and those actually accessible due to the limited number of articles that exhibited large enough accessibility scores, nor did we perform textual analysis on the COI, funding statements, or the way resources were being shared. We also deviated from evaluating the relationship between corresponding author location and accessibility score given the low sample size for most countries. We also did not perform additional analyses with the accessibility criteria organized as a hierarchy, because of the subjectivity in determining a ranking of screening criteria. We also deviated from the pre-registration by using sequential chi-squared tests instead of the CHAID. CHAID analysis builds a predictive model using a classification tree with multiple levels. In our case, we only compare data across two levels and there is no hierarchical basis for a decision tree. CHAID was therefore an inappropriate method for our study. Lastly, we extended our data collection beyond what we initially proposed in our pre-registration so that we could have more empirical research articles in our dataset.\n\n## Results\n\nWe screened a similar proportion of 2019 articles from each of the three top cardiovascular journals: Circulation, European Heart Journal, and the Journal of the American College of Cardiology (226, 193, and 220, respectively, Figure 1C). Over half (247 out of 400) of the randomly selected articles in our initial screening were review articles or other article types that contained no empirical data (Figure 1). We ultimately screened a total of 639 articles, of which 393 were empirical research studies. Approximately half of the papers (56%) had easily identifiable study types while the remaining papers required more substantial reading to determine their study type (Figure 1B). 43% (276 out of 639) of the articles did not have a funding statement (Figure 1D). 93% of articles included a COI statement, and 57% stated they had a COI (Figure 1E). Notably, 7% of articles did not have any COI statement at all. Additionally, over 90% of articles were publicly accessible (605 out of 639, Figure 1F).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/81051/elife-81051-fig1-v2.jpg)\n\n**Figure 1.:** Summary of all screened publications on their (A) study type, (B) study type clarity, (C) journal in which it was published, (D) presence of funding source statement, (E) presence of conflict of interest (COI) statement, and (F) open access status.\n\n### Cardiovascular research publications rarely make their resources available\n\nLooking only at articles that included empirical research (393 out of 639 total articles), the majority had had no pre-registration statement (286) or no linked and accessible protocol (383; Figure 2A). Of the papers that had a pre-registration statement, nearly all of them had accessible and openable pre-registrations (106 out of 107; Figure 2A). Among articles that had an openable and accessible pre-registration or protocol, almost all articles included methods (106 out of 106, 9 out of 10), approximately half included hypotheses (44 out of 106, 7 out of 10), and less than half included analysis plans (27 out of 106, 5 out of 10; Figure 2A). We define a publication to have all pre-registration aspects if hypotheses, methods, and analysis are pre-registered. Of the 393 screened publications that have empirical research, 53 had 1 out of 3 of the aspects, 35 had 2 out of 4 of the aspects, and 18 studies had all three aspects.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/81051/elife-81051-fig2-v2.jpg)\n\n**Figure 2.:** Only study types considered empirical research in which materials are theoretically available were summarized. (A) Summary of the presence and accessibility of pre-registrations and protocols and the summary of components (hypotheses, methods, and analysis plan) of pre-registration and protocol for papers that had a pre-registration or protocol statement. N/A represents papers that could not answer the criteria because data, materials, and analysis plans were not available to begin with (top panel). (B) Summary of papers and material, data, and analysis script availability. For papers that had a statement, how materials, data, and analysis script were available, whether they were accessible, and whether it was clearly documented or present in its entirety are also summarized.\n\nOnly study types considered empirical research in which materials are theoretically available are summarized. Only 14% of articles made their materials available (56 out of 393), 31.8% of articles made their data available (125 out of 393), and 10.9% made their analysis scripts available (43 out of 393; Figure 2B). Across the articles that stated materials, data, and analysis scripts were available, it was most common for them only to be made available upon request from the authors (Figure 2B). Across the articles that stated materials, data, and analysis scripts were available, very few studies made the materials and data readily available for downloading or opening (1, 13) and only one study\u2019s analysis scripts were readily downloadable (1 out of 43; Figure 2B). However, the majority of data that was downloadable or openable was also clearly documented (9 out of 13; Figure 2B).\n\nThe majority of cardiovascular publications are not readily replicable or reproducible. We predicted that the majority of publications will not provide sufficient resources to replicate or reproduce their studies. We tested both (1) that the simple majority, more than half of screened publications, will be lacking one or more specific replicability or reproducibility criteria, and (2) that the vast majority, over 90% of screened publications, will be lacking one or more specific reproducibility or replicability criteria. We found that 49.6% (195 out of 393) of empirical research studies were not partially reproducible and 49.4% (194 out of 393) were not partially replicable. 2% (7 out of 393) empirical research papers were fully reproducible, but only 5 were fully replicable (Figure 3). Therefore, the simple majority of empirical research articles were partially reproducible or replicable, but the vast majority of empirical research studies were neither fully reproducible nor fully replicable.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/81051/elife-81051-fig3-v2.jpg)\n\n**Figure 3.:** An article is considered \u2018partially replicable\u2019 if any of material availability, analysis script availability, and methods criteria are satisfied and \u2018fully replicable\u2019 if all three criteria are satisfied. An article is considered \u2018partially reproducible\u2019 if any of data availability, analysis script availability, and methods are satisfied and \u2018fully reproducible\u2019 if all three criteria are satisfied. Note that these data describe the potential for a study to be partially or fully reproduced or replicated based on the availability of the study\u2019s resources (methods, materials, data, and code), not whether the study was itself replicated or reproduced.\n\n### Accessibility varies across journals and study types\n\nWith the exception of one paper, the entire dataset exhibited low accessibility with scores lower than 0.6; the majority of articles (144 out of 393) had accessibility scores within the 0.20\u20130.29 range and 18 articles had scores below 0.1. Only one article exhibited an accessibility score of 0.6 or greater (Figure 4A).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/81051/elife-81051-fig4-v2.jpg)\n\n**Figure 4.:** (A) Accessibility score distribution across the entire dataset. The number of articles represented by each bar falls within the specified accessibility score range. No articles obtained an accessibility score fraction greater than 0.60. (B) Average accessibility scores across all articles screened, based on study type. Error bars correspond to standard deviation of the collected data points. Sample sizes are noted at the base of each bar. All scores are based on a total possible score of 1. (C) Average accessibility score by journal type. Screened articles were obtained from three different journals, including Journals of the American College of Cardiology (JACC), European Heart Journal from the European Society of Cardiology, and American Heart Association (AHA) Circulation. The standard deviation bars are indicative of the range of distribution of the obtained accessibility score fractions for each journal. Sample sizes are noted at the base of each bar. All score fractions are based out of a total possible score of 1.\n\nWe also predicted that the level of accessibility will be inconsistent across several dimensions. Specifically, we predicted that average accessibility score would vary across study types and potentially also across journals, depending on the publisher\u2019s requirements. For example, if clinical trials must be registered and open access, clinical trial publications will satisfy more of the article coding form criteria than other studies. We tested this hypothesis by calculating an accessibility score for every article: the sum of the satisfied screening criteria divided by the total possible satisfiable criteria. We then calculated the average and standard deviation in accessibility scores across study type (Figure 4C). Overall accessibility scores were low across all study types, and standard deviations were large, indicating high variability across individual publications. We found that clinical trials had the highest average accessibility score (0.39), and clinical case studies or series had the lowest accessibility scores (0.08). Average accessibility scores were significantly different across study types (ANOVA, d.f. 7, F=36.37, p=5.500E\u22125).\n\nWe also predicted a significant difference in the number of accessibility criteria satisfied across journals due to differences in reporting policies. The largest proportion of articles screened were obtained from Circulation with a total number of 226 articles, and 74% of those were empirical research papers (168 out of 226). 63% of JACC articles (138 out of 220) and 45% of Circulation articles (87 out of 193) were empirical research for which we could calculate an accessibility score. After computing the average accessibility score for all three journals, Circulation had the highest average accessibility score (0.34), followed by the Journals of the American College of Cardiology (0.24), then the European Heart Journal (0.19) (Figure 4B). Accessibility scores vary significantly across journals (ANOVA, d.f. 2, F = 80.07, p = 1.230E\u22122). There was not a significant interaction between study type and journal (p = 0.284).\n\n### Categories of accessible resources varies across study types\n\nWe also predicted some categories of resources will be accessible significantly more frequently than other categories (e.g. materials availability vs analysis script availability). We found that there was a significant difference in the proportion of papers that shared specific categories of resources (X2 = 55.2, p = 6.17e\u221212). We then further identified whether different study types exhibited differences in the proportions of shared resources, for example, whether there was a difference in the proportion of papers that have accessible data depending on study type. Note that we did not include Clinical Studies with Interventions, Meta-analysis or Systematic Reviews, Non-clinical Secondary Data Analysis, or Laboratory Cell or Molecular Studies in this analysis due to their small sample size. For all four shareable resources (Materials, Methods, Data, and Analysis), we found a significant difference across study types (Table 2).\n\n**Table 2.**\n p-values of chi-square tests of study type for each category of resource.We tested for a significant relationship between study type and availability of resources. \u2018Yes\u2019 refers to a paper including the resource and \u2018No\u2019 refers to a paper not including the resource. Observed values were compared to expected values for each category of resource.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>Yes</th>\n      <th>No</th>\n      <th>Study type chi-square p-value with Bonferroni correction</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Materials</td>\n      <td>46</td>\n      <td>308</td>\n      <td>3.05E\u221213</td>\n    </tr>\n    <tr>\n      <td>Methods</td>\n      <td>107</td>\n      <td>247</td>\n      <td>4.91E\u221235 (case studies omitted)</td>\n    </tr>\n    <tr>\n      <td>Data</td>\n      <td>107</td>\n      <td>247</td>\n      <td>2.31E\u221212</td>\n    </tr>\n    <tr>\n      <td>Analysis</td>\n      <td>36</td>\n      <td>318</td>\n      <td>1.58E\u221212</td>\n    </tr>\n  </tbody>\n</table>\n\nTo determine specifically how study types differ in which resources they share, we performed multiple chi-squared tests with Bonferroni correction, comparing each study type with every other study type for a given resource (Figure 5; Table 3). We found that a significantly higher proportion of laboratory animal studies stated that they would share materials than clinical observational studies or clinical trials. We also, as expected, found a significantly higher proportion of clinical trials shared their methods compared to any other study type. With regard to data sharing, we found that a significantly higher proportion of laboratory animal studies shared their data than any other study type. Lastly, a significantly higher proportion of laboratory animal studies shared their analysis code compared to clinical observational studies and clinical trials.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/81051/elife-81051-fig5-v2.jpg)\n\n**Figure 5.:** Methods presence is determined by presence of a pre-registration or linked protocol. Presence is indicated in green, absence in yellow. For each value, both the percentage and the count for that category and study type are shown.\n\n**Table 3.**\n p-values for chi-squared tests and Fisher\u2019s exact tests comparing the presence or absence of specific accessibility categories (Materials, Methods, Data, and Analysis Code) for each study type compared to every other study type (Clinical Case Study or Series, Clinical Observational Study, Clinical Trial, and Laboratory Animal Study).p-values significant at an alpha level of 0.05 with Bonferroni correction are shown in bold. Use of Bonferroni correction to adjust the p-values for multiple comparisons resulted in some p-values being greater than 1. Given that a probability greater than 100% cannot occur, any values greater than 1 were adjusted to a ceiling value of 1.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>Materials</th>\n      <th>Methods</th>\n      <th>Data</th>\n      <th>Analysis Code</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Clinical Case Study or Series vs Clinical Observational Study</td>\n      <td>1.0</td>\n      <td>1.0</td>\n      <td>1.0</td>\n      <td>1.0</td>\n    </tr>\n    <tr>\n      <td>Clinical Case Study or Series vs Clinical Trial</td>\n      <td>1.0</td>\n      <td>3.14E\u221213</td>\n      <td>0.34</td>\n      <td>1.0</td>\n    </tr>\n    <tr>\n      <td>Clinical Case Study or Series vs Laboratory Animal Study</td>\n      <td>0.04</td>\n      <td>1.0</td>\n      <td>1.86E\u22125</td>\n      <td>0.18</td>\n    </tr>\n    <tr>\n      <td>Clinical Observational Study vs Clinical Trial</td>\n      <td>1.0</td>\n      <td>1.35E\u221226</td>\n      <td>0.25</td>\n      <td>1.0</td>\n    </tr>\n    <tr>\n      <td>Clinical Observational Study vs Laboratory Animal Study</td>\n      <td>1.58E\u221212</td>\n      <td>1.0</td>\n      <td>1.74E\u221211</td>\n      <td>2.66E\u221212</td>\n    </tr>\n    <tr>\n      <td>Clinical Trial vs Laboratory Animal Study</td>\n      <td>1.42E\u22123</td>\n      <td>3.96E\u221219</td>\n      <td>2.07E\u22123</td>\n      <td>1.92E\u22123</td>\n    </tr>\n  </tbody>\n</table>\n\n## Discussion\n\nWe reviewed 639 papers that were published in 2019 in three of the top cardiovascular research journals to determine how accessible, and therefore reproducible, their research was. Our intention with this study was not to diminish existing studies, but to share current practices with the cardiovascular field and identify ways to improve those practices to enhance reproducibility and transparency in the future. We hope to identify opportunities for journals and scientists to adapt their practices to further reproducible science and encourage the use of higher standards and consistent formats, among cardiovascular scientific literature.\n\nIn general, we found that the simple majority, but not the vast majority, of publications are lacking one or more of the resources (materials, methods, data, or analysis scripts) to replicate or reproduce a study. Only 5 out of 393 provided sufficient resources to fully replicate their work, and only 7 out of 393 provided sufficient resources to reproduce their work. Although there were statistically significant differences in accessibility scores across study types and journals, overall, accessibility scores were consistently low.\n\nIn an effort to increase replicability and reproducibility of future published cardiovascular literature, there are some initiatives that could be taken. Journals have implemented practices to incentivize researchers to share their materials, methods, data, and analysis scripts, such as open science badges (Kidwell et al., 2016), reporting checklists (Han et al., 2017), and checking articles for reproducibility (Organic Syntheses, 2023) or replicability (Nosek et al., 2015). Our findings suggest increasing these efforts and expanding them to funding agencies would help promote open science practices across the field.\n\n### Publication accessibility\n\nIn collecting data on the fraction of papers that were publicly accessible, we found that only 34 out of 639 articles (5%) were not publicly accessible (Figure 1F). Although this is a fairly low fraction of inaccessible articles, a study\u2019s publication is in many ways the most tangible output of the research, and having publicly accessible publication should be a minimum standard for research. The NIH\u2019s public access policy has been instrumental in ensuring public access to published research reports, but reports funded purely through private sources are not currently under the same reporting mandate.\n\n### Study type\n\nIt is notable that over half of the 400 papers we initially randomly selected for screening were non-empirical research, e.g. reviews, editorials, and commentaries. Although these emissions may be effective ways to communicate quickly and effectively with larger audiences, they may not go through the same rigor of review process. We also occasionally screened articles that were simplified summaries of the original research study, geared toward a lay audience. This type of article is valuable in that it makes research more accessible to a broader audience; however, because methods were absent and results were condensed, it was ambiguous whether the studies being reported in these articles had undergone full scientific review. Readers run the risk of assuming that these articles describe a full scientific story as opposed to a news highlight.\n\nIn addition, publications of replication studies, or studies that included a replication study, were virtually absent from our dataset (4 out of 393 empirical research publications) \u2013 suggesting the field of cardiovascular research puts very little emphasis on replication work. Of concern, several studies also stated outright that their data was not available for replication, stating for example \u2018The investigators will not make the data, methods used in the analysis, and materials used to conduct the research available to any researcher for purposes of reproducing the results or replicating the procedure.\u2019 Although there can be legitimate reasons why data sharing is not possible, these statements are typically not accompanied by any justification.\n\n### Materials, methods, data, and analysis script sharing\n\nAlthough data was shared more frequently than materials or analysis scripts, there were still only a total of 13 out of 393 empirical research papers for which data was readily openable to a reader. We acknowledge that authors will often have legitimate reasons for not being able to share resources, including patient privacy. However, it has also been shown that patients are in general very willing to make their data available to further research (Seltzer et al., 2019; Kim et al., 2019). We advocate for research studies actively seeking consent from human subject participants to make their data available and if that consent cannot be obtained to specify that justification for not sharing data in their report.\n\nAlthough basic research studies more frequently shared materials, data, and analysis scripts than clinical trials, that sharing was frequently \u2018upon request from the authors\u2019, which previous studies have shown to be hit-or-miss in terms of yield (Hardwicke et al., 2018). Clinical trials had by far the most consistent availability of a resource category: methods, in the form of pre-registrations. Because pre-registrations are mandated by the FDA to conduct a clinical trial, our results suggest that resource-sharing requirements by funding or approval agencies are effective means of changing practices. It should be noted however, that a recent study by Goldacre et al., 2019 showed that in trials with pre-registrations, only 76% of pre-specified trial outcomes were correctly reported. Therefore, even when trials are pre-registered variable switching is common when reporting results.\n\n### COI and funding statements\n\nPublications are a critical form of communicating research, and the content and results of publications are often prioritized to the point that COI and funding statements are easy to overlook. As a community, we are often more interested in the results described in publications than the process behind getting them. Personal interests and finances are undeniably a part of experimental integrity and can impact experimental design and therefore COI and funding statements should be given as much attention as other components of the publication. Although it was beyond the scope of this study to perform a rigorous analysis of COI and funding statements, our screening process did reveal numerous cases of ambiguous COI and funding declarations. In Table 4, we capture both problematic and positive examples of COI and funding statements. For example, many COI and funding statements were vague in that they lacked details on how different funders of interests specifically influenced the study, which is important for interpretation of the results. As another example, we also identified \u2018Disclosures: None\u2019 as a problematic statement, because it could be interpreted as the authors having no disclosures or that the authors declined to list their disclosures. The relationship between funders and COIs is also ambiguous. Authors frequently listed funders and declared \u2018no conflict of interest\u2019; however, funders frequently do have an interest in and impact on the study and therefore represent a COI. If nothing else, it is in the interest of researchers to produce compelling results to maintain good relations and receive future funding from agencies, even if they were funded solely through public organizations.\n\n**Table 4.**\n Summary table of problematic and informative COI and funding statement examples that we repeatedly came across.Ambiguous or problematic statements are in red and clear statements are in green.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Conflict of interest (COI) statements</th>\n      <th></th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Example</td>\n      <td>Comment</td>\n    </tr>\n    <tr>\n      <td>When the COI is mixed with funding when disclosures are listed as \u2018none\u2019.</td>\n      <td>While funding can be considered a conflict of interest, the statements should be carefully separated if \u2018disclosures\u2019 and \u2018funding\u2019 are listed separately. Support for a specific author may not always be directly funding the project but may influence the project as a conflict of interest.</td>\n    </tr>\n    <tr>\n      <td>\u2018Conflict of interest: the author has received fees or grants from COMPANY.\u2019</td>\n      <td>\u2018Fees\u2019 and \u2018grants\u2019 are two different elements and should be clarified as both can influence a study. It is unclear whether these fees or grants funded the published study and how they influenced the study if at all.</td>\n    </tr>\n    <tr>\n      <td>\u2018Both authors have reported that they have no relationships relevant to the contents of this paper to disclose.\u2019 \u2018The authors have reported that they have no relationships relevant to the contents of this paper to disclose.\u2019 \u2018Conflicts of interest: none.\u2019 \u2018Disclosures: none.\u2019</td>\n      <td>This statement suggests that there are potential conflicts of interests and leaves the reader wondering if there are possible conflicts of interests left out. It does not leave room to be confident that there are no conflicts of interests.</td>\n    </tr>\n    <tr>\n      <td>\u2018Dr. NAME has received research grants from NAME; and has received honoraria for NAME. Dr. NAME has received research grants from NAME. Drs. NAMES are founders of COMPANY and as such have received modest honoraria from COMPANY.\u2019\u2018Dr. NAME is related through family to a member of COMPANY but neither she, nor her spouse, nor children have financial involvement or equity interest in and have received no financial assistance, support, or grants from the aforementioned.\u2019</td>\n      <td>It is highly ambiguous as to whether this is a funding or COI statement. It is unclear if funders played any role in designing or performing the experiment.</td>\n    </tr>\n    <tr>\n      <td>There is no COI but there is an acknowledgement.</td>\n      <td>Acknowledgements and COI should be separate sections as these two sections have different purposes. Including COI as acknowledgement allows COIs to be easily overlooked.</td>\n    </tr>\n    <tr>\n      <td>No COI or funding statement.</td>\n      <td>COI and funding statements provide additional factors that can impact a study outside of experimental factors. This information should always be included to fully inform readers, particularly when concerns are raised about certain studies or when the information is applied in real-world applications.</td>\n    </tr>\n    <tr>\n      <td>\u2018NAME served as the Guest Associate Editor for this paper.\u2019</td>\n      <td>Although many authors will not serve as editors for the journals they are applying to, it is helpful to acknowledge when that is the case and the potential conflict of interest.</td>\n    </tr>\n    <tr>\n      <td>The authors specifically state that they have no conflicts of interest.</td>\n      <td>This is a clear and definitive statement that there are no conflicts of interests and readers are not left wondering if there are conflicts of interests that are not mentioned.</td>\n    </tr>\n    <tr>\n      <td>Itemization of funders with explicit listing of the ways funders did not contribute to the study. \u2018The authors have reported that they have no relationships relevant to the contents of this paper to disclose.\u2019</td>\n      <td>We believe this is an excellent way of recognizing that funding can be a form of conflict of interest. The authors also specifically state that they have no conflict of interests.</td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">Funding statements</td>\n    </tr>\n    <tr>\n      <td>Example</td>\n      <td>Comment</td>\n    </tr>\n    <tr>\n      <td>Funding in acknowledgements.</td>\n      <td>Funding should be separate from acknowledgements. When funding is included in acknowledgements, it is easily overlooked.</td>\n    </tr>\n    <tr>\n      <td>Long list of affiliations without any statement that the list is funding or COI.</td>\n      <td>Funding and COI should be considered as an opportunity to share how factors outside of the experiment influenced the study. Listing affiliations is not sufficient and should be followed by explanations of why they are listed.</td>\n    </tr>\n    <tr>\n      <td>Funding statement system, particularly when papers list \u2018funding on page PAGENUMBER\u2019.</td>\n      <td>Listing \u2018funding on page PAGENUMBER\u2019 is ambiguous, leading to issues with finding the funding statement. We experienced cases where we either could not find the funding statement, or it was difficult to access. Funding statements should be listed with their respective articles.</td>\n    </tr>\n    <tr>\n      <td>Funding statement found on pages outside of their respective articles \u2018Sources of Funding, see page PAGENUMBER.\u2019</td>\n      <td>Funding statements should be directly associated with their corresponding article. Although including a funding statement elsewhere in a journal issue is better than no funding statement, the location is distant and disconnected from its corresponding article. If a pay wall is present, access may differ between the funding statement and the original article.</td>\n    </tr>\n    <tr>\n      <td>\u2018Acknowledgements: Dr. NAME is a recipient of a grant from the ORGANIZATION in support of SPECIFIC research.\u2019</td>\n      <td>We believe that funding should be separate from acknowledgements, as these two sections have their own purposes.</td>\n    </tr>\n    <tr>\n      <td>\u2018Sources of Funding: none.\u2019 \u2018Disclosures: Drs. NAMES received modest consulting fees from COMPANY for the conduct of this research. NAME is funded by grants from COMPANY. Dr. NAME reports a charitable grant from the ORGANIZATION, and personal fees from COMPANY. The other authors report no conflicts.\u2019</td>\n      <td>There are no funding sources listed, but numerous avenues of fees, grants, and more are then listed as disclosures. It is not clear that these fees and grants did not influence the study in any way, including whether those fees and grants were used to partially fund the study.</td>\n    </tr>\n    <tr>\n      <td>Under \u2018sources of funding\u2019, no sources of funding are listed, but the COI statement refers to (explicit) statements that describe funding for the study.</td>\n      <td>There should not be discrepancies between reports on funding and COI. This makes it difficult for the reader to gauge how factors are truly impacting the study.</td>\n    </tr>\n    <tr>\n      <td>Funding and COI are condensed into a single section below author associations. Funding statement and COI are listed together as \u2018Footnotes\u2019.</td>\n      <td>COI, funding, and author associations should be listed separately for easy understanding. By listing COI, funding, and author associations together, it is difficult to understand who impacts the study in what ways.</td>\n    </tr>\n    <tr>\n      <td>\u2018Dr. NAME is supported by FUNDING from the COMPANY/ORGANIZATION. The funding source had no role in the design and conduct of the study; collection, management, analysis, and interpretation of the data; preparation, review, or approval of the article; and decision to submit the article for publication.\u2019</td>\n      <td>This statement clearly acknowledges how funders can play a role in a study and explicitly states that funders had no role in the experiment and publication. The reader is not left wondering if there are additional conflicts.</td>\n    </tr>\n  </tbody>\n</table>\n\nTo avoid these issues, we advocate that journals require more complete and standardized COI and funding information that recognizes their overlap, including: a clear description on how each funding entity supported the work including whether they influenced the experiments, analysis, or dissemination of the work. We recommend that journals require authors to complete a consistent and transparent funding and COI questionnaire or decision tree that is clearly and prominently associated with the article.\n\n### Authorship\n\nAlthough we did not have sufficient articles from different countries of corresponding authors to determine whether there was a significant difference in accessibility practices across countries, we did see a wide range in accessibility score values. In terms of reporting, it was in general very straightforward to identify the corresponding author of an article. However, sometimes corresponding authorship was ambiguous in that no contact information was given, or was listed as, \u2018Published on behalf of [\u2026]. All rights reserved. The Author(s) 2019. For permissions, please email: [\u2026].\u2019 In these circumstances, it is unclear who the corresponding author is and who is ultimately responsible for questions regarding the research.\n\n### Limitations\n\nAlthough we attempted to achieve completeness and consistency in screening by ensuring each article was screened by two separate individuals, we acknowledge we may have missed or misinterpreted statements in screened articles. For example, in capturing the type of funding for a study as public, private, or a combination of both, we may have misidentified the funding type for some organizations, especially for foreign funding bodies. Another example would be identifying whether the study type was clearly stated versus inferred with further reading of the article. These determinations are subjective and may vary with individuals\u2019 experience with different study types and interpretation of language used in articles. Note that regular readers of publications will face the same challenges.\n\nFurthermore, the accessibility score we used could be further developed to better represent the diversity of publications. For example, there may be types of studies that we identified as not providing materials, because no materials statement was given, but for which all materials may already be adequately described in the text and therefore actually readily available. In these cases, our accessibility score is not accurate. Case studies and case series are the study type most likely to be affected by this limitation due to their limited data and analysis. Only 21 out of 393 empirical research studies (5%) were case studies or case series. Similarly, our current screening criteria only gives credit to papers that state they share a protocol and that protocol is actually linked. Our screening protocol does not capture articles that have a protocol availability statement but do not provide a link.\n\nIn the future, the accessibility score could be improved to be more specific to different article types. For example, case studies typically represent patient cases where replicating or reproducing the study would not necessarily be expected. Lastly, this study also only used data from some of the highest ranking cardiovascular research journals. These journals are likely to have higher reporting standards than other journals in the field, so our results are likely to overestimate the reporting and sharing practices of publications in cardiovascular research in general.\n\n### Future work and conclusion\n\nThe data collected from 639 screened papers provides numerous future directions for not only exploratory analysis on the existing dataset, but also for new projects assessing accessibility and reproducibility of scientific literature. The accessibility scores we calculated are a rough, quantitative estimate of an article\u2019s actual accessibility and further work is required to more fully describe how accessible and reproducible cardiovascular literature is. For example, future work could identify which criteria are the biggest needs for the field, and then evaluate the quality of an article\u2019s accessibility by weighting those criteria or organizing the criteria into a hierarchy of importance. Future studies could also investigate text excerpts describing how resources are or are not being made available to determine the causes that promote or undermine accessible research practices.\n\nOur study shows that there is a high degree of variability in the resources cardiovascular research publications make available \u2013 across study types and journals. Universally, however, publications almost never provide sufficient materials, protocol information, data, or analysis scripts for another group to fully replicate or reproduce their work. When federal policies mandate the open research practices, such as ensuring publications are publicly accessible or clinical trials are pre-registered, these practices are adopted. To ensure the highest caliber of research in the future, we urge journals and funding agencies to require higher standards in their materials, protocol, data, and analysis script sharing \u2013 regardless of the study type or the funding source.\n",
+      "created_at": "2025-12-04T05:12:50.677630Z"
+    },
+    {
+      "id": "922bfc38-860c-4d72-ae4a-7526ebc308f7",
+      "submission_id": "23968c6e-f244-4633-b80f-a5dc2a1cdd5b",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Arduino A Mangoni, https://ror.org/01kpzv902 Flinders Medical Centre and Flinders University Australia\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.81051.sa0](https://doi.org/10.7554/eLife.81051.sa0)\n\nThis paper in the field of metascience reports important findings on the levels of accessibility and reproducible research practices in the field of cardiovascular science. As such, it provides a solid benchmarks against which future work could be assessed. The article is of broad interest to basic and clinical cardiovascular scientists.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Arduino A Mangoni, https://ror.org/01kpzv902 Flinders Medical Centre and Flinders University Australia\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.81051.sa1](https://doi.org/10.7554/eLife.81051.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Accessibility and Reproducible Research Practices in Cardiovascular Literature\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Matthias Barton as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Timothy M Errington (Reviewer #1); Dorothy VM Bishop (Reviewer #2).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential Revisions (for the authors):\n\nThe analysis states that to be fully reproducible, publications must include sufficient resources (materials, methods, data and analysis scripts). But how about cases where materials are not required to reproduce the work? In line 128-129 it is noted that the materials criterion was omitted for meta-analyses, but what about other types of study where materials may be either described adequately in the text, readily available (eg published questionnaires), or impossible to share (e.g. experimental animals). To see how valid these concerns might be, the first 4 papers were assessed in the deposited 'EmpricalResearchOnly.csv' file. Two had been coded as 'No Materials availability statement' and for two the value was blank.\n\nStudy 1 used registry data and was coded as missing a Materials statement. The only materials that might be useful to have might be 'standardized case report forms' that were referred to. But the authors did note that the Registry methods were fully documented elsewhere.\n\nStudy 2 was a short surgical case report \u2013 for this one the Materials field was left blank by the coder.\n\nStudy 3 was a meta-analysis; the Materials field was blank by the coder\n\nStudy 4 was again coded as lacking a Material statement. It presented a model predicting outcome for cardiac arrhythmias. The definitions of the predictor variables were provided in supplementary materials. It is not clear what other materials might be needed.\n\nThese four cases suggest that it is rather misleading to treat lack of a Materials statement as contributing to an index of irreproducibility. Certainly, there are many studies where this is the case, but it will vary from study to study depending on the nature of the research. Indeed, this may also be true for other components of the irreproducibility index: for instance, in a case study, there may be no analysis script because no statistical analysis was done. And in some papers, the raw data may all be present in the text already \u2013 that may be less common, but it is likely to be so for case studies, for instance.\n\nA related point concerns the criteria for selecting papers for screening: it was surprising that the requirement for studies to have empirical data was not imposed at the outset: it should be possible to screen these out early on by specifying 'publication type'; instead, they were included and that means that the numbers used for the actual analysis are well below 400. The large number of non-empirical papers is not of particular relevance for the research questions considered here. In the Discussion, the authors expressed surprise at the large number of non-empirical papers they found; it would have been reasonable for them to depart from their preregistered plan on discovering this, and to review further papers to bring the number up to 400, restricting consideration to empirical papers only \u2013 also excluding case reports, which pose their own problems in this kind of analysis.\n\nThe analysis presented may create a backlash against metascientific analyses like this because it appears unfair on authors to use a metric based on criteria that may not apply to their study. If you are going to evaluate papers as to whether they include things like materials/data/ availability statements, then you need to have a N/A option. However, it may not be possible to rely on authors' self-evaluation of N/A and that means that metascientists doing an evaluation would need to read enough of the paper to judge whether such a statement should apply.\n\nSome of the analyses could be dropped. The analysis of authorship by country, Figure 6, had too few cases for many countries to allow for sensible analysis.\n\nIt would be good to put into context efforts to replicate and reproduce papers and accessibility of materials, methods, data, code, etc \u2013 such as REPEAT initiative (https://www.repeatinitiative.org), the Reproducibility Project: Cancer Biology (https://elifesciences.org/collections/9b1e83d1/reproducibility-project-cancer-biology). Additionally, the discussion could benefit from emerging automated tools to assess transparency of materials, methods, data, code, etc (e.g., SciScore (https://www.jmir.org/2022/6/e37324), DataSeer (https://dataseer.ai/), and Ripeta (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8814593/)).\n\nThe abstract should specify that while 400 articles were screened, less than half were able to be assessed for the main findings reported \u2013 currently it is unclear.\n\nThe discussion could benefit from some concrete next steps. Such as what could be done at the journal level to make this more available? Items such as better metadata, incentivizing researchers (e.g., open science badges \u2013 https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1002456), reporting checklists (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5597130/), or checking articles for reproducibility (e.g., https://www.insidehighered.com/blogs/rethinking-research/should-journals-be-responsible-reproducibility) or replicability (e.g., http://www.orgsyn.org/). An overarching theme to expand on would be on what journals can do for improving their policies and incentive (e.g., https://www.science.org/doi/full/10.1126/science.aab2374). Similarly, this could be done at the funder and author level (and editor/reviewer).\n\nPlease consider reviewing the title as the authors study does not investigate reproducibility directly, but rather indirectly through a prerequisite of accessibility. So maybe consider reframing to have the title focused on the transparency 'audit' the authors did so readers do not think it should include a reproducibility 'audit'.\n\n[Editors' note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Transparency of Research Practices in Cardiovascular Literature\" for further consideration by eLife. Your revised article has been evaluated by a Reviewing Editor and a Senior Editor.\n\nThe manuscript has been improved but there are some remaining issues that need to be addressed, as outlined below:\n\n(1) There is still a strong tendency to have the language center on replicability and reproducibility even though the article is entirely on transparency/accessibility of the aspects that would be needed for assessing replicability or reproducibility. While the title and abstract reflect this, it is not consistent throughout. For example, lines 277-282 still anchor on reproducible and replicable even though it's not tested \u2013 instead the authors are assessing if the materials needed for reproducibility and replicability are accessible from the published articles. Same with the figures (e.g., Figure 3).\n\n(2) While the addition of additional projects is helpful for context, the authors might consider articles instead of websites. For example, REPEAT could be this article (https://www.nature.com/articles/s41467-022-32310-3). The reproducibility project in cancer biology could be this article (https://elifesciences.org/articles/67995) or this article (https://elifesciences.org/articles/71601). These would match the references to SciScore and Ripeta.\n\n(3) Line 240 \u2013 it should be \"Open Science Framework\" not \"Open Science Foundation\".\n\n(4) Lines 352-360 should have references instead of urls to the papers.\n\n(5) In Table 3 \u2013 I think the authors should list any p-value over 1 as 1.0 \u2013 there is no additional value in reporting them as over 1.\n\n(6) Figure 1F, 2A, 2B \u2013 at times the authors present data where the bar graph stops even though the number presented is less than the value (e.g., 1F goes to 564 for open access button even though the axis looks like it's less than 400). The authors seem to be adjusting their axis for clarity purposes, however, it is suggested the authors adjust further for increased clarity and decreased confusion \u2013 they should show the bar and axis as broken with the axis properly reflecting the value. Alternatively, the authors should create the graphs so they are reporting the entire range. Furthermore:\n\na) Figure 1 could more economically be shown in a single table.\n\nb) If Figure 2 used stacked barplots rather than single bars, then it would be possible to show the relationship between study type and the dependent variables within the same plot \u2013 this would make it easier to gain an intuitive sense of what the chi square tests were showing\n\nc) Figure 3 is unnecessary \u2013 the numbers reported could be more economically described in the text.\n\nd) Figures 4 and 5 again miss an opportunity to show the interesting interactions between variables, by just plotting variables one at a time. For instance, Figure 4 panel A could use stacked bars to differentiate journals, which would make panel C unnecessary. Figure 5 could use stacked bars with study type denoted by colour, which would make it easier to economically show the 4 types of accessibility criteria in a single plot (ie one bar for each criterion, with the study types stacked in a bar). This website is v useful for showing how to do this in R: http://www.sthda.com/english/wiki/ggplot2-barplots-quick-start-guide-r-software-and-data-visualization\n\n(7) There are issues with reproducibility. The file EmpiricalResearchOnly(3).csv could be open but It was not immediately clear how the Accessibility.Score.Fraction had been computed. Ideally, this should be done within the script. The criteria are defined in Table 1, but it is not easy to recompute this from the available script and file for two reasons: the responses are coded as text rather than numerical, and it is unclear how NA responses (which are very frequent for some items) are handled. When trying to recreate the Accessibility Score and the Accessibility Score proportion from the raw data, results were a little different (script appended below).\n\nAs far as this reviewer could see, the problem regarding cases where Materials may not be appropriate was only partially addressed. There is a code for Study.Type.With.No.Materials, but studies coded that way are also coded as \"No\" for Materials. Flag, and it seems that it is the latter that is still used to index the Repeatable/Reproducible variables?\n\nIt's possible this has all been addressed, but it is not at all clear. It would seem appropriate to ignore the Materials Flag when computing reproducibility etc. if the study type did not require materials \u2013 I checked the first study on file, and it was of this type. It was an analysis of mortality in data records, and was coded as Study.Type.With.No.Materials. As mentioned above, though, it isn't crystal clear how these computations were done and a revised script to automate the calculations within R is required, I think, for an article focused on reproducibility.\n\n(8) The Fully.Reproducible and Fully.Repeatable variables are identical \u2013 and indeed that is how they are described on p. 4.\n\n(9) Para 1 of Analysis says \"We also screened whether studies could share Materials or not. For example, meta-analyses are empirical research studies, but do not typically have any shareable materials\". Because the focus is now on empirical articles, it would be better to give an example of an empirical article that has no materials \u2013 the first study on the.csv file is of this type.\n\n(10) Line 231 : should this be \"across two levels\"\n\n(11) Line 266: \"Only 14% of articles made their materials available (56 out of 393)\" \u2013 need to break this down to show the proportion of papers after excluding those with no materials.\n\n(12) Line 323; need comma or : rather than stop before \"For example\"\n\n(13) Line 410: may be worth citing the work of Goldacre, showing that even when trials are pre-registered, variable switching is common when reporting results: Goldacre, B., et al. (2019). COMPare: A prospective cohort study correcting and monitoring 58 misreported trials in real time. Trials, 20(1), 118. https://doi.org/10.1186/s13063-019-3173-2\n\n(14) Table 2 \u2013 it is not clear what the Yes vs No numbers are, or how these chi square values were computed. Could not find this analysis in the R script. what hypothesis is being tested here?\n\n(15) Table 3 \u2013 because p-values greater than 1 make no sense, it may be better to follow the precedent of SPSS, and just censor these values so that the ceiling is 1. This could be explained in the legend.\n\nSimple R script for trying to reproduce accessibility score\n\nmydf <- read_csv(paste0(here(\"EmpiricalResearchOnly_3.csv\")))\n\n#csv file read from OSF: 'here' just ensures we look in working directory\n\n#Use table 1 to create binary variables a1 to a17\n\nmydf$a1 <- 1\n\nmydf$a1[mydf$Study.Type.Clarity==\"Inferred (needed to read)\"]<-0 #no NA cases here\n\nmydf$a2 <- 0\n\nmydf$a2[mydf$Materials.Availability.Statement==\"Yes the statement says that the materials (or some of the materials) are available.\"]<-1 #nb this turns NA to 0\n\nmydf$a3<-0\n\nmydf$a3[mydf$Data.Downloadable.Openable==\"Yes\"]<-1 #nb this turns NA to 0\n\nmydf$a4<-1\n\nmydf$a4[mydf$Data.Availability.Statement==\"No \u2013 there is no data availability statement.\"]<-0\n\nmydf$a5<-0\n\nmydf$a5[mydf$Data.Downloadable.Openable==\"Yes\"]<-1 #nb this turns NA to 0\n\nmydf$a6<-0\n\nmydf$a6[mydf$Data.Clearly.Documented==\"Yes\"]<-1 #most here are NA\n\nmydf$a7<-0\n\nmydf$a7[mydf$Data.Contain.All.Raw.Data==\"Yes\"]<-1 #most here are NA\n\nmydf$a8<-1\n\nmydf$a8[mydf$Analysis.Script.Availability.Statement == \"No \u2013 there is no analysis script availability statement.\"]<-0 #no NA here\n\nmydf$a9<-0\n\nmydf$a9[mydf$Analysis.Files.Downloadable.Openable==\"Yes\"]<-1 #many NA\n\nmydf$a10<-0\n\nmydf$a10[mydf$Pre.registered.Statement==\"Yes \u2013 the statement says that there was a pre\u00ad-registration.\"]<-1 #no NA\n\nmydf$a11=0\n\nmydf$a11[mydf$Pre.registration.Accessible.Openable==\"Yes\"]<-1 #many NA\n\nmydf$a12a=0\n\nmydf$a12a[mydf$Pre.registration.Aspect\u2026Hypothesis==\"Hypotheses\"]<-1\n\nmydf$a12b=0\n\nmydf$a12b[mydf$Pre.registration.Aspect\u2026Methods==\"Methods\"]<-1\n\nmydf$a12c=0\n\nmydf$a12c[mydf$Pre.registration.Aspect\u2026Methods==\"Analysis.Plan\"]<-1\n\nmydf$a12<-mydf$a12a+mydf$a12b+mydf$a12c\n\nmydf$a12[mydf$a12<3]<-0 #only code if all 3 are present\n\nmydf$a12[mydf$a12==3]<-1\n\nmydf$a13<-0\n\nmydf$a13[mydf$Accessible.Protocol.Linked==\"Yes\"]<-1\n\nmydf$a14a=0\n\nmydf$a14a[mydf$Protocol.Aspect\u2026Analysis.Plan==\"Analysis plan\"]<-1 #most are NA\n\nmydf$a14b=0\n\nmydf$a14b[mydf$Protocol.Aspect\u2026Hypothesis==\"Hypotheses\"]<-1 #most are NA\n\nmydf$a14c=0\n\nmydf$a14c[mydf$Protocol.Aspect\u2026Methods==\"Methods\"]<-1\n\nmydf$a14<-mydf$a14a+mydf$a14b+mydf$a14c\n\nmydf$a14[mydf$a14<3]<-0 #only code if all 3 are present\n\nmydf$a14[mydf$a14==3]<-1\n\nmydf$a15 <-1\n\nmydf$a15[mydf$COI.Indicated==\"No \u2013 there is no conflict of interest statement, and disclosures are NOT listed.\"]<-0 #no NA\n\nmydf$a16<-0\n\nmyans<-substring(mydf$Funding.Sources.Statement,1,3)\n\nw<-which(myans == \"Yes\")\n\nmydf$a16[w]<-1\n\nmydf$a17<-1\n\nmydf$a17[mydf$Open.Access.Article==\"No could not access article other than through paywall\"]<-0\n\n#no NA\n\nmydf$allacc <-mydf$a1+mydf$a2+mydf$a3+mydf$a4+mydf$a5+mydf$a6+mydf$a7+mydf$a8+mydf$a9+mydf$a10+mydf$a11+mydf$a12+mydf$a13+mydf$a14+mydf$a15+mydf$a16+mydf$a17\n\nmydf$accprop<-mydf$allacc/17\n\n#Adjust for study type with no materials\n\nw<-which(mydf$Study.Type.With.No.Materials==\"Yes\")\n\nmydf$allacc[w] <- mydf$allacc[w]-mydf$a2[w]-mydf$a3[w] #remove items a2 and a3\n\nmydf$accprop[w] <-mydf$allacc[w]/15 #adjust proportion\n\n#visualise if computed accessibility score is same as Accessibility.Score (it isn't)\n\nplot(mydf$allacc,mydf$Accessibility.Score)\n\nabline(a=0,b=1)\n\nplot(mydf$accprop,mydf$Accessibility.Score.Fraction)\n\nabline(a=0,b=1)\n\n[Editors' note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Transparency of Research Practices in Cardiovascular Literature\" for further consideration by eLife. Your revised article has been evaluated by a Senior Editor and a Reviewing Editor.\n\nThe manuscript has been improved but there are some remaining issues that need to be addressed, as outlined below:\n\n- Please reconsider the alternative visualizations of the figures. They don't have to remove their current figures, instead they can present alternative figure visualizations as supplementary figures so readers can see both versions.\n\n- Figure legend 3, it should be \"An article is considered 'partially reproducible' if any of data availability, analysis script\u2026.\" (i.e., the 'if any' is missing).\n\n- It is not sufficient to refer to an online calculator for the calculation of chi-square values. These are trivial to compute in R, and if they were part of the script, then it would be possible to work out which numbers had gone into the calculation. As it is, table 2 remains confusing because it shows numbers and a p-value for each of 4 categories of resource, but states that the chi-square test is used to test a 2-way relationship: between study type and resource. It seems we are shown only one dimension of the two-way table, which is not helpful. Furthermore, it is not clear where those numbers came from because it was unclear what variables were used.\n\n- Given the paper's focus on reproducibility, there should be a script that generates all the tables in the paper. That allows readers to check on exactly what was done and is particularly useful if, for instance, an error is found at some point: the calculations can then be rerun to regenerate all tables and statistics (and ideally also the figures).\n\n- Here's a bit of code that will at least do a chi-square test, and give the two-way data that is needed to interpret the relationship.\n\nwantcat <- c('Clinical Case Study or Series','Clinical Observational Study','Clinical Trial','Laboratory Animal Study')\n\nshortdf<-mydf[mydf$Study.Type %in% wantcat,] #filter Study.Type data\n\nmytab <- table(shortdf$Study.Type,shortdf$Materials.Availability.Statement.Binary) #two way table\n\nmychi <- chisq.test(mytab)\n\npcorr <- mychi$p.value*4 #multiply by 4 for Bonferroni-corrected value\n\n#Display 2 way table and corrected pvalue for Table 2\n\nmytab\n\npcorr\n",
+      "created_at": "2025-12-04T05:12:50.677630Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T05:12:50.677630Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T05:12:50.677630Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "e5068ead-ced2-485a-8acc-6975ba98d24e",
+      "content_id": "a6d755ec-bbd4-4a3d-b1de-90f55e4b51c5",
+      "claim_id": "C1",
+      "claim": "Several fields have described low reproducibility of scientific research and poor accessibility in research reporting practices.",
+      "claim_type": "EXPLICIT",
+      "source": "Several fields have described low reproducibility of scientific research and poor accessibility in research reporting practices.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about the state of scientific research across multiple fields, drawing on established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:12:50.677630Z"
+    },
+    {
+      "id": "8c1a2e0d-fe7c-4a5c-9efc-d6843e0d7aca",
+      "content_id": "a6d755ec-bbd4-4a3d-b1de-90f55e4b51c5",
+      "claim_id": "C2",
+      "claim": "No study has explored the extent of accessible and reproducible research practices in cardiovascular science literature prior to this work.",
+      "claim_type": "EXPLICIT",
+      "source": "Although previous reports have investigated accessible reporting practices that lead to reproducible research in other fields, to date, no study has explored the extent of accessible and reproducible research practices in cardiovascular science literature.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on the authors' review of existing literature and represents their assessment of the current state of research.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:12:50.677630Z"
+    },
+    {
+      "id": "522c927f-65e0-4858-87ac-aae03a944371",
+      "content_id": "a6d755ec-bbd4-4a3d-b1de-90f55e4b51c5",
+      "claim_id": "C3",
+      "claim": "639 randomly selected articles published in 2019 in three top cardiovascular science publications were screened.",
+      "claim_type": "EXPLICIT",
+      "source": "To study accessibility and reproducibility in cardiovascular research reporting, we screened 639 randomly selected articles published in 2019 in three top cardiovascular science publications: Circulation, the European Heart Journal, and the Journal of the American College of Cardiology (JACC).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodology and sample size of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:12:50.677630Z"
+    },
+    {
+      "id": "171a8d95-eaad-43ce-8c5d-8bc5d5bfd4a3",
+      "content_id": "a6d755ec-bbd4-4a3d-b1de-90f55e4b51c5",
+      "claim_id": "C4",
+      "claim": "Of the 639 articles screened, 393 were empirical research articles.",
+      "claim_type": "EXPLICIT",
+      "source": "Of those 639 articles, 393 were empirical research articles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct count from the data collected in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:12:50.677630Z"
+    },
+    {
+      "id": "78627922-d21d-4f1b-b767-1902141731db",
+      "content_id": "a6d755ec-bbd4-4a3d-b1de-90f55e4b51c5",
+      "claim_id": "C5",
+      "claim": "Fewer than 2% of cardiovascular research publications provide sufficient resources to fully reproduce their studies.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified that fewer than 2% of cardiovascular research publications provide sufficient resources (materials, methods, data, and analysis scripts) to fully reproduce their studies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from the analysis of the screened articles.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:12:50.677630Z"
+    },
+    {
+      "id": "0d1ecc3d-694b-4480-bec0-61e295993e76",
+      "content_id": "a6d755ec-bbd4-4a3d-b1de-90f55e4b51c5",
+      "claim_id": "C6",
+      "claim": "The level of accessibility varies across study types with a score of 0.08 for case studies or case series and 0.39 for clinical trials (p = 5.500E\u22125).",
+      "claim_type": "EXPLICIT",
+      "source": "After calculating an accessibility score as a measure of the extent to which an article makes its resources available, we also showed that the level of accessibility varies across study types with a score of 0.08 for case studies or case series and 0.39 for clinical trials (p = 5.500E\u22125)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical finding from the data analysis with a reported p-value.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:12:50.677630Z"
+    },
+    {
+      "id": "87c59e5c-1797-4acf-b217-122606d83f51",
+      "content_id": "a6d755ec-bbd4-4a3d-b1de-90f55e4b51c5",
+      "claim_id": "C7",
+      "claim": "The level of accessibility varies across journals (0.19 through 0.34, p = 1.230E\u22122).",
+      "claim_type": "EXPLICIT",
+      "source": "After calculating an accessibility score as a measure of the extent to which an article makes its resources available, we also showed that the level of accessibility varies across study types with a score of 0.08 for case studies or case series and 0.39 for clinical trials (p = 5.500E\u22125) and across journals (0.19 through 0.34, p = 1.230E\u22122).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical finding from the data analysis with a reported p-value.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:12:50.677630Z"
+    },
+    {
+      "id": "09c51b4f-cd0e-4bd7-ab69-39adf982ffac",
+      "content_id": "a6d755ec-bbd4-4a3d-b1de-90f55e4b51c5",
+      "claim_id": "C8",
+      "claim": "There are significant differences in which study types share which resources.",
+      "claim_type": "EXPLICIT",
+      "source": "We further showed that there are significant differences in which study types share which resources.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from statistical analysis of the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:12:50.677630Z"
+    },
+    {
+      "id": "8eb910b0-f149-4d78-9c38-454e975d20b4",
+      "content_id": "a6d755ec-bbd4-4a3d-b1de-90f55e4b51c5",
+      "claim_id": "C9",
+      "claim": "Current cardiovascular science reports frequently do not provide sufficient materials, protocols, data, or analysis information to reproduce a study.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the degree to which reproducible reporting practices are present in publications varies significantly across journals and study types, current cardiovascular science reports frequently do not provide sufficient materials, protocols, data, or analysis information to reproduce a study.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the data analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:12:50.677630Z"
+    },
+    {
+      "id": "8fecb4d4-2339-4d0c-9c05-6d8d1c0acb52",
+      "content_id": "a6d755ec-bbd4-4a3d-b1de-90f55e4b51c5",
+      "claim_id": "C10",
+      "claim": "Previous studies have reported on the lack of detailed methodology, data, and code provided that would be necessary for individual studies or study sets to be considered replicable and reproducible (Filazzola and Cahill, 2021).",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies have reported on the lack of detailed methodology, data, and code provided that would be necessary for individual studies or study sets to be considered replicable and reproducible (Filazzola and Cahill, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:12:50.677630Z"
+    },
+    {
+      "id": "d126a554-f080-4d46-b436-30240673ea25",
+      "content_id": "a6d755ec-bbd4-4a3d-b1de-90f55e4b51c5",
+      "claim_id": "C11",
+      "claim": "Scientific publications are often behind paywalls that only users affiliated with a larger institution are readily able to access.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, scientific publications are often behind paywalls that only users affiliated with a larger institution are readily able to access, meaning that research funded by public money is often inaccessible to the general public without paying a fee.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement based on general knowledge about academic publishing practices.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:12:50.677630Z"
+    },
+    {
+      "id": "313c1e15-b55f-41cb-a94f-7a8a25dc2038",
+      "content_id": "a6d755ec-bbd4-4a3d-b1de-90f55e4b51c5",
+      "claim_id": "C12",
+      "claim": "Journals often do not specify requirements for materials sharing, data sharing, analysis code sharing, and methodological information.",
+      "claim_type": "EXPLICIT",
+      "source": "Journals often do not specify requirements for materials sharing, data sharing, analysis code sharing, and methodological information \u2013 all of which have been shown to be important to be able to reproduce or replicate a study (Hamra et al., 2019; Munaf\u00f2 et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work and represents a general observation about journal practices.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:12:50.677630Z"
+    },
+    {
+      "id": "b20fd912-7cc6-48e8-92ba-977d8c89019a",
+      "content_id": "a6d755ec-bbd4-4a3d-b1de-90f55e4b51c5",
+      "claim_id": "C13",
+      "claim": "Materials sharing, data sharing, analysis code sharing, and methodological information have been shown to be important to be able to reproduce or replicate a study (Hamra et al., 2019; Munaf\u00f2 et al., 2017).",
+      "claim_type": "EXPLICIT",
+      "source": "Journals often do not specify requirements for materials sharing, data sharing, analysis code sharing, and methodological information \u2013 all of which have been shown to be important to be able to reproduce or replicate a study (Hamra et al., 2019; Munaf\u00f2 et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:12:50.677630Z"
+    },
+    {
+      "id": "57a1601f-fc0f-43b6-8c2a-aa44a0d34037",
+      "content_id": "a6d755ec-bbd4-4a3d-b1de-90f55e4b51c5",
+      "claim_id": "C14",
+      "claim": "There may be legitimate reasons for restricting accessibility, such as privacy concerns, restrictive company policies, and costliness of the process.",
+      "claim_type": "EXPLICIT",
+      "source": "Note that often there may be legitimate reasons for restricting accessibility, such as privacy concerns, restrictive company policies, and costliness of the process.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an acknowledgment of practical constraints based on general knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:12:50.677630Z"
+    },
+    {
+      "id": "4c229ef2-f1c0-4aea-bc8a-0047c0374bf9",
+      "content_id": "a6d755ec-bbd4-4a3d-b1de-90f55e4b51c5",
+      "claim_id": "C15",
+      "claim": "The Reproducibility Project: Cancer Biology demonstrated their work in preclinical cancer biology research replicability by repeating 50 experiments from 23 papers (Errington et al., 2021b).",
+      "claim_type": "EXPLICIT",
+      "source": "The Reproducibility Project: Cancer Biology demonstrated their work in preclinical cancer biology research replicability by repeating 50 experiments from 23 papers (Errington et al., 2021b)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:12:50.677630Z"
+    },
+    {
+      "id": "a04b11e5-9d26-45a6-8aa5-31224934d28e",
+      "content_id": "a6d755ec-bbd4-4a3d-b1de-90f55e4b51c5",
+      "claim_id": "C16",
+      "claim": "The Reproducibility Project: Cancer Biology repeated 193 experiments from 53 papers (Errington et al., 2021a).",
+      "claim_type": "EXPLICIT",
+      "source": "The Reproducibility Project: Cancer Biology demonstrated their work in preclinical cancer biology research replicability by repeating 50 experiments from 23 papers (Errington et al., 2021b) and 193 experiments from another 53 papers (Errington et al., 2021a)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:12:50.677630Z"
+    },
+    {
+      "id": "ad6afbe5-5ae2-4f59-b407-4fcdb6c8e0c4",
+      "content_id": "a6d755ec-bbd4-4a3d-b1de-90f55e4b51c5",
+      "claim_id": "C17",
+      "claim": "Accessible and reproducible research practices are still far from the norm (Borghi and Van Gulick, 2018; Walters et al., 2019; Kemper et al., 2020; Sherry et al., 2020; Smith et al., 2021).",
+      "claim_type": "EXPLICIT",
+      "source": "Although some journals and funding agencies have implemented policies to support the public dissemination of research, we know from recent studies in several disciplines that accessible and reproducible research practices are still far from the norm (Borghi and Van Gulick, 2018; Walters et al., 2019; Kemper et al., 2020; Sherry et al., 2020; Smith et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:12:50.677630Z"
+    },
+    {
+      "id": "cd084467-4d63-4b42-bb8a-c92ebfc0ca03",
+      "content_id": "a6d755ec-bbd4-4a3d-b1de-90f55e4b51c5",
+      "claim_id": "C18",
+      "claim": "No study has examined the degree of accessible and reproducible practices in cardiovascular science publications prior to this work.",
+      "claim_type": "EXPLICIT",
+      "source": "However, to date, no study has examined the degree of accessible and reproducible practices in cardiovascular science publications.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an assertion based on the authors' review of existing literature.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:12:50.677630Z"
+    },
+    {
+      "id": "28d8db62-4021-4e06-82fc-2a773beabf3a",
+      "content_id": "a6d755ec-bbd4-4a3d-b1de-90f55e4b51c5",
+      "claim_id": "C19",
+      "claim": "The PubMed search string '(('Circulation'[Journal] OR 'J Am Coll Cardiol'[Journal] OR 'Eur Heart J'[Journal]) AND 2019/01/01:2019/12/31[Date \u2013 Publication]) NOT (Published Erratum[Publication Type])' retrieved 2786 articles.",
+      "claim_type": "EXPLICIT",
+      "source": "The following PubMed search string was used to obtain the full list of articles screened: (('Circulation'[Journal] OR 'J Am Coll Cardiol'[Journal] OR 'Eur Heart J'[Journal]) AND 2019/01/01:2019/12/31[Date \u2013 Publication]) NOT (Published Erratum[Publication Type]). This search string retrieved 2786 articles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail describing the data collection process.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:12:50.677630Z"
+    },
+    {
+      "id": "6443d52a-de46-438a-abbe-4865b5289cc7",
+      "content_id": "a6d755ec-bbd4-4a3d-b1de-90f55e4b51c5",
+      "claim_id": "C20",
+      "claim": "The first 639 articles from the randomized list were screened for the study.",
+      "claim_type": "EXPLICIT",
+      "source": "This list was randomized and the first 639 were screened for our study, and researchers screened the listed articles sequentially.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the sampling methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:12:50.677630Z"
+    },
+    {
+      "id": "2e87bf33-f15b-4b10-8589-b724ddeab89c",
+      "content_id": "a6d755ec-bbd4-4a3d-b1de-90f55e4b51c5",
+      "claim_id": "C21",
+      "claim": "No blinding was involved in this study.",
+      "claim_type": "EXPLICIT",
+      "source": "No blinding was involved in this study and each article was screened at least twice by separate individuals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail about the study design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:12:50.677630Z"
+    },
+    {
+      "id": "4410e009-fa63-4b50-a9e8-15afee06eb0d",
+      "content_id": "a6d755ec-bbd4-4a3d-b1de-90f55e4b51c5",
+      "claim_id": "C22",
+      "claim": "Each article was screened at least twice by separate individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "No blinding was involved in this study and each article was screened at least twice by separate individuals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail about the screening process.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:12:50.677630Z"
+    },
+    {
+      "id": "de8b71d1-e1ea-4e90-93ab-011b19ec9cd8",
+      "content_id": "a6d755ec-bbd4-4a3d-b1de-90f55e4b51c5",
+      "claim_id": "C23",
+      "claim": "Of the initially screened 400 articles, only 153 were empirical research articles for which accessibility measures could be calculated.",
+      "claim_type": "EXPLICIT",
+      "source": "We initially screened 400 randomly selected articles, however of those articles only 153 were empirical research articles for which we could calculate accessibility measures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a data point from the study describing the initial screening results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:12:50.677630Z"
+    },
+    {
+      "id": "5e7ce584-f95a-46af-b88d-6cd76ab195f1",
+      "content_id": "a6d755ec-bbd4-4a3d-b1de-90f55e4b51c5",
+      "claim_id": "C24",
+      "claim": "A second round of screening was conducted to increase the number of empirical research articles in the study.",
+      "claim_type": "EXPLICIT",
+      "source": "To increase the number of empirical research articles in our study, we therefore conducted a second round of screening.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a methodological decision made during the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:12:50.677630Z"
+    },
+    {
+      "id": "d1dad688-3613-4e1d-9c4c-4c7f243fefcd",
+      "content_id": "a6d755ec-bbd4-4a3d-b1de-90f55e4b51c5",
+      "claim_id": "C25",
+      "claim": "The second PubMed search string retrieved 1461 primarily empirical articles.",
+      "claim_type": "EXPLICIT",
+      "source": "This search string retrieved 1461 primarily empirical articles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a data point from the second round of article retrieval.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:12:50.677630Z"
+    },
+    {
+      "id": "735b5d4d-41d2-4ed4-ab49-3e1164553f05",
+      "content_id": "a6d755ec-bbd4-4a3d-b1de-90f55e4b51c5",
+      "claim_id": "C26",
+      "claim": "The first 239 articles from the second search that had not already been screened were added to the first set of 400 screened articles.",
+      "claim_type": "EXPLICIT",
+      "source": "This list was also randomized and the first 239 articles that had not already been screened were added to the first set of 400 screened articles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the sampling methodology for the second round of screening.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:12:50.677630Z"
+    },
+    {
+      "id": "e0ed2f3d-bc06-4b90-b6a4-ea2606717d9a",
+      "content_id": "a6d755ec-bbd4-4a3d-b1de-90f55e4b51c5",
+      "claim_id": "C27",
+      "claim": "Only 14% of articles made their materials available (56 out of 393).",
+      "claim_type": "EXPLICIT",
+      "source": "Only 14% of articles made their materials available (56 out of 393)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:12:50.677630Z"
+    },
+    {
+      "id": "e08f4575-8b82-4606-b7d8-385eb0f89222",
+      "content_id": "a6d755ec-bbd4-4a3d-b1de-90f55e4b51c5",
+      "claim_id": "C28",
+      "claim": "31.8% of articles made their data available (125 out of 393).",
+      "claim_type": "EXPLICIT",
+      "source": "31.8% of articles made their data available (125 out of 393)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:12:50.677630Z"
+    },
+    {
+      "id": "a79ad1d4-75f9-48ad-8ace-f9e70ede4474",
+      "content_id": "a6d755ec-bbd4-4a3d-b1de-90f55e4b51c5",
+      "claim_id": "C29",
+      "claim": "10.9% of articles made their analysis scripts available (43 out of 393).",
+      "claim_type": "EXPLICIT",
+      "source": "10.9% made their analysis scripts available (43 out of 393; Figure 2B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:12:50.677630Z"
+    },
+    {
+      "id": "97e22219-86f0-4a6d-bc5c-f76063a7edfe",
+      "content_id": "a6d755ec-bbd4-4a3d-b1de-90f55e4b51c5",
+      "claim_id": "C30",
+      "claim": "Across the articles that stated materials, data, and analysis scripts were available, it was most common for them only to be made available upon request from the authors.",
+      "claim_type": "EXPLICIT",
+      "source": "Across the articles that stated materials, data, and analysis scripts were available, it was most common for them only to be made available upon request from the authors (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the data analysis, supported by Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:12:50.677630Z"
+    },
+    {
+      "id": "d5c14297-6a86-4de6-aabd-5a6af6d800e7",
+      "content_id": "a6d755ec-bbd4-4a3d-b1de-90f55e4b51c5",
+      "claim_id": "C31",
+      "claim": "Very few studies made the materials and data readily available for downloading or opening (1, 13).",
+      "claim_type": "EXPLICIT",
+      "source": "Across the articles that stated materials, data, and analysis scripts were available, very few studies made the materials and data readily available for downloading or opening (1, 13)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:12:50.677630Z"
+    },
+    {
+      "id": "d52853f2-f6b4-4483-ab60-67505701bac7",
+      "content_id": "a6d755ec-bbd4-4a3d-b1de-90f55e4b51c5",
+      "claim_id": "C32",
+      "claim": "Only one study's analysis scripts were readily downloadable (1 out of 43).",
+      "claim_type": "EXPLICIT",
+      "source": "only one study's analysis scripts were readily downloadable (1 out of 43; Figure 2B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:12:50.677630Z"
+    },
+    {
+      "id": "da773320-e92d-4fce-949d-1b3f3640c673",
+      "content_id": "a6d755ec-bbd4-4a3d-b1de-90f55e4b51c5",
+      "claim_id": "C33",
+      "claim": "The majority of data that was downloadable or openable was also clearly documented (9 out of 13).",
+      "claim_type": "EXPLICIT",
+      "source": "However, the majority of data that was downloadable or openable was also clearly documented (9 out of 13; Figure 2B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:12:50.677630Z"
+    },
+    {
+      "id": "9bb5442e-05c0-4d42-bd7b-2fb9cf427918",
+      "content_id": "a6d755ec-bbd4-4a3d-b1de-90f55e4b51c5",
+      "claim_id": "C34",
+      "claim": "49.6% (195 out of 393) of empirical research studies were not partially reproducible.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that 49.6% (195 out of 393) of empirical research studies were not partially reproducible",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:12:50.677630Z"
+    },
+    {
+      "id": "bf991f91-46b3-490c-8366-3aef00d7cf1c",
+      "content_id": "a6d755ec-bbd4-4a3d-b1de-90f55e4b51c5",
+      "claim_id": "C35",
+      "claim": "49.4% (194 out of 393) of empirical research studies were not partially replicable.",
+      "claim_type": "EXPLICIT",
+      "source": "49.4% (194 out of 393) were not partially replicable.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:12:50.677630Z"
+    },
+    {
+      "id": "35d0b060-1862-477b-9468-446976c7df31",
+      "content_id": "a6d755ec-bbd4-4a3d-b1de-90f55e4b51c5",
+      "claim_id": "C36",
+      "claim": "2% (7 out of 393) empirical research papers were fully reproducible.",
+      "claim_type": "EXPLICIT",
+      "source": "2% (7 out of 393) empirical research papers were fully reproducible",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:12:50.677630Z"
+    },
+    {
+      "id": "ddf5b309-1205-4e5d-bc87-c668b0d6a688",
+      "content_id": "a6d755ec-bbd4-4a3d-b1de-90f55e4b51c5",
+      "claim_id": "C37",
+      "claim": "Only 5 papers were fully replicable.",
+      "claim_type": "EXPLICIT",
+      "source": "but only 5 were fully replicable (Figure 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:12:50.677630Z"
+    },
+    {
+      "id": "90054ec7-613f-4783-8e99-d80951f6f35b",
+      "content_id": "a6d755ec-bbd4-4a3d-b1de-90f55e4b51c5",
+      "claim_id": "C38",
+      "claim": "The simple majority of empirical research articles were partially reproducible or replicable.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the simple majority of empirical research articles were partially reproducible or replicable",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the quantitative findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:12:50.677630Z"
+    },
+    {
+      "id": "e7599461-35e9-4f7b-9028-eb7a75cb48d4",
+      "content_id": "a6d755ec-bbd4-4a3d-b1de-90f55e4b51c5",
+      "claim_id": "C39",
+      "claim": "The vast majority of empirical research studies were neither fully reproducible nor fully replicable.",
+      "claim_type": "EXPLICIT",
+      "source": "but the vast majority of empirical research studies were neither fully reproducible nor fully replicable.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the quantitative findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:12:50.677630Z"
+    },
+    {
+      "id": "3f417686-6fa8-497f-978d-f04bb322e8b4",
+      "content_id": "a6d755ec-bbd4-4a3d-b1de-90f55e4b51c5",
+      "claim_id": "C40",
+      "claim": "With the exception of one paper, the entire dataset exhibited low accessibility with scores lower than 0.6.",
+      "claim_type": "EXPLICIT",
+      "source": "With the exception of one paper, the entire dataset exhibited low accessibility with scores lower than 0.6",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:12:50.677630Z"
+    },
+    {
+      "id": "55dac9e1-5eac-4775-8be3-089fc4e77abd",
+      "content_id": "a6d755ec-bbd4-4a3d-b1de-90f55e4b51c5",
+      "claim_id": "C41",
+      "claim": "The majority of articles (144 out of 393) had accessibility scores within the 0.20\u20130.29 range.",
+      "claim_type": "EXPLICIT",
+      "source": "the majority of articles (144 out of 393) had accessibility scores within the 0.20\u20130.29 range",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:12:50.677630Z"
+    },
+    {
+      "id": "22b26392-861c-42b6-ac86-ba0d824071cc",
+      "content_id": "a6d755ec-bbd4-4a3d-b1de-90f55e4b51c5",
+      "claim_id": "C42",
+      "claim": "18 articles had accessibility scores below 0.1.",
+      "claim_type": "EXPLICIT",
+      "source": "18 articles had scores below 0.1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:12:50.677630Z"
+    },
+    {
+      "id": "64efd121-19b7-48ba-a30a-4ff423721207",
+      "content_id": "a6d755ec-bbd4-4a3d-b1de-90f55e4b51c5",
+      "claim_id": "C43",
+      "claim": "Only one article exhibited an accessibility score of 0.6 or greater.",
+      "claim_type": "EXPLICIT",
+      "source": "Only one article exhibited an accessibility score of 0.6 or greater (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative finding from the data analysis, supported by Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:12:50.677630Z"
+    },
+    {
+      "id": "994f1648-403e-44ff-9a79-c07a65593453",
+      "content_id": "a6d755ec-bbd4-4a3d-b1de-90f55e4b51c5",
+      "claim_id": "C44",
+      "claim": "Clinical trials had the highest average accessibility score (0.39).",
+      "claim_type": "EXPLICIT",
+      "source": "We found that clinical trials had the highest average accessibility score (0.39)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:12:50.677630Z"
+    },
+    {
+      "id": "60fefb00-b85b-4783-a89e-0e1ebd177022",
+      "content_id": "a6d755ec-bbd4-4a3d-b1de-90f55e4b51c5",
+      "claim_id": "C45",
+      "claim": "Clinical case studies or series had the lowest accessibility scores (0.08).",
+      "claim_type": "EXPLICIT",
+      "source": "and clinical case studies or series had the lowest accessibility scores (0.08).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:12:50.677630Z"
+    },
+    {
+      "id": "3298131e-b6c6-48d9-aeab-33f26d45493f",
+      "content_id": "a6d755ec-bbd4-4a3d-b1de-90f55e4b51c5",
+      "claim_id": "C46",
+      "claim": "Average accessibility scores were significantly different across study types (ANOVA, d.f. 7, F=36.37, p=5.500E\u22125).",
+      "claim_type": "EXPLICIT",
+      "source": "Average accessibility scores were significantly different across study types (ANOVA, d.f. 7, F=36.37, p=5.500E\u22125).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical finding from the data analysis with reported test statistics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:12:50.677630Z"
+    },
+    {
+      "id": "4c882f73-5fdc-4438-a0c9-e877f76a0c18",
+      "content_id": "a6d755ec-bbd4-4a3d-b1de-90f55e4b51c5",
+      "claim_id": "C47",
+      "claim": "74% of Circulation articles were empirical research papers (168 out of 226).",
+      "claim_type": "EXPLICIT",
+      "source": "The largest proportion of articles screened were obtained from Circulation with a total number of 226 articles, and 74% of those were empirical research papers (168 out of 226).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:12:50.677630Z"
+    },
+    {
+      "id": "3e2bfe9a-c70a-4af5-97e5-07696d058810",
+      "content_id": "a6d755ec-bbd4-4a3d-b1de-90f55e4b51c5",
+      "claim_id": "C48",
+      "claim": "63% of JACC articles were empirical research (138 out of 220).",
+      "claim_type": "EXPLICIT",
+      "source": "63% of JACC articles (138 out of 220)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:12:50.677630Z"
+    },
+    {
+      "id": "b735b11a-c6a4-4e26-aaa0-8f80e4ba6fda",
+      "content_id": "a6d755ec-bbd4-4a3d-b1de-90f55e4b51c5",
+      "claim_id": "C49",
+      "claim": "45% of European Heart Journal articles were empirical research (87 out of 193).",
+      "claim_type": "EXPLICIT",
+      "source": "45% of Circulation articles (87 out of 193) were empirical research for which we could calculate an accessibility score.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:12:50.677630Z"
+    },
+    {
+      "id": "4c582eb5-dd9e-40e8-b456-3641464c1b8d",
+      "content_id": "a6d755ec-bbd4-4a3d-b1de-90f55e4b51c5",
+      "claim_id": "C50",
+      "claim": "Circulation had the highest average accessibility score (0.34).",
+      "claim_type": "EXPLICIT",
+      "source": "After computing the average accessibility score for all three journals, Circulation had the highest average accessibility score (0.34)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:12:50.677630Z"
+    },
+    {
+      "id": "abbf01d5-7588-40e1-81c5-b04ef491d5e7",
+      "content_id": "a6d755ec-bbd4-4a3d-b1de-90f55e4b51c5",
+      "claim_id": "C51",
+      "claim": "The Journal of the American College of Cardiology had an average accessibility score of 0.24.",
+      "claim_type": "EXPLICIT",
+      "source": "followed by the Journals of the American College of Cardiology (0.24)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:12:50.677630Z"
+    },
+    {
+      "id": "612fc179-0ead-4aaf-ae23-e044c7aaf92f",
+      "content_id": "a6d755ec-bbd4-4a3d-b1de-90f55e4b51c5",
+      "claim_id": "C52",
+      "claim": "The European Heart Journal had an average accessibility score of 0.19.",
+      "claim_type": "EXPLICIT",
+      "source": "then the European Heart Journal (0.19) (Figure 4B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:12:50.677630Z"
+    },
+    {
+      "id": "363fd670-bc64-4033-b94c-816eba0cfc2a",
+      "content_id": "a6d755ec-bbd4-4a3d-b1de-90f55e4b51c5",
+      "claim_id": "C53",
+      "claim": "Accessibility scores vary significantly across journals (ANOVA, d.f. 2, F = 80.07, p = 1.230E\u22122).",
+      "claim_type": "EXPLICIT",
+      "source": "Accessibility scores vary significantly across journals (ANOVA, d.f. 2, F = 80.07, p = 1.230E\u22122).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical finding from the data analysis with reported test statistics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:12:50.677630Z"
+    },
+    {
+      "id": "7ac0cb53-2f09-42be-8cab-829ec7b41052",
+      "content_id": "a6d755ec-bbd4-4a3d-b1de-90f55e4b51c5",
+      "claim_id": "C54",
+      "claim": "There was not a significant interaction between study type and journal (p = 0.284).",
+      "claim_type": "EXPLICIT",
+      "source": "There was not a significant interaction between study type and journal (p = 0.284).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical finding from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:12:50.677630Z"
+    },
+    {
+      "id": "9271d0b0-8848-4033-961f-bde331836668",
+      "content_id": "a6d755ec-bbd4-4a3d-b1de-90f55e4b51c5",
+      "claim_id": "C55",
+      "claim": "There was a significant difference in the proportion of papers that shared specific categories of resources (X2 = 55.2, p = 6.17e\u221212).",
+      "claim_type": "EXPLICIT",
+      "source": "We found that there was a significant difference in the proportion of papers that shared specific categories of resources (X2 = 55.2, p = 6.17e\u221212).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical finding from the data analysis with reported test statistics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:12:50.677630Z"
+    },
+    {
+      "id": "056c245e-3061-403b-bf85-f8250dd087d5",
+      "content_id": "a6d755ec-bbd4-4a3d-b1de-90f55e4b51c5",
+      "claim_id": "C56",
+      "claim": "For all four shareable resources (Materials, Methods, Data, and Analysis), there was a significant difference across study types.",
+      "claim_type": "EXPLICIT",
+      "source": "For all four shareable resources (Materials, Methods, Data, and Analysis), we found a significant difference across study types (Table 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical finding from the data analysis, supported by Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:12:50.677630Z"
+    },
+    {
+      "id": "5c20c5c7-151f-4ec3-b94a-531ae244cbff",
+      "content_id": "a6d755ec-bbd4-4a3d-b1de-90f55e4b51c5",
+      "claim_id": "C57",
+      "claim": "A significantly higher proportion of laboratory animal studies stated that they would share materials than clinical observational studies or clinical trials.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that a significantly higher proportion of laboratory animal studies stated that they would share materials than clinical observational studies or clinical trials.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from statistical comparison of proportions across study types.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:12:50.677630Z"
+    },
+    {
+      "id": "83d22b32-1d20-48be-97f2-29e2a7374fea",
+      "content_id": "a6d755ec-bbd4-4a3d-b1de-90f55e4b51c5",
+      "claim_id": "C58",
+      "claim": "A significantly higher proportion of clinical trials shared their methods compared to any other study type.",
+      "claim_type": "EXPLICIT",
+      "source": "We also, as expected, found a significantly higher proportion of clinical trials shared their methods compared to any other study type.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from statistical comparison of proportions across study types.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:12:50.677630Z"
+    },
+    {
+      "id": "26b9f1ad-ec57-4f9e-9680-eaedcaee3e65",
+      "content_id": "a6d755ec-bbd4-4a3d-b1de-90f55e4b51c5",
+      "claim_id": "C59",
+      "claim": "A significantly higher proportion of laboratory animal studies shared their data than any other study type.",
+      "claim_type": "EXPLICIT",
+      "source": "With regard to data sharing, we found that a significantly higher proportion of laboratory animal studies shared their data than any other study type.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from statistical comparison of proportions across study types.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:12:50.677630Z"
+    },
+    {
+      "id": "3973180a-58e1-4be2-8dc0-19272c216a75",
+      "content_id": "a6d755ec-bbd4-4a3d-b1de-90f55e4b51c5",
+      "claim_id": "C60",
+      "claim": "A significantly higher proportion of laboratory animal studies shared their analysis code compared to clinical observational studies and clinical trials.",
+      "claim_type": "EXPLICIT",
+      "source": "Lastly, a significantly higher proportion of laboratory animal studies shared their analysis code compared to clinical observational studies and clinical trials.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from statistical comparison of proportions across study types.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:12:50.677630Z"
+    },
+    {
+      "id": "dd834b52-00e6-4703-b45b-5b2b85f588d7",
+      "content_id": "a6d755ec-bbd4-4a3d-b1de-90f55e4b51c5",
+      "claim_id": "C61",
+      "claim": "Only 5 out of 393 publications provided sufficient resources to fully replicate their work.",
+      "claim_type": "EXPLICIT",
+      "source": "Only 5 out of 393 provided sufficient resources to fully replicate their work",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:12:50.677630Z"
+    },
+    {
+      "id": "3543cd4b-b816-461f-9ea9-7e7dfd7ebe07",
+      "content_id": "a6d755ec-bbd4-4a3d-b1de-90f55e4b51c5",
+      "claim_id": "C62",
+      "claim": "Only 7 out of 393 publications provided sufficient resources to reproduce their work.",
+      "claim_type": "EXPLICIT",
+      "source": "and only 7 out of 393 provided sufficient resources to reproduce their work.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:12:50.677630Z"
+    },
+    {
+      "id": "b305b024-9f80-425c-a8f9-75339107d0d4",
+      "content_id": "a6d755ec-bbd4-4a3d-b1de-90f55e4b51c5",
+      "claim_id": "C63",
+      "claim": "Overall, accessibility scores were consistently low across study types and journals.",
+      "claim_type": "EXPLICIT",
+      "source": "Although there were statistically significant differences in accessibility scores across study types and journals, overall, accessibility scores were consistently low.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion drawn from the data analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:12:50.677630Z"
+    },
+    {
+      "id": "328fa19d-dab5-48b4-9a4e-98191675ce0a",
+      "content_id": "a6d755ec-bbd4-4a3d-b1de-90f55e4b51c5",
+      "claim_id": "C64",
+      "claim": "Journals have implemented practices to incentivize researchers to share their materials, methods, data, and analysis scripts, such as open science badges (Kidwell et al., 2016).",
+      "claim_type": "EXPLICIT",
+      "source": "Journals have implemented practices to incentivize researchers to share their materials, methods, data, and analysis scripts, such as open science badges (Kidwell et al., 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:12:50.677630Z"
+    },
+    {
+      "id": "c7716151-4b8d-4592-831f-5824336f4f6c",
+      "content_id": "a6d755ec-bbd4-4a3d-b1de-90f55e4b51c5",
+      "claim_id": "C65",
+      "claim": "Journals have implemented reporting checklists (Han et al., 2017) to incentivize researchers to share their materials, methods, data, and analysis scripts.",
+      "claim_type": "EXPLICIT",
+      "source": "Journals have implemented practices to incentivize researchers to share their materials, methods, data, and analysis scripts, such as open science badges (Kidwell et al., 2016), reporting checklists (Han et al., 2017)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:12:50.677630Z"
+    },
+    {
+      "id": "943bac3d-aba1-4241-a3d0-ba7a963d4a85",
+      "content_id": "a6d755ec-bbd4-4a3d-b1de-90f55e4b51c5",
+      "claim_id": "C66",
+      "claim": "Only 34 out of 639 articles (5%) were not publicly accessible.",
+      "claim_type": "EXPLICIT",
+      "source": "In collecting data on the fraction of papers that were publicly accessible, we found that only 34 out of 639 articles (5%) were not publicly accessible (Figure 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative finding from the data analysis, supported by Figure 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:12:50.677630Z"
+    },
+    {
+      "id": "242f84b8-7b70-4f80-8e46-3f99f0664bcf",
+      "content_id": "a6d755ec-bbd4-4a3d-b1de-90f55e4b51c5",
+      "claim_id": "C67",
+      "claim": "Over half of the 400 papers initially randomly selected for screening were non-empirical research.",
+      "claim_type": "EXPLICIT",
+      "source": "It is notable that over half of the 400 papers we initially randomly selected for screening were non-empirical research, e.g. reviews, editorials, and commentaries.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the initial screening of articles.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:12:50.677630Z"
+    },
+    {
+      "id": "5c8feb43-9854-4abc-ac74-a181a5bb10d2",
+      "content_id": "a6d755ec-bbd4-4a3d-b1de-90f55e4b51c5",
+      "claim_id": "C68",
+      "claim": "Publications of replication studies were virtually absent from the dataset (4 out of 393 empirical research publications).",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, publications of replication studies, or studies that included a replication study, were virtually absent from our dataset (4 out of 393 empirical research publications)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:12:50.677630Z"
+    },
+    {
+      "id": "478df069-632b-4461-8f2a-c6baf7337994",
+      "content_id": "a6d755ec-bbd4-4a3d-b1de-90f55e4b51c5",
+      "claim_id": "C69",
+      "claim": "Data was shared more frequently than materials or analysis scripts.",
+      "claim_type": "EXPLICIT",
+      "source": "Although data was shared more frequently than materials or analysis scripts",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparative finding from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:12:50.677630Z"
+    },
+    {
+      "id": "ee1001f8-48de-4771-b3f7-f433c530e2f8",
+      "content_id": "a6d755ec-bbd4-4a3d-b1de-90f55e4b51c5",
+      "claim_id": "C70",
+      "claim": "There were only a total of 13 out of 393 empirical research papers for which data was readily openable to a reader.",
+      "claim_type": "EXPLICIT",
+      "source": "there were still only a total of 13 out of 393 empirical research papers for which data was readily openable to a reader.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:12:50.677630Z"
+    },
+    {
+      "id": "e81836d3-9bb0-45a1-93b8-c89192744663",
+      "content_id": "a6d755ec-bbd4-4a3d-b1de-90f55e4b51c5",
+      "claim_id": "C71",
+      "claim": "Patients are in general very willing to make their data available to further research (Seltzer et al., 2019; Kim et al., 2019).",
+      "claim_type": "EXPLICIT",
+      "source": "However, it has also been shown that patients are in general very willing to make their data available to further research (Seltzer et al., 2019; Kim et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:12:50.677630Z"
+    },
+    {
+      "id": "540c9a61-aa55-4da4-bd35-c1dbdb5c5462",
+      "content_id": "a6d755ec-bbd4-4a3d-b1de-90f55e4b51c5",
+      "claim_id": "C72",
+      "claim": "Basic research studies more frequently shared materials, data, and analysis scripts than clinical trials.",
+      "claim_type": "EXPLICIT",
+      "source": "Although basic research studies more frequently shared materials, data, and analysis scripts than clinical trials",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparative finding from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:12:50.677630Z"
+    },
+    {
+      "id": "00922ecf-5196-4524-9479-f3bf2b2cd290",
+      "content_id": "a6d755ec-bbd4-4a3d-b1de-90f55e4b51c5",
+      "claim_id": "C73",
+      "claim": "Sharing 'upon request from the authors' has been shown to be hit-or-miss in terms of yield (Hardwicke et al., 2018).",
+      "claim_type": "EXPLICIT",
+      "source": "that sharing was frequently 'upon request from the authors', which previous studies have shown to be hit-or-miss in terms of yield (Hardwicke et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:12:50.677630Z"
+    },
+    {
+      "id": "ca68adf3-335a-418d-a8ed-ea4d541575f1",
+      "content_id": "a6d755ec-bbd4-4a3d-b1de-90f55e4b51c5",
+      "claim_id": "C74",
+      "claim": "Clinical trials had by far the most consistent availability of a resource category: methods, in the form of pre-registrations.",
+      "claim_type": "EXPLICIT",
+      "source": "Clinical trials had by far the most consistent availability of a resource category: methods, in the form of pre-registrations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:12:50.677630Z"
+    },
+    {
+      "id": "b66bed6b-498a-4f06-8185-d952a972cfd1",
+      "content_id": "a6d755ec-bbd4-4a3d-b1de-90f55e4b51c5",
+      "claim_id": "C75",
+      "claim": "Pre-registrations are mandated by the FDA to conduct a clinical trial.",
+      "claim_type": "EXPLICIT",
+      "source": "Because pre-registrations are mandated by the FDA to conduct a clinical trial",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about FDA regulations, representing established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:12:50.677630Z"
+    },
+    {
+      "id": "1ffcf6cd-79e4-4fd4-97bd-a82f31f75bcf",
+      "content_id": "a6d755ec-bbd4-4a3d-b1de-90f55e4b51c5",
+      "claim_id": "C76",
+      "claim": "Resource-sharing requirements by funding or approval agencies are effective means of changing practices.",
+      "claim_type": "IMPLICIT",
+      "source": "Because pre-registrations are mandated by the FDA to conduct a clinical trial, our results suggest that resource-sharing requirements by funding or approval agencies are effective means of changing practices.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the observation that clinical trials, which have mandated pre-registration, showed higher rates of methods sharing.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:12:50.677630Z"
+    },
+    {
+      "id": "48963779-2010-4331-8ef7-edd58db31120",
+      "content_id": "a6d755ec-bbd4-4a3d-b1de-90f55e4b51c5",
+      "claim_id": "C77",
+      "claim": "In trials with pre-registrations, only 76% of pre-specified trial outcomes were correctly reported (Goldacre et al., 2019).",
+      "claim_type": "EXPLICIT",
+      "source": "It should be noted however, that a recent study by Goldacre et al., 2019 showed that in trials with pre-registrations, only 76% of pre-specified trial outcomes were correctly reported.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:12:50.677630Z"
+    },
+    {
+      "id": "b6309a46-4aa1-4d3c-a345-f6c5be9b87e6",
+      "content_id": "a6d755ec-bbd4-4a3d-b1de-90f55e4b51c5",
+      "claim_id": "C78",
+      "claim": "Variable switching is common when reporting results even when trials are pre-registered.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, even when trials are pre-registered variable switching is common when reporting results.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the cited finding about incorrect reporting of pre-specified outcomes.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:12:50.677630Z"
+    },
+    {
+      "id": "22922728-ee8b-4c5b-842f-be08f4667eac",
+      "content_id": "a6d755ec-bbd4-4a3d-b1de-90f55e4b51c5",
+      "claim_id": "C79",
+      "claim": "93% of articles included a COI statement.",
+      "claim_type": "EXPLICIT",
+      "source": "93% of articles included a COI statement",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:12:50.677630Z"
+    },
+    {
+      "id": "c078f367-5e21-4d57-a1fe-a2cdb32d563f",
+      "content_id": "a6d755ec-bbd4-4a3d-b1de-90f55e4b51c5",
+      "claim_id": "C80",
+      "claim": "57% of articles stated they had a COI.",
+      "claim_type": "EXPLICIT",
+      "source": "and 57% stated they had a COI (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative finding from the data analysis, supported by Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:12:50.677630Z"
+    },
+    {
+      "id": "d28462c5-bddc-4790-82c3-4bebc17c6e31",
+      "content_id": "a6d755ec-bbd4-4a3d-b1de-90f55e4b51c5",
+      "claim_id": "C81",
+      "claim": "7% of articles did not have any COI statement at all.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, 7% of articles did not have any COI statement at all.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:12:50.677630Z"
+    },
+    {
+      "id": "f54519ae-b08b-4418-825d-0a43c1d6f462",
+      "content_id": "a6d755ec-bbd4-4a3d-b1de-90f55e4b51c5",
+      "claim_id": "C82",
+      "claim": "Over 90% of articles were publicly accessible (605 out of 639).",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, over 90% of articles were publicly accessible (605 out of 639, Figure 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative finding from the data analysis, supported by Figure 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:12:50.677630Z"
+    },
+    {
+      "id": "4b4448ad-a80b-480a-9667-4869c4080e49",
+      "content_id": "a6d755ec-bbd4-4a3d-b1de-90f55e4b51c5",
+      "claim_id": "C83",
+      "claim": "The majority of articles had no pre-registration statement (286).",
+      "claim_type": "EXPLICIT",
+      "source": "Looking only at articles that included empirical research (393 out of 639 total articles), the majority had had no pre-registration statement (286)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:12:50.677630Z"
+    },
+    {
+      "id": "efe30684-85f1-4069-b062-ade56e1d60a1",
+      "content_id": "a6d755ec-bbd4-4a3d-b1de-90f55e4b51c5",
+      "claim_id": "C84",
+      "claim": "383 articles had no linked and accessible protocol.",
+      "claim_type": "EXPLICIT",
+      "source": "or no linked and accessible protocol (383; Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative finding from the data analysis, supported by Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:12:50.677630Z"
+    },
+    {
+      "id": "2eab84d1-4be3-46eb-810c-a0bba610abc6",
+      "content_id": "a6d755ec-bbd4-4a3d-b1de-90f55e4b51c5",
+      "claim_id": "C85",
+      "claim": "Nearly all papers that had a pre-registration statement had accessible and openable pre-registrations (106 out of 107).",
+      "claim_type": "EXPLICIT",
+      "source": "Of the papers that had a pre-registration statement, nearly all of them had accessible and openable pre-registrations (106 out of 107; Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative finding from the data analysis, supported by Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:12:50.677630Z"
+    },
+    {
+      "id": "60a27236-3cab-4b74-9864-442f26b61a7f",
+      "content_id": "a6d755ec-bbd4-4a3d-b1de-90f55e4b51c5",
+      "claim_id": "C86",
+      "claim": "Almost all articles with an openable and accessible pre-registration or protocol included methods (106 out of 106, 9 out of 10).",
+      "claim_type": "EXPLICIT",
+      "source": "Among articles that had an openable and accessible pre-registration or protocol, almost all articles included methods (106 out of 106, 9 out of 10)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:12:50.677630Z"
+    },
+    {
+      "id": "32cb24f8-63e6-432e-a6db-cf2c3ec77d6e",
+      "content_id": "a6d755ec-bbd4-4a3d-b1de-90f55e4b51c5",
+      "claim_id": "C87",
+      "claim": "Approximately half of articles with an openable and accessible pre-registration or protocol included hypotheses (44 out of 106, 7 out of 10).",
+      "claim_type": "EXPLICIT",
+      "source": "approximately half included hypotheses (44 out of 106, 7 out of 10)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:12:50.677630Z"
+    },
+    {
+      "id": "b2415b95-caea-445a-ab73-c3138a5dd647",
+      "content_id": "a6d755ec-bbd4-4a3d-b1de-90f55e4b51c5",
+      "claim_id": "C88",
+      "claim": "Less than half of articles with an openable and accessible pre-registration or protocol included analysis plans (27 out of 106, 5 out of 10).",
+      "claim_type": "EXPLICIT",
+      "source": "and less than half included analysis plans (27 out of 106, 5 out of 10; Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative finding from the data analysis, supported by Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:12:50.677630Z"
+    },
+    {
+      "id": "ae540a7c-87ca-47a8-a631-eb9344a9ab37",
+      "content_id": "a6d755ec-bbd4-4a3d-b1de-90f55e4b51c5",
+      "claim_id": "C89",
+      "claim": "Of the 393 screened publications that have empirical research, 53 had 1 out of 3 of the pre-registration aspects.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the 393 screened publications that have empirical research, 53 had 1 out of 3 of the aspects",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:12:50.677630Z"
+    },
+    {
+      "id": "70c96f50-7a6b-4bf7-837c-8cd5d9b12e13",
+      "content_id": "a6d755ec-bbd4-4a3d-b1de-90f55e4b51c5",
+      "claim_id": "C90",
+      "claim": "35 publications had 2 out of 3 of the pre-registration aspects.",
+      "claim_type": "EXPLICIT",
+      "source": "35 had 2 out of 4 of the aspects",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:12:50.677630Z"
+    },
+    {
+      "id": "5c21a27a-57e9-4c6f-8b65-72dc6630d0af",
+      "content_id": "a6d755ec-bbd4-4a3d-b1de-90f55e4b51c5",
+      "claim_id": "C91",
+      "claim": "18 studies had all three pre-registration aspects.",
+      "claim_type": "EXPLICIT",
+      "source": "and 18 studies had all three aspects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:12:50.677630Z"
+    },
+    {
+      "id": "af114ce8-925b-486d-83f4-b6c94e346ff7",
+      "content_id": "a6d755ec-bbd4-4a3d-b1de-90f55e4b51c5",
+      "claim_id": "C92",
+      "claim": "Approximately half (56%) of the papers had easily identifiable study types.",
+      "claim_type": "EXPLICIT",
+      "source": "Approximately half of the papers (56%) had easily identifiable study types while the remaining papers required more substantial reading to determine their study type (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative finding from the screening process, supported by Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:12:50.677630Z"
+    },
+    {
+      "id": "44b883c5-3227-49d9-98d5-44596caa98df",
+      "content_id": "a6d755ec-bbd4-4a3d-b1de-90f55e4b51c5",
+      "claim_id": "C93",
+      "claim": "43% (276 out of 639) of the articles did not have a funding statement.",
+      "claim_type": "EXPLICIT",
+      "source": "43% (276 out of 639) of the articles did not have a funding statement (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative finding from the data analysis, supported by Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:12:50.677630Z"
+    },
+    {
+      "id": "6f8641ac-9e1d-4737-a3ff-9e5251655b08",
+      "content_id": "a6d755ec-bbd4-4a3d-b1de-90f55e4b51c5",
+      "claim_id": "C94",
+      "claim": "A similar proportion of 2019 articles from each of the three top cardiovascular journals were screened: Circulation (226), European Heart Journal (193), and JACC (220).",
+      "claim_type": "EXPLICIT",
+      "source": "We screened a similar proportion of 2019 articles from each of the three top cardiovascular journals: Circulation, European Heart Journal, and the Journal of the American College of Cardiology (226, 193, and 220, respectively, Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the distribution of screened articles across journals, supported by Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:12:50.677630Z"
+    },
+    {
+      "id": "45cff5a7-e5fd-480e-b000-3250f46fcdf9",
+      "content_id": "a6d755ec-bbd4-4a3d-b1de-90f55e4b51c5",
+      "claim_id": "C95",
+      "claim": "Over half (247 out of 400) of the randomly selected articles in the initial screening were review articles or other article types that contained no empirical data.",
+      "claim_type": "EXPLICIT",
+      "source": "Over half (247 out of 400) of the randomly selected articles in our initial screening were review articles or other article types that contained no empirical data (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative finding from the initial screening, supported by Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:12:50.677630Z"
+    },
+    {
+      "id": "499ecd9a-1ff3-48f3-b6a0-33ee761d2bd8",
+      "content_id": "a6d755ec-bbd4-4a3d-b1de-90f55e4b51c5",
+      "claim_id": "C96",
+      "claim": "This study was pre-registered through the Open Science Foundation and can be accessed at https://doi.org/10.17605/OSF.IO/QFSTH (Campos-Melendez et al., 2021).",
+      "claim_type": "EXPLICIT",
+      "source": "This study was pre-registered through the Open Science Foundation and can be accessed at https://doi.org/10.17605/OSF.IO/QFSTH (Campos-Melendez et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the study's pre-registration with a citation.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:12:50.677630Z"
+    },
+    {
+      "id": "0501c3d7-b85d-4a66-96e0-5cd2d4bed786",
+      "content_id": "a6d755ec-bbd4-4a3d-b1de-90f55e4b51c5",
+      "claim_id": "C97",
+      "claim": "The year 2019 was selected because it was the most recent full year not influenced by changes in reporting practices due to the COVID-19 pandemic.",
+      "claim_type": "EXPLICIT",
+      "source": "This specific year was selected because it was the most recent full year not influenced by changes in reporting practices due to the COVID-19 pandemic.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This explains the rationale for selecting 2019 as the study year.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:12:50.677630Z"
+    },
+    {
+      "id": "537f6562-565a-41ea-8949-249c672b1449",
+      "content_id": "a6d755ec-bbd4-4a3d-b1de-90f55e4b51c5",
+      "claim_id": "C98",
+      "claim": "Having higher standards of accessibility mandated by either journals or funding bodies will help increase the reproducibility of cardiovascular research.",
+      "claim_type": "EXPLICIT",
+      "source": "In the future, having higher standards of accessibility mandated by either journals or funding bodies will help increase the reproducibility of cardiovascular research.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation based on the study findings and represents speculation about future improvements.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:12:50.677630Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "86ff98f3-bd0b-4606-9b5c-5b9c87722f47",
+      "content_id": "a6d755ec-bbd4-4a3d-b1de-90f55e4b51c5",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors screened 639 randomly selected cardiovascular research articles from 2019 across three top journals (Circulation, European Heart Journal, JACC), of which 393 were empirical research articles. The study was pre-registered and used a two-round screening process with dual independent review.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The methodology is clearly described with appropriate sampling (C3, C19, C20), dual screening (C22), and pre-registration (C96). The two-round screening approach (C23-C26) is justified and documented. Sample sizes are reported consistently across claims.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T05:12:50.677630Z"
+    },
+    {
+      "id": "8ddb9687-c993-406e-82ee-14d686ac74a0",
+      "content_id": "a6d755ec-bbd4-4a3d-b1de-90f55e4b51c5",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Resource availability in cardiovascular publications is low: only 14% shared materials, 31.8% shared data, and 10.9% shared analysis scripts. When resources were stated as available, they were most commonly available only upon request, with very few readily downloadable (1 material, 13 data, 1 analysis script).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These quantitative findings (C27-C33) are directly supported by the screening data with clear denominators (n=393). The pattern of availability upon request versus direct access (C30-C32) is consistent and well-documented in Figure 2B. The comparative finding (C69-C70) follows logically from the reported percentages.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T05:12:50.677630Z"
+    },
+    {
+      "id": "799d6917-e788-4d30-a317-da69623c0f26",
+      "content_id": "a6d755ec-bbd4-4a3d-b1de-90f55e4b51c5",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The vast majority of cardiovascular research publications lack sufficient resources for full reproducibility or replicability: only 7 of 393 (2%) were fully reproducible and only 5 were fully replicable. While approximately half were partially reproducible or replicable, nearly half provided insufficient resources for even partial reproduction or replication.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The quantitative findings (C34-C37, C61-C62) are consistent and well-supported by the data. The definitions of reproducibility and replicability are clearly stated in the methods. The conclusion (C38-C39) appropriately distinguishes between the simple majority being partially repeatable versus the vast majority lacking full repeatability, which is supported by Figure 3.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T05:12:50.677630Z"
+    },
+    {
+      "id": "28d7ad66-cb19-42fa-bbeb-0a164d92cd5c",
+      "content_id": "a6d755ec-bbd4-4a3d-b1de-90f55e4b51c5",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Accessibility scores across all cardiovascular publications were consistently low, with the majority (144/393) scoring 0.20-0.29, only one article scoring \u22650.6, and 18 articles scoring below 0.1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The distribution of accessibility scores (C40-C43) is clearly documented and supported by Figure 4A. The finding that nearly all articles scored below 0.6 demonstrates consistently poor accessibility across the field.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T05:12:50.677630Z"
+    },
+    {
+      "id": "c0c199e7-b032-4bb8-a034-a9ebd33bcc95",
+      "content_id": "a6d755ec-bbd4-4a3d-b1de-90f55e4b51c5",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Accessibility scores varied significantly across study types (ANOVA p=5.500E-5), with clinical trials having the highest average score (0.39) and clinical case studies the lowest (0.08).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The statistical test (C46) is appropriate for comparing means across multiple groups, with adequate sample sizes and a highly significant p-value. The reported scores (C44-C45) are consistent with Figure 4C and the overall finding (C6) is well-supported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T05:12:50.677630Z"
+    },
+    {
+      "id": "16dbd9a9-4470-4aef-8757-5ba01ada5d3e",
+      "content_id": "a6d755ec-bbd4-4a3d-b1de-90f55e4b51c5",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Accessibility scores varied significantly across journals (ANOVA p=1.230E-2), with Circulation having the highest average score (0.34), followed by JACC (0.24) and European Heart Journal (0.19). There was no significant interaction between study type and journal.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The statistical analysis (C53) is appropriate with adequate sample sizes across journals (C47-C49). The reported scores (C50-C52) are consistent with Figure 4B. The lack of interaction (C54) is appropriately tested and reported. However, the p-value of 0.0123 is only marginally significant and the effect sizes are modest.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T05:12:50.677630Z"
+    },
+    {
+      "id": "80c0b603-7ee3-4903-a838-e675934128b2",
+      "content_id": "a6d755ec-bbd4-4a3d-b1de-90f55e4b51c5",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Different study types showed significant differences in which resources they shared (\u03c7\u00b2=55.2, p=6.17e-12). Laboratory animal studies shared materials, data, and analysis code more frequently than clinical studies, while clinical trials shared methods (pre-registrations) more frequently than any other study type.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The overall chi-square test (C55) and individual resource comparisons (C56) are appropriate with Bonferroni correction applied. The specific findings (C57-C60) are supported by Table 2, Table 3, and Figure 5. The pattern makes biological sense given regulatory requirements for clinical trials.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T05:12:50.677630Z"
+    },
+    {
+      "id": "b652e773-1d1d-4b75-b331-099e635bd722",
+      "content_id": "a6d755ec-bbd4-4a3d-b1de-90f55e4b51c5",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Pre-registration and protocol availability was limited: 286 of 393 empirical articles had no pre-registration statement and 383 had no accessible protocol. Among those with pre-registrations (106/107 accessible), nearly all included methods, but only about half included hypotheses and less than half included analysis plans.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The quantitative findings (C83-C91) are clearly reported with appropriate denominators and supported by Figure 2A. The high accessibility rate among stated pre-registrations (C85) versus low overall pre-registration rates (C83) is an important distinction that is well-documented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T05:12:50.677630Z"
+    },
+    {
+      "id": "e26c5cdf-6810-45be-819e-fa15763d6bec",
+      "content_id": "a6d755ec-bbd4-4a3d-b1de-90f55e4b51c5",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Clinical trials showed the most consistent resource sharing for methods (pre-registrations), which are mandated by the FDA. This suggests that regulatory requirements effectively change practices, though variable switching remains common even with pre-registration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The observation about clinical trials (C74) is supported by the data. The FDA mandate (C75) is accurate general knowledge. The inference about effectiveness of mandates (C76) is reasonable given the data pattern. The caveat about variable switching (C77-C78) appropriately cites prior work and tempers the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T05:12:50.677630Z"
+    },
+    {
+      "id": "975697c6-b8df-4748-ba1a-375f8acafd0a",
+      "content_id": "a6d755ec-bbd4-4a3d-b1de-90f55e4b51c5",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Over 90% of articles (605/639) were publicly accessible, with only 34 articles (5%) not publicly accessible.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The finding is clearly quantified (C66, C82) and supported by Figure 1F. The percentages are consistent (95% accessible = 5% not accessible). This represents a positive finding regarding publication accessibility.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T05:12:50.677630Z"
+    },
+    {
+      "id": "9bc352cd-524a-44ad-b682-620a31b3b176",
+      "content_id": "a6d755ec-bbd4-4a3d-b1de-90f55e4b51c5",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "93% of articles included a COI statement, with 57% stating they had a COI, but notably 7% had no COI statement at all.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The quantitative findings (C79-C81) are clearly reported and supported by Figure 1E. The data reveal both high rates of COI statements and concerning gaps in disclosure practices.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T05:12:50.677630Z"
+    },
+    {
+      "id": "72c7ddd5-c8b6-4cc8-bd33-6270390a59fa",
+      "content_id": "a6d755ec-bbd4-4a3d-b1de-90f55e4b51c5",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Approximately half (56%) of papers had easily identifiable study types, and 43% (276/639) lacked a funding statement.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Both findings (C92-C93) are clearly quantified and supported by Figures 1B and 1D respectively. These represent important metadata about reporting practices.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T05:12:50.677630Z"
+    },
+    {
+      "id": "80c1c419-58c9-4b66-8db2-89066a97ceba",
+      "content_id": "a6d755ec-bbd4-4a3d-b1de-90f55e4b51c5",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Over half of initially screened articles were non-empirical research (reviews, editorials, commentaries), and replication studies were virtually absent (4/393 empirical publications).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Both findings (C67-C68) are clearly quantified and reveal important characteristics of the cardiovascular literature landscape. The near-absence of replication studies is particularly notable for the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T05:12:50.677630Z"
+    },
+    {
+      "id": "dda030d5-28ca-4964-a139-4684a0ea815d",
+      "content_id": "a6d755ec-bbd4-4a3d-b1de-90f55e4b51c5",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Fewer than 2% of cardiovascular research publications provide sufficient resources to fully reproduce their studies, and current reports frequently lack sufficient materials, protocols, data, or analysis information for reproduction, though accessibility scores were consistently low across study types and journals.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These summary conclusions (C5, C9, C63) are well-supported by the detailed quantitative findings throughout the paper. The <2% figure (C5) is consistent with the 7/393 fully reproducible finding (C36). The overall conclusion appropriately synthesizes the findings while acknowledging variation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T05:12:50.677630Z"
+    },
+    {
+      "id": "6d419348-3fcd-4698-a55c-efb7ca75f2dd",
+      "content_id": "a6d755ec-bbd4-4a3d-b1de-90f55e4b51c5",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Prior work has documented low reproducibility and poor accessibility across scientific fields, but no study had examined cardiovascular science publications specifically. Materials, data, code, and methods are important for reproducibility, though legitimate barriers to sharing exist.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The background claims (C1, C10-C17) are appropriately supported by citations to prior work. The novelty claim (C2, C18) is reasonable given the literature review, though such claims are inherently difficult to verify completely. The acknowledgment of legitimate barriers (C14) appropriately nuances the discussion.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T05:12:50.677630Z"
+    },
+    {
+      "id": "6fba835d-a3da-43d5-8a63-edcdced5c97b",
+      "content_id": "a6d755ec-bbd4-4a3d-b1de-90f55e4b51c5",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Journals have implemented various practices to incentivize resource sharing (badges, checklists), patients are generally willing to share data, but sharing 'upon request' has been shown to have variable success.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These contextual claims (C64-C65, C71, C73) are appropriately supported by citations to prior work and provide important context for interpreting the findings and recommendations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T05:12:50.677630Z"
+    },
+    {
+      "id": "44b90bdf-a6bc-4dd5-a520-399c4ee885fd",
+      "content_id": "a6d755ec-bbd4-4a3d-b1de-90f55e4b51c5",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Higher standards of accessibility mandated by journals or funding bodies will help increase the reproducibility of cardiovascular research.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "This recommendation (C98) is a forward-looking speculation based on the study findings. While the data showing higher compliance with mandated pre-registration (C74-C76) provides some support, this claim about future effectiveness cannot be directly evaluated from the current study. It represents a reasonable inference but lacks direct empirical support.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T05:12:50.677630Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "522c927f-65e0-4858-87ac-aae03a944371",
+      "result_id": "86ff98f3-bd0b-4606-9b5c-5b9c87722f47"
+    },
+    {
+      "claim_id": "171a8d95-eaad-43ce-8c5d-8bc5d5bfd4a3",
+      "result_id": "86ff98f3-bd0b-4606-9b5c-5b9c87722f47"
+    },
+    {
+      "claim_id": "28d8db62-4021-4e06-82fc-2a773beabf3a",
+      "result_id": "86ff98f3-bd0b-4606-9b5c-5b9c87722f47"
+    },
+    {
+      "claim_id": "6443d52a-de46-438a-abbe-4865b5289cc7",
+      "result_id": "86ff98f3-bd0b-4606-9b5c-5b9c87722f47"
+    },
+    {
+      "claim_id": "2e87bf33-f15b-4b10-8589-b724ddeab89c",
+      "result_id": "86ff98f3-bd0b-4606-9b5c-5b9c87722f47"
+    },
+    {
+      "claim_id": "4410e009-fa63-4b50-a9e8-15afee06eb0d",
+      "result_id": "86ff98f3-bd0b-4606-9b5c-5b9c87722f47"
+    },
+    {
+      "claim_id": "de8b71d1-e1ea-4e90-93ab-011b19ec9cd8",
+      "result_id": "86ff98f3-bd0b-4606-9b5c-5b9c87722f47"
+    },
+    {
+      "claim_id": "5e7ce584-f95a-46af-b88d-6cd76ab195f1",
+      "result_id": "86ff98f3-bd0b-4606-9b5c-5b9c87722f47"
+    },
+    {
+      "claim_id": "d1dad688-3613-4e1d-9c4c-4c7f243fefcd",
+      "result_id": "86ff98f3-bd0b-4606-9b5c-5b9c87722f47"
+    },
+    {
+      "claim_id": "735b5d4d-41d2-4ed4-ab49-3e1164553f05",
+      "result_id": "86ff98f3-bd0b-4606-9b5c-5b9c87722f47"
+    },
+    {
+      "claim_id": "6f8641ac-9e1d-4737-a3ff-9e5251655b08",
+      "result_id": "86ff98f3-bd0b-4606-9b5c-5b9c87722f47"
+    },
+    {
+      "claim_id": "45cff5a7-e5fd-480e-b000-3250f46fcdf9",
+      "result_id": "86ff98f3-bd0b-4606-9b5c-5b9c87722f47"
+    },
+    {
+      "claim_id": "499ecd9a-1ff3-48f3-b6a0-33ee761d2bd8",
+      "result_id": "86ff98f3-bd0b-4606-9b5c-5b9c87722f47"
+    },
+    {
+      "claim_id": "0501c3d7-b85d-4a66-96e0-5cd2d4bed786",
+      "result_id": "86ff98f3-bd0b-4606-9b5c-5b9c87722f47"
+    },
+    {
+      "claim_id": "e0ed2f3d-bc06-4b90-b6a4-ea2606717d9a",
+      "result_id": "8ddb9687-c993-406e-82ee-14d686ac74a0"
+    },
+    {
+      "claim_id": "e08f4575-8b82-4606-b7d8-385eb0f89222",
+      "result_id": "8ddb9687-c993-406e-82ee-14d686ac74a0"
+    },
+    {
+      "claim_id": "a79ad1d4-75f9-48ad-8ace-f9e70ede4474",
+      "result_id": "8ddb9687-c993-406e-82ee-14d686ac74a0"
+    },
+    {
+      "claim_id": "97e22219-86f0-4a6d-bc5c-f76063a7edfe",
+      "result_id": "8ddb9687-c993-406e-82ee-14d686ac74a0"
+    },
+    {
+      "claim_id": "d5c14297-6a86-4de6-aabd-5a6af6d800e7",
+      "result_id": "8ddb9687-c993-406e-82ee-14d686ac74a0"
+    },
+    {
+      "claim_id": "d52853f2-f6b4-4483-ab60-67505701bac7",
+      "result_id": "8ddb9687-c993-406e-82ee-14d686ac74a0"
+    },
+    {
+      "claim_id": "da773320-e92d-4fce-949d-1b3f3640c673",
+      "result_id": "8ddb9687-c993-406e-82ee-14d686ac74a0"
+    },
+    {
+      "claim_id": "478df069-632b-4461-8f2a-c6baf7337994",
+      "result_id": "8ddb9687-c993-406e-82ee-14d686ac74a0"
+    },
+    {
+      "claim_id": "ee1001f8-48de-4771-b3f7-f433c530e2f8",
+      "result_id": "8ddb9687-c993-406e-82ee-14d686ac74a0"
+    },
+    {
+      "claim_id": "9bb5442e-05c0-4d42-bd7b-2fb9cf427918",
+      "result_id": "799d6917-e788-4d30-a317-da69623c0f26"
+    },
+    {
+      "claim_id": "bf991f91-46b3-490c-8366-3aef00d7cf1c",
+      "result_id": "799d6917-e788-4d30-a317-da69623c0f26"
+    },
+    {
+      "claim_id": "35d0b060-1862-477b-9468-446976c7df31",
+      "result_id": "799d6917-e788-4d30-a317-da69623c0f26"
+    },
+    {
+      "claim_id": "ddf5b309-1205-4e5d-bc87-c668b0d6a688",
+      "result_id": "799d6917-e788-4d30-a317-da69623c0f26"
+    },
+    {
+      "claim_id": "90054ec7-613f-4783-8e99-d80951f6f35b",
+      "result_id": "799d6917-e788-4d30-a317-da69623c0f26"
+    },
+    {
+      "claim_id": "e7599461-35e9-4f7b-9028-eb7a75cb48d4",
+      "result_id": "799d6917-e788-4d30-a317-da69623c0f26"
+    },
+    {
+      "claim_id": "dd834b52-00e6-4703-b45b-5b2b85f588d7",
+      "result_id": "799d6917-e788-4d30-a317-da69623c0f26"
+    },
+    {
+      "claim_id": "3543cd4b-b816-461f-9ea9-7e7dfd7ebe07",
+      "result_id": "799d6917-e788-4d30-a317-da69623c0f26"
+    },
+    {
+      "claim_id": "3f417686-6fa8-497f-978d-f04bb322e8b4",
+      "result_id": "28d7ad66-cb19-42fa-bbeb-0a164d92cd5c"
+    },
+    {
+      "claim_id": "55dac9e1-5eac-4775-8be3-089fc4e77abd",
+      "result_id": "28d7ad66-cb19-42fa-bbeb-0a164d92cd5c"
+    },
+    {
+      "claim_id": "22b26392-861c-42b6-ac86-ba0d824071cc",
+      "result_id": "28d7ad66-cb19-42fa-bbeb-0a164d92cd5c"
+    },
+    {
+      "claim_id": "64efd121-19b7-48ba-a30a-4ff423721207",
+      "result_id": "28d7ad66-cb19-42fa-bbeb-0a164d92cd5c"
+    },
+    {
+      "claim_id": "0d1ecc3d-694b-4480-bec0-61e295993e76",
+      "result_id": "c0c199e7-b032-4bb8-a034-a9ebd33bcc95"
+    },
+    {
+      "claim_id": "994f1648-403e-44ff-9a79-c07a65593453",
+      "result_id": "c0c199e7-b032-4bb8-a034-a9ebd33bcc95"
+    },
+    {
+      "claim_id": "60fefb00-b85b-4783-a89e-0e1ebd177022",
+      "result_id": "c0c199e7-b032-4bb8-a034-a9ebd33bcc95"
+    },
+    {
+      "claim_id": "3298131e-b6c6-48d9-aeab-33f26d45493f",
+      "result_id": "c0c199e7-b032-4bb8-a034-a9ebd33bcc95"
+    },
+    {
+      "claim_id": "87c59e5c-1797-4acf-b217-122606d83f51",
+      "result_id": "16dbd9a9-4470-4aef-8757-5ba01ada5d3e"
+    },
+    {
+      "claim_id": "4c882f73-5fdc-4438-a0c9-e877f76a0c18",
+      "result_id": "16dbd9a9-4470-4aef-8757-5ba01ada5d3e"
+    },
+    {
+      "claim_id": "3e2bfe9a-c70a-4af5-97e5-07696d058810",
+      "result_id": "16dbd9a9-4470-4aef-8757-5ba01ada5d3e"
+    },
+    {
+      "claim_id": "b735b11a-c6a4-4e26-aaa0-8f80e4ba6fda",
+      "result_id": "16dbd9a9-4470-4aef-8757-5ba01ada5d3e"
+    },
+    {
+      "claim_id": "4c582eb5-dd9e-40e8-b456-3641464c1b8d",
+      "result_id": "16dbd9a9-4470-4aef-8757-5ba01ada5d3e"
+    },
+    {
+      "claim_id": "abbf01d5-7588-40e1-81c5-b04ef491d5e7",
+      "result_id": "16dbd9a9-4470-4aef-8757-5ba01ada5d3e"
+    },
+    {
+      "claim_id": "612fc179-0ead-4aaf-ae23-e044c7aaf92f",
+      "result_id": "16dbd9a9-4470-4aef-8757-5ba01ada5d3e"
+    },
+    {
+      "claim_id": "363fd670-bc64-4033-b94c-816eba0cfc2a",
+      "result_id": "16dbd9a9-4470-4aef-8757-5ba01ada5d3e"
+    },
+    {
+      "claim_id": "7ac0cb53-2f09-42be-8cab-829ec7b41052",
+      "result_id": "16dbd9a9-4470-4aef-8757-5ba01ada5d3e"
+    },
+    {
+      "claim_id": "09c51b4f-cd0e-4bd7-ab69-39adf982ffac",
+      "result_id": "80c0b603-7ee3-4903-a838-e675934128b2"
+    },
+    {
+      "claim_id": "9271d0b0-8848-4033-961f-bde331836668",
+      "result_id": "80c0b603-7ee3-4903-a838-e675934128b2"
+    },
+    {
+      "claim_id": "056c245e-3061-403b-bf85-f8250dd087d5",
+      "result_id": "80c0b603-7ee3-4903-a838-e675934128b2"
+    },
+    {
+      "claim_id": "5c20c5c7-151f-4ec3-b94a-531ae244cbff",
+      "result_id": "80c0b603-7ee3-4903-a838-e675934128b2"
+    },
+    {
+      "claim_id": "83d22b32-1d20-48be-97f2-29e2a7374fea",
+      "result_id": "80c0b603-7ee3-4903-a838-e675934128b2"
+    },
+    {
+      "claim_id": "26b9f1ad-ec57-4f9e-9680-eaedcaee3e65",
+      "result_id": "80c0b603-7ee3-4903-a838-e675934128b2"
+    },
+    {
+      "claim_id": "3973180a-58e1-4be2-8dc0-19272c216a75",
+      "result_id": "80c0b603-7ee3-4903-a838-e675934128b2"
+    },
+    {
+      "claim_id": "4b4448ad-a80b-480a-9667-4869c4080e49",
+      "result_id": "b652e773-1d1d-4b75-b331-099e635bd722"
+    },
+    {
+      "claim_id": "efe30684-85f1-4069-b062-ade56e1d60a1",
+      "result_id": "b652e773-1d1d-4b75-b331-099e635bd722"
+    },
+    {
+      "claim_id": "2eab84d1-4be3-46eb-810c-a0bba610abc6",
+      "result_id": "b652e773-1d1d-4b75-b331-099e635bd722"
+    },
+    {
+      "claim_id": "60a27236-3cab-4b74-9864-442f26b61a7f",
+      "result_id": "b652e773-1d1d-4b75-b331-099e635bd722"
+    },
+    {
+      "claim_id": "32cb24f8-63e6-432e-a6db-cf2c3ec77d6e",
+      "result_id": "b652e773-1d1d-4b75-b331-099e635bd722"
+    },
+    {
+      "claim_id": "b2415b95-caea-445a-ab73-c3138a5dd647",
+      "result_id": "b652e773-1d1d-4b75-b331-099e635bd722"
+    },
+    {
+      "claim_id": "ae540a7c-87ca-47a8-a631-eb9344a9ab37",
+      "result_id": "b652e773-1d1d-4b75-b331-099e635bd722"
+    },
+    {
+      "claim_id": "70c96f50-7a6b-4bf7-837c-8cd5d9b12e13",
+      "result_id": "b652e773-1d1d-4b75-b331-099e635bd722"
+    },
+    {
+      "claim_id": "5c21a27a-57e9-4c6f-8b65-72dc6630d0af",
+      "result_id": "b652e773-1d1d-4b75-b331-099e635bd722"
+    },
+    {
+      "claim_id": "ca68adf3-335a-418d-a8ed-ea4d541575f1",
+      "result_id": "e26c5cdf-6810-45be-819e-fa15763d6bec"
+    },
+    {
+      "claim_id": "b66bed6b-498a-4f06-8185-d952a972cfd1",
+      "result_id": "e26c5cdf-6810-45be-819e-fa15763d6bec"
+    },
+    {
+      "claim_id": "1ffcf6cd-79e4-4fd4-97bd-a82f31f75bcf",
+      "result_id": "e26c5cdf-6810-45be-819e-fa15763d6bec"
+    },
+    {
+      "claim_id": "48963779-2010-4331-8ef7-edd58db31120",
+      "result_id": "e26c5cdf-6810-45be-819e-fa15763d6bec"
+    },
+    {
+      "claim_id": "b6309a46-4aa1-4d3c-a345-f6c5be9b87e6",
+      "result_id": "e26c5cdf-6810-45be-819e-fa15763d6bec"
+    },
+    {
+      "claim_id": "943bac3d-aba1-4241-a3d0-ba7a963d4a85",
+      "result_id": "975697c6-b8df-4748-ba1a-375f8acafd0a"
+    },
+    {
+      "claim_id": "f54519ae-b08b-4418-825d-0a43c1d6f462",
+      "result_id": "975697c6-b8df-4748-ba1a-375f8acafd0a"
+    },
+    {
+      "claim_id": "22922728-ee8b-4c5b-842f-be08f4667eac",
+      "result_id": "9bc352cd-524a-44ad-b682-620a31b3b176"
+    },
+    {
+      "claim_id": "c078f367-5e21-4d57-a1fe-a2cdb32d563f",
+      "result_id": "9bc352cd-524a-44ad-b682-620a31b3b176"
+    },
+    {
+      "claim_id": "d28462c5-bddc-4790-82c3-4bebc17c6e31",
+      "result_id": "9bc352cd-524a-44ad-b682-620a31b3b176"
+    },
+    {
+      "claim_id": "af114ce8-925b-486d-83f4-b6c94e346ff7",
+      "result_id": "72c7ddd5-c8b6-4cc8-bd33-6270390a59fa"
+    },
+    {
+      "claim_id": "44b883c5-3227-49d9-98d5-44596caa98df",
+      "result_id": "72c7ddd5-c8b6-4cc8-bd33-6270390a59fa"
+    },
+    {
+      "claim_id": "242f84b8-7b70-4f80-8e46-3f99f0664bcf",
+      "result_id": "80c1c419-58c9-4b66-8db2-89066a97ceba"
+    },
+    {
+      "claim_id": "5c8feb43-9854-4abc-ac74-a181a5bb10d2",
+      "result_id": "80c1c419-58c9-4b66-8db2-89066a97ceba"
+    },
+    {
+      "claim_id": "78627922-d21d-4f1b-b767-1902141731db",
+      "result_id": "dda030d5-28ca-4964-a139-4684a0ea815d"
+    },
+    {
+      "claim_id": "8eb910b0-f149-4d78-9c38-454e975d20b4",
+      "result_id": "dda030d5-28ca-4964-a139-4684a0ea815d"
+    },
+    {
+      "claim_id": "b305b024-9f80-425c-a8f9-75339107d0d4",
+      "result_id": "dda030d5-28ca-4964-a139-4684a0ea815d"
+    },
+    {
+      "claim_id": "e5068ead-ced2-485a-8acc-6975ba98d24e",
+      "result_id": "6d419348-3fcd-4698-a55c-efb7ca75f2dd"
+    },
+    {
+      "claim_id": "8c1a2e0d-fe7c-4a5c-9efc-d6843e0d7aca",
+      "result_id": "6d419348-3fcd-4698-a55c-efb7ca75f2dd"
+    },
+    {
+      "claim_id": "8fecb4d4-2339-4d0c-9c05-6d8d1c0acb52",
+      "result_id": "6d419348-3fcd-4698-a55c-efb7ca75f2dd"
+    },
+    {
+      "claim_id": "d126a554-f080-4d46-b436-30240673ea25",
+      "result_id": "6d419348-3fcd-4698-a55c-efb7ca75f2dd"
+    },
+    {
+      "claim_id": "313c1e15-b55f-41cb-a94f-7a8a25dc2038",
+      "result_id": "6d419348-3fcd-4698-a55c-efb7ca75f2dd"
+    },
+    {
+      "claim_id": "b20fd912-7cc6-48e8-92ba-977d8c89019a",
+      "result_id": "6d419348-3fcd-4698-a55c-efb7ca75f2dd"
+    },
+    {
+      "claim_id": "57a1601f-fc0f-43b6-8c2a-aa44a0d34037",
+      "result_id": "6d419348-3fcd-4698-a55c-efb7ca75f2dd"
+    },
+    {
+      "claim_id": "4c229ef2-f1c0-4aea-bc8a-0047c0374bf9",
+      "result_id": "6d419348-3fcd-4698-a55c-efb7ca75f2dd"
+    },
+    {
+      "claim_id": "a04b11e5-9d26-45a6-8aa5-31224934d28e",
+      "result_id": "6d419348-3fcd-4698-a55c-efb7ca75f2dd"
+    },
+    {
+      "claim_id": "ad6afbe5-5ae2-4f59-b407-4fcdb6c8e0c4",
+      "result_id": "6d419348-3fcd-4698-a55c-efb7ca75f2dd"
+    },
+    {
+      "claim_id": "cd084467-4d63-4b42-bb8a-c92ebfc0ca03",
+      "result_id": "6d419348-3fcd-4698-a55c-efb7ca75f2dd"
+    },
+    {
+      "claim_id": "328fa19d-dab5-48b4-9a4e-98191675ce0a",
+      "result_id": "6fba835d-a3da-43d5-8a63-edcdced5c97b"
+    },
+    {
+      "claim_id": "c7716151-4b8d-4592-831f-5824336f4f6c",
+      "result_id": "6fba835d-a3da-43d5-8a63-edcdced5c97b"
+    },
+    {
+      "claim_id": "e81836d3-9bb0-45a1-93b8-c89192744663",
+      "result_id": "6fba835d-a3da-43d5-8a63-edcdced5c97b"
+    },
+    {
+      "claim_id": "00922ecf-5196-4524-9479-f3bf2b2cd290",
+      "result_id": "6fba835d-a3da-43d5-8a63-edcdced5c97b"
+    },
+    {
+      "claim_id": "537f6562-565a-41ea-8949-249c672b1449",
+      "result_id": "44b90bdf-a6bc-4dd5-a520-399c4ee885fd"
+    }
+  ],
+  "comparisons": []
+}

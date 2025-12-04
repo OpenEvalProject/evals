@@ -1,0 +1,504 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C31",
+      "C32"
+    ],
+    "result": "The C-HORSE model instantiates hippocampal anatomy with three hidden layers (DG, CA3, CA1) receiving input through entorhinal cortex, connected via a sparse trisynaptic pathway (TSP) through DG and CA3, and a less sparse monosynaptic pathway (MSP) directly from EC to CA1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C26 and C31-C32 describe the model architecture, which is clearly documented in the Methods section and illustrated in Figure 1. The architectural choices are explicitly stated and form the foundation for all subsequent simulations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C67",
+      "C122",
+      "C123",
+      "C126"
+    ],
+    "result": "The trisynaptic pathway (TSP) is critical for remembering exemplar-specific information across all three simulations, with TSP-only networks showing superior unique feature recognition compared to MSP-only networks, while TSP lesions impair recognition but preserve categorization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C44 present data from Simulation 1 showing TSP-only networks performed at or above intact network levels for unique feature recognition (Figure 3c), while MSP-only networks failed completely. This pattern is replicated across Simulations 2 and 3 (C71-C73, C97), with statistical support (p<0.001). The interpretation that TSP specializes in arbitrary binding (C122-C123) is well-supported by the consistent pattern across paradigms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C47",
+      "C48",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C66",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "The monosynaptic pathway (MSP) specializes in detecting regularities that define category structure, with MSP-only networks showing superior categorization and generalization performance compared to intact and TSP-only networks across all three simulations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C56 present data from Simulation 1 showing MSP-only networks achieved perfect categorization (accuracy=1.0) and superior generalization compared to intact networks (Figure 3d-e), with all differences statistically significant (p<0.001). This pattern replicates in Simulations 2 (C75-C80) and 3 (C88-C91). The mechanistic explanation via distributed representations and slower learning (C116-C117) is consistent with the model architecture and provides a coherent account of the behavioral results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C118",
+      "C119"
+    ],
+    "result": "After training, CA1 representations showed strong within-category similarity structure, while DG and CA3 showed pattern-separated representations with minimal category structure in the initial response, consistent with prior fMRI findings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C64 describe representational similarity analyses from Simulation 1 (Figure 3f), showing clear category structure in CA1 but not DG/CA3 in initial responses. This pattern is replicated in Simulations 2 (C81-C83) and 3 (C104-C106). The consistency with prior fMRI data (C63, C119) provides external validation. The representational analyses directly support the proposed functional division between pathways.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C69",
+      "C70"
+    ],
+    "result": "Two key architectural properties underlie the complementary functions of the pathways: slower learning in MSP than TSP (learning rates 0.002 vs 0.02) and more overlapping representations in MSP than TSP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C70 identify the mechanistic basis for the behavioral results. The learning rate difference is explicitly stated in Methods, and the representational differences are demonstrated in the similarity analyses across all simulations. These properties provide a parsimonious explanation for the observed functional specialization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "In Simulation 3 with varying typicality, the intact network showed good atypical feature recognition that depended on typicality, with both pathways contributing to performance for items close to the prototype, but TSP being critical for highly atypical items.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C103 present results from Simulation 3 showing a nuanced pattern where intact networks outperformed both lesioned networks for atypical feature recognition (C95, Figure 5f), unlike Simulations 1-2. The typicality gradient (C93-C94) and the finding that MSP contributes for near-prototype items (C99) while TSP is essential for atypical items (C100) are supported by the data with statistical significance (p<0.001, C103). This represents a novel finding extending the basic TSP/MSP division of labor.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "Simulation 3 revealed limits to TSP pattern separation: highly prototypical items showed similarity structure even in DG and CA3, explaining why TSP-only networks could generalize well for prototypical items but struggled with atypical feature recognition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C109 identify a boundary condition for the TSP's pattern separation function. The representational data (Figure 5g) clearly show category structure in DG/CA3 for prototypical items, and this directly explains the behavioral pattern in C108-C109. This is an important qualification of the general principle that TSP performs pattern separation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "In the probabilistic Weather Prediction Task (Simulation 2), the model learned categories similarly to humans, with TSP supporting recognition and MSP supporting categorization, though the advantage of MSP-only networks was more subtle than in Simulation 1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C87 present results from Simulation 2 showing the same qualitative pattern as Simulation 1: TSP-only networks matched intact networks for recognition (C71-C73), while MSP-only networks excelled at categorization (C75-C80). Statistical analyses confirm significance (C78-C79). The qualitative match to human behavior (C76, C84-C85, Figure 4a-b) supports the model's validity, though the comparison is somewhat limited by the probabilistic nature of the task.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C120",
+      "C121"
+    ],
+    "result": "Across all three category learning paradigms, the model demonstrated that principles allowing C-HORSE to detect regularities in temporal sequences apply broadly to multidimensional category spaces, pointing to domain-general hippocampal learning mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C114 and C120-C121 synthesize findings across simulations. The consistent pattern of MSP specialization for regularities and TSP specialization for specifics across three different paradigms (satellite categories, probabilistic categories, typicality-based categories) strongly supports the domain-generality claim. This is a key theoretical contribution of the work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C68",
+      "C152",
+      "C153",
+      "C154"
+    ],
+    "result": "The division of labor between MSP and TSP represents a microcosm of the Complementary Learning Systems framework, with MSP functioning as a rapid learner of novel semantics (intermediate between TSP and neocortex) and TSP handling episodic specifics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C18 and C152-C154 articulate the theoretical framework. The analogy to Complementary Learning Systems is well-supported by the empirical results showing MSP extracting regularities (like neocortex) and TSP encoding episodes (like hippocampus in the original framework). The proposal that MSP operates at an intermediate timescale (C37-C38, C153-C154) is conceptually coherent and supported by the learning rate hierarchy in the model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C76",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "The model's learning trajectories and performance levels were comparable to human performance across the three paradigms, though humans showed faster early learning in some cases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C46, C76, and C84-C86 compare model to human behavior. Figures 3a-d, 4a-b, and 5a-c show qualitatively similar learning curves. The qualification that humans learned faster initially (C46) is appropriate. However, the human-model comparison is somewhat limited: different numbers of participants vs. network initializations, and the model was not explicitly fit to human data. The comparison supports face validity but not quantitative fit.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C129",
+      "C130",
+      "C131",
+      "C136",
+      "C139",
+      "C140",
+      "C142",
+      "C148",
+      "C149"
+    ],
+    "result": "The model provides a neural implementation of exemplar-style representations (TSP) and prototype-style representations (MSP), bridging computational-level theories of categorization with neural mechanisms, though with some differences from classic psychological models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C129-C131 and C139-C142 draw connections to psychological models. The TSP's pattern separation implements exemplar-style storage (C130), while MSP's distributed representations approximate prototype models (C139). The qualifications that TSP shows poor categorization unlike exemplar models (C131) and that MSP retains some exemplar sensitivity unlike pure prototype models (C140, C142) are important and well-supported by the data. This represents a valuable theoretical contribution linking levels of analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164"
+    ],
+    "result": "The model identifies a retrieval problem when both pathways contribute, suggesting a need for task-dependent control mechanisms, potentially implemented by medial prefrontal cortex, to selectively enhance pathways depending on task demands.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C155-C164 identify an important limitation and propose a solution. The problem is real: intact networks showed intermediate performance between MSP-only and TSP-only in several cases (C51, C80, C111), suggesting suboptimal blending. The proposal for prefrontal control (C161-C164) is speculative but well-motivated by prior work (C160) and anatomical considerations. However, this control mechanism is not implemented in the current model, so its necessity and sufficiency remain uncertain. This represents an important direction for future work rather than a demonstrated result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C165",
+      "C166",
+      "C167",
+      "C168",
+      "C169",
+      "C170",
+      "C171",
+      "C172",
+      "C173",
+      "C174",
+      "C175",
+      "C176",
+      "C177",
+      "C178"
+    ],
+    "result": "The model's developmental predictions\u2014that early MSP maturation should support early categorization but poor episodic memory, while later TSP maturation enables exception learning\u2014are consistent with infant cognitive development literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C165-C178 connect the model to developmental data. The anatomical claims about differential maturation (C165-C168) are well-supported by citations. The model's predictions (C169, C173, C177) follow logically from the functional specializations demonstrated in the simulations. The consistency with infant categorization abilities (C170-C172) and difficulties with low-coherence categories (C174-C175) provides external validation. The proposal that the model resolves the categorization/episodic memory puzzle (C176) is compelling, though the model itself was not tested developmentally.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C179",
+      "C180",
+      "C181",
+      "C182",
+      "C183",
+      "C184",
+      "C185",
+      "C186",
+      "C187",
+      "C188",
+      "C189",
+      "C190",
+      "C191"
+    ],
+    "result": "The model's prediction that MSP is responsible for hippocampal contributions to category learning is consistent with the mixed pattern of deficits in amnesic patients, and predicts that specific TSP damage should spare category learning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C179-C191 connect the model to neuropsychological data. The review of patient studies (C179-C188) accurately characterizes the mixed findings in the literature. The proposal that MSP mediates hippocampal contributions (C189) explains why amnesics show partial rather than complete deficits. The prediction about TSP-specific damage (C190) is supported by recent evidence (C191). This represents a strong connection between model and clinical data, though direct tests of the MSP-specific prediction are still needed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C192",
+      "C193",
+      "C194",
+      "C195",
+      "C196",
+      "C197",
+      "C198",
+      "C199",
+      "C200",
+      "C201"
+    ],
+    "result": "The model predicts that anterior hippocampus (enriched in CA1) should preferentially reflect category structure, while posterior hippocampus should be associated with exception learning, consistent with several neuroimaging studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C192-C201 connect the model to neuroimaging data. The anatomical premise about anterior/posterior CA1 proportions (C197) is well-cited. The prediction (C198) follows logically from the model's functional assignments. The consistency with anterior hippocampus activation in category learning (C199-C200) and posterior activation for exceptions (C201) provides strong support. However, the authors appropriately note that anterior/posterior differences involve more than just subfield ratios, so this connection requires further testing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C211",
+      "C212",
+      "C213",
+      "C214",
+      "C215",
+      "C216",
+      "C217",
+      "C218"
+    ],
+    "result": "The model makes specific testable predictions about representational similarity in hippocampal subfields and behavioral consequences of pathway disruptions, with some existing empirical support.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C211-C218 articulate clear predictions. The representational predictions (C211-C212) are specific and testable with high-resolution fMRI. The behavioral predictions (C213-C215) about differential effects of pathway disruptions are well-grounded in the simulation results. The existing supporting evidence (C216-C218) provides initial validation, though more direct tests are needed. These predictions represent valuable contributions that can guide future empirical work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "The hippocampus is capable of both rapid learning and extracting regularities across experiences, making it well-suited for rapid category learning, as supported by neuroimaging and lesion studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C13 establish the empirical and theoretical motivation for the study. These are well-supported by the cited literature (C8-C9, C11-C12) and represent established findings in the field. They provide appropriate context for the modeling work but are not novel contributions of this paper.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Category learning differs from temporal statistical learning in involving spatial co-occurrence of features and more explicit grouping demands, but may share underlying hippocampal mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C21 accurately characterize differences between category learning and temporal statistical learning. C22 establishes the model's lineage. These claims provide important context for understanding the extension of C-HORSE to a new domain but are primarily descriptive rather than empirical contributions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "The TSP and MSP have distinct physiological properties documented in the literature: TSP shows pattern separation in CA3, high plasticity, and pattern completion via recurrence; MSP shows overlapping CA1 representations and slower learning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C35 review established neurobiological properties that motivated the model architecture. These are well-supported by citations (C27, C28, C33, C34) and accurately characterize the literature. They justify the model's design choices but are not novel findings of this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "The MSP is proposed to be well-suited for learning structured information across episodes at an intermediate timescale (minutes to hours) between TSP (one-shot) and neocortex (days to years).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C36-C39 articulate a theoretical proposal about MSP function and timescales. While the proposal is conceptually coherent and motivated by the model's learning rate hierarchy, the specific timescale claims are not directly tested in the simulations. The model was trained for fixed numbers of trials without explicit temporal parameters. The proposal is plausible but requires empirical validation with temporally-controlled experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C127",
+      "C128"
+    ],
+    "result": "The TSP's rapid binding ability for episodic memory translates to specialization for arbitrary details in category learning, extending beyond traditional episodic memory domains, as supported by white matter integrity studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124-C125 make a theoretical connection between episodic memory and category learning functions of TSP, well-supported by the simulation results. C127 provides empirical support from white matter studies. C128 extends the proposal beyond episodic memory. This represents an important theoretical contribution, though the claim about extending to \"any rapid new learning\" (C128) is somewhat speculative and would benefit from testing in additional domains.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C132",
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "Modifications to the model such as modulating DG influence during retrieval or implementing mechanisms from REMERGE might enhance TSP categorization ability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C132-C135 discuss potential model modifications to improve TSP categorization. These are reasonable speculations based on other models (C133-C134) and known physiology (C132), but they are not tested in the current work. The suggestions are valuable for future model development but represent hypotheses rather than demonstrated results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C137",
+      "C138",
+      "C141",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C150",
+      "C151"
+    ],
+    "result": "The model proposes that fast hippocampal learning rates force a trade-off between representing specifics and generalities, solved by maintaining parallel representations in TSP and MSP, unlike neocortex which can represent both in superposition with slower learning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C137-C151 develop a theoretical argument about representational trade-offs. The observation that the model shows tension between specifics and generalities (C143) is supported by the lesion results. The contrast with neocortical representations (C144-C145) is conceptually sound though somewhat speculative (C145). The proposal that parallel pathways solve this problem (C151) is well-supported by the simulation results. This represents an important theoretical contribution, though the necessity of the trade-off could be tested more directly.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C202",
+      "C203",
+      "C204",
+      "C205",
+      "C206",
+      "C207",
+      "C208"
+    ],
+    "result": "The hippocampus and basal ganglia are important for rapid category learning (minutes to hours), with hippocampus/MSP particularly important for observational learning without motor response or feedback, while basal ganglia is engaged by feedback-based learning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C202-C208 situate the hippocampus within the broader category learning system. The distinction between hippocampal and basal ganglia contributions based on feedback (C206-C207) is well-supported by citations. The proposal that MSP is especially important for observational learning (C208) is consistent with the model's properties and the literature, though it is somewhat speculative. This provides important context but the model itself does not include basal ganglia or test the feedback manipulation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C209",
+      "C210"
+    ],
+    "result": "The TSP contributes to remembering arbitrary aspects of categories (specifics and atypical features) while the MSP contributes to learning systematic aspects (shared structure), representing the core theoretical proposal of the paper.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C209-C210 state the paper's central theoretical conclusion. This is strongly supported by the convergent evidence across all three simulations, the representational analyses, and the lesion studies. The proposal is parsimonious, mechanistically grounded, and makes testable predictions. This represents the major theoretical contribution of the work.",
+    "result_type": "MAJOR"
+  }
+]

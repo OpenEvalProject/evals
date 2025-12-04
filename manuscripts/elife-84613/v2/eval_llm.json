@@ -1,0 +1,264 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C30",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "The PrEDiCT method was applied to 1,140 Mendelian diseases across six human tissues (bone marrow, lung, skeletal muscle, spleen, tongue, trachea) comprising 129 cell types, identifying 489 likely disease-cell-type associations covering 328 diseases and 102 cell types using a median preferential expression score with permutation-based significance testing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C20, C30, C67-C70 provide comprehensive methodological details and quantitative results. The workflow is clearly described with specific thresholds (PrEDiCT \u22651, FDR <0.1), and the scale of analysis (34,249 total associations) is well-documented. The statistical approach using permutation tests is appropriate for this type of analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C23",
+      "C25",
+      "C26",
+      "C27",
+      "C21",
+      "C22",
+      "C24"
+    ],
+    "result": "PrEDiCT successfully identified known disease-affected cell types in proof-of-concept cases: primary ciliary dyskinesia associated with lung ciliated cells, Heinz body anemias with bone marrow erythrocytes, and four of five mitochondrial complex deficiencies with slow and fast muscle cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23, C25, C26 demonstrate successful validation with known disease-cell-type relationships cited from literature (C22, C24). The mitochondrial complex II deficiency case (C27) shows appropriate acknowledgment of statistical stringency limitations. These proof-of-concept examples provide strong initial validation of the method.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C71"
+    ],
+    "result": "Literature text-mining identified 229 disease-cell-type pairs with significant co-appearance, and likely associations showed significant enrichment for these literature-supported pairs (8.4% vs 0.7%, p<E-15) with low false-positive rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C29 provide statistical validation through literature co-occurrence analysis using appropriate Chi-squared and Fisher's exact tests. The enrichment is substantial and highly significant. Claim C71 confirms low false-positive rates. This represents robust large-scale validation, though text-mining has inherent limitations in distinguishing positive from speculative results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C81"
+    ],
+    "result": "Mouse single-cell data analysis yielded 97 cell clusters and 380 likely disease-cell-type associations. PrEDiCT scores showed modest correlation between matching human-mouse cell types (r=0.38, p<E-15) but not non-matching types (r=-0.02), with 30% of human diseases affecting matching mouse cell types (significantly more than chance, p<0.01).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C36, C72-C78, C81 provide comprehensive cross-species validation. The modest correlation (r=0.38) for matching cell types is reasonable given biological differences between species. The statistical significance is strong (p<E-15 for correlation, p<0.01 for enrichment). Control analyses (C74, C81) address potential confounding by disease genes. The recapitulation of proof-of-concept cases (C75-C78) strengthens confidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Multi-tissue diseases (168/328, 51%) showed enrichment for affecting matching cell types across tissues (18% vs chance, p<0.01), with chronic granulomatous disease exemplifying this pattern by affecting phagocytes in spleen, lung, and bone marrow.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C42 demonstrate a novel biological insight with appropriate statistical testing. The identification of 840 matching cell-type pairs (C39) and enrichment analysis (C41-C42) are methodologically sound. The CGD example (C43-C46) provides strong biological validation, including therapeutic relevance (bone marrow transplant). This represents a significant mechanistic insight into multi-tissue disease manifestation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C79"
+    ],
+    "result": "Separate analysis of ligand and receptor genes for seven diseases revealed distinct affected cell types: hyper-IgM immunodeficiency affected na\u00efve B cells through CD40 (receptor, PrEDiCT=2.9, FDR=0.06) and CD4\u03b1\u03b2 T cells through CD40LG (ligand, PrEDiCT=3.7, FDR<0.001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C50, C79 demonstrate methodological refinement for diseases with distinct cellular mechanisms. The hyper-IgM example shows how joint analysis (C48) missed B cells but separate analysis (C49-C50) correctly identified both cell types. The biological rationale is sound and supported by literature (C47). This represents an important methodological advancement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C96",
+      "C97"
+    ],
+    "result": "For autosomal recessive limb-girdle muscular dystrophy, separate analysis of LAMA2 (ligand) and DAG1 (receptor) identified mesenchymal stem cells and satellite stem cells as affected cell types, respectively, with both predictions supported by experimental evidence from mouse models and patient studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C55, C96-C97 provide strong validation through convergent evidence from multiple sources. The separate ligand/receptor analysis (C52) revealed cell types missed by joint analysis. Supporting evidence includes patient studies (C53) and mouse rescue experiments (C54-C55) that validate both predictions. This demonstrates the power of function-based refinement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C91",
+      "C92"
+    ],
+    "result": "For heritable airway cancers, separate analysis of oncogenes and tumor suppressor genes revealed that oncogenes likely affect basal cells while TSGs affect intermediate and non-classical monocytes, suggesting distinct cellular vulnerabilities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C57, C91-C92 demonstrate another application of function-based refinement. The distinction between oncogene and TSG effects on different cell types is biologically plausible and represents a novel insight. However, this finding would benefit from additional experimental validation beyond the computational prediction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C82",
+      "C83"
+    ],
+    "result": "Cell-type susceptibility analysis revealed that capillary endothelial cells of the tongue were most susceptible (25%), susceptibility did not correlate with cell-type prevalence (r=-0.02), and fast/slow muscle cells were highly susceptible despite representing <1% of skeletal muscle cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C62, C82-C83 provide quantitative characterization of cell-type vulnerability. The lack of correlation between prevalence and susceptibility (C60, C83) is an important negative result supported by appropriate statistical testing. The muscle cell example (C61-C62) illustrates this principle clearly. The analysis covers 328 diseases and 102 cell types, providing adequate statistical power.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C84"
+    ],
+    "result": "Cell-type susceptibility varied significantly between cell classes (p=1.5E-3, ANOVA), with endothelia being most susceptible and immunocytes/epithelia being least susceptible among common cell classes (p<0.05, Mann-Whitney U test).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C65, C84 demonstrate statistically significant differences in susceptibility across cell classes using appropriate tests (ANOVA, Mann-Whitney U). The findings are biologically interesting and suggest fundamental differences in cellular vulnerability. The statistical significance is strong and multiple testing correction was applied.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "The differential susceptibility of cell classes is explained by immunocytes having similar expression signatures across tissues (suggesting germline impairment is lethal) while endothelia have tissue-specific signatures (limiting impact of germline impairment).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C85-C86 cite cross-tissue expression data from Jones et al., 2022. However, claims C87-C88 are speculative inferences about lethality without direct evidence. While the hypothesis is plausible and logically consistent with the data, it remains untested. The authors appropriately use cautious language ('it seems that'), but this interpretation requires experimental validation to be considered supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "The differential effects of oncogenes (affecting basal cells) versus TSGs (affecting monocytes) in airway cancers suggests tissue-constructive cells are more susceptible to oncogene mutations while protective cells are more susceptible to TSG mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C93-C94 are explicitly speculative ('could suggest') based on the pattern observed in C91-C92. While claim C95 provides supporting evidence for monocyte function, the broader hypothesis about differential susceptibility remains speculative. This represents an interesting hypothesis that requires experimental validation. The authors appropriately present this as speculation rather than established fact.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C66"
+    ],
+    "result": "HPO annotations were validated against ODiseA database, showing 76% agreement (490/649 annotations), supporting the use of HPO for disease-tissue associations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C66 provides important validation of the disease-tissue annotation approach. The 76% agreement rate is substantial and supports the reliability of HPO annotations. This validation strengthens confidence in the disease-tissue associations used throughout the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C89",
+      "C90"
+    ],
+    "result": "The study demonstrated that mitochondrial diseases tend to affect muscle cells (consistent with energetic demands) and that multi-tissue diseases affect similar cell types across tissues, providing mechanistic insights.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C90 summarize key biological insights from the study. C89 is supported by the mitochondrial complex deficiency results (C26-C27), and C90 is supported by the multi-tissue disease analysis (C37-C42). These represent important mechanistic insights into disease biology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C80"
+    ],
+    "result": "Background claims establish that hereditary diseases affect 6% of the population, identifying affected cell types facilitates disease understanding, disease genes tend to be preferentially expressed in affected cell types, and approximately 30% of Mendelian diseases manifest in tissues that overexpress disease genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C12, C80 provide background context from prior literature. All claims are appropriately cited and represent established knowledge in the field. The 30% figure (C80) is particularly relevant as it contextualizes the study's success rate (29% of diseases with identified affected cell types). These claims appropriately frame the study's rationale.",
+    "result_type": "MINOR"
+  }
+]

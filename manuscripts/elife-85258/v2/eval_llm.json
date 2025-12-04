@@ -1,0 +1,286 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "\u03b2-hemoglobinopathies are common genetic diseases caused by mutations in \u03b2-globin, with clinical hallmarks including hemolytic anemia and vaso-occlusion. Current management is limited to transfusions and symptom treatment, with allogeneic stem cell transplantation being the only curative option.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C18 represent well-established background knowledge about \u03b2-hemoglobinopathies, hemoglobin composition, and current clinical management. These are supported by appropriate citations and represent accepted scientific and clinical knowledge in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "\u03b4-globin has high homology to \u03b2-globin (93% vs 73% for \u03b3-globin) and is pan-cellularly expressed at low levels in adult red blood cells. HbA2 has similar oxygen-binding capacity to HbA1, unlike HbF which binds oxygen more tightly. Both HbF and \u03b4-globin have demonstrated anti-sickling properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C30 present established scientific knowledge about globin protein homology, expression patterns, and functional properties, supported by appropriate citations. These claims provide the rationale for pursuing HbA2 upregulation as a therapeutic strategy.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C100"
+    ],
+    "result": "The \u03b2-like globin cluster on chromosome 11 contains five genes (HBB, HBD, HBG1, HBG2, HBE) regulated by the Locus Control Region. \u03b2-globin and \u03b4-globin differ at only 10 of 147 amino acids, with expression differences resulting from lower transcription rate of HBD due to mutations in transcription factor binding sites (KLF1, NF-Y, \u03b2-DRF, TFIIB).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C39 and C100 describe well-established genomic organization and regulatory mechanisms of the \u03b2-globin locus, supported by appropriate citations and Figure 1A showing sequence alignment. This provides the molecular basis for the experimental approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Previous transgenic studies showed KLF1 insertion alone can drive \u03b4-globin expression, but these studies do not reflect the complex chromosomal context of the native locus. In contrast, endogenous insertion of KLF1 alone is insufficient to drive HBD expression, highlighting the importance of studying the native genomic context.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C43 and C75-C79 establish a critical discrepancy between transgenic and endogenous editing approaches, supported by citations and experimental data (C76). This comparison is well-reasoned and highlights a key finding that multiple elements are required at the endogenous locus.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C44",
+      "C73",
+      "C74",
+      "C82"
+    ],
+    "result": "There are currently no drugs or therapeutic approaches to increase HbA2 for \u03b2-hemoglobinopathies. Current gene editing efforts focus on correcting individual HBB mutations (limited to specific mutations) or increasing fetal hemoglobin. This study represents the first genomic editing of the HBD promoter resulting in increased HbA2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44, C73-C74, and C82 establish the novelty and therapeutic gap addressed by this work. The claims about current therapeutic landscape are supported by citations, and the novelty claim (C82) appears reasonable given the literature context provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "CRISPR-Cas9 editing of HUDEP-2 cells with three different repair templates (K, DT, KDT) achieved NHEJ rates of 56-74% and HDR efficiencies of 13-27%. Despite similar HDR rates, only the KDT design with three transcription factor elements (KLF1, \u03b2-DRF, TFIIB) showed statistically significant HBD upregulation in pooled cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C47 and C101-C104 describe the experimental design and initial pooled editing results in HUDEP-2 cells, supported by NGS data (Figure 1c) and qRT-PCR (Figure 1d). The finding that multiple elements are required is a key result, though the pooled analysis has limitations addressed by clonal analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C80"
+    ],
+    "result": "ChIP-qPCR analysis showed that homozygous K and KDT clones with edited KLF1 sequence had increased KLF1 binding to the HBD promoter. However, RNA Pol II binding was observed only in the KDT clone with all three motifs, demonstrating that three transcription factor binding sites (KLF1, \u03b2-DRF, TFIIB) are necessary to recruit the transcriptional machinery.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C51 and C80 provide mechanistic insight through ChIP-qPCR data (Figure 2a). The data clearly show differential recruitment of KLF1 and RNA Pol II, supporting the conclusion that multiple elements are required. However, the RNA Pol II ChIP has the limitation of indirectly measuring TFIIB function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C7",
+      "C105"
+    ],
+    "result": "Clonal analysis of HUDEP-2 cells showed that single knock-ins (K or DT) did not increase HBD expression, while KDT clones with all three motifs showed significant increases. Wildtype clones expressed <5% HBD, heterozygous KDT clones expressed 5-19% HBD, and homozygous KDT clones expressed 20-30% HBD of total \u03b2-like globins. HBB expression remained unaffected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C56, C7, and C105 present clonal qRT-PCR data (Figure 2b and supplement) showing dose-dependent increases in HBD with KDT editing. The data are clear and support the conclusion that multiple elements are required. Statistical significance is indicated, and the lack of HBB perturbation is an important control.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C106"
+    ],
+    "result": "HPLC analysis of homozygous HUDEP-2 clones confirmed transcript-level results at the protein level. K and DT clones showed no measurable increase in HbA2, while KDT homozygous clones showed a large increase in HbA2 protein.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C58 and C106 demonstrate that increased HBD transcript translates to increased HbA2 protein by HPLC (Figure 2c). The methodology is validated by citation (C106). This is critical validation that the editing produces functional protein changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Editing of CD34+ HSPCs achieved HDR rates of 18-25% for all promoter knock-ins across four donors. In pooled edited cells, K and DT showed no significant HBD increase, while KDT showed a slight increase in HBD expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C61 present pooled editing results in primary CD34+ HSPCs (Figures 3a-b). The HDR rates are lower than in HUDEP-2 cells, and the HBD increase in pooled KDT samples is modest and not strongly significant, highlighting the need for higher HDR efficiency or clonal analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C85",
+      "C86",
+      "C107"
+    ],
+    "result": "Editing CD34+ HSPCs with Cas9 and HBD gRNA alone (no repair template) resulted in 61-78% indels and ~50% decrease in HBD expression, while HBB and HBG1/2 expression remained unaffected. This suggests that large deletions affecting neighboring genes are not occurring at high frequency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C64 and C85-C86, C107 address an important safety concern about potential large deletions affecting HBB. The qRT-PCR data (Figure 3 supplement 1) support the conclusion that editing is relatively specific to HBD, though the authors appropriately note they cannot rule out low-frequency large deletions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C8",
+      "C81",
+      "C99",
+      "C108"
+    ],
+    "result": "Clonal analysis of CD34+ derived erythroblasts showed unedited/NHEJ clones expressed <3% HBD, while heterozygous KDT knock-ins expressed 15-35% HBD and homozygous knock-ins expressed 17-46% HBD of total \u03b2-like globins. Heterozygous and homozygous populations showed similar increases. HBB transcript levels remained similar across genotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C67, C8, C81, C99, and C108 present the key therapeutic result in primary cells (Figure 3c and supplement). The data show dramatic HBD upregulation in clonal populations, with the interesting observation that heterozygous and homozygous edits produce similar effects. HBB is unaffected, which is important for safety.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C83",
+      "C98"
+    ],
+    "result": "Treatment with DNA-PKcs inhibitor AZD-7648 increased HDR efficiency from 20-24% to 47-65% in three HSPC donors. This increased HBD expression in pooled edited erythroblasts from 6-7% to 17-19% of total \u03b2-like globins, demonstrating that increasing HDR efficiency can increase HBD levels in edited HSPC pools.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C72, C83, and C98 demonstrate a strategy to improve therapeutic outcomes by enhancing HDR efficiency (Figures 3d-e). The data clearly show that AZD-7648 increases both HDR rates and resulting HBD expression. This is an important proof-of-concept for improving the approach, though further safety studies would be needed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Approximately 30% beneficial hemoglobin is estimated to be sufficient to ameliorate \u03b2-hemoglobinopathy symptoms. Recent studies using prime-editing, base-editing, and BCL11A enhancer targeting have achieved therapeutic levels of corrected HbA1 or increased HbF (10-77% of total hemoglobins) with corresponding reductions in sickling, supporting the curative effect of increasing functional hemoglobin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C97 provide important context by reviewing other therapeutic approaches and their efficacy. These are well-supported by citations and establish the therapeutic threshold and precedent for gene editing approaches. This contextualizes the 17-46% HBD achieved in this study as potentially therapeutically relevant.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C5",
+      "C6"
+    ],
+    "result": "Insertion of a KLF1 site alone is insufficient to upregulate \u03b4-globin from the endogenous locus. Instead, multiple transcription factor elements are necessary for robust upregulation of \u03b4-globin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6 represent the central mechanistic finding of the paper, supported by data from both HUDEP-2 cells and primary CD34+ HSPCs showing that only the KDT construct with three elements produces significant HBD upregulation. This is a key insight that differs from previous transgenic studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C84"
+    ],
+    "result": "When editing targets HBB, NHEJ alleles that co-occur with HDR alleles can cause reductions in overall \u03b2-globin levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C84 cites prior work (DeWitt et al., 2016) about a known issue with HBB editing. This provides context for why targeting HBD instead of HBB may have advantages, as the authors show HBB expression is unaffected by HBD editing.",
+    "result_type": "MINOR"
+  }
+]

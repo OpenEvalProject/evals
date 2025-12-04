@@ -1,0 +1,268 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C38",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C142",
+      "C143"
+    ],
+    "result": "Neuronal activity triggers mitochondrial Ca2+ uptake via MCU-1 in dendritic mitochondria of AVA interneurons. Loss or pharmacological inhibition of MCU-1 with Ru360 drastically reduces but does not completely abolish activity-dependent mitochondrial Ca2+ uptake, as measured by mitoGCaMP imaging following optogenetic stimulation. Individual mitochondria show diversity in their Ca2+ handling capabilities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C38, C48-55, C142-143 are well-supported by mitoGCaMP imaging data (Figure 1) showing Ca2+ uptake following ChRimson activation, with significant reductions in mcu-1(lf) mutants and Ru360-treated animals. The specificity of Ru360 is confirmed by lack of additive effect in mcu-1(lf) background. The incomplete abolishment is consistent with prior studies and acknowledged by the authors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Neuronal activity upregulates mitochondrial ROS (mitoROS) production in an MCU-1-dependent manner. The duration of repetitive neuronal stimulation (optogenetic or mechanical) positively correlates with mito-roGFP fluorescence ratio, indicating increased ROS. This activity-induced mitoROS increase is prevented by genetic loss or pharmacological inhibition of MCU-1. Individual mitochondria show heterogeneous responses in ROS production.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C76-85 are strongly supported by mito-roGFP ratiometric imaging data (Figures 3-4) showing time-dependent increases in ROS following both optogenetic (ChRimson) and native (mechanosensory) neuronal activation. The MCU-1 dependence is demonstrated by prevention of ROS increases in mcu-1(lf) and Ru360-treated animals. Controls without retinal show no changes, confirming specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C39",
+      "C56"
+    ],
+    "result": "Approximately 61% of dendritic mitochondria are positioned in close proximity (<1 \u03bcm) to clusters of surface-localized GLR-1, which are representative of postsynaptic sites in AVA interneurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C39, C56 are supported by co-localization imaging data (Figure 2A) showing mitochondria (mito-TdTomato) adjacent to SEP::GLR-1 puncta. However, the authors note that quantification is not shown, which slightly weakens the precision of the 61% figure. The spatial relationship is clearly demonstrated visually.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Loss or inhibition of MCU-1 leads to increased synaptic recruitment of GLR-1. In mcu-1(lf) mutants, SEP::GLR-1 puncta fluorescence is dramatically increased and the rate of SEP fluorescence recovery (FRAP) is increased more than twofold. When normalized to initial fluorescence, the %FRAP is proportional across conditions, indicating that recruitment is proportional to the amount of GLR-1 at synapses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C58-62 are supported by FRAP data (Figure 2B-C, Figure 2\u2014figure supplement 1A-B) showing increased SEP::GLR-1 fluorescence and recovery rates in mcu-1(lf) and Ru360-treated animals. The analysis distinguishes between absolute recovery rates and normalized %FRAP, providing nuanced interpretation. The proportionality conclusion is appropriately drawn from the normalized data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Loss or inhibition of MCU-1 decreases GLR-1 transport out of the cell body by approximately 50%, while transport velocity remains unchanged. This suggests that mitochondrial Ca2+ uptake differentially regulates GLR-1 transport (decreased) versus synaptic recruitment (increased), and that ATP availability remains sufficient for normal transport velocities despite reduced MCU-1 function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-70 are supported by GLR-1::GFP FRAP data (Figure 2D-E) and transport imaging (Figure 2F-G, Figure 2\u2014figure supplement 1C). The ~50% reduction in transport events is significant and consistent between mcu-1(lf) and Ru360 treatment. The unchanged velocity (C68) supports the inference about ATP sufficiency (C69), though this remains indirect evidence. The differential regulation conclusion (C70) is a reasonable synthesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Loss or inhibition of MCU-1 does not significantly alter activity-dependent cytoplasmic Ca2+ transients in dendrites, suggesting that MCU-1 does not impact GLR-1 synaptic recruitment by indirectly modulating cytoplasmic Ca2+ signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-74 are supported by cytoplasmic GCaMP6f imaging data (Figure 2H-J) showing no significant differences in Ca2+ transient amplitude or total activity between controls, mcu-1(lf), and Ru360-treated animals. This negative result is important for ruling out an indirect mechanism. However, the authors acknowledge that GCaMP6f's high affinity might occlude subtle changes (C140).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C6",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Local photoactivation of mitochondrial KillerRed (mitoKR) to artificially increase mitoROS dramatically decreases synaptic recruitment of GLR-1 (SEP::GLR-1 FRAP) and GLR-1 delivery (GLR-1::GFP FRAP). This demonstrates that mitoROS signaling negatively regulates GLR-1 delivery and retention at synaptic sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C95-100 are strongly supported by FRAP experiments following local mitoKR photoactivation (Figure 5B-E). The dramatic decrease in SEP::GLR-1 FRAP and GLR-1::GFP FRAP provides direct evidence for mitoROS-mediated downregulation. The observation that non-activated mitoKR worms show intermediate effects (C96) is appropriately attributed to inadvertent activation during imaging (C97).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C91"
+    ],
+    "result": "Local photoactivation of mitoKR increases mito-roGFP fluorescence ratio by approximately 2-fold, comparable to short-term neuronal activation, without affecting GLR-1 transport amount or velocity. This indicates that the local mitoKR activation protocol produces physiological levels of mitoROS elevation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-89, C91 are supported by mito-roGFP measurements (Figure 4F) and transport velocity data (Figure 5\u2014figure supplement 1A). The 2-fold increase is comparable to 5-min ChRimson or mechanostimulation (Figures 3C, 4A-B), supporting the physiological relevance claim. The lack of effect on transport velocity is important validation that the ROS levels are not toxic.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Global photoactivation of mitoKR reduces the number of GLR-1 transport events, consistent with previous findings that systemic ROS elevations decrease GLR-1 export from the cell body. This suggests mitochondria are a major source of ROS involved in regulating GLR-1 export.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-103 are supported by transport imaging following whole-cell mitoKR activation (Figure 5G-H). The reduction in transport events is significant and consistent with prior work (C102, citing Doser et al., 2020). The inference that mitochondria are a major ROS source (C103) is reasonable given the mitoKR specificity, though other ROS sources cannot be completely ruled out.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Whole-cell photoactivation of mitoKR for 5 minutes produces a mito-roGFP fluorescence ratio increase similar to 5 minutes of ChRimson activation or mechanostimulation, without affecting GLR-1 transport velocity. This validates the global mitoKR activation protocol as producing physiologically relevant ROS levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-94 are supported by mito-roGFP measurements (Figure 4G-H) and transport velocity data (Figure 5\u2014figure supplement 1B). The comparison across different activation methods (C93) strengthens the physiological relevance argument. The lack of effect on velocity (C94) confirms non-toxicity of the protocol.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "At postsynaptic sites, mitochondrial Ca2+ uptake and mitoROS production regulate GLR-1 recruitment through a linear signaling pathway. Artificial mitoROS production via mitoKR photoactivation occludes the effect of Ru360 (MCU-1 inhibition) on SEP::GLR-1 FRAP, demonstrating that mitoROS is necessary and sufficient for downregulating GLR-1 recruitment to synapses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-111 are supported by epistasis experiments (Figure 6B-C) showing that local mitoKR activation prevents the increased FRAP seen with Ru360 alone. The occlusion result (C110) provides strong evidence for a linear pathway where MCU-1 acts upstream of mitoROS. The necessity and sufficiency conclusion (C111) is well-justified by the combined loss-of-function and gain-of-function data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "In the cell body, mitochondrial Ca2+ uptake and mitoROS production regulate GLR-1 transport via parallel pathways. Combining Ru360 treatment with whole-cell mitoKR activation produces additive effects on reducing GLR-1 transport, indicating independent regulatory mechanisms rather than a linear pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-115 are supported by transport experiments combining Ru360 and mitoKR activation (Figure 6E-F). The additive/compounding effect contrasts with the occlusion seen for synaptic recruitment, supporting the parallel pathways interpretation (C115). This demonstrates subcellular compartment-specific regulation, a key finding of the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C40",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "Activity-dependent mitoROS production, requiring MCU-1, regulates multiple steps of GLR-1 trafficking: transport, delivery, and synaptic recruitment. The regulatory mechanisms differ by subcellular location\u2014in the soma, MCU-1 and mitoROS act via parallel pathways affecting transport, while at synapses they act via a linear Ca2+-dependent mitoROS signaling mechanism affecting recruitment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40, C118-126 represent the integrated model synthesizing all experimental findings. The differential regulation by location (C119, C124) is supported by the epistasis experiments (Figures 6B-C vs 6E-F). The proposed mechanisms are appropriately qualified as speculative where direct evidence is lacking (C121, C123, C125). The model is well-supported by the totality of the data, though some mechanistic details remain to be elucidated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C7",
+      "C42",
+      "C127",
+      "C183"
+    ],
+    "result": "Activity-induced mitoROS production may constitute a homeostatic feedback mechanism that prevents excitotoxicity and energy depletion by balancing neuronal excitability with cellular energy capacity through negative regulation of AMPAR recruitment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C7, C42, C127, C183 are speculative interpretations (as acknowledged by 'may' language) that extend beyond the direct experimental evidence. While the negative regulation of GLR-1 recruitment by mitoROS is well-demonstrated, the functional consequences for excitotoxicity prevention and energy homeostasis are not directly tested. These represent reasonable hypotheses for future investigation but lack experimental support in this study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C182"
+    ],
+    "result": "Mitochondrial activation and signaling vary based on subcellular location, with Ca2+ signaling regulating mitoROS production differentially at the soma versus synapses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-117, C182 summarize the key finding of location-dependent regulation. This is well-supported by the differential epistasis results (parallel pathways in soma, linear pathway at synapses) and represents a major conceptual advance. The inference is appropriately drawn from the experimental data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C181",
+      "C185"
+    ],
+    "result": "Postsynaptic mitochondria are functionally diverse and play a novel signaling role in regulating postsynaptic function, with mitoROS acting as a physiological signal integrating synaptic function and mitochondrial output to link neuronal connectivity and metabolic capacity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C181, C185 represent the overarching conclusions of the study. These are well-supported by the comprehensive experimental evidence demonstrating activity-dependent mitoROS production and its effects on GLR-1 trafficking. The functional diversity is shown by heterogeneous responses among individual mitochondria (C48, C78-80). The physiological signaling role is established by the use of physiological stimulation levels and validation experiments.",
+    "result_type": "MAJOR"
+  }
+]

@@ -1,0 +1,201 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "The study presents an expression atlas of chimeric RNAs throughout retinal organoid development (D0-D120), showing that chimeric RNAs are continuously expressed, with intra-chromosomal chimeric RNAs increasing significantly with development (r\u00b2=0.93, p=0.00076) while inter-chromosomal chimeric RNAs show no such trend. The majority of chimeric RNAs are formed between protein-coding genes (61.9%), with canonical AG/GT splice motifs at fusion sites, and their expression does not correlate with parental gene expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C21-C27, C73-C76 collectively provide strong evidence for the chimeric RNA atlas. The RNA-seq data spans 8 developmental stages with 2-3 biological replicates (N=22), each containing ~100 organoids. Statistical analysis (Pearson correlation) supports the developmental trend for intra-chromosomal fusions. The characterization of fusion types, biotypes, motifs, and independence from parental gene expression is well-documented in Figures 2-3.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C61"
+    ],
+    "result": "Four isoforms of CTCL were detected in retinal organoids by RNA-seq, with the in-frame isoform showing dynamic expression with peaks at D60 and D120. The in-frame CTCL was validated by qRT-PCR and Sanger sequencing in human retinas, multiple iPSC-derived retinal organoids, H9 cells, and nine human retinal samples from the GEO database, but was absent in mouse retinas.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C33, C61 are well-supported by multiple validation methods (RNA-seq, qRT-PCR, Sanger sequencing) across diverse human samples (retinal organoids from different iPSC lines, human retinas, GEO database samples) and appropriate negative controls (mouse retinas). The structural characterization and expression dynamics are documented in Figures 4-5 and Table 1.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C40",
+      "C77",
+      "C78"
+    ],
+    "result": "CTCL knockdown in retinal organoids reduced CTCL RNA levels to ~70% without affecting parental genes CTNNBIP1 and CLSTN1. This resulted in thinner outer layers with reduced CRX expression, altered progenitor marker expression (high PAX6, low OTX2), and increased RPE markers (MITF, BEST1, RPE65), indicating that CTCL loss-of-function biases progenitor cells toward RPE fate at the expense of neural retinal cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C40, C77-C78 are supported by multiple experimental approaches including qRT-PCR for knockdown efficiency, live-cell imaging for morphological changes, immunostaining for cell fate markers, and statistical analysis (t-test, p<0.0001 for outer layer thickness). The specificity of the knockdown (no effect on parental genes) and the comprehensive marker analysis (progenitor and differentiation markers) provide strong evidence for the functional role of CTCL.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C51"
+    ],
+    "result": "Bulk RNA-seq of CTCL-knockdown organoids revealed 3901 DEGs (2720 upregulated, 1181 downregulated). Upregulated genes were enriched in extracellular matrix organization, morphogenesis, and epithelial cell differentiation pathways, while downregulated genes were enriched in neurogenesis pathways. GSEA analysis showed upregulation of RPE, corneal, and conjunctival epithelial cell genes, and downregulation of all neural retinal cell type genes. The most significantly enriched pathway was epithelial-mesenchymal transition (EMT), suggesting CTCL downregulation activates EMT to alter cell differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C49, C51 are supported by comprehensive transcriptomic analysis using appropriate statistical thresholds (|Log2FC|>1, p<0.05) and multiple analytical approaches (functional enrichment, GSEA with c8 and hallmark gene sets). The convergent evidence from pathway analysis, cell-type-specific gene expression patterns, and EMT enrichment provides strong mechanistic insight. The data are well-visualized in Figure 7.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C67",
+      "C68"
+    ],
+    "result": "GSEA and DEG functional enrichment analyses did not show significant changes in Wnt signaling or vesicular trafficking pathways in CTCL-knockdown retinal organoids, despite previous reports of CTCL regulating cerebral development through Wnt signaling. The differences were mainly in EMT, extracellular matrix organization, morphogenesis, epithelial cell differentiation, and neurogenesis pathways, suggesting tissue-specific functions for CTCL.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C68 are supported by the GSEA and functional enrichment data shown in Figures 6-7. The negative result (no Wnt/vesicular trafficking changes) is appropriately documented and contrasted with prior cerebral organoid findings (C66), leading to a reasonable inference about tissue-specific functions. However, the absence of evidence is not definitive proof of absence\u2014additional targeted experiments could strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C79",
+      "C80"
+    ],
+    "result": "The authors propose that RPCs with relatively high CTCL expression differentiate into neural retina, while those with relatively low CTCL expression differentiate toward RPE.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C79-C80 represent a model inferred from the knockdown data but lack direct evidence of CTCL expression levels in individual RPCs correlating with their differentiation fate. Single-cell analysis or lineage tracing experiments would be needed to validate this dose-dependent model. The inference is reasonable but requires additional experimental support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Background claims establishing that chimeric RNAs are present in cancerous and healthy cells, have regulatory roles in stem cell differentiation and CNS development, can be translated into proteins, and increase with age in the cortex, but their presence and function in human retinal cells was previously unknown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C16-C19 are appropriately cited background knowledge statements that establish the context and knowledge gap for the study. These are supported by multiple citations to prior literature and represent accurate summaries of the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C7",
+      "C20",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Background claims about prior work on chimeric RNAs, including CTCL's role in cerebral organoids, mechanisms of chimeric RNA generation, examples of chimeric RNAs in cancer and normal development (PAX3-FOXO1, DUS4L-BCAP29, AML1-ETO), and the functions of CTCL's parental genes CTNNBIP1 and CLSTN1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C20, C52-C66 are appropriately cited statements from prior literature that provide context for the current study. These citations appear accurate based on the references provided and establish the rationale for investigating CTCL in retinal development.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C39",
+      "C50"
+    ],
+    "result": "Background claims about retinal structure and development, species differences in retinogenesis, the validity of retinal organoids as models, and the role of EMT in development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C15, C39, C50 are appropriately cited background statements that establish the biological context and justify the use of retinal organoids. These are supported by citations to relevant literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C69"
+    ],
+    "result": "The study confirmed some common chimeric RNAs and discovered many novel chimeric RNAs during retinal development, revealing for the first time a key role of chimeric RNAs in human retinal development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C5-C6, C69 are summary statements that lack specific details about which chimeric RNAs are 'common' versus 'novel' and what criteria define novelty. While the atlas itself is well-documented, the distinction between confirmed and novel chimeric RNAs is not clearly delineated in the data presented. The claim of 'first time' revealing a key role is supported for CTCL specifically but may overstate the generality across all chimeric RNAs identified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Morphological observations of retinal organoid development showing translucent neural retina structures at D30, RPE formation at D105, and photoreceptor outer segments at D120.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C72 are descriptive observations of organoid morphology supported by the images in Figure 1. These are straightforward morphological characterizations that establish the developmental progression of the organoid system.",
+    "result_type": "MINOR"
+  }
+]

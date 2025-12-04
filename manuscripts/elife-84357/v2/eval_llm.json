@@ -1,0 +1,196 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C23"
+    ],
+    "result": "Prior literature on PRC involvement in perception has yielded inconsistent experimental outcomes, with some studies showing visual impairments following PRC lesions and others showing no impairments. This inconsistency has been attributed to reliance on informal descriptive accounts of perceptual demands rather than formal quantitative methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C10 and C23 collectively establish the historical context and motivation for the study through appropriate citations to prior work. The characterization of inconsistent findings and methodological limitations in the field is well-documented and provides clear rationale for the current computational approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Deep learning CNNs provide stimulus-computable predictions of neural responses throughout the primate VVS, with early model layers predicting early visual areas (V4) and later layers predicting higher visual areas (IT), though these models lack complete biological correspondence with the primate visual system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C17 describe established properties of CNNs as models of the VVS, supported by multiple citations to computational neuroscience literature. The acknowledgment of model limitations (C16) and potential modifications (C17) demonstrates appropriate scientific caution about the modeling approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Prior work by Bonnen et al., 2021 demonstrated that human participants outperform VVS-like models and direct VVS readouts in visual discrimination tasks, while VVS-like models approximate PRC-lesioned performance, implicating PRC in visual object processing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C22 accurately summarize findings from Bonnen et al., 2021, which are critical for establishing the interpretive framework used in the current study. These claims are appropriately cited and provide the necessary context for evaluating the macaque data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "The authors validated their VVS model by showing that it predicts IT-supported performance (\u03b2=0.81, P=4\u00d710\u207b\u00b9\u2074) while human participants exceed VVS performance (\u03b2=0.24, P=1\u00d710\u207b\u00b9\u2070), using a task-optimized CNN pretrained on ImageNet with responses extracted from layer fc6.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C36 and C80-C82 describe the model validation with appropriate statistical support and methodological details. The correspondence between model and VVS performance, and the superiority of human performance, are demonstrated with significant p-values and illustrated in Figure 1b.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Non-human primate experiments provide superior control over lesion extent compared to human studies, and Eldridge et al., 2018 originally provided evidence against PRC involvement in perception using multiple stimulus sets, making characterization of cross-species discrepancies critical.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C27 establish the motivation for reanalyzing the Eldridge et al., 2018 data and the advantages of non-human primate research. These claims are appropriately contextualized and provide clear rationale for the current study's focus.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "The Eldridge et al., 2018 experiments used binary cat/dog classification with morphed stimuli designed to create 'feature ambiguity' and tested PRC-intact (n=3) and PRC-lesioned (n=3) monkeys with rewards for correct category identification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C41 accurately describe the experimental design from Eldridge et al., 2018. These methodological details are essential for understanding the reanalysis and are appropriately cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C43",
+      "C47",
+      "C48",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "VVS models predict both PRC-intact and PRC-lesioned monkey performance in the Eldridge et al., 2018 experiments (R\u00b2=0.98-0.99, P<10\u207b\u00b9\u2079), suggesting that a linear readout of the VVS is sufficient for these tasks and no PRC involvement is necessary for neurotypical performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C48 and C63-C65 present the core finding that VVS models match both lesioned and intact performance with strong statistical support (R\u00b2>0.98, highly significant p-values). This is illustrated in Figures 2 and 3 and represents a key empirical result of the reanalysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C28",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "To evaluate PRC involvement in perception, participants must exhibit supra-VVS performance. Since this was not observed in Eldridge et al., 2018 (as VVS models matched intact performance), these experiments are not diagnostic of PRC involvement and do not provide evidence against PRC's role in perception.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28 and C66-C69 present the study's main interpretive conclusion, which logically follows from the empirical findings and the framework established by Bonnen et al., 2021. The reasoning is sound: if VVS models match intact performance, the task does not require beyond-VVS processing, making it non-diagnostic for PRC function. This is illustrated in Figure 1c.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C49",
+      "C54"
+    ],
+    "result": "The morphed stimuli in Eldridge et al., 2018 contain high colinearity (adjacent morphs are highly similar), but the correspondence between VVS models and primate behavior persists even when controlling for this colinearity through conservative train-test splits that exclude adjacent morphs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49 and C54 address a potential confound in the analysis. The authors demonstrate that while pixel-level features can predict performance under naive train-test splits (Figure 2\u2014supplement 2), VVS models still predict behavior under conservative splits (Figure 2\u2014supplement 4), validating that the model correspondence is not merely due to stimulus colinearity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C61",
+      "C74"
+    ],
+    "result": "While image-level choice behaviors are reliable within and between subjects (median R\u00b2=0.86-0.94), VVS models do not capture trial-by-trial choice behaviors at this resolution, consistent with prior reports that these models approximate aggregate but not individual-image responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C74 and C61 acknowledge important limitations of the modeling approach. The split-half reliability analysis (Figure 3a) demonstrates reliable image-level behavior, but the model fails to match this granularity (Figure 3c). This limitation is appropriately acknowledged and contextualized with citations to prior work (Rajalingham et al., 2018).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C62"
+    ],
+    "result": "The original authors of Eldridge et al., 2018 concluded that perceptual processing is not dependent on PRC based on the absence of PRC-related deficits across four experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C62 accurately represents the original interpretation of Eldridge et al., 2018, which the current study challenges. This is appropriately cited and provides context for the reinterpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Computational VVS proxies provide an unprecedented opportunity to isolate PRC-dependent behaviors from VVS-supported behaviors by creating a unified, stimulus-computable metric space that enables formal evaluation of experimental outcomes across labs, studies, and species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C79 present the broader implications and value of the computational modeling approach. These claims logically follow from the demonstrated utility of the method in resolving apparent cross-species discrepancies and are appropriately framed as conclusions about methodological contributions to the field.",
+    "result_type": "MAJOR"
+  }
+]

@@ -1,0 +1,314 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "C. elegans fed CS180 bacteria exhibit earlier oogenesis onset, faster fertilization rates, fewer total progeny, and fewer sperm compared to worms fed OP50, despite similar developmental rates through larval stages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C7 provide converging evidence from multiple experimental readouts (developmental staging, progeny counts, fertilization rates, sperm counts, and two independent oogenesis markers) showing that CS180 food source accelerates oogenesis and fertilization while reducing total progeny. The data are internally consistent and supported by appropriate statistical analyses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "The CS180-derived cues that promote early oogenesis and faster fertilization are specific to CS180 (not shared by other K-12 strains like HT115), are not due to LPS structural differences, are likely not small metabolites (based on filtration), and are not general pathogen/stress responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C17 systematically rule out several potential mechanisms through appropriate controls (CS2429 with truncated LPS, HT115 K-12 strain, filtration experiments, pathogenic S. marcescens). The filtration experiment (C14-C15) provides strong evidence against small molecule cues, though the exact nature of the cue remains unidentified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C18",
+      "C19"
+    ],
+    "result": "Food-switch experiments reveal distinct critical periods for food-type effects: oogenesis onset can only be modulated before late L3, while fertilization rate is modulated after early L4.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C19 are supported by systematic food-switch experiments at different developmental stages (Figure 3), demonstrating temporal specificity of food effects. The results are consistent with known developmental biology of C. elegans germ cell fate determination and align with cited prior work (Barton and Kimble, 1990).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "The ASJ sensory neurons specifically modulate food type-dependent differences in total progeny, as demonstrated by ablation experiments showing loss of OP50 vs CS180 differences, while other sensory neurons (osm-3, odr-1) also affect progeny but AWA does not.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C24 use a systematic approach testing multiple sensory mutants and ablations to identify ASJ as the key neuron. The specificity is demonstrated by comparing multiple neurons (ASI, ASK, AWA vs ASJ), with appropriate controls. The convergence of osm-3 and odr-1 mutant phenotypes pointing to ASJ strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Insulin signaling through DAF-2 receptor and specifically the insulin-like peptide INS-6 (but not INS-1 or DAF-28) mediates food type-dependent differences in total progeny, with INS-6 acting through a DAF-16-dependent mechanism for this phenotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C28 systematically test insulin signaling components using genetic mutants. The specificity of INS-6 among the three ILPs tested is clearly demonstrated, and epistasis analysis with daf-16 establishes the genetic pathway. Multiple alleles of daf-2 strengthen the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "ASJ neurons promote early oogenesis onset in response to CS180 food through insulin signaling, with both osm-3 mutants and ASJ-ablated animals failing to show early oogenesis, and daf-2 (but not daf-16) mutants losing the food-type effect. Among ILPs tested, only ins-6 is required for food type-dependent early oogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C35 integrate neuronal and molecular mechanisms using two independent oogenesis markers (lin-41::GFP and oma-1::GFP), multiple genetic mutants, and ablation experiments. The convergence of ASJ ablation, osm-3 mutation, daf-2 mutation, and ins-6 deletion all showing loss of early oogenesis on CS180 provides strong support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C36",
+      "C37"
+    ],
+    "result": "INS-6 modulates early oogenesis independent of DAF-16, as demonstrated by epistasis analysis showing that daf-16 deletion cannot rescue the ins-6 mutant oogenesis phenotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C37 are supported by genetic epistasis experiments (Figure 5F) showing that the ins-6 oogenesis phenotype persists in daf-16; ins-6 double mutants. This is a surprising finding that distinguishes the mechanism of oogenesis onset from total progeny regulation and is appropriately presented as a novel observation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "INS-6 acts specifically from ASJ neurons (not ASI) to promote early oogenesis, as demonstrated by food-dependent ins-6 promoter activity in ASJ, cell-specific rescue experiments, and cell-specific deletion using Cre-lox.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C41 use multiple complementary approaches (transcriptional reporter, cell-specific rescue, cell-specific deletion) to establish both sufficiency and necessity of ASJ-expressed INS-6. The convergence of these three independent experimental strategies provides strong support for the cell-autonomous function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "AWA olfactory neurons specifically regulate food type-dependent fertilization rates (independent of ODR-10 receptor), while ASJ neurons do not affect fertilization. This demonstrates that distinct sensory neurons control different aspects of oocyte physiology: ASJ for oogenesis onset versus AWA for fertilization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C50 systematically test multiple sensory neurons (ADF, ASH, ASI, ASK, ASJ, AWB, AWC, AWA) and identify AWA as specifically required for food-type differences in fertilization but not oogenesis. The double dissociation (ASJ affects oogenesis but not fertilization; AWA affects fertilization but not oogenesis) is particularly compelling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "The DAF-2 insulin receptor regulates overall fertilization rates independent of food type (as shown by strong daf-2(e1370) allele), which differs mechanistically from AWA-dependent food type-specific regulation of fertilization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C54 demonstrate that while daf-2(e1370) reduces overall fertilization, food-type differences persist, indicating DAF-2 acts through a food-independent mechanism. This distinguishes insulin receptor signaling from AWA-mediated food-dependent regulation. The use of multiple daf-2 alleles with different strengths strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Multiple ILPs (not including INS-6, DAF-28, or INS-1 individually) act through DAF-2 receptor to regulate fertilization, and this set of ILPs is distinct from those regulating oogenesis onset.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C57 are supported by systematic testing of individual and combined ILP deletions showing no single ILP or tested combination recapitulates the daf-2 fertilization phenotype. This implies functional redundancy among multiple ILPs for fertilization, contrasting with the specific role of INS-6 in oogenesis onset.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C63",
+      "C95"
+    ],
+    "result": "Optimal reproduction in C. elegans requires integration of diverse food-derived inputs through multiple neuronal signals (ASJ and AWA) acting on distinct aspects of germline development (oogenesis onset vs. fertilization) via both insulin-dependent and insulin-independent mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C59, C63, and C95 represent the overarching synthesis of all experimental findings. The conclusion is well-supported by the systematic demonstration of: (1) distinct neurons for different processes, (2) distinct ILPs for different processes, (3) distinct critical periods, and (4) both insulin-dependent (ASJ-INS-6-oogenesis) and insulin-independent (AWA-fertilization) pathways.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C64",
+      "C65"
+    ],
+    "result": "ASJ promotes early oogenesis through specific food cues (not general stress), AWA promotes fertilization, and multiple sensory neurons likely contribute to fertilization for sensitive environmental monitoring.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C62 and C64 are well-supported by experimental data. However, C65 is speculative reasoning about adaptive value rather than experimental evidence. The core experimental findings about ASJ and AWA are solid, but the speculation about 'more sensitive and efficient physiology' should be noted as interpretive.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C66",
+      "C67"
+    ],
+    "result": "ASJ may regulate oogenesis onset by controlling the mitosis-to-meiosis switch in the germline, consistent with the critical period (before late L3) coinciding with germ cell entry into meiosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C67 is well-supported by food-switch experiments and aligns with established developmental timing. Claim C66 is mechanistic speculation based on ASJ affecting both proliferation (from prior work) and oogenesis (current work), but the direct link to mitosis-meiosis switch is not experimentally demonstrated in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Specific ILPs regulate discrete stages of oocyte physiology: INS-6 from ASJ modulates oogenesis onset but not fertilization, while DAF-2 regulates overall fertilization independent of food through other ILPs. INS-6 can act independent of DAF-16.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C73 synthesize the ILP-specific findings with strong experimental support. The stage-specific roles of different ILPs (onset vs. maturation/fertilization) and the DAF-16 independence of INS-6 are well-documented through systematic genetic analysis. The inference about different ILPs for different stages (C72) is reasonable given that fertilization depends on maturation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Distinct insulin-like signaling mechanisms (DAF-16-independent and DAF-16-dependent) may be necessary for optimal oogenesis and fertilization, potentially explaining phenotypic variability and allowing integration of diverse environmental cues. This may extend to other animals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C74-C77 are largely speculative (as indicated by 'might' and 'possible'). While C74 is a reasonable hypothesis based on the DAF-16 independence of INS-6, claims C75-C77 extend beyond the data. The variability in daf-16 mutants (C75) is observed but not systematically characterized. Claims C76-C77 about broader implications are speculative and would require additional experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C78"
+    ],
+    "result": "Successful fertilization requires integration of multiple environmental inputs through ILPs acting on the germline from neuronal and potentially non-neuronal cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C78 is a reasonable synthesis of the findings showing multiple ILPs, multiple neurons, and multiple environmental inputs affecting fertilization. The caveat about 'potentially non-neuronal cells' is appropriately cautious since the study focused on neurons but doesn't exclude other sources.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Background knowledge and prior work establishing: C. elegans reproductive biology, sensory neuron functions, insulin signaling components, bacterial strain characteristics, and the role of insulin signaling in reproduction across species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C9, C79-C90, C96-C103 represent established knowledge from prior literature, appropriately cited. These provide essential context for interpreting the current findings. C90 identifies a knowledge gap that the current study addresses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Summary of main findings: ASJ neurons modulate oogenesis onset through INS-6; AWA neurons regulate food type-dependent fertilization partly in parallel to insulin receptor signaling; DAF-2 regulates fertilization independently of food type through other ILPs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C94 are accurate summaries of the experimental findings presented in the study. These represent the core conclusions that are well-supported by the systematic experimental approaches described in the other claim groups.",
+    "result_type": "MAJOR"
+  }
+]

@@ -1,0 +1,1385 @@
+{
+  "submission": {
+    "id": "05071ebf-ed28-440b-91bb-3abbb4ca9f80",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-04T02:28:37.867390Z",
+    "updated_at": "2025-12-04T02:28:37.867390Z"
+  },
+  "content": [
+    {
+      "id": "f2c83d8f-73cd-4e30-a4ea-812573e34f98",
+      "submission_id": "05071ebf-ed28-440b-91bb-3abbb4ca9f80",
+      "content_type": "manuscript",
+      "content_text": "# Determining growth rates from bright-field images of budding cells through identifying overlaps\n\n## Authors\n\n- Julian MJ Pietsch<sup>1</sup> ([ORCID: 0000-0002-9992-2384](https://orcid.org/0000-0002-9992-2384))\n- Al\u00e1n F Mu\u00f1oz<sup>1</sup>\n- Diane-Yayra A Adjavon<sup>1</sup>\n- Iseabail Farquhar<sup>1</sup>\n- Ivan BN Clark<sup>1</sup>\n- Peter S Swain<sup>1</sup> ([ORCID: 0000-0001-7489-8587](https://orcid.org/0000-0001-7489-8587)) \u2020\n\n### Affiliations\n\n1. Centre for Engineering Biology and School of Biological Sciences, University of Edinburgh Edinburgh United Kingdom ([ROR:01nrxwf90](https://ror.org/01nrxwf90))\n\n\u2020 Corresponding author\n\n## Abstract\n\nMuch of biochemical regulation ultimately controls growth rate, particularly in microbes. Although time-lapse microscopy visualises cells, determining their growth rates is challenging, particularly for those that divide asymmetrically, like Saccharomyces cerevisiae, because cells often overlap in images. Here, we present the Birth Annotator for Budding Yeast (BABY), an algorithm to determine single-cell growth rates from label-free images. Using a convolutional neural network, BABY resolves overlaps through separating cells by size and assigns buds to mothers by identifying bud necks. BABY uses machine learning to track cells and determine lineages and estimates growth rates as the rates of change of volumes. Using BABY and a microfluidic device, we show that bud growth is likely first sizer- then timer-controlled, that the nuclear concentration of Sfp1, a regulator of ribosome biogenesis, varies before the growth rate does, and that growth rate can be used for real-time control. By estimating single-cell growth rates and so fitness, BABY should generate much biological insight.\n\n## Introduction\n\nFor microbes, growth rate correlates strongly with fitness (Orr, 2009). Cells increase growth rates through balancing their synthesis of ribosomes with their intake of nutrients (Broach, 2012; Levy and Barkai, 2009; Scott et al., 2014) and target a particular size through coordinating growth with division (Johnston et al., 1977; Jorgensen et al., 2004; Di Talia et al., 2007; Turner et al., 2012). Metazoans, too, not only coordinate growth over time but also in space to both size and position cells correctly (Ginzberg et al., 2015).\n\nTo understand how organisms regulate growth rate, studying single cells is often most informative (Murugan et al., 2021). Time-lapse microscopy, particularly with microfluidic technology to control the extracellular environment (Locke and Elowitz, 2009; Bennett and Hasty, 2009), has been pivotal, allowing, for example, studies of the cell-cycle machinery (Di Talia et al., 2007), of the control of cell size (Ferrezuelo et al., 2012; Schmoller et al., 2015; Soifer et al., 2016), of antibiotic effects (Coates et al., 2018; El Meouche and Dunlop, 2018), of the response to stress (Levy et al., 2012; Granados et al., 2017; Granados et al., 2018), of feedback between growth and metabolism (Kiviet et al., 2014), and of ageing (Chen et al., 2017).\n\nFor cells that bud, like Saccharomyces cerevisiae, estimating an instantaneous growth rate for individual cells is challenging. S. cerevisiae grows by forming a bud that increases in size while the volume of the rest of the cell remains relatively unchanged. Although single-cell growth rate is typically reported as the rate of change of volume (Ferrezuelo et al., 2012; Soifer et al., 2016; Chandler-Brown et al., 2017; Leitao and Kellogg, 2017; Garmendia-Torres et al., 2018; Litsios et al., 2019), which approximates a cell\u2019s increase in mass, these estimates rely on solving multiple computational challenges: accurately determining the outlines of cells \u2013 particularly buds \u2013 in images, extrapolating these outlines to volumes, tracking cells over time, assigning buds to the appropriate mother cells, and identifying budding events. Growth rates for budding yeast are therefore often only reported for isolated cells using low-throughput and semi-automated methods (Ferrezuelo et al., 2012; Litsios et al., 2019). In contrast, for rod-shaped cells that divide symmetrically, like Escherichia coli, the growth rate can be found more simply, as the rate of change of a cell\u2019s length (Kiviet et al., 2014).\n\nA particular difficulty is identifying cell boundaries because neighbouring cells in images often overlap: like other microbes, yeast grows in colonies. Although samples for microscopy are often prepared to encourage cells to grow in monolayers (Locke and Elowitz, 2009), growth can be more complex because cells inevitably have different sizes. We observe substantial and frequent overlaps between buds and neighbouring cells in ALCATRAS microfluidic devices (Crane et al., 2014). Inspecting images obtained by others, we believe overlap is a widespread, if undeclared, problem: it occurs during growth in the commercial CellASIC devices (Wood and Doncic, 2019; Dietler et al., 2020), against an agar substrate (Falconnet et al., 2011; Soifer et al., 2016), in a microfluidic dissection platform (Litsios et al., 2019), and in microfluidic devices requiring cells to be attached to the cover slip (Hansen et al., 2015).\n\nYet only a few algorithms allow for overlaps (Bakker et al., 2018; Lu et al., 2019) despite software to automatically identify and track cells in bright-field and phase-contrast images being well established (Gordon et al., 2007; Falconnet et al., 2011; Versari et al., 2017; Bakker et al., 2018; Wood and Doncic, 2019) and enhanced with deep learning (Falk et al., 2019; Lu et al., 2019; Dietler et al., 2020; Stringer et al., 2021). For example, the convolutional neural network U-net (Ronneberger et al., 2015a), a workhorse in biomedical image processing, identifies which pixels in an image are likely from cells, but researchers must find individual cells from these predictions using additional techniques. Even then different instances of cells typically cannot overlap (Falk et al., 2019; Dietler et al., 2020). Other deep-learning approaches, like Mask-RCNN (He et al., 2017) and extended U-nets like StarDist (Schmidt et al., 2018), can identify overlapping instances in principle, but typically do not, either by implementation (Schmidt et al., 2018) or by the labelling of the training data (Lu et al., 2019). Furthermore, assigning lineages and births is often performed manually (Ferrezuelo et al., 2012; Chandler-Brown et al., 2017) or through fluorescent markers (Soifer et al., 2016; Garmendia-Torres et al., 2018; Cuny et al., 2022), but such markers require an imaging channel.\n\nHere, we describe the Birth Annotator for Budding Yeast (BABY), a complete pipeline to determine single-cell growth rates from label-free images of budding yeast. In developing BABY, we solved multiple image-processing challenges generated by cells dividing asymmetrically. BABY resolves instances of overlapping cells \u2013 buds, particularly small ones, usually overlap with their mothers or neighbours \u2013 by extending the U-net architecture with custom training targets and then applying additional image processing. It tracks cells between time points with a machine-learning algorithm, which is able to resolve any large movements of cells from one image to the next, and assigns buds to their mothers, informed by the U-net. These innovations improve performance. BABY produces high-fidelity time series of the volumes of both mother cells and buds and so the instantaneous growth rates of single cells.\n\nUsing BABY, we see a peak in growth rate during the S/G2/M phase of the cell cycle and show that this peak indicates where the bud\u2019s growth transitions from being sizer- to timer-controlled. Studying Sfp1, an activator of ribosome synthesis, we observe that fluctuations in this regulator\u2019s nuclear concentration correlate with but precede those in growth rate. Finally, we demonstrate that BABY enables real-time control, running an experiment where changes in the extracellular medium are triggered automatically when the growth of the imaged cells crosses a pre-determined threshold.\n\n## Results\n\n### Segmenting overlapping cells using a multi-target convolutional neural network\n\nTo estimate single-cell growth rates from time-lapse microscopy images, correctly identifying cells is essential. Poorly defined outlines, missed time points, and mistakenly joined cells all degrade accuracy.\n\nSegmenting asymmetrically dividing cells, such as budding yeast, is challenging. The differing sizes of the mothers and buds makes each appear and behave distinctly, yet identifying buds is crucial because they have the fastest growth rates (Ferrezuelo et al., 2012; Figure 1\u2014figure supplement 1). Even when constrained in a microfluidic device, buds imaged in a single Z section often appear to overlap with their mother and neighbouring cells (Figure 1a and b). If an algorithm is able to separate the cells, the area of either the bud or the neighbouring cells is often underestimated, and the bud may even be missed entirely. Buds also move more in the Z-axis relative to mother cells, changing how they appear in bright-field images (Figure 1c). Depending on the focal plane, a bud may be difficult to detect by eye. Nevertheless, our BABY algorithm maintains high reliability (Figure 1e).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/79812/elife-79812-fig1-v2.jpg)\n\n**Figure 1.:** (a) A schematic of a budding cell constrained in a microfluidic device showing how a mother cell can produce a bud beneath the previous daughter. The microscope, denoted by the eye, sees a projection of these cells. (b) A time series of bright-field images of budding yeast trapped in an ALCATRAS microfluidic device (Crane et al., 2014), in which a growing bud (white arrowheads) overlaps with both its sister and mother. On the duplicated images below, we show outlines produced by BABY. (c) Bright-field images of growing buds (white arrowheads) taken at different focal planes demonstrate how the appearance of small buds may change. (d) Cells can move substantially from image to image. Here medium flowing through the microfluidic device causes a cell to wash out between time points and the remaining cells to pivot. We indicate the correct lineage assignment by white arrowheads and the correct tracking by the numbers within the BABY outlines. (e) We show a time series of a mother (purple) and its buds and daughters for a switch from 2% to 0.1% glucose using volumes and growth rates estimated by BABY. Bud growth rates are truncated to the predicted time of cytokinesis (triangles). Shaded areas are twice the standard deviation of the fitted Gaussian process.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/79812/elife-79812-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** We plot growth rates against cell size for nine sets of manually annotated time series of mother-bud pairs randomly selected from microfluidics experiments in four different growth conditions. Growth rates are estimated either as (a) the central difference in mask area or (b) using a Gaussian process fit of the conical volume estimated from the mask. For each pair, we annotated the mother and bud from when the bud appears to when the mother next buds. The points are growth rate and size estimates for each annotated time point, coloured using a kernel density estimate.\n\nLike others, we use a U-net, a convolutional neural network (CNN) with an architecture that aims to balance accuracy with simplicity (Ronneberger et al., 2015a), and our main innovation is in the choice of training targets. We improve performance further by using multiple Z-sections (Figure 2a, Figure 3\u2014figure supplement 1), although BABY can predict overlapping outlines from a single 2D image, and we train on single images.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/79812/elife-79812-fig2-v2.jpg)\n\n**Figure 2.:** (a) Either single or multiple, we typically use five, bright-field Z-sections are input into a multi-target U-net CNN. (b) The curated training data comprises multiple outlines that we categorise by size to reduce overlaps between cells within each category. (c) We train the CNN to predict a morphological erosion of the target cell images, which act as seeds for segmenting instances of cells. (d) We use edge targets from the CNN to refine each cell\u2019s outline, parameterised as a radial spline. (e) We use a bud-neck target from the CNN and metrics characterising the cells\u2019 morphologies to estimate the probability that a pair of cells is a mother and bud via a machine-learning classifier. (f) Another classifier uses the same morphological metrics to estimate the probability that an outline in the previous time point matches the current one.\n\nInspecting cells, we noted that how much and how often they overlap depends on their size (Appendix 1\u2014figure 2). Most overlaps occur between mid-sized cells and buds with sizes in the range expected for fast growth (Figure 1\u2014figure supplement 1a). We therefore divided our training data into three categories based on cell size. From each annotated image \u2013 a single Z section, we generated up to three new training images: one showing any cells in the annotated image in our small category, one showing any in the medium category, and one for any large cells. We decreased any remaining overlaps in these training images by applying a morphological erosion (Figure 2b; Appendix 1\u2014figures 1 and 2), shrinking the cells by removing pixels from their boundaries. Although this transformation does reduce the number of overlapping cells, it may undermine accuracy when we segment the cells. We therefore include the boundary pixels of all the cells in the original annotated image (Figure 2d) as a training target. To complement this size-based approach, we add another training target: the overlaps between any pair of cells irrespective of their size in the annotated image.\n\nA final target is the \u2018bud neck\u2019 (Figure 2e), which helps to identify which bud belongs to which cell. In bright-field images, cytokinesis is sometimes visible as a darkening of the bud neck, indicating that these images contain information on cytokinesis that the U-net can potentially learn. We manually created the training data to avoid ambiguity, annotating bright-field images and then generating binary ones showing only bud necks.\n\nThe targets of the U-net therefore comprise the cell interiors and boundaries, separated by size, all overlaps between cells, and the bud necks. Using a four-layer U-net, we achieved high accuracy for predicting the cell interiors early in training and with around 600 training images (1,813 annotated cells in total; Figure 2c & Appendix 1\u2014figure 3c). The performance on bud necks is lower (Appendix 1\u2014figure 3e), but sufficient because we supplement this information with morphological features when assigning buds. Unlike others (Lugagne et al., 2018; Bakker et al., 2018), we do not need to explicitly ignore objects in the image because the network learns to disregard both the traps in ALCATRAS devices and any debris.\n\nTo determine smooth cell boundaries, we apply additional image processing to the U-net\u2019s outputs. First, we reverse the morphological erosion that we applied to the training data (Appendix 1\u2014figure 4), adding pixels to the U-net\u2019s predicted cell interiors. Second, and like the StarDist (Schmidt et al., 2018) and DISCO algorithms (Bakker et al., 2018), we parameterise the cell boundaries using a radial representation because we expect yeast cells to appear elliptical \u2013 although we can describe any star-convex shape. We fit radial splines with 4\u20138 rays depending on the cell\u2019s size to a re-weighted version of its boundary pixels predicted by the U-net (Appendix 1\u2014figure 5). On test images, the resulting cell boundaries improve accuracy compared to using the U-net\u2019s predictions directly (Figure 3\u2014figure supplement 1).\n\nOther features further improve performance. We developed a graphical user interface (GUI) to label and annotate overlapping cells (Appendix 4\u2014figure 1). With the GUI, we create a 2D binary image of each cell\u2019s outline by using all Z sections together to annotate the outline from the Z section where the cell is most in focus. We also wrote scripts to optimise BABY\u2019s hyper-parameters during training (Methods).\n\nWe find that BABY outperforms alternatives (Figure 3a), even when we retrain these alternatives with the BABY training data. For larger cell sizes, BABY performs comparably with two algorithms based on deep learning: Cellpose (Stringer et al., 2021; Pachitariu and Stringer, 2022), a generalist algorithm, and YeaZ (Dietler et al., 2020), an algorithm optimised for yeast. For smaller cell sizes, BABY performs better, identifying buds overlapping with mother cells that both Cellpose and YeaZ miss (Figure 3b). To assess its generality, we turned to time-lapse images of yeast microcolonies, training a BABY model on only 6% of the annotated microcolony training data provided by YeaZ and evaluating its performance on the remaining images. BABY performs competitively (Figure 3\u2014figure supplement 2), and even detects buds that were neither annotated in the ground truth nor detected by Cellpose and YeaZ (Figure 3\u2014figure supplement 3).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/79812/elife-79812-fig3-v2.jpg)\n\n**Figure 3.:** (a) Comparing the intersection-over-union (IoU) score (Methods) between manually curated single cells and those predicted by the BABY, Cellpose, YeaZ, and DISCO algorithms shows that BABY performs best, particularly with five Z sections as input (5Z). We show the performance of the generalist YeaZ model and the Cellpose and YeaZ algorithms retrained on the BABY training data. (b) BABY performs particularly well for smaller cell sizes. Inset: counts of curated cells missed by each algorithm. (c) BABY finds a higher fraction of complete tracks than either YeaZ or Cellpose, an algorithm only for segmentation and trained on BABY data, combined with btrack (Ulicna et al., 2021), a tracking algorithm. We show the results for each Z section separately because BABY is the only algorithm that can use more than one. (d) We show BABY\u2019s precision and recall for correctly assigning mother and bud tracks in the tracking evaluation data set as a function of the threshold for defining matching tracks. Performance is best for the central trapped cell. We are unaware of any other algorithms performing mother-bud assignment directly from bright-field images with which to compare. (e) By accurately detecting and estimating buds with small volumes, BABY also shows the smallest Root Mean Squared Error (RMSE) when comparing predicted bud growth rates with those derived from a manually curated set of time series of randomly selected mother-bud pairs from four different growth conditions. To highlight the importance of segmentation quality for estimating growth rates, we matched outlines to ground truth ignoring any tracking errors. We used 104 bootstraps of 90% of the ground truth data (209 estimates of growth rate from 9 buds) to find the distributions of RMSE.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/79812/elife-79812-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (a\u2013c) We evaluated the intersection over union (IoU) with curated masks for the predictions of selected stages of the BABY algorithm: masks predicted directly from CNN output with appropriate morphological dilation (no spline), preliminary fits of these masks with an equal-angle radial spline (initial spline), or optimised fits of the radial spline to the edge output of the CNN (optimised spline). (d\u2013f) With either one, three, or five bright-field Z sections as input, we found the IoU with curated masks of the full BABY algorithm\u2019s predictions. (a, d) The distributions of the IoU with curated outline area. (b, e) The distributions of curated outline areas for missed predictions, with an IoU of zero. (c, f) Violin plots summarising the IoU distributions. The black horizontal line is the median.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/79812/elife-79812-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** We show the intersection over union (IoU) with manually annotated masks from the YeaZ bright-field training data Dietler et al., 2020 for predictions from BABY (single Z section), Cellpose, and YeaZ. All were trained on both the BABY training data and an additional three images from the YeaZ training data. We show too predictions from the default YeaZ model trained on all evaluation data, labelled as YeaZ (general), and from a generalist Cellpose model, labelled cellpose (general).\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/79812/elife-79812-fig3-figsupp3-v2.jpg)\n\n**Figure 3\u2014figure supplement 3.:** We show examples of buds detected by BABY (bright magenta overlay) in cropped bright-field images of a microcolony in the YeaZ training data [Dietler et al., 2020]. Although reported as false positives and off the focal plane, we disagree here with the ground truth and would annotate these objects as buds. YeaZ, with its own standard bright-field model that includes these images in its training data, annotated one of the buds; Cellpose trained on the same data as BABY misses all.\n\n![Figure 3\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/79812/elife-79812-fig3-figsupp4-v2.jpg)\n\n**Figure 3\u2014figure supplement 4.:** We compare the distribution of single-cell track IoUs between manually curated and predicted tracks \u2013 the number of time points where the masks match relative to the total number of time points in both tracks. We focus on performance for a single Z section (the focal plane and most central one), comparing the single-Z BABY algorithm, YeaZ [Dietler et al., 2020], and tracking by the btrack algorithm [Ulicna et al., 2021] on outlines segmented by Cellpose [Pachitariu and Stringer, 2022]. Unassigned ground-truth tracks have an IoU of zero. They typically arise when two ground-truth tracks appear as a single predicted track. We exclude unassigned predicted tracks.\n\n![Figure 3\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/79812/elife-79812-fig3-figsupp5-v2.jpg)\n\n**Figure 3\u2014figure supplement 5.:** We show mean Multiple Object Tracking Accuracies (MOTA) [Bernardin et al., 2006] for each Z section of our test data for BABY, the btrack algorithm [Ulicna et al., 2021] on outlines segmented with Cellpose [Pachitariu and Stringer, 2022] \u2013 the top performer, and YeaZ [Dietler et al., 2020]. We include too the five-Z section BABY algorithm (5Z). Error bars are standard error of the mean ($n=10$).\n\n![Figure 3\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/79812/elife-79812-fig3-figsupp6-v2.jpg)\n\n**Figure 3\u2014figure supplement 6.:** (a) Using MYO1-GFP as a marker, we split individual cell cycles of mother cells into G1 and S/G2/M phases. We show bright-field and fluorescence images for a representative cell during one cell cycle. Myo1\u2019s fluorescence at the bud neck abruptly disappears at cytokinesis. The cell\u2019s growth rate (purple) and that of its bud (blue) are shown with a measure of Myo1\u2019s localisation (orange). We estimate the point of cytokinesis from the drop in Myo1 fluorescence (orange dashed line). (b) Horizontal lines with shading indicating growth rates show the time series for 388 buds or daughters of 318 cells growing in 2% palatinose. We align cells by the drop in Myo1\u2019s fluorescence and plot the corresponding median growth rates of mother and bud below, with the interquartile range shaded. Red points in the time series mark the time of cytokinesis predicted from the bud\u2019s growth rate, and we show their distribution above. (c) The time series for 850 buds or daughters of 520 cells growing in 2% glucose after a switch from palatinose (Pal. \u2192 Gluc.). (d) The fraction of cytokinesis events whose timing was correctly identified by our method of predicting cytokinesis directly from growth rate. We find the ground-truth values using Myo1-GFP ($n=550$ for 2% palatinose; $n=1093$ for 2% glucose after switching from palatinose). (e) Accuracy of our method for ground-truth data estimated using a tagged nuclear marker (Nhp6A-mCherry), which reports the start of anaphase ($n=984$ for 2% glucose; $n=773$ for 2% raffinose; $n=240$ for 2% pyruvate; $n=363$ for 2% palatinose; and $n=813$ for 2% glucose after switching from palatinose). We assume a fixed 20-min delay from the onset of anaphase to cytokinesis [Leitao and Kellogg, 2017].\n\n### Using machine learning to track lineages robustly\n\nTo determine growth rates, we should estimate both the mother\u2019s and the bud\u2019s volumes because most growth occurs in the bud (Hartwell and Unger, 1977; Ferrezuelo et al., 2012). We should therefore track cells from one time point to the next and correctly identify, track, and assign buds to their mothers (Appendix 2\u2014figure 1).\n\nThis last task of assigning a bud to its mother is challenging (Figure 1d). Buds frequently first appear surrounded by cells, displacing their neighbours as they grow (Figure 1b), obfuscating which is the mother. Both mother and bud can react to the flow of medium: buds often pivot around their mother, with other cells sometimes moving too (Figure 1d). If tracked incorrectly, a pivoting bud may be misidentified as a new one.\n\nBy combining the U-net\u2019s predicted bud-necks with information on the shape of the cells, we accurately assign buds. Our approach is first to identify cells in an image that are likely buds and then to assign their mothers. We use a standard classification algorithm to estimate the probability that each pair of cells in an image are a mother and bud (Appendix 2\u2014figure 4). This classifier uses as inputs both the predicted bud-necks and the cells\u2019 morphological characteristics, which we extract from the segmented image \u2013 one with every cell identified. For each bud, we assign its mother using information from both the current image and the past: the mother is the cell with the highest accumulated probability of pairing with the bud over all previous images showing both cells (Appendix 2).\n\nWe use another classifier-based approach for tracking. The classifier estimates the probability that each pair of cells in two segmented images at different time points, with one cell in the first image and the other in the second, are the same cell (Figure 2f). To be able to track cells that pivot (Figure 1d), we train two classifiers: the first using only the cells\u2019 morphological characteristics and the second using these characteristics augmented with the distance between the cells, a more typical approach (Falconnet et al., 2011; Bakker et al., 2018; Garmendia-Torres et al., 2018; Wood and Doncic, 2019; Dietler et al., 2020) but one that often misses pivoted cells. If the results of the first classifier are ambiguous, we defer to the second (Appendix 2). We aggregate tracking predictions over the previous three time points to be robust to transient errors in image processing and in imaging, like a loss of focus. Our algorithm also identifies unmatched cells, which we treat either as new buds or cells moved by the flow of medium: cells may disappear from one time point to the next or be swept downstream and appear by a trap.\n\nBABY finds more complete or near-complete tracks than other algorithms (Figure 3c, Figure 3\u2014figure supplement 4). Cellpose does not perform tracking, and we therefore used the btrack algorithm (Ulicna et al., 2021) to track outlines segmented by a Cellpose model trained on the BABY training data. We assessed each algorithm against manually curated data by calculating the intersection-over-union score (IoU) between cells in a ground-truth track with those in a predicted track. We report both the fraction of ground-truth tracks that a predicted track matches, to within some tolerance for missing time points (Figure 3c), and the track IoU \u2013 the number of time points where the cells match relative to the total duration of both tracks (Figure 3\u2014figure supplement 4). If multiple predicted tracks match a ground-truth track, we use the match with the highest track IoU, and any predicted tracks left unassigned have a track IoU of zero. BABY excels because it detects buds early, which both increases the track IoU and prevents new buds being tracked to an incorrect cell.\n\nWe also compared tracking performance using a more general metric, the Multiple Object Tracking Accuracy (MOTA) (Bernardin et al., 2006; Figure 3\u2014figure supplement 5). With this metric, all methods performed similarly, though Cellpose with btrack appeared more robust to the given Z section. The MOTA score is ideal when there are numerous objects to track and frequent mismatches. Accurately measuring the duration of tracks is necessary to report division times, and so our metrics penalise track splitting, where a ground-truth track is erroneously split into two predicted tracks. The penalty for a single tracking error can therefore differ depending on when that error happens. In contrast, MOTA explicitly avoids penalising splitting errors.\n\nWe are unaware of other algorithms that assign buds to mothers using only bright-field images and so report only BABY\u2019s precision and recall for correctly pairing mother and bud tracks on the manually curated data set (Figure 3d). Microfluidic devices with traps typically capture one central cell per trap, so we present both the performance for all cells and for only these central cells. BABY requires a mother and bud to be paired over at least three time points (15 min or an eighth of a cell-cycle in 2% glucose), and so when considering all cells, BABY fails to recall multiple mother-bud pairs because daughters of the central cell are often washed away soon after producing a bud.\n\n### Estimating growth rates\n\nFrom the time series of segmented cells, we estimate instantaneous single-cell growth rates as time derivatives of volumes (Appendix 3). We independently estimate the growth rates of mothers and buds, each from their own time series of volumes. A cell\u2019s growth rate, the rate of change of the total volume of a mother and bud, is their sum. To find a cell\u2019s volume from its segmented outline, we use a conical method (Gordon et al., 2007; Figure 1e) and make only weak assumptions to find growth rates from these volumes. Researchers have modelled single-cell growth rates in yeast as bilinear (Cookson et al., 2010; Ferrezuelo et al., 2012; Leitao and Kellogg, 2017; Garmendia-Torres et al., 2018) and exponential (Di Talia et al., 2007; Godin et al., 2010; Soifer et al., 2016; Chandler-Brown et al., 2017), but that choice has implications for size control (Turner et al., 2012). Instead, we use a Gaussian process to both smooth the time series of volumes and to estimate their time derivatives (Swain et al., 2016), and so make assumptions only on the class of functions that describe growth rather than choosing a particular functional form. Like others (Cookson et al., 2010; Ferrezuelo et al., 2012), we observe periodic changes in growth rate across the cell cycle (Figure 1e).\n\nBABY estimates growth rates more reliably than other algorithms (Figure 3e). We manually curated time series of randomly selected mother-bud pairs from four different growth conditions, annotating both mother and bud from the bud\u2019s first appearance to the appearance of the next one (436 outlines total). BABY best reproduces the growth rates derived from this ground truth.\n\n### BABY provides new insights and experimental designs\n\n#### Nutrient modulation of birth size occurs after the peak in growth rate\n\nUsing a fluorescent marker for cytokinesis (Figure 3\u2014figure supplement 6a), we observed that cellular growth has two phases (Figure 3\u2014figure supplement 6b\u2013c). During G1, the mother\u2019s growth rate peaks; during S/G2/M, which we identify by the cells having buds, the bud dominates growth with its growth rate peaking approximately midway to cytokinesis (Ferrezuelo et al., 2012).\n\nThis tight coordination between bud growth rate and cytokinesis suggested that the peak in bud growth rate preceding cytokinesis may mark a regulatory transition. Comparing growth rates over S/G2/M for buds in different carbon sources, we found that the maximal growth rate occurs at similar times relative to cytokinesis despite substantial differences in the duration of the S/G2/M phases (Figure 4a).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/79812/elife-79812-fig4-v2.jpg)\n\n**Figure 4.:** (a) Although buds grow faster in richer media, the time of the maximal growth rate relative to the start of anaphase is approximately constant, unlike the duration of the mothers\u2019 S/G2/M phases. We grew cells in 2% glucose (data for 1014 cell cycles), 2% raffinose (803 cycles), 2% pyruvate (270 cycles), 2% palatinose (393 cycles), or in 2% glucose after a switch from palatinose (pal. \u2192 gluc.; 842 cycles). We show median bud growth rates with the interquartile range shaded and estimate the timing of anaphase from a fluorescently tagged nuclear marker (Nhp6A-mCherry; Appendix 6) and the start of S phase by when a bud first appears. (b) Binning median bud growth rates according to volume, with the interquartile range shaded, shows that the bud volumes when their growth rate is maximal are more similar in all carbon sources than those at birth, taken as 20 min after start of anaphase (Leitao and Kellogg, 2017) .\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/79812/elife-79812-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (a) The mean growth rate of a bud from first detection to birth correlates with its volume at birth for buds growing in either 2% glucose, 2% raffinose, 2% pyruvate, 2% palatinose, or 2% glucose after a switch from palatinose (Pal. \u2192 gluc). We define birth to be when cytokinesis completes as estimated from an Nhp6A-mCherry marker \u2013 Appendix 6. (b) The mean growth rate of a daughter cell during its first G1 phase, from birth to START, correlates with its volume at START. We define START when the daughter\u2019s first bud appears. In our microfluidic devices, the medium washes most daughters away before they can bud. (c) The mean growth rate of a mother during G1, from birth of a daughter to START, shows less correlation with its volume at START. We define START by when the mother\u2019s next bud appears.\n\nDaughters born in rich media are larger than those born in poor media, and some of this regulation occurs during S/G2/M (Johnston et al., 1977; Jorgensen et al., 2004; Leitao and Kellogg, 2017). Understanding the mechanism, however, is confounded by the longer S/G2/M phases in poorer media (Leitao and Kellogg, 2017; Figure 4a), which counterintuitively allow daughters that should be smaller longer to grow.\n\nGiven that the time between maximal growth and anaphase appears approximately constant in different carbon sources (Figure 4a), we hypothesised that the growth rate falls because the bud has reached a critical size. Compared to how their sizes vary immediately after cytokinesis, buds have similar sizes when their growth rates peak \u2014 in all carbon sources (Figure 4b): the longer S/G2/M phase in poorer media compensates the slower growth rates. During the subsequent constant time to cytokinesis, the faster growth in richer carbon sources would then generate larger daughters, and we observe that the bud\u2019s average growth rate correlates positively with the volume of the daughter it becomes (Figure 4\u2014figure supplement 1). Cells likely therefore implement some size regulation in S/G2/M as they approach cytokinesis.\n\nAlthough such regulation in M phase is known (Leitao and Kellogg, 2017; Garmendia-Torres et al., 2018), our data suggest a sequential mechanism to match size to growth rate, with a nutrient-independent sizer followed by a nutrient-dependent timer. To detect the peak in bud growth generated by the sizer, cells may use Gin4-related kinases (Jasani et al., 2020).\n\n#### Changes in ribosome biogenesis precede changes in growth\n\nAn important advantage of the BABY algorithm is that we can estimate single-cell growth rates without fluorescence markers, freeing fluorescence channels for other reporters. Here we focus on Sfp1, a transcription factor that helps coordinate ribosome synthesis with the availability of nutrients (Jorgensen et al., 2004).\n\nSfp1 promotes the synthesis of ribosomes by activating the ribosomal protein (RP) and ribosome biogenesis (RiBi) genes (Jorgensen et al., 2004; Albert et al., 2019). Upon being phosphorylated directly by TORC1 and likely protein kinase A (Jorgensen et al., 2004; Lempi\u00e4inen et al., 2009; Singh and Tyers, 2009) \u2013 two conserved nutrient-sensing kinases, Sfp1 enters the nucleus (Figure 5a). In steady-state conditions, levels of ribosomes positively correlate with growth rate (Metzl-Raz et al., 2017), and we therefore assessed whether Sfp1\u2019s nuclear localisation predicts changes in instantaneous single-cell growth rates.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/79812/elife-79812-fig5-v2.jpg)\n\n**Figure 5.:** (a) The transcription factor Sfp1 is phosphorylated by TORC1 and likely PKA when extracellular nutrients increase and moves into the nucleus, where it promotes synthesis of ribosomes and so higher growth rates. (b) Growth rate follows changes in Sfp1\u2019s nuclear localisation if nutrients decrease but lags if nutrients increase. We show the median time series of Sfp1-GFP localised to the nuclei of mother cells (green) and the summed bud and mother growth rates (black) for cells switched from 2% palatinose to 2% glucose and back. Shading shows interquartile ranges. We filtered data to those cell cycles that could be unambiguously split into G1 and S/G2/M phases by a nuclear marker, and we display the number in each phase in the lower plot. Above the switches of media, we show box plots for the distributions of single-cell half-times: the time of crossing midway between each cell\u2019s minimal and maximal values. (c) The mean single-cell autocorrelation of nuclear Sfp1 and the summed mother and bud growth rates are periodic because both vary during the cell cycle. We calculate the autocorrelations for constant medium using data four hours before each switch (Appendix 7). Shading shows the 95% confidence interval. (d) The mean cross-correlation between nuclear Sfp1 and the summed mother and bud growth rate shows that fluctuations in Sfp1 precede those in growth, with the correlation peaking at negative lags.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/79812/elife-79812-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** We show time series of median growth rate (upper panel) and median Sfp1-GFPlocalisation (lower panel) across different cell-cycle phases for a switch from 2% palatinose to 2% glucose and back. We used a Nhp6A-mCherry reporter to identify cytokinesis \u2013 Appendix 6 \u2013 and so partitioned the time series into cell-cycle phases: G1 phase for the daughter is from cytokinesis up to BABY detecting its first bud; S/G2/M phase for the mother is from budding to cytokinesis; and its G1 phase is from cytokinesis to budding. The shading shows the interquartile range.\n\nShifting cells from glucose to the poorer carbon source palatinose and back again, we observed that Sfp1 responds quickly to both the up- and downshifts and that growth rate responds as quickly to downshifts, but more slowly to upshifts (Figure 5b). As a target of TORC1 and PKA, Sfp1 acts as a fast read-out of the cell\u2019s sensing of a change in nutrients (Granados et al., 2018). In contrast, synthesising more ribosomes is likely to be slower and explains the lag in growth rate after the upshift. The fast drop in growth rate in downshifts is more consistent, however, with cells deactivating ribosomes, rather than regulating their numbers. Measuring the half-times of these responses (Figure 5b boxplots), there is a mean delay of 30 \u00b1 2 minutes (95% confidence; $n=245$) from Sfp1 localising in the nucleus to the rise in growth rate in the upshift. This delay is only 8 \u00b1 1 minutes (95% confidence; $n=336$) in the downshift, and downshift half-times are less variable than those for upshifts, consistent with fast post-translational regulation. Although changes in Sfp1 consistently precede those in growth rate, the higher variability in half-times for the growth rate is not explained by Sfp1\u2019s half-time (Pearson correlation 0.03, $p=0.6$).\n\nBy enabling both single-cell fluorescence and growth rates to be measured, BABY permits correlation analyses (Kiviet et al., 2014; Appendix 7). Both Sfp1\u2019s activity and the growth rate vary during the cell cycle. The autocorrelation functions for nuclear Sfp1 and for the growth rate are periodic with periods consistent with cell-division times (Figure 5c): around 90 min in glucose and 140 min in palatinose for Sfp1; and 95 min and 150 min for the growth rate. If Sfp1 acts upstream of growth rate, then its fluctuations in nuclear localisation should precede fluctuations in growth rate. Cross-correlating nuclear Sfp1 with growth rate shows that fluctuations in Sfp1 do lead those in growth rate, by an average of 25 min in glucose and by 50 min in palatinose (Figure 5d). Nevertheless, the weak strength of this correlation suggests substantial control besides Sfp1.\n\nDuring the downshift, we note that the growth rate transiently drops to zero (Figure 5b), irrespective of a cell\u2019s stage in the cell cycle (Figure 5\u2014figure supplement 1), and there is a coincident rise in the fraction of cells in G1 (Figure 5b bottom), suggesting that cells arrest in that phase.\n\n#### Using growth rate for real-time control\n\nWith BABY, we can use growth rate as a control variable in real time because BABY\u2019s speed and accuracy enables cells to be identified in images and their growth rates estimated during an experiment (Figure 6a). As an example, we switched the medium to a poorer carbon source and used BABY to determine how long to keep cells in this medium if we want 50% to have resumed dividing before switching back to the richer medium (Appendix 8). After 5 hr in glucose, we switched the carbon source to ethanol, or galactose \u2013 Figure 6\u2014figure supplement 1. There is a lag in growth as cells adapt. Using BABY, we automatically determined the fraction of cells that have escaped the lag at each time point \u2014 those cells that have at least one bud or daughter whose growth rate exceeds a threshold (Figure 6b). The software running the microscopes reads this statistic and triggers the switch back to glucose when 50% of the cells have escaped (Figure 6c). We note that all cells resume dividing in glucose and initially grow synchronously because of the rapid change of media. This synchrony is most obvious in those cells that did not divide in ethanol (Figure 6c).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/79812/elife-79812-fig6-v2.jpg)\n\n**Figure 6.:** (a) By running BABY in real time during a microscopy experiment, we are able to use the cells\u2019 growth rate to control changes in media. Following 5 hr in 0.5% glucose, we switch the extracellular medium to one containing 2% ethanol, a poorer carbon source, and cells arrest growth. The images collected are analysed by BABY to determine growth rates. When the majority of cells have resumed dividing, detected by the growth rate of at least one of their buds or daughters exceeding 15\u03bcm3/hr, the microscopy software triggers a change in pumping and returns glucose to the microfluidic device. (b) The fraction of cells that have escaped the lag and resumed dividing increases with the amount of time in ethanol. All cells divide shortly after glucose returns. (c) The growth rates of the buds for each mother cell drop in ethanol and resume in glucose. Each row shows data from a single mother cell with the bud growth rate indicated by the heat map. We sort rows by the time each cell resumes dividing in ethanol, with the bottom rows showing the 50% that re-initiated growth.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/79812/elife-79812-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (a) A heat map showing the bud growth rates calculated in real time for an experiment where the medium changes from glucose to galactose, rather than the ethanol of Figure 6. We sort rows representing mother cells by the time each cell resumes dividing, with cells resuming later at the top. We indicate the corresponding time on the plot below. (b) Cells are slow to resume division, or \u201cescape\u201d, following the switch to 2% ethanol (green) compared to 0.5% galactose. (c) The growth rate but not Sfp1\u2019s localisation is predictive of whether cells escape. We plot the mutual information between cells labelled as either escapers or non-escapers and the time series of either bud growth rate or Sfp1\u2019s localisation. We estimated the mutual information using the decoding method Granados et al., 2018 for a sliding time-window of 100 minutes and show the mean and, with shading, the 95% confidence interval of 100 bootstraps. Decoding was by a gradient-boosting classifier trained on the time-window data concatenated with both Fourier-transformed and rank-ordered versions of the same data. (d) Cells accumulate in G1 while in the poorer carbon source, and their cell cycles appear to synchronise\u2013 notice the periodic waves of the proportions of G1 cells once glucose is re-introduced. The dotted lines mark media transitions.\n\nThis proof-of-principle shows that BABY is applicable for more complex feedback control, where a desired response is achieved by comparing behaviour with a computational model to predict the necessary inputs, such as changes in media (Harrigan et al., 2018; Milias-Argeitis et al., 2011; Toettcher et al., 2011; Uhlendorf et al., 2012; Lugagne et al., 2017; Menolascina et al., 2014). Unlike previous approaches though, which typically measure fluorescence, BABY not only allows single-cell fluorescence but also growth rates to be control variables, and growth rate correlates strongly with fitness (Orr, 2009).\n\n## Discussion\n\nHere, we present BABY, an algorithm to extract growth rates from label-free, time-lapse images through reliably estimating time series of cellular volumes. We introduce both a segmentation algorithm that identifies individual cells in images even if they overlap and general machine-learning methods to track and assign lineages robustly. The novel training targets for CNNs that we propose, particularly splitting one training image into multiple with each comprising cells of a particular size, should be beneficial not only for other yeasts but for other cell types.\n\nAlthough BABY detects buds shortly after they form, we stop following a bud as soon as the mother buds again and instead follow the new one. Ideally we would like to identify from bright-field images when a bud becomes an independent daughter cell. We would then know when a mother cell exits M phase and be able to identify their G1 and the (budded) S/G2/M phases. We have partly achieved this task with an algorithm that predicts the end of the peak in the bud\u2019s growth rate (Appendix 6), which often occurs at cytokinesis (Figure 3\u2014figure supplement 6a; Appendix 6\u2014figure 1a). It assigns to within two time points over 60% of the cytokinesis events identified independently using a fluorescent reporter (Figure 3\u2014figure supplement 6d\u2013e), but higher accuracy likely needs more advanced techniques.\n\nIndeed, we believe that integrating BABY with other algorithms will improve its performance even further. How Cellpose defines training targets for its CNN appears particularly powerful (Stringer et al., 2021; Pachitariu and Stringer, 2022), and this formulation could be combined with BABY\u2019s size-dependent categorisation. Similarly, for assigning lineages, there are now methods that use image classification to identify division and budding times for cells in traps (Aspert et al., 2022), and for tracking, our machine learning approach would benefit from Fourier transforming the images we use, which provides a rich source of features (Cuny et al., 2022).\n\nCell biologists often wish to understand how cells respond to change (Murugan et al., 2021), and watching individual cells in real time as their environment alters gives unique insights (Locke and Elowitz, 2009). Together time-lapse microscopy, microfluidic technology, and fluorescent proteins allow us to control extracellular environments, impose dynamic changes, and phenotype cellular responses over time. With BABY, we add the ability \u2013 using only bright-field images \u2013 to measure what is often our best estimate of fitness, single-cell growth rates. The strategies used by cells in their decision making are of high interest (Perkins and Swain, 2009; Bal\u00e1zsi et al., 2011). With BABY, or comparable software, we are able not only to use fitness to rank each cell\u2019s decision-making strategy, but also to investigate the strategies used to regulate fitness itself, through how cells control their growth, size, and divisions.\n\n## Methods\n\n### Strains and media\n\nStrains included in the curated training images were all derivatives of BY4741 (Brachmann et al., 1998). We derived both BY4741 Myo1-GFP Whi5-mCherry and BY4741 Sfp1-GFP Nhp6A-mCherry from the respective parent in the Saccharomyces cerevisiae GFP collection Huh et al., 2003 by PCR-based genomic integration of mCherry-Kan $R$ from pBS34 (EUROSCARF) to tag either Whi5 or the chromatin-associated Nhp6A protein. We validated all tags by sequencing. The media used for propagation and growth was standard synthetic complete (SC) medium supplemented either with 2% glucose, 2% palatinose, or 0.5% glucose depending on the starting condition in the microfluidic devices. Cells were grown at 30 \u00b0C.\n\n### Microscopy and microfluidics\n\n#### Device preparation and imaging\n\nWe inoculated overnight cultures with low cell numbers so that they would reach mid-log phase in 13\u201316 hr. We diluted cells in fresh medium to OD600 of 0.1 and incubated for an additional 3\u20134 hr before loading them into microfluidic devices at ODs of 0.3\u20130.4. To expose multiple strains to the same environmental conditions and to optimise data acquisition, we use multi-chamber versions of ALCATRAS (Crane et al., 2014; Granados et al., 2017; Crane et al., 2019), which allow for either three or five different strains to be observed in separate chambers while being exposed to the same extracellular medium. The ALCATRAS chambers were pre-filled with growth medium with added 0.05% bovine serum albumin (BSA) to facilitate cell loading and reduce clumping. We passed all microfluidics media through 0.2 \u03bcm filters before use.\n\nWe captured images on a Nikon Ti-E microscope using a 60\u00d7, 1.4 NA oil immersion objective (Nikon), OptoLED light source (Cairn Research) and sCMOS (Prime95B), or EMCCD (Evolve) cameras (both Photometrics) controlled through custom MATLAB software using Micro-manager (Edelstein et al., 2014). We acquired bright-field and fluorescence images at five Z sections spaced 0.6 \u03bcm apart. A custom-made incubation chamber (Okolabs) maintained the microscope and syringe pumps containing media at 30 \u00b0C.\n\n#### Changing the extracellular environment\n\nFor experiments in which the cells experience a change of media, two syringes (BD Emerald, 10 ml) mounted in syringe pumps (Aladdin NE-1002X, National Instruments) connected via PTFE tubing (Smiths Medical) to a sterile metal T-junction delivered media through the T-junction and via PTFE tubing to the microfluidic device. Initially the syringe with the first medium infused at 4 \u03bcL/min while the second pump was off. To remove back pressure and achieve a rapid switch, we infused medium at 150 \u03bcL/min for 40 s from the second pump while the first withdrew at the same rate. The second pump was then set to infuse at 4 \u03bcL/min and the first switched off. We reversed this sequence to achieve a second switch in some experiments. Custom Matlab software, via RS232 serial ports, controlled the flow rates and directions of the pumps.\n\n### Birth Annotator for Budding Yeast (BABY) algorithm\n\nThe BABY algorithm takes either a stack of bright-field images or a single Z-section as input and coordinates multiple machine-learning models to output individual cell masks annotated for both tracking and lineage relationships.\n\nCentral to segmenting and annotating lineages is a multi-target CNN (Appendix 1). Each target is semantic \u2013 pixels have binary labels. We define these targets for particular categories of cell size and mask pre-processing steps, chosen to ease both segmenting overlapping instances and assigning lineages. We first identify cell instances as semantic masks and then refine their edges using a radial spline representation.\n\nTo track cells and lineages, we use machine-learning classifiers both to link cell outlines from one time point to the next and to identify mother-bud relationships. The classifier converts a feature vector, representing quantitatively how two cell masks are related, into probabilities for two possible classes. For cell tracking, this probability is the probability that the two cells at different time points are the same cell. For assigning lineages, the probability is the probability that the two cells have a mother-bud relationship. We aggregate over time a target of the CNN dedicated to assigning lineages to determine this probability (Appendix 2).\n\nWe used Python to implement the algorithm and Tensorflow (Abadi, 2015) for the deep-learning models, Scikit-learn (Pedregosa, 2011) for machine learning, and Scikit-image (van der Walt et al., 2014) for image processing. The code can be run either directly from Python or as an HTTP server, which enables access from other languages, such as Matlab. Scripts automate the training process, including optimising the hyperparameters, for the size categories and CNN architecture, and post-processing parameters (Appendices 1 and 2).\n\n### Training data\n\nTraining data for the segmentation and bud assignment models comprises bright-field time-lapse images of yeast cells and manually curated annotations: a bit-mask outline for each cell (a binary image with the pixels constituting the cell marked with ones) and its associated tracking label and lineage assignment, if any. For the models optimised for microfluidic devices with traps, including both the single and five Z-section models, we took training images with five Z sections using a 60\u00d7 lens. These images were from six independent experiments and annotated by three different people and include a total of 3233 annotated cell outlines distributed across 1028 time points, 130 traps, and 28 fields-of-view. We include examples taken using cameras with different pixel sizes (0.182 \u03bcm and 0.263 \u03bcm). Cells in the training data were all derivatives of BY4741 growing in SC with glucose as carbon source. Most of the training images are of cells trapped in ALCATRAS devices (Crane et al., 2014), but some were for different trap designs. When training for a single Z-section, each of the five Z sections is independently presented to the CNN.\n\nWe split the training data into training, validation, and test sets (Goodfellow et al., 2016). We use the training set (588 trap images) to train the CNN and the validation set (248 trap images) to optimise hyperparameters and post-processing parameters. We use the test set (192 trap images) only to assess performance and generalisability after training. To increase the independence between each data set, our code allocates images using trap identities rather than time points or Z sections.\n\nFor the model optimised for microcolonies (Figure 3\u2014figure supplement 2), we supplemented the ALCATRAS trap training set with 18 images from three fields-of-view (6% of the full data set) taken from the YeaZ bright-field training data (Dietler et al., 2020). To allow for overlaps in this data set, we re-annotated each field-of-view using our GUI (Appendix 4).\n\nFor training the tracking model, we used both the annotations from the segmentation training data, which are short time series of around five time points, and an additional data set of 300 time points of outlines, segmented using BABY and crudely tracked and then manually curated.\n\n### Evaluating performance\n\n#### Segmentation\n\nWe evaluated BABY\u2019s segmentation on the training data\u2019s test set and compared with recent algorithms for processing yeast images (Padovani et al., 2022): Cellpose version 2.1.1 (Stringer et al., 2021; Pachitariu and Stringer, 2022), YeaZ (Dietler et al., 2020) from 11 October 2022, and our previous segmentation algorithm DISCO (Bakker et al., 2018). For Cellpose and YeaZ, we also trained new models on the images and annotations from both our training and validation sets, following their suggested methods (Pachitariu and Stringer, 2022; Dietler et al., 2020). Because neither handles overlapping regions, we applied a random order to the cell annotations such that pixels in regions of overlap were assigned the last observed label. We augmented the input data for each model by resampling the images five times, thus avoiding bias by forcing the models to adapt to uncertainty in the regions of overlap.\n\nWe assessed performance by calculating the intersection over union (IoU) of all predicted masks with the manually curated ground-truth masks from our test set. We paired predicted masks with the ground truth masks beginning with the highest IoU score; we assigned unmatched predictions an IoU of zero. To calculate the average precision for each annotated image, we used the area under the precision-recall curve for varying thresholds on the IoU score (Manning et al., 2008). Not all of the algorithms we tested give a confidence score, and so we generated precision-recall curves assuming ideal ordering of the predicted masks, by decreasing IoU. For the BABY models, ordering by mask probability produces similar results. We report the mean average precision over all images in the test set. To evaluate segmentation on microcolony images, we performed a similar analysis using the ground-truth annotations of the YeaZ bright-field training data (Dietler et al., 2020), but excluding the 18 images annotated and used to train BABY. We also re-trained the Cellpose and YeaZ models using our training data set supplemented with the microcolony images and evaluated the pre-trained bright-field YeaZ model, which includes this evaluation data in its training set, and the general-purpose pre-trained cyto2 Cellpose model, which segments cells from multiple different organisms.\n\n#### Tracking\n\nWe evaluated tracking on independent, manually curated data, comprising time series with 180\u2013300 time points for 10 randomly selected traps from two experiments and four different growth conditions, making a total of 128 tracks. We initially generated the annotations using an early version of our segmentation and tracking models, but we manually corrected all tracking and lineage assignment errors and any obviously misshapen, misplaced or missing outlines, including removing false positives and adding outlines to the first visible appearance of buds. Unedited outlines, however, remain and will inevitably impart a bias. By requiring a mask IoU score of 0.5 or higher to match masks for the tracking, we expect to negate this bias. We compared BABY with YeaZ (Dietler et al., 2020) and btrack (Ulicna et al., 2021) because Cellpose cannot track. For YeaZ, we used the model trained on our data; for btrack, we used the Cell-ACDC platform (Padovani et al., 2022) to combine segmentation by Cellpose with tracking by btrack.\n\nThe output of each model comprises masks with associated labels. We matched predicted and ground-truth masks at each time point to obtain maps from predicted to ground-truth labels, in descending order of mask IoUs but providing the mask IoU was greater than 0.5. We then calculated a track IoU between all predicted and ground-truth tracks: the number of time points where a predicted label mapped to a ground-truth label divided by the number of time points for which either track had a mask. This approach gave a map between predicted and ground-truth tracks in descending order of track IoUs. Using the mapping, we reported either the fraction of predicted tracks whose duration, the number of masks identified within that track, matched the ground-truth tracks (Figure 3c) or the distribution of track IoUs for all ground-truth tracks (Figure 3\u2014figure supplement 4). For the Multiple Object Tracking Accuracy (MOTA) metric (Bernardin et al., 2006), we used the mask IoU to measure distance and considered correspondences as valid if the mask IoU \u2265 0.5.\n\n#### Assigning lineages\n\nWe evaluated BABY\u2019s lineage assignment using the lineage annotations included in the tracking evaluation data. These assignments pair bud and mother track labels. We used the track IoU to match ground-truth and predicted tracks above a given track IoU threshold and then compared lineage assignments based on this map. We counted true positives for each ground-truth bud-to-mother mapping if the ground-truth bud track had a matching predicted track and this predicted track had a predicted mother track matching the ground-truth mother track. False negatives were any ground-truth mother-bud pairs not counted as true positives; false positives were any predicted mother-bud pairs that were not counted as true positives. We repeated this analysis only for buds assigned to the central trapped cell or its matching predicted track.\n\n#### Estimating growth rates\n\nWe evaluated how well BABY estimates growth rates on independent, manually curated data comprising annotated time series of mother-bud pairs. We did not include this image data, which has growth in glucose, raffinose, pyruvate, and palatinose, in our training data. To select positions, traps, and time points, we randomly selected mother-bud pairs, rejecting samples only if there was no pair with a complete bud-to-bud cycle. We segmented this data with BABY and Cellpose and YeaZ trained on our data. To avoid penalising YeaZ and Cellpose for tracking errors, we found the matching predicted outlines with highest positive IoU for each ground-truth mask. We then used our method to estimate volumes (Appendix 3) to derive volumes for all masks, both ground-truth and predicted. Associating the masks with the ground-truth track, we fit a Gaussian process to each time series of volumes, omitting any time points with no matching mask. From the Gaussian process, we estimated a growth rate for each time point. Finally, we calculated the Root Mean Square Distance (RMSD) between the predicted and ground-truth estimates.\n",
+      "created_at": "2025-12-04T02:28:37.867390Z"
+    },
+    {
+      "id": "4c620818-b1b2-49a7-92df-ce390828a95d",
+      "submission_id": "05071ebf-ed28-440b-91bb-3abbb4ca9f80",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Alan M Moses, https://ror.org/03dbr7087 University of Toronto Canada\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.79812.sa0](https://doi.org/10.7554/eLife.79812.sa0)\n\nThe authors develop important machine-learning approaches to extract single-cell growth rates and show convincing evidence that their methods can yield insight into growth control. They also introduce compelling new methodologies for several other aspects of automated image analysis.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Alan M Moses, https://ror.org/03dbr7087 University of Toronto Canada\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.79812.sa1](https://doi.org/10.7554/eLife.79812.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"A label-free method to track individuals and lineages of budding cells\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Naama Barkai as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission. Overall, all the reviewers were impressed by the innovative techniques and potential biological insights in the paper. At the same time, however, after discussion, the reviewers were not convinced that the work represents a \"method\" in the sense that it could actually be used by others or on data from other labs. Further, the reviewers all had major problems with the clarity of the manuscript, finding it difficult to fully understand either the key methodological or biological contributions.\n\nEssential revisions:\n\n1) Convince the reader that the \"method\" described here can be applied in other settings and that improved identification of small buds will be a generally important advance towards estimating growth rates from movies. As it stands, the reviewers wondered if the contribution here was really only a solution to a specific data analysis problem that arises in the specific imaging/microfluidics set-up considered here. Ideally, this issue could be addressed by clearly specifying the problem(s) that the method is designed to solve (e.g., is it bud identification, cell tracking and/or growth rate estimation), and clear comparison of this method to state-of-the-art methods on a variety of datasets (with appropriate held out test data and statistics.)\n\n2) Clarify what the major novelty/contributions/discoveries are in the main manuscript text, describe them fully, and move all the other clever innovations (that are not fully supported by empirical data) to the supplementary materials or Methods section. For each contribution, give the appropriate context (previous work, hypothesis, importance, etc.) and ensure that the generality of the claims match the experiments/data presented (e.g., generality of observation of sizer vs timer regulating bud growth or generality of the tracking results beyond cells grown in traps). Ensure that the Title and Abstract reflect what has actually been demonstrated in the paper.\n\n3) Overall, clarify the writing to give the appropriate scientific context for a general biology audience, and remove or explain technical jargon that will not be familiar to the readers of eLife.\n\nReviewer #1 (Recommendations for the authors):\n\nSpecific issues:\n\n\u2013 I am left wondering if this a software that other groups can expect to download and use, or is it an abstract \"method\" to make the point that it's possible to accurately segment small buds and extract growth rates and other labs should implement similar systems for their own imaging setups?\n\n\u2013 Quite a bit of discussion of \"morphological erosion\" which I could not really follow. Is it the same usage as this?\n\nhttps://en.wikipedia.org/wiki/Erosion_(morphology)\n\nThe authors should define what they mean by this term and explain why it is important.\n\n\u2013 Very hard for me to understand the training and testing data: what is the data used? Was the method ever evaluated on data from other microscopes/labs/benchmarks? The only numbers I got were the training images 588 trap images \u2013 1813 annotated cells in total.\n\n\u2013 Sfp1 experiments are explained relatively clearly compared to the rest of the paper, but still major improvements are needed. E.g., it is never stated that the authors are assuming nuclear localization of Sfp1 reflects its \"activity\" (what is even meant, transcriptional activity?) While plausible, what is the evidence that this is true? Similarly, \"enters the nucleus in response to two conserved nutrient-sensing kinases\" \u2013 again this is not specific enough. How does Sfp1 \"respond\"? Presumably the kinases phosphorylate something and eventually Sfp1 translocates into the nucleus, and the authors are quantifying the GFP-signal in the nucleus? Non- experts will not be able to follow this without much more specific explanation.\n\n\u2013 \"With BABY, we add the ability \u2013 with no extra imaging costs \u2013 to measure what is often our best estimate of fitness, single-cell growth rates.\" one of the points of the paper is that the cell size/growth information can be obtained 'for free' (i.e., with no additional labels) from microfluidics experiments. Have the authors actually gone back and reanalyzed any (even of their own) previously published data to illustrate this point? As it stands it seems a bit like a rhetorical argument.\n\n\u2013 \"To better characterise how growth rate varies during the cell cycle, we ran experiments for cells with the gene MYO1 tagged with Green Fluorescent Protein\" Very hard to follow this. \"Ran experiments\" is not scientific. What is the logic? What was measured? \"We determined that we could predict cytokinesis from growth rate because at cytokinesis the mother's and bud's growth rates often reach a similar magnitude (Appendix 5).\" I can't follow this. What is the evidence that cytokinesis can be predicted? How is this measured? What are the alternative models that were rejected? Do I need to read Appendix 5? I found this claim in Appendix 5: \"We evaluated the algorithm by the correlation between the real time of cytokinesis and the predicted time\" What were the sample sizes for the test data? etc., etc., How was the \"real\" time measured? Is it this: \"The actual time of cytokinesis is taken to be the candidate point with the minimal derivative, corresponding to the strongest down-shift in fluorescence.\"?\n\nReviewer #2 (Recommendations for the authors):\n\n1. It is not entirely clear to me how successful the automated bud-mother assignment actually is. In the main text (page 6) the authors talk about 80% precision. However, in the appendix we learn that the recall is only 47%. What is the actual accuracy of correct mother-bud identifications after the downstream assignment? How many tracks are rejected by the post-processing? The accuracy of the final pedigree analysis needs to be reported more directly.\n\n2. Along those lines, the results shown in Figure 3c and d make it very hard to assess the actual accuracy of the automated extraction of cell cycle information. Especially the low number of only 6 daughter cells in Figure 3c is far from sufficient, as can be also seen by the unusual bimodal distribution \u2013 which does not reflect the distributions in Figure 3d. Instead, the authors should compare the results in Figure 3d to a manual analysis of the same cells (or at least a significant subfraction). Rather than histograms, it would be informative to see plots showing predicted vs manually analyzed TM and TD or a distribution of differences between those values in manually annotated and predicted data.\n\n3. Unfortunately, the correlations shown in Figure 2a and c of Appendix 5 are mostly meaningless. The high correlation is simply a consequence of the fact that absolute time of the experiment is shown, and obviously cells born later in the experiment will finish cytokinesis later (or have a later time of predicted cytokinesis). As can be seen from this plot, predictions often deviate dramatically (on the timescale of hours!) from the ground truth. We need to see the same plot using time relative to bud emergence rather than absolute time.\n\n4. The plots shown in Figure 3a and b are fine, but it would be beneficial to also see more standard metrics, such as average precision vs IoU threshold (see for example https://doi.org/10.1038/s41592-020-01018-x), or MOTA for tracking.\n\n5. To allow fair comparison, segmentation by BABY using a single z-slice should\n\nbe compared with e.g. YeaZ (and ideally other deep learning methods) retrained with the same data.\n\n6. It is not entirely clear to me whether Figure 4d and e rely on the Myo1-GFP signal or are purely obtained with automated BABY analysis. The Myo1-based data are a nice opportunity to further quantify the accuracy of the BABY-based cell cycle predictions. Again it would be nice to see predicted vs Myo1-based cell-cycle duration plotted against each other.\n\n7. The biological results shown in Figure 4 are very interesting. However, I think to support the claim of sizer-timer based bud growth regulation, more than two conditions are needed. Does this claim still hold with multiple different media, or even appropriate mutants?\n\n8. If I understand correctly, buds by definition are defined as independent cells if they become larger than 24 fL (page 33)? How many buds are affected by this criteria? How does this match with Figure 4e, where we clearly see bigger buds?\n\n9. The claim in Figure S1 that YeaZ underestimates bud size more than BABY should be supported by a more direct plot, e.g. showing YeaZ (and BABY) predictions vs ground truth bud size on a single bud level.\n\n10. Is the choice of evaluating 10 sets of hyperparameters in Appendix 3, Figure 3 determined by limiting computational resources? If not, this seems rather sparse, especially given the fact that panel b does not give the impression that a parameter set close to the optimum is found. Would testing more combinations not likely result in a significant improvement?\n\nReviewer #3 (Recommendations for the authors):\n\nI would recommend the authors rewrite the paper focusing on the very interesting biology. Then, they can choose whatever method they like to analyze their data since that is not the main focus of the paper and there are no claims as to which method is better than which other.\n",
+      "created_at": "2025-12-04T02:28:37.867390Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T02:28:37.867390Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T02:28:37.867390Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "5a9d7a2b-af04-4991-9ce3-a91e2b0bf9fb",
+      "content_id": "f2c83d8f-73cd-4e30-a4ea-812573e34f98",
+      "claim_id": "C1",
+      "claim": "Growth rate correlates strongly with fitness in microbes.",
+      "claim_type": "EXPLICIT",
+      "source": "For microbes, growth rate correlates strongly with fitness (Orr, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Orr, 2009",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:28:37.867390Z"
+    },
+    {
+      "id": "2d57fa3d-f583-48ad-9490-8a7052007826",
+      "content_id": "f2c83d8f-73cd-4e30-a4ea-812573e34f98",
+      "claim_id": "C2",
+      "claim": "Cells increase growth rates through balancing their synthesis of ribosomes with their intake of nutrients.",
+      "claim_type": "EXPLICIT",
+      "source": "Cells increase growth rates through balancing their synthesis of ribosomes with their intake of nutrients (Broach, 2012; Levy and Barkai, 2009; Scott et al., 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Broach, 2012; Levy and Barkai, 2009; Scott et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:28:37.867390Z"
+    },
+    {
+      "id": "762bd49f-c801-4ea7-b6ef-cb39e902e54e",
+      "content_id": "f2c83d8f-73cd-4e30-a4ea-812573e34f98",
+      "claim_id": "C3",
+      "claim": "Cells target a particular size through coordinating growth with division.",
+      "claim_type": "EXPLICIT",
+      "source": "target a particular size through coordinating growth with division (Johnston et al., 1977; Jorgensen et al., 2004; Di Talia et al., 2007; Turner et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Johnston et al., 1977; Jorgensen et al., 2004; Di Talia et al., 2007; Turner et al., 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:28:37.867390Z"
+    },
+    {
+      "id": "4a0ecd5c-9a75-42f9-ac34-6528c818ecc6",
+      "content_id": "f2c83d8f-73cd-4e30-a4ea-812573e34f98",
+      "claim_id": "C4",
+      "claim": "Time-lapse microscopy with microfluidic technology has been pivotal for studying single cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Time-lapse microscopy, particularly with microfluidic technology to control the extracellular environment (Locke and Elowitz, 2009; Bennett and Hasty, 2009), has been pivotal",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Locke and Elowitz, 2009; Bennett and Hasty, 2009",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:28:37.867390Z"
+    },
+    {
+      "id": "dbe20db3-2f00-4df0-a401-cb6abafd9bd1",
+      "content_id": "f2c83d8f-73cd-4e30-a4ea-812573e34f98",
+      "claim_id": "C5",
+      "claim": "S. cerevisiae grows by forming a bud that increases in size while the volume of the rest of the cell remains relatively unchanged.",
+      "claim_type": "EXPLICIT",
+      "source": "S. cerevisiae grows by forming a bud that increases in size while the volume of the rest of the cell remains relatively unchanged.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about the biological process of budding yeast growth",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:28:37.867390Z"
+    },
+    {
+      "id": "3262e779-f93f-47e0-91de-8b393527662c",
+      "content_id": "f2c83d8f-73cd-4e30-a4ea-812573e34f98",
+      "claim_id": "C6",
+      "claim": "Single-cell growth rate is typically reported as the rate of change of volume.",
+      "claim_type": "EXPLICIT",
+      "source": "Although single-cell growth rate is typically reported as the rate of change of volume (Ferrezuelo et al., 2012; Soifer et al., 2016; Chandler-Brown et al., 2017; Leitao and Kellogg, 2017; Garmendia-Torres et al., 2018; Litsios et al., 2019)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to multiple studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:28:37.867390Z"
+    },
+    {
+      "id": "1d11376d-3f35-4189-a3c9-8091bd9fb9be",
+      "content_id": "f2c83d8f-73cd-4e30-a4ea-812573e34f98",
+      "claim_id": "C7",
+      "claim": "Growth rates for budding yeast are often only reported for isolated cells using low-throughput and semi-automated methods.",
+      "claim_type": "EXPLICIT",
+      "source": "Growth rates for budding yeast are therefore often only reported for isolated cells using low-throughput and semi-automated methods (Ferrezuelo et al., 2012; Litsios et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Ferrezuelo et al., 2012; Litsios et al., 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:28:37.867390Z"
+    },
+    {
+      "id": "9ee8b911-a9eb-4941-a9ef-d27e6acafc44",
+      "content_id": "f2c83d8f-73cd-4e30-a4ea-812573e34f98",
+      "claim_id": "C8",
+      "claim": "For rod-shaped cells that divide symmetrically, like Escherichia coli, the growth rate can be found more simply, as the rate of change of a cell's length.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, for rod-shaped cells that divide symmetrically, like Escherichia coli, the growth rate can be found more simply, as the rate of change of a cell's length (Kiviet et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Kiviet et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:28:37.867390Z"
+    },
+    {
+      "id": "3e216970-1286-42ce-a6d5-4d1924505c80",
+      "content_id": "f2c83d8f-73cd-4e30-a4ea-812573e34f98",
+      "claim_id": "C9",
+      "claim": "Neighbouring cells in images often overlap.",
+      "claim_type": "EXPLICIT",
+      "source": "A particular difficulty is identifying cell boundaries because neighbouring cells in images often overlap: like other microbes, yeast grows in colonies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement based on observation of yeast growth behavior",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:28:37.867390Z"
+    },
+    {
+      "id": "e95e4332-cb26-4708-83be-904889e4ed85",
+      "content_id": "f2c83d8f-73cd-4e30-a4ea-812573e34f98",
+      "claim_id": "C10",
+      "claim": "Substantial and frequent overlaps between buds and neighbouring cells occur in ALCATRAS microfluidic devices.",
+      "claim_type": "EXPLICIT",
+      "source": "We observe substantial and frequent overlaps between buds and neighbouring cells in ALCATRAS microfluidic devices (Crane et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct observation by the authors",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:28:37.867390Z"
+    },
+    {
+      "id": "041351c5-880c-4fbe-9d57-1419f741cdb4",
+      "content_id": "f2c83d8f-73cd-4e30-a4ea-812573e34f98",
+      "claim_id": "C11",
+      "claim": "Overlap is a widespread problem in yeast microscopy images.",
+      "claim_type": "EXPLICIT",
+      "source": "Inspecting images obtained by others, we believe overlap is a widespread, if undeclared, problem: it occurs during growth in the commercial CellASIC devices (Wood and Doncic, 2019; Dietler et al., 2020), against an agar substrate (Falconnet et al., 2011; Soifer et al., 2016), in a microfluidic dissection platform (Litsios et al., 2019), and in microfluidic devices requiring cells to be attached to the cover slip (Hansen et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to multiple studies showing overlap in different experimental setups",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:28:37.867390Z"
+    },
+    {
+      "id": "9fb2d0dc-18fc-49f0-994a-be3fd833410a",
+      "content_id": "f2c83d8f-73cd-4e30-a4ea-812573e34f98",
+      "claim_id": "C12",
+      "claim": "Only a few algorithms allow for overlaps in yeast cell segmentation.",
+      "claim_type": "EXPLICIT",
+      "source": "Yet only a few algorithms allow for overlaps (Bakker et al., 2018; Lu et al., 2019)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Bakker et al., 2018; Lu et al., 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:28:37.867390Z"
+    },
+    {
+      "id": "5683fc3a-4901-4c8e-9960-dc1edafbc0fc",
+      "content_id": "f2c83d8f-73cd-4e30-a4ea-812573e34f98",
+      "claim_id": "C13",
+      "claim": "Software to automatically identify and track cells in bright-field and phase-contrast images is well established.",
+      "claim_type": "EXPLICIT",
+      "source": "despite software to automatically identify and track cells in bright-field and phase-contrast images being well established (Gordon et al., 2007; Falconnet et al., 2011; Versari et al., 2017; Bakker et al., 2018; Wood and Doncic, 2019)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to multiple established methods",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:28:37.867390Z"
+    },
+    {
+      "id": "1eae62e7-8c83-478d-8a7e-cefa0ad1b333",
+      "content_id": "f2c83d8f-73cd-4e30-a4ea-812573e34f98",
+      "claim_id": "C14",
+      "claim": "Deep learning has enhanced cell identification and tracking software.",
+      "claim_type": "EXPLICIT",
+      "source": "and enhanced with deep learning (Falk et al., 2019; Lu et al., 2019; Dietler et al., 2020; Stringer et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to recent deep learning methods",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:28:37.867390Z"
+    },
+    {
+      "id": "7c39dc4e-014d-45b3-888e-cac705505fb5",
+      "content_id": "f2c83d8f-73cd-4e30-a4ea-812573e34f98",
+      "claim_id": "C15",
+      "claim": "U-net identifies which pixels in an image are likely from cells.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the convolutional neural network U-net (Ronneberger et al., 2015a), a workhorse in biomedical image processing, identifies which pixels in an image are likely from cells",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Ronneberger et al., 2015a and description of U-net functionality",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:28:37.867390Z"
+    },
+    {
+      "id": "35bdb7dc-e93a-49bf-a270-8327b39a3482",
+      "content_id": "f2c83d8f-73cd-4e30-a4ea-812573e34f98",
+      "claim_id": "C16",
+      "claim": "Assigning lineages and births is often performed manually or through fluorescent markers.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, assigning lineages and births is often performed manually (Ferrezuelo et al., 2012; Chandler-Brown et al., 2017) or through fluorescent markers (Soifer et al., 2016; Garmendia-Torres et al., 2018; Cuny et al., 2022)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to multiple studies using these approaches",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:28:37.867390Z"
+    },
+    {
+      "id": "1688540d-8eae-4f7f-a84f-0fd213dbc69b",
+      "content_id": "f2c83d8f-73cd-4e30-a4ea-812573e34f98",
+      "claim_id": "C17",
+      "claim": "BABY is a complete pipeline to determine single-cell growth rates from label-free images of budding yeast.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we describe the Birth Annotator for Budding Yeast (BABY), a complete pipeline to determine single-cell growth rates from label-free images of budding yeast.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of the algorithm's purpose and capabilities",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:28:37.867390Z"
+    },
+    {
+      "id": "80d158f5-0079-4434-a846-40caf98c7939",
+      "content_id": "f2c83d8f-73cd-4e30-a4ea-812573e34f98",
+      "claim_id": "C18",
+      "claim": "BABY resolves instances of overlapping cells by extending the U-net architecture with custom training targets.",
+      "claim_type": "EXPLICIT",
+      "source": "BABY resolves instances of overlapping cells \u2013 buds, particularly small ones, usually overlap with their mothers or neighbours \u2013 by extending the U-net architecture with custom training targets and then applying additional image processing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of BABY's technical approach",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:28:37.867390Z"
+    },
+    {
+      "id": "34d9cfc0-33d0-4a35-8a80-5b4cedc7dac8",
+      "content_id": "f2c83d8f-73cd-4e30-a4ea-812573e34f98",
+      "claim_id": "C19",
+      "claim": "BABY tracks cells between time points with a machine-learning algorithm.",
+      "claim_type": "EXPLICIT",
+      "source": "It tracks cells between time points with a machine-learning algorithm, which is able to resolve any large movements of cells from one image to the next",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of BABY's tracking capability",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:28:37.867390Z"
+    },
+    {
+      "id": "b42be366-609c-4b60-b3c8-6290b5f1ae84",
+      "content_id": "f2c83d8f-73cd-4e30-a4ea-812573e34f98",
+      "claim_id": "C20",
+      "claim": "BABY assigns buds to their mothers by identifying bud necks.",
+      "claim_type": "EXPLICIT",
+      "source": "and assigns buds to their mothers, informed by the U-net. These innovations improve performance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of BABY's lineage assignment capability",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:28:37.867390Z"
+    },
+    {
+      "id": "aea57ce1-c6cd-44ac-b923-1a4c0bb09ef5",
+      "content_id": "f2c83d8f-73cd-4e30-a4ea-812573e34f98",
+      "claim_id": "C21",
+      "claim": "BABY produces high-fidelity time series of the volumes of both mother cells and buds.",
+      "claim_type": "EXPLICIT",
+      "source": "BABY produces high-fidelity time series of the volumes of both mother cells and buds and so the instantaneous growth rates of single cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement of BABY's output capabilities",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:28:37.867390Z"
+    },
+    {
+      "id": "5463c8a8-afaf-4ee9-bbcb-c5a87db90d9a",
+      "content_id": "f2c83d8f-73cd-4e30-a4ea-812573e34f98",
+      "claim_id": "C22",
+      "claim": "There is a peak in growth rate during the S/G2/M phase of the cell cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "Using BABY, we see a peak in growth rate during the S/G2/M phase of the cell cycle",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observation made using BABY algorithm",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:28:37.867390Z"
+    },
+    {
+      "id": "36905674-7ba5-4d22-b78e-3c5873322943",
+      "content_id": "f2c83d8f-73cd-4e30-a4ea-812573e34f98",
+      "claim_id": "C23",
+      "claim": "The peak in growth rate indicates where the bud's growth transitions from being sizer- to timer-controlled.",
+      "claim_type": "EXPLICIT",
+      "source": "and show that this peak indicates where the bud's growth transitions from being sizer- to timer-controlled.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Interpretation of data obtained using BABY",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:28:37.867390Z"
+    },
+    {
+      "id": "48cce8eb-25e2-41b1-b270-c6f52c2e0691",
+      "content_id": "f2c83d8f-73cd-4e30-a4ea-812573e34f98",
+      "claim_id": "C24",
+      "claim": "Fluctuations in Sfp1's nuclear concentration correlate with but precede those in growth rate.",
+      "claim_type": "EXPLICIT",
+      "source": "Studying Sfp1, an activator of ribosome synthesis, we observe that fluctuations in this regulator's nuclear concentration correlate with but precede those in growth rate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observation from experiments using BABY",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:28:37.867390Z"
+    },
+    {
+      "id": "a993bb5d-01f1-4483-b4d7-7b10bf014576",
+      "content_id": "f2c83d8f-73cd-4e30-a4ea-812573e34f98",
+      "claim_id": "C25",
+      "claim": "BABY enables real-time control of experiments based on growth rate.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we demonstrate that BABY enables real-time control, running an experiment where changes in the extracellular medium are triggered automatically when the growth of the imaged cells crosses a pre-determined threshold.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstration experiment performed by the authors",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:28:37.867390Z"
+    },
+    {
+      "id": "e06afbab-9632-49cf-9bd4-5c90bb5d17ee",
+      "content_id": "f2c83d8f-73cd-4e30-a4ea-812573e34f98",
+      "claim_id": "C26",
+      "claim": "Segmenting asymmetrically dividing cells, such as budding yeast, is challenging.",
+      "claim_type": "EXPLICIT",
+      "source": "Segmenting asymmetrically dividing cells, such as budding yeast, is challenging.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement of the computational challenge",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:28:37.867390Z"
+    },
+    {
+      "id": "db0ea98b-a99d-4b0f-a3c6-b535f8f6a13a",
+      "content_id": "f2c83d8f-73cd-4e30-a4ea-812573e34f98",
+      "claim_id": "C27",
+      "claim": "The differing sizes of the mothers and buds makes each appear and behave distinctly.",
+      "claim_type": "EXPLICIT",
+      "source": "The differing sizes of the mothers and buds makes each appear and behave distinctly, yet identifying buds is crucial because they have the fastest growth rates (Ferrezuelo et al., 2012; Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by citation and reference to figure showing growth rate data",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:28:37.867390Z"
+    },
+    {
+      "id": "c3abc2f4-325b-4685-af7f-d587b798922f",
+      "content_id": "f2c83d8f-73cd-4e30-a4ea-812573e34f98",
+      "claim_id": "C28",
+      "claim": "Buds imaged in a single Z section often appear to overlap with their mother and neighbouring cells when constrained in a microfluidic device.",
+      "claim_type": "EXPLICIT",
+      "source": "Even when constrained in a microfluidic device, buds imaged in a single Z section often appear to overlap with their mother and neighbouring cells (Figure 1a and b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observation supported by reference to Figure 1a and b",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:28:37.867390Z"
+    },
+    {
+      "id": "97998e1b-7a0b-49bd-b3a1-ab89b521b0f6",
+      "content_id": "f2c83d8f-73cd-4e30-a4ea-812573e34f98",
+      "claim_id": "C29",
+      "claim": "Buds move more in the Z-axis relative to mother cells, changing how they appear in bright-field images.",
+      "claim_type": "EXPLICIT",
+      "source": "Buds also move more in the Z-axis relative to mother cells, changing how they appear in bright-field images (Figure 1c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observation supported by reference to Figure 1c",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:28:37.867390Z"
+    },
+    {
+      "id": "0fad697a-ab14-4d46-a12c-e8017345d486",
+      "content_id": "f2c83d8f-73cd-4e30-a4ea-812573e34f98",
+      "claim_id": "C30",
+      "claim": "BABY uses a U-net, a convolutional neural network.",
+      "claim_type": "EXPLICIT",
+      "source": "Like others, we use a U-net, a convolutional neural network (CNN) with an architecture that aims to balance accuracy with simplicity (Ronneberger et al., 2015a)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of the technical approach with citation",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:28:37.867390Z"
+    },
+    {
+      "id": "573bfccc-e9d3-40fe-ab86-0413e591310d",
+      "content_id": "f2c83d8f-73cd-4e30-a4ea-812573e34f98",
+      "claim_id": "C31",
+      "claim": "BABY's main innovation is in the choice of training targets.",
+      "claim_type": "EXPLICIT",
+      "source": "and our main innovation is in the choice of training targets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement of the key innovation",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:28:37.867390Z"
+    },
+    {
+      "id": "9690ca03-d00a-4f1b-ae3f-e86580f3ebaa",
+      "content_id": "f2c83d8f-73cd-4e30-a4ea-812573e34f98",
+      "claim_id": "C32",
+      "claim": "BABY can predict overlapping outlines from a single 2D image.",
+      "claim_type": "EXPLICIT",
+      "source": "although BABY can predict overlapping outlines from a single 2D image, and we train on single images.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement of BABY's capability",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:28:37.867390Z"
+    },
+    {
+      "id": "5f9efa39-5d8f-46ec-be01-0a56246cb95b",
+      "content_id": "f2c83d8f-73cd-4e30-a4ea-812573e34f98",
+      "claim_id": "C33",
+      "claim": "How much and how often cells overlap depends on their size.",
+      "claim_type": "EXPLICIT",
+      "source": "Inspecting cells, we noted that how much and how often they overlap depends on their size (Appendix 1\u2014figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observation by the authors, supported by reference to Appendix figure",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:28:37.867390Z"
+    },
+    {
+      "id": "a59c7207-0775-45b8-bf5e-c298d441818d",
+      "content_id": "f2c83d8f-73cd-4e30-a4ea-812573e34f98",
+      "claim_id": "C34",
+      "claim": "Most overlaps occur between mid-sized cells and buds with sizes in the range expected for fast growth.",
+      "claim_type": "EXPLICIT",
+      "source": "Most overlaps occur between mid-sized cells and buds with sizes in the range expected for fast growth (Figure 1\u2014figure supplement 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observation supported by reference to figure",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:28:37.867390Z"
+    },
+    {
+      "id": "99b20db9-6305-4c4b-ba39-5925645d23bf",
+      "content_id": "f2c83d8f-73cd-4e30-a4ea-812573e34f98",
+      "claim_id": "C35",
+      "claim": "BABY divides training data into three categories based on cell size.",
+      "claim_type": "EXPLICIT",
+      "source": "We therefore divided our training data into three categories based on cell size.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of the training data preparation method",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:28:37.867390Z"
+    },
+    {
+      "id": "9a55b89f-9c8b-478a-9546-5aa45d537cca",
+      "content_id": "f2c83d8f-73cd-4e30-a4ea-812573e34f98",
+      "claim_id": "C36",
+      "claim": "BABY applies morphological erosion to decrease overlaps in training images.",
+      "claim_type": "EXPLICIT",
+      "source": "We decreased any remaining overlaps in these training images by applying a morphological erosion (Figure 2b; Appendix 1\u2014figures 1 and 2), shrinking the cells by removing pixels from their boundaries.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Description of image processing technique with figure references",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:28:37.867390Z"
+    },
+    {
+      "id": "85adbca9-a8d5-47de-8429-2bc9f7c8d784",
+      "content_id": "f2c83d8f-73cd-4e30-a4ea-812573e34f98",
+      "claim_id": "C37",
+      "claim": "The bud neck helps to identify which bud belongs to which cell.",
+      "claim_type": "EXPLICIT",
+      "source": "A final target is the 'bud neck' (Figure 2e), which helps to identify which bud belongs to which cell.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Description of a training target with figure reference",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:28:37.867390Z"
+    },
+    {
+      "id": "e7548a21-ab0e-4b14-9a2a-f2cd9059f7f9",
+      "content_id": "f2c83d8f-73cd-4e30-a4ea-812573e34f98",
+      "claim_id": "C38",
+      "claim": "Cytokinesis is sometimes visible as a darkening of the bud neck in bright-field images.",
+      "claim_type": "EXPLICIT",
+      "source": "In bright-field images, cytokinesis is sometimes visible as a darkening of the bud neck, indicating that these images contain information on cytokinesis that the U-net can potentially learn.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observation about bright-field imaging",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:28:37.867390Z"
+    },
+    {
+      "id": "095d1eb5-aef3-4485-a975-6c87933537e0",
+      "content_id": "f2c83d8f-73cd-4e30-a4ea-812573e34f98",
+      "claim_id": "C39",
+      "claim": "BABY achieved high accuracy for predicting the cell interiors early in training and with around 600 training images.",
+      "claim_type": "EXPLICIT",
+      "source": "Using a four-layer U-net, we achieved high accuracy for predicting the cell interiors early in training and with around 600 training images (1,813 annotated cells in total; Figure 2c & Appendix 1\u2014figure 3c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Performance results with figure references",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:28:37.867390Z"
+    },
+    {
+      "id": "ad151fb7-7bcf-4499-a815-2f19d7ecd536",
+      "content_id": "f2c83d8f-73cd-4e30-a4ea-812573e34f98",
+      "claim_id": "C40",
+      "claim": "BABY parameterises cell boundaries using a radial representation.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, and like the StarDist (Schmidt et al., 2018) and DISCO algorithms (Bakker et al., 2018), we parameterise the cell boundaries using a radial representation because we expect yeast cells to appear elliptical \u2013 although we can describe any star-convex shape.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of the boundary representation method with citations",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:28:37.867390Z"
+    },
+    {
+      "id": "ec4a96ac-071c-4659-998e-fd57a86c731d",
+      "content_id": "f2c83d8f-73cd-4e30-a4ea-812573e34f98",
+      "claim_id": "C41",
+      "claim": "BABY outperforms alternatives in cell segmentation.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that BABY outperforms alternatives (Figure 3a), even when we retrain these alternatives with the BABY training data.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Comparison results with figure reference",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:28:37.867390Z"
+    },
+    {
+      "id": "44b22a58-dd08-47e0-a103-e2230b1e2eec",
+      "content_id": "f2c83d8f-73cd-4e30-a4ea-812573e34f98",
+      "claim_id": "C42",
+      "claim": "For larger cell sizes, BABY performs comparably with Cellpose and YeaZ.",
+      "claim_type": "EXPLICIT",
+      "source": "For larger cell sizes, BABY performs comparably with two algorithms based on deep learning: Cellpose (Stringer et al., 2021; Pachitariu and Stringer, 2022), a generalist algorithm, and YeaZ (Dietler et al., 2020), an algorithm optimised for yeast.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison results with citations",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:28:37.867390Z"
+    },
+    {
+      "id": "4c293ab5-a4cc-479a-ba61-2dd244313b0e",
+      "content_id": "f2c83d8f-73cd-4e30-a4ea-812573e34f98",
+      "claim_id": "C43",
+      "claim": "For smaller cell sizes, BABY performs better than Cellpose and YeaZ, identifying buds overlapping with mother cells that both miss.",
+      "claim_type": "EXPLICIT",
+      "source": "For smaller cell sizes, BABY performs better, identifying buds overlapping with mother cells that both Cellpose and YeaZ miss (Figure 3b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Comparison results with figure reference",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:28:37.867390Z"
+    },
+    {
+      "id": "333d0a2d-46fa-4be4-a1b2-900a6c2f4d6c",
+      "content_id": "f2c83d8f-73cd-4e30-a4ea-812573e34f98",
+      "claim_id": "C44",
+      "claim": "BABY performs competitively on time-lapse images of yeast microcolonies.",
+      "claim_type": "EXPLICIT",
+      "source": "To assess its generality, we turned to time-lapse images of yeast microcolonies, training a BABY model on only 6% of the annotated microcolony training data provided by YeaZ and evaluating its performance on the remaining images. BABY performs competitively (Figure 3\u2014figure supplement 2)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Generalization test results with figure reference",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:28:37.867390Z"
+    },
+    {
+      "id": "0c3428b5-1564-4a22-952e-6ec18be20488",
+      "content_id": "f2c83d8f-73cd-4e30-a4ea-812573e34f98",
+      "claim_id": "C45",
+      "claim": "BABY finds a higher fraction of complete tracks than either YeaZ or Cellpose combined with btrack.",
+      "claim_type": "EXPLICIT",
+      "source": "BABY finds a higher fraction of complete tracks than either YeaZ or Cellpose, an algorithm only for segmentation and trained on BABY data, combined with btrack (Ulicna et al., 2021), a tracking algorithm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Tracking performance comparison with citation",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:28:37.867390Z"
+    },
+    {
+      "id": "796b4dff-590e-4af9-b3e1-5c11b5f9d0f4",
+      "content_id": "f2c83d8f-73cd-4e30-a4ea-812573e34f98",
+      "claim_id": "C46",
+      "claim": "BABY estimates growth rates more reliably than other algorithms.",
+      "claim_type": "EXPLICIT",
+      "source": "BABY estimates growth rates more reliably than other algorithms (Figure 3e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Growth rate estimation comparison with figure reference",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:28:37.867390Z"
+    },
+    {
+      "id": "7fcd6e93-7350-429c-93ca-d7619bb1eeb2",
+      "content_id": "f2c83d8f-73cd-4e30-a4ea-812573e34f98",
+      "claim_id": "C47",
+      "claim": "BABY best reproduces the growth rates derived from manually curated ground truth.",
+      "claim_type": "EXPLICIT",
+      "source": "BABY best reproduces the growth rates derived from this ground truth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Validation against ground truth data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:28:37.867390Z"
+    },
+    {
+      "id": "56258a53-39e5-4af7-b462-8a34913cef56",
+      "content_id": "f2c83d8f-73cd-4e30-a4ea-812573e34f98",
+      "claim_id": "C48",
+      "claim": "Cellular growth has two phases: during G1, the mother's growth rate peaks; during S/G2/M, the bud dominates growth with its growth rate peaking approximately midway to cytokinesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Using a fluorescent marker for cytokinesis (Figure 3\u2014figure supplement 6a), we observed that cellular growth has two phases (Figure 3\u2014figure supplement 6b\u2013c). During G1, the mother's growth rate peaks; during S/G2/M, which we identify by the cells having buds, the bud dominates growth with its growth rate peaking approximately midway to cytokinesis (Ferrezuelo et al., 2012).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observation from experiments with figure references and citation",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:28:37.867390Z"
+    },
+    {
+      "id": "431be95c-a2b0-4fa1-97e2-f24330007b2c",
+      "content_id": "f2c83d8f-73cd-4e30-a4ea-812573e34f98",
+      "claim_id": "C49",
+      "claim": "The maximal growth rate of buds occurs at similar times relative to cytokinesis despite substantial differences in the duration of the S/G2/M phases in different carbon sources.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparing growth rates over S/G2/M for buds in different carbon sources, we found that the maximal growth rate occurs at similar times relative to cytokinesis despite substantial differences in the duration of the S/G2/M phases (Figure 4a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental observation with figure reference",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:28:37.867390Z"
+    },
+    {
+      "id": "3b4e33b1-1f34-4c1d-a048-8f26a932eb21",
+      "content_id": "f2c83d8f-73cd-4e30-a4ea-812573e34f98",
+      "claim_id": "C50",
+      "claim": "Daughters born in rich media are larger than those born in poor media.",
+      "claim_type": "EXPLICIT",
+      "source": "Daughters born in rich media are larger than those born in poor media, and some of this regulation occurs during S/G2/M (Johnston et al., 1977; Jorgensen et al., 2004; Leitao and Kellogg, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement supported by citations",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:28:37.867390Z"
+    },
+    {
+      "id": "29fe471b-cd1c-4b2e-a165-b93a1b62dedb",
+      "content_id": "f2c83d8f-73cd-4e30-a4ea-812573e34f98",
+      "claim_id": "C51",
+      "claim": "Buds have similar sizes when their growth rates peak in all carbon sources.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to how their sizes vary immediately after cytokinesis, buds have similar sizes when their growth rates peak \u2014 in all carbon sources (Figure 4b)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental observation with figure reference",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:28:37.867390Z"
+    },
+    {
+      "id": "8c7409e6-4806-4c7f-8d75-802b4c5d4ae0",
+      "content_id": "f2c83d8f-73cd-4e30-a4ea-812573e34f98",
+      "claim_id": "C52",
+      "claim": "The bud's average growth rate correlates positively with the volume of the daughter it becomes.",
+      "claim_type": "EXPLICIT",
+      "source": "During the subsequent constant time to cytokinesis, the faster growth in richer carbon sources would then generate larger daughters, and we observe that the bud's average growth rate correlates positively with the volume of the daughter it becomes (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental observation with figure reference",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:28:37.867390Z"
+    },
+    {
+      "id": "8927bebb-762f-4867-9efa-33c97ade9155",
+      "content_id": "f2c83d8f-73cd-4e30-a4ea-812573e34f98",
+      "claim_id": "C53",
+      "claim": "Cells likely implement some size regulation in S/G2/M as they approach cytokinesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Cells likely therefore implement some size regulation in S/G2/M as they approach cytokinesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from experimental data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:28:37.867390Z"
+    },
+    {
+      "id": "1722ee3e-6a49-4da0-ac2c-5ca6def28052",
+      "content_id": "f2c83d8f-73cd-4e30-a4ea-812573e34f98",
+      "claim_id": "C54",
+      "claim": "Bud growth is likely first sizer- then timer-controlled.",
+      "claim_type": "EXPLICIT",
+      "source": "our data suggest a sequential mechanism to match size to growth rate, with a nutrient-independent sizer followed by a nutrient-dependent timer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from experimental data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:28:37.867390Z"
+    },
+    {
+      "id": "efe75731-7827-479c-b55b-cf64304e0193",
+      "content_id": "f2c83d8f-73cd-4e30-a4ea-812573e34f98",
+      "claim_id": "C55",
+      "claim": "Sfp1 promotes the synthesis of ribosomes by activating the ribosomal protein (RP) and ribosome biogenesis (RiBi) genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Sfp1 promotes the synthesis of ribosomes by activating the ribosomal protein (RP) and ribosome biogenesis (RiBi) genes (Jorgensen et al., 2004; Albert et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:28:37.867390Z"
+    },
+    {
+      "id": "d3ca46f3-f009-432d-b904-be5712095405",
+      "content_id": "f2c83d8f-73cd-4e30-a4ea-812573e34f98",
+      "claim_id": "C56",
+      "claim": "Sfp1 enters the nucleus upon being phosphorylated directly by TORC1 and likely protein kinase A.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon being phosphorylated directly by TORC1 and likely protein kinase A (Jorgensen et al., 2004; Lempi\u00e4inen et al., 2009; Singh and Tyers, 2009) \u2013 two conserved nutrient-sensing kinases, Sfp1 enters the nucleus (Figure 5a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by citations and figure reference",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:28:37.867390Z"
+    },
+    {
+      "id": "b548f86c-0d2f-46f7-b568-c9427f8fee62",
+      "content_id": "f2c83d8f-73cd-4e30-a4ea-812573e34f98",
+      "claim_id": "C57",
+      "claim": "In steady-state conditions, levels of ribosomes positively correlate with growth rate.",
+      "claim_type": "EXPLICIT",
+      "source": "In steady-state conditions, levels of ribosomes positively correlate with growth rate (Metzl-Raz et al., 2017)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:28:37.867390Z"
+    },
+    {
+      "id": "5b07dbf4-2c18-4451-9d65-d07707ddff63",
+      "content_id": "f2c83d8f-73cd-4e30-a4ea-812573e34f98",
+      "claim_id": "C58",
+      "claim": "Sfp1 responds quickly to both up- and downshifts in nutrients.",
+      "claim_type": "EXPLICIT",
+      "source": "Shifting cells from glucose to the poorer carbon source palatinose and back again, we observed that Sfp1 responds quickly to both the up- and downshifts",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Experimental observation",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:28:37.867390Z"
+    },
+    {
+      "id": "4cbfb015-ae0a-4cee-a8c6-2244c79563d7",
+      "content_id": "f2c83d8f-73cd-4e30-a4ea-812573e34f98",
+      "claim_id": "C59",
+      "claim": "Growth rate responds as quickly to downshifts as Sfp1, but more slowly to upshifts.",
+      "claim_type": "EXPLICIT",
+      "source": "and that growth rate responds as quickly to downshifts, but more slowly to upshifts (Figure 5b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental observation with figure reference",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:28:37.867390Z"
+    },
+    {
+      "id": "18de5eb5-74ca-4a59-a55d-fd93e0715441",
+      "content_id": "f2c83d8f-73cd-4e30-a4ea-812573e34f98",
+      "claim_id": "C62",
+      "claim": "Downshift half-times are less variable than those for upshifts, consistent with fast post-translational regulation.",
+      "claim_type": "EXPLICIT",
+      "source": "and downshift half-times are less variable than those for upshifts, consistent with fast post-translational regulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observation and interpretation from experimental data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:28:37.867390Z"
+    },
+    {
+      "id": "20f3604e-6c07-4fda-8e43-28db2f66dd27",
+      "content_id": "f2c83d8f-73cd-4e30-a4ea-812573e34f98",
+      "claim_id": "C63",
+      "claim": "Fluctuations in Sfp1 lead those in growth rate by an average of 25 min in glucose and by 50 min in palatinose.",
+      "claim_type": "EXPLICIT",
+      "source": "Cross-correlating nuclear Sfp1 with growth rate shows that fluctuations in Sfp1 do lead those in growth rate, by an average of 25 min in glucose and by 50 min in palatinose (Figure 5d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Quantitative analysis from experimental data with figure reference",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:28:37.867390Z"
+    },
+    {
+      "id": "d5513b49-8dcd-41ac-9174-3ed594eb1e81",
+      "content_id": "f2c83d8f-73cd-4e30-a4ea-812573e34f98",
+      "claim_id": "C64",
+      "claim": "The weak strength of correlation between Sfp1 and growth rate suggests substantial control besides Sfp1.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, the weak strength of this correlation suggests substantial control besides Sfp1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from correlation analysis",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:28:37.867390Z"
+    },
+    {
+      "id": "5ed03b41-6c06-48e1-924b-d3b28b6b565c",
+      "content_id": "f2c83d8f-73cd-4e30-a4ea-812573e34f98",
+      "claim_id": "C65",
+      "claim": "During the downshift, the growth rate transiently drops to zero irrespective of a cell's stage in the cell cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "During the downshift, we note that the growth rate transiently drops to zero (Figure 5b), irrespective of a cell's stage in the cell cycle (Figure 5\u2014figure supplement 1)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental observation with figure references",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:28:37.867390Z"
+    },
+    {
+      "id": "9528b0ec-3e73-4821-baaa-57176fba0c32",
+      "content_id": "f2c83d8f-73cd-4e30-a4ea-812573e34f98",
+      "claim_id": "C66",
+      "claim": "There is a coincident rise in the fraction of cells in G1 during the downshift, suggesting that cells arrest in that phase.",
+      "claim_type": "EXPLICIT",
+      "source": "and there is a coincident rise in the fraction of cells in G1 (Figure 5b bottom), suggesting that cells arrest in that phase.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental observation with figure reference and interpretation",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:28:37.867390Z"
+    },
+    {
+      "id": "50bcfbb8-9a0c-4c75-bc7a-7796be8c68d8",
+      "content_id": "f2c83d8f-73cd-4e30-a4ea-812573e34f98",
+      "claim_id": "C67",
+      "claim": "BABY's speed and accuracy enables cells to be identified in images and their growth rates estimated during an experiment.",
+      "claim_type": "EXPLICIT",
+      "source": "With BABY, we can use growth rate as a control variable in real time because BABY's speed and accuracy enables cells to be identified in images and their growth rates estimated during an experiment (Figure 6a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstration of BABY's capability with figure reference",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:28:37.867390Z"
+    },
+    {
+      "id": "53a66708-a524-432e-b027-680f8146ed99",
+      "content_id": "f2c83d8f-73cd-4e30-a4ea-812573e34f98",
+      "claim_id": "C68",
+      "claim": "BABY can automatically determine the fraction of cells that have escaped the lag at each time point.",
+      "claim_type": "EXPLICIT",
+      "source": "Using BABY, we automatically determined the fraction of cells that have escaped the lag at each time point \u2014 those cells that have at least one bud or daughter whose growth rate exceeds a threshold (Figure 6b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstration experiment with figure reference",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:28:37.867390Z"
+    },
+    {
+      "id": "50af896b-42a2-4d45-b13f-2cfeb94a0608",
+      "content_id": "f2c83d8f-73cd-4e30-a4ea-812573e34f98",
+      "claim_id": "C69",
+      "claim": "All cells resume dividing in glucose and initially grow synchronously because of the rapid change of media.",
+      "claim_type": "EXPLICIT",
+      "source": "We note that all cells resume dividing in glucose and initially grow synchronously because of the rapid change of media.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observation from real-time control experiment",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:28:37.867390Z"
+    },
+    {
+      "id": "d9a355fd-ebd1-47e8-a810-5304ecfa5154",
+      "content_id": "f2c83d8f-73cd-4e30-a4ea-812573e34f98",
+      "claim_id": "C70",
+      "claim": "BABY allows single-cell fluorescence and growth rates to be control variables.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike previous approaches though, which typically measure fluorescence, BABY not only allows single-cell fluorescence but also growth rates to be control variables",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement of BABY's capability compared to previous approaches",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:28:37.867390Z"
+    },
+    {
+      "id": "91c68159-d0a7-4d1e-b96c-272077c5f9ce",
+      "content_id": "f2c83d8f-73cd-4e30-a4ea-812573e34f98",
+      "claim_id": "C71",
+      "claim": "Training data for the segmentation and bud assignment models comprises bright-field time-lapse images of yeast cells and manually curated annotations.",
+      "claim_type": "EXPLICIT",
+      "source": "Training data for the segmentation and bud assignment models comprises bright-field time-lapse images of yeast cells and manually curated annotations: a bit-mask outline for each cell (a binary image with the pixels constituting the cell marked with ones) and its associated tracking label and lineage assignment, if any.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of training data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:28:37.867390Z"
+    },
+    {
+      "id": "1da48de7-18b0-43ae-ae3f-fe046cedeb84",
+      "content_id": "f2c83d8f-73cd-4e30-a4ea-812573e34f98",
+      "claim_id": "C72",
+      "claim": "The training data includes a total of 3233 annotated cell outlines distributed across 1028 time points, 130 traps, and 28 fields-of-view.",
+      "claim_type": "EXPLICIT",
+      "source": "These images were from six independent experiments and annotated by three different people and include a total of 3233 annotated cell outlines distributed across 1028 time points, 130 traps, and 28 fields-of-view.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Quantitative description of training data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:28:37.867390Z"
+    },
+    {
+      "id": "bb4647bd-fb75-4e62-a11a-41be2c7ed369",
+      "content_id": "f2c83d8f-73cd-4e30-a4ea-812573e34f98",
+      "claim_id": "C73",
+      "claim": "All strains used in the curated training images were derivatives of BY4741.",
+      "claim_type": "EXPLICIT",
+      "source": "Strains included in the curated training images were all derivatives of BY4741 (Brachmann et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of strains with citation",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:28:37.867390Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "8c01ff3d-b699-42c1-84d6-2c8fa9341f9f",
+      "content_id": "f2c83d8f-73cd-4e30-a4ea-812573e34f98",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "BABY is a computational pipeline that uses a modified U-net CNN with custom training targets to segment overlapping budding yeast cells, track them over time, assign mother-bud lineages, and estimate single-cell growth rates from label-free bright-field images. The key innovation is dividing training data into three size categories and applying morphological erosion to reduce overlaps, combined with bud neck detection and radial spline boundary parameterization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C21, C30-C32, C35-C37, C39-C40, and C71-C73 collectively describe BABY's architecture, training approach, and capabilities. The training data (3233 annotated cells from 1028 time points) is well-documented (C72), the technical innovations are clearly described (C31, C35-C36), and performance metrics are provided (C39). The methodological description is sufficiently detailed and internally consistent.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:28:37.867390Z"
+    },
+    {
+      "id": "fddcaf2e-4823-4bb6-b02c-4a4ac97e6dfa",
+      "content_id": "f2c83d8f-73cd-4e30-a4ea-812573e34f98",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "BABY outperforms existing algorithms (Cellpose, YeaZ, DISCO) in segmenting budding yeast cells, particularly for smaller cell sizes and overlapping buds. BABY achieves higher tracking completeness and more accurate growth rate estimation compared to alternatives, even when those alternatives are retrained on BABY's training data.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C47 present comparative performance data with appropriate metrics (IoU, track completeness, RMSE for growth rates) and are supported by multiple figures (Figure 3a-e). The comparisons include both pre-trained and retrained versions of competing algorithms, and validation against manually curated ground truth strengthens the claims. The performance advantage is particularly notable for small buds (C43), which aligns with BABY's design goals.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:28:37.867390Z"
+    },
+    {
+      "id": "9dc5b6a4-3026-42b9-9bcd-885d8113d661",
+      "content_id": "f2c83d8f-73cd-4e30-a4ea-812573e34f98",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Using BABY, the authors discovered that bud growth exhibits two regulatory phases: a nutrient-independent sizer mechanism where buds reach similar sizes at peak growth rate across different carbon sources, followed by a nutrient-dependent timer mechanism that determines final daughter size. The peak in bud growth rate occurs at similar times relative to cytokinesis despite different S/G2/M phase durations in different media.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C54 present a coherent biological finding supported by experimental data across multiple carbon sources (glucose, raffinose, pyruvate, palatinose) with appropriate fluorescent markers (Figure 4a-b, Figure 3\u2014figure supplement 6). The observation that buds have similar sizes at peak growth rate across conditions (C51) despite different birth sizes (C50) supports the sizer-then-timer model (C54). The correlation between average bud growth rate and daughter volume (C52) provides additional support. However, the mechanistic interpretation (C53-C54) involves inference beyond direct observation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:28:37.867390Z"
+    },
+    {
+      "id": "ade3e94a-1907-480c-a9a1-0c29f8409c84",
+      "content_id": "f2c83d8f-73cd-4e30-a4ea-812573e34f98",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Fluctuations in nuclear Sfp1 concentration precede changes in growth rate by 25 minutes in glucose and 50 minutes in palatinose. Sfp1 and growth rate respond quickly to nutrient downshifts (8\u00b11 min for growth rate), but growth rate lags Sfp1 during upshifts (30\u00b12 min delay). The weak correlation strength suggests substantial growth control beyond Sfp1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C64 describe Sfp1's role (supported by citations C55-C57) and present original experimental observations using nutrient shifts (C58-C59, C62-C63). The quantitative timing measurements are specific and include confidence intervals (C62-C63), and the cross-correlation analysis (Figure 5d) supports the temporal relationship. The interpretation acknowledging weak correlation and additional control mechanisms (C64) is appropriately cautious. The differential response to upshifts versus downshifts (C59, C62) is consistent with known biology of ribosome synthesis versus inactivation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:28:37.867390Z"
+    },
+    {
+      "id": "f4dde3d5-88ce-4e8f-acbb-91236ad978fb",
+      "content_id": "f2c83d8f-73cd-4e30-a4ea-812573e34f98",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "During nutrient downshift from glucose to palatinose, growth rate transiently drops to zero regardless of cell cycle stage, coinciding with an increase in the fraction of cells in G1 phase, suggesting cell cycle arrest in G1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C66 describe observations from the nutrient shift experiments supported by Figure 5b and Figure 5\u2014figure supplement 1. The transient growth arrest is documented across cell cycle phases (C65), and the coincident increase in G1 cells (C66) supports the arrest interpretation. However, the inference that cells arrest specifically in G1 (C66) is based on correlation rather than direct cell cycle markers.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:28:37.867390Z"
+    },
+    {
+      "id": "b86db059-9b6d-4007-957f-cc3f569e1c74",
+      "content_id": "f2c83d8f-73cd-4e30-a4ea-812573e34f98",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "BABY enables real-time control of experiments based on growth rate measurements. The authors demonstrated this by automatically switching media when 50% of cells resumed dividing after a nutrient downshift, showing that growth rate can serve as a control variable for feedback experiments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C70 and C25 describe BABY's real-time capabilities with a proof-of-principle experiment (Figure 6). The demonstration shows automatic detection of cells escaping lag phase (C68) and triggered media switching (C25), with observed synchronous growth resumption (C69). The claim that this enables more sophisticated feedback control (C70) is reasonable but represents future potential rather than demonstrated capability. The experiment successfully validates real-time operation but is relatively simple compared to model-predictive control mentioned in the text.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:28:37.867390Z"
+    },
+    {
+      "id": "b9614841-6664-4eae-ba98-5654a831bcd9",
+      "content_id": "f2c83d8f-73cd-4e30-a4ea-812573e34f98",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Segmenting budding yeast is challenging because mothers and buds differ in size and appearance, buds frequently overlap with mothers and neighbors in microfluidic devices, and buds move in the Z-axis changing their appearance. The frequency and extent of overlap depends on cell size, with most overlaps occurring between mid-sized cells and fast-growing buds.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C29 and C33-C34 establish the computational challenge that motivates BABY's design. The observations are supported by direct imaging data (Figure 1a-c) and analysis of overlap patterns (Appendix 1\u2014figure 2, Figure 1\u2014figure supplement 1a). These claims provide important context for understanding BABY's innovations and are well-documented with visual evidence.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:28:37.867390Z"
+    },
+    {
+      "id": "6ab5a6fd-0505-4584-ac93-4776899c958e",
+      "content_id": "f2c83d8f-73cd-4e30-a4ea-812573e34f98",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Cell overlap is a widespread but often undeclared problem in yeast microscopy across multiple experimental platforms. While cell segmentation and tracking software is well-established and enhanced by deep learning, few algorithms handle overlaps, and lineage assignment typically requires manual annotation or fluorescent markers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C16 establish the state of the field and identify gaps that BABY addresses. The claims about overlap prevalence (C10-C11) are supported by the authors' observations and multiple citations to different experimental setups. The characterization of existing software capabilities (C12-C16) is well-supported by citations to relevant algorithms. These claims effectively motivate the need for BABY but represent background rather than novel findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:28:37.867390Z"
+    },
+    {
+      "id": "f1516952-ebe9-449c-9933-089654743a4a",
+      "content_id": "f2c83d8f-73cd-4e30-a4ea-812573e34f98",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Growth rate correlates with fitness in microbes, cells regulate growth through ribosome synthesis and nutrient balance, and coordinate growth with division to achieve target sizes. Time-lapse microscopy with microfluidics has been pivotal for single-cell studies, but measuring growth rates in budding yeast is more challenging than in symmetrically dividing cells like E. coli.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C8 provide biological and technical background supported by appropriate citations. These are established facts from prior work rather than novel findings from this study. The claims accurately represent the state of knowledge and provide context for the manuscript's contributions. All claims are properly attributed to prior literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:28:37.867390Z"
+    },
+    {
+      "id": "031a2618-8ce9-46af-a0a3-00e9753abe61",
+      "content_id": "f2c83d8f-73cd-4e30-a4ea-812573e34f98",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Cytokinesis is sometimes visible as a darkening of the bud neck in bright-field images, indicating that these images contain information about cytokinesis that the U-net can potentially learn.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C38 describes an observation about bright-field imaging that informs BABY's design. The claim is reasonable based on known biology and imaging physics, though the inference that U-net can learn this feature is speculative. This represents a minor technical observation supporting the inclusion of bud neck as a training target.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:28:37.867390Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "1688540d-8eae-4f7f-a84f-0fd213dbc69b",
+      "result_id": "8c01ff3d-b699-42c1-84d6-2c8fa9341f9f"
+    },
+    {
+      "claim_id": "80d158f5-0079-4434-a846-40caf98c7939",
+      "result_id": "8c01ff3d-b699-42c1-84d6-2c8fa9341f9f"
+    },
+    {
+      "claim_id": "34d9cfc0-33d0-4a35-8a80-5b4cedc7dac8",
+      "result_id": "8c01ff3d-b699-42c1-84d6-2c8fa9341f9f"
+    },
+    {
+      "claim_id": "b42be366-609c-4b60-b3c8-6290b5f1ae84",
+      "result_id": "8c01ff3d-b699-42c1-84d6-2c8fa9341f9f"
+    },
+    {
+      "claim_id": "aea57ce1-c6cd-44ac-b923-1a4c0bb09ef5",
+      "result_id": "8c01ff3d-b699-42c1-84d6-2c8fa9341f9f"
+    },
+    {
+      "claim_id": "0fad697a-ab14-4d46-a12c-e8017345d486",
+      "result_id": "8c01ff3d-b699-42c1-84d6-2c8fa9341f9f"
+    },
+    {
+      "claim_id": "573bfccc-e9d3-40fe-ab86-0413e591310d",
+      "result_id": "8c01ff3d-b699-42c1-84d6-2c8fa9341f9f"
+    },
+    {
+      "claim_id": "9690ca03-d00a-4f1b-ae3f-e86580f3ebaa",
+      "result_id": "8c01ff3d-b699-42c1-84d6-2c8fa9341f9f"
+    },
+    {
+      "claim_id": "99b20db9-6305-4c4b-ba39-5925645d23bf",
+      "result_id": "8c01ff3d-b699-42c1-84d6-2c8fa9341f9f"
+    },
+    {
+      "claim_id": "9a55b89f-9c8b-478a-9546-5aa45d537cca",
+      "result_id": "8c01ff3d-b699-42c1-84d6-2c8fa9341f9f"
+    },
+    {
+      "claim_id": "85adbca9-a8d5-47de-8429-2bc9f7c8d784",
+      "result_id": "8c01ff3d-b699-42c1-84d6-2c8fa9341f9f"
+    },
+    {
+      "claim_id": "095d1eb5-aef3-4485-a975-6c87933537e0",
+      "result_id": "8c01ff3d-b699-42c1-84d6-2c8fa9341f9f"
+    },
+    {
+      "claim_id": "ad151fb7-7bcf-4499-a815-2f19d7ecd536",
+      "result_id": "8c01ff3d-b699-42c1-84d6-2c8fa9341f9f"
+    },
+    {
+      "claim_id": "91c68159-d0a7-4d1e-b96c-272077c5f9ce",
+      "result_id": "8c01ff3d-b699-42c1-84d6-2c8fa9341f9f"
+    },
+    {
+      "claim_id": "1da48de7-18b0-43ae-ae3f-fe046cedeb84",
+      "result_id": "8c01ff3d-b699-42c1-84d6-2c8fa9341f9f"
+    },
+    {
+      "claim_id": "bb4647bd-fb75-4e62-a11a-41be2c7ed369",
+      "result_id": "8c01ff3d-b699-42c1-84d6-2c8fa9341f9f"
+    },
+    {
+      "claim_id": "ec4a96ac-071c-4659-998e-fd57a86c731d",
+      "result_id": "fddcaf2e-4823-4bb6-b02c-4a4ac97e6dfa"
+    },
+    {
+      "claim_id": "44b22a58-dd08-47e0-a103-e2230b1e2eec",
+      "result_id": "fddcaf2e-4823-4bb6-b02c-4a4ac97e6dfa"
+    },
+    {
+      "claim_id": "4c293ab5-a4cc-479a-ba61-2dd244313b0e",
+      "result_id": "fddcaf2e-4823-4bb6-b02c-4a4ac97e6dfa"
+    },
+    {
+      "claim_id": "333d0a2d-46fa-4be4-a1b2-900a6c2f4d6c",
+      "result_id": "fddcaf2e-4823-4bb6-b02c-4a4ac97e6dfa"
+    },
+    {
+      "claim_id": "0c3428b5-1564-4a22-952e-6ec18be20488",
+      "result_id": "fddcaf2e-4823-4bb6-b02c-4a4ac97e6dfa"
+    },
+    {
+      "claim_id": "796b4dff-590e-4af9-b3e1-5c11b5f9d0f4",
+      "result_id": "fddcaf2e-4823-4bb6-b02c-4a4ac97e6dfa"
+    },
+    {
+      "claim_id": "7fcd6e93-7350-429c-93ca-d7619bb1eeb2",
+      "result_id": "fddcaf2e-4823-4bb6-b02c-4a4ac97e6dfa"
+    },
+    {
+      "claim_id": "56258a53-39e5-4af7-b462-8a34913cef56",
+      "result_id": "9dc5b6a4-3026-42b9-9bcd-885d8113d661"
+    },
+    {
+      "claim_id": "431be95c-a2b0-4fa1-97e2-f24330007b2c",
+      "result_id": "9dc5b6a4-3026-42b9-9bcd-885d8113d661"
+    },
+    {
+      "claim_id": "3b4e33b1-1f34-4c1d-a048-8f26a932eb21",
+      "result_id": "9dc5b6a4-3026-42b9-9bcd-885d8113d661"
+    },
+    {
+      "claim_id": "29fe471b-cd1c-4b2e-a165-b93a1b62dedb",
+      "result_id": "9dc5b6a4-3026-42b9-9bcd-885d8113d661"
+    },
+    {
+      "claim_id": "8c7409e6-4806-4c7f-8d75-802b4c5d4ae0",
+      "result_id": "9dc5b6a4-3026-42b9-9bcd-885d8113d661"
+    },
+    {
+      "claim_id": "8927bebb-762f-4867-9efa-33c97ade9155",
+      "result_id": "9dc5b6a4-3026-42b9-9bcd-885d8113d661"
+    },
+    {
+      "claim_id": "1722ee3e-6a49-4da0-ac2c-5ca6def28052",
+      "result_id": "9dc5b6a4-3026-42b9-9bcd-885d8113d661"
+    },
+    {
+      "claim_id": "efe75731-7827-479c-b55b-cf64304e0193",
+      "result_id": "ade3e94a-1907-480c-a9a1-0c29f8409c84"
+    },
+    {
+      "claim_id": "d3ca46f3-f009-432d-b904-be5712095405",
+      "result_id": "ade3e94a-1907-480c-a9a1-0c29f8409c84"
+    },
+    {
+      "claim_id": "b548f86c-0d2f-46f7-b568-c9427f8fee62",
+      "result_id": "ade3e94a-1907-480c-a9a1-0c29f8409c84"
+    },
+    {
+      "claim_id": "5b07dbf4-2c18-4451-9d65-d07707ddff63",
+      "result_id": "ade3e94a-1907-480c-a9a1-0c29f8409c84"
+    },
+    {
+      "claim_id": "4cbfb015-ae0a-4cee-a8c6-2244c79563d7",
+      "result_id": "ade3e94a-1907-480c-a9a1-0c29f8409c84"
+    },
+    {
+      "claim_id": "18de5eb5-74ca-4a59-a55d-fd93e0715441",
+      "result_id": "ade3e94a-1907-480c-a9a1-0c29f8409c84"
+    },
+    {
+      "claim_id": "20f3604e-6c07-4fda-8e43-28db2f66dd27",
+      "result_id": "ade3e94a-1907-480c-a9a1-0c29f8409c84"
+    },
+    {
+      "claim_id": "d5513b49-8dcd-41ac-9174-3ed594eb1e81",
+      "result_id": "ade3e94a-1907-480c-a9a1-0c29f8409c84"
+    },
+    {
+      "claim_id": "5ed03b41-6c06-48e1-924b-d3b28b6b565c",
+      "result_id": "f4dde3d5-88ce-4e8f-acbb-91236ad978fb"
+    },
+    {
+      "claim_id": "9528b0ec-3e73-4821-baaa-57176fba0c32",
+      "result_id": "f4dde3d5-88ce-4e8f-acbb-91236ad978fb"
+    },
+    {
+      "claim_id": "50bcfbb8-9a0c-4c75-bc7a-7796be8c68d8",
+      "result_id": "b86db059-9b6d-4007-957f-cc3f569e1c74"
+    },
+    {
+      "claim_id": "53a66708-a524-432e-b027-680f8146ed99",
+      "result_id": "b86db059-9b6d-4007-957f-cc3f569e1c74"
+    },
+    {
+      "claim_id": "50af896b-42a2-4d45-b13f-2cfeb94a0608",
+      "result_id": "b86db059-9b6d-4007-957f-cc3f569e1c74"
+    },
+    {
+      "claim_id": "d9a355fd-ebd1-47e8-a810-5304ecfa5154",
+      "result_id": "b86db059-9b6d-4007-957f-cc3f569e1c74"
+    },
+    {
+      "claim_id": "a993bb5d-01f1-4483-b4d7-7b10bf014576",
+      "result_id": "b86db059-9b6d-4007-957f-cc3f569e1c74"
+    },
+    {
+      "claim_id": "e06afbab-9632-49cf-9bd4-5c90bb5d17ee",
+      "result_id": "b9614841-6664-4eae-ba98-5654a831bcd9"
+    },
+    {
+      "claim_id": "db0ea98b-a99d-4b0f-a3c6-b535f8f6a13a",
+      "result_id": "b9614841-6664-4eae-ba98-5654a831bcd9"
+    },
+    {
+      "claim_id": "c3abc2f4-325b-4685-af7f-d587b798922f",
+      "result_id": "b9614841-6664-4eae-ba98-5654a831bcd9"
+    },
+    {
+      "claim_id": "97998e1b-7a0b-49bd-b3a1-ab89b521b0f6",
+      "result_id": "b9614841-6664-4eae-ba98-5654a831bcd9"
+    },
+    {
+      "claim_id": "5f9efa39-5d8f-46ec-be01-0a56246cb95b",
+      "result_id": "b9614841-6664-4eae-ba98-5654a831bcd9"
+    },
+    {
+      "claim_id": "a59c7207-0775-45b8-bf5e-c298d441818d",
+      "result_id": "b9614841-6664-4eae-ba98-5654a831bcd9"
+    },
+    {
+      "claim_id": "3e216970-1286-42ce-a6d5-4d1924505c80",
+      "result_id": "6ab5a6fd-0505-4584-ac93-4776899c958e"
+    },
+    {
+      "claim_id": "e95e4332-cb26-4708-83be-904889e4ed85",
+      "result_id": "6ab5a6fd-0505-4584-ac93-4776899c958e"
+    },
+    {
+      "claim_id": "041351c5-880c-4fbe-9d57-1419f741cdb4",
+      "result_id": "6ab5a6fd-0505-4584-ac93-4776899c958e"
+    },
+    {
+      "claim_id": "9fb2d0dc-18fc-49f0-994a-be3fd833410a",
+      "result_id": "6ab5a6fd-0505-4584-ac93-4776899c958e"
+    },
+    {
+      "claim_id": "5683fc3a-4901-4c8e-9960-dc1edafbc0fc",
+      "result_id": "6ab5a6fd-0505-4584-ac93-4776899c958e"
+    },
+    {
+      "claim_id": "1eae62e7-8c83-478d-8a7e-cefa0ad1b333",
+      "result_id": "6ab5a6fd-0505-4584-ac93-4776899c958e"
+    },
+    {
+      "claim_id": "7c39dc4e-014d-45b3-888e-cac705505fb5",
+      "result_id": "6ab5a6fd-0505-4584-ac93-4776899c958e"
+    },
+    {
+      "claim_id": "35bdb7dc-e93a-49bf-a270-8327b39a3482",
+      "result_id": "6ab5a6fd-0505-4584-ac93-4776899c958e"
+    },
+    {
+      "claim_id": "5a9d7a2b-af04-4991-9ce3-a91e2b0bf9fb",
+      "result_id": "f1516952-ebe9-449c-9933-089654743a4a"
+    },
+    {
+      "claim_id": "2d57fa3d-f583-48ad-9490-8a7052007826",
+      "result_id": "f1516952-ebe9-449c-9933-089654743a4a"
+    },
+    {
+      "claim_id": "762bd49f-c801-4ea7-b6ef-cb39e902e54e",
+      "result_id": "f1516952-ebe9-449c-9933-089654743a4a"
+    },
+    {
+      "claim_id": "4a0ecd5c-9a75-42f9-ac34-6528c818ecc6",
+      "result_id": "f1516952-ebe9-449c-9933-089654743a4a"
+    },
+    {
+      "claim_id": "dbe20db3-2f00-4df0-a401-cb6abafd9bd1",
+      "result_id": "f1516952-ebe9-449c-9933-089654743a4a"
+    },
+    {
+      "claim_id": "3262e779-f93f-47e0-91de-8b393527662c",
+      "result_id": "f1516952-ebe9-449c-9933-089654743a4a"
+    },
+    {
+      "claim_id": "1d11376d-3f35-4189-a3c9-8091bd9fb9be",
+      "result_id": "f1516952-ebe9-449c-9933-089654743a4a"
+    },
+    {
+      "claim_id": "9ee8b911-a9eb-4941-a9ef-d27e6acafc44",
+      "result_id": "f1516952-ebe9-449c-9933-089654743a4a"
+    },
+    {
+      "claim_id": "e7548a21-ab0e-4b14-9a2a-f2cd9059f7f9",
+      "result_id": "031a2618-8ce9-46af-a0a3-00e9753abe61"
+    }
+  ],
+  "comparisons": []
+}

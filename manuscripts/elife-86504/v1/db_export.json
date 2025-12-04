@@ -1,0 +1,1074 @@
+{
+  "submission": {
+    "id": "22e1271a-e8fd-40b5-a002-647ee5693fbd",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-04T01:58:35.430405Z",
+    "updated_at": "2025-12-04T01:58:35.430405Z"
+  },
+  "content": [
+    {
+      "id": "db954a1f-d259-470b-bc77-67b7bc41d07d",
+      "submission_id": "22e1271a-e8fd-40b5-a002-647ee5693fbd",
+      "content_type": "manuscript",
+      "content_text": "# A single-cell transcriptome atlas of pig skin characterizes anatomical positional heterogeneity\n\n## Authors\n\n- Qin Zou<sup>1</sup>\n- Rong Yuan<sup>2</sup>\n- Yu Zhang<sup>3</sup>\n- Yifei Wang<sup>1</sup>\n- Ting Zheng<sup>1</sup>\n- Rui Shi<sup>1</sup>\n- Mei Zhang<sup>1</sup>\n- Yujing Li<sup>1</sup>\n- Kaixin Fei<sup>1</sup>\n- Ran Feng<sup>1</sup>\n- Binyun Pan<sup>1</sup>\n- Xinyue Zhang<sup>1</sup>\n- Zhengyin Gong<sup>1</sup>\n- Li Zhu<sup>4</sup>\n- Guoqing Tang<sup>4</sup>\n- Mingzhou Li<sup>4</sup>\n- Xuewei Li<sup>4</sup>\n- Yanzhi Jiang<sup>1</sup> ([ORCID: 0000-0002-9568-557X](https://orcid.org/0000-0002-9568-557X)) \u2020\n\n### Affiliations\n\n1. Department of Zoology, College of Life Science, Sichuan Agricultural University Ya'an China ([ROR:0388c3403](https://ror.org/0388c3403))\n2. Chengdu Livestock and Poultry Genetic Resources Protection Center Chengdu China\n3. BGI Beijing Genome Institute Beijing China ([ROR:045pn2j94](https://ror.org/045pn2j94))\n4. College of Animal Science and Technology, Sichuan Agricultural University Chengdu China ([ROR:0388c3403](https://ror.org/0388c3403))\n\n\u2020 Corresponding author\n\n## Abstract\n\nDifferent anatomical locations of the body skin show differences in their gene expression patterns depending on different origins, and the inherent heterogeneous information can be maintained in adults. However, highly resolvable cellular specialization is less well characterized in different anatomical regions of the skin. Pig is regarded as an excellent model animal for human skin research in view of its similar physiology to human. In this study, single-cell RNA sequencing was performed on pig skin tissues from six different anatomical regions of Chenghua (CH) pigs, with a superior skin thickness trait, and the back site of large white (LW) pigs. We obtained 233,715 cells, representing seven cell types, among which we primarily characterized the heterogeneity of the top three cell types, including smooth muscle cells (SMCs), endothelial cells (ECs), and fibroblasts (FBs). Then, we further identified several subtypes of SMCs, ECs, and FBs, and discovered the expression patterns of site-specific genes involved in some important pathways such as the immune response and extracellular matrix (ECM) synthesis in different anatomical regions. By comparing differentially expressed genes of skin FBs among different anatomical regions, we considered TNN, COL11A1, and INHBA as candidate genes for facilitating ECM accumulation. These findings of heterogeneity in the main skin cell types from different anatomical sites will contribute to a better understanding of inherent skin information and place the potential focus on skin generation, transmission, and transplantation, paving the foundation for human skin priming.\n\n## Introduction\n\nThe issue of how inherent information contributes to anatomical site-specific differences has inspired extensive exploration, and the pattern formation of spatial arrangement depends on the expression control of specific genes with a cell type (Rinn et al., 2006). The cellular specialization of anatomical site-specific pattern is determined in the embryo, and the inherent information could also be maintained throughout adulthood along with continual self-renewal tissues (Rinn et al., 2006). Some cellular special information of anatomical site-specific patterns in other tissues has been discovered, such as in the heart (Litvi\u0148ukov\u00e1 et al., 2020) and muscle (De Micheli et al., 2020), but the inherent information of cellular specialization is less well understood in physiologically different anatomical skin regions.\n\nSkin is the largest organ, providing a physical, chemical, and biological barrier for the body. It consists of the upper epidermis and the lower dermis layers separated by the basement membrane, with unambiguous spatial patterns of morphological and functional specialization (Simpson et al., 2011). Embryological studies have shown that anatomical positional-specific pattern is provided by the stroma, which is composed of extracellular matrix (ECM) and mesenchymal or dermal cells during embryogenesis (Rinn et al., 2006). Pioneering studies discovered that the different anatomical regions of the body skin dermis arose from different origins. The dorsum dermis originates from the dermato-myotome, while the ventral and face dermis derive from the lateral plate mesoderm and the neural crest, respectively (Jinno et al., 2010; Ohtola et al., 2008; Wong et al., 2006). In adults, dermal cells confer the positional identity and memory for skin patterning and function (Driskell and Watt, 2015), raising the issue of what regional discrepancy could be maintained against plentiful cellular turnover in skin.\n\nThe dermis is mainly composed of resident fibroblasts (FBs), smooth muscle cells (SMCs), endothelial cells (ECs), and immune cells, and these skin cells provide structure, strength, flexibility, and defense to the skin (Driskell and Watt, 2015). FBs, the main cell type in the dermis, are responsible for the collagen deposits and elastic fiber formation of the ECM (Parsonage et al., 2005), participating in skin morphogenesis, homeostasis, and various physiological and pathological mechanisms, including skin development, aging, healing, and fibrosis (Auxenfans et al., 2009; Driskell et al., 2013; Driskell and Watt, 2015). SMCs, which form blood vessels and arrector pili muscle (APM), play a critical role in controlling blood distribution as well as maintaining the structural integrity of the blood vessels and APM in skin (Driskell et al., 2013; Liu and Gomez, 2019). ECs organize the vascular plexus, which plays a predominant role in vascular remodeling, metabolism, and the immune response in the dermis, and EC metabolism is tightly connected to barrier integrity, immune and cellular crosstalk with SMCs (Cantelmo et al., 2016; Miyagawa et al., 2019; Tombor et al., 2021). Moreover, during formation and development of the skin, the dermal reaction is realized by cell\u2013cell communication, and dynamic interactions between cells and ECM, as well as regulatory factors (Driskell and Watt, 2015).\n\nThe pig is used as a model animal to research human skin biology because of its similar pathological and physiological skin attributes to those of human skin (Khiao In et al., 2019). The Chenghua (CH) pig, a novel Chinese indigenous population with superior skin thickness and strong FBs activity (Zou et al., 2022; Zou et al., 2023), is considered as a potential model animal for researching mammalian skin biology. Here, to reveal the anatomical positional heterogeneity of the skin, single-cell RNA sequencing was performed on pig skin tissues from six anatomical regions of CH pigs and the back site of large white (LW) pigs. We obtained a well-resolved single-cell transcriptome atlas of 233,715 cells and identified seven cell types with unique gene expression signatures. In our datasets, we focused on the top three cell types, including SMCs, ECs, and FBs. SMCs revealed the signature of contractile SMCs, mesenchymal-like phenotype, and macrophage-like phenotype and presented the expression patterns of site-specific genes related to ECM-integrins and immune response in different skin anatomical sites. ECs were classified into four EC phenotypes, and the gene expression patterns, which are related to integrins, immunity, and metabolism, were explored across different skin anatomical sites. Moreover, based on these comparative differentially expressed genes (DEGs) of FBs, we identified three subtypes among different regions and found that TNN, COL11A1, and INHBA might be candidate genes for ECM accumulation. Taken together, the present data offer a comprehensive understanding of the single-cell atlas that displays the cellular inherent information of anatomical site-specific patterns in skin, supporting future exploration as a baseline for healthy and morbid human skin.\n\n## Results\n\n### Single-cell transcriptome profiling identified different skin anatomical sites in CH pig\n\nTo characterize an overview of single-cell transcriptomic atlas of pig skin tissues from different anatomical sites, we sampled CH pig skin tissues on the head, ear, shoulder, back, abdomen, and leg from three female 180-day-old individuals, then applied scRNA-seq of 18 isolated skin cell samples (Figure 1A). After stringent cell filtration, we obtained a total of 215,274 cells, which were globally visualized with 21 cell clusters in the t-SNE plot (Figure 1B). On average, 956 genes and 2687 unique molecular identifiers (UMIs) per cell were detected (Figure 1\u2014figure supplement 1A and B). Twenty-one cell clusters were identified according to the expression matrix of marker genes for each cluster and were shown in the heatmap basing on the top 12 marker genes for each cluster (Figure 1C). The 21 cell clusters constituted seven cell types, of which the SMCs (clusters 0, 2, 5, 6, and 13) were marked by MYH11 and ACTA2, ECs (clusters 3, 4, 7,10, and 11) were marked by PECAM1 and APOA1, FBs (clusters 1, 8, 9, and 12) were expressed by LUM and POSTN, myeloid dendritic cells (MDCs) (clusters 14, 16, and 18) were labeled by BCL2A1 and CXCL8, T cells (TCs) (cluster 15) were highly expressed by RHOH and SAMSN1, keratinocytes (KEs) (cluster 17) were tabbed by KRT5 and S100A2, and epidermal stem cells (ESCs) (clusters 19 and 20) were stamped by TOP2A and EGFL8 (Figure 1D and E and Figure 1\u2014figure supplement 1C).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/86504/elife-86504-fig1-v1.jpg)\n\n**Figure 1.:** (A) Flowchart overview of skin single-cell RNA sequencing from different anatomical skin regions of CH pigs. (B) The t-SNE plot visualization showing 21 clusters of annotated cell types from CH pig skin. (C) Heatmap showing the top 12 highly expressed genes from each cluster. Each column represents a cluster, each row represents a gene. Light yellow shows the maximum expression level of genes, and deep green shows no expression. (D) Dot plot showing the two representative genes for each cell type. Color indicates the log2 value, and circle size indicates gene expression level. (E) The marker genes for each cell type are distributed on the t-SNE plot. Color indicates gene expression. (F) The distribution ratio of cell types for total cells and six different anatomical skin areas. (G) The most enriched Gene Ontology (GO) terms and Kyoto Encyclopedia of Genes and Genomes (KEGG) pathways for each cell type. CH, Chenghua; SMC, smooth muscle cell; EC, endothelial cell; FB, fibroblast; MDC, myeloid dendritic cell; TC, T cell; KE, keratinocyte; and ESC, epidermal stem cell.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/86504/elife-86504-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Violin plot showing the number of genes detected from different skin sites. (B) Violin plot showing the UMI count detected from different skin sites. (C) Violin plot showing the genes expression levels of MYH11, ACTA2, APOA1, PECAM1, POSTN, LUM, BCL2A1, CXCL8, RHOH, SAMSN1, TOP2A, SCN7A, KTR5, and S100A2 in each cell cluster of skin cells in Chenghua (CH) pigs.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/86504/elife-86504-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) UMAP visualization of cell types from different skin regions in global Chenghua (CH) skin cells. The number of cell types in different skin regions. (B) The cell types of individual skin sites by UMAP visualization.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/86504/elife-86504-fig1-figsupp3-v1.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (A) The t-SNE plot visualization of all cell types for skin cells among human, pig, and mouse. (B) Violin plots showing the number of unique molecular identifier (UMI) and gene counts of skin cells among human, pig, and mouse. (C) Bubble plot representing the ratio of cell types for skin cells and the gene number among human, pig, and mouse. Color shows gene number and circle size indicates cell abundance. (D) Heatmap showing high expression levels of genes in each cell type of skin cells among human, pig, and mouse. Light yellow shows the genes with high expression. (E) Bubble plot showing the ratio and expression of marker genes in skin cells among human, pig, and mouse. Color represents gene expression, and circle size indicates the percent of expressing cells.\n\nThe distribution ratio of these cell types was visualized among total skin data consisting of 42.9% SMCs, 28.1% ECs, 24.6% FBs, 2.5% MDCs, 0.9% TCs, 0.6% KEs, and 0.3% ESCs, which were similar to the distribution ratio for the main cell types in different skin regions (Figure 1F). In addition, the cell number and types among the six anatomical skin sites were comparable, which indicated that the cell types displayed subtle differences, but cell number per cell type varied significantly (Figure 1\u2014figure supplement 2). The marker genes for each cell type revealed the dominant transcriptional features and enriched pathways relevant to their distinct physical functions. Significant examples of Gene Ontology (GO) function terms were involved in ECM structural constituent or collagen binding for FBs, actin binding or structural constituent of muscle for SMCs, and ECM structural constituent or collagen binding for ECs (Figure 1G). Meanwhile, Kyoto Encyclopedia of Genes and Genomes (KEGG) pathways were prominently attributed to FBs such as protein digestion and absorption or ECM\u2013receptor interaction, ECs involved in cell adhesion molecules or the Rap1 signaling pathway, and SMCs including the NF-kappa B signaling pathway or the TNF signaling pathway (Figure 1G).\n\nMoreover, given the potential cross-species comparisons, we implemented overlapping skin cell atlases among pig, human, and mouse using a t-SNE plot (Figure 1\u2014figure supplement 3A). The captured gene and UMI counts were more advantageous for human skin cells (Figure 1\u2014figure supplement 3B). The cell types were similar for the three species, while the percentage of cell types was different such as SMCs, ECs, or KEs (Figure 1\u2014figure supplement 3A and C). Some marker genes of skin tissue were shown on the heatmap and dot plots, which examined the shared or species-specific genes in all cell types among the three species (Figure 1\u2014figure supplement 3D and E). When discounting the unique skin thickness of CH pig resulting in this ratio discrepancy of the cell types such as excessive cell number of SMCs and ECs, dominantly originated from the vessel bed, we suggested that the pig skin tissue could be considered as the human skin model at single-cell levels for research purposes.\n\n### Heterogeneity of skin SMCs in different anatomical sites\n\nSMCs play critical roles in forming blood vessels and APM in skin tissues (Driskell et al., 2013; Liu and Gomez, 2019); however, no study has uncharacterized skin SMCs at single-cell resolution. Here, we interrogated the heterogeneity and function of cutaneous SMCs. The t-SNE analysis divided SMCs into five subpopulations (clusters 0, 2, 5, 6, and 13) (Figure 2A), in which the MYH11 and ACTA2 marker genes were used for the immunohistochemistry staining of skin sections to validate the SMCs\u2019 microanatomical sight (Figure 2B). Meanwhile, GO functional analysis was performed on the highly expressed genes for each cluster (Figure 2C). Clusters 0 and 13 predominantly took part in structural constituent of muscle, acting filament binding, and acting binding. The engagement of main inflammatory response and chemokine activity belonged to clusters 2, 5, and 6, of which cluster 2 was also involved in collagen binding and metallopeptidase activity. These results implied that SMCs play important roles in blood vessel homeostasis and function, partial collagen binding, and immune responses in skin tissue.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/86504/elife-86504-fig2-v1.jpg)\n\n**Figure 2.:** (A) The t-SNE plot visualization of SMCs including clusters 0, 2, 5, 6, and 13. (B) Confocal images showing immunofluorescence staining of ACTA2 (green) and MYH11 (red) in back skin sections, representative markers of SMCs. Scale bar = 50 \u03bcm. n = 3. (C) The enriched Gene Ontology (GO) terms of biological process for each SMC subpopulation were sorted by q-value. (D) Pseudotime ordering of SMC subpopulations using Monocle 2. (E) Heatmap illustrating the dynamics of representative differentially expressed genes among SMCs phenotypes, in which the important GO terms relating to biological processes were described. (F) These genes\u2019 expression along pseudotime in SMC subpopulations.\n\nThen, we differentiated skin SMCs into other-like cell types. This evidence, combined with GO function analysis and the expression levels of conventional marker genes, such as MYH11 and ACTA2 for SMCs, GUCY1A2, CCL19, FGF7, and ASPN for mesenchymal cells (MECs), and LPL, CCL2, IL6, and CXCL2 for macrophages (MACs), presumed that cluster 2 might be mesenchymal-like phenotype while clusters 5 and 6 might represent macrophage phenotype. To further validate the topography of SMCs phenotypes, the analysis of pseudotime trajectory was performed by Monocle algorithm (Figure 2D). The trajectory demonstrated that SMCs experienced a dynamic transition from SMCs to mesenchymal-like phenotype and mesenchymal-like phenotype to macrophage-like phenotype. The sequential dynamics of gene expression with all branches were visualized and showed five gene sets along with expression patterns, which primarily deciphered three cell states (Figure 2E). These results discovered that gene sets 1 and 3 showed high expression levels of CTGF, LGR4, FABP4, CCL2, CCL19, and FGF7, and enriched GO terms associated with negative regulation of cell death, intestinal stem cell homeostasis, long-chain fatty acid transport, and immune response, which conformed well to the mesenchymal-like cells. Meanwhile, gene sets 2 and 5 showed high expression levels of MYH11, MYOM1, TPM1, TPM2, SQLE, BTG2, ADIRF, and TGFB3, and enriched GO terms involved in muscle contraction, actin filament organization, and \u2018de novo\u2019 action filament nucleation, which was greatly similar to contractile SMCs. In addition, gene set 4 showed high expression levels of CXCL10, CXCL2, ICAM1, LPL, and IL6, which were mainly gathered in GO terms of cellular response to lipopolysaccharide, cell chemotaxis, and defense response that may represent macrophage-like cells. Additionally, the expression levels of some cell type-specific marker genes in five SMCs clusters were presented (Figure 2F). The results showed the high expression levels of MECs-specific genes (GUCY1A2, FGF7, and CCL19) in cluster 2, MACs-specific LPL gene in clusters 5 and 6, and SMCs-specific MYH11 gene in clusters 0 and 13. These results proved our hypothesis that cluster 2 was mesenchymal-like phenotype while clusters 5 and 6 were macrophage-like phenotype.\n\nThe cell number of skin SMCs showed a significant difference in different anatomical sites, while the distribution ratio of SMC subpopulations displayed a similar trend (Figure 3A). To decode the transcriptomic changes of skin SMCs in different anatomical sites, the DEGs were presented among 15 compared groups by pairwise comparison method (Figure 3B). GO analysis showed that the significant enriched terms for upregulated genes between compared groups primarily referred to extracellular region, collagen-containing ECM, and long-chain fatty acid transport, while these downregulated genes between compared groups took part in cytokine activity, CXCR chemokine receptor binding, and positive regulation of T cell migration (Figure 3C). The majority of upregulated genes subsisted in back skin compared to other locations, so we implemented KEGG analysis, which was involved in PI3K-Akt signaling pathway, MAPK signaling pathway, immune response, and integration (Figure 3D). Then, we chose some genes of related ECM-integrins and immune response to present their expression levels in different skin anatomical sites, which showed that immune response correlated closely with shoulder skin region or ECM-integrins tightly linked to skin locations on the head, back, and shoulder (Figure 3E). Moreover, to gain insights into gene expression regulation, we investigated the key transcription factors (TFs), which regulated the DEGs among various compared groups, using single-cell regulatory network inference and clustering (SCENIC). The SCENIC algorithm demonstrated a series of main regulons such as EGR1, ATF3, NFKB1, PRDM1, and REL, and their related target genes (Figure 3F). TFs, especially ATF3 and EGR1, primarily regulated their target genes at back skin. These results provide good insights into the inherent heterogeneity of skin SMCs in different anatomical sites.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/86504/elife-86504-fig3-v1.jpg)\n\n**Figure 3.:** (A) The cell number of SMC subpopulations in different skin regions. (B) Heatmap showing the differentially expressed genes of SMCs in multiple compared groups. Red represents upregulated genes, blue represents downregulated genes, and the number of differentially expressed genes is indicated. (C) The enriched Gene Ontology (GO) terms of multiple compared groups. Color indicates q-value, and circle indicates gene counts. (D) Kyoto Encyclopedia of Genes and Genomes (KEGG) analysis for upregulated genes of back skin compared to other locations. (E) The expression level of genes involved in extracellular matrix (ECM)-integrins and immune response pathways in different skin regions. Red represents high expression of genes. (F) Transcriptional regulatory network of differentially expressed genes for SMCs in multiple compared groups. Blue nodes represent regulators and green nodes represent the target genes of regulators.\n\n### Heterogeneity of skin ECs in different anatomical sites\n\nPrevious studies discovered that ECs underlie the vascular systems and primarily participate in blood and skin homeostasis (Kalucka et al., 2020). Here, ECs were captured from six different anatomical sites and were classified into five subpopulations, which were visualized with the t-SNE plot (Figure 4A). GO functional terms analysis was carried out according to the enriched expression genes for each cluster, which were closely related to some functional terms, including angiogenesis, immune response, response to viruses, cell migration, cell adhesion, and regulation of catalytic activity (Figure 4\u2014figure supplement 1A). To validate the spatial position of ECs in dermis, we detected the expression levels of representative PECAM1 and APOA1 genes via the immunofluorescence of skin section (Figure 4B).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/86504/elife-86504-fig4-v1.jpg)\n\n**Figure 4.:** (A) The t-SNE plot visualization of ECs. (B) Immunofluorescence staining of APOA1 (green) and PECAM1 (red) in back skin sections, representative markers of ECs. Scale bar = 50 \u03bcm. n = 3. (C) Dot plot representing marker genes of ECs phenotypes. Color indicates gene expression, and circle indicates the log2FC value. (D) Pseudotime ordering of ECs subpopulations using monocle 2. (E) Heatmap showing the gene expression of metabolic pathways in ECs subpopulations. (F) Heatmap of gene expression of metabolic pathways in ECs subpopulations of different skin regions. (G) Heatmap of differentially expressed genes (DEGs) for ECs in multiple compared groups. Red represents upregulated genes, and blue represents downregulated genes. (H) The significantly enriched Gene Ontology (GO) terms of ECs in multiple compared groups. (I) Regulatory network of DEGs for ECs of different skin regions. Blue nodes represent regulators, and green nodes represent the target genes of regulators.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/86504/elife-86504-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) The enriched Gene Ontology (GO) terms pertaining to biological process for each ECs subpopulation were sorted by q-value. (B) Heatmap of gene expression for focal adhesion pathway among ECs subpopulations. (C) Heatmap of gene expression for cell adhesion molecule pathway among ECs subpopulations. (D) Heatmap of gene expression for other immune pathways among ECs subpopulations. (E) The cell number of ECs subpopulations in different skin regions. (F) The cell number of ECs clusters in different skin regions.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/86504/elife-86504-fig4-figsupp2-v1.jpg)\n\n**Figure 4\u2014figure supplement 2.:** Heatmap of gene expression in focal adhesion pathway (A), cell adhesion molecule (B) pathway, and other immune pathways (C) among ECs subpopulations of different skin regions.\n\nFurther, we classified EC phenotypes according to previous reported methods (Li et al., 2021; Wang et al., 2022) and found that ECs were composed of arteriole ECs expressing markers SEMA3G and MECOM (clusters 7 and 10), capillary ECs expressing marker PLVAP (cluster 3), venule ECs expressing markers SELE and ACK1 (cluster 4), and lymphatic ECs expressing markers LYVE1 and PROX1 (cluster 11) in dermis (Figure 4C). The pseudotime trajectory analysis of EC phenotypes showed an organized axis of blood ECs starting from arteriole and ending at venule, and it also formed an arteriovenous anastomosis tendency (Figure 4D). Due to exhibiting diverse molecules and functions on EC phenotypes, we further explored the expression levels of these EC phenotype-related genes, which were involved in integrins (focal adhesion), immune (cell adhesion molecules, chemokine signaling pathway, antigen processing and presentation, leukocyte transendothelial migration, and Th1 and Th2 cell differentiation), and metabolism (inositol phosphate, mucin type o-glycan biosynthesis, ether lipid, sphingolipid, and glycerolipid). ECs-related metabolism in our dataset was considerably active in arteriole ECs, especially cluster 10 involving ACER3, which controlled the homeostasis of ceramides, and LCLAT1, a lysocardiolipin acyltransferase-regulating activation of mitophagy (Figure 4E). The focal adhesion genes were more significantly upregulated in arteriole ECs and lymphatic ECs compared to other phenotypes, including ACTG1, BIRC3, and THBS1 (Figure 4\u2014figure supplement 1B). In cell adhesion molecules, PTPRM and CDH5, mainly responsible for intercellular adhesion between ECs, were highly enriched in arteriole ECs; meanwhile, PECAM1, SELE, and SELP were enriched in venule ECs (Figure 4\u2014figure supplement 1C). Other immune pathways showed that different EC phenotypes significantly highly expressed diverse genes, such as CXCL14 (involved in monocyte and recruitment) in capillary ECs, CCL26, CXCL19, and CCL26 in venule ECs (Figure 4\u2014figure supplement 1D). The observed functional diversity of EC phenotypes proved the degree of ECs heterogeneity.\n\nHere, we found that the cell number of EC phenotypes was different among different anatomical sites, with the back skin holding the most arteriole ECs and minimal lymphatic ECs (Figure 4\u2014figure supplement 1E and F). To further confirm the heterogeneity of EC phenotypes in the six different anatomical sites, we compared the expression levels of these gene-related integrins, immune, and metabolism pathways (Figure 4F and Figure 4\u2014figure supplement 2A\u2013C). For example, for the metabolism pathway, compared to other sites, the activity of capillary ECs, venule ECs, and arteriole ECs (cluster 7 not including cluster 10) was depressed in shoulder skin, while high activity in capillary ECs, venule ECs, and arteriole ECs was shown in leg skin, including ACER3 and PIK3C2A, which enhanced cell viability (Gulluni et al., 2021), and high activity in lymphatic ECs, arteriole ECs (cluster 10 not including cluster 7), and venule ECs was presented in ear skin, including ACER3, GALNT10, and PIK3C2B, a member of class II PI3Ks controlling cellular proliferation, survival, and migration. The obtained abundant results on the gene expressions for EC phenotype-related pathways in different sites showed the heterogeneity of skin ECs for different anatomical sites.\n\nTo uncover the underlying molecular mechanisms driving the differential skin sites of ECs, we compared the DEGs with differentially compared groups among different anatomical sites (Figure 4G) and GO terms were implemented for upregulated and downregulated genes (Figure 4H). Enriched terms, which were related to long-chain fatty acid transport, lipoprotein particle binding, and ECM, were shown in upregulated differential genes, while downregulated differential genes mainly existed in terms involving regulation of catalytic activity, acting binding, and molecular adaptor activity. Of note, the CD36, a multifunctional fatty acid transporter, was related to the metabolic state of fibroblasts for ECM regulation (Zhao et al., 2019). Here, we found that CD36 was upregulated in the back compared with others, except head, which was enriched in metabolic terms such as long-chain fatty acid transport and regulation of nitric oxide. FABP4, fatty acid-binding protein 4, was significantly differentially expressed in nine pairs compared groups. A pioneering study showed that FABP4 was strongly expressed in subcutaneous adipocytes and adipose ECs (Wang et al., 2022). Combining data indicated that skin thickness might have a positive correlation with subcutaneous fat deposits. Additionally, we constructed single-cell transcription-factor regulatory networks with all DEGs of ECs (Figure 4I). The analysis predicted the following main transcriptional factors: ATF3, EGR1, ERG, FLI1, PRDM1, and NFKB1. The expression levels of ATF3, EGR1, and ERG were predominantly regulated in back and leg sites. With these findings, we presented the heterogeneity of skin ECs in different anatomical sites.\n\n### Heterogeneity of skin FBs in different anatomical sites\n\nThe dermal FBs synthesize the ECM that forms the connective tissue of skin dermis to maintain the skin morphology such as thickness and homeostasis (Zhao et al., 2019). Phenotypic data showed that the CH skin thickness of differential anatomical sites showed striking difference such as back skin thickness on average at 5.48 mm and that of the ear at 1.52 mm (Figure 5\u2014figure supplement 1A). In terms of overall skin section, the skin histomorphology of different anatomical sites exhibited some difference in sparsity of collagen fibers or the number of appendages, and dermal thickness descended from the back, head, shoulder, leg, abdomen, to the ear (Figure 5A and Figure 5\u2014figure supplement 1B). Curiously, we inquired whether the discrepancy in ECM accumulation in different skin sites was caused by FBs heterogeneity. Next, the FBs single-cell maps were presented from six different skin anatomical sites using the t-SNE plot, which was established by four clusters (clusters 1, 8, 9, and 12) (Figure 5B), and the cell number of clusters was estimated (Figure 5C). Similar to previous reports (Philippeos et al., 2018; Sol\u00e9-Boldo et al., 2020), here FBs in cluster 1 highly expressed MGP and MFAP5, known markers of reticular FBs, the most representative markers of COL6A5, WIF1, and APCDD1 of papillary FBs belonged to clusters 8 and 9, and the mesenchymal subpopulation signature was typically characterized by enriched expressed CRABP1, TNN, and SFRP1 in cluster 12. GO analysis showed that the functions of these four FBs clusters were closely related to ECM organization, collagen fibril organization, and cell adhesion (Figure 5\u2014figure supplement 1C). Likewise, the label-LUM and POSTN genes were marked on FBs of skin section via immunofluorescence (Figure 5D).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/86504/elife-86504-fig5-v1.jpg)\n\n**Figure 5.:** (A) Skin section with HE staining (left) and dermal thickness of six different sites (right) including head, ear, back, shoulder, abdomen, and leg. Scale bar = 100 \u03bcm. n = 3. (B) The t-SNE plot showing FBs populations. (C) The cell number of FBs populations in different skin regions. (D) Images showing immunofluorescence staining of POSTN (green) and LUM (red) in back skin sections, representative markers of FBs. Scale bar = 50 \u03bcm. n = 3. (E) Heatmap of differentially expressed genes (DEGs) for FBs in multiple compared groups. Red represents upregulated genes, and blue represents downregulated genes. (F) The enriched Gene Ontology (GO) term of FBs in multiple compared groups. (G) Multiple volcanic maps showing the DEGs of compared groups in back skin compared to other locations. Representative genes are indicated. (H) Kyoto Encyclopedia of Genes and Genomes (KEGG) analysis of representative genes in image (G). (I) Gene expression signature divides FBs from six different skin regions by unsupervised hierarchical clustering. These genes involved in extracellular matrix (ECM) synthesis (red), cell signaling guidance (purple), metabolism (green), and human diseases (blue) are labeled by the related colors.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/86504/elife-86504-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) The skin specimens and thickness of different sites. Left is skin thickness, and right is skin specimens. (B) Skin sections of different regions. Scar bar = 1000 \u03bcm. n = 3. (C) The enriched Gene Ontology (GO) terms for biological process of each FBs subpopulation were sorted by q-value. (D) Multiple volcano maps showing differentially expressed genes (DEGs) of multiple compared groups. Representative genes are indicated. (E) Significant pathways of multiple compared groups. (F) Kyoto Encyclopedia of Genes and Genomes (KEGG) analysis of back skin compared with other regions.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/86504/elife-86504-fig5-figsupp2-v1.jpg)\n\n**Figure 5\u2014figure supplement 2.:** (A) Unsupervised hierarchical clustering showing the transcriptional profile of 417 differentially expressed genes (DEGs) in clusters 1, 8, 9, and 12 of FBs. (B) Regulatory network of DEGs of FBs of different skin regions. Blue nodes represent regulators, and green nodes represent the target genes of regulators.\n\nWith the discrepancy in ECM accumulation in different skin sites, we showed the expression levels of 417 upregulated or downregulated DEGs among the diverse compared groups by heatmap, in which almost all of the DEGs were upregulated in back skin compared with other skin sites (Figure 5E). The remarkable GO enrichment terms, including ECM, extracellular region, extracellular space, and collagen-containing ECM, were found in all compared groups (Figure 5F). To further explore the key genes causing the discrepancy in ECM accumulation, the top DEGs were visualized in the compared groups (Figure 5G and Figure 5\u2014figure supplement 1D). The point photograph presented some overlapping genes in multiple compared groups, especially back skin compared with other skin sites, including TNN, COL11A1, SFRP1, COL6A5, INHBA, APOA1, IGF1, and SPARCL1. Notably, TNN, called tenascin-N(W), is a lager domain glycoprotein that has the potential to modify cell adhesion and typically contribute to cell motility (Chiquet-Ehrismann and Tucker, 2011); COL11A1, an ECM structural constituent, comprises a subclass of regulatory collagen fibrillogenesis that synergistically assemble other types of collagen such as collagen I, determining fibril structure, fibril organization, and functional traits (Smith and Birk, 2012; Sun et al., 2020); SFRP1, a member of secretory glycoprotein SFRP family, is regarded as one of the main classes of macromolecules making up the ECM elements and is reported to be an antagonist that inhibits human hair follicles recession (Bertolini et al., 2021; Jiang et al., 2022); INHBA is a member of TGF\u03b2 superfamily and is modified by AP1 expression (Ham et al., 2021).\n\nSubsequently, we implemented KEGG analysis in the compared groups (Figure 5\u2014figure supplement 1E and F) and presented dominant enrichment pathways such as ECM\u2013receptor interaction, focal adhesion, protein digestion and adsorption, and TGF-beta signaling pathway. Interestingly, these typical overlapping genes were tightly connected with ECM production (Figure 5H). At a consequence, TNN, COL11A1, and INHBA were considered as key candidate genes for provoking ECM accumulation.\n\nFBs-related gene expression signatures could serve as an important molecular cue for positional identity (Rinn et al., 2006), so we further revealed the significant enriched genes related to different anatomical sites from 417 DEGs among the diverse compared groups. Hierarchical clustering of four clusters for FBs was presented by the expression levels of these DEGs at six different skin anatomical sites. Hierarchical clustering of cluster 1 and 12 demonstrated that the gene expression patterns of FBs in thick sites (head, shoulder, and back) and thin sites (ear, abdomen, and leg) were partly defined by position with each structure (Figure 5\u2014figure supplement 2A). Meanwhile, FBs-related gene expression patterns of clusters 7 and 8 in the upper half body sites (head, ear, and shoulder) and the lower half sites (back, abdomen, and leg) were partly defined by their anatomical position of origin. The site-sepecific genes were primarily involved in ECM synthesis, cell signaling guidance, metabolism, and human diseases (Figure 5I). For example, in terms of ECM synthesis, ear FBs included COL6A2 and COL6A5, abdomen FBs were involved in GREM1 and MMP3, and back FBs covered COL11A1, INHBA, and TNN. In cell signaling guidance, ear FBs included IGFBP2 and SEMA3C, abdomen FBs were involved in SERPINE1, head FBs covered ICAM1 and IGF2, and shoulder FBs referred to DKK2. In addition, The SCENIC algorithm demonstrated NF-kB1, TBX3, and ZNF366 regulons regulated some DEGs in FBs (Figure 5\u2014figure supplement 2B). Of note, the targeted INHBA is targeted by TBX3 regulons. These results showed the gene expression patterns of skin FBs and site-sepecific genes in different skin anatomical sites.\n\n### Heterogeneity of skin cells in different pig populations\n\nOur previous studies discovered that the two pig populations, namely CH and LW pigs with a significant difference in skin thickness, showed gene expression changes at whole transcriptome levels in skin tissues and small extracellular vesicles derived from skin FBs (Zou et al., 2022; Zou et al., 2023). Curiously, the pattern of heterogeneity in skin cells is whether it also exists in the two pig populations and contributes to the difference of skin thickness. Here, we first found that the average dermal thickness of CH pigs was 5288.5 \u03bcm but only 2609.5 \u03bcm for the LW pigs (Figure 6A and Figure 6\u2014figure supplement 1A). Then, we also implemented single-cell sequencing for the back skin of LW pigs and received a total of 18,441 cells after removing minimum count cells, doublet cells, and more than 5% cell-contained mitochondrial genes. The t-SEN analysis revealed the 18 cell clusters composed of six cell types, including SMCs (clusters 1, 2, 5, 6, 9, 10, and 14), ECs (clusters 0, 3, 4, 12, and 15), FBs (clusters 7, 8, 11, and 13), T cells (TCs) (cluster 16), MDCs (cluster 17), and ESCs (cluster 18) between CH and LW pigs (Figure 6B), and the marker genes of each cluster are shown in Figure 6C. The distribution of cell types and genes/UMIs per cell were compared between the two populations (Figure 6D and Figure 6\u2014figure supplement 1B\u2013D). The data showed that the main cell types were still SMCs, ECs, and FBs in two pig populations. Meanwhile, the marker genes for SMCs, ECs, and FBs showed the most significantly enriched pathways (Figure 6\u2014figure supplement 1E\u2013G), which were consistent with that of different anatomical skin cells from CH pigs.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/86504/elife-86504-fig6-v1.jpg)\n\n**Figure 6.:** (A) Skin section with HE staining (left) and dermal thickness of back skin between Chenghua (CH) and large white (LW) pig (right). Scale bar = 100 \u03bcm. n = 3. (B) The t-SNE plot visualization of all clusters of annotated cell types between CH and LW pigs. (C) Representative genes of each cluster of skin cells between CH and LW pigs. Color represents the gene expression, and circle represents the percentage of cells. (D) The distribution of cell types between CH and LW pig skin tissues. (E) Heatmap of differentially expressed genes (DEGs) for smooth muscle cells (SMCs), endothelial cells (ECs), and fibroblasts (FBs). Green represents upregulated genes, and orange represents downregulated genes. (F) Multiple volcano maps of DEGs for SMCs, ECs, and FBs. Representative genes are indicated. (G) Kyoto Encyclopedia of Genes and Genomes (KEGG) analysis of DEGs for FBs. (H) Gene Ontology (GO) term of DEGs for FBs. Red region is the most enriched GO terms. (I) Gene expression signature divides FBs from back skin of CH and LW pigs by unsupervised hierarchical clustering. These genes involved in ECM synthesis (red), cell signaling guidance (purple), and human diseases (blue) are labeled by the related colors.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/86504/elife-86504-fig6-figsupp1-v1.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) Skin specimens and sections of Chenghua (CH) and large white (LW) pig. Left is skin specimens, and right is skin sections. Scar bar = 1000 \u03bcm. n = 3. (B) Violin plot showing the number of genes detected from CH and LW pig skin. (C) Violin plot showing the unique molecular identifier (UMI) count detected from CH and LW pig skin. (D) UMAP visualization of cell types in CH and LW pig skin. (E\u2013G) The enriched Gene Ontology (GO) terms pertaining to biological processes for each subpopulation of smooth muscle cells (SMCs), endothelial cells (ECs), and fibroblasts (FBs) were sorted by q-value. (H) Kyoto Encyclopedia of Genes and Genomes (KEGG) analysis of differentially expressed genes (DEGs) from ECs and SMCs between CH and LW pigs.\n\nWe further compared the DEGs in two populations (Figure 6E and F), which showed a significant difference in FBs. KEGG analysis for the DEGs in the main three cell types manifested significant pathways of ether lipid metabolism for ECs, including LPCAT2 and ENPP2 genes, PPAR signaling pathway for SMCs, and PI3-Akt signaling pathway, protein digestion and absorption, ECM\u2013receptor interaction, focal adhesion, and TGF-beta signaling pathway for FBs involved in TNN, POSTN, COL11A1, IGF1, and INHBA genes (Figure 6G and Figure 6\u2014figure supplement 1H). Moreover, the extracellular space and extracellular region part were the representative striking terms for DEGs in the FBs between the two populations by GO term analysis (Figure 6H). An analysis of the data proved the ECM accumulation in skin tissue was probably dependent on these overlapping genes among the anatomical regions or pig populations.\n\nFurthermore, we analyzed the significantly enriched genes related to varietal divisions from 142 DEGs between back skin FBs of CH and LW pigs. As a result, there were a series of specific genes at back skin FBs of CH pigs, such as COL1A1, POSTN, TNN, INHBA, IGF1, and COL11A1; while TM4SF1, CCL2, and NGFR were specific genes at back skin FBs of LW pigs (Figure 6I). These results showed a transcriptome property of skin FBs in different pig populations.\n\n### Signaling crosstalk among various cell types in skin\n\nIntercellular communication plays an important role in complex tissues (Jin et al., 2021). Understanding cell\u2013cell communication in skin tissue requires accurate signaling crosstalk via ligands, receptors, and their cofactors, and effective overview analysis of these signaling links. To investigate the signaling crosstalk among seven identified cell types in skin tissue, we established intercellular communication by the R package CellChat. The seven cell types were deemed as communication \u2018hub,\u2019 which detected 547 ligand\u2013receptor pairs and were further categorized into 36 signaling pathways, including the COLLAGEN, LAMININ, FN1, PDGF, CCL, CXCL, MIF, and ITGB2 pathways (Figure 7A). Specifically, the COLLAGEN and LAMININ pathways exhibited highly abundant signaling interactions among seven cell types. Network centrality analysis of the COLLAGEN/LAMININ pathways revealed that FBs were the main source of the COLLAGEN/LAMININ ligands targeting SMCs and ESCs, which showed the COLLAGEN/LAMININ interactions were primarily paracrine way (Figure 7B and C and Figure 7\u2014figure supplement 1A). Importantly, these results reported the elaborate relevance between FBs and SMCs with majority ligand of COL1A1 and COL1A2, receptor of CD44 and ITGA1+ITGB1 in the COLLAGEN pathway (Figure 7\u2014figure supplement 1B). Likewise, the LAMININ pathway also showed an analogous phenomenon between FB and SMC populations via ligands LAMC1 and LAMB1, which were receptors of CD44 and ITGA1+ITGB1 (Figure 7\u2014figure supplement 1B).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/86504/elife-86504-fig7-v1.jpg)\n\n**Figure 7.:** (A) Circle plot representing the cell communication among cell types. Circle sizes represent the number of cells, and edge width represents the communication probability. Hierarchical plot showing the intercellular communication network for the COLLAGEN (B)/LAMININ (C) signaling pathways. Circle sizes represent the number of cells, and edge width represents communication probability. The inferred outgoing communication patterns (D) and incoming communication patterns (E) of secreting cells of Chenghua (CH) pig skin. (F) The distribution of signaling pathways with their functional similarity. The COLLAGEN (G)/LAMININ (H) signaling network among cell subpopulations of smooth muscle cells (SMCs), fibroblasts (FBs), and endothelial cells (ECs). Circle sizes represent the number of cells, and edge width represents communication probability. (I) Regulatory network of differentially expressed genes (DEGs) for SMCs, ECs, and FBs of different skin regions. Orange nodes represent regulators, and yellow/blue/green nodes represent the target genes of regulators.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/86504/elife-86504-fig7-figsupp1-v1.jpg)\n\n**Figure 7\u2014figure supplement 1.:** (A) Circle plot representing the cell communication among cell types in the COLLAGEN/LAMININ signaling pathways. Edge width represents communication probability. (B) Relative contribution of each ligand\u2013receptor pair of the COLLAGEN/LAMININ signaling pathway. (C) Projecting signaling pathways in a two-dimensional manifold based on their structural similarity. (D) Hierarchical plot showing the intercellular communication network of subpopulations of smooth muscle cells (SMCs), endothelial cells (ECs), and fibroblasts (FBs) for COLLAGEN/LAMININ signaling pathways. Circle sizes represent the number of cells, and edge width represents communication probability. (E) Circle plot representing the cell communication of the central ligand\u2013receptor pair of the COLLAGEN/LAMININ signaling pathway in subpopulations of SMCs, ECs, and FBs.\n\nThen, we implemented a communication pattern analysis and uncovered the four patterns in outgoing secreting cells or incoming target cells (Figure 7D and E). Outgoing FBs signaling was identified by pattern #2, which represented multiple pathways such as COLLAGEN, LAMININ, FN1, PTN, ANGPTL, and THBS. Outgoing SMCs and ESCs signaling was characterized by pattern #4, which was included in CDH, ANGPT, and PDGF pathways. Outgoing ECs signaling was characterized by pattern #1, which was involved in PECAM1, MK, and NOTCH pathways. The pattern #3 presented CD45, IL1, and VEGF pathways for outgoing MDC and TCs signaling. For the incoming communication patterns of target cells, incoming FBs signaling was characterized by pattern #3, representing NCAM, CADM, and MPZ pathways. The incoming SMCs, KEs, and ESCs signaling was characterized by pattern #4, and that of ECs was characterized by pattern #2.\n\nFurthermore, the signaling pathways were grouped according to their similarity in function or structure. The functional similarity grouping was classified into four groups (Figure 7F). Group #1 and #4, which dominantly included COLLAGEN, LAMININ, and PTN pathways, largely showed signaling from FBs to SMCs and ESCs. Group #3 dominantly drove PECAM1, CXCL, and CCL pathways, which represented the acquisition signaling pathway of ECs. The structural similarity grouping also was identified in four groups (Figure 7\u2014figure supplement 1C). To further elaborately explore the communication among FB, SMC, and EC subpopulations, we analyzed the COLLAGEN/LAMININ pathway in the 14 clusters from the three cell types (Figure 7G and H and Figure 7\u2014figure supplement 1D and E). The network centrality analysis showed that clusters 2, 5, and 6 of SMCs and cluster 7 of ECs likely actively take part in cell communication via the ligand of COL1A1/LAMA2, receptor of ITGA1+ITGB1 in the COLLAGEN/LAMININ pathway. Moreover, the SCENIC algorithm demonstrated NFKB1 as the common regulon among DEGs of three cell types, and the EGR1 and ATF3 regulons regulated the target genes in SMCs and ECs (Figure 7I). These results manifested the intercellular communication of skin cells, especially three main cell types of SMCs, ECs, and FBs.\n\n## Discussion\n\nWith the development of high-resolution single-cell sequencing, this is applied to delineate the atlas of diverse cell types and determine the molecular basis underlying the cell heterogeneity in many complicated biological processes associated with physiology and pathology among species, especially humans (Han et al., 2020), mice (Kalucka et al., 2020), monkeys (Han et al., 2022b), or pigs (Wang et al., 2022). The origin of tissue, its development state, or anatomical position are conducive to heterogeneity of cells. Using scRNA-seq, previous studies uncovered the heterogeneity of skin cells and their gene expression changes during embryonic development (Ge et al., 2020), age stages (Zou et al., 2021), and wound-healing stages (Guerrero-Juarez et al., 2019) in humans or mice. However, the single-cell transcriptional diversity of different anatomical skin regions has not been understood. The CH pig, a novel Chinese indigenous breed with superior skin thickness, is considered as a potential model animal for researching mammalian skin biology (Zou et al., 2022; Zou et al., 2023).\n\nSome studies have identified various cell types in the physiological skin tissue in humans (Sol\u00e9-Boldo et al., 2020) and mice (Guerrero-Juarez et al., 2019), and the top three main cell types were FBs, KEs, and ESCs for humans, and FBs, myeloid cells, and ECs for mice. In this study, we identified seven skin cell types from six different anatomical sites and six skin cell types from different two populations in adult pigs, and the top three main cell types were SMCs, ECs, and FBs. Compared with reported skin cell types of young pigs with the top three cell types being FBs, ESCs, and KEs, the distribution ratio of cell types was significantly different (Han et al., 2022a). Similarly, melanocytes, Schwann cells, mast cells, and neural cells were not identified in our datasets, while they were identified in human or mouse skin samples (Guerrero-Juarez et al., 2019; Zou et al., 2021). By the way, SMCs and pericytes, called mural cells in vessels, were unable to precisely discriminate between the two cell types because of confusable hallmarks and functions in skin tissues (Muhl et al., 2020; Han et al., 2022b), so we only identified SMCs in our data. The discrepancy in captured cell types and cell-type proportions might come from the heterogeneity of species, development process, skin state, and different scRNA-seq platform captures.\n\nSMCs constitute blood vessels and APM in skin tissue, with a greater proportion in blood vessels (Driskell et al., 2013; Muhl et al., 2020). Here, five SMC subpopulations are verified and then separated into three SMC phenotypes in pig skin tissue. Sophisticated studies have shown SMC phenotypic switching under pathological processes or injured conditions, a way in which SMC shift between contractile phenotype and other type cell phenotypes such as mesenchymal-like, fibroblast-like, macrophage-like, adipocyte-like, and osteogenic-like (Yap et al., 2021; Yu et al., 2022). In addition, several studies found multiple SMC phenotypes, including Scal-positive vascular SMC-lineage, also existed in healthy vessels (Dobnikar et al., 2018). Interestingly, we found that SMC phenotypic switching also occurred in pig skin tissue, varying from contractile SMCs to mesenchymal-like, mesenchymal-like to macrophage-like, with the expression levels of marker genes for cell types and function analysis. During physiological and pathological angiogenesis, macrophages are regarded as a facilitator of vascular integrity and derivatives by way of cytokine secretion and ECM remodeling (Barnett et al., 2016; Debels et al., 2013), which implies SMCs are deemed immune system\u2019s line of defense and positively participate in the immune response in skin tissue. Besides, in regard to different anatomical skin regions, we found that the cell number of the macrophage-like phenotype is highest at back site, followed by the abdomen, but immune-related genes primarily existed in shoulder, back, and ear, which indicates that the activity of the macrophage-like phenotype might depend on intrinsic factors as well as environmental factors.\n\nDepending on the properties of diverse molecular and function, such as immune responses and metabolic process in ECs, ECs\u2019 heterogeneous characteristics have been investigated in some organs of human skin (Li et al., 2021), the mouse brain (Kalucka et al., 2020), and pig adipose tissue (Wang et al., 2022), of which ECs\u2019 diversity remain largely unrevealed in skin tissue from different anatomical locations. In our cutaneous datasets, five subpopulations are identified with ECs and divide into four EC phenotypes, which are placed in order at the pseudotime trajectory indicating the distributed paths of blood vessel, such as arteriovenous anastomosis with vein. Here, an additional level of heterogeneity was explored when analyzing the expression levels of pathway genes involved in integrins, immune, and metabolism in EC subtypes from different anatomical regions. In integrins, ITGA6 is highly expressed in pig dermis ECs, in accordance with human dermis ECs (Li et al., 2021), and the expression of ITGA6 is significantly added in venule ECs and arteriole ECs (cluster 10 not cluster 7) of the pig ear skin site and in capillary ECs of humans. Cell adhesion molecules are compared to find capillary ECs and arteriole ECs (cluster 7 not cluster 10) of the pig back and shoulder skin mainly enriched MHC class II genes such as SLA-DQB1 and SLA-DRB1, which were highly expressed in lung organ of humans/mice, indicating a role in immune surveillance (Goveia et al., 2020). A funny question regarding the high expression of MHC class II genes in terms of slight tissue rejection by blocking MHC class II on human endothelium (Abrahimi et al., 2016) is whether there is a preference for skin graft from specific skin regions to transplant pig skin into humans.\n\nSELE, SELP, and ICAM1 mainly mediate the communication between leukocyte and ECs and are highly expressed in venule ECs and arteriole ECs of head, ear, and back skin of pig, while the three genes are primarily existed in post-capillary venule ECs of human dermis (Li et al., 2021). CDH5, an intercellular tight junction protein in ECs, is highly expressed in arteriole ECs of the ear skin of pig, in keeping with human dermal EC phenotype. Other immune response representative genes such as cytokines (CXCL14, CCL26, CCL24, CXCL12, and CXCL19) that participate in immunocyte recruitment (e.g., neutrophils) or are responsible for the host defense against viral infection, enhancing immune progression and metastasis (Fajgenbaum and June, 2020; Wu et al., 2020), of which are CCL24/CCL26, the role of eotaxins (Provost et al., 2013), are enriched in venule ECs and majorly distributed in the head/abdomen skin regions, respectively. For the ECs metabolism pathway, most metabolic genes are significantly expressed in arteriole ECs and exhibited overlapping and were specific among different skin sites. Interestingly, ENPP2 of lipid metabolism gene was reported to enhance the cytokine production (Grzes et al., 2021) and was overexpressed during chronic inflammation (Argaud et al., 2019), and it was enriched in the abdomen skin, while LPCAT2 of the other lipid metabolism gene under study was positively correlated with lipid droplet content in colorectal cancer (Cotte et al., 2018), which was mainly highly expressed in back and shoulder skin. These findings demonstrated the extensive phenotypic plasticity and gene expression signatures of all kinds of pathways in different skin sites.\n\nFBs are mesenchymal cells that synthesize ECM of connective tissues, which are responsible for structural integrity, wound repair, and fibrosis in skin (Driskell and Watt, 2015). Providing plentiful proofs showed that FBs heterogeneity is involved in diverse subpopulations such as papillary FBs, reticular FBs, mesenchymal FBs, and pro-inflammatory FBs, and its functions in humans and mice (Guerrero-Juarez et al., 2019; Zou et al., 2021). In this study, we identified three subpopulations not including pro-inflammatory in different anatomical sites and populations, guessing the immune function of SMCs or ECs might replace pro-inflammation FBs due to the enormous cell number of SMCs or ECs. A previous study showed that FBs from distinct anatomical locations exhibited detectable differences in metabolic activity (Castor et al., 1962) and genome-wide gene expression changes in 43 skin sites (Rinn et al., 2006). The fact is that three FB subpopulations focused on ECM organization and collagen fibril organization, resulting in the discrepancy in ECM deposition in different anatomical skin sites and populations.\n\nTherefore, the overlapping remarkable upregulate genes were found among multiple compared groups, especially the back when compared with other areas, and they might be regarded as key genes in ECM deposition. The ECM protein TNN is highly expressed in dense connective tissue such as cartilage, adult skeleton, and bone (Chiquet-Ehrismann and Tucker, 2011). TNN, distinctly located with collagen 3 fibers, plays a crucial role in periodontal remodeling; an example of a dense scar-like connective tissue enriched the nerve fibers replacing alveolar bone around the incisor by deficient TNN in mice (Imhof et al., 2020). Here, TNN took part in these pathways that were closely related to skin dermis such as ECM\u2013receptor interaction and PIK-Akt signaling pathway and were significantly upregulated in multiple compared groups uniformly, surmising that TNN might be a key candidate gene for ECM deposition. Collagen I is the most abundant structural macromolecule in skin tissue, and collagen mechanism is determined by a minor component as a regulator (Hansen and Bruckner, 2003). Collagens I and XI can package into composite fibrils by nucleation and propagation, in which the collagen XI content is closely connected with collagen I, determining its organization and function properties. Collagen XI is the main factor in collagen I-containing tissue, including tendons and cartilage, but not skin tissue, and the absence of COL11A1 expression results in the disruption of fibril phenotype for mature tendons (Blaschke et al., 2000; Sun et al., 2020). INHBA plays an important role in the TGF-beta signaling pathway, stimulating the activity of SMAD2/3 and encouraging cell proliferation and ECM production. INHBA expression was significantly upregulated in keloid FBs compared to normal dermal FBs (Ham et al., 2021).\n\nInterestingly, overlapping genes, including TNN, COL11A1, SFRP1, and INHBA, were pronouncedly expressed in mesenchymal FBs. With the paradigm of human skin case presented, a series of genes were significantly increased in keloid mesenchymal FBs in contrast to normal scar, such as COL11A1, SFRP1, TNC, INHBA, FN1, IGF1, THBS4, and POSTN, suggesting that these genes might promote ECM production (Deng et al., 2021). Likewise, these TNN, POSTN, COL11A1, IGF1, and INHBA genes were significantly upregulated in the back skin of CH pig compared with the back skin of LW pig. Although the mechanisms of physiological skin thickness, fibrosis, or scarring (pathological chronic inflammatory) are not all the same, excess ECM accumulation occurs, indicating individual and mutual genes. Therefore, in our study, we speculate that TNN, COL11A1, and INHBA expression might play a critical role in the morphology and quantity of collagen fibril-stimulated ECM deposition in skin tissue.\n\nA previous study discovered that the Hox genes are a family of TF-encoding genes that are crucial for regulating embryonic development and tissue morphogenesis (Rinn et al., 2006). However, in our study, we did not identify any Hox gene among these differentially expressed genes in skin fibroblasts from both different anatomical sites and different pig populations. The differences of Hox code expression patterns might come from the heterogeneity of different species. Coincidently, some signaling pathways, which are related to regional- or populations-specific genes of fibroblasts, were identified in our study, which partially match what Rinn et al. published on human skin. For example, COL11A1 and MMP3 facilitate ECM accumulation, while DDK2 and GREM are involved in cell signaling guidance, etc. These findings provided important insights into the positional identity in skin tissue.\n\nSkin physiological and pathological (wound healing or fibrosis) conditions not only determine the complex and diverse cellular composition but also establish the central signaling pathways between interacting cell groups, offering good insights into cellular crosstalk. For mouse skin wound tissue, network analysis was categorized into 25 signaling pathways involving in TGF\u03b2, non-canonical WNT, TNF, SPP1, and CXCL and identified the inferred TGF\u03b2 signaling as the most prominent pathway between myeloid cells and FBs (Guerrero-Juarez et al., 2019). Twenty-two signaling pathways of embryonic mouse skin were identified, such as WNT, ncWNT, TGF\u03b2, PDGF, NGF, FGF, and SEMA3, predicting the WNT signaling pathway played an important role between epidermal to dermal cells to form skin morphogenesis (Gupta et al., 2019). Moreover, the major highly active pathways in diseased human skin included MIF, CXCL, GALECTIN, FGF, and CCL, which showed that MIF signaling pathway was the main pathway from inflammatory FBs to inflammatory TCs (He et al., 2020). In our datasets, 36 signaling pathways were shown to be involved in COLLAGEN, LAMININ, FN1, PDGF, CCL, CXCL, and MIF, of which the COLLAGEN and LAMININ signaling were the most enriched among different skin regions of pig. These results indicate the key signaling pathways depended on skin morphogenesis.\n\nIn summary, in our study, the heterogeneity of main cell types from both different anatomical skin sites and different pig populations was comprehensively detailed, giving clear evidence of the use of pig as an excellent skin model focused on generation, transmission, positional information, and transplant, paving the foundation for skin priming.\n\n## Materials and methods\n\n### Skin samples dissociation and cell collection\n\nSkin samples were obtained from three female 180-day-old CH pigs at six different anatomical body areas (head, ear, shoulder, back, abdomen, and leg) and three female 180-day-old LW pigs with one region (back). The fresh full skin samples were thoroughly scraped off the hair and subcutaneous fat and were washed thrice with ice-cold Dulbecco\u2019s phosphate-buffered saline (1\u00d7DPBS). The skin samples (size approximately 2 cm \u00d7 2 cm) were fully dissected into small pieces in 4 mL tube and then transferred into 50 mL centrifuge tube with 15 mL mix digestion medium containing 1 mg/mL collagenase type I, II, IV, and V (Sigma-Aldrich, Saint Louis), 1 mg/mL elastase (Coolaber, Beijing, China), and 2 U/mL DNase I (Coolaber) in Dulbecco\u2019s Modified Eagle Medium (DMED). The skin samples were digested at 37\u00b0C for 120\u2013180 min and simultaneously gently shaken once every 10 min. The digestion reaction was interrupted by DMEM including 10% fetal bovine serum (FBS) (Gibco, New York). Then, the tissue suspension was filtered with 70 \u03bcm and 40 \u03bcm cell strainer and transfected into a 15 mL centrifuge tube to obtain cell sediment by centrifugation at 350 \u00d7 g for 5 min at 4\u00b0C until there was no undissociated tissue debris. The cell sediment was added to 2 mL Red Blood Cells Lysis Solution (QIAGEN, Duesseldorf, Germany) at room temperature for 5 min to remove red blood cells. The cell sediment was added to 2 mL TrypLE (Gibco) at 37\u00b0C for 45 min to dissolve cell clot. The dissociated cells were washed twice and resuspended in cold DMED supplemented with 10% FBS. Finally, cells staining with 0.4% Trypan Blue Solution was used to estimate cell activity rate and concentration by Countess Cell Counting Chamber Slides.\n\n### Single-cell library construction and sequencing\n\nApproximately 20,000 cells were captured in droplet emulsions, and the mRNA of single-cell libraries were constructed according to the DNBelab C Series Single-Cell Library Prep Set (MGI, Shenzhen, China) (Han et al., 2022a). In brief, single-cell suspensions were subjected to a series of progress, including droplet encapsulation, emulsion breakage, mRNA captured bead collection, reverse transcription, and cDNA amplification and purification, to generate barcoded libraries. Indexed sequencing libraries were established based on the instruction\u2019s protocol. The quality supervision of libraries was implemented with a Qubit ssDNA Assay Kit (Thermo Fisher Scientific, Waltham). Libraries were further sequenced by the DNBSEQ sequencing platform at the China National GeneBank.\n\n### Single-cell RNA sequencing data processing\n\nThe raw single-cell sequencing data were processed by DNBelab C Series scRNA analysis software. Reads were aligned to the reference genome (Ensemble assembly: Sus scrofa11.1) to generate a digital gene expression matrix by STAR (Wang et al., 2022). The quality control parameters involved in gene counts per cell, UMI count per cell, and % mitochondrial genes were stipulated. Cells genes were expressed in less than three cells, and cells were removed on the basis of detected genes number with a minimum of 200. Mitochondrial gene expression was set at a threshold of 5% per cell. For each library, the doublet was removed using DoubleFinder with the default parameter (Wang et al., 2022). Then, the aligned reads were filtered to obtain cell barcodes and UMI for gene-cell matrices, which were used for downstream analysis.\n\n### Identification of cell clustering and cell type\n\nAfter the initial DNBelab C Series scRNA analysis software processing, the cells were preprocessed and filtered. The data were normalized per sample using NormalizaData with default options, and highly variable genes were calculated by FindVariableFeatures and then elected based on their average expression and dispersion. The cell cluster was presented with the standard integration process of p-value<0.01 through the \u2018FindClusters\u2019 function described in Seurat (Wang et al., 2022). The cell types in each cell cluster were identified with enriched expression using \u2018FindAllMarkers\u2019 function in SCSA with default parameters, together with canonical cell-type markers from extensive reported literature on pig and human skin. Genes with |log2FC| > 0.25 and adjusted p-value <0.05 were considered marker genes. Subsequently, the cell cluster was visualized with t-SNE plot.\n\n### Identification of DEGs among multiple compared groups and GO/KEGG enrichment analysis\n\nWe used the FindMarkers function in Seurat to confirm skin-related DEGs between CH-back and CH-head, CH-back and CH-ear, CH-back and CH-shoulder, CH-back and CH-abdomen, CH-back and CH-leg, CH-shoulder and CH-head, CH-shoulder and ear, CH-shoulder and CH-abdomen, CH-shoulder and CH-leg, CH-head and CH-ear, CH-head and CH-abdomen, CH-head and CH-leg, CH-leg and CH-abdomen, CH-leg and CH-ear, and CH-abdomen and CH-ear for each cluster. DEGs of 15 compared groups were identified with |log2FC| > 0.25 and adjusted p-value <0.05. In the global clusters, GO analysis was implemented with the Dr. Tom platform of BGI. KEGG analysis, which was also performed with the Dr. Tom platform of BGI, further identified gene biological function, including signal transduction pathways, metabolic pathways, and so on in dermal cell populations.\n\n### Cross-species comparison for skin cell atlas in pigs, humans, and mice\n\nPublished skin single-cell datasets of humans (Sol\u00e9-Boldo et al., 2020; Zou et al., 2021) and mice (Joost et al., 2020; Ko et al., 2022) were download from GEO with a 10X sequencing platform. The count matrices of the three species were integrated for clustering using the Seurat R package with standard process for interspecies skin cell atlas analysis. The expressed genes that were orthologous were kept in the three species. The comparison of cell numbers and UMI counts matrices was obtained for pigs, humans, and mice. And the cell types were annotated by cell-type marker genes identified in this study.\n\n### Pseudotime analysis\n\nThe cell pseudotime trajectory was constructed using R package Monocle2 (Trapnell et al., 2014). This method arranges these cells on a trajectory that describes the complete differentiation process as a quasi-time sequence of these cells through the asynchronous nature of each cell in the differentiation process.\n\n### Cell\u2013cell communication inference\n\nTo understand global communication among the cell types of pig skin, we used the R package CellChat (v1.0.5) (Trapnell et al., 2014) with ligand\u2013receptor interactions for visual intercellular communications from scRNA-seq data. As the database covers the human species, we select these pig genes according to their homologous with humans. CellChat implements some visualization methods, including the interaction number, interaction weight, communication patterns of incoming river plot, communication patterns of outgoing river plot, functional pathways, structural pathways, chord plot, circle plot, hierarchy plot, and ligand\u2013receptor of contributions.\n\n### Targeted transcription factors interaction among cells\n\nThe TF list for pig species was downloaded from the AnimalTFDB (v4.0). We identified all the TFs using motif enrichment data in cisTarget database (https://resources.aertslab.org/cistarget/), of which the \u2018grn\u2019 module constructed a co-expression network, the \u2018cxt\u2019 module inferred regulome, and the \u2018aucell\u2019 module calculated the AUC value in SCENIS (v0.11.2) (Kalucka et al., 2020). From the above data, we selected the DEGs of SMCs, ECs, and FBs corresponding to TF and visualized these networks using Cytoscape software.\n\n### Skin section\n\nThe total skin thickness from three pigs per breed with different sites was measured three times with a Vernier caliper at the same position and recorded. The skin tissues were fixed in a solution of 10% neutral buffered formalin and processed using routine histological procedures. Then, the sections were cut at a thickness of 5 \u00b5m using a microtome. The dermal thickness was determined using CaseViewer software according to a previous method after hematoxylin-eosin staining (Zou et al., 2022). The mean values and standard deviations were calculated.\n\n### Immunofluorescence staining\n\nA 5-\u00b5m-thick back skin section was incubated with primary polyclonal rabbit antibody (ABclonal, Wuhan, China) against MYH11 (1:500 dilution) and ACTA2 (1:500 dilution) overnight at 4\u00b0C for SMCs, APOA1 (1:500 dilution) and PECAM1 (1:200 dilution) for ECs, and LUM (1:200 dilution) and POSTN (1:200 dilution) for FBs. FITC-goat anti-rabbit IgG and Cy3-conjugated goat anti-rabbit IgG were used as secondary antibodies (1:200 dilution) at room temperature for 1 hr. Then, the cell nuclei were stained with DAPI dye for 30 min. These procedures were implemented under dark conditions. Finally, these images were captured by confocal microscopy.\n\n### Statistical analysis\n\nStatistical testing was applied by GraphPad Prism. The data are shown as the mean \u00b1 SD for one group.\n",
+      "created_at": "2025-12-04T01:58:35.430405Z"
+    },
+    {
+      "id": "da1a08dc-5485-4883-af8c-c75ce85fab73",
+      "submission_id": "22e1271a-e8fd-40b5-a002-647ee5693fbd",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Valerie Horsley, https://ror.org/03v76x132 Yale University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.86504.sa0](https://doi.org/10.7554/eLife.86504.sa0)\n\nThis valuable manuscript provides a single-cell RNA sequencing analysis of adult pig skin from different species and anatomical regions. The evidence supporting the conclusions is compelling, with identification of molecular and cellular differences in pig skin, including analysis of regional and species-specific gene signatures.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Valerie Horsley, https://ror.org/03v76x132 Yale University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.86504.sa1](https://doi.org/10.7554/eLife.86504.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Single-cell transcriptome analysis on the anatomic positional heterogeneity of pig skin\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Marianne Bronner as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\nIn general, the reviewers were enthusiastic about this manuscript. They were particularly interested in these data as a resource for pig skin. However, to accomplish this goal, the authors should analyze their data more extensively.\n\n1) The reviewers thought the different body regions would be of interest as they could reveal aspects of positional identity. Specific analyses: Were there differences in the Hox code expression patterns? Did this match what Rinn et al. published on human skin? What were the pathways involved in regulating the phenotypic differences between the tissues? Perhaps a focused study utilizing the data would improve the manuscript.\n\n2) The authors should do more analysis of the comparison between the Chenghua and Large White. Could the authors expand on the mechanisms of why the dermal thickness would be different between the two species? What inherently regulates this difference at a transcriptional level? Also, are there positional identity differences between the two species?\n\n3) Overall the manuscript could also use editorial help in teasing out the central message of the manuscript. Is this just a resource manuscript allowing for an interesting and important dataset to be shared with the world? If so, the authors should generate a web tool.\n\nReviewer #1 (Recommendations for the authors):\n\nSome of my suggestions are below and hope they are helpful.\n\n1) A huge amount of effort and expense went into creating a dataset from 6 different body sites. It is extremely hard for this reviewer to ascertain from both the writing in the manuscript and the figures what the dataset says about positional identity. Were there differences in the Hox code expression patterns? Did this match what Rinn et al. published on human skin? What were the pathways involved in regulating the phenotypic differences between the tissues? Perhaps a focused study utilizing the data would improve the manuscript.\n\n2) The comparison between the Chenghua and Large White is very interesting. The authors note that the thickness of the dermis is different and reveal an analysis that suggests that the expansion of the extra-cellular matrix genes occur in the pig with thicker skin. This is an obvious result. Could the authors expand on the mechanisms of why this would happen? What inherently regulates this difference at a transcriptional level?\n\n3) Overall the manuscript could also use editorial help in teasing out the central message of the manuscript. Is this just a resource manuscript allowing for an interesting and important dataset to be shared with the world? If so, the authors should generate a web tool.\n\n4) It would be interesting to create a narrative around the idea that the Chenghua and Large White have a difference in the way that positional identity is regulated between the different species. Is it possible that the authors could show this through their single-cell data?\n\nReviewer #2 (Recommendations for the authors):\n\n1. I did not find the age and sex of the pigs. This basic information should be given.\n\n2. Which skin layer is dissected to separate the specimen from the body? This may lead to different thickness of the skin from different regions. Are all the components dissociated into single cells? Do some cells remain undissociated in the tissue debris? All these may affect the analyses of cell compositions. These differences may be unavoidable but the condition should be clarified. Showing photos of specimens in supplements may help.\n\n3. English should be improved. There are also typos. For example, p. 52. Pseudotiom should be pseudotime.\n\n3. Panel 2E needs more explanation.\n\n4. Figure 5A and 6A. H&E staining needs improvement.\n\n5. A major possibility to improve the significance is to evaluate the functional significance further. It may not be practical for the authors. The current work is still valuable but will have limitations in its impact.\n",
+      "created_at": "2025-12-04T01:58:35.430405Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T01:58:35.430405Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T01:58:35.430405Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "83c68f19-7038-4f44-967c-75adb83f8b5d",
+      "content_id": "db954a1f-d259-470b-bc77-67b7bc41d07d",
+      "claim_id": "C1",
+      "claim": "Single-cell RNA sequencing was performed on pig skin tissues from six different anatomical regions of Chenghua (CH) pigs and the back site of large white (LW) pigs.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, single-cell RNA sequencing was performed on pig skin tissues from six different anatomical regions of Chenghua (CH) pigs, with a superior skin thickness trait, and the back site of large white (LW) pigs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the experimental design and samples used for scRNA-seq.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:58:35.430405Z"
+    },
+    {
+      "id": "10ca2601-b5ef-4983-9915-f14b8fec33c1",
+      "content_id": "db954a1f-d259-470b-bc77-67b7bc41d07d",
+      "claim_id": "C2",
+      "claim": "233,715 cells were obtained representing seven cell types.",
+      "claim_type": "EXPLICIT",
+      "source": "We obtained 233,715 cells, representing seven cell types, among which we primarily characterized the heterogeneity of the top three cell types, including smooth muscle cells (SMCs), endothelial cells (ECs), and fibroblasts (FBs).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript directly states the number of cells obtained and the number of cell types identified.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:58:35.430405Z"
+    },
+    {
+      "id": "7602cf00-2c32-47d1-94b0-314112d5ec83",
+      "content_id": "db954a1f-d259-470b-bc77-67b7bc41d07d",
+      "claim_id": "C3",
+      "claim": "The top three main cell types characterized were smooth muscle cells (SMCs), endothelial cells (ECs), and fibroblasts (FBs).",
+      "claim_type": "EXPLICIT",
+      "source": "We obtained 233,715 cells, representing seven cell types, among which we primarily characterized the heterogeneity of the top three cell types, including smooth muscle cells (SMCs), endothelial cells (ECs), and fibroblasts (FBs).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly identifies the three main cell types that were the focus of characterization.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:58:35.430405Z"
+    },
+    {
+      "id": "2fa73734-0967-4cb6-91ee-1060ee9664f4",
+      "content_id": "db954a1f-d259-470b-bc77-67b7bc41d07d",
+      "claim_id": "C4",
+      "claim": "TNN, COL11A1, and INHBA are candidate genes for facilitating ECM accumulation.",
+      "claim_type": "EXPLICIT",
+      "source": "By comparing differentially expressed genes of skin FBs among different anatomical regions, we considered TNN, COL11A1, and INHBA as candidate genes for facilitating ECM accumulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly identifies these three genes as candidate genes based on differential expression analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:58:35.430405Z"
+    },
+    {
+      "id": "27d40af6-e70d-49c2-9543-dc985885476f",
+      "content_id": "db954a1f-d259-470b-bc77-67b7bc41d07d",
+      "claim_id": "C5",
+      "claim": "Chenghua pig has superior skin thickness trait.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, single-cell RNA sequencing was performed on pig skin tissues from six different anatomical regions of Chenghua (CH) pigs, with a superior skin thickness trait, and the back site of large white (LW) pigs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly describes CH pigs as having a superior skin thickness trait.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:58:35.430405Z"
+    },
+    {
+      "id": "971aad65-3891-4c32-ae72-3744edc04ffc",
+      "content_id": "db954a1f-d259-470b-bc77-67b7bc41d07d",
+      "claim_id": "C6",
+      "claim": "Pig is regarded as an excellent model animal for human skin research due to its similar physiology to human.",
+      "claim_type": "EXPLICIT",
+      "source": "Pig is regarded as an excellent model animal for human skin research in view of its similar physiology to human.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states this relationship between pig and human skin.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:58:35.430405Z"
+    },
+    {
+      "id": "01a75953-a4f5-4b22-a9cc-b2ff71e8bcd8",
+      "content_id": "db954a1f-d259-470b-bc77-67b7bc41d07d",
+      "claim_id": "C7",
+      "claim": "The cellular specialization of anatomical site-specific pattern is determined in the embryo and maintained throughout adulthood.",
+      "claim_type": "EXPLICIT",
+      "source": "The cellular specialization of anatomical site-specific pattern is determined in the embryo, and the inherent information could also be maintained throughout adulthood along with continual self-renewal tissues (Rinn et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites Rinn et al., 2006 to support this claim about embryonic determination and adult maintenance.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:58:35.430405Z"
+    },
+    {
+      "id": "5fc0480e-67b3-4094-a893-93c57e43711d",
+      "content_id": "db954a1f-d259-470b-bc77-67b7bc41d07d",
+      "claim_id": "C8",
+      "claim": "The dorsum dermis originates from the dermato-myotome.",
+      "claim_type": "EXPLICIT",
+      "source": "The dorsum dermis originates from the dermato-myotome, while the ventral and face dermis derive from the lateral plate mesoderm and the neural crest, respectively (Jinno et al., 2010; Ohtola et al., 2008; Wong et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites multiple studies to support the embryonic origin of dorsum dermis.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:58:35.430405Z"
+    },
+    {
+      "id": "cc9a6f6e-5263-49da-9345-93303ba5d8e2",
+      "content_id": "db954a1f-d259-470b-bc77-67b7bc41d07d",
+      "claim_id": "C9",
+      "claim": "The ventral dermis derives from the lateral plate mesoderm.",
+      "claim_type": "EXPLICIT",
+      "source": "The dorsum dermis originates from the dermato-myotome, while the ventral and face dermis derive from the lateral plate mesoderm and the neural crest, respectively (Jinno et al., 2010; Ohtola et al., 2008; Wong et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites multiple studies to support the embryonic origin of ventral dermis.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:58:35.430405Z"
+    },
+    {
+      "id": "cc70cfc0-c95a-44ce-9c1e-6ec17f2d0810",
+      "content_id": "db954a1f-d259-470b-bc77-67b7bc41d07d",
+      "claim_id": "C10",
+      "claim": "The face dermis derives from the neural crest.",
+      "claim_type": "EXPLICIT",
+      "source": "The dorsum dermis originates from the dermato-myotome, while the ventral and face dermis derive from the lateral plate mesoderm and the neural crest, respectively (Jinno et al., 2010; Ohtola et al., 2008; Wong et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites multiple studies to support the embryonic origin of face dermis.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:58:35.430405Z"
+    },
+    {
+      "id": "065b78a9-aafd-4293-aa9e-2904b1dbd004",
+      "content_id": "db954a1f-d259-470b-bc77-67b7bc41d07d",
+      "claim_id": "C11",
+      "claim": "A total of 215,274 cells were obtained after stringent cell filtration.",
+      "claim_type": "EXPLICIT",
+      "source": "After stringent cell filtration, we obtained a total of 215,274 cells, which were globally visualized with 21 cell clusters in the t-SNE plot (Figure 1B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the number of cells after filtration.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:58:35.430405Z"
+    },
+    {
+      "id": "5caccd71-619c-4144-8d23-f2385a16056c",
+      "content_id": "db954a1f-d259-470b-bc77-67b7bc41d07d",
+      "claim_id": "C12",
+      "claim": "21 cell clusters were identified in the t-SNE plot.",
+      "claim_type": "EXPLICIT",
+      "source": "After stringent cell filtration, we obtained a total of 215,274 cells, which were globally visualized with 21 cell clusters in the t-SNE plot (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript states the number of clusters and references Figure 1B showing the visualization.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:58:35.430405Z"
+    },
+    {
+      "id": "35c48eeb-bd24-4af5-b589-52dbc044625a",
+      "content_id": "db954a1f-d259-470b-bc77-67b7bc41d07d",
+      "claim_id": "C13",
+      "claim": "On average, 956 genes and 2687 unique molecular identifiers (UMIs) per cell were detected.",
+      "claim_type": "EXPLICIT",
+      "source": "On average, 956 genes and 2687 unique molecular identifiers (UMIs) per cell were detected (Figure 1\u2014figure supplement 1A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript provides specific quantitative data about gene and UMI detection per cell.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:58:35.430405Z"
+    },
+    {
+      "id": "2d6dc132-2c66-48ab-bb05-85bfb9c39800",
+      "content_id": "db954a1f-d259-470b-bc77-67b7bc41d07d",
+      "claim_id": "C14",
+      "claim": "SMCs were marked by MYH11 and ACTA2.",
+      "claim_type": "EXPLICIT",
+      "source": "The 21 cell clusters constituted seven cell types, of which the SMCs (clusters 0, 2, 5, 6, and 13) were marked by MYH11 and ACTA2, ECs (clusters 3, 4, 7,10, and 11) were marked by PECAM1 and APOA1, FBs (clusters 1, 8, 9, and 12) were expressed by LUM and POSTN, myeloid dendritic cells (MDCs) (clusters 14, 16, and 18) were labeled by BCL2A1 and CXCL8, T cells (TCs) (cluster 15) were highly expressed by RHOH and SAMSN1, keratinocytes (KEs) (cluster 17) were tabbed by KRT5 and S100A2, and epidermal stem cells (ESCs) (clusters 19 and 20) were stamped by TOP2A and EGFL8 (Figure 1D and E and Figure 1\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly identifies marker genes for SMCs and references supporting figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:58:35.430405Z"
+    },
+    {
+      "id": "2698bcf6-4510-4e62-a888-9ab0ac913c13",
+      "content_id": "db954a1f-d259-470b-bc77-67b7bc41d07d",
+      "claim_id": "C15",
+      "claim": "ECs were marked by PECAM1 and APOA1.",
+      "claim_type": "EXPLICIT",
+      "source": "The 21 cell clusters constituted seven cell types, of which the SMCs (clusters 0, 2, 5, 6, and 13) were marked by MYH11 and ACTA2, ECs (clusters 3, 4, 7,10, and 11) were marked by PECAM1 and APOA1, FBs (clusters 1, 8, 9, and 12) were expressed by LUM and POSTN, myeloid dendritic cells (MDCs) (clusters 14, 16, and 18) were labeled by BCL2A1 and CXCL8, T cells (TCs) (cluster 15) were highly expressed by RHOH and SAMSN1, keratinocytes (KEs) (cluster 17) were tabbed by KRT5 and S100A2, and epidermal stem cells (ESCs) (clusters 19 and 20) were stamped by TOP2A and EGFL8 (Figure 1D and E and Figure 1\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly identifies marker genes for ECs and references supporting figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:58:35.430405Z"
+    },
+    {
+      "id": "da15e10a-4900-47ef-a496-974c5babd49c",
+      "content_id": "db954a1f-d259-470b-bc77-67b7bc41d07d",
+      "claim_id": "C16",
+      "claim": "FBs were expressed by LUM and POSTN.",
+      "claim_type": "EXPLICIT",
+      "source": "The 21 cell clusters constituted seven cell types, of which the SMCs (clusters 0, 2, 5, 6, and 13) were marked by MYH11 and ACTA2, ECs (clusters 3, 4, 7,10, and 11) were marked by PECAM1 and APOA1, FBs (clusters 1, 8, 9, and 12) were expressed by LUM and POSTN, myeloid dendritic cells (MDCs) (clusters 14, 16, and 18) were labeled by BCL2A1 and CXCL8, T cells (TCs) (cluster 15) were highly expressed by RHOH and SAMSN1, keratinocytes (KEs) (cluster 17) were tabbed by KRT5 and S100A2, and epidermal stem cells (ESCs) (clusters 19 and 20) were stamped by TOP2A and EGFL8 (Figure 1D and E and Figure 1\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly identifies marker genes for FBs and references supporting figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:58:35.430405Z"
+    },
+    {
+      "id": "9923b97e-b03c-4c88-87b6-72574e5f68a4",
+      "content_id": "db954a1f-d259-470b-bc77-67b7bc41d07d",
+      "claim_id": "C17",
+      "claim": "Myeloid dendritic cells (MDCs) were labeled by BCL2A1 and CXCL8.",
+      "claim_type": "EXPLICIT",
+      "source": "The 21 cell clusters constituted seven cell types, of which the SMCs (clusters 0, 2, 5, 6, and 13) were marked by MYH11 and ACTA2, ECs (clusters 3, 4, 7,10, and 11) were marked by PECAM1 and APOA1, FBs (clusters 1, 8, 9, and 12) were expressed by LUM and POSTN, myeloid dendritic cells (MDCs) (clusters 14, 16, and 18) were labeled by BCL2A1 and CXCL8, T cells (TCs) (cluster 15) were highly expressed by RHOH and SAMSN1, keratinocytes (KEs) (cluster 17) were tabbed by KRT5 and S100A2, and epidermal stem cells (ESCs) (clusters 19 and 20) were stamped by TOP2A and EGFL8 (Figure 1D and E and Figure 1\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly identifies marker genes for MDCs and references supporting figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:58:35.430405Z"
+    },
+    {
+      "id": "1c775e7b-e7fa-46b7-8dbd-c89936e8afc2",
+      "content_id": "db954a1f-d259-470b-bc77-67b7bc41d07d",
+      "claim_id": "C18",
+      "claim": "T cells (TCs) were highly expressed by RHOH and SAMSN1.",
+      "claim_type": "EXPLICIT",
+      "source": "The 21 cell clusters constituted seven cell types, of which the SMCs (clusters 0, 2, 5, 6, and 13) were marked by MYH11 and ACTA2, ECs (clusters 3, 4, 7,10, and 11) were marked by PECAM1 and APOA1, FBs (clusters 1, 8, 9, and 12) were expressed by LUM and POSTN, myeloid dendritic cells (MDCs) (clusters 14, 16, and 18) were labeled by BCL2A1 and CXCL8, T cells (TCs) (cluster 15) were highly expressed by RHOH and SAMSN1, keratinocytes (KEs) (cluster 17) were tabbed by KRT5 and S100A2, and epidermal stem cells (ESCs) (clusters 19 and 20) were stamped by TOP2A and EGFL8 (Figure 1D and E and Figure 1\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly identifies marker genes for T cells and references supporting figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:58:35.430405Z"
+    },
+    {
+      "id": "6648e0d6-b8f8-4e2e-9628-a3c663b1e3c1",
+      "content_id": "db954a1f-d259-470b-bc77-67b7bc41d07d",
+      "claim_id": "C19",
+      "claim": "Keratinocytes (KEs) were tabbed by KRT5 and S100A2.",
+      "claim_type": "EXPLICIT",
+      "source": "The 21 cell clusters constituted seven cell types, of which the SMCs (clusters 0, 2, 5, 6, and 13) were marked by MYH11 and ACTA2, ECs (clusters 3, 4, 7,10, and 11) were marked by PECAM1 and APOA1, FBs (clusters 1, 8, 9, and 12) were expressed by LUM and POSTN, myeloid dendritic cells (MDCs) (clusters 14, 16, and 18) were labeled by BCL2A1 and CXCL8, T cells (TCs) (cluster 15) were highly expressed by RHOH and SAMSN1, keratinocytes (KEs) (cluster 17) were tabbed by KRT5 and S100A2, and epidermal stem cells (ESCs) (clusters 19 and 20) were stamped by TOP2A and EGFL8 (Figure 1D and E and Figure 1\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly identifies marker genes for keratinocytes and references supporting figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:58:35.430405Z"
+    },
+    {
+      "id": "4855d1e6-96e0-486d-b11d-3b3bb01918f3",
+      "content_id": "db954a1f-d259-470b-bc77-67b7bc41d07d",
+      "claim_id": "C20",
+      "claim": "Epidermal stem cells (ESCs) were stamped by TOP2A and EGFL8.",
+      "claim_type": "EXPLICIT",
+      "source": "The 21 cell clusters constituted seven cell types, of which the SMCs (clusters 0, 2, 5, 6, and 13) were marked by MYH11 and ACTA2, ECs (clusters 3, 4, 7,10, and 11) were marked by PECAM1 and APOA1, FBs (clusters 1, 8, 9, and 12) were expressed by LUM and POSTN, myeloid dendritic cells (MDCs) (clusters 14, 16, and 18) were labeled by BCL2A1 and CXCL8, T cells (TCs) (cluster 15) were highly expressed by RHOH and SAMSN1, keratinocytes (KEs) (cluster 17) were tabbed by KRT5 and S100A2, and epidermal stem cells (ESCs) (clusters 19 and 20) were stamped by TOP2A and EGFL8 (Figure 1D and E and Figure 1\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly identifies marker genes for ESCs and references supporting figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:58:35.430405Z"
+    },
+    {
+      "id": "2c007348-e209-4ef3-90a7-65a93a65fe95",
+      "content_id": "db954a1f-d259-470b-bc77-67b7bc41d07d",
+      "claim_id": "C21",
+      "claim": "The distribution ratio of cell types was 42.9% SMCs, 28.1% ECs, 24.6% FBs, 2.5% MDCs, 0.9% TCs, 0.6% KEs, and 0.3% ESCs.",
+      "claim_type": "EXPLICIT",
+      "source": "The distribution ratio of these cell types was visualized among total skin data consisting of 42.9% SMCs, 28.1% ECs, 24.6% FBs, 2.5% MDCs, 0.9% TCs, 0.6% KEs, and 0.3% ESCs, which were similar to the distribution ratio for the main cell types in different skin regions (Figure 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript provides specific percentages for each cell type and references Figure 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:58:35.430405Z"
+    },
+    {
+      "id": "c2b85da6-0f9b-4242-adbc-fed949481bbc",
+      "content_id": "db954a1f-d259-470b-bc77-67b7bc41d07d",
+      "claim_id": "C22",
+      "claim": "SMCs play critical roles in forming blood vessels and APM in skin tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "SMCs play critical roles in forming blood vessels and APM in skin tissues (Driskell et al., 2013; Liu and Gomez, 2019); however, no study has uncharacterized skin SMCs at single-cell resolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites previous studies to support the role of SMCs in skin.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:58:35.430405Z"
+    },
+    {
+      "id": "5c6dc977-d458-4af8-98f3-4ad98d810521",
+      "content_id": "db954a1f-d259-470b-bc77-67b7bc41d07d",
+      "claim_id": "C23",
+      "claim": "No study has characterized skin SMCs at single-cell resolution prior to this work.",
+      "claim_type": "EXPLICIT",
+      "source": "SMCs play critical roles in forming blood vessels and APM in skin tissues (Driskell et al., 2013; Liu and Gomez, 2019); however, no study has uncharacterized skin SMCs at single-cell resolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states this is the first single-cell characterization of skin SMCs.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:58:35.430405Z"
+    },
+    {
+      "id": "33bf13d0-7a76-4694-85b8-770d4d7ac11e",
+      "content_id": "db954a1f-d259-470b-bc77-67b7bc41d07d",
+      "claim_id": "C24",
+      "claim": "SMCs were divided into five subpopulations (clusters 0, 2, 5, 6, and 13).",
+      "claim_type": "EXPLICIT",
+      "source": "The t-SNE analysis divided SMCs into five subpopulations (clusters 0, 2, 5, 6, and 13) (Figure 2A), in which the MYH11 and ACTA2 marker genes were used for the immunohistochemistry staining of skin sections to validate the SMCs' microanatomical sight (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly states the number and identity of SMC subpopulations and references supporting figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:58:35.430405Z"
+    },
+    {
+      "id": "6e80b104-5c26-46f2-8600-53a8f0d58e90",
+      "content_id": "db954a1f-d259-470b-bc77-67b7bc41d07d",
+      "claim_id": "C25",
+      "claim": "Cluster 2 of SMCs might be mesenchymal-like phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "This evidence, combined with GO function analysis and the expression levels of conventional marker genes, such as MYH11 and ACTA2 for SMCs, GUCY1A2, CCL19, FGF7, and ASPN for mesenchymal cells (MECs), and LPL, CCL2, IL6, and CXCL2 for macrophages (MACs), presumed that cluster 2 might be mesenchymal-like phenotype while clusters 5 and 6 might represent macrophage phenotype.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states this presumption based on marker gene expression and GO analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:58:35.430405Z"
+    },
+    {
+      "id": "024a22e6-4a47-49c6-a60e-c8bb91bac850",
+      "content_id": "db954a1f-d259-470b-bc77-67b7bc41d07d",
+      "claim_id": "C26",
+      "claim": "Clusters 5 and 6 of SMCs might represent macrophage phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "This evidence, combined with GO function analysis and the expression levels of conventional marker genes, such as MYH11 and ACTA2 for SMCs, GUCY1A2, CCL19, FGF7, and ASPN for mesenchymal cells (MECs), and LPL, CCL2, IL6, and CXCL2 for macrophages (MACs), presumed that cluster 2 might be mesenchymal-like phenotype while clusters 5 and 6 might represent macrophage phenotype.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states this presumption based on marker gene expression and GO analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:58:35.430405Z"
+    },
+    {
+      "id": "3e7080cc-b651-4c46-b426-3d82a0ec20ca",
+      "content_id": "db954a1f-d259-470b-bc77-67b7bc41d07d",
+      "claim_id": "C27",
+      "claim": "The pseudotime trajectory demonstrated that SMCs experienced a dynamic transition from SMCs to mesenchymal-like phenotype and mesenchymal-like phenotype to macrophage-like phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "The trajectory demonstrated that SMCs experienced a dynamic transition from SMCs to mesenchymal-like phenotype and mesenchymal-like phenotype to macrophage-like phenotype.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly describes the trajectory analysis results showing phenotypic transitions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:58:35.430405Z"
+    },
+    {
+      "id": "81f86b02-8c30-4407-90bf-783538757ebd",
+      "content_id": "db954a1f-d259-470b-bc77-67b7bc41d07d",
+      "claim_id": "C28",
+      "claim": "ECs were classified into four EC phenotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, we classified EC phenotypes according to previous reported methods (Li et al., 2021; Wang et al., 2022) and found that ECs were composed of arteriole ECs expressing markers SEMA3G and MECOM (clusters 7 and 10), capillary ECs expressing marker PLVAP (cluster 3), venule ECs expressing markers SELE and ACK1 (cluster 4), and lymphatic ECs expressing markers LYVE1 and PROX1 (cluster 11) in dermis (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly identifies four EC phenotypes based on marker gene expression and cites previous methods.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:58:35.430405Z"
+    },
+    {
+      "id": "46734cbf-e1a5-4537-a991-2bab35affd39",
+      "content_id": "db954a1f-d259-470b-bc77-67b7bc41d07d",
+      "claim_id": "C29",
+      "claim": "Arteriole ECs express markers SEMA3G and MECOM.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, we classified EC phenotypes according to previous reported methods (Li et al., 2021; Wang et al., 2022) and found that ECs were composed of arteriole ECs expressing markers SEMA3G and MECOM (clusters 7 and 10), capillary ECs expressing marker PLVAP (cluster 3), venule ECs expressing markers SELE and ACK1 (cluster 4), and lymphatic ECs expressing markers LYVE1 and PROX1 (cluster 11) in dermis (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly identifies marker genes for arteriole ECs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:58:35.430405Z"
+    },
+    {
+      "id": "634574e0-e7d5-404e-87ae-bb731704afd3",
+      "content_id": "db954a1f-d259-470b-bc77-67b7bc41d07d",
+      "claim_id": "C30",
+      "claim": "Capillary ECs express marker PLVAP.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, we classified EC phenotypes according to previous reported methods (Li et al., 2021; Wang et al., 2022) and found that ECs were composed of arteriole ECs expressing markers SEMA3G and MECOM (clusters 7 and 10), capillary ECs expressing marker PLVAP (cluster 3), venule ECs expressing markers SELE and ACK1 (cluster 4), and lymphatic ECs expressing markers LYVE1 and PROX1 (cluster 11) in dermis (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly identifies marker gene for capillary ECs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:58:35.430405Z"
+    },
+    {
+      "id": "b29d1e1b-d7fd-4e5d-8cc1-0c52811be4a8",
+      "content_id": "db954a1f-d259-470b-bc77-67b7bc41d07d",
+      "claim_id": "C31",
+      "claim": "Venule ECs express markers SELE and ACK1.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, we classified EC phenotypes according to previous reported methods (Li et al., 2021; Wang et al., 2022) and found that ECs were composed of arteriole ECs expressing markers SEMA3G and MECOM (clusters 7 and 10), capillary ECs expressing marker PLVAP (cluster 3), venule ECs expressing markers SELE and ACK1 (cluster 4), and lymphatic ECs expressing markers LYVE1 and PROX1 (cluster 11) in dermis (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly identifies marker genes for venule ECs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:58:35.430405Z"
+    },
+    {
+      "id": "1e023b5c-1f0d-4456-90ea-d7c0238d895d",
+      "content_id": "db954a1f-d259-470b-bc77-67b7bc41d07d",
+      "claim_id": "C32",
+      "claim": "Lymphatic ECs express markers LYVE1 and PROX1.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, we classified EC phenotypes according to previous reported methods (Li et al., 2021; Wang et al., 2022) and found that ECs were composed of arteriole ECs expressing markers SEMA3G and MECOM (clusters 7 and 10), capillary ECs expressing marker PLVAP (cluster 3), venule ECs expressing markers SELE and ACK1 (cluster 4), and lymphatic ECs expressing markers LYVE1 and PROX1 (cluster 11) in dermis (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly identifies marker genes for lymphatic ECs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:58:35.430405Z"
+    },
+    {
+      "id": "2b69aad2-a4b8-47c2-8b38-e2b5446cac96",
+      "content_id": "db954a1f-d259-470b-bc77-67b7bc41d07d",
+      "claim_id": "C33",
+      "claim": "The pseudotime trajectory analysis of EC phenotypes showed an organized axis of blood ECs starting from arteriole and ending at venule.",
+      "claim_type": "EXPLICIT",
+      "source": "The pseudotime trajectory analysis of EC phenotypes showed an organized axis of blood ECs starting from arteriole and ending at venule, and it also formed an arteriovenous anastomosis tendency (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly describes the trajectory analysis results for ECs.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:58:35.430405Z"
+    },
+    {
+      "id": "9ff7c400-b9c7-441e-90bb-944c91619e1f",
+      "content_id": "db954a1f-d259-470b-bc77-67b7bc41d07d",
+      "claim_id": "C34",
+      "claim": "CH skin thickness of different anatomical sites showed striking difference such as back skin thickness on average at 5.48 mm and that of the ear at 1.52 mm.",
+      "claim_type": "EXPLICIT",
+      "source": "Phenotypic data showed that the CH skin thickness of differential anatomical sites showed striking difference such as back skin thickness on average at 5.48 mm and that of the ear at 1.52 mm (Figure 5\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript provides specific quantitative measurements of skin thickness at different sites.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:58:35.430405Z"
+    },
+    {
+      "id": "0f32de8f-3829-4c67-b360-dad4302ff737",
+      "content_id": "db954a1f-d259-470b-bc77-67b7bc41d07d",
+      "claim_id": "C35",
+      "claim": "FBs in cluster 1 highly expressed MGP and MFAP5, known markers of reticular FBs.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to previous reports (Philippeos et al., 2018; Sol\u00e9-Boldo et al., 2020), here FBs in cluster 1 highly expressed MGP and MFAP5, known markers of reticular FBs, the most representative markers of COL6A5, WIF1, and APCDD1 of papillary FBs belonged to clusters 8 and 9, and the mesenchymal subpopulation signature was typically characterized by enriched expressed CRABP1, TNN, and SFRP1 in cluster 12.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly identifies marker genes for reticular FBs and cites previous reports.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:58:35.430405Z"
+    },
+    {
+      "id": "0c9107da-222b-4234-9308-71dacf956788",
+      "content_id": "db954a1f-d259-470b-bc77-67b7bc41d07d",
+      "claim_id": "C36",
+      "claim": "The most representative markers of papillary FBs are COL6A5, WIF1, and APCDD1 in clusters 8 and 9.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to previous reports (Philippeos et al., 2018; Sol\u00e9-Boldo et al., 2020), here FBs in cluster 1 highly expressed MGP and MFAP5, known markers of reticular FBs, the most representative markers of COL6A5, WIF1, and APCDD1 of papillary FBs belonged to clusters 8 and 9, and the mesenchymal subpopulation signature was typically characterized by enriched expressed CRABP1, TNN, and SFRP1 in cluster 12.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly identifies marker genes for papillary FBs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:58:35.430405Z"
+    },
+    {
+      "id": "3e386e9b-070f-4308-82c9-d2cb741ee823",
+      "content_id": "db954a1f-d259-470b-bc77-67b7bc41d07d",
+      "claim_id": "C37",
+      "claim": "The mesenchymal subpopulation signature was typically characterized by enriched expressed CRABP1, TNN, and SFRP1 in cluster 12.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to previous reports (Philippeos et al., 2018; Sol\u00e9-Boldo et al., 2020), here FBs in cluster 1 highly expressed MGP and MFAP5, known markers of reticular FBs, the most representative markers of COL6A5, WIF1, and APCDD1 of papillary FBs belonged to clusters 8 and 9, and the mesenchymal subpopulation signature was typically characterized by enriched expressed CRABP1, TNN, and SFRP1 in cluster 12.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly identifies marker genes for mesenchymal FBs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:58:35.430405Z"
+    },
+    {
+      "id": "3419b590-c3a0-44f0-bccb-f66fcd9354ee",
+      "content_id": "db954a1f-d259-470b-bc77-67b7bc41d07d",
+      "claim_id": "C38",
+      "claim": "TNN is a larger domain glycoprotein that has the potential to modify cell adhesion and typically contribute to cell motility.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, TNN, called tenascin-N(W), is a lager domain glycoprotein that has the potential to modify cell adhesion and typically contribute to cell motility (Chiquet-Ehrismann and Tucker, 2011); COL11A1, an ECM structural constituent, comprises a subclass of regulatory collagen fibrillogenesis that synergistically assemble other types of collagen such as collagen I, determining fibril structure, fibril organization, and functional traits (Smith and Birk, 2012; Sun et al., 2020); SFRP1, a member of secretory glycoprotein SFRP family, is regarded as one of the main classes of macromolecules making up the ECM elements and is reported to be an antagonist that inhibits human hair follicles recession (Bertolini et al., 2021; Jiang et al., 2022); INHBA is a member of TGF\u03b2 superfamily and is modified by AP1 expression (Ham et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites Chiquet-Ehrismann and Tucker, 2011 to support the function of TNN.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:58:35.430405Z"
+    },
+    {
+      "id": "51afbf35-f7b3-4af1-bdb3-b4529e10d821",
+      "content_id": "db954a1f-d259-470b-bc77-67b7bc41d07d",
+      "claim_id": "C39",
+      "claim": "COL11A1 comprises a subclass of regulatory collagen fibrillogenesis that synergistically assemble other types of collagen such as collagen I, determining fibril structure, fibril organization, and functional traits.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, TNN, called tenascin-N(W), is a lager domain glycoprotein that has the potential to modify cell adhesion and typically contribute to cell motility (Chiquet-Ehrismann and Tucker, 2011); COL11A1, an ECM structural constituent, comprises a subclass of regulatory collagen fibrillogenesis that synergistically assemble other types of collagen such as collagen I, determining fibril structure, fibril organization, and functional traits (Smith and Birk, 2012; Sun et al., 2020); SFRP1, a member of secretory glycoprotein SFRP family, is regarded as one of the main classes of macromolecules making up the ECM elements and is reported to be an antagonist that inhibits human hair follicles recession (Bertolini et al., 2021; Jiang et al., 2022); INHBA is a member of TGF\u03b2 superfamily and is modified by AP1 expression (Ham et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites Smith and Birk, 2012; Sun et al., 2020 to support the function of COL11A1.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:58:35.430405Z"
+    },
+    {
+      "id": "3ccb88a3-cc30-4bc2-92df-f75f29836da2",
+      "content_id": "db954a1f-d259-470b-bc77-67b7bc41d07d",
+      "claim_id": "C40",
+      "claim": "SFRP1 is regarded as one of the main classes of macromolecules making up the ECM elements and is reported to be an antagonist that inhibits human hair follicles recession.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, TNN, called tenascin-N(W), is a lager domain glycoprotein that has the potential to modify cell adhesion and typically contribute to cell motility (Chiquet-Ehrismann and Tucker, 2011); COL11A1, an ECM structural constituent, comprises a subclass of regulatory collagen fibrillogenesis that synergistically assemble other types of collagen such as collagen I, determining fibril structure, fibril organization, and functional traits (Smith and Birk, 2012; Sun et al., 2020); SFRP1, a member of secretory glycoprotein SFRP family, is regarded as one of the main classes of macromolecules making up the ECM elements and is reported to be an antagonist that inhibits human hair follicles recession (Bertolini et al., 2021; Jiang et al., 2022); INHBA is a member of TGF\u03b2 superfamily and is modified by AP1 expression (Ham et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites Bertolini et al., 2021; Jiang et al., 2022 to support the function of SFRP1.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:58:35.430405Z"
+    },
+    {
+      "id": "7c4c123f-62fb-49be-8d54-1f5aade5b3e4",
+      "content_id": "db954a1f-d259-470b-bc77-67b7bc41d07d",
+      "claim_id": "C41",
+      "claim": "INHBA is a member of TGF\u03b2 superfamily and is modified by AP1 expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, TNN, called tenascin-N(W), is a lager domain glycoprotein that has the potential to modify cell adhesion and typically contribute to cell motility (Chiquet-Ehrismann and Tucker, 2011); COL11A1, an ECM structural constituent, comprises a subclass of regulatory collagen fibrillogenesis that synergistically assemble other types of collagen such as collagen I, determining fibril structure, fibril organization, and functional traits (Smith and Birk, 2012; Sun et al., 2020); SFRP1, a member of secretory glycoprotein SFRP family, is regarded as one of the main classes of macromolecules making up the ECM elements and is reported to be an antagonist that inhibits human hair follicles recession (Bertolini et al., 2021; Jiang et al., 2022); INHBA is a member of TGF\u03b2 superfamily and is modified by AP1 expression (Ham et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites Ham et al., 2021 to support the function of INHBA.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:58:35.430405Z"
+    },
+    {
+      "id": "37c5db81-8543-406d-a422-5b8464ff5496",
+      "content_id": "db954a1f-d259-470b-bc77-67b7bc41d07d",
+      "claim_id": "C42",
+      "claim": "The average dermal thickness of CH pigs was 5288.5 \u03bcm but only 2609.5 \u03bcm for the LW pigs.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we first found that the average dermal thickness of CH pigs was 5288.5 \u03bcm but only 2609.5 \u03bcm for the LW pigs (Figure 6A and Figure 6\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript provides specific quantitative measurements comparing dermal thickness between two pig breeds.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:58:35.430405Z"
+    },
+    {
+      "id": "5ee46512-41ce-429c-8e7b-3d7798ecf9dd",
+      "content_id": "db954a1f-d259-470b-bc77-67b7bc41d07d",
+      "claim_id": "C43",
+      "claim": "A total of 18,441 cells were obtained from LW pig back skin after removing minimum count cells, doublet cells, and more than 5% cell-contained mitochondrial genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Then, we also implemented single-cell sequencing for the back skin of LW pigs and received a total of 18,441 cells after removing minimum count cells, doublet cells, and more than 5% cell-contained mitochondrial genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the number of cells obtained from LW pigs after quality control.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:58:35.430405Z"
+    },
+    {
+      "id": "14edacce-f87c-47b8-9626-84dea65d17e9",
+      "content_id": "db954a1f-d259-470b-bc77-67b7bc41d07d",
+      "claim_id": "C44",
+      "claim": "The t-SNE analysis revealed 18 cell clusters composed of six cell types between CH and LW pigs.",
+      "claim_type": "EXPLICIT",
+      "source": "The t-SEN analysis revealed the 18 cell clusters composed of six cell types, including SMCs (clusters 1, 2, 5, 6, 9, 10, and 14), ECs (clusters 0, 3, 4, 12, and 15), FBs (clusters 7, 8, 11, and 13), T cells (TCs) (cluster 16), MDCs (cluster 17), and ESCs (cluster 18) between CH and LW pigs (Figure 6B), and the marker genes of each cluster are shown in Figure 6C.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly states the number of clusters and cell types identified in the comparison.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:58:35.430405Z"
+    },
+    {
+      "id": "e7f0b84f-831e-44ce-bfde-14ed493470ca",
+      "content_id": "db954a1f-d259-470b-bc77-67b7bc41d07d",
+      "claim_id": "C45",
+      "claim": "547 ligand\u2013receptor pairs were detected and categorized into 36 signaling pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "The seven cell types were deemed as communication 'hub,' which detected 547 ligand\u2013receptor pairs and were further categorized into 36 signaling pathways, including the COLLAGEN, LAMININ, FN1, PDGF, CCL, CXCL, MIF, and ITGB2 pathways (Figure 7A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly states the number of ligand-receptor pairs and signaling pathways identified.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:58:35.430405Z"
+    },
+    {
+      "id": "fe7673e9-b899-4e45-afbf-8bdc8eb5b60c",
+      "content_id": "db954a1f-d259-470b-bc77-67b7bc41d07d",
+      "claim_id": "C46",
+      "claim": "The COLLAGEN and LAMININ pathways exhibited highly abundant signaling interactions among seven cell types.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, the COLLAGEN and LAMININ pathways exhibited highly abundant signaling interactions among seven cell types.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly identifies these two pathways as having the most abundant interactions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:58:35.430405Z"
+    },
+    {
+      "id": "0ccd777a-e37d-49eb-a3e8-d8fb0bfad3fd",
+      "content_id": "db954a1f-d259-470b-bc77-67b7bc41d07d",
+      "claim_id": "C47",
+      "claim": "FBs were the main source of the COLLAGEN/LAMININ ligands targeting SMCs and ESCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Network centrality analysis of the COLLAGEN/LAMININ pathways revealed that FBs were the main source of the COLLAGEN/LAMININ ligands targeting SMCs and ESCs, which showed the COLLAGEN/LAMININ interactions were primarily paracrine way (Figure 7B and C and Figure 7\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly identifies FBs as the main source of these ligands based on network analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:58:35.430405Z"
+    },
+    {
+      "id": "deb20ee5-caf9-4ef3-b0ff-ac6f695c5dad",
+      "content_id": "db954a1f-d259-470b-bc77-67b7bc41d07d",
+      "claim_id": "C48",
+      "claim": "The COLLAGEN/LAMININ interactions were primarily paracrine way.",
+      "claim_type": "EXPLICIT",
+      "source": "Network centrality analysis of the COLLAGEN/LAMININ pathways revealed that FBs were the main source of the COLLAGEN/LAMININ ligands targeting SMCs and ESCs, which showed the COLLAGEN/LAMININ interactions were primarily paracrine way (Figure 7B and C and Figure 7\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly states the mode of interaction based on the analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:58:35.430405Z"
+    },
+    {
+      "id": "dc721c1d-0641-4764-8834-96ead0f48c64",
+      "content_id": "db954a1f-d259-470b-bc77-67b7bc41d07d",
+      "claim_id": "C49",
+      "claim": "Skin samples were obtained from three female 180-day-old CH pigs at six different anatomical body areas and three female 180-day-old LW pigs with one region.",
+      "claim_type": "EXPLICIT",
+      "source": "Skin samples were obtained from three female 180-day-old CH pigs at six different anatomical body areas (head, ear, shoulder, back, abdomen, and leg) and three female 180-day-old LW pigs with one region (back).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly describes the sample collection details.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:58:35.430405Z"
+    },
+    {
+      "id": "08bb44b3-6286-4604-ac1d-0d66ebca6836",
+      "content_id": "db954a1f-d259-470b-bc77-67b7bc41d07d",
+      "claim_id": "C50",
+      "claim": "Approximately 20,000 cells were captured in droplet emulsions for library construction.",
+      "claim_type": "EXPLICIT",
+      "source": "Approximately 20,000 cells were captured in droplet emulsions, and the mRNA of single-cell libraries were constructed according to the DNBelab C Series Single-Cell Library Prep Set (MGI, Shenzhen, China) (Han et al., 2022a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the number of cells used for library construction.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:58:35.430405Z"
+    },
+    {
+      "id": "1a267bbe-9105-487c-bb91-db6bff29b577",
+      "content_id": "db954a1f-d259-470b-bc77-67b7bc41d07d",
+      "claim_id": "C51",
+      "claim": "Cells with genes expressed in less than three cells were removed.",
+      "claim_type": "EXPLICIT",
+      "source": "Cells genes were expressed in less than three cells, and cells were removed on the basis of detected genes number with a minimum of 200.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly describes the quality control criteria for cell filtering.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:58:35.430405Z"
+    },
+    {
+      "id": "568cb310-1e8d-47ff-a42b-e61fcaba88d7",
+      "content_id": "db954a1f-d259-470b-bc77-67b7bc41d07d",
+      "claim_id": "C52",
+      "claim": "Mitochondrial gene expression was set at a threshold of 5% per cell.",
+      "claim_type": "EXPLICIT",
+      "source": "Mitochondrial gene expression was set at a threshold of 5% per cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the threshold for mitochondrial gene expression.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:58:35.430405Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "cf0549c6-ff5c-45da-99f6-33c3904f5bd2",
+      "content_id": "db954a1f-d259-470b-bc77-67b7bc41d07d",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Single-cell RNA sequencing was performed on pig skin from six anatomical regions of CH pigs and the back of LW pigs, yielding 215,274 cells after quality control (originally 233,715 cells captured), organized into 21 clusters with an average of 956 genes and 2,687 UMIs per cell. The study focused on characterizing three main cell types: SMCs, ECs, and FBs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The experimental design, sample collection (C1, C49), cell capture (C50), quality control procedures (C11, C51, C52), and basic sequencing metrics (C13) are clearly documented with specific quantitative values. The discrepancy between 233,715 cells initially obtained (C2) and 215,274 after filtration (C11) is explained by stringent quality control. The identification of seven cell types in 21 clusters (C12) with focus on three main types (C3) is well-supported by the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:58:35.430405Z"
+    },
+    {
+      "id": "2dee390b-3cf6-4b16-9944-e69175f72937",
+      "content_id": "db954a1f-d259-470b-bc77-67b7bc41d07d",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Seven cell types were identified using marker gene expression: SMCs (42.9%, marked by MYH11/ACTA2), ECs (28.1%, marked by PECAM1/APOA1), FBs (24.6%, marked by LUM/POSTN), MDCs (2.5%, marked by BCL2A1/CXCL8), TCs (0.9%, marked by RHOH/SAMSN1), KEs (0.6%, marked by KRT5/S100A2), and ESCs (0.3%, marked by TOP2A/EGFL8).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Cell type identification is supported by established marker genes (C14-C20) with specific percentages provided (C21). The marker genes used are standard for these cell types, and the distribution ratios are consistent across different anatomical regions as stated. However, the manuscript lacks validation of marker specificity and does not report statistical significance for cluster assignments.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:58:35.430405Z"
+    },
+    {
+      "id": "4afba366-774a-4ac6-b935-c7546ab67395",
+      "content_id": "db954a1f-d259-470b-bc77-67b7bc41d07d",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "SMCs were subdivided into five subpopulations with three distinct phenotypes: contractile SMCs (clusters 0, 13), mesenchymal-like phenotype (cluster 2), and macrophage-like phenotype (clusters 5, 6). Pseudotime trajectory analysis revealed dynamic transitions from contractile SMCs to mesenchymal-like to macrophage-like phenotypes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While the identification of five SMC subpopulations (C24) is data-driven, the phenotype assignments (C25, C26) are explicitly stated as presumptions based on marker gene expression and GO analysis rather than definitive classifications. The pseudotime trajectory (C27) provides supporting evidence but is inherently inferential. The claim of being the first single-cell characterization of skin SMCs (C23) cannot be verified without comprehensive literature review. Additional validation experiments would strengthen these phenotype assignments.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:58:35.430405Z"
+    },
+    {
+      "id": "698c28ae-ca18-4e25-af35-8ed6c14b1b4f",
+      "content_id": "db954a1f-d259-470b-bc77-67b7bc41d07d",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "ECs were classified into four phenotypes based on marker gene expression: arteriole ECs (SEMA3G/MECOM), capillary ECs (PLVAP), venule ECs (SELE/ACK1), and lymphatic ECs (LYVE1/PROX1). Pseudotime trajectory analysis showed an organized developmental axis from arteriole to venule with arteriovenous anastomosis tendency.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "EC phenotype classification (C28-C32) is based on established markers from cited previous studies (Li et al., 2021; Wang et al., 2022), providing methodological validation. The pseudotime trajectory analysis (C33) is appropriately applied to infer developmental relationships. However, the interpretation of \"arteriovenous anastomosis tendency\" requires more explicit definition and validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:58:35.430405Z"
+    },
+    {
+      "id": "9a54e2c3-158e-4d5d-a597-8afb2bd4b133",
+      "content_id": "db954a1f-d259-470b-bc77-67b7bc41d07d",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Fibroblasts were identified in three subpopulations: reticular FBs (cluster 1, expressing MGP/MFAP5), papillary FBs (clusters 8-9, expressing COL6A5/WIF1/APCDD1), and mesenchymal FBs (cluster 12, expressing CRABP1/TNN/SFRP1). Skin thickness varied significantly across anatomical sites (back: 5.48 mm, ear: 1.52 mm).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "FB subpopulation identification (C35-C37) is supported by marker genes consistent with previous reports (Philippeos et al., 2018; Sol\u00e9-Boldo et al., 2020). The quantitative skin thickness measurements (C34) provide phenotypic validation. The connection between FB heterogeneity and skin thickness is implied but not statistically tested for correlation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:58:35.430405Z"
+    },
+    {
+      "id": "c686e6fb-76d7-404e-84cc-d8063c0cb8e1",
+      "content_id": "db954a1f-d259-470b-bc77-67b7bc41d07d",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "TNN, COL11A1, and INHBA were identified as candidate genes for facilitating ECM accumulation based on differential expression analysis of FBs across anatomical regions. These genes are involved in cell adhesion/motility (TNN), collagen fibrillogenesis (COL11A1), and TGF-\u03b2 signaling (INHBA).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "The identification of candidate genes (C4) is based on differential expression analysis showing upregulation in thicker skin regions, which is appropriate. The functional descriptions (C38-C41) are supported by citations to prior literature. However, the causal relationship between these genes and ECM accumulation is not experimentally validated in this study\u2014only correlation is shown. The designation as \"candidate genes\" is appropriate but requires functional validation in future work.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:58:35.430405Z"
+    },
+    {
+      "id": "d0563b5a-eb40-4e47-aa5d-f0252fdba82d",
+      "content_id": "db954a1f-d259-470b-bc77-67b7bc41d07d",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Comparison between CH and LW pig breeds revealed significant differences in dermal thickness (CH: 5288.5 \u03bcm vs LW: 2609.5 \u03bcm). Single-cell analysis of LW pig back skin yielded 18,441 cells organized into 18 clusters representing six cell types.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The quantitative measurements of dermal thickness (C42) and cell numbers (C43) are explicitly stated with specific values. The cluster and cell type identification (C44) follows the same methodology as the CH pig analysis. The comparison provides a biological validation of the approach, though sample size (n=3 per breed) is limited for drawing broad conclusions about breed differences.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:58:35.430405Z"
+    },
+    {
+      "id": "25cf808f-4650-4a1a-b931-a8bd359fde28",
+      "content_id": "db954a1f-d259-470b-bc77-67b7bc41d07d",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Cell-cell communication analysis identified 547 ligand-receptor pairs across 36 signaling pathways. COLLAGEN and LAMININ pathways showed the most abundant interactions, with FBs serving as the main source of ligands targeting SMCs and ESCs primarily through paracrine signaling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The quantitative results from CellChat analysis (C45, C46) are clearly stated. The identification of FBs as the main ligand source (C47) and paracrine mode of interaction (C48) are supported by network centrality analysis. However, the computational inference of cell-cell communication does not constitute experimental validation of actual signaling events, which is a limitation of this approach.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:58:35.430405Z"
+    },
+    {
+      "id": "b2da02b4-4ad7-4e88-bb87-fe7afc4437de",
+      "content_id": "db954a1f-d259-470b-bc77-67b7bc41d07d",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The study establishes CH pigs as a model for human skin research based on their superior skin thickness trait and the general similarity of pig physiology to humans.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The superior skin thickness of CH pigs (C5) is demonstrated through quantitative measurements throughout the manuscript. The claim about pigs as models for human skin research (C6) is supported by citation and is a generally accepted principle in the field, though the manuscript does not provide new evidence for this relationship beyond the single-cell atlas comparison shown in supplementary figures.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:58:35.430405Z"
+    },
+    {
+      "id": "46cc16ba-55ee-4f03-81ef-456f14316cde",
+      "content_id": "db954a1f-d259-470b-bc77-67b7bc41d07d",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The manuscript cites prior work establishing that anatomical site-specific cellular patterns are determined embryonically and maintained in adulthood, with different dermal regions originating from distinct embryonic sources (dorsum from dermato-myotome, ventral from lateral plate mesoderm, face from neural crest).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims (C7-C10) are appropriately attributed to prior published work through citations (Rinn et al., 2006; Jinno et al., 2010; Ohtola et al., 2008; Wong et al., 2006). The authors correctly cite established knowledge to provide context for their study. No new experimental evidence is provided for these claims, which is appropriate as they serve as background information.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:58:35.430405Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "83c68f19-7038-4f44-967c-75adb83f8b5d",
+      "result_id": "cf0549c6-ff5c-45da-99f6-33c3904f5bd2"
+    },
+    {
+      "claim_id": "10ca2601-b5ef-4983-9915-f14b8fec33c1",
+      "result_id": "cf0549c6-ff5c-45da-99f6-33c3904f5bd2"
+    },
+    {
+      "claim_id": "7602cf00-2c32-47d1-94b0-314112d5ec83",
+      "result_id": "cf0549c6-ff5c-45da-99f6-33c3904f5bd2"
+    },
+    {
+      "claim_id": "065b78a9-aafd-4293-aa9e-2904b1dbd004",
+      "result_id": "cf0549c6-ff5c-45da-99f6-33c3904f5bd2"
+    },
+    {
+      "claim_id": "5caccd71-619c-4144-8d23-f2385a16056c",
+      "result_id": "cf0549c6-ff5c-45da-99f6-33c3904f5bd2"
+    },
+    {
+      "claim_id": "35c48eeb-bd24-4af5-b589-52dbc044625a",
+      "result_id": "cf0549c6-ff5c-45da-99f6-33c3904f5bd2"
+    },
+    {
+      "claim_id": "dc721c1d-0641-4764-8834-96ead0f48c64",
+      "result_id": "cf0549c6-ff5c-45da-99f6-33c3904f5bd2"
+    },
+    {
+      "claim_id": "08bb44b3-6286-4604-ac1d-0d66ebca6836",
+      "result_id": "cf0549c6-ff5c-45da-99f6-33c3904f5bd2"
+    },
+    {
+      "claim_id": "1a267bbe-9105-487c-bb91-db6bff29b577",
+      "result_id": "cf0549c6-ff5c-45da-99f6-33c3904f5bd2"
+    },
+    {
+      "claim_id": "568cb310-1e8d-47ff-a42b-e61fcaba88d7",
+      "result_id": "cf0549c6-ff5c-45da-99f6-33c3904f5bd2"
+    },
+    {
+      "claim_id": "2d6dc132-2c66-48ab-bb05-85bfb9c39800",
+      "result_id": "2dee390b-3cf6-4b16-9944-e69175f72937"
+    },
+    {
+      "claim_id": "2698bcf6-4510-4e62-a888-9ab0ac913c13",
+      "result_id": "2dee390b-3cf6-4b16-9944-e69175f72937"
+    },
+    {
+      "claim_id": "da15e10a-4900-47ef-a496-974c5babd49c",
+      "result_id": "2dee390b-3cf6-4b16-9944-e69175f72937"
+    },
+    {
+      "claim_id": "9923b97e-b03c-4c88-87b6-72574e5f68a4",
+      "result_id": "2dee390b-3cf6-4b16-9944-e69175f72937"
+    },
+    {
+      "claim_id": "1c775e7b-e7fa-46b7-8dbd-c89936e8afc2",
+      "result_id": "2dee390b-3cf6-4b16-9944-e69175f72937"
+    },
+    {
+      "claim_id": "6648e0d6-b8f8-4e2e-9628-a3c663b1e3c1",
+      "result_id": "2dee390b-3cf6-4b16-9944-e69175f72937"
+    },
+    {
+      "claim_id": "4855d1e6-96e0-486d-b11d-3b3bb01918f3",
+      "result_id": "2dee390b-3cf6-4b16-9944-e69175f72937"
+    },
+    {
+      "claim_id": "2c007348-e209-4ef3-90a7-65a93a65fe95",
+      "result_id": "2dee390b-3cf6-4b16-9944-e69175f72937"
+    },
+    {
+      "claim_id": "c2b85da6-0f9b-4242-adbc-fed949481bbc",
+      "result_id": "4afba366-774a-4ac6-b935-c7546ab67395"
+    },
+    {
+      "claim_id": "5c6dc977-d458-4af8-98f3-4ad98d810521",
+      "result_id": "4afba366-774a-4ac6-b935-c7546ab67395"
+    },
+    {
+      "claim_id": "33bf13d0-7a76-4694-85b8-770d4d7ac11e",
+      "result_id": "4afba366-774a-4ac6-b935-c7546ab67395"
+    },
+    {
+      "claim_id": "6e80b104-5c26-46f2-8600-53a8f0d58e90",
+      "result_id": "4afba366-774a-4ac6-b935-c7546ab67395"
+    },
+    {
+      "claim_id": "024a22e6-4a47-49c6-a60e-c8bb91bac850",
+      "result_id": "4afba366-774a-4ac6-b935-c7546ab67395"
+    },
+    {
+      "claim_id": "3e7080cc-b651-4c46-b426-3d82a0ec20ca",
+      "result_id": "4afba366-774a-4ac6-b935-c7546ab67395"
+    },
+    {
+      "claim_id": "81f86b02-8c30-4407-90bf-783538757ebd",
+      "result_id": "698c28ae-ca18-4e25-af35-8ed6c14b1b4f"
+    },
+    {
+      "claim_id": "46734cbf-e1a5-4537-a991-2bab35affd39",
+      "result_id": "698c28ae-ca18-4e25-af35-8ed6c14b1b4f"
+    },
+    {
+      "claim_id": "634574e0-e7d5-404e-87ae-bb731704afd3",
+      "result_id": "698c28ae-ca18-4e25-af35-8ed6c14b1b4f"
+    },
+    {
+      "claim_id": "b29d1e1b-d7fd-4e5d-8cc1-0c52811be4a8",
+      "result_id": "698c28ae-ca18-4e25-af35-8ed6c14b1b4f"
+    },
+    {
+      "claim_id": "1e023b5c-1f0d-4456-90ea-d7c0238d895d",
+      "result_id": "698c28ae-ca18-4e25-af35-8ed6c14b1b4f"
+    },
+    {
+      "claim_id": "2b69aad2-a4b8-47c2-8b38-e2b5446cac96",
+      "result_id": "698c28ae-ca18-4e25-af35-8ed6c14b1b4f"
+    },
+    {
+      "claim_id": "9ff7c400-b9c7-441e-90bb-944c91619e1f",
+      "result_id": "9a54e2c3-158e-4d5d-a597-8afb2bd4b133"
+    },
+    {
+      "claim_id": "0f32de8f-3829-4c67-b360-dad4302ff737",
+      "result_id": "9a54e2c3-158e-4d5d-a597-8afb2bd4b133"
+    },
+    {
+      "claim_id": "0c9107da-222b-4234-9308-71dacf956788",
+      "result_id": "9a54e2c3-158e-4d5d-a597-8afb2bd4b133"
+    },
+    {
+      "claim_id": "3e386e9b-070f-4308-82c9-d2cb741ee823",
+      "result_id": "9a54e2c3-158e-4d5d-a597-8afb2bd4b133"
+    },
+    {
+      "claim_id": "2fa73734-0967-4cb6-91ee-1060ee9664f4",
+      "result_id": "c686e6fb-76d7-404e-84cc-d8063c0cb8e1"
+    },
+    {
+      "claim_id": "3419b590-c3a0-44f0-bccb-f66fcd9354ee",
+      "result_id": "c686e6fb-76d7-404e-84cc-d8063c0cb8e1"
+    },
+    {
+      "claim_id": "51afbf35-f7b3-4af1-bdb3-b4529e10d821",
+      "result_id": "c686e6fb-76d7-404e-84cc-d8063c0cb8e1"
+    },
+    {
+      "claim_id": "3ccb88a3-cc30-4bc2-92df-f75f29836da2",
+      "result_id": "c686e6fb-76d7-404e-84cc-d8063c0cb8e1"
+    },
+    {
+      "claim_id": "7c4c123f-62fb-49be-8d54-1f5aade5b3e4",
+      "result_id": "c686e6fb-76d7-404e-84cc-d8063c0cb8e1"
+    },
+    {
+      "claim_id": "37c5db81-8543-406d-a422-5b8464ff5496",
+      "result_id": "d0563b5a-eb40-4e47-aa5d-f0252fdba82d"
+    },
+    {
+      "claim_id": "5ee46512-41ce-429c-8e7b-3d7798ecf9dd",
+      "result_id": "d0563b5a-eb40-4e47-aa5d-f0252fdba82d"
+    },
+    {
+      "claim_id": "14edacce-f87c-47b8-9626-84dea65d17e9",
+      "result_id": "d0563b5a-eb40-4e47-aa5d-f0252fdba82d"
+    },
+    {
+      "claim_id": "e7f0b84f-831e-44ce-bfde-14ed493470ca",
+      "result_id": "25cf808f-4650-4a1a-b931-a8bd359fde28"
+    },
+    {
+      "claim_id": "fe7673e9-b899-4e45-afbf-8bdc8eb5b60c",
+      "result_id": "25cf808f-4650-4a1a-b931-a8bd359fde28"
+    },
+    {
+      "claim_id": "0ccd777a-e37d-49eb-a3e8-d8fb0bfad3fd",
+      "result_id": "25cf808f-4650-4a1a-b931-a8bd359fde28"
+    },
+    {
+      "claim_id": "deb20ee5-caf9-4ef3-b0ff-ac6f695c5dad",
+      "result_id": "25cf808f-4650-4a1a-b931-a8bd359fde28"
+    },
+    {
+      "claim_id": "27d40af6-e70d-49c2-9543-dc985885476f",
+      "result_id": "b2da02b4-4ad7-4e88-bb87-fe7afc4437de"
+    },
+    {
+      "claim_id": "971aad65-3891-4c32-ae72-3744edc04ffc",
+      "result_id": "b2da02b4-4ad7-4e88-bb87-fe7afc4437de"
+    },
+    {
+      "claim_id": "01a75953-a4f5-4b22-a9cc-b2ff71e8bcd8",
+      "result_id": "46cc16ba-55ee-4f03-81ef-456f14316cde"
+    },
+    {
+      "claim_id": "5fc0480e-67b3-4094-a893-93c57e43711d",
+      "result_id": "46cc16ba-55ee-4f03-81ef-456f14316cde"
+    },
+    {
+      "claim_id": "cc9a6f6e-5263-49da-9345-93303ba5d8e2",
+      "result_id": "46cc16ba-55ee-4f03-81ef-456f14316cde"
+    },
+    {
+      "claim_id": "cc70cfc0-c95a-44ce-9c1e-6ec17f2d0810",
+      "result_id": "46cc16ba-55ee-4f03-81ef-456f14316cde"
+    }
+  ],
+  "comparisons": []
+}

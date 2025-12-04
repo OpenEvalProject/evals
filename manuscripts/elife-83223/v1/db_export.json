@@ -1,0 +1,1469 @@
+{
+  "submission": {
+    "id": "336e31d0-65a0-4954-a683-dcefce709470",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-04T03:20:45.636100Z",
+    "updated_at": "2025-12-04T03:20:45.636100Z"
+  },
+  "content": [
+    {
+      "id": "c55a8868-a0ac-443a-88dc-473cc9dc1f23",
+      "submission_id": "336e31d0-65a0-4954-a683-dcefce709470",
+      "content_type": "manuscript",
+      "content_text": "# Dynamic top-down biasing implements rapid adaptive changes to individual movements\n\n## Authors\n\n- Lucas Y Tian<sup>1</sup> ([ORCID: 0000-0002-7346-7360](https://orcid.org/0000-0002-7346-7360)) \u2020\n- Timothy L Warren<sup>1</sup> ([ORCID: 0000-0002-4429-4106](https://orcid.org/0000-0002-4429-4106))\n- William H Mehaffey<sup>1</sup> ([ORCID: 0000-0002-0818-3580](https://orcid.org/0000-0002-0818-3580))\n- Michael S Brainard<sup>1</sup> ([ORCID: 0000-0002-9425-9907](https://orcid.org/0000-0002-9425-9907)) \u2020\n\n### Affiliations\n\n1. Center for Integrative Neuroscience and Howard Hughes Medical Institute, University of California, San Francisco San Francisco United States ([ROR:043mz5j54](https://ror.org/043mz5j54))\n\n\u2020 Corresponding author\n\n## Abstract\n\nComplex behaviors depend on the coordinated activity of neural ensembles in interconnected brain areas. The behavioral function of such coordination, often measured as co-fluctuations in neural activity across areas, is poorly understood. One hypothesis is that rapidly varying co-fluctuations may be a signature of moment-by-moment task-relevant influences of one area on another. We tested this possibility for error-corrective adaptation of birdsong, a form of motor learning which has been hypothesized to depend on the top-down influence of a higher-order area, LMAN (lateral magnocellular nucleus of the anterior nidopallium), in shaping moment-by-moment output from a primary motor area, RA (robust nucleus of the arcopallium). In paired recordings of LMAN and RA in singing birds, we discovered a neural signature of a top-down influence of LMAN on RA, quantified as an LMAN-leading co-fluctuation in activity between these areas. During learning, this co-fluctuation strengthened in a premotor temporal window linked to the specific movement, sequential context, and acoustic modification associated with learning. Moreover, transient perturbation of LMAN activity specifically within this premotor window caused rapid occlusion of pitch modifications, consistent with LMAN conveying a temporally localized motor-biasing signal. Combined, our results reveal a dynamic top-down influence of LMAN on RA that varies on the rapid timescale of individual movements and is flexibly linked to contexts associated with learning. This finding indicates that inter-area co-fluctuations can be a signature of dynamic top-down influences that support complex behavior and its adaptation.\n\n## Introduction\n\nComplex behaviors depend on the coordinated activity of neural ensembles in distinct brain areas, yet much remains to be resolved about the specific behavioral functions of such multi-area coordination. Recent studies of trial-by-trial activity co-fluctuations between neuronal populations in connected brain areas have noted a link between changes to such coordinated activity and behavioral performance (Cowley et al., 2020; Koralek et al., 2013; Koralek et al., 2012; Lemke et al., 2019; Makino et al., 2017; Perich et al., 2018; Sawada et al., 2015; Veuthey et al., 2020; Wagner et al., 2019). Although some slower activity co-fluctuations may reflect task-independent, shared changes in a global internal state (Cowley et al., 2020), more dynamic co-fluctuations\u2014varying rapidly on a moment-by-moment basis and linked flexibly to specific behavioral contexts\u2014could be a signature of task-relevant influences of one area on another (Semedo et al., 2019).\n\nOne intriguing role for such dynamic inter-area influences has been hypothesized in the context of the learning and adaptation of skilled reaching behavior (Perich et al., 2018; Veuthey et al., 2020). Specifically, the joint evolution of inter-area activity co-fluctuations and behavioral performance over the course of learning has led to the suggestion that top-down inputs from higher-order areas dynamically implement learning-related changes in activity in primary motor areas. In principle, such top-down modulation during learning could operate to control adaptive behavioral modifications on the fine timescale of individual movements. However, the difficulty in identifying and quantifying discrete movement components during skilled reaching leaves unresolved whether such top-down influences operate on this rapid timescale during learning.\n\nHere, we take advantage of error corrective learning of adult birdsong\u2014a complex learned behavior with quantifiable, rapidly varying discrete movements\u2014to investigate whether inter-area activity co-fluctuations change during learning with the appropriate specificity to constitute such dynamic top-down commands. Previous work has led to the hypothesis that such error corrective learning depends on the moment-by-moment shaping of activity in primary motor areas by dynamic, top-down control. In particular, pharmacologically inactivating either the song-specific higher-order area LMAN or its synapses in the primary motor cortical analog RA (Figure 1A) transiently eliminates recently learned modifications to pitch (fundamental frequency, FF) of the individual 50\u2013200 ms syllables that constitute adult song (Figure 1B, Andalman and Fee, 2009; Charlesworth et al., 2012; Tian and Brainard, 2017; Warren et al., 2011). This raises the possibility that LMAN provides top-down drive to RA to implement adaptive changes to behavior (Ali et al., 2013; Andalman and Fee, 2009; Aronov et al., 2008; Bottjer et al., 1984; Charlesworth et al., 2012; Doya and Sejnowski, 1998; Fee and Goldberg, 2011; Kao et al., 2005; Kearney et al., 2019; Nordeen and Nordeen, 2010; Olveczky et al., 2005; Scharff and Nottebohm, 1991; Tian and Brainard, 2017; Troyer and Bottjer, 2001; Troyer and Doupe, 2000a; Warren et al., 2011). Moreover, studies in sleeping and anesthetized birds have identified co-fluctuations in LMAN and RA activity (Hahnloser et al., 2006; Kimpo et al., 2003)\u2014measured as increases in the cross-covariance between LMAN and RA activity\u2014which peak at a short LMAN-leading temporal lag, consistent with the possibility of a dynamic top-down influence of LMAN on RA. However, it remains unclear whether such LMAN\u2013RA co-fluctuations are present during singing and, if so, whether they change during learning in a manner that could support a top-down role of LMAN in the adaptive adjustment of song parameters.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/83223/elife-83223-fig1-v1.jpg)\n\n**Figure 1.:** (A) Schematic of song system circuitry implicated in the production and learning of birdsong. This study focuses on hypothesized top-down signals from LMAN (lateral magnocellular nucleus of the anterior nidopallium), the output nucleus of the Anterior Forebrain Pathway (blue), to RA (robust nucleus of the arcopallium) in the Motor Pathway (red). RA sends projections to brainstem motor nuclei. Recordings of multi-unit activity were made using multi-electrode arrays chronically implanted in LMAN and RA. DLM, medial dorsolateral nucleus of thalamus. HVC and Area X are used as proper names. (B) Spectrogram of a single bout of a motif \u2018ABBCD\u2019 A motif is a specific sequence of syllables that is consistently sung across bouts and is unique to a bird (see Methods). Scale bar, 500 ms. (C) Example paired recordings in LMAN and RA across four renditions (numbered to match those in panel D) aligned to the onset of a single syllable, filtered in the spike band (300\u20133000 Hz). (D) Raster plot representing spikes for the same pair of LMAN and RA sites shown in panel C, across 30 renditions, ordered chronologically and aligned to syllable onset. Above the raster plot are the mean (\u00b1 SEM) smoothed firing rates. \u2018Premotor window\u2019 refers to the time window of neural activity used for calculating the cross-covariance between LMAN and RA spike trains. (E) Calculation of normalized cross-covariance for the example sites and syllable in panels C and D. Top: cross-correlation between LMAN and RA was calculated using spike trains for both concurrent trials (Same trial) and a control dataset in which LMAN and RA activity patterns were shuffled between adjacent renditions (\u2018Shuffled trials\u2019, mean \u00b1 standard error of the mean [SEM]). We used this shuffling procedure to estimate the cross-correlation between the mean activity patterns in LMAN and RA (i.e., eliminating the contribution of rendition-by-rendition variation that is shared between LMAN and RA, see Methods). Bottom: the mean of the shuffle-computed cross-correlation functions (Shuffled trials) was subtracted from the actual cross-correlation function (Same trials) to compute cross-covariance. We then divided the cross-covariance by the standard deviation of the shuffled cross-correlations to compute a normalized cross-covariance (measured in z-score). (F) LMAN\u2013RA cross-covariance across all syllables and pairs of LMAN and RA sites during baseline singing. The light gray curves represent individual syllables (N = 27), averaged over all simultaneously recorded pairs of LMAN and RA sites (N = 38 total LMAN\u2013RA site pairs, 3 birds). Mean \u00b1 SEM cross-covariance (across syllables, with each syllable contributing its mean over recording site pairs) is shown for individual birds (dark gray) and all data (orange).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/83223/elife-83223-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Linear time warping methodology. Linear time warping was used to align all renditions of a given motif (across all LMAN and RA recordings) to a single reference rendition. Raster of spike times before (left) and after (right) time warping, for 20 example renditions (rows) of an example motif. Horizontal red bars represent times of syllables in this motif. Time warping aligns the spike times for all renditions to a common median \u2018reference\u2019 rendition of this motif (see Methods). The bottom two panels illustrate in detail that this time-warping procedure shifts each spike\u2019s time such that the spike\u2019s fractional time within its containing segment (either syllable or gap) remains unchanged after shifting (i.e., satisfying the constraint apre/bpre = apost/bpost). (B) Raster plots of spiking activity for eight example RA (left) and LMAN (right) sites aligned to a single motif, with five renditions shown for each site. Syllables are represented by gray horizontal bars. (C) Left column, mean LMAN (blue) and RA (red) activity over all recorded sites, for four example song motifs (rows, each from a different bird). Syllables are indicated by gray bars. Right column, cross-correlation between mean LMAN and RA firing rate traces for the data on the left. N = 8 LMAN sites and 12 RA sites (for the motif for Bird 1), 3 LMAN and 5 RA (Bird 2), 9 LMAN and 15 RA (Bird 3), and 10 LMAN and 20 RA (Bird 4). The cross-correlation between LMAN and RA activity quantifies the relationship between rendition-averaged firing patterns in LMAN and RA; this differs from the cross-covariance measure used in the main text, which quantifies the rendition-by-rendition relationship between deviations in LMAN and RA activity from their respective means (i.e., co-fluctuations in activity). (D) Mean activity aligned to syllable onsets for all RA (top) and LMAN (bottom) sites. Thick, dark trace is mean \u00b1 standard error of the mean (SEM) activity taken over all syllables [N = 39 (range 6\u201314 across birds), each represented as a thin gray trace showing mean across sites], extracted from all motifs (N = 8 motifs for 4 birds, range 1\u20133 per bird). Colored, dashed traces show mean for each bird. Crosses on top panel represent the offset time of each syllable. The black \u2018x\u2019 indicates that offsets for four syllables are off the graph, at timepoints 0.11 (orange), 0.12 (orange), 0.11 (blue), and 0.19 (purple) s. (E) Cross-correlation functions for all song motifs. Thin traces represent cross-correlations for each motif, colored by bird (same as panel C). Thick trace represents mean \u00b1 SEM across motifs (N = 8 motifs). Crosses on top represent times of maximum correlation for each motif. N = 30 LMAN, 52 RA sites total (range 3\u201310 LMAN, 5\u201320 RA across 4 birds). (F) The time lag between LMAN and RA average activity patterns is not significantly different from zero. Comparison of the mean time lag of maximum correlation (red line, mean of cross marks in panel D) to a null distribution of time lags, representing the null hypothesis that there is no consistent non-zero time lag between LMAN and RA average activity patterns, estimated by recomputing (10,000 times) the mean time lag of maximum correlation after shuffling the brain area \u2018labels\u2019associated with each rendition-averaged firing rate trace (see Methods).\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/83223/elife-83223-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Post-mortem histology was used to confirm locations of electrodes for recording and stimulation experiments (see Methods). Example micrograph of brain section stained against calcitonin gene-related peptide (green), showing locations of recording electrode tips (white outline, marked by lesion) dorsal to LMAN and RA (black outline). The location of electrodes in this image confirms that electrodes entered LMAN and RA when lowered during experiments.\n\n## Results\n\n### LMAN-leading co-fluctuations of LMAN and RA activity are present during singing\n\nTo determine whether the co-fluctuations in neural activity between LMAN and RA previously identified in sleeping and anaesthetized birds are present during singing, we first examined neural activity in both nuclei during baseline singing before the onset of training (Figure 1A\u2013D). Consistent with prior studies in which LMAN and RA were recorded in separate birds (Aronov et al., 2008; Chi and Margoliash, 2001; Hessler and Doupe, 1999; Kao et al., 2008; Leonardo and Fee, 2005; Yu and Margoliash, 1996; McCasland, 1987; Olveczky et al., 2005; Sober et al., 2008), average activity in both areas exhibited consistent temporal structure aligned to ongoing song, peaking within 50 ms prior to syllable onsets (e.g., Figure 1D and Figure 1\u2014figure supplement 1A\u2013D). Additionally, we observed a close alignment between the patterns of activity in the two areas (Figure 1\u2014figure supplement 1C\u2013F). Despite such consistent temporal structure in average activity, we observed rendition-by-rendition variation in the patterning of activity in both nuclei, raising the possibility that this variation reflects co-fluctuations in LMAN and RA activity.\n\nWe assessed co-fluctuations of LMAN and RA activity by measuring cross-covariance, a metric previously used in sleeping and anaesthetized birds (Kimpo et al., 2003; see Methods). For a given pair of LMAN and RA recordings (example in Figure 1C\u2013E), LMAN\u2013RA cross-covariance is a measure of the similarity of moment-by-moment fluctuations of LMAN and RA spike patterns away from their respective across-rendition means, computed as a function of the time lag between these patterns (Perkel et al., 1967). We computed the cross-covariance within a premotor window for each syllable, which we defined as a 100ms period centered 50 ms preceding syllable onset (Figure 1D), chosen based on empirical estimates of when LMAN and RA activity patterns maximally influence acoustic structure of the upcoming syllable (Fee et al., 2004; Giret et al., 2014; Kao et al., 2005; Kojima et al., 2018; Yu and Margoliash, 1996; Sober et al., 2008). In birds singing spontaneously at baseline (\u2018undirected\u2019 singing produced in isolation), the LMAN\u2013RA cross-covariance was on average positive during syllable premotor windows (example pair of sites in Figure 1E, cross-covariance computed by normalizing data to shuffled controls; summary across pairs of recordings and syllables in Figure 1F), similar to cross-covariance measurements in anesthetized and sleeping birds (Hahnloser et al., 2006; Kimpo et al., 2003). Although there was variation in the magnitude and time lag of cross-covariance peaks across syllables and recording sites (Figure 1F, light gray curves) there was a dominant positive peak in the average cross-covariance with LMAN leading at a short time lag (~3 ms, Figure 1F; Kimpo et al., 2003). This putative influence of LMAN on RA is consistent with the known presence of a direct excitatory projection from LMAN to RA (Bottjer et al., 1989; Kubota and Saito, 1991; Mooney and Konishi, 1991; Nottebohm et al., 1982) and a hypothesized role of LMAN in driving motor variability in RA during baseline singing (Giret et al., 2014; Kao et al., 2005; Kao and Brainard, 2006; Kojima et al., 2018; Olveczky et al., 2005; Stepanek and Doupe, 2010). This indication of LMAN\u2013RA interactions during baseline singing raises the question of whether similar top-down signals from LMAN to RA operate during learning to instantiate rapid adaptive adjustments to individual syllables.\n\n### LMAN\u2013RA co-fluctuations are enhanced during learning\n\nTo determine whether adaptive biasing of pitch during learning is accompanied by changes to co-fluctuations in LMAN and RA activity, we examined LMAN\u2013RA cross-covariance while birds learned modifications to the pitch of individual \u2018targeted\u2019 song syllables in response to pitch-contingent white noise (WN) feedback (Figure 2A, B, see Methods; Ali et al., 2013; Andalman and Fee, 2009; Charlesworth et al., 2012, Charlesworth et al., 2011; Tian and Brainard, 2017; Tumer and Brainard, 2007; Warren et al., 2011). Across experiments, we found that LMAN\u2013RA cross-covariance was enhanced following training (3\u201310 hr) with pitch-contingent reinforcement (Figure 2C\u2013F, \u2018Target syllable\u2019; also Figure 2\u2014figure supplement 1A) and this enhancement was maximal at a short LMAN-leading time lag (~2 ms, Figure 2D). Moreover, LMAN\u2013RA cross-covariance increased with a similar time course to pitch modification (Figure 2G, H). In contrast, there were no detectable changes in LMAN\u2013RA cross-covariance for non-targeted syllables (Figure 2E, F, \u2018Non-target syllables\u2019), including those directly preceding the target syllable (Figure 2\u2014figure supplement 1B). There was also no detectable learning-related difference between target and non-target syllables in changes in the overall level of activity within each nucleus (Figure 2\u2014figure supplement 1C). The observations that increases in LMAN\u2013RA cross-covariance are restricted to the target syllable and develop in parallel with pitch modification indicate that these changes are linked specifically to learning, and not to other processes such as arousal, non-stationarity or \u2018drift\u2019 of recorded units, or circadian variation in activity patterns.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/83223/elife-83223-fig2-v1.jpg)\n\n**Figure 2.:** (A) Pitch training paradigm. White noise (WN) feedback is delivered during renditions of a specific target syllable when its pitch is either below or above a threshold (pink fill in \u2018pitch\u2019 histogram), depending on whether the objective is to train pitch shifts up or down, respectively. The schematic shows training for upward pitch shifts. Over the course of training (3\u201310 hr, mean ~6 hr), birds progressively modify pitch in the direction that escapes WN so that in this example the \u2018Trained\u2019 distribution is shifted upwards relative to \u2018Baseline\u2019. (B) Summary of the magnitude of pitch change across experiments (mean \u00b1 standard error of the mean [SEM], N = 11 experimental trajectories over 3 birds); individual points represent the mean for individual birds. *p < 0.05, Wilcoxon signed-rank test. (C) Spectrogram of a song bout in an example experiment, with the syllable \u2018F\u2019 targeted with pitch-contingent WN. Scale bar, 500 ms; y-axis, 0.5\u20137.0 kHz. (D) Change in cross-covariance during learning for target syllables. Left: mean \u00b1 SEM cross-covariance for \u2018Baseline\u2019and \u2018Trained\u2019 periods (last quarter of renditions during the training session) across experiments (N = 38 LMAN\u2013RA site pairs, 11 experiments, 3 birds). Right: mean \u00b1 SEM change in cross-covariance over the course of training. Black bar indicates time bins with values significantly different from zero (thin, p < 0.05; thick, p < 0.005, Wilcoxon signed-rank test). (E) Same as (D), but for non-target syllables. For a given experiment, there was only one target syllable, but multiple non-target syllables (mean, 4.2 syllables). Thus for each LMAN\u2013RA site pair, data were first averaged across all non-target syllables before plotting (N = 38 pairs, 11 experiments, 3 birds). (F) Summary of change in LMAN\u2013RA cross-covariance during training for target and non-target syllables. For each combination of paired LMAN\u2013RA sites and syllables, we computed the average change in cross-covariance (Trained \u2013 Baseline) in a 15-ms window centered at the peak of the average end-of-training cross-covariance (\u22123 ms) [N = 38 (Target) and 158 (Non-target) combinations of paired sites and syllables, across 11 experiments in 3 birds]. *p < 0.05, mixed effects model (fixed intercept and effect of syllable type; random effect of intercept and syllable type grouped by experiment ID). #p < 0.05, mixed effects model (fixed intercept and random effect of intercept grouped by experiment ID). (G) Time course of pitch change. Each training trajectory was analyzed by binning renditions into four training stages with equal numbers of renditions (i.e., quartiles). The average pitch change across experiments is plotted for each training stage (N = 10 experiments in 3 birds; excluding one experiment for which neural data was recorded only during baseline and the end of training.). Spacing of stages along the x-axis maintains the relative timing of stages (time of median rendition for each stage relative to median baseline rendition: stages 1, 2, 3, and 4: 1.02, 2.35, 3.73, and 5.46 hr). *p < 0.05 vs. 0, Wilcoxon signed-rank test. (H) Time course of change in LMAN\u2013RA cross-covariance for the target syllable for the same experiments illustrated in (G) (N = 37 LMAN\u2013RA site pairs, 10 experiments, 3 birds). *p < 0.05 vs. 0, Wilcoxon signed-rank test; ##p < 0.005, last two vs. first two training quartiles.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/83223/elife-83223-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) LMAN\u2013RA co-fluctuations are enhanced during learning in a manner specific to the target syllable\u2014reproduction of Figure 2F using a shorter duration premotor window (60 ms) for calculating cross-covariance. See legend for Figure 2F. *p < 0.05, mixed effects model (fixed intercept and effect of syllable type; random effect of intercept and syllable type grouped by experiment ID). #p < 0.05, mixed effects model (fixed intercept and random effect of intercept grouped by experiment ID). (B) Change in LMAN\u2013RA cross-covariance was not detected for the non-target syllable sung directly preceding the target syllable in the song sequence. N = 19 LMAN\u2013RA site pairs in 3 birds (represented by colored lines). **p < 0.005, LMAN\u2013RA cross-covariance (trained minus baseline) modeled with fixed effects for intercept and syllable type and random effect for intercept and syllable type grouped by experiment ID. Spectrogram depicts an example experiment; scale bar, 500 ms. (C) Summary of change in LMAN and RA firing rates during training for target and non-target syllables. Firing rates in the training period, computed as mean spikes per second in the same premotor window used for computing LMAN-RA cross-covariance, were normalized by dividing the firing rates at baseline before training onset. Each data point corresponds to activity for a single syllable and recording site (RA: N = 29 Target, 127 Non-target; LMAN: 14 Target, 51 Non-target; across 11 experiments in 3 birds). n.s., not significant, t-test.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/83223/elife-83223-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) Change in cross-covariance during learning vs. activity-pitch correlation at baseline, across RA sites. Activity-pitch correlation was calculated as the rendition-by-rendition correlation between spike count (in the same premotor window used for computing LMAN\u2013RA cross-covariance) and syllable pitch, for baseline renditions. For RA sites that were recorded simultaneously with multiple LMAN sites, the change in cross-covariance (y-axis) is the average over all LMAN\u2013RA pairs for that RA site. The colors of points indicate whether the activity-pitch correlation was statistically significant. (B) Same as (A), but plotting the absolute value of the correlation coefficient on the x-axis. (C, D) Same as (A, B), but for LMAN sites. None of the correlations was significant.\n\n### The strength of LMAN\u2013RA co-fluctuations and the strength of adaptive motor bias are associated on a rendition-by-rendition basis\n\nIf changes to LMAN\u2013RA cross-covariance reflect top-down commands that adaptively bias RA activity and pitch during learning, then rendition-by-rendition variation in the strength of this signal should be associated with rendition-by-rendition variation in the magnitude of pitch shifts in behavior. To test this prediction, we took advantage of the rendition-by-rendition variation in pitch shifts that birds naturally exhibit (Figure 3A, note that this variation is reflected in the large spread of pitch values in both \u2018baseline\u2019 and \u2018trained\u2019 periods). We divided interleaved syllable renditions into two groups, based on whether each rendition\u2019s pitch was shifted in the adaptive direction by more or less than the median amount (Figure 3A). At the peak of learning (\u2018trained\u2019 period) we found that renditions exhibiting stronger learning-related pitch shifts (stronger bias) also exhibited greater learning-related enhancement of cross-covariance (example experiment in Figure 3B; summary in Figure 3C; also see Figure 3\u2014figure supplement 1A), regardless of whether birds had been trained to adaptively shift pitch up or down (Figure 3\u2014figure supplement 1B). This finding that pitch modifications and LMAN\u2013RA cross-covariance are linked on a rendition-by-rendition basis suggests that LMAN\u2013RA co-fluctuations reflect a rapidly varying top-down signal that adaptively biases motor performance during learning.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/83223/elife-83223-fig3-v1.jpg)\n\n**Figure 3.:** (A) Example experiment, plotting pitch of individual renditions during baseline and at the end of training in an experiment in which white noise (WN) feedback targeted lower pitch renditions (i.e., training upwards pitch shift). Renditions are split into two groups, \u2018Stronger bias\u2019 (purple) and \u2018Weaker bias\u2019 (green) based on pitch deviation from the median. Renditions in the \u2018stronger\u2019 and \u2018weaker\u2019 groups are interleaved in time, and taken from periods with relatively stable pitch, so that any differences in LMAN\u2013RA cross-covariance between these two groups reflects rendition-by-rendition variation, not slower \u2018drift\u2019 due to learning. We used the last half of baseline and training renditions. Each data point represents a single syllable rendition. (B) Example experiment (same as in panel A), plotting LMAN\u2013RA cross-covariance for individual pairs of LMAN\u2013RA sites. Each data point represents the mean cross-covariance for renditions with either stronger bias (purple) or weaker bias (green). Thus, each site pair contributes two points to the \u2018Baseline\u2019 and two points to the \u2018Trained\u2019 data (one purple, one green). The renditions used to calculate cross-covariance are the same as in panel A. Each data point represents a single LMAN\u2013RA site pair. (C) Summary of change in LMAN\u2013RA cross-covariance at the peak of training, relative to baseline (Trained \u2212 Baseline), measured separately for renditions expressing \u2018stronger\u2019 or \u2018weaker\u2019 bias (N = 38 LMAN\u2013RA site pairs, 11 experiments, 3 birds). *p < 0.05, LMAN\u2013RA cross-covariance (Trained \u2013 Baseline) modeled with fixed intercept and random intercept grouped by experiment ID. **p < 0.005, Stronger\u2013Weaker modeled with fixed intercept and random intercept grouped by experiment ID.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/83223/elife-83223-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) The strength of LMAN\u2013RA co-fluctuations and the strength of adaptive motor bias are associated on a rendition-by-rendition basis\u2014reproduction of Figure 3C using a shorter duration premotor window (60ms) for calculating cross-covariance. See legend for Figure 3C. #p < 0.05, LMAN\u2013RA cross-covariance (Trained \u2212 Baseline) modeled with fixed intercept and random intercept grouped by experiment ID. *p < 0.005, Stronger\u2013Weaker modeled with fixed intercept and random intercept grouped by experiment ID. (B) The strength of LMAN\u2013RA co-fluctuations and the strength of adaptive motor bias are associated on a rendition-by-rendition basis, for experiments training upwards (left panel) or downwards (right panel) pitch shifts. Each panel shows change in LMAN\u2013RA cross-covariance during training (Trained \u2212 Baseline), measured separately for renditions expressing \u2018stronger\u2019 or \u2018weaker\u2019 learning (up training: N = 23 LMAN\u2013RA site pairs in 6 experiments in 3 birds; down training: 15 LMAN\u2013RA site pairs in 5 experiments in 2 birds). *p < 0.05, Wilcoxon signed-rank test.\n\n### Learning-related increases in LMAN\u2013RA co-fluctuations are context specific\n\nPrior studies revealed that pitch modifications for a given syllable are dependent on sequential context, or the sequence of syllables in which it is embedded (Hoffmann and Sober, 2014; Tian and Brainard, 2017); this prompted us to examine whether increases in LMAN\u2013RA cross-covariance are similarly context specific. To do so, we took advantage of the specificity with which learning can be driven; when a syllable (e.g., B) is targeted in a specific sequential context (e.g., AB) and not in others (e.g., XB or YB), the resulting pitch modification is greatest in the targeted context (Hoffmann and Sober, 2014; Tian and Brainard, 2017). In a subset of experiments, we therefore provided WN feedback in such a context-specific manner, with target and non-target contexts naturally interleaved from rendition to rendition (Figure 4A, B). We found that average LMAN\u2013RA cross-covariance increased over the course of training specifically for the target context, with no detected change for the same syllable in non-target contexts (Figure 4C; see Figure 4\u2014figure supplement 1). Enhanced LMAN\u2013RA cross-covariance is therefore flexibly linked to sequential contexts associated with learning.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/83223/elife-83223-fig4-v1.jpg)\n\n**Figure 4.:** (A) Schematic of context-dependent training. In this example experiment, pitch-contingent white noise (WN) was provided for renditions of the target syllable (C) only in the \u2018Target\u2019 context (BC). WN was never provided when C was sung in \u2018Non-target\u2019 contexts (e.g., AC). (B) Spectrogram for the same experiment as in panel A, illustrating pitch-contingent WN delivered only for syllable C in the target context BC. The first rendition of BC escaped WN because its pitch was higher than the threshold defined for this experiment. (C) Summary of change in LMAN\u2013RA cross-covariance during training (N = 24 LMAN\u2013RA site pairs for target syllable, target context, 35 pairs for target syllable, non-target context, and 112 pairs for non-target syllables, 7 experiments, 3 birds). **p < 0.005, mixed effects model (fixed effect of intercept and syllable type; random effect of intercept and syllable type grouped by experiment ID).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/83223/elife-83223-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Reproduction of Figure 4C. using a shorter duration premotor window (60 ms) for calculating cross-covariance. See legend for Figure 4C. *p < 0.05, mixed effects model (fixed effect of intercept and syllable type; random effect of intercept and syllable type grouped by experiment ID).\n\n### Adaptive bias is eliminated by disrupting LMAN activity in a narrow premotor window\n\nThe close relationship between changes to LMAN\u2013RA cross-covariance and behavior is consistent with a model in which LMAN provides a temporally localized top-down command that has a transient, adaptive influence on the immediately upcoming syllable. This model has remained untested in prior studies driving learning and then perturbing LMAN activity to causally probe its contributions to pitch shifts, as these studies have used pharmacological manipulations that act on the timescale of minutes, and thus lack the temporal resolution to assess the moment-by-moment relationship between neural activity and behavior (Andalman and Fee, 2009; Tian and Brainard, 2017; Warren et al., 2011). We reasoned that electrical microstimulation of LMAN could potentially enable a more temporally precise disruption of neural activity and thus test of LMAN\u2019s causal influence on RA. Stimulation of LMAN (Giret et al., 2014; Kao et al., 2005; Kojima et al., 2018) and interconnected song system nuclei (Ashmore et al., 2005; Fee et al., 2004; Vu et al., 1994) during baseline singing perturbs song acoustic features in a manner that is rapid and transient (timescale of 10 s of milliseconds). LMAN microstimulation\u2014with intensity titrated to minimize overt behavioral effects during baseline singing (see Methods)\u2014thus has the potential to disrupt neural activity that may convey a motor-biasing signal during learning.\n\nTo evaluate the specificity of the top-down bias reflected in increased LMAN\u2013RA cross-covariance, we stimulated LMAN within the target syllable\u2019s premotor window during a randomly interleaved 50% of renditions (\u2018Stim\u2019; see Methods) in 1- to 3-hr long blocks (Figure 5A, B). Compared to prior studies using spatially localized, unilateral microstimulation of LMAN (Giret et al., 2014; Kao et al., 2005), our stimulation experiments were designed to cause more global, bilateral disruption of LMAN (see Methods). We measured the effect of stimulation by comparing stimulated renditions to randomly interleaved control renditions for which stimulation was withheld. Before the onset of pitch-contingent WN training, stimulation caused modest changes to pitch that varied across experiments, resulting in only small changes to average pitch (example experiment in Figure 5C, D; summary in Figure 5E; see also Giret et al., 2014; Kao et al., 2005; Kojima et al., 2018). In contrast, during learning, stimulation caused pitch to revert systematically toward its baseline value (Figure 5C\u2013E). This reversion is consistent with the interpretation that stimulation removes an adaptive biasing signal that develops during learning, with the remaining expressed pitch shifts reflecting learning that has transferred to the downstream motor pathway to become independent of LMAN (Andalman and Fee, 2009; Warren et al., 2011). Indeed, this occlusion of pitch modification via temporally precise disruption of LMAN activity was quantitatively indistinguishable from that caused by longer lasting pharmacological inactivation of LMAN in the same species and training paradigm (Warren et al., 2011; compare Figure 5E, F). Thus, our findings indicate that appropriately patterned LMAN premotor activity is required for adaptive biasing of vocal output during learning.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/83223/elife-83223-fig5-v1.jpg)\n\n**Figure 5.:** (A) Schematic of electrical microstimulation in LMAN. Stimulation was used to disrupt LMAN activity at precise times during singing. (B) Experimental design. To test for a causal contribution of LMAN premotor activity to pitch modifications during learning, on randomly interleaved renditions stimulation was either delivered (\u2018Stim\u2019, 60 ms duration centered 50 ms prior to syllable onset) or withheld (Catch). \u2018WN\u2019 marks the average time of WN feedback for this experiment. (C) An example experiment in which pitch was shifted away from baseline over 3 days, with LMAN microstimulation performed during 1\u20133 hr blocks on the baseline day and 3 subsequent training days, depicting pitch (mean \u00b1 standard error of the mean [SEM]) for stimulated (Stim) and non-stimulated (Catch) syllable renditions. (D) Scatterplot showing pitch of individual renditions from the experiment in panel C on randomly interleaved stimulated (red) and catch (black) renditions during baseline and training day 3 (arrowheads, mean pitch). The magnitude of LMAN bias is estimated as the difference between Stim and Catch renditions (blue arrow). (E) Summary of effects of LMAN microstimulation on pitch across all experiments (N = 14 training sessions in 4 birds), plotted for baseline (Base), and training (mean over training days 1\u20133) for experiments training pitch up or down. *p < 0.05, t-test comparing Catch to Stim. (F) Same as panel E, but for experiments in which LMAN was inactivated pharmacologically using muscimol or lidocaine (Drug). Pharmacological perturbation had quantitatively similar effects on pitch compared to electrical microstimulation in panel E. Data were previously published (Warren et al., 2011). (G) Schematic of experiment using short-duration microstimulation [red hash marks, durations 10 ms (n = 3 experiments) or 15 ms (n = 1)] applied at varying timepoints in the target syllable\u2019s premotor window. Onset timing of stimulation was varied from \u221265 to +5 ms relative to the expected timepoint of WN delivery (WN). Three example microstimulation trains are shown, with onsets at \u221245, \u221235, and \u221225 ms. (H) Analysis of the temporal latency between short-duration microstimulation and pitch reversion. Black trace shows pitch reversion for the example experiment in Panel G, measured for a single 8ms time bin, caused by stimulation at varying times relative to the time of pitch measurement (\u2018Stimulation onset time\u2019, time between the centers of the time bins for stimulation and measuring pitch). Arrowheads depict, for each experiment, the minimum latency between stimulation and significant pitch reversion, calculated from continuous pitch contours (red arrowhead refers to the experiment shown in panel G).\n\nTo precisely localize the temporal window in which LMAN contributes to adaptively biasing motor output, we systematically varied the timing of stimulation relative to the target syllable, applying short stimulation trains (10 ms) at times ranging from \u221265 to +5 ms relative to the timepoint of maximal pitch modification (Figure 5G, H, average time of WN delivery labeled \u2018WN time\u2019; Charlesworth et al., 2011). Stimulation caused reversion of learning only if applied within a narrow premotor window prior to pitch measurement (e.g., 25\u201345 ms before pitch measurement for the example experiment in Figure 5G, H). Across four experiments, the latency between stimulation and detectable pitch reversion ranged from 18 to 26 ms (Figure 5H, arrowheads), consistent with prior estimates of the premotor delay between LMAN activity and song (Giret et al., 2014; Kao et al., 2005; Kojima et al., 2018). Combined with prior findings from pharmacological perturbations within this circuit and of changes to LMAN\u2013RA cross-covariance during learning, these microstimulation experiments indicate that LMAN exerts a moment-by-moment, top-down influence on RA to implement adaptive motor bias.\n\n## Discussion\n\nUsing paired recordings from LMAN and RA in singing birds, we identified a neural signature of a top-down influence of LMAN on RA, quantified as a short latency, LMAN-leading peak in the cross-covariance of neural activity. This LMAN\u2013RA cross-covariance peak is present even at baseline prior to learning reinforcement-driven pitch modifications (Figure 1), consistent with an ongoing role for LMAN in driving rendition-by-rendition exploratory variation in behavior (Kao et al., 2005; Olveczky et al., 2005). Strikingly, during learning LMAN\u2013RA cross-covariance strengthens in a premotor window closely linked to the individual movement (syllable, Figure 2), rendition-by-rendition variation in the magnitude of adaptive pitch modifications (Figure 3), and sequential context (Figure 4) associated with learning. Moreover, temporally localized perturbation of LMAN activity specifically within this premotor window causes rapid and transient occlusion of learned changes to pitch (Figure 5). Combined, these results indicate that LMAN enables learning by conveying a dynamic top-down command to RA that varies on the timescale of individual movements and is flexibly linked to contexts associated with learning.\n\n### Adaptive bias through dynamic top-down influence on primary motor area output\n\nOur finding that LMAN\u2013RA cross-covariance is a temporally precise neural correlate of adaptive behavioral modifications suggests a similar interpretation for previous work that identified enhanced inter-area co-fluctuations during learning (Koralek et al., 2013; Koralek et al., 2012; Lemke et al., 2019; Makino et al., 2017; Sawada et al., 2015; Veuthey et al., 2020; Wagner et al., 2019). In particular, prior studies left unresolved whether such co-fluctuation signals reflect the moment-by-moment implementation of adaptive movements instead of other slower modulatory processes related to motivation, vigor, attention, motor preparation, or other kinds of global brain state changes (Cowley et al., 2020; Hikosaka et al., 2006; Ignashchenkova et al., 2004; Jaffe and Brainard, 2020; Kawashima et al., 2016; M\u00fcller et al., 2005; Noudoost et al., 2010; Sawada et al., 2015; Stavisky et al., 2017). Our results indicate that inter-area co-fluctuations in these and other systems may similarly reflect dynamic top-down shaping of primary motor output in driving behavioral adaptation. Moment-by-moment and context-specific links between measures of inter-area co-fluctuations and behavior, similar to those we found between LMAN\u2013RA cross-covariance and pitch shifts during learning, may be detected most readily for forms of learning that involve modification of specific movement parameters with high temporal (Kawai et al., 2015; Medina et al., 2005; Medina et al., 2000; Narayanan and Laubach, 2006; Rueda-Orozco and Robbe, 2015) or contextual specificity (Howard et al., 2012; Rochet-Capellan et al., 2012; Rochet-Capellan and Ostry, 2011; Wainscott et al., 2005), similar to song learning and adaptation (Charlesworth et al., 2011; Lipkind et al., 2017; Ravbar et al., 2012; Tchernichovski et al., 2001; Tian and Brainard, 2017; Tumer and Brainard, 2007).\n\n### Neural mechanisms underlying an adaptive top-down influence of LMAN on RA\n\nOur finding of learning-related increases in LMAN\u2013RA cross-covariance raises the question of what neural mechanisms instantiate this top-down bias during learning. A prevalent hypothesis is that top-down LMAN bias results from the reinforcement of LMAN activity patterns associated with successful behavioral variants (Andalman and Fee, 2009; Brainard and Doupe, 2000; Charlesworth et al., 2011, Charlesworth et al., 2012; Doya and Sejnowski, 1998; Fee and Goldberg, 2011; Gadagkar et al., 2016; Kao et al., 2005; Kearney et al., 2019; Singh Alvarado et al., 2021; Troyer and Bottjer, 2001; Troyer and Doupe, 2000a; Tumer and Brainard, 2007; Warren et al., 2011). Such reinforcement could lead to a variety of changes to LMAN activity patterns that could alter the influence of LMAN on RA, including population-wide changes in firing rate, altered correlational structure across LMAN neurons (Brown and Raman, 2018; Darshan et al., 2017; Kumar et al., 2010; Riehle et al., 1997; Woolley et al., 2014; Zandvakili and Kohn, 2015), or more complex or distributed changes to the temporal structure of LMAN neurons\u2019 firing patterns (Kao et al., 2008; Kao et al., 2005; Kojima et al., 2013; Olveczky et al., 2005; Palmer et al., 2021). We did not detect any systematic learning-related increases or decreases in average LMAN firing rates during learning (Figure 2\u2014figure supplement 1C). Moreover, we did not find evidence that enhancement in cross-covariance during learning was specific to LMAN and RA sites that exhibited the highest baseline correlation with pitch (Figure 2\u2014figure supplement 2). Both negative findings\u2014although requiring corroboration using larger datasets\u2014suggest that any changes to LMAN activity during learning may occur in a heterogeneous and complex fashion across neurons.\n\nThat increases in cross-covariance can be observed at arbitrarily selected recording locations in RA and LMAN suggests that the associated changes in these areas are distributed across neurons. At least for RA, the possibility that activity changes are correlated on a rendition-by-rendition basis across neurons is supported both by the known architecture of RA in which the inhibitory inputs to multiple projection neurons are highly correlated (Miller et al., 2017; Spiro et al., 1999) and by an understanding that correlated activity of RA projection neurons supports the ability of these neurons to drive downstream structures and influence song (Sober et al., 2008).\n\nAn alternative model is that top-down bias is implemented by altering the efficacy of LMAN synapses in RA\u2014potentially in the absence of changes within LMAN\u2014either by plasticity at these synapses, or by changes to neuromodulatory inputs to RA that act to alter the gain of an appropriate set of LMAN synapses in RA. Indeed, prior work has supported a role for noradrenergic (Sheldon et al., 2020; Solis and Perkel, 2006) and cholinergic (Puzerey et al., 2018) inputs to RA in modulating song. Overall, distinguishing between possible mechanisms for learning-related changes to LMAN\u2019s top-down bias will require elucidation by studies monitoring larger numbers of neurons during learning.\n\n### A functional architecture with distinct substrates for fast and slow learning\n\nOur findings suggest that motor skill learning is generally supported by biasing signals generated by frontal circuits (such as the Anterior Forebrain Pathway that contains LMAN) separate from those that drive the core motor program. An advantageous feature of this hierarchical architecture may be to enable rapid behavioral modifications in early phases of learning via top-down signals that flexibly update in response to changing goals, contexts, and reward contingencies, while allowing for the stable representation of core motor programs in primary motor areas (Kim and Hikosaka, 2013; Miller and Cohen, 2001; Tian and Brainard, 2017).\n\nOn the longer timescale over which expertise is developed, such top-down biasing may also supervise slower plasticity in primary motor areas to drive long-lasting updates to core motor programs. Such plasticity mechanisms may operate for both birdsong (Andalman and Fee, 2009; Fee and Goldberg, 2011; Moorman et al., 2021; Tian and Brainard, 2017; Troyer and Doupe, 2000b; Warren et al., 2011) and other sensory-motor skills (Kawai et al., 2015; Knudsen, 1994; Turner and Desmurget, 2010), and are consistent with observations that early and late stages of sensory-motor learning are supported by distinct neural substrates (Andalman and Fee, 2009; Aronov et al., 2008; Bottjer et al., 1984; Dayan and Cohen, 2011; Doyon and Ungerleider, 2002; Hikosaka et al., 2002; Kleim et al., 2004; Nordeen and Nordeen, 2010; Scharff and Nottebohm, 1991; Shadmehr and Holcomb, 1997; Warren et al., 2011).\n\n## Methods\n\n### Animal subjects\n\nWe used adult male Bengalese finches [Lonchura striata domestica, N = 8 (4 for recordings, 4 for microstimulation)] that were bred in our colony and housed with their parents until at least 60 days of age. During experiments, birds were housed individually in sound-attenuating chambers (Acoustic Systems) on a 14/10 hr light/dark cycle with food and water provided ad libitum. All experiments were performed on \u2018undirected\u2019 song (i.e., with no female present). All procedures were in accordance with protocols approved by the University of California, San Francisco Institutional Animal Care and Use Committee (Approval #: AN185512-02E).\n\n### Pitch training paradigm using closed-loop reinforcement\n\nWe used a modified version of EvTaf (Charlesworth et al., 2012, Charlesworth et al., 2011; Tian and Brainard, 2017; Tumer and Brainard, 2007; Warren et al., 2011), a custom-written Labview program (National Instruments), to monitor song and deliver WN feedback in a closed-loop fashion during training (EvTaf is available from the authors upon request) (Ali et al., 2013; Andalman and Fee, 2009; Charlesworth et al., 2012, Charlesworth et al., 2011; Tian and Brainard, 2017; Tumer and Brainard, 2007; Warren et al., 2011). Briefly, song was recorded with an omnidirectional lavalier microphone (Countryman), bandpass filtered between 75 Hz and 10 kHz, and digitized at 32 kHz. To detect a specific segment of song (i.e., within a targeted syllable) for targeted reinforcement, the spectrum of each successive 8ms segment of ongoing song was tested online for a match to a spectral template constructed to discriminate the targeted segment from all other song segments. Successful match was based on threshold crossing of the Euclidean distance between this song segment and template. A match signaled detection of the targeted syllable. FF, or pitch, of the matching segment was compared to an FF threshold (Tumer and Brainard, 2007). If FF was below threshold (in experiments driving upwards shifts in FF), or above threshold (in experiments driving downwards shifts in FF), WN feedback [WN, 40\u201360 ms at 90\u201395 dB(A)] was delivered with <1 ms latency. Feedback renditions were termed \u2018hits\u2019.\n\nFor context-dependent training, this paradigm was modified so that pitch-contingent WN was delivered only if the Target syllable was sung in a specific Target context, defined by the identity of the sequence of syllables directly preceding the Target syllable. Sequential context was defined for each rendition of the Target syllable and detected online by extending the spectral template matching algorithm (above) to detect conjunctions of the current and preceding syllables, using methods described in Tian and Brainard, 2017.\n\nAll training trajectories for neural recordings were performed within a single day of continuous recording of neural and singing data. WN was turned on after sufficient baseline data were collected (15\u201340 song bouts). The average training duration was 6.4 hr (min, 3.0; max, 10.0) starting from when WN was turned on.\n\nFor LMAN microstimulation experiments, the training duration was extended to up to 4 days with the goal of eliciting large shifts in pitch that would allow more robust measurement of behavioral effects of stimulation. This approach was chosen to match that of previous pharmacology experiments (Warren et al., 2011) which enabled us to directly compare behavioral effects of these different manipulations.\n\nFor all pitch training experiments, we initially set the WN pitch threshold to a hit rate of ~70%. Successful learning leads to a progressive decrease in the hit rate; therefore, the pitch threshold was updated over the course of training to maintain a hit rate of 70%.\n\n### Offline analysis of song\n\nFor analysis of song recorded simultaneously with neural recordings, we used song acoustic data recorded using the same Intan acquisition system used for collecting neural data (see below), to ensure temporal alignment of neural and singing data. Audio signals were acquired with an electret microphone (CUI), amplified (MAX4466, Adafruit), and digitized at 30 kHz. For analysis of song during LMAN stimulation, we analyzed data saved using the Labview training program described above.\n\nSyllable pitch was calculated in the following manner (Charlesworth et al., 2011). For each syllable rendition, we calculated a spectrogram using a Gaussian-windowed (\u03c3 = 1 ms) short-time Fourier transform (window size = 1024 samples; overlap = 1020 samples; sampling rate = 30 kHz). Within each time bin, FF was defined as the frequency corresponding to peak power of the first harmonic, estimated using parabolic interpolation. FF for the rendition was then calculated as the mean FF across time bins for a fixed window defined relative to syllable onset. We similarly excluded introductory notes and call-like syllables, which both consist largely of broadband noise and lack well-defined pitch.\n\n### Electrode array microdrives for neural recordings\n\nCustom-built microdrives, inspired by Vandecasteele et al., 2012, were constructed to hold a custom-built array of tungsten electrodes. For one bird we used two 0.5 MOhm and two 6.0 MOhm electrodes in each array organized in a diamond formation (see below for spatial spread). For other birds we used four (diamond) or five (pentagon) 0.5 MOhm electrodes. In all cases, we used tungsten electrodes from Microprobes (WE30010.5F for 0.5 MOhm, and WE30016.0F for 6.0 MOhm). Microdrives consisted of a movable shuttle onto which electrodes were affixed, allowing manual adjustment of the position of electrodes along the z-axis with a resolution of 26.5 \u00b5m (one-eighth turn of a 00\u2013120 screw). Electrodes were stabilized in the horizontal (x\u2013y) plane by passing them through tight-fitting polyimide tubes (0.0056\u2033 ID, 0.00075\u2033 WD) glued to the static parts of the drive. Silver wires (diameter, 0.003\u2033 bare, 0.0055\u2033 teflon-coated) connected each electrode to its pin on an Omnetics connector (A79042-001). Low impedance reference electrodes were made by cutting tungsten electrodes described above to a blunt tip. Electrodes for the two microdrives (LMAN and RA) were wired to different channels on the same connector.\n\nElectrodes were positioned in the array such that their tips were in the same horizontal plane. Electrodes were positioned so that there was greater spread along the anterior\u2013posterior axis (0.4\u20130.5 mm) than the medial\u2013lateral axis (0.2\u20130.3 mm) to account for the expectation of greater variability in targeting along the anterior\u2013posterior axis, since position in this axis was further from stereotaxic zero than position in the medial\u2013lateral axis (see below for coordinates).\n\n### Implantation of recording microdrives\n\nImplants were performed in the left hemisphere in the following order within a single surgical session with birds under anesthesia: RA microdrive, LMAN microdrive, reference electrode, shared connector. All wiring of electrodes to connectors was completed before implantation.\n\nThe location of RA was confirmed by electrophysiological targeting. Single carbon-fiber electrodes (Kation Scientific, Carbostar-1) were lowered gradually at candidate x\u2013y locations to depths where RA was expected. RA was detected based on the presence of its characteristic tonic spiking activity (10\u201320 Hz). The x\u2013y location of the center of RA was determined as where the extent of tonic activity extended over a depth of at least 400 \u00b5m; we performed up to three penetrations at different x\u2013y locations to determine the best estimate of RA\u2019s center, which we found to be 2.05\u20132.15 mm lateral, 0.04 mm posterior to Y0 (i.e., caudal point of the intersection of the midsagittal and transverse sinuses), 2.75\u20133.15 mm ventral to the brain surface, with beak angle at 42\u00b0 [by definition, vertical (beak pointing down) was 0\u00b0 and horizontal was 90\u00b0].\n\nA microdrive was then implanted with electrode tips 1.2 mm above the dorsal edge of RA. Next, a microdrive was implanted over LMAN using stereotaxic coordinates: 1.37 mm lateral, 5.18\u20135.27 mm anterior, 1.25 mm ventral, at a 50\u00b0 beak angle. This depth was expected to place the electrode tips ~0.5 mm above LMAN. The reference electrode was implanted directly underneath the skull but with minimal penetration of brain, either over the cerebellum or directly between the LMAN and RA implants. The connector was fixed to the skull over the right hemisphere. Dental cement (Coltene Hygenic) was used to secure all implants to the skull; small holes were made in the upper layer of the skull into which dental cement could flow before curing to increase implant stability. A plastic tube, glued to the dental cement base of the implant and surrounding the implant, was used as a protective cap.\n\n### Electrophysiological recordings\n\nAfter subjects recovered and were singing (1\u20132 days), they were tethered and then handled a few times a day for acclimatization. Recording sessions began a week or two after surgery after birds consistently sang within tens of minutes after being handled. Starting immediately after lights were turned on in the morning, we slowly lowered (<20 \u00b5m/s) the electrodes from their resting positions toward LMAN and RA. Localization within these nuclei was assessed by evaluating tonic activity (RA), song-locked firing rate modulation (LMAN and RA), and depth. Post hoc histological verification confirmed that recordings were within LMAN and RA (see below). At the end of each session, electrodes were raised to a position with the tip at >300 \u00b5m above the dorsal edges of RA and LMAN to minimize potential tissue damage within those areas. Recording sessions were separated by multiple days, and different depths were targeted, with no selection criteria (e.g., firing rate or baseline correlation with pitch) for units that were recorded.\n\nVoltage signals were measured using a homemade lightweight headstage (Intan RHD2132 amplifier chip) and the Intan RHD2000 Amplifier Evaluation System. Signals were amplified, filtered (1\u201312,000Hz pass band), and multiplexed on the headstage, then stored on hard disk for offline analysis.\n\nA total of seven birds received dual LMAN and RA implants. For three of these birds, we were unable to obtain any appropriate data due to song deterioration after surgery (likely due to damage of HVC, RA, or the HVC\u2013RA tract). For analyses of LMAN and RA activity during baseline singing, we obtained recordings from the remaining four birds (including recordings performed separately in LMAN and RA), resulting in a total of N = 30 LMAN and 52 RA multi-unit sites (ranging from 3 to 10 LMAN and 5\u201320 RA sites per bird). Analysis of LMAN\u2013RA cross-covariance in learning experiments included only concurrent LMAN and RA recordings collected over a day of learning. We excluded one of the four birds, for which we were only able to collect concurrent recordings from LMAN and RA during baseline singing, as signal strength had degraded (to the point where spikes were not detectable) before the rate of songs per day had recovered to a level sufficient for training pitch modification. This resulted in a a total of N = 38 pairs of LMAN and RA sites across 11 learning sessions in 3 birds. We varied the target syllable and training direction across the experiments (learning sessions) performed for each bird. Neural analyses excluded the two syllables directly following the target syllable, to avoid potential acute startle or feedback effects that may occur due to WN (Sakata and Brainard, 2008; Sakata and Brainard, 2006), and syllables that were associated with movement artifacts either during baseline or training renditions (N = 3.3/10.8 syllables). In each training session we recorded 1\u20132 sites in LMAN and 1\u20135 sites in RA, and considered all pairs of these LMAN\u2013RA sites for LMAN\u2013RA cross-covariance.\n\n### Spike detection\n\nSpikes were detected using the spike clustering software Wave_clus (Chaure et al., 2018) run on MATLAB. Briefly, we detected putative spikes by amplitude threshold crossing (threshold of 2.5\u20133.5 \u00d7 SNR, minimum refractory period 0.2 ms), mapped those spikes onto a feature space defined by wavelet coefficients, and then clustered spikes in this feature space. The noise cluster was discarded, and all spike clusters were merged into a single multiunit cluster.\n\nPrior literature suggests that a substantial portion of the spikes we recorded was from excitatory projection neurons. First, for LMAN, the ratio of projection neurons to interneurons has been estimated at around 3:1 (Bottjer et al., 1998) to 15:1 (Livingston and Mooney, 1997). Further evidence that excitatory neurons are more easily detected than inhibitory ones comes from reports of difficulty finding interneurons in slice preparations (Boettiger and Doupe, 1998; Livingston and Mooney, 1997). One study reported that LMAN projection neurons verified as projecting to RA via antidromic stimulation have similar spiking activity to unverified ones, suggesting that extracellular recordings in LMAN tend to be dominated by projection neuron activity (Olveczky et al., 2005). For RA, the tonic firing we found in the multi-unit activity is characteristic of projection neurons (Leonardo and Fee, 2005; Sober et al., 2008; Spiro et al., 1999). Moreover, other studies isolating single neurons have reported low probability of finding putative interneurons in RA Leonardo and Fee, 2005; Sober et al., 2008; indeed, in slice preparations the ratio of projection neuron to interneurons in RA was found to be around 30:1 (Spiro et al., 1999).\n\n### Analysis of temporal structure of LMAN and RA activity during singing\n\nTo assess the temporal structure of activity separately in LMAN and RA, we computed the average firing patterns aligned to song motifs (stereotyped sequences of syllables), as shown in Figure 1\u2014figure supplement 1. Motifs were identified by visual inspection of song bout spectrograms (N = 8 motifs across 4 birds). For a given motif, the timing of syllable onsets and offsets can vary slightly across renditions and recording sessions. To account for this variation and temporally align activity, we linearly time warped all renditions to a \u2018reference\u2019 motif, constructed with syllables and gaps matching the median value of syllables and gaps for that specific motif across all of its renditions. This alignment was performed by shifting each spike so that its fractional time within its containing segment (i.e., syllable or gap) remained unchanged after time warping (Figure 1\u2014figure supplement 1A).\n\nTo compute a smoothed firing rate function, activity on each rendition was smoothed by first binning spikes (1 ms) then convolving with a Gaussian kernel (5 ms SD). Rendition-averaged activity was then z-scored to facilitate comparison across recording sites, which may have different firing rates, relative to the mean and SD over the entire motif.\n\nTo assess the similarity of LMAN and RA activity patterns, we combined all recordings across sessions into separate LMAN and RA datasets, one for each motif, where activity was time warped, smoothed, and averaged over all sites (without first z-scoring) and then mean-subtracted before computing cross-correlation.\n\nFor analysis of average LMAN and RA activity during baseline singing, to assess whether the average time lag of maximum LMAN\u2013RA cross-correlation was significantly different from zero, we performed a Monte Carlo permutation test (Figure 1\u2014figure supplement 1F). We computed a null distribution under the null hypothesis that LMAN and RA activity patterns have the same temporal profile relative to song. On each shuffle iteration, we randomized the assignment of rendition-averaged neural activity to brain region. We first generated a dataset consisting of average activity patterns, one for each combination of motif and brain area. On each shuffle iteration, we randomly reassigned the brain area labels; this was done independently for each motif, which ensures that the number of LMAN and RA sites assigned to each motif (and therefore bird) remained unchanged. LMAN\u2013RA cross-correlations were computed with this shuffled dataset for 10,000 random permutations. The probability of finding in the shuffled dataset an absolute time lag equal to or greater than the absolute time lag in the real dataset was taken as the two-sided p-value.\n\n### Normalized cross-covariance\n\nNormalized cross-covariance was computed for each pair of LMAN and RA sites for each syllable\u2019s premotor activity (neural activity extracted from 100 to 0 ms preceding syllable onset). This calculation was done separately for baseline and training. For baseline, we used the last half of renditions, to minimize potential drift in recordings from lowering electrodes into position at the start of the session. For training, we used the last quarter of the renditions to take the window of maximal learning.\n\nNormalized cross-covariance was calculated in a similar manner to previous birdsong studies (Hahnloser et al., 2006; Kimpo et al., 2003). We first calculated the average cross-correlation:\n\n$$\nCross(\\tau)=\u27e8\\frac{1}{T}\\sumt=1Tr_{L}(t)r_{R}(t+\\tau)\u27e9\n$$\n\nwhere $r_{L}t,r_{R}t$ are binned spike counts at time bin $t$ for LMAN and RA, respectively, $T$ is number of time bins in a single rendition, $\\tau$ is lag between LMAN and RA data in units of time bins (2.5 ms), and \u2329\u232a indicates average over all renditions.\n\nThe cross-covariance was computed to estimate the extent to which deviations of firing rates in LMAN and RA from their respective means are associated:\n\n$$\nC_{L-R}\\tau=\\frac{1}{T}\\sum_{t=1}^{T}r_{L}t-r_{L}\u00aftr_{R}t+\\tau-r_{R}\u00aft+\\tau=\\frac{1}{T}\\sum_{t=1}^{T}r_{L}tr_{R}t+\\tau-\\frac{1}{T}\\sum_{t=1}^{T}r_{L}\u00aftr_{R}\u00aft+\\tau\n$$\n\nwhere $r_{L}\u00aft,r_{R}\u00aft$ are rendition-averaged firing rates in LMAN and RA.\n\nThe second term on the right hand side, $\\frac{1}{T}\\sum_{t=1}^{T}r_{L}\u00aftr_{R}\u00aft+\\tau$ , is the cross-correlation of the average firing rates, since it measures the average similarity of LMAN and RA activity while removing the contribution of shared, within-rendition variation in LMAN and RA. It can be estimated by calculating a shuffled cross-correlation (Brody, 1999; Hahnloser et al., 2006; Kimpo et al., 2003; Perkel et al., 1967). The shuffled cross-correlation (or \u2018shift predictor\u2019) is computed using data shuffled such that rendition n for one recording site (either LMAN or RA) is compared to a temporally adjacent rendition (i.e., n + 1 or n \u2212 1) for the other site:\n\n$$\nshiftpredictor_{L-R}=\\frac{1}{N-1}\\sum_{n=1}^{N-1}\\frac{1}{T}\\sum_{t=1}^{T}r_{L}^{n}tr_{R}^{n+1}t+\\tau\n$$\n\nwhere $n=1...N$ indexes the rendition, and the $L-R$ subscript indicates that LMAN renditions (n) are chosen to be the one directly preceding the RA rendition (n + 1). We also computed the $R-L$ shift predictor:\n\n$$\nshiftpredictor_{R-L}=\\frac{1}{N-1}\\sum_{n=1}^{N-1}\\frac{1}{T}\\sum_{t=1}^{T}r_{R}^{n}tr_{L}^{n+1}t+\\tau\n$$\n\nThe final shift predictor was the average of these two:\n\n$$\nshiftpredictor=\\frac{1}{2}shiftpredictor_{L-R}+shiftpredictor_{R-L}\n$$\n\nSubtracting the shift predictor from the average cross-correlation gives the cross-covariance:\n\n$$\nC\\tau=\\frac{1}{T}\\sum_{t=1}^{T}r_{L}tr_{R}t+\\tau-shiftpredictor\n$$\n\nin units of spikes2. To rescale cross-covariance in units more easily comparable across the dataset we normalized cross-covariance relative to the standard deviation of the cross-covariance across all the data points (i.e., each combination of rendition n vs. rendition n + 1) in the shuffled dataset. This effectively z-scores the cross-covariance relative to the mean and standard deviation of the shuffled distribution:\n\n$$\nC_{normalized}\\tau=\\frac{C\\tau-c_{shuff}^{n}\\tau}{stdevc_{shuff}^{n}\\tau}\n$$\n\nwhere\n\n$$\nc_{shuff}^{n}\\tau=\\frac{1}{T}\\sum_{t=1}^{T}r_{L}^{n}tr_{R}^{n+1}t+\\tau-shiftpredictor\n$$\n\nand where stdev is the standard deviation over all n (from 1 to N \u2212 1), for the time bin $\\tau$ for the shuffled data:\n\n$$\nstdevc_{shuff}^{n}\\tau=\\sqrt{\\frac{1}{N-1-1}\\sum_{n=1}^{N-1}c_{shuff}^{n}\\tau-c_{shuff}^{n}\\tau^{2}}\n$$\n\nand $c_{shuff}^{n}\\tau$ is the mean over renditions n (from 1 to N \u2212 1). In practice, shuffled renditions can be computed with either LMAN renditions preceding RA renditions or vice versa. We combined both kinds of shuffled renditions into a single set $c_{shuff}^{n}\\tau$ when computing $c_{shuff}^{n}\\tau$ and $stdevc_{shuff}^{n}\\tau$.\n\nCross-correlation functions were first linearly interpolated to 1ms resolution then smoothed with a Gaussian kernel (SD = 5 ms) before converting to normalized cross-covariance. Calculation of cross-correlations were implemented using the MATLAB function XCORR (with SCALEOPT = \u2018unbiased\u2019). Normalized cross-covariance was computed separately in 60-ms windows, sliding over 5 ms timesteps, in each syllable\u2019s premotor window (such that the earliest window spanned from 100 to 40 ms preceding syllable onset, and the latest window from 60 to 0 ms). The cross-covariance functions over all 60-ms windows were then averaged to generate one cross-covariance function for a given 100 ms premotor window.\n\nTo summarize the strength of the LMAN-leading peak in a scalar value, we took the average within a 15-ms window centered at the time lag of peak normalized cross-covariance at baseline across all syllables (3 ms, LMAN leading).\n\nFor the analysis, splitting interleaved renditions by pitch into two groups (\u2018Stronger\u2019 and \u2018Weaker\u2019 bias), we split renditions by comparing their pitch to the median pitch. If pitch deviated from the median pitch in the adaptive direction (i.e., escaping WN), then the rendition was considered to express stronger behavioral bias; if pitch was in the other direction, then weaker bias. This grouping was performed separately for baseline and WN renditions relative to their respective median pitch values, ensuring that the resulting groups consisted of interleaved renditions. We used the last half of the baseline and training renditions. For the \u2018Baseline\u2019 dataset, the adaptive direction was set the same as that for the \u2018Trained\u2019 dataset so that we could specifically measure learning-related change in the relationship between pitch and neural activity by subtracting baseline from training measurements. Normalized cross-covariance was computed as before, separately for each dataset group. Shuffled renditions were constrained to be only those pairs of renditions overlapping with the renditions included in a given group. For example, if rendition m for LMAN is included in the group, then the corresponding shuffle renditions will be LMAN rendition m vs. RA rendition m \u2212 1 and LMAN rendition m vs. RA rendition m + 1. At dataset edges, when m = 1, then RA rendition N was used instead of m \u2212 1 (which does not exist), and when m = N, RA rendition 1 was used instead of N + 1 (which does not exist).\n\n### Electrical microstimulation of LMAN\n\nWe used a modified version of EvTaf that enabled electrical stimulation to be delivered independently of WN feedback. In order to stimulate at a controlled time relative to the syllable targeted for learning, we detected \u2018predictor\u2019 syllables that consistently preceded the targeted syllable. We then delivered stimulation trains (60 ms duration, 200 Hz bilateral stimulation, centered at 50 ms preceding syllable onset) at a fixed delay from this detection so that stimulation began at a premotor latency prior to the WN trigger time. Stimulation renditions were randomly interleaved with catch renditions in which no stimulation was delivered. We stimulated a randomly interleaved 50% of renditions of the targeted syllable only during specific 1- to 3-hr intervals on specific days at baseline and training (1\u20133 days).\n\nCustom-made 4-wire Pt/Ir microwire arrays (Microprobe; 25 \u00b5m diameter, 400\u2013800 kOhm impedance wires) were surgically implanted bilaterally. The arrays were targeted using stereotaxic coordinates for the center of LMAN. Wires were electrically connected to a male Omnetics connector (A8391-001) that enabled electrical connection to an external lead. The four wires in each array were arranged in a rectangular pattern (250\u2013500 \u00b5m separation on the rostro-caudal axis, 250\u2013500 \u00b5m separation on the medial\u2013lateral axis) for all but one bird. Wire pairs at the same rostral/caudal or medial/lateral level were separated in depth by 0\u2013250 \u00b5m. In one bird, the four wires were laid out in a linear array in which wires were separated by 250 \u00b5m along the medio-lateral axis, and neighboring wires were separated by 250 \u00b5m in depth. In the rectangular configuration, stimulation was between diagonal wires; in linear configuration, stimulation was between the two inner wires.\n\nAfter recovery from surgery, microstimulation trains (biphasic pulses, total biphasic pulse duration of 0.4 ms, 200 Hz frequency, 30\u2013100 \u00b5A) were delivered to LMAN bilaterally by two separate microstimulators (A-M systems Model 2100). We adjusted various microstimulation parameters to globally disrupt LMAN activity without inducing the large, rapid deflections in pitch previously reported following unilateral LMAN microstimulation (Kao et al., 2005). First, we bilaterally stimulated LMAN to induce a more global activity disruption than effected with unilateral stimulation (Kao et al., 2005). Second, to perturb a large volume of LMAN rather than a specific area, we passed current between pairs of identical wires placed within LMAN (distance between electrodes \u2265350 \u00b5m), rather than from a single electrode to ground; We selected pairs of arrays for stimulation which elicited minimal baseline pitch deviations. Finally, we set the amplitude of stimulation at a current level below the threshold at which song stoppages or degradation of syllable structure occurred.\n\nWe calculated the time latency from short-duration LMAN microstimulation [three pulses for 10 ms (N = 3) or four pulses for 15 ms (N = 1)] to pitch reversion by comparing randomly interleaved unstimulated and stimulated syllables. For each syllable, we made a continuous measurement of pitch at a millisecond timescale (Charlesworth et al., 2011). We then calculated the time-varying pitch difference (or residual) of each stimulated syllable from the mean of the unstimulated syllables. We aligned these residuals according to stimulation onset to obtain the latency to pitch reversion, defined as the duration until the beginning of a 10-ms (or longer) time window in which the residuals were significantly shifted toward baseline pitch for all time bins.\n\n### Post-mortem localization of recording and stimulation sites\n\nFor both recording and microstimulation experiments, we marked the location of electrodes by first lesioning brain tissue and then performing histology to map those lesions relative to sites of recording (LMAN and RA) or microstimulation (LMAN) (see Figure 1\u2014figure supplement 2). Lesions were performed by passing 100 \u00b5A current for 4 s. After lesions, birds were deeply anesthetized and perfused with 4% formaldehyde. Brains were removed and post-fixed for a few hours to overnight. We performed histology on sectioned tissue (40 \u00b5m thick, coronal). Electrode tips were localized by identifying lesions and tracts by identifying tissue damage. LMAN and RA were visualized by immunostaining for calcitonin gene-related peptide (Sigma, RRID: AB_259091, 1:5000 to 1:10,000) (Bottjer et al., 1997). For microstimulation experiments, we confirmed that lesions were in LMAN. For neural recording experiments, two lesion sites were made, one immediately dorsal and another immediately ventral to LMAN and RA, in order to retain the integrity of tissue within each area for histology. We confirmed in histology that lesions were indeed positioned dorsal and ventral to LMAN and RA, such that electrodes would be expected to be within these regions when at stereotaxic depths used during recordings.\n\n### Statistical tests\n\nThe main recording results were analyzed using mixed effects modeling to capture potential hierarchical effects based on experimental session, because a given experimental session may contribute multiple pairs of sites, which are not completely independent; in such cases we modeled responses (changes in LMAN\u2013RA cross-covariance) with fixed effects for the covariate of interest, with random effects for intercept and the covariate of interest grouped by experiment ID.\n",
+      "created_at": "2025-12-04T03:20:45.636100Z"
+    },
+    {
+      "id": "02aa41f8-7342-47d2-95cb-050e9c60d7e9",
+      "submission_id": "336e31d0-65a0-4954-a683-dcefce709470",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Jesse H Goldberg, https://ror.org/05bnh6r87 Cornell University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.83223.sa0](https://doi.org/10.7554/eLife.83223.sa0)\n\nThis paper shows that the output of a songbird basal ganglia cortical loop exhibits activity that significantly covaries with a downstream primary motor area with the temporal specificity necessary to promote learning and adaptive premotor bias. As the first study to record from two distant sites at once in singing birds, this study also provides exceptional evidence for temporally precise coordination between two motor areas in the service of vocal learning. The paper provides fundamental implications for understanding the precise neural mechanisms associated with top-down modification of neural commands during motor learning.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Jesse H Goldberg, https://ror.org/05bnh6r87 Cornell University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.83223.sa1](https://doi.org/10.7554/eLife.83223.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Dynamic top-down biasing implements rapid adaptive changes to individual movements\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, including Jesse H Goldberg as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Michael Frank as the Senior Editor. The following individuals involved in the review of your submission have agreed to reveal their identity: Marc Schmidt (Reviewer #2); Arthur Leblois (Reviewer #3).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nTian et al. impressively record from two motor areas at once in singing birds to test if a premotor cortical area, LMAN, covaries with activity in a primary one, RA, in a way that would support learning. They find that LMAN activity covaries with RA activity at a lag consistent with driving a premotor bias and, moreover, that this covariation is significantly increased in the specific time window of the song where bias is being most strongly driven. Disruptive microstimulation of LMAN in this window reduced learning-associated bias. Though the main results in this paper are consistent with dominant models of birdsong production and learning going back decades (e.g. Kao et al., 2005; Olveczky et al., 2005; Andalman et al., 2008; Charlesworth et al., 2009; Fee and Goldberg, 2011), these results provide methodologically impressive confirmation that LMAN drives RA activity to drive adaptive bias. It's also meaningful that these covariations were strong enough to be picked up by a pair of randomly targeted LMAN and RA sites.\n\nThe reviewers were unanimously supportive of this strong paper, and provided several issues that, if addressed, would likely increase the impact and appeal:\n\n1) Song is complex with many varying acoustic parameters, such as amplitude, entropy, and pitch. It is thought that pitch is controlled by only a subset of the syringeal muscles, and also that there is topography in the LMAN-RA-MN-muscle pathway. Thus, one might expect only a small fraction of neurons/sites in the LMAN-RA pathway to be associated with pitch with enough strength that one would pick it up in single unit recordings from order ~100 neurons. Indeed a past study (Sober et al., 2008) found that activity in a small fraction of RA neurons was weakly correlated with pitch variation. So it's really surprising that a pitch-contingent learning paradigm produced significant co-variance changes in the LMAN-RA pathway that could be picked up in the present study. All three reviewers zeroed in on this issue.\n\nThree possible explanations are with consideration. First, one wonders if the authors were recording specifically from pitch-associated sites. Can the authors please elaborate on what fraction of LMAN and RA recording sites in the present study exhibited significant covariance with pitch? Second, if an LMAN-RA recording site pair does not exhibit a significant correlation with pitch but nonetheless exhibits enhanced co-variation in the pre-target window in a pitch shift paradigm, this would support a different interpretation of the results. For example, it's possible that the extent by which LMAN can drive RA is gated by cholinergic inputs from VP, which might signal predicted uncertainty in the song in the precise moment preceding the target time (e.g. Chen et al., 2019; Puzerey et al., 2018). No new experiments are required here, but these possibilities (or other considerations of the mechanisms by which LMAN-RA covariance is temporally gated) could, in the discussion or elsewhere, motivate future studies. (For example, if Ach-mediated predicted uncertainty is the key to promoting LMAN-RA covariance, then photoactivation of Ach inputs to RA at a moment in song might increase LMAN drive and, secondly, non-pitch-contingent DAF that does not drive explicitly learning associated bias would also be sufficient to promote temporally precise increases in LMAN-RA covariance)\n\nFinally, related to these questions, can the authors please check if their recording sites exhibited correlations with pitch (e.g. as in Sober et al., 2008)? Did some channels have stronger pitch correlations than others and how did this affect the cross-covariance on that channel? One possible analysis would be to plot on the x-axis the degree of correlation with pitch and on the y-axis the degree of enhanced cross-covariance at the DAF-targeted time of the song; other analyses may also address this.\n\n1.1. Please elaborate discussion as suggested above.\n\n1.2. Please test if recording sites exhibited correlations with pitch and if this degree of correlation affected the temporal specificity of the peak in cross-covariance relative to DAF-target time, as suggested above. We realize this may be technically difficult and requires the holding of units for a long time (to get enough spikes to syllable renditions for statistical power.) If such a channel-pitch analysis is not possible, please address in the revision what the limitations were. Though all referees supported the clarification/testing of this important issue.\n\n2) Multiple recording sites in both RA and LMAN provide sensible internal controls for the cross-covariance and its increase in the window before bias production in pitch-shift experiments. Can the authors analyze LMAN-LMAN co-variance in the same way to test for LMAN-RA co-variance to examine intra-LMAN activity co-fluctuations? A negative result would support the specificity of the LMAN-RA covariance but a positive result would indicate that within-LMAN dynamics also exhibit interesting learning-related changes.\n\n2.1. Please test for within-LMAN covariations as suggested above.\n\n3) Can the authors please provide more justification for the duration of the premotor window used for covariance calculation? The authors chose to quantify correlation and covariance in a 100ms window preceding the production of the target syllable. They justify this choice by citing previous articles relying on a premotor window or highlighting syllable-related motor activity in the considered brain areas. However, to our knowledge, previous work rather relied on a shorter premotor window (50ms or less). While the difference is not very big, the timescale over which neural activity affects behavior is still only partially understood. Birds can shift the pitch of a syllable with an ms resolution as shown by the same group. And 100ms is beyond the timescale of the fine gesture underlying song production. Therefore, it is not clear why this choice is made and whether a shorter window would provide similar results.\n\n3.1. Test if analyses hold for a shorter window (e.g. 50 ms \u2013 this analysis could go in supplement) or, alternatively, the authors could better justify their choice of a longer premotor window in light of this comment.\n",
+      "created_at": "2025-12-04T03:20:45.636100Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T03:20:45.636100Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T03:20:45.636100Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "af612fd0-9035-47cf-b71f-0e50692d07ef",
+      "content_id": "c55a8868-a0ac-443a-88dc-473cc9dc1f23",
+      "claim_id": "C1",
+      "claim": "Complex behaviors depend on the coordinated activity of neural ensembles in interconnected brain areas.",
+      "claim_type": "EXPLICIT",
+      "source": "Complex behaviors depend on the coordinated activity of neural ensembles in interconnected brain areas.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about neural coordination and behavior that is presented as established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:20:45.636100Z"
+    },
+    {
+      "id": "6213798c-d8e7-454a-a524-38d35cf3541f",
+      "content_id": "c55a8868-a0ac-443a-88dc-473cc9dc1f23",
+      "claim_id": "C2",
+      "claim": "The behavioral function of co-fluctuations in neural activity across areas is poorly understood.",
+      "claim_type": "EXPLICIT",
+      "source": "The behavioral function of such coordination, often measured as co-fluctuations in neural activity across areas, is poorly understood.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement characterizes the current state of knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:20:45.636100Z"
+    },
+    {
+      "id": "3b2a295e-52b8-469b-826d-40b63408aa6e",
+      "content_id": "c55a8868-a0ac-443a-88dc-473cc9dc1f23",
+      "claim_id": "C3",
+      "claim": "Rapidly varying co-fluctuations may be a signature of moment-by-moment task-relevant influences of one area on another.",
+      "claim_type": "EXPLICIT",
+      "source": "One hypothesis is that rapidly varying co-fluctuations may be a signature of moment-by-moment task-relevant influences of one area on another.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as a hypothesis being tested in the study.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:20:45.636100Z"
+    },
+    {
+      "id": "84367d29-0936-4bb1-8c0c-1b92a30da924",
+      "content_id": "c55a8868-a0ac-443a-88dc-473cc9dc1f23",
+      "claim_id": "C4",
+      "claim": "Error-corrective adaptation of birdsong has been hypothesized to depend on the top-down influence of LMAN in shaping moment-by-moment output from RA.",
+      "claim_type": "EXPLICIT",
+      "source": "We tested this possibility for error-corrective adaptation of birdsong, a form of motor learning which has been hypothesized to depend on the top-down influence of a higher-order area, LMAN (lateral magnocellular nucleus of the anterior nidopallium), in shaping moment-by-moment output from a primary motor area, RA (robust nucleus of the arcopallium).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as a hypothesis from prior work that the current study is testing.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:20:45.636100Z"
+    },
+    {
+      "id": "91a5094d-0102-4ccb-a94b-65a2d82c6a5f",
+      "content_id": "c55a8868-a0ac-443a-88dc-473cc9dc1f23",
+      "claim_id": "C5",
+      "claim": "In paired recordings of LMAN and RA in singing birds, there is a neural signature of a top-down influence of LMAN on RA, quantified as an LMAN-leading co-fluctuation in activity between these areas.",
+      "claim_type": "EXPLICIT",
+      "source": "In paired recordings of LMAN and RA in singing birds, we discovered a neural signature of a top-down influence of LMAN on RA, quantified as an LMAN-leading co-fluctuation in activity between these areas.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the paired recordings performed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:20:45.636100Z"
+    },
+    {
+      "id": "c224db44-4b4d-4d78-ab5c-794908e75aaa",
+      "content_id": "c55a8868-a0ac-443a-88dc-473cc9dc1f23",
+      "claim_id": "C6",
+      "claim": "During learning, LMAN-RA co-fluctuation strengthened in a premotor temporal window linked to the specific movement, sequential context, and acoustic modification associated with learning.",
+      "claim_type": "EXPLICIT",
+      "source": "During learning, this co-fluctuation strengthened in a premotor temporal window linked to the specific movement, sequential context, and acoustic modification associated with learning.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a key finding from the learning experiments showing specificity of the co-fluctuation changes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:20:45.636100Z"
+    },
+    {
+      "id": "fb7690fd-a4df-4336-b973-4c9e22465026",
+      "content_id": "c55a8868-a0ac-443a-88dc-473cc9dc1f23",
+      "claim_id": "C7",
+      "claim": "Transient perturbation of LMAN activity specifically within the premotor window caused rapid occlusion of pitch modifications.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, transient perturbation of LMAN activity specifically within this premotor window caused rapid occlusion of pitch modifications, consistent with LMAN conveying a temporally localized motor-biasing signal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the causal manipulation experiment using microstimulation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:20:45.636100Z"
+    },
+    {
+      "id": "d19ae218-024b-44e2-b579-37ef8f4096f5",
+      "content_id": "c55a8868-a0ac-443a-88dc-473cc9dc1f23",
+      "claim_id": "C8",
+      "claim": "The findings reveal a dynamic top-down influence of LMAN on RA that varies on the rapid timescale of individual movements and is flexibly linked to contexts associated with learning.",
+      "claim_type": "EXPLICIT",
+      "source": "Combined, our results reveal a dynamic top-down influence of LMAN on RA that varies on the rapid timescale of individual movements and is flexibly linked to contexts associated with learning.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion drawn from the combined experimental results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:20:45.636100Z"
+    },
+    {
+      "id": "ce030fd5-fd05-414a-ae65-3b8c2143ca4f",
+      "content_id": "c55a8868-a0ac-443a-88dc-473cc9dc1f23",
+      "claim_id": "C9",
+      "claim": "Inter-area co-fluctuations can be a signature of dynamic top-down influences that support complex behavior and its adaptation.",
+      "claim_type": "EXPLICIT",
+      "source": "This finding indicates that inter-area co-fluctuations can be a signature of dynamic top-down influences that support complex behavior and its adaptation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general conclusion inferred from the specific findings in the birdsong system.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:20:45.636100Z"
+    },
+    {
+      "id": "697e70ba-359d-4eb8-9bc3-5d0e3ac91392",
+      "content_id": "c55a8868-a0ac-443a-88dc-473cc9dc1f23",
+      "claim_id": "C10",
+      "claim": "Recent studies have noted a link between changes to activity co-fluctuations between neuronal populations in connected brain areas and behavioral performance.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent studies of trial-by-trial activity co-fluctuations between neuronal populations in connected brain areas have noted a link between changes to such coordinated activity and behavioral performance (Cowley et al., 2020; Koralek et al., 2013; Koralek et al., 2012; Lemke et al., 2019; Makino et al., 2017; Perich et al., 2018; Sawada et al., 2015; Veuthey et al., 2020; Wagner et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by multiple citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:20:45.636100Z"
+    },
+    {
+      "id": "50e064a0-70fc-4603-b327-2d2c2b4336ff",
+      "content_id": "c55a8868-a0ac-443a-88dc-473cc9dc1f23",
+      "claim_id": "C11",
+      "claim": "Some slower activity co-fluctuations may reflect task-independent, shared changes in a global internal state.",
+      "claim_type": "EXPLICIT",
+      "source": "Although some slower activity co-fluctuations may reflect task-independent, shared changes in a global internal state (Cowley et al., 2020), more dynamic co-fluctuations\u2014varying rapidly on a moment-by-moment basis and linked flexibly to specific behavioral contexts\u2014could be a signature of task-relevant influences of one area on another (Semedo et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Cowley et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:20:45.636100Z"
+    },
+    {
+      "id": "d8a76b41-0d1d-45c0-b720-b26db887d9ad",
+      "content_id": "c55a8868-a0ac-443a-88dc-473cc9dc1f23",
+      "claim_id": "C12",
+      "claim": "More dynamic co-fluctuations varying rapidly on a moment-by-moment basis and linked flexibly to specific behavioral contexts could be a signature of task-relevant influences of one area on another.",
+      "claim_type": "EXPLICIT",
+      "source": "Although some slower activity co-fluctuations may reflect task-independent, shared changes in a global internal state (Cowley et al., 2020), more dynamic co-fluctuations\u2014varying rapidly on a moment-by-moment basis and linked flexibly to specific behavioral contexts\u2014could be a signature of task-relevant influences of one area on another (Semedo et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as a possibility supported by citation to Semedo et al., 2019.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:20:45.636100Z"
+    },
+    {
+      "id": "f889acaf-2b8b-4560-ae72-5809497343aa",
+      "content_id": "c55a8868-a0ac-443a-88dc-473cc9dc1f23",
+      "claim_id": "C13",
+      "claim": "The joint evolution of inter-area activity co-fluctuations and behavioral performance over the course of learning has led to the suggestion that top-down inputs from higher-order areas dynamically implement learning-related changes in activity in primary motor areas.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, the joint evolution of inter-area activity co-fluctuations and behavioral performance over the course of learning has led to the suggestion that top-down inputs from higher-order areas dynamically implement learning-related changes in activity in primary motor areas.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a hypothesis from prior work on skilled reaching behavior.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:20:45.636100Z"
+    },
+    {
+      "id": "96b0818a-e21a-4538-baeb-f600c51d258a",
+      "content_id": "c55a8868-a0ac-443a-88dc-473cc9dc1f23",
+      "claim_id": "C14",
+      "claim": "The difficulty in identifying and quantifying discrete movement components during skilled reaching leaves unresolved whether top-down influences operate on the rapid timescale of individual movements during learning.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the difficulty in identifying and quantifying discrete movement components during skilled reaching leaves unresolved whether such top-down influences operate on this rapid timescale during learning.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This identifies a limitation in prior work that the current study addresses.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:20:45.636100Z"
+    },
+    {
+      "id": "64f15ffc-0d2f-4eef-b8c5-cdcdfc500535",
+      "content_id": "c55a8868-a0ac-443a-88dc-473cc9dc1f23",
+      "claim_id": "C15",
+      "claim": "Pharmacologically inactivating either LMAN or its synapses in RA transiently eliminates recently learned modifications to pitch of individual syllables.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, pharmacologically inactivating either the song-specific higher-order area LMAN or its synapses in the primary motor cortical analog RA (Figure 1A) transiently eliminates recently learned modifications to pitch (fundamental frequency, FF) of the individual 50\u2013200 ms syllables that constitute adult song (Figure 1B, Andalman and Fee, 2009; Charlesworth et al., 2012; Tian and Brainard, 2017; Warren et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to prior pharmacological inactivation studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:20:45.636100Z"
+    },
+    {
+      "id": "3c60e84d-0068-465e-bd79-bda84061046c",
+      "content_id": "c55a8868-a0ac-443a-88dc-473cc9dc1f23",
+      "claim_id": "C16",
+      "claim": "Individual syllables that constitute adult song are 50-200 ms in duration.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, pharmacologically inactivating either the song-specific higher-order area LMAN or its synapses in the primary motor cortical analog RA (Figure 1A) transiently eliminates recently learned modifications to pitch (fundamental frequency, FF) of the individual 50\u2013200 ms syllables that constitute adult song (Figure 1B, Andalman and Fee, 2009; Charlesworth et al., 2012; Tian and Brainard, 2017; Warren et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about syllable duration.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:20:45.636100Z"
+    },
+    {
+      "id": "d6ef3f6f-1671-49fc-9cfe-f54f1ad4cbdf",
+      "content_id": "c55a8868-a0ac-443a-88dc-473cc9dc1f23",
+      "claim_id": "C17",
+      "claim": "Studies in sleeping and anesthetized birds have identified co-fluctuations in LMAN and RA activity measured as increases in the cross-covariance between LMAN and RA activity which peak at a short LMAN-leading temporal lag.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, studies in sleeping and anesthetized birds have identified co-fluctuations in LMAN and RA activity (Hahnloser et al., 2006; Kimpo et al., 2003)\u2014measured as increases in the cross-covariance between LMAN and RA activity\u2014which peak at a short LMAN-leading temporal lag, consistent with the possibility of a dynamic top-down influence of LMAN on RA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work in sleeping and anesthetized birds.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:20:45.636100Z"
+    },
+    {
+      "id": "be0d16d4-0848-4927-9158-baedd1d24cbe",
+      "content_id": "c55a8868-a0ac-443a-88dc-473cc9dc1f23",
+      "claim_id": "C18",
+      "claim": "It remains unclear whether LMAN-RA co-fluctuations are present during singing.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it remains unclear whether such LMAN\u2013RA co-fluctuations are present during singing and, if so, whether they change during learning in a manner that could support a top-down role of LMAN in the adaptive adjustment of song parameters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This identifies a gap in knowledge that the current study addresses.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:20:45.636100Z"
+    },
+    {
+      "id": "060097d2-e3c6-4a65-b4ec-95e00db36327",
+      "content_id": "c55a8868-a0ac-443a-88dc-473cc9dc1f23",
+      "claim_id": "C19",
+      "claim": "Average activity in both LMAN and RA exhibited consistent temporal structure aligned to ongoing song, peaking within 50 ms prior to syllable onsets.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with prior studies in which LMAN and RA were recorded in separate birds (Aronov et al., 2008; Chi and Margoliash, 2001; Hessler and Doupe, 1999; Kao et al., 2008; Leonardo and Fee, 2005; Yu and Margoliash, 1996; McCasland, 1987; Olveczky et al., 2005; Sober et al., 2008), average activity in both areas exhibited consistent temporal structure aligned to ongoing song, peaking within 50 ms prior to syllable onsets (e.g., Figure 1D and Figure 1\u2014figure supplement 1A\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This finding is supported by data shown in figures and is consistent with prior studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:20:45.636100Z"
+    },
+    {
+      "id": "9affef5c-2914-47e3-8bfd-631f94f2e1b0",
+      "content_id": "c55a8868-a0ac-443a-88dc-473cc9dc1f23",
+      "claim_id": "C20",
+      "claim": "There is a close alignment between the patterns of activity in LMAN and RA.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, we observed a close alignment between the patterns of activity in the two areas (Figure 1\u2014figure supplement 1C\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This observation is supported by data shown in the figure supplement.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:20:45.636100Z"
+    },
+    {
+      "id": "45979c9a-1ebc-4ef9-9a79-b6f3631fde78",
+      "content_id": "c55a8868-a0ac-443a-88dc-473cc9dc1f23",
+      "claim_id": "C21",
+      "claim": "Rendition-by-rendition variation in the patterning of activity was observed in both LMAN and RA.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite such consistent temporal structure in average activity, we observed rendition-by-rendition variation in the patterning of activity in both nuclei, raising the possibility that this variation reflects co-fluctuations in LMAN and RA activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the data that leads to a hypothesis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:20:45.636100Z"
+    },
+    {
+      "id": "96eaa503-9460-4ec6-975b-88b3604d8c81",
+      "content_id": "c55a8868-a0ac-443a-88dc-473cc9dc1f23",
+      "claim_id": "C22",
+      "claim": "The LMAN-RA cross-covariance was on average positive during syllable premotor windows in birds singing spontaneously at baseline.",
+      "claim_type": "EXPLICIT",
+      "source": "In birds singing spontaneously at baseline ('undirected' singing produced in isolation), the LMAN\u2013RA cross-covariance was on average positive during syllable premotor windows (example pair of sites in Figure 1E, cross-covariance computed by normalizing data to shuffled controls; summary across pairs of recordings and syllables in Figure 1F), similar to cross-covariance measurements in anesthetized and sleeping birds (Hahnloser et al., 2006; Kimpo et al., 2003).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This finding is supported by data shown in figures and is similar to prior measurements.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:20:45.636100Z"
+    },
+    {
+      "id": "06c6d18b-2bbe-4e3f-91f1-6e5916d08f24",
+      "content_id": "c55a8868-a0ac-443a-88dc-473cc9dc1f23",
+      "claim_id": "C23",
+      "claim": "There was a dominant positive peak in the average cross-covariance with LMAN leading at a short time lag of approximately 3 ms.",
+      "claim_type": "EXPLICIT",
+      "source": "Although there was variation in the magnitude and time lag of cross-covariance peaks across syllables and recording sites (Figure 1F, light gray curves) there was a dominant positive peak in the average cross-covariance with LMAN leading at a short time lag (~3 ms, Figure 1F; Kimpo et al., 2003).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This finding is supported by data shown in Figure 1F and is consistent with prior work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:20:45.636100Z"
+    },
+    {
+      "id": "ac1403b8-f9dd-40f0-a362-e6930ece2ac8",
+      "content_id": "c55a8868-a0ac-443a-88dc-473cc9dc1f23",
+      "claim_id": "C24",
+      "claim": "The putative influence of LMAN on RA is consistent with the known presence of a direct excitatory projection from LMAN to RA.",
+      "claim_type": "EXPLICIT",
+      "source": "This putative influence of LMAN on RA is consistent with the known presence of a direct excitatory projection from LMAN to RA (Bottjer et al., 1989; Kubota and Saito, 1991; Mooney and Konishi, 1991; Nottebohm et al., 1982) and a hypothesized role of LMAN in driving motor variability in RA during baseline singing (Giret et al., 2014; Kao et al., 2005; Kao and Brainard, 2006; Kojima et al., 2018; Olveczky et al., 2005; Stepanek and Doupe, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This interpretation is supported by anatomical and functional evidence from prior studies.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:20:45.636100Z"
+    },
+    {
+      "id": "4dadd349-f277-4157-8b34-2c1efa7e74ee",
+      "content_id": "c55a8868-a0ac-443a-88dc-473cc9dc1f23",
+      "claim_id": "C25",
+      "claim": "LMAN-RA cross-covariance was enhanced following training (3-10 hr) with pitch-contingent reinforcement.",
+      "claim_type": "EXPLICIT",
+      "source": "Across experiments, we found that LMAN\u2013RA cross-covariance was enhanced following training (3\u201310 hr) with pitch-contingent reinforcement (Figure 2C\u2013F, 'Target syllable'; also Figure 2\u2014figure supplement 1A) and this enhancement was maximal at a short LMAN-leading time lag (~2 ms, Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from the learning experiments shown in the figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:20:45.636100Z"
+    },
+    {
+      "id": "3eb5b230-741b-4e42-97a6-906dc41ab19d",
+      "content_id": "c55a8868-a0ac-443a-88dc-473cc9dc1f23",
+      "claim_id": "C26",
+      "claim": "The enhancement of LMAN-RA cross-covariance was maximal at a short LMAN-leading time lag of approximately 2 ms.",
+      "claim_type": "EXPLICIT",
+      "source": "Across experiments, we found that LMAN\u2013RA cross-covariance was enhanced following training (3\u201310 hr) with pitch-contingent reinforcement (Figure 2C\u2013F, 'Target syllable'; also Figure 2\u2014figure supplement 1A) and this enhancement was maximal at a short LMAN-leading time lag (~2 ms, Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative finding from the data shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:20:45.636100Z"
+    },
+    {
+      "id": "bc7b86d0-33a0-4631-8cc1-38d3ad3a7348",
+      "content_id": "c55a8868-a0ac-443a-88dc-473cc9dc1f23",
+      "claim_id": "C27",
+      "claim": "LMAN-RA cross-covariance increased with a similar time course to pitch modification.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, LMAN\u2013RA cross-covariance increased with a similar time course to pitch modification (Figure 2G, H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This finding is supported by the time course data shown in Figure 2G and H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:20:45.636100Z"
+    },
+    {
+      "id": "cf732da0-ceb7-4388-9685-ac39c716f924",
+      "content_id": "c55a8868-a0ac-443a-88dc-473cc9dc1f23",
+      "claim_id": "C28",
+      "claim": "There were no detectable changes in LMAN-RA cross-covariance for non-targeted syllables.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, there were no detectable changes in LMAN\u2013RA cross-covariance for non-targeted syllables (Figure 2E, F, 'Non-target syllables'), including those directly preceding the target syllable (Figure 2\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a negative finding from the data shown in the figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:20:45.636100Z"
+    },
+    {
+      "id": "62f5d132-5271-4744-94a8-807f2eb41eb0",
+      "content_id": "c55a8868-a0ac-443a-88dc-473cc9dc1f23",
+      "claim_id": "C29",
+      "claim": "There was no detectable learning-related difference between target and non-target syllables in changes in the overall level of activity within each nucleus.",
+      "claim_type": "EXPLICIT",
+      "source": "There was also no detectable learning-related difference between target and non-target syllables in changes in the overall level of activity within each nucleus (Figure 2\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a negative finding from the data shown in the figure supplement.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:20:45.636100Z"
+    },
+    {
+      "id": "38a3d594-f7fa-42fb-9397-79e0e76e1d0f",
+      "content_id": "c55a8868-a0ac-443a-88dc-473cc9dc1f23",
+      "claim_id": "C30",
+      "claim": "Increases in LMAN-RA cross-covariance are restricted to the target syllable and develop in parallel with pitch modification, indicating that these changes are linked specifically to learning.",
+      "claim_type": "EXPLICIT",
+      "source": "The observations that increases in LMAN\u2013RA cross-covariance are restricted to the target syllable and develop in parallel with pitch modification indicate that these changes are linked specifically to learning, and not to other processes such as arousal, non-stationarity or 'drift' of recorded units, or circadian variation in activity patterns.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the specificity and time course of the observed changes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:20:45.636100Z"
+    },
+    {
+      "id": "4979fa0e-8c6e-46f1-ad25-b4d0b85c8f7f",
+      "content_id": "c55a8868-a0ac-443a-88dc-473cc9dc1f23",
+      "claim_id": "C31",
+      "claim": "Renditions exhibiting stronger learning-related pitch shifts also exhibited greater learning-related enhancement of cross-covariance.",
+      "claim_type": "EXPLICIT",
+      "source": "At the peak of learning ('trained' period) we found that renditions exhibiting stronger learning-related pitch shifts (stronger bias) also exhibited greater learning-related enhancement of cross-covariance (example experiment in Figure 3B; summary in Figure 3C; also see Figure 3\u2014figure supplement 1A), regardless of whether birds had been trained to adaptively shift pitch up or down (Figure 3\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This finding is supported by the rendition-by-rendition analysis shown in the figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:20:45.636100Z"
+    },
+    {
+      "id": "5bd2dd57-b3f8-4203-8749-7c606973bbb8",
+      "content_id": "c55a8868-a0ac-443a-88dc-473cc9dc1f23",
+      "claim_id": "C32",
+      "claim": "The finding that pitch modifications and LMAN-RA cross-covariance are linked on a rendition-by-rendition basis suggests that LMAN-RA co-fluctuations reflect a rapidly varying top-down signal that adaptively biases motor performance during learning.",
+      "claim_type": "EXPLICIT",
+      "source": "This finding that pitch modifications and LMAN\u2013RA cross-covariance are linked on a rendition-by-rendition basis suggests that LMAN\u2013RA co-fluctuations reflect a rapidly varying top-down signal that adaptively biases motor performance during learning.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the rendition-by-rendition correlation finding.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:20:45.636100Z"
+    },
+    {
+      "id": "71ac571c-27e1-4cf5-9c66-537155e16afa",
+      "content_id": "c55a8868-a0ac-443a-88dc-473cc9dc1f23",
+      "claim_id": "C33",
+      "claim": "Pitch modifications for a given syllable are dependent on sequential context.",
+      "claim_type": "EXPLICIT",
+      "source": "Prior studies revealed that pitch modifications for a given syllable are dependent on sequential context, or the sequence of syllables in which it is embedded (Hoffmann and Sober, 2014; Tian and Brainard, 2017); this prompted us to examine whether increases in LMAN\u2013RA cross-covariance are similarly context specific.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:20:45.636100Z"
+    },
+    {
+      "id": "2c0cb4d1-2aa7-4f6a-9dda-7c35ff88522f",
+      "content_id": "c55a8868-a0ac-443a-88dc-473cc9dc1f23",
+      "claim_id": "C34",
+      "claim": "When a syllable is targeted in a specific sequential context and not in others, the resulting pitch modification is greatest in the targeted context.",
+      "claim_type": "EXPLICIT",
+      "source": "To do so, we took advantage of the specificity with which learning can be driven; when a syllable (e.g., B) is targeted in a specific sequential context (e.g., AB) and not in others (e.g., XB or YB), the resulting pitch modification is greatest in the targeted context (Hoffmann and Sober, 2014; Tian and Brainard, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:20:45.636100Z"
+    },
+    {
+      "id": "0f080c16-015b-4b10-94b9-a008fbecf565",
+      "content_id": "c55a8868-a0ac-443a-88dc-473cc9dc1f23",
+      "claim_id": "C35",
+      "claim": "Average LMAN-RA cross-covariance increased over the course of training specifically for the target context, with no detected change for the same syllable in non-target contexts.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that average LMAN\u2013RA cross-covariance increased over the course of training specifically for the target context, with no detected change for the same syllable in non-target contexts (Figure 4C; see Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This finding is supported by the context-specific training data shown in the figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:20:45.636100Z"
+    },
+    {
+      "id": "66579c3e-3d5d-4a52-a423-14671c1cf527",
+      "content_id": "c55a8868-a0ac-443a-88dc-473cc9dc1f23",
+      "claim_id": "C36",
+      "claim": "Enhanced LMAN-RA cross-covariance is flexibly linked to sequential contexts associated with learning.",
+      "claim_type": "EXPLICIT",
+      "source": "Enhanced LMAN\u2013RA cross-covariance is therefore flexibly linked to sequential contexts associated with learning.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the context-specific training results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:20:45.636100Z"
+    },
+    {
+      "id": "a8076230-2466-4c8d-bd46-426ea48660ab",
+      "content_id": "c55a8868-a0ac-443a-88dc-473cc9dc1f23",
+      "claim_id": "C37",
+      "claim": "Electrical microstimulation of LMAN can enable a more temporally precise disruption of neural activity than pharmacological manipulations.",
+      "claim_type": "EXPLICIT",
+      "source": "We reasoned that electrical microstimulation of LMAN could potentially enable a more temporally precise disruption of neural activity and thus test of LMAN's causal influence on RA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a rationale for the experimental approach based on the temporal properties of different perturbation methods.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:20:45.636100Z"
+    },
+    {
+      "id": "2e92410d-8265-40f6-8c44-034d9f5daf3a",
+      "content_id": "c55a8868-a0ac-443a-88dc-473cc9dc1f23",
+      "claim_id": "C38",
+      "claim": "Stimulation of LMAN and interconnected song system nuclei during baseline singing perturbs song acoustic features in a manner that is rapid and transient (timescale of 10s of milliseconds).",
+      "claim_type": "EXPLICIT",
+      "source": "Stimulation of LMAN (Giret et al., 2014; Kao et al., 2005; Kojima et al., 2018) and interconnected song system nuclei (Ashmore et al., 2005; Fee et al., 2004; Vu et al., 1994) during baseline singing perturbs song acoustic features in a manner that is rapid and transient (timescale of 10 s of milliseconds).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior stimulation studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:20:45.636100Z"
+    },
+    {
+      "id": "0ebd2be6-2004-428c-9b80-60d6ab7fefb9",
+      "content_id": "c55a8868-a0ac-443a-88dc-473cc9dc1f23",
+      "claim_id": "C39",
+      "claim": "Before the onset of pitch-contingent WN training, stimulation caused modest changes to pitch that varied across experiments, resulting in only small changes to average pitch.",
+      "claim_type": "EXPLICIT",
+      "source": "Before the onset of pitch-contingent WN training, stimulation caused modest changes to pitch that varied across experiments, resulting in only small changes to average pitch (example experiment in Figure 5C, D; summary in Figure 5E; see also Giret et al., 2014; Kao et al., 2005; Kojima et al., 2018).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This finding is supported by the baseline stimulation data shown in the figures.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:20:45.636100Z"
+    },
+    {
+      "id": "2bc2d6d4-92ad-46db-8969-42d7d88fe5f7",
+      "content_id": "c55a8868-a0ac-443a-88dc-473cc9dc1f23",
+      "claim_id": "C40",
+      "claim": "During learning, stimulation caused pitch to revert systematically toward its baseline value.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, during learning, stimulation caused pitch to revert systematically toward its baseline value (Figure 5C\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from the stimulation experiments during learning shown in the figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:20:45.636100Z"
+    },
+    {
+      "id": "eb986f64-2d97-4a30-9c39-f27060cced0f",
+      "content_id": "c55a8868-a0ac-443a-88dc-473cc9dc1f23",
+      "claim_id": "C41",
+      "claim": "The reversion of pitch during stimulation is consistent with the interpretation that stimulation removes an adaptive biasing signal that develops during learning.",
+      "claim_type": "EXPLICIT",
+      "source": "This reversion is consistent with the interpretation that stimulation removes an adaptive biasing signal that develops during learning, with the remaining expressed pitch shifts reflecting learning that has transferred to the downstream motor pathway to become independent of LMAN (Andalman and Fee, 2009; Warren et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the stimulation results supported by prior work.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:20:45.636100Z"
+    },
+    {
+      "id": "bc06ff27-9648-42a3-8843-d12a06805af4",
+      "content_id": "c55a8868-a0ac-443a-88dc-473cc9dc1f23",
+      "claim_id": "C42",
+      "claim": "Occlusion of pitch modification via temporally precise disruption of LMAN activity was quantitatively indistinguishable from that caused by longer lasting pharmacological inactivation of LMAN.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, this occlusion of pitch modification via temporally precise disruption of LMAN activity was quantitatively indistinguishable from that caused by longer lasting pharmacological inactivation of LMAN in the same species and training paradigm (Warren et al., 2011; compare Figure 5E, F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This comparison is supported by data shown in Figure 5E and F and comparison to prior pharmacology work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:20:45.636100Z"
+    },
+    {
+      "id": "5fb1d8bf-3d6c-4394-bee4-6266190fffe3",
+      "content_id": "c55a8868-a0ac-443a-88dc-473cc9dc1f23",
+      "claim_id": "C43",
+      "claim": "Appropriately patterned LMAN premotor activity is required for adaptive biasing of vocal output during learning.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, our findings indicate that appropriately patterned LMAN premotor activity is required for adaptive biasing of vocal output during learning.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the stimulation experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:20:45.636100Z"
+    },
+    {
+      "id": "9c251b8e-2ebe-4bdc-a90d-45db81ab2b78",
+      "content_id": "c55a8868-a0ac-443a-88dc-473cc9dc1f23",
+      "claim_id": "C44",
+      "claim": "Stimulation caused reversion of learning only if applied within a narrow premotor window prior to pitch measurement.",
+      "claim_type": "EXPLICIT",
+      "source": "Stimulation caused reversion of learning only if applied within a narrow premotor window prior to pitch measurement (e.g., 25\u201345 ms before pitch measurement for the example experiment in Figure 5G, H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This finding is supported by the timing manipulation data shown in Figure 5G and H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:20:45.636100Z"
+    },
+    {
+      "id": "bcdbdc75-3647-4d2f-b4d6-d517ab6fbaf1",
+      "content_id": "c55a8868-a0ac-443a-88dc-473cc9dc1f23",
+      "claim_id": "C45",
+      "claim": "The latency between stimulation and detectable pitch reversion ranged from 18 to 26 ms across four experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "Across four experiments, the latency between stimulation and detectable pitch reversion ranged from 18 to 26 ms (Figure 5H, arrowheads), consistent with prior estimates of the premotor delay between LMAN activity and song (Giret et al., 2014; Kao et al., 2005; Kojima et al., 2018).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This quantitative finding is supported by data shown in Figure 5H and is consistent with prior estimates.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:20:45.636100Z"
+    },
+    {
+      "id": "102e1e0d-2d48-4f52-8117-6400ef88d1d3",
+      "content_id": "c55a8868-a0ac-443a-88dc-473cc9dc1f23",
+      "claim_id": "C46",
+      "claim": "LMAN exerts a moment-by-moment, top-down influence on RA to implement adaptive motor bias.",
+      "claim_type": "EXPLICIT",
+      "source": "Combined with prior findings from pharmacological perturbations within this circuit and of changes to LMAN\u2013RA cross-covariance during learning, these microstimulation experiments indicate that LMAN exerts a moment-by-moment, top-down influence on RA to implement adaptive motor bias.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the combined experimental results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:20:45.636100Z"
+    },
+    {
+      "id": "973098b0-17b8-47fa-8aa2-e43d46556fee",
+      "content_id": "c55a8868-a0ac-443a-88dc-473cc9dc1f23",
+      "claim_id": "C47",
+      "claim": "LMAN-RA cross-covariance peak is present even at baseline prior to learning reinforcement-driven pitch modifications, consistent with an ongoing role for LMAN in driving rendition-by-rendition exploratory variation in behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "This LMAN\u2013RA cross-covariance peak is present even at baseline prior to learning reinforcement-driven pitch modifications (Figure 1), consistent with an ongoing role for LMAN in driving rendition-by-rendition exploratory variation in behavior (Kao et al., 2005; Olveczky et al., 2005).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This interpretation is supported by baseline data and prior work on LMAN's role in variability.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:20:45.636100Z"
+    },
+    {
+      "id": "6edfd645-5e0f-414b-8d2b-6eefbf31c557",
+      "content_id": "c55a8868-a0ac-443a-88dc-473cc9dc1f23",
+      "claim_id": "C48",
+      "claim": "During learning LMAN-RA cross-covariance strengthens in a premotor window closely linked to the individual movement (syllable), rendition-by-rendition variation in the magnitude of adaptive pitch modifications, and sequential context associated with learning.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, during learning LMAN\u2013RA cross-covariance strengthens in a premotor window closely linked to the individual movement (syllable, Figure 2), rendition-by-rendition variation in the magnitude of adaptive pitch modifications (Figure 3), and sequential context (Figure 4) associated with learning.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a summary of the main findings from the learning experiments shown in multiple figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:20:45.636100Z"
+    },
+    {
+      "id": "a7132720-e8ba-4ae0-b887-79c276285947",
+      "content_id": "c55a8868-a0ac-443a-88dc-473cc9dc1f23",
+      "claim_id": "C49",
+      "claim": "Temporally localized perturbation of LMAN activity specifically within the premotor window causes rapid and transient occlusion of learned changes to pitch.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, temporally localized perturbation of LMAN activity specifically within this premotor window causes rapid and transient occlusion of learned changes to pitch (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a summary of the stimulation experiment results shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:20:45.636100Z"
+    },
+    {
+      "id": "8d677163-77bc-4349-9b22-75063fbf4191",
+      "content_id": "c55a8868-a0ac-443a-88dc-473cc9dc1f23",
+      "claim_id": "C50",
+      "claim": "LMAN enables learning by conveying a dynamic top-down command to RA that varies on the timescale of individual movements and is flexibly linked to contexts associated with learning.",
+      "claim_type": "EXPLICIT",
+      "source": "Combined, these results indicate that LMAN enables learning by conveying a dynamic top-down command to RA that varies on the timescale of individual movements and is flexibly linked to contexts associated with learning.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion drawn from all the experimental results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:20:45.636100Z"
+    },
+    {
+      "id": "567fd00b-b1a3-44b3-8a30-6b372e88fc38",
+      "content_id": "c55a8868-a0ac-443a-88dc-473cc9dc1f23",
+      "claim_id": "C51",
+      "claim": "LMAN-RA cross-covariance is a temporally precise neural correlate of adaptive behavioral modifications.",
+      "claim_type": "EXPLICIT",
+      "source": "Our finding that LMAN\u2013RA cross-covariance is a temporally precise neural correlate of adaptive behavioral modifications suggests a similar interpretation for previous work that identified enhanced inter-area co-fluctuations during learning (Koralek et al., 2013; Koralek et al., 2012; Lemke et al., 2019; Makino et al., 2017; Sawada et al., 2015; Veuthey et al., 2020; Wagner et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the current findings in the context of prior work.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:20:45.636100Z"
+    },
+    {
+      "id": "8c6b3137-df73-4cfe-ad32-e1738d960ab9",
+      "content_id": "c55a8868-a0ac-443a-88dc-473cc9dc1f23",
+      "claim_id": "C52",
+      "claim": "Prior studies left unresolved whether inter-area co-fluctuation signals reflect the moment-by-moment implementation of adaptive movements instead of other slower modulatory processes.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, prior studies left unresolved whether such co-fluctuation signals reflect the moment-by-moment implementation of adaptive movements instead of other slower modulatory processes related to motivation, vigor, attention, motor preparation, or other kinds of global brain state changes (Cowley et al., 2020; Hikosaka et al., 2006; Ignashchenkova et al., 2004; Jaffe and Brainard, 2020; Kawashima et al., 2016; M\u00fcller et al., 2005; Noudoost et al., 2010; Sawada et al., 2015; Stavisky et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This identifies a limitation in prior work that the current study addresses.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:20:45.636100Z"
+    },
+    {
+      "id": "0cc102f2-ae1b-4c2c-ac93-eb7b3b5fbc43",
+      "content_id": "c55a8868-a0ac-443a-88dc-473cc9dc1f23",
+      "claim_id": "C53",
+      "claim": "Inter-area co-fluctuations in other systems may similarly reflect dynamic top-down shaping of primary motor output in driving behavioral adaptation.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results indicate that inter-area co-fluctuations in these and other systems may similarly reflect dynamic top-down shaping of primary motor output in driving behavioral adaptation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a generalization of the findings to other systems.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:20:45.636100Z"
+    },
+    {
+      "id": "a9eac5e3-ec85-4629-a7f2-1350c3c36334",
+      "content_id": "c55a8868-a0ac-443a-88dc-473cc9dc1f23",
+      "claim_id": "C54",
+      "claim": "Moment-by-moment and context-specific links between measures of inter-area co-fluctuations and behavior may be detected most readily for forms of learning that involve modification of specific movement parameters with high temporal or contextual specificity.",
+      "claim_type": "EXPLICIT",
+      "source": "Moment-by-moment and context-specific links between measures of inter-area co-fluctuations and behavior, similar to those we found between LMAN\u2013RA cross-covariance and pitch shifts during learning, may be detected most readily for forms of learning that involve modification of specific movement parameters with high temporal (Kawai et al., 2015; Medina et al., 2005; Medina et al., 2000; Narayanan and Laubach, 2006; Rueda-Orozco and Robbe, 2015) or contextual specificity (Howard et al., 2012; Rochet-Capellan et al., 2012; Rochet-Capellan and Ostry, 2011; Wainscott et al., 2005), similar to song learning and adaptation (Charlesworth et al., 2011; Lipkind et al., 2017; Ravbar et al., 2012; Tchernichovski et al., 2001; Tian and Brainard, 2017; Tumer and Brainard, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction about when similar findings might be observed in other systems, supported by citations.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:20:45.636100Z"
+    },
+    {
+      "id": "3c1eeba8-5ef9-4312-a4ea-229e1273b932",
+      "content_id": "c55a8868-a0ac-443a-88dc-473cc9dc1f23",
+      "claim_id": "C55",
+      "claim": "A prevalent hypothesis is that top-down LMAN bias results from the reinforcement of LMAN activity patterns associated with successful behavioral variants.",
+      "claim_type": "EXPLICIT",
+      "source": "A prevalent hypothesis is that top-down LMAN bias results from the reinforcement of LMAN activity patterns associated with successful behavioral variants (Andalman and Fee, 2009; Brainard and Doupe, 2000; Charlesworth et al., 2011, Charlesworth et al., 2012; Doya and Sejnowski, 1998; Fee and Goldberg, 2011; Gadagkar et al., 2016; Kao et al., 2005; Kearney et al., 2019; Singh Alvarado et al., 2021; Troyer and Bottjer, 2001; Troyer and Doupe, 2000a; Tumer and Brainard, 2007; Warren et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This hypothesis is supported by multiple citations to prior work.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:20:45.636100Z"
+    },
+    {
+      "id": "ce259685-68e0-4f7c-b87a-a6d1fe78cf45",
+      "content_id": "c55a8868-a0ac-443a-88dc-473cc9dc1f23",
+      "claim_id": "C56",
+      "claim": "No systematic learning-related increases or decreases in average LMAN firing rates were detected during learning.",
+      "claim_type": "EXPLICIT",
+      "source": "We did not detect any systematic learning-related increases or decreases in average LMAN firing rates during learning (Figure 2\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a negative finding from the data shown in the figure supplement.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:20:45.636100Z"
+    },
+    {
+      "id": "a3a62009-1c39-440f-b644-3791aef872f0",
+      "content_id": "c55a8868-a0ac-443a-88dc-473cc9dc1f23",
+      "claim_id": "C57",
+      "claim": "No evidence was found that enhancement in cross-covariance during learning was specific to LMAN and RA sites that exhibited the highest baseline correlation with pitch.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, we did not find evidence that enhancement in cross-covariance during learning was specific to LMAN and RA sites that exhibited the highest baseline correlation with pitch (Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a negative finding from the data shown in the figure supplement.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:20:45.636100Z"
+    },
+    {
+      "id": "c902b709-5ff6-44cf-a7f8-c0e48209dd58",
+      "content_id": "c55a8868-a0ac-443a-88dc-473cc9dc1f23",
+      "claim_id": "C58",
+      "claim": "Changes to LMAN activity during learning may occur in a heterogeneous and complex fashion across neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Both negative findings\u2014although requiring corroboration using larger datasets\u2014suggest that any changes to LMAN activity during learning may occur in a heterogeneous and complex fashion across neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the negative findings about firing rates and pitch correlations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:20:45.636100Z"
+    },
+    {
+      "id": "0567dce3-8e9d-4613-8d9b-daebbfd71403",
+      "content_id": "c55a8868-a0ac-443a-88dc-473cc9dc1f23",
+      "claim_id": "C59",
+      "claim": "Increases in cross-covariance can be observed at arbitrarily selected recording locations in RA and LMAN, suggesting that the associated changes in these areas are distributed across neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "That increases in cross-covariance can be observed at arbitrarily selected recording locations in RA and LMAN suggests that the associated changes in these areas are distributed across neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the observation that cross-covariance changes were detected across multiple recording sites.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:20:45.636100Z"
+    },
+    {
+      "id": "adf348b4-fac6-476a-b72e-5b40daf077a4",
+      "content_id": "c55a8868-a0ac-443a-88dc-473cc9dc1f23",
+      "claim_id": "C60",
+      "claim": "The possibility that activity changes are correlated on a rendition-by-rendition basis across neurons in RA is supported by the known architecture of RA in which the inhibitory inputs to multiple projection neurons are highly correlated.",
+      "claim_type": "EXPLICIT",
+      "source": "At least for RA, the possibility that activity changes are correlated on a rendition-by-rendition basis across neurons is supported both by the known architecture of RA in which the inhibitory inputs to multiple projection neurons are highly correlated (Miller et al., 2017; Spiro et al., 1999) and by an understanding that correlated activity of RA projection neurons supports the ability of these neurons to drive downstream structures and influence song (Sober et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This interpretation is supported by citations to prior anatomical and functional studies.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:20:45.636100Z"
+    },
+    {
+      "id": "97293633-f57b-475a-b5cb-94dd3816c8f4",
+      "content_id": "c55a8868-a0ac-443a-88dc-473cc9dc1f23",
+      "claim_id": "C61",
+      "claim": "An alternative model is that top-down bias is implemented by altering the efficacy of LMAN synapses in RA, either by plasticity at these synapses or by changes to neuromodulatory inputs to RA.",
+      "claim_type": "EXPLICIT",
+      "source": "An alternative model is that top-down bias is implemented by altering the efficacy of LMAN synapses in RA\u2014potentially in the absence of changes within LMAN\u2014either by plasticity at these synapses, or by changes to neuromodulatory inputs to RA that act to alter the gain of an appropriate set of LMAN synapses in RA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an alternative hypothesis for the mechanism of top-down bias.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:20:45.636100Z"
+    },
+    {
+      "id": "74f2ffc4-49d6-4d18-9f94-756bb814611e",
+      "content_id": "c55a8868-a0ac-443a-88dc-473cc9dc1f23",
+      "claim_id": "C62",
+      "claim": "Prior work has supported a role for noradrenergic and cholinergic inputs to RA in modulating song.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, prior work has supported a role for noradrenergic (Sheldon et al., 2020; Solis and Perkel, 2006) and cholinergic (Puzerey et al., 2018) inputs to RA in modulating song.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work on neuromodulation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:20:45.636100Z"
+    },
+    {
+      "id": "2977925b-5092-4c30-9871-b04550a4000d",
+      "content_id": "c55a8868-a0ac-443a-88dc-473cc9dc1f23",
+      "claim_id": "C63",
+      "claim": "An advantageous feature of a hierarchical architecture with distinct substrates for fast and slow learning may be to enable rapid behavioral modifications in early phases of learning via top-down signals that flexibly update, while allowing for the stable representation of core motor programs in primary motor areas.",
+      "claim_type": "EXPLICIT",
+      "source": "An advantageous feature of this hierarchical architecture may be to enable rapid behavioral modifications in early phases of learning via top-down signals that flexibly update in response to changing goals, contexts, and reward contingencies, while allowing for the stable representation of core motor programs in primary motor areas (Kim and Hikosaka, 2013; Miller and Cohen, 2001; Tian and Brainard, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a functional interpretation of the hierarchical architecture supported by citations.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:20:45.636100Z"
+    },
+    {
+      "id": "c58e6c0c-f867-467b-8c40-0f6f23a53119",
+      "content_id": "c55a8868-a0ac-443a-88dc-473cc9dc1f23",
+      "claim_id": "C64",
+      "claim": "Top-down biasing may supervise slower plasticity in primary motor areas to drive long-lasting updates to core motor programs.",
+      "claim_type": "EXPLICIT",
+      "source": "On the longer timescale over which expertise is developed, such top-down biasing may also supervise slower plasticity in primary motor areas to drive long-lasting updates to core motor programs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis about the role of top-down signals in long-term learning.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:20:45.636100Z"
+    },
+    {
+      "id": "28d9dbef-f27d-4a22-816d-da2736490979",
+      "content_id": "c55a8868-a0ac-443a-88dc-473cc9dc1f23",
+      "claim_id": "C65",
+      "claim": "Such plasticity mechanisms may operate for both birdsong and other sensory-motor skills.",
+      "claim_type": "EXPLICIT",
+      "source": "Such plasticity mechanisms may operate for both birdsong (Andalman and Fee, 2009; Fee and Goldberg, 2011; Moorman et al., 2021; Tian and Brainard, 2017; Troyer and Doupe, 2000b; Warren et al., 2011) and other sensory-motor skills (Kawai et al., 2015; Knudsen, 1994; Turner and Desmurget, 2010), and are consistent with observations that early and late stages of sensory-motor learning are supported by distinct neural substrates (Andalman and Fee, 2009; Aronov et al., 2008; Bottjer et al., 1984; Dayan and Cohen, 2011; Doyon and Ungerleider, 2002; Hikosaka et al., 2002; Kleim et al., 2004; Nordeen and Nordeen, 2010; Scharff and Nottebohm, 1991; Shadmehr and Holcomb, 1997; Warren et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This generalization is supported by citations to work in birdsong and other motor learning systems.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:20:45.636100Z"
+    },
+    {
+      "id": "2351f58b-b776-4e80-a237-913d3b565f93",
+      "content_id": "c55a8868-a0ac-443a-88dc-473cc9dc1f23",
+      "claim_id": "C66",
+      "claim": "Adult male Bengalese finches (Lonchura striata domestica) were used as subjects (N=8, 4 for recordings, 4 for microstimulation).",
+      "claim_type": "EXPLICIT",
+      "source": "We used adult male Bengalese finches [Lonchura striata domestica, N = 8 (4 for recordings, 4 for microstimulation)] that were bred in our colony and housed with their parents until at least 60 days of age.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the animal subjects used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:20:45.636100Z"
+    },
+    {
+      "id": "39baa3d0-7207-419c-b8d0-4d526145eddf",
+      "content_id": "c55a8868-a0ac-443a-88dc-473cc9dc1f23",
+      "claim_id": "C67",
+      "claim": "All experiments were performed on 'undirected' song (i.e., with no female present).",
+      "claim_type": "EXPLICIT",
+      "source": "All experiments were performed on 'undirected' song (i.e., with no female present).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental conditions for song recording.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:20:45.636100Z"
+    },
+    {
+      "id": "552e957f-f747-47ec-967f-1aaac1af7feb",
+      "content_id": "c55a8868-a0ac-443a-88dc-473cc9dc1f23",
+      "claim_id": "C68",
+      "claim": "The premotor window for each syllable was defined as a 100ms period centered 50 ms preceding syllable onset.",
+      "claim_type": "EXPLICIT",
+      "source": "We computed the cross-covariance within a premotor window for each syllable, which we defined as a 100ms period centered 50 ms preceding syllable onset (Figure 1D), chosen based on empirical estimates of when LMAN and RA activity patterns maximally influence acoustic structure of the upcoming syllable (Fee et al., 2004; Giret et al., 2014; Kao et al., 2005; Kojima et al., 2018; Yu and Margoliash, 1996; Sober et al., 2008).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the methodological choice for the premotor window based on prior work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:20:45.636100Z"
+    },
+    {
+      "id": "3d719c3d-a126-4927-93a3-95cfc6dba68d",
+      "content_id": "c55a8868-a0ac-443a-88dc-473cc9dc1f23",
+      "claim_id": "C69",
+      "claim": "The average training duration was 6.4 hr (min, 3.0; max, 10.0) starting from when WN was turned on.",
+      "claim_type": "EXPLICIT",
+      "source": "The average training duration was 6.4 hr (min, 3.0; max, 10.0) starting from when WN was turned on.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative description of the training protocol.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:20:45.636100Z"
+    },
+    {
+      "id": "3eae764d-a4c3-423c-a6bf-0dd658567a7c",
+      "content_id": "c55a8868-a0ac-443a-88dc-473cc9dc1f23",
+      "claim_id": "C70",
+      "claim": "A total of N = 30 LMAN and 52 RA multi-unit sites were obtained for analyses of LMAN and RA activity during baseline singing (ranging from 3 to 10 LMAN and 5-20 RA sites per bird).",
+      "claim_type": "EXPLICIT",
+      "source": "For analyses of LMAN and RA activity during baseline singing, we obtained recordings from the remaining four birds (including recordings performed separately in LMAN and RA), resulting in a total of N = 30 LMAN and 52 RA multi-unit sites (ranging from 3 to 10 LMAN and 5\u201320 RA sites per bird).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the sample size for the baseline recording analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:20:45.636100Z"
+    },
+    {
+      "id": "ab14a3f4-ee1c-4cf4-8fd9-dfbaabbfcbbf",
+      "content_id": "c55a8868-a0ac-443a-88dc-473cc9dc1f23",
+      "claim_id": "C71",
+      "claim": "Analysis of LMAN-RA cross-covariance in learning experiments included N = 38 pairs of LMAN and RA sites across 11 learning sessions in 3 birds.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of LMAN\u2013RA cross-covariance in learning experiments included only concurrent LMAN and RA recordings collected over a day of learning. We excluded one of the four birds, for which we were only able to collect concurrent recordings from LMAN and RA during baseline singing, as signal strength had degraded (to the point where spikes were not detectable) before the rate of songs per day had recovered to a level sufficient for training pitch modification. This resulted in a a total of N = 38 pairs of LMAN and RA sites across 11 learning sessions in 3 birds.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the sample size for the learning experiment analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:20:45.636100Z"
+    },
+    {
+      "id": "1d769600-9a68-4ea1-8742-cf12ff86ce91",
+      "content_id": "c55a8868-a0ac-443a-88dc-473cc9dc1f23",
+      "claim_id": "C72",
+      "claim": "The ratio of projection neurons to interneurons in LMAN has been estimated at around 3:1 to 15:1.",
+      "claim_type": "EXPLICIT",
+      "source": "First, for LMAN, the ratio of projection neurons to interneurons has been estimated at around 3:1 (Bottjer et al., 1998) to 15:1 (Livingston and Mooney, 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior anatomical studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:20:45.636100Z"
+    },
+    {
+      "id": "d0cdbf49-43d8-4ac7-a232-ca3c0be77e69",
+      "content_id": "c55a8868-a0ac-443a-88dc-473cc9dc1f23",
+      "claim_id": "C73",
+      "claim": "In slice preparations, the ratio of projection neuron to interneurons in RA was found to be around 30:1.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, other studies isolating single neurons have reported low probability of finding putative interneurons in RA Leonardo and Fee, 2005; Sober et al., 2008; indeed, in slice preparations the ratio of projection neuron to interneurons in RA was found to be around 30:1 (Spiro et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a prior anatomical study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:20:45.636100Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "07438a7e-5e22-49ea-9260-451dcc9e9d23",
+      "content_id": "c55a8868-a0ac-443a-88dc-473cc9dc1f23",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "LMAN-leading co-fluctuations in neural activity between LMAN and RA are present during singing at baseline. Average activity in both areas peaks within 50 ms prior to syllable onsets, with rendition-by-rendition variation. Cross-covariance analysis reveals a dominant positive peak with LMAN leading at ~3 ms lag, consistent with a direct excitatory projection from LMAN to RA.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C19-C24, and C47 collectively demonstrate LMAN-RA co-fluctuations during baseline singing through paired recordings, cross-covariance analysis, and comparison to prior work. The findings are supported by data in Figures 1D-F showing temporal structure, cross-covariance peaks, and consistency with anatomical projections. The methodology for cross-covariance calculation is detailed and appropriate.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:20:45.636100Z"
+    },
+    {
+      "id": "2fe579ef-dac4-407a-b8d9-3bb09f85968e",
+      "content_id": "c55a8868-a0ac-443a-88dc-473cc9dc1f23",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "During learning with pitch-contingent reinforcement, LMAN-RA cross-covariance is enhanced specifically for target syllables, with maximal enhancement at ~2 ms LMAN-leading lag. This enhancement develops with a similar time course to pitch modification, with no detectable changes for non-target syllables or in overall firing rates within each nucleus.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C30 and C48 are well-supported by data in Figures 2C-H showing syllable-specific enhancement of cross-covariance during learning. The specificity to target syllables (C28-C29), parallel time course with behavioral changes (C27), and appropriate statistical testing strengthen the conclusion that changes are learning-specific rather than due to confounds like arousal or drift.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:20:45.636100Z"
+    },
+    {
+      "id": "dadc2a4a-5309-43d1-9668-0f06e1bc5633",
+      "content_id": "c55a8868-a0ac-443a-88dc-473cc9dc1f23",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Renditions exhibiting stronger learning-related pitch shifts also exhibit greater learning-related enhancement of LMAN-RA cross-covariance on a rendition-by-rendition basis, suggesting that LMAN-RA co-fluctuations reflect a rapidly varying top-down signal that adaptively biases motor performance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C32 are supported by rendition-by-rendition analysis in Figure 3 showing correlation between pitch shift magnitude and cross-covariance enhancement. The interleaved design controls for slower drift effects. However, the interpretation (C32) that this reflects a 'rapidly varying top-down signal' is an inference that, while reasonable, goes beyond direct demonstration of causality at this stage.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:20:45.636100Z"
+    },
+    {
+      "id": "41393391-fb5d-41ec-b727-55bb81a7e1da",
+      "content_id": "c55a8868-a0ac-443a-88dc-473cc9dc1f23",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Learning-related increases in LMAN-RA cross-covariance are context-specific. When a syllable is targeted in a specific sequential context, LMAN-RA cross-covariance increases specifically for that target context with no detected change for the same syllable in non-target contexts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C36 are supported by context-specific training data in Figure 4. Prior work (C33-C34) establishes context-dependent pitch modifications, and the current data (C35) demonstrate corresponding context-specific changes in cross-covariance. The experimental design with naturally interleaved contexts is appropriate for testing this specificity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:20:45.636100Z"
+    },
+    {
+      "id": "16db10ab-3942-48a6-afe5-77f81b689ac0",
+      "content_id": "c55a8868-a0ac-443a-88dc-473cc9dc1f23",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Electrical microstimulation of LMAN during learning causes pitch to revert toward baseline values, with effects quantitatively indistinguishable from pharmacological inactivation. Stimulation causes reversion only when applied within a narrow premotor window (18-26 ms latency), indicating that appropriately patterned LMAN premotor activity is required for adaptive biasing of vocal output.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C46 and C49 are well-supported by microstimulation data in Figure 5. The temporal specificity (C44-C45), comparison to pharmacology (C42), and minimal baseline effects (C39) strengthen causal interpretation. The bilateral stimulation design addresses limitations of prior unilateral studies. However, the mechanism by which stimulation disrupts activity (rather than simply adding noise) could be better characterized.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:20:45.636100Z"
+    },
+    {
+      "id": "94a42d61-1dfe-4ddb-be19-fc734e865893",
+      "content_id": "c55a8868-a0ac-443a-88dc-473cc9dc1f23",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "LMAN enables learning by conveying a dynamic top-down command to RA that varies on the timescale of individual movements and is flexibly linked to contexts associated with learning, representing a moment-by-moment top-down influence that implements adaptive motor bias.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50, C8, and C46 represent the main conclusions synthesizing results from recordings (syllable-specificity, rendition-by-rendition correlation, context-dependence) and causal manipulations (temporal specificity of stimulation effects). The convergence of correlational and causal evidence across multiple levels of specificity provides strong support for this conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:20:45.636100Z"
+    },
+    {
+      "id": "59062758-bf12-4a0d-a091-bf0613af4602",
+      "content_id": "c55a8868-a0ac-443a-88dc-473cc9dc1f23",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Inter-area co-fluctuations can be a signature of dynamic top-down influences that support complex behavior and its adaptation. The findings suggest that inter-area co-fluctuations in other systems may similarly reflect dynamic top-down shaping of primary motor output, addressing limitations in prior work that left unresolved whether such signals reflect moment-by-moment implementation versus slower modulatory processes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9, C51-C53 generalize findings to broader principles of inter-area coordination. While the birdsong data strongly support the specific conclusions (C9, C51), the generalization to other systems (C53) is more speculative. The claim appropriately identifies what prior work left unresolved (C52) and how current findings address this gap, but broader applicability requires validation in other systems.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:20:45.636100Z"
+    },
+    {
+      "id": "52cce218-fbae-4e8f-83eb-d7367ed54114",
+      "content_id": "c55a8868-a0ac-443a-88dc-473cc9dc1f23",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "No systematic learning-related changes in average LMAN firing rates were detected, and enhancement in cross-covariance was not specific to sites with highest baseline pitch correlation. Changes may occur in a heterogeneous fashion across neurons, with increases in cross-covariance observable at arbitrarily selected recording locations suggesting distributed changes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C56-C57 report negative findings that are appropriately caveated as requiring larger datasets. The inferences about heterogeneous/distributed changes (C58-C59) are reasonable but speculative. Claim C60 about RA architecture supporting correlated activity is well-cited but doesn't directly test the proposed mechanism. The negative findings are important but the mechanistic interpretations remain uncertain.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:20:45.636100Z"
+    },
+    {
+      "id": "0b59bca0-619c-4519-a656-b7c6dba2e987",
+      "content_id": "c55a8868-a0ac-443a-88dc-473cc9dc1f23",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Alternative models for how top-down bias is implemented include reinforcement of LMAN activity patterns associated with successful variants, or alterations in efficacy of LMAN synapses in RA through plasticity or neuromodulatory inputs. Prior work supports roles for noradrenergic and cholinergic inputs to RA in modulating song.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C55, C61-C62 present alternative mechanistic hypotheses that are well-grounded in prior literature but not directly tested in the current study. These represent important considerations for future work but remain speculative regarding which mechanism(s) operate during the learning observed here.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:20:45.636100Z"
+    },
+    {
+      "id": "319a4a32-714a-4e3a-9e16-f4d700b91099",
+      "content_id": "c55a8868-a0ac-443a-88dc-473cc9dc1f23",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "A hierarchical architecture with distinct substrates for fast and slow learning may enable rapid behavioral modifications via flexibly updating top-down signals while maintaining stable core motor programs. Top-down biasing may supervise slower plasticity in primary motor areas for long-lasting updates, with such mechanisms potentially operating across birdsong and other sensory-motor skills.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C63-C65 present a functional framework for understanding the hierarchical architecture, supported by citations to prior work. However, the current study focuses on early learning and does not directly test the proposed role in long-term plasticity (C64) or validate the generalization across systems (C65). These represent reasonable interpretations and predictions but extend beyond what is directly demonstrated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:20:45.636100Z"
+    },
+    {
+      "id": "0def520f-54db-4134-aef1-f396324a3752",
+      "content_id": "c55a8868-a0ac-443a-88dc-473cc9dc1f23",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The study addresses a gap in understanding the behavioral function of inter-area co-fluctuations, testing the hypothesis that rapidly varying co-fluctuations reflect moment-by-moment task-relevant influences. Prior work established that pharmacological inactivation of LMAN eliminates learned pitch modifications and identified co-fluctuations in anesthetized/sleeping birds, but left unclear whether such co-fluctuations occur during singing and support learning.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C18 establish the background, motivation, and knowledge gaps addressed by the study. These are well-supported by appropriate citations and accurately characterize the state of the field. The identification of what remains unclear (C14, C18) appropriately motivates the current experiments.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:20:45.636100Z"
+    },
+    {
+      "id": "4fad3db3-142f-497e-8280-853d8abc7c6f",
+      "content_id": "c55a8868-a0ac-443a-88dc-473cc9dc1f23",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Moment-by-moment and context-specific links between inter-area co-fluctuations and behavior may be detected most readily for forms of learning involving modification of specific movement parameters with high temporal or contextual specificity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C54 is a prediction about when similar findings might be observed in other systems. While grounded in the current findings and supported by citations to relevant work, this remains speculative and would require validation in other learning paradigms.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:20:45.636100Z"
+    },
+    {
+      "id": "4cfb9fe8-f5f0-40d7-b0f0-29f8325d6748",
+      "content_id": "c55a8868-a0ac-443a-88dc-473cc9dc1f23",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The study used adult male Bengalese finches (N=8) with specific recording configurations and analysis parameters. Sample sizes for different analyses ranged from 30-52 sites for baseline recordings to 38 pairs across 11 sessions for learning experiments. Anatomical considerations regarding projection neuron to interneuron ratios support that recordings predominantly captured projection neuron activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66-C73 describe methodological details and sample sizes. These are clearly stated and appropriate for the analyses performed. The anatomical considerations (C72-C73) regarding cell type composition are well-cited and support the interpretation of multi-unit recordings. One bird was appropriately excluded from learning analyses due to signal degradation (C71).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:20:45.636100Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "91a5094d-0102-4ccb-a94b-65a2d82c6a5f",
+      "result_id": "07438a7e-5e22-49ea-9260-451dcc9e9d23"
+    },
+    {
+      "claim_id": "060097d2-e3c6-4a65-b4ec-95e00db36327",
+      "result_id": "07438a7e-5e22-49ea-9260-451dcc9e9d23"
+    },
+    {
+      "claim_id": "9affef5c-2914-47e3-8bfd-631f94f2e1b0",
+      "result_id": "07438a7e-5e22-49ea-9260-451dcc9e9d23"
+    },
+    {
+      "claim_id": "45979c9a-1ebc-4ef9-9a79-b6f3631fde78",
+      "result_id": "07438a7e-5e22-49ea-9260-451dcc9e9d23"
+    },
+    {
+      "claim_id": "96eaa503-9460-4ec6-975b-88b3604d8c81",
+      "result_id": "07438a7e-5e22-49ea-9260-451dcc9e9d23"
+    },
+    {
+      "claim_id": "06c6d18b-2bbe-4e3f-91f1-6e5916d08f24",
+      "result_id": "07438a7e-5e22-49ea-9260-451dcc9e9d23"
+    },
+    {
+      "claim_id": "ac1403b8-f9dd-40f0-a362-e6930ece2ac8",
+      "result_id": "07438a7e-5e22-49ea-9260-451dcc9e9d23"
+    },
+    {
+      "claim_id": "973098b0-17b8-47fa-8aa2-e43d46556fee",
+      "result_id": "07438a7e-5e22-49ea-9260-451dcc9e9d23"
+    },
+    {
+      "claim_id": "4dadd349-f277-4157-8b34-2c1efa7e74ee",
+      "result_id": "2fe579ef-dac4-407a-b8d9-3bb09f85968e"
+    },
+    {
+      "claim_id": "3eb5b230-741b-4e42-97a6-906dc41ab19d",
+      "result_id": "2fe579ef-dac4-407a-b8d9-3bb09f85968e"
+    },
+    {
+      "claim_id": "bc7b86d0-33a0-4631-8cc1-38d3ad3a7348",
+      "result_id": "2fe579ef-dac4-407a-b8d9-3bb09f85968e"
+    },
+    {
+      "claim_id": "cf732da0-ceb7-4388-9685-ac39c716f924",
+      "result_id": "2fe579ef-dac4-407a-b8d9-3bb09f85968e"
+    },
+    {
+      "claim_id": "62f5d132-5271-4744-94a8-807f2eb41eb0",
+      "result_id": "2fe579ef-dac4-407a-b8d9-3bb09f85968e"
+    },
+    {
+      "claim_id": "38a3d594-f7fa-42fb-9397-79e0e76e1d0f",
+      "result_id": "2fe579ef-dac4-407a-b8d9-3bb09f85968e"
+    },
+    {
+      "claim_id": "6edfd645-5e0f-414b-8d2b-6eefbf31c557",
+      "result_id": "2fe579ef-dac4-407a-b8d9-3bb09f85968e"
+    },
+    {
+      "claim_id": "4979fa0e-8c6e-46f1-ad25-b4d0b85c8f7f",
+      "result_id": "dadc2a4a-5309-43d1-9668-0f06e1bc5633"
+    },
+    {
+      "claim_id": "5bd2dd57-b3f8-4203-8749-7c606973bbb8",
+      "result_id": "dadc2a4a-5309-43d1-9668-0f06e1bc5633"
+    },
+    {
+      "claim_id": "71ac571c-27e1-4cf5-9c66-537155e16afa",
+      "result_id": "41393391-fb5d-41ec-b727-55bb81a7e1da"
+    },
+    {
+      "claim_id": "2c0cb4d1-2aa7-4f6a-9dda-7c35ff88522f",
+      "result_id": "41393391-fb5d-41ec-b727-55bb81a7e1da"
+    },
+    {
+      "claim_id": "0f080c16-015b-4b10-94b9-a008fbecf565",
+      "result_id": "41393391-fb5d-41ec-b727-55bb81a7e1da"
+    },
+    {
+      "claim_id": "66579c3e-3d5d-4a52-a423-14671c1cf527",
+      "result_id": "41393391-fb5d-41ec-b727-55bb81a7e1da"
+    },
+    {
+      "claim_id": "a8076230-2466-4c8d-bd46-426ea48660ab",
+      "result_id": "16db10ab-3942-48a6-afe5-77f81b689ac0"
+    },
+    {
+      "claim_id": "2e92410d-8265-40f6-8c44-034d9f5daf3a",
+      "result_id": "16db10ab-3942-48a6-afe5-77f81b689ac0"
+    },
+    {
+      "claim_id": "0ebd2be6-2004-428c-9b80-60d6ab7fefb9",
+      "result_id": "16db10ab-3942-48a6-afe5-77f81b689ac0"
+    },
+    {
+      "claim_id": "2bc2d6d4-92ad-46db-8969-42d7d88fe5f7",
+      "result_id": "16db10ab-3942-48a6-afe5-77f81b689ac0"
+    },
+    {
+      "claim_id": "eb986f64-2d97-4a30-9c39-f27060cced0f",
+      "result_id": "16db10ab-3942-48a6-afe5-77f81b689ac0"
+    },
+    {
+      "claim_id": "bc06ff27-9648-42a3-8843-d12a06805af4",
+      "result_id": "16db10ab-3942-48a6-afe5-77f81b689ac0"
+    },
+    {
+      "claim_id": "5fb1d8bf-3d6c-4394-bee4-6266190fffe3",
+      "result_id": "16db10ab-3942-48a6-afe5-77f81b689ac0"
+    },
+    {
+      "claim_id": "9c251b8e-2ebe-4bdc-a90d-45db81ab2b78",
+      "result_id": "16db10ab-3942-48a6-afe5-77f81b689ac0"
+    },
+    {
+      "claim_id": "bcdbdc75-3647-4d2f-b4d6-d517ab6fbaf1",
+      "result_id": "16db10ab-3942-48a6-afe5-77f81b689ac0"
+    },
+    {
+      "claim_id": "102e1e0d-2d48-4f52-8117-6400ef88d1d3",
+      "result_id": "16db10ab-3942-48a6-afe5-77f81b689ac0"
+    },
+    {
+      "claim_id": "a7132720-e8ba-4ae0-b887-79c276285947",
+      "result_id": "16db10ab-3942-48a6-afe5-77f81b689ac0"
+    },
+    {
+      "claim_id": "8d677163-77bc-4349-9b22-75063fbf4191",
+      "result_id": "94a42d61-1dfe-4ddb-be19-fc734e865893"
+    },
+    {
+      "claim_id": "d19ae218-024b-44e2-b579-37ef8f4096f5",
+      "result_id": "94a42d61-1dfe-4ddb-be19-fc734e865893"
+    },
+    {
+      "claim_id": "102e1e0d-2d48-4f52-8117-6400ef88d1d3",
+      "result_id": "94a42d61-1dfe-4ddb-be19-fc734e865893"
+    },
+    {
+      "claim_id": "ce030fd5-fd05-414a-ae65-3b8c2143ca4f",
+      "result_id": "59062758-bf12-4a0d-a091-bf0613af4602"
+    },
+    {
+      "claim_id": "567fd00b-b1a3-44b3-8a30-6b372e88fc38",
+      "result_id": "59062758-bf12-4a0d-a091-bf0613af4602"
+    },
+    {
+      "claim_id": "8c6b3137-df73-4cfe-ad32-e1738d960ab9",
+      "result_id": "59062758-bf12-4a0d-a091-bf0613af4602"
+    },
+    {
+      "claim_id": "0cc102f2-ae1b-4c2c-ac93-eb7b3b5fbc43",
+      "result_id": "59062758-bf12-4a0d-a091-bf0613af4602"
+    },
+    {
+      "claim_id": "ce259685-68e0-4f7c-b87a-a6d1fe78cf45",
+      "result_id": "52cce218-fbae-4e8f-83eb-d7367ed54114"
+    },
+    {
+      "claim_id": "a3a62009-1c39-440f-b644-3791aef872f0",
+      "result_id": "52cce218-fbae-4e8f-83eb-d7367ed54114"
+    },
+    {
+      "claim_id": "c902b709-5ff6-44cf-a7f8-c0e48209dd58",
+      "result_id": "52cce218-fbae-4e8f-83eb-d7367ed54114"
+    },
+    {
+      "claim_id": "0567dce3-8e9d-4613-8d9b-daebbfd71403",
+      "result_id": "52cce218-fbae-4e8f-83eb-d7367ed54114"
+    },
+    {
+      "claim_id": "adf348b4-fac6-476a-b72e-5b40daf077a4",
+      "result_id": "52cce218-fbae-4e8f-83eb-d7367ed54114"
+    },
+    {
+      "claim_id": "3c1eeba8-5ef9-4312-a4ea-229e1273b932",
+      "result_id": "0b59bca0-619c-4519-a656-b7c6dba2e987"
+    },
+    {
+      "claim_id": "97293633-f57b-475a-b5cb-94dd3816c8f4",
+      "result_id": "0b59bca0-619c-4519-a656-b7c6dba2e987"
+    },
+    {
+      "claim_id": "74f2ffc4-49d6-4d18-9f94-756bb814611e",
+      "result_id": "0b59bca0-619c-4519-a656-b7c6dba2e987"
+    },
+    {
+      "claim_id": "2977925b-5092-4c30-9871-b04550a4000d",
+      "result_id": "319a4a32-714a-4e3a-9e16-f4d700b91099"
+    },
+    {
+      "claim_id": "c58e6c0c-f867-467b-8c40-0f6f23a53119",
+      "result_id": "319a4a32-714a-4e3a-9e16-f4d700b91099"
+    },
+    {
+      "claim_id": "28d9dbef-f27d-4a22-816d-da2736490979",
+      "result_id": "319a4a32-714a-4e3a-9e16-f4d700b91099"
+    },
+    {
+      "claim_id": "af612fd0-9035-47cf-b71f-0e50692d07ef",
+      "result_id": "0def520f-54db-4134-aef1-f396324a3752"
+    },
+    {
+      "claim_id": "6213798c-d8e7-454a-a524-38d35cf3541f",
+      "result_id": "0def520f-54db-4134-aef1-f396324a3752"
+    },
+    {
+      "claim_id": "3b2a295e-52b8-469b-826d-40b63408aa6e",
+      "result_id": "0def520f-54db-4134-aef1-f396324a3752"
+    },
+    {
+      "claim_id": "84367d29-0936-4bb1-8c0c-1b92a30da924",
+      "result_id": "0def520f-54db-4134-aef1-f396324a3752"
+    },
+    {
+      "claim_id": "697e70ba-359d-4eb8-9bc3-5d0e3ac91392",
+      "result_id": "0def520f-54db-4134-aef1-f396324a3752"
+    },
+    {
+      "claim_id": "50e064a0-70fc-4603-b327-2d2c2b4336ff",
+      "result_id": "0def520f-54db-4134-aef1-f396324a3752"
+    },
+    {
+      "claim_id": "d8a76b41-0d1d-45c0-b720-b26db887d9ad",
+      "result_id": "0def520f-54db-4134-aef1-f396324a3752"
+    },
+    {
+      "claim_id": "f889acaf-2b8b-4560-ae72-5809497343aa",
+      "result_id": "0def520f-54db-4134-aef1-f396324a3752"
+    },
+    {
+      "claim_id": "96b0818a-e21a-4538-baeb-f600c51d258a",
+      "result_id": "0def520f-54db-4134-aef1-f396324a3752"
+    },
+    {
+      "claim_id": "64f15ffc-0d2f-4eef-b8c5-cdcdfc500535",
+      "result_id": "0def520f-54db-4134-aef1-f396324a3752"
+    },
+    {
+      "claim_id": "3c60e84d-0068-465e-bd79-bda84061046c",
+      "result_id": "0def520f-54db-4134-aef1-f396324a3752"
+    },
+    {
+      "claim_id": "d6ef3f6f-1671-49fc-9cfe-f54f1ad4cbdf",
+      "result_id": "0def520f-54db-4134-aef1-f396324a3752"
+    },
+    {
+      "claim_id": "be0d16d4-0848-4927-9158-baedd1d24cbe",
+      "result_id": "0def520f-54db-4134-aef1-f396324a3752"
+    },
+    {
+      "claim_id": "a9eac5e3-ec85-4629-a7f2-1350c3c36334",
+      "result_id": "4fad3db3-142f-497e-8280-853d8abc7c6f"
+    },
+    {
+      "claim_id": "2351f58b-b776-4e80-a237-913d3b565f93",
+      "result_id": "4cfb9fe8-f5f0-40d7-b0f0-29f8325d6748"
+    },
+    {
+      "claim_id": "39baa3d0-7207-419c-b8d0-4d526145eddf",
+      "result_id": "4cfb9fe8-f5f0-40d7-b0f0-29f8325d6748"
+    },
+    {
+      "claim_id": "552e957f-f747-47ec-967f-1aaac1af7feb",
+      "result_id": "4cfb9fe8-f5f0-40d7-b0f0-29f8325d6748"
+    },
+    {
+      "claim_id": "3d719c3d-a126-4927-93a3-95cfc6dba68d",
+      "result_id": "4cfb9fe8-f5f0-40d7-b0f0-29f8325d6748"
+    },
+    {
+      "claim_id": "3eae764d-a4c3-423c-a6bf-0dd658567a7c",
+      "result_id": "4cfb9fe8-f5f0-40d7-b0f0-29f8325d6748"
+    },
+    {
+      "claim_id": "ab14a3f4-ee1c-4cf4-8fd9-dfbaabbfcbbf",
+      "result_id": "4cfb9fe8-f5f0-40d7-b0f0-29f8325d6748"
+    },
+    {
+      "claim_id": "1d769600-9a68-4ea1-8742-cf12ff86ce91",
+      "result_id": "4cfb9fe8-f5f0-40d7-b0f0-29f8325d6748"
+    },
+    {
+      "claim_id": "d0cdbf49-43d8-4ac7-a232-ca3c0be77e69",
+      "result_id": "4cfb9fe8-f5f0-40d7-b0f0-29f8325d6748"
+    }
+  ],
+  "comparisons": []
+}

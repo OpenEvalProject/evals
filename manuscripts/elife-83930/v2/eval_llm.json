@@ -1,0 +1,174 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C58"
+    ],
+    "result": "The study re-analyzed data from Kraus et al., 2013, where six rats ran on a treadmill in a figure-8 maze under two experimental conditions: fixed-time sessions (constant duration, variable distance) and fixed-distance sessions (constant distance, variable duration). Treadmill velocity varied randomly between 35-49 cm/s across 31-57 runs per session, with three rats trained exclusively in one condition type and three in both.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C12 and C58 provide a clear and consistent description of the experimental design from the Kraus et al., 2013 dataset. The methodology is well-documented with specific parameters (velocity range, number of runs, animal assignments) and supported by Figure 1, which shows the apparatus and distributions of travel times/distances.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Prior work established that hippocampal neurons can encode either time or distance. Time cells were initially reported in animals on running wheels (Pastalkova et al., 2008) and in immobile rats (MacDonald et al., 2011). Kraus et al., 2013 varied treadmill velocity and found distinct subpopulations encoding time, path-integrated distance, or both.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C14 and C48-C53 accurately summarize established findings from cited literature. These claims provide appropriate context for the current study's hypothesis and are supported by multiple peer-reviewed citations. The historical progression from initial time cell discovery to the Kraus et al. disambiguation study is logically presented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C46",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "The analysis included 679 of 930 recorded cells that met inclusion criteria (\u226510 runs, peak firing >0.5 Hz during treadmill run). Response onset was defined as the first bin after \u22651s silence before peak firing, using 100ms time bins. The classification method was based on the premise that ideal time cells fire independently of speed while ideal distance cells show speed-dependent firing onsets. Data were truncated to 16s (shortest run duration) for shuffle analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C16, C40-C43, C46, C59-C62 describe clear methodological choices with explicit criteria and theoretical justification. The robustness checks (C43: testing 50-500ms bins; C63-C64: peak vs. onset analysis) strengthen confidence in the approach. The 16s truncation (C59-C60) appropriately addresses potential bias in shuffle testing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C63",
+      "C64"
+    ],
+    "result": "The study found that cell encoding type strongly depended on session type. In fixed-distance sessions, 67% of neurons (298/444) were distance cells; in fixed-time sessions, 68% (159/235) were time cells. This relationship was statistically significant (\u03c7\u00b2(1)=75.1, p<<0.001) and held in 5 of 6 animals individually. ROC analysis identified an optimal classification threshold of 0 for the CellType metric, and results were robust across different classification metrics and analysis methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C26, C63-C64 present the core finding with strong statistical support. The chi-square test is appropriate for categorical data, the effect is large and consistent, and per-animal analysis (C23) demonstrates the effect is not driven by a single subject. ROC analysis (C24-C25) and robustness checks across metrics (C63-C64) and supplementary figures strengthen the conclusion. The shuffle test (C26, Figure 3c) provides additional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "The type of experimental condition significantly influenced hippocampal cell encoding. In fixed-time experiments, the majority of cells encoded time from treadmill onset, while in fixed-distance experiments, the majority encoded accumulated distance from treadmill onset.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C28 and C54-C56 represent the main conclusion, directly supported by the quantitative findings in C18-C22. The statistical significance (p<<0.001), large effect size (67-68% majorities), and consistency across animals provide strong evidence. This is a clear restatement of the primary result with appropriate confidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C39",
+      "C57"
+    ],
+    "result": "CA1 pyramidal cells demonstrate flexible encoding capabilities, able to represent location, distance, or time depending on experimental conditions and task demands. This flexibility may be shaped by over-representation of salient variables associated with reward conditions, as accumulated time/distance in respective session types predict progress toward reward.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C31, C39, and C57 provide interpretation of the main findings. C29 offers a reasonable functional interpretation supported by citations (Whittington et al., 2020; Stachenfeld et al., 2017). C30 references prior work (Kraus et al., 2013) showing these cells also encode spatial location outside the treadmill. C31, C39, and C57 draw appropriate conclusions about hippocampal flexibility based on the demonstrated task-dependent encoding shift.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Task-dependent encoding in the hippocampus has been demonstrated across diverse parameter spaces including auditory frequency (Aronov et al., 2017), social mapping (Omer et al., 2018; Schafer and Schiller, 2018), and abstract spaces (Constantinescu et al., 2016; Retailleau and Morris, 2018).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C34 appropriately contextualize the current findings within broader hippocampal literature. The citations support the claim that task-dependent encoding is a general hippocampal property. This provides important context for interpreting the time/distance flexibility observed in the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Continuous attractor networks, commonly used to model place and grid cells, may provide a mechanistic substrate for amplifying encoding of task-relevant features at the expense of others. This over-representation of salient variables could help the brain prioritize survival and decision-making by allocating more resources to important information.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C35-C38 propose a theoretical mechanism for the observed flexibility. While C35 correctly cites extensive modeling literature on continuous attractor networks, C36-C38 are speculative (marked as SPECULATION/INFERENCE in evidence). The proposed mechanism is plausible but not directly tested in this study. The claims appropriately use tentative language ('may serve', 'may help'), but no experimental evidence is provided to validate this specific mechanistic explanation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "The hippocampus plays important roles in spatial processing and episodic memory, supported by place cells that encode location and time cells that encode temporal information within episodes. Time cells and place cells share physiological properties, and time cells may contribute to episodic memory formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C6 provide established background knowledge supported by appropriate citations. C1-C4 reference well-established findings about hippocampal function, place cells, and time cells. C5 appropriately uses tentative language ('may contribute') for the speculative connection to episodic memory. C6 states shared properties as established knowledge. These claims provide necessary context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C47"
+    ],
+    "result": "The distributions of peak firing rates and average firing rates were similar between time cells and distance cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C47 reports an additional control analysis showing that the observed differences in encoding are not due to differences in firing rate properties between cell types. This is supported by Figure 3\u2014figure supplement 3 and appropriate statistical testing (Kolmogorov-Smirnov test, p=0.975 for peak rates, p=0.675 for average rates).",
+    "result_type": "MINOR"
+  }
+]

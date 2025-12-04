@@ -1,0 +1,164 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C11",
+      "C12",
+      "C13",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Single-cell RNA sequencing was performed on pig skin from six anatomical regions of CH pigs and the back of LW pigs, yielding 215,274 cells after quality control (originally 233,715 cells captured), organized into 21 clusters with an average of 956 genes and 2,687 UMIs per cell. The study focused on characterizing three main cell types: SMCs, ECs, and FBs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The experimental design, sample collection (C1, C49), cell capture (C50), quality control procedures (C11, C51, C52), and basic sequencing metrics (C13) are clearly documented with specific quantitative values. The discrepancy between 233,715 cells initially obtained (C2) and 215,274 after filtration (C11) is explained by stringent quality control. The identification of seven cell types in 21 clusters (C12) with focus on three main types (C3) is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Seven cell types were identified using marker gene expression: SMCs (42.9%, marked by MYH11/ACTA2), ECs (28.1%, marked by PECAM1/APOA1), FBs (24.6%, marked by LUM/POSTN), MDCs (2.5%, marked by BCL2A1/CXCL8), TCs (0.9%, marked by RHOH/SAMSN1), KEs (0.6%, marked by KRT5/S100A2), and ESCs (0.3%, marked by TOP2A/EGFL8).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Cell type identification is supported by established marker genes (C14-C20) with specific percentages provided (C21). The marker genes used are standard for these cell types, and the distribution ratios are consistent across different anatomical regions as stated. However, the manuscript lacks validation of marker specificity and does not report statistical significance for cluster assignments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "SMCs were subdivided into five subpopulations with three distinct phenotypes: contractile SMCs (clusters 0, 13), mesenchymal-like phenotype (cluster 2), and macrophage-like phenotype (clusters 5, 6). Pseudotime trajectory analysis revealed dynamic transitions from contractile SMCs to mesenchymal-like to macrophage-like phenotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the identification of five SMC subpopulations (C24) is data-driven, the phenotype assignments (C25, C26) are explicitly stated as presumptions based on marker gene expression and GO analysis rather than definitive classifications. The pseudotime trajectory (C27) provides supporting evidence but is inherently inferential. The claim of being the first single-cell characterization of skin SMCs (C23) cannot be verified without comprehensive literature review. Additional validation experiments would strengthen these phenotype assignments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "ECs were classified into four phenotypes based on marker gene expression: arteriole ECs (SEMA3G/MECOM), capillary ECs (PLVAP), venule ECs (SELE/ACK1), and lymphatic ECs (LYVE1/PROX1). Pseudotime trajectory analysis showed an organized developmental axis from arteriole to venule with arteriovenous anastomosis tendency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "EC phenotype classification (C28-C32) is based on established markers from cited previous studies (Li et al., 2021; Wang et al., 2022), providing methodological validation. The pseudotime trajectory analysis (C33) is appropriately applied to infer developmental relationships. However, the interpretation of \"arteriovenous anastomosis tendency\" requires more explicit definition and validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Fibroblasts were identified in three subpopulations: reticular FBs (cluster 1, expressing MGP/MFAP5), papillary FBs (clusters 8-9, expressing COL6A5/WIF1/APCDD1), and mesenchymal FBs (cluster 12, expressing CRABP1/TNN/SFRP1). Skin thickness varied significantly across anatomical sites (back: 5.48 mm, ear: 1.52 mm).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "FB subpopulation identification (C35-C37) is supported by marker genes consistent with previous reports (Philippeos et al., 2018; Sol\u00e9-Boldo et al., 2020). The quantitative skin thickness measurements (C34) provide phenotypic validation. The connection between FB heterogeneity and skin thickness is implied but not statistically tested for correlation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C4",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "TNN, COL11A1, and INHBA were identified as candidate genes for facilitating ECM accumulation based on differential expression analysis of FBs across anatomical regions. These genes are involved in cell adhesion/motility (TNN), collagen fibrillogenesis (COL11A1), and TGF-\u03b2 signaling (INHBA).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The identification of candidate genes (C4) is based on differential expression analysis showing upregulation in thicker skin regions, which is appropriate. The functional descriptions (C38-C41) are supported by citations to prior literature. However, the causal relationship between these genes and ECM accumulation is not experimentally validated in this study\u2014only correlation is shown. The designation as \"candidate genes\" is appropriate but requires functional validation in future work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Comparison between CH and LW pig breeds revealed significant differences in dermal thickness (CH: 5288.5 \u03bcm vs LW: 2609.5 \u03bcm). Single-cell analysis of LW pig back skin yielded 18,441 cells organized into 18 clusters representing six cell types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The quantitative measurements of dermal thickness (C42) and cell numbers (C43) are explicitly stated with specific values. The cluster and cell type identification (C44) follows the same methodology as the CH pig analysis. The comparison provides a biological validation of the approach, though sample size (n=3 per breed) is limited for drawing broad conclusions about breed differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Cell-cell communication analysis identified 547 ligand-receptor pairs across 36 signaling pathways. COLLAGEN and LAMININ pathways showed the most abundant interactions, with FBs serving as the main source of ligands targeting SMCs and ESCs primarily through paracrine signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The quantitative results from CellChat analysis (C45, C46) are clearly stated. The identification of FBs as the main ligand source (C47) and paracrine mode of interaction (C48) are supported by network centrality analysis. However, the computational inference of cell-cell communication does not constitute experimental validation of actual signaling events, which is a limitation of this approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C5",
+      "C6"
+    ],
+    "result": "The study establishes CH pigs as a model for human skin research based on their superior skin thickness trait and the general similarity of pig physiology to humans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The superior skin thickness of CH pigs (C5) is demonstrated through quantitative measurements throughout the manuscript. The claim about pigs as models for human skin research (C6) is supported by citation and is a generally accepted principle in the field, though the manuscript does not provide new evidence for this relationship beyond the single-cell atlas comparison shown in supplementary figures.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "The manuscript cites prior work establishing that anatomical site-specific cellular patterns are determined embryonically and maintained in adulthood, with different dermal regions originating from distinct embryonic sources (dorsum from dermato-myotome, ventral from lateral plate mesoderm, face from neural crest).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C7-C10) are appropriately attributed to prior published work through citations (Rinn et al., 2006; Jinno et al., 2010; Ohtola et al., 2008; Wong et al., 2006). The authors correctly cite established knowledge to provide context for their study. No new experimental evidence is provided for these claims, which is appropriate as they serve as background information.",
+    "result_type": "MINOR"
+  }
+]

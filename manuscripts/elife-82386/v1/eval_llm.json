@@ -1,0 +1,353 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2"
+    ],
+    "result": "Participants comprehended Dutch stories (88% correct, significantly above chance) but not French stories (25% correct, at chance level), confirming the experimental manipulation of comprehension.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1 and C2 provide clear behavioral validation using appropriate statistical tests (t-tests with sufficient sample size, n=47 degrees of freedom). The results demonstrate successful experimental manipulation with Dutch comprehended and French not comprehended, as intended by the study design.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "Phoneme-level linguistic features (onset, surprisal, entropy) and word frequency incrementally improved neural reconstruction accuracy beyond acoustic features, with greater improvements for Dutch than French and left-hemisphere lateralization only in Dutch.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C7 are supported by appropriate linear mixed models with proper controls (random effects for subjects, stepwise model comparison). The significant language \u00d7 model interaction (C5) and hemisphere effects (C6-C7) are statistically robust. However, the interpretation that this reflects 'internally generated linguistic units' involves inference beyond the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Word entropy (sentence/discourse constraint) significantly interacted with language comprehension to modulate neural tracking of both phoneme features and acoustic edges, with main effects of language, word entropy, and hemisphere (for acoustic edges only).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C15 report consistent statistical findings from LMM analyses with appropriate model comparisons (likelihood ratio tests). The significant interactions between language and word entropy for both acoustic and phoneme features are well-documented with strong p-values and proper statistical methodology including mass-univariate testing with cluster correction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "TRF analysis revealed that high entropy words showed greater neural response weights than low entropy words across features, with acoustic edges showing stronger responses in French than Dutch, and phoneme features showing a dual-peak temporal pattern (80ms and 200-600ms) only in Dutch.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C20 are supported by TRF weight analyses with appropriate statistical testing (mass-univariate ANOVA with cluster-based permutation testing). The temporal dynamics and language differences are clearly documented in the figures. However, the interpretation of the dual-peak pattern as reflecting 'internal generation of morphemic units' (C87) is speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Time-resolved analysis showed that word entropy modulated phoneme feature encoding more strongly in the comprehended language, with different time windows for phoneme onset (200-750ms), surprisal (150-650ms LH, 0-600ms RH), and entropy (550-650ms LH).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C23 are supported by time-resolved model analysis using varying time windows. The methodology is appropriate for examining temporal dynamics. However, the specific time windows reported should be interpreted cautiously given multiple comparisons across time and the acknowledged correlation between phoneme features (C101-C104).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "Encoding models with phoneme-level features better reconstructed neural responses than acoustic-only models, with greater improvement in comprehended language, suggesting language comprehension transforms acoustic features into phoneme-level representations and functions as a neural filter.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the statistical findings (C57, C107) are supported, the mechanistic interpretations (C58, C59, C108, C109) involve substantial inference. The claim that comprehension 'transforms' acoustic features into phonemes and acts as a 'neural filter' is a theoretical interpretation not directly tested. Alternative explanations (e.g., additive processing, parallel pathways) are not ruled out.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C67",
+      "C76",
+      "C79",
+      "C80"
+    ],
+    "result": "Word entropy enhanced neural tracking of both acoustic and phonemic features when context was less constraining, with acoustic features more modulated in uncomprehended French and phonemic features more modulated in comprehended Dutch, suggesting context-dependent gain modulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C62, C67, C76, C79-C80 are supported by the word entropy analysis showing significant interactions. The pattern of results is consistent across multiple analyses. However, the interpretation as 'gain modulation' and 'downregulation/suppression' (C76, C80) involves theoretical inference beyond the correlational data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C68",
+      "C69",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Acoustic features were enhanced in uncomprehended French while phonemic features were enhanced in comprehended Dutch, with acoustic edge processing appearing suppressed during comprehension, suggesting language comprehension acts as a neural filter over sensory input.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The statistical findings (C65-C66, C81-C82) are supported by TRF weight comparisons. However, the interpretation that comprehension 'suppresses' acoustic processing (C68-C69) versus simply showing relatively weaker encoding is not definitively established. The 'neural filter' interpretation (C83) is theoretical and alternative explanations (resource allocation, attention) are not ruled out.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C70",
+      "C84",
+      "C105",
+      "C106"
+    ],
+    "result": "The pattern of results is consistent with acoustic edges being important for auditory processing but not functioning as computational landmarks during comprehension, supporting an account where language comprehension involves flexible modulation of acoustic and phonemic features as a neural filter transforming sensory input into linguistic structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C70, C84, C105-C106 represent high-level theoretical interpretations of the collective findings. While the data show differential encoding of acoustic vs. phonemic features as a function of comprehension and context, the specific theoretical claims about 'computational landmarks,' 'neural filtering,' and 'resource efficiency' involve substantial inference beyond the data and are not directly tested against alternative theoretical frameworks.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C71",
+      "C72"
+    ],
+    "result": "The findings contradict Daube et al. (2019) who showed phoneme-locked responses could be explained by acoustic features alone, possibly because information-theoretic metrics better capture transformation into linguistic units.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C71 accurately describes a contradiction with prior work, but the explanation offered in C72 is speculative. The difference could arise from multiple methodological factors (different features, different languages, different analysis approaches) not systematically tested. The claim requires more direct comparison to be definitively supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C78"
+    ],
+    "result": "The slight phoneme-level tracking in French likely reflects familiarity with phonotactic properties and possible learning during the experiment, with acoustic edge modulation potentially reflecting statistical chunking of frequent words rather than comprehension.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C73-C74, C78 are speculative interpretations of the French results. While C75 correctly cites evidence for rapid statistical learning, the specific mechanisms proposed (phonotactic familiarity, within-experiment learning, chunking) are not directly tested. The behavioral data (C2) shows chance performance, but this doesn't rule out partial processing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C98",
+      "C99",
+      "C112",
+      "C113"
+    ],
+    "result": "Phoneme features showed a dual-peak temporal pattern (80ms and 200-600ms) only in comprehended Dutch, potentially reflecting morphemic unit generation or lexical access, with sustained phoneme representations until lexical ambiguity resolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C86 is supported by TRF temporal analysis, but the mechanistic interpretations (C87, C98-C99, C113) are speculative. The dual-peak pattern could reflect multiple processes not distinguished by the current analysis. The link to 'lexical ambiguity resolution' (C98) cites relevant prior work but doesn't directly test this hypothesis in the current data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C92",
+      "C93",
+      "C110",
+      "C111"
+    ],
+    "result": "High word entropy (low constraint) increased TRF weights for both acoustic and phonemic features, suggesting upregulation of lower-level cues when higher-level cues are unreliable, with opposite patterns for comprehended vs. uncomprehended language.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88, C92-C93, C110-C111 are supported by TRF weight comparisons and reconstruction accuracy analyses. The pattern is consistent across analyses. However, the interpretation as 'upregulation' (C89) involves inference about neural mechanisms not directly measured. The data show correlation between entropy and neural response strength but don't establish causation or mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C94"
+    ],
+    "result": "The results support a cost minimization perspective rather than perception facilitation, contrasting with Molinaro et al. (2021) who only examined acoustic envelope tracking, and are consistent with Donhauser and Baillet (2020) showing phonemic feature enhancement when context is unreliable.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C90 makes a strong theoretical claim distinguishing 'cost minimization' from 'perception facilitation' that is not directly tested. Claims C91 and C94 accurately describe methodological differences and consistencies with prior work, but the theoretical interpretation requires more explicit testing of competing predictions from these frameworks.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Comprehension modulated acoustic edges for a shorter duration than phoneme features, with acoustic edge effects localized to auditory cortex bilaterally and phoneme feature effects in left frontal and right temporal cortex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C97 are supported by temporal analysis of interaction effects and source localization. The spatial and temporal dissociation between acoustic and phoneme feature modulation is clearly documented. However, source localization with MEG has inherent spatial uncertainty that should be acknowledged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Word entropy and frequency are correlated and interact in late word processing; linear regression cannot dissociate highly correlated features, leading to inconsistencies in individual phoneme feature TRFs across story parts, though averaged features were consistent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C104 appropriately acknowledge methodological limitations. The correlation between entropy and frequency (C56: R=0.34) is documented, and C101 correctly identifies a limitation of linear regression. The inconsistency of individual phoneme features (C102) but consistency of averaged features (C103-C104) is supported by supplementary figures and justifies the focus on averaged phoneme features.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C55",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "The study used appropriate methods including MEG recording from 24 native Dutch speakers with minimal French comprehension, source localization, extraction of acoustic and phoneme-level features, calculation of word entropy using GPT-2, and TRF modeling with proper preprocessing and analysis pipelines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C53, C55, C114-C118 describe methodological details that are appropriate and well-documented. Sample size (n=24) is reasonable for MEG studies. The use of source localization, proper filtering, artifact removal, and validated tools (mne-python, Eelbrain) is appropriate. Feature extraction methods are clearly described. However, some details are missing (e.g., random seeds for GPT-2, validation of forced alignment accuracy).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "Using a statistically familiar but uncomprehended language (French) as a control provides stronger contrast than an unfamiliar language, allowing separation of speech processing from language comprehension signals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C121 provide sound rationale for the experimental design. The logic is valid: comparing comprehended vs. familiar-but-uncomprehended language controls for acoustic/phonotactic familiarity while isolating comprehension effects. This is indeed stronger than comparing to a completely unfamiliar language. The behavioral data (C1-C2) confirms the manipulation worked as intended.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C75",
+      "C85"
+    ],
+    "result": "Prior research establishes that neural tracking aligns with acoustic and linguistic features, that adding linguistic predictors improves reconstruction accuracy, that context affects phoneme detection, and that theoretical models propose gain modulation and inhibition mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C34, C75, C85 accurately summarize relevant prior research with appropriate citations. These provide necessary background and theoretical context. The citations appear appropriate and the characterizations of prior work are fair. However, the authors should be cautious about potential misattribution or oversimplification of cited work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C56"
+    ],
+    "result": "Word entropy and word frequency were significantly correlated (R=0.34, p<0.00001) in both Dutch and French stories.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C56 reports a significant correlation with appropriate statistics. The correlation coefficient (R=0.34) indicates moderate correlation, which is acknowledged as a limitation. The study attempted to control for this by including word frequency in models, though complete dissociation is not possible with linear regression (C101).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C63",
+      "C64"
+    ],
+    "result": "The findings highlight flexible modulation of acoustic and phonemic features by sentence/discourse constraint and document neural transformation from speech perception to language comprehension, consistent with language processing as a neural filter from sensory to abstract representations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C63-C64 are high-level summary interpretations. While the data show modulation of feature encoding by comprehension and context, the specific theoretical framing as 'neural transformation' and 'neural filter' involves substantial interpretation. The data are correlational and don't establish causal mechanisms or rule out alternative theoretical frameworks.",
+    "result_type": "MAJOR"
+  }
+]

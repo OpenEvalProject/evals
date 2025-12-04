@@ -1,0 +1,279 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Digital insole vGRF measurements demonstrate face validity compared to force plate measurements, with similar curve shapes across platforms and disease-specific gait signatures observable in both technologies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C37 collectively demonstrate face validity through visual inspection showing similar vGRF curves across platforms (C34, C35), qualitatively different gait signatures in knee arthropathy (C36), and UMAP analysis showing separation by disease status rather than platform (C37). However, the reliance on visual inspection and qualitative assessment without quantitative validation metrics is a limitation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C38",
+      "C39"
+    ],
+    "result": "Linear modeling analysis shows that arthropathy state is the major contributor to vGRF signal variance, with age, sex, and body weight explaining smaller proportions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C39 are supported by linear modeling analysis (Figure 2\u2014figure supplement 2) showing disease state as the major variance contributor. However, the manuscript acknowledges potential confounding by age (C58), and the analysis does not fully account for interactions between variables or other potential confounders.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "An SVM model trained on force plate vGRF data achieves strong predictive performance for classifying knee injury versus controls in both force plate validation/test sets and independent digital insole data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C42 report strong classification metrics (auROC 0.92-0.95, auPR 0.94-0.96) across cross-validation, hold-out test, and independent digital insole datasets. The consistency across platforms and datasets supports generalizability, though the assumption that knee injury and knee OA have similar vGRF signatures (stated but not validated) is a limitation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Digital insole data enables high-accuracy classification of knee OA versus controls using multiple data types, with speed-independent gait characteristics achieving the highest performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C47 demonstrate excellent classification performance (auROC 0.98-1.00) using walking speed, vGRF, derived gait characteristics, and raw sensor data. The finding that speed-independent features achieve high accuracy (C45) is particularly important. However, the very high performance metrics (approaching 1.0) raise concerns about potential overfitting despite cross-validation, and the small sample size (N=22 controls, N=40 OA) limits generalizability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C48",
+      "C49"
+    ],
+    "result": "Classification accuracy for knee OA versus controls varies by sensor type, timepoint along stride, and foot laterality, with pressure/force sensors showing higher accuracy during stance phase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C49 are supported by sensor-specific analysis (Figure 4F) showing differential classification accuracy. This provides insight into which sensors and gait phases are most informative for disease classification. The analysis is descriptive and appropriately cautious in interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C50",
+      "C7",
+      "C8",
+      "C72"
+    ],
+    "result": "CNN latent representations of raw sensor time-series data best capture individual gait signatures, enabling accurate subject identification from single strides.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50, C7, C8, and C72 demonstrate that CNN models can identify individuals from gait patterns, with CNN latent representations outperforming other methods (Cohen's d effect size). The finding is supported by quantitative distance metrics and UMAP visualization. However, the clinical significance of individual identification capability is not fully established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C77"
+    ],
+    "result": "Training CNN models on multi-day data improves the ability to identify consistent gait features across time points compared to single-day training.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C51-C53 and C77 show that the consistency model produces lower distances for within-subject cross-day comparisons in both training (p<0.001) and testing (p=0.033) sets. However, the modest p-value in the testing set (0.033), use of nominal p-values without multiple testing correction, and the fact that same-day distances are still lower than different-day distances (C54) suggest limited improvement. Only two timepoints were used, limiting conclusions about temporal consistency.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C61",
+      "C64"
+    ],
+    "result": "Speed-independent gait characteristics play an important role in identifying knee arthropathy, indicating that disease-specific features beyond walking speed differentiate patients from controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61 and C64 are supported by the finding that excluding 14 speed-correlated features still yields high classification accuracy (auROC 0.996-0.997). This demonstrates that gait alterations in knee OA extend beyond simple speed changes. The analysis appropriately addresses the confounding effect of walking speed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C79",
+      "C80"
+    ],
+    "result": "Digital insoles demonstrate face validity for vGRF measurement and early clinical validity for providing clinically meaningful outcome measures in knee OA, with external validity demonstrated across platforms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C55, C56, C79, and C80 represent summary conclusions about validation. While face validity is supported by visual similarity (C34-C37), the claim of 'criterion validity' (C79) is overstated since force plate and insole data were not collected simultaneously (acknowledged in C89-C90). The term 'early clinical validity' (C56) is vague, and the clinical meaningfulness of the outcomes has not been established through correlation with clinical endpoints or treatment response.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "The ML model's performance across different devices, locations, and conditions suggests robustness and generalizability, with disease status representing the major signal in vGRF data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C59 are supported by consistent model performance across force plate and digital insole datasets and linear modeling showing disease as the major variance contributor. However, the interpretation acknowledges potential confounding by age and other variables, and the assumption that knee injury and knee OA have equivalent vGRF signatures is not validated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C89",
+      "C90"
+    ],
+    "result": "The study has several important limitations including small control sample size, demographic mismatch between cohorts, heterogeneous OA population, lack of familiarization period, and inability to perform full analytical validation due to non-simultaneous data collection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C86 and C89-C90 appropriately acknowledge study limitations. These are significant methodological constraints that affect the interpretation and generalizability of results. The authors appropriately recognize these limitations, though their impact on the main conclusions could be more thoroughly discussed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C60",
+      "C73",
+      "C76",
+      "C82",
+      "C92"
+    ],
+    "result": "Digital insoles may have future applications for screening knee arthropathy and other gait-affecting diseases, detecting individual gait pattern changes, and monitoring treatment responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNSUPPORTED",
+    "evaluation": "Claims C60, C73, C76, C82, and C92 are speculative statements about potential future applications. While the underlying data support the technical feasibility of gait measurement and classification, these claims extend beyond what the current study demonstrates. No data on screening performance, treatment response monitoring, or longitudinal tracking of disease progression are provided. These represent hypotheses for future work rather than supported conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "The study utilized three datasets: GaitRec force plate data (N=625 knee injury, N=211 controls), a pilot digital insole study (N=22 controls), and a clinical trial sub-study (N=44 knee OA patients).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C33 and C93-C96 accurately describe the datasets used in the study. The sample sizes, study designs, and inclusion/exclusion criteria are clearly stated. This is straightforward reporting of study methodology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Gait is impaired in knee arthropathy, and while gait analysis is clinically important, current practice relies on subjective visual observation due to barriers preventing objective assessment in clinical settings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4 and C9-C14 represent established background knowledge supported by appropriate citations. These claims provide context for the study's motivation and are not novel findings. The characterization of current clinical practice and its limitations is accurate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C23",
+      "C24"
+    ],
+    "result": "Wearable sensors, including digital insoles, offer an alternative approach to gait assessment with advantages of deployability in any setting, relatively low cost, and automated outcome generation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C18 and C23-C24 represent established knowledge about wearable sensors supported by appropriate citations. These claims provide background and motivation for the study. The characterization of wearable sensor advantages is accurate based on cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Clinical application of digital insoles for gait analysis in knee OA is limited by lack of analytical validation data, and digital gait data analysis faces challenges due to data complexity and lack of established analytical methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C29 represent established knowledge about limitations in the field, supported by appropriate citations. These claims provide justification for the study's analytical approach and are accurate characterizations of current challenges in digital gait analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Digital insoles have advantages over IMUs for capturing gait cycle and weight-bearing in OA patients for active mobility tasks, though IMUs may be preferable for free-living assessment due to durability concerns with insoles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C71 provide a balanced discussion of digital insole advantages and limitations compared to IMUs, supported by appropriate citations. The discussion appropriately acknowledges trade-offs between different wearable technologies for different use cases.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C91"
+    ],
+    "result": "ML approaches can help support and validate digital biomarkers and may yield digital endpoints of clinical utility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C91 is a reasonable conclusion based on the study's demonstration of ML models successfully classifying disease status across platforms. However, the claim about 'clinical utility' is somewhat overstated as the study does not demonstrate actual clinical utility (e.g., impact on clinical decision-making or patient outcomes), only technical performance.",
+    "result_type": "MAJOR"
+  }
+]

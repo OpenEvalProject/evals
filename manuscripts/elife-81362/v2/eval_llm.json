@@ -1,0 +1,412 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C20",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "McdB has a tripartite domain architecture consisting of an N-terminal intrinsically disordered region (IDR), a central coiled-coil (CC) domain, and a C-terminal domain (CTD). This architecture was determined through a combination of I-TASSER predictions, circular dichroism spectroscopy, and limited proteolysis with N-terminal sequencing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C28 collectively establish the domain architecture through multiple complementary approaches. CD spectroscopy (C22-C23) confirms \u03b1-helical structure, limited proteolysis (C24-C27) identifies protected regions, and I-TASSER predictions (C20) provide structural context. The convergence of these independent methods strongly supports the proposed tripartite architecture (C28).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Full-length McdB forms a hexamer as a trimer-of-dimers, where the CC domain mediates dimerization and the CTD enables trimerization of dimers. The IDR does not affect oligomerization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C35 are supported by SEC-MALS data in Figure 2 showing that CC+CTD forms hexamers, CC alone (with or without IDR) forms dimers, and the CTD is required for trimerization. The data directly demonstrate the oligomerization states and the domains responsible for each level of assembly.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C45",
+      "C46"
+    ],
+    "result": "McdB forms condensates via pH-dependent phase separation coupled to percolation (PSCP). Newly formed condensates are liquid-like and recover rapidly in FRAP experiments, but mature condensates (18 hr) show slower recovery and do not fuse. McdB forms mesoscale clusters at sub-saturation concentrations in a pH-dependent manner.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C46 are well-supported by FRAP data (C36-C39, Figure 3A), fusion experiments (C37, Figure 3B), saturation concentration measurements (C41, Figure 3C), and DLS data showing pH-dependent clustering (C42-C43, C45, Figure 3D). The time-dependent changes in viscoelasticity and sub-saturation clustering are consistent with PSCP mechanisms (C40, C46).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "The CC domain is necessary and sufficient for McdB condensate formation, though at higher concentrations than full-length protein. No single domain alone forms condensates under standard conditions, indicating all domains contribute to wild-type condensate formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C52 are supported by microscopy data in Figure 4A-B showing that truncations do not form condensates under standard conditions (C47), but CC-containing constructs form condensates with crowding agents (C50-C51). The requirement for all domains to achieve wild-type levels (C48) is demonstrated by the reduced condensate formation of all truncations compared to full-length protein.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "The IDR and CTD modulate McdB condensate properties in distinct ways. The IDR increases solvent interactions affecting phase separation but not percolation, while the CTD increases multivalent interactions supporting PSCP. IDR+CC condensates are more dynamic than full-length McdB, suggesting the CTD may interact with the IDR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C58 are supported by centrifugation data (C53, Figure 4C), FRAP experiments (C54, Figure 4D), and fusion kinetics (C55, Figure 4E). The distinct behaviors of IDR+CC versus full-length McdB provide evidence for different roles of each domain. However, the proposed IDR-CTD interaction (C58) is speculative and requires further validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Electrostatic interactions, particularly involving positively charged residues in the IDR, are critical for McdB condensate stability. Turbidity and condensate formation decrease with increasing KCl concentration and pH, and removing positive charge from the IDR (but not CTD) eliminates condensates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C63 are supported by phase diagram data (C59-C60, Figure 5\u2014supplement 1), centrifugation assays across salt and pH gradients (C62, Figures 5A-B), and alanine substitution experiments (C63, Figure 5\u2014supplement 2B). The convergent evidence from multiple approaches strongly supports the role of electrostatic interactions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Substituting basic residues to glutamines in the IDR solubilizes McdB condensates without affecting hexamerization or protein structure. Six glutamine substitutions (net charge -3) completely solubilize condensates, while mutations in the CTD destabilize the hexamer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C69 are supported by SEC-MALS data showing IDR mutations do not affect hexamerization (C65, Figure 5D) while CTD mutations destabilize it (C66-C67, Figure 5D and supplement 3), CD data confirming structure is maintained (C68, Figure 6\u2014supplement 1), and microscopy/gel data showing complete solubilization (C69, Figure 5E).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "McdB condensate formation is tunable through changes to the net charge of the IDR. Mutants with the same net charge but different substituted residues show similar condensate solubility, demonstrating that net charge rather than specific residues is critical.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C76 are supported by systematic mutagenesis showing graded effects of charge reduction (C70-C73, Figure 6B-C), complete solubilization at net charge -3 even with crowding agents (C74, Figure 6C), and similar behavior of mutants with equivalent net charge (C75, Figure 6C). This provides strong evidence for the net charge model (C76).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Adjustments to the net charge of the IDR affect McdB condensate solubility in vivo. McdB[wt] forms polar foci in E. coli that coexist with a dilute cytoplasmic phase, while McdB[-3] is considerably more soluble with fewer cells containing foci.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C81 are supported by fluorescence microscopy showing distinct localization patterns (C77-C79, Figures 7A-B), gel electrophoresis confirming similar protein levels (C80, Figure 7C), and quantification demonstrating significant differences in foci formation (C78-C79, Figure 7B). The in vivo data are consistent with in vitro observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "McdB[-3] causes carboxysome aggregation in S. elongatus, likely due to loss of McdA interaction rather than defects in condensate formation. The basic residues removed in McdB[-3] likely mediate McdA interaction based on known ParA/MinD-adaptor interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C85 are supported by microscopy showing aggregation (C83, Figure 8A), genetic epistasis experiments demonstrating no additional mispositioning in \u0394mcdA background (C85, Figure 8\u2014supplement 1), and literature on ParA/MinD interactions (C84). The conclusion that aggregation is due to loss of McdA interaction rather than condensate defects is well-reasoned.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Condensate formation is not required for McdB to associate with carboxysomes, but affects the distribution of McdB between carboxysome-bound and cytoplasmic fractions. McdB[-3] maintains strong colocalization with carboxysomes but shows reduced cytoplasmic phase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C90 are supported by Pearson correlation coefficients showing maintained colocalization (C86, Figure 8A), microscopy showing reduced cytoplasmic phase (C88, Figure 8A), and quantification of intensity ratios (C89, Figure 8B). The data clearly demonstrate that condensate formation affects McdB distribution but not carboxysome binding per se.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C91",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "McdB[-3] strains have carboxysomes with significantly lower Rubisco content as quantified by RbcS-mTQ intensity. This phenotype is independent of McdA and potentially linked to defects in McdB condensate formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C91-C95 are supported by quantification data (Figure 8C) showing reduced Rubisco content in McdB[-3] strains. However, the link to condensate formation (C96) is speculative since the mutations also affect McdA interaction. The authors acknowledge this limitation but cannot definitively separate the two effects. Additional experiments with mutations that specifically disrupt condensate formation without affecting McdA interaction would be needed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C19"
+    ],
+    "result": "McdB displayed robust phase separation across a range of buffer conditions, making crystallization trials unsuccessful.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C19 is supported by images in Figure 1\u2014figure supplement 1 showing condensate formation under various crystallization conditions. This is a straightforward observation explaining the failure of structural determination by crystallography.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C29",
+      "C30"
+    ],
+    "result": "CD spectra of McdB truncations showed that the N-terminus is disordered while the CC domain and CTD maintain \u03b1-helical signatures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C30 are directly supported by CD data in Figure 2B and Figure 2\u2014supplement 1A. The spectral signatures are consistent with the predicted domain architecture and provide experimental validation of the structural predictions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C64"
+    ],
+    "result": "Substituting charged residues for alanine in McdB caused protein aggregation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C64 is supported by microscopy data in Figure 5\u2014supplement 2B and is consistent with literature (Xue et al., 2019). This observation motivated the switch to glutamine substitutions for subsequent experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C14"
+    ],
+    "result": "Bacterial microcompartments (BMCs), particularly carboxysomes, encapsulate key enzymes to regulate their activities and increase the efficiency of CO2 fixation in autotrophic bacteria.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, and C14 represent established background knowledge supported by citations (Kerfeld et al., 2018; Yeates et al., 2008). These are well-accepted facts in the field and provide context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C15",
+      "C16"
+    ],
+    "result": "The McdAB system maintains carboxysome distribution through McdA forming dynamic gradients on the nucleoid in response to McdB, which associates with carboxysomes, resulting in equal spacing of carboxysomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, C15, and C16 describe prior work by the authors (MacCready et al., 2018; 2020; 2021) and are supported by citations. This background information establishes the context for investigating McdB structure and function.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C5",
+      "C17"
+    ],
+    "result": "McdA is a ParA/MinD ATPase, a protein family that spatially organizes diverse cellular structures including plasmids, chromosomes, the divisome, and flagella in bacteria.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5 and C17 represent established knowledge about ParA/MinD ATPases supported by citations (Lutkenhaus, 2012; Vecchiarelli et al., 2012). This provides important context for understanding McdA function.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C6",
+      "C7"
+    ],
+    "result": "McdB represents a completely unstudied class of proteins, and many adaptor proteins undergo phase separation with unclear functional roles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6 and C7 establish the novelty and motivation for the study. C6 is a statement about the state of knowledge at the time, and C7 represents general knowledge about adaptor proteins that motivates investigating McdB condensate formation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C18"
+    ],
+    "result": "McdB self-associates in vitro to form both a stable hexamer and liquid-like condensates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C18 describes prior work by the authors (MacCready et al., 2020; 2021) and is supported by citations. This establishes the foundation for the detailed characterization performed in the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C97",
+      "C98"
+    ],
+    "result": "Cyanobacterial McdBs are highly dissimilar to other characterized proteins at the sequence level, potentially related to high disorder content, and CC domains are conserved across all cyanobacterial McdB homologs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97 and C98 are supported by citations to prior bioinformatic analyses (MacCready et al., 2020; Echave et al., 2016). These provide context for the difficulty in obtaining structural predictions and the focus on CC domains.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "McdAB systems exist for several other BMC types, and McdB proteins possess features enabling condensate formation including intrinsic disorder, low hydrophobicity, biased amino acid compositions, multivalency, and polyampholytic properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C101 are supported by citations to prior work (MacCready et al., 2020; 2021). These establish the broader significance of understanding McdB and provide context for the experimental design.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C102"
+    ],
+    "result": "For Se7942 McdB, the N-terminal IDR has a pI of 10.8 and the CTD has a pI of 6.8.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C102 represents a straightforward calculation from the amino acid sequence. The values are verifiable and support the hypothesis of electrostatic interactions between termini.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C103"
+    ],
+    "result": "A structure of the CC domain of a plasmid-encoded McdB-like protein from Cyanothece sp. PCC 7424 displayed an antiparallel association to form a dimer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C103 is supported by citation to Schumacher et al., 2019. This provides structural context for understanding McdB dimerization, though it is from a different organism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C104",
+      "C105"
+    ],
+    "result": "The carboxysome lumen maintains a lower pH (~7.5) than the cytoplasm (~8.5) via Rubisco proton production, and pH is a major regulator of McdB condensate solubility in vitro.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C104 is supported by citations (Mangan et al., 2016; Long et al., 2021), and C105 is supported by data in Figures 3 and 5. Together they suggest a potential physiological role for pH-dependent McdB condensate regulation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "McdB strongly associates with carboxysome shell proteins and CcmM via bacterial two-hybrid assays, and carboxysome biogenesis begins with Rubisco forming a condensate with CcmM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106 and C108 are supported by citations to prior work (MacCready et al., 2018) and unpublished data. C107 is supported by citation to Wang et al., 2019. These provide context for potential mechanisms of McdB-carboxysome interaction.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C109",
+      "C110"
+    ],
+    "result": "Other adaptor proteins for ParA/MinD ATPases, including ParB and PomY, form condensates with proposed functional roles in cargo positioning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109 and C110 are supported by citations to recent literature (Babl et al., 2022; Guilhas et al., 2020; Ramm et al., 2022). This establishes that condensate formation by adaptor proteins may be a general mechanism in bacterial spatial organization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C92"
+    ],
+    "result": "Deletion of McdA results in increased RbcS-mTQ foci intensity due to carboxysome aggregation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C92 is supported by citation to prior work (Rillema et al., 2021). This provides important context for interpreting the unexpected decrease in Rubisco content observed with McdB[-3].",
+    "result_type": "MINOR"
+  }
+]

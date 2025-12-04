@@ -1,0 +1,173 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "FSHD is a prevalent myopathy characterized by progressive muscle degeneration, with two genetic subtypes (FSHD1 and FSHD2) unified by D4Z4 derepression leading to DUX4 misexpression. Despite DUX4 being the therapeutic target, it is extremely difficult to detect in patient muscle, with only 0.1-5% of myonuclei expressing DUX4, and target gene expression being a poor biomarker except in inflammatory contexts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C24 provide comprehensive background on FSHD drawn from established literature with appropriate citations. These claims describe disease prevalence, clinical features, genetic mechanisms, and the challenge of detecting DUX4 expression. All claims are supported by peer-reviewed citations and represent accepted knowledge in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "DUX4 expression follows a rare burst-like pattern in FSHD myoblasts, with DUX4-expressing cells having shortened lifespans. Mouse models recapitulating burst-like DUX4 expression show similarities to FSHD muscle, and DUX4 displays gradients across myonuclei in myotubes, suggesting potential syncytial diffusion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C28 establish the biological basis for the modeling approach, describing DUX4's burst-like expression pattern and potential diffusion. All claims are supported by appropriate citations to experimental studies (Rickard et al., 2015; Bosnakovski et al., 2017, 2020; Tassin et al., 2013), providing the rationale for the stochastic and compartmental modeling approaches used in this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C30",
+      "C31"
+    ],
+    "result": "The authors experimentally determined that DUX4 mRNA has a half-life of approximately 2.8 hours (degradation rate d\u2080=0.246/hr) using iDUX4 myoblasts, and found DUX4 mRNA in 0.53% of FSHD myocytes from scRNAseq data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C31 report key experimental parameter estimates. C30 is supported by RT-qPCR data showing exponential decay (p=4.1\u00d710\u207b\u2074, Figure 2B) with appropriate methodology. C31 reports analysis of published scRNAseq data (van den Heuvel et al., 2019) with clear numerical results. Both claims provide essential parameters for the mathematical model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "The compartment model is based on the premise that FSHD myocytes can express DUX4 and target genes, that target gene activation is necessary for cell death, and assumes that once activated, DUX4 target gene expression and DUX4 protein are stable and irreversible.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C56 establish biological foundations supported by citations (Knopp et al., 2016; Rickard et al., 2015). Claims C59-C61 explicitly state model assumptions that are clearly documented and reasonable for a simplified model. The assumptions are acknowledged as limitations in the Discussion, demonstrating appropriate scientific transparency about model constraints.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C66"
+    ],
+    "result": "The compartment model simulation predicts that DUX4 drives significant cell death (26.3% by day 10) despite DUX4-positive cells never exceeding 0.8% and target-positive cells never exceeding 2.9% of the live population, providing a mechanism for how rare DUX4 expression drives FSHD pathology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C43 report specific quantitative predictions from model simulations using experimentally-derived parameters. C66 synthesizes these findings into a mechanistic explanation. The model successfully replicates observed proportions from scRNAseq data (Chi-squared p=0.99, Figure 4A) and provides internally consistent predictions. The logic connecting rare expression to significant pathology through the compartment structure is sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C49"
+    ],
+    "result": "Comparing unfused FSHD myocytes (scRNAseq) to fused myonuclei (snRNAseq) reveals significant differences in cell state distributions (p<2.2\u00d710\u207b\u00b9\u2076), with fused cells showing more DUX4 target-positive states. These differences can be explained by adding a diffusion term for DUX4 protein to the model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C46 report statistically significant differences between datasets with appropriate statistical testing (Chi-squared test, Figure 5A). C49 presents the key inference that diffusion explains these differences. The genetic algorithm fitting approach is methodologically sound, and the syncytial model with diffusion successfully replicates the snRNAseq distribution (Chi-squared p=0.99, Figure 5E), supporting the diffusion hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C50",
+      "C51"
+    ],
+    "result": "The syncytial compartment model with DUX4 diffusion predicts accelerated death (97% by day 10) compared to the unfused model, with DUX4 target-expressing cells transiently reaching up to 70% of living nuclei at 73 hours, though averaging only 5.6%.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C51 report predictions from the syncytial model incorporating the diffusion parameter estimated via genetic algorithm. The predictions are internally consistent with the model structure and parameters. The dramatic increase in death rate and transient spike in target gene expression are logical consequences of allowing DUX4 protein to spread between nuclei, though these remain model predictions requiring experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C53",
+      "C54"
+    ],
+    "result": "A cellular automaton model restricting DUX4 diffusion to neighboring nuclei on a spatially realistic myofiber surface produces cell state distributions statistically indistinguishable from snRNAseq data (p=0.98), confirming that local diffusion alone can explain differences between fused and unfused cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C54 describe a more sophisticated spatial model that addresses a limitation of the compartment model (unrestricted diffusion). The genetic algorithm approach with 100 independent runs and clustering analysis (Figure 6D) is rigorous. The model successfully replicates experimental data (Chi-squared p=0.98, Figure 6E) while incorporating realistic spatial constraints, strengthening the diffusion hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C63"
+    ],
+    "result": "DUX4 acts as a pioneer factor, increasing target gene promoter activation through C-terminal recruitment of p300 to drive H3K27 acetylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C63 cites established mechanistic knowledge (Choi et al., 2016) about how DUX4 activates target genes. This provides biological context for the model's treatment of target gene activation and helps explain the observed parameter changes in the promoter-switching model analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C67",
+      "C68"
+    ],
+    "result": "The model predicts that DUX4 target gene expression does not typically increase over time, supporting findings that target expression is not a validated progression marker. Low baseline levels may explain why the losmapimod trial failed to detect changes in target gene expression despite functional improvements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "C67 makes a prediction supported by model simulations and cites concordant literature (Banerji, 2020; Wong et al., 2020). However, C68 is speculative about the losmapimod trial, offering a hypothesis rather than demonstrated evidence. While the model provides a plausible explanation for the trial outcome (C23-C24), this remains an inference requiring direct experimental validation of the proposed mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C69"
+    ],
+    "result": "The authors present their model as an open-source in silico platform packaged into three graphical user interface tools for rapidly and cost-effectively pre-screening anti-DUX4 therapies for FSHD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C69 describes the practical application and dissemination of the modeling work. The authors provide web-accessible tools with clear URLs and describe their functionality in the Methods. This represents appropriate translation of theoretical work into a usable resource for the research community, though the actual utility will depend on future validation and adoption.",
+    "result_type": "MAJOR"
+  }
+]

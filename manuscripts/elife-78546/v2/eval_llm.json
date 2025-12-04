@@ -1,0 +1,225 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "result": "CRISPR screens in mouse and human ESCs identified heme biosynthesis pathway enzymes as positive hits for na\u00efve-to-primed transition, with 7 of 8 enzymes in mESCs and 4 cytosolic enzymes in hESCs highlighted, despite no change in gene expression during the transition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4 are well-supported by CRISPR screen data (C1, C2), gene expression analysis (C3), and GO enrichment analysis (C4). The functional screen results are validated through multiple independent datasets and analytical approaches, providing strong convergent evidence for the importance of heme biosynthesis in pluripotency transitions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "Inhibition of heme biosynthesis with succinylacetone (SA) impairs the na\u00efve-to-primed transition in both mouse and human ESCs, as evidenced by reduced primed marker expression and retained na\u00efve marker expression, with hemin supplementation rescuing this phenotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C9 are strongly supported by multiple complementary experimental approaches including RT-qPCR (C5, C6), western blot (C7), immunofluorescence (C7), genetic knockout validation (C8), and cross-species validation in hESCs (C9). The rescue experiments with hemin provide critical specificity controls demonstrating the effect is heme-dependent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C78"
+    ],
+    "result": "SA treatment activates the integrated stress response (ISR) as shown by increased EIF2\u03b1 phosphorylation and reduced protein translation, but ISR activation alone does not prevent na\u00efve state exit, and BACH1 nuclear accumulation is not observed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C11, and C78 are supported by western blot and SunSET assay data. The negative control experiment with BTdCPU (C11) effectively demonstrates that ISR activation is not the mechanism underlying the transition defect, strengthening the overall mechanistic interpretation. The absence of BACH1 accumulation (C78) rules out a canonical heme-sensing pathway.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C79"
+    ],
+    "result": "Heme synthesis inhibition prevents activation of MAPK-ERK1/2 and TGF\u03b2-SMAD signaling pathways during the na\u00efve-to-primed transition, with chemical inhibition of SMAD mimicking SA effects, and increased ligand doses failing to rescue the phenotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C16 and C79 are well-supported by GSEA analysis, western blots, immunofluorescence, and RT-qPCR data. The time-course experiments (C79) establish temporal correlation between pathway inhibition and gene expression defects. The chemical inhibitor experiments (C15) and ligand supplementation experiments (C16) provide strong mechanistic validation, though the molecular link between heme and these pathways remains unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C73"
+    ],
+    "result": "Heme synthesis inhibition leads to succinate accumulation through reduced SDH abundance, and blocking succinate export from mitochondria with butylmalonate rescues the transition defect, implicating protein succinylation as the causal mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C22 and C73 form a coherent mechanistic model supported by literature (C17), western blot data for SDH (C19), rescue experiments with butylmalonate (C20), flow cytometry for succinylation (C21), and Sirt7 inhibition experiments (C22). The convergence of multiple independent experimental approaches (metabolite transport inhibition, desuccinylase inhibition) strongly supports the proposed mechanism, though C18 remains a hypothesis and C73 is an inference.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "SA treatment of na\u00efve mESCs induces a 2C-like cell state, as demonstrated by upregulation of 2C-specific genes, increased ZSCAN4+ and MUERVL+ cell populations, with similar effects observed in ALAD KO cells and hESCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C27 are strongly supported by PCA analysis (C23), RNAseq data (C24), RT-qPCR (C26), immunofluorescence quantification (C25), and cross-validation in genetic knockout (C26) and human cells (C27). The multiple orthogonal approaches and cross-species validation provide robust evidence for this unexpected phenotype.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C80"
+    ],
+    "result": "The 2C-like phenotype induced by heme synthesis inhibition is heme-independent but succinate-dependent, as hemin supplementation does not rescue the phenotype, butylmalonate blocks it, and endogenous 2CLCs show elevated protein succinylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C32 and C80 are well-supported by RT-qPCR, immunofluorescence, and flow cytometry data. The differential rescue by hemin (effective for na\u00efve-to-primed transition but not 2CLC induction) is a critical observation distinguishing two separate mechanisms. The observation of elevated succinylation in endogenous 2CLCs (C32) provides important correlative evidence linking succinate metabolism to the 2C state.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Atpenin A5 (AA5), an SDH inhibitor, phenocopies SA effects by inducing protein succinylation, increasing ZSCAN4+ cells, and upregulating 2C markers, with butylmalonate blocking these effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C36 are strongly supported by immunofluorescence, flow cytometry, and RT-qPCR data. The use of an independent method (SDH inhibition) to induce succinate accumulation provides critical validation that succinate, rather than other effects of heme synthesis inhibition, drives the 2CLC phenotype. The butylmalonate rescue (C36) further confirms the mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C40",
+      "C74"
+    ],
+    "result": "Exogenous succinate supplementation increases 2CLC markers, and inhibition of succinate export through MCT1/4 and SUCNR1 receptor reduces AA5-induced 2CLC marker expression, demonstrating that succinate acts as a paracrine/autocrine signal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37, C38, C40, and C74 are supported by RT-qPCR data with both membrane-permeable and impermeable succinate forms (C37) and pharmacological inhibition of succinate transporters and receptor (C38). The convergence of gain-of-function (exogenous succinate) and loss-of-function (transporter/receptor inhibition) experiments provides strong evidence for the paracrine/autocrine signaling model, though C40 and C74 involve some inference.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C39"
+    ],
+    "result": "The 2CLC induction by AA5 involves both RAR and RXR receptors, as inhibition of both receptors rescues the effect, differing from retinoic acid which acts only through RAR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C39 is supported by RT-qPCR data showing rescue with both RAR and RXR inhibitors. This provides important mechanistic insight distinguishing the succinate-mediated pathway from the previously described retinoic acid pathway, though the molecular details of how succinate activates these receptors remain unclear.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "SA and AA5 treatment increases histone H3 trimethylation (H3K4me3, H3K9me3, H3K27me3) and global 5mC levels, but chemical inhibition of histone demethylases or TET enzymes does not induce 2CLC features, and HIF1\u03b1 is not stabilized.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C52 are supported by immunofluorescence data. The negative results with HDM and TET inhibitors (C52) are important for ruling out epigenetic mechanisms as the primary driver of 2CLC induction, despite the observed changes in methylation patterns. The absence of HIF1\u03b1 stabilization (C49) rules out PHD inhibition. However, the interpretation that epigenetic changes are not causal requires caution, as the chemical inhibitors may not fully recapitulate the effects of succinate accumulation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "The manuscript provides extensive background context from prior literature regarding embryonic lethality of heme synthesis enzyme knockouts, requirements for MAPK and TGF\u03b2-SMAD pathways in pluripotency transitions, characteristics of 2CLCs, roles of metabolites and epigenetic modifications in pluripotency, and potential mechanistic explanations for the observed phenomena.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C69 are primarily literature citations and established knowledge that provide context for the experimental findings. These are appropriately cited and accurately represent prior work. C68 offers a reasonable speculation about culture condition differences. These contextual claims support the interpretation of the experimental results but do not constitute primary findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "The study concludes that heme and succinate play critical roles in pluripotency regulation through distinct mechanisms: heme is required for na\u00efve-to-primed transition via MAPK/TGF\u03b2-SMAD pathway activation, while succinate promotes 2CLC acquisition through protein succinylation and paracrine signaling, unveiling a new metabolic control mechanism of pluripotency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70, C71, C75, C76, and C77 represent summary conclusions that integrate the experimental findings. These are well-supported by the collective evidence from the study, though C72 appropriately acknowledges that the molecular link between heme and signaling pathways remains unknown. The dual role of the heme synthesis pathway (heme-dependent and succinate-dependent effects) is a novel and significant finding.",
+    "result_type": "MAJOR"
+  }
+]

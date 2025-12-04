@@ -1,0 +1,311 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "The authors developed a pYtag biosensor system by appending CD3 ITAMs to EGFR C-terminus, which recruits fluorescent ZtSH2 upon receptor activation. This system shows rapid, reversible, and specific response to EGFR activation in NIH3T3 cells, with all six tested ITAMs functioning as biosensors, though CD3\u03b5 was selected for subsequent work due to its reported selectivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C8 collectively demonstrate the design principle and validation of the pYtag system. The data in Figure 1C-E show rapid, reversible ZtSH2 clearance upon EGF/gefitinib treatment (C4-C5), specificity for ITAM-tagged receptors (C6), and functionality of all six ITAMs (C7). The underlying biochemical rationale (C1-C2, C100-C102) is well-established in the literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C9",
+      "C10"
+    ],
+    "result": "The pYtag system demonstrates superior specificity compared to Grb2-based biosensors. While Grb2 localizes to membranes in both ITAM-tagged and ITAM-less EGFR cells, ZtSH2 only shows membrane recruitment in ITAM-tagged contexts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C10 are directly supported by Figure 1\u2014figure supplement 1B-E, which shows differential localization patterns between Grb2 and ZtSH2 reporters. This demonstrates a key advantage of the pYtag approach over existing methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C11",
+      "C12"
+    ],
+    "result": "The pYtag system does not interfere with downstream EGFR signaling. EGFR, Erk, and Akt phosphorylation levels are similar in cells expressing EGFR-FusionRed or EGFR pYtag after EGF stimulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C12 are supported by immunoblot data in Figure 1F-G showing comparable phosphorylation of EGFR, Erk, and Akt between control and pYtag-expressing cells. This validates that the biosensor does not perturb the signaling pathway being measured.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "The EGFR pYtag functions independently of Src family kinases (SFKs) and acts as a direct biosensor of EGFR activity. SYF cells lacking Src, Yes, and Fyn exhibit strong ZtSH2 clearance comparable to NIH3T3 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C15 are supported by data in Figure 1I-J showing pYtag function in SYF cells lacking SFKs. Combined with rapid kinetics data (Figure 1C-E), this suggests direct EGFR-mediated ITAM phosphorylation rather than indirect SFK-mediated phosphorylation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "The EGFR:ZtSH2 expression ratio determines the dynamic range of the pYtag biosensor, with higher ratios producing greater ZtSH2 clearance. However, response kinetics remain consistent across expression levels. A mathematical model predicts linear variation in ZtSH2 translocation with EGFR:ZtSH2 ratio until saturation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C22 are well-supported by systematic analysis in Figure 1\u2014figure supplements 2-4 showing correlation between expression ratio and response amplitude, but consistent kinetics when normalized. The mathematical model (C19) provides mechanistic insight. This characterization is important for proper interpretation of pYtag measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "pYtags reveal biphasic EGFR activation kinetics in individual cells, with rapid clearance within ~40 seconds followed by gradual increase over ~20 minutes. This represents the first single-cell observation of biphasic EGFR responses previously seen only at population level.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C26 are supported by high-resolution timelapse data in Figure 2A-B. The biphasic kinetics are clearly demonstrated, and citations (C25) confirm this was previously observed only at population level, making the single-cell observation novel (C26).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "EGFR-overexpressing NIH3T3 cells retain high membrane-associated EGFR for at least 60 minutes after EGF stimulation, independent of pYtag components. However, pYtag-expressing cells also show EGFR/ZtSH2-positive puncta that colocalize with early endosome marker EEA1, indicating signaling from endosomal compartments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C34 are supported by data in Figure 2\u2014figure supplement 1 showing sustained membrane EGFR and EEA1 colocalization. The gefitinib-reversibility (C31) and consistency with prior literature (C33) strengthen the interpretation of endosomal signaling. This characterizes an important aspect of the system's behavior in overexpressing cells.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "pYtags reveal spatiotemporal dynamics of EGFR signaling in MCF10A multicellular clusters, showing a radially directed wave of activation from periphery to interior with a 2-4 minute delay. ZtSH2 enrichment occurs first at media-exposed membranes before lateral membranes, and Erk responses trail EGFR by ~4 minutes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C42 are well-supported by data in Figure 2E-J showing spatial progression of signaling in tissue-like structures. The quantification (C39-C40) and consistency with prior work on Ras-to-Erk delay (C40) strengthen the findings. This demonstrates the utility of pYtags for multicellular contexts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Different EGFR ligands produce distinct signaling dynamics. EGF shows dose-dependent transition from gradual to biphasic responses, while low-affinity ligands EREG and EPGN produce rapid rise with transient peak and plateau. Notably, EREG/EPGN concentration affects amplitude but not kinetics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C50 are supported by comprehensive dose-response data in Figure 3A and Figure 3\u2014figure supplement 1. The ligand-specific kinetic differences are clearly demonstrated. Prior literature (C43-C44) provides context for the biological significance of these differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "A mathematical model of EGFR pYtag based on mass-action kinetics suggests that receptor dimerization affinity, rather than ligand binding affinity, is the key parameter governing activation kinetics. Decreasing dimerization affinity (increasing \u03b3) reproduces EREG/EPGN-like features, while changing binding affinity (\u03b2) does not alter kinetics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C56 are supported by modeling results in Figure 3B-C and Figure 3\u2014figure supplement 2. The model is appropriately simplified (C53) and parameterized using literature values. The differential effects of \u03b3 vs \u03b2 (C54-C55) provide mechanistic insight, though experimental validation is needed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Experimental validation using GBM-associated EGFR mutants (R84K, A265V) with increased dimerization affinity confirms model predictions. Mutants exhibit stronger, more gradual signaling responses to EREG compared to wild-type EGFR, supporting the role of dimerization affinity in governing receptor activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C60 are strongly supported by model predictions (Figure 3D) matching experimental data (Figure 3E). The use of well-characterized mutants from literature (C57) provides an elegant test of the model's predictions, validating the mechanistic hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "pYtags are modular and can monitor activity of multiple RTKs including the challenging case of ligandless ErbB2. ErbB2 pYtag response requires both ITAMs on ErbB2 and co-expression of EGFR, demonstrating specificity for the tagged receptor even in heterodimeric complexes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C65 are supported by data in Figure 4 and Figure 4\u2014figure supplement 1 showing pYtag function across FGFR1, PDGFR\u03b2, VEGFR3, and ErbB2. The ErbB2 case (C61-C64) is particularly important as it demonstrates specificity in a context where general biosensors fail (C62).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "A second orthogonal pYtag system (VISH2/SLP76) was developed and validated. Cells expressing SLP76-labeled EGFR show VISH2 clearance without ZtSH2 crosstalk, while CD3\u03b5-labeled EGFR shows ZtSH2 clearance without VISH2 crosstalk, demonstrating orthogonality.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C71 are supported by data in Figure 5A-D showing minimal crosstalk between the two pYtag systems. The design rationale based on immune signaling (C66-C67) and experimental validation (C69-C70) demonstrate successful engineering of orthogonal biosensors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Multiplexed pYtags reveal distinct activation phases for EGFR and ErbB2 in the same cell. EGFR activates rapidly (<30 seconds) while ErbB2 shows gradual activation (~3 minutes). When normalized, dynamics are consistent across different pYtag variants and cell lines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C77 are supported by data in Figure 5E-H and Figure 5\u2014figure supplement 1. The differential kinetics (C73-C74) are clearly demonstrated, and the consistency across conditions (C75-C76) validates that pYtags faithfully report RTK activity. This reveals new biology about ErbB heterodimer activation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "CRISPR/Cas9-based genome editing successfully inserted CD3\u03b5-mNeonGreen at the endogenous EGFR locus in HEK293T cells. Knock-in cells exhibit rapid ZtSH2 clearance upon EGF treatment, demonstrating that pYtags can monitor endogenously expressed RTKs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C83 are supported by comprehensive validation including PCR (Figure 6B), immunoblotting (Figure 6C), and functional imaging (Figure 6D-F). This addresses a key limitation of overexpression approaches and demonstrates the broader applicability of pYtags.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Endogenous EGFR-pYtag knock-in cells show rapid EGFR internalization (near-complete loss from membrane within 8 minutes), contrasting with sustained membrane localization in overexpressing cells (>10 minutes). This difference is consistent with saturation of EGFR endocytosis at high expression levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C87 are supported by comparison of knock-in (Figure 6D) and overexpressing cells (Figure 1\u2014figure supplement 3A-B). The interpretation is consistent with prior literature on endocytosis saturation (C87). This highlights an important difference between endogenous and overexpressed receptors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "pYtags offer several advantages as RTK biosensors: sub-minute temporal precision, high reproducibility across experiments and cell lines, modularity across multiple RTKs, specificity for tagged receptors, and ability to multiplex with fewer fluorescent proteins than FRET-based approaches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C94 summarize key advantages demonstrated throughout the manuscript. Each claim is supported by specific data: temporal precision (Figures 2-3), reproducibility (Figure 5\u2014figure supplement 1), modularity (Figure 4), specificity (Figure 1), and multiplexing (Figure 5).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Despite advantages, pYtags have limitations: they require ITAM appendage to RTKs (necessitating ectopic expression or genome editing) and are currently restricted to nonimmune cells that don't endogenously express the immune signaling proteins used in the system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C98 accurately describe limitations of the approach. C95-C96 provide context from literature, while C97-C98 state explicit constraints. These are reasonable limitations given the design principle, and the authors acknowledge them appropriately.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C99"
+    ],
+    "result": "NIH3T3 cells express very low levels of endogenous EGFR, making them suitable for ectopic expression studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C99 is supported by multiple literature citations and justifies the choice of NIH3T3 cells as a model system. This is an important methodological consideration.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,375 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C53",
+      "C54",
+      "C134",
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "ZIKV M protein forms oligomeric membrane-permeabilizing channels in vitro. M peptides reconstituted in membrane-mimetic detergent (DH6PC) migrated as higher-order structures (potential hexamers or heptamers) on native PAGE and adopted channel-like architectures confirmed by TEM. These complexes exhibited dose-dependent dye release from liposomes at sub-micromolar concentrations, consistent with channel-forming activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C53, C54, C134-C137 provide converging evidence from multiple complementary techniques (native PAGE, TEM, liposome dye release assays) demonstrating that M peptides form oligomeric channel structures with membrane-permeabilizing activity. The dose-dependent response and structural characterization provide strong support for this result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C55",
+      "C56",
+      "C138",
+      "C139"
+    ],
+    "result": "M channel activity increases at acidic pH, mimicking conditions found in endocytic vesicles. Mildly acidic pH conditions increased M-mediated carboxyfluorescein release from liposomes, consistent with potential activation during virus entry in acidifying endosomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C55, C56, C138, C139 demonstrate pH-dependent enhancement of M channel activity through liposome dye release assays (Figure 2B). The acidic pH conditions tested (pH 6.2, 6.7, 7.4) are physiologically relevant to endocytic vesicles, supporting the functional interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C57",
+      "C138"
+    ],
+    "result": "M channel activity is sensitive to rimantadine, a prototypic channel blocker. Rimantadine (1 \u03bcM) caused significant reduction in M-mediated dye release, supporting the presence of a druggable binding site within a folded M channel complex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C57, C138 demonstrate rimantadine sensitivity through liposome dye release assays (Figure 2C). The inhibition by rimantadine supports that dye release is mediated by structured protein complexes rather than non-specific membrane disruption, providing evidence for a specific drug-binding site.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C140"
+    ],
+    "result": "Rimantadine blocks an early stage of ZIKV infection in cell culture. Rimantadine exerted dose-dependent reduction in ZIKV infection of Vero cells (statistically significant at \u226510 \u03bcM), with maximal effect when added prior to and during infection, without affecting cell viability or endocytosis. This timing suggests rimantadine affects virus entry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C59-C63, C140 provide comprehensive evidence from multiple assays (infected cell counts, viral protein production, timing experiments) demonstrating rimantadine's antiviral effect at the entry stage. The lack of cytotoxicity and endocytosis effects (Figure 3\u2014figure supplement 1) supports specificity. The EC50 of 10-20 \u03bcM is consistent with other viroporin inhibitors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C110",
+      "C111"
+    ],
+    "result": "Molecular dynamics simulations support that M channels comprise hexameric arrangements of dual-transmembrane domain protomers. The cryo-EM-derived double-TMD conformation remained stable during simulations, while single-TMD conformations were unstable and folded back toward the membrane. Compact hexameric models with helix 3 lining the lumen displayed consistent channel-like characteristics and spontaneous closure, with helix 1 contributing significantly to stability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C6, C68-C75, C110, C111 present extensive MD simulation data (Figures 4-5) comparing multiple oligomeric states and topologies. The simulations used appropriate methods (coarse-grained and atomistic, multiple repeats) and demonstrate clear differences in stability between conformations. The compact hexamer model shows physiologically reasonable behavior (spontaneous closure, stable structure).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "His28 is not responsible for pH-dependent activation of M channels. Protonation of His28 in simulations had little effect on channel opening, and His28Ala mutant peptides responded to acidic pH identically to wild-type in vitro, suggesting other ionizable residues mediate acid-enhanced activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C78 provide converging evidence from both computational (MD simulations with His28 protonation) and experimental (His28Ala mutant dye release assays, Figure 5\u2014figure supplement 4) approaches. The negative result is well-controlled and leads to the reasonable inference that other residues are responsible for pH sensing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C7",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "The compact M hexamer model contains a predicted lumenal rimantadine-binding site (L1) with favorable druggability. In silico docking revealed rimantadine binds to the L1 site near the channel closure region, making hydrophobic contacts with Val61, Ile62, Leu64, Val65, and Leu68. This site had the highest druggability score and also interacted with other adamantyl-containing molecules including amantadine.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C79-C83 present computational docking studies (Figure 6A, Figure 6\u2014figure supplement 1) identifying the L1 binding site. The site's location near the channel closure region is mechanistically reasonable, and the druggability assessment using SiteMap provides quantitative support. The binding mode is consistent with rimantadine's known properties.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C8",
+      "C84"
+    ],
+    "result": "The M channel model contains a second druggable target region (P1) on the membrane-exposed periphery. This peripheral site was identified through structural inspection and represents an alternative binding location for small molecules.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C84 identify the P1 site through structural analysis (Figure 6A). While this site has lower computational druggability scores due to solvent exposure, the authors appropriately note that similar peripheral sites have been successfully targeted in other viroporins (HCV p7), providing precedent for its validity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C9",
+      "C87",
+      "C88"
+    ],
+    "result": "In silico screening of 1,280 FDA-approved and biologically active compounds enriched for molecules predicted to bind M channel sites. Screening identified 24 hits targeting the L1 lumenal site and 15 hits targeting the P1 peripheral site, defined as compounds causing \u226545-55% reduction in M activity at 1 \u03bcM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C87, C88 describe the screening methodology and hit identification (Tables 1-2, Figure 6\u2014figure supplement 2). The screening used appropriate computational methods (Glide docking) and validation criteria (50\u00b15% activity reduction). The enrichment from 1,280 compounds to 39 total hits represents reasonable selectivity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Compounds identified by in silico screening displayed superior potency compared to rimantadine in both in vitro and cell culture assays. Six selected compounds showed statistically significant antiviral effects, with GNF 5837 (L1-targeted) active at 80 nM and AA 29504 (P1-targeted) active at 10 \u03bcM in cell culture. In vitro EC50 values were sub-micromolar for GNF 5837 and ~10 \u03bcM for AA 29504.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C11, C89-C94 demonstrate improved potency through multiple assays (plaque reduction, dye release, Figure 6B, E-G). GNF 5837 shows ~100-fold improvement over rimantadine's EC50 (10-20 \u03bcM). The correlation between in vitro and cell culture potencies supports on-target activity. Statistical significance is demonstrated for all tested compounds.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C12",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "The efficacy of M-targeted compounds is demonstrably linked to virion-resident channels rather than off-target effects. Density gradient separation experiments showed that drug treatment specifically reduced infectivity in the high-density virion fraction, and specific infectivity (normalized by RT-qPCR for viral RNA) was significantly reduced, indicating intact virions were rendered less infectious rather than being physically disrupted.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12, C95-C97 provide critical mechanistic evidence through density gradient experiments (Figure 7). The separation of virions from unbound compounds eliminates direct cellular effects, and the RT-qPCR normalization distinguishes specific loss of infectivity from virion disruption. This is strong evidence for on-target activity against virion-resident M channels.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C13",
+      "C98",
+      "C99",
+      "C109"
+    ],
+    "result": "Rimantadine effectively blocked ZIKV viraemia in a preclinical mouse model, supporting that M constitutes a physiologically relevant drug target. In C57BL/6 mice with transient IFNAR blockade, rimantadine treatment (20 mg/kg) dramatically reduced viraemia measured by plaque assay, while viral RNA at the inoculation site remained equivalent to controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13, C98, C99, C109 demonstrate in vivo efficacy using an appropriate preclinical model (Figure 8). The model uses transient immunosuppression rather than complete immunodeficiency, providing better physiological relevance. The dramatic reduction in viraemia (****p \u2264 0.0001) with equivalent viral RNA at the injection site supports that rimantadine prevents viral dissemination rather than initial infection.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C58"
+    ],
+    "result": "M peptides form channels in highly curved membranes similar to those in enveloped virions. Liposomes extruded through 0.05-\u03bcm filters (mimicking virion curvature) showed similar M-induced dye release to larger liposomes, albeit with slightly reduced kinetics likely due to increased liposome-to-peptide ratio.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C58 addresses an important control for physiological relevance (Figure 2D). The ability of M to form channels in highly curved membranes supports that the in vitro observations are relevant to the virion context. The explanation for reduced kinetics (increased molar ratio) is reasonable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C64",
+      "C65"
+    ],
+    "result": "M protein is highly conserved between ZIKV isolates and shares conserved regions with other Flaviviruses. Sequence analysis of ~700 ZIKV isolates showed >95% conservation across most of the protein, and the linker region between helices 1 and 2 is shared with other Flaviviruses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64, C65 present sequence conservation analysis (Figure 4A, Figure 1\u2014figure supplement 2). The high conservation within ZIKV and across Flaviviruses supports the biological importance of M structure and suggests that findings may be generalizable to other Flaviviruses. The analysis used appropriate methods (Clustal Omega alignment of ~700 sequences).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C66",
+      "C67"
+    ],
+    "result": "Transmembrane domain prediction software gave disparate results for M protein topology. Four different TMD prediction packages showed variable outputs, with TMHMM, TOPCONS, and Phobius favoring single-TMD topology, while MEMSAT-SVM predicted double-TMD topology and identified helix 3 as pore-lining.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66, C67 document the computational prediction uncertainty (Figure 1\u2014figure supplement 2). This uncertainty motivated the MD simulation studies to resolve the topology question. The use of multiple prediction tools is appropriate, and the discrepancies highlight the need for experimental and simulation validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C85",
+      "C86"
+    ],
+    "result": "Testing of HCV p7-targeted compounds against M channels showed limited cross-reactivity. Two of seven HCV p7 compounds (JK3/42 and JK3/34) inhibited M activity, while adamantane derivatives with additional R groups were ineffective, potentially due to limited L1 cavity size.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85, C86 present validation experiments for the P1 site concept using compounds designed for a similar peripheral site in HCV p7 (Figure 6\u2014figure supplement 1). The limited cross-reactivity (2/7 compounds active) is reasonable given structural differences between M and p7. The negative results with bulky adamantane derivatives support the size constraints of the L1 site.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "The compact M hexamer channel structure has specific geometric and compositional features. The channel retained a lumen with radius of 5.23 \u00c5 at its narrowest point, lined by Thr57, Val61, Ile62, Val65, Met66, Leu68, and Leu69. During 200 ns atomistic simulations, channels initially formed water columns but then closed at Leu64 and Leu68.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C114 provide detailed structural characterization from MD simulations (Figure 5B-E). The pore dimensions and lining residues are well-defined, and the spontaneous closure behavior is consistent with a gated channel. The closure at specific leucine residues provides testable predictions for mutagenesis studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "The identified hit compounds have known activities against cellular targets, but several lines of evidence suggest their antiviral effects may be independent of these targets. GNF 5837 targets TrKs (IC50 ~10 nM) which are not expressed in BHK cells; KB SRC 4 targets c-Src (Ki = 44 nM) and showed cytotoxicity at 500 nM; GSK 2837808A targets LDHA/B (IC50 = 2.6/43 nM) without cytotoxicity; and AA 29504 targets GABAA receptors (IC50 = 9-13 \u03bcM) which are not expressed in kidney cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C115-C125 document the known activities of hit compounds but acknowledge uncertainty about mechanism of action. While tissue expression patterns (TrKs, GABAA receptors not in kidney) and differential potencies suggest M-specific effects, the authors appropriately note that definitive proof requires additional experiments (e.g., knockdown studies). The cytotoxicity data (Figure 6\u2014figure supplement 3) helps establish working concentrations but doesn't definitively rule out off-target effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C126"
+    ],
+    "result": "M channel inhibitors specifically reduced infectivity in the high-density virion peak but not in a lower-density region of the gradient. The lower-density peak showed infectivity susceptible to low serial dilutions, unlike the high-density peak.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C126 describes differential effects on two virion populations (Figure 7A-B). The selective effect on the high-density peak supports specificity for mature virions. However, the nature of the low-density infectious species remains unclear, as acknowledged by the authors. This observation warrants further investigation but doesn't undermine the main conclusion about M channel targeting.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C141",
+      "C142"
+    ],
+    "result": "Several mechanistic hypotheses are proposed but remain speculative. These include: (1) E protein rearrangement during fusion may allow M to adopt alternative conformations; (2) asymmetric M channel formation may explain loss of signal in cryo-EM reconstructions; (3) pre-loading endocytic vesicles with rimantadine may expedite channel inhibition; and (4) rimantadine may exert drug rescue effects on cells during multi-cycle replication.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C100, C101, C141, C142 present reasonable hypotheses based on the data, but the authors appropriately identify these as speculation. These hypotheses generate testable predictions for future work but are not directly supported by the current data. The speculation about rimantadine's rescue effect (C142) attempts to explain an unexpected observation but lacks experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "Background information on ZIKV biology, epidemiology, and prior work on Flavivirus M proteins. This includes ZIKV's discovery, transmission, clinical manifestations, global spread, virion structure, maturation process, and previous studies on DENV M channel activity and rimantadine effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C52, C102-C108, C127-C133 present established knowledge from the literature, appropriately cited. These claims provide necessary context for the study but do not represent new findings. The citations appear appropriate and the information is consistent with the scientific literature on ZIKV and Flaviviruses.",
+    "result_type": "MINOR"
+  }
+]

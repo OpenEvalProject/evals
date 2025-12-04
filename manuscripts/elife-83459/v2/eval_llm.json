@@ -1,0 +1,287 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C75",
+      "C76"
+    ],
+    "result": "De novo SiR productions from cDNA do not accumulate PEST-targeting revertant mutations at appreciable levels. Eight independent SiR preparations were rescued from cDNA and sequenced (400 individual particles total), revealing no nonsense mutations in the PEST region previously reported by Matsuyama et al., though sporadic mutations were observed elsewhere in the genome including the N/P intergenic region.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5 and C75-C76 provide converging evidence from Sanger sequencing of 400 individual viral particles across 8 independent preparations. The absence of previously reported PEST-targeting mutations (C2) combined with the detection of expected background mutations elsewhere (C76) supports the conclusion that revertant mutations do not accumulate when SiR is produced directly from cDNA using the established protocol.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C38",
+      "C79",
+      "C80"
+    ],
+    "result": "TEVp activity in HEK-TGG packaging cells decreases substantially after multiple passages, particularly in the absence of antibiotic selection pressure. TEVp-dependent cleavage decreased from 31.7\u00b12.4% at P0 to 14.7\u00b11.7% (with puromycin) or 3.1\u00b10.2% (without puromycin) by P6, suggesting selection for clones with suboptimal TEVp expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C9 present quantitative western blot data showing progressive loss of TEVp activity over passages, with statistical measurements at multiple time points. The experimental design (C79-C80) is appropriate, using a validated TEVp reporter system. The conclusion that extensive amplification leads to selection of low-TEVp clones is well-supported by the dose-dependent effect of puromycin selection.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C77",
+      "C78",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "PEST-targeting revertant mutations accumulate during extensive in vitro amplification of SiR, particularly in low-TEVp packaging cells, but remain below 5% even after 8 passages in high-TEVp cells. The mutations identified were exclusively single base substitutions introducing premature stop codons at positions S450 or G453, matching those previously reported by Matsuyama et al.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C13 present comprehensive NGS data from 4 independent SiR preparations amplified under controlled conditions. The use of SMRT sequencing with UMI barcoding (C82-C84) provides high-quality mutation detection. The quantitative difference between high-TEVp (4\u00b12%) and low-TEVp (16\u00b12%) conditions at P8 (C10-C11) strongly supports the hypothesis that TEVp levels control revertant accumulation. The restriction to substitutions (C85-C87) is justified given the known error profile of SMRT sequencing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Revertant-free SiR-CRE shows no cytotoxicity in hippocampal neurons over 2 months, while canonical \u0394G-Rab-CRE and engineered revertant SiR-G453X-CRE both display significant neuronal loss. Statistical analysis confirms no decrease in SiR-infected neurons (p=0.92) versus 56% loss for \u0394G-Rab (p=0.003) and 40% loss for SiR-G453X (p=0.05).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C16 provide quantitative cell counts with appropriate statistical analysis (one-way ANOVA) at multiple time points. The engineered revertants (C89-C90) serve as critical controls demonstrating that PEST inactivation restores toxicity. The experimental design (C91) using Cre-dependent reporters in vivo is appropriate. However, the marginal significance for SiR-G453X (p=0.05) and the observation that some \u0394G-Rab-CRE neurons survive (C20) warrant cautious interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C19",
+      "C21",
+      "C44",
+      "C55",
+      "C72",
+      "C93"
+    ],
+    "result": "PEST-targeting mutations do not accumulate in vivo during SiR infection. NGS sequencing of viral genomes extracted from infected hippocampi at 1 week post-infection revealed no revertant mutations above the 2% threshold in three independent experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21 and C93 provide direct experimental evidence through SMRT sequencing of viral genomes recovered from infected tissue. The absence of detectable revertant mutations across three independent experiments supports the conclusion. However, the 1-week timepoint may be too early to detect mutations that could emerge later, and the 2% detection threshold could miss rare variants. The inference that mutations \"do not occur\" (C19) is stronger than the data strictly support\u2014\"do not accumulate to detectable levels\" would be more accurate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C94",
+      "C95"
+    ],
+    "result": "Longitudinal two-photon imaging demonstrates that SiR-labeled cortical neurons survive for at least 5 months with 97\u00b11% retention, while \u0394G-Rab-infected neurons show 70% mortality by 9 weeks. This confirms the lack of cytotoxic effects from revertant-free SiR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C25 present compelling longitudinal imaging data tracking individual neurons over 5 months. The ability to follow the same cells over time (C94-C95) provides stronger evidence than endpoint measurements alone. The dramatic difference between SiR (97% survival) and \u0394G-Rab (29% survival) at 21 weeks is striking. However, the number of animals (n=2 per condition) and ROIs (n=6 per virus) is relatively small for such a long-term study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C96",
+      "C97"
+    ],
+    "result": "EnvA-pseudotyped SiR spreads transsynaptically in a G-dependent manner without requiring TEVp, though TEVp co-delivery increases the number of traced neurons. SiR-CRE and revertant SiR-G453X-CRE labeled similar numbers of BLA neurons (169\u00b124 vs 190\u00b136, p=0.64), but only the revertant showed evidence of toxicity (tdTomato+ microglia). TEVp co-delivery increased tracing to 366\u00b169 neurons (p=0.04).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C31 demonstrate transsynaptic spreading with appropriate controls (TVA-only showing no spreading, C26). The similar spreading efficiency between SiR and SiR-G453X (C27) with differential toxicity (C28) is internally consistent. The statistical significance of TEVp enhancement (C30, p=0.04) is marginal and would benefit from replication. The conclusion that TEVp is \"not necessary\" (C29) is supported, though the enhancement effect suggests it may be beneficial.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C47",
+      "C48",
+      "C49",
+      "C98",
+      "C99"
+    ],
+    "result": "SiR-N2c shows superior transsynaptic spreading compared to the original SiR (SAD-B19), labeling 1691\u00b1112 BLA neurons versus 169\u00b124 for SiR (p=2\u00d710\u207b\u2075). TEVp co-delivery had minimal effect on SiR-N2c (1934\u00b1135, p=0.24), and complementing SiR with G_N2c did not match SiR-N2c efficiency even with TEVp (844\u00b1114 neurons).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C34 present highly significant differences in spreading efficiency with appropriate statistical analysis. The comparison across multiple conditions (SiR, SiR-N2c, SiR+G_N2c, with/without TEVp) provides comprehensive evidence. The failure of G_N2c complementation to match SiR-N2c performance (C49, C99) suggests strain-specific factors beyond glycoprotein identity. However, the mechanistic explanations offered (C50, C105-C106) remain speculative without direct experimental support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C39",
+      "C40",
+      "C41",
+      "C70"
+    ],
+    "result": "PEST-targeting mutations are rare when SiR is produced directly from cDNA but can emerge during extensive in vitro amplification, particularly in suboptimal TEVp conditions. Production in high-TEVp cells with minimal passages (<2) prevents accumulation above 5%. The authors recommend using fresh low-passage packaging cells and limiting SiR amplification to maximize 2 passages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This synthesis of claims C35-C37 and C39-C41 represents the main conclusions supported by the experimental data. The recommendations (C39-C41) logically follow from the experimental findings showing TEVp decline over passages and mutation accumulation kinetics. However, these are recommendations rather than experimentally validated protocols\u2014the authors have not demonstrated that following these guidelines prevents all revertant accumulation in practice.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C51",
+      "C56",
+      "C68",
+      "C69",
+      "C71"
+    ],
+    "result": "Revertant-free SiR-CRE is non-toxic in cortical and subcortical regions for several months, while PEST-mutant SiR is as toxic as canonical \u0394G-Rabies. CRE expression alone does not dampen toxicity, as canonical \u0394G-Rabies-CRE displays significant toxicity in vivo despite CRE expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C43 and C68-C69 directly address a key controversy in the field regarding CRE-mediated toxicity reduction. The comparison of SiR-CRE, \u0394G-Rab-CRE, and SiR-G453X-CRE provides strong evidence that PEST integrity, not CRE expression, determines toxicity. The survival of some \u0394G-Rab-CRE neurons (C20) is acknowledged and attributed to naturally occurring defective particles (C67), which is plausible but not directly tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C52",
+      "C88",
+      "C12"
+    ],
+    "result": "Only two specific PEST-inactivating mutations were identified: d.C1349G (S450X) and d.G1357T (G453X), both single base substitutions introducing premature stop codons. These mutations accounted for the majority of revertants reported by Matsuyama et al., 2019.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52, C88, and C12 consistently report the same two mutations across multiple experiments and sequencing approaches. The restriction to these specific mutations suggests they represent mutational hotspots, though the authors do not provide mechanistic explanation for why these positions are particularly susceptible. The consistency with prior reports (Matsuyama et al., 2019) strengthens confidence in the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C46",
+      "C31"
+    ],
+    "result": "TEVp co-delivery should be considered when planning transsynaptic tracing experiments using SiR, as it can improve spreading efficiency. Future studies should investigate inducible TEVp systems to maximize spreading while minimizing potential side effects of prolonged protease expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C104 represent practical recommendations based on the experimental findings (C46, C31). The suggestion to use inducible TEVp (C104) is reasonable but represents future work rather than demonstrated results. The recommendation is appropriately cautious, acknowledging both potential benefits and concerns about prolonged protease expression.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "Although PEST-inactivating mutations can be prevented during production and do not accumulate in vivo, strategies to further reduce or eliminate mutation risk could simplify production and enable sensitive applications. Future studies should investigate optimization of mutational hotspots in the SiR genome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C109 represent forward-looking discussion points rather than experimental results. The acknowledgment that current methods can prevent mutations (C107) is supported by the data, while the suggestions for improvement (C108-C109) are reasonable but speculative. These represent appropriate directions for future research rather than conclusions from the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C73",
+      "C74",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Background and context claims establishing the importance of rabies vectors for circuit tracing, the toxicity problem with conventional \u0394G-Rabies, previous attempts to address toxicity, the SiR design rationale, and the concern about revertant mutations that motivated this study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C53-C67, C73-C74, C100-C102) provide essential context and accurately represent the state of the field based on cited literature. They establish the scientific rationale for the study but do not represent novel findings. The characterization of prior work appears accurate based on the citations provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C92"
+    ],
+    "result": "Inactivation of revertant-free SiR was confirmed by analyzing the decrease of Rabies transcripts in infected hippocampi over time using RT-qPCR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C92 describes an important control experiment confirming viral inactivation at the RNA level. The data shown in Figure 3\u2014figure supplement 2 demonstrates decreasing viral RNA over time, consistent with the self-inactivating mechanism. This provides molecular confirmation complementing the cell survival data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C50",
+      "C105",
+      "C106"
+    ],
+    "result": "The superior spreading efficiency of SiR-N2c compared to SiR (SAD-B19) could be linked to more efficient packaging by G_N2c or the faster propagation speed of the CVS-N2c strain (~12 hr).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C50, C105-C106 propose mechanistic explanations for the observed difference in spreading efficiency between SiR strains. While these hypotheses are plausible and supported by citations to relevant literature, they remain speculative without direct experimental testing. The authors appropriately present these as possibilities (\"could be linked\") rather than conclusions, but no experiments in this study directly test these mechanisms.",
+    "result_type": "MINOR"
+  }
+]

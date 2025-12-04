@@ -1,0 +1,343 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C18",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "MINE is a computational framework that uses a three-layer CNN architecture with a linear convolutional layer and two dense layers with continuously differentiable activation functions (swish) to model relationships between predictors and neural activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C18, C33-C38 describe the MINE architecture and design choices, supported by Figure 1A and methodological descriptions. The architecture is simple, uses specific activation functions to enable derivative calculations, and hyperparameters were optimized on test data. These design choices are well-documented and justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C20",
+      "C21",
+      "C22",
+      "C53",
+      "C54",
+      "C57",
+      "C58",
+      "C59",
+      "C61",
+      "C63",
+      "C66"
+    ],
+    "result": "MINE uses Taylor expansion to characterize computational complexity of neural transformations, classifying neurons into complexity classes (0, 1, 2) based on whether linear, quadratic, or higher-order terms are needed to explain neural activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C20-C22, C53-C54, C57-C59, C61, C63, C66 describe the Taylor decomposition approach for complexity analysis, supported by Figure 2 and ground-truth validation. ROC analysis (C2E) shows 99% accuracy in distinguishing linear from nonlinear transformations with acceptable false-positive/negative rates at R\u00b2<0.8 threshold.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C21",
+      "C67",
+      "C68",
+      "C69",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "MINE extracts neural receptive fields through Taylor expansion equivalence to Volterra kernels, performing comparably or better than direct Volterra fitting under naturalistic stimulus conditions while maintaining low effective degrees of freedom (<50 despite ~14,000 parameters).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21, C67-C80 describe receptive field extraction, supported by Figure 3 simulations. MINE matches direct Volterra fitting with white noise (C72) and outperforms ordinary regression under naturalistic conditions (C73-C74). Ridge regression with high penalties approaches MINE performance (C75), but MINE shows slightly higher predictive power (C76) and maintains low effective degrees of freedom through regularization (C78-C79).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C22",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "MINE identifies which predictors and their interactions drive neural responses through Taylor decomposition, correctly ranking contributing predictors on ground-truth data without making assumptions about probability distributions or functional forms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22, C82-C87 describe predictor identification via Taylor metrics, supported by Figure 4. High correlation between Taylor expansion and true network output (C82, Figure 4B) validates the approach. The method correctly identifies contributing predictors and interactions on ground-truth data (C83-C84, Figure 4C-E), demonstrating the model-free flexibility of the approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C27",
+      "C40",
+      "C41",
+      "C42",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "On ground-truth data, MINE identifies responses dependent on predictors regardless of linearity, learns temporal transformations (shifts, convolutions, derivatives), and outperforms simple linear regression while matching expanded linear models with interaction terms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27, C40-C42, C44-C47 describe ground-truth validation, supported by Figure 1. Simple linear regression fails (C40, Figure 1F), while expanded linear models with interaction terms match CNN performance in some categories (C42). MINE's advantage is learning temporal transformations without explicit predictor augmentation (C45-C47), removing the need for a priori calcium kernel estimation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C28",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "MINE applied to mouse cortical widefield imaging data identified >91% of components, revealed largely linear relationships (only 3% with linear score <0.8), and recovered expected anatomical organization of sensory and motor responses with biologically plausible receptive field structures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28, C96-C109 describe cortical data analysis, supported by Figure 5. High identification rate (C96), low complexity (C97-C98), and anatomically appropriate Taylor metric mappings (C100-C102) validate the method. The observed linearity (C98) is explained by low spatial resolution averaging across many neurons (C99). Receptive field analysis shows expected temporal structure for sensory (past-weighted) and motor (preparatory) responses (C103-C109).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C115",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C31",
+      "C88",
+      "C89",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "In zebrafish thermoregulatory circuits, MINE identified 42,229 neurons (40% exclusively by MINE) across 33 functional classes, including a novel class of mixed-selectivity neurons integrating thermosensory and behavioral information that traditional methods failed to identify.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C31, C6-C9, C88-C89, C115, C118-C122 describe zebrafish experiments, supported by Figures 6-7. MINE identified significantly more neurons than linear regression (C88, C118-C119, Figure 6D), with less bias toward behavior-related activity (C89). The 33 functional classes were reproducible across fish (C120), and reticulospinal control validates behavioral classification (C121). Mixed-selectivity neurons represent a novel discovery (C8, C31, C122).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C32"
+    ],
+    "result": "Functional neuron types identified by MINE in zebrafish show anatomical segregation, with stimulus-driven neurons enriched in telencephalon and habenula, behavior-driven neurons in hindbrain, and mixed-selectivity neurons in raphe superior, caudal hypothalamus, and torus longitudinalis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C123-C130, C32 describe anatomical organization, supported by Figure 6H and supplements. Anatomical clustering and Z-Brain registration reveal spatial segregation of functional types (C124, C130). Specific enrichments are documented for each type (C125-C127), including temperature-sensitive neurons in olfactory epithelium consistent with other species (C128-C129). The anatomical mapping validates functional classifications.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141"
+    ],
+    "result": "Receptive field clustering of zebrafish temperature-encoding neurons revealed 15 functional classes with distinct temporal processing characteristics and anatomical distributions, including neurons computing heating/cooling rates over different timescales and neurons responding to absolute temperature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C131-C141 describe receptive field analysis, supported by Figure 7A-C. Behavioral feature encoding shows anatomical segregation (C131-C134). Receptive field clustering identified 15 reproducible classes (C136-C137) with interpretable temporal characteristics (C138-C140). The observation that some receptive fields peak at boundaries (C141) is acknowledged as a potential limitation of the 10s history length.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147"
+    ],
+    "result": "Mixed-selectivity neurons in zebrafish show diverse integration modes across 10 clusters, including linear addition, gating (where swim drive scales sensory responsiveness), and complex asymmetric integration of thermosensory and behavioral information.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C142-C147 describe mixed-selectivity neuron analysis, supported by Figure 7D. Response landscape clustering revealed 10 distinct integration modes (C143), including linear addition (C144), gating (C145), and complex asymmetric responses (C147). The gating neurons are interpreted as potential coincidence detectors (C146), though this functional interpretation is speculative. The diversity of integration modes is well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154"
+    ],
+    "result": "Computational complexity in zebrafish maps onto both functional and anatomical features, with linear neurons enriched in posterior/medial hindbrain and complexity-2 neurons in habenula, dorsal telencephalon, and medial hindbrain rhombomeres 1-2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C148-C154 describe complexity mapping, supported by Figure 7E-F. Complexity varies across receptive field clusters (C149-C150) and shows anatomical organization (C151, C153-C154). The interpretation that complexity-2 neurons in habenula/telencephalon perform higher-order computations (C153) is reasonable but somewhat speculative. The citation to prior work (C152) supports the functional interpretation of medial hindbrain neurons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Comparison to linear models shows MINE increases sensitivity for neuron identification, with four receptive field clusters containing <5 neurons identified by linear regression, resulting in only 4 of 15 clusters being recoverable using linear model data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C93 describe linear model comparison, supported by Figure 7 and supplements. While linear models identified neurons in each cluster (C90), MINE showed higher sensitivity (C91). Four clusters were essentially missed by linear regression (C92), and clustering on linear model data recovered only 4/15 clusters (C93). This demonstrates MINE's advantage in identifying functional types, not just individual neurons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "The manuscript establishes the motivation for MINE by noting that brains evolved rather than being engineered, making it unclear how well predefined models capture neural activity, while ANNs offer flexibility but are difficult to interpret.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C10-C17 establish background and motivation, supported by appropriate citations. The evolutionary argument (C1) and uncertainty about model choice (C2) motivate the model-free approach. The review of linear regression (C12-C13) and ANNs (C14-C17) is accurate and well-cited. This provides solid conceptual foundation for MINE.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C19",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "MINE inverts the usual analysis approach by discovering functional forms from data rather than predefining them, though the CNN architecture and hyperparameters impose some limits on modelable relationships.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19, C23-C26 describe MINE's conceptual approach. The 'model-free' characterization (C26) is qualified by acknowledging architectural constraints (C25). The convolutional layer's ability to learn temporal transformations (C23-C24) is a reasonable inference based on CNN properties. The conceptual framing is accurate and appropriately nuanced.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "The manuscript establishes that while nonlinear computation is believed to underlie nervous system function, many neurons show nearly linear responses to sensory/behavioral features, aligning with the hypothesis that important information should be linearly decodable.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C52 establish background on linearity/nonlinearity, supported by appropriate citations. The tension between nonlinear computation (C48-C49) and observed linear responses (C50-C51) motivates the complexity analysis. The inference that disambiguating linear/nonlinear processing provides circuit insight (C52) is reasonable. This provides good motivation for the complexity metric.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "Previous work identified neurons computing temperature rate-of-change and integration in zebrafish, but simple regression failed due to unknown temporal transformations, and clustering precluded identifying neurons integrating thermosensory and behavioral information.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C114 describe prior work limitations, supported by self-citations. The statements about previous findings (C110-C112) and methodological limitations (C113-C114) provide context for why MINE was needed for the zebrafish experiments. This appropriately motivates the application.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C94",
+      "C95"
+    ],
+    "result": "The authors propose that the CNN models computations of upstream/downstream circuits but acknowledge that the simple CNN architecture is unlikely to provide detailed circuit-level insights.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C95 are explicit speculative statements about CNN interpretation. The authors appropriately acknowledge this limitation and do not overclaim about circuit modeling. This represents appropriate scientific caution about what the method can and cannot reveal.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C155",
+      "C156"
+    ],
+    "result": "MINE has potential to aid large-scale neural data analysis and is made accessible through a simple Python interface.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C155-C156 are summary statements about MINE's utility and accessibility. The potential for aiding analysis (C155) is supported by the demonstrated results throughout the manuscript. The Python interface (C156) is documented in Table 1. These are appropriate concluding statements.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,301 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Systemic AAV injection of pAAV-Camk2a-iCre is an effective method to deliver cell type-specific Cre recombinases for cTag-PAPERCLIP profiling. The injection successfully activates PABP-GFP expression in excitatory neurons and knocks out Tsc1 to activate mTORC1 signaling in Tsc1-floxed cTag-PABP mice, with Cre delivery efficiency equivalent to genetic breeding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C35 provide converging evidence from cTag-PAPERCLIP data (C30-C31), western blots showing PS6 increase (C32-C33), and comparison with genetic breeding (C33-C34) that validate the AAV injection approach. The experimental design is sound with appropriate controls and verification steps.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Tsc1 knockout in mouse cortical excitatory neurons causes a shift toward Trim9-L mRNA and protein expression. From cTag-PAPERCLIP experiments, 135 genes showed significant APA changes, with Trim9 being the only gene satisfying criteria for both major PAS switching and CDS-APA. Trim9-L is the full-length isoform while Trim9-S lacks the SPRY domain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C43 are well-supported by multiple lines of evidence including cTag-PAPERCLIP profiling (C36-C39), protein domain analysis (C40-C41), western blots (C42), and RT-qPCR validation (C43). The filtering strategy to identify Trim9 is clearly described and the structural differences between isoforms are documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "In differentiated human TSC2-KO neural stem cells, TRIM9-L mRNA expression is increased by more than 1.6-fold compared to WT NSCs, with the TRIM9-L/TRIM9-S ratio consistently higher across all replicates. This demonstrates that hyperactive mTORC1 causes an APA shift favoring TRIM9-L expression in human neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C46 are supported by RNA-seq data analysis from published datasets (Figure 1F). The statistical significance (p<0.05) and consistency across replicates strengthen the conclusion. This extends the mouse findings to human cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "The mTORC1 signaling pathway controls the balance between Trim9/TRIM9 isoforms in both mouse and human cell culture models. Torin 1 treatment (mTORC1 inhibition) shifts expression toward Trim9-S, while siRNA knockdown of Tsc1/Tsc2 (mTORC1 activation) favors Trim9-L expression in N2a and BE2C cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C52 are supported by consistent results across multiple experimental approaches (western blots, RT-qPCR) in both mouse N2a and human BE2C cells. The bidirectional manipulation of mTORC1 activity produces expected reciprocal effects on Trim9 isoform expression, strengthening causal inference.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "CPSF6 and NUDT21 promote Trim9-S/TRIM9-S expression in mouse and human cells. Loss of either Cpsf6 or Nudt21 strongly decreases Trim9-S mRNA abundance while having minimal or variable effects on Trim9-L expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C57 are supported by RT-qPCR data from CRISPR knockout and siRNA knockdown experiments in N2a and BE2C cells (Figures 3B, 3D, 3F). The phenocopy between Cpsf6 and Nudt21 loss-of-function strengthens the conclusion. Minor cell-type-specific differences (C56) are appropriately noted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Cpsf6 and Nudt21 are both required for the regulation of Trim9 isoforms by the mTORC1 signaling pathway. Loss of either factor abolishes the shift toward Trim9-S expression normally induced by Torin 1 treatment in N2a cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C62 are supported by epistasis experiments showing that loss of Cpsf6 or Nudt21 blocks the mTORC1-dependent regulation of Trim9 isoforms (Figures 3G-H). The experimental design appropriately tests genetic requirements, though the molecular mechanism linking mTORC1 to CFIm function remains unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "CPSF6 promotes TRIM9-S PAS usage primarily through an evolutionarily conserved twin UGUA motif (UGUAYUGUA). Both mouse and human TRIM9-S PAS contain this motif along with two additional downstream UGUA motifs. Reporter assays demonstrate that mutations in the twin UGUA motif strongly decrease PAS usage and abolish CPSF6-dependent regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C70 are well-supported by sequence analysis (C63-C64), reporter assays with systematic mutagenesis (C65-C68), and evolutionary conservation data (C70). The validation using L3 PAS as a positive control strengthens confidence in the reporter system. The functional importance of the twin UGUA motif is clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "The two UGUAs within the twin UGUA motif of TRIM9-S PAS have non-additive effects on PAS usage. Mutations in the first UGUA decrease usage by 34% while mutations in the second UGUA modestly increase usage by 7%, but neither alone accounts for the full 75% decrease from mutating both UGUAs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C73 are supported by systematic mutagenesis experiments (Figure 4I) showing non-additive effects. The statistical significance of differences is documented. This suggests cooperative or context-dependent function of the twin motif, though the molecular mechanism remains to be elucidated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "CPSF6-dependent PASs in BMPR1B and MOB4 contain functional twin UGUA motifs. PAPERCLIP profiling identified six candidate genes with twin UGUA motifs in distal PASs that lose usage with low CPSF6 expression. Reporter assays confirm that CPSF6 promotes usage of both BMPR1B and MOB4 distal PASs through their twin UGUA motifs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C81 are supported by PAPERCLIP profiling (C74), RT-qPCR validation (C75), and reporter assays with mutagenesis (C76-C81). The demonstration that MOB4 regulation occurs mostly through the twin UGUA motif (C80-C81) parallels TRIM9-S findings. This extends the twin UGUA motif beyond TRIM9.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "The contribution of individual UGUAs within twin UGUA motifs varies between different PASs. In BMPR1B distal PAS, the first UGUA plays a larger role than the second, while in MOB4 distal PAS, mutations in either UGUA individually produce effects similar to mutating both.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C84 are supported by systematic mutagenesis experiments (Figures 5J-K). The context-dependent effects suggest that twin UGUA motifs may function through different mechanisms in different sequence contexts, though this requires further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "BRD4-L PAS is regulated by CPSF6 and contains a functional twin UGUA motif with similar sequence arrangement to TRIM9-S PAS. Loss of CPSF6 consistently shifts BRD4 expression toward BRD4-S in multiple cell lines. However, unlike TRIM9-S PAS, the two downstream UGUA motifs in BRD4-L PAS also contribute to PAS regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C98 are supported by PAPERCLIP profiling (C86), sequence analysis (C87), RT-qPCR and western blots in multiple cell lines (C88-C92), and reporter assays (C93-C96). The differences in regulation between TRIM9-S and BRD4-L PASs (C98) are appropriately noted and suggest context-dependent mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Insertion of the TRIM9-S twin UGUA motif into the heterologous JUNB PAS is sufficient to confer regulation by both CPSF6 and mTORC1. The twin UGUA motif increases JUNB PAS usage by 84-87% in a CPSF6-dependent manner, and this engineered PAS becomes responsive to mTORC1 hyperactivation. A single UGUA motif is insufficient for this effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C106 are supported by reporter assays in 293T and HeLa cells (Figure 7). The gain-of-function approach provides strong evidence for sufficiency of the twin UGUA motif. The requirement for two UGUAs (C101-C102) and responsiveness to mTORC1 manipulation (C104-C105) strengthen the mechanistic model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "The study discovers that the mTORC1 signaling pathway balances Trim9/TRIM9 isoform expression through APA regulation via CFIm components (CPSF6 and NUDT21) and an evolutionarily conserved twin UGUA motif. This motif is functional in multiple genes (TRIM9, BMPR1B, MOB4, BRD4-L) and can be transferred to confer CPSF6/mTORC1 regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C6 represent the main conclusions of the study and are supported by the comprehensive experimental evidence detailed in the other result groups. The discovery is novel (C27), mechanistically characterized, and generalizable beyond TRIM9.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "The UGUAYUGUA motif is a naturally occurring cis-regulatory motif for CPSF6 in human and mouse that may be stronger than a single UGUA motif. It is not unique to TRIM9 and plays crucial roles in CPSF6-mediated regulation across multiple genes. Having a second copy of UGUA appears advantageous for PAS regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C117 synthesize findings from multiple genes (TRIM9, BMPR1B, MOB4, BRD4-L) and the JUNB gain-of-function experiments. The conclusion that the twin motif may be stronger than single UGUA is supported by the JUNB experiments (C101) and is consistent with prior literature (C118).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C134"
+    ],
+    "result": "mTORC1 hyperactivation causes Trim9/TRIM9 isoform imbalance in TSC through the UGUAYUGUA motif and CFIm. This represents a novel mechanism by which hyperactive mTORC1 alters gene expression through gene isoform imbalance, distinct from previously identified transcriptional and translational abnormalities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C131-C132, C134 represent the major biological conclusions of the study. They are supported by the comprehensive experimental evidence from in vivo mouse models, human cell lines, and mechanistic dissection. The novelty of the mechanism is appropriately contextualized relative to prior work (C133).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "The mTORC1 regulation of Trim9/TRIM9 APA differs from the previously reported regulation of Drosophila autophagy genes (Atg1 and Atg8a). The Drosophila PASs lack twin UGUA motifs and the APA shifts lead to 3' UTR lengthening rather than isoform switching.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C112 appropriately contextualize the current findings relative to prior work in Drosophila. The differences are supported by sequence analysis (C110) and citations to the original work (C109, C111). This highlights the novelty of the isoform-switching mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C130",
+      "C136"
+    ],
+    "result": "The authors speculate that premature increase in Trim9-L protein due to mTORC1 hyperactivation during development might alter neuron morphogenesis and synapse formation in TSC. They suggest investigating gene isoform imbalance in mTORopathies and cancer with hyperactive mTORC1 may provide biological insights.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C130 and C136 are explicitly speculative (C130 uses \"speculate,\" C136 uses \"suggest\" and \"might\"). While grounded in the study's findings and relevant literature (C125-C129, C135), these represent hypotheses for future investigation rather than demonstrated results. No experimental evidence directly tests these predictions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "The UGUAYUGUA motif is unlikely to function by engaging both NUDT21 proteins in a dimer simultaneously, as the minimal distance for simultaneous binding is 7 nucleotides but the twin UGUA motif has only 1 nucleotide spacing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C121 are supported by structural constraints from prior literature (C119-C120) and logical inference (C121). However, this is a negative conclusion about mechanism that does not establish the actual binding mode. Further structural or biochemical studies would be needed to definitively determine how NUDT21 engages the twin UGUA motif.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,285 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C32",
+      "C33",
+      "C87"
+    ],
+    "result": "Early-life starvation in C. elegans produces discontinuous behavioral effects across development, with strong decreases in roaming activity during L1 and adult stages but buffered effects during intermediate L2-L4 stages. This pattern holds across different starvation durations (1-4 days) and is independent of body size differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C4, C27-C30, C32-C33, and C87 collectively demonstrate stage-specific behavioral responses to early starvation with strong experimental support from Figure 1 and supplements. The size-matched analysis (C32) controls for potential confounding effects of body size, strengthening the conclusion that behavioral buffering during intermediate stages is a genuine developmental phenomenon.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Unsupervised PCA analysis identified multiple coexisting individuality dimensions in C. elegans populations. PC1 captures consistent behavioral bias across development (R=0.9 with pre-defined consistency index), while PC2 and PC3 represent novel temporal patterns of bias-switching at specific developmental transitions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C9 and C37-C43 are well-supported by Figure 2 data showing statistically significant PC dimensions compared to shuffled controls. The high correlation (R=0.9) between PC1 and the previously established consistency index validates the approach, while the lack of correlation for PC2-3 (R=0.003-0.09) confirms these represent distinct individuality dimensions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C49",
+      "C50",
+      "C52",
+      "C53",
+      "C88"
+    ],
+    "result": "Dopamine buffers behavioral responses to early starvation specifically during intermediate developmental stages (L2-L4). Dopamine-deficient cat-2 mutants show decreased roaming across all stages following starvation, contrasting with wild-type buffering during L2-L4.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C49-C50, C52-C53, and C88 are strongly supported by Figure 3 data comparing cat-2 and wild-type responses. The stage-specificity is demonstrated by similar L1/adult effects but divergent L2-L4 responses between genotypes. Even 1-day starvation is sufficient to reveal the buffering deficit in cat-2 (C50), indicating dopamine's critical role.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Exogenous dopamine supplementation to cat-2 mutants selectively restores roaming activity during intermediate stages (L2-L4) but not during L1 or adult stages following early starvation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C58 are supported by Figure 4A-C and supplements showing stage-specific rescue effects. The selective restoration during L2-L4 but not L1/adult stages provides strong evidence for dopamine's temporally restricted function in behavioral buffering.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C64",
+      "C65",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Individual dopamine receptors (DOP-1, DOP-2, DOP-3) have distinct temporal effects during intermediate stages, with DOP-2/DOP-3 double mutants recapitulating the full cat-2 phenotype. This suggests modular, temporally-regulated receptor function mediates behavioral buffering.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C62, C64-C65, C67-C69 are supported by Figure 4D-K showing differential stage-specific effects of single receptor mutants and the comprehensive phenotype of dop-2;dop-3 double mutants. The inference that DOP-2/DOP-3 deficiency is sufficient to recapitulate cat-2 effects (C68) is well-justified by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C7",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C89"
+    ],
+    "result": "Serotonin promotes behavioral sensitivity to early starvation during L1 and adult stages but not intermediate stages. Serotonin-deficient tph-1 mutants maintain roaming activity during L1/adult following 1-day starvation, showing opposite temporal function to dopamine.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C71-C76, and C89 are well-supported by Figure 5 data. The temporal segregation of serotonin (L1/adult) versus dopamine (L2-L4) function (C76) is clearly demonstrated by comparing mutant phenotypes. Even with longer starvation, tph-1 adults remain less responsive than wild-type (C74), confirming serotonin's role in promoting stress sensitivity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C84",
+      "C86"
+    ],
+    "result": "Early-life starvation and neuromodulatory state differentially affect inter-individual variation within specific individuality dimensions. Wild-type and cat-2 show increased PC3 variation after starvation while tph-1 does not; PC6 variation increases in wild-type but decreases in tph-1; PC1 variation increases only in starved tph-1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C81, C84, and C86 are supported by Figure 6 showing genotype- and experience-dependent effects on specific PC dimensions. The differential effects across dimensions and genotypes demonstrate that individuality structure is dynamically regulated by both experience and neuromodulation, though the mechanistic basis remains to be determined.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C22",
+      "C31"
+    ],
+    "result": "Animals exposed to early starvation show delayed development and slightly reduced body size (~10%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22 and C31 are supported by Figure 1\u2014figure supplement 1A and 1F showing increased development time and modest size reduction. These observations are important for interpreting behavioral effects but are secondary findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C34",
+      "C35"
+    ],
+    "result": "Following early starvation, individual C. elegans show substantial variation in behavioral responses, with some individuals showing 8-10 fold decreases in roaming while others remain indistinguishable from unstressed animals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C35 are supported by Figure 1\u2014figure supplement 1D showing wide distribution of individual responses. This observation motivates the individuality analysis but represents a descriptive finding rather than a mechanistic result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C77"
+    ],
+    "result": "Dopamine and serotonin show behavior-specific functional segregation. While their effects on roaming fraction are temporally segregated, their effects on roaming speed are similar across stages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C55 and C77 are supported by Figure 3\u2014figure supplement 1E-F and Figure 5\u2014figure supplement 1E showing similar speed effects in cat-2 and tph-1. This demonstrates that neuromodulatory segregation is parameter-specific, though this is a secondary observation to the main roaming fraction findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C85"
+    ],
+    "result": "Early starvation does not significantly alter inter-individual variation in PC2, PC4, and PC5 individuality dimensions across all genotypes tested.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C85 is supported by Figure 6\u2014figure supplement 1F-H showing no significant changes in these dimensions. This negative result helps define the specificity of experience-dependent effects on individuality but is a supporting rather than primary finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C2"
+    ],
+    "result": "Early-life experiences may promote both stereotyped behavioral alterations and variable individual responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 represent the general premise motivating the study and are supported by the collective experimental findings. However, these are framing statements rather than specific experimental results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C36",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C59",
+      "C60",
+      "C66",
+      "C70",
+      "C82",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C95",
+      "C97",
+      "C99",
+      "C100",
+      "C101",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Background knowledge and prior work establish that: behavioral patterns change across development in multiple species; early experiences have long-lasting effects; behavioral individuality exists in isogenic populations; C. elegans shows roaming/dwelling behavior; dopamine and serotonin are key neuromodulators with known functions; and dopamine receptors have characterized signaling properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C21, C23-C26, C36, C44-C48, C59-C60, C66, C70, C82, C90-C93, C95, C97, C99-C101, C104-C107 are all supported by appropriate citations to prior literature. These establish the scientific context but are not results of the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C51"
+    ],
+    "result": "Within the L2 stage, roaming effects in cat-2 mutants are more pronounced during earlier time windows, suggesting potential within-stage regulation by dopamine.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C51 is based on visual inspection of Figure 3B-C and involves inference about within-stage temporal dynamics. While the pattern is described, no statistical analysis is provided to quantify the significance of early versus late L2 effects, making this observation suggestive but not definitively established.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C63"
+    ],
+    "result": "Similar to cat-2 mutants, dop-2 individuals show decreased roaming mainly during early time windows within the L2 stage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C63 describes a within-stage temporal pattern but lacks quantitative statistical support for the 'early time window' specificity. This is stated as an observation but would require more rigorous temporal analysis to be definitively supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C94",
+      "C96",
+      "C98",
+      "C102",
+      "C103",
+      "C108",
+      "C109"
+    ],
+    "result": "Speculative interpretations suggest that: dopamine function varies across contexts and timescales; different neural subnetworks may regulate temporal buffering; neuromodulatory receptors share common temporal regulation principles; behavioral complexity reflects integration of multiple neuromodulators; multiple individuality dimensions may be adaptive; and behavioral variation may arise from stochastic differences or modified sensitivity to underlying variation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C94, C96, C98, C102-C103, C108-C109 are explicitly speculative interpretations (using language like 'suggest,' 'plausible,' 'may') that extend beyond the direct experimental evidence. While these are reasonable hypotheses consistent with the data, they represent discussion points rather than established results and would require additional experiments to validate.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,1607 @@
+{
+  "submission": {
+    "id": "d4171d44-6b57-4c61-a8cd-91dde932ba0b",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-04T01:38:28.409232Z",
+    "updated_at": "2025-12-04T01:38:28.409232Z"
+  },
+  "content": [
+    {
+      "id": "c3a09ab0-a7d1-4faa-8a85-43c3d0ab40eb",
+      "submission_id": "d4171d44-6b57-4c61-a8cd-91dde932ba0b",
+      "content_type": "manuscript",
+      "content_text": "# An acetylation-mediated chromatin switch governs H3K4 methylation read-write capability\n\n## Authors\n\n- Kanishk Jain<sup>1</sup> ([ORCID: 0000-0001-8039-0464](https://orcid.org/0000-0001-8039-0464))\n- Matthew R Marunde<sup>3</sup>\n- Jonathan M Burg<sup>3</sup>\n- Susan L Gloor<sup>3</sup>\n- Faith M Joseph<sup>4</sup>\n- Karl F Poncha<sup>4</sup>\n- Zachary B Gillespie<sup>3</sup>\n- Keli L Rodriguez<sup>3</sup>\n- Irina K Popova<sup>3</sup>\n- Nathan W Hall<sup>3</sup>\n- Anup Vaidya<sup>3</sup>\n- Sarah A Howard<sup>3</sup>\n- Hailey F Taylor<sup>3</sup>\n- Laylo Mukhsinova<sup>3</sup>\n- Ugochi C Onuoha<sup>3</sup>\n- Emily F Patteson<sup>3</sup>\n- Spencer W Cooke<sup>1</sup>\n- Bethany C Taylor<sup>4</sup>\n- Ellen N Weinzapfel<sup>3</sup>\n- Marcus A Cheek<sup>3</sup>\n- Matthew J Meiners<sup>3</sup>\n- Geoffrey C Fox<sup>5</sup> ([ORCID: 0000-0001-5898-0847](https://orcid.org/0000-0001-5898-0847))\n- Kevin EW Namitz<sup>6</sup> ([ORCID: 0000-0003-4434-1475](https://orcid.org/0000-0003-4434-1475))\n- Martis W Cowles<sup>3</sup>\n- Krzysztof Krajewski<sup>1</sup>\n- Zu-Wen Sun<sup>3</sup>\n- Michael S Cosgrove<sup>7</sup>\n- Nicolas L Young<sup>4</sup> ([ORCID: 0000-0002-3323-2815](https://orcid.org/0000-0002-3323-2815))\n- Michael-Christopher Keogh<sup>3</sup> ([ORCID: 0000-0002-2219-8623](https://orcid.org/0000-0002-2219-8623)) \u2020\n- Brian D Strahl<sup>1</sup> ([ORCID: 0000-0002-4947-6259](https://orcid.org/0000-0002-4947-6259)) \u2020\n\n### Affiliations\n\n1. Department of Biochemistry and Biophysics, University of North Carolina at Chapel Hill of Medicine Chapel Hill United States ([ROR:0130frc33](https://ror.org/0130frc33))\n2. Lineberger Comprehensive Cancer Center, University of North Carolina at Chapel Hill, School of Medicine Chapel Hill United States ([ROR:0130frc33](https://ror.org/0130frc33))\n3. EpiCypher, Inc Durham United States ([ROR:021skqj79](https://ror.org/021skqj79))\n4. Verna & Marrs McLean Department of Biochemistry and Molecular Biology, Baylor College of Medicine Houston United States ([ROR:02pttbw34](https://ror.org/02pttbw34))\n5. Curriculum in Genetics and Molecular Biology, University of North Carolina at Chapel Hill, School of Medicine Chapel Hill United States ([ROR:0130frc33](https://ror.org/0130frc33))\n6. Pennsylvania State University State College United States ([ROR:04p491231](https://ror.org/04p491231))\n7. Department of Biochemistry and Molecular Biology, Upstate Medical University Syracuse United States ([ROR:040kfrw16](https://ror.org/040kfrw16))\n\n\u2020 Corresponding author\n\n## Abstract\n\nIn nucleosomes, histone N-terminal tails exist in dynamic equilibrium between free/accessible and collapsed/DNA-bound states. The latter state is expected to impact histone N-termini availability to the epigenetic machinery. Notably, H3 tail acetylation (e.g. K9ac, K14ac, K18ac) is linked to increased H3K4me3 engagement by the BPTF PHD finger, but it is unknown if this mechanism has a broader extension. Here, we show that H3 tail acetylation promotes nucleosomal accessibility to other H3K4 methyl readers, and importantly, extends to H3K4 writers, notably methyltransferase MLL1. This regulation is not observed on peptide substrates yet occurs on the cis H3 tail, as determined with fully-defined heterotypic nucleosomes. In vivo, H3 tail acetylation is directly and dynamically coupled with cis H3K4 methylation levels. Together, these observations reveal an acetylation \u2018chromatin switch\u2019 on the H3 tail that modulates read-write accessibility in nucleosomes and resolves the long-standing question of why H3K4me3 levels are coupled with H3 acetylation.\n\n## Introduction\n\nIn the epigenetic landscape, histone proteins are often variably chemically modified by \u2018writer\u2019 enzymes (Jenuwein and Allis, 2001; Strahl and Allis, 2000). Writer-installed post-translational modifications (PTMs) can then be recognized by \u2018reader\u2019 proteins and/or removed by \u2018eraser\u2019 enzymes. This interplay of PTMs comprises the \u2018histone code,\u2019 and has a central function in regulating chromatin organization and activity. For example, methylated/acylated lysine or methylated arginine residues of histones can recruit transcription factors to activate or repress transcription (Strahl and Allis, 2000; Su and Denu, 2016); mitotically phosphorylated serine/threonine residues can regulate reader binding established at earlier stages of the cell cycle (Rossetto et al., 2012) or ubiquitinated lysine can impact the maintenance of DNA methylation (Vaughan et al., 2021). As the complex language of histone PTMs is dissected, it has become clear that multivalent interactions with reader proteins can influence chromatin structure and DNA accessibility, thereby regulating gene transcription and other DNA-templated events (Su and Denu, 2016; Taylor and Young, 2021; Young et al., 2010). In this manner, combinatorial PTMs can more effectively engage different chromatin-binding modules, promoting distinct outcomes versus either PTM alone.\n\nThe bulk of chromatin PTM research has employed histone peptides, even though histones exist in vivo in a heteromeric complex with DNA (i.e. the nucleosome). Recent work, however, is making it increasingly clear that studying histone PTM engagement in the nucleosome context provides a more accurate understanding of the histone code. Particularly, the highly charged histone tails interact directly with nucleosomal DNA, restricting access to PTM recognition by reader proteins (Ghoneim et al., 2021; Marunde et al., 2022a; Morrison et al., 2018). Studies with BPTF PHD suggest acetylation releases the H3 N-terminal tail from the nucleosome surface, such that H3K4me3 becomes more readily engaged by the PHD finger (Marunde et al., 2022a; Morrison et al., 2018).\n\nConsiderable research effort has focused on dissecting the direct (and multivalent) engagement of chromatin via histone PTM-reader protein interactions. However, less appreciated are any indirect effects of PTMs on histone tail accessibility/nucleosome dynamics (e.g. via charge neutralization). In this report, we demonstrate enhanced nucleosome binding by a range of H3K4 readers when the histone tail is concomitantly acetylated (one or more of K9ac, K14ac, and K18ac). Furthermore, from in vitro enzymatic assays, we found that neighboring acetylation of the cis H3 tail is a prerequisite switch that enables the MLL1 complex (MLL1C: MLL1 SET domain, WDR5, RbBP5, Ash2L, and DPY30) (Rao and Dou, 2015) to robustly methylate H3K4. Consistent with this observation, mass spectrometric proteomic analyses of mammalian cells in a timed response to sodium butyrate (a broad-spectrum lysine deacetylase (KDAC) inhibitor) revealed a tight correlation of H3K4 methylation with cis acetylation. Our findings define a critical aspect of chromatin regulation: i.e., PTM crosstalk through acetylation-mediated tail accessibility. The findings also provide a molecular basis for the long-standing connection between H3K4 methylation and H3 acetylation in multiple eukaryotes (Garcia et al., 2007; Nightingale et al., 2007; Taverna et al., 2007), and resolve the directionality of these correlations: cis hyperacetylation of the H3 tail precedes, and is largely a prerequisite for, H3K4 methylation. Thus, the establishment of sites of H3K4me3 and activation of transcription occurs by a sequence of modifications of the same histone molecule.\n\n## Results\n\n### PHD finger readers show narrowed selectivity for histone tail PTMs on mononucleosomes versus peptides\n\nHow histone readers engage nucleosomes is an extensively researched area of chromatin biology. Most investigators characterize reader binding with PTM-defined histone peptides, although the domains often display a refined preference for similarly modified nucleosomes (Marunde et al., 2022b; Marunde et al., 2022a; Morgan et al., 2021; Morrison et al., 2018). To further assess this potential, we used the dCypher approach (Jain et al., 2020; Marunde et al., 2022b; Morgan et al., 2021; Weinberg et al., 2021) to measure the interactions of three PHD readers (from KDM7A, DIDO1, and MLL5: the queries) with PTM-defined peptides and nucleosomes (the potential targets). As might be expected (Jain et al., 2020), each GST-PHD fusion showed a preference for H3K4-methylated peptides and, particularly, for higher methyl states (i.e. KDM7A bound me2/me3, DIDO1 bound me1/me2/me3, and MLL1 bound me1/me2/me3; Figure 1A). In contrast, each GST-PHD reader was restricted to H3K4me3 over the lower methyl states on nucleosomes (Figure 1B) and displayed weaker relative binding (EC50rel: calculated as in Methods) to this PTM (Figure 1\u2014figure supplement 1C\u2013D). On further examination, we observed no impact of co-incident acetylation on H3K4me3 binding in the peptide context (Figure 1A: compare H3K4me3 to H3K4me3K9acK14acK18ac [hereafter H3K4me3triac]). In stark contrast, the binding of each GST-PHD reader to nucleosomal H3K4me3 was dramatically enhanced (~10\u201315 fold) by co-incident acetylation (i.e. H3K4me3triac; Figure 1B and Figure 1\u2014figure supplement 1A\u2013B). Additionally, there was no significant reader domain interaction with either nucleosome lacking H3K4 methylation or 147X601 DNA (nucleosomal DNA) alone (Figure 1\u2014figure supplement 1B). A similar observation has also been made for the BPTF PHD domain (Marunde et al., 2022a; Morrison et al., 2018), suggesting the potential for a general mechanism. This led us to consider the possibility that histone tail lysine acetylation (Kac) might function beyond the recruitment of readers, and perhaps also impact H3K4 writers.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/82596/elife-82596-fig1-v2.jpg)\n\n**Figure 1.:** dCypher assay alpha counts for the interaction of GST-PHD queries (9.5 nM KDM7A (Uniprot #Q6ZMT4; residues 1\u2013100); 2.4 nM DIDO1 (Uniprot #Q9BTC0; residues 250\u2013340); 18 nM MLL5 (Uniprot #Q8IZD2; residues 100\u2013180)) with PTM-defined peptides (A) vs. nucleosomes (B) (the potential targets). All error bars represent the range of two replicates. Key: H3.1 \u22062, H3.1 \u220632, and H4 \u220615 are nucleosomes assembled with histones lacking the indicated N-terminal residues of H3.1 or H4. All data were plotted using GraphPad Prism 9.0. Of note, each reader query showed minimal interaction-free DNA (147 bp or 199 bp: Figure 1\u2014figure supplement 1B).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/82596/elife-82596-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Binding curves to determine the optimal concentration for screening reader queries (GST-KDM7A PHD, GST-DIDO1 PHD, and GST-MLL5 PHD) to indicate post-translational modification (PTM)-defined nucleosome targets. (B) Library binding screen with indicated GST-PHD queries and PTM-defined nucleosome or free DNA (147 bp (Widom 601 sequence) or 199 bp (Widom 601 sequence flanked by 21 bp linkers)) targets. Error bars represent the range of two replicates. Key: H3.1N \u22062, H3.1N \u220632, and H4N \u220615 are nucleosomes assembled with histones lacking the indicated N-terminal residues of H3.1 or H4. (C) Relative EC50 (EC50Rel) binding values (in nM) (calculated as in Methods) between GST-PHD reader proteins and select histone peptides; 95% confidence intervals are represented parenthetically. (D) EC50Rel binding values (in nM) between GST-PHD proteins and select nucleosomes; 95% confidence intervals are represented parenthetically. ND = not determined.\n\n### H3 N-terminal acetylation enhances MLL1C-mediated methylation of nucleosomal H3K4\n\nTo investigate if acetylation might enable a more catalytically accessible H3 N-terminus, we performed enzymatic assays with the MLL1 core complex (MLL1C; responsible for H3K4me3) (Rao and Dou, 2015; Sha et al., 2020) and defined nucleosome substrates \u00b1 accompanying acetylation (H3K9acK14acK18ac; hereafter H3triac) (see Methods). In an endpoint assay at constant enzyme and substrate concentrations (and [methyl-3H]-SAM donor), we observed a significant increase in net methylation when the H3 tail was also acetylated (Figure 2A). As expected, methylation by MLL1C sequentially decreased towards H3K4 mono-, di-, and tri-methylated nucleosomal substrates, being undetectable on H3K4me3 (which also confirmed MLL1C targeting of this specific residue). Despite this, methyl group incorporation to each H3K4 methyl state substrate was consistently enhanced by accompanying H3triac (Figure 2A). Of note, we also tested the viability of methyllysine analogs (MLAs) (Simon and Shokat, 2012) \u00b1 H3triac as MLL1C substrates and observed no activity, indicating their unsuitability for such studies (Figure 2\u2014figure supplement 1D\u2013E).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/82596/elife-82596-fig2-v2.jpg)\n\n**Figure 2.:** (A) Endpoint methylation assays of H3K4me0 [H3 \u2022 H3]-me1-me2-me3 nucleosomes and their cognate H3K9ac14ac18ac (H3triac) partners (all 100 nM) with MLL1 Complex (MLL1C; 4 nM). Reactions performed in triplicate with error bars as SEM. p-values were determined using a two-tailed t-test: ****=<0.0001, ***=0.0008, **=0.0038. (B) MLL1C (4 nM) methylation activity on H3K4me0-me1-me2-me3 nucleosomes and their cognate H3triac partners (all substrates: 1.5-fold serial dilution, 0\u20130.4 \u03bcM). Reactions performed in triplicate with error bars as SEM (see also Figure 2\u2014figure supplement 1). (C) MLL1C does not differentially associate with post-translational modification (PTM)-defined nucleosome substrates under study conditions. dCypher binding curves of hexahistidine (6HIS)-tagged MLL1C (concentrations noted) with PTM-defined nucleosomes (20 nM). Error bars represent the range of two replicates. (D) MLL1C-mediated methylation is enhanced on cis but not trans-acetylated nucleosomal H3 tails. Endpoint methylation assays of MLL1C (4 nM) with homotypic [H3 \u2022 H3] vs. heterotypic (e.g., [H3 \u2022 H3tetraac]; see Methods) nucleosome substrates (all 100 nM). Reactions performed in triplicate with error bars as SEM. p-values were determined using a two-tailed t-test: ****=<0.0001. Key: H3triac = H3K9acK14acK18ac. H3tetraac = H3K4acK9acK14acK18ac.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/82596/elife-82596-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) MLL1C activity on 2 \u03bcg chicken oligonucleosomes (2 \u03bcg) was 2D-titration tested by enzyme [0, 4, and 40 nM] and salt [0, 50, and 300 mM NaCl] in the presence of [methyl-3H]-SAM donor. Methylation (in fmol) is graphed as a function of [MLL1C]. N=2 and error bars are SD. (B) Replicate SDS-PAGE Coomassie-stained gels for methylation data from panel (A). Resolved subunits of MLL1C and nucleosomes are indicated. (C) Steady-state kinetic data for MLL1C activity with nucleosome substrates as shown in Figure 2B but fit to the Michaelis-Menten equation. (D) Endpoint methylation activity of MLL1C (4 nM) with MLA (methyl-lysine analog) nucleosome substrates (100 nM) in triplicate; error bars are SD. (E) Replicate SDS-PAGE Coomassie-stained gels for methylation data from panel (D); Lanes marked with \u2018*\u2019 and \u2018+\u2019 in the Replicate three gel are switched. (F) Replicate SDS-PAGE Coomassie-stained gels for methylation data from Figure 2B and (C). 0.5 \u03bcg BSA was loaded as a lane marker to each quenched reaction (except for H3K4me3triac). (G) SDS-PAGE Coomassie-stained gel for methylation data from Figure 2C. (H) EC50rel binding values (in nM) between MLL1C and select nucleosomes; 95% confidence intervals (CI) are represented parenthetically. Note: gel images in grayscale and blue are both Coomassie-stained gels. All data were plotted using GraphPad Prism 9.0.\n\nWe next measured the steady-state methylation kinetics of MLL1C towards nucleosomes with each H3K4 methyl state \u00b1 H3triac, and again observed that acetylation increased methyltransferase activity (Figure 2B). Using an extra sum-of-squares F-test, methylation for the H3triac nucleosomes was indicative of positive cooperativity because of better fit (p=0.0216) to the Hill equation (Weiss, 1997) (compare Figure 2B and Figure 2\u2014figure supplement 1C; Table 1 and Supplementary file 1). Because of the low level of enzymatic activity towards the unacetylated nucleosomes we could not make a statistically significant comparison between the Hill and Michaelis-Menten fits. There have been limited studies of MLL1C activity on nucleosomes (Park et al., 2019; Patel et al., 2011; Xue et al., 2019), so an overlooked potential allostery is understandable given the many possible interactions between this enzyme complex and substrate (Lee et al., 2021; Park et al., 2019).\n\n**Table 1.**\n Steady-state Hill kinetic parameters.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Substrate</th>\n      <th>K0.5 (\u03bcM)</th>\n      <th>kcat (min\u20131)</th>\n      <th>h (Hill coefficient)</th>\n      <th>R2</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>H3 \u2022 H3</td>\n      <td>0.13 \u00b1 0.06</td>\n      <td>0.0018 \u00b1 0.0004</td>\n      <td>1.213 \u00b1 0.3430</td>\n      <td>0.8810</td>\n    </tr>\n    <tr>\n      <td>H3 K9ac/14ac/18ac</td>\n      <td>0.12 \u00b1 0.02</td>\n      <td>0.0304 \u00b1 0.0036</td>\n      <td>1.741 \u00b1 0.3528</td>\n      <td>0.9228</td>\n    </tr>\n    <tr>\n      <td>H3K4me1</td>\n      <td>n.d.*</td>\n      <td>n.d.*</td>\n      <td>n.d.*</td>\n      <td>0.3186</td>\n    </tr>\n    <tr>\n      <td>H3K4me1 K9ac/14ac/18ac</td>\n      <td>0.14 \u00b1 0.008</td>\n      <td>0.0092 \u00b1 0.0004</td>\n      <td>2.032 \u00b1 0.1333</td>\n      <td>0.9920</td>\n    </tr>\n    <tr>\n      <td>H3K4me2</td>\n      <td>n.d.*</td>\n      <td>n.d.*</td>\n      <td>n.d.*</td>\n      <td>\u20130.1746</td>\n    </tr>\n    <tr>\n      <td>H3K4me2 K9ac/14ac/18ac</td>\n      <td>0.042 \u00b1 0.005</td>\n      <td>0.0005 \u00b1 0.00004</td>\n      <td>5.349 \u00b1 2.682</td>\n      <td>0.8155</td>\n    </tr>\n    <tr>\n      <td>H3K4me3</td>\n      <td>n.d.*</td>\n      <td>n.d.*</td>\n      <td>n.d.*</td>\n      <td>n.d.*</td>\n    </tr>\n    <tr>\n      <td>H3K4me3 K9ac/14ac/18ac</td>\n      <td>n.d.*</td>\n      <td>n.d.*</td>\n      <td>n.d.*</td>\n      <td>n.d.*</td>\n    </tr>\n  </tbody>\n</table>\n\n_*= methylation signal was indistinguishable from the background: kinetic parameters could not be determined._\n\nOn examining enzymatic parameters in detail, we noted that although overall kcat was ~17 fold greater for homotypic H3triac (over unmodified, H3 \u2022 H3) nucleosomes, the K0.5 values (substrate concentration at half-maximal velocity/half-saturation for an allosterically regulated enzyme) were indistinguishable (Table 1). Therefore, although MLL1C catalytic efficiency toward H3triac nucleosomes was enhanced by an increase in kcat, this catalytic efficiency was not driven by K0.5, which suggested no increase in relative binding affinity. To further examine this, we returned to the dCypher approach to examine potential binding between the MLL1C query and a selection of nucleosome targets: H3 \u2022 H3, H3N\u220632 (lacking the first 32 residues of H3), Tailless (trypsin-digested nucleosomes to remove N- and C-terminal histone tails), and H3triac. At 50 mM NaCl, we observed no compelling difference in MLL1C binding to any of these targets (Figure 2C and Figure 2\u2014figure supplement 1E). This is agreed with structural studies where binding between MLL1C and the nucleosome occurs primarily through interactions with DNA and, to a lesser degree, the H4 N-terminal tail (Lee et al., 2021; Park et al., 2019). Thus, the increased H3K4 methylation observed when the H3 N-terminal tail was acetylated is not due to enhanced MLL1C-nucleosome binding. Instead, H3 acetylation likely released the histone tail from the nucleosome, thereby increasing the apparent H3K4 concentration for MLL1C and enhancing methylation.\n\nTo definitively explore if the MLL1C methylation of H3K4 in H3triac nucleosomes was responding to cis and/or trans tail acetylation, we synthesized heterotypic substrates with only one H3K4 residue available in the cis or trans H3ac context (i.e. [H3triac \u2022 H3K4me3] vs. [H3 \u2022 H3tetraac]). Using these substrates with MLL1C, we observed >threefold enhanced methylation (over [H3 \u2022 H3] or [H3 \u2022 H3K4me3]) when H3 tail acetylation was cis but no significant impact when trans (Figure 2D). This would support a model where H3 acetylation on the same tail releases H3K4 for methylation by MLL1C and appear to exclude a significant contribution from trans-tail mechanisms.\n\n### Cellular level of H3K4 methylation is coupled to H3 N-terminal tail hyperacetylation\n\nThe above data suggested a molecular model for how the H3 N-terminal tail, via cis acetylation, becomes available for H3K4 reader binding or enzymatic modification in vitro. To determine if such acetylation could function as an accessibility switch in vivo, we developed a novel targeted middle-down mass spectrometry method to provide a single molecule quantitative measure of histone tail modification. We applied this method to acid-extracted histones from asynchronous MCF-7 breast cancer cells to measure the relationship between H3K4 methylation and tail acetylation on the same H3 proteoforms (Holt et al., 2021; Smith et al., 2013). As expected (Garcia et al., 2007; Peach et al., 2012; Young et al., 2009), the absolute amounts of H3K4me3 and higher Kac states (3ac, 4ac, and 5ac) across adjacent lysine residues were extremely low (Figure 3\u2014figure supplement 1A). Nonetheless, H3K4me3 (<1% of total H3) was strictly associated with molecules that contained multiple acetylations (also <1% of total H3; Figure 3A). Given this relationship, we next addressed the hypothesis that increased lysine acetylation may release the H3 tail for more effective H3K4 methylation (i.e. acetylation precedes methylation). We treated MCF-7 cells with the KDAC inhibitor sodium butyrate and collected samples at multiple time points to measure the levels of H3K4 methylation with cis acetylation. H3 poly-acetylation rapidly increased upon butyrate treatment (Figure 3\u2014figure supplement 1B and Supplementary file 2), as expected (Holt et al., 2019; Young et al., 2009). We observed an increase in all H3K4 methyl states relative to the unmodified state concomitant with increasing states of H3 acetylation (Figure 3B\u2013C and Supplementary file 2), while H3K4me3 levels most dramatically increased in tandem with the 5ac H3 state (Figure 3D). An example of tandem mass spectra at each acetyl degree, showing the C4+1 ion series from which K4 stoichiometry is measured, is shown in Figure 3C. These findings support a direct link, where acetylation releases nucleosome-bound H3 tails to localized H3K4 methyltransferases for subsequent methylation (Figure 4).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/82596/elife-82596-fig3-v2.jpg)\n\n**Figure 3.:** (A) Occupancy of H3K4 methyl states (me0-1-2-3) within each H3 acetyl state (0ac to 5ac) in asynchronous MCF-7 cells. (B) Occupancy of H3K4 methyl states within each H3 acetyl state after butyrate treatment (60 min). Asterisks represent <i>p-values <0.05. (C) Representative tandem mass spectra of the targeted C4+1 fragment ion series (474 m/z unmodified; 488 m/z me1; 502 m/z me1; 516 m/z me3). Each spectrum is an average of MS2 spectra of the indicated H3 acetyl states after 60 min of butyrate treatment. K4 occupancy stoichiometry is directly correlated with H3 acetylation state and the targeted MS approach provides excellent signal-to-noise for confident quantitation. (D) Time course of H3K4me3 accumulation with respect to each H3 acetyl state after butyrate treatment. See Methods for further information on data acquisition and analysis. All data were collected in biological triplicate with error bars representing SEM.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/82596/elife-82596-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A - B) Each acetyl state of acid-extracted H3 from 0ac to 5ac is represented as a percent of total H3 before/after 60 min treatment of asynchronous MCF-7 cells with 5 mM sodium butyrate. (C) Occupancy of H3K4 methyl states (me0-1-2-3) within each H3 acetyl state (0ac to 5ac) in asynchronous HEK-293 cells. (D) Occupancy of H3K4 methyl states within each H3 acetyl state after butyrate treatment (120 min) in asynchronous HEK-293 cells. (E) Percentage of (K9ac, K14ac, K18ac) proteoforms within 3ac to 5ac acetyl states of H3.1 \u00b1 butyrate treatment in HEK-293 cells. N=3 and error bars are SEM for all data.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/82596/elife-82596-fig4-v2.jpg)\n\n**Figure 4.:** Nucleosomal DNA is represented in black; each histone is labeled, with the core histone N-terminal tails colored to distinguish. MLL1 complex (MLL1C) is in purple.\n\nTo explore whether other H3 lysine methyl marks are similarly affected by H3 acetylation, we examined the co-occurrence of H3K9me1-me2-me3 with increasing H3 acetyl states \u00b1 butyrate treatment in asynchronous HEK-293 cells (Figure 3\u2014figure supplement 1C\u2013D; Supplementary file 3). In contrast to findings with H3K4me3, H3K9me3 did not accumulate with hyperacetylated H3 proteoforms (i.e. 3ac, 4ac, and 5ac). Recent in vitro studies showed tested H3K9 methyltransferases have increased activity to partially acetylated substrates (Trush et al., 2022), so our MS data would suggest this is not a common in vivo mechanism: explanations could include that K9 was generally acetylated (and thus occupied) during histone tail release (all penta-acetylated (5ac) H3 proteoforms consisted of acetylation at H3K9, K14, and K18 at minimum (Figure 3, Figure 3\u2014figure supplement 1E and Supplementary file 4)); or that H3K9 methyltransferases, in contrast to H3K4 methyltransferases, were not generally localized to regions that will accumulate butyrate-induced hyperacetylation.\n\nTaken together, these findings demonstrate a specific cis-dependent H3ac regulatory switch that functions to control H3K4 methylation output (Figure 4). We posit that such a \u2018chromatin-switch\u2019 is important to the ability of cells to translate short-term acetylation signals at gene promoters to longer-term heritable marks of epigenetic memory (Greer et al., 2014; H\u00f6rmanseder et al., 2017; Muramoto et al., 2010; Ng et al., 2003).\n\n## Discussion\n\nWhile previous investigations identified a link between H3K4 methylation and H3 acetylation in diverse species (Garcia et al., 2007; Nightingale et al., 2007; Strahl et al., 1999; Taverna et al., 2007; Young et al., 2009) the molecular basis for this link was unknown, and we posit the H3 acetyl \u2018chromatin switch\u2019 defined herein is conserved across eukaryotes. Our new understanding of the dynamic structure of nucleosome histone tails, alternating between collapsed (i.e. nucleosome-bound) and accessible forms (Marunde et al., 2022a; Morrison et al., 2018), has made more plausible the notion that tail availability could be driven by combinatorial cis acetylation to directly promote H3K4 methylation. Histone tail lysine acetylation (Kac) can directly recruit residue-specific readers, e.g., bromodomains (Musselman et al., 2012), but acetylation also neutralizes the positive charge on lysine residues and relieves their interaction with negatively charged DNA (i.e. altering the histone tail-DNA binding equilibrium) (Marunde et al., 2022a; Morrison et al., 2018). In the nucleosome context, this decreased histone-DNA binding supports the increased engagement of reader domains that have no direct affinity for the Kac. Conversely, isolated histone tail peptides are \u2018constitutively open\u2019 (no DNA to engage), and thus not subject to this mode of regulation.\n\nIn this study, we showed that hyperacetylation of the H3 N-terminal tail promoted rapid accumulation of H3K4 methylation in cis, most likely by increasing the availability of the substrate residue to the MLL1C active site (Figure 4). This finding was supported by our in vitro enzymatic and in vivo mass spectrometric analyses. Methylation assays with MLL1C revealed significantly enhanced enzyme activity towards nucleosome substrates with co-incident acetylated (H3triac) over unmodified H3 (Figure 2A\u2013B; Table 1). dCypher assays demonstrated that the acetylation-mediated increase in H3K4 methylation does not involve stabilized interactions between MLL1C and the nucleosome (Figure 2D). And providing major insight, heterotypic nucleosomes containing two distinct PTM-defined forms of histone H3 definitively showed that MLL1C activity was only enhanced in a cis H3 N-terminal triacetylation context (Figure 2D). In agreement with these in vitro findings, middle-down mass spectrometry showed that H3 hyperacetylation and H3K4 methylation co-occurred on the same histone tails in actively cycling cells; furthermore, upon butyrate treatment, H3K4 methylation increased for the most highly acetylated proteoforms (Figure 3). The in vivo relationship required higher degrees of acetylation (preferring at least four acetyl groups per molecule: e.g. H3K9acK14acK18acK23acK27ac) for the most effective conversion to the H3K4me3 state. This could be a function of yet to be explained in vivo acetylation hierarchies by KATs that are outside the scope of this study but will be important to resolve. Together with binding studies that identify the positive impact of cis H3 tail hyperacetylation on H3K4 reader engagement (Figure 1 and Figure 1\u2014figure supplement 1; Marunde et al., 2022a; Morrison et al., 2018), our findings suggest a molecular switch that governs when and where the histone H3 N-terminus is available for H3K4-related transactions. Such a switch could be used to establish and heritably maintain the location and function of transcriptional promoters across the genome.\n\nA continued observation from this study is that the binding preference of readers (in this case PHD-fingers that engage histone H3K4) narrows on nucleosomes relative to histone peptides (Figure 1 and Figure 1\u2014figure supplement 1; Marunde et al., 2022a; Morgan et al., 2021). Such differences highlight the importance of using a more representative target to identify the most likely/physiologically relevant interactions. However, we also add to the literature confirming the importance of a nucleosome substrate for enzymatic studies (Strelow et al., 2016; St\u00fctzer et al., 2016). In this regard our steady-state kinetic methylation assays with MLL1C revealed an intriguing (and previously undescribed) positive cooperativity with its preferred nucleosome substrates (Figure 2B vs. Figure 2\u2014figure supplement 1C). It is important to consider the suggestion that allosteric factors could regulate interactions between MLL1C and the nucleosome, especially since previous kinetic analyses of this [enzyme: substrate] pair did not address such behavior (Park et al., 2019; Xue et al., 2019). However, positive cooperativity was not evident at the level of [MLL1C: nucleosome] binding, which was independent of substrate identity (i.e. \u00b1H3triac) at ionic conditions similar to the catalytic assay (Figure 2C). Still to be determined are the signals that drive and regulate this cooperativity and its function in MLL1-catalyzed methylation, especially in a higher-order chromatin context.\n\nTaken together, our study highlights a previously unrecognized regulatory mechanism for how writers might engage the histone H3 tail in vivo. Although this work focused on H3K4, it will be important to ascertain the consequence of acetylation (or acylation)-mediated changes in accessibility and the function of modifiers and readers of the other lysines on H3, as well as on the other core histones (H2A, H2B, and H4). Underscoring the need for such studies, we note recent in vitro analyses employing unmodified nucleosomes sequentially targeted by purified KATs and KMTs suggesting that the acetylation landscape can impact multiple methyltransferases (Trush et al., 2022). While that study reported enhanced G9a activity towards H3K9 as a function of p300-mediated histone acetylation, our mass spectrometric analysis from cells did not show a connection between H3K9me3 and H3 hyperacetylation (Figure 3\u2014figure supplement 1C\u2013D). The field will require a more detailed analysis of the in vivo contributions of various KATs/KDACs to regulate histone tail accessibility (in cis and/or trans) for other chromatin-modifying enzymes to further uncover the molecular details of any sequential histone code.\n\nFinally, we note that multiple studies have identified H3K4 methylation and H3 acetylation as active marks because of their co-occupancy on the promoters and gene bodies of transcribed genes (Santos-Rosa et al., 2002; Strahl et al., 1999; Wozniak and Strahl, 2014). Our findings agree with these observations, but also uncover a previously unrecognized mechanism of H3 cross-talk that impinges on fundamental functions of H3 acetylation and K4 methylation in gene regulation. While this work shows the impact of cis tail H3 acetylation on the H3K4 writer MLL1, we note a companion study highlighting how the resulting PTM signature (cis >> trans-H3K4me3triac) promotes BPTF-nucleosome engagement (Marunde et al., 2022a). Given its central importance, we predict this mechanism may be a target for dysregulation in human disease.\n\n## Methods\n\n### Expression and purification of GST-tagged PHD reader proteins\n\nExpression constructs for GST-tagged PHD domains from KDM7A (Uniprot #Q6ZMT4; residues 1\u2013100), DIDO1 (Uniprot #Q9BTC0; residues 250\u2013340), and MLL5 (Uniprot #Q8IZD2; residues 100\u2013180) were synthesized in a pGEX-4T-1 vector (BioMatik Corporation) and provided by Dr. Mark T. Bedford (UT MD Anderson Cancer Center). Recombinant proteins were expressed and purified as described (Jain et al., 2020). See Supplementary file 5 for details about the constructs.\n\n### Expression, purification, and assembly of the MLL1 core complex (MLL1C)\n\nMethods for the expression, purification, and assembly of the MLL1 core complex (MLL1C: MLL1 SET domain, WDR5, RbBP5, Ash2L, and DPY30) were adapted from published protocols (Usher et al., 2021). A polycistronic recombinant expression construct containing the MLL1 SET domain (Uniprot Q03164; residues 3745\u20133969), WDR5 (Uniprot P61964; residues 2\u2013334), RbBP5 (Uniprot Q15291; residues 1\u2013538), and Ash2L (Uniprot Q9UBL3-3; residues 1\u2013534) in pST44 vector (aka. MWRA construct) was a kind gift from Dr. Song Tan (Tan et al., 2005). WDR5 was cloned with an N-terminal hexahistidine (6HIS) tag and TEV protease site to enable purification by immobilized metal affinity chromatography (IMAC), and tag removal by enzymatic cleavage. See Supplementary file 5 for details about the constructs. Rosetta pLysS E. coli cells were transformed with the plasmid and grown on LB plates with 50 \u03bcg/mL carbenicillin. Single colonies were used to inoculate 50 mL starter cultures of Terrific Broth (TB) containing 50 \u03bcg/mL carbenicillin and grown at 37 \u00b0C for 16 hr. This culture was transferred to 1 L of TB+ carbenicillin and grown to OD600 ~0.6 (37\u00b0C, 200 RPM, ~4 hr). Recombinant protein expression was induced with 1 mM Isopropyl \u03b2-D-1-thiogalactopyranoside (IPTG, Sigma; 16 \u00b0C, 200 RPM, 20 hr). Cells were harvested by centrifugation (5000 RPM, 4 \u00b0C) and flash frozen in liquid nitrogen.\n\nFrozen cell pellets were resuspended in 50 mL of lysis buffer (50 mM Tris-HCl pH 7.5, 300 mM NaCl, 30 mM imidazole, 3 mM dithiothreitol, and 1 \u00b5M ZnCl2) containing 0.5 mg/mL lysozyme (Sigma), 250 U Pierce Universal Nuclease (Thermo Fisher), and an EDTA-free protease inhibitor cocktail (Roche) and rotated at 4 \u00b0C for 1 hr. The resultant mixture was then sonicated [five cycles of 30 s on/30 s off at 50% output] and centrifuged at 4 \u00b0C, 15,000 RPM for 35 min. The clarified lysate has flowed over a 5 mL HisTrap nickel column (Cytiva) using an AKTA Pure FPLC (Cytiva) at 0.5 mL/min; all FPLC steps were conducted at 4 \u00b0C. Unbound molecules were removed with 20 column volumes of wash buffer (WB: 50 mM Tris-HCl, pH 7.5, 300 mM NaCl, 30 mM imidazole, 3 mM DTT, and 1 \u00b5M ZnCl2 at 2 mL/min). The 6HIS-tagged MWRA was eluted in a 15-column volume linear gradient from WB to Elution Buffer (WB+ 500 mM imidazole) at 2 mL/min. Fractions containing 6HIS-tagged MWRA were identified by SDS-PAGE, pooled, and supplemented with 6HIS-tagged TEV protease (purified as described: Nautiyal and Kuroda, 2018) at a 1:100 enzyme to substrate molar ratio to cleave the 6HIS-tag on WDR5. This mixture was dialyzed against three changes of WB (each 2 L for at least 4 hr at 4 \u00b0C) and 6HIS-TEV removed from cleaved MWRA via IMAC (Usher et al., 2021). MWRA flow-through protein solution was concentrated to ~15 mL using a 30 kDa MWCO centrifugal filter (EMD Millipore), ensuring not to concentrate to where the solution became yellow/cloudy and viscous. MWRA complex was resolved over a HiLoad 16/60 Superdex 200 pg gel filtration (GF) column (Cytiva) pre-equilibrated in 20 mM Tris-HCl, pH 7.5, 300 mM NaCl, 1 mM TCEP, and 1 \u00b5M ZnCl2. Fractions containing stoichiometric MWRA sub-complex were identified by SDS-PAGE, pooled, and concentrated to ~15 mL.\n\nHisDPY30 was expressed, purified, and cleaved to remove the 6HIS-tag as described (Patel et al., 2009; Usher et al., 2021). A twofold molar excess of DPY30 was added to the MWRA sub-complex and incubated on ice for 1 hr. Following incubation, the resulting MLL1C was isolated by gel filtration as described for MWRA, with fractions containing the stoichiometric complex identified by SDS-PAGE, pooled, concentrated to ~10 \u00b5M, and flash frozen. For dCypher experiments with MLL1C, the 6HIS-tag was retained on DPY30.\n\n### Peptides\n\nAll peptides were synthesized at the UNC peptide synthesis core facility (RRID: SCR_017837), using Fmoc solid phase synthesis, on an automated peptide synthesizer (PTI Symphony or CEM Liberty Blue). The peptides were purified by preparative RP-HPLC and characterized by MALDI-TOF MS and analytical HPLC.\n\n### PTM-defined nucleosomes\n\nAll PTM-defined nucleosomes (Supplementary file 5; homotypic unless stated otherwise) were from the dNuc or versaNuc portfolios (EpiCypher). PTMs were confirmed by mass-spectrometry and immunoblotting (if an antibody was available) (Goswami et al., 2021; Marunde et al., 2022b; Marunde et al., 2022a; Weinberg et al., 2019).\n\nNucleosomes with methyllysine analogs (MLA) at H3K4 were created by the versaNuc approach (Marunde et al., 2022a). In brief, histone H3 peptides (aa1-31; A29L) containing K4C and any PTMs of interest were site-specifically reacted with the corresponding haloalkylamine: (2-bromoethyl) trimethyl ammonium bromide for KCme3; 2-chloro-N,N-dimethyl-ethylamine hydrochloride for KCme2; or 2-chloroethyl(methyl)ammonium chloride for (KCme1) under SN2 reaction conditions as previously (Simon, 2010; Simon and Shokat, 2012), and purified for individual ligation to an H3 tailless nucleosome precursor (H3.1N\u039432 assembled on 147 bp 5\u2019 biotinylated 601 DNA; #16\u20130016). The resulting nucleosomes (assembled at 50\u2013100 \u03bcg scale) contained minimal free DNA (<5%), undetectable levels of peptide precursor, and \u226590% fully-defined full-length H3.1 (e.g. Figure 2\u2014figure supplement 1D\u2013E).\n\nHeterotypic nucleosomes were assembled from PTM-defined histone octamers containing N-terminally bridged H3 dimers, and the bridge was removed in a scarless manner by approaches to be described elsewhere (Manuscript in Preparation). Heterotypic identity was confirmed at all synthesis steps by analyses additional to those used for homotypics, including Nuc-MS on representative final nucleosomes (Schachner et al., 2021). Heterotypic nomenclature describes each PTM-defined histone in the nucleosome, such that [H3K4me3K9acK14acK18ac \u2022 H3] vs. [H3K4me3 \u2022 H3K9acK14acK18ac] contain the same total PTM complement but distributed cis or trans on the H3 N-termini.\n\n### dCypher assays\n\ndCypher binding assays with PTM-defined nucleosomes were performed under standard conditions that titrate query (e.g. epitope-tagged reader domain(s)) to a fixed concentration of target (e.g. biotinylated PTM-defined nucleosome) with the appropriate Alpha Donor and Acceptor beads (Perkin Elmer) (Jain et al., 2020; Marunde et al., 2022b; Weinberg et al., 2019). Binding curves [query: target] were generated using a non-linear 4PL curve fit in Prism 9.0 (GraphPad). For each query, the relative EC50 (EC50rel) and hillslope values were derived from the best binding target. EC50rel is the half-maximal signal for the specified target. Where necessary, we excluded query concentration values determined to be beyond a query\u2019s hook point (signal inhibition due to query exceeding bead saturation). The EC80rel was selected as the optimal probing concentration for discovery screens because of the robust signal-to-background and to provide the best opportunity to bind targets without saturating the primary target signal. To compute EC80rel values, we used the formula ECFrel = (F/(100 \u2013 F))1/H \u00d7 EC50rel; F=80; and H=hillslope.\n\nBriefly, 5 \u03bcL of GST-tagged reader domain was incubated with 5 \u03bcL of 10 nM biotinylated nucleosomes (e.g. EpiCypher #16\u20139001) for 30 min at room temperature in 20 mM HEPES pH 7.5, 250 mM NaCl, 0.01% BSA, 0.01% NP-40, 1 mM DTT in a 384-well plate. A mix of 10 uL of 2.5 \u03bcg/mL glutathione acceptor beads (PerkinElmer, AL109M) and 5 \u03bcg/mL streptavidin donor beads (PerkinElmer, 6760002) was prepared in 20 mM HEPES pH 7.5, 250 mM NaCl, 0.01% BSA, 0.01% NP-40 and added to each well. The plate was incubated at room temperature in subdued lighting for 60 min, and AlphaLISA signal was measured on a PerkinElmer 2104 EnVision (680 nm laser excitation, 570 nm emission filter \u00b1 50 nm bandwidth). Each binding interaction was performed in duplicate in a 20 \u00b5L mix in 384 well plates.\n\nMLL1C binding assays (Figure 2C) were performed as above except using Nickel-chelate acceptor beads (10 \u03bcg/mL; Perkin Elmer AL108M), streptavidin donor beads (20 \u03bcg/mL; Perkin Elmer) and modified assay buffer (20 mM Tris pH 7.5 + 50 mM NaCl, 0.01% BSA, 0.01% NP-40, and 1 mM DTT); [NaCl] was optimized via a titration assay and 50 mM chosen for subsequent analyses.\n\n### In vitro methylation assays\n\nMethylation assays (Shinsky et al., 2015) were performed at 15 \u00b0C for 3 hr using purified MLL1C enzyme and nucleosome substrate in a reaction volume of 20 \u00b5L [in 50 mM HEPES, pH 8.0, 1 mM DTT, 1 \u00b5M ZnCl2; 10 \u00b5M of 9:1 S-adenosyl-L-methionine (SAM) p-toluenesulfonate salt (Sigma) to S-adenosyl-L-[methyl-3H]-methionine ([methyl-3H]-SAM) (PerkinElmer)]. Concentrations of MLL1C and NaCl were optimized from 2D-titration methylation assays at [0, 4, and 40 nM MLL1C] and [0, 50, and 300 mM NaCl] with 2 \u00b5g of the chicken oligo-nucleosome substrate (Figure 2\u2014figure supplement 1A\u2013B; Morris et al., 2007). It is notable that, across a range of concentrations, MLL1C stability decreases as temperature increases and methyltransferase activity has been reported to be enhanced in sub-physiological NaCl concentrations (Namitz et al., 2019; Shinsky et al., 2015). For endpoint methylation assays, 4 nM MLL1C and 100 nM nucleosome substrates were tested as above. For steady-state kinetics, 4 nM MLL1C was incubated with a nucleosome substrate titration (0, 23.4, 35.1, 52.7, 79, 119, 178, 267, and 400 nM) and reactions quenched with 5 \u00b5L of 5 X SDS loading dye. For steady-state kinetic assays, 0.5 \u00b5g bovine serum albumin was added to each reaction after quenching to act as a loading guide. To analyze methylation, quenched reactions were resolved by 15% Tris-Glycine SDS-PAGE. Gels were stained with Coomassie dye and bands containing mononucleosomes were excised (with serum albumin as a supporting lane marker) and incubated in a solution of 50% Solvable (PerkinElmer) and 50% water at 50 \u00b0C for 3 hr. Mixture and gel slices were then combined with 10 mL of Hionic-Fluor scintillation fluid (PerkinElmer), dark-adapted overnight, and radioactivity measured on a Liquid Scintillation Counter (Beckman Coulter).\n\n### Middle-down mass spectrometry of MCF-7 and HEK-293 cells \u00b1 KDAC inhibition\n\nMCF-7 breast cancer cells (ATCC HTB-22) were grown in MEM (Gibco) supplemented with 10% fetal bovine serum (VWR), 100 I.U. penicillin, 100 \u00b5g/mL streptomycin (Corning), 0.01 mg/mL human recombinant insulin (Gibco), and 5 \u00b5g/mL plasmocin (Invivogen) at 37 \u00b0C and 5% CO2. HEK-293 (ATCC CRL-1573) was grown in DMEM (Gibco) supplemented with 10% fetal bovine serum (Corning), 100 I.U. penicillin, and 100 \u00b5g/mL streptomycin (Gibco) at 37 \u00b0C and 5% CO2. Both cell lines were authenticated via STR profiling and confirmed to be Mycoplasma negative.\n\nFor mass spectrometric (MS) analysis \u00b1 KDAC inhibition, cells were cultured in 150 mm dishes to ~80% confluence and treated with 5 mM sodium butyrate (or equivalent volume of water) in triplicate for 0, 10, 20, 30, 60, 120 min. Cells were washed with cold PBS (11.9 mM phosphates, 137 mM NaCl, 2.7 mM KCl) to remove residual sodium butyrate, harvested by scraping, and flash frozen in liquid nitrogen. Histones were acid extracted after nuclei isolation as described (Holt et al., 2021). Isolated histones were resuspended in 85 \u00b5L 5% acetonitrile, 0.2% trifluoroacetic acid (TFA), and resolved by offline high-performance liquid chromatography (HPLC) as described (Holt et al., 2021). Reverse Phase HPLC fractionation was performed with a U3000 HPLC system (Thermo Fisher) with a 150 \u00d7 2.1\u2013mm Vydac 218TP 3 \u00b5m C18 column (HiChrom # 218TP3215), at a flow rate of 0.2 mL/min using a linear gradient from 25 \u2013 60% B in 60 min. The composition of buffers used was A: 5% acetonitrile and 0.2% TFA and B: 95% acetonitrile and 0.188% TFA. After chromatographic separation and fraction collection, histone H3.1 was selected, diluted in 100 mM ammonium acetate (pH = 4), and digested with Glu-C protease (Roche) at 10:1 protein:enzyme for 1 hr at room temperature prior to mass spectrometric analysis.\n\nThe digested samples were diluted to 2 \u00b5g/\u00b5L. Online HPLC was performed on a U3000 RSLC nano Pro-flow system using a C3 column (Zorbax 300 SB-C3, 5 \u00b5m; Agilent). Samples were maintained at 4 \u00b0C and 1 \u00b5L injected for each analysis using a microliter pickup. A linear 70 min gradient of 4\u201315% B was used (Buffer A: 2% acetonitrile, 0.1% formic acid and Buffer B: 98% acetonitrile, and 0.1% formic acid) with a flow rate of 0.2 \u00b5L/min. The column eluant was introduced into an Orbitrap Fusion Lumos mass spectrometer (Thermo Fisher) by nano-electrospray ionization. A static spray voltage of 1900 V and an ion transfer tube temperature of 320 \u00b0C were set for the source.\n\nA Fusion Lumos mass spectrometer was used to generate MS data. The 9th charge state of histone H3 was targeted for analysis. MS1 analysis was acquired in the orbitrap with a normal mass range and a 60 k resolution setting in positive ion mode. An Automatic Gain Control (AGC) target of 5.0E5 with a 200 ms maximum injection time, three microscans, and a scan range of 585\u2013640 m/z was used to identify desired ions for fragmentation. MS2 acquisition was performed in both orbitrap and ion trap modes. Both modes used electron transfer dissociation (ETD), a reaction time of 18ms, and an injection time of 200 ms. A normal scan range was used for the orbitrap mode with a resolution setting of 30 k and an AGC target of 5.0E5, with two micro scans. A narrow scan range of 470\u2013530 m/z, targeting ions indicative of K4 modification states, was used for the ion trap mode MS2 with an ACG target of 3.0E4, quadrupole isolation, maximum injection time of 100ms, and eight microscans.\n\nThese MS methods were used with two technical replicates per biological replicate (n=3). An MS ion trap mode with a targeted mass list was used to increase sensitivity to identify known low-abundance K4me3-containing proteoforms. The ion trap MS2 spectra were averaged for each H3 acetyl state based on known retention times, and the intensities of ions indicative of the K4 methylation states were manually recorded. Retention times for each acetyl state were approximated as 0ac 35\u201340 min, 1ac 45\u201355 min, 2ac 55\u201360 min, 3ac 62\u201368 min, 4ac 69\u201373 min, and 5ac 74\u201378 min. Precursor mass was used as an additional confirmation and filter of the correct acetyl state. For scans yielding low signal and high noise (i.e. 5ac at 0 min butyrate treatment), data were manually curated before averaging. Within acetyl states, the relative proportion of fragment ions for unmodified, mono-, di-, and tri-methylation of the H3K4 ion at respective m/z of 474, 488, 502, and 516 were recorded per MS run. Values were averaged across replicates of the same conditions and normalized to one hundred percent. A two-tailed t-test was used for significance. Raw MS data is available at (ftp://massive.ucsd.edu/MSV000089089/, ftp://massive.ucsd.edu/MSV000091578/).\n\nThe MS method used here is highly targeted to most effectively address the mechanistic or single molecule link between H3 acetylation degree and H3K4 occupancy. The strategy used prioritizes the optimization of efficient selection of acetyl degree and of the signal-to-noise for the C4+1 ion series. This is to the exclusion of other information that can typically be derived from untargeted approaches. For example, because trapping mass spectrometers are limited in the number of ions, we dispose of unnecessary ions to the gas phase to enrich the C4 ions series. This method provides a direct measure of the stoichiometry of K4un, K4me1, K4me2, and K4me3 within an acetyl state.\n",
+      "created_at": "2025-12-04T01:38:28.409232Z"
+    },
+    {
+      "id": "0df404f1-9160-47f8-9a02-a08cb9e2ebb3",
+      "submission_id": "d4171d44-6b57-4c61-a8cd-91dde932ba0b",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Xiaobing Shi, https://ror.org/00wm07d60 Van Andel Institute United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.82596.sa0](https://doi.org/10.7554/eLife.82596.sa0)\n\nThis is a fundamental study revealing that cis H3 tail acetylation promotes nucleosome accessibility to histone methyl readers and writers. The findings are supported by compelling evidence providing an explanation for long-observed mechanisms of chromatin crosstalk.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Xiaobing Shi, https://ror.org/00wm07d60 Van Andel Institute United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.82596.sa1](https://doi.org/10.7554/eLife.82596.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"An acetylation-mediated chromatin switch governs H3K4 methylation read-write capability\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by and Jessica Tyler as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe two reviewers have discussed their reviews with one another, and both agreed that all the comments should be experimentally addressed before we can consider publication at eLife. We hope you find these comments helpful for your revision.\n\nReviewer #1 (Recommendations for the authors):\n\n1) The authors propose that cis acetylation affects MLL1C activity on H3K4. Experiments are needed to compare the effect of cis vs trans acetylation of histone H3 tail (using asymmetrically acetylated nucleosome) on H3K4 methylation.\n\n2) If acetylation regulates enzymatic activity through tail accessibility, such an effect can also been observed on H3K9 methyltransferases. This can be tested using the dCypher nucleosomes and G9a or Suv39H enzymes. Also, are increased H3K9 methylation with 4ac or 5ac observed in the HDACi treated MCF-7 cells?\n\n3) The MS data in MCF-7 cells reveal that H3K4 methylation is drastically increased only in the 5-ac but not 3-ac histones. This is inconsistent with the in vitro biochemical data. Experiments are needed to compare the difference between H3 with 5-ac and 3-ac in the in vitro enzymatic assays.\n",
+      "created_at": "2025-12-04T01:38:28.409232Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T01:38:28.409232Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T01:38:28.409232Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "c0e8db7e-99bf-468a-8183-7fa64ddf30e8",
+      "content_id": "c3a09ab0-a7d1-4faa-8a85-43c3d0ab40eb",
+      "claim_id": "C1",
+      "claim": "Histone N-terminal tails exist in dynamic equilibrium between free/accessible and collapsed/DNA-bound states in nucleosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "In nucleosomes, histone N-terminal tails exist in dynamic equilibrium between free/accessible and collapsed/DNA-bound states.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the abstract without specific data in this manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:38:28.409232Z"
+    },
+    {
+      "id": "6d374e68-d5e8-4396-afd9-75a209ce0627",
+      "content_id": "c3a09ab0-a7d1-4faa-8a85-43c3d0ab40eb",
+      "claim_id": "C2",
+      "claim": "The collapsed/DNA-bound state of histone tails impacts histone N-termini availability to the epigenetic machinery.",
+      "claim_type": "EXPLICIT",
+      "source": "The latter state is expected to impact histone N-termini availability to the epigenetic machinery.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as an inference based on the dynamic equilibrium of histone tails.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:38:28.409232Z"
+    },
+    {
+      "id": "8bbdab89-129d-4264-ae5e-b8979786a7f2",
+      "content_id": "c3a09ab0-a7d1-4faa-8a85-43c3d0ab40eb",
+      "claim_id": "C3",
+      "claim": "H3 tail acetylation (K9ac, K14ac, K18ac) is linked to increased H3K4me3 engagement by the BPTF PHD finger.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, H3 tail acetylation (e.g. K9ac, K14ac, K18ac) is linked to increased H3K4me3 engagement by the BPTF PHD finger, but it is unknown if this mechanism has a broader extension.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as known from prior work, though the mechanism's broader applicability is unknown.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:38:28.409232Z"
+    },
+    {
+      "id": "ef5afcb0-0401-4b5d-b828-ac2881d43ec2",
+      "content_id": "c3a09ab0-a7d1-4faa-8a85-43c3d0ab40eb",
+      "claim_id": "C4",
+      "claim": "H3 tail acetylation promotes nucleosomal accessibility to other H3K4 methyl readers beyond BPTF.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show that H3 tail acetylation promotes nucleosomal accessibility to other H3K4 methyl readers, and importantly, extends to H3K4 writers, notably methyltransferase MLL1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by experimental data presented in the manuscript (Figure 1).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:38:28.409232Z"
+    },
+    {
+      "id": "35c77a6b-d438-4011-9234-d6afaabf5a03",
+      "content_id": "c3a09ab0-a7d1-4faa-8a85-43c3d0ab40eb",
+      "claim_id": "C5",
+      "claim": "H3 tail acetylation extends to H3K4 writers, notably methyltransferase MLL1.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show that H3 tail acetylation promotes nucleosomal accessibility to other H3K4 methyl readers, and importantly, extends to H3K4 writers, notably methyltransferase MLL1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by experimental data presented in the manuscript (Figure 2).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:38:28.409232Z"
+    },
+    {
+      "id": "25de9ffb-56e4-4d6c-9f7f-5506b17dfc14",
+      "content_id": "c3a09ab0-a7d1-4faa-8a85-43c3d0ab40eb",
+      "claim_id": "C6",
+      "claim": "The regulation of H3K4 methylation by H3 tail acetylation is not observed on peptide substrates.",
+      "claim_type": "EXPLICIT",
+      "source": "This regulation is not observed on peptide substrates yet occurs on the cis H3 tail, as determined with fully-defined heterotypic nucleosomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data comparing peptide and nucleosome substrates (Figure 1, Figure 2).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:38:28.409232Z"
+    },
+    {
+      "id": "30e87546-ef2f-43a3-8ec6-06a14a40bc14",
+      "content_id": "c3a09ab0-a7d1-4faa-8a85-43c3d0ab40eb",
+      "claim_id": "C7",
+      "claim": "The regulation of H3K4 methylation by H3 tail acetylation occurs on the cis H3 tail.",
+      "claim_type": "EXPLICIT",
+      "source": "This regulation is not observed on peptide substrates yet occurs on the cis H3 tail, as determined with fully-defined heterotypic nucleosomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data using heterotypic nucleosomes (Figure 2D).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:38:28.409232Z"
+    },
+    {
+      "id": "762323cb-e7f0-4ae9-8d29-bb22fcb53115",
+      "content_id": "c3a09ab0-a7d1-4faa-8a85-43c3d0ab40eb",
+      "claim_id": "C8",
+      "claim": "In vivo, H3 tail acetylation is directly and dynamically coupled with cis H3K4 methylation levels.",
+      "claim_type": "EXPLICIT",
+      "source": "In vivo, H3 tail acetylation is directly and dynamically coupled with cis H3K4 methylation levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by mass spectrometry data from cells treated with butyrate (Figure 3).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:38:28.409232Z"
+    },
+    {
+      "id": "63ed98e6-6c3e-4e81-8681-63e87e553607",
+      "content_id": "c3a09ab0-a7d1-4faa-8a85-43c3d0ab40eb",
+      "claim_id": "C9",
+      "claim": "An acetylation 'chromatin switch' on the H3 tail modulates read-write accessibility in nucleosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these observations reveal an acetylation 'chromatin switch' on the H3 tail that modulates read-write accessibility in nucleosomes and resolves the long-standing question of why H3K4me3 levels are coupled with H3 acetylation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion drawn from the combined in vitro and in vivo data presented.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:38:28.409232Z"
+    },
+    {
+      "id": "c7ee22ec-7d42-4799-b899-d4fd127cae1f",
+      "content_id": "c3a09ab0-a7d1-4faa-8a85-43c3d0ab40eb",
+      "claim_id": "C10",
+      "claim": "The acetylation chromatin switch resolves why H3K4me3 levels are coupled with H3 acetylation.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these observations reveal an acetylation 'chromatin switch' on the H3 tail that modulates read-write accessibility in nucleosomes and resolves the long-standing question of why H3K4me3 levels are coupled with H3 acetylation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as a resolution to a long-standing question based on the findings of this study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:38:28.409232Z"
+    },
+    {
+      "id": "70db6a57-2b02-427c-acc2-36a9cee9d2e9",
+      "content_id": "c3a09ab0-a7d1-4faa-8a85-43c3d0ab40eb",
+      "claim_id": "C11",
+      "claim": "Writer-installed post-translational modifications (PTMs) can be recognized by 'reader' proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Writer-installed post-translational modifications (PTMs) can then be recognized by 'reader' proteins and/or removed by 'eraser' enzymes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in the field of epigenetics.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:38:28.409232Z"
+    },
+    {
+      "id": "02622d8a-9fcd-4444-9212-5bde698fbaf5",
+      "content_id": "c3a09ab0-a7d1-4faa-8a85-43c3d0ab40eb",
+      "claim_id": "C12",
+      "claim": "Writer-installed post-translational modifications (PTMs) can be removed by 'eraser' enzymes.",
+      "claim_type": "EXPLICIT",
+      "source": "Writer-installed post-translational modifications (PTMs) can then be recognized by 'reader' proteins and/or removed by 'eraser' enzymes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in the field of epigenetics.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:38:28.409232Z"
+    },
+    {
+      "id": "ed4e7a10-f2e9-41bd-87f5-a8b9e684444d",
+      "content_id": "c3a09ab0-a7d1-4faa-8a85-43c3d0ab40eb",
+      "claim_id": "C13",
+      "claim": "The interplay of PTMs comprises the 'histone code' and has a central function in regulating chromatin organization and activity.",
+      "claim_type": "EXPLICIT",
+      "source": "This interplay of PTMs comprises the 'histone code,' and has a central function in regulating chromatin organization and activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in the field of epigenetics, supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:38:28.409232Z"
+    },
+    {
+      "id": "1d9c425e-9f74-421c-9be4-77eee0ac69cb",
+      "content_id": "c3a09ab0-a7d1-4faa-8a85-43c3d0ab40eb",
+      "claim_id": "C14",
+      "claim": "Methylated/acylated lysine or methylated arginine residues of histones can recruit transcription factors to activate or repress transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, methylated/acylated lysine or methylated arginine residues of histones can recruit transcription factors to activate or repress transcription (Strahl and Allis, 2000; Su and Denu, 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:38:28.409232Z"
+    },
+    {
+      "id": "575b227c-6b32-4a9a-a0a2-8533a887eb95",
+      "content_id": "c3a09ab0-a7d1-4faa-8a85-43c3d0ab40eb",
+      "claim_id": "C15",
+      "claim": "Mitotically phosphorylated serine/threonine residues can regulate reader binding established at earlier stages of the cell cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "mitotically phosphorylated serine/threonine residues can regulate reader binding established at earlier stages of the cell cycle (Rossetto et al., 2012)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:38:28.409232Z"
+    },
+    {
+      "id": "25df6a87-2264-49f9-8eed-d96f8021ec12",
+      "content_id": "c3a09ab0-a7d1-4faa-8a85-43c3d0ab40eb",
+      "claim_id": "C16",
+      "claim": "Ubiquitinated lysine can impact the maintenance of DNA methylation.",
+      "claim_type": "EXPLICIT",
+      "source": "or ubiquitinated lysine can impact the maintenance of DNA methylation (Vaughan et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:38:28.409232Z"
+    },
+    {
+      "id": "ff6b4fd8-090f-4604-bf2c-a251e4f829eb",
+      "content_id": "c3a09ab0-a7d1-4faa-8a85-43c3d0ab40eb",
+      "claim_id": "C17",
+      "claim": "Multivalent interactions with reader proteins can influence chromatin structure and DNA accessibility, thereby regulating gene transcription and other DNA-templated events.",
+      "claim_type": "EXPLICIT",
+      "source": "As the complex language of histone PTMs is dissected, it has become clear that multivalent interactions with reader proteins can influence chromatin structure and DNA accessibility, thereby regulating gene transcription and other DNA-templated events (Su and Denu, 2016; Taylor and Young, 2021; Young et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:38:28.409232Z"
+    },
+    {
+      "id": "2006f2ed-e597-4cdd-9e77-335761adb2cd",
+      "content_id": "c3a09ab0-a7d1-4faa-8a85-43c3d0ab40eb",
+      "claim_id": "C18",
+      "claim": "Combinatorial PTMs can more effectively engage different chromatin-binding modules, promoting distinct outcomes versus either PTM alone.",
+      "claim_type": "EXPLICIT",
+      "source": "In this manner, combinatorial PTMs can more effectively engage different chromatin-binding modules, promoting distinct outcomes versus either PTM alone.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:38:28.409232Z"
+    },
+    {
+      "id": "3e7ac3f5-6c16-41a9-bfa9-9950a14b12f2",
+      "content_id": "c3a09ab0-a7d1-4faa-8a85-43c3d0ab40eb",
+      "claim_id": "C19",
+      "claim": "The bulk of chromatin PTM research has employed histone peptides.",
+      "claim_type": "EXPLICIT",
+      "source": "The bulk of chromatin PTM research has employed histone peptides, even though histones exist in vivo in a heteromeric complex with DNA (i.e. the nucleosome).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the state of the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:38:28.409232Z"
+    },
+    {
+      "id": "e67e5886-e4de-44f5-b4ad-4960d366234a",
+      "content_id": "c3a09ab0-a7d1-4faa-8a85-43c3d0ab40eb",
+      "claim_id": "C20",
+      "claim": "Studying histone PTM engagement in the nucleosome context provides a more accurate understanding of the histone code.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent work, however, is making it increasingly clear that studying histone PTM engagement in the nucleosome context provides a more accurate understanding of the histone code.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by recent work in the field, including citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:38:28.409232Z"
+    },
+    {
+      "id": "8310b690-4332-4c0f-8801-3786c7b1d114",
+      "content_id": "c3a09ab0-a7d1-4faa-8a85-43c3d0ab40eb",
+      "claim_id": "C21",
+      "claim": "The highly charged histone tails interact directly with nucleosomal DNA, restricting access to PTM recognition by reader proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Particularly, the highly charged histone tails interact directly with nucleosomal DNA, restricting access to PTM recognition by reader proteins (Ghoneim et al., 2021; Marunde et al., 2022a; Morrison et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:38:28.409232Z"
+    },
+    {
+      "id": "b8f4e119-a35f-47ef-a12f-bc2aa5c97353",
+      "content_id": "c3a09ab0-a7d1-4faa-8a85-43c3d0ab40eb",
+      "claim_id": "C22",
+      "claim": "Studies with BPTF PHD suggest acetylation releases the H3 N-terminal tail from the nucleosome surface, such that H3K4me3 becomes more readily engaged by the PHD finger.",
+      "claim_type": "EXPLICIT",
+      "source": "Studies with BPTF PHD suggest acetylation releases the H3 N-terminal tail from the nucleosome surface, such that H3K4me3 becomes more readily engaged by the PHD finger (Marunde et al., 2022a; Morrison et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from prior studies, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:38:28.409232Z"
+    },
+    {
+      "id": "d76b34cc-7bb7-40e0-8c31-d7af23de6949",
+      "content_id": "c3a09ab0-a7d1-4faa-8a85-43c3d0ab40eb",
+      "claim_id": "C23",
+      "claim": "Each GST-PHD fusion (KDM7A, DIDO1, MLL5) showed a preference for H3K4-methylated peptides, particularly for higher methyl states.",
+      "claim_type": "EXPLICIT",
+      "source": "As might be expected (Jain et al., 2020), each GST-PHD fusion showed a preference for H3K4-methylated peptides and, particularly, for higher methyl states (i.e. KDM7A bound me2/me3, DIDO1 bound me1/me2/me3, and MLL1 bound me1/me2/me3; Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:38:28.409232Z"
+    },
+    {
+      "id": "92b2412b-0a8f-4c6b-b536-b66fa209f647",
+      "content_id": "c3a09ab0-a7d1-4faa-8a85-43c3d0ab40eb",
+      "claim_id": "C24",
+      "claim": "Each GST-PHD reader (KDM7A, DIDO1, MLL5) was restricted to H3K4me3 over the lower methyl states on nucleosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, each GST-PHD reader was restricted to H3K4me3 over the lower methyl states on nucleosomes (Figure 1B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:38:28.409232Z"
+    },
+    {
+      "id": "8a993ee7-ed7c-4cf7-a347-0d347a687a64",
+      "content_id": "c3a09ab0-a7d1-4faa-8a85-43c3d0ab40eb",
+      "claim_id": "C25",
+      "claim": "Each GST-PHD reader displayed weaker relative binding to H3K4me3 on nucleosomes compared to peptides.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, each GST-PHD reader was restricted to H3K4me3 over the lower methyl states on nucleosomes (Figure 1B) and displayed weaker relative binding (EC50rel: calculated as in Methods) to this PTM (Figure 1\u2014figure supplement 1C\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1\u2014figure supplement 1C\u2013D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:38:28.409232Z"
+    },
+    {
+      "id": "6af26962-3170-4e3b-b6cf-69cb60697adb",
+      "content_id": "c3a09ab0-a7d1-4faa-8a85-43c3d0ab40eb",
+      "claim_id": "C26",
+      "claim": "Co-incident acetylation has no impact on H3K4me3 binding in the peptide context.",
+      "claim_type": "EXPLICIT",
+      "source": "On further examination, we observed no impact of co-incident acetylation on H3K4me3 binding in the peptide context (Figure 1A: compare H3K4me3 to H3K4me3K9acK14acK18ac [hereafter H3K4me3triac]).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:38:28.409232Z"
+    },
+    {
+      "id": "1fa78a48-5a1e-43e6-9a74-69850475ed8c",
+      "content_id": "c3a09ab0-a7d1-4faa-8a85-43c3d0ab40eb",
+      "claim_id": "C27",
+      "claim": "The binding of each GST-PHD reader to nucleosomal H3K4me3 was dramatically enhanced (~10\u201315 fold) by co-incident acetylation (H3K4me3triac).",
+      "claim_type": "EXPLICIT",
+      "source": "In stark contrast, the binding of each GST-PHD reader to nucleosomal H3K4me3 was dramatically enhanced (~10\u201315 fold) by co-incident acetylation (i.e. H3K4me3triac; Figure 1B and Figure 1\u2014figure supplement 1A\u2013B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1B and Figure 1\u2014figure supplement 1A\u2013B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:38:28.409232Z"
+    },
+    {
+      "id": "fe715adf-5297-48cb-afdf-9f353828cc38",
+      "content_id": "c3a09ab0-a7d1-4faa-8a85-43c3d0ab40eb",
+      "claim_id": "C28",
+      "claim": "There was no significant reader domain interaction with either nucleosome lacking H3K4 methylation or 147X601 DNA (nucleosomal DNA) alone.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, there was no significant reader domain interaction with either nucleosome lacking H3K4 methylation or 147X601 DNA (nucleosomal DNA) alone (Figure 1\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:38:28.409232Z"
+    },
+    {
+      "id": "fa115122-80ee-4cb2-81a5-59bbde3aef12",
+      "content_id": "c3a09ab0-a7d1-4faa-8a85-43c3d0ab40eb",
+      "claim_id": "C29",
+      "claim": "MLL1C showed a significant increase in net methylation when the H3 tail was also acetylated in an endpoint assay.",
+      "claim_type": "EXPLICIT",
+      "source": "In an endpoint assay at constant enzyme and substrate concentrations (and [methyl-3H]-SAM donor), we observed a significant increase in net methylation when the H3 tail was also acetylated (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:38:28.409232Z"
+    },
+    {
+      "id": "7843efd1-3546-4736-b74f-0e1645480eed",
+      "content_id": "c3a09ab0-a7d1-4faa-8a85-43c3d0ab40eb",
+      "claim_id": "C30",
+      "claim": "Methylation by MLL1C sequentially decreased towards H3K4 mono-, di-, and tri-methylated nucleosomal substrates, being undetectable on H3K4me3.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, methylation by MLL1C sequentially decreased towards H3K4 mono-, di-, and tri-methylated nucleosomal substrates, being undetectable on H3K4me3 (which also confirmed MLL1C targeting of this specific residue).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:38:28.409232Z"
+    },
+    {
+      "id": "cdb84063-f3f8-45ca-9761-343a8bcc3afa",
+      "content_id": "c3a09ab0-a7d1-4faa-8a85-43c3d0ab40eb",
+      "claim_id": "C31",
+      "claim": "Methyl group incorporation to each H3K4 methyl state substrate was consistently enhanced by accompanying H3triac.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite this, methyl group incorporation to each H3K4 methyl state substrate was consistently enhanced by accompanying H3triac (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:38:28.409232Z"
+    },
+    {
+      "id": "00003445-f1b2-4878-ab7a-4ff6f86e6866",
+      "content_id": "c3a09ab0-a7d1-4faa-8a85-43c3d0ab40eb",
+      "claim_id": "C32",
+      "claim": "Methyllysine analogs (MLAs) \u00b1 H3triac showed no activity as MLL1C substrates, indicating their unsuitability for such studies.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, we also tested the viability of methyllysine analogs (MLAs) (Simon and Shokat, 2012) \u00b1 H3triac as MLL1C substrates and observed no activity, indicating their unsuitability for such studies (Figure 2\u2014figure supplement 1D\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2\u2014figure supplement 1D\u2013E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:38:28.409232Z"
+    },
+    {
+      "id": "5dbdcdfd-dcee-45c6-beca-229ba5a38825",
+      "content_id": "c3a09ab0-a7d1-4faa-8a85-43c3d0ab40eb",
+      "claim_id": "C33",
+      "claim": "Acetylation increased MLL1C methyltransferase activity in steady-state methylation kinetics assays.",
+      "claim_type": "EXPLICIT",
+      "source": "We next measured the steady-state methylation kinetics of MLL1C towards nucleosomes with each H3K4 methyl state \u00b1 H3triac, and again observed that acetylation increased methyltransferase activity (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:38:28.409232Z"
+    },
+    {
+      "id": "2f62ab44-b24c-497a-a9f7-371d7aa3bd99",
+      "content_id": "c3a09ab0-a7d1-4faa-8a85-43c3d0ab40eb",
+      "claim_id": "C34",
+      "claim": "Methylation for the H3triac nucleosomes was indicative of positive cooperativity because of better fit to the Hill equation.",
+      "claim_type": "EXPLICIT",
+      "source": "Using an extra sum-of-squares F-test, methylation for the H3triac nucleosomes was indicative of positive cooperativity because of better fit (p=0.0216) to the Hill equation (Weiss, 1997) (compare Figure 2B and Figure 2\u2014figure supplement 1C; Table 1 and Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by statistical analysis of experimental data shown in Figure 2B and Figure 2\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:38:28.409232Z"
+    },
+    {
+      "id": "067e594a-2873-4c62-930f-4ab5b6fd00c5",
+      "content_id": "c3a09ab0-a7d1-4faa-8a85-43c3d0ab40eb",
+      "claim_id": "C35",
+      "claim": "Overall kcat was ~17 fold greater for homotypic H3triac (over unmodified, H3 \u2022 H3) nucleosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "On examining enzymatic parameters in detail, we noted that although overall kcat was ~17 fold greater for homotypic H3triac (over unmodified, H3 \u2022 H3) nucleosomes, the K0.5 values (substrate concentration at half-maximal velocity/half-saturation for an allosterically regulated enzyme) were indistinguishable (Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by kinetic data shown in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:38:28.409232Z"
+    },
+    {
+      "id": "c621a37c-fc8b-4e42-a616-0e056feba44e",
+      "content_id": "c3a09ab0-a7d1-4faa-8a85-43c3d0ab40eb",
+      "claim_id": "C36",
+      "claim": "The K0.5 values for H3triac and unmodified H3 nucleosomes were indistinguishable.",
+      "claim_type": "EXPLICIT",
+      "source": "On examining enzymatic parameters in detail, we noted that although overall kcat was ~17 fold greater for homotypic H3triac (over unmodified, H3 \u2022 H3) nucleosomes, the K0.5 values (substrate concentration at half-maximal velocity/half-saturation for an allosterically regulated enzyme) were indistinguishable (Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by kinetic data shown in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:38:28.409232Z"
+    },
+    {
+      "id": "a74a3a63-5f47-44cc-b846-22966758955e",
+      "content_id": "c3a09ab0-a7d1-4faa-8a85-43c3d0ab40eb",
+      "claim_id": "C37",
+      "claim": "MLL1C catalytic efficiency toward H3triac nucleosomes was enhanced by an increase in kcat, not driven by K0.5.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, although MLL1C catalytic efficiency toward H3triac nucleosomes was enhanced by an increase in kcat, this catalytic efficiency was not driven by K0.5, which suggested no increase in relative binding affinity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the kinetic data in Table 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:38:28.409232Z"
+    },
+    {
+      "id": "31a15323-202a-4f90-b5c0-01241dbf4267",
+      "content_id": "c3a09ab0-a7d1-4faa-8a85-43c3d0ab40eb",
+      "claim_id": "C38",
+      "claim": "At 50 mM NaCl, there was no compelling difference in MLL1C binding to H3 \u2022 H3, H3N\u220632, Tailless, and H3triac nucleosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "At 50 mM NaCl, we observed no compelling difference in MLL1C binding to any of these targets (Figure 2C and Figure 2\u2014figure supplement 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2C and Figure 2\u2014figure supplement 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:38:28.409232Z"
+    },
+    {
+      "id": "a2148103-adc2-424a-b688-7f0880e40a60",
+      "content_id": "c3a09ab0-a7d1-4faa-8a85-43c3d0ab40eb",
+      "claim_id": "C39",
+      "claim": "Binding between MLL1C and the nucleosome occurs primarily through interactions with DNA and, to a lesser degree, the H4 N-terminal tail.",
+      "claim_type": "EXPLICIT",
+      "source": "This is agreed with structural studies where binding between MLL1C and the nucleosome occurs primarily through interactions with DNA and, to a lesser degree, the H4 N-terminal tail (Lee et al., 2021; Park et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from structural studies, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:38:28.409232Z"
+    },
+    {
+      "id": "4afd7d85-2082-416c-a8e0-7d3c035556d8",
+      "content_id": "c3a09ab0-a7d1-4faa-8a85-43c3d0ab40eb",
+      "claim_id": "C40",
+      "claim": "The increased H3K4 methylation observed when the H3 N-terminal tail was acetylated is not due to enhanced MLL1C-nucleosome binding.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the increased H3K4 methylation observed when the H3 N-terminal tail was acetylated is not due to enhanced MLL1C-nucleosome binding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the binding data in Figure 2C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:38:28.409232Z"
+    },
+    {
+      "id": "93c58a8d-ec83-490d-8c33-e722e4a18fc4",
+      "content_id": "c3a09ab0-a7d1-4faa-8a85-43c3d0ab40eb",
+      "claim_id": "C41",
+      "claim": "H3 acetylation likely released the histone tail from the nucleosome, thereby increasing the apparent H3K4 concentration for MLL1C and enhancing methylation.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, H3 acetylation likely released the histone tail from the nucleosome, thereby increasing the apparent H3K4 concentration for MLL1C and enhancing methylation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the combined binding and kinetic data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:38:28.409232Z"
+    },
+    {
+      "id": "c526b59c-9c32-449b-a89f-2f950ce2e829",
+      "content_id": "c3a09ab0-a7d1-4faa-8a85-43c3d0ab40eb",
+      "claim_id": "C42",
+      "claim": "MLL1C showed >threefold enhanced methylation when H3 tail acetylation was cis ([H3triac \u2022 H3K4me3]) compared to unmodified ([H3 \u2022 H3] or [H3 \u2022 H3K4me3]).",
+      "claim_type": "EXPLICIT",
+      "source": "Using these substrates with MLL1C, we observed >threefold enhanced methylation (over [H3 \u2022 H3] or [H3 \u2022 H3K4me3]) when H3 tail acetylation was cis but no significant impact when trans (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:38:28.409232Z"
+    },
+    {
+      "id": "c49ef32c-d922-42e5-a926-922655b58323",
+      "content_id": "c3a09ab0-a7d1-4faa-8a85-43c3d0ab40eb",
+      "claim_id": "C43",
+      "claim": "MLL1C showed no significant impact on methylation when H3 tail acetylation was trans ([H3 \u2022 H3tetraac]).",
+      "claim_type": "EXPLICIT",
+      "source": "Using these substrates with MLL1C, we observed >threefold enhanced methylation (over [H3 \u2022 H3] or [H3 \u2022 H3K4me3]) when H3 tail acetylation was cis but no significant impact when trans (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:38:28.409232Z"
+    },
+    {
+      "id": "d175754b-6d0d-471c-9825-33d8c1eaebd9",
+      "content_id": "c3a09ab0-a7d1-4faa-8a85-43c3d0ab40eb",
+      "claim_id": "C44",
+      "claim": "H3 acetylation on the same tail releases H3K4 for methylation by MLL1C.",
+      "claim_type": "EXPLICIT",
+      "source": "This would support a model where H3 acetylation on the same tail releases H3K4 for methylation by MLL1C and appear to exclude a significant contribution from trans-tail mechanisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the heterotypic nucleosome data in Figure 2D.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:38:28.409232Z"
+    },
+    {
+      "id": "942536ec-6757-4d8b-9d29-398bf254b56a",
+      "content_id": "c3a09ab0-a7d1-4faa-8a85-43c3d0ab40eb",
+      "claim_id": "C45",
+      "claim": "Trans-tail mechanisms do not significantly contribute to MLL1C-mediated H3K4 methylation enhancement.",
+      "claim_type": "EXPLICIT",
+      "source": "This would support a model where H3 acetylation on the same tail releases H3K4 for methylation by MLL1C and appear to exclude a significant contribution from trans-tail mechanisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the heterotypic nucleosome data in Figure 2D.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:38:28.409232Z"
+    },
+    {
+      "id": "29888ed4-5b2f-4d34-a848-0fa8aeadc332",
+      "content_id": "c3a09ab0-a7d1-4faa-8a85-43c3d0ab40eb",
+      "claim_id": "C46",
+      "claim": "The absolute amounts of H3K4me3 and higher Kac states (3ac, 4ac, and 5ac) across adjacent lysine residues were extremely low in asynchronous MCF-7 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected (Garcia et al., 2007; Peach et al., 2012; Young et al., 2009), the absolute amounts of H3K4me3 and higher Kac states (3ac, 4ac, and 5ac) across adjacent lysine residues were extremely low (Figure 3\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by mass spectrometry data shown in Figure 3\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:38:28.409232Z"
+    },
+    {
+      "id": "7ba9c7d3-b03b-4353-b267-db85115f5998",
+      "content_id": "c3a09ab0-a7d1-4faa-8a85-43c3d0ab40eb",
+      "claim_id": "C47",
+      "claim": "H3K4me3 (<1% of total H3) was strictly associated with molecules that contained multiple acetylations (also <1% of total H3) in asynchronous MCF-7 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Nonetheless, H3K4me3 (<1% of total H3) was strictly associated with molecules that contained multiple acetylations (also <1% of total H3; Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by mass spectrometry data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:38:28.409232Z"
+    },
+    {
+      "id": "b0ff71b5-79d4-4747-8fe4-764a954a4cec",
+      "content_id": "c3a09ab0-a7d1-4faa-8a85-43c3d0ab40eb",
+      "claim_id": "C48",
+      "claim": "H3 poly-acetylation rapidly increased upon butyrate treatment in MCF-7 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "H3 poly-acetylation rapidly increased upon butyrate treatment (Figure 3\u2014figure supplement 1B and Supplementary file 2), as expected (Holt et al., 2019; Young et al., 2009).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by mass spectrometry data shown in Figure 3\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:38:28.409232Z"
+    },
+    {
+      "id": "849e0873-caea-4484-bd99-bfbac6d2eeee",
+      "content_id": "c3a09ab0-a7d1-4faa-8a85-43c3d0ab40eb",
+      "claim_id": "C49",
+      "claim": "An increase in all H3K4 methyl states relative to the unmodified state was observed concomitant with increasing states of H3 acetylation upon butyrate treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed an increase in all H3K4 methyl states relative to the unmodified state concomitant with increasing states of H3 acetylation (Figure 3B\u2013C and Supplementary file 2)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by mass spectrometry data shown in Figure 3B\u2013C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:38:28.409232Z"
+    },
+    {
+      "id": "2a2814b0-158e-46d6-a736-94d30814819f",
+      "content_id": "c3a09ab0-a7d1-4faa-8a85-43c3d0ab40eb",
+      "claim_id": "C50",
+      "claim": "H3K4me3 levels most dramatically increased in tandem with the 5ac H3 state upon butyrate treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "while H3K4me3 levels most dramatically increased in tandem with the 5ac H3 state (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by mass spectrometry data shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:38:28.409232Z"
+    },
+    {
+      "id": "0b2a6875-87dc-4408-8bba-86ee93c84087",
+      "content_id": "c3a09ab0-a7d1-4faa-8a85-43c3d0ab40eb",
+      "claim_id": "C51",
+      "claim": "The findings support a direct link where acetylation releases nucleosome-bound H3 tails to localized H3K4 methyltransferases for subsequent methylation.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings support a direct link, where acetylation releases nucleosome-bound H3 tails to localized H3K4 methyltransferases for subsequent methylation (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference drawn from the combined in vitro and in vivo data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:38:28.409232Z"
+    },
+    {
+      "id": "e164537e-16a7-49ac-b1a2-3132fdb16876",
+      "content_id": "c3a09ab0-a7d1-4faa-8a85-43c3d0ab40eb",
+      "claim_id": "C52",
+      "claim": "H3K9me3 did not accumulate with hyperacetylated H3 proteoforms (i.e. 3ac, 4ac, and 5ac) in asynchronous HEK-293 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to findings with H3K4me3, H3K9me3 did not accumulate with hyperacetylated H3 proteoforms (i.e. 3ac, 4ac, and 5ac).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by mass spectrometry data shown in Figure 3\u2014figure supplement 1C\u2013D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:38:28.409232Z"
+    },
+    {
+      "id": "a4413a28-7e7e-4132-a910-db19de869448",
+      "content_id": "c3a09ab0-a7d1-4faa-8a85-43c3d0ab40eb",
+      "claim_id": "C53",
+      "claim": "All penta-acetylated (5ac) H3 proteoforms consisted of acetylation at H3K9, K14, and K18 at minimum.",
+      "claim_type": "EXPLICIT",
+      "source": "explanations could include that K9 was generally acetylated (and thus occupied) during histone tail release (all penta-acetylated (5ac) H3 proteoforms consisted of acetylation at H3K9, K14, and K18 at minimum (Figure 3, Figure 3\u2014figure supplement 1E and Supplementary file 4))",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by mass spectrometry data shown in Figure 3 and Figure 3\u2014figure supplement 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:38:28.409232Z"
+    },
+    {
+      "id": "e7d27376-d503-46d2-a12c-4fbbcf8f4e29",
+      "content_id": "c3a09ab0-a7d1-4faa-8a85-43c3d0ab40eb",
+      "claim_id": "C54",
+      "claim": "A specific cis-dependent H3ac regulatory switch functions to control H3K4 methylation output.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these findings demonstrate a specific cis-dependent H3ac regulatory switch that functions to control H3K4 methylation output (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is the main conclusion drawn from the combined in vitro and in vivo data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:38:28.409232Z"
+    },
+    {
+      "id": "2e90f268-53c7-4adf-a9bc-eb9a7f6ae717",
+      "content_id": "c3a09ab0-a7d1-4faa-8a85-43c3d0ab40eb",
+      "claim_id": "C55",
+      "claim": "The chromatin-switch is important to the ability of cells to translate short-term acetylation signals at gene promoters to longer-term heritable marks of epigenetic memory.",
+      "claim_type": "EXPLICIT",
+      "source": "We posit that such a 'chromatin-switch' is important to the ability of cells to translate short-term acetylation signals at gene promoters to longer-term heritable marks of epigenetic memory (Greer et al., 2014; H\u00f6rmanseder et al., 2017; Muramoto et al., 2010; Ng et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about the biological significance of the findings.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:38:28.409232Z"
+    },
+    {
+      "id": "953b6a01-a272-4c05-a9fa-1a9436dc7d14",
+      "content_id": "c3a09ab0-a7d1-4faa-8a85-43c3d0ab40eb",
+      "claim_id": "C56",
+      "claim": "Multiple studies have identified a link between H3K4 methylation and H3 acetylation in diverse species.",
+      "claim_type": "EXPLICIT",
+      "source": "While previous investigations identified a link between H3K4 methylation and H3 acetylation in diverse species (Garcia et al., 2007; Nightingale et al., 2007; Strahl et al., 1999; Taverna et al., 2007; Young et al., 2009)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from prior studies, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:38:28.409232Z"
+    },
+    {
+      "id": "1048e64e-dc9d-495e-a281-5a95fb1fc380",
+      "content_id": "c3a09ab0-a7d1-4faa-8a85-43c3d0ab40eb",
+      "claim_id": "C57",
+      "claim": "The molecular basis for the link between H3K4 methylation and H3 acetylation was unknown prior to this study.",
+      "claim_type": "EXPLICIT",
+      "source": "While previous investigations identified a link between H3K4 methylation and H3 acetylation in diverse species (Garcia et al., 2007; Nightingale et al., 2007; Strahl et al., 1999; Taverna et al., 2007; Young et al., 2009) the molecular basis for this link was unknown",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the state of knowledge prior to this study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:38:28.409232Z"
+    },
+    {
+      "id": "9964cf6f-6a2e-4ab5-b60e-a7e1bf67f407",
+      "content_id": "c3a09ab0-a7d1-4faa-8a85-43c3d0ab40eb",
+      "claim_id": "C58",
+      "claim": "The H3 acetyl 'chromatin switch' defined in this study is conserved across eukaryotes.",
+      "claim_type": "EXPLICIT",
+      "source": "and we posit the H3 acetyl 'chromatin switch' defined herein is conserved across eukaryotes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement based on the findings and prior knowledge.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:38:28.409232Z"
+    },
+    {
+      "id": "0cb47a13-33c3-4d2b-998d-a14bf181fa43",
+      "content_id": "c3a09ab0-a7d1-4faa-8a85-43c3d0ab40eb",
+      "claim_id": "C59",
+      "claim": "Histone tail lysine acetylation (Kac) can directly recruit residue-specific readers, e.g., bromodomains.",
+      "claim_type": "EXPLICIT",
+      "source": "Histone tail lysine acetylation (Kac) can directly recruit residue-specific readers, e.g., bromodomains (Musselman et al., 2012)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:38:28.409232Z"
+    },
+    {
+      "id": "d04cbd81-b210-4088-9d9b-f00cf76d6e22",
+      "content_id": "c3a09ab0-a7d1-4faa-8a85-43c3d0ab40eb",
+      "claim_id": "C60",
+      "claim": "Acetylation neutralizes the positive charge on lysine residues and relieves their interaction with negatively charged DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "but acetylation also neutralizes the positive charge on lysine residues and relieves their interaction with negatively charged DNA (i.e. altering the histone tail-DNA binding equilibrium) (Marunde et al., 2022a; Morrison et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:38:28.409232Z"
+    },
+    {
+      "id": "ad33d44b-afd3-4824-a6ad-fef45904f32f",
+      "content_id": "c3a09ab0-a7d1-4faa-8a85-43c3d0ab40eb",
+      "claim_id": "C61",
+      "claim": "In the nucleosome context, decreased histone-DNA binding supports the increased engagement of reader domains that have no direct affinity for the Kac.",
+      "claim_type": "EXPLICIT",
+      "source": "In the nucleosome context, this decreased histone-DNA binding supports the increased engagement of reader domains that have no direct affinity for the Kac.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the mechanism of acetylation-mediated tail release.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:38:28.409232Z"
+    },
+    {
+      "id": "3b4433f6-0764-4908-a58c-f744c6fdbc9e",
+      "content_id": "c3a09ab0-a7d1-4faa-8a85-43c3d0ab40eb",
+      "claim_id": "C62",
+      "claim": "Isolated histone tail peptides are 'constitutively open' (no DNA to engage), and thus not subject to acetylation-mediated regulation of reader engagement.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, isolated histone tail peptides are 'constitutively open' (no DNA to engage), and thus not subject to this mode of regulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the structural differences between peptides and nucleosomes.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:38:28.409232Z"
+    },
+    {
+      "id": "3cb63a0a-66a0-4626-a7f6-e6c53d03b77b",
+      "content_id": "c3a09ab0-a7d1-4faa-8a85-43c3d0ab40eb",
+      "claim_id": "C63",
+      "claim": "Hyperacetylation of the H3 N-terminal tail promoted rapid accumulation of H3K4 methylation in cis, most likely by increasing the availability of the substrate residue to the MLL1C active site.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, we showed that hyperacetylation of the H3 N-terminal tail promoted rapid accumulation of H3K4 methylation in cis, most likely by increasing the availability of the substrate residue to the MLL1C active site (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is the main conclusion drawn from the combined in vitro and in vivo data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:38:28.409232Z"
+    },
+    {
+      "id": "20a4ffc8-3d6d-4659-9836-2726d9bc1612",
+      "content_id": "c3a09ab0-a7d1-4faa-8a85-43c3d0ab40eb",
+      "claim_id": "C64",
+      "claim": "The acetylation-mediated increase in H3K4 methylation does not involve stabilized interactions between MLL1C and the nucleosome.",
+      "claim_type": "EXPLICIT",
+      "source": "dCypher assays demonstrated that the acetylation-mediated increase in H3K4 methylation does not involve stabilized interactions between MLL1C and the nucleosome (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2D (likely meant to be Figure 2C based on context).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:38:28.409232Z"
+    },
+    {
+      "id": "b1034ffb-31c3-4a90-ab7a-83ef637c6ac9",
+      "content_id": "c3a09ab0-a7d1-4faa-8a85-43c3d0ab40eb",
+      "claim_id": "C65",
+      "claim": "MLL1C activity was only enhanced in a cis H3 N-terminal triacetylation context, as shown by heterotypic nucleosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "And providing major insight, heterotypic nucleosomes containing two distinct PTM-defined forms of histone H3 definitively showed that MLL1C activity was only enhanced in a cis H3 N-terminal triacetylation context (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:38:28.409232Z"
+    },
+    {
+      "id": "3cee5c30-72d6-48c5-9ae7-32854a17feef",
+      "content_id": "c3a09ab0-a7d1-4faa-8a85-43c3d0ab40eb",
+      "claim_id": "C66",
+      "claim": "H3 hyperacetylation and H3K4 methylation co-occurred on the same histone tails in actively cycling cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with these in vitro findings, middle-down mass spectrometry showed that H3 hyperacetylation and H3K4 methylation co-occurred on the same histone tails in actively cycling cells",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by mass spectrometry data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:38:28.409232Z"
+    },
+    {
+      "id": "3cd51fa1-392a-42c1-b34e-a938dd9cd3b4",
+      "content_id": "c3a09ab0-a7d1-4faa-8a85-43c3d0ab40eb",
+      "claim_id": "C67",
+      "claim": "Upon butyrate treatment, H3K4 methylation increased for the most highly acetylated proteoforms.",
+      "claim_type": "EXPLICIT",
+      "source": "furthermore, upon butyrate treatment, H3K4 methylation increased for the most highly acetylated proteoforms (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by mass spectrometry data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:38:28.409232Z"
+    },
+    {
+      "id": "ea338991-f9fd-44bb-9efa-89980086a81b",
+      "content_id": "c3a09ab0-a7d1-4faa-8a85-43c3d0ab40eb",
+      "claim_id": "C68",
+      "claim": "The in vivo relationship between H3 acetylation and H3K4 methylation required higher degrees of acetylation (preferring at least four acetyl groups per molecule).",
+      "claim_type": "EXPLICIT",
+      "source": "The in vivo relationship required higher degrees of acetylation (preferring at least four acetyl groups per molecule: e.g. H3K9acK14acK18acK23acK27ac) for the most effective conversion to the H3K4me3 state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the mass spectrometry data in Figure 3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:38:28.409232Z"
+    },
+    {
+      "id": "8b782274-4068-4c82-b816-14d6904ceaf3",
+      "content_id": "c3a09ab0-a7d1-4faa-8a85-43c3d0ab40eb",
+      "claim_id": "C69",
+      "claim": "Cis H3 tail hyperacetylation has a positive impact on H3K4 reader engagement.",
+      "claim_type": "EXPLICIT",
+      "source": "Together with binding studies that identify the positive impact of cis H3 tail hyperacetylation on H3K4 reader engagement (Figure 1 and Figure 1\u2014figure supplement 1; Marunde et al., 2022a; Morrison et al., 2018)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1 and Figure 1\u2014figure supplement 1, as well as prior studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:38:28.409232Z"
+    },
+    {
+      "id": "335e8da4-5e9b-4506-8f86-ad540d25f7df",
+      "content_id": "c3a09ab0-a7d1-4faa-8a85-43c3d0ab40eb",
+      "claim_id": "C70",
+      "claim": "The acetylation chromatin switch could be used to establish and heritably maintain the location and function of transcriptional promoters across the genome.",
+      "claim_type": "EXPLICIT",
+      "source": "Such a switch could be used to establish and heritably maintain the location and function of transcriptional promoters across the genome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about the biological significance of the findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:38:28.409232Z"
+    },
+    {
+      "id": "a10d2a82-6b6e-4947-9c81-d1d0517d7fcd",
+      "content_id": "c3a09ab0-a7d1-4faa-8a85-43c3d0ab40eb",
+      "claim_id": "C71",
+      "claim": "The binding preference of readers (PHD-fingers that engage histone H3K4) narrows on nucleosomes relative to histone peptides.",
+      "claim_type": "EXPLICIT",
+      "source": "A continued observation from this study is that the binding preference of readers (in this case PHD-fingers that engage histone H3K4) narrows on nucleosomes relative to histone peptides (Figure 1 and Figure 1\u2014figure supplement 1; Marunde et al., 2022a; Morgan et al., 2021).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1 and Figure 1\u2014figure supplement 1, as well as prior studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:38:28.409232Z"
+    },
+    {
+      "id": "729b832c-5c78-41a7-9fb7-5e3ef3f457a8",
+      "content_id": "c3a09ab0-a7d1-4faa-8a85-43c3d0ab40eb",
+      "claim_id": "C72",
+      "claim": "Using a more representative target (nucleosomes) is important to identify the most likely/physiologically relevant interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Such differences highlight the importance of using a more representative target to identify the most likely/physiologically relevant interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the observed differences between peptide and nucleosome binding.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:38:28.409232Z"
+    },
+    {
+      "id": "35e132b6-18a9-4cc4-898c-63970f0dcfd2",
+      "content_id": "c3a09ab0-a7d1-4faa-8a85-43c3d0ab40eb",
+      "claim_id": "C73",
+      "claim": "Steady-state kinetic methylation assays with MLL1C revealed a previously undescribed positive cooperativity with its preferred nucleosome substrates.",
+      "claim_type": "EXPLICIT",
+      "source": "In this regard our steady-state kinetic methylation assays with MLL1C revealed an intriguing (and previously undescribed) positive cooperativity with its preferred nucleosome substrates (Figure 2B vs. Figure 2\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by kinetic data shown in Figure 2B and Figure 2\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:38:28.409232Z"
+    },
+    {
+      "id": "c6fce395-45d3-4ad2-9a7f-cc09222566f5",
+      "content_id": "c3a09ab0-a7d1-4faa-8a85-43c3d0ab40eb",
+      "claim_id": "C74",
+      "claim": "Previous kinetic analyses of MLL1C with nucleosome substrates did not address allosteric behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "It is important to consider the suggestion that allosteric factors could regulate interactions between MLL1C and the nucleosome, especially since previous kinetic analyses of this [enzyme: substrate] pair did not address such behavior (Park et al., 2019; Xue et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the state of prior knowledge, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:38:28.409232Z"
+    },
+    {
+      "id": "3a44c217-1245-438a-a9fd-7d704073a6d1",
+      "content_id": "c3a09ab0-a7d1-4faa-8a85-43c3d0ab40eb",
+      "claim_id": "C75",
+      "claim": "Positive cooperativity was not evident at the level of [MLL1C: nucleosome] binding.",
+      "claim_type": "EXPLICIT",
+      "source": "However, positive cooperativity was not evident at the level of [MLL1C: nucleosome] binding, which was independent of substrate identity (i.e. \u00b1H3triac) at ionic conditions similar to the catalytic assay (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:38:28.409232Z"
+    },
+    {
+      "id": "bfda9bb0-1376-4246-958b-049ead315269",
+      "content_id": "c3a09ab0-a7d1-4faa-8a85-43c3d0ab40eb",
+      "claim_id": "C76",
+      "claim": "Recent in vitro analyses employing unmodified nucleosomes sequentially targeted by purified KATs and KMTs suggest that the acetylation landscape can impact multiple methyltransferases.",
+      "claim_type": "EXPLICIT",
+      "source": "Underscoring the need for such studies, we note recent in vitro analyses employing unmodified nucleosomes sequentially targeted by purified KATs and KMTs suggesting that the acetylation landscape can impact multiple methyltransferases (Trush et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from a recent study, supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:38:28.409232Z"
+    },
+    {
+      "id": "fe881ec0-9fa3-49d7-8cf1-657f238b2154",
+      "content_id": "c3a09ab0-a7d1-4faa-8a85-43c3d0ab40eb",
+      "claim_id": "C77",
+      "claim": "A recent study reported enhanced G9a activity towards H3K9 as a function of p300-mediated histone acetylation.",
+      "claim_type": "EXPLICIT",
+      "source": "While that study reported enhanced G9a activity towards H3K9 as a function of p300-mediated histone acetylation, our mass spectrometric analysis from cells did not show a connection between H3K9me3 and H3 hyperacetylation (Figure 3\u2014figure supplement 1C\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a comparison between a prior study and the findings of this study.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:38:28.409232Z"
+    },
+    {
+      "id": "d629abeb-ff85-4770-8759-33bb3f1a33a2",
+      "content_id": "c3a09ab0-a7d1-4faa-8a85-43c3d0ab40eb",
+      "claim_id": "C78",
+      "claim": "Multiple studies have identified H3K4 methylation and H3 acetylation as active marks because of their co-occupancy on the promoters and gene bodies of transcribed genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we note that multiple studies have identified H3K4 methylation and H3 acetylation as active marks because of their co-occupancy on the promoters and gene bodies of transcribed genes (Santos-Rosa et al., 2002; Strahl et al., 1999; Wozniak and Strahl, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from prior studies, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:38:28.409232Z"
+    },
+    {
+      "id": "1be6e535-d2c9-4f1a-af12-285532d6cdd7",
+      "content_id": "c3a09ab0-a7d1-4faa-8a85-43c3d0ab40eb",
+      "claim_id": "C79",
+      "claim": "The findings uncover a previously unrecognized mechanism of H3 cross-talk that impinges on fundamental functions of H3 acetylation and K4 methylation in gene regulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings agree with these observations, but also uncover a previously unrecognized mechanism of H3 cross-talk that impinges on fundamental functions of H3 acetylation and K4 methylation in gene regulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the significance of the findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:38:28.409232Z"
+    },
+    {
+      "id": "d9195c58-04cf-4f0e-88fc-52ffe8bbebba",
+      "content_id": "c3a09ab0-a7d1-4faa-8a85-43c3d0ab40eb",
+      "claim_id": "C80",
+      "claim": "A companion study highlights how the resulting PTM signature (cis >> trans-H3K4me3triac) promotes BPTF-nucleosome engagement.",
+      "claim_type": "EXPLICIT",
+      "source": "While this work shows the impact of cis tail H3 acetylation on the H3K4 writer MLL1, we note a companion study highlighting how the resulting PTM signature (cis >> trans-H3K4me3triac) promotes BPTF-nucleosome engagement (Marunde et al., 2022a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a reference to a companion study, supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:38:28.409232Z"
+    },
+    {
+      "id": "13817972-376b-4472-9d09-82dd9d2819eb",
+      "content_id": "c3a09ab0-a7d1-4faa-8a85-43c3d0ab40eb",
+      "claim_id": "C81",
+      "claim": "The acetylation-mediated chromatin switch mechanism may be a target for dysregulation in human disease.",
+      "claim_type": "EXPLICIT",
+      "source": "Given its central importance, we predict this mechanism may be a target for dysregulation in human disease.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about the potential clinical significance of the findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:38:28.409232Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "2f4612ba-0626-43c4-8e2d-0659b62a03f7",
+      "content_id": "c3a09ab0-a7d1-4faa-8a85-43c3d0ab40eb",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "PHD finger readers (KDM7A, DIDO1, MLL5) show narrowed selectivity for H3K4 methylation states on nucleosomes compared to peptides, with binding restricted to H3K4me3 on nucleosomes but broader specificity on peptides. Co-incident acetylation (H3K4me3triac) dramatically enhances (~10-15 fold) nucleosomal binding but has no effect on peptide binding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C28 are well-supported by dCypher binding assays shown in Figure 1A-B and supplementary figures. The data clearly demonstrate differential binding preferences between peptide and nucleosome substrates, with acetylation-dependent enhancement only observed in the nucleosome context. Controls including DNA-only and unmethylated nucleosomes show no binding, strengthening the specificity claims.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:38:28.409232Z"
+    },
+    {
+      "id": "57322aa2-8d20-4cf7-a08e-3fd007016f72",
+      "content_id": "c3a09ab0-a7d1-4faa-8a85-43c3d0ab40eb",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "MLL1C methyltransferase activity is significantly enhanced by H3 tail acetylation (H3triac) on nucleosome substrates. Endpoint and steady-state kinetic assays show increased methylation across all H3K4 methyl states when acetylation is present. The enhancement is driven by ~17-fold increase in kcat rather than changes in K0.5, and H3triac substrates show positive cooperativity (Hill equation fit, p=0.0216).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C37 are supported by comprehensive enzymatic data in Figure 2A-B and Table 1. The kinetic analysis is rigorous with appropriate statistical testing (F-test for cooperativity). However, the authors acknowledge they could not statistically compare Hill vs Michaelis-Menten fits for unacetylated substrates due to low activity, which is a minor limitation. The kcat/K0.5 interpretation is sound given the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:38:28.409232Z"
+    },
+    {
+      "id": "eb7d51c9-8a36-456c-a358-16e1c44a11ec",
+      "content_id": "c3a09ab0-a7d1-4faa-8a85-43c3d0ab40eb",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The acetylation-mediated enhancement of MLL1C activity is not due to increased enzyme-nucleosome binding affinity. dCypher assays show no differential binding between MLL1C and various nucleosome substrates (\u00b1H3triac, tailless, H3N\u039432) at 50 mM NaCl. Instead, acetylation likely releases the H3 tail from DNA, increasing apparent H3K4 substrate availability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C41 are supported by binding data (Figure 2C) and consistent with structural studies cited (C39). The mechanistic interpretation (C40-C41) is a reasonable inference from the combined kinetic and binding data, though C41 remains somewhat speculative. The conclusion that binding affinity is unchanged is well-supported, making the tail-release mechanism the most parsimonious explanation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:38:28.409232Z"
+    },
+    {
+      "id": "c2ffb1d0-a398-4327-8660-86015d03d19d",
+      "content_id": "c3a09ab0-a7d1-4faa-8a85-43c3d0ab40eb",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "MLL1C-mediated H3K4 methylation enhancement by acetylation occurs exclusively in cis (on the same H3 tail). Heterotypic nucleosomes with acetylation on one H3 tail ([H3triac\u2022H3K4me3]) show >3-fold enhanced methylation compared to unmodified controls, while trans-acetylation ([H3\u2022H3tetraac]) shows no significant effect.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C45 and C65 are strongly supported by the heterotypic nucleosome experiments in Figure 2D, which provide definitive evidence for cis-regulation. This is a technically sophisticated experiment using fully-defined asymmetric nucleosomes. The conclusion excludes trans-tail mechanisms and is critical for establishing the specificity of the acetylation switch. Statistical significance is reported (p<0.0001).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:38:28.409232Z"
+    },
+    {
+      "id": "cf0a2435-7769-4b7d-a862-4edf956f4967",
+      "content_id": "c3a09ab0-a7d1-4faa-8a85-43c3d0ab40eb",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "In vivo mass spectrometry of MCF-7 cells shows that H3K4me3 (<1% of total H3) is strictly associated with hyperacetylated H3 molecules (also <1%). Upon butyrate treatment, H3 poly-acetylation rapidly increases, and H3K4 methylation increases concomitantly across all methyl states, with H3K4me3 most dramatically increasing with the 5ac state.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C50, C66-C67 are well-supported by targeted middle-down mass spectrometry data in Figure 3 and supplements. The method is appropriately described with biological triplicates. The temporal correlation between acetylation and methylation upon butyrate treatment provides strong in vivo support for the in vitro findings. Statistical significance is indicated (p<0.05) for butyrate-treated samples.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:38:28.409232Z"
+    },
+    {
+      "id": "b0cf7580-9eae-43c7-8467-c22e603964bd",
+      "content_id": "c3a09ab0-a7d1-4faa-8a85-43c3d0ab40eb",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The in vivo relationship between H3 acetylation and H3K4 methylation requires higher degrees of acetylation, preferring at least four acetyl groups per molecule (e.g., H3K9acK14acK18acK23acK27ac) for most effective conversion to H3K4me3.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C68 is supported by the mass spectrometry data in Figure 3D showing the strongest H3K4me3 increase with 5ac state. However, this is somewhat of an inference from the data rather than a direct measurement of the minimum acetylation requirement. The claim is reasonable given the data trends but could benefit from more systematic testing of specific acetylation patterns.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:38:28.409232Z"
+    },
+    {
+      "id": "403ad870-1e22-49ef-987e-0d176f4e0d95",
+      "content_id": "c3a09ab0-a7d1-4faa-8a85-43c3d0ab40eb",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "H3K9me3 does not accumulate with hyperacetylated H3 proteoforms (3ac, 4ac, 5ac) in HEK-293 cells, contrasting with H3K4me3 behavior. All penta-acetylated (5ac) H3 proteoforms contain acetylation at H3K9, K14, and K18 at minimum, potentially explaining the lack of H3K9me3 accumulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C53 and C77 are supported by mass spectrometry data in Figure 3\u2014figure supplement 1C-E. The negative result for H3K9me3 serves as an important control showing specificity of the acetylation-methylation coupling to H3K4. The explanation that K9 acetylation occupies the site is reasonable but remains somewhat speculative. The contrast with a recent in vitro study (C77) is appropriately noted.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:38:28.409232Z"
+    },
+    {
+      "id": "75685c8e-1700-40fd-92c8-c5ca4d7cbad8",
+      "content_id": "c3a09ab0-a7d1-4faa-8a85-43c3d0ab40eb",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Methyllysine analogs (MLAs) \u00b1 H3triac show no activity as MLL1C substrates, indicating their unsuitability for such studies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C32 is supported by experimental data in Figure 2\u2014figure supplement 1D-E showing no methylation activity with MLA substrates. This is an important negative control that validates the use of native methylated substrates in the study. The conclusion about MLA unsuitability is appropriately limited to this specific enzyme system.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:38:28.409232Z"
+    },
+    {
+      "id": "07610256-bb86-4de6-a78f-45164cb72deb",
+      "content_id": "c3a09ab0-a7d1-4faa-8a85-43c3d0ab40eb",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Steady-state kinetic assays reveal previously undescribed positive cooperativity of MLL1C with H3triac nucleosome substrates (Hill equation fit, p=0.0216). However, this cooperativity is not evident at the level of MLL1C-nucleosome binding, which is independent of substrate acetylation status.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C73-C75 are supported by kinetic data (Figure 2B vs supplement 1C) and binding data (Figure 2C). The statistical test for cooperativity is appropriate (F-test). However, the mechanistic basis for cooperativity remains unclear, and the authors acknowledge this requires further investigation. The observation is novel and interesting but incompletely explained.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:38:28.409232Z"
+    },
+    {
+      "id": "a4ccf603-efde-4f74-9177-72ec9dcf29c9",
+      "content_id": "c3a09ab0-a7d1-4faa-8a85-43c3d0ab40eb",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The study reveals an acetylation 'chromatin switch' mechanism where H3 tail hyperacetylation promotes nucleosomal accessibility to both H3K4 methyl readers and writers (notably MLL1). This cis-dependent regulatory switch controls H3K4 methylation output and resolves the long-standing question of why H3K4me3 levels are coupled with H3 acetylation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C5, C9-C10, C54, C63, and C79 represent the main conclusions synthesized from all experimental results. The 'chromatin switch' model is well-supported by converging evidence from reader binding assays, writer kinetics, heterotypic nucleosome experiments, and in vivo mass spectrometry. The mechanistic explanation (tail release from DNA) is consistent with prior structural work and provides a satisfying molecular basis for the observed phenomena.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:38:28.409232Z"
+    },
+    {
+      "id": "ca66f252-12f5-461d-9e39-365ce4bf2763",
+      "content_id": "c3a09ab0-a7d1-4faa-8a85-43c3d0ab40eb",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The findings support a direct link where acetylation releases nucleosome-bound H3 tails to localized H3K4 methyltransferases for subsequent methylation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C51 is an integrative conclusion supported by the combined in vitro and in vivo data. The temporal relationship shown by butyrate time-course experiments, combined with the cis-specificity from heterotypic nucleosomes, provides strong support for this directional model. However, the claim about 'localized' methyltransferases is somewhat speculative regarding in vivo spatial organization.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:38:28.409232Z"
+    },
+    {
+      "id": "0c36bb04-2d8a-4774-a111-2f1d4cbd89e2",
+      "content_id": "c3a09ab0-a7d1-4faa-8a85-43c3d0ab40eb",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "PHD finger reader binding preferences narrow on nucleosomes relative to histone peptides, highlighting the importance of using nucleosome substrates to identify physiologically relevant interactions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71-C72 are supported by the comparative data in Figure 1A-B and consistent with prior studies cited. This is an important methodological observation that reinforces the value of nucleosome-based assays. The conclusion about physiological relevance is a reasonable inference, though direct in vivo validation would strengthen it.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:38:28.409232Z"
+    },
+    {
+      "id": "0b7d2b27-0615-4128-a568-c5015e598b31",
+      "content_id": "c3a09ab0-a7d1-4faa-8a85-43c3d0ab40eb",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The authors posit that the acetylation chromatin switch is important for translating short-term acetylation signals to longer-term epigenetic memory, is conserved across eukaryotes, could establish and maintain transcriptional promoter function, and may be a target for dysregulation in human disease.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C55, C58, C70, and C81 are explicitly speculative statements about broader implications. While the speculation is reasonable given the fundamental nature of H3K4me3 and acetylation in gene regulation, these claims lack direct experimental support in this manuscript. They represent hypotheses for future work rather than demonstrated results. The evolutionary conservation claim (C58) is particularly speculative without comparative data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:38:28.409232Z"
+    },
+    {
+      "id": "ac89fc6e-f01b-432a-bd3c-c1378e073f82",
+      "content_id": "c3a09ab0-a7d1-4faa-8a85-43c3d0ab40eb",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The manuscript establishes context through established knowledge about histone tail dynamics, the histone code, PTM reader-writer-eraser machinery, and prior observations linking H3K4 methylation with H3 acetylation. The molecular basis for this link was previously unknown.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3, C11-C22, C56-C57, C59-C62, C69, C76, C78, and C80 represent background knowledge and context appropriately cited from the literature. These claims accurately represent the state of the field and provide necessary foundation for the study. The citations appear appropriate and the knowledge claims are consistent with established understanding in chromatin biology.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:38:28.409232Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "d76b34cc-7bb7-40e0-8c31-d7af23de6949",
+      "result_id": "2f4612ba-0626-43c4-8e2d-0659b62a03f7"
+    },
+    {
+      "claim_id": "92b2412b-0a8f-4c6b-b536-b66fa209f647",
+      "result_id": "2f4612ba-0626-43c4-8e2d-0659b62a03f7"
+    },
+    {
+      "claim_id": "8a993ee7-ed7c-4cf7-a347-0d347a687a64",
+      "result_id": "2f4612ba-0626-43c4-8e2d-0659b62a03f7"
+    },
+    {
+      "claim_id": "6af26962-3170-4e3b-b6cf-69cb60697adb",
+      "result_id": "2f4612ba-0626-43c4-8e2d-0659b62a03f7"
+    },
+    {
+      "claim_id": "1fa78a48-5a1e-43e6-9a74-69850475ed8c",
+      "result_id": "2f4612ba-0626-43c4-8e2d-0659b62a03f7"
+    },
+    {
+      "claim_id": "fe715adf-5297-48cb-afdf-9f353828cc38",
+      "result_id": "2f4612ba-0626-43c4-8e2d-0659b62a03f7"
+    },
+    {
+      "claim_id": "fa115122-80ee-4cb2-81a5-59bbde3aef12",
+      "result_id": "57322aa2-8d20-4cf7-a08e-3fd007016f72"
+    },
+    {
+      "claim_id": "7843efd1-3546-4736-b74f-0e1645480eed",
+      "result_id": "57322aa2-8d20-4cf7-a08e-3fd007016f72"
+    },
+    {
+      "claim_id": "cdb84063-f3f8-45ca-9761-343a8bcc3afa",
+      "result_id": "57322aa2-8d20-4cf7-a08e-3fd007016f72"
+    },
+    {
+      "claim_id": "5dbdcdfd-dcee-45c6-beca-229ba5a38825",
+      "result_id": "57322aa2-8d20-4cf7-a08e-3fd007016f72"
+    },
+    {
+      "claim_id": "2f62ab44-b24c-497a-a9f7-371d7aa3bd99",
+      "result_id": "57322aa2-8d20-4cf7-a08e-3fd007016f72"
+    },
+    {
+      "claim_id": "067e594a-2873-4c62-930f-4ab5b6fd00c5",
+      "result_id": "57322aa2-8d20-4cf7-a08e-3fd007016f72"
+    },
+    {
+      "claim_id": "c621a37c-fc8b-4e42-a616-0e056feba44e",
+      "result_id": "57322aa2-8d20-4cf7-a08e-3fd007016f72"
+    },
+    {
+      "claim_id": "a74a3a63-5f47-44cc-b846-22966758955e",
+      "result_id": "57322aa2-8d20-4cf7-a08e-3fd007016f72"
+    },
+    {
+      "claim_id": "31a15323-202a-4f90-b5c0-01241dbf4267",
+      "result_id": "eb7d51c9-8a36-456c-a358-16e1c44a11ec"
+    },
+    {
+      "claim_id": "a2148103-adc2-424a-b688-7f0880e40a60",
+      "result_id": "eb7d51c9-8a36-456c-a358-16e1c44a11ec"
+    },
+    {
+      "claim_id": "4afd7d85-2082-416c-a8e0-7d3c035556d8",
+      "result_id": "eb7d51c9-8a36-456c-a358-16e1c44a11ec"
+    },
+    {
+      "claim_id": "93c58a8d-ec83-490d-8c33-e722e4a18fc4",
+      "result_id": "eb7d51c9-8a36-456c-a358-16e1c44a11ec"
+    },
+    {
+      "claim_id": "c526b59c-9c32-449b-a89f-2f950ce2e829",
+      "result_id": "c2ffb1d0-a398-4327-8660-86015d03d19d"
+    },
+    {
+      "claim_id": "c49ef32c-d922-42e5-a926-922655b58323",
+      "result_id": "c2ffb1d0-a398-4327-8660-86015d03d19d"
+    },
+    {
+      "claim_id": "d175754b-6d0d-471c-9825-33d8c1eaebd9",
+      "result_id": "c2ffb1d0-a398-4327-8660-86015d03d19d"
+    },
+    {
+      "claim_id": "942536ec-6757-4d8b-9d29-398bf254b56a",
+      "result_id": "c2ffb1d0-a398-4327-8660-86015d03d19d"
+    },
+    {
+      "claim_id": "b1034ffb-31c3-4a90-ab7a-83ef637c6ac9",
+      "result_id": "c2ffb1d0-a398-4327-8660-86015d03d19d"
+    },
+    {
+      "claim_id": "29888ed4-5b2f-4d34-a848-0fa8aeadc332",
+      "result_id": "cf0a2435-7769-4b7d-a862-4edf956f4967"
+    },
+    {
+      "claim_id": "7ba9c7d3-b03b-4353-b267-db85115f5998",
+      "result_id": "cf0a2435-7769-4b7d-a862-4edf956f4967"
+    },
+    {
+      "claim_id": "b0ff71b5-79d4-4747-8fe4-764a954a4cec",
+      "result_id": "cf0a2435-7769-4b7d-a862-4edf956f4967"
+    },
+    {
+      "claim_id": "849e0873-caea-4484-bd99-bfbac6d2eeee",
+      "result_id": "cf0a2435-7769-4b7d-a862-4edf956f4967"
+    },
+    {
+      "claim_id": "2a2814b0-158e-46d6-a736-94d30814819f",
+      "result_id": "cf0a2435-7769-4b7d-a862-4edf956f4967"
+    },
+    {
+      "claim_id": "3cee5c30-72d6-48c5-9ae7-32854a17feef",
+      "result_id": "cf0a2435-7769-4b7d-a862-4edf956f4967"
+    },
+    {
+      "claim_id": "3cd51fa1-392a-42c1-b34e-a938dd9cd3b4",
+      "result_id": "cf0a2435-7769-4b7d-a862-4edf956f4967"
+    },
+    {
+      "claim_id": "ea338991-f9fd-44bb-9efa-89980086a81b",
+      "result_id": "b0cf7580-9eae-43c7-8467-c22e603964bd"
+    },
+    {
+      "claim_id": "e164537e-16a7-49ac-b1a2-3132fdb16876",
+      "result_id": "403ad870-1e22-49ef-987e-0d176f4e0d95"
+    },
+    {
+      "claim_id": "a4413a28-7e7e-4132-a910-db19de869448",
+      "result_id": "403ad870-1e22-49ef-987e-0d176f4e0d95"
+    },
+    {
+      "claim_id": "fe881ec0-9fa3-49d7-8cf1-657f238b2154",
+      "result_id": "403ad870-1e22-49ef-987e-0d176f4e0d95"
+    },
+    {
+      "claim_id": "00003445-f1b2-4878-ab7a-4ff6f86e6866",
+      "result_id": "75685c8e-1700-40fd-92c8-c5ca4d7cbad8"
+    },
+    {
+      "claim_id": "35e132b6-18a9-4cc4-898c-63970f0dcfd2",
+      "result_id": "07610256-bb86-4de6-a78f-45164cb72deb"
+    },
+    {
+      "claim_id": "c6fce395-45d3-4ad2-9a7f-cc09222566f5",
+      "result_id": "07610256-bb86-4de6-a78f-45164cb72deb"
+    },
+    {
+      "claim_id": "3a44c217-1245-438a-a9fd-7d704073a6d1",
+      "result_id": "07610256-bb86-4de6-a78f-45164cb72deb"
+    },
+    {
+      "claim_id": "ef5afcb0-0401-4b5d-b828-ac2881d43ec2",
+      "result_id": "a4ccf603-efde-4f74-9177-72ec9dcf29c9"
+    },
+    {
+      "claim_id": "35c77a6b-d438-4011-9234-d6afaabf5a03",
+      "result_id": "a4ccf603-efde-4f74-9177-72ec9dcf29c9"
+    },
+    {
+      "claim_id": "63ed98e6-6c3e-4e81-8681-63e87e553607",
+      "result_id": "a4ccf603-efde-4f74-9177-72ec9dcf29c9"
+    },
+    {
+      "claim_id": "c7ee22ec-7d42-4799-b899-d4fd127cae1f",
+      "result_id": "a4ccf603-efde-4f74-9177-72ec9dcf29c9"
+    },
+    {
+      "claim_id": "e7d27376-d503-46d2-a12c-4fbbcf8f4e29",
+      "result_id": "a4ccf603-efde-4f74-9177-72ec9dcf29c9"
+    },
+    {
+      "claim_id": "3cb63a0a-66a0-4626-a7f6-e6c53d03b77b",
+      "result_id": "a4ccf603-efde-4f74-9177-72ec9dcf29c9"
+    },
+    {
+      "claim_id": "1be6e535-d2c9-4f1a-af12-285532d6cdd7",
+      "result_id": "a4ccf603-efde-4f74-9177-72ec9dcf29c9"
+    },
+    {
+      "claim_id": "0b2a6875-87dc-4408-8bba-86ee93c84087",
+      "result_id": "ca66f252-12f5-461d-9e39-365ce4bf2763"
+    },
+    {
+      "claim_id": "a10d2a82-6b6e-4947-9c81-d1d0517d7fcd",
+      "result_id": "0c36bb04-2d8a-4774-a111-2f1d4cbd89e2"
+    },
+    {
+      "claim_id": "729b832c-5c78-41a7-9fb7-5e3ef3f457a8",
+      "result_id": "0c36bb04-2d8a-4774-a111-2f1d4cbd89e2"
+    },
+    {
+      "claim_id": "2e90f268-53c7-4adf-a9bc-eb9a7f6ae717",
+      "result_id": "0b7d2b27-0615-4128-a568-c5015e598b31"
+    },
+    {
+      "claim_id": "9964cf6f-6a2e-4ab5-b60e-a7e1bf67f407",
+      "result_id": "0b7d2b27-0615-4128-a568-c5015e598b31"
+    },
+    {
+      "claim_id": "335e8da4-5e9b-4506-8f86-ad540d25f7df",
+      "result_id": "0b7d2b27-0615-4128-a568-c5015e598b31"
+    },
+    {
+      "claim_id": "13817972-376b-4472-9d09-82dd9d2819eb",
+      "result_id": "0b7d2b27-0615-4128-a568-c5015e598b31"
+    },
+    {
+      "claim_id": "c0e8db7e-99bf-468a-8183-7fa64ddf30e8",
+      "result_id": "ac89fc6e-f01b-432a-bd3c-c1378e073f82"
+    },
+    {
+      "claim_id": "6d374e68-d5e8-4396-afd9-75a209ce0627",
+      "result_id": "ac89fc6e-f01b-432a-bd3c-c1378e073f82"
+    },
+    {
+      "claim_id": "8bbdab89-129d-4264-ae5e-b8979786a7f2",
+      "result_id": "ac89fc6e-f01b-432a-bd3c-c1378e073f82"
+    },
+    {
+      "claim_id": "70db6a57-2b02-427c-acc2-36a9cee9d2e9",
+      "result_id": "ac89fc6e-f01b-432a-bd3c-c1378e073f82"
+    },
+    {
+      "claim_id": "02622d8a-9fcd-4444-9212-5bde698fbaf5",
+      "result_id": "ac89fc6e-f01b-432a-bd3c-c1378e073f82"
+    },
+    {
+      "claim_id": "ed4e7a10-f2e9-41bd-87f5-a8b9e684444d",
+      "result_id": "ac89fc6e-f01b-432a-bd3c-c1378e073f82"
+    },
+    {
+      "claim_id": "1d9c425e-9f74-421c-9be4-77eee0ac69cb",
+      "result_id": "ac89fc6e-f01b-432a-bd3c-c1378e073f82"
+    },
+    {
+      "claim_id": "575b227c-6b32-4a9a-a0a2-8533a887eb95",
+      "result_id": "ac89fc6e-f01b-432a-bd3c-c1378e073f82"
+    },
+    {
+      "claim_id": "25df6a87-2264-49f9-8eed-d96f8021ec12",
+      "result_id": "ac89fc6e-f01b-432a-bd3c-c1378e073f82"
+    },
+    {
+      "claim_id": "ff6b4fd8-090f-4604-bf2c-a251e4f829eb",
+      "result_id": "ac89fc6e-f01b-432a-bd3c-c1378e073f82"
+    },
+    {
+      "claim_id": "2006f2ed-e597-4cdd-9e77-335761adb2cd",
+      "result_id": "ac89fc6e-f01b-432a-bd3c-c1378e073f82"
+    },
+    {
+      "claim_id": "3e7ac3f5-6c16-41a9-bfa9-9950a14b12f2",
+      "result_id": "ac89fc6e-f01b-432a-bd3c-c1378e073f82"
+    },
+    {
+      "claim_id": "e67e5886-e4de-44f5-b4ad-4960d366234a",
+      "result_id": "ac89fc6e-f01b-432a-bd3c-c1378e073f82"
+    },
+    {
+      "claim_id": "8310b690-4332-4c0f-8801-3786c7b1d114",
+      "result_id": "ac89fc6e-f01b-432a-bd3c-c1378e073f82"
+    },
+    {
+      "claim_id": "b8f4e119-a35f-47ef-a12f-bc2aa5c97353",
+      "result_id": "ac89fc6e-f01b-432a-bd3c-c1378e073f82"
+    },
+    {
+      "claim_id": "953b6a01-a272-4c05-a9fa-1a9436dc7d14",
+      "result_id": "ac89fc6e-f01b-432a-bd3c-c1378e073f82"
+    },
+    {
+      "claim_id": "1048e64e-dc9d-495e-a281-5a95fb1fc380",
+      "result_id": "ac89fc6e-f01b-432a-bd3c-c1378e073f82"
+    },
+    {
+      "claim_id": "0cb47a13-33c3-4d2b-998d-a14bf181fa43",
+      "result_id": "ac89fc6e-f01b-432a-bd3c-c1378e073f82"
+    },
+    {
+      "claim_id": "d04cbd81-b210-4088-9d9b-f00cf76d6e22",
+      "result_id": "ac89fc6e-f01b-432a-bd3c-c1378e073f82"
+    },
+    {
+      "claim_id": "ad33d44b-afd3-4824-a6ad-fef45904f32f",
+      "result_id": "ac89fc6e-f01b-432a-bd3c-c1378e073f82"
+    },
+    {
+      "claim_id": "3b4433f6-0764-4908-a58c-f744c6fdbc9e",
+      "result_id": "ac89fc6e-f01b-432a-bd3c-c1378e073f82"
+    },
+    {
+      "claim_id": "8b782274-4068-4c82-b816-14d6904ceaf3",
+      "result_id": "ac89fc6e-f01b-432a-bd3c-c1378e073f82"
+    },
+    {
+      "claim_id": "bfda9bb0-1376-4246-958b-049ead315269",
+      "result_id": "ac89fc6e-f01b-432a-bd3c-c1378e073f82"
+    },
+    {
+      "claim_id": "d629abeb-ff85-4770-8759-33bb3f1a33a2",
+      "result_id": "ac89fc6e-f01b-432a-bd3c-c1378e073f82"
+    },
+    {
+      "claim_id": "d9195c58-04cf-4f0e-88fc-52ffe8bbebba",
+      "result_id": "ac89fc6e-f01b-432a-bd3c-c1378e073f82"
+    }
+  ],
+  "comparisons": []
+}

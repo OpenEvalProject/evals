@@ -1,0 +1,353 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "DiffRBM is a transfer learning approach based on Restricted Boltzmann Machines that learns background distributions from large datasets and then refines them with selected sequences to predict antigen immunogenicity and TCR specificity. The method learns background RBM parameters from background sequences and differential units from selected sequences, enabling both contact prediction and discrimination of selected from background sequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C19-C23 collectively describe the diffRBM architecture and methodology, which is clearly presented with supporting figures (Figure 1) and detailed mathematical formulation in the Materials and Methods. The two-stage learning procedure and the functional capabilities are well-documented and form the foundation of the method.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C22",
+      "C28",
+      "C29",
+      "C31",
+      "C34",
+      "C35"
+    ],
+    "result": "DiffRBM single-site factors successfully predict peptide contact positions with both HLA and TCR. The model identifies positions 2 and 9 as HLA anchor sites and positions 4-8 as TCR contact sites for HLA-A*02:01 peptides, outperforming amino acid frequency ratio approaches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C22, C28-C29, C31, C34-C35 are supported by structural validation data in Figure 2B-D showing PPV values and correlation coefficients, with statistically significant p-values (7.7\u00d710\u207b\u2075). The predictions align with known structural biology and cited literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "DiffRBM captures known molecular features of immunogenicity including enrichment of hydrophobic amino acids (especially valine), glutamic acid, and tryptophan, and depletion of serine and lysine. The model correctly predicts positive contributions to immunogenicity for key residues (W at positions 5-6, F at positions 5 and 7, M at position 5, Y at position 8) that were previously identified in functional studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C46 are supported by data in Figure 3A-B showing amino acid enrichment patterns and single-site factor distributions with significant p-values. The findings are consistent with multiple cited studies (Chowell et al., 2015; Schmidt et al., 2021; \u0141uksza et al., 2022; Piepenbrink et al., 2013), validating the biological interpretability of the model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "DiffRBM predictions align with experimental TCR cross-reactivity data for NLVPMVATV mutants. Lethal mutations occur at TCR-contact positions (4-8) and diffRBM predicts positive costs for these mutations. Non-lethal mutations concentrate at HLA anchor positions (2 and 9), and background RBM predictions correlate significantly with experimental mutation costs (Spearman r with p\u226410\u207b\u2076).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C51 are validated against independent experimental data from \u0141uksza et al., 2022 (Figure 3C-G). The statistical correlations are significant and the separation of lethal vs non-lethal mutation predictions by diffRBM units vs background RBM demonstrates the model correctly captures different aspects of peptide function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C4",
+      "C27",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "DiffRBM units discriminate immunogenic from non-immunogenic peptides with AUC values progressively decreasing from diffRBM units (highest) to full RBM to background RBM. Background models show minimal discrimination (AUC ~0.5-0.55), indicating HLA binding affinity alone does not predict immunogenicity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C27, C52-C55 are supported by AUC data in Figure 4 across three HLA alleles. The progressive decrease in AUC demonstrates that learning background constraints alongside enrichment patterns acts as a confounding factor. NetMHCpan4.1 validation and citation to Kristensen et al., 2022 corroborate the finding that binding affinity is insufficient for immunogenicity prediction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C6",
+      "C60"
+    ],
+    "result": "DiffRBM achieves performance comparable to supervised deep learning classifiers (AUC ~0.66-0.71 across HLA types) while being semi-supervised, requiring only immunogenic peptide labels rather than both immunogenic and non-immunogenic labels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6 and C60 are supported by comparative performance data in Figure 4B-D showing diffRBM units achieve AUC of 0.69\u00b10.02 compared to optimal classifier AUC of 0.71\u00b10.02. The semi-supervised nature is a methodological advantage clearly demonstrated, though the performance difference is modest.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C5",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "DiffRBM predicts CDR3\u03b2 contact positions with peptides, identifying stretches of 3-5 contiguous amino acids in the central CDR3\u03b2 region (6-8 positions from anchors). The predictions correlate well with contact frequency distributions and outperform amino acid frequency ratios (p-value = 1.6\u00d710\u207b\u2075).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C63-C66 are supported by structural validation data in Figure 5B-C showing PPV curves and correlation coefficients. The predictions align with previous structural studies (Glanville et al., 2017; Ostmeyer et al., 2019; Milighetti et al., 2021) and demonstrate statistically significant predictive power.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C67",
+      "C68"
+    ],
+    "result": "For TCR specificity models, diffRBM units consistently achieve higher AUC than full RBM across all four epitopes, while background RBM has no discrimination power as expected since it lacks epitope specificity information.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C68 are supported by data in Figure 6B-E showing the consistent trend across GILGFVFTL, NLVPMVATV, GLCTLVAML, and YLQPRTFLL epitopes. The lack of background RBM discrimination is expected by design and validates the differential learning approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C6",
+      "C76"
+    ],
+    "result": "DiffRBM achieves state-of-the-art performance for TCR specificity prediction (average AUC = 0.83\u00b10.01) comparable to TCRex and superior to NetTCR-2.0 (AUC = 0.73\u00b10.01), k-NN (AUC = 0.80\u00b10.01), and SONIA (AUC = 0.80\u00b10.01), while being semi-supervised.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6 and C76 are supported by comprehensive benchmarking data in Figure 6 and Appendix 1. The performance comparisons are conducted on the same train/test splits (50 partitions) ensuring fair comparison. The semi-supervised advantage is clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C61"
+    ],
+    "result": "The study uses well-defined datasets: immunogenic/non-immunogenic peptides from IEDB for three HLA alleles (HLA-A*02:01, HLA-B*35:01, HLA-B*07:02) selected based on \u2265200 immunogenic peptides and \u22651 TCR-pMHC structure; and epitope-specific TCRs from VDJdb with bulk repertoire background from Emerson et al., 2017.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C25 and C61 describe the data collection methodology which is clearly documented in Materials and Methods with specific dataset sizes (e.g., 1682 immunogenic peptides for HLA-A*02:01, 4548 CMV-specific TCRs). The selection criteria are explicit and justified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C26",
+      "C62"
+    ],
+    "result": "Background RBM captures HLA-specific amino acid usage for peptide presentation and germline-encoded features for TCRs including stability constraints and biases from VDJ recombination and thymic selection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26 and C62 are supported by the model design and validation data showing background RBM predicts presentation (Figure 2B, Figure 3G) and captures known biological constraints. The interpretation is consistent with immunological knowledge about TCR generation and selection.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "DiffRBM uses HLA-specific models for immunogenicity and peptide-specific models for TCR specificity, which better captures HLA-specific amino acid usage, provides robustness against data imbalances, but limits scope compared to pan-HLA or pan-peptide predictors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C80 describe design choices that are clearly stated and justified in the Discussion. The advantages (better capturing HLA-specific patterns, robustness to imbalances) and limitations (narrower scope) are acknowledged. Figure 3A supports the observation of HLA-specific patterns.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C81",
+      "C82"
+    ],
+    "result": "DiffRBM is designed for data-limited situations and captures residue interactions that simpler position-independent approaches cannot model, as demonstrated by superior performance over PWM and linear models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C82 are supported by comparative data in Figure 4\u2014figure supplement 1 and Figure 6\u2014figure supplement 1 showing diffRBM outperforms linear and PWM approaches. The ability to capture interactions is inherent to the RBM architecture with hidden units.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C32"
+    ],
+    "result": "DiffRBM recovers patterns of positions important for immunogenicity without a priori restriction to specific positions, unlike existing approaches (Calis et al., 2013; Schmidt et al., 2021) that pre-select positions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C32 is supported by the model design which uses full sequences as input and learns position importance from data (Figure 2C). The comparison to methods that pre-select positions is accurate based on the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C56",
+      "C57"
+    ],
+    "result": "The relationship between HLA binding affinity and immunogenicity is unclear in the literature, with some studies (Kristensen et al., 2022) finding no significant difference while others (Croft et al., 2019; Buckley et al., 2022; Bjerregaard et al., 2017) suggest stronger binding for immunogenic peptides.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C57 accurately represent conflicting findings in the literature based on the cited studies. This contextualizes the authors' own finding (C54-C55) that binding affinity shows minimal discrimination in their datasets.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "As a generative model, diffRBM can generate new sequences with desired properties and estimate data space diversity through entropy. The reduction in diversity due to selection is modest for epitope-specific repertoires except for YLQPRTFLL.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C85 describe capabilities of the probabilistic model. C84 is a mathematical property of the model. C85 is supported by entropy calculations in Appendix 4\u2014figure 1 and consistent with Sethna et al., 2020. However, C83 about generating sequences is a potential application not demonstrated in the manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "DiffRBM is purely sequence-based, which is computationally faster and more broadly applicable than structure-informed methods, though structural features are known to be important for T-cell response prediction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C89 accurately characterize the methodological choice and trade-offs. The advantages of sequence-based methods (speed, applicability) and limitations of structure-based methods (requiring crystal structures) are well-established in the field and supported by citations (Riley et al., 2019; Lin et al., 2021).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "DiffRBM has potential applications in vaccine design and cancer immunotherapy for identifying immunogenic antigens and neoantigens. Preliminary testing on TESLA neoantigen dataset shows AUC of 0.6-0.69, though retraining on neoantigen-specific data may be needed given performance variation between pathogenic and cancer data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C90-C91 are speculative applications not validated in the manuscript. C93 provides preliminary neoantigen data (AUC 0.6-0.69) but with very small sample size (11 immunogenic, 227 non-immunogenic). C92 acknowledges the need for retraining, indicating current performance on neoantigens is uncertain. More extensive validation is needed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C96"
+    ],
+    "result": "DiffRBM provides a potentially general approach applicable to directed evolution protocols and SELEX experiments where selection occurs from a background population.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C96 is speculative about future applications with no validation provided in the manuscript. While the conceptual framework may be applicable, this requires novel efforts in data preprocessing and model training as acknowledged by the authors.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C1",
+      "C7",
+      "C8",
+      "C12"
+    ],
+    "result": "Background context claims establish that antigen immunogenicity and TCR specificity are key immune response properties, T-cells are activated by TCR binding to peptide-MHC complexes, only a fraction of presented peptides are immunogenic, and epitopes elicit responses from specific T-cell subsets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C7, C8, C12 represent established immunological knowledge that provides context for the study. These are well-supported by the scientific literature and form the motivation for developing predictive methods.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C13",
+      "C14"
+    ],
+    "result": "Existing methods for immunogenicity prediction show suboptimal performance, with recent assessments showing no substantial improvement beyond MHC-presentation prediction for SARS-CoV-2 peptides and only 6% validation rate for predicted neoantigens. The Calis et al., 2013 model is the most used but assumes position independence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C11, C13-C14 accurately characterize the state of the field based on cited literature (Buckley et al., 2022; Wells et al., 2020; Calis et al., 2013). This establishes the need for improved methods and positions diffRBM as addressing limitations of existing approaches.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Prior work has established that immunogenic antigens and epitope-specific TCRs show enrichment in specific amino acid patterns including hydrophobic, aromatic residues in peptides and convergent motifs in TCRs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C18 summarize established findings from multiple cited studies (Chowell et al., 2015; Riley et al., 2019; Schmidt et al., 2021; Dash et al., 2017; Glanville et al., 2017, etc.). This provides the biological basis for the diffRBM approach of learning enriched sequence patterns.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C30"
+    ],
+    "result": "Previous functional avidity studies indicate that amino acid changes at peptide central positions (4-8) most impact T-cell activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C30 is supported by citations to Hoof et al., 2010; Schmidt et al., 2021; \u0141uksza et al., 2022. This prior knowledge validates the diffRBM finding that positions 4-8 are most relevant for immunogenicity (C31).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C75"
+    ],
+    "result": "Most existing TCR specificity prediction methods are supervised classifiers requiring both positive (specific) and negative (non-specific) samples.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C75 accurately characterizes existing methods based on citations (Gielis et al., 2019; Montemurro et al., 2021; Weber et al., 2021). This highlights the advantage of diffRBM's semi-supervised approach.",
+    "result_type": "MINOR"
+  }
+]

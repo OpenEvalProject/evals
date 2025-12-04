@@ -1,0 +1,274 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "PRDM9 determines DSB hotspot locations through its zinc finger array DNA-binding specificity, which is rapidly evolving. PRDM9 binds thousands of sites during meiosis, catalyzes histone modifications, and facilitates DSB formation by SPO11 at a subset of bound sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C3 and C13-C16 describe well-established background knowledge about PRDM9 function, supported by extensive citations to prior experimental work. These claims provide the biological foundation for the model but are not novel findings of this manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Species lacking PRDM9 show conserved recombination landscapes near promoter-like features over millions of years, while PRDM9-using species show rapidly evolving recombination landscapes with no overlap between closely related species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C21 summarize well-documented differences in recombination patterns between species with and without PRDM9, supported by multiple citations. This is established background knowledge rather than a novel finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Gene conversion causes under-transmission of hot alleles at PRDM9 binding sites, leading to rapid erosion of these sites. Different PRDM9 alleles are associated with different hotspot usage patterns, and positive selection drives rapid PRDM9 evolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C27 describe the evolutionary dynamics of PRDM9 and its binding sites based on extensive prior work. All claims are well-supported by citations and represent established knowledge motivating the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "DSB formation is regulated independently of PRDM9, with similar numbers of DSBs in PRDM9-/- individuals. PRDM9 binding sites compete for available PRDM9 molecules, and loss of binding sites causes PRDM9 to bind elsewhere rather than reducing total DSB numbers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C33 establish key biological constraints that distinguish this model from previous ones. All claims are supported by citations to experimental work, providing the empirical foundation for the model's assumptions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "PRDM9 plays a role in DSB repair through symmetric recruitment to homologous chromosomes. Asymmetric binding in sterile hybrids causes meiotic defects, while restoring symmetry rescues fertility. DSBs at asymmetrically-bound sites experience delayed repair and reduced crossover formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C42 summarize recent experimental findings on PRDM9's role in symmetric binding and DSB repair, all supported by extensive citations. This background motivates the model's focus on symmetric binding as a fitness determinant.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "The model assumes DSB numbers are regulated independently of PRDM9, PRDM9 binding is competitive between sites, and fitness depends on symmetric DSBs on the smallest chromosome. PRDM9 binding follows Michaelis-Menten kinetics with competitive binding, and mutations at binding sites fix through gene conversion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C53 describe the model's core assumptions and mathematical framework. These are clearly stated and justified based on empirical observations (C28-C42). The assumptions are reasonable given current biological knowledge, though some simplifications are acknowledged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "Loss of strong binding sites leads to use of more numerous weaker sites, causing a sharp reduction in symmetric binding. This favors new PRDM9 alleles that restore a smaller set of strong binding sites. The advantage is in limiting binding site numbers rather than increasing total PRDM9 binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C9 present the model's central mechanistic insight. The logic is sound given the model's assumptions about competitive binding and symmetric DSB requirements. Figures 2-3 demonstrate this mechanism, showing how fitness depends non-monotonically on hotspot numbers.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Selection for PRDM9 evolution arises from the requirement for symmetric binding in DSB repair, not from changes in net binding. Strong hotspots are lost faster than weak ones, causing a shift to weaker sites that reduces symmetric DSBs. New alleles are favored because they redirect binding to a smaller genomic proportion, increasing symmetric binding probability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C72 articulate the model's key theoretical contribution, distinguishing it from previous models. The logic follows from the competitive binding framework and is supported by simulation results in Figures 4-6. Claim C72 is additionally supported by empirical citation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "PRDM9 turnover time is inversely proportional to population size and shorter for strong hotspots. Average PRDM9 diversity is greater in larger populations. The cycling dynamics entail substantial genetic load, with paradoxically higher average fitness in smaller populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C65 describe quantitative predictions from the model, supported by simulation results in Figures 5-6. The inverse relationship with population size follows logically from the model structure (Equation 11). The counterintuitive fitness pattern is well-explained by the dynamics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C66",
+      "C67"
+    ],
+    "result": "Previous models incorrectly assumed that loss of PRDM9 binding sites reduces DSB numbers. The current model recognizes that when hotspots are lost, PRDM9 simply binds elsewhere, based on evidence that DSB formation is regulated independently of PRDM9.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C67 correctly characterize the key difference from previous models (Ubeda and Wilkins 2011; Latrille et al. 2017) and justify the new approach based on empirical evidence (C28-C32). This distinction is fundamental to the model's novelty.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Loss of hotspots results in more dispersed PRDM9 binding across the genome. The number of hotspots will increase over time as optimal motifs erode and binding shifts to motifs with mismatches. The heat of observed hotspots should decrease over time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C73-C75 extend the two-heat model to more realistic continuous distributions of binding affinities. While the logic is plausible, these predictions are speculative extrapolations beyond what the two-heat model directly demonstrates. The authors acknowledge this uncertainty in the Discussion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "PRDM9 diversity is high across species regardless of population size. The mutation rate at PRDM9 is high due to its minisatellite nature. Erosion signatures at binding sites suggest cycling dynamics. Heterozygosity for minor PRDM9 alleles may protect against azoospermia in humans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C79 summarize empirical observations relevant to evaluating the model's predictions. All are supported by citations. These observations are consistent with the model but do not definitively validate it, as acknowledged by the authors.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Most fertility rescue manipulations in sterile hybrid mice restore symmetric binding. The model explains why increasing PRDM9 expression or removing specific alleles can rescue fertility: PRDM9 is sequestered to non-parental backgrounds where strong sites remain, and increasing expression allows binding at parental sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C84 apply the model to explain empirical observations about hybrid sterility. The explanation is logically consistent with the model's competitive binding framework. However, C83-C84 are speculative interpretations rather than tested predictions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C10",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "The evolutionary advantage of hotspots may be to increase DSB repair and homolog pairing efficiency by limiting recombination to a small genomic proportion. Symmetric PRDM9 binding improves efficacy by reducing search space during homolog engagement and increasing locus accessibility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C10, C85-C87 present speculative hypotheses about the ultimate evolutionary advantage of hotspots. While consistent with the model and some empirical observations, these are not directly tested. The authors appropriately present these as speculative extensions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Taxa with DSB-independent homolog pairing mechanisms lack hotspots, while most species with DSB-dependent mechanisms have hotspots. PRDM9 arose before the animal ancestor and has been repeatedly lost. In PRDM9-loss lineages, recombination localizes to promoter-like features via an ancestral mechanism that may compete with PRDM9.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C93 summarize comparative evolutionary patterns across taxa, all supported by citations. These observations provide broader context for understanding PRDM9 evolution and are consistent with the model's framework.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "PRDM9 may be favored when it enhances symmetric recruitment beyond default hotspots, creating fewer but hotter hotspots. PRDM9 may enable successful meiosis with fewer DSBs, which is supported by observations that sterile PRDM9-/- mouse strains tend to have fewer DSBs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C94-C97 present speculative hypotheses about why PRDM9 is maintained or lost in different lineages. While C95 and C97 cite supporting evidence, the overall explanation remains speculative. The authors appropriately acknowledge these as open questions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C11",
+      "C12"
+    ],
+    "result": "Recombination is more uniformly distributed across the genome in Drosophila and C. elegans compared to species with hotspots.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C12 state well-established facts about recombination patterns in these model organisms, supported by citations. This provides context for why hotspot evolution is an interesting question.",
+    "result_type": "MINOR"
+  }
+]

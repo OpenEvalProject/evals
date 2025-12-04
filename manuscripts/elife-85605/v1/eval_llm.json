@@ -1,0 +1,273 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Current CRISPR/Cas9 methods in Leishmania are limited by the absence of functional NHEJ, requiring donor DNA, drug selection, or clone isolation, making genome-wide screens unfeasible.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4, C21-C28 establish the context and limitations of existing CRISPR methods in Leishmania. The claims are well-supported by multiple citations to prior work (Passos-Silva et al., 2010; Zhang et al., 2017, 2022) and provide a clear rationale for the need for alternative approaches. The characterization of NHEJ absence and low editing rates (<1-3%) without donor DNA is consistently documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "The authors developed a CBE toolbox (LeishBASEedit) for Leishmania that uses hyBE4max to convert cytosine to thymine, introducing STOP codons without requiring DSBs or donor DNA. They created a web resource for guide design covering 64 kinetoplastid species, with at least 2 sgRNAs designable for 87.2% of protein-coding genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6, C29-C41 describe the development and theoretical basis of the CBE system. The mechanism is well-established (supported by citations to Huang et al., 2021; Zhang et al., 2020), and the computational analysis of guide design across 64 species is documented in Figure 1B-C. The web resource is a verifiable deliverable. The editing window (positions 4-12) and codon conversion capabilities are clearly illustrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "The hyBE4max CBE system efficiently depletes a tdTomato reporter in L. major and three other Leishmania species, achieving up to 98-100% knockdown with specific guides targeting the template strand, while control guides with neutral substitutions show no effect on reporter expression despite high editing rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C57 present the tdTomato reporter validation experiments. The data in Figures 2 and 3 clearly demonstrate efficient and specific editing. The observation that control guides edit DNA without affecting protein expression (C48-C49) is strong evidence for specificity. Species-specific differences in efficiency and toxicity (C54-C57) are documented with appropriate controls. The comparison with AncBE4max (C52-C53) showing off-target editing strengthens the case for hyBE4max.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "CBE targeting of single-copy genes (PF16, IFT88) in four Leishmania species produces measurable motility phenotypes that correlate with editing rates, with guide and species-specific variation in efficiency and timing (14-42 days post-transfection).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C75 describe targeting of endogenous genes with motility phenotypes. The correlation between editing rates (Figure 5) and phenotypes (Figure 4) is well-documented. The observation that non-STOP codon mutations become dominant for IFT88 guides (C75) is supported by sequencing data and provides insight into selection dynamics. Statistical analysis using Cram\u00e9r-von Mises test is appropriate. The time-dependent and species-specific variation is thoroughly characterized.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "CBE targeting of the multi-copy gene PFR2 (three tandem copies) in L. mexicana achieved ~97% protein knockdown in non-clonal populations expressing only one sgRNA, without requiring donor DNA or clone isolation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C79 demonstrate a key advantage of the CBE system: efficient targeting of multi-copy genes. The ~97% knockdown is quantified by western blot (Figure 5\u2014figure supplement 1), and the correlation with motility phenotype and editing rate strengthens the result. This is achieved in non-clonal populations, which is a significant technical advance over traditional methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "CBE targeting of the miltefosine transporter (MFT) gene confers significant resistance to miltefosine (50-80 \u00b5M) in L. donovani, with editing rates up to 86.5% correlating with drug resistance levels, demonstrating applicability for drug resistance screening.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C85 demonstrate a practical application of the CBE system for drug resistance screening. The MTT viability assays (Figure 6B-C) show statistically significant resistance (ANOVA with Tukey HSD), and the correlation with editing rates (Figure 6D-E) is clear. The pre-treatment strategy to enrich resistant parasites is well-designed. Sequencing confirms intended STOP codons (C84).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C117"
+    ],
+    "result": "Out of 26 guides tested, 24 showed editing exclusively within the expected 4-12 editing window, with only two guides showing limited off-target editing (3-6nt outside window) at low rates (23-27%), while on-target editing reached up to 100%.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C89, C117 assess the specificity of the CBE system. The comprehensive Sanger sequencing analysis across all targeted genes provides strong evidence for specificity. The two exceptions are clearly documented with low editing rates, and the contrast with high on-target rates (up to 100%) demonstrates the system's precision. This addresses a key concern about prolonged CBE expression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C9",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C126"
+    ],
+    "result": "A Leishmania-optimized CBE (hyBE4max-LmajDBD) was created by replacing the human Rad51 ssDBD with an L. major version containing a longer glutamine-rich repeat, showing modest improvements in editing efficiency for some guides in the tdTomato reporter assay.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C90-C94, C126 describe the optimization of the CBE. The rationale based on glutamine-rich repeats enhancing DNA binding (Perutz et al., 1994) is sound. The protein alignment (Figure 7\u2014figure supplement 1A) clearly shows the structural differences. However, the improvement is modest (1.6-5.3 fold for only 2 of 4 guides) and not universal, suggesting this optimization has limited impact. The claim is supported but the magnitude of improvement is modest.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C128",
+      "C136"
+    ],
+    "result": "A proof-of-concept plasmid library screen in L. mexicana successfully identified depletion of guides targeting the essential gene CRK3, with the optimized CBE showing better performance (2 guides depleted) than the non-optimized version (1 guide depleted), demonstrating feasibility of pooled loss-of-function screens.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C104, C128, C136 present the first plasmid library screen in Leishmania. The experimental design is sound with ~15 transfectants/guide (3\u00d7 higher than T. brucei RNAi screens). The statistical analysis using z-scores and confidence ellipses is appropriate. The significant depletion of CRK3 guides (Figure 7B) while non-targeting controls remain stable provides strong evidence. The observation that most transfectants carry single episomes (C97-C98) is important for interpretation. This is a genuine first for Leishmania.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C129",
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "IFT88-targeting guides were not significantly depleted in the library screen, possibly due to prioritization of universal guides over highest-scoring guides, or due to the non-essential nature of IFT88 and timing of DNA collection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C129-C132 acknowledge a negative result and provide speculation about causes. While the authors provide reasonable explanations (guide selection strategy, timing, non-essential gene), these remain untested hypotheses. The lack of IFT88 depletion despite its known growth phenotype (Beneke et al., 2019) suggests limitations in the current screening approach that require further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "Base editing efficacy is time-dependent and varies widely among genes, species, and sgRNA sequences. The method produces truncations rather than complete knockouts, and targeting the template strand is more efficient than the coding strand due to the mechanism of DNA replication.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C110, C120-C122 discuss limitations and mechanistic insights. The variation in efficacy is well-documented throughout the manuscript (Figures 2-6). The observation about template vs. coding strand efficiency (C120-C122) is supported by data in Figures 2D, 2\u2014figure supplement 2A, and 7\u2014figure supplement 1C. The concerns about truncated proteins (C107-C110) are valid but remain speculative regarding their functional consequences. The citation to Labuhn et al., 2018 (C106) appropriately contextualizes sgRNA variation as a general CRISPR issue.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C139",
+      "C140",
+      "C141",
+      "C142"
+    ],
+    "result": "The CBE method enables functional genetic screens in Leishmania via plasmid library delivery without requiring DSBs, homologous recombination, donor DNA, or clone isolation, potentially enabling genome-wide screens across multiple species and conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C11, C139-C142 present the main conclusions. The proof-of-concept library screen (Figure 7) supports the feasibility claim (C11, C104). The mechanism clearly bypasses DSBs and HR (C10, C139). The successful targeting of single-copy, multi-copy, and essential genes across four species provides strong evidence for broad applicability (C140). However, claims about future genome-wide screens (C141-C142) are speculative, though reasonably grounded in the demonstrated capabilities and compatibility with standard CRISPR library cloning strategies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C118",
+      "C119",
+      "C123",
+      "C124",
+      "C125",
+      "C127",
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "The authors discuss potential improvements to the CBE system including optimization of expression levels, integration strategies, guide design criteria, and CBE modifications, while acknowledging concerns about prolonged editing time and potential off-target effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C112-C119, C123-C125, C127, C133-C135 are primarily speculative suggestions for future improvements. While grounded in reasonable scientific principles and supported by relevant citations (e.g., Gr\u00fcnewald et al., 2019 for off-target concerns), these remain untested hypotheses. The guide ranking adjustment (C123) is implemented but not validated. These represent thoughtful discussion of limitations and future directions rather than demonstrated results.",
+    "result_type": "MINOR"
+  }
+]

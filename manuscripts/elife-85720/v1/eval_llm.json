@@ -1,0 +1,272 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C31",
+      "C32",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Using the Policy1-Cervix model, the authors estimated that in a baseline scenario with no disruption to HPV vaccination (82.4% coverage in females, 75.5% in males), 2583 HPV-related cancer cases would be prevented in the 2008 birth cohort, representing 63% of all HPV-related cases, with 1532 total cases expected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C3, C31-C32 provide consistent baseline model outputs. The methodology (C83-C87, C92-C94) describes an established, validated model (Policy1-Cervix) with appropriate components including dynamic transmission, natural history, screening, and cancer outcomes. The baseline parameters are clearly stated and the model outputs are internally consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C33",
+      "C47",
+      "C88"
+    ],
+    "result": "A 1-year delay in HPV vaccination with rapid catch-up resulted in only 4 additional cancer cases (0.3% increase), demonstrating that rapid catch-up minimizes long-term impact even with extreme disruptions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C33 provide consistent quantitative results for Scenario 1. Claim C47 appropriately interprets this finding as showing minimal impact with rapid catch-up. The scenario definition (C88) is clear. The small effect size is plausible given that no doses were entirely missed, only delayed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C34",
+      "C48",
+      "C89"
+    ],
+    "result": "A slow catch-up strategy (1-7 year delay with equal proportions caught up each year) resulted in 70 additional cancer cases (5% increase), demonstrating that slower recovery is associated with higher excess cancer burden.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C34 provide consistent quantitative results for Scenario 2. Claim C48 appropriately interprets the finding. The scenario definition (C89) is clear. The intermediate effect size between rapid catch-up and no catch-up is logically consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C6",
+      "C35",
+      "C49",
+      "C66",
+      "C90"
+    ],
+    "result": "With no catch-up vaccination for one cohort, 750 additional cancer cases (49% increase) were predicted, though herd effects still prevented close to half of HPV-related cancers in that cohort.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C35, C49 provide consistent quantitative results for Scenario 3. Claim C66 appropriately notes the protective effect of herd immunity. The scenario definition (C90) is clear. The substantial increase despite herd effects is plausible and demonstrates the importance of direct vaccination.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C9",
+      "C36",
+      "C91"
+    ],
+    "result": "In the worst-case scenario where two birth cohorts (2008 and 2009) missed vaccination with no catch-up, 1892 additional cancer cases (62% increase) were predicted.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C36 provide consistent quantitative results for Scenario 4. The scenario definition (C91) is clear. The effect is appropriately larger than the single-cohort scenario, though not exactly double due to herd effects and population dynamics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "For a single missed cohort, additional cancers were most commonly cervical (23%) and anal (16%) in females, and oropharyngeal (20%) in males. Combined across sexes, oropharyngeal (>80% in males) and anal cancers (mostly in females) were most common.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C8, C37-C40 provide a consistent breakdown of cancer types by sex. The percentages and distributions are internally consistent and align with known HPV-related cancer epidemiology. The sex-specific patterns reflect biological differences in HPV-related cancer sites.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C70",
+      "C71"
+    ],
+    "result": "The main analysis explicitly modeled cervical screening, which compensated for some cancers not prevented by vaccination. A sensitivity analysis without screening showed larger cervical cancer increases (35% vs 17-25% of additional cases) and somewhat higher overall increases (54% vs 49% for one missed cohort).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C42, C70-C71 describe the main analysis approach and rationale. Claims C43-C45 provide consistent sensitivity analysis results showing the protective effect of screening. The sensitivity analysis appropriately tests a key assumption and shows the model is somewhat robust to this choice, though screening does have a meaningful impact.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C10",
+      "C47",
+      "C81",
+      "C82"
+    ],
+    "result": "The authors conclude that with rapid catch-up of missed HPV vaccines, short-term delays in vaccinating adolescents are unlikely to have substantial long-term effects on cancer, but delays in catch-up would result in preventable cancer cases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C47, C81-C82 state the main conclusions, which are well-supported by the quantitative results showing minimal impact with 1-year delay (C4, C33) but substantial increases with slower or no catch-up (C5-C6, C34-C35). The conclusions appropriately distinguish between rapid and delayed catch-up scenarios.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C54"
+    ],
+    "result": "Australian surveillance data showed decreased second-dose completion rates in 2020 (74.7% girls, 72.6% boys) compared to 2019 (86.2% girls, 84.3% boys), suggesting vaccination delays possibly due to COVID-19 effects. Final coverage data by age 15 are not yet available for the most affected cohorts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C51 provide specific surveillance data with citations. Claim C52 offers a reasonable interpretation of the decline. Claim C54 appropriately notes data limitations. The observed decline is consistent with the pandemic's impact on school-based vaccination programs.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "The authors discuss generalizability, noting that Australia is a high-coverage setting where herd effects are substantial. In lower-coverage settings, herd effects would be smaller, but the finding that rapid catch-up minimizes disruption impact is likely to hold and may be even more important.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C69, C76-C79 provide a thoughtful discussion of generalizability. The reasoning about herd effects in different coverage settings is sound. The conclusion that rapid catch-up remains important across settings is appropriately qualified and logically supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "The authors acknowledge model limitations including that screening may not continue in the same way for HPV9-vaccinated cohorts (as it would be less cost-effective), no policy decision has been made, screening may be tailored by vaccination status, and the model did not incorporate potential changes in sexual behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C75 appropriately acknowledge important limitations. The discussion of future screening policy uncertainty (C72-C74) is reasonable given the changing landscape with HPV9. The limitation regarding sexual behavior (C75) is appropriately noted, though the pandemic's impact on sexual behavior patterns is uncertain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "COVID-19 disrupted school attendance and vaccination programs globally. The WHO declared the pandemic in March 2020, leading to infection control measures in Australia including school closures. Globally, the WHO reported the largest decline in vaccinations in three decades and loss of over a quarter of HPV vaccine coverage achieved in 2019.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C21-C25 provide appropriate background context supported by citations. The statements about pandemic impacts on vaccination are well-documented in the literature and provide necessary context for the study's motivation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Australia was the first country to implement a fully government-funded National HPV Vaccination program, offering vaccination to girls since 2007 and boys since 2013, with various catch-up programs. In 2018, the program switched from quadrivalent (HPV 6,11,16,18) to nonavalent vaccine (adding HPV 31,33,45,52,58). Course completion rates by age 15 in 2019 were 79.8% for girls and 77.0% for boys.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C20 provide accurate historical background about Australia's HPV vaccination program, supported by appropriate citations. These facts are well-documented and provide necessary context for understanding the baseline scenario and study setting.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Oncogenic HPV types are a major causal factor for cervical cancer and a fraction of anal, oropharyngeal, penile, vaginal, and vulvar cancers. Organized screening is generally only available for cervical cancer. In Australia in 2012, 80% of HPV-associated cancers were attributable to HPV16/18 (quadrivalent vaccine types) with an additional 9% attributable to the five additional nonavalent vaccine types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C28 state well-established scientific knowledge about HPV and cancer, appropriately cited. Claims C29-C30 provide specific data from a previous Australian study with citation. This background appropriately establishes the disease burden and vaccine potential.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C46"
+    ],
+    "result": "The authors claim this is the first study to estimate the long-term impact of missed HPV vaccinations across HPV-induced cancers while accounting for natural history, sexual behavior, and herd immunity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C46 asserts novelty but provides no systematic comparison with prior literature. While the study may be novel in its specific combination of features, the claim of being 'first' is difficult to verify without a comprehensive literature review. The claim may be overstated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C80"
+    ],
+    "result": "The authors provide context from international reports and prior studies showing COVID-19 impacts on HPV vaccination globally, WHO elimination goals, the importance of vaccination for long-term elimination, vaccine supply shortages, and evidence from other settings including Japan that catch-up vaccination can mitigate coverage gaps.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C65, C80 provide appropriate contextualization from the literature with citations. The discussion appropriately situates the study findings within the broader global context of HPV vaccination, elimination goals, and pandemic impacts.",
+    "result_type": "MINOR"
+  }
+]

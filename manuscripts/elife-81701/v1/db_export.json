@@ -1,0 +1,1909 @@
+{
+  "submission": {
+    "id": "5fdbc140-0b3f-4c3c-ae85-42fecfd50734",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-04T02:58:34.658763Z",
+    "updated_at": "2025-12-04T02:58:34.658763Z"
+  },
+  "content": [
+    {
+      "id": "33f4e1ac-0950-425b-804a-97a1086e3f46",
+      "submission_id": "5fdbc140-0b3f-4c3c-ae85-42fecfd50734",
+      "content_type": "manuscript",
+      "content_text": "# Object representation in a gravitational reference frame\n\n## Authors\n\n- Alexandriya MX Emonds<sup>1</sup>\n- Ramanujan Srinath<sup>2</sup> ([ORCID: 0000-0002-1832-7250](https://orcid.org/0000-0002-1832-7250))\n- Kristina J Nielsen<sup>2</sup> ([ORCID: 0000-0002-9155-2972](https://orcid.org/0000-0002-9155-2972))\n- Charles E Connor<sup>2</sup> ([ORCID: 0000-0002-8306-2818](https://orcid.org/0000-0002-8306-2818)) \u2020\n\n### Affiliations\n\n1. Department of Biomedical Engineering, Johns Hopkins University School of Medicine Baltimore United States ([ROR:00za53h95](https://ror.org/00za53h95))\n2. Zanvyl Krieger Mind/Brain Institute, Johns Hopkins University Baltimore United States ([ROR:00za53h95](https://ror.org/00za53h95))\n3. Solomon H. Snyder Department of Neuroscience, Johns Hopkins University School of Medicine Baltimore United States ([ROR:00za53h95](https://ror.org/00za53h95))\n\n\u2020 Corresponding author\n\n## Abstract\n\nWhen your head tilts laterally, as in sports, reaching, and resting, your eyes counterrotate less than 20%, and thus eye images rotate, over a total range of about 180\u00b0. Yet, the world appears stable and vision remains normal. We discovered a neural strategy for rotational stability in anterior inferotemporal cortex (IT), the final stage of object vision in primates. We measured object orientation tuning of IT neurons in macaque monkeys tilted +25 and \u201325\u00b0 laterally, producing ~40\u00b0 difference in retinal image orientation. Among IT neurons with consistent object orientation tuning, 63% remained stable with respect to gravity across tilts. Gravitational tuning depended on vestibular/somatosensory but also visual cues, consistent with previous evidence that IT processes scene cues for gravity\u2019s orientation. In addition to stability across image rotations, an internal gravitational reference frame is important for physical understanding of a world where object position, posture, structure, shape, movement, and behavior interact critically with gravity.\n\n## Introduction\n\nReflexive eye movements compensate for up/down and right/left head movements, but when your head tilts laterally, as during sports, driving (Zikovitz and Harris, 1999), social communication (Halberstadt and Saitta, 1987; Mignault and Chaudhuri, 2003; Krumhuber et al., 2007; Mara and Appel, 2015), working in cramped environments, reaching for distant objects, and resting in bed, your eyes compensate less than 20% (Miller, 1962; Schworm et al., 2002), so retinal images rotate around the point of fixation. But the perceptual compensation for this is so automatic and complete that we are usually unaware of the image rotation, and visual abilities are not strongly affected. This perceptual stability is more than just a generalization of recognition across orientations. Critically, our perceptual reference frame for objects remains stable with respect to the environment and gravity. As a result, trees still appear vertical and apples still appear to fall straight to the ground, even though their orientations and trajectories on the retina have changed.\n\nHere, we explored the hypothesis that this perceptual stability is produced by transforming visual objects into a stable, non-retinal reference frame. Our previous work has shown that the primate ventral visual pathway (Felleman and Van Essen, 1991) implements an object-centered reference frame (Pasupathy and Connor, 1999; Pasupathy and Connor, 2001; Pasupathy and Connor, 2002; Carlson et al., 2011; Srinath et al., 2021; Brincat and Connor, 2004; Brincat and Connor, 2006; Yamane et al., 2008; Hung et al., 2012; Connor and Knierim, 2017), stabilizing against position and size changes on the retina. But this still leaves open the orientation of the ventral pathway reference frame. Our recent work has shown that one channel in anterior ventral pathway processes scene-level visual cues for the orientation of the gravitational reference frame (Vaziri et al., 2014; Vaziri and Connor, 2016), raising the possibility that the ventral pathway reference frame is aligned with gravity. Here, we confirmed this hypothesis in anterior IT (Felleman and Van Essen, 1991), and found that gravitational alignment depends on both visual and vestibular/somatosensory (Brandt et al., 1994; Baier et al., 2012) cues. To a lesser extent, we observed tuning aligned with the retinal reference frame, and object orientation in either reference frame was linearly decodable from IT population responses with high accuracy. This is consistent with psychophysical results showing voluntary perceptual access to either reference frame (Attneave and Reid, 1968). The dominant, gravitationally aligned reference frame not only confers stability across image rotations but also enables physical understanding of objects in a world dominated by the force of gravity.\n\n## Results\n\n### Object tuning in a gravitational reference frame\n\nMonkeys performed a dot fixation task while we flashed object stimuli on a high-resolution LED monitor spanning 100\u00b0 of the visual field in the horizontal direction. We used evolving stimuli guided by a genetic algorithm (Carlson et al., 2011; Srinath et al., 2021; Yamane et al., 2008; Hung et al., 2012; Connor and Knierim, 2017; Vaziri et al., 2014; Vaziri and Connor, 2016) to discover 3D objects that drove strong responses from IT neurons. We presented these objects centered at fixation, across a range of screen orientations, with the monkey head-fixed and seated in a rotating chair tilted clockwise (\u2013) or counterclockwise (+) by 25\u00b0 about the axis of gaze (through the fixation point and the interpupillary midpoint; Figure 1a and b). Compensatory ocular counter-rolling was measured to be 6\u00b0 based on iris landmarks visible in high-resolution photographs, consistent with previous measurements in humans (Miller, 1962; Schworm et al., 2002) and larger than previous measurements in monkeys (Rosenberg and Angelaki, 2014), making it unlikely that we failed to adequately account for the effects of counterroll. Eye rotation would need to be five times greater than previously observed to mimic gravitational tuning. Our rotation measurements required detailed color photographs that could only be obtained with full lighting and closeup photography. This was not possible within the experiments themselves, where only low-resolution monochromatic infrared images of the eyes were available. Importantly, our analytical compensation for counter-rotation did not depend on our measurement of ocular rotation. Instead, we tested our data for correlation in retinal coordinates across a wide range of rotational compensation values. The fact that maximum correspondence, for those neurons tuned in the retinal reference frame, was observed at a compensation value of 6\u00b0 (Figure 1\u2014figure supplement 1) indicates that counterrotation during the experiments was consistent with our measurements outside the experiments.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/81701/elife-81701-fig1-v1.jpg)\n\n**Figure 1.:** (a, b) Stimuli demonstrating example object orientations in the full scene condition. At each object orientation, the object was positioned on the ground-like surface naturalistically by virtually immersing or \u2018planting\u2019 15% of its mass below ground, providing physical realism for orientations that would otherwise be visibly unbalanced and ensuring that most of the object was visible at each orientation. The high-response object shape and orientation discovered in the genetic algorithm experiments was always at the center of the tested orientation range and labeled 0\u00b0. The two monkey tilt conditions are diagrammed at left. The small white dots at the center of the head (connected by vertical dashed lines) represent the virtual axis of rotation produced by a circular sled supporting the chair. Stimuli were presented on a 100\u00b0-wide display screen for 750ms (separated by 250ms blank screen intervals) while the monkey fixated a central dot. Stimuli were presented in random order for a total of 5 repetitions each. (c,d) Responses of an example IT neuron to full scene stimuli, as a function of object orientation on the screen and thus with respect to gravity, across a 100\u00b0 orientation range, while the monkey was tilted \u201325\u00b0 (c) and 25\u00b0 (d). Response values are averaged across the 750ms presentation time and across 5 repetitions and smoothed with a boxcar kernel of width 50\u00b0 (3 orientation values). For this neuron, object orientation tuning remained consistent with respect to gravity across the two tilt conditions, with a peak response centered at 0\u00b0 (dashed vertical line). The pink triangles indicate the object orientations compared across tilts in the gravitational alignment analysis. The two leftmost values are eliminated to equate the number of comparisons with the retinal alignment analysis. (e,f) The same data plotted against orientation on the retina, corrected for 6\u00b0 counter-rolling of the eyes (Figure 1\u2014figure supplement 1). The cyan triangles indicate the response values compared across tilts in the retinal analysis. Due to 6\u00b0 the shift produced by ocular counter-rolling, these comparison values were interpolated between tested screen orientations using a Catmull-Rom spline. Since for this cell orientation tuning was consistent in gravitational space, the peaks are shifted right or left by 19\u00b0 each, that is 25\u00b0 minus the 6\u00b0 compensation for ocular counter-rotation. (g\u2013j) Similar results were obtained for this neuron with isolated object stimuli.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/81701/elife-81701-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Eye orientation was estimated with lines connecting the center of the pupil with visualizable features at the edge of the iris. For the right and left eyes in the same monkey, the measured difference in eye orientation relative to the head was 12.65\u00b0 for the right eye and 12.00\u00b0 for the left eye (upper right). For the tilt experiments on all the neurons, combined across monkeys, we searched for the counterroll compensation that would produce the strongest agreement in retinal coordinates. At each compensation level tested, we normalized and summed the mean squared error (MSE) between responses at corresponding retinal positions. The best agreement in retinal coordinates (minimum MSE) was measured at 12\u00b0 offset, corresponding to 6\u00b0 rotation from normal in each of the tilt conditions (lower left).\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/81701/elife-81701-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (a, b) Stimuli demonstrating example object orientations used to study the two IT neurons. The orientation discovered in the genetic algorithm experiments is arbitrarily labeled 0\u00b0. The two monkey tilt conditions are diagrammed at left. (c, d) Responses of a gravitationally tuned IT neuron studied with the stimuli shown in (a), as a function of object orientation on the screen and thus with respect to gravity, across a 100\u00b0 orientation range, while the monkey was tilted \u201325\u00b0 (c) and 25\u00b0 (d). Response values are averaged across the 750ms presentation time and across 5 repetitions and smoothed with a boxcar kernel of width 50\u00b0 (3 orientation values). For this neuron, object orientation tuning remained consistent in screen/gravity space across the two tilt conditions. Other details as in Figure 1. (e, f) The same data plotted against orientation on the retina, corrected for 6\u00b0 counter-rolling of the eyes in each tilt condition. Due to the shift produced by ocular counter-rolling, these comparison values were interpolated between tested screen orientations using a Catmull-Rom spline. Since orientation tuning was consistent in gravitational space, the tuning functions are shifted right or left by about 20\u00b0 each. (g, h) Responses of a retinally-tuned IT neuron studied with the stimuli shown in (b), as a function of object orientation on the screen and thus with respect to gravity, across a 100\u00b0 orientation range, while the monkey was tilted \u201325\u00b0 (c) and 25\u00b0 (d). In this case, the tuning peak was shifted about 40\u00b0, in the direction expected for orientation tuning in retinal space. (i,j) The same data plotted against orientation on the retina, corrected for 6\u00b0 counter-rolling of the eyes in each tilt condition. The correspondence between curves in (i) and (j), with peaks at near 0\u00b0, is consistent with orientation tuning in retinal space.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/81701/elife-81701-fig1-figsupp3-v1.jpg)\n\n**Figure 1\u2014figure supplement 3.:** The complete set of stimuli and boxcar-smoothed (across neighboring orientations) response functions for each of 5 repetitions for full scene stimuli (top) and isolated object stimuli (bottom).\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/81701/elife-81701-fig1-figsupp4-v1.jpg)\n\n**Figure 1\u2014figure supplement 4.:** The complete set of stimuli and boxcar-smoothed (across neighboring orientations) response functions for each of 5 repetitions for full scene stimuli (top) and isolated object stimuli (bottom).\n\n![Figure 1\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/81701/elife-81701-fig1-figsupp5-v1.jpg)\n\n**Figure 1\u2014figure supplement 5.:** The complete set of stimuli and boxcar-smoothed (across neighboring orientations) response functions for each of 5 repetitions for full scene stimuli (top) and isolated object stimuli (bottom).\n\n![Figure 1\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/81701/elife-81701-fig1-figsupp6-v1.jpg)\n\n**Figure 1\u2014figure supplement 6.:** The complete set of stimuli and boxcar-smoothed (across neighboring orientations) response functions for each of five repetitions for full scene stimuli (top) and isolated object stimuli (bottom).\n\n![Figure 1\u2014figure supplement 7.](https://cdn.elifesciences.org/articles/81701/elife-81701-fig1-figsupp7-v1.jpg)\n\n**Figure 1\u2014figure supplement 7.:** The complete set of stimuli and boxcar-smoothed (across neighboring orientations) response functions for each of five repetitions for full scene stimuli (top) and isolated object stimuli (bottom).\n\n![Figure 1\u2014figure supplement 8.](https://cdn.elifesciences.org/articles/81701/elife-81701-fig1-figsupp8-v1.jpg)\n\n**Figure 1\u2014figure supplement 8.:** The complete set of stimuli and boxcar-smoothed (across neighboring orientations) response functions for each of five repetitions for full scene stimuli (top) and isolated object stimuli (bottom).\n\n![Figure 1\u2014figure supplement 9.](https://cdn.elifesciences.org/articles/81701/elife-81701-fig1-figsupp9-v1.jpg)\n\n**Figure 1\u2014figure supplement 9.:** The complete set of stimuli and boxcar-smoothed (across neighboring orientations) response functions for each of five repetitions for full scene stimuli (top) and isolated object stimuli (bottom).\n\n![Figure 1\u2014figure supplement 10.](https://cdn.elifesciences.org/articles/81701/elife-81701-fig1-figsupp10-v1.jpg)\n\n**Figure 1\u2014figure supplement 10.:** The complete set of stimuli and boxcar-smoothed (across neighboring orientations) response functions for each of five repetitions for full scene stimuli (top) and isolated object stimuli (bottom).\n\nThe Figure 1 example neuron was tested with both full scene stimuli (Figure 1a), which included a textured ground surface and horizon, providing visual cues for the orientation of gravity, and isolated objects (Figure 1b), presented on a gray background, so that primarily vestibular and somatosensory cues indicated the orientation of gravity. The contrast between the two conditions helps to elucidate the additional effects of visual cues on top of vestibular/somatosensory cues. In addition, the isolated object condition controls for the possibility that tuning is affected by a shape-configuration (i.e. overlapping orientation) interaction between the object and the horizon or by differential occlusion of the object fragment buried in the ground (which was done to make the scene condition physically realistic for the wide variety of object orientations that would otherwise appear improbably balanced on a hard ground surface).\n\nIn Figure 1c and d, responses for the full scene condition are plotted as a function of orientation in the gravitational reference frame, that is orientation on the display screen. Despite the difference in body, head, and eye orientation between Figure 1c and d, the object orientation tuning pattern is stable; for example the peak at 0\u00b0 lines up (vertical dashed line). The correlation between the two curves in gravitational coordinates is 0.99 (t=25.89, p=3.28 X 10\u20138). Thus, the object information signaled by this neuron, which necessarily originates in retinal coordinates, has been transformed into the gravitational reference frame.\n\nWhen the same data are plotted in the retinal reference frame (Figure 1e and f), the peak near 0\u00b0 shifts right or left by 19\u00b0 (25\u00b0 tilt minus 6\u00b0 counterrotation of the eyes). This reflects the transformation of retinal information into a new reference frame. Because the eyes were rotated in different directions under the two tilt directions, the overlap of tested orientations in retinal coordinates is limited to seven screen orientations. In addition, to account for ocular counterrotation, the tested orientation values (black dots) in the two curves must be shifted 6\u00b0 in the positive direction for the \u201325\u00b0 tilt and 6\u00b0 negative for the +25\u00b0 tilt. Thus, the appropriate comparison points between Figure 1e and f, indicated by the cyan triangles, must be interpolated from the Catmull-Rom spline curves used to connect the tested orientations (black dots). A comparable set of seven comparison points in the gravitational reference frame (Figure 1c and d, pink triangles) falls directly on the tested orientations.\n\nObject orientation tuning remained stable with respect to gravity across tilts, peaking at orientation 0\u00b0, for both full scene (Figure 1c and d) and isolated object (Figure 1g and h) stimuli. Correspondingly, orientation tuning profiles shifted relative to retinal orientation by about 40\u00b0 between the two tilt conditions (Figure 1e, f, i and j), shifting the peak to the right and left of 0\u00b0. A similar example neuron is presented in Figure 1\u2014figure supplement 2, along with an example neuron for which tuning aligned with the retina, and thus shifted with respect to gravity. Expanded versions of the stimuli and neural data for these examples and others are shown in Figure 1\u2014figure supplements 3\u201310.\n\n### Distribution of gravity- and retina-aligned tuning\n\nFigure 2a scatterplots correlation values between object orientation tuning functions in the two tilt conditions calculated with respect to retinal orientation (x axis) and gravity (y axis), for a sample of 89 IT neurons tested with full scene stimuli. In both the scatterplot and the marginal histograms, color indicates the result of a 1-tailed randomization t-test on each cell for significant positive correlation (p<0.05) in the gravitational reference frame (pink), retinal reference frame (cyan), or both reference frames (dark gray) presumably due to the broad object orientation tuning of some IT neurons (Hung et al., 2012).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/81701/elife-81701-fig2-v1.jpg)\n\n**Figure 2.:** (a) Scatterplot of correlations for full scene stimuli. Correlations of tuning in the gravitational reference frame (y axis) are plotted against correlations in the retinal reference frame (x axis). Marginal distributions are shown as histograms. Neurons with significant correlations with respect to gravity are colored pink and neurons with significant correlations with respect to the retinae are colored cyan. Neurons with significant correlations in both dimensions are colored dark gray, and neurons with no significant correlation are colored light gray. (b) Scatterplot for isolated object stimuli. Conventions the same as in (a). (c) Same scatterplot as in (a), but balanced for number of comparison orientations between gravitational and retinal analysis. (d) Same as (b), but balanced for number of comparison orientations between gravitational and retinal analysis. Comparable plots based on individual monkeys are shown in . Anatomical locations of neurons in individual monkeys are shown in Figure 2\u2014figure supplements 4 and 5 .\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/81701/elife-81701-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** The circular aperture, with gray inside and black screen outside, provided a nearby, high-contrast frame for the object, intended to overwhelm the framing effects of the screen edges and thus diminish visual cues for the orientation of gravity. The circular surround conveys no visual information about the direction of gravity and would maintain a constant relationship to the object regardless of object-tilt. Details as in Figure 2. The results in this condition were comparable to the main results, with significant tendencies toward object orientation functions correlated with gravity (pink, p = 1.5259 X 10-10, two-tailed randomization t-test for center-of-mass relative to 0) and with the retinae (cyan, p = 8.8879 X 10-6). This supports the proposition that vestibular/somatosensory cues alone suffice for gravitationally aligned tuning in AIT.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/81701/elife-81701-fig2-figsupp2-v1.jpg)\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/81701/elife-81701-fig2-figsupp3-v1.jpg)\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/81701/elife-81701-fig2-figsupp4-v1.jpg)\n\n**Figure 2\u2014figure supplement 4.:** Anatomical locations of neurons in the three recording hemispheres (columns) (horizontal axis represents mm rostral to ear bars, vertical axis represents mm dorsal to ear bars). Color conventions as in Figure 2. Top row (a, b, c) shows results for the full scene experiments, bottom row (d, e, f) shows results for the isolated object experiments.\n\n![Figure 2\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/81701/elife-81701-fig2-figsupp5-v1.jpg)\n\n**Figure 2\u2014figure supplement 5.:** Anatomical locations of neurons in the three recording hemispheres (columns) (horizontal axis represents mm lateral to midline, vertical axis represents mm rostral to ear bars). Color conventions as in Figure 2. Top row (a, b, c) shows results for the full scene experiments, bottom row (d, e, f) shows results for the isolated object experiments. Based on locations in Figure 2\u2014figure supplements 4 and 5, slightly over 80% of neurons were recorded from STS (lower bank of superior temporal sulcus, where neurons have been found to be primarily object-sensitive Vaziri et al., 2014), 10% from Ted (lateral convexity of inferior temporal lobe, where a majority of neurons have been found to be scene-sensitive), and a small number from TEv (the basal surface of the inferior temporal lobe) and the bottom lip of the superior temporal sulcus.\n\n![Figure 2\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/81701/elife-81701-fig2-figsupp6-v1.jpg)\n\n**Figure 2\u2014figure supplement 6.:** Significant correlations (pink) included 8 exclusive to the isolated object condition (triangles), 11 exclusive to the scene condition (squares), and 23 apparent in both conditions (circles). Thus, gravitational alignment was observable in both conditions for a majority of cases. The 11 cells exclusive to the scene condition might suggest a necessary contribution of visual cues in some cases. However, the converse result with eight cells suggests a more complex dependency on cues and/or conflicting interactions produced by scene backgrounds. Across all 79 cells tested this way, there was no significant difference in the correlations under the two conditions (two-tailed paired t-test of correlation differences; p = 0. 1045, mean difference = 0.1077). This suggests that visual cues had little influence in our main experiments beyond the effects of clear, static vestibular and somatosensory cues.\n\nOf the 52 neurons with consistent object orientation tuning in one or both reference frames, 63% (33/52) were aligned with gravity, 21% (11/52) were aligned with the retinae, and 15% (8/52) were aligned with both. The population tendency toward positive correlation was strongly significant along the gravitational axis (two-tailed randomization t-test for center-of-mass relative to 0; p=6.49 X 10\u201329) and also significant though less so along the retinal axis (p=5.76 X 10\u201310). Similar results were obtained for a partially overlapping sample of 99 IT neurons tested with isolated object stimuli with no background (i.e. no horizon or ground plane; Figure 2b). In this case, 60% of the 53 neurons with significant object orientation tuning in one or both reference frames (32/53) showed significant correlation in the gravitational reference frame, 26% (14/53) significant correlation in the retinal reference frame, and within these groups 13% (7/53) were significant in both reference frames. The population tendency toward positive correlation was again significant in this experiment along both gravitational (p=3.63 X 10\u201322) and retinal axes (p=1.63 X 10\u20137). This suggests that gravitational tuning can depend primarily on vestibular/somatosensory cues for self-orientation. However, we cannot rule out a contribution of visual cues for gravity in the visual periphery, including screen edges and other horizontal and vertical edges and planes, which in the real world are almost uniformly aligned with gravity (but see Figure 2\u2014figure supplement 1). Nonetheless, the Figure 2b result confirms that gravitational tuning did not depend on the horizon or ground surface in the background condition. This is further confirmed through cell-by-bell comparison between scene and isolated for those cells tested with both (Figure 2\u2014figure supplement 6).\n\nThe analyses above were based on the full set of orientation comparisons possible for the gravitational reference frame (7), while the experimental design inevitably produced fewer comparisons for the retinal reference frame (5). Rerunning the analyses based on just 5 comparable object orientations in both reference frames (Figure 1, pink and cyan triangles) produced the results shown in Figure 2c and d. For full scene stimuli, this yielded 56% (23/41) significant gravitational alignment, 27% (11/41) retinal alignment, and 17% (7/41) dual alignment (Figure 2c). For isolated object stimuli, this reanalysis yielded 58% (28/48) gravitational alignment, 29% (14/48) retinal alignment, and 13% (6/48) dual alignment (Figure 2d).\n\n### Population coding of orientation in both reference frames\n\nNeurons with no significant correlation in either reference frame might actually combine signals from both reference frames, as in other brain systems that interact with multiple reference frames (Stricanne et al., 1996; Buneo et al., 2002; Avillac et al., 2005; Mullette-Gillman et al., 2005; Cohen and Groh, 2009; Caruso et al., 2021; Chang and Snyder, 2010; McGuire and Sabes, 2011; Chen et al., 2013). This would be consistent with human psychophysical results showing mixed influences of retinal and gravitational reference frames, with stronger weight for gravitational (Bock and Dalecki, 2015; Corballis et al., 1978). For mixed reference frame tuning of this kind, it has been shown that simple linear decoding can extract information in any one reference frame with an appropriate weighting pattern across neurons (Stricanne et al., 1996; Deneve et al., 2001; Pouget et al., 2002). We tested that idea here and found that object orientation information in either gravitational or retinal space could be decoded with high accuracy from the responses of the IT neurons in our sample. The decoding task was to determine whether two population responses, across the 89 neurons tested with (different) full scene stimuli, were derived from same or different orientations (the same two orientation values were chosen for each stimulus peculiar to each neuron), either in gravitational space or retinal space (corrected for counter-rolling). This match/non-match task allowed us to analyze population information about orientation equivalence even though individual neurons were tested using different stimuli with no comparability between orientations. (Across neurons, orientations were aligned according to their order in the tested range, so that each non-match trial involved the same orientation difference, in the same direction, for each neuron.) Our decoding method was linear discriminant analysis of the neural population response patterns for each stimulus pair, implemented with Matlab function fitcdiscr.\n\nThe accuracy of these linear models for orientation match/non-match in the gravitational reference frame was 97% (10-fold cross-validation). The accuracy of models for orientation match/non-match in the retinal reference frame was 98%. (The accuracies for analyses based on the partially overlapping population of 99 neurons tested with isolated objects were 81% gravitational and 90% retinal.) The success of these simple linear models shows that information in both reference frames was easily decodable as weighted sums across the neural population. No complex, nonlinear, time-consuming neural processing would be required. This easy, linear decoding of information in both reference frames is consistent with psychophysical results showing that humans have voluntary access to either reference frame (Attneave and Reid, 1968). High accuracy was obtained even with models based solely on neurons that showed no significant correlation in either gravitational or retinal reference frames (Figure 2a, light gray): 89% for gravitational discrimination and 97% for retinal discrimination. This supports the idea that these neurons carry a mix of retinal and gravitational object orientation signals.\n\n### Gravity-aligned tuning based on purely visual cues\n\nThe results for isolated object stimuli in Figure 2b and d indicate that alignment of object information with gravity does not require the visual cues present in the full scene stimuli (ground surface and horizon) and can be based purely on vestibular and somatosensory cues for the direction of gravity in a dark room. We also tested the converse question of whether purely visual cues (tilted horizon and ground surface) could produce alignment of object orientation tuning with the visually apparent orientation of gravity, even in the presence of conflicting vestibular and somatosensory cues (i.e. with the monkey in a normal upright orientation). In spite of the conflict, many neurons showed object orientation tuning functions aligned with the visually cued direction of gravity, as exemplified in Fig. 3a,c\u2013f. The five object orientations that were comparable in a gravitational reference frame (pink triangles) produced consistent responses to object orientations relative to the ground surface and horizon (Figure 3c and d). For example, the top left stimulus in Figure 3a (horizon tilt \u201325\u00b0, retinal orientation \u201325\u00b0) has the same orientation with respect to the ground surface as the bottom right stimulus (horizon tilt +25\u00b0, retinal orientation +25\u00b0). Thus, in the visually-cued gravitational reference frame, these two stimuli line up at 0\u00b0 orientation in both Figure 3c and d, and they evoke similar responses. Conversely, the nine orientations comparable in the retinal reference (black dots and cyan triangles) produced inconsistent responses (Figure 3e and f). A different example neuron (Fig. 3b,g\u2013j) exhibited object orientation tuning aligned with the retinae (Figure 3i and j) and not gravity (Figure 3g and h).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/81701/elife-81701-fig3-v1.jpg)\n\n**Figure 3.:** (a, b) Stimuli used to study two different neurons, demonstrating example object orientations in two conditions, with the ground surface, horizon, and sky gradient tilted \u201325\u00b0 (clockwise, top row) or with ground surface, etc. tilted +25\u00b0 (counterclockwise, second row). The monkey was in a normal upright orientation during these experiments, producing conflicting vestibular/somatosensory cues. The retinal orientation discovered in the genetic algorithm experiments is arbitrarily labeled 0\u00b0. (c, d) For one of the example IT neurons, tested with the stimuli in (a), object orientation tuning with respect to the visually cued direction of gravity was consistent across the two ground tilts. (e, f) Correspondingly, the neuron gave very different responses to retinal object orientation values between the two ground tilts. (g, h) This different example IT neuron, tested with the stimuli in (b), did not exhibit consistent object orientation tuning in visually-cued gravitational space. (i, j) Instead, this neuron maintained consistent tuning for retinal-screen orientation despite changes in ground tilt.\n\nAcross a sample of 228 IT neurons studied in this cue conflict experiment, 123 showed significant correlation across visual ground/horizon tilt in one or both reference frames. Of these, 54% (67/123) showed object orientation tuning aligned with the retinal reference frame, 35% (43/123) with the gravitational reference frame, and 11% (13/123) with both (Figure 4a). The population tendency toward retina-aligned orientation tuning was significant (two-tailed randomization t-test for center-of-mass relative to 0; p=8.14 X 10\u201328) as was the tendency toward gravity-aligned orientation tuning (p=6.23 X 10\u20136). The experimental design in this case produced more comparisons in the retinal reference frame, and balancing the numbers of comparisons resulted in more equal percentages (Figure 4b). The main result in this experiment, that many IT neurons exhibit object orientation tuning aligned with visual cues for the direction of gravity, even in the presence of conflicting vestibular/somatosensory cues, argues that visual cues contribute to gravity-aligned tuning under normal circumstances, where they combine with convergent vestibular/somatosensory cues. That would be consistent with our previous discovery that many neurons in IT are strongly tuned for the orientation of large-scale ground surfaces and edges, in the orientation ranges experienced across head tilts (Brincat and Connor, 2004; Brincat and Connor, 2006), and more generally with the strong visual representation of scene information in temporal lobe (Epstein and Kanwisher, 1998; Epstein, 2008; Lescroart and Gallant, 2019; Kornblith et al., 2013).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/81701/elife-81701-fig4-v1.jpg)\n\n**Figure 4.:** (a) Scatterplot of correlations for full scene stimuli. Correlations of tuning in gravitational space as cued by horizon tilt (y axis) are plotted against correlations in retinal space (x axis). Marginal distributions are shown as histograms. Neurons with significant correlations in visually-cued gravitational space are colored pink and neurons with significant correlations in retinal space are colored cyan. Neurons with significant correlations in both dimensions are colored dark gray, and neurons with no significant correlation are colored light gray. (b) Same scatterplot as in (a), but with correlation values balanced for number of comparison orientations between gravitational and retinal analysis.\n\n## Discussion\n\nThe fundamental goal of visual processing is to transform photoreceptor sheet responses into usable, essential information\u2014readable, compressed, stable signals, for the specific things we need to understand about the world. In this sense, the transformation described here achieves both stability and specificity of object information. The gravitational reference frame remains stable across retinal image rotations, a critical advantage for vision from the tilting platform of the head and body. And, it enables understanding of object structure, posture, shape, motion, and behavior relative to the strong gravitational force that constrains and interacts with all these factors. It provides information about whether and how objects and object parts are supported and balanced against gravity, how flexible, motoric objects like bodies are interacting energetically with gravity, what postural or locomotive behaviors are possible or likely, and about potential physical interactions with other objects or with the observer under the influence of gravity. In other words, it provides information critical for guiding our mechanistic understanding of and skillful interactions with the world.\n\nIt is important to distinguish this result from the notion of increasing invariance, including rotational invariance, at higher levels in the ventral pathway. There is a degree of rotational invariance in IT, but even by the broadest definition of invariance (angular range across which responses to an optimal stimulus remain significantly greater than average responses to random stimuli) the average is ~90\u00b0 for in-plane rotation and less for out-of-plane rotations (Hung et al., 2012). It has often been suggested that the ventral pathway progressively discards information about spatial positions, orientations, and sizes as a way to standardize the neural representations of object identities. But, in fact, these critical dimensions for understanding the physical world of objects and environments are not discarded but rather transformed. In particular, spatial position information is transformed from retinal coordinates into relative spatial relationships between parts of contours, surfaces, object parts, and objects (Connor and Knierim, 2017). Our results here indicate a novel kind of transformation of orientation information in the ventral pathway, from the original reference frame of the eyes to the gravitational reference frame that defines physical interactions in the world. Because this is an allocentric reference frame, the representation of orientation with respect to gravity is invariant to changes in the observer system (especially lateral head tilt), making representation more stable and more relevant to external physical events. However, our results do not suggest a change in orientation tuning breadth, increased invariance to object rotation, or a loss of critical object orientation information.\n\nA similar hypothesis about gravity-related tuning for tilted planes has been tested in parietal area CIP (central intraparietal area). Rosenberg and Angelaki, 2014 measured the responses of 46 CIP neurons with two monkey tilts, right and left 30\u00b0, and fit the responses with linear models. They reported significant alignment with eye orientation for 45 of 92 (49%) tilt tests (two separate tests for each neuron, right and left), intermediate between eye and gravity for 26/92 tilt tests (28%), and alignment with gravity for 6/92 tilt tests (7%). However, of the 5 neurons in this last category, only one appeared to show significant alignment with gravity for both tilt directions (Rosenberg and Angelaki, 2014; Figure 4D). Thus, while orientation tuning of ~35% of CIP neurons was sensitive to monkey tilt and gravity-aligned information could be extracted with a neural network (Rosenberg and Angelaki, 2014), there was no explicit tuning in a gravitational reference frame or dominance of gravitational information as found here. There is however compelling human fMRI evidence that parietal and frontal cortex are deeply involved in perceiving and predicting physical events (Fischer et al., 2016), and have unique abstract signals for stability not detected in ventral pathway (Pramod et al., 2022), though these could reflect decision-making processes (Shadlen and Newsome, 2001; Gold and Shadlen, 2007). Our results and others (Gallivan et al., 2014; Gallivan et al., 2016; Cesanek et al., 2021) suggest nonetheless that ventral pathway object and scene processing may be a critical source of information about gravity and its effects on objects, especially when detailed object representations are needed to assess precise shape, structure, support, strength, flexibility, compressibility, brittleness, specific gravity, mass distribution, and mechanical features to understand real world physical situations.\n\nOur results raise the interesting question of how visual information is transformed into a gravity-aligned reference frame, and how that transformation incorporates vestibular, somatosensory, and visual cues for the direction of gravity. Previous work on reference frame transformation has involved shifts in the position of the reference frame. There is substantial evidence that these shifts are causally driven by anticipatory signals for attentional shifts and eye movements from prefrontal cortex, acting on ventral pathway cortex to activate neurons with newly relevant spatial sensitivities (Tolias et al., 2001; Moore and Armstrong, 2003; Moore et al., 2003; Armstrong et al., 2006; Schafer and Moore, 2011; Noudoost and Moore, 2011). Here, the more difficult geometric problem is rotation of visual information, such that \u201cup\u201d, \u201cdown\u201d, \u201cright\u201d and \u201cleft\u201d become associated with signals from different parts of the retina, based on a change in the perceived direction of gravity. This could also involve spatial remapping, but in circular directions, within an object-centered reference frame (Pasupathy and Connor, 2001; Pasupathy and Connor, 2002; Carlson et al., 2011; Srinath et al., 2021; Brincat and Connor, 2004; Brincat and Connor, 2006; Yamane et al., 2008; Hung et al., 2012; Connor and Knierim, 2017). Humans can perform tasks requiring mental rotation of shapes, but this is time consuming in proportion to the angle of required rotation (Shepard and Metzler, 1971), and seems to rely on an unusual strategy of covert motor simulation (Wexler et al., 1998). The rotation required here is fast and so automatic as to be unnoticeable. Discovering the underlying transformation mechanism will likely require extensive theoretical, computational, and experimental investigation.\n\n## Materials and methods\n\n### Behavioral task, stimulus presentation, and electrophysiological recording\n\nTwo head-restrained male rhesus monkeys (Macaca mulatta) were trained to maintain fixation within 1\u00b0 (radius) of a 0.3\u00b0 diameter spot for 4 s to obtain a juice reward. Eye position was monitored with an infrared eye tracker (EyeLink). Image stimuli were displayed on a 3840x2160 resolution, 80.11 DPI television screen placed directly in front of the monkey, centered at eye level at a distance of 60 cm. The screen subtended 70\u00b0 vertically and 100\u00b0 horizontally. Monkeys were seated in a primate chair attached to a+/\u201325\u00b0 full-body rotation mechanism with the center of rotation at the midpoint between the eyes, so that the angle of gaze toward the fixation point remained constant across rotations. The rotation mechanism locked at body orientations of \u201325\u00b0 (tilted clockwise), 0\u00b0, and +25\u00b0 (counterclockwise). After fixation was initiated by the monkey, 4 stimuli were presented sequentially, for 750ms each, separated by 250ms intervals with a blank, gray background. All stimuli in a given generation were tested in random order for a total of five repetitions. The electrical activity of well-isolated single neurons was recorded with epoxy-coated tungsten electrodes (FHC Microsystems). Action potentials of individual neurons were amplified and electrically isolated using a Tucker-Davis Technologies recording system. Recording positions ranged from 5 to 25 mm anterior to the external auditory meatus within the inferior temporal lobe, including the ventral bank of the superior temporal sulcus, lateral convexity, and basal surface. Positions were determined on the basis of structural magnetic resonance images and the sequence of sulci and response characteristics observed while lowering the electrode. A total of 368 object-selective IT neurons were studied with different combinations of experiments. All animal procedures were approved by the Johns Hopkins Animal Care and Use Committee (protocol # PR21M442) and conformed to US National Institutes of Heath and US Department of Agriculture guidelines.\n\n### Stimulus generation\n\nInitially random 3D stimuli evolved through multiple generations under control of a genetic algorithm (Carlson et al., 2011; Srinath et al., 2021; Brincat and Connor, 2004; Brincat and Connor, 2006; Yamane et al., 2008), leading to high-response stimuli used to test object orientation tuning as a function of eye/head/body rotation. Random shapes were created by defining 3D mesh surfaces surrounding medial axis skeletons (Srinath et al., 2021). These shapes were assigned random or evolved optical properties including color, surface roughness, specularity/reflection, translucency/transparency, and subsurface scattering. They were depicted as projecting from (partially submerged in) planar ground surfaces covered with a random scrub grass texture extending toward a distant horizon meeting a blue, featureless sky, with variable ambient light color and lighting direction consistent with random or evolved virtual times of day. Ground surface tilt and object orientation were independent variables of interest as described in the main text. These varied across ranges of 100\u2013200\u00b0 at intervals of 12.5 or 25\u00b0. Ground surface slant, texture gradient, and horizon level, as well as object size and appearance, varied with random or evolved virtual viewing distances. The entire scenes were rendered with multi-step ray tracing using Blender Cycles running on a cluster of GPU-based machines.\n\n### Data analysis and statistics\n\nResponse rates for each stimulus were calculated by counting action potentials during the presentation window and averaging across five repetitions. Orientation tuning functions were smoothed with boxcar averaging across three neighboring values. Pearson correlation coefficients between object orientation tuning functions in different conditions (in some cases corrected for ocular counter-rolling) were calculated for the averaged, smoothed values. Significance of positive correlations were measured with a one-tailed randomization t-test, p=0.05. (There was no a priori reason to predict or test for negative correlations between orientation tuning functions.) A null distribution was created by randomly assigning response values across the tested orientations within each of the two tuning functions and recalculating the t-statistic 10,000 times. Significant biases of population correlation distributions toward positive or negative values were measured with two-tailed randomization t-tests, with exact p-values reported. A null distribution was created by randomly assigning response values across the tested orientations within each of the two tuning functions for each neuron, recalculating the t-statistic for each neuron, and recalculating the correlation distribution center of mass on the correlation domain 10,000 times.\n\n### Population decoding analysis\n\nWe pooled data across 89 neurons tested with full scene stimuli at the two monkey tilts and used cross-validated linear discriminant analysis to discriminate matching from non-matching orientations in both the retinal and gravitational reference frames. Ground truth matches were identical (in either gravitational or counter-rolling corrected retinal coordinates, depending on which reference frame was being tested). Ground truth non-matches differed by more than 25\u00b0. We equalized the numbers of retinal and gravitational match and non-match conditions by subsampling. This yielded five potential pairs of matches and 20 potential pairs of non-matches for each reference frame. For each member of a test pair, we randomly selected one raw response value for each neuron from among the five individual repetitions for that object orientation. We generated a dataset for all possible test pairs under these conditions. We used Matlab function fitcdiscr to build optimal models for linear discrimination of matches from non-matches based on response patterns across the 89 neurons. We built separate models for retinal and gravitational reference frame match/non-match discrimination. We report the accuracy of the models as 1 \u2013 misclassification rate using 10-fold cross validation.\n",
+      "created_at": "2025-12-04T02:58:34.658763Z"
+    },
+    {
+      "id": "c7ed9afc-8ad4-4a16-9f64-1b048a4bf919",
+      "submission_id": "5fdbc140-0b3f-4c3c-ae85-42fecfd50734",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- SP Arun, https://ror.org/04dese585 Indian Institute of Science Bangalore India\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.81701.sa0](https://doi.org/10.7554/eLife.81701.sa0)\n\nIn this study, the authors investigate whether neurons in the inferior temporal (IT) cortex encode features relative to the absolute gravitational vertical, by recording responses to objects in varying orientations while monkeys viewed them sitting in physically rotated chairs. They find surprising and compelling evidence that neural tuning is unaffected by physical whole-body tilt, which cannot be explained by any compensatory torsional rotations of the eyes. These findings are of fundamental importance because they indicate that IT neurons may play a role not only in object recognition but more broadly in physical scene understanding.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- SP Arun, https://ror.org/04dese585 Indian Institute of Science Bangalore India\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.81701.sa1](https://doi.org/10.7554/eLife.81701.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Object representation in a gravitational reference frame\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Tirin Moore as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1) The high tuning correlation between the whole-body tilt conditions could also occur if IT neurons encoded the angle between the horizon and the object in the object-with-horizon experiment, and/or the angle between the object and the frame of the computer monitor which may potentially be visible in the object-alone conditions. The authors will need to think carefully about how to address this confound, or acknowledge clearly that this is an alternate explanation for their findings, which would also dilute the overall novelty of the results. One possibility could be to perform identical analyses on pre-trained deep neural networks. Another could be to quantify the luminance of the monitor, and maybe also how brightly lit other objects are by the monitor in their setup. Finally, object-orientation tuning could be compared in the object-alone and object-in-scene conditions.\n\n2) The authors should provide more details about the torsional eye movements they have measured in each animal. For instance, have the authors measured torsional eye rotations on every trial? Is it fixed always at {plus minus}6{degree sign} or does it change from trial to trial? If it changes, then could the high tuning correlation between the whole-body rotations be simply driven by trials in which the eyes compensated more?\n\n3) A lot of details are dense in the manuscript. The authors should clearly present their control analyses and also the correlation analyses reported in the main figures. Please refer to the specific comments in the individual reviews for details.\n\nReviewer #1 (Recommendations for the authors):\n\nIn addition to the comments in the public review, It would also be good if the authors can quantify the overall tendency of the population in some way, rather than reporting the proportions of neurons that show a high correlation in the two reference frames. For instance, is the average tuning correlation in the absolute gravitational reference frame stronger than the average tuning correlation for the retinal reference frame? Are the proportions of neurons encoding the two reference frames different in the two experiments?\n\nSpecific comments:\n\nIn Figure 1a, the object orientations given are -50{degree sign}, 0{degree sign}, and +50{degree sign}, but in figures 1c and 1d, we can see that orientations go up to 100{degree sign}, in both directions. For these bigger rotations, do the objects penetrate the ground surface? Can the authors show more object orientations?\n\nFigure 1a: please rearrange the columns to show the object rotating consistently in one direction (CW or CCW). For instance, swap the leftmost and rightmost columns in the stimuli.\n\nFigure 1e, f \u2013 Can the authors quantify the shift from 1c and 1d explicitly? In line 102, it says the shift is about 20o. Is there any variability in the magnitude of shift across trials/neurons etc? If so, can the authors explain it clearly?\n\nFigure 1,3: The Cyan and pink triangles are not explained clearly at all. The authors should elaborate on this in the Results and in the figure legends.\n\nFigure 1e, f, i, j \u2013 We understand that x-axis values are estimated from monkey tilt and torsional rotation. Can authors show some details on torsional rotation, as in is this observed for every trial? Is there trial-to-trial variability here? Are there any trials, for which there is complete compensation by ocular counter-rolling? Though it is mentioned in the supplementary section (line 548), it is not very clear, what is meant by the comment \"For all the data from both monkeys\".\n\nFigure 2c, d \u2013 I suggest the authors move panels c and d to supplementary material, as it is not central to the arguments. Can the authors explain the matched analysis in detail on how it was done?\n\nLine 135 \u2013 It says a sample of 99 neurons, but in lines 136-138 while giving the % of each set of neurons, the denominator is 53. Please clarify.\n\nFigure 3: Since there are two neurons shown in this figure, label them as Cell 1 and Cell 2 in the figure itself. Also, it would be better to explicitly mention, which one of the figures 3c or 3e, has the x-axis inferred.\n\nLine 476: Materials and methods: Provide the details of recording sites \u2013 left/right hemisphere, probe, and data acquisition process.\n\nMethods: Can the authors show one full set of example stimuli indicating all object orientations used in each experiment?\n\nReviewer #2 (Recommendations for the authors):\n\n\u2013 The data is presented in a very compact form right now. For both Figure 1 and Figure 3, I would have found helpful a figure showing the responses of a cell to the 5 repeated presentations and showing 'each of the stimuli' (and monkey physical orientation) presented for each condition in the gravitational and retinal reference frame comparisons.\n\nAnd to show such a plot (possibly in Supplementary data) for more example cells. A huge amount of work went into collecting this data, and I think it would really help to bring readers closer to the raw data through more examples and a complete and hand-holding presentation format (even if takes up more pdf pages).\n\n\u2013 For plots of single-cell tuning curves, error bars indicating SEM would be helpful.\n\n\u2013 The result of the decoding analysis, that one can build decoders for both the gravitational reference frame and the retinal reference frame same-different task, is interesting. To what extent does this depend on specialized mechanisms? If one were to attempt the same decoding using a deep neural network trained on classification by presenting the same images presented to the monkey in the experiment, could one achieve similar decoding for the gravitational frame same/different task? Or would it completely fail?\n\n\u2013 Additional discussion of the relation of current findings to known functional architecture of IT would be helpful. For example, the recordings were from AP5 to AP25. Were any differences observed across this span? Were cells recorded in object or scene regions of IT (cf. Vaziri and Connor)?\n\n\u2013 Also, how do results relate to the notion of IT cells generating an invariant representation? If IT cells were completely rotation invariant, then all the points should cluster in the top right in their scatter plots, and that is clearly not the case. Is the suggestion then that in general IT cells are less invariant to rotations than to translations, scalings, etc., and furthermore that this selectivity for rotation angle is represented in a mixed reference frame, enabling robust decoding of identity and orientation in retinal and gravitational coordinates? A more explicit statement on the relation of the findings to the idea of IT encoding a hierarchy of increasingly invariant representations would be helpful.\n\nReviewer #3 (Recommendations for the authors):\n\n1. The authors employ a correlation analysis to examine quantitatively the effect of tilt on orientation tuning. However, it is not clear to me how well the correlation analysis can distinguish the two reference frames (retinal versus gravitational). For instance, for the data in Figure 1, I expect that the retinal reference frame also would have provided a positive correlation although the orientation tuning shifted as predicted in retinal coordinates. Furthermore, a lack of correlation can reflect an absence of orientation tuning. Therefore, I suggest that the authors select first those neurons that show a significant orientation tuning for at least one of the two tilts. For those neurons, they can determine for each tilt the preferred orientation and examine the difference in preferred orientation between the two tilts. Each of the two reference frames provides clear predictions about the expected (absence of) difference between the preferred orientations for the two tilts. Using such an analysis they can also determine whether neurons tested with and without a scene background show effects of tilt on orientation preference that are consistent across the scene manipulation (i.e. without and with scene background). Then the scene data would be useful.\n\n2. I have two issues with the population decoding analysis. First, the authors should provide a better description of the implementation of the decoding analysis. It was unclear to me how the match-nonmatch task was implemented. Second, they should perform this analysis for the object without scene background data, since as I discussed above, the scene data are difficult to interpret.\n\n3. The authors pooled the data of the two monkeys. They should provide also individual monkey data so that the reader knows how consistent the effects are for the two animals.\n",
+      "created_at": "2025-12-04T02:58:34.658763Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T02:58:34.658763Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T02:58:34.658763Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "e97b82e4-6bf4-41a7-849d-5cb156c6192f",
+      "content_id": "33f4e1ac-0950-425b-804a-97a1086e3f46",
+      "claim_id": "C1",
+      "claim": "When the head tilts laterally, eyes counterrotate less than 20%.",
+      "claim_type": "EXPLICIT",
+      "source": "When your head tilts laterally, as in sports, reaching, and resting, your eyes counterrotate less than 20%, and thus eye images rotate, over a total range of about 180\u00b0.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited in the abstract as a known phenomenon",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:58:34.658763Z"
+    },
+    {
+      "id": "b6693bef-0174-4ae2-8a86-42fb8597631c",
+      "content_id": "33f4e1ac-0950-425b-804a-97a1086e3f46",
+      "claim_id": "C2",
+      "claim": "When the head tilts laterally, eye images rotate over a total range of about 180\u00b0.",
+      "claim_type": "EXPLICIT",
+      "source": "When your head tilts laterally, as in sports, reaching, and resting, your eyes counterrotate less than 20%, and thus eye images rotate, over a total range of about 180\u00b0.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a consequence of limited counterrotation",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:58:34.658763Z"
+    },
+    {
+      "id": "00d493a9-d45e-4f09-be27-5daa66c8b5a1",
+      "content_id": "33f4e1ac-0950-425b-804a-97a1086e3f46",
+      "claim_id": "C3",
+      "claim": "Despite retinal image rotation during head tilt, the world appears stable and vision remains normal.",
+      "claim_type": "EXPLICIT",
+      "source": "Yet, the world appears stable and vision remains normal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as an observed perceptual phenomenon",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:58:34.658763Z"
+    },
+    {
+      "id": "52fa7316-9b74-4c56-a19d-6afe47cf1f90",
+      "content_id": "33f4e1ac-0950-425b-804a-97a1086e3f46",
+      "claim_id": "C4",
+      "claim": "Among IT neurons with consistent object orientation tuning, 63% remained stable with respect to gravity across tilts.",
+      "claim_type": "EXPLICIT",
+      "source": "Among IT neurons with consistent object orientation tuning, 63% remained stable with respect to gravity across tilts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Quantitative result from the study's neural recordings",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:58:34.658763Z"
+    },
+    {
+      "id": "156d4805-9609-4139-b3d2-35934ad8f372",
+      "content_id": "33f4e1ac-0950-425b-804a-97a1086e3f46",
+      "claim_id": "C5",
+      "claim": "Gravitational tuning in IT neurons depends on vestibular/somatosensory cues.",
+      "claim_type": "EXPLICIT",
+      "source": "Gravitational tuning depended on vestibular/somatosensory but also visual cues, consistent with previous evidence that IT processes scene cues for gravity's orientation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a finding from the experiments",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:58:34.658763Z"
+    },
+    {
+      "id": "f5d6f017-5352-4190-a77e-47295eebf0ac",
+      "content_id": "33f4e1ac-0950-425b-804a-97a1086e3f46",
+      "claim_id": "C6",
+      "claim": "Gravitational tuning in IT neurons depends on visual cues.",
+      "claim_type": "EXPLICIT",
+      "source": "Gravitational tuning depended on vestibular/somatosensory but also visual cues, consistent with previous evidence that IT processes scene cues for gravity's orientation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a finding from the experiments",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:58:34.658763Z"
+    },
+    {
+      "id": "ac216410-b052-4e50-9bc8-808b70530bd1",
+      "content_id": "33f4e1ac-0950-425b-804a-97a1086e3f46",
+      "claim_id": "C7",
+      "claim": "IT processes scene cues for gravity's orientation.",
+      "claim_type": "EXPLICIT",
+      "source": "Gravitational tuning depended on vestibular/somatosensory but also visual cues, consistent with previous evidence that IT processes scene cues for gravity's orientation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Referenced as previous evidence",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:58:34.658763Z"
+    },
+    {
+      "id": "3e6ec14d-f29c-4349-8910-723aeab6e13f",
+      "content_id": "33f4e1ac-0950-425b-804a-97a1086e3f46",
+      "claim_id": "C8",
+      "claim": "An internal gravitational reference frame is important for physical understanding of object position, posture, structure, shape, movement, and behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to stability across image rotations, an internal gravitational reference frame is important for physical understanding of a world where object position, posture, structure, shape, movement, and behavior interact critically with gravity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as an interpretation of the functional significance",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:58:34.658763Z"
+    },
+    {
+      "id": "cf8b7ee1-f5c4-4fea-90a5-78fe631c416b",
+      "content_id": "33f4e1ac-0950-425b-804a-97a1086e3f46",
+      "claim_id": "C9",
+      "claim": "Eyes compensate less than 20% for lateral head tilt during sports.",
+      "claim_type": "EXPLICIT",
+      "source": "Reflexive eye movements compensate for up/down and right/left head movements, but when your head tilts laterally, as during sports, driving (Zikovitz and Harris, 1999), social communication (Halberstadt and Saitta, 1987; Mignault and Chaudhuri, 2003; Krumhuber et al., 2007; Mara and Appel, 2015), working in cramped environments, reaching for distant objects, and resting in bed, your eyes compensate less than 20% (Miller, 1962; Schworm et al., 2002), so retinal images rotate around the point of fixation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:58:34.658763Z"
+    },
+    {
+      "id": "06b8b698-2e56-4d2a-b6a1-9d4a6c8fafb2",
+      "content_id": "33f4e1ac-0950-425b-804a-97a1086e3f46",
+      "claim_id": "C10",
+      "claim": "Eyes compensate less than 20% for lateral head tilt during driving.",
+      "claim_type": "EXPLICIT",
+      "source": "Reflexive eye movements compensate for up/down and right/left head movements, but when your head tilts laterally, as during sports, driving (Zikovitz and Harris, 1999), social communication (Halberstadt and Saitta, 1987; Mignault and Chaudhuri, 2003; Krumhuber et al., 2007; Mara and Appel, 2015), working in cramped environments, reaching for distant objects, and resting in bed, your eyes compensate less than 20% (Miller, 1962; Schworm et al., 2002), so retinal images rotate around the point of fixation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:58:34.658763Z"
+    },
+    {
+      "id": "83d22931-a709-4226-9e8e-443f3870f880",
+      "content_id": "33f4e1ac-0950-425b-804a-97a1086e3f46",
+      "claim_id": "C11",
+      "claim": "Retinal images rotate around the point of fixation during lateral head tilt.",
+      "claim_type": "EXPLICIT",
+      "source": "Reflexive eye movements compensate for up/down and right/left head movements, but when your head tilts laterally, as during sports, driving (Zikovitz and Harris, 1999), social communication (Halberstadt and Saitta, 1987; Mignault and Chaudhuri, 2003; Krumhuber et al., 2007; Mara and Appel, 2015), working in cramped environments, reaching for distant objects, and resting in bed, your eyes compensate less than 20% (Miller, 1962; Schworm et al., 2002), so retinal images rotate around the point of fixation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a consequence of incomplete compensation",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:58:34.658763Z"
+    },
+    {
+      "id": "154e5b63-95a0-4764-80a0-0bc8ffc7ee92",
+      "content_id": "33f4e1ac-0950-425b-804a-97a1086e3f46",
+      "claim_id": "C12",
+      "claim": "Perceptual compensation for retinal image rotation is automatic and complete.",
+      "claim_type": "EXPLICIT",
+      "source": "But the perceptual compensation for this is so automatic and complete that we are usually unaware of the image rotation, and visual abilities are not strongly affected.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as an observed perceptual phenomenon",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:58:34.658763Z"
+    },
+    {
+      "id": "8ddb8075-9a6f-4d0f-97ea-84f4ed7097e1",
+      "content_id": "33f4e1ac-0950-425b-804a-97a1086e3f46",
+      "claim_id": "C13",
+      "claim": "Our perceptual reference frame for objects remains stable with respect to the environment and gravity during head tilt.",
+      "claim_type": "EXPLICIT",
+      "source": "Critically, our perceptual reference frame for objects remains stable with respect to the environment and gravity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a key perceptual phenomenon",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:58:34.658763Z"
+    },
+    {
+      "id": "9207d8c6-0767-4059-b571-aa61fde2ebf1",
+      "content_id": "33f4e1ac-0950-425b-804a-97a1086e3f46",
+      "claim_id": "C14",
+      "claim": "The primate ventral visual pathway implements an object-centered reference frame.",
+      "claim_type": "EXPLICIT",
+      "source": "Our previous work has shown that the primate ventral visual pathway (Felleman and Van Essen, 1991) implements an object-centered reference frame (Pasupathy and Connor, 1999; Pasupathy and Connor, 2001; Pasupathy and Connor, 2002; Carlson et al., 2011; Srinath et al., 2021; Brincat and Connor, 2004; Brincat and Connor, 2006; Yamane et al., 2008; Hung et al., 2012; Connor and Knierim, 2017), stabilizing against position and size changes on the retina.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to previous work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:58:34.658763Z"
+    },
+    {
+      "id": "6c624dc2-2bb8-4001-b9dc-0901a81de61e",
+      "content_id": "33f4e1ac-0950-425b-804a-97a1086e3f46",
+      "claim_id": "C15",
+      "claim": "The ventral visual pathway stabilizes object representation against position and size changes on the retina.",
+      "claim_type": "EXPLICIT",
+      "source": "Our previous work has shown that the primate ventral visual pathway (Felleman and Van Essen, 1991) implements an object-centered reference frame (Pasupathy and Connor, 1999; Pasupathy and Connor, 2001; Pasupathy and Connor, 2002; Carlson et al., 2011; Srinath et al., 2021; Brincat and Connor, 2004; Brincat and Connor, 2006; Yamane et al., 2008; Hung et al., 2012; Connor and Knierim, 2017), stabilizing against position and size changes on the retina.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to previous work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:58:34.658763Z"
+    },
+    {
+      "id": "c9c912cc-5e1c-4f28-b2b6-cdeac3cd981d",
+      "content_id": "33f4e1ac-0950-425b-804a-97a1086e3f46",
+      "claim_id": "C16",
+      "claim": "One channel in anterior ventral pathway processes scene-level visual cues for the orientation of the gravitational reference frame.",
+      "claim_type": "EXPLICIT",
+      "source": "Our recent work has shown that one channel in anterior ventral pathway processes scene-level visual cues for the orientation of the gravitational reference frame (Vaziri et al., 2014; Vaziri and Connor, 2016), raising the possibility that the ventral pathway reference frame is aligned with gravity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to recent work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:58:34.658763Z"
+    },
+    {
+      "id": "0c18f9b6-3794-4f4d-9c80-f43f657ef3d5",
+      "content_id": "33f4e1ac-0950-425b-804a-97a1086e3f46",
+      "claim_id": "C17",
+      "claim": "The ventral pathway reference frame is aligned with gravity.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we confirmed this hypothesis in anterior IT (Felleman and Van Essen, 1991), and found that gravitational alignment depends on both visual and vestibular/somatosensory (Brandt et al., 1994; Baier et al., 2012) cues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a confirmed hypothesis from the current study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:58:34.658763Z"
+    },
+    {
+      "id": "a69af4f8-e242-499f-9740-ecfd57395862",
+      "content_id": "33f4e1ac-0950-425b-804a-97a1086e3f46",
+      "claim_id": "C18",
+      "claim": "Gravitational alignment in anterior IT depends on both visual and vestibular/somatosensory cues.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we confirmed this hypothesis in anterior IT (Felleman and Van Essen, 1991), and found that gravitational alignment depends on both visual and vestibular/somatosensory (Brandt et al., 1994; Baier et al., 2012) cues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a finding from the current study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:58:34.658763Z"
+    },
+    {
+      "id": "6eb6843d-7db9-4bfd-b3c3-5406bf29e2b4",
+      "content_id": "33f4e1ac-0950-425b-804a-97a1086e3f46",
+      "claim_id": "C19",
+      "claim": "Object orientation in either reference frame (gravitational or retinal) is linearly decodable from IT population responses with high accuracy.",
+      "claim_type": "EXPLICIT",
+      "source": "To a lesser extent, we observed tuning aligned with the retinal reference frame, and object orientation in either reference frame was linearly decodable from IT population responses with high accuracy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a finding from decoding analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:58:34.658763Z"
+    },
+    {
+      "id": "57a77691-2468-4dae-971f-498e816b575d",
+      "content_id": "33f4e1ac-0950-425b-804a-97a1086e3f46",
+      "claim_id": "C20",
+      "claim": "Humans have voluntary perceptual access to either gravitational or retinal reference frame.",
+      "claim_type": "EXPLICIT",
+      "source": "This is consistent with psychophysical results showing voluntary perceptual access to either reference frame (Attneave and Reid, 1968).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to psychophysical study",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:58:34.658763Z"
+    },
+    {
+      "id": "51043871-4fb5-485b-8134-92845ee38089",
+      "content_id": "33f4e1ac-0950-425b-804a-97a1086e3f46",
+      "claim_id": "C21",
+      "claim": "The dominant gravitationally aligned reference frame confers stability across image rotations.",
+      "claim_type": "EXPLICIT",
+      "source": "The dominant, gravitationally aligned reference frame not only confers stability across image rotations but also enables physical understanding of objects in a world dominated by the force of gravity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as an interpretation of functional significance",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:58:34.658763Z"
+    },
+    {
+      "id": "5186a720-75d9-4eec-a81f-d55d9db8faaf",
+      "content_id": "33f4e1ac-0950-425b-804a-97a1086e3f46",
+      "claim_id": "C22",
+      "claim": "The dominant gravitationally aligned reference frame enables physical understanding of objects in a world dominated by gravity.",
+      "claim_type": "EXPLICIT",
+      "source": "The dominant, gravitationally aligned reference frame not only confers stability across image rotations but also enables physical understanding of objects in a world dominated by the force of gravity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as an interpretation of functional significance",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:58:34.658763Z"
+    },
+    {
+      "id": "23f22fca-f906-4310-997c-4338fb476a2e",
+      "content_id": "33f4e1ac-0950-425b-804a-97a1086e3f46",
+      "claim_id": "C23",
+      "claim": "Compensatory ocular counter-rolling was measured to be 6\u00b0 based on iris landmarks.",
+      "claim_type": "EXPLICIT",
+      "source": "Compensatory ocular counter-rolling was measured to be 6\u00b0 based on iris landmarks visible in high-resolution photographs, consistent with previous measurements in humans (Miller, 1962; Schworm et al., 2002) and larger than previous measurements in monkeys (Rosenberg and Angelaki, 2014), making it unlikely that we failed to adequately account for the effects of counterroll.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a measurement from the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:58:34.658763Z"
+    },
+    {
+      "id": "2808be1b-1bcb-4a99-9217-586e9d743527",
+      "content_id": "33f4e1ac-0950-425b-804a-97a1086e3f46",
+      "claim_id": "C24",
+      "claim": "The measured 6\u00b0 ocular counter-rolling is consistent with previous measurements in humans.",
+      "claim_type": "EXPLICIT",
+      "source": "Compensatory ocular counter-rolling was measured to be 6\u00b0 based on iris landmarks visible in high-resolution photographs, consistent with previous measurements in humans (Miller, 1962; Schworm et al., 2002) and larger than previous measurements in monkeys (Rosenberg and Angelaki, 2014), making it unlikely that we failed to adequately account for the effects of counterroll.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison with cited previous studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:58:34.658763Z"
+    },
+    {
+      "id": "c9676655-5e31-4d7f-9b9d-fe7e171cdec5",
+      "content_id": "33f4e1ac-0950-425b-804a-97a1086e3f46",
+      "claim_id": "C25",
+      "claim": "The measured 6\u00b0 ocular counter-rolling is larger than previous measurements in monkeys.",
+      "claim_type": "EXPLICIT",
+      "source": "Compensatory ocular counter-rolling was measured to be 6\u00b0 based on iris landmarks visible in high-resolution photographs, consistent with previous measurements in humans (Miller, 1962; Schworm et al., 2002) and larger than previous measurements in monkeys (Rosenberg and Angelaki, 2014), making it unlikely that we failed to adequately account for the effects of counterroll.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison with cited previous studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:58:34.658763Z"
+    },
+    {
+      "id": "1c23fae6-97d3-4ddc-a30f-b7d0d0ede79c",
+      "content_id": "33f4e1ac-0950-425b-804a-97a1086e3f46",
+      "claim_id": "C26",
+      "claim": "Eye rotation would need to be five times greater than previously observed to mimic gravitational tuning.",
+      "claim_type": "EXPLICIT",
+      "source": "Eye rotation would need to be five times greater than previously observed to mimic gravitational tuning.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a calculation to rule out alternative explanation",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:58:34.658763Z"
+    },
+    {
+      "id": "7e59d50e-cd13-41cb-8b18-4209e3353d63",
+      "content_id": "33f4e1ac-0950-425b-804a-97a1086e3f46",
+      "claim_id": "C27",
+      "claim": "Maximum correspondence for retinally-tuned neurons was observed at a compensation value of 6\u00b0.",
+      "claim_type": "EXPLICIT",
+      "source": "The fact that maximum correspondence, for those neurons tuned in the retinal reference frame, was observed at a compensation value of 6\u00b0 (Figure 1\u2014figure supplement 1) indicates that counterrotation during the experiments was consistent with our measurements outside the experiments.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated as a finding from analysis shown in figure supplement",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:58:34.658763Z"
+    },
+    {
+      "id": "fc02e326-8307-4139-bfb7-cc0e9a59c5aa",
+      "content_id": "33f4e1ac-0950-425b-804a-97a1086e3f46",
+      "claim_id": "C28",
+      "claim": "For the example neuron in Figure 1, object orientation tuning remained consistent with respect to gravity across the two tilt conditions with full scene stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "For this neuron, object orientation tuning remained consistent with respect to gravity across the two tilt conditions, with a peak response centered at 0\u00b0 (dashed vertical line).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Described in text and shown in Figure 1c,d",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:58:34.658763Z"
+    },
+    {
+      "id": "80de4c86-f3ba-499b-8c1d-96790f50bd9c",
+      "content_id": "33f4e1ac-0950-425b-804a-97a1086e3f46",
+      "claim_id": "C29",
+      "claim": "For the example neuron in Figure 1, the correlation between the two curves in gravitational coordinates is 0.99.",
+      "claim_type": "EXPLICIT",
+      "source": "The correlation between the two curves in gravitational coordinates is 0.99 (t=25.89, p=3.28 X 10\u20138).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Quantitative statistical result from the data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:58:34.658763Z"
+    },
+    {
+      "id": "7d69a480-10c4-4ce5-b56c-452784166a4e",
+      "content_id": "33f4e1ac-0950-425b-804a-97a1086e3f46",
+      "claim_id": "C30",
+      "claim": "For the example neuron in Figure 1, object information has been transformed into the gravitational reference frame.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the object information signaled by this neuron, which necessarily originates in retinal coordinates, has been transformed into the gravitational reference frame.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as an interpretation of the correlation result",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:58:34.658763Z"
+    },
+    {
+      "id": "c7cd012a-4787-48e1-847f-a6beefd52e99",
+      "content_id": "33f4e1ac-0950-425b-804a-97a1086e3f46",
+      "claim_id": "C31",
+      "claim": "Of the 52 neurons with consistent object orientation tuning in one or both reference frames, 63% (33/52) were aligned with gravity.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the 52 neurons with consistent object orientation tuning in one or both reference frames, 63% (33/52) were aligned with gravity, 21% (11/52) were aligned with the retinae, and 15% (8/52) were aligned with both.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Quantitative result from population analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:58:34.658763Z"
+    },
+    {
+      "id": "cf999511-0b49-4616-af4d-bacfa74c85ea",
+      "content_id": "33f4e1ac-0950-425b-804a-97a1086e3f46",
+      "claim_id": "C32",
+      "claim": "Of the 52 neurons with consistent object orientation tuning in one or both reference frames, 21% (11/52) were aligned with the retinae.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the 52 neurons with consistent object orientation tuning in one or both reference frames, 63% (33/52) were aligned with gravity, 21% (11/52) were aligned with the retinae, and 15% (8/52) were aligned with both.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Quantitative result from population analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:58:34.658763Z"
+    },
+    {
+      "id": "8010abf9-77c1-46e4-a431-a20f7460a6aa",
+      "content_id": "33f4e1ac-0950-425b-804a-97a1086e3f46",
+      "claim_id": "C33",
+      "claim": "Of the 52 neurons with consistent object orientation tuning in one or both reference frames, 15% (8/52) were aligned with both gravitational and retinal reference frames.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the 52 neurons with consistent object orientation tuning in one or both reference frames, 63% (33/52) were aligned with gravity, 21% (11/52) were aligned with the retinae, and 15% (8/52) were aligned with both.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Quantitative result from population analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:58:34.658763Z"
+    },
+    {
+      "id": "d7e7b6e8-9f11-41fa-ab33-3b4c9dd59fb8",
+      "content_id": "33f4e1ac-0950-425b-804a-97a1086e3f46",
+      "claim_id": "C34",
+      "claim": "The population tendency toward positive correlation was strongly significant along the gravitational axis (p=6.49 X 10\u201329).",
+      "claim_type": "EXPLICIT",
+      "source": "The population tendency toward positive correlation was strongly significant along the gravitational axis (two-tailed randomization t-test for center-of-mass relative to 0; p=6.49 X 10\u201329) and also significant though less so along the retinal axis (p=5.76 X 10\u201310).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical test result from population analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:58:34.658763Z"
+    },
+    {
+      "id": "ce3db78b-addd-4da5-acdf-4396b86cb246",
+      "content_id": "33f4e1ac-0950-425b-804a-97a1086e3f46",
+      "claim_id": "C35",
+      "claim": "The population tendency toward positive correlation was significant along the retinal axis (p=5.76 X 10\u201310).",
+      "claim_type": "EXPLICIT",
+      "source": "The population tendency toward positive correlation was strongly significant along the gravitational axis (two-tailed randomization t-test for center-of-mass relative to 0; p=6.49 X 10\u201329) and also significant though less so along the retinal axis (p=5.76 X 10\u201310).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical test result from population analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:58:34.658763Z"
+    },
+    {
+      "id": "f1e3dee6-b385-43e7-8ee4-32438f98316f",
+      "content_id": "33f4e1ac-0950-425b-804a-97a1086e3f46",
+      "claim_id": "C36",
+      "claim": "For isolated object stimuli, 60% of the 53 neurons with significant object orientation tuning (32/53) showed significant correlation in the gravitational reference frame.",
+      "claim_type": "EXPLICIT",
+      "source": "In this case, 60% of the 53 neurons with significant object orientation tuning in one or both reference frames (32/53) showed significant correlation in the gravitational reference frame, 26% (14/53) significant correlation in the retinal reference frame, and within these groups 13% (7/53) were significant in both reference frames.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Quantitative result from isolated object condition",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:58:34.658763Z"
+    },
+    {
+      "id": "f79c43e5-fb7d-4f69-94b2-5061366820d0",
+      "content_id": "33f4e1ac-0950-425b-804a-97a1086e3f46",
+      "claim_id": "C37",
+      "claim": "For isolated object stimuli, 26% of the 53 neurons with significant object orientation tuning (14/53) showed significant correlation in the retinal reference frame.",
+      "claim_type": "EXPLICIT",
+      "source": "In this case, 60% of the 53 neurons with significant object orientation tuning in one or both reference frames (32/53) showed significant correlation in the gravitational reference frame, 26% (14/53) significant correlation in the retinal reference frame, and within these groups 13% (7/53) were significant in both reference frames.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Quantitative result from isolated object condition",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:58:34.658763Z"
+    },
+    {
+      "id": "3bc35ffd-403a-4939-9956-7e5c990315e3",
+      "content_id": "33f4e1ac-0950-425b-804a-97a1086e3f46",
+      "claim_id": "C38",
+      "claim": "For isolated object stimuli, 13% of the 53 neurons with significant object orientation tuning (7/53) were significant in both reference frames.",
+      "claim_type": "EXPLICIT",
+      "source": "In this case, 60% of the 53 neurons with significant object orientation tuning in one or both reference frames (32/53) showed significant correlation in the gravitational reference frame, 26% (14/53) significant correlation in the retinal reference frame, and within these groups 13% (7/53) were significant in both reference frames.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Quantitative result from isolated object condition",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:58:34.658763Z"
+    },
+    {
+      "id": "d63765eb-fa3c-4c47-8605-9db34f43140d",
+      "content_id": "33f4e1ac-0950-425b-804a-97a1086e3f46",
+      "claim_id": "C39",
+      "claim": "For isolated object stimuli, the population tendency toward positive correlation was significant along the gravitational axis (p=3.63 X 10\u201322).",
+      "claim_type": "EXPLICIT",
+      "source": "The population tendency toward positive correlation was again significant in this experiment along both gravitational (p=3.63 X 10\u201322) and retinal axes (p=1.63 X 10\u20137).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical test result from isolated object condition",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:58:34.658763Z"
+    },
+    {
+      "id": "5eb5737d-ff02-4f99-95f7-22b9c4e055ab",
+      "content_id": "33f4e1ac-0950-425b-804a-97a1086e3f46",
+      "claim_id": "C40",
+      "claim": "For isolated object stimuli, the population tendency toward positive correlation was significant along the retinal axis (p=1.63 X 10\u20137).",
+      "claim_type": "EXPLICIT",
+      "source": "The population tendency toward positive correlation was again significant in this experiment along both gravitational (p=3.63 X 10\u201322) and retinal axes (p=1.63 X 10\u20137).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical test result from isolated object condition",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:58:34.658763Z"
+    },
+    {
+      "id": "73e930a6-672b-47a8-be96-bed6b20013dc",
+      "content_id": "33f4e1ac-0950-425b-804a-97a1086e3f46",
+      "claim_id": "C41",
+      "claim": "Gravitational tuning can depend primarily on vestibular/somatosensory cues for self-orientation.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that gravitational tuning can depend primarily on vestibular/somatosensory cues for self-orientation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as an interpretation of the isolated object results",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:58:34.658763Z"
+    },
+    {
+      "id": "981fad1e-0a5a-4e68-871e-b4af17217276",
+      "content_id": "33f4e1ac-0950-425b-804a-97a1086e3f46",
+      "claim_id": "C42",
+      "claim": "Gravitational tuning did not depend on the horizon or ground surface in the background condition.",
+      "claim_type": "EXPLICIT",
+      "source": "Nonetheless, the Figure 2b result confirms that gravitational tuning did not depend on the horizon or ground surface in the background condition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a conclusion from the isolated object results",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:58:34.658763Z"
+    },
+    {
+      "id": "70506133-44c3-4461-8c4e-6fdf7a908800",
+      "content_id": "33f4e1ac-0950-425b-804a-97a1086e3f46",
+      "claim_id": "C43",
+      "claim": "The accuracy of linear discriminant models for orientation match/non-match in the gravitational reference frame was 97%.",
+      "claim_type": "EXPLICIT",
+      "source": "The accuracy of these linear models for orientation match/non-match in the gravitational reference frame was 97% (10-fold cross-validation).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Quantitative result from decoding analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:58:34.658763Z"
+    },
+    {
+      "id": "ac802213-5bac-404a-9557-0cd892264e32",
+      "content_id": "33f4e1ac-0950-425b-804a-97a1086e3f46",
+      "claim_id": "C44",
+      "claim": "The accuracy of linear discriminant models for orientation match/non-match in the retinal reference frame was 98%.",
+      "claim_type": "EXPLICIT",
+      "source": "The accuracy of models for orientation match/non-match in the retinal reference frame was 98%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Quantitative result from decoding analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:58:34.658763Z"
+    },
+    {
+      "id": "79472b83-0bb3-462b-8cd7-3738ea2f5eb9",
+      "content_id": "33f4e1ac-0950-425b-804a-97a1086e3f46",
+      "claim_id": "C45",
+      "claim": "For isolated object stimuli, the accuracy of linear discriminant models for orientation match/non-match in the gravitational reference frame was 81%.",
+      "claim_type": "EXPLICIT",
+      "source": "(The accuracies for analyses based on the partially overlapping population of 99 neurons tested with isolated objects were 81% gravitational and 90% retinal.)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Quantitative result from decoding analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:58:34.658763Z"
+    },
+    {
+      "id": "ead8d0bf-8e58-4ddb-af6f-0869c4d94399",
+      "content_id": "33f4e1ac-0950-425b-804a-97a1086e3f46",
+      "claim_id": "C46",
+      "claim": "For isolated object stimuli, the accuracy of linear discriminant models for orientation match/non-match in the retinal reference frame was 90%.",
+      "claim_type": "EXPLICIT",
+      "source": "(The accuracies for analyses based on the partially overlapping population of 99 neurons tested with isolated objects were 81% gravitational and 90% retinal.)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Quantitative result from decoding analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:58:34.658763Z"
+    },
+    {
+      "id": "b0ddecd9-1b9f-43b6-933e-89bb12d773bc",
+      "content_id": "33f4e1ac-0950-425b-804a-97a1086e3f46",
+      "claim_id": "C47",
+      "claim": "Information in both gravitational and retinal reference frames is easily decodable as weighted sums across the neural population.",
+      "claim_type": "EXPLICIT",
+      "source": "The success of these simple linear models shows that information in both reference frames was easily decodable as weighted sums across the neural population.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as an interpretation of the decoding results",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:58:34.658763Z"
+    },
+    {
+      "id": "ba15f23f-7251-4bf8-850d-1c50b2b30b92",
+      "content_id": "33f4e1ac-0950-425b-804a-97a1086e3f46",
+      "claim_id": "C48",
+      "claim": "Linear decoding of information in both reference frames is consistent with psychophysical results showing that humans have voluntary access to either reference frame.",
+      "claim_type": "EXPLICIT",
+      "source": "This easy, linear decoding of information in both reference frames is consistent with psychophysical results showing that humans have voluntary access to either reference frame (Attneave and Reid, 1968).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison with cited psychophysical study",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:58:34.658763Z"
+    },
+    {
+      "id": "50ab6871-7f7e-4c05-a880-cf01231c0d19",
+      "content_id": "33f4e1ac-0950-425b-804a-97a1086e3f46",
+      "claim_id": "C49",
+      "claim": "High decoding accuracy was obtained with models based solely on neurons that showed no significant correlation in either gravitational or retinal reference frames: 89% for gravitational discrimination and 97% for retinal discrimination.",
+      "claim_type": "EXPLICIT",
+      "source": "High accuracy was obtained even with models based solely on neurons that showed no significant correlation in either gravitational or retinal reference frames (Figure 2a, light gray): 89% for gravitational discrimination and 97% for retinal discrimination.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Quantitative result from decoding analysis on subset of neurons",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:58:34.658763Z"
+    },
+    {
+      "id": "3919ca56-5309-4d62-a77f-2c7d869af020",
+      "content_id": "33f4e1ac-0950-425b-804a-97a1086e3f46",
+      "claim_id": "C50",
+      "claim": "Neurons with no significant correlation in either reference frame carry a mix of retinal and gravitational object orientation signals.",
+      "claim_type": "EXPLICIT",
+      "source": "This supports the idea that these neurons carry a mix of retinal and gravitational object orientation signals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as an interpretation of the decoding results",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:58:34.658763Z"
+    },
+    {
+      "id": "a0142e32-b9ab-4a76-aec6-8a2612cc87ac",
+      "content_id": "33f4e1ac-0950-425b-804a-97a1086e3f46",
+      "claim_id": "C52",
+      "claim": "In the cue conflict experiment, 54% (67/123) of neurons with significant correlation showed object orientation tuning aligned with the retinal reference frame.",
+      "claim_type": "EXPLICIT",
+      "source": "Of these, 54% (67/123) showed object orientation tuning aligned with the retinal reference frame, 35% (43/123) with the gravitational reference frame, and 11% (13/123) with both (Figure 4a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Quantitative result from cue conflict experiment",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:58:34.658763Z"
+    },
+    {
+      "id": "5d234bce-8225-4f71-a836-36db8c242d8e",
+      "content_id": "33f4e1ac-0950-425b-804a-97a1086e3f46",
+      "claim_id": "C53",
+      "claim": "In the cue conflict experiment, 35% (43/123) of neurons with significant correlation showed object orientation tuning aligned with the gravitational reference frame.",
+      "claim_type": "EXPLICIT",
+      "source": "Of these, 54% (67/123) showed object orientation tuning aligned with the retinal reference frame, 35% (43/123) with the gravitational reference frame, and 11% (13/123) with both (Figure 4a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Quantitative result from cue conflict experiment",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:58:34.658763Z"
+    },
+    {
+      "id": "a8db2c28-c9b4-40aa-ac2e-47e81dd5d41b",
+      "content_id": "33f4e1ac-0950-425b-804a-97a1086e3f46",
+      "claim_id": "C54",
+      "claim": "In the cue conflict experiment, 11% (13/123) of neurons with significant correlation showed object orientation tuning aligned with both reference frames.",
+      "claim_type": "EXPLICIT",
+      "source": "Of these, 54% (67/123) showed object orientation tuning aligned with the retinal reference frame, 35% (43/123) with the gravitational reference frame, and 11% (13/123) with both (Figure 4a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Quantitative result from cue conflict experiment",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:58:34.658763Z"
+    },
+    {
+      "id": "9a38bf88-dc5b-40e5-b091-c8582a5dfec1",
+      "content_id": "33f4e1ac-0950-425b-804a-97a1086e3f46",
+      "claim_id": "C55",
+      "claim": "In the cue conflict experiment, the population tendency toward retina-aligned orientation tuning was significant (p=8.14 X 10\u201328).",
+      "claim_type": "EXPLICIT",
+      "source": "The population tendency toward retina-aligned orientation tuning was significant (two-tailed randomization t-test for center-of-mass relative to 0; p=8.14 X 10\u201328) as was the tendency toward gravity-aligned orientation tuning (p=6.23 X 10\u20136).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical test result from cue conflict experiment",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:58:34.658763Z"
+    },
+    {
+      "id": "fd6fddad-ea65-493f-840c-bb4b8e0cc0bc",
+      "content_id": "33f4e1ac-0950-425b-804a-97a1086e3f46",
+      "claim_id": "C56",
+      "claim": "In the cue conflict experiment, the population tendency toward gravity-aligned orientation tuning was significant (p=6.23 X 10\u20136).",
+      "claim_type": "EXPLICIT",
+      "source": "The population tendency toward retina-aligned orientation tuning was significant (two-tailed randomization t-test for center-of-mass relative to 0; p=8.14 X 10\u201328) as was the tendency toward gravity-aligned orientation tuning (p=6.23 X 10\u20136).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical test result from cue conflict experiment",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:58:34.658763Z"
+    },
+    {
+      "id": "de177be5-add2-4d20-b698-356786a7366b",
+      "content_id": "33f4e1ac-0950-425b-804a-97a1086e3f46",
+      "claim_id": "C57",
+      "claim": "Visual cues contribute to gravity-aligned tuning under normal circumstances where they combine with convergent vestibular/somatosensory cues.",
+      "claim_type": "EXPLICIT",
+      "source": "The main result in this experiment, that many IT neurons exhibit object orientation tuning aligned with visual cues for the direction of gravity, even in the presence of conflicting vestibular/somatosensory cues, argues that visual cues contribute to gravity-aligned tuning under normal circumstances, where they combine with convergent vestibular/somatosensory cues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as an interpretation of the cue conflict results",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:58:34.658763Z"
+    },
+    {
+      "id": "a4dfb581-6f3b-495f-a26e-5fb4a14c5b62",
+      "content_id": "33f4e1ac-0950-425b-804a-97a1086e3f46",
+      "claim_id": "C58",
+      "claim": "Many neurons in IT are strongly tuned for the orientation of large-scale ground surfaces and edges.",
+      "claim_type": "EXPLICIT",
+      "source": "That would be consistent with our previous discovery that many neurons in IT are strongly tuned for the orientation of large-scale ground surfaces and edges, in the orientation ranges experienced across head tilts (Brincat and Connor, 2004; Brincat and Connor, 2006), and more generally with the strong visual representation of scene information in temporal lobe (Epstein and Kanwisher, 1998; Epstein, 2008; Lescroart and Gallant, 2019; Kornblith et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:58:34.658763Z"
+    },
+    {
+      "id": "67ff5187-4c48-40e7-b854-b5ce75590566",
+      "content_id": "33f4e1ac-0950-425b-804a-97a1086e3f46",
+      "claim_id": "C59",
+      "claim": "There is strong visual representation of scene information in temporal lobe.",
+      "claim_type": "EXPLICIT",
+      "source": "That would be consistent with our previous discovery that many neurons in IT are strongly tuned for the orientation of large-scale ground surfaces and edges, in the orientation ranges experienced across head tilts (Brincat and Connor, 2004; Brincat and Connor, 2006), and more generally with the strong visual representation of scene information in temporal lobe (Epstein and Kanwisher, 1998; Epstein, 2008; Lescroart and Gallant, 2019; Kornblith et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:58:34.658763Z"
+    },
+    {
+      "id": "a922caf5-7339-414e-9d87-81f476e06348",
+      "content_id": "33f4e1ac-0950-425b-804a-97a1086e3f46",
+      "claim_id": "C60",
+      "claim": "The gravitational reference frame remains stable across retinal image rotations.",
+      "claim_type": "EXPLICIT",
+      "source": "The gravitational reference frame remains stable across retinal image rotations, a critical advantage for vision from the tilting platform of the head and body.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a functional advantage",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:58:34.658763Z"
+    },
+    {
+      "id": "0c253c65-e489-4077-adbc-098d7aec9d76",
+      "content_id": "33f4e1ac-0950-425b-804a-97a1086e3f46",
+      "claim_id": "C61",
+      "claim": "The gravitational reference frame enables understanding of object structure, posture, shape, motion, and behavior relative to gravity.",
+      "claim_type": "EXPLICIT",
+      "source": "And, it enables understanding of object structure, posture, shape, motion, and behavior relative to the strong gravitational force that constrains and interacts with all these factors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a functional advantage",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:58:34.658763Z"
+    },
+    {
+      "id": "da63c4ac-4edc-46b6-9fc0-ddc56713849c",
+      "content_id": "33f4e1ac-0950-425b-804a-97a1086e3f46",
+      "claim_id": "C62",
+      "claim": "The average rotational invariance in IT is ~90\u00b0 for in-plane rotation.",
+      "claim_type": "EXPLICIT",
+      "source": "There is a degree of rotational invariance in IT, but even by the broadest definition of invariance (angular range across which responses to an optimal stimulus remain significantly greater than average responses to random stimuli) the average is ~90\u00b0 for in-plane rotation and less for out-of-plane rotations (Hung et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:58:34.658763Z"
+    },
+    {
+      "id": "0618e45b-2528-40c8-8023-d31d8691dd58",
+      "content_id": "33f4e1ac-0950-425b-804a-97a1086e3f46",
+      "claim_id": "C63",
+      "claim": "The average rotational invariance in IT is less than 90\u00b0 for out-of-plane rotations.",
+      "claim_type": "EXPLICIT",
+      "source": "There is a degree of rotational invariance in IT, but even by the broadest definition of invariance (angular range across which responses to an optimal stimulus remain significantly greater than average responses to random stimuli) the average is ~90\u00b0 for in-plane rotation and less for out-of-plane rotations (Hung et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:58:34.658763Z"
+    },
+    {
+      "id": "ad775079-3930-4cd0-832c-7caf393018a4",
+      "content_id": "33f4e1ac-0950-425b-804a-97a1086e3f46",
+      "claim_id": "C64",
+      "claim": "Spatial position information is transformed from retinal coordinates into relative spatial relationships between parts of contours, surfaces, object parts, and objects.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, spatial position information is transformed from retinal coordinates into relative spatial relationships between parts of contours, surfaces, object parts, and objects (Connor and Knierim, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:58:34.658763Z"
+    },
+    {
+      "id": "a1f175ee-0802-43c2-aae3-7f627dc70545",
+      "content_id": "33f4e1ac-0950-425b-804a-97a1086e3f46",
+      "claim_id": "C65",
+      "claim": "Orientation information is transformed from the reference frame of the eyes to the gravitational reference frame.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results here indicate a novel kind of transformation of orientation information in the ventral pathway, from the original reference frame of the eyes to the gravitational reference frame that defines physical interactions in the world.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a conclusion from the study",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:58:34.658763Z"
+    },
+    {
+      "id": "130cbd89-3e10-4ee1-971d-5ef981d5b56d",
+      "content_id": "33f4e1ac-0950-425b-804a-97a1086e3f46",
+      "claim_id": "C66",
+      "claim": "The representation of orientation with respect to gravity is invariant to changes in the observer system, especially lateral head tilt.",
+      "claim_type": "EXPLICIT",
+      "source": "Because this is an allocentric reference frame, the representation of orientation with respect to gravity is invariant to changes in the observer system (especially lateral head tilt), making representation more stable and more relevant to external physical events.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a consequence of the allocentric reference frame",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:58:34.658763Z"
+    },
+    {
+      "id": "9456a442-bf28-45a6-b396-da8c4eb4d64d",
+      "content_id": "33f4e1ac-0950-425b-804a-97a1086e3f46",
+      "claim_id": "C67",
+      "claim": "Rosenberg and Angelaki (2014) reported significant alignment with eye orientation for 45 of 92 (49%) tilt tests in CIP neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Rosenberg and Angelaki, 2014 measured the responses of 46 CIP neurons with two monkey tilts, right and left 30\u00b0, and fit the responses with linear models. They reported significant alignment with eye orientation for 45 of 92 (49%) tilt tests (two separate tests for each neuron, right and left), intermediate between eye and gravity for 26/92 tilt tests (28%), and alignment with gravity for 6/92 tilt tests (7%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited result from previous study",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:58:34.658763Z"
+    },
+    {
+      "id": "17ed2eda-b56d-4d3e-a791-a8e182e11043",
+      "content_id": "33f4e1ac-0950-425b-804a-97a1086e3f46",
+      "claim_id": "C68",
+      "claim": "Rosenberg and Angelaki (2014) reported intermediate alignment between eye and gravity for 26/92 (28%) tilt tests in CIP neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Rosenberg and Angelaki, 2014 measured the responses of 46 CIP neurons with two monkey tilts, right and left 30\u00b0, and fit the responses with linear models. They reported significant alignment with eye orientation for 45 of 92 (49%) tilt tests (two separate tests for each neuron, right and left), intermediate between eye and gravity for 26/92 tilt tests (28%), and alignment with gravity for 6/92 tilt tests (7%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited result from previous study",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:58:34.658763Z"
+    },
+    {
+      "id": "78768469-9b4a-4c73-bf8a-9cc7fe8c436a",
+      "content_id": "33f4e1ac-0950-425b-804a-97a1086e3f46",
+      "claim_id": "C69",
+      "claim": "Rosenberg and Angelaki (2014) reported alignment with gravity for 6/92 (7%) tilt tests in CIP neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Rosenberg and Angelaki, 2014 measured the responses of 46 CIP neurons with two monkey tilts, right and left 30\u00b0, and fit the responses with linear models. They reported significant alignment with eye orientation for 45 of 92 (49%) tilt tests (two separate tests for each neuron, right and left), intermediate between eye and gravity for 26/92 tilt tests (28%), and alignment with gravity for 6/92 tilt tests (7%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited result from previous study",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:58:34.658763Z"
+    },
+    {
+      "id": "c2ffcc1e-e579-4e84-96b4-8bbb023ec1b9",
+      "content_id": "33f4e1ac-0950-425b-804a-97a1086e3f46",
+      "claim_id": "C70",
+      "claim": "Only one CIP neuron in Rosenberg and Angelaki (2014) appeared to show significant alignment with gravity for both tilt directions.",
+      "claim_type": "EXPLICIT",
+      "source": "However, of the 5 neurons in this last category, only one appeared to show significant alignment with gravity for both tilt directions (Rosenberg and Angelaki, 2014; Figure 4D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited result from previous study",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:58:34.658763Z"
+    },
+    {
+      "id": "ef9996c8-5da8-4a6a-8277-6501b4f9a2a1",
+      "content_id": "33f4e1ac-0950-425b-804a-97a1086e3f46",
+      "claim_id": "C71",
+      "claim": "Orientation tuning of ~35% of CIP neurons was sensitive to monkey tilt.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, while orientation tuning of ~35% of CIP neurons was sensitive to monkey tilt and gravity-aligned information could be extracted with a neural network (Rosenberg and Angelaki, 2014), there was no explicit tuning in a gravitational reference frame or dominance of gravitational information as found here.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited result from previous study",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:58:34.658763Z"
+    },
+    {
+      "id": "314b4e4d-61c1-466a-80fd-4e7f064ea52e",
+      "content_id": "33f4e1ac-0950-425b-804a-97a1086e3f46",
+      "claim_id": "C72",
+      "claim": "Gravity-aligned information could be extracted from CIP neurons with a neural network.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, while orientation tuning of ~35% of CIP neurons was sensitive to monkey tilt and gravity-aligned information could be extracted with a neural network (Rosenberg and Angelaki, 2014), there was no explicit tuning in a gravitational reference frame or dominance of gravitational information as found here.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited result from previous study",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:58:34.658763Z"
+    },
+    {
+      "id": "ef8a0cab-d2d2-4bcb-bc18-bfaa65e3e1f7",
+      "content_id": "33f4e1ac-0950-425b-804a-97a1086e3f46",
+      "claim_id": "C73",
+      "claim": "There was no explicit tuning in a gravitational reference frame or dominance of gravitational information in CIP as found in IT.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, while orientation tuning of ~35% of CIP neurons was sensitive to monkey tilt and gravity-aligned information could be extracted with a neural network (Rosenberg and Angelaki, 2014), there was no explicit tuning in a gravitational reference frame or dominance of gravitational information as found here.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison between cited study and current results",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:58:34.658763Z"
+    },
+    {
+      "id": "6d7a7eaa-d76f-471f-86af-9bddd5200228",
+      "content_id": "33f4e1ac-0950-425b-804a-97a1086e3f46",
+      "claim_id": "C74",
+      "claim": "Parietal and frontal cortex are deeply involved in perceiving and predicting physical events.",
+      "claim_type": "EXPLICIT",
+      "source": "There is however compelling human fMRI evidence that parietal and frontal cortex are deeply involved in perceiving and predicting physical events (Fischer et al., 2016), and have unique abstract signals for stability not detected in ventral pathway (Pramod et al., 2022), though these could reflect decision-making processes (Shadlen and Newsome, 2001; Gold and Shadlen, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:58:34.658763Z"
+    },
+    {
+      "id": "cd36b80d-6293-47c6-bdda-bbb7d0aa8d1a",
+      "content_id": "33f4e1ac-0950-425b-804a-97a1086e3f46",
+      "claim_id": "C75",
+      "claim": "Parietal and frontal cortex have unique abstract signals for stability not detected in ventral pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "There is however compelling human fMRI evidence that parietal and frontal cortex are deeply involved in perceiving and predicting physical events (Fischer et al., 2016), and have unique abstract signals for stability not detected in ventral pathway (Pramod et al., 2022), though these could reflect decision-making processes (Shadlen and Newsome, 2001; Gold and Shadlen, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:58:34.658763Z"
+    },
+    {
+      "id": "dd26d588-5ab9-439b-a6a7-af8a9760bc12",
+      "content_id": "33f4e1ac-0950-425b-804a-97a1086e3f46",
+      "claim_id": "C76",
+      "claim": "Ventral pathway object and scene processing may be a critical source of information about gravity and its effects on objects.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results and others (Gallivan et al., 2014; Gallivan et al., 2016; Cesanek et al., 2021) suggest nonetheless that ventral pathway object and scene processing may be a critical source of information about gravity and its effects on objects, especially when detailed object representations are needed to assess precise shape, structure, support, strength, flexibility, compressibility, brittleness, specific gravity, mass distribution, and mechanical features to understand real world physical situations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as an interpretation supported by current and cited work",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:58:34.658763Z"
+    },
+    {
+      "id": "9dfde8a4-d636-4023-b34b-98f4fa9aaef0",
+      "content_id": "33f4e1ac-0950-425b-804a-97a1086e3f46",
+      "claim_id": "C77",
+      "claim": "Mental rotation of shapes is time consuming in proportion to the angle of required rotation.",
+      "claim_type": "EXPLICIT",
+      "source": "Humans can perform tasks requiring mental rotation of shapes, but this is time consuming in proportion to the angle of required rotation (Shepard and Metzler, 1971), and seems to rely on an unusual strategy of covert motor simulation (Wexler et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:58:34.658763Z"
+    },
+    {
+      "id": "196d596a-ac02-469f-a985-f4a4d5f76ccd",
+      "content_id": "33f4e1ac-0950-425b-804a-97a1086e3f46",
+      "claim_id": "C78",
+      "claim": "Mental rotation seems to rely on an unusual strategy of covert motor simulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Humans can perform tasks requiring mental rotation of shapes, but this is time consuming in proportion to the angle of required rotation (Shepard and Metzler, 1971), and seems to rely on an unusual strategy of covert motor simulation (Wexler et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:58:34.658763Z"
+    },
+    {
+      "id": "21e5e8bd-45c9-45b2-8c54-da5dfbe434a6",
+      "content_id": "33f4e1ac-0950-425b-804a-97a1086e3f46",
+      "claim_id": "C79",
+      "claim": "The rotation required for gravitational reference frame transformation is fast and automatic.",
+      "claim_type": "EXPLICIT",
+      "source": "The rotation required here is fast and so automatic as to be unnoticeable.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a contrast to mental rotation",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:58:34.658763Z"
+    },
+    {
+      "id": "1fdd6355-71d6-4180-915f-8438b9260eee",
+      "content_id": "33f4e1ac-0950-425b-804a-97a1086e3f46",
+      "claim_id": "C80",
+      "claim": "Two head-restrained male rhesus monkeys were trained to maintain fixation within 1\u00b0 of a 0.3\u00b0 diameter spot for 4 s to obtain a juice reward.",
+      "claim_type": "EXPLICIT",
+      "source": "Two head-restrained male rhesus monkeys (Macaca mulatta) were trained to maintain fixation within 1\u00b0 (radius) of a 0.3\u00b0 diameter spot for 4 s to obtain a juice reward.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of experimental methods",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:58:34.658763Z"
+    },
+    {
+      "id": "5c68b346-9938-461e-bfa2-8ea6ee823534",
+      "content_id": "33f4e1ac-0950-425b-804a-97a1086e3f46",
+      "claim_id": "C81",
+      "claim": "Image stimuli were displayed on a 3840x2160 resolution, 80.11 DPI television screen.",
+      "claim_type": "EXPLICIT",
+      "source": "Image stimuli were displayed on a 3840x2160 resolution, 80.11 DPI television screen placed directly in front of the monkey, centered at eye level at a distance of 60 cm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of experimental methods",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:58:34.658763Z"
+    },
+    {
+      "id": "57374d76-5f86-4b3c-a193-14b57d6bf684",
+      "content_id": "33f4e1ac-0950-425b-804a-97a1086e3f46",
+      "claim_id": "C82",
+      "claim": "The screen subtended 70\u00b0 vertically and 100\u00b0 horizontally.",
+      "claim_type": "EXPLICIT",
+      "source": "The screen subtended 70\u00b0 vertically and 100\u00b0 horizontally.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of experimental methods",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:58:34.658763Z"
+    },
+    {
+      "id": "12f01a7a-73c5-45cf-a787-2b8aae56a725",
+      "content_id": "33f4e1ac-0950-425b-804a-97a1086e3f46",
+      "claim_id": "C83",
+      "claim": "Monkeys were seated in a primate chair attached to a +/\u201325\u00b0 full-body rotation mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "Monkeys were seated in a primate chair attached to a+/\u201325\u00b0 full-body rotation mechanism with the center of rotation at the midpoint between the eyes, so that the angle of gaze toward the fixation point remained constant across rotations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of experimental methods",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:58:34.658763Z"
+    },
+    {
+      "id": "19a0e8fb-5865-49e9-8c3f-6afbb48a5896",
+      "content_id": "33f4e1ac-0950-425b-804a-97a1086e3f46",
+      "claim_id": "C84",
+      "claim": "The center of rotation was at the midpoint between the eyes, so that the angle of gaze toward the fixation point remained constant across rotations.",
+      "claim_type": "EXPLICIT",
+      "source": "Monkeys were seated in a primate chair attached to a+/\u201325\u00b0 full-body rotation mechanism with the center of rotation at the midpoint between the eyes, so that the angle of gaze toward the fixation point remained constant across rotations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of experimental methods",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:58:34.658763Z"
+    },
+    {
+      "id": "a522b760-622e-41da-92c5-ecaccec1555c",
+      "content_id": "33f4e1ac-0950-425b-804a-97a1086e3f46",
+      "claim_id": "C85",
+      "claim": "After fixation was initiated, 4 stimuli were presented sequentially, for 750ms each, separated by 250ms intervals with a blank, gray background.",
+      "claim_type": "EXPLICIT",
+      "source": "After fixation was initiated by the monkey, 4 stimuli were presented sequentially, for 750ms each, separated by 250ms intervals with a blank, gray background.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of experimental methods",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:58:34.658763Z"
+    },
+    {
+      "id": "14a4cb17-46a3-4b38-8c34-042e6d7e3220",
+      "content_id": "33f4e1ac-0950-425b-804a-97a1086e3f46",
+      "claim_id": "C86",
+      "claim": "All stimuli in a given generation were tested in random order for a total of five repetitions.",
+      "claim_type": "EXPLICIT",
+      "source": "All stimuli in a given generation were tested in random order for a total of five repetitions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of experimental methods",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:58:34.658763Z"
+    },
+    {
+      "id": "c9c58363-8545-4118-a3f0-704e42117ee5",
+      "content_id": "33f4e1ac-0950-425b-804a-97a1086e3f46",
+      "claim_id": "C87",
+      "claim": "Recording positions ranged from 5 to 25 mm anterior to the external auditory meatus within the inferior temporal lobe.",
+      "claim_type": "EXPLICIT",
+      "source": "Recording positions ranged from 5 to 25 mm anterior to the external auditory meatus within the inferior temporal lobe, including the ventral bank of the superior temporal sulcus, lateral convexity, and basal surface.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of experimental methods",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:58:34.658763Z"
+    },
+    {
+      "id": "9e3e3d31-7cc9-4917-9fb5-6a24e11e2268",
+      "content_id": "33f4e1ac-0950-425b-804a-97a1086e3f46",
+      "claim_id": "C88",
+      "claim": "A total of 368 object-selective IT neurons were studied with different combinations of experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "A total of 368 object-selective IT neurons were studied with different combinations of experiments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of experimental sample size",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:58:34.658763Z"
+    },
+    {
+      "id": "2773c507-d2c9-4d7d-973c-72c39a2e46a4",
+      "content_id": "33f4e1ac-0950-425b-804a-97a1086e3f46",
+      "claim_id": "C89",
+      "claim": "All animal procedures were approved by the Johns Hopkins Animal Care and Use Committee (protocol # PR21M442).",
+      "claim_type": "EXPLICIT",
+      "source": "All animal procedures were approved by the Johns Hopkins Animal Care and Use Committee (protocol # PR21M442) and conformed to US National Institutes of Heath and US Department of Agriculture guidelines.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement of ethical approval",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:58:34.658763Z"
+    },
+    {
+      "id": "b7f3e08d-0682-4f57-869e-944bbe1e1c8a",
+      "content_id": "33f4e1ac-0950-425b-804a-97a1086e3f46",
+      "claim_id": "C90",
+      "claim": "Response rates for each stimulus were calculated by counting action potentials during the presentation window and averaging across five repetitions.",
+      "claim_type": "EXPLICIT",
+      "source": "Response rates for each stimulus were calculated by counting action potentials during the presentation window and averaging across five repetitions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of data analysis methods",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:58:34.658763Z"
+    },
+    {
+      "id": "cb793b73-2dda-42db-a765-2abd8863d376",
+      "content_id": "33f4e1ac-0950-425b-804a-97a1086e3f46",
+      "claim_id": "C91",
+      "claim": "Orientation tuning functions were smoothed with boxcar averaging across three neighboring values.",
+      "claim_type": "EXPLICIT",
+      "source": "Orientation tuning functions were smoothed with boxcar averaging across three neighboring values.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of data analysis methods",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:58:34.658763Z"
+    },
+    {
+      "id": "d873af56-fbe3-42f3-8e90-24cb882d6c0e",
+      "content_id": "33f4e1ac-0950-425b-804a-97a1086e3f46",
+      "claim_id": "C92",
+      "claim": "Significance of positive correlations were measured with a one-tailed randomization t-test, p=0.05.",
+      "claim_type": "EXPLICIT",
+      "source": "Significance of positive correlations were measured with a one-tailed randomization t-test, p=0.05.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of statistical methods",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:58:34.658763Z"
+    },
+    {
+      "id": "3853f2c8-32cc-4da4-9091-032b3d46cc39",
+      "content_id": "33f4e1ac-0950-425b-804a-97a1086e3f46",
+      "claim_id": "C93",
+      "claim": "Slightly over 80% of neurons were recorded from STS (lower bank of superior temporal sulcus).",
+      "claim_type": "EXPLICIT",
+      "source": "Based on locations in Figure 2\u2014figure supplements 4 and 5, slightly over 80% of neurons were recorded from STS (lower bank of superior temporal sulcus, where neurons have been found to be primarily object-sensitive Vaziri et al., 2014), 10% from Ted (lateral convexity of inferior temporal lobe, where a majority of neurons have been found to be scene-sensitive), and a small number from TEv (the basal surface of the inferior temporal lobe) and the bottom lip of the superior temporal sulcus.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Description of recording locations based on figure supplements",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:58:34.658763Z"
+    },
+    {
+      "id": "973ec6d3-6896-4406-92e3-c94e0b74e1d8",
+      "content_id": "33f4e1ac-0950-425b-804a-97a1086e3f46",
+      "claim_id": "C94",
+      "claim": "10% of neurons were recorded from Ted (lateral convexity of inferior temporal lobe).",
+      "claim_type": "EXPLICIT",
+      "source": "Based on locations in Figure 2\u2014figure supplements 4 and 5, slightly over 80% of neurons were recorded from STS (lower bank of superior temporal sulcus, where neurons have been found to be primarily object-sensitive Vaziri et al., 2014), 10% from Ted (lateral convexity of inferior temporal lobe, where a majority of neurons have been found to be scene-sensitive), and a small number from TEv (the basal surface of the inferior temporal lobe) and the bottom lip of the superior temporal sulcus.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Description of recording locations based on figure supplements",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:58:34.658763Z"
+    },
+    {
+      "id": "6220035b-f4ae-4c12-8e84-24f95df289a8",
+      "content_id": "33f4e1ac-0950-425b-804a-97a1086e3f46",
+      "claim_id": "C95",
+      "claim": "Neurons in STS have been found to be primarily object-sensitive.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on locations in Figure 2\u2014figure supplements 4 and 5, slightly over 80% of neurons were recorded from STS (lower bank of superior temporal sulcus, where neurons have been found to be primarily object-sensitive Vaziri et al., 2014), 10% from Ted (lateral convexity of inferior temporal lobe, where a majority of neurons have been found to be scene-sensitive), and a small number from TEv (the basal surface of the inferior temporal lobe) and the bottom lip of the superior temporal sulcus.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by citation to previous work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:58:34.658763Z"
+    },
+    {
+      "id": "3801849f-5513-498b-add9-d3b316968beb",
+      "content_id": "33f4e1ac-0950-425b-804a-97a1086e3f46",
+      "claim_id": "C96",
+      "claim": "A majority of neurons in Ted have been found to be scene-sensitive.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on locations in Figure 2\u2014figure supplements 4 and 5, slightly over 80% of neurons were recorded from STS (lower bank of superior temporal sulcus, where neurons have been found to be primarily object-sensitive Vaziri et al., 2014), 10% from Ted (lateral convexity of inferior temporal lobe, where a majority of neurons have been found to be scene-sensitive), and a small number from TEv (the basal surface of the inferior temporal lobe) and the bottom lip of the superior temporal sulcus.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated as known characteristic",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:58:34.658763Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "5bc85683-6119-4785-a579-7694c6cd94e6",
+      "content_id": "33f4e1ac-0950-425b-804a-97a1086e3f46",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "During lateral head tilt, eyes counterrotate less than 20%, causing retinal images to rotate over approximately 180\u00b0, yet perceptual compensation is automatic and complete, maintaining a stable gravitational reference frame for objects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3, C9-C13 establish well-documented perceptual phenomena supported by multiple citations (Miller 1962, Schworm et al. 2002, Zikovitz and Harris 1999). These claims provide the foundational motivation for the study and are consistent with established knowledge in the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:58:34.658763Z"
+    },
+    {
+      "id": "7f0bf8d2-1b4b-4af1-b600-c21705ac1918",
+      "content_id": "33f4e1ac-0950-425b-804a-97a1086e3f46",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Ocular counter-rolling was measured at 6\u00b0 using iris landmarks, consistent with human measurements and larger than previous monkey measurements, ruling out counter-rolling as an alternative explanation for gravitational tuning.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C27 provide critical methodological validation. The 6\u00b0 measurement (C23) is independently verified through retinal correspondence analysis (C27) and compared to literature values (C24-C25). The calculation that 5x greater rotation would be needed (C26) effectively rules out this confound.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:58:34.658763Z"
+    },
+    {
+      "id": "84c60ae5-dc85-468b-9b50-d74bcec6534b",
+      "content_id": "33f4e1ac-0950-425b-804a-97a1086e3f46",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "An example IT neuron maintained consistent object orientation tuning with respect to gravity across \u00b125\u00b0 body tilts, with correlation r=0.99 (p=3.28\u00d710\u207b\u2078), demonstrating transformation from retinal to gravitational reference frame.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C30 present a clear example with strong statistical support (C29). The high correlation and significant p-value provide compelling evidence for the transformation claim (C30). Figure 1 provides visual confirmation of the tuning stability.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:58:34.658763Z"
+    },
+    {
+      "id": "97ee1ad5-dc77-42b3-ad4a-705825d3a93c",
+      "content_id": "33f4e1ac-0950-425b-804a-97a1086e3f46",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "In the full scene condition, 63% of 52 neurons with consistent tuning aligned with gravity, 21% with retinae, and 15% with both, with highly significant population biases toward gravitational (p=6.49\u00d710\u207b\u00b2\u2079) and retinal (p=5.76\u00d710\u207b\u00b9\u2070) alignment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C35 provide the primary quantitative result with clear percentages and extremely significant statistical tests. The sample size (52 neurons) is adequate, and the randomization t-test is appropriate for testing population bias. The dominance of gravitational alignment is convincingly demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:58:34.658763Z"
+    },
+    {
+      "id": "901dc9e3-73a1-42ea-b07c-c7ebc11dc876",
+      "content_id": "33f4e1ac-0950-425b-804a-97a1086e3f46",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "With isolated objects (no visual scene cues), 60% of 53 neurons showed gravitational alignment and 26% retinal alignment, both statistically significant, demonstrating that gravitational tuning can depend primarily on vestibular/somatosensory cues and does not require horizon or ground surface.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C42 demonstrate that gravitational tuning persists without visual scene cues. The percentages (C36-C38) and statistical significance (C39-C40, p=3.63\u00d710\u207b\u00b2\u00b2 and p=1.63\u00d710\u207b\u2077) are robust. The interpretations (C41-C42) are well-supported by the data, though peripheral visual cues cannot be completely ruled out.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:58:34.658763Z"
+    },
+    {
+      "id": "08ad8072-94a1-4b13-98bb-86d1ab932b8f",
+      "content_id": "33f4e1ac-0950-425b-804a-97a1086e3f46",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Linear discriminant analysis achieved 97% accuracy for gravitational and 98% for retinal orientation discrimination from population responses, with high accuracy (89% and 97%) even from neurons showing no significant individual correlation, indicating mixed reference frame signals are linearly decodable.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C50 demonstrate robust population coding with appropriate cross-validation (10-fold). The high decoding accuracies from non-significantly-tuned neurons (C49) support the mixed signal interpretation (C50). The consistency with psychophysical data (C48) strengthens the biological relevance. Methods are clearly described.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:58:34.658763Z"
+    },
+    {
+      "id": "241aa917-6a3b-4f2a-913a-35287267c9fd",
+      "content_id": "33f4e1ac-0950-425b-804a-97a1086e3f46",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "In the cue conflict experiment with tilted visual scenes but upright monkey, 54% of 123 neurons aligned with retinal frame, 35% with visual gravity cues, and 11% with both, demonstrating that visual cues contribute to gravity-aligned tuning even when conflicting with vestibular/somatosensory cues.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C57 provide compelling evidence for visual contribution to gravitational tuning through a well-designed cue conflict paradigm. Both retinal (p=8.14\u00d710\u207b\u00b2\u2078) and gravitational (p=6.23\u00d710\u207b\u2076) tendencies are significant (C55-C56). The interpretation (C57) is well-justified by the experimental design.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:58:34.658763Z"
+    },
+    {
+      "id": "0c83fa84-b4dd-4ef5-bd7c-5962944ea0eb",
+      "content_id": "33f4e1ac-0950-425b-804a-97a1086e3f46",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The ventral pathway reference frame is aligned with gravity, and this alignment depends on both visual and vestibular/somatosensory cues.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C18 and C5-C6 state the main hypothesis confirmation. These are well-supported by the convergent evidence from full scene (C31-C35), isolated object (C36-C40), and cue conflict (C52-C57) experiments, which collectively demonstrate multimodal integration.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:58:34.658763Z"
+    },
+    {
+      "id": "025df8db-15b6-4fd8-8433-29aabea61027",
+      "content_id": "33f4e1ac-0950-425b-804a-97a1086e3f46",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Object orientation in either gravitational or retinal reference frame is linearly decodable from IT population responses with high accuracy, consistent with psychophysical evidence for voluntary perceptual access to either frame.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C20 are supported by the decoding analysis (C43-C50) and appropriately linked to psychophysical literature (Attneave and Reid 1968). The consistency between neural and behavioral data strengthens both claims.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:58:34.658763Z"
+    },
+    {
+      "id": "86f99a97-a3bd-4d28-a4b4-824934a7907a",
+      "content_id": "33f4e1ac-0950-425b-804a-97a1086e3f46",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The gravitationally aligned reference frame confers stability across image rotations and enables physical understanding of objects in a gravity-dominated world.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C22, C8, C60-C61 present functional interpretations well-supported by the empirical findings. The stability claim is directly demonstrated by the neural data, and the physical understanding claim is a reasonable inference given the importance of gravity in object interactions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:58:34.658763Z"
+    },
+    {
+      "id": "0da23912-bccf-4d0e-8b4c-8082e6e10fa2",
+      "content_id": "33f4e1ac-0950-425b-804a-97a1086e3f46",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Orientation information is transformed from the retinal reference frame to the gravitational reference frame, creating an allocentric representation invariant to lateral head tilt.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C66 represent the central conclusion, well-supported by the entire body of neural evidence (C28-C40). The transformation is clearly demonstrated, and the allocentric/invariance characterization is appropriate given the experimental design.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:58:34.658763Z"
+    },
+    {
+      "id": "d64dc3e1-15a4-4d0d-98ed-44948bc5f4f0",
+      "content_id": "33f4e1ac-0950-425b-804a-97a1086e3f46",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Previous work established that the primate ventral visual pathway implements an object-centered reference frame stabilizing against position and size changes, and processes scene-level visual cues for gravitational orientation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C16 accurately cite extensive prior work from the same laboratory and others. These provide appropriate context and are well-documented in the literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:58:34.658763Z"
+    },
+    {
+      "id": "704fde45-d8b1-4a4b-a388-273930c60a1f",
+      "content_id": "33f4e1ac-0950-425b-804a-97a1086e3f46",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Previous work in parietal area CIP found that ~35% of neurons were sensitive to monkey tilt, with most aligned to eye orientation rather than gravity, contrasting with the explicit gravitational tuning and dominance found in IT.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C73 accurately represent findings from Rosenberg and Angelaki (2014) and appropriately contrast them with the current IT results. The distinction between implicit extractability (C72) and explicit tuning (C73) is valid and important.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:58:34.658763Z"
+    },
+    {
+      "id": "eb162646-2648-4f07-ae72-c6a86e200e0b",
+      "content_id": "33f4e1ac-0950-425b-804a-97a1086e3f46",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "IT shows limited rotational invariance (~90\u00b0 in-plane, less out-of-plane), and spatial position information is transformed into relative spatial relationships rather than being discarded.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C64 accurately cite prior work (Hung et al. 2012, Connor and Knierim 2017) to contextualize the current findings and clarify that the results represent transformation rather than invariance.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:58:34.658763Z"
+    },
+    {
+      "id": "97cfbfa9-9e0c-4caf-bd61-9269efadab40",
+      "content_id": "33f4e1ac-0950-425b-804a-97a1086e3f46",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "IT neurons are tuned for large-scale surface orientations and scene information, while parietal/frontal cortex show unique stability signals; ventral pathway may be a critical source of gravity-related object information for detailed physical understanding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C59, C74-C76 appropriately cite relevant literature and offer reasonable speculation about functional roles. The interpretation (C76) is appropriately hedged ('may be') and supported by citations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:58:34.658763Z"
+    },
+    {
+      "id": "89f6b95e-8fc9-45d2-9aaf-b797ac536f14",
+      "content_id": "33f4e1ac-0950-425b-804a-97a1086e3f46",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Unlike effortful mental rotation which is time-consuming and relies on covert motor simulation, the gravitational reference frame transformation is fast and automatic.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C77-C79 make an appropriate contrast with mental rotation literature (Shepard and Metzler 1971, Wexler et al. 1998). The characterization of the current transformation as fast and automatic (C79) is consistent with the perceptual phenomena described (C12).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:58:34.658763Z"
+    },
+    {
+      "id": "e8bc36ba-c0c6-4e7b-95ad-3226a7bb4c69",
+      "content_id": "33f4e1ac-0950-425b-804a-97a1086e3f46",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Methods: Two rhesus monkeys performed fixation tasks while tilted \u00b125\u00b0 about the gaze axis; 368 IT neurons were recorded; stimuli were presented on a 100\u00b0\u00d770\u00b0 screen; responses were analyzed with appropriate smoothing and statistical tests; all procedures were ethically approved.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C80-C92 provide clear methodological details. The experimental design is sound with appropriate controls (rotation axis through fixation point, C84), adequate sample size (C88), proper ethical approval (C89), and appropriate statistical methods (C92). Methods are sufficiently detailed for replication.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:58:34.658763Z"
+    },
+    {
+      "id": "8417af24-5360-4423-81ff-e11e51cb45de",
+      "content_id": "33f4e1ac-0950-425b-804a-97a1086e3f46",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Recording locations: >80% of neurons from STS (object-sensitive), 10% from TEd (scene-sensitive), with small numbers from TEv and superior temporal sulcus lip.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C93-C96 provide anatomical localization based on figure supplements. The characterization of STS as object-sensitive (C95) is appropriately cited (Vaziri et al. 2014), and TEd as scene-sensitive (C96) is stated as known. This information is important for interpreting the results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:58:34.658763Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "e97b82e4-6bf4-41a7-849d-5cb156c6192f",
+      "result_id": "5bc85683-6119-4785-a579-7694c6cd94e6"
+    },
+    {
+      "claim_id": "b6693bef-0174-4ae2-8a86-42fb8597631c",
+      "result_id": "5bc85683-6119-4785-a579-7694c6cd94e6"
+    },
+    {
+      "claim_id": "00d493a9-d45e-4f09-be27-5daa66c8b5a1",
+      "result_id": "5bc85683-6119-4785-a579-7694c6cd94e6"
+    },
+    {
+      "claim_id": "cf8b7ee1-f5c4-4fea-90a5-78fe631c416b",
+      "result_id": "5bc85683-6119-4785-a579-7694c6cd94e6"
+    },
+    {
+      "claim_id": "06b8b698-2e56-4d2a-b6a1-9d4a6c8fafb2",
+      "result_id": "5bc85683-6119-4785-a579-7694c6cd94e6"
+    },
+    {
+      "claim_id": "83d22931-a709-4226-9e8e-443f3870f880",
+      "result_id": "5bc85683-6119-4785-a579-7694c6cd94e6"
+    },
+    {
+      "claim_id": "154e5b63-95a0-4764-80a0-0bc8ffc7ee92",
+      "result_id": "5bc85683-6119-4785-a579-7694c6cd94e6"
+    },
+    {
+      "claim_id": "8ddb8075-9a6f-4d0f-97ea-84f4ed7097e1",
+      "result_id": "5bc85683-6119-4785-a579-7694c6cd94e6"
+    },
+    {
+      "claim_id": "23f22fca-f906-4310-997c-4338fb476a2e",
+      "result_id": "7f0bf8d2-1b4b-4af1-b600-c21705ac1918"
+    },
+    {
+      "claim_id": "2808be1b-1bcb-4a99-9217-586e9d743527",
+      "result_id": "7f0bf8d2-1b4b-4af1-b600-c21705ac1918"
+    },
+    {
+      "claim_id": "c9676655-5e31-4d7f-9b9d-fe7e171cdec5",
+      "result_id": "7f0bf8d2-1b4b-4af1-b600-c21705ac1918"
+    },
+    {
+      "claim_id": "1c23fae6-97d3-4ddc-a30f-b7d0d0ede79c",
+      "result_id": "7f0bf8d2-1b4b-4af1-b600-c21705ac1918"
+    },
+    {
+      "claim_id": "7e59d50e-cd13-41cb-8b18-4209e3353d63",
+      "result_id": "7f0bf8d2-1b4b-4af1-b600-c21705ac1918"
+    },
+    {
+      "claim_id": "fc02e326-8307-4139-bfb7-cc0e9a59c5aa",
+      "result_id": "84c60ae5-dc85-468b-9b50-d74bcec6534b"
+    },
+    {
+      "claim_id": "80de4c86-f3ba-499b-8c1d-96790f50bd9c",
+      "result_id": "84c60ae5-dc85-468b-9b50-d74bcec6534b"
+    },
+    {
+      "claim_id": "7d69a480-10c4-4ce5-b56c-452784166a4e",
+      "result_id": "84c60ae5-dc85-468b-9b50-d74bcec6534b"
+    },
+    {
+      "claim_id": "c7cd012a-4787-48e1-847f-a6beefd52e99",
+      "result_id": "97ee1ad5-dc77-42b3-ad4a-705825d3a93c"
+    },
+    {
+      "claim_id": "cf999511-0b49-4616-af4d-bacfa74c85ea",
+      "result_id": "97ee1ad5-dc77-42b3-ad4a-705825d3a93c"
+    },
+    {
+      "claim_id": "8010abf9-77c1-46e4-a431-a20f7460a6aa",
+      "result_id": "97ee1ad5-dc77-42b3-ad4a-705825d3a93c"
+    },
+    {
+      "claim_id": "d7e7b6e8-9f11-41fa-ab33-3b4c9dd59fb8",
+      "result_id": "97ee1ad5-dc77-42b3-ad4a-705825d3a93c"
+    },
+    {
+      "claim_id": "ce3db78b-addd-4da5-acdf-4396b86cb246",
+      "result_id": "97ee1ad5-dc77-42b3-ad4a-705825d3a93c"
+    },
+    {
+      "claim_id": "f1e3dee6-b385-43e7-8ee4-32438f98316f",
+      "result_id": "901dc9e3-73a1-42ea-b07c-c7ebc11dc876"
+    },
+    {
+      "claim_id": "f79c43e5-fb7d-4f69-94b2-5061366820d0",
+      "result_id": "901dc9e3-73a1-42ea-b07c-c7ebc11dc876"
+    },
+    {
+      "claim_id": "3bc35ffd-403a-4939-9956-7e5c990315e3",
+      "result_id": "901dc9e3-73a1-42ea-b07c-c7ebc11dc876"
+    },
+    {
+      "claim_id": "d63765eb-fa3c-4c47-8605-9db34f43140d",
+      "result_id": "901dc9e3-73a1-42ea-b07c-c7ebc11dc876"
+    },
+    {
+      "claim_id": "5eb5737d-ff02-4f99-95f7-22b9c4e055ab",
+      "result_id": "901dc9e3-73a1-42ea-b07c-c7ebc11dc876"
+    },
+    {
+      "claim_id": "73e930a6-672b-47a8-be96-bed6b20013dc",
+      "result_id": "901dc9e3-73a1-42ea-b07c-c7ebc11dc876"
+    },
+    {
+      "claim_id": "981fad1e-0a5a-4e68-871e-b4af17217276",
+      "result_id": "901dc9e3-73a1-42ea-b07c-c7ebc11dc876"
+    },
+    {
+      "claim_id": "70506133-44c3-4461-8c4e-6fdf7a908800",
+      "result_id": "08ad8072-94a1-4b13-98bb-86d1ab932b8f"
+    },
+    {
+      "claim_id": "ac802213-5bac-404a-9557-0cd892264e32",
+      "result_id": "08ad8072-94a1-4b13-98bb-86d1ab932b8f"
+    },
+    {
+      "claim_id": "79472b83-0bb3-462b-8cd7-3738ea2f5eb9",
+      "result_id": "08ad8072-94a1-4b13-98bb-86d1ab932b8f"
+    },
+    {
+      "claim_id": "ead8d0bf-8e58-4ddb-af6f-0869c4d94399",
+      "result_id": "08ad8072-94a1-4b13-98bb-86d1ab932b8f"
+    },
+    {
+      "claim_id": "b0ddecd9-1b9f-43b6-933e-89bb12d773bc",
+      "result_id": "08ad8072-94a1-4b13-98bb-86d1ab932b8f"
+    },
+    {
+      "claim_id": "ba15f23f-7251-4bf8-850d-1c50b2b30b92",
+      "result_id": "08ad8072-94a1-4b13-98bb-86d1ab932b8f"
+    },
+    {
+      "claim_id": "50ab6871-7f7e-4c05-a880-cf01231c0d19",
+      "result_id": "08ad8072-94a1-4b13-98bb-86d1ab932b8f"
+    },
+    {
+      "claim_id": "3919ca56-5309-4d62-a77f-2c7d869af020",
+      "result_id": "08ad8072-94a1-4b13-98bb-86d1ab932b8f"
+    },
+    {
+      "claim_id": "a0142e32-b9ab-4a76-aec6-8a2612cc87ac",
+      "result_id": "241aa917-6a3b-4f2a-913a-35287267c9fd"
+    },
+    {
+      "claim_id": "5d234bce-8225-4f71-a836-36db8c242d8e",
+      "result_id": "241aa917-6a3b-4f2a-913a-35287267c9fd"
+    },
+    {
+      "claim_id": "a8db2c28-c9b4-40aa-ac2e-47e81dd5d41b",
+      "result_id": "241aa917-6a3b-4f2a-913a-35287267c9fd"
+    },
+    {
+      "claim_id": "9a38bf88-dc5b-40e5-b091-c8582a5dfec1",
+      "result_id": "241aa917-6a3b-4f2a-913a-35287267c9fd"
+    },
+    {
+      "claim_id": "fd6fddad-ea65-493f-840c-bb4b8e0cc0bc",
+      "result_id": "241aa917-6a3b-4f2a-913a-35287267c9fd"
+    },
+    {
+      "claim_id": "de177be5-add2-4d20-b698-356786a7366b",
+      "result_id": "241aa917-6a3b-4f2a-913a-35287267c9fd"
+    },
+    {
+      "claim_id": "0c18f9b6-3794-4f4d-9c80-f43f657ef3d5",
+      "result_id": "0c83fa84-b4dd-4ef5-bd7c-5962944ea0eb"
+    },
+    {
+      "claim_id": "a69af4f8-e242-499f-9740-ecfd57395862",
+      "result_id": "0c83fa84-b4dd-4ef5-bd7c-5962944ea0eb"
+    },
+    {
+      "claim_id": "156d4805-9609-4139-b3d2-35934ad8f372",
+      "result_id": "0c83fa84-b4dd-4ef5-bd7c-5962944ea0eb"
+    },
+    {
+      "claim_id": "f5d6f017-5352-4190-a77e-47295eebf0ac",
+      "result_id": "0c83fa84-b4dd-4ef5-bd7c-5962944ea0eb"
+    },
+    {
+      "claim_id": "6eb6843d-7db9-4bfd-b3c3-5406bf29e2b4",
+      "result_id": "025df8db-15b6-4fd8-8433-29aabea61027"
+    },
+    {
+      "claim_id": "57a77691-2468-4dae-971f-498e816b575d",
+      "result_id": "025df8db-15b6-4fd8-8433-29aabea61027"
+    },
+    {
+      "claim_id": "51043871-4fb5-485b-8134-92845ee38089",
+      "result_id": "86f99a97-a3bd-4d28-a4b4-824934a7907a"
+    },
+    {
+      "claim_id": "5186a720-75d9-4eec-a81f-d55d9db8faaf",
+      "result_id": "86f99a97-a3bd-4d28-a4b4-824934a7907a"
+    },
+    {
+      "claim_id": "3e6ec14d-f29c-4349-8910-723aeab6e13f",
+      "result_id": "86f99a97-a3bd-4d28-a4b4-824934a7907a"
+    },
+    {
+      "claim_id": "a922caf5-7339-414e-9d87-81f476e06348",
+      "result_id": "86f99a97-a3bd-4d28-a4b4-824934a7907a"
+    },
+    {
+      "claim_id": "0c253c65-e489-4077-adbc-098d7aec9d76",
+      "result_id": "86f99a97-a3bd-4d28-a4b4-824934a7907a"
+    },
+    {
+      "claim_id": "a1f175ee-0802-43c2-aae3-7f627dc70545",
+      "result_id": "0da23912-bccf-4d0e-8b4c-8082e6e10fa2"
+    },
+    {
+      "claim_id": "130cbd89-3e10-4ee1-971d-5ef981d5b56d",
+      "result_id": "0da23912-bccf-4d0e-8b4c-8082e6e10fa2"
+    },
+    {
+      "claim_id": "9207d8c6-0767-4059-b571-aa61fde2ebf1",
+      "result_id": "d64dc3e1-15a4-4d0d-98ed-44948bc5f4f0"
+    },
+    {
+      "claim_id": "6c624dc2-2bb8-4001-b9dc-0901a81de61e",
+      "result_id": "d64dc3e1-15a4-4d0d-98ed-44948bc5f4f0"
+    },
+    {
+      "claim_id": "c9c912cc-5e1c-4f28-b2b6-cdeac3cd981d",
+      "result_id": "d64dc3e1-15a4-4d0d-98ed-44948bc5f4f0"
+    },
+    {
+      "claim_id": "9456a442-bf28-45a6-b396-da8c4eb4d64d",
+      "result_id": "704fde45-d8b1-4a4b-a388-273930c60a1f"
+    },
+    {
+      "claim_id": "17ed2eda-b56d-4d3e-a791-a8e182e11043",
+      "result_id": "704fde45-d8b1-4a4b-a388-273930c60a1f"
+    },
+    {
+      "claim_id": "78768469-9b4a-4c73-bf8a-9cc7fe8c436a",
+      "result_id": "704fde45-d8b1-4a4b-a388-273930c60a1f"
+    },
+    {
+      "claim_id": "c2ffcc1e-e579-4e84-96b4-8bbb023ec1b9",
+      "result_id": "704fde45-d8b1-4a4b-a388-273930c60a1f"
+    },
+    {
+      "claim_id": "ef9996c8-5da8-4a6a-8277-6501b4f9a2a1",
+      "result_id": "704fde45-d8b1-4a4b-a388-273930c60a1f"
+    },
+    {
+      "claim_id": "314b4e4d-61c1-466a-80fd-4e7f064ea52e",
+      "result_id": "704fde45-d8b1-4a4b-a388-273930c60a1f"
+    },
+    {
+      "claim_id": "ef8a0cab-d2d2-4bcb-bc18-bfaa65e3e1f7",
+      "result_id": "704fde45-d8b1-4a4b-a388-273930c60a1f"
+    },
+    {
+      "claim_id": "da63c4ac-4edc-46b6-9fc0-ddc56713849c",
+      "result_id": "eb162646-2648-4f07-ae72-c6a86e200e0b"
+    },
+    {
+      "claim_id": "0618e45b-2528-40c8-8023-d31d8691dd58",
+      "result_id": "eb162646-2648-4f07-ae72-c6a86e200e0b"
+    },
+    {
+      "claim_id": "ad775079-3930-4cd0-832c-7caf393018a4",
+      "result_id": "eb162646-2648-4f07-ae72-c6a86e200e0b"
+    },
+    {
+      "claim_id": "a4dfb581-6f3b-495f-a26e-5fb4a14c5b62",
+      "result_id": "97cfbfa9-9e0c-4caf-bd61-9269efadab40"
+    },
+    {
+      "claim_id": "67ff5187-4c48-40e7-b854-b5ce75590566",
+      "result_id": "97cfbfa9-9e0c-4caf-bd61-9269efadab40"
+    },
+    {
+      "claim_id": "6d7a7eaa-d76f-471f-86af-9bddd5200228",
+      "result_id": "97cfbfa9-9e0c-4caf-bd61-9269efadab40"
+    },
+    {
+      "claim_id": "cd36b80d-6293-47c6-bdda-bbb7d0aa8d1a",
+      "result_id": "97cfbfa9-9e0c-4caf-bd61-9269efadab40"
+    },
+    {
+      "claim_id": "dd26d588-5ab9-439b-a6a7-af8a9760bc12",
+      "result_id": "97cfbfa9-9e0c-4caf-bd61-9269efadab40"
+    },
+    {
+      "claim_id": "9dfde8a4-d636-4023-b34b-98f4fa9aaef0",
+      "result_id": "89f6b95e-8fc9-45d2-9aaf-b797ac536f14"
+    },
+    {
+      "claim_id": "196d596a-ac02-469f-a985-f4a4d5f76ccd",
+      "result_id": "89f6b95e-8fc9-45d2-9aaf-b797ac536f14"
+    },
+    {
+      "claim_id": "21e5e8bd-45c9-45b2-8c54-da5dfbe434a6",
+      "result_id": "89f6b95e-8fc9-45d2-9aaf-b797ac536f14"
+    },
+    {
+      "claim_id": "1fdd6355-71d6-4180-915f-8438b9260eee",
+      "result_id": "e8bc36ba-c0c6-4e7b-95ad-3226a7bb4c69"
+    },
+    {
+      "claim_id": "5c68b346-9938-461e-bfa2-8ea6ee823534",
+      "result_id": "e8bc36ba-c0c6-4e7b-95ad-3226a7bb4c69"
+    },
+    {
+      "claim_id": "57374d76-5f86-4b3c-a193-14b57d6bf684",
+      "result_id": "e8bc36ba-c0c6-4e7b-95ad-3226a7bb4c69"
+    },
+    {
+      "claim_id": "12f01a7a-73c5-45cf-a787-2b8aae56a725",
+      "result_id": "e8bc36ba-c0c6-4e7b-95ad-3226a7bb4c69"
+    },
+    {
+      "claim_id": "19a0e8fb-5865-49e9-8c3f-6afbb48a5896",
+      "result_id": "e8bc36ba-c0c6-4e7b-95ad-3226a7bb4c69"
+    },
+    {
+      "claim_id": "a522b760-622e-41da-92c5-ecaccec1555c",
+      "result_id": "e8bc36ba-c0c6-4e7b-95ad-3226a7bb4c69"
+    },
+    {
+      "claim_id": "14a4cb17-46a3-4b38-8c34-042e6d7e3220",
+      "result_id": "e8bc36ba-c0c6-4e7b-95ad-3226a7bb4c69"
+    },
+    {
+      "claim_id": "c9c58363-8545-4118-a3f0-704e42117ee5",
+      "result_id": "e8bc36ba-c0c6-4e7b-95ad-3226a7bb4c69"
+    },
+    {
+      "claim_id": "9e3e3d31-7cc9-4917-9fb5-6a24e11e2268",
+      "result_id": "e8bc36ba-c0c6-4e7b-95ad-3226a7bb4c69"
+    },
+    {
+      "claim_id": "2773c507-d2c9-4d7d-973c-72c39a2e46a4",
+      "result_id": "e8bc36ba-c0c6-4e7b-95ad-3226a7bb4c69"
+    },
+    {
+      "claim_id": "b7f3e08d-0682-4f57-869e-944bbe1e1c8a",
+      "result_id": "e8bc36ba-c0c6-4e7b-95ad-3226a7bb4c69"
+    },
+    {
+      "claim_id": "cb793b73-2dda-42db-a765-2abd8863d376",
+      "result_id": "e8bc36ba-c0c6-4e7b-95ad-3226a7bb4c69"
+    },
+    {
+      "claim_id": "d873af56-fbe3-42f3-8e90-24cb882d6c0e",
+      "result_id": "e8bc36ba-c0c6-4e7b-95ad-3226a7bb4c69"
+    },
+    {
+      "claim_id": "3853f2c8-32cc-4da4-9091-032b3d46cc39",
+      "result_id": "8417af24-5360-4423-81ff-e11e51cb45de"
+    },
+    {
+      "claim_id": "973ec6d3-6896-4406-92e3-c94e0b74e1d8",
+      "result_id": "8417af24-5360-4423-81ff-e11e51cb45de"
+    },
+    {
+      "claim_id": "6220035b-f4ae-4c12-8e84-24f95df289a8",
+      "result_id": "8417af24-5360-4423-81ff-e11e51cb45de"
+    },
+    {
+      "claim_id": "3801849f-5513-498b-add9-d3b316968beb",
+      "result_id": "8417af24-5360-4423-81ff-e11e51cb45de"
+    }
+  ],
+  "comparisons": []
+}

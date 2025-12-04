@@ -1,0 +1,2499 @@
+{
+  "submission": {
+    "id": "0f721d4e-ebd9-4d3e-bbce-a1e6d4f03ba7",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-04T02:44:35.652154Z",
+    "updated_at": "2025-12-04T02:44:35.652154Z"
+  },
+  "content": [
+    {
+      "id": "4eac3257-92b9-48e4-8b68-fa1a628eef21",
+      "submission_id": "0f721d4e-ebd9-4d3e-bbce-a1e6d4f03ba7",
+      "content_type": "manuscript",
+      "content_text": "# Building resilient cervical cancer prevention through gender-neutral HPV vaccination\n\n## Authors\n\n- Irene Man<sup>1</sup> ([ORCID: 0000-0003-3177-6904](https://orcid.org/0000-0003-3177-6904))\n- Damien Georges<sup>1</sup> ([ORCID: 0000-0003-2425-7591](https://orcid.org/0000-0003-2425-7591))\n- Rengaswamy Sankaranarayanan<sup>2</sup>\n- Partha Basu<sup>1</sup> ([ORCID: 0000-0003-0124-4050](https://orcid.org/0000-0003-0124-4050))\n- Iacopo Baussano<sup>1</sup> ([ORCID: 0000-0002-7322-1862](https://orcid.org/0000-0002-7322-1862)) \u2020\n\n### Affiliations\n\n1. International Agency for Research on Cancer (IARC/WHO), Early Detection, Prevention and Infections Branch Lyon France ([ROR:04q84b570](https://ror.org/04q84b570))\n2. Karkinos Healthcare Ernakulam India\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe COVID-19 pandemic has disrupted HPV vaccination programmes worldwide. Using an agent-based model, EpiMetHeos, recently calibrated to Indian data, we illustrate how shifting from a girls-only (GO) to a gender-neutral (GN) vaccination strategy could improve the resilience of cervical cancer prevention against disruption of HPV vaccination. In the base case of 5-year disruption with no coverage, shifting from GO to GN strategy under 60% coverage (before disruption) would increase the resilience, in terms of cervical cancer cases still prevented in the disrupted birth cohorts per 100,000 girls born, by 2.8-fold from 107 to 302 cases, and by 2.2-fold from 209 to 464 cases under 90% coverage. Furthermore, shifting to GN vaccination helped in reaching the World Health Organization (WHO) elimination threshold. Under GO vaccination with 60% coverage, the age-standardised incidence rate of cervical cancer in India in the long term with vaccination decreased from 11.0 to 4.7 cases per 100,000 woman-years (above threshold), as compared to 2.8 cases (below threshold) under GN with 60% coverage and 2.4 cases (below threshold) under GN with 90% coverage. In conclusion, GN HPV vaccination is an effective strategy to improve the resilience to disruption of cancer prevention programmes and to enhance the progress towards cervical cancer elimination.\n\n## Introduction\n\nIn August 2020, the World Health Assembly adopted the Global Strategy for cervical cancer elimination, with the overarching target of reducing the age-standardised incidence rate (ASIR) of cervical cancer to fewer than 4 cases per 100,000 woman-years (WHO, 2020a). To reach this target, the following actions have been recommended: to fully vaccinate 90% of all girls with the HPV vaccine by age 15 years, to screen 70% of women using a high-performance test by the age of 35, and again by the age of 45, and to treat 90% of women with pre-cancer and 90% of women with invasive cancer (WHO, 2020b). However, the delivery of these interventions has been severely disrupted worldwide by the outbreak of the COVID-19 pandemic, which was declared a global emergency in the same year by the World Health Organization (WHO) (WHO, 2020a). More specifically, HPV vaccination worldwide was affected at many different levels: (a) where population-based HPV vaccination programmes were already active, vaccine delivery slowed down or was interrupted (Muhoza et al., 2021), (b) the launch of HPV vaccination programmes was delayed in several countries, in particular in resource-limited settings (The Lancet Oncology, 2022), and (c) the production of HPV vaccines was also limited in favour of manufacturing other vaccines (WHO, 2022a).\n\nApart from the COVID-19 pandemic, which has resulted in extensive disruption of health-care provision at a global level, health-care systems or public-health programmes at a local level have also regularly suffered severe disruption caused by other factors such as changes in political commitment, financial constraints, scepticism of the civil society, geo-political unrest, and environmental disasters (Col\u00f3n-L\u00f3pez et al., 2021; Gallagher et al., 2017; Germani et al., 2022; Jawad et al., 2021; Larson, 2020; McGrath, 2022). Such circumstances may even lead key public health actors to reconsider their previous commitments. These partial or complete disruptions to organised disease prevention and control programmes may multiply public health crises (Sharpless, 2020), as well as provoke substantial, usually unquantified waste of human, logistic, and financial resources (Richards et al., 2020). Clearly, devising and implementing pre-emptive measures aimed at improving the resilience of public health programmes would help mitigate disruption.\n\nIn a previous study, conducted before the COVID-19 pandemic in a high-income country, we showed that the addition of vaccination in boys to a programme targeting girls only could increase the resilience of the vaccination programme (Elfstr\u00f6m et al., 2016). In the present paper, we complement our previous work by assessing the potential effect of switching from girls-only (GO) to gender-neutral (GN) HPV vaccination on resilience and progress towards the elimination of cervical cancer in India, which in turn may help local health authorities in deciding on their vaccination strategy. Currently, India is the country with the largest burden of cervical cancer (Bonjour et al., 2021). Cervical cancer screening is still limitedly accessible in India, with less than 3% ever-in-life coverage in women aged 30\u201349 years (Sankaranarayanan et al., 2019; The Lancet Oncology, 2022). HPV vaccination (in girls) has been introduced in two Indian states with high vaccination coverage (Sankaranarayanan et al., 2019). Following the recent marketing authorisation granted to an indigenous vaccine (The Lancet Oncology, 2022), the prospect of introducing HPV vaccination into the national immunisation programme has also significantly improved.\n\n## Results\n\nTo estimate the impact of HPV vaccination on cervical cancer burden, we used the agent-based HPV transmission model, EpiMetHeos (Man et al., 2022), in combination with the cervical cancer progression model, Atlas (Bonjour et al., 2021). Routine HPV vaccination at age 10 under the GO or GN strategy was modelled with different vaccination coverages in boys and girls from the range between 0% and 100%, at 10% intervals, as we do not yet know what coverage a national HPV immunisation programme in India may reach. Estimates of the life-time number of cervical cancer cases prevented per 100,000 girls born were derived by cohort.\n\n### GN vaccination to improve resilience of cervical cancer prevention\n\nTo consider the impact of scaling up vaccination from such suboptimal coverage in girls, we highlighted the following four scenarios: (A) GO strategy with 60% coverage in girls, (B) GO strategy with 90% coverage in girls, (C) GN strategy with 60% coverage in both girls and boys, (D) GN strategy with 90% coverage in both girls and boys. As the base case, we simulated disruption in vaccination for 5 years, taking place 10 years after the introduction of vaccination. Life-time cervical cancer cases prevented in the birth cohorts vaccinated prior to the disruption period ranged between 562 (UI: 444, 676) and 807 (UI: 752, 853) cases per 100,000 girls born in the four highlighted scenarios. The highest impact was achieved by the GN strategy with 90% coverage, closely followed by GO with 90% coverage, then GN with 60% coverage, and then GO with 60% coverage (Figure 1).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/85735/elife-85735-fig1-v1.jpg)\n\n**Figure 1.:** Predicted resilience, defined as life-time number of cervical cancer cases still prevented in the birth cohorts with disruption of vaccination per 100,000 girls born (blue arrow), and drop in cervical cancers prevented as compared to impact in the cohorts vaccinated prior to the disruption (black arrow), under the four highlighted scenarios. Disruption was simulated according to the base case with a period of disruption of 5 years and 0% coverage in girls and boys during the disruption period.\n\nAmong the four highlighted scenarios, the GO strategy with 60% coverage also had the lowest resilience, which we defined as the mean number of cases still prevented across the birth cohorts with disruption (Figure 1). We found that the life-time number of cervical cancer cases prevented would drop considerably from 562 (UI: 444, 676) cases in the undisrupted cohorts to 107 (UI: 7, 214) cases per 100,000 girls born in the disrupted cohorts (i.e., resilience of 107). Increasing the coverage under the GO strategy from 60% to 90% would lead to a small absolute gain in resilience, from 107 (UI: 7, 214) to 209 (UI: 81, 340) cases prevented per 100,000 girls born, and this despite the larger increase in impact in the undisrupted cohorts vaccinated prior to the disruption from 562 (UI: 444, 676) to 773 (UI: 701, 836) cases prevented. By contrast, switching from GO to GN vaccination, under 60% coverage, led to a moderate gain of impact in the undisrupted cohorts from 562 (UI: 444, 676) to 647 (UI: 539, 746) cases prevented, but a substantial increase in resilience from 107 (UI: 7, 214) to 302 (UI: 170, 437) cases prevented per 100,000 girls born. Finally, GN vaccination with 90% coverage led to the highest impact of 807 (UI: 752, 853) cases prevented per 100,000 girls born in the undisrupted cohorts as well as the highest resilience of 464 (UI: 328, 602) cases prevented per 100,000 girls born in the disrupted cohorts.\n\nConsidering the required number of vaccine doses, we found a trade-off between dose-efficiency and resilience. In general, GO vaccination favoured dose-efficiency and GN vaccination favoured resilience (Figure 1). For instance, increasing GO coverage from 60% to 90% would lead to a higher impact in undisrupted cohorts, while needing less additional vaccine doses than switching from GO to GN vaccination under 60% coverage. However, this switch from GO to GN vaccination would yield a higher gain in resilience than when increasing GO coverage from 60% to 90% (2.8-fold versus 2-fold increase). Similarly, switching from GO to GN vaccination under 90% coverage would require an additional doubling of the number of doses and only marginally improve the impact in the undisrupted cohorts, but would produce a 2.2-fold gain in resilience.\n\nThe same trade-off between dose-efficiency and resilience was found when stratifying by Indian state. Interestingly, in the states with high cervical cancer incidence, we found slightly lower resilience under the GO strategy and a slightly greater relative gain in resilience when switching from GO to GN vaccination than in states with low incidence (Supplementary file 3, Appendix 2\u2014figures 1\u20133). In the base case, for example, the resilience ratio for switching from GO to GN strategy (under 60% coverage) was 3-fold in states with high cervical cancer incidence and 2.7-fold in states with low cervical cancer incidence.\n\nSensitivity analyses on less strong disruption in vaccination coverage or alternative durations of disruption also yielded higher resilience with GN than GO vaccination (Table 1, Appendix 2\u2014figures 2\u20133). The gain in resilience by switching from GO to GN vaccination was most evident under complete disruption of vaccination (i.e., 0% coverage at disruption) but still consistently found under less strong disruption (i.e., 20% or 40% coverage at disruption) (Table 1 part II, Appendix 2\u2014figure 2). As expected, resilience decreased with longer duration of disruption, with any vaccination strategy, but was always higher with the GN strategy (Figure 2). The gain in resilience by switching from GO to GN vaccination was consistently above 2.7-fold under 60% coverage and above 2.0-fold under 90% coverage (Table 1 part III). Finally, in the scenario with no restart of vaccination, GN vaccination could ensure some resilience of at least 125 cases prevented per 100,000 girls born for eight birth cohorts from the start of disruption (Figure 2).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/85735/elife-85735-fig2-v1.jpg)\n\n**Figure 2.:** Predicted life-time cervical cancer cases prevented by birth cohorts (per 100,000 girls born) under different durations of disruption (panel) and in the four highlighted scenarios: girls-only strategy with 60% coverage (light red), girls-only strategy with 90% coverage (dark red), gender-neutral strategy with 60% coverage (light blue), and gender-neutral strategy with 90% coverage (dark blue). Vaccination coverage was fixed at 0% in girls and boys during the period of disruption. Birth cohort 0 corresponds to the first vaccinated cohort. Birth cohorts with disruption correspond to dashed lines and birth cohorts without disruption to solid lines.\n\n**Table 1.**\n Sensitivity analyses on coverage at disruption and duration of disruption on resilience.Life-time number of cervical cancer cases prevented per 100,000 girls born in birth cohorts vaccinated prior to disruption in part I. Sensitivity analyses on coverage at disruption in part II and on duration of disruption in part III on resilience (defined as the life-time number of cervical cancer cases still prevented in the birth cohorts with disruption of vaccination per 100,000 girls born) and resilience ratio (defined as fold change in resilience by switching from one scenario to another). Uncertainty intervals are reported in brackets. [Resilience ratio of scenario X to scenario Y] is defined as [resilience of scenario Y]/[resilience of scenario X]. For example, in the base case, [resilience ratio of GO 60% to GO 90%] = [resilience of GO 90%]/[resilience of GO 60%]=209/107=2.0.\n\n\n<table>\n  <thead>\n    <tr>\n      <th colspan=\"5\">I. Life-time number of cervical cancer cases prevented prior to disruption</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Scenario</td>\n      <td>GO 60%</td>\n      <td>GO 90%</td>\n      <td>GN 60%</td>\n      <td>GN 90%</td>\n    </tr>\n    <tr>\n      <td>No disruption</td>\n      <td>562 (444, 676)</td>\n      <td>773 (701, 836)</td>\n      <td>647 (539, 746)</td>\n      <td>807 (752, 853)</td>\n    </tr>\n    <tr>\n      <td colspan=\"8\">II. Sensitivity analyses on coverage at disruption (with duration of disruption fixed at 5 years)</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">Coverage at disruption in %</td>\n      <td colspan=\"4\">Resilience by vaccination strategy and coverage</td>\n      <td colspan=\"3\">Resilience ratio</td>\n    </tr>\n    <tr>\n      <td>GO 60%</td>\n      <td>GO 90%</td>\n      <td>GN 60%</td>\n      <td>GN 90%</td>\n      <td>GO 60% to GO 90%</td>\n      <td>GO 60% to GN 60%</td>\n      <td>GO 90% to GN 90%</td>\n    </tr>\n    <tr>\n      <td>0 (base case)</td>\n      <td>107 (7, 214)</td>\n      <td>209 (81, 340)</td>\n      <td>302 (170, 437)</td>\n      <td>464 (328, 602)</td>\n      <td>2.0</td>\n      <td>2.8</td>\n      <td>2.2</td>\n    </tr>\n    <tr>\n      <td>20</td>\n      <td>271 (155, 391)</td>\n      <td>355 (221, 490)</td>\n      <td>425 (297, 559)</td>\n      <td>550 (416, 680)</td>\n      <td>1.3</td>\n      <td>1.6</td>\n      <td>1.6</td>\n    </tr>\n    <tr>\n      <td>40</td>\n      <td>410 (277, 534)</td>\n      <td>476 (343, 599)</td>\n      <td>527 (401, 647)</td>\n      <td>621 (500, 730)</td>\n      <td>1.2</td>\n      <td>1.3</td>\n      <td>1.3</td>\n    </tr>\n    <tr>\n      <td colspan=\"6\">III. Sensitivity analyses on duration of disruption (with coverage at disruption fixed at 0%)</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">Duration of disruption in years</td>\n      <td colspan=\"4\">Resilience by vaccination strategy and coverage</td>\n      <td colspan=\"3\">Resilience ratio</td>\n    </tr>\n    <tr>\n      <td>GO 60%</td>\n      <td>GO 90%</td>\n      <td>GN 60%</td>\n      <td>GN 90%</td>\n      <td>GO 60% to GO 90%</td>\n      <td>GO 60% to GN 60%</td>\n      <td>GO 90% to GN 90%</td>\n    </tr>\n    <tr>\n      <td>1</td>\n      <td>137 (26, 253)</td>\n      <td>261 (125, 407)</td>\n      <td>365 (215, 502)</td>\n      <td>517 (372, 655)</td>\n      <td>1.9</td>\n      <td>2.7</td>\n      <td>2.0</td>\n    </tr>\n    <tr>\n      <td>2</td>\n      <td>125 (17, 233)</td>\n      <td>240 (105, 375)</td>\n      <td>344 (206, 480)</td>\n      <td>500 (359, 642)</td>\n      <td>1.9</td>\n      <td>2.7</td>\n      <td>2.1</td>\n    </tr>\n    <tr>\n      <td>5 (base case)</td>\n      <td>107 (7, 214)</td>\n      <td>209 (81, 340)</td>\n      <td>302 (170, 437)</td>\n      <td>464 (328, 602)</td>\n      <td>2.0</td>\n      <td>2.8</td>\n      <td>2.2</td>\n    </tr>\n    <tr>\n      <td>10</td>\n      <td>80 (0, 182)</td>\n      <td>154 (33, 275)</td>\n      <td>226 (96, 358)</td>\n      <td>382 (240, 525)</td>\n      <td>1.9</td>\n      <td>2.8</td>\n      <td>2.5</td>\n    </tr>\n  </tbody>\n</table>\n\n### GN vaccination to enhance progress towards elimination of cervical cancer\n\nSubsequently, we assessed the feasibility of reaching the WHO elimination threshold for ASIR of cervical cancer under highlighted scenarios. Introducing GO vaccination with 60% coverage would have the lowest impact, reducing the nationwide ASIR of cervical cancer from 11 cases, which is the present level before the introduction of vaccination, to 4.7 (UI: 4.3, 5.1) cases per 100,000 woman-years in 100 years, but this remained above the WHO elimination threshold (Figure 3). The other highlighted scenarios enabled elimination to be reached within 55\u201362 years. Introducing GN vaccination with 60% coverage in both girls and boys would reduce incidence down to 2.8 (UI: 2.5, 3.2) cases per 100,000 woman-years, hence below the elimination threshold. The GO strategy with 90% coverage, as recommended by WHO, would also decrease incidence below the threshold to 2.4 (UI: 2.3, 2.6) cases per 100,000 woman-years. Lastly, given the already high vaccination coverage of 90% in girls, switching to the GN strategy would only marginally reduce incidence to 2.3 (UI: 2.2, 2.3) cases per 100,000 woman-years.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/85735/elife-85735-fig3-v1.jpg)\n\n**Figure 3.:** Predicted cervical cancer age-standardised incidence (in cases per 100,000 woman-years) in the years since start of vaccination in India under no vaccination and in the four highlighted scenarios. The dashed line represents the World Health Organization (WHO) elimination threshold for cervical cancer elimination as a public health priority, that is, age-standardised incidence of 4 cases per 100,000 woman-years. Disruption was simulated according to the base case with a period of disruption of 5 years and 0% coverage in girls and boys during the disruption period.\n\nOther combinations of coverage in boys and girls would also allow elimination. Without vaccination in boys, the WHO elimination threshold could be reached through a critical GO coverage of 70% (UI: 65, 73) (Figure 4). With vaccination in boys, a lower critical coverage in girls might be sufficient for elimination. For instance, coverage between 50% and 70% in girls might also be sufficient for elimination when combined with moderate coverage (30%) in boys (Figure 4).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/85735/elife-85735-fig4-v1.jpg)\n\n**Figure 4.:** Heatmap of the predicted cervical cancer age-standardised incidence rate (in cases per 100,000 woman-years) in the long term (i.e., at 100 years after the start of vaccination) in India by vaccination coverage in girls and boys (under no disruption of vaccination). The dashed curve represents the World Health Organization (WHO) elimination threshold for cervical cancer elimination, that is, age-standardised incidence of 4 cases per 100,000 woman-years. The five black circles correspond to no vaccination and the four highlighted scenarios: girls-only strategy with 60% coverage, girls-only strategy with 90% coverage, gender-neutral strategy with 60% coverage, and gender-neutral strategy with 90% coverage. The horizontal arrows represent scale-up of vaccination by increasing coverage in girls, and the vertical arrows represent switching to gender-neutral vaccination.\n\nFinally, while disruption of vaccination does not prevent countries from reaching the elimination threshold eventually (provided vaccination resumes after disruption), it can prolong the number of years taken to attain this goal (Appendix 2\u2014figure 4). Under the GO strategy with 90% coverage, for instance, disruption of vaccination for 5 years (as in the base case) would delay reaching elimination from 57 to 65 years since the start of vaccination. By switching to GN strategy (under 90% coverage), elimination could be reached in 58 years since the start of vaccination, even with disruption.\n\n## Discussion\n\nAs observed worldwide during the COVID-19 pandemic, public health programmes can be dramatically impacted by the occurrence of sudden societal and infrastructural crises (WHO, 2021). The repercussions of disruption of health-care systems may subsequently translate into increased morbidity and mortality (Sharpless, 2020), and economic burden (Richards et al., 2020), at a population level. In the present paper, using India as an example, we illustrate how the introduction of GN HPV vaccination could mitigate the negative impact of a sudden HPV vaccine delivery disruption. More specifically, using a validated agent-based model, calibrated to context-specific data, we have simulated a range of plausible scenarios of disruption of a national HPV vaccination programme and assessed the gain in resilience by shifting from GO to GN vaccination in terms of the number of cervical cancer cases still prevented in the birth cohort with vaccination disruption.\n\nOur model-based exercise showed that in the case of HPV vaccination disruption for 5 years (base case), resilience increased by 2.8-fold (from 107 to 302 cases per 100,000 girls born) and 2.2-fold (from 209 to 464 cases per 100,000 girls born) when shifting from GO to GN vaccination under 60% and 90% coverage, respectively. GN vaccination was shown to improve resilience irrespective of the duration of disruption. However, the absolute magnitude of resilience and of resilience gain resulting from adding boys to routine vaccination of girls steadily decreased with increasing duration of disruption, under all the vaccination strategies assessed, indicating that measures to restore HPV vaccination should be implemented as soon as feasible.\n\nAn important determinant underlying the gain in resilience by switching from GO to GN vaccination is likely the age difference between sexual partners. In general, men are on average older than women within sexual partnerships almost everywhere worldwide (Wellings et al., 2006). In cases of vaccination disruption, the birth cohorts of boys vaccinated before the disruption would indirectly protect the cohorts of younger girls who missed out on vaccination during the disruption period. Since sexual behaviour is regulated by population-specific social norms, the magnitude of the resilience attributable to GN HPV vaccination is also expected to be different across populations. In India, for example, the age difference between male and female partners is on average 7 years (USAID, 2017), similar to the number of birth cohorts still retaining some protection by GN vaccination when we simulated no restart of vaccination after disruption. As shown by our results, increasing coverage in girls also helps to increase resilience. However, vaccinating boys is a more direct way to reduce the force of infection in men than vaccinating girls, which is the likely mechanism underlying the higher resilience achieved by GN strategy than GO strategy.\n\nIn the present paper, we have also illustrated how the introduction of GN vaccination across India would enhance progress towards the elimination of cervical cancer. In principle, elimination across India could be reached with a critical level of GO coverage of 70%, which falls between the average coverage observed among girls aged 9\u201315 years living in countries with an active HPV vaccination programme, that is, 53% (Bruni et al., 2021), and the coverage recommended by the WHO, that is, 90% (WHO, 2020b). On the other hand, our model-based estimates suggest that cervical cancer elimination could be reached with 50\u201370% coverage in girls when combined with moderate coverage in boys, even if coverage in boys were lower than that of girls. In cases where GO coverage is already above 70%, GN vaccination would allow even more ambitious cervical cancer control targets to be reached, which might eventually make cervical screening targeted to vaccinated birth cohorts redundant (Tota et al., 2020). Moreover, as previously reported (Man et al., 2022), reaching elimination might be challenging in the Indian states with the highest baseline cervical cancer incidence before vaccination. In these cases, additional measures such as GN vaccination would be even more relevant.\n\nThe availability and limitations of data on sexual behaviour and cervical cancer incidence across Indian states were discussed in detail in our previous publication in which we presented the calibrated model for the first time (Man et al., 2022). A limitation of this study is that the critical levels of HPV vaccination coverage found for India are not necessarily generalisable to other populations. Baseline cervical cancer incidence and the magnitude of herd effect, that is, the indirect protection offered by the vaccinated to the unvaccinated individuals of a population against HPV infection (Malag\u00f3n et al., 2018) should be considered. These are, in turn, governed by local sexual behaviour (Bosch et al., 1994; Schulte-Frohlinde et al., 2022). As mentioned above for resilience, the critical level of vaccination coverage to reach cervical cancer elimination will be context-specific (Baussano et al., 2018; Lehtinen et al., 2022). Extrapolation of the results of this study to other populations will be limited to those sharing similar patterns of demography, social norms, and cervical cancer epidemiology as India. Nevertheless, we expect the principle of improving the resilience of cervical cancer prevention through a shift to GN vaccination to be widely applicable, and this is supported by the consistency of our results in India when stratifying by state-specific cervical cancer incidence.\n\nAnother limitation is the finite number of scenarios considered in which disruption of a health system might occur. For example, we did not explore changes in sexual behaviour in the population due to disruption, which occurs in dire circumstances like a pandemic. However, we did account for a large variation in the duration of disruption and in vaccination coverage at disruption through our sensitivity analyses. In addition, we did not consider the influence of choice of HPV vaccine, as a quadrivalent vaccine (either indigenously produced or Gardasil) would be the likely choice for India due to the price advantage. In cases of using a nonavalent vaccine, or a vaccine with higher levels of cross-protection, we expect similar qualitative results for resilience, and elimination of cervical cancer could be expected to be more easily achieved. We also did not consider changes in cervical cancer screening, as it is difficult to predict how much coverage of cervical cancer screening will increase in India in the coming years.\n\nAlthough a formal health-economic assessment of the introduction of GN HPV vaccination in India is beyond the scope of this paper, clearly adding vaccination of boys to the routine coverage of girls would approximately double the required number of vaccine doses and would increase the financial effort to be made by the national government. It has been demonstrated that GN HPV vaccination schedules are economically attractive in high-income tender-based settings, in particular where GO vaccine uptake is below 80% (Qendri et al., 2020). GN vaccination is likely to be even more attractive in India where population-based screening programmes have not yet been widely implemented. Of course, the actual determinants of a trade-off between redundancy and efficiency of resource allocation depends on context-specific planning and assessment. In our example, to achieve greater resilience, GN vaccination with 60% coverage would require more doses of vaccine while leading to fewer prevented cases of cervical cancer in vaccinated cohorts without interruption than GO vaccination with 90% coverage (Figure 2). However, extending vaccination to boys could be easier to put in place than improving coverage in girls from 60% to 90% in some contexts. Finally, shifting from a two-dose to a single-dose HPV vaccination schedule could also improve the affordability of GN vaccination. More research is needed to investigate the cost-effectiveness and affordability of GN vaccination in low-resource settings and how resilience should be accounted for in deciding the vaccination strategy.\n\nHaving clearly illustrated the merits of GN vaccination considering different aspects across different settings here and in earlier studies (Chow et al., 2021; Elfstr\u00f6m et al., 2016; Lehtinen et al., 2022; Lehtinen et al., 2018; Qendri et al., 2020), the next step is to establish a feasible pathway for implementation (de Sanjose and Bruni, 2020). In high-income countries, where affordability was less of an issue, most vaccination programmes were initiated with the GO strategy, often combined with catch-up in girls/women, and are now increasingly shifting towards GN vaccination. In resource-limited settings, once routine vaccination in girls has been implemented, countries may need to make a choice between boys\u2019 vaccination or female catch-up vaccination. The limited global vaccine supply will likely remain an important factor influencing this decision-making process in the coming years (WHO, 2022b). In addition, the choice at the country level should also account for the health-economic objectives, the type of health infrastructure already in place as well as socio-cultural context. In some contexts, important arguments for choosing GN strategy could be the fact that it helps to overcome the stigma associated with a vaccine that targets only girls and aims to prevent a sexually transmitted disease (Cernasev et al., 2023), and the direct health benefits in men who have sex with men.\n\nIn conclusion, within the limitations of our model, the model-based estimates show that shifting from GO to GN vaccination may improve the resilience of the Indian HPV vaccination programme while also enhancing progress towards the elimination of cervical cancer. Our resilience estimates go beyond health-care disruption due to the COVID-19 pandemic. Indeed, any societal events undermining the routine activities of a health-care system can produce a comparable effect. Over the years, disease prevention programmes have been disrupted by the occurrence of pandemics (Osterholm, 2017; WHO, 2021), armed conflicts (Jawad et al., 2021; McGrath, 2022), economic sanctions (Germani et al., 2022), or widespread vaccine hesitancy (Larson, 2020). Therefore, we argue that such societal crises, which are unpredictable but expected to occur, should be anticipated through careful planning of disease prevention programmes.\n\n## Materials and methods\n\n### Model\n\nEpiMetHeos was used to simulate a dynamic sexual contact network, which allows long-term and overlapping partnerships, through which HPV infections were transmitted. Based on the impact of vaccination on high-risk HPV incidence derived from EpiMetHeos, Atlas was then used to derive the impact on cervical cancer burden.\n\nThe models were previously calibrated to sexual behaviour, HPV prevalence, and/or (delete as appropriate) cervical cancer incidence in India to assess the impact of single-dose vaccination in India, while accounting for the uncertainty in the duration of vaccine protection (Man et al., 2022). Since the high-quality data on HPV prevalence and cervical cancer incidence data needed to calibrate the models to each Indian state were not available, we used a Footprinting framework to approximate the missing data and extrapolate the impact by state. In short, we first identified clusters of states with similar patterns of cervical cancer incidence. We then calibrated EpiMetHeos to the state of Tamil Nadu to represent the states in the high cancer incidence cluster, and the state of West Bengal to represent the states in the low cancer incidence cluster, using the available sexual behaviour and HPV prevalence data of these two states. Finally, we estimated the impacts for Tamil Nadu and West Bengal and extrapolated these to other states within each cluster. The model was calibrated for previous publications (Man et al., 2022; Man et al., 2023). See more details of the model in Appendix 1 sections \u2018HPV transmission model\u2019, \u2018Model calibration\u2019, and \u2018Computation of the model outcomes\u2019. This study adheres to HPV-FRAME, a quality framework for modelled evaluations of HPV-related cancer control (Reporting standard 1) (Canfell et al., 2019).\n\n### Simulation scenarios\n\nRecently, marketing authorisation has been awarded to a locally produced quadrivalent HPV vaccine in India based on successful immunobridging between the new vaccine and the existing quadrivalent vaccine (Gardasil, MSD) (The Lancet Oncology, 2022). While it is still uncertain which HPV vaccine will be used in the Indian immunisation programme, we simulated vaccination with a quadrivalent vaccine targeting two high-risk types, HPV16 and HPV18 (and two low-risk types, HPV6 and HPV11). The efficacy estimates of the locally produced HPV vaccine were not available to us; hence, we based our model assumptions on the efficacy estimates of the IARC India vaccine trial, which considered Gardasil (Basu et al., 2021; Joshi et al., 2023). In this trial, no difference was found between the efficacy estimates of the single-dose and two-dose schedules, which were moreover stable after up to 10 years\u2019 follow-up. Hence, we based the model on pooled efficacy estimates (95% efficacy for HPV16 and HPV18, 9% cross-protection for HPV 31, HPV33, and HPV45, and 0% efficacy for the remaining high-risk HPV types) and assumed no waning of vaccine immunity over time. In doing so, the modelled efficacy could represent vaccination under either a single-dose or two-dose schedule. Vaccine protection was modelled through an all-or-nothing working mechanism, that is, if the efficacy is X%, then X% of the vaccinated individuals in the model are fully protected and 100-X% fully not protected.\n\nTo assess the resilience of different vaccination strategies on cervical cancer prevention, we simulated the above scenarios first without disruption of the HPV vaccination programme, and then with disruption occurring 10 years after the start of vaccination. As the base case, we simulated a disruption period of 5 years with total interruption of HPV vaccine delivery, that is, 0% vaccination coverage in both boys and girls. As sensitivity analyses, we considered less severe disruption with still 20% and 40% vaccination coverage in girls (but still 0% in boys), as well as shorter or longer durations of disruption of 1, 2, and 10 years, and no restart of vaccination. These sensitivity analyses were considered to represent different types of disruption attributable to a COVID-19 pandemic or to any other interference of the HPV vaccination programme.\n\n### Model outcomes\n\nEstimates of the life-time number of cervical cancer cases prevented per 100,000 girls born were derived by cohort. The first 40 birth cohorts following the introduction of vaccination were considered to have estimates for both cohorts before and after the disruption period. The mean number of cases prevented across the first 10 vaccinated birth cohorts was used to evaluate the impact prior to the disruption. As a measure of resilience, we used the mean number of cases still prevented, as a result of previous HPV vaccination, across the birth cohorts with disruption. Considering such a metric of resilience allows us to evaluate whether any given strategy provides a sufficient level of protection retained during disruption as compared to a possible prefixed target level of protection. Estimates of resilience were compared between the highlighted scenarios A\u2013D based on their ratio.\n\nTo assess progress towards cervical cancer elimination, we also derived the ASIR of cervical cancer up to 100 years after the start of vaccination. The long-term impact of vaccination was defined as the impact at 100 years after the start of vaccination. The Segi world standard population was used for the standardisation (Segi, 1960). Model estimates of ASIR were compared to the threshold for elimination defined by the WHO of 4 cases per 100,000 woman-years (WHO, 2020b).\n\nModel outcomes were reported as the mean and the 10th and 90th percentiles, that is, uncertainty interval (UI), of the simulations using the 100 parameter sets best fitting the sexual behaviour and HPV prevalence data obtained through calibration.\n\nGiven the extremely low coverage of the existing screening programme in India, we have not considered the impact of screening in our study (Bruni et al., 2022).\n",
+      "created_at": "2025-12-04T02:44:35.652154Z"
+    },
+    {
+      "id": "4da7a05f-9c75-4974-bccb-34996baa9af9",
+      "submission_id": "0f721d4e-ebd9-4d3e-bbce-a1e6d4f03ba7",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Tal\u00eda Malag\u00f3n, https://ror.org/01pxwe438 McGill University Canada\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.85735.sa0](https://doi.org/10.7554/eLife.85735.sa0)\n\nThis study presents valuable findings on how gender-neutral vaccination against human papillomavirus can help improve program resilience in the case of vaccination disruptions. The evidence supporting the claims of the authors is convincing, although the results are only applicable to India and other countries with a similar HPV context; researchers can adapt the model for their local context and use it as a starting point for future research.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Tal\u00eda Malag\u00f3n, https://ror.org/01pxwe438 McGill University Canada\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.85735.sa1](https://doi.org/10.7554/eLife.85735.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Building resilient cervical cancer prevention through gender-neutral HPV vaccination\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Diane Harper as the Senior Editor. The following individual involved in the review of your submission has agreed to reveal their identity: Romina Tejada (Reviewer #1).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n\u2013 Provide more context on HPV vaccination programs and screening in India.\n\n\u2013 Reviewers questioned the calculation methods used for resilience ratios. Consider providing more rationale for these ratios and/or using other metrics for measuring resilience.\n\n\u2013 Address requests for clarifications made by reviewers.\n\nReviewer #1 (Recommendations for the authors):\n\nI found the manuscript well-written and easy to read. Nevertheless, I have some questions:\n\n\u2013 Why did the authors use an agent-based model? Stochastic models (individual-based models) are mostly used for studying outbreaks and not in cases of disseminated diseases such as HPV. Do the authors consider that using a deterministic model could have provided different results?\n\n\u2013 The authors mention in the Appendix that they considered an \"all-or-nothing working mechanism for vaccine protection\" for those HPV types included in the vaccine as well as for cross-protection. This should be added to the main article as it would be important for decision-makers who might not read the Appendix.\n\n\u2013 Why did the authors consider that men did not develop natural immunity?\n\n\u2013 Results, Pag 11 lines 152-153 \"Among the four highlighted scenarios, the GO strategy with 60% coverage was also the least resilient\". It would be better to start with the most resilient scenario.\n\n\u2013 Presenting the prevented cases in the disrupted cohort (resilience) as a percentage of the cases prevented in the undisrupted scenarios would be more informative for the reader when comparing the four scenarios.\n\n\u2013 The resilience ratios were constructed with the absolute number of cases prevented; they should have been constructed with the relative number of cases prevented because the values changed greatly between scenarios for the undisrupted cohorts. For example, the resilience ratio for GO 60% to GN 60% in the base case analysis for all states reported by the authors was 2.8 when using absolute numbers but it would be 2.4 when using relative numbers.\n\n\u2013 Figure B2: The description says \"with (A) high and (B) low cervical cancer incidence\" but the figures are (A) all case (B) high incidence and (C) low incidence. Please correct.\n\nReviewer #2 (Recommendations for the authors):\n\n1. Please describe the current status of HPV vaccination in India in the introduction, including when foreign HPV vaccines were available on the market in India, whether a routine HPV vaccination program has been / will be implemented in India (and when if yes), the current (estimated) HPV vaccine uptake, although I may miss the corresponding text.\n\n2. Used an agent-based model (EpiMetHeos) to simulate the dynamic transmission of HPV infection of high-risk HPV types and a cervical cancer progression model (Altas) to estimate the impact on cervical cancer burden. The authors are suggested to include the advantage (and limitations) or the difference of using the agent-based model when compared with other models.\n\n3. Model validity.\n\na. Please show the uncertainties (e.g., confidence interval) of the model calibration/fitting.\n\nb. Please explicitly state the table(s)/figure(s) that contain(s) the values and assumptions used in the model/study in the manuscript, especially when referring to table(s)/figure(s) in the supplementary materials.\n\nc. Percentile intervals (10% to 90%) were presented based on the simulations using the 100 parameter sets best fitting the sexual behaviour and HPV prevalence data obtained through calibration. Please state the criteria that were used to determine the \"best fitting\" (e.g., minimal difference, log-likelihood, or other metrics)\n\n4. Vaccine characteristics\n\na. The study considered a locally developed quadrivalent HPV vaccine by referring the vaccine efficacy to Gardasil quadrivalent. The authors are advised to present the numerical values of the efficacy of the locally developed HPV vaccine explicitly in addition to claiming the similarity (although a reference was cited).\n\nb. A sensitivity analysis on the below items may be useful when addressing the uncertainties of the assumption.\n\n(i). shorter vaccine-induced protection, in addition to assuming no waning of protection over time.\n\n(ii). vaccine efficacy, perhaps at the lower bound of the reported estimated efficacy, in addition to the point estimates.\n\nc. Please discuss the latest estimate of vaccine uptake in India among girls and preferably among boys. That would be the comparator when evaluating the impact of a vaccination program. Please also provide the rationale/information for the four \"highlighted\" scenarios on vaccination coverage (lines 113-115).\n\nd. Please state the year that the vaccination program would start in the model simulation.\n\n5. Screening uptake in India\n\n\"Given the extremely low coverage of the existing screening programme in India, we have not considered the impact of screening in our study (Bruni et al., 2022)\" (lines 142-143)\n\nPlease state the screening coverage explicitly.\n\n6. Results\n\nFor each scenario, the authors are advised to include the relative changes in the number of cervical cancer cases eliminated with and without disruption.\n\n7. There are likely some potential typos and grammar issues.\n\nReviewer #3 (Recommendations for the authors):\n\nOverall\n\n1. This study will benefit from a better selection of realistic vaccine trade-offs in moving from the base strategy (i.e GO 60%) to alternate strategies. This 'trade-off' is briefly mentioned in Lines 166-168: \"Considering the required number of vaccine doses, we found a trade-off between dose-efficiency and resilience. In general, GO vaccination favoured dose efficiency and GN vaccination favoured resilience (Figure 1).\" However, the trade-off is not easily interpreted when the alternate strategies use a different quantity of vaccines (as seen in Figure 1). If the alternate strategies used a similar quantity of vaccines, then the results of the study would be better understood by decision-makers/readers regarding the potential implications of various vaccination strategies with limited vaccine supplies.\n\n2. The study will benefit from a lengthier discussion on the mechanisms through which gender-neutral vaccination can increase the HPV vaccine programme 'resilience' in preventing cervical cancer:\n\na) The mechanisms through which a gain in 'resilience' is achieved in moving to a GN strategy have been indirectly described in previous publications. During a period of vaccine disruption, my interpretation of the reason cervical cancer incidence increases is due to the reduction in vaccine coverage amongst all girls over time \u2013 and it has been shown in previous modelling studies that a gender-neutral vaccination programme is more beneficial when coverage amongst girls is lower. Therefore are the findings of this study a manifestation of this mechanism? \u2013 this would be worth discussing.\n\nb) The authors describe the primary factor influencing resilience in Lines 241-243: \"The main determinant underlying the gain in resilience by switching from GO to GN vaccination is the age difference between sexual partners, with men being on average older than women within sexual partnerships almost everywhere worldwide (Wellings et al., 2006).\" However, it is not clear from the results of this paper why this is described as the 'main determinant'. Possibly providing evidence through sensitivity analyses to show how changes in age difference between sexual partners change the resilience of GN strategies may help prove the point to readers that this is the main determinant.\n\nMethodology\n\n3. The outcome of 'resilience' is calculated as the [in lines 128-131]: \"mean number of cases still prevented across the birth cohorts with disruption, as a result of previous HPV vaccination,\u2026, which was compared to the mean number of cases prevented across the birth cohorts before the disruption.\" I had a few concerns about this outcome measure:\n\na) My initial impression of the use of the term 'resilience' would be the ability of the vaccine programme to retain its population protective effect in times of disruption. Therefore the use of the 'ratio of the mean number of cases prevented' did not reflect resilience to me. Instead, I felt the description of the definition of 'resilience' in your Elfstrom et al. 2016 paper [referenced in lines 66-67] is clearer to readers as a measure of resilience: \"the difference in percentage attributable to vaccination estimated with and without temporary coverage reduction\". Would the team be able to reconcile whether the definitions/formulas used in this study and Elfstrom et al.'s 2016 paper are identical?\n\nb) The calculation of the 'resilience ratio' in Appendix B1 is not immediately clear to readers, and an example/formula would help readers understand how it is calculated better.\n\nc) The comparison of resilience ratios (seen in Appendix B1) would be better interpreted if the shift from GO 60% to alternative scenarios all involved the same quantity of vaccine supply. For e.g. resilience ratio in a (i) GO 60% to GO 90% scenario being compared with a (ii) GO 60% to Girl-60%/Male-30% scenario [assuming males & females are equal in each cohort, this would mean the same quantity of vaccines]. Such a comparison would be easier to interpret and would help decision-makers understand the benefits & drawbacks of either course of action.\n\nResults\n\n4. In lines 211-212 it is mentioned that: \"coverage between 50% and 70% in girls might also be sufficient for elimination when combined with moderate coverage (30%) in boys.\" A table/graph to illustrate this scenario and its associated results would help readers understand the conclusion made here. If the data is presented in the appendix, then a reference to the location of the information in the appendix would be helpful.\n\nDiscussion\n\n5. In lines 141-142 it is mentioned that: \"we have not considered the impact of screening in our study\". It might be useful to discuss the implications of this assumption in the discussion, bringing in the foreseeable changes in screening uptake & screening technology in India and other low-income countries.\n\n6. The discussion would benefit from challenging the assumptions made in the model. Such as the assumptions that:\n\na) The total population in the model is kept constant over time\n\nb) Only modelling heterosexual partnerships \u2013 this would not account for the fact that vaccinating 10-year-old boys who become predominantly men-who-have-sex-with-men (MSM) when sexually active, would likely have minimal to no impact on reducing cervical cancer incidence.\n\nc) Sexual behaviours remain unchanged throughout the person's lifespan.\n\nd) Susceptible-Infected-Susceptible (SIS) model used in men, which does have a period of immunity incorporated.\n\ne) Having limited data on sexual behaviours and cervical cancer incidence in other Indian states.\n",
+      "created_at": "2025-12-04T02:44:35.652154Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T02:44:35.652154Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T02:44:35.652154Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "d0bea8f4-a519-4561-b75e-3f923705a0d0",
+      "content_id": "4eac3257-92b9-48e4-8b68-fa1a628eef21",
+      "claim_id": "C1",
+      "claim": "The COVID-19 pandemic has disrupted HPV vaccination programmes worldwide.",
+      "claim_type": "EXPLICIT",
+      "source": "The COVID-19 pandemic has disrupted HPV vaccination programmes worldwide.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and introduction, supported by citations to WHO and other sources documenting the disruption.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:44:35.652154Z"
+    },
+    {
+      "id": "4ca13d5e-1d82-42f7-950c-3490a4d049d9",
+      "content_id": "4eac3257-92b9-48e4-8b68-fa1a628eef21",
+      "claim_id": "C2",
+      "claim": "Shifting from girls-only to gender-neutral vaccination strategy under 60% coverage would increase resilience by 2.8-fold from 107 to 302 cases per 100,000 girls born in the case of 5-year disruption with no coverage.",
+      "claim_type": "EXPLICIT",
+      "source": "In the base case of 5-year disruption with no coverage, shifting from GO to GN strategy under 60% coverage (before disruption) would increase the resilience, in terms of cervical cancer cases still prevented in the disrupted birth cohorts per 100,000 girls born, by 2.8-fold from 107 to 302 cases",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the model-based analysis presented in the manuscript, with specific numerical results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:44:35.652154Z"
+    },
+    {
+      "id": "2733d1a8-7f8a-4853-82f4-9c29779457ce",
+      "content_id": "4eac3257-92b9-48e4-8b68-fa1a628eef21",
+      "claim_id": "C3",
+      "claim": "Shifting from girls-only to gender-neutral vaccination strategy under 90% coverage would increase resilience by 2.2-fold from 209 to 464 cases per 100,000 girls born in the case of 5-year disruption with no coverage.",
+      "claim_type": "EXPLICIT",
+      "source": "In the base case of 5-year disruption with no coverage, shifting from GO to GN strategy under 60% coverage (before disruption) would increase the resilience, in terms of cervical cancer cases still prevented in the disrupted birth cohorts per 100,000 girls born, by 2.8-fold from 107 to 302 cases, and by 2.2-fold from 209 to 464 cases under 90% coverage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the model-based analysis with specific numerical results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:44:35.652154Z"
+    },
+    {
+      "id": "bbf6eecd-25b6-4461-af1a-63e5d6afe568",
+      "content_id": "4eac3257-92b9-48e4-8b68-fa1a628eef21",
+      "claim_id": "C4",
+      "claim": "Under girls-only vaccination with 60% coverage, the age-standardised incidence rate of cervical cancer in India in the long term decreased from 11.0 to 4.7 cases per 100,000 woman-years, which is above the WHO elimination threshold.",
+      "claim_type": "EXPLICIT",
+      "source": "Under GO vaccination with 60% coverage, the age-standardised incidence rate of cervical cancer in India in the long term with vaccination decreased from 11.0 to 4.7 cases per 100,000 woman-years (above threshold)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a model-based estimate comparing the incidence rate to the WHO threshold.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:44:35.652154Z"
+    },
+    {
+      "id": "30955d67-041b-4a4e-bd43-c7eee5b127b7",
+      "content_id": "4eac3257-92b9-48e4-8b68-fa1a628eef21",
+      "claim_id": "C5",
+      "claim": "Under gender-neutral vaccination with 60% coverage, the age-standardised incidence rate of cervical cancer in India in the long term decreased to 2.8 cases per 100,000 woman-years, which is below the WHO elimination threshold.",
+      "claim_type": "EXPLICIT",
+      "source": "as compared to 2.8 cases (below threshold) under GN with 60% coverage",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a model-based estimate comparing the incidence rate to the WHO threshold.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:44:35.652154Z"
+    },
+    {
+      "id": "b4e1c5da-4126-4212-85ba-f1dfe711a220",
+      "content_id": "4eac3257-92b9-48e4-8b68-fa1a628eef21",
+      "claim_id": "C6",
+      "claim": "Under gender-neutral vaccination with 90% coverage, the age-standardised incidence rate of cervical cancer in India in the long term decreased to 2.4 cases per 100,000 woman-years, which is below the WHO elimination threshold.",
+      "claim_type": "EXPLICIT",
+      "source": "2.4 cases (below threshold) under GN with 90% coverage",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a model-based estimate comparing the incidence rate to the WHO threshold.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:44:35.652154Z"
+    },
+    {
+      "id": "a54de9f7-d8d9-4a4b-9b74-d68b6b662715",
+      "content_id": "4eac3257-92b9-48e4-8b68-fa1a628eef21",
+      "claim_id": "C7",
+      "claim": "The World Health Assembly adopted the Global Strategy for cervical cancer elimination in August 2020.",
+      "claim_type": "EXPLICIT",
+      "source": "In August 2020, the World Health Assembly adopted the Global Strategy for cervical cancer elimination, with the overarching target of reducing the age-standardised incidence rate (ASIR) of cervical cancer to fewer than 4 cases per 100,000 woman-years (WHO, 2020a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to WHO 2020a.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:44:35.652154Z"
+    },
+    {
+      "id": "9cc2633d-6c1a-496b-9613-cd17d2c0c218",
+      "content_id": "4eac3257-92b9-48e4-8b68-fa1a628eef21",
+      "claim_id": "C8",
+      "claim": "The WHO elimination threshold for cervical cancer is fewer than 4 cases per 100,000 woman-years.",
+      "claim_type": "EXPLICIT",
+      "source": "with the overarching target of reducing the age-standardised incidence rate (ASIR) of cervical cancer to fewer than 4 cases per 100,000 woman-years (WHO, 2020a)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to WHO 2020a.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:44:35.652154Z"
+    },
+    {
+      "id": "4a1f7424-d9cd-482a-a6e4-01c98b1d9005",
+      "content_id": "4eac3257-92b9-48e4-8b68-fa1a628eef21",
+      "claim_id": "C9",
+      "claim": "The WHO recommends fully vaccinating 90% of all girls with the HPV vaccine by age 15 years to reach the cervical cancer elimination target.",
+      "claim_type": "EXPLICIT",
+      "source": "To reach this target, the following actions have been recommended: to fully vaccinate 90% of all girls with the HPV vaccine by age 15 years, to screen 70% of women using a high-performance test by the age of 35, and again by the age of 45, and to treat 90% of women with pre-cancer and 90% of women with invasive cancer (WHO, 2020b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to WHO 2020b.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:44:35.652154Z"
+    },
+    {
+      "id": "587df66f-8644-41dc-91fc-93f90b4410bf",
+      "content_id": "4eac3257-92b9-48e4-8b68-fa1a628eef21",
+      "claim_id": "C10",
+      "claim": "The WHO recommends screening 70% of women using a high-performance test by the age of 35, and again by the age of 45 to reach the cervical cancer elimination target.",
+      "claim_type": "EXPLICIT",
+      "source": "to screen 70% of women using a high-performance test by the age of 35, and again by the age of 45",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to WHO 2020b.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:44:35.652154Z"
+    },
+    {
+      "id": "29ac7fee-3525-4f7b-a512-c01354b538df",
+      "content_id": "4eac3257-92b9-48e4-8b68-fa1a628eef21",
+      "claim_id": "C11",
+      "claim": "The WHO recommends treating 90% of women with pre-cancer and 90% of women with invasive cancer to reach the cervical cancer elimination target.",
+      "claim_type": "EXPLICIT",
+      "source": "to treat 90% of women with pre-cancer and 90% of women with invasive cancer (WHO, 2020b)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to WHO 2020b.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:44:35.652154Z"
+    },
+    {
+      "id": "dbd7a523-1b58-41fe-8c24-1b6d62853188",
+      "content_id": "4eac3257-92b9-48e4-8b68-fa1a628eef21",
+      "claim_id": "C12",
+      "claim": "HPV vaccination worldwide was affected by the COVID-19 pandemic through slowed down or interrupted vaccine delivery in countries with active programmes.",
+      "claim_type": "EXPLICIT",
+      "source": "More specifically, HPV vaccination worldwide was affected at many different levels: (a) where population-based HPV vaccination programmes were already active, vaccine delivery slowed down or was interrupted (Muhoza et al., 2021)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Muhoza et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:44:35.652154Z"
+    },
+    {
+      "id": "ae9d77a0-6574-4029-a184-e1fec19a78ff",
+      "content_id": "4eac3257-92b9-48e4-8b68-fa1a628eef21",
+      "claim_id": "C13",
+      "claim": "The launch of HPV vaccination programmes was delayed in several countries, particularly in resource-limited settings, due to the COVID-19 pandemic.",
+      "claim_type": "EXPLICIT",
+      "source": "(b) the launch of HPV vaccination programmes was delayed in several countries, in particular in resource-limited settings (The Lancet Oncology, 2022)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to The Lancet Oncology, 2022.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:44:35.652154Z"
+    },
+    {
+      "id": "66c211f3-52a7-4fd1-b433-8dfa1f6dafe2",
+      "content_id": "4eac3257-92b9-48e4-8b68-fa1a628eef21",
+      "claim_id": "C14",
+      "claim": "The production of HPV vaccines was limited in favour of manufacturing other vaccines during the COVID-19 pandemic.",
+      "claim_type": "EXPLICIT",
+      "source": "(c) the production of HPV vaccines was also limited in favour of manufacturing other vaccines (WHO, 2022a)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to WHO, 2022a.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:44:35.652154Z"
+    },
+    {
+      "id": "d600fc41-8cca-4889-899d-392893e7cfef",
+      "content_id": "4eac3257-92b9-48e4-8b68-fa1a628eef21",
+      "claim_id": "C15",
+      "claim": "Health-care systems or public-health programmes at a local level have regularly suffered severe disruption caused by factors such as changes in political commitment, financial constraints, scepticism of the civil society, geo-political unrest, and environmental disasters.",
+      "claim_type": "EXPLICIT",
+      "source": "health-care systems or public-health programmes at a local level have also regularly suffered severe disruption caused by other factors such as changes in political commitment, financial constraints, scepticism of the civil society, geo-political unrest, and environmental disasters (Col\u00f3n-L\u00f3pez et al., 2021; Gallagher et al., 2017; Germani et al., 2022; Jawad et al., 2021; Larson, 2020; McGrath, 2022)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:44:35.652154Z"
+    },
+    {
+      "id": "ff331a96-f6c6-4461-9b91-0a22ceabdfcc",
+      "content_id": "4eac3257-92b9-48e4-8b68-fa1a628eef21",
+      "claim_id": "C16",
+      "claim": "Disruptions to organised disease prevention and control programmes may multiply public health crises.",
+      "claim_type": "EXPLICIT",
+      "source": "These partial or complete disruptions to organised disease prevention and control programmes may multiply public health crises (Sharpless, 2020)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Sharpless, 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:44:35.652154Z"
+    },
+    {
+      "id": "27f237f2-c491-4ce3-9585-4286e3bb6428",
+      "content_id": "4eac3257-92b9-48e4-8b68-fa1a628eef21",
+      "claim_id": "C17",
+      "claim": "Disruptions to organised disease prevention and control programmes may provoke substantial, usually unquantified waste of human, logistic, and financial resources.",
+      "claim_type": "EXPLICIT",
+      "source": "as well as provoke substantial, usually unquantified waste of human, logistic, and financial resources (Richards et al., 2020)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Richards et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:44:35.652154Z"
+    },
+    {
+      "id": "ddadbf7f-5aa6-4da3-aa08-1605a4495c23",
+      "content_id": "4eac3257-92b9-48e4-8b68-fa1a628eef21",
+      "claim_id": "C18",
+      "claim": "A previous study conducted before the COVID-19 pandemic in a high-income country showed that the addition of vaccination in boys to a programme targeting girls only could increase the resilience of the vaccination programme.",
+      "claim_type": "EXPLICIT",
+      "source": "In a previous study, conducted before the COVID-19 pandemic in a high-income country, we showed that the addition of vaccination in boys to a programme targeting girls only could increase the resilience of the vaccination programme (Elfstr\u00f6m et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Elfstr\u00f6m et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:44:35.652154Z"
+    },
+    {
+      "id": "d31e81b5-63ed-4939-8dd2-3bedecff9f8a",
+      "content_id": "4eac3257-92b9-48e4-8b68-fa1a628eef21",
+      "claim_id": "C19",
+      "claim": "India is currently the country with the largest burden of cervical cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "Currently, India is the country with the largest burden of cervical cancer (Bonjour et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Bonjour et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:44:35.652154Z"
+    },
+    {
+      "id": "3c8585e1-b5d1-4c49-ab5e-5cb5c02f619e",
+      "content_id": "4eac3257-92b9-48e4-8b68-fa1a628eef21",
+      "claim_id": "C20",
+      "claim": "Cervical cancer screening is still limitedly accessible in India, with less than 3% ever-in-life coverage in women aged 30\u201349 years.",
+      "claim_type": "EXPLICIT",
+      "source": "Cervical cancer screening is still limitedly accessible in India, with less than 3% ever-in-life coverage in women aged 30\u201349 years (Sankaranarayanan et al., 2019; The Lancet Oncology, 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Sankaranarayanan et al., 2019 and The Lancet Oncology, 2022.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:44:35.652154Z"
+    },
+    {
+      "id": "50fc2d76-3a46-4e63-89ae-74bdae7c41d2",
+      "content_id": "4eac3257-92b9-48e4-8b68-fa1a628eef21",
+      "claim_id": "C21",
+      "claim": "HPV vaccination (in girls) has been introduced in two Indian states with high vaccination coverage.",
+      "claim_type": "EXPLICIT",
+      "source": "HPV vaccination (in girls) has been introduced in two Indian states with high vaccination coverage (Sankaranarayanan et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Sankaranarayanan et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:44:35.652154Z"
+    },
+    {
+      "id": "69932fc3-e991-4205-be23-6cdb4621e2b6",
+      "content_id": "4eac3257-92b9-48e4-8b68-fa1a628eef21",
+      "claim_id": "C22",
+      "claim": "Marketing authorisation has been granted to an indigenous HPV vaccine in India.",
+      "claim_type": "EXPLICIT",
+      "source": "Following the recent marketing authorisation granted to an indigenous vaccine (The Lancet Oncology, 2022)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to The Lancet Oncology, 2022.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:44:35.652154Z"
+    },
+    {
+      "id": "49955563-415d-4c07-8bef-d02889f100bb",
+      "content_id": "4eac3257-92b9-48e4-8b68-fa1a628eef21",
+      "claim_id": "C23",
+      "claim": "The prospect of introducing HPV vaccination into the national immunisation programme in India has significantly improved following the marketing authorisation of an indigenous vaccine.",
+      "claim_type": "EXPLICIT",
+      "source": "Following the recent marketing authorisation granted to an indigenous vaccine (The Lancet Oncology, 2022), the prospect of introducing HPV vaccination into the national immunisation programme has also significantly improved.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the marketing authorisation, supported by citation.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:44:35.652154Z"
+    },
+    {
+      "id": "d6ca8e82-17c9-402e-b8a8-ff1ea83d5e43",
+      "content_id": "4eac3257-92b9-48e4-8b68-fa1a628eef21",
+      "claim_id": "C24",
+      "claim": "Life-time cervical cancer cases prevented in the birth cohorts vaccinated prior to the disruption period ranged between 562 and 807 cases per 100,000 girls born in the four highlighted scenarios.",
+      "claim_type": "EXPLICIT",
+      "source": "Life-time cervical cancer cases prevented in the birth cohorts vaccinated prior to the disruption period ranged between 562 (UI: 444, 676) and 807 (UI: 752, 853) cases per 100,000 girls born in the four highlighted scenarios.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a model-based estimate with uncertainty intervals.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:44:35.652154Z"
+    },
+    {
+      "id": "5039c0c2-8502-49c0-9c48-441db4f31049",
+      "content_id": "4eac3257-92b9-48e4-8b68-fa1a628eef21",
+      "claim_id": "C25",
+      "claim": "The highest impact in undisrupted cohorts was achieved by the gender-neutral strategy with 90% coverage.",
+      "claim_type": "EXPLICIT",
+      "source": "The highest impact was achieved by the GN strategy with 90% coverage, closely followed by GO with 90% coverage, then GN with 60% coverage, and then GO with 60% coverage (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on model results shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:44:35.652154Z"
+    },
+    {
+      "id": "4ab87ef5-6455-445f-966f-98b2dec75919",
+      "content_id": "4eac3257-92b9-48e4-8b68-fa1a628eef21",
+      "claim_id": "C26",
+      "claim": "The girls-only strategy with 60% coverage had the lowest resilience among the four highlighted scenarios.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the four highlighted scenarios, the GO strategy with 60% coverage also had the lowest resilience",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on model results comparing resilience across scenarios.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:44:35.652154Z"
+    },
+    {
+      "id": "fc6b8233-8974-43e9-9d87-2850836fc19e",
+      "content_id": "4eac3257-92b9-48e4-8b68-fa1a628eef21",
+      "claim_id": "C27",
+      "claim": "Under girls-only vaccination with 60% coverage, the life-time number of cervical cancer cases prevented would drop from 562 cases in undisrupted cohorts to 107 cases per 100,000 girls born in disrupted cohorts.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the life-time number of cervical cancer cases prevented would drop considerably from 562 (UI: 444, 676) cases in the undisrupted cohorts to 107 (UI: 7, 214) cases per 100,000 girls born in the disrupted cohorts (i.e., resilience of 107).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a model-based estimate with uncertainty intervals.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:44:35.652154Z"
+    },
+    {
+      "id": "756e32f8-ddd0-4ea6-8b30-6f35aa823389",
+      "content_id": "4eac3257-92b9-48e4-8b68-fa1a628eef21",
+      "claim_id": "C28",
+      "claim": "Increasing coverage under the girls-only strategy from 60% to 90% would lead to a small absolute gain in resilience from 107 to 209 cases prevented per 100,000 girls born.",
+      "claim_type": "EXPLICIT",
+      "source": "Increasing the coverage under the GO strategy from 60% to 90% would lead to a small absolute gain in resilience, from 107 (UI: 7, 214) to 209 (UI: 81, 340) cases prevented per 100,000 girls born",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a model-based estimate with uncertainty intervals.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:44:35.652154Z"
+    },
+    {
+      "id": "4cdffc83-7249-4a67-9813-0b1e00f5b644",
+      "content_id": "4eac3257-92b9-48e4-8b68-fa1a628eef21",
+      "claim_id": "C29",
+      "claim": "Switching from girls-only to gender-neutral vaccination under 60% coverage led to a moderate gain of impact in undisrupted cohorts from 562 to 647 cases prevented per 100,000 girls born.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, switching from GO to GN vaccination, under 60% coverage, led to a moderate gain of impact in the undisrupted cohorts from 562 (UI: 444, 676) to 647 (UI: 539, 746) cases prevented",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a model-based estimate with uncertainty intervals.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:44:35.652154Z"
+    },
+    {
+      "id": "ddae16fd-c3d1-4da0-8f44-b5beee393b1f",
+      "content_id": "4eac3257-92b9-48e4-8b68-fa1a628eef21",
+      "claim_id": "C30",
+      "claim": "Switching from girls-only to gender-neutral vaccination under 60% coverage led to a substantial increase in resilience from 107 to 302 cases prevented per 100,000 girls born.",
+      "claim_type": "EXPLICIT",
+      "source": "but a substantial increase in resilience from 107 (UI: 7, 214) to 302 (UI: 170, 437) cases prevented per 100,000 girls born",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a model-based estimate with uncertainty intervals.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:44:35.652154Z"
+    },
+    {
+      "id": "8a67ef97-28cc-489b-be4c-df6b9ab010a0",
+      "content_id": "4eac3257-92b9-48e4-8b68-fa1a628eef21",
+      "claim_id": "C31",
+      "claim": "Gender-neutral vaccination with 90% coverage led to the highest impact of 807 cases prevented per 100,000 girls born in undisrupted cohorts.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, GN vaccination with 90% coverage led to the highest impact of 807 (UI: 752, 853) cases prevented per 100,000 girls born in the undisrupted cohorts",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a model-based estimate with uncertainty intervals.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:44:35.652154Z"
+    },
+    {
+      "id": "f69b3cf5-6825-4cca-97bf-47e5562a38ab",
+      "content_id": "4eac3257-92b9-48e4-8b68-fa1a628eef21",
+      "claim_id": "C32",
+      "claim": "Gender-neutral vaccination with 90% coverage led to the highest resilience of 464 cases prevented per 100,000 girls born in disrupted cohorts.",
+      "claim_type": "EXPLICIT",
+      "source": "as well as the highest resilience of 464 (UI: 328, 602) cases prevented per 100,000 girls born in the disrupted cohorts",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a model-based estimate with uncertainty intervals.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:44:35.652154Z"
+    },
+    {
+      "id": "386b0801-2068-4129-8474-a8b50f0e4a69",
+      "content_id": "4eac3257-92b9-48e4-8b68-fa1a628eef21",
+      "claim_id": "C33",
+      "claim": "There is a trade-off between dose-efficiency and resilience when comparing girls-only and gender-neutral vaccination strategies.",
+      "claim_type": "EXPLICIT",
+      "source": "Considering the required number of vaccine doses, we found a trade-off between dose-efficiency and resilience. In general, GO vaccination favoured dose-efficiency and GN vaccination favoured resilience (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference from model results shown in Figure 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:44:35.652154Z"
+    },
+    {
+      "id": "3c69f998-086c-4e0e-9b81-021d14eb7dd2",
+      "content_id": "4eac3257-92b9-48e4-8b68-fa1a628eef21",
+      "claim_id": "C34",
+      "claim": "Girls-only vaccination favours dose-efficiency while gender-neutral vaccination favours resilience.",
+      "claim_type": "EXPLICIT",
+      "source": "In general, GO vaccination favoured dose-efficiency and GN vaccination favoured resilience (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference from model results shown in Figure 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:44:35.652154Z"
+    },
+    {
+      "id": "a4f2bc58-e23d-49fd-99d6-a83dbdfbd708",
+      "content_id": "4eac3257-92b9-48e4-8b68-fa1a628eef21",
+      "claim_id": "C35",
+      "claim": "Switching from girls-only to gender-neutral vaccination under 60% coverage would yield a higher gain in resilience (2.8-fold) than increasing girls-only coverage from 60% to 90% (2-fold).",
+      "claim_type": "EXPLICIT",
+      "source": "However, this switch from GO to GN vaccination would yield a higher gain in resilience than when increasing GO coverage from 60% to 90% (2.8-fold versus 2-fold increase).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on model results comparing resilience ratios.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:44:35.652154Z"
+    },
+    {
+      "id": "54718a8e-52bc-404c-8bb0-c1effbbc1553",
+      "content_id": "4eac3257-92b9-48e4-8b68-fa1a628eef21",
+      "claim_id": "C36",
+      "claim": "Switching from girls-only to gender-neutral vaccination under 90% coverage would require an additional doubling of the number of doses.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, switching from GO to GN vaccination under 90% coverage would require an additional doubling of the number of doses",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference based on vaccinating both boys and girls instead of girls only.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:44:35.652154Z"
+    },
+    {
+      "id": "c2d78420-3aa1-49c4-a482-10970d6e251d",
+      "content_id": "4eac3257-92b9-48e4-8b68-fa1a628eef21",
+      "claim_id": "C37",
+      "claim": "Switching from girls-only to gender-neutral vaccination under 90% coverage would only marginally improve the impact in undisrupted cohorts but would produce a 2.2-fold gain in resilience.",
+      "claim_type": "EXPLICIT",
+      "source": "and only marginally improve the impact in the undisrupted cohorts, but would produce a 2.2-fold gain in resilience",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on model results comparing impact and resilience.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:44:35.652154Z"
+    },
+    {
+      "id": "0e86a76b-a0d1-4385-8c84-894cfc8d3e6e",
+      "content_id": "4eac3257-92b9-48e4-8b68-fa1a628eef21",
+      "claim_id": "C38",
+      "claim": "In states with high cervical cancer incidence, there is slightly lower resilience under the girls-only strategy and a slightly greater relative gain in resilience when switching from girls-only to gender-neutral vaccination than in states with low incidence.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, in the states with high cervical cancer incidence, we found slightly lower resilience under the GO strategy and a slightly greater relative gain in resilience when switching from GO to GN vaccination than in states with low incidence (Supplementary file 3, Appendix 2\u2014figures 1\u20133).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on model results stratified by state-specific incidence.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:44:35.652154Z"
+    },
+    {
+      "id": "3ae7aa28-5f18-42a5-9dd4-b902a95fb1a8",
+      "content_id": "4eac3257-92b9-48e4-8b68-fa1a628eef21",
+      "claim_id": "C39",
+      "claim": "In the base case, the resilience ratio for switching from girls-only to gender-neutral strategy under 60% coverage was 3-fold in states with high cervical cancer incidence and 2.7-fold in states with low cervical cancer incidence.",
+      "claim_type": "EXPLICIT",
+      "source": "In the base case, for example, the resilience ratio for switching from GO to GN strategy (under 60% coverage) was 3-fold in states with high cervical cancer incidence and 2.7-fold in states with low cervical cancer incidence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on model results stratified by state-specific incidence.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:44:35.652154Z"
+    },
+    {
+      "id": "1313f18c-219f-47bb-94d1-7cc45547ed4e",
+      "content_id": "4eac3257-92b9-48e4-8b68-fa1a628eef21",
+      "claim_id": "C40",
+      "claim": "Sensitivity analyses on less strong disruption in vaccination coverage or alternative durations of disruption yielded higher resilience with gender-neutral than girls-only vaccination.",
+      "claim_type": "EXPLICIT",
+      "source": "Sensitivity analyses on less strong disruption in vaccination coverage or alternative durations of disruption also yielded higher resilience with GN than GO vaccination (Table 1, Appendix 2\u2014figures 2\u20133).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on sensitivity analyses presented in Table 1 and figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:44:35.652154Z"
+    },
+    {
+      "id": "c4930197-b5d5-4cef-add0-dfd68f737f53",
+      "content_id": "4eac3257-92b9-48e4-8b68-fa1a628eef21",
+      "claim_id": "C41",
+      "claim": "The gain in resilience by switching from girls-only to gender-neutral vaccination was most evident under complete disruption of vaccination (0% coverage at disruption) but still consistently found under less strong disruption (20% or 40% coverage at disruption).",
+      "claim_type": "EXPLICIT",
+      "source": "The gain in resilience by switching from GO to GN vaccination was most evident under complete disruption of vaccination (i.e., 0% coverage at disruption) but still consistently found under less strong disruption (i.e., 20% or 40% coverage at disruption) (Table 1 part II, Appendix 2\u2014figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on sensitivity analyses presented in Table 1 and figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:44:35.652154Z"
+    },
+    {
+      "id": "a2b2bc68-d959-4439-80e7-1cb60a6b5bfa",
+      "content_id": "4eac3257-92b9-48e4-8b68-fa1a628eef21",
+      "claim_id": "C42",
+      "claim": "Resilience decreased with longer duration of disruption, with any vaccination strategy, but was always higher with the gender-neutral strategy.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, resilience decreased with longer duration of disruption, with any vaccination strategy, but was always higher with the GN strategy (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on model results shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:44:35.652154Z"
+    },
+    {
+      "id": "71284adc-9587-44fb-8564-ab593e5ba54e",
+      "content_id": "4eac3257-92b9-48e4-8b68-fa1a628eef21",
+      "claim_id": "C43",
+      "claim": "The gain in resilience by switching from girls-only to gender-neutral vaccination was consistently above 2.7-fold under 60% coverage and above 2.0-fold under 90% coverage across different durations of disruption.",
+      "claim_type": "EXPLICIT",
+      "source": "The gain in resilience by switching from GO to GN vaccination was consistently above 2.7-fold under 60% coverage and above 2.0-fold under 90% coverage (Table 1 part III).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on sensitivity analyses presented in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:44:35.652154Z"
+    },
+    {
+      "id": "f07ddb52-5bc0-42f1-97c0-2166bf8432c1",
+      "content_id": "4eac3257-92b9-48e4-8b68-fa1a628eef21",
+      "claim_id": "C44",
+      "claim": "In the scenario with no restart of vaccination, gender-neutral vaccination could ensure some resilience of at least 125 cases prevented per 100,000 girls born for eight birth cohorts from the start of disruption.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, in the scenario with no restart of vaccination, GN vaccination could ensure some resilience of at least 125 cases prevented per 100,000 girls born for eight birth cohorts from the start of disruption (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on model results shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:44:35.652154Z"
+    },
+    {
+      "id": "c9b218a6-6540-437b-96dd-79a427d7d915",
+      "content_id": "4eac3257-92b9-48e4-8b68-fa1a628eef21",
+      "claim_id": "C45",
+      "claim": "Introducing girls-only vaccination with 60% coverage would reduce the nationwide age-standardised incidence rate of cervical cancer from 11 cases to 4.7 cases per 100,000 woman-years in 100 years, which remains above the WHO elimination threshold.",
+      "claim_type": "EXPLICIT",
+      "source": "Introducing GO vaccination with 60% coverage would have the lowest impact, reducing the nationwide ASIR of cervical cancer from 11 cases, which is the present level before the introduction of vaccination, to 4.7 (UI: 4.3, 5.1) cases per 100,000 woman-years in 100 years, but this remained above the WHO elimination threshold (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a model-based estimate shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:44:35.652154Z"
+    },
+    {
+      "id": "72203011-8223-4fd6-8fa7-1908bbb328ea",
+      "content_id": "4eac3257-92b9-48e4-8b68-fa1a628eef21",
+      "claim_id": "C46",
+      "claim": "The other highlighted scenarios (girls-only 90%, gender-neutral 60%, gender-neutral 90%) enabled elimination to be reached within 55\u201362 years.",
+      "claim_type": "EXPLICIT",
+      "source": "The other highlighted scenarios enabled elimination to be reached within 55\u201362 years.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on model results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:44:35.652154Z"
+    },
+    {
+      "id": "3869797f-cff0-43c7-aec3-31f60aa657a1",
+      "content_id": "4eac3257-92b9-48e4-8b68-fa1a628eef21",
+      "claim_id": "C47",
+      "claim": "Introducing gender-neutral vaccination with 60% coverage in both girls and boys would reduce incidence down to 2.8 cases per 100,000 woman-years, below the elimination threshold.",
+      "claim_type": "EXPLICIT",
+      "source": "Introducing GN vaccination with 60% coverage in both girls and boys would reduce incidence down to 2.8 (UI: 2.5, 3.2) cases per 100,000 woman-years, hence below the elimination threshold.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a model-based estimate with uncertainty intervals.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:44:35.652154Z"
+    },
+    {
+      "id": "649b7779-5d68-4fea-89d0-e3c9a59dc334",
+      "content_id": "4eac3257-92b9-48e4-8b68-fa1a628eef21",
+      "claim_id": "C48",
+      "claim": "The girls-only strategy with 90% coverage, as recommended by WHO, would decrease incidence below the threshold to 2.4 cases per 100,000 woman-years.",
+      "claim_type": "EXPLICIT",
+      "source": "The GO strategy with 90% coverage, as recommended by WHO, would also decrease incidence below the threshold to 2.4 (UI: 2.3, 2.6) cases per 100,000 woman-years.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a model-based estimate with uncertainty intervals.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:44:35.652154Z"
+    },
+    {
+      "id": "6cfd45ee-4665-48c2-81e9-96ee475cf3ca",
+      "content_id": "4eac3257-92b9-48e4-8b68-fa1a628eef21",
+      "claim_id": "C49",
+      "claim": "Given the already high vaccination coverage of 90% in girls, switching to the gender-neutral strategy would only marginally reduce incidence to 2.3 cases per 100,000 woman-years.",
+      "claim_type": "EXPLICIT",
+      "source": "Lastly, given the already high vaccination coverage of 90% in girls, switching to the GN strategy would only marginally reduce incidence to 2.3 (UI: 2.2, 2.3) cases per 100,000 woman-years.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a model-based estimate with uncertainty intervals.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:44:35.652154Z"
+    },
+    {
+      "id": "af08c067-10df-42ad-979d-eefd34c93cbf",
+      "content_id": "4eac3257-92b9-48e4-8b68-fa1a628eef21",
+      "claim_id": "C50",
+      "claim": "Without vaccination in boys, the WHO elimination threshold could be reached through a critical girls-only coverage of 70%.",
+      "claim_type": "EXPLICIT",
+      "source": "Without vaccination in boys, the WHO elimination threshold could be reached through a critical GO coverage of 70% (UI: 65, 73) (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a model-based estimate shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:44:35.652154Z"
+    },
+    {
+      "id": "4fb48059-c6aa-4fee-8b78-22785e4235e5",
+      "content_id": "4eac3257-92b9-48e4-8b68-fa1a628eef21",
+      "claim_id": "C51",
+      "claim": "With vaccination in boys, a lower critical coverage in girls might be sufficient for elimination.",
+      "claim_type": "EXPLICIT",
+      "source": "With vaccination in boys, a lower critical coverage in girls might be sufficient for elimination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from model results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:44:35.652154Z"
+    },
+    {
+      "id": "627a86a0-4dce-4fa7-9d26-e55dc4f3cdc1",
+      "content_id": "4eac3257-92b9-48e4-8b68-fa1a628eef21",
+      "claim_id": "C52",
+      "claim": "Coverage between 50% and 70% in girls might be sufficient for elimination when combined with moderate coverage (30%) in boys.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, coverage between 50% and 70% in girls might also be sufficient for elimination when combined with moderate coverage (30%) in boys (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on model results shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:44:35.652154Z"
+    },
+    {
+      "id": "deed986c-9cd3-4c1a-8f97-6d27494795a7",
+      "content_id": "4eac3257-92b9-48e4-8b68-fa1a628eef21",
+      "claim_id": "C53",
+      "claim": "Disruption of vaccination does not prevent countries from reaching the elimination threshold eventually, provided vaccination resumes after disruption.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, while disruption of vaccination does not prevent countries from reaching the elimination threshold eventually (provided vaccination resumes after disruption), it can prolong the number of years taken to attain this goal (Appendix 2\u2014figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on model results shown in Appendix 2\u2014figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:44:35.652154Z"
+    },
+    {
+      "id": "acb1648b-19e5-47fc-b98d-66d74a8b3452",
+      "content_id": "4eac3257-92b9-48e4-8b68-fa1a628eef21",
+      "claim_id": "C54",
+      "claim": "Disruption of vaccination can prolong the number of years taken to reach the elimination threshold.",
+      "claim_type": "EXPLICIT",
+      "source": "it can prolong the number of years taken to attain this goal (Appendix 2\u2014figure 4)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on model results shown in Appendix 2\u2014figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:44:35.652154Z"
+    },
+    {
+      "id": "cbea0ac5-f12b-4a71-990c-614aac5d6e9d",
+      "content_id": "4eac3257-92b9-48e4-8b68-fa1a628eef21",
+      "claim_id": "C55",
+      "claim": "Under the girls-only strategy with 90% coverage, disruption of vaccination for 5 years would delay reaching elimination from 57 to 65 years since the start of vaccination.",
+      "claim_type": "EXPLICIT",
+      "source": "Under the GO strategy with 90% coverage, for instance, disruption of vaccination for 5 years (as in the base case) would delay reaching elimination from 57 to 65 years since the start of vaccination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a model-based estimate.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:44:35.652154Z"
+    },
+    {
+      "id": "9ad75e3d-0b14-41d9-836b-5080ed10c83c",
+      "content_id": "4eac3257-92b9-48e4-8b68-fa1a628eef21",
+      "claim_id": "C56",
+      "claim": "By switching to gender-neutral strategy under 90% coverage, elimination could be reached in 58 years since the start of vaccination, even with disruption.",
+      "claim_type": "EXPLICIT",
+      "source": "By switching to GN strategy (under 90% coverage), elimination could be reached in 58 years since the start of vaccination, even with disruption.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a model-based estimate.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:44:35.652154Z"
+    },
+    {
+      "id": "c9ca7c02-3501-43cd-b574-83d8bfcb2c0d",
+      "content_id": "4eac3257-92b9-48e4-8b68-fa1a628eef21",
+      "claim_id": "C57",
+      "claim": "The age difference between sexual partners is an important determinant underlying the gain in resilience by switching from girls-only to gender-neutral vaccination.",
+      "claim_type": "EXPLICIT",
+      "source": "An important determinant underlying the gain in resilience by switching from GO to GN vaccination is likely the age difference between sexual partners.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the model results and understanding of transmission dynamics.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:44:35.652154Z"
+    },
+    {
+      "id": "480d886e-d661-438f-9db4-5ea53e6c0804",
+      "content_id": "4eac3257-92b9-48e4-8b68-fa1a628eef21",
+      "claim_id": "C58",
+      "claim": "Men are on average older than women within sexual partnerships almost everywhere worldwide.",
+      "claim_type": "EXPLICIT",
+      "source": "In general, men are on average older than women within sexual partnerships almost everywhere worldwide (Wellings et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Wellings et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:44:35.652154Z"
+    },
+    {
+      "id": "65614fed-8626-46d5-b73d-cc5843a5cc13",
+      "content_id": "4eac3257-92b9-48e4-8b68-fa1a628eef21",
+      "claim_id": "C59",
+      "claim": "In cases of vaccination disruption, the birth cohorts of boys vaccinated before the disruption would indirectly protect the cohorts of younger girls who missed out on vaccination during the disruption period.",
+      "claim_type": "EXPLICIT",
+      "source": "In cases of vaccination disruption, the birth cohorts of boys vaccinated before the disruption would indirectly protect the cohorts of younger girls who missed out on vaccination during the disruption period.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on understanding of herd immunity and age-mixing patterns.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:44:35.652154Z"
+    },
+    {
+      "id": "4aadf1f2-d228-4cb4-86af-0af45680525b",
+      "content_id": "4eac3257-92b9-48e4-8b68-fa1a628eef21",
+      "claim_id": "C60",
+      "claim": "The magnitude of the resilience attributable to gender-neutral HPV vaccination is expected to be different across populations due to population-specific social norms regulating sexual behaviour.",
+      "claim_type": "EXPLICIT",
+      "source": "Since sexual behaviour is regulated by population-specific social norms, the magnitude of the resilience attributable to GN HPV vaccination is also expected to be different across populations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the relationship between sexual behaviour and transmission dynamics.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:44:35.652154Z"
+    },
+    {
+      "id": "3d2effed-3376-4652-8fb4-e8a6311c5008",
+      "content_id": "4eac3257-92b9-48e4-8b68-fa1a628eef21",
+      "claim_id": "C61",
+      "claim": "In India, the age difference between male and female partners is on average 7 years.",
+      "claim_type": "EXPLICIT",
+      "source": "In India, for example, the age difference between male and female partners is on average 7 years (USAID, 2017)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to USAID, 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:44:35.652154Z"
+    },
+    {
+      "id": "4741cdef-1e1c-4c03-9f9d-c856b4b31347",
+      "content_id": "4eac3257-92b9-48e4-8b68-fa1a628eef21",
+      "claim_id": "C62",
+      "claim": "The average age difference between partners in India (7 years) is similar to the number of birth cohorts still retaining some protection by gender-neutral vaccination when no restart of vaccination after disruption was simulated.",
+      "claim_type": "EXPLICIT",
+      "source": "similar to the number of birth cohorts still retaining some protection by GN vaccination when we simulated no restart of vaccination after disruption",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference connecting the age difference data to model results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:44:35.652154Z"
+    },
+    {
+      "id": "f56d2e5a-1305-4d46-884c-8e0531fd175a",
+      "content_id": "4eac3257-92b9-48e4-8b68-fa1a628eef21",
+      "claim_id": "C63",
+      "claim": "Vaccinating boys is a more direct way to reduce the force of infection in men than vaccinating girls.",
+      "claim_type": "EXPLICIT",
+      "source": "However, vaccinating boys is a more direct way to reduce the force of infection in men than vaccinating girls, which is the likely mechanism underlying the higher resilience achieved by GN strategy than GO strategy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on understanding of transmission dynamics.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:44:35.652154Z"
+    },
+    {
+      "id": "6b63120a-7499-4fe8-b946-5ae241766bc8",
+      "content_id": "4eac3257-92b9-48e4-8b68-fa1a628eef21",
+      "claim_id": "C64",
+      "claim": "Elimination across India could be reached with a critical level of girls-only coverage of 70%, which falls between the average coverage observed among girls aged 9\u201315 years living in countries with an active HPV vaccination programme (53%) and the coverage recommended by the WHO (90%).",
+      "claim_type": "EXPLICIT",
+      "source": "In principle, elimination across India could be reached with a critical level of GO coverage of 70%, which falls between the average coverage observed among girls aged 9\u201315 years living in countries with an active HPV vaccination programme, that is, 53% (Bruni et al., 2021), and the coverage recommended by the WHO, that is, 90% (WHO, 2020b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on model results and citations to observed coverage and WHO recommendations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:44:35.652154Z"
+    },
+    {
+      "id": "bbd5999e-6266-4a4a-8f6b-bb839e1c0fd4",
+      "content_id": "4eac3257-92b9-48e4-8b68-fa1a628eef21",
+      "claim_id": "C65",
+      "claim": "The average coverage observed among girls aged 9\u201315 years living in countries with an active HPV vaccination programme is 53%.",
+      "claim_type": "EXPLICIT",
+      "source": "the average coverage observed among girls aged 9\u201315 years living in countries with an active HPV vaccination programme, that is, 53% (Bruni et al., 2021)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Bruni et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:44:35.652154Z"
+    },
+    {
+      "id": "b7de231a-d55e-4f21-90b3-ea0e5d973638",
+      "content_id": "4eac3257-92b9-48e4-8b68-fa1a628eef21",
+      "claim_id": "C66",
+      "claim": "Cervical cancer elimination could be reached with 50\u201370% coverage in girls when combined with moderate coverage in boys, even if coverage in boys were lower than that of girls.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, our model-based estimates suggest that cervical cancer elimination could be reached with 50\u201370% coverage in girls when combined with moderate coverage in boys, even if coverage in boys were lower than that of girls.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on model results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:44:35.652154Z"
+    },
+    {
+      "id": "4045db3b-62c8-4bf4-965f-1f5cda41e355",
+      "content_id": "4eac3257-92b9-48e4-8b68-fa1a628eef21",
+      "claim_id": "C67",
+      "claim": "In cases where girls-only coverage is already above 70%, gender-neutral vaccination would allow even more ambitious cervical cancer control targets to be reached.",
+      "claim_type": "EXPLICIT",
+      "source": "In cases where GO coverage is already above 70%, GN vaccination would allow even more ambitious cervical cancer control targets to be reached",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from model results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:44:35.652154Z"
+    },
+    {
+      "id": "17c24058-fa50-49ff-98d2-6efb3e0cf8b3",
+      "content_id": "4eac3257-92b9-48e4-8b68-fa1a628eef21",
+      "claim_id": "C68",
+      "claim": "Gender-neutral vaccination might eventually make cervical screening targeted to vaccinated birth cohorts redundant.",
+      "claim_type": "EXPLICIT",
+      "source": "which might eventually make cervical screening targeted to vaccinated birth cohorts redundant (Tota et al., 2020)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation supported by a citation to Tota et al., 2020.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:44:35.652154Z"
+    },
+    {
+      "id": "1d389dbe-def5-49c0-b980-23dfd2256b63",
+      "content_id": "4eac3257-92b9-48e4-8b68-fa1a628eef21",
+      "claim_id": "C69",
+      "claim": "Reaching elimination might be challenging in the Indian states with the highest baseline cervical cancer incidence before vaccination.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, as previously reported (Man et al., 2022), reaching elimination might be challenging in the Indian states with the highest baseline cervical cancer incidence before vaccination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Man et al., 2022.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:44:35.652154Z"
+    },
+    {
+      "id": "491b3f1f-368e-4bef-ada1-74539342efe6",
+      "content_id": "4eac3257-92b9-48e4-8b68-fa1a628eef21",
+      "claim_id": "C70",
+      "claim": "In Indian states with the highest baseline cervical cancer incidence, additional measures such as gender-neutral vaccination would be even more relevant.",
+      "claim_type": "EXPLICIT",
+      "source": "In these cases, additional measures such as GN vaccination would be even more relevant.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the previous claim about challenges in high-incidence states.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:44:35.652154Z"
+    },
+    {
+      "id": "c6db6146-354d-4c46-961d-a67741220603",
+      "content_id": "4eac3257-92b9-48e4-8b68-fa1a628eef21",
+      "claim_id": "C71",
+      "claim": "The critical levels of HPV vaccination coverage found for India are not necessarily generalisable to other populations.",
+      "claim_type": "EXPLICIT",
+      "source": "A limitation of this study is that the critical levels of HPV vaccination coverage found for India are not necessarily generalisable to other populations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a stated limitation of the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:44:35.652154Z"
+    },
+    {
+      "id": "74c25800-4e12-4969-8958-4ec861a3817c",
+      "content_id": "4eac3257-92b9-48e4-8b68-fa1a628eef21",
+      "claim_id": "C72",
+      "claim": "Baseline cervical cancer incidence and the magnitude of herd effect should be considered when determining critical levels of HPV vaccination coverage.",
+      "claim_type": "EXPLICIT",
+      "source": "Baseline cervical cancer incidence and the magnitude of herd effect, that is, the indirect protection offered by the vaccinated to the unvaccinated individuals of a population against HPV infection (Malag\u00f3n et al., 2018) should be considered.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Malag\u00f3n et al., 2018.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:44:35.652154Z"
+    },
+    {
+      "id": "9ac56b63-7f1a-4556-a9cf-5a2dc8d4049a",
+      "content_id": "4eac3257-92b9-48e4-8b68-fa1a628eef21",
+      "claim_id": "C73",
+      "claim": "Herd effect is the indirect protection offered by the vaccinated to the unvaccinated individuals of a population against HPV infection.",
+      "claim_type": "EXPLICIT",
+      "source": "the magnitude of herd effect, that is, the indirect protection offered by the vaccinated to the unvaccinated individuals of a population against HPV infection (Malag\u00f3n et al., 2018)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition supported by a citation to Malag\u00f3n et al., 2018.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:44:35.652154Z"
+    },
+    {
+      "id": "4ac193c3-a8ba-48c8-a753-de85d431e566",
+      "content_id": "4eac3257-92b9-48e4-8b68-fa1a628eef21",
+      "claim_id": "C74",
+      "claim": "Baseline cervical cancer incidence and herd effect are governed by local sexual behaviour.",
+      "claim_type": "EXPLICIT",
+      "source": "These are, in turn, governed by local sexual behaviour (Bosch et al., 1994; Schulte-Frohlinde et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Bosch et al., 1994 and Schulte-Frohlinde et al., 2022.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:44:35.652154Z"
+    },
+    {
+      "id": "57aeea08-4105-4873-80da-f1a4588b1eac",
+      "content_id": "4eac3257-92b9-48e4-8b68-fa1a628eef21",
+      "claim_id": "C75",
+      "claim": "The critical level of vaccination coverage to reach cervical cancer elimination is context-specific.",
+      "claim_type": "EXPLICIT",
+      "source": "As mentioned above for resilience, the critical level of vaccination coverage to reach cervical cancer elimination will be context-specific (Baussano et al., 2018; Lehtinen et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Baussano et al., 2018 and Lehtinen et al., 2022.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:44:35.652154Z"
+    },
+    {
+      "id": "d355673c-e45c-4023-9320-0c24c9712d42",
+      "content_id": "4eac3257-92b9-48e4-8b68-fa1a628eef21",
+      "claim_id": "C76",
+      "claim": "Extrapolation of the results of this study to other populations will be limited to those sharing similar patterns of demography, social norms, and cervical cancer epidemiology as India.",
+      "claim_type": "EXPLICIT",
+      "source": "Extrapolation of the results of this study to other populations will be limited to those sharing similar patterns of demography, social norms, and cervical cancer epidemiology as India.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a stated limitation of the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:44:35.652154Z"
+    },
+    {
+      "id": "579f38ce-4206-4930-b4ca-5ad9af33e1ac",
+      "content_id": "4eac3257-92b9-48e4-8b68-fa1a628eef21",
+      "claim_id": "C77",
+      "claim": "The principle of improving the resilience of cervical cancer prevention through a shift to gender-neutral vaccination is expected to be widely applicable.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, we expect the principle of improving the resilience of cervical cancer prevention through a shift to GN vaccination to be widely applicable",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the consistency of results.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:44:35.652154Z"
+    },
+    {
+      "id": "4665a9bd-985e-48ed-8010-178fc73c7fef",
+      "content_id": "4eac3257-92b9-48e4-8b68-fa1a628eef21",
+      "claim_id": "C78",
+      "claim": "The consistency of results in India when stratifying by state-specific cervical cancer incidence supports the wide applicability of the principle of improving resilience through gender-neutral vaccination.",
+      "claim_type": "EXPLICIT",
+      "source": "and this is supported by the consistency of our results in India when stratifying by state-specific cervical cancer incidence",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on model results stratified by state.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:44:35.652154Z"
+    },
+    {
+      "id": "b6046e88-181c-43be-bc97-5ffbef10cca6",
+      "content_id": "4eac3257-92b9-48e4-8b68-fa1a628eef21",
+      "claim_id": "C79",
+      "claim": "The study did not explore changes in sexual behaviour in the population due to disruption.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, we did not explore changes in sexual behaviour in the population due to disruption, which occurs in dire circumstances like a pandemic.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a stated limitation of the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:44:35.652154Z"
+    },
+    {
+      "id": "1907ff6a-2097-425e-9b9e-e7277850c7e2",
+      "content_id": "4eac3257-92b9-48e4-8b68-fa1a628eef21",
+      "claim_id": "C80",
+      "claim": "The study accounted for a large variation in the duration of disruption and in vaccination coverage at disruption through sensitivity analyses.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we did account for a large variation in the duration of disruption and in vaccination coverage at disruption through our sensitivity analyses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methods used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:44:35.652154Z"
+    },
+    {
+      "id": "a76cea06-8cd0-492c-bef3-95e273892f7a",
+      "content_id": "4eac3257-92b9-48e4-8b68-fa1a628eef21",
+      "claim_id": "C81",
+      "claim": "The study did not consider the influence of choice of HPV vaccine.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we did not consider the influence of choice of HPV vaccine",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a stated limitation of the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:44:35.652154Z"
+    },
+    {
+      "id": "ceea2db2-3279-4ce3-b10a-a38712a6eb3a",
+      "content_id": "4eac3257-92b9-48e4-8b68-fa1a628eef21",
+      "claim_id": "C82",
+      "claim": "A quadrivalent vaccine would be the likely choice for India due to the price advantage.",
+      "claim_type": "EXPLICIT",
+      "source": "as a quadrivalent vaccine (either indigenously produced or Gardasil) would be the likely choice for India due to the price advantage",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on economic considerations.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:44:35.652154Z"
+    },
+    {
+      "id": "858f7f05-a0b7-4dbd-bce4-c27b4fc37a1c",
+      "content_id": "4eac3257-92b9-48e4-8b68-fa1a628eef21",
+      "claim_id": "C83",
+      "claim": "In cases of using a nonavalent vaccine, or a vaccine with higher levels of cross-protection, similar qualitative results for resilience are expected, and elimination of cervical cancer could be expected to be more easily achieved.",
+      "claim_type": "EXPLICIT",
+      "source": "In cases of using a nonavalent vaccine, or a vaccine with higher levels of cross-protection, we expect similar qualitative results for resilience, and elimination of cervical cancer could be expected to be more easily achieved.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about alternative vaccine scenarios.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:44:35.652154Z"
+    },
+    {
+      "id": "858bcb20-4cb4-4d6f-87b3-a9559f9b629f",
+      "content_id": "4eac3257-92b9-48e4-8b68-fa1a628eef21",
+      "claim_id": "C84",
+      "claim": "The study did not consider changes in cervical cancer screening.",
+      "claim_type": "EXPLICIT",
+      "source": "We also did not consider changes in cervical cancer screening, as it is difficult to predict how much coverage of cervical cancer screening will increase in India in the coming years.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a stated limitation of the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:44:35.652154Z"
+    },
+    {
+      "id": "49cd1169-b247-4c27-a004-aaae4d18c05b",
+      "content_id": "4eac3257-92b9-48e4-8b68-fa1a628eef21",
+      "claim_id": "C85",
+      "claim": "Adding vaccination of boys to the routine coverage of girls would approximately double the required number of vaccine doses.",
+      "claim_type": "EXPLICIT",
+      "source": "clearly adding vaccination of boys to the routine coverage of girls would approximately double the required number of vaccine doses",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference based on vaccinating both sexes.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:44:35.652154Z"
+    },
+    {
+      "id": "5da5037e-38c2-4301-ad2a-36963cd02c3a",
+      "content_id": "4eac3257-92b9-48e4-8b68-fa1a628eef21",
+      "claim_id": "C86",
+      "claim": "Adding vaccination of boys to the routine coverage of girls would increase the financial effort to be made by the national government.",
+      "claim_type": "EXPLICIT",
+      "source": "and would increase the financial effort to be made by the national government",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference based on increased vaccine doses needed.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:44:35.652154Z"
+    },
+    {
+      "id": "1fa51867-3c8f-4f0e-a970-c9d51f73527e",
+      "content_id": "4eac3257-92b9-48e4-8b68-fa1a628eef21",
+      "claim_id": "C87",
+      "claim": "Gender-neutral HPV vaccination schedules are economically attractive in high-income tender-based settings, particularly where girls-only vaccine uptake is below 80%.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been demonstrated that GN HPV vaccination schedules are economically attractive in high-income tender-based settings, in particular where GO vaccine uptake is below 80% (Qendri et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Qendri et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:44:35.652154Z"
+    },
+    {
+      "id": "6523cbcf-0f0a-483d-8790-a717c46e0185",
+      "content_id": "4eac3257-92b9-48e4-8b68-fa1a628eef21",
+      "claim_id": "C88",
+      "claim": "Gender-neutral vaccination is likely to be even more attractive in India where population-based screening programmes have not yet been widely implemented.",
+      "claim_type": "EXPLICIT",
+      "source": "GN vaccination is likely to be even more attractive in India where population-based screening programmes have not yet been widely implemented.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the lack of screening infrastructure.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:44:35.652154Z"
+    },
+    {
+      "id": "11e054ea-ac4e-4477-9c85-71a05a7c107a",
+      "content_id": "4eac3257-92b9-48e4-8b68-fa1a628eef21",
+      "claim_id": "C89",
+      "claim": "Extending vaccination to boys could be easier to put in place than improving coverage in girls from 60% to 90% in some contexts.",
+      "claim_type": "EXPLICIT",
+      "source": "However, extending vaccination to boys could be easier to put in place than improving coverage in girls from 60% to 90% in some contexts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about implementation feasibility.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:44:35.652154Z"
+    },
+    {
+      "id": "62d1c90b-8f6a-417e-91a5-0920d475ec5f",
+      "content_id": "4eac3257-92b9-48e4-8b68-fa1a628eef21",
+      "claim_id": "C90",
+      "claim": "Shifting from a two-dose to a single-dose HPV vaccination schedule could improve the affordability of gender-neutral vaccination.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, shifting from a two-dose to a single-dose HPV vaccination schedule could also improve the affordability of GN vaccination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about cost reduction strategies.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:44:35.652154Z"
+    },
+    {
+      "id": "90e191c3-dc37-4087-8ad5-00abba8a2ef3",
+      "content_id": "4eac3257-92b9-48e4-8b68-fa1a628eef21",
+      "claim_id": "C91",
+      "claim": "More research is needed to investigate the cost-effectiveness and affordability of gender-neutral vaccination in low-resource settings.",
+      "claim_type": "EXPLICIT",
+      "source": "More research is needed to investigate the cost-effectiveness and affordability of GN vaccination in low-resource settings and how resilience should be accounted for in deciding the vaccination strategy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation for future research.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:44:35.652154Z"
+    },
+    {
+      "id": "6d8fb780-d7d1-46df-a1c6-702266aae64f",
+      "content_id": "4eac3257-92b9-48e4-8b68-fa1a628eef21",
+      "claim_id": "C92",
+      "claim": "In high-income countries, most vaccination programmes were initiated with the girls-only strategy, often combined with catch-up in girls/women, and are now increasingly shifting towards gender-neutral vaccination.",
+      "claim_type": "EXPLICIT",
+      "source": "In high-income countries, where affordability was less of an issue, most vaccination programmes were initiated with the GO strategy, often combined with catch-up in girls/women, and are now increasingly shifting towards GN vaccination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about observed trends in high-income countries.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:44:35.652154Z"
+    },
+    {
+      "id": "45d7a3f2-ba67-494f-b6be-d8130a198a97",
+      "content_id": "4eac3257-92b9-48e4-8b68-fa1a628eef21",
+      "claim_id": "C93",
+      "claim": "In resource-limited settings, once routine vaccination in girls has been implemented, countries may need to make a choice between boys' vaccination or female catch-up vaccination.",
+      "claim_type": "EXPLICIT",
+      "source": "In resource-limited settings, once routine vaccination in girls has been implemented, countries may need to make a choice between boys' vaccination or female catch-up vaccination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about decision-making in resource-limited settings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:44:35.652154Z"
+    },
+    {
+      "id": "a12e6292-bbee-4164-a0ab-0f00434f671c",
+      "content_id": "4eac3257-92b9-48e4-8b68-fa1a628eef21",
+      "claim_id": "C94",
+      "claim": "The limited global vaccine supply will likely remain an important factor influencing decision-making on vaccination strategy in the coming years.",
+      "claim_type": "EXPLICIT",
+      "source": "The limited global vaccine supply will likely remain an important factor influencing this decision-making process in the coming years (WHO, 2022b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation supported by a citation to WHO, 2022b.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:44:35.652154Z"
+    },
+    {
+      "id": "0d009e7f-d2b2-45c6-aa11-0ab74f1c10e5",
+      "content_id": "4eac3257-92b9-48e4-8b68-fa1a628eef21",
+      "claim_id": "C95",
+      "claim": "The choice of vaccination strategy at the country level should account for health-economic objectives, the type of health infrastructure already in place, and socio-cultural context.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the choice at the country level should also account for the health-economic objectives, the type of health infrastructure already in place as well as socio-cultural context.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation based on knowledge of implementation considerations.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:44:35.652154Z"
+    },
+    {
+      "id": "e31d2982-11ee-4f4a-8ac2-c66aca4ff95b",
+      "content_id": "4eac3257-92b9-48e4-8b68-fa1a628eef21",
+      "claim_id": "C96",
+      "claim": "Gender-neutral strategy helps to overcome the stigma associated with a vaccine that targets only girls and aims to prevent a sexually transmitted disease.",
+      "claim_type": "EXPLICIT",
+      "source": "In some contexts, important arguments for choosing GN strategy could be the fact that it helps to overcome the stigma associated with a vaccine that targets only girls and aims to prevent a sexually transmitted disease (Cernasev et al., 2023)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Cernasev et al., 2023.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:44:35.652154Z"
+    },
+    {
+      "id": "f550c143-5e90-407b-b83b-b48d34c2a3fa",
+      "content_id": "4eac3257-92b9-48e4-8b68-fa1a628eef21",
+      "claim_id": "C97",
+      "claim": "Gender-neutral vaccination provides direct health benefits in men who have sex with men.",
+      "claim_type": "EXPLICIT",
+      "source": "and the direct health benefits in men who have sex with men",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on knowledge of HPV-related diseases in men.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:44:35.652154Z"
+    },
+    {
+      "id": "823febcb-2ecb-4f3c-bfe8-2b627041be53",
+      "content_id": "4eac3257-92b9-48e4-8b68-fa1a628eef21",
+      "claim_id": "C98",
+      "claim": "Disease prevention programmes have been disrupted by the occurrence of pandemics.",
+      "claim_type": "EXPLICIT",
+      "source": "Over the years, disease prevention programmes have been disrupted by the occurrence of pandemics (Osterholm, 2017; WHO, 2021)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Osterholm, 2017 and WHO, 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:44:35.652154Z"
+    },
+    {
+      "id": "d35ef3d6-3776-4d3b-a808-b2dfd1314c8e",
+      "content_id": "4eac3257-92b9-48e4-8b68-fa1a628eef21",
+      "claim_id": "C99",
+      "claim": "Disease prevention programmes have been disrupted by armed conflicts.",
+      "claim_type": "EXPLICIT",
+      "source": "armed conflicts (Jawad et al., 2021; McGrath, 2022)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Jawad et al., 2021 and McGrath, 2022.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:44:35.652154Z"
+    },
+    {
+      "id": "3c6bdad4-ad56-42e8-a920-5abcc586f6e2",
+      "content_id": "4eac3257-92b9-48e4-8b68-fa1a628eef21",
+      "claim_id": "C100",
+      "claim": "Disease prevention programmes have been disrupted by economic sanctions.",
+      "claim_type": "EXPLICIT",
+      "source": "economic sanctions (Germani et al., 2022)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Germani et al., 2022.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:44:35.652154Z"
+    },
+    {
+      "id": "214aacdf-d2e4-4a08-9ea7-43ae60cbe480",
+      "content_id": "4eac3257-92b9-48e4-8b68-fa1a628eef21",
+      "claim_id": "C101",
+      "claim": "Disease prevention programmes have been disrupted by widespread vaccine hesitancy.",
+      "claim_type": "EXPLICIT",
+      "source": "or widespread vaccine hesitancy (Larson, 2020)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Larson, 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:44:35.652154Z"
+    },
+    {
+      "id": "5c18307f-a3ef-48d0-ad14-76bbfb8c2308",
+      "content_id": "4eac3257-92b9-48e4-8b68-fa1a628eef21",
+      "claim_id": "C102",
+      "claim": "Societal crises that disrupt disease prevention programmes are unpredictable but expected to occur.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, we argue that such societal crises, which are unpredictable but expected to occur, should be anticipated through careful planning of disease prevention programmes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an argument based on historical patterns.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:44:35.652154Z"
+    },
+    {
+      "id": "2ac31bfa-5fb3-4327-97a4-c38b29157542",
+      "content_id": "4eac3257-92b9-48e4-8b68-fa1a628eef21",
+      "claim_id": "C103",
+      "claim": "EpiMetHeos was used to simulate a dynamic sexual contact network, which allows long-term and overlapping partnerships, through which HPV infections were transmitted.",
+      "claim_type": "EXPLICIT",
+      "source": "EpiMetHeos was used to simulate a dynamic sexual contact network, which allows long-term and overlapping partnerships, through which HPV infections were transmitted.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the modeling approach used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:44:35.652154Z"
+    },
+    {
+      "id": "af918cb6-9480-4fba-aaf3-ee5e8c13c5cc",
+      "content_id": "4eac3257-92b9-48e4-8b68-fa1a628eef21",
+      "claim_id": "C104",
+      "claim": "Atlas was used to derive the impact on cervical cancer burden based on the impact of vaccination on high-risk HPV incidence derived from EpiMetHeos.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on the impact of vaccination on high-risk HPV incidence derived from EpiMetHeos, Atlas was then used to derive the impact on cervical cancer burden.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the modeling approach used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:44:35.652154Z"
+    },
+    {
+      "id": "aab598e4-28b7-4381-b15e-692dd1382c73",
+      "content_id": "4eac3257-92b9-48e4-8b68-fa1a628eef21",
+      "claim_id": "C105",
+      "claim": "The models were previously calibrated to sexual behaviour, HPV prevalence, and cervical cancer incidence in India.",
+      "claim_type": "EXPLICIT",
+      "source": "The models were previously calibrated to sexual behaviour, HPV prevalence, and/or (delete as appropriate) cervical cancer incidence in India to assess the impact of single-dose vaccination in India, while accounting for the uncertainty in the duration of vaccine protection (Man et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Man et al., 2022.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:44:35.652154Z"
+    },
+    {
+      "id": "69a3f969-8db0-41da-b165-fca3d75f316e",
+      "content_id": "4eac3257-92b9-48e4-8b68-fa1a628eef21",
+      "claim_id": "C106",
+      "claim": "A Footprinting framework was used to approximate missing data and extrapolate the impact by state in India.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the high-quality data on HPV prevalence and cervical cancer incidence data needed to calibrate the models to each Indian state were not available, we used a Footprinting framework to approximate the missing data and extrapolate the impact by state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the modeling approach used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:44:35.652154Z"
+    },
+    {
+      "id": "3f54676e-39ff-4bf0-a10a-063aeb8c55d4",
+      "content_id": "4eac3257-92b9-48e4-8b68-fa1a628eef21",
+      "claim_id": "C107",
+      "claim": "EpiMetHeos was calibrated to the state of Tamil Nadu to represent the states in the high cancer incidence cluster.",
+      "claim_type": "EXPLICIT",
+      "source": "We then calibrated EpiMetHeos to the state of Tamil Nadu to represent the states in the high cancer incidence cluster",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the modeling approach used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:44:35.652154Z"
+    },
+    {
+      "id": "38ba1337-0d94-4878-b474-6906c6754f09",
+      "content_id": "4eac3257-92b9-48e4-8b68-fa1a628eef21",
+      "claim_id": "C108",
+      "claim": "EpiMetHeos was calibrated to the state of West Bengal to represent the states in the low cancer incidence cluster.",
+      "claim_type": "EXPLICIT",
+      "source": "and the state of West Bengal to represent the states in the low cancer incidence cluster",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the modeling approach used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:44:35.652154Z"
+    },
+    {
+      "id": "4a7c60fe-3507-4f09-9ac8-1a9feaf9a5a2",
+      "content_id": "4eac3257-92b9-48e4-8b68-fa1a628eef21",
+      "claim_id": "C109",
+      "claim": "Marketing authorisation has been awarded to a locally produced quadrivalent HPV vaccine in India based on successful immunobridging between the new vaccine and the existing quadrivalent vaccine (Gardasil, MSD).",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, marketing authorisation has been awarded to a locally produced quadrivalent HPV vaccine in India based on successful immunobridging between the new vaccine and the existing quadrivalent vaccine (Gardasil, MSD) (The Lancet Oncology, 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to The Lancet Oncology, 2022.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:44:35.652154Z"
+    },
+    {
+      "id": "b5d58795-82cc-43cd-a7e0-c8ba003499f3",
+      "content_id": "4eac3257-92b9-48e4-8b68-fa1a628eef21",
+      "claim_id": "C110",
+      "claim": "The model simulated vaccination with a quadrivalent vaccine targeting two high-risk types, HPV16 and HPV18, and two low-risk types, HPV6 and HPV11.",
+      "claim_type": "EXPLICIT",
+      "source": "we simulated vaccination with a quadrivalent vaccine targeting two high-risk types, HPV16 and HPV18 (and two low-risk types, HPV6 and HPV11)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the modeling assumptions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:44:35.652154Z"
+    },
+    {
+      "id": "58f48f41-ef84-43b2-aa1d-4be4b3035224",
+      "content_id": "4eac3257-92b9-48e4-8b68-fa1a628eef21",
+      "claim_id": "C111",
+      "claim": "The model assumptions were based on the efficacy estimates of the IARC India vaccine trial, which considered Gardasil.",
+      "claim_type": "EXPLICIT",
+      "source": "The efficacy estimates of the locally produced HPV vaccine were not available to us; hence, we based our model assumptions on the efficacy estimates of the IARC India vaccine trial, which considered Gardasil (Basu et al., 2021; Joshi et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Basu et al., 2021 and Joshi et al., 2023.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:44:35.652154Z"
+    },
+    {
+      "id": "b6d013e8-44a7-4207-bd04-2845d20d22c9",
+      "content_id": "4eac3257-92b9-48e4-8b68-fa1a628eef21",
+      "claim_id": "C112",
+      "claim": "In the IARC India vaccine trial, no difference was found between the efficacy estimates of the single-dose and two-dose schedules.",
+      "claim_type": "EXPLICIT",
+      "source": "In this trial, no difference was found between the efficacy estimates of the single-dose and two-dose schedules",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on trial results cited.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:44:35.652154Z"
+    },
+    {
+      "id": "0ef333f2-7e0f-4ac6-b166-d515f44e2c32",
+      "content_id": "4eac3257-92b9-48e4-8b68-fa1a628eef21",
+      "claim_id": "C113",
+      "claim": "The efficacy estimates from the IARC India vaccine trial were stable after up to 10 years' follow-up.",
+      "claim_type": "EXPLICIT",
+      "source": "which were moreover stable after up to 10 years' follow-up",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on trial results cited.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:44:35.652154Z"
+    },
+    {
+      "id": "3120a9a1-00c7-4326-bdc1-263ff48f6a27",
+      "content_id": "4eac3257-92b9-48e4-8b68-fa1a628eef21",
+      "claim_id": "C114",
+      "claim": "The model assumed 95% efficacy for HPV16 and HPV18, 9% cross-protection for HPV 31, HPV33, and HPV45, and 0% efficacy for the remaining high-risk HPV types.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, we based the model on pooled efficacy estimates (95% efficacy for HPV16 and HPV18, 9% cross-protection for HPV 31, HPV33, and HPV45, and 0% efficacy for the remaining high-risk HPV types)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the modeling assumptions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:44:35.652154Z"
+    },
+    {
+      "id": "543f772d-7637-4fc1-afa7-261a6c0c0b73",
+      "content_id": "4eac3257-92b9-48e4-8b68-fa1a628eef21",
+      "claim_id": "C115",
+      "claim": "The model assumed no waning of vaccine immunity over time.",
+      "claim_type": "EXPLICIT",
+      "source": "and assumed no waning of vaccine immunity over time",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the modeling assumptions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:44:35.652154Z"
+    },
+    {
+      "id": "a60f86b6-7cda-400b-be4f-20ac11c92066",
+      "content_id": "4eac3257-92b9-48e4-8b68-fa1a628eef21",
+      "claim_id": "C116",
+      "claim": "The modelled efficacy could represent vaccination under either a single-dose or two-dose schedule.",
+      "claim_type": "EXPLICIT",
+      "source": "In doing so, the modelled efficacy could represent vaccination under either a single-dose or two-dose schedule.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the modeling assumptions.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:44:35.652154Z"
+    },
+    {
+      "id": "c9ef5f25-2b43-4954-a4d9-87d36ae283bf",
+      "content_id": "4eac3257-92b9-48e4-8b68-fa1a628eef21",
+      "claim_id": "C117",
+      "claim": "Vaccine protection was modelled through an all-or-nothing working mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "Vaccine protection was modelled through an all-or-nothing working mechanism, that is, if the efficacy is X%, then X% of the vaccinated individuals in the model are fully protected and 100-X% fully not protected.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the modeling assumptions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:44:35.652154Z"
+    },
+    {
+      "id": "0736e78e-426e-4abc-8e5d-3e2e0462998d",
+      "content_id": "4eac3257-92b9-48e4-8b68-fa1a628eef21",
+      "claim_id": "C118",
+      "claim": "Disruption was simulated to occur 10 years after the start of vaccination.",
+      "claim_type": "EXPLICIT",
+      "source": "To assess the resilience of different vaccination strategies on cervical cancer prevention, we simulated the above scenarios first without disruption of the HPV vaccination programme, and then with disruption occurring 10 years after the start of vaccination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the modeling scenarios.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:44:35.652154Z"
+    },
+    {
+      "id": "d3f9d65b-e336-4aa3-b536-ba3bef4d0e2b",
+      "content_id": "4eac3257-92b9-48e4-8b68-fa1a628eef21",
+      "claim_id": "C119",
+      "claim": "The base case simulated a disruption period of 5 years with total interruption of HPV vaccine delivery (0% vaccination coverage in both boys and girls).",
+      "claim_type": "EXPLICIT",
+      "source": "As the base case, we simulated a disruption period of 5 years with total interruption of HPV vaccine delivery, that is, 0% vaccination coverage in both boys and girls.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the modeling scenarios.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:44:35.652154Z"
+    },
+    {
+      "id": "6040e77b-6f2d-4eb5-9945-6f3ad727e659",
+      "content_id": "4eac3257-92b9-48e4-8b68-fa1a628eef21",
+      "claim_id": "C120",
+      "claim": "Sensitivity analyses considered less severe disruption with 20% and 40% vaccination coverage in girls (but still 0% in boys).",
+      "claim_type": "EXPLICIT",
+      "source": "As sensitivity analyses, we considered less severe disruption with still 20% and 40% vaccination coverage in girls (but still 0% in boys)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the modeling scenarios.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:44:35.652154Z"
+    },
+    {
+      "id": "73089963-6f10-462f-a21f-709752a51507",
+      "content_id": "4eac3257-92b9-48e4-8b68-fa1a628eef21",
+      "claim_id": "C121",
+      "claim": "Sensitivity analyses considered shorter or longer durations of disruption of 1, 2, and 10 years, and no restart of vaccination.",
+      "claim_type": "EXPLICIT",
+      "source": "as well as shorter or longer durations of disruption of 1, 2, and 10 years, and no restart of vaccination",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the modeling scenarios.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:44:35.652154Z"
+    },
+    {
+      "id": "357071eb-3071-44bd-9354-cd0671e4763a",
+      "content_id": "4eac3257-92b9-48e4-8b68-fa1a628eef21",
+      "claim_id": "C122",
+      "claim": "The mean number of cases prevented across the first 10 vaccinated birth cohorts was used to evaluate the impact prior to the disruption.",
+      "claim_type": "EXPLICIT",
+      "source": "The mean number of cases prevented across the first 10 vaccinated birth cohorts was used to evaluate the impact prior to the disruption.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the outcome measures used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:44:35.652154Z"
+    },
+    {
+      "id": "240a0d1a-3c32-4283-9657-fd3cc4f2de48",
+      "content_id": "4eac3257-92b9-48e4-8b68-fa1a628eef21",
+      "claim_id": "C123",
+      "claim": "Resilience was defined as the mean number of cases still prevented, as a result of previous HPV vaccination, across the birth cohorts with disruption.",
+      "claim_type": "EXPLICIT",
+      "source": "As a measure of resilience, we used the mean number of cases still prevented, as a result of previous HPV vaccination, across the birth cohorts with disruption.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the outcome measures used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:44:35.652154Z"
+    },
+    {
+      "id": "44fc267c-bdb9-453e-b194-80178d24922e",
+      "content_id": "4eac3257-92b9-48e4-8b68-fa1a628eef21",
+      "claim_id": "C124",
+      "claim": "The Segi world standard population was used for the standardisation of age-standardised incidence rates.",
+      "claim_type": "EXPLICIT",
+      "source": "The Segi world standard population was used for the standardisation (Segi, 1960).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Segi, 1960.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:44:35.652154Z"
+    },
+    {
+      "id": "a3e0f5cf-8e7f-4608-b8e9-3acb7eb3b707",
+      "content_id": "4eac3257-92b9-48e4-8b68-fa1a628eef21",
+      "claim_id": "C125",
+      "claim": "Model outcomes were reported as the mean and the 10th and 90th percentiles (uncertainty interval) of the simulations using the 100 parameter sets best fitting the sexual behaviour and HPV prevalence data obtained through calibration.",
+      "claim_type": "EXPLICIT",
+      "source": "Model outcomes were reported as the mean and the 10th and 90th percentiles, that is, uncertainty interval (UI), of the simulations using the 100 parameter sets best fitting the sexual behaviour and HPV prevalence data obtained through calibration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the reporting of model results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:44:35.652154Z"
+    },
+    {
+      "id": "5d3f4a39-0cdf-4030-bad5-8e49386a6cb0",
+      "content_id": "4eac3257-92b9-48e4-8b68-fa1a628eef21",
+      "claim_id": "C126",
+      "claim": "The study did not consider the impact of screening due to the extremely low coverage of the existing screening programme in India.",
+      "claim_type": "EXPLICIT",
+      "source": "Given the extremely low coverage of the existing screening programme in India, we have not considered the impact of screening in our study (Bruni et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Bruni et al., 2022.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:44:35.652154Z"
+    },
+    {
+      "id": "fdd9cbc2-68eb-4392-8c9c-9f98cb37a086",
+      "content_id": "4eac3257-92b9-48e4-8b68-fa1a628eef21",
+      "claim_id": "C127",
+      "claim": "This study adheres to HPV-FRAME, a quality framework for modelled evaluations of HPV-related cancer control.",
+      "claim_type": "EXPLICIT",
+      "source": "This study adheres to HPV-FRAME, a quality framework for modelled evaluations of HPV-related cancer control (Reporting standard 1) (Canfell et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Canfell et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:44:35.652154Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "46a65f20-a769-43e8-a416-f916e234b2a9",
+      "content_id": "4eac3257-92b9-48e4-8b68-fa1a628eef21",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The COVID-19 pandemic and other societal crises have disrupted HPV vaccination programmes worldwide through multiple mechanisms including interrupted vaccine delivery, delayed programme launches, limited vaccine production, and various other factors such as political changes, financial constraints, and vaccine hesitancy. These disruptions multiply public health crises and waste resources.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C12-C17, and C98-C102 collectively establish a well-documented pattern of vaccination programme disruptions through multiple cited sources (WHO, Muhoza et al., Lancet Oncology, etc.). The claims are appropriately supported by citations to peer-reviewed literature and official reports, providing strong evidence for the context and motivation of the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:44:35.652154Z"
+    },
+    {
+      "id": "a4ec0e32-ba93-4190-b05e-6c28495274bc",
+      "content_id": "4eac3257-92b9-48e4-8b68-fa1a628eef21",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Under a 5-year vaccination disruption with 0% coverage, switching from girls-only (GO) to gender-neutral (GN) vaccination increases resilience by 2.8-fold (from 107 to 302 cases prevented per 100,000 girls) at 60% coverage and by 2.2-fold (from 209 to 464 cases) at 90% coverage. This gain in resilience from switching to GN vaccination exceeds the gain from increasing GO coverage from 60% to 90%.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C3, C27-C30, C35, and C37 present consistent model-based estimates with uncertainty intervals from the EpiMetHeos/Atlas modeling framework. The numerical results are internally consistent and supported by Figure 1. The comparison between strategies is quantitatively justified, though the results depend on model assumptions about sexual behavior, transmission dynamics, and vaccine efficacy.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:44:35.652154Z"
+    },
+    {
+      "id": "6980b8ec-f93e-4566-9c70-31ef27ab71bd",
+      "content_id": "4eac3257-92b9-48e4-8b68-fa1a628eef21",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Sensitivity analyses demonstrate that gender-neutral vaccination consistently provides higher resilience than girls-only vaccination across various disruption scenarios, including different coverage levels during disruption (0%, 20%, 40%) and different durations (1, 2, 5, 10 years, and no restart). The resilience gain remains above 2.7-fold at 60% coverage and above 2.0-fold at 90% coverage across all scenarios.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C44 are supported by Table 1 and Figure 2, which present comprehensive sensitivity analyses. The consistency of results across multiple scenarios strengthens the robustness of the main findings. However, the sensitivity analyses do not explore all potential confounders (e.g., changes in sexual behavior during disruption, as acknowledged in C79).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:44:35.652154Z"
+    },
+    {
+      "id": "cf9258d8-4c94-4f22-bcac-d2484940706e",
+      "content_id": "4eac3257-92b9-48e4-8b68-fa1a628eef21",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "There is a trade-off between dose-efficiency and resilience when comparing vaccination strategies. Girls-only vaccination favors dose-efficiency while gender-neutral vaccination favors resilience. Switching to gender-neutral vaccination approximately doubles the required vaccine doses and increases financial burden.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C34 are supported by model results shown in Figure 1, and claims C36, C85-C86 follow logically from vaccinating both sexes. The trade-off is clearly demonstrated through the comparison of impact in undisrupted cohorts versus resilience in disrupted cohorts. This is a straightforward mathematical consequence of the vaccination strategy.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:44:35.652154Z"
+    },
+    {
+      "id": "715655ed-d6d9-4db3-a7ec-fd09d1dbcbfa",
+      "content_id": "4eac3257-92b9-48e4-8b68-fa1a628eef21",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Gender-neutral vaccination enables India to reach the WHO cervical cancer elimination threshold (<4 cases per 100,000 woman-years) at 60% coverage (reducing incidence to 2.8 cases), while girls-only vaccination at 60% coverage fails to reach elimination (4.7 cases). Girls-only vaccination requires 90% coverage to achieve elimination (2.4 cases), and gender-neutral vaccination at 90% coverage provides only marginal additional benefit (2.3 cases).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C6 and C45-C49 present model-based long-term projections with uncertainty intervals, supported by Figure 3. The results are internally consistent and demonstrate clear thresholds for elimination. However, these projections assume no changes in screening coverage (C126) and depend on model calibration to Indian data, which may limit generalizability (C71, C76).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:44:35.652154Z"
+    },
+    {
+      "id": "f3a6ad0a-2eaf-4ea4-b450-3d54e66165b0",
+      "content_id": "4eac3257-92b9-48e4-8b68-fa1a628eef21",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Without vaccination in boys, cervical cancer elimination in India requires a critical girls-only coverage of 70% (UI: 65-73%). With gender-neutral vaccination, elimination can be achieved with 50-70% coverage in girls combined with moderate coverage (30%) in boys, even if boys' coverage is lower than girls'.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C52, C64, and C66 are supported by model results shown in Figure 4. The critical coverage thresholds are quantitatively derived from the model and fall between observed global coverage (53%, C65) and WHO recommendations (90%, C9). The flexibility in coverage combinations is a key finding, though it depends on model assumptions about herd immunity and sexual mixing patterns.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:44:35.652154Z"
+    },
+    {
+      "id": "3b000741-17bb-4aee-889b-7cc2ab972993",
+      "content_id": "4eac3257-92b9-48e4-8b68-fa1a628eef21",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Vaccination disruption does not prevent eventual achievement of the elimination threshold if vaccination resumes, but it delays elimination. Under girls-only 90% coverage, a 5-year disruption delays elimination from 57 to 65 years. Switching to gender-neutral 90% coverage enables elimination in 58 years even with disruption.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C56 are supported by model results in Appendix 2\u2014figure 4. The quantitative estimates of delay are specific and demonstrate the benefit of gender-neutral vaccination in accelerating progress toward elimination despite disruption. These results complement the resilience findings by showing long-term population-level impacts.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:44:35.652154Z"
+    },
+    {
+      "id": "cdcdb5c2-f412-4b2b-b6a8-785a4ca36770",
+      "content_id": "4eac3257-92b9-48e4-8b68-fa1a628eef21",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "In Indian states with high cervical cancer incidence, there is slightly lower resilience under girls-only vaccination and slightly greater relative gain in resilience when switching to gender-neutral vaccination (3-fold) compared to states with low incidence (2.7-fold). This consistency across states supports the wide applicability of the principle.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C39 and C78 are supported by state-stratified model results in Supplementary file 3 and Appendix 2\u2014figures 1-3. The consistency of findings across different baseline incidence levels strengthens the generalizability of the main results within India, though extrapolation to other populations remains limited (C71, C76).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:44:35.652154Z"
+    },
+    {
+      "id": "bcaa3493-f8ad-4600-9a63-e5ba61335a01",
+      "content_id": "4eac3257-92b9-48e4-8b68-fa1a628eef21",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The age difference between sexual partners (averaging 7 years in India) is an important determinant of resilience gain from gender-neutral vaccination. Boys vaccinated before disruption indirectly protect younger girls who missed vaccination during disruption. Vaccinating boys directly reduces infection in men more effectively than relying on indirect protection from vaccinating girls.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C63 provide a mechanistic explanation for the resilience findings based on sexual mixing patterns and transmission dynamics. The connection between the 7-year age difference (C61, supported by USAID 2017) and the number of protected birth cohorts (C62) is plausible and supported by model results in Figure 2. This represents sound epidemiological reasoning about herd immunity mechanisms.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:44:35.652154Z"
+    },
+    {
+      "id": "7c80d4fe-73c6-41e2-97d9-03a36b7d92f6",
+      "content_id": "4eac3257-92b9-48e4-8b68-fa1a628eef21",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The study used the EpiMetHeos agent-based transmission model coupled with the Atlas cervical cancer progression model, previously calibrated to Indian data. The model simulated a quadrivalent vaccine with 95% efficacy for HPV16/18, 9% cross-protection for HPV31/33/45, no waning immunity, and an all-or-nothing protection mechanism, based on IARC India trial data showing equivalent single-dose and two-dose efficacy.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C103-C117 describe the modeling methodology with appropriate citations to previous calibration work (Man et al., 2022) and vaccine trial data (Basu et al., 2021; Joshi et al., 2023). The model assumptions are clearly stated and justified. However, the assumption of no waning immunity (C115) over 100-year projections is a significant simplification that may affect long-term estimates, though it is based on 10-year trial data (C113).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:44:35.652154Z"
+    },
+    {
+      "id": "4a8e6826-fb82-493a-91a9-ec20e030b22b",
+      "content_id": "4eac3257-92b9-48e4-8b68-fa1a628eef21",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The study simulated disruption occurring 10 years after vaccination start, with a base case of 5-year disruption at 0% coverage. Sensitivity analyses included disruptions of 1, 2, and 10 years, coverage during disruption of 20% and 40% in girls, and no restart scenarios. Resilience was defined as mean cases prevented across disrupted birth cohorts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C118-C123 clearly describe the simulation scenarios and outcome definitions. The range of scenarios is comprehensive and addresses key uncertainties about disruption severity and duration. The definition of resilience (C123) is appropriate for the research question, though alternative metrics could also be considered.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:44:35.652154Z"
+    },
+    {
+      "id": "6a6e951b-80ec-46f3-a121-8c57f95be6df",
+      "content_id": "4eac3257-92b9-48e4-8b68-fa1a628eef21",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The critical coverage levels found for India are not necessarily generalizable to other populations because they depend on baseline cervical cancer incidence and herd effect magnitude, which are governed by local sexual behavior. The critical coverage for elimination is context-specific. However, the principle of improving resilience through gender-neutral vaccination is expected to be widely applicable.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71-C77 appropriately acknowledge limitations regarding generalizability while asserting that the underlying principle is broadly applicable. This is a balanced assessment supported by citations to relevant literature (Malag\u00f3n et al., 2018; Baussano et al., 2018; Lehtinen et al., 2022). The distinction between specific quantitative results and general principles is scientifically sound.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:44:35.652154Z"
+    },
+    {
+      "id": "36b02671-8254-48ae-9a13-a02990248108",
+      "content_id": "4eac3257-92b9-48e4-8b68-fa1a628eef21",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Study limitations include not exploring changes in sexual behavior during disruption, not considering different vaccine types (though quadrivalent is likely for India due to cost), and not modeling changes in screening coverage. However, extensive sensitivity analyses on disruption duration and coverage were conducted.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C79-C84 transparently acknowledge study limitations. The authors appropriately note what was not modeled (C79, C81, C84) while explaining what sensitivity analyses were performed (C80). The speculation about vaccine choice (C82) and expected results with alternative vaccines (C83) is reasonable but clearly identified as such.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:44:35.652154Z"
+    },
+    {
+      "id": "c365ebf8-6ebf-4f91-a722-4219bee489f2",
+      "content_id": "4eac3257-92b9-48e4-8b68-fa1a628eef21",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Gender-neutral vaccination is economically attractive in high-income settings with girls-only uptake below 80% and may be even more attractive in India where screening is limited. Extending vaccination to boys could be easier than increasing girls' coverage from 60% to 90% in some contexts. Single-dose schedules could improve affordability. More research is needed on cost-effectiveness in low-resource settings.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C87 is supported by citation to Qendri et al., 2020, but claims C88-C90 are speculative (as acknowledged in the evidence). Claim C91 appropriately calls for additional research. The economic arguments are plausible but not directly demonstrated in this study, which focused on epidemiological modeling rather than health economics. The speculation is reasonable but requires empirical validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:44:35.652154Z"
+    },
+    {
+      "id": "49ec25d4-00bb-4865-a475-6c3652f5f27f",
+      "content_id": "4eac3257-92b9-48e4-8b68-fa1a628eef21",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The WHO Global Strategy for cervical cancer elimination, adopted in August 2020, targets age-standardized incidence below 4 cases per 100,000 woman-years through 90% HPV vaccination coverage in girls by age 15, 70% screening coverage at ages 35 and 45, and 90% treatment of pre-cancer and invasive cancer.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C11 accurately report WHO policy with appropriate citations (WHO 2020a, 2020b). These provide essential context for the study's evaluation of elimination scenarios. The claims are factual statements about public health policy rather than research findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:44:35.652154Z"
+    },
+    {
+      "id": "85165e62-2a49-4ce8-a317-80170d68a344",
+      "content_id": "4eac3257-92b9-48e4-8b68-fa1a628eef21",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "India has the largest cervical cancer burden globally, with screening coverage below 3% in women aged 30-49 years. HPV vaccination has been introduced in two states with high coverage. Recent marketing authorization of an indigenous vaccine has significantly improved prospects for national programme introduction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C23 provide important context about India's cervical cancer situation, supported by appropriate citations (Bonjour et al., 2021; Sankaranarayanan et al., 2019; Lancet Oncology, 2022). Claim C23 involves some inference about improved prospects, but this is reasonable given the authorization of a locally-produced vaccine.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:44:35.652154Z"
+    },
+    {
+      "id": "6ccf0dff-d987-44c4-a948-030ffb23d4a7",
+      "content_id": "4eac3257-92b9-48e4-8b68-fa1a628eef21",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Life-time cervical cancer cases prevented in undisrupted cohorts ranged from 562 to 807 per 100,000 girls across the four highlighted scenarios. Gender-neutral 90% coverage achieved the highest impact (807 cases) and highest resilience (464 cases) in disrupted cohorts, while girls-only 60% coverage had the lowest resilience (107 cases).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C26, C31-C32 present model results with uncertainty intervals, supported by Figure 1. The ranking of strategies by impact and resilience is clear and internally consistent. These results directly support the main conclusions about the benefits of gender-neutral vaccination.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:44:35.652154Z"
+    },
+    {
+      "id": "ada66bd9-2c6c-48a6-9131-f27e1dff7d3f",
+      "content_id": "4eac3257-92b9-48e4-8b68-fa1a628eef21",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "When girls-only coverage exceeds 70%, gender-neutral vaccination enables more ambitious control targets and might eventually make screening redundant in vaccinated cohorts. Elimination is challenging in high-incidence Indian states, where gender-neutral vaccination would be particularly relevant.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C67 is an inference from model results, C68 is speculation (acknowledged as such) supported by citation to Tota et al., 2020, and C69-C70 are supported by citation to Man et al., 2022. The claim about screening redundancy (C68) is particularly speculative and would require additional evidence about screening program design and implementation. The relevance for high-incidence states (C70) is a reasonable inference but not directly demonstrated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:44:35.652154Z"
+    },
+    {
+      "id": "84ee012c-ba4f-44cb-8a6c-08b108b295eb",
+      "content_id": "4eac3257-92b9-48e4-8b68-fa1a628eef21",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "High-income countries are increasingly shifting from girls-only to gender-neutral vaccination. In resource-limited settings, countries may need to choose between boys' vaccination and female catch-up. Limited global vaccine supply will influence decisions. Strategy choice should account for health-economic objectives, infrastructure, and socio-cultural context, including stigma reduction and benefits for men who have sex with men.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C92-C97 provide policy context and implementation considerations. C92 is a factual observation about trends, C93-C94 are reasonable speculation about resource-limited settings supported by WHO citation, C95 is sound policy advice, and C96-C97 identify legitimate social and health considerations supported by citation (Cernasev et al., 2023). These claims appropriately frame the policy implications of the research.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:44:35.652154Z"
+    },
+    {
+      "id": "88234bc4-1fbb-4d09-8622-3db4df01cb31",
+      "content_id": "4eac3257-92b9-48e4-8b68-fa1a628eef21",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "A previous study in a high-income country showed that adding boys to girls-only vaccination could increase programme resilience.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C18 is supported by citation to Elfstr\u00f6m et al., 2016. This provides important precedent for the current study's focus on resilience, though the previous work was in a different setting (high-income country).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:44:35.652154Z"
+    },
+    {
+      "id": "6750a692-9573-445c-b661-974d9c3c8a85",
+      "content_id": "4eac3257-92b9-48e4-8b68-fa1a628eef21",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "The study used vaccine efficacy based on a locally-produced quadrivalent vaccine authorized in India through immunobridging with Gardasil. Results were reported as mean and 10th-90th percentiles from 100 best-fitting parameter sets. Screening was not modeled due to extremely low coverage in India. The study adheres to HPV-FRAME quality standards.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C109, C124-C127 describe methodological details with appropriate citations. The decision not to model screening (C126) is justified by the low coverage in India (supported by Bruni et al., 2022). Adherence to HPV-FRAME standards (C127) indicates methodological rigor. These are appropriate methodological choices given the Indian context.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:44:35.652154Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "d0bea8f4-a519-4561-b75e-3f923705a0d0",
+      "result_id": "46a65f20-a769-43e8-a416-f916e234b2a9"
+    },
+    {
+      "claim_id": "dbd7a523-1b58-41fe-8c24-1b6d62853188",
+      "result_id": "46a65f20-a769-43e8-a416-f916e234b2a9"
+    },
+    {
+      "claim_id": "ae9d77a0-6574-4029-a184-e1fec19a78ff",
+      "result_id": "46a65f20-a769-43e8-a416-f916e234b2a9"
+    },
+    {
+      "claim_id": "66c211f3-52a7-4fd1-b433-8dfa1f6dafe2",
+      "result_id": "46a65f20-a769-43e8-a416-f916e234b2a9"
+    },
+    {
+      "claim_id": "d600fc41-8cca-4889-899d-392893e7cfef",
+      "result_id": "46a65f20-a769-43e8-a416-f916e234b2a9"
+    },
+    {
+      "claim_id": "ff331a96-f6c6-4461-9b91-0a22ceabdfcc",
+      "result_id": "46a65f20-a769-43e8-a416-f916e234b2a9"
+    },
+    {
+      "claim_id": "27f237f2-c491-4ce3-9585-4286e3bb6428",
+      "result_id": "46a65f20-a769-43e8-a416-f916e234b2a9"
+    },
+    {
+      "claim_id": "823febcb-2ecb-4f3c-bfe8-2b627041be53",
+      "result_id": "46a65f20-a769-43e8-a416-f916e234b2a9"
+    },
+    {
+      "claim_id": "d35ef3d6-3776-4d3b-a808-b2dfd1314c8e",
+      "result_id": "46a65f20-a769-43e8-a416-f916e234b2a9"
+    },
+    {
+      "claim_id": "3c6bdad4-ad56-42e8-a920-5abcc586f6e2",
+      "result_id": "46a65f20-a769-43e8-a416-f916e234b2a9"
+    },
+    {
+      "claim_id": "214aacdf-d2e4-4a08-9ea7-43ae60cbe480",
+      "result_id": "46a65f20-a769-43e8-a416-f916e234b2a9"
+    },
+    {
+      "claim_id": "5c18307f-a3ef-48d0-ad14-76bbfb8c2308",
+      "result_id": "46a65f20-a769-43e8-a416-f916e234b2a9"
+    },
+    {
+      "claim_id": "4ca13d5e-1d82-42f7-950c-3490a4d049d9",
+      "result_id": "a4ec0e32-ba93-4190-b05e-6c28495274bc"
+    },
+    {
+      "claim_id": "2733d1a8-7f8a-4853-82f4-9c29779457ce",
+      "result_id": "a4ec0e32-ba93-4190-b05e-6c28495274bc"
+    },
+    {
+      "claim_id": "fc6b8233-8974-43e9-9d87-2850836fc19e",
+      "result_id": "a4ec0e32-ba93-4190-b05e-6c28495274bc"
+    },
+    {
+      "claim_id": "756e32f8-ddd0-4ea6-8b30-6f35aa823389",
+      "result_id": "a4ec0e32-ba93-4190-b05e-6c28495274bc"
+    },
+    {
+      "claim_id": "4cdffc83-7249-4a67-9813-0b1e00f5b644",
+      "result_id": "a4ec0e32-ba93-4190-b05e-6c28495274bc"
+    },
+    {
+      "claim_id": "ddae16fd-c3d1-4da0-8f44-b5beee393b1f",
+      "result_id": "a4ec0e32-ba93-4190-b05e-6c28495274bc"
+    },
+    {
+      "claim_id": "a4f2bc58-e23d-49fd-99d6-a83dbdfbd708",
+      "result_id": "a4ec0e32-ba93-4190-b05e-6c28495274bc"
+    },
+    {
+      "claim_id": "c2d78420-3aa1-49c4-a482-10970d6e251d",
+      "result_id": "a4ec0e32-ba93-4190-b05e-6c28495274bc"
+    },
+    {
+      "claim_id": "1313f18c-219f-47bb-94d1-7cc45547ed4e",
+      "result_id": "6980b8ec-f93e-4566-9c70-31ef27ab71bd"
+    },
+    {
+      "claim_id": "c4930197-b5d5-4cef-add0-dfd68f737f53",
+      "result_id": "6980b8ec-f93e-4566-9c70-31ef27ab71bd"
+    },
+    {
+      "claim_id": "a2b2bc68-d959-4439-80e7-1cb60a6b5bfa",
+      "result_id": "6980b8ec-f93e-4566-9c70-31ef27ab71bd"
+    },
+    {
+      "claim_id": "71284adc-9587-44fb-8564-ab593e5ba54e",
+      "result_id": "6980b8ec-f93e-4566-9c70-31ef27ab71bd"
+    },
+    {
+      "claim_id": "f07ddb52-5bc0-42f1-97c0-2166bf8432c1",
+      "result_id": "6980b8ec-f93e-4566-9c70-31ef27ab71bd"
+    },
+    {
+      "claim_id": "386b0801-2068-4129-8474-a8b50f0e4a69",
+      "result_id": "cf9258d8-4c94-4f22-bcac-d2484940706e"
+    },
+    {
+      "claim_id": "3c69f998-086c-4e0e-9b81-021d14eb7dd2",
+      "result_id": "cf9258d8-4c94-4f22-bcac-d2484940706e"
+    },
+    {
+      "claim_id": "54718a8e-52bc-404c-8bb0-c1effbbc1553",
+      "result_id": "cf9258d8-4c94-4f22-bcac-d2484940706e"
+    },
+    {
+      "claim_id": "49cd1169-b247-4c27-a004-aaae4d18c05b",
+      "result_id": "cf9258d8-4c94-4f22-bcac-d2484940706e"
+    },
+    {
+      "claim_id": "5da5037e-38c2-4301-ad2a-36963cd02c3a",
+      "result_id": "cf9258d8-4c94-4f22-bcac-d2484940706e"
+    },
+    {
+      "claim_id": "bbf6eecd-25b6-4461-af1a-63e5d6afe568",
+      "result_id": "715655ed-d6d9-4db3-a7ec-fd09d1dbcbfa"
+    },
+    {
+      "claim_id": "30955d67-041b-4a4e-bd43-c7eee5b127b7",
+      "result_id": "715655ed-d6d9-4db3-a7ec-fd09d1dbcbfa"
+    },
+    {
+      "claim_id": "b4e1c5da-4126-4212-85ba-f1dfe711a220",
+      "result_id": "715655ed-d6d9-4db3-a7ec-fd09d1dbcbfa"
+    },
+    {
+      "claim_id": "c9b218a6-6540-437b-96dd-79a427d7d915",
+      "result_id": "715655ed-d6d9-4db3-a7ec-fd09d1dbcbfa"
+    },
+    {
+      "claim_id": "72203011-8223-4fd6-8fa7-1908bbb328ea",
+      "result_id": "715655ed-d6d9-4db3-a7ec-fd09d1dbcbfa"
+    },
+    {
+      "claim_id": "3869797f-cff0-43c7-aec3-31f60aa657a1",
+      "result_id": "715655ed-d6d9-4db3-a7ec-fd09d1dbcbfa"
+    },
+    {
+      "claim_id": "649b7779-5d68-4fea-89d0-e3c9a59dc334",
+      "result_id": "715655ed-d6d9-4db3-a7ec-fd09d1dbcbfa"
+    },
+    {
+      "claim_id": "6cfd45ee-4665-48c2-81e9-96ee475cf3ca",
+      "result_id": "715655ed-d6d9-4db3-a7ec-fd09d1dbcbfa"
+    },
+    {
+      "claim_id": "af08c067-10df-42ad-979d-eefd34c93cbf",
+      "result_id": "f3a6ad0a-2eaf-4ea4-b450-3d54e66165b0"
+    },
+    {
+      "claim_id": "4fb48059-c6aa-4fee-8b78-22785e4235e5",
+      "result_id": "f3a6ad0a-2eaf-4ea4-b450-3d54e66165b0"
+    },
+    {
+      "claim_id": "627a86a0-4dce-4fa7-9d26-e55dc4f3cdc1",
+      "result_id": "f3a6ad0a-2eaf-4ea4-b450-3d54e66165b0"
+    },
+    {
+      "claim_id": "6b63120a-7499-4fe8-b946-5ae241766bc8",
+      "result_id": "f3a6ad0a-2eaf-4ea4-b450-3d54e66165b0"
+    },
+    {
+      "claim_id": "b7de231a-d55e-4f21-90b3-ea0e5d973638",
+      "result_id": "f3a6ad0a-2eaf-4ea4-b450-3d54e66165b0"
+    },
+    {
+      "claim_id": "deed986c-9cd3-4c1a-8f97-6d27494795a7",
+      "result_id": "3b000741-17bb-4aee-889b-7cc2ab972993"
+    },
+    {
+      "claim_id": "acb1648b-19e5-47fc-b98d-66d74a8b3452",
+      "result_id": "3b000741-17bb-4aee-889b-7cc2ab972993"
+    },
+    {
+      "claim_id": "cbea0ac5-f12b-4a71-990c-614aac5d6e9d",
+      "result_id": "3b000741-17bb-4aee-889b-7cc2ab972993"
+    },
+    {
+      "claim_id": "9ad75e3d-0b14-41d9-836b-5080ed10c83c",
+      "result_id": "3b000741-17bb-4aee-889b-7cc2ab972993"
+    },
+    {
+      "claim_id": "0e86a76b-a0d1-4385-8c84-894cfc8d3e6e",
+      "result_id": "cdcdb5c2-f412-4b2b-b6a8-785a4ca36770"
+    },
+    {
+      "claim_id": "3ae7aa28-5f18-42a5-9dd4-b902a95fb1a8",
+      "result_id": "cdcdb5c2-f412-4b2b-b6a8-785a4ca36770"
+    },
+    {
+      "claim_id": "4665a9bd-985e-48ed-8010-178fc73c7fef",
+      "result_id": "cdcdb5c2-f412-4b2b-b6a8-785a4ca36770"
+    },
+    {
+      "claim_id": "c9ca7c02-3501-43cd-b574-83d8bfcb2c0d",
+      "result_id": "bcaa3493-f8ad-4600-9a63-e5ba61335a01"
+    },
+    {
+      "claim_id": "480d886e-d661-438f-9db4-5ea53e6c0804",
+      "result_id": "bcaa3493-f8ad-4600-9a63-e5ba61335a01"
+    },
+    {
+      "claim_id": "65614fed-8626-46d5-b73d-cc5843a5cc13",
+      "result_id": "bcaa3493-f8ad-4600-9a63-e5ba61335a01"
+    },
+    {
+      "claim_id": "4aadf1f2-d228-4cb4-86af-0af45680525b",
+      "result_id": "bcaa3493-f8ad-4600-9a63-e5ba61335a01"
+    },
+    {
+      "claim_id": "3d2effed-3376-4652-8fb4-e8a6311c5008",
+      "result_id": "bcaa3493-f8ad-4600-9a63-e5ba61335a01"
+    },
+    {
+      "claim_id": "4741cdef-1e1c-4c03-9f9d-c856b4b31347",
+      "result_id": "bcaa3493-f8ad-4600-9a63-e5ba61335a01"
+    },
+    {
+      "claim_id": "f56d2e5a-1305-4d46-884c-8e0531fd175a",
+      "result_id": "bcaa3493-f8ad-4600-9a63-e5ba61335a01"
+    },
+    {
+      "claim_id": "2ac31bfa-5fb3-4327-97a4-c38b29157542",
+      "result_id": "7c80d4fe-73c6-41e2-97d9-03a36b7d92f6"
+    },
+    {
+      "claim_id": "af918cb6-9480-4fba-aaf3-ee5e8c13c5cc",
+      "result_id": "7c80d4fe-73c6-41e2-97d9-03a36b7d92f6"
+    },
+    {
+      "claim_id": "aab598e4-28b7-4381-b15e-692dd1382c73",
+      "result_id": "7c80d4fe-73c6-41e2-97d9-03a36b7d92f6"
+    },
+    {
+      "claim_id": "69a3f969-8db0-41da-b165-fca3d75f316e",
+      "result_id": "7c80d4fe-73c6-41e2-97d9-03a36b7d92f6"
+    },
+    {
+      "claim_id": "3f54676e-39ff-4bf0-a10a-063aeb8c55d4",
+      "result_id": "7c80d4fe-73c6-41e2-97d9-03a36b7d92f6"
+    },
+    {
+      "claim_id": "38ba1337-0d94-4878-b474-6906c6754f09",
+      "result_id": "7c80d4fe-73c6-41e2-97d9-03a36b7d92f6"
+    },
+    {
+      "claim_id": "b5d58795-82cc-43cd-a7e0-c8ba003499f3",
+      "result_id": "7c80d4fe-73c6-41e2-97d9-03a36b7d92f6"
+    },
+    {
+      "claim_id": "58f48f41-ef84-43b2-aa1d-4be4b3035224",
+      "result_id": "7c80d4fe-73c6-41e2-97d9-03a36b7d92f6"
+    },
+    {
+      "claim_id": "b6d013e8-44a7-4207-bd04-2845d20d22c9",
+      "result_id": "7c80d4fe-73c6-41e2-97d9-03a36b7d92f6"
+    },
+    {
+      "claim_id": "0ef333f2-7e0f-4ac6-b166-d515f44e2c32",
+      "result_id": "7c80d4fe-73c6-41e2-97d9-03a36b7d92f6"
+    },
+    {
+      "claim_id": "3120a9a1-00c7-4326-bdc1-263ff48f6a27",
+      "result_id": "7c80d4fe-73c6-41e2-97d9-03a36b7d92f6"
+    },
+    {
+      "claim_id": "543f772d-7637-4fc1-afa7-261a6c0c0b73",
+      "result_id": "7c80d4fe-73c6-41e2-97d9-03a36b7d92f6"
+    },
+    {
+      "claim_id": "a60f86b6-7cda-400b-be4f-20ac11c92066",
+      "result_id": "7c80d4fe-73c6-41e2-97d9-03a36b7d92f6"
+    },
+    {
+      "claim_id": "c9ef5f25-2b43-4954-a4d9-87d36ae283bf",
+      "result_id": "7c80d4fe-73c6-41e2-97d9-03a36b7d92f6"
+    },
+    {
+      "claim_id": "0736e78e-426e-4abc-8e5d-3e2e0462998d",
+      "result_id": "4a8e6826-fb82-493a-91a9-ec20e030b22b"
+    },
+    {
+      "claim_id": "d3f9d65b-e336-4aa3-b536-ba3bef4d0e2b",
+      "result_id": "4a8e6826-fb82-493a-91a9-ec20e030b22b"
+    },
+    {
+      "claim_id": "6040e77b-6f2d-4eb5-9945-6f3ad727e659",
+      "result_id": "4a8e6826-fb82-493a-91a9-ec20e030b22b"
+    },
+    {
+      "claim_id": "73089963-6f10-462f-a21f-709752a51507",
+      "result_id": "4a8e6826-fb82-493a-91a9-ec20e030b22b"
+    },
+    {
+      "claim_id": "357071eb-3071-44bd-9354-cd0671e4763a",
+      "result_id": "4a8e6826-fb82-493a-91a9-ec20e030b22b"
+    },
+    {
+      "claim_id": "240a0d1a-3c32-4283-9657-fd3cc4f2de48",
+      "result_id": "4a8e6826-fb82-493a-91a9-ec20e030b22b"
+    },
+    {
+      "claim_id": "c6db6146-354d-4c46-961d-a67741220603",
+      "result_id": "6a6e951b-80ec-46f3-a121-8c57f95be6df"
+    },
+    {
+      "claim_id": "74c25800-4e12-4969-8958-4ec861a3817c",
+      "result_id": "6a6e951b-80ec-46f3-a121-8c57f95be6df"
+    },
+    {
+      "claim_id": "9ac56b63-7f1a-4556-a9cf-5a2dc8d4049a",
+      "result_id": "6a6e951b-80ec-46f3-a121-8c57f95be6df"
+    },
+    {
+      "claim_id": "4ac193c3-a8ba-48c8-a753-de85d431e566",
+      "result_id": "6a6e951b-80ec-46f3-a121-8c57f95be6df"
+    },
+    {
+      "claim_id": "57aeea08-4105-4873-80da-f1a4588b1eac",
+      "result_id": "6a6e951b-80ec-46f3-a121-8c57f95be6df"
+    },
+    {
+      "claim_id": "d355673c-e45c-4023-9320-0c24c9712d42",
+      "result_id": "6a6e951b-80ec-46f3-a121-8c57f95be6df"
+    },
+    {
+      "claim_id": "579f38ce-4206-4930-b4ca-5ad9af33e1ac",
+      "result_id": "6a6e951b-80ec-46f3-a121-8c57f95be6df"
+    },
+    {
+      "claim_id": "b6046e88-181c-43be-bc97-5ffbef10cca6",
+      "result_id": "36b02671-8254-48ae-9a13-a02990248108"
+    },
+    {
+      "claim_id": "1907ff6a-2097-425e-9b9e-e7277850c7e2",
+      "result_id": "36b02671-8254-48ae-9a13-a02990248108"
+    },
+    {
+      "claim_id": "a76cea06-8cd0-492c-bef3-95e273892f7a",
+      "result_id": "36b02671-8254-48ae-9a13-a02990248108"
+    },
+    {
+      "claim_id": "ceea2db2-3279-4ce3-b10a-a38712a6eb3a",
+      "result_id": "36b02671-8254-48ae-9a13-a02990248108"
+    },
+    {
+      "claim_id": "858f7f05-a0b7-4dbd-bce4-c27b4fc37a1c",
+      "result_id": "36b02671-8254-48ae-9a13-a02990248108"
+    },
+    {
+      "claim_id": "858bcb20-4cb4-4d6f-87b3-a9559f9b629f",
+      "result_id": "36b02671-8254-48ae-9a13-a02990248108"
+    },
+    {
+      "claim_id": "1fa51867-3c8f-4f0e-a970-c9d51f73527e",
+      "result_id": "c365ebf8-6ebf-4f91-a722-4219bee489f2"
+    },
+    {
+      "claim_id": "6523cbcf-0f0a-483d-8790-a717c46e0185",
+      "result_id": "c365ebf8-6ebf-4f91-a722-4219bee489f2"
+    },
+    {
+      "claim_id": "11e054ea-ac4e-4477-9c85-71a05a7c107a",
+      "result_id": "c365ebf8-6ebf-4f91-a722-4219bee489f2"
+    },
+    {
+      "claim_id": "62d1c90b-8f6a-417e-91a5-0920d475ec5f",
+      "result_id": "c365ebf8-6ebf-4f91-a722-4219bee489f2"
+    },
+    {
+      "claim_id": "90e191c3-dc37-4087-8ad5-00abba8a2ef3",
+      "result_id": "c365ebf8-6ebf-4f91-a722-4219bee489f2"
+    },
+    {
+      "claim_id": "a54de9f7-d8d9-4a4b-9b74-d68b6b662715",
+      "result_id": "49ec25d4-00bb-4865-a475-6c3652f5f27f"
+    },
+    {
+      "claim_id": "9cc2633d-6c1a-496b-9613-cd17d2c0c218",
+      "result_id": "49ec25d4-00bb-4865-a475-6c3652f5f27f"
+    },
+    {
+      "claim_id": "4a1f7424-d9cd-482a-a6e4-01c98b1d9005",
+      "result_id": "49ec25d4-00bb-4865-a475-6c3652f5f27f"
+    },
+    {
+      "claim_id": "587df66f-8644-41dc-91fc-93f90b4410bf",
+      "result_id": "49ec25d4-00bb-4865-a475-6c3652f5f27f"
+    },
+    {
+      "claim_id": "29ac7fee-3525-4f7b-a512-c01354b538df",
+      "result_id": "49ec25d4-00bb-4865-a475-6c3652f5f27f"
+    },
+    {
+      "claim_id": "d31e81b5-63ed-4939-8dd2-3bedecff9f8a",
+      "result_id": "85165e62-2a49-4ce8-a317-80170d68a344"
+    },
+    {
+      "claim_id": "3c8585e1-b5d1-4c49-ab5e-5cb5c02f619e",
+      "result_id": "85165e62-2a49-4ce8-a317-80170d68a344"
+    },
+    {
+      "claim_id": "50fc2d76-3a46-4e63-89ae-74bdae7c41d2",
+      "result_id": "85165e62-2a49-4ce8-a317-80170d68a344"
+    },
+    {
+      "claim_id": "69932fc3-e991-4205-be23-6cdb4621e2b6",
+      "result_id": "85165e62-2a49-4ce8-a317-80170d68a344"
+    },
+    {
+      "claim_id": "49955563-415d-4c07-8bef-d02889f100bb",
+      "result_id": "85165e62-2a49-4ce8-a317-80170d68a344"
+    },
+    {
+      "claim_id": "d6ca8e82-17c9-402e-b8a8-ff1ea83d5e43",
+      "result_id": "6ccf0dff-d987-44c4-a948-030ffb23d4a7"
+    },
+    {
+      "claim_id": "5039c0c2-8502-49c0-9c48-441db4f31049",
+      "result_id": "6ccf0dff-d987-44c4-a948-030ffb23d4a7"
+    },
+    {
+      "claim_id": "4ab87ef5-6455-445f-966f-98b2dec75919",
+      "result_id": "6ccf0dff-d987-44c4-a948-030ffb23d4a7"
+    },
+    {
+      "claim_id": "8a67ef97-28cc-489b-be4c-df6b9ab010a0",
+      "result_id": "6ccf0dff-d987-44c4-a948-030ffb23d4a7"
+    },
+    {
+      "claim_id": "f69b3cf5-6825-4cca-97bf-47e5562a38ab",
+      "result_id": "6ccf0dff-d987-44c4-a948-030ffb23d4a7"
+    },
+    {
+      "claim_id": "4045db3b-62c8-4bf4-965f-1f5cda41e355",
+      "result_id": "ada66bd9-2c6c-48a6-9131-f27e1dff7d3f"
+    },
+    {
+      "claim_id": "17c24058-fa50-49ff-98d2-6efb3e0cf8b3",
+      "result_id": "ada66bd9-2c6c-48a6-9131-f27e1dff7d3f"
+    },
+    {
+      "claim_id": "1d389dbe-def5-49c0-b980-23dfd2256b63",
+      "result_id": "ada66bd9-2c6c-48a6-9131-f27e1dff7d3f"
+    },
+    {
+      "claim_id": "491b3f1f-368e-4bef-ada1-74539342efe6",
+      "result_id": "ada66bd9-2c6c-48a6-9131-f27e1dff7d3f"
+    },
+    {
+      "claim_id": "6d8fb780-d7d1-46df-a1c6-702266aae64f",
+      "result_id": "84ee012c-ba4f-44cb-8a6c-08b108b295eb"
+    },
+    {
+      "claim_id": "45d7a3f2-ba67-494f-b6be-d8130a198a97",
+      "result_id": "84ee012c-ba4f-44cb-8a6c-08b108b295eb"
+    },
+    {
+      "claim_id": "a12e6292-bbee-4164-a0ab-0f00434f671c",
+      "result_id": "84ee012c-ba4f-44cb-8a6c-08b108b295eb"
+    },
+    {
+      "claim_id": "0d009e7f-d2b2-45c6-aa11-0ab74f1c10e5",
+      "result_id": "84ee012c-ba4f-44cb-8a6c-08b108b295eb"
+    },
+    {
+      "claim_id": "e31d2982-11ee-4f4a-8ac2-c66aca4ff95b",
+      "result_id": "84ee012c-ba4f-44cb-8a6c-08b108b295eb"
+    },
+    {
+      "claim_id": "f550c143-5e90-407b-b83b-b48d34c2a3fa",
+      "result_id": "84ee012c-ba4f-44cb-8a6c-08b108b295eb"
+    },
+    {
+      "claim_id": "ddadbf7f-5aa6-4da3-aa08-1605a4495c23",
+      "result_id": "88234bc4-1fbb-4d09-8622-3db4df01cb31"
+    },
+    {
+      "claim_id": "4a7c60fe-3507-4f09-9ac8-1a9feaf9a5a2",
+      "result_id": "6750a692-9573-445c-b661-974d9c3c8a85"
+    },
+    {
+      "claim_id": "44fc267c-bdb9-453e-b194-80178d24922e",
+      "result_id": "6750a692-9573-445c-b661-974d9c3c8a85"
+    },
+    {
+      "claim_id": "a3e0f5cf-8e7f-4608-b8e9-3acb7eb3b707",
+      "result_id": "6750a692-9573-445c-b661-974d9c3c8a85"
+    },
+    {
+      "claim_id": "5d3f4a39-0cdf-4030-bad5-8e49386a6cb0",
+      "result_id": "6750a692-9573-445c-b661-974d9c3c8a85"
+    },
+    {
+      "claim_id": "fdd9cbc2-68eb-4392-8c9c-9f98cb37a086",
+      "result_id": "6750a692-9573-445c-b661-974d9c3c8a85"
+    }
+  ],
+  "comparisons": []
+}

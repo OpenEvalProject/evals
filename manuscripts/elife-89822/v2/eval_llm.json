@@ -1,0 +1,291 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Activin A expression is dramatically upregulated during fracture healing in both mice and humans. Immunofluorescence and immunohistochemistry show minimal Activin A in intact bones but abundant expression in fibroblastic cells and chondrocytes within fracture callus by day 5 post-injury. Human specimens show nearly threefold increase in INHBA mRNA at fracture sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple complementary approaches (immunofluorescence, immunohistochemistry, qRT-PCR) consistently demonstrate increased Activin A expression after fracture in both mouse and human samples (C1, C11-C16). The data show appropriate controls (intact vs. fractured tissue) and quantitative validation (C12). The spatiotemporal characterization is well-documented with representative images.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Single-cell RNA-sequencing identifies a novel proliferative progenitor cell (PPC) population that rapidly expands after fracture and occupies a central position in developmental trajectories leading to both chondrocytes and osteoblasts. PPCs are characterized by high proliferation rates and expression of stem cell markers at intermediate levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The scRNA-seq analysis is comprehensive with appropriate quality controls (C40), adequate cell numbers across timepoints, and multiple computational approaches (trajectory analysis, RNA velocity) that converge on the same conclusion (C50-C52). The identification of PPCs as cluster 2 is supported by marker expression, proliferation analysis, and temporal dynamics (C46-C49). The Col2/Td reporter validation strengthens the findings (C32-C38).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "PPCs express high levels of Inhba and exhibit a transient myofibroblast-like phenotype characterized by expression of Acta2, Tagln, and related genes. This phenotype is most prominent at day 5 post-fracture and diminishes by day 10. PPCs are the main source of Activin A in early fracture healing based on cell numbers and expression levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "GO term analysis, marker gene expression patterns, and validation by qRT-PCR and immunofluorescence consistently support the myofibroblast-like character of PPCs (C53-C57, C68-C71). The temporal dynamics are well-documented (C56). The inference that PPCs are the main Activin A source is reasonable given the comparative cell numbers and expression levels (C59-C62), though chondrocytes also contribute.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Activin A receptors are expressed in mesenchymal progenitor populations, with Acvr2a enriched in MPCs. Fracture enhances proliferation in both MPCs and PPCs, with PPCs showing higher proliferative capacity than MPCs at both baseline and after injury.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Receptor expression is documented by UMAP plots (C64-C65), and proliferation differences are quantified by EdU incorporation with appropriate controls and statistical analysis (C66-C67). The data support the capacity of these cells to respond to Activin A signaling.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "In vitro studies demonstrate that Activin A directly stimulates proliferation, myofibroblastic differentiation, and chondrogenesis in periosteal mesenchymal progenitor cultures. Neutralizing antibody treatment inhibits proliferation, chondrogenesis, and osteogenesis, indicating endogenous Activin A promotes these processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The in vitro experiments include appropriate controls (vehicle, neutralizing antibody, TGF-\u03b21 positive control) and multiple readouts (cell counts, marker expression, histological staining) (C72-C78). The complementary loss-of-function (antibody) and gain-of-function (recombinant protein) approaches strengthen the conclusions. However, the claim about direct osteogenic stimulation (C10, C77) is nuanced\u2014exogenous Activin A did not enhance osteogenesis, but blocking endogenous Activin A inhibited it.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C4",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Systemic administration of neutralizing Activin A antibody significantly impairs fracture healing, reducing callus size, cartilage and bone formation, healing scores, and mechanical properties. The antibody preferentially affects PPCs (\u03b1SMA+ cells) as evidenced by reduced pSMAD2 signaling specifically in this population.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The loss-of-function study is comprehensive with multiple complementary readouts (histology, \u03bcCT, mechanical testing, healing scores) at multiple timepoints (C80-C83). The cellular mechanism is investigated with immunofluorescence showing differential effects on \u03b1SMA+ versus \u03b1SMA- populations (C84-C86). Statistical significance is reported for key outcomes. The inference that PPCs are the primary responsive cell type is well-supported by the differential pSMAD2 response (C88).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C90",
+      "C91"
+    ],
+    "result": "Activin A does not have major homeostatic roles in bone under normal conditions, as neutralizing antibody treatment did not affect trabecular or cortical bone structure in uninjured contralateral limbs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The \u03bcCT analysis of uninjured bones provides appropriate negative control data showing no effect of Activin A blockade on bone homeostasis (C90). However, the caveat about timeframe (C91) is important\u2014longer-term effects were not assessed. This supports the specificity of Activin A's role in injury response rather than maintenance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Local implantation of recombinant Activin A at the fracture site enhances healing in both young (2-month) and aged (20-month) mice, increasing PPC numbers, pSMAD2 signaling, callus formation, and mechanical properties. The therapeutic effect is particularly robust in aged mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The gain-of-function study complements the loss-of-function experiments with appropriate controls (vehicle) and demonstrates efficacy in both age groups (C92, C95-C96). The cellular mechanism is investigated showing increased PPCs and pSMAD2 signaling specifically in \u03b1SMA+ cells (C93-C94). The statistical significance of mechanical improvements in aged mice is particularly notable for translational potential. The non-significant trend in young mice (C98) is appropriately noted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Activin A promotes bone regeneration via intramembranous ossification in a drill-hole model. Neutralizing antibody reduces bone formation while recombinant Activin A increases bone volume fraction in both medullary and cortical defect regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The drill-hole model provides complementary evidence that Activin A's effects extend beyond endochondral ossification (C105). Both loss-of-function and gain-of-function experiments show consistent effects on bone formation (C103-C104). The model is well-characterized with appropriate timepoints (C100-C102). This strengthens the generalizability of the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C3",
+      "C50",
+      "C51",
+      "C52",
+      "C110",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "PPCs represent a central developmental node in fracture healing, positioned between MPCs and differentiated cells (chondrocytes and osteoblasts) in trajectory analyses. PPCs are rare before injury but rapidly expand after fracture, representing the bulk of cells in thickened periosteum by day 5.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple computational approaches (Slingshot trajectory analysis, RNA velocity) independently place PPCs at the center of bifurcating developmental paths (C3, C50-C51). The temporal dynamics are well-documented showing expansion from low baseline numbers (C113-C115). The integration of computational predictions with experimental validation strengthens these conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C131",
+      "C132",
+      "C135",
+      "C136"
+    ],
+    "result": "Activin A functions as an overall regulator and stimulator of fracture repair, acting through multiple cell types and differentiation pathways. The protein's capacity to influence inflammation, progenitor proliferation, and multiple differentiation lineages positions it as a potential therapeutic with advantages over current single-pathway approaches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the comprehensive loss-of-function and gain-of-function data strongly support Activin A's regulatory role in fracture healing (C108-C109), the broader claims about its advantages as a therapeutic (C132, C135-C136) are speculative and not directly tested. The mechanistic link to inflammation (C131) is inferred from prior literature rather than demonstrated in this study. These represent reasonable hypotheses for future work but are not fully supported by the current data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C106",
+      "C107"
+    ],
+    "result": "The study builds on established knowledge about fracture healing biology, periosteal progenitor cells, and Activin A's roles in other contexts. Prior work has identified \u03b1SMA+ periosteal cells as important for healing and demonstrated Activin A's pro-chondrogenic activity and role in heterotopic ossification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims appropriately cite relevant prior literature (C18-C31, C106-C107) and provide context for the current work. The citations appear accurate and relevant. This represents appropriate scholarly contextualization rather than new findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "The identified MPC and PPC populations share characteristics with previously described periosteal and fibroblast progenitor cells across multiple tissues. MPCs express markers similar to early mesenchymal progenitors in bone marrow and Pi16+ universal fibroblast progenitors. PPCs share features with injury-induced Lrrc15+ myofibroblastic cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The comparative analysis with prior literature is thorough and well-supported by marker expression data (C121-C126). The identification of shared characteristics across tissue types (C127) is appropriately cautious. However, the lack of Mx1 expression (mentioned in text) contradicts one prior study, which is appropriately noted. This contextualizes the findings within the broader field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130",
+      "C133",
+      "C134"
+    ],
+    "result": "Current therapeutic approaches for fracture healing are limited, with no effective and safe therapy clinically available. Existing anabolic therapies target single pathways or populations, which may limit their effectiveness. Activin A's role in inflammation may link the initial injury response to subsequent skeletal repair.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The claims about limitations of current therapies are supported by appropriate citations (C133-C134). However, the speculation about Activin A linking inflammation to skeletal repair (C130) is not directly tested in this study\u2014it's an inference based on known inflammatory roles of Activin A. This represents a reasonable hypothesis but lacks direct experimental support in the current work.",
+    "result_type": "MINOR"
+  }
+]

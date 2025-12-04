@@ -1,0 +1,2079 @@
+{
+  "submission": {
+    "id": "b9f1361c-db98-483e-b20a-6172c22982f8",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-04T03:43:31.511640Z",
+    "updated_at": "2025-12-04T03:43:31.511640Z"
+  },
+  "content": [
+    {
+      "id": "d350de64-1220-4c22-a7b1-f2cc851669eb",
+      "submission_id": "b9f1361c-db98-483e-b20a-6172c22982f8",
+      "content_type": "manuscript",
+      "content_text": "# Risk of second primary cancers after a diagnosis of first primary cancer: A pan-cancer analysis and Mendelian randomization study\n\n## Authors\n\n- Xiaohao Ruan<sup>1</sup> ([ORCID: 0000-0001-8373-5237](https://orcid.org/0000-0001-8373-5237))\n- Da Huang<sup>1</sup> ([ORCID: 0000-0002-6203-9459](https://orcid.org/0000-0002-6203-9459))\n- Yongle Zhan<sup>2</sup>\n- Jingyi Huang<sup>1</sup>\n- Jinlun Huang<sup>1</sup>\n- Ada Tsui-Lin Ng<sup>2</sup>\n- James Hok-Leung Tsu<sup>2</sup>\n- Rong Na<sup>2</sup> ([ORCID: 0000-0001-7470-5108](https://orcid.org/0000-0001-7470-5108)) \u2020\n\n### Affiliations\n\n1. Department of Urology, Ruijin Hospital, Shanghai Jiao Tong University School of Medicine Shanghai China ([ROR:01hv94n30](https://ror.org/01hv94n30))\n2. Division of Urology, Department of Surgery, Queen Mary Hospital, The University of Hong Kong Hong Kong China ([ROR:02zhqgq86](https://ror.org/02zhqgq86))\n\n\u2020 Corresponding author\n\n## Abstract\n\nBackground:The risk of second primary cancers (SPC) is increasing after the first primary cancers (FPC) are diagnosed and treated. The underlying causal relationship remains unclear.Methods:We conducted a pan-cancer association (26 cancers) study in the Surveillance, Epidemiology, and End Results (SEER) database (non-Hispanic whites). The standardized incidence ratio (SIR) was estimated as the risk of SPCs in cancer survivors based on the incidence in the general population. Furthermore, the causal effect was evaluated by two-sample Mendelian Randomization (MR, 13 FPCs) in the UK Biobank (UKB, n=459,136,, European whites) and robust analysis (radial MR and Causal Analysis Using Summary Effect estimates, CAUSE).Results:We found 11 significant cross-correlations among different cancers after harmonizing SIR and MR results. Whereas only 4 of them were confirmed by MR to have a robust causal relationship. In particular, patients initially diagnosed with oral pharyngeal cancer would have an increased risk of non-Hodgkin lymphoma (SIRSEER = 1.18, 95%Confidence Interval [CI]:1.05\u20131.31, ORradial-MR=1.21, 95% CI:1.13\u20131.30, p=6.00 \u00d7 10-3; ORcause = 1.17, 95% CI:1.05\u20131.31, p=8.90 \u00d7 10-3). Meanwhile, ovary cancer was identified to be a risk factor for soft tissue cancer (SIRSEER = 1.72, 95%Confidence Interval [CI]:1.08\u20132.60, ORradial-MR=1.39, 95% CI:1.22\u20131.58, p=1.07 \u00d7 10-3; ORcause = 1.36, 95% CI:1.16\u20131.58, p=0.01). And kidney cancer was likely to cause the development of lung cancer (SIRSEER = 1.28, 95%Confidence Interval [CI]:1.22\u20131.35, ORradial-MR=1.17, 95% CI:1.08\u20131.27, p=6.60 \u00d7 10-3; ORcause = 1.16, 95% CI:1.02\u20131.31, p=0.05) and myeloma (SIRSEER = 1.54, 95%Confidence Interval [CI]:1.33\u20131.78, ORradial-MR=1.72, 95% CI:1.21\u20132.45, p=0.02; ORcause = 1.49, 95% CI:1.04\u20132.34, p=0.02).Conclusions:A certain type of primary cancer may cause another second primary cancer, and the profound mechanisms need to be studied in the future.Funding:This work was in supported by grants from National Natural Science Foundation of China (Grant No. 81972645), Innovative research team of high-level local universities in Shanghai, Shanghai Youth Talent Support Program, intramural grant of The University of Hong Kong to Dr. Rong Na, and Shanghai Sailing Program (22YF1440500) to Dr. Da Huang.\n\n## Introduction\n\nCancer incidence is rapidly growing worldwide in the past decades. The reasons are complex including the aging of the population, the application of screening, environmental risk factors and genetic risk factors (Sung et al., 2021). In 2020, there were an estimated 19.3 million new cases and 10.0 million deaths of different types of cancers globally (Sung et al., 2021). In the US, there would be about 1.9 million new cases of cancers in 2023,and the most common type of cancers in the male and the female were prostate cancer (29%) and breast cancer (31%), respectively (Siegel et al., 2022; Siegel et al., 2023). Despite the rapidly increased incidence of cancers, the survival of (most types of) cancers in the US has vastly improved since the mid-1990s with medical advances and technical developments (Siegel et al., 2022; Siegel et al., 2023). For example, the 5-year relative survival rates of prostate cancer, melanoma, and female breast cancer, during 2011\u20132017 in the US were 98%, 93%, and 90%, respectively (Siegel et al., 2022). Such disparity may lead to an increase in the prevalence and the tumor burden in US society. More importantly, prolonged survival makes it possible for individuals to be diagnosed with a second primary cancer (SPC) after the first primary cancer (FPC) during the follow-up.\n\nAccording to the Italian (1976\u20132010; AIRTUM Working Group, 2013), the Swiss (1981\u20132009; Feller et al., 2020), and the Swedish (1990\u20132015; Zheng et al., 2020) cancer registration data, increased risks of SPCs were observed in many types of cancer as the FPCs. Patients with oral cavity & pharynx, larynx, and esophagus as FPC were found to have a significantly elevated risk of any SPCs in both Italy and Switzerland (Feller et al., 2020; AIRTUM Working Group, 2013). In Sweden, liver cancers, as well as nasal and oral cancers, were found to be associated with SPCs (Zheng et al., 2020). In addition, several studies focused on certain cancer also suggested a potential relationship between FPC and SPC (Chattopadhyay et al., 2018). For example, increased FPC risk of colorectal cancer, kidney cancer, and melanoma were observed following the diagnosis of non-Hodgkin lymphoma. Despite the strong association observed in these studies, whether there is any underlying causal relationship is unknown, or the association observed is due to the potential confounders such as aging.\n\nIn the present study, our objectives are to perform a pan-cancer association study in the Surveillance, Epidemiology, and End Results (SEER) and to interpret the underlying causal relationship via Mendelian Randomization approaches using genetic variants in a large population cohort (UK Biobank, UKB). The study may help us understand critical questions in clinical practice about who should be more careful of the second primaries. In addition, precision screenings against certain cancers should also be considered among those patients with increased risk of second primaries in addition to the regular follow-up evaluations. In addition, many cancers are known to have a multifactorial etiology and some cancer treatments are known to be carcinogenic. It is essential to illustrate the potential relationship between FPCs and SPCs which mary optimize the treatment for patients\u2019 prognosis and survivorship.\n\n## Methods\n\n### Study populations\n\nSEER Program 18 Registry database was obtained which covered 27.8% of the total population in the United States (\"Number of Persons by Race and Hispanic Ethnicity for SEER Participants - SEER Registries.,\") (National Cancer Institute, 2020). The SEER program is the largest cancer incidence dataset in the United States based on population cancer registration. Based on the ICD-10 code, we identified adult patients (age \u226520 years) diagnosed with an FPC between 2000 and 2016, including 22 types of solid-tumor sites (oral cavity and pharynx, esophagus, stomach, small intestine, colon and rectum, liver, gallbladder, pancreas, larynx, lung and bronchus, bones and joints, soft tissue including heart, melanoma of the skin, female breast, male breast, cervix uteri, ovary, prostate, bladder, kidney, renal pelvis and ureter, brain, thyroid) and 4 types of hematological malignancies (Hodgkin lymphoma, non-Hodgkin lymphoma, myeloma, leukemia). Patients with diagnosis by autopsy or mentioned in the death certificate only were excluded.\n\nThe UKB project is a prospective cohort study collecting phenotypic and genotypic data from ~500,000 individuals from across the United Kingdom (median follow-up time was ~14 years). The participants aged between 40 and 69 at recruitment (Bycroft et al., 2018). In the present study, a total of 459,156 participants with European Ancestry from UKB (release V3) with GWAS genotyping array data and imputation information were obtained and included in the MR analysis. Disease phenotypes in UKB were also defined using the ICD-10 code. Non-Caucasian patients were not included in the present study in SEER or UKB due to the small number of subjects in UKB, which made it hard to make the causal inference.\n\nWritten informed consent was obtained from all the participants from SEER or UKB according to the established standard of the studies. The study was approved by the Northwest Multi\u2010centre Research Ethics in Manchester, UK (IRAS project ID: 299116; Application No. 66813).\n\n### Genotyping and quality control\n\nGWAS genotyping array data with imputation and QC from UK Biobank release V3 was obtained (Bycroft et al., 2018). Briefly, a total of 488,377 participants (after quality control, QC) were genotyped in UKB using two similar genotyping arrays, the UK Biobank Lung Exome Variant Evaluation (UK BiLEVE with 807,411 markers, n=49,950) and the Applied Biosystems UK BiLEVE Axiom Array by Affymetrix (825,927 markers, n=438,427). These two arrays share 95% of the markers. Individuals were excluded if: (a) ancestry testing using principal component analysis (PCA) to evaluate the potential conflicts between self-reported ethnicity/race and the genetic ethnicity/race; (b) Poor call rate at the genotyping stage (n=968, 0.2%); (c) Mismatched results between self-reported gender and genetic gender (n=652, 0.13%). The genotype concordance rate was reported as >99.0% (Bycroft et al., 2018). A total of 93,095,623 autosomal SNPs were identified in 487,442 individuals (Bycroft et al., 2018).\n\n### Mendelian randomization\n\nThe conceptual framework was illustrated in Figure 1 and the MR study was reported in accordance with the STROBE-MR guideline (Skrivankova et al., 2021). Two-sample MR analyses were performed to evaluate the causality between exposures (a certain primary cancer, FPC) and outcomes (another primary cancer, SPC). We used previously identified disease risk-associated SNPs from the GWAS Catalog database(https://www.ebi.ac.uk/gwas/) (Buniello et al., 2019). SNPs selection was based on the following criteria: (1) SNPs were from a single GWAS that identified the largest number of risk-associated SNPs and were conducted in European ancestry; (2) SNPs reached genome-wide significant level (P<5 \u00d7 10\u20138); (3) SNPs were independent of each other in terms of linkage disequilibrium (LD, r2 <0.001) and distance (>10,000 kb).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/86379/elife-86379-fig1-v1.jpg)\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/86379/elife-86379-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Oral and pharyngeal cancer on non-Hodgkin lymphoma; (B) oral and pharyngeal cancer on myeloma; (C) esophageal cancer on myeloma; (D) colorectal cancer on liver cancer; (E) pancreatic cancer on gallbladder cancer; (F) pancreatic cancer on small intestin cancer; (G) pancreatic cancer on lary cancer; (H) lung cancer on bone cancer; (I) lung cancer on female breast cancer; (J) lung cancer on Hodgkin lymphoma; (K) melanoma on female breast cancer; (L) female breast cancer on liver cancer; (M) ovary cancer on soft tissue cancer; (N) prostate cancer on colorectal cancer; (O) prostate cancer on pancreatic cancer; (P) prostate cancer on melanoma; (Q) kidney cancer on lung cancer; (R) kidney cancer on melanoma; (S) kidney cancer on non-hodgkin lymphoma; (T) kidney cancer on myeloma; (U) thyroid cancer on liver; (V) thyroid cancer on colorectal cancer; (W) myeloma on lung cancer.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/86379/elife-86379-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) Oral and pharyngeal cancer on non-Hodgkin lymphoma; (B) oral and pharyngeal cancer on myeloma; (C) esophageal cancer on myeloma; (D) colorectal cancer on liver cancer; (E) pancreatic cancer on gallbladder cancer; (F) pancreatic cancer on small intestin cancer; (G) pancreatic cancer on lary cancer; (H) lung cancer on bone cancer; (I) lung cancer on female breast cancer; (J) lung cancer on Hodgkin lymphoma; (K) melanoma on female breast cancer; (L) female breast cancer on liver cancer; (M) ovary cancer on soft tissue cancer; (N) prostate cancer on colorectal cancer; (O) prostate cancer on pancreatic cancer; (P) prostate cancer on melanoma; (Q) kidney cancer on lung cancer; (R) kidney cancer on melanoma; (S) kidney cancer on non-hodgkin lymphoma; (T) kidney cancer on myeloma; (U) thyroid cancer on liver; (V) thyroid cancer on colorectal cancer; (W) myeloma on lung cancer.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/86379/elife-86379-fig1-figsupp3-v1.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (A) Oral and pharyngeal cancer on non-Hodgkin lymphoma; (B) oral and pharyngeal cancer on myeloma; (C) esophageal cancer on myeloma; (D) colorectal cancer on liver cancer; (E) pancreatic cancer on gallbladder cancer; (F) pancreatic cancer on small intestin cancer; (G) pancreatic cancer on lary cancer; (H) lung cancer on bone cancer; (I) lung cancer on female breast cancer; (J) lung cancer on Hodgkin lymphoma; (K) melanoma on female breast cancer; (L) female breast cancer on liver cancer; (M) ovary cancer on soft tissue cancer; (N) prostate cancer on colorectal cancer; (O) prostate cancer on pancreatic cancer; (P) prostate cancer on melanoma; (Q) kidney cancer on lung cancer; (R) kidney cancer on melanoma; (S) kidney cancer on non-hodgkin lymphoma; (T) kidney cancer on myeloma; (U) thyroid cancer on liver; (V) thyroid cancer on colorectal cancer; (W) myeloma on lung cancer.\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/86379/elife-86379-fig1-figsupp4-v1.jpg)\n\n**Figure 1\u2014figure supplement 4.:** (A) Oral and pharyngeal cancer on non-Hodgkin lymphoma; (B) oral and pharyngeal cancer on myeloma; (C) esophageal cancer on myeloma; (D) colorectal cancer on liver cancer; (E) pancreatic cancer on gallbladder cancer; (F) pancreatic cancer on small intestin cancer; (G) pancreatic cancer on lary cancer; (H) lung cancer on bone cancer; (I) lung cancer on female breast cancer; (J) lung cancer on Hodgkin lymphoma; (K) melanoma on female breast cancer; (L) female breast cancer on liver cancer; (M) ovary cancer on soft tissue cancer; (N) prostate cancer on colorectal cancer; (O) prostate cancer on pancreatic cancer; (P) prostate cancer on melanoma; (Q) kidney cancer on lung cancer; (R) kidney cancer on melanoma; (S) kidney cancer on non- hodgkin lymphoma; (T) kidney cancer on myeloma; (U) thyroid cancer on liver; (V) thyroid cancer on colorectal cancer; (W) myeloma on lung cancer.\n\nMR analyses derive valid estimates where the following assumptions are met: (i) the SNPs are correlated with FPC, (ii) the SNPs affect SPC risk only through their effects on FPC and (iii) the SNPs are independent of any confounding factors for the association between FPC and SPC. For assumption (i), the strength of each instrument was measured using the F statistic and the proportion of the explained variance (R2), which was considered to be sufficient if the corresponding F-statistic is >10. For assumption (ii) and (iii), we searched the PhenoScanner database (available at http://www.phenoscanner.medschl.cam.ac.uk/phenoscanner) (Kamat et al., 2019; Staley et al., 2016) to examine whether SNPs were significantly associated with established risk factors for certain cancers, including BMI, smoking, alcohol intake and physical inactivity, and excluded those at p<1.0 \u00d7 10\u20135. Statistical power calculations were performed using an online tool available at https://shiny.cnsgenomics.com/mRnd/(Brion et al., 2013). The statistical power was to capture an OR of 1.20 or 0.80 per a standard deviation (SD) change in the cancer risk.\n\nInverse-variance weighted MR (IVW-MR) and MR-Egger were used in the MR analyses (Burgess et al., 2019; Burgess and Thompson, 2017; Davies et al., 2018; Hemani et al., 2018). MR would be performed based on at least 4 SNPs. Briefly, these two methods are the most used MR methods to infer a causal relationship. IVW-MR is based on a random effect model and is the most efficient with the greatest statistical power (Hemani et al., 2018). Potential bias as horizontal pleiotropy was evaluated and adjusted via MR-Egger (Burgess et al., 2019; Burgess and Thompson, 2017; Davies et al., 2018; Hemani et al., 2018). The causal inference was interpreted via IVW-MR results if the horizontal pleiotropic effect was not significant; otherwise, based on MR-Egger. A causal relationship will only be interpreted when a significant MR result was observed from MR analyses together with a significant association based on the SEER database. A series of sensitivity and robust analyses including leave-one-out, Radial MR (Bowden et al., 2019; Bowden et al., 2018) and CAUSE (Morrison et al., 2020) methods would be performed in case of concordant significant results. MR analyses were performed using the R package \u2018TwoSampleMR\u2019, \u2018MendelianRandomization\u2019, \u2018RadialMR\u2019 and \u2018cause\u2019.\n\n### Statistical analysis\n\nThe multiple primary standardized incidence ratios (MP-SIR) were defined as the observed incidence of a second malignancy among cases previously diagnosed with a certain type of cancer divided by the expected incidence based on the SEER referent population (the SEER18 2000\u20132016 referent rate file). All the standardized incidence observed/expected (O/E) ratios (SIR) and the corresponding 95% confidence intervals (95% CI) were derived using the \u2018MP-SIR\u2019 session of SEER*Stat (version 8.3.8)(\"Multiple Primary - Standardized Incidence Ratios - SEER*Stat.\") (National Cancer Institute, 2023). Only the non-Hispanic white population was included in the present study. We restricted a minimum 2-month latency period between the first and second primary diagnosis (Davis et al., 2014). Subgroup analyses were performed after stratifying by radiation therapy (received or not). All statistical analyses were performed using SEER*STAT and R software (4.1.2) (R Development Core Team, 2021). A type I error of 0.05 (two-sided) was used to define statistical significance. Multiplicity effects were only considered during the selection of SNPs.\n\n## Results\n\nWe set out to identify the observational association between FPCs and SPCs among 22 solid tumors and 4 hematological malignancies based on the SEER database (Figure 1). A total of 264 significant standardized incidence ratio (SIR) existed among them when compared to a standard population (Supplementary file 1a-1q). Hierarchical clustering analysis (heatmap) is shown in Figure 2 which illustrates the comparison between the cancer incidence in patients with a certain type of FPC and the incidence in the population average level in the SEER dataset. Second primary thyroid cancer, small bowel cancer, or cancers of endocrine system were strongly and significantly associated with most of the FPCs. Cancers of the digestive system, cervix uteri, as well as lung cancer were clustered together. They are closely correlated with an increased risk of several types of cancers such as bladder cancer, kidney cancer, etc. Our subgroup analysis suggested that patients with prostate cancer who received radiation therapy were at an increased risk of being diagnosed with another type of primary cancer during the follow-up including small intestine, soft tissue, and leukemia, compared with those without such therapy (Supplementary file 1m). And SPC risk after breast cancer was inconsistent among males and females. Men with breast cancer had a higher risk for thyroid cancer and prostate cancer (SIRSEER = 1.30; 95% CI, 1.13\u20131.49; SIRSEER = 2.33, 1.12\u20134.29; Supplementary file 1j), but with no significant risk change for other cancers.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/86379/elife-86379-fig2-v1.jpg)\n\n**Figure 2.:** The standardized incidence observed/expected (O/E) ratios and the corresponding 95% confidence intervals were derived using the \u201cMP-SIR\u201d session of SEER*stat (version 8.3.8).\n\nDetails of the included exposure-associated SNPs in European ancestry were shown in Table 1 and Supplementary file 2a. The number of SNPs ranged from 5 (esophagus) to 104 (female breast), and the proportion of variance explained by SNPs (R2) ranged from 0.10% (thyroid) to 8.46% (bladder). F-statistics for all 13 cancers exceeded 10, suggesting no weak instrument bias here. However, some problems, including too few SNPs, no related GWAS and disease heterogeneity, affected the comprehensive MR analysis (Table 1). Due to the low incidence of cancers in UKB, the power to detect a significant effective size (0.8/1.2) was relatively low, except for colorectal cancer, lung cancer, female breast cancer and prostate cancer (Supplementary file 2b).\n\n**Table 1.**\n Summary of the cancer-specific instrument variables used in this study (European ancestry).\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Cancer type</th>\n      <th>GWAS Source</th>\n      <th>PMID</th>\n      <th>Number of SNPs*</th>\n      <th>Cases</th>\n      <th>Total population</th>\n      <th>Variance explained, R2, %</th>\n      <th>F-statistics</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Oral and pharynx</td>\n      <td>GCST003857</td>\n      <td>27749845</td>\n      <td>7</td>\n      <td>6034</td>\n      <td>12,619</td>\n      <td>2.22</td>\n      <td>283.68</td>\n    </tr>\n    <tr>\n      <td>Larynx</td>\n      <td>GCST010285</td>\n      <td>32276964</td>\n      <td>1\u2020</td>\n      <td>394</td>\n      <td>4887</td>\n      <td>0.28</td>\n      <td>13.72</td>\n    </tr>\n    <tr>\n      <td>Esophagus</td>\n      <td>GCST003740</td>\n      <td>27527254</td>\n      <td>5</td>\n      <td>10,279</td>\n      <td>27,438</td>\n      <td>0.72</td>\n      <td>198.94</td>\n    </tr>\n    <tr>\n      <td>Stomach</td>\n      <td>GCST002990</td>\n      <td>26098866</td>\n      <td>1\u2020</td>\n      <td>2043</td>\n      <td>202,533</td>\n      <td>0.02</td>\n      <td>34.44</td>\n    </tr>\n    <tr>\n      <td>Colon and rectum</td>\n      <td>GCST003017</td>\n      <td>26151821</td>\n      <td>8</td>\n      <td>18,299</td>\n      <td>37,955</td>\n      <td>0.89</td>\n      <td>340.75</td>\n    </tr>\n    <tr>\n      <td>Pancreas</td>\n      <td>GCST005434</td>\n      <td>29422604</td>\n      <td>14</td>\n      <td>9040</td>\n      <td>21,536</td>\n      <td>4.28</td>\n      <td>962.28</td>\n    </tr>\n    <tr>\n      <td>Melanoma</td>\n      <td>GCST004142</td>\n      <td>28212542</td>\n      <td>17</td>\n      <td>6628</td>\n      <td>293,193</td>\n      <td>0.29</td>\n      <td>852.68</td>\n    </tr>\n    <tr>\n      <td>Lung</td>\n      <td>GCST004748</td>\n      <td>28604730</td>\n      <td>7</td>\n      <td>29,266</td>\n      <td>85,716</td>\n      <td>0.55</td>\n      <td>474.00</td>\n    </tr>\n    <tr>\n      <td>Male Breast</td>\n      <td>GCST011526</td>\n      <td>32785646</td>\n      <td>2\u2020</td>\n      <td>2190</td>\n      <td>6836</td>\n      <td>1.27</td>\n      <td>87.91</td>\n    </tr>\n    <tr>\n      <td>Female Breast</td>\n      <td>GCST004988</td>\n      <td>29059683</td>\n      <td>104</td>\n      <td>122,977</td>\n      <td>228,951</td>\n      <td>4.95</td>\n      <td>11917.81</td>\n    </tr>\n    <tr>\n      <td>Cervix uteri</td>\n      <td>GCST004833</td>\n      <td>28806749</td>\n      <td>1\u2020</td>\n      <td>2866</td>\n      <td>9347</td>\n      <td>0.45</td>\n      <td>42.24</td>\n    </tr>\n    <tr>\n      <td>Ovary</td>\n      <td>GCST002748</td>\n      <td>25581431</td>\n      <td>9</td>\n      <td>18,530</td>\n      <td>69,745</td>\n      <td>1.16</td>\n      <td>818.42</td>\n    </tr>\n    <tr>\n      <td>Prostate</td>\n      <td>GCST006085</td>\n      <td>29892016</td>\n      <td>71</td>\n      <td>79,148</td>\n      <td>140,254</td>\n      <td>5.47</td>\n      <td>8111.66</td>\n    </tr>\n    <tr>\n      <td>Bladder</td>\n      <td>GCST002240</td>\n      <td>24163127</td>\n      <td>7</td>\n      <td>2305</td>\n      <td>6206</td>\n      <td>8.46</td>\n      <td>572.81</td>\n    </tr>\n    <tr>\n      <td>Kidney</td>\n      <td>GCST004710</td>\n      <td>28598434</td>\n      <td>8</td>\n      <td>10,784</td>\n      <td>31,190</td>\n      <td>1.11</td>\n      <td>349.99</td>\n    </tr>\n    <tr>\n      <td>Thyroid</td>\n      <td>GCST004144</td>\n      <td>28195142</td>\n      <td>6</td>\n      <td>3001</td>\n      <td>290,551</td>\n      <td>0.10</td>\n      <td>290.83</td>\n    </tr>\n    <tr>\n      <td>Myeloma</td>\n      <td>GCST004483</td>\n      <td>27363682</td>\n      <td>13</td>\n      <td>9866</td>\n      <td>249,054</td>\n      <td>0.31</td>\n      <td>774.24</td>\n    </tr>\n  </tbody>\n</table>\n\n_Note: See Supplementary file 2a: the list of SNPs included in the final calculation for each phenotype.No study found in European: bone and joint, brain, liver, small intestine, gallbladder, renal pelvis and ureter.Heterogeneity: lymphoma, leukemia.Too few SNPs: larynx, stomach, male breast cancer.*Number of SNPs included in the final calculation of PRS in our study; not necessarily the total number of SNPs from the source due to the filtering steps discussed in the main text and germline data availability.\u2020MR would be performed based on at least 4 SNPs._\n\nResults from MR analyses are presented in Supplementary file 2c-2p. A total of 23 significant association was detected (16 positive causality and 7 negative causality). Concordant significant results and unconcordant results between MR and the SEER SIR analyses are shown in Table 2 and Supplementary file 2c, respectively. The concordant results suggested that patients diagnosed with primary oral and pharynx cancer would cause a significantly increased risk of second primary non-Hodgkin lymphoma (SIRSEER = 1.18, 95% CI: 1.05\u20131.31; IVW-MR P=8.96 \u00d7 10\u20134). After a primary diagnosis of pancreatic cancer, SPC risks were increased for small intestine (SIRSEER = 4.37, 95% CI: 2.85\u20136.40; MR-Egger p=0.04). It also indicated that female patients initially diagnosed with melanoma would cause a mild but significantly increased risk of cancers in the breast (SIRSEER = 1.17, 95% CI: 1.12\u20131.23; IVW-MR p=0.04), as well as ovary cancer on soft tissue related cancer (SIRSEER = 1.72, 95% CI: 1.08\u20132.60; IVW-MR p=8.39 \u00d7 10\u20135). The greatest number of casual relationships were observed in kidney cancer as FPC. A primary kidney cancer might cause an elevated risk of cancers of lung and bronchus (SIRSEER = 1.28, 95% CI: 1.22\u20131.35; IVW-MR p=0.01), non-Hodgkin lymphoma (SIRSEER = 1.19, 95% CI: 1.08\u20131.31; IVW-MR p=3.64 \u00d7 10\u20133), myeloma (SIRSEER = 1.54, 95% CI: 1.33\u20131.78; IVW-MR p=3.94 \u00d7 10\u20133). Meanwhile, some primary cancer site might give protective effect against another cancer (for instance, lung cancer vs. female breast cancer, Table 2). Scatter plot, Funnel plot, forest plot and leave-one-out analysis showed single SNP effective size in Figure 1\u2014figure supplements 1\u20134, respectively.\n\n**Table 2.**\n Concordant causality between Mendelian randomization results and SEER analysis.\n\n\n<table>\n  <thead>\n    <tr>\n      <th rowspan=\"2\">Cancer type(first primary cancer)</th>\n      <th colspan=\"3\">Cancer type (second primary cancer)</th>\n    </tr>\n    <tr>\n      <th>Positive Causality</th>\n      <th>Negative Causality</th>\n      <th>No Causality(statistical power \u22650.80)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Oral and pharynx</td>\n      <td>Non-hodgkin lymphoma</td>\n      <td>-</td>\n      <td>Female breast, Prostate</td>\n    </tr>\n    <tr>\n      <td>Esophagus</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <td>Colon and rectum</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <td>Pancreas</td>\n      <td>Small intestin</td>\n      <td>-</td>\n      <td>Melanoma</td>\n    </tr>\n    <tr>\n      <td>Melanoma</td>\n      <td>Female breast</td>\n      <td>-</td>\n      <td>Colon and Rectum</td>\n    </tr>\n    <tr>\n      <td>Lung</td>\n      <td>-</td>\n      <td>Female Breast</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <td>Female Breast</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <td>Ovary</td>\n      <td>Soft tissue</td>\n      <td>-</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <td>Prostate</td>\n      <td>-</td>\n      <td>Colon and Rectum</td>\n      <td>Non-Hodgkin lymphoma</td>\n    </tr>\n    <tr>\n      <td>Bladder</td>\n      <td>-</td>\n      <td>-</td>\n      <td>Female breast, Non-hodgkin lymphoma</td>\n    </tr>\n    <tr>\n      <td>Kidney</td>\n      <td>Lung and Bronchus, Melanoma, Non-hodgkin lymphoma, Myeloma</td>\n      <td>-</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <td>Thyroid</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <td>Myeloma</td>\n      <td>-</td>\n      <td>Lung and Bronchus</td>\n      <td>-</td>\n    </tr>\n  </tbody>\n</table>\n\n_See Supplementary file 2c for unconcordant causality result; Supplementary file 2d-p for the details of Mendelian randomization results (IVW and MR-Egger)._\n\nMore conservative analyses were performed to further confirm these causal relationships. We applied 2 outlier-detected methods with modified second order weights (radial IVW and radial MR-Egger) and CAUSE (Causal Analysis Using Summary Effect estimates) to each pair of phenotypes, with the rationale that robust relationships would exhibit consistent and statistically significant results across different methods. Additionally, CAUSE is the only method capable of distinguishing causality from both correlated and uncorrelated pleiotropy. The relationship with at least two significant results was treated as a robust causality (Table 3). We found consistent evidence for a causal effect of oral and pharynx cancer on non-Hodgkin lymphoma (Pradial-IVW=6.00 \u00d7 10\u20133, Pcause = 8.90 \u00d7 10\u20133), ovary cancer on soft tissue cancer (Pradial-IVW=1.07 \u00d7 10\u20133, Pcause = 0.01), kidney cancer on lung and myeloma (Pradial-IVW=6.60 \u00d7 10\u20133, Pcause = 0.05; Pradial-IVW=0.02, Pcause = 0.02).\n\n**Table 3.**\n Sensitivity and robust analysis of the concordant causality with outlier-filtering approaches.\n\n\n<table>\n  <thead>\n    <tr>\n      <th rowspan=\"2\">Exp-out</th>\n      <th colspan=\"2\">Radial IVW</th>\n      <th colspan=\"2\">Radial MR-Egger</th>\n      <th colspan=\"2\">CAUSE</th>\n    </tr>\n    <tr>\n      <th>OR (95% CI)</th>\n      <th>p</th>\n      <th>OR (95% CI)</th>\n      <th>p</th>\n      <th>OR (95% CI)</th>\n      <th>p</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Oropharynx-NHL</td>\n      <td>1.21 (1.13\u20131.30)</td>\n      <td>6.00\u00d710\u20133</td>\n      <td>1.21 (1.13\u20131.30)</td>\n      <td>0.52</td>\n      <td>1.17 (1.05\u20131.31)</td>\n      <td>8.90\u00d710\u20133</td>\n    </tr>\n    <tr>\n      <td>Pancreas-Intestin</td>\n      <td>1.05 (0.83\u20131.32)</td>\n      <td>0.69</td>\n      <td>2.39 (0.91\u20136.31)</td>\n      <td>0.10</td>\n      <td>1.03 (0.79\u20131.35)</td>\n      <td>1.00</td>\n    </tr>\n    <tr>\n      <td>Melanoma-Breast</td>\n      <td>1.08 (1.00\u20131.15)</td>\n      <td>0.06</td>\n      <td>1.05 (0.84\u20131.32)</td>\n      <td>0.69</td>\n      <td>1.04 (0.95\u20131.16)</td>\n      <td>0.75</td>\n    </tr>\n    <tr>\n      <td>Lung-Breast</td>\n      <td>0.86 (0.79\u20130.93)</td>\n      <td>9.76\u00d710\u20133</td>\n      <td>0.77 (0.54\u20131.08)</td>\n      <td>0.19</td>\n      <td>0.89 (0.76\u20131.04)</td>\n      <td>0.23</td>\n    </tr>\n    <tr>\n      <td>Ovary-Soft</td>\n      <td>1.39 (1.22\u20131.58)</td>\n      <td>1.07\u00d710\u20133</td>\n      <td>1.3 (0.74\u20132.29)</td>\n      <td>0.39</td>\n      <td>1.36 (1.16\u20131.58)</td>\n      <td>0.01</td>\n    </tr>\n    <tr>\n      <td>Prostate-CRC</td>\n      <td>1.00 (0.95\u20131.04)</td>\n      <td>0.94</td>\n      <td>0.88 (0.80\u20130.98)</td>\n      <td>0.02</td>\n      <td>0.99 (0.93\u20131.04)</td>\n      <td>0.99</td>\n    </tr>\n    <tr>\n      <td>Kidney-Lung</td>\n      <td>1.17 (1.08\u20131.27)</td>\n      <td>6.60\u00d710\u20133</td>\n      <td>0.94 (0.62\u20131.43)</td>\n      <td>0.78</td>\n      <td>1.16 (1.02\u20131.31)</td>\n      <td>0.05</td>\n    </tr>\n    <tr>\n      <td>Kidney-Melanoma</td>\n      <td>1.33 (1.02\u20131.73)</td>\n      <td>0.04</td>\n      <td>0.56 (0.18\u20131.80)</td>\n      <td>0.37</td>\n      <td>1.25 (0.96\u20131.73)</td>\n      <td>0.51</td>\n    </tr>\n    <tr>\n      <td>Kidney-NHL</td>\n      <td>1.25 (1.11\u20131.40)</td>\n      <td>7.87\u00d710\u20133</td>\n      <td>1.33 (0.72\u20132.46)</td>\n      <td>0.39</td>\n      <td>1.20 (0.99\u20131.43)</td>\n      <td>0.09</td>\n    </tr>\n    <tr>\n      <td>Kidney-Myeloma</td>\n      <td>1.72 (1.21\u20132.45)</td>\n      <td>0.02</td>\n      <td>0.43 (0.11\u20131.77)</td>\n      <td>0.29</td>\n      <td>1.49 (1.04\u20132.34)</td>\n      <td>0.02</td>\n    </tr>\n    <tr>\n      <td>Myeloma-Lung</td>\n      <td>0.92 (0.86\u20130.98)</td>\n      <td>0.02</td>\n      <td>1.09 (0.79\u20131.51)</td>\n      <td>0.61</td>\n      <td>0.93 (0.86\u20131.00)</td>\n      <td>0.21</td>\n    </tr>\n  </tbody>\n</table>\n\n_IVW, Inverse variance weighted; CAUSE, Causal Analysis Using Summary Effect estimates; OR, odds ratio; CI, confidence interval; exp, exposure; out, outcome; NHL, non-Hodgkin lymphoma; CRC, colorectal cancer._\n\n## Discussion\n\nWith the expanded life expectancy and the prolonged survival of cancers, the incidence of SPCs has been rapidly growing in the past decades (Copur et al., 2019). Genetic factors or shared environmental factors are probably the major causes. In the previous association studies, individuals with a certain type of primary malignancy would have an increased risk of another malignancy (Feller et al., 2020; AIRTUM Working Group, 2013; Zheng et al., 2020). However, whether there are any causal effects within the associations is unclear. In the present study, via the association study based on the SEER database and the MR approach using the UKB genetic dataset, we were able to perform this comprehensive investigation across 26 different types of cancers. 13 out of 26 types of cancers with adequate GWAS data were able to be further investigated using MR analysis. We found that numbers of primary malignancies were associated with an increased risk of a second primary malignancy, however, only a small part of the associations would have a causal relationship (Table 2).\n\nMany significant findings were observed in the SEER SIR analysis. SEER is one of the largest cancer registration-based datasets making itself the most proper data source to answer the study objectives; however, several advantages of this database and limitations of the results should be noted. First, the results from the SEER SIR analysis were associations rather than causal inferences. Many factors may influence the results of the associations. For example, the confounder of screening effects may exist. Patients diagnosed with primary cancer might have more frequent healthcare visits compared to those who did not have any cancers. Therefore, some indolent cancers such as thyroid cancer and low-risk prostate cancer could have been over-diagnosed due to the screening effects. Second, it is a cancer registration-based cohort rather than a population cohort, the standardized incidences calculated from the SEER database may not represent the situation in the general population. Third, treatment preferences and follow-up strategies may vary in different locations or institutions, which would also affect the occurrence/detection of the second primary cancer. For example, radiation therapy may increase the risk of cancer in nearby organs6. However, treatment and follow-up information are not completed in the SEER database due to the natural design of the cohort31. More importantly, lifestyles, comorbidities, and environmental factors were not included in the SEER database. These are important confounders of the associations between the first primary cancers and the second primary cancers.\n\nThe MR approaches in the current study revealed some interesting findings, but several non-concordant results between MR analyses and SEER SIR were also observed (Table S20). It does not indicate that the causal relationship does not exist. Some factors, such as the period of follow-up, may conceal and cause false negatives in the association study (SEER SIR). For example, pancreatic cancer might cause an increased risk of cancers in esophagus, colon and rectum, etc. based on the MR analysis in our study; however, no association was observed in SEER SIR analysis. The short and poor survival of pancreatic cancer could be the most critical reason for the failure of finding a positive association in the population data --- simply did not have enough time of follow-up to observe the outcomes. Therefore, the interpretation of these results should be more careful at this stage.\n\nThe lack of GWAS findings would be a major limitation of the MR approach for some diseases as in the present study. The MR approach may only represent part of the biological effects in the causal pathway between the exposure and the outcome. A final causal inference should always be established based on biological mechanisms. From the angle of organ location, some cancers (ovary cancer and soft tissue sarcoma) might share the same tumor-related or tumor-developing environment. Besides the outside therapeutic settings (radio- and chemotherapy, immuno-suppressive agents) and individual factors (smoking, hormone level, certain occupational settings, HIV or HPV infections, and family histories), FPC might also influence the iatrogenic immune by suppressing antitumor defense mechanisms via inflammation or other meditating effects (Shalapour and Karin, 2019). For instance, the increased risk of renal cell cancer, and non-Hodgkin lymphoma were observed in immunosuppressed patients in Denmark and Sweden (Hortlund et al., 2017). The immune factor might be the inner relation between FPC and SPC. In our assumption, the question of mechanism should be answered via cross-trait GWAS meta-analyses, searching for shared genetic architecture under high heritability or potential meditation factors with comprehensive database and analyses, functional experiments (tissue- or cell-specific findings) and final validation in a cohort of comorbidity patients. In terms of clinical implications, lifestyle, environment, treatment, host factors and other influences may contribute to multiple primary cancer. It required clinicians and researchers to explore a specific link between FPCs and SPCs. It would be of clinical importance to make a personalized screening plan for certain primary cancer patients (eg. oral pharyngeal cancer, ovary cancer and kidney cancer), especially for those young onsets. For example, patients with kidney cancer would have an increased risk of lung cancer and myeloma. Thus, a screening for lung cancer and myeloma should be recommended among those patients.\n\nFinally, besides the limitations mentioned, the relatively small number of cases of some diseases in UKB may lower our statistical power. As UKB is a population-based prospective cohort, the relatively short follow-up period may not allow us to observe enough events (multiple cancers) at this stage. And it is expected to be independently replicated in another dataset. Regardless, these findings progress our understanding of the relationship underlying both FPCs and SPCs, and potentially provide points of exploration and intervention that may reduce second primary cancers.\n\n### Conclusion\n\nPatients who were diagnosed with a certain type of primary cancer may cause another type of primary cancer, especially pharynx cancer on non-Hodgkin lymphoma, ovary cancer on soft tissue cancer, kidney cancer on lung and myeloma. The profound mechanisms need to be studied in the future.\n",
+      "created_at": "2025-12-04T03:43:31.511640Z"
+    },
+    {
+      "id": "b4066c67-3a33-4b36-b180-79805a890624",
+      "submission_id": "b9f1361c-db98-483e-b20a-6172c22982f8",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Yongliang Yang, https://ror.org/023hj5876 Dalian University of Technology China\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.86379.sa0](https://doi.org/10.7554/eLife.86379.sa0)\n\nThis study presents a valuable finding on the causal relationship between second primary cancers and the initial diagnosis of a primary cancer via rigorous analysis of large-scale data. The strength of the study lies within the combination of pan-cancer analysis and the incorporation of Mendelian randomization. The evidence supporting the claims of the authors is solid. The work will be of interest to clinicians and cancer biologists.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Yongliang Yang, https://ror.org/023hj5876 Dalian University of Technology China\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.86379.sa1](https://doi.org/10.7554/eLife.86379.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Risk of Second Primary Cancers After a Diagnosis of First Primary Cancer: A Pan-Cancer Analysis and Mendelian Randomization Study\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Caigang Liu as the Senior Editor.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1) First primary ovarian cancers can be classified into different subtypes to further analyze the relationship between subtypes and causal secondary primary cancers, such that secondary primary cancer prevention would be more specific and targeted.\n\n2) Please consider providing a better rationale for why studying second primary cancers is crucial.\n\n3) Please provide a discussion on the potential clinical implications of the observed associations between first and second primary cancers.\n\nReviewer #1 (Recommendations for the authors):\n\n1. Four prominent groups of causal relationships mentioned in the research could be further explored. For instance, first primary ovary cancers can be classified into different subtypes to further analyze the relationship between subtypes and causal secondary primary cancers, so that secondary primary cancer prevention would be more specific and targeted.\n\n2. The limited SNPs included in some cancer types mentioned in the research might lead to missed opportunities to discover other significant associations. Enlargement of the data source could have benefits.\n\n3. SEER database used in stage 1 and UK Biobank database used in stage 2 are based on completely different populations, and this may cause confounding factors due to genetic heterogeneity, which should be considered.\n\nReviewer #2 (Recommendations for the authors):\n\nThe paper investigates the association and causal relationship of second primary cancers following a diagnosis of first primary cancer. The combination of a pan-cancer analysis and the use of Mendelian randomization adds novelty and value to the study. However, as the author state, the objective of the study is to investigate the causal relationship between FPCs and SPCs. This can be done based on the UKB data. it is not clear why use SEER data which only provides the association.\n",
+      "created_at": "2025-12-04T03:43:31.511640Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T03:43:31.511640Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T03:43:31.511640Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "8ad18ed7-b7cd-484c-a350-4fc4f0802782",
+      "content_id": "d350de64-1220-4c22-a7b1-f2cc851669eb",
+      "claim_id": "C1",
+      "claim": "The SEER Program 18 Registry database covered 27.8% of the total population in the United States.",
+      "claim_type": "EXPLICIT",
+      "source": "SEER Program 18 Registry database was obtained which covered 27.8% of the total population in the United States (\"Number of Persons by Race and Hispanic Ethnicity for SEER Participants - SEER Registries.,\") (National Cancer Institute, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text with a citation to the National Cancer Institute, 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:43:31.511640Z"
+    },
+    {
+      "id": "c9be8fa9-5d8a-4369-bbeb-cb31f43f8c4c",
+      "content_id": "d350de64-1220-4c22-a7b1-f2cc851669eb",
+      "claim_id": "C2",
+      "claim": "The SEER program is the largest cancer incidence dataset in the United States based on population cancer registration.",
+      "claim_type": "EXPLICIT",
+      "source": "The SEER program is the largest cancer incidence dataset in the United States based on population cancer registration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the SEER program's status, drawing from established knowledge about the database.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:43:31.511640Z"
+    },
+    {
+      "id": "17d0d703-4b9d-4750-b45e-f90eb442627e",
+      "content_id": "d350de64-1220-4c22-a7b1-f2cc851669eb",
+      "claim_id": "C3",
+      "claim": "The UKB project is a prospective cohort study collecting phenotypic and genotypic data from ~500,000 individuals from across the United Kingdom with median follow-up time of ~14 years.",
+      "claim_type": "EXPLICIT",
+      "source": "The UKB project is a prospective cohort study collecting phenotypic and genotypic data from ~500,000 individuals from across the United Kingdom (median follow-up time was ~14 years).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the UKB cohort characteristics.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:43:31.511640Z"
+    },
+    {
+      "id": "2b0c2681-2acd-4a0f-9448-76b9fbed6289",
+      "content_id": "d350de64-1220-4c22-a7b1-f2cc851669eb",
+      "claim_id": "C4",
+      "claim": "The participants in UKB aged between 40 and 69 at recruitment.",
+      "claim_type": "EXPLICIT",
+      "source": "The participants aged between 40 and 69 at recruitment (Bycroft et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly stated with a citation to Bycroft et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:43:31.511640Z"
+    },
+    {
+      "id": "d572b9d3-67cd-4612-bc4a-a956a75f8851",
+      "content_id": "d350de64-1220-4c22-a7b1-f2cc851669eb",
+      "claim_id": "C5",
+      "claim": "A total of 459,156 participants with European Ancestry from UKB (release V3) with GWAS genotyping array data and imputation information were included in the MR analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "In the present study, a total of 459,156 participants with European Ancestry from UKB (release V3) with GWAS genotyping array data and imputation information were obtained and included in the MR analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the study population used in the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:43:31.511640Z"
+    },
+    {
+      "id": "536757fd-0370-42b9-8366-bd8c10b06904",
+      "content_id": "d350de64-1220-4c22-a7b1-f2cc851669eb",
+      "claim_id": "C6",
+      "claim": "A total of 488,377 participants (after quality control) were genotyped in UKB using two similar genotyping arrays.",
+      "claim_type": "EXPLICIT",
+      "source": "Briefly, a total of 488,377 participants (after quality control, QC) were genotyped in UKB using two similar genotyping arrays, the UK Biobank Lung Exome Variant Evaluation (UK BiLEVE with 807,411 markers, n=49,950) and the Applied Biosystems UK BiLEVE Axiom Array by Affymetrix (825,927 markers, n=438,427).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly stated in the text describing the genotyping process.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:43:31.511640Z"
+    },
+    {
+      "id": "f808b973-6765-47ba-bb1f-75d2a6653ea7",
+      "content_id": "d350de64-1220-4c22-a7b1-f2cc851669eb",
+      "claim_id": "C7",
+      "claim": "The two genotyping arrays used in UKB share 95% of the markers.",
+      "claim_type": "EXPLICIT",
+      "source": "These two arrays share 95% of the markers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the overlap between the two arrays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:43:31.511640Z"
+    },
+    {
+      "id": "c3c9e837-a937-417f-b926-9988ff12d808",
+      "content_id": "d350de64-1220-4c22-a7b1-f2cc851669eb",
+      "claim_id": "C8",
+      "claim": "The genotype concordance rate in UKB was reported as >99.0%.",
+      "claim_type": "EXPLICIT",
+      "source": "The genotype concordance rate was reported as >99.0% (Bycroft et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly stated with a citation to Bycroft et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:43:31.511640Z"
+    },
+    {
+      "id": "24300e45-5905-4234-bedb-8f5427b726aa",
+      "content_id": "d350de64-1220-4c22-a7b1-f2cc851669eb",
+      "claim_id": "C9",
+      "claim": "A total of 93,095,623 autosomal SNPs were identified in 487,442 individuals in UKB.",
+      "claim_type": "EXPLICIT",
+      "source": "A total of 93,095,623 autosomal SNPs were identified in 487,442 individuals (Bycroft et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly stated with a citation to Bycroft et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:43:31.511640Z"
+    },
+    {
+      "id": "0083deb5-b294-477d-a196-000b77329550",
+      "content_id": "d350de64-1220-4c22-a7b1-f2cc851669eb",
+      "claim_id": "C10",
+      "claim": "A total of 264 significant standardized incidence ratio (SIR) existed among different cancers when compared to a standard population.",
+      "claim_type": "EXPLICIT",
+      "source": "A total of 264 significant standardized incidence ratio (SIR) existed among them when compared to a standard population (Supplementary file 1a-1q).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of the results from the SEER analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:43:31.511640Z"
+    },
+    {
+      "id": "b38c855d-813a-40fe-8aae-508d6e97558d",
+      "content_id": "d350de64-1220-4c22-a7b1-f2cc851669eb",
+      "claim_id": "C11",
+      "claim": "Patients with prostate cancer who received radiation therapy were at an increased risk of being diagnosed with another type of primary cancer during the follow-up including small intestine, soft tissue, and leukemia, compared with those without such therapy.",
+      "claim_type": "EXPLICIT",
+      "source": "Our subgroup analysis suggested that patients with prostate cancer who received radiation therapy were at an increased risk of being diagnosed with another type of primary cancer during the follow-up including small intestine, soft tissue, and leukemia, compared with those without such therapy (Supplementary file 1m).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of findings from subgroup analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:43:31.511640Z"
+    },
+    {
+      "id": "e8a0fb63-1cd5-4522-afc9-bd3f6335c430",
+      "content_id": "d350de64-1220-4c22-a7b1-f2cc851669eb",
+      "claim_id": "C12",
+      "claim": "Men with breast cancer had a higher risk for thyroid cancer (SIRSEER = 1.30; 95% CI, 1.13\u20131.49) and prostate cancer (SIRSEER = 2.33, 1.12\u20134.29).",
+      "claim_type": "EXPLICIT",
+      "source": "Men with breast cancer had a higher risk for thyroid cancer and prostate cancer (SIRSEER = 1.30; 95% CI, 1.13\u20131.49; SIRSEER = 2.33, 1.12\u20134.29; Supplementary file 1j), but with no significant risk change for other cancers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of findings with specific statistical values.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:43:31.511640Z"
+    },
+    {
+      "id": "0f8e3916-0b47-4780-a822-12f9e59d3aba",
+      "content_id": "d350de64-1220-4c22-a7b1-f2cc851669eb",
+      "claim_id": "C13",
+      "claim": "The number of SNPs used as instruments ranged from 5 (esophagus) to 104 (female breast).",
+      "claim_type": "EXPLICIT",
+      "source": "The number of SNPs ranged from 5 (esophagus) to 104 (female breast), and the proportion of variance explained by SNPs (R2) ranged from 0.10% (thyroid) to 8.46% (bladder).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly stated in the results section describing the instruments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:43:31.511640Z"
+    },
+    {
+      "id": "15801e95-3069-4c40-9669-008a64a8bd70",
+      "content_id": "d350de64-1220-4c22-a7b1-f2cc851669eb",
+      "claim_id": "C14",
+      "claim": "The proportion of variance explained by SNPs (R2) ranged from 0.10% (thyroid) to 8.46% (bladder).",
+      "claim_type": "EXPLICIT",
+      "source": "The number of SNPs ranged from 5 (esophagus) to 104 (female breast), and the proportion of variance explained by SNPs (R2) ranged from 0.10% (thyroid) to 8.46% (bladder).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly stated in the results section describing the instruments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:43:31.511640Z"
+    },
+    {
+      "id": "b81b119c-af1c-4889-a90a-e8f3202baa9b",
+      "content_id": "d350de64-1220-4c22-a7b1-f2cc851669eb",
+      "claim_id": "C15",
+      "claim": "F-statistics for all 13 cancers exceeded 10, suggesting no weak instrument bias.",
+      "claim_type": "EXPLICIT",
+      "source": "F-statistics for all 13 cancers exceeded 10, suggesting no weak instrument bias here.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the F-statistics with an interpretation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:43:31.511640Z"
+    },
+    {
+      "id": "ee0d64aa-b851-49dc-ac9d-5d83056d3784",
+      "content_id": "d350de64-1220-4c22-a7b1-f2cc851669eb",
+      "claim_id": "C16",
+      "claim": "A total of 23 significant associations were detected from MR analyses (16 positive causality and 7 negative causality).",
+      "claim_type": "EXPLICIT",
+      "source": "A total of 23 significant association was detected (16 positive causality and 7 negative causality).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of the MR analysis results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:43:31.511640Z"
+    },
+    {
+      "id": "4106465f-d2e5-4414-81a7-83fe8f928275",
+      "content_id": "d350de64-1220-4c22-a7b1-f2cc851669eb",
+      "claim_id": "C17",
+      "claim": "Patients diagnosed with primary oral and pharynx cancer would cause a significantly increased risk of second primary non-Hodgkin lymphoma (SIRSEER = 1.18, 95% CI: 1.05\u20131.31; IVW-MR P=8.96 \u00d7 10\u20134).",
+      "claim_type": "EXPLICIT",
+      "source": "The concordant results suggested that patients diagnosed with primary oral and pharynx cancer would cause a significantly increased risk of second primary non-Hodgkin lymphoma (SIRSEER = 1.18, 95% CI: 1.05\u20131.31; IVW-MR P=8.96 \u00d7 10\u20134).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of concordant findings from both SEER and MR analyses.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:43:31.511640Z"
+    },
+    {
+      "id": "9ff56721-1da0-4b73-89b1-a685894b066f",
+      "content_id": "d350de64-1220-4c22-a7b1-f2cc851669eb",
+      "claim_id": "C18",
+      "claim": "After a primary diagnosis of pancreatic cancer, SPC risks were increased for small intestine (SIRSEER = 4.37, 95% CI: 2.85\u20136.40; MR-Egger p=0.04).",
+      "claim_type": "EXPLICIT",
+      "source": "After a primary diagnosis of pancreatic cancer, SPC risks were increased for small intestine (SIRSEER = 4.37, 95% CI: 2.85\u20136.40; MR-Egger p=0.04).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of concordant findings from both SEER and MR analyses.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:43:31.511640Z"
+    },
+    {
+      "id": "4a56ff52-9ffa-4929-bad5-a1366250dcfe",
+      "content_id": "d350de64-1220-4c22-a7b1-f2cc851669eb",
+      "claim_id": "C19",
+      "claim": "Female patients initially diagnosed with melanoma would cause a mild but significantly increased risk of cancers in the breast (SIRSEER = 1.17, 95% CI: 1.12\u20131.23; IVW-MR p=0.04).",
+      "claim_type": "EXPLICIT",
+      "source": "It also indicated that female patients initially diagnosed with melanoma would cause a mild but significantly increased risk of cancers in the breast (SIRSEER = 1.17, 95% CI: 1.12\u20131.23; IVW-MR p=0.04), as well as ovary cancer on soft tissue related cancer (SIRSEER = 1.72, 95% CI: 1.08\u20132.60; IVW-MR p=8.39 \u00d7 10\u20135).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of concordant findings from both SEER and MR analyses.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:43:31.511640Z"
+    },
+    {
+      "id": "57c75b42-cd37-4c42-8231-150590971eb3",
+      "content_id": "d350de64-1220-4c22-a7b1-f2cc851669eb",
+      "claim_id": "C20",
+      "claim": "Ovary cancer causes an increased risk of soft tissue related cancer (SIRSEER = 1.72, 95% CI: 1.08\u20132.60; IVW-MR p=8.39 \u00d7 10\u20135).",
+      "claim_type": "EXPLICIT",
+      "source": "It also indicated that female patients initially diagnosed with melanoma would cause a mild but significantly increased risk of cancers in the breast (SIRSEER = 1.17, 95% CI: 1.12\u20131.23; IVW-MR p=0.04), as well as ovary cancer on soft tissue related cancer (SIRSEER = 1.72, 95% CI: 1.08\u20132.60; IVW-MR p=8.39 \u00d7 10\u20135).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of concordant findings from both SEER and MR analyses.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:43:31.511640Z"
+    },
+    {
+      "id": "af54c5a6-b53e-4f2b-b9d8-5356e2863fd3",
+      "content_id": "d350de64-1220-4c22-a7b1-f2cc851669eb",
+      "claim_id": "C21",
+      "claim": "A primary kidney cancer might cause an elevated risk of cancers of lung and bronchus (SIRSEER = 1.28, 95% CI: 1.22\u20131.35; IVW-MR p=0.01).",
+      "claim_type": "EXPLICIT",
+      "source": "A primary kidney cancer might cause an elevated risk of cancers of lung and bronchus (SIRSEER = 1.28, 95% CI: 1.22\u20131.35; IVW-MR p=0.01), non-Hodgkin lymphoma (SIRSEER = 1.19, 95% CI: 1.08\u20131.31; IVW-MR p=3.64 \u00d7 10\u20133), myeloma (SIRSEER = 1.54, 95% CI: 1.33\u20131.78; IVW-MR p=3.94 \u00d7 10\u20133).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of concordant findings from both SEER and MR analyses.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:43:31.511640Z"
+    },
+    {
+      "id": "09c7a1bb-c9ea-45ac-8883-2b4b7e7de3e4",
+      "content_id": "d350de64-1220-4c22-a7b1-f2cc851669eb",
+      "claim_id": "C22",
+      "claim": "A primary kidney cancer might cause an elevated risk of non-Hodgkin lymphoma (SIRSEER = 1.19, 95% CI: 1.08\u20131.31; IVW-MR p=3.64 \u00d7 10\u20133).",
+      "claim_type": "EXPLICIT",
+      "source": "A primary kidney cancer might cause an elevated risk of cancers of lung and bronchus (SIRSEER = 1.28, 95% CI: 1.22\u20131.35; IVW-MR p=0.01), non-Hodgkin lymphoma (SIRSEER = 1.19, 95% CI: 1.08\u20131.31; IVW-MR p=3.64 \u00d7 10\u20133), myeloma (SIRSEER = 1.54, 95% CI: 1.33\u20131.78; IVW-MR p=3.94 \u00d7 10\u20133).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of concordant findings from both SEER and MR analyses.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:43:31.511640Z"
+    },
+    {
+      "id": "e72163b6-7544-486c-b3e1-1bfbee3fc15d",
+      "content_id": "d350de64-1220-4c22-a7b1-f2cc851669eb",
+      "claim_id": "C23",
+      "claim": "A primary kidney cancer might cause an elevated risk of myeloma (SIRSEER = 1.54, 95% CI: 1.33\u20131.78; IVW-MR p=3.94 \u00d7 10\u20133).",
+      "claim_type": "EXPLICIT",
+      "source": "A primary kidney cancer might cause an elevated risk of cancers of lung and bronchus (SIRSEER = 1.28, 95% CI: 1.22\u20131.35; IVW-MR p=0.01), non-Hodgkin lymphoma (SIRSEER = 1.19, 95% CI: 1.08\u20131.31; IVW-MR p=3.64 \u00d7 10\u20133), myeloma (SIRSEER = 1.54, 95% CI: 1.33\u20131.78; IVW-MR p=3.94 \u00d7 10\u20133).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of concordant findings from both SEER and MR analyses.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:43:31.511640Z"
+    },
+    {
+      "id": "57a0cdb2-c4d6-4b4a-9225-042f23caf7c2",
+      "content_id": "d350de64-1220-4c22-a7b1-f2cc851669eb",
+      "claim_id": "C24",
+      "claim": "There is consistent evidence for a causal effect of oral and pharynx cancer on non-Hodgkin lymphoma (Pradial-IVW=6.00 \u00d7 10\u20133, Pcause = 8.90 \u00d7 10\u20133).",
+      "claim_type": "EXPLICIT",
+      "source": "We found consistent evidence for a causal effect of oral and pharynx cancer on non-Hodgkin lymphoma (Pradial-IVW=6.00 \u00d7 10\u20133, Pcause = 8.90 \u00d7 10\u20133), ovary cancer on soft tissue cancer (Pradial-IVW=1.07 \u00d7 10\u20133, Pcause = 0.01), kidney cancer on lung and myeloma (Pradial-IVW=6.60 \u00d7 10\u20133, Pcause = 0.05; Pradial-IVW=0.02, Pcause = 0.02).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of findings from robust analyses.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:43:31.511640Z"
+    },
+    {
+      "id": "92cef45c-4280-4afc-bb1b-c3126d213c29",
+      "content_id": "d350de64-1220-4c22-a7b1-f2cc851669eb",
+      "claim_id": "C25",
+      "claim": "There is consistent evidence for a causal effect of ovary cancer on soft tissue cancer (Pradial-IVW=1.07 \u00d7 10\u20133, Pcause = 0.01).",
+      "claim_type": "EXPLICIT",
+      "source": "We found consistent evidence for a causal effect of oral and pharynx cancer on non-Hodgkin lymphoma (Pradial-IVW=6.00 \u00d7 10\u20133, Pcause = 8.90 \u00d7 10\u20133), ovary cancer on soft tissue cancer (Pradial-IVW=1.07 \u00d7 10\u20133, Pcause = 0.01), kidney cancer on lung and myeloma (Pradial-IVW=6.60 \u00d7 10\u20133, Pcause = 0.05; Pradial-IVW=0.02, Pcause = 0.02).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of findings from robust analyses.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:43:31.511640Z"
+    },
+    {
+      "id": "7d5e73ec-0ad3-4e4f-8f06-3d44eacbbf08",
+      "content_id": "d350de64-1220-4c22-a7b1-f2cc851669eb",
+      "claim_id": "C26",
+      "claim": "There is consistent evidence for a causal effect of kidney cancer on lung cancer (Pradial-IVW=6.60 \u00d7 10\u20133, Pcause = 0.05).",
+      "claim_type": "EXPLICIT",
+      "source": "We found consistent evidence for a causal effect of oral and pharynx cancer on non-Hodgkin lymphoma (Pradial-IVW=6.00 \u00d7 10\u20133, Pcause = 8.90 \u00d7 10\u20133), ovary cancer on soft tissue cancer (Pradial-IVW=1.07 \u00d7 10\u20133, Pcause = 0.01), kidney cancer on lung and myeloma (Pradial-IVW=6.60 \u00d7 10\u20133, Pcause = 0.05; Pradial-IVW=0.02, Pcause = 0.02).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of findings from robust analyses.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:43:31.511640Z"
+    },
+    {
+      "id": "c554b937-2199-4e2d-97be-d9dfc94848e9",
+      "content_id": "d350de64-1220-4c22-a7b1-f2cc851669eb",
+      "claim_id": "C27",
+      "claim": "There is consistent evidence for a causal effect of kidney cancer on myeloma (Pradial-IVW=0.02, Pcause = 0.02).",
+      "claim_type": "EXPLICIT",
+      "source": "We found consistent evidence for a causal effect of oral and pharynx cancer on non-Hodgkin lymphoma (Pradial-IVW=6.00 \u00d7 10\u20133, Pcause = 8.90 \u00d7 10\u20133), ovary cancer on soft tissue cancer (Pradial-IVW=1.07 \u00d7 10\u20133, Pcause = 0.01), kidney cancer on lung and myeloma (Pradial-IVW=6.60 \u00d7 10\u20133, Pcause = 0.05; Pradial-IVW=0.02, Pcause = 0.02).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of findings from robust analyses.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:43:31.511640Z"
+    },
+    {
+      "id": "7a3e9cbb-6a23-47fe-a87e-e9e37eec7a81",
+      "content_id": "d350de64-1220-4c22-a7b1-f2cc851669eb",
+      "claim_id": "C28",
+      "claim": "Cancer incidence is rapidly growing worldwide in the past decades.",
+      "claim_type": "EXPLICIT",
+      "source": "Cancer incidence is rapidly growing worldwide in the past decades. The reasons are complex including the aging of the population, the application of screening, environmental risk factors and genetic risk factors (Sung et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly stated with a citation to Sung et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:43:31.511640Z"
+    },
+    {
+      "id": "e80b46f8-1d35-43b6-ae8b-7697c842986b",
+      "content_id": "d350de64-1220-4c22-a7b1-f2cc851669eb",
+      "claim_id": "C29",
+      "claim": "The reasons for rapidly growing cancer incidence are complex including the aging of the population, the application of screening, environmental risk factors and genetic risk factors.",
+      "claim_type": "EXPLICIT",
+      "source": "Cancer incidence is rapidly growing worldwide in the past decades. The reasons are complex including the aging of the population, the application of screening, environmental risk factors and genetic risk factors (Sung et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly stated with a citation to Sung et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:43:31.511640Z"
+    },
+    {
+      "id": "228b9311-35ec-41e8-af84-9a5e996b87e9",
+      "content_id": "d350de64-1220-4c22-a7b1-f2cc851669eb",
+      "claim_id": "C30",
+      "claim": "In 2020, there were an estimated 19.3 million new cases and 10.0 million deaths of different types of cancers globally.",
+      "claim_type": "EXPLICIT",
+      "source": "In 2020, there were an estimated 19.3 million new cases and 10.0 million deaths of different types of cancers globally (Sung et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly stated with a citation to Sung et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:43:31.511640Z"
+    },
+    {
+      "id": "ef36abdf-c6a2-4bb1-a44c-65e07433bf9b",
+      "content_id": "d350de64-1220-4c22-a7b1-f2cc851669eb",
+      "claim_id": "C31",
+      "claim": "In the US, there would be about 1.9 million new cases of cancers in 2023.",
+      "claim_type": "EXPLICIT",
+      "source": "In the US, there would be about 1.9 million new cases of cancers in 2023,and the most common type of cancers in the male and the female were prostate cancer (29%) and breast cancer (31%), respectively (Siegel et al., 2022; Siegel et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly stated with citations to Siegel et al., 2022 and 2023.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:43:31.511640Z"
+    },
+    {
+      "id": "3dccf93f-2c41-4592-ab48-30829de61f2f",
+      "content_id": "d350de64-1220-4c22-a7b1-f2cc851669eb",
+      "claim_id": "C32",
+      "claim": "The most common type of cancers in the male and the female in the US were prostate cancer (29%) and breast cancer (31%), respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "In the US, there would be about 1.9 million new cases of cancers in 2023,and the most common type of cancers in the male and the female were prostate cancer (29%) and breast cancer (31%), respectively (Siegel et al., 2022; Siegel et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly stated with citations to Siegel et al., 2022 and 2023.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:43:31.511640Z"
+    },
+    {
+      "id": "bf64c8bb-b4b9-404f-80e6-a0a381242974",
+      "content_id": "d350de64-1220-4c22-a7b1-f2cc851669eb",
+      "claim_id": "C33",
+      "claim": "The survival of (most types of) cancers in the US has vastly improved since the mid-1990s with medical advances and technical developments.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the rapidly increased incidence of cancers, the survival of (most types of) cancers in the US has vastly improved since the mid-1990s with medical advances and technical developments (Siegel et al., 2022; Siegel et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly stated with citations to Siegel et al., 2022 and 2023.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:43:31.511640Z"
+    },
+    {
+      "id": "7816fc71-86e4-4a2f-aea6-6e58f76a8929",
+      "content_id": "d350de64-1220-4c22-a7b1-f2cc851669eb",
+      "claim_id": "C34",
+      "claim": "The 5-year relative survival rates of prostate cancer, melanoma, and female breast cancer, during 2011\u20132017 in the US were 98%, 93%, and 90%, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the 5-year relative survival rates of prostate cancer, melanoma, and female breast cancer, during 2011\u20132017 in the US were 98%, 93%, and 90%, respectively (Siegel et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly stated with a citation to Siegel et al., 2022.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:43:31.511640Z"
+    },
+    {
+      "id": "bec9620e-f939-476b-a74d-29853b45f991",
+      "content_id": "d350de64-1220-4c22-a7b1-f2cc851669eb",
+      "claim_id": "C35",
+      "claim": "Increased risks of SPCs were observed in many types of cancer as the FPCs according to Italian (1976\u20132010), Swiss (1981\u20132009), and Swedish (1990\u20132015) cancer registration data.",
+      "claim_type": "EXPLICIT",
+      "source": "According to the Italian (1976\u20132010; AIRTUM Working Group, 2013), the Swiss (1981\u20132009; Feller et al., 2020), and the Swedish (1990\u20132015; Zheng et al., 2020) cancer registration data, increased risks of SPCs were observed in many types of cancer as the FPCs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly stated with citations to multiple studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:43:31.511640Z"
+    },
+    {
+      "id": "2919d229-091d-4f66-9d36-c9f733c75ff7",
+      "content_id": "d350de64-1220-4c22-a7b1-f2cc851669eb",
+      "claim_id": "C36",
+      "claim": "Patients with oral cavity & pharynx, larynx, and esophagus as FPC were found to have a significantly elevated risk of any SPCs in both Italy and Switzerland.",
+      "claim_type": "EXPLICIT",
+      "source": "Patients with oral cavity & pharynx, larynx, and esophagus as FPC were found to have a significantly elevated risk of any SPCs in both Italy and Switzerland (Feller et al., 2020; AIRTUM Working Group, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly stated with citations to Feller et al., 2020 and AIRTUM Working Group, 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:43:31.511640Z"
+    },
+    {
+      "id": "3a5c51d3-cbaf-4e64-8ae9-0a300fb12745",
+      "content_id": "d350de64-1220-4c22-a7b1-f2cc851669eb",
+      "claim_id": "C37",
+      "claim": "In Sweden, liver cancers, as well as nasal and oral cancers, were found to be associated with SPCs.",
+      "claim_type": "EXPLICIT",
+      "source": "In Sweden, liver cancers, as well as nasal and oral cancers, were found to be associated with SPCs (Zheng et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly stated with a citation to Zheng et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:43:31.511640Z"
+    },
+    {
+      "id": "2bf91db1-bda7-4773-891c-9225769ef15b",
+      "content_id": "d350de64-1220-4c22-a7b1-f2cc851669eb",
+      "claim_id": "C38",
+      "claim": "Increased FPC risk of colorectal cancer, kidney cancer, and melanoma were observed following the diagnosis of non-Hodgkin lymphoma.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, increased FPC risk of colorectal cancer, kidney cancer, and melanoma were observed following the diagnosis of non-Hodgkin lymphoma.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly stated as an example from previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:43:31.511640Z"
+    },
+    {
+      "id": "f021e577-58af-44f4-99b6-8ef69ea34372",
+      "content_id": "d350de64-1220-4c22-a7b1-f2cc851669eb",
+      "claim_id": "C39",
+      "claim": "The incidence of SPCs has been rapidly growing in the past decades with the expanded life expectancy and the prolonged survival of cancers.",
+      "claim_type": "EXPLICIT",
+      "source": "With the expanded life expectancy and the prolonged survival of cancers, the incidence of SPCs has been rapidly growing in the past decades (Copur et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly stated with a citation to Copur et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:43:31.511640Z"
+    },
+    {
+      "id": "7f4fb0f0-c0aa-4b83-b0f2-0274ee19b6b4",
+      "content_id": "d350de64-1220-4c22-a7b1-f2cc851669eb",
+      "claim_id": "C40",
+      "claim": "Genetic factors or shared environmental factors are probably the major causes of increased SPC incidence.",
+      "claim_type": "EXPLICIT",
+      "source": "Genetic factors or shared environmental factors are probably the major causes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement representing a hypothesis or speculation about causes.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:43:31.511640Z"
+    },
+    {
+      "id": "81859155-d24b-40c8-b2c7-f03d8a837dcc",
+      "content_id": "d350de64-1220-4c22-a7b1-f2cc851669eb",
+      "claim_id": "C41",
+      "claim": "Radiation therapy may increase the risk of cancer in nearby organs.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, radiation therapy may increase the risk of cancer in nearby organs6.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly stated as an example of treatment effects.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:43:31.511640Z"
+    },
+    {
+      "id": "b9f6cf20-a8c2-443c-bca4-d3d343766b92",
+      "content_id": "d350de64-1220-4c22-a7b1-f2cc851669eb",
+      "claim_id": "C42",
+      "claim": "The increased risk of renal cell cancer, and non-Hodgkin lymphoma were observed in immunosuppressed patients in Denmark and Sweden.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, the increased risk of renal cell cancer, and non-Hodgkin lymphoma were observed in immunosuppressed patients in Denmark and Sweden (Hortlund et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly stated with a citation to Hortlund et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:43:31.511640Z"
+    },
+    {
+      "id": "468c6483-5be6-4714-a7a4-2d673c06ca80",
+      "content_id": "d350de64-1220-4c22-a7b1-f2cc851669eb",
+      "claim_id": "C43",
+      "claim": "Patients initially diagnosed with oral pharyngeal cancer would have an increased risk of non-Hodgkin lymphoma (SIRSEER = 1.18, 95%Confidence Interval [CI]:1.05\u20131.31, ORradial-MR=1.21, 95% CI:1.13\u20131.30, p=6.00 \u00d7 10-3; ORcause = 1.17, 95% CI:1.05\u20131.31, p=8.90 \u00d7 10-3).",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, patients initially diagnosed with oral pharyngeal cancer would have an increased risk of non-Hodgkin lymphoma (SIRSEER = 1.18, 95%Confidence Interval [CI]:1.05\u20131.31, ORradial-MR=1.21, 95% CI:1.13\u20131.30, p=6.00 \u00d7 10-3; ORcause = 1.17, 95% CI:1.05\u20131.31, p=8.90 \u00d7 10-3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of findings from the abstract with specific statistical values.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:43:31.511640Z"
+    },
+    {
+      "id": "70fe3eea-8735-4c30-b8cc-416079d6a1a6",
+      "content_id": "d350de64-1220-4c22-a7b1-f2cc851669eb",
+      "claim_id": "C44",
+      "claim": "Ovary cancer was identified to be a risk factor for soft tissue cancer (SIRSEER = 1.72, 95%Confidence Interval [CI]:1.08\u20132.60, ORradial-MR=1.39, 95% CI:1.22\u20131.58, p=1.07 \u00d7 10-3; ORcause = 1.36, 95% CI:1.16\u20131.58, p=0.01).",
+      "claim_type": "EXPLICIT",
+      "source": "Meanwhile, ovary cancer was identified to be a risk factor for soft tissue cancer (SIRSEER = 1.72, 95%Confidence Interval [CI]:1.08\u20132.60, ORradial-MR=1.39, 95% CI:1.22\u20131.58, p=1.07 \u00d7 10-3; ORcause = 1.36, 95% CI:1.16\u20131.58, p=0.01).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of findings from the abstract with specific statistical values.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:43:31.511640Z"
+    },
+    {
+      "id": "436b96ae-fbf4-45cc-b725-60697b18ae40",
+      "content_id": "d350de64-1220-4c22-a7b1-f2cc851669eb",
+      "claim_id": "C45",
+      "claim": "Kidney cancer was likely to cause the development of lung cancer (SIRSEER = 1.28, 95%Confidence Interval [CI]:1.22\u20131.35, ORradial-MR=1.17, 95% CI:1.08\u20131.27, p=6.60 \u00d7 10-3; ORcause = 1.16, 95% CI:1.02\u20131.31, p=0.05).",
+      "claim_type": "EXPLICIT",
+      "source": "And kidney cancer was likely to cause the development of lung cancer (SIRSEER = 1.28, 95%Confidence Interval [CI]:1.22\u20131.35, ORradial-MR=1.17, 95% CI:1.08\u20131.27, p=6.60 \u00d7 10-3; ORcause = 1.16, 95% CI:1.02\u20131.31, p=0.05) and myeloma (SIRSEER = 1.54, 95%Confidence Interval [CI]:1.33\u20131.78, ORradial-MR=1.72, 95% CI:1.21\u20132.45, p=0.02; ORcause = 1.49, 95% CI:1.04\u20132.34, p=0.02).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of findings from the abstract with specific statistical values.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:43:31.511640Z"
+    },
+    {
+      "id": "7092f21e-01a0-455a-9f19-216cccccd1cc",
+      "content_id": "d350de64-1220-4c22-a7b1-f2cc851669eb",
+      "claim_id": "C46",
+      "claim": "Kidney cancer was likely to cause the development of myeloma (SIRSEER = 1.54, 95%Confidence Interval [CI]:1.33\u20131.78, ORradial-MR=1.72, 95% CI:1.21\u20132.45, p=0.02; ORcause = 1.49, 95% CI:1.04\u20132.34, p=0.02).",
+      "claim_type": "EXPLICIT",
+      "source": "And kidney cancer was likely to cause the development of lung cancer (SIRSEER = 1.28, 95%Confidence Interval [CI]:1.22\u20131.35, ORradial-MR=1.17, 95% CI:1.08\u20131.27, p=6.60 \u00d7 10-3; ORcause = 1.16, 95% CI:1.02\u20131.31, p=0.05) and myeloma (SIRSEER = 1.54, 95%Confidence Interval [CI]:1.33\u20131.78, ORradial-MR=1.72, 95% CI:1.21\u20132.45, p=0.02; ORcause = 1.49, 95% CI:1.04\u20132.34, p=0.02).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of findings from the abstract with specific statistical values.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:43:31.511640Z"
+    },
+    {
+      "id": "d7fc4dff-9de0-43e0-946e-dd770efda689",
+      "content_id": "d350de64-1220-4c22-a7b1-f2cc851669eb",
+      "claim_id": "C47",
+      "claim": "11 significant cross-correlations among different cancers were found after harmonizing SIR and MR results.",
+      "claim_type": "EXPLICIT",
+      "source": "We found 11 significant cross-correlations among different cancers after harmonizing SIR and MR results.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of findings from the abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:43:31.511640Z"
+    },
+    {
+      "id": "73a341cd-2e01-4b75-8f97-77de0a925677",
+      "content_id": "d350de64-1220-4c22-a7b1-f2cc851669eb",
+      "claim_id": "C48",
+      "claim": "Only 4 of the 11 significant cross-correlations were confirmed by MR to have a robust causal relationship.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas only 4 of them were confirmed by MR to have a robust causal relationship.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of findings from the abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:43:31.511640Z"
+    },
+    {
+      "id": "e6643232-ca9e-4631-a688-c381d2cc80e8",
+      "content_id": "d350de64-1220-4c22-a7b1-f2cc851669eb",
+      "claim_id": "C49",
+      "claim": "A certain type of primary cancer may cause another second primary cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "A certain type of primary cancer may cause another second primary cancer, and the profound mechanisms need to be studied in the future.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion stated in the abstract.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:43:31.511640Z"
+    },
+    {
+      "id": "3a00c8f9-bd94-445e-84c9-44fd95f0c5d1",
+      "content_id": "d350de64-1220-4c22-a7b1-f2cc851669eb",
+      "claim_id": "C50",
+      "claim": "Prolonged survival makes it possible for individuals to be diagnosed with a second primary cancer (SPC) after the first primary cancer (FPC) during the follow-up.",
+      "claim_type": "EXPLICIT",
+      "source": "More importantly, prolonged survival makes it possible for individuals to be diagnosed with a second primary cancer (SPC) after the first primary cancer (FPC) during the follow-up.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the relationship between survival and SPC risk.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:43:31.511640Z"
+    },
+    {
+      "id": "ec07251c-316e-4001-b64a-9e5ebba474c2",
+      "content_id": "d350de64-1220-4c22-a7b1-f2cc851669eb",
+      "claim_id": "C51",
+      "claim": "Second primary thyroid cancer, small bowel cancer, or cancers of endocrine system were strongly and significantly associated with most of the FPCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Second primary thyroid cancer, small bowel cancer, or cancers of endocrine system were strongly and significantly associated with most of the FPCs.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and illustrated in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:43:31.511640Z"
+    },
+    {
+      "id": "2df42d25-bca5-4435-9c7e-c2807bc9daeb",
+      "content_id": "d350de64-1220-4c22-a7b1-f2cc851669eb",
+      "claim_id": "C52",
+      "claim": "Cancers of the digestive system, cervix uteri, as well as lung cancer were clustered together and are closely correlated with an increased risk of several types of cancers such as bladder cancer, kidney cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "Cancers of the digestive system, cervix uteri, as well as lung cancer were clustered together. They are closely correlated with an increased risk of several types of cancers such as bladder cancer, kidney cancer, etc.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and illustrated in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:43:31.511640Z"
+    },
+    {
+      "id": "ff2b36ba-5e65-49c8-b143-e9c4ccfe23c4",
+      "content_id": "d350de64-1220-4c22-a7b1-f2cc851669eb",
+      "claim_id": "C53",
+      "claim": "The study was approved by the Northwest Multi\u2010centre Research Ethics in Manchester, UK (IRAS project ID: 299116; Application No. 66813).",
+      "claim_type": "EXPLICIT",
+      "source": "The study was approved by the Northwest Multi\u2010centre Research Ethics in Manchester, UK (IRAS project ID: 299116; Application No. 66813).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about ethical approval.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:43:31.511640Z"
+    },
+    {
+      "id": "9fc41725-2931-40ce-a0b3-8e15ee53a76f",
+      "content_id": "d350de64-1220-4c22-a7b1-f2cc851669eb",
+      "claim_id": "C54",
+      "claim": "Written informed consent was obtained from all the participants from SEER or UKB according to the established standard of the studies.",
+      "claim_type": "EXPLICIT",
+      "source": "Written informed consent was obtained from all the participants from SEER or UKB according to the established standard of the studies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about informed consent.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:43:31.511640Z"
+    },
+    {
+      "id": "f9baf040-dc6e-42b5-b426-01e29883b15c",
+      "content_id": "d350de64-1220-4c22-a7b1-f2cc851669eb",
+      "claim_id": "C55",
+      "claim": "A minimum 2-month latency period between the first and second primary diagnosis was restricted.",
+      "claim_type": "EXPLICIT",
+      "source": "We restricted a minimum 2-month latency period between the first and second primary diagnosis (Davis et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the study design with a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:43:31.511640Z"
+    },
+    {
+      "id": "36e4bf08-260f-470c-a803-e1aa9ec7f4f6",
+      "content_id": "d350de64-1220-4c22-a7b1-f2cc851669eb",
+      "claim_id": "C56",
+      "claim": "The study included adult patients (age \u226520 years) diagnosed with an FPC between 2000 and 2016.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on the ICD-10 code, we identified adult patients (age \u226520 years) diagnosed with an FPC between 2000 and 2016, including 22 types of solid-tumor sites (oral cavity and pharynx, esophagus, stomach, small intestine, colon and rectum, liver, gallbladder, pancreas, larynx, lung and bronchus, bones and joints, soft tissue including heart, melanoma of the skin, female breast, male breast, cervix uteri, ovary, prostate, bladder, kidney, renal pelvis and ureter, brain, thyroid) and 4 types of hematological malignancies (Hodgkin lymphoma, non-Hodgkin lymphoma, myeloma, leukemia).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the study population.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:43:31.511640Z"
+    },
+    {
+      "id": "37ef61c8-016a-4485-8453-518c00bfa9b1",
+      "content_id": "d350de64-1220-4c22-a7b1-f2cc851669eb",
+      "claim_id": "C57",
+      "claim": "Patients with diagnosis by autopsy or mentioned in the death certificate only were excluded.",
+      "claim_type": "EXPLICIT",
+      "source": "Patients with diagnosis by autopsy or mentioned in the death certificate only were excluded.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about exclusion criteria.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:43:31.511640Z"
+    },
+    {
+      "id": "6d5e36f3-fe07-4c47-8a32-2532108463e5",
+      "content_id": "d350de64-1220-4c22-a7b1-f2cc851669eb",
+      "claim_id": "C58",
+      "claim": "Non-Caucasian patients were not included in the present study in SEER or UKB due to the small number of subjects in UKB.",
+      "claim_type": "EXPLICIT",
+      "source": "Non-Caucasian patients were not included in the present study in SEER or UKB due to the small number of subjects in UKB, which made it hard to make the causal inference.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about inclusion criteria and rationale.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:43:31.511640Z"
+    },
+    {
+      "id": "ed44b179-0d91-4deb-9e96-5de7f130498e",
+      "content_id": "d350de64-1220-4c22-a7b1-f2cc851669eb",
+      "claim_id": "C59",
+      "claim": "The UK Biobank Lung Exome Variant Evaluation (UK BiLEVE) array had 807,411 markers and was used for n=49,950 participants.",
+      "claim_type": "EXPLICIT",
+      "source": "Briefly, a total of 488,377 participants (after quality control, QC) were genotyped in UKB using two similar genotyping arrays, the UK Biobank Lung Exome Variant Evaluation (UK BiLEVE with 807,411 markers, n=49,950) and the Applied Biosystems UK BiLEVE Axiom Array by Affymetrix (825,927 markers, n=438,427).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the genotyping arrays used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:43:31.511640Z"
+    },
+    {
+      "id": "d669d4b2-c59c-4ccb-97ec-6f93a3259822",
+      "content_id": "d350de64-1220-4c22-a7b1-f2cc851669eb",
+      "claim_id": "C60",
+      "claim": "The Applied Biosystems UK BiLEVE Axiom Array by Affymetrix had 825,927 markers and was used for n=438,427 participants.",
+      "claim_type": "EXPLICIT",
+      "source": "Briefly, a total of 488,377 participants (after quality control, QC) were genotyped in UKB using two similar genotyping arrays, the UK Biobank Lung Exome Variant Evaluation (UK BiLEVE with 807,411 markers, n=49,950) and the Applied Biosystems UK BiLEVE Axiom Array by Affymetrix (825,927 markers, n=438,427).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the genotyping arrays used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:43:31.511640Z"
+    },
+    {
+      "id": "809a1acb-e38c-4135-bf50-81fa1d16a544",
+      "content_id": "d350de64-1220-4c22-a7b1-f2cc851669eb",
+      "claim_id": "C61",
+      "claim": "Individuals were excluded if ancestry testing using principal component analysis (PCA) revealed potential conflicts between self-reported ethnicity/race and the genetic ethnicity/race.",
+      "claim_type": "EXPLICIT",
+      "source": "Individuals were excluded if: (a) ancestry testing using principal component analysis (PCA) to evaluate the potential conflicts between self-reported ethnicity/race and the genetic ethnicity/race; (b) Poor call rate at the genotyping stage (n=968, 0.2%); (c) Mismatched results between self-reported gender and genetic gender (n=652, 0.13%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about exclusion criteria.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:43:31.511640Z"
+    },
+    {
+      "id": "1f762a1a-22d9-4138-847c-5e799bebf6cc",
+      "content_id": "d350de64-1220-4c22-a7b1-f2cc851669eb",
+      "claim_id": "C62",
+      "claim": "968 individuals (0.2%) were excluded due to poor call rate at the genotyping stage.",
+      "claim_type": "EXPLICIT",
+      "source": "Individuals were excluded if: (a) ancestry testing using principal component analysis (PCA) to evaluate the potential conflicts between self-reported ethnicity/race and the genetic ethnicity/race; (b) Poor call rate at the genotyping stage (n=968, 0.2%); (c) Mismatched results between self-reported gender and genetic gender (n=652, 0.13%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about exclusion criteria with specific numbers.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:43:31.511640Z"
+    },
+    {
+      "id": "959f3d94-f41e-4404-bba7-968f1e37cbf8",
+      "content_id": "d350de64-1220-4c22-a7b1-f2cc851669eb",
+      "claim_id": "C63",
+      "claim": "652 individuals (0.13%) were excluded due to mismatched results between self-reported gender and genetic gender.",
+      "claim_type": "EXPLICIT",
+      "source": "Individuals were excluded if: (a) ancestry testing using principal component analysis (PCA) to evaluate the potential conflicts between self-reported ethnicity/race and the genetic ethnicity/race; (b) Poor call rate at the genotyping stage (n=968, 0.2%); (c) Mismatched results between self-reported gender and genetic gender (n=652, 0.13%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about exclusion criteria with specific numbers.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:43:31.511640Z"
+    },
+    {
+      "id": "367406e5-499a-4f74-bd30-609cd7ed21c9",
+      "content_id": "d350de64-1220-4c22-a7b1-f2cc851669eb",
+      "claim_id": "C64",
+      "claim": "SNPs were selected from a single GWAS that identified the largest number of risk-associated SNPs and were conducted in European ancestry.",
+      "claim_type": "EXPLICIT",
+      "source": "SNPs selection was based on the following criteria: (1) SNPs were from a single GWAS that identified the largest number of risk-associated SNPs and were conducted in European ancestry; (2) SNPs reached genome-wide significant level (P<5 \u00d7 10\u20138); (3) SNPs were independent of each other in terms of linkage disequilibrium (LD, r2 <0.001) and distance (>10,000 kb).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about SNP selection criteria.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:43:31.511640Z"
+    },
+    {
+      "id": "a2eb0d6f-c1da-4a73-8a7b-8d2856b859ef",
+      "content_id": "d350de64-1220-4c22-a7b1-f2cc851669eb",
+      "claim_id": "C65",
+      "claim": "SNPs reached genome-wide significant level (P<5 \u00d7 10\u20138).",
+      "claim_type": "EXPLICIT",
+      "source": "SNPs selection was based on the following criteria: (1) SNPs were from a single GWAS that identified the largest number of risk-associated SNPs and were conducted in European ancestry; (2) SNPs reached genome-wide significant level (P<5 \u00d7 10\u20138); (3) SNPs were independent of each other in terms of linkage disequilibrium (LD, r2 <0.001) and distance (>10,000 kb).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about SNP selection criteria.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:43:31.511640Z"
+    },
+    {
+      "id": "28ac03c5-2497-4030-aa48-f041370e4d44",
+      "content_id": "d350de64-1220-4c22-a7b1-f2cc851669eb",
+      "claim_id": "C66",
+      "claim": "SNPs were independent of each other in terms of linkage disequilibrium (LD, r2 <0.001) and distance (>10,000 kb).",
+      "claim_type": "EXPLICIT",
+      "source": "SNPs selection was based on the following criteria: (1) SNPs were from a single GWAS that identified the largest number of risk-associated SNPs and were conducted in European ancestry; (2) SNPs reached genome-wide significant level (P<5 \u00d7 10\u20138); (3) SNPs were independent of each other in terms of linkage disequilibrium (LD, r2 <0.001) and distance (>10,000 kb).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about SNP selection criteria.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:43:31.511640Z"
+    },
+    {
+      "id": "578406c4-11d9-47f7-8472-352d9b81affa",
+      "content_id": "d350de64-1220-4c22-a7b1-f2cc851669eb",
+      "claim_id": "C67",
+      "claim": "The strength of each instrument was measured using the F statistic and the proportion of the explained variance (R2), which was considered to be sufficient if the corresponding F-statistic is >10.",
+      "claim_type": "EXPLICIT",
+      "source": "For assumption (i), the strength of each instrument was measured using the F statistic and the proportion of the explained variance (R2), which was considered to be sufficient if the corresponding F-statistic is >10.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about instrument strength assessment.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:43:31.511640Z"
+    },
+    {
+      "id": "47c80a9b-d94c-4510-b8db-769f139ce164",
+      "content_id": "d350de64-1220-4c22-a7b1-f2cc851669eb",
+      "claim_id": "C68",
+      "claim": "SNPs were examined for significant associations with established risk factors for certain cancers, including BMI, smoking, alcohol intake and physical inactivity, and those at p<1.0 \u00d7 10\u20135 were excluded.",
+      "claim_type": "EXPLICIT",
+      "source": "For assumption (ii) and (iii), we searched the PhenoScanner database (available at http://www.phenoscanner.medschl.cam.ac.uk/phenoscanner) (Kamat et al., 2019; Staley et al., 2016) to examine whether SNPs were significantly associated with established risk factors for certain cancers, including BMI, smoking, alcohol intake and physical inactivity, and excluded those at p<1.0 \u00d7 10\u20135.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about SNP filtering with citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:43:31.511640Z"
+    },
+    {
+      "id": "eba540da-de26-4ce2-831f-4a14f51a2800",
+      "content_id": "d350de64-1220-4c22-a7b1-f2cc851669eb",
+      "claim_id": "C69",
+      "claim": "IVW-MR is based on a random effect model and is the most efficient with the greatest statistical power.",
+      "claim_type": "EXPLICIT",
+      "source": "IVW-MR is based on a random effect model and is the most efficient with the greatest statistical power (Hemani et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the IVW-MR method with a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:43:31.511640Z"
+    },
+    {
+      "id": "f1ac0e08-cc0d-44e9-9acc-f548113fc787",
+      "content_id": "d350de64-1220-4c22-a7b1-f2cc851669eb",
+      "claim_id": "C70",
+      "claim": "Potential bias as horizontal pleiotropy was evaluated and adjusted via MR-Egger.",
+      "claim_type": "EXPLICIT",
+      "source": "Potential bias as horizontal pleiotropy was evaluated and adjusted via MR-Egger (Burgess et al., 2019; Burgess and Thompson, 2017; Davies et al., 2018; Hemani et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the MR-Egger method with citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:43:31.511640Z"
+    },
+    {
+      "id": "28a412c3-57e4-4e7d-8c98-e4b287d5dbd5",
+      "content_id": "d350de64-1220-4c22-a7b1-f2cc851669eb",
+      "claim_id": "C71",
+      "claim": "A causal relationship will only be interpreted when a significant MR result was observed from MR analyses together with a significant association based on the SEER database.",
+      "claim_type": "EXPLICIT",
+      "source": "A causal relationship will only be interpreted when a significant MR result was observed from MR analyses together with a significant association based on the SEER database.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the criteria for causal interpretation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:43:31.511640Z"
+    },
+    {
+      "id": "afcc725d-7f7a-4e90-828c-11c781b7cb07",
+      "content_id": "d350de64-1220-4c22-a7b1-f2cc851669eb",
+      "claim_id": "C72",
+      "claim": "MR would be performed based on at least 4 SNPs.",
+      "claim_type": "EXPLICIT",
+      "source": "MR would be performed based on at least 4 SNPs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the minimum number of SNPs required for MR.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:43:31.511640Z"
+    },
+    {
+      "id": "b5e1bd76-abd8-449d-b69a-17ec57a32bef",
+      "content_id": "d350de64-1220-4c22-a7b1-f2cc851669eb",
+      "claim_id": "C73",
+      "claim": "The causal inference was interpreted via IVW-MR results if the horizontal pleiotropic effect was not significant; otherwise, based on MR-Egger.",
+      "claim_type": "EXPLICIT",
+      "source": "The causal inference was interpreted via IVW-MR results if the horizontal pleiotropic effect was not significant; otherwise, based on MR-Egger.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the interpretation strategy.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:43:31.511640Z"
+    },
+    {
+      "id": "0379bcdd-a5e2-4dc7-bb1c-79d47160bb74",
+      "content_id": "d350de64-1220-4c22-a7b1-f2cc851669eb",
+      "claim_id": "C74",
+      "claim": "A type I error of 0.05 (two-sided) was used to define statistical significance.",
+      "claim_type": "EXPLICIT",
+      "source": "A type I error of 0.05 (two-sided) was used to define statistical significance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the statistical threshold.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:43:31.511640Z"
+    },
+    {
+      "id": "ddfd265c-988e-4e63-8418-0fc79c3e8230",
+      "content_id": "d350de64-1220-4c22-a7b1-f2cc851669eb",
+      "claim_id": "C75",
+      "claim": "The results from the SEER SIR analysis were associations rather than causal inferences.",
+      "claim_type": "EXPLICIT",
+      "source": "First, the results from the SEER SIR analysis were associations rather than causal inferences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the limitations of the SEER analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:43:31.511640Z"
+    },
+    {
+      "id": "d121fd7b-f411-49dc-8a54-e95df1258645",
+      "content_id": "d350de64-1220-4c22-a7b1-f2cc851669eb",
+      "claim_id": "C76",
+      "claim": "The confounder of screening effects may exist in SEER SIR analysis because patients diagnosed with primary cancer might have more frequent healthcare visits compared to those who did not have any cancers.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the confounder of screening effects may exist. Patients diagnosed with primary cancer might have more frequent healthcare visits compared to those who did not have any cancers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about potential confounding.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:43:31.511640Z"
+    },
+    {
+      "id": "7fb8b638-55bd-4e3c-a430-a0631cd34ded",
+      "content_id": "d350de64-1220-4c22-a7b1-f2cc851669eb",
+      "claim_id": "C77",
+      "claim": "Some indolent cancers such as thyroid cancer and low-risk prostate cancer could have been over-diagnosed due to the screening effects.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, some indolent cancers such as thyroid cancer and low-risk prostate cancer could have been over-diagnosed due to the screening effects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about potential over-diagnosis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:43:31.511640Z"
+    },
+    {
+      "id": "9245939e-d9b1-4ddf-8348-e9708d1befba",
+      "content_id": "d350de64-1220-4c22-a7b1-f2cc851669eb",
+      "claim_id": "C78",
+      "claim": "SEER is a cancer registration-based cohort rather than a population cohort, so the standardized incidences calculated from the SEER database may not represent the situation in the general population.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, it is a cancer registration-based cohort rather than a population cohort, the standardized incidences calculated from the SEER database may not represent the situation in the general population.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about a limitation of the SEER database.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:43:31.511640Z"
+    },
+    {
+      "id": "8300754e-d0b3-4d67-b0ab-7686fc58027e",
+      "content_id": "d350de64-1220-4c22-a7b1-f2cc851669eb",
+      "claim_id": "C79",
+      "claim": "Treatment preferences and follow-up strategies may vary in different locations or institutions, which would also affect the occurrence/detection of the second primary cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, treatment preferences and follow-up strategies may vary in different locations or institutions, which would also affect the occurrence/detection of the second primary cancer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about potential confounding factors.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:43:31.511640Z"
+    },
+    {
+      "id": "8978e4a8-b1da-424d-a53f-f59f19b52692",
+      "content_id": "d350de64-1220-4c22-a7b1-f2cc851669eb",
+      "claim_id": "C80",
+      "claim": "Treatment and follow-up information are not completed in the SEER database due to the natural design of the cohort.",
+      "claim_type": "EXPLICIT",
+      "source": "However, treatment and follow-up information are not completed in the SEER database due to the natural design of the cohort31.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about a limitation of the SEER database.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:43:31.511640Z"
+    },
+    {
+      "id": "31b63d9c-622e-4112-bd92-83f21c524551",
+      "content_id": "d350de64-1220-4c22-a7b1-f2cc851669eb",
+      "claim_id": "C81",
+      "claim": "Lifestyles, comorbidities, and environmental factors were not included in the SEER database.",
+      "claim_type": "EXPLICIT",
+      "source": "More importantly, lifestyles, comorbidities, and environmental factors were not included in the SEER database.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about missing data in SEER.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:43:31.511640Z"
+    },
+    {
+      "id": "12ca3d3d-3a68-4f01-980f-5cd623ef8339",
+      "content_id": "d350de64-1220-4c22-a7b1-f2cc851669eb",
+      "claim_id": "C82",
+      "claim": "Lifestyles, comorbidities, and environmental factors are important confounders of the associations between the first primary cancers and the second primary cancers.",
+      "claim_type": "EXPLICIT",
+      "source": "These are important confounders of the associations between the first primary cancers and the second primary cancers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about confounding factors.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:43:31.511640Z"
+    },
+    {
+      "id": "b4f824f8-b16a-4529-9c80-eeda145bc604",
+      "content_id": "d350de64-1220-4c22-a7b1-f2cc851669eb",
+      "claim_id": "C83",
+      "claim": "The short and poor survival of pancreatic cancer could be the most critical reason for the failure of finding a positive association in the population data.",
+      "claim_type": "EXPLICIT",
+      "source": "The short and poor survival of pancreatic cancer could be the most critical reason for the failure of finding a positive association in the population data --- simply did not have enough time of follow-up to observe the outcomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement explaining a potential reason for null findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:43:31.511640Z"
+    },
+    {
+      "id": "53466b52-faca-41f9-b0dc-42045525a290",
+      "content_id": "d350de64-1220-4c22-a7b1-f2cc851669eb",
+      "claim_id": "C84",
+      "claim": "The lack of GWAS findings would be a major limitation of the MR approach for some diseases.",
+      "claim_type": "EXPLICIT",
+      "source": "The lack of GWAS findings would be a major limitation of the MR approach for some diseases as in the present study.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about a limitation of the MR approach.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:43:31.511640Z"
+    },
+    {
+      "id": "126cf711-5b52-4516-a220-6363db90fd17",
+      "content_id": "d350de64-1220-4c22-a7b1-f2cc851669eb",
+      "claim_id": "C85",
+      "claim": "The MR approach may only represent part of the biological effects in the causal pathway between the exposure and the outcome.",
+      "claim_type": "EXPLICIT",
+      "source": "The MR approach may only represent part of the biological effects in the causal pathway between the exposure and the outcome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about a limitation of MR.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:43:31.511640Z"
+    },
+    {
+      "id": "3aaa4eff-0622-4131-b942-1e16524c3b44",
+      "content_id": "d350de64-1220-4c22-a7b1-f2cc851669eb",
+      "claim_id": "C86",
+      "claim": "A final causal inference should always be established based on biological mechanisms.",
+      "claim_type": "EXPLICIT",
+      "source": "A final causal inference should always be established based on biological mechanisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the requirements for causal inference.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:43:31.511640Z"
+    },
+    {
+      "id": "451bf4b7-c25c-4d8a-9e9a-022c95ae3b69",
+      "content_id": "d350de64-1220-4c22-a7b1-f2cc851669eb",
+      "claim_id": "C87",
+      "claim": "Some cancers (ovary cancer and soft tissue sarcoma) might share the same tumor-related or tumor-developing environment from the angle of organ location.",
+      "claim_type": "EXPLICIT",
+      "source": "From the angle of organ location, some cancers (ovary cancer and soft tissue sarcoma) might share the same tumor-related or tumor-developing environment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement proposing a potential mechanism.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:43:31.511640Z"
+    },
+    {
+      "id": "6f203020-2bf2-46db-8a38-6f93ccd6da94",
+      "content_id": "d350de64-1220-4c22-a7b1-f2cc851669eb",
+      "claim_id": "C88",
+      "claim": "FPC might influence the iatrogenic immune by suppressing antitumor defense mechanisms via inflammation or other meditating effects.",
+      "claim_type": "EXPLICIT",
+      "source": "Besides the outside therapeutic settings (radio- and chemotherapy, immuno-suppressive agents) and individual factors (smoking, hormone level, certain occupational settings, HIV or HPV infections, and family histories), FPC might also influence the iatrogenic immune by suppressing antitumor defense mechanisms via inflammation or other meditating effects (Shalapour and Karin, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement proposing a potential mechanism with a citation.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:43:31.511640Z"
+    },
+    {
+      "id": "3e88eb4b-3b9d-4b6e-8fe6-99717f088608",
+      "content_id": "d350de64-1220-4c22-a7b1-f2cc851669eb",
+      "claim_id": "C89",
+      "claim": "The immune factor might be the inner relation between FPC and SPC.",
+      "claim_type": "EXPLICIT",
+      "source": "The immune factor might be the inner relation between FPC and SPC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement proposing a hypothesis.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:43:31.511640Z"
+    },
+    {
+      "id": "980729b9-fe62-41ff-a34b-4b6e9d06c3f7",
+      "content_id": "d350de64-1220-4c22-a7b1-f2cc851669eb",
+      "claim_id": "C90",
+      "claim": "The relatively small number of cases of some diseases in UKB may lower statistical power.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, besides the limitations mentioned, the relatively small number of cases of some diseases in UKB may lower our statistical power.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about a limitation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:43:31.511640Z"
+    },
+    {
+      "id": "f4cb6c11-1eab-4484-9f12-9e0157740a35",
+      "content_id": "d350de64-1220-4c22-a7b1-f2cc851669eb",
+      "claim_id": "C91",
+      "claim": "The relatively short follow-up period in UKB may not allow observation of enough events (multiple cancers) at this stage.",
+      "claim_type": "EXPLICIT",
+      "source": "As UKB is a population-based prospective cohort, the relatively short follow-up period may not allow us to observe enough events (multiple cancers) at this stage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about a limitation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:43:31.511640Z"
+    },
+    {
+      "id": "fa3386fe-0f8b-4993-a0e2-c42f1f748044",
+      "content_id": "d350de64-1220-4c22-a7b1-f2cc851669eb",
+      "claim_id": "C92",
+      "claim": "It is expected that the findings should be independently replicated in another dataset.",
+      "claim_type": "EXPLICIT",
+      "source": "And it is expected to be independently replicated in another dataset.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about future validation needs.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:43:31.511640Z"
+    },
+    {
+      "id": "34492833-357a-411f-9998-4dff798192af",
+      "content_id": "d350de64-1220-4c22-a7b1-f2cc851669eb",
+      "claim_id": "C93",
+      "claim": "Patients who were diagnosed with a certain type of primary cancer may cause another type of primary cancer, especially pharynx cancer on non-Hodgkin lymphoma, ovary cancer on soft tissue cancer, kidney cancer on lung and myeloma.",
+      "claim_type": "EXPLICIT",
+      "source": "Patients who were diagnosed with a certain type of primary cancer may cause another type of primary cancer, especially pharynx cancer on non-Hodgkin lymphoma, ovary cancer on soft tissue cancer, kidney cancer on lung and myeloma.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion stated in the Conclusion section.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:43:31.511640Z"
+    },
+    {
+      "id": "83794dd9-5272-4fff-9361-5c29343ccf79",
+      "content_id": "d350de64-1220-4c22-a7b1-f2cc851669eb",
+      "claim_id": "C94",
+      "claim": "The profound mechanisms underlying the causal relationships between FPCs and SPCs need to be studied in the future.",
+      "claim_type": "EXPLICIT",
+      "source": "The profound mechanisms need to be studied in the future.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about future research needs.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:43:31.511640Z"
+    },
+    {
+      "id": "570c8ca6-0935-4ca0-940c-3469563b6cd0",
+      "content_id": "d350de64-1220-4c22-a7b1-f2cc851669eb",
+      "claim_id": "C95",
+      "claim": "Lifestyle, environment, treatment, host factors and other influences may contribute to multiple primary cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "In terms of clinical implications, lifestyle, environment, treatment, host factors and other influences may contribute to multiple primary cancer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about potential contributing factors.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:43:31.511640Z"
+    },
+    {
+      "id": "417c1f85-5ca5-467e-be31-6c4469963353",
+      "content_id": "d350de64-1220-4c22-a7b1-f2cc851669eb",
+      "claim_id": "C96",
+      "claim": "It would be of clinical importance to make a personalized screening plan for certain primary cancer patients (eg. oral pharyngeal cancer, ovary cancer and kidney cancer), especially for those young onsets.",
+      "claim_type": "EXPLICIT",
+      "source": "It would be of clinical importance to make a personalized screening plan for certain primary cancer patients (eg. oral pharyngeal cancer, ovary cancer and kidney cancer), especially for those young onsets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about clinical implications.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:43:31.511640Z"
+    },
+    {
+      "id": "4527c724-4aae-4c4d-abe6-8ec8657efd1c",
+      "content_id": "d350de64-1220-4c22-a7b1-f2cc851669eb",
+      "claim_id": "C97",
+      "claim": "A screening for lung cancer and myeloma should be recommended among patients with kidney cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, patients with kidney cancer would have an increased risk of lung cancer and myeloma. Thus, a screening for lung cancer and myeloma should be recommended among those patients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about clinical recommendations based on the findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:43:31.511640Z"
+    },
+    {
+      "id": "79281259-2c5e-4edd-b288-b7ecedeef300",
+      "content_id": "d350de64-1220-4c22-a7b1-f2cc851669eb",
+      "claim_id": "C98",
+      "claim": "The study was supported by grants from National Natural Science Foundation of China (Grant No. 81972645).",
+      "claim_type": "EXPLICIT",
+      "source": "This work was in supported by grants from National Natural Science Foundation of China (Grant No. 81972645), Innovative research team of high-level local universities in Shanghai, Shanghai Youth Talent Support Program, intramural grant of The University of Hong Kong to Dr. Rong Na, and Shanghai Sailing Program (22YF1440500) to Dr. Da Huang.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about funding sources.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:43:31.511640Z"
+    },
+    {
+      "id": "11b98e18-ff19-45c9-b2ff-4abff94511b7",
+      "content_id": "d350de64-1220-4c22-a7b1-f2cc851669eb",
+      "claim_id": "C99",
+      "claim": "The study was supported by Innovative research team of high-level local universities in Shanghai.",
+      "claim_type": "EXPLICIT",
+      "source": "This work was in supported by grants from National Natural Science Foundation of China (Grant No. 81972645), Innovative research team of high-level local universities in Shanghai, Shanghai Youth Talent Support Program, intramural grant of The University of Hong Kong to Dr. Rong Na, and Shanghai Sailing Program (22YF1440500) to Dr. Da Huang.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about funding sources.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:43:31.511640Z"
+    },
+    {
+      "id": "d2103da3-6d66-494d-89fd-5ce2cb3cb7dd",
+      "content_id": "d350de64-1220-4c22-a7b1-f2cc851669eb",
+      "claim_id": "C100",
+      "claim": "The study was supported by Shanghai Youth Talent Support Program.",
+      "claim_type": "EXPLICIT",
+      "source": "This work was in supported by grants from National Natural Science Foundation of China (Grant No. 81972645), Innovative research team of high-level local universities in Shanghai, Shanghai Youth Talent Support Program, intramural grant of The University of Hong Kong to Dr. Rong Na, and Shanghai Sailing Program (22YF1440500) to Dr. Da Huang.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about funding sources.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:43:31.511640Z"
+    },
+    {
+      "id": "9a5d5067-7ce4-4087-9ede-efb43f004491",
+      "content_id": "d350de64-1220-4c22-a7b1-f2cc851669eb",
+      "claim_id": "C101",
+      "claim": "The study was supported by intramural grant of The University of Hong Kong to Dr. Rong Na.",
+      "claim_type": "EXPLICIT",
+      "source": "This work was in supported by grants from National Natural Science Foundation of China (Grant No. 81972645), Innovative research team of high-level local universities in Shanghai, Shanghai Youth Talent Support Program, intramural grant of The University of Hong Kong to Dr. Rong Na, and Shanghai Sailing Program (22YF1440500) to Dr. Da Huang.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about funding sources.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:43:31.511640Z"
+    },
+    {
+      "id": "a7c25c1b-1351-4daf-9b0d-8876bec7c49d",
+      "content_id": "d350de64-1220-4c22-a7b1-f2cc851669eb",
+      "claim_id": "C102",
+      "claim": "The study was supported by Shanghai Sailing Program (22YF1440500) to Dr. Da Huang.",
+      "claim_type": "EXPLICIT",
+      "source": "This work was in supported by grants from National Natural Science Foundation of China (Grant No. 81972645), Innovative research team of high-level local universities in Shanghai, Shanghai Youth Talent Support Program, intramural grant of The University of Hong Kong to Dr. Rong Na, and Shanghai Sailing Program (22YF1440500) to Dr. Da Huang.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about funding sources.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:43:31.511640Z"
+    },
+    {
+      "id": "48c5fb49-0814-46db-9d6e-0bf81106f1f7",
+      "content_id": "d350de64-1220-4c22-a7b1-f2cc851669eb",
+      "claim_id": "C103",
+      "claim": "The study included 22 types of solid-tumor sites and 4 types of hematological malignancies.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on the ICD-10 code, we identified adult patients (age \u226520 years) diagnosed with an FPC between 2000 and 2016, including 22 types of solid-tumor sites (oral cavity and pharynx, esophagus, stomach, small intestine, colon and rectum, liver, gallbladder, pancreas, larynx, lung and bronchus, bones and joints, soft tissue including heart, melanoma of the skin, female breast, male breast, cervix uteri, ovary, prostate, bladder, kidney, renal pelvis and ureter, brain, thyroid) and 4 types of hematological malignancies (Hodgkin lymphoma, non-Hodgkin lymphoma, myeloma, leukemia).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the cancer types included.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:43:31.511640Z"
+    },
+    {
+      "id": "8a77cefc-4dac-4d54-b887-4b65397ecf96",
+      "content_id": "d350de64-1220-4c22-a7b1-f2cc851669eb",
+      "claim_id": "C104",
+      "claim": "The study conducted a pan-cancer association study in the SEER database covering 26 cancers.",
+      "claim_type": "EXPLICIT",
+      "source": "We conducted a pan-cancer association (26 cancers) study in the Surveillance, Epidemiology, and End Results (SEER) database (non-Hispanic whites).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement from the abstract about the study design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:43:31.511640Z"
+    },
+    {
+      "id": "95331175-2a5a-4ea6-b14b-b1b271d18bec",
+      "content_id": "d350de64-1220-4c22-a7b1-f2cc851669eb",
+      "claim_id": "C105",
+      "claim": "The causal effect was evaluated by two-sample Mendelian Randomization (MR, 13 FPCs) in the UK Biobank (UKB, n=459,136, European whites).",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the causal effect was evaluated by two-sample Mendelian Randomization (MR, 13 FPCs) in the UK Biobank (UKB, n=459,136,, European whites) and robust analysis (radial MR and Causal Analysis Using Summary Effect estimates, CAUSE).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement from the abstract about the study design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:43:31.511640Z"
+    },
+    {
+      "id": "9e8dae57-3f53-45c0-aad0-0d2ee8ef0868",
+      "content_id": "d350de64-1220-4c22-a7b1-f2cc851669eb",
+      "claim_id": "C106",
+      "claim": "Robust analysis included radial MR and Causal Analysis Using Summary Effect estimates (CAUSE).",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the causal effect was evaluated by two-sample Mendelian Randomization (MR, 13 FPCs) in the UK Biobank (UKB, n=459,136,, European whites) and robust analysis (radial MR and Causal Analysis Using Summary Effect estimates, CAUSE).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement from the abstract about the methods used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:43:31.511640Z"
+    },
+    {
+      "id": "580c9429-54cc-423c-944c-268302bc21eb",
+      "content_id": "d350de64-1220-4c22-a7b1-f2cc851669eb",
+      "claim_id": "C107",
+      "claim": "The standardized incidence ratio (SIR) was estimated as the risk of SPCs in cancer survivors based on the incidence in the general population.",
+      "claim_type": "EXPLICIT",
+      "source": "The standardized incidence ratio (SIR) was estimated as the risk of SPCs in cancer survivors based on the incidence in the general population.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement from the abstract about the SIR definition.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:43:31.511640Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "e71158c4-3aca-47e4-890e-08770abb0892",
+      "content_id": "d350de64-1220-4c22-a7b1-f2cc851669eb",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The study utilized two large databases: SEER (covering 27.8% of US population) for observational associations and UK Biobank (459,156 European ancestry participants) for Mendelian randomization analyses. The study included 26 cancer types (22 solid tumors and 4 hematological malignancies) diagnosed between 2000-2016 in adults \u226520 years, with appropriate quality control measures applied.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C9, C56-C63, C103-C104 provide comprehensive documentation of the study populations, databases, genotyping procedures, and quality control measures. The data sources are well-established (SEER and UK Biobank), sample sizes are substantial, and quality control procedures are appropriately described with specific exclusion criteria and concordance rates.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:43:31.511640Z"
+    },
+    {
+      "id": "0ca2f5d4-479b-4401-9815-96cc0f4a9ae1",
+      "content_id": "d350de64-1220-4c22-a7b1-f2cc851669eb",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "SEER analysis identified 264 significant standardized incidence ratios (SIRs) among different cancer types. Hierarchical clustering revealed that thyroid, small bowel, and endocrine system cancers were strongly associated with most first primary cancers (FPCs), while digestive system cancers, cervix uteri, and lung cancer clustered together with increased risks for bladder and kidney cancers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10, C51, C52 describe observational associations from SEER data with specific quantitative results (264 significant SIRs) and clustering patterns illustrated in Figure 2. These are descriptive epidemiological findings appropriately characterized as associations rather than causal relationships.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:43:31.511640Z"
+    },
+    {
+      "id": "9a3bda1b-a462-4214-aef2-a45b87a1d58e",
+      "content_id": "d350de64-1220-4c22-a7b1-f2cc851669eb",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Subgroup analyses revealed that prostate cancer patients receiving radiation therapy had increased risk of second primary cancers (small intestine, soft tissue, leukemia), and male breast cancer patients had elevated risks for thyroid cancer (SIR=1.30, 95% CI: 1.13-1.49) and prostate cancer (SIR=2.33, 95% CI: 1.12-4.29).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C12 present specific subgroup findings with statistical measures (SIRs and confidence intervals). These are observational associations from SEER data with appropriate statistical reporting, though the authors correctly note these are associations rather than causal inferences.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:43:31.511640Z"
+    },
+    {
+      "id": "18570dfa-7a75-4725-8ca8-6f7c82cf817e",
+      "content_id": "d350de64-1220-4c22-a7b1-f2cc851669eb",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Mendelian randomization instruments were constructed using 5-104 SNPs per cancer type (explaining 0.10-8.46% variance), selected from GWAS with genome-wide significance (P<5\u00d710\u207b\u2078), independence criteria (LD r\u00b2<0.001, distance>10,000 kb), and exclusion of SNPs associated with confounders (BMI, smoking, alcohol, physical inactivity at p<1.0\u00d710\u207b\u2075). All F-statistics exceeded 10, indicating no weak instrument bias.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C15, C64-C68 describe appropriate MR instrument selection and validation procedures following established guidelines. The F-statistics >10 threshold is standard for assessing instrument strength, and the filtering for confounders addresses key MR assumptions. However, the low variance explained (0.10-8.46%) may limit statistical power for some analyses.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:43:31.511640Z"
+    },
+    {
+      "id": "26060e22-758b-4545-90d4-2a0f7e9250fd",
+      "content_id": "d350de64-1220-4c22-a7b1-f2cc851669eb",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Initial MR analyses detected 23 significant associations (16 positive, 7 negative causality). Concordant results between SEER and MR included: oral/pharynx cancer \u2192 non-Hodgkin lymphoma (SIR=1.18, IVW-MR p=8.96\u00d710\u207b\u2074); pancreatic cancer \u2192 small intestine (SIR=4.37, MR-Egger p=0.04); melanoma \u2192 breast cancer (SIR=1.17, IVW-MR p=0.04); ovary cancer \u2192 soft tissue (SIR=1.72, IVW-MR p=8.39\u00d710\u207b\u2075); kidney cancer \u2192 lung (SIR=1.28, IVW-MR p=0.01), non-Hodgkin lymphoma (SIR=1.19, IVW-MR p=3.64\u00d710\u207b\u00b3), and myeloma (SIR=1.54, IVW-MR p=3.94\u00d710\u207b\u00b3).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C16-C23 report concordant findings between observational (SEER) and genetic (MR) analyses. While the concordance strengthens evidence, several concerns exist: (1) multiple testing across 23 associations without clear correction; (2) modest effect sizes; (3) low statistical power for some cancer types acknowledged by authors; (4) some associations (melanoma\u2192breast, pancreatic\u2192small intestine) failed robust sensitivity analyses (C24-C27), suggesting potential false positives.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:43:31.511640Z"
+    },
+    {
+      "id": "4b03ed56-e479-427c-bbcd-f739b86ccbb7",
+      "content_id": "d350de64-1220-4c22-a7b1-f2cc851669eb",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Robust sensitivity analyses (radial MR and CAUSE) confirmed only 4 of 11 concordant associations as having robust causal relationships: oral/pharynx cancer \u2192 non-Hodgkin lymphoma (Pradial-IVW=6.00\u00d710\u207b\u00b3, Pcause=8.90\u00d710\u207b\u00b3); ovary cancer \u2192 soft tissue (Pradial-IVW=1.07\u00d710\u207b\u00b3, Pcause=0.01); kidney cancer \u2192 lung (Pradial-IVW=6.60\u00d710\u207b\u00b3, Pcause=0.05); kidney cancer \u2192 myeloma (Pradial-IVW=0.02, Pcause=0.02).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C27, C43-C48 demonstrate appropriate use of multiple sensitivity analyses to distinguish robust causal relationships from potential false positives. The reduction from 11 concordant associations to 4 robust causal relationships shows appropriate scientific rigor. The CAUSE method specifically addresses correlated and uncorrelated pleiotropy, strengthening causal inference. Statistical significance is maintained across multiple methods for these 4 relationships.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:43:31.511640Z"
+    },
+    {
+      "id": "856bda8a-0f52-47c8-865d-11d360799cda",
+      "content_id": "d350de64-1220-4c22-a7b1-f2cc851669eb",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The study employed a two-stage approach: (1) SEER database for standardized incidence ratios (SIR) comparing cancer survivors to general population; (2) Two-sample MR in UK Biobank (n=459,136) using IVW-MR and MR-Egger methods, with causal relationships interpreted only when both SEER associations and MR results were significant. Robust analyses included radial MR and CAUSE methods.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69-C74, C105-C107 describe a methodologically sound approach combining observational and genetic evidence. The requirement for concordance between SEER and MR results (C71) is conservative and appropriate. The use of multiple MR methods (IVW, MR-Egger, radial MR, CAUSE) addresses different assumptions and potential biases. The \u03b1=0.05 threshold is standard, though multiple testing considerations could be more explicit.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:43:31.511640Z"
+    },
+    {
+      "id": "e2300562-1e2a-47a1-9f9f-574eab90b5f4",
+      "content_id": "d350de64-1220-4c22-a7b1-f2cc851669eb",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The authors acknowledge multiple limitations of SEER SIR analysis: results represent associations not causation; screening effects may cause over-diagnosis of indolent cancers (thyroid, low-risk prostate); cancer registry-based cohort may not represent general population; treatment and follow-up variations affect detection; missing data on lifestyles, comorbidities, and environmental factors that are important confounders.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C75-C82 provide transparent discussion of SEER database limitations. The authors appropriately recognize that observational associations cannot establish causation, identify specific biases (screening effects, detection bias), and acknowledge missing confounders. This critical self-assessment strengthens the rationale for using MR to address these limitations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:43:31.511640Z"
+    },
+    {
+      "id": "b4731d16-2a96-4948-a2f4-3677c40f38ef",
+      "content_id": "d350de64-1220-4c22-a7b1-f2cc851669eb",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The authors discuss MR limitations: discordant results between MR and SEER may reflect insufficient follow-up time (e.g., pancreatic cancer's poor survival); lack of GWAS data for some cancers limits MR application; MR may only capture part of biological effects in causal pathways; final causal inference requires biological mechanism validation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C83-C86 demonstrate appropriate understanding of MR limitations. The pancreatic cancer example (C83) illustrates how survival time affects observational studies but not genetic analyses. Recognition that MR captures only genetic components of causation (C85) and requires biological validation (C86) shows methodological sophistication.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:43:31.511640Z"
+    },
+    {
+      "id": "21d6de8c-1dc6-4a94-ae94-f5dc6d898c0b",
+      "content_id": "d350de64-1220-4c22-a7b1-f2cc851669eb",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The authors propose potential mechanisms: some cancers (ovary, soft tissue sarcoma) may share tumor-developing environments based on organ location; first primary cancers might influence iatrogenic immunity by suppressing antitumor defenses via inflammation; immune factors might represent the inner relation between first and second primary cancers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C87-C89 are speculative hypotheses about mechanisms. While C88 cites literature (Shalapour and Karin, 2019) on immune suppression, these remain untested hypotheses in the current study. The authors appropriately use tentative language ('might'), but no experimental validation is provided. These are reasonable hypotheses for future investigation but not supported findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:43:31.511640Z"
+    },
+    {
+      "id": "edf2cc9d-90c8-492c-999e-e1c77e63ac11",
+      "content_id": "d350de64-1220-4c22-a7b1-f2cc851669eb",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Additional limitations include: small case numbers for some diseases in UK Biobank reducing statistical power; relatively short follow-up period (~14 years) may not capture sufficient multiple cancer events; findings require independent replication in another dataset.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C90-C92 acknowledge important study limitations. The power issue (C90) is particularly relevant given the low variance explained by genetic instruments (C14). The follow-up limitation (C91) is valid for a prospective cohort studying rare events. The call for replication (C92) is appropriate scientific practice.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:43:31.511640Z"
+    },
+    {
+      "id": "d3f5f0bc-f0bb-4f90-add3-e294d554ea38",
+      "content_id": "d350de64-1220-4c22-a7b1-f2cc851669eb",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The study concludes that certain primary cancers may cause other second primary cancers, particularly oral/pharynx cancer \u2192 non-Hodgkin lymphoma, ovary cancer \u2192 soft tissue cancer, and kidney cancer \u2192 lung cancer and myeloma. The underlying mechanisms require future investigation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49, C93, C94 represent the main conclusions, appropriately limited to the 4 relationships confirmed by robust sensitivity analyses (C24-C27). The cautious language ('may cause') and acknowledgment that mechanisms need further study (C94) are appropriate given the evidence. The conclusions are supported by convergent evidence from observational and genetic analyses.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:43:31.511640Z"
+    },
+    {
+      "id": "a30590b4-3fc2-48cc-9586-d5c285a4310d",
+      "content_id": "d350de64-1220-4c22-a7b1-f2cc851669eb",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Clinical implications include: multiple factors (lifestyle, environment, treatment, host factors) may contribute to multiple primary cancers; personalized screening plans should be considered for certain primary cancer patients (oral/pharyngeal, ovary, kidney), especially young-onset cases; specifically, lung cancer and myeloma screening should be recommended for kidney cancer patients.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C95-C97 propose clinical recommendations based on study findings. While C95 is a general statement supported by literature, C96-C97 make specific screening recommendations that go beyond the evidence. The study demonstrates associations/causality but does not evaluate screening effectiveness, cost-effectiveness, or clinical utility. These recommendations are reasonable hypotheses but require validation through clinical trials or implementation studies before adoption.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:43:31.511640Z"
+    },
+    {
+      "id": "2616d44e-a910-4aef-8e46-97093fb5c7e0",
+      "content_id": "d350de64-1220-4c22-a7b1-f2cc851669eb",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Background context establishes that cancer incidence is growing globally (19.3 million new cases in 2020) due to aging, screening, and risk factors, while survival has improved (e.g., 98% 5-year survival for prostate cancer in US, 2011-2017). Prolonged survival enables diagnosis of second primary cancers (SPCs), with increased SPC risks observed in multiple countries (Italy, Switzerland, Sweden). Genetic factors, shared environmental factors, treatment effects (radiation), and immunosuppression may contribute to SPC risk.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C42, C50 provide appropriate background context with citations to established literature (Sung et al. 2021, Siegel et al. 2022/2023, Feller et al. 2020, etc.). These claims establish the clinical and scientific rationale for the study. The statements are well-supported by cited references and represent accepted knowledge in the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:43:31.511640Z"
+    },
+    {
+      "id": "d25addb5-c7b8-45d3-b725-be18ed887e83",
+      "content_id": "d350de64-1220-4c22-a7b1-f2cc851669eb",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The study received ethical approval (Northwest Multi-centre Research Ethics, Manchester, UK; IRAS 299116), obtained informed consent from participants, restricted minimum 2-month latency between diagnoses, and was funded by multiple sources including National Natural Science Foundation of China (81972645), Shanghai programs, and University of Hong Kong.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C55, C98-C102 document appropriate ethical procedures, study design decisions (2-month latency to exclude synchronous cancers), and funding sources. These are administrative and methodological details that are appropriately reported and support research transparency.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:43:31.511640Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "8ad18ed7-b7cd-484c-a350-4fc4f0802782",
+      "result_id": "e71158c4-3aca-47e4-890e-08770abb0892"
+    },
+    {
+      "claim_id": "c9be8fa9-5d8a-4369-bbeb-cb31f43f8c4c",
+      "result_id": "e71158c4-3aca-47e4-890e-08770abb0892"
+    },
+    {
+      "claim_id": "17d0d703-4b9d-4750-b45e-f90eb442627e",
+      "result_id": "e71158c4-3aca-47e4-890e-08770abb0892"
+    },
+    {
+      "claim_id": "2b0c2681-2acd-4a0f-9448-76b9fbed6289",
+      "result_id": "e71158c4-3aca-47e4-890e-08770abb0892"
+    },
+    {
+      "claim_id": "d572b9d3-67cd-4612-bc4a-a956a75f8851",
+      "result_id": "e71158c4-3aca-47e4-890e-08770abb0892"
+    },
+    {
+      "claim_id": "536757fd-0370-42b9-8366-bd8c10b06904",
+      "result_id": "e71158c4-3aca-47e4-890e-08770abb0892"
+    },
+    {
+      "claim_id": "f808b973-6765-47ba-bb1f-75d2a6653ea7",
+      "result_id": "e71158c4-3aca-47e4-890e-08770abb0892"
+    },
+    {
+      "claim_id": "c3c9e837-a937-417f-b926-9988ff12d808",
+      "result_id": "e71158c4-3aca-47e4-890e-08770abb0892"
+    },
+    {
+      "claim_id": "24300e45-5905-4234-bedb-8f5427b726aa",
+      "result_id": "e71158c4-3aca-47e4-890e-08770abb0892"
+    },
+    {
+      "claim_id": "36e4bf08-260f-470c-a803-e1aa9ec7f4f6",
+      "result_id": "e71158c4-3aca-47e4-890e-08770abb0892"
+    },
+    {
+      "claim_id": "37ef61c8-016a-4485-8453-518c00bfa9b1",
+      "result_id": "e71158c4-3aca-47e4-890e-08770abb0892"
+    },
+    {
+      "claim_id": "6d5e36f3-fe07-4c47-8a32-2532108463e5",
+      "result_id": "e71158c4-3aca-47e4-890e-08770abb0892"
+    },
+    {
+      "claim_id": "ed44b179-0d91-4deb-9e96-5de7f130498e",
+      "result_id": "e71158c4-3aca-47e4-890e-08770abb0892"
+    },
+    {
+      "claim_id": "d669d4b2-c59c-4ccb-97ec-6f93a3259822",
+      "result_id": "e71158c4-3aca-47e4-890e-08770abb0892"
+    },
+    {
+      "claim_id": "809a1acb-e38c-4135-bf50-81fa1d16a544",
+      "result_id": "e71158c4-3aca-47e4-890e-08770abb0892"
+    },
+    {
+      "claim_id": "1f762a1a-22d9-4138-847c-5e799bebf6cc",
+      "result_id": "e71158c4-3aca-47e4-890e-08770abb0892"
+    },
+    {
+      "claim_id": "959f3d94-f41e-4404-bba7-968f1e37cbf8",
+      "result_id": "e71158c4-3aca-47e4-890e-08770abb0892"
+    },
+    {
+      "claim_id": "48c5fb49-0814-46db-9d6e-0bf81106f1f7",
+      "result_id": "e71158c4-3aca-47e4-890e-08770abb0892"
+    },
+    {
+      "claim_id": "8a77cefc-4dac-4d54-b887-4b65397ecf96",
+      "result_id": "e71158c4-3aca-47e4-890e-08770abb0892"
+    },
+    {
+      "claim_id": "0083deb5-b294-477d-a196-000b77329550",
+      "result_id": "0ca2f5d4-479b-4401-9815-96cc0f4a9ae1"
+    },
+    {
+      "claim_id": "ec07251c-316e-4001-b64a-9e5ebba474c2",
+      "result_id": "0ca2f5d4-479b-4401-9815-96cc0f4a9ae1"
+    },
+    {
+      "claim_id": "2df42d25-bca5-4435-9c7e-c2807bc9daeb",
+      "result_id": "0ca2f5d4-479b-4401-9815-96cc0f4a9ae1"
+    },
+    {
+      "claim_id": "b38c855d-813a-40fe-8aae-508d6e97558d",
+      "result_id": "9a3bda1b-a462-4214-aef2-a45b87a1d58e"
+    },
+    {
+      "claim_id": "e8a0fb63-1cd5-4522-afc9-bd3f6335c430",
+      "result_id": "9a3bda1b-a462-4214-aef2-a45b87a1d58e"
+    },
+    {
+      "claim_id": "0f8e3916-0b47-4780-a822-12f9e59d3aba",
+      "result_id": "18570dfa-7a75-4725-8ca8-6f7c82cf817e"
+    },
+    {
+      "claim_id": "15801e95-3069-4c40-9669-008a64a8bd70",
+      "result_id": "18570dfa-7a75-4725-8ca8-6f7c82cf817e"
+    },
+    {
+      "claim_id": "b81b119c-af1c-4889-a90a-e8f3202baa9b",
+      "result_id": "18570dfa-7a75-4725-8ca8-6f7c82cf817e"
+    },
+    {
+      "claim_id": "367406e5-499a-4f74-bd30-609cd7ed21c9",
+      "result_id": "18570dfa-7a75-4725-8ca8-6f7c82cf817e"
+    },
+    {
+      "claim_id": "a2eb0d6f-c1da-4a73-8a7b-8d2856b859ef",
+      "result_id": "18570dfa-7a75-4725-8ca8-6f7c82cf817e"
+    },
+    {
+      "claim_id": "28ac03c5-2497-4030-aa48-f041370e4d44",
+      "result_id": "18570dfa-7a75-4725-8ca8-6f7c82cf817e"
+    },
+    {
+      "claim_id": "578406c4-11d9-47f7-8472-352d9b81affa",
+      "result_id": "18570dfa-7a75-4725-8ca8-6f7c82cf817e"
+    },
+    {
+      "claim_id": "47c80a9b-d94c-4510-b8db-769f139ce164",
+      "result_id": "18570dfa-7a75-4725-8ca8-6f7c82cf817e"
+    },
+    {
+      "claim_id": "ee0d64aa-b851-49dc-ac9d-5d83056d3784",
+      "result_id": "26060e22-758b-4545-90d4-2a0f7e9250fd"
+    },
+    {
+      "claim_id": "4106465f-d2e5-4414-81a7-83fe8f928275",
+      "result_id": "26060e22-758b-4545-90d4-2a0f7e9250fd"
+    },
+    {
+      "claim_id": "9ff56721-1da0-4b73-89b1-a685894b066f",
+      "result_id": "26060e22-758b-4545-90d4-2a0f7e9250fd"
+    },
+    {
+      "claim_id": "4a56ff52-9ffa-4929-bad5-a1366250dcfe",
+      "result_id": "26060e22-758b-4545-90d4-2a0f7e9250fd"
+    },
+    {
+      "claim_id": "57c75b42-cd37-4c42-8231-150590971eb3",
+      "result_id": "26060e22-758b-4545-90d4-2a0f7e9250fd"
+    },
+    {
+      "claim_id": "af54c5a6-b53e-4f2b-b9d8-5356e2863fd3",
+      "result_id": "26060e22-758b-4545-90d4-2a0f7e9250fd"
+    },
+    {
+      "claim_id": "09c7a1bb-c9ea-45ac-8883-2b4b7e7de3e4",
+      "result_id": "26060e22-758b-4545-90d4-2a0f7e9250fd"
+    },
+    {
+      "claim_id": "e72163b6-7544-486c-b3e1-1bfbee3fc15d",
+      "result_id": "26060e22-758b-4545-90d4-2a0f7e9250fd"
+    },
+    {
+      "claim_id": "57a0cdb2-c4d6-4b4a-9225-042f23caf7c2",
+      "result_id": "4b03ed56-e479-427c-bbcd-f739b86ccbb7"
+    },
+    {
+      "claim_id": "92cef45c-4280-4afc-bb1b-c3126d213c29",
+      "result_id": "4b03ed56-e479-427c-bbcd-f739b86ccbb7"
+    },
+    {
+      "claim_id": "7d5e73ec-0ad3-4e4f-8f06-3d44eacbbf08",
+      "result_id": "4b03ed56-e479-427c-bbcd-f739b86ccbb7"
+    },
+    {
+      "claim_id": "c554b937-2199-4e2d-97be-d9dfc94848e9",
+      "result_id": "4b03ed56-e479-427c-bbcd-f739b86ccbb7"
+    },
+    {
+      "claim_id": "468c6483-5be6-4714-a7a4-2d673c06ca80",
+      "result_id": "4b03ed56-e479-427c-bbcd-f739b86ccbb7"
+    },
+    {
+      "claim_id": "70fe3eea-8735-4c30-b8cc-416079d6a1a6",
+      "result_id": "4b03ed56-e479-427c-bbcd-f739b86ccbb7"
+    },
+    {
+      "claim_id": "436b96ae-fbf4-45cc-b725-60697b18ae40",
+      "result_id": "4b03ed56-e479-427c-bbcd-f739b86ccbb7"
+    },
+    {
+      "claim_id": "7092f21e-01a0-455a-9f19-216cccccd1cc",
+      "result_id": "4b03ed56-e479-427c-bbcd-f739b86ccbb7"
+    },
+    {
+      "claim_id": "d7fc4dff-9de0-43e0-946e-dd770efda689",
+      "result_id": "4b03ed56-e479-427c-bbcd-f739b86ccbb7"
+    },
+    {
+      "claim_id": "73a341cd-2e01-4b75-8f97-77de0a925677",
+      "result_id": "4b03ed56-e479-427c-bbcd-f739b86ccbb7"
+    },
+    {
+      "claim_id": "eba540da-de26-4ce2-831f-4a14f51a2800",
+      "result_id": "856bda8a-0f52-47c8-865d-11d360799cda"
+    },
+    {
+      "claim_id": "f1ac0e08-cc0d-44e9-9acc-f548113fc787",
+      "result_id": "856bda8a-0f52-47c8-865d-11d360799cda"
+    },
+    {
+      "claim_id": "28a412c3-57e4-4e7d-8c98-e4b287d5dbd5",
+      "result_id": "856bda8a-0f52-47c8-865d-11d360799cda"
+    },
+    {
+      "claim_id": "afcc725d-7f7a-4e90-828c-11c781b7cb07",
+      "result_id": "856bda8a-0f52-47c8-865d-11d360799cda"
+    },
+    {
+      "claim_id": "b5e1bd76-abd8-449d-b69a-17ec57a32bef",
+      "result_id": "856bda8a-0f52-47c8-865d-11d360799cda"
+    },
+    {
+      "claim_id": "0379bcdd-a5e2-4dc7-bb1c-79d47160bb74",
+      "result_id": "856bda8a-0f52-47c8-865d-11d360799cda"
+    },
+    {
+      "claim_id": "95331175-2a5a-4ea6-b14b-b1b271d18bec",
+      "result_id": "856bda8a-0f52-47c8-865d-11d360799cda"
+    },
+    {
+      "claim_id": "9e8dae57-3f53-45c0-aad0-0d2ee8ef0868",
+      "result_id": "856bda8a-0f52-47c8-865d-11d360799cda"
+    },
+    {
+      "claim_id": "580c9429-54cc-423c-944c-268302bc21eb",
+      "result_id": "856bda8a-0f52-47c8-865d-11d360799cda"
+    },
+    {
+      "claim_id": "ddfd265c-988e-4e63-8418-0fc79c3e8230",
+      "result_id": "e2300562-1e2a-47a1-9f9f-574eab90b5f4"
+    },
+    {
+      "claim_id": "d121fd7b-f411-49dc-8a54-e95df1258645",
+      "result_id": "e2300562-1e2a-47a1-9f9f-574eab90b5f4"
+    },
+    {
+      "claim_id": "7fb8b638-55bd-4e3c-a430-a0631cd34ded",
+      "result_id": "e2300562-1e2a-47a1-9f9f-574eab90b5f4"
+    },
+    {
+      "claim_id": "9245939e-d9b1-4ddf-8348-e9708d1befba",
+      "result_id": "e2300562-1e2a-47a1-9f9f-574eab90b5f4"
+    },
+    {
+      "claim_id": "8300754e-d0b3-4d67-b0ab-7686fc58027e",
+      "result_id": "e2300562-1e2a-47a1-9f9f-574eab90b5f4"
+    },
+    {
+      "claim_id": "8978e4a8-b1da-424d-a53f-f59f19b52692",
+      "result_id": "e2300562-1e2a-47a1-9f9f-574eab90b5f4"
+    },
+    {
+      "claim_id": "31b63d9c-622e-4112-bd92-83f21c524551",
+      "result_id": "e2300562-1e2a-47a1-9f9f-574eab90b5f4"
+    },
+    {
+      "claim_id": "12ca3d3d-3a68-4f01-980f-5cd623ef8339",
+      "result_id": "e2300562-1e2a-47a1-9f9f-574eab90b5f4"
+    },
+    {
+      "claim_id": "b4f824f8-b16a-4529-9c80-eeda145bc604",
+      "result_id": "b4731d16-2a96-4948-a2f4-3677c40f38ef"
+    },
+    {
+      "claim_id": "53466b52-faca-41f9-b0dc-42045525a290",
+      "result_id": "b4731d16-2a96-4948-a2f4-3677c40f38ef"
+    },
+    {
+      "claim_id": "126cf711-5b52-4516-a220-6363db90fd17",
+      "result_id": "b4731d16-2a96-4948-a2f4-3677c40f38ef"
+    },
+    {
+      "claim_id": "3aaa4eff-0622-4131-b942-1e16524c3b44",
+      "result_id": "b4731d16-2a96-4948-a2f4-3677c40f38ef"
+    },
+    {
+      "claim_id": "451bf4b7-c25c-4d8a-9e9a-022c95ae3b69",
+      "result_id": "21d6de8c-1dc6-4a94-ae94-f5dc6d898c0b"
+    },
+    {
+      "claim_id": "6f203020-2bf2-46db-8a38-6f93ccd6da94",
+      "result_id": "21d6de8c-1dc6-4a94-ae94-f5dc6d898c0b"
+    },
+    {
+      "claim_id": "3e88eb4b-3b9d-4b6e-8fe6-99717f088608",
+      "result_id": "21d6de8c-1dc6-4a94-ae94-f5dc6d898c0b"
+    },
+    {
+      "claim_id": "980729b9-fe62-41ff-a34b-4b6e9d06c3f7",
+      "result_id": "edf2cc9d-90c8-492c-999e-e1c77e63ac11"
+    },
+    {
+      "claim_id": "f4cb6c11-1eab-4484-9f12-9e0157740a35",
+      "result_id": "edf2cc9d-90c8-492c-999e-e1c77e63ac11"
+    },
+    {
+      "claim_id": "fa3386fe-0f8b-4993-a0e2-c42f1f748044",
+      "result_id": "edf2cc9d-90c8-492c-999e-e1c77e63ac11"
+    },
+    {
+      "claim_id": "e6643232-ca9e-4631-a688-c381d2cc80e8",
+      "result_id": "d3f5f0bc-f0bb-4f90-add3-e294d554ea38"
+    },
+    {
+      "claim_id": "34492833-357a-411f-9998-4dff798192af",
+      "result_id": "d3f5f0bc-f0bb-4f90-add3-e294d554ea38"
+    },
+    {
+      "claim_id": "83794dd9-5272-4fff-9361-5c29343ccf79",
+      "result_id": "d3f5f0bc-f0bb-4f90-add3-e294d554ea38"
+    },
+    {
+      "claim_id": "570c8ca6-0935-4ca0-940c-3469563b6cd0",
+      "result_id": "a30590b4-3fc2-48cc-9586-d5c285a4310d"
+    },
+    {
+      "claim_id": "417c1f85-5ca5-467e-be31-6c4469963353",
+      "result_id": "a30590b4-3fc2-48cc-9586-d5c285a4310d"
+    },
+    {
+      "claim_id": "4527c724-4aae-4c4d-abe6-8ec8657efd1c",
+      "result_id": "a30590b4-3fc2-48cc-9586-d5c285a4310d"
+    },
+    {
+      "claim_id": "7a3e9cbb-6a23-47fe-a87e-e9e37eec7a81",
+      "result_id": "2616d44e-a910-4aef-8e46-97093fb5c7e0"
+    },
+    {
+      "claim_id": "e80b46f8-1d35-43b6-ae8b-7697c842986b",
+      "result_id": "2616d44e-a910-4aef-8e46-97093fb5c7e0"
+    },
+    {
+      "claim_id": "228b9311-35ec-41e8-af84-9a5e996b87e9",
+      "result_id": "2616d44e-a910-4aef-8e46-97093fb5c7e0"
+    },
+    {
+      "claim_id": "ef36abdf-c6a2-4bb1-a44c-65e07433bf9b",
+      "result_id": "2616d44e-a910-4aef-8e46-97093fb5c7e0"
+    },
+    {
+      "claim_id": "3dccf93f-2c41-4592-ab48-30829de61f2f",
+      "result_id": "2616d44e-a910-4aef-8e46-97093fb5c7e0"
+    },
+    {
+      "claim_id": "bf64c8bb-b4b9-404f-80e6-a0a381242974",
+      "result_id": "2616d44e-a910-4aef-8e46-97093fb5c7e0"
+    },
+    {
+      "claim_id": "7816fc71-86e4-4a2f-aea6-6e58f76a8929",
+      "result_id": "2616d44e-a910-4aef-8e46-97093fb5c7e0"
+    },
+    {
+      "claim_id": "bec9620e-f939-476b-a74d-29853b45f991",
+      "result_id": "2616d44e-a910-4aef-8e46-97093fb5c7e0"
+    },
+    {
+      "claim_id": "2919d229-091d-4f66-9d36-c9f733c75ff7",
+      "result_id": "2616d44e-a910-4aef-8e46-97093fb5c7e0"
+    },
+    {
+      "claim_id": "3a5c51d3-cbaf-4e64-8ae9-0a300fb12745",
+      "result_id": "2616d44e-a910-4aef-8e46-97093fb5c7e0"
+    },
+    {
+      "claim_id": "2bf91db1-bda7-4773-891c-9225769ef15b",
+      "result_id": "2616d44e-a910-4aef-8e46-97093fb5c7e0"
+    },
+    {
+      "claim_id": "f021e577-58af-44f4-99b6-8ef69ea34372",
+      "result_id": "2616d44e-a910-4aef-8e46-97093fb5c7e0"
+    },
+    {
+      "claim_id": "7f4fb0f0-c0aa-4b83-b0f2-0274ee19b6b4",
+      "result_id": "2616d44e-a910-4aef-8e46-97093fb5c7e0"
+    },
+    {
+      "claim_id": "81859155-d24b-40c8-b2c7-f03d8a837dcc",
+      "result_id": "2616d44e-a910-4aef-8e46-97093fb5c7e0"
+    },
+    {
+      "claim_id": "b9f6cf20-a8c2-443c-bca4-d3d343766b92",
+      "result_id": "2616d44e-a910-4aef-8e46-97093fb5c7e0"
+    },
+    {
+      "claim_id": "3a00c8f9-bd94-445e-84c9-44fd95f0c5d1",
+      "result_id": "2616d44e-a910-4aef-8e46-97093fb5c7e0"
+    },
+    {
+      "claim_id": "ff2b36ba-5e65-49c8-b143-e9c4ccfe23c4",
+      "result_id": "d25addb5-c7b8-45d3-b725-be18ed887e83"
+    },
+    {
+      "claim_id": "9fc41725-2931-40ce-a0b3-8e15ee53a76f",
+      "result_id": "d25addb5-c7b8-45d3-b725-be18ed887e83"
+    },
+    {
+      "claim_id": "f9baf040-dc6e-42b5-b426-01e29883b15c",
+      "result_id": "d25addb5-c7b8-45d3-b725-be18ed887e83"
+    },
+    {
+      "claim_id": "79281259-2c5e-4edd-b288-b7ecedeef300",
+      "result_id": "d25addb5-c7b8-45d3-b725-be18ed887e83"
+    },
+    {
+      "claim_id": "11b98e18-ff19-45c9-b2ff-4abff94511b7",
+      "result_id": "d25addb5-c7b8-45d3-b725-be18ed887e83"
+    },
+    {
+      "claim_id": "d2103da3-6d66-494d-89fd-5ce2cb3cb7dd",
+      "result_id": "d25addb5-c7b8-45d3-b725-be18ed887e83"
+    },
+    {
+      "claim_id": "9a5d5067-7ce4-4087-9ede-efb43f004491",
+      "result_id": "d25addb5-c7b8-45d3-b725-be18ed887e83"
+    },
+    {
+      "claim_id": "a7c25c1b-1351-4daf-9b0d-8876bec7c49d",
+      "result_id": "d25addb5-c7b8-45d3-b725-be18ed887e83"
+    }
+  ],
+  "comparisons": []
+}

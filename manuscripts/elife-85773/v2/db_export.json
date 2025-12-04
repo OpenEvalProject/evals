@@ -1,0 +1,2403 @@
+{
+  "submission": {
+    "id": "d3f51403-7e3e-4571-a2d0-a848966e4cb9",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-04T02:19:53.933902Z",
+    "updated_at": "2025-12-04T02:19:53.933902Z"
+  },
+  "content": [
+    {
+      "id": "9bd967df-852a-4df4-bd5a-dc746e7fbc76",
+      "submission_id": "d3f51403-7e3e-4571-a2d0-a848966e4cb9",
+      "content_type": "manuscript",
+      "content_text": "# Mechanistic insights into robust cardiac IKs potassium channel activation by aromatic polyunsaturated fatty acid analogues\n\n## Authors\n\n- Briana M Bohannon<sup>1</sup>\n- Jessica J Jowais<sup>1</sup>\n- Leif Nyberg<sup>1</sup>\n- Vanessa Olivier-Meo<sup>1</sup>\n- Valentina Corradi<sup>3</sup>\n- D Peter Tieleman<sup>3</sup> ([ORCID: 0000-0001-5507-0688](https://orcid.org/0000-0001-5507-0688))\n- Sara I Liin<sup>2</sup> ([ORCID: 0000-0001-8493-0114](https://orcid.org/0000-0001-8493-0114))\n- H Peter Larsson<sup>1</sup> ([ORCID: 0000-0002-1688-2525](https://orcid.org/0000-0002-1688-2525)) \u2020\n\n### Affiliations\n\n1. Department of Physiology and Biophysics, Miller School of Medicine, University of Miami Miami United States ([ROR:02dgjyy92](https://ror.org/02dgjyy92))\n2. Department of Biomedical and Clinical Sciences, Link\u00f6ping University Link\u00f6ping Sweden ([ROR:05ynxx418](https://ror.org/05ynxx418))\n3. Department of Biological Sciences and Centre for Molecular Simulation, University of Calgary Calgary Canada ([ROR:03yjb2x39](https://ror.org/03yjb2x39))\n\n\u2020 Corresponding author\n\n## Abstract\n\nVoltage-gated potassium (KV) channels are important regulators of cellular excitability and control action potential repolarization in the heart and brain. KV channel mutations lead to disordered cellular excitability. Loss-of-function mutations, for example, result in membrane hyperexcitability, a characteristic of epilepsy and cardiac arrhythmias. Interventions intended to restore KV channel function have strong therapeutic potential in such disorders. Polyunsaturated fatty acids (PUFAs) and PUFA analogues comprise a class of KV channel activators with potential applications in the treatment of arrhythmogenic disorders such as long QT syndrome (LQTS). LQTS is caused by a loss-of-function of the cardiac IKs channel \u2013 a tetrameric potassium channel complex formed by KV7.1 and associated KCNE1 protein subunits. We have discovered a set of aromatic PUFA analogues that produce robust activation of the cardiac IKs channel, and a unique feature of these PUFA analogues is an aromatic, tyrosine head group. We determine the mechanisms through which tyrosine PUFA analogues exert strong activating effects on the IKs channel by generating modified aromatic head groups designed to probe cation\u2013pi interactions, hydrogen bonding, and ionic interactions. We found that tyrosine PUFA analogues do not activate the IKs channel through cation\u2013pi interactions, but instead do so through a combination of hydrogen bonding and ionic interactions.\n\n## Introduction\n\nThe delayed rectifier potassium channel (IKs) underlies a critical repolarizing current that determines the timing of the ventricular action potential (Nerbonne and Kass, 2005). The cardiac IKs current is mediated by the association of the voltage-gated K+ channel KV7.1 \u03b1-subunit with the KCNE1 \u03b2-subunit (Abramochkin et al., 2018; Wang et al., 1998; Barhanin et al., 1996). The KV7.1 \u03b1-subunit consists of six transmembrane spanning segments, denoted S1\u2013S6 where S1\u2013S4 form the voltage-sensing domain (VSD) and S5\u2013S6 form the pore domain (PD) (Sun and MacKinnon, 2017). The S4 segment contains several positively charged arginine residues that allow S4 to move outward, toward the extracellular side of the membrane, when the membrane becomes depolarized (Broomand et al., 2003). This outward movement of the S4 is transformed into pore opening as a result of conformational changes in the S4\u2013S5 linker of KV7.1 (Kalstrup and Blunck, 2018). Co-expression of KCNE1 with KV7.1 imparts a more depolarized voltage dependence of activation, slower activation kinetics, and increased single-channel conductance compared to KV7.1 alone (Sun et al., 2012; Yang and Sigworth, 1998). Loss-of-function mutations in the cardiac IKs channel can lead to an arrhythmogenic disorder known as long QT syndrome (LQTS), which predisposes individuals to ventricular fibrillation and sudden cardiac death (Fern\u00e1ndez-Falgueras et al., 2017; Roden, 2008; Watanabe et al., 2005). Current treatments for LQTS include pharmacological intervention with \u03b2-blockers or surgical implantation of a cardioverter defibrillator (Waddell-Smith and Skinner, 2016). However, limitations of these treatments generate a need for novel therapeutic interventions to treat LQTS.\n\nPolyunsaturated fatty acids (PUFAs) are amphipathic molecules composed of a charged hydrophilic head group and a long, polyunsaturated hydrophobic tail group (Jump, 2002). It is well documented that PUFAs form a group of IKs channel activators that interact with the channel VSD, thus influencing the voltage dependence of IKs channel activation (Moreno et al., 2015; Moreno et al., 2012; Elinder and Liin, 2017). The ability of PUFAs to activate the IKs channel makes them great candidates for potential LQTS therapeutics. PUFAs promote IKs channel activation through an electrostatic interaction between the negative charge of the hydrophilic PUFA head and positively charged arginine residues in the S4 segment of the IKs channel (Elinder and Liin, 2017; B\u00f6rjesson and Elinder, 2011; Larsson et al., 2020; B\u00f6rjesson et al., 2008). This electrostatic activation of the IKs channel is seen as a leftward shift in the voltage dependence of IKs channel activation that leads to increases in IKs current. Recently, it has been reported that PUFAs increase IKs current through two independent effects: one on S4 (as described above) and one on the PD through an electrostatic interaction with a positively charged lysine residue located in S6 (K326) (Yazdi et al., 2021; Liin et al., 2018). This electrostatic interaction with the K326 mediates an increase in the maximal conductance (Gmax) of the IKs channel (Yazdi et al., 2021; Liin et al., 2018). The mechanism through which the negatively charged PUFA head group interacts with positive charges of S4 and S6 is called the lipoelectric hypothesis where the polyunsaturated tail of PUFAs and PUFA analogues incorporates into the cell membrane via hydrophobic interactions and electrostatically attracts the outermost gating charges of S4 as well as positively charged K326 in the S6 segment (B\u00f6rjesson et al., 2008; Yazdi et al., 2021; Bohannon et al., 2019; Bohannon et al., 2020).\n\nPUFA analogues that have the most robust effects on increasing IKs current are those that have a low pKa value and thus possess a negatively charged head group at physiological pH (Bohannon et al., 2020). Examples include PUFAs with glycine or taurine head groups that possess either a carboxyl or sulfonyl head group, respectively (Bohannon et al., 2020; Liin et al., 2016). We have observed that another PUFA analogue, N-(\u03b1-linolenoyl) tyrosine (NALT), has robust effects on IKs current. NALT is unique in that it possesses a large aromatic tyrosine head group rather than a carboxyl or sulfonyl group present in most of the PUFAs and PUFA analogues that we have characterized. NALT induces a potent leftward shift in the voltage dependence of IKs channel activation and an increase in the maximal channel conductance, thus increasing overall IKs current. Here, we aim to determine the mechanism behind IKs activation by NALT using PUFA analogues with aromatic and modified aromatic head groups. Better understanding of the mechanism of how these aromatic PUFA analogues have more potent IKs channel activation effects could help to aid future drug development for LQTS.\n\n## Results\n\n### Diverse PUFA analogues with a tyrosine head group activate the IKs channel\n\nTo measure the effects of the aromatic PUFA analogues on the cardiac IKs channel, we expressed the IKs channel complex in Xenopus laevis oocytes (Figure 1A). We co-injected mRNA for the KV7.1 \u03b1-subunit and the KCNE1 \u03b2-subunit to achieve expression of tetrameric IKs channels. Using two-electrode voltage-clamp recordings, we applied depolarizing voltage steps to activate the IKs channel (Figure 1B) before and after applying four different tyrosine PUFA analogues: N(\u03b1-linolenoyl)-tyrosine (NALT), linoleoyl tyrosine (Lin-tyrosine), docosahexanoyl tyrosine (DHA-tyrosine), and pinoleoyl tyrosine (Pin-tyrosine) (Figure 1C). From these voltage-clamp experiments, we are also able to acquire dose\u2013response curves for different aspects of IKs channel activation, including changes in overall IKs current (I/I0, Figure 1D), changes in the voltage dependence of activation (\u0394V0.5, Figure 1E), and changes in the maximal channel conductance (Gmax/Gmax0, Figure 1F). NALT, Lin-tyr, DHA-tyr, and Pin-tyr all activate the cardiac IKs channel by shifting the voltage dependence of IKs channel activation to more negative voltages (NALT: \u0394V0.5 = \u201356.2 \u00b1 3.6 mV; Lin-tyr: \u201374.4 \u00b1 4.1 mV; DHA-tyr: \u201372.0 \u00b1 4.9 mV; and Pin-tyr: \u201360.5 \u00b1 5.8 mV at 20 \u03bcM; Figure 1E) and increasing the maximal conductance (NALT: 1.43 \u00b1 0.3; Lin-tyr: 2.0 \u00b1 0.6; DHA-tyr: 1.5 \u00b1 0.2; and Pin-tyr: 1.8 \u00b1 0.4 at 20 \u03bcM; Figure 1F). Together, the left shift in V0.5 and the increase in Gmax increase the overall IKs current measured in response to a voltage step close to 0 mV (NALT: 5.14 \u00b1 1.2; Lin-tyr: 12.8 \u00b1 2.1; DHA-tyr: 5.0 \u00b1 0.9; and Pin-tyr: 5.8 \u00b1 0.9 at 20 \u03bcM; Figure 1D: see \u2018Materials and methods\u2019 for calculation of I/I0). In comparison, Lin-glycine (a known IKs channel activator; Figure 1C) causes only modest leftward voltage shifts (\u0394V0.5 = \u201330.8 \u00b1 5.4 mV at 20 \u03bcM; Figure 1E), but similar increases in maximal conductance (2.6 \u00b1 0.5 at 20 \u03bcM; Figure 1F) and I/I0 current (6.7 \u00b1 1.1 at 20 \u03bcM; Figure 1D) as for most tyrosine PUFAs.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/85773/elife-85773-fig1-v2.jpg)\n\n**Figure 1.:** (A) Schematic of two electrode voltage-clamp setup (inset: IKs channel cartoon + PUFA [pink]). (B) Voltage protocol (top) with representative KV7.1/KCNE1 (IKs) current (bottom). (C) Structures of NALT, Lin-tyrosine, DHA-tyrosine, and Pin-tyrosine (with Lin-glycine for comparison). (D\u2013F) I/I0, (E) \u0394V0.5, and (F) Gmax dose\u2013response curves for NALT (black circles) (n = 4), Lin-tyrosine (pink circles) (n = 4), DHA-tyrosine (teal circles) (n = 3), Pin-tyrosine (purple circles) (n = 5), and Lin-glycine (gray dotted line) (n = 3). Values for all compounds and concentrations available in Figure 1\u2014source data 1.\n\n### Distal \u2013OH group is necessary for robust activation of the IKs channel\n\nAmino acids with aromatic groups (like tryptophan, tyrosine, and phenylalanine) can participate in cation\u2013pi interactions (Dougherty, 2007). Cation\u2013pi interactions take place between the pi-electrons of an aromatic ring and positively charged (cationic) groups (such as arginine and lysine) (Infield et al., 2021). If tyrosine PUFAs activate the IKs channel via cation\u2013pi interactions, we would expect that other aromatic groups (such as phenylalanine) would similarly affect IKs activation. We tested two different PUFA analogues that both contain a phenylalanine head group \u2013 linoleoyl phenylalanine (Lin-phe) and N-(\u03b1-linolenoyl) phenylalanine (NAL-phe) (Figure 2A). Lin-phe and NAL-phe both increase I/I0 (Lin phe: 2.6 \u00b1 0.3; and NAL-phe: 2.4 \u00b1 0.5 at 20 \u03bcM; Figure 2B\u2013D), causing a modest leftward shift in the V0.5 (Lin-phe: \u0394V0.5 = \u201313.1 \u00b1 2.9 mV; and NAL-phe: \u201312.5 \u00b1 3.8 mV at 20 \u03bcM; Figure 2E and F). However, Lin-phe and NAL-phe have minimal effects on the Gmax (Lin phe: 1.2 \u00b1 0.1; and NAL-phe: 1.2 \u00b1 0.2 at 20 \u03bcM; Figure 2G and H). All of these effects (I/I0, \u0394V0.5, and Gmax) are reduced in comparison with tyrosine PUFAs, with Lin-phe and NAL-phe having an attenuated effect compared to NALT (p=0.51 and p=0.44, respectively; Figure 2D) and resulting in a significantly smaller increases in I/I0 compared to Lin-tyrosine (***p=0.0004 and ***p=0.0004, respectively; Figure 2D). In addition, both NALT and Lin-tyrosine cause a significantly greater \u0394V0.5 compared to NAL-phe and Lin-phe (****p<0.0001; Figure 2F). Together, these differences suggest that cation\u2013pi interactions are not the primary mechanism through which tyrosine PUFAs activate the IKs channel. Rather, our data suggest that it is actually the presence of the distal \u2013OH group on the aromatic head group that is critical for the potent activation of the IKs channel because the loss of this \u2013OH group (Lin-phe and NAL-phe) results in pronounced reductions in PUFA efficacy.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/85773/elife-85773-fig2-v2.jpg)\n\n**Figure 2.:** (A) Structures of NAL-phe and Lin-phe. (B) Representative current traces for NALT (gray), NAL-phe (black), Lin-tyr (pink), and Lin-phe with 0 \u03bcM PUFA (left) and 20 \u03bcM PUFA (right). (C, E, G) I/I0, (E) \u0394V0.5, and (G) Gmax dose\u2013response curves for NAL-phe (n = 4) and Lin-phe (n = 4) with dotted lines representing dose response of NALT (n = 4) and Lin-tyr (n = 4). (D, F, H) Maximum effects on (D) I/I0, (F) \u0394V0.5, and (H) Gmax (at 20 \u03bcM) for NAL-phe (n = 4), Lin-phe (n = 4), NALT (n = 4), and Lin-tyr (n = 4). Asterisks indicate statistically significant differences determined by one-way ANOVA with Tukey\u2019s test for multiple comparisons. Values for all compounds and concentrations available in Figure 2\u2014source data 1.\n\n### Electronegative groups on aromatic ring are important for increases in maximal conductance\n\nOur data thus far indicates that it is the presence of the \u2013OH group, not cation\u2013pi interactions, that is critical for pronounced IKs channel activation by tyrosine PUFAs. The \u2013OH group found in tyrosine PUFAs is highly electronegative. To test how electronegativity influences IKs channel activation, we compared three modified phenylalanine PUFAs, which all include a highly electronegative group(s) attached to the aromatic ring. We compared N-(\u03b1-linolenoyl)\u20134-bromo-L-phenylalanine (4Br-NAL-phe), N-(\u03b1-linolenoyl)\u20134-fluoro-L-phenylalanine (4F-NAL-phe), and N-(\u03b1-linolenoyl) 3,4,5-trifluorophenylalanine (3,4,5F-NAL-phe) (Figure 3A). 4Br-NAL-phe, 4F-NAL-phe, and 3,4,5F-NAL-phe application increases I/I0 (4Br-NAL-phe: 4.6 \u00b1 0.1 at 20 \u03bcM; 4F-NAL-phe: 4.6 \u00b1 1.1 at 20 \u03bcM; 3,4,5F-NAL-phe: 7.1 \u00b1 1.0 at 20 \u03bcM; Figure 3B\u2013D), causes a leftward shift in the V0.5 (4Br-NAL-phe: \u0394V0.5 = \u201322.8 \u00b1 2.0 mV; 4F-NAL-phe: \u201323.9 \u00b1 0.8 mV; 3,4,5F-NAL-phe: \u201332.4 \u00b1 4.9 mV at 20 \u03bcM; Figure 3E and F) and increases the Gmax (4Br-NAL-phe: 1.9 \u00b1 0.1 at 20 \u03bcM; 4F-NAL-phe: 2.0 \u00b1 0.5; 3,4,5F-NAL-phe: 2.4 \u00b1 0.4 at 20 \u03bcM; Figure 3G and H). Increasing the number of highly electronegative groups significantly improves the effects of phenylalanine PUFAs on increasing I/I0 and shifting the V0.5, evidenced by significant increases in I/I0 (*p=0.0186; Figure 3D) and a significantly greater leftward shift in the V0.5 (**p=0.0096; Figure 3F) from 3,4,5F-NAL-phe compared to NAL-phe alone. Interestingly, though, NALT still causes the most prominent left-shift in the V0.5 compared to 4Br-, 4F-, and 3,4,5F-NAL-phe (***p=0.0003; ***P=0.00028; and **p=0.0021, respectively). These data suggest that the presence of highly electronegative groups improve the activating effects of phenylalanine PUFAs on the IKs channel. However, they do not completely recapitulate the effects of tyrosine PUFAs on the shift in V0.5 of the IKs channel.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/85773/elife-85773-fig3-v2.jpg)\n\n**Figure 3.:** (A) Structures of 4Br-NAL-phe, 4F-NAL-phe, and 3,4,5F-NAL-phe. (B) Representative traces for 4Br-NAL-phe (pink), 4F-NAL-phe (teal), and 3,4,5F-NAL-phe (purple) with 0 \u03bcM PUFA (left) and 20 \u03bcM PUFA (right). (C, E, G) I/I0, (E) \u0394V0.5, and (G) Gmax dose\u2013response curves for NAL-phe (n = 4), 4Br-NAL-phe (n = 3), 4F-NAL-phe (n = 4), and 3,4,5F-NAL-phe (n = 5) with dotted line representing dose response of NALT (n = 4). (D, F, H) Maximum effects on (D) I/I0, (F) \u0394V0.5, and (H) Gmax (at 20 \u03bcM) for 4Br-NAL-phe (n = 3), 4F-NAL-phe (n = 4), and 3,4,5F-NAL-phe (n = 5). Asterisks indicate statistically significant differences determined by one-way ANOVA with Tukey\u2019s test for multiple comparisons. Values for all compounds and concentrations available in Figure 3\u2014source data 1.\n\n### Hydrogen bonding is important for pronounced leftward shifts in IKs channel voltage dependence\n\nThe presence of the \u2013OH group on tyrosine PUFA analogues or the addition of electronegative groups to the phenylalanine head group improves IKs activation. However, a persistent and striking difference between tyrosine PUFAs and modified phenylalanine PUFAs in the magnitude of their voltage-shifting effects with the tyrosine PUFAs having an almost twice as big voltage shift effect than the modified phenylalanine PUFAs (Figure 3E and F). One explanation for this discrepancy is that the \u2013OH group can also behave as a hydrogen bond donor. To determine whether hydrogen bonding contributes to the activating effects of tyrosine PUFA analogues, we applied the modified aromatic PUFA analogue N-(\u03b1-linolenoyl)\u20133-fluoro-L-tyrosine (3F-NALT), which has a fluorine atom adjacent to the tyrosine hydroxyl group (Figure 4A). The addition of the fluorine atom reduces the pKa of the distal hydroxyl group and increases the hydrogen bonding ability of said group in 3F-NALT as compared to NALT. Overall, the maximum effects on I/I0 are similar for 3F-NALT and NALT (3F-NALT: 5.0 \u00b1 1.0; NALT: 5.14 \u00b1 1.2 at 20 \u03bcM; p=0.7257, ns; Figure 4B\u2013D). Notably, 3F-NALT induces a significantly greater maximum shift in the V0.5 (\u0394V0.5 = \u201369.3 \u00b1 1.4 at 20 \u03bcM) compared to NALT (\u201356.1 \u00b1 3.6 AT 20 \u03bcM) (p=0.0298*; Figure 4E and F), while the effects on Gmax are not significantly different between 3F-NALT and NALT (3F-NALT: 1.3 \u00b1 0.3; NALT: 1.4 \u00b1 0.3 at 20 \u03bcM; p=0.7324, ns; Figure 4G and H). These data demonstrate that increasing the hydrogen bonding capacity of the \u2013OH group increases the maximum shift in IKs channel voltage dependence. This implicates hydrogen bonding as an important mechanism for IKs activation and preferentially influences the effects on the voltage dependence of IKs activation.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/85773/elife-85773-fig4-v2.jpg)\n\n**Figure 4.:** (A) Structures of NALT and 3F-NALT. (B) Representative traces of NALT (gray) and 3F-NALT (cyan) with 0 \u03bcM PUFA (left) and 20 \u03bcM PUFA (right). (C, E, G) I/I0, (E) \u0394V0.5, and (G) Gmax dose\u2013response curves for NALT (black dashed line) (n = 4) and 3F-NALT (cyan) (n = 3). (D, F, H) Maximum effects on (D) I/I0, (F) \u0394V0.5, and (H) Gmax (at 20 \u03bcM) for 3F-NALT (n = 3) and NALT (n = 4). Values for all compounds and concentrations available in Figure 4\u2014source data 1.\n\n### Aromatic PUFAs appear to activate the IKs channel in similar mechanisms as non-aromatic PUFAs\n\nTo better understand the mechanism of these more effective aromatic PUFAs, we mutated residues previously shown to be important for non-aromatic PUFA activating effects on IKs channels. The residue R231, located in the voltage sensor (S4) (Figure 5A), has been previously shown to be important for the V0.5 shifting effect of non-aromatic PUFAs (Liin et al., 2018). We tested Lin-tyr, the largest V0.5 shifting aromatic PUFA, on the IKs channel with the mutation R231Q+Q234R to assess whether R231 is also important for the aromatic PUFA V0.5 shifting mechanism. The additional mutation Q234R is necessary to preserve the voltage dependence of activation in IKs channels with the R231Q mutation (Liin et al., 2018; Panaghie and Abbott, 2007; Wu et al., 2010). The V0.5 shifting effect of Lin-tyr was significantly decreased from \u0394V0.5 = \u201374.4 mV \u00b1 4.1 at 20 \u03bcM in the wild-type (WT) IKs channel to\u0394V0.5 = \u201336.5 mV \u00b1 7.3 at 20 \u03bcM with the R231Q+Q234R mutation (****p < 0.0001; Figure 5B and C). This reduction indicates that R231 contributes to more than half of the voltage dependence shifting effect of Lin-tyr. The remaining shift is most likely due to PUFA head group interactions with other nearby S4 charges such as R228 and Q234R.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/85773/elife-85773-fig5-v2.jpg)\n\n**Figure 5.:** (A) Structure of KV7.1 voltage-sensing domain (VSD) based on PDB: 6V00A projected using PyMOL Software (Schr\u00f6dinger L and DeLano 2020). Pink spheres indicate mutated residues in the S4 segment, R321Q-Q234R, which are implicated in PUFA-mediated effects on voltage dependent activation. (B) \u0394V0.5 dose\u2013response curve for WT KV7.1/KCNE1 + Lin-tyr (pink) (n = 4) and KV7.1-R231Q-Q234R/KCNE1 + Lin-tyr (black) (n = 5). (C) Maximum effects on \u0394V0.5 (at 20 \u03bcM) for WT KV7.1/KCNE1 + Lin-tyr (n = 4) and KV7.1-R231Q-Q234R/KCNE1 + Lin-tyr (n = 5). (D) Structure of KV7.1 pore domain (PD). Yellow spheres indicate mutated residue in the S6 segment, K326C, which is implicated in PUFA-mediated effects on maximal conductance. (E) Gmax dose\u2013response curve for WT KV7.1/KCNE1 + 3,4,5F-NAL-phe (purple) (n = 5) and KV7.1-K326C/KCNE1 + 3,4,5F-NAL-phe (pink) (n = 3). (F) Maximum effects on Gmax (at 20 \u03bcM) for WT KV7.1/KCNE1 + 3,4,5F-NAL-phe (n = 5) and KV7.1-K326C/KCNE1 + 3,4,5F-NAL-phe (n = 3). (G) Maximum effects on \u0394V0.5 (at 20 \u03bcM) of Lin-tyr on WT KV7.1/KCNE1 (n = 4), KV7.1-R231Q-Q234R/KCNE1 (n = 5), and KV7.1-K326C/KCNE1 (n = 6). (H) Maximum effects on Gmax (at 20 \u03bcM) of Lin-tyr on WT KV7.1/KCNE1 (n = 6), KV7.1-R231Q-Q234R/KCNE1 (n = 5), and KV7.1-K326C/KCNE1 (n = 6). Values for all compounds and concentrations available in Figure 5\u2014source data 1.\n\nThe residue K326, located near the pore, has been previously shown to be important for the Gmax increasing effect of non-aromatic PUFAs (Liin et al., 2018). We tested 3,4,5F NAL-phe, the largest Gmax increasing aromatic PUFA, on the IKs channel with the mutation K326C to assess whether K326 is also important for the aromatic PUFA Gmax increasing mechanism (Figure 5D). The Gmax increasing effect of 3,4,5F NAL-phe was significantly decreased from 2.4 \u00b1 0.4 at 20 \u03bcM in the WT IKs channel to 1.22 \u00b1 0.2 at 20 \u03bcM (*p=0.0287; Figure 5E and F). This reduction indicates that K326 is necessary for 3,4,5F NAL-phe\u2019s Gmax increasing effect.\n\nTo test whether the V0.5 shift and Gmax increasing effects of aromatic PUFAs are independent of each other, we compare the Lin-tyr effects on both of the above mutations. The mutation R231Q+Q234R significantly decreases the V0.5 shift effect from \u0394V0.5 = \u201374.4 mV \u00b1 4.1 at 20 \u03bcM in the WT IKs channel to \u0394V0.5 = \u201336.5 mV \u00b1 7.3 at 20 \u03bcM in the mutation (****p < 0.0001), as mentioned above, but does not change Gmax increasing effect of Lin-tyr (Figure 5G and H). Similarly, the mutation K326C significantly decreases the Gmax effect of Lin-tyr from Gmax = 2.04 \u00b1 0.59 at 20 \u03bcM in the WT IKs channel to Gmax = 1.08 \u00b1 0.15 at 20 \u03bcM in the mutation (***p=0.0015) but does not change the V0.5 shift effect of Lin-tyr (Figure 5G and H). Overall, Figure 5 demonstrates that aromatic PUFAs are shifting the voltage dependence and increasing the current maximum by two independent mechanisms: one via interactions with S4 charges (R231) and one via interactions with K326.\n\n### Residue T224 in the S3\u2013S4 loop is a novel locus for hydrogen bond formation between the IKS channel and tyrosine PUFAs\n\nOur experiments using fluorinated NALT (NAL-3F-tyr) to improve the hydrogen bonding capacity of the tyrosine head group demonstrated that hydrogen bonding by the tyrosine\u2019s para-hydroxyl group is the reason for the large effect of PUFAs with tyrosine head groups on the IKs channel voltage-dependent activation. To identify the residue with which the tyrosine head group hydrogen bonds, we mutated residues in the S3\u2013S4 loop capable of hydrogen bond formation. We chose residues in the S3\u2013S4 loop because it is located near the top of the PUFA head group in the proposed binding site for PUFAs to have the voltage-dependence effect. We individually mutated serine 217 (S217A), glutamine 220 (Q220L), threonine 224 (T224V), and serine 225 (S225A) and compared the effects of NALT on mutated channels compared to the WT IKs channel (Figure 6A and B). We found that S217A, Q220L, and S225A showed similar maximum shifts in voltage-dependent activation compared to the wild-type channel (WT + NALT: \u0394V0.5 = \u201356.1 \u00b1 3.6 mV; S217A + NALT: \u201365.9 \u00b1 3.7 mV; Q220L + NALT: \u201359.5 \u00b1 11.1 mV; S225A + NALT: \u201352.4 \u00b1 3.7 mV at 20 \u03bcM, ns; Figure 6C and D). However, the T224V mutation significantly attenuated the leftward shift in the voltage dependence of activation in response to NALT application from \u0394V0.5 = \u201356.1 \u00b1 3.6 mV in WT channels to \u0394V0.5 = \u201332.1 \u00b1 7.0 at 20 \u03bcM (*p=0.03; Figure 6D). To determine whether this effect was specific to compounds with the ability to form hydrogen bonds, we compared the effects of hydrogen-bonding NALT and non-hydrogen-bonding NAL-phe on T224V mutant channels (Figure 6E). In contrast to the attenuation of the overall voltage shift observed when NALT was applied to the T224V, there was no difference in the voltage-shifting effects of NAL-phe between the T224V mutant and WT channels (WT + NAL-phe:\u0394V0.5 = \u201312.5 \u00b1 3.8 mV; T224V + NAL-phe: \u201313.2 \u00b1 2.6 mV at 20 \u03bcM, ns; Figure 6F and G). These data demonstrate that the T224V mutation only reduces the efficacy of aromatic PUFAs that contain a hydrogen-bonding group like tyrosine. As a result, we have identified a novel interaction between the S3\u2013S4 loop residue T224 and hydrogen bonding moieties of aromatic PUFA head groups. Figure 7A shows the distance between the residues R231 and T224V in KCNQ1 is 9.1 \u00c5 and the length of a tyrosine head group is 8.5 \u00c5. The tyrosine head group fits nicely in between these two residues in silico, demonstrating the possibility of this interaction to occur (Figure 7A).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/85773/elife-85773-fig6-v2.jpg)\n\n**Figure 6.:** (A) Top view of KV7.1 voltage-sensing domain (VSD) highlighting mutated residues in the S3\u2013S4 loop. (B) Representative traces of WT KV7.1/KCNE1 (black), KV7.1-S217A/KCNE1 (red), KV7.1-Q220L/KCNE1 (teal), KV7.1-T224V/KCNE1 (cyan), and KV7.1-S225A/KCNE1 (purple) with 0 \u03bcM (left) and 20 \u03bcM (right) NALT. (C) \u0394V0.5 dose\u2013response curve for WT KV7.1/KCNE1 (n = 4), KV7.1-S217A/KCNE1 (n = 5), KV7.1-Q220L/KCNE1 (n = 3), KV7.1-T224V/KCNE1 (n = 4), and KV7.1-S225A/KCNE1 (n = 7) with NALT. (D) Maximum effects on \u0394V0.5 (at 20 \u03bcM) for WT and S3\u2013S4 loop mutations. Asterisks indicate statistically significant differences determined by one-way ANOVA. (E) Representative traces of WT KV7.1/KCNE1 with NALT (black) and NAL-phe (gray) compared to KV7.1-T224V/KCNE1 with NALT (cyan) and NAL-phe (dark purple), KV7.1-S217A/KCNE1 (red), KV7.1-Q220L/KCNE1 (teal), KV7.1-T224V/KCNE1 (cyan), and Kv7.1-S225A/KCNE1 (purple) with 0 \u03bcM (left) and 20 \u03bcM (right) NALT. (F) \u0394V0.5 dose\u2013response curve for WT KV7.1/KCNE1 and KV7.1-T224V/KCNE1 with NALT and NAL-phe. (G) Maximum effects on \u0394V0.5 (at 20 \u03bcM) for WT KV7.1/KCNE1 (n = 4) and KV7.1-T224V/KCNE1 with NALT (n = 4) and NAL-phe (n = 7). Asterisks indicate statistically significant differences determined by one-way ANOVA. Values for all compounds and concentrations available in Figure 6\u2014source data 1.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/85773/elife-85773-fig7-v2.jpg)\n\n**Figure 7.:** (A) Image of the KCNQ1 structure (PDB 6UZZ) marking the distance between R231 and T224. This distance is shown in comparison to the length of a tyrosine head group. (B) Model for aromatic PUFAs effect on KV7.1/KCNE1 channels, side view (left) and top view (right). One site is between S4 and S5: Aromatic PUFAs shift the voltage dependence of opening by stabilizing the upstate of S4 by an electrostatic interaction between R231(+) and the carboxyl group (O-) of the PUFA. A hydrogen bond (HB) by the hydroxyl group (OH) at the para site of the aromatic ring of the PUFA with T224 stabilizes the PUFA in this site. Another site is between S6 and S1: aromatic PUFAs increase the maximum conductance by an electrostatic interaction between K326(+) and the carboxyl group (O-). An electrostatic interaction (EI) by the para fluorine (F-) stabilize the PUFA in this site.\n\nIn our proposed mechanism, aromatic PUFA analogues modulate the IKs channel via two independent interactions (Figure 5). In one site, the carboxyl group is interacting with R231 (in S4) and the distal \u2013OH is hydrogen bonding with T224 (in the S3\u2013S4 loop) (Figure 7B). In the other site, the carboxyl group is interacting with K326 (in S6) and the distal electronegative atom stabilizes the PUFA via an electrostatic interaction (Figure 7B).\n\n## Discussion\n\nWe have found that PUFA analogues with tyrosine head groups are strong activators of the cardiac IKs channel. Tyrosine PUFAs shift the voltage dependence of activation to negative potentials and increase the maximal conductance, which together contribute to increases in overall IKs current. The tyrosine head group is an aromatic ring with a distal -OH group in the para-position. Tyrosine PUFA analogues have the potential to interact with the IKs channel through several candidate mechanisms involving either the aromatic ring or the -OH group (or both). The aromatic ring could modulate IKs channel function through cation\u2013pi interactions with positively charged groups on the IKs channel. In addition, the -OH group could participate in electrostatic interactions and/or act as a hydrogen bond donor. In this work, we elucidate the mechanisms of this PUFA-induced activation of the IKs channel by applying PUFA analogues with modified aromatic head groups designed to test specific chemical interactions between the PUFA head group and the IKs channel.\n\nIf cation\u2013pi interactions were the primary mechanism through which tyrosine PUFAs activate the IKs channel, we would expect similar activating effects of PUFA analogues with aromatic rings that lack the \u2013OH group, such as phenylalanine. However, PUFA analogues with phenylalanine head groups (Lin-phe and NAL-phe) do not activate the IKs channel to the same degree as PUFA analogues with a tyrosine head group (Lin-tyr and NALT) and display significant reductions in efficacy for increases in I/I0 and shifts in the V0.5. Further evidence that cation\u2013pi interactions are not a predominant mechanism for IKs channel activation by tyrosine PUFA analogues comes from experiments applying fluorinated phenylalanine PUFAs (4F-NAL-phe and 3,4,5F-NAL-phe), which can be used as a tool to probe cation\u2013pi interactions in ion channel function (Pless et al., 2014). Pless et al., 2014 demonstrated that tri-fluorination of phenylalanine disperses the electrostatic surface potential that is necessary for cation\u2013pi interactions (Pless et al., 2014). Disruption of the electrostatic surface potential through addition of fluorine atoms to the NAL-phe head group (3,4,5F-NAL-phe), therefore, is expected to reduce the efficacy of 3,4,5F-NAL-phe in comparison to NAL-phe alone. However, we find the opposite when we apply 3,4,5F-NAL-phe to the cardiac IKs channel, and see that 3,4,5F-NAL-phe is a more potent activator of the IKs channel compared to NAL-phe alone. Together, these data suggest that cation\u2013pi interactions are not the primary mechanism through which these aromatic PUFA analogues activate the cardiac IKs channel.\n\nWhen we look at several fluorinated and brominated phenylalanine PUFA analogues, we find specifically that 3,4,5F-NAL-phe has significantly greater effects on I/I0 and \u0394V0.5 compared to NAL-phe alone. While not statistically significant, 4Br-, 4F-, and 3,4,5F-NAL-phe also lead to some of the most consistent increases in Gmax among the PUFA analogues tested in this work, with each of these compounds leading to a twofold increase in Gmax. These data suggest that aromatic PUFA analogues with highly electronegative atoms on the distal end of the aromatic head group have the most pronounced effects on the maximal conductance of the IKs channel. Although brominated and fluorinated phenylalanine analogues increase the maximal conductance of the IKs channel, these modified PUFAs still fail to recapitulate the leftward \u0394V0.5 observed with tyrosine PUFA analogues. While the \u2013OH group of tyrosine PUFA analogues is indeed strongly electronegative, it can also act as a hydrogen bond donor. When we applied a fluorinated tyrosine PUFA (3F-NALT) to increase hydrogen bonding abilities, we found that this leads to a stronger leftward shift in the voltage dependence of IKs activation. This suggests that hydrogen bonding via the \u2013OH group contributes to the left-shifting effects of voltage-dependent activation through effects on the IKs channel voltage sensor. Most notably, these results suggest that specific modifications to the aromatic PUFA head group can preferentially improve either the voltage-shifting or maximal conductance effects of PUFA analogues. Our data suggests that adding highly electronegative groups to an aromatic ring, such as bromine and fluorine, most consistently improve the maximal conductance-increasing effects and reduce voltage dependence-shifting effects relative to PUFA analogues with a tyrosine or phenylalanine head group. On the other hand, we found that reducing the pKa of the \u2013OH group (and increasing the potential for hydrogen bonding), while leaving the effect on Gmax intact, preferentially improves the voltage-shifting effects on the IKs channel.\n\nPrevious work has demonstrated that PUFA analogues have two independent effects on IKs channel activation. PUFA analogues are known to shift the voltage dependence of activation in the IKs channel through electrostatic effects on the channel voltage sensor (B\u00f6rjesson et al., 2008; Liin et al., 2015). This is mediated by interactions of the negative PUFA head group with the outermost positively charged arginine residues located in the S4 segment (Liin et al., 2016; Liin et al., 2015). Recently, though, a second effect on the IKs channel pore has been reported to influence the maximal conductance of the IKs channel (Liin et al., 2018). This is mediated through electrostatic interactions between the PUFA head groups and a positively charged lysine residue in the S6 segment \u2013 K326 (Liin et al., 2018). In addition, molecular dynamics (MD) simulations with the Kv7.1 (KCNQ1) channel (the pore-forming domain for the IKs channel) (Yazdi et al., 2021) identified two separate high-occupancy sites for linoleic acid: site 1 at R231 in the S4 segment, and site 2 at K326 in the S6 segment (Yazdi et al., 2021). We here show that the more effective aromatic PUFAs also act on these sites in S4 and S6. To do this, we selected the best V0.5 shifting aromatic PUFA (Lin-tyr) to test on the IKs channel with the S4 mutation R231Q. Additionally, we selected the best Gmax increasing aromatic PUFA (3,4,5F-NAL-phe) to test on the IKs channel with S6 mutation K326C. The mutation R231Q decreases the V0.5 shifting effect of Lin-tyr by half, indicating that Lin-tyr is shifting the voltage dependence by creating an electrostatic interaction with the positive charges on the voltage sensor. Conversely, the mutation K326C almost completely removed the Gmax increasing effect of 3,4,5F-NAL-phe. To demonstrate that these effects are also independent of each other in aromatic PUFAs, we evaluate the V0.5 shifting effect and the Gmax increasing effect of Lin-tyr on both mutations. The R231Q mutation decreases V0.5 shifting effect but does not change the Gmax effect of Lin-tyr. While the K326 mutation decreases the Gmax effect but does not change the V0.5 shifting effect of Lin-tyr. We therefore propose that the increased effects of the aromatic PUFAs, compared to non-aromatic PUFAs, are due to the additional hydrogen bonding in site 1 and electrostatic interactions in site 2 to better anchor them in these binding sites to increase their effects (Figure 7B). As mentioned above, we also show that the aromatic rings have the potential to be modified to give preferential effects on either the IKs channel voltage sensor or channel pore.\n\nOur experiments with NAL-Phe and 3F-NALT show that the hydrogen bonding capacity of the \u2013OH on the tyrosine of NALT is necessary for it to have a more effective voltage dependence shift effect. We further discovered the specific details of the hydrogen bond interactions between this \u2013OH group of NALT and the S3\u2013S4 loop of the IKs channel. We mutated all residues capable of hydrogen bonding in the S3\u2013S4 loop, removing their ability to hydrogen bond and tested whether this changed the NALT voltage dependence shifting effect. The voltage dependence of mutations S217A, Q220L, and S225A was shifted to the same degree by NALT as the wild-type IKs channel. However, the voltage dependence of mutation T224V was shifted significantly less than the WT IKs channels. This shows that the \u2013OH group on the tyrosine of NALT hydrogen bonds with T224V, thereby improving the PUFA\u2019s ability to shift the voltage dependence. This hydrogen bond interaction between PUFAs and the 3\u20134 loop of the IKs channel is a novel mechanism to increase the effect of PUFAs to activate the IKs channel. These data suggest that the drugs designed to target this interaction would be more effective at shifting IKs channel voltage dependence.\n\nOverall, our findings suggest that different aromatic PUFA analogues not only increase PUFA efficacy on activating the IKs channel, but their specific effects on IKs function can be modulated independently, either increasing the maximal conductance or voltage-shifting effect. Patients with LQTS can have mutations in the IKs channel that causes either a decrease in Gmax or a rightward shift of voltage dependence. By independently modulating PUFAs to either increase Gmax or cause a leftward shift in voltage dependence, we may be able to design therapies that are more personalized to each patient\u2019s specific LQTS mutation. This novel mechanistic understanding of how aromatic PUFAs have these effects on the IKs channel may help to aid drug development for LQTS.\n\n## Materials and methods\n\n### Molecular biology\n\nKV7.1 and KCNE1 channel cRNA were transcribed using the mMessage mMachine T7 kit (Ambion). 50 ng of cRNA was injected at a 3:1, weight:weight (KV7.1:KCNE1) ratio into defolliculated X. laevis oocytes (Ecocyte, Austin, TX) for IKs channel expression. Injected cells were incubated for 72\u201396 hr in standard ND96 solution (96 mM NaCl, 2 mM KCl, 1 mM MgCl2, 1.8 mM CaCl2, 5 mM HEPES; pH = 7.5) containing 1 mM pyruvate at 16\u00b0C prior to electrophysiological recordings.\n\nPrimers for KV7.1 mutations:\n\n### PUFA analogues and fluorinated PUFAs\n\nCommercially available PUFAs N-(\u03b1-linolenoyl) tyrosine (NALT) item number 10032 and linoleoyl phenalanine (Lin-phe) item number 20063 were obtained from Cayman Chemical (Ann Arbor, MI) or Larodan (Solna, Sweden). Linoleoyl tyrosine (Lin-tyr), docosahexaenoyl tyrosine (DHA-tyr), and pinolenoyl tyrosine (Pin-tyr) were synthesized as described previously (Bohannon et al., 2020). NAL-phe, 4Br-NAL-phe, 4F-NAL-phe, 3,4,5F-NAL-phe, and 3F-NALT were synthesized similarly, with detailed descriptions of the synthesis procedures for each compound provided in the supplemental methods. PUFA analogues were kept at \u201320\u00b0C as 100 mM stock solutions in ethanol except 4Br-NAL-phe, 4F-NAL-phe, 3,4,5F-NAL-phe, and 3F-NALT where stock solutions were prepared as needed on the day of recording. Serial dilutions of the different PUFAs were prepared from stocks to make 0.2 \u03bcM, 0.7 \u03bcM, 2.0 \u03bcM, 7.0 \u03bcM, and 20 \u03bcM concentrations in ND96 solutions (pH = 7.5). NALT is a commercially available compound. The other compounds used in this study were synthesized in small amounts. Thus, NALT is used as the focus of this study.\n\n### Two-electrode voltage-clamp (TEVC)\n\nX. laevis oocytes, co-expressing wild-type KV7.1 and KCNE1, were recorded in the two-electrode voltage-clamp (TEVC) configuration. Recording pipettes were filled with 3 M KCl. The recording chamber was filled with ND96 (96 mM NaCl, 2 mM KCl, 1 mM MgCl2, 1.8 mM CaCl2, 5 mM Tricine; pH 7.5). Dilutions of PUFAs and PUFA analogues were perfused into the recording chamber using the Rainin Dynamax Peristaltic Pump (Model RP-1) (Rainin Instrument Co., Oakland, CA). Electrophysiological recordings were obtained using Clampex 10.3 software (Axon, pClamp, Molecular Devices). During the application of PUFAs, the membrane potential was stepped every 30 s from \u201380 mV to 0 mV for 5 s before stepping to \u201340 mV and back to \u201380 mV to ensure that the PUFA effects on the current at 0 mV reached steady state (Figure 1D). A voltage-step protocol was used to measure the current vs. voltage (I\u2013V) relationship before PUFA application and after the PUFA effects had reached steady state for each concentration of PUFA. Cells were held at \u201380 mV followed by a hyperpolarizing prepulse to \u2013140 mV to make sure all channels are fully closed. The voltage was then stepped from \u2013100 to 60 mV (in 20 mV steps) followed by a subsequent voltage step to \u201320 mV to measure tail currents before returning to the \u201380 mV holding potential.\n\n### Data analysis\n\nTail currents were analyzed using Clampfit 10.3 software in order to obtain conductance vs. voltage (G\u2013V) curves to determine the voltage dependence of channel activation. V0.5, the voltage at which half the maximal current occurs, was obtained by fitting the G\u2013V curves from each concentration of PUFA with a Boltzmann equation:\n\n$$\nG(V)=\\frac{G_{max}}{1+e^{(V_{0.5}\u2212V)/s}}\n$$\n\nwhere Gmax is the maximal conductance at positive voltages and s is the slope factor in mV. The current values for each concentration at 0 mV (I/I0) were used to plot the dose\u2013response curves for each PUFA. These dose\u2013response curves were fit using the Hill equation to obtain the Km value for each PUFA:\n\n$$\n\\frac{I}{I_{0}}=1+ \\frac{A}{1+\\frac{Km^{n}}{x^{n}}}\n$$\n\nwhere A is the fold increase in current caused by the PUFA at saturating concentrations, Km is the apparent affinity of the PUFA, x is the concentration, and n is the Hill coefficient. Fitted maximum values derived from the dose\u2013response curves are reported for each of the effects (I/I0, \u0394V0.5, and Gmax) from the different PUFAs tested. In some cases, there is variability in the V0.5 between batches of oocytes. In order to correct for variability due to oocytes, when the V0.5 was greatly different than 20 mV in control solution, we applied a correction in order to more accurately measure PUFA-induced IKs current increases. We subtracted the V0.5 (given by fitting the G\u2013V with a Boltzmann equation) by 20 mV and used the current measured at the resulting voltage. The maximum conductance (Gmax) was calculated by taking the difference between the maximum and minimum current values (using the G\u2013V curve for each concentration) and then normalizing to the value Gmax0 in control solution (0 \u03bcM). Graphs plotting mean and standard error of the mean (SEM) for I/I0, \u0394V0.5, Gmax, and Km were generated using GraphPad Prism (GraphPad Software, La Jolla, CA).\n\n### Statistics\n\nUnpaired t-tests and one-way ANOVA with multiple-comparisons statistics were computed using GraphPad Prism (GraphPad Software). Results were considered significant if p<0.05.\n\n### Materials availability statement\n\nMutations and newly synthesized PUFAs are available from the corresponding author upon reasonable request.\n",
+      "created_at": "2025-12-04T02:19:53.933902Z"
+    },
+    {
+      "id": "55b595a4-b8a2-4851-9f8f-aba1b1bcf964",
+      "submission_id": "d3f51403-7e3e-4571-a2d0-a848966e4cb9",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Teresa Giraldez, https://ror.org/01r9z8p25 University of La Laguna Spain\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.85773.sa0](https://doi.org/10.7554/eLife.85773.sa0)\n\nThis work reports important findings regarding the regulation of ion channels by polyunsaturated fatty acids (PUFAs) through the identification of novel aromatic PUFA analogs with potent effects on the IKs channels, which allow for mechanistic insights into their mode of action. The experiments are solid, combining site-directed mutagenesis, electrophysiological and pharmacological approaches to dissect the different molecular mechanisms and sites involved in the functional interactions. This work will be of broad interest to ion channel biophysicists, physiologists, and medical chemists interested in drug development for LQT syndrome.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Teresa Giraldez, https://ror.org/01r9z8p25 University of La Laguna Spain\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.85773.sa1](https://doi.org/10.7554/eLife.85773.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Mechanistic insights into robust cardiac IKs potassium channel activation by aromatic polyunsaturated fatty acid analogues\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Richard Aldrich as the Senior Editor. The following individual involved in the review of your submission has agreed to reveal their identity: Wayland WL Cheng (Reviewer #3).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\nAll reviewers agreed that these results are solid and interesting. However, reviewers also raised several concerns that should be addressed by the authors. Essential revisions should include:\n\n1) The choice of NALT as the focus of this study is not fully clear; please clarify.\n\n2) You may wish to reconsider the conclusion that T224 forms a hydrogen bond with NALT or provide complementary evidence to support this claim (see full comments from reviewer #3).\n\n3) Please clarify the rationale for the mutagenesis scan in the S3-S4 loop (reviewer #2).\n\n4) The claim that aromatic PUFA analogues act through similar mechanisms to non-aromatic PUFAs would be strengthened by showing the (lack of/reduced) effects of aromatic PUFA analogues on conductance for the mutant R231Q/Q234R, or the (lack of/reduced) effects on deltaV0.5 for K326C mutants, as indicated by reviewers #1 and #3. In this context, it would be expected that the addition of Lin-Tyr, which causes significant effects on both Gmax and deltaV0.5, would present reduced effects in both K326C and R231Q/Q234R mutants.\n\n5) We would recommend revising the text according to all comments raised by the reviewers and listed in the individual reviews below.\n\nReviewer #1 (Recommendations for the authors):\n\nThe abstract and introduction focus the aim of the work on the identification of mechanisms underlying the effect of N-a-linoleoyl Tyr (NALT) on Iks. However, four different Tyr PUFA analogues are actually used in this work, of which not NALT but Lin-Tyr has the most striking effect on Iks. It does produce a left shift of -74 mV and duplicates Gmax, resulting in an overall increase of 12.8 times IKs (I/Io). It would be interesting to explain why the focus is centered on studying NALT as opposed to Lin-Tyr, which seems to be more effective in increasing Iks.\n\nAs stated in this work and shown previously in other publications by the lab, it is convincingly shown that the Tyr PUFAs exert two different effects, by left-shifting the G-V and/or increasing channel conductance. It is clear that both effects can contribute synergistically to the net increase of IKs (I/Io). Coincident large effects in both (e.g. Lin-Tyr, -74.4 mV shift, and 2.0 Gmax increase) or modest effects of both (e.g. NAL-Phe, -13.1 mV shift, and 1.2 Gmax increase) result in large (12.5) or moderate (2.5) increase of I/Io. However, if one effect is predominant, it seems that the influence on IKs is more directly related to the increase in Gmax. For example, NALT produces a large shift of -56.2 mV and mild effects on the Gmax (1.43) which results in a 5.14 increase in IKs. Although a significantly larger shift is produced by 3F-NALT (-69.3) with similar effects on Gmax (1.3), however, this has no remarkable effect on IKs (5.0) as compared with NALT. When adding 3,4,5F-NAL-Phe, the effect on the G-V shift is modest (-32.4), but the increase in Gmax is significant (2.4), leading to higher net effects on Iks (7?) even than NALT. This may have been discussed somewhere else, but maybe the authors can comment on this apparent correlation. The higher effect of 3,4,5F-NAL-Phe on IKs would be worth discussing (Figure 3D)\n\nHas the effect of Lin-Tyr on the K326C mutant been tested?\n\nFrom previous works it is inferred that 3,4,5F-NAL-Phe on the K326C mutant is specific on Qmax, i.e. it produces a similar effect on V0.5 than WT, is that right? The same question would be asked for the effect of Lin-Tyr on Qmax on the R231Q/Q234R mutant.\n\nAbout the model in Figure 5G: \"An EI between para-F- and site 2 stabilize the PUFA in this site\". Is this conclusion reached in the present work? It would be useful to include this more clearly in the text.\n\nCould Figure 5G and 6H be integrated to provide an \"updated model\" of the Tyr-PUFA action mechanism? Figure 5G seems to recapitulate the previously described activation mechanisms of PUFAs on IKs channels (as stated in the text, line 342), which is probably already shown somewhere else. Maybe it would be more useful for the readers to include a single final model in Figure 6 where all findings are included. This is just a suggestion.\n\nReviewer #2 (Recommendations for the authors):\n\nAs a general comment, I would like to congratulate the authors on a manuscript well written, and results well-presented and illustrated; however, in my opinion, the manuscript could benefit from a little more introduction of why NALT could be of interest to reach a broader audience broaden the scope of interest of the manuscript. As stated beautifully in the introduction, expanding knowledge to include other \"therapeutic interventions to treat LQTS\" this manuscript could be an opportunity to highlight that outcome using tyrosine-PUFA analogs.\n\nReviewer #3 (Recommendations for the authors):\n\n1) Regarding the effect of T224V, it appears that T224V produces an approximately 40% reduction in the deltaV0.5 for both NALT and NAL-phe, only that NAL-phe has a smaller effect and the standard deviation of the measurement means there is no significant difference between WT and T224V. This might suggest that T224V does not selectively perturb the effect of NALT compared to NAL-phe. The authors may wish to reconsider the conclusion that T224 forms a hydrogen bond with NALT or provide complementary evidence to support this claim.\n\n2) Is it physically plausible from a structure of Kv7.1 that the hydroxyl in NALT should form a hydrogen bond with T224 when also interacting with the carboxylate group near R231? If so, it may be helpful to provide a molecular image that illustrates the proximity of these two residues.\n\n3) Does R231Q/Q234R attenuate the effect of aromatic PUFA analogues on conductance? Likewise, does K326C attenuate the effect of aromatic PUFA analogues on deltaV0.5? As was previously reported for non-aromatic PUFAs, one might expect that these mutations will selectively impact just the voltage dependence of activation (R231) or conductance (K326). By showing this data, the authors would strengthen the claim that aromatic PUFA analogues act through similar mechanisms.\n\n4) The authors state in lines 319 and 490 that the aromatic PUFAs are \"superior\". What is meant by this? It appears that the aromatic PUFAs are more efficacious than the non-aromatic analogues. If so, it would be helpful to state this more explicitly and to provide some comparison of the efficacy of aromatic and non-aromatic PUFAs.\n\n5) In Methods line 117, Larsson et al., 2020, JGP is referenced. Which study is this in the Reference list?\n",
+      "created_at": "2025-12-04T02:19:53.933902Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T02:19:53.933902Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T02:19:53.933902Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "6d6e0fd7-bd23-4432-9cb3-9113f2ec1d52",
+      "content_id": "9bd967df-852a-4df4-bd5a-dc746e7fbc76",
+      "claim_id": "C1",
+      "claim": "Voltage-gated potassium (KV) channels are important regulators of cellular excitability and control action potential repolarization in the heart and brain.",
+      "claim_type": "EXPLICIT",
+      "source": "Voltage-gated potassium (KV) channels are important regulators of cellular excitability and control action potential repolarization in the heart and brain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established scientific knowledge about KV channels.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:53.933902Z"
+    },
+    {
+      "id": "c2399836-ab93-4933-ab35-758ae40705ca",
+      "content_id": "9bd967df-852a-4df4-bd5a-dc746e7fbc76",
+      "claim_id": "C2",
+      "claim": "KV channel mutations lead to disordered cellular excitability.",
+      "claim_type": "EXPLICIT",
+      "source": "KV channel mutations lead to disordered cellular excitability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the consequences of KV channel mutations.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:53.933902Z"
+    },
+    {
+      "id": "20adfcdc-0af3-4c92-91b2-6a0cc0720f5d",
+      "content_id": "9bd967df-852a-4df4-bd5a-dc746e7fbc76",
+      "claim_id": "C3",
+      "claim": "Loss-of-function mutations in KV channels result in membrane hyperexcitability, a characteristic of epilepsy and cardiac arrhythmias.",
+      "claim_type": "EXPLICIT",
+      "source": "Loss-of-function mutations, for example, result in membrane hyperexcitability, a characteristic of epilepsy and cardiac arrhythmias.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the pathophysiological consequences of loss-of-function KV channel mutations.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:53.933902Z"
+    },
+    {
+      "id": "bc45c569-d966-40c8-8a92-b85606b2c35c",
+      "content_id": "9bd967df-852a-4df4-bd5a-dc746e7fbc76",
+      "claim_id": "C4",
+      "claim": "Polyunsaturated fatty acids (PUFAs) and PUFA analogues comprise a class of KV channel activators with potential applications in the treatment of arrhythmogenic disorders such as long QT syndrome (LQTS).",
+      "claim_type": "EXPLICIT",
+      "source": "Polyunsaturated fatty acids (PUFAs) and PUFA analogues comprise a class of KV channel activators with potential applications in the treatment of arrhythmogenic disorders such as long QT syndrome (LQTS).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the potential therapeutic application of PUFAs, based on their known activating effects.",
+      "evidence_type": "[\"KNOWLEDGE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:53.933902Z"
+    },
+    {
+      "id": "36519375-c713-44d3-9e88-432a08a1257e",
+      "content_id": "9bd967df-852a-4df4-bd5a-dc746e7fbc76",
+      "claim_id": "C5",
+      "claim": "LQTS is caused by a loss-of-function of the cardiac IKs channel.",
+      "claim_type": "EXPLICIT",
+      "source": "LQTS is caused by a loss-of-function of the cardiac IKs channel \u2013 a tetrameric potassium channel complex formed by KV7.1 and associated KCNE1 protein subunits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the molecular basis of LQTS.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:53.933902Z"
+    },
+    {
+      "id": "61512c2e-af97-47af-a558-b9cec0af91a0",
+      "content_id": "9bd967df-852a-4df4-bd5a-dc746e7fbc76",
+      "claim_id": "C6",
+      "claim": "The cardiac IKs channel is a tetrameric potassium channel complex formed by KV7.1 and associated KCNE1 protein subunits.",
+      "claim_type": "EXPLICIT",
+      "source": "LQTS is caused by a loss-of-function of the cardiac IKs channel \u2013 a tetrameric potassium channel complex formed by KV7.1 and associated KCNE1 protein subunits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the molecular composition of the IKs channel.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:53.933902Z"
+    },
+    {
+      "id": "eedaf674-21cb-443f-93da-1c4b6e98cf83",
+      "content_id": "9bd967df-852a-4df4-bd5a-dc746e7fbc76",
+      "claim_id": "C7",
+      "claim": "A set of aromatic PUFA analogues produce robust activation of the cardiac IKs channel.",
+      "claim_type": "EXPLICIT",
+      "source": "We have discovered a set of aromatic PUFA analogues that produce robust activation of the cardiac IKs channel",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study, supported by experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:53.933902Z"
+    },
+    {
+      "id": "962d833d-00d0-4fc5-9ea3-36a7b7727994",
+      "content_id": "9bd967df-852a-4df4-bd5a-dc746e7fbc76",
+      "claim_id": "C8",
+      "claim": "A unique feature of aromatic PUFA analogues is an aromatic, tyrosine head group.",
+      "claim_type": "EXPLICIT",
+      "source": "a unique feature of these PUFA analogues is an aromatic, tyrosine head group.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a descriptive statement about the chemical structure of the compounds studied.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:53.933902Z"
+    },
+    {
+      "id": "09a95520-8607-4f76-85cb-902c7bed9573",
+      "content_id": "9bd967df-852a-4df4-bd5a-dc746e7fbc76",
+      "claim_id": "C9",
+      "claim": "Tyrosine PUFA analogues do not activate the IKs channel through cation\u2013pi interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that tyrosine PUFA analogues do not activate the IKs channel through cation\u2013pi interactions",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from experimental data comparing tyrosine and phenylalanine PUFA analogues.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:53.933902Z"
+    },
+    {
+      "id": "714e0bb7-a1fb-4ed1-8df1-f0a647270faa",
+      "content_id": "9bd967df-852a-4df4-bd5a-dc746e7fbc76",
+      "claim_id": "C10",
+      "claim": "Tyrosine PUFA analogues activate the IKs channel through a combination of hydrogen bonding and ionic interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "but instead do so through a combination of hydrogen bonding and ionic interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from experimental data using modified aromatic head groups.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:53.933902Z"
+    },
+    {
+      "id": "a3f531ec-bb4e-406c-8059-851f10cbf6e2",
+      "content_id": "9bd967df-852a-4df4-bd5a-dc746e7fbc76",
+      "claim_id": "C11",
+      "claim": "The delayed rectifier potassium channel (IKs) underlies a critical repolarizing current that determines the timing of the ventricular action potential.",
+      "claim_type": "EXPLICIT",
+      "source": "The delayed rectifier potassium channel (IKs) underlies a critical repolarizing current that determines the timing of the ventricular action potential (Nerbonne and Kass, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:53.933902Z"
+    },
+    {
+      "id": "48a12649-9c24-46f2-a4d4-d7701ce1306b",
+      "content_id": "9bd967df-852a-4df4-bd5a-dc746e7fbc76",
+      "claim_id": "C12",
+      "claim": "The cardiac IKs current is mediated by the association of the voltage-gated K+ channel KV7.1 \u03b1-subunit with the KCNE1 \u03b2-subunit.",
+      "claim_type": "EXPLICIT",
+      "source": "The cardiac IKs current is mediated by the association of the voltage-gated K+ channel KV7.1 \u03b1-subunit with the KCNE1 \u03b2-subunit (Abramochkin et al., 2018; Wang et al., 1998; Barhanin et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:53.933902Z"
+    },
+    {
+      "id": "3cf68ed8-9c09-441a-a2ca-32aee4dc6c46",
+      "content_id": "9bd967df-852a-4df4-bd5a-dc746e7fbc76",
+      "claim_id": "C13",
+      "claim": "The KV7.1 \u03b1-subunit consists of six transmembrane spanning segments, denoted S1\u2013S6 where S1\u2013S4 form the voltage-sensing domain (VSD) and S5\u2013S6 form the pore domain (PD).",
+      "claim_type": "EXPLICIT",
+      "source": "The KV7.1 \u03b1-subunit consists of six transmembrane spanning segments, denoted S1\u2013S6 where S1\u2013S4 form the voltage-sensing domain (VSD) and S5\u2013S6 form the pore domain (PD) (Sun and MacKinnon, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the structure of KV7.1, supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:53.933902Z"
+    },
+    {
+      "id": "b118c828-e32a-44d9-b174-3c32976d8bca",
+      "content_id": "9bd967df-852a-4df4-bd5a-dc746e7fbc76",
+      "claim_id": "C14",
+      "claim": "The S4 segment contains several positively charged arginine residues that allow S4 to move outward, toward the extracellular side of the membrane, when the membrane becomes depolarized.",
+      "claim_type": "EXPLICIT",
+      "source": "The S4 segment contains several positively charged arginine residues that allow S4 to move outward, toward the extracellular side of the membrane, when the membrane becomes depolarized (Broomand et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about voltage sensor function, supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:53.933902Z"
+    },
+    {
+      "id": "abea190a-7b71-4ddf-b063-f7839fc3ed36",
+      "content_id": "9bd967df-852a-4df4-bd5a-dc746e7fbc76",
+      "claim_id": "C15",
+      "claim": "The outward movement of the S4 is transformed into pore opening as a result of conformational changes in the S4\u2013S5 linker of KV7.1.",
+      "claim_type": "EXPLICIT",
+      "source": "This outward movement of the S4 is transformed into pore opening as a result of conformational changes in the S4\u2013S5 linker of KV7.1 (Kalstrup and Blunck, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the coupling mechanism, supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:53.933902Z"
+    },
+    {
+      "id": "90b52704-9a10-44c1-a9ee-c994df1a3068",
+      "content_id": "9bd967df-852a-4df4-bd5a-dc746e7fbc76",
+      "claim_id": "C16",
+      "claim": "Co-expression of KCNE1 with KV7.1 imparts a more depolarized voltage dependence of activation, slower activation kinetics, and increased single-channel conductance compared to KV7.1 alone.",
+      "claim_type": "EXPLICIT",
+      "source": "Co-expression of KCNE1 with KV7.1 imparts a more depolarized voltage dependence of activation, slower activation kinetics, and increased single-channel conductance compared to KV7.1 alone (Sun et al., 2012; Yang and Sigworth, 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the effects of KCNE1 on KV7.1, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:53.933902Z"
+    },
+    {
+      "id": "1528b770-e5ca-4243-91db-b6ff27926ec0",
+      "content_id": "9bd967df-852a-4df4-bd5a-dc746e7fbc76",
+      "claim_id": "C17",
+      "claim": "Loss-of-function mutations in the cardiac IKs channel can lead to long QT syndrome (LQTS), which predisposes individuals to ventricular fibrillation and sudden cardiac death.",
+      "claim_type": "EXPLICIT",
+      "source": "Loss-of-function mutations in the cardiac IKs channel can lead to an arrhythmogenic disorder known as long QT syndrome (LQTS), which predisposes individuals to ventricular fibrillation and sudden cardiac death (Fern\u00e1ndez-Falgueras et al., 2017; Roden, 2008; Watanabe et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the clinical consequences of IKs channel mutations, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:53.933902Z"
+    },
+    {
+      "id": "775a0ee5-03a5-4b87-b5c6-5f018d7d76e8",
+      "content_id": "9bd967df-852a-4df4-bd5a-dc746e7fbc76",
+      "claim_id": "C18",
+      "claim": "Current treatments for LQTS include pharmacological intervention with \u03b2-blockers or surgical implantation of a cardioverter defibrillator.",
+      "claim_type": "EXPLICIT",
+      "source": "Current treatments for LQTS include pharmacological intervention with \u03b2-blockers or surgical implantation of a cardioverter defibrillator (Waddell-Smith and Skinner, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about LQTS treatment, supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:53.933902Z"
+    },
+    {
+      "id": "22c291bd-1fde-4e0b-84ef-a90b5b9cb560",
+      "content_id": "9bd967df-852a-4df4-bd5a-dc746e7fbc76",
+      "claim_id": "C19",
+      "claim": "Limitations of current LQTS treatments generate a need for novel therapeutic interventions.",
+      "claim_type": "EXPLICIT",
+      "source": "However, limitations of these treatments generate a need for novel therapeutic interventions to treat LQTS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the clinical need for new therapies, based on known limitations of current treatments.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:53.933902Z"
+    },
+    {
+      "id": "b8cb6ae2-d81a-429f-b50e-dfecd60140b9",
+      "content_id": "9bd967df-852a-4df4-bd5a-dc746e7fbc76",
+      "claim_id": "C20",
+      "claim": "Polyunsaturated fatty acids (PUFAs) are amphipathic molecules composed of a charged hydrophilic head group and a long, polyunsaturated hydrophobic tail group.",
+      "claim_type": "EXPLICIT",
+      "source": "Polyunsaturated fatty acids (PUFAs) are amphipathic molecules composed of a charged hydrophilic head group and a long, polyunsaturated hydrophobic tail group (Jump, 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about PUFA structure, supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:53.933902Z"
+    },
+    {
+      "id": "179beb79-8e2c-48b1-8142-fd12c72d97da",
+      "content_id": "9bd967df-852a-4df4-bd5a-dc746e7fbc76",
+      "claim_id": "C21",
+      "claim": "PUFAs form a group of IKs channel activators that interact with the channel VSD, thus influencing the voltage dependence of IKs channel activation.",
+      "claim_type": "EXPLICIT",
+      "source": "It is well documented that PUFAs form a group of IKs channel activators that interact with the channel VSD, thus influencing the voltage dependence of IKs channel activation (Moreno et al., 2015; Moreno et al., 2012; Elinder and Liin, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about PUFA effects on IKs channels, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:53.933902Z"
+    },
+    {
+      "id": "af326747-33a4-4ffa-83ff-cc52dcec5ada",
+      "content_id": "9bd967df-852a-4df4-bd5a-dc746e7fbc76",
+      "claim_id": "C22",
+      "claim": "The ability of PUFAs to activate the IKs channel makes them great candidates for potential LQTS therapeutics.",
+      "claim_type": "EXPLICIT",
+      "source": "The ability of PUFAs to activate the IKs channel makes them great candidates for potential LQTS therapeutics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about the therapeutic potential of PUFAs based on their known effects.",
+      "evidence_type": "[\"KNOWLEDGE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:53.933902Z"
+    },
+    {
+      "id": "9e638e82-ff26-4f42-b8be-3605cd7595d0",
+      "content_id": "9bd967df-852a-4df4-bd5a-dc746e7fbc76",
+      "claim_id": "C23",
+      "claim": "PUFAs promote IKs channel activation through an electrostatic interaction between the negative charge of the hydrophilic PUFA head and positively charged arginine residues in the S4 segment of the IKs channel.",
+      "claim_type": "EXPLICIT",
+      "source": "PUFAs promote IKs channel activation through an electrostatic interaction between the negative charge of the hydrophilic PUFA head and positively charged arginine residues in the S4 segment of the IKs channel (Elinder and Liin, 2017; B\u00f6rjesson and Elinder, 2011; Larsson et al., 2020; B\u00f6rjesson et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the mechanism of PUFA action, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:53.933902Z"
+    },
+    {
+      "id": "2d28953d-bd48-42e2-b773-e252ea546317",
+      "content_id": "9bd967df-852a-4df4-bd5a-dc746e7fbc76",
+      "claim_id": "C24",
+      "claim": "Electrostatic activation of the IKs channel by PUFAs is seen as a leftward shift in the voltage dependence of IKs channel activation that leads to increases in IKs current.",
+      "claim_type": "EXPLICIT",
+      "source": "This electrostatic activation of the IKs channel is seen as a leftward shift in the voltage dependence of IKs channel activation that leads to increases in IKs current.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about how PUFA effects manifest functionally.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:53.933902Z"
+    },
+    {
+      "id": "4e4f8673-c326-4f13-8792-4debc899c8b4",
+      "content_id": "9bd967df-852a-4df4-bd5a-dc746e7fbc76",
+      "claim_id": "C25",
+      "claim": "PUFAs increase IKs current through two independent effects: one on S4 and one on the PD through an electrostatic interaction with a positively charged lysine residue located in S6 (K326).",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, it has been reported that PUFAs increase IKs current through two independent effects: one on S4 (as described above) and one on the PD through an electrostatic interaction with a positively charged lysine residue located in S6 (K326) (Yazdi et al., 2021; Liin et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the dual mechanism of PUFA action, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:53.933902Z"
+    },
+    {
+      "id": "8f097380-c8f7-4075-b57e-e015c1dae877",
+      "content_id": "9bd967df-852a-4df4-bd5a-dc746e7fbc76",
+      "claim_id": "C26",
+      "claim": "The electrostatic interaction with K326 mediates an increase in the maximal conductance (Gmax) of the IKs channel.",
+      "claim_type": "EXPLICIT",
+      "source": "This electrostatic interaction with the K326 mediates an increase in the maximal conductance (Gmax) of the IKs channel (Yazdi et al., 2021; Liin et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the functional consequence of PUFA interaction with K326, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:53.933902Z"
+    },
+    {
+      "id": "9e51656a-7faa-4918-8b7c-7a9fe4b75834",
+      "content_id": "9bd967df-852a-4df4-bd5a-dc746e7fbc76",
+      "claim_id": "C27",
+      "claim": "The lipoelectric hypothesis describes the mechanism through which the negatively charged PUFA head group interacts with positive charges of S4 and S6.",
+      "claim_type": "EXPLICIT",
+      "source": "The mechanism through which the negatively charged PUFA head group interacts with positive charges of S4 and S6 is called the lipoelectric hypothesis where the polyunsaturated tail of PUFAs and PUFA analogues incorporates into the cell membrane via hydrophobic interactions and electrostatically attracts the outermost gating charges of S4 as well as positively charged K326 in the S6 segment (B\u00f6rjesson et al., 2008; Yazdi et al., 2021; Bohannon et al., 2019; Bohannon et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the lipoelectric mechanism, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:53.933902Z"
+    },
+    {
+      "id": "660cd6ad-e03c-452f-b936-8c627e258a67",
+      "content_id": "9bd967df-852a-4df4-bd5a-dc746e7fbc76",
+      "claim_id": "C28",
+      "claim": "PUFA analogues that have the most robust effects on increasing IKs current are those that have a low pKa value and thus possess a negatively charged head group at physiological pH.",
+      "claim_type": "EXPLICIT",
+      "source": "PUFA analogues that have the most robust effects on increasing IKs current are those that have a low pKa value and thus possess a negatively charged head group at physiological pH (Bohannon et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about structure-activity relationships of PUFA analogues, supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:53.933902Z"
+    },
+    {
+      "id": "93fb9b8b-4e57-4095-b68d-fb70725c74f4",
+      "content_id": "9bd967df-852a-4df4-bd5a-dc746e7fbc76",
+      "claim_id": "C29",
+      "claim": "PUFAs with glycine or taurine head groups that possess either a carboxyl or sulfonyl head group are examples of PUFA analogues with robust effects on IKs current.",
+      "claim_type": "EXPLICIT",
+      "source": "Examples include PUFAs with glycine or taurine head groups that possess either a carboxyl or sulfonyl head group, respectively (Bohannon et al., 2020; Liin et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about specific PUFA analogues, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:53.933902Z"
+    },
+    {
+      "id": "a5492d98-b0a8-4f92-9f6f-e26b363ff703",
+      "content_id": "9bd967df-852a-4df4-bd5a-dc746e7fbc76",
+      "claim_id": "C30",
+      "claim": "N-(\u03b1-linolenoyl) tyrosine (NALT) has robust effects on IKs current.",
+      "claim_type": "EXPLICIT",
+      "source": "We have observed that another PUFA analogue, N-(\u03b1-linolenoyl) tyrosine (NALT), has robust effects on IKs current.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding of the study, supported by experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:53.933902Z"
+    },
+    {
+      "id": "aa4b2a85-8131-41d6-9680-bc382f5835f9",
+      "content_id": "9bd967df-852a-4df4-bd5a-dc746e7fbc76",
+      "claim_id": "C31",
+      "claim": "NALT is unique in that it possesses a large aromatic tyrosine head group rather than a carboxyl or sulfonyl group present in most of the PUFAs and PUFA analogues that have been characterized.",
+      "claim_type": "EXPLICIT",
+      "source": "NALT is unique in that it possesses a large aromatic tyrosine head group rather than a carboxyl or sulfonyl group present in most of the PUFAs and PUFA analogues that we have characterized.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a descriptive statement about the chemical structure of NALT.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:53.933902Z"
+    },
+    {
+      "id": "e921d198-7885-44a1-929c-070114c6c56f",
+      "content_id": "9bd967df-852a-4df4-bd5a-dc746e7fbc76",
+      "claim_id": "C32",
+      "claim": "NALT induces a potent leftward shift in the voltage dependence of IKs channel activation and an increase in the maximal channel conductance, thus increasing overall IKs current.",
+      "claim_type": "EXPLICIT",
+      "source": "NALT induces a potent leftward shift in the voltage dependence of IKs channel activation and an increase in the maximal channel conductance, thus increasing overall IKs current.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding of the study, supported by experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:53.933902Z"
+    },
+    {
+      "id": "f0b590cd-402e-45fa-9f65-47ce6d75b3a1",
+      "content_id": "9bd967df-852a-4df4-bd5a-dc746e7fbc76",
+      "claim_id": "C33",
+      "claim": "NALT causes a \u0394V0.5 of \u201356.2 \u00b1 3.6 mV at 20 \u03bcM.",
+      "claim_type": "EXPLICIT",
+      "source": "NALT, Lin-tyr, DHA-tyr, and Pin-tyr all activate the cardiac IKs channel by shifting the voltage dependence of IKs channel activation to more negative voltages (NALT: \u0394V0.5 = \u201356.2 \u00b1 3.6 mV; Lin-tyr: \u201374.4 \u00b1 4.1 mV; DHA-tyr: \u201372.0 \u00b1 4.9 mV; and Pin-tyr: \u201360.5 \u00b1 5.8 mV at 20 \u03bcM; Figure 1E)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from experimental data shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:53.933902Z"
+    },
+    {
+      "id": "3442c3c0-2b7d-4bc7-b44d-a6b71bb4ae9e",
+      "content_id": "9bd967df-852a-4df4-bd5a-dc746e7fbc76",
+      "claim_id": "C34",
+      "claim": "Lin-tyr causes a \u0394V0.5 of \u201374.4 \u00b1 4.1 mV at 20 \u03bcM.",
+      "claim_type": "EXPLICIT",
+      "source": "NALT, Lin-tyr, DHA-tyr, and Pin-tyr all activate the cardiac IKs channel by shifting the voltage dependence of IKs channel activation to more negative voltages (NALT: \u0394V0.5 = \u201356.2 \u00b1 3.6 mV; Lin-tyr: \u201374.4 \u00b1 4.1 mV; DHA-tyr: \u201372.0 \u00b1 4.9 mV; and Pin-tyr: \u201360.5 \u00b1 5.8 mV at 20 \u03bcM; Figure 1E)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from experimental data shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:53.933902Z"
+    },
+    {
+      "id": "ab0d9621-f041-43ba-87e8-387b88011a2c",
+      "content_id": "9bd967df-852a-4df4-bd5a-dc746e7fbc76",
+      "claim_id": "C35",
+      "claim": "DHA-tyr causes a \u0394V0.5 of \u201372.0 \u00b1 4.9 mV at 20 \u03bcM.",
+      "claim_type": "EXPLICIT",
+      "source": "NALT, Lin-tyr, DHA-tyr, and Pin-tyr all activate the cardiac IKs channel by shifting the voltage dependence of IKs channel activation to more negative voltages (NALT: \u0394V0.5 = \u201356.2 \u00b1 3.6 mV; Lin-tyr: \u201374.4 \u00b1 4.1 mV; DHA-tyr: \u201372.0 \u00b1 4.9 mV; and Pin-tyr: \u201360.5 \u00b1 5.8 mV at 20 \u03bcM; Figure 1E)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from experimental data shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:53.933902Z"
+    },
+    {
+      "id": "c79bb8ea-e1ba-4ebd-b7a9-b3739ed56ce9",
+      "content_id": "9bd967df-852a-4df4-bd5a-dc746e7fbc76",
+      "claim_id": "C36",
+      "claim": "Pin-tyr causes a \u0394V0.5 of \u201360.5 \u00b1 5.8 mV at 20 \u03bcM.",
+      "claim_type": "EXPLICIT",
+      "source": "NALT, Lin-tyr, DHA-tyr, and Pin-tyr all activate the cardiac IKs channel by shifting the voltage dependence of IKs channel activation to more negative voltages (NALT: \u0394V0.5 = \u201356.2 \u00b1 3.6 mV; Lin-tyr: \u201374.4 \u00b1 4.1 mV; DHA-tyr: \u201372.0 \u00b1 4.9 mV; and Pin-tyr: \u201360.5 \u00b1 5.8 mV at 20 \u03bcM; Figure 1E)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from experimental data shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:53.933902Z"
+    },
+    {
+      "id": "7bc37612-6d38-478c-b2f6-01c209da6a50",
+      "content_id": "9bd967df-852a-4df4-bd5a-dc746e7fbc76",
+      "claim_id": "C37",
+      "claim": "NALT increases Gmax to 1.43 \u00b1 0.3 at 20 \u03bcM.",
+      "claim_type": "EXPLICIT",
+      "source": "and increasing the maximal conductance (NALT: 1.43 \u00b1 0.3; Lin-tyr: 2.0 \u00b1 0.6; DHA-tyr: 1.5 \u00b1 0.2; and Pin-tyr: 1.8 \u00b1 0.4 at 20 \u03bcM; Figure 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from experimental data shown in Figure 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:53.933902Z"
+    },
+    {
+      "id": "b0e82b19-224e-4b43-bbe4-71f8e0770d7c",
+      "content_id": "9bd967df-852a-4df4-bd5a-dc746e7fbc76",
+      "claim_id": "C38",
+      "claim": "Lin-tyr increases Gmax to 2.0 \u00b1 0.6 at 20 \u03bcM.",
+      "claim_type": "EXPLICIT",
+      "source": "and increasing the maximal conductance (NALT: 1.43 \u00b1 0.3; Lin-tyr: 2.0 \u00b1 0.6; DHA-tyr: 1.5 \u00b1 0.2; and Pin-tyr: 1.8 \u00b1 0.4 at 20 \u03bcM; Figure 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from experimental data shown in Figure 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:53.933902Z"
+    },
+    {
+      "id": "5e40a5bd-ee38-46d5-957a-534333f5ca89",
+      "content_id": "9bd967df-852a-4df4-bd5a-dc746e7fbc76",
+      "claim_id": "C39",
+      "claim": "DHA-tyr increases Gmax to 1.5 \u00b1 0.2 at 20 \u03bcM.",
+      "claim_type": "EXPLICIT",
+      "source": "and increasing the maximal conductance (NALT: 1.43 \u00b1 0.3; Lin-tyr: 2.0 \u00b1 0.6; DHA-tyr: 1.5 \u00b1 0.2; and Pin-tyr: 1.8 \u00b1 0.4 at 20 \u03bcM; Figure 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from experimental data shown in Figure 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:53.933902Z"
+    },
+    {
+      "id": "bff8b093-163c-4602-96d1-d2280020bc63",
+      "content_id": "9bd967df-852a-4df4-bd5a-dc746e7fbc76",
+      "claim_id": "C40",
+      "claim": "Pin-tyr increases Gmax to 1.8 \u00b1 0.4 at 20 \u03bcM.",
+      "claim_type": "EXPLICIT",
+      "source": "and increasing the maximal conductance (NALT: 1.43 \u00b1 0.3; Lin-tyr: 2.0 \u00b1 0.6; DHA-tyr: 1.5 \u00b1 0.2; and Pin-tyr: 1.8 \u00b1 0.4 at 20 \u03bcM; Figure 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from experimental data shown in Figure 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:53.933902Z"
+    },
+    {
+      "id": "ef0eebde-7ca3-4e5d-b8f2-87eeecbc8774",
+      "content_id": "9bd967df-852a-4df4-bd5a-dc746e7fbc76",
+      "claim_id": "C41",
+      "claim": "NALT increases I/I0 to 5.14 \u00b1 1.2 at 20 \u03bcM.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, the left shift in V0.5 and the increase in Gmax increase the overall IKs current measured in response to a voltage step close to 0 mV (NALT: 5.14 \u00b1 1.2; Lin-tyr: 12.8 \u00b1 2.1; DHA-tyr: 5.0 \u00b1 0.9; and Pin-tyr: 5.8 \u00b1 0.9 at 20 \u03bcM; Figure 1D: see 'Materials and methods' for calculation of I/I0).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from experimental data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:53.933902Z"
+    },
+    {
+      "id": "04951766-8ad4-479d-b1c7-3b306e0ada66",
+      "content_id": "9bd967df-852a-4df4-bd5a-dc746e7fbc76",
+      "claim_id": "C42",
+      "claim": "Lin-tyr increases I/I0 to 12.8 \u00b1 2.1 at 20 \u03bcM.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, the left shift in V0.5 and the increase in Gmax increase the overall IKs current measured in response to a voltage step close to 0 mV (NALT: 5.14 \u00b1 1.2; Lin-tyr: 12.8 \u00b1 2.1; DHA-tyr: 5.0 \u00b1 0.9; and Pin-tyr: 5.8 \u00b1 0.9 at 20 \u03bcM; Figure 1D: see 'Materials and methods' for calculation of I/I0).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from experimental data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:53.933902Z"
+    },
+    {
+      "id": "97790a3c-666b-46d9-a933-e7ea67eb48af",
+      "content_id": "9bd967df-852a-4df4-bd5a-dc746e7fbc76",
+      "claim_id": "C43",
+      "claim": "DHA-tyr increases I/I0 to 5.0 \u00b1 0.9 at 20 \u03bcM.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, the left shift in V0.5 and the increase in Gmax increase the overall IKs current measured in response to a voltage step close to 0 mV (NALT: 5.14 \u00b1 1.2; Lin-tyr: 12.8 \u00b1 2.1; DHA-tyr: 5.0 \u00b1 0.9; and Pin-tyr: 5.8 \u00b1 0.9 at 20 \u03bcM; Figure 1D: see 'Materials and methods' for calculation of I/I0).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from experimental data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:53.933902Z"
+    },
+    {
+      "id": "251c8f3c-66b6-480a-9e77-4a0e052174fd",
+      "content_id": "9bd967df-852a-4df4-bd5a-dc746e7fbc76",
+      "claim_id": "C44",
+      "claim": "Pin-tyr increases I/I0 to 5.8 \u00b1 0.9 at 20 \u03bcM.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, the left shift in V0.5 and the increase in Gmax increase the overall IKs current measured in response to a voltage step close to 0 mV (NALT: 5.14 \u00b1 1.2; Lin-tyr: 12.8 \u00b1 2.1; DHA-tyr: 5.0 \u00b1 0.9; and Pin-tyr: 5.8 \u00b1 0.9 at 20 \u03bcM; Figure 1D: see 'Materials and methods' for calculation of I/I0).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from experimental data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:53.933902Z"
+    },
+    {
+      "id": "6837e968-9e00-4e71-a550-977caa7ddba9",
+      "content_id": "9bd967df-852a-4df4-bd5a-dc746e7fbc76",
+      "claim_id": "C45",
+      "claim": "Lin-glycine causes a \u0394V0.5 of \u201330.8 \u00b1 5.4 mV at 20 \u03bcM.",
+      "claim_type": "EXPLICIT",
+      "source": "In comparison, Lin-glycine (a known IKs channel activator; Figure 1C) causes only modest leftward voltage shifts (\u0394V0.5 = \u201330.8 \u00b1 5.4 mV at 20 \u03bcM; Figure 1E)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from experimental data shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:53.933902Z"
+    },
+    {
+      "id": "281a0527-f0e9-4517-8fb4-6f4b37956b89",
+      "content_id": "9bd967df-852a-4df4-bd5a-dc746e7fbc76",
+      "claim_id": "C46",
+      "claim": "Lin-glycine increases Gmax to 2.6 \u00b1 0.5 at 20 \u03bcM.",
+      "claim_type": "EXPLICIT",
+      "source": "but similar increases in maximal conductance (2.6 \u00b1 0.5 at 20 \u03bcM; Figure 1F)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from experimental data shown in Figure 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:53.933902Z"
+    },
+    {
+      "id": "3d5e8783-3f10-4c59-b329-c93036ce0d71",
+      "content_id": "9bd967df-852a-4df4-bd5a-dc746e7fbc76",
+      "claim_id": "C47",
+      "claim": "Lin-glycine increases I/I0 to 6.7 \u00b1 1.1 at 20 \u03bcM.",
+      "claim_type": "EXPLICIT",
+      "source": "and I/I0 current (6.7 \u00b1 1.1 at 20 \u03bcM; Figure 1D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from experimental data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:53.933902Z"
+    },
+    {
+      "id": "90ec7f6f-cc89-4e61-a97f-c57e25e58f38",
+      "content_id": "9bd967df-852a-4df4-bd5a-dc746e7fbc76",
+      "claim_id": "C48",
+      "claim": "Amino acids with aromatic groups (like tryptophan, tyrosine, and phenylalanine) can participate in cation\u2013pi interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Amino acids with aromatic groups (like tryptophan, tyrosine, and phenylalanine) can participate in cation\u2013pi interactions (Dougherty, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about cation-pi interactions, supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:53.933902Z"
+    },
+    {
+      "id": "aadea575-c6b5-4877-b5e5-69e161ad2179",
+      "content_id": "9bd967df-852a-4df4-bd5a-dc746e7fbc76",
+      "claim_id": "C49",
+      "claim": "Cation\u2013pi interactions take place between the pi-electrons of an aromatic ring and positively charged (cationic) groups (such as arginine and lysine).",
+      "claim_type": "EXPLICIT",
+      "source": "Cation\u2013pi interactions take place between the pi-electrons of an aromatic ring and positively charged (cationic) groups (such as arginine and lysine) (Infield et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the nature of cation-pi interactions, supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:53.933902Z"
+    },
+    {
+      "id": "df9e36a2-4271-4ffb-b342-1d61abd3b746",
+      "content_id": "9bd967df-852a-4df4-bd5a-dc746e7fbc76",
+      "claim_id": "C50",
+      "claim": "If tyrosine PUFAs activate the IKs channel via cation\u2013pi interactions, other aromatic groups (such as phenylalanine) would similarly affect IKs activation.",
+      "claim_type": "EXPLICIT",
+      "source": "If tyrosine PUFAs activate the IKs channel via cation\u2013pi interactions, we would expect that other aromatic groups (such as phenylalanine) would similarly affect IKs activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference used to design experiments to test the cation-pi hypothesis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:53.933902Z"
+    },
+    {
+      "id": "acca0517-2b57-44fa-8ed1-e157b31cfaee",
+      "content_id": "9bd967df-852a-4df4-bd5a-dc746e7fbc76",
+      "claim_id": "C51",
+      "claim": "Lin-phe increases I/I0 to 2.6 \u00b1 0.3 at 20 \u03bcM.",
+      "claim_type": "EXPLICIT",
+      "source": "Lin-phe and NAL-phe both increase I/I0 (Lin phe: 2.6 \u00b1 0.3; and NAL-phe: 2.4 \u00b1 0.5 at 20 \u03bcM; Figure 2B\u2013D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from experimental data shown in Figure 2B-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:53.933902Z"
+    },
+    {
+      "id": "c5e28dad-8a1f-4dac-944e-9f1c3a4d31ff",
+      "content_id": "9bd967df-852a-4df4-bd5a-dc746e7fbc76",
+      "claim_id": "C52",
+      "claim": "NAL-phe increases I/I0 to 2.4 \u00b1 0.5 at 20 \u03bcM.",
+      "claim_type": "EXPLICIT",
+      "source": "Lin-phe and NAL-phe both increase I/I0 (Lin phe: 2.6 \u00b1 0.3; and NAL-phe: 2.4 \u00b1 0.5 at 20 \u03bcM; Figure 2B\u2013D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from experimental data shown in Figure 2B-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:53.933902Z"
+    },
+    {
+      "id": "b9e64084-c7c5-40e8-a9b4-71c2c3ef302d",
+      "content_id": "9bd967df-852a-4df4-bd5a-dc746e7fbc76",
+      "claim_id": "C53",
+      "claim": "Lin-phe causes a \u0394V0.5 of \u201313.1 \u00b1 2.9 mV at 20 \u03bcM.",
+      "claim_type": "EXPLICIT",
+      "source": "causing a modest leftward shift in the V0.5 (Lin-phe: \u0394V0.5 = \u201313.1 \u00b1 2.9 mV; and NAL-phe: \u201312.5 \u00b1 3.8 mV at 20 \u03bcM; Figure 2E and F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from experimental data shown in Figure 2E and F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:53.933902Z"
+    },
+    {
+      "id": "0ca9ef5c-a403-4a3f-b682-f54a0733a45f",
+      "content_id": "9bd967df-852a-4df4-bd5a-dc746e7fbc76",
+      "claim_id": "C54",
+      "claim": "NAL-phe causes a \u0394V0.5 of \u201312.5 \u00b1 3.8 mV at 20 \u03bcM.",
+      "claim_type": "EXPLICIT",
+      "source": "causing a modest leftward shift in the V0.5 (Lin-phe: \u0394V0.5 = \u201313.1 \u00b1 2.9 mV; and NAL-phe: \u201312.5 \u00b1 3.8 mV at 20 \u03bcM; Figure 2E and F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from experimental data shown in Figure 2E and F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:53.933902Z"
+    },
+    {
+      "id": "33026f16-7300-4f4e-b72b-4eea42da20e4",
+      "content_id": "9bd967df-852a-4df4-bd5a-dc746e7fbc76",
+      "claim_id": "C55",
+      "claim": "Lin-phe increases Gmax to 1.2 \u00b1 0.1 at 20 \u03bcM.",
+      "claim_type": "EXPLICIT",
+      "source": "However, Lin-phe and NAL-phe have minimal effects on the Gmax (Lin phe: 1.2 \u00b1 0.1; and NAL-phe: 1.2 \u00b1 0.2 at 20 \u03bcM; Figure 2G and H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from experimental data shown in Figure 2G and H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:53.933902Z"
+    },
+    {
+      "id": "a72d12ea-6ca2-4f62-83e4-8fe9a23bd2ac",
+      "content_id": "9bd967df-852a-4df4-bd5a-dc746e7fbc76",
+      "claim_id": "C56",
+      "claim": "NAL-phe increases Gmax to 1.2 \u00b1 0.2 at 20 \u03bcM.",
+      "claim_type": "EXPLICIT",
+      "source": "However, Lin-phe and NAL-phe have minimal effects on the Gmax (Lin phe: 1.2 \u00b1 0.1; and NAL-phe: 1.2 \u00b1 0.2 at 20 \u03bcM; Figure 2G and H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from experimental data shown in Figure 2G and H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:53.933902Z"
+    },
+    {
+      "id": "e8ea1904-fa0d-4ba7-9297-6a64464ebf1e",
+      "content_id": "9bd967df-852a-4df4-bd5a-dc746e7fbc76",
+      "claim_id": "C57",
+      "claim": "Lin-phe and NAL-phe have attenuated effects compared to NALT.",
+      "claim_type": "EXPLICIT",
+      "source": "All of these effects (I/I0, \u0394V0.5, and Gmax) are reduced in comparison with tyrosine PUFAs, with Lin-phe and NAL-phe having an attenuated effect compared to NALT (p=0.51 and p=0.44, respectively; Figure 2D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion drawn from statistical comparison of experimental data shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:53.933902Z"
+    },
+    {
+      "id": "d3eafe52-f736-4970-bba8-75d9444af82c",
+      "content_id": "9bd967df-852a-4df4-bd5a-dc746e7fbc76",
+      "claim_id": "C58",
+      "claim": "Lin-phe and NAL-phe result in significantly smaller increases in I/I0 compared to Lin-tyrosine (p=0.0004 for both).",
+      "claim_type": "EXPLICIT",
+      "source": "and resulting in a significantly smaller increases in I/I0 compared to Lin-tyrosine (***p=0.0004 and ***p=0.0004, respectively; Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion drawn from statistical comparison of experimental data shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:53.933902Z"
+    },
+    {
+      "id": "733828c6-0e1f-4e45-bc91-687baeab81e1",
+      "content_id": "9bd967df-852a-4df4-bd5a-dc746e7fbc76",
+      "claim_id": "C59",
+      "claim": "NALT and Lin-tyrosine cause a significantly greater \u0394V0.5 compared to NAL-phe and Lin-phe (p<0.0001).",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, both NALT and Lin-tyrosine cause a significantly greater \u0394V0.5 compared to NAL-phe and Lin-phe (****p<0.0001; Figure 2F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion drawn from statistical comparison of experimental data shown in Figure 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:53.933902Z"
+    },
+    {
+      "id": "38345db6-a6f0-4856-8528-d5f751649d56",
+      "content_id": "9bd967df-852a-4df4-bd5a-dc746e7fbc76",
+      "claim_id": "C60",
+      "claim": "The presence of the distal \u2013OH group on the aromatic head group is critical for the potent activation of the IKs channel.",
+      "claim_type": "EXPLICIT",
+      "source": "Rather, our data suggest that it is actually the presence of the distal \u2013OH group on the aromatic head group that is critical for the potent activation of the IKs channel because the loss of this \u2013OH group (Lin-phe and NAL-phe) results in pronounced reductions in PUFA efficacy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from experimental data comparing tyrosine and phenylalanine PUFA analogues.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:53.933902Z"
+    },
+    {
+      "id": "1679c16d-c718-42f2-9d9a-81555d6a504a",
+      "content_id": "9bd967df-852a-4df4-bd5a-dc746e7fbc76",
+      "claim_id": "C61",
+      "claim": "4Br-NAL-phe increases I/I0 to 4.6 \u00b1 0.1 at 20 \u03bcM.",
+      "claim_type": "EXPLICIT",
+      "source": "4Br-NAL-phe, 4F-NAL-phe, and 3,4,5F-NAL-phe application increases I/I0 (4Br-NAL-phe: 4.6 \u00b1 0.1 at 20 \u03bcM; 4F-NAL-phe: 4.6 \u00b1 1.1 at 20 \u03bcM; 3,4,5F-NAL-phe: 7.1 \u00b1 1.0 at 20 \u03bcM; Figure 3B\u2013D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from experimental data shown in Figure 3B-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:53.933902Z"
+    },
+    {
+      "id": "6d3efbb5-4ae0-4133-b64f-dc44bc8c2719",
+      "content_id": "9bd967df-852a-4df4-bd5a-dc746e7fbc76",
+      "claim_id": "C62",
+      "claim": "4F-NAL-phe increases I/I0 to 4.6 \u00b1 1.1 at 20 \u03bcM.",
+      "claim_type": "EXPLICIT",
+      "source": "4Br-NAL-phe, 4F-NAL-phe, and 3,4,5F-NAL-phe application increases I/I0 (4Br-NAL-phe: 4.6 \u00b1 0.1 at 20 \u03bcM; 4F-NAL-phe: 4.6 \u00b1 1.1 at 20 \u03bcM; 3,4,5F-NAL-phe: 7.1 \u00b1 1.0 at 20 \u03bcM; Figure 3B\u2013D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from experimental data shown in Figure 3B-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:53.933902Z"
+    },
+    {
+      "id": "fec5c8bd-5145-48d0-b88e-23261f81ea4b",
+      "content_id": "9bd967df-852a-4df4-bd5a-dc746e7fbc76",
+      "claim_id": "C63",
+      "claim": "3,4,5F-NAL-phe increases I/I0 to 7.1 \u00b1 1.0 at 20 \u03bcM.",
+      "claim_type": "EXPLICIT",
+      "source": "4Br-NAL-phe, 4F-NAL-phe, and 3,4,5F-NAL-phe application increases I/I0 (4Br-NAL-phe: 4.6 \u00b1 0.1 at 20 \u03bcM; 4F-NAL-phe: 4.6 \u00b1 1.1 at 20 \u03bcM; 3,4,5F-NAL-phe: 7.1 \u00b1 1.0 at 20 \u03bcM; Figure 3B\u2013D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from experimental data shown in Figure 3B-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:53.933902Z"
+    },
+    {
+      "id": "0d59512d-f89d-4848-8d65-00b3603bc3f9",
+      "content_id": "9bd967df-852a-4df4-bd5a-dc746e7fbc76",
+      "claim_id": "C64",
+      "claim": "4Br-NAL-phe causes a \u0394V0.5 of \u201322.8 \u00b1 2.0 mV at 20 \u03bcM.",
+      "claim_type": "EXPLICIT",
+      "source": "causes a leftward shift in the V0.5 (4Br-NAL-phe: \u0394V0.5 = \u201322.8 \u00b1 2.0 mV; 4F-NAL-phe: \u201323.9 \u00b1 0.8 mV; 3,4,5F-NAL-phe: \u201332.4 \u00b1 4.9 mV at 20 \u03bcM; Figure 3E and F)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from experimental data shown in Figure 3E and F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:53.933902Z"
+    },
+    {
+      "id": "0cc6516e-4004-43d4-9f19-103eb482940f",
+      "content_id": "9bd967df-852a-4df4-bd5a-dc746e7fbc76",
+      "claim_id": "C65",
+      "claim": "4F-NAL-phe causes a \u0394V0.5 of \u201323.9 \u00b1 0.8 mV at 20 \u03bcM.",
+      "claim_type": "EXPLICIT",
+      "source": "causes a leftward shift in the V0.5 (4Br-NAL-phe: \u0394V0.5 = \u201322.8 \u00b1 2.0 mV; 4F-NAL-phe: \u201323.9 \u00b1 0.8 mV; 3,4,5F-NAL-phe: \u201332.4 \u00b1 4.9 mV at 20 \u03bcM; Figure 3E and F)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from experimental data shown in Figure 3E and F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:53.933902Z"
+    },
+    {
+      "id": "a171f0ac-3a76-4627-b5ea-f504f371ab58",
+      "content_id": "9bd967df-852a-4df4-bd5a-dc746e7fbc76",
+      "claim_id": "C66",
+      "claim": "3,4,5F-NAL-phe causes a \u0394V0.5 of \u201332.4 \u00b1 4.9 mV at 20 \u03bcM.",
+      "claim_type": "EXPLICIT",
+      "source": "causes a leftward shift in the V0.5 (4Br-NAL-phe: \u0394V0.5 = \u201322.8 \u00b1 2.0 mV; 4F-NAL-phe: \u201323.9 \u00b1 0.8 mV; 3,4,5F-NAL-phe: \u201332.4 \u00b1 4.9 mV at 20 \u03bcM; Figure 3E and F)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from experimental data shown in Figure 3E and F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:53.933902Z"
+    },
+    {
+      "id": "39fabb57-dcb1-481e-bb38-6fe500408158",
+      "content_id": "9bd967df-852a-4df4-bd5a-dc746e7fbc76",
+      "claim_id": "C67",
+      "claim": "4Br-NAL-phe increases Gmax to 1.9 \u00b1 0.1 at 20 \u03bcM.",
+      "claim_type": "EXPLICIT",
+      "source": "and increases the Gmax (4Br-NAL-phe: 1.9 \u00b1 0.1 at 20 \u03bcM; 4F-NAL-phe: 2.0 \u00b1 0.5; 3,4,5F-NAL-phe: 2.4 \u00b1 0.4 at 20 \u03bcM; Figure 3G and H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from experimental data shown in Figure 3G and H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:53.933902Z"
+    },
+    {
+      "id": "1d424d5c-1a3e-4616-b3fd-cb5621f5b616",
+      "content_id": "9bd967df-852a-4df4-bd5a-dc746e7fbc76",
+      "claim_id": "C68",
+      "claim": "4F-NAL-phe increases Gmax to 2.0 \u00b1 0.5 at 20 \u03bcM.",
+      "claim_type": "EXPLICIT",
+      "source": "and increases the Gmax (4Br-NAL-phe: 1.9 \u00b1 0.1 at 20 \u03bcM; 4F-NAL-phe: 2.0 \u00b1 0.5; 3,4,5F-NAL-phe: 2.4 \u00b1 0.4 at 20 \u03bcM; Figure 3G and H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from experimental data shown in Figure 3G and H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:53.933902Z"
+    },
+    {
+      "id": "b19bc3a0-70b8-4963-9cd8-3ff014fc695f",
+      "content_id": "9bd967df-852a-4df4-bd5a-dc746e7fbc76",
+      "claim_id": "C69",
+      "claim": "3,4,5F-NAL-phe increases Gmax to 2.4 \u00b1 0.4 at 20 \u03bcM.",
+      "claim_type": "EXPLICIT",
+      "source": "and increases the Gmax (4Br-NAL-phe: 1.9 \u00b1 0.1 at 20 \u03bcM; 4F-NAL-phe: 2.0 \u00b1 0.5; 3,4,5F-NAL-phe: 2.4 \u00b1 0.4 at 20 \u03bcM; Figure 3G and H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from experimental data shown in Figure 3G and H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:53.933902Z"
+    },
+    {
+      "id": "396f791a-d83f-4a0e-8b1d-74bdb850c897",
+      "content_id": "9bd967df-852a-4df4-bd5a-dc746e7fbc76",
+      "claim_id": "C70",
+      "claim": "Increasing the number of highly electronegative groups significantly improves the effects of phenylalanine PUFAs on increasing I/I0 and shifting the V0.5.",
+      "claim_type": "EXPLICIT",
+      "source": "Increasing the number of highly electronegative groups significantly improves the effects of phenylalanine PUFAs on increasing I/I0 and shifting the V0.5, evidenced by significant increases in I/I0 (*p=0.0186; Figure 3D) and a significantly greater leftward shift in the V0.5 (**p=0.0096; Figure 3F) from 3,4,5F-NAL-phe compared to NAL-phe alone.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion drawn from statistical comparison of experimental data shown in Figure 3D and F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:53.933902Z"
+    },
+    {
+      "id": "2c23bcb1-0365-4e9c-9d7c-594f53ec0044",
+      "content_id": "9bd967df-852a-4df4-bd5a-dc746e7fbc76",
+      "claim_id": "C71",
+      "claim": "NALT causes a more prominent left-shift in the V0.5 compared to 4Br-NAL-phe (p=0.0003).",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, though, NALT still causes the most prominent left-shift in the V0.5 compared to 4Br-, 4F-, and 3,4,5F-NAL-phe (***p=0.0003; ***P=0.00028; and **p=0.0021, respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from statistical comparison of experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:53.933902Z"
+    },
+    {
+      "id": "eb7bdcf5-085b-41be-b2f3-20bdf33d061f",
+      "content_id": "9bd967df-852a-4df4-bd5a-dc746e7fbc76",
+      "claim_id": "C72",
+      "claim": "NALT causes a more prominent left-shift in the V0.5 compared to 4F-NAL-phe (p=0.00028).",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, though, NALT still causes the most prominent left-shift in the V0.5 compared to 4Br-, 4F-, and 3,4,5F-NAL-phe (***p=0.0003; ***P=0.00028; and **p=0.0021, respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from statistical comparison of experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:53.933902Z"
+    },
+    {
+      "id": "4a014984-311f-4195-8e68-ec70b4ee2d58",
+      "content_id": "9bd967df-852a-4df4-bd5a-dc746e7fbc76",
+      "claim_id": "C73",
+      "claim": "NALT causes a more prominent left-shift in the V0.5 compared to 3,4,5F-NAL-phe (p=0.0021).",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, though, NALT still causes the most prominent left-shift in the V0.5 compared to 4Br-, 4F-, and 3,4,5F-NAL-phe (***p=0.0003; ***P=0.00028; and **p=0.0021, respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from statistical comparison of experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:53.933902Z"
+    },
+    {
+      "id": "50cae131-84cb-4a80-8243-65542490378b",
+      "content_id": "9bd967df-852a-4df4-bd5a-dc746e7fbc76",
+      "claim_id": "C74",
+      "claim": "The presence of highly electronegative groups improves the activating effects of phenylalanine PUFAs on the IKs channel.",
+      "claim_type": "EXPLICIT",
+      "source": "These data suggest that the presence of highly electronegative groups improve the activating effects of phenylalanine PUFAs on the IKs channel.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from experimental data with fluorinated and brominated phenylalanine PUFAs.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:53.933902Z"
+    },
+    {
+      "id": "962072cd-31e9-4d8b-a861-93d3117a4c84",
+      "content_id": "9bd967df-852a-4df4-bd5a-dc746e7fbc76",
+      "claim_id": "C75",
+      "claim": "Highly electronegative groups on phenylalanine PUFAs do not completely recapitulate the effects of tyrosine PUFAs on the shift in V0.5 of the IKs channel.",
+      "claim_type": "EXPLICIT",
+      "source": "However, they do not completely recapitulate the effects of tyrosine PUFAs on the shift in V0.5 of the IKs channel.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from experimental data comparing fluorinated/brominated phenylalanine PUFAs to tyrosine PUFAs.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:53.933902Z"
+    },
+    {
+      "id": "15a20018-f0a1-4bc8-be01-70624abb82d4",
+      "content_id": "9bd967df-852a-4df4-bd5a-dc746e7fbc76",
+      "claim_id": "C76",
+      "claim": "3F-NALT has a fluorine atom adjacent to the tyrosine hydroxyl group that reduces the pKa of the distal hydroxyl group and increases the hydrogen bonding ability.",
+      "claim_type": "EXPLICIT",
+      "source": "We applied the modified aromatic PUFA analogue N-(\u03b1-linolenoyl)\u20133-fluoro-L-tyrosine (3F-NALT), which has a fluorine atom adjacent to the tyrosine hydroxyl group (Figure 4A). The addition of the fluorine atom reduces the pKa of the distal hydroxyl group and increases the hydrogen bonding ability of said group in 3F-NALT as compared to NALT.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statement about the chemical properties of 3F-NALT based on known effects of fluorine substitution.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:53.933902Z"
+    },
+    {
+      "id": "696e6419-4ebe-496c-abab-7f46f886957b",
+      "content_id": "9bd967df-852a-4df4-bd5a-dc746e7fbc76",
+      "claim_id": "C77",
+      "claim": "3F-NALT and NALT have similar maximum effects on I/I0 (3F-NALT: 5.0 \u00b1 1.0; NALT: 5.14 \u00b1 1.2 at 20 \u03bcM; p=0.7257).",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, the maximum effects on I/I0 are similar for 3F-NALT and NALT (3F-NALT: 5.0 \u00b1 1.0; NALT: 5.14 \u00b1 1.2 at 20 \u03bcM; p=0.7257, ns; Figure 4B\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from experimental data shown in Figure 4B-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:53.933902Z"
+    },
+    {
+      "id": "47ab2681-2cba-4f5f-8573-afc0b1107553",
+      "content_id": "9bd967df-852a-4df4-bd5a-dc746e7fbc76",
+      "claim_id": "C78",
+      "claim": "3F-NALT induces a significantly greater maximum shift in the V0.5 (\u0394V0.5 = \u201369.3 \u00b1 1.4 at 20 \u03bcM) compared to NALT (\u201356.1 \u00b1 3.6 at 20 \u03bcM) (p=0.0298).",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, 3F-NALT induces a significantly greater maximum shift in the V0.5 (\u0394V0.5 = \u201369.3 \u00b1 1.4 at 20 \u03bcM) compared to NALT (\u201356.1 \u00b1 3.6 AT 20 \u03bcM) (p=0.0298*; Figure 4E and F)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from experimental data shown in Figure 4E and F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:53.933902Z"
+    },
+    {
+      "id": "194a33be-4fb9-4d05-bcd9-f6b5d5ddfbee",
+      "content_id": "9bd967df-852a-4df4-bd5a-dc746e7fbc76",
+      "claim_id": "C79",
+      "claim": "The effects of 3F-NALT and NALT on Gmax are not significantly different (3F-NALT: 1.3 \u00b1 0.3; NALT: 1.4 \u00b1 0.3 at 20 \u03bcM; p=0.7324).",
+      "claim_type": "EXPLICIT",
+      "source": "while the effects on Gmax are not significantly different between 3F-NALT and NALT (3F-NALT: 1.3 \u00b1 0.3; NALT: 1.4 \u00b1 0.3 at 20 \u03bcM; p=0.7324, ns; Figure 4G and H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from experimental data shown in Figure 4G and H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:53.933902Z"
+    },
+    {
+      "id": "85c65afa-cc86-41d1-b4b8-02ed1fce66fc",
+      "content_id": "9bd967df-852a-4df4-bd5a-dc746e7fbc76",
+      "claim_id": "C80",
+      "claim": "Increasing the hydrogen bonding capacity of the \u2013OH group increases the maximum shift in IKs channel voltage dependence.",
+      "claim_type": "EXPLICIT",
+      "source": "These data demonstrate that increasing the hydrogen bonding capacity of the \u2013OH group increases the maximum shift in IKs channel voltage dependence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from experimental data comparing 3F-NALT to NALT.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:53.933902Z"
+    },
+    {
+      "id": "c52a6dc2-f6fd-4f8f-9765-7d27be73c71a",
+      "content_id": "9bd967df-852a-4df4-bd5a-dc746e7fbc76",
+      "claim_id": "C81",
+      "claim": "Hydrogen bonding is an important mechanism for IKs activation and preferentially influences the effects on the voltage dependence of IKs activation.",
+      "claim_type": "EXPLICIT",
+      "source": "This implicates hydrogen bonding as an important mechanism for IKs activation and preferentially influences the effects on the voltage dependence of IKs activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from experimental data showing that enhanced hydrogen bonding increases voltage shift but not Gmax.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:53.933902Z"
+    },
+    {
+      "id": "c0f6b63d-5acc-442a-aa90-a91a2b1b25fe",
+      "content_id": "9bd967df-852a-4df4-bd5a-dc746e7fbc76",
+      "claim_id": "C82",
+      "claim": "R231 has been previously shown to be important for the V0.5 shifting effect of non-aromatic PUFAs.",
+      "claim_type": "EXPLICIT",
+      "source": "The residue R231, located in the voltage sensor (S4) (Figure 5A), has been previously shown to be important for the V0.5 shifting effect of non-aromatic PUFAs (Liin et al., 2018).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is established knowledge about the role of R231, supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:53.933902Z"
+    },
+    {
+      "id": "cefb25b1-eae4-4080-9f3a-ceb6fbcb819a",
+      "content_id": "9bd967df-852a-4df4-bd5a-dc746e7fbc76",
+      "claim_id": "C83",
+      "claim": "The mutation Q234R is necessary to preserve the voltage dependence of activation in IKs channels with the R231Q mutation.",
+      "claim_type": "EXPLICIT",
+      "source": "The additional mutation Q234R is necessary to preserve the voltage dependence of activation in IKs channels with the R231Q mutation (Liin et al., 2018; Panaghie and Abbott, 2007; Wu et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the functional consequences of the R231Q mutation, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:53.933902Z"
+    },
+    {
+      "id": "10cf0f11-7cba-46ed-8cc4-eef12148d5d2",
+      "content_id": "9bd967df-852a-4df4-bd5a-dc746e7fbc76",
+      "claim_id": "C84",
+      "claim": "The V0.5 shifting effect of Lin-tyr was significantly decreased from \u0394V0.5 = \u201374.4 mV \u00b1 4.1 at 20 \u03bcM in the wild-type IKs channel to \u0394V0.5 = \u201336.5 mV \u00b1 7.3 at 20 \u03bcM with the R231Q+Q234R mutation (p < 0.0001).",
+      "claim_type": "EXPLICIT",
+      "source": "The V0.5 shifting effect of Lin-tyr was significantly decreased from \u0394V0.5 = \u201374.4 mV \u00b1 4.1 at 20 \u03bcM in the wild-type (WT) IKs channel to\u0394V0.5 = \u201336.5 mV \u00b1 7.3 at 20 \u03bcM with the R231Q+Q234R mutation (****p < 0.0001; Figure 5B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from experimental data shown in Figure 5B and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:53.933902Z"
+    },
+    {
+      "id": "ee697bcd-fae0-449e-9e6e-c0914258e6d9",
+      "content_id": "9bd967df-852a-4df4-bd5a-dc746e7fbc76",
+      "claim_id": "C85",
+      "claim": "R231 contributes to more than half of the voltage dependence shifting effect of Lin-tyr.",
+      "claim_type": "EXPLICIT",
+      "source": "This reduction indicates that R231 contributes to more than half of the voltage dependence shifting effect of Lin-tyr.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the quantitative reduction in voltage shift observed with the R231Q+Q234R mutation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:53.933902Z"
+    },
+    {
+      "id": "034195d1-76a5-42d7-8b18-1724c07695b1",
+      "content_id": "9bd967df-852a-4df4-bd5a-dc746e7fbc76",
+      "claim_id": "C86",
+      "claim": "The remaining shift in voltage dependence with the R231Q+Q234R mutation is most likely due to PUFA head group interactions with other nearby S4 charges such as R228 and Q234R.",
+      "claim_type": "EXPLICIT",
+      "source": "The remaining shift is most likely due to PUFA head group interactions with other nearby S4 charges such as R228 and Q234R.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about the mechanism of the residual voltage shift.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:53.933902Z"
+    },
+    {
+      "id": "54288b52-68c5-4d3c-ac12-d887784d3226",
+      "content_id": "9bd967df-852a-4df4-bd5a-dc746e7fbc76",
+      "claim_id": "C87",
+      "claim": "K326 has been previously shown to be important for the Gmax increasing effect of non-aromatic PUFAs.",
+      "claim_type": "EXPLICIT",
+      "source": "The residue K326, located near the pore, has been previously shown to be important for the Gmax increasing effect of non-aromatic PUFAs (Liin et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the role of K326, supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:53.933902Z"
+    },
+    {
+      "id": "009682d0-0c24-40a5-b9a0-4b4254ca7f8a",
+      "content_id": "9bd967df-852a-4df4-bd5a-dc746e7fbc76",
+      "claim_id": "C88",
+      "claim": "The Gmax increasing effect of 3,4,5F NAL-phe was significantly decreased from 2.4 \u00b1 0.4 at 20 \u03bcM in the WT IKs channel to 1.22 \u00b1 0.2 at 20 \u03bcM with the K326C mutation (p=0.0287).",
+      "claim_type": "EXPLICIT",
+      "source": "The Gmax increasing effect of 3,4,5F NAL-phe was significantly decreased from 2.4 \u00b1 0.4 at 20 \u03bcM in the WT IKs channel to 1.22 \u00b1 0.2 at 20 \u03bcM (*p=0.0287; Figure 5E and F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from experimental data shown in Figure 5E and F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:53.933902Z"
+    },
+    {
+      "id": "96383090-75f6-44c9-bdd4-5db713ecd645",
+      "content_id": "9bd967df-852a-4df4-bd5a-dc746e7fbc76",
+      "claim_id": "C89",
+      "claim": "K326 is necessary for 3,4,5F NAL-phe's Gmax increasing effect.",
+      "claim_type": "EXPLICIT",
+      "source": "This reduction indicates that K326 is necessary for 3,4,5F NAL-phe's Gmax increasing effect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the reduction in Gmax effect observed with the K326C mutation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:53.933902Z"
+    },
+    {
+      "id": "83bbac08-428e-4816-a9f5-2d1958d93cd7",
+      "content_id": "9bd967df-852a-4df4-bd5a-dc746e7fbc76",
+      "claim_id": "C90",
+      "claim": "The mutation R231Q+Q234R significantly decreases the V0.5 shift effect of Lin-tyr but does not change the Gmax increasing effect.",
+      "claim_type": "EXPLICIT",
+      "source": "The mutation R231Q+Q234R significantly decreases the V0.5 shift effect from \u0394V0.5 = \u201374.4 mV \u00b1 4.1 at 20 \u03bcM in the WT IKs channel to \u0394V0.5 = \u201336.5 mV \u00b1 7.3 at 20 \u03bcM in the mutation (****p < 0.0001), as mentioned above, but does not change Gmax increasing effect of Lin-tyr (Figure 5G and H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from experimental data shown in Figure 5G and H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:53.933902Z"
+    },
+    {
+      "id": "719b7f36-6aed-43b2-89ef-6fec56b87d36",
+      "content_id": "9bd967df-852a-4df4-bd5a-dc746e7fbc76",
+      "claim_id": "C91",
+      "claim": "The mutation K326C significantly decreases the Gmax effect of Lin-tyr from Gmax = 2.04 \u00b1 0.59 at 20 \u03bcM in the WT IKs channel to Gmax = 1.08 \u00b1 0.15 at 20 \u03bcM in the mutation (p=0.0015) but does not change the V0.5 shift effect.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, the mutation K326C significantly decreases the Gmax effect of Lin-tyr from Gmax = 2.04 \u00b1 0.59 at 20 \u03bcM in the WT IKs channel to Gmax = 1.08 \u00b1 0.15 at 20 \u03bcM in the mutation (***p=0.0015) but does not change the V0.5 shift effect of Lin-tyr (Figure 5G and H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from experimental data shown in Figure 5G and H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:53.933902Z"
+    },
+    {
+      "id": "a645cb2d-df20-4966-ae1b-08b96d72939e",
+      "content_id": "9bd967df-852a-4df4-bd5a-dc746e7fbc76",
+      "claim_id": "C92",
+      "claim": "Aromatic PUFAs shift the voltage dependence and increase the current maximum by two independent mechanisms: one via interactions with S4 charges (R231) and one via interactions with K326.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, Figure 5 demonstrates that aromatic PUFAs are shifting the voltage dependence and increasing the current maximum by two independent mechanisms: one via interactions with S4 charges (R231) and one via interactions with K326.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion drawn from experimental data showing independent effects of R231Q+Q234R and K326C mutations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:53.933902Z"
+    },
+    {
+      "id": "7caf3ad0-9111-49aa-8fd5-c3e444ae407a",
+      "content_id": "9bd967df-852a-4df4-bd5a-dc746e7fbc76",
+      "claim_id": "C93",
+      "claim": "Hydrogen bonding by the tyrosine's para-hydroxyl group is the reason for the large effect of PUFAs with tyrosine head groups on the IKs channel voltage-dependent activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Our experiments using fluorinated NALT (NAL-3F-tyr) to improve the hydrogen bonding capacity of the tyrosine head group demonstrated that hydrogen bonding by the tyrosine's para-hydroxyl group is the reason for the large effect of PUFAs with tyrosine head groups on the IKs channel voltage-dependent activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from experimental data with 3F-NALT.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:53.933902Z"
+    },
+    {
+      "id": "2b8e3c29-3dde-4749-aa86-d267bd95b238",
+      "content_id": "9bd967df-852a-4df4-bd5a-dc746e7fbc76",
+      "claim_id": "C94",
+      "claim": "S217A, Q220L, and S225A showed similar maximum shifts in voltage-dependent activation compared to the wild-type channel (WT + NALT: \u0394V0.5 = \u201356.1 \u00b1 3.6 mV; S217A + NALT: \u201365.9 \u00b1 3.7 mV; Q220L + NALT: \u201359.5 \u00b1 11.1 mV; S225A + NALT: \u201352.4 \u00b1 3.7 mV at 20 \u03bcM).",
+      "claim_type": "EXPLICIT",
+      "source": "We found that S217A, Q220L, and S225A showed similar maximum shifts in voltage-dependent activation compared to the wild-type channel (WT + NALT: \u0394V0.5 = \u201356.1 \u00b1 3.6 mV; S217A + NALT: \u201365.9 \u00b1 3.7 mV; Q220L + NALT: \u201359.5 \u00b1 11.1 mV; S225A + NALT: \u201352.4 \u00b1 3.7 mV at 20 \u03bcM, ns; Figure 6C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from experimental data shown in Figure 6C and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:53.933902Z"
+    },
+    {
+      "id": "c5c412e1-66f4-4261-ac3b-06631e2a734a",
+      "content_id": "9bd967df-852a-4df4-bd5a-dc746e7fbc76",
+      "claim_id": "C95",
+      "claim": "The T224V mutation significantly attenuated the leftward shift in the voltage dependence of activation in response to NALT application from \u0394V0.5 = \u201356.1 \u00b1 3.6 mV in WT channels to \u0394V0.5 = \u201332.1 \u00b1 7.0 at 20 \u03bcM (p=0.03).",
+      "claim_type": "EXPLICIT",
+      "source": "However, the T224V mutation significantly attenuated the leftward shift in the voltage dependence of activation in response to NALT application from \u0394V0.5 = \u201356.1 \u00b1 3.6 mV in WT channels to \u0394V0.5 = \u201332.1 \u00b1 7.0 at 20 \u03bcM (*p=0.03; Figure 6D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from experimental data shown in Figure 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:53.933902Z"
+    },
+    {
+      "id": "bc72ca2a-8efa-451b-9474-b7c7e36b4cab",
+      "content_id": "9bd967df-852a-4df4-bd5a-dc746e7fbc76",
+      "claim_id": "C96",
+      "claim": "There was no difference in the voltage-shifting effects of NAL-phe between the T224V mutant and WT channels (WT + NAL-phe: \u0394V0.5 = \u201312.5 \u00b1 3.8 mV; T224V + NAL-phe: \u201313.2 \u00b1 2.6 mV at 20 \u03bcM).",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to the attenuation of the overall voltage shift observed when NALT was applied to the T224V, there was no difference in the voltage-shifting effects of NAL-phe between the T224V mutant and WT channels (WT + NAL-phe:\u0394V0.5 = \u201312.5 \u00b1 3.8 mV; T224V + NAL-phe: \u201313.2 \u00b1 2.6 mV at 20 \u03bcM, ns; Figure 6F and G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from experimental data shown in Figure 6F and G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:53.933902Z"
+    },
+    {
+      "id": "4535c42b-2f09-4891-ad99-c555220dfe4b",
+      "content_id": "9bd967df-852a-4df4-bd5a-dc746e7fbc76",
+      "claim_id": "C97",
+      "claim": "The T224V mutation only reduces the efficacy of aromatic PUFAs that contain a hydrogen-bonding group like tyrosine.",
+      "claim_type": "EXPLICIT",
+      "source": "These data demonstrate that the T224V mutation only reduces the efficacy of aromatic PUFAs that contain a hydrogen-bonding group like tyrosine.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from experimental data comparing NALT and NAL-phe effects on T224V mutant channels.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:53.933902Z"
+    },
+    {
+      "id": "05733aab-91c3-4efc-bb6b-03e889a932a0",
+      "content_id": "9bd967df-852a-4df4-bd5a-dc746e7fbc76",
+      "claim_id": "C98",
+      "claim": "T224 is a novel interaction site between the S3\u2013S4 loop residue and hydrogen bonding moieties of aromatic PUFA head groups.",
+      "claim_type": "EXPLICIT",
+      "source": "As a result, we have identified a novel interaction between the S3\u2013S4 loop residue T224 and hydrogen bonding moieties of aromatic PUFA head groups.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from experimental data showing that T224V mutation specifically reduces NALT but not NAL-phe effects.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:53.933902Z"
+    },
+    {
+      "id": "e67dcaa8-3ee5-4674-b6e9-17c958656bd6",
+      "content_id": "9bd967df-852a-4df4-bd5a-dc746e7fbc76",
+      "claim_id": "C99",
+      "claim": "The distance between the residues R231 and T224V in KCNQ1 is 9.1 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 7A shows the distance between the residues R231 and T224V in KCNQ1 is 9.1 \u00c5",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a measurement from structural data shown in Figure 7A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:53.933902Z"
+    },
+    {
+      "id": "743501fc-1857-4dcf-8a79-37c76bff8aae",
+      "content_id": "9bd967df-852a-4df4-bd5a-dc746e7fbc76",
+      "claim_id": "C100",
+      "claim": "The length of a tyrosine head group is 8.5 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "and the length of a tyrosine head group is 8.5 \u00c5.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a measurement shown in Figure 7A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:53.933902Z"
+    },
+    {
+      "id": "d00127ea-d9c4-4521-85c9-f4029447dcf9",
+      "content_id": "9bd967df-852a-4df4-bd5a-dc746e7fbc76",
+      "claim_id": "C101",
+      "claim": "The tyrosine head group fits nicely in between R231 and T224 residues in silico, demonstrating the possibility of this interaction to occur.",
+      "claim_type": "EXPLICIT",
+      "source": "The tyrosine head group fits nicely in between these two residues in silico, demonstrating the possibility of this interaction to occur (Figure 7A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion drawn from structural modeling shown in Figure 7A.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:53.933902Z"
+    },
+    {
+      "id": "65ef08bc-f709-4a7a-a152-ece0e34259e7",
+      "content_id": "9bd967df-852a-4df4-bd5a-dc746e7fbc76",
+      "claim_id": "C102",
+      "claim": "Tyrosine PUFA analogues modulate the IKs channel via two independent interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "In our proposed mechanism, aromatic PUFA analogues modulate the IKs channel via two independent interactions (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion drawn from experimental data showing independent effects on voltage dependence and Gmax.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:53.933902Z"
+    },
+    {
+      "id": "a0c1186f-bb9b-4c55-932f-1c745f4c4efd",
+      "content_id": "9bd967df-852a-4df4-bd5a-dc746e7fbc76",
+      "claim_id": "C103",
+      "claim": "In one site, the carboxyl group of aromatic PUFAs is interacting with R231 (in S4) and the distal \u2013OH is hydrogen bonding with T224 (in the S3\u2013S4 loop).",
+      "claim_type": "EXPLICIT",
+      "source": "In one site, the carboxyl group is interacting with R231 (in S4) and the distal \u2013OH is hydrogen bonding with T224 (in the S3\u2013S4 loop) (Figure 7B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a proposed mechanism based on experimental data from mutagenesis studies.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:53.933902Z"
+    },
+    {
+      "id": "98d3e270-c69d-4487-bae9-94b1cb042b33",
+      "content_id": "9bd967df-852a-4df4-bd5a-dc746e7fbc76",
+      "claim_id": "C104",
+      "claim": "In another site, the carboxyl group of aromatic PUFAs is interacting with K326 (in S6) and the distal electronegative atom stabilizes the PUFA via an electrostatic interaction.",
+      "claim_type": "EXPLICIT",
+      "source": "In the other site, the carboxyl group is interacting with K326 (in S6) and the distal electronegative atom stabilizes the PUFA via an electrostatic interaction (Figure 7B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a proposed mechanism based on experimental data from mutagenesis studies.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:53.933902Z"
+    },
+    {
+      "id": "42bdfd71-e224-45ca-acc3-2f30934ef516",
+      "content_id": "9bd967df-852a-4df4-bd5a-dc746e7fbc76",
+      "claim_id": "C105",
+      "claim": "Cation\u2013pi interactions are not the primary mechanism through which tyrosine PUFAs activate the IKs channel.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these data suggest that cation\u2013pi interactions are not the primary mechanism through which these aromatic PUFA analogues activate the cardiac IKs channel.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from experimental data comparing tyrosine and phenylalanine PUFAs, and fluorinated phenylalanine PUFAs.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:53.933902Z"
+    },
+    {
+      "id": "960aa351-339d-46de-90ef-4f4b708940d2",
+      "content_id": "9bd967df-852a-4df4-bd5a-dc746e7fbc76",
+      "claim_id": "C106",
+      "claim": "Tri-fluorination of phenylalanine disperses the electrostatic surface potential that is necessary for cation\u2013pi interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Pless et al., 2014 demonstrated that tri-fluorination of phenylalanine disperses the electrostatic surface potential that is necessary for cation\u2013pi interactions (Pless et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the effects of fluorination on cation-pi interactions, supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:53.933902Z"
+    },
+    {
+      "id": "20b1120b-ef88-4755-8876-3a856bdfcf50",
+      "content_id": "9bd967df-852a-4df4-bd5a-dc746e7fbc76",
+      "claim_id": "C107",
+      "claim": "3,4,5F-NAL-phe is a more potent activator of the IKs channel compared to NAL-phe alone.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we find the opposite when we apply 3,4,5F-NAL-phe to the cardiac IKs channel, and see that 3,4,5F-NAL-phe is a more potent activator of the IKs channel compared to NAL-phe alone.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from experimental data comparing 3,4,5F-NAL-phe to NAL-phe.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:53.933902Z"
+    },
+    {
+      "id": "ba0266e8-da15-4b76-bd2c-205f580e10e0",
+      "content_id": "9bd967df-852a-4df4-bd5a-dc746e7fbc76",
+      "claim_id": "C108",
+      "claim": "Aromatic PUFA analogues with highly electronegative atoms on the distal end of the aromatic head group have the most pronounced effects on the maximal conductance of the IKs channel.",
+      "claim_type": "EXPLICIT",
+      "source": "These data suggest that aromatic PUFA analogues with highly electronegative atoms on the distal end of the aromatic head group have the most pronounced effects on the maximal conductance of the IKs channel.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from experimental data with brominated and fluorinated phenylalanine PUFAs.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:53.933902Z"
+    },
+    {
+      "id": "5712d489-abe5-44fe-82ea-b164d1cf0997",
+      "content_id": "9bd967df-852a-4df4-bd5a-dc746e7fbc76",
+      "claim_id": "C109",
+      "claim": "Brominated and fluorinated phenylalanine analogues fail to recapitulate the leftward \u0394V0.5 observed with tyrosine PUFA analogues.",
+      "claim_type": "EXPLICIT",
+      "source": "Although brominated and fluorinated phenylalanine analogues increase the maximal conductance of the IKs channel, these modified PUFAs still fail to recapitulate the leftward \u0394V0.5 observed with tyrosine PUFA analogues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from experimental data comparing brominated/fluorinated phenylalanine PUFAs to tyrosine PUFAs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:53.933902Z"
+    },
+    {
+      "id": "c54144ff-76ad-4f67-8769-778e1d1037a4",
+      "content_id": "9bd967df-852a-4df4-bd5a-dc746e7fbc76",
+      "claim_id": "C110",
+      "claim": "Specific modifications to the aromatic PUFA head group can preferentially improve either the voltage-shifting or maximal conductance effects of PUFA analogues.",
+      "claim_type": "EXPLICIT",
+      "source": "Most notably, these results suggest that specific modifications to the aromatic PUFA head group can preferentially improve either the voltage-shifting or maximal conductance effects of PUFA analogues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from experimental data showing differential effects of various head group modifications.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:53.933902Z"
+    },
+    {
+      "id": "4efb90c7-a33e-4d8d-bcc6-dbb55d4df06b",
+      "content_id": "9bd967df-852a-4df4-bd5a-dc746e7fbc76",
+      "claim_id": "C111",
+      "claim": "Adding highly electronegative groups to an aromatic ring, such as bromine and fluorine, most consistently improves the maximal conductance-increasing effects and reduces voltage dependence-shifting effects relative to PUFA analogues with a tyrosine or phenylalanine head group.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data suggests that adding highly electronegative groups to an aromatic ring, such as bromine and fluorine, most consistently improve the maximal conductance-increasing effects and reduce voltage dependence-shifting effects relative to PUFA analogues with a tyrosine or phenylalanine head group.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from experimental data with brominated and fluorinated phenylalanine PUFAs.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:53.933902Z"
+    },
+    {
+      "id": "950daa99-8cb5-49d7-909c-b7b0edb5773c",
+      "content_id": "9bd967df-852a-4df4-bd5a-dc746e7fbc76",
+      "claim_id": "C112",
+      "claim": "Reducing the pKa of the \u2013OH group (and increasing the potential for hydrogen bonding) preferentially improves the voltage-shifting effects on the IKs channel while leaving the effect on Gmax intact.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, we found that reducing the pKa of the \u2013OH group (and increasing the potential for hydrogen bonding), while leaving the effect on Gmax intact, preferentially improves the voltage-shifting effects on the IKs channel.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from experimental data with 3F-NALT.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:53.933902Z"
+    },
+    {
+      "id": "a8ac9b22-d599-4c44-b191-e4c7e0e9365a",
+      "content_id": "9bd967df-852a-4df4-bd5a-dc746e7fbc76",
+      "claim_id": "C113",
+      "claim": "PUFA analogues have two independent effects on IKs channel activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous work has demonstrated that PUFA analogues have two independent effects on IKs channel activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about PUFA mechanisms, based on previous work.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:53.933902Z"
+    },
+    {
+      "id": "9e899a02-fc32-4a12-9e47-33a1efdca64c",
+      "content_id": "9bd967df-852a-4df4-bd5a-dc746e7fbc76",
+      "claim_id": "C114",
+      "claim": "PUFA analogues shift the voltage dependence of activation in the IKs channel through electrostatic effects on the channel voltage sensor.",
+      "claim_type": "EXPLICIT",
+      "source": "PUFA analogues are known to shift the voltage dependence of activation in the IKs channel through electrostatic effects on the channel voltage sensor (B\u00f6rjesson et al., 2008; Liin et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about PUFA mechanisms, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:53.933902Z"
+    },
+    {
+      "id": "9ddff3e2-fad6-4da5-a20d-777f8315537f",
+      "content_id": "9bd967df-852a-4df4-bd5a-dc746e7fbc76",
+      "claim_id": "C115",
+      "claim": "The voltage-shifting effect of PUFAs is mediated by interactions of the negative PUFA head group with the outermost positively charged arginine residues located in the S4 segment.",
+      "claim_type": "EXPLICIT",
+      "source": "This is mediated by interactions of the negative PUFA head group with the outermost positively charged arginine residues located in the S4 segment (Liin et al., 2016; Liin et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about PUFA mechanisms, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:53.933902Z"
+    },
+    {
+      "id": "2cbdec96-4832-4984-a825-5aa4016f7587",
+      "content_id": "9bd967df-852a-4df4-bd5a-dc746e7fbc76",
+      "claim_id": "C116",
+      "claim": "A second effect of PUFAs on the IKs channel pore influences the maximal conductance of the IKs channel.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, though, a second effect on the IKs channel pore has been reported to influence the maximal conductance of the IKs channel (Liin et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about PUFA mechanisms, supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:53.933902Z"
+    },
+    {
+      "id": "f68e31d6-7351-44c9-b746-7d144d17abc8",
+      "content_id": "9bd967df-852a-4df4-bd5a-dc746e7fbc76",
+      "claim_id": "C117",
+      "claim": "The Gmax effect of PUFAs is mediated through electrostatic interactions between the PUFA head groups and K326 in the S6 segment.",
+      "claim_type": "EXPLICIT",
+      "source": "This is mediated through electrostatic interactions between the PUFA head groups and a positively charged lysine residue in the S6 segment \u2013 K326 (Liin et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about PUFA mechanisms, supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:53.933902Z"
+    },
+    {
+      "id": "9c43f8cd-9e3b-439d-9acb-5956c78fbee3",
+      "content_id": "9bd967df-852a-4df4-bd5a-dc746e7fbc76",
+      "claim_id": "C118",
+      "claim": "Molecular dynamics (MD) simulations with the Kv7.1 (KCNQ1) channel identified two separate high-occupancy sites for linoleic acid: site 1 at R231 in the S4 segment, and site 2 at K326 in the S6 segment.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, molecular dynamics (MD) simulations with the Kv7.1 (KCNQ1) channel (the pore-forming domain for the IKs channel) (Yazdi et al., 2021) identified two separate high-occupancy sites for linoleic acid: site 1 at R231 in the S4 segment, and site 2 at K326 in the S6 segment (Yazdi et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from MD simulations, supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:53.933902Z"
+    },
+    {
+      "id": "9de8ad40-3909-4b67-99fd-2dc2c88edbae",
+      "content_id": "9bd967df-852a-4df4-bd5a-dc746e7fbc76",
+      "claim_id": "C119",
+      "claim": "The more effective aromatic PUFAs act on sites at R231 in S4 and K326 in S6.",
+      "claim_type": "EXPLICIT",
+      "source": "We here show that the more effective aromatic PUFAs also act on these sites in S4 and S6.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from experimental data with mutations at R231 and K326.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:53.933902Z"
+    },
+    {
+      "id": "13e16a07-c3fe-4515-abaf-889e06285bc7",
+      "content_id": "9bd967df-852a-4df4-bd5a-dc746e7fbc76",
+      "claim_id": "C120",
+      "claim": "The increased effects of the aromatic PUFAs, compared to non-aromatic PUFAs, are due to the additional hydrogen bonding in site 1 and electrostatic interactions in site 2 to better anchor them in these binding sites to increase their effects.",
+      "claim_type": "EXPLICIT",
+      "source": "We therefore propose that the increased effects of the aromatic PUFAs, compared to non-aromatic PUFAs, are due to the additional hydrogen bonding in site 1 and electrostatic interactions in site 2 to better anchor them in these binding sites to increase their effects (Figure 7B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a proposed mechanism based on experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:53.933902Z"
+    },
+    {
+      "id": "f51118c7-15b5-4856-b338-94ec5bd1e522",
+      "content_id": "9bd967df-852a-4df4-bd5a-dc746e7fbc76",
+      "claim_id": "C121",
+      "claim": "The aromatic rings of aromatic PUFAs have the potential to be modified to give preferential effects on either the IKs channel voltage sensor or channel pore.",
+      "claim_type": "EXPLICIT",
+      "source": "As mentioned above, we also show that the aromatic rings have the potential to be modified to give preferential effects on either the IKs channel voltage sensor or channel pore.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from experimental data showing differential effects of various head group modifications.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:53.933902Z"
+    },
+    {
+      "id": "89ce47d6-e4c8-47ae-a5c0-6e47fccd461d",
+      "content_id": "9bd967df-852a-4df4-bd5a-dc746e7fbc76",
+      "claim_id": "C122",
+      "claim": "The hydrogen bonding capacity of the \u2013OH on the tyrosine of NALT is necessary for it to have a more effective voltage dependence shift effect.",
+      "claim_type": "EXPLICIT",
+      "source": "Our experiments with NAL-Phe and 3F-NALT show that the hydrogen bonding capacity of the \u2013OH on the tyrosine of NALT is necessary for it to have a more effective voltage dependence shift effect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from experimental data comparing NAL-Phe and 3F-NALT to NALT.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:53.933902Z"
+    },
+    {
+      "id": "5e55a1f6-96fa-40ab-a305-e642d2b6dc68",
+      "content_id": "9bd967df-852a-4df4-bd5a-dc746e7fbc76",
+      "claim_id": "C123",
+      "claim": "The \u2013OH group on the tyrosine of NALT hydrogen bonds with T224V, thereby improving the PUFA's ability to shift the voltage dependence.",
+      "claim_type": "EXPLICIT",
+      "source": "This shows that the \u2013OH group on the tyrosine of NALT hydrogen bonds with T224V, thereby improving the PUFA's ability to shift the voltage dependence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from experimental data showing that T224V mutation reduces NALT effects.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:53.933902Z"
+    },
+    {
+      "id": "175022ed-280a-4ea0-9a18-23fe39fe7710",
+      "content_id": "9bd967df-852a-4df4-bd5a-dc746e7fbc76",
+      "claim_id": "C124",
+      "claim": "The hydrogen bond interaction between PUFAs and the 3\u20134 loop of the IKs channel is a novel mechanism to increase the effect of PUFAs to activate the IKs channel.",
+      "claim_type": "EXPLICIT",
+      "source": "This hydrogen bond interaction between PUFAs and the 3\u20134 loop of the IKs channel is a novel mechanism to increase the effect of PUFAs to activate the IKs channel.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from experimental data identifying T224 as a hydrogen bonding partner.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:53.933902Z"
+    },
+    {
+      "id": "927b0f73-24d2-4863-a21b-e3fab97c272d",
+      "content_id": "9bd967df-852a-4df4-bd5a-dc746e7fbc76",
+      "claim_id": "C125",
+      "claim": "Drugs designed to target the hydrogen bond interaction with T224 would be more effective at shifting IKs channel voltage dependence.",
+      "claim_type": "EXPLICIT",
+      "source": "These data suggest that the drugs designed to target this interaction would be more effective at shifting IKs channel voltage dependence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about drug design based on the identified mechanism.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:53.933902Z"
+    },
+    {
+      "id": "88074e8d-bbdc-41ce-b3af-bbf56d546bc2",
+      "content_id": "9bd967df-852a-4df4-bd5a-dc746e7fbc76",
+      "claim_id": "C126",
+      "claim": "Different aromatic PUFA analogues not only increase PUFA efficacy on activating the IKs channel, but their specific effects on IKs function can be modulated independently, either increasing the maximal conductance or voltage-shifting effect.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, our findings suggest that different aromatic PUFA analogues not only increase PUFA efficacy on activating the IKs channel, but their specific effects on IKs function can be modulated independently, either increasing the maximal conductance or voltage-shifting effect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from experimental data showing differential effects of various aromatic PUFA modifications.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:53.933902Z"
+    },
+    {
+      "id": "d6a34967-a7b8-4747-a8bf-b5e0d7d712ef",
+      "content_id": "9bd967df-852a-4df4-bd5a-dc746e7fbc76",
+      "claim_id": "C127",
+      "claim": "Patients with LQTS can have mutations in the IKs channel that cause either a decrease in Gmax or a rightward shift of voltage dependence.",
+      "claim_type": "EXPLICIT",
+      "source": "Patients with LQTS can have mutations in the IKs channel that causes either a decrease in Gmax or a rightward shift of voltage dependence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the heterogeneity of LQTS mutations.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:53.933902Z"
+    },
+    {
+      "id": "31023b96-df05-4efd-ad8a-04f95e8d05b3",
+      "content_id": "9bd967df-852a-4df4-bd5a-dc746e7fbc76",
+      "claim_id": "C128",
+      "claim": "By independently modulating PUFAs to either increase Gmax or cause a leftward shift in voltage dependence, therapies may be designed that are more personalized to each patient's specific LQTS mutation.",
+      "claim_type": "EXPLICIT",
+      "source": "By independently modulating PUFAs to either increase Gmax or cause a leftward shift in voltage dependence, we may be able to design therapies that are more personalized to each patient's specific LQTS mutation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about the therapeutic potential of the findings.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:53.933902Z"
+    },
+    {
+      "id": "89996e02-ca08-43f2-9b56-5ff82b50f856",
+      "content_id": "9bd967df-852a-4df4-bd5a-dc746e7fbc76",
+      "claim_id": "C129",
+      "claim": "The mechanistic understanding of how aromatic PUFAs have effects on the IKs channel may help to aid drug development for LQTS.",
+      "claim_type": "EXPLICIT",
+      "source": "This novel mechanistic understanding of how aromatic PUFAs have these effects on the IKs channel may help to aid drug development for LQTS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about the translational potential of the findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:53.933902Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "62fa21f8-1b6c-4f96-b4c5-35af5a8b0edb",
+      "content_id": "9bd967df-852a-4df4-bd5a-dc746e7fbc76",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Tyrosine PUFA analogues (NALT, Lin-tyr, DHA-tyr, Pin-tyr) robustly activate the IKs channel by shifting voltage dependence (\u0394V0.5 ranging from -56.2 to -74.4 mV at 20 \u03bcM), increasing maximal conductance (Gmax 1.43-2.0 at 20 \u03bcM), and increasing overall current (I/I0 5.0-12.8 at 20 \u03bcM). Lin-tyr shows the strongest effects, while Lin-glycine shows more modest voltage shifts but similar Gmax increases.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C47 provide comprehensive quantitative data from electrophysiological experiments showing consistent activation of IKs channels by tyrosine PUFAs across multiple parameters (voltage shift, conductance, current). The data include error estimates and are presented with dose-response relationships, supporting the conclusion that tyrosine PUFAs are potent IKs activators.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:19:53.933902Z"
+    },
+    {
+      "id": "a4b5c612-5eba-4a55-a509-96fdb58dd1ec",
+      "content_id": "9bd967df-852a-4df4-bd5a-dc746e7fbc76",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Cation-pi interactions are not the primary mechanism of IKs activation by tyrosine PUFAs. Phenylalanine PUFAs (Lin-phe, NAL-phe) show significantly reduced effects compared to tyrosine PUFAs (I/I0 ~2.4-2.6 vs 5.1-12.8; \u0394V0.5 ~-12.5 to -13.1 mV vs -56.2 to -74.4 mV; p<0.0001), indicating the distal -OH group is critical for potent activation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C60 and C105 present a logical experimental test of the cation-pi hypothesis using phenylalanine analogues lacking the hydroxyl group. The statistically significant reduction in all activation parameters (I/I0, \u0394V0.5, Gmax) when the -OH is removed provides strong evidence against cation-pi interactions as the primary mechanism and supports the importance of the hydroxyl group.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:19:53.933902Z"
+    },
+    {
+      "id": "0b9ff7f1-3959-4b81-968b-541f2bf968c9",
+      "content_id": "9bd967df-852a-4df4-bd5a-dc746e7fbc76",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Adding highly electronegative groups (Br, F) to phenylalanine PUFAs improves IKs activation, particularly Gmax effects (1.9-2.4 at 20 \u03bcM), with 3,4,5F-NAL-phe showing significantly greater effects than NAL-phe (I/I0 p=0.0186; \u0394V0.5 p=0.0096). However, these modified phenylalanine PUFAs still produce smaller voltage shifts than tyrosine PUFAs (NALT: p=0.0003-0.0021), indicating electronegative groups alone cannot fully recapitulate tyrosine PUFA effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C75, C106-C109, and C111 demonstrate through systematic comparison that electronegative substitutions improve phenylalanine PUFA efficacy but do not achieve tyrosine PUFA-level voltage shifts. The statistical comparisons are appropriate and the conclusion that tri-fluorination disrupts cation-pi interactions (C106) yet improves activation (C107) further supports that cation-pi is not the primary mechanism. The data consistently show preferential effects on Gmax over voltage dependence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:19:53.933902Z"
+    },
+    {
+      "id": "23f90e88-109a-4ae6-880c-d6e5b2dc42a9",
+      "content_id": "9bd967df-852a-4df4-bd5a-dc746e7fbc76",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Hydrogen bonding by the tyrosine hydroxyl group is critical for voltage-dependent activation. 3F-NALT, with enhanced hydrogen bonding capacity, produces a significantly greater voltage shift (\u0394V0.5 = -69.3 \u00b1 1.4 mV) compared to NALT (-56.1 \u00b1 3.6 mV; p=0.0298), while Gmax effects remain unchanged (p=0.7324). This demonstrates hydrogen bonding preferentially influences voltage dependence rather than maximal conductance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C76-C81, C93, C112, and C122 present a well-designed experiment using fluorine substitution to enhance hydrogen bonding without adding bulk. The selective enhancement of voltage shift without affecting Gmax, supported by statistical significance, provides strong evidence for hydrogen bonding as a mechanism specifically affecting voltage sensor interactions. The chemical rationale (fluorine reduces pKa, enhances H-bonding) is sound.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:19:53.933902Z"
+    },
+    {
+      "id": "9f03031d-f8ee-4df8-9dc2-38d632a00508",
+      "content_id": "9bd967df-852a-4df4-bd5a-dc746e7fbc76",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Aromatic PUFAs activate IKs through two independent mechanisms: (1) voltage sensor interaction via R231 in S4, which mediates >50% of the voltage shift effect (Lin-tyr: \u0394V0.5 reduced from -74.4 to -36.5 mV with R231Q+Q234R, p<0.0001), and (2) pore interaction via K326 in S6, which mediates Gmax increases (3,4,5F-NAL-phe: Gmax reduced from 2.4 to 1.22 with K326C, p=0.0287). These effects are independent as mutations selectively affect either voltage shift or Gmax but not both.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C82-C92, C102, and C119 demonstrate through mutagenesis that aromatic PUFAs act at two distinct sites previously identified for non-aromatic PUFAs. The independence of the two mechanisms is convincingly shown by the selective effects of R231Q+Q234R (affects \u0394V0.5 but not Gmax) and K326C (affects Gmax but not \u0394V0.5) mutations. Statistical significance is reported and the results are consistent with prior work on non-aromatic PUFAs.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:19:53.933902Z"
+    },
+    {
+      "id": "5d64c3f6-be10-4950-bba6-3f4f0958512e",
+      "content_id": "9bd967df-852a-4df4-bd5a-dc746e7fbc76",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "T224 in the S3-S4 loop is a novel hydrogen bonding site for tyrosine PUFAs. The T224V mutation specifically reduces NALT voltage shift effects (\u0394V0.5 from -56.1 to -32.1 mV, p=0.03) but does not affect NAL-phe (lacking -OH group), while other S3-S4 loop mutations (S217A, Q220L, S225A) show no effect. This identifies T224 as the hydrogen bonding partner for the tyrosine hydroxyl group.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C94-C98, C123-C124 present a systematic mutagenesis screen of hydrogen-bonding-capable residues in the S3-S4 loop. The specificity of the T224V effect (reduces NALT but not NAL-phe effects) provides strong evidence for hydrogen bonding as the mechanism. The negative results for other residues strengthen the conclusion. However, the statistical significance is modest (p=0.03) and only one concentration is tested for the comparison.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:19:53.933902Z"
+    },
+    {
+      "id": "c1b6ea8c-b7d5-4852-b9c4-6fa4874d0188",
+      "content_id": "9bd967df-852a-4df4-bd5a-dc746e7fbc76",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Structural modeling shows the tyrosine head group (8.5 \u00c5) fits between R231 and T224 (9.1 \u00c5 apart), supporting a binding mode where the carboxyl group interacts electrostatically with R231 in S4 while the distal -OH hydrogen bonds with T224 in the S3-S4 loop (site 1), and separately the carboxyl interacts with K326 in S6 with the distal electronegative atom providing electrostatic stabilization (site 2).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C99-C101, C103-C104, and C120 integrate structural measurements with the functional data to propose a mechanistic model. The spatial compatibility (8.5 \u00c5 head group fitting in 9.1 \u00c5 space) supports the proposed interactions. However, this is in silico modeling without experimental validation of the binding pose, and the proposed mechanism is based on inference from mutagenesis data rather than direct structural evidence of PUFA binding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:19:53.933902Z"
+    },
+    {
+      "id": "8bfc0e5f-6fde-4104-84bf-52c6d3b2928c",
+      "content_id": "9bd967df-852a-4df4-bd5a-dc746e7fbc76",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Aromatic PUFA head group modifications can independently modulate voltage-shifting versus Gmax-increasing effects, with electronegative groups preferentially enhancing Gmax and hydrogen bonding capacity preferentially enhancing voltage shifts. This allows for potential design of compounds tailored to specific functional deficits.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C110, C121, and C126 synthesize the findings to propose a structure-activity relationship principle. This is well-supported by the differential effects observed: fluorinated phenylalanines enhance Gmax more than voltage shift, while 3F-NALT enhances voltage shift without affecting Gmax. The conclusion is a logical inference from the experimental data presented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:19:53.933902Z"
+    },
+    {
+      "id": "d483170b-b5b9-487d-92ff-d8b3b580e133",
+      "content_id": "9bd967df-852a-4df4-bd5a-dc746e7fbc76",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Background on KV channels and LQTS: KV channels regulate cellular excitability and action potential repolarization; mutations cause hyperexcitability leading to epilepsy and cardiac arrhythmias. LQTS is caused by loss-of-function of the IKs channel (KV7.1/KCNE1 complex), predisposing to ventricular fibrillation and sudden death. Current treatments (\u03b2-blockers, defibrillators) have limitations, creating need for novel therapeutics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3, C5-C6, C11-C19 present established background knowledge about KV channel biology, structure, and clinical significance, all supported by appropriate citations. These claims provide context for the study but do not represent novel findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:19:53.933902Z"
+    },
+    {
+      "id": "86749e5f-9e6a-4f3c-8ab5-ed2d97fce52e",
+      "content_id": "9bd967df-852a-4df4-bd5a-dc746e7fbc76",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Background on PUFA mechanisms: PUFAs are amphipathic molecules that activate IKs channels through two independent effects - (1) electrostatic interaction with S4 arginines shifting voltage dependence, and (2) interaction with K326 in S6 increasing Gmax. The lipoelectric hypothesis describes how the negatively charged head interacts with positive charges while the tail incorporates into the membrane. PUFAs with low pKa head groups (glycine, taurine) show robust effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C29 and C113-C118 summarize established knowledge about PUFA structure, mechanism, and structure-activity relationships, all supported by appropriate citations. This provides the mechanistic framework for interpreting the novel aromatic PUFA findings but represents prior work rather than new results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:19:53.933902Z"
+    },
+    {
+      "id": "1b891520-a7b0-45dd-aa93-b5b90cdf6946",
+      "content_id": "9bd967df-852a-4df4-bd5a-dc746e7fbc76",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Discovery of aromatic PUFA analogues: A set of aromatic PUFA analogues with tyrosine head groups, particularly NALT, produce robust IKs activation with potent leftward voltage shifts and increased maximal conductance. These compounds are unique in possessing a large aromatic tyrosine head group rather than the carboxyl/sulfonyl groups typical of previously characterized PUFAs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C7-C8, C30-C32 introduce the novel aromatic PUFAs as the focus of the study. While C4 and C22 include speculative statements about therapeutic potential, the core claims about robust activation effects are supported by the extensive experimental data presented in the manuscript (detailed in other result groups).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:19:53.933902Z"
+    },
+    {
+      "id": "854b5a32-8309-4020-937d-a146d8e4843c",
+      "content_id": "9bd967df-852a-4df4-bd5a-dc746e7fbc76",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Therapeutic implications: The mechanistic understanding of aromatic PUFA activation may aid LQTS drug development. Since LQTS mutations can cause either decreased Gmax or rightward voltage shifts, independently modulating these effects could enable personalized therapies targeting specific mutations. Drugs targeting the T224 hydrogen bonding interaction would be more effective at shifting voltage dependence.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C125, C127-C129 present speculative therapeutic applications of the findings. While C127 correctly states that LQTS mutations are heterogeneous, the proposals for personalized therapy (C128) and drug development (C125, C129) are not supported by any drug development data, efficacy studies, or validation in disease models. These remain hypothetical applications requiring substantial future work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:19:53.933902Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "f0b590cd-402e-45fa-9f65-47ce6d75b3a1",
+      "result_id": "62fa21f8-1b6c-4f96-b4c5-35af5a8b0edb"
+    },
+    {
+      "claim_id": "3442c3c0-2b7d-4bc7-b44d-a6b71bb4ae9e",
+      "result_id": "62fa21f8-1b6c-4f96-b4c5-35af5a8b0edb"
+    },
+    {
+      "claim_id": "ab0d9621-f041-43ba-87e8-387b88011a2c",
+      "result_id": "62fa21f8-1b6c-4f96-b4c5-35af5a8b0edb"
+    },
+    {
+      "claim_id": "c79bb8ea-e1ba-4ebd-b7a9-b3739ed56ce9",
+      "result_id": "62fa21f8-1b6c-4f96-b4c5-35af5a8b0edb"
+    },
+    {
+      "claim_id": "7bc37612-6d38-478c-b2f6-01c209da6a50",
+      "result_id": "62fa21f8-1b6c-4f96-b4c5-35af5a8b0edb"
+    },
+    {
+      "claim_id": "b0e82b19-224e-4b43-bbe4-71f8e0770d7c",
+      "result_id": "62fa21f8-1b6c-4f96-b4c5-35af5a8b0edb"
+    },
+    {
+      "claim_id": "5e40a5bd-ee38-46d5-957a-534333f5ca89",
+      "result_id": "62fa21f8-1b6c-4f96-b4c5-35af5a8b0edb"
+    },
+    {
+      "claim_id": "bff8b093-163c-4602-96d1-d2280020bc63",
+      "result_id": "62fa21f8-1b6c-4f96-b4c5-35af5a8b0edb"
+    },
+    {
+      "claim_id": "ef0eebde-7ca3-4e5d-b8f2-87eeecbc8774",
+      "result_id": "62fa21f8-1b6c-4f96-b4c5-35af5a8b0edb"
+    },
+    {
+      "claim_id": "04951766-8ad4-479d-b1c7-3b306e0ada66",
+      "result_id": "62fa21f8-1b6c-4f96-b4c5-35af5a8b0edb"
+    },
+    {
+      "claim_id": "97790a3c-666b-46d9-a933-e7ea67eb48af",
+      "result_id": "62fa21f8-1b6c-4f96-b4c5-35af5a8b0edb"
+    },
+    {
+      "claim_id": "251c8f3c-66b6-480a-9e77-4a0e052174fd",
+      "result_id": "62fa21f8-1b6c-4f96-b4c5-35af5a8b0edb"
+    },
+    {
+      "claim_id": "6837e968-9e00-4e71-a550-977caa7ddba9",
+      "result_id": "62fa21f8-1b6c-4f96-b4c5-35af5a8b0edb"
+    },
+    {
+      "claim_id": "281a0527-f0e9-4517-8fb4-6f4b37956b89",
+      "result_id": "62fa21f8-1b6c-4f96-b4c5-35af5a8b0edb"
+    },
+    {
+      "claim_id": "3d5e8783-3f10-4c59-b329-c93036ce0d71",
+      "result_id": "62fa21f8-1b6c-4f96-b4c5-35af5a8b0edb"
+    },
+    {
+      "claim_id": "90ec7f6f-cc89-4e61-a97f-c57e25e58f38",
+      "result_id": "a4b5c612-5eba-4a55-a509-96fdb58dd1ec"
+    },
+    {
+      "claim_id": "aadea575-c6b5-4877-b5e5-69e161ad2179",
+      "result_id": "a4b5c612-5eba-4a55-a509-96fdb58dd1ec"
+    },
+    {
+      "claim_id": "df9e36a2-4271-4ffb-b342-1d61abd3b746",
+      "result_id": "a4b5c612-5eba-4a55-a509-96fdb58dd1ec"
+    },
+    {
+      "claim_id": "acca0517-2b57-44fa-8ed1-e157b31cfaee",
+      "result_id": "a4b5c612-5eba-4a55-a509-96fdb58dd1ec"
+    },
+    {
+      "claim_id": "c5e28dad-8a1f-4dac-944e-9f1c3a4d31ff",
+      "result_id": "a4b5c612-5eba-4a55-a509-96fdb58dd1ec"
+    },
+    {
+      "claim_id": "b9e64084-c7c5-40e8-a9b4-71c2c3ef302d",
+      "result_id": "a4b5c612-5eba-4a55-a509-96fdb58dd1ec"
+    },
+    {
+      "claim_id": "0ca9ef5c-a403-4a3f-b682-f54a0733a45f",
+      "result_id": "a4b5c612-5eba-4a55-a509-96fdb58dd1ec"
+    },
+    {
+      "claim_id": "33026f16-7300-4f4e-b72b-4eea42da20e4",
+      "result_id": "a4b5c612-5eba-4a55-a509-96fdb58dd1ec"
+    },
+    {
+      "claim_id": "a72d12ea-6ca2-4f62-83e4-8fe9a23bd2ac",
+      "result_id": "a4b5c612-5eba-4a55-a509-96fdb58dd1ec"
+    },
+    {
+      "claim_id": "e8ea1904-fa0d-4ba7-9297-6a64464ebf1e",
+      "result_id": "a4b5c612-5eba-4a55-a509-96fdb58dd1ec"
+    },
+    {
+      "claim_id": "d3eafe52-f736-4970-bba8-75d9444af82c",
+      "result_id": "a4b5c612-5eba-4a55-a509-96fdb58dd1ec"
+    },
+    {
+      "claim_id": "733828c6-0e1f-4e45-bc91-687baeab81e1",
+      "result_id": "a4b5c612-5eba-4a55-a509-96fdb58dd1ec"
+    },
+    {
+      "claim_id": "38345db6-a6f0-4856-8528-d5f751649d56",
+      "result_id": "a4b5c612-5eba-4a55-a509-96fdb58dd1ec"
+    },
+    {
+      "claim_id": "42bdfd71-e224-45ca-acc3-2f30934ef516",
+      "result_id": "a4b5c612-5eba-4a55-a509-96fdb58dd1ec"
+    },
+    {
+      "claim_id": "1679c16d-c718-42f2-9d9a-81555d6a504a",
+      "result_id": "0b9ff7f1-3959-4b81-968b-541f2bf968c9"
+    },
+    {
+      "claim_id": "6d3efbb5-4ae0-4133-b64f-dc44bc8c2719",
+      "result_id": "0b9ff7f1-3959-4b81-968b-541f2bf968c9"
+    },
+    {
+      "claim_id": "fec5c8bd-5145-48d0-b88e-23261f81ea4b",
+      "result_id": "0b9ff7f1-3959-4b81-968b-541f2bf968c9"
+    },
+    {
+      "claim_id": "0d59512d-f89d-4848-8d65-00b3603bc3f9",
+      "result_id": "0b9ff7f1-3959-4b81-968b-541f2bf968c9"
+    },
+    {
+      "claim_id": "0cc6516e-4004-43d4-9f19-103eb482940f",
+      "result_id": "0b9ff7f1-3959-4b81-968b-541f2bf968c9"
+    },
+    {
+      "claim_id": "a171f0ac-3a76-4627-b5ea-f504f371ab58",
+      "result_id": "0b9ff7f1-3959-4b81-968b-541f2bf968c9"
+    },
+    {
+      "claim_id": "39fabb57-dcb1-481e-bb38-6fe500408158",
+      "result_id": "0b9ff7f1-3959-4b81-968b-541f2bf968c9"
+    },
+    {
+      "claim_id": "1d424d5c-1a3e-4616-b3fd-cb5621f5b616",
+      "result_id": "0b9ff7f1-3959-4b81-968b-541f2bf968c9"
+    },
+    {
+      "claim_id": "b19bc3a0-70b8-4963-9cd8-3ff014fc695f",
+      "result_id": "0b9ff7f1-3959-4b81-968b-541f2bf968c9"
+    },
+    {
+      "claim_id": "396f791a-d83f-4a0e-8b1d-74bdb850c897",
+      "result_id": "0b9ff7f1-3959-4b81-968b-541f2bf968c9"
+    },
+    {
+      "claim_id": "2c23bcb1-0365-4e9c-9d7c-594f53ec0044",
+      "result_id": "0b9ff7f1-3959-4b81-968b-541f2bf968c9"
+    },
+    {
+      "claim_id": "eb7bdcf5-085b-41be-b2f3-20bdf33d061f",
+      "result_id": "0b9ff7f1-3959-4b81-968b-541f2bf968c9"
+    },
+    {
+      "claim_id": "4a014984-311f-4195-8e68-ec70b4ee2d58",
+      "result_id": "0b9ff7f1-3959-4b81-968b-541f2bf968c9"
+    },
+    {
+      "claim_id": "50cae131-84cb-4a80-8243-65542490378b",
+      "result_id": "0b9ff7f1-3959-4b81-968b-541f2bf968c9"
+    },
+    {
+      "claim_id": "962072cd-31e9-4d8b-a861-93d3117a4c84",
+      "result_id": "0b9ff7f1-3959-4b81-968b-541f2bf968c9"
+    },
+    {
+      "claim_id": "960aa351-339d-46de-90ef-4f4b708940d2",
+      "result_id": "0b9ff7f1-3959-4b81-968b-541f2bf968c9"
+    },
+    {
+      "claim_id": "20b1120b-ef88-4755-8876-3a856bdfcf50",
+      "result_id": "0b9ff7f1-3959-4b81-968b-541f2bf968c9"
+    },
+    {
+      "claim_id": "ba0266e8-da15-4b76-bd2c-205f580e10e0",
+      "result_id": "0b9ff7f1-3959-4b81-968b-541f2bf968c9"
+    },
+    {
+      "claim_id": "5712d489-abe5-44fe-82ea-b164d1cf0997",
+      "result_id": "0b9ff7f1-3959-4b81-968b-541f2bf968c9"
+    },
+    {
+      "claim_id": "4efb90c7-a33e-4d8d-bcc6-dbb55d4df06b",
+      "result_id": "0b9ff7f1-3959-4b81-968b-541f2bf968c9"
+    },
+    {
+      "claim_id": "15a20018-f0a1-4bc8-be01-70624abb82d4",
+      "result_id": "23f90e88-109a-4ae6-880c-d6e5b2dc42a9"
+    },
+    {
+      "claim_id": "696e6419-4ebe-496c-abab-7f46f886957b",
+      "result_id": "23f90e88-109a-4ae6-880c-d6e5b2dc42a9"
+    },
+    {
+      "claim_id": "47ab2681-2cba-4f5f-8573-afc0b1107553",
+      "result_id": "23f90e88-109a-4ae6-880c-d6e5b2dc42a9"
+    },
+    {
+      "claim_id": "194a33be-4fb9-4d05-bcd9-f6b5d5ddfbee",
+      "result_id": "23f90e88-109a-4ae6-880c-d6e5b2dc42a9"
+    },
+    {
+      "claim_id": "85c65afa-cc86-41d1-b4b8-02ed1fce66fc",
+      "result_id": "23f90e88-109a-4ae6-880c-d6e5b2dc42a9"
+    },
+    {
+      "claim_id": "c52a6dc2-f6fd-4f8f-9765-7d27be73c71a",
+      "result_id": "23f90e88-109a-4ae6-880c-d6e5b2dc42a9"
+    },
+    {
+      "claim_id": "7caf3ad0-9111-49aa-8fd5-c3e444ae407a",
+      "result_id": "23f90e88-109a-4ae6-880c-d6e5b2dc42a9"
+    },
+    {
+      "claim_id": "950daa99-8cb5-49d7-909c-b7b0edb5773c",
+      "result_id": "23f90e88-109a-4ae6-880c-d6e5b2dc42a9"
+    },
+    {
+      "claim_id": "89ce47d6-e4c8-47ae-a5c0-6e47fccd461d",
+      "result_id": "23f90e88-109a-4ae6-880c-d6e5b2dc42a9"
+    },
+    {
+      "claim_id": "c0f6b63d-5acc-442a-aa90-a91a2b1b25fe",
+      "result_id": "9f03031d-f8ee-4df8-9dc2-38d632a00508"
+    },
+    {
+      "claim_id": "cefb25b1-eae4-4080-9f3a-ceb6fbcb819a",
+      "result_id": "9f03031d-f8ee-4df8-9dc2-38d632a00508"
+    },
+    {
+      "claim_id": "10cf0f11-7cba-46ed-8cc4-eef12148d5d2",
+      "result_id": "9f03031d-f8ee-4df8-9dc2-38d632a00508"
+    },
+    {
+      "claim_id": "ee697bcd-fae0-449e-9e6e-c0914258e6d9",
+      "result_id": "9f03031d-f8ee-4df8-9dc2-38d632a00508"
+    },
+    {
+      "claim_id": "034195d1-76a5-42d7-8b18-1724c07695b1",
+      "result_id": "9f03031d-f8ee-4df8-9dc2-38d632a00508"
+    },
+    {
+      "claim_id": "54288b52-68c5-4d3c-ac12-d887784d3226",
+      "result_id": "9f03031d-f8ee-4df8-9dc2-38d632a00508"
+    },
+    {
+      "claim_id": "009682d0-0c24-40a5-b9a0-4b4254ca7f8a",
+      "result_id": "9f03031d-f8ee-4df8-9dc2-38d632a00508"
+    },
+    {
+      "claim_id": "96383090-75f6-44c9-bdd4-5db713ecd645",
+      "result_id": "9f03031d-f8ee-4df8-9dc2-38d632a00508"
+    },
+    {
+      "claim_id": "83bbac08-428e-4816-a9f5-2d1958d93cd7",
+      "result_id": "9f03031d-f8ee-4df8-9dc2-38d632a00508"
+    },
+    {
+      "claim_id": "719b7f36-6aed-43b2-89ef-6fec56b87d36",
+      "result_id": "9f03031d-f8ee-4df8-9dc2-38d632a00508"
+    },
+    {
+      "claim_id": "a645cb2d-df20-4966-ae1b-08b96d72939e",
+      "result_id": "9f03031d-f8ee-4df8-9dc2-38d632a00508"
+    },
+    {
+      "claim_id": "65ef08bc-f709-4a7a-a152-ece0e34259e7",
+      "result_id": "9f03031d-f8ee-4df8-9dc2-38d632a00508"
+    },
+    {
+      "claim_id": "9de8ad40-3909-4b67-99fd-2dc2c88edbae",
+      "result_id": "9f03031d-f8ee-4df8-9dc2-38d632a00508"
+    },
+    {
+      "claim_id": "2b8e3c29-3dde-4749-aa86-d267bd95b238",
+      "result_id": "5d64c3f6-be10-4950-bba6-3f4f0958512e"
+    },
+    {
+      "claim_id": "c5c412e1-66f4-4261-ac3b-06631e2a734a",
+      "result_id": "5d64c3f6-be10-4950-bba6-3f4f0958512e"
+    },
+    {
+      "claim_id": "bc72ca2a-8efa-451b-9474-b7c7e36b4cab",
+      "result_id": "5d64c3f6-be10-4950-bba6-3f4f0958512e"
+    },
+    {
+      "claim_id": "4535c42b-2f09-4891-ad99-c555220dfe4b",
+      "result_id": "5d64c3f6-be10-4950-bba6-3f4f0958512e"
+    },
+    {
+      "claim_id": "05733aab-91c3-4efc-bb6b-03e889a932a0",
+      "result_id": "5d64c3f6-be10-4950-bba6-3f4f0958512e"
+    },
+    {
+      "claim_id": "5e55a1f6-96fa-40ab-a305-e642d2b6dc68",
+      "result_id": "5d64c3f6-be10-4950-bba6-3f4f0958512e"
+    },
+    {
+      "claim_id": "175022ed-280a-4ea0-9a18-23fe39fe7710",
+      "result_id": "5d64c3f6-be10-4950-bba6-3f4f0958512e"
+    },
+    {
+      "claim_id": "e67dcaa8-3ee5-4674-b6e9-17c958656bd6",
+      "result_id": "c1b6ea8c-b7d5-4852-b9c4-6fa4874d0188"
+    },
+    {
+      "claim_id": "743501fc-1857-4dcf-8a79-37c76bff8aae",
+      "result_id": "c1b6ea8c-b7d5-4852-b9c4-6fa4874d0188"
+    },
+    {
+      "claim_id": "d00127ea-d9c4-4521-85c9-f4029447dcf9",
+      "result_id": "c1b6ea8c-b7d5-4852-b9c4-6fa4874d0188"
+    },
+    {
+      "claim_id": "a0c1186f-bb9b-4c55-932f-1c745f4c4efd",
+      "result_id": "c1b6ea8c-b7d5-4852-b9c4-6fa4874d0188"
+    },
+    {
+      "claim_id": "98d3e270-c69d-4487-bae9-94b1cb042b33",
+      "result_id": "c1b6ea8c-b7d5-4852-b9c4-6fa4874d0188"
+    },
+    {
+      "claim_id": "13e16a07-c3fe-4515-abaf-889e06285bc7",
+      "result_id": "c1b6ea8c-b7d5-4852-b9c4-6fa4874d0188"
+    },
+    {
+      "claim_id": "c54144ff-76ad-4f67-8769-778e1d1037a4",
+      "result_id": "8bfc0e5f-6fde-4104-84bf-52c6d3b2928c"
+    },
+    {
+      "claim_id": "f51118c7-15b5-4856-b338-94ec5bd1e522",
+      "result_id": "8bfc0e5f-6fde-4104-84bf-52c6d3b2928c"
+    },
+    {
+      "claim_id": "88074e8d-bbdc-41ce-b3af-bbf56d546bc2",
+      "result_id": "8bfc0e5f-6fde-4104-84bf-52c6d3b2928c"
+    },
+    {
+      "claim_id": "6d6e0fd7-bd23-4432-9cb3-9113f2ec1d52",
+      "result_id": "d483170b-b5b9-487d-92ff-d8b3b580e133"
+    },
+    {
+      "claim_id": "c2399836-ab93-4933-ab35-758ae40705ca",
+      "result_id": "d483170b-b5b9-487d-92ff-d8b3b580e133"
+    },
+    {
+      "claim_id": "20adfcdc-0af3-4c92-91b2-6a0cc0720f5d",
+      "result_id": "d483170b-b5b9-487d-92ff-d8b3b580e133"
+    },
+    {
+      "claim_id": "36519375-c713-44d3-9e88-432a08a1257e",
+      "result_id": "d483170b-b5b9-487d-92ff-d8b3b580e133"
+    },
+    {
+      "claim_id": "61512c2e-af97-47af-a558-b9cec0af91a0",
+      "result_id": "d483170b-b5b9-487d-92ff-d8b3b580e133"
+    },
+    {
+      "claim_id": "a3f531ec-bb4e-406c-8059-851f10cbf6e2",
+      "result_id": "d483170b-b5b9-487d-92ff-d8b3b580e133"
+    },
+    {
+      "claim_id": "48a12649-9c24-46f2-a4d4-d7701ce1306b",
+      "result_id": "d483170b-b5b9-487d-92ff-d8b3b580e133"
+    },
+    {
+      "claim_id": "3cf68ed8-9c09-441a-a2ca-32aee4dc6c46",
+      "result_id": "d483170b-b5b9-487d-92ff-d8b3b580e133"
+    },
+    {
+      "claim_id": "b118c828-e32a-44d9-b174-3c32976d8bca",
+      "result_id": "d483170b-b5b9-487d-92ff-d8b3b580e133"
+    },
+    {
+      "claim_id": "abea190a-7b71-4ddf-b063-f7839fc3ed36",
+      "result_id": "d483170b-b5b9-487d-92ff-d8b3b580e133"
+    },
+    {
+      "claim_id": "90b52704-9a10-44c1-a9ee-c994df1a3068",
+      "result_id": "d483170b-b5b9-487d-92ff-d8b3b580e133"
+    },
+    {
+      "claim_id": "1528b770-e5ca-4243-91db-b6ff27926ec0",
+      "result_id": "d483170b-b5b9-487d-92ff-d8b3b580e133"
+    },
+    {
+      "claim_id": "775a0ee5-03a5-4b87-b5c6-5f018d7d76e8",
+      "result_id": "d483170b-b5b9-487d-92ff-d8b3b580e133"
+    },
+    {
+      "claim_id": "22c291bd-1fde-4e0b-84ef-a90b5b9cb560",
+      "result_id": "d483170b-b5b9-487d-92ff-d8b3b580e133"
+    },
+    {
+      "claim_id": "b8cb6ae2-d81a-429f-b50e-dfecd60140b9",
+      "result_id": "86749e5f-9e6a-4f3c-8ab5-ed2d97fce52e"
+    },
+    {
+      "claim_id": "179beb79-8e2c-48b1-8142-fd12c72d97da",
+      "result_id": "86749e5f-9e6a-4f3c-8ab5-ed2d97fce52e"
+    },
+    {
+      "claim_id": "af326747-33a4-4ffa-83ff-cc52dcec5ada",
+      "result_id": "86749e5f-9e6a-4f3c-8ab5-ed2d97fce52e"
+    },
+    {
+      "claim_id": "9e638e82-ff26-4f42-b8be-3605cd7595d0",
+      "result_id": "86749e5f-9e6a-4f3c-8ab5-ed2d97fce52e"
+    },
+    {
+      "claim_id": "2d28953d-bd48-42e2-b773-e252ea546317",
+      "result_id": "86749e5f-9e6a-4f3c-8ab5-ed2d97fce52e"
+    },
+    {
+      "claim_id": "4e4f8673-c326-4f13-8792-4debc899c8b4",
+      "result_id": "86749e5f-9e6a-4f3c-8ab5-ed2d97fce52e"
+    },
+    {
+      "claim_id": "8f097380-c8f7-4075-b57e-e015c1dae877",
+      "result_id": "86749e5f-9e6a-4f3c-8ab5-ed2d97fce52e"
+    },
+    {
+      "claim_id": "9e51656a-7faa-4918-8b7c-7a9fe4b75834",
+      "result_id": "86749e5f-9e6a-4f3c-8ab5-ed2d97fce52e"
+    },
+    {
+      "claim_id": "660cd6ad-e03c-452f-b936-8c627e258a67",
+      "result_id": "86749e5f-9e6a-4f3c-8ab5-ed2d97fce52e"
+    },
+    {
+      "claim_id": "93fb9b8b-4e57-4095-b68d-fb70725c74f4",
+      "result_id": "86749e5f-9e6a-4f3c-8ab5-ed2d97fce52e"
+    },
+    {
+      "claim_id": "a8ac9b22-d599-4c44-b191-e4c7e0e9365a",
+      "result_id": "86749e5f-9e6a-4f3c-8ab5-ed2d97fce52e"
+    },
+    {
+      "claim_id": "9e899a02-fc32-4a12-9e47-33a1efdca64c",
+      "result_id": "86749e5f-9e6a-4f3c-8ab5-ed2d97fce52e"
+    },
+    {
+      "claim_id": "9ddff3e2-fad6-4da5-a20d-777f8315537f",
+      "result_id": "86749e5f-9e6a-4f3c-8ab5-ed2d97fce52e"
+    },
+    {
+      "claim_id": "2cbdec96-4832-4984-a825-5aa4016f7587",
+      "result_id": "86749e5f-9e6a-4f3c-8ab5-ed2d97fce52e"
+    },
+    {
+      "claim_id": "f68e31d6-7351-44c9-b746-7d144d17abc8",
+      "result_id": "86749e5f-9e6a-4f3c-8ab5-ed2d97fce52e"
+    },
+    {
+      "claim_id": "9c43f8cd-9e3b-439d-9acb-5956c78fbee3",
+      "result_id": "86749e5f-9e6a-4f3c-8ab5-ed2d97fce52e"
+    },
+    {
+      "claim_id": "bc45c569-d966-40c8-8a92-b85606b2c35c",
+      "result_id": "1b891520-a7b0-45dd-aa93-b5b90cdf6946"
+    },
+    {
+      "claim_id": "eedaf674-21cb-443f-93da-1c4b6e98cf83",
+      "result_id": "1b891520-a7b0-45dd-aa93-b5b90cdf6946"
+    },
+    {
+      "claim_id": "962d833d-00d0-4fc5-9ea3-36a7b7727994",
+      "result_id": "1b891520-a7b0-45dd-aa93-b5b90cdf6946"
+    },
+    {
+      "claim_id": "a5492d98-b0a8-4f92-9f6f-e26b363ff703",
+      "result_id": "1b891520-a7b0-45dd-aa93-b5b90cdf6946"
+    },
+    {
+      "claim_id": "aa4b2a85-8131-41d6-9680-bc382f5835f9",
+      "result_id": "1b891520-a7b0-45dd-aa93-b5b90cdf6946"
+    },
+    {
+      "claim_id": "e921d198-7885-44a1-929c-070114c6c56f",
+      "result_id": "1b891520-a7b0-45dd-aa93-b5b90cdf6946"
+    },
+    {
+      "claim_id": "927b0f73-24d2-4863-a21b-e3fab97c272d",
+      "result_id": "854b5a32-8309-4020-937d-a146d8e4843c"
+    },
+    {
+      "claim_id": "d6a34967-a7b8-4747-a8bf-b5e0d7d712ef",
+      "result_id": "854b5a32-8309-4020-937d-a146d8e4843c"
+    },
+    {
+      "claim_id": "31023b96-df05-4efd-ad8a-04f95e8d05b3",
+      "result_id": "854b5a32-8309-4020-937d-a146d8e4843c"
+    },
+    {
+      "claim_id": "89996e02-ca08-43f2-9b56-5ff82b50f856",
+      "result_id": "854b5a32-8309-4020-937d-a146d8e4843c"
+    }
+  ],
+  "comparisons": []
+}

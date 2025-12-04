@@ -1,0 +1,354 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C5",
+      "C103",
+      "C4",
+      "C17"
+    ],
+    "result": "This work implements DFC for the first time in biological neuronal populations using in vitro MEA platforms, addressing a gap where DFC had only been tested computationally.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C103, C4, and C17 establish the novelty of this work as the first experimental implementation of DFC in biological neuronal systems. The experimental setup (C33-C43) and data collection (C135-C160) provide adequate evidence for this claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C26",
+      "C27",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C66",
+      "C67",
+      "C104",
+      "C107",
+      "C108"
+    ],
+    "result": "Conventional DFC worsens neuronal oscillatory behavior by imposing a new, faster bursting frequency instead of disrupting oscillations, a finding never reported before.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C44, C66, and C104 demonstrate that DFC increases oscillation intensity and frequency, supported by experimental data in Figures 2 and 4. The mechanistic explanation (C45-C47, C107) that DFC induces faster periodicity while the delay remains constant is consistent with the observations. Statistical significance is shown in C66.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C28",
+      "C29",
+      "C38",
+      "C48",
+      "C49",
+      "C65",
+      "C68"
+    ],
+    "result": "Adaptive DFC (aDFC) effectively disrupts neuronal oscillations and reduces synchronization by continuously monitoring and adapting to the ongoing oscillation periodicity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C28, C29, C48, and C68 demonstrate aDFC's effectiveness, supported by experimental data showing significant decreases in oscillation intensity (C65) and synchrony (C68). The adaptive mechanism (C38, C49) is well-described and illustrated in Figures 1-2. Statistical tests confirm significance (C68, Figure 4).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C30",
+      "C62",
+      "C63",
+      "C64",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "The intrinsic firing dynamics of neuronal networks reveal their propensity for neuromodulation, with controllable networks exhibiting intermediate levels of spontaneous firing rate and synchrony.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30, C62, and C63 establish the novel finding that network controllability correlates with baseline dynamics. The classification method using MANOVA (C59-C60) is appropriate, and the data in Figure 3E-F clearly show controllable networks occupy an intermediate region of the feature space. Sample size is adequate (8/14 networks controllable, C60).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C31",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Computational modeling reveals that network controllability is conditioned by excitatory/inhibitory balance and synaptic weight, with controllable networks existing in an intermediate parameter region.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31 and C82 present the main finding, supported by systematic computational simulations (C71-C74) exploring parameter space. The results (C75-C81) show clear transitions between uncontrollable regimes (sparse/chaotic and highly ordered) and a controllable intermediate region, paralleling in vitro findings (C80). Figure 5 provides strong visual evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "In multi-stable networks capable of spontaneous asynchronous states, aDFC significantly increases time spent in asynchronous states compared to DFC and random stimulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While C92 claims aDFC consistently promoted asynchronous states with statistical significance (Figure 7C), the analysis is based on only one network (C91), which is insufficient for generalization. The clustering methodology (C88-C90) is sound, but the limited sample size prevents confident assessment of this result's reproducibility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C10",
+      "C133",
+      "C134"
+    ],
+    "result": "aDFC is a better candidate for therapeutic closed-loop brain stimulation than conventional DFC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10 and C133 are supported by the collective evidence showing aDFC's superior performance in disrupting oscillations (C65, C68) and avoiding the detrimental effects of conventional DFC (C66). However, the comparison to clinical high-frequency stimulation remains unexplored (C128), limiting the strength of therapeutic claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C32",
+      "C109",
+      "C117",
+      "C121",
+      "C122"
+    ],
+    "result": "Theoretical predictions from computational studies regarding DFC efficacy may be misleading due to differences between simplified in silico networks and dynamic biological systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C32 is supported by the discrepancy between computational predictions and experimental results (C117). The speculation about why this occurs (C109, C121, C122) is reasonable given the observed differences, though the exact mechanisms remain uncertain. This represents an important cautionary finding about translating computational results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C110"
+    ],
+    "result": "aDFC significantly increases average firing rate despite similar stimulation frequencies across methods, while random stimulation disrupts oscillations without significantly decreasing synchronization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69 and C110 are supported by statistical analysis (Figure 4D) and controlled experimental design ensuring similar stimulation frequencies (C70, Figure 4\u2014figure supplement 1). This demonstrates that timing, not just frequency, is critical for the differential effects observed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "The in vitro MEA setup provides a powerful testbed for analyzing DFC algorithms with appropriate spatiotemporal resolution and low actuation latency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C35 describe the experimental platform's capabilities, supported by technical specifications (C142: <40ms latency, C138: 10kHz sampling). The platform's suitability is well-established (C23-C25) with appropriate citations. Methods section provides detailed validation of the setup.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "The experimental protocol employed OFF-ON-OFF design with three stimulation algorithms (DFC, aDFC, Poisson) evaluated using synchrony, firing rate, and oscillation intensity metrics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C43 and C51-C54 describe the experimental design and analysis metrics. The protocol is well-defined with appropriate controls (C41: Poisson matched to aDFC frequency). The metrics are clearly defined and appropriate for the research questions. Sample size and replication are adequate (C156-C157: 14 networks, \u22653 trials each).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "In monostable networks, aDFC reduced synchronization but did not achieve stable asynchronous states as predicted by computational studies, possibly due to hardware limitations or network architecture.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C85 and C116-C117 document the discrepancy between experimental results and computational predictions. The proposed explanations (C118-C120) regarding hardware limitations are reasonable, though speculative (C121-C122). This represents an important limitation of the current implementation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C61",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "Network controllability is contingent on stimulation configuration, and the use of a single electrode may restrict the pool of controllable networks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61, C113, and C114 acknowledge an important limitation of the experimental design. The rationale for using single-electrode stimulation (C115) is appropriate given the minimal intervention principle, but this represents a constraint on the generalizability of controllability classifications.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C172",
+      "C173",
+      "C174",
+      "C175",
+      "C176"
+    ],
+    "result": "Networks were classified as controllable or uncontrollable using MANOVA on three metrics, with p<0.05 indicating significantly different responses to stimulation protocols.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C60 and C172-C176 describe the statistical classification method. MANOVA is appropriate for multivariate analysis of the three metrics. The p<0.05 threshold is standard, and the method successfully identified 8/14 controllable networks. The approach is methodologically sound.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160"
+    ],
+    "result": "Detailed methods for cell culture, electrophysiology, software implementation, and experimental protocols are provided.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C135-C160 provide comprehensive methodological details including cell culture parameters, recording specifications, software implementation, and experimental protocols. The methods are sufficiently detailed for replication, with appropriate technical specifications and selection criteria clearly stated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166",
+      "C167",
+      "C168",
+      "C169",
+      "C170",
+      "C171",
+      "C177",
+      "C178"
+    ],
+    "result": "Signal processing and statistical analysis methods are described, including synchrony metrics, oscillation intensity measures, clustering algorithms, and ANOVA tests.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C161-C178 provide detailed descriptions of analysis methods. The synchrony metric (C161-C162) is appropriately cited, oscillation intensity calculation (C163) is standard, and clustering methods (C169-C171) use appropriate model selection criteria. Statistical tests (C176, C178) are appropriate for repeated measures design.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C179",
+      "C180",
+      "C181",
+      "C182",
+      "C183",
+      "C184",
+      "C185"
+    ],
+    "result": "Computational simulations used Izhikevich neuron models with specified parameters and protocols matching in vitro experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C179-C185 describe the computational modeling approach. The use of established Izhikevich models (C179) is appropriate, simulation protocols (C180-C181) are clearly defined, and the implementation matches in vitro conditions (C182). Five repetitions per condition (C73) provide adequate sampling.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "Whether aDFC is more efficient than clinical high-frequency stimulation remains unknown, though aDFC offers advantages in adaptability and on-demand cessation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C128-C129 appropriately acknowledge limitations and potential advantages of aDFC. The suggestion for future improvements (C130-C131) identifies specific parameters that could be made adaptive. This represents honest assessment of the work's scope and future directions.",
+    "result_type": "MINOR"
+  }
+]

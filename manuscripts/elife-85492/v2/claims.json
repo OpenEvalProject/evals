@@ -1,0 +1,2253 @@
+[
+  {
+    "claim_id": "C1",
+    "claim": "Admixture graphs (AGs) are models that specify the ordering of population splits and mixtures, which along with the amount of genetic drift and the proportions of mixture, is the only information needed to predict the patterns of allele frequency correlation among populations.",
+    "claim_type": "EXPLICIT",
+    "source": "models that specify the ordering of population splits and mixtures, which along with the amount of genetic drift and the proportions of mixture, is the only information needed to predict the patterns of allele frequency correlation among populations.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a definitional statement about admixture graphs that draws from established scientific knowledge in population genetics.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C2",
+    "claim": "Most published studies have identified fitting AGs through a manual process driven by prior hypotheses, leaving the majority of alternative models unexplored.",
+    "claim_type": "EXPLICIT",
+    "source": "most published studies have identified fitting AGs through a manual process driven by prior hypotheses, leaving the majority of alternative models unexplored.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference based on the authors' review of the literature and their analysis of published studies.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C3",
+    "claim": "In nearly all cases many alternative models fit nominally or significantly better than the published one.",
+    "claim_type": "EXPLICIT",
+    "source": "in nearly all cases many alternative models fit nominally or significantly better than the published one.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by the data analysis presented in the manuscript, including Table 1 and Figure 2.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C4",
+    "claim": "Strong claims about population history from AGs should only be made when all well-fitting and temporally plausible models share common topological features.",
+    "claim_type": "EXPLICIT",
+    "source": "Our results suggest that strong claims about population history from AGs should only be made when all well-fitting and temporally plausible models share common topological features.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a recommendation based on inference from the data analysis and results presented in the study.",
+    "evidence_type": [
+      "INFERENCE",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C5",
+    "claim": "An admixture graph is a directed acyclic bifurcating graph with two types of edges: those representing genetic drift, and those representing gene flow.",
+    "claim_type": "EXPLICIT",
+    "source": "An admixture graph (abbreviated below as AG), as fit in the widely used software packages ADMIXTOOLS (Patterson et al., 2012) and TreeMix (Pickrell and Pritchard, 2012; Molloy et al., 2021), is a directed acyclic bifurcating graph with two types of edges: those representing genetic drift, and those representing gene flow.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a definitional statement supported by citations to established methods in the field.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C6",
+    "claim": "AGs are fitted to f-statistics.",
+    "claim_type": "EXPLICIT",
+    "source": "AGs are fitted to f-statistics (Reich et al., 2009; Patterson et al., 2012; Peter, 2016; Soraggi and Wiuf, 2019).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This statement is supported by multiple citations to published work.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C7",
+    "claim": "The f4-statistic f4(A, B; C, D) measures the average correlation in allele frequency differences between (1) populations A and B and (2) populations C and D.",
+    "claim_type": "EXPLICIT",
+    "source": "The most general definition is that of the f4-statistic f4(A, B; C, D), which measures the average correlation in allele frequency differences between (1) populations A and B and (2) populations C and D that is, (pA \u2013 pB)\u2217 (pC \u2013 pD), for allele frequencies p, typically averaged over many biallelic single-nucleotide polymorphisms.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a definitional statement attributed to Lipson, 2020a.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C8",
+    "claim": "The f4-statistic is the same as the D-statistic up to a normalization factor.",
+    "claim_type": "EXPLICIT",
+    "source": "This f4-statistic is the same as the D-statistic up to a normalization factor.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about the relationship between two statistics, drawing from established knowledge.",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C9",
+    "claim": "f2(A, B) = f4(A, B; A, B) and f3(A; B, C) = f4(A, B; A, C).",
+    "claim_type": "EXPLICIT",
+    "source": "The other f-statistics (f2 and f3) can be defined as special cases of f4-statistics: f2(A, B) = f4(A, B; A, B) and f3(A; B, C) = f4(A, B; A, C).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a mathematical relationship between different f-statistics, based on established knowledge.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C10",
+    "claim": "f4-Statistics can be written as linear combinations of f3- or f2-statistics, and f3-statistics can be written as linear combinations of f4- and f2-statistics.",
+    "claim_type": "EXPLICIT",
+    "source": "f4-Statistics can be written as linear combinations of f3- or f2-statistics, and f3-statistics can be written as linear combinations of f4- and f2-statistics.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a mathematical relationship based on established knowledge in population genetics.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C11",
+    "claim": "Previously published methods for finding fitting AGs were not well equipped to handle the large range of equally well-fitting models.",
+    "claim_type": "EXPLICIT",
+    "source": "Previously published methods for finding fitting AGs (mainly qpGraph, Patterson et al., 2012 and TreeMix, Pickrell and Pritchard, 2012; Molloy et al., 2021) were not well equipped to handle the large range of equally well-fitting models",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference based on the authors' analysis of existing methods and their limitations.",
+    "evidence_type": [
+      "INFERENCE",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C12",
+    "claim": "Previous methods did not reliably provide information on whether there is a uniquely fitting parsimonious model or alternatively whether there are many models that fit equally well to the limits of statistical resolution.",
+    "claim_type": "EXPLICIT",
+    "source": "(1) They did not reliably provide information on whether there is a uniquely fitting parsimonious model or alternatively whether there are many models that fit equally well to the limits of statistical resolution",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference about the limitations of previous methods based on the authors' analysis.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C13",
+    "claim": "Previous methods did not provide formal goodness-of-fit tests.",
+    "claim_type": "EXPLICIT",
+    "source": "(2) they did not provide formal goodness-of-fit tests",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about the limitations of previous methods based on the authors' analysis.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C14",
+    "claim": "Previous methods did not provide tests for whether the difference between the fits of any two models is statistically significant.",
+    "claim_type": "EXPLICIT",
+    "source": "(3) they did not provide tests for whether the difference between the fits of any two models is statistically significant.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about the limitations of previous methods based on the authors' analysis.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C15",
+    "claim": "Many published AG models have been interpreted as providing more confidence than is merited about the extent to which genetic data allows us to disentangle ancestral relationships.",
+    "claim_type": "EXPLICIT",
+    "source": "As a consequence, and as we demonstrate in what follows, many published AG models have been interpreted as providing more confidence than is merited about the extent to which genetic data allows us to disentangle ancestral relationships.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference based on the data analysis and results presented in the study.",
+    "evidence_type": [
+      "INFERENCE",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C16",
+    "claim": "It is possible in theory to exhaustively test all possible graphs for a given set of populations and pre-specified number of admixture events.",
+    "claim_type": "EXPLICIT",
+    "source": "It is possible in theory to exhaustively test all possible graphs for a given set of populations and pre-specified number of admixture events, as implemented, for example, in the admixturegraph R package (Lepp\u00e4l\u00e4 et al., 2017).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This statement is supported by a citation to an existing implementation.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C17",
+    "claim": "An exhaustive approach is limited to small graphs (typically up to six groups, two admixture events) due to the rapid increase in the number of possible AGs as the number of populations and admixture events grows.",
+    "claim_type": "EXPLICIT",
+    "source": "However, this approach is limited to small graphs (typically up to six groups, two admixture events) due to the rapid increase in the number of possible AGs as the number of populations and admixture events grows.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference about the computational limitations of exhaustive approaches.",
+    "evidence_type": [
+      "INFERENCE",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C18",
+    "claim": "Simple models explored with an exhaustive approach can lead to misleading conclusions about population history because not including additional populations can blind users to additional mixture events that occurred.",
+    "claim_type": "EXPLICIT",
+    "source": "As we show in our discussion of case studies, the simple models explored with an exhaustive approach can lead to misleading conclusions about population history because not including additional populations can blind users to additional mixture events that occurred (and whose existence is revealed by examining data from additional populations).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference based on the case studies presented in the manuscript.",
+    "evidence_type": [
+      "INFERENCE",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C19",
+    "claim": "Models with additional admixture events that are qualitatively different to the best-fitting parsimonious graph and that capture the true history, will sometimes be completely missed when constraining the number of gene flows.",
+    "claim_type": "EXPLICIT",
+    "source": "Furthermore, models with additional admixture events that are qualitatively different to the best-fitting parsimonious graph and that capture the true history, will sometimes be completely missed when constraining the number of gene flows.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference about the limitations of parsimony constraints based on the analysis presented.",
+    "evidence_type": [
+      "INFERENCE",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C20",
+    "claim": "The programs TreeMix, MixMapper, miqoGraph, and AdmixtureBayes all address the problem of how to rapidly explore the vast space of AGs relating a set of populations by applying algorithmic ideas or heuristics.",
+    "claim_type": "EXPLICIT",
+    "source": "Alternatively, the programs TreeMix (Pickrell and Pritchard, 2012; Molloy et al., 2021), MixMapper (Lipson et al., 2013), miqoGraph (Yan et al., 2021), and AdmixtureBayes (Nielsen et al., 2023 preprint) all address the problem of how to rapidly explore the vast space of AGs relating a set of populations by applying algorithmic ideas or heuristics",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This statement is supported by citations to these methods.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C21",
+    "claim": "The program qpGraph in the ADMIXTOOLS package has been the most common computational method used for testing fits of individual AGs.",
+    "claim_type": "EXPLICIT",
+    "source": "The program qpGraph in the ADMIXTOOLS package (Patterson et al., 2012) has been the most common computational method used for testing fits of individual AGs.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference based on the authors' review of the literature and citation to the method.",
+    "evidence_type": [
+      "INFERENCE",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C22",
+    "claim": "Most AGs in the literature have been constructed manually.",
+    "claim_type": "EXPLICIT",
+    "source": "Most AGs in the literature have been constructed manually in this way, often acknowledging the existence of alternative models by presenting plausible models side-by-side, and this approach has been the basis for many claims about population history (Lazaridis et al., 2014; Yang et al., 2017; Posth et al., 2018; Sikora et al., 2019; Shinde et al., 2019; Bergstr\u00f6m et al., 2020; Lipson et al., 2020b; Hajdinjak et al., 2021; Wang et al., 2021; Bergstr\u00f6m et al., 2022).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference based on the authors' review of the literature, supported by multiple citations.",
+    "evidence_type": [
+      "INFERENCE",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C23",
+    "claim": "A strength of the manual approach is that it takes advantage of human judgment and outside knowledge about what graphs best fit the history of the human or animal populations being analyzed.",
+    "claim_type": "EXPLICIT",
+    "source": "A strength of this approach is that it takes advantage of human judgment and outside knowledge about what graphs best fit the history of the human or animal populations being analyzed.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference about the advantages of manual approaches.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C24",
+    "claim": "External information is powerful as it can incorporate non-genetic evidence such as geographic plausibility and temporal ordering of populations or linguistic similarity, or other genetic data.",
+    "claim_type": "EXPLICIT",
+    "source": "This external information is powerful as it can incorporate non-genetic evidence such as geographic plausibility and temporal ordering of populations or linguistic similarity, or other genetic data such as estimates of population split times, or shared Y chromosomes, or rejection of proposed scenarios based on joint analysis of much larger numbers of populations than can reasonably be analyzed within a single AG.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference about the value of incorporating external information.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C25",
+    "claim": "By relying on intuition, following a manual approach has the potential to validate the biases users have as to what types of histories are most plausible.",
+    "claim_type": "EXPLICIT",
+    "source": "These methods' strength is also their weakness: by relying on intuition, following a manual approach has the potential to validate the biases users have as to what types of histories are most plausible (these may be the only types of histories that will be carefully explored).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference about the limitations of manual approaches.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C26",
+    "claim": "Manual approaches can blind users to surprises: to profoundly different topologies that may correspond more closely to the true history.",
+    "claim_type": "EXPLICIT",
+    "source": "This can blind users to surprises: to profoundly different topologies that may correspond more closely to the true history, and we discuss examples of this in the Results section.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference about the limitations of manual approaches, with reference to data presented in the Results.",
+    "evidence_type": [
+      "INFERENCE",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C27",
+    "claim": "The findGraphs method combines the advantages of automated and manual topology exploration by allowing users to encode various sources of information as constraints on the space of AGs.",
+    "claim_type": "EXPLICIT",
+    "source": "The findGraphs method combines the advantages of automated and manual topology exploration by allowing users to encode various sources of information as constraints on the space of AGs, which is then explored automatically.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of the new method developed in this study.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C28",
+    "claim": "The main innovations in findGraphs are not computational, but instead conceptual.",
+    "claim_type": "EXPLICIT",
+    "source": "However, the main innovations in findGraphs are not computational, but instead conceptual.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about the nature of the innovations in the new method.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C29",
+    "claim": "findGraphs is used for exploring AG spaces and assessing if any reliable information on population history can be extracted from a given AG space.",
+    "claim_type": "EXPLICIT",
+    "source": "Instead of finding one or a few AGs fitting the data well, we use findGraphs for exploring AG spaces and assessing if any reliable information on population history can be extracted from a given AG space (defined by a population set and parsimony constraints) in the first place.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of how the new method is used in this study.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C30",
+    "claim": "It has been difficult to quantify the absolute goodness of fit of a model to date.",
+    "claim_type": "EXPLICIT",
+    "source": "Regardless of the approach used to search through the space of possibly fitting AGs, a challenge in the effort to find a uniquely well-fitting AG (or group of topologically similar AGs) is that it has been difficult to quantify the absolute goodness of fit of a model to date.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference about the challenges in the field.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C31",
+    "claim": "Performance gains relative to the original implementation of qpGraph allow obtaining bootstrap confidence intervals and p-values for estimated parameters of single models, as well as for the difference in fit quality of two models.",
+    "claim_type": "EXPLICIT",
+    "source": "Performance gains relative to the original implementation of qpGraph allow us to address this problem by obtaining bootstrap confidence intervals and p-values for estimated parameters of single models, as well as for the difference in fit quality of two models (see Appendix 1, Sections 1.B.3 and 2.E).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of the methodological advances in this study, with reference to the Appendix.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C32",
+    "claim": "Published approaches to comparing the fits of AG models based on Akaike information criterion (AIC) or Bayesian information criterion (BIC) have the problem that it is often not clear what the effective number of degrees of freedom is in the two models being compared.",
+    "claim_type": "EXPLICIT",
+    "source": "Published approaches to comparing the fits of AG models based on Akaike information criterion (AIC) or Bayesian information criterion (BIC), see Flegontov et al., 2019; Shinde et al., 2019 have the problem that it is often not clear what the effective number of degrees of freedom is in the two models being compared since in the case of AGs it depends not only on the number of graph edges, but also on graph topology.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference about the limitations of previous approaches, supported by citations.",
+    "evidence_type": [
+      "INFERENCE",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C33",
+    "claim": "The methods for automated graph topology inference and model comparison relying on bootstrap resampling are implemented in ADMIXTOOLS 2.",
+    "claim_type": "EXPLICIT",
+    "source": "The methods for automated graph topology inference and model comparison relying on bootstrap resampling are implemented in ADMIXTOOLS 2, a comprehensive platform for learning about population history from f-statistics.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of the software implementation.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C34",
+    "claim": "ADMIXTOOLS 2 exhibits large speedups relative to previously published platforms for f-statistic analysis.",
+    "claim_type": "EXPLICIT",
+    "source": "For all computations, ADMIXTOOLS 2 exhibits large speedups relative to previously published platforms for f-statistic analysis (e.g., popstats and ADMIXTOOLS version 6.0 which we call 'Classic ADMIXTOOLS' in what follows to distinguish it from updated ADMIXTOOLS version 7.0.2 which implements some of the speedup ideas also implemented in ADMIXTOOLS 2).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a claim about the performance of the new software.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C35",
+    "claim": "The speedup is achieved by deploying a series of algorithmic improvements, most notably storage of precomputed f-statistics in random access memory.",
+    "claim_type": "EXPLICIT",
+    "source": "This is achieved by deploying a series of algorithmic improvements, most notably storage of precomputed f-statistics in random access memory, which avoids having to rely on reading in extremely large genotype matrices to perform most computations.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of the technical implementation.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C36",
+    "claim": "ADMIXTOOLS 2 provides a solution to the question of which parameters of an AG are identifiable in the limit of infinite data.",
+    "claim_type": "EXPLICIT",
+    "source": "In addition to the new algorithmic ideas allowing efficient searching through the space of AGs and comparing the fits of two AGs, ADMIXTOOLS 2 also provides a solution to the question of which parameters of an AG are identifiable in the limit of infinite data.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of a feature of the new software.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C37",
+    "claim": "For the great majority of simulated datasets, even a shallow exploration of the topology space with findGraph uncovers AGs that fit nominally better than the true topology.",
+    "claim_type": "EXPLICIT",
+    "source": "It is clear that for the great majority of simulated datasets, even a shallow exploration of the topology space with findGraph (100 independent runs) uncovers AGs that fit nominally better than the true topology (Figure 1a and d) and are topologically diverse (see Figure 1e for examples).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This claim is supported by data from simulations shown in Figure 1.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C38",
+    "claim": "When allowing for n admixture events, at least one AG fitting significantly better than the true one was found for 60% of simulated datasets.",
+    "claim_type": "EXPLICIT",
+    "source": "When allowing for n admixture events, at least one AG fitting significantly better than the true one was found for 60% of simulated datasets.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by data from simulations.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C39",
+    "claim": "When n + 1 admixture events were allowed, at least one AG fitting significantly better than the true one was found for 100% of simulated datasets.",
+    "claim_type": "EXPLICIT",
+    "source": "When n + 1 admixture events were allowed, this grew to 100% (all 80 datasets).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by data from simulations.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C40",
+    "claim": "Some admixture events are indistinguishable with f-statistics; for instance, successive gene flows between two lineages, with no other edges branching off between the gene flows.",
+    "claim_type": "EXPLICIT",
+    "source": "It should be noted that some admixture events are indistinguishable with f-statistics; for instance, successive gene flows between two lineages, with no other edges branching off between the gene flows.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about the limitations of f-statistics based on established knowledge.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C41",
+    "claim": "If such gene flows were included in the random topologies simulated, AGs with n events were overly complex for representing the true history.",
+    "claim_type": "EXPLICIT",
+    "source": "If such gene flows were included in the random topologies we simulated, AGs with n events were overly complex for representing the true history.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference about the simulated data.",
+    "evidence_type": [
+      "INFERENCE",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C42",
+    "claim": "If we are dealing with random histories, choosing an optimal complexity class for topology search is not straightforward.",
+    "claim_type": "EXPLICIT",
+    "source": "Thus, if we are dealing with random histories, choosing an optimal complexity class for topology search is not straightforward.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference based on the simulation results.",
+    "evidence_type": [
+      "INFERENCE",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C43",
+    "claim": "Even for histories including eight or nine groups, an outgroup, and four or five pulse-like admixture events, perfect diploid data, and groups as differentiated as Neanderthals and anatomically modern humans, models fitting the data as well as or better than the true one are common.",
+    "claim_type": "EXPLICIT",
+    "source": "Even for histories including eight or nine groups, an outgroup, and four or five pulse-like admixture events, perfect diploid data, and groups as differentiated as Neanderthals and anatomically modern humans\u2014a complexity class that is simpler than many models fitted to real genetic data in published papers\u2014models fitting the data as well as or better than the true one are common",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference based on the simulation results.",
+    "evidence_type": [
+      "INFERENCE",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C44",
+    "claim": "The topological diversity of models fitting as well as or better than the true one is in most cases so high that it precludes consensus inference of topology by analysis of multiple topologies.",
+    "claim_type": "EXPLICIT",
+    "source": "and their topological diversity is in most cases so high that it precludes consensus inference of topology by analysis of multiple topologies.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference based on the simulation results.",
+    "evidence_type": [
+      "INFERENCE",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C45",
+    "claim": "The probability of finding a 'wrong' model that fits better than the true one grows with increasing graph complexity.",
+    "claim_type": "EXPLICIT",
+    "source": "As we demonstrate on another set of simulated data in Appendix 1 (Section 1.B.1), the probability of finding a 'wrong' model that fits better than the true one grows with increasing graph complexity, and that effect is reproduced with both findGraphs and TreeMix (Appendix 1\u2014figure 2).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by data presented in Appendix 1.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C46",
+    "claim": "For 19 out of 22 published graphs examined, at least one, but usually many, graphs of the same complexity with an LL score that was nominally better than that of the published graph were found.",
+    "claim_type": "EXPLICIT",
+    "source": "For 19 out of 22 published graphs we examined, we were able to find at least one, but usually many, graphs of the same complexity (number of groups and admixture events), with an LL score that was nominally better than that of the published graph (see results for 11 selected graphs in Table 1 and full results for all 22 graphs in Supplementary file 1).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This claim is supported by data presented in Table 1 and Supplementary file 1.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C47",
+    "claim": "In nearly all cases (except for the Lazaridis et al. six-population graph, Shinde et al. graph with eight populations and three admixture events, and the Librado et al., 2021. graph with four admixture events), many additional graphs that fit the data not significantly worse than the published ones were identified.",
+    "claim_type": "EXPLICIT",
+    "source": "In nearly all cases (except for the Lazaridis et al. six-population graph, Shinde et al. graph with eight populations and three admixture events, and the Librado et al., 2021. graph with four admixture events), we also identified many additional graphs that fit the data not significantly worse than the published ones.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by the data analysis presented in the manuscript.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C48",
+    "claim": "In every example, some of these graphs have topologies that are qualitatively different in important ways from those of the published graphs.",
+    "claim_type": "EXPLICIT",
+    "source": "In every example, some of these graphs have topologies that are qualitatively different in important ways from those of the published graphs.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by the data analysis presented in the manuscript.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C49",
+    "claim": "Features such as which populations are admixed or unadmixed, direction of gene flow, or the order of split events, if not constrained a priori, are generally not the same between alternative fitting models for the same populations.",
+    "claim_type": "EXPLICIT",
+    "source": "Features such as which populations are admixed or unadmixed, direction of gene flow, or the order of split events, if not constrained a priori, are generally not the same between alternative fitting models for the same populations.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference based on the data analysis.",
+    "evidence_type": [
+      "INFERENCE",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C50",
+    "claim": "For all of the publications except one (Shinde et al., 2019), there are alternative equally-well-or-better-fitting graphs that differ in qualitatively important ways with regard to the implications about history, are temporally plausible, and not obviously wrong based on other lines of evidence.",
+    "claim_type": "EXPLICIT",
+    "source": "While some of these graphs can be rejected since their topologies appear highly unlikely because of non-genetic or unrelated genetic evidence, for all of the publications except one (Shinde et al., 2019), there are alternative equally-well-or-better-fitting graphs we identified and examined manually that differ in qualitatively important ways with regard to the implications about history, are temporally plausible (for instance, very ancient populations do not receive gene flows from sources closely related to much less ancient groups), and not obviously wrong based on other lines of evidence.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by the data analysis presented in the manuscript.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C51",
+    "claim": "Complex AG models, even with a very good fit to the data, often differ in important ways from true population histories.",
+    "claim_type": "EXPLICIT",
+    "source": "These findings and the results on simulated AGs suggest that complex AG models, even with a very good fit to the data, often differ in important ways from true population histories.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference based on the simulation results and the re-analysis of published data.",
+    "evidence_type": [
+      "INFERENCE",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C52",
+    "claim": "A best-fitting newly found graph for dogs fits the data nominally better than the published one (two-tailed empirical p-value = 0.332).",
+    "claim_type": "EXPLICIT",
+    "source": "A best-fitting newly found graph fits the data nominally better than the published one (two-tailed empirical p-value = 0.332)",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by statistical analysis of the Bergstr\u00f6m et al., 2020 data.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C54",
+    "claim": "In the new seven-population dog model, both American and Siberian dog lineages represent a mixture between groups related to the Asian and East European dog lineages.",
+    "claim_type": "EXPLICIT",
+    "source": "In this new seven-population model (Figure 3a), both American and Siberian dog lineages represent a mixture between groups related to the Asian and East European dog lineages",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a description of the alternative model found in the analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C55",
+    "claim": "Robust genetic results suggest that in the time horizon investigated in the original publication (after ca. 10,900 years ago) nearly all Siberian human populations were admixed between groups most closely related to Europeans and East Asians.",
+    "claim_type": "EXPLICIT",
+    "source": "and robust genetic results suggest that in the time horizon investigated in the original publication (after ca. 10,900 years ago) nearly all Siberian (Jeong et al., 2019; Sikora et al., 2019) and all American (Raghavan et al., 2014; Raghavan et al., 2015; Moreno-Mayar et al., 2018) human populations were admixed between groups most closely related to Europeans and East Asians.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This statement is supported by citations to published studies.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C56",
+    "claim": "All American human populations in the time horizon after ca. 10,900 years ago were admixed between groups most closely related to Europeans and East Asians.",
+    "claim_type": "EXPLICIT",
+    "source": "and robust genetic results suggest that in the time horizon investigated in the original publication (after ca. 10,900 years ago) nearly all Siberian (Jeong et al., 2019; Sikora et al., 2019) and all American (Raghavan et al., 2014; Raghavan et al., 2015; Moreno-Mayar et al., 2018) human populations were admixed between groups most closely related to Europeans and East Asians.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This statement is supported by citations to published studies.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C57",
+    "claim": "According to the new dog model, East Mediterranean dogs are modeled as a mixture of a basal branch (splitting deeper than the divergence of the Asian and European dogs) and West European dogs.",
+    "claim_type": "EXPLICIT",
+    "source": "According to this model, East Mediterranean dogs are modeled as a mixture of a basal branch (splitting deeper than the divergence of the Asian and European dogs) and West European dogs",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of the alternative model found in the analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C58",
+    "claim": "Current models of genetic history of West Asian human populations model them as a mixture of 'basal Eurasians' and West European hunter\u2013gatherers.",
+    "claim_type": "EXPLICIT",
+    "source": "again in agreement with current models of genetic history of West Asian human populations who are modeled as a mixture of 'basal Eurasians' and West European hunter\u2013gatherers (Lazaridis et al., 2016; Lipson et al., 2017).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This statement is supported by citations to published studies.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C59",
+    "claim": "The Bergstr\u00f6m et al., 2020 AG search was exhaustive under the parsimony constraint (no more than two admixture events for six populations).",
+    "claim_type": "EXPLICIT",
+    "source": "To explain why the original paper on the population history of dogs missed the model that findGraphs identified, we observe that the Bergstr\u00f6m et al., 2020 AG search was exhaustive under the parsimony constraint (no more than two admixture events for six populations, with the seventh group added at a later stage without an exhaustive topology search)",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of the methodology used in the original study.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C60",
+    "claim": "The Bergstr\u00f6m et al., 2020 AG search missed the potentially true topology including three admixture events for six populations.",
+    "claim_type": "EXPLICIT",
+    "source": "and thus missed the potentially true topology including three admixture events for these six populations.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference based on the re-analysis.",
+    "evidence_type": [
+      "INFERENCE",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C61",
+    "claim": "Even in a relatively low complexity context (seven groups and three admixture events) applying manual approaches for finding optimal models is risky.",
+    "claim_type": "EXPLICIT",
+    "source": "This case study also illustrates that even in a relatively low complexity context (seven groups and three admixture events) applying manual approaches for finding optimal models is risky.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference based on the case study.",
+    "evidence_type": [
+      "INFERENCE",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C62",
+    "claim": "When any new group is added to the model, it may introduce crucial new constraints into the system, and re-exploring the whole graph space in an automated way is necessary to avoid missing the true model.",
+    "claim_type": "EXPLICIT",
+    "source": "When any new group such as an Early Neolithic dog from Germany is added to the model, it may introduce crucial new constraints into the system, and re-exploring the whole graph space in an automated way is necessary to avoid missing the true model.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference based on the case study.",
+    "evidence_type": [
+      "INFERENCE",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C63",
+    "claim": "The graph in Figure 3 of Lazaridis et al., 2014 suggested that present-day Europeans are derived from at least three populations that are very much differentiated genetically: West European hunter\u2013gatherers (WHG), early European farmers (EEF), and Siberian hunter\u2013gatherers from the same lineage as that of the Mal'ta boy who lived about 24,000 years ago (MA1).",
+    "claim_type": "EXPLICIT",
+    "source": "The graph in Figure 3 (in Lazaridis et al., 2014) suggested that present-day Europeans are derived from at least three populations that are very much differentiated genetically: West European hunter\u2013gatherers (WHG), early European farmers (EEF), and Siberian hunter\u2013gatherers from the same lineage as that of the Mal'ta boy who lived about 24,000 years ago (MA1).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of the findings from the published study.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C64",
+    "claim": "For seven-population graphs with four admixture events, 40 out of 306 distinct graphs with a score better than that of the published graph were found.",
+    "claim_type": "EXPLICIT",
+    "source": "For seven-population graphs with four admixture events, we found 40 out of 306 distinct graphs with a score better than that of the published graph (10 of those graphs are shown in Figure 3\u2014source data 3).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This claim is supported by the data analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C65",
+    "claim": "The best-fitting newly found model and two other models fit the data significantly better than the published model for the Lazaridis et al., 2014 study.",
+    "claim_type": "EXPLICIT",
+    "source": "The best-fitting newly found model and two other models fit the data significantly better than the published model (Supplementary file 1)",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by the data analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C66",
+    "claim": "The topology of the best-fitting newly found model for the Lazaridis et al., 2014 study is qualitatively very similar to that of the published graph.",
+    "claim_type": "EXPLICIT",
+    "source": "but their topology is qualitatively very similar to that of the published graph (Figure 3\u2014source data 3).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is an inference based on comparison of the models.",
+    "evidence_type": [
+      "INFERENCE",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C67",
+    "claim": "In the best-fitting newly found model for the Lazaridis et al., 2014 study, French and Karitiana share some drift to the exclusion of MA1.",
+    "claim_type": "EXPLICIT",
+    "source": "In the best-fitting newly found model, French and Karitiana share some drift to the exclusion of MA1",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of the alternative model.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C68",
+    "claim": "In the published Lazaridis et al., 2014 model, the source of MA1-related ancestry in French is closer to MA1 than to Karitiana.",
+    "claim_type": "EXPLICIT",
+    "source": "while in the published model the source of MA1-related ancestry in French is closer to MA1 than to Karitiana.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of the published model.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C69",
+    "claim": "Not all of the 40 alternative graphs that fit nominally or significantly better than the published one for Lazaridis et al., 2014 are consistent with the conclusion that modern European populations are admixed between three different ancestral populations.",
+    "claim_type": "EXPLICIT",
+    "source": "It is important to point out that not all of the 40 alternative graphs that fit nominally or significantly better than the published one are consistent with the conclusion that modern European populations are admixed between three different ancestral populations (Figure 3\u2014source data 3).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is an inference based on examination of the alternative models.",
+    "evidence_type": [
+      "INFERENCE",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C70",
+    "claim": "Other lines of evidence make it clear that LBK Stuttgart is a mixture of Anatolian farmer- and WHG Loschbour-related ancestry.",
+    "claim_type": "EXPLICIT",
+    "source": "Of course, other lines of evidence make it clear that LBK Stuttgart is a mixture of Anatolian farmer- and WHG Loschbour-related ancestry (e.g., Lazaridis et al., 2016; Lipson et al., 2017)",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This statement is supported by citations to published studies.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C71",
+    "claim": "A large group of newly found models (247 graphs) for Lazaridis et al., 2014 fits not significantly worse than the published one.",
+    "claim_type": "EXPLICIT",
+    "source": "We also note that a large group of newly found models (247 graphs) fits not significantly worse than the published one (Supplementary file 1), and those are topologically diverse.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by the data analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C72",
+    "claim": "The AG method on the Lazaridis et al., 2014 dataset cannot be used to prove that the published model is the only one fitting the data.",
+    "claim_type": "EXPLICIT",
+    "source": "Thus, strictly speaking, the AG method on the given dataset cannot be used to prove that the published model is the only one fitting the data.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference based on the data analysis.",
+    "evidence_type": [
+      "INFERENCE",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C73",
+    "claim": "The skeleton AG in the Shinde et al., 2019 study was constructed manually.",
+    "claim_type": "EXPLICIT",
+    "source": "The skeleton AG in the original study (Shinde et al., 2019) was constructed manually",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of the methodology in the original study.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C74",
+    "claim": "In the Shinde et al., 2019 study, all possible branching orders (105) within the five-population Iranian farmer/herder-related clade were tested.",
+    "claim_type": "EXPLICIT",
+    "source": "and subsequently all possible branching orders (105) within the five-population Iranian farmer/herder-related clade were tested.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of the methodology in the original study.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C75",
+    "claim": "The finding that the predominant ancestry component of the Indus Periphery group was the most basal branch in the Iranian farmer clade was a prominent claim of the Shinde et al., 2019 study.",
+    "claim_type": "EXPLICIT",
+    "source": "The finding that the predominant ancestry component of the Indus Periphery group was the most basal branch in the Iranian farmer clade was a prominent claim of the original study (Shinde et al., 2019).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of a claim from the original study.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C76",
+    "claim": "The Hajji Firuz farmers at ~8000 years ago are among the earliest people living on the Iranian plateau known to have grown West Asian crops.",
+    "claim_type": "EXPLICIT",
+    "source": "since it implies that the Iranian-related ancestry in the Indus Valley Civilization genetic grouping (which is the same group as Indus Periphery or IP) split from the Iranian-related ancestry in the first Iranian plateau farmers before the date of the Hajji Firuz farmers, who at ~8000 years ago are among the earliest people living on the Iranian plateau known to have grown West Asian crops.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement based on archaeological knowledge.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C77",
+    "claim": "Beginning around the time of the Hajji Firuz farmers, both West Asian domesticated plants such as wheat and barley, and Anatolian farmer-related admixture, began spreading eastward across the Iranian plateau.",
+    "claim_type": "EXPLICIT",
+    "source": "The ancient DNA record combined with radiocarbon dating evidence suggests that beginning around the time of the Hajji Firuz farmers, both West Asian domesticated plants such as wheat and barley, and Anatolian farmer-related admixture, began spreading eastward across the Iranian plateau.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement based on archaeological and genetic evidence.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C78",
+    "claim": "Among 4,000 resulting graphs (one from each findGraphs run) for the Shinde et al., 2019 study, 144 were distinct topologically, and the published model was recovered in 13 runs of 4,000.",
+    "claim_type": "EXPLICIT",
+    "source": "Among 4,000 resulting graphs (one from each findGraphs run), 144 were distinct topologically, and the published model was recovered in 13 runs of 4,000 (Supplementary file 1).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by the data analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C79",
+    "claim": "Only four distinct topologies fitting nominally better than the published one for Shinde et al., 2019 were found.",
+    "claim_type": "EXPLICIT",
+    "source": "Only four distinct topologies fitting nominally better than the published one were found, and those had LL scores almost identical to that of the published AG.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by the data analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C80",
+    "claim": "The four alternative models for Shinde et al., 2019 shared all topologically important features of the published model.",
+    "claim_type": "EXPLICIT",
+    "source": "These four alternative models (Figure 3\u2014source data 5b) shared all topologically important features of the published model (Figure 3\u2014source data 5).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is an inference based on comparison of the models.",
+    "evidence_type": [
+      "INFERENCE",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C81",
+    "claim": "The parsimony constraint allowing only three admixture events precluded correct modeling of basal Eurasian ancestry shared by all West Asian groups.",
+    "claim_type": "EXPLICIT",
+    "source": "Although absolute fits of the best models found are good (WR = 2.5 SE), the parsimony constraint allowing only three admixture events precluded correct modeling of basal Eurasian ancestry shared by all West Asian groups (Lazaridis et al., 2016)",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference based on comparison with other published work.",
+    "evidence_type": [
+      "INFERENCE",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C82",
+    "claim": "A more complex 3-component admixture model was proposed for the Indus Periphery group elsewhere.",
+    "claim_type": "EXPLICIT",
+    "source": "or of the Indus Periphery group itself, for which a more complex 3-component admixture model was proposed elsewhere (Narasimhan et al., 2019).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This statement is supported by a citation to published work.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C83",
+    "claim": "The simplest fitting qpAdm model for the IP group includes four ancestry sources, not two (Indus Periphery = Ganj Dareh Neolithic + Onge (ASI) + WSHG + Anatolia Neolithic).",
+    "claim_type": "EXPLICIT",
+    "source": "Our qpAdm results (Supplementary files 5 and 6, Appendix 2) show that the parsimony assumption that was made when constructing the AG analysis in Shinde et al., 2019 is contradicted by f-statistic evidence since the simplest fitting qpAdm model for the IP group includes four ancestry sources, not two (Indus Periphery = Ganj Dareh Neolithic + Onge (ASI) + WSHG + Anatolia Neolithic)",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by qpAdm analysis presented in the manuscript.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C84",
+    "claim": "Among 4,000 resulting graphs (one from each findGraphs run) for Shinde et al., 2019 with four admixture events, 443 were distinct topologically, and 270 had WRs between 2 and 3 SE.",
+    "claim_type": "EXPLICIT",
+    "source": "Among 4,000 resulting graphs (one from each findGraphs run), 443 were distinct topologically, and 270 had WRs between 2 and 3 SE, that is, fitted the data well.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by the data analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C85",
+    "claim": "Dozens of topologies with very different models for the Indus Periphery group fit the data approximately equally well, suggesting that there is no useful signal in this type of AG analysis when the parsimony constraint is relaxed.",
+    "claim_type": "EXPLICIT",
+    "source": "Besides these four illustrative graphs, dozens of topologies with very different models for the Indus Periphery group fit the data approximately equally well, suggesting that there is no useful signal in this type of AG analysis when the parsimony constraint is relaxed",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference based on the data analysis.",
+    "evidence_type": [
+      "INFERENCE",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C86",
+    "claim": "At least with regard to the AG analysis, a key historical conclusion of the Shinde et al., 2019 study depends on the parsimony assumption.",
+    "claim_type": "EXPLICIT",
+    "source": "These results show that at least with regard to the AG analysis, a key historical conclusion of the study (that the predominant genetic component in the Indus Periphery lineage diverged from the Iranian clade prior to the date of the Ganj Dareh Neolithic group at ca. 10 kya and thus prior to the arrival of West Asian crops and Anatolian genetics in Iran) depends on the parsimony assumption",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference based on the data analysis.",
+    "evidence_type": [
+      "INFERENCE",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C87",
+    "claim": "The preference for three admixture events instead of four in the Shinde et al., 2019 study is hard to justify based on archaeological or other arguments.",
+    "claim_type": "EXPLICIT",
+    "source": "but the preference for three admixture events instead of four is hard to justify based on archaeological or other arguments.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference based on the analysis.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C88",
+    "claim": "The AG published by Librado et al., 2021 was inferred automatically using OrientAGraph.",
+    "claim_type": "EXPLICIT",
+    "source": "In contrast to the other studies revisited in our work, the AG published by Librado et al., 2021 was inferred automatically using OrientAGraph.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of the methodology in the original study.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C89",
+    "claim": "The topologies published in Librado et al., 2021 were not evaluated for statistical goodness-of-fit.",
+    "claim_type": "EXPLICIT",
+    "source": "Unlike all the other AGs we re-evaluate in this study whose fits to the data were evaluated in the published studies using qpGraph, the topologies published in Librado et al., 2021 were not evaluated for statistical goodness-of-fit",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of the methodology in the original study.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C90",
+    "claim": "The topologies published in Librado et al., 2021 fit the f-statistic data so poorly that even simple statistics show they cannot be correct.",
+    "claim_type": "EXPLICIT",
+    "source": "and in fact fit the f-statistic data so poorly that even simple statistics show they cannot be correct (Figure 3b, Figure 3\u2014source data 7a, c, e,, Supplementary file 1).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This claim is supported by the data analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C91",
+    "claim": "The WR of the published Librado et al., 2021 model with three admixture events is 23.9 SE.",
+    "claim_type": "EXPLICIT",
+    "source": "In particular, we found that WR of the published model with three admixture events is 23.9 SE (Figure 3\u2014source data 7a).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This claim is supported by the data analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C92",
+    "claim": "Temporally plausible models with even a modest fit (WR between 3 and 4 SE) for the Librado et al., 2021 data were encountered only among models with eight and nine admixture events.",
+    "claim_type": "EXPLICIT",
+    "source": "Temporally plausible models with even a modest fit (WR between 3 and 4 SE) were encountered only among models with eight and nine admixture events (Figure 3\u2014source data 7j\u2013r).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This claim is supported by the data analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C93",
+    "claim": "The simplest temporally plausible and best-fitting (WR = 3.4 SE) model found for Librado et al., 2021 supports inferences 2 and 4, and is incompatible with inferences 1, 3, and 5.",
+    "claim_type": "EXPLICIT",
+    "source": "The simplest temporally plausible and best-fitting (WR = 3.4 SE) model we found (eight admixture events, see Figure 3b and the first model in Figure 3\u2014source data 7j) supports inferences 2 and 4, and is incompatible with inferences 1, 3, and 5 (Table 2).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This claim is supported by the data analysis and comparison with the original study's inferences.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C94",
+    "claim": "13 of 16 temporally plausible and fitting models for Librado et al., 2021 are inconsistent with the suggestion that there was no gene flow connecting the CWC group and the cluster maximized in the Western steppe (DOM2, C-PONT, and TURG).",
+    "claim_type": "EXPLICIT",
+    "source": "For example, 13 of these 16 models are inconsistent with the suggestion that there was no gene flow connecting the CWC group and the cluster maximized in the Western steppe (DOM2, C-PONT, and TURG) (Figure 3\u2014source data 7j\u2013r).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This claim is supported by the data analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C95",
+    "claim": "In the eight-admixture-event best-fitting AG for Librado et al., 2021, CWC derives appreciable ancestry from the early domestic horse lineage (DOM2) associated with the Sintashta culture to the exclusion of the more distant Yamnaya-associated TURG and C_PONT horses.",
+    "claim_type": "EXPLICIT",
+    "source": "In the eight-admixture-event best-fitting AG (Figure 3b, the first model in Figure 3\u2014source data 7j), CWC actually derives appreciable ancestry from the early domestic horse lineage (DOM2) associated with the Sintashta culture to the exclusion of the more distant Yamnaya-associated TURG and C_PONT horses.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a description of the alternative model found in the analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C96",
+    "claim": "Individuals associated with the CWC received admixture from Steppe pastoralists at ~75% for humans, versus ~20% in horses.",
+    "claim_type": "EXPLICIT",
+    "source": "This scenario presents a parallel to the one observed in humans, with individuals associated with the CWC receiving admixture from Steppe pastoralists albeit in different proportions: ~75% for humans, versus ~20% in horses.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a comparison between the alternative model and known human history.",
+    "evidence_type": [
+      "INFERENCE",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C97",
+    "claim": "Only 8 of 16 temporally plausible and fitting models for Librado et al., 2021 support the conclusion that the Tarpan is a mixture of a DOM2-related and a CWC-related lineage.",
+    "claim_type": "EXPLICIT",
+    "source": "Only 8 of 16 temporally plausible and fitting models (Figure 3\u2014source data 7j\u2013r) support the conclusion by Librado et al. that the Tarpan is a mixture of a DOM2-related and a CWC-related lineage.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This claim is supported by the data analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C98",
+    "claim": "The AG inferred by Hajdinjak et al. was constructed manually and incorporated 11 groups and 8 admixture events.",
+    "claim_type": "EXPLICIT",
+    "source": "The AG inferred by Hajdinjak et al. was constructed manually and incorporated 11 groups and 8 admixture events (Figure 2d in the original study).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of the methodology in the original study.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C99",
+    "claim": "Most (71.4%) models found with findGraphs for Hajdinjak et al. fit nominally better, and 15.7% fit significantly better than the published model.",
+    "claim_type": "EXPLICIT",
+    "source": "Most (71.4%) models found with findGraphs fit nominally better, and 15.7% fit significantly better than the published model (Table 1, Supplementary file 1, Figure 2)",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This claim is supported by the data analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C100",
+    "claim": "The published Hajdinjak et al. model has a poor absolute fit on this set of sites and groups (WR = 4.8 SE).",
+    "claim_type": "EXPLICIT",
+    "source": "which has a poor absolute fit on this set of sites and groups (WR = 4.8 SE, Figure 3c, Figure 3\u2014source data 8).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This claim is supported by the data analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C101",
+    "claim": "Models in the Hajdinjak et al. complexity class are overfitted.",
+    "claim_type": "EXPLICIT",
+    "source": "The statistics described above and the fact that LL scores on all sites lie outside of the LL distribution on resampled datasets (Figure 2) suggest that models in this complexity class are overfitted",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is an inference based on the statistical analysis.",
+    "evidence_type": [
+      "INFERENCE",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C102",
+    "claim": "Overfitting arises naturally during manual graph construction as performed in many studies.",
+    "claim_type": "EXPLICIT",
+    "source": "Overfitting arises naturally during manual graph construction as performed in many studies (not only in Hajdinjak et al., 2021, but also in Fu et al., 2016; Skoglund et al., 2016; Yang et al., 2017; Posth et al., 2018; McColl et al., 2018; Moreno-Mayar et al., 2018; Tambets et al., 2018; van de Loosdrecht et al., 2018; Flegontov et al., 2019; Sikora et al., 2019; Wang et al., 2019; Lipson et al., 2020b; Shinde et al., 2019; Yang et al., 2020; Wang et al., 2021).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference based on analysis of multiple studies.",
+    "evidence_type": [
+      "INFERENCE",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C103",
+    "claim": "Of the 50 topologies inspected for Hajdinjak et al., 32 were considered temporally plausible.",
+    "claim_type": "EXPLICIT",
+    "source": "Of the 50 topologies inspected, 32 were considered temporally plausible.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of the analysis process.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C104",
+    "claim": "Of the temporally plausible topologies for Hajdinjak et al., none supported the finding of gene flows from the Bacho Kiro IUP lineage specifically into all three of the Ust'-Ishim, Tianyuan, and GoyetQ116-1 lineages.",
+    "claim_type": "EXPLICIT",
+    "source": "Of those topologies, none supported the finding of gene flows from the Bacho Kiro IUP lineage specifically into all three of the Ust'-Ishim, Tianyuan, and GoyetQ116-1 lineages.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by the data analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C105",
+    "claim": "A central finding of Hajdinjak et al. is that the Bacho Kiro IUP group shares more alleles with present-day East Asians than with Upper Paleolithic Holocene Europeans despite coming from Europe.",
+    "claim_type": "EXPLICIT",
+    "source": "A central finding of Hajdinjak et al. is that the Bacho Kiro IUP group shares more alleles with present-day East Asians than with Upper Paleolithic Holocene Europeans despite coming from Europe.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of a finding from the original study.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C106",
+    "claim": "The study documents significantly positive statistics of the form D(an Asian group, Kostenki14; Bacho Kiro IUP, Mbuti).",
+    "claim_type": "EXPLICIT",
+    "source": "Specifically, the study documents significantly positive statistics of the form D(an Asian group, Kostenki14; Bacho Kiro IUP, Mbuti).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of data from the original study.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C107",
+    "claim": "The AG in the Lipson et al., 2020b study was constructed manually and is very complex (12 groups and 12 admixture events).",
+    "claim_type": "EXPLICIT",
+    "source": "The AG in the original study was constructed manually (Extended Data Figure 4 in that study) and is very complex (12 groups and 12 admixture events): it exists in a space of ~1044 topologies of this complexity.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of the methodology in the original study.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C108",
+    "claim": "Among 2,000 newly found models for Lipson et al., 2020b, 11.9% fit nominally (but not significantly) better than the published model.",
+    "claim_type": "EXPLICIT",
+    "source": "Among 2,000 newly found models, 11.9% fit nominally (but not significantly) better than the published model (Table 1, Supplementary file 1, Figure 2)",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This claim is supported by the data analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C109",
+    "claim": "Absolute fits of 36.7% of novel models for Lipson et al., 2020b are good (WR <3 SE).",
+    "claim_type": "EXPLICIT",
+    "source": "and absolute fits of 36.7% of novel models are good (WR <3 SE).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by the data analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C110",
+    "claim": "Models in the Lipson et al., 2020b complexity class, including the published model, are overfitted.",
+    "claim_type": "EXPLICIT",
+    "source": "These metrics, along with the fact that LL scores on all sites lie outside of the LL distribution on resampled datasets (Figure 2), suggest that models in this complexity class, including the published model, are overfitted.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is an inference based on the statistical analysis.",
+    "evidence_type": [
+      "INFERENCE",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C111",
+    "claim": "High topological diversity is observed among temporally plausible newly found AGs for Lipson et al., 2020b.",
+    "claim_type": "EXPLICIT",
+    "source": "High topological diversity is observed among temporally plausible newly found AGs (see an example in Figure 4a and further topologies in Figure 4\u2014source data 1).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This claim is supported by the data analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C112",
+    "claim": "None of the four AG features from the Lipson et al., 2020b study are consistently supported by the re-analysis.",
+    "claim_type": "EXPLICIT",
+    "source": "Considering the high degree of topological diversity among models that are temporally plausible, conform to known findings about relationships between modern and archaic humans, and fit nominally better than the published model, we conclude that none of the four AG features from the original study are consistently supported by our re-analysis (Table 2).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is an inference based on the data analysis.",
+    "evidence_type": [
+      "INFERENCE",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C113",
+    "claim": "The ancestral relationships of the Shum Laka individuals to rainforest hunter\u2013gatherers, and to the primary lineage in present-day West Africans, remains an open question.",
+    "claim_type": "EXPLICIT",
+    "source": "The ancestral relationships of these four individuals to rainforest hunter\u2013gatherers, and to the primary lineage in present-day West Africans, remains an open question, one whose resolution promises meaningful new insights into modern human population history.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference based on the analysis.",
+    "evidence_type": [
+      "INFERENCE",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C114",
+    "claim": "The AG inferred by Wang et al., 2021 was constructed manually, and the final graph included 12 groups and 8 admixture events.",
+    "claim_type": "EXPLICIT",
+    "source": "The AG inferred by Wang et al., 2021 was constructed manually, and the final graph (Extended Data Figure 6 in the original study) included 12 groups and 8 admixture events.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of the methodology in the original study.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C115",
+    "claim": "An important feature of the published graphs in Wang et al., 2021 is admixture from a source related to Andamanese hunter\u2013gatherers that is almost universal in East Asians.",
+    "claim_type": "EXPLICIT",
+    "source": "An important feature of the published graphs in Wang et al., 2021 that was remarked upon in the study is admixture from a source related to Andamanese hunter\u2013gatherers that is almost universal in East Asians (Table 2).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a description of a finding from the original study.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C116",
+    "claim": "2,000 findGraphs iterations for Wang et al., 2021 obtained 1,778 distinct topologies satisfying all the constraints, nearly all of them (1,724) fitting nominally better than the published model, and 12.6% fitting significantly better.",
+    "claim_type": "EXPLICIT",
+    "source": "We performed 2,000 findGraphs iterations and obtained 1,778 distinct topologies satisfying all the constraints, nearly all of them (1,724) fitting nominally better than the published model, and 12.6% fitting significantly better (Table 1, Supplementary file 1).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This claim is supported by the data analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C117",
+    "claim": "According to the temporally plausible topologies for Wang et al., 2021, 0\u20132 East Asian groups had a fraction of their ancestry derived from a source specifically related to Onge.",
+    "claim_type": "EXPLICIT",
+    "source": "According to these topologies, 0\u20132 East Asian groups had a fraction of their ancestry derived from a source specifically related to Onge",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by the data analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C118",
+    "claim": "19 topologies for Wang et al., 2021 included gene flows from the European (Loschbour)-related branch to all 8 East Asian groups.",
+    "claim_type": "EXPLICIT",
+    "source": "and 19 topologies included gene flows from the European (Loschbour)-related branch to all 8 East Asian groups (Figure 4\u2014source data 2).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This claim is supported by the data analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C119",
+    "claim": "The highest-ranking model for Wang et al., 2021 that satisfied all constraints includes a 13% (deeply) European-related gene flow to the common ancestor of all East Asians.",
+    "claim_type": "EXPLICIT",
+    "source": "The highestranking of those models is shown in Figure 4b and Figure 4\u2014source data 2c (the second model), and it includes a 13% (deeply) European-related gene flow to the common ancestor of all East Asians",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a description of the alternative model found in the analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C120",
+    "claim": "The highest-ranking model for Wang et al., 2021 that satisfied all constraints fits the data significantly better than the published model (p-value = 0.028).",
+    "claim_type": "EXPLICIT",
+    "source": "This model fits the data significantly better than the published model (p-value = 0.028).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by statistical analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C121",
+    "claim": "The important feature of the Wang et al., 2021 published graph regarding ubiquitous Andamanese-related gene flow throughout East Asia is not supported by f-statistic analysis alone.",
+    "claim_type": "EXPLICIT",
+    "source": "We conclude that this important feature of the published graph is not supported by f-statistic analysis alone (Table 2)",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is an inference based on the data analysis.",
+    "evidence_type": [
+      "INFERENCE",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C122",
+    "claim": "There is not a single feature of the Wang et al., 2021 AG that is stably inferred beyond the constraints applied to build it.",
+    "claim_type": "EXPLICIT",
+    "source": "and indeed we are not aware of a single feature of the Wang et al., 2021 AG that is stably inferred beyond the constraints applied to build it.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference based on the data analysis.",
+    "evidence_type": [
+      "INFERENCE",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C123",
+    "claim": "Two AGs inferred by Sikora et al., 2019 were constructed manually and incorporated 12 or 13 groups and 10 admixture events.",
+    "claim_type": "EXPLICIT",
+    "source": "Two AGs inferred by Sikora et al., 2019 were constructed manually based on an SNP set derived from whole-genome shotgun data and incorporated 12 or 13 groups and 10 admixture events (Extended Data Figure 3f in the original study).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of the methodology in the original study.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C124",
+    "claim": "In the case of the Sikora et al., 2019 'Western' graphs with 6 admixture events, 1,000 topology search iterations were performed, 894 distinct topologies were found, 4 models fit significantly better, and 151 models fit nominally better than the published one.",
+    "claim_type": "EXPLICIT",
+    "source": "In the case of the \"Western\" graphs with 6 admixture events, 1,000 topology search iterations were performed, 894 distinct topologies were found, 4 models fit significantly better, and 151 models fit nominally better than the published one (Table 1, Supplementary file 1).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This claim is supported by the data analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C125",
+    "claim": "29 topologies for Sikora et al., 2019 'Western' graphs are temporally plausible.",
+    "claim_type": "EXPLICIT",
+    "source": "We inspected those 155 topologies and identified 29 topologies (Figure 4\u2014source data 3) that are temporally plausible.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a description of the analysis process.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C126",
+    "claim": "Sikora et al. came to the conclusion that the Mal'ta (MA1_ANE) lineage received a gene flow from the Caucasus hunter\u2013gatherer (CHG) lineage.",
+    "claim_type": "EXPLICIT",
+    "source": "Sikora et al. came to the following striking conclusion relying on the \"Western\" AG (Table 2): the Mal'ta (MA1_ANE) lineage received a gene flow from the Caucasus hunter\u2013gatherer (CHG) lineage.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a description of a conclusion from the original study.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C127",
+    "claim": "In the findGraphs exploration for Sikora et al., 2019 'Western' graphs, the direction of gene flow (CHG \u2192 Mal'ta) was supported by two of the 29 plausible topologies, and the opposite gene flow direction was supported by the remaining 27 plausible topologies.",
+    "claim_type": "EXPLICIT",
+    "source": "However, in our findGraphs exploration this direction of gene flow (CHG \u2192 Mal'ta) was supported by two of the 29 topologies, and the opposite gene flow direction (from the Mal'ta and East European hunter\u2013gatherer lineages to CHG) was supported by the remaining 27 plausible topologies (Figure 4\u2014source data 3).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This claim is supported by the data analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C128",
+    "claim": "The gene flow direction contradicting the Sikora et al., 2019 graph was supported by published qpAdm analyses.",
+    "claim_type": "EXPLICIT",
+    "source": "We note that the gene flow direction contradicting the graph by Sikora et al. was supported by published qpAdm analyses (Lazaridis et al., 2016; Narasimhan et al., 2019)",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This statement is supported by citations to published studies.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C129",
+    "claim": "qpAdm is not affected by the same model degeneracy issues that are the focus of this study.",
+    "claim_type": "EXPLICIT",
+    "source": "and qpAdm is not affected by the same model degeneracy issues that are the focus of this study.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference about the properties of qpAdm.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C130",
+    "claim": "The direction of the Mal'ta-CHG gene flow cannot be resolved by AG analysis.",
+    "claim_type": "EXPLICIT",
+    "source": "Considering the topological diversity among models that are temporally plausible, conform to robust findings about relationships between modern and archaic humans, and fit nominally better than the published model, we conclude that the direction of the Mal'ta-CHG gene flow cannot be resolved by AG analysis (Table 2).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is an inference based on the data analysis.",
+    "evidence_type": [
+      "INFERENCE",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C131",
+    "claim": "In the case of the Sikora et al., 2019 'Eastern' graphs with 6 admixture events, 4,446 topology search iterations were performed, and 2,785 distinct topologies were found.",
+    "claim_type": "EXPLICIT",
+    "source": "In the case of the \"Eastern\" graphs with 6 admixture events, 4,446 topology search iterations were performed, and 2,785 distinct topologies were found.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of the analysis process.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C132",
+    "claim": "Only 3 topologies for Sikora et al., 2019 'Eastern' graphs fit significantly and 13 nominally better than the published one, and 9.8% of topologies fit not significantly worse than the published one.",
+    "claim_type": "EXPLICIT",
+    "source": "Only 3 topologies fit significantly and 13 nominally better than the published one, and 9.8% of topologies fit not significantly worse than the published one (Table 1, Supplementary file 1).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This claim is supported by the data analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C133",
+    "claim": "97 AGs for Sikora et al., 2019 'Eastern' graphs are temporally plausible.",
+    "claim_type": "EXPLICIT",
+    "source": "Of the AGs belonging to these groups, we inspected 116 best-fitting ones and identified 97 AGs that are temporally plausible.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of the analysis process.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C134",
+    "claim": "Only feature 2 of the Sikora et al., 2019 'Eastern' AG was universally supported by all the 97 plausible alternative models.",
+    "claim_type": "EXPLICIT",
+    "source": "Only feature 2 was universally supported by all the 97 plausible alternative models fitting significantly better, nominally better, or not significantly worse than the simplified published model",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by the data analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C135",
+    "claim": "Feature 3 of the Sikora et al., 2019 'Eastern' AG was supported by 83 of 97 plausible models.",
+    "claim_type": "EXPLICIT",
+    "source": "while feature 3 was supported by 83 of 97 plausible models",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by the data analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C136",
+    "claim": "Feature 1 of the Sikora et al., 2019 'Eastern' AG was supported by 28 of 97 plausible models.",
+    "claim_type": "EXPLICIT",
+    "source": "and feature 1 was supported by 28 of 97 plausible models (Table 2).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This claim is supported by the data analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C137",
+    "claim": "All the 'Eastern' graphs for Sikora et al., 2019, both the published and alternative ones, have relatively poor absolute fits with WR above 4 or 5 SE.",
+    "claim_type": "EXPLICIT",
+    "source": "We note that all the \"Eastern\" graphs discussed here, both the published and alternative ones, have relatively poor absolute fits with WR above 4 or 5 SE.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by the data analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C138",
+    "claim": "Increasing the number of gene flows to 10 for Sikora et al., 2019 'Eastern' graphs allowed reaching much better absolute fits (with WR as low as 2.42 SE), but that resulted in high topological diversity.",
+    "claim_type": "EXPLICIT",
+    "source": "Increasing the number of gene flows to 10 allowed us to reach much better absolute fits (with WR as low as 2.42 SE), but that resulted in high topological diversity (on a par with some other case studies discussed above).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by the data analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C139",
+    "claim": "AGs represent a conceptually powerful framework for thinking about demographic history.",
+    "claim_type": "EXPLICIT",
+    "source": "AGs represent a conceptually powerful framework for thinking about demographic history",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference about the value of AGs.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C140",
+    "claim": "The practice of manually constructing a small number of complex models without exploring AG space in an automated way can lead to overconfidence in the validity of these models.",
+    "claim_type": "EXPLICIT",
+    "source": "but, as we demonstrate in this study (see also Appendix 2), the practice of manually constructing a small number of complex models without exploring AG space in an automated way can lead to overconfidence in the validity of these models.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference based on the data analysis presented in the study.",
+    "evidence_type": [
+      "INFERENCE",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C141",
+    "claim": "An ideal outcome of an AG model exploration exercise would be the identification of a model or a group of topologically very similar models which fit the data well and significantly better than all alternative models with the same number of admixture events.",
+    "claim_type": "EXPLICIT",
+    "source": "An ideal outcome of an AG model exploration exercise would be the identification of a model or a group of topologically very similar models which fit the data well and significantly better than all alternative models with the same number of admixture events",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about the ideal outcome of AG analysis.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C142",
+    "claim": "The ideal outcome of AG model exploration is almost never achieved for graphs with more than eight populations and three admixture events.",
+    "claim_type": "EXPLICIT",
+    "source": "however, this is almost never achieved for graphs with more than eight populations and three admixture events in our experience (Appendix 2)",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference based on the authors' experience and analysis.",
+    "evidence_type": [
+      "INFERENCE",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C143",
+    "claim": "Relaxing the assumption of parsimony can lead to qualitatively quite different equally well-fitting topologies.",
+    "claim_type": "EXPLICIT",
+    "source": "and even this approach can lead to potentially unstable results as relaxing the assumption of parsimony (that fewer admixture events is more likely) can lead to qualitatively quite different equally well-fitting topologies as in our re-analysis of the Bergstr\u00f6m et al. and Shinde et al. datasets.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference based on the case studies presented.",
+    "evidence_type": [
+      "INFERENCE",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C144",
+    "claim": "For all studies except Shinde et al., 2019 (under a strict parsimony assumption), AGs that were not significantly worse fitting than the published ones were identified, with topological features that were different in qualitatively important ways.",
+    "claim_type": "EXPLICIT",
+    "source": "In particular, for all studies except Shinde et al., 2019 (under a strict parsimony assumption however), we identified AGs that were not significantly worse fitting than the published ones, and with topological features that were different in qualitatively important ways.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by the data analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C145",
+    "claim": "At least one of the key inferences about population history relying on AG modeling were stable for all analyzed models for the Librado et al., 2021., Hajdinjak et al., Shinde et al. (under the parsimony assumption), and Sikora et al. (simplified 'Eastern' graph) studies.",
+    "claim_type": "EXPLICIT",
+    "source": "For example, at least one of the key inferences about population history relying on AG modeling were stable for all analyzed models for the Librado et al., 2021., Hajdinjak et al., Shinde et al. (under the parsimony assumption), and Sikora et al. (simplified \"Eastern\" graph) studies (Appendix 2).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by the data analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C146",
+    "claim": "Researchers should only begin to make strong claims about population history with AGs once a rigorous protocol is applied.",
+    "claim_type": "EXPLICIT",
+    "source": "We believe that researchers should only begin to make strong claims about population history with AGs once a protocol such as we propose is applied.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a recommendation based on the findings of the study.",
+    "evidence_type": [
+      "INFERENCE",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C147",
+    "claim": "The guidelines proposed are analogous in spirit to the protocols that were introduced in medical genetics at a time of the reproducibility crisis in the field of candidate gene association studies.",
+    "claim_type": "EXPLICIT",
+    "source": "We see the guidelines above as analogous in spirit to the protocols that were introduced in medical genetics at a time of the reproducibility crisis in the field of candidate gene association studies.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an analogy drawn by the authors.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C148",
+    "claim": "Many studies looking for risk factors for common, complex diseases resulted in publications with marginally significant p-values without correcting for multiple hypothesis testing.",
+    "claim_type": "EXPLICIT",
+    "source": "Many studies looking for risk factors for common, complex diseases resulted in publications with marginally significant p-values without correcting for multiple hypothesis testing that was implicitly performed due to many candidate genes being tested and only those with significant findings being published.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about the history of medical genetics research.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C149",
+    "claim": "Most claims from candidate gene association studies failed to replicate in follow-up studies in independent sets of samples.",
+    "claim_type": "EXPLICIT",
+    "source": "Unsurprisingly, most of these claims failed to replicate in follow-up studies in independent sets of samples (Ioannidis, 2005; Border et al., 2019; Collins et al., 2012; Duncan et al., 2019).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This statement is supported by citations to published studies.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C150",
+    "claim": "The human medical genetic community addressed the reproducibility challenge by coming together to support a rigorous set of commonly accepted standards for declaring genome-wide statistical significance.",
+    "claim_type": "EXPLICIT",
+    "source": "The human medical genetic community addressed this challenge by coming together to support a rigorous set of commonly accepted standards for declaring genome-wide statistical significance, such as the requirement that p-values be corrected for the effective number of independent common variants in the genome and requiring correction for the known confounders of population structure and undocumented relatedness among individuals (Hirschhorn and Daly, 2005).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This statement is supported by a citation to published work.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C151",
+    "claim": "Sampling AG space is a useful method for modeling population histories.",
+    "claim_type": "EXPLICIT",
+    "source": "Sampling AG space is a useful method for modeling population histories",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference based on the analysis presented.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C152",
+    "claim": "Finding robust and accurate AG models can be challenging.",
+    "claim_type": "EXPLICIT",
+    "source": "but finding robust and accurate models can be challenging.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference based on the analysis presented.",
+    "evidence_type": [
+      "INFERENCE",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C153",
+    "claim": "f-statistics are usually insufficient for identifying uniquely fitting AG models.",
+    "claim_type": "EXPLICIT",
+    "source": "As we demonstrated by revisiting a handful of published AGs and re-analyzing the datasets used to fit them, f-statistics are usually insufficient for identifying uniquely fitting AG models",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference based on the data analysis.",
+    "evidence_type": [
+      "INFERENCE",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C154",
+    "claim": "It is necessary to incorporate other sources of evidence when fitting AG models.",
+    "claim_type": "EXPLICIT",
+    "source": "making it necessary to incorporate other sources of evidence.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference based on the findings.",
+    "evidence_type": [
+      "INFERENCE",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C155",
+    "claim": "In nearly all cases of published AG models investigated, many alternative models were found, some of which are historically and geographically plausible but contradict conclusions that were derived from the published models.",
+    "claim_type": "EXPLICIT",
+    "source": "We investigated several published AG models and, in nearly all cases, found many alternative models, some of which are historically and geographically plausible but contradict conclusions that were derived from the published models.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by the data analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C156",
+    "claim": "A method for automated AG topology optimization that can incorporate external sources of information as topological constraints was developed.",
+    "claim_type": "EXPLICIT",
+    "source": "To conduct these analyses, we developed a method for automated AG topology optimization that can incorporate external sources of information as topological constraints.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of the methodological contribution of the study.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C157",
+    "claim": "This method is developed in the ADMIXTOOLS 2 framework.",
+    "claim_type": "EXPLICIT",
+    "source": "This method is developed in the ADMIXTOOLS 2 framework, which aside from AG modeling, implements many other methods for population history inference based on f-statistics.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of the software implementation.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C158",
+    "claim": "The key concern highlighted in this study does not invalidate the use of allele frequency correlation testing in many other contexts in which it has been applied to make inferences about population history.",
+    "claim_type": "EXPLICIT",
+    "source": "It is important to recognize that the key concern we have highlighted in this study\u2014the fact that there can often be thousands of different topologies that are equally good fits to the allele frequency correlation patterns relating a set of populations\u2014does not invalidate the use of allele frequency correlation testing in many other contexts in which it has been applied to make inferences about population history.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference about the implications of the findings.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C159",
+    "claim": "Negative f3-statistics ('admixture' f3-statistics) continue to provide unambiguous evidence for a history of mixture in tested populations.",
+    "claim_type": "EXPLICIT",
+    "source": "For example, negative f3-statistics ('admixture' f3-statistics) continue to provide unambiguous evidence for a history of mixture in tested populations",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about the validity of a specific statistical test.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C160",
+    "claim": "f4-and D-symmetry statistics remain powerful ways to evaluate whether a tested pair of populations is consistent with descending from a common ancestral population since separation from the ancestors of two groups used for comparison.",
+    "claim_type": "EXPLICIT",
+    "source": "and f4-and D-symmetry statistics remain powerful ways to evaluate whether a tested pair of populations is consistent with descending from a common ancestral population since separation from the ancestors of two groups used for comparison.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about the validity of specific statistical tests.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C161",
+    "claim": "The qpWave methodology remains a fully valid generalization of f4-statistics.",
+    "claim_type": "EXPLICIT",
+    "source": "The qpWave methodology remains a fully valid generalization of f4-statistics, making it possible to test whether a set of populations is consistent with descending from a specified number of ancestral populations (which separated at earlier times from a comparison set of populations).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about the validity of a specific method.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C162",
+    "claim": "The qpAdm extension of qpWave remains a valid approach, unaffected by the concerns identified here.",
+    "claim_type": "EXPLICIT",
+    "source": "In addition, Haak et al., 2015 and Harney et al., 2021 the qpAdm extension of qpWave\u2014which allows for estimating proportions of mixtures for the tested population under the assumption that we have data from the source populations for the mixture\u2014remains a valid approach, unaffected by the concerns identified here.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about the validity of a specific method.",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C163",
+    "claim": "qpAdm relies on an empirically measured covariance matrix of f4-statistics for the analyzed populations, which is highly constraining with respect to estimation of mixture proportions but can be consistent with a wide range of deep history models.",
+    "claim_type": "EXPLICIT",
+    "source": "Instead of relying on a specific model of deep population relationships, qpAdm relies on an empirically measured covariance matrix of f4-statistics for the analyzed populations, which is highly constraining with respect to estimation of mixture proportions but can be consistent with a wide range of deep history models.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of how qpAdm works.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C164",
+    "claim": "All the methods discussed (f3-statistics, f4-statistics, qpWave, qpAdm) are implemented in ADMIXTOOLS 2.",
+    "claim_type": "EXPLICIT",
+    "source": "All these methods are implemented in ADMIXTOOLS 2.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of the software implementation.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C165",
+    "claim": "Approaches that use AGs to adjust for the covariance structure relating a set of populations without insisting that the particular AG model that is proposed is true can be useful.",
+    "claim_type": "EXPLICIT",
+    "source": "Finally, approaches that use AGs to adjust for the covariance structure relating a set of populations without insisting that the particular AG model that is proposed is true with can be useful",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference about the utility of AGs in certain contexts.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C166",
+    "claim": "A study attempted to test for different source populations for Neolithic migrations into the Balkans after controlling for different proportions of hunter\u2013gatherer admixture.",
+    "claim_type": "EXPLICIT",
+    "source": "One example was a study that attempted to test for different source populations for Neolithic migrations into the Balkans after controlling for different proportions of hunter\u2013gatherer admixture (Mathieson et al., 2018).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of a published study.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C167",
+    "claim": "A study attempted to study shared ancestry between different East African forager populations after controlling for different proportions of deeply divergent source populations.",
+    "claim_type": "EXPLICIT",
+    "source": "Another example was a study that attempted to study shared ancestry between different East African forager populations after controlling for different proportions of deeply divergent source populations (Lipson et al., 2022).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of a published study.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C168",
+    "claim": "The results highlight the importance of caution in proposing specific models of population history that relate a set of groups.",
+    "claim_type": "EXPLICIT",
+    "source": "However, with respect to the inferences about deep history produced by AGs themselves, our results highlight the importance of caution in proposing specific models of population history that relate a set of groups.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference based on the findings of the study.",
+    "evidence_type": [
+      "INFERENCE",
+      "DATA"
+    ]
+  }
+]

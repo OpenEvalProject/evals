@@ -1,0 +1,258 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Spermidine directly activates recombinant human Src kinase with an EC50 of 106.4 \u00b1 13.4 nM in vitro and promotes Src phosphorylation in cells (EC50 6.4 \u00b1 0.6 \u03bcM in SYF cells). Kinetic analysis demonstrates that spermidine increases both Vmax and Km for peptide substrate but does not affect ATP kinetics, consistent with non-competitive, allosteric activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C53 provide converging evidence from multiple experimental approaches (recombinant protein assays, cell-based assays, Michaelis-Menten kinetics) demonstrating allosteric activation. The kinetic profile showing effects on peptide substrate but not ATP binding (C51, C52) strongly supports the allosteric mechanism conclusion (C53). The data are internally consistent and appropriately analyzed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C83"
+    ],
+    "result": "Spermidine does not activate the constitutively active Src Y529F mutant, suggesting that spermidine acts as an on/off switch for Src rather than potentiating already-active kinase. This implies spermidine promotes conformational changes required for activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54 and C82-C83 demonstrate that spermidine cannot further activate constitutively active Src mutants, supporting the interpretation that spermidine functions as a conformational switch. The logic is sound: if spermidine simply enhanced catalytic activity, it should affect the Y529F mutant. The mechanistic interpretation (C56) is reasonable speculation based on the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Electrostatic potential calculations on the Src SH2 domain reveal a negatively charged surface region on the backside of the pY-binding site, delimited by conserved glutamate residues E150 and E169, suggesting a putative allosteric binding site for the positively charged spermidine.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C62 describe computational analysis identifying a negatively charged pocket that is evolutionarily conserved across species (C61). The electrostatic complementarity with positively charged spermidine provides a rational basis for the proposed binding site. The conservation analysis strengthens the functional significance argument.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C74",
+      "C75"
+    ],
+    "result": "Molecular docking studies predict that spermidine binds in the identified allosteric pocket through multiple electrostatic and hydrogen bond interactions with E150, T250, A148, and F153 (\u03c0-cation interaction). E169 does not show direct interaction in docking but may contribute through long-range electrostatic effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C63-C65 describe the top-scored docking solution, but docking predictions require experimental validation. The lack of direct E169 interaction in docking (C74) is acknowledged, with speculation about indirect roles (C75). While the docking is methodologically sound, computational predictions alone are insufficient without experimental confirmation of the binding mode. The subsequent mutagenesis provides some validation but doesn't confirm the specific atomic interactions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Site-directed mutagenesis of E149A or E168A abolishes spermidine-mediated Src activation in cells, as demonstrated by immunoblot analysis and split-luciferase complementation assays. The mutants retain basal activity and respond normally to LPA stimulation, confirming that E149 and E168 are specifically required for spermidine binding and activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C73 provide strong experimental validation of the proposed allosteric site through loss-of-function mutagenesis. Multiple orthogonal assays (immunoblot C66, split-luciferase C67, C69) demonstrate loss of spermidine response. Critical controls show the mutants retain normal basal activity (C70-C71) and respond to alternative stimuli (C120), ruling out general structural disruption. This is compelling evidence for the specific role of these residues.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C81",
+      "C84",
+      "C85"
+    ],
+    "result": "Spermidine enhances Src-mediated phosphorylation of IDO1 in cells and accelerates the phosphorylation kinetics in vitro, with a two-fold increase in reaction velocity in the presence of spermidine.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81, C84-C85 demonstrate enhanced IDO1 phosphorylation both in cells and in vitro kinase assays. The time-course data (C84) and velocity measurements (C85) provide quantitative support. The convergence of cell-based and biochemical evidence strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C89",
+      "C90"
+    ],
+    "result": "Spermidine promotes physical interaction between Src and IDO1, as demonstrated by co-immunoprecipitation and proximity ligation assays. This interaction requires the intact allosteric site, as E149A and E168A mutants fail to show spermidine-induced Src-IDO1 complex formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C87, C89-C90 demonstrate spermidine-induced protein-protein interaction using two orthogonal methods (co-IP and PLA). The dependence on the allosteric site residues (C87) directly links the binding site to functional consequences. The data are shown in both engineered SYF cells and endogenous MC38 cells (C88-C89), supporting physiological relevance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C82",
+      "C83"
+    ],
+    "result": "In the presence of constitutively active Src Y529F, IDO1 phosphorylation increases regardless of spermidine treatment, confirming that spermidine acts as an on/off switch rather than an enhancer of already-active kinase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C83 provide additional evidence for the switching mechanism using IDO1 phosphorylation as a functional readout. This complements the direct Src phosphorylation data (C54-C55) and strengthens the mechanistic model. The logic is sound and the data support the interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C76",
+      "C77"
+    ],
+    "result": "Sequence alignment reveals that E149 is conserved across Src family kinases (Src, Yes, Fyn) but E168 is replaced by glycine in Yes and Fyn, suggesting that spermidine binding may be specific to Src or reduced in related kinases due to altered electrostatic interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C76-C77 present sequence analysis and speculation about specificity. While the sequence data are factual (C76), the functional implications (C77) are speculative without experimental testing of spermidine effects on Yes and Fyn. This represents a testable hypothesis but not a demonstrated result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "The study demonstrates that an endogenous metabolite (spermidine) can directly activate Src kinase without requiring membrane receptors, modulating both catalytic activity and scaffold functions. This provides proof-of-principle for developing allosteric modulators targeting both Src kinase activity and IDO1 signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C116 represent valid conclusions synthesizing the experimental findings. The direct activation without receptors (C115) is supported by recombinant protein data. The dual effects on catalysis and scaffolding (C116) are supported by kinetic and protein interaction data. However, C117 is speculative regarding therapeutic development and represents future potential rather than demonstrated results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C120"
+    ],
+    "result": "Src mutants E149A and E168A retain normal responsiveness to lysophosphatidic acid (LPA) stimulation, demonstrating that mutations at the putative allosteric site do not impair general Src function or receptor-mediated activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C120 provides an essential control demonstrating that the mutations specifically affect spermidine response without disrupting normal Src regulation. This validates the specificity of the allosteric site and rules out general structural defects. The data are clearly shown in Figure 2\u2014figure supplement 2.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C121",
+      "C122"
+    ],
+    "result": "The SH2 domain of viral Src shares 97% sequence identity with human and murine Src, justifying the use of the viral Src NMR structure (PDB: 2JYQ) for computational analysis of the human SH2 domain electrostatic potential and spermidine binding site.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C122 provide methodological justification for using the viral structure as a proxy for human Src. The 97% sequence identity is high and the inference (C122) is reasonable for electrostatic calculations. This is appropriate computational methodology given the structural conservation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C78",
+      "C79",
+      "C80",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C118",
+      "C119"
+    ],
+    "result": "The manuscript provides extensive background on Src kinase structure, regulation, and function; polyamine biology; IDO1 immunoregulatory properties; and the rationale for allosteric modulation approaches. This contextualizes the current findings within established knowledge.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C42, C78-C80, C91-C119 represent background knowledge supported by appropriate citations to prior literature. These establish the scientific context and are accurately presented. While not original findings, they appropriately frame the study's significance and are well-supported by the cited literature.",
+    "result_type": "MINOR"
+  }
+]

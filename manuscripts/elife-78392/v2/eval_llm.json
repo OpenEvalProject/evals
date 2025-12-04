@@ -1,0 +1,305 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Human observers showed improved detection performance with focal spatial cues compared to distributed cues. Threshold performance (d'=1) was reached at 38ms with focal cues versus 155ms with distributed cues, representing a 1.67\u00d7 improvement in d'. Drift diffusion modeling indicated this benefit primarily reflected improved perceptual sensitivity (1.61\u00d7 increase in drift rate) rather than speed-accuracy tradeoffs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C30 provide converging behavioral evidence from human psychophysics experiments. The d' measurements (C26-C28), drift diffusion model analysis (C29-C30), and confidence intervals all support the conclusion that spatial attention improves detection performance primarily through enhanced sensitivity. The experimental design with appropriate controls and statistical analysis is sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C22",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "A CNN model (CORnet-Z) with Gaussian gain applied at the earliest processing stage replicated human attentional benefits. The model with 4\u00d7 gain achieved median AUC of 0.80 compared to 0.71 without gain, matching the magnitude of human performance improvements at a 64ms stimulus duration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22, C31-C33 demonstrate that the CNN model successfully captures human attentional effects. The model architecture is well-described (C31), classifier performance is validated (C32), and the gain manipulation produces human-matched improvements (C33). The alignment between model and human performance at matched durations provides strong support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Gaussian gain applied at Layer 1 induced downstream changes in receptive field properties at Layer 4, including shifts toward the attention locus, shrinkage, and changes in information content. These effects were magnified in deeper layers while gain propagated without modification through the network.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C37-C41 document systematic receptive field changes induced by gain, supported by gradient-based RF measurements and quantitative analyses shown in Figure 3. The layer-by-layer progression (C40) and comparison to physiological literature strengthen the findings. The methods for measuring RF properties are appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C42",
+      "C43"
+    ],
+    "result": "A model variant that mimicked receptive field shifts without gain (shift-only model) produced no improvement in task performance. The shift-only model achieved median AUC of 0.71 [0.66, 0.73], identical to baseline performance of 0.71 [0.67, 0.72].",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C42-C43 demonstrate through the shift-only model manipulation that RF shifts alone are insufficient for performance benefits. The rewiring approach is clearly described in methods, the RF shifts were successfully reproduced (Figure 4b-d), and the null effect on performance (C43) is well-quantified with overlapping confidence intervals.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C44"
+    ],
+    "result": "A receptive field structure model that modified spatial tuning within individual units without inducing gain failed to account for behavioral effects of Gaussian gain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C44 is supported by the receptive field structure model results in Figure 5f showing no performance improvement. The model successfully isolated changes in spatial tuning (Figure 5c-d) while avoiding gain effects (Figure 5e), providing a valid test of whether RF structure changes alone can improve performance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C45"
+    ],
+    "result": "A shrinkage model that mimicked receptive field size changes without position shifts or gain was unable to account for improved task performance with Gaussian gain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C45 is supported by the shrinkage model results in Figure 6f showing no performance benefit. The model successfully reproduced RF size changes (Figure 6d) without inducing shifts (Figure 6c) or gain (Figure 6e), demonstrating that shrinkage alone is insufficient for performance improvements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C5",
+      "C46",
+      "C47"
+    ],
+    "result": "A gain-only model that applied flat gain without receptive field changes reproduced the full performance improvement of Gaussian gain. The flat gain model achieved median AUC of 0.78 [0.76, 0.83] compared to 0.80 [0.77, 0.82] for Gaussian gain, with overlapping confidence intervals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C46-C47 demonstrate through the gain-only model that gain alone is sufficient for performance benefits. The model design successfully eliminated gain-dependent RF shifts (Figure 7b-d) while preserving gain effects (Figure 7e), and performance matched the original Gaussian gain model (C47).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C48",
+      "C49"
+    ],
+    "result": "Propagated gain was both necessary and sufficient for task performance improvements. Multiplying model outputs by the propagated gain map reproduced performance benefits (sufficiency), while dividing outputs by the propagated gain map mostly reversed the benefits (necessity).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C49 are supported by the necessity/sufficiency tests in Figure 8. The propagated gain manipulation is well-designed, measuring effective gain at Layer 4 and applying it to test both conditions. The sufficiency test (C48) shows performance matching Gaussian gain, while the necessity test (C49) shows mostly reversed effects, though small residual differences remain.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C67",
+      "C68"
+    ],
+    "result": "The 4\u00d7 gain required in the model is larger than physiological measurements (1.2-1.4\u00d7), but a physiologically plausible 1.1\u00d7 gain combined with nonlinear normalization (exponent 3.8) produced effective gain of 1.37\u00d7 after one layer, suggesting a mechanism for reconciling model and physiological gain magnitudes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C36, C67-C68 address an important limitation and provide a plausible resolution. The nonlinear normalization analysis (C35, Figure 3j) demonstrates how small physiological gains could be amplified. The exponent values (2-4) are consistent with physiological measurements (C36), and the interpretation is appropriately cautious about model limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C53"
+    ],
+    "result": "Gain had no additional impact when the readout was already spatially specific (4\u00d74 readout), reinforcing the interpretation that gain acts as a selection mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C53 is supported by the 4\u00d74 readout analysis in Figure 8\u2014figure supplement 1. This control experiment demonstrates that when irrelevant information is already suppressed by spatially-specific readout, gain provides no further benefit, supporting the interpretation that gain functions primarily through selection rather than other mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C50",
+      "C52",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "The main conclusion is that gain alone, not concomitant receptive field changes, is necessary and sufficient for attentional performance benefits in detection and discrimination tasks. Receptive field changes (shifts, shrinkage, structure) are secondary consequences of gain rather than causal mechanisms for behavioral improvement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C24, C50, C52, C75-C77 represent the paper's central conclusion, supported by the convergent evidence from multiple model manipulations (shift-only, RF structure, shrinkage, gain-only, necessity/sufficiency tests). The logic is sound: RF changes occur with gain (C23) but are neither necessary nor sufficient (C24), while gain alone is both (C5). The conclusion is appropriately scoped to the tasks tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "The results differ from previous modeling work in scaling RF changes to match human performance and testing only detection/discrimination tasks. Larger RF changes or tasks requiring spatial coding (e.g., position judgments) might show different results.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C58 appropriately contextualize the findings relative to prior work and acknowledge limitations. The comparison to previous models (C56-C57) is fair, and the speculation about task-dependence (C58) is reasonable and appropriately qualified. This demonstrates good scientific practice in discussing scope and generalizability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "CORnet-Z was chosen for its similarity to primate visual cortex, but it has limitations including being purely feedforward, missing intermediate areas (V3), and lacking explicit normalization mechanisms. These limitations may affect the magnitude of RF changes and gain requirements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C65 provide appropriate discussion of model limitations. The justification for using CORnet-Z is well-supported by citations (C59-C60), and the limitations are clearly acknowledged (C61-C65). The discussion of how recurrence (C63-C64) and missing areas (C65) might affect results is thoughtful and appropriately cautious.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C69",
+      "C70"
+    ],
+    "result": "While the model applies gain at the earliest stage, physiological evidence exists for both early and late gain. The propagated gain analysis confirms that gain signals arriving at later processing stages would have similar effects on task performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C70 address where in the visual system gain might be applied. The propagated gain analysis (C70, Figure 8) demonstrates that the timing of gain application doesn't fundamentally change the conclusions, which is an important control. The discussion appropriately acknowledges uncertainty about the locus of gain in biological systems (C69).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "CNNs trained on image categorization develop representations similar to primate visual cortex, with filters resembling early visual cortex and activity patterns capturing variance in neural responses across visual areas and sharing correlation structure with cortical responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C21 establish the rationale for using CNNs as models of visual cortex. These are well-supported by extensive prior literature (multiple citations for each claim). This background justifies the modeling approach but represents established knowledge rather than novel findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Background claims establish that spatial attention improves detection accuracy, speed, and sensitivity; is accompanied by gain increases and RF changes; and that both gain and RF changes have been proposed as mechanisms for behavioral benefits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C6-C17 provide essential background and motivation from prior literature. All claims are appropriately supported by citations to established work. These represent the scientific context rather than novel findings, but are necessary for framing the research questions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Methods claims describe participant demographics, ethical approval, experimental setup, stimulus design, model architecture, training procedures, and analysis approaches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C95 provide methodological details necessary for reproducibility. The human subjects procedures are appropriately approved (C79), the experimental design is clearly described (C80-C84), the model architecture and training are well-documented (C85-C89, C91-C92), and analysis methods are specified (C93-C95). These are standard methodological descriptions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C51",
+      "C54",
+      "C55",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Discussion claims interpret the mechanism of gain (selection through winner-take-all), explain the modeling approach advantages, and discuss theoretical considerations about optimal attention mechanisms and biological plausibility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51, C54-C55, C71-C74 provide interpretation and theoretical context. The mechanism proposed for gain (C51) is supported by the model results and prior theory. The discussion of modeling advantages (C54) and theoretical considerations (C71-C74) is appropriate, though some claims (C72-C73) acknowledge limitations in understanding biological implementation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C66"
+    ],
+    "result": "The 4\u00d7 gain in the model should be interpreted as both explicit gain increase and implicit gain from normalization effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C66 provides an important interpretive framework for understanding the model's gain parameter. This interpretation is supported by the normalization analysis (C35, C67) and citations to normalization theory. It appropriately cautions against literal interpretation of the gain magnitude.",
+    "result_type": "MINOR"
+  }
+]

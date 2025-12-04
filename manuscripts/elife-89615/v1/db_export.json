@@ -1,0 +1,1533 @@
+{
+  "submission": {
+    "id": "82873db2-4963-4030-ac74-22d141f449ac",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-04T04:09:28.656936Z",
+    "updated_at": "2025-12-04T04:09:28.656936Z"
+  },
+  "content": [
+    {
+      "id": "24d5ca38-6b9e-4717-8d8e-c277bd46bb51",
+      "submission_id": "82873db2-4963-4030-ac74-22d141f449ac",
+      "content_type": "manuscript",
+      "content_text": "# Evolution of the gene regulatory network of body axis by enhancer hijacking in amphioxus\n\n## Authors\n\n- Chenggang Shi<sup>1</sup> ([ORCID: 0000-0002-5592-2761](https://orcid.org/0000-0002-5592-2761))\n- Shuang Chen<sup>1</sup>\n- Huimin Liu<sup>1</sup>\n- Rongrong Pan<sup>1</sup>\n- Shiqi Li<sup>1</sup>\n- Yanhui Wang<sup>1</sup>\n- Xiaotong Wu<sup>1</sup>\n- Jingjing Li<sup>1</sup>\n- Xuewen Li<sup>1</sup>\n- Chaofan Xing<sup>1</sup>\n- Xian Liu<sup>1</sup>\n- Yiquan Wang<sup>1</sup> \u2020\n- Qingming Qu<sup>1</sup> ([ORCID: 0000-0002-8291-8493](https://orcid.org/0000-0002-8291-8493)) \u2020\n- Guang Li<sup>1</sup> ([ORCID: 0000-0002-5543-5349](https://orcid.org/0000-0002-5543-5349)) \u2020\n\n### Affiliations\n\n1. State Key Laboratory of Cellular Stress Biology, School of Life Sciences, Xiamen University Xiamen China ([ROR:00mcjh785](https://ror.org/00mcjh785))\n\n\u2020 Corresponding author\n\n## Abstract\n\nA central goal of evolutionary developmental biology is to decipher the evolutionary pattern of gene regulatory networks (GRNs) that control embryonic development, and the mechanism underlying GRNs evolution. The Nodal signaling that governs the body axes of deuterostomes exhibits a conserved GRN orchestrated principally by Nodal, Gdf1/3, and Lefty. Here we show that this GRN has been rewired in cephalochordate amphioxus. We found that while the amphioxus Gdf1/3 ortholog exhibited nearly no embryonic expression, its duplicate Gdf1/3-like, linked to Lefty, was zygotically expressed in a similar pattern as Lefty. Consistent with this, while Gdf1/3-like mutants showed defects in axial development, Gdf1/3 mutants did not. Further transgenic analyses showed that the intergenic region between Gdf1/3-like and Lefty could drive reporter gene expression as that of the two genes. These results indicated that Gdf1/3-like has taken over the axial development role of Gdf1/3 in amphioxus, possibly through hijacking Lefty enhancers. We finally demonstrated that, to compensate for the loss of maternal Gdf1/3 expression, Nodal has become an indispensable maternal factor in amphioxus and its maternal mutants caused axial defects as Gdf1/3-like mutants. We therefore demonstrated a case that the evolution of GRNs could be triggered by enhancer hijacking events. This pivotal event has allowed the emergence of a new GRN in extant amphioxus, presumably through a stepwise process. In addition, the co-expression of Gdf1/3-like and Lefty achieved by a shared regulatory region may have provided robustness during body axis formation, which provides a selection-based hypothesis for the phenomena called developmental system drift.\n\n## Introduction\n\nThe developmental regulatory mechanisms of body axis formation have been investigated in numerous metazoans, which have greatly advanced evolutionary developmental biology (evo-devo) as a research field (Hall, 1999). Importantly, these accumulated data also make it possible to analyze how the gene regulatory networks (GRNs) controlling body axes has been evolving in different clades, a key theme in evo-devo (Peter and Davidson, 2011; Hall, 1999). Nevertheless, detailed functional genetic evidence showing how GRNs could be rewired during evolution is usually lacking, which hinders our understanding of the evolvability of organisms.\n\nNodal signaling plays a conserved role in patterning the dorsal\u2013ventral (D\u2013V) and left\u2013right (L\u2013R) axes in deuterostomes, exhibiting a conserved GRN orchestrated principally by Nodal, Gdf1/3, and Lefty (Jia and Meng, 2021). Different from most deuterostomes which has one Gdf1/3 gene, mammals and frogs have two such genes (namely Gdf1 and Gdf3), derived from lineage-specific duplications (Opazo and Zavala, 2018; Opazo et al., 2019). For simplicity, we collectively call them Gdf1/3 genes in this study. The expression patterns of genes coding Nodal and Gdf1/3 are highly conserved in echinoderms and vertebrates, with Nodal being expressed zygotically (unilaterally at neurula or larva stage) (Supplementary file 1a), and Gdf1/3 both maternally and zygotically (but bilaterally at neurula stage) (Supplementary file 1b). Zygotic Nodal functions synergistically with preexisting maternal Gdf1/3 by forming heterodimers to activate the signaling pathway (Montague and Schier, 2017; Opazo et al., 2019). Robust Nodal signaling is safeguarded by a positive-feedback loop from further activation of Nodal itself and a negative feedback loop through inducing the expression of Lefty encoding an inhibitor of the signaling (M\u00fcller et al., 2012).\n\nPrevious studies have identified one Nodal, one Lefty and two Gdf1/3 (tentatively named GDF1/3-like1/Vg1 and GDF1/3-like2) genes in basally divergent chordate amphioxus (Yu et al., 2002; Satou et al., 2008; Onai et al., 2010). The expression pattern of GDF1/3-like2 has not been investigated before this study. Like the orthologs in echinoderms (Duboc et al., 2008) and vertebrates (Meno et al., 1997; Bisgrove et al., 1999; Ishimaru et al., 2000; Tanegashima et al., 2000), Lefty gene in amphioxus is expressed zygotically and unilaterally (Onai et al., 2010; Soukup et al., 2015; Morov et al., 2016; Zhang et al., 2019). Unusually, it was found that Nodal and GDF1/3-like1/Vg1 are both maternally supplied and zygotically expressed unilaterally at the neurula stage (Supplementary file 1a and b). This implies that the regulatory network governing the Nodal signaling pathway has undergone alterations within this particular clade, while its function in D\u2013V and L\u2013R axes patterning has been preserved (Onai et al., 2010; Soukup et al., 2015; Li et al., 2017; Zhang et al., 2019). We thus speculate that the Nodal signaling of amphioxus would be an excellent case to trace the evolutionary history of a GRN and to clarify the mechanism underlying it. To evaluate this, we analyzed the GRN of amphioxus Nodal signaling using mutant and transgenic lines and dissected its evolutionary history by integrating available functional genetic data from other deuterostomes.\n\n## Results\n\n### Evolution of the two Gdf1/3 genes in amphioxus\n\nGdf1/3 genes have only been detected in deuterostomes (Stenzel et al., 1994; Lapraz et al., 2006; Satou et al., 2008; Simakov et al., 2015; Opazo and Zavala, 2018). The gene is linked to Bmp2/4 in many deuterostome species (Figure 1A; Range et al., 2007; Satou et al., 2008), though this linkage is lost in higher vertebrates like mice, chickens, and frogs (Opazo and Zavala, 2018). Accordingly, sequence similarity and phylogenetic evidence supported the view that Gdf1/3 originated from Bmp2/4 by a tandem duplication event that occurred in the common ancestor of deuterostomes (Figure 1A, Figure 1\u2014figure supplement 1; Lapraz et al., 2006; Range et al., 2007; Satou et al., 2008). However, Floridae amphioxus (Branchiostoma floridae) was reported to contain two Gdf1/3 genes (Satou et al., 2008), one of which (previously named GDF1/3-like2 by Satou et al., 2008) is linked to Bmp2/4 as was found in other deuterostomes, representing the ancestral amphioxus Gdf1/3 gene (hereafter renamed Gdf1/3, Figure 1A). Intriguingly, the other one (previously known as GDF1/3-like1 [Satou et al., 2008] or Vg1 [Onai et al., 2010]), here renamed as Gdf1/3-like (Figure 1A), is also linked to a transforming growth factor-\u03b2 (TGF-\u03b2) family gene Lefty (Satou et al., 2008). This peculiar gene arrangement, together with that the searches of Lefty ortholog were positive only in deuterostomes until 2008, led Satou et al. proposing that the Gdf1/3-like\u2013Lefty gene pair derived from either a duplication of the Gdf1/3\u2013Bmp2/4 gene pair or two duplications of Gdf1/3 (Gdf1/3 duplicated first to generate Gdf1/3-like, which then translocated and duplicated tandemly to generate Lefty) (Satou et al., 2008). However, this view was not supported by molecular phylogenetic analysis (Satou et al., 2008) and was rejected by the recent finding of Lefty genes in Lophotrochozoa (Heger et al., 2020). Further survey on recently updated genomes of bilaterians, especially those reported to have Lefty genes, revealed that the Gdf1/3-like gene and its linkage to Lefty exist only in amphioxus species, but not in any other bilaterians examined (Figure 1A). These findings suggest that the Gdf1/3-like gene most likely arose in Cephalochordata, or at least in the genus of Brachiostoma, through a tandem duplication of Gdf1/3, followed by a translocation of it to the Lefty locus (Figure 1A). In line with this proposal, lineage-specific duplication of the Gdf1/3 gene and translocation of the duplicate to other genomic regions have also been found in at least two lineages of vertebrates (Opazo and Zavala, 2018; Opazo et al., 2019).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/89615/elife-89615-fig1-v1.jpg)\n\n**Figure 1.:** (A) Arrangement of Gdf1/3, Bmp2/4, Gdf1/3-like, and Lefty genes in representative bilaterian genomes. Black lines represent the genes (boxes) at both ends are tightly linked and fractured lines represent the genes are close together on a same chromosome or scafford indicated. zebrafish (Danio rerio), elephant shark (Callorhinchus milii), vase tunicate (Ciona intestinalis), Florida amphioxus (B. floridae), European amphioxus (B. lanceolatum), Asia amphioxus (B. belcheri and B. japonicum), sea urchin (Strongylocentrotus purpuratus), acorn worm (Saccoglossus kowalevskii), polychaete worm (Capitella teleta), and fruit fly (Drosophila melanogaster). (B) The spatiotemporal expression pattern of Gdf1/3, Gdf1/3-like, and Lefty at different stages of B. floridae embryos. Embryos at 64-cell to G1 stage were viewed from the left side with anterior to the left (the anterior-posterior [A\u2013P] and D\u2013V axes are labeled), and those at N4 stage were viewed from either the left site (upper panels) or dorsal side (lower panels) with anterior to the left (the A\u2013P, D\u2013V, and L\u2013R axes are all labeled). Numbers in the panels indicate the number of times the expression pattern shown was identified, out of the total number of embryos identified. Scale bar, 50 \u03bcm.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/89615/elife-89615-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Abbreviations: Hs, Homo sapiens; Pl, Paracentrotus lividus; Sp, Strongylocentrotus purpuratus; Dr, Danio rerio; Xt, Xenopus tropicalis; Bf, Branchiostoma floridae. The accession numbers of each gene are indicated.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/89615/elife-89615-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Embryos or larvae at 16-cell to L0 stage were viewed from the left side with anterior to the left (the A\u2013P and D\u2013V axes are labeled). Inserts in the panels of some T0 embryos or L0 larvae were viewed from the dorsal side. Numbers in the panels indicate the number of times the expression pattern shown was identified, out of the total number of embryos or larvae identified. Scale bar, 50 \u03bcm.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/89615/elife-89615-fig1-figsupp3-v1.jpg)\n\n**Figure 1\u2014figure supplement 3.:** The expression level of examined genes was normalized to that of Gapdh. Error bars indicate standard deviation from three biological replicates.\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/89615/elife-89615-fig1-figsupp4-v1.jpg)\n\n**Figure 1\u2014figure supplement 4.:** The expression values (cRPKM) of each gene are directly derived from a previous study (Marl\u00e9taz et al., 2018). Error bars indicate standard deviation from two biological replicates at stage egg, Blastula, 7 hpf, 8 hpf, 10 hpf, 11 hpf, 18 hpf, 21 hpf, 24 hpf, 27 hpf, 50 hpf and 60 hpf, from five biological replicates at stage 32-cell, from four biological replicates at stage 15 hpf and from three biological replicates at stage 36 hpf.\n\n![Figure 1\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/89615/elife-89615-fig1-figsupp5-v1.jpg)\n\n**Figure 1\u2014figure supplement 5.:** Embryos at 256-cell to G4 stage were viewed from the left side with anterior to the left (the A\u2013P and D\u2013V axes are labeled), and those at N2 stage were viewed from dorsal side with anterior to the top (the A\u2013P and L\u2013R axes are labeled). Numbers in the panels indicate the number of times the expression pattern shown was identified, out of the total number of embryos identified. DAPI, 4,6-diamidino-2-phenylindole. Scale bar, 50 \u03bcm.\n\n### Amphioxus Gdf1/3 lost the ancestral role in body axes formation\n\nWe next asked if the Gdf1/3 in amphioxus is functionally similar to its ortholog in vertebrates and sea urchins. We first analyzed its embryonic expression pattern using different methods (in situ hybridization, quantitative real-time polymerase chain reaction, and published RNA-seq data; Marl\u00e9taz et al., 2018). Unexpectedly, no Gdf1/3 transcripts were detected in amphioxus embryos before the neurula stage, and very weak expression of the gene was found in few cells of the anterior ventral pharyngeal region during the late neurula and larva stages (Figure 1B, Figure 1\u2014figure supplements 2\u20134). We further generated amphioxus mutants of the Gdf1/3 gene. Consistent with its restricted and weak expression pattern, the homozygous Gdf1/3 mutants (Gdf1/3\u2212/\u2212) displayed normal D\u2013V and L\u2013R axis patterning as the wild-type (WT) by the 3-gill slit stage (Figure 2\u2014figure supplement 1). These data suggested that Gdf1/3 has disassociated from the GRN of body axis formation in living amphioxus. It is, however, notable that overexpression of Gdf1/3 by injecting its mRNA could result in the expansion of anterior and dorsal identity (expressing FoxQ2, Wnt3, Brachyury, and Chordin) at the expense of ventral structures (expressing Evx) (Figure 2\u2014figure supplement 2), as overactivation of the Nodal signaling (Onai et al., 2010; Zhang et al., 2019). Moreover, treatment with SB505124, a selective inhibitor of Alk4/5/7, could ventralize the embryos injected (Figure 2\u2014figure supplement 2). These results demonstrated that the Gdf1/3 still works as a ligand of Nodal signaling, although it is dispensable to the body axis formation of extant amphioxus.\n\n### Gdf1/3-like is indispensable for body axes formation in amphioxus\n\nAs Gdf1/3 is no longer involved in the body axis formation in amphioxus, while injection of Gdf1/3 and Gdf1/3-like mRNA yielded similar phenotypes (Figure 2\u2014figure supplement 2), we hypothesized that Gdf1/3-like is involved in the body axes formation. To test this, we first reanalyzed the expression pattern of Gdf1/3-like in amphioxus using different methods (in situ hybridization, quantitative real-time polymerase chain reaction, and published RNA-seq data; Marl\u00e9taz et al., 2018). Inconsistent with previous study (Onai et al., 2010), no maternal expression of Gdf1/3-like was detected in our analyses (Figure 1B, Figure 1\u2014figure supplements 2\u20134). Zygotic expression of the gene was first detected in the dorsal blastomeres of the vegetal pole at the 32- to 64-cell stage, and then restricted in the dorsal blastopore lip (Spemann organizer) at the gastrula stage and the left side of the embryo from the early neurula stage (Figure 1B, Figure 1\u2014figure supplement 2). Notably, the expression pattern of Gdf1/3-like is similar (although not identical) to that of Lefty (Figure 1B, Figure 1\u2014figure supplements 2\u20135).\n\nWe then created Gdf1/3-like mutants to see if it is required for amphioxus body axis development. Gdf1/3-like\u2212/\u2212 embryos showed severe defects in axis formation. At the G5 stage, the Gdf1/3-like\u2212/\u2212 embryos failed to flatten dorsally like the WT embryos (Figure 2\u2014figure supplement 3A), and at subsequent stages they lacked most of the anterior and dorsal structures (Figure 2A, Figure 2\u2014figure supplement 3A). In addition, by the L2 stage, there was a minority of Gdf1/3-like+/\u2212 larvae showing no left but two-right phenotype (Figure 2A). We further analyzed the expression patterns of the marker genes for various structures in the mutants. At the gastrulae (G5) stage of Gdf1/3-like\u2212/\u2212, the expression of Gsc in dorsal mesoderm, Chordin and Netrin in dorsal mesoderm and neural ectoderm and SoxB1a in dorsal pan-neural ectoderm disappeared, while that of Evx in ventral domain and Ap2 in epidermal ectoderm expanded dorsally (Figure 2B). At the T0 stage of Gdf1/3-like\u2212/\u2212, the expression of Brachyury in notochord, FoxQ2 in anterior ectoderm, Hex in anterior endoderm, m-actin in somites, Otx in forebrain and anterior pharyngeal endoderm, and Wnt3 in hindbrain and spinal cord were absent (Figure 2\u2014figure supplement 3B). Moreover, in a minority of Gdf1/3-like+/\u2212 embryos of the T0\u2013T1 stage, the left-sided expression of Pit in preoral pit and Pou4 in oral primordium disappeared, while the right-sided expression of Nkx2.1 in endostyle and FoxE4 in club-shaped gland became bilaterally symmetrical (Figure 2C). These data collectively indicated that Gdf1/3-like is indispensable for body axes formation in amphioxus and its loss-of-function leads to loss of dorsal, anterior, and left identities.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/89615/elife-89615-fig2-v1.jpg)\n\n**Figure 2.:** (A) Phenotypic analyses of Gdf1/3-like mutants. Larvae at L2 stage were observed from the left side (upper panels) and ventral side (under panels) with anterior to the left (the A\u2013P, D\u2013V, and L\u2013R axes are labeled). pp, preoral pit; en, endostyle; csg, club-shaped gland; m, mouth; g1, first gill slit; g2, second gill slit. The phenotypes of embryos from a same pool at early stages are provided in Figure 2\u2014figure supplement 3. The three numbers (from left to right) at the bottom right of each panel indicate the number of larvae used for genotyping, the number of larvae with the phenotype, and the total number of larvae examined, respectively. (B, C) The expression of marker genes in Gdf1/3-like mutants. Embryos in (B) were at G5 stage and viewed from the blastopore with dorsal to the top (the D\u2013V and L\u2013R axes are labeled), while embryos in (C) were at T0\u2013T1 stage and viewed from the dorsal side with anterior to the left (the A\u2013P and L\u2013R axes are labeled). Numbers at the bottom right indicate the number of times the genotype shown was identified, out of the total number of examined embryos with the expression pattern. The nomenclature +/+; +/\u2013 refer to a pool of animals with different genotypes (+/+ and +/\u2013) in the figures of present study. Scale bars, 50 \u03bcm.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/89615/elife-89615-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** The top schematic diagram shows the exon/intron structure of Gdf1/3-coding sequence, the sgRNA used to target it, the introduced mutation (a 25-bp deletion), and the structure of the truncated proteins encoded by the mutated Gdf1/3 gene. Black boxes indicate Gdf1/3 exons. Panels in the bottom left show whole mount of Gdf1/3 larvae (L3 stage) of different genotypes (+/+, +/\u2212, and \u2212/\u2212) observed from the left side with anterior to the left (the A\u2013P and D\u2013V axes are labeled). Numbers in the panels indicate the number of times the genotype shown was identified, out of the total number of larvae identified with the phenotype. Panels in the bottom middle and right are anterior parts of Gdf1/3 larvae, respectively, observed from the left side and ventral side (the A\u2013P and L\u2013R axes are labeled), with anterior to the left. pp, preoral pit; en, endostyle; csg, club-shaped gland; m, mouth; g1, first gill slit; g2, second gill slit; g3, third gill slit. Scale bars in panels on the left are 100 \u03bcm, and those in other panels are 50 \u03bcm.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/89615/elife-89615-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Embryos stained with Chordin and Evx probes were at G4 stage and observed from the blastopore with dorsal to the top (the D\u2013V and L\u2013R axes are labeled). Embryos stained with Brachyury, Wnt3, and FoxQ2 probes were at N3 stage and observed from the left side with anterior to the left (the A\u2013P and D\u2013V axes are labeled). Numbers at the bottom right of each panel indicate the number of times the expression pattern shown was observed, out of the total number of examined embryos. DMSO, dimethyl sulfoxide. Scale bar, 50 \u03bcm.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/89615/elife-89615-fig2-figsupp3-v1.jpg)\n\n**Figure 2\u2014figure supplement 3.:** (A) The top schematic diagram shows the exon/intron structure of Gdf1/3-like-coding region, the TALEN used to target it, the introduced mutation (a 1-bp insertion), and the structure of the truncated proteins encoded by the mutated Gdf1/3-like gene. Black boxes indicate exons. Panels in the bottom show Gdf1/3-like embryos of different genotypes (+/+, +/\u2212, and \u2212/\u2212) from a same pool in Figure 2. Embryos at G5 stage were observed from either the blastopore with dorsal to the top (right ones, the D\u2013V and L\u2013R axes are labeled), or from the left side with anterior to the left (left ones, the A\u2013P and D\u2013V axes are labeled). Embryos at other stages were observed from the left side with anterior to the left (the A\u2013P and D\u2013V axes are labeled). (B) All embryos were observed from the left side with anterior to the left at T0 stage (the A\u2013P and D\u2013V axes are labeled). Numbers at the bottom right indicate the number of times the genotype shown was identified, out of the total number of embryos identified with the phenotype or expression pattern. Scale bars, 50 \u03bcm.\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/89615/elife-89615-fig2-figsupp4-v1.jpg)\n\n**Figure 2\u2014figure supplement 4.:** All embryos identified with each genotype (+/+, +/\u2212, and \u2212/\u2212) in the analyses were shown and they were all viewed from the left side with anterior to the left (the A\u2013P and D\u2013V axes are labeled). Arrows indicate the domain (the dorsal blastopore lip) of Gsc expression in each embryo. Scale bars, 50 \u03bcm.\n\nIn vertebrates, transduction of Nodal signaling requires Gdf1/3 to form heterodimer with Nodal (Montague and Schier, 2017). To see whether Gdf1/3-like is similarly required for Nodal signaling transduction in amphioxus, we examined the expression of Nodal and a target gene (Gsc) of the Nodal signaling in Gdf1/3-like\u2212/\u2212 embryos. Previous studies have used Gsc as a Nodal target in both vertebrates (Thisse et al., 1994; Houston and Wylie, 2005; Bisgrove et al., 2017) and invertebrates including amphioxus (Onai et al., 2010; Saudemont et al., 2010; Morov et al., 2016; Zhang et al., 2019). At the G1 stage, the expression of Nodal (most of them are probably maternal) was at a comparable level in Gdf1/3-like+/+, Gdf1/3-like+/\u2212, and Gdf1/3-like\u2212/\u2212 embryos (Figure 2\u2014figure supplement 4). However, at the same stage the expression of Gsc was activated in the dorsal blastopore lip of Gdf1/3-like+/+ embryos but disappeared or was reduced in Gdf1/3-like\u2212/\u2212 embryos. Interestingly, we also noticed that in minority of Gdf1/3-like+/\u2212 embryos, the Gsc expression was reduced compared to Gdf1/3-like+/+ embryos (Figure 2\u2014figure supplement 4). These results suggested that in the absence of Gdf1/3-like, Nodal alone could not activate the Nodal signaling in amphioxus.\n\n### Maternal and zygotic Nodal is necessary for amphioxus body axes formation\n\nIn amphioxus, Nodal is expressed both maternally and zygotically (Onai et al., 2010). To dissect its function during embryogenesis, we generated Nodal heterozygous animals and crossed them to analyze homozygous mutants. Nodal\u2212/\u2212 embryos exhibited defects of L\u2013R axis (Figure 3\u2014figure supplement 1) as Gdf1/3-like+/\u2212 (shown above) and embryos in which late Nodal signaling activity was blocked (Soukup et al., 2015; Li et al., 2017). This result showed that zygotic Nodal is necessary for L\u2013R patterning in amphioxus.\n\nHowever, unlike Gdf1/3-like\u2212/\u2212 mutants but like some Gdf1/3-like+/\u2212 mutants (Figure 2A), these Nodal\u2212/\u2212 mutants do not show obvious dorsal\u2013ventral or anterior\u2013posterior defects (Figure 3\u2014figure supplement 1). This is probably related to maternal Nodal expression. We therefore generated maternal Nodal mutants (MNodal). Since zygotic Nodal mutants could not survive into adulthood, we screened for genetic mosaic females (founders) carrying oocytes of biallelic mutations (Shi, 2022) at the Nodal locus (Figure 3\u2014figure supplement 2A). Two such founders (named founders 1 and 2) were identified from nearly one hundred of animals. In situ hybridization experiment revealed that around 50% and 20% of eggs released by the founders 1 and 2, respectively, showed no maternal Nodal mRNA accumulation (Figure 3A, B). In line with this, when eggs of the two founders were fertilized with WT sperms (Figure 3\u2014figure supplement 2B), around 50% and 20% of them (MNodal) showed a mild ventralized phenotype, respectively (Figure 3C, D, Figure 3\u2014figure supplement 2C). Among embryos generated from the above two crosses, approximately 50% and 20% of them, respectively, showed reduced expression of anterior and dorsal markers (Gsc, Chordin, Netrin, SoxB1a, Brachyury, Wnt3, m-actin, and FoxQ2), and expanded expression of the ventral markers (Evx and Ap2) (Figure 3E\u2013F, Figure 3\u2014figure supplement 3). We also crossed the two founders with male Nodal+/\u2212 animals to generate maternal and zygotic Nodal mutants (MZNodal). MZNodal embryos, as expected, accounting for around 25% and 10% of offspring of the founders 1 and 2, respectively, displayed ventralized phenotypes being more severe than MNodal mutants, but comparable to Gdf1/3 mutants (Figure 3C, D, Figure 3\u2014figure supplement 2C). Gene expression analysis showed that MZNodal mutants lost most of the dorsal and anterior identities, as indicated by loss of expressions of the dorsal and anterior marker genes (Gsc, Chordin, Netrin, SoxB1a, Brachyury, Wnt3, m-actin, and FoxQ2), and expanded expressions of the ventral markers (Evx and Ap2) (Figure 3E, F, Figure 3\u2014figure supplement 3). These results collectively indicated that maternal Nodal, probably zygotic Nodal as well, is required for regulating the D\u2013V axis formation in amphioxus.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/89615/elife-89615-fig3-v1.jpg)\n\n**Figure 3.:** (A) Nodal expression in amphioxus eggs from different females (wild-type [WT], founder 1 [F0\u26401] and founder 2 [F0\u26402]). They were observed with animal pole to the top (circles indicate polar body). Two types of Nodal expression (normal and deficient) were observed. (B) Histogram showing the percentage of eggs of normal or deficient maternal Nodal accumulation from different females. (C) Phenotypic analyses of maternal (MNodal) and maternal\u2013zygotic (MZNodal) Nodal mutants. They were observed from the left side with anterior to the left at N2 stage (the A\u2013P and D\u2013V axes are labeled). Phenotype of the two mutants from a same pool at other stages are provided in Figure 3\u2014figure supplement 2. (D) The percentage of embryos of different phenotypes as shown in (C). Embryos from five different crosses were examined. (E) The expression of marker genes in MNodal and MZNodal mutants at G5 stage. All embryos were viewed from the blastopore with dorsal to the top (the D\u2013V and L\u2013R axes are labeled). (F) The percentage of embryos showing different expression patterns (normal, MNodal, and MZNodal) as indicated in (E). Embryos from three different crosses were examined. Scale bars, 50 \u03bcm (A, C, E). The total number of analyzed eggs or embryos are listed under each column (B, D, F).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/89615/elife-89615-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) The top schematic diagram shows the exon/intron structure of Nodal-coding sequence, the TALEN used to target it, the introduced mutation (a 7-bp deletion), and the structure of the truncated proteins encoded by the mutated Nodal gene. Black boxes indicate exons. Panels in the bottom show the anterior part of Nodal larvae (L3 stage) of different genotypes (+/+, +/\u2212, and \u2212/\u2212), observed from the left side (upper panels, the A\u2013P and D\u2013V axes are labeled) and ventral side (lower panels, the A\u2013P and L\u2013R axes are labeled) with anterior to the left. Numbers at the bottom right indicate the number of times the genotype shown was identified, out of the total number of larvae identified with the phenotype. pp, preoral pit; en, endostyle; csg, club-shaped gland; m, mouth; g1, first gill slit; g2, second gill slit; g3, third gill slit; n, notochord; fe, frontal eye. Nodal\u2212/\u2212 mutants have L\u2013R defects but no obvious D\u2013V or A\u2013P defects (the anterior and dorsal structures, such as notochord and frontal eye, were formed normally). (B) All panels are anterior parts of embryos observed from the dorsal side at T0\u2013T1 stage, with anterior to the left (the A\u2013P and L\u2013R axes are labeled). Numbers at the bottom right indicate the number of times the genotypes shown were identified, out of the total number of examined embryos with the expression pattern. Scale bars, 50 \u03bcm.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/89615/elife-89615-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A) Schematic diagram shows how the eggs without maternal Nodal accumulation are acquired from chimeric female founders injected with TALEN or Cas9/sgRNA. Dark gray indicates deposited maternal Nodal mRNA, while light gray marks no maternal Nodal mRNA accumulation. (B) Schematic diagram shows how zygotic (Nodal\u2212/\u2212), maternal (MNodal), and maternal\u2013zygotic Nodal (MZNodal) mutants used in the study are generated. (C) Phenotypic analysis of maternal and maternal\u2013zygotic Nodal mutants from a same pool in Figure 3. Embryos at G5 stage were viewed from the left side (upper panels, the A\u2013P and D\u2013V axes are labeled) or blastopore (lower panels, the D\u2013V and L\u2013R axes are labeled), with dorsal to the top. Embryos at T0 and larvae at L0 stages were viewed from the left side with anterior to the left (the A\u2013P and D\u2013V axes are labeled). pp, preoral pit; en, emdostyle; csg, club-shaped gland. Scale bars, 50 \u03bcm.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/89615/elife-89615-fig3-figsupp3-v1.jpg)\n\n**Figure 3\u2014figure supplement 3.:** All embryos were viewed from the left side with anterior to the left (the A\u2013P and D\u2013V axes are labeled). MNodal and MZNodal mutants were distinguished from their siblings based on their phenotypes. Numbers at the bottom right of each panel indicate the number of times the expression pattern shown was observed, out of the total number of examined embryos. Scale bar, 50 \u03bcm.\n\n![Figure 3\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/89615/elife-89615-fig3-figsupp4-v1.jpg)\n\n**Figure 3\u2014figure supplement 4.:** Eggs from the female founder 1 (F0\u26401) were, respectively, injected with Nodal and Gdf1/3-like mRNA, and then fertilized with sperms from a wild-type (WT) male. Uninjected eggs from the same animal were also fertilized with sperms from the same WT male and used as control. They were collected at G5 stage for in situ analysis. In control embryos, two types of Gsc expression pattern (normal and decreased) were observed, while in Nodal mRNA and Gdf1/3-like mRNA injected embryos, two (normal and partially rescued) and three (expanded, normal, and decreased) types of Gsc expression pattern were, respectively, found. The number of embryos showing each Gsc expression pattern out of the total number of examined embryos are shown in the bottom of each panel. All embryos were viewed from the left side with anterior to the left (the A\u2013P and D\u2013V axes are labeled). Scale bar, 50 \u03bcm.\n\nThe phenotypes of MZNodal and Nodal\u2212/\u2212 are strikingly similar to those of Gdf1/3-like\u2212/\u2212 and Gdf1/3-like+/\u2212, respectively, suggesting that Nodal is indispensable for Gdf1/3-like activity during Nodal signal transduction. To further test this, we injected either Nodal or Gdf1/3-like mRNA into maternal MNodal embryos and analyzed the Gsc expression at the G5 stage. We found that Nodal mRNA injection could rescue Gsc expression in the MNodal embryos, while Gdf1/3-like mRNA injection could not, although it expanded the Gsc expression domain in normal embryos (Figure 3\u2014figure supplement 4). This result demonstrated that Gdf1/3-like alone (without Nodal) is unable to activate Nodal signaling in amphioxus.\n\n### Gdf1/3-like hijacked the regulatory region of Lefty\n\nAs Gdf1/3-like is linked to Lefty in a head-to-head way in all sequenced amphioxus genomes and the two genes exhibit a similar expression pattern during embryogenesis, we hypothesized that the intergenic region between the two genes might include most if not all cis-regulatory elements (such as enhancers) required for their expression. To test this, we cloned the intergenic region (about 4 kb) into a pminiTol2 plasmid carrying a mCherry reporter and generated a stable amphioxus transgenic line carrying it (Figure 4A). Whole-mount in situ hybridization analysis revealed that the transcription of mCherry was similar (although not identical) to that of endogenous Gdf1/3-like and Lefty with simultaneous initiation and D\u2013V and L\u2013R asymmetric expression pattern (Figure 4A). We further made a dual-reporter pminiTol2 construct, in which the coding sequences of eGFP and mCherry were inserted into the two ends of the 4 kb region, respectively, and injected it into amphioxus embryos. In situ analysis of transient transgenic embryos showed that at the G1 stage, the 4 kb sequence could simultaneously drive eGFP and mCherry transcription in a similar pattern in the dorsal organizer region of the injected embryos (Figure 4B). These results indicated that the intergenic sequence indeed contains sequence elements required for regulating the expression of the two linked genes.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/89615/elife-89615-fig4-v1.jpg)\n\n**Figure 4.:** (A) The top schematic diagram shows the 4 kb region between Gdf1/3-like and Lefty and the construct used to generate stable amphioxus transgenic lines. Embryos used for in situ analysis were from a cross between a female founder and a wild-type (WT) male. The bottom panels show the expression patterns of Gdf1/3-like, Lefty, and mCherry reporter in transgenic embryos. Embryos at 256-cell to G5 stages were viewed from the left side (the A\u2013P and D\u2013V axes are labeled), and those at N0 and N4 stages were viewed from the dorsal side (the A\u2013P and L\u2013R axes are labeled). Numbers at the bottom right of each panel indicate the number of times the expression pattern was observed, out of the total number of examined embryos. (B) The left top schematic diagram shows the dual-reporter construct used in this analysis, and the panels below it shows the expression of mCherry and eGFP in embryos injected with the construct and then treated with dimethyl sulfoxide (DM) or SB505124 (SB). All embryos are at G1 stage viewed form the blastopore with dorsal to the top (the D\u2013V and L\u2013R axes are labeled). Four categories of expression (strong, mild, weak, and absent) for both mCherry and eGFP were observed in the dorsal blastopore lip of embryos, and their percentages are shown in the right histogram. The total number of analyzed embryos are listed under each column. Scale bars, 50 \u03bcm. The effect of SB505124 treatment on Nodal signaling was validated by the phenotype of larvae treated (shown in Figure 4\u2014figure supplement 2).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/89615/elife-89615-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** All embryos were viewed from the left side with anterior to the left (the A\u2013P and D\u2013V axes are labeled). Numbers at the bottom right of each panel indicate the number of times the expression pattern shown was observed, out of the total number of examined embryos from each cross. Scale bar, 50 \u03bcm.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/89615/elife-89615-fig4-figsupp2-v1.jpg)\n\n**Figure 4\u2014figure supplement 2.:** The larvae were at L1 stage and viewed from the left side with anterior to the left (the A\u2013P and D\u2013V axes are labeled). Numbers at the bottom right of each panel indicate the number of times the phenotype shown was observed, out of the total number of examined larvae. Scale bar, 50 \u03bcm. Consistent with previous study (Onai et al., 2010), the larvae treated with SB505124 failed to form dorsal and anterior structures, verifying the effectiveness on Nodal signaling.\n\nAfter demonstrating the bidirectional activity of the 4 kb intergenic sequence in driving Lefty and Gdf1/3-like genes, we then asked which one of the two genes originally used this region to regulate its expression. In sea urchin and vertebrate embryos, the expression pattern of Lefty and Gdf1/3 genes are different, with the former being zygotically activated at blastula stage and unilaterally expressed from gastrula/neurula stage (Meno et al., 1996; Meno et al., 1997; Bisgrove et al., 1999; Ishimaru et al., 2000; Tanegashima et al., 2000; Duboc et al., 2005; Duboc et al., 2008), and the latter being maternally preloaded and bilaterally expressed from gastrula/neurula stage (Supplementary file 1b). Moreover, Lefty expression depends on Nodal signaling in these two groups (Saudemont et al., 2010; Bisgrove et al., 2017), while Gdf1/3 expression does not, at least in sea urchin (Range et al., 2007). As demonstrated above, Lefty expression pattern in amphioxus is similar to its orthologs in sea urchin and vertebrates, but Gdf1/3-like expression follows essentially that of Lefty. Additionally, we and others also showed that Lefty expression in amphioxus embryos depends on Nodal signaling (Soukup et al., 2015; Morov et al., 2016; Li et al., 2017; Zhang et al., 2019). These results therefore implied that the 4 kb region was initially responsible for Lefty expression, and then hijacked by Gdf1/3-like after it was translocated to the current locus in amphioxus ancestor. To evaluate this scenario further, we examined Gdf1/3-like expression in the MNodal embryos to see if it is dependent on Nodal signaling as that of Lefty. The result showed that, in MNodal embryos, the expression of Gdf1/3-like and Lefty were both significantly reduced or abolished at the early gastrula stages (G1\u2013G3), although their initial expressions were not affected at the blastula stage (256-cell) and their expressions re-appeared at late gastrula stage (G5) (Figure 4\u2014figure supplement 1). To examine this more directly, we injected amphioxus embryos with the above dual-reporter construct and then treated them with Nodal signaling inhibitor SB505124 to see if the expression patterns of both reporter genes are affected. In situ result showed that compared to untreated embryos, SB505124-treated embryos exhibited decreased expression for both eGFP and mCherry genes (Figure 4B). This indicates that the 4 kb region includes the sequence elements required for Lefty and Gdf1/3-like expression regulation by Nodal signaling. Together, these results imply that the regulatory logic of Lefty expression is conserved in different deuterostomes and the regulatory elements used to regulate Lefty expression was hijacked by Gdf1/3-like after its translocation next to Lefty gene in amphioxus ancestor.\n\n## Discussion\n\nDuring evolution, morphological innovations are usually accompanied by changes of GRNs essential for developmental processes (Peter and Davidson, 2011). However, the GRNs underpinning a trait in a common ancestor could also diverge in descendant lineages even as the trait itself remains conserved, a phenomenon called developmental system drift (True and Haag, 2001; Haag and True, 2021). In either way, functional genetic evidence with a robust phylogenetic framework to demonstrate how GRN changes could have happened is sparse so far, although the underlying mechanism for the evolvability has been usually attributed to changes of cis-regulatory elements (Peter and Davidson, 2011). The most striking discovery in our study is that enhancer hijacking events could trigger the evolution of a GRN. In addition, through detailed analyses of available functional genetic data below, we could demonstrate how a GRN could have evolved in a stepwise way, in the absence of \u2018molecular developmental fossils\u2019 (Figure 5).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/89615/elife-89615-fig5-v1.jpg)\n\n**Figure 5.:** The situation in sea urchin (echinoderm) and zebrafish (vertebrate) represents an ancestral scenario which has been rewired and modified in amphioxus through at least three sequential steps as shown in dashed box. D\u2013V, dorsal\u2013ventral axis; L\u2013R, left\u2013right axis; Ab\u2013O, oral\u2013aboral axis. The dorsal\u2013ventral orientation of Chordata was inversed relative to that of Ambulacraria during evolution (Lowe et al., 2015), thus the oral and left side of sea urchin corresponds to the dorsal and right side of zebrafish and amphioxus, respectively.\n\nNodal signaling plays an essential role for patterning the D\u2013V and L\u2013R axis in deuterostomes (Jia and Meng, 2021). The expression patterns of the genes coding the ligands of the signaling pathway are conserved in extant echinoderms and vertebrates (Supplementary file 1a, b). Thus, the GRN of the Nodal signaling pathway revealed in these species most likely represents an ancestral scenario: Gdf1/3 is preloaded in an egg; by blastula stage, Nodal and Lefty appear zygotically; Nodal functions interdependently with the preexisting Gdf1/3 to activate the signaling pathway, while Lefty restrains the activity of the signaling pathway by inhibiting the signaling (Figure 5; M\u00fcller et al., 2012; Montague and Schier, 2017). Our data showed that this highly conserved GRN has been rewired and modified in cephalochordate amphioxus: Nodal is expressed maternally in an egg; ancestral Gdf1/3 lost its expression and function at embryonic stage, while Gdf1/3-like (a duplicate of Gdf1/3) recruited the regulatory elements of Lefty and is expressed in a similar pattern as Lefty from the blastula stage; Gdf1/3-like functions interdependently with the preexisting Nodal to activate the signaling pathway; and Lefty still acts as a feedback inhibitor of the signaling pathway (Figure 5). Our results and those from previous studies in other species enable us to infer that at least three sequential steps are probably required to evolve the GRN as found in extant amphioxus from an ancestral situation as reported in echinoderms and vertebrates (as discussed below): (1) the Gdf1/3-like originated and translocated adjacently to Lefty and hijacked its enhancers; (2) the Gdf1/3 retreated from the Nodal signal; (3) the Nodal became maternally expressed (Figure 5).\n\nOverexpression of Gdf1/3 in zebrafish and Xenopus embryos have no effects on axes development (Dale et al., 1993; Bisgrove et al., 2017). It is therefore expected that the emergence of Gdf1/3-like would not affect the development and viability of the ancestor of extant amphioxus (i.e. step 1, Figure 5). In contrast, disruption of maternal Gdf1/3 function is lethal in sea urchin and zebrafish embryos (Range et al., 2007; Bisgrove et al., 2017; Montague and Schier, 2017; Pelliccia et al., 2017). This indicates that the retreatment of the Gdf1/3 ortholog from the Nodal signaling (step 2) could not happen before the emergence of Gdf1/3-like and its recruitment of the Lefty enhancers (step 1). Similarly, overexpression of Nodal in the presence of maternal Gdf1/3 led to defects in axis formation of zebrafish embryos (Bisgrove et al., 2017), suggesting that Nodal could not become a maternal factor before the retreatment of Gdf1/3 (i.e. step 2 happened before step 3). These suggested that the 1\u20132\u20133 ordered events could have led to the situation in extant amphioxus (Figure 5). Injection of Gdf1/3 mRNA to the yolk syncytial layer, where Nodal is expressed endogenously, was sufficient to rescue MGdf1/3 defects in zebrafish, thus the ubiquitous distribution of maternal Gdf1/3, in the region where Nodal is not expressed, is dispensable (Montague and Schier, 2017). Once the Gdf1/3-like started its current expression pattern by hijacking Lefty enhancers, the function of Gdf1/3-like and Gdf1/3 became redundant, allowing the retreatment of Gdf1/3 from the signaling pathway (i.e. step 2, Figure 5). As discussed in the study of zebrafish (Montague and Schier, 2017), preloading of a maternal factor (Gdf1/3 in zebrafish or Nodal in amphioxus) could be instrumental for ensuring Nodal signaling initiation in a rapid and temporally reliable manner. Likewise, the establishment of Nodal as a maternal factor may be a compensation mechanism for the retreatment of ubiquitously maternal Gdf1/3 (i.e. step 3, Figure 5). Zygotic Nodal mutants failed to form L\u2013R axis but formed D\u2013V axis normally in amphioxus (Figure 3\u2014figure supplement 1), suggesting that maternal Nodal is redundant to compensate the D\u2013V axis formation. However, maternal Nodal mutants formed only partial anterior and dorsal structures (Figure 3, Figure 3\u2014figure supplements 2 and 3), suggesting that the expression of zygotic Nodal might be delayed in living amphioxus, compared to that of the amphioxus ancestor before step 3. Our proposed scenario highlights that enhancer hijacking by Gdf1/3-like was a triggering and probably \u2018neutral\u2019 step for the rewiring of the body axes GRN in amphioxus ancestors.\n\nAlthough developmental system drift is probably universal in long evolutionary periods (Palmer, 2004), it has been rarely possible to analyze whether there is selective advantage of such drifts. Co-expressed gene pairs sharing intergenic enhancers have been reported in various cases (Ueda et al., 2006; Sumiyama and Tanave, 2020; Zinani et al., 2021; Zinani et al., 2022), and often fall into the same functional categories (Zinani et al., 2022). In zebrafish, the paired her1 and her7 can provide robustness for segmentation patterning (Zinani et al., 2021). The two proteins need to form dimers to inhibit their own transcription, thus forming a negative-feedback loop to maintain a stable level of both proteins in cells (Zinani et al., 2021). In our case, Gdf1/3-like functions as an activator of the signaling that maintains the transcriptions of both Gdf1/3-like and Lefty in a positive-feedback loop, while Lefty acts as a repressor of the signaling forming a negative-feedback loop (Li et al., 2017; Zhang et al., 2019). The co-expression of Gdf1/3-like and Lefty gene pair (Figure 1B, Figure 1\u2014figure supplements 2\u20135) achieved by sharing regulatory region (Figure 4) likely safeguards a dosage balance between the positive- and negative-feedback loop. This is likely an advantage for robust pattern formation as suggested in other gene pairing systems (Zinani et al., 2022).\n\nGdf1/3 is one of the reported examples of small-scale gene duplications in amphioxus (Bras\u00f3-Vives et al., 2022), anurans, and mammals (Opazo and Zavala, 2018). However, these genes appear to have evolved differently: in anurans and mammals both Gdf1/3 paralogs retain the ancestral function in axis formation (Birsoy et al., 2006; Andersson et al., 2007; Vonica and Brivanlou, 2007), while in amphioxus only Gdf1/3-like undertakes this function but Gdf1/3 seems to have lost its original function. As discussed above, hijacking of Lefty enhancers by Gdf1/3-like had enabled Gdf1/3-like to be functionally redundant to Gdf1/3, allowing Gdf1/3 to retrieve from its ancestral function in regulating body axis formation through changing its expression pattern. In addition, the redundancy of Gdf1/3-like appears to have also relaxed the selection pressure on Gdf1/3-coding region, since Gdf1/3-like mRNA is more efficient in inducing anterior and dorsal expansion than that of Gdf1/3 (Figure 2\u2014figure supplement 2).\n\nWe have demonstrated that functional genetic data could be used to dissect the route of GRNs evolution, once there is available data from different species for comparisons. Our study represents an example that illustrated how the GRNs could have shifted in a stepwise way without altering conserved phenotypes, such as body axes that has persisted at least since the Early Cambrian period (Martindale, 2005; Dunn et al., 2014). Our case also showed that enhancer hijacking could be a mechanism underlying the evolution of developmental GRNs, in addition to the changes of cis-regulatory elements.\n\n## Methods\n\n### Animals and embryos\n\nWT amphioxus (B. floridae) was obtained from Jr-Kai Yu\u2019s lab and bred in the aquaculture system as reported previously (Li et al., 2012). Mature individuals were induced to lay eggs and release sperm by thermal shock (Li et al., 2013). The developmental stages of amphioxus embryos were defined as recently described (Carvalho et al., 2021).\n\n### Gene structures and synteny\n\nPositions of Lefty, Gdf1/3-like, Bmp2/4, and Gdf1/3 genes in the genomes of B. floridae, B. belcheri, B. japonicum, and B. lanceolatum were determined according to two recent studies (Bras\u00f3-Vives et al., 2022; Huang et al., 2023), while positions of these genes in sea urchin (S. purpuratus) were retrieved directly from Echinobase, in other species including zebrafish (D. rerio), elephant shark (C. milii), vase tunicate (C. intestinalis), acorn worm (S. kowalevskii), polychaete worm (C. teleta), and fruit fly (D. melanogaster) were retrieved directly from Ensembl database.\n\n### Phylogenetic analyses\n\nAmino acid sequences of Gdf1/3 and related TGF-\u03b2 factors were aligned by ClustalX integrated in MEGA5 software (Tamura et al., 2011). The aligned sequences were then used to construct a phylogenetic tree using the maximum likelihood method with PhyML (http://atgc.lirmm.fr/phyml/; Guindon et al., 2010). The substitution model was automatically selected by Smart Model Selection in PhyML (Lefort et al., 2017).\n\n### Quantitative real-time polymerase chain reaction\n\nEmbryos or eggs (about 200 per sample) were harvested at desired stages and used to extract total RNA by TRIzol reagent (Ambion). cDNA was synthesized using HiScript III RT SuperMix (+gDNA wiper) kit (Vazyme). Quantitative real-time polymerase chain reaction analysis was performed with ChamQ Universal SYBR qPCR Master Mix kit (Vazyme) on a CFX96 Touch Real-Time PCR Detection System (Bio-Rad) under the conditions of 95\u00b0C for 2 min, 40 cycles at 95\u00b0C for 5 s, 60\u00b0C for 30 s. Expression levels of Nodal, Gdf1/3, Gdf1/3-like, and Lefty were normalized to that of Gapdh (glyceraldehyde-3-phosphate dehydrogenase). Graphs were finished with GraphPad Prism 9 software. Primers for quantitative real-time polymerase chain reaction analysis and their sequences were as follows: BfGdf1/3-like-RT-F (5\u2032-CAAGGGCAAATATCACGACA-3\u2032), Bf Gdf1/3-like-RT-R (5\u2032-TTCACGTCGTCTCTGTCGAA-3\u2032), BfNodal-RT-F (5\u2032-GGACAGACCTCAACGTCACCC-3\u2032), BfNodal-RT-R (5\u2032-CTGAAGACACGCACGGAAAGT-3\u2032), BfLefty-RT-F (5\u2032-CACTGACGCCAGTGGTGCA-3\u2032), BfLefty-RT-R (5\u2032-CGTTGTTGAAAGACTTTCGAGT-3\u2032), BfGdf1/3-RT-F (5\u2032-TTCTCGGCTTTCGTGAACGG-3\u2032), BfGdf1/3-RT-R (5\u2032-ACAGTCCAACCATTTTCGGCA-3\u2032), Gapdh-RT-F (5\u2032-GGTGGAAAGGTCCTGCTCTC-3\u2032), and Gapdh--RT-R (5\u2032-CTGGATGAAAGGGTCGTTAATGG-3\u2032).\n\n### Overexpression experiments\n\nCoding sequences of Nodal and Gdf1/3-like were amplified from cDNA templates of amphioxus embryos and ligated into the pXT7 vector using T4 DNA ligase (Promega). Due to low expression level, coding exons of Gdf1/3 were individually amplified from genomic DNA templates and then assembled into the pXT7 vector using a Gibson cloning kit (New England Biolabs). Nodal, Gdf1/3, and Gdf1/3-like mRNA were synthesized using T7 mMESSAGE mMACHINE kit (Ambion). Unfertilized eggs were injected with mRNAs and fertilized as previously described (Liu et al., 2013). The injected embryos were treated, with 0.2% dimethyl sulfoxide (as control) or 50 \u03bcM SB505124, from 4-cell stage to G1 stage and were fixed at G4 or N3 stage for whole-mount in situ hybridization.\n\n### Generation of mutant animals and embryos\n\nGdf1/3 mutant were generated using CRISPR/Cas9 system targeting a site (Gdf1/3-sgRNA: 5\u2032-GGCCCGCTGTAGCGATGA-3\u2032) in the first exon. The process of generating founders of Gdf1/3 gene knock-out was implemented as our previous study (Su et al., 2020). F1 Gdf1/3+/\u2212 carrying \u221225 bp mutation were intercrossed to generate Gdf1/3\u2212/\u2212 (Figure 2\u2014figure supplement 1). A pair of primer (Gdf1/3-Cas9-F1: 5\u2032-TACCACACATCACCCGGACT-3\u2032/Gdf1/3-PCR-R1: 5\u2032-CACATCCTCGTCTTCCGGTC-3\u2032) and SfcI enzyme were used for genotyping and mutation type analysis.\n\nGdf1/3-like mutants were generated with a TALEN pair (Gdf1/3-like-Fw: 5\u2032-TTCGACAGAGACGAC-3\u2032/Gdf1/3-like-Rv: 5\u2032-TGCACGGCGCTCACGA-3\u2032) targeting the coding region of the second exon as previously reported (Li et al., 2014; Li et al., 2017). F1 heterozygotes carrying a one base pair insertion (+1 bp) were used and intercrossed to generate homozygote mutants (Gdf1/3-like\u2212/\u2212) (Figure 2\u2014figure supplement 3A). Embryos or tiny tips of adult tail were lysed with Animal Tissue Direct PCR Kit (Foregene) to release the genomic DNA. Genomic region spanning the target site were amplified with primer Gdf1/3-like-TALEN-F: 5\u2032-CGTGACGTACTCCGTGTCTG-3\u2032/Gdf1/3-like-TALEN-R1: 5\u2032-GCTGAAGTGTGGGCAAGAGT-3\u2032 or Gdf1/3-like-TALEN-R0: 5\u2032-CCGTTTGCAGATGTTGCCG-3\u2032. The amplicons were digested with StuI to test the mutations and sequenced to recognize the mutation types.\n\nNodal heterozygotes (Nodal+/\u2212) were generated using a TALEN pair (Nodal-Fw2/Rv2) in previous study (Shi et al., 2020). Male and female Nodal+/\u2212 carrying identical mutation (-7 bp) were intercrossed to generate Nodal\u2212/\u2212 (Figure 3\u2014figure supplement 1A). Genotyping for Nodal mutants were implemented as previous study (Shi et al., 2020). A TALEN pair (Nodal-Fw2/Rv2) assembled previously (Shi et al., 2020) and a sgRNA (Nodal-sgRNA:5\u2032-GGCGGAGAGGGTCTGACGCT-3\u2032) reported previously (Su et al., 2020) were used to generate hundreds of chimeric female founders. By adulthood stage, among nearly 100 of animals, an individual generated with Nodal-Fw2/Rv2 (named founder 1, F0\u26401) and another individual generated with Nodal-sgRNA (named founder 2, F0\u26402) laid eggs lacking maternal Nodal accumulation (Figure 3\u2014figure supplement 2A) with 50% and 20% ratio, respectively. Each female founder was crossed with a male WT, respectively, to generated maternal Nodal mutants (MNodal) and crossed with a male Nodal+/\u2212, respectively, to generated maternal\u2013zygotic Nodal mutants (MZNodal) (Figure 3\u2014figure supplement 2B).\n\n### Generation of transgenic animals and embryos\n\nThe intergenic region between Gdf1/3-like and Lefty was cloned into the pmini-Chordin-mCherry (Shi et al., 2018) by replacing its Chordin promoter with the intergenic region. The generated pmini-Lefty-mCherry construct was used to generate Lefty::mCherry transgenic amphioxus with method reported previously (Shi et al., 2018). The intergenic region, the coding sequence of mCherry and eGFP sequence were linked into the pminiTol2 plasmid with a Gibson cloning kit (New England Biolabs) to generate pmini-eGFP-Lefty-Gdf1/3-like-mCherry construct. The later was injected into amphioxus embryos. The injected embryos were treated, with 0.2% dimethyl sulfoxide (as control) or 50 \u03bcM SB505124, from 4-cell stage to G1 stage.\n\n### Whole-mount in situ hybridization and imaging\n\nThe RNA probes used in present study were prepared previously (Li et al., 2017; Shi et al., 2018; Zhang et al., 2019), except the probe of eGFP and Gdf1/3 gene, which was prepared using the same method as described in a previous study (Li et al., 2017). Embryos at desired developmental stages were fixed with 4% paraformaldehyde in MOPS buffer (PFA\u2013MOPS, wt/vol) and then stored in 80% ethanol in H2O (vol/vol) at \u221220\u00b0C until needed. Whole-mount in situ hybridization was performed as previously described (Yu and Holland, 2009). After staining, the embryos were mounted in 80% glycerol (vol/vol) for photographing under an inverted microscope (Olympus IX71). Living amphioxus embryos or larvae were observed using the same microscope. We use Photoshop software to automatically stitch together photos of different parts of the embryo or larva, when a single field of view cannot display the whole mount of embryo or larva.\n\nThe double in situ hybridization of Lefty and Gdf1/3-like was achieved by using amplification-based single-molecule in situ hybridization (asmFISH) method as described in a previous study (Lin et al., 2021), which hereby was performed using SEERNA ISH RNA Fluorescence in Situ Detection Kit (SEERNA Bioscience, Xiamen, China, Cat# SP1001, SP1002, and SP1003) under the guidance of standard protocol of the manual. The details are as follows. The label probes of Lefty and Gdf1/3-like were conjugated to Cy5 and Alexa fluor 488, respectively (provided in the Kit). For asmFISH, embryos at desired developmental stages were fixed in 4% PFA\u2013MOPS (wt/vol) and then stored in methanol at \u221220\u00b0C until needed. Before hybridization, the embryos were permeabilized in 0.1 M HCl containing 0.1 mg/ml pepsin (Sigma, Cat# P7012) at 37\u00b0C (for 5 min at 256-cell and G1 stage, 9 min at G4 stage, 30 min at N2 stage) and washed with Wash Buffer (provided in the Kit). The embryos were then incubated in order with the following solutions: target probes in hybridization mix at 46\u00b0C for 4 hr, ligation mix at 37\u00b0C for 30 min, splint primers in the circularization mix at 37\u00b0C for 30 min, amplification mix for rolling circle amplification at 30\u00b0C overnight, label probes in hybridization buffer at room temperature for 30 min. Embryos were washed with the Wash Buffer three times after each step. Finally, the embryos were placed in a Mounting medium (Solarbio, Cat# S2100) containing 0.5 \u03bcg/ml 4,6-diamidino-2-phenylindole (Sigma, Cat# D8417), which were then ready for image acquisition using the Zeiss LSM980 microscope.\n",
+      "created_at": "2025-12-04T04:09:28.656936Z"
+    },
+    {
+      "id": "651b4604-effe-4616-94c6-15b6f564cbb0",
+      "submission_id": "82873db2-4963-4030-ac74-22d141f449ac",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Shigehiro Kuraku, https://ror.org/02xg1m795 National Institute of Genetics Japan\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.89615.sa0](https://doi.org/10.7554/eLife.89615.sa0)\n\nThis valuable work advances our understanding of how deuterostome body plan is established during development as well as how the gene regulatory network governing early embryogenesis has been rewired during animal evolution. The evidence supporting the conclusions is compelling, with a suite of molecular-level experiments. The work will be of broad interest to developmental biologists.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Shigehiro Kuraku, https://ror.org/02xg1m795 National Institute of Genetics Japan\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.89615.sa1](https://doi.org/10.7554/eLife.89615.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nDecision letter after peer review:\n\nThank you for submitting your work entitled \"Evolution of the gene regulatory network of body axis by enhancer hijacking in amphioxus\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Claude Desplan as the Senior Editor.\n\nWe congratulate you on the valuable findings reported in the manuscript. However, although most of the supporting arguments are compelling, some are incomplete and you still need to provide arguments to convince the reviewers with 1) molecular phylogeny of Gdf1/3 in relation to Bmp2/4 and 2) co-expression of Gdf1/3 and Lefty. For the latter, adding double in situ hybridization data to the manuscript seems a straightforward solution. Please also respond to all the points raised below by the reviewers by incorporating the suggestions in the manuscript or arguing why they might not be necessary.\n\nReviewer #1 (Recommendations for the authors):\n\nThis manuscript focuses on amphioxus development and reports remarkable changes in the role of the previously documented regulatory gene, Gdf1/3-like, a duplicate gene unique to the amphioxus that replaces that of Gdf1/3 and Nodal genes. Their functional assays supported by a suite of molecular-level experiments provides solid evidence of an evolutionary rewiring of gene regulatory network governing early embryogenesis to confer a new role that resembles the Lefty gene on the Gdf1/3-like gene.\n\nThe authors of this manuscript performed gene expression profiling of the two Gdf1/3 orthologs in amphioxus and analyzed loss-of-function phenotypes of the Gdf1/3-like gene as well as Nodal mutants. Their cross-species comparisons suggested the overwriting of the embryonic regulatory processes in amphioxus \u2013 the additional Gdf1/3 gene retreated from the Nodal signalling and acquired the maternal expression originally exhibited by the Lefty gene. The study provides a novel insight into how gene duplication conferred novel embryonic regulatory systems. The study is well designed and soundly discussed and concluded, but the authors are suggested to improve the manuscript by considering the points listed below.\n\n1. The naming and duality of mammalian Gdf1/3 orthologs are not mentioned in the Introduction. When first introduced, they should appear as separate genes Gdf1 and Gdf3 at least once. This is confusing to readers who have not dealt with those genes.\n\n2. Line 27 in the Abstract \u2013 The phrase 'share regulatory region' should have an article or should be in plural, depending on the context.\n\n3. Line 231 'the GRN could also evolve or diverge' \u2013 what does this mean exactly? This part should be clarified.\n\n4. Line 298 'Amphioxus has been shown to possess small-scale gene duplications' \u2013 Small-scale gene duplications should have occurred and be observed in any large genomes. This part of the sentence should be deleted. The next sentence can start with something like 'Gdf1/3 is one of the reported examples of small-scale gene duplications'.\n\n5. How distant is Gdf1/3 from Bmp2/4 in the different deuterostome species? This information should be reflected in Figure 1a or in the text. Small distance should make the gene linkage look more likely to have been generated through tandem gene duplication.\n\n6. Line 576 'elephant Shark' -> elephant shark or elephant fish (if you respect how the species is called near its habitats, Australia and New Zealand).\n\n7. The taxonomic presentation of the different lineages is rarely correct in the figures. Vertebrata, Echinodermata, Cephalochordata, \u2026 If it denotes the species therein, the words should be in plural like Vertebrates, Echinoderms, and Cephalochordates, if I understand correctly.\n\n8. The middle part of the Abstract that is supposed to be describing the solid results of the study looks like a Discussion including interpretations and speculations (e.g., 'hijacking') rather than descriptions of approaches taken and the obtained data. The authors need to revise the second half of the Abstract by making a distinction in the tone between fact description and interpretation/speculation.\n\nReviewer #2 (Recommendations for the authors):\n\nIn this paper Shi et al. study the role of Gdf1/3 and its orthologue Gdf1/3-like during amphioxus embryonic development. The work uses KO animals for Gdf1/3, Gdf1/3-like and Nodal, and establishes that the conserved role of this gene in the control of embryonic axes is developed by the Gdf1/3-like gene while Gdf1/3 has lost this function. Finally, through the use of a transgenic animal, they show that the regulation of the expression of Gdf1/3-like is carried out through elements located in the region between this gene and Lefty, suggesting that after the duplication of Gdf, one of the duplicated genes has co-opted the regulatory elements of Lefty to carry out its function. Finally, an evolutionary scenario in which the expression changes of these genes and Nodal between amphioxus and other deuterostomes, as well as the acquisition of the Lefty-like Gdf1/3-like expression pattern after hijacking the regulatory elements, is proposed at the end of the paper.\n\nI consider this work interesting and well developed. The question of the evolution of GRNs is important in EvoDevo, and this example is interesting as it shows that a GRN can be changed in order to maintain the same body plan. The experimental approaches are of high level, and the use of maternal mutants is, to my knowledge, the first example of this kind of approach using amphioxus.\n\nReviewer #3 (Recommendations for the authors):\n\nThe authors address the gene regulatory network of Nodal signalling in Amphioxus and how it has drifted compared to deuterostomes. By analysing the genomic structure, expression and specific mutants of the paralogue genes encoding the TGFb ligand Gdf1/3, a partner of Nodal, they convincingly demonstrate that Gdf1/3-like has replaced Gdf1/3 in Amphioxus for mediating Nodal signaling during axis determination. Mutant and rescue experiments show that Nodal and Gdf1/3-like are required together. Using complex and rigorous crossing strategies, they elegantly uncover a maternal contribution of Nodal to antero-posterior and dorso-ventral axis determination, acquired in Amphioxus. Based on close genomic proximity and expression patterns, they explore the hypothesis that Gdf1/3-like has hijacked Lefty enhancers to support this developmental system drift. Using transgenic lines, they provide evidence that the intergenic region between Gdf1/3-like and Lefty is sufficient to drive the specific expression pattern, and that it is sensitive to a drug targeting Nodal and TGFb signaling.\n\nThe genetic investigation is solid, including the generation of 3 mutant lines, rescue experiments, drug treatments and the generation of 2 transgenic lines, convincingly supporting the claim of gene regulatory network evolution. However, the main claim of enhancer hijacking is not completely established and will require strengthening or modulation.\n\nOverall, this carefully performed study provides an example of a developmental system drift, which will be of broad interest to evolutionary and developmental biologists.\n\n\u2013 Validation of Gdf1/3-like mutants should be supported by control experiments showing that Gdf1/3-like expression is impaired. Since TALEN can have off-targets, it is important to show that the associated pathway and neighbouring loci are not affected (Gdf1/3, Bmp2/4, Lefty, Nodal). The conclusion that \"the expression of Gsc was already activated in Gdf1/3-like+/+ and most Gdf1/3-like+/- but not in Gdf1/3-like-/- embryos\" is difficult to follow in Supplementary Figure 5 and should be quantified by qPCR.\n\n\u2013 Similarly, zygotic Nodal mutants are not validated for impairment of Nodal signaling.\n\n\u2013 The hypothesis that Gdf1/3-like has hijacked Lefty enhancers is relevant but requires strengthening. An alternative hypothesis could be that Gdf1/3-like duplication was translocated close to Lefty with its own enhancers.\n\nCo-expression of Gdf1/3-like and Lefty is lacking, either by double ISH such as recent HCR development (PMID: 32394382) or from available single cell RNAseq dataset. Can putative common enhancer or factor binding sites be identified by analysis of the intergenic sequence? Is there any Foxh1, Smad-responsive motifs? Are both Gdf1/3-like and Lefty expressions affected upon mutation of the intergenic sequence?\n\nPlease comment on differences in Figure 4 between mcherry and endogenous gene expression, and differences between mcherry and egfp. Illustration of SB505124 treatment is lacking as well as control of the effect on Nodal signaling.\n\nIt is intriguing to see that in maternal Nodal mutant, Gdf1/3-like and Lefty expressions re-appears before zygotic Nodal. Does it imply that they have alternative inducers? This is also consistent with the partial effect of SB505124.\n",
+      "created_at": "2025-12-04T04:09:28.656936Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T04:09:28.656936Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T04:09:28.656936Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "db26c11f-4d8a-4894-9aff-3c84702acbe1",
+      "content_id": "24d5ca38-6b9e-4717-8d8e-c277bd46bb51",
+      "claim_id": "C1",
+      "claim": "Gdf1/3 genes have only been detected in deuterostomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Gdf1/3 genes have only been detected in deuterostomes (Stenzel et al., 1994; Lapraz et al., 2006; Satou et al., 2008; Simakov et al., 2015; Opazo and Zavala, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to published literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:09:28.656936Z"
+    },
+    {
+      "id": "dd0924f0-b162-45a3-b3a3-70a1ce980e84",
+      "content_id": "24d5ca38-6b9e-4717-8d8e-c277bd46bb51",
+      "claim_id": "C2",
+      "claim": "Gdf1/3 is linked to Bmp2/4 in many deuterostome species.",
+      "claim_type": "EXPLICIT",
+      "source": "The gene is linked to Bmp2/4 in many deuterostome species (Figure 1A; Range et al., 2007; Satou et al., 2008)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by citations and Figure 1A showing gene arrangements",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:09:28.656936Z"
+    },
+    {
+      "id": "3b20a030-439d-4d52-b45c-ee6a0d513ce8",
+      "content_id": "24d5ca38-6b9e-4717-8d8e-c277bd46bb51",
+      "claim_id": "C3",
+      "claim": "The linkage between Gdf1/3 and Bmp2/4 is lost in higher vertebrates like mice, chickens, and frogs.",
+      "claim_type": "EXPLICIT",
+      "source": "though this linkage is lost in higher vertebrates like mice, chickens, and frogs (Opazo and Zavala, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to published literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:09:28.656936Z"
+    },
+    {
+      "id": "c86de825-2a95-4e04-b62e-ac7231503750",
+      "content_id": "24d5ca38-6b9e-4717-8d8e-c277bd46bb51",
+      "claim_id": "C4",
+      "claim": "Gdf1/3 originated from Bmp2/4 by a tandem duplication event that occurred in the common ancestor of deuterostomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, sequence similarity and phylogenetic evidence supported the view that Gdf1/3 originated from Bmp2/4 by a tandem duplication event that occurred in the common ancestor of deuterostomes (Figure 1A, Figure 1\u2014figure supplement 1; Lapraz et al., 2006; Range et al., 2007; Satou et al., 2008).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by phylogenetic analysis, sequence similarity, and citations",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:09:28.656936Z"
+    },
+    {
+      "id": "2a764eda-9228-4b53-bbd5-37a31821ad83",
+      "content_id": "24d5ca38-6b9e-4717-8d8e-c277bd46bb51",
+      "claim_id": "C5",
+      "claim": "Branchiostoma floridae contains two Gdf1/3 genes.",
+      "claim_type": "EXPLICIT",
+      "source": "However, Floridae amphioxus (Branchiostoma floridae) was reported to contain two Gdf1/3 genes (Satou et al., 2008)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to published literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:09:28.656936Z"
+    },
+    {
+      "id": "e391d1ad-371f-4822-af54-bb0bc996637a",
+      "content_id": "24d5ca38-6b9e-4717-8d8e-c277bd46bb51",
+      "claim_id": "C6",
+      "claim": "One of the two Gdf1/3 genes in B. floridae (previously named GDF1/3-like2) is linked to Bmp2/4 and represents the ancestral amphioxus Gdf1/3 gene.",
+      "claim_type": "EXPLICIT",
+      "source": "one of which (previously named GDF1/3-like2 by Satou et al., 2008) is linked to Bmp2/4 as was found in other deuterostomes, representing the ancestral amphioxus Gdf1/3 gene (hereafter renamed Gdf1/3, Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by genomic linkage data and comparison with other deuterostomes",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:09:28.656936Z"
+    },
+    {
+      "id": "1ad36906-6824-43bd-8aec-9adc4b01b399",
+      "content_id": "24d5ca38-6b9e-4717-8d8e-c277bd46bb51",
+      "claim_id": "C7",
+      "claim": "The other Gdf1/3 gene in B. floridae (previously known as GDF1/3-like1 or Vg1) is linked to Lefty.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, the other one (previously known as GDF1/3-like1 [Satou et al., 2008] or Vg1 [Onai et al., 2010]), here renamed as Gdf1/3-like (Figure 1A), is also linked to a transforming growth factor-\u03b2 (TGF-\u03b2) family gene Lefty (Satou et al., 2008).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by genomic data and citations",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:09:28.656936Z"
+    },
+    {
+      "id": "93eb6d30-3be5-4846-b3c3-f153413bb92a",
+      "content_id": "24d5ca38-6b9e-4717-8d8e-c277bd46bb51",
+      "claim_id": "C8",
+      "claim": "The Gdf1/3-like gene and its linkage to Lefty exist only in amphioxus species, but not in any other bilaterians examined.",
+      "claim_type": "EXPLICIT",
+      "source": "Further survey on recently updated genomes of bilaterians, especially those reported to have Lefty genes, revealed that the Gdf1/3-like gene and its linkage to Lefty exist only in amphioxus species, but not in any other bilaterians examined (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by comparative genomic analysis shown in Figure 1A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:09:28.656936Z"
+    },
+    {
+      "id": "a808ad08-0485-4b89-9785-ce15c3a59ad8",
+      "content_id": "24d5ca38-6b9e-4717-8d8e-c277bd46bb51",
+      "claim_id": "C9",
+      "claim": "The Gdf1/3-like gene most likely arose in Cephalochordata through a tandem duplication of Gdf1/3, followed by a translocation to the Lefty locus.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings suggest that the Gdf1/3-like gene most likely arose in Cephalochordata, or at least in the genus of Brachiostoma, through a tandem duplication of Gdf1/3, followed by a translocation of it to the Lefty locus (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inferred from comparative genomic data and phylogenetic distribution",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:09:28.656936Z"
+    },
+    {
+      "id": "700027d3-e3ac-411e-a9be-bf1f54412cf1",
+      "content_id": "24d5ca38-6b9e-4717-8d8e-c277bd46bb51",
+      "claim_id": "C10",
+      "claim": "Lineage-specific duplication of the Gdf1/3 gene and translocation of the duplicate to other genomic regions have been found in at least two lineages of vertebrates.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with this proposal, lineage-specific duplication of the Gdf1/3 gene and translocation of the duplicate to other genomic regions have also been found in at least two lineages of vertebrates (Opazo and Zavala, 2018; Opazo et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to published literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:09:28.656936Z"
+    },
+    {
+      "id": "82b34f71-fed0-4a1d-870b-ba4bc3a395ee",
+      "content_id": "24d5ca38-6b9e-4717-8d8e-c277bd46bb51",
+      "claim_id": "C11",
+      "claim": "No maternal expression of Gdf1/3-like was detected in amphioxus embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "Inconsistent with previous study (Onai et al., 2010), no maternal expression of Gdf1/3-like was detected in our analyses (Figure 1B, Figure 1\u2014figure supplements 2\u20134).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by in situ hybridization, qRT-PCR, and RNA-seq data shown in figures",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:09:28.656936Z"
+    },
+    {
+      "id": "3d888661-345a-4c04-b16b-c5cb89173fbc",
+      "content_id": "24d5ca38-6b9e-4717-8d8e-c277bd46bb51",
+      "claim_id": "C12",
+      "claim": "Zygotic expression of Gdf1/3-like was first detected in the dorsal blastomeres of the vegetal pole at the 32- to 64-cell stage.",
+      "claim_type": "EXPLICIT",
+      "source": "Zygotic expression of the gene was first detected in the dorsal blastomeres of the vegetal pole at the 32- to 64-cell stage, and then restricted in the dorsal blastopore lip (Spemann organizer) at the gastrula stage and the left side of the embryo from the early neurula stage (Figure 1B, Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by in situ hybridization data shown in figures",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:09:28.656936Z"
+    },
+    {
+      "id": "918f2702-688a-4c57-83bc-9c02bece13d6",
+      "content_id": "24d5ca38-6b9e-4717-8d8e-c277bd46bb51",
+      "claim_id": "C13",
+      "claim": "The expression pattern of Gdf1/3-like is similar to that of Lefty.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the expression pattern of Gdf1/3-like is similar (although not identical) to that of Lefty (Figure 1B, Figure 1\u2014figure supplements 2\u20135).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by comparison of expression patterns shown in figures",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:09:28.656936Z"
+    },
+    {
+      "id": "618bffb2-7d78-41f5-91a3-a691500e8909",
+      "content_id": "24d5ca38-6b9e-4717-8d8e-c277bd46bb51",
+      "claim_id": "C14",
+      "claim": "No Gdf1/3 transcripts were detected in amphioxus embryos before the neurula stage.",
+      "claim_type": "EXPLICIT",
+      "source": "Unexpectedly, no Gdf1/3 transcripts were detected in amphioxus embryos before the neurula stage, and very weak expression of the gene was found in few cells of the anterior ventral pharyngeal region during the late neurula and larva stages (Figure 1B, Figure 1\u2014figure supplements 2\u20134).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by in situ hybridization, qRT-PCR, and RNA-seq data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:09:28.656936Z"
+    },
+    {
+      "id": "410e74c3-a7ad-48eb-815f-38f56905dc04",
+      "content_id": "24d5ca38-6b9e-4717-8d8e-c277bd46bb51",
+      "claim_id": "C15",
+      "claim": "Homozygous Gdf1/3 mutants displayed normal D\u2013V and L\u2013R axis patterning.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with its restricted and weak expression pattern, the homozygous Gdf1/3 mutants (Gdf1/3\u2212/\u2212) displayed normal D\u2013V and L\u2013R axis patterning as the wild-type (WT) by the 3-gill slit stage (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by phenotypic analysis of mutants shown in figure",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:09:28.656936Z"
+    },
+    {
+      "id": "ba1b9d5e-28dd-4335-8148-96c0943a91be",
+      "content_id": "24d5ca38-6b9e-4717-8d8e-c277bd46bb51",
+      "claim_id": "C16",
+      "claim": "Gdf1/3 has disassociated from the GRN of body axis formation in living amphioxus.",
+      "claim_type": "EXPLICIT",
+      "source": "These data suggested that Gdf1/3 has disassociated from the GRN of body axis formation in living amphioxus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from expression pattern and mutant phenotype data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:09:28.656936Z"
+    },
+    {
+      "id": "779c7232-3896-41ee-b8fc-645806599dc4",
+      "content_id": "24d5ca38-6b9e-4717-8d8e-c277bd46bb51",
+      "claim_id": "C17",
+      "claim": "Overexpression of Gdf1/3 results in the expansion of anterior and dorsal identity at the expense of ventral structures.",
+      "claim_type": "EXPLICIT",
+      "source": "It is, however, notable that overexpression of Gdf1/3 by injecting its mRNA could result in the expansion of anterior and dorsal identity (expressing FoxQ2, Wnt3, Brachyury, and Chordin) at the expense of ventral structures (expressing Evx) (Figure 2\u2014figure supplement 2)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by mRNA injection experiments and marker gene expression analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:09:28.656936Z"
+    },
+    {
+      "id": "418982c2-d6dd-4dfe-94f8-0c943a63e7dd",
+      "content_id": "24d5ca38-6b9e-4717-8d8e-c277bd46bb51",
+      "claim_id": "C18",
+      "claim": "Gdf1/3 still works as a ligand of Nodal signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "These results demonstrated that the Gdf1/3 still works as a ligand of Nodal signaling, although it is dispensable to the body axis formation of extant amphioxus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from overexpression experiments and inhibitor treatment",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:09:28.656936Z"
+    },
+    {
+      "id": "f95612d1-361c-43c3-81ad-882eeee93520",
+      "content_id": "24d5ca38-6b9e-4717-8d8e-c277bd46bb51",
+      "claim_id": "C19",
+      "claim": "Gdf1/3-like\u2212/\u2212 embryos showed severe defects in axis formation.",
+      "claim_type": "EXPLICIT",
+      "source": "Gdf1/3-like\u2212/\u2212 embryos showed severe defects in axis formation. At the G5 stage, the Gdf1/3-like\u2212/\u2212 embryos failed to flatten dorsally like the WT embryos (Figure 2\u2014figure supplement 3A), and at subsequent stages they lacked most of the anterior and dorsal structures (Figure 2A, Figure 2\u2014figure supplement 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by phenotypic analysis of mutants shown in figures",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:09:28.656936Z"
+    },
+    {
+      "id": "aa8d5a9c-f1d8-47c6-9ea9-390e426eccce",
+      "content_id": "24d5ca38-6b9e-4717-8d8e-c277bd46bb51",
+      "claim_id": "C20",
+      "claim": "A minority of Gdf1/3-like+/\u2212 larvae showed no left but two-right phenotype by the L2 stage.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, by the L2 stage, there was a minority of Gdf1/3-like+/\u2212 larvae showing no left but two-right phenotype (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by phenotypic analysis shown in figure",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:09:28.656936Z"
+    },
+    {
+      "id": "71b77050-31f7-4b4e-a0b2-ebac50c7f2ba",
+      "content_id": "24d5ca38-6b9e-4717-8d8e-c277bd46bb51",
+      "claim_id": "C21",
+      "claim": "In Gdf1/3-like\u2212/\u2212 embryos at G5 stage, the expression of dorsal markers (Gsc, Chordin, Netrin, SoxB1a) disappeared, while ventral markers (Evx, Ap2) expanded dorsally.",
+      "claim_type": "EXPLICIT",
+      "source": "At the gastrulae (G5) stage of Gdf1/3-like\u2212/\u2212, the expression of Gsc in dorsal mesoderm, Chordin and Netrin in dorsal mesoderm and neural ectoderm and SoxB1a in dorsal pan-neural ectoderm disappeared, while that of Evx in ventral domain and Ap2 in epidermal ectoderm expanded dorsally (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by in situ hybridization analysis shown in figure",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:09:28.656936Z"
+    },
+    {
+      "id": "d894d566-4eb2-40b0-aef4-0ea8d6f3a4c3",
+      "content_id": "24d5ca38-6b9e-4717-8d8e-c277bd46bb51",
+      "claim_id": "C22",
+      "claim": "Gdf1/3-like is indispensable for body axes formation in amphioxus.",
+      "claim_type": "EXPLICIT",
+      "source": "These data collectively indicated that Gdf1/3-like is indispensable for body axes formation in amphioxus and its loss-of-function leads to loss of dorsal, anterior, and left identities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from mutant phenotype and marker gene expression analysis",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:09:28.656936Z"
+    },
+    {
+      "id": "6af82512-d7ca-4aae-8db1-275eaa149d02",
+      "content_id": "24d5ca38-6b9e-4717-8d8e-c277bd46bb51",
+      "claim_id": "C23",
+      "claim": "In the absence of Gdf1/3-like, Nodal alone could not activate the Nodal signaling in amphioxus.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggested that in the absence of Gdf1/3-like, Nodal alone could not activate the Nodal signaling in amphioxus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from Gsc expression analysis in Gdf1/3-like mutants",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:09:28.656936Z"
+    },
+    {
+      "id": "fe1aa682-7e46-45f3-9101-af72f785027e",
+      "content_id": "24d5ca38-6b9e-4717-8d8e-c277bd46bb51",
+      "claim_id": "C24",
+      "claim": "Nodal is expressed both maternally and zygotically in amphioxus.",
+      "claim_type": "EXPLICIT",
+      "source": "In amphioxus, Nodal is expressed both maternally and zygotically (Onai et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to published literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:09:28.656936Z"
+    },
+    {
+      "id": "5b9e7fad-28d2-4da8-af05-11aef6a2d17f",
+      "content_id": "24d5ca38-6b9e-4717-8d8e-c277bd46bb51",
+      "claim_id": "C25",
+      "claim": "Nodal\u2212/\u2212 embryos exhibited defects of L\u2013R axis.",
+      "claim_type": "EXPLICIT",
+      "source": "Nodal\u2212/\u2212 embryos exhibited defects of L\u2013R axis (Figure 3\u2014figure supplement 1) as Gdf1/3-like+/\u2212 (shown above) and embryos in which late Nodal signaling activity was blocked (Soukup et al., 2015; Li et al., 2017).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by phenotypic analysis and citations",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:09:28.656936Z"
+    },
+    {
+      "id": "53cec841-4fa9-420f-8221-02686c687ac4",
+      "content_id": "24d5ca38-6b9e-4717-8d8e-c277bd46bb51",
+      "claim_id": "C26",
+      "claim": "Zygotic Nodal is necessary for L\u2013R patterning in amphioxus.",
+      "claim_type": "EXPLICIT",
+      "source": "This result showed that zygotic Nodal is necessary for L\u2013R patterning in amphioxus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from Nodal\u2212/\u2212 mutant phenotype",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:09:28.656936Z"
+    },
+    {
+      "id": "5b0a4e25-5526-48cd-ad2b-84d4ade28651",
+      "content_id": "24d5ca38-6b9e-4717-8d8e-c277bd46bb51",
+      "claim_id": "C27",
+      "claim": "Around 50% and 20% of eggs released by founders 1 and 2, respectively, showed no maternal Nodal mRNA accumulation.",
+      "claim_type": "EXPLICIT",
+      "source": "In situ hybridization experiment revealed that around 50% and 20% of eggs released by the founders 1 and 2, respectively, showed no maternal Nodal mRNA accumulation (Figure 3A, B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by in situ hybridization data shown in figures",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:09:28.656936Z"
+    },
+    {
+      "id": "a0b1858a-6f6a-4bf0-aedb-eae39b7504c2",
+      "content_id": "24d5ca38-6b9e-4717-8d8e-c277bd46bb51",
+      "claim_id": "C28",
+      "claim": "Around 50% and 20% of eggs from founders 1 and 2 fertilized with WT sperms (MNodal) showed a mild ventralized phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with this, when eggs of the two founders were fertilized with WT sperms (Figure 3\u2014figure supplement 2B), around 50% and 20% of them (MNodal) showed a mild ventralized phenotype, respectively (Figure 3C, D, Figure 3\u2014figure supplement 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by phenotypic analysis shown in figures",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:09:28.656936Z"
+    },
+    {
+      "id": "a8c0e596-0623-4eb6-ae20-ff3222dd7b32",
+      "content_id": "24d5ca38-6b9e-4717-8d8e-c277bd46bb51",
+      "claim_id": "C29",
+      "claim": "MZNodal embryos displayed ventralized phenotypes being more severe than MNodal mutants, but comparable to Gdf1/3-like mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "MZNodal embryos, as expected, accounting for around 25% and 10% of offspring of the founders 1 and 2, respectively, displayed ventralized phenotypes being more severe than MNodal mutants, but comparable to Gdf1/3 mutants (Figure 3C, D, Figure 3\u2014figure supplement 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by phenotypic analysis shown in figures",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:09:28.656936Z"
+    },
+    {
+      "id": "439d3f86-fb51-4b00-af30-173e7c75513d",
+      "content_id": "24d5ca38-6b9e-4717-8d8e-c277bd46bb51",
+      "claim_id": "C30",
+      "claim": "Maternal Nodal is required for regulating the D\u2013V axis formation in amphioxus.",
+      "claim_type": "EXPLICIT",
+      "source": "These results collectively indicated that maternal Nodal, probably zygotic Nodal as well, is required for regulating the D\u2013V axis formation in amphioxus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from MNodal and MZNodal mutant phenotypes and marker gene expression",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:09:28.656936Z"
+    },
+    {
+      "id": "2287b8b6-f20b-4526-bf47-693dba4fb886",
+      "content_id": "24d5ca38-6b9e-4717-8d8e-c277bd46bb51",
+      "claim_id": "C31",
+      "claim": "Nodal mRNA injection could rescue Gsc expression in MNodal embryos, while Gdf1/3-like mRNA injection could not.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that Nodal mRNA injection could rescue Gsc expression in the MNodal embryos, while Gdf1/3-like mRNA injection could not, although it expanded the Gsc expression domain in normal embryos (Figure 3\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by mRNA injection experiments shown in figure",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:09:28.656936Z"
+    },
+    {
+      "id": "e7ed77e8-5405-4731-b019-8e91161f8e56",
+      "content_id": "24d5ca38-6b9e-4717-8d8e-c277bd46bb51",
+      "claim_id": "C32",
+      "claim": "Gdf1/3-like alone (without Nodal) is unable to activate Nodal signaling in amphioxus.",
+      "claim_type": "EXPLICIT",
+      "source": "This result demonstrated that Gdf1/3-like alone (without Nodal) is unable to activate Nodal signaling in amphioxus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from mRNA injection rescue experiments",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:09:28.656936Z"
+    },
+    {
+      "id": "22abd56c-2db0-4dde-aa20-f1fd2cca19a0",
+      "content_id": "24d5ca38-6b9e-4717-8d8e-c277bd46bb51",
+      "claim_id": "C33",
+      "claim": "The intergenic region between Gdf1/3-like and Lefty could drive reporter gene expression similar to that of the two genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Further transgenic analyses showed that the intergenic region between Gdf1/3-like and Lefty could drive reporter gene expression as that of the two genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by transgenic reporter assays",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:09:28.656936Z"
+    },
+    {
+      "id": "993e617b-441d-40cc-9af1-700b117bc2ac",
+      "content_id": "24d5ca38-6b9e-4717-8d8e-c277bd46bb51",
+      "claim_id": "C34",
+      "claim": "The 4 kb intergenic sequence contains sequence elements required for regulating the expression of both Gdf1/3-like and Lefty.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicated that the intergenic sequence indeed contains sequence elements required for regulating the expression of the two linked genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from transgenic reporter assays showing bidirectional activity",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:09:28.656936Z"
+    },
+    {
+      "id": "c244fc04-6477-4f93-b848-62f57c66f509",
+      "content_id": "24d5ca38-6b9e-4717-8d8e-c277bd46bb51",
+      "claim_id": "C35",
+      "claim": "Lefty expression depends on Nodal signaling in sea urchin and vertebrates.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, Lefty expression depends on Nodal signaling in these two groups (Saudemont et al., 2010; Bisgrove et al., 2017)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to published literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:09:28.656936Z"
+    },
+    {
+      "id": "cb4747ea-20cd-48ad-82a2-95f0f034cf7f",
+      "content_id": "24d5ca38-6b9e-4717-8d8e-c277bd46bb51",
+      "claim_id": "C36",
+      "claim": "Gdf1/3 expression does not depend on Nodal signaling in sea urchin.",
+      "claim_type": "EXPLICIT",
+      "source": "while Gdf1/3 expression does not, at least in sea urchin (Range et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to published literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:09:28.656936Z"
+    },
+    {
+      "id": "94779aac-2d25-4823-b9ba-1d2b88bcf01e",
+      "content_id": "24d5ca38-6b9e-4717-8d8e-c277bd46bb51",
+      "claim_id": "C37",
+      "claim": "Lefty expression in amphioxus embryos depends on Nodal signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, we and others also showed that Lefty expression in amphioxus embryos depends on Nodal signaling (Soukup et al., 2015; Morov et al., 2016; Li et al., 2017; Zhang et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by current study and citations",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:09:28.656936Z"
+    },
+    {
+      "id": "d10b97d1-cd48-4bfe-adcc-7dd81fc15633",
+      "content_id": "24d5ca38-6b9e-4717-8d8e-c277bd46bb51",
+      "claim_id": "C38",
+      "claim": "The 4 kb region was initially responsible for Lefty expression, and then hijacked by Gdf1/3-like after it was translocated to the current locus in amphioxus ancestor.",
+      "claim_type": "EXPLICIT",
+      "source": "These results therefore implied that the 4 kb region was initially responsible for Lefty expression, and then hijacked by Gdf1/3-like after it was translocated to the current locus in amphioxus ancestor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from comparative expression patterns and regulatory dependencies",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:09:28.656936Z"
+    },
+    {
+      "id": "34e1ee0a-ea5a-4c74-aaca-78ca9b73330d",
+      "content_id": "24d5ca38-6b9e-4717-8d8e-c277bd46bb51",
+      "claim_id": "C39",
+      "claim": "In MNodal embryos, the expression of Gdf1/3-like and Lefty were both significantly reduced or abolished at the early gastrula stages (G1\u2013G3).",
+      "claim_type": "EXPLICIT",
+      "source": "The result showed that, in MNodal embryos, the expression of Gdf1/3-like and Lefty were both significantly reduced or abolished at the early gastrula stages (G1\u2013G3), although their initial expressions were not affected at the blastula stage (256-cell) and their expressions re-appeared at late gastrula stage (G5) (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by in situ hybridization analysis in MNodal embryos",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:09:28.656936Z"
+    },
+    {
+      "id": "828998cd-97de-4824-b07f-bab2932fa6d3",
+      "content_id": "24d5ca38-6b9e-4717-8d8e-c277bd46bb51",
+      "claim_id": "C40",
+      "claim": "SB505124-treated embryos exhibited decreased expression for both eGFP and mCherry reporter genes driven by the 4 kb intergenic region.",
+      "claim_type": "EXPLICIT",
+      "source": "In situ result showed that compared to untreated embryos, SB505124-treated embryos exhibited decreased expression for both eGFP and mCherry genes (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by inhibitor treatment and reporter gene expression analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:09:28.656936Z"
+    },
+    {
+      "id": "65f974c2-08d5-4485-b9eb-68244749310b",
+      "content_id": "24d5ca38-6b9e-4717-8d8e-c277bd46bb51",
+      "claim_id": "C41",
+      "claim": "The 4 kb region includes the sequence elements required for Lefty and Gdf1/3-like expression regulation by Nodal signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicates that the 4 kb region includes the sequence elements required for Lefty and Gdf1/3-like expression regulation by Nodal signaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from inhibitor treatment effects on reporter gene expression",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:09:28.656936Z"
+    },
+    {
+      "id": "d10ebebf-c751-4245-b47b-5437dad4deb4",
+      "content_id": "24d5ca38-6b9e-4717-8d8e-c277bd46bb51",
+      "claim_id": "C42",
+      "claim": "The regulatory logic of Lefty expression is conserved in different deuterostomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these results imply that the regulatory logic of Lefty expression is conserved in different deuterostomes and the regulatory elements used to regulate Lefty expression was hijacked by Gdf1/3-like after its translocation next to Lefty gene in amphioxus ancestor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from comparative analysis of expression patterns and regulatory dependencies",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:09:28.656936Z"
+    },
+    {
+      "id": "7b58794c-30fe-4c34-bb44-1f0d47ff0d1c",
+      "content_id": "24d5ca38-6b9e-4717-8d8e-c277bd46bb51",
+      "claim_id": "C43",
+      "claim": "Enhancer hijacking events could trigger the evolution of a GRN.",
+      "claim_type": "EXPLICIT",
+      "source": "The most striking discovery in our study is that enhancer hijacking events could trigger the evolution of a GRN.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the overall findings of the study",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:09:28.656936Z"
+    },
+    {
+      "id": "959fc07d-19c1-4eb8-a25a-c81b0390ac30",
+      "content_id": "24d5ca38-6b9e-4717-8d8e-c277bd46bb51",
+      "claim_id": "C44",
+      "claim": "The GRN of the Nodal signaling pathway in echinoderms and vertebrates represents an ancestral scenario where Gdf1/3 is preloaded in an egg.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the GRN of the Nodal signaling pathway revealed in these species most likely represents an ancestral scenario: Gdf1/3 is preloaded in an egg; by blastula stage, Nodal and Lefty appear zygotically; Nodal functions interdependently with the preexisting Gdf1/3 to activate the signaling pathway, while Lefty restrains the activity of the signaling pathway by inhibiting the signaling (Figure 5; M\u00fcller et al., 2012; Montague and Schier, 2017).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inferred from comparative data and supported by citations",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:09:28.656936Z"
+    },
+    {
+      "id": "0a8e820e-3d90-4bc5-ae18-1672a986bcad",
+      "content_id": "24d5ca38-6b9e-4717-8d8e-c277bd46bb51",
+      "claim_id": "C45",
+      "claim": "The conserved GRN of Nodal signaling has been rewired and modified in cephalochordate amphioxus.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data showed that this highly conserved GRN has been rewired and modified in cephalochordate amphioxus: Nodal is expressed maternally in an egg; ancestral Gdf1/3 lost its expression and function at embryonic stage, while Gdf1/3-like (a duplicate of Gdf1/3) recruited the regulatory elements of Lefty and is expressed in a similar pattern as Lefty from the blastula stage; Gdf1/3-like functions interdependently with the preexisting Nodal to activate the signaling pathway; and Lefty still acts as a feedback inhibitor of the signaling pathway (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by the experimental data from the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:09:28.656936Z"
+    },
+    {
+      "id": "fc2c8d55-0f59-4b33-8aa8-54a45cc5787d",
+      "content_id": "24d5ca38-6b9e-4717-8d8e-c277bd46bb51",
+      "claim_id": "C46",
+      "claim": "At least three sequential steps are probably required to evolve the GRN as found in extant amphioxus from an ancestral situation: (1) the Gdf1/3-like originated and translocated adjacently to Lefty and hijacked its enhancers; (2) the Gdf1/3 retreated from the Nodal signal; (3) the Nodal became maternally expressed.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results and those from previous studies in other species enable us to infer that at least three sequential steps are probably required to evolve the GRN as found in extant amphioxus from an ancestral situation as reported in echinoderms and vertebrates (as discussed below): (1) the Gdf1/3-like originated and translocated adjacently to Lefty and hijacked its enhancers; (2) the Gdf1/3 retreated from the Nodal signal; (3) the Nodal became maternally expressed (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inferred from comparative analysis and evolutionary reasoning",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:09:28.656936Z"
+    },
+    {
+      "id": "9e4a0865-4812-4771-af5e-a2ddde02e87c",
+      "content_id": "24d5ca38-6b9e-4717-8d8e-c277bd46bb51",
+      "claim_id": "C47",
+      "claim": "The emergence of Gdf1/3-like would not affect the development and viability of the ancestor of extant amphioxus.",
+      "claim_type": "EXPLICIT",
+      "source": "Overexpression of Gdf1/3 in zebrafish and Xenopus embryos have no effects on axes development (Dale et al., 1993; Bisgrove et al., 2017). It is therefore expected that the emergence of Gdf1/3-like would not affect the development and viability of the ancestor of extant amphioxus (i.e. step 1, Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inferred from comparative functional data in other species",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:09:28.656936Z"
+    },
+    {
+      "id": "72cc5f45-e9bd-4334-be48-6a8cc8d993b3",
+      "content_id": "24d5ca38-6b9e-4717-8d8e-c277bd46bb51",
+      "claim_id": "C48",
+      "claim": "Disruption of maternal Gdf1/3 function is lethal in sea urchin and zebrafish embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, disruption of maternal Gdf1/3 function is lethal in sea urchin and zebrafish embryos (Range et al., 2007; Bisgrove et al., 2017; Montague and Schier, 2017; Pelliccia et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to published literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:09:28.656936Z"
+    },
+    {
+      "id": "8403ffc5-b31a-45be-bdc1-c238004bd7ff",
+      "content_id": "24d5ca38-6b9e-4717-8d8e-c277bd46bb51",
+      "claim_id": "C49",
+      "claim": "The retreatment of the Gdf1/3 ortholog from the Nodal signaling could not happen before the emergence of Gdf1/3-like and its recruitment of the Lefty enhancers.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicates that the retreatment of the Gdf1/3 ortholog from the Nodal signaling (step 2) could not happen before the emergence of Gdf1/3-like and its recruitment of the Lefty enhancers (step 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from functional requirements and evolutionary logic",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:09:28.656936Z"
+    },
+    {
+      "id": "d2719dfa-158a-4a19-9ce8-c373caa3dd87",
+      "content_id": "24d5ca38-6b9e-4717-8d8e-c277bd46bb51",
+      "claim_id": "C50",
+      "claim": "Overexpression of Nodal in the presence of maternal Gdf1/3 led to defects in axis formation of zebrafish embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, overexpression of Nodal in the presence of maternal Gdf1/3 led to defects in axis formation of zebrafish embryos (Bisgrove et al., 2017)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to published literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:09:28.656936Z"
+    },
+    {
+      "id": "e5e5e936-504e-4e10-8526-a0c7c7bf9421",
+      "content_id": "24d5ca38-6b9e-4717-8d8e-c277bd46bb51",
+      "claim_id": "C51",
+      "claim": "Nodal could not become a maternal factor before the retreatment of Gdf1/3.",
+      "claim_type": "EXPLICIT",
+      "source": "suggesting that Nodal could not become a maternal factor before the retreatment of Gdf1/3 (i.e. step 2 happened before step 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from functional data in zebrafish",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:09:28.656936Z"
+    },
+    {
+      "id": "9986f279-5c9d-489e-8eb0-dd6ecbf6dd39",
+      "content_id": "24d5ca38-6b9e-4717-8d8e-c277bd46bb51",
+      "claim_id": "C52",
+      "claim": "Injection of Gdf1/3 mRNA to the yolk syncytial layer was sufficient to rescue MGdf1/3 defects in zebrafish.",
+      "claim_type": "EXPLICIT",
+      "source": "Injection of Gdf1/3 mRNA to the yolk syncytial layer, where Nodal is expressed endogenously, was sufficient to rescue MGdf1/3 defects in zebrafish, thus the ubiquitous distribution of maternal Gdf1/3, in the region where Nodal is not expressed, is dispensable (Montague and Schier, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to published literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:09:28.656936Z"
+    },
+    {
+      "id": "5517dbb9-a5ff-4aed-872f-33a1bd8e0f96",
+      "content_id": "24d5ca38-6b9e-4717-8d8e-c277bd46bb51",
+      "claim_id": "C53",
+      "claim": "Once the Gdf1/3-like started its current expression pattern by hijacking Lefty enhancers, the function of Gdf1/3-like and Gdf1/3 became redundant, allowing the retreatment of Gdf1/3 from the signaling pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "Once the Gdf1/3-like started its current expression pattern by hijacking Lefty enhancers, the function of Gdf1/3-like and Gdf1/3 became redundant, allowing the retreatment of Gdf1/3 from the signaling pathway (i.e. step 2, Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inferred from functional redundancy and evolutionary logic",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:09:28.656936Z"
+    },
+    {
+      "id": "9d9800e0-a4f7-4e47-bbc2-7677b41243af",
+      "content_id": "24d5ca38-6b9e-4717-8d8e-c277bd46bb51",
+      "claim_id": "C54",
+      "claim": "Preloading of a maternal factor (Gdf1/3 in zebrafish or Nodal in amphioxus) could be instrumental for ensuring Nodal signaling initiation in a rapid and temporally reliable manner.",
+      "claim_type": "EXPLICIT",
+      "source": "As discussed in the study of zebrafish (Montague and Schier, 2017), preloading of a maternal factor (Gdf1/3 in zebrafish or Nodal in amphioxus) could be instrumental for ensuring Nodal signaling initiation in a rapid and temporally reliable manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation and comparative reasoning",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:09:28.656936Z"
+    },
+    {
+      "id": "0151cb74-80ee-4c37-b50b-816745e724ed",
+      "content_id": "24d5ca38-6b9e-4717-8d8e-c277bd46bb51",
+      "claim_id": "C55",
+      "claim": "The establishment of Nodal as a maternal factor may be a compensation mechanism for the retreatment of ubiquitously maternal Gdf1/3.",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise, the establishment of Nodal as a maternal factor may be a compensation mechanism for the retreatment of ubiquitously maternal Gdf1/3 (i.e. step 3, Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inferred from functional requirements and evolutionary logic",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:09:28.656936Z"
+    },
+    {
+      "id": "16d7aeb3-5e9d-4cb5-ada3-8e02d8ab835c",
+      "content_id": "24d5ca38-6b9e-4717-8d8e-c277bd46bb51",
+      "claim_id": "C56",
+      "claim": "Zygotic Nodal mutants failed to form L\u2013R axis but formed D\u2013V axis normally in amphioxus.",
+      "claim_type": "EXPLICIT",
+      "source": "Zygotic Nodal mutants failed to form L\u2013R axis but formed D\u2013V axis normally in amphioxus (Figure 3\u2014figure supplement 1)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by phenotypic analysis of mutants",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:09:28.656936Z"
+    },
+    {
+      "id": "63a3e366-6f14-42c4-8357-75a5c43adf13",
+      "content_id": "24d5ca38-6b9e-4717-8d8e-c277bd46bb51",
+      "claim_id": "C57",
+      "claim": "Maternal Nodal is redundant to compensate the D\u2013V axis formation.",
+      "claim_type": "EXPLICIT",
+      "source": "suggesting that maternal Nodal is redundant to compensate the D\u2013V axis formation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from zygotic Nodal mutant phenotype",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:09:28.656936Z"
+    },
+    {
+      "id": "3b0f92d0-de6c-4bf7-95e7-ea9a23a5aa5c",
+      "content_id": "24d5ca38-6b9e-4717-8d8e-c277bd46bb51",
+      "claim_id": "C58",
+      "claim": "Maternal Nodal mutants formed only partial anterior and dorsal structures.",
+      "claim_type": "EXPLICIT",
+      "source": "However, maternal Nodal mutants formed only partial anterior and dorsal structures (Figure 3, Figure 3\u2014figure supplements 2 and 3)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by phenotypic analysis of MNodal mutants",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:09:28.656936Z"
+    },
+    {
+      "id": "361d65cc-9765-4869-84d0-3ab0bd58eaf9",
+      "content_id": "24d5ca38-6b9e-4717-8d8e-c277bd46bb51",
+      "claim_id": "C59",
+      "claim": "The expression of zygotic Nodal might be delayed in living amphioxus, compared to that of the amphioxus ancestor before step 3.",
+      "claim_type": "EXPLICIT",
+      "source": "suggesting that the expression of zygotic Nodal might be delayed in living amphioxus, compared to that of the amphioxus ancestor before step 3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from maternal Nodal mutant phenotype",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:09:28.656936Z"
+    },
+    {
+      "id": "da6f4027-9cac-4478-9615-8f176388ae6e",
+      "content_id": "24d5ca38-6b9e-4717-8d8e-c277bd46bb51",
+      "claim_id": "C60",
+      "claim": "Enhancer hijacking by Gdf1/3-like was a triggering and probably 'neutral' step for the rewiring of the body axes GRN in amphioxus ancestors.",
+      "claim_type": "EXPLICIT",
+      "source": "Our proposed scenario highlights that enhancer hijacking by Gdf1/3-like was a triggering and probably 'neutral' step for the rewiring of the body axes GRN in amphioxus ancestors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the overall evolutionary scenario proposed",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:09:28.656936Z"
+    },
+    {
+      "id": "e17ff40c-48dd-48a1-a7d1-abf2489df8ed",
+      "content_id": "24d5ca38-6b9e-4717-8d8e-c277bd46bb51",
+      "claim_id": "C61",
+      "claim": "Co-expressed gene pairs sharing intergenic enhancers have been reported in various cases.",
+      "claim_type": "EXPLICIT",
+      "source": "Co-expressed gene pairs sharing intergenic enhancers have been reported in various cases (Ueda et al., 2006; Sumiyama and Tanave, 2020; Zinani et al., 2021; Zinani et al., 2022)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to published literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:09:28.656936Z"
+    },
+    {
+      "id": "093820ed-58e2-4dec-945a-766b0a42aa91",
+      "content_id": "24d5ca38-6b9e-4717-8d8e-c277bd46bb51",
+      "claim_id": "C62",
+      "claim": "Co-expressed gene pairs often fall into the same functional categories.",
+      "claim_type": "EXPLICIT",
+      "source": "and often fall into the same functional categories (Zinani et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to published literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:09:28.656936Z"
+    },
+    {
+      "id": "31b79fea-d7f1-4981-b3bf-8e932c1f6dce",
+      "content_id": "24d5ca38-6b9e-4717-8d8e-c277bd46bb51",
+      "claim_id": "C63",
+      "claim": "In zebrafish, the paired her1 and her7 can provide robustness for segmentation patterning.",
+      "claim_type": "EXPLICIT",
+      "source": "In zebrafish, the paired her1 and her7 can provide robustness for segmentation patterning (Zinani et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to published literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:09:28.656936Z"
+    },
+    {
+      "id": "179b6b6d-47c5-4b59-ba4b-9700fa3497ab",
+      "content_id": "24d5ca38-6b9e-4717-8d8e-c277bd46bb51",
+      "claim_id": "C64",
+      "claim": "The co-expression of Gdf1/3-like and Lefty gene pair achieved by sharing regulatory region likely safeguards a dosage balance between the positive- and negative-feedback loop.",
+      "claim_type": "EXPLICIT",
+      "source": "The co-expression of Gdf1/3-like and Lefty gene pair (Figure 1B, Figure 1\u2014figure supplements 2\u20135) achieved by sharing regulatory region (Figure 4) likely safeguards a dosage balance between the positive- and negative-feedback loop.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inferred from the regulatory architecture and functional roles of the genes",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:09:28.656936Z"
+    },
+    {
+      "id": "a02e6d16-3420-42df-a5da-ff085b46ce6e",
+      "content_id": "24d5ca38-6b9e-4717-8d8e-c277bd46bb51",
+      "claim_id": "C65",
+      "claim": "The dosage balance between positive- and negative-feedback loops is likely an advantage for robust pattern formation.",
+      "claim_type": "EXPLICIT",
+      "source": "This is likely an advantage for robust pattern formation as suggested in other gene pairing systems (Zinani et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred by analogy to other systems and supported by citation",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:09:28.656936Z"
+    },
+    {
+      "id": "39b9ce1c-f721-4fd9-8835-628d6c2e3d36",
+      "content_id": "24d5ca38-6b9e-4717-8d8e-c277bd46bb51",
+      "claim_id": "C66",
+      "claim": "Gdf1/3 is one of the reported examples of small-scale gene duplications in amphioxus.",
+      "claim_type": "EXPLICIT",
+      "source": "Gdf1/3 is one of the reported examples of small-scale gene duplications in amphioxus (Bras\u00f3-Vives et al., 2022), anurans, and mammals (Opazo and Zavala, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to published literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:09:28.656936Z"
+    },
+    {
+      "id": "d1075553-dce3-4fc9-9336-0577642a1309",
+      "content_id": "24d5ca38-6b9e-4717-8d8e-c277bd46bb51",
+      "claim_id": "C67",
+      "claim": "In anurans and mammals both Gdf1/3 paralogs retain the ancestral function in axis formation.",
+      "claim_type": "EXPLICIT",
+      "source": "However, these genes appear to have evolved differently: in anurans and mammals both Gdf1/3 paralogs retain the ancestral function in axis formation (Birsoy et al., 2006; Andersson et al., 2007; Vonica and Brivanlou, 2007)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to published literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:09:28.656936Z"
+    },
+    {
+      "id": "3c049446-9a33-49ea-a125-954dc0ea90d8",
+      "content_id": "24d5ca38-6b9e-4717-8d8e-c277bd46bb51",
+      "claim_id": "C68",
+      "claim": "In amphioxus only Gdf1/3-like undertakes the axis formation function but Gdf1/3 seems to have lost its original function.",
+      "claim_type": "EXPLICIT",
+      "source": "while in amphioxus only Gdf1/3-like undertakes this function but Gdf1/3 seems to have lost its original function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by the experimental data from the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:09:28.656936Z"
+    },
+    {
+      "id": "17f3f36a-c333-46d3-9905-61aff0a018d4",
+      "content_id": "24d5ca38-6b9e-4717-8d8e-c277bd46bb51",
+      "claim_id": "C69",
+      "claim": "Hijacking of Lefty enhancers by Gdf1/3-like had enabled Gdf1/3-like to be functionally redundant to Gdf1/3, allowing Gdf1/3 to retrieve from its ancestral function in regulating body axis formation through changing its expression pattern.",
+      "claim_type": "EXPLICIT",
+      "source": "As discussed above, hijacking of Lefty enhancers by Gdf1/3-like had enabled Gdf1/3-like to be functionally redundant to Gdf1/3, allowing Gdf1/3 to retrieve from its ancestral function in regulating body axis formation through changing its expression pattern.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the overall findings and evolutionary scenario",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:09:28.656936Z"
+    },
+    {
+      "id": "be3951d2-02f8-4bd1-9e5e-877e1e6d2b8f",
+      "content_id": "24d5ca38-6b9e-4717-8d8e-c277bd46bb51",
+      "claim_id": "C70",
+      "claim": "The redundancy of Gdf1/3-like appears to have also relaxed the selection pressure on Gdf1/3-coding region.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the redundancy of Gdf1/3-like appears to have also relaxed the selection pressure on Gdf1/3-coding region, since Gdf1/3-like mRNA is more efficient in inducing anterior and dorsal expansion than that of Gdf1/3 (Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inferred from functional comparison of Gdf1/3 and Gdf1/3-like",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:09:28.656936Z"
+    },
+    {
+      "id": "79ddde43-47c8-4d20-a5ed-e4b610717ac4",
+      "content_id": "24d5ca38-6b9e-4717-8d8e-c277bd46bb51",
+      "claim_id": "C71",
+      "claim": "Nodal signaling plays a conserved role in patterning the dorsal\u2013ventral (D\u2013V) and left\u2013right (L\u2013R) axes in deuterostomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Nodal signaling plays a conserved role in patterning the dorsal\u2013ventral (D\u2013V) and left\u2013right (L\u2013R) axes in deuterostomes, exhibiting a conserved GRN orchestrated principally by Nodal, Gdf1/3, and Lefty (Jia and Meng, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to published literature",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:09:28.656936Z"
+    },
+    {
+      "id": "97288fa7-dd48-4f19-896e-b63ecc75596f",
+      "content_id": "24d5ca38-6b9e-4717-8d8e-c277bd46bb51",
+      "claim_id": "C72",
+      "claim": "Mammals and frogs have two Gdf1/3 genes (namely Gdf1 and Gdf3), derived from lineage-specific duplications.",
+      "claim_type": "EXPLICIT",
+      "source": "Different from most deuterostomes which has one Gdf1/3 gene, mammals and frogs have two such genes (namely Gdf1 and Gdf3), derived from lineage-specific duplications (Opazo and Zavala, 2018; Opazo et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to published literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:09:28.656936Z"
+    },
+    {
+      "id": "0db7a655-5593-43d7-b7df-a9d7cbe40668",
+      "content_id": "24d5ca38-6b9e-4717-8d8e-c277bd46bb51",
+      "claim_id": "C73",
+      "claim": "Nodal is expressed zygotically (unilaterally at neurula or larva stage) in echinoderms and vertebrates.",
+      "claim_type": "EXPLICIT",
+      "source": "The expression patterns of genes coding Nodal and Gdf1/3 are highly conserved in echinoderms and vertebrates, with Nodal being expressed zygotically (unilaterally at neurula or larva stage) (Supplementary file 1a)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by reference to supplementary data",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:09:28.656936Z"
+    },
+    {
+      "id": "0d789f3a-a1d7-41a4-85e9-67dc8effe95d",
+      "content_id": "24d5ca38-6b9e-4717-8d8e-c277bd46bb51",
+      "claim_id": "C74",
+      "claim": "Gdf1/3 is expressed both maternally and zygotically (but bilaterally at neurula stage) in echinoderms and vertebrates.",
+      "claim_type": "EXPLICIT",
+      "source": "and Gdf1/3 both maternally and zygotically (but bilaterally at neurula stage) (Supplementary file 1b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by reference to supplementary data",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:09:28.656936Z"
+    },
+    {
+      "id": "b3180fff-b186-4854-a76a-4827c9a0c26f",
+      "content_id": "24d5ca38-6b9e-4717-8d8e-c277bd46bb51",
+      "claim_id": "C75",
+      "claim": "Zygotic Nodal functions synergistically with preexisting maternal Gdf1/3 by forming heterodimers to activate the signaling pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "Zygotic Nodal functions synergistically with preexisting maternal Gdf1/3 by forming heterodimers to activate the signaling pathway (Montague and Schier, 2017; Opazo et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to published literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:09:28.656936Z"
+    },
+    {
+      "id": "36d07623-2212-4ea2-a5ea-991a60aa9cb9",
+      "content_id": "24d5ca38-6b9e-4717-8d8e-c277bd46bb51",
+      "claim_id": "C76",
+      "claim": "Robust Nodal signaling is safeguarded by a positive-feedback loop from further activation of Nodal itself and a negative feedback loop through inducing the expression of Lefty.",
+      "claim_type": "EXPLICIT",
+      "source": "Robust Nodal signaling is safeguarded by a positive-feedback loop from further activation of Nodal itself and a negative feedback loop through inducing the expression of Lefty encoding an inhibitor of the signaling (M\u00fcller et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to published literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:09:28.656936Z"
+    },
+    {
+      "id": "13699592-d76f-4238-a99e-a51ebb330857",
+      "content_id": "24d5ca38-6b9e-4717-8d8e-c277bd46bb51",
+      "claim_id": "C77",
+      "claim": "Lefty gene in amphioxus is expressed zygotically and unilaterally.",
+      "claim_type": "EXPLICIT",
+      "source": "Like the orthologs in echinoderms (Duboc et al., 2008) and vertebrates (Meno et al., 1997; Bisgrove et al., 1999; Ishimaru et al., 2000; Tanegashima et al., 2000), Lefty gene in amphioxus is expressed zygotically and unilaterally (Onai et al., 2010; Soukup et al., 2015; Morov et al., 2016; Zhang et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to published literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:09:28.656936Z"
+    },
+    {
+      "id": "33d4efa4-95f9-47c6-98b0-e81264dc2c03",
+      "content_id": "24d5ca38-6b9e-4717-8d8e-c277bd46bb51",
+      "claim_id": "C78",
+      "claim": "Nodal and GDF1/3-like1/Vg1 are both maternally supplied and zygotically expressed unilaterally at the neurula stage in amphioxus.",
+      "claim_type": "EXPLICIT",
+      "source": "Unusually, it was found that Nodal and GDF1/3-like1/Vg1 are both maternally supplied and zygotically expressed unilaterally at the neurula stage (Supplementary file 1a and b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by reference to supplementary data and previous studies",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:09:28.656936Z"
+    },
+    {
+      "id": "d648d3d8-ddfb-4487-8992-daf413e492be",
+      "content_id": "24d5ca38-6b9e-4717-8d8e-c277bd46bb51",
+      "claim_id": "C79",
+      "claim": "The regulatory network governing the Nodal signaling pathway has undergone alterations within the amphioxus clade, while its function in D\u2013V and L\u2013R axes patterning has been preserved.",
+      "claim_type": "EXPLICIT",
+      "source": "This implies that the regulatory network governing the Nodal signaling pathway has undergone alterations within this particular clade, while its function in D\u2013V and L\u2013R axes patterning has been preserved (Onai et al., 2010; Soukup et al., 2015; Li et al., 2017; Zhang et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from expression pattern differences and supported by citations",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:09:28.656936Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "4908796d-f1e9-4e97-93a7-d17a5855aaed",
+      "content_id": "24d5ca38-6b9e-4717-8d8e-c277bd46bb51",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Gdf1/3 genes are deuterostome-specific and originated from Bmp2/4 by tandem duplication in the deuterostome ancestor. In amphioxus, a second Gdf1/3 gene (Gdf1/3-like) arose through duplication and translocation to the Lefty locus, a configuration unique to amphioxus among bilaterians examined.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C10 provide converging evidence from phylogenetic analysis (C4), genomic synteny across multiple species (C2, C6, C7, C8), and comparative genomics (C8, C9) that collectively support the evolutionary origin and lineage-specific duplication of Gdf1/3 genes. The data are consistent across multiple independent lines of evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:09:28.656936Z"
+    },
+    {
+      "id": "c3952962-10de-4b72-bcdc-1ab20a120d32",
+      "content_id": "24d5ca38-6b9e-4717-8d8e-c277bd46bb51",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The ancestral amphioxus Gdf1/3 gene has lost its role in body axis formation, showing minimal embryonic expression and no mutant phenotype, although it retains biochemical activity as a Nodal signaling ligand when overexpressed.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C18 demonstrate through multiple complementary approaches (expression analysis C11-C14, mutant phenotyping C15, functional overexpression C17-C18) that Gdf1/3 has functionally diverged from its ancestral role. The convergence of expression data, loss-of-function analysis, and gain-of-function experiments provides strong support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:09:28.656936Z"
+    },
+    {
+      "id": "4945e94e-e3f1-4884-adad-ce53700fdb13",
+      "content_id": "24d5ca38-6b9e-4717-8d8e-c277bd46bb51",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Gdf1/3-like is essential for amphioxus body axis formation, with loss-of-function mutants showing severe defects in dorsal, anterior, and left axis patterning. Gdf1/3-like is required for Nodal signaling activation, as Nodal alone cannot activate signaling in its absence.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C23 provide comprehensive functional genetic evidence through mutant phenotyping (C19-C20), molecular marker analysis (C21), and epistasis experiments (C23). The data consistently demonstrate that Gdf1/3-like has assumed the ancestral function of Gdf1/3 in amphioxus axis formation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:09:28.656936Z"
+    },
+    {
+      "id": "70406b70-7a8a-451e-9eaa-9cb668517e7b",
+      "content_id": "24d5ca38-6b9e-4717-8d8e-c277bd46bb51",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Maternal Nodal is required for dorsal-ventral axis formation in amphioxus, while zygotic Nodal is necessary for left-right patterning. Nodal and Gdf1/3-like function interdependently, as neither can activate Nodal signaling alone.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C32 present a sophisticated genetic analysis using maternal, zygotic, and maternal-zygotic mutants (C25-C30) combined with rescue experiments (C31-C32). The generation of maternal mutants through mosaic founders (C27-C28) is technically challenging but well-documented, and the phenotypic data consistently support the interdependence of Nodal and Gdf1/3-like.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:09:28.656936Z"
+    },
+    {
+      "id": "caa0174f-2e49-45d7-9759-5f4e56708456",
+      "content_id": "24d5ca38-6b9e-4717-8d8e-c277bd46bb51",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The 4 kb intergenic region between Gdf1/3-like and Lefty contains bidirectional regulatory elements that drive expression of both genes in a Nodal-dependent manner. This regulatory region was originally responsible for Lefty expression and was hijacked by Gdf1/3-like after translocation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C42 combine transgenic reporter assays (C33-C34, C40), comparative expression analysis (C35-C37, C39), and inhibitor studies (C40-C41) to demonstrate enhancer sharing and regulatory hijacking. The inference that the regulatory region was originally Lefty's (C38, C42) is well-supported by comparative data showing conserved Nodal-dependent Lefty regulation across deuterostomes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:09:28.656936Z"
+    },
+    {
+      "id": "0ad0c008-cd4f-4dba-9aea-d5ff8f53e898",
+      "content_id": "24d5ca38-6b9e-4717-8d8e-c277bd46bb51",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Enhancer hijacking by Gdf1/3-like triggered the rewiring of the Nodal signaling GRN in amphioxus through a three-step evolutionary process: (1) Gdf1/3-like origin and enhancer hijacking, (2) Gdf1/3 retreat from the pathway, and (3) establishment of maternal Nodal expression. This represents a case where enhancer hijacking was a neutral triggering event for GRN evolution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C43-C55, C60 present an evolutionary scenario inferred from comparative functional data across species. While the logic is sound and supported by functional data from zebrafish and sea urchin (C47-C52), the proposed stepwise sequence (C46) is speculative as it cannot be directly tested without ancestral species. The scenario is plausible but represents evolutionary inference rather than demonstrated fact.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:09:28.656936Z"
+    },
+    {
+      "id": "32d7edad-5659-49b2-a72c-71df96adc3f7",
+      "content_id": "24d5ca38-6b9e-4717-8d8e-c277bd46bb51",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Zygotic Nodal mutants form normal dorsal-ventral axes but fail to form left-right axes, while maternal Nodal mutants show partial dorsal-anterior defects, suggesting maternal Nodal compensates for D-V patterning and that zygotic Nodal expression may be delayed in extant amphioxus.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C59 are supported by phenotypic analysis of different mutant classes (C56, C58). The inference about delayed zygotic Nodal expression (C59) is speculative but reasonable given the partial rescue by maternal Nodal. The data consistently support functional redundancy between maternal and zygotic Nodal for D-V axis formation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:09:28.656936Z"
+    },
+    {
+      "id": "dd06f5d1-c815-467b-9395-b8973d328ed4",
+      "content_id": "24d5ca38-6b9e-4717-8d8e-c277bd46bb51",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The co-expression of Gdf1/3-like and Lefty achieved through shared regulatory elements likely provides robustness to body axis formation by maintaining dosage balance between positive (Gdf1/3-like) and negative (Lefty) feedback loops in the Nodal signaling pathway.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C61-C65 propose a functional advantage for the observed gene pairing based on analogy to other systems (C61-C63). While the regulatory architecture is well-demonstrated (previous result), the claim that this provides robustness through dosage balance (C64-C65) is speculative and not directly tested. This represents a plausible hypothesis requiring experimental validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:09:28.656936Z"
+    },
+    {
+      "id": "debb0169-a9c4-42f0-8286-f5f966d1b627",
+      "content_id": "24d5ca38-6b9e-4717-8d8e-c277bd46bb51",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Gdf1/3 duplication occurred independently in amphioxus, anurans, and mammals, but evolved differently: in anurans and mammals both paralogs retained ancestral function, while in amphioxus only Gdf1/3-like retained function after hijacking Lefty enhancers, allowing Gdf1/3 to diverge functionally and potentially at the sequence level.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66-C70 integrate comparative genomic data (C66-C67) with functional data from this study (C68) to explain differential evolutionary outcomes. The inference that enhancer hijacking enabled functional divergence (C69) and relaxed selection on Gdf1/3 coding sequence (C70) is well-supported by the functional data showing differential activity of the two paralogs.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:09:28.656936Z"
+    },
+    {
+      "id": "fabf9bcf-dc20-4011-977b-d13a0b08ae07",
+      "content_id": "24d5ca38-6b9e-4717-8d8e-c277bd46bb51",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Nodal signaling plays a conserved role in deuterostome axis patterning with a conserved GRN in echinoderms and vertebrates, but the regulatory network has been altered in amphioxus while maintaining functional conservation, representing developmental system drift.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71-C79 establish the comparative context for the study by documenting the ancestral state (C71-C76) and the derived amphioxus condition (C77-C79). These claims are well-supported by extensive citations to published literature and provide the foundation for interpreting the significance of the experimental findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:09:28.656936Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "db26c11f-4d8a-4894-9aff-3c84702acbe1",
+      "result_id": "4908796d-f1e9-4e97-93a7-d17a5855aaed"
+    },
+    {
+      "claim_id": "dd0924f0-b162-45a3-b3a3-70a1ce980e84",
+      "result_id": "4908796d-f1e9-4e97-93a7-d17a5855aaed"
+    },
+    {
+      "claim_id": "3b20a030-439d-4d52-b45c-ee6a0d513ce8",
+      "result_id": "4908796d-f1e9-4e97-93a7-d17a5855aaed"
+    },
+    {
+      "claim_id": "c86de825-2a95-4e04-b62e-ac7231503750",
+      "result_id": "4908796d-f1e9-4e97-93a7-d17a5855aaed"
+    },
+    {
+      "claim_id": "2a764eda-9228-4b53-bbd5-37a31821ad83",
+      "result_id": "4908796d-f1e9-4e97-93a7-d17a5855aaed"
+    },
+    {
+      "claim_id": "e391d1ad-371f-4822-af54-bb0bc996637a",
+      "result_id": "4908796d-f1e9-4e97-93a7-d17a5855aaed"
+    },
+    {
+      "claim_id": "1ad36906-6824-43bd-8aec-9adc4b01b399",
+      "result_id": "4908796d-f1e9-4e97-93a7-d17a5855aaed"
+    },
+    {
+      "claim_id": "93eb6d30-3be5-4846-b3c3-f153413bb92a",
+      "result_id": "4908796d-f1e9-4e97-93a7-d17a5855aaed"
+    },
+    {
+      "claim_id": "a808ad08-0485-4b89-9785-ce15c3a59ad8",
+      "result_id": "4908796d-f1e9-4e97-93a7-d17a5855aaed"
+    },
+    {
+      "claim_id": "700027d3-e3ac-411e-a9be-bf1f54412cf1",
+      "result_id": "4908796d-f1e9-4e97-93a7-d17a5855aaed"
+    },
+    {
+      "claim_id": "82b34f71-fed0-4a1d-870b-ba4bc3a395ee",
+      "result_id": "c3952962-10de-4b72-bcdc-1ab20a120d32"
+    },
+    {
+      "claim_id": "3d888661-345a-4c04-b16b-c5cb89173fbc",
+      "result_id": "c3952962-10de-4b72-bcdc-1ab20a120d32"
+    },
+    {
+      "claim_id": "918f2702-688a-4c57-83bc-9c02bece13d6",
+      "result_id": "c3952962-10de-4b72-bcdc-1ab20a120d32"
+    },
+    {
+      "claim_id": "618bffb2-7d78-41f5-91a3-a691500e8909",
+      "result_id": "c3952962-10de-4b72-bcdc-1ab20a120d32"
+    },
+    {
+      "claim_id": "410e74c3-a7ad-48eb-815f-38f56905dc04",
+      "result_id": "c3952962-10de-4b72-bcdc-1ab20a120d32"
+    },
+    {
+      "claim_id": "ba1b9d5e-28dd-4335-8148-96c0943a91be",
+      "result_id": "c3952962-10de-4b72-bcdc-1ab20a120d32"
+    },
+    {
+      "claim_id": "779c7232-3896-41ee-b8fc-645806599dc4",
+      "result_id": "c3952962-10de-4b72-bcdc-1ab20a120d32"
+    },
+    {
+      "claim_id": "418982c2-d6dd-4dfe-94f8-0c943a63e7dd",
+      "result_id": "c3952962-10de-4b72-bcdc-1ab20a120d32"
+    },
+    {
+      "claim_id": "f95612d1-361c-43c3-81ad-882eeee93520",
+      "result_id": "4945e94e-e3f1-4884-adad-ce53700fdb13"
+    },
+    {
+      "claim_id": "aa8d5a9c-f1d8-47c6-9ea9-390e426eccce",
+      "result_id": "4945e94e-e3f1-4884-adad-ce53700fdb13"
+    },
+    {
+      "claim_id": "71b77050-31f7-4b4e-a0b2-ebac50c7f2ba",
+      "result_id": "4945e94e-e3f1-4884-adad-ce53700fdb13"
+    },
+    {
+      "claim_id": "d894d566-4eb2-40b0-aef4-0ea8d6f3a4c3",
+      "result_id": "4945e94e-e3f1-4884-adad-ce53700fdb13"
+    },
+    {
+      "claim_id": "6af82512-d7ca-4aae-8db1-275eaa149d02",
+      "result_id": "4945e94e-e3f1-4884-adad-ce53700fdb13"
+    },
+    {
+      "claim_id": "fe1aa682-7e46-45f3-9101-af72f785027e",
+      "result_id": "70406b70-7a8a-451e-9eaa-9cb668517e7b"
+    },
+    {
+      "claim_id": "5b9e7fad-28d2-4da8-af05-11aef6a2d17f",
+      "result_id": "70406b70-7a8a-451e-9eaa-9cb668517e7b"
+    },
+    {
+      "claim_id": "53cec841-4fa9-420f-8221-02686c687ac4",
+      "result_id": "70406b70-7a8a-451e-9eaa-9cb668517e7b"
+    },
+    {
+      "claim_id": "5b0a4e25-5526-48cd-ad2b-84d4ade28651",
+      "result_id": "70406b70-7a8a-451e-9eaa-9cb668517e7b"
+    },
+    {
+      "claim_id": "a0b1858a-6f6a-4bf0-aedb-eae39b7504c2",
+      "result_id": "70406b70-7a8a-451e-9eaa-9cb668517e7b"
+    },
+    {
+      "claim_id": "a8c0e596-0623-4eb6-ae20-ff3222dd7b32",
+      "result_id": "70406b70-7a8a-451e-9eaa-9cb668517e7b"
+    },
+    {
+      "claim_id": "439d3f86-fb51-4b00-af30-173e7c75513d",
+      "result_id": "70406b70-7a8a-451e-9eaa-9cb668517e7b"
+    },
+    {
+      "claim_id": "2287b8b6-f20b-4526-bf47-693dba4fb886",
+      "result_id": "70406b70-7a8a-451e-9eaa-9cb668517e7b"
+    },
+    {
+      "claim_id": "e7ed77e8-5405-4731-b019-8e91161f8e56",
+      "result_id": "70406b70-7a8a-451e-9eaa-9cb668517e7b"
+    },
+    {
+      "claim_id": "22abd56c-2db0-4dde-aa20-f1fd2cca19a0",
+      "result_id": "caa0174f-2e49-45d7-9759-5f4e56708456"
+    },
+    {
+      "claim_id": "993e617b-441d-40cc-9af1-700b117bc2ac",
+      "result_id": "caa0174f-2e49-45d7-9759-5f4e56708456"
+    },
+    {
+      "claim_id": "c244fc04-6477-4f93-b848-62f57c66f509",
+      "result_id": "caa0174f-2e49-45d7-9759-5f4e56708456"
+    },
+    {
+      "claim_id": "cb4747ea-20cd-48ad-82a2-95f0f034cf7f",
+      "result_id": "caa0174f-2e49-45d7-9759-5f4e56708456"
+    },
+    {
+      "claim_id": "94779aac-2d25-4823-b9ba-1d2b88bcf01e",
+      "result_id": "caa0174f-2e49-45d7-9759-5f4e56708456"
+    },
+    {
+      "claim_id": "d10b97d1-cd48-4bfe-adcc-7dd81fc15633",
+      "result_id": "caa0174f-2e49-45d7-9759-5f4e56708456"
+    },
+    {
+      "claim_id": "34e1ee0a-ea5a-4c74-aaca-78ca9b73330d",
+      "result_id": "caa0174f-2e49-45d7-9759-5f4e56708456"
+    },
+    {
+      "claim_id": "828998cd-97de-4824-b07f-bab2932fa6d3",
+      "result_id": "caa0174f-2e49-45d7-9759-5f4e56708456"
+    },
+    {
+      "claim_id": "65f974c2-08d5-4485-b9eb-68244749310b",
+      "result_id": "caa0174f-2e49-45d7-9759-5f4e56708456"
+    },
+    {
+      "claim_id": "d10ebebf-c751-4245-b47b-5437dad4deb4",
+      "result_id": "caa0174f-2e49-45d7-9759-5f4e56708456"
+    },
+    {
+      "claim_id": "7b58794c-30fe-4c34-bb44-1f0d47ff0d1c",
+      "result_id": "0ad0c008-cd4f-4dba-9aea-d5ff8f53e898"
+    },
+    {
+      "claim_id": "959fc07d-19c1-4eb8-a25a-c81b0390ac30",
+      "result_id": "0ad0c008-cd4f-4dba-9aea-d5ff8f53e898"
+    },
+    {
+      "claim_id": "0a8e820e-3d90-4bc5-ae18-1672a986bcad",
+      "result_id": "0ad0c008-cd4f-4dba-9aea-d5ff8f53e898"
+    },
+    {
+      "claim_id": "fc2c8d55-0f59-4b33-8aa8-54a45cc5787d",
+      "result_id": "0ad0c008-cd4f-4dba-9aea-d5ff8f53e898"
+    },
+    {
+      "claim_id": "9e4a0865-4812-4771-af5e-a2ddde02e87c",
+      "result_id": "0ad0c008-cd4f-4dba-9aea-d5ff8f53e898"
+    },
+    {
+      "claim_id": "72cc5f45-e9bd-4334-be48-6a8cc8d993b3",
+      "result_id": "0ad0c008-cd4f-4dba-9aea-d5ff8f53e898"
+    },
+    {
+      "claim_id": "8403ffc5-b31a-45be-bdc1-c238004bd7ff",
+      "result_id": "0ad0c008-cd4f-4dba-9aea-d5ff8f53e898"
+    },
+    {
+      "claim_id": "d2719dfa-158a-4a19-9ce8-c373caa3dd87",
+      "result_id": "0ad0c008-cd4f-4dba-9aea-d5ff8f53e898"
+    },
+    {
+      "claim_id": "e5e5e936-504e-4e10-8526-a0c7c7bf9421",
+      "result_id": "0ad0c008-cd4f-4dba-9aea-d5ff8f53e898"
+    },
+    {
+      "claim_id": "9986f279-5c9d-489e-8eb0-dd6ecbf6dd39",
+      "result_id": "0ad0c008-cd4f-4dba-9aea-d5ff8f53e898"
+    },
+    {
+      "claim_id": "5517dbb9-a5ff-4aed-872f-33a1bd8e0f96",
+      "result_id": "0ad0c008-cd4f-4dba-9aea-d5ff8f53e898"
+    },
+    {
+      "claim_id": "9d9800e0-a4f7-4e47-bbc2-7677b41243af",
+      "result_id": "0ad0c008-cd4f-4dba-9aea-d5ff8f53e898"
+    },
+    {
+      "claim_id": "0151cb74-80ee-4c37-b50b-816745e724ed",
+      "result_id": "0ad0c008-cd4f-4dba-9aea-d5ff8f53e898"
+    },
+    {
+      "claim_id": "da6f4027-9cac-4478-9615-8f176388ae6e",
+      "result_id": "0ad0c008-cd4f-4dba-9aea-d5ff8f53e898"
+    },
+    {
+      "claim_id": "16d7aeb3-5e9d-4cb5-ada3-8e02d8ab835c",
+      "result_id": "32d7edad-5659-49b2-a72c-71df96adc3f7"
+    },
+    {
+      "claim_id": "63a3e366-6f14-42c4-8357-75a5c43adf13",
+      "result_id": "32d7edad-5659-49b2-a72c-71df96adc3f7"
+    },
+    {
+      "claim_id": "3b0f92d0-de6c-4bf7-95e7-ea9a23a5aa5c",
+      "result_id": "32d7edad-5659-49b2-a72c-71df96adc3f7"
+    },
+    {
+      "claim_id": "361d65cc-9765-4869-84d0-3ab0bd58eaf9",
+      "result_id": "32d7edad-5659-49b2-a72c-71df96adc3f7"
+    },
+    {
+      "claim_id": "e17ff40c-48dd-48a1-a7d1-abf2489df8ed",
+      "result_id": "dd06f5d1-c815-467b-9395-b8973d328ed4"
+    },
+    {
+      "claim_id": "093820ed-58e2-4dec-945a-766b0a42aa91",
+      "result_id": "dd06f5d1-c815-467b-9395-b8973d328ed4"
+    },
+    {
+      "claim_id": "31b79fea-d7f1-4981-b3bf-8e932c1f6dce",
+      "result_id": "dd06f5d1-c815-467b-9395-b8973d328ed4"
+    },
+    {
+      "claim_id": "179b6b6d-47c5-4b59-ba4b-9700fa3497ab",
+      "result_id": "dd06f5d1-c815-467b-9395-b8973d328ed4"
+    },
+    {
+      "claim_id": "a02e6d16-3420-42df-a5da-ff085b46ce6e",
+      "result_id": "dd06f5d1-c815-467b-9395-b8973d328ed4"
+    },
+    {
+      "claim_id": "39b9ce1c-f721-4fd9-8835-628d6c2e3d36",
+      "result_id": "debb0169-a9c4-42f0-8286-f5f966d1b627"
+    },
+    {
+      "claim_id": "d1075553-dce3-4fc9-9336-0577642a1309",
+      "result_id": "debb0169-a9c4-42f0-8286-f5f966d1b627"
+    },
+    {
+      "claim_id": "3c049446-9a33-49ea-a125-954dc0ea90d8",
+      "result_id": "debb0169-a9c4-42f0-8286-f5f966d1b627"
+    },
+    {
+      "claim_id": "17f3f36a-c333-46d3-9905-61aff0a018d4",
+      "result_id": "debb0169-a9c4-42f0-8286-f5f966d1b627"
+    },
+    {
+      "claim_id": "be3951d2-02f8-4bd1-9e5e-877e1e6d2b8f",
+      "result_id": "debb0169-a9c4-42f0-8286-f5f966d1b627"
+    },
+    {
+      "claim_id": "79ddde43-47c8-4d20-a5ed-e4b610717ac4",
+      "result_id": "fabf9bcf-dc20-4011-977b-d13a0b08ae07"
+    },
+    {
+      "claim_id": "97288fa7-dd48-4f19-896e-b63ecc75596f",
+      "result_id": "fabf9bcf-dc20-4011-977b-d13a0b08ae07"
+    },
+    {
+      "claim_id": "0db7a655-5593-43d7-b7df-a9d7cbe40668",
+      "result_id": "fabf9bcf-dc20-4011-977b-d13a0b08ae07"
+    },
+    {
+      "claim_id": "0d789f3a-a1d7-41a4-85e9-67dc8effe95d",
+      "result_id": "fabf9bcf-dc20-4011-977b-d13a0b08ae07"
+    },
+    {
+      "claim_id": "b3180fff-b186-4854-a76a-4827c9a0c26f",
+      "result_id": "fabf9bcf-dc20-4011-977b-d13a0b08ae07"
+    },
+    {
+      "claim_id": "36d07623-2212-4ea2-a5ea-991a60aa9cb9",
+      "result_id": "fabf9bcf-dc20-4011-977b-d13a0b08ae07"
+    },
+    {
+      "claim_id": "13699592-d76f-4238-a99e-a51ebb330857",
+      "result_id": "fabf9bcf-dc20-4011-977b-d13a0b08ae07"
+    },
+    {
+      "claim_id": "33d4efa4-95f9-47c6-98b0-e81264dc2c03",
+      "result_id": "fabf9bcf-dc20-4011-977b-d13a0b08ae07"
+    },
+    {
+      "claim_id": "d648d3d8-ddfb-4487-8992-daf413e492be",
+      "result_id": "fabf9bcf-dc20-4011-977b-d13a0b08ae07"
+    }
+  ],
+  "comparisons": []
+}

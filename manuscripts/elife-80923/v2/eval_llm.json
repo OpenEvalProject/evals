@@ -1,0 +1,239 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C63"
+    ],
+    "result": "The \u03b32\u03b1'1 compartment supports both hard discrimination and generalization, while the \u03b13 compartment supports generalization but not hard discrimination. Plasticity confined to \u03b32\u03b1'1 via dopamine rescue is sufficient for both tasks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C35 and C63 provide converging behavioral evidence with appropriate controls (empty driver, reciprocal designs, DTH rescue) and statistical support. The differential performance between compartments is clearly demonstrated with n=8-12 per condition and appropriate statistical tests.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C64",
+      "C65"
+    ],
+    "result": "All three KC subtypes (\u03b3, \u03b1'/\u03b2', \u03b1/\u03b2) exhibit similar levels of overlap in odor representations and contain sufficient information to discriminate between similar odors PA and BA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C41 and C64-C65 are supported by calcium imaging data (n=5-7 flies per KC subtype) and decoder analysis showing high accuracy for all subtypes. Correlation analyses (C39-C40) with statistical support demonstrate similar overlap patterns across KC types.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C86"
+    ],
+    "result": "After optogenetic training, MBON-\u03b32\u03b1'1 responses to both the paired odor A and unpaired similar odor A' are equally depressed when presented as isolated pulses, while responses to dissimilar odor B are unaffected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C44 are supported by calcium imaging data (n=11 flies) with statistical comparisons showing significant depression for both A and A' (p=0.001 each) but no difference between them (p=0.77), and no effect on B (p=0.18). This demonstrates generalization at the neural level.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C81",
+      "C87"
+    ],
+    "result": "When odors are presented as transitions rather than isolated pulses, MBON-\u03b32\u03b1'1 responses to A' are restored to pre-training levels when A' follows A, but remain depressed when A follows A', creating an asymmetric discrimination signal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C49, C81, and C87 are supported by calcium imaging with odor transitions (n=13 flies). Statistical tests show A' responses are not significantly different pre/post when following A (p=0.376), but A responses remain depressed (p<0.001). Contrast analysis (C81, p=0.001) quantifies the asymmetry.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C50",
+      "C51"
+    ],
+    "result": "Control experiments confirm that the transition effects on MBON-\u03b32\u03b1'1 are specific to learning and to transitions between similar odors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C51 provide appropriate controls: no-LED mock training shows no changes, and transitions to dissimilar odor B show no enhancement. These controls rule out non-specific effects and confirm the specificity of the phenomenon.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "MBON-\u03b13 shows symmetric depression for both transition orders and lacks the contrast enhancement seen in MBON-\u03b32\u03b1'1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C54 are supported by imaging data (n=14 PA-paired, n=12 BA-paired flies) showing depression for both transition orders (p<0.001 each) with no difference in contrast between orders (p=0.86). This contrasts with \u03b32\u03b1'1 and aligns with \u03b13's inability to support hard discrimination.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C66"
+    ],
+    "result": "KC activity patterns trained with isolated pulses cannot account for MBON transition responses, though KCs can distinguish transitions when explicitly trained on them.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C57 and C66 are supported by logistic regression modeling showing that KC patterns trained on isolated pulses fail to reproduce MBON transition discrimination, but can discriminate transitions when trained on transition data (p<0.001 for all KC subtypes). This indicates the mechanism operates downstream of KCs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C83",
+      "C88"
+    ],
+    "result": "Behavioral responses to odor transitions show that flies exhibit enhanced attraction to A' only when it immediately follows A (no gap), not when separated by 25s, and this cannot be explained by linear summation of responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C62, C83, and C88 are supported by behavioral tracking data (n=12-13 arena runs) showing significant difference in upwind displacement for direct transitions (p=0.004) but not interrupted ones (p=0.85). Controls for starting position (C60) and linear summation (C61) strengthen the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C25",
+      "C28",
+      "C68",
+      "C69",
+      "C73",
+      "C74",
+      "C78",
+      "C89"
+    ],
+    "result": "Drosophila flexibly categorize stimuli through temporal comparison mechanisms operating at or downstream of KC-MBON synapses, allowing the same stimulus to be categorized differently depending on context.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims represent the main conclusions synthesized from the experimental results. They are well-supported by the convergence of behavioral data (discrimination/generalization tasks), neural recordings (MBON transition responses), and modeling (KC decoder analysis). The asymmetric nature (C74) and temporal requirement (C78) are directly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C67"
+    ],
+    "result": "MBON-\u03b13 receives more synaptic inputs from more KCs than MBON-\u03b32\u03b1'1, yet performs worse at hard discrimination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C67 is supported by cited connectome data (Clements et al., 2020; Li et al., 2020) showing \u03b13 receives 11,360 synapses from 888 KCs versus \u03b32\u03b1'1's 6,732 synapses from 1,019 KCs total. This contradicts simple theoretical predictions and supports the conclusion that discrimination ability is not determined solely by KC input number.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C82"
+    ],
+    "result": "The upwind displacement magnitude after A-A' transitions is similar to that caused by optogenetic activation of MBON-\u03b32\u03b1'1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C82 references unpublished data (Y. Aso, personal communication) without providing quantitative values, sample sizes, or statistical comparisons. While this comparison would strengthen the link between MBON activity and behavior, it cannot be fully evaluated without the actual data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C79",
+      "C80"
+    ],
+    "result": "Different training protocols were used for different compartments: 10 cycles with 24h retention for \u03b13, and 3 cycles with immediate testing for \u03b32\u03b1'1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C80 describe methodological details that are clearly stated in figure captions and methods. These different protocols are appropriate given the known temporal dynamics of these compartments (cited to Aso and Rubin, 2016).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C84",
+      "C85"
+    ],
+    "result": "MBON-\u03b32\u03b1'1 output and fly behavior are indistinguishable for similar odors when encountered separately, but distinguishable when closely apposed in time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C85 synthesize the main findings from both imaging (C42-C49) and behavior (C58-C62) experiments. The parallel between neural and behavioral responses strengthens the conclusion that MBON-\u03b32\u03b1'1 activity drives the observed flexible categorization behavior.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C29",
+      "C30",
+      "C70",
+      "C71",
+      "C72",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Background claims establishing the theoretical framework, prior knowledge about the Drosophila olfactory learning system, and relevant prior findings from the literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C3-C20, C29-C30, C70-C77) are appropriately supported by citations to prior literature and represent established knowledge in the field. They provide necessary context but are not novel findings of this study.",
+    "result_type": "MINOR"
+  }
+]

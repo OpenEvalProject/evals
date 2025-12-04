@@ -1,0 +1,294 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "The study analyzed behavioral and neural data from 11 rats performing an auditory evidence accumulation task, yielding 37,179 behavioral choices and 141 neurons from three brain regions (FOF, PPC, ADS). Neurons were selected based on significant choice tuning (p<0.01), resulting in region-specific datasets with varying numbers of neurons and sessions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C10 provide comprehensive documentation of the experimental design, data collection, and selection criteria. The task design is clearly described (C1-C2), sample sizes are explicitly stated (C3-C4, C8-C10), and the neuron selection criterion is statistically defined (C7). The data collection from well-trained animals is documented with appropriate citations (C6).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "The leak parameter \u03bb in the accumulation model determines temporal weighting of evidence: positive values create unstable dynamics favoring early clicks, negative values create leaky dynamics favoring recent clicks, and zero corresponds to perfect integration. Prior work has shown rats exhibit a range of these accumulation strategies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C14 provide clear mathematical and conceptual definitions of the leak parameter's interpretation, which are standard in drift-diffusion models. C15 appropriately cites prior work (Brunton et al., 2013) demonstrating behavioral variability in this parameter. These are well-established theoretical concepts correctly applied.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "A shared accumulator model for each brain region accurately captured both neural responses (median R\u00b2 of 0.91, 0.68, and 0.87 for FOF, PPC, and ADS respectively) and psychophysical choice behavior (R\u00b2 of 0.99, 0.99, and 0.97 for FOF, PPC, and ADS respectively).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C18 report quantitative model fit metrics with specific R\u00b2 values shown in Figure 2B-C. The high R\u00b2 values for both neural responses and choice behavior demonstrate that the shared accumulator framework adequately describes the data. The conclusion (C18) is appropriately conservative, stating the model is 'sufficient' rather than claiming it is the only or best possible model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Both joint and choice-only models exhibited strong sensory adaptation (\u03c6<<1), but differed in noise structure: joint models showed large diffusive noise and initial variance reflecting pre-stimulus neural variability, while choice-only models showed primarily stimulus noise. This difference suggests neural accumulation dynamics are impacted by noise resolved at the behavioral level.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C25 describe parameter findings with appropriate citations (C19, C23) and robustness checks (C24). The interpretation of adaptation (C20) and initial variance (C23) are reasonable. The robustness to alternative observation models (C24, Figure 3\u2014supplement 1) strengthens the noise findings. The interpretation (C25) is appropriately cautious, suggesting rather than definitively claiming a relationship.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "The leak parameter \u03bb differed substantially across brain regions in joint models but not in choice-only models. PPC and ADS exhibited leaky dynamics (\u03bb<0), while FOF showed unstable dynamics (\u03bb>0) with a low accumulation bound, resulting in 'primacy encoding' where early clicks disproportionately influence choice. Each region's accumulation dynamics differed from behavioral-level accumulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C36 present a major finding with appropriate statistical comparisons (C26-C27), specific parameter signs (C28-C29), and mechanistic interpretation (C30-C32). The primacy encoding finding is validated with an independent GLM analysis (C33, Figure 3\u2014supplement 2) and related to prior work (C34). The summary conclusions (C35-C36) are well-supported by the presented data. This represents a novel and important finding about regional differences in accumulation dynamics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Model comparison using cross-validated log-likelihood revealed that ADS is better described by an independent-noise accumulator model (reflecting independent accumulation processes), while FOF is better described by a shared-noise model (reflecting a single latent accumulator). This difference persists when controlling for neuron number and choice data contributions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C43 describe a rigorous model comparison with appropriate cross-validation (C38-C39) and multiple control analyses (C42-C43). The conclusions about independent vs. shared accumulation (C40-C41) are appropriately drawn from the model comparison results. The control for neuron number (C42) and exclusion of choice data (C43) strengthen the interpretation that this reflects genuine differences in neural population dynamics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Both shared and independent-noise models captured shuffle-corrected cross-correlations equally well (mean r ~0.55-0.63), suggesting correlations are primarily stimulus-induced rather than reflecting noise correlations. Dimensionality analysis confirmed ADS has higher dimensionality than FOF, with higher-dimensional ADS sessions favoring the independent-noise model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C48 provide quantitative cross-correlation analysis (C44) with appropriate interpretation (C45-C46). The dimensionality analysis using participation ratio (C47-C48) provides independent validation of the model comparison results. The interpretation that correlations are stimulus-induced (C46) is reasonable given both models fit cross-correlations equally well despite differing in noise structure.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Including neural data in the joint model substantially narrowed the posterior distribution over accumulated evidence a(t) compared to using choice data alone. The median posterior standard deviation decreased by 0.46, 0.72, and 2.23 for FOF, PPC, and ADS respectively, with the reduction increasing with neuron number.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C52 describe a clear benefit of the joint modeling approach with specific quantitative metrics (C51) shown in Figure 5B-C. The interpretation that neural data provides greater confidence in moment-by-moment evidence (C50) is well-supported. The relationship to neuron number (C52) is expected and validates the approach. This demonstrates a key advantage of the joint modeling framework.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "The joint model predicted choices more accurately than the choice-only model across all brain regions, with FOF showing ~50% improvement in test log-likelihood and 6% increase in accuracy. The joint model also significantly outperformed logistic regression baselines, demonstrating that fine timescale accumulation dynamics capture choice-relevant information beyond spike counts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C57 present rigorous model comparisons with appropriate cross-validation and multiple baselines (C55-C56, Figure 6A). The quantitative improvements (C54) are substantial and consistent across regions. The comparison to GLM baselines with varying time windows (C56) strengthens the conclusion that the accumulation framework captures temporal dynamics important for choice prediction (C57).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Putative changes of mind, identified when the posterior mean crossed the decision threshold, were rare in stimulus and choice-only models but frequent in joint models, especially in ADS. These events were associated with improved animal and model accuracy, occurred late in trials, and showed statistically significant relationships with response latency in PPC and ADS (p<0.003 and p<0.0008 respectively).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C68 describe a novel analysis with clear operational definitions and multiple validations. The frequency differences across models and regions (C58-C62) are shown in Figure 6D with statistical tests (C91). The improved accuracy on change-of-mind trials (C63-C64) supports their functional relevance. The temporal distribution (C67) and relationship to response latency (C68) with significant p-values provide behavioral validation. The interpretation about correcting early errors (C65-C66) is reasonable given the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "The study found that accumulation dynamics differed significantly across brain regions and from behavioral-level accumulation. The analysis confirmed ADS as representing graded accumulated evidence, offered a nuanced view of FOF as an unstable accumulator with primacy encoding, and identified weaker graded accumulation in PPC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C75 provide appropriate summary conclusions grounded in the presented data. The comparison to prior work (C71-C72) is accurate, and the current findings (C73-C75) represent reasonable interpretations that both confirm and extend previous analyses. The characterization of FOF as unstable rather than simply categorical (C74) represents an important refinement of prior interpretations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Incorporating neural activity reduced uncertainty in accumulated evidence estimates and improved choice prediction. The novel change-of-mind analysis revealed extensive choice vacillation in ADS and greater certainty in FOF. The results suggest different brain regions represent accumulated evidence in dramatically different ways, with whole-animal accumulation potentially constructed from diverse neural-level accumulators.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C81 provide appropriate high-level summary conclusions supported by the detailed results. The benefits of joint modeling (C76-C77) are demonstrated quantitatively. The change-of-mind findings (C78-C79) are novel and well-supported. The broader conclusions about regional differences (C80) and multi-region integration (C81) are appropriately framed as suggestions rather than definitive claims, acknowledging that the study analyzed regions separately rather than jointly modeling multiple regions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "The study addresses a gap in prior work by developing a unified framework that combines precise stimulus timing, neural activity, and choice data. Previous studies have implicitly assumed individual brain regions reflect whole-animal accumulation, but behavioral accumulation could result from interactions between regions with different dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C89 provide appropriate contextualization of the work with extensive citations (C83-C85). The critique of prior assumptions (C82, C86-C87) is fair and well-supported. The conceptual argument (C88) and illustrative example (C89) are reasonable, though speculative. These claims effectively motivate the study's approach and interpret its significance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "The primacy encoding model of FOF is supported by change-of-mind analysis showing significantly fewer events in FOF than other regions (p<4.5694e-82 vs PPC; p<3.4585e-323 vs ADS). This is consistent with prior inactivation studies showing FOF inactivation leads to leakier behavioral accumulation, as predicted if an early-evidence-favoring region were silenced.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C95 integrate the current findings with prior work appropriately. The statistical comparison (C91) is rigorous with extremely significant p-values. The reconciliation with prior studies showing overt changes of mind (C92-C93) is reasonable, distinguishing stimulus-induced from covert changes. The connection to inactivation studies (C94-C95) provides independent support for the primacy encoding interpretation, though the logic is somewhat indirect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Prior studies found PPC reflects trial history information, consistent with the current interpretation of suboptimal prestimulus tuning requiring mid-trial correction. ADS may also reflect trial history-dependent responses given its large initial variance and frequent changes of mind.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C96-C97 appropriately cite prior work and relate it to current findings. However, C98 is explicitly speculative ('seems poised to') without direct evidence from the current study. While the speculation is reasonable given the observed parameters, it represents a hypothesis for future work rather than a supported finding from the current data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Previous choice-only models indicated stimulus noise as the primary source of behavioral uncertainty, whereas joint models suggest diffusive noise is stronger. This may reflect that diffusive noise dominates at the single-population level but averages out across the brain, leaving residual stimulus noise at the behavioral level.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C99-C101 accurately describe differences between model types with appropriate citations. However, the interpretation (C102-C103) is speculative. While the hypothesis about noise averaging across populations is plausible, the study did not directly test this by modeling multiple regions jointly or measuring how noise scales with population size. This represents an interesting hypothesis rather than a demonstrated result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "The framework can be extended in multiple ways: increasing neuron density will improve explanatory power, additional behavioral/physiological variables can be incorporated, dynamical equations can be modified, observation models can be elaborated (as demonstrated with negative binomial), and the approach can be adapted to other accumulation tasks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C108 describe reasonable extensions and generalizations of the framework. C104 is supported by the observed relationship between neuron number and posterior uncertainty (C52). C107 is partially demonstrated with the negative binomial analysis (Figure 3\u2014supplement 1). The other extensions (C105-C106, C108) are reasonable projections with appropriate citations, though they represent future possibilities rather than demonstrated capabilities.",
+    "result_type": "MINOR"
+  }
+]

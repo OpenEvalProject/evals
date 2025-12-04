@@ -1,0 +1,409 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "result": "The manuscript establishes the context for studying ventral furrow formation in Drosophila embryos, noting that while the genetic and molecular details are well understood, there is no consensus on the physical mechanisms (spatiotemporal patterns of forces and material properties) driving this morphogenetic transformation. A predictive mechanical model would require accurate representation of both force patterns and material properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4 provide well-supported background context based on established literature (C1-C3) and logical reasoning about modeling requirements (C4). These claims appropriately frame the research problem and are supported by multiple citations to published work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "The manuscript reviews existing techniques for measuring tissue mechanical properties, identifying limitations of each approach. Optical/magnetic tweezers operate at piconewton forces and second timescales, while morphogenesis occurs at larger scales (tens of minutes to hours, tens to hundreds of microns). AFM and cantilevers can apply larger forces but are difficult to use in living embryos. Ferrofluid droplets can apply tens of nanonewtons but require large probes that may damage tissue.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C12 provide a comprehensive and well-supported review of existing measurement techniques and their limitations, backed by appropriate citations and logical reasoning about scale mismatches between measurement techniques and biological processes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Previous work using ferrofluid droplets measured cytoplasmic viscosity in Drosophila embryos at approximately 1000 cP and demonstrated that elasticity is largely due to F-actin in the cortex, with quantification of elastic stress relaxation timescales.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C15 accurately summarize prior published work from the authors' laboratory, appropriately citing the source (Doubrovinski et al., 2017). The inference that the actin-rich cortex is the primary source of elasticity (C15) follows logically from C14.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C102",
+      "C103"
+    ],
+    "result": "The manuscript describes a novel cantilever fabrication method using glass pipettes as molds for PDMS cantilevers. The tip is filled with polymer, crosslinker, and BODIPY dye via capillary action, then the glass is etched away with hydrofluoric acid. Filling from the front by capillary action eliminates bubble formation, as confirmed by FIB milling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C22 and C102-C103 describe the cantilever fabrication method with appropriate technical detail. The observation that front-filling eliminates bubbles (C102-C103) is supported by FIB milling data shown in Figure 1\u2014figure supplement 1.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "During cellularization in Drosophila embryos, membranes extend from the surface to partition the syncytial cytoplasm into individual cells that remain open on their basal side, connecting to the yolk compartment. When embryos are cut along one side, the uncut side continues to develop normally without noticeable defects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C24 describe well-established developmental biology of Drosophila cellularization, supported by appropriate citations and illustrated in Figure 1b. Claim C25 reports an important experimental observation that validates the cutting procedure used in the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "The cantilever pulling experiment consists of three phases: loading (cantilever translated at 0.5 \u00b5m/s for ~60 s), holding (cantilever held in place for ~60 s), and unloading (cantilever rapidly retracted and tissue allowed to relax).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C28 clearly describe the experimental protocol with specific quantitative parameters. This is straightforward methodological description supported by the experimental data shown in subsequent figures.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Cantilever deflection is linearly proportional to applied force in the observed range. The Young's modulus of the PDMS cantilever was measured using three methods: macroscopic rod deformation (1.6 MPa), viscous drag (0.9\u00b10.17 MPa), and AFM probing (2.1\u00b10.23 MPa).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C29 is based on established mechanical principles. Claims C30-C32 report three independent calibration measurements with reasonable agreement (all within a factor of ~2), providing confidence in the cantilever stiffness characterization. The measurements are supported by data in Figure 3 and supplements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C33",
+      "C34"
+    ],
+    "result": "In cantilever pulling experiments, the average force at maximal tissue displacement (end of loading phase) was 11.1\u00b11.2 nN, falling to 5.0\u00b10.45 nN by the end of the holding phase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C34 report key experimental measurements with appropriate error estimates, supported by data shown in Figure 3c. These force measurements are central to subsequent modeling and analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C39"
+    ],
+    "result": "During the holding phase, most cell edges remain stationary when the cantilever stops moving, indicating the tissue was in mechanical equilibrium and deforming adiabatically during loading. Analysis of deformation profiles shows \u03b2=0, indicating tissue deformation without significant external friction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C37 and C39 present a logical chain of reasoning supported by experimental observations in Figure 2. The inference that tissue is in equilibrium when motion ceases (C36) and therefore deforming adiabatically (C37) is sound. The \u03b2=0 analysis (C39) provides additional quantitative support for adiabatic deformation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "During ventral furrow formation, the ectoderm leading edge moves at ~0.1 \u00b5m/s, which is slower than the experimental deformation rate. Therefore, dissipative forces like friction must be lower during ventral furrow formation, and tissue deformation is also largely adiabatic during this morphogenetic process.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C40 cites published data on ventral furrow formation rates. Claims C41-C42 make a logical inference that if the experimental system (at higher deformation rates) shows adiabatic behavior, then the slower in vivo process should also be adiabatic. This reasoning is sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "During loading, applied force increases linearly with displacement rather than displacement rate, ruling out viscous force dominance. During unloading, tissue relaxes largely (but not completely) back to initial configuration. These observations indicate the tissue is elastic or viscoelastic, with elastic forces dominating over friction and viscous shear during loading.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C47 present a logical analysis of force-displacement relationships supported by experimental data in Figures 2a and 3c. The reasoning that linear force-displacement (rather than force-velocity) indicates elastic rather than viscous behavior is mechanically sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C48"
+    ],
+    "result": "The observation that force drops by only about half (not to zero) during the holding phase suggests boundary constraints may be important.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C48 makes a reasonable inference from the experimental observation that force persists during holding. The spring analogy provided in the text supports this interpretation, though the exact nature of the boundary constraint is explored further in later computational work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C53"
+    ],
+    "result": "The computational model represents cells as open prisms with apical and lateral surfaces modeled as triangular networks of elastic springs. Cytoplasm and yolk are modeled as Newtonian fluid with viscosity 1000 cP, and perivitelline fluid with viscosity ~1 cP. For triangular spring networks, Poisson's ratio is 1/3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C51 and C53 describe the computational model structure. The viscosity values are based on prior experimental measurements (C50). The Poisson's ratio for triangular networks (C53) is based on established theory. The model structure is illustrated in Figure 4.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "In the computational model with uniform elasticity, k=0.001 nN/\u00b5m matched experimental relaxation dynamics extremely well, but predicted maximal force (<0.2 nN) was an order of magnitude lower than experimentally measured forces (~11 nN loading, ~5 nN holding).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C56 report a critical discrepancy between computational predictions and experimental measurements, supported by data in Figure 5. This mismatch motivates the subsequent investigation of non-uniform mechanical properties. The quantitative comparison is clear and well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C57",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "In simplified models comparing triangular (stiff) versus hexagonal (floppy) spring networks, triangular networks required greater force for the same deformation during loading. During unloading, hexagonal networks relaxed more slowly and less completely as spring constant increased, showing qualitatively different behavior from triangular networks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C61 report results from simplified computational models shown in Figure 6. The observations are clearly documented and reveal important differences between stiff and floppy network topologies. This provides mechanistic insight into why different cellular compartments might contribute differently to loading versus unloading.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C62",
+      "C63"
+    ],
+    "result": "Based on cellular topology, the apical surface resembles a stiff elastic sheet, while lateral surfaces and basal edges form a semi-hexagonal, floppy network.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C63 make reasonable inferences about cellular topology based on the known structure of cellularizing Drosophila embryos. The apical surface forms a continuous sheet (stiff), while the basal/lateral structures are more loosely connected (floppy).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "In ferrofluid experiments, large droplets contacting the basal edge showed decreasing deformation speed as they approached the magnet, while small droplets positioned entirely inside cells showed constant or increasing speed. This difference demonstrates that apical and lateral portions are softer (lower elastic modulus) than basal edges.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C66 report independent experimental validation of differential mechanical properties, supported by data in Figure 7a-b. The inference that different dynamics reflect different elastic moduli (C66) is mechanically sound and provides crucial independent support for the computational modeling conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "In computational models with non-uniform elasticity, increasing klateral and kbasal 20-30 fold increased maximal force (0.2 to ~7 nN) with minimal effect on decay constant \u03c4 (~50 s). In contrast, increasing kapical sixfold dramatically changed \u03c4 from 39 s to 9 s. This validates that floppy components primarily affect loading (Fmax) while stiff components affect unloading (\u03c4).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C69 report key computational results shown in Figure 7c-c'' and Figure 7\u2014figure supplement 1. The differential effects of varying elasticity in different compartments provide strong support for the hypothesis that topology determines mechanical contributions. The quantitative results are clearly documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C70",
+      "C71"
+    ],
+    "result": "One parameter set (kapical=0.007, klateral=0.126, kbasal=6.825) produced maximal force (7 nN) within the experimental range (5-11 nN) while maintaining good fit to relaxation dynamics. Assuming basal domains are much stiffer than apical and lateral domains suffices to reconcile the model with experimental data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C71 report the successful reconciliation of computational model with experimental data by incorporating non-uniform mechanical properties. This represents a major finding, though the authors appropriately note these should be considered order-of-magnitude estimates given measurement accuracy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Computational modeling shows that cells throughout the embryo move when force is applied locally, even on the opposite side and at distant poles. This was confirmed experimentally using ferrofluid droplets. Simulations reveal stress upregulation near poles. Geometrical constraints preventing free tissue rotation allow elastic stress buildup throughout the tissue when force is applied locally.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C75 report important findings about system-wide mechanical coupling, supported by computational results (Figure 8a-a', Video 3) and experimental validation (Figure 8b-b', Video 4). The interpretation that embryo geometry creates effective boundary constraints (C75) is well-supported and explains the persistent force during holding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "During the loading phase of pulling experiments, epithelial deformation is adiabatic and dominated by elastic forces and geometric constraints. Since experimental deformations were comparable to or faster than endogenous ventral furrow formation, these conclusions should apply to that morphogenetic process.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C78 summarize major conclusions supported by the experimental and computational analyses presented throughout the manuscript. The extrapolation to ventral furrow formation (C78) is reasonable given the rate comparison, though direct validation in that context would strengthen the claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Experimental data could not be reconciled to a model with uniform elasticity along the apical-basal axis, but fit well with a model where apical surfaces are significantly softer than basal surfaces. This was independently confirmed by ferrofluid droplet experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C81 summarize the central finding of differential mechanical properties. The conclusion is supported by both computational modeling (inability to fit uniform model, success with non-uniform model) and independent experimental validation (ferrofluid experiments). This represents a major discovery.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C82",
+      "C83"
+    ],
+    "result": "The reason apical and basal structures contribute differently to loading and unloading is that apical structures are topologically stiff while basal/lateral structures are topologically floppy. Generally, relaxation dynamics should primarily reveal elasticities of stiff (non-floppy) components.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C83 present important mechanistic insights supported by the simplified computational models (Figure 6). The generalization to other systems (C83) is a reasonable inference from the demonstrated principles, though it represents a broader claim that would benefit from validation in other contexts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C84",
+      "C85"
+    ],
+    "result": "Geometrical constraints (system size effects) generate significant force opposing tissue movement when force is applied locally in the Drosophila embryo. Any deformation propagates through tissue on a timescale of seconds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C85 report important findings about mechanical coupling in the embryo, supported by both computational modeling and experimental observations (Figure 8). This represents a novel insight about the role of embryo geometry in mechanical response.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "The manuscript proposes an alternative interpretation of D'Angelo et al. (2019) findings. Rather than developmental changes in epithelial mechanical properties, the observed differences may reflect 5 \u00b5m beads contacting rigid basal domains early in cellularization but only softer apical/lateral domains later as cells elongate. This interpretation is consistent with cellularization dynamics and explains why colcemid treatment blocks apparent softening.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C86-C92 present a reinterpretation of published work. While the alternative explanation is plausible and consistent with the current findings (C88-C92), it remains speculative without direct experimental validation. The authors appropriately frame this as a proposal rather than a definitive conclusion. Testing this hypothesis would require experiments specifically designed to distinguish between the two interpretations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Previous work showed tissue elasticity is dominated by cortical F-actin, and the basal side exhibits much stronger F-actin localization than apical or lateral sides. The elastic modulus estimated from relaxation dynamics (E\u22480.001-0.01) provides a good estimate of apical elasticity specifically, while basal elasticity is substantially higher.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C94 cite established findings about F-actin distribution. Claims C95-C96 represent major conclusions from the current work, integrating computational modeling with known F-actin distributions. The consistency between F-actin localization and inferred mechanical properties strengthens the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Force drops but levels off during holding, implying some elastic stress dissipates on a minute timescale while some persists long-term. Tissue recoil is largely (85-100%) complete. Given that elasticity depends on actin and actin turnover is high in this tissue, actin turnover is hypothesized to cause the decreasing force during holding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C97-C98 report experimental observations. Claims C99-C100 propose a hypothesis about the mechanism of stress relaxation. While the hypothesis is reasonable and consistent with known actin dynamics, it remains speculative without direct experimental validation (e.g., testing predictions about how actin turnover inhibition would affect force dynamics).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "The manuscript's central conclusions are that tissue response to applied force is adiabatic and dominated by elastic forces and geometric constraints, that apical surfaces are softer than basal surfaces, that different cellular compartments have very different mechanical properties that contribute differently to different stimuli, and that tissue geometry plays a substantial role in mechanical response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C19 represent the main conclusions of the manuscript, each supported by multiple lines of evidence including experimental measurements, computational modeling, and independent validation experiments. These findings are well-integrated and represent significant advances in understanding epithelial mechanics.",
+    "result_type": "MAJOR"
+  }
+]

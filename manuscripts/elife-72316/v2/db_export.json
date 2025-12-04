@@ -1,0 +1,1294 @@
+{
+  "submission": {
+    "id": "1655a4c0-80bc-4182-b224-0777e0815b06",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-04T03:23:05.631381Z",
+    "updated_at": "2025-12-04T03:23:05.631381Z"
+  },
+  "content": [
+    {
+      "id": "33d6b463-9a2d-493b-8163-5b668c02a555",
+      "submission_id": "1655a4c0-80bc-4182-b224-0777e0815b06",
+      "content_type": "manuscript",
+      "content_text": "# A mechanosensing mechanism controls plasma membrane shape homeostasis at the nanoscale\n\n## Authors\n\n- Xarxa Quiroga<sup>1</sup>\n- Nikhil Walani<sup>3</sup> ([ORCID: 0000-0002-5248-9181](https://orcid.org/0000-0002-5248-9181))\n- Andrea Disanza<sup>4</sup>\n- Albert Chavero<sup>5</sup>\n- Alexandra Mittens<sup>1</sup>\n- Francesc Tebar<sup>5</sup>\n- Xavier Trepat<sup>1</sup> ([ORCID: 0000-0002-7621-5214](https://orcid.org/0000-0002-7621-5214))\n- Robert G Parton<sup>6</sup> ([ORCID: 0000-0002-7494-5248](https://orcid.org/0000-0002-7494-5248))\n- Mar\u00eda Isabel Geli<sup>7</sup> ([ORCID: 0000-0002-3452-6700](https://orcid.org/0000-0002-3452-6700))\n- Giorgio Scita<sup>4</sup> ([ORCID: 0000-0001-7984-1889](https://orcid.org/0000-0001-7984-1889))\n- Marino Arroyo<sup>1</sup>\n- Anabel-Lise Le Roux<sup>1</sup> ([ORCID: 0000-0003-4152-5658](https://orcid.org/0000-0003-4152-5658)) \u2020\n- Pere Roca-Cusachs<sup>1</sup> ([ORCID: 0000-0001-6947-961X](https://orcid.org/0000-0001-6947-961X)) \u2020\n\n### Affiliations\n\n1. Institute for Bioengineering of Catalonia, the Barcelona Institute of Technology (BIST) Barcelona Spain ([ROR:03kpps236](https://ror.org/03kpps236))\n2. Departament de Biomedicina, Unitat de Biof\u00edsica i Bioenginyeria, Facultat de Medicina i Ci\u00e8ncies de la Salut, Universitat de Barcelona Barcelona Spain ([ROR:021018s57](https://ror.org/021018s57))\n3. Department of Applied Mechanics, IIT Delhi New Delhi India ([ROR:049tgcd06](https://ror.org/049tgcd06))\n4. IFOM ETS - The AIRC Institute of Molecular Oncology Milan Italy ([ROR:02g2x7380](https://ror.org/02g2x7380))\n5. Departament de Biomedicina, Unitat de Biologia Cel\u00b7lular, Facultat de Medicina i Ci\u00e8ncies de la Salut, Centre de Recerca Biom\u00e8dica CELLEX, Institut d\u2019Investigacions Biom\u00e8diques August Pi i Sunyer (IDIBAPS), Universitat de Barcelona Barcelona Spain ([ROR:021018s57](https://ror.org/021018s57))\n6. Institute for Molecular Bioscience and Centre for Microscopy and Microanalysis, University of Queensland Brisbane Australia ([ROR:00rqy9422](https://ror.org/00rqy9422))\n7. Institute for Molecular Biology of Barcelona (CSIC) Barcelona Spain ([ROR:05t8khn72](https://ror.org/05t8khn72))\n8. Department of Oncology and Haemato-Oncology, University of Milan Milan Italy ([ROR:00wjc7c48](https://ror.org/00wjc7c48))\n9. Universitat Polit\u00e8cnica de Catalunya (UPC), Campus Nord, Carrer de Jordi Girona Barcelona Spain ([ROR:03mb6wj31](https://ror.org/03mb6wj31))\n10. Centre Internacional de M\u00e8todes Num\u00e8rics en Enginyeria (CIMNE) Barcelona Spain ([ROR:03ej8a714](https://ror.org/03ej8a714))\n\n\u2020 Corresponding author\n\n## Abstract\n\nAs cells migrate and experience forces from their surroundings, they constantly undergo mechanical deformations which reshape their plasma membrane (PM). To maintain homeostasis, cells need to detect and restore such changes, not only in terms of overall PM area and tension as previously described, but also in terms of local, nanoscale topography. Here, we describe a novel phenomenon, by which cells sense and restore mechanically induced PM nanoscale deformations. We show that cell stretch and subsequent compression reshape the PM in a way that generates local membrane evaginations in the 100 nm scale. These evaginations are recognized by I-BAR proteins, which triggers a burst of actin polymerization mediated by Rac1 and Arp2/3. The actin polymerization burst subsequently re-flattens the evagination, completing the mechanochemical feedback loop. Our results demonstrate a new mechanosensing mechanism for PM shape homeostasis, with potential applicability in different physiological scenarios.\n\n## Introduction\n\nCells constantly exchange information with their surroundings, and external inputs are first received by their outermost layer, the plasma membrane (PM). This interface, far from being an inert wall, integrates and transmits incoming stimuli, ultimately impacting cell behavior. In this context, the traditional view of such stimuli as biochemical messengers has now changed to include the concept that physical perturbations are also of major importance (Apodaca, 2002; Beedle et al., 2015; Le Roux et al., 2019). By sensing and responding to physical and biochemical stimuli, one of the main functions of the PM is to adapt to the changes in shape that cells experience as they migrate or are mechanically deformed, in a variety of physiological conditions (Innocenti, 2018; Diz-Mu\u00f1oz et al., 2016; Cheng et al., 2015; Li et al., 2022; Aragona et al., 2020; Gefen, 2011). To date, research in this area has largely focused on the regulation of PM area and tension, at the level of the whole cell (Gauthier et al., 2012; Pontes et al., 2017; Gauthier et al., 2011). For instance, cell stretch or decrease in medium osmolarity has been commonly used to raise PM tension, unfolding membrane reserves (ruffles, caveolae), inhibiting endocytosis and promoting exocytosis (Gerv\u00e1sio et al., 2011; Dai et al., 1998; Riggi et al., 2019; Wang and Galli, 2018; Lemi\u00e8re et al., 2021). Conversely, cell exposure to a hypertonic solution or cell compression has been employed to decrease PM tension, leading to an increase on the activity of different endocytic pathways (Thottacherry et al., 2018; Echarri et al., 2019; Kosmalska et al., 2015; Wang et al., 2011). These studies have shown that PM tension homeostasis is maintained by regulating PM area through mechanisms like endocytosis, exocytosis, or the assembly and disassembly of PM structures like ruffles and caveolae.\n\nHowever, changes in cell PM area upon mechanical perturbations are necessarily accompanied by changes in topography at the local scale. This is exemplified by caveolae flattening upon cell stretch (Sinha et al., 2011) or creation of PM folds at the sub-\u00b5m scale upon cell compression (Kosmalska et al., 2015). Curvature also arises when membranes are exposed to either external topographical cues (Zhao et al., 2017; Lou et al., 2019) or internal pulling by actin filaments (Galic et al., 2012; Itoh et al., 2005; Renard et al., 2015). Thus, to maintain PM homeostasis, cells should be able not only to respond to overall changes in PM tension or area, but also to local changes in PM topography. This requirement is even clearer if one considers recent findings showing that tension does not propagate extensively throughout the whole ensemble of the PM, but dissipates in small areas of less than 5 \u00b5m (Shi et al., 2018). However, if such local PM shape homeostasis mechanisms exist, and how they operate, is still unknown.\n\nHere, we studied this problem by using as a model the controlled compression of fibroblasts through the application and release of stretch. We show that upon cell compression, bud-shaped PM deformations of negative curvature (evaginations) on the 100 nm scale are formed and enriched by IRSp53, a negative curvature-sensing protein. This creates a local node where specific PM topography is selectively coupled through IRSp53 (and potentially other I-BAR proteins) to activate actin polymerization mediated by Rac1 and Arp2/3. The activation of this cascade flattens the structure, recovering the PM shape to its initial state. Our findings demonstrate that a local mechanosensing mechanism controls PM homeostasis when perturbed through compression.\n\n## Results\n\n### Compression generates dynamic PM evaginations of 100 nm in width\n\nTo study how PM topography is regulated, we subjected normal human dermal fibroblasts (NHDFs) transfected with an EGFP-membrane marker to a physiologically relevant 5% equibiaxial stretch by using a custom-made stretch system composed by a PDMS stretchable membrane clamped between two metal rings, as previously described in Casares et al., 2015 (see Materials and methods). Cell response during and after stretch was monitored by live fluorescence imaging. As previously described, when tensile stress was applied cells increased their area by depleting PM reservoirs, such as ruffles (Gauthier et al., 2012; Kosmalska et al., 2015). After 3 min, stretch was released, resulting in a compression stimulus. At this point, excess membrane was stored again in folds, visualized as bright fluorescent spots of \u2248500 nm (Figure 1A and Video 1). These spots incorporate approximately 1.5% of PM area (Figure 2\u2014figure supplement 1A), and thus store an important fraction of the area modified by cell stretch. As we have previously published (Kosmalska et al., 2015), these spots are formed passively by the PM to accommodate compression, analogously to what occurs when compressing synthetic lipid bilayers (Staykova et al., 2013). As the diffraction limit of a standard fluorescence microscope lays in the range of 500 nm, we characterized the structure of the compression-generated folds in more detail using electron microscopy. Cells transfected with a PM marker were seeded in a 3D patterned PDMS membrane, stretched and immediately fixed after the release of the stimulus. Next, brightfield and fluorescent images of the 3D pattern and the cells on it were acquired and samples were further processed for scanning electron microscopy (SEM) imaging. Computational alignment tools allowed for correlation between brightfield, fluorescence, and SEM images. De-stretched cells displayed numerous bud-shaped evaginations at their apical PM side that correlated with the bright spots seen by fluorescence (Figure 1B and C), showing that the PM bends outward (thereby minimizing friction with the underlying cortex).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/72316/elife-72316-fig1-v2.jpg)\n\n**Figure 1.:** (A) Time course images of a normal human dermal fibroblast (NHDF) transfected with EGFP-membrane marker before, during, and after 5% constant stretch application. PM evaginations are seen as bright fluorescent spots after the release of the stretch due to compression of the PM. Scale bar is 20 \u03bcm. (B) NHDF imaged through scanning electron microscopy (SEM). A non-stretched cell (left), and a cell just after stretch release (right) are shown. Scale bars are 10 \u03bcm in main images, 500 nm in magnified image (framed in red). (C) Correlation between fluorescence and SEM images of a non-stretched and stretched-released NHDF. Matching was achieved by using a patterned substrate together with computational tools for alignment. Scale bar is 20 \u03bcm for the main images and 2 \u03bcm for the insets. (D) Transmission electron microscopy (TEM) images of a non-stretched and a stretched-released NHDF. Yellow arrows in magnified image point at PM evaginations formed at the apical side of the cell. Scale bars are 1 \u03bcm for the main images and 500 nm for the insets. (E) Detail of an evagination, cyan and magenta lines show evagination\u2019s head and neck diameters, respectively. Scale bar is 100 nm. (F, G) Corresponding evagination neck and head diameters (F) and curvatures (G). N=22 evaginations from 3 independent experiments. Data show mean \u00b1 s.e.m. In A, C, D, and E, red-framed images show a magnification of the areas marked in red in the main image.\n\n![Video 1.](https://cdn.elifesciences.org/articles/72316/elife-72316-video1.mp4.jpg)\n\n**Video 1.:** Images on the right side show a magnification of the areas marked in red on the left side.\n\nOf note, we previously described that cell compression creates not only evaginations at the apical surface but also invaginations in the basal surface (Kosmalska et al., 2015). However, most fluorescence spots coincided with evaginations, showing that membrane folds tend to protrude toward the surface offering least resistance (i.e., the media on top of the apical surface, rather than the cytoplasm on top of the basal surface). We thus focused our study on evaginations. To accurately measure the size of these evaginations we moved into transmission electron microscopy (TEM). By comparing non-stretched to stretched-released cells, we observed that the first displayed a homogeneously flat PM, while the second group displayed bud-shaped evaginations on the apical side (Figure 1D). Analysis of the shape profile of compression-induced evaginations yielded an average diameter in the neck (cylindrical shape) of 83 nm and of 115 nm in the head (spherical shape), and average curvatures of 0.03 and 0.02 nm\u20131, respectively (Figure 1E, F and G).\n\nIn cells, passive fold formation is followed by active resorption involving actin cytoskeleton rearrangements, allowing for topography equilibration within minutes (Kosmalska et al., 2015). As previously done in mouse embryonic fibroblasts (MEFs) (Kosmalska et al., 2015), we plotted the decrease in PM fluorescence at the location of the evagination as a function of time (during 180 s). To assess the effectiveness of resorption, we fitted the fluorescence curve to an exponential equation with a characteristic time scale (Figure 2A), quantified by the decay constant in s\u20131. Averaging the decay curves for all cells renders a characteristic resorption time for a specific cell line (Figure 2B). Here for NHDF, full reabsorption of evaginations leads to an average decay constant of 0.04 s\u20131 (corresponding to a half-life of about 17 s ensuring a complete return to fluorescent baseline at the end of the experiment).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/72316/elife-72316-fig2-v2.jpg)\n\n**Figure 2.:** (A) Dynamics of PM evaginations of one example cell after stretch release, quantified as the change in fluorescence of the structure with time (average of 10 evaginations). The black line corresponds to the plot of the corresponding decay curve fit. (B) Dynamics of PM evaginations quantified as the change in fluorescence of the structure with time. N=17 cells from 3 independent experiments. (C) Decay constants extracted from the fits of the PM evaginations dynamics of each cell. N=12 cells from 3 independent experiments. (D) Definition of lag time. (E) Time course images of mCherry-membrane and Actin Chromobody-GFP (ACG) marking PM evaginations in NHDF after stretch release. (F) Dynamics of PM evaginations quantified through mCh-membrane or ACG fluorescence markers during stretch release in NHDF. N=20 cells from 3 independent experiments. (G) Timepoint of maximal fluorescence intensity of PM and ACG (left, paired plot; right, dot plot with mean). Statistical significance was assessed through paired Wilcoxon test. N=20 cells from 3 independent experiments. (H) Time course images of mCherry-membrane and mEmerald-Ezrin marking PM evaginations in NHDF after the release of the stretch. (I) Dynamics of PM evaginations quantified through mCh-membrane and mEmerald-Ezrin fluorescence markers after stretch release in NHDF. N=14 cells from 2 independent experiments. (J) Timepoint of maximal fluorescence intensity of PM and Ezrin markers (left, paired plot; right, dot plot with mean). Statistical significance was assessed through paired Wilcoxon test. N=14 cells from 2 independent experiments. Data show mean \u00b1 s.e.m.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/72316/elife-72316-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) % of cell area stored in plasma membrane (PM) evaginations after stretch in NHDF. N=117 from 3 independent experiments. (B) Quantification of the decay constants of membrane-tagged PM evaginations in NHDF cells in absence or presence of ACB or Ezrin overexpression. Statistical significance was assessed through Kruskal-Wallis test. N=17, 20, and 14 cells from 3, 3, and 2 independent experiments respectively. (C) Western blot image of wild-type (WT) and IRSP53-/- cell lysates incubated with anti-IRSp53 antibody. Representative western blot from three experiments. (D) Quantification dynamics of mCherry-membrane-tagged PM evaginations after stretch release in WT or IRSp53-/- MEF cells. N=20 and 17 cells from 2 independent experiments in each case. (E) Corresponding quantification of the decay constants of WT or IRSp53-silenced MEF cells. Significance was calculated through Mann-Whitney test. N=20 and 17 cells from 2 independent experiments. (F) Transmission electron microscopy (TEM) images of IRSp53-/- cells co-transfected with csAPEX2-GBP together with (top) mito-GFP or (bottom) EGFP-IRSp53-FL. APEX staining can be observed around mitochondria (top), in the tips of filopodia and up to some extent in the PM of EGFP-IRSp53-FL-transfected cells (bottom), as expected. Scale bars are 500 nm. Data show mean \u00b1 s.e.m. (G) Western blot image from cell lysates of IRSP53-/-, IRSP53-/- silenced with IRTKs using CRISPR-Cas9 (different clones A4, F3 and G2). Clone F3 was subsequently used. 160 s and 240 s are exposure times. Representative western blot from three experiments. (H) RT-PCR from cell lysates of WT, IRSP53-/-, IRSP53-/- silenced with IRTKs using CRISPR-Cas9 (clone F3). (I) Quantification dynamics of mCherry-membrane-tagged PM evaginations after stretch release in WT or IRSP53-/- silenced with IRTKs using CRISPR-Cas9 MEF cells. N=18 and 17 cells from 2 independent experiments in each case. (J) Corresponding quantification of the decay constants of WT or IRSP53-/- silenced with IRTKs using CRISPR-Cas9. Significance was calculated through Mann-Whitney test. N=18 and 17 cells from 2 independent experiments. Data show mean \u00b1 s.e.m.\n\nAltogether, these data indicate that PM compression led primarily to the formation of evaginations of regular size and shape at the apical side, which are immediately resorbed by the cell in an active process to re-equilibrate PM topography and tension.\n\n### Actin is recruited to evaginations\n\nIn light of these results, we wondered if the PM evaginations formed upon compression could be sensed by the cell, triggering a mechanism to recover PM shape. Based on previous results showing that actin depolymerization by either latrunculin A or cytochalasin D blocked PM remodeling after stretch (Kosmalska et al., 2015), we hypothesized that the first step for recovery might involve reattachment of the evaginated PM to the actin cortex. To explore this idea, we subjected NHDFs to a cycle of stretch and we imaged their response after stretch release. To visualize actin dynamics, cells were co-transfected with a PM marker together with a plasmid expressing an actin nanobody bound to a GFP fluorophore (ACG). As evaginations were being resorbed, actin was recruited to the same spot (Figure 2E and Video 2). We quantified the fluorescence intensity of both PM and ACG markers and compared the time of maximum intensity in both channels. A difference in times (lag, Figure 2D) between any protein marker and the membrane marker indicates that the protein is being recruited subsequently to the formation of the evagination. Actin recruitment was indeed delayed with respect to the membrane (Figure 2F and G). This was followed by a decrease in the intensity of both markers that concluded when evaginations were resorbed. This suggests that the PM quickly reattaches to the underlying cortex, which then mediates remodeling of the structure. We noticed that the decay constant quantified for membrane resorption in the cells with ACG overexpression was slightly perturbed (Figure 2\u2014figure supplement 1B), which could be due to mechanical interference caused by actin manipulation (Flores et al., 2019). We repeated the same experiment by overexpressing the PM-cortex linker Ezrin (McClatchey, 2014; Fritzsche et al., 2014) and no difference in decay constant was observed under this condition (Figure 2\u2014figure supplement 1B). mEmerald-Ezrin also co-localized with evaginations during their resorption (Figure 2H and Video 3) and fluorescence analysis of PM and Ezrin markers revealed a recruitment of the protein that mimicked, with a delay of 10 s, the one seen with actin (Figure 2I and J).\n\n![Video 2.](https://cdn.elifesciences.org/articles/72316/elife-72316-video2.mp4.jpg)\n\n**Video 2.:** Images on the right side show a magnification of the areas marked in red on the left side.\n\n![Video 3.](https://cdn.elifesciences.org/articles/72316/elife-72316-video3.mp4.jpg)\n\n**Video 3.:** Images on the right side show a magnification of the areas marked in red on the left side.\n\nThe local appearance of the ACG marker at the evaginated PM suggests a local change in actin architecture, accompanied with reattachment to the cortex. We further explored which molecular machinery can trigger the observed polymerization event. I-BAR domain containing proteins have the ability to sense negative curvature, corresponding to an extruded PM, and to concomitantly recruit actin nucleation promoting factors (NPFs) or even directly bind actin monomers (Simunovic et al., 2015). Interestingly, a recent work described how Ezrin needs to act in partnership with the I-BAR protein IRSp53 to enrich in negatively curved membranes (Tsai et al., 2018). Moreover, recent studies in vitro and in vivo showed that the I-BAR domain of IRSp53 displays a peak of sorting at evaginations with curvatures of 0.05 nm\u20131. They also revealed that lower curvature values comparable to the ones obtained by TEM imaging of our evaginations led to a twofold enrichment of this domain with respect to a control membrane marker (Pr\u00e9vost et al., 2015; Breuer et al., 2019).\n\nPrompted by these observations, we tested if IRSp53 could be the molecular linker between PM shape and actin dynamics in our system. To investigate this possibility, we used isogenic MEFs isolated from IRSp53 null mice (Disanza et al., 2013; Weiss et al., 2009; Sawallisch et al., 2009) that we call IRSp53-/- cells, and compared their decay curves with wild-type (WT) MEF cells (Figure 2\u2014figure supplement 1C). No significant differences were observed (Figure 2\u2014figure supplement 1D, E).\n\nDespite this result, we examined whether IRSp53 was enriched in the evaginations formed upon stretch release of the PM. For this, we used APEX technology (Martell et al., 2017; Ariotti et al., 2018) to visualize IRSp53 at PM evaginations using TEM. We co-transfected IRSp53-/- cells with csAPEX2-GBP, a conditionally stable APEX marker bound to a nanobody specifically recognizing GFP (also called GFP-binding protein, GBP), with the EGFP-tagged full length (FL) WT IRSp53 protein (EGFP-IRSP53-FL). As a control, we used a GFP-bound mitochondrial marker (Mito-GFP) instead of EGFP-IRSP53-FL. A strong APEX signal (visible as a darker signal in the TEM image) was observed around the mitochondrial membrane for Mito-GFP-transfected cells (Figure 2\u2014figure supplement 1F, top), and at the tip of filipodia for EGFP-IRSp53-FL-transfected cells (Figure 2\u2014figure supplement 1F, bottom) as previously described (Breuer et al., 2019; Sathe et al., 2018). Under these conditions, we analyzed the PM evaginations generated by a stretch-release cycle and found an increase in APEX signal to evaginations only in IRSp53-FL-transfected cells (Figure 3A), but not in control mito-GFP-transfected cells (Figure 3B). These findings strongly suggest that IRSp53 is recruited to the evaginations.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/72316/elife-72316-fig3-v2.jpg)\n\n**Figure 3.:** (A, B) Transmission electron microscopy (TEM) images of PM evaginations coming from cells co-transfected with either APEX-GBP and (A) EGFP-IRSP53-FL or (B) control condition mito-GFP. APEX staining can be observed at the PM evaginations of EGFP-IRSp53-FL-transfected cells marking IRSp53 position. Scale bars are 500 nm. (C) Schematics representing the I-BAR protein IRSp53 and the different molecules interacting with its different domains. (D) Schematics of the IRSp53 mutants used in this study. Stars denote the location of mutations impairing the function of the different domains. (E\u2013F) Images and dynamics of PM after stretch release of IRSp53-/-R cells transfected with mCh-membrane and FL form of IRSp53 coupled to EGFP. N=53 cells from 12 independent experiments. Scale bar is 2 \u03bcm. (G) Timepoint of maximal fluorescence intensity of PM and FL form of IRSp53 coupled to EGFP (left, paired plot; right, dot plot with mean). Statistical significance was assessed through paired Wilcoxon test. N=51 cells from 11 independent experiments. (H, I) Images and dynamics of PM after stretch release of IRSp53-/-R cells transfected with mCh-membrane and \u0394I-BAR form of IRSp53 coupled to EGFP. The purple arrow indicates the lag between the PM and IRSp53 signals, that is, the time difference between the peaks of maximum intensity of both markers. N=12 cells from 3 independent experiments. Scale bar is 2 \u03bcm. (J) Time lag of FL or mutated IRSp53 plotted against the decay constant (see Figure 2\u2014figure supplement 1 for n numbers, statistical analyses, and detailed data for each construct). Data show mean \u00b1 s.e.m.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/72316/elife-72316-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A\u2013G) Images of IRSp53-/- cells after stretch release transfected with mCh-membrane and either the FL form of IRSp53 or different mutant forms of the protein coupled to EGFP. Scale bars are 2 \u03bcm. (H\u2013L) Corresponding dynamics of plasma membrane (PM) evaginations upon stretch release quantified through mCh-membrane or GFP coupled to the different IRSp53 mutants. N = 15, 13, 14, 9 12, and 16 cells from 3, 3, 2, 3, 3, and 3 independent experiments. Data show mean \u00b1 s.e.m.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/72316/elife-72316-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A) Images of plasma membrane (PM) evaginations of IRSp53-/-R cells transfected with mCh-membrane in combination with the different full length or mutant forms of EGFP-IRSp53 that do not affect PM recovery after stretch. Images show the first (t0 s) and last (t180 s) timepoint of acquisition after stretch. Scale bars are 5 \u03bcm. (B) Corresponding time course dynamics corresponding to (A) of PM evaginations. (C, D) Quantification of the decay constants and lag times of (A) after the release of stretch. Statistical significance was assessed through Kruskal-Wallis tests. N = 62, 19, and 19 cells from 11, 3, and 3 independent experiments. (E) Images of PM evaginations of IRSp53-/-R cells transfected with mCh-membrane in combination with the different full length or mutant forms of EGFP-IRSp53 that do affect PM recovery after stretch. Images show the first (t0 s) and last (t180 s) timepoint of acquisition after stretch. Scale bars are 5 \u03bcm. (F) Corresponding time course dynamics corresponding to (E) of PM evaginations. (G, H) Quantification of the decay constants and lag times of (E) after the release of stretch. Statistical significance was assessed through Kruskal-Wallis tests. N=62, 16, 19, 14, and 23 cells from 11, 3, 3, 2, and 3 independent experiments. (I) Time course images of PM evaginations after stretch release on normal human dermal fibroblast (NHDF) expressing a PM marker alone, or a PM marker plus either a constitutively active (G12V) or a dominant negative (T17N) form of Rac1. PM was tagged with GFP-membrane marker. (J) Corresponding quantification of evagination resorption dynamics after stretch. (K) Time constants resulting from the exponential fitting of the curves in panel (J). Statistical significance was assessed through one-way ANOVA. N=21, 19, and 19 cells from 4 independent experiments. Data show mean \u00b1 s.e.m.\n\nWe thus wondered whether IRSP53 function could be compensated by other I-BAR proteins, and especially IRTKs, a highly homologous member of the I-BAR family proteins. To assess this, we generated IRSP53-/- cells in which IRTKs has been silenced by CRISPR-CAS9 (Figure 2\u2014figure supplement 1G, H). We unexpectedly found a slightly faster evagination resorption in the double KO cells (Figure 2\u2014figure supplement 1I, J). Potentially, all these results could be due to compensatory overexpression of other I-BAR family members proteins in the different KO cell lines. Consistently, we found that the mRNA levels of the I-BAR proteins IRTKs and MIM were robustly upregulated in the IRSp53-/- cells, while MIM was elevated in the IRSP53-/- IRTKs KO cell line (Figure 2\u2014figure supplement 1H). Thus, cells genetically knocked out for IRSp53 adapt to the loss of protein by compensatory elevation of I-BAR family protein, implying that stable KO strategies are not suited to clarify the overall role of I-BAR protein in evagination resorption.\n\nAs an alternative strategy, we transiently overexpressed various mutated forms of IRSp53, with potential dominant-negative roles, in cells where the expression of untagged IRSp53 was reconstituted by stable infection (IRSp53-/-R cells). IRSp53 possesses multiple domains with multiple interactors (Figure 3C). The I-BAR domain of IRSp53 not only interacts with charged curved membranes, but also possesses a Rac-binding domain binding to activated Rac, and has been described to bundle actin filaments (Suetsugu et al., 2006b). IRSp53 also contains an atypical CRIB domain that mediates the interaction with activated Cdc42, but not Rac1 (Kast et al., 2014) and, an SH3 domain that can recruit different NPFs, such as WAVE2, N-WASP, the actin regulatory protein Eps8 and VASP (Scita et al., 2008). Therefore, we analyzed the effects of various IRSp53 mutants, each affecting a specific domain and impeding a specific interaction, as described in Table 1 and Figure 3D.\n\n**Table 1.**\n List of IRSp53 mutants used in the experiments.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Mutant name</th>\n      <th>Domain affected</th>\n      <th>Description</th>\n      <th>Expected effect</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>IRSP53-4KE</td>\n      <td>I-BAR</td>\n      <td>Replace charged lysine by neutral glycine of I-BAR</td>\n      <td>Decreased electrostatically mediated IRSP53/plasma membrane binding Suetsugu et al., 2006b; Mattila et al., 2007</td>\n    </tr>\n    <tr>\n      <td>IRSP53-I268N</td>\n      <td>CRIB</td>\n      <td>Loss of function in CRIB</td>\n      <td>Impaired CDC42 interaction</td>\n    </tr>\n    <tr>\n      <td>IRSP53-I403P</td>\n      <td>SH3</td>\n      <td>Loss of function in SH3</td>\n      <td rowspan=\"2\">Impaired interactions with SH3 interactors, including WAVE2 (Choi et al., 2005), VASP, and Eps8 (Disanza et al., 2013; Disanza et al., 2006)</td>\n    </tr>\n    <tr>\n      <td>IRSP53-W413G</td>\n      <td>SH3</td>\n      <td>Prevents correct folding of the SH3 domain</td>\n    </tr>\n    <tr>\n      <td>I-BAR</td>\n      <td>SH3+CRIB</td>\n      <td>Absence of SH3 and CRIB domains</td>\n      <td>Impaired interactions with SH3 and CRIB interactors</td>\n    </tr>\n    <tr>\n      <td>\u0394I-BAR</td>\n      <td>I-BAR</td>\n      <td>Absence of I-BAR</td>\n      <td>Impaired I-BAR-mediated plasma membrane binding and impaired Rac1 binding</td>\n    </tr>\n  </tbody>\n</table>\n\nWe started by overexpressing EGFP-IRSP53-FL protein in IRSp53-/-R cells which colocalized with the PM (Video 4). Further confirming IRSP53 recruitment to the invagination, protein fluorescence in the evagination was significantly delayed with respect to the PM marker (Figure 3E\u2013F).\n\n![Video 4.](https://cdn.elifesciences.org/articles/72316/elife-72316-video4.mp4.jpg)\n\n**Video 4.:** Images on the right side show a magnification of the areas marked in red on the left side.\n\nNext, we used the fluorescently labeled mutants, which all colocalized with the PM marker (Figure 3\u2014figure supplement 1A\u2013G), indicating that multiple protein interaction domains of IRSp53, in addition to the I-BAR, mediate the association with the PM, as already suggested in previous studies (Robens et al., 2010; Bisi et al., 2020). Several of IRSp53 mutants showed slower evagination resorption, and increased lag in recruitment (Figure 3\u2014figure supplement 1H\u2013L). Notably, the EGFP-IRSP53-4KE and IRSP53-I268N did not affect PM decay constants and lag times when compared with IRSp53-FL (Figure 3\u2014figure supplement 2A\u2013D and Videos 5 and 6). In the other cases, however, PM resorption occurred with increased lag times and/or slower decay time, indicating that the overexpression of the mutants affected the process (Figure 3\u2014figure supplement 2E\u2013H). Specifically, the point mutant I403P and W413G in the SH3 domain had a small effect on resorption decay constant but significantly increased the lag time. The deletion of the entire I-BAR domain (Figure 3H, I) or the overexpression of the I-BAR domain alone significantly impacted, instead, both the resorption decay constant and lag time (also see Videos 7\u201310). Here, we note that the slower recruitment caused by this mutation allowed us to capture the process of IRSp53 recruitment, which was not visible in IRSp53-FL (due to the 5\u201310 s experimental time required to refocus samples and start imaging after compression). When all mutants were compared, impaired resorption (i.e., decreased decay constant) correlated with delayed recruitment (i.e., increased lag, Figure 3I and J and Figure 3\u2014figure supplement 2C, D, G, H). The more IRSp53 recruitment was delayed with respect to the PM marker, the less efficient the resorption was.\n\n![Video 5.](https://cdn.elifesciences.org/articles/72316/elife-72316-video5.mp4.jpg)\n\n**Video 5.:** Images on the right side show a magnification of the areas marked in red on the left side.\n\n![Video 6.](https://cdn.elifesciences.org/articles/72316/elife-72316-video6.mp4.jpg)\n\n**Video 6.:** Images on the right side show a magnification of the areas marked in red on the left side.\n\n![Video 7.](https://cdn.elifesciences.org/articles/72316/elife-72316-video7.mp4.jpg)\n\n**Video 7.:** Images on the right side show a magnification of the areas marked in red on the left side.\n\n![Video 8.](https://cdn.elifesciences.org/articles/72316/elife-72316-video8.mp4.jpg)\n\n**Video 8.:** Images on the right side show a magnification of the areas marked in red on the left side.\n\n![Video 9.](https://cdn.elifesciences.org/articles/72316/elife-72316-video9.mp4.jpg)\n\n**Video 9.:** Images on the right side show a magnification of the areas marked in red on the left side.\n\n![Video 10.](https://cdn.elifesciences.org/articles/72316/elife-72316-video10.mp4.jpg)\n\n**Video 10.:** Images on the right side show a magnification of the areas marked in red on the left side.\n\nSince both removal of the I-BAR domain and elevated overexpression of the isolated I-BAR domain had a strong phenotype and Rac1 can bind to the latter, we examined evagination resorption after overexpressing constitutively active (G12V) and dominant negative (T17N) forms of Rac1. Confirming the involvement of Rac1, the expression of Rac1-G12V accelerated evagination resorption significantly whereas Rac1-T17N slowed it down in NHDF (Figure 3\u2014figure supplement 2I\u2013K).\n\nIRSp53 has been described to promote Arp2/3-mediated actin polymerization, which is driven by NPFs (WASP or WAVEs), both acting as an upstream (Connolly et al., 2005; Funato et al., 2004) and downstream regulator of the small GTPase Rac1. In addition, analysis pointed out a role of the SH3 domain, which is able to recruit WAVEs, but not of the CRIB domain, involved in the recruitment of CDC42. Thus, altogether, these results suggest that IRSp53 by interacting with the WAVE regulatory complex (WRC) and Rac1 might regulate Arp2/3-mediated actin polymerization in evaginations for their resorption, which is what we will subsequently explore.\n\n### The WRC-ARP2/3 molecular machinery mediates the recovery of PM homeostasis after stretch release\n\nPrevious work on PM ruffling showed that IRSp53 couples Rac1 to the activation of the WRC, and the subsequent nucleation of branched actin filaments mediated by Arp2/3 (Abou-Kheir et al., 2008; Suetsugu et al., 2006a; Goley and Welch, 2006).\n\nActivation of Arp2/3 downstream of IRSp53 can also be mediated by Cdc42 and N-WASP (Kast et al., 2014; Lim et al., 2008; Kurisu and Takenawa, 2009). Additionally, IRSp53 can coordinate the action of formins mDia1 and mDia2, which might contribute to linear actin polymerization during filopodia formation (Fujiwara et al., 2000; Goh et al., 2012). Finally, PM reattachment to the actin cortex may also rely on contractile mechanisms mediated by myosin and not only actin polymerization, as in the case of bleb formation (Charras et al., 2006). To explore the impact of these mechanisms on evagination resorption after stretch release, we treated IRSp53-/-R cells with different inhibitors. First, cell treatment with 10 \u00b5M of the N-WASP inhibitor Wiskostatin (Tsujita et al., 2015) reduced filopodia number as expected (Yang et al., 2020; Figure 4\u2014figure supplement 1A,B), but did not modify evagination resorption (Figure 4A, E, and F and Video 11). Second, treatment with 15 \u03bcM of the formin inhibitor SMIFH2 (Rizvi et al., 2009) reduced the number of filopodia as expected (Wakayama et al., 2015; Figure 4\u2014figure supplement 1C,D), but did not affect evagination resorption either (Figure 4B, G, and H and Video 12). Third, treatment with 10 \u03bcM of the myosin II inhibitor Para-nitroblebbistatin (K\u00e9pir\u00f3 et al., 2014) affected the integrity of stress fibers as expected (Tojkander et al., 2012, Figure 4\u2014figure supplement 1E) but did not impair evagination resorption (Figure 4C, I, and J and Video 13). Conversely the treatment with the Arp2/3 inhibitor CK-666 (Hetrick et al., 2013) significantly reduced evagination resorption in comparison to DMSO-treated controls (Figure 4D, K, and L and Video 14).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/72316/elife-72316-fig4-v2.jpg)\n\n**Figure 4.:** (A\u2013D) Images after stretch release of plasma membrane (PM) evaginations, for IRSp53-/-R cells treated with either vehicle (DMSO) or 10 \u03bcM Wiskostatin, 15 \u03bcM SMIFH2, 10 \u03bcM PNB, and 25 \u03bcM CK-666, respectively. Scale bars are 5 \u03bcm. PM is marked with EGFP-membrane. (E\u2013L) Corresponding dynamics of PM evaginations and quantification of the decay constants between DMSO-treated control cells and drug-treated cells. Statistical significance was assessed through unpaired t-test for Wiskostatin and PNB against their respective controls, and Mann-Whitney test for CK-666 and SMIFH2 against their respective controls. For Wiskostatin, N=18 and 14 cells, SMIFH2, N=24 and 12 cells, PNB, N=19 and 17 cells, and CK-666, N=26 and 15 cells from 3 independent experiments for all cases.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/72316/elife-72316-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Number of filopodia per cell in 15 \u03bcM SMIFH2 or vehicle (DMSO)-treated cells. Compound was incubated for 1 hr at 37\u00b0C before experiments. N=24 and 13 cells form 4 independent experiments. Statistical significance was assessed through Mann-Whitney test. (B) Corresponding images of GPF-membrane-transfected cells. (C) Number of filopodia per cell in 10 \u03bcM Wiskostatin or vehicle (DMSO)-treated cells. Compound was incubated for 30 min at 37\u00b0C before experiments. N=18 and 14 cells respectively from 3 independent experiments. Statistical significance was assessed through unpaired t-test. (D) Corresponding images of GPF-membrane-transfected cells. (E) IRSp53-/-R MEF after 30 min incubation at 37\u00b0C with either 10 \u03bcM PNB or vehicle (DMSO)-treated cells. Cells were transfected with GFP-membrane and Actin Chromobody-RFP to mark both plasma membrane (PM) and actin. For all images scale bar is 20 \u03bcm. Data show mean \u00b1 s.e.m.\n\n![Video 11.](https://cdn.elifesciences.org/articles/72316/elife-72316-video11.mp4.jpg)\n\n**Video 11.:** Images on the right side show a magnification of the areas marked in red on the left side.\n\n![Video 12.](https://cdn.elifesciences.org/articles/72316/elife-72316-video12.mp4.jpg)\n\n**Video 12.:** Images on the right side show a magnification of the areas marked in red on the left side.\n\n![Video 13.](https://cdn.elifesciences.org/articles/72316/elife-72316-video13.mp4.jpg)\n\n**Video 13.:** Images on the right side show a magnification of the areas marked in red on the left side.\n\n![Video 14.](https://cdn.elifesciences.org/articles/72316/elife-72316-video14.mp4.jpg)\n\n**Video 14.:** Images on the right side show a magnification of the areas marked in red on the left side.\n\nThus, Arp2/3 mediates the resorption process, likely through the WRC. To confirm this, we verified WRC localization at the evagination. Upon stretch release, we fixed cells previously co-transfected with GFP-WAVE2 and mCherry-membrane. We then analyzed at high resolution the evaginations showing colocalization of both markers. As evaginations are more difficult to distinguish in fixed samples, we processed the samples for correlative SEM and fluorescence imaging, to visualize apical evaginations using our previous cross-correlation method (Figure 5A). With this, we calculated the increase in fluorescence between the evagination and adjacent flat membrane, in both WAVE and membrane markers. This increase was higher for WAVE than for the membrane, indicating a relative enrichment of WAVE at the evagination site (Figure 5B).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/72316/elife-72316-fig5-v2.jpg)\n\n**Figure 5.:** (A) Correlated fluorescence and scanning electron microscopy (SEM) images of plasma membrane (PM) evaginations after stretch release, for IRSp53-/-R cells transfected with mCherry-membrane and WAVE-C-GFP. Scale bars are 10 \u03bcm in the full cell image, 5 \u03bcm in the inserts (red frame). (B) Left: Quantification of the evagination/flat membrane fluorescence ratio in WAVE-GFP and mCherry-membrane fluorescence channels. Right: Corresponding WRC enrichment in the evagination (ratio of ratios). Statistical significance was assessed through Wilcoxon and one-sample t-test respectively. N=50 evaginations. Data show mean \u00b1 s.e.m (C, D) SEM images of PM evaginations 25 s after stretch release for IRSp53-/-R cells respectively treated with a non-targeting siRNA or a siRNA against Nap1. Scale bars are 10 \u03bcm. (E) Quantification of the number of evaginations per \u00b5m2 of cell membrane area, on cells fixed 25 s after stretch release. The graph shows the density for IRSp53-/-R cells respectively treated with a non-targeting siRNA or a siRNA against Nap1. Statistical significance was assessed through unpaired t-test. N=30 cells from 3 independent experiments. Data show mean \u00b1 s.e.m (F) Dynamics of the model of chemo-mechanical signaling, showing the local enrichment of IRSp53 from a baseline value of 1 (magenta, right side of images) and the concentration of an actin regulator \u03c8 (cyan, left side of images). After the formation of the evagination (i), IRSp53 becomes enriched in the bud, which triggers the local increase in the concentration of actin regulator \u03c8 and free growth of branched network which contacts the membrane tip (indicated b yellow arrow) within 2 s (ii) followed by build-up of actin regulator \u03c8 over 10 s, thus creating a tension gradient and subsequent centrifugal cortex flow dragging the membrane outward. Because this centrifugal flow flattens the evagination of the inextensible membrane, it is resisted by the pushing force from the branched network as it transits from a closed to an open neck (iii), (iv). As the bud snaps-open and reduces in curvature, the enrichment of IRSp53 in protrusion is lowered and hence leads to reduction in \u03c8 (v). Once planarity is restored, the IRSp53 domain rapidly disassembles, the actin regulator recovers its steady state, and the flow ceases (vi). (G) Evolution of PM excess area contained in the evagination (where 0 corresponds to a flat membrane patch) and actin regulator concentration \u03c8. Timepoints corresponding to configurations shown in (F) are indicated in roman numerals. Excess area is normalized such that 1 corresponds to the initial state and \u03c8 is normalized to a maximum of 1.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/72316/elife-72316-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Schematics of a putative impaired resorption (green line versus normal resorption in magenta), marking the fixation time chosen for scanning electron microscopy (SEM) imaging. (B) RT-PCR in controlled and Nap1 silenced cells. N=3 independent experiments. (C, D) Example of a SEM image and its corresponding particle identification to count the number of evaginations per cell. Scale bar is 10 \u03bcm. Data show mean \u00b1 s.e.m.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/72316/elife-72316-fig5-figsupp2-v2.jpg)\n\n**Figure 5\u2014figure supplement 2.:** (A) (Top) Schematic of the interaction between the membrane and the 2D underlying cortex, separated by a distance h before evaginations form. The interaction is modeled through an adhesion potential \u03bd(h) with a minimum at separation h0, with adhesion tension \u03b3 and a tangential fictional traction \u03c4 in the adhered part of the membrane proportional to the slippage velocity vm \u2013 vc. (Bottom) The actin cortex is presumed to be a combination of contractile and branched extensile networks. A membrane protrusion becomes site for IRSp53-mediated signaling that leads to Arp2/3-mediated branched actin network polymerization, which locally reduces lateral network contractility. Concomittantly, this branched network grows perpendicular to the membrane plane with a force-dependent polymerization velocity fit to experimental data obtained from Bieling et al., 2016. (B) Evolution of plasma membrane (PM) excess area contained in the evagination (where 0 corresponds to a flat membrane patch), actin regulator concentration \u03c8, and pushing force in pN applied by the branched filaments onto the membrane tip. Timepoints corresponding to configurations shown in Figure 5F are indicated in roman numerals. Excess area is normalized such that 1 corresponds to the initial state and \u03c8 is normalized to a maximum of 1. (C) Alternative scenarios for the interaction between local actin polymerization and membrane evagination. (A) In the absence of an outward pushing force due to polymerization of branched actin, the evaginated buds flatten flowing a similar mechanism as in Figure 5F but much faster due to a mechanical snapping of the bud. (B) In the absence of a gradient in contractility of the underlying cortex, the pushing forces are strong enough to sustain the evaginated bud (1). By considering a larger stall force, for example due to actin bundling (red curve in the growth-force relation), outward polymerization forces can elongate bud evaginations into elongated tubes.\n\nTo further confirm that the local actin polymerization observed was driven by the WRC, we silenced a key component of the complex (Rottner et al., 2021), NCKAP1 (Nap1) using siRNA (Figure 5\u2014figure supplement 1A). Here again, we employed SEM imaging to visualize evaginations in a control condition (non-targeting siRNA) compared with NCKAP1-siRNA-transfected cells, as co-transfection with the fluorescent marker was incompatible. We then fixed cells after 25 s of stretch release, as resorption at this timepoint is expected to have notably progressed in normal conditions (Figure 5\u2014figure supplement 1B). We quantified the number of evaginations per cell PM area in both conditions, segmenting the evaginations using Cell Profiler (Figure 5\u2014figure supplement 1C, D). Confirming the role of the WRC, the number of evaginations remaining after 25 s of resorption was higher in cells with silenced Nap1 (Figure 5C\u2013E). We conclude that evagination resorption upon compression involves the enrichment of I-BAR proteins and WRCs, leading to actin polymerization in a myosin-independent and Arp2/3-dependent manner.\n\n### A mechanical mechanism for actin-mediated evagination flattening\n\nPrevious work on IRSp53-mediated actin polymerization describes the extension of out-of-plane protrusions in the form of filopodia or lamellipodia (Pr\u00e9vost et al., 2015; Disanza et al., 2006; Connolly et al., 2005; Lim et al., 2008; Goh et al., 2012; Kast and Dominguez, 2019) as a result of out-of-plane polymerization forces pushing against the PM (Gov, 2018). At larger scales, polymerization of an actin cortex retracts and flattens cellular blebs, but this mechanism depends on myosin contractility (Charras et al., 2006), and hence is not applicable here. In contrast, our results show a novel flattening rather than protruding response. To propose a plausible mechanism, we developed a theoretical model coupling the PM and the actin cortex (see Materials and methods). We hypothesized that, in addition to out-of-plane forces favoring the extension of evaginations, localized polymerization should also laterally perturb the mechanics of the actin cytoskeleton, resulting in lateral actin flows favoring flattening. We approximated the actin cortex as a flat 2D active gel. In this model, the PM is adhered to the underlying cortex from which it can delaminate, and experiences frictional in-plane forces proportional to relative slippage (Shi et al., 2018). This is coupled to our previous model describing curvature sensing of membrane proteins (Tozzi et al., 2019). We coarse-grained the signaling pathway triggered by localization of I-BAR protein, such as IRSp53, and leading to actin polymerization through a regulator species (e.g. WRC) with normalized areal density $\u03c8$, which is recruited beyond a threshold in I-BAR protein enrichment, degraded, and transported by diffusion, with dynamics on time scales comparable to those of actin dynamics. The effect of this regulator is to locally favor actin polymerization by the Arp2/3 complex. Perpendicular to the membrane plane, we modeled polymerization against the tip of the evagination with a force-velocity relation (Bieling et al., 2016), according to which the membrane resisting force can slow down, stall, or reverse the extension of the branched network. In the membrane plane, we posited that local polymerization by Arp2/3 biases the competition between a formin-polymerized contractile network component and a branched extensile component (Chugh and Paluch, 2018; Suarez and Kovar, 2016). We accounted for this lateral mechanical effect of polymerization by locally reducing cortical contractility.\n\nFollowing the generation of a membrane evagination by buckling-induced delamination (Kosmalska et al., 2015; Staykova et al., 2013), our model predicts that curvature-sensitive I-BAR proteins become enriched in the evagination within a second (magenta colormap in Figure 5F). This leads to recruitment of the regulator species $\u03c8$ (cyan colormap) resulting in out-of-plane polymerization and a lateral tension gradient in the vicinity of the evagination. Upon contact with the tip of the evagination, out-of-plane polymerization pushes outward and favors extension (yellow arrow). In contrast, the lateral tension gradient induces a centrifugal cortical flow (black arrows), which frictionally drags the inextensible membrane outward favoring flattening. Although the outcome of this competition depends on model parameters (see discussion of potential scenarios in methods), reasonable estimations lead to flattening of the evagination driven by lateral actin flows and delayed by out-of-plane polymerization. In the absence of curvature, the I-BAR protein-enriched domain dissolves, the regulator species recovers its uniform baseline, and the cortex recovers a quiescent steady state (Figure 5F and G). Whereas predicted actin flows occur at a scale well below the diffraction limit and can therefore not be observed experimentally, the predicted relative trends of PM and regulator densities match our experimental observations when comparing PM and actin (Figure 2G) or Ezrin (Figure 2J). Predictions are also consistent with our observation that evagination resorption is impaired when inhibiting Arp2/3 (Figure 4L) or WRC (Figure 5E) but not myosin or formin activity (Figure 4H and J). Indeed, the mechanism is based on a local gradient in extensile versus contractile behavior around the evagination, and hence it should depend on Arp2/3 (which acts locally at the evagination) and not on formin or myosin, which would regulate overall contractility levels and not specifically local gradients. Thus, our model suggests a chemo-mechanical signaling system that autonomously restores homeostasis of membrane shape and cortical activity.\n\n## Discussion\n\nOur work shows that stretch-compression cycles generate evaginations on the apical PM of the cells with a size on the 100 nm scale, compatible with the sensing range of I-BAR proteins (Pr\u00e9vost et al., 2015; Breuer et al., 2019). Further, we demonstrate the recognition of this curved templates by the curvature-sensing protein IRSp53. Notably, we show that IRSp53 mediates the resorption rather than formation of membrane curvature, as previously described in the context of filopodia extension (Disanza et al., 2013) and HIV budding (Inamdar et al., 2021).\n\nBeside IRSp53, other BAR proteins could potentially be involved in evagination resorption. Indeed, the role of IRSp53 is visible through dominant-negative effects of its mutants but not through overexpression or depletion, suggesting that I-BAR proteins with similar function (such as IRTKs) are likely to play compensatory or redundant roles. IRSp53 in complex with WAVE has also been described to localize to saddle curvatures (Pipathsouk et al., 2021), which occur at the neck of invaginations. From our APEX imaging, IRSp53 does not appear to localize specifically at the neck of evaginations in our setting, but other saddle- or positive-curvature sensing proteins (such as N-BAR or F-BAR proteins) could potentially localize there. Such localization has been described for instance for the N-BAR protein ArhGAP44 in nascent filopodia (Galic et al., 2014). However, ArhGAP44 is expected to inhibit Rac1 activity, which would impair the resorption of the evagination.\n\nBeyond the formation of evaginations, we previously showed that cell compression upon a stretch cycle also triggers endocytosis through the CLIC-GEEC (but not the clathrin-mediated) pathway (Thottacherry et al., 2018). In turn, IRSp53 has been described to regulate the CLIC-GEEC endocytic pathway (Sathe et al., 2018). However, the pathways involved are different, for two main reasons. First, the I268N-CRIB and 4KE-I-BAR IRSp53 mutants strongly impaired endocytosis (Sathe et al., 2018), but did not affect evagination resorption (Figure 3J), showing that IRSp53 affects these processes through different mechanisms. Second, as we previously determined, the sites of evaginations and of endocytic buds do not coincide (Thottacherry et al., 2018).\n\nThus, our findings unveil a novel mechanosensing mechanism: upon cell compression, cells are known to use caveolae formation (Sinha et al., 2011) and the CLIC-GEEC endocytic pathway (Thottacherry et al., 2018) to store material from the PM and recover resting tension. On top of this, we demonstrate a new event at the local scale, which restores PM shape perturbations induced by mechanical stimulation. This event involves the progressive flattening of the PM and not its scission, which would have involved an abrupt loss of evagination fluorescence (and the appearance of fluorescent membrane vesicles) that we never observed in experiments. To achieve PM flattening in response to mechanical perturbations, cells employ the IRSp53-Rac1-Arp2/3 network, which has been well described to polymerize actin in the context of lamellipodia extension or ruffling (Teodorof et al., 2009; Suraneni et al., 2012). Thus, this involves lamellipodial rather than filopodial formation, which is consistent with our previous observation that IRSp53 does not recruit the formin nucleator mDia (Disanza et al., 2013) during initial filopodia formation. In this regard, we describe a novel mechanism, and biophysical framework, in which Arp2/3-mediated actin polymerization can lead to membrane flattening rather than protrusion.\n\nWhile stretch is often studied separately from subsequent compression provoked by its release (Gudipaty et al., 2017; Massou et al., 2020; Chen et al., 2019), here we put in relevance the coupling between the two at the single cell level. In our experiments, the stretch/compression stimuli occur at the scale of seconds, while subsequent resorption occurs at the scale of minutes. In vivo, similar situations could include for instance the fast compressions of cells embedded in connective tissues (Zhao et al., 2020), or the apical expansion and contractions of amnioserosa cells during dorsal closure in Drosophila embryos (Jayasinghe et al., 2013). Other scenarios could include responses to wounding (Agha et al., 2011), contraction in muscle cells, or contractile pulling during fibroblast migration (Plotnikov et al., 2012). In all these systems, the potential relevance of our described mechanism remains to be explored. In conclusion, our findings reveal a new mechanosensing mechanism explaining how PM detects physical stimuli at a local, sub-\u00b5m scale, and further coordinates a response allowing for quick adaptation to a changing environment.\n\n## Materials and methods\n\n### Cell culture, expression vectors, and reagents\n\nNHDFs were purchased from Lonza (CC-2511) and cultured in DMEM without pyruvate (Thermo Fisher 41965-039) supplemented with 10% FBS (vol/vol), 1% penicillin-streptomycin (vol/vol), and 1% insulin-transferrin-selenium (vol/vol) (Thermo Fisher 41400045). WT MEF2 were derived from IRSp53+/+ embryos (Disanza et al., 2013; Weiss et al., 2009). IRSp53 null MEFs cells were infected with an empty pBABE or a pBABE-IRSp53-FL retroviral vector, generated by G Scita (IFOM ETS, Milan) as previously described (Disanza et al., 2013; Weiss et al., 2009; Sawallisch et al., 2009), leading to cell lines that we note IRSp53-/- and IRSp53-/-R. CRISPR/CAS9 method was employed to silence IRTKs in IRSp53-/- background, leading to cell lines that we note IRSp53-/- C/C9IRTKs. All KO cell lines and their controls were authenticated via western blotting as described in the manuscript. All cell lines were regularly tested for mycoplasma contamination and tested negative.\n\nGenome editing by CRISPR/Cas9 was more precisely as follows: IRTKs sgRNA (5\u2019-AAAAGCCTACTACGACGGCG-3\u2019) was subcloned into expression plasmid pSpCas9(BB)\u20132A-Puro(PX459)V2.0 (Addgene plasmid ID: 62988) and sequences validated by sequencing. 24 hr after transfection, MEFs IRSp53-/- cells were selected for 5 days with culture medium containing 1 \u03bcg/ml puromycin (AdipoGen). Clones derived from single cells were obtained by selected population employing serial dilution protocol.\n\nThe culture was maintained in DMEM with 20% FBS (vol/vol) supplemented with 1% penicillin-streptomycin (vol/vol) and 1 \u00b5/ml puromycin to selectively maintain cells expressing the selection vector. CO2-independent media (Thermo Fisher 18045088) was used for microscopy imaging and was supplemented with 10 \u00b5g/ml of rutin (Sigma R5143) to prevent photobleaching (Bogdanov et al., 2012). mCherry, EGFP, and EYFP membrane markers contained a fusion protein consisting in one of the three fluorophores coupled to the 20 last amino acids of neuromodulin which is post-translationally palmitoylated and targets the fluorophore to PM (Kosmalska et al., 2015). mEmerald-Ezrin was from Addgene (#54090). pEGFP-C3 Wave2 was kindly provided by Klemens Rottner (Helmholtz Center for Infection Research, Braunschweig). EGFP-IRSp53-FL (Disanza et al., 2006; Bisi et al., 2020), EGFP-IRSp53-4KE, EGFP-IRSp53-I268N (Sathe et al., 2018; Bisi et al., 2020), and EGFP-IRSp53-I403P (Disanza et al., 2013; Bisi et al., 2020) contained isoform 2 of the murine protein either WT or carrying the mentioned mutations in the pC1-EGFP backbone. EGFP-IRSp53-W413G, EGFP-IRSp53-\u2206I-BAR, and EGFP-I-BAR (Disanza et al., 2013) were created based on the sequence of isoform 4 of the human protein inserted in the pC1-EGFP backbone. A point mutation was included in the SH3, the first 312 amino acids were removed in the case of the \u2206I-BAR and the first 250 amino acids were expressed to obtain the I-BAR-domain. The dominant constitutively active Rac1-G12V and the dominant negative Rac1-T17N were described previously (Soriano-Castell et al., 2017). Actin was marked using the mammalian expression vector encoding the cytoskeleton marker Actin-VHH fused to either RFP or GFP2 and commercially sold as Actin-Chromobody (Chromotek).\n\nOn the day prior to the experiment, cells were transfected by electroporation with the selected plasmids using the Neon Transfection System (Invitrogen) following the protocol provided by the company. CK-666 was purchased from Merck (Ref 182515), SMIFH2 was from Abcam (ab218296), Wiskostatin was bought from Sigma (W2270), and Para-Nitro-Blebbistatin was from Optopharma (DR-N-111). All compounds were diluted in DMSO and conserved according to the manufacturer\u2019s instructions. On the day of the experiment, drugs were diluted in culture media, filtered through a 0.22 \u00b5m filter and warmed up to 37\u00b0C prior to addition to the culture. Cells were treated with 25 \u00b5M of CK-666 for 30 min, 10 \u00b5M of PNB for 30\u201340 min, and 10 \u00b5M Wiskostatin or 15 \u00b5M SMIFH for 1 hr prior to the experiment.\n\n### siRNA experiment\n\nIRSp53-/-R MEF cells were seeded in a six-well plate (150k cells/well); next day, each well was transfected using lipofectamine (RNAimax, Thermo Fisher) with 10, 25, or 50 nM of control siRNA (Dharmacon, ON-TARGETplus Non-targeting #3) or siRNA against NCKAP1 to silence the Nap1 protein (Dharmacon, ON-TARGETplus Mouse Nackp1 50884). Cells were used 72 hr after transfection occurred.\n\n### Semi-quantitative RT-PCR\n\n#### Relative I-BAR protein expression levels in MEFs\n\nTotal RNA of WT, IRSP53-/-, and IRSP53-/- C/C9IRTKs cells was extracted using the RNeasy Mini kit (QIAGEN) and quantified by NanoDrop to assess both concentration and quality of the samples. One \u00b5g of total RNA was subjected to reverse transcription using the High-Capacity cDNA Reverse Transcription Kit from Applied Biosystems. Gene expression was analyzed by using the TaqMan Gene expression Assay (Applied Biosystems). 0.1 ng of cDNA was amplified, in triplicate, in a reaction volume of 25 \u03bcl with 10 pmol of each gene-specific primer and the SYBR Green PCR MasterMix (Applied Biosystems). Real-time PCR was performed on the 14 ABI/Prism 7700 Sequence Detector System (PerkinElmer/Applied Biosystems) using a pre-PCR step of 10 min at 95\u00b0C, followed by 40 cycles of 15 s at 95\u00b0C and 60 s at 60\u00b0C. Specificity of the amplified products was confirmed by melting curve analysis (Dissociation Curve; Perkin Elmer/Applied Biosystems) and by 6% PAGE. Preparations with RNA template without reverse transcription were used as negative controls. Samples were amplified with primers for each gene (for details, see the quantitative PCR primer list below) and GAPDH as a housekeeping gene. The cycle threshold Ct values were normalized to the GAPDH curve. PCR experiments were performed in triplicate and standard deviations calculated and displayed as error bars. Primer assay IDs were: Gapdh, mm99999915_g1; Baiap2 (IRSp53), mm00499943_m1; Baiap2l1 (IRTKs), mm00508802_m1; Baiap2l2 (Pinkbar), mm00616958_m1; Mtss1 (MIM), mm00460614_m1; Mtss1l (ABBA), mm01244296_m1.\n\n#### Relative Nap1 protein expression levels in MEFs\n\nTotal RNA of IRSp53-/-R cells transfected with control siRNA or siRNA against NCKAP1 were isolated with the RNAeasy kit (QIAGEN) or High Pure RNA Isolation Kit (Roche). One \u00b5g of total RNA was subjected to reverse transcription using the iScript cDNA Synthesis Kit (Bio-Rad). 0.1 ng of cDNA was amplified, in triplicate, in a reaction volume of 20 \u03bcl with 10 pmol of each gene-specific primer and the Fast SYBR Green MasterMix (Thermo Fisher). Real-time PCR was performed on the StepStonePlus Real-Time PCR System (Applied Biosystems) using a pre-PCR step of 10 min at 95\u00b0C, followed by 40 cycles of 15 s at 95\u00b0C and 60 s at 60\u00b0C. Samples were amplified with primers for each gene (for details, see the quantitative PCR primer list below) and GAPDH as a housekeeping gene. The cycle threshold Ct values were normalized to both GAPDH and Rn18x curves. PCR experiments were performed in triplicate and standard deviations calculated and displayed as error bars. Primer assay IDs were: Nap1 (Sigma, FM1_Nckap1 CATTCGGGGCTACAATAAAC and BM1_Nckap1 TTAGTGCAGACCGTAAAAAC), GAPDH (FW ATCCTGCACCACCAACTGCT and RV GGGCCATCCACAGTCTTCTG), and Rn18x (FW GCAATTATTCCCCATGAACG and RV GGCCTCACTAAACCATCCAA).\n\n### Western blots\n\nThe mouse monoclonal anti-IRSp53 was generated in IFOM (Disanza et al., 2013; Disanza et al., 2006; Bisi et al., 2020). The rabbit polyclonal anti-IRTKs was a gift from Jan Faix Lab (described in Pokrant et al., 2023).\n\n### PDMS membrane fabrication\n\nThe stretchable PDMS membranes were prepared as described in Kosmalska et al., 2015. To produce a patterned support to further obtain patterned-PDMS membranes, PMMA dishes were plasma cleaned for 20 min and warmed up to 95\u00b0C for 5 min. After cooling down using a nitrogen gun, SU 2010 resin was spinned on top of the dish to create a 10 \u00b5m layer and prebaked 2.5 min at 95\u00b0C. Dishes were then placed on a mask aligner and exposed for 7.5 s in the presence of the designed acetate mask. After post-baking for 3.5 min at 95\u00b0C, the pattern was revealed for 1 min and subsequently extensively washed with isopropanol and verified under the microscope. Finally, PMMA dishes were silanized by 30 s plasma cleaning activation followed by 1 hr silane treatment under vacuum. Standard or patterned membranes were mounted on metal rings of our customized stretch system, cleaned, sterilized, and coated with 10 \u00b5g/ml fibronectin (Sigma) overnight at 4\u00b0C prior to experiments. Patterns were designed as a grid with letters and numbers to allow for correct orientation.\n\n### Stretch and osmolarity experiments\n\nAfter overnight fibronectin coating, PDMS membranes were quickly washed and 3000 cells were seeded on top and allowed to spread for 45 min to 1 hr in the incubator. Then, rings were mounted on the stretch device coupled to the microscope stage, vacuum was applied for 3 min to stretch the membrane, and then vacuum was released to come back to the initial shape as described in Kosmalska et al., 2015. Calibration of the system was done to adjust the vacuum applied to obtain 5% stretch of the PDMS surface.\n\n### SEM experiments\n\nCells were prepared as explained in the previous section. Right after stretch release, the sample was fixed in 2.5% glutaraldehyde EM grade (Electron Microscopy Sciences 16220) plus 2% PFA (Electron Microscopy Sciences 15710S) diluted in 0.1 M phosphate buffer (PB) at 37\u00b0C for 1 hr. Samples were then washed 4\u00d7 for 10 min in 0.1 M PB and imaged with epifluorescence microscopy as described below to acquire fluorescence images of the cell PM. PDMS membranes were then cut into 1\u00d70.5 cm rectangles in which the pattern was centered. For confocal Airyscan imaging, cells were fixed as abovementionned and PDMS membranes were cut in rectangles and fitted in a glass bottom dish before fluorescent imaging. Samples were subsequently placed on top of 12 mm coverslips for further processing. Dehydration was carried out by soaking samples in increasing ethanol concentrations (50%, 70%, 90%, 96%, and 100%). After this, samples were critical point dried and covered with a thin layer of gold to be imaged.\n\n### TEM experiments\n\nCells were fixed, washed, and PDMS membranes were cut and mounted as for SEM imaging. After this, samples were postfixed with 1% OsO4 and 0.8% K3Fe(CN)6 for 1 hr at 4\u00b0C in the dark. Next, dehydration in increasing ethanol concentrations (50%, 70%, 90%, 96%, and 100%) was done. Samples were then embedded in increasing concentrations of Pelco EPONATE 12 resin (Pelco 18010) mixed with acetone. 1:3 infiltration was done for 1 hr then 2:2 for 1 hr and finally 3:1 overnight. On the next day, embedding was continued with EPON12 without catalyzer for 3\u00d72 hr washes and then overnight. Last, samples were embedded in EPON12 plus catalyzer DMP-30 (Pelco 18010) for 2\u00d73 hr. To finish, blocks were mounted and polymerized for 48 hr at 60\u00b0C. PDMS membrane was next peeled off and ultrathin sections were cut and mounted on grids for imaging.\n\n### APEX labeling for TEM imaging\n\nTwo days prior to the experiment, cells were co-transfected by electroporation with mKate2-P2A-APEX2-csGBP (Addgene #108875) and EGFP-IRSp53-FL in a 3:1 ratio, using the Neon Transfection System (Invitrogen) following the protocol provided by the company. Before seeding, cells were sorted for double positive mKate and GFP fluorescence, excluding very high and very low transfection levels. Cells were subsequently seeded and stretched in the same conditions as explained in the stretch experiments section. Right after stretch release, the sample was fixed in 2.5% glutaraldehyde EM grade (Electron Microscopy Sciences 16220) diluted in 0.1 M Cacodylate buffer at 37\u00b0C for 10 min, followed by incubation on ice for 50 min in the presence of the fixative. All subsequent steps were performed on ice. The sample was washed three times with cold 0.1 M Cacodylate buffer, and next cut into 1\u00d70.5 cm rectangles containing the fixed cells. Cells were washed for 2 min with a fresh cold 1 mg/ml 3,3\u2019-diaminobenzidine (DAB) (tablets, Sigmafast, D4293) solution in 0.1 M Cacodylate buffer. Cells were immediately incubated with a fresh cold 1 mg/ml DAB solution in cold 0.1 M Cacodylate buffer supplemented with 5.88 mM hydrogen peroxidase (PERDROGEN 30% H2O2, 31642, Sigma). The samples were washed three times with cold 0.1 M Cacodylate buffer, and subsequently incubated for 30 min with cold 1% OsO4. Dehydration, resin embedding, and block mounting were done as described in the TEM experiments section.\n\n### Image acquisition\n\nFluorescence live cells images were acquired with Metamorph software using an upright microscope (Nikon eclipse Ni-U) with a 60\u00d7 water dipping objective (NIR Apo 60X/WD 2.8, Nikon) and an Orca Flash 4.0 camera (Hamamatsu). Fluorophore emission was collected every 3 s. Cells were imaged in a relaxed state and then for 3 min at 5% stretch, and for 3 min during the release of stretch. Fixed cells images were acquired either in the abovementioned acquisition system except for the experiments related to WAVE protein enrichment. In this case, images were acquired in a Zeiss Airyscan microscope (Zeiss LSM880 inverted confocal microscope objective, using Zeiss ZEN2.3 SP1 FP3 [black, version 14.0.24.201] software and a 63\u00d71.46 NA oil immersion objective). Z-stack of single cells were acquired in full Airyscan mode to visualize the PM and the WAVE-C-GFP protein. SEM images were taken using the xTm Microscope Control software in a NOVA NanoSEM 230 microscope (FEI Company) under the high vacuum mode using ET and TL detectors to acquire high and ultra-high resolution images of the cell surface. TEM samples were observed in a Jeol 1010 microscope (Gatan, Japan) equipped with a tungsten cathode in the CCiTUB EM and Cryomicroscopy Units. Images were acquired at 80 kV with a CCD Megaview 1kx1k.\n\n### Fluorescence analysis and curve fitting\n\nAll images used for time course analysis were aligned using the Template Matching plugin from Fiji to correct the drift. To assess the evolution of PM evaginations or the different marked proteins, their fluorescence was quantified. To ensure that we only considered the fluorescence of structures induced by stretch, the analysis was carried out in regions devoid of visible endomembrane structures before the application of stretch. For each evagination, we calculated the integrated fluorescence signal of a small region of interest (ROI) containing the evagination (Ievag), the integrated fluorescence signal of a neighboring ROI of the same size and devoid of any structures (IPM), the integrated fluorescence signal of the entire cell (Icell), and the integrated fluorescence signal of a background region of the same size as the cell (IBG). Then, the final evagination signal Ifinal was computed as:\n\n$$\nI_{final}=\\frac{(I_{evag}-I_{PM})}{(I_{cell}-I_{BG})}\n$$\n\nThe numerator of this expression corrects evagination fluorescence so that only the signal coming from the evagination itself and not neighboring PM is quantified. The denominator normalizes by total cell fluorescence, and also accounts for progressive photobleaching. All control curves were normalized to 1 (maximal fluorescence after stretch release) and the rest of the data represented in the same graph were normalized to the control. Exceptionally, Actin and Ezrin curves were normalized to 0.5 (maximal fluorescence after the release of stretch) for visualization purposes. To quantify the degree of resorption of the evaginations, as each experimental data from an evagination could not always be fitted with single exponential decay curve, we adopted the strategy of fitting the average decay curve from 10 evaginations of a single cell as a function of time t, using the following equation:\n\n$$\nI_{final}=I_{max }e^{-kt}+I_{0}\n$$\n\nWe obtained a decay constant k (s\u20131) representative of the resorption capacity of the cell, on which statistical analysis can be performed. Lag time was calculated by identifying the maximum intensity timepoints in the protein and PM channels, and subtracting them to obtain the time between the two events. Lag time was calculated for each individual evagination, and an average of the 10 evaginations of a cell was calculated to obtain a representative lag per cell. This data was used to plot lag time versus decay of each cell. When time of maximum fluorescence was plotted, a similar procedure was followed but maximum fluorescent peak averaged for each cell was displayed instead of lag, in both protein and membrane channels.\n\nThe enrichment analysis was performed on the z-stack images acquired in Airyscan mode of cells co-transfected with the mCherry-membrane marker and the WAVE-C-GFP protein. Though sample preparation was optimized, a single slide of a stack did not capture the best signal for an entire cell. Therefore, the following treatment was performed in both channels: the slice of maximum intensity was identified and a z-projection of the previous and post three slides (sum of seven slides) was performed. Enrichment was calculated using this projection in the following manner: evaginations were identified in the SEM image and 10 evaginations for which both membrane and WAVE protein displayed a fluorescent signal were quantified. We calculated the mean intensity of a small ROI containing the evagination in the protein channel ($I_{evag-Wave}$), and the same ROI was used to calculate that of the membrane channel ($I_{evag-mem}$). An ROI of the same area was placed in a neighboring region devoid of any structures in both channels ($I_{flat-Wave}$ and $I_{flat-mem}$). The ratio of the signal in the flat versus curved membrane was then calculated. Enrichment was defined as the ratio of these ratios.\n\n$$\nEnrichment= \\frac{\\frac{I_{evag-wave}}{I_{flat-wave}}}{\\frac{I_{evag-mem}}{I_{flat-mem}}}\n$$\n\n### Quantification of number and PM area % stored by evaginations\n\nThree regions of different parts of the cell were randomly chosen from every cell at the timepoint t0s (right after the release of stretch) and the number of evaginations was manually counted by comparing the analyzed images with the images of the cell during stretch, to discard PM structures not formed by stretch release. For stored area calculation, the membrane area fraction mf contained in evaginations was estimated as:\n\n$$\nmf=\\frac{i_{ze}-i_{zf}}{i_{zf}-bg}\n$$\n\nwhere ize is the average fluorescence intensity of a cell zone (containing evaginations), izf is the average fluorescence intensity of a neighboring flat patch of membrane (small enough so that it does not contain any evaginations), and bg is the average intensity of background. For each cell, this was done for three random regions containing evaginations.\n\n### Fluorescence and SEM correlation\n\nImages of the fixed sample were acquired in fluorescence and brightfield and positions of the imaged cells in the pattern were noted down. Sample was then processed for SEM imaging and the same cells were found by manually following their location on the pattern, and visual verification was done to check for correct matching. Fluorescent and SEM images were then aligned by using the BigWarp plugin on Fiji.\n\n### Statistical analysis\n\nIn the case of data following a normal distribution, t-test or ANOVA was done depending on whether there were two or more datasets to compare. For data not following normal distributions, Mann-Whitney or Kruskal-Wallis tests were applied depending on whether there were two or more datasets to test. All data are shown as mean \u00b1 SEM. Specific p and N values can be found in each one of the graphs shown in the figures.\n\n### Theoretical model\n\n#### Modeling a membrane evagination out of an adhered membrane\n\nTo understand the physical mechanism leading to the active flattening of membrane evaginations caused by compression of the PM, we focused on a single evagination and described it mathematically under the assumption of axisymmetry. We modeled the membrane as locally inextensible thin sheet with bending rigidity $\u03ba= 20 k_{B}T$ using the Helfrich model and accounted for the viscous stresses due to membrane shearing with membrane 2D viscosity $\u03b7_{m}= 3\u22c510^{-3}$ pN \u00b7 s/\u00b5m (Shi et al., 2018; Staykova et al., 2013; Arroyo and DeSimone, 2009).\n\nTo model the interaction between the membrane and the cortical gel, we considered an adhesion potential between the membrane and the gel enabling de-cohesion with an adhesion tension of $\\gamma= 1.5\u22c510^{-5}$ N/m (Staykova et al., 2013). We also considered in-plane frictional tractions between the membrane and the cortex proportional to their relative velocity, $\\tau= \\muv_{m}-v_{c}$, where $v_{m}$ is the membrane velocity, $v_{c}$ is the cortex velocity, and \u00b5 is a friction coefficient, which we took as $\\mu= 20$ nN \u00b7 s/\u03bcm3 (Shi et al., 2018). See Figure 5\u2014figure supplement 2A (top) for an illustration.\n\nWe generated evaginations with dimensions comparable to those in our experiment by laterally compressing an adhered membrane patch of radius $R_{0}$ as discussed in Staykova et al., 2013, see Figure 5F. We considered $R_{0}=150$ nm, consistent with the typical separation between evaginations (Figure 1C). After formation of the evagination, we applied at the boundary of our computational domain the surface tension required to stabilize the evagination, consistent with the long-time stability of such compression-generated evaginations of the PM when cellular activity is abrogated (Kosmalska et al., 2015).\n\n#### Modeling curvature sensing\n\nWe then considered the model in Tozzi et al., 2019 to capture the interaction between an ensemble of curved proteins (IRSp53) and a membrane. In this model, proteins are described by their area fraction $\u03d5$. We fixed the chemical potential of such proteins at the boundary of our computational domain, corresponding to a relatively low area fraction of proteins, $\u03d5-= 0.05$. We set the saturation coverage to $\u03d5^{max}= 0.35$ due to crowding by other species but in our calculations, coverage did not come close to this limit. We considered an effective surface area per dimer of 300 nm2. In this model, the curvature energy density of the membrane-protein system is given by $\\frac{\u03ba}{2}H-C_{0}\u03d5$, where H is the mean curvature and $C_{0}$ is a parameter combining the intrinsic curvature of proteins and their stiffness (Tozzi et al., 2019). We took $C_{0}=3\u22c5 10^{-3}$ nm\u20131, which lead to curvature sensing but no significant protein-induced membrane reshaping. With a protein diffusivity of 0.1 \u03bcm2/s, we obtained protein enrichments on the evagination of about threefold within 0.5 s.\n\n#### Modeling signaling of localized actin polymerization downstream of curvature\n\nBranched filaments, on the other hand, are assumed to grow out-of-plane of the gel toward the membrane protrusion. In vitro studies combining TIRF and AFM (Bieling et al., 2016) have shown how Arp2/3-mediated branched network grows and densifies when it encounters resistance, leading to a growth velocity that exponentially decays with pressure or stress felt by the growing ends. In this study, we assume that the net effect of pressure applied by the filaments can be accounted by a point load (a product of pressure and the area commensurate to opening at the neck of budded domain) that is directed away from gel and toward the evagination at the membrane tip yielding the constitutive law for growth of filamentous actin network as shown in Figure 5\u2014figure supplement 2A.\n\nTo model in a coarse-grained manner the signaling pathway triggered by IRSp53 localization and leading to actin polymerization, we considered a regulator species given by a normalized surface density $\u03c8$, which is produced with a rate depending on IRSp53 enrichment and given by\n\n$r\\frac{\u03d5}{\u03d5-}= k_{1}min\u2061\\frac{\u03d5}{\u03d5-}-e_{t}; e_{s}-e_{t }$ , where $e_{t}$ is a threshold IRSp53 enrichment for signaling, $e_{s}$ is an enrichment saturation threshold beyond which the production of $\u03a8$ saturates, and $a$ is 0 if $a<0$ and a otherwise. The baseline area fraction of IRSp53 is denoted by $\u03d5-$ , which is also prescribed as a boundary condition with value $\u03d5-=0.05$. We considered $e_{t}= 2$, $e_{s}= 3$, and $k_{1}= 1$ s\u20131. This regulator is degraded with rate $k_{2}\u03c8$, with $k_{2}=1$ s\u20131 and diffuses with an effective diffusivity of $D=\u00a00.1\u22c510^{\u22123}\\mum^{2}/s$, much smaller than that of membrane proteins since the regulator is viewed as an actin-binding species. In polar coordinates, the governing equation for the transport of this regulator is thus\n\n$$\n\\frac{\u2202\u03c8}{\u2202t}=\\frac{1}{r}\\frac{\u2202}{\u2202r}(rD\\frac{\u2202\u03c8}{\u2202r})+r(\u03d5/\u03d5\u00af)\u2212k_{2}\u03c8\n$$\n\nThis equation results in a region enriched with $\u03c8$, co-localizing with the evagination, and reaching a maximum value of about 1 within about 10 s, comparable to the typical times of actin dynamics. Not being a detailed description of a specific network, the details of this model for $\u03c8$ are not essential. The key points are that the production of $\u03c8$ is triggered by IRSp53 enrichment, and that $k_{1}$ , $k_{2}$, and $D$ are such that over the time scales of actin dynamics (significantly slower than those of IRSp53 enrichment), a region of high $\u03c8$ develops close to the evagination.\n\n### Modeling the mechanical effect of localized actin polymerization\n\nThe effect of regulator $\u03c8$ is to locally favor actin polymerization by the Arp2/3 complex. We simplified the mechanical effect of localized actin polymerization by splitting the in-plane and out-of-plane effects. In-plane, we modeled the actin cytoskeleton adjacent to the membrane as a 2D planar active gel. Out-of-plane, we modeled the growing protrusion of Arp2/3-mediated branched network against the membrane as an effective filament, whose width is commensurate to the neck of the evagination and whose growth/retraction is force-dependent. These two effects of polymerization compete to determine the dynamics of membrane protrusions as elaborated below.\n\n#### Out-of-plane effect\n\nA localized branched network is assumed to grow out-of-plane of the gel toward the membrane protrusion. In vitro studies combining TIRF and AFM (Bieling et al., 2016) have shown how Arp2/3-mediated branched network grows and densifies when it encounters resistance, leading to a growth velocity that exponentially decays with pressure felt by the growing ends. Here, we assume that the net effect of forces applied by the filaments can be accounted by a point force (the product of pressure and the area commensurate to the opening at the neck of budded domain) directed away from gel and toward the evagination at the membrane tip. We consider for this idealized point representation of the pushing force a relation between growth velocity and force shown in Figure 5\u2014figure supplement 2A (bottom) based on data by Bieling et al., 2016, with zero-force polymerization velocity of 100 nm/s and stall force of about 2 pN. Thus, the out-of-plane effect of the growing membrane is a mixed force-velocity (Robin) boundary condition for the membrane tip where force acting ($f$) is related to the vertical velocity of this point $v_{t}$ according to the following fit of data by Bieling et al., 2016\n\n$$\nv_{t}= v_{t }^{0}e^{-\\betaf}-e^{-\\betaf_{s}^{0}}\n$$\n\nHere, $v_{t}^{0}=90$ nm/s * $\u27e8max\u2061(\u03c8)-\u03f5\u27e9$ is approximately the freely growing speed of the branched network when $\u03c8$ is accumulated beyond a threshold  $\u03f5=10^{\u22122}$, \u03b2 \u2248 2.4 pN\u20131 specifies the force sensitivity and $f_{s}^{0}$ \u2248 1.82 pN is the stall force obtained as product of stall pressure of ~1250 Pa times the circular area around the tip of membrane that is commensurate to the neck opening of ~1500 nm2. For forces larger than stall force, the network retracts at a rate close to an asymptotic velocity of 1 nm/s.\n\n#### In-plane effect\n\nMoving to the in-plane effect, the cortex can be viewed as a composite system of interpenetrating actin networks, one polymerized by formins leading to linear filaments and producing contractile forces through the action of myosins and other crosslinkers, and one polymerized by the Arp2/3 complex, with a branched architecture and producing extensile forces by polymerization (Chugh and Paluch, 2018). Combining these two effects, the net active force generation in the actin cortex is generally contractile. These two networks compete for actin monomers (Suarez and Kovar, 2016), and hence a local enrichment in the regulator leading to enhanced polymerization of the branched network should bias this competition and locally lower contractility in the vicinity of the evagination. In turn, the resulting contractility gradient should generate an in-plane centrifugal cortical flow, which if large enough, might drag the membrane outward due to frictional forces and actively flatten the evagination.\n\nTo model the actin flow, we considered simple active gel model where the cortical velocity \u03c5c is obtained by force balance between viscous and active forces in the cortex, and given by\n\n$$\n0=2\u03b7_{c}[\u2212\\frac{1}{r}\\frac{\u2202}{\u2202r}(\\frac{r\u2202v_{c}}{\u2202r})]+\\frac{\u2202\\sigma^{a}}{\u2202r}\n$$\n\nwhere $\u03b7_{c}$ is the viscosity of the cortex and $\\sigma^{a}\u03c8$ is the active tension, which we assume to be a function of the regulator $\u03c8$. We note that we neglect in the equation above the force caused by friction between the membrane and the cortex as they slip past each other. This is justified because the hydrodynamic length for the cortex is in the order of microns and above, and hence in the smaller length-scales considered here viscosity dominates over friction. In our calculations, we took $\\sigma^{a}(\u03c8) =\\sigma^{0} (1-\\frac{\u03c8}{2})$, so that active tension is approximately halved near the evagination when the normalized regulator density $\u03c8$ reaches about 1 and is equal to $\\sigma^{0}$ far away from it. As boundary conditions, we considered $v_{c}(0)=0$ consistent with polar symmetry and $\\partial\\frac{v_{c}}{\\partialr}R=0$, so that at $r=R$ the stress at the gel is $\\sigma^{0}$ . We chose $\\sigma^{0}/\u03b7_{c}$ so that the resulting cortical velocities due to gradients in active tension gradients were of about 0.1 \u03bcm/s, comparable to the typical actin velocities due to polymerization in the lamellipodium (Maiuri et al., 2015).\n\n### Representative results\n\n#### Complete model\n\nThe formation of a membrane evagination by buckling-induced delamination of the fluid membrane triggered in this model a sequence of chemo-mechanical events restoring autonomously homeostasis of membrane shape and the rest of signaling species involved.\n\nIndeed, within a few seconds, IRSp53 became enriched in the evagination by curvature sensing. As the concentration of BAR protein builds up, it progressively builds up in its turn the actin regulator ($\u03c8$) in the vicinity of evagination over a time scale of ~10 s. Because the force-free polymerization velocity $v_{t}^{0}$ perpendicular to the membrane depends on actin regulator, as soon as $\u03c8$ becomes non-zero, branched Arp2/3 network grows freely until it contacts with the tip of membrane at time ~1 s, when it starts pushing on it. Concomittantly, the gradient in $\u03c8$ generates a lateral gradient in active tension \u03c3a, which in turn drives a centrifugal cortical flow. This flow causes a centrifugal friction traction on the membrane and hence favors outward flow. However, this mechanism competes with the out-of-plane force on the evagination by localized polymerization. The outcome of this competing mechanisms depends on their relative strength.\n\nFor the parameters considered here, the pushing force normal to the membrane plane (orange arrow in Figure 5F and orange plot in Figure 5\u2014figure supplement 2B.) quickly reached the stall force $f_{s}^{0}$ ~ 2 pN, marking the onset of normal retraction of the branched network (instant ii). This normal force continues to increase as the gradient in $\u03c8$ and active tension is established (iii and iv). In these stages, it rises an order of magnitude larger than the stall force, enabling rapid retraction of the protrusion driven by the centrifugal action flows. Thus, friction-mediated forces from lateral gradient in active tension overcome the pushing force from filaments to iron out the evagination. The retraction velocity of the branched network under force dictates the time scale of flattening. An evagination of 100 nm reducing at a speed of ~1 nm/s flattens in 100 s, corresponding to the typical time scale of flattening. Following membrane flattening, the IRSp53 domain is rapidly dissolved and according to Equation 1, $\u03c8$ drops to zero everywhere, eventually stopping the cortical flow and thus recovering a homeostatic state with a planar membrane and a quiescent cortex.\n\nOur model is consistent with the fact that myosin inhibition does not affect the resorption process. Indeed, myosin inhibition should lower the baseline active tension, $\\sigma_{0}$ , but should not change the fact that localized polymerization would locally induce and extensile stress, and hence establish a tension gradient and a centrifugal actin flow.\n\n#### Alternative scenarios\n\nWe confront this situation with two alternative scenarios. First, we neglect the out-of-plane force by actin polymerization. This is imposed by setting $v_{t}^{0}=0$ in Equation 2. The initial stages following the formation of the evagination progress similarly as before, Figure 5\u2014figure supplement 2C (A), with the enrichment of IRSp53 on the bud (ii), followed by build-up of actin regulator $\u03c8$ (iii), leading to a gradient in contractility and the centrifugal flow dragging the membrane to flatten the evagination (iv and v), and recover membrane-cortex homeostasis. However, without the resistance from branched actin network, the resorption of the evagination proceeds by a snapping event characteristic of bud formation/flattening (Tozzi et al., 2019), which takes place over ~10 s, in comparison to the ~100 s observed in experiments and predicted by the previous model. Hence, in this scenario, the system also recovers homeostasis, yet the resorption dynamics are unrealistically abrupt.\n\nNext, we consider a second alternative scenario in which we neglect the lateral cortical flow and just retain the out-of-plane force, considering growth velocity of branched network decoupled from presence of actin regulator species such that $v_{t}^{0}=90$ nm/s and zero lateral actin flow. We find that the pushing force slightly increases the size of a protrusion leading to a stable bud, Figure 5\u2014figure supplement 2C (B). Hence, the polymerization force is not able to overcome membrane tension and recruit additional membrane area. However, actin polymerization is known to drive elongation of membrane extension, for example endocytic buds, filopodia, or lamellipodia. It is reasonable to expect that the force-velocity relation of the growing network depends on the composition of the actin cytoskeleton. For instance, in vitro studies and theory suggest that in the presence of bundling agents, branched networks more easily form membrane tubes and increase their stall force (Liu et al., 2008; Tsekouras et al., 2011). Accordingly, we found that increasing the stall force by an order of magnitude drives the evagination into tubular domains as shown in Figure 5\u2014figure supplement 2C.\n\n#### Summary\n\nIn summary, these results suggest that localized signaling induced by curvature sensing triggers localized polymerization of branched actin by Arp2/3. This localized polymerization has two opposite mechanical effects as it generates (1) out-of-plane polymerization forces driving further extension of the evagination and (2) a lateral contractility gradient driving centrifugal actin flow, which drags and tends to flatten the evagination. This competition may lead to different outcomes depending on the relative strength. If (1) is negligible, then the centrifugal actin flow irons out the evagination very abruptly. If (2) is negligible, then polymerization forces may extend the evagination further. In an intermediate regime that agrees with observations, lateral actin flow controls the outcome, that is recovery of membrane cortex homeostasis, but out-of-plane polymerization forces affect the dynamics by delaying flattening.\n",
+      "created_at": "2025-12-04T03:23:05.631381Z"
+    },
+    {
+      "id": "d03c80a4-04fd-4b5e-b986-e0d9c0c657a4",
+      "submission_id": "1655a4c0-80bc-4182-b224-0777e0815b06",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Patricia Bassereau, https://ror.org/04t0gwh46 Institut Curie France\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.72316.sa0](https://doi.org/10.7554/eLife.72316.sa0)\n\nIn this important paper, the authors characterize and model a novel self-organizing circuit used by cells to correct for nanoscale membrane evaginations that form upon a rapid drop in membrane area. The evidence supporting the conclusions is compelling and provides new insights on plasma membrane-cortex coupling. It is of interest to mechanobiologists and biophysicists and could be relevant in processes in developmental biology or in tissues where the cell area changes rapidly, such as in muscles, heart, and lungs.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Patricia Bassereau, https://ror.org/04t0gwh46 Institut Curie France\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.72316.sa1](https://doi.org/10.7554/eLife.72316.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"A mechanosensing mechanism mediated by IRSp53 controls plasma membrane shape homeostasis at the nanoscale\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, including X as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Suzanne Pfeffer as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Milos Galic (Reviewer #3).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\nThe reviewers have considered that your work represents a well-executed study in a very defined reductionist model system. It provides new insights on plasma membrane-cortex coupling. After discussion, we think that your manuscript would nevertheless benefit from the following revisions:\n\n1) Strengthen the model:\n\nOne issue of the paper is that the authors do not provide test of their model other than the absence of effect of Myo2 and do not discuss other mechanisms. The authors consider that the resorption is essentially related to actin production at the place where IRSp53 is localized, which induces an actin flow parallel to the plasma membrane, away from the evagination. Practically, this mechanism should also be present in any membrane protrusion, including filopodia. Thus, it would be important to compare the different actin fluxes at the evagination to determine the dominant contribution. What about the retrograde flow (perpendicular to the flow considered here) which would also lead to a resorption, and the protrusive forces that would counteract them? The authors mention the protrusive forces but do not explain why they are not strong enough.\n\n2) Probe for additional proteins at the evagination sites\n\n2.1. Other I-BAR proteins:\n\nThe resorption effect does not disappear in the absence of IRSp53 (Figures2H, 2L). It becomes just slower (Figure 2H), and actin is recruited but less (Figure 2L). Considering their redundant function, additional I-BAR domain proteins may contribute to this mechanism as well. To address this possibility, the authors should monitor the localization of other candidate proteins (e.g. MTSS1, MTSS2, IRTKS) at membrane evagination. Optionally, protein function could be tested via knockdown to delineate the contribution of individual I-BAR domain proteins.\n\n2.2. Other N-BAR proteins:\n\nIt was shown for filopodia that N-BAR domain proteins limit their growth (See M. Galic et al., eLife 3 (2014)). Could it be the case here too?\n\n2.3. Actin dynamics\n\nAlthough it seems likely that IRSP3 triggers Rac and then Arp2/3 via WAVE, this is not supported by direct evidence. Moreover, it is not clear that this happens really locally or if global effects contribute. Hence it is important to localize Arp2/3 and components of the WAVE complex at the evagination sites. It is also important to knock out or knock down the WAVE complex to nail down the importance in this context.\n\nNext, if they confirm their hypothesis, the authors could also comment on why the machinery for protrusion growth is not active at these sites, for instance why formins are not recruited and only Arp2/3 dependent polymerization takes place.\n\n2.4. Clathrin\n\nThe process lasts over 3 min for the full resorption. This leaves time for other mechanisms that could influence lipid membrane total area, thus its tension (clathrin-independent endocytosis for instance that depends on actin), and lead to resorption of the bud. This is not considered in the paper and it the authors should test whether endocytosis plays a role.\n\n3) Better characterization of phenotype:\n\n3.1. Apical vs basal:\n\nThe phenomenon seems to occur entirely on the apical side as claimed in Figure 1, but the authors do not show what happens on the ventral part. The authors should clarify this point and provides evidence that the dots in the fluorescence image in Figure 1 are all apical.\n\n3.2. Resorption time versus characteristic time\n\nThe authors mention that they cannot always measure the characteristic time of the evaginations flattening, and thus measure their time of resorption. But it becomes more difficult to compare quantitatively between different conditions. In particular, when they compare the time of resorption for different constructs, since this time might depend on the level of transfection/expression of the different IRSp53 constructs, the authors should normalize their data by the expression levels. Moreover, if the initial bud size varies, the full resorption will take longer even with the same decay time. This seems to be the case when comparing data with and without IRSp53 (Supp. Figure 1C-D and Figure 2H): the decay time seems similar but with a higher excess area at time zero in the absence of IRSp53 (higher PM signal) (also Figure 2H) which would correspond to larger buds. Thus, comparing the full duration of the processes rather than the characteristic time is probably not appropriate.\n",
+      "created_at": "2025-12-04T03:23:05.631381Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T03:23:05.631381Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T03:23:05.631381Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "8c8282d5-de9c-4e87-ab55-dd3599b35433",
+      "content_id": "33d6b463-9a2d-493b-8163-5b668c02a555",
+      "claim_id": "C1",
+      "claim": "Cell stretch and subsequent compression reshape the plasma membrane in a way that generates local membrane evaginations in the 100 nm scale.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that cell stretch and subsequent compression reshape the PM in a way that generates local membrane evaginations in the 100 nm scale.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data including TEM measurements showing evagination dimensions and fluorescence microscopy observations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:23:05.631381Z"
+    },
+    {
+      "id": "e436e6ed-11cb-41c6-bc95-3a375c61a2bd",
+      "content_id": "33d6b463-9a2d-493b-8163-5b668c02a555",
+      "claim_id": "C2",
+      "claim": "Membrane evaginations generated by compression are recognized by I-BAR proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "These evaginations are recognized by I-BAR proteins, which triggers a burst of actin polymerization mediated by Rac1 and Arp2/3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by APEX labeling experiments showing IRSp53 enrichment at evaginations and by experiments with IRSp53 mutants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:23:05.631381Z"
+    },
+    {
+      "id": "dabe7d9d-016d-48b9-9000-74a131b454b4",
+      "content_id": "33d6b463-9a2d-493b-8163-5b668c02a555",
+      "claim_id": "C3",
+      "claim": "Recognition of evaginations by I-BAR proteins triggers a burst of actin polymerization mediated by Rac1 and Arp2/3.",
+      "claim_type": "EXPLICIT",
+      "source": "These evaginations are recognized by I-BAR proteins, which triggers a burst of actin polymerization mediated by Rac1 and Arp2/3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experiments showing actin recruitment to evaginations, effects of Rac1 mutants, and CK-666 inhibition of Arp2/3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:23:05.631381Z"
+    },
+    {
+      "id": "d586f973-7a65-4c3f-836d-a2159d6d5029",
+      "content_id": "33d6b463-9a2d-493b-8163-5b668c02a555",
+      "claim_id": "C4",
+      "claim": "Actin polymerization re-flattens the evagination, completing a mechanochemical feedback loop.",
+      "claim_type": "EXPLICIT",
+      "source": "The actin polymerization burst subsequently re-flattens the evagination, completing the mechanochemical feedback loop.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by time-lapse imaging showing evagination resorption and by inhibitor experiments showing that blocking actin polymerization impairs resorption.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:23:05.631381Z"
+    },
+    {
+      "id": "a6779e4c-97f4-4958-95c2-ae9db7c31978",
+      "content_id": "33d6b463-9a2d-493b-8163-5b668c02a555",
+      "claim_id": "C5",
+      "claim": "Normal human dermal fibroblasts subjected to 5% equibiaxial stretch increase their area by depleting plasma membrane reservoirs such as ruffles.",
+      "claim_type": "EXPLICIT",
+      "source": "As previously described, when tensile stress was applied cells increased their area by depleting PM reservoirs, such as ruffles (Gauthier et al., 2012; Kosmalska et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to previous work and by the experimental observations in the current study.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:23:05.631381Z"
+    },
+    {
+      "id": "bb10d820-b557-404f-8df2-362fb822ea6e",
+      "content_id": "33d6b463-9a2d-493b-8163-5b668c02a555",
+      "claim_id": "C6",
+      "claim": "After 3 minutes of stretch, release results in a compression stimulus that stores excess membrane in folds visualized as bright fluorescent spots of approximately 500 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "After 3 min, stretch was released, resulting in a compression stimulus. At this point, excess membrane was stored again in folds, visualized as bright fluorescent spots of \u2248500 nm (Figure 1A and Video 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by fluorescence microscopy data shown in Figure 1A and Video 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:23:05.631381Z"
+    },
+    {
+      "id": "d330680b-2b1b-4bd1-bdd1-9e3d8f815213",
+      "content_id": "33d6b463-9a2d-493b-8163-5b668c02a555",
+      "claim_id": "C7",
+      "claim": "Compression-induced spots incorporate approximately 1.5% of plasma membrane area.",
+      "claim_type": "EXPLICIT",
+      "source": "These spots incorporate approximately 1.5% of PM area (Figure 2\u2014figure supplement 1A), and thus store an important fraction of the area modified by cell stretch.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by quantitative analysis shown in Figure 2\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:23:05.631381Z"
+    },
+    {
+      "id": "c1c06a43-6994-4314-9506-2da268e52ee5",
+      "content_id": "33d6b463-9a2d-493b-8163-5b668c02a555",
+      "claim_id": "C8",
+      "claim": "Compression-generated folds are formed passively by the plasma membrane to accommodate compression.",
+      "claim_type": "EXPLICIT",
+      "source": "As we have previously published (Kosmalska et al., 2015), these spots are formed passively by the PM to accommodate compression, analogously to what occurs when compressing synthetic lipid bilayers (Staykova et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to previous work on cell compression and synthetic lipid bilayers.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:23:05.631381Z"
+    },
+    {
+      "id": "8b52c8a4-6b21-4207-8123-760bd406e3e3",
+      "content_id": "33d6b463-9a2d-493b-8163-5b668c02a555",
+      "claim_id": "C9",
+      "claim": "De-stretched cells display numerous bud-shaped evaginations at their apical plasma membrane side that correlate with bright spots seen by fluorescence.",
+      "claim_type": "EXPLICIT",
+      "source": "De-stretched cells displayed numerous bud-shaped evaginations at their apical PM side that correlated with the bright spots seen by fluorescence (Figure 1B and C), showing that the PM bends outward (thereby minimizing friction with the underlying cortex).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by correlated SEM and fluorescence microscopy data shown in Figures 1B and 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:23:05.631381Z"
+    },
+    {
+      "id": "8c63f00e-981d-47bf-a033-5d3e97952517",
+      "content_id": "33d6b463-9a2d-493b-8163-5b668c02a555",
+      "claim_id": "C10",
+      "claim": "The plasma membrane bends outward in evaginations, thereby minimizing friction with the underlying cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "De-stretched cells displayed numerous bud-shaped evaginations at their apical PM side that correlated with the bright spots seen by fluorescence (Figure 1B and C), showing that the PM bends outward (thereby minimizing friction with the underlying cortex).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the observed outward bending direction of evaginations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:23:05.631381Z"
+    },
+    {
+      "id": "0e387f8d-eacc-48ad-b063-f416d731210d",
+      "content_id": "33d6b463-9a2d-493b-8163-5b668c02a555",
+      "claim_id": "C11",
+      "claim": "Compression-induced evaginations have an average neck diameter of 83 nm and head diameter of 115 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of the shape profile of compression-induced evaginations yielded an average diameter in the neck (cylindrical shape) of 83 nm and of 115 nm in the head (spherical shape), and average curvatures of 0.03 and 0.02 nm\u20131, respectively (Figure 1E, F and G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by TEM measurements and analysis shown in Figures 1E, F, and G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:23:05.631381Z"
+    },
+    {
+      "id": "e6e8381a-2ae8-46ac-b02f-66bfae0ce543",
+      "content_id": "33d6b463-9a2d-493b-8163-5b668c02a555",
+      "claim_id": "C12",
+      "claim": "Compression-induced evaginations have average curvatures of 0.03 nm\u207b\u00b9 at the neck and 0.02 nm\u207b\u00b9 at the head.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of the shape profile of compression-induced evaginations yielded an average diameter in the neck (cylindrical shape) of 83 nm and of 115 nm in the head (spherical shape), and average curvatures of 0.03 and 0.02 nm\u20131, respectively (Figure 1E, F and G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by TEM measurements and analysis shown in Figures 1E, F, and G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:23:05.631381Z"
+    },
+    {
+      "id": "06f18464-8154-487e-98d9-e7178b2ea4ef",
+      "content_id": "33d6b463-9a2d-493b-8163-5b668c02a555",
+      "claim_id": "C13",
+      "claim": "Passive fold formation is followed by active resorption involving actin cytoskeleton rearrangements, allowing for topography equilibration within minutes.",
+      "claim_type": "EXPLICIT",
+      "source": "In cells, passive fold formation is followed by active resorption involving actin cytoskeleton rearrangements, allowing for topography equilibration within minutes (Kosmalska et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to previous work and by experimental observations in the current study.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:23:05.631381Z"
+    },
+    {
+      "id": "bee3ea05-bdce-478f-9a59-4c2360fad8fb",
+      "content_id": "33d6b463-9a2d-493b-8163-5b668c02a555",
+      "claim_id": "C14",
+      "claim": "Full reabsorption of evaginations in NHDF leads to an average decay constant of 0.04 s\u207b\u00b9, corresponding to a half-life of about 17 seconds.",
+      "claim_type": "EXPLICIT",
+      "source": "Here for NHDF, full reabsorption of evaginations leads to an average decay constant of 0.04 s\u20131 (corresponding to a half-life of about 17 s ensuring a complete return to fluorescent baseline at the end of the experiment).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by quantitative analysis of fluorescence decay curves from experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:23:05.631381Z"
+    },
+    {
+      "id": "0475f80c-b90c-4306-9b99-cf0d191d277a",
+      "content_id": "33d6b463-9a2d-493b-8163-5b668c02a555",
+      "claim_id": "C15",
+      "claim": "Actin is recruited to evaginations with a delay relative to membrane marker appearance.",
+      "claim_type": "EXPLICIT",
+      "source": "Actin recruitment was indeed delayed with respect to the membrane (Figure 2F and G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by time-lapse imaging data showing temporal differences in fluorescence peaks shown in Figures 2F and G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:23:05.631381Z"
+    },
+    {
+      "id": "64047896-d74d-4216-921b-c57d4afded43",
+      "content_id": "33d6b463-9a2d-493b-8163-5b668c02a555",
+      "claim_id": "C16",
+      "claim": "Ezrin is recruited to evaginations with a delay of 10 seconds relative to the membrane marker.",
+      "claim_type": "EXPLICIT",
+      "source": "fluorescence analysis of PM and Ezrin markers revealed a recruitment of the protein that mimicked, with a delay of 10 s, the one seen with actin (Figure 2I and J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by quantitative fluorescence analysis shown in Figures 2I and J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:23:05.631381Z"
+    },
+    {
+      "id": "5b27d8fc-8619-4d96-bdfb-989a78286db6",
+      "content_id": "33d6b463-9a2d-493b-8163-5b668c02a555",
+      "claim_id": "C17",
+      "claim": "I-BAR domain containing proteins have the ability to sense negative curvature and concomitantly recruit actin nucleation promoting factors or directly bind actin monomers.",
+      "claim_type": "EXPLICIT",
+      "source": "I-BAR domain containing proteins have the ability to sense negative curvature, corresponding to an extruded PM, and to concomitantly recruit actin nucleation promoting factors (NPFs) or even directly bind actin monomers (Simunovic et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to previous work on I-BAR protein properties.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:23:05.631381Z"
+    },
+    {
+      "id": "90c1a43c-6703-4630-bffc-fdd51da9ecbb",
+      "content_id": "33d6b463-9a2d-493b-8163-5b668c02a555",
+      "claim_id": "C18",
+      "claim": "Ezrin needs to act in partnership with the I-BAR protein IRSp53 to enrich in negatively curved membranes.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, a recent work described how Ezrin needs to act in partnership with the I-BAR protein IRSp53 to enrich in negatively curved membranes (Tsai et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to previous work by Tsai et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:23:05.631381Z"
+    },
+    {
+      "id": "f420df68-b5a6-4057-a76c-e0605b0644ec",
+      "content_id": "33d6b463-9a2d-493b-8163-5b668c02a555",
+      "claim_id": "C19",
+      "claim": "The I-BAR domain of IRSp53 displays a peak of sorting at evaginations with curvatures of 0.05 nm\u207b\u00b9.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, recent studies in vitro and in vivo showed that the I-BAR domain of IRSp53 displays a peak of sorting at evaginations with curvatures of 0.05 nm\u20131.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to recent studies on IRSp53 curvature sensing.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:23:05.631381Z"
+    },
+    {
+      "id": "d783fd51-9399-4d34-9960-e2dddcb4bcbd",
+      "content_id": "33d6b463-9a2d-493b-8163-5b668c02a555",
+      "claim_id": "C20",
+      "claim": "Curvature values comparable to those obtained by TEM imaging of evaginations lead to a twofold enrichment of the IRSp53 I-BAR domain with respect to a control membrane marker.",
+      "claim_type": "EXPLICIT",
+      "source": "They also revealed that lower curvature values comparable to the ones obtained by TEM imaging of our evaginations led to a twofold enrichment of this domain with respect to a control membrane marker (Pr\u00e9vost et al., 2015; Breuer et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to previous work by Pr\u00e9vost et al., 2015 and Breuer et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:23:05.631381Z"
+    },
+    {
+      "id": "34ddb524-e889-4991-9d43-4d8786c76061",
+      "content_id": "33d6b463-9a2d-493b-8163-5b668c02a555",
+      "claim_id": "C21",
+      "claim": "No significant differences in decay curves were observed between wild-type MEF cells and IRSp53 null MEF cells.",
+      "claim_type": "EXPLICIT",
+      "source": "To investigate this possibility, we used isogenic MEFs isolated from IRSp53 null mice (Disanza et al., 2013; Weiss et al., 2009; Sawallisch et al., 2009) that we call IRSp53-/- cells, and compared their decay curves with wild-type (WT) MEF cells (Figure 2\u2014figure supplement 1C). No significant differences were observed (Figure 2\u2014figure supplement 1D, E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by quantitative comparison of decay curves shown in Figure 2\u2014figure supplement 1D and E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:23:05.631381Z"
+    },
+    {
+      "id": "68ea93f1-5cbf-4209-b7df-c625946f9e06",
+      "content_id": "33d6b463-9a2d-493b-8163-5b668c02a555",
+      "claim_id": "C22",
+      "claim": "IRSp53 is enriched at plasma membrane evaginations generated by stretch release.",
+      "claim_type": "EXPLICIT",
+      "source": "We analyzed the PM evaginations generated by a stretch-release cycle and found an increase in APEX signal to evaginations only in IRSp53-FL-transfected cells (Figure 3A), but not in control mito-GFP-transfected cells (Figure 3B). These findings strongly suggest that IRSp53 is recruited to the evaginations.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by APEX-TEM imaging data shown in Figures 3A and 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:23:05.631381Z"
+    },
+    {
+      "id": "7133448a-562d-41e9-9d94-7fe0c964a02a",
+      "content_id": "33d6b463-9a2d-493b-8163-5b668c02a555",
+      "claim_id": "C23",
+      "claim": "mRNA levels of I-BAR proteins IRTKs and MIM are robustly upregulated in IRSp53-/- cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, we found that the mRNA levels of the I-BAR proteins IRTKs and MIM were robustly upregulated in the IRSp53-/- cells, while MIM was elevated in the IRSP53-/- IRTKs KO cell line (Figure 2\u2014figure supplement 1H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by RT-PCR data shown in Figure 2\u2014figure supplement 1H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:23:05.631381Z"
+    },
+    {
+      "id": "a8271542-b491-4dd9-87ae-d16b63506fb9",
+      "content_id": "33d6b463-9a2d-493b-8163-5b668c02a555",
+      "claim_id": "C24",
+      "claim": "Cells genetically knocked out for IRSp53 adapt to the loss of protein by compensatory elevation of I-BAR family proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, cells genetically knocked out for IRSp53 adapt to the loss of protein by compensatory elevation of I-BAR family protein, implying that stable KO strategies are not suited to clarify the overall role of I-BAR protein in evagination resorption.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the observed upregulation of other I-BAR proteins in knockout cells.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:23:05.631381Z"
+    },
+    {
+      "id": "722a2014-8f61-4898-9f56-2839fc59ae92",
+      "content_id": "33d6b463-9a2d-493b-8163-5b668c02a555",
+      "claim_id": "C25",
+      "claim": "IRSp53 full-length protein colocalizes with the plasma membrane and its fluorescence in evaginations is significantly delayed with respect to the membrane marker.",
+      "claim_type": "EXPLICIT",
+      "source": "We started by overexpressing EGFP-IRSP53-FL protein in IRSp53-/-R cells which colocalized with the PM (Video 4). Further confirming IRSP53 recruitment to the invagination, protein fluorescence in the evagination was significantly delayed with respect to the PM marker (Figure 3E\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by live imaging data shown in Figures 3E-F and Video 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:23:05.631381Z"
+    },
+    {
+      "id": "67013747-823c-45dc-b734-cc9a6652ba43",
+      "content_id": "33d6b463-9a2d-493b-8163-5b668c02a555",
+      "claim_id": "C26",
+      "claim": "Multiple protein interaction domains of IRSp53, in addition to the I-BAR, mediate the association with the plasma membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "Next, we used the fluorescently labeled mutants, which all colocalized with the PM marker (Figure 3\u2014figure supplement 1A\u2013G), indicating that multiple protein interaction domains of IRSp53, in addition to the I-BAR, mediate the association with the PM, as already suggested in previous studies (Robens et al., 2010; Bisi et al., 2020).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data with IRSp53 mutants and by citation to previous studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:23:05.631381Z"
+    },
+    {
+      "id": "4ce01b43-41a6-4953-a585-8e1cdcf9c812",
+      "content_id": "33d6b463-9a2d-493b-8163-5b668c02a555",
+      "claim_id": "C27",
+      "claim": "EGFP-IRSP53-4KE and IRSP53-I268N mutants do not affect plasma membrane decay constants and lag times when compared with IRSp53-FL.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the EGFP-IRSP53-4KE and IRSP53-I268N did not affect PM decay constants and lag times when compared with IRSp53-FL (Figure 3\u2014figure supplement 2A\u2013D and Videos 5 and 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by quantitative analysis shown in Figure 3\u2014figure supplement 2A-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:23:05.631381Z"
+    },
+    {
+      "id": "5778956f-fdfb-40ca-a1b3-08f0b4ceefdf",
+      "content_id": "33d6b463-9a2d-493b-8163-5b668c02a555",
+      "claim_id": "C28",
+      "claim": "Point mutants I403P and W413G in the SH3 domain have a small effect on resorption decay constant but significantly increase the lag time.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, the point mutant I403P and W413G in the SH3 domain had a small effect on resorption decay constant but significantly increased the lag time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by quantitative analysis of decay constants and lag times for these mutants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:23:05.631381Z"
+    },
+    {
+      "id": "c50dff5d-00df-466e-b26e-de35b2474117",
+      "content_id": "33d6b463-9a2d-493b-8163-5b668c02a555",
+      "claim_id": "C29",
+      "claim": "Deletion of the entire I-BAR domain or overexpression of the I-BAR domain alone significantly impacts both the resorption decay constant and lag time.",
+      "claim_type": "EXPLICIT",
+      "source": "The deletion of the entire I-BAR domain (Figure 3H, I) or the overexpression of the I-BAR domain alone significantly impacted, instead, both the resorption decay constant and lag time (also see Videos 7\u201310).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by quantitative analysis shown in Figures 3H and I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:23:05.631381Z"
+    },
+    {
+      "id": "7e5504aa-53fe-43b9-946b-c381e300cfbf",
+      "content_id": "33d6b463-9a2d-493b-8163-5b668c02a555",
+      "claim_id": "C30",
+      "claim": "Impaired resorption correlates with delayed recruitment of IRSp53 mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "When all mutants were compared, impaired resorption (i.e., decreased decay constant) correlated with delayed recruitment (i.e., increased lag, Figure 3I and J and Figure 3\u2014figure supplement 2C, D, G, H). The more IRSp53 recruitment was delayed with respect to the PM marker, the less efficient the resorption was.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by correlation analysis shown in Figures 3I, J and Figure 3\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:23:05.631381Z"
+    },
+    {
+      "id": "5c0dcfd3-d4c7-4ece-9919-3826a0bf4d1a",
+      "content_id": "33d6b463-9a2d-493b-8163-5b668c02a555",
+      "claim_id": "C31",
+      "claim": "Expression of constitutively active Rac1-G12V accelerates evagination resorption significantly.",
+      "claim_type": "EXPLICIT",
+      "source": "Confirming the involvement of Rac1, the expression of Rac1-G12V accelerated evagination resorption significantly whereas Rac1-T17N slowed it down in NHDF (Figure 3\u2014figure supplement 2I\u2013K).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data with Rac1 mutants shown in Figure 3\u2014figure supplement 2I-K.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:23:05.631381Z"
+    },
+    {
+      "id": "11217cfb-5082-4a24-a2a5-ca1ccdcd0e14",
+      "content_id": "33d6b463-9a2d-493b-8163-5b668c02a555",
+      "claim_id": "C32",
+      "claim": "Expression of dominant negative Rac1-T17N slows down evagination resorption in NHDF.",
+      "claim_type": "EXPLICIT",
+      "source": "Confirming the involvement of Rac1, the expression of Rac1-G12V accelerated evagination resorption significantly whereas Rac1-T17N slowed it down in NHDF (Figure 3\u2014figure supplement 2I\u2013K).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data with Rac1 mutants shown in Figure 3\u2014figure supplement 2I-K.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:23:05.631381Z"
+    },
+    {
+      "id": "78873066-33c4-4cb1-92ff-f96a343e0657",
+      "content_id": "33d6b463-9a2d-493b-8163-5b668c02a555",
+      "claim_id": "C33",
+      "claim": "IRSp53 has been described to promote Arp2/3-mediated actin polymerization driven by nucleation promoting factors WASP or WAVEs.",
+      "claim_type": "EXPLICIT",
+      "source": "IRSp53 has been described to promote Arp2/3-mediated actin polymerization, which is driven by NPFs (WASP or WAVEs), both acting as an upstream (Connolly et al., 2005; Funato et al., 2004) and downstream regulator of the small GTPase Rac1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to previous work by Connolly et al., 2005 and Funato et al., 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:23:05.631381Z"
+    },
+    {
+      "id": "5f934544-9882-4af2-a555-8e3440ee79ce",
+      "content_id": "33d6b463-9a2d-493b-8163-5b668c02a555",
+      "claim_id": "C34",
+      "claim": "Treatment with 10 \u00b5M of the N-WASP inhibitor Wiskostatin does not modify evagination resorption.",
+      "claim_type": "EXPLICIT",
+      "source": "First, cell treatment with 10 \u00b5M of the N-WASP inhibitor Wiskostatin (Tsujita et al., 2015) reduced filopodia number as expected (Yang et al., 2020; Figure 4\u2014figure supplement 1A,B), but did not modify evagination resorption (Figure 4A, E, and F and Video 11).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data with Wiskostatin treatment shown in Figures 4A, E, F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:23:05.631381Z"
+    },
+    {
+      "id": "fda17a40-c676-4915-9b90-485c6ac88343",
+      "content_id": "33d6b463-9a2d-493b-8163-5b668c02a555",
+      "claim_id": "C35",
+      "claim": "Treatment with 15 \u03bcM of the formin inhibitor SMIFH2 does not affect evagination resorption.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, treatment with 15 \u03bcM of the formin inhibitor SMIFH2 (Rizvi et al., 2009) reduced the number of filopodia as expected (Wakayama et al., 2015; Figure 4\u2014figure supplement 1C,D), but did not affect evagination resorption either (Figure 4B, G, and H and Video 12).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data with SMIFH2 treatment shown in Figures 4B, G, H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:23:05.631381Z"
+    },
+    {
+      "id": "d049feb6-4df5-4621-9433-5814882c1237",
+      "content_id": "33d6b463-9a2d-493b-8163-5b668c02a555",
+      "claim_id": "C36",
+      "claim": "Treatment with 10 \u03bcM of the myosin II inhibitor Para-nitroblebbistatin does not impair evagination resorption.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, treatment with 10 \u03bcM of the myosin II inhibitor Para-nitroblebbistatin (K\u00e9pir\u00f3 et al., 2014) affected the integrity of stress fibers as expected (Tojkander et al., 2012, Figure 4\u2014figure supplement 1E) but did not impair evagination resorption (Figure 4C, I, and J and Video 13).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data with Para-nitroblebbistatin treatment shown in Figures 4C, I, J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:23:05.631381Z"
+    },
+    {
+      "id": "8ea4008a-a05c-4939-bf7f-7d71db0cbc64",
+      "content_id": "33d6b463-9a2d-493b-8163-5b668c02a555",
+      "claim_id": "C37",
+      "claim": "Treatment with the Arp2/3 inhibitor CK-666 significantly reduces evagination resorption.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely the treatment with the Arp2/3 inhibitor CK-666 (Hetrick et al., 2013) significantly reduced evagination resorption in comparison to DMSO-treated controls (Figure 4D, K, and L and Video 14).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data with CK-666 treatment shown in Figures 4D, K, L.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:23:05.631381Z"
+    },
+    {
+      "id": "01fb43d5-b9bb-4c6f-88ee-6ecd93271da7",
+      "content_id": "33d6b463-9a2d-493b-8163-5b668c02a555",
+      "claim_id": "C38",
+      "claim": "WAVE2 is enriched at evagination sites relative to adjacent flat membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "With this, we calculated the increase in fluorescence between the evagination and adjacent flat membrane, in both WAVE and membrane markers. This increase was higher for WAVE than for the membrane, indicating a relative enrichment of WAVE at the evagination site (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by quantitative fluorescence analysis shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:23:05.631381Z"
+    },
+    {
+      "id": "9b5ed7ee-6934-4bb1-8b49-af5e4e38c1c9",
+      "content_id": "33d6b463-9a2d-493b-8163-5b668c02a555",
+      "claim_id": "C39",
+      "claim": "Silencing of NCKAP1 (Nap1) increases the number of evaginations remaining after 25 seconds of resorption.",
+      "claim_type": "EXPLICIT",
+      "source": "Confirming the role of the WRC, the number of evaginations remaining after 25 s of resorption was higher in cells with silenced Nap1 (Figure 5C\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by SEM imaging and quantification shown in Figures 5C-E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:23:05.631381Z"
+    },
+    {
+      "id": "6ef60df4-9ba8-475d-bb86-955163e66510",
+      "content_id": "33d6b463-9a2d-493b-8163-5b668c02a555",
+      "claim_id": "C40",
+      "claim": "Evagination resorption involves the enrichment of I-BAR proteins and WRCs, leading to actin polymerization in a myosin-independent and Arp2/3-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that evagination resorption upon compression involves the enrichment of I-BAR proteins and WRCs, leading to actin polymerization in a myosin-independent and Arp2/3-dependent manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple experimental results including inhibitor studies and protein localization data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:23:05.631381Z"
+    },
+    {
+      "id": "f0f8a3b9-e336-45a2-af17-14d0a1533324",
+      "content_id": "33d6b463-9a2d-493b-8163-5b668c02a555",
+      "claim_id": "C41",
+      "claim": "Previous work on IRSp53-mediated actin polymerization describes the extension of out-of-plane protrusions in the form of filopodia or lamellipodia as a result of out-of-plane polymerization forces pushing against the plasma membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous work on IRSp53-mediated actin polymerization describes the extension of out-of-plane protrusions in the form of filopodia or lamellipodia (Pr\u00e9vost et al., 2015; Disanza et al., 2006; Connolly et al., 2005; Lim et al., 2008; Goh et al., 2012; Kast and Dominguez, 2019) as a result of out-of-plane polymerization forces pushing against the PM (Gov, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to multiple previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:23:05.631381Z"
+    },
+    {
+      "id": "2eac1432-ce6a-45fa-9a9b-08b802db708f",
+      "content_id": "33d6b463-9a2d-493b-8163-5b668c02a555",
+      "claim_id": "C42",
+      "claim": "Polymerization of an actin cortex retracts and flattens cellular blebs through a mechanism that depends on myosin contractility.",
+      "claim_type": "EXPLICIT",
+      "source": "At larger scales, polymerization of an actin cortex retracts and flattens cellular blebs, but this mechanism depends on myosin contractility (Charras et al., 2006), and hence is not applicable here.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to previous work by Charras et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:23:05.631381Z"
+    },
+    {
+      "id": "4c903175-0e63-4809-aaa1-c0f040067793",
+      "content_id": "33d6b463-9a2d-493b-8163-5b668c02a555",
+      "claim_id": "C43",
+      "claim": "The theoretical model predicts that curvature-sensitive I-BAR proteins become enriched in the evagination within a second following its generation.",
+      "claim_type": "EXPLICIT",
+      "source": "Following the generation of a membrane evagination by buckling-induced delamination (Kosmalska et al., 2015; Staykova et al., 2013), our model predicts that curvature-sensitive I-BAR proteins become enriched in the evagination within a second (magenta colormap in Figure 5F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on theoretical modeling results shown in Figure 5F.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:23:05.631381Z"
+    },
+    {
+      "id": "86e09702-1b66-4411-8a16-593b6a604f1f",
+      "content_id": "33d6b463-9a2d-493b-8163-5b668c02a555",
+      "claim_id": "C45",
+      "claim": "The lateral tension gradient induced by localized polymerization induces a centrifugal cortical flow which frictionally drags the inextensible membrane outward favoring flattening.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the lateral tension gradient induces a centrifugal cortical flow (black arrows), which frictionally drags the inextensible membrane outward favoring flattening.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on theoretical modeling results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:23:05.631381Z"
+    },
+    {
+      "id": "e94f37c0-571c-4551-83d9-441c3b2dded2",
+      "content_id": "33d6b463-9a2d-493b-8163-5b668c02a555",
+      "claim_id": "C46",
+      "claim": "The predicted relative trends of plasma membrane and regulator densities from the model match experimental observations when comparing plasma membrane and actin or Ezrin.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas predicted actin flows occur at a scale well below the diffraction limit and can therefore not be observed experimentally, the predicted relative trends of PM and regulator densities match our experimental observations when comparing PM and actin (Figure 2G) or Ezrin (Figure 2J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on comparison between model predictions and experimental data shown in Figures 2G and 2J.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:23:05.631381Z"
+    },
+    {
+      "id": "15da45d4-ec22-4219-813e-c3f215410656",
+      "content_id": "33d6b463-9a2d-493b-8163-5b668c02a555",
+      "claim_id": "C47",
+      "claim": "Model predictions are consistent with the observation that evagination resorption is impaired when inhibiting Arp2/3 or WRC but not myosin or formin activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Predictions are also consistent with our observation that evagination resorption is impaired when inhibiting Arp2/3 (Figure 4L) or WRC (Figure 5E) but not myosin or formin activity (Figure 4H and J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on comparison between model predictions and experimental data from inhibitor studies.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:23:05.631381Z"
+    },
+    {
+      "id": "32c15e04-089b-434e-8c73-ba0bb82e6009",
+      "content_id": "33d6b463-9a2d-493b-8163-5b668c02a555",
+      "claim_id": "C48",
+      "claim": "The mechanism is based on a local gradient in extensile versus contractile behavior around the evagination, and hence should depend on Arp2/3 but not on formin or myosin.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the mechanism is based on a local gradient in extensile versus contractile behavior around the evagination, and hence it should depend on Arp2/3 (which acts locally at the evagination) and not on formin or myosin, which would regulate overall contractility levels and not specifically local gradients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the theoretical model mechanism.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:23:05.631381Z"
+    },
+    {
+      "id": "d9d1cb3b-260b-40a7-aa24-c0b7f8cf51f3",
+      "content_id": "33d6b463-9a2d-493b-8163-5b668c02a555",
+      "claim_id": "C49",
+      "claim": "IRSp53 mediates the resorption rather than formation of membrane curvature in the context of compression-induced evaginations.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, we show that IRSp53 mediates the resorption rather than formation of membrane curvature, as previously described in the context of filopodia extension (Disanza et al., 2013) and HIV budding (Inamdar et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data and contrasted with previous work cited.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:23:05.631381Z"
+    },
+    {
+      "id": "3d191f09-fd1d-4498-9bcb-2b1f21ef2044",
+      "content_id": "33d6b463-9a2d-493b-8163-5b668c02a555",
+      "claim_id": "C50",
+      "claim": "The role of IRSp53 is visible through dominant-negative effects of its mutants but not through overexpression or depletion.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the role of IRSp53 is visible through dominant-negative effects of its mutants but not through overexpression or depletion, suggesting that I-BAR proteins with similar function (such as IRTKs) are likely to play compensatory or redundant roles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the experimental results with IRSp53 mutants and knockout cells.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:23:05.631381Z"
+    },
+    {
+      "id": "981fd930-b708-4f65-96bb-83c70fa5f9b1",
+      "content_id": "33d6b463-9a2d-493b-8163-5b668c02a555",
+      "claim_id": "C51",
+      "claim": "IRSp53 in complex with WAVE has been described to localize to saddle curvatures which occur at the neck of invaginations.",
+      "claim_type": "EXPLICIT",
+      "source": "IRSp53 in complex with WAVE has also been described to localize to saddle curvatures (Pipathsouk et al., 2021), which occur at the neck of invaginations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to previous work by Pipathsouk et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:23:05.631381Z"
+    },
+    {
+      "id": "5d64c833-bfa3-4dd6-9075-3bb05d3adb3c",
+      "content_id": "33d6b463-9a2d-493b-8163-5b668c02a555",
+      "claim_id": "C52",
+      "claim": "Cell compression upon a stretch cycle triggers endocytosis through the CLIC-GEEC but not the clathrin-mediated pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "Beyond the formation of evaginations, we previously showed that cell compression upon a stretch cycle also triggers endocytosis through the CLIC-GEEC (but not the clathrin-mediated) pathway (Thottacherry et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to previous work by Thottacherry et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:23:05.631381Z"
+    },
+    {
+      "id": "7c559793-7489-4247-b9ae-2a70abc857b7",
+      "content_id": "33d6b463-9a2d-493b-8163-5b668c02a555",
+      "claim_id": "C53",
+      "claim": "IRSp53 has been described to regulate the CLIC-GEEC endocytic pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "In turn, IRSp53 has been described to regulate the CLIC-GEEC endocytic pathway (Sathe et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to previous work by Sathe et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:23:05.631381Z"
+    },
+    {
+      "id": "580c3577-4caa-434f-abe9-e59d9ca9b8b5",
+      "content_id": "33d6b463-9a2d-493b-8163-5b668c02a555",
+      "claim_id": "C54",
+      "claim": "The I268N-CRIB and 4KE-I-BAR IRSp53 mutants strongly impaired endocytosis but did not affect evagination resorption.",
+      "claim_type": "EXPLICIT",
+      "source": "First, the I268N-CRIB and 4KE-I-BAR IRSp53 mutants strongly impaired endocytosis (Sathe et al., 2018), but did not affect evagination resorption (Figure 3J), showing that IRSp53 affects these processes through different mechanisms.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 3J and by citation to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:23:05.631381Z"
+    },
+    {
+      "id": "c2c37499-f11d-4523-9fe5-6ebdc0c0a78f",
+      "content_id": "33d6b463-9a2d-493b-8163-5b668c02a555",
+      "claim_id": "C55",
+      "claim": "The sites of evaginations and of endocytic buds do not coincide.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, as we previously determined, the sites of evaginations and of endocytic buds do not coincide (Thottacherry et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to previous work by Thottacherry et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:23:05.631381Z"
+    },
+    {
+      "id": "a4cf22d3-9bd0-449b-ac93-876d0d889456",
+      "content_id": "33d6b463-9a2d-493b-8163-5b668c02a555",
+      "claim_id": "C56",
+      "claim": "Upon cell compression, cells use caveolae formation and the CLIC-GEEC endocytic pathway to store material from the plasma membrane and recover resting tension.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, our findings unveil a novel mechanosensing mechanism: upon cell compression, cells are known to use caveolae formation (Sinha et al., 2011) and the CLIC-GEEC endocytic pathway (Thottacherry et al., 2018) to store material from the PM and recover resting tension.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to previous work by Sinha et al., 2011 and Thottacherry et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:23:05.631381Z"
+    },
+    {
+      "id": "80765f92-3902-4fd8-857e-3daaf9a5dc3f",
+      "content_id": "33d6b463-9a2d-493b-8163-5b668c02a555",
+      "claim_id": "C57",
+      "claim": "Plasma membrane flattening in response to mechanical perturbations involves the IRSp53-Rac1-Arp2/3 network.",
+      "claim_type": "EXPLICIT",
+      "source": "To achieve PM flattening in response to mechanical perturbations, cells employ the IRSp53-Rac1-Arp2/3 network, which has been well described to polymerize actin in the context of lamellipodia extension or ruffling (Teodorof et al., 2009; Suraneni et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data and by citation to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:23:05.631381Z"
+    },
+    {
+      "id": "076ae5ab-bec9-4d76-aea5-821c7982564e",
+      "content_id": "33d6b463-9a2d-493b-8163-5b668c02a555",
+      "claim_id": "C58",
+      "claim": "The mechanism involves lamellipodial rather than filopodial formation.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, this involves lamellipodial rather than filopodial formation, which is consistent with our previous observation that IRSp53 does not recruit the formin nucleator mDia (Disanza et al., 2013) during initial filopodia formation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from experimental observations and citation to previous work.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:23:05.631381Z"
+    },
+    {
+      "id": "6b90b8c0-fde5-46d6-afd1-7cdcec2b1875",
+      "content_id": "33d6b463-9a2d-493b-8163-5b668c02a555",
+      "claim_id": "C59",
+      "claim": "The stretch/compression stimuli occur at the scale of seconds, while subsequent resorption occurs at the scale of minutes.",
+      "claim_type": "EXPLICIT",
+      "source": "In our experiments, the stretch/compression stimuli occur at the scale of seconds, while subsequent resorption occurs at the scale of minutes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental observations of the time scales involved.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:23:05.631381Z"
+    },
+    {
+      "id": "d312ca44-a0e1-4725-b364-d326b258f50e",
+      "content_id": "33d6b463-9a2d-493b-8163-5b668c02a555",
+      "claim_id": "C60",
+      "claim": "Similar stretch-compression situations could include fast compressions of cells embedded in connective tissues or apical expansion and contractions of amnioserosa cells during dorsal closure in Drosophila embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "In vivo, similar situations could include for instance the fast compressions of cells embedded in connective tissues (Zhao et al., 2020), or the apical expansion and contractions of amnioserosa cells during dorsal closure in Drosophila embryos (Jayasinghe et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative, suggesting potential physiological scenarios based on citation to previous work.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:23:05.631381Z"
+    },
+    {
+      "id": "e437606d-0195-4775-8568-ee58288d95f9",
+      "content_id": "33d6b463-9a2d-493b-8163-5b668c02a555",
+      "claim_id": "C61",
+      "claim": "Other scenarios where the mechanism could be relevant include responses to wounding, contraction in muscle cells, or contractile pulling during fibroblast migration.",
+      "claim_type": "EXPLICIT",
+      "source": "Other scenarios could include responses to wounding (Agha et al., 2011), contraction in muscle cells, or contractile pulling during fibroblast migration (Plotnikov et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative, suggesting potential physiological scenarios based on citation to previous work.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:23:05.631381Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "852b08d9-35b0-49ab-ba8c-e24966fbc3fd",
+      "content_id": "33d6b463-9a2d-493b-8163-5b668c02a555",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Cell stretch followed by compression generates bud-shaped plasma membrane evaginations at the apical surface with dimensions of approximately 83 nm neck diameter, 115 nm head diameter, and curvatures of 0.03 nm\u207b\u00b9 (neck) and 0.02 nm\u207b\u00b9 (head).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C6, C9, C11, and C12 collectively demonstrate that compression generates nanoscale evaginations with well-characterized dimensions. The evidence includes fluorescence microscopy (C6), correlated SEM-fluorescence imaging (C9), and quantitative TEM measurements (C11, C12), providing converging multi-scale evidence for the formation and structure of these evaginations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:23:05.631381Z"
+    },
+    {
+      "id": "6f5e936f-d992-4d81-b41c-eb08e873c1b9",
+      "content_id": "33d6b463-9a2d-493b-8163-5b668c02a555",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "IRSp53 is enriched at compression-induced evaginations and its recruitment is delayed relative to membrane marker appearance. Domain-specific mutants of IRSp53 show that impaired resorption correlates with delayed recruitment, with the I-BAR domain and SH3 domain being critical for efficient evagination resorption.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C22, C25-C30 provide strong evidence for IRSp53 enrichment at evaginations through APEX-TEM imaging (C22) and live imaging (C25). The systematic mutant analysis (C27-C30) demonstrates structure-function relationships, showing that I-BAR domain deletion or isolated I-BAR expression significantly impairs resorption while certain other mutations have minimal effects. The correlation between delayed recruitment and impaired resorption (C30) provides mechanistic insight.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:23:05.631381Z"
+    },
+    {
+      "id": "3e1d2567-7a3a-433c-89b2-9732e17d96c9",
+      "content_id": "33d6b463-9a2d-493b-8163-5b668c02a555",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Evagination resorption involves actin polymerization mediated by Rac1 and Arp2/3 through the WAVE regulatory complex. Actin is recruited to evaginations with a delay, and inhibition of Arp2/3 or silencing of WRC components impairs resorption, while myosin, formin, and N-WASP inhibition do not affect the process.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C15, C31-C32, C37-C40 provide comprehensive evidence through multiple complementary approaches: temporal analysis showing delayed actin recruitment (C15), genetic manipulation with Rac1 mutants showing bidirectional effects (C31-C32), pharmacological inhibition demonstrating Arp2/3 dependence (C37), protein localization showing WAVE enrichment (C38), and siRNA knockdown confirming WRC involvement (C39). The negative results with other inhibitors (C34-C36) strengthen the specificity of the mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:23:05.631381Z"
+    },
+    {
+      "id": "ea495e65-07cb-4d71-ba39-eb8518645d9b",
+      "content_id": "33d6b463-9a2d-493b-8163-5b668c02a555",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Actin polymerization actively re-flattens evaginations, completing a mechanochemical feedback loop with a characteristic decay constant of 0.04 s\u207b\u00b9 (half-life ~17 seconds) in normal human dermal fibroblasts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C13, and C14 are supported by time-lapse imaging showing evagination resorption and quantitative kinetic analysis. The exponential decay fitting provides a quantitative measure of resorption dynamics. However, the claim that this 'completes' a mechanochemical feedback loop is somewhat inferential, as the direct mechanical coupling between actin polymerization and membrane flattening is not directly demonstrated but rather supported by the theoretical model.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:23:05.631381Z"
+    },
+    {
+      "id": "1cbed94f-920f-4a31-9d82-979bd0719f3d",
+      "content_id": "33d6b463-9a2d-493b-8163-5b668c02a555",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "IRSp53 knockout cells show no significant difference in evagination resorption compared to wild-type cells, which is explained by compensatory upregulation of other I-BAR family proteins (IRTKs and MIM) in the knockout cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21, C23, and C24 are well-supported by the experimental data. The lack of phenotype in IRSp53-/- cells (C21) is explained by RT-PCR data showing compensatory upregulation of other I-BAR proteins (C23). This interpretation (C24) is reasonable and highlights an important limitation of stable knockout approaches for studying this system. The finding is internally consistent with the dominant-negative effects observed with IRSp53 mutants.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:23:05.631381Z"
+    },
+    {
+      "id": "36b1c694-270c-44f3-ab9f-8611565b9208",
+      "content_id": "33d6b463-9a2d-493b-8163-5b668c02a555",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "A theoretical model predicts that localized actin polymerization creates a lateral tension gradient that induces centrifugal cortical flow, which frictionally drags the membrane outward to flatten evaginations. The model predictions match experimental observations regarding protein recruitment dynamics and the differential effects of Arp2/3 versus myosin/formin inhibition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43, C45-C48 present a theoretical model that is consistent with experimental observations. The model predictions regarding relative timing of membrane and regulator densities (C46) match experimental data (Figures 2G, 2J), and the model correctly predicts the differential effects of various inhibitors (C47). The mechanism proposed (C48) provides a plausible explanation for why Arp2/3 but not myosin or formin is required. However, the model remains theoretical and some key predictions (such as actin flows) cannot be directly observed experimentally.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:23:05.631381Z"
+    },
+    {
+      "id": "a085c7d8-77b9-4c45-bd32-2301e686b971",
+      "content_id": "33d6b463-9a2d-493b-8163-5b668c02a555",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Ezrin is recruited to evaginations with a 10-second delay relative to the membrane marker, and this recruitment requires partnership with IRSp53 to enrich at negatively curved membranes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C16 is directly supported by quantitative fluorescence analysis (Figures 2I-J). Claims C17 and C18 are supported by citations to previous work establishing I-BAR protein properties and the IRSp53-Ezrin partnership. The experimental observation of Ezrin recruitment is consistent with this prior knowledge, though the specific requirement for IRSp53 in this context is not directly tested in the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:23:05.631381Z"
+    },
+    {
+      "id": "ad18ca2a-68e9-467b-a907-ca4f7d145331",
+      "content_id": "33d6b463-9a2d-493b-8163-5b668c02a555",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Upon 5% equibiaxial stretch, cells increase their area by depleting membrane reservoirs such as ruffles. After stretch release, compression-induced membrane folds are formed passively and incorporate approximately 1.5% of plasma membrane area.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C7, and C8 are supported by experimental observations and citations to previous work. The quantification of membrane area stored in evaginations (C7) is supported by data in Figure 2\u2014figure supplement 1A. The passive nature of fold formation (C8) is supported by citation to previous work on both cells and synthetic lipid bilayers, providing a strong mechanistic foundation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:23:05.631381Z"
+    },
+    {
+      "id": "168a310e-75e3-4e15-9498-860c228d0820",
+      "content_id": "33d6b463-9a2d-493b-8163-5b668c02a555",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The plasma membrane bends outward in evaginations, thereby minimizing friction with the underlying cortex.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C10 is based on inference from the observed outward bending direction. While the outward bending is clearly demonstrated by SEM imaging (C9), the assertion that this 'minimizes friction with the underlying cortex' is speculative and not directly tested. Alternative explanations for the preferential outward bending (such as differences in resistance between the extracellular medium and cytoplasm) are not ruled out.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:23:05.631381Z"
+    },
+    {
+      "id": "63e8933f-e8fe-4cc7-952c-49d82ade5447",
+      "content_id": "33d6b463-9a2d-493b-8163-5b668c02a555",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The I-BAR domain of IRSp53 displays peak sorting at curvatures of 0.05 nm\u207b\u00b9, and curvatures comparable to those measured in the current study lead to twofold enrichment of the I-BAR domain.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19 and C20 are supported by citations to previous in vitro and in vivo studies (Pr\u00e9vost et al., 2015; Breuer et al., 2019). These claims establish the biophysical basis for expecting IRSp53 enrichment at the measured evagination curvatures, providing important context for the experimental observations in the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:23:05.631381Z"
+    },
+    {
+      "id": "2d1ff4e8-5ddf-4fd5-9098-ee868f4acdcd",
+      "content_id": "33d6b463-9a2d-493b-8163-5b668c02a555",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Inhibition of N-WASP (with Wiskostatin), formin (with SMIFH2), or myosin II (with Para-nitroblebbistatin) does not affect evagination resorption, despite these inhibitors having expected effects on other cellular structures.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C36 are supported by experimental data showing no significant effect on evagination resorption (Figures 4A-C, E-J) while confirming that the inhibitors work as expected on other structures (filopodia, stress fibers). These negative controls are important for establishing the specificity of the Arp2/3-dependent mechanism and ruling out alternative pathways.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:23:05.631381Z"
+    },
+    {
+      "id": "54145b31-dd2d-4bc8-bb56-9f10ac8d5557",
+      "content_id": "33d6b463-9a2d-493b-8163-5b668c02a555",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "IRSp53 mediates resorption rather than formation of membrane curvature in this context, and its role is visible through dominant-negative effects of mutants but not through overexpression or depletion, suggesting compensatory roles of related I-BAR proteins.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49 and C50 are supported by the experimental data showing that IRSp53 is recruited after evagination formation and that dominant-negative mutants impair resorption. The interpretation that I-BAR proteins play compensatory roles (C50) is reasonable given the upregulation data (C23) and the lack of phenotype in knockout cells (C21). This represents an important conceptual advance in understanding IRSp53 function.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:23:05.631381Z"
+    },
+    {
+      "id": "d785257a-6c86-49f7-9d68-639c7f3659ff",
+      "content_id": "33d6b463-9a2d-493b-8163-5b668c02a555",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Previous work describes IRSp53-mediated actin polymerization driving membrane protrusion through out-of-plane forces, while bleb retraction depends on myosin contractility, mechanisms that differ from the current findings.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41 and C42 are supported by citations to multiple previous studies. These claims establish important context by contrasting the current findings with previous work, highlighting the novelty of the flattening mechanism described in this study. The citations appear appropriate and accurately represent prior work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:23:05.631381Z"
+    },
+    {
+      "id": "8bd14acd-67e9-4ca2-b5ac-d5f0494ed05f",
+      "content_id": "33d6b463-9a2d-493b-8163-5b668c02a555",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "IRSp53 regulates both evagination resorption and CLIC-GEEC endocytosis through different mechanisms, as evidenced by differential effects of specific IRSp53 mutants and spatial separation of evagination and endocytic sites.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C55 are supported by a combination of current experimental data (C54) and citations to previous work (C51-C53, C55). The observation that certain IRSp53 mutants impair endocytosis but not evagination resorption (C54) provides strong evidence for distinct mechanisms. The spatial separation of sites (C55) further supports this conclusion.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:23:05.631381Z"
+    },
+    {
+      "id": "9eb346d4-d038-4b8a-a36d-fd39d2b2747f",
+      "content_id": "33d6b463-9a2d-493b-8163-5b668c02a555",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Cells use multiple mechanisms to respond to compression, including caveolae formation, CLIC-GEEC endocytosis, and the IRSp53-Rac1-Arp2/3 network for membrane flattening. The mechanism involves lamellipodial rather than filopodial actin architecture.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C58 integrate the current findings with previous work to present a comprehensive view of cellular responses to compression. C56 is supported by citations to previous work, C57 is supported by the current experimental data and citations, and C58 is a reasonable inference based on the lack of formin involvement and previous observations about IRSp53 and mDia recruitment.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:23:05.631381Z"
+    },
+    {
+      "id": "86429e17-abab-4caf-ab0f-755f91d9b32f",
+      "content_id": "33d6b463-9a2d-493b-8163-5b668c02a555",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The stretch/compression stimuli occur at the scale of seconds while resorption occurs at the scale of minutes. Potential physiological scenarios where this mechanism could be relevant include compressions in connective tissues, amnioserosa cell dynamics during Drosophila dorsal closure, wound responses, muscle contraction, and fibroblast migration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C59 is directly supported by experimental observations. Claims C60 and C61 are speculative but reasonable extrapolations supported by citations to relevant physiological contexts. These claims appropriately identify potential areas for future investigation while acknowledging that the relevance of the mechanism in these contexts remains to be explored.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:23:05.631381Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "8c8282d5-de9c-4e87-ab55-dd3599b35433",
+      "result_id": "852b08d9-35b0-49ab-ba8c-e24966fbc3fd"
+    },
+    {
+      "claim_id": "bb10d820-b557-404f-8df2-362fb822ea6e",
+      "result_id": "852b08d9-35b0-49ab-ba8c-e24966fbc3fd"
+    },
+    {
+      "claim_id": "8b52c8a4-6b21-4207-8123-760bd406e3e3",
+      "result_id": "852b08d9-35b0-49ab-ba8c-e24966fbc3fd"
+    },
+    {
+      "claim_id": "0e387f8d-eacc-48ad-b063-f416d731210d",
+      "result_id": "852b08d9-35b0-49ab-ba8c-e24966fbc3fd"
+    },
+    {
+      "claim_id": "e6e8381a-2ae8-46ac-b02f-66bfae0ce543",
+      "result_id": "852b08d9-35b0-49ab-ba8c-e24966fbc3fd"
+    },
+    {
+      "claim_id": "e436e6ed-11cb-41c6-bc95-3a375c61a2bd",
+      "result_id": "6f5e936f-d992-4d81-b41c-eb08e873c1b9"
+    },
+    {
+      "claim_id": "68ea93f1-5cbf-4209-b7df-c625946f9e06",
+      "result_id": "6f5e936f-d992-4d81-b41c-eb08e873c1b9"
+    },
+    {
+      "claim_id": "722a2014-8f61-4898-9f56-2839fc59ae92",
+      "result_id": "6f5e936f-d992-4d81-b41c-eb08e873c1b9"
+    },
+    {
+      "claim_id": "67013747-823c-45dc-b734-cc9a6652ba43",
+      "result_id": "6f5e936f-d992-4d81-b41c-eb08e873c1b9"
+    },
+    {
+      "claim_id": "4ce01b43-41a6-4953-a585-8e1cdcf9c812",
+      "result_id": "6f5e936f-d992-4d81-b41c-eb08e873c1b9"
+    },
+    {
+      "claim_id": "5778956f-fdfb-40ca-a1b3-08f0b4ceefdf",
+      "result_id": "6f5e936f-d992-4d81-b41c-eb08e873c1b9"
+    },
+    {
+      "claim_id": "c50dff5d-00df-466e-b26e-de35b2474117",
+      "result_id": "6f5e936f-d992-4d81-b41c-eb08e873c1b9"
+    },
+    {
+      "claim_id": "7e5504aa-53fe-43b9-946b-c381e300cfbf",
+      "result_id": "6f5e936f-d992-4d81-b41c-eb08e873c1b9"
+    },
+    {
+      "claim_id": "dabe7d9d-016d-48b9-9000-74a131b454b4",
+      "result_id": "3e1d2567-7a3a-433c-89b2-9732e17d96c9"
+    },
+    {
+      "claim_id": "0475f80c-b90c-4306-9b99-cf0d191d277a",
+      "result_id": "3e1d2567-7a3a-433c-89b2-9732e17d96c9"
+    },
+    {
+      "claim_id": "5c0dcfd3-d4c7-4ece-9919-3826a0bf4d1a",
+      "result_id": "3e1d2567-7a3a-433c-89b2-9732e17d96c9"
+    },
+    {
+      "claim_id": "11217cfb-5082-4a24-a2a5-ca1ccdcd0e14",
+      "result_id": "3e1d2567-7a3a-433c-89b2-9732e17d96c9"
+    },
+    {
+      "claim_id": "78873066-33c4-4cb1-92ff-f96a343e0657",
+      "result_id": "3e1d2567-7a3a-433c-89b2-9732e17d96c9"
+    },
+    {
+      "claim_id": "8ea4008a-a05c-4939-bf7f-7d71db0cbc64",
+      "result_id": "3e1d2567-7a3a-433c-89b2-9732e17d96c9"
+    },
+    {
+      "claim_id": "01fb43d5-b9bb-4c6f-88ee-6ecd93271da7",
+      "result_id": "3e1d2567-7a3a-433c-89b2-9732e17d96c9"
+    },
+    {
+      "claim_id": "9b5ed7ee-6934-4bb1-8b49-af5e4e38c1c9",
+      "result_id": "3e1d2567-7a3a-433c-89b2-9732e17d96c9"
+    },
+    {
+      "claim_id": "6ef60df4-9ba8-475d-bb86-955163e66510",
+      "result_id": "3e1d2567-7a3a-433c-89b2-9732e17d96c9"
+    },
+    {
+      "claim_id": "d586f973-7a65-4c3f-836d-a2159d6d5029",
+      "result_id": "ea495e65-07cb-4d71-ba39-eb8518645d9b"
+    },
+    {
+      "claim_id": "06f18464-8154-487e-98d9-e7178b2ea4ef",
+      "result_id": "ea495e65-07cb-4d71-ba39-eb8518645d9b"
+    },
+    {
+      "claim_id": "bee3ea05-bdce-478f-9a59-4c2360fad8fb",
+      "result_id": "ea495e65-07cb-4d71-ba39-eb8518645d9b"
+    },
+    {
+      "claim_id": "34ddb524-e889-4991-9d43-4d8786c76061",
+      "result_id": "1cbed94f-920f-4a31-9d82-979bd0719f3d"
+    },
+    {
+      "claim_id": "7133448a-562d-41e9-9d94-7fe0c964a02a",
+      "result_id": "1cbed94f-920f-4a31-9d82-979bd0719f3d"
+    },
+    {
+      "claim_id": "a8271542-b491-4dd9-87ae-d16b63506fb9",
+      "result_id": "1cbed94f-920f-4a31-9d82-979bd0719f3d"
+    },
+    {
+      "claim_id": "4c903175-0e63-4809-aaa1-c0f040067793",
+      "result_id": "36b1c694-270c-44f3-ab9f-8611565b9208"
+    },
+    {
+      "claim_id": "86e09702-1b66-4411-8a16-593b6a604f1f",
+      "result_id": "36b1c694-270c-44f3-ab9f-8611565b9208"
+    },
+    {
+      "claim_id": "e94f37c0-571c-4551-83d9-441c3b2dded2",
+      "result_id": "36b1c694-270c-44f3-ab9f-8611565b9208"
+    },
+    {
+      "claim_id": "15da45d4-ec22-4219-813e-c3f215410656",
+      "result_id": "36b1c694-270c-44f3-ab9f-8611565b9208"
+    },
+    {
+      "claim_id": "32c15e04-089b-434e-8c73-ba0bb82e6009",
+      "result_id": "36b1c694-270c-44f3-ab9f-8611565b9208"
+    },
+    {
+      "claim_id": "64047896-d74d-4216-921b-c57d4afded43",
+      "result_id": "a085c7d8-77b9-4c45-bd32-2301e686b971"
+    },
+    {
+      "claim_id": "5b27d8fc-8619-4d96-bdfb-989a78286db6",
+      "result_id": "a085c7d8-77b9-4c45-bd32-2301e686b971"
+    },
+    {
+      "claim_id": "90c1a43c-6703-4630-bffc-fdd51da9ecbb",
+      "result_id": "a085c7d8-77b9-4c45-bd32-2301e686b971"
+    },
+    {
+      "claim_id": "a6779e4c-97f4-4958-95c2-ae9db7c31978",
+      "result_id": "ad18ca2a-68e9-467b-a907-ca4f7d145331"
+    },
+    {
+      "claim_id": "d330680b-2b1b-4bd1-bdd1-9e3d8f815213",
+      "result_id": "ad18ca2a-68e9-467b-a907-ca4f7d145331"
+    },
+    {
+      "claim_id": "c1c06a43-6994-4314-9506-2da268e52ee5",
+      "result_id": "ad18ca2a-68e9-467b-a907-ca4f7d145331"
+    },
+    {
+      "claim_id": "8c63f00e-981d-47bf-a033-5d3e97952517",
+      "result_id": "168a310e-75e3-4e15-9498-860c228d0820"
+    },
+    {
+      "claim_id": "f420df68-b5a6-4057-a76c-e0605b0644ec",
+      "result_id": "63e8933f-e8fe-4cc7-952c-49d82ade5447"
+    },
+    {
+      "claim_id": "d783fd51-9399-4d34-9960-e2dddcb4bcbd",
+      "result_id": "63e8933f-e8fe-4cc7-952c-49d82ade5447"
+    },
+    {
+      "claim_id": "5f934544-9882-4af2-a555-8e3440ee79ce",
+      "result_id": "2d1ff4e8-5ddf-4fd5-9098-ee868f4acdcd"
+    },
+    {
+      "claim_id": "fda17a40-c676-4915-9b90-485c6ac88343",
+      "result_id": "2d1ff4e8-5ddf-4fd5-9098-ee868f4acdcd"
+    },
+    {
+      "claim_id": "d049feb6-4df5-4621-9433-5814882c1237",
+      "result_id": "2d1ff4e8-5ddf-4fd5-9098-ee868f4acdcd"
+    },
+    {
+      "claim_id": "d9d1cb3b-260b-40a7-aa24-c0b7f8cf51f3",
+      "result_id": "54145b31-dd2d-4bc8-bb56-9f10ac8d5557"
+    },
+    {
+      "claim_id": "3d191f09-fd1d-4498-9bcb-2b1f21ef2044",
+      "result_id": "54145b31-dd2d-4bc8-bb56-9f10ac8d5557"
+    },
+    {
+      "claim_id": "f0f8a3b9-e336-45a2-af17-14d0a1533324",
+      "result_id": "d785257a-6c86-49f7-9d68-639c7f3659ff"
+    },
+    {
+      "claim_id": "2eac1432-ce6a-45fa-9a9b-08b802db708f",
+      "result_id": "d785257a-6c86-49f7-9d68-639c7f3659ff"
+    },
+    {
+      "claim_id": "981fd930-b708-4f65-96bb-83c70fa5f9b1",
+      "result_id": "8bd14acd-67e9-4ca2-b5ac-d5f0494ed05f"
+    },
+    {
+      "claim_id": "5d64c833-bfa3-4dd6-9075-3bb05d3adb3c",
+      "result_id": "8bd14acd-67e9-4ca2-b5ac-d5f0494ed05f"
+    },
+    {
+      "claim_id": "7c559793-7489-4247-b9ae-2a70abc857b7",
+      "result_id": "8bd14acd-67e9-4ca2-b5ac-d5f0494ed05f"
+    },
+    {
+      "claim_id": "580c3577-4caa-434f-abe9-e59d9ca9b8b5",
+      "result_id": "8bd14acd-67e9-4ca2-b5ac-d5f0494ed05f"
+    },
+    {
+      "claim_id": "c2c37499-f11d-4523-9fe5-6ebdc0c0a78f",
+      "result_id": "8bd14acd-67e9-4ca2-b5ac-d5f0494ed05f"
+    },
+    {
+      "claim_id": "a4cf22d3-9bd0-449b-ac93-876d0d889456",
+      "result_id": "9eb346d4-d038-4b8a-a36d-fd39d2b2747f"
+    },
+    {
+      "claim_id": "80765f92-3902-4fd8-857e-3daaf9a5dc3f",
+      "result_id": "9eb346d4-d038-4b8a-a36d-fd39d2b2747f"
+    },
+    {
+      "claim_id": "076ae5ab-bec9-4d76-aea5-821c7982564e",
+      "result_id": "9eb346d4-d038-4b8a-a36d-fd39d2b2747f"
+    },
+    {
+      "claim_id": "6b90b8c0-fde5-46d6-afd1-7cdcec2b1875",
+      "result_id": "86429e17-abab-4caf-ab0f-755f91d9b32f"
+    },
+    {
+      "claim_id": "d312ca44-a0e1-4725-b364-d326b258f50e",
+      "result_id": "86429e17-abab-4caf-ab0f-755f91d9b32f"
+    },
+    {
+      "claim_id": "e437606d-0195-4775-8568-ee58288d95f9",
+      "result_id": "86429e17-abab-4caf-ab0f-755f91d9b32f"
+    }
+  ],
+  "comparisons": []
+}

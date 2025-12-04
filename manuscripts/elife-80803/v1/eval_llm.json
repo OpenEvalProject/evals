@@ -1,0 +1,549 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "BMP signaling establishes the directive axis in Nematostella vectensis during gastrulation, forming a pSMAD1/5 gradient that patterns this secondary body axis, in contrast to the maternally determined oral-aboral axis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5 are well-supported by prior literature citations and immunofluorescence data showing pSMAD1/5 gradients (Figure 1C-D). These claims establish the conserved role of BMP signaling in axis patterning and the developmental timing of directive axis formation in Nematostella.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "The BMP signaling network in Nematostella involves spatially restricted expression of BMP ligands (bmp2/4, bmp5-8, gdf5-like) and antagonists (chordin, gremlin, rgm) on opposite sides of the directive axis, with Chordin acting as a BMP2/4/BMP5-8 shuttle and Gremlin as a GDF5-like antagonist.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C11 are supported by citations to prior work (Genikhovich et al., 2015; Rentzsch et al., 2006; Lecl\u00e8re and Rentzsch, 2014) establishing the expression patterns and functional roles of these BMP network components. This represents established prior knowledge rather than new findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C12",
+      "C13"
+    ],
+    "result": "Knockdown of BMP signaling components results in radialization and mesentery defects, with complete loss of the gradient (bmp2/4, bmp5-8, or chordin KD) causing failure to form mesenteries, while partial disruption (gdf5-l or gremlin KD) leads to abnormal mesentery formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C13 are supported by citations to prior functional studies (Genikhovich et al., 2015; Lecl\u00e8re and Rentzsch, 2014). These establish the phenotypic consequences of BMP pathway disruption and provide context for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "ChIP-seq analysis identified 68 direct pSMAD1/5 target genes at late gastrula and 208 at 4d planula stages, with 24 genes bound at both stages, and approximately half of the peaks located within previously published enhancers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C18 are supported by ChIP-seq data presented in Figure 1E and Figure 1\u2014figure supplement 1, with appropriate biological replicates. The overlap with published enhancers (Schwaiger et al., 2014) provides validation. This represents a major technical achievement and dataset.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "BMP response elements (BREs) are enriched at pSMAD1/5 binding sites, with 22/24 genes bound at both developmental stages containing BRE motifs, plus 13 gastrula-specific and 20 planula-specific targets with BREs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C22 are supported by MEME-ChIP motif analysis of the ChIP-seq data. The identification of conserved BRE motifs validates the specificity of pSMAD1/5 binding and provides mechanistic insight into direct transcriptional regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Key developmental regulators including hox genes (hoxB, hoxD, hoxE), gbx, and BMP pathway components (chordin, gremlin, rgm) are direct pSMAD1/5 targets, but BMP ligand genes (bmp2/4, bmp5-8, gdf5-like) are not.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C25 are supported by ChIP-seq data identifying these genes as direct targets. The absence of BMP ligands as direct targets (C25) is notable and suggests indirect regulation, which is an important mechanistic finding distinguishing Nematostella from other systems.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "RNA-seq analysis of BMP2/4 and GDF5-like morphants revealed that 139 direct pSMAD1/5 targets are differentially expressed (padj\u22640.05), with 64 showing >2-fold changes, and 67.3% of BRE-containing targets being differentially expressed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C30 are supported by RNA-seq data with appropriate replicates (Figure 1\u2014figure supplement 2). The validation of known targets (chordin, rgm upregulated; gbx, hox genes, gremlin downregulated) confirms data quality. The high proportion of BRE-containing genes being differentially expressed validates functional relevance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C31",
+      "C73",
+      "C74"
+    ],
+    "result": "Transcription factors and signaling molecules are strongly enriched among direct BMP targets compared to random genes, suggesting BMP signaling regulates a second tier of developmental regulators rather than structural genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31, C73-C74 are supported by functional annotation analysis shown in Figure 1F-G. The enrichment of regulatory genes is statistically demonstrated and provides important insight into the hierarchical organization of BMP-dependent gene regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C32"
+    ],
+    "result": "Several newly identified pSMAD1/5 targets show bilateral expression patterns (otxB, tbx2/3, tbx20.1, p63, dusp1, bmprII, c-ski, morn, pik, zswim4-6), suggesting roles in directive axis patterning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C32 is supported by in situ hybridization data in Figure 2 showing bilateral expression patterns. This identifies novel candidate genes for directive axis patterning, though functional validation is needed to confirm their roles.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Comparative analysis identified 103 conserved BMP targets between at least two species (Nematostella, Drosophila, Xenopus), with 4-8 shared by all three, and enrichment for transcription factors and signaling molecules among conserved targets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C36 are supported by bioinformatic analysis using reciprocal BLAST (Figure 3B-C). The methodology is appropriate, though the low number of three-way conserved targets may reflect orthology assignment challenges or genuine evolutionary divergence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C37"
+    ],
+    "result": "Multiple Hox genes are direct BMP targets in Nematostella (hoxB, hoxD, hoxE), Drosophila (dfd, pb, antp), and Xenopus (multiple hox genes), though cnidarian-bilaterian Hox orthology is unclear.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C37 is supported by ChIP-seq data from three species and appropriate citations regarding Hox gene evolution (Chourrout et al., 2006; Genikhovich and Technau, 2017). The caveat about orthology is important and appropriately acknowledged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C38",
+      "C39"
+    ],
+    "result": "zswim4-6 is a highly enriched pSMAD1/5 target shared between Nematostella and Xenopus, encoding a zinc-finger SWIM-domain protein clustering with vertebrate ZSWIM4/5/6.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C39 are supported by ChIP-seq data (Figure 3C) and phylogenetic analysis (Figure 4A). The phylogenetic tree provides strong evidence for orthology relationships, making zswim4-6 a compelling candidate for functional analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "zswim4-6 expression follows BMP signaling dynamics: initiating at early gastrula around the blastopore, becoming restricted to the high pSMAD1/5 side of the directive axis at late gastrula (opposite to chordin), and localizing to mesenteries at late planula.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C43 are supported by in situ hybridization data (Figure 4B-F'). The spatial and temporal expression pattern closely correlates with BMP signaling activity, providing strong circumstantial evidence for BMP-dependent regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C44",
+      "C45"
+    ],
+    "result": "ZSWIM4-6 is a nuclear protein, as demonstrated by nuclear localization of full-length ZSWIM4-6-EGFP and cytoplasmic retention of ZSWIM4-6\u0394NLS-EGFP lacking the predicted nuclear localization signal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C45 are supported by fluorescence microscopy of transgenic embryos (Figure 4G-I). The NLS deletion experiment provides strong evidence for nuclear localization being dependent on the predicted NLS, confirming ZSWIM4-6 as a nuclear protein.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C46",
+      "C47"
+    ],
+    "result": "ZSWIM4-6-EGFP protein shows rapid turnover, with nuclear fluorescence decreasing from early blastula to barely detectable at 24 hpf, in contrast to stable cytoplasmic EGFP signal lasting several days.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C47 are supported by fluorescence microscopy data (Figure 4J-L). The rapid turnover is striking and suggests active degradation, though the mechanism remains unclear. This observation is important for interpreting overexpression experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C48",
+      "C49"
+    ],
+    "result": "zswim4-6 expression is abolished by bmp2/4 and chordin knockdown but not strongly affected by gdf5-like or gremlin knockdown, suggesting dependence on BMP2/4-mediated signaling or robustness to mild pSMAD1/5 alterations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C49 are supported by in situ hybridization data (Figure 5B-F'). The differential response to different BMP pathway perturbations is interesting, though the interpretation regarding ligand specificity vs. threshold effects requires further investigation (addressed in C50).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C50"
+    ],
+    "result": "Both Alk2 and Alk3/6 type I BMP receptors must be knocked down to abolish zswim4-6 transcription, suggesting receptor heterodimerization is required for BMP signal transduction in this context.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C50 is supported by receptor knockdown experiments (Figure 5\u2014figure supplement 1) and citation to similar findings in zebrafish (Tajer et al., 2021). The data argue against strict ligand-receptor specificity and support a threshold model for zswim4-6 activation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "zswim4-6 knockdown causes endoderm compartmentalization defects, with the HoxE-expressing mesenterial chamber failing to reach the pharynx, resulting in fusion of neighboring segments and formation of three instead of four tentacles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C53 are supported by morphological and immunofluorescence analysis (Figure 6A-B''). The phenotype is specific and reproducible, demonstrating that zswim4-6 is functionally important for mesentery development, though the mechanism remains to be determined.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C54",
+      "C55"
+    ],
+    "result": "zswim4-6 knockdown flattens the endodermal pSMAD1/5 gradient (reducing peak levels) while strongly elevating ectodermal pSMAD1/5 activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C55 are supported by quantitative immunofluorescence analysis (Figure 6C-D'). The tissue-specific effects on the pSMAD1/5 gradient are striking and suggest ZSWIM4-6 has distinct roles in different germ layers. Statistical analysis with LOESS curves and confidence intervals strengthens the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C56",
+      "C57"
+    ],
+    "result": "zswim4-6 mRNA overexpression does not significantly change the endodermal pSMAD1/5 gradient but significantly reduces ectodermal pSMAD1/5 levels in the high BMP signaling region.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C57 are supported by quantitative immunofluorescence (Figure 6E-F'). The effects are opposite to knockdown in the ectoderm, supporting a functional role. However, the rapid ZSWIM4-6-EGFP turnover (C46) may limit the strength of overexpression effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C58",
+      "C59"
+    ],
+    "result": "Zebrafish zswim5 overexpression reduces the pSmad1/5/9 gradient amplitude, and co-injection of ZSWIM4-6MO with GDF5lMO partially rescues the pSMAD1/5 reduction caused by GDF5lMO alone, supporting ZSWIM4-6-mediated pSMAD1/5 destabilization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C59 are supported by immunofluorescence data in zebrafish (Figure 6\u2014figure supplement 2) and Nematostella (Figure 6\u2014figure supplement 3). The cross-species validation and genetic interaction data provide strong support for a conserved role in pSMAD1/5 destabilization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C60",
+      "C61"
+    ],
+    "result": "Expression domains of BMP-repressed genes (bmp2/4, chordin, rgm) are expanded in zswim4-6 morphants, with expansion confirmed in CRISPR/Cas9 mosaic knockouts, particularly evident in ectodermal expansion of chordin and rgm.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C61 are supported by in situ hybridization in morphants (Figure 6G-H', Figure 6\u2014figure supplement 4) and CRISPR knockouts (Figure 6\u2014figure supplement 5). The independent validation with CRISPR strengthens confidence in the morpholino results and rules out off-target effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C62"
+    ],
+    "result": "zswim4-6 knockdown causes strong upregulation of zswim4-6 transcription, especially in the ectoderm, suggesting either auto-repression or response to increased ectodermal pSMAD1/5.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C62 is supported by in situ hybridization (Figure 6I-I'). The upregulation is consistent with either direct auto-repression or indirect effects via elevated pSMAD1/5 (C55). The data do not distinguish between these mechanisms, appropriately noted by the authors.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C63",
+      "C64"
+    ],
+    "result": "Expression domains of BMP-activated genes gdf5-like and gremlin are expanded in the ectoderm of zswim4-6 morphants, reflecting the flattened endodermal and expanded ectodermal pSMAD1/5 gradient.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C64 are supported by in situ hybridization (Figure 6J-K'). The expansion of BMP-activated genes is consistent with the elevated ectodermal pSMAD1/5 (C55) and provides further evidence that ZSWIM4-6 loss affects the BMP signaling gradient.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C65",
+      "C66"
+    ],
+    "result": "zswim4-6 overexpression causes mild reduction of bmp2/4 and chordin expression domains, with the normally sharp chordin expression boundary becoming diffuse.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C66 are supported by in situ hybridization (Figure 6L-M'). The effects are opposite to knockdown but milder, consistent with the rapid ZSWIM4-6 turnover (C46). The diffuse chordin boundary is a notable qualitative change suggesting altered precision of gene expression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C67",
+      "C68"
+    ],
+    "result": "zswim4-6 overexpression reduces gdf5-like expression on the strong signaling side and reduces gremlin expression, reflecting the behavior of the pSMAD1/5 gradient.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C68 are supported by in situ hybridization (Figure 6O-P'). The reduction of BMP-activated genes is consistent with reduced ectodermal pSMAD1/5 upon overexpression (C57), providing coherent evidence for ZSWIM4-6's role in modulating BMP signaling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "ZSWIM4-6 binds to the pSMAD1/5 binding site in the chordin regulatory region (12.13-fold enrichment) but not the gremlin regulatory region, suggesting ZSWIM4-6 acts as a co-repressor for pSMAD1/5 targets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C69-C72 are based on low-input ChIP-qPCR from mosaic F0 transgenics (Figure 6Q). While the differential enrichment at chordin vs. gremlin is suggestive, the analysis is limited to two loci, uses mosaic expression, and lacks genome-wide validation. The statistical test (two-tailed t-test, n=4) is appropriate but the assumption of normality is not validated. The co-repressor hypothesis (C72) is a reasonable inference but requires additional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C75"
+    ],
+    "result": "Multiple members of Wnt, MAPK, Hedgehog, and Notch signaling pathways are among BMP targets, indicating extensive coordination between signal transduction cascades during embryonic development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C75 is supported by the ChIP-seq data identifying these pathway components. This represents an important systems-level insight into developmental signaling network architecture, though functional validation of these interactions is not provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C76"
+    ],
+    "result": "pSMAD1/5 directly controls transcription of multiple BMP network components (chordin, gremlin, bmprII, rgm, smad1/5, smad4) and associated regulators (e2f4, morn, tob2, c-ski, tld1-like, bmp1-like, dusp1, dusp7).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C76 is supported by ChIP-seq data identifying these genes as direct targets. This demonstrates extensive autoregulation and feedback within the BMP signaling network, which is important for understanding gradient formation and maintenance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C77",
+      "C78"
+    ],
+    "result": "BMP ligand genes (bmp2/4, bmp5-8, gdf5-like) are not directly bound by pSMAD1/5 in Nematostella, unlike in Xenopus and Drosophila, suggesting BMP signaling-dependent regulation of these ligands is indirect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C78 are supported by the absence of these genes in ChIP-seq data and comparison with other species (Deignan et al., 2016; Stevens et al., 2017). This represents an important mechanistic difference between Nematostella and bilaterians, though the indirect regulatory mechanism remains unknown.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C79"
+    ],
+    "result": "The endodermal staggered expression of hox genes and gbx is directly controlled by nuclear pSMAD1/5, as demonstrated by ChIP-seq showing these genes are direct BMP targets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C79 is supported by ChIP-seq data showing direct pSMAD1/5 binding to hox genes and gbx. This provides a molecular mechanism linking BMP signaling to the regionalization of the directive axis and mesentery formation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R32",
+    "claim_ids": [
+      "C80",
+      "C81"
+    ],
+    "result": "RNAi of individual hox genes (hoxE, hoxD, hoxB) or gbx causes loss of corresponding mesentery pairs, while Pbx knockdown eliminates all mesenteries, phenocopying BMP signaling loss.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C81 are supported by citation to He et al., 2018. This prior work establishes the functional importance of these BMP target genes in mesentery formation, providing context for the current ChIP-seq findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R33",
+    "claim_ids": [
+      "C82"
+    ],
+    "result": "Arp6 (neuroD) is directly suppressed by BMP signaling, as shown by ChIP-seq and RNA-seq data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C82 is supported by ChIP-seq showing pSMAD1/5 binding and RNA-seq showing upregulation upon BMP knockdown. This provides a molecular link between BMP signaling and the bilateral expression of GLWamide+ neurons.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R34",
+    "claim_ids": [
+      "C83",
+      "C84"
+    ],
+    "result": "Nematostella ZSWIM4-6 is a nuclear protein with paralogs ZSWIM4, ZSWIM5, and ZSWIM6 conserved in Bilateria.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C84 are supported by fluorescence microscopy (Figure 4G) and phylogenetic analysis (Figure 4A). This establishes the evolutionary conservation of ZSWIM4-6 and its nuclear localization, which are important for interpreting its function.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R35",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Vertebrate zswim4-6 genes are expressed in the forebrain with distinct patterns, and mutations are associated with neurological phenotypes (abnormal striatal morphology, acute myelogenous leukemia, acromelic frontonasal dysostosis, schizophrenia).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C88 are supported by citations to prior literature (Chang et al., 2020, 2021; Tischfield et al., 2017; Walter et al., 2012; Smith et al., 2014). This establishes the biomedical relevance of ZSWIM genes and provides context for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R36",
+    "claim_ids": [
+      "C89",
+      "C90"
+    ],
+    "result": "zswim4/5/6 genes are direct BMP targets in frog embryos, mouse hair follicles, and zebrafish, and zebrafish zswim5 is downregulated in bmp7-/- embryos.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C90 are supported by citations to prior work (Genander et al., 2014; Stevens et al., 2017; Greenfeld et al., 2021). This establishes the evolutionary conservation of zswim genes as BMP targets across multiple species.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R37",
+    "claim_ids": [
+      "C91"
+    ],
+    "result": "Vertebrate Zswim4 attenuates BMP signaling by directly interacting with nuclear SMAD1 and promoting its ubiquitination and degradation in frog embryos and mammalian cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C91 is supported by citation to Wang et al., 2022. This recent work provides a mechanistic framework for interpreting the Nematostella zswim4-6 results and suggests functional conservation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R38",
+    "claim_ids": [
+      "C92"
+    ],
+    "result": "ZSWIM4-6 has a conserved function as a destabilizer of nuclear SMAD1/5, based on effects of zswim4-6 manipulation on pSMAD1/5 gradients in Nematostella and zebrafish zswim5 overexpression effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C92 is supported by experimental data in Nematostella (C54-C57) and zebrafish (C58), along with comparison to vertebrate data (C91). The cross-species validation and consistency with the vertebrate mechanism provide strong support for functional conservation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R39",
+    "claim_ids": [
+      "C93",
+      "C94"
+    ],
+    "result": "In zswim4-6 knockdown, BMP-repressed genes are de-repressed and expand expression despite increased nuclear pSMAD1/5, while BMP-activated genes are only weakly affected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C94 are supported by in situ hybridization and immunofluorescence data (C60-C64). This paradoxical observation\u2014expansion of repressed genes despite higher pSMAD1/5\u2014is striking and suggests ZSWIM4-6 is specifically required for BMP-mediated repression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R40",
+    "claim_ids": [
+      "C95"
+    ],
+    "result": "ZSWIM4-6 acts as a co-repressor of pSMAD1/5 targets, based on differential binding to chordin (repressed) vs. gremlin (activated) regulatory regions and the de-repression of BMP-repressed genes in zswim4-6 knockdown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C95 integrates ChIP data (C69-C72) and expression data (C93-C94). While the model is plausible and supported by multiple lines of evidence, the ChIP analysis is limited to two loci and the mechanism of selective co-repressor activity is not demonstrated. Additional genome-wide ChIP-seq and biochemical validation are needed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R41",
+    "claim_ids": [
+      "C96"
+    ],
+    "result": "ZSWIM4-6 is the first example of a nuclear protein modulating the pSMAD1/5 gradient in a non-bilaterian organism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C96 is supported by the novelty of the findings in the context of cnidarian research. While extracellular BMP network components have been studied in Nematostella, this is indeed the first characterization of a nuclear modulator of the pSMAD1/5 gradient in cnidarians.",
+    "result_type": "MAJOR"
+  }
+]

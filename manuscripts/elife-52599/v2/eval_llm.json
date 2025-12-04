@@ -1,0 +1,313 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "The hierarchical temporal prediction model consists of four stacked feedforward single-hidden-layer convolutional neural networks trained on natural videos. The first stack predicts the immediate future frame (40ms) from the previous 5 frames (200ms), and each subsequent stack predicts future hidden-unit activity of the stack below. L1 regularization was applied to weights, and the model used 50, 100, 200, and 400 convolutional units in successive stacks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C25 provide a clear and detailed description of the model architecture, training procedure, and data sources. The methodology is well-specified with concrete parameters (frame rates, stack sizes, regularization) and is supported by Figure 2. The training data and preprocessing steps are adequately described.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "The first stack of the model produces units with center-surround receptive fields characteristic of retinal and LGN neurons. These units show ON or OFF blob-like structures with opposing surrounds, and can be either small (non-polarity-switching) resembling parvocellular neurons or large (polarity-switching) resembling magnocellular neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C29 are well-supported by the data shown in Figure 3 and comparisons to cited neurophysiological literature. The model successfully reproduces known properties of early visual system neurons, with appropriate citations to classic work (Barlow, 1953; Kuffler, 1953; Shapley and Perry, 1986). The characterization is both qualitative and quantitative (Figure 3b).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Decreasing L1-regularization strength causes model RFs to transition from center-surround to Gabor-like tuning. This balance between prediction optimality and wiring efficiency may explain species differences in retinal organization, where mice and rabbits have oriented RFs while cats and macaques have center-surround RFs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C30 is directly supported by Figure 3c showing the effect of regularization. Claims C31-C32 are speculative but well-grounded in the model results and supported by appropriate citations (Scholl et al., 2013). The speculation is clearly identified and provides a testable hypothesis linking model behavior to biological variation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "The second stack produces units with Gabor-like spatial RFs resembling V1 simple cells. These units show orientation, spatial frequency, and temporal frequency selectivity, with some direction selectivity. Responses to optimal gratings oscillate with grating phase, characteristic of simple cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C37 are well-supported by Figure 4 and appropriate citations to classic V1 literature (Hubel and Wiesel, 1959-1968; DeAngelis et al., 1993; Movshon et al., 1978a). The characterization includes both qualitative (RF structure) and quantitative (tuning curves) evidence. The comparison to biological data is appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Units in the third and fourth stacks show orientation, spatial frequency, and temporal frequency tuning, but most resemble complex cells rather than simple cells. These units show phase invariance to optimal gratings (low modulation ratios) and lack discernible RF structure, characteristic of V1 and extrastriate complex cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C42 are supported by Figure 5 and appropriate citations (Hubel and Wiesel, 1965; Hu et al., 2018; Movshon et al., 1978b; Rust et al., 2005; Schwartz et al., 2006; Skottun et al., 1991). The use of modulation ratio as a criterion for simple vs. complex cells is standard and well-cited. The progression from simple to complex cells across stacks is clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Quantitative comparison of model units to macaque V1 data shows bimodal distribution of modulation ratios, orientation selectivity (though weaker in the model), and progression from simple to complex cells across stacks. Simple cells are more direction-tuned than complex cells. This progression resembles the biological pathway from retina/LGN through V1 layers to extrastriate areas.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C50 are supported by detailed quantitative comparisons in Figure 6 with appropriate statistical measures (modulation ratio, circular variance, orientation bandwidth, direction selectivity indices). The comparisons to published V1 data (Ringach et al., 2002; Kim and Freeman, 2016) are appropriate. The model shows weaker orientation tuning than biology, which is acknowledged. The progression across stacks is clearly demonstrated in Figure 7.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "The model produces both component-selective units (stacks 2-4) and pattern-selective units (stack 4 only). However, only 8% of direction-selective units in stack 4 are pattern-motion selective, lower than the ~23% observed in MT.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C57 are supported by Figure 8 and appropriate citations to pattern motion literature (Movshon et al., 1985; Rust et al., 2006; Smith et al., 2005). The model successfully produces pattern-selective units, though at lower proportions than MT. The authors acknowledge this limitation and discuss it further. The characterization using plaid stimuli is standard and appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C58",
+      "C59"
+    ],
+    "result": "Training on videos with additional panning motion substantially increased direction-selective units and pattern-motion-selective units (to 19 units). The hierarchical temporal prediction model is claimed to be the first normative model producing pattern-motion selectivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C58 is supported by the described augmentation experiment, though detailed results are not shown in main figures. Claim C59 about novelty is supported by appropriate comparison to prior phenomenological models (Rust et al., 2006; Simoncelli and Heeger, 1998). However, the claim of being 'first' should be evaluated cautiously as it depends on the definition of 'normative model.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Control experiments demonstrate that both hierarchy and temporal prediction are necessary for the observed tuning properties. A control model predicting present input could not produce simple or complex cells, and a non-hierarchical temporal prediction model cannot produce complex cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C62 are supported by control experiments described in the text and shown in supplementary figures (Figure 6\u2014figure supplements 3 and 4). The comparison to prior non-hierarchical work (Singer et al., 2018) is appropriate. The control model results clearly demonstrate the necessity of both components, though more detailed presentation of control results would strengthen the claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C63",
+      "C64"
+    ],
+    "result": "A control model with shuffled input weights lacked discernible RF structure and could not produce center-surround, simple cells, complex cells, or pattern-motion-selective cells. This demonstrates that the precise ordering of weights learned through temporal prediction is critical.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C64 are supported by control experiments shown in supplementary figures (Figure 6\u2014figure supplements 5 and 6). The shuffled-weight control is appropriate for demonstrating that learned structure, not just the presence of weights, is important. The quantitative comparisons (<1% simple cells, <1% complex cells relative to standard model) are clear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C65"
+    ],
+    "result": "Training on videos with shuffled frame order produced much fewer simple-cell-like (~4% relative to standard) and complex-cell-like units (~13% relative to standard), with no pattern-motion-selectivity. Center-surround spatial tuning remained but temporal structure was disrupted.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C65 is supported by the described control experiment. The results clearly demonstrate the importance of temporal structure in the training data. However, the lack of detailed figures for this control (only mentioned in text) slightly weakens the support. The preservation of spatial but not temporal structure is an important finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "For predicting V1 neural responses to dynamic stimuli, the temporal prediction model performed as well as the supervised VGG model and significantly better than BWT, PredNet, autoencoder, and slowness models. This establishes temporal prediction as a strong contender for an unsupervised model of V1 responses to natural stimuli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C68 are supported by Figure 9B with appropriate statistical tests (bootstrap, n=23 neurons, with reported p-values). The comparison is fair given the different nature of the models (supervised vs. unsupervised). The authors appropriately acknowledge that VGG has advantages (labeled data, more training data). The conclusion is appropriately cautious ('reasonable contender').",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C69",
+      "C70"
+    ],
+    "result": "The hierarchical temporal prediction model accounts for spatial and temporal tuning properties across the dorsal visual pathway from retina/LGN through V1 to pattern-selective cells, and can predict V1 neural responses to natural scenes as well as or better than other models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C70 are summary statements supported by the collective evidence from all prior results (Figures 3-9). The model successfully captures a wide range of phenomena across multiple levels of the visual system. The neural response prediction results (Figure 9) provide quantitative validation. The claims are appropriately qualified ('to some degree' for pattern-selective cells).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "The authors discuss biological implementation, noting agnosticism about whether features are hard-wired or learned, with retina likely more hard-wired and cortex involving learning. If learned, some neurons might represent prediction error. The model's architecture (no backpropagation across multiple layers) reduces biological plausibility concerns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C71-C74 are discussion points rather than results. C71 and C73 are supported by appropriate citations (Huberman et al., 2008; Kiorpes, 2015; Auksztulewicz et al., 2023; Fiser et al., 2016; Rubin et al., 2016). C72 is speculative. C74 makes a valid point about biological plausibility but doesn't provide evidence. These are reasonable interpretations but not empirical findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Future model improvements could include recurrent processing (to improve pattern-selectivity match to MT) and incorporating self-motion or eye movements in training videos. The panning experiment (C77) provides an experimentally testable prediction. Additional constraints beyond temporal prediction may refine features for specific behavioral goals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C78 are discussion points about future work. C75 is speculative but supported by citations (Pack et al., 2001; Rust et al., 2006). C76 is speculative. C77 is supported by the described augmentation experiment showing increased pattern-motion units. C78 is a reasonable caveat about the scope of the model. These are appropriate suggestions for future work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "The model generates several testable predictions distinguishing it from other frameworks: (1) unsupervised learning should depend on stimulus statistics without reinforcement, (2) feedforward projections should transmit predictive features not prediction error (vs. predictive coding), (3) feedback is not integral to perception (vs. predictive coding), (4) temporal structure is critical for both spatial and temporal tuning. Some predictions are supported by existing data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C89 present testable predictions. C82 and C89 cite supporting experimental evidence (Tanaka et al., 2006; Matteucci and Zoccolan, 2020). C83-C87 present clear distinctions from predictive coding with appropriate citations (Fabre-Thorpe, 2011; Thorpe et al., 1996; Crist et al., 2001; Gilbert et al., 2001). C88 is a specific prediction from the model. These predictions are logically derived from the model and appropriately qualified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Comparison to prior normative models shows that sparse coding/ICA models trained on static images cannot account for temporal aspects (C90-C92), SFA models can produce complex cells but not simple cells (C93-C95), predictive coding may not reproduce complex cells or pattern-motion sensitivity (C96-C97), hierarchical ICA models require explicit complex-cell mechanisms (C98-C100), and PredNet has not been shown to capture the full range of phenomena demonstrated here (C106-C107). The temporal prediction model produces both simple and complex cells with a single objective (C101-C105).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C107 provide a comprehensive comparison to prior work with appropriate citations throughout. The limitations of prior models are accurately characterized based on the cited literature. The advantages of the temporal prediction model (C101-C102, C105) are supported by the results. However, some claims about what prior models 'cannot' do (C91, C95, C97) should be interpreted cautiously as they may reflect implementation details rather than fundamental limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "Quantitative model comparison for neural response prediction shows temporal prediction performs comparably to VGG on images (C112) and as well as VGG on movies while outperforming other unsupervised models (C113). The authors appropriately caveat that implementation details matter (C108-C109) and that VGG is supervised with more training data (C110-C111, C114), concluding that temporal prediction is a leading contender among unsupervised principles (C115).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C115 are supported by Figure 9 with appropriate statistical tests. The caveats (C108-C109, C114) are important and appropriately stated. The distinction between supervised (VGG) and unsupervised models (C110-C111) is clearly made. The conclusion (C115) is appropriately qualified as 'leading contender' rather than claiming superiority. The comparison is fair and well-executed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "The study demonstrates that temporal prediction can be extended hierarchically (C118) to capture linear and nonlinear tuning features across multiple levels of the visual system (C119), addressing a gap in prior work (C116-C117). This suggests temporal prediction may be a fundamental coding principle (C122) with potential to explain features in other brain pathways (C120-C121).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C122 are summary and conclusion statements supported by the collective evidence. C116-C117 accurately characterize prior work with appropriate citations. C118-C119 are supported by the results presented throughout. C120-C122 are appropriately speculative conclusions about broader implications. The claims are well-supported but C120-C121 about broader applicability are necessarily speculative.",
+    "result_type": "MAJOR"
+  }
+]

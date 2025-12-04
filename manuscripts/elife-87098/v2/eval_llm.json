@@ -1,0 +1,399 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C33",
+      "C34"
+    ],
+    "result": "A genome-wide CRISPR screen using flow cytometry to detect phosphoRab10 levels in NIH-3T3 cells successfully identified multiple regulators of LRRK2 activity. The screen validated expected hits including Lrrk2, Rab10, Rabif, and Chm genes, confirming the technical success of the approach.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C5, C33, and C34 describe the development and validation of the screening methodology. The flow cytometry assay (C4) successfully identified regulators (C5), with expected positive controls (Lrrk2, Rab10, Rabif) showing the most significant impact (C33), and Chm also decreasing phosphoRab10 as predicted (C34). The validation of known regulators confirms the screen's technical validity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C58",
+      "C59",
+      "C62",
+      "C63",
+      "C66",
+      "C67"
+    ],
+    "result": "Rab12 knockout significantly decreased phosphoRab10 levels across multiple experimental systems. In NIH-3T3 cells, Rab12 knockout resulted in approximately fivefold decrease in phosphoRab10. In MEFs from Rab12 knockout mice, homozygous knockout showed 50% decrease in phosphoRab10, with the most pronounced effects observed in mouse lung tissue.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C58, C59, C62, C63, C66, and C67 collectively demonstrate consistent effects of Rab12 loss across multiple cell types and tissues. The quantitative data from NIH-3T3 cells (C59), MEFs (C62, C63), and mouse tissues (C66, C67) provide converging evidence. The magnitude of effects varies by system (5-fold in NIH-3T3, 50% in MEFs, strongest in lung), which is appropriately documented and suggests tissue-specific regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C60",
+      "C61"
+    ],
+    "result": "Unlike Rab12, loss of Rab29 did not alter phosphoRab10 levels in any tissue analyzed or in MEFs from Rab29 knockout mice, despite Rab29's ability to activate LRRK2 under overexpression conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60 and C61 establish an important contrast between Rab29 and Rab12. The citation to Kalogeropulou et al., 2020 (C60) provides evidence that Rab29 knockout has no effect on endogenous phosphoRab10 levels, while C61 notes that Rab29 can activate LRRK2 when overexpressed. This distinction is critical for establishing the unique physiological role of Rab12.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "The screen identified several additional positive regulators of LRRK2 function including Myh9, Cert1, Sptlc2, Ppp2r2a, Ppp1r35, and Nudcd3. These genes are involved in diverse cellular processes including ceramide synthesis (Sptlc2, Cert1), phosphatase regulation (Ppp2r2a), and primary cilia assembly (Myh9, Ppp1r35).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C35-C45 identify multiple positive regulators with validation by immunofluorescence microscopy (C35). However, the mechanistic connections are largely inferential (C36, C40, C43, C45). The discrepancy between Sptlc2 genetic knockout and chemical inhibition with myriocin (C39, C40) suggests complexity that requires further investigation. While the hits are validated, their functional roles in LRRK2 regulation remain to be fully established.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "The screen identified negative regulators of LRRK2 whose knockout hyperactivated phosphoRab10 levels, including genes involved in lysosomal acidification (Atp6v1A, Atp6v0c), autophagy (Hgs), mitochondrial function (Phb2, Atp5c), and kinase regulation (Csnk2b). These findings connect LRRK2 activity to lysosomal and mitochondrial stress.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C57 identify negative regulators with mechanistic rationale. The ATP6 proteins' role in lysosome acidification (C49) connects to known bafilomycin effects (C50). HGS/HRS involvement in autophagy (C51, C52), PHB1/2 in mitophagy (C53), and the inverse correlation between LRRK2 activity and mitochondrial turnover (C54) provide coherent biological context. The connection to lysosomal/mitochondrial stress (C57) is well-established in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Overexpression of GFP-Rab12 in A549 cells led to a tenfold increase in phosphoRab10 levels without changing LRRK2, PPM1H, or total Rab10 levels. This activation was specific to Rab12, as overexpression of Rab8A, Rab10, or Rab29 showed significantly less effect, with Rab29 producing approximately fivefold enhancement compared to Rab12's nearly twofold greater effectiveness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C73 demonstrate Rab12 specificity through direct comparison. The tenfold increase (C69) occurs without changes in other pathway components (C70), establishing that Rab12 acts on existing LRRK2. The comparative analysis (C71-C73) with quantitative differences between Rab proteins provides strong evidence for specificity. The data are internally consistent and supported by Figure 3.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C11"
+    ],
+    "result": "Rab12 overexpression increased phosphoRab10 levels with wild-type LRRK2 and pathogenic mutants G2019S and R1441C. The activation occurred despite these mutants having different baseline activities (G2019S ~2-fold, R1441C ~3-fold higher than wild-type).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C76 and C11 demonstrate that Rab12 activation is not specific to a particular LRRK2 form. The baseline activities of the mutants (C74, C75) are well-established from prior work (Steger et al., 2016), and the experimental data (C76, C11) show Rab12 can further activate all forms. This is important for therapeutic relevance to Parkinson's disease.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Quantitative proteomics data show that Rab12 is more abundant than Rab29 in most tissues. A549 cells contain approximately 134,000 Rab12 molecules and 25,000 Rab29 molecules per cell, compared to 5,000 LRRK2 molecules and 2.5 million Rab10 molecules.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C79 provide important quantitative context from the COPICA database. These abundance measurements support the physiological relevance of Rab12 over Rab29 (C77). The specific numbers (C78, C79) establish the stoichiometry of the system, showing that Rab12 is present at levels that could reasonably regulate the much less abundant LRRK2. This addresses a potential concern about physiological relevance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C10"
+    ],
+    "result": "Rab12 activation of LRRK2 did not require Rab12 phosphorylation. The non-phosphorylatable Rab12 S106A mutant retained full activation capability, while the phosphomimetic S106E mutant failed to increase LRRK2 phospho-S1292.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C82 and C10 demonstrate through phosphorylation site mutants that Rab12 acts in its non-phosphorylated form. The S106A mutant retaining activity (C81) and S106E failing to activate (C82) provide clear evidence. However, the authors appropriately note caution with phosphomimetic mutants (C83, C84), as these may not perfectly recapitulate phosphorylation. The conclusion is well-supported despite this caveat.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C9"
+    ],
+    "result": "The phosphoRab10 generated by Rab12 overexpression localized to perinuclear membrane compartments and was sensitive to wild-type PPM1H phosphatase but not catalytically inactive H153D mutant, indicating Rab12 activates LRRK2 through the canonical phosphorylation pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C87 and C9 establish that Rab12 acts through the known LRRK2 pathway. The perinuclear localization (C85) matches previous observations. The differential sensitivity to wild-type versus inactive PPM1H (C86) demonstrates that the phosphorylation is genuine and reversible by the known phosphatase. The inference that Rab12 acts through the canonical pathway (C87) is well-supported by these data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C88",
+      "C8"
+    ],
+    "result": "GFP-Rab12 overexpression failed to enhance phosphoRab10 levels in LRRK2 knockout A549 cells, demonstrating that Rab12's effect is LRRK2-dependent and not mediated through activation of another kinase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88 and C8 provide critical specificity control. The loss of Rab12 effect in LRRK2 knockout cells (C88) rules out alternative kinases and confirms LRRK2 dependence. This is a straightforward and well-controlled experiment that directly addresses mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C89"
+    ],
+    "result": "Cells lacking PPM1H phosphatase displayed full Rab12-induced enhancement of phosphoRab10 levels (approximately fivefold with or without PPM1H), ruling out the possibility that Rab12 acts by inhibiting phosphatase activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C89 addresses an alternative mechanism through a clear control experiment. The equivalent Rab12 effect in PPM1H knockout cells rules out phosphatase inhibition as the mechanism. This is important for establishing that Rab12 acts on the kinase side of the pathway.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C12"
+    ],
+    "result": "Rab12 levels regulate primary ciliogenesis downstream of LRRK2 Rab phosphorylation. Overexpression of GFP-Rab12 decreased ciliation in RPE cells after serum starvation, while Rab12 knockout in A549 cells increased the percentage of ciliated cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C94 and C12 demonstrate functional consequences of Rab12-mediated LRRK2 activation. The bidirectional effects (decreased ciliation with overexpression in C92, increased with knockout in C93) provide strong evidence for a regulatory role. This connects to established LRRK2 biology (C90, C91) and validates Rab12 as a bona fide LRRK2 regulator through a functional readout.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C13"
+    ],
+    "result": "AlphaFold modeling of LRRK2 Armadillo domain residues 1-550 with Rab12 revealed a third Rab binding site (Site #3). The top 5 structure models yielded pLDDT scores of 87.6, 87.5, 86.8, 87.4, and 86.4, indicating high-accuracy modeling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102, C103, and C13 describe computational prediction of a novel binding site. The pLDDT scores (C103) are below the 90 threshold for highest confidence but are still in the high-accuracy range. The prediction is validated by subsequent experimental data (mutagenesis and binding studies in later claims), which strengthens confidence in the model. The computational approach is appropriate and well-executed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Mutagenesis of putative Site #3 residues in full-length LRRK2 affected kinase activity. Mutations E240R and S244R had the greatest impact, decreasing activity, while F283A remarkably increased kinase activity twofold, demonstrating that Site #3 sequences are important for overall LRRK2 activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C107 provide experimental validation of the AlphaFold model through systematic mutagenesis. The differential effects of mutations (decreased for E240/S244, increased for F283A) demonstrate that this region regulates LRRK2 activity. The F283A gain-of-function mutation (C106) is particularly informative, suggesting this residue normally constrains activity. The data support the functional importance of Site #3.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C14"
+    ],
+    "result": "LRRK2 Site #3 mutations E240R and S244R blocked the ability of exogenous Rab12 to enhance phosphoRab10 levels. F283A LRRK2 had twofold higher basal activity but was not further activated by Rab12, strongly suggesting that Rab12 activates LRRK2 by binding to Site #3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C110 and C14 demonstrate that Site #3 is specifically required for Rab12-mediated activation. The E240R/S244R mutations blocking Rab12 effect (C108) while F283A shows high basal activity without further Rab12 activation (C109) provide strong mechanistic evidence. The inference that Rab12 binds Site #3 (C110) is well-supported by these functional data combined with the binding studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C7"
+    ],
+    "result": "Rab29 and Rab12 activate LRRK2 through distinct binding sites. Site #3 mutations (E240/S244) that block Rab12 activation had no effect on Rab29's ability to activate LRRK2, while Site #1 mutations preferentially decreased Rab29 activation with minimal effect on Rab12, demonstrating two different activation routes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C114 and C7 establish specificity through differential mutagenesis effects. The reciprocal pattern (Site #3 mutations affect Rab12 but not Rab29 in C112; Site #1 mutations affect Rab29 but not Rab12 in C113) provides strong evidence for distinct binding sites. This is a well-designed experiment that clearly distinguishes the two activation mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "Direct binding studies using microscale thermophoresis showed that Rab12 binds wild-type Armadillo domain with KD of 1.4 \u03bcM and Site #1 mutant K439E with similar affinity (1.6 \u03bcM), but Site #3 mutant E240R abolished binding (KD >40 \u03bcM), demonstrating that Rab12 binds directly to Site #3 and not Site #1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C118 provide direct biochemical evidence for Site #3 binding. The similar affinities for wild-type and Site #1 mutant (C115, C116) combined with loss of binding for Site #3 mutant (C117) clearly demonstrate binding specificity. The >25-fold difference in KD is substantial and unambiguous. These in vitro data strongly support the cellular functional data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C119"
+    ],
+    "result": "The LRRK2 Site #3 F283A mutation, which increases kinase activity in cells, did not significantly affect Rab12 binding affinity (KD of 1.2 \u03bcM), suggesting F283A affects kinase activity through a mechanism distinct from Rab12 binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C119 provides important mechanistic insight. The F283A mutation increases activity (C106) but maintains Rab12 binding (C119), suggesting this residue regulates activity downstream of or independently from Rab12 binding. This dissociation of binding and activation is informative about the mechanism and is well-supported by the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "Co-immunoprecipitation experiments in HEK293T cells showed that HA-tagged and endogenous Rab12 co-precipitated with FLAG-LRRK2. Site #3 mutants E240R and S244R showed significantly reduced co-precipitation, while F283A bound as well as wild-type, confirming Site #3 binding in cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C122 validate the in vitro binding data in a cellular context. The co-IP results parallel the thermophoresis data, with Site #3 mutants showing reduced binding (C121) and F283A maintaining binding (C122). The detection of endogenous Rab12 binding (C120) is particularly important for physiological relevance. The cellular and in vitro data are concordant.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "Mutation of LRRK2 Site #2 residues K17/K18, which bind phosphorylated Rabs, had no effect on Rab12's ability to increase phosphoRab10 levels. Both K17/K18-containing and K17A/K18A mutant LRRK2 were activated to the same level by Rab12, consistent with non-phosphorylatable Rab12 S106A retaining activation capability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124-C126 demonstrate that Rab12 activation is independent of the phosphoRab binding site (Site #2). The equivalent activation of wild-type and K17A/K18A mutant (C125) rules out involvement of the feed-forward mechanism. The consistency with S106A data (C126) strengthens the conclusion that Rab12 acts in its non-phosphorylated form through a distinct mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C129",
+      "C130",
+      "C131",
+      "C133"
+    ],
+    "result": "Rab12 contributes to LRRK2 activation during cellular stress. Rab12 was required for LRRK2 activation upon lysosomal damage (LLOME treatment) in NIH-3T3 cells and dampened the response in MEFs. Rab12 knockout also diminished Rab10 phosphorylation to control levels upon nigericin treatment, pointing to Rab12's role in regulating LRRK2 activity during lysosome repair.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C129-C131 and C133 demonstrate physiological relevance of Rab12 in stress responses. The requirement for Rab12 in LLOME-induced activation (C129) and nigericin response (C131) connects Rab12 to established LRRK2 biology in lysosomal damage (C127, C128). The partial effect in MEFs (C130) suggests additional regulatory mechanisms, which is appropriately noted. The data support a role in stress-induced LRRK2 activation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C134",
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "Based on the AlphaFold model showing Site #3 facing the kinase catalytic domain, the authors propose that Rab12 binding holds open the kinase to enable substrate access, with Rab12 occupancy pushing against sequences adjacent to the catalytic domain and presumably activating through conformational changes. The model also suggests LRRK2 contains an additional, undiscovered substrate binding site to properly orient the Rab phosphorylation site.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C134-C137 present mechanistic models based on structural predictions. While the AlphaFold model provides a framework, these are speculative proposals (C134, C136) about mechanism. The inference about an additional substrate binding site (C137) is logical given that Ser106 faces the Armadillo domain, but this remains to be experimentally validated. These are reasonable hypotheses that require further structural and functional studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "The LRRK2 Armadillo domain contains multiple Rab binding sites with distinct specificities. Site #1 (R361, R399, K439) binds Rab29 (KD 1.6 \u03bcM), Rab8A (2.3 \u03bcM), and Rab10 (5.1 \u03bcM). Site #2 (K17/K18) at the N-terminus binds phosphorylated Rab8A and Rab10. These sites increase LRRK2 membrane avidity and facilitate Rab phosphorylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C99 and C28-C32 summarize prior work (Vides et al., 2022) establishing the context for the new Site #3 discovery. The binding affinities (C96-C98) and functional roles (C31, C32) are well-documented in the cited work. This background is essential for understanding the significance of the new Site #3 and how it differs from previously characterized sites.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C64",
+      "C65"
+    ],
+    "result": "PhosphoRab7, the product of LRRK1 action, appeared to increase moderately as a function of Rab12 loss in MEFs, suggesting potential compensatory changes in LRRK1 activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C64 and C65 report an observation about phosphoRab7 levels. While the data show a moderate increase (C64) and the identity of phosphoRab7 as an LRRK1 substrate is established (C65), the biological significance and mechanism are unclear. This could represent compensation, but alternative explanations exist. The observation is noted but requires further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C145"
+    ],
+    "result": "The authors conclude that Rab12 binding to Site #3 in the LRRK2 Armadillo domain activates LRRK2 kinase for Rab phosphorylation and propose this could serve as a therapeutic target for LRRK2 inhibitors that do not target the kinase domain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C15 is well-supported by the combined genetic, biochemical, and cellular data presented throughout the manuscript. However, C16 and C145 about therapeutic potential are speculative. While the discovery of a non-kinase-domain regulatory site is scientifically interesting and could theoretically be targeted, no evidence for druggability or therapeutic efficacy is presented. The therapeutic speculation is reasonable but premature.",
+    "result_type": "MAJOR"
+  }
+]

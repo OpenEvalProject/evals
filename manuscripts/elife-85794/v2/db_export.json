@@ -1,0 +1,1484 @@
+{
+  "submission": {
+    "id": "d98ebb8b-4646-4f27-b337-c65644a1394d",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-04T04:48:22.371783Z",
+    "updated_at": "2025-12-04T04:48:22.371783Z"
+  },
+  "content": [
+    {
+      "id": "2e9aca97-06a3-4509-b396-86760fa41752",
+      "submission_id": "d98ebb8b-4646-4f27-b337-c65644a1394d",
+      "content_type": "manuscript",
+      "content_text": "# A rapid phylogeny-based method for accurate community profiling of large-scale metabarcoding datasets\n\n## Authors\n\n- Lenore Pipes<sup>1</sup> ([ORCID: 0000-0003-0056-8045](https://orcid.org/0000-0003-0056-8045)) \u2020\n- Rasmus Nielsen<sup>1</sup>\n\n### Affiliations\n\n1. Department of Integrative Biology, University of California, Berkeley Berkeley United States ([ROR:01an7q238](https://ror.org/01an7q238))\n2. GLOBE Institute, University of Copenhagen Copenhagen Denmark ([ROR:035b05819](https://ror.org/035b05819))\n\n\u2020 Corresponding author\n\n## Abstract\n\nEnvironmental DNA (eDNA) is becoming an increasingly important tool in diverse scientific fields from ecological biomonitoring to wastewater surveillance of viruses. The fundamental challenge in eDNA analyses has been the bioinformatical assignment of reads to taxonomic groups. It has long been known that full probabilistic methods for phylogenetic assignment are preferable, but unfortunately, such methods are computationally intensive and are typically inapplicable to modern next-generation sequencing data. We present a fast approximate likelihood method for phylogenetic assignment of DNA sequences. Applying the new method to several mock communities and simulated datasets, we show that it identifies more reads at both high and low taxonomic levels more accurately than other leading methods. The advantage of the method is particularly apparent in the presence of polymorphisms and/or sequencing errors and when the true species is not represented in the reference database.\n\n## Introduction\n\nIn the past 10 years, metabarcoding and metagenomics based on DNA sequencing and subsequent taxonomic assignment have become an important approach for understanding diversity and community organization at many taxonomic levels. This has led to the publication of more than 80 taxonomic classification methods (Gardner et al., 2019). There are three major strategies in classification methods: (1) composition-based, which do not align sequences but extract compositional features (e.g., kmers) to build models of probabilistic taxonomic inclusion; (2) alignment-based, which rely on alignments to directly compare query sequences to reference sequences but do not use trees; and (3) phylogenetic-based, which rely on a phylogenetic tree reconstruction method, in addition to alignments, to perform a placement of the query onto the tree. As a trade-off between speed and precision for processing next-generation sequencing (NGS) data, the vast majority of recent classification methods have either relied on alignment-based or composition-based strategies.\n\nComposition-based tools reduce the reference database by indexing compositional features such as kmers for a rapid search of the database. These methods require an exact match between the kmer in the query sequence and the kmer in the reference database. As a result of hash indexing of kmers, kraken2 (Wood et al., 2019), for example, can classify >1 million reads within 1 min using the entire Geengenes or SILVA databases (Lu and Salzberg, 2020). Alignment-based tools use a fast local aligner such as BLAST (Altschul et al., 1990) to pairwise align queries to the reference database and define a score based on sequence similarity in the alignment between the read and reference sequence. However, alignment-based methods can be many orders of magnitude slower than composition-based tools since datasets with >10 million reads require weeks of BLASTN running time (Ainsworth et al., 2017). In both composition-based tools and alignment-based tools, a lowest common ancestor (LCA) algorithm is then typically used to assign at different taxonomic levels (Figure 1A). LCA works by assigning to the smallest possible clade that include all matches with a similarity less than the specified cut-off.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/85794/elife-85794-fig1-v2.jpg)\n\n**Figure 1.:** In Tronko, scores are calculated for all nodes in the tree based on the query\u2019s global alignment to the best BWA-MEM hit. The query is assigned to the lowest common ancestor (LCA) of the highest scoring nodes within the cut-off threshold. See Figure 1\u2014figure supplement 1 for more details regarding using multiple trees.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/85794/elife-85794-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** First, the multiple sequence alignments (MSAs) and corresponding phylogenetic trees are used as input into the algorithm. Then, the sum-of-pairs scores are calculated for each partition. If the sum-of-pairs score is below a heuristic threshold, the tree is used to partition the sequences into three partitions in the cluster based on the node with the smallest variance. Each of the three partitions is realigned and phylogenetic trees are estimated. The algorithm stops for a given partition when the sum-of-pairs score is greater than the heuristic threshold.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/85794/elife-85794-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) Assignment rate against the number of reference sequences at the species level. (B) Running time against the number of reference sequences. (C) Peak memory in gigabytes against number of references. Both methods had a 100% true positive rate for all sizes of databases. Assignment rate is the number of reads assigned at the species level for each method. Reference sequences were chosen randomly from the cytochrome oxidase 1 (COI) reference database.\n\nPhylogenetic placement methods place a query sequence onto a phylogenetic tree of reference sequences. This placement requires a full multiple sequence alignment (MSA) of the reference sequences and a subsequent estimation of a phylogenetic tree. However, large datasets with high rates of evolution are hard to align accurately (Sievers et al., 2011) and phylogeny estimation methods produce poor trees when MSAs are not of high quality (Kapli et al., 2020). Furthermore, phylogenetic placement tends to be computationally demanding as both running time and memory usage scale linearly with the size of the reference database (Balaban et al., 2020). Even for reference databases that contain sequences as few as 1600 sequences, assignment for a single query using the most cited phylogenetic placement method, pplacer (Matsen et al., 2010), takes more than 7 min and requires over 10 GB of RAM (on a Dell PowerEdge server with 32 CPU threads and 512 GB of RAM). At this rate, a reference database that contains a metabarcode such as cytochrome oxidase 1 (COI) that has at least 1.5 million reference sequences, assigning just a single query would require 20.9 hr and 2.37 TB RAM. Scaling the query size to millions of queries would therefore be computationally intractable.\n\nTo address these challenges, the most recent implementations of phylogeny-based methods (Barbera et al., 2019) rely on reference database reduction techniques (i.e., using only representative taxa or consensus sequences for a sparse backbone tree) to handle the large amount of data that is routinely produced. Often a single species is selected to represent an entire clade (Czech et al., 2022). While this reduces the computational cost, it also reduces the granularity, and potentially the accuracy, of the assignments. As a trade-off between speed and precision, the vast majority of recent classification methods are either alignment-based or composition-based approaches (Hleap et al., 2020) since phylogeny-based methods have not scaled to handle the entirety of the rapidly growing reference databases of genome markers and the increasingly large amounts of NGS data.\n\nHere, we describe a new method for phylogenetic placement, implemented in the program \u2019Tronko\u2019 (https://github.com/lpipes/tronko, Mapper and Pipes, 2024), the first phylogeny-based taxonomic classification method designed to truly enable the use of modern-day reference databases and NGS data. The method is based on approximating the phylogenetic likelihood calculation by (1) only allowing the edge connecting the reference sequence to the tree to join at existing nodes in the tree and then (2) approximating the likelihood using a probabilistically weighted mismatch score based on pre-calculated fractional likelihoods stored in each node (see \u2018Methods\u2019). We argue that (2) approximates the full maximized likelihood assignment without requiring any numerical maximization under the approximating assumption that the read joins the tree in an existing node with a zero-length branch. The approximation is equivalent to calculating the expected average mismatch to each node in the phylogeny. The assignment method in Tronko uses the LCA criteria but, unlike composition-based and alignment-based approaches (Figure 1A), takes advantage of fractional likelihoods stored in all nodes of the tree with a cut-off that can be adjusted from conservative to aggressive (Figure 1B). In the simplest case, when the reference sequences form a single tree, Tronko uses a pre-calculated MSA, the phylogenetic tree based on the MSA, and pre-calculated posterior probabilities, which are proportional to the fractional likelihoods. However, in more typical cases, when a single tree/MSA is unsuitable for analyses, as the reference sequences encompass increasingly divergent species as well as an increasing volume of sequences, we present a fully customizable divide-and-conquer method for reference database construction that is based on dividing reference sequences into phylogenetic subsets that are realigned and with local trees re-estimated.\n\nThe construction of the database, MSAs, and trees facilitates fast phylogenetic assignment. The assignment algorithm then proceeds by (1) a BWA-MEM (Li and Durbin, 2009) search on all sequences in the database, (2) a pairwise sequence alignment between the query and the top hit in each alignment subset containing a BWA-MEM hit using either the Needleman\u2013Wunsch algorithm (Needleman and Wunsch, 1970) or the wavefront alignment algorithm (Marco-Sola et al., 2021), and (3) a calculation of a score based on the approximate likelihood for each node in subsets with a BWA-MEM hit. An additional LCA assignment for all subsets can then be applied to summarize the results. For full details, see \u2018Methods\u2019.\n\n## Results\n\nTo compare the new method (Tronko) to previous methods, we constructed reference databases for COI and 16S for common amplicon primer sets using CRUX (Curd et al., 2019; sSee \u2018Methods\u2019 for the exact primers used). We first compared Tronko to pplacer and APPLES-2 for reference databases containing a reduced amount of sequences (<1600 sequences) to compare the speed and memory requirements with comparable phylogenetic-based assignment methods. Tronko shows speed-ups >20 times over pplacer, with a vastly reduced memory requirement illustrating the computational advantage of the approximations in Tronko (Figure 1\u2014figure supplement 2). Tronko demonstrates a speed-up >2 times over APPLES-2 with a similar memory footprint. In terms of accuracy, all methods had a 100% true-positive rate at the species level. Additionally, in terms of the species assignment rate (the percentage of queries that were assigned at the species level), Tronko assigns the most queries.\n\nNext, in addition to pplacer and APPLES-2, we evaluated Tronko\u2019s performance to kmer-based kraken2 (Wood et al., 2019), which previously has been argued to have the lowest false-positive rate (Lu and Salzberg, 2020), and two other popular alignment-based methods: MEGAN (Huson et al., 2007) and metaphlan2 (Truong et al., 2015). We used two types of cross-validation tests: leave-one-species-out and leave-one-individual-out analyses. The leave-one-species-out test involves removing an entire species from the reference database, simulating NGS reads from that species, and then attempting to assign those reads with that species missing from the database. The leave-one-individual-out test involves removing a single individual from the reference database, simulating NGS reads from that individual, and then attempting to assign those reads with that individual missing from the database. In both tests, singletons (i.e., cases in which only one species was present in a genera or cases in which only one individual represented a species) were exempt from the tests.\n\nWe performed a leave-one-species-out test comparing Tronko (with LCA cut-offs for the score of 0, 5, 10, 15, and 20 with both Needleman\u2013Wunsch alignment and wavefront alignment) to kraken2, metaphlan2, and MEGAN for 1467 COI sequences from 253 species from the order Charadriiformes using 37,515 (150 bp \u00d7 2) paired-end sequences and 768,807 single-end sequences (150 bp and 300 bp in length) using 0, 1, and 2% error/polymorphism (Figure 2). We use the term \u2018error/polymorphism\u2019 to represent a simulated change in nucleotide that can be either an error in sequencing or a polymorphism. We display confusion matrices to display the clades in which each method has an incorrect assignment (Figure 3). See Figure 2\u2014figure supplement 1 for results with the wavefront alignment algorithm (Marco-Sola et al., 2021).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/85794/elife-85794-fig2-v2.jpg)\n\n**Figure 2.:** See Figure 2\u2014figure supplement 2 for results using different combinations of aligners and tree estimation methods.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/85794/elife-85794-fig2-figsupp1-v2.jpg)\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/85794/elife-85794-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** For tree estimation, we used RAxML and IQ-TREE2. For multiple sequence aligners, we used FAMSA and MAFFT. For global alignment methods, we used Needleman\u2013Wunsch (NW) and wavefront alignment (WFA). This is the same dataset as used in Figure 2. Colors represent different combinations of methods.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/85794/elife-85794-fig3-v2.jpg)\n\n**Figure 3.:** Unassigned column contains both unassigned queries and queries assigned to a lower taxonomic level. Phylogenetic tree represents ancestral sequences at the genus level.\n\nUsing leave-one-species-out and simulating reads (both paired-end and single-end) with a 0\u20132% error (or polymorphism), Tronko detected the correct genus more accurately than the other methods even when using an aggressive cut-off (i.e., when cut-off $=$ 0) (Figure 3F). Using 150 bp paired-end reads with 1% error, Tronko had a misclassification rate of only 9.8% with a recall rate of 70.1% at the genus level using a cut-off set to 15 while kraken2, MEGAN, and metaphlan2 had misclassification rates of 33.5, 10.0, and 27.7%, respectively, with recall rates of 90.6, 52.1, and 95.0% (see Figure 2B). Tronko had a lower misclassification rate relative to the recall rate out of all methods for 150 bp \u00d7 2 paired-end reads with 0% error/polymorphism (Figure 2A), 1% error/polymorphism (Figure 2B), and 2% error/polymorphism (Figure 2 and Figure 3D\u2013I), for 150 bp reads with 0% error/polymorphism (Figure 2D), 1% error/polymorphism (Figure 2E), and 2% error/polymorphism (Figure 2F), and for 300 bp reads with 0% error/polymorphism (Figure 2G), 1% error/polymorphism (Figure 2H), and 2% error/polymorphism (Figure 2I). See \u2018Methods\u2019 for definitions of recall and misclassification rates. Tronko also accurately assigned genera from the Scolopacidae family (top left of matrices in Figure 3) using Needleman\u2013Wunsch with a cut-off of 10 compared to kraken2, metaphlan2, and pplacer.\n\nNext, we performed a leave-one-individual-out test for the same COI reference sequences using 746,352 single-end reads and 36,390 paired-end reads (Figure 4, Figure 4\u2014figure supplement 1F\u2013J). See Figure 4\u2014figure supplement 2 for results with wavefront alignment algorithm (Marco-Sola et al., 2021). Using single-end reads of lengths 150 bp and 300 bp, Tronko has a lower misclassification rate and higher recall rate than kraken2, metaphlan2, and MEGAN. Using 150 bp paired-end reads with 0% error (Figure 4D), Tronko had a misclassification rate at only 0.1% with a recall rate of 58.6% at the species level using a cut-off set to 10 while kraken2, MEGAN, and metaphlan2 had misclassification rates of 1.5, 0.1, and 11.0%, respectively, with recall rates of 85.4, 60.7, and 98.14%. Both metaphlan and kraken2 have a number of mis-assignments within the family of Laridae (see blue points across the diagonal in Figure 4\u2014figure supplement 1A and B) and Tronko is able to accurately assign species within this family or assign at the genus or family level. We also observe that for increasing error rates, kraken2 and metaphlan2 have a substantial increase in misclassification rate. We believe it would be slightly misleading to display results for pplacer and APPLES-2 here due to the lack of an implementation to calculate the LCA on similar likelihoods. See Figure 4\u2014figure supplement 2 for results for pplacer and APPLES-2 along with wavefront alignment algorithm.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/85794/elife-85794-fig4-v2.jpg)\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/85794/elife-85794-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Unassigned column contains both unassigned queries and queries assigned to a lower taxonomic level. Phylogenetic tree represents ancestral sequences at the species level.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/85794/elife-85794-fig4-figsupp2-v2.jpg)\n\nIn order to replicate real-world scenarios, we added a leave-one-species-out test using 16S from 2323 bacterial species and 5000 individual sequences (Figure 5). We selected the sequences for the 16S dataset by grouping the sequences by the class level in a random order, rotating that order, and randomly selecting an individual sequence from each group. We then simulated sequencing reads from the dataset simulating 21,947,613 single-end reads (150 bp and 300 bp in length) as well as 21,478,738 paired-end 150 bp \u00d7 2 reads. In all simulations at both the genus and family levels, Tronko had a higher recall and a lower misclassification rate than all other methods. The simulations for 300 bp single-end reads are not directly comparable to the 150 bp single-end or paired-end reads because only 105 missing-out tests out of 2310 were able to be performed because most reference sequences were <300 bp in length. We only display the results for 300 bp single-end reads for APPLES-2 in the supplement as we believe the results are not a good representation of the method. See Figure 5\u2014figure supplement 1 for results for APPLES-2 using 300 bp single-end reads, along with results using the wavefront alignment algorithm. Additionally, we tested the use of hmmer or MAFFT for alignments with APPLES-2 and pplacer (Figure 5\u2014figure supplement 2), and we did not observe any substantial difference with the choice of alignment.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/85794/elife-85794-fig5-v2.jpg)\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/85794/elife-85794-fig5-figsupp1-v2.jpg)\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/85794/elife-85794-fig5-figsupp2-v2.jpg)\n\nWe then compared Tronko\u2019s performance to kraken2, MEGAN, and metaphlan2 using mock communities for both 16S (Schirmer et al., 2015; Gohl et al., 2016) and COI markers (Braukmann et al., 2019; Figure 6). We did not compare mock community data to pplacer and APPLES-2 because we were unsuccessful in building a full MSA for our 16S and COI reference databases. Tronko also relies on sequence alignments, but as described in \u2018Methods\u2019, they can be handled by dividing sequences into clusters in the Tronko pipeline. For 16S, we used three different mock community datasets. We used 1,054,868 2 \u00d7 300 bp Illumina MiSeq sequencing data from a mock community consisting of 49 bacteria and 10 archaea species from Schirmer et al., 2015, 54,930 2\u00d7 300 bp Illumina MiSeq sequencing data from a mock community consisting of 14 bacteria species from Lluch et al., 2015, and 206,696 2 \u00d7 300 bp Illumina MiSeq sequencing data from a mock community of 20 evenly distributed bacterial species from Gohl et al., 2016. For the data from Schirmer et al., 2015, at the species level, Tronko had a <0.6% misclassification rate at every cut-off with a recall rate of 11.0% at cut-off 0 (Figure 6A; see Figure 6\u2014figure supplement 1 for plot without outliers). kraken2 had a misclassification rate of 1.2% with a recall rate of 10.6% when using its default database, and a misclassification rate of 3.5% and a recall rate of 35.1% when using the same reference sequences as Tronko. metaphlan2 did not have any assignments at the species, genus, or family level using the default database, and it had an 8.3% misclassification and 8.9% recall rate at the species level when using the same reference sequences as Tronko. MEGAN had a recall rate of 0.2% and a misclassification rate of 0% at the species level.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/85794/elife-85794-fig6-v2.jpg)\n\n**Figure 6.:** Figures with smaller misclassification rates on the x-axis are available for Schirmer et al., 2015, Lluch et al., 2015, Gohl et al., 2016, Braukmann et al., 2019 in Figure 6\u2014figure supplements 1, 2, and 4, respectively.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/85794/elife-85794-fig6-figsupp1-v2.jpg)\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/85794/elife-85794-fig6-figsupp2-v2.jpg)\n\n![Figure 6\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/85794/elife-85794-fig6-figsupp3-v2.jpg)\n\n![Figure 6\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/85794/elife-85794-fig6-figsupp4-v2.jpg)\n\nFor the data from Lluch et al., 2015, at the genus level, Tronko had a misclassification rate of 0.6% and a recall rate of 22.3% using a cut-off of 0, while all other methods had a misclassification rate of >8% (see Figure 6\u2014figure supplement 2 for a close-up of the rates).\n\nFor the data from Gohl et al., 2016, at the species level, Tronko had a <2.6% misclassification rate at every cut-off with a recall rate of 12.8% at cut-off 0 (Figure 6C; see Figure 6\u2014figure supplement 3 for plot without outliers). kraken2 had a misclassification rate of 26.8% and recall rate of 33.7% when using its default database, and a misclassification rate of 21.4% and recall rate of 25.4% when using the same reference sequences as Tronko. metaphlan2 did not have any assignments at the species, genus, or family level using the default database, and it had an 8.5% misclassification and 2.1% recall rate at the species level when using the same reference sequences as Tronko. MEGAN had a misclassification rate of 0% and a recall rate of 4.4% at the species level.\n\nFor COI, we used a dataset from Braukmann et al., 2019 which consists of 646,997 2 \u00d7 300 bp Illumina MiSeq sequencing data from 374 species of terrestrial arthropods, which is the most expansive mock community dataset that we used. At the genus level, Tronko had a misclassification rate of <0.5% with a recall rate of 78.3% at the cut-off of 0 (Figure 6D; see Figure 6\u2014figure supplement 4 for plot without outliers). With the default database, kraken2 had a misclassification rate of 40.5% with a recall rate of 6.5%. With the same reference sequences as Tronko, kraken2 still had a misclassification of 14.0% with a recall rate of 83.1%. metaphlan2 had a misclassification rate of 3.5% with a recall of 86.4% with the same reference sequences as Tronko while the default database failed to assign any reads. MEGAN had a 15.0% recall and 0% misclassification rate at the species level and a 49.9% recall and 0.5% misclassfication rate at the genus level.\n\nWe compared Tronko with kraken2, metaphlan2, and MEGAN (using BLAST as the aligner) for running time (Figure 7A) and peak memory (Figure 7B) using 100, 1000, 10,000, 100,000, and 1,000,000 sequences using the COI reference database. Unsurprisingly, kraken2 had the fastest running time followed by metaphlan2, but MEGAN had a substantially slower running time than all methods. Tronko was able to assign 1,000,000 queries in \u223c8 hr with the choice of aligner being negligible. Tronko had the highest peak memory (\u223c50 GBs) as it stores all reference sequences, their trees, and their posterior probabilities in memory. We note that for very large databases, the memory requirements can, in theory, be reduced by processing different alignment subsets sequentially.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/85794/elife-85794-fig7-v2.jpg)\n\n**Figure 7.:** NW: Needleman\u2013Wunsch; WFA: wavefront alignment.\n\n## Discussion\n\nBoth leave-one-species-out and leave-one-individual-out simulations show that Tronko recovers the correct taxonomy with higher probability than competing methods and represents a substantial improvement over current assignment methods. The advantage of Tronko comes from the use of limited full-sequence alignments and the use of phylogenetic assignment based on a fast approximation to the likelihood.\n\nWe evaluate Tronko using different cut-offs representing different trade-offs between recall and misclassification rate, thereby providing some guidance to users for choice of cut-off. We note that in most cases the other methods evaluated here fall within the convex hull of Tronko, showing that Tronko dominates those methods, and in no cases do other methods fall above the convex hull of Tronko. However, in some cases, other methods are so conservative, or anti-conservative, that a direct comparison is difficult. For example, when using single-end 300 bp reads (Figure 4G\u2013I), MEGAN has assignment rates that are so low that a direct comparison is difficult.\n\nAmong the methods compared here, kraken2 is clearly the fastest (Figure 7A). However, it generally also has the worst performance with a higher misclassification rate than other methods, especially in the leave-one-species-out simulations (Figure 2).\n\nBoth metaphlan2 and MEGAN tend to fall within the convex hull of Tronko. Typically, metaphlan2 assigns much more aggressively, and therefore, has both a recall and misclassification rate that is much higher than MEGAN, which assigns very conservatively. We also note that the computational speed of MEGAN is so low that it, in some applications, may be prohibitive (Figure 7A).\n\nWe evaluated Tronko using two different alignment methods: Needleman\u2013Wunsch and wavefront alignment. In many cases, the two alignment algorithms perform similarly. However, in the case, where short, single-end reads are used (i.e., 150 bp single-end reads), the wavefront alignment performs worse than the Needleman\u2013Wunsch alignment (see Figure 2\u2014figure supplement 2D\u2013F and Figure 4\u2014figure supplement 2D\u2013F). The wavefront alignment algorithm implements heuristic modes to accelerate the alignment, which performs similarly to Needleman\u2013Wunsch when the two sequences being aligned are similar in length. However, when there is a large difference between the two sequences being aligned, we notice that the wavefront alignment forces an end-to-end alignment which contains large gaps at the beginning and end of the alignment. Hence, based on current implementations, we cannot recommend the use of the wavefront alignment for assignment purposes of short reads, although this conclusion could change with future improvements in the implementation of the wavefront alignment algorithm.\n\nTronko is currently not applicable to eukaryotic genomic data as it requires well-curated alignments of markers and associated phylogenetic trees, although we note that whole-genome phylogenetic reference databases for such data could potentially be constructed. Such extensions of the use of Tronko would require heuristics for addressing the memory requirements. Tronko currently has larger memory requirements than methods that are not phylogeny-based. Nonetheless, for assignment to viruses, amplicon sequencing, and other forms of non-genomic barcoding, Tronko provides a substantial improvement over existing assignment methods and is the first full phylogenetic assignment method applicable to modern large datasets generated using NGS.\n\nThe methods presented in this article are implemented in the Tronko software package that includes Tronko-build and Tronko-assign for reference database building and species assignment, respectfully. Tronko can be downloaded at https://github.com/lpipes/tronko and is available under an open-software license (Mapper and Pipes, 2024).\n\n## Methods\n\n### Tronko-build reference database construction with a single tree\n\nThe algorithm used for assignment takes advantage of pre-calculated posterior probabilities of nucleotides at internal nodes of a phylogeny. We first estimate the topology and branch lengths of the tree using RAxML (Stamatakis, 2014), although users of the method could use any tree estimation algorithm. We then calculate and store the posterior probabilities of each nucleotide in each node of the tree. For computational efficiency, this is done under a Jukes and Cantor, 1969 model, but the method can easily be extended to other models of molecular evolution. The calculations are achieved using an algorithm that traverses the tree only twice to calculate posterior probabilities simultaneously for all nodes in the tree. In brief, fractional likelihoods are first calculated in each node using a standard postorder traversal (e.g., Felsenstein, 1981). This directly provides the posterior probabilities in the root after appropriate standardization. An preorder traversal of the tree is then used to pull fractional likelihoods from the root down the tree to calculate posterior probabilities. While naive application of standard algorithms for calculating posterior probabilities in a node, to all nodes of a tree, has computational complexity that is quadratic in the number of nodes, the algorithm used here is linear in the number of nodes as it calculates posterior probabilities for all nodes using a single postorder and a single preorder traversal without having to repeat the calculation for each node in the tree. For a single site, let the fractional likelihood of nucleotide $a\\in{A,C,T,G}$ in node $j$ be $f_{j}\u2062(a)$, that is, $f_{j}\u2062(a)$ is the probability the observed data in the site for all descendants of node $j$ given nucleotide $a$ in node $j$. Let $h_{j}\u2062(a)$ be the probability of the data in the subtree containing all leaf nodes that are not descendants of node $j$, given nucleotide $a$ in node $j$, then the posterior probability of nucleotide $a$ is (Yang et al., 1995)\n\n$$\np(a|x)=\\frac{f_{j}(a)h_{j}(a)\\pi_{a}}{\\sumb\\in{A,C,G,T}f_{j}(b)h_{j}(b)\\pi_{b}}\n$$\n\nwhere $\\pi_{a}$ is the stationary probability of nucleotide $a$. The algorithm here proceeds by first calculating and storing $f_{j}\u2062(a)$ for all values of $j$ and $a$ using a postorder traversal. It then recursively calculates $h_{j}\u2062(a)$ assuming time-reversibility using a preorder traversal as\n\n$$\nh_{j}(a)=\\sumb\\in{A,C,G,T}p_{ab}(t_{j})h_{A(j)}(b)\\sumc\\in{A,C,G,T}p_{bc}(t_{S(j)})f_{S(j)}(c)\n$$\n\nwhere $t_{j}$ is the branch length of the edge from node $j$ to its parent, $p_{a\u2062b}\u2062(t)$ is the time-dependent transition probability of a transition from nucleotide $a$ to nucleotide $b$ in time $t$, $A\u2062(j)$ is the parent node of node $j$, and $S\u2062(j)$ is the sister node of node $j$ in the binary tree. The algorithm starts at the root with $h_{r\u2062o\u2062o\u2062t}\u2062(a)=1\u2200a\\in{A,C,T,G}$ This algorithm is implemented in the program \u2019Tronko-build\u2019.\n\nEach node in the tree is subsequently provided a taxonomy assignment. This is done by first making taxonomic assignments of the leaf nodes using the taxonomy provided by the taxid of the associated NCBI accession. We then make taxonomic assignments for internal nodes, at all taxonomic levels (species, genus, etc.), using a postorder traversal of the tree that assigns a taxonomic descriptor to node $i$ if both children of node $i$ have the same taxonomic assignment. Otherwise, node $i$ does not have a taxonomic assignment at this taxonomic level and node $i$ is given the next closest upward taxonomic level where its children have the same taxonomic assignment. In other words, node $i$ only gets a taxonomic assignment if the taxonomic assignments of both child nodes agree.\n\n### Tronko-build reference database construction with multiple trees\n\nMSAs for a large number of sequences can become unreliable and computationally challenging to work with due to the large number of insertions and deletions. For that reason, we devise an algorithm for partitioning of sequence sets into smaller subsets based on the accuracy of the alignment and using the inferred phylogenetic tree to guide the partitioning (Figure 1\u2014figure supplement 1).\n\nTo measure the integrity of the MSA, we calculate an average quality score, sum-of-pairs, $A\u2062S\u2062P$, which is a sum of pairwise alignment scores in the MSA. Assume an MSA of length $l$ with $K$ sequences, $A={a_{i,j}}$, where $a_{i,j}$ is the jth nucleotide in sequence $i$, $1\\leqi\\leqK$, $1\\leqj\\leql$, $a_{i,j}\\inM={-,A,C,T,G,N}$. Define the penalty function, $p$:\n\n$$\np\u2062(I,V)={3if I=V and I\\neq- (match)-2if I\\neqV, I,V\u2209{N,-} (mismatch)-1otherwise\n$$\n\nwhere $I,V\\inM$. ASP is then calculated as\n\n$$\nASP=\\frac{\\sumj=1l\\sumi=1K\\sumk=i+1Kp(a_{i,j},a_{k,j})}{(\\frac{K}{2})}\n$$\n\nIf the $A\u2062S\u2062P$ is lower than the $A\u2062S\u2062P$ threshold (a threshold of 0.1 was used in our analyses in this article), the corresponding tree is split in three partitions at the node with the minimum variance, calculated as\n\n$$\nv=argmini\\inT\u2061{((L_{1}(i)\u2212K/3)^{2}+(L_{2}(i)\u2212K/3)^{2})+(K\u2212L_{1}(i)\u2212L_{2}(i)\u2212K/3)^{2}}\n$$\n\nwhere $T$ is a tree, that is, a set of nodes, $L_{1}\u2062(i)$ and $L_{2}\u2062(i)$ is the number of leaf nodes descending from the left and right child node, respectively, of node $i$, and $K$ is the total number of leaf nodes in the tree. We then split the tree into three subtrees by eliminating node $v$. Each partition is realigned with FAMSA (Deorowicz et al., 2016) and new trees are constructed using RAxML (Stamatakis, 2014) using default parameters and the GTR + Gamma model. FAMSA is used to optimize for speed since it is 1\u20132 orders of magnitude faster than Clustal (Higgins and Sharp, 1988) or MAFFT (Katoh et al., 2002) with similar quality (see Deorowicz et al., 2016). We explored different combinations of tree estimation methods (including IQ-TREE2 Minh et al., 2020), multiple sequence aligners, and global aligners (Figure 2\u2014figure supplement 2). While most combinations of methods were quite similar (especially for the genus level), the use of FAMSA + RAxML + NW was optimal with regard to speed and accuracy. We ran IQ-TREE2 with the default settings using options -m GTR+G \u2013nt 4 to be consistent with similar RAxML settings. The sequences are recursively partitioned until the $A\u2062S\u2062P$ score is above the threshold. Finally, the trees, MSAs, taxonomic information, and posterior probabilities are written to one reference file which can be loaded for subsequent assignment of reads. Note that the procedure for phylogeny estimating and calculation of posterior probabilities only has to be done once for a marker and then can be used repeatedly for assignment using different datasets of query sequences.\n\n### Simulation of query sequences\n\nTo simulate single-end reads from a reference sequence, a starting point is selected uniformly at random and extends for $m_{0}$ base pairs, where $m_{0}$ represents the read length. For paired-end reads, a similar random selection of a starting point occurs, extending $m_{0}$ base pairs. From the end of this read, if the insert size $m_{1}$ is positive, the reverse read begins $m_{1}$ base pairs forward with a length of $m_{0}$. If $m_{1}$ is negative, the reverse read starts $m_{1}$ base pairs backward. Sequencing errors are then added independently with different probabilities $\\alpha=0$, $\\alpha=0.01$, and $\\alpha=0.02$ at each site. These errors are induced by changing the nucleotide to any of the other three possible nucleotides, following the probabilities used by Stephens et al., 2016:\n\n$$\nACGTACG7[00.49180.33770.17050.523800.26610.21010.37540.235500.38900.25050.25520.49420]\n$$\n\n### Taxonomic classification of query sequences\n\nFirst, BWA-MEM (Li, 2013) is used with default options to align the query sequences to the reference sequences, thereby identifying a list of the highest scoring reference sequences (which we designate as BWA-MEM hits) from the reference database. We use BWA-MEM as the original Minimap2 manuscript (Li, 2018) demonstrated that BWA-MEM had the lowest error rate for the same amount of fractional mapped reads compared to Minimap2, SNAP (Zaharia et al., 2011), and bowtie2 (Langdon, 2015). Second, a global alignment, either using the Needleman\u2013Wunsch algorithm (Needleman and Wunsch, 1970) or the wavefront alignment algorithm (Marco-Sola et al., 2021), is performed only on the sequence with the highest score from each subtree (reference sequence set) identified using the previously described partitioning algorithm.\n\nOnce aligned to the reference sequence, a score, $S\u2062(i)$, is calculated for all nodes, $i$, in the tree(s) that the reference sequence is located to. For a given read, let $b_{j}$ be the observed nucleotide in the position of the read mapping to position $j$ in the alignment. We also assume an error rate, $c$. For example, if the true base is G and the error rate is $c$, then the probability of observing A in the read is $c/3$. We note that this error rate can be consider to include both true sequencing errors and polymorphisms/sequence divergence. In an ungapped alignment, the score for site $j$ in node $i$ is then the negative log of a function that depends on the posterior probability of the observed nucleotide in the query sequence, $IP_{i\u2062j}\u2062(b_{j})$, and the error rate:\n\n$$\n\u2212log\u2061(c/3+(1\u22124c/3)P_{ij}(b_{j}))\n$$\n\nAssuming symmetric error rates, the probability of observing the base by error is $(1-IP_{i\u2062j}\u2062(b_{j}))\u2062c/3$ and the probability of observing the base with no error is $(1-c)\u2062IP_{i\u2062j}\u2062(b_{j})$. The sum of these two expressions equals the expression in the logarithm above. The score for all $s$ sites in the read is defined as $-\\sum_{j=1}^{s}log\u2061(c/3+(1-4\u2062c/3)\u2062IP_{i\u2062j}\u2062(b_{j}))$.\n\nNote that the full phylogenetic likelihood for the entire tree, under standard models of molecular evolution (Yang et al., 1995) with equal base frequencies and not accounting for errors, and assuming time reversibility, is\n\n$$\n\u2113(t)=\\sumj=1slog\u2061(\\sumv\\in{A,C,T,G}P_{ij}(v)p_{vb_{j}}(t))\n$$\n\nwhere $p_{v\u2062b_{j}}\u2062(t)$ is the time-dependent transition probability from base $v$ to base $b_{j}$ in time $t$. This statement takes advantage of the fact that, under time-reversibility, the posterior for a base in an node is proportional to the fractional likelihood of that base in the node, if the tree is rooted in the node. For small values of $t$, $\u2113$ converges to $log\u2061(I\\kern-1.5ptP_{ij}(b_{j}))$. Minimizing the score function, therefore, corresponds to maximizing the full phylogenetic likelihood function assuming that the branch leading to the query sequence is infinitesimally short and connects with the tree in an existing node. An alternative interpretation is that the score maximizes the probability of observing the query sequence if it is placed exactly in a node or, equivalently, minimizes the expected mismatch between the query and a predicted sequence sampled form the node.\n\nTo address insertions and deletions, we define scores of $\\gamma$ and $\\lambda$ for a gap or insertion, respectively, in the query sequence relative to the reference sequence. We also entertain the possibility of a gap in the reference sequence in node $i$ in read position $j$, $r_{i\u2062j}$, which occurs when the reference is a leaf node with a gap in the position or if it is an internal node with all descendent nodes having gaps in the position. We use the notation $M_{g}={-,N}$ for gaps and $M_{n}={A,C,T,G}$ for nucleotides (no gap). Then, the score for node i in site $j$ of the read, with observed base $b_{j}$, is\n\n$$\nS_{j}(i)={c/3+(1\u22124c/3)P_{i}(b_{j})if\u00a0b_{j}\\inM_{n}\u00a0and\u00a0r_{ij}\\inM_{n}\\gammaif\u00a0b_{j}\\inM_{g}\u00a0and\u00a0r_{ij}\\inM_{n}1if\u00a0b_{j}\\inM_{g}\u00a0and\u00a0r_{ij}\\inM_{g}\\lambdaif\u00a0b_{j}\\inM_{n}\u00a0and\u00a0r_{ij}\\inM_{g}\n$$\n\nThe total score for the entire read is\n\n$$\nS\u2062(i)=\\sumj=1llog\u2061(S_{j}\u2062(i))\n$$\n\nFor paired reads, the scores for each node in the tree are calculated as the sum of the scores for the forward read and the scores for the reverse read. Scores are calculated for all nodes in each tree that contain a best hits from the bwa mem alignment. For all analyses in this article, we use values of $c=0.01$, $\\lambda=0.01$, and $\\gamma=0.25$.\n\nAfter calculation of scores, the LCA of all of the lowest scoring nodes, using a user-defined cut-off parameter, is calculated. For example, if the cut-off parameter is 0, only the highest scoring node (or nodes with the same score as the highest scoring node) is used to calculate the LCA. If the cut-off parameter is 5, the highest scoring node, along with all other nodes within a score of 5 of the highest scoring node, are used to calculate the LCA. Once the LCA node is identified, the classification of the single read (or paired-reads) will be assigned to the taxonomy assigned to that node. The classification of query sequences is parallelized.\n\n### Taxonomic assignment using pplacer\n\nTo generate phylogenetic placements using pplacer, we first aligned sequencing reads to the reference sequences using hmmer3 (Mistry et al., 2013). We then ran pplacer, rppr prep_db, and guppy classify all using the default parameters in that order. Next, to obtain taxonomic assignments, we used the R package BoSSA (Lefeuvre, 2018) to merge the multiclass element (which is a data frame with the taxonomic assignments of each placement) and the placement table of pplace object (the output of pplacer) and only kept the \u2018best\u2019 type of placement for each read. For paired-end sequences, we assigned the taxonomy by the LCA of both pairs of reads.\n\n### Taxonomic assignment using APPLES-2\n\nTo generate phylogenetic placements using APPLES-2, we first aligned sequencing reads to the reference sequences using hmmer3 (Mistry et al., 2013). We then converted the alignment output from Stockholm to FASTA format and then separated the reference sequences from the sequencing reads (an input requirement for APPLES-2) using in-house scripts. We then ran run_apples.py with the default parameters. In order to ensure that the tree that was output from APPLES-2 was strictly binary (a requirement to assign taxonomy), we extracted the tree from the jplace output and resolved polytomies using the multi2di function from the R package ape (Paradis and Schliep, 2019). Next, we ran run_apples.py again using the output tree from ape (with option --tree=) and disabled reestimation of branch lengths (in order to keep the tree as strictly binary) by using the option --disable-reestimation. To assign taxonomy we ran gappa examine assign from the Gappa toolkit (Czech et al., 2020) using the options --per-query-results and --best-hit.\n\n### Classification metrics used for accuracy evaluations\n\nWe used the taxonomic identification metrics from Siegwald et al., 2017 and Sczyrba et al., 2017. A true-positive (TP) read at a certain taxonomic rank has the same taxonomy as the sequence it was simulated from. A misclassification (FP) read at a certain taxonomic rank has a taxonomy different from the sequence it was simulated from. A false-negative (FN) read, at a certain taxonomic rank, is defined as a read that received no assignment at that rank. For accuracy, we use the following measures for recall and misclassification rate.\n\n$$\nRecall=\\frac{TP}{TP+FN}\n$$\n\n\n\n$$\nMisclassification rate=\\frac{FP}{TP+FP+FN}\n$$\n\n### Classification of mock community reads\n\nFor Schirmer et al., 2015, we used the ERR777705 sample, for Gohl et al., 2016 we used the SRR3163887 sample, and for Braukmann et al., 2019 we used the SRR8082172 sample. For Lluch et al., 2015, we used the ERR1049842 sample. All sample raw reads used for assignment were first filtered through the Anacapa Quality Control pipeline (Curd et al., 2019) with default parameters up until before the amplicon sequence variant (ASV) construction step. Only paired reads were retained for assignment. For mock datasets where the true species were only defined with \u2018sp.\u2019, species assignment were excluded for all methods. After Tronko assignments, we filtered results using a script to check the number of mismatches in the forward vs. reverse reads, and used a $\u03c7^{2}$ distribution to filter out assignments that have a discrepancy in mismatches.\n\n### Leave-species-out and leave-one-individual-out analyses\n\nWe used two datasets (Charadriiformes and Bacteria) for leave-species-out and leave-one-individual-out analyses. For one dataset, we used 1467 COI reference sequences from 253 species from the order Charadriiformes. For the leave-species-out analyses with Charadriiformes, we removed each of the species one at a time (excluding singletons, i.e., species only represented by a single sequence), yielding 252 different reference databases. For the leave-species-out analyses with Bacteria, we randomly selected 5000 taxonomically divergent bacteria species from the 16S reference database built through CRUX. For the leave-species-out analyses with Bacteria, we removed each of the species, one at a time (excluding singletons), yielding 2323 different reference databases. For each database, we then simulated reads from the species that had been removed with different error rates, and assigned to taxonomy using all methods tested (Tronko, kraken2, metaphlan2, MEGAN, pplacer, and APPLES-2), using the same reference databases and same simulated reads for all methods. For the leave-individual-out analysis with Charadriiformes, we removed a single individual from each species (excluding singletons) yielding 1423 different reference databases. Assignments for all method were performed with default parameters and where a paired read mode was applicable, that mode was used when analyzing paired reads. For paired-end read assignments with MEGAN, the assignment is the LCA of the forward and reverse read assignments as described in the MEGAN manual v6.12.3. For metaphlan, the results from the forward reads and reverse reads were combined.\n\n### Custom 16S and COI Tronko-build reference database construction\n\nFor the construction of the reference databases in this article, we use custom-built reference sequences that were generated using common primers (Caporaso et al., 2012; Leray et al., 2013; Geller et al., 2013; Amaral-Zettler et al., 2009) for 16S and COI amplicons that have been used in previous studies (de Vargas et al., 2015; Leray and Knowlton, 2015; David et al., 2014) using the CRUX module of the Anacapa Toolkit (Curd et al., 2019). For the COI reference database, we use the following forward primer: GGWACWGGWTGAACWGTWTAYCCYCC, and reverse primer: TANACYTCnGGRTGNCCRAARAAYCA from Leray et al., 2013 and Geller et al., 2013, respectively, as input into the CRUX pipeline (Curd et al., 2019) to obtain a fasta and taxonomy file of reference sequences. For the 16S database, we use forward primer GTGCCAGCMGCCGCGGTAA and reverse primer GACTACHVGGGTATCTAATCC from Caporaso et al., 2012. We set the length of the minimum amplicon expected to 0 bp, the length of the maximum amplicon expected to 2000 bp, and the maximum number of primer mismatches to 3 (parameters -s 0, -m 2000, -e 3, respectively). Since all of the custom-built libraries contain \u2265500,000 reference sequences and MSAs, we first used Ancestralclust (Pipes and Nielsen, 2022) to do an initial partition of the data, using parameters of 1000 seed sequences in 30 initial clusters (parameters -r 1000 and -b 30, respectively). For the COI database, we obtain 76 clusters and for the 16S database we obtain 228 clusters. For each cluster, we use FAMSA (Deorowicz et al., 2016) with default parameters to construct the MSAs and RAxML (Stamatakis, 2014) with the model GTR+\u0393 of nucleotide substitution to obtain the starting trees for Tronko-build.\n\n### Inclusion and diversity\n\nWe support inclusive, diverse, and equitable conduct of research.\n",
+      "created_at": "2025-12-04T04:48:22.371783Z"
+    },
+    {
+      "id": "15b26394-8c69-4e48-bf6e-742f78abac54",
+      "submission_id": "d98ebb8b-4646-4f27-b337-c65644a1394d",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Niema Moshiri, https://ror.org/0168r3w48 University of California, San Diego United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.85794.sa0](https://doi.org/10.7554/eLife.85794.sa0)\n\nThis important work presents a novel tool for performing phylogenetic assignment of DNA sequences. The manuscript is convincing, and the authors perform a standard benchmark experiment against current state-of-the-art tools using real + simulated datasets to demonstrate where the novel tool stands in the context of existing methods. This paper will be of great interest to bioinformaticians and evolutionary biologists interested in massively-scalable phylogenetic assignment.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Niema Moshiri, https://ror.org/0168r3w48 University of California, San Diego United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.85794.sa1](https://doi.org/10.7554/eLife.85794.sa1)\n\nOur editorial process produces two outputs: i) public reviews designed to be posted alongside the preprint for the benefit of readers; ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"A rapid phylogeny-based method for accurate community profiling of large-scale metabarcoding datasets\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, including Niema Moshiri as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Wendy Garrett as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Nick Goldman (Reviewer #3).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1) There were some concerns that the data sets that were chosen in the manuscript might not be well-aligned with real-world use cases for the tool, and that other data sets could be included that better represent real-world use cases; see Reviews below for specific comments. The realism of the chosen data sets should be justified, and/or datasets more representative of real-world scenarios could be included.\n\n2) The manuscript includes some comparisons between Tronko and pplacer, and it excludes pplacer from the benchmark experiment due to pplacer's inability to scale to the necessary dataset sizes (which is perfectly reasonable). However, a recently published tool named APPLES (Balaban et al., 2020; https://doi.org/10.1093/sysbio/syz063) seems to be able to perform taxonomic classification using phylogenetic placement in a similar manner as pplacer (i.e., by feeding the output phylogenetic placement file to guppy to output taxonomic classifications). The following tutorial by the authors of APPLES seems to present this \"APPLES to guppy\" workflow:\n\nhttps://github.com/smirarab/tutorials/blob/master/Skmer-APPLES-tutorial.md#run-actual-placement\n\nThe Reviewers were unsure about whether or not APPLES (as a potential substitute for pplacer) would be a reasonable alternative for Tronko. If APPLES is a reasonable alternative for Tronko, we request that it be included in any existing benchmarks in which Tronko was compared against pplacer. If APPLES is not a reasonable alternative for Tronko (and should thus not be included in the existing comparison), we request additional details in the introduction of the manuscript describing why APPLES is inappropriate for this task.\n\n3) Some choices were made without clear justification (e.g. the use of specific dependency tools as well as parameter selection for those tools), and these choices require some form of justification and/or discussion/exploration; see Reviews below for specific comments.\n\n4) There were technical issues/errors with the distribution of the tool that need to be fixed; see Reviews below for specific errors/scenarios as well as some potential suggestions.\n\n5) There are minor issues with the writing of the manuscript itself that should be updated/corrected; see Reviews below for specific comments/suggestions.\n\nReviewer #1 (Recommendations for the authors):\n\nFirst, some technical questions about the methodology:\n\nHow is the accuracy impacted by potential errors in the multiple sequence alignment (MSA) and phylogenetic inference procedure? For example, what if someone were to use e.g. MAFFT (Katoh et al., 2002) for MSA followed by FastTree 2 (Price et al., 2010) or IQ-TREE (Nguyen et al., 2015) or matOptimize (Ye et al., 2022) for phylogenetic inference instead of the Tronko-build approach? Or perhaps existing joint MSA + tree inference tools like PASTA (Mirarab et al., 2015)?\n\nWhy were existing phylogenetic placement tools excluded, such as UShER (Turakhia et al., 2021), APPLES (Balaban et al., 2019), SEPP (Mirarab et al., 2012), TIPP (Nguyen et al., 2014), or UPP (Nguyen et al., 2015)? The authors exclude pplacer due to runtime + memory intensity, but they did not provide rationale for providing the many other existing phylogenetic placement methods. My understanding is that UShER is supposed to be *extremely* fast and quite memory-efficient.\n\nTronko currently supports two BWA-MEM modes (Needleman-Wunsch and Wavefront Alignment), but rather than just supporting BWA-MEM, what about other potential aligners? For example, if one were to use Minimap2 to perform alignment instead, how would the results + runtime + memory requirements change?\n\nThe manuscript explains that the high memory usage is because of all of the things Tronko needs to store in memory the entire time, but (1) do all of those things really need to be stored in memory simultaneously, and (2) could some form of compressive encoding (e.g. 2-bit encoding for reference genomes) be used to reduce memory usage? 50 GB is reasonable for high-end modern servers, but I think it can be dramatically reduced with clever optimizations. I think the discussion of the peak memory requirements would benefit from more thorough exploration of what exactly is contributing to the large memory consumption (e.g. what proportion of it is from storing the trees, or the reference genomes, or the posterior probabilities, etc.).\n\nNow, general comments about the paper:\n\nThe paper is generally well-written and reads fairly clearly, but my main concern is about some choices in the methodology that were (seemingly) somewhat arbitrarily chosen without providing justification. For example, BWA-MEM was chosen for mapping; why that choice rather than other mappers? And why are the default parameters appropriate? RAxML was chosen for phylogenetic inference; why that choice rather than other tree inference tools? And why default parameters with GTR+\u0393 model (rather than GTR+\u0393+Invariant, or GTR+CAT, or GTR+CAT+Invariant, etc.)? In addition to my technical questions above about how changing these choices would impact results, my general comment here is that all choices should be motivated in some way within the text.\n\nBoth panels of Figure 6 should be log-scale: as they're currently presented in linear-scale, it's impossible to meaningfully discern differences between the smaller lines.\n\nReviewer #2 (Recommendations for the authors):\n\n## Overall comments\n\nThe manuscript is hard to read top-to-bottom, and would be easier if you gave a little more of an overview of the method before giving results. The figure 1 caption, for example, can't really be understood without getting to P14. Figure 1 itself can't really be understood without understanding the cutoff parameter.\n\nPlease make it clear from the get-go that this is amplicon sequencing and not true metagenomics. The tool is compared to Kraken which does true metagenomics.\n\nIf I am understanding correctly, the database input for the method requires a tree annotated with taxonomic labels at all nodes of the tree. If that's right, what is the process for doing this labeling? What if the taxonomy and the tree disagree?\n\nThe paper doesn't compare to APPLES (reference 8) which is phylogenetic but distance-based and therefore should be faster, but is probably less accurate. This isn't necessary for a revision, but it would be interesting to understand if performance gaps are due to phylogeny or likelihood-based phylogeny.\n\n## Details\n\nPlease number lines. This makes reviewing much easier.\n\nP2 \"There are three\u2026\": I suggest using (1), (2), (3) in this sentence to make it clearer rather than just rely on commas.\n\nP3 Tandy Warnow has worked on a number of approaches to scaling likelihood-based phylogenetic placement, e.g. https://www.biorxiv.org/content/10.1101/2022.10.26.513936v1.full.pdf which also uses a collection of trees.\n\nP7 It seems like you are using a different cutoff for the different comparisons. Can you justify that?\n\nP12 \"lenghts\" typo\n\nP12 The two-pass algorithm is linear time, and this seems to me like the standard two-pass algorithm. We can get the required posterior probabilities from the upward and downward partial likelihood vectors. What am I missing? If there is something subtle, some more explanation and notation is needed.\n\nP12 To get an assignment to node i, does i and its children need to get a given taxonomic assignment? The text reads as if only the children need taxonomic assignments.\n\nP13 Why I and V? I know they are arbitrary but it seems like an odd choice.\n\nP13 What is the intuition for the definition of variance? If we were to try to write this as the variance of a random variable, what would it be? It seems like this definition is similar to that for the centroid of the tree. If that's the case, why not use that more common object?\n\nP14 Perhaps \"written\" rather than \"printed\"? Is there a specific format to this file, like JSON, or is it fully custom?\n\nP15 Notation would be cleaner if you just used a single P for posterior probability, or \\mathbb{P}. use \"\\log\". Suggest display equation for phylogenetic likelihood.\n\nP16 Interesting that this classifies N as a gap. Sometimes Ns are ambiguous sequencing calls.\n\nP16 What is m(1)?\n\nFigure 2: I found \"error/polymorphism\" confusing, as at first I thought it was the ratio of the two. Suggest just \"error\" in the figure and caption, and note in the text that it could be in fact polymorphism. Also, there are lots of triangles for Tronko. Please introduce in the text what the cut-off is. You state that there is a cut-off on P4, and hopefully in one additional sentence you could give an intuition. Font is too small.\n\nFigure 3: These \"rainbow\" schemes are now not in favor compared to color schemes like viridis and variants; see https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0199239\n\nFigure 6: Please consider color scheme, the yellow is basically invisible.\n\nFigure S4. I'm not sure what \"assignment rate\" is. Is the fraction of time the program produced any result? Could you label the Tronko lines with Tronko?\n\nAll Figure legends should identify the gene target and data set.\n\nReviewer #3 (Recommendations for the authors):\n\nWe have divided most of our considerations into three areas, regarding (a) the methods that this ms. introduces, (b) the results that they produce and (c) the Tronko software.\n\n(a) The methods take familiar ground as their starting point, and then take a new direction in terms of approximations and shortcuts to implement something resembling a full probabilistic (maximum likelihood) inference technique, but fast enough and with low-enough memory requirement to be practical for modern-sized datasets (reference and sample). We need no convincing that this is a valid approach, and is sufficient for the methods proposed to be of value if they produce good-enough results.\n\nThat said, there were a few instances of other relevant work not being quoted that I think would be of interest to some readers. We don't think this ms. needs to address all these points in a detailed manner, but where other relevant work has not been cited then readers can reasonably ask whether Pipes and Nielsen are unaware or have simply decided not to incorporate some other existing ideas; or whether they tried to incorporate ideas that ultimately did not work; whether some alternative concepts are somehow incompatible with the approach they did take; or whether there is some other reason. Some specific examples we are curious about and would like to see discussed in this manuscript:\n\n* what about methods that combine composition-based (kmer) and phylogenetic approaches, essentially replacing likelihood calculations with kmer statistics in a phylogenetic framework? See work like https://academic.oup.com/bioinformatics/article/35/18/3303/5303992 and others from that group, including recent work by Romashchenko\n\n* since the ms. argues so strongly for the benefits of phylogenetic methods, it would be interesting to see how the authors consider Tronko to compare to phylogeny-based methods other than pplacer, for example papara and PAGAN and others e.g. mentioned in https://www.frontiersin.org/articles/10.3389/fbinf.2022.871393/full\n\n(b) The results seem convincing and reasonable metrics were used for evaluation. However,\n\n* since the method's highlight is incorporating phylogeny, it would be interesting to see some comparisons of results using a metric that takes phylogeny into account. For example, while calculating accuracy of taxonomic assignment, instead of using a binary score (correct/incorrect), could you calculate a distance between assignment and real value? A measure of how wrong incorrect assignments could be of relevance to many users in terms of biological interpretations. Arguably, a tool that misassigns to close species would be preferable over another that misassigns to further species\n\n* very poor performances of some tools in mock community analyses might make readers ask if the default parameters of the tools were right or not for this comparison. For example, for Braukmann et al. data the authors say \"MEGAN did not assign any reads at the species or genus level\"\n\n* some claims about other methods' results being dominated by Tronko based on the convex hull seem a bit overstated, when there has been no investigation of how the other methods' recall/misclassification response curves could appear if other parameter settings were used\n\n(c) Tronko software is publically available on GitHub with clear documentation, example files, and working example commands. Nevertheless there is room for improvement for Tronko to be widely utilised by the community:\n\n* The software installation and execution can be tested on a few different computers and ideally operating systems. We failed to install the software from the source but Singularity installation works fine.\n\n* tronko-build input files are preprocessed with multiple softwares. Although the authors provide example files, there is not a guide on how to create those files for our own gene of interest. A couple of sentences (or maybe more, for users who are not so familiar with the data types and analyses involved) about how those files were prepared would be very helpful.\n\n* tronko-build example files include some files with double extensions (e.g..fasta.ann). These are not mentioned in the readme. It is not clear what they are. They are not mentioned in the inputs of the command nor did they appear in the output directory when we ran it.\n",
+      "created_at": "2025-12-04T04:48:22.371783Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T04:48:22.371783Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T04:48:22.371783Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "80bddeba-8e53-475d-b3c4-7720914a9301",
+      "content_id": "2e9aca97-06a3-4509-b396-86760fa41752",
+      "claim_id": "C1",
+      "claim": "Environmental DNA (eDNA) is becoming an increasingly important tool in diverse scientific fields from ecological biomonitoring to wastewater surveillance of viruses.",
+      "claim_type": "EXPLICIT",
+      "source": "Environmental DNA (eDNA) is becoming an increasingly important tool in diverse scientific fields from ecological biomonitoring to wastewater surveillance of viruses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about the growing importance of eDNA, drawing from established scientific consensus in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:48:22.371783Z"
+    },
+    {
+      "id": "9f875ac8-ea33-4f63-a369-d1f6dee90cbb",
+      "content_id": "2e9aca97-06a3-4509-b396-86760fa41752",
+      "claim_id": "C2",
+      "claim": "The fundamental challenge in eDNA analyses has been the bioinformatical assignment of reads to taxonomic groups.",
+      "claim_type": "EXPLICIT",
+      "source": "The fundamental challenge in eDNA analyses has been the bioinformatical assignment of reads to taxonomic groups.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement reflects established knowledge about a key challenge in the field of eDNA analysis.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:48:22.371783Z"
+    },
+    {
+      "id": "e7bfeca9-0df6-4e97-b8bf-78faefe99f69",
+      "content_id": "2e9aca97-06a3-4509-b396-86760fa41752",
+      "claim_id": "C3",
+      "claim": "Full probabilistic methods for phylogenetic assignment are preferable but computationally intensive and typically inapplicable to modern next-generation sequencing data.",
+      "claim_type": "EXPLICIT",
+      "source": "It has long been known that full probabilistic methods for phylogenetic assignment are preferable, but unfortunately, such methods are computationally intensive and are typically inapplicable to modern next-generation sequencing data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This reflects established knowledge in the field about the trade-offs between accuracy and computational feasibility.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:48:22.371783Z"
+    },
+    {
+      "id": "46e9a6d3-fa97-46e6-9c8c-23ce516e6e66",
+      "content_id": "2e9aca97-06a3-4509-b396-86760fa41752",
+      "claim_id": "C4",
+      "claim": "The new method identifies more reads at both high and low taxonomic levels more accurately than other leading methods.",
+      "claim_type": "EXPLICIT",
+      "source": "Applying the new method to several mock communities and simulated datasets, we show that it identifies more reads at both high and low taxonomic levels more accurately than other leading methods.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from mock communities and simulated datasets presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:48:22.371783Z"
+    },
+    {
+      "id": "d5d3e114-3280-41dd-84c0-21ed2329387c",
+      "content_id": "2e9aca97-06a3-4509-b396-86760fa41752",
+      "claim_id": "C5",
+      "claim": "The advantage of the method is particularly apparent in the presence of polymorphisms and/or sequencing errors.",
+      "claim_type": "EXPLICIT",
+      "source": "The advantage of the method is particularly apparent in the presence of polymorphisms and/or sequencing errors and when the true species is not represented in the reference database.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data from simulations with varying error rates shown in the figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:48:22.371783Z"
+    },
+    {
+      "id": "151e1fdf-fe16-4e36-a100-8603c3675ee9",
+      "content_id": "2e9aca97-06a3-4509-b396-86760fa41752",
+      "claim_id": "C6",
+      "claim": "The advantage of the method is particularly apparent when the true species is not represented in the reference database.",
+      "claim_type": "EXPLICIT",
+      "source": "The advantage of the method is particularly apparent in the presence of polymorphisms and/or sequencing errors and when the true species is not represented in the reference database.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by leave-one-species-out cross-validation tests presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:48:22.371783Z"
+    },
+    {
+      "id": "5571d9f5-21ed-48b6-8366-d0027d5beb2e",
+      "content_id": "2e9aca97-06a3-4509-b396-86760fa41752",
+      "claim_id": "C7",
+      "claim": "More than 80 taxonomic classification methods have been published in the past 10 years.",
+      "claim_type": "EXPLICIT",
+      "source": "This has led to the publication of more than 80 taxonomic classification methods (Gardner et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Gardner et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:48:22.371783Z"
+    },
+    {
+      "id": "09c99ec7-2414-4947-9935-f49924bd65c5",
+      "content_id": "2e9aca97-06a3-4509-b396-86760fa41752",
+      "claim_id": "C8",
+      "claim": "There are three major strategies in classification methods: composition-based, alignment-based, and phylogenetic-based.",
+      "claim_type": "EXPLICIT",
+      "source": "There are three major strategies in classification methods: (1) composition-based, which do not align sequences but extract compositional features (e.g., kmers) to build models of probabilistic taxonomic inclusion; (2) alignment-based, which rely on alignments to directly compare query sequences to reference sequences but do not use trees; and (3) phylogenetic-based, which rely on a phylogenetic tree reconstruction method, in addition to alignments, to perform a placement of the query onto the tree.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This represents established knowledge about the categorization of taxonomic classification methods.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:48:22.371783Z"
+    },
+    {
+      "id": "ea5dc388-ad18-4b22-83cd-f57ec54b8bc9",
+      "content_id": "2e9aca97-06a3-4509-b396-86760fa41752",
+      "claim_id": "C9",
+      "claim": "Composition-based methods require an exact match between the kmer in the query sequence and the kmer in the reference database.",
+      "claim_type": "EXPLICIT",
+      "source": "These methods require an exact match between the kmer in the query sequence and the kmer in the reference database.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a known characteristic of composition-based methods.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:48:22.371783Z"
+    },
+    {
+      "id": "dd636e23-bbab-4e3c-8545-c379c3aa9240",
+      "content_id": "2e9aca97-06a3-4509-b396-86760fa41752",
+      "claim_id": "C10",
+      "claim": "Kraken2 can classify >1 million reads within 1 min using the entire Greengenes or SILVA databases.",
+      "claim_type": "EXPLICIT",
+      "source": "As a result of hash indexing of kmers, kraken2 (Wood et al., 2019), for example, can classify >1 million reads within 1 min using the entire Geengenes or SILVA databases (Lu and Salzberg, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Wood et al., 2019 and Lu and Salzberg, 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:48:22.371783Z"
+    },
+    {
+      "id": "03e50548-be21-4aea-9687-024ad5a4b37c",
+      "content_id": "2e9aca97-06a3-4509-b396-86760fa41752",
+      "claim_id": "C11",
+      "claim": "Alignment-based methods can be many orders of magnitude slower than composition-based tools.",
+      "claim_type": "EXPLICIT",
+      "source": "However, alignment-based methods can be many orders of magnitude slower than composition-based tools since datasets with >10 million reads require weeks of BLASTN running time (Ainsworth et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Ainsworth et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:48:22.371783Z"
+    },
+    {
+      "id": "d38adc90-f374-4ac0-a707-8f1cf03d3e37",
+      "content_id": "2e9aca97-06a3-4509-b396-86760fa41752",
+      "claim_id": "C12",
+      "claim": "Datasets with >10 million reads require weeks of BLASTN running time.",
+      "claim_type": "EXPLICIT",
+      "source": "However, alignment-based methods can be many orders of magnitude slower than composition-based tools since datasets with >10 million reads require weeks of BLASTN running time (Ainsworth et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Ainsworth et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:48:22.371783Z"
+    },
+    {
+      "id": "194a9b89-ce70-4a05-9bcf-316c31549ba0",
+      "content_id": "2e9aca97-06a3-4509-b396-86760fa41752",
+      "claim_id": "C13",
+      "claim": "Large datasets with high rates of evolution are hard to align accurately.",
+      "claim_type": "EXPLICIT",
+      "source": "However, large datasets with high rates of evolution are hard to align accurately (Sievers et al., 2011) and phylogeny estimation methods produce poor trees when MSAs are not of high quality (Kapli et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Sievers et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:48:22.371783Z"
+    },
+    {
+      "id": "cb596f45-f84d-44b7-b255-182b3c81a28e",
+      "content_id": "2e9aca97-06a3-4509-b396-86760fa41752",
+      "claim_id": "C14",
+      "claim": "Phylogeny estimation methods produce poor trees when MSAs are not of high quality.",
+      "claim_type": "EXPLICIT",
+      "source": "However, large datasets with high rates of evolution are hard to align accurately (Sievers et al., 2011) and phylogeny estimation methods produce poor trees when MSAs are not of high quality (Kapli et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Kapli et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:48:22.371783Z"
+    },
+    {
+      "id": "f8fea05e-412d-4aee-8cd6-0e914852b385",
+      "content_id": "2e9aca97-06a3-4509-b396-86760fa41752",
+      "claim_id": "C15",
+      "claim": "Phylogenetic placement tends to be computationally demanding as both running time and memory usage scale linearly with the size of the reference database.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, phylogenetic placement tends to be computationally demanding as both running time and memory usage scale linearly with the size of the reference database (Balaban et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Balaban et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:48:22.371783Z"
+    },
+    {
+      "id": "e4ea1738-7714-4a27-8f6d-93f29233d92a",
+      "content_id": "2e9aca97-06a3-4509-b396-86760fa41752",
+      "claim_id": "C16",
+      "claim": "For reference databases with as few as 1600 sequences, assignment for a single query using pplacer takes more than 7 min and requires over 10 GB of RAM.",
+      "claim_type": "EXPLICIT",
+      "source": "Even for reference databases that contain sequences as few as 1600 sequences, assignment for a single query using the most cited phylogenetic placement method, pplacer (Matsen et al., 2010), takes more than 7 min and requires over 10 GB of RAM (on a Dell PowerEdge server with 32 CPU threads and 512 GB of RAM).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental measurements conducted by the authors on specific hardware.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:48:22.371783Z"
+    },
+    {
+      "id": "61eeb6fc-4b58-497e-9873-24c325138e41",
+      "content_id": "2e9aca97-06a3-4509-b396-86760fa41752",
+      "claim_id": "C17",
+      "claim": "For a reference database with 1.5 million COI sequences, assigning a single query with pplacer would require 20.9 hr and 2.37 TB RAM.",
+      "claim_type": "EXPLICIT",
+      "source": "At this rate, a reference database that contains a metabarcode such as cytochrome oxidase 1 (COI) that has at least 1.5 million reference sequences, assigning just a single query would require 20.9 hr and 2.37 TB RAM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on scaling calculations from the measured performance data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:48:22.371783Z"
+    },
+    {
+      "id": "848d3161-a189-4015-9c58-7774bf622c33",
+      "content_id": "2e9aca97-06a3-4509-b396-86760fa41752",
+      "claim_id": "C18",
+      "claim": "Recent implementations of phylogeny-based methods rely on reference database reduction techniques to handle large amounts of data.",
+      "claim_type": "EXPLICIT",
+      "source": "To address these challenges, the most recent implementations of phylogeny-based methods (Barbera et al., 2019) rely on reference database reduction techniques (i.e., using only representative taxa or consensus sequences for a sparse backbone tree) to handle the large amount of data that is routinely produced.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Barbera et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:48:22.371783Z"
+    },
+    {
+      "id": "6be9cd54-4419-42e1-91cc-26a360a13e68",
+      "content_id": "2e9aca97-06a3-4509-b396-86760fa41752",
+      "claim_id": "C19",
+      "claim": "Often a single species is selected to represent an entire clade in phylogeny-based methods.",
+      "claim_type": "EXPLICIT",
+      "source": "Often a single species is selected to represent an entire clade (Czech et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Czech et al., 2022.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:48:22.371783Z"
+    },
+    {
+      "id": "df4578c5-1e09-4c65-84ae-8d87d76498ae",
+      "content_id": "2e9aca97-06a3-4509-b396-86760fa41752",
+      "claim_id": "C20",
+      "claim": "Database reduction reduces the computational cost but also reduces the granularity and potentially the accuracy of assignments.",
+      "claim_type": "EXPLICIT",
+      "source": "While this reduces the computational cost, it also reduces the granularity, and potentially the accuracy, of the assignments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference about the trade-offs of database reduction techniques.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:48:22.371783Z"
+    },
+    {
+      "id": "d0565df2-bbc3-486f-9a3b-c0107a7e66f8",
+      "content_id": "2e9aca97-06a3-4509-b396-86760fa41752",
+      "claim_id": "C21",
+      "claim": "Tronko is the first phylogeny-based taxonomic classification method designed to enable the use of modern-day reference databases and NGS data.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we describe a new method for phylogenetic placement, implemented in the program 'Tronko' (https://github.com/lpipes/tronko, Mapper and Pipes, 2024), the first phylogeny-based taxonomic classification method designed to truly enable the use of modern-day reference databases and NGS data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim made by the authors about their method's novelty and capabilities.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:48:22.371783Z"
+    },
+    {
+      "id": "f8a1615b-ff17-445b-af95-204b4801155a",
+      "content_id": "2e9aca97-06a3-4509-b396-86760fa41752",
+      "claim_id": "C22",
+      "claim": "Tronko shows speed-ups >20 times over pplacer with vastly reduced memory requirements.",
+      "claim_type": "EXPLICIT",
+      "source": "Tronko shows speed-ups >20 times over pplacer, with a vastly reduced memory requirement illustrating the computational advantage of the approximations in Tronko (Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:48:22.371783Z"
+    },
+    {
+      "id": "a513a69c-b949-48d9-8b04-051adb12e0e8",
+      "content_id": "2e9aca97-06a3-4509-b396-86760fa41752",
+      "claim_id": "C23",
+      "claim": "Tronko demonstrates a speed-up >2 times over APPLES-2 with a similar memory footprint.",
+      "claim_type": "EXPLICIT",
+      "source": "Tronko demonstrates a speed-up >2 times over APPLES-2 with a similar memory footprint.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by comparative performance data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:48:22.371783Z"
+    },
+    {
+      "id": "b61781ea-671e-47b1-9936-ee0c1cc85522",
+      "content_id": "2e9aca97-06a3-4509-b396-86760fa41752",
+      "claim_id": "C24",
+      "claim": "All methods (Tronko, pplacer, and APPLES-2) had a 100% true-positive rate at the species level for reference databases with <1600 sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "In terms of accuracy, all methods had a 100% true-positive rate at the species level.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data comparing the methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:48:22.371783Z"
+    },
+    {
+      "id": "e17b4a0e-a7f6-4022-815a-c452860d9c9e",
+      "content_id": "2e9aca97-06a3-4509-b396-86760fa41752",
+      "claim_id": "C25",
+      "claim": "Tronko assigns the most queries at the species level compared to pplacer and APPLES-2.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, in terms of the species assignment rate (the percentage of queries that were assigned at the species level), Tronko assigns the most queries.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by comparative data on assignment rates.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:48:22.371783Z"
+    },
+    {
+      "id": "49c9114b-408d-45c8-94bd-10943aafcdba",
+      "content_id": "2e9aca97-06a3-4509-b396-86760fa41752",
+      "claim_id": "C26",
+      "claim": "Using 150 bp paired-end reads with 1% error, Tronko had a misclassification rate of only 9.8% with a recall rate of 70.1% at the genus level using a cut-off set to 15.",
+      "claim_type": "EXPLICIT",
+      "source": "Using 150 bp paired-end reads with 1% error, Tronko had a misclassification rate of only 9.8% with a recall rate of 70.1% at the genus level using a cut-off set to 15 while kraken2, MEGAN, and metaphlan2 had misclassification rates of 33.5, 10.0, and 27.7%, respectively, with recall rates of 90.6, 52.1, and 95.0% (see Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 2B from leave-one-species-out tests.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:48:22.371783Z"
+    },
+    {
+      "id": "1143b02a-2d51-4ae9-adab-5e7e6c791963",
+      "content_id": "2e9aca97-06a3-4509-b396-86760fa41752",
+      "claim_id": "C27",
+      "claim": "Kraken2, MEGAN, and metaphlan2 had misclassification rates of 33.5, 10.0, and 27.7%, respectively, with recall rates of 90.6, 52.1, and 95.0% for 150 bp paired-end reads with 1% error.",
+      "claim_type": "EXPLICIT",
+      "source": "Using 150 bp paired-end reads with 1% error, Tronko had a misclassification rate of only 9.8% with a recall rate of 70.1% at the genus level using a cut-off set to 15 while kraken2, MEGAN, and metaphlan2 had misclassification rates of 33.5, 10.0, and 27.7%, respectively, with recall rates of 90.6, 52.1, and 95.0% (see Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:48:22.371783Z"
+    },
+    {
+      "id": "9aedef41-9175-4b6e-b2fc-84733725bfb2",
+      "content_id": "2e9aca97-06a3-4509-b396-86760fa41752",
+      "claim_id": "C28",
+      "claim": "Using 150 bp paired-end reads with 0% error, Tronko had a misclassification rate of 0.1% with a recall rate of 58.6% at the species level using a cut-off set to 10.",
+      "claim_type": "EXPLICIT",
+      "source": "Using 150 bp paired-end reads with 0% error (Figure 4D), Tronko had a misclassification rate at only 0.1% with a recall rate of 58.6% at the species level using a cut-off set to 10 while kraken2, MEGAN, and metaphlan2 had misclassification rates of 1.5, 0.1, and 11.0%, respectively, with recall rates of 85.4, 60.7, and 98.14%.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 4D from leave-one-individual-out tests.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:48:22.371783Z"
+    },
+    {
+      "id": "61e13525-4a8f-46e9-b015-aece637f8b21",
+      "content_id": "2e9aca97-06a3-4509-b396-86760fa41752",
+      "claim_id": "C29",
+      "claim": "Kraken2, MEGAN, and metaphlan2 had misclassification rates of 1.5, 0.1, and 11.0%, respectively, with recall rates of 85.4, 60.7, and 98.14% for 150 bp paired-end reads with 0% error in leave-one-individual-out tests.",
+      "claim_type": "EXPLICIT",
+      "source": "Using 150 bp paired-end reads with 0% error (Figure 4D), Tronko had a misclassification rate at only 0.1% with a recall rate of 58.6% at the species level using a cut-off set to 10 while kraken2, MEGAN, and metaphlan2 had misclassification rates of 1.5, 0.1, and 11.0%, respectively, with recall rates of 85.4, 60.7, and 98.14%.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:48:22.371783Z"
+    },
+    {
+      "id": "64684ff0-a196-4937-bc5f-b542a641403e",
+      "content_id": "2e9aca97-06a3-4509-b396-86760fa41752",
+      "claim_id": "C30",
+      "claim": "For increasing error rates, kraken2 and metaphlan2 have a substantial increase in misclassification rate.",
+      "claim_type": "EXPLICIT",
+      "source": "We also observe that for increasing error rates, kraken2 and metaphlan2 have a substantial increase in misclassification rate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation based on data from simulations with varying error rates.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:48:22.371783Z"
+    },
+    {
+      "id": "4e67c846-6e8a-49f1-a971-74580163c1f3",
+      "content_id": "2e9aca97-06a3-4509-b396-86760fa41752",
+      "claim_id": "C31",
+      "claim": "In all simulations at both the genus and family levels for 16S, Tronko had a higher recall and a lower misclassification rate than all other methods.",
+      "claim_type": "EXPLICIT",
+      "source": "In all simulations at both the genus and family levels, Tronko had a higher recall and a lower misclassification rate than all other methods.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by data from 16S leave-one-species-out tests shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:48:22.371783Z"
+    },
+    {
+      "id": "9a01ccae-2b88-4bec-bd34-052f2992a6a6",
+      "content_id": "2e9aca97-06a3-4509-b396-86760fa41752",
+      "claim_id": "C32",
+      "claim": "For the Schirmer et al., 2015 mock community at the species level, Tronko had a <0.6% misclassification rate at every cut-off with a recall rate of 11.0% at cut-off 0.",
+      "claim_type": "EXPLICIT",
+      "source": "For the data from Schirmer et al., 2015, at the species level, Tronko had a <0.6% misclassification rate at every cut-off with a recall rate of 11.0% at cut-off 0 (Figure 6A; see Figure 6\u2014figure supplement 1 for plot without outliers).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data from the Schirmer et al., 2015 mock community shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:48:22.371783Z"
+    },
+    {
+      "id": "1c273edd-9b4f-4d26-8bfa-c4c45700d2fd",
+      "content_id": "2e9aca97-06a3-4509-b396-86760fa41752",
+      "claim_id": "C33",
+      "claim": "Kraken2 had a misclassification rate of 1.2% with a recall rate of 10.6% when using its default database on the Schirmer et al., 2015 mock community.",
+      "claim_type": "EXPLICIT",
+      "source": "kraken2 had a misclassification rate of 1.2% with a recall rate of 10.6% when using its default database, and a misclassification rate of 3.5% and a recall rate of 35.1% when using the same reference sequences as Tronko.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by data from the Schirmer et al., 2015 mock community analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:48:22.371783Z"
+    },
+    {
+      "id": "d87a3528-7eeb-4c83-adac-7e33d1f9d83e",
+      "content_id": "2e9aca97-06a3-4509-b396-86760fa41752",
+      "claim_id": "C34",
+      "claim": "Metaphlan2 did not have any assignments at the species, genus, or family level using the default database for the Schirmer et al., 2015 mock community.",
+      "claim_type": "EXPLICIT",
+      "source": "metaphlan2 did not have any assignments at the species, genus, or family level using the default database, and it had an 8.3% misclassification and 8.9% recall rate at the species level when using the same reference sequences as Tronko.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by data from the Schirmer et al., 2015 mock community analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:48:22.371783Z"
+    },
+    {
+      "id": "01dda30a-4eee-410e-b332-d0e315023cf7",
+      "content_id": "2e9aca97-06a3-4509-b396-86760fa41752",
+      "claim_id": "C35",
+      "claim": "For the Lluch et al., 2015 mock community at the genus level, Tronko had a misclassification rate of 0.6% and a recall rate of 22.3% using a cut-off of 0.",
+      "claim_type": "EXPLICIT",
+      "source": "For the data from Lluch et al., 2015, at the genus level, Tronko had a misclassification rate of 0.6% and a recall rate of 22.3% using a cut-off of 0, while all other methods had a misclassification rate of >8% (see Figure 6\u2014figure supplement 2 for a close-up of the rates).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data from the Lluch et al., 2015 mock community shown in Figure 6\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:48:22.371783Z"
+    },
+    {
+      "id": "60ba7b4e-c45c-4245-a2e6-082ecd55fc71",
+      "content_id": "2e9aca97-06a3-4509-b396-86760fa41752",
+      "claim_id": "C36",
+      "claim": "For the Gohl et al., 2016 mock community at the species level, Tronko had a <2.6% misclassification rate at every cut-off with a recall rate of 12.8% at cut-off 0.",
+      "claim_type": "EXPLICIT",
+      "source": "For the data from Gohl et al., 2016, at the species level, Tronko had a <2.6% misclassification rate at every cut-off with a recall rate of 12.8% at cut-off 0 (Figure 6C; see Figure 6\u2014figure supplement 3 for plot without outliers).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data from the Gohl et al., 2016 mock community shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:48:22.371783Z"
+    },
+    {
+      "id": "f657d88f-36d2-4abc-8718-186abd4c9767",
+      "content_id": "2e9aca97-06a3-4509-b396-86760fa41752",
+      "claim_id": "C37",
+      "claim": "For the Braukmann et al., 2019 COI mock community at the genus level, Tronko had a misclassification rate of <0.5% with a recall rate of 78.3% at the cut-off of 0.",
+      "claim_type": "EXPLICIT",
+      "source": "At the genus level, Tronko had a misclassification rate of <0.5% with a recall rate of 78.3% at the cut-off of 0 (Figure 6D; see Figure 6\u2014figure supplement 4 for plot without outliers).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data from the Braukmann et al., 2019 mock community shown in Figure 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:48:22.371783Z"
+    },
+    {
+      "id": "775b2caa-3745-4bce-b08c-64d29bdf0d06",
+      "content_id": "2e9aca97-06a3-4509-b396-86760fa41752",
+      "claim_id": "C38",
+      "claim": "Kraken2 is clearly the fastest method among those compared.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the methods compared here, kraken2 is clearly the fastest (Figure 7A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by running time data shown in Figure 7A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:48:22.371783Z"
+    },
+    {
+      "id": "39d03c58-3683-4439-9178-b98f81bd99b8",
+      "content_id": "2e9aca97-06a3-4509-b396-86760fa41752",
+      "claim_id": "C39",
+      "claim": "Kraken2 generally has the worst performance with a higher misclassification rate than other methods, especially in leave-one-species-out simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it generally also has the worst performance with a higher misclassification rate than other methods, especially in the leave-one-species-out simulations (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:48:22.371783Z"
+    },
+    {
+      "id": "606f8e7a-02a3-47f4-9887-e77a5eea0af5",
+      "content_id": "2e9aca97-06a3-4509-b396-86760fa41752",
+      "claim_id": "C40",
+      "claim": "Both metaphlan2 and MEGAN tend to fall within the convex hull of Tronko.",
+      "claim_type": "EXPLICIT",
+      "source": "Both metaphlan2 and MEGAN tend to fall within the convex hull of Tronko.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation based on the recall vs. misclassification rate plots presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:48:22.371783Z"
+    },
+    {
+      "id": "0e3c5e10-fec4-4773-928d-a3d7b28aa37f",
+      "content_id": "2e9aca97-06a3-4509-b396-86760fa41752",
+      "claim_id": "C41",
+      "claim": "Metaphlan2 assigns much more aggressively and has both a recall and misclassification rate that is much higher than MEGAN.",
+      "claim_type": "EXPLICIT",
+      "source": "Typically, metaphlan2 assigns much more aggressively, and therefore, has both a recall and misclassification rate that is much higher than MEGAN, which assigns very conservatively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation based on comparative data from the analyses.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:48:22.371783Z"
+    },
+    {
+      "id": "43370625-6ed9-42cf-ab6e-cf007a0666ed",
+      "content_id": "2e9aca97-06a3-4509-b396-86760fa41752",
+      "claim_id": "C42",
+      "claim": "The computational speed of MEGAN is so low that it may be prohibitive in some applications.",
+      "claim_type": "EXPLICIT",
+      "source": "We also note that the computational speed of MEGAN is so low that it, in some applications, may be prohibitive (Figure 7A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by running time data shown in Figure 7A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:48:22.371783Z"
+    },
+    {
+      "id": "ec60e797-481b-49c3-b00f-da3ea96c313e",
+      "content_id": "2e9aca97-06a3-4509-b396-86760fa41752",
+      "claim_id": "C43",
+      "claim": "When short, single-end reads are used (i.e., 150 bp single-end reads), the wavefront alignment performs worse than the Needleman\u2013Wunsch alignment.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in the case, where short, single-end reads are used (i.e., 150 bp single-end reads), the wavefront alignment performs worse than the Needleman\u2013Wunsch alignment (see Figure 2\u2014figure supplement 2D\u2013F and Figure 4\u2014figure supplement 2D\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 2\u2014figure supplement 2D\u2013F and Figure 4\u2014figure supplement 2D\u2013F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:48:22.371783Z"
+    },
+    {
+      "id": "094b2f57-e623-4c96-8dec-230284a5aa97",
+      "content_id": "2e9aca97-06a3-4509-b396-86760fa41752",
+      "claim_id": "C44",
+      "claim": "When there is a large difference between the two sequences being aligned, the wavefront alignment forces an end-to-end alignment which contains large gaps at the beginning and end of the alignment.",
+      "claim_type": "EXPLICIT",
+      "source": "However, when there is a large difference between the two sequences being aligned, we notice that the wavefront alignment forces an end-to-end alignment which contains large gaps at the beginning and end of the alignment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation based on the authors' analysis of the wavefront alignment algorithm's behavior.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:48:22.371783Z"
+    },
+    {
+      "id": "01c03b58-111f-4edf-993a-e641657469c4",
+      "content_id": "2e9aca97-06a3-4509-b396-86760fa41752",
+      "claim_id": "C45",
+      "claim": "Based on current implementations, the wavefront alignment cannot be recommended for assignment purposes of short reads.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, based on current implementations, we cannot recommend the use of the wavefront alignment for assignment purposes of short reads, although this conclusion could change with future improvements in the implementation of the wavefront alignment algorithm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation based on the authors' analysis of the wavefront alignment performance.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:48:22.371783Z"
+    },
+    {
+      "id": "4636d1ea-7544-4301-a04d-03008e21a30b",
+      "content_id": "2e9aca97-06a3-4509-b396-86760fa41752",
+      "claim_id": "C46",
+      "claim": "Tronko is currently not applicable to eukaryotic genomic data as it requires well-curated alignments of markers and associated phylogenetic trees.",
+      "claim_type": "EXPLICIT",
+      "source": "Tronko is currently not applicable to eukaryotic genomic data as it requires well-curated alignments of markers and associated phylogenetic trees, although we note that whole-genome phylogenetic reference databases for such data could potentially be constructed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the current limitations of the method.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:48:22.371783Z"
+    },
+    {
+      "id": "b63fe506-a943-43a5-b34f-3f35067b7800",
+      "content_id": "2e9aca97-06a3-4509-b396-86760fa41752",
+      "claim_id": "C47",
+      "claim": "Tronko currently has larger memory requirements than methods that are not phylogeny-based.",
+      "claim_type": "EXPLICIT",
+      "source": "Tronko currently has larger memory requirements than methods that are not phylogeny-based.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by memory usage data shown in Figure 7B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:48:22.371783Z"
+    },
+    {
+      "id": "12b9fece-10c9-476e-ab04-b5aab5dc38f7",
+      "content_id": "2e9aca97-06a3-4509-b396-86760fa41752",
+      "claim_id": "C48",
+      "claim": "For assignment to viruses, amplicon sequencing, and other forms of non-genomic barcoding, Tronko provides a substantial improvement over existing assignment methods.",
+      "claim_type": "EXPLICIT",
+      "source": "Nonetheless, for assignment to viruses, amplicon sequencing, and other forms of non-genomic barcoding, Tronko provides a substantial improvement over existing assignment methods and is the first full phylogenetic assignment method applicable to modern large datasets generated using NGS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the comparative performance data presented throughout the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:48:22.371783Z"
+    },
+    {
+      "id": "0144f056-d194-4cd7-8393-0f821b16a8db",
+      "content_id": "2e9aca97-06a3-4509-b396-86760fa41752",
+      "claim_id": "C49",
+      "claim": "Tronko is the first full phylogenetic assignment method applicable to modern large datasets generated using NGS.",
+      "claim_type": "EXPLICIT",
+      "source": "Nonetheless, for assignment to viruses, amplicon sequencing, and other forms of non-genomic barcoding, Tronko provides a substantial improvement over existing assignment methods and is the first full phylogenetic assignment method applicable to modern large datasets generated using NGS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the novelty and applicability of the method.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:48:22.371783Z"
+    },
+    {
+      "id": "2347bb51-4f31-47b2-9e9a-b77899650ff8",
+      "content_id": "2e9aca97-06a3-4509-b396-86760fa41752",
+      "claim_id": "C50",
+      "claim": "Tronko can be downloaded at https://github.com/lpipes/tronko and is available under an open-software license.",
+      "claim_type": "EXPLICIT",
+      "source": "Tronko can be downloaded at https://github.com/lpipes/tronko and is available under an open-software license (Mapper and Pipes, 2024).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about software availability.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:48:22.371783Z"
+    },
+    {
+      "id": "ebb65a14-535a-4fb2-9a5c-b1b34247e396",
+      "content_id": "2e9aca97-06a3-4509-b396-86760fa41752",
+      "claim_id": "C51",
+      "claim": "The algorithm used for assignment takes advantage of pre-calculated posterior probabilities of nucleotides at internal nodes of a phylogeny.",
+      "claim_type": "EXPLICIT",
+      "source": "The algorithm used for assignment takes advantage of pre-calculated posterior probabilities of nucleotides at internal nodes of a phylogeny.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a key feature of the Tronko method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:48:22.371783Z"
+    },
+    {
+      "id": "95a24c27-ee13-4b20-b972-de2755b2b061",
+      "content_id": "2e9aca97-06a3-4509-b396-86760fa41752",
+      "claim_id": "C52",
+      "claim": "The calculations are achieved using an algorithm that traverses the tree only twice to calculate posterior probabilities simultaneously for all nodes in the tree.",
+      "claim_type": "EXPLICIT",
+      "source": "The calculations are achieved using an algorithm that traverses the tree only twice to calculate posterior probabilities simultaneously for all nodes in the tree.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the computational approach used in the method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:48:22.371783Z"
+    },
+    {
+      "id": "ea9ab287-c748-4837-a3cb-7265ccfa69c5",
+      "content_id": "2e9aca97-06a3-4509-b396-86760fa41752",
+      "claim_id": "C53",
+      "claim": "The algorithm used here is linear in the number of nodes as it calculates posterior probabilities for all nodes using a single postorder and a single preorder traversal.",
+      "claim_type": "EXPLICIT",
+      "source": "While naive application of standard algorithms for calculating posterior probabilities in a node, to all nodes of a tree, has computational complexity that is quadratic in the number of nodes, the algorithm used here is linear in the number of nodes as it calculates posterior probabilities for all nodes using a single postorder and a single preorder traversal without having to repeat the calculation for each node in the tree.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the computational complexity of the algorithm.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:48:22.371783Z"
+    },
+    {
+      "id": "4410a846-db87-4e56-8db8-83efce19a341",
+      "content_id": "2e9aca97-06a3-4509-b396-86760fa41752",
+      "claim_id": "C54",
+      "claim": "MSAs for a large number of sequences can become unreliable and computationally challenging to work with due to the large number of insertions and deletions.",
+      "claim_type": "EXPLICIT",
+      "source": "MSAs for a large number of sequences can become unreliable and computationally challenging to work with due to the large number of insertions and deletions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This reflects established knowledge about challenges in multiple sequence alignment.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:48:22.371783Z"
+    },
+    {
+      "id": "274d93a5-2efb-4305-9eea-3e6c061c773f",
+      "content_id": "2e9aca97-06a3-4509-b396-86760fa41752",
+      "claim_id": "C55",
+      "claim": "FAMSA is 1\u20132 orders of magnitude faster than Clustal or MAFFT with similar quality.",
+      "claim_type": "EXPLICIT",
+      "source": "FAMSA is used to optimize for speed since it is 1\u20132 orders of magnitude faster than Clustal (Higgins and Sharp, 1988) or MAFFT (Katoh et al., 2002) with similar quality (see Deorowicz et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Deorowicz et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:48:22.371783Z"
+    },
+    {
+      "id": "76551f4c-7695-4eb9-95ae-e46185953698",
+      "content_id": "2e9aca97-06a3-4509-b396-86760fa41752",
+      "claim_id": "C56",
+      "claim": "BWA-MEM had the lowest error rate for the same amount of fractional mapped reads compared to Minimap2, SNAP, and bowtie2.",
+      "claim_type": "EXPLICIT",
+      "source": "We use BWA-MEM as the original Minimap2 manuscript (Li, 2018) demonstrated that BWA-MEM had the lowest error rate for the same amount of fractional mapped reads compared to Minimap2, SNAP (Zaharia et al., 2011), and bowtie2 (Langdon, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Li, 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:48:22.371783Z"
+    },
+    {
+      "id": "eb183e1e-c365-48e1-a3ec-5ffc5dc0840c",
+      "content_id": "2e9aca97-06a3-4509-b396-86760fa41752",
+      "claim_id": "C57",
+      "claim": "Tronko was able to assign 1,000,000 queries in \u223c8 hr with the choice of aligner being negligible.",
+      "claim_type": "EXPLICIT",
+      "source": "Tronko was able to assign 1,000,000 queries in \u223c8 hr with the choice of aligner being negligible.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by running time data shown in Figure 7A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:48:22.371783Z"
+    },
+    {
+      "id": "c9065ef1-99b4-4818-867a-9922b1bf9757",
+      "content_id": "2e9aca97-06a3-4509-b396-86760fa41752",
+      "claim_id": "C58",
+      "claim": "Tronko had the highest peak memory (\u223c50 GBs) as it stores all reference sequences, their trees, and their posterior probabilities in memory.",
+      "claim_type": "EXPLICIT",
+      "source": "Tronko had the highest peak memory (\u223c50 GBs) as it stores all reference sequences, their trees, and their posterior probabilities in memory.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by memory usage data shown in Figure 7B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:48:22.371783Z"
+    },
+    {
+      "id": "263322b2-e840-4d8b-8768-4a6e88a4d358",
+      "content_id": "2e9aca97-06a3-4509-b396-86760fa41752",
+      "claim_id": "C59",
+      "claim": "For very large databases, the memory requirements can be reduced by processing different alignment subsets sequentially.",
+      "claim_type": "EXPLICIT",
+      "source": "We note that for very large databases, the memory requirements can, in theory, be reduced by processing different alignment subsets sequentially.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about potential future improvements to the method.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:48:22.371783Z"
+    },
+    {
+      "id": "2def1e3b-8e84-4af2-8b99-c78ee954337d",
+      "content_id": "2e9aca97-06a3-4509-b396-86760fa41752",
+      "claim_id": "C60",
+      "claim": "Both leave-one-species-out and leave-one-individual-out simulations show that Tronko recovers the correct taxonomy with higher probability than competing methods.",
+      "claim_type": "EXPLICIT",
+      "source": "Both leave-one-species-out and leave-one-individual-out simulations show that Tronko recovers the correct taxonomy with higher probability than competing methods and represents a substantial improvement over current assignment methods.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion based on the simulation data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:48:22.371783Z"
+    },
+    {
+      "id": "38c00b6d-b524-4f88-ae02-78376f313177",
+      "content_id": "2e9aca97-06a3-4509-b396-86760fa41752",
+      "claim_id": "C61",
+      "claim": "The advantage of Tronko comes from the use of limited full-sequence alignments and the use of phylogenetic assignment based on a fast approximation to the likelihood.",
+      "claim_type": "EXPLICIT",
+      "source": "The advantage of Tronko comes from the use of limited full-sequence alignments and the use of phylogenetic assignment based on a fast approximation to the likelihood.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the reasons for Tronko's superior performance.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:48:22.371783Z"
+    },
+    {
+      "id": "3d4d366c-9570-4921-ae81-e620f45ae934",
+      "content_id": "2e9aca97-06a3-4509-b396-86760fa41752",
+      "claim_id": "C62",
+      "claim": "In most cases the other methods evaluated fall within the convex hull of Tronko, showing that Tronko dominates those methods.",
+      "claim_type": "EXPLICIT",
+      "source": "We note that in most cases the other methods evaluated here fall within the convex hull of Tronko, showing that Tronko dominates those methods, and in no cases do other methods fall above the convex hull of Tronko.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation based on the recall vs. misclassification rate plots.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:48:22.371783Z"
+    },
+    {
+      "id": "7f0be369-8ace-4e77-957b-ba1fc09ba33c",
+      "content_id": "2e9aca97-06a3-4509-b396-86760fa41752",
+      "claim_id": "C63",
+      "claim": "In no cases do other methods fall above the convex hull of Tronko.",
+      "claim_type": "EXPLICIT",
+      "source": "We note that in most cases the other methods evaluated here fall within the convex hull of Tronko, showing that Tronko dominates those methods, and in no cases do other methods fall above the convex hull of Tronko.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation based on the recall vs. misclassification rate plots.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:48:22.371783Z"
+    },
+    {
+      "id": "c04832cf-2ae4-4639-bcee-fd8a594e4a70",
+      "content_id": "2e9aca97-06a3-4509-b396-86760fa41752",
+      "claim_id": "C64",
+      "claim": "Tronko accurately assigned genera from the Scolopacidae family using Needleman\u2013Wunsch with a cut-off of 10 compared to kraken2, metaphlan2, and pplacer.",
+      "claim_type": "EXPLICIT",
+      "source": "Tronko also accurately assigned genera from the Scolopacidae family (top left of matrices in Figure 3) using Needleman\u2013Wunsch with a cut-off of 10 compared to kraken2, metaphlan2, and pplacer.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:48:22.371783Z"
+    },
+    {
+      "id": "553e4b5a-a94a-4641-af23-8d5f17ee2cde",
+      "content_id": "2e9aca97-06a3-4509-b396-86760fa41752",
+      "claim_id": "C65",
+      "claim": "Metaphlan and kraken2 have a number of mis-assignments within the family of Laridae.",
+      "claim_type": "EXPLICIT",
+      "source": "Both metaphlan and kraken2 have a number of mis-assignments within the family of Laridae (see blue points across the diagonal in Figure 4\u2014figure supplement 1A and B) and Tronko is able to accurately assign species within this family or assign at the genus or family level.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 4\u2014figure supplement 1A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:48:22.371783Z"
+    },
+    {
+      "id": "b0efaba0-4a35-4a01-9d0e-a918461709f1",
+      "content_id": "2e9aca97-06a3-4509-b396-86760fa41752",
+      "claim_id": "C66",
+      "claim": "Tronko is able to accurately assign species within the Laridae family or assign at the genus or family level.",
+      "claim_type": "EXPLICIT",
+      "source": "Both metaphlan and kraken2 have a number of mis-assignments within the family of Laridae (see blue points across the diagonal in Figure 4\u2014figure supplement 1A and B) and Tronko is able to accurately assign species within this family or assign at the genus or family level.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:48:22.371783Z"
+    },
+    {
+      "id": "c3eba52b-413a-4d02-adc1-a6be09c76ae2",
+      "content_id": "2e9aca97-06a3-4509-b396-86760fa41752",
+      "claim_id": "C67",
+      "claim": "The use of FAMSA + RAxML + NW was optimal with regard to speed and accuracy.",
+      "claim_type": "EXPLICIT",
+      "source": "We explored different combinations of tree estimation methods (including IQ-TREE2 Minh et al., 2020), multiple sequence aligners, and global aligners (Figure 2\u2014figure supplement 2). While most combinations of methods were quite similar (especially for the genus level), the use of FAMSA + RAxML + NW was optimal with regard to speed and accuracy.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by comparative data shown in Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:48:22.371783Z"
+    },
+    {
+      "id": "cb880bc2-2887-4fc6-a962-e80c8df80638",
+      "content_id": "2e9aca97-06a3-4509-b396-86760fa41752",
+      "claim_id": "C68",
+      "claim": "The procedure for phylogeny estimating and calculation of posterior probabilities only has to be done once for a marker and then can be used repeatedly for assignment using different datasets of query sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "Note that the procedure for phylogeny estimating and calculation of posterior probabilities only has to be done once for a marker and then can be used repeatedly for assignment using different datasets of query sequences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a practical feature of the Tronko workflow.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:48:22.371783Z"
+    },
+    {
+      "id": "618506c4-b756-4d3d-99b1-0d0fd79376ab",
+      "content_id": "2e9aca97-06a3-4509-b396-86760fa41752",
+      "claim_id": "C71",
+      "claim": "Minimizing the score function corresponds to maximizing the full phylogenetic likelihood function assuming that the branch leading to the query sequence is infinitesimally short and connects with the tree in an existing node.",
+      "claim_type": "EXPLICIT",
+      "source": "Minimizing the score function, therefore, corresponds to maximizing the full phylogenetic likelihood function assuming that the branch leading to the query sequence is infinitesimally short and connects with the tree in an existing node.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mathematical inference about the relationship between the score function and phylogenetic likelihood.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:48:22.371783Z"
+    },
+    {
+      "id": "7c9cd725-141a-42d1-97b8-624cfe529d64",
+      "content_id": "2e9aca97-06a3-4509-b396-86760fa41752",
+      "claim_id": "C72",
+      "claim": "The score maximizes the probability of observing the query sequence if it is placed exactly in a node or, equivalently, minimizes the expected mismatch between the query and a predicted sequence sampled from the node.",
+      "claim_type": "EXPLICIT",
+      "source": "An alternative interpretation is that the score maximizes the probability of observing the query sequence if it is placed exactly in a node or, equivalently, minimizes the expected mismatch between the query and a predicted sequence sampled form the node.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This provides an alternative interpretation of the scoring function.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:48:22.371783Z"
+    },
+    {
+      "id": "59a85d88-1db0-42c6-a49a-6109b98131ab",
+      "content_id": "2e9aca97-06a3-4509-b396-86760fa41752",
+      "claim_id": "C74",
+      "claim": "After calculation of scores, the LCA of all of the lowest scoring nodes, using a user-defined cut-off parameter, is calculated.",
+      "claim_type": "EXPLICIT",
+      "source": "After calculation of scores, the LCA of all of the lowest scoring nodes, using a user-defined cut-off parameter, is calculated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the taxonomic assignment procedure in Tronko.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:48:22.371783Z"
+    },
+    {
+      "id": "186904f9-cd5f-4344-af4e-8d5e2b4c2fcb",
+      "content_id": "2e9aca97-06a3-4509-b396-86760fa41752",
+      "claim_id": "C75",
+      "claim": "The classification of query sequences is parallelized.",
+      "claim_type": "EXPLICIT",
+      "source": "The classification of query sequences is parallelized.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a computational feature of the Tronko implementation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:48:22.371783Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "d6cc1f8a-f452-4c1e-8462-677deb998404",
+      "content_id": "2e9aca97-06a3-4509-b396-86760fa41752",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The manuscript establishes the context and motivation for developing Tronko by describing the growing importance of eDNA analysis and the fundamental challenge of taxonomic assignment, noting that full probabilistic phylogenetic methods are preferable but computationally prohibitive for modern NGS data.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3 represent well-established knowledge in the field and provide appropriate context for the work. These are background claims supported by general scientific consensus and do not require experimental validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:48:22.371783Z"
+    },
+    {
+      "id": "d75502ae-7e52-4744-a564-6947427df647",
+      "content_id": "2e9aca97-06a3-4509-b396-86760fa41752",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The manuscript reviews existing taxonomic classification methods, categorizing them into three strategies (composition-based, alignment-based, and phylogenetic-based) and documenting their computational limitations, particularly for phylogenetic methods which scale poorly with database size.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C20 provide a comprehensive literature review with appropriate citations. The computational measurements for pplacer (C16-C17) are supported by experimental data, though C17 is an extrapolation that assumes linear scaling. The review accurately characterizes the state of the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:48:22.371783Z"
+    },
+    {
+      "id": "3f9e4655-3d0d-4c48-adb5-dc86ac74bf33",
+      "content_id": "2e9aca97-06a3-4509-b396-86760fa41752",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Tronko is presented as a novel phylogeny-based taxonomic classification method that uses pre-calculated posterior probabilities at tree nodes and a linear-time algorithm to enable phylogenetic assignment for modern NGS datasets, approximating full likelihood calculations by assuming infinitesimally short query branches.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21, C49, C51-C53, C68, C71-C72, C74-C75 describe the methodological innovation of Tronko. The mathematical framework (C71-C72) provides theoretical justification for the approximation. The linear complexity claim (C53) is supported by the algorithmic description. However, the claim of being 'first' (C21, C49) is difficult to verify definitively without exhaustive literature review.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:48:22.371783Z"
+    },
+    {
+      "id": "c13f94d6-6dfe-4d58-88fd-4776d754dfe0",
+      "content_id": "2e9aca97-06a3-4509-b396-86760fa41752",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "For small reference databases (<1600 sequences), Tronko demonstrates >20\u00d7 speed-up over pplacer and >2\u00d7 speed-up over APPLES-2 with reduced memory requirements, while maintaining 100% true-positive rate and highest species assignment rate among phylogenetic methods.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C25 are supported by data in Figure 1\u2014figure supplement 2. All three methods achieved 100% accuracy on small databases (C24), validating the approximations in Tronko. The performance improvements are clearly demonstrated, though limited to small database sizes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:48:22.371783Z"
+    },
+    {
+      "id": "0a9f9cb3-edfb-4149-b179-f7022027f620",
+      "content_id": "2e9aca97-06a3-4509-b396-86760fa41752",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "In leave-one-species-out cross-validation tests on COI and 16S data, Tronko consistently achieves lower misclassification rates relative to recall compared to kraken2, MEGAN, and metaphlan2, with the advantage particularly apparent at higher error rates and when species are missing from the reference database.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C27, C30-C31, C39, C60-C64 are supported by extensive simulation data in Figures 2-5. The convex hull analysis (C62-C63) provides a rigorous framework for comparing methods. The leave-one-species-out design directly tests the scenario where the true species is absent, which is a realistic and important test case.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:48:22.371783Z"
+    },
+    {
+      "id": "ae71752d-b5e0-406f-a511-de2b16d32a29",
+      "content_id": "2e9aca97-06a3-4509-b396-86760fa41752",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "In leave-one-individual-out tests with 0% error, Tronko achieved 0.1% misclassification rate with 58.6% recall at species level, compared to 1.5%, 0.1%, and 11.0% misclassification rates for kraken2, MEGAN, and metaphlan2 respectively.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C29 are supported by data in Figure 4D. The leave-one-individual-out test is less stringent than leave-one-species-out since closely related sequences remain in the database. Tronko's lower recall compared to other methods suggests more conservative assignment, which may be appropriate given the lower misclassification rate.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:48:22.371783Z"
+    },
+    {
+      "id": "ef9d3591-5239-4dab-9fdc-e7aea12efb13",
+      "content_id": "2e9aca97-06a3-4509-b396-86760fa41752",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "On four independent mock community datasets (Schirmer et al. 2015, Lluch et al. 2015, Gohl et al. 2016, Braukmann et al. 2019), Tronko consistently achieved low misclassification rates (<2.6% for 16S, <0.5% for COI) while maintaining moderate to high recall, outperforming other methods particularly when using the same reference database.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C37 are supported by data in Figure 6 and supplements. The mock community tests provide important validation on real experimental data. However, Tronko's recall is often lower than competing methods, suggesting a trade-off between precision and sensitivity. The comparison is complicated by different methods using different default databases.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:48:22.371783Z"
+    },
+    {
+      "id": "d3d46bf9-3019-422a-9295-0a33b40e666c",
+      "content_id": "2e9aca97-06a3-4509-b396-86760fa41752",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Computational benchmarking shows kraken2 is fastest but least accurate, MEGAN is prohibitively slow, and Tronko can process 1 million queries in ~8 hours with ~50 GB peak memory, representing higher memory usage than non-phylogenetic methods but practical performance for large-scale analyses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38, C42, C47, C57-C58 are supported by data in Figure 7. The computational analysis provides important practical information. The memory requirement (C47, C58) is acknowledged as a limitation but is within the range of modern computational resources. The speed comparison is fair as all methods were run on the same hardware.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:48:22.371783Z"
+    },
+    {
+      "id": "8e031b10-4adc-47eb-871c-0731f56bf364",
+      "content_id": "2e9aca97-06a3-4509-b396-86760fa41752",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Metaphlan2 and MEGAN show contrasting assignment strategies, with metaphlan2 assigning aggressively (high recall and misclassification) and MEGAN assigning conservatively (low recall and misclassification), both generally falling within Tronko's convex hull in recall-misclassification space.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C41 are supported by observations across multiple figures. This characterization helps explain the performance differences between methods and validates the convex hull analysis approach for method comparison.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:48:22.371783Z"
+    },
+    {
+      "id": "ac1c0adb-d3b8-48be-8e7e-3a69aa5741d3",
+      "content_id": "2e9aca97-06a3-4509-b396-86760fa41752",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The wavefront alignment algorithm performs worse than Needleman-Wunsch for short single-end reads (150 bp) due to forcing end-to-end alignments with large gaps when sequences differ substantially, leading to a recommendation against using wavefront alignment for short read assignment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C45 are supported by data in Figure 2\u2014figure supplement 2D-F and Figure 4\u2014figure supplement 2D-F. The analysis appropriately identifies a limitation of the wavefront implementation and provides practical guidance. The recommendation (C45) is appropriately cautious, noting that future improvements might change this conclusion.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:48:22.371783Z"
+    },
+    {
+      "id": "4eacdb7f-f5eb-4aca-a0e5-806428d92791",
+      "content_id": "2e9aca97-06a3-4509-b396-86760fa41752",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The manuscript describes the rationale for algorithmic choices in Tronko-build, including using FAMSA for speed (1-2 orders of magnitude faster than alternatives), BWA-MEM for lowest error rate, and determining that FAMSA+RAxML+Needleman-Wunsch was optimal for speed and accuracy.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C56, C67 are supported by citations and comparative data in Figure 2\u2014figure supplement 2. The methodological choices are well-justified. C67 is supported by empirical comparison of different method combinations, though 'optimal' is relative to the specific metrics and datasets tested.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:48:22.371783Z"
+    },
+    {
+      "id": "10ca5968-7e78-42c8-8fb3-27bfe40fad53",
+      "content_id": "2e9aca97-06a3-4509-b396-86760fa41752",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The manuscript acknowledges current limitations of Tronko, including inapplicability to eukaryotic genomic data due to requiring well-curated marker alignments, though notes potential for future extension and that memory requirements could theoretically be reduced by sequential processing of alignment subsets.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46 and C59 appropriately acknowledge limitations. C46 correctly identifies that the method is designed for marker-based approaches rather than whole-genome metagenomics. C59 is speculative about future improvements but appropriately qualified as theoretical.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:48:22.371783Z"
+    },
+    {
+      "id": "67bc7aec-a818-450c-aaad-a97ad88110d4",
+      "content_id": "2e9aca97-06a3-4509-b396-86760fa41752",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The manuscript concludes that Tronko identifies more reads at both high and low taxonomic levels more accurately than other leading methods, with advantages particularly apparent in the presence of polymorphisms/sequencing errors and when true species are absent from the reference database, providing substantial improvement for viruses, amplicon sequencing, and non-genomic barcoding applications.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C6, C48 represent the main conclusions and are well-supported by the extensive simulation and mock community data presented throughout the manuscript. The advantages are demonstrated across multiple datasets and conditions. However, 'more accurately' should be qualified as 'lower misclassification rate' since recall is sometimes lower than competing methods.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:48:22.371783Z"
+    },
+    {
+      "id": "2205b5ca-4dbd-4e72-ac37-1cc9c3277066",
+      "content_id": "2e9aca97-06a3-4509-b396-86760fa41752",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Tronko software is available at https://github.com/lpipes/tronko under an open-source license.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C50 is a factual statement about software availability that can be verified and is appropriately documented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:48:22.371783Z"
+    },
+    {
+      "id": "d7d67580-3168-4507-8f60-231704b8976e",
+      "content_id": "2e9aca97-06a3-4509-b396-86760fa41752",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Within the Laridae family, metaphlan2 and kraken2 show numerous misassignments while Tronko accurately assigns species or appropriately assigns at genus/family level.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C66 are supported by data in Figure 4\u2014figure supplement 1. This provides a specific example of Tronko's improved performance on a challenging taxonomic group, illustrating the practical benefits of the phylogenetic approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:48:22.371783Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "80bddeba-8e53-475d-b3c4-7720914a9301",
+      "result_id": "d6cc1f8a-f452-4c1e-8462-677deb998404"
+    },
+    {
+      "claim_id": "9f875ac8-ea33-4f63-a369-d1f6dee90cbb",
+      "result_id": "d6cc1f8a-f452-4c1e-8462-677deb998404"
+    },
+    {
+      "claim_id": "e7bfeca9-0df6-4e97-b8bf-78faefe99f69",
+      "result_id": "d6cc1f8a-f452-4c1e-8462-677deb998404"
+    },
+    {
+      "claim_id": "5571d9f5-21ed-48b6-8366-d0027d5beb2e",
+      "result_id": "d75502ae-7e52-4744-a564-6947427df647"
+    },
+    {
+      "claim_id": "09c99ec7-2414-4947-9935-f49924bd65c5",
+      "result_id": "d75502ae-7e52-4744-a564-6947427df647"
+    },
+    {
+      "claim_id": "ea5dc388-ad18-4b22-83cd-f57ec54b8bc9",
+      "result_id": "d75502ae-7e52-4744-a564-6947427df647"
+    },
+    {
+      "claim_id": "dd636e23-bbab-4e3c-8545-c379c3aa9240",
+      "result_id": "d75502ae-7e52-4744-a564-6947427df647"
+    },
+    {
+      "claim_id": "03e50548-be21-4aea-9687-024ad5a4b37c",
+      "result_id": "d75502ae-7e52-4744-a564-6947427df647"
+    },
+    {
+      "claim_id": "d38adc90-f374-4ac0-a707-8f1cf03d3e37",
+      "result_id": "d75502ae-7e52-4744-a564-6947427df647"
+    },
+    {
+      "claim_id": "194a9b89-ce70-4a05-9bcf-316c31549ba0",
+      "result_id": "d75502ae-7e52-4744-a564-6947427df647"
+    },
+    {
+      "claim_id": "cb596f45-f84d-44b7-b255-182b3c81a28e",
+      "result_id": "d75502ae-7e52-4744-a564-6947427df647"
+    },
+    {
+      "claim_id": "f8fea05e-412d-4aee-8cd6-0e914852b385",
+      "result_id": "d75502ae-7e52-4744-a564-6947427df647"
+    },
+    {
+      "claim_id": "e4ea1738-7714-4a27-8f6d-93f29233d92a",
+      "result_id": "d75502ae-7e52-4744-a564-6947427df647"
+    },
+    {
+      "claim_id": "61eeb6fc-4b58-497e-9873-24c325138e41",
+      "result_id": "d75502ae-7e52-4744-a564-6947427df647"
+    },
+    {
+      "claim_id": "848d3161-a189-4015-9c58-7774bf622c33",
+      "result_id": "d75502ae-7e52-4744-a564-6947427df647"
+    },
+    {
+      "claim_id": "6be9cd54-4419-42e1-91cc-26a360a13e68",
+      "result_id": "d75502ae-7e52-4744-a564-6947427df647"
+    },
+    {
+      "claim_id": "df4578c5-1e09-4c65-84ae-8d87d76498ae",
+      "result_id": "d75502ae-7e52-4744-a564-6947427df647"
+    },
+    {
+      "claim_id": "d0565df2-bbc3-486f-9a3b-c0107a7e66f8",
+      "result_id": "3f9e4655-3d0d-4c48-adb5-dc86ac74bf33"
+    },
+    {
+      "claim_id": "0144f056-d194-4cd7-8393-0f821b16a8db",
+      "result_id": "3f9e4655-3d0d-4c48-adb5-dc86ac74bf33"
+    },
+    {
+      "claim_id": "ebb65a14-535a-4fb2-9a5c-b1b34247e396",
+      "result_id": "3f9e4655-3d0d-4c48-adb5-dc86ac74bf33"
+    },
+    {
+      "claim_id": "95a24c27-ee13-4b20-b972-de2755b2b061",
+      "result_id": "3f9e4655-3d0d-4c48-adb5-dc86ac74bf33"
+    },
+    {
+      "claim_id": "ea9ab287-c748-4837-a3cb-7265ccfa69c5",
+      "result_id": "3f9e4655-3d0d-4c48-adb5-dc86ac74bf33"
+    },
+    {
+      "claim_id": "cb880bc2-2887-4fc6-a962-e80c8df80638",
+      "result_id": "3f9e4655-3d0d-4c48-adb5-dc86ac74bf33"
+    },
+    {
+      "claim_id": "618506c4-b756-4d3d-99b1-0d0fd79376ab",
+      "result_id": "3f9e4655-3d0d-4c48-adb5-dc86ac74bf33"
+    },
+    {
+      "claim_id": "7c9cd725-141a-42d1-97b8-624cfe529d64",
+      "result_id": "3f9e4655-3d0d-4c48-adb5-dc86ac74bf33"
+    },
+    {
+      "claim_id": "59a85d88-1db0-42c6-a49a-6109b98131ab",
+      "result_id": "3f9e4655-3d0d-4c48-adb5-dc86ac74bf33"
+    },
+    {
+      "claim_id": "186904f9-cd5f-4344-af4e-8d5e2b4c2fcb",
+      "result_id": "3f9e4655-3d0d-4c48-adb5-dc86ac74bf33"
+    },
+    {
+      "claim_id": "f8a1615b-ff17-445b-af95-204b4801155a",
+      "result_id": "c13f94d6-6dfe-4d58-88fd-4776d754dfe0"
+    },
+    {
+      "claim_id": "a513a69c-b949-48d9-8b04-051adb12e0e8",
+      "result_id": "c13f94d6-6dfe-4d58-88fd-4776d754dfe0"
+    },
+    {
+      "claim_id": "b61781ea-671e-47b1-9936-ee0c1cc85522",
+      "result_id": "c13f94d6-6dfe-4d58-88fd-4776d754dfe0"
+    },
+    {
+      "claim_id": "e17b4a0e-a7f6-4022-815a-c452860d9c9e",
+      "result_id": "c13f94d6-6dfe-4d58-88fd-4776d754dfe0"
+    },
+    {
+      "claim_id": "49c9114b-408d-45c8-94bd-10943aafcdba",
+      "result_id": "0a9f9cb3-edfb-4149-b179-f7022027f620"
+    },
+    {
+      "claim_id": "1143b02a-2d51-4ae9-adab-5e7e6c791963",
+      "result_id": "0a9f9cb3-edfb-4149-b179-f7022027f620"
+    },
+    {
+      "claim_id": "64684ff0-a196-4937-bc5f-b542a641403e",
+      "result_id": "0a9f9cb3-edfb-4149-b179-f7022027f620"
+    },
+    {
+      "claim_id": "4e67c846-6e8a-49f1-a971-74580163c1f3",
+      "result_id": "0a9f9cb3-edfb-4149-b179-f7022027f620"
+    },
+    {
+      "claim_id": "39d03c58-3683-4439-9178-b98f81bd99b8",
+      "result_id": "0a9f9cb3-edfb-4149-b179-f7022027f620"
+    },
+    {
+      "claim_id": "2def1e3b-8e84-4af2-8b99-c78ee954337d",
+      "result_id": "0a9f9cb3-edfb-4149-b179-f7022027f620"
+    },
+    {
+      "claim_id": "38c00b6d-b524-4f88-ae02-78376f313177",
+      "result_id": "0a9f9cb3-edfb-4149-b179-f7022027f620"
+    },
+    {
+      "claim_id": "3d4d366c-9570-4921-ae81-e620f45ae934",
+      "result_id": "0a9f9cb3-edfb-4149-b179-f7022027f620"
+    },
+    {
+      "claim_id": "7f0be369-8ace-4e77-957b-ba1fc09ba33c",
+      "result_id": "0a9f9cb3-edfb-4149-b179-f7022027f620"
+    },
+    {
+      "claim_id": "c04832cf-2ae4-4639-bcee-fd8a594e4a70",
+      "result_id": "0a9f9cb3-edfb-4149-b179-f7022027f620"
+    },
+    {
+      "claim_id": "9aedef41-9175-4b6e-b2fc-84733725bfb2",
+      "result_id": "ae71752d-b5e0-406f-a511-de2b16d32a29"
+    },
+    {
+      "claim_id": "61e13525-4a8f-46e9-b015-aece637f8b21",
+      "result_id": "ae71752d-b5e0-406f-a511-de2b16d32a29"
+    },
+    {
+      "claim_id": "9a01ccae-2b88-4bec-bd34-052f2992a6a6",
+      "result_id": "ef9d3591-5239-4dab-9fdc-e7aea12efb13"
+    },
+    {
+      "claim_id": "1c273edd-9b4f-4d26-8bfa-c4c45700d2fd",
+      "result_id": "ef9d3591-5239-4dab-9fdc-e7aea12efb13"
+    },
+    {
+      "claim_id": "d87a3528-7eeb-4c83-adac-7e33d1f9d83e",
+      "result_id": "ef9d3591-5239-4dab-9fdc-e7aea12efb13"
+    },
+    {
+      "claim_id": "01dda30a-4eee-410e-b332-d0e315023cf7",
+      "result_id": "ef9d3591-5239-4dab-9fdc-e7aea12efb13"
+    },
+    {
+      "claim_id": "60ba7b4e-c45c-4245-a2e6-082ecd55fc71",
+      "result_id": "ef9d3591-5239-4dab-9fdc-e7aea12efb13"
+    },
+    {
+      "claim_id": "f657d88f-36d2-4abc-8718-186abd4c9767",
+      "result_id": "ef9d3591-5239-4dab-9fdc-e7aea12efb13"
+    },
+    {
+      "claim_id": "775b2caa-3745-4bce-b08c-64d29bdf0d06",
+      "result_id": "d3d46bf9-3019-422a-9295-0a33b40e666c"
+    },
+    {
+      "claim_id": "43370625-6ed9-42cf-ab6e-cf007a0666ed",
+      "result_id": "d3d46bf9-3019-422a-9295-0a33b40e666c"
+    },
+    {
+      "claim_id": "eb183e1e-c365-48e1-a3ec-5ffc5dc0840c",
+      "result_id": "d3d46bf9-3019-422a-9295-0a33b40e666c"
+    },
+    {
+      "claim_id": "c9065ef1-99b4-4818-867a-9922b1bf9757",
+      "result_id": "d3d46bf9-3019-422a-9295-0a33b40e666c"
+    },
+    {
+      "claim_id": "b63fe506-a943-43a5-b34f-3f35067b7800",
+      "result_id": "d3d46bf9-3019-422a-9295-0a33b40e666c"
+    },
+    {
+      "claim_id": "606f8e7a-02a3-47f4-9887-e77a5eea0af5",
+      "result_id": "8e031b10-4adc-47eb-871c-0731f56bf364"
+    },
+    {
+      "claim_id": "0e3c5e10-fec4-4773-928d-a3d7b28aa37f",
+      "result_id": "8e031b10-4adc-47eb-871c-0731f56bf364"
+    },
+    {
+      "claim_id": "ec60e797-481b-49c3-b00f-da3ea96c313e",
+      "result_id": "ac1c0adb-d3b8-48be-8e7e-3a69aa5741d3"
+    },
+    {
+      "claim_id": "094b2f57-e623-4c96-8dec-230284a5aa97",
+      "result_id": "ac1c0adb-d3b8-48be-8e7e-3a69aa5741d3"
+    },
+    {
+      "claim_id": "01c03b58-111f-4edf-993a-e641657469c4",
+      "result_id": "ac1c0adb-d3b8-48be-8e7e-3a69aa5741d3"
+    },
+    {
+      "claim_id": "4410a846-db87-4e56-8db8-83efce19a341",
+      "result_id": "4eacdb7f-f5eb-4aca-a0e5-806428d92791"
+    },
+    {
+      "claim_id": "274d93a5-2efb-4305-9eea-3e6c061c773f",
+      "result_id": "4eacdb7f-f5eb-4aca-a0e5-806428d92791"
+    },
+    {
+      "claim_id": "76551f4c-7695-4eb9-95ae-e46185953698",
+      "result_id": "4eacdb7f-f5eb-4aca-a0e5-806428d92791"
+    },
+    {
+      "claim_id": "c3eba52b-413a-4d02-adc1-a6be09c76ae2",
+      "result_id": "4eacdb7f-f5eb-4aca-a0e5-806428d92791"
+    },
+    {
+      "claim_id": "4636d1ea-7544-4301-a04d-03008e21a30b",
+      "result_id": "10ca5968-7e78-42c8-8fb3-27bfe40fad53"
+    },
+    {
+      "claim_id": "263322b2-e840-4d8b-8768-4a6e88a4d358",
+      "result_id": "10ca5968-7e78-42c8-8fb3-27bfe40fad53"
+    },
+    {
+      "claim_id": "46e9a6d3-fa97-46e6-9c8c-23ce516e6e66",
+      "result_id": "67bc7aec-a818-450c-aaad-a97ad88110d4"
+    },
+    {
+      "claim_id": "d5d3e114-3280-41dd-84c0-21ed2329387c",
+      "result_id": "67bc7aec-a818-450c-aaad-a97ad88110d4"
+    },
+    {
+      "claim_id": "151e1fdf-fe16-4e36-a100-8603c3675ee9",
+      "result_id": "67bc7aec-a818-450c-aaad-a97ad88110d4"
+    },
+    {
+      "claim_id": "12b9fece-10c9-476e-ab04-b5aab5dc38f7",
+      "result_id": "67bc7aec-a818-450c-aaad-a97ad88110d4"
+    },
+    {
+      "claim_id": "2347bb51-4f31-47b2-9e9a-b77899650ff8",
+      "result_id": "2205b5ca-4dbd-4e72-ac37-1cc9c3277066"
+    },
+    {
+      "claim_id": "553e4b5a-a94a-4641-af23-8d5f17ee2cde",
+      "result_id": "d7d67580-3168-4507-8f60-231704b8976e"
+    },
+    {
+      "claim_id": "b0efaba0-4a35-4a01-9d0e-a918461709f1",
+      "result_id": "d7d67580-3168-4507-8f60-231704b8976e"
+    }
+  ],
+  "comparisons": []
+}

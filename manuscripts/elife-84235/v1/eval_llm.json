@@ -1,0 +1,364 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C34",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "The MFN2 R400Q mutation is significantly over-represented in cardiomyopathy patients, particularly those of African descent. Screening of 965 cardiomyopathy patients identified 3 individuals with R400Q (MAF 0.0015), representing 15-20\u00d7 enrichment compared to gnomAD controls (p<0.00001), with all three affected individuals being African American.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The statistical analysis is appropriately conducted with chi-square testing comparing allele frequencies between cases and controls. The study accounts for population stratification by analyzing African-derived populations separately. Sample sizes are adequate (965 cases, 861 controls), and the p-values are highly significant. The absence of R400Q in 861 controls strengthens the association.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C27",
+      "C35",
+      "C46"
+    ],
+    "result": "The R400Q mutation has not been reported in CMT2A patients, distinguishing it from the 76 other rare MFN2 variants implicated in this neuropathy. Prior work in Drosophila showed R400Q causes impaired fusogenicity with retinal and myocardial abnormalities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claim is supported by literature review and database analysis (C35 cites Stuppia et al., 2015). The absence of R400Q in CMT2A databases is documented, and the Drosophila work (C46, Eschenbacher et al., 2012) provides prior functional evidence. This establishes R400Q as distinct from typical CMT2A mutations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "All tested MFN2 mutants (T105M, M376A, R400Q) exhibit impaired mitochondrial fusion. In DKO cells, R400Q and M376A show reduced intrinsic fusogenicity similar to GTPase-defective mutants. In WT cells, R400Q dominantly suppresses fusion like T105M, while M376A uniquely does not alter baseline fusion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The fusion assays using mitochondrial aspect ratio are well-established and appropriately controlled with \u03b2-gal and WT MFN2. The experiments distinguish intrinsic fusogenicity (DKO cells) from dominant-negative effects (WT cells). Statistical comparisons use ANOVA with appropriate post-hoc tests. The differential behavior of M376A in WT cells is particularly well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C6",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "MFN2 R400Q and M376A retain normal GTPase activity comparable to WT MFN2, while T105M, R94Q, and K109A lack catalytic activity. This demonstrates that impaired fusion by HR1 domain mutants occurs through a mechanism independent of GTPase catalysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The GTPase-Glo assay is a validated commercial kit with appropriate controls. The data clearly distinguish GTPase domain mutants (no activity) from HR1 mutants (normal activity), with adequate replication (n=3-4). The inference that GTPase activity cannot explain HR1 mutant fusion defects is logically sound given the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C9",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "GTPase-defective mutants (T105M, R94Q, K109A) cause mitochondrial depolarization, while HR1 mutants (M376A, R400Q) maintain normal polarization. Depolarization correlates with impaired catalytic GTPase activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "TMRE staining is a standard method for assessing mitochondrial membrane potential. The correlation between GTPase activity and polarization is clearly demonstrated across multiple mutants. The data support the conclusion that HR1 mutants have a fundamentally different mechanism of dysfunction than GTPase mutants.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C10",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "MFN2 R400Q and M376A show intermediate effects on mitochondrial respiration, enhancing it above DKO baseline but not to WT levels. T105M fails to enhance respiration. This supports a relationship between GTPase activity, polarization, and respiration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Seahorse respirometry is appropriately conducted with adequate replication (n=5-7 experiments). The sequential addition of oligomycin, FCCP, and rotenone/antimycin A allows proper dissection of respiratory components. The intermediate phenotype of HR1 mutants is consistent with their maintained polarization but impaired fusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C5",
+      "C7",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "MFN2 R400Q and M376A are defective in conformational switching between open and closed states, while T105M transitions normally. FRET studies show HR1 mutants do not respond to antagonist/agonist peptides that normally induce conformational changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The FRET assay is well-established for measuring MFN2 conformational changes (cited Franco et al., 2016; Dang et al., 2020). The use of antagonist and agonist peptides provides appropriate positive controls. The data clearly distinguish HR1 mutants from GTPase mutants, providing a mechanistic explanation for their fusion defects despite normal GTPase activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C8",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "MFN2 R400Q and M376A do not impair mitochondrial motility in DRG neurons, while GTPase-defective mutants (T105M, K109A) suppress transport. This dissociates fusion and motility defects, with GTPase mutants affecting both while HR1 mutants affect only fusion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The motility assays in cultured DRG neurons use time-lapse confocal microscopy with appropriate kymograph analysis. The differential effects on motility versus fusion are clearly demonstrated across multiple mutants. This provides important mechanistic insight into tissue-specific disease manifestations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C11",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "MFN2 R400Q is uniquely defective in recruiting Parkin to depolarized mitochondria after FCCP treatment, while T105M, K109A, and M376A maintain normal Parkin recruitment. R400Q suppression is comparable to the non-Parkin-binding mutant MFN2 AA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The mcParkin aggregation assay is well-validated for measuring Parkin recruitment. The use of FCCP to induce depolarization is standard. The comparison to engineered phosphorylation mutants (AA and EE) provides important mechanistic context. Statistical analysis with ANOVA is appropriate, and the selective defect in R400Q is clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C12",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "CRISPR knock-in of R400Q into mouse Mfn2 causes perinatal lethality with approximately two-thirds of Q/Q400 mice dying between E18.5 and P7, while T105M causes embryonic lethality and M376V shows normal Mendelian ratios with no cardiac phenotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The CRISPR strategy is well-documented with sequence verification. Mendelian ratio analysis uses appropriate statistical tests (Fisher's exact). The differential phenotypes across the three knock-in lines provide strong evidence for mutation-specific effects. The perinatal timing of R400Q lethality is consistent with the proposed mitophagy defect during cardiac metabolic maturation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "Q/Q400 mice develop cardiac-specific pathology with over half showing cardiomyocyte vacuolation at P0, and ultrastructural analysis revealing myofibrillar degeneration with mitochondrial fragmentation and scarcity. No other organs show abnormalities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Histological examination by a blinded pathologist strengthens the findings. The cardiac specificity is well-documented through examination of multiple organs. Electron microscopy provides detailed ultrastructural evidence. The incomplete penetrance (>50% affected) is appropriately noted and consistent with the survival data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "RNA-seq and metabolomics of Q/Q400 hearts segregate into normal (Q400n) and abnormal (Q400a) groups. Q400a hearts show downregulation of metabolic pathways (fatty acid entry, glycolysis, TCA cycle, oxidative phosphorylation) and reduced lactate, with upregulation of injury response genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The RNA-seq analysis uses appropriate statistical thresholds (p<0.02, FDR<0.05, fold change>2) and unsupervised clustering. GO/KEGG pathway analysis is standard. The metabolomics data complement the transcriptional findings. The segregation into two groups is consistent with the incomplete penetrance observed histologically. However, the small sample size for metabolomics is a limitation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C119",
+      "C120"
+    ],
+    "result": "The metabolic gene expression profile in Q400a hearts recapitulates experimental mitophagic cardiomyopathy (Gong et al., 2015) but differs from fusion-deficient embryonic myocardium (Kasahara et al., 2013), suggesting mitophagy rather than fusion defects drive the phenotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the authors compare their data to published datasets, the comparison is qualitative rather than quantitative. No formal statistical comparison or overlap analysis is provided. The inference is reasonable but would be strengthened by direct comparison of gene lists or pathway enrichment scores. The distinction from fusion-deficient models is important but incompletely validated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C15",
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "In H9c2 cardiomyoblasts, MFN2 Q400 causes marked delays in all stages of mitophagy (Parkin recruitment, autophagosome engulfment, lysosomal delivery) compared to WT, while T105M and M376A maintain normal mitophagy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The time-course experiments use three complementary assays (mcParkin, LC3-GFP, MitoQC) to assess different mitophagy stages. The delays are clearly demonstrated with appropriate statistical analysis (two-way ANOVA). The eventual increase in Q400 cells is appropriately attributed to MFN2-independent mechanisms (Ordureau et al., 2014). Equal expression levels are confirmed by Western blot.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C16",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "Q/Q400 mice show increased sensitivity to doxorubicin-induced cardiomyopathy with greater LV dilation, reduced fractional shortening, increased heart weight, and diminished reactive mitophagy. In vitro, Q400 increases doxorubicin-induced cell death, apoptosis, and baseline mitochondrial ROS while suppressing mitophagy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The doxorubicin experiments provide functional validation of the mitophagy defect in a stress model. Echocardiography is appropriately conducted at multiple timepoints with standard parameters. The in vitro dose-response curves, TUNEL labeling, and MitoSOX measurements are well-controlled. The convergence of in vitro and in vivo findings strengthens the conclusions about mitophagy deficiency.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C138",
+      "C145"
+    ],
+    "result": "MFN2 R400Q represents the first known natural mitophagy-defective MFN2 mutant, with a unique dysfunction profile that evokes mitophagic cardiomyopathy. Different patterns of MFN dysfunction (motility vs. mitophagy defects) underlie organ-specific disease manifestations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The comprehensive characterization across multiple experimental systems (cells, mice, human genetics) supports this conclusion. The distinction from CMT2A mutants is clearly demonstrated through differential effects on motility, depolarization, and Parkin recruitment. The paradigm linking specific functional defects to tissue-specific disease is well-supported by the data, though causality in human disease remains inferential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Background claims establish that mitochondria are critical for cardiac function, MFN2 mutations cause CMT2A but not reported cardiac disease, and MFN2 has multiple functions (fusion, mitophagy, transport) regulated by phosphorylation and protein partnering.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are well-established facts in the field, appropriately cited to primary literature. The citations appear accurate and relevant. These claims provide necessary context for the study but are not novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C64",
+      "C72",
+      "C73",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C91",
+      "C92",
+      "C126",
+      "C127",
+      "C128",
+      "C137",
+      "C139",
+      "C140"
+    ],
+    "result": "Additional background claims detail MFN2 biochemistry (GTPase activity requirement, conformational changes, phosphorylation-dependent function switching) and the roles of MFN2-mediated fusion and mitophagy in cardiac development and function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These mechanistic details are well-supported by the cited literature and represent established knowledge. The citations appear appropriate and accurate. These provide important mechanistic context for interpreting the experimental findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C125"
+    ],
+    "result": "MFN2 Q400 is less effective than WT in promoting H9c2 cardiomyoblast mitochondrial respiration, recapitulating effects observed in MEFs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The Seahorse data in H9c2 cells (Figure 6\u2014figure supplement 2) confirm the MEF findings in a cardiac-relevant cell type. This consistency across cell types strengthens the conclusions about Q400 respiratory effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C141",
+      "C142",
+      "C143"
+    ],
+    "result": "Conformational malleability does not distinguish cardiomyopathy from neuropathy mutants. Mitochondrial depolarization may be important for CMT2A but not cardiomyopathy. The low prevalence of R400Q in African populations could reflect negative selection of a harmful ancient variant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "C141 is a valid inference from the FRET data showing both M376A and R400Q have conformational defects. C142 is speculative, extrapolating from the mouse data to human disease mechanisms without direct evidence. C143 is explicitly presented as speculation and lacks supporting evolutionary analysis. These are reasonable hypotheses but require additional data for validation.",
+    "result_type": "MINOR"
+  }
+]

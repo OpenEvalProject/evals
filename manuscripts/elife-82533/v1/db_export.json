@@ -1,0 +1,1731 @@
+{
+  "submission": {
+    "id": "7c9a931c-7302-47cd-881e-72426f743812",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-04T01:43:28.319094Z",
+    "updated_at": "2025-12-04T01:43:28.319094Z"
+  },
+  "content": [
+    {
+      "id": "89f15d53-ecf2-4df5-9c89-ae2ce65d7ad0",
+      "submission_id": "7c9a931c-7302-47cd-881e-72426f743812",
+      "content_type": "manuscript",
+      "content_text": "# Dynamics of pulsatile activities of arcuate kisspeptin neurons in aging female mice\n\n## Authors\n\n- Teppei Goto<sup>1</sup> ([ORCID: 0000-0002-0081-3357](https://orcid.org/0000-0002-0081-3357)) \u2020\n- Mitsue Hagihara<sup>1</sup>\n- Kazunari Miyamichi<sup>1</sup> ([ORCID: 0000-0002-7807-8436](https://orcid.org/0000-0002-7807-8436)) \u2020\n\n### Affiliations\n\n1. Laboratory for Comparative Connectomics, RIKEN Center for Biosystems Dynamics Research Kobe Japan ([ROR:023rffy11](https://ror.org/023rffy11))\n\n\u2020 Corresponding author\n\n## Abstract\n\nReproductive senescence is broadly observed across mammalian females, including humans, eventually leading to a loss of fertility. The pulsatile secretion of gonadotropin-releasing hormone (GnRH), which is essential for gonad function, is primarily controlled by kisspeptin neurons in the hypothalamic arcuate nucleus (ARCkiss), the pulse generator of GnRH. The pulsatility of GnRH release, as assessed by the amount of circulating gonadotropin, is markedly reduced in aged animals, suggesting that the malfunctions of ARCkiss may be responsible for reproductive aging and menopause-related disorders. However, the activity dynamics of ARCkiss during the natural transition to reproductive senescence remain unclear. Herein, we introduce chronic in vivo Ca2+ imaging of ARCkiss in female mice by fiber photometry to monitor the synchronous episodes of ARCkiss (SEskiss), a known hallmark of GnRH pulse generator activity, from the fully reproductive to acyclic phase over 1 year. During the reproductive phase, we find that not only the frequency, but also the intensities and waveforms of individual SEskiss, vary depending on the stage of the estrus cycle. During the transition to reproductive senescence, the integrity of SEskiss patterns, including the frequency and waveforms, remains mostly unchanged, whereas the intensities tend to decline. These data illuminate the temporal dynamics of ARCkiss activities in aging female mice. More generally, our findings demonstrate the utility of fiber-photometry-based chronic imaging of neuroendocrine regulators in the brain to characterize aging-associated malfunction.\n\n## Introduction\n\nReproductive aging occurs broadly across mammalian females, eventually leading to loss of fertility (Kermath and Gore, 2012). In humans, women undergo the perimenopausal transition to reproductive senescence, in which the menstrual cycles become irregular in length and timing before eventually ceasing at approximately 51 years of age (Gore, 2015). As this transition is associated with a risk of metabolic, physical, and mental disorders (Greendale et al., 1999), it is essential to understand the molecular and cellular mechanisms of reproductive aging for not only reproductive medicine, but also women\u2019s health in general.\n\nReproductive function in females is primarily controlled by coordinated interactions among the three layers of the hypothalamus\u2013pituitary\u2013ovary axis (Gore, 2015; Kermath and Gore, 2012). At the core, GnRH-producing neurons in the anterior hypothalamus provides the driving force of the reproductive system. GnRH release occurs in a pulsatile manner at intervals of 30 min to several hours, depending on the species and reproductive (estrus) cycle (Herbison, 2018), and this pulsatility is essential for reproductive functions (Belchetz et al., 1978). GnRH released at the median eminence acts on the anterior pituitary gonadotrophs, which then release luteinizing hormone (LH) and follicle-stimulating hormone (FSH) into the peripheral circulation. Pulsatile (tonic) LH and FSH release facilitate follicular development and steroidogenesis in the ovary. The sex steroid hormones then exert feedback control of the hypothalamic GnRH system and pituitary gonadotrophs. Although age-related changes can occur in each of these layers, classical evidence in rodent models suggests that modulation of GnRH neurons may be a major driving force of reproductive senescence. For example, pulsatile LH release as a proxy of GnRH activities decreases with age in rats (Scarbrough and Wise, 1990; Wise et al., 1988). As such, the preovulatory LH surge is delayed or attenuated with aging (Matt et al., 1998) with decreased c-Fos expression, a marker of neural activation, in the GnRH neurons (Rubin et al., 1994). Together with a classical transplantation study showing the presence of viable follicles in aged rodents (Krohn, 1962), these studies suggest that reproductive senescence is mediated by the neuroendocrine system independent of the depletion of the follicular reserve.\n\nHow is the homeostatic regulation of the GnRH system altered by aging? Of many candidates for GnRH regulation, kisspeptin, a neuropeptide crucial for puberty (d\u2019Anglemont de Tassigny et al., 2007; Lapatto et al., 2007; Uenoyama et al., 2015), is thought to play a dominant role (Kermath and Gore, 2012). There are two populations of kisspeptin neurons in the rodent hypothalamus: one in the arcuate nucleus (ARCkiss), which acts as the GnRH pulse generator (Clarkson et al., 2017; Nagae et al., 2021), and the other in the anteroventral periventricular nucleus (AVPVkiss), which functions as the GnRH surge generator (Clarkson et al., 2008; Matsuda et al., 2019; Piet et al., 2018; Uenoyama et al., 2015). Previous studies have shown a decrease in kisspeptin signaling in both ARCkiss (Kunimura et al., 2017) and AVPVkiss (Lederman et al., 2010; Neal-Perry et al., 2009) during aging in rats. Thus, malfunctions of the kisspeptin system may underpin the transition to reproductive senescence.\n\nOne critical step to characterizing the kisspeptin system for reproductive aging and menopause-related disorders (Padilla et al., 2018) is to visualize directly the dynamics of neural activities of kisspeptin neurons during aging. Until recently, activities of the GnRH pulse generator could only be indirectly assessed by repetitive measurement of circulating LH level (Steyn et al., 2013), which is not only labor-intensive but also stressful to animals not fully suited for chronic analysis. Recent seminal studies have established cell-type-specific chronic Ca2+ imaging of ARCkiss activities under a free-moving awake condition in mice by using fiber photometry (Clarkson et al., 2017; Han et al., 2019; McQuillan et al., 2019). ARCkiss shows remarkable pulsatile activities, termed synchronous episodes of elevated Ca2+ (hereafter referred to as SEskiss for simplicity). SEskiss are well correlated with pulsatile LH secretion (Clarkson et al., 2017), tightly regulated by gonadal negative feedback signals mediated by sex steroid hormones (McQuillan et al., 2022), and undergo dynamic changes in frequency depending on the stage of the estrus cycle (McQuillan et al., 2019). However, the utility of this system is currently limited to only reproductive-phase or gonadectomized mice. It remains unknown how this system can facilitate the study of reproductive senescence by long-term imaging of SEskiss dynamics. This motivated us to apply fiber photometry to monitor SEskiss from the fully reproductive to acyclic phase over 1 year.\n\n## Results\n\n### Dynamics of SEskiss in the regular estrus cycle at the reproductive phase\n\nBefore characterizing SEskiss during aging, we revisited the detailed patterns and waveforms of SEskiss in the reproductive phase. We first established 7 day chronic imaging of ARCkiss of cyclic Kiss1-Cre (Gottsch et al., 2011) female mice at age 4\u20136 months. An optical fiber was implanted above the ARC of Kiss1-Cre female mice that had been injected with an adeno-associated virus (AAV) driving Cre-dependent GCaMP6s (Chen et al., 2013) into the ARC. Their estrus cycle stages were determined by vaginal cytology (Byers et al., 2012; Caligioni, 2009), and Ca2+ imaging was performed twice per day for 6 h each in the light and dark period with 6 h inter-imaging intervals. Estrus cycle and Ca2+ imaging from ARCkiss were monitored for seven consecutive days. We detected sharp photometric peaks highly resembling the previously reported SEskiss (Clarkson et al., 2017; Figure 1A and Materials and methods). The number of SEskiss was dynamically altered in various stages of the estrus cycle and light and dark periods (Figure 1B). To align data from multiple animals, we utilized the fact that SEskiss are strongly suppressed by a high level of progesterone just before ovulation in the proestrus stage (McQuillan et al., 2019). Indeed, when the number of SEskiss in the dark period was normalized to that of the preceding light period, proestrus just after the diestrus stage showed a stereotyped drop (<0.5) compared with other stages of the estrus cycle (Figure 1C). Based on this profile, the estrus cycle was aligned starting from the proestrus stage. The number of SEskiss during the estrus cycle was lowest at the dark period of the proestrus, and then gradually increased as the estrus cycle advanced, reaching the highest values at the dark period of the metestrus and diestrus (Figure 1D). As expected from this frequency of SEskiss, the inter-peak intervals showed the opposite trend (Figure 1\u2014figure supplement 1A). We also found that the peak height of SEskiss normalized to that in the light period of proestrus fluctuated during the regular estrus cycle, with the highest (approximately 1.5-fold) at the light period 2 days after proestrus (Figure 1E). These data show that not only the frequency (McQuillan et al., 2019) but also the intensities of individual SEskiss vary precisely depending on the stage of the estrus cycle. The higher peak during metestrus may be correlated with a higher amount of kisspeptin released to GnRH neurons to facilitate more LH/FSH secretion (Czieselsky et al., 2016).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/82533/elife-82533-fig1-v1.jpg)\n\n**Figure 1.:** (A) Representative 6 h photometry raw data of SEskiss in each stage of the estrus cycle. Red arrowheads indicate SEskiss. (B) Numbers of SEskiss (lower: line plots) along with the estrus cycle stages (upper: color bars) for 7 days (n=4 animals). SEskiss were recorded for 6 h in both light and dark (LD) periods. (C) The ratio of SEskiss in each dark period normalized to those in the preceding light period. Dotted line = 0.5. (D) Numbers of SEskiss per 6 h in 5 days along with the estrus cycle anchoring at proestrus as Day 0. Different letters (a\u2013c) in the upper part of the graph denote significant differences at p<0.05 by one-way repeated measures ANOVA followed by the Tukey\u2013Kramer post hoc test. (E) Intensities of SEskiss as measured by the \u0394F/F values in each estrus stage normalized to that in the light period of the proestrus. *p<0.05 by one-way repeated measures ANOVA followed by the Tukey\u2013Kramer post hoc test. (F) Averaged traces of SEkiss waveforms in the light period of each estrus stage. (G) Top, averaged traces magnifying the onset and offset of SEskiss in the proestrus and estrus/metestrus stages in the light period. Data are expressed as mean \u00b1 SEM. Bottom, p-value by t-test. Red dots represent p-values <0.05. (H) Quantifications of detailed parameters of SEkiss waveforms in each estrus stage: the normalized LWQM, FWQM, and RWQM. *p<0.05 by one-way repeated measures ANOVA followed by the Tukey\u2013Kramer post hoc test. P: proestrus, E: estrus, M: metestrus, D: diestrus.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/82533/elife-82533-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Inter-pulse intervals of SEskiss in each estrus stage. Different letters (a\u2013c) in the upper part of the graph denote significant differences at p<0.05 by one-way repeated measures ANOVA followed by the Tukey\u2013Kramer post hoc test. (B) SEkiss waveforms in the light and dark periods of each estrus stage. Data are expressed as mean (black line) \u00b1 SEM (colored shadow).\n\nWe then quantified detailed waveforms of individual SEskiss in each stage of the estrus cycle (Figure 1F, Figure 1\u2014figure supplement 1B). Although the overall shape was similar when the peak was aligned, the onset and offset in proestrus significantly advanced compared with the estrus/metestrus stage 2 days after proestrus (Figure 1G). To confirm this trend further, we quantified the left half-width at quarter maximum (LWQM) and right half-width at quarter maximum (RWQM). Whereas the full-width at quarter maximum (FWQM) was constant across all stages of the estrus cycle, LWQM in the proestrus stage was significantly longer than that in the other stages (Figure 1H). RWQM in the proestrus stage tended to be shorter, while that in estrus/metestrus was significantly longer. Variations in waveforms correlated with the peak height: when the peak was higher, the upslope was steeper and the downslope was gentler. This difference likely reflects the activity dynamics of individual ARCkiss during each SEkiss (see Discussion).\n\n### Reduced estrus cyclicity with aging in Kiss1-Cre mice\n\nNext, we characterized the progress of reproductive decline in our experimental animals (Kiss1-Cre females in C57BL/6 background). In rodents, the most revealing marker of the reproductive stage is the estrous cyclicity determined by a vaginal smear, which is an indicator of the ovarian and neuroendocrine environments (Byers et al., 2012; Caligioni, 2009). A longitudinal study of estrus cyclicity in aging rodents revealed an age-related reduction of cycle frequency and changes in cytology (LeFevre and McClintock, 1988; Nelson et al., 1982). Middle-aged female rodents can be classified into three groups: regularly cycling, irregularly cycling, and acyclic categories. We first confirmed that the number of estrus cycles per 25 days of wild-type C57BL/6J females was gradually decreased in an age-dependent manner (Figure 2A), generally consistent with a preceding study (Nelson et al., 1982). A similar trend was observed in Kiss1-Cre female mice that had been injected with an AAV driving Cre-dependent GCaMP6s into the ARC with an optic fiber implanted above it, indicating that the genetic manipulation and fiber photometry setting did not alter the reproductive decline process (Figure 2B, n=12). The average number of estrus cycles per 25 days substantially declined between ages 12\u201313 months, supporting the notion that female mice begin to show irregular cyclicity at around 13 months of age. Based on these data, we set the threshold at three estrus cycles per 25 days and classified middle-aged female mice into one of three groups: regular cyclic (three or more), irregular cyclic (two or one), or acyclic (zero).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/82533/elife-82533-fig2-v1.jpg)\n\n**Figure 2.:** (A) Number of estrus cycles per 25 days at 3\u20134 (n=5), 8\u20139 (n=8), 11\u201312 (n=6), and 14\u201315 (n=12) months in old wild-type C57BL/6 mice. Different letters (a, b) in the upper part of the graph denote significant differences at p<0.05 by one-way ANOVA followed by the Tukey\u2013Kramer post hoc test. (B) Chronic monitoring of estrus cycle frequency from the individuals used for Ca2+ imaging of synchronous episodes of ARCkiss (SEskiss) (C57BL/6 Kiss-Cre mice with AAV-mediated GCaMP6s expression). Black: average number of estrus cycles, gray: individual data (n=12 animals in total).\n\n### Dynamics of SEskiss during the transition to reproductive senescence\n\nTo characterize SEskiss during aging, we first chronically monitored the same female mice (n=2) from age 6 months (fully reproductive) to age 15\u201318 months (after reproductive senescence). To this end, we repeatedly conducted 7 day chronic imaging of ARCkiss together with a vaginal smear-based analysis of the estrus cycle (Figure 3 and Figure 3\u2014figure supplement 1). At a glance, the frequency of SEskiss was not drastically changed, whereas the intensity of SEskiss exhibited a decline across the transition to reproductive senescence (Figure 3A and B). Quantitative analysis showed that the frequency of SEskiss as assessed by the average number per 6 h was constant (Figure 3C), with no difference in the cumulative probability of inter-peak intervals among data set from age 6 months (fully reproductive) to age 15\u201318 months (acyclic in aging) (Figure 3D). Notably, the elevated frequency of SEskiss generally observed in ovariectomized females (Clarkson et al., 2017), which is thought to indicate a drastic decline of sex steroid hormone-mediated negative feedback (Padilla et al., 2018), was not found in the natural transition to reproductive senescence. We also found that the waveforms of individual SEskiss were grossly unchanged from the reproductive to acyclic phase, with only slight individual differences found in the aging phases (Figure 3\u2014figure supplement 2A and B). In contrast to the relatively stable frequency of SEskiss, quantitative analysis showed that the peak height as assessed by \u0394F/F values was significantly decreased during the transition to the acyclic phase in these two females (Figure 3E).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/82533/elife-82533-fig3-v1.jpg)\n\n**Figure 3.:** (A) Representative photometry raw data of SEskiss in the diestrus stage from the reproductive to acyclic phase (n=2 animals). Red arrowheads indicate SEskiss. (B) Numbers of SEskiss in the estrus stages (color bars) for 7 days from the reproductive to acyclic phase. SEskiss were recorded for 6 h in both light and dark periods. (C) Number of SEskiss in individual estrus stages (shown in different colors) of individual female mice. ns: not significant by one-way ANOVA. (D) Cumulative probability of inter-pulse interval. ns: not significant by the Kolmogorov\u2013Smirnov test. (E) Peak height as assessed by \u0394F/F of SEskiss from the reproductive to acyclic phase. Different letters (a\u2013d, w\u2013z) in the lower part of the graph denote significant differences at p<0.05 by the Kruskal\u2013Wallis test followed by the Mann\u2013Whitney U test. Re; reproductive, RC; regular cyclic, IrC; irregular cyclic, Ac; acyclic.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/82533/elife-82533-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Graphical representation of estrus stage within a 25 day time window from the reproductive to acyclic phase (n=2 animals). Red dots and lines represent the photometric recording timing shown in Figure 3B. Arrows indicate one estrus cycle.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/82533/elife-82533-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A) Averaged traces of SEkiss waveforms of the same female mice in the reproductive (Re), regular cyclic (RC), irregular cyclic (IrC), and acyclic (Ac) phases. (B) Quantifications of detailed parameters of SEkiss waveforms in individual female mice: LWQM, FWQM, and RWQM as defined in Figure 1. Different letters (a\u2013b, x\u2013y) in the upper part of the graph denote significant differences at p<0.05 by the Kruskal\u2013Wallis test followed by the Mann\u2013Whitney U test. In ID#5, the shape of the waveform was changed in the IrC compared with the Re phase, and the shape reverted in the Ac phase. In ID#6, significant differences in the length of LWQM and RWQM were observed between the Re and Ac phases. The origin of these individual differences is unknown, but the bias of estrus cycles in aging female mice might underlay the variations. (C) Coefficient of variances of the intensities of SEskiss in a 6 h window from Re, RC, IrC, and Ac individual mice. *p<0.05 by the Kruskal\u2013Wallis test followed by the Mann\u2013Whitney U test. (D) The gene expression levels of Kiss1, Tac2, and Pdyn relative to a reference gene were compared among mice in Re, RC, IrC, and Ac phases (n=8, 8, 8, and 6, respectively) during the diestrus stage of the estrous cycle. Each data point was normalized to an average of the corresponding gene expression in Re phase. ns: not significant by the Kruskal\u2013Wallis test.\n\nFor further quantification, we collected more photometry data from 13 to 16 month-old Kiss1-Cre female mice and classified them into three groups: regular cyclic (n=4), irregular cyclic (n=3), and acyclic (n=3) (Figure 4A). Although a stereotyped drop in the ratio of SEskiss in the dark period normalized to those in the preceding light period was evident at the proestrus stage in young (reproductive) female mice (Figure 1C), no such trend was observed in all three groups of aging mice (Figure 4B), which suggests an alteration of negative feedback by sex steroid hormones. We also noticed a slight reduction in the frequency of SEskiss in the irregular compared with the regular cyclic group (Figure 4C). In addition, in the irregular cyclic group, the number of SEskiss in the light period was significantly lower than that in the dark period. These subtle differences were not evident in the chronic analysis of n=2 females (Figure 3), probably because of high data variations. Consistent with the individual analysis (Figure 3D), no difference in the cumulative probability of inter-peak intervals was found among the reproductive group (age 4\u20136 months) or three aging groups (Figure 4D). Again, no increase in the frequency of SEskiss was observed in any of the three aging groups. Collectively, these data demonstrate that the frequency of SEskiss during the transition to reproductive senescence is overall stable.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/82533/elife-82533-fig4-v1.jpg)\n\n**Figure 4.:** (A) Representative numbers of SEskiss in the estrus stages (color bars) for 7 days from regular cyclic, irregular cyclic, and acyclic female mice. SEskiss were recorded for 6 h in both light and dark periods. (B) The ratio of SEskiss in the dark period normalized to those in the preceding light period of regular cyclic (n=4), irregular cyclic (n=3), and acyclic (n=3) female mice, respectively. Dotted line = 0.5. (C) Average numbers of SEskiss in 6 h in the light (open boxes in the LD cycle) and dark (closed boxes in the LD cycle) periods of reproductive (Re), regular cyclic (RC), irregular cyclic (IrC), and acyclic (Ac) mice. Red horizontal lines indicate the mean. No interaction effect between estrus cyclicity and LD cycle was found by two-way ANOVA. *p<0.05 by paired t-test. Of note, the Re group (age 4\u20136 months) represents a reanalysis of the 5 days of data reported in Figure 1 (corresponding to one estrus cycle). (D) Cumulative probability of inter-peak intervals among the Re (black), RC (green), IrC (blue), and Ac (orange) groups. ns: not significant by the Kolmogorov\u2013Smirnov test. (E) Intensities of SEskiss during reproductive aging as assessed by the fold change of \u0394F/F values in the IrC (#ID8, 9) and Ac (ID#7, 10) phases normalized to those in the RC phase. *p<0.05 by the Mann\u2013Whitney U test. ns: not significant.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/82533/elife-82533-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Representative coronal sections of the arcuate nucleus (ARC) showing Tac2 mRNA expression (magenta), a marker of kisspeptin neurons in the hypothalamic arcuate nucleus (ARCkiss) neurons, and GCaMP6s (green) expression, counterstained with DAPI (blue) in control (healthy reproductive phase without potential damage caused by repeated photometry recording and/or prolonged expression of GCaMP6s, see Methods) and the aging recorded mice. The expressions of Tac2 mRNA and GCaMP6s protein were well comparable between the reproductive healthy control and aging recorded samples. Scale bars, 100 \u00b5m. (B) Left: Quantification of the GCaMP6s targeting efficiency (Tac2+ GCaMP6s+/Tac2+). Middle: The number of GCaMP6s+ cells. Right: The number of Tac2+ cells in the GCaMP6s targeted site normalized to that of the contralateral non-injected and non-imaged site. ns, no significant difference was found between the control and recorded groups by the Mann\u2013Whitney U test. n=5 and 3 in control and recorded mice, respectively. Error bars, SEM.\n\nWe also analyzed whether the variability of the peak height would change in the aging female mice by assessing the coefficient of variance (Figure 3\u2014figure supplement 2C). We noticed slight individual differences in the peak height variance in the regular and irregular cyclic aging groups; however, no significant inter-group differences were found. Regarding the intensities of SEskiss, our additional analysis (Figure 4E, and ID#5, 6 in Figure 3E) showed that the peak height declined from the regular to the irregular cyclic (two of four individuals) and acyclic phases (all four individuals). Therefore, our data suggest the notion that in aged female mice, the intensity of SEskiss may be reduced, whereas their frequency, to a lesser extent, appears altered.\n\nLastly, we assessed the expression level of Kiss1, Tac2, and Pdyn genes, which encode Kisspeptin, Neurokinin B, and Dynorphin, respectively, and collectively define ARCkiss (KNDy) neurons, using quantitative PCR (qPCR) during reproductive senescence. The relative expression levels of these three genes normalized to that in the healthy phase, unaltered among the diestrus ARC samples from the reproductive to acyclic phase (Figure 3\u2014figure supplement 2D). This result is in contrast to a previous report (Kunimura et al., 2017) implying a decrease in Kiss1 expression in aged rats and supports the notion that a reduction in Kiss1 gene expression is not a primary driver of the reproductive decline in mice. In addition, we conducted a post hoc histochemical analysis to investigate whether our long-term imaging of ARCkiss damaged the target tissue. The targeting efficiency, as measured by the fraction of GCaMP6+ cells over Tac2+ cells, and the number of GCaMP6s+ cells were similar between healthy control mice in the reproductive phase and our aged samples collected after imaging sessions (Figure 4\u2014figure supplement 1B). Moreover, the number of Tac2+ cells in the imaged side, normalized to the non-imaged contralateral side, was comparable between the control and recorded animals, suggesting the negligible tissue damage or cell death associated with cytotoxicity by prolonged expression of GCaMP6s and/or repeated photometry recording (Figure 4\u2014figure supplement 1).\n\n## Discussion\n\nAlthough reproductive aging significantly impacts the quality of life of women, its underlying neural mechanisms remain poorly characterized. We have established long-term chronic imaging of ARCkiss by fiber photometry in female mice from the fully reproductive phase to the end of the transition to reproductive senescent over 1 year. Our data illuminate the temporal dynamics of SEskiss during the estrus cycle in the reproductive phase and during the transition to reproductive senescence. Our strategy of direct chronic visualization of hormonal regulators in the brain is generally applicable to facilitate characterizations of aging-associated robustness and/or malfunctions in each component of neuroendocrine systems. Here, we discuss specific insights and major limitations of the present study to guide the design of future investigations.\n\nWe updated the frequency and waveforms of individual SEskiss in the young reproductive phase with a detailed analysis of the light/dark periods of all four stages of the estrus cycle (Figure 1). First, we reproduced a previous report showing a stereotyped drop of SEskiss in response to a high level of progesterone just before ovulation in the proestrus stage (Figure 1C; McQuillan et al., 2019). Second, we found that the frequency of SEskiss varied gradually depending on the stage of the estrus cycle (Figure 1D), in contrast to a bimodal frequency reported previously (McQuillan et al., 2019). Third, we noticed that the intensities of SEskiss, which have been thought to be constant across the estrus cycle (McQuillan et al., 2019), significantly varied during the estrus cycle (Figure 1E); individual peak heights of SEskiss increased by almost 1.5-fold in the metestrus compared with the proestrus stage. This trend is consistent with the fact that the amplitude of the LH pulse is highest in the metestrus (Czieselsky et al., 2016). The enhanced activities of the GnRH pulse generator may be beneficial to provide LH/FSH more efficiently at the onset of follicular recruitment, which is sensitive to these hormones (McGee and Hsueh, 2000). What would be the underlying mechanism of these elevated activities? In one scenario, the number of ARCkiss that contributes to SEskiss is constant, but individual ARCkiss fire more. Alternatively, more ARCkiss are dynamically recruited to the SEskiss in the metestrus. To distinguish between these two possibilities, future studies using new tools that allow imaging or recording of neural activities at single-cell resolution (Moore et al., 2022; Steinmetz et al., 2021) in gonad-intact cycling female mice are needed.\n\nWe also found that the waveforms of individual SEskiss varied depending on the stage of the estrus cycle. In the metestrus stage, when the peak was higher, the uphill was significantly steeper (Figure 1F-H). What would be the underlying mechanism? A recent Ca2+ imaging study of ARCkiss at single-cell resolution in ovariectomized female mice revealed heterogeneity of ARCkiss activations during each SEkiss: some subsets of ARCkiss act as \u2018leaders\u2019 and others as \u2018followers\u2019 (Moore et al., 2022). Given these temporal dynamics, in the metestrus stage, the number of \u2018leaders\u2019 may be increased to achieve quicker activation of the entire pool. Alternatively, the \u2018leaders\u2019 more efficiently activate \u2018followers\u2019 in the metestrus stage so that the latency to the peak is short. Although the exact mechanism remains an open question, our data suggest that the molecular and/or cellular mechanisms by which synchronized activation of the ARCkiss pool is achieved are dynamically modulated by the estrus stage, likely via feedback signals mediated by sex steroid hormones.\n\nOur results also showed that the frequency of SEskiss during reproductive senescence was generally stable. Classical studies suggest that the reduced reproductive functions in aging rodents are primarily the result of the dysfunction of the neuroendocrine system, independent of follicular depletion (Kermath and Gore, 2012; Krohn, 1962). There is a reduction in intensities of pulsatile LH release (Scarbrough and Wise, 1990; Wise et al., 1988) and kisspeptin expression in ARCkiss (Kunimura et al., 2017) in aged rats. A reduction in both the intensities and frequencies of pulsatile LH release is also known in postmenopausal women (Hall et al., 2000). In addition, a marked increase in the frequency of SEskiss was observed in gonadectomized mice in the reproductive phase (Clarkson et al., 2017; Han et al., 2019) via a decline of sex steroid hormone-mediated feedback mechanisms. Based on these results, it was possible to assume an abnormal frequency of SEskiss in older females; however, our data did not support this prediction. How is the relatively unaltered frequency of SEskiss during the natural transition to reproductive senescence achieved? In one scenario, the levels of sex steroid hormones may be grossly intact, even in the acyclic phase (Mobbs et al., 1985; Nilsson et al., 2015). Alternatively, the reduction of sex steroid hormones in aging female mice (Gee et al., 1983; Nelson et al., 1981) may be counterbalanced by the attenuation of negative feedback mechanisms in ARCkiss. The lack of the stereotyped drop of SEskiss during the proestrus stage in older females (Figure 4B) generally supported a malfunction of negative feedback mechanisms by sex steroid hormones. It would be highly valuable to analyze SEskiss patterns in aging ovariectomized animals to further investigate this matter, as the previous report of pulsatile LH secretion in aging ovariectomized rats (Scarbrough and Wise, 1990). Whatever the scenario, the lack of increased SEskiss frequency in aged female mice might be adaptive in terms of thermoregulation because elevated SEskiss are thought to be causal to vasodilation (flushing) (Padilla et al., 2018; Rance et al., 2013), one of the most commonly observed symptoms of perimenopausal disorders in women (Casper et al., 1979). In this sense, our data generally support the limitations in the use of older female mice as a model of the human menopausal transition, because not only the ovarian environment but also the adaptation of the hypothalamic regulators, may vary considerably between rodents and primates (Gore, 2015; Kermath and Gore, 2012).\n\nOur data also suggest that the intensities of SEskiss, as assessed by the peak height, gradually declined from the regular to the acyclic phase (Figure 3E). Although we do not exclude the possibility that the reduction of photometric peaks was observed owing to technical artifacts, such as a slight misaligning of the optic fiber during long-term chronic imaging, we noticed that a drop in the photometric signals occurred in association with the reproductive phase rather than the total duration of fiber photometry. For instance, the peak intensity of ID#5 was relatively stable over 10 months from the reproductive to the irregular phase, but quickly declined in the subsequent 2 months upon the transition to the acyclic phase (Figure 3A and E). By contrast, ID#10 exhibited a quick drop of the peak intensity within just 3 months after the surgery upon entering into the acyclic phase. These observations support the interpretation that reduced photometric signals are associated with reduced neural activities of ARCkiss\u2013\u2013individual firing rates, number of active neurons, or both. This trend can explain reduced LH amounts in each pulse (Scarbrough and Wise, 1990; Wise et al., 1988), leading to inefficient follicular development and steroidogenesis in the ovary. The activity decline of individual ARCkiss with the molecular underpinnings should be better characterized in future studies.\n\nBesides our findings regarding SEskiss dynamics, other factors may contribute to reproductive senescence. For instance, aging may alter the release probability of kisspeptin and its receptivity by GPR54 in the GnRH neurons. Additionally, aging affects the function of GnRH neurons (Manfredi-Lozano et al., 2022), including changes in their activity levels and the integrity of neural circuits with balanced excitatory and inhibitory inputs (Kermath and Gore, 2012). Furthermore, since ARCkiss is involved in restricting the amplitude of the preovulatory GnRH/LH surge (Mittelman-Smith et al., 2016), the absence of the stereotyped drop of SEskiss during the proestrus stage in older females (Figure 4B) may contribute to the attenuation of the preovulatory GnRH/LH surge, leading to the transition to the acyclic phase. Future studies should examine these downstream processes to identify the cellular and molecular mechanisms by which the neuroendocrine functions are disrupted during the transition to reproductive senescence in female mice.\n\n## Materials and methods\n\n### Animals\n\nAll animal experiments were approved by the Institutional Animal Care and Use Committee of the RIKEN Kobe Branch. C57BL/6J female mice were purchased from Japan SLC (Shizuoka, Japan), and Kiss1-Cre::GFP (Kiss1-Cre) mice (Jax #017701) were purchased from the Jackson Laboratory. All animals were maintained at the animal facility of the RIKEN Center for Biosystems Dynamics Research (BDR) under an ambient temperature (18\u201323 \u00b0C) and a 12 h light/12 h dark cycle schedule. All mice had ad libitum access to a laboratory diet (MFG; Oriental Yeast, Shiga, Japan; 3.57 kcal/g) and water.\n\n### Estrus cycle monitoring by vaginal cytology\n\nTo prevent the induction of pseudopregnancy, 10 \u03bcl of tap water was gently pipetted once or twice into the vagina with minimum insertion. These vaginal smears were placed on slides and evaluated in the types of cells under the microscope described below. The stage of the estrous cycle was determined based on the presence or absence of leukocytes and cornified and nucleated epithelial cells in accordance with a previous study (Nelson et al., 1982). Mostly nucleated and some cornified epithelial cells are present in proestrus. Some leukocytes are present if the female is in early proestrus. As the stage where the estrus cycle progresses from proestrus to estrus, mostly cornified epithelial cells are present in a relatively larger amount of vaginal smears. These cornified epithelial cells with large amounts of leukocytes are observed in early metestrus. In late metestrus, there are some nucleated epithelial cells in large amounts of leukocytes. In diestrus, there is the lowest amount of vaginal smear that contains leukocytes dominantly and a few epithelial cells. An estrus cycle was defined as the period between subsequent proestrus stages, lasting for a minimum of four days and encompassing at least one day of estrus and at least one day of either metestrus or diestrus stages.\n\n### Stereotaxic injection\n\nFor injection of AAV and an optical fiber, Kiss1-Cre mice were anesthetized with an intraperitoneal injection of saline containing 65 mg/kg ketamine (Daiichi Sankyo) and 13 mg/kg xylazine (X1251; Sigma-Aldrich) and head-fixed to a stereotaxic apparatus (RWD; #68045). The AAV driving Cre-dependent GCaMP6s (AAV9 CAG-FLEx-GCaMPs-WPRE-SV40, 1.5 \u00d7 1013 gp/ml; Addgene, #100842-AAV9) was injected into the ARC using the following coordinates from the bregma: anteroposterior (AP) = \u20132.0 mm, mediolateral = \u20130.2 mm, and dorsoventral (DV) = \u20135.9 mm. A total of 200 nL of AAV was injected into the ARC at a speed of 50 nl/min using a glass capillary regulated by a micro syringe pump (UMP3; World Precision Instruments). At 2\u20134 weeks after AAV injection, an optical fiber (numerical aperture = 0.50, core diameter = 400 \u03bcm; Kyocera) was placed over the ARC using the following coordinates from the bregma: AP = \u20131.8 mm, lateral = \u20130.2 mm, and DV = \u20135.7 mm defined on the brain atlas (Franklin and Paxinos, 2013). The injected fiber was fixed on the skull with dental cement (SUN MEDICAL, Shiga, Japan). Postsurgical mice were singly housed.\n\n### Fiber photometry recording\n\nFluorescence signals were acquired using a fiber photometry system based on a previously published design (Clarkson et al., 2017; Han et al., 2019; McQuillan et al., 2019). All optical components were purchased from Doric Lenses (Quebec, Canada). We performed chronic Ca2+ imaging by delivering excitation lights (470 nm modulated at 530.481 Hz) and collection of emitted fluorescence by using the integrated Fluorescence Mini Cube (iFMC4_IE(405)_E(460-490)_F(500-550)_S; Doric Lenses). Light collection, filtering, and demodulation were performed using the Doric photometry setup and Doric Neuroscience Studio Software (Doric Lenses). The power output at the tip of the fiber was about 4\u201340 \u03bcW. The signals were initially acquired at 12 kHz and then decimated to 120 Hz for recording to disk.\n\nCalcium signals were analyzed using a custom-made code (see Source Code File) in R (version 4.0.3, http://www.R-project.org/). Because the signal intensity of SEskiss varies widely owing to variations in surgery and individual variability, we first calculated the average \u0394F/F height of the stereotyped SEkiss peak of each mouse from several visually obvious peaks with the full width at half maximum threshold over 10 s (Clarkson et al., 2017; McQuillan et al., 2019). The \u0394F/F was calculated by (Ft \u2013 F0) / F0, where Ft is the recorded signal at time = t and F0 is the average of signals over the entire 6 h of recording (Figures 1A and 3A). Then, SEskiss were automatically detected by using the findpeaks function in R, with a peak height threshold of 40% of the estimated peak height. To analyze the reliable peak height and waveform further (Figures 1E, 3E and 4E), we extracted the raw data from \u2013240 to +120 s, when the peak was set to 0 s. We then recalculated the \u0394F/F by (Ft \u2013 F0) / F0, where Ft is the recorded signal at time = t and F0 is the average of signals from \u2013240 to \u2013120 s. The FWQM, LWQM, and RWQM were determined by the recalculated \u0394F/F value (Figure 1H). To show the averaged waveform (Figure 1F and G; Figure 1\u2014figure supplement 1B, Figure 3\u2014figure supplement 2A, B), the recalculated \u0394F/F data were downsized at 10 Hz.\n\n### Histochemistry\n\nMice were anesthetized with isoflurane and perfused with phosphate-buffered saline (PBS) followed by 4% paraformaldehyde (PFA) in PBS. The brain was post-fixed with 4% PFA in PBS overnight. Thirty-\u00b5m coronal brain sections (every fourth section) were made using a cryostat (Leica). To generate cRNA probes for Tac2, DNA templates were amplified by PCR from the whole-brain cDNA (Genostaff, cat#MD-01). T3 RNA polymerase recognition site (5\u2019-AATTAACCCTCACTAAAGGG) was added to the 3\u2019 end of the reverse primers. Forward (F) and reverse (R) primers to generate DNA templates for cRNA probes are as follows: F 5\u2019- AGCCAGCTCCCTGATCCT; R 5\u2019-TTGCTATGGGGTTGAGGC. DNA templates were subjected to in vitro transcription with DIG (cat#11277073910)-RNA labeling mix and T3 RNA polymerase (cat#11031163001) according to the manufacturer\u2019s instructions (Roche Applied Science). Fluorescent in situ hybridization (ISH) combined with anti-GFP immunohistochemical staining was performed as previously reported (Ishii et al., 2017). In brief, after hybridization and washing, brain sections were incubated with horseradish peroxidase (HRP)-conjugated anti-Dig (Roche Applied Science cat#11207733910, 1:500) and anti-GFP (Aves Labs cat#GFP-1010, 1:500) antibodies overnight. Signals were amplified by TSA-plus Cyanine 3 (AKOYA Bioscience, NEL744001KT, 1:70 in 1\u00d7plus amplification diluent) for 25 min, followed by washing, and then GFP-positive cells were visualized by anti-chicken Alexa Fluor 488 (Jackson Immuno Research cat#703-545-155, 1:250). PBS containing 50 ng/ml 4\u2019,6-diamidino-2-phenylindole dihydrochloride (DAPI; Sigma-Aldrich, cat#D8417) was used for counter nuclear staining. Images were acquired using an Olympus BX53 microscope equipped with a 10x (N.A. 0.4) objective lens. Cells were counted manually.\n\nIn Figure 4\u2014figure supplement 1, we prepared control animals by injecting AAV9 CAG-FLEx-GCaMPs-WPRE-SV40 into the ARC of Kiss1-Cre female mice at 3\u20134 months of age. We sacrificed them 4 weeks following the surgery at 14 weeks of age, without fiber implantation or imaging. Thus, control samples represent the healthy reproductive phase without potential damage caused by repeated photometry recording and/or prolonged expression of GCaMP6s. The recorded samples were prepared by sacrificing aged animals (ranging from 18 to 29 months of age) after collecting photometry and estrus cycle data. We compared Tac2 gene expression in the ARC as a robust marker of ARCkiss neurons because the expression level of Kiss1 gene is not sufficient for stable detection by conventional in situ hybridization.\n\n### Real-time quantitative PCR\n\nTotal RNA was extracted from the snap-frozen ARC tissues by using the TRIzol (Invitrogen) following the manufacturer\u2019s instructions. The cDNA from each sample was synthesized with oligo (deoxythymidine) primer at 37 \u00b0C by using the high-capacity cDNA reverse transcription kit (Applied Biosystems, cat#4368814). Gene expression levels were measured using the 7900 real-time PCR system (Applied Biosystems) with PowerUp SYBR Green Master Mix (Thermo Fisher Scientific Inc, cat #A25741). The primer sets used for Kiss1, Tac2, Pdyn, Npy, and Gapdh are as follows:\n\nThe specificity of the amplification products was confirmed by the dissociation curve analysis and electrophoresis on 1.5% agarose gels. The relative gene expression levels were calculated using the 2-\u0394\u0394Ct method (Livak and Schmittgen, 2001), and were sequentially normalized first to Gapdh (a housekeeping gene) and then to Npy (an ARC regional marker). Finally, the expression data of each gene was normalized to the mean of the corresponding gene expression in the reproductive phase to generate the graph shown in Figure 3\u2014figure supplement 2D.\n\n### Statistical analysis\n\nThe statistical details of each experiment, including the statistical tests used, the exact value of n, and what n represents, are described in each figure legend. Two-way analysis of variance (ANOVA) was applied to confirm the interaction effects in Figure 4C. One-way repeated measures ANOVA followed by the Tukey\u2013Kramer post hoc test was applied to determine significant differences in Figure 1D, E and H, and Figure 1\u2014figure supplement 1A. One-way ANOVA followed by the Tukey\u2013Kramer post hoc test was applied to determine significant differences in Figures 2A\u20144. The Kruskal\u2013Wallis test followed by the Mann\u2013Whitney U test was applied to determine significant differences in Figure 3E, and Figure 3\u2014figure supplement 1B and C, and 1D. The Mann\u2013Whitney U test was applied to determine significant differences in Figure 4E, and Figure 4\u2014figure supplement 1B. The Kolmogorov\u2013Smirnov test was applied to determine significant differences in Figures 3D and 4D. Two-tailed Student\u2019s t-test was applied in Figure 1G. A paired t-test was applied in Figure 4C. All statistical analyses were performed using R. Differences were considered to be significant when the p-values were <0.05.\n",
+      "created_at": "2025-12-04T01:43:28.319094Z"
+    },
+    {
+      "id": "5b06bb9b-a216-4bbc-92e9-7800f1334e11",
+      "submission_id": "7c9a931c-7302-47cd-881e-72426f743812",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Joel K Elmquist, https://ror.org/00t9vx427 University of Texas Southwestern Medical Center United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.82533.sa0](https://doi.org/10.7554/eLife.82533.sa0)\n\nThe reviewers agreed that your studies demonstrating an age-dependent dynamic change in the activity of key neurons (Kisspeptin neurons) regulating reproductive functions will be of wide interest. The work provides functional links regarding the transition to reproductive senescence characteristic of aging. The use of chronic imaging of identified neurons is also an important advance.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Joel K Elmquist, https://ror.org/00t9vx427 University of Texas Southwestern Medical Center United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.82533.sa1](https://doi.org/10.7554/eLife.82533.sa1)\n\nOur editorial process produces two outputs: i) public reviews designed to be posted alongside the preprint for the benefit of readers; ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Dynamics of Pulsatile Activities of Arcuate Kisspeptin Neurons in Aging Female Mice\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Catherine Dulac as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Vincent Pr\u00e9vot (Reviewer #1).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1) It would strengthen the manuscript if the authors could discern from their chronic recordings whether the changes in kisspeptin population activity occur before the mouse estrous cycle transitions to irregular and acyclic phases.\n\n2) Have the authors looked at kisspeptin expression in mice before and at the time when the change in kisspeptin activity was recorded?\n\n3) The authors should define what parameters they have used to measure the beginning and end of a normal reproductive cycle. Is this when proestrus occurs? This may not align with the previous reporting of when reproductive senescence is reached in mice, in which the estrus cycles feature persistent vaginal cornification (PVC). In Figure 3, it appears mice do not enter PVC by the end of the recording period. This may suggest that the estrus cycle has been prolonged, but mice may not have reached acyclicity and reproductive senescence.\n\n4) The mouse line is reported as Kiss1-Cre throughout the manuscript, but the authors have cited the Kiss1-CreGFP line. This should be corrected in the methods.\n\n5) The authors have not conducted a histological analysis of kisspeptin cells after imaging. This would aid in (1) identifying the subset of kisspeptin cells imaged, (2) visualizing whether bleaching may have occurred, and (3) using immunocytochemical markers to confirm that cytotoxicity induced by repeated imaging has not affected the health and normal activity of the recorded cells.\n\n6) Because reproductive aging does not alter markedly calcium dynamics in arcuate kisspeptin neurons, I would tone down the last sentence of the results (lines 212 and 213) and replace \"generally support\" by \"suggest\" and \"is\" by \"may be\" and \"appears\".\n\n7) Regarding menopause, the authors should also mention in their introduction and/or discussion the paper of Hall and colleagues (PMID: 10843154) demonstrating the decrease in GnRH/LH pulse frequency with aging in postmenopausal women. Because the continuous infusion of kisspeptin has been shown to be able to restaure pulsatile LH release in women with hypothalamic amenorrhea (PMID: 24517142), pulsatile activity of arcuate nucleus kisspeptin neurons may not be required for GnRH/LH pulsatility, but its suppression in proestrus may play an important facilitatory role for the onset of the preovulatory GnRH/LH surge. The decrease of GnRH/LH pulsatile release with age could rather be due to a decrease or an alteration of the activity of the GnRH neurons themselves, as suggested by recent studies investigating GnRH neuronal function across aging in certain neurodevelopmental disorders (PMID: 36048943). These alternative interpretation and hypotheses, which do not hamper the importance of author's findings, must be discussed.\n\nReviewer #1 (Recommendations for the authors):\n\nBecause reproductive aging does not alter markedly calcium dynamics in arcuate kisspeptin neurons, I would tone down the last sentence of the results (lines 212 and 213) and replace \"generally support\" by \"suggest\" and \"is\" by \"may be\" and \"appears\".\n\nTo put these interesting results in the context of menopause, it might have been interesting to see the effect of ovariectomy in regular cyclic, irregular cyclic and acyclic animals on calcium dynamics (i.e., changes between before and after ovariectomy).\n\nRegarding menopause, the authors should also mention in their introduction and/or discussion the paper of Hall and colleagues (PMID: 10843154) demonstrating the decrease in GnRH/LH pulse frequency with aging in postmenopausal women. Because the continuous infusion of kisspeptin has been shown to be able to restore pulsatile LH release in women with hypothalamic amenorrhea (PMID: 24517142), pulsatile activity of arcuate nucleus kisspeptin neurons may not be required for GnRH/LH pulsatility, but its suppression in proestrus may play an important facilitatory role for the onset of the preovulatory GnRH/LH surge. The decrease of GnRH/LH pulsatile release with age could rather be due to a decrease or an alteration of the activity of the GnRH neurons themselves, as suggested by recent studies investigating GnRH neuronal function across aging in certain neurodevelopmental disorders (PMID: 36048943). These alternative interpretations and hypotheses, which do not hamper the importance of author's findings, must be discussed.\n\nReviewer #2 (Recommendations for the authors):\n\nIt would strengthen the manuscript if the authors could discern from their chronic recordings whether the changes in kisspeptin population activity occur before the mouse estrous cycle transitions to irregular and acyclic phases.\n\nHave the authors looked at kisspeptin expression in mice before and at the time when the change in kisspeptin activity was recorded? A reduction in kiss1 expression will support the conclusion in their discussion based on published literature.\n\nThe authors should define what parameters they have used to measure the beginning and end of a normal reproductive cycle. Is this when proestrus occurs? This may not align with the previous reporting of when reproductive senescence is reached in mice, in which the estrus cycles feature persistent vaginal cornification (PVC). In Figure 3, it appears mice do not enter PVC by the end of the recording period. This may suggest that the estrus cycle has been prolonged, but mice may not have reached acyclicity and reproductive senescence.\n\nThe mouse line is reported as Kiss1-Cre throughout the manuscript, but the authors have cited the Kiss1-CreGFP line. This should be corrected in the methods.\n\nThe authors have not conducted a histological analysis of kisspeptin cells after imaging. This would aid in (1) identifying the subset of kisspeptin cells imaged, (2) visualizing whether bleaching may have occurred, and (3) using immunocytochemical markers to confirm that cytotoxicity induced by repeated imaging has not affected the health and normal activity of the recorded cells.\n",
+      "created_at": "2025-12-04T01:43:28.319094Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T01:43:28.319094Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T01:43:28.319094Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "19e8492b-8906-44f7-b7dc-d375c0560545",
+      "content_id": "89f15d53-ecf2-4df5-9c89-ae2ce65d7ad0",
+      "claim_id": "C1",
+      "claim": "Reproductive senescence is broadly observed across mammalian females, including humans, eventually leading to a loss of fertility.",
+      "claim_type": "EXPLICIT",
+      "source": "Reproductive senescence is broadly observed across mammalian females, including humans, eventually leading to a loss of fertility.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement supported by established scientific knowledge and is cited in the introduction with references (Kermath and Gore, 2012).",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:28.319094Z"
+    },
+    {
+      "id": "7188204f-924f-48c1-ba25-c779a8f6a7eb",
+      "content_id": "89f15d53-ecf2-4df5-9c89-ae2ce65d7ad0",
+      "claim_id": "C2",
+      "claim": "The pulsatile secretion of gonadotropin-releasing hormone (GnRH), which is essential for gonad function, is primarily controlled by kisspeptin neurons in the hypothalamic arcuate nucleus (ARCkiss), the pulse generator of GnRH.",
+      "claim_type": "EXPLICIT",
+      "source": "The pulsatile secretion of gonadotropin-releasing hormone (GnRH), which is essential for gonad function, is primarily controlled by kisspeptin neurons in the hypothalamic arcuate nucleus (ARCkiss), the pulse generator of GnRH.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by established scientific knowledge about the role of ARCkiss neurons in GnRH regulation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:28.319094Z"
+    },
+    {
+      "id": "bc75d1ca-f6fb-4979-8945-824bb7efbfab",
+      "content_id": "89f15d53-ecf2-4df5-9c89-ae2ce65d7ad0",
+      "claim_id": "C3",
+      "claim": "The pulsatility of GnRH release, as assessed by the amount of circulating gonadotropin, is markedly reduced in aged animals.",
+      "claim_type": "EXPLICIT",
+      "source": "The pulsatility of GnRH release, as assessed by the amount of circulating gonadotropin, is markedly reduced in aged animals, suggesting that the malfunctions of ARCkiss may be responsible for reproductive aging and menopause-related disorders.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research findings.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:28.319094Z"
+    },
+    {
+      "id": "a2c83fd7-fa64-439c-92d8-efe5bc77cd16",
+      "content_id": "89f15d53-ecf2-4df5-9c89-ae2ce65d7ad0",
+      "claim_id": "C4",
+      "claim": "During the reproductive phase, not only the frequency, but also the intensities and waveforms of individual SEskiss, vary depending on the stage of the estrus cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "During the reproductive phase, we find that not only the frequency, but also the intensities and waveforms of individual SEskiss, vary depending on the stage of the estrus cycle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data presented in the manuscript, specifically in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:28.319094Z"
+    },
+    {
+      "id": "1d9f3f95-f19a-4064-9a14-94039ff513d7",
+      "content_id": "89f15d53-ecf2-4df5-9c89-ae2ce65d7ad0",
+      "claim_id": "C5",
+      "claim": "During the transition to reproductive senescence, the integrity of SEskiss patterns, including the frequency and waveforms, remains mostly unchanged.",
+      "claim_type": "EXPLICIT",
+      "source": "During the transition to reproductive senescence, the integrity of SEskiss patterns, including the frequency and waveforms, remains mostly unchanged, whereas the intensities tend to decline.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data presented in Figures 3 and 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:28.319094Z"
+    },
+    {
+      "id": "1a6e13ec-314d-40d6-ad38-c2b26777365d",
+      "content_id": "89f15d53-ecf2-4df5-9c89-ae2ce65d7ad0",
+      "claim_id": "C6",
+      "claim": "During the transition to reproductive senescence, the intensities of SEskiss tend to decline.",
+      "claim_type": "EXPLICIT",
+      "source": "During the transition to reproductive senescence, the integrity of SEskiss patterns, including the frequency and waveforms, remains mostly unchanged, whereas the intensities tend to decline.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data presented in Figures 3 and 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:28.319094Z"
+    },
+    {
+      "id": "737d5074-2105-4240-8e1e-f32f6ef18d91",
+      "content_id": "89f15d53-ecf2-4df5-9c89-ae2ce65d7ad0",
+      "claim_id": "C7",
+      "claim": "Women undergo the perimenopausal transition to reproductive senescence, in which the menstrual cycles become irregular in length and timing before eventually ceasing at approximately 51 years of age.",
+      "claim_type": "EXPLICIT",
+      "source": "In humans, women undergo the perimenopausal transition to reproductive senescence, in which the menstrual cycles become irregular in length and timing before eventually ceasing at approximately 51 years of age (Gore, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Gore, 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:28.319094Z"
+    },
+    {
+      "id": "8675386a-5890-48b8-9381-0316c3d07319",
+      "content_id": "89f15d53-ecf2-4df5-9c89-ae2ce65d7ad0",
+      "claim_id": "C8",
+      "claim": "The perimenopausal transition is associated with a risk of metabolic, physical, and mental disorders.",
+      "claim_type": "EXPLICIT",
+      "source": "As this transition is associated with a risk of metabolic, physical, and mental disorders (Greendale et al., 1999), it is essential to understand the molecular and cellular mechanisms of reproductive aging for not only reproductive medicine, but also women's health in general.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Greendale et al., 1999.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:28.319094Z"
+    },
+    {
+      "id": "178424d0-7757-4448-948e-6550ffc31689",
+      "content_id": "89f15d53-ecf2-4df5-9c89-ae2ce65d7ad0",
+      "claim_id": "C9",
+      "claim": "GnRH release occurs in a pulsatile manner at intervals of 30 min to several hours, depending on the species and reproductive (estrus) cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "GnRH release occurs in a pulsatile manner at intervals of 30 min to several hours, depending on the species and reproductive (estrus) cycle (Herbison, 2018), and this pulsatility is essential for reproductive functions (Belchetz et al., 1978).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Herbison, 2018 and Belchetz et al., 1978.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:28.319094Z"
+    },
+    {
+      "id": "8a55ea40-7c9b-4afd-af69-e467e5e16628",
+      "content_id": "89f15d53-ecf2-4df5-9c89-ae2ce65d7ad0",
+      "claim_id": "C10",
+      "claim": "Pulsatility of GnRH is essential for reproductive functions.",
+      "claim_type": "EXPLICIT",
+      "source": "GnRH release occurs in a pulsatile manner at intervals of 30 min to several hours, depending on the species and reproductive (estrus) cycle (Herbison, 2018), and this pulsatility is essential for reproductive functions (Belchetz et al., 1978).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Belchetz et al., 1978.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:28.319094Z"
+    },
+    {
+      "id": "46412e42-93d5-4a9e-a792-65f2a8061008",
+      "content_id": "89f15d53-ecf2-4df5-9c89-ae2ce65d7ad0",
+      "claim_id": "C11",
+      "claim": "Pulsatile LH release as a proxy of GnRH activities decreases with age in rats.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, pulsatile LH release as a proxy of GnRH activities decreases with age in rats (Scarbrough and Wise, 1990; Wise et al., 1988).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Scarbrough and Wise, 1990 and Wise et al., 1988.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:28.319094Z"
+    },
+    {
+      "id": "a5b0330a-48f1-4f66-a312-9b7dd9ce4c6f",
+      "content_id": "89f15d53-ecf2-4df5-9c89-ae2ce65d7ad0",
+      "claim_id": "C12",
+      "claim": "The preovulatory LH surge is delayed or attenuated with aging.",
+      "claim_type": "EXPLICIT",
+      "source": "As such, the preovulatory LH surge is delayed or attenuated with aging (Matt et al., 1998) with decreased c-Fos expression, a marker of neural activation, in the GnRH neurons (Rubin et al., 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Matt et al., 1998 and Rubin et al., 1994.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:28.319094Z"
+    },
+    {
+      "id": "babf20e6-7dc4-4b4e-bfe8-f973f191f01c",
+      "content_id": "89f15d53-ecf2-4df5-9c89-ae2ce65d7ad0",
+      "claim_id": "C13",
+      "claim": "Reproductive senescence is mediated by the neuroendocrine system independent of the depletion of the follicular reserve.",
+      "claim_type": "EXPLICIT",
+      "source": "Together with a classical transplantation study showing the presence of viable follicles in aged rodents (Krohn, 1962), these studies suggest that reproductive senescence is mediated by the neuroendocrine system independent of the depletion of the follicular reserve.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from multiple cited studies including Krohn, 1962.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:28.319094Z"
+    },
+    {
+      "id": "10dc761c-e35a-4a05-b0df-1a4e2c8b87af",
+      "content_id": "89f15d53-ecf2-4df5-9c89-ae2ce65d7ad0",
+      "claim_id": "C14",
+      "claim": "Kisspeptin is a neuropeptide crucial for puberty.",
+      "claim_type": "EXPLICIT",
+      "source": "Of many candidates for GnRH regulation, kisspeptin, a neuropeptide crucial for puberty (d'Anglemont de Tassigny et al., 2007; Lapatto et al., 2007; Uenoyama et al., 2015), is thought to play a dominant role (Kermath and Gore, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to d'Anglemont de Tassigny et al., 2007; Lapatto et al., 2007; Uenoyama et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:28.319094Z"
+    },
+    {
+      "id": "913ccbf3-a20b-406d-bb4e-eb7a72e97b9d",
+      "content_id": "89f15d53-ecf2-4df5-9c89-ae2ce65d7ad0",
+      "claim_id": "C15",
+      "claim": "There are two populations of kisspeptin neurons in the rodent hypothalamus: one in the arcuate nucleus (ARCkiss), which acts as the GnRH pulse generator, and the other in the anteroventral periventricular nucleus (AVPVkiss), which functions as the GnRH surge generator.",
+      "claim_type": "EXPLICIT",
+      "source": "There are two populations of kisspeptin neurons in the rodent hypothalamus: one in the arcuate nucleus (ARCkiss), which acts as the GnRH pulse generator (Clarkson et al., 2017; Nagae et al., 2021), and the other in the anteroventral periventricular nucleus (AVPVkiss), which functions as the GnRH surge generator (Clarkson et al., 2008; Matsuda et al., 2019; Piet et al., 2018; Uenoyama et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:28.319094Z"
+    },
+    {
+      "id": "0a1ee466-75ef-4bd0-b50b-373eea282959",
+      "content_id": "89f15d53-ecf2-4df5-9c89-ae2ce65d7ad0",
+      "claim_id": "C16",
+      "claim": "Previous studies have shown a decrease in kisspeptin signaling in both ARCkiss and AVPVkiss during aging in rats.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies have shown a decrease in kisspeptin signaling in both ARCkiss (Kunimura et al., 2017) and AVPVkiss (Lederman et al., 2010; Neal-Perry et al., 2009) during aging in rats.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Kunimura et al., 2017; Lederman et al., 2010; Neal-Perry et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:28.319094Z"
+    },
+    {
+      "id": "67dbe7fc-61c4-49c1-b636-0484ca28f334",
+      "content_id": "89f15d53-ecf2-4df5-9c89-ae2ce65d7ad0",
+      "claim_id": "C17",
+      "claim": "SEskiss are well correlated with pulsatile LH secretion.",
+      "claim_type": "EXPLICIT",
+      "source": "SEskiss are well correlated with pulsatile LH secretion (Clarkson et al., 2017), tightly regulated by gonadal negative feedback signals mediated by sex steroid hormones (McQuillan et al., 2022), and undergo dynamic changes in frequency depending on the stage of the estrus cycle (McQuillan et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Clarkson et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:28.319094Z"
+    },
+    {
+      "id": "20614d9d-1fd7-44e1-9425-746e098d056d",
+      "content_id": "89f15d53-ecf2-4df5-9c89-ae2ce65d7ad0",
+      "claim_id": "C18",
+      "claim": "SEskiss are tightly regulated by gonadal negative feedback signals mediated by sex steroid hormones.",
+      "claim_type": "EXPLICIT",
+      "source": "SEskiss are well correlated with pulsatile LH secretion (Clarkson et al., 2017), tightly regulated by gonadal negative feedback signals mediated by sex steroid hormones (McQuillan et al., 2022), and undergo dynamic changes in frequency depending on the stage of the estrus cycle (McQuillan et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to McQuillan et al., 2022.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:28.319094Z"
+    },
+    {
+      "id": "879133cc-ae12-4fa4-b4b7-95d1d6acc340",
+      "content_id": "89f15d53-ecf2-4df5-9c89-ae2ce65d7ad0",
+      "claim_id": "C19",
+      "claim": "SEskiss undergo dynamic changes in frequency depending on the stage of the estrus cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "SEskiss are well correlated with pulsatile LH secretion (Clarkson et al., 2017), tightly regulated by gonadal negative feedback signals mediated by sex steroid hormones (McQuillan et al., 2022), and undergo dynamic changes in frequency depending on the stage of the estrus cycle (McQuillan et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to McQuillan et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:28.319094Z"
+    },
+    {
+      "id": "7413c998-6abf-41c7-89cb-e3750dbeb0b4",
+      "content_id": "89f15d53-ecf2-4df5-9c89-ae2ce65d7ad0",
+      "claim_id": "C20",
+      "claim": "The number of SEskiss was dynamically altered in various stages of the estrus cycle and light and dark periods.",
+      "claim_type": "EXPLICIT",
+      "source": "The number of SEskiss was dynamically altered in various stages of the estrus cycle and light and dark periods (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:28.319094Z"
+    },
+    {
+      "id": "57b91a22-0271-4af6-9f4c-f28f320e4e85",
+      "content_id": "89f15d53-ecf2-4df5-9c89-ae2ce65d7ad0",
+      "claim_id": "C21",
+      "claim": "Proestrus just after the diestrus stage showed a stereotyped drop (<0.5) in the ratio of SEskiss in the dark period normalized to that of the preceding light period compared with other stages of the estrus cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, when the number of SEskiss in the dark period was normalized to that of the preceding light period, proestrus just after the diestrus stage showed a stereotyped drop (<0.5) compared with other stages of the estrus cycle (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:28.319094Z"
+    },
+    {
+      "id": "60622bed-2e8e-4594-b144-bc6c8b6a0530",
+      "content_id": "89f15d53-ecf2-4df5-9c89-ae2ce65d7ad0",
+      "claim_id": "C22",
+      "claim": "The number of SEskiss during the estrus cycle was lowest at the dark period of the proestrus, and then gradually increased as the estrus cycle advanced, reaching the highest values at the dark period of the metestrus and diestrus.",
+      "claim_type": "EXPLICIT",
+      "source": "The number of SEskiss during the estrus cycle was lowest at the dark period of the proestrus, and then gradually increased as the estrus cycle advanced, reaching the highest values at the dark period of the metestrus and diestrus (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:28.319094Z"
+    },
+    {
+      "id": "13ff11a6-014f-4405-ad5e-b557e3e63cb0",
+      "content_id": "89f15d53-ecf2-4df5-9c89-ae2ce65d7ad0",
+      "claim_id": "C23",
+      "claim": "The peak height of SEskiss normalized to that in the light period of proestrus fluctuated during the regular estrus cycle, with the highest (approximately 1.5-fold) at the light period 2 days after proestrus.",
+      "claim_type": "EXPLICIT",
+      "source": "We also found that the peak height of SEskiss normalized to that in the light period of proestrus fluctuated during the regular estrus cycle, with the highest (approximately 1.5-fold) at the light period 2 days after proestrus (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:28.319094Z"
+    },
+    {
+      "id": "7ace8b9f-9700-4d71-ab56-aaec71083a97",
+      "content_id": "89f15d53-ecf2-4df5-9c89-ae2ce65d7ad0",
+      "claim_id": "C24",
+      "claim": "The higher peak during metestrus may be correlated with a higher amount of kisspeptin released to GnRH neurons to facilitate more LH/FSH secretion.",
+      "claim_type": "EXPLICIT",
+      "source": "The higher peak during metestrus may be correlated with a higher amount of kisspeptin released to GnRH neurons to facilitate more LH/FSH secretion (Czieselsky et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative claim supported by a citation to Czieselsky et al., 2016.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:28.319094Z"
+    },
+    {
+      "id": "81198b8c-a2ba-4e82-8f2c-3e18a766a880",
+      "content_id": "89f15d53-ecf2-4df5-9c89-ae2ce65d7ad0",
+      "claim_id": "C25",
+      "claim": "The onset and offset in proestrus significantly advanced compared with the estrus/metestrus stage 2 days after proestrus.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the overall shape was similar when the peak was aligned, the onset and offset in proestrus significantly advanced compared with the estrus/metestrus stage 2 days after proestrus (Figure 1G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:28.319094Z"
+    },
+    {
+      "id": "bdb08084-a523-424f-bb6c-d58f7dff603a",
+      "content_id": "89f15d53-ecf2-4df5-9c89-ae2ce65d7ad0",
+      "claim_id": "C26",
+      "claim": "The full-width at quarter maximum (FWQM) was constant across all stages of the estrus cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas the full-width at quarter maximum (FWQM) was constant across all stages of the estrus cycle, LWQM in the proestrus stage was significantly longer than that in the other stages (Figure 1H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:28.319094Z"
+    },
+    {
+      "id": "17bd6ebe-df89-4cce-a9fb-8bec5bf5cd7a",
+      "content_id": "89f15d53-ecf2-4df5-9c89-ae2ce65d7ad0",
+      "claim_id": "C27",
+      "claim": "LWQM in the proestrus stage was significantly longer than that in the other stages.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas the full-width at quarter maximum (FWQM) was constant across all stages of the estrus cycle, LWQM in the proestrus stage was significantly longer than that in the other stages (Figure 1H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:28.319094Z"
+    },
+    {
+      "id": "ebdcf640-f429-435c-8ac0-61df85a99f98",
+      "content_id": "89f15d53-ecf2-4df5-9c89-ae2ce65d7ad0",
+      "claim_id": "C28",
+      "claim": "RWQM in the proestrus stage tended to be shorter, while that in estrus/metestrus was significantly longer.",
+      "claim_type": "EXPLICIT",
+      "source": "RWQM in the proestrus stage tended to be shorter, while that in estrus/metestrus was significantly longer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:28.319094Z"
+    },
+    {
+      "id": "9600be24-697a-48a7-8a8c-cdf6e9ac6354",
+      "content_id": "89f15d53-ecf2-4df5-9c89-ae2ce65d7ad0",
+      "claim_id": "C29",
+      "claim": "When the peak was higher, the upslope was steeper and the downslope was gentler.",
+      "claim_type": "EXPLICIT",
+      "source": "Variations in waveforms correlated with the peak height: when the peak was higher, the upslope was steeper and the downslope was gentler.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:28.319094Z"
+    },
+    {
+      "id": "387f723e-c51b-46fc-8003-941d072d020e",
+      "content_id": "89f15d53-ecf2-4df5-9c89-ae2ce65d7ad0",
+      "claim_id": "C30",
+      "claim": "The number of estrus cycles per 25 days was gradually decreased in an age-dependent manner in wild-type C57BL/6J females.",
+      "claim_type": "EXPLICIT",
+      "source": "We first confirmed that the number of estrus cycles per 25 days of wild-type C57BL/6J females was gradually decreased in an age-dependent manner (Figure 2A), generally consistent with a preceding study (Nelson et al., 1982).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2A and is consistent with a cited study.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:28.319094Z"
+    },
+    {
+      "id": "e7a79504-0504-4525-97ca-9c68d5fa90b7",
+      "content_id": "89f15d53-ecf2-4df5-9c89-ae2ce65d7ad0",
+      "claim_id": "C31",
+      "claim": "A similar trend of age-dependent decline in estrus cycles was observed in Kiss1-Cre female mice that had been injected with an AAV driving Cre-dependent GCaMP6s into the ARC with an optic fiber implanted above it.",
+      "claim_type": "EXPLICIT",
+      "source": "A similar trend was observed in Kiss1-Cre female mice that had been injected with an AAV driving Cre-dependent GCaMP6s into the ARC with an optic fiber implanted above it, indicating that the genetic manipulation and fiber photometry setting did not alter the reproductive decline process (Figure 2B, n=12).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:28.319094Z"
+    },
+    {
+      "id": "3abe1db2-6904-43da-9c29-ad2155f97e8c",
+      "content_id": "89f15d53-ecf2-4df5-9c89-ae2ce65d7ad0",
+      "claim_id": "C32",
+      "claim": "The genetic manipulation and fiber photometry setting did not alter the reproductive decline process.",
+      "claim_type": "EXPLICIT",
+      "source": "A similar trend was observed in Kiss1-Cre female mice that had been injected with an AAV driving Cre-dependent GCaMP6s into the ARC with an optic fiber implanted above it, indicating that the genetic manipulation and fiber photometry setting did not alter the reproductive decline process (Figure 2B, n=12).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is inferred from the similarity of trends between wild-type and manipulated mice.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:28.319094Z"
+    },
+    {
+      "id": "5180202b-564e-4b1f-bd5e-f0c7de4750b8",
+      "content_id": "89f15d53-ecf2-4df5-9c89-ae2ce65d7ad0",
+      "claim_id": "C33",
+      "claim": "The average number of estrus cycles per 25 days substantially declined between ages 12\u201313 months.",
+      "claim_type": "EXPLICIT",
+      "source": "The average number of estrus cycles per 25 days substantially declined between ages 12\u201313 months, supporting the notion that female mice begin to show irregular cyclicity at around 13 months of age.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:28.319094Z"
+    },
+    {
+      "id": "cb382150-d0ad-43ce-a0ca-b07fdac86776",
+      "content_id": "89f15d53-ecf2-4df5-9c89-ae2ce65d7ad0",
+      "claim_id": "C34",
+      "claim": "Female mice begin to show irregular cyclicity at around 13 months of age.",
+      "claim_type": "EXPLICIT",
+      "source": "The average number of estrus cycles per 25 days substantially declined between ages 12\u201313 months, supporting the notion that female mice begin to show irregular cyclicity at around 13 months of age.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the experimental data showing decline in estrus cycles.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:28.319094Z"
+    },
+    {
+      "id": "521cbe6a-82f4-49fb-906b-ddff0065213d",
+      "content_id": "89f15d53-ecf2-4df5-9c89-ae2ce65d7ad0",
+      "claim_id": "C35",
+      "claim": "The frequency of SEskiss was not drastically changed during aging, whereas the intensity of SEskiss exhibited a decline across the transition to reproductive senescence.",
+      "claim_type": "EXPLICIT",
+      "source": "At a glance, the frequency of SEskiss was not drastically changed, whereas the intensity of SEskiss exhibited a decline across the transition to reproductive senescence (Figure 3A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figures 3A and 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:28.319094Z"
+    },
+    {
+      "id": "a69b2791-ca60-4989-84b1-593450ad6e5a",
+      "content_id": "89f15d53-ecf2-4df5-9c89-ae2ce65d7ad0",
+      "claim_id": "C36",
+      "claim": "The frequency of SEskiss as assessed by the average number per 6 h was constant from age 6 months (fully reproductive) to age 15\u201318 months (acyclic in aging).",
+      "claim_type": "EXPLICIT",
+      "source": "Quantitative analysis showed that the frequency of SEskiss as assessed by the average number per 6 h was constant (Figure 3C), with no difference in the cumulative probability of inter-peak intervals among data set from age 6 months (fully reproductive) to age 15\u201318 months (acyclic in aging) (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figures 3C and 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:28.319094Z"
+    },
+    {
+      "id": "47e5ee71-cdf7-4b97-ac53-68866cac3045",
+      "content_id": "89f15d53-ecf2-4df5-9c89-ae2ce65d7ad0",
+      "claim_id": "C37",
+      "claim": "There was no difference in the cumulative probability of inter-peak intervals among data set from age 6 months (fully reproductive) to age 15\u201318 months (acyclic in aging).",
+      "claim_type": "EXPLICIT",
+      "source": "Quantitative analysis showed that the frequency of SEskiss as assessed by the average number per 6 h was constant (Figure 3C), with no difference in the cumulative probability of inter-peak intervals among data set from age 6 months (fully reproductive) to age 15\u201318 months (acyclic in aging) (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:28.319094Z"
+    },
+    {
+      "id": "73072d5c-5780-4396-9871-ee043a5715da",
+      "content_id": "89f15d53-ecf2-4df5-9c89-ae2ce65d7ad0",
+      "claim_id": "C38",
+      "claim": "The elevated frequency of SEskiss generally observed in ovariectomized females was not found in the natural transition to reproductive senescence.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the elevated frequency of SEskiss generally observed in ovariectomized females (Clarkson et al., 2017), which is thought to indicate a drastic decline of sex steroid hormone-mediated negative feedback (Padilla et al., 2018), was not found in the natural transition to reproductive senescence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data and comparison with cited studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:28.319094Z"
+    },
+    {
+      "id": "c72ea12a-e5a5-4d36-b21e-5f9d219668fb",
+      "content_id": "89f15d53-ecf2-4df5-9c89-ae2ce65d7ad0",
+      "claim_id": "C39",
+      "claim": "The waveforms of individual SEskiss were grossly unchanged from the reproductive to acyclic phase, with only slight individual differences found in the aging phases.",
+      "claim_type": "EXPLICIT",
+      "source": "We also found that the waveforms of individual SEskiss were grossly unchanged from the reproductive to acyclic phase, with only slight individual differences found in the aging phases (Figure 3\u2014figure supplement 2A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3\u2014figure supplement 2A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:28.319094Z"
+    },
+    {
+      "id": "5bf4bb1d-5171-4cb4-8342-5045c1628e63",
+      "content_id": "89f15d53-ecf2-4df5-9c89-ae2ce65d7ad0",
+      "claim_id": "C40",
+      "claim": "The peak height as assessed by \u0394F/F values was significantly decreased during the transition to the acyclic phase in two females.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to the relatively stable frequency of SEskiss, quantitative analysis showed that the peak height as assessed by \u0394F/F values was significantly decreased during the transition to the acyclic phase in these two females (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:28.319094Z"
+    },
+    {
+      "id": "d6eedd48-c5ca-4e6f-9404-058955bd71b3",
+      "content_id": "89f15d53-ecf2-4df5-9c89-ae2ce65d7ad0",
+      "claim_id": "C41",
+      "claim": "A stereotyped drop in the ratio of SEskiss in the dark period normalized to those in the preceding light period was evident at the proestrus stage in young (reproductive) female mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Although a stereotyped drop in the ratio of SEskiss in the dark period normalized to those in the preceding light period was evident at the proestrus stage in young (reproductive) female mice (Figure 1C), no such trend was observed in all three groups of aging mice (Figure 4B), which suggests an alteration of negative feedback by sex steroid hormones.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:28.319094Z"
+    },
+    {
+      "id": "539d2a17-17c4-49ff-ba60-2cd56988a98d",
+      "content_id": "89f15d53-ecf2-4df5-9c89-ae2ce65d7ad0",
+      "claim_id": "C42",
+      "claim": "No stereotyped drop in the ratio of SEskiss in the dark period normalized to those in the preceding light period was observed in all three groups of aging mice, which suggests an alteration of negative feedback by sex steroid hormones.",
+      "claim_type": "EXPLICIT",
+      "source": "Although a stereotyped drop in the ratio of SEskiss in the dark period normalized to those in the preceding light period was evident at the proestrus stage in young (reproductive) female mice (Figure 1C), no such trend was observed in all three groups of aging mice (Figure 4B), which suggests an alteration of negative feedback by sex steroid hormones.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4B and involves inference about hormonal feedback.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:28.319094Z"
+    },
+    {
+      "id": "6d5084b4-1e1f-42e6-8d5b-b2fef7c3aa23",
+      "content_id": "89f15d53-ecf2-4df5-9c89-ae2ce65d7ad0",
+      "claim_id": "C43",
+      "claim": "There was a slight reduction in the frequency of SEskiss in the irregular compared with the regular cyclic group.",
+      "claim_type": "EXPLICIT",
+      "source": "We also noticed a slight reduction in the frequency of SEskiss in the irregular compared with the regular cyclic group (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:28.319094Z"
+    },
+    {
+      "id": "f215e110-9504-4856-9440-45f56a20cb37",
+      "content_id": "89f15d53-ecf2-4df5-9c89-ae2ce65d7ad0",
+      "claim_id": "C44",
+      "claim": "In the irregular cyclic group, the number of SEskiss in the light period was significantly lower than that in the dark period.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, in the irregular cyclic group, the number of SEskiss in the light period was significantly lower than that in the dark period.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:28.319094Z"
+    },
+    {
+      "id": "d59c3d4b-91e9-43cf-bffe-2d3d43e43844",
+      "content_id": "89f15d53-ecf2-4df5-9c89-ae2ce65d7ad0",
+      "claim_id": "C45",
+      "claim": "No difference in the cumulative probability of inter-peak intervals was found among the reproductive group (age 4\u20136 months) or three aging groups.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the individual analysis (Figure 3D), no difference in the cumulative probability of inter-peak intervals was found among the reproductive group (age 4\u20136 months) or three aging groups (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:28.319094Z"
+    },
+    {
+      "id": "412c843a-5c42-4f19-8c14-270443e46cf8",
+      "content_id": "89f15d53-ecf2-4df5-9c89-ae2ce65d7ad0",
+      "claim_id": "C46",
+      "claim": "No increase in the frequency of SEskiss was observed in any of the three aging groups.",
+      "claim_type": "EXPLICIT",
+      "source": "Again, no increase in the frequency of SEskiss was observed in any of the three aging groups.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:28.319094Z"
+    },
+    {
+      "id": "c577af00-eb53-49e6-b0b0-cd4a1d6811e7",
+      "content_id": "89f15d53-ecf2-4df5-9c89-ae2ce65d7ad0",
+      "claim_id": "C47",
+      "claim": "The frequency of SEskiss during the transition to reproductive senescence is overall stable.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, these data demonstrate that the frequency of SEskiss during the transition to reproductive senescence is overall stable.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is a summary conclusion based on the experimental data presented.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:28.319094Z"
+    },
+    {
+      "id": "7d609a3a-47a6-47d4-a755-d7603d87a9ff",
+      "content_id": "89f15d53-ecf2-4df5-9c89-ae2ce65d7ad0",
+      "claim_id": "C48",
+      "claim": "The peak height of SEskiss declined from the regular to the irregular cyclic (two of four individuals) and acyclic phases (all four individuals).",
+      "claim_type": "EXPLICIT",
+      "source": "Regarding the intensities of SEskiss, our additional analysis (Figure 4E, and ID#5, 6 in Figure 3E) showed that the peak height declined from the regular to the irregular cyclic (two of four individuals) and acyclic phases (all four individuals).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figures 4E and 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:28.319094Z"
+    },
+    {
+      "id": "cfcdcb41-96a5-40b2-afe8-6dc0f07882f0",
+      "content_id": "89f15d53-ecf2-4df5-9c89-ae2ce65d7ad0",
+      "claim_id": "C49",
+      "claim": "In aged female mice, the intensity of SEskiss may be reduced, whereas their frequency, to a lesser extent, appears altered.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, our data suggest the notion that in aged female mice, the intensity of SEskiss may be reduced, whereas their frequency, to a lesser extent, appears altered.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary claim based on the experimental data, involving some speculation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:28.319094Z"
+    },
+    {
+      "id": "ece0c8a5-71a1-46f6-8c32-3a1eb4fe0eaf",
+      "content_id": "89f15d53-ecf2-4df5-9c89-ae2ce65d7ad0",
+      "claim_id": "C50",
+      "claim": "The relative expression levels of Kiss1, Tac2, and Pdyn genes normalized to that in the healthy phase were unaltered among the diestrus ARC samples from the reproductive to acyclic phase.",
+      "claim_type": "EXPLICIT",
+      "source": "The relative expression levels of these three genes normalized to that in the healthy phase, unaltered among the diestrus ARC samples from the reproductive to acyclic phase (Figure 3\u2014figure supplement 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3\u2014figure supplement 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:28.319094Z"
+    },
+    {
+      "id": "a1cc4c9b-c4e8-43a3-b596-48c1554892ed",
+      "content_id": "89f15d53-ecf2-4df5-9c89-ae2ce65d7ad0",
+      "claim_id": "C51",
+      "claim": "A reduction in Kiss1 gene expression is not a primary driver of the reproductive decline in mice.",
+      "claim_type": "EXPLICIT",
+      "source": "This result is in contrast to a previous report (Kunimura et al., 2017) implying a decrease in Kiss1 expression in aged rats and supports the notion that a reduction in Kiss1 gene expression is not a primary driver of the reproductive decline in mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the experimental data and comparison with a cited study.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:28.319094Z"
+    },
+    {
+      "id": "b606aea0-e5ac-464f-95a6-fff3d201eb33",
+      "content_id": "89f15d53-ecf2-4df5-9c89-ae2ce65d7ad0",
+      "claim_id": "C52",
+      "claim": "The targeting efficiency, as measured by the fraction of GCaMP6+ cells over Tac2+ cells, and the number of GCaMP6s+ cells were similar between healthy control mice in the reproductive phase and aged samples collected after imaging sessions.",
+      "claim_type": "EXPLICIT",
+      "source": "The targeting efficiency, as measured by the fraction of GCaMP6+ cells over Tac2+ cells, and the number of GCaMP6s+ cells were similar between healthy control mice in the reproductive phase and our aged samples collected after imaging sessions (Figure 4\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:28.319094Z"
+    },
+    {
+      "id": "f815fa3b-fbfa-4598-8fb7-49178bce8fb9",
+      "content_id": "89f15d53-ecf2-4df5-9c89-ae2ce65d7ad0",
+      "claim_id": "C53",
+      "claim": "The number of Tac2+ cells in the imaged side, normalized to the non-imaged contralateral side, was comparable between the control and recorded animals, suggesting the negligible tissue damage or cell death associated with cytotoxicity by prolonged expression of GCaMP6s and/or repeated photometry recording.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the number of Tac2+ cells in the imaged side, normalized to the non-imaged contralateral side, was comparable between the control and recorded animals, suggesting the negligible tissue damage or cell death associated with cytotoxicity by prolonged expression of GCaMP6s and/or repeated photometry recording (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4\u2014figure supplement 1 and involves inference about tissue damage.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:28.319094Z"
+    },
+    {
+      "id": "f06418db-e770-423d-bcca-be792cc5a501",
+      "content_id": "89f15d53-ecf2-4df5-9c89-ae2ce65d7ad0",
+      "claim_id": "C54",
+      "claim": "The frequency of SEskiss varied gradually depending on the stage of the estrus cycle, in contrast to a bimodal frequency reported previously.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, we found that the frequency of SEskiss varied gradually depending on the stage of the estrus cycle (Figure 1D), in contrast to a bimodal frequency reported previously (McQuillan et al., 2019).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1D and comparison with a cited study.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:28.319094Z"
+    },
+    {
+      "id": "3b4d34ea-e7be-449f-919c-c0ec462b1365",
+      "content_id": "89f15d53-ecf2-4df5-9c89-ae2ce65d7ad0",
+      "claim_id": "C55",
+      "claim": "The intensities of SEskiss, which have been thought to be constant across the estrus cycle, significantly varied during the estrus cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, we noticed that the intensities of SEskiss, which have been thought to be constant across the estrus cycle (McQuillan et al., 2019), significantly varied during the estrus cycle (Figure 1E); individual peak heights of SEskiss increased by almost 1.5-fold in the metestrus compared with the proestrus stage.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1E and comparison with a cited study.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:28.319094Z"
+    },
+    {
+      "id": "87ab9ee2-9b62-4d77-9ae0-80d8b98c8fc0",
+      "content_id": "89f15d53-ecf2-4df5-9c89-ae2ce65d7ad0",
+      "claim_id": "C56",
+      "claim": "Individual peak heights of SEskiss increased by almost 1.5-fold in the metestrus compared with the proestrus stage.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, we noticed that the intensities of SEskiss, which have been thought to be constant across the estrus cycle (McQuillan et al., 2019), significantly varied during the estrus cycle (Figure 1E); individual peak heights of SEskiss increased by almost 1.5-fold in the metestrus compared with the proestrus stage.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:28.319094Z"
+    },
+    {
+      "id": "2f8ac429-1351-404e-b050-551d806453b0",
+      "content_id": "89f15d53-ecf2-4df5-9c89-ae2ce65d7ad0",
+      "claim_id": "C57",
+      "claim": "The amplitude of the LH pulse is highest in the metestrus.",
+      "claim_type": "EXPLICIT",
+      "source": "This trend is consistent with the fact that the amplitude of the LH pulse is highest in the metestrus (Czieselsky et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Czieselsky et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:28.319094Z"
+    },
+    {
+      "id": "e5829ea4-5106-43d8-9650-41dbb949868b",
+      "content_id": "89f15d53-ecf2-4df5-9c89-ae2ce65d7ad0",
+      "claim_id": "C58",
+      "claim": "The enhanced activities of the GnRH pulse generator may be beneficial to provide LH/FSH more efficiently at the onset of follicular recruitment, which is sensitive to these hormones.",
+      "claim_type": "EXPLICIT",
+      "source": "The enhanced activities of the GnRH pulse generator may be beneficial to provide LH/FSH more efficiently at the onset of follicular recruitment, which is sensitive to these hormones (McGee and Hsueh, 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative claim supported by a citation to McGee and Hsueh, 2000.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:28.319094Z"
+    },
+    {
+      "id": "bebaa592-e08b-46a9-8e72-2da4d9aebd8c",
+      "content_id": "89f15d53-ecf2-4df5-9c89-ae2ce65d7ad0",
+      "claim_id": "C59",
+      "claim": "In the metestrus stage, when the peak was higher, the uphill was significantly steeper.",
+      "claim_type": "EXPLICIT",
+      "source": "We also found that the waveforms of individual SEskiss varied depending on the stage of the estrus cycle. In the metestrus stage, when the peak was higher, the uphill was significantly steeper (Figure 1F-H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figures 1F-H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:28.319094Z"
+    },
+    {
+      "id": "e8ccbc0e-4fb7-46b0-8340-5db0c639b738",
+      "content_id": "89f15d53-ecf2-4df5-9c89-ae2ce65d7ad0",
+      "claim_id": "C60",
+      "claim": "Some subsets of ARCkiss act as 'leaders' and others as 'followers' during each SEkiss.",
+      "claim_type": "EXPLICIT",
+      "source": "A recent Ca2+ imaging study of ARCkiss at single-cell resolution in ovariectomized female mice revealed heterogeneity of ARCkiss activations during each SEkiss: some subsets of ARCkiss act as 'leaders' and others as 'followers' (Moore et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Moore et al., 2022.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:28.319094Z"
+    },
+    {
+      "id": "4fe76dd3-7864-47b3-8b3d-17e2c3543f38",
+      "content_id": "89f15d53-ecf2-4df5-9c89-ae2ce65d7ad0",
+      "claim_id": "C61",
+      "claim": "In the metestrus stage, the number of 'leaders' may be increased to achieve quicker activation of the entire pool.",
+      "claim_type": "EXPLICIT",
+      "source": "Given these temporal dynamics, in the metestrus stage, the number of 'leaders' may be increased to achieve quicker activation of the entire pool.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative claim based on inference from cited research.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:28.319094Z"
+    },
+    {
+      "id": "d6056f38-484d-4fc9-833b-43b511a09be1",
+      "content_id": "89f15d53-ecf2-4df5-9c89-ae2ce65d7ad0",
+      "claim_id": "C62",
+      "claim": "The 'leaders' more efficiently activate 'followers' in the metestrus stage so that the latency to the peak is short.",
+      "claim_type": "EXPLICIT",
+      "source": "Alternatively, the 'leaders' more efficiently activate 'followers' in the metestrus stage so that the latency to the peak is short.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative claim based on inference.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:28.319094Z"
+    },
+    {
+      "id": "3afed2da-bfde-4ac1-a012-cef02dcd3429",
+      "content_id": "89f15d53-ecf2-4df5-9c89-ae2ce65d7ad0",
+      "claim_id": "C63",
+      "claim": "The molecular and/or cellular mechanisms by which synchronized activation of the ARCkiss pool is achieved are dynamically modulated by the estrus stage, likely via feedback signals mediated by sex steroid hormones.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the exact mechanism remains an open question, our data suggest that the molecular and/or cellular mechanisms by which synchronized activation of the ARCkiss pool is achieved are dynamically modulated by the estrus stage, likely via feedback signals mediated by sex steroid hormones.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative claim based on inference from the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:28.319094Z"
+    },
+    {
+      "id": "4be30df2-fba7-436d-994b-ba9463ea5649",
+      "content_id": "89f15d53-ecf2-4df5-9c89-ae2ce65d7ad0",
+      "claim_id": "C64",
+      "claim": "The reduced reproductive functions in aging rodents are primarily the result of the dysfunction of the neuroendocrine system, independent of follicular depletion.",
+      "claim_type": "EXPLICIT",
+      "source": "Classical studies suggest that the reduced reproductive functions in aging rodents are primarily the result of the dysfunction of the neuroendocrine system, independent of follicular depletion (Kermath and Gore, 2012; Krohn, 1962).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Kermath and Gore, 2012 and Krohn, 1962.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:28.319094Z"
+    },
+    {
+      "id": "c26ca275-9975-4399-803a-887788d2ecbd",
+      "content_id": "89f15d53-ecf2-4df5-9c89-ae2ce65d7ad0",
+      "claim_id": "C65",
+      "claim": "There is a reduction in intensities of pulsatile LH release in aged rats.",
+      "claim_type": "EXPLICIT",
+      "source": "There is a reduction in intensities of pulsatile LH release (Scarbrough and Wise, 1990; Wise et al., 1988) and kisspeptin expression in ARCkiss (Kunimura et al., 2017) in aged rats.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Scarbrough and Wise, 1990; Wise et al., 1988; and Kunimura et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:28.319094Z"
+    },
+    {
+      "id": "c4315334-f3e7-46ad-86ec-36b86d5693ba",
+      "content_id": "89f15d53-ecf2-4df5-9c89-ae2ce65d7ad0",
+      "claim_id": "C66",
+      "claim": "There is a reduction in kisspeptin expression in ARCkiss in aged rats.",
+      "claim_type": "EXPLICIT",
+      "source": "There is a reduction in intensities of pulsatile LH release (Scarbrough and Wise, 1990; Wise et al., 1988) and kisspeptin expression in ARCkiss (Kunimura et al., 2017) in aged rats.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Kunimura et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:28.319094Z"
+    },
+    {
+      "id": "b580033b-62ea-41eb-8a17-720fb046af42",
+      "content_id": "89f15d53-ecf2-4df5-9c89-ae2ce65d7ad0",
+      "claim_id": "C67",
+      "claim": "A reduction in both the intensities and frequencies of pulsatile LH release is known in postmenopausal women.",
+      "claim_type": "EXPLICIT",
+      "source": "A reduction in both the intensities and frequencies of pulsatile LH release is also known in postmenopausal women (Hall et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Hall et al., 2000.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:28.319094Z"
+    },
+    {
+      "id": "98e64262-d696-40d0-a5ef-c6c18fb178ca",
+      "content_id": "89f15d53-ecf2-4df5-9c89-ae2ce65d7ad0",
+      "claim_id": "C68",
+      "claim": "A marked increase in the frequency of SEskiss was observed in gonadectomized mice in the reproductive phase via a decline of sex steroid hormone-mediated feedback mechanisms.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, a marked increase in the frequency of SEskiss was observed in gonadectomized mice in the reproductive phase (Clarkson et al., 2017; Han et al., 2019) via a decline of sex steroid hormone-mediated feedback mechanisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Clarkson et al., 2017 and Han et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:28.319094Z"
+    },
+    {
+      "id": "592939fc-e5a5-4404-9905-70ef5a46107a",
+      "content_id": "89f15d53-ecf2-4df5-9c89-ae2ce65d7ad0",
+      "claim_id": "C69",
+      "claim": "The levels of sex steroid hormones may be grossly intact, even in the acyclic phase.",
+      "claim_type": "EXPLICIT",
+      "source": "In one scenario, the levels of sex steroid hormones may be grossly intact, even in the acyclic phase (Mobbs et al., 1985; Nilsson et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative claim supported by citations to Mobbs et al., 1985 and Nilsson et al., 2015.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:28.319094Z"
+    },
+    {
+      "id": "f324da61-f9a9-4bc6-bfc8-6571d7ceb2ca",
+      "content_id": "89f15d53-ecf2-4df5-9c89-ae2ce65d7ad0",
+      "claim_id": "C70",
+      "claim": "The reduction of sex steroid hormones in aging female mice may be counterbalanced by the attenuation of negative feedback mechanisms in ARCkiss.",
+      "claim_type": "EXPLICIT",
+      "source": "Alternatively, the reduction of sex steroid hormones in aging female mice (Gee et al., 1983; Nelson et al., 1981) may be counterbalanced by the attenuation of negative feedback mechanisms in ARCkiss.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative claim supported by citations to Gee et al., 1983 and Nelson et al., 1981.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:28.319094Z"
+    },
+    {
+      "id": "91145a36-98e9-4d1c-b017-fe1fe06809ff",
+      "content_id": "89f15d53-ecf2-4df5-9c89-ae2ce65d7ad0",
+      "claim_id": "C71",
+      "claim": "The lack of the stereotyped drop of SEskiss during the proestrus stage in older females generally supported a malfunction of negative feedback mechanisms by sex steroid hormones.",
+      "claim_type": "EXPLICIT",
+      "source": "The lack of the stereotyped drop of SEskiss during the proestrus stage in older females (Figure 4B) generally supported a malfunction of negative feedback mechanisms by sex steroid hormones.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is inferred from experimental data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:28.319094Z"
+    },
+    {
+      "id": "36483d93-0d71-4c05-8321-2bc8190bea2c",
+      "content_id": "89f15d53-ecf2-4df5-9c89-ae2ce65d7ad0",
+      "claim_id": "C72",
+      "claim": "The lack of increased SEskiss frequency in aged female mice might be adaptive in terms of thermoregulation because elevated SEskiss are thought to be causal to vasodilation (flushing).",
+      "claim_type": "EXPLICIT",
+      "source": "Whatever the scenario, the lack of increased SEskiss frequency in aged female mice might be adaptive in terms of thermoregulation because elevated SEskiss are thought to be causal to vasodilation (flushing) (Padilla et al., 2018; Rance et al., 2013), one of the most commonly observed symptoms of perimenopausal disorders in women (Casper et al., 1979).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative claim supported by citations to Padilla et al., 2018; Rance et al., 2013; and Casper et al., 1979.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:28.319094Z"
+    },
+    {
+      "id": "ac1d7ae4-590c-4ec0-a65c-054d418d04c5",
+      "content_id": "89f15d53-ecf2-4df5-9c89-ae2ce65d7ad0",
+      "claim_id": "C73",
+      "claim": "Elevated SEskiss are thought to be causal to vasodilation (flushing).",
+      "claim_type": "EXPLICIT",
+      "source": "Whatever the scenario, the lack of increased SEskiss frequency in aged female mice might be adaptive in terms of thermoregulation because elevated SEskiss are thought to be causal to vasodilation (flushing) (Padilla et al., 2018; Rance et al., 2013), one of the most commonly observed symptoms of perimenopausal disorders in women (Casper et al., 1979).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Padilla et al., 2018 and Rance et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:28.319094Z"
+    },
+    {
+      "id": "a6b62a91-b128-48d1-83c4-284b35e05bab",
+      "content_id": "89f15d53-ecf2-4df5-9c89-ae2ce65d7ad0",
+      "claim_id": "C74",
+      "claim": "Flushing is one of the most commonly observed symptoms of perimenopausal disorders in women.",
+      "claim_type": "EXPLICIT",
+      "source": "Whatever the scenario, the lack of increased SEskiss frequency in aged female mice might be adaptive in terms of thermoregulation because elevated SEskiss are thought to be causal to vasodilation (flushing) (Padilla et al., 2018; Rance et al., 2013), one of the most commonly observed symptoms of perimenopausal disorders in women (Casper et al., 1979).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Casper et al., 1979.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:28.319094Z"
+    },
+    {
+      "id": "2bffeacb-234d-44a6-80e9-c3fc90caf3be",
+      "content_id": "89f15d53-ecf2-4df5-9c89-ae2ce65d7ad0",
+      "claim_id": "C75",
+      "claim": "Not only the ovarian environment but also the adaptation of the hypothalamic regulators may vary considerably between rodents and primates.",
+      "claim_type": "EXPLICIT",
+      "source": "In this sense, our data generally support the limitations in the use of older female mice as a model of the human menopausal transition, because not only the ovarian environment but also the adaptation of the hypothalamic regulators, may vary considerably between rodents and primates (Gore, 2015; Kermath and Gore, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Gore, 2015 and Kermath and Gore, 2012.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:28.319094Z"
+    },
+    {
+      "id": "5e220691-56bc-4795-8ecf-fb61b753b8a5",
+      "content_id": "89f15d53-ecf2-4df5-9c89-ae2ce65d7ad0",
+      "claim_id": "C76",
+      "claim": "The intensities of SEskiss, as assessed by the peak height, gradually declined from the regular to the acyclic phase.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data also suggest that the intensities of SEskiss, as assessed by the peak height, gradually declined from the regular to the acyclic phase (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:28.319094Z"
+    },
+    {
+      "id": "cdc78ee8-45b8-4de2-8c88-1ee78a18bdab",
+      "content_id": "89f15d53-ecf2-4df5-9c89-ae2ce65d7ad0",
+      "claim_id": "C77",
+      "claim": "A drop in the photometric signals occurred in association with the reproductive phase rather than the total duration of fiber photometry.",
+      "claim_type": "EXPLICIT",
+      "source": "Although we do not exclude the possibility that the reduction of photometric peaks was observed owing to technical artifacts, such as a slight misaligning of the optic fiber during long-term chronic imaging, we noticed that a drop in the photometric signals occurred in association with the reproductive phase rather than the total duration of fiber photometry.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on observation and inference from the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:28.319094Z"
+    },
+    {
+      "id": "9a98b746-4cd0-4073-a1b1-584d759697b7",
+      "content_id": "89f15d53-ecf2-4df5-9c89-ae2ce65d7ad0",
+      "claim_id": "C78",
+      "claim": "The peak intensity of ID#5 was relatively stable over 10 months from the reproductive to the irregular phase, but quickly declined in the subsequent 2 months upon the transition to the acyclic phase.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, the peak intensity of ID#5 was relatively stable over 10 months from the reproductive to the irregular phase, but quickly declined in the subsequent 2 months upon the transition to the acyclic phase (Figure 3A and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figures 3A and 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:28.319094Z"
+    },
+    {
+      "id": "b04b56c1-7977-4346-92fd-187099d00ac2",
+      "content_id": "89f15d53-ecf2-4df5-9c89-ae2ce65d7ad0",
+      "claim_id": "C79",
+      "claim": "ID#10 exhibited a quick drop of the peak intensity within just 3 months after the surgery upon entering into the acyclic phase.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, ID#10 exhibited a quick drop of the peak intensity within just 3 months after the surgery upon entering into the acyclic phase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:28.319094Z"
+    },
+    {
+      "id": "6b373064-b087-4be9-a855-08423d1e0735",
+      "content_id": "89f15d53-ecf2-4df5-9c89-ae2ce65d7ad0",
+      "claim_id": "C80",
+      "claim": "Reduced photometric signals are associated with reduced neural activities of ARCkiss\u2013\u2013individual firing rates, number of active neurons, or both.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations support the interpretation that reduced photometric signals are associated with reduced neural activities of ARCkiss\u2013\u2013individual firing rates, number of active neurons, or both.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the experimental observations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:28.319094Z"
+    },
+    {
+      "id": "16243475-fd8c-4dc3-b9e7-0daa67204fe5",
+      "content_id": "89f15d53-ecf2-4df5-9c89-ae2ce65d7ad0",
+      "claim_id": "C81",
+      "claim": "The activity decline of ARCkiss can explain reduced LH amounts in each pulse, leading to inefficient follicular development and steroidogenesis in the ovary.",
+      "claim_type": "EXPLICIT",
+      "source": "This trend can explain reduced LH amounts in each pulse (Scarbrough and Wise, 1990; Wise et al., 1988), leading to inefficient follicular development and steroidogenesis in the ovary.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the experimental data and cited studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:28.319094Z"
+    },
+    {
+      "id": "eb13c9d8-55be-4c30-8aa9-a2000c17dd20",
+      "content_id": "89f15d53-ecf2-4df5-9c89-ae2ce65d7ad0",
+      "claim_id": "C82",
+      "claim": "Aging may alter the release probability of kisspeptin and its receptivity by GPR54 in the GnRH neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, aging may alter the release probability of kisspeptin and its receptivity by GPR54 in the GnRH neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative claim about potential mechanisms.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:28.319094Z"
+    },
+    {
+      "id": "392086eb-5428-4c98-a2cd-1d79e73ce438",
+      "content_id": "89f15d53-ecf2-4df5-9c89-ae2ce65d7ad0",
+      "claim_id": "C83",
+      "claim": "Aging affects the function of GnRH neurons, including changes in their activity levels and the integrity of neural circuits with balanced excitatory and inhibitory inputs.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, aging affects the function of GnRH neurons (Manfredi-Lozano et al., 2022), including changes in their activity levels and the integrity of neural circuits with balanced excitatory and inhibitory inputs (Kermath and Gore, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Manfredi-Lozano et al., 2022 and Kermath and Gore, 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:28.319094Z"
+    },
+    {
+      "id": "9f15e9c2-6cc2-42fe-bbb4-315267484b3d",
+      "content_id": "89f15d53-ecf2-4df5-9c89-ae2ce65d7ad0",
+      "claim_id": "C84",
+      "claim": "ARCkiss is involved in restricting the amplitude of the preovulatory GnRH/LH surge.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, since ARCkiss is involved in restricting the amplitude of the preovulatory GnRH/LH surge (Mittelman-Smith et al., 2016), the absence of the stereotyped drop of SEskiss during the proestrus stage in older females (Figure 4B) may contribute to the attenuation of the preovulatory GnRH/LH surge, leading to the transition to the acyclic phase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Mittelman-Smith et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:28.319094Z"
+    },
+    {
+      "id": "b84ae366-a924-4333-be84-a12abe4d2e61",
+      "content_id": "89f15d53-ecf2-4df5-9c89-ae2ce65d7ad0",
+      "claim_id": "C85",
+      "claim": "The absence of the stereotyped drop of SEskiss during the proestrus stage in older females may contribute to the attenuation of the preovulatory GnRH/LH surge, leading to the transition to the acyclic phase.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, since ARCkiss is involved in restricting the amplitude of the preovulatory GnRH/LH surge (Mittelman-Smith et al., 2016), the absence of the stereotyped drop of SEskiss during the proestrus stage in older females (Figure 4B) may contribute to the attenuation of the preovulatory GnRH/LH surge, leading to the transition to the acyclic phase.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a speculative claim based on inference from experimental data shown in Figure 4B and cited research.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:28.319094Z"
+    },
+    {
+      "id": "455c6727-ebab-4161-bc4f-181b8977e0ca",
+      "content_id": "89f15d53-ecf2-4df5-9c89-ae2ce65d7ad0",
+      "claim_id": "C86",
+      "claim": "SEskiss are strongly suppressed by a high level of progesterone just before ovulation in the proestrus stage.",
+      "claim_type": "EXPLICIT",
+      "source": "To align data from multiple animals, we utilized the fact that SEskiss are strongly suppressed by a high level of progesterone just before ovulation in the proestrus stage (McQuillan et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to McQuillan et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:28.319094Z"
+    },
+    {
+      "id": "44d6475a-6dcc-413c-84e5-1dcc8381dc6f",
+      "content_id": "89f15d53-ecf2-4df5-9c89-ae2ce65d7ad0",
+      "claim_id": "C87",
+      "claim": "The expressions of Tac2 mRNA and GCaMP6s protein were well comparable between the reproductive healthy control and aging recorded samples.",
+      "claim_type": "IMPLICIT",
+      "source": "The expressions of Tac2 mRNA and GCaMP6s protein were well comparable between the reproductive healthy control and aging recorded samples.",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This claim is supported by the histological data shown in Figure 4\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:28.319094Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "f52fe3e1-6d6d-48c9-b939-baf941a917f5",
+      "content_id": "89f15d53-ecf2-4df5-9c89-ae2ce65d7ad0",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "During the reproductive phase, SEskiss frequency, intensity, and waveform vary dynamically across the estrus cycle. The frequency is lowest during proestrus dark period and highest during metestrus/diestrus dark periods. Peak intensity increases ~1.5-fold in metestrus compared to proestrus, with steeper upslopes and gentler downslopes at higher peaks. These findings contrast with prior reports suggesting constant intensity and bimodal frequency patterns.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C20-C23, C25-C29, C54-C56, and C59 are well-supported by experimental data in Figures 1B-H showing statistically significant differences across estrus stages (p<0.05 by repeated measures ANOVA). The data directly demonstrate dynamic changes in SEskiss parameters with appropriate statistical testing and n=4 animals, providing robust evidence for estrus cycle-dependent modulation of ARCkiss activity patterns.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:43:28.319094Z"
+    },
+    {
+      "id": "bb77b075-b095-4b48-9896-1c4ce8d89169",
+      "content_id": "89f15d53-ecf2-4df5-9c89-ae2ce65d7ad0",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Age-dependent decline in estrus cyclicity occurs in both wild-type C57BL/6J and Kiss1-Cre mice with fiber photometry implants. Estrus cycles per 25 days decrease gradually with age, with substantial decline between 12-13 months, indicating irregular cyclicity begins around 13 months. The genetic manipulation and fiber photometry setup did not alter the reproductive decline process.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C34 are supported by experimental data in Figures 2A-B showing age-dependent decline in both wild-type (n=5-12 per age group) and manipulated mice (n=12). Statistical significance is demonstrated (p<0.05 by one-way ANOVA), and the similarity between groups validates that experimental manipulations did not confound aging effects. The classification threshold (3 cycles per 25 days) is clearly defined.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:43:28.319094Z"
+    },
+    {
+      "id": "5674b2dd-9435-4950-902c-0abf84c5d488",
+      "content_id": "89f15d53-ecf2-4df5-9c89-ae2ce65d7ad0",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "SEskiss frequency remains stable during the transition from reproductive phase to reproductive senescence. The average number of SEskiss per 6h and inter-peak interval distributions show no significant differences from age 6 months (reproductive) to 15-18 months (acyclic). Notably, the elevated frequency observed in ovariectomized females was not found during natural aging.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C38, C45-C47 are supported by data in Figures 3C-D and 4C-D showing no significant differences in frequency or inter-peak intervals across aging phases (Kolmogorov-Smirnov test, ns). The longitudinal tracking of n=2 individuals and cross-sectional analysis of additional animals (n=10 total across aging groups) provide converging evidence. The contrast with ovariectomized models strengthens the interpretation of natural aging effects.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:43:28.319094Z"
+    },
+    {
+      "id": "f1804d33-bcf9-4069-94ca-d5889e7d0da4",
+      "content_id": "89f15d53-ecf2-4df5-9c89-ae2ce65d7ad0",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "SEskiss intensity, measured by peak \u0394F/F values, declines during the transition to reproductive senescence. Peak heights decreased significantly in the acyclic phase in all individuals examined (n=6), with 2 of 4 showing decline in the irregular cyclic phase. The decline occurred in association with reproductive phase transitions rather than total imaging duration, suggesting biological rather than technical origins.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C40, C48, C76, C78-C80 are supported by data in Figures 3E and 4E showing statistically significant decreases in peak intensity (Kruskal-Wallis test followed by Mann-Whitney U test, p<0.05). The temporal association with reproductive phase transitions (e.g., ID#5 stable for 10 months then declining in 2 months upon acyclic transition) argues against technical artifacts. However, the small sample size (n=6 total) and individual variability warrant caution.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:43:28.319094Z"
+    },
+    {
+      "id": "8529720e-03c7-46f9-9558-3276c7afcd6c",
+      "content_id": "89f15d53-ecf2-4df5-9c89-ae2ce65d7ad0",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "SEskiss waveform patterns remain grossly unchanged during the transition to reproductive senescence, with only slight individual differences observed in aging phases.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5 and C39 are supported by data in Figure 3\u2014figure supplement 2A-B showing similar waveform shapes across reproductive phases. While some individual differences in LWQM and RWQM were statistically significant (p<0.05), the overall waveform integrity was preserved, supporting the claim of gross stability with minor individual variations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:43:28.319094Z"
+    },
+    {
+      "id": "587dd513-4f10-411a-8a8c-a98b152bf14e",
+      "content_id": "89f15d53-ecf2-4df5-9c89-ae2ce65d7ad0",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The stereotyped drop in SEskiss ratio (dark/light <0.5) during proestrus observed in young reproductive mice is absent in all three aging groups (regular cyclic, irregular cyclic, acyclic), suggesting altered negative feedback by sex steroid hormones during aging.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C42 and C71 are supported by data in Figures 1C and 4B showing the proestrus-specific drop in young mice but not in aging groups. The loss of this stereotyped pattern across all aging phases (n=10 aging mice) provides consistent evidence for altered hormonal feedback mechanisms, though the mechanistic interpretation remains inferential.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:43:28.319094Z"
+    },
+    {
+      "id": "60205bdf-c7d5-4125-b092-04625526adf2",
+      "content_id": "89f15d53-ecf2-4df5-9c89-ae2ce65d7ad0",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "A slight reduction in SEskiss frequency occurs in the irregular cyclic group compared to regular cyclic group, with significantly lower frequency in light versus dark periods in the irregular cyclic group.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C44 are supported by data in Figure 4C showing differences between groups. However, the effect is described as 'slight' and the statistical significance for light/dark differences is only shown for the irregular cyclic group (paired t-test, p<0.05). The biological significance of this subtle effect is uncertain given it was not detected in the n=2 longitudinal analysis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:43:28.319094Z"
+    },
+    {
+      "id": "21e4c1bc-aaf2-4a6a-bb30-9dd524d45f4b",
+      "content_id": "89f15d53-ecf2-4df5-9c89-ae2ce65d7ad0",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Expression levels of Kiss1, Tac2, and Pdyn genes in the ARC remain unchanged from reproductive to acyclic phase during diestrus, contrasting with prior reports in rats and suggesting that reduced Kiss1 expression is not a primary driver of reproductive decline in mice.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C51 are supported by qPCR data in Figure 3\u2014figure supplement 2D showing no significant differences across phases (Kruskal-Wallis test, ns; n=6-8 per group). The normalization to both housekeeping (Gapdh) and regional marker (Npy) genes strengthens the analysis. However, the contrast with rat studies may reflect species differences rather than methodological issues, and gene expression may not fully reflect protein levels or neuronal activity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:43:28.319094Z"
+    },
+    {
+      "id": "860d6bbf-0c65-49de-8751-175b4b03ba47",
+      "content_id": "89f15d53-ecf2-4df5-9c89-ae2ce65d7ad0",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Long-term fiber photometry imaging does not cause significant tissue damage or cell death. GCaMP6s targeting efficiency, number of GCaMP6s+ cells, and Tac2+ cell numbers were comparable between control reproductive mice and aged recorded animals, with similar Tac2 mRNA and GCaMP6s protein expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C53 and C87 are supported by histological data in Figure 4\u2014figure supplement 1 showing no significant differences between control (n=5) and recorded (n=3) groups (Mann-Whitney U test, ns). The bilateral comparison (imaged vs. contralateral side) provides an internal control strengthening the conclusion of negligible cytotoxicity. This validation is critical for interpreting the longitudinal imaging data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:43:28.319094Z"
+    },
+    {
+      "id": "d19d10e4-1173-46e9-b827-7d9d96e12833",
+      "content_id": "89f15d53-ecf2-4df5-9c89-ae2ce65d7ad0",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Higher SEskiss peak intensity during metestrus may correlate with increased kisspeptin release to GnRH neurons, facilitating more efficient LH/FSH secretion at the onset of follicular recruitment, consistent with the highest LH pulse amplitude occurring in metestrus.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C24, C57-C58 are speculative interpretations linking observed SEskiss intensity changes to downstream hormonal effects. While C57 is supported by citation (Czieselsky et al., 2016), the mechanistic connections in C24 and C58 are not directly tested. The correlation between SEskiss intensity and LH pulse amplitude is plausible but requires direct measurement of kisspeptin release and LH/FSH levels to confirm causality.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:43:28.319094Z"
+    },
+    {
+      "id": "00604cfa-c330-471d-a3df-fe423adea916",
+      "content_id": "89f15d53-ecf2-4df5-9c89-ae2ce65d7ad0",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The molecular/cellular mechanisms underlying synchronized ARCkiss activation may be dynamically modulated by estrus stage via sex steroid hormone feedback. Potential mechanisms include changes in the number of 'leader' neurons or efficiency of leader-follower activation, though the exact mechanism remains unknown.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C60-C63 are largely speculative. C60 is supported by citation (Moore et al., 2022), but C61-C63 are hypothetical mechanisms proposed to explain waveform variations. The authors appropriately acknowledge uncertainty ('may be,' 'alternatively,' 'remains an open question'). Single-cell resolution studies in intact cycling females would be needed to test these hypotheses directly.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:43:28.319094Z"
+    },
+    {
+      "id": "5005619d-3cb1-4e25-9ebb-95e95034a8ea",
+      "content_id": "89f15d53-ecf2-4df5-9c89-ae2ce65d7ad0",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The stable SEskiss frequency during aging may result from intact sex steroid hormone levels or counterbalancing attenuation of negative feedback mechanisms. The lack of increased frequency might be adaptive for thermoregulation, as elevated SEskiss are linked to vasodilation/flushing, a common perimenopausal symptom.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C68-C70 and C72 present alternative speculative scenarios to explain stable SEskiss frequency. While supported by relevant citations, the authors did not measure hormone levels or test feedback mechanisms directly. The adaptive thermoregulation hypothesis (C72) is interesting but remains untested. These interpretations require measurement of sex steroid levels and ovariectomy experiments in aged mice for validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:43:28.319094Z"
+    },
+    {
+      "id": "5f36e8c6-c3e6-48fd-8950-10b3dc74e05a",
+      "content_id": "89f15d53-ecf2-4df5-9c89-ae2ce65d7ad0",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Reduced ARCkiss activity intensity may explain decreased LH pulse amplitude leading to inefficient follicular development. Additional aging-related factors may include altered kisspeptin release/receptivity, GnRH neuron dysfunction, and loss of the proestrus SEskiss drop potentially contributing to attenuated preovulatory LH surge.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C81-C85 propose mechanistic links between observed SEskiss changes and reproductive decline. C81 is a reasonable inference connecting intensity decline to LH reduction (supported by citations), but lacks direct LH measurements in the same animals. C82-C85 are speculative possibilities supported by citations but not tested in this study. These hypotheses require additional experiments measuring LH levels, kisspeptin release, and GnRH neuron activity.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:43:28.319094Z"
+    },
+    {
+      "id": "a0902fa8-bcb4-4268-be82-3d368f24cd0f",
+      "content_id": "89f15d53-ecf2-4df5-9c89-ae2ce65d7ad0",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The data support limitations in using older female mice as models of human menopausal transition, as both ovarian environment and hypothalamic regulator adaptation may vary considerably between rodents and primates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C75 is a reasonable interpretation supported by citations (Gore, 2015; Kermath and Gore, 2012) and the observed differences between mouse aging patterns (stable SEskiss frequency) and human postmenopausal changes (reduced frequency). The authors appropriately acknowledge model limitations, though this does not diminish the value of the mouse data for understanding neuroendocrine aging mechanisms.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:43:28.319094Z"
+    },
+    {
+      "id": "c16de066-2faa-403b-a451-fc2e3faa4c60",
+      "content_id": "89f15d53-ecf2-4df5-9c89-ae2ce65d7ad0",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Background claims establishing the scientific context: reproductive senescence occurs across mammals; ARCkiss neurons control pulsatile GnRH release; GnRH pulsatility declines with age; kisspeptin is crucial for reproduction; prior studies show decreased kisspeptin signaling in aging rodents; SEskiss correlate with LH secretion and are regulated by sex steroid feedback.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3, C7-C19, C64-C67, C73-C74, and C86 are background/contextual claims supported by established knowledge and appropriate citations. These provide the scientific foundation for the study but are not novel findings. The citations appear appropriate and the general knowledge claims are accurate based on the neuroendocrine literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:43:28.319094Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "a2c83fd7-fa64-439c-92d8-efe5bc77cd16",
+      "result_id": "f52fe3e1-6d6d-48c9-b939-baf941a917f5"
+    },
+    {
+      "claim_id": "7413c998-6abf-41c7-89cb-e3750dbeb0b4",
+      "result_id": "f52fe3e1-6d6d-48c9-b939-baf941a917f5"
+    },
+    {
+      "claim_id": "57b91a22-0271-4af6-9f4c-f28f320e4e85",
+      "result_id": "f52fe3e1-6d6d-48c9-b939-baf941a917f5"
+    },
+    {
+      "claim_id": "60622bed-2e8e-4594-b144-bc6c8b6a0530",
+      "result_id": "f52fe3e1-6d6d-48c9-b939-baf941a917f5"
+    },
+    {
+      "claim_id": "13ff11a6-014f-4405-ad5e-b557e3e63cb0",
+      "result_id": "f52fe3e1-6d6d-48c9-b939-baf941a917f5"
+    },
+    {
+      "claim_id": "81198b8c-a2ba-4e82-8f2c-3e18a766a880",
+      "result_id": "f52fe3e1-6d6d-48c9-b939-baf941a917f5"
+    },
+    {
+      "claim_id": "bdb08084-a523-424f-bb6c-d58f7dff603a",
+      "result_id": "f52fe3e1-6d6d-48c9-b939-baf941a917f5"
+    },
+    {
+      "claim_id": "17bd6ebe-df89-4cce-a9fb-8bec5bf5cd7a",
+      "result_id": "f52fe3e1-6d6d-48c9-b939-baf941a917f5"
+    },
+    {
+      "claim_id": "ebdcf640-f429-435c-8ac0-61df85a99f98",
+      "result_id": "f52fe3e1-6d6d-48c9-b939-baf941a917f5"
+    },
+    {
+      "claim_id": "9600be24-697a-48a7-8a8c-cdf6e9ac6354",
+      "result_id": "f52fe3e1-6d6d-48c9-b939-baf941a917f5"
+    },
+    {
+      "claim_id": "f06418db-e770-423d-bcca-be792cc5a501",
+      "result_id": "f52fe3e1-6d6d-48c9-b939-baf941a917f5"
+    },
+    {
+      "claim_id": "3b4d34ea-e7be-449f-919c-c0ec462b1365",
+      "result_id": "f52fe3e1-6d6d-48c9-b939-baf941a917f5"
+    },
+    {
+      "claim_id": "87ab9ee2-9b62-4d77-9ae0-80d8b98c8fc0",
+      "result_id": "f52fe3e1-6d6d-48c9-b939-baf941a917f5"
+    },
+    {
+      "claim_id": "bebaa592-e08b-46a9-8e72-2da4d9aebd8c",
+      "result_id": "f52fe3e1-6d6d-48c9-b939-baf941a917f5"
+    },
+    {
+      "claim_id": "387f723e-c51b-46fc-8003-941d072d020e",
+      "result_id": "bb77b075-b095-4b48-9896-1c4ce8d89169"
+    },
+    {
+      "claim_id": "e7a79504-0504-4525-97ca-9c68d5fa90b7",
+      "result_id": "bb77b075-b095-4b48-9896-1c4ce8d89169"
+    },
+    {
+      "claim_id": "3abe1db2-6904-43da-9c29-ad2155f97e8c",
+      "result_id": "bb77b075-b095-4b48-9896-1c4ce8d89169"
+    },
+    {
+      "claim_id": "5180202b-564e-4b1f-bd5e-f0c7de4750b8",
+      "result_id": "bb77b075-b095-4b48-9896-1c4ce8d89169"
+    },
+    {
+      "claim_id": "cb382150-d0ad-43ce-a0ca-b07fdac86776",
+      "result_id": "bb77b075-b095-4b48-9896-1c4ce8d89169"
+    },
+    {
+      "claim_id": "521cbe6a-82f4-49fb-906b-ddff0065213d",
+      "result_id": "5674b2dd-9435-4950-902c-0abf84c5d488"
+    },
+    {
+      "claim_id": "a69b2791-ca60-4989-84b1-593450ad6e5a",
+      "result_id": "5674b2dd-9435-4950-902c-0abf84c5d488"
+    },
+    {
+      "claim_id": "47e5ee71-cdf7-4b97-ac53-68866cac3045",
+      "result_id": "5674b2dd-9435-4950-902c-0abf84c5d488"
+    },
+    {
+      "claim_id": "73072d5c-5780-4396-9871-ee043a5715da",
+      "result_id": "5674b2dd-9435-4950-902c-0abf84c5d488"
+    },
+    {
+      "claim_id": "d59c3d4b-91e9-43cf-bffe-2d3d43e43844",
+      "result_id": "5674b2dd-9435-4950-902c-0abf84c5d488"
+    },
+    {
+      "claim_id": "412c843a-5c42-4f19-8c14-270443e46cf8",
+      "result_id": "5674b2dd-9435-4950-902c-0abf84c5d488"
+    },
+    {
+      "claim_id": "c577af00-eb53-49e6-b0b0-cd4a1d6811e7",
+      "result_id": "5674b2dd-9435-4950-902c-0abf84c5d488"
+    },
+    {
+      "claim_id": "1a6e13ec-314d-40d6-ad38-c2b26777365d",
+      "result_id": "f1804d33-bcf9-4069-94ca-d5889e7d0da4"
+    },
+    {
+      "claim_id": "5bf4bb1d-5171-4cb4-8342-5045c1628e63",
+      "result_id": "f1804d33-bcf9-4069-94ca-d5889e7d0da4"
+    },
+    {
+      "claim_id": "7d609a3a-47a6-47d4-a755-d7603d87a9ff",
+      "result_id": "f1804d33-bcf9-4069-94ca-d5889e7d0da4"
+    },
+    {
+      "claim_id": "5e220691-56bc-4795-8ecf-fb61b753b8a5",
+      "result_id": "f1804d33-bcf9-4069-94ca-d5889e7d0da4"
+    },
+    {
+      "claim_id": "9a98b746-4cd0-4073-a1b1-584d759697b7",
+      "result_id": "f1804d33-bcf9-4069-94ca-d5889e7d0da4"
+    },
+    {
+      "claim_id": "b04b56c1-7977-4346-92fd-187099d00ac2",
+      "result_id": "f1804d33-bcf9-4069-94ca-d5889e7d0da4"
+    },
+    {
+      "claim_id": "6b373064-b087-4be9-a855-08423d1e0735",
+      "result_id": "f1804d33-bcf9-4069-94ca-d5889e7d0da4"
+    },
+    {
+      "claim_id": "1d9f3f95-f19a-4064-9a14-94039ff513d7",
+      "result_id": "8529720e-03c7-46f9-9558-3276c7afcd6c"
+    },
+    {
+      "claim_id": "c72ea12a-e5a5-4d36-b21e-5f9d219668fb",
+      "result_id": "8529720e-03c7-46f9-9558-3276c7afcd6c"
+    },
+    {
+      "claim_id": "d6eedd48-c5ca-4e6f-9404-058955bd71b3",
+      "result_id": "587dd513-4f10-411a-8a8c-a98b152bf14e"
+    },
+    {
+      "claim_id": "539d2a17-17c4-49ff-ba60-2cd56988a98d",
+      "result_id": "587dd513-4f10-411a-8a8c-a98b152bf14e"
+    },
+    {
+      "claim_id": "91145a36-98e9-4d1c-b017-fe1fe06809ff",
+      "result_id": "587dd513-4f10-411a-8a8c-a98b152bf14e"
+    },
+    {
+      "claim_id": "6d5084b4-1e1f-42e6-8d5b-b2fef7c3aa23",
+      "result_id": "60205bdf-c7d5-4125-b092-04625526adf2"
+    },
+    {
+      "claim_id": "f215e110-9504-4856-9440-45f56a20cb37",
+      "result_id": "60205bdf-c7d5-4125-b092-04625526adf2"
+    },
+    {
+      "claim_id": "ece0c8a5-71a1-46f6-8c32-3a1eb4fe0eaf",
+      "result_id": "21e4c1bc-aaf2-4a6a-bb30-9dd524d45f4b"
+    },
+    {
+      "claim_id": "a1cc4c9b-c4e8-43a3-b596-48c1554892ed",
+      "result_id": "21e4c1bc-aaf2-4a6a-bb30-9dd524d45f4b"
+    },
+    {
+      "claim_id": "b606aea0-e5ac-464f-95a6-fff3d201eb33",
+      "result_id": "860d6bbf-0c65-49de-8751-175b4b03ba47"
+    },
+    {
+      "claim_id": "f815fa3b-fbfa-4598-8fb7-49178bce8fb9",
+      "result_id": "860d6bbf-0c65-49de-8751-175b4b03ba47"
+    },
+    {
+      "claim_id": "44d6475a-6dcc-413c-84e5-1dcc8381dc6f",
+      "result_id": "860d6bbf-0c65-49de-8751-175b4b03ba47"
+    },
+    {
+      "claim_id": "7ace8b9f-9700-4d71-ab56-aaec71083a97",
+      "result_id": "d19d10e4-1173-46e9-b827-7d9d96e12833"
+    },
+    {
+      "claim_id": "2f8ac429-1351-404e-b050-551d806453b0",
+      "result_id": "d19d10e4-1173-46e9-b827-7d9d96e12833"
+    },
+    {
+      "claim_id": "e5829ea4-5106-43d8-9650-41dbb949868b",
+      "result_id": "d19d10e4-1173-46e9-b827-7d9d96e12833"
+    },
+    {
+      "claim_id": "e8ccbc0e-4fb7-46b0-8340-5db0c639b738",
+      "result_id": "00604cfa-c330-471d-a3df-fe423adea916"
+    },
+    {
+      "claim_id": "4fe76dd3-7864-47b3-8b3d-17e2c3543f38",
+      "result_id": "00604cfa-c330-471d-a3df-fe423adea916"
+    },
+    {
+      "claim_id": "d6056f38-484d-4fc9-833b-43b511a09be1",
+      "result_id": "00604cfa-c330-471d-a3df-fe423adea916"
+    },
+    {
+      "claim_id": "3afed2da-bfde-4ac1-a012-cef02dcd3429",
+      "result_id": "00604cfa-c330-471d-a3df-fe423adea916"
+    },
+    {
+      "claim_id": "98e64262-d696-40d0-a5ef-c6c18fb178ca",
+      "result_id": "5005619d-3cb1-4e25-9ebb-95e95034a8ea"
+    },
+    {
+      "claim_id": "592939fc-e5a5-4404-9905-70ef5a46107a",
+      "result_id": "5005619d-3cb1-4e25-9ebb-95e95034a8ea"
+    },
+    {
+      "claim_id": "f324da61-f9a9-4bc6-bfc8-6571d7ceb2ca",
+      "result_id": "5005619d-3cb1-4e25-9ebb-95e95034a8ea"
+    },
+    {
+      "claim_id": "36483d93-0d71-4c05-8321-2bc8190bea2c",
+      "result_id": "5005619d-3cb1-4e25-9ebb-95e95034a8ea"
+    },
+    {
+      "claim_id": "16243475-fd8c-4dc3-b9e7-0daa67204fe5",
+      "result_id": "5f36e8c6-c3e6-48fd-8950-10b3dc74e05a"
+    },
+    {
+      "claim_id": "eb13c9d8-55be-4c30-8aa9-a2000c17dd20",
+      "result_id": "5f36e8c6-c3e6-48fd-8950-10b3dc74e05a"
+    },
+    {
+      "claim_id": "392086eb-5428-4c98-a2cd-1d79e73ce438",
+      "result_id": "5f36e8c6-c3e6-48fd-8950-10b3dc74e05a"
+    },
+    {
+      "claim_id": "9f15e9c2-6cc2-42fe-bbb4-315267484b3d",
+      "result_id": "5f36e8c6-c3e6-48fd-8950-10b3dc74e05a"
+    },
+    {
+      "claim_id": "b84ae366-a924-4333-be84-a12abe4d2e61",
+      "result_id": "5f36e8c6-c3e6-48fd-8950-10b3dc74e05a"
+    },
+    {
+      "claim_id": "2bffeacb-234d-44a6-80e9-c3fc90caf3be",
+      "result_id": "a0902fa8-bcb4-4268-be82-3d368f24cd0f"
+    },
+    {
+      "claim_id": "19e8492b-8906-44f7-b7dc-d375c0560545",
+      "result_id": "c16de066-2faa-403b-a451-fc2e3faa4c60"
+    },
+    {
+      "claim_id": "7188204f-924f-48c1-ba25-c779a8f6a7eb",
+      "result_id": "c16de066-2faa-403b-a451-fc2e3faa4c60"
+    },
+    {
+      "claim_id": "bc75d1ca-f6fb-4979-8945-824bb7efbfab",
+      "result_id": "c16de066-2faa-403b-a451-fc2e3faa4c60"
+    },
+    {
+      "claim_id": "737d5074-2105-4240-8e1e-f32f6ef18d91",
+      "result_id": "c16de066-2faa-403b-a451-fc2e3faa4c60"
+    },
+    {
+      "claim_id": "8675386a-5890-48b8-9381-0316c3d07319",
+      "result_id": "c16de066-2faa-403b-a451-fc2e3faa4c60"
+    },
+    {
+      "claim_id": "178424d0-7757-4448-948e-6550ffc31689",
+      "result_id": "c16de066-2faa-403b-a451-fc2e3faa4c60"
+    },
+    {
+      "claim_id": "8a55ea40-7c9b-4afd-af69-e467e5e16628",
+      "result_id": "c16de066-2faa-403b-a451-fc2e3faa4c60"
+    },
+    {
+      "claim_id": "46412e42-93d5-4a9e-a792-65f2a8061008",
+      "result_id": "c16de066-2faa-403b-a451-fc2e3faa4c60"
+    },
+    {
+      "claim_id": "a5b0330a-48f1-4f66-a312-9b7dd9ce4c6f",
+      "result_id": "c16de066-2faa-403b-a451-fc2e3faa4c60"
+    },
+    {
+      "claim_id": "babf20e6-7dc4-4b4e-bfe8-f973f191f01c",
+      "result_id": "c16de066-2faa-403b-a451-fc2e3faa4c60"
+    },
+    {
+      "claim_id": "10dc761c-e35a-4a05-b0df-1a4e2c8b87af",
+      "result_id": "c16de066-2faa-403b-a451-fc2e3faa4c60"
+    },
+    {
+      "claim_id": "913ccbf3-a20b-406d-bb4e-eb7a72e97b9d",
+      "result_id": "c16de066-2faa-403b-a451-fc2e3faa4c60"
+    },
+    {
+      "claim_id": "0a1ee466-75ef-4bd0-b50b-373eea282959",
+      "result_id": "c16de066-2faa-403b-a451-fc2e3faa4c60"
+    },
+    {
+      "claim_id": "67dbe7fc-61c4-49c1-b636-0484ca28f334",
+      "result_id": "c16de066-2faa-403b-a451-fc2e3faa4c60"
+    },
+    {
+      "claim_id": "20614d9d-1fd7-44e1-9425-746e098d056d",
+      "result_id": "c16de066-2faa-403b-a451-fc2e3faa4c60"
+    },
+    {
+      "claim_id": "879133cc-ae12-4fa4-b4b7-95d1d6acc340",
+      "result_id": "c16de066-2faa-403b-a451-fc2e3faa4c60"
+    },
+    {
+      "claim_id": "4be30df2-fba7-436d-994b-ba9463ea5649",
+      "result_id": "c16de066-2faa-403b-a451-fc2e3faa4c60"
+    },
+    {
+      "claim_id": "c26ca275-9975-4399-803a-887788d2ecbd",
+      "result_id": "c16de066-2faa-403b-a451-fc2e3faa4c60"
+    },
+    {
+      "claim_id": "c4315334-f3e7-46ad-86ec-36b86d5693ba",
+      "result_id": "c16de066-2faa-403b-a451-fc2e3faa4c60"
+    },
+    {
+      "claim_id": "b580033b-62ea-41eb-8a17-720fb046af42",
+      "result_id": "c16de066-2faa-403b-a451-fc2e3faa4c60"
+    },
+    {
+      "claim_id": "ac1d7ae4-590c-4ec0-a65c-054d418d04c5",
+      "result_id": "c16de066-2faa-403b-a451-fc2e3faa4c60"
+    },
+    {
+      "claim_id": "a6b62a91-b128-48d1-83c4-284b35e05bab",
+      "result_id": "c16de066-2faa-403b-a451-fc2e3faa4c60"
+    },
+    {
+      "claim_id": "455c6727-ebab-4161-bc4f-181b8977e0ca",
+      "result_id": "c16de066-2faa-403b-a451-fc2e3faa4c60"
+    }
+  ],
+  "comparisons": []
+}

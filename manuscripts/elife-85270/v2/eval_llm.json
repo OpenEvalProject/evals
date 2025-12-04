@@ -1,0 +1,473 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "The study performed single-cell RNA sequencing on 138,982 cells from 13 samples across 6 patients, covering normal skin, AK, SCCIS, and cSCC stages. This comprehensive dataset identified diverse cell types including important keratinocyte subtypes with distinct gene expression profiles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C5 and C33-C35 provide consistent, specific details about sample composition and cell numbers. The methodology is clearly described with appropriate technical details (10x Genomics platform, quality control metrics). The identification of diverse cell types is supported by the data analysis described.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Normal skin analysis identified nine main cell populations with distinct basal cell subgroups (Basal1 and Basal2). Basal1 cells showed higher expression of stem cell markers and were associated with hemidesmosome formation, while Basal2 cells showed increased inflammatory response genes and were associated with differentiation and migration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C43 provide consistent data from UMAP clustering, marker gene expression (Figure 1D-E), and GO enrichment analysis (Figure 1F). The characterization is supported by multiple reference databases (C37) and functional enrichment data. The inferences about cell identity (C44-C45) are reasonable based on the expression patterns shown.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Spinous cells were divided into two subpopulations with distinct functions. Spinous1 was associated with epidermal development and keratinization, while Spinous2 showed higher expression of SPRRs and CST6, indicating a well-differentiated upper spinous layer phenotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C51 are supported by GO enrichment analysis (Figure 1F) and gene expression data (Figure 1D-E). The functional characterization is consistent with cited literature (C49, C51). The inference about Spinous2 representing upper spinous layer (C51) is reasonable given the expression of differentiation markers.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Follicular cells were divided into two groups, with Follicular2 showing high expression of WNT pathway inhibitors (SFRP1, FRZB, DKK3), suggesting they represent outer bulge cells that regulate hair follicle stem cell differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C54 are supported by data analysis (Figure 1D-E). The interpretation about WNT pathway function (C55-C56) is supported by citation to Lim et al., 2016. The inference about Follicular2 identity (C57) is reasonable based on known WNT inhibitor function in hair follicles.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "AK samples showed low individual heterogeneity with similar cell-type proportions across patients. No significant differences were observed in basal cells and Pro KCs proportions between AK and normal samples, suggesting similar proliferation and differentiation states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C63 are supported by UMAP analysis and cell proportion data (Figure 2A-B, Figure 2\u2014figure supplement 1). Statistical testing (t-test, p<0.01) supports the slight increase in Follicular1 cells (C63). The inference about proliferation/differentiation (C62) is reasonable but could benefit from additional functional validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "DEG analysis identified 549, 305, and 434 significantly up-regulated genes in Basal1, Basal2, and Pro KCs subpopulations respectively between AK and normal samples. These genes were enriched in pathways related to epidermal development, oxidative stress response, and cell cycle, and showed correlation with various skin diseases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C68 provide specific numbers from DEG analysis with appropriate statistical thresholds (Wilcoxon test, p_val_adj <0.05). GO enrichment analysis (Figure 2C) and DisGeNET database analysis (Figure 2\u2014figure supplement 2A-C) support the functional characterization. The methodology is sound and results are internally consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "CDKN2A expression was slightly increased in Basal1 and Basal2 subpopulations in AK stage (avg_log2FC = 0.49 and 0.36 respectively, p_val_adj <0.05), suggesting it may play a key role in AK development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C73 are supported by data analysis (Figure 2\u2014figure supplement 2D) with specific fold-change values and statistical significance. The gene's importance is supported by citations to recent literature (C70-C72). However, the inference about its key role (C74) would benefit from functional validation beyond expression changes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C83",
+      "C84"
+    ],
+    "result": "ALDH3A1 was significantly up-regulated in AK tissues, with expression in almost all keratinocytes and particularly high expression in Basal1 cells. IF experiments confirmed increased protein expression in 85% (17/20) of AK tissues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C77 and C83-C84 are supported by both scRNA-seq data (Figure 2D) and IF validation (Figure 2E-F). The validation in an independent cohort (20 AK samples) strengthens the finding. The specific percentage (85%) and sample numbers provide appropriate quantification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "ALDH3A1 showed no significant up-regulation in SCCIS or cSCC, and was even down-regulated in cSCC, indicating a unique role in precancerous lesions. In vitro UVB treatment decreased ALDH3A1 expression in a dose-dependent manner, contrasting with in vivo AK findings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C79 are supported by data (Figure 2\u2014figure supplement 3A-B). The in vitro experiment (C89, Figure 2\u2014figure supplement 3C) provides mechanistic insight. However, the explanations for the discrepancy (C90-C91) are speculative and acknowledge the complexity of long-term UV exposure versus acute treatment. The unique role inference (C80) is reasonable but could benefit from functional studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "IGFBP2 was highly expressed in Basal1 and Basal2 cells of AK samples, with protein expression significantly increased in 75% (15/20) of AK tissues. Overexpression experiments showed IGFBP2 promoted proliferation and invasion in HaCaT and A431 cells, suggesting it contributes to AK development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C98 are supported by scRNA-seq data (Figure 2D) and IF validation (Figure 2E-F). The functional experiments (C100-C101, Figure 2\u2014figure supplement 3D-E) provide mechanistic support with statistical significance (p<0.05). The inference about IGFBP2's role (C99, C102) is well-supported by both expression and functional data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C111"
+    ],
+    "result": "Analysis of patient P2 with both AK and SCCIS revealed significantly increased basal cell proportion in SCCIS. Twenty-one genes were monotonically up-regulated from normal to AK to SCCIS, including key transcription factors KLF6 and FOSL1, suggesting their important roles in progression to carcinoma in situ.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C106 are supported by data analysis (Figure 3B-C). The identification of 21 overlapping genes is specific and verifiable. The characterization of KLF6 and FOSL1 (C107-C108) is supported by citations and expression data (Figure 3D). The inference about their roles (C111) is reasonable based on known functions and expression patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "Additional monotonically up-regulated genes including SQSTM1 and RHOB were identified in the progression from AK to SCCIS. These genes are involved in UV response and tumor promotion, suggesting they are potential key drivers and therapeutic targets for cSCC prevention.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C115 are supported by citations describing gene functions. The inference about their role as key drivers (C116) is reasonable based on expression patterns and known functions. However, the suggestion as therapeutic targets (C117) is speculative and would require extensive validation beyond expression analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "Basal cells in SCCIS were divided into two subgroups based on CNV levels. Basal-SCCIS-tumor cells with higher CNV levels showed enrichment of genes related to cell proliferation, migration, and ECM remodeling, with 238 up-regulated genes identified.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C127-C133 are supported by GO enrichment analysis (Figure 4A), CNV analysis (Figure 4B), and UMAP clustering (Figure 4C). The identification of two distinct subgroups with different CNV levels is a clear finding. The DEG analysis (C133, Figure 4D) provides specific numbers with appropriate statistical methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140"
+    ],
+    "result": "Basal-SCCIS-tumor cells showed significant up-regulation of DNA damage response genes (PCNA, MCM7), HSP family genes, activated keratins, and S100 family genes. This expression pattern indicates these are malignant cells derived from UV-damaged AK with high invasive potential.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C134-C140 are supported by GO/KEGG enrichment analysis (Figure 4E) and gene expression data (Figure 4F-H). The characterization of specific gene families is well-documented. The inference about malignant origin (C137) is reasonable based on MCM7's known role in UV damage response (C136), though direct lineage tracing would strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C156",
+      "C157",
+      "C158"
+    ],
+    "result": "MAGEA4 was strongly positive in most SCCIS (73.33%) and invasive cSCC (76.67%) samples, with significantly higher expression than normal tissue. MAGEA4+ tumor cells showed increased stem cell marker COL17A1 and proliferation marker PCNA, suggesting MAGEA4 as a biomarker of higher malignancy in SCCIS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C151-C153 are supported by IHC data (Figure 4J, Figure 4\u2014figure supplement 1B) with specific percentages. The co-localization study (C156, Figure 4\u2014figure supplement 2) provides additional mechanistic insight. The inference about MAGEA4 as a biomarker (C158) is supported by expression data and citation to Ji et al., 2020 (C157), though prospective validation would strengthen this claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164"
+    ],
+    "result": "ITGA6 was significantly overexpressed in Basal-SCCIS-tumor cells and showed progressive up-regulation from normal to SCCIS to invasive cSCC (p<0.001), with higher expression in invasive cSCC than SCCIS. No significant difference was observed between well-differentiated and moderately/poorly differentiated cSCC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C159-C164 are supported by IHC data (Figure 4J, Figure 4\u2014figure supplement 1C) with appropriate statistical testing. The progressive increase across disease stages is clearly documented. The lack of difference between differentiation grades (C164) is an important negative finding that is properly reported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C168",
+      "C169",
+      "C170",
+      "C171",
+      "C172"
+    ],
+    "result": "Functional experiments showed that silencing MAGEA4 or ITGA6 significantly reduced proliferation, migration, and invasion while increasing apoptosis in cSCC cell lines (p<0.01), confirming their carcinogenic roles in SCCIS to cSCC progression through regulation of cell stemness, proliferation, apoptosis, and ECM degradation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C168-C171 are supported by functional experiments (Figure 4\u2014figure supplement 3B-G) with appropriate statistical significance (p<0.01). Multiple assays (proliferation, apoptosis, migration, invasion) were performed across three cell lines, providing robust evidence. The inference about their carcinogenic role (C172) is well-supported by the functional data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C173",
+      "C174",
+      "C175",
+      "C176",
+      "C177",
+      "C178",
+      "C179"
+    ],
+    "result": "Basal1 cells showed higher proportions in cSCC tumor samples compared to normal skin, indicating loss of terminal differentiation. CNV analysis revealed significant heterogeneity among cSCC individuals, with CNV levels correlating with malignant status (well-differentiated: low CNV; poorly differentiated: high CNV).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C173-C177 are supported by cell proportion analysis (Figure 5A-C, Figure 5\u2014figure supplement 1) and CNV analysis (Figure 5\u2014figure supplement 2B-D). Statistical testing (t-test, p<0.05) supports the proportion differences. The correlation between CNV levels and differentiation status is clearly demonstrated, though the inference about reflecting malignant status (C179) could benefit from clinical outcome data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C180",
+      "C181",
+      "C182",
+      "C183",
+      "C184",
+      "C185",
+      "C186"
+    ],
+    "result": "DEG analysis between cSCC and normal samples identified 778-1159 significantly up-regulated genes across different keratinocyte subpopulations. These genes were enriched in tumor-related processes including cell adhesion, signaling regulation, apoptosis, angiogenesis, and immune-related processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C180-C186 provide specific numbers from DEG analysis with appropriate statistical methods (Wilcoxon test, p_val_adj <0.05). GO enrichment analysis (Figure 5\u2014figure supplement 3A) supports the functional characterization. The comprehensive analysis across multiple cell types strengthens the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C187",
+      "C191",
+      "C192",
+      "C193",
+      "C199",
+      "C200",
+      "C201"
+    ],
+    "result": "LGALS1, IFITM3, and FTH1 protein expression was significantly increased in cSCC compared to normal tissue. LGALS1 showed no difference between well-differentiated and poorly differentiated cSCC, while IFITM3 and FTH1 were significantly higher in poorly differentiated cSCC. All three genes were overexpressed in at least two cSCC cell lines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C187, C191-C193, C199-C201 are supported by IHC data (Figure 5D) with appropriate statistical testing (p<0.001, p<0.05) and qRT-PCR validation (Figure 5E). The differential expression patterns between differentiation grades are clearly documented. The validation in cell lines strengthens the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C202",
+      "C203",
+      "C204",
+      "C205",
+      "C206",
+      "C207",
+      "C208",
+      "C209",
+      "C210",
+      "C211"
+    ],
+    "result": "Functional experiments demonstrated that silencing LGALS1, IFITM3, FTH1, BST2, or SAT1 significantly inhibited proliferation and invasion, and increased apoptosis in three cSCC cell lines. LGALS1, IFITM3, BST2, and SAT1 (but not FTH1) also reduced migration, indicating these genes regulate multiple aspects of cSCC tumor behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C202-C211 are supported by comprehensive functional experiments (Figure 6B-E, Figure 6\u2014figure supplement 1B-E) with appropriate statistical testing (p<0.01). Multiple assays across three cell lines provide robust evidence. The differential effect of FTH1 on migration (C207, C209) is an important negative finding that is properly reported. The inferences about gene function (C203, C205, C208, C211) are well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C212",
+      "C213",
+      "C214",
+      "C215",
+      "C216",
+      "C217",
+      "C218",
+      "C219"
+    ],
+    "result": "TME analysis identified 11 lymphocyte subpopulations including exhausted CD8+ T cells (CD8Tex), which accounted for a considerable proportion in poorly differentiated cSCC but were small in well/moderately differentiated samples. CD4Tnaive proportion decreased with increasing malignant degree.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C212-C214 are supported by re-clustering analysis (Figure 7A-B). The characterization of CD8Tex cells (C215) represents established knowledge. The differential proportions across malignancy grades (C213-C214, C218-C219) are clearly shown in Figure 7B. The speculation about CD8Tex role in immune dysfunction (C216) is reasonable but acknowledged as speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C220",
+      "C221",
+      "C222",
+      "C223",
+      "C224"
+    ],
+    "result": "Eight DCMac subpopulations and six CAF subpopulations (Fib1-6) were identified in cSCC samples. DCMac cells play key roles in initiating and regulating immune response, while CAFs interact with tumor cells and promote invasion and metastasis through secretion of growth factors, cytokines, and ECM proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C220, C222 are supported by re-clustering analysis (Figure 7A, Figure 7\u2014figure supplement 1A). The functional characterizations (C221, C223-C224) are supported by citations (Kashem et al., 2017; Sahai et al., 2020) and represent established knowledge about these cell types.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C226",
+      "C227",
+      "C228",
+      "C229",
+      "C230"
+    ],
+    "result": "Cell-cell interaction strength increased with malignant degree in cSCC samples (p<0.0001). Incoming interaction strength of keratinocytes (Basal1, Basal2) was significantly enhanced in poorly/moderately differentiated cSCC compared to well-differentiated samples. MHC-II pathway showed enhanced signaling interactions with increased malignancy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C226-C230 are supported by CellChat analysis (Figure 7D-F) with appropriate statistical testing (Wilcoxon test, p<0.0001, p<0.1). The progressive increase in interaction strength across malignancy grades is clearly demonstrated. The specific pathway analysis (MHC-II) provides mechanistic insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C231",
+      "C232",
+      "C233",
+      "C234",
+      "C235"
+    ],
+    "result": "Cell-to-cell interaction was significantly enhanced in poorly differentiated cSCC tumor compared to matched normal tissue. Basal1, Basal2, Pro KCs, and LC cells showed significantly increased incoming and outgoing interaction strength, identifying them as key participants in TME crosstalk. Classical cancer-related signaling pathways including MHC-II, laminin, and TNF were significantly altered.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C231-C235 are supported by CellChat analysis (Figure 8A-D, Figure 8\u2014figure supplement 1A) with statistical testing (Wilcoxon test, p<0.1). The identification of key cell populations (C232-C233) is based on quantitative interaction strength data. The pathway analysis (C234-C235) provides specific mechanistic insights.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C245",
+      "C246",
+      "C247",
+      "C248",
+      "C249",
+      "C250"
+    ],
+    "result": "Paired scRNA-seq and scATAC-seq analysis of poorly differentiated cSCC revealed that all major cell types were present in both datasets. The majority of differentially accessible regions (DARs) were located in promoter regions (>95% in Basal1), and DARs were closely associated with DEGs. Cell types could be distinguished by transcription factor activities, suggesting cell-type-specific transcription factors regulate chromatin accessibility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C245-C250 are supported by integrated analysis (Figure 8\u2014figure supplement 2A-B). The specific percentage for Basal1 (C247) provides quantification. The association between DARs and DEGs (C248) and the inference about transcription factor regulation (C250) are supported by chromVAR analysis, though the causal relationship would require additional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C251",
+      "C252",
+      "C253",
+      "C254",
+      "C255"
+    ],
+    "result": "TP63, TP53, and FOSL1 showed enrichment of binding motifs within DARs in major keratinocytes, supported by increased chromatin accessibility and transcription. TP63 and FOSL1 showed positive correlation between motif activity and expression, supporting their important driving roles as transcriptional activators in cSCC development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C251-C254 are supported by chromVAR analysis (Figure 8\u2014figure supplement 2D-F) and Cicero analysis (Figure 8\u2014figure supplement 2E). The positive correlation between motif activity and expression is quantitatively demonstrated. The inference about driving roles (C255) is well-supported by the integrated chromatin accessibility and expression data, though functional validation would strengthen the causal claims.",
+    "result_type": "MAJOR"
+  }
+]

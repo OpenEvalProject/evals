@@ -1,0 +1,198 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C15",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "The ReSource study enrolled 332 healthy adults (197 women, 20-55 years, >95% Caucasian) who underwent three sequential 3-month training modules (Presence, Affect, Perspective) over 9 months, with participants randomized to training cohorts (TC1, TC2) or retest control cohort (RCC).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C15, C53-C57 provide comprehensive documentation of the study design, sample characteristics, exclusion criteria, and ethical approvals. The study design is well-described with appropriate randomization and control groups, though the sample is demographically homogeneous (>95% Caucasian).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Different training modules induced distinct patterns of functional network reorganization: Presence training increased functional segregation (eccentricity) in bilateral temporal and right superior parietal areas, Perspective training decreased eccentricity in right temporal and left insular regions, while Affect training showed no eccentricity changes. Changes were most marked in gradient G2 and in attention/interoception networks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C22 present statistically significant findings (FDR corrected p<0.05) with appropriate effect sizes. The differential effects across training modules are well-documented with post-hoc analyses. However, the lack of significant effects relative to RCC (mentioned in supplementary materials) raises questions about the practical significance of between-module differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Training induced depth-dependent microstructural changes measured by qT1: overall training decreased qT1 (increased myelination) relative to controls, with Presence showing mixed superficial increases and deep decreases, Affect showing widespread mid-to-deep decreases, and Perspective showing superficial decreases in parietal-temporal regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C26 document training-specific microstructural changes with FDR correction. The depth-dependent patterns are clearly differentiated across training modules. However, C49 acknowledges that the depth measurements are interpolated proxies rather than actual cortical layers, which limits biological interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Functional and microstructural changes showed correspondence: regions with functional eccentricity changes between Presence and Perspective showed correlated microstructural changes in upper cortical layers. Network-specific analyses revealed training-module-dependent depth patterns, with spatial correlations between functional gradients and microstructure varying by training type and cortical depth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C31 demonstrate structure-function correspondence with appropriate statistical corrections (FDR, spatial autocorrelation). The depth-dependent correspondence patterns align with the training-specific effects. However, the correlational nature limits causal inference about whether functional or structural changes drive the relationship.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C5"
+    ],
+    "result": "Machine learning models with cross-validation successfully predicted behavioral changes from brain changes: attention improvements after Presence training (out-of-sample r=0.325\u00b10.308), compassion changes after Affect training (r=0.284\u00b10.279), and Theory of Mind changes after Perspective training (r=0.301\u00b10.281), with domain-specific models performing best on their respective training modules (p<0.001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C32-C35 report prediction results with appropriate cross-validation (5-fold, 100 repetitions). However, the out-of-sample correlations are modest (r~0.28-0.33) with high standard deviations (\u00b10.28-0.31), suggesting substantial variability. The high SD relative to mean correlation raises concerns about prediction reliability. Feature selection without cross-validation (C79) could introduce optimistic bias.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C40",
+      "C44",
+      "C50",
+      "C52"
+    ],
+    "result": "Social mental training induced differentiable changes in cortical function and microstructure: attention-mindfulness and socio-cognitive training altered function and microstructure in attention/interoception regions (insular, parietal cortices), while socio-affective and socio-cognitive training showed differential microstructural but not functional changes in interoceptive/emotional regions (insular, orbitofrontal areas). These changes persisted beyond cortical thickness alterations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, C40, C44, C50, C52 synthesize the main findings showing training-specific plasticity. The results are supported by multiple converging analyses (functional gradients, microstructure, behavioral prediction) with appropriate statistical controls. C44 demonstrates effects beyond gross morphology. However, the generalizability is limited by the homogeneous sample (C54) and age range (20-55 years).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C16"
+    ],
+    "result": "Social cognitive functions are organized along hierarchical cortical gradients: socio-affective abilities (empathy, compassion) and socio-cognitive abilities (Theory of Mind) activate distinct brain networks, with functional organization following a sensory-transmodal axis where the first three gradients explain >50% of connectome variance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C11, C16 establish the theoretical framework based on extensive prior literature. The gradient framework is well-established (C16 cites multiple sources). However, these are primarily literature-based claims rather than novel findings from this study, serving as background for interpreting the training effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C36",
+      "C38",
+      "C39",
+      "C51"
+    ],
+    "result": "The observed functional changes align with theoretical frameworks: integrated states may reflect active thought processes (ToM), segregated states may reflect automation, and the lack of Affect-related eccentricity changes may reflect a coordinating role consistent with emotional allostasis theories and global workspace theories of cognition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C36, C38, C39, C51 provide theoretical interpretations of the findings. While these interpretations are supported by citations to relevant theories, they remain speculative (C38 explicitly states 'it is possible'). The interpretations are plausible but not directly tested, representing post-hoc explanations rather than a priori hypotheses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "The observed microstructural changes may reflect myelin plasticity and layer-specific cortical organization: qT1 changes may reflect alterations in oligodendrocytes and glial cells, with myelin plasticity serving as a marker of adult learning. Cortical layers show differential connectivity patterns (ascending connections in middle layers, descending in superficial/deep layers) with functional specialization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C43, C45-C48 provide biological context for interpreting qT1 findings, supported by citations to relevant literature. However, C42 acknowledges the qT1 changes 'may reflect' cellular changes, indicating indirect inference. C49 notes the depth measurements are proxies rather than actual layers, limiting direct comparison to layer-specific literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "The study employed multimodal neuroimaging (3T MRI with resting-state fMRI, T1-weighted structural MRI, MP2RAGE for qT1 mapping) with validated processing pipelines (FreeSurfer, gradient analysis, equivolumetric depth sampling), meta-analytical network definition (NeuroSynth), validated behavioral measures (EmpaToM task), and appropriate statistical methods (linear mixed-effects models with FDR correction, machine learning with cross-validation).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C79 comprehensively document the methods. The neuroimaging acquisition parameters are standard, processing pipelines are validated (C67), and statistical approaches are appropriate for longitudinal data (C73). However, C79 notes feature selection without cross-validation, which could introduce bias. The methods are generally rigorous but some analytical choices (e.g., \u03b1=0.5 for diffusion embedding) lack detailed justification.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Prior mental training studies show inconsistent effects on brain morphology: while some studies report changes in brain function and morphology, a recent randomized controlled trial showed little effect of 8 weeks mindfulness training, though a previous ReSource study demonstrated cortical thickness changes after social/interoceptive training.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C14 accurately summarize prior literature, noting both positive findings and null results. This provides appropriate context for the current study. The citations appear accurate, though the inconsistency in prior findings highlights the need for the current more comprehensive investigation.",
+    "result_type": "MINOR"
+  }
+]

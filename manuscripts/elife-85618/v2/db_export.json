@@ -1,0 +1,2415 @@
+{
+  "submission": {
+    "id": "c5361b85-834d-4753-8b32-46f3bdb3a322",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-04T03:08:05.526110Z",
+    "updated_at": "2025-12-04T03:08:05.526110Z"
+  },
+  "content": [
+    {
+      "id": "ceb2e42c-2b76-4d83-bea1-ab20d986a349",
+      "submission_id": "c5361b85-834d-4753-8b32-46f3bdb3a322",
+      "content_type": "manuscript",
+      "content_text": "# Development and validation of COEWS (COVID-19 Early Warning Score) for hospitalized COVID-19 with laboratory features: A multicontinental retrospective study\n\n## Authors\n\n- Riku Kl\u00e9n<sup>1</sup> ([ORCID: 0000-0002-0982-8360](https://orcid.org/0000-0002-0982-8360))\n- Ivan A Huespe<sup>2</sup> ([ORCID: 0000-0003-3445-6981](https://orcid.org/0000-0003-3445-6981)) \u2020\n- Felipe An\u00edbal Gregalio<sup>2</sup> ([ORCID: 0000-0003-3189-2382](https://orcid.org/0000-0003-3189-2382))\n- Antonio Lalueza Lalueza Blanco<sup>3</sup>\n- Miguel Pedrera Jimenez<sup>3</sup>\n- Noelia Garcia Barrio<sup>3</sup>\n- Pascual Ruben Valdez<sup>4</sup>\n- Matias A Mirofsky<sup>5</sup>\n- Bruno Boietti<sup>2</sup>\n- Ricardo G\u00f3mez-Huelgas<sup>6</sup>\n- Jos\u00e9 Manuel Casas-Rojo<sup>7</sup>\n- Juan Miguel Ant\u00f3n-Santos<sup>7</sup> ([ORCID: 0000-0003-3443-1100](https://orcid.org/0000-0003-3443-1100))\n- Javier Alberto Pollan<sup>2</sup>\n- David G\u00f3mez-Varela<sup>8</sup> ([ORCID: 0000-0003-2502-9419](https://orcid.org/0000-0003-2502-9419)) \u2020\n\n### Affiliations\n\n1. Turku PET Centre, University of Turku and Turku University Hospital Turku Finland ([ROR:05vghhr25](https://ror.org/05vghhr25))\n2. Italian Hospital of Buenos Aires Buenos Aires Argentina ([ROR:00bq4rw46](https://ror.org/00bq4rw46))\n3. 12 de Octubre University Hospital, Research Institute of Hospital 12 de Octubre (imas+12), Complutense University Madrid Spain ([ROR:00qyh5r35](https://ror.org/00qyh5r35))\n4. V\u00e9lez Sarsfield Hospital Buenos Aires Argentina\n5. Hospital Municipal de Agudos Dr Le\u00f3nidas Lucero Bah\u00eda Blanca Argentina\n6. Regional University Hospital of M\u00e1laga, Biomedical Research Institute of M\u00e1laga (IBIMA), University of Malaga M\u00e1laga Spain ([ROR:036b2ww28](https://ror.org/036b2ww28))\n7. Infanta Cristina University Hospital Madrid Spain ([ROR:05txkk980](https://ror.org/05txkk980))\n8. Division of Pharmacology & Toxicology, Department of Pharmaceutical Sciences, University of Vienna Vienna Austria ([ROR:03prydq77](https://ror.org/03prydq77))\n\n\u2020 Corresponding author\n\n## Abstract\n\nBackground:The emergence of new SARS-CoV-2 variants with significant immune-evasiveness, the relaxation of measures for reducing the number of infections, the waning of immune protection (particularly in high-risk population groups), and the low uptake of new vaccine boosters, forecast new waves of hospitalizations and admission to intensive care units. There is an urgent need for easily implementable and clinically effective Early Warning Scores (EWSs) that can predict the risk of complications within the next 24\u201348 hr. Although EWSs have been used in the evaluation of COVID-19 patients, there are several clinical limitations to their use. Moreover, no models have been tested on geographically distinct populations or population groups with varying levels of immune protection.Methods:We developed and validated COVID-19 Early Warning Score (COEWS), an EWS that is automatically calculated solely from laboratory parameters that are widely available and affordable. We benchmarked COEWS against the widely used NEWS2. We also evaluated the predictive performance of vaccinated and unvaccinated patients.Results:The variables of the COEWS predictive model were selected based on their predictive coefficients and on the wide availability of these laboratory variables. The final model included complete blood count, blood glucose, and oxygen saturation features. To make COEWS more actionable in real clinical situations, we transformed the predictive coefficients of the COEWS model into individual scores for each selected feature. The global score serves as an easy-to-calculate measure indicating the risk of a patient developing the combined outcome of mechanical ventilation or death within the next 48 hr.The discrimination in the external validation cohort was 0.743 (95% confidence interval [CI]: 0.703\u20130.784) for the COEWS score performed with coefficients and 0.700 (95% CI: 0.654\u20130.745) for the COEWS performed with scores. The area under the receiver operating characteristic curve (AUROC) was similar in vaccinated and unvaccinated patients. Additionally, we observed that the AUROC of the NEWS2 was 0.677 (95% CI: 0.601\u20130.752) in vaccinated patients and 0.648 (95% CI: 0.608\u20130.689) in unvaccinated patients.Conclusions:The COEWS score predicts death or MV within the next 48 hr based on routine and widely available laboratory measurements. The extensive external validation, its high performance, its ease of use, and its positive benchmark in comparison with the widely used NEWS2 position COEWS as a new reference tool for assisting clinical decisions and improving patient care in the upcoming pandemic waves.Funding:University of Vienna.\n\n## Introduction\n\nThe appearance of new SARS-CoV-2 variants with significant immune-evasiveness, the relaxation of measurements for reducing the number of infections, the waning of immune protection (particularly in high-risk population groups), and the low uptake of new vaccine boosters, forecast new waves of hospitalizations and admission in intensive care units (ICUs). This situation will add up to a load of work accumulated and the high pressure supported by emergency departments.\n\nIn the midst of this rapidly evolving situation, there is an urgent need for easily implementable and clinically effective decision tools to assist healthcare personnel in their decision-making process. These tools play a crucial role in optimizing the level of care and ensuring the appropriate allocation of resources. In response to this need, numerous predictive models for COVID-19 have been published (Shakeel et al., 2021), utilizing vital signs and laboratory such as the PRIORITY (Mart\u00ednez Lacalzada et al., 2021), or only laboratory results such as the COvid-19 Disease Outcome Predictor (CODOP) (Kl\u00e9n et al., 2022). However, it is important to note that these models primarily focus on predicting complications that may arise during the hospitalization period, which can span from 24 hr up to 7 days. Therefore, when a patient is hospitalized, the utilization of Early Warning Scores (EWSs) is preferable as they predict the risk of complications within the next 24\u201348 hr. EWS enables standardized and daily evaluation of patients by detecting changes in clinical parameters that precede clinical deterioration (Kostakis et al., 2021; Mart\u00edn Rodr\u00edguez et al., 2021).\n\nAlthough EWS has been used in the evaluation of COVID-19 patients (Aygun and Eraybar, 2022; Fang et al., 2021; Huespe et al., 2021; Liang et al., 2020; Sarkar et al., 2022), there are clinical limitations to its use. For instance, the COVID-19 severity index (Huespe et al., 2021) employs vital signs, laboratory parameters, and chest X-ray findings to predict the risk of ICU admission within the next 24 hr. However, implementing these scoring systems requires the expertise of experienced healthcare professionals. The NEWS2 (Royal College of Physicians, 2017) also evaluates vital signs conducted by healthcare professionals, which may pose challenges during periods of overwhelming demand, and this model. Moreover, no models have been tested on geographically distinct populations or population groups with varying levels of immune protection.\n\nIn this study, we developed and validated, in a multicontinental cohort, COVID-19 Early Warning Score (COEWS): an EWS automatically calculated solely by laboratory parameters of widespread availability and affordability. Additionally, we evaluated the predictive performance of vaccinated and unvaccinated patients.\n\n## Materials and methods\n\n### Source of data\n\nFor the development and validation of this predictive model, we used data from the Hospital 12 de Octubre (Madrid, Spain) and the Argentinian COVID-19 Network (Boietti et al., 2021; Casas-Rojo et al., 2020). These registries comprise patients hospitalized between January 2020 and March 2022, with demographic, clinical, and analytical data.\n\nThe use of patient data in this study has received approval from the Clinical Research Ethics Committee of Hospital 12 de Octubre [reference 20/117]. Additionally, the Institutional Review Board of the Hospital Italiano de Buenos Aires approved the study for each participating site in the Argentinian COVID-19 Network (Approval Number: #5602). As the present study is a retrospective observational study, it does not involve any procedures or activities beyond the standard consultation and care provided to patients. It poses no additional risks to their health and incurs no extra costs for them or their healthcare coverage. Patient data will be assessed retrospectively through electronic medical records. Considering that this study involves minimal risk due to the handling of participant data, the corresponding ethics committees have granted an exemption from obtaining signed informed consent. This exemption is in accordance with Guideline 10: Modifications and Dispensations of Informed Consent outlined in the CIOMS 2019 guidelines.\n\n### Participants\n\nPatients hospitalized with a confirmed diagnosis of COVID-19 who received oxygen therapy were included. COVID infection was defined as a positive result of real-time reverse transcription-polymerase chain reaction for SARS-CoV-2 in nasopharyngeal swab specimens or sputum samples, also in the second and third waves, some patients were diagnosticated with the Panbio TM COVID-19 rapid test (Abbott) in the Spanish hospitals. We considered only the first hospitalization for COVID-19 for each patient during the study period. Patients were followed from hospital admission until death or hospital discharge.\n\n### Outcome and variables\n\nThe aim of this study was the development of an EWS. Therefore, the outcome of the predictive model was death or mechanical ventilation (MV) in the next 48 hr. The potential predictors evaluated were: demographic data, admission vital signs (heart rate, temperature, systolic and diastolic blood pressure, and oxygen saturation), and blood test values (hemoglobin in g/dl, percentage lymphocytes, leukocytes in 10\u00b3/mm\u00b3, platelets in 10\u00b3/mm\u00b3, and glycemia mg/dl), vaccination status, and clinical variables that were present in all training and test cohorts. The percentage of missing values is listed in Table 1.\n\n**Table 1.**\n Demographic characteristics, with missing data for each variable for the training database.We also include the coefficients of each variable included in the model.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>Values in training cohort</th>\n      <th>Missing, n (%)</th>\n      <th>Coefficient</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Sex (female) \u2013 n (%)</td>\n      <td>3539 (47.1%)</td>\n      <td>0</td>\n      <td>0.067</td>\n    </tr>\n    <tr>\n      <td>Age in years \u2013 median (IQR)</td>\n      <td>62.5 (47.8\u201378.7)</td>\n      <td>0</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td colspan=\"4\">Comorbidities</td>\n    </tr>\n    <tr>\n      <td>Cardiac insufficiency \u2013 n (%)</td>\n      <td>65 (0.8%)</td>\n      <td>0</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Peripheral vascular disease \u2013 n (%)</td>\n      <td>365 (5.0%)</td>\n      <td>0</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Brain vascular disease \u2013 n (%)</td>\n      <td>332 (4.5%)</td>\n      <td>0</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Dementia \u2013 n (%)</td>\n      <td>415 (5.5%)</td>\n      <td>0</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>COPD \u2013 n (%)</td>\n      <td>592 (8.0%)</td>\n      <td>0</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Asthma \u2013 n (%)</td>\n      <td>543 (7.0%)</td>\n      <td>0</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Diabetes \u2013 n (%)</td>\n      <td>1525 (20.0%)</td>\n      <td>0</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Kidney disease \u2013 n (%)</td>\n      <td>81 (1.0%)</td>\n      <td>0</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Liver disease \u2013 n (%)</td>\n      <td>864 (11.5%)</td>\n      <td>0</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Solid tumor \u2013 n (%)</td>\n      <td>1312 (17.5%)</td>\n      <td>0</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>HIV \u2013 n (%)</td>\n      <td>59 (0.7%)</td>\n      <td>0</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Active smoker \u2013 n (%)</td>\n      <td>521 (7.0%)</td>\n      <td>0</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Obesity \u2013 n (%)</td>\n      <td>1590 (21.0%)</td>\n      <td>0</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td colspan=\"4\">Clinical parameters at admission</td>\n    </tr>\n    <tr>\n      <td>Temperature \u2013 Md (IQR)</td>\n      <td>37.1 (36.5\u201337.9)</td>\n      <td>53 (0.71)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>SBP\u2013 Md (IQR)</td>\n      <td>127 (113\u2013142)</td>\n      <td>104 (1.39)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Heart rate \u2013 Md (IQR)</td>\n      <td>93 (80\u2013106)</td>\n      <td>76 (1.01)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Respiration rate \u2013 Md (IQR)</td>\n      <td>22 (18\u201328)</td>\n      <td>5103 (67.98)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>O2_saturation (%) \u2013 Md (IQR)</td>\n      <td>96 (93\u201398)</td>\n      <td>102 (1.36)</td>\n      <td>0.058</td>\n    </tr>\n    <tr>\n      <td colspan=\"4\">Laboratory parameters</td>\n    </tr>\n    <tr>\n      <td>Sodium (mmol/l) \u2013 Md (IQR)</td>\n      <td>137 (134\u2013139)</td>\n      <td>264 (3.52)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Potassium (mmol/l) \u2013 Md (IQR)</td>\n      <td>4.12 (3.79\u20134.5)</td>\n      <td>272 (3.62)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Glucose (mg/dl) \u2013 Md (IQR)</td>\n      <td>116 (101\u2013142)</td>\n      <td>306 (4.08)</td>\n      <td>0.002</td>\n    </tr>\n    <tr>\n      <td>Leukocytes (\u00d710\u00b3/mm\u00b3) \u2013 Md (IQR)</td>\n      <td>6.8 (5.1\u20139.3)</td>\n      <td>245 (3.26)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Neutrophils (\u00d710\u00b3/mm\u00b3) \u2013 Md (IQR)</td>\n      <td>4.9 (3.5\u20137.2)</td>\n      <td>245 (3.26)</td>\n      <td>0.068</td>\n    </tr>\n    <tr>\n      <td>Percentage of lymphocytes \u2013 Md (IQR)</td>\n      <td>15.6 (9.9\u201322.6)</td>\n      <td>245 (3.26)</td>\n      <td>0.008</td>\n    </tr>\n    <tr>\n      <td>Hemoglobin (g/dl) \u2013 Md (IQR)</td>\n      <td>13.8 (12.4\u201315.1)</td>\n      <td>244 (3.26)</td>\n      <td>0.044</td>\n    </tr>\n    <tr>\n      <td>Platelets (\u00d710\u00b3/mm\u00b3) \u2013 Md (IQR)</td>\n      <td>210 (161\u2013272)</td>\n      <td>245 (3.26)</td>\n      <td>0.0006</td>\n    </tr>\n    <tr>\n      <td>Lactate (mmol/l) \u2013 Md (IQR)</td>\n      <td>1.5 (1.2\u20132.2)</td>\n      <td>7367 (98.14)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Creatinine (mg/dl) \u2013 Md (IQR)</td>\n      <td>0.9 (0.72\u20131.16)</td>\n      <td>342 (4.56)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>LDH (U/l) \u2013 Md (IQR)</td>\n      <td>330 (266\u2013419)</td>\n      <td>995 (13.2)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>GOT (U/l) \u2013 Md (IQR)</td>\n      <td>34 (25\u201351)</td>\n      <td>737 (9.82)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>GPT (U/l) \u2013 Md (IQR)</td>\n      <td>27 (17\u201346)</td>\n      <td>453 (6.03)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Bilirubine (mg/dl) \u2013 Md (IQR)</td>\n      <td>0.5 (0.3\u20130.7)</td>\n      <td>648 (8.63)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>aPTT \u2013 Md (IQR)</td>\n      <td>30 (28\u201333)</td>\n      <td>549 (7.31)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Prothrombin activity (%) \u2013 Md (IQR)</td>\n      <td>83 (74\u201393)</td>\n      <td>545 (7.26)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Intercept</td>\n      <td></td>\n      <td></td>\n      <td>4.235</td>\n    </tr>\n  </tbody>\n</table>\n\n_Model calculation C = A0 + A1* \u00d7 1 + A2* \u00d7 2 +A3* \u00d7 3 + A4* \u00d7 4 + A5* \u00d7 5 + A6* \u00d7 6 + A7* \u00d7 7. Example 4.23588\u2026+\u22120.05808\u2026*7.5 +\u2026\u22120.06734*1 = \u22120.280637. aPTT: Activated Partial Thromboplastin Time, COPD: Chronic Obstructive Pulmonary Disease, GOT: glutamic-oxaloacetic transaminase, GPT: Glutamic-Pyruvic Transaminase, HIV : Human Immunodeficiency Virus, IQR: Intercuartile range, LDH: Lactate Dehydrogenase, SBP: Systolic Blood Pressure._\n\n### Missing data\n\nThe used databases had some level of missingness due to the medical overload during the COVID-19 pandemic. In the training and internal testing database, we used simple imputation with the median values of the training dataset. For the external validation, we consider this missing data as \u2018Missing completely at random\u2019 (MCAR) (without systematic differences between the missing values and the observed values, Sterne et al., 2009), Hence, we performed multiple imputations by the Chained Equations procedure. To reduce the sampling error due to the imputations, we set the number of 20 imputed datasets (White et al., 2011).\n\n### Sample size\n\nTo build a predictive model with approximately 10 estimated variables, we needed 10\u201320 outcome events per variable (Katz, 2011). We expected to include between 5 and 10 variables in the model, therefore we need at least 100\u2013200 outcome events per database. Due to the fact that the number of outcomes (death and MV within 48 hr after hospital admission) in each database was higher than 200, we had enough sample size in the training and testing databases.\n\n### COEWS development\n\nThe Spanish database was divided randomly into training (75%) and test (25%) datasets. COEWS was built using stable iterative variable selection (SIVS) (Mahmoudian et al., 2021) and linear regression with the least absolute shrinkage and selection operator (Lasso) regularization (Friedman et al., 2010). In model building, only the training cohort was used and models were built using 10-fold cross-validation. In the feature selection stage of SIVS, 100 models were built and for each model selected variables were recorded. To reduce the number of features to as few as possible (therefore, increasing the easiness of use of COEWS), we used the weighting function in SIVS (called variable importance scoring) with a threshold of 0.15. This method has been shown to be very efficient, especially when the ratio of positive and negative outcomes is imbalanced (Kl\u00e9n et al., 2019). Lasso models were built in R Development Core Team, 2010 (version 3.6.0) package glmnet (Friedman et al., 2010) (version 4.1\u20131). All predictions were blinded to the final clinical outcome. The Argentinian database was used for external validation.\n\n### Transformation of linear predictors to the score\n\nBased on the final linear Lasso model and clinical insights, the final COEWS score was created. The clinical insights was used to determine the normal range, which gives zero points in the COEWS score. The other scoring ranges with negative and positive points were determined using the coefficients of the final Lasso model by linear interpolation from the COEWS. Especially, the ranges per feature were defined by the magnitude of the corresponding coefficient, and larger absolute values of coefficients yielded shorter ranges.\n\n### Discrimination and calibration\n\nThe performance of the developed models was evaluated using the area under the receiver operating characteristic curve (AUROC), and the model\u2019s calibration was evaluated using the root mean square error. We also evaluate the calibration by comparing the prediction of the model with the observed proportion of the combined outcome, stratifying every patient according to the probability predicted by the model in deciles. We performed a graph with the average probability of the outcome predicted by the model (average of individual estimated probabilities) and the observed probability (proportion of nonattendance) within each decile stratum (Figure 1; Giunta et al., 2023).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/85618/elife-85618-fig1-v2.jpg)\n\nIn order to account for the transformation of model coefficients into a score, we conducted additional evaluations to assess discrimination in each database using the score derived from the coefficients. Furthermore, we performed separate analyses for vaccinated and unvaccinated patients, as well as patients hospitalized before and after 2021, to investigate potential differences in predictive performance following changes in therapeutics. To determine the cutoff point for the analysis, we selected July 2021. This decision was based on the publication and implementation of the Recovery Trial indications, which introduced significant therapeutic changes during the pandemic (Horby et al., 2021). Lastly, we calculated the discrimination of the NEWS2 score to provide a comparative assessment with the COEWS score.\n\n### Role of the funding source\n\nThe data collection for this article was supported by the Instituto de Salud Carlos III, the Ministry of Science and Innovation of Spain (COVID-19 COV20/00181) \u2014 co-financed by the European Development Regional Fund A way to achieve Europe and the Ministry of Health of Argentina (Becas Salud Investiga). The publication of this article was supported by the University of Vienna.\n\n## Results\n\n### Participants\n\nBetween January 2020 and February 2022, we included 15,903 hospital admissions of COVID-19 patients from the Spanish database (1009 patients) and the Argentinian database (5894 patients). The training database included 7507 patients and in the internal testing 2502 patients from the Hospital 12 de Octubre (Madrid, Spain). Of these, 471 (4.7%) were vaccinated with at least one COVID-19 vaccine dose (267 [2.7%] patients had a single dose, and 203 [2%] were fully vaccinated).\n\nThe external testing included 5894 patients from the Argentinian COVID-19 Network study, of these 669 (11.4%) were vaccinated with at least one COVID-19 vaccine dose (427 [7.2%] patients vaccinated with one COVID-19 vaccine dose and 242 [4.1%] with two).\n\nThe observed number of combined events (death and MV within 48 hr after admission) was 1477 (19.7%) in the training database, 452 (18.1%) in the test database, and 906 (15.4%) in the external validation database. In Table 1, we presented the demographic, laboratory, vital signs, and comorbidities of the training database.\n\n### COEWS development\n\nThe variables of the COEWS predictive model were selected based on the coefficients but also based on the wide availability of these laboratory variables. Thus, the final model included features from the complete blood count, blood glucose, and oxygen saturation. We observed that the male sex, lower oxygen saturation, neutrophils, hemoglobin, platelets, lymphocytes, and glucose were positively correlated with death or MV in the next 48 hr. The coefficients of each variable included in the final model are presented in Table 1.\n\nIn order to make COEWS more actionable in real clinical situations, we transformed the predictive coefficients of the COEWS model into individual scores for each selected feature (Table 2). The global score, obtained by summing the individual scores, serves as an easy-to-calculate measure indicating the risk of a patient developing the combined outcome of MV or death within the next 48 hr. We established the levels of risk in the final score based on the NEWS2 Scale: lower risk (less than 10%), moderate risk (10\u201320%), high risk (20\u2013 30%), and critical risk (higher than 30%). Our aim was to categorize patients into different risk categories based on their likelihood of experiencing the combined outcome. To provide a comprehensive understanding of the outcome percentages for each risk level, we examined our cohort and found the following rates:\n\n**Table 2.**\n Scores of the COVID-19 Early Warning Score (COEWS) predictive model. Green color means 0 points, yellow 1 point, ornge 2 points, and red 3 or more points.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Parameters</th>\n      <th>6</th>\n      <th>5</th>\n      <th>4</th>\n      <th>3</th>\n      <th>2</th>\n      <th>1</th>\n      <th>0</th>\n      <th>1</th>\n      <th>2</th>\n      <th>3</th>\n      <th>4</th>\n      <th>5</th>\n      <th>6</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>SpO2 (%)</td>\n      <td>&lt;85</td>\n      <td>85\u201386</td>\n      <td>87\u201388</td>\n      <td>89\u201390</td>\n      <td>91\u201392</td>\n      <td>93\u201395</td>\n      <td>&gt;95</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Neutrophils (\u00d710\u00b3/mm\u00b3)</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td>&lt;1.5</td>\n      <td>1.5\u20138.0</td>\n      <td>8.1\u20139.0</td>\n      <td>9.1\u201310.0</td>\n      <td>10.1\u201311.0</td>\n      <td>11.1\u201312.0</td>\n      <td>12.1\u201313.0</td>\n      <td>&gt;13</td>\n    </tr>\n    <tr>\n      <td>Hemoglobin (g/dl)</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td>&lt;9</td>\n      <td>10\u201311</td>\n      <td>12\u201317</td>\n      <td>18\u201319</td>\n      <td>&gt;19</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Platelets (\u00d710\u00b3/mm\u00b3)</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td>&lt;150</td>\n      <td>150\u2013400</td>\n      <td>&gt;400</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Lymphocytes (%)</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td>&lt;8</td>\n      <td>8\u201320</td>\n      <td>&gt;20</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Glucose (mg/dl)</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td>&lt;90</td>\n      <td>90\u2013140</td>\n      <td>141\u2013187</td>\n      <td>188\u2013234</td>\n      <td>235\u2013280</td>\n      <td>&gt;280</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Sex</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td>Male</td>\n      <td>Female</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td colspan=\"14\">Global score</td>\n    </tr>\n    <tr>\n      <td colspan=\"14\">Low risk 0\u20133</td>\n    </tr>\n    <tr>\n      <td colspan=\"14\">Moderate risk 4\u20135</td>\n    </tr>\n    <tr>\n      <td colspan=\"14\">High risk 6\u20137</td>\n    </tr>\n    <tr>\n      <td colspan=\"14\">Critical risk &gt;7</td>\n    </tr>\n  </tbody>\n</table>\n\nThese percentages illustrate the increasing likelihood of the outcome as the risk level escalates.\n\n### Calibration and discrimination\n\nThe AUROC calculated for the training, testing, and external validation of the databases is presented in Table 3. The discrimination in the external validation cohort was 0.743 (0.703\u20130.784) for the COEWS score performed with coefficients and 0.700 (0.654\u20130.745) for the COEWS performed with the scores. Of note, the AUROC of vaccinated and non-vaccinated patients was similar. Additionally, we observed that the AUROC of the NEWS2 was 0.677 (0.601\u20130.752) in vaccinated patients and 0.648 (0.608\u20130.689) in unvaccinated patients (Table 3).\n\n**Table 3.**\n Area under the receiver operating characteristic curve (AUROC) of the COVID-19 Early Warning Score (COEWS) predictive model calculated with the coefficients and with the score in vaccinated and unvaccinated patinetes.\n\n\n<table>\n  <thead>\n    <tr>\n      <th rowspan=\"2\">AUROC (95% CI)</th>\n      <th colspan=\"2\">Vaccinated</th>\n      <th colspan=\"2\">Non-vaccinated</th>\n    </tr>\n    <tr>\n      <th>EWS LASSO</th>\n      <th>EWS score</th>\n      <th>EWS LASSO</th>\n      <th>EWS score</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Training (Spanish data 75%)</td>\n      <td>0.753 (0.656\u20130.851)</td>\n      <td>0.748 (0.659\u20130.838)</td>\n      <td>0.721 (0.706\u20130.736)</td>\n      <td>0.723 (0.709\u20130.738)</td>\n    </tr>\n    <tr>\n      <td>Internal validation (Spanish data 25%)</td>\n      <td>0.712 (0.565\u20130.859)</td>\n      <td>0.684 (0.513\u20130.855)</td>\n      <td>0.704 (0.677\u20130.732)</td>\n      <td>0.711 (0.685\u20130.738)</td>\n    </tr>\n    <tr>\n      <td>External validation (Argentinian data)</td>\n      <td>0.743 (0.703\u20130.784)</td>\n      <td>0.700 (0.654\u20130.745)</td>\n      <td>0.767 (0.749\u20130.785)</td>\n      <td>0.741 (0.723\u20130.759)</td>\n    </tr>\n    <tr>\n      <td>NEWS2 in all databases</td>\n      <td colspan=\"2\">0.677 (0.601\u20130.752)</td>\n      <td colspan=\"2\">0.648 (0.608\u20130.689)</td>\n    </tr>\n    <tr>\n      <td>Patients hospitalized after July 2021</td>\n      <td>0.718 (0.569\u20130.867)</td>\n      <td>0.682 (0.508\u20130.856)</td>\n      <td>0.677 (0.612\u20130.742)</td>\n      <td>0.705 (0.646\u20130.764)</td>\n    </tr>\n  </tbody>\n</table>\n\nTo account for changes in therapeutics, we performed an additional validation using patients hospitalized after July 2021. The model demonstrated similar discrimination ability, with an AUROC of 0.718 (0.569\u20130.867) for the COEWS score performed with coefficients in unvaccinated and 0.677 (0.612\u20130.742) for the COEWS score performed with coefficients in vaccinated (Table 3).\n\nFurthermore, we observed a good and moderate calibration for the training and internal validation, and for the external validation cohort, respectively (Figure 1, Supplementary file 1, and Supplementary file 2).\n\n## Discussion\n\nIn this study, we developed and validated the COEWS predictive model. The COEWS score predicts death or MV within the next 48 hr based on routine and widely available laboratory measurements. This EWS performs a simple and fast triage of COVID-19 hospitalized patients without the need of a physical examination, which greatly reduces the workload of the healthcare team. COEWS was initially developed in a European cohort of COVID-19 patients but also showed a good predictive performance in a very different external cohort of patients from South America. We also observed that COEWS had better predictive performance than the widely used NEWS2 score. In order to increase the clinical usefulness of COEWS, we transformed the coefficients of the predictive model and created an easy-to-use score table that can be used without an electronic calculator.\n\nAlthough several predictive models of severity in COVID-19 patients have been published (Miller et al., 2022), they only predict whether the patient will have the outcome during hospitalization, regardless of when the patient will have the outcome (Miller et al., 2022), which limits their clinical use during a pandemic situation. In this context, EWS models offer the clinical advantage to predict the outcome of interest in a short time horizon (e.g., the next 24\u201348 hr). In the context of the COVID-19 pandemic, several EWS has been developed and used (NEWS2, NEWS2 with age, Modified Early Warning Score (MEWS), and the COVID-19 severity index) (Colombo et al., 2021; Huespe et al., 2021; Liao et al., 2020; Royal College of Physicians, 2017). However, each of them have clear limitations such as not having a time horizon for prediction in the development, lack of testing in vaccinated versus non-vaccinated patients, and not using MV as a clinical outcome. The latest is necessary because COVID-19 patients also die under MV, and also because the measurement of vital signs that are included in an EWS model, will be altered due to MV and hemodynamic support. In fact, we observed that NEWS2 has poor discrimination when considering this combined outcome (death or MV). In this way, the COEWS score has better discrimination, even in an external cohort of patients from a different continent.\n\nThe COEWS is the first EWS in which the predictive performance in vaccinated and unvaccinated patients has been compared. Even though hospitalized vaccinated patients have more favorable outcomes from unvaccinated patients (Busic et al., 2022; Huespe et al., 2022), we observed that the predictive performance was similar between patients with and without vaccines. This observation strongly suggests that hospitalized COVID-19 patients show similar clinical and laboratory manifestations when they are going to suffer serious adverse events, independently of their vaccination status.\n\nAdditionally, we found that the COEWS demonstrated good discrimination in patients hospitalized after July 2021. These findings underscore the model\u2019s robustness over time, affirming its potential as a valuable clinical tool. Despite the evolution of therapeutic approaches during the study period, it is important to note that the laboratory and clinical signs of deterioration associated with severe COVID-19 have remained consistent. This consistency further supports the relevance and reliability of the COEWS in identifying patients at risk of severe disease.\n\nFinally, it is interesting to note that the proportion of vaccinated patients hospitalized in Europe was less than half of that in the Argentinean cohort. This difference may be due to a higher proportion of BIBP-CorV (Beijing Institute of Biological Products; Sinopharm) vaccinations in Argentina, which has been reported to have lower efficacy in reducing hospitalizations compared to the BNT162b2 (Pfizer) vaccine (Al-Momani et al., 2022). Our team\u2019s recent study also suggests slightly lower efficacy for BIBP-CorV (Beijing Institute of Biological Products; Sinopharm) and Gam-COVID-Vac (Sputnik) vaccines in reducing mortality among hospitalized patients compared to BNT162b2 (Pfizer) (Huespe et al., 2022). However, investigating the precise reasons behind the disparity in vaccinated hospitalized patients between Spain and Argentina falls beyond the scope of our study. Further research is needed to explore this intriguing finding.\n\nOur study has unique strengths. First, we have developed an easy and fast triage tool for COVID-19 hospitalized patients that can classify the risk of the patients only using widely available blood tests and without the need for clinical evaluations. Thus, the COEWS score can be added to the Electronic Health Record to automatically calculate the risk of patient deterioration and for recommending the appropriate level of care within a time window of 24\u201348 hr. Also, COEWS was created with a big and broad (from 2020 to 2022) patient database and externally validated in a even bigger cohort of patients from another continent, which increases the confidence in COEWS performance. Importantly, we evaluated the predictive performance of the score with the coefficients but also with the score transformation, as the transformation of the coefficients in a score makes it easier to use but can reduce the predictive performance. Finally, our study is the first one evaluating the predictive performance of an EWS score in vaccinated and unvaccinated patients.\n\nThis study also has limitations. First, the amount of missingness in some parameters can alter the performance of COEWS. To reduce this effect, we used the MCAR method, which enabled us to perform complete case analysis without selection bias. Also, we used populations from Spain and Argentina, which prompts questions about the validity of our model for non-European nor South American populations. Finally, the datasets of Hospital 12 de Octubre carry a misclassification of some vaccinated patients as some hospitalized patients could have been previously vaccinated in other centers before their hospitalization. However, it is important to note that the misclassification issue primarily applies to patients who were vaccinated toward the end of the cohort follow-up. During the initial vaccination campaigns, all patients in the Hospital 12 de Octubre dataset were indeed vaccinated at their own hospital. This hospital maintains a close cohort due to its coverage area in Madrid. Additionally, we want to emphasize that the misclassification problem did not occur in the Argentinian database, and the results obtained from the vaccinated cohort patients in both countries were extremely similar.\n\nThe extensive external validation, its high performance, its easiness to use and the positive benchmark in comparison with the widely used NEW2, positions COEWS as a new tool of reference for assisting clinical decisions and improving patient care in the upcoming pandemic waves.\n",
+      "created_at": "2025-12-04T03:08:05.526110Z"
+    },
+    {
+      "id": "be6d6351-67be-4300-9520-34d087de4538",
+      "submission_id": "c5361b85-834d-4753-8b32-46f3bdb3a322",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Evangelos J Giamarellos-Bourboulis, https://ror.org/04gnjpq42 National and Kapodistrian University of Athens, Medical School Greece\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.85618.sa0](https://doi.org/10.7554/eLife.85618.sa0)\n\nThis is an important contribution where the authors describe the development of a new Early Warning System for patients with COVID-19, namely COEWS. In their convincing approach, they integrate sex, SpO2, complete blood count and blood glucose. A score equal to or higher than 6 represents a high risk for the admitted COVID-19 patient in need of oxygen to be intubated or die within 48 hours. The score is tested in a Spanish cohort and validated through a smaller Spanish cohort and a larger Argentinian one. It shows good performance, better than that of NEWS2. Hence the paper is relevant for clinicians.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Evangelos J Giamarellos-Bourboulis, https://ror.org/04gnjpq42 National and Kapodistrian University of Athens, Medical School Greece\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.85618.sa1](https://doi.org/10.7554/eLife.85618.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Development and validation of an Early Warning System for COVID-19 patients in a multicontinental cohort: The COEWS (COVID-19 Early Warning Score) Score\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Jos van der Meer as the Senior Editor.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n\u2013 The most important comment is on the vaccination status of the participants. The vaccination percentages are low in both cohorts. Remarkably, the vaccination rates of the participant patients from Argentina are almost double compared to the rates of the participant patients from Spain. This fact (and perhaps a possible interpretation) should be mentioned in the Discussion section. Despite these percentages, even more important is the issue described in the following two sentences of the manuscript: \"Finally, the datasets of Hospital 12 de Octubre carry a misclassification of some vaccinated patients as some hospitalized patients could have been previously vaccinated in other centers before their hospitalization. The lack of a centralized data service makes it impossible to track these patients\". These sentences, subconsciously, give the reader the message \"We don't know the vaccination status of the patients of the Spanish cohort\" because the uncertainty they contain practically 'cancels' the non-vaccination status of these patients. Theoretically, according to these sentences, all non-vaccinated patients from Hospital 12 de Octubre might have been previously to a different vaccination center.\n\n\u2013 In the introduction, some already existing Early Warning Scores are mentioned (including NEWS2 and CODOP). Is it possible to provide a little more information about these scores and models? It could be quite useful to the reader, even in the form of a table.\n\n\u2013 In the paragraph \"Transformation of linear predictors to the Score\" the final sentence mentions \"The other scoring ranges with negative and positive points were determined using the coefficients of the final Lasso model by linear interpolation from the COEWS\". Can you be more specific, please?\n\n\u2013 In the following paragraph \"Discrimination and calibration\" a certain graph is described: \"We performed a graph with the average probability of the outcome predicted by the model (average of individual estimated probabilities) and the observed probability (proportion of nonattendance) within each decile stratum. Is this the graph of Figure 2b? If so, can this information be included in the manuscript text?\n\n\u2013 Upon the COEWS score as presented in Table 2: The scoring of SpO2 parameter: Why is the classification \">95%\" considered as \"abnormal\"? Is it because, like the NEWS2 score, patients with hypercapnic respiratory insufficiency have (as \"standard\") a lower everyday measurement of SpO2? The scoring of Neutrophils (%) parameter: Does it refer to the absolute count of neutrophils (per \u03bcL)? (according to the values given in Table 2). The scoring of Platelets parameter: Please be a little more specific about the scaling of the presented platelets values (absolute count, in thousands). Unless typed incorrectly, why is the value of 401000 so significant in order to solely receive one point? (While values of 400000 and 402000 receive zero and two points respectively). The levels of the final score (\"The global score\", as mentioned): How are these levels defined? Or, to make this question clearer, what is the percentage of an unlikely event (death or intubation) on each level?\n\n\u2013 Additionally, about the levels of the final score: Is the second level (score of 4-5) also ranked as \"Low risk\" or can it be classified as \"Intermediate\"? The color \"coding\" used (yellow instead of green) differentiates it from the first level (score of 0-3).\n\n\u2013 Why did the authors include only hospitalized patients in need of oxygen?\n\n\u2013 Nothing is mentioned about ICF or the waiver from patients whose data were used.\n\n\u2013 Patient data had a range of 2 years (2020-2022). In this time period much has been learned and much has changed-improved in the treatment of COVID-19 patients. Although a sensitivity analysis between unvaccinated and vaccinated patients is welcome, I would perform a sensitivity analysis or even from the beginning split the cohorts according to the waves of the pandemic.\n",
+      "created_at": "2025-12-04T03:08:05.526110Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T03:08:05.526110Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T03:08:05.526110Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "c940baca-0120-45fc-998d-70ed92579139",
+      "content_id": "ceb2e42c-2b76-4d83-bea1-ab20d986a349",
+      "claim_id": "C1",
+      "claim": "New SARS-CoV-2 variants have significant immune-evasiveness.",
+      "claim_type": "EXPLICIT",
+      "source": "The appearance of new SARS-CoV-2 variants with significant immune-evasiveness, the relaxation of measurements for reducing the number of infections, the waning of immune protection (particularly in high-risk population groups), and the low uptake of new vaccine boosters, forecast new waves of hospitalizations and admission in intensive care units (ICUs).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a factual assertion in the introduction without specific supporting data in the manuscript, representing established knowledge about SARS-CoV-2 variants.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:08:05.526110Z"
+    },
+    {
+      "id": "ef6bb39c-5a44-4d54-974f-38112b9760d9",
+      "content_id": "ceb2e42c-2b76-4d83-bea1-ab20d986a349",
+      "claim_id": "C2",
+      "claim": "Waning of immune protection occurs particularly in high-risk population groups.",
+      "claim_type": "EXPLICIT",
+      "source": "The appearance of new SARS-CoV-2 variants with significant immune-evasiveness, the relaxation of measurements for reducing the number of infections, the waning of immune protection (particularly in high-risk population groups), and the low uptake of new vaccine boosters, forecast new waves of hospitalizations and admission in intensive care units (ICUs).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as established knowledge about immune protection dynamics in COVID-19.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:08:05.526110Z"
+    },
+    {
+      "id": "38cd64c8-ed0e-410b-960c-8767ee2d4c16",
+      "content_id": "ceb2e42c-2b76-4d83-bea1-ab20d986a349",
+      "claim_id": "C3",
+      "claim": "New waves of hospitalizations and ICU admissions are forecasted due to immune-evasive variants, relaxation of infection control measures, waning immunity, and low vaccine booster uptake.",
+      "claim_type": "EXPLICIT",
+      "source": "The appearance of new SARS-CoV-2 variants with significant immune-evasiveness, the relaxation of measurements for reducing the number of infections, the waning of immune protection (particularly in high-risk population groups), and the low uptake of new vaccine boosters, forecast new waves of hospitalizations and admission in intensive care units (ICUs).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a predictive inference based on multiple factors related to COVID-19 epidemiology.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:08:05.526110Z"
+    },
+    {
+      "id": "28f2bcbe-2da9-4924-93fd-3050d8e7f899",
+      "content_id": "ceb2e42c-2b76-4d83-bea1-ab20d986a349",
+      "claim_id": "C4",
+      "claim": "There is an urgent need for easily implementable and clinically effective Early Warning Scores that can predict the risk of complications within the next 24-48 hours.",
+      "claim_type": "EXPLICIT",
+      "source": "In the midst of this rapidly evolving situation, there is an urgent need for easily implementable and clinically effective decision tools to assist healthcare personnel in their decision-making process.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This represents a clinical need inferred from the pandemic situation described.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:08:05.526110Z"
+    },
+    {
+      "id": "32ca7009-9356-4176-b617-861ddee7d275",
+      "content_id": "ceb2e42c-2b76-4d83-bea1-ab20d986a349",
+      "claim_id": "C5",
+      "claim": "Numerous predictive models for COVID-19 have been published.",
+      "claim_type": "EXPLICIT",
+      "source": "In response to this need, numerous predictive models for COVID-19 have been published (Shakeel et al., 2021), utilizing vital signs and laboratory such as the PRIORITY (Mart\u00ednez Lacalzada et al., 2021), or only laboratory results such as the COvid-19 Disease Outcome Predictor (CODOP) (Kl\u00e9n et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:08:05.526110Z"
+    },
+    {
+      "id": "be752765-3fd5-4a99-abb1-50d340b6ca57",
+      "content_id": "ceb2e42c-2b76-4d83-bea1-ab20d986a349",
+      "claim_id": "C6",
+      "claim": "PRIORITY is a predictive model that utilizes vital signs and laboratory parameters.",
+      "claim_type": "EXPLICIT",
+      "source": "In response to this need, numerous predictive models for COVID-19 have been published (Shakeel et al., 2021), utilizing vital signs and laboratory such as the PRIORITY (Mart\u00ednez Lacalzada et al., 2021), or only laboratory results such as the COvid-19 Disease Outcome Predictor (CODOP) (Kl\u00e9n et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to the PRIORITY model publication.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:08:05.526110Z"
+    },
+    {
+      "id": "231d5417-e0e9-4f3f-8eda-04cb34a2e691",
+      "content_id": "ceb2e42c-2b76-4d83-bea1-ab20d986a349",
+      "claim_id": "C7",
+      "claim": "CODOP (COvid-19 Disease Outcome Predictor) uses only laboratory results.",
+      "claim_type": "EXPLICIT",
+      "source": "In response to this need, numerous predictive models for COVID-19 have been published (Shakeel et al., 2021), utilizing vital signs and laboratory such as the PRIORITY (Mart\u00ednez Lacalzada et al., 2021), or only laboratory results such as the COvid-19 Disease Outcome Predictor (CODOP) (Kl\u00e9n et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to the CODOP publication.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:08:05.526110Z"
+    },
+    {
+      "id": "6cb1393e-eab4-498e-816a-c69a2269c733",
+      "content_id": "ceb2e42c-2b76-4d83-bea1-ab20d986a349",
+      "claim_id": "C8",
+      "claim": "Existing COVID-19 predictive models primarily focus on predicting complications during hospitalization periods spanning from 24 hours up to 7 days.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it is important to note that these models primarily focus on predicting complications that may arise during the hospitalization period, which can span from 24 hr up to 7 days.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the characteristics of existing models based on literature review.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:08:05.526110Z"
+    },
+    {
+      "id": "6e446e7a-4f8b-4b76-b540-ff8b2c8e4afe",
+      "content_id": "ceb2e42c-2b76-4d83-bea1-ab20d986a349",
+      "claim_id": "C9",
+      "claim": "Early Warning Scores predict the risk of complications within the next 24-48 hours.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, when a patient is hospitalized, the utilization of Early Warning Scores (EWSs) is preferable as they predict the risk of complications within the next 24\u201348 hr.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This represents established knowledge about the function of Early Warning Scores.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:08:05.526110Z"
+    },
+    {
+      "id": "07762b23-d94f-47ef-a15a-1099ddf6c8aa",
+      "content_id": "ceb2e42c-2b76-4d83-bea1-ab20d986a349",
+      "claim_id": "C10",
+      "claim": "EWS enables standardized and daily evaluation of patients by detecting changes in clinical parameters that precede clinical deterioration.",
+      "claim_type": "EXPLICIT",
+      "source": "EWS enables standardized and daily evaluation of patients by detecting changes in clinical parameters that precede clinical deterioration (Kostakis et al., 2021; Mart\u00edn Rodr\u00edguez et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published literature on EWS.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:08:05.526110Z"
+    },
+    {
+      "id": "4aef9767-7041-4484-ae8e-1f0cbe837358",
+      "content_id": "ceb2e42c-2b76-4d83-bea1-ab20d986a349",
+      "claim_id": "C11",
+      "claim": "EWS has been used in the evaluation of COVID-19 patients.",
+      "claim_type": "EXPLICIT",
+      "source": "Although EWS has been used in the evaluation of COVID-19 patients (Aygun and Eraybar, 2022; Fang et al., 2021; Huespe et al., 2021; Liang et al., 2020; Sarkar et al., 2022), there are clinical limitations to its use.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to studies using EWS in COVID-19.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:08:05.526110Z"
+    },
+    {
+      "id": "f3beb44b-46b6-4d85-857b-2de281ea3277",
+      "content_id": "ceb2e42c-2b76-4d83-bea1-ab20d986a349",
+      "claim_id": "C12",
+      "claim": "There are clinical limitations to the use of EWS in COVID-19 patients.",
+      "claim_type": "EXPLICIT",
+      "source": "Although EWS has been used in the evaluation of COVID-19 patients (Aygun and Eraybar, 2022; Fang et al., 2021; Huespe et al., 2021; Liang et al., 2020; Sarkar et al., 2022), there are clinical limitations to its use.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the authors' assessment of existing EWS applications.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:08:05.526110Z"
+    },
+    {
+      "id": "a53e848a-72ce-4863-a6f5-c8d65f8cf6f9",
+      "content_id": "ceb2e42c-2b76-4d83-bea1-ab20d986a349",
+      "claim_id": "C13",
+      "claim": "The COVID-19 severity index employs vital signs, laboratory parameters, and chest X-ray findings to predict the risk of ICU admission within the next 24 hours.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, the COVID-19 severity index (Huespe et al., 2021) employs vital signs, laboratory parameters, and chest X-ray findings to predict the risk of ICU admission within the next 24 hr.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to the COVID-19 severity index publication.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:08:05.526110Z"
+    },
+    {
+      "id": "2a888b72-5e84-48e9-9f6f-85ef8e49c604",
+      "content_id": "ceb2e42c-2b76-4d83-bea1-ab20d986a349",
+      "claim_id": "C14",
+      "claim": "Implementing scoring systems like the COVID-19 severity index requires the expertise of experienced healthcare professionals.",
+      "claim_type": "EXPLICIT",
+      "source": "However, implementing these scoring systems requires the expertise of experienced healthcare professionals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the practical requirements for implementing certain scoring systems.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:08:05.526110Z"
+    },
+    {
+      "id": "588a3b88-5354-4560-b696-96c922e313ec",
+      "content_id": "ceb2e42c-2b76-4d83-bea1-ab20d986a349",
+      "claim_id": "C15",
+      "claim": "NEWS2 evaluates vital signs conducted by healthcare professionals.",
+      "claim_type": "EXPLICIT",
+      "source": "The NEWS2 (Royal College of Physicians, 2017) also evaluates vital signs conducted by healthcare professionals, which may pose challenges during periods of overwhelming demand, and this model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to the NEWS2 publication and represents knowledge about the NEWS2 system.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:08:05.526110Z"
+    },
+    {
+      "id": "d64b3635-da81-456c-a923-ea8d2698f23d",
+      "content_id": "ceb2e42c-2b76-4d83-bea1-ab20d986a349",
+      "claim_id": "C16",
+      "claim": "NEWS2 may pose challenges during periods of overwhelming demand.",
+      "claim_type": "EXPLICIT",
+      "source": "The NEWS2 (Royal College of Physicians, 2017) also evaluates vital signs conducted by healthcare professionals, which may pose challenges during periods of overwhelming demand, and this model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the practical limitations of NEWS2 in high-demand situations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:08:05.526110Z"
+    },
+    {
+      "id": "7e545bac-3ae7-49ee-81a0-8321686f7606",
+      "content_id": "ceb2e42c-2b76-4d83-bea1-ab20d986a349",
+      "claim_id": "C17",
+      "claim": "No models have been tested on geographically distinct populations or population groups with varying levels of immune protection.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, no models have been tested on geographically distinct populations or population groups with varying levels of immune protection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This represents a gap in the literature identified by the authors based on their review.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:08:05.526110Z"
+    },
+    {
+      "id": "2c7ce57f-87e2-49a6-bd82-131432ef9348",
+      "content_id": "ceb2e42c-2b76-4d83-bea1-ab20d986a349",
+      "claim_id": "C18",
+      "claim": "COEWS is an EWS automatically calculated solely by laboratory parameters of widespread availability and affordability.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, we developed and validated, in a multicontinental cohort, COVID-19 Early Warning Score (COEWS): an EWS automatically calculated solely by laboratory parameters of widespread availability and affordability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the characteristics of the COEWS model developed in this study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:08:05.526110Z"
+    },
+    {
+      "id": "0a5859a1-dfb3-4fa0-b745-8b65c8ccc23c",
+      "content_id": "ceb2e42c-2b76-4d83-bea1-ab20d986a349",
+      "claim_id": "C19",
+      "claim": "COEWS was developed and validated in a multicontinental cohort.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, we developed and validated, in a multicontinental cohort, COVID-19 Early Warning Score (COEWS): an EWS automatically calculated solely by laboratory parameters of widespread availability and affordability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the study design and validation approach used for COEWS.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:08:05.526110Z"
+    },
+    {
+      "id": "96b7b1d7-d8ba-44ba-892a-c109962123e6",
+      "content_id": "ceb2e42c-2b76-4d83-bea1-ab20d986a349",
+      "claim_id": "C20",
+      "claim": "Data for the predictive model came from Hospital 12 de Octubre (Madrid, Spain) and the Argentinian COVID-19 Network.",
+      "claim_type": "EXPLICIT",
+      "source": "For the development and validation of this predictive model, we used data from the Hospital 12 de Octubre (Madrid, Spain) and the Argentinian COVID-19 Network (Boietti et al., 2021; Casas-Rojo et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data sources used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:08:05.526110Z"
+    },
+    {
+      "id": "b5578fb7-1177-4376-84be-fef186e5a477",
+      "content_id": "ceb2e42c-2b76-4d83-bea1-ab20d986a349",
+      "claim_id": "C21",
+      "claim": "The registries comprise patients hospitalized between January 2020 and March 2022.",
+      "claim_type": "EXPLICIT",
+      "source": "These registries comprise patients hospitalized between January 2020 and March 2022, with demographic, clinical, and analytical data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the temporal scope of the patient data used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:08:05.526110Z"
+    },
+    {
+      "id": "17689843-3453-4639-bbe0-dab6bdcf7e1c",
+      "content_id": "ceb2e42c-2b76-4d83-bea1-ab20d986a349",
+      "claim_id": "C22",
+      "claim": "The use of patient data received approval from the Clinical Research Ethics Committee of Hospital 12 de Octubre [reference 20/117].",
+      "claim_type": "EXPLICIT",
+      "source": "The use of patient data in this study has received approval from the Clinical Research Ethics Committee of Hospital 12 de Octubre [reference 20/117].",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about ethical approval for the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:08:05.526110Z"
+    },
+    {
+      "id": "9d811773-0ede-4927-9834-a5a4f8309227",
+      "content_id": "ceb2e42c-2b76-4d83-bea1-ab20d986a349",
+      "claim_id": "C23",
+      "claim": "The Institutional Review Board of the Hospital Italiano de Buenos Aires approved the study for each participating site in the Argentinian COVID-19 Network (Approval Number: #5602).",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, the Institutional Review Board of the Hospital Italiano de Buenos Aires approved the study for each participating site in the Argentinian COVID-19 Network (Approval Number: #5602).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about ethical approval for the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:08:05.526110Z"
+    },
+    {
+      "id": "b38a1a01-fa26-476a-9da9-7d0af178e0f8",
+      "content_id": "ceb2e42c-2b76-4d83-bea1-ab20d986a349",
+      "claim_id": "C24",
+      "claim": "The study is a retrospective observational study that does not involve any procedures or activities beyond the standard consultation and care provided to patients.",
+      "claim_type": "EXPLICIT",
+      "source": "As the present study is a retrospective observational study, it does not involve any procedures or activities beyond the standard consultation and care provided to patients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the study design and its implications for patient risk.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:08:05.526110Z"
+    },
+    {
+      "id": "0cf50c30-c419-4e0a-81a3-dfc6a79adcad",
+      "content_id": "ceb2e42c-2b76-4d83-bea1-ab20d986a349",
+      "claim_id": "C25",
+      "claim": "The ethics committees granted an exemption from obtaining signed informed consent in accordance with Guideline 10: Modifications and Dispensations of Informed Consent outlined in the CIOMS 2019 guidelines.",
+      "claim_type": "EXPLICIT",
+      "source": "Considering that this study involves minimal risk due to the handling of participant data, the corresponding ethics committees have granted an exemption from obtaining signed informed consent. This exemption is in accordance with Guideline 10: Modifications and Dispensations of Informed Consent outlined in the CIOMS 2019 guidelines.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about the ethical approval process and its basis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:08:05.526110Z"
+    },
+    {
+      "id": "c42b1b96-0e84-4f1b-9cb0-ba0e24d35ca7",
+      "content_id": "ceb2e42c-2b76-4d83-bea1-ab20d986a349",
+      "claim_id": "C26",
+      "claim": "Patients hospitalized with a confirmed diagnosis of COVID-19 who received oxygen therapy were included.",
+      "claim_type": "EXPLICIT",
+      "source": "Patients hospitalized with a confirmed diagnosis of COVID-19 who received oxygen therapy were included.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the inclusion criteria for the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:08:05.526110Z"
+    },
+    {
+      "id": "4bb4d350-feff-4061-8098-e5a28cf5e64f",
+      "content_id": "ceb2e42c-2b76-4d83-bea1-ab20d986a349",
+      "claim_id": "C27",
+      "claim": "COVID infection was defined as a positive result of real-time reverse transcription-polymerase chain reaction for SARS-CoV-2 in nasopharyngeal swab specimens or sputum samples.",
+      "claim_type": "EXPLICIT",
+      "source": "COVID infection was defined as a positive result of real-time reverse transcription-polymerase chain reaction for SARS-CoV-2 in nasopharyngeal swab specimens or sputum samples, also in the second and third waves, some patients were diagnosticated with the Panbio TM COVID-19 rapid test (Abbott) in the Spanish hospitals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the diagnostic criteria used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:08:05.526110Z"
+    },
+    {
+      "id": "db1f0111-5892-4084-a22c-e8818f67b18e",
+      "content_id": "ceb2e42c-2b76-4d83-bea1-ab20d986a349",
+      "claim_id": "C28",
+      "claim": "In the second and third waves, some patients were diagnosed with the Panbio TM COVID-19 rapid test (Abbott) in the Spanish hospitals.",
+      "claim_type": "EXPLICIT",
+      "source": "COVID infection was defined as a positive result of real-time reverse transcription-polymerase chain reaction for SARS-CoV-2 in nasopharyngeal swab specimens or sputum samples, also in the second and third waves, some patients were diagnosticated with the Panbio TM COVID-19 rapid test (Abbott) in the Spanish hospitals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes an additional diagnostic method used in specific waves and locations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:08:05.526110Z"
+    },
+    {
+      "id": "1237d49a-9777-41b4-a97d-be85e468a255",
+      "content_id": "ceb2e42c-2b76-4d83-bea1-ab20d986a349",
+      "claim_id": "C29",
+      "claim": "Only the first hospitalization for COVID-19 for each patient during the study period was considered.",
+      "claim_type": "EXPLICIT",
+      "source": "We considered only the first hospitalization for COVID-19 for each patient during the study period.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a methodological decision in patient selection.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:08:05.526110Z"
+    },
+    {
+      "id": "0c2dd7ea-865f-4f5d-87be-aaffc7087976",
+      "content_id": "ceb2e42c-2b76-4d83-bea1-ab20d986a349",
+      "claim_id": "C30",
+      "claim": "Patients were followed from hospital admission until death or hospital discharge.",
+      "claim_type": "EXPLICIT",
+      "source": "Patients were followed from hospital admission until death or hospital discharge.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the follow-up period for patients in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:08:05.526110Z"
+    },
+    {
+      "id": "96333061-4859-4eaf-96fd-8d490778b101",
+      "content_id": "ceb2e42c-2b76-4d83-bea1-ab20d986a349",
+      "claim_id": "C31",
+      "claim": "The outcome of the predictive model was death or mechanical ventilation (MV) in the next 48 hours.",
+      "claim_type": "EXPLICIT",
+      "source": "The aim of this study was the development of an EWS. Therefore, the outcome of the predictive model was death or mechanical ventilation (MV) in the next 48 hr.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the primary outcome measure for the COEWS model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:08:05.526110Z"
+    },
+    {
+      "id": "76eb2b7c-52e5-4599-8bcc-fb4add96a083",
+      "content_id": "ceb2e42c-2b76-4d83-bea1-ab20d986a349",
+      "claim_id": "C32",
+      "claim": "The potential predictors evaluated included demographic data, admission vital signs (heart rate, temperature, systolic and diastolic blood pressure, and oxygen saturation), blood test values (hemoglobin in g/dl, percentage lymphocytes, leukocytes in 10\u00b3/mm\u00b3, platelets in 10\u00b3/mm\u00b3, and glycemia mg/dl), vaccination status, and clinical variables.",
+      "claim_type": "EXPLICIT",
+      "source": "The potential predictors evaluated were: demographic data, admission vital signs (heart rate, temperature, systolic and diastolic blood pressure, and oxygen saturation), and blood test values (hemoglobin in g/dl, percentage lymphocytes, leukocytes in 10\u00b3/mm\u00b3, platelets in 10\u00b3/mm\u00b3, and glycemia mg/dl), vaccination status, and clinical variables that were present in all training and test cohorts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the variables considered for inclusion in the predictive model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:08:05.526110Z"
+    },
+    {
+      "id": "e3660fa9-3e04-4135-a438-94aa523e788d",
+      "content_id": "ceb2e42c-2b76-4d83-bea1-ab20d986a349",
+      "claim_id": "C33",
+      "claim": "To build a predictive model with approximately 10 estimated variables, 10-20 outcome events per variable are needed.",
+      "claim_type": "EXPLICIT",
+      "source": "To build a predictive model with approximately 10 estimated variables, we needed 10\u201320 outcome events per variable (Katz, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to established statistical methodology.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:08:05.526110Z"
+    },
+    {
+      "id": "0a711a86-a29e-4abf-87ca-276990bef70b",
+      "content_id": "ceb2e42c-2b76-4d83-bea1-ab20d986a349",
+      "claim_id": "C34",
+      "claim": "At least 100-200 outcome events per database were needed for the model.",
+      "claim_type": "EXPLICIT",
+      "source": "We expected to include between 5 and 10 variables in the model, therefore we need at least 100\u2013200 outcome events per database.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated based on the expected number of variables and the events-per-variable requirement.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:08:05.526110Z"
+    },
+    {
+      "id": "fe044089-7513-4609-ba03-a112fc1767fc",
+      "content_id": "ceb2e42c-2b76-4d83-bea1-ab20d986a349",
+      "claim_id": "C35",
+      "claim": "The number of outcomes (death and MV within 48 hr after hospital admission) in each database was higher than 200.",
+      "claim_type": "EXPLICIT",
+      "source": "Due to the fact that the number of outcomes (death and MV within 48 hr after hospital admission) in each database was higher than 200, we had enough sample size in the training and testing databases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about the data that justifies the sample size adequacy.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:08:05.526110Z"
+    },
+    {
+      "id": "1d1f63c9-cc93-4c98-856f-513927cedec4",
+      "content_id": "ceb2e42c-2b76-4d83-bea1-ab20d986a349",
+      "claim_id": "C36",
+      "claim": "The Spanish database was divided randomly into training (75%) and test (25%) datasets.",
+      "claim_type": "EXPLICIT",
+      "source": "The Spanish database was divided randomly into training (75%) and test (25%) datasets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data splitting methodology used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:08:05.526110Z"
+    },
+    {
+      "id": "284d4354-6be6-42f2-8ced-dbd0579123c4",
+      "content_id": "ceb2e42c-2b76-4d83-bea1-ab20d986a349",
+      "claim_id": "C37",
+      "claim": "COEWS was built using stable iterative variable selection (SIVS) and linear regression with the least absolute shrinkage and selection operator (Lasso) regularization.",
+      "claim_type": "EXPLICIT",
+      "source": "COEWS was built using stable iterative variable selection (SIVS) (Mahmoudian et al., 2021) and linear regression with the least absolute shrinkage and selection operator (Lasso) regularization (Friedman et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the statistical methods used to build COEWS, supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:08:05.526110Z"
+    },
+    {
+      "id": "1685fd9f-91a9-4b53-9423-edba7e662d7c",
+      "content_id": "ceb2e42c-2b76-4d83-bea1-ab20d986a349",
+      "claim_id": "C38",
+      "claim": "In model building, only the training cohort was used and models were built using 10-fold cross-validation.",
+      "claim_type": "EXPLICIT",
+      "source": "In model building, only the training cohort was used and models were built using 10-fold cross-validation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the model development methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:08:05.526110Z"
+    },
+    {
+      "id": "316086bd-44e7-4f80-a7a8-53d88e546c19",
+      "content_id": "ceb2e42c-2b76-4d83-bea1-ab20d986a349",
+      "claim_id": "C39",
+      "claim": "In the feature selection stage of SIVS, 100 models were built and for each model selected variables were recorded.",
+      "claim_type": "EXPLICIT",
+      "source": "In the feature selection stage of SIVS, 100 models were built and for each model selected variables were recorded.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the feature selection process used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:08:05.526110Z"
+    },
+    {
+      "id": "8ea14521-02fe-498b-9c71-752c0bc78b53",
+      "content_id": "ceb2e42c-2b76-4d83-bea1-ab20d986a349",
+      "claim_id": "C40",
+      "claim": "A weighting function in SIVS (called variable importance scoring) with a threshold of 0.15 was used to reduce the number of features.",
+      "claim_type": "EXPLICIT",
+      "source": "To reduce the number of features to as few as possible (therefore, increasing the easiness of use of COEWS), we used the weighting function in SIVS (called variable importance scoring) with a threshold of 0.15.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a specific methodological choice in feature selection.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:08:05.526110Z"
+    },
+    {
+      "id": "b1ccf93b-91de-477c-a646-a3066b89b698",
+      "content_id": "ceb2e42c-2b76-4d83-bea1-ab20d986a349",
+      "claim_id": "C41",
+      "claim": "The SIVS method has been shown to be very efficient, especially when the ratio of positive and negative outcomes is imbalanced.",
+      "claim_type": "EXPLICIT",
+      "source": "This method has been shown to be very efficient, especially when the ratio of positive and negative outcomes is imbalanced (Kl\u00e9n et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work on the SIVS method.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:08:05.526110Z"
+    },
+    {
+      "id": "6823d750-9f74-4d0c-853f-29dbf0828ef0",
+      "content_id": "ceb2e42c-2b76-4d83-bea1-ab20d986a349",
+      "claim_id": "C42",
+      "claim": "Lasso models were built in R (version 3.6.0) package glmnet (version 4.1\u20131).",
+      "claim_type": "EXPLICIT",
+      "source": "Lasso models were built in R Development Core Team, 2010 (version 3.6.0) package glmnet (Friedman et al., 2010) (version 4.1\u20131).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the software and packages used for model building.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:08:05.526110Z"
+    },
+    {
+      "id": "c2711707-637e-4b25-a1fb-5ef407ef566a",
+      "content_id": "ceb2e42c-2b76-4d83-bea1-ab20d986a349",
+      "claim_id": "C43",
+      "claim": "All predictions were blinded to the final clinical outcome.",
+      "claim_type": "EXPLICIT",
+      "source": "All predictions were blinded to the final clinical outcome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a methodological safeguard to prevent bias.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:08:05.526110Z"
+    },
+    {
+      "id": "dced6cfe-8df4-47f7-ae07-3c50a3ad0301",
+      "content_id": "ceb2e42c-2b76-4d83-bea1-ab20d986a349",
+      "claim_id": "C44",
+      "claim": "The Argentinian database was used for external validation.",
+      "claim_type": "EXPLICIT",
+      "source": "The Argentinian database was used for external validation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the validation strategy for the model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:08:05.526110Z"
+    },
+    {
+      "id": "34dd3e5f-b884-403a-9f38-e0582ec02b19",
+      "content_id": "ceb2e42c-2b76-4d83-bea1-ab20d986a349",
+      "claim_id": "C45",
+      "claim": "The final COEWS score was created based on the final linear Lasso model and clinical insights.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on the final linear Lasso model and clinical insights, the final COEWS score was created.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes how the practical scoring system was derived from the statistical model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:08:05.526110Z"
+    },
+    {
+      "id": "1721d102-2865-4e10-8c9e-de8436b060b2",
+      "content_id": "ceb2e42c-2b76-4d83-bea1-ab20d986a349",
+      "claim_id": "C46",
+      "claim": "Clinical insights were used to determine the normal range, which gives zero points in the COEWS score.",
+      "claim_type": "EXPLICIT",
+      "source": "The clinical insights was used to determine the normal range, which gives zero points in the COEWS score.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes how clinical knowledge informed the scoring system design.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:08:05.526110Z"
+    },
+    {
+      "id": "ee35af32-0fc0-4367-9ea3-485c92804932",
+      "content_id": "ceb2e42c-2b76-4d83-bea1-ab20d986a349",
+      "claim_id": "C47",
+      "claim": "The scoring ranges with negative and positive points were determined using the coefficients of the final Lasso model by linear interpolation from the COEWS.",
+      "claim_type": "EXPLICIT",
+      "source": "The other scoring ranges with negative and positive points were determined using the coefficients of the final Lasso model by linear interpolation from the COEWS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the mathematical approach to creating the scoring ranges.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:08:05.526110Z"
+    },
+    {
+      "id": "5f61c8c6-c85b-40e6-8d12-9a6cbba696c1",
+      "content_id": "ceb2e42c-2b76-4d83-bea1-ab20d986a349",
+      "claim_id": "C48",
+      "claim": "The ranges per feature were defined by the magnitude of the corresponding coefficient, and larger absolute values of coefficients yielded shorter ranges.",
+      "claim_type": "EXPLICIT",
+      "source": "Especially, the ranges per feature were defined by the magnitude of the corresponding coefficient, and larger absolute values of coefficients yielded shorter ranges.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the relationship between model coefficients and scoring ranges.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:08:05.526110Z"
+    },
+    {
+      "id": "c421a0f6-8a9d-4313-a6fc-ed93f0b3cdf8",
+      "content_id": "ceb2e42c-2b76-4d83-bea1-ab20d986a349",
+      "claim_id": "C49",
+      "claim": "The performance of the developed models was evaluated using the area under the receiver operating characteristic curve (AUROC).",
+      "claim_type": "EXPLICIT",
+      "source": "The performance of the developed models was evaluated using the area under the receiver operating characteristic curve (AUROC), and the model's calibration was evaluated using the root mean square error.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the performance metrics used to evaluate the model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:08:05.526110Z"
+    },
+    {
+      "id": "5773b5a1-6414-4cf4-8408-cab35052f18c",
+      "content_id": "ceb2e42c-2b76-4d83-bea1-ab20d986a349",
+      "claim_id": "C50",
+      "claim": "The model's calibration was evaluated using the root mean square error.",
+      "claim_type": "EXPLICIT",
+      "source": "The performance of the developed models was evaluated using the area under the receiver operating characteristic curve (AUROC), and the model's calibration was evaluated using the root mean square error.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the calibration metric used to evaluate the model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:08:05.526110Z"
+    },
+    {
+      "id": "171a624d-744f-4924-97ab-4b2c4887a66a",
+      "content_id": "ceb2e42c-2b76-4d83-bea1-ab20d986a349",
+      "claim_id": "C51",
+      "claim": "Calibration was evaluated by comparing the prediction of the model with the observed proportion of the combined outcome, stratifying every patient according to the probability predicted by the model in deciles.",
+      "claim_type": "EXPLICIT",
+      "source": "We also evaluate the calibration by comparing the prediction of the model with the observed proportion of the combined outcome, stratifying every patient according to the probability predicted by the model in deciles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes an additional calibration assessment method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:08:05.526110Z"
+    },
+    {
+      "id": "a75b6934-d0ee-4555-8258-43b5035fb1ea",
+      "content_id": "ceb2e42c-2b76-4d83-bea1-ab20d986a349",
+      "claim_id": "C52",
+      "claim": "Additional evaluations were conducted to assess discrimination in each database using the score derived from the coefficients.",
+      "claim_type": "EXPLICIT",
+      "source": "In order to account for the transformation of model coefficients into a score, we conducted additional evaluations to assess discrimination in each database using the score derived from the coefficients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes additional validation analyses performed.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:08:05.526110Z"
+    },
+    {
+      "id": "248656b6-3152-4a2b-bad9-4ec6ce9aa1f9",
+      "content_id": "ceb2e42c-2b76-4d83-bea1-ab20d986a349",
+      "claim_id": "C53",
+      "claim": "Separate analyses were performed for vaccinated and unvaccinated patients to investigate potential differences in predictive performance.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we performed separate analyses for vaccinated and unvaccinated patients, as well as patients hospitalized before and after 2021, to investigate potential differences in predictive performance following changes in therapeutics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes subgroup analyses performed to assess model performance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:08:05.526110Z"
+    },
+    {
+      "id": "d221baea-2c04-46a3-98bf-ee9d1116d66d",
+      "content_id": "ceb2e42c-2b76-4d83-bea1-ab20d986a349",
+      "claim_id": "C54",
+      "claim": "Separate analyses were performed for patients hospitalized before and after 2021 to investigate potential differences in predictive performance following changes in therapeutics.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we performed separate analyses for vaccinated and unvaccinated patients, as well as patients hospitalized before and after 2021, to investigate potential differences in predictive performance following changes in therapeutics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes temporal subgroup analyses performed.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:08:05.526110Z"
+    },
+    {
+      "id": "4144c288-e747-421d-9f52-778f7255c0fd",
+      "content_id": "ceb2e42c-2b76-4d83-bea1-ab20d986a349",
+      "claim_id": "C55",
+      "claim": "July 2021 was selected as the cutoff point based on the publication and implementation of the Recovery Trial indications.",
+      "claim_type": "EXPLICIT",
+      "source": "To determine the cutoff point for the analysis, we selected July 2021. This decision was based on the publication and implementation of the Recovery Trial indications, which introduced significant therapeutic changes during the pandemic (Horby et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the rationale for the temporal cutoff, supported by citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:08:05.526110Z"
+    },
+    {
+      "id": "0d149d82-b138-41a4-a149-54c23c8ee9bf",
+      "content_id": "ceb2e42c-2b76-4d83-bea1-ab20d986a349",
+      "claim_id": "C56",
+      "claim": "The Recovery Trial indications introduced significant therapeutic changes during the pandemic.",
+      "claim_type": "EXPLICIT",
+      "source": "To determine the cutoff point for the analysis, we selected July 2021. This decision was based on the publication and implementation of the Recovery Trial indications, which introduced significant therapeutic changes during the pandemic (Horby et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to the Recovery Trial publication.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:08:05.526110Z"
+    },
+    {
+      "id": "8e8e23ea-f231-41c0-b268-5acb427b33ee",
+      "content_id": "ceb2e42c-2b76-4d83-bea1-ab20d986a349",
+      "claim_id": "C57",
+      "claim": "The discrimination of the NEWS2 score was calculated to provide a comparative assessment with the COEWS score.",
+      "claim_type": "EXPLICIT",
+      "source": "Lastly, we calculated the discrimination of the NEWS2 score to provide a comparative assessment with the COEWS score.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a benchmarking analysis performed.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:08:05.526110Z"
+    },
+    {
+      "id": "920443a7-cf2f-4a1f-928b-d70f40f43fef",
+      "content_id": "ceb2e42c-2b76-4d83-bea1-ab20d986a349",
+      "claim_id": "C58",
+      "claim": "Between January 2020 and February 2022, 15,903 hospital admissions of COVID-19 patients were included from the Spanish database (1009 patients) and the Argentinian database (5894 patients).",
+      "claim_type": "EXPLICIT",
+      "source": "Between January 2020 and February 2022, we included 15,903 hospital admissions of COVID-19 patients from the Spanish database (1009 patients) and the Argentinian database (5894 patients).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about the study sample size and composition.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:08:05.526110Z"
+    },
+    {
+      "id": "c6a3a5da-c67f-4430-9c5a-ea37f981b907",
+      "content_id": "ceb2e42c-2b76-4d83-bea1-ab20d986a349",
+      "claim_id": "C59",
+      "claim": "The training database included 7507 patients from the Hospital 12 de Octubre (Madrid, Spain).",
+      "claim_type": "EXPLICIT",
+      "source": "The training database included 7507 patients and in the internal testing 2502 patients from the Hospital 12 de Octubre (Madrid, Spain).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about the training dataset size.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:08:05.526110Z"
+    },
+    {
+      "id": "6f88e198-8794-435b-ba35-571c458129d9",
+      "content_id": "ceb2e42c-2b76-4d83-bea1-ab20d986a349",
+      "claim_id": "C60",
+      "claim": "The internal testing included 2502 patients from the Hospital 12 de Octubre (Madrid, Spain).",
+      "claim_type": "EXPLICIT",
+      "source": "The training database included 7507 patients and in the internal testing 2502 patients from the Hospital 12 de Octubre (Madrid, Spain).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about the internal test dataset size.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:08:05.526110Z"
+    },
+    {
+      "id": "62fdcbc6-c28f-4694-8b3c-10ac73a19fdf",
+      "content_id": "ceb2e42c-2b76-4d83-bea1-ab20d986a349",
+      "claim_id": "C61",
+      "claim": "471 (4.7%) patients in the Spanish cohort were vaccinated with at least one COVID-19 vaccine dose.",
+      "claim_type": "EXPLICIT",
+      "source": "Of these, 471 (4.7%) were vaccinated with at least one COVID-19 vaccine dose (267 [2.7%] patients had a single dose, and 203 [2%] were fully vaccinated).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about vaccination status in the Spanish cohort.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:08:05.526110Z"
+    },
+    {
+      "id": "5e81c198-83c6-4560-835b-cddcd9ff26fa",
+      "content_id": "ceb2e42c-2b76-4d83-bea1-ab20d986a349",
+      "claim_id": "C62",
+      "claim": "267 (2.7%) patients in the Spanish cohort had a single vaccine dose.",
+      "claim_type": "EXPLICIT",
+      "source": "Of these, 471 (4.7%) were vaccinated with at least one COVID-19 vaccine dose (267 [2.7%] patients had a single dose, and 203 [2%] were fully vaccinated).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about vaccination status in the Spanish cohort.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:08:05.526110Z"
+    },
+    {
+      "id": "31469bf3-7908-4b77-8b53-3b824ada755f",
+      "content_id": "ceb2e42c-2b76-4d83-bea1-ab20d986a349",
+      "claim_id": "C63",
+      "claim": "203 (2%) patients in the Spanish cohort were fully vaccinated.",
+      "claim_type": "EXPLICIT",
+      "source": "Of these, 471 (4.7%) were vaccinated with at least one COVID-19 vaccine dose (267 [2.7%] patients had a single dose, and 203 [2%] were fully vaccinated).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about vaccination status in the Spanish cohort.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:08:05.526110Z"
+    },
+    {
+      "id": "b9caa50f-0733-4a37-b6f3-4e116b4a9d54",
+      "content_id": "ceb2e42c-2b76-4d83-bea1-ab20d986a349",
+      "claim_id": "C64",
+      "claim": "The external testing included 5894 patients from the Argentinian COVID-19 Network study.",
+      "claim_type": "EXPLICIT",
+      "source": "The external testing included 5894 patients from the Argentinian COVID-19 Network study, of these 669 (11.4%) were vaccinated with at least one COVID-19 vaccine dose (427 [7.2%] patients vaccinated with one COVID-19 vaccine dose and 242 [4.1%] with two).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about the external validation dataset size.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:08:05.526110Z"
+    },
+    {
+      "id": "fbe5fc73-80b4-4630-9911-cfe91bc72ad0",
+      "content_id": "ceb2e42c-2b76-4d83-bea1-ab20d986a349",
+      "claim_id": "C65",
+      "claim": "669 (11.4%) patients in the Argentinian cohort were vaccinated with at least one COVID-19 vaccine dose.",
+      "claim_type": "EXPLICIT",
+      "source": "The external testing included 5894 patients from the Argentinian COVID-19 Network study, of these 669 (11.4%) were vaccinated with at least one COVID-19 vaccine dose (427 [7.2%] patients vaccinated with one COVID-19 vaccine dose and 242 [4.1%] with two).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about vaccination status in the Argentinian cohort.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:08:05.526110Z"
+    },
+    {
+      "id": "2ce4b955-59ea-4595-b220-16a65c106427",
+      "content_id": "ceb2e42c-2b76-4d83-bea1-ab20d986a349",
+      "claim_id": "C66",
+      "claim": "427 (7.2%) patients in the Argentinian cohort were vaccinated with one COVID-19 vaccine dose.",
+      "claim_type": "EXPLICIT",
+      "source": "The external testing included 5894 patients from the Argentinian COVID-19 Network study, of these 669 (11.4%) were vaccinated with at least one COVID-19 vaccine dose (427 [7.2%] patients vaccinated with one COVID-19 vaccine dose and 242 [4.1%] with two).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about vaccination status in the Argentinian cohort.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:08:05.526110Z"
+    },
+    {
+      "id": "41203b29-4787-4b5d-965d-1b576aedcb88",
+      "content_id": "ceb2e42c-2b76-4d83-bea1-ab20d986a349",
+      "claim_id": "C67",
+      "claim": "242 (4.1%) patients in the Argentinian cohort were vaccinated with two doses.",
+      "claim_type": "EXPLICIT",
+      "source": "The external testing included 5894 patients from the Argentinian COVID-19 Network study, of these 669 (11.4%) were vaccinated with at least one COVID-19 vaccine dose (427 [7.2%] patients vaccinated with one COVID-19 vaccine dose and 242 [4.1%] with two).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about vaccination status in the Argentinian cohort.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:08:05.526110Z"
+    },
+    {
+      "id": "a6755330-34e0-413e-84e9-c411461f998b",
+      "content_id": "ceb2e42c-2b76-4d83-bea1-ab20d986a349",
+      "claim_id": "C68",
+      "claim": "The observed number of combined events (death and MV within 48 hr after admission) was 1477 (19.7%) in the training database.",
+      "claim_type": "EXPLICIT",
+      "source": "The observed number of combined events (death and MV within 48 hr after admission) was 1477 (19.7%) in the training database, 452 (18.1%) in the test database, and 906 (15.4%) in the external validation database.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about outcome rates in the training dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:08:05.526110Z"
+    },
+    {
+      "id": "30caaaaf-d54b-4d06-bf0b-562549b51c95",
+      "content_id": "ceb2e42c-2b76-4d83-bea1-ab20d986a349",
+      "claim_id": "C69",
+      "claim": "The observed number of combined events was 452 (18.1%) in the test database.",
+      "claim_type": "EXPLICIT",
+      "source": "The observed number of combined events (death and MV within 48 hr after admission) was 1477 (19.7%) in the training database, 452 (18.1%) in the test database, and 906 (15.4%) in the external validation database.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about outcome rates in the test dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:08:05.526110Z"
+    },
+    {
+      "id": "81f061b6-f3bb-4d32-adea-6653070e6bfc",
+      "content_id": "ceb2e42c-2b76-4d83-bea1-ab20d986a349",
+      "claim_id": "C70",
+      "claim": "The observed number of combined events was 906 (15.4%) in the external validation database.",
+      "claim_type": "EXPLICIT",
+      "source": "The observed number of combined events (death and MV within 48 hr after admission) was 1477 (19.7%) in the training database, 452 (18.1%) in the test database, and 906 (15.4%) in the external validation database.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about outcome rates in the external validation dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:08:05.526110Z"
+    },
+    {
+      "id": "0768342d-5975-4141-9bf3-69a2c24fde4e",
+      "content_id": "ceb2e42c-2b76-4d83-bea1-ab20d986a349",
+      "claim_id": "C71",
+      "claim": "The variables of the COEWS predictive model were selected based on the coefficients and the wide availability of laboratory variables.",
+      "claim_type": "EXPLICIT",
+      "source": "The variables of the COEWS predictive model were selected based on the coefficients but also based on the wide availability of these laboratory variables.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the variable selection criteria used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:08:05.526110Z"
+    },
+    {
+      "id": "b5822475-36b6-4518-8fc5-d38933a64169",
+      "content_id": "ceb2e42c-2b76-4d83-bea1-ab20d986a349",
+      "claim_id": "C72",
+      "claim": "The final COEWS model included features from the complete blood count, blood glucose, and oxygen saturation.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the final model included features from the complete blood count, blood glucose, and oxygen saturation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the final set of variables included in the model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:08:05.526110Z"
+    },
+    {
+      "id": "aaee3c16-d468-4326-acba-2a41b6d32fe2",
+      "content_id": "ceb2e42c-2b76-4d83-bea1-ab20d986a349",
+      "claim_id": "C73",
+      "claim": "Male sex, lower oxygen saturation, neutrophils, hemoglobin, platelets, lymphocytes, and glucose were positively correlated with death or MV in the next 48 hours.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that the male sex, lower oxygen saturation, neutrophils, hemoglobin, platelets, lymphocytes, and glucose were positively correlated with death or MV in the next 48 hr.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the relationships between predictors and outcome observed in the model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:08:05.526110Z"
+    },
+    {
+      "id": "cc94dd49-7fed-4dbf-86e7-091967d87668",
+      "content_id": "ceb2e42c-2b76-4d83-bea1-ab20d986a349",
+      "claim_id": "C74",
+      "claim": "The predictive coefficients of the COEWS model were transformed into individual scores for each selected feature to make COEWS more actionable in real clinical situations.",
+      "claim_type": "EXPLICIT",
+      "source": "In order to make COEWS more actionable in real clinical situations, we transformed the predictive coefficients of the COEWS model into individual scores for each selected feature (Table 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the transformation of the model into a practical scoring system.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:08:05.526110Z"
+    },
+    {
+      "id": "781c418f-3369-4d7d-b4b8-6a2c5f093bc3",
+      "content_id": "ceb2e42c-2b76-4d83-bea1-ab20d986a349",
+      "claim_id": "C75",
+      "claim": "The global score serves as an easy-to-calculate measure indicating the risk of a patient developing the combined outcome of MV or death within the next 48 hours.",
+      "claim_type": "EXPLICIT",
+      "source": "The global score, obtained by summing the individual scores, serves as an easy-to-calculate measure indicating the risk of a patient developing the combined outcome of MV or death within the next 48 hr.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the purpose and interpretation of the COEWS global score.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:08:05.526110Z"
+    },
+    {
+      "id": "b65a5b73-aaac-45fd-9e0c-c442cb3e1f0c",
+      "content_id": "ceb2e42c-2b76-4d83-bea1-ab20d986a349",
+      "claim_id": "C76",
+      "claim": "The levels of risk in the final score were established based on the NEWS2 Scale: lower risk (less than 10%), moderate risk (10-20%), high risk (20-30%), and critical risk (higher than 30%).",
+      "claim_type": "EXPLICIT",
+      "source": "We established the levels of risk in the final score based on the NEWS2 Scale: lower risk (less than 10%), moderate risk (10\u201320%), high risk (20\u2013 30%), and critical risk (higher than 30%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes how risk categories were defined for the COEWS score.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:08:05.526110Z"
+    },
+    {
+      "id": "ecc7fc6d-af81-4252-980e-08676996e5a1",
+      "content_id": "ceb2e42c-2b76-4d83-bea1-ab20d986a349",
+      "claim_id": "C77",
+      "claim": "The discrimination in the external validation cohort was 0.743 (95% CI: 0.703-0.784) for the COEWS score performed with coefficients.",
+      "claim_type": "EXPLICIT",
+      "source": "The discrimination in the external validation cohort was 0.743 (0.703\u20130.784) for the COEWS score performed with coefficients and 0.700 (0.654\u20130.745) for the COEWS performed with the scores.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about the model's discriminative performance in external validation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:08:05.526110Z"
+    },
+    {
+      "id": "abc59f4c-55b7-4a89-a606-6b9074a88694",
+      "content_id": "ceb2e42c-2b76-4d83-bea1-ab20d986a349",
+      "claim_id": "C78",
+      "claim": "The discrimination in the external validation cohort was 0.700 (95% CI: 0.654-0.745) for the COEWS performed with scores.",
+      "claim_type": "EXPLICIT",
+      "source": "The discrimination in the external validation cohort was 0.743 (0.703\u20130.784) for the COEWS score performed with coefficients and 0.700 (0.654\u20130.745) for the COEWS performed with the scores.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about the score-based model's discriminative performance in external validation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:08:05.526110Z"
+    },
+    {
+      "id": "2c818709-5a43-4c65-b38f-f176f1497710",
+      "content_id": "ceb2e42c-2b76-4d83-bea1-ab20d986a349",
+      "claim_id": "C79",
+      "claim": "The AUROC of vaccinated and non-vaccinated patients was similar.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, the AUROC of vaccinated and non-vaccinated patients was similar.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation about model performance across vaccination status subgroups.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:08:05.526110Z"
+    },
+    {
+      "id": "26884f55-92bd-4647-aaf6-9b90f1221ccc",
+      "content_id": "ceb2e42c-2b76-4d83-bea1-ab20d986a349",
+      "claim_id": "C80",
+      "claim": "The AUROC of the NEWS2 was 0.677 (95% CI: 0.601-0.752) in vaccinated patients.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, we observed that the AUROC of the NEWS2 was 0.677 (0.601\u20130.752) in vaccinated patients and 0.648 (0.608\u20130.689) in unvaccinated patients (Table 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about NEWS2 performance in vaccinated patients.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:08:05.526110Z"
+    },
+    {
+      "id": "16d5f3a7-a88d-480f-b142-86f3b68f6108",
+      "content_id": "ceb2e42c-2b76-4d83-bea1-ab20d986a349",
+      "claim_id": "C81",
+      "claim": "The AUROC of the NEWS2 was 0.648 (95% CI: 0.608-0.689) in unvaccinated patients.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, we observed that the AUROC of the NEWS2 was 0.677 (0.601\u20130.752) in vaccinated patients and 0.648 (0.608\u20130.689) in unvaccinated patients (Table 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about NEWS2 performance in unvaccinated patients.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:08:05.526110Z"
+    },
+    {
+      "id": "54ebed6e-604d-4d70-b3ed-5511eb4acd02",
+      "content_id": "ceb2e42c-2b76-4d83-bea1-ab20d986a349",
+      "claim_id": "C82",
+      "claim": "The model demonstrated similar discrimination ability in patients hospitalized after July 2021, with an AUROC of 0.718 (0.569-0.867) for the COEWS score performed with coefficients in unvaccinated patients.",
+      "claim_type": "EXPLICIT",
+      "source": "To account for changes in therapeutics, we performed an additional validation using patients hospitalized after July 2021. The model demonstrated similar discrimination ability, with an AUROC of 0.718 (0.569\u20130.867) for the COEWS score performed with coefficients in unvaccinated and 0.677 (0.612\u20130.742) for the COEWS score performed with coefficients in vaccinated (Table 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about model performance in a temporal subgroup.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:08:05.526110Z"
+    },
+    {
+      "id": "6be3a078-6b96-4dda-95f4-c2f25e0e286d",
+      "content_id": "ceb2e42c-2b76-4d83-bea1-ab20d986a349",
+      "claim_id": "C83",
+      "claim": "The AUROC was 0.677 (0.612-0.742) for the COEWS score performed with coefficients in vaccinated patients hospitalized after July 2021.",
+      "claim_type": "EXPLICIT",
+      "source": "To account for changes in therapeutics, we performed an additional validation using patients hospitalized after July 2021. The model demonstrated similar discrimination ability, with an AUROC of 0.718 (0.569\u20130.867) for the COEWS score performed with coefficients in unvaccinated and 0.677 (0.612\u20130.742) for the COEWS score performed with coefficients in vaccinated (Table 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about model performance in a temporal subgroup.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:08:05.526110Z"
+    },
+    {
+      "id": "3f54e525-166d-4c28-9151-21973c8681a7",
+      "content_id": "ceb2e42c-2b76-4d83-bea1-ab20d986a349",
+      "claim_id": "C84",
+      "claim": "Good and moderate calibration was observed for the training and internal validation, and for the external validation cohort, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we observed a good and moderate calibration for the training and internal validation, and for the external validation cohort, respectively (Figure 1, Supplementary file 1, and Supplementary file 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a factual statement about model calibration supported by figures and supplementary files.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:08:05.526110Z"
+    },
+    {
+      "id": "26b0c13c-6060-44ae-9f60-289e7cdd7f01",
+      "content_id": "ceb2e42c-2b76-4d83-bea1-ab20d986a349",
+      "claim_id": "C85",
+      "claim": "The COEWS score predicts death or MV within the next 48 hours based on routine and widely available laboratory measurements.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, we developed and validated the COEWS predictive model. The COEWS score predicts death or MV within the next 48 hr based on routine and widely available laboratory measurements.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement about the COEWS model's function and inputs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:08:05.526110Z"
+    },
+    {
+      "id": "8d1f5711-5d51-43b4-8163-32103588bcfb",
+      "content_id": "ceb2e42c-2b76-4d83-bea1-ab20d986a349",
+      "claim_id": "C86",
+      "claim": "COEWS performs a simple and fast triage of COVID-19 hospitalized patients without the need of a physical examination.",
+      "claim_type": "EXPLICIT",
+      "source": "This EWS performs a simple and fast triage of COVID-19 hospitalized patients without the need of a physical examination, which greatly reduces the workload of the healthcare team.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the practical advantages of COEWS based on its design.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:08:05.526110Z"
+    },
+    {
+      "id": "9a447ac3-683e-4d3e-a1fc-9aa188724811",
+      "content_id": "ceb2e42c-2b76-4d83-bea1-ab20d986a349",
+      "claim_id": "C87",
+      "claim": "COEWS greatly reduces the workload of the healthcare team.",
+      "claim_type": "EXPLICIT",
+      "source": "This EWS performs a simple and fast triage of COVID-19 hospitalized patients without the need of a physical examination, which greatly reduces the workload of the healthcare team.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the practical impact of COEWS based on its design features.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:08:05.526110Z"
+    },
+    {
+      "id": "05041ae5-838f-4302-af83-cc360c5a679a",
+      "content_id": "ceb2e42c-2b76-4d83-bea1-ab20d986a349",
+      "claim_id": "C88",
+      "claim": "COEWS was initially developed in a European cohort of COVID-19 patients.",
+      "claim_type": "EXPLICIT",
+      "source": "COEWS was initially developed in a European cohort of COVID-19 patients but also showed a good predictive performance in a very different external cohort of patients from South America.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about where COEWS was developed.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:08:05.526110Z"
+    },
+    {
+      "id": "76901244-59dd-4dd9-98d2-6ec733f664ff",
+      "content_id": "ceb2e42c-2b76-4d83-bea1-ab20d986a349",
+      "claim_id": "C89",
+      "claim": "COEWS showed good predictive performance in an external cohort of patients from South America.",
+      "claim_type": "EXPLICIT",
+      "source": "COEWS was initially developed in a European cohort of COVID-19 patients but also showed a good predictive performance in a very different external cohort of patients from South America.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about COEWS performance in external validation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:08:05.526110Z"
+    },
+    {
+      "id": "5e14cbe6-2882-4fde-9beb-5471ef907d6b",
+      "content_id": "ceb2e42c-2b76-4d83-bea1-ab20d986a349",
+      "claim_id": "C90",
+      "claim": "COEWS had better predictive performance than the widely used NEWS2 score.",
+      "claim_type": "EXPLICIT",
+      "source": "We also observed that COEWS had better predictive performance than the widely used NEWS2 score.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparative statement based on the AUROC values observed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:08:05.526110Z"
+    },
+    {
+      "id": "50c13288-cfc1-474b-b3e4-73c070bd6959",
+      "content_id": "ceb2e42c-2b76-4d83-bea1-ab20d986a349",
+      "claim_id": "C91",
+      "claim": "The coefficients of the predictive model were transformed to create an easy-to-use score table that can be used without an electronic calculator.",
+      "claim_type": "EXPLICIT",
+      "source": "In order to increase the clinical usefulness of COEWS, we transformed the coefficients of the predictive model and created an easy-to-use score table that can be used without an electronic calculator.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a practical enhancement made to the COEWS model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:08:05.526110Z"
+    },
+    {
+      "id": "7a63fced-977c-4aba-975d-dde4e5c59470",
+      "content_id": "ceb2e42c-2b76-4d83-bea1-ab20d986a349",
+      "claim_id": "C92",
+      "claim": "Several predictive models of severity in COVID-19 patients have been published.",
+      "claim_type": "EXPLICIT",
+      "source": "Although several predictive models of severity in COVID-19 patients have been published (Miller et al., 2022), they only predict whether the patient will have the outcome during hospitalization, regardless of when the patient will have the outcome (Miller et al., 2022), which limits their clinical use during a pandemic situation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a review of COVID-19 predictive models.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:08:05.526110Z"
+    },
+    {
+      "id": "272714ff-84ac-45c3-9f25-642a20c4a161",
+      "content_id": "ceb2e42c-2b76-4d83-bea1-ab20d986a349",
+      "claim_id": "C93",
+      "claim": "Existing predictive models only predict whether the patient will have the outcome during hospitalization, regardless of when the patient will have the outcome, which limits their clinical use during a pandemic situation.",
+      "claim_type": "EXPLICIT",
+      "source": "Although several predictive models of severity in COVID-19 patients have been published (Miller et al., 2022), they only predict whether the patient will have the outcome during hospitalization, regardless of when the patient will have the outcome (Miller et al., 2022), which limits their clinical use during a pandemic situation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a critical assessment of existing models supported by citation.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:08:05.526110Z"
+    },
+    {
+      "id": "3d3ef099-a85f-401b-87e8-e9a570911e5d",
+      "content_id": "ceb2e42c-2b76-4d83-bea1-ab20d986a349",
+      "claim_id": "C94",
+      "claim": "EWS models offer the clinical advantage to predict the outcome of interest in a short time horizon (e.g., the next 24-48 hours).",
+      "claim_type": "EXPLICIT",
+      "source": "In this context, EWS models offer the clinical advantage to predict the outcome of interest in a short time horizon (e.g., the next 24\u201348 hr).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This represents established knowledge about the advantages of EWS models.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:08:05.526110Z"
+    },
+    {
+      "id": "744ec981-eac9-484e-b4e0-5b5977639753",
+      "content_id": "ceb2e42c-2b76-4d83-bea1-ab20d986a349",
+      "claim_id": "C95",
+      "claim": "Several EWS have been developed and used in the context of the COVID-19 pandemic (NEWS2, NEWS2 with age, Modified Early Warning Score (MEWS), and the COVID-19 severity index).",
+      "claim_type": "EXPLICIT",
+      "source": "In the context of the COVID-19 pandemic, several EWS has been developed and used (NEWS2, NEWS2 with age, Modified Early Warning Score (MEWS), and the COVID-19 severity index) (Colombo et al., 2021; Huespe et al., 2021; Liao et al., 2020; Royal College of Physicians, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to EWS studies in COVID-19.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:08:05.526110Z"
+    },
+    {
+      "id": "159ff503-7b89-42b5-ba2d-794ef20be1e3",
+      "content_id": "ceb2e42c-2b76-4d83-bea1-ab20d986a349",
+      "claim_id": "C96",
+      "claim": "Existing EWS have clear limitations such as not having a time horizon for prediction in the development, lack of testing in vaccinated versus non-vaccinated patients, and not using MV as a clinical outcome.",
+      "claim_type": "EXPLICIT",
+      "source": "However, each of them have clear limitations such as not having a time horizon for prediction in the development, lack of testing in vaccinated versus non-vaccinated patients, and not using MV as a clinical outcome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a critical assessment of existing EWS based on the authors' review.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:08:05.526110Z"
+    },
+    {
+      "id": "c808d5dd-016b-43a6-9b70-2964c6db354a",
+      "content_id": "ceb2e42c-2b76-4d83-bea1-ab20d986a349",
+      "claim_id": "C97",
+      "claim": "COVID-19 patients also die under MV.",
+      "claim_type": "EXPLICIT",
+      "source": "The latest is necessary because COVID-19 patients also die under MV, and also because the measurement of vital signs that are included in an EWS model, will be altered due to MV and hemodynamic support.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This represents clinical knowledge about COVID-19 patient outcomes.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:08:05.526110Z"
+    },
+    {
+      "id": "ad93df8b-35f5-41a9-8425-adff8d159c3d",
+      "content_id": "ceb2e42c-2b76-4d83-bea1-ab20d986a349",
+      "claim_id": "C98",
+      "claim": "The measurement of vital signs that are included in an EWS model will be altered due to MV and hemodynamic support.",
+      "claim_type": "EXPLICIT",
+      "source": "The latest is necessary because COVID-19 patients also die under MV, and also because the measurement of vital signs that are included in an EWS model, will be altered due to MV and hemodynamic support.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This represents clinical knowledge about the effects of MV on vital signs.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:08:05.526110Z"
+    },
+    {
+      "id": "2879ce19-bbdb-4e8c-8df4-1b27dc0b0945",
+      "content_id": "ceb2e42c-2b76-4d83-bea1-ab20d986a349",
+      "claim_id": "C99",
+      "claim": "NEWS2 has poor discrimination when considering the combined outcome of death or MV.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, we observed that NEWS2 has poor discrimination when considering this combined outcome (death or MV).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the AUROC values for NEWS2 observed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:08:05.526110Z"
+    },
+    {
+      "id": "da49f778-dc6b-42eb-83fc-9b2d8fd22e33",
+      "content_id": "ceb2e42c-2b76-4d83-bea1-ab20d986a349",
+      "claim_id": "C100",
+      "claim": "The COEWS score has better discrimination than NEWS2, even in an external cohort of patients from a different continent.",
+      "claim_type": "EXPLICIT",
+      "source": "In this way, the COEWS score has better discrimination, even in an external cohort of patients from a different continent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on comparative AUROC values observed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:08:05.526110Z"
+    },
+    {
+      "id": "a29979dc-05d9-4ea7-92a1-f3fde3274424",
+      "content_id": "ceb2e42c-2b76-4d83-bea1-ab20d986a349",
+      "claim_id": "C101",
+      "claim": "COEWS is the first EWS in which the predictive performance in vaccinated and unvaccinated patients has been compared.",
+      "claim_type": "EXPLICIT",
+      "source": "The COEWS is the first EWS in which the predictive performance in vaccinated and unvaccinated patients has been compared.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the novelty of the COEWS study based on the authors' literature review.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:08:05.526110Z"
+    },
+    {
+      "id": "442b75e1-ad93-463d-bbde-8e01d8594cad",
+      "content_id": "ceb2e42c-2b76-4d83-bea1-ab20d986a349",
+      "claim_id": "C102",
+      "claim": "Hospitalized vaccinated patients have more favorable outcomes than unvaccinated patients.",
+      "claim_type": "EXPLICIT",
+      "source": "Even though hospitalized vaccinated patients have more favorable outcomes from unvaccinated patients (Busic et al., 2022; Huespe et al., 2022), we observed that the predictive performance was similar between patients with and without vaccines.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to studies on vaccination and outcomes.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:08:05.526110Z"
+    },
+    {
+      "id": "4278cb0d-9126-4509-bfb8-a886e28cc95a",
+      "content_id": "ceb2e42c-2b76-4d83-bea1-ab20d986a349",
+      "claim_id": "C103",
+      "claim": "The predictive performance of COEWS was similar between patients with and without vaccines.",
+      "claim_type": "EXPLICIT",
+      "source": "Even though hospitalized vaccinated patients have more favorable outcomes from unvaccinated patients (Busic et al., 2022; Huespe et al., 2022), we observed that the predictive performance was similar between patients with and without vaccines.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about model performance across vaccination status.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:08:05.526110Z"
+    },
+    {
+      "id": "94803710-b23a-421c-ba85-7bbe002144d0",
+      "content_id": "ceb2e42c-2b76-4d83-bea1-ab20d986a349",
+      "claim_id": "C104",
+      "claim": "Hospitalized COVID-19 patients show similar clinical and laboratory manifestations when they are going to suffer serious adverse events, independently of their vaccination status.",
+      "claim_type": "EXPLICIT",
+      "source": "This observation strongly suggests that hospitalized COVID-19 patients show similar clinical and laboratory manifestations when they are going to suffer serious adverse events, independently of their vaccination status.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the similar predictive performance across vaccination status.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:08:05.526110Z"
+    },
+    {
+      "id": "f0b3563e-a0f9-4629-9264-2894d8a41f5d",
+      "content_id": "ceb2e42c-2b76-4d83-bea1-ab20d986a349",
+      "claim_id": "C105",
+      "claim": "The COEWS demonstrated good discrimination in patients hospitalized after July 2021.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, we found that the COEWS demonstrated good discrimination in patients hospitalized after July 2021.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the AUROC values observed in the temporal subgroup analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:08:05.526110Z"
+    },
+    {
+      "id": "e83a50f8-080e-40ca-a12b-077e5d1fad7f",
+      "content_id": "ceb2e42c-2b76-4d83-bea1-ab20d986a349",
+      "claim_id": "C106",
+      "claim": "The laboratory and clinical signs of deterioration associated with severe COVID-19 have remained consistent despite the evolution of therapeutic approaches during the study period.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the evolution of therapeutic approaches during the study period, it is important to note that the laboratory and clinical signs of deterioration associated with severe COVID-19 have remained consistent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the consistent model performance over time.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:08:05.526110Z"
+    },
+    {
+      "id": "345cc72e-f59f-48d3-b7cf-59f3920b0446",
+      "content_id": "ceb2e42c-2b76-4d83-bea1-ab20d986a349",
+      "claim_id": "C107",
+      "claim": "The proportion of vaccinated patients hospitalized in Europe was less than half of that in the Argentinean cohort.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, it is interesting to note that the proportion of vaccinated patients hospitalized in Europe was less than half of that in the Argentinean cohort.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the vaccination rates reported in the study cohorts.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:08:05.526110Z"
+    },
+    {
+      "id": "73784ae6-2618-4bad-aedd-8a1ad4896391",
+      "content_id": "ceb2e42c-2b76-4d83-bea1-ab20d986a349",
+      "claim_id": "C108",
+      "claim": "The difference in vaccination rates may be due to a higher proportion of BIBP-CorV (Beijing Institute of Biological Products; Sinopharm) vaccinations in Argentina.",
+      "claim_type": "EXPLICIT",
+      "source": "This difference may be due to a higher proportion of BIBP-CorV (Beijing Institute of Biological Products; Sinopharm) vaccinations in Argentina, which has been reported to have lower efficacy in reducing hospitalizations compared to the BNT162b2 (Pfizer) vaccine (Al-Momani et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation supported by citation to vaccine efficacy studies.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:08:05.526110Z"
+    },
+    {
+      "id": "e9d15e20-ac26-40c7-923c-09fb98198b02",
+      "content_id": "ceb2e42c-2b76-4d83-bea1-ab20d986a349",
+      "claim_id": "C109",
+      "claim": "BIBP-CorV has been reported to have lower efficacy in reducing hospitalizations compared to the BNT162b2 (Pfizer) vaccine.",
+      "claim_type": "EXPLICIT",
+      "source": "This difference may be due to a higher proportion of BIBP-CorV (Beijing Institute of Biological Products; Sinopharm) vaccinations in Argentina, which has been reported to have lower efficacy in reducing hospitalizations compared to the BNT162b2 (Pfizer) vaccine (Al-Momani et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a vaccine efficacy study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:08:05.526110Z"
+    },
+    {
+      "id": "213e454a-9707-4050-af54-54ccdebe7f52",
+      "content_id": "ceb2e42c-2b76-4d83-bea1-ab20d986a349",
+      "claim_id": "C110",
+      "claim": "A recent study suggests slightly lower efficacy for BIBP-CorV and Gam-COVID-Vac (Sputnik) vaccines in reducing mortality among hospitalized patients compared to BNT162b2 (Pfizer).",
+      "claim_type": "EXPLICIT",
+      "source": "Our team's recent study also suggests slightly lower efficacy for BIBP-CorV (Beijing Institute of Biological Products; Sinopharm) and Gam-COVID-Vac (Sputnik) vaccines in reducing mortality among hospitalized patients compared to BNT162b2 (Pfizer) (Huespe et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to the authors' own previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:08:05.526110Z"
+    },
+    {
+      "id": "1af9ed67-e76b-408c-bb8f-8d0eb82bbda6",
+      "content_id": "ceb2e42c-2b76-4d83-bea1-ab20d986a349",
+      "claim_id": "C111",
+      "claim": "COEWS is an easy and fast triage tool for COVID-19 hospitalized patients that can classify the risk of patients only using widely available blood tests and without the need for clinical evaluations.",
+      "claim_type": "EXPLICIT",
+      "source": "First, we have developed an easy and fast triage tool for COVID-19 hospitalized patients that can classify the risk of the patients only using widely available blood tests and without the need for clinical evaluations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the COEWS model's characteristics and advantages.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:08:05.526110Z"
+    },
+    {
+      "id": "ff1b3639-4d77-4dab-9ba4-8a541f8ea40c",
+      "content_id": "ceb2e42c-2b76-4d83-bea1-ab20d986a349",
+      "claim_id": "C112",
+      "claim": "The COEWS score can be added to the Electronic Health Record to automatically calculate the risk of patient deterioration and for recommending the appropriate level of care within a time window of 24-48 hours.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the COEWS score can be added to the Electronic Health Record to automatically calculate the risk of patient deterioration and for recommending the appropriate level of care within a time window of 24\u201348 hr.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed application of COEWS based on its design features.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:08:05.526110Z"
+    },
+    {
+      "id": "89c50446-4c29-46c7-ba14-01e27b66e792",
+      "content_id": "ceb2e42c-2b76-4d83-bea1-ab20d986a349",
+      "claim_id": "C113",
+      "claim": "COEWS was created with a big and broad (from 2020 to 2022) patient database.",
+      "claim_type": "EXPLICIT",
+      "source": "Also, COEWS was created with a big and broad (from 2020 to 2022) patient database and externally validated in a even bigger cohort of patients from another continent, which increases the confidence in COEWS performance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about the study design and data sources.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:08:05.526110Z"
+    },
+    {
+      "id": "d6119b76-dfc8-439c-a1aa-a4649162c749",
+      "content_id": "ceb2e42c-2b76-4d83-bea1-ab20d986a349",
+      "claim_id": "C114",
+      "claim": "COEWS was externally validated in an even bigger cohort of patients from another continent, which increases the confidence in COEWS performance.",
+      "claim_type": "EXPLICIT",
+      "source": "Also, COEWS was created with a big and broad (from 2020 to 2022) patient database and externally validated in a even bigger cohort of patients from another continent, which increases the confidence in COEWS performance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about the validation approach and an inference about its implications.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:08:05.526110Z"
+    },
+    {
+      "id": "cbacefe9-c2aa-440a-ba06-023dd2877c00",
+      "content_id": "ceb2e42c-2b76-4d83-bea1-ab20d986a349",
+      "claim_id": "C115",
+      "claim": "The predictive performance of the score with coefficients and with the score transformation was evaluated.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, we evaluated the predictive performance of the score with the coefficients but also with the score transformation, as the transformation of the coefficients in a score makes it easier to use but can reduce the predictive performance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes an analysis performed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:08:05.526110Z"
+    },
+    {
+      "id": "a1384a5a-816c-4927-81e8-6aca0a574fa3",
+      "content_id": "ceb2e42c-2b76-4d83-bea1-ab20d986a349",
+      "claim_id": "C116",
+      "claim": "The transformation of the coefficients into a score makes it easier to use but can reduce the predictive performance.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, we evaluated the predictive performance of the score with the coefficients but also with the score transformation, as the transformation of the coefficients in a score makes it easier to use but can reduce the predictive performance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This represents knowledge about the trade-offs in creating practical scoring systems.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:08:05.526110Z"
+    },
+    {
+      "id": "4b607ee6-bbc2-4d83-bae9-767e05f0f4e2",
+      "content_id": "ceb2e42c-2b76-4d83-bea1-ab20d986a349",
+      "claim_id": "C117",
+      "claim": "This study is the first one evaluating the predictive performance of an EWS score in vaccinated and unvaccinated patients.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, our study is the first one evaluating the predictive performance of an EWS score in vaccinated and unvaccinated patients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the novelty of the study based on the authors' literature review.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:08:05.526110Z"
+    },
+    {
+      "id": "6b2cd183-9d49-4c4f-a436-768aaf3eed7d",
+      "content_id": "ceb2e42c-2b76-4d83-bea1-ab20d986a349",
+      "claim_id": "C118",
+      "claim": "The amount of missingness in some parameters can alter the performance of COEWS.",
+      "claim_type": "EXPLICIT",
+      "source": "First, the amount of missingness in some parameters can alter the performance of COEWS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an acknowledgment of a potential limitation based on statistical knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:08:05.526110Z"
+    },
+    {
+      "id": "76a375ee-0993-4eed-9733-29e6adda0a01",
+      "content_id": "ceb2e42c-2b76-4d83-bea1-ab20d986a349",
+      "claim_id": "C119",
+      "claim": "The MCAR method was used to reduce the effect of missing data, which enabled complete case analysis without selection bias.",
+      "claim_type": "EXPLICIT",
+      "source": "To reduce this effect, we used the MCAR method, which enabled us to perform complete case analysis without selection bias.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a methodological approach used to address missing data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:08:05.526110Z"
+    },
+    {
+      "id": "762478d0-f976-4379-a653-c5dcba0da2c8",
+      "content_id": "ceb2e42c-2b76-4d83-bea1-ab20d986a349",
+      "claim_id": "C120",
+      "claim": "The use of populations from Spain and Argentina prompts questions about the validity of the model for non-European nor South American populations.",
+      "claim_type": "EXPLICIT",
+      "source": "Also, we used populations from Spain and Argentina, which prompts questions about the validity of our model for non-European nor South American populations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an acknowledgment of a limitation regarding generalizability.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:08:05.526110Z"
+    },
+    {
+      "id": "984ea362-ddde-4a83-af43-46ba5521dc0b",
+      "content_id": "ceb2e42c-2b76-4d83-bea1-ab20d986a349",
+      "claim_id": "C121",
+      "claim": "The datasets of Hospital 12 de Octubre carry a misclassification of some vaccinated patients as some hospitalized patients could have been previously vaccinated in other centers before their hospitalization.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, the datasets of Hospital 12 de Octubre carry a misclassification of some vaccinated patients as some hospitalized patients could have been previously vaccinated in other centers before their hospitalization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an acknowledgment of a potential data quality issue.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:08:05.526110Z"
+    },
+    {
+      "id": "79bb573e-1142-4552-bc0a-6d8ec1ae0e50",
+      "content_id": "ceb2e42c-2b76-4d83-bea1-ab20d986a349",
+      "claim_id": "C122",
+      "claim": "The misclassification issue primarily applies to patients who were vaccinated toward the end of the cohort follow-up.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it is important to note that the misclassification issue primarily applies to patients who were vaccinated toward the end of the cohort follow-up.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a clarification about the scope of the misclassification issue.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:08:05.526110Z"
+    },
+    {
+      "id": "ec100a88-40ca-4105-90c1-3f22252201c5",
+      "content_id": "ceb2e42c-2b76-4d83-bea1-ab20d986a349",
+      "claim_id": "C123",
+      "claim": "During the initial vaccination campaigns, all patients in the Hospital 12 de Octubre dataset were vaccinated at their own hospital.",
+      "claim_type": "EXPLICIT",
+      "source": "During the initial vaccination campaigns, all patients in the Hospital 12 de Octubre dataset were indeed vaccinated at their own hospital.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about vaccination practices at the hospital.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:08:05.526110Z"
+    },
+    {
+      "id": "5038a681-474e-49bc-aadc-436029cf1bdd",
+      "content_id": "ceb2e42c-2b76-4d83-bea1-ab20d986a349",
+      "claim_id": "C124",
+      "claim": "Hospital 12 de Octubre maintains a close cohort due to its coverage area in Madrid.",
+      "claim_type": "EXPLICIT",
+      "source": "This hospital maintains a close cohort due to its coverage area in Madrid.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about the hospital's patient population characteristics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:08:05.526110Z"
+    },
+    {
+      "id": "3fedc15f-2f06-4c02-868a-05b73296dd14",
+      "content_id": "ceb2e42c-2b76-4d83-bea1-ab20d986a349",
+      "claim_id": "C125",
+      "claim": "The misclassification problem did not occur in the Argentinian database.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, we want to emphasize that the misclassification problem did not occur in the Argentinian database, and the results obtained from the vaccinated cohort patients in both countries were extremely similar.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about data quality in the Argentinian cohort.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:08:05.526110Z"
+    },
+    {
+      "id": "40b08512-c33c-4f80-9136-7f803d1586b7",
+      "content_id": "ceb2e42c-2b76-4d83-bea1-ab20d986a349",
+      "claim_id": "C126",
+      "claim": "The results obtained from the vaccinated cohort patients in both countries were extremely similar.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, we want to emphasize that the misclassification problem did not occur in the Argentinian database, and the results obtained from the vaccinated cohort patients in both countries were extremely similar.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about the consistency of results across cohorts.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:08:05.526110Z"
+    },
+    {
+      "id": "3f2d3c2a-3d75-4904-82fa-1df877596679",
+      "content_id": "ceb2e42c-2b76-4d83-bea1-ab20d986a349",
+      "claim_id": "C127",
+      "claim": "The extensive external validation, high performance, ease of use, and positive benchmark in comparison with NEWS2 position COEWS as a new tool of reference for assisting clinical decisions and improving patient care in upcoming pandemic waves.",
+      "claim_type": "EXPLICIT",
+      "source": "The extensive external validation, its high performance, its easiness to use and the positive benchmark in comparison with the widely used NEW2, positions COEWS as a new tool of reference for assisting clinical decisions and improving patient care in the upcoming pandemic waves.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a concluding statement that synthesizes the study findings and their implications.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:08:05.526110Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "f4faa517-5ea0-4eb7-8de6-b5230de636bf",
+      "content_id": "ceb2e42c-2b76-4d83-bea1-ab20d986a349",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "COEWS was developed and validated using multicontinental cohorts from Spain (Hospital 12 de Octubre) and Argentina (Argentinian COVID-19 Network), comprising 15,903 hospitalized COVID-19 patients between January 2020 and March 2022. The model predicts death or mechanical ventilation within 48 hours using laboratory parameters and oxygen saturation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C70 provide comprehensive documentation of the study population, data sources, inclusion criteria, outcome definitions, and sample sizes. The multicontinental validation approach with adequate sample sizes (7507 training, 2502 internal test, 5894 external validation) and sufficient outcome events (>200 per database) supports the development and validation design.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:08:05.526110Z"
+    },
+    {
+      "id": "005478b7-7aa2-433e-9139-605c71558619",
+      "content_id": "ceb2e42c-2b76-4d83-bea1-ab20d986a349",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "COEWS was developed using stable iterative variable selection (SIVS) with Lasso regularization on a 75/25 train-test split of Spanish data, with 10-fold cross-validation and blinded predictions. The Argentinian database served as external validation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C44 describe appropriate statistical methodology with adequate sample size justification (10-20 events per variable), proper train-test splitting, cross-validation, and blinded evaluation. The use of SIVS with Lasso is well-cited and appropriate for the imbalanced outcome data. External validation on a geographically distinct cohort strengthens the findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:08:05.526110Z"
+    },
+    {
+      "id": "a500c841-5f05-49ee-94aa-25a73d8fde10",
+      "content_id": "ceb2e42c-2b76-4d83-bea1-ab20d986a349",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The final COEWS model includes seven features (sex, oxygen saturation, neutrophils, hemoglobin, platelets, lymphocytes, glucose) transformed into a practical scoring system with risk categories based on NEWS2 thresholds (low <10%, moderate 10-20%, high 20-30%, critical >30%).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71-C91 describe the model features and transformation to a clinical score. The selection based on both statistical coefficients and clinical availability is reasonable. However, the transformation from continuous coefficients to discrete scores (C74, C91) may reduce predictive performance, which the authors acknowledge and evaluate (C115-C116).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:08:05.526110Z"
+    },
+    {
+      "id": "f38d4ca6-52f8-4ec4-bcf4-41b69b13d9da",
+      "content_id": "ceb2e42c-2b76-4d83-bea1-ab20d986a349",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "COEWS demonstrated good discrimination in external validation with AUROC 0.743 (95% CI: 0.703-0.784) for the coefficient-based model and 0.700 (95% CI: 0.654-0.745) for the score-based model. Calibration was good for training/internal validation and moderate for external validation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C77-C84 report discrimination and calibration metrics with confidence intervals. The AUROC values indicate moderate-to-good discrimination. The drop in performance from coefficient-based to score-based model (0.743 to 0.700) is expected and acknowledged. Calibration assessment using RMSE and decile stratification (Figure 1) is appropriate, though 'moderate' calibration in external validation warrants caution.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:08:05.526110Z"
+    },
+    {
+      "id": "d6d0107b-7e29-40eb-ac71-2269a477693e",
+      "content_id": "ceb2e42c-2b76-4d83-bea1-ab20d986a349",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "COEWS showed similar predictive performance in vaccinated and unvaccinated patients, representing the first EWS to compare performance across vaccination status. This suggests hospitalized COVID-19 patients show similar clinical manifestations before adverse events regardless of vaccination status.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C79-C117 report similar AUROC across vaccination status and interpret this as evidence of similar clinical manifestations. However, the claim of being 'first' (C101, C117) is based on literature review without systematic evidence. The inference that similar predictive performance implies similar clinical manifestations (C104) is speculative. The low vaccination rates (4.7% Spain, 11.4% Argentina) and potential misclassification (C121-C122) limit confidence in this subgroup analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:08:05.526110Z"
+    },
+    {
+      "id": "cceb5120-4240-43cc-8dc3-488b2557b9ff",
+      "content_id": "ceb2e42c-2b76-4d83-bea1-ab20d986a349",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "COEWS maintained good discrimination in patients hospitalized after July 2021 (AUROC 0.718 unvaccinated, 0.677 vaccinated), suggesting consistent performance despite therapeutic changes introduced by the Recovery Trial.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C82-C106 report temporal validation with reasonable AUROC values. However, the wide confidence intervals (e.g., 0.569-0.867 for unvaccinated) suggest limited precision. The inference that laboratory/clinical signs remained consistent (C106) is speculative and not directly tested. The July 2021 cutoff is justified by Recovery Trial publication (C55-C56), but the actual therapeutic changes and their impact are not quantified.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:08:05.526110Z"
+    },
+    {
+      "id": "f883f611-0151-457b-ba84-4d8f3e5cc874",
+      "content_id": "ceb2e42c-2b76-4d83-bea1-ab20d986a349",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "COEWS outperformed NEWS2 in predicting the combined outcome of death or mechanical ventilation, with NEWS2 showing AUROC of 0.677 (vaccinated) and 0.648 (unvaccinated) compared to COEWS AUROC of 0.700-0.743.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C90-C100 report comparative performance with NEWS2. The AUROC values show COEWS superiority (0.700-0.743 vs 0.648-0.677). However, the comparison is limited by: (1) NEWS2 was not specifically designed for the 48-hour prediction window or combined death/MV outcome, (2) no statistical testing of AUROC differences is reported, and (3) NEWS2 requires vital signs that may be altered by MV (C98), creating an unfair comparison for the combined outcome.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:08:05.526110Z"
+    },
+    {
+      "id": "e0eff37b-e1c0-434f-9f64-b327c4173f89",
+      "content_id": "ceb2e42c-2b76-4d83-bea1-ab20d986a349",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Missing data was addressed using median imputation for Spanish data and multiple imputation by chained equations (20 imputations) for Argentinian data, assuming data was missing completely at random (MCAR).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C118-C119 describe missing data handling. The MCAR assumption is stated but not tested. Different imputation methods for different cohorts (median vs. multiple imputation) is inconsistent and could introduce bias. The high missingness for some variables (e.g., 98% for lactate, 68% for respiration rate per Table 1) raises concerns about the validity of the MCAR assumption and the impact on model performance.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:08:05.526110Z"
+    },
+    {
+      "id": "06585b38-ad06-4911-b160-0e3ff1f7692c",
+      "content_id": "ceb2e42c-2b76-4d83-bea1-ab20d986a349",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "COEWS enables simple, fast triage without physical examination, reducing healthcare workload and can be integrated into Electronic Health Records for automated risk calculation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNSUPPORTED",
+      "evaluation": "Claims C86-C112 make assertions about clinical utility and workload reduction that are not empirically tested in this study. These are speculative benefits based on the model's design features (laboratory-only inputs) rather than demonstrated outcomes. No implementation study, time-motion analysis, or clinical impact assessment was performed to support claims of reduced workload or improved care.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:08:05.526110Z"
+    },
+    {
+      "id": "8313be90-980c-43f2-b08c-6ae92280fd7d",
+      "content_id": "ceb2e42c-2b76-4d83-bea1-ab20d986a349",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Study limitations include potential misclassification of vaccination status in Spanish data (particularly late in follow-up) and questions about generalizability beyond European and South American populations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C120-C126 appropriately acknowledge limitations. The vaccination misclassification issue is transparently discussed with context (early vaccinations at hospital, close cohort). The geographic limitation to Spain and Argentina is acknowledged. However, the authors' mitigation arguments (similar results across cohorts C126, hospital-based vaccination C123) are somewhat circular and don't fully address the concerns.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:08:05.526110Z"
+    },
+    {
+      "id": "25929393-640f-4289-9f4e-584bacb0e979",
+      "content_id": "ceb2e42c-2b76-4d83-bea1-ab20d986a349",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The introduction establishes the clinical context: new SARS-CoV-2 variants, waning immunity, and low vaccine uptake forecast new hospitalization waves, creating urgent need for Early Warning Scores. Existing models have limitations including lack of testing across populations with varying immunity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C17 provide appropriate background and rationale. The citations support the existence of immune-evasive variants (C1), waning immunity (C2), and published predictive models (C5-C7). The identified gap regarding testing across populations with varying immunity (C17) is reasonable, though the claim of 'no models' may be overstated without systematic review.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:08:05.526110Z"
+    },
+    {
+      "id": "f0a94f67-8467-430a-8d5a-af5f4f98f04e",
+      "content_id": "ceb2e42c-2b76-4d83-bea1-ab20d986a349",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Existing COVID-19 predictive models and EWS have limitations: they predict outcomes during entire hospitalization rather than short time horizons, haven't been tested in vaccinated vs. unvaccinated patients, and don't account for mechanical ventilation as an outcome despite vital signs being altered by MV.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C92-C98 critique existing models with appropriate citations. The limitation regarding time horizon (C93) is valid and well-articulated. The point about MV altering vital signs (C98) is clinically sound. However, the claim that 'no models' tested vaccinated vs. unvaccinated (C96) may be overstated without systematic review, and the characterization of NEWS2 discrimination as 'poor' (C99) is subjective.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:08:05.526110Z"
+    },
+    {
+      "id": "01f83365-3846-4f94-bf94-a47a0a235208",
+      "content_id": "ceb2e42c-2b76-4d83-bea1-ab20d986a349",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The proportion of vaccinated hospitalized patients was lower in Europe (4.7%) than Argentina (11.4%), possibly due to higher use of BIBP-CorV (Sinopharm) vaccine in Argentina, which has lower efficacy in reducing hospitalizations compared to BNT162b2 (Pfizer).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C107-C110 present an observation and speculative explanation. The vaccination rate difference is factual (C107), but the explanation involving vaccine types (C108-C110) is speculative and not directly tested. The cited vaccine efficacy differences (C109-C110) don't necessarily explain hospitalization rates without data on vaccine distribution, timing, and population characteristics. This tangential observation adds little to the main findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:08:05.526110Z"
+    },
+    {
+      "id": "bdd69817-ccdd-45fc-b018-307dc013558a",
+      "content_id": "ceb2e42c-2b76-4d83-bea1-ab20d986a349",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "COEWS was developed with a large temporal dataset (2020-2022) and externally validated on a larger intercontinental cohort. The study evaluated both coefficient-based and score-based performance, acknowledging the trade-off between usability and performance. These features position COEWS as a reference tool for clinical decisions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C113-C127 summarize study strengths appropriately. The large sample size, temporal breadth, external validation, and evaluation of both model forms are genuine strengths. However, the claim that COEWS is positioned as 'a new tool of reference' (C127) is aspirational rather than demonstrated, as no implementation or comparative effectiveness study was conducted.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:08:05.526110Z"
+    },
+    {
+      "id": "06841826-2223-4280-a75b-d982d6aee5de",
+      "content_id": "ceb2e42c-2b76-4d83-bea1-ab20d986a349",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The study received ethical approval from Hospital 12 de Octubre and Hospital Italiano de Buenos Aires, with informed consent waived per CIOMS 2019 guidelines due to minimal risk from retrospective data analysis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C25 document appropriate ethical approvals and justify consent waiver. The retrospective observational design and minimal risk rationale are appropriate for the CIOMS guideline exception.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:08:05.526110Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "2c7ce57f-87e2-49a6-bd82-131432ef9348",
+      "result_id": "f4faa517-5ea0-4eb7-8de6-b5230de636bf"
+    },
+    {
+      "claim_id": "0a5859a1-dfb3-4fa0-b745-8b65c8ccc23c",
+      "result_id": "f4faa517-5ea0-4eb7-8de6-b5230de636bf"
+    },
+    {
+      "claim_id": "96b7b1d7-d8ba-44ba-892a-c109962123e6",
+      "result_id": "f4faa517-5ea0-4eb7-8de6-b5230de636bf"
+    },
+    {
+      "claim_id": "b5578fb7-1177-4376-84be-fef186e5a477",
+      "result_id": "f4faa517-5ea0-4eb7-8de6-b5230de636bf"
+    },
+    {
+      "claim_id": "c42b1b96-0e84-4f1b-9cb0-ba0e24d35ca7",
+      "result_id": "f4faa517-5ea0-4eb7-8de6-b5230de636bf"
+    },
+    {
+      "claim_id": "4bb4d350-feff-4061-8098-e5a28cf5e64f",
+      "result_id": "f4faa517-5ea0-4eb7-8de6-b5230de636bf"
+    },
+    {
+      "claim_id": "db1f0111-5892-4084-a22c-e8818f67b18e",
+      "result_id": "f4faa517-5ea0-4eb7-8de6-b5230de636bf"
+    },
+    {
+      "claim_id": "1237d49a-9777-41b4-a97d-be85e468a255",
+      "result_id": "f4faa517-5ea0-4eb7-8de6-b5230de636bf"
+    },
+    {
+      "claim_id": "0c2dd7ea-865f-4f5d-87be-aaffc7087976",
+      "result_id": "f4faa517-5ea0-4eb7-8de6-b5230de636bf"
+    },
+    {
+      "claim_id": "96333061-4859-4eaf-96fd-8d490778b101",
+      "result_id": "f4faa517-5ea0-4eb7-8de6-b5230de636bf"
+    },
+    {
+      "claim_id": "76eb2b7c-52e5-4599-8bcc-fb4add96a083",
+      "result_id": "f4faa517-5ea0-4eb7-8de6-b5230de636bf"
+    },
+    {
+      "claim_id": "920443a7-cf2f-4a1f-928b-d70f40f43fef",
+      "result_id": "f4faa517-5ea0-4eb7-8de6-b5230de636bf"
+    },
+    {
+      "claim_id": "c6a3a5da-c67f-4430-9c5a-ea37f981b907",
+      "result_id": "f4faa517-5ea0-4eb7-8de6-b5230de636bf"
+    },
+    {
+      "claim_id": "6f88e198-8794-435b-ba35-571c458129d9",
+      "result_id": "f4faa517-5ea0-4eb7-8de6-b5230de636bf"
+    },
+    {
+      "claim_id": "62fdcbc6-c28f-4694-8b3c-10ac73a19fdf",
+      "result_id": "f4faa517-5ea0-4eb7-8de6-b5230de636bf"
+    },
+    {
+      "claim_id": "5e81c198-83c6-4560-835b-cddcd9ff26fa",
+      "result_id": "f4faa517-5ea0-4eb7-8de6-b5230de636bf"
+    },
+    {
+      "claim_id": "31469bf3-7908-4b77-8b53-3b824ada755f",
+      "result_id": "f4faa517-5ea0-4eb7-8de6-b5230de636bf"
+    },
+    {
+      "claim_id": "b9caa50f-0733-4a37-b6f3-4e116b4a9d54",
+      "result_id": "f4faa517-5ea0-4eb7-8de6-b5230de636bf"
+    },
+    {
+      "claim_id": "fbe5fc73-80b4-4630-9911-cfe91bc72ad0",
+      "result_id": "f4faa517-5ea0-4eb7-8de6-b5230de636bf"
+    },
+    {
+      "claim_id": "2ce4b955-59ea-4595-b220-16a65c106427",
+      "result_id": "f4faa517-5ea0-4eb7-8de6-b5230de636bf"
+    },
+    {
+      "claim_id": "41203b29-4787-4b5d-965d-1b576aedcb88",
+      "result_id": "f4faa517-5ea0-4eb7-8de6-b5230de636bf"
+    },
+    {
+      "claim_id": "a6755330-34e0-413e-84e9-c411461f998b",
+      "result_id": "f4faa517-5ea0-4eb7-8de6-b5230de636bf"
+    },
+    {
+      "claim_id": "30caaaaf-d54b-4d06-bf0b-562549b51c95",
+      "result_id": "f4faa517-5ea0-4eb7-8de6-b5230de636bf"
+    },
+    {
+      "claim_id": "81f061b6-f3bb-4d32-adea-6653070e6bfc",
+      "result_id": "f4faa517-5ea0-4eb7-8de6-b5230de636bf"
+    },
+    {
+      "claim_id": "e3660fa9-3e04-4135-a438-94aa523e788d",
+      "result_id": "005478b7-7aa2-433e-9139-605c71558619"
+    },
+    {
+      "claim_id": "0a711a86-a29e-4abf-87ca-276990bef70b",
+      "result_id": "005478b7-7aa2-433e-9139-605c71558619"
+    },
+    {
+      "claim_id": "fe044089-7513-4609-ba03-a112fc1767fc",
+      "result_id": "005478b7-7aa2-433e-9139-605c71558619"
+    },
+    {
+      "claim_id": "1d1f63c9-cc93-4c98-856f-513927cedec4",
+      "result_id": "005478b7-7aa2-433e-9139-605c71558619"
+    },
+    {
+      "claim_id": "284d4354-6be6-42f2-8ced-dbd0579123c4",
+      "result_id": "005478b7-7aa2-433e-9139-605c71558619"
+    },
+    {
+      "claim_id": "1685fd9f-91a9-4b53-9423-edba7e662d7c",
+      "result_id": "005478b7-7aa2-433e-9139-605c71558619"
+    },
+    {
+      "claim_id": "316086bd-44e7-4f80-a7a8-53d88e546c19",
+      "result_id": "005478b7-7aa2-433e-9139-605c71558619"
+    },
+    {
+      "claim_id": "8ea14521-02fe-498b-9c71-752c0bc78b53",
+      "result_id": "005478b7-7aa2-433e-9139-605c71558619"
+    },
+    {
+      "claim_id": "b1ccf93b-91de-477c-a646-a3066b89b698",
+      "result_id": "005478b7-7aa2-433e-9139-605c71558619"
+    },
+    {
+      "claim_id": "6823d750-9f74-4d0c-853f-29dbf0828ef0",
+      "result_id": "005478b7-7aa2-433e-9139-605c71558619"
+    },
+    {
+      "claim_id": "c2711707-637e-4b25-a1fb-5ef407ef566a",
+      "result_id": "005478b7-7aa2-433e-9139-605c71558619"
+    },
+    {
+      "claim_id": "dced6cfe-8df4-47f7-ae07-3c50a3ad0301",
+      "result_id": "005478b7-7aa2-433e-9139-605c71558619"
+    },
+    {
+      "claim_id": "0768342d-5975-4141-9bf3-69a2c24fde4e",
+      "result_id": "a500c841-5f05-49ee-94aa-25a73d8fde10"
+    },
+    {
+      "claim_id": "b5822475-36b6-4518-8fc5-d38933a64169",
+      "result_id": "a500c841-5f05-49ee-94aa-25a73d8fde10"
+    },
+    {
+      "claim_id": "aaee3c16-d468-4326-acba-2a41b6d32fe2",
+      "result_id": "a500c841-5f05-49ee-94aa-25a73d8fde10"
+    },
+    {
+      "claim_id": "cc94dd49-7fed-4dbf-86e7-091967d87668",
+      "result_id": "a500c841-5f05-49ee-94aa-25a73d8fde10"
+    },
+    {
+      "claim_id": "781c418f-3369-4d7d-b4b8-6a2c5f093bc3",
+      "result_id": "a500c841-5f05-49ee-94aa-25a73d8fde10"
+    },
+    {
+      "claim_id": "b65a5b73-aaac-45fd-9e0c-c442cb3e1f0c",
+      "result_id": "a500c841-5f05-49ee-94aa-25a73d8fde10"
+    },
+    {
+      "claim_id": "34dd3e5f-b884-403a-9f38-e0582ec02b19",
+      "result_id": "a500c841-5f05-49ee-94aa-25a73d8fde10"
+    },
+    {
+      "claim_id": "1721d102-2865-4e10-8c9e-de8436b060b2",
+      "result_id": "a500c841-5f05-49ee-94aa-25a73d8fde10"
+    },
+    {
+      "claim_id": "ee35af32-0fc0-4367-9ea3-485c92804932",
+      "result_id": "a500c841-5f05-49ee-94aa-25a73d8fde10"
+    },
+    {
+      "claim_id": "5f61c8c6-c85b-40e6-8d12-9a6cbba696c1",
+      "result_id": "a500c841-5f05-49ee-94aa-25a73d8fde10"
+    },
+    {
+      "claim_id": "50c13288-cfc1-474b-b3e4-73c070bd6959",
+      "result_id": "a500c841-5f05-49ee-94aa-25a73d8fde10"
+    },
+    {
+      "claim_id": "ecc7fc6d-af81-4252-980e-08676996e5a1",
+      "result_id": "f38d4ca6-52f8-4ec4-bcf4-41b69b13d9da"
+    },
+    {
+      "claim_id": "abc59f4c-55b7-4a89-a606-6b9074a88694",
+      "result_id": "f38d4ca6-52f8-4ec4-bcf4-41b69b13d9da"
+    },
+    {
+      "claim_id": "c421a0f6-8a9d-4313-a6fc-ed93f0b3cdf8",
+      "result_id": "f38d4ca6-52f8-4ec4-bcf4-41b69b13d9da"
+    },
+    {
+      "claim_id": "5773b5a1-6414-4cf4-8408-cab35052f18c",
+      "result_id": "f38d4ca6-52f8-4ec4-bcf4-41b69b13d9da"
+    },
+    {
+      "claim_id": "171a624d-744f-4924-97ab-4b2c4887a66a",
+      "result_id": "f38d4ca6-52f8-4ec4-bcf4-41b69b13d9da"
+    },
+    {
+      "claim_id": "a75b6934-d0ee-4555-8258-43b5035fb1ea",
+      "result_id": "f38d4ca6-52f8-4ec4-bcf4-41b69b13d9da"
+    },
+    {
+      "claim_id": "3f54e525-166d-4c28-9151-21973c8681a7",
+      "result_id": "f38d4ca6-52f8-4ec4-bcf4-41b69b13d9da"
+    },
+    {
+      "claim_id": "2c818709-5a43-4c65-b38f-f176f1497710",
+      "result_id": "d6d0107b-7e29-40eb-ac71-2269a477693e"
+    },
+    {
+      "claim_id": "26884f55-92bd-4647-aaf6-9b90f1221ccc",
+      "result_id": "d6d0107b-7e29-40eb-ac71-2269a477693e"
+    },
+    {
+      "claim_id": "16d5f3a7-a88d-480f-b142-86f3b68f6108",
+      "result_id": "d6d0107b-7e29-40eb-ac71-2269a477693e"
+    },
+    {
+      "claim_id": "248656b6-3152-4a2b-bad9-4ec6ce9aa1f9",
+      "result_id": "d6d0107b-7e29-40eb-ac71-2269a477693e"
+    },
+    {
+      "claim_id": "4278cb0d-9126-4509-bfb8-a886e28cc95a",
+      "result_id": "d6d0107b-7e29-40eb-ac71-2269a477693e"
+    },
+    {
+      "claim_id": "a29979dc-05d9-4ea7-92a1-f3fde3274424",
+      "result_id": "d6d0107b-7e29-40eb-ac71-2269a477693e"
+    },
+    {
+      "claim_id": "442b75e1-ad93-463d-bbde-8e01d8594cad",
+      "result_id": "d6d0107b-7e29-40eb-ac71-2269a477693e"
+    },
+    {
+      "claim_id": "94803710-b23a-421c-ba85-7bbe002144d0",
+      "result_id": "d6d0107b-7e29-40eb-ac71-2269a477693e"
+    },
+    {
+      "claim_id": "4b607ee6-bbc2-4d83-bae9-767e05f0f4e2",
+      "result_id": "d6d0107b-7e29-40eb-ac71-2269a477693e"
+    },
+    {
+      "claim_id": "54ebed6e-604d-4d70-b3ed-5511eb4acd02",
+      "result_id": "cceb5120-4240-43cc-8dc3-488b2557b9ff"
+    },
+    {
+      "claim_id": "6be3a078-6b96-4dda-95f4-c2f25e0e286d",
+      "result_id": "cceb5120-4240-43cc-8dc3-488b2557b9ff"
+    },
+    {
+      "claim_id": "d221baea-2c04-46a3-98bf-ee9d1116d66d",
+      "result_id": "cceb5120-4240-43cc-8dc3-488b2557b9ff"
+    },
+    {
+      "claim_id": "4144c288-e747-421d-9f52-778f7255c0fd",
+      "result_id": "cceb5120-4240-43cc-8dc3-488b2557b9ff"
+    },
+    {
+      "claim_id": "0d149d82-b138-41a4-a149-54c23c8ee9bf",
+      "result_id": "cceb5120-4240-43cc-8dc3-488b2557b9ff"
+    },
+    {
+      "claim_id": "f0b3563e-a0f9-4629-9264-2894d8a41f5d",
+      "result_id": "cceb5120-4240-43cc-8dc3-488b2557b9ff"
+    },
+    {
+      "claim_id": "e83a50f8-080e-40ca-a12b-077e5d1fad7f",
+      "result_id": "cceb5120-4240-43cc-8dc3-488b2557b9ff"
+    },
+    {
+      "claim_id": "5e14cbe6-2882-4fde-9beb-5471ef907d6b",
+      "result_id": "f883f611-0151-457b-ba84-4d8f3e5cc874"
+    },
+    {
+      "claim_id": "2879ce19-bbdb-4e8c-8df4-1b27dc0b0945",
+      "result_id": "f883f611-0151-457b-ba84-4d8f3e5cc874"
+    },
+    {
+      "claim_id": "da49f778-dc6b-42eb-83fc-9b2d8fd22e33",
+      "result_id": "f883f611-0151-457b-ba84-4d8f3e5cc874"
+    },
+    {
+      "claim_id": "8e8e23ea-f231-41c0-b268-5acb427b33ee",
+      "result_id": "f883f611-0151-457b-ba84-4d8f3e5cc874"
+    },
+    {
+      "claim_id": "26884f55-92bd-4647-aaf6-9b90f1221ccc",
+      "result_id": "f883f611-0151-457b-ba84-4d8f3e5cc874"
+    },
+    {
+      "claim_id": "16d5f3a7-a88d-480f-b142-86f3b68f6108",
+      "result_id": "f883f611-0151-457b-ba84-4d8f3e5cc874"
+    },
+    {
+      "claim_id": "6b2cd183-9d49-4c4f-a436-768aaf3eed7d",
+      "result_id": "e0eff37b-e1c0-434f-9f64-b327c4173f89"
+    },
+    {
+      "claim_id": "76a375ee-0993-4eed-9733-29e6adda0a01",
+      "result_id": "e0eff37b-e1c0-434f-9f64-b327c4173f89"
+    },
+    {
+      "claim_id": "8d1f5711-5d51-43b4-8163-32103588bcfb",
+      "result_id": "06585b38-ad06-4911-b160-0e3ff1f7692c"
+    },
+    {
+      "claim_id": "9a447ac3-683e-4d3e-a1fc-9aa188724811",
+      "result_id": "06585b38-ad06-4911-b160-0e3ff1f7692c"
+    },
+    {
+      "claim_id": "1af9ed67-e76b-408c-bb8f-8d0eb82bbda6",
+      "result_id": "06585b38-ad06-4911-b160-0e3ff1f7692c"
+    },
+    {
+      "claim_id": "ff1b3639-4d77-4dab-9ba4-8a541f8ea40c",
+      "result_id": "06585b38-ad06-4911-b160-0e3ff1f7692c"
+    },
+    {
+      "claim_id": "762478d0-f976-4379-a653-c5dcba0da2c8",
+      "result_id": "8313be90-980c-43f2-b08c-6ae92280fd7d"
+    },
+    {
+      "claim_id": "984ea362-ddde-4a83-af43-46ba5521dc0b",
+      "result_id": "8313be90-980c-43f2-b08c-6ae92280fd7d"
+    },
+    {
+      "claim_id": "79bb573e-1142-4552-bc0a-6d8ec1ae0e50",
+      "result_id": "8313be90-980c-43f2-b08c-6ae92280fd7d"
+    },
+    {
+      "claim_id": "ec100a88-40ca-4105-90c1-3f22252201c5",
+      "result_id": "8313be90-980c-43f2-b08c-6ae92280fd7d"
+    },
+    {
+      "claim_id": "5038a681-474e-49bc-aadc-436029cf1bdd",
+      "result_id": "8313be90-980c-43f2-b08c-6ae92280fd7d"
+    },
+    {
+      "claim_id": "3fedc15f-2f06-4c02-868a-05b73296dd14",
+      "result_id": "8313be90-980c-43f2-b08c-6ae92280fd7d"
+    },
+    {
+      "claim_id": "40b08512-c33c-4f80-9136-7f803d1586b7",
+      "result_id": "8313be90-980c-43f2-b08c-6ae92280fd7d"
+    },
+    {
+      "claim_id": "c940baca-0120-45fc-998d-70ed92579139",
+      "result_id": "25929393-640f-4289-9f4e-584bacb0e979"
+    },
+    {
+      "claim_id": "ef6bb39c-5a44-4d54-974f-38112b9760d9",
+      "result_id": "25929393-640f-4289-9f4e-584bacb0e979"
+    },
+    {
+      "claim_id": "38cd64c8-ed0e-410b-960c-8767ee2d4c16",
+      "result_id": "25929393-640f-4289-9f4e-584bacb0e979"
+    },
+    {
+      "claim_id": "28f2bcbe-2da9-4924-93fd-3050d8e7f899",
+      "result_id": "25929393-640f-4289-9f4e-584bacb0e979"
+    },
+    {
+      "claim_id": "32ca7009-9356-4176-b617-861ddee7d275",
+      "result_id": "25929393-640f-4289-9f4e-584bacb0e979"
+    },
+    {
+      "claim_id": "be752765-3fd5-4a99-abb1-50d340b6ca57",
+      "result_id": "25929393-640f-4289-9f4e-584bacb0e979"
+    },
+    {
+      "claim_id": "231d5417-e0e9-4f3f-8eda-04cb34a2e691",
+      "result_id": "25929393-640f-4289-9f4e-584bacb0e979"
+    },
+    {
+      "claim_id": "6cb1393e-eab4-498e-816a-c69a2269c733",
+      "result_id": "25929393-640f-4289-9f4e-584bacb0e979"
+    },
+    {
+      "claim_id": "6e446e7a-4f8b-4b76-b540-ff8b2c8e4afe",
+      "result_id": "25929393-640f-4289-9f4e-584bacb0e979"
+    },
+    {
+      "claim_id": "07762b23-d94f-47ef-a15a-1099ddf6c8aa",
+      "result_id": "25929393-640f-4289-9f4e-584bacb0e979"
+    },
+    {
+      "claim_id": "4aef9767-7041-4484-ae8e-1f0cbe837358",
+      "result_id": "25929393-640f-4289-9f4e-584bacb0e979"
+    },
+    {
+      "claim_id": "f3beb44b-46b6-4d85-857b-2de281ea3277",
+      "result_id": "25929393-640f-4289-9f4e-584bacb0e979"
+    },
+    {
+      "claim_id": "a53e848a-72ce-4863-a6f5-c8d65f8cf6f9",
+      "result_id": "25929393-640f-4289-9f4e-584bacb0e979"
+    },
+    {
+      "claim_id": "2a888b72-5e84-48e9-9f6f-85ef8e49c604",
+      "result_id": "25929393-640f-4289-9f4e-584bacb0e979"
+    },
+    {
+      "claim_id": "588a3b88-5354-4560-b696-96c922e313ec",
+      "result_id": "25929393-640f-4289-9f4e-584bacb0e979"
+    },
+    {
+      "claim_id": "d64b3635-da81-456c-a923-ea8d2698f23d",
+      "result_id": "25929393-640f-4289-9f4e-584bacb0e979"
+    },
+    {
+      "claim_id": "7e545bac-3ae7-49ee-81a0-8321686f7606",
+      "result_id": "25929393-640f-4289-9f4e-584bacb0e979"
+    },
+    {
+      "claim_id": "7a63fced-977c-4aba-975d-dde4e5c59470",
+      "result_id": "f0a94f67-8467-430a-8d5a-af5f4f98f04e"
+    },
+    {
+      "claim_id": "272714ff-84ac-45c3-9f25-642a20c4a161",
+      "result_id": "f0a94f67-8467-430a-8d5a-af5f4f98f04e"
+    },
+    {
+      "claim_id": "3d3ef099-a85f-401b-87e8-e9a570911e5d",
+      "result_id": "f0a94f67-8467-430a-8d5a-af5f4f98f04e"
+    },
+    {
+      "claim_id": "744ec981-eac9-484e-b4e0-5b5977639753",
+      "result_id": "f0a94f67-8467-430a-8d5a-af5f4f98f04e"
+    },
+    {
+      "claim_id": "159ff503-7b89-42b5-ba2d-794ef20be1e3",
+      "result_id": "f0a94f67-8467-430a-8d5a-af5f4f98f04e"
+    },
+    {
+      "claim_id": "c808d5dd-016b-43a6-9b70-2964c6db354a",
+      "result_id": "f0a94f67-8467-430a-8d5a-af5f4f98f04e"
+    },
+    {
+      "claim_id": "ad93df8b-35f5-41a9-8425-adff8d159c3d",
+      "result_id": "f0a94f67-8467-430a-8d5a-af5f4f98f04e"
+    },
+    {
+      "claim_id": "345cc72e-f59f-48d3-b7cf-59f3920b0446",
+      "result_id": "01f83365-3846-4f94-bf94-a47a0a235208"
+    },
+    {
+      "claim_id": "73784ae6-2618-4bad-aedd-8a1ad4896391",
+      "result_id": "01f83365-3846-4f94-bf94-a47a0a235208"
+    },
+    {
+      "claim_id": "e9d15e20-ac26-40c7-923c-09fb98198b02",
+      "result_id": "01f83365-3846-4f94-bf94-a47a0a235208"
+    },
+    {
+      "claim_id": "213e454a-9707-4050-af54-54ccdebe7f52",
+      "result_id": "01f83365-3846-4f94-bf94-a47a0a235208"
+    },
+    {
+      "claim_id": "89c50446-4c29-46c7-ba14-01e27b66e792",
+      "result_id": "bdd69817-ccdd-45fc-b018-307dc013558a"
+    },
+    {
+      "claim_id": "d6119b76-dfc8-439c-a1aa-a4649162c749",
+      "result_id": "bdd69817-ccdd-45fc-b018-307dc013558a"
+    },
+    {
+      "claim_id": "cbacefe9-c2aa-440a-ba06-023dd2877c00",
+      "result_id": "bdd69817-ccdd-45fc-b018-307dc013558a"
+    },
+    {
+      "claim_id": "a1384a5a-816c-4927-81e8-6aca0a574fa3",
+      "result_id": "bdd69817-ccdd-45fc-b018-307dc013558a"
+    },
+    {
+      "claim_id": "3f2d3c2a-3d75-4904-82fa-1df877596679",
+      "result_id": "bdd69817-ccdd-45fc-b018-307dc013558a"
+    },
+    {
+      "claim_id": "17689843-3453-4639-bbe0-dab6bdcf7e1c",
+      "result_id": "06841826-2223-4280-a75b-d982d6aee5de"
+    },
+    {
+      "claim_id": "9d811773-0ede-4927-9834-a5a4f8309227",
+      "result_id": "06841826-2223-4280-a75b-d982d6aee5de"
+    },
+    {
+      "claim_id": "b38a1a01-fa26-476a-9da9-7d0af178e0f8",
+      "result_id": "06841826-2223-4280-a75b-d982d6aee5de"
+    },
+    {
+      "claim_id": "0cf50c30-c419-4e0a-81a3-dfc6a79adcad",
+      "result_id": "06841826-2223-4280-a75b-d982d6aee5de"
+    }
+  ],
+  "comparisons": []
+}

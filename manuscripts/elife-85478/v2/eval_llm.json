@@ -1,0 +1,326 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "The manuscript provides background on intestinal epithelial biology, including stem cell organization, signaling pathways (Wnt, BMP, Notch, Hippo), and the clinical relevance of epithelial dysfunction in disease and drug toxicity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C16 are all supported by appropriate citations to prior literature. These claims establish the biological context and motivation for the modeling work. They accurately represent established knowledge in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Prior agent-based models (ABMs) of the intestinal crypt have been developed with varying features, including fixed Paneth cells, asymmetric stem cell division, neutral drift dynamics, and Wnt/Notch signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C21 accurately describe prior modeling work with appropriate citations (Meineke et al. 2001, Pitt-Francis et al. 2009, Buske et al. 2011). This establishes the context for the current model's novelty.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "The authors present a lattice-free ABM that integrates multiple signaling pathways (Wnt, Notch, BMP, YAP-Hippo, ZNRF3/RNF43) and cell cycle dynamics to simulate stem cell niche ablation/recovery and drug-induced toxicity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C30 describe the model architecture and are supported by the model implementation, figures, and appropriate citations. The model description is comprehensive and the features are demonstrated in subsequent results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "The model implements Wnt signaling as surface-tethered signals that split between daughter cells, and Notch-mediated lateral inhibition that creates a checkerboard pattern of Paneth and stem cells, with cell fate determined by Wnt and Notch levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C38 describe the Wnt and Notch signaling implementation with appropriate citations (Farin et al. 2016, VanDussen et al. 2012, Tian et al. 2015, etc.). The mechanisms are biologically plausible and consistent with experimental observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "The model implements YAP-Hippo-mediated contact inhibition through mechanical pressure affecting cell cycle duration, with Paneth cells creating high pressure in the niche. A ZNRF3/RNF43-like feedback mechanism stabilizes niche size by regulating Wnt receptor turnover.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C45 describe the mechanical regulation and feedback mechanisms with appropriate citations (Gjorevski et al. 2016, Pin et al. 2015, Hao et al. 2012, Koo et al. 2012). The implementation is logical and addresses a known biological phenomenon (niche size regulation).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "The model implements a BMP signaling gradient that opposes Wnt, with BMP produced by mesenchymal cells in response to enterocyte-derived signals. This creates a negative feedback loop regulating the proliferative compartment size, resulting in progenitors dividing ~4 times before differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C53 describe the BMP gradient implementation with appropriate citations (Qi et al. 2017, B\u00fcller et al. 2012, McCarthy et al. 2020, He et al. 2004). The model achieves homeostatic composition (C50, C53) as shown in Figure 1D and validated against Buske et al. 2011.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "The model incorporates the Csik\u00e1sz-Nagy cell cycle protein network, modified to respond to mechanical cues by modulating p27 levels to adjust G1 duration. Stem cells in the crowded niche have longer cycles (~21.5 hr) while transit-amplifying cells have shorter cycles (~10 hr).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C66 describe the cell cycle implementation with appropriate citations (Csik\u00e1sz-Nagy et al. 2006, Wright and Alison 1984, Morgan and Morgan 2007, Zheng et al. 2008). The p27 hypothesis (C65) is explicitly stated as such and supported by C66. The mechanism is biologically plausible.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "The model successfully replicates BrdU tracking and Ki-67 staining patterns observed in mouse experiments, demonstrating that it captures spatiotemporal patterns of cell proliferation, differentiation, and migration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67 and C71 report successful validation against experimental data (Parker et al. 2017, 2019) as shown in Figures 2E and 2F. Claims C68-C70 correctly describe Ki-67 biology with appropriate citations. The validation demonstrates model fidelity to experimental observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "The model simulates stem cell ablation and recovery, showing that Paneth cells (60%), absorptive progenitors (30%), and secretory progenitors (10%) dedifferentiate to regenerate the niche. The model replicates experimental observations including delayed villus recovery and increased retrograde cell motion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C90 describe stem cell ablation simulations that match experimental findings from Tan et al. 2021 (Figures 3A-C). The dedifferentiation proportions (C84) and retrograde motion patterns (C85-C86) are model predictions consistent with experimental observations (Azkanaz et al. 2022). The results demonstrate the model's ability to capture injury-recovery dynamics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "The model simulates CDK1 inhibition, showing that disruption of cyclins A and B leads to oversized cells, cell cycle arrest, or mitotic death, ultimately reducing crypt cell numbers and villus turnover.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C103 describe CDK1 inhibition simulations with appropriate background citations (Malumbres 2014, Santamar\u00eda et al. 2007, Ullah et al. 2008, de Medeiros et al. 2022). The model predictions (C100-C102) are shown in Figure 4 and are mechanistically consistent with the cell cycle disruption. This demonstrates multi-scale prediction capability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "The model simulates 5-FU toxicity by implementing DNA and RNA damage from metabolites FdUTP and FUTP, leading to cell cycle disruption, apoptosis, and loss of epithelial integrity. Model predictions match experimental observations of Ki-67+ cell decline and recovery, with BMP-mediated feedback explaining proliferative rebound.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C118 describe 5-FU simulations with appropriate citations (Longley et al. 2003, Pritchard et al. 1997, Jardi et al. 2023). Model predictions (C112-C117) match experimental data as shown in Figure 5E-G. The BMP feedback mechanism (C114) provides mechanistic explanation for the rebound effect. This demonstrates practical application to drug toxicity prediction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "Loss of epithelial barrier integrity triggers chemotherapy-induced diarrhea, which occurs at the 5-FU doses used in this study in both mice and patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C121 connect the model predictions to clinical outcomes with appropriate citations (McQuade et al. 2016, Jardi et al. 2023, Morawska et al. 2018). This establishes clinical relevance of the modeling work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138"
+    ],
+    "result": "The Discussion summarizes the model's novel features including ZNRF3/RNF43 feedback, surface-tethered Wnt signaling, BMP counter-gradient, cell cycle protein dynamics, and mechanical regulation of cell cycle duration. The model integrates these mechanisms to simulate homeostasis and injury responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122-C138 summarize the model features with appropriate citations. These are restatements of mechanisms described earlier and validated through the results. The summary accurately reflects the model's capabilities demonstrated in the Results section.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144"
+    ],
+    "result": "The authors propose that the model can be applied to predict drug-induced intestinal toxicity, optimize dosing schedules, and test hypotheses about organoid responses. The model can be extended to incorporate additional pathways and mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C139-C144 are forward-looking statements about potential applications (marked as SPECULATION in evidence_type). While the 5-FU and CDK1 examples demonstrate proof-of-concept, broader claims about drug development applications (C139-C141) and organoid integration (C142-C143) remain to be validated. These are reasonable extrapolations but not yet demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C145",
+      "C146",
+      "C147"
+    ],
+    "result": "BrdU is a thymidine analogue that incorporates into DNA during S-phase, is transmitted to daughter cells, and becomes undetectable after 4-5 cell divisions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C145-C147 correctly describe BrdU biology with appropriate citations (Nowakowski et al. 1989, Gratzner 1982, Wilson et al. 2008). This provides methodological context for the validation experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C148"
+    ],
+    "result": "The model has been deposited in BioModels (MODEL2212120002).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C148 states model availability with appropriate citation (Malik-Sheriff et al. 2020). This supports reproducibility of the work.",
+    "result_type": "MINOR"
+  }
+]

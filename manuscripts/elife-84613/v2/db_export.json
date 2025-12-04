@@ -1,0 +1,1909 @@
+{
+  "submission": {
+    "id": "5480b0dc-2c65-4656-93d7-af1915195e07",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-04T04:05:54.023341Z",
+    "updated_at": "2025-12-04T04:05:54.023341Z"
+  },
+  "content": [
+    {
+      "id": "2885399d-9210-4ab8-ae44-f408e1ba885c",
+      "submission_id": "5480b0dc-2c65-4656-93d7-af1915195e07",
+      "content_type": "manuscript",
+      "content_text": "# Affected cell types for hundreds of Mendelian diseases revealed by analysis of human and mouse single-cell data\n\n## Authors\n\n- Idan Hekselman<sup>1</sup> ([ORCID: 0000-0003-0529-7838](https://orcid.org/0000-0003-0529-7838))\n- Assaf Vital<sup>1</sup>\n- Maya Ziv-Agam<sup>1</sup>\n- Lior Kerber<sup>1</sup> ([ORCID: 0009-0005-0583-5618](https://orcid.org/0009-0005-0583-5618))\n- Ido Yairi<sup>1</sup>\n- Esti Yeger-Lotem<sup>1</sup> ([ORCID: 0000-0002-8279-7898](https://orcid.org/0000-0002-8279-7898)) \u2020\n\n### Affiliations\n\n1. Department of Clinical Biochemistry and Pharmacology, Ben-Gurion University of the Negev Be\u2019er Sheva Israel ([ROR:05tkyf982](https://ror.org/05tkyf982))\n2. The National Institute for Biotechnology in the Negev, Ben-Gurion University of the Negev Be\u2019er Sheva Israel ([ROR:05tkyf982](https://ror.org/05tkyf982))\n\n\u2020 Corresponding author\n\n## Abstract\n\nMendelian diseases tend to manifest clinically in certain tissues, yet their affected cell types typically remain elusive. Single-cell expression studies showed that overexpression of disease-associated genes may point to the affected cell types. Here, we developed a method that infers disease-affected cell types from the preferential expression of disease-associated genes in cell types (PrEDiCT). We applied PrEDiCT to single-cell expression data of six human tissues, to infer the cell types affected in Mendelian diseases. Overall, we inferred the likely affected cell types for 328 diseases. We corroborated our findings by literature text-mining, expert validation, and recapitulation in mouse corresponding tissues. Based on these findings, we explored characteristics of disease-affected cell types, showed that diseases manifesting in multiple tissues tend to affect similar cell types, and highlighted cases where gene functions could be used to refine inference. Together, these findings expand the molecular understanding of disease mechanisms and cellular vulnerability.\n\n## Introduction\n\nHereditary diseases affect 6% of the world population and typically lack cure. Identification of their genetic and molecular basis is challenging, limiting their diagnosis and treatment (Ferreira, 2019). Knowledge of tissues and cell types that manifest with pathophysiological changes in patients was shown to facilitate the understanding of disease mechanisms (Hekselman and Yeger-Lotem, 2020). For example, transcriptomic analysis of muscle tissues helped to genetically diagnose patients with rare muscle disorders (Cummings et al., 2017). Likewise, identification of a rare cell type affected by cystic fibrosis opened new avenues for treatment (Montoro et al., 2018; Plasschaert et al., 2018). However, whereas affected tissues may be evident for many Mendelian diseases, the exact cell types that manifest with pathophysiological changes within affected tissues are often unknown.\n\nOwing to massive single-cell profiling of mammalian tissues (Jones et al., 2022), investigation of diseases in cellular contexts has become feasible. In particular, it was shown that genes whose aberration leads to disease (i.e., disease genes) tend to be expressed preferentially in cell types that express pathology (denoted disease-affected cell types). For instance, 21/29 mouse homologs of human disease genes associated with nephrotic syndrome were shown to be upregulated in podocytes, the disease-relevant renal cell type (Park et al., 2018). In an inspiring manner, cell-type-specific expression of the cystic fibrosis gene CFTR in ionocytes of human and mouse airways revealed their role in cystic fibrosis (Montoro et al., 2018; Plasschaert et al., 2018). Likewise, the preferential expression of disease genes for 18 Mendelian muscle disorders revealed disease-affected muscle cell types (Eraslan et al., 2022). Thus, preferential expression of disease genes may serve as an indicator of disease-affected cell types, and has the potential to shed light on the cellular mechanisms that underlie Mendelian diseases.\n\nPreferential expression of disease- and trait-associated genes has been used to illuminate cell types affected by complex traits in previously published studies (Dai et al., 2021; Eraslan et al., 2022; Jagadeesh et al., 2021; Kim-Hellmuth et al., 2020; Rouhana et al., 2021; Zhang et al., 2022). Rouhana et al., 2021, presented the ECLIPSER method, which tested whether the expression of genes mapped to trait-associated loci was enriched in specific cell types of a given tissue, when compared to a background set of genes associated with unrelated traits. The CSEA-DB repository applied a cell-type-specific enrichment analysis (CSEA): They assessed cell-type specificity of genes using t-statistics, and then tested whether the top 5% cell-type-specific genes were overrepresented in trait-associated genes (Dai et al., 2021). Eraslan et al., 2022, associated traits to relevant cell types by defining cell-type-specific gene modules and assessing their overlap with trait-associated genes. Zhang et al., 2022, introduced a polygenic single-cell disease relevance score (scDRS), which identified cells exhibiting excess expression of trait-associated genes. Interestingly, expression of trait-associated genes was weighted by trait-association and inversely by technical noise level in single-cell expression data, and the resulting polygenic scDRS score was compared to empirical distribution of control gene sets and all cells. Jagadeesh et al., 2022, presented sc-linker, which constructed continuous-valued gene sets that were differentially expressed in a cell type from healthy samples versus other cell types or versus the same cell type from disease samples, and then linked them to trait-related SNPs. Additional studies compared the differential expression of genes in cell types of diseased versus healthy tissues (Mathys et al., 2019; Segerstolpe et al., 2016) and showed that many trait-associated genes were cell-type specific (Smillie et al., 2019). Guan et al., 2021, defined cell-type specific gene interaction modules, which were overlapped with disease-associated genes. Lastly, the SC2disease database compared gene expression differences between cell types of diseased and healthy samples, among cell types of diseased samples, and among cell types of samples with varying degree of disease severity (Zhao et al., 2021). However, most efforts rarely validated or corroborated the inferred associations in an extensive manner.\n\nHere, we developed a method that infers disease-affected cell types from the Preferential Expression of Disease genes in Cell Types (PrEDiCT). The summarized preferential expression of disease genes was compared to empirical distribution of control gene sets in the same cell type, allowing for the inference of associations between diseases and likely affected cell types. We applied PrEDiCT to 1,140 Mendelian diseases that manifest in six human tissues and inferred likely affected cell types for 328 diseases. We corroborated our findings by text-mining of PubMed records, expert curation, and by their recapitulation in mice. The resulting scheme and large-scale resource allowed us to show that diseases manifesting in multiple tissues tend to affect similar cell types, to refine inference of disease-affected cell types by focusing on gene functions, and to explore characteristics of disease-affected cell types.\n\n## Results\n\n### Preferential expression of disease genes indicates disease-affected cell types\n\nTo identify the cell types affected by Mendelian diseases with known disease genes, we developed the PrEDiCT scoring scheme (Figure 1A). Below we describe the PrEDiCT workflow, including data acquisition, PrEDiCT score calculation, and validation.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/84613/elife-84613-fig1-v2.jpg)\n\n**Figure 1.:** (A) The PrEDiCT workflow. In step 1, we analyzed single-cell expression data from six human tissues and 129 cell types, and associated 1,140 Mendelian diseases with their affected tissues. In step 2, we calculated the preferential expression of disease genes in cell types of disease-affected tissues, used their median to produce the PrEDiCT score per disease and cell type, and assessed significance of each score. In step 3, we validated likely disease\u2013cell-type associations (i.e., PrEDiCT \u22651, FDR <0.1) via literature text-mining, expert curation, and analysis of mouse single-cell expression data. (B) The distribution of PrEDiCT scores in human (median \u20130.25\u00b10.93). (C) The preferential expression of genes causal for primary ciliary dyskinesia (PCD) and the PrEDiCT scores of PCD in lung cell types. Preferential expression values and the percentage of cells expressing a gene are indicated by the color and the size of each circle, respectively. The resulting PrEDiCT score is displayed on the right, colored by the score value. Bold outline marks likely disease-affected cell types. (D) PrEDiCT scores of Heinz body anemias across human bone marrow cell types depicted as described in panel C. (E) PrEDiCT scores of mitochondrial complex deficiencies across human skeletal muscle cell types depicted as described in panel C. Mitochondrial complex deficiencies were likely to affect slow and fast muscle cells, except for mitochondrial complex II deficiency whose PrEDiCT scores were highest yet insignificant in these cell types (FDR = 0.61 and 0.23, respectively). (F) False-positive (red) and false-negative (orange) rates of disease\u2013cell-type associations (y-axis) across FDR thresholds (x-axis). Rates were estimated based on literature-supported pairs. The dashed line marks the FDR cutoff for likely associations. (G) The overlap between likely disease\u2013cell-type associations (total of 489, left circle) and literature-supported associations (total of 229, right circle) out of all 34,249 possible associations. The overlap of 41 associations was significant (p<E-15, Fisher\u2019s exact test), supporting the validity of likely associations.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/84613/elife-84613-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Bar plot of the number of diseases per affected tissue that were either associated with any likely affected cell type (red) or not (orange).\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/84613/elife-84613-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** To calculate PrEDiCT scores, we first calculated the preferential expression of disease genes in each cell type relative to other cell types of the disease-affected tissue. Next, we set the PrEDiCT score of a disease in each cell type to the median preferential expression of disease genes, and applied permutation tests to assess PrEDiCT score statistical significance. Cell types with significant PrEDiCT scores \u22651 were considered as likely affected.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/84613/elife-84613-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** We considered pairs of diseases and affected tissues (briefly \u2018Disease-tissue pairs\u2019), and plotted their distribution by the number of disease genes that were expressed in that tissue. Pairs that were associated with a likely affected cell type appear in blue, otherwise in turquoise.\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/84613/elife-84613-fig1-figsupp4-v2.jpg)\n\n**Figure 1\u2014figure supplement 4.:** (A) False-positive and false-negative rates (y-axes; colored red and orange, respectively) across varying FDR thresholds (x-axis) of expert-curated disease\u2013cell-type associations. (B) The overlap between the number of likely disease\u2013cell-type associations (total of 9; left circle) and the number of expert-curated associations (total of 6; right circle). Likely disease\u2013cell-type associations were enriched for verified expert-curated pairs (5/9, 56%) relative to their frequency among the expert-analyzed pairs (6/60, 10%; p=1.3E-4, Fisher\u2019s exact test).\n\nData of annotated human single-cell transcriptomes were obtained from Tabula Sapiens (Jones et al., 2022). We focused on tissues with two or more samples with \u2265800 sequenced cells that were also sequenced in mice [(Tabula Muris, 2018); Methods]. Tissues included bone marrow, lung, skeletal muscle, spleen, tongue and trachea, and altogether were comprised of 129 cell types. Next, we associated these tissues with Mendelian diseases that affect them, based on their phenotypic abnormality annotations in Human Phenotype Ontology (HPO) database [(K\u00f6hler et al., 2021); Methods]. To assess the reliability of HPO annotations we compared them to manually curated annotations that were available in ODiseA database [(Hekselman et al., 2022); Methods]. This asserted 490 of 649 (76%) annotations available for these diseases in ODiseA, supporting the usage of HPO as an indicator of the disease-affected tissue. We then gathered the respective disease genes from the Online Mendelian Inheritance in Men (OMIM) database (Amberger et al., 2019). Overall, 1140 diseases and 2434 disease genes were associated to at least one affected tissue, with the majority associated to skeletal muscle (Figure 1\u2014figure supplement 1 and Supplementary file 1).\n\nTo calculate PrEDiCT scores, we computed the preferential expression of disease genes in each cell type relative to other cell types of the disease-affected tissue (Methods). Next, we set the PrEDiCT score of a disease in each cell type to the median preferential expression of the respective disease genes. Statistical significance of the score was determined using a permutation test (Methods; Figure 1\u2014figure supplement 2). In total, we analyzed 34,249 disease\u2013cell-type associations (Supplementary file 2). PrEDiCT score distribution is shown in Figure 1B.\n\nWe identified 489 (1.4%) \u2018likely\u2019 associations (PrEDiCT \u2265 1, FDR <0.1), covering 328/1140 diseases and 102/129 cell types. Although most likely associations involved diseases with a single disease gene, the fraction of diseases with likely associations was higher for diseases with multiple disease genes (Figure 1\u2014figure supplement 3). As proof-of-concept, primary ciliary dyskinesia (PCD), which has 31 disease genes expressed in lung and is characterized by damaged ciliary machinery in lung ciliated cells (Leigh et al., 2019), was indeed likely associated with lung ciliated cells (Figure 1C). Additionally, Heinz body anemias, which is characterized by accumulation of inclusion bodies in erythrocytes (Herman et al., 2023), was indeed likely associated with bone marrow erythrocytes (Figure 1D). Lastly, compatible with the high demand for mitochondrial activity in muscle cells, four out of five mitochondrial complex deficiencies were likely associated with slow and fast muscle cells (Figure 1E). \u2018Mitochondrial complex II deficiency\u2019 also scored highest in slow and fast muscle cells yet its PrEDiCT scores were insignificant, potentially due to the stringency of our statistical analysis (Figure 1E). As a negative control, gracile bone dysplasia that might manifest with ankyloglossia (also known as \u2018tongue-tie\u2019) is not expected to inflict on cell types of tongue tissue, and indeed no likely affected cell-type was detected (Supplementary file 2). Likewise, platelet-type bleeding disorder, which affects bone-marrow\u2013derived platelets, had no likely affected cell-type in bone-marrow since platelets and their precursor cells (megakaryocytes) were missing from that tissue.\n\nTo assess at larger scale whether likely associations indicate disease-affected cell types, we turned to literature text-mining and to expert annotations. For text-mining, we postulated that diseases and their affected cell types will co-appear in the literature more frequently than expected by chance. To estimate co-appearance, we extracted PubMed records mentioning a disease or a cell type in our dataset and tested the significance of the co-appearance of all disease\u2013cell-type pairs (Methods). Records were extracted by using Biopython package, which retrieves up to 9,999 records per term (Cock et al., 2009). We identified 229 \u2018literature-supported\u2019 pairs that co-appeared in the literature more often than expected by chance (adjusted p<0.001, Chi-squared test; Supplementary file 3). PCD, for example, co-appeared significantly with lung ciliated cells, as well as with respiratory goblet, mucous, and basal cells (the latter are precursors of the other three). Based on literature-supported pairs, we estimated the false-positive and false-negative rates. The false-positive rates for likely associations were low (Methods; Figure 1F). Likely disease\u2013cell-type associations were enriched for literature supported pairs (41/489, 8.4%) relative to all disease\u2013cell-type associations (229/34,249, 0.7%; p<E-15, Fisher\u2019s exact test; Figure 1G). Lastly, we repeated the above analyses using expert-curated annotations of disease-affected cell types, showing a low false-positive rate (Figure 1\u2014figure supplement 4A) and a higher enrichment for expert-curated associations (p=1.3E-4, Fisher\u2019s exact test; Figure 1\u2014figure supplement 4B). Altogether, these results support likely associations as indicators of disease-affected cell types.\n\n### Disease-affected cell types are recapitulated in mouse\n\nTo further assess whether PrEDiCT scores indicate disease-affected cell types, we tested whether matching cell types were likely affected in mice. For this, we downloaded mouse single-cell transcriptomes for the six tissues from Tabula Muris, 2018. These data consisted of 46 annotated cell types and some unannotated subsets (Figure 2A).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/84613/elife-84613-fig2-v2.jpg)\n\n**Figure 2.:** (A) The number of human cell types annotated by Tabula Sapiens [(Jones et al., 2022); red], and the number of mouse cell types annotated by [Tabula Muris, 2018; grey] and this study (blue). (B) The distribution of PrEDiCT scores in mouse. (C) The preferential expression of mouse orthologs of PCD disease genes and the PrEDiCT scores of PCD in mouse lung cell types. Preferential expression values and the percentage of cells expressing a gene are indicated by the color and the size of each circle, respectively. The resulting PrEDiCT score is indicated on the right colored by the score value. Bold outline marks likely disease-affected cell types. (D) PrEDiCT scores of Heinz body anemias across mouse bone marrow cell types depicted as described in panel C. (E) PrEDiCT scores of mitochondrial complex deficiencies across mouse skeletal muscle cell types depicted as described in panel C. Mitochondrial complex deficiencies were likely associated with striated muscle cells, except for mitochondrial complex II deficiency whose PrEDiCT scores were highest yet insignificant in these cell types (FDR = 0.65). (F) The correlation between PrEDiCT scores in human (X-axis) and mouse (Y-axis) cell types. Each dot represents a distinct pair. PrEDiCT scores of non-matching cell types did not correlate (left; r=\u22120.02, Spearman correlation), in contrast to PrEDiCT scores of matching cell types (right; r=0.38, p<E-15). (G) The cell types affected by the same disease in human and mouse tended to match each other (green) more than expected by chance (grey) according to 1,000 repeats in a permutation test. Error bars represent the standard deviation of the number of randomly matching cell types between the species. Adjusted **p<0.01 and ***p<0.001, permutation test.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/84613/elife-84613-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** The comparison included likely associations for diseases with expressed mouse ortholog(s), and cell types with any matching cell type in the mouse corresponding tissue. The fraction of likely disease\u2013cell-type associations that were recapitulated was similar between diseases with a single disease gene (37/62, 60%) and those with multiple disease genes (83/129, 64%; p=0.63, Fisher\u2019s exact test).\n\nTo improve the annotation of cell types, we reanalyzed the single-cell mouse transcriptomes (Methods). Altogether, we obtained 97 cell clusters across all six tissues (Supplementary file 4). Sixteen clusters overlapped considerably with cell types annotated by Tabula Muris and were thus annotated similarly. We annotated the 81 remaining clusters by careful examination of the expression of known cell-type marker genes (Methods), thereby improving cell type annotation per tissue (Figure 2A). For instance, the number of annotated cell types in skeletal muscle increased from six to 19. Newly annotated cell types included clinically relevant cell types, such as basement-membrane residing fibroblasts that are a main source of different collagens and are essential for skeletal muscle physiology (Kivirikko et al., 1995; Zou et al., 2008). Next, we aimed to identify similar cell types between human and mouse. This was based on expression of orthologous marker genes and the matchSCore2 package [Methods; (Mereu et al., 2020)]. As expected, a large variety of human cell types had a matching mouse cell type (82/129) and vice versa (70/97; Supplementary file 5). The impact of disease genes on the matching was negligible, as shown by repeating the identification of similar cell types upon excluding disease genes from the list of marker genes (Methods).\n\nNext, we tested whether diseases affected matching cell types between human and mouse. For this, we calculated PrEDiCT scores in mouse cell types, based on expression of mouse orthologs of human disease genes. The distribution of PrEDiCT scores was similar between mouse and human, and included 380/24,638 (1.5%) likely disease\u2013cell-type associations (PrEDiCT \u2265 1, FDR < 0.1; Figure 2B; Supplementary file 6). Compatible with our previous proof-of-concept cases in human, PCD likely affected mouse lung ciliated epithelial cells which match human lung ciliated cells (Figure 2C), and Heinz body anemias likely affected mouse bone marrow reticulocytes and erythroblasts which match human erythrocytes (Figure 2D). Likewise, four mitochondrial complex deficiencies likely affected mouse striated muscle cells, which matched human slow and fast muscle cells (Figure 2E). Similar to the results in human, \u2018mitochondrial complex II deficiency\u2019 scored highest in these cell types, yet the scores were insignificant (Figure 2E). We compared the PrEDiCT scores of all cell-type pairs of the corresponding tissues between the species. Whereas PrEDiCT scores of non-matching cell types did not correlate (r=\u22120.02, Spearman correlation), PrEDiCT scores of matching types were modestly correlated (r=0.38, p<E-15, Spearman correlation; Figure 2F). Of the 328 diseases with likely affected cell types in humans, 97 diseases (30%) affected matching cell types in mice, a fraction that was larger than expected by chance (adjusted p<0.01, permutation test; Figure 2G and Supplementary file 6; Methods). This enrichment, and the observation that commonly affected cell types were not biased toward specific cell types, support the validity and generality of the PrEDiCT scheme.\n\n### Diseases with multiple inflicted tissues affect similar cell types\n\nMost diseases with a likely affected cell type manifested clinically in two or more tissues, and were denoted multi-tissue diseases (168/328, 51%; Figure 3A). We suspected that these diseases affect a cell type that is similar between the disease-manifesting tissues. To test this hypothesis, we identified matching cell types between tissues, and then examined whether cell types affected by the same disease were enriched for matching cell types. Matching cell types were identified using matchSCore2 package [Methods; (Mereu et al., 2020)]. Overall, we identified 840 pairs of matching cell types between tissues, of which 52% were immunocytes, including macrophages, neutrophils, T cells, B cells, as well as endothelia and fibroblasts. Next, we examined whether the cell types likely affected by the same disease were enriched for matching cell types. We found that 18% (30/168) of the diseases likely affected at least one pair of matching cell types, a fraction higher than expected by chance (adjusted p<0.01, permutation test; Figure 3B and Figure 3\u2014figure supplement 1; Methods). For instance, chronic granulomatous disease (CGD) results in splenomegaly and pneumonia due to impaired phagocytes (i.e., neutrophils, macrophages, and monocytes; Anjani et al., 2020; Leiding and Holland, 1993). These cell types were indeed the likely affected cell types for CGD in both spleen and lung (Figure 3C). Also, CGD likely affected bone-marrow phagocytes, consistent with bone-marrow transplant being a curative treatment for this disease (Leiding and Holland, 1993).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/84613/elife-84613-fig3-v2.jpg)\n\n**Figure 3.:** (A) The numbers of diseases with likely affected cell type across tissues (Y-axis) grouped by the number of affected tissues (X-axis). (B) The number of diseases that likely affect at least one pair of matching cell types between tissues (green). This number was higher than expected by chance (dark and light grey correspond to selecting cell types at random from the first tissue or the second one, respectively) according to 1,000 repeats in a permutation test. Only pairs of tissues with \u22652 shared diseases are shown. Error bars represent the standard deviation of the number of randomly matching cell types between the tissues. Shown are maximal adjusted p-value for each pairwise randomization: **p<0.01, ***p<0.001. (C) PrEDiCT scores of cell types affected by chronic granulomatous disease (CGD) in spleen, lung, and bone marrow. Bold outline marks likely affected cell types. Likely affected cell types that were matching among the tissues were connected by green lines.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/84613/elife-84613-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Circos plot representing similarity between cell types among human tissues. Width and color of lines that connect each cell-type pair indicate the fraction of diseases likely affecting each cell type and whether the cell types match (red: matching, grey: non-matching; Supplementary file 5), respectively.\n\n### Cellular context prediction refined using gene functions\n\nSo far, we assumed that the genes underlying a disease work through a single cellular context. However, the same disease phenotype might arise from mechanisms with distinct cellular contexts. For example, the bone-marrow disease hyper-IgM immunodeficiency could arise from mutations in CD40 gene, affecting B cells, or mutations in CD40 ligand (CD40LG), affecting CD4 T cells (Yazdani et al., 2019). In such cases the PrEDiCT scheme might fail to infer the affected cell types. Indeed, only CD4 T cells were predicted as likely affected by hyper-IgM immunodeficiency (PrEDiCT = 1.6, FDR <0.048). We hypothesized that the cellular context of such \u2018multi-cellular diseases\u2019 could be revealed by separately applying the PrEDiCT scheme to subsets of disease genes with distinct functions.\n\nWe first focused on diseases that alter intercellular communication. We identified seven diseases in our dataset that were caused by mutations in genes encoding ligands and their receptors. Next, we applied PrEDiCT scheme separately to ligands and to receptors (Methods). As expected, hyper-IgM immunodeficiency was found to likely affect na\u00efve B cells through CD40 (receptor; PrEDiCT = 2.9, FDR = 0.06), and CD4\u03b1\u03b2 T cells through CD40LG (ligand; PrEDiCT = 3.7, FDR <0.001; Figure 4A). Another example is autosomal recessive limb-girdle muscular dystrophy, which is caused by mutations in laminin-\u03b12 (LAMA2) or its receptor \u03b1-dystroglycan (DAG1). By applying PrEDiCT scheme without subdividing the disease genes, we could not infer any likely affected cell type. Yet, by separately applying PrEDiCT scheme to LAMA2 (ligand) and DAG1 (receptor), we inferred mesenchymal stem cells and satellite stem cells as the likely affected cell types, respectively (PrEDiCT = 3.8 and 3.7, FDR <0.05; Figure 4B). In support of the prediction for DAG1, disruption of DAG1 in satellite stem cells has been associated with the defective muscle regeneration seen in diseased patients (Cohn et al., 2002; Servi\u00e1n-Morilla et al., 2020). In support of the prediction for LAMA2, the disease was attenuated in ligand-knockout [Col6a1(-/-)] model mice by supplying wild-type mesenchymal-stem-cell derived fibroblasts. This treatment not only restored the collagen VI of the tissue, but also rescued defects in satellite stem cells (Urciuolo et al., 2013).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/84613/elife-84613-fig4-v2.jpg)\n\n**Figure 4.:** (A) PrEDiCT scores of cell types likely affected by hyper-IgM immunodeficiency in bone marrow, calculated separately for ligand- or receptor-encoding disease genes. (B) PrEDiCT scores of cell types likely affected by autosomal recessive limb-girdle muscular dystrophy in skeletal muscle, calculated separately for ligand- and receptor-encoding disease genes. (C) PrEDiCT scores of cell types likely affected by heritable cancers in lung and trachea, calculated separately for oncogenes and tumor suppressor genes. Likely affected cell types that matched between the tissues were connected by a green line. Bold outline marks likely-affected cell types.\n\nNext, we focused on heritable cancers, where disease genes could be divided by their function to either oncogenes or tumor suppressor genes (TSGs). We retrieved from the Cancer Gene Census (Sondka et al., 2018) heritable cancers that manifest in any of the tissues in our dataset (Methods; Supplementary file 7). We first applied PrEDiCT scheme jointly to all cancer-associated genes of the same tissue, and then applied it separately to oncogenes or TSGs, which allowed us to infer distinct cell types for oncogenes and TSGs. For example, in airway cancers (lung and trachea), the joint application of PrEDiCT scheme inferred both basal cells and intermediate monocytes as likely affected. The separate application inferred basal cells as likely affected by oncogenes, and intermediate and non-classical monocytes as likely affected by TSGs (Figure 4C).\n\n### Characteristics of disease-affected cell types\n\nAre certain cell types more likely to be affected by Mendelian diseases? To answer this, we determined the \u2018susceptibility\u2019 of each cell type as the percentage of diseases affecting it out of all diseases that affect its tissue (Supplementary file 8). Most susceptible were capillary endothelial cells of the tongue (Susceptibility = 25%; Figure 5A), which were affected by diseases that result in morphologic aberrations of the tongue (e.g., telangiectasia and macroglossia). Next, we asked whether cell-type susceptibility was correlated with cell-type prevalence (i.e., the proportion of its cells out of all cells of its tissue; Supplementary file 8). The two measures did not correlate (r=\u22120.02, Pearson correlation; Figure 5A). For example, fast and slow muscle cells were the most susceptible cell types in skeletal muscle, while each accounting for less than 1% of the cells in that tissue.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/84613/elife-84613-fig5-v2.jpg)\n\n**Figure 5.:** (A) Cell-type susceptibility (Y-axis) did not correlate with cell-type prevalence (X-axis). The blue line represents linear correlation (r=\u22120.02, Pearson correlation). (B) Cell-type susceptibility varied between cell classes (p=1.5E-3, ANOVA test). Among the cell classes with many cell types shared among tissues, immunocytes and epithelia were the least susceptible, and endothelia were the most susceptible compared to other cell types (adjusted p<0.05, Mann-Whitney U test; Methods).\n\nLastly, we assessed the susceptibility of cell classes (e.g., capillary endothelial cells were classified as endothelia; Supplementary file 8). The most common cell classes were immunocytes, epithelia and endothelia covering 61, 21, and 17 cell types, respectively, in over four tissues. Cell classes had varying susceptibility (Figure 5B; p=1.5E-3, ANOVA). Among the common cell classes, immunocytes and epithelia were the least susceptible, and endothelia were the most susceptible compared to other cell types (adjusted p<0.05, Mann-Whitney U test; Methods).\n\n## Discussion\n\nHere, we presented the PrEDiCT scheme for identifying disease-affected cell types based on the cell-type preferential expression of Mendelian disease genes. Preferential expression of disease genes was previously explored in tissue contexts and was shown to characterize disease-affected tissues (Barshir et al., 2018; Barshir et al., 2014; Hekselman and Yeger-Lotem, 2020; Lage et al., 2008; Sonawane et al., 2017). Recently, cell-type preferential expression has been used to highlight potentially-affected cell types for Mendelian diseases and complex traits, often in combination with cell-type regulatory information and enrichment analyses (Dai et al., 2021; Eraslan et al., 2022; Jagadeesh et al., 2021; Kim-Hellmuth et al., 2020; Zhao et al., 2021; Rouhana et al., 2021; Zhang et al., 2022). However, large-scale in-silico validation was rarely conducted (Montoro et al., 2018; Plasschaert et al., 2018). Here, in contrast, we corroborated likely disease-affected cell types by literature text-mining (Figure 1), expert curation (Figure 1\u2014figure supplement 4), and recapitulation in mouse (Figure 2).\n\nThe use of PrEDiCT scheme to identify affected cell types has limitations. Aberrations in disease genes that are preferentially expressed in a cell type do not necessarily lead to disease phenotypes in that cell type, leading to erroneous annotation of disease-affected cell types. For example, metabolic\u2013myopathy-associated genes were upregulated in adipocytes of both muscle and breast, yet only muscle adipocytes showed myopathy phenotypes (Eraslan et al., 2022). To reduce the risk for erroneous annotations, we applied PrEDiCT only to cell types of disease-affected tissues (Figure 1\u2014figure supplement 1). To enhance the robustness of likely associations, PrEDiCT scores included the cell-type preferential expression of all disease genes, similarly to Zhang et al., 2022. For PCD, the PrEDiCT score included 31 genes, and indeed pointed to known disease-affected cell types (Figure 1C). Additionally, similarly to other RNA-based schemes, PrEDiCT is oblivious to post-translational regulation, and, since most available single-cell transcriptomic datasets do not contain full-length gene reads, PrEDiCT is also oblivious to cell-type preferential expression of alternatively spliced transcripts. Lastly, preferential expression is just one of several mechanisms that lead to tissue-selective disease manifestations (Hekselman and Yeger-Lotem, 2020). Nevertheless, by applying PrEDiCT to 1,140 diseases and single cell transcriptomes of six distinct tissues, we revealed affected cell types for 29% of the Mendelian diseases in our dataset (Supplementary file 2). Interestingly, this fits with previous observations that about 30% of Mendelian diseases manifest clinically in a tissue that overexpresses disease genes (Barshir et al., 2018; Barshir et al., 2014; Hekselman and Yeger-Lotem, 2020; Lage et al., 2008).\n\nWe supported likely disease\u2013cell-type associations by three lines of evidence. The first was text-mining of literature for co-appearance of diseases and cell-types. Text-mining enabled large-scale in-silico assessment, yet co-appearance could also reflect negative and/or speculative results. Our second line of evidence was expert curation. This analysis, although on a smaller scale, provided additional support for the relevance of likely associations (Figure 1\u2014figure supplement 4). The third line of evidence came from recapitulation of results using mouse single-cell data. Yet, since the patterns of variation across genes tend to be similar, mouse single-cell data did not provide statistically independent information. This could lead to more false-positive associations for diseases with a single disease gene. However, the fraction of associations that were recapitulated in mouse did not differ between diseases with a single or multiple disease genes, supporting this line of evidence (Figure 2\u2014figure supplement 1). Another caveat in the comparison between human and mouse was that gene expression data drove both PrEDiCT calculation and human-mouse cell-type matching. This caveat too had limited impact, since matched cell-types were almost identical upon excluding disease genes. Notably, it would be intriguing to integrate data obtained from human and mouse to increase discovery power in future applications. Altogether, the three lines of evidence provided complementary support for likely associations.\n\nOverall, 328 diseases affected 102/129 cell types. Interestingly, there was no correlation between cell type prevalence and its likelihood to be affected (Figure 5A). In particular, endothelia were more likely to be affected by diseases than other prevalent cell classes, whereas immunocytes and epithelia were the least likely to be affected among the prevalent cell classes (Figure 5B). This suggests that these cell types are either more resilient than other cell types, or, alternatively, that their impairment is lethal to the organism. To analyze this further, a cross-tissue study of 20 human tissues showed that immunocytes had similar expression signatures across tissues, in accordance with their common functions, whereas endothelia had tissue-specific expression signatures that reflect their tissue-specialized roles (Jones et al., 2022). Hence, it seems that germline impairment of immunocytes is more likely lethal, whereas the tissue-specialization of endothelia limits the impact of their germline impairment and thus facilitates overall survival. Yet, our analyses focused on diseases and cell types from six specific tissues and thus were limited in scope. The generalizability of our observations therefore awaits analysis of larger sets of diseases and cell types. In the future, once single cell technologies could offer a comprehensive coverage of expressed genes per cell, it will also be intriguing to assess disease heterogeneity across cells within a cell type.\n\nOur expansive resource of diseases and likely affected cell types could be used to interrogate disease etiologies. For example, we showed that mitochondrial diseases tend to affect muscle cells, in accordance with their energetic demands (Figure 1E). Additionally, we showed that diseases inflicting on multiple tissues likely affect similar cell types among those tissues, thereby providing a mechanistic explanation for this phenomenon (Figure 3). Lastly, we demonstrated that the inference of likely affected cell types could be refined by applying PrEDiCT scheme separately to subsets of disease genes with distinct functions. For instance, by separately analyzing oncogenes and TSGs of heritable lung and trachea cancers, we found that oncogenes likely affect basal cells, and TSGs likely affect monocytes (Figure 4C). This could suggest that tissue-constructive cells are more susceptible to oncogene mutations, whereas protective cells, such as monocytes, are more susceptible to TSG mutations. The latter is consistent with the function of monocytes in the elimination of malignant transformation of cells in different tissues (Robinson et al., 2021). Another interesting subset of diseases are those that impair intercellular communication. A recent study explored the cell types affected by monogenic muscular disorders (Eraslan et al., 2022). Consistent with their results, we found that autosomal recessive limb-girdle muscular dystrophy disrupts intercellular communication among muscle cell types, via mutations in the DAG1 receptor (Figure 4B). Yet, by applying PrEDiCT separately to the ligand of DAG1, LAMA2, we also highlighted the involvement of mesenchymal stem cells in the disease (Urciuolo et al., 2013). By exploring disease genes in appropriate cellular context, we enhanced the mechanistic understanding of disease emergence.\n\nThe associations between diseases and affected cell types, though supported by literature and recapitulated in mice, remain putative. Experimental testing could be performed in human cell lines, or in mouse models, in light of the many shared cell types between human and mouse (Figure 2). These validation experiments have a huge potential to open new directions in disease research and accelerate cell-directed gene therapy.\n\n## Methods\n\n### Human single-cell transcriptomics analysis\n\nSingle-cell transcriptomes were downloaded from Tabula Sapiens (Jones et al., 2022). We focused on tissues that consisted of \u22652 samples with \u2265800 cells and were sequenced in both human and mouse using microfluidic droplet-based 3\u2019-end technology. These tissues included bone marrow, lung, skeletal muscle, spleen, tongue, and trachea. Analysis was done using Seurat package v4.0.5 (Hao et al., 2021). Per tissue, gene expression levels were normalized cell-wise using the NormalizeData function. Henceforth, we considered only genes with normalized counts \u2265 0.05 in\u226510% of cells of at least one cell type (Supplementary file 9).\n\n### Mouse single-cell transcriptomics analysis\n\nSingle-cell transcriptomes were downloaded from Tabula Muris, 2018. To improve the annotation of mouse cells from Tabula Muris, we reanalyzed the transcriptomic profiles of each tissue. First, we selected 2,000 variably expressed genes using FindVariableFeatures function in Seurat. The minimum and maximum average normalized expression of genes across cells were set to 0.05 and 3, respectively (mean.cutoff=c(0.05,3)). We scaled and centered the expression values of the variably expressed genes using ScaleData function, while correcting for the different samples (vars.to.regress=\u2018mouse.id\u2019). Then, we projected their expression on all significant principal components (PCs; p<0.001, JackStraw test) ordered by their explained variance.\n\nNext, we applied a two-phase clustering process. We clustered cells using Seurat FindNeighbors and FindClusters functions based on all the top significant PCs. To resolve over-clustering of cells, we hierarchically ordered cell clusters using BuildClusterTree function. Then, we tested whether cells from different splits in the tree were distinguishable, according to out-of-bag error of a random forest classifier that was trained on variably expressed genes. Indistinguishable cell clusters (p\u22650.05) were merged. To estimate sample-based differences between related clusters, we repeated hierarchically ordering of merged cell clusters. Terminal splits of cell clusters that included uneven numbers of cells from different samples (adjusted p<0.001, Chi-square) were merged. Such differences were observed only in tongue and lung tissues. Gene expression normalization and average calculations were applied as described for human tissues. Henceforth, we considered only genes with normalized counts \u2265 0.05 in \u226510% of cells of at least one cell type (Supplementary file 10).\n\n### Annotations of mouse cell clusters\n\nWe compared the clusters obtained above to the cell type annotations of Tabula Muris. A cluster where a similar annotation was common to >90% of its cells, and where > 90% of cells with that annotation were within that cluster, was annotated according to Tabula Muris. All other clusters were manually annotated based on highly expressed marker genes (Z score \u22652). We manually searched PubMed for evidence that any of these markers indicates a known cell type (including cell identity and\\or function), preferably in the context of the relevant tissue. A cluster was annotated if at least two of its markers indicated the same cell type. To comply with other studies, cell types were named as in Cell Ontology (Diehl et al., 2016). Cell type annotations, relevant marker genes and supporting literature appear in Supplementary file 4.\n\n### Annotation of diseases-affected tissues\n\nDisease data were retrieved from OMIM (Amberger et al., 2019) and included phenotypes with a known molecular basis and phenotypic series. Each disease was associated with its disease genes and their mouse orthologs according to OMIM, and was associated with its affected tissue according to HPO phenotypic abnormality annotations (K\u00f6hler et al., 2021). We focused on disease that were cataloged by HPO as having main phenotypic abnormality in blood and blood-forming tissues (HP: 0001871), lungs (HP: 0002088), musculature (HP: 0003011), spleen (HP: 0001743), tongue (HP: 0000157), and trachea (HP: 0002778), in accordance with the six tissues that we analyzed. Phenotypic abnormalities that HPO categorized under each of these main terms were also included. We assessed the reliability of associations by comparing them to manually curated associations of diseases and their affected tissues from ODiseA database (Hekselman et al., 2022). For this, we downloaded from ODiseA all the diseases affecting blood and bone marrow, lung, and trachea. ODiseA annotations indicating that a tissue is unaffected by a disease were excluded from further analysis.\n\n### PrEDiCT score calculation and significance assessment\n\nFor each disease, we calculated its cell-type PrEDiCT scores in all cell types of the disease-affected tissue(s). The calculation was divided into three steps: (i) calculating the cell-type preferential expression of each disease gene; (ii) calculating the cell-type PrEDiCT score; and (iii) assessing the statistical significance of the cell-type PrEDiCT score. The three steps are detailed below.\n\nStep (i): The cell-type preferential expression of a gene was set to the Z-score of its average expression in that cell type relative to cell types of the same tissue (Equation 1). Given the sparsity of single-cell data, per tissue, only genes whose average expression in any cell type exceeded the median average expression across genes and cell types were retained. Preferential expression values for human and mouse are available in Supplementary files 11 and 12, respectively.\n\n$$\nP_{g}^{c}=e_{g}^{c}-averagee_{g}\u2215SDe_{g}\n$$\n\n$P_{g}^{c}$ denotes the preferential expression of gene g in cell type c. $e_{g}^{c}$ denotes the expression level e of gene g in cell type c. Average expression and standard deviation (SD) were calculated across all cell types of an affected tissue.\n\nStep (ii): The PrEDiCT score of disease D in cell type c was set to the median cell-type preferential expression of its disease genes (g1 to gn; Equation 2).\n\n$$\nPrEDiCT _{D}^{(c)}=medianP_{g1}^{c}, P_{g2}^{c}\u2026P_{gn}^{c}\n$$\n\nStep (iii): To assess whether a certain PrEDiCT score was significantly higher than expected by chance for a gene set of the same size, we applied a permutation test. Given a disease D with n disease-associated genes, we selected at random n genes expressed in any cell type, and computed the PrEDiCT score for this random gene set in each cell type of the disease-affected tissue (referred to as \u2018random score\u2019). We repeated this procedure 1,000 times, resulting in 1,000 random scores per disease and cell type. The p-value of the PrEDiCT score of disease D in cell type c $(PrEDiCT _{D}^{(c)})$ was set to the fraction of random scores in c that were at least as high as $PrEDiCT _{D}^{(c)}$ . P-values were then adjusted for multiple hypothesis testing per disease using the Benjamini-Hochberg procedure. The distribution of PrEDiCT scores were similar between tissues (Supplementary file 13).\n\n### Text-mining of PubMed records\n\nWe searched PubMed for records containing names of the disease in our disease dataset or names of human cell types in the disease-affected tissues. For this, we used eSearch function in Biopython package (Cock et al., 2009). The number of maximum records retrieved was set to the maximum that Biopython supports (retmax = 9999). Then, per tissue, we intersected the list of records of each tissue-affecting disease d with the list of records of each tissue cell type c, to identify records that mention both. Diseases with less than three records that mentioned it together with a specific cell type were excluded. Cell types that were not mentioned with any disease were excluded. Next, per tissue, we determined whether disease\u2013cell-type pairs significantly co-appeared by applying a Fisher\u2019s exact test. Pairs with Z-scores higher than expected (adjusted p<0.001, Bonferroni correction) were determined \u2018literature-supported\u2019.\n\n### Expert curation and assessment of disease-affected cell types\n\nWe assessed whether PrEDiCT score value is indicative of true associations by manual curation of a subset of associations with ranging PrEDiCT score values. Per tissue, we sorted all pairs of diseases and cell-types by their PrEDiCT scores, and then selected two pairs from percentile 0%, 25%, 50%, 75%, and 100%, resulting in a total of 10 pairs per tissue. Each pair was manually reviewed by a medical student to determine whether the cell type presents pathophysiological phenotypes in diseased patients. By using expert knowledge, literature, and OMIM records, each pair was designated as either affected, unaffected, or undetermined.\n\n### Determining matching cell types between tissues\n\nFor each pair of tissues, all cell types were compared to each other. For this, each cell type was associated with marker genes, namely genes with Z score \u22652. Markers of mouse cell types were converted to their human orthologous genes according to the Mouse Genome Informatics database (Bult et al., 2019). Next, we estimated the similarity between each pair of cell types using matchSCore2 package, which compared the two markers lists by using Jaccard index (Mereu et al., 2020). Cell types were determined as matching if their Jaccard index was \u22650.05 and in the top 10th percentile. To test the impact of disease genes on the matching of human and mouse cell types, we repeated the matching upon excluding disease genes from the list of marker genes. Most (109/122, 89%) of the cell-type pairs that matched originally also matched upon excluding disease genes.\n\n### Permutation tests for similarity between likely affected cell types\n\nFor each pair of tissues, we denoted one as the reference tissue (Tr) and the other as the test tissue (Tt). Success was determined, per disease, if any of the cell types in Tt were matching to any of the likely affected cell types in Tr. We tested the null hypothesis that the number of diseases for which success was determined (num_s) was not higher than expected by chance. For this, we carried out a permutation test. Per disease, we randomly selected cell types equal in number to the likely affected cell types in Tr and repeated the success test; specifically, we checked if the randomly selected cell types in Tr were matching to any of the likely affected cell types in Tt. We repeated this for all diseases with likely affected cell types in Tr, and recorded the number of randomly successful diseases (num_r). We repeated this procedure 1000 times. Significance was calculated as the fraction of cases where num_r\u2265num_s. p-Values were adjusted for multiple comparisons by Benjamini-Hochberg correction.\n\n### Analysis of likely affected cell classes\n\nSusceptibility of a given cell type was set to the percentage of diseases affecting that cell type out of all diseases that affect that same tissue (Supplementary file 7). Cell types were grouped into one of five cell classes: fibroblasts, stem cells, myocytes, endothelia, epithelia and immunocytes, or were grouped as \u2018other\u2019. Then, we applied an analysis of variance (ANOVA) test to the proportions of diseases that likely affected each cell class using aov function in R v4.1.1. To further determine whether specific cell classes were more susceptible than others, we compared the cell-type susceptibility of prevalent cell classes (>15 cell types across \u22654 tissues each). to all other cell types, by using Mann-Whitney U test. p-Values were adjusted for multiple comparisons by Benjamini-Hochberg correction.\n\n### Ligands- and receptors-associated diseases\n\nWe extracted a list of 1625 pairs of ligands and their corresponding receptors from Jin et al., 2021. We retrieved all diseases with disease genes that included both a ligand and its receptor. We filtered this set to include diseases where both the ligand and its receptor were preferentially expressed in distinct cell types.\n\n### Heritable cancers\n\nData of heritable cancers were downloaded from the Cancer Gene Census of the Catalogue of Somatic Mutations in Cancer [COSMIC; (Sondka et al., 2018)]. Specifically, we downloaded germline tumor type, associated genes, and role in cancer (oncogenes or tumor suppressor genes) from tiers 1 and 2. We manually annotated germline tumor types to the six tissues included in our study (Supplementary file 8).\n",
+      "created_at": "2025-12-04T04:05:54.023341Z"
+    },
+    {
+      "id": "e5f08de0-7f2b-4614-b28c-779e485f2f7c",
+      "submission_id": "5480b0dc-2c65-4656-93d7-af1915195e07",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Bogdan Pasaniuc, https://ror.org/046rm7j60 University of California, Los Angeles United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.84613.sa0](https://doi.org/10.7554/eLife.84613.sa0)\n\nThe study presents analyses linking cell-types to monogenic disorders using over-expression of known disease-associated genes in single-cell data to identify disease-affected cell types for 328 Mendelian diseases. Overall, this important study combines multiple data analyses to quantify the connection between cell types and human disorders. Compelling analyses using stringent and rigorous statistical methodologies support the conclusions of this study.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Bogdan Pasaniuc, https://ror.org/046rm7j60 University of California, Los Angeles United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.84613.sa1](https://doi.org/10.7554/eLife.84613.sa1)\n\nOur editorial process produces two outputs: i) public reviews designed to be posted alongside the preprint for the benefit of readers; ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Affected cell types for hundreds of Mendelian diseases revealed by analysis of human and mouse single-cell data\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Molly Przeworski as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1. All reviewers commented with respect to lack of rigor in the approach for determining statistical significance (Rev1#1, Rev2#1, Rev3#2). Criteria for statistical significance needs to be justified/investigated to provide statistical stringency for determining the set of significant associations.\n\n2. Investigation of null/negative control genes would strengthen the conclusions of this work (Rev3#1, Rev2#4). For example, some Mendelian diseases impact disease through coding mutations without impacting expression in any cell type. Such genes could serve as negative controls showcasing the method does not identify any disease-affected cell type.\n\n3. Improved textual contextualization (and caveats) of proposed work to better showcase the proposed results would significantly strengthen the rigor (Rev1#2, Rev3#1,4,5,6).\n\nReviewer #1 (Recommendations for the authors):\n\nThe manuscript by Hekselman et al. presents analyses linking cell-types to monogenic disorders using over-expression of monogenic disease genes as the signal. The manuscript analyses data from 6 tissues (bone marrow, lung, muscle, spleen, tongue and trachea) together with ~1,000 rare diseases from OMIM (with ~2,000 associated genes) to identify cell-type of interest for specific disease of choice. The signal used by the approach is the relative expression of OMIM-genes in a particular cell type relative to the expression of the gene in the tissue of interest identifying cell-type-disease pairs that are then investigated through literature review and recapitulated using mouse expression. A potentially interesting finding is that disease genes manifesting in multiple tissues seem to hit same cell-types. Overall, this important study combines multiple data analyses to quantify the connection between cell types and human disorders. However, whereas some of the analyses are compelling, the statistical analyses are incomplete as they don't provide full treatment of type I error.\n\nI have two main critiques that reduce my enthusiasm for this work.\n\n1. The statistical framework to identify cell-types for a given disease (gene) is likely not calibrated to type I error (page 5 and methods). The approach notes that disease-cell-type pairs with a PREDICT score > 2 (top 5%) of all pairs are \"considered significant\". I could not find any justification for why this is a well-calibrated test that yields significant associations. Under a model of where no true cell-type-associations are present in the data, this approach will still incorrectly flag the top 5% as being significant. In fact, Figure 1B appears consistent with PREDICT scores drawn from a normal distribution centered on 0 potentially consistent with most (if not all) associations being null. The approach needs a proper statistical model that is well-calibrated test to declare significant associations.\n\n2. Functional validation of the disease-cell-type is limited. Associations are investigate using literature search in Pubmed focused on co-occurrence of disease and cell types; this is not validation as many of those co-appearances reflect negative and/or speculative results. The second line of evidence that these associations are true comes from recapitulation of results using mouse data; these results could be over-interpreted as human and mouse cell type data is matched based on expression itself thus creating an expected loop: mouse cell-type expression matched to human cell-type expression identifies similar expression-driven associations.\n\nReviewer #2 (Recommendations for the authors):\n\nComments:\n\n1. The PrEDiCT score threshold for inferring a disease-cell type pair as statistically significant seems unlikely to be sufficiently stringent. The threshold for inferring statistical significance must be rigorously justified.\n\nFirst, for diseases with only 1 associated gene, z>2 is a lax threshold, as 2.5% of disease-cell type pairs would be expected to be significant by chance. The distribution of the number of associated genes per disease is important and must be discussed in the main text with an associated Supp Table/Supp Figure (how many of the 1113 diseases have only 1 associated gene, how many have exactly 2 associated genes, etc.).\n\nSecond, from Table S3, it seems that the total number of disease-cell type pairs tested is 3952 + 5624 + 12996 + 2568 + 780 + 540 = 26460 (which is less than 1113*129 = 143577, because only cell types in disease-associated tissues were tested). The number is 26460 is important and must be reported in the main text. Given that 2.5% * 26460 = 662, in the extreme case that all diseases have only 1 associated gene we would expect 662 significant PrEDiCT scores by chance, such that many of the 753 significant PrEDiCT scores that are reported could be false positives.\n\nThird, under the null hypothesis of no disease-affected cell types, for diseases with only 1 associated gene, the PrEDiCT scores may have more large values than a normal distribution, because there could be many genes with patterns of preferential expression in a particular cell type. On the other hand, for diseases with x associated genes with x>1, the PrEDiCT scores may have fewer large values than a normal distribution, because the median of x independent z-scores has a <2.5% chance of being >2.\n\nThe best solution would be to assess statistical significance via empirical comparison with PrEDiCT scores for non-disease-associated control genes (for diseases with only 1 associated gene), or empirical comparison with PrEDiCT scores for the median of x non-disease-associated control genes (for diseases with x associated genes with x>1). I recommend that this approach should be used. The resulting P-values can then be evaluated for statistical significance using Bonferroni (probably too conservative) or FDR. It is likely that the method has higher power for larger values of x, such that FDR could be stratified by the value of x. Note that the main point here is variation across genes: unless disease-associated gene(s) are very significantly different from non-disease-associated control genes, then no significant disease-affected cell type should be inferred.\n\nAn alternative, which I have much less enthusiasm for but which is plausible, would be to state throughout that the PrEDiCT scores identify candidate disease-affected cell types, and use excess overlap with disease-cell type pairs from literature co-appearance to assign an FDR to the candidate disease-affected cell types (perhaps at different PrEDiCT score thresholds), e.g., FDR = 100% / (fold excess overlap).\n\n2. The numbers in Figure 1E are not consistent with the numbers in the main text.\n\nFirst, the main text (p.5) states that 753 disease-cell type pairs have significant literature co-appearance, whereas Figure 1E states that 654+99=753 disease-cell type pairs have significant PrEDiCT scores and 448+99=547 pairs have significant literature co-appearance. I am guessing that 753 in the main text is a typo and should be 547.\n\nSecond, the main text (p.6) states that 714 diseases had disease-affected cell types inferred (I believe this is based on the PrEDiCT score, but the wording of the text is confusing and could be improved), whereas Figure 1E states that 654+99=753 disease-cell type pairs have significant PrEDiCT scores. I\u2019m guessing that 753>714 because some diseases have >1 disease-affected cell types inferred, but this should be stated explicitly.\n\nThird, the main text (p.6) states that 18% of disease-cell type pairs with significant PrEDiCT scores have significant literature co-appearance. However, based on the numbers in Figure 1E, 99/753 = 13%, which is different from 18%.\n\nFourth, the main text (p.6) states that 6% of all disease-cell type pairs have significant literature co-appearance. However, based on 547 from Figure 1E and the total of 26460 disease-cell type pairs tested (see Comment 1), 547/26460 = 2%, which is different from 6%.\n\nIn addition to fixing the discrepancies, it may be good to expand the explanations, as this is really the most important part of the paper.\n\n3. The PCD example (Figure 1C, Figure 2D) is a great example. However, I suggest to increase the number of specific Mendelian diseases highlighted in the main Figures (prior to delving into diseases with multiple affected tissues, or other special categories of diseases) from 1 to at least 4, e.g., via a separate main Figure highlighting 4 Mendelian diseases (with human or human+mouse results).\n\n4. I expect that for some Mendelian diseases, coding mutations to disease-associated gene(s) affect protein product but do not affect expression in any cell type. It would be interesting to include some well-studied Mendelian diseases in this category as negative controls, for which failure to implicate any disease-affected cell type is the correct answer.\n\nReviewer #3 (Recommendations for the authors):\n\nI really do believe the authors should provide context of their method with a larger set of previously published work. Additionally, the thresholding concerns and lack of a clear null comparison make it difficult to assess the robustness of the method and the analyses.\n",
+      "created_at": "2025-12-04T04:05:54.023341Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T04:05:54.023341Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T04:05:54.023341Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "4cf5b3e7-1aec-421f-8905-9c551b76bd1a",
+      "content_id": "2885399d-9210-4ab8-ae44-f408e1ba885c",
+      "claim_id": "C1",
+      "claim": "Mendelian diseases affect 6% of the world population.",
+      "claim_type": "EXPLICIT",
+      "source": "Hereditary diseases affect 6% of the world population and typically lack cure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Ferreira, 2019 as indicated in the text",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:54.023341Z"
+    },
+    {
+      "id": "21a09157-b3be-42f6-a99d-3afa8253c918",
+      "content_id": "2885399d-9210-4ab8-ae44-f408e1ba885c",
+      "claim_id": "C2",
+      "claim": "Hereditary diseases typically lack cure.",
+      "claim_type": "EXPLICIT",
+      "source": "Hereditary diseases affect 6% of the world population and typically lack cure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Ferreira, 2019 as indicated in the text",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:54.023341Z"
+    },
+    {
+      "id": "1a8e3e83-a5f0-437c-ad14-7a69a8554bfe",
+      "content_id": "2885399d-9210-4ab8-ae44-f408e1ba885c",
+      "claim_id": "C3",
+      "claim": "Identification of the genetic and molecular basis of hereditary diseases is challenging.",
+      "claim_type": "EXPLICIT",
+      "source": "Identification of their genetic and molecular basis is challenging, limiting their diagnosis and treatment (Ferreira, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Ferreira, 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:54.023341Z"
+    },
+    {
+      "id": "f4396087-56a3-494d-b0fd-d47ab83f5593",
+      "content_id": "2885399d-9210-4ab8-ae44-f408e1ba885c",
+      "claim_id": "C4",
+      "claim": "Knowledge of tissues and cell types that manifest with pathophysiological changes in patients facilitates the understanding of disease mechanisms.",
+      "claim_type": "EXPLICIT",
+      "source": "Knowledge of tissues and cell types that manifest with pathophysiological changes in patients was shown to facilitate the understanding of disease mechanisms (Hekselman and Yeger-Lotem, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Hekselman and Yeger-Lotem, 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:54.023341Z"
+    },
+    {
+      "id": "cae58422-da12-4b88-8686-f0b9603b8175",
+      "content_id": "2885399d-9210-4ab8-ae44-f408e1ba885c",
+      "claim_id": "C5",
+      "claim": "Transcriptomic analysis of muscle tissues helped to genetically diagnose patients with rare muscle disorders.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, transcriptomic analysis of muscle tissues helped to genetically diagnose patients with rare muscle disorders (Cummings et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Cummings et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:54.023341Z"
+    },
+    {
+      "id": "cf5efb9f-4ae8-4b61-999b-cc48406ad8d0",
+      "content_id": "2885399d-9210-4ab8-ae44-f408e1ba885c",
+      "claim_id": "C6",
+      "claim": "Identification of a rare cell type affected by cystic fibrosis opened new avenues for treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise, identification of a rare cell type affected by cystic fibrosis opened new avenues for treatment (Montoro et al., 2018; Plasschaert et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Montoro et al., 2018 and Plasschaert et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:54.023341Z"
+    },
+    {
+      "id": "311fdbbe-75db-4bb4-80a9-767448515918",
+      "content_id": "2885399d-9210-4ab8-ae44-f408e1ba885c",
+      "claim_id": "C7",
+      "claim": "The exact cell types that manifest with pathophysiological changes within affected tissues are often unknown for many Mendelian diseases.",
+      "claim_type": "EXPLICIT",
+      "source": "However, whereas affected tissues may be evident for many Mendelian diseases, the exact cell types that manifest with pathophysiological changes within affected tissues are often unknown.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement based on the state of knowledge in the field",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:54.023341Z"
+    },
+    {
+      "id": "431d3fcc-228a-4f1d-b099-1358b68a16e9",
+      "content_id": "2885399d-9210-4ab8-ae44-f408e1ba885c",
+      "claim_id": "C8",
+      "claim": "Genes whose aberration leads to disease tend to be expressed preferentially in cell types that express pathology.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, it was shown that genes whose aberration leads to disease (i.e., disease genes) tend to be expressed preferentially in cell types that express pathology (denoted disease-affected cell types).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "General statement supported by subsequent examples and citations",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:54.023341Z"
+    },
+    {
+      "id": "17fd1b6a-1c5d-4a6a-b190-cb25bc5a8f5e",
+      "content_id": "2885399d-9210-4ab8-ae44-f408e1ba885c",
+      "claim_id": "C9",
+      "claim": "21 out of 29 mouse homologs of human disease genes associated with nephrotic syndrome were upregulated in podocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, 21/29 mouse homologs of human disease genes associated with nephrotic syndrome were shown to be upregulated in podocytes, the disease-relevant renal cell type (Park et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Park et al., 2018",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:54.023341Z"
+    },
+    {
+      "id": "a9cfe052-83fa-4346-a700-b239f73f5ff8",
+      "content_id": "2885399d-9210-4ab8-ae44-f408e1ba885c",
+      "claim_id": "C10",
+      "claim": "Podocytes are the disease-relevant renal cell type for nephrotic syndrome.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, 21/29 mouse homologs of human disease genes associated with nephrotic syndrome were shown to be upregulated in podocytes, the disease-relevant renal cell type (Park et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Park et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:54.023341Z"
+    },
+    {
+      "id": "8125f55f-f0fc-4832-8416-6c835ffee33b",
+      "content_id": "2885399d-9210-4ab8-ae44-f408e1ba885c",
+      "claim_id": "C11",
+      "claim": "Cell-type-specific expression of the cystic fibrosis gene CFTR in ionocytes of human and mouse airways revealed their role in cystic fibrosis.",
+      "claim_type": "EXPLICIT",
+      "source": "In an inspiring manner, cell-type-specific expression of the cystic fibrosis gene CFTR in ionocytes of human and mouse airways revealed their role in cystic fibrosis (Montoro et al., 2018; Plasschaert et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Montoro et al., 2018 and Plasschaert et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:54.023341Z"
+    },
+    {
+      "id": "951302c4-47e9-45e1-b752-0e120f88b573",
+      "content_id": "2885399d-9210-4ab8-ae44-f408e1ba885c",
+      "claim_id": "C12",
+      "claim": "The preferential expression of disease genes for 18 Mendelian muscle disorders revealed disease-affected muscle cell types.",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise, the preferential expression of disease genes for 18 Mendelian muscle disorders revealed disease-affected muscle cell types (Eraslan et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Eraslan et al., 2022",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:54.023341Z"
+    },
+    {
+      "id": "d74b3509-2349-48bb-8c5e-2f1f8041cdba",
+      "content_id": "2885399d-9210-4ab8-ae44-f408e1ba885c",
+      "claim_id": "C13",
+      "claim": "The study applied PrEDiCT to single-cell expression data of six human tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "We applied PrEDiCT to single-cell expression data of six human tissues, to infer the cell types affected in Mendelian diseases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of the study's methodology",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:54.023341Z"
+    },
+    {
+      "id": "c636abae-6bcb-44e2-a7a9-3b16d847b95b",
+      "content_id": "2885399d-9210-4ab8-ae44-f408e1ba885c",
+      "claim_id": "C14",
+      "claim": "The study inferred likely affected cell types for 328 diseases.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, we inferred the likely affected cell types for 328 diseases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Result from the study's analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:54.023341Z"
+    },
+    {
+      "id": "963d17d9-e2cb-442b-b7c8-b4a41945e8c3",
+      "content_id": "2885399d-9210-4ab8-ae44-f408e1ba885c",
+      "claim_id": "C15",
+      "claim": "The study analyzed 1,140 Mendelian diseases that manifest in six human tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "We applied PrEDiCT to 1,140 Mendelian diseases that manifest in six human tissues and inferred likely affected cell types for 328 diseases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of the study's dataset",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:54.023341Z"
+    },
+    {
+      "id": "6d7e56f8-45b3-4a9d-a808-466b5ac1c8b6",
+      "content_id": "2885399d-9210-4ab8-ae44-f408e1ba885c",
+      "claim_id": "C16",
+      "claim": "The six human tissues analyzed were bone marrow, lung, skeletal muscle, spleen, tongue and trachea.",
+      "claim_type": "EXPLICIT",
+      "source": "Tissues included bone marrow, lung, skeletal muscle, spleen, tongue and trachea, and altogether were comprised of 129 cell types.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of the study's dataset",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:54.023341Z"
+    },
+    {
+      "id": "87b5d154-a416-4af1-8c2e-99f8661f65e7",
+      "content_id": "2885399d-9210-4ab8-ae44-f408e1ba885c",
+      "claim_id": "C17",
+      "claim": "The six tissues analyzed were comprised of 129 cell types.",
+      "claim_type": "EXPLICIT",
+      "source": "Tissues included bone marrow, lung, skeletal muscle, spleen, tongue and trachea, and altogether were comprised of 129 cell types.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of the study's dataset",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:54.023341Z"
+    },
+    {
+      "id": "f559f77d-958f-40da-a9b8-0e3ee589a943",
+      "content_id": "2885399d-9210-4ab8-ae44-f408e1ba885c",
+      "claim_id": "C18",
+      "claim": "The study identified 489 likely disease-cell-type associations.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified 489 (1.4%) 'likely' associations (PrEDiCT \u2265 1, FDR <0.1), covering 328/1140 diseases and 102/129 cell types.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Result from the study's analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:54.023341Z"
+    },
+    {
+      "id": "2ce7e36f-8e4a-45be-9793-2c8f0d8b6395",
+      "content_id": "2885399d-9210-4ab8-ae44-f408e1ba885c",
+      "claim_id": "C19",
+      "claim": "Likely associations covered 328 out of 1140 diseases.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified 489 (1.4%) 'likely' associations (PrEDiCT \u2265 1, FDR <0.1), covering 328/1140 diseases and 102/129 cell types.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Result from the study's analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:54.023341Z"
+    },
+    {
+      "id": "45df8eab-70eb-4419-89c9-779d2a2a1c4b",
+      "content_id": "2885399d-9210-4ab8-ae44-f408e1ba885c",
+      "claim_id": "C20",
+      "claim": "Likely associations covered 102 out of 129 cell types.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified 489 (1.4%) 'likely' associations (PrEDiCT \u2265 1, FDR <0.1), covering 328/1140 diseases and 102/129 cell types.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Result from the study's analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:54.023341Z"
+    },
+    {
+      "id": "9b8b7b70-d0c9-4079-977d-de001f59d764",
+      "content_id": "2885399d-9210-4ab8-ae44-f408e1ba885c",
+      "claim_id": "C21",
+      "claim": "Primary ciliary dyskinesia has 31 disease genes expressed in lung.",
+      "claim_type": "EXPLICIT",
+      "source": "As proof-of-concept, primary ciliary dyskinesia (PCD), which has 31 disease genes expressed in lung and is characterized by damaged ciliary machinery in lung ciliated cells (Leigh et al., 2019), was indeed likely associated with lung ciliated cells (Figure 1C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Data from the study's analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:54.023341Z"
+    },
+    {
+      "id": "e0091f3d-8439-428f-be4d-d64d635c06da",
+      "content_id": "2885399d-9210-4ab8-ae44-f408e1ba885c",
+      "claim_id": "C22",
+      "claim": "Primary ciliary dyskinesia is characterized by damaged ciliary machinery in lung ciliated cells.",
+      "claim_type": "EXPLICIT",
+      "source": "As proof-of-concept, primary ciliary dyskinesia (PCD), which has 31 disease genes expressed in lung and is characterized by damaged ciliary machinery in lung ciliated cells (Leigh et al., 2019), was indeed likely associated with lung ciliated cells (Figure 1C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Leigh et al., 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:54.023341Z"
+    },
+    {
+      "id": "561200af-4f78-4bb8-a62b-579b29cb99b8",
+      "content_id": "2885399d-9210-4ab8-ae44-f408e1ba885c",
+      "claim_id": "C23",
+      "claim": "Primary ciliary dyskinesia was likely associated with lung ciliated cells.",
+      "claim_type": "EXPLICIT",
+      "source": "As proof-of-concept, primary ciliary dyskinesia (PCD), which has 31 disease genes expressed in lung and is characterized by damaged ciliary machinery in lung ciliated cells (Leigh et al., 2019), was indeed likely associated with lung ciliated cells (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Result from the study's analysis shown in Figure 1C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:54.023341Z"
+    },
+    {
+      "id": "7388dd6d-030b-41ac-b0dd-aa4687000c58",
+      "content_id": "2885399d-9210-4ab8-ae44-f408e1ba885c",
+      "claim_id": "C24",
+      "claim": "Heinz body anemias is characterized by accumulation of inclusion bodies in erythrocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, Heinz body anemias, which is characterized by accumulation of inclusion bodies in erythrocytes (Herman et al., 2023), was indeed likely associated with bone marrow erythrocytes (Figure 1D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Herman et al., 2023",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:54.023341Z"
+    },
+    {
+      "id": "20bdb38f-8491-46b8-a92c-22a8f0cbae6a",
+      "content_id": "2885399d-9210-4ab8-ae44-f408e1ba885c",
+      "claim_id": "C25",
+      "claim": "Heinz body anemias was likely associated with bone marrow erythrocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, Heinz body anemias, which is characterized by accumulation of inclusion bodies in erythrocytes (Herman et al., 2023), was indeed likely associated with bone marrow erythrocytes (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Result from the study's analysis shown in Figure 1D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:54.023341Z"
+    },
+    {
+      "id": "50b42942-4c10-476c-82cb-46e5744c3e1c",
+      "content_id": "2885399d-9210-4ab8-ae44-f408e1ba885c",
+      "claim_id": "C26",
+      "claim": "Four out of five mitochondrial complex deficiencies were likely associated with slow and fast muscle cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Lastly, compatible with the high demand for mitochondrial activity in muscle cells, four out of five mitochondrial complex deficiencies were likely associated with slow and fast muscle cells (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Result from the study's analysis shown in Figure 1E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:54.023341Z"
+    },
+    {
+      "id": "1a7ed548-4211-4979-bc1c-82c55cf0d1d0",
+      "content_id": "2885399d-9210-4ab8-ae44-f408e1ba885c",
+      "claim_id": "C27",
+      "claim": "Mitochondrial complex II deficiency scored highest in slow and fast muscle cells but its PrEDiCT scores were insignificant.",
+      "claim_type": "EXPLICIT",
+      "source": "'Mitochondrial complex II deficiency' also scored highest in slow and fast muscle cells yet its PrEDiCT scores were insignificant, potentially due to the stringency of our statistical analysis (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Result from the study's analysis shown in Figure 1E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:54.023341Z"
+    },
+    {
+      "id": "d5469833-acef-4a97-839a-53d6e5146e2c",
+      "content_id": "2885399d-9210-4ab8-ae44-f408e1ba885c",
+      "claim_id": "C28",
+      "claim": "The study identified 229 literature-supported disease-cell-type pairs.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified 229 'literature-supported' pairs that co-appeared in the literature more often than expected by chance (adjusted p<0.001, Chi-squared test; Supplementary file 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Result from text-mining analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:54.023341Z"
+    },
+    {
+      "id": "b9b43a95-7aee-4214-abea-b8d307243076",
+      "content_id": "2885399d-9210-4ab8-ae44-f408e1ba885c",
+      "claim_id": "C29",
+      "claim": "Likely disease-cell-type associations were enriched for literature supported pairs relative to all disease-cell-type associations.",
+      "claim_type": "EXPLICIT",
+      "source": "Likely disease\u2013cell-type associations were enriched for literature supported pairs (41/489, 8.4%) relative to all disease\u2013cell-type associations (229/34,249, 0.7%; p<E-15, Fisher's exact test; Figure 1G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statistical analysis comparing likely associations to all associations",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:54.023341Z"
+    },
+    {
+      "id": "db48ace6-63f2-472f-a086-7d90eaaa5d41",
+      "content_id": "2885399d-9210-4ab8-ae44-f408e1ba885c",
+      "claim_id": "C30",
+      "claim": "The study analyzed 34,249 disease-cell-type associations in total.",
+      "claim_type": "EXPLICIT",
+      "source": "In total, we analyzed 34,249 disease\u2013cell-type associations (Supplementary file 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of the study's analysis scope",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:54.023341Z"
+    },
+    {
+      "id": "a7a16c07-8ece-4b2a-a6ea-c35b722515cd",
+      "content_id": "2885399d-9210-4ab8-ae44-f408e1ba885c",
+      "claim_id": "C31",
+      "claim": "The study obtained 97 cell clusters across all six mouse tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, we obtained 97 cell clusters across all six tissues (Supplementary file 4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Result from mouse single-cell data reanalysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:54.023341Z"
+    },
+    {
+      "id": "53e99dc3-fd35-4279-808b-44e23429b8ad",
+      "content_id": "2885399d-9210-4ab8-ae44-f408e1ba885c",
+      "claim_id": "C32",
+      "claim": "The study identified 380 likely disease-cell-type associations in mouse.",
+      "claim_type": "EXPLICIT",
+      "source": "The distribution of PrEDiCT scores was similar between mouse and human, and included 380/24,638 (1.5%) likely disease\u2013cell-type associations (PrEDiCT \u2265 1, FDR < 0.1; Figure 2B; Supplementary file 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Result from mouse analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:54.023341Z"
+    },
+    {
+      "id": "0ef44d02-c61b-4f13-9152-0326719190bf",
+      "content_id": "2885399d-9210-4ab8-ae44-f408e1ba885c",
+      "claim_id": "C33",
+      "claim": "PrEDiCT scores of matching cell types between human and mouse were modestly correlated.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas PrEDiCT scores of non-matching cell types did not correlate (r=\u22120.02, Spearman correlation), PrEDiCT scores of matching types were modestly correlated (r=0.38, p<E-15, Spearman correlation; Figure 2F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statistical correlation analysis between human and mouse PrEDiCT scores",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:54.023341Z"
+    },
+    {
+      "id": "b510a455-4c97-450f-9bdf-ff3206f9db19",
+      "content_id": "2885399d-9210-4ab8-ae44-f408e1ba885c",
+      "claim_id": "C34",
+      "claim": "PrEDiCT scores of non-matching cell types between human and mouse did not correlate.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas PrEDiCT scores of non-matching cell types did not correlate (r=\u22120.02, Spearman correlation), PrEDiCT scores of matching types were modestly correlated (r=0.38, p<E-15, Spearman correlation; Figure 2F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statistical correlation analysis between human and mouse PrEDiCT scores",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:54.023341Z"
+    },
+    {
+      "id": "718d2afc-af54-4894-82fb-ab72b79b8004",
+      "content_id": "2885399d-9210-4ab8-ae44-f408e1ba885c",
+      "claim_id": "C35",
+      "claim": "97 diseases (30% of 328 diseases with likely affected cell types in humans) affected matching cell types in mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the 328 diseases with likely affected cell types in humans, 97 diseases (30%) affected matching cell types in mice, a fraction that was larger than expected by chance (adjusted p<0.01, permutation test; Figure 2G and Supplementary file 6; Methods).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Result from comparison between human and mouse analyses",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:54.023341Z"
+    },
+    {
+      "id": "ead652e2-1ad1-435d-a084-ba986c12b396",
+      "content_id": "2885399d-9210-4ab8-ae44-f408e1ba885c",
+      "claim_id": "C36",
+      "claim": "The fraction of diseases affecting matching cell types in mice was larger than expected by chance.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the 328 diseases with likely affected cell types in humans, 97 diseases (30%) affected matching cell types in mice, a fraction that was larger than expected by chance (adjusted p<0.01, permutation test; Figure 2G and Supplementary file 6; Methods).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statistical permutation test",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:54.023341Z"
+    },
+    {
+      "id": "24102f17-518e-4dd7-af12-95381be9ab13",
+      "content_id": "2885399d-9210-4ab8-ae44-f408e1ba885c",
+      "claim_id": "C37",
+      "claim": "Most diseases with a likely affected cell type manifested clinically in two or more tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "Most diseases with a likely affected cell type manifested clinically in two or more tissues, and were denoted multi-tissue diseases (168/328, 51%; Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Result from the study's analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:54.023341Z"
+    },
+    {
+      "id": "120fd94f-5a6b-45b9-94f0-9894dbba7f4d",
+      "content_id": "2885399d-9210-4ab8-ae44-f408e1ba885c",
+      "claim_id": "C38",
+      "claim": "168 out of 328 diseases with a likely affected cell type were multi-tissue diseases.",
+      "claim_type": "EXPLICIT",
+      "source": "Most diseases with a likely affected cell type manifested clinically in two or more tissues, and were denoted multi-tissue diseases (168/328, 51%; Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Result from the study's analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:54.023341Z"
+    },
+    {
+      "id": "9224ddba-5f70-43c5-926b-d373aef5f238",
+      "content_id": "2885399d-9210-4ab8-ae44-f408e1ba885c",
+      "claim_id": "C39",
+      "claim": "The study identified 840 pairs of matching cell types between tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, we identified 840 pairs of matching cell types between tissues, of which 52% were immunocytes, including macrophages, neutrophils, T cells, B cells, as well as endothelia and fibroblasts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Result from cell type matching analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:54.023341Z"
+    },
+    {
+      "id": "f66014a9-f32c-46c0-9875-59d4f522e2a9",
+      "content_id": "2885399d-9210-4ab8-ae44-f408e1ba885c",
+      "claim_id": "C40",
+      "claim": "52% of matching cell type pairs between tissues were immunocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, we identified 840 pairs of matching cell types between tissues, of which 52% were immunocytes, including macrophages, neutrophils, T cells, B cells, as well as endothelia and fibroblasts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Result from cell type matching analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:54.023341Z"
+    },
+    {
+      "id": "be8eac2a-e09b-4542-a4cb-8cce2732db54",
+      "content_id": "2885399d-9210-4ab8-ae44-f408e1ba885c",
+      "claim_id": "C41",
+      "claim": "18% of multi-tissue diseases likely affected at least one pair of matching cell types.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that 18% (30/168) of the diseases likely affected at least one pair of matching cell types, a fraction higher than expected by chance (adjusted p<0.01, permutation test; Figure 3B and Figure 3\u2014figure supplement 1; Methods).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Result from statistical analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:54.023341Z"
+    },
+    {
+      "id": "48a1dbcc-405a-42f3-8821-b56f12d44ea5",
+      "content_id": "2885399d-9210-4ab8-ae44-f408e1ba885c",
+      "claim_id": "C42",
+      "claim": "The fraction of diseases affecting matching cell types between tissues was higher than expected by chance.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that 18% (30/168) of the diseases likely affected at least one pair of matching cell types, a fraction higher than expected by chance (adjusted p<0.01, permutation test; Figure 3B and Figure 3\u2014figure supplement 1; Methods).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statistical permutation test",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:54.023341Z"
+    },
+    {
+      "id": "2e115bc3-718d-457c-b6da-46c36908ea30",
+      "content_id": "2885399d-9210-4ab8-ae44-f408e1ba885c",
+      "claim_id": "C43",
+      "claim": "Chronic granulomatous disease results in splenomegaly and pneumonia due to impaired phagocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, chronic granulomatous disease (CGD) results in splenomegaly and pneumonia due to impaired phagocytes (i.e., neutrophils, macrophages, and monocytes; Anjani et al., 2020; Leiding and Holland, 1993).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Anjani et al., 2020 and Leiding and Holland, 1993",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:54.023341Z"
+    },
+    {
+      "id": "2428ec1a-2167-4d98-ad88-57844a9cfecf",
+      "content_id": "2885399d-9210-4ab8-ae44-f408e1ba885c",
+      "claim_id": "C44",
+      "claim": "Neutrophils, macrophages, and monocytes were the likely affected cell types for chronic granulomatous disease in both spleen and lung.",
+      "claim_type": "EXPLICIT",
+      "source": "These cell types were indeed the likely affected cell types for CGD in both spleen and lung (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Result from the study's analysis shown in Figure 3C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:54.023341Z"
+    },
+    {
+      "id": "d6fdb0b4-a819-4786-84a4-72b7b03913d1",
+      "content_id": "2885399d-9210-4ab8-ae44-f408e1ba885c",
+      "claim_id": "C45",
+      "claim": "Chronic granulomatous disease likely affected bone-marrow phagocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Also, CGD likely affected bone-marrow phagocytes, consistent with bone-marrow transplant being a curative treatment for this disease (Leiding and Holland, 1993).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Result from the study's analysis and cited from Leiding and Holland, 1993",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:54.023341Z"
+    },
+    {
+      "id": "6ea81537-f670-4a79-b364-687ef90dd06f",
+      "content_id": "2885399d-9210-4ab8-ae44-f408e1ba885c",
+      "claim_id": "C46",
+      "claim": "Bone-marrow transplant is a curative treatment for chronic granulomatous disease.",
+      "claim_type": "EXPLICIT",
+      "source": "Also, CGD likely affected bone-marrow phagocytes, consistent with bone-marrow transplant being a curative treatment for this disease (Leiding and Holland, 1993).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Leiding and Holland, 1993",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:54.023341Z"
+    },
+    {
+      "id": "78033bef-cb06-4b8d-9f77-4d8c98ccb9ff",
+      "content_id": "2885399d-9210-4ab8-ae44-f408e1ba885c",
+      "claim_id": "C47",
+      "claim": "Hyper-IgM immunodeficiency could arise from mutations in CD40 gene, affecting B cells, or mutations in CD40 ligand (CD40LG), affecting CD4 T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the bone-marrow disease hyper-IgM immunodeficiency could arise from mutations in CD40 gene, affecting B cells, or mutations in CD40 ligand (CD40LG), affecting CD4 T cells (Yazdani et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Yazdani et al., 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:54.023341Z"
+    },
+    {
+      "id": "7a065d68-8b9b-4d60-8561-eb4bb83149e1",
+      "content_id": "2885399d-9210-4ab8-ae44-f408e1ba885c",
+      "claim_id": "C48",
+      "claim": "Only CD4 T cells were predicted as likely affected by hyper-IgM immunodeficiency when applying PrEDiCT to all disease genes jointly.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, only CD4 T cells were predicted as likely affected by hyper-IgM immunodeficiency (PrEDiCT = 1.6, FDR <0.048).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Result from the study's analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:54.023341Z"
+    },
+    {
+      "id": "8ad38e88-a74a-4202-97c6-4489598ecb6f",
+      "content_id": "2885399d-9210-4ab8-ae44-f408e1ba885c",
+      "claim_id": "C49",
+      "claim": "Hyper-IgM immunodeficiency was found to likely affect na\u00efve B cells through CD40 (receptor).",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, hyper-IgM immunodeficiency was found to likely affect na\u00efve B cells through CD40 (receptor; PrEDiCT = 2.9, FDR = 0.06), and CD4\u03b1\u03b2 T cells through CD40LG (ligand; PrEDiCT = 3.7, FDR <0.001; Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Result from separate analysis of ligands and receptors",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:54.023341Z"
+    },
+    {
+      "id": "1879a1b5-c000-4471-b0d6-6e95db95da7d",
+      "content_id": "2885399d-9210-4ab8-ae44-f408e1ba885c",
+      "claim_id": "C50",
+      "claim": "Hyper-IgM immunodeficiency was found to likely affect CD4\u03b1\u03b2 T cells through CD40LG (ligand).",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, hyper-IgM immunodeficiency was found to likely affect na\u00efve B cells through CD40 (receptor; PrEDiCT = 2.9, FDR = 0.06), and CD4\u03b1\u03b2 T cells through CD40LG (ligand; PrEDiCT = 3.7, FDR <0.001; Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Result from separate analysis of ligands and receptors",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:54.023341Z"
+    },
+    {
+      "id": "ccc1bc69-1516-4873-b73d-a1c0d4a22ad2",
+      "content_id": "2885399d-9210-4ab8-ae44-f408e1ba885c",
+      "claim_id": "C51",
+      "claim": "Autosomal recessive limb-girdle muscular dystrophy is caused by mutations in laminin-\u03b12 (LAMA2) or its receptor \u03b1-dystroglycan (DAG1).",
+      "claim_type": "EXPLICIT",
+      "source": "Another example is autosomal recessive limb-girdle muscular dystrophy, which is caused by mutations in laminin-\u03b12 (LAMA2) or its receptor \u03b1-dystroglycan (DAG1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement of disease genetics",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:54.023341Z"
+    },
+    {
+      "id": "49888520-e4b2-4cac-94ce-faa4fd946ab5",
+      "content_id": "2885399d-9210-4ab8-ae44-f408e1ba885c",
+      "claim_id": "C52",
+      "claim": "By separately applying PrEDiCT scheme to LAMA2 (ligand) and DAG1 (receptor), mesenchymal stem cells and satellite stem cells were inferred as the likely affected cell types for autosomal recessive limb-girdle muscular dystrophy, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Yet, by separately applying PrEDiCT scheme to LAMA2 (ligand) and DAG1 (receptor), we inferred mesenchymal stem cells and satellite stem cells as the likely affected cell types, respectively (PrEDiCT = 3.8 and 3.7, FDR <0.05; Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Result from separate analysis of ligands and receptors",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:54.023341Z"
+    },
+    {
+      "id": "104f2c72-4c05-46a5-ab7e-84db64585c30",
+      "content_id": "2885399d-9210-4ab8-ae44-f408e1ba885c",
+      "claim_id": "C53",
+      "claim": "Disruption of DAG1 in satellite stem cells has been associated with the defective muscle regeneration seen in diseased patients with autosomal recessive limb-girdle muscular dystrophy.",
+      "claim_type": "EXPLICIT",
+      "source": "In support of the prediction for DAG1, disruption of DAG1 in satellite stem cells has been associated with the defective muscle regeneration seen in diseased patients (Cohn et al., 2002; Servi\u00e1n-Morilla et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Cohn et al., 2002 and Servi\u00e1n-Morilla et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:54.023341Z"
+    },
+    {
+      "id": "2c827922-6955-4d24-8e7d-7d07587d2795",
+      "content_id": "2885399d-9210-4ab8-ae44-f408e1ba885c",
+      "claim_id": "C54",
+      "claim": "Autosomal recessive limb-girdle muscular dystrophy was attenuated in ligand-knockout [Col6a1(-/-)] model mice by supplying wild-type mesenchymal-stem-cell derived fibroblasts.",
+      "claim_type": "EXPLICIT",
+      "source": "In support of the prediction for LAMA2, the disease was attenuated in ligand-knockout [Col6a1(-/-)] model mice by supplying wild-type mesenchymal-stem-cell derived fibroblasts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Urciuolo et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:54.023341Z"
+    },
+    {
+      "id": "2ddd3096-7a9a-45c4-a600-acb01cc49e1c",
+      "content_id": "2885399d-9210-4ab8-ae44-f408e1ba885c",
+      "claim_id": "C55",
+      "claim": "Treatment with wild-type mesenchymal-stem-cell derived fibroblasts not only restored the collagen VI of the tissue, but also rescued defects in satellite stem cells in ligand-knockout model mice.",
+      "claim_type": "EXPLICIT",
+      "source": "This treatment not only restored the collagen VI of the tissue, but also rescued defects in satellite stem cells (Urciuolo et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Urciuolo et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:54.023341Z"
+    },
+    {
+      "id": "af66449e-1da6-45f7-8be2-d43f45a6a5c3",
+      "content_id": "2885399d-9210-4ab8-ae44-f408e1ba885c",
+      "claim_id": "C56",
+      "claim": "In airway cancers, the joint application of PrEDiCT scheme inferred both basal cells and intermediate monocytes as likely affected.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, in airway cancers (lung and trachea), the joint application of PrEDiCT scheme inferred both basal cells and intermediate monocytes as likely affected.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Result from the study's analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:54.023341Z"
+    },
+    {
+      "id": "b953e1f3-2184-4007-ae6b-2617c07df16c",
+      "content_id": "2885399d-9210-4ab8-ae44-f408e1ba885c",
+      "claim_id": "C57",
+      "claim": "In airway cancers, the separate application of PrEDiCT inferred basal cells as likely affected by oncogenes, and intermediate and non-classical monocytes as likely affected by TSGs.",
+      "claim_type": "EXPLICIT",
+      "source": "The separate application inferred basal cells as likely affected by oncogenes, and intermediate and non-classical monocytes as likely affected by TSGs (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Result from separate analysis of oncogenes and TSGs",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:54.023341Z"
+    },
+    {
+      "id": "02a6b8f7-9bcf-40c6-90cc-e838fce2fab7",
+      "content_id": "2885399d-9210-4ab8-ae44-f408e1ba885c",
+      "claim_id": "C58",
+      "claim": "Capillary endothelial cells of the tongue were the most susceptible cell type.",
+      "claim_type": "EXPLICIT",
+      "source": "Most susceptible were capillary endothelial cells of the tongue (Susceptibility = 25%; Figure 5A), which were affected by diseases that result in morphologic aberrations of the tongue (e.g., telangiectasia and macroglossia).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Result from susceptibility analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:54.023341Z"
+    },
+    {
+      "id": "e02dfa69-62e7-45ed-a481-6d86cd05a27b",
+      "content_id": "2885399d-9210-4ab8-ae44-f408e1ba885c",
+      "claim_id": "C59",
+      "claim": "Capillary endothelial cells of the tongue were affected by diseases that result in morphologic aberrations of the tongue.",
+      "claim_type": "EXPLICIT",
+      "source": "Most susceptible were capillary endothelial cells of the tongue (Susceptibility = 25%; Figure 5A), which were affected by diseases that result in morphologic aberrations of the tongue (e.g., telangiectasia and macroglossia).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Result from the study's analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:54.023341Z"
+    },
+    {
+      "id": "7d2d423d-3086-4aa3-bef5-cd444f2308df",
+      "content_id": "2885399d-9210-4ab8-ae44-f408e1ba885c",
+      "claim_id": "C60",
+      "claim": "Cell-type susceptibility did not correlate with cell-type prevalence.",
+      "claim_type": "EXPLICIT",
+      "source": "The two measures did not correlate (r=\u22120.02, Pearson correlation; Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statistical correlation analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:54.023341Z"
+    },
+    {
+      "id": "10107f46-f8e6-433a-ac57-63d20222fcb9",
+      "content_id": "2885399d-9210-4ab8-ae44-f408e1ba885c",
+      "claim_id": "C61",
+      "claim": "Fast and slow muscle cells were the most susceptible cell types in skeletal muscle.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, fast and slow muscle cells were the most susceptible cell types in skeletal muscle, while each accounting for less than 1% of the cells in that tissue.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Result from susceptibility analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:54.023341Z"
+    },
+    {
+      "id": "bb4d10fb-7677-45d2-923d-117d90a6398d",
+      "content_id": "2885399d-9210-4ab8-ae44-f408e1ba885c",
+      "claim_id": "C62",
+      "claim": "Fast and slow muscle cells each accounted for less than 1% of the cells in skeletal muscle tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, fast and slow muscle cells were the most susceptible cell types in skeletal muscle, while each accounting for less than 1% of the cells in that tissue.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Result from prevalence analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:54.023341Z"
+    },
+    {
+      "id": "f3b98acb-b8df-4e62-97b1-e4f1cca0d9d4",
+      "content_id": "2885399d-9210-4ab8-ae44-f408e1ba885c",
+      "claim_id": "C63",
+      "claim": "Cell-type susceptibility varied between cell classes.",
+      "claim_type": "EXPLICIT",
+      "source": "Cell classes had varying susceptibility (Figure 5B; p=1.5E-3, ANOVA).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statistical ANOVA test",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:54.023341Z"
+    },
+    {
+      "id": "fe1de13a-d98a-4325-b0b3-075aea7765aa",
+      "content_id": "2885399d-9210-4ab8-ae44-f408e1ba885c",
+      "claim_id": "C64",
+      "claim": "Among common cell classes, immunocytes and epithelia were the least susceptible.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the common cell classes, immunocytes and epithelia were the least susceptible, and endothelia were the most susceptible compared to other cell types (adjusted p<0.05, Mann-Whitney U test; Methods).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statistical Mann-Whitney U test",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:54.023341Z"
+    },
+    {
+      "id": "f2d7590e-a74e-4ed9-9f3e-48f08137611d",
+      "content_id": "2885399d-9210-4ab8-ae44-f408e1ba885c",
+      "claim_id": "C65",
+      "claim": "Among common cell classes, endothelia were the most susceptible compared to other cell types.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the common cell classes, immunocytes and epithelia were the least susceptible, and endothelia were the most susceptible compared to other cell types (adjusted p<0.05, Mann-Whitney U test; Methods).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statistical Mann-Whitney U test",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:54.023341Z"
+    },
+    {
+      "id": "8c50a130-afdf-488e-8497-c7453f822d9a",
+      "content_id": "2885399d-9210-4ab8-ae44-f408e1ba885c",
+      "claim_id": "C66",
+      "claim": "HPO annotations asserted 490 of 649 (76%) annotations available for these diseases in ODiseA.",
+      "claim_type": "EXPLICIT",
+      "source": "This asserted 490 of 649 (76%) annotations available for these diseases in ODiseA, supporting the usage of HPO as an indicator of the disease-affected tissue.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison between HPO and ODiseA annotations",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:54.023341Z"
+    },
+    {
+      "id": "53b5d641-2a7e-45e2-9893-ff77f6f608ac",
+      "content_id": "2885399d-9210-4ab8-ae44-f408e1ba885c",
+      "claim_id": "C67",
+      "claim": "1140 diseases and 2434 disease genes were associated to at least one affected tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, 1140 diseases and 2434 disease genes were associated to at least one affected tissue, with the majority associated to skeletal muscle (Figure 1\u2014figure supplement 1 and Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Description of the study's dataset",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:54.023341Z"
+    },
+    {
+      "id": "885670ce-05ba-4082-93f9-9680accb5e7d",
+      "content_id": "2885399d-9210-4ab8-ae44-f408e1ba885c",
+      "claim_id": "C68",
+      "claim": "The majority of diseases were associated to skeletal muscle.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, 1140 diseases and 2434 disease genes were associated to at least one affected tissue, with the majority associated to skeletal muscle (Figure 1\u2014figure supplement 1 and Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Description of the study's dataset",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:54.023341Z"
+    },
+    {
+      "id": "971dc38c-2559-4f32-9718-4134388f6c29",
+      "content_id": "2885399d-9210-4ab8-ae44-f408e1ba885c",
+      "claim_id": "C69",
+      "claim": "The PrEDiCT score of a disease in each cell type was set to the median preferential expression of the respective disease genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Next, we set the PrEDiCT score of a disease in each cell type to the median preferential expression of the respective disease genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of the PrEDiCT methodology",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:54.023341Z"
+    },
+    {
+      "id": "6b34f6da-f57e-488d-b8ef-c39f036a2195",
+      "content_id": "2885399d-9210-4ab8-ae44-f408e1ba885c",
+      "claim_id": "C70",
+      "claim": "Statistical significance of the PrEDiCT score was determined using a permutation test.",
+      "claim_type": "EXPLICIT",
+      "source": "Statistical significance of the score was determined using a permutation test (Methods; Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Description of the PrEDiCT methodology",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:54.023341Z"
+    },
+    {
+      "id": "b6db6eb5-97ce-4ad5-bdf3-bdd7ab919f60",
+      "content_id": "2885399d-9210-4ab8-ae44-f408e1ba885c",
+      "claim_id": "C71",
+      "claim": "The false-positive rates for likely associations were low.",
+      "claim_type": "EXPLICIT",
+      "source": "The false-positive rates for likely associations were low (Methods; Figure 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Result from validation analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:54.023341Z"
+    },
+    {
+      "id": "2df12a6c-4c61-43ce-b19d-b3095b52414b",
+      "content_id": "2885399d-9210-4ab8-ae44-f408e1ba885c",
+      "claim_id": "C72",
+      "claim": "A large variety of human cell types had a matching mouse cell type (82/129).",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, a large variety of human cell types had a matching mouse cell type (82/129) and vice versa (70/97; Supplementary file 5).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Result from cell type matching analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:54.023341Z"
+    },
+    {
+      "id": "3b02189b-ae9b-40e3-9426-22668e20e417",
+      "content_id": "2885399d-9210-4ab8-ae44-f408e1ba885c",
+      "claim_id": "C73",
+      "claim": "70 out of 97 mouse cell types had a matching human cell type.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, a large variety of human cell types had a matching mouse cell type (82/129) and vice versa (70/97; Supplementary file 5).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Result from cell type matching analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:54.023341Z"
+    },
+    {
+      "id": "ae9da9f7-f9fa-4137-9c2e-d7e7b850251c",
+      "content_id": "2885399d-9210-4ab8-ae44-f408e1ba885c",
+      "claim_id": "C74",
+      "claim": "The impact of disease genes on the matching between human and mouse cell types was negligible.",
+      "claim_type": "EXPLICIT",
+      "source": "The impact of disease genes on the matching was negligible, as shown by repeating the identification of similar cell types upon excluding disease genes from the list of marker genes (Methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Result from control analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:54.023341Z"
+    },
+    {
+      "id": "4850df57-3e45-41b8-b081-bed2ba4b6c83",
+      "content_id": "2885399d-9210-4ab8-ae44-f408e1ba885c",
+      "claim_id": "C75",
+      "claim": "Primary ciliary dyskinesia likely affected mouse lung ciliated epithelial cells which match human lung ciliated cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Compatible with our previous proof-of-concept cases in human, PCD likely affected mouse lung ciliated epithelial cells which match human lung ciliated cells (Figure 2C), and Heinz body anemias likely affected mouse bone marrow reticulocytes and erythroblasts which match human erythrocytes (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Result from mouse analysis shown in Figure 2C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:54.023341Z"
+    },
+    {
+      "id": "65d92ed9-abe8-42fa-8775-d13e8aba98cd",
+      "content_id": "2885399d-9210-4ab8-ae44-f408e1ba885c",
+      "claim_id": "C76",
+      "claim": "Heinz body anemias likely affected mouse bone marrow reticulocytes and erythroblasts which match human erythrocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Compatible with our previous proof-of-concept cases in human, PCD likely affected mouse lung ciliated epithelial cells which match human lung ciliated cells (Figure 2C), and Heinz body anemias likely affected mouse bone marrow reticulocytes and erythroblasts which match human erythrocytes (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Result from mouse analysis shown in Figure 2D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:54.023341Z"
+    },
+    {
+      "id": "e9333ed3-9478-496f-9cc6-30821db9684d",
+      "content_id": "2885399d-9210-4ab8-ae44-f408e1ba885c",
+      "claim_id": "C77",
+      "claim": "Four mitochondrial complex deficiencies likely affected mouse striated muscle cells, which matched human slow and fast muscle cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise, four mitochondrial complex deficiencies likely affected mouse striated muscle cells, which matched human slow and fast muscle cells (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Result from mouse analysis shown in Figure 2E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:54.023341Z"
+    },
+    {
+      "id": "5aa54dd0-57e2-4dd7-a7fe-09e52ed056b0",
+      "content_id": "2885399d-9210-4ab8-ae44-f408e1ba885c",
+      "claim_id": "C78",
+      "claim": "Mitochondrial complex II deficiency scored highest in mouse striated muscle cells, yet the scores were insignificant.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to the results in human, 'mitochondrial complex II deficiency' scored highest in these cell types, yet the scores were insignificant (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Result from mouse analysis shown in Figure 2E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:54.023341Z"
+    },
+    {
+      "id": "d8fe5c9f-befb-4f36-bec1-5cc03f0e36c1",
+      "content_id": "2885399d-9210-4ab8-ae44-f408e1ba885c",
+      "claim_id": "C79",
+      "claim": "The study identified seven diseases in the dataset that were caused by mutations in genes encoding ligands and their receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified seven diseases in our dataset that were caused by mutations in genes encoding ligands and their receptors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Result from disease classification",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:54.023341Z"
+    },
+    {
+      "id": "9cd5e19e-079d-4ad6-8bc2-2ae10a6c0b94",
+      "content_id": "2885399d-9210-4ab8-ae44-f408e1ba885c",
+      "claim_id": "C80",
+      "claim": "About 30% of Mendelian diseases manifest clinically in a tissue that overexpresses disease genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, this fits with previous observations that about 30% of Mendelian diseases manifest clinically in a tissue that overexpresses disease genes (Barshir et al., 2018; Barshir et al., 2014; Hekselman and Yeger-Lotem, 2020; Lage et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Barshir et al., 2018; Barshir et al., 2014; Hekselman and Yeger-Lotem, 2020; Lage et al., 2008",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:54.023341Z"
+    },
+    {
+      "id": "7dc8d4e9-91ef-4b7e-a9e6-744242630e25",
+      "content_id": "2885399d-9210-4ab8-ae44-f408e1ba885c",
+      "claim_id": "C81",
+      "claim": "The fraction of associations that were recapitulated in mouse did not differ between diseases with a single or multiple disease genes.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the fraction of associations that were recapitulated in mouse did not differ between diseases with a single or multiple disease genes, supporting this line of evidence (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Result from comparison analysis shown in Figure 2\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:54.023341Z"
+    },
+    {
+      "id": "92f89313-14d3-49b9-8d83-5bb544d61433",
+      "content_id": "2885399d-9210-4ab8-ae44-f408e1ba885c",
+      "claim_id": "C82",
+      "claim": "328 diseases affected 102 out of 129 cell types.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, 328 diseases affected 102/129 cell types.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of the study's results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:54.023341Z"
+    },
+    {
+      "id": "c16ab665-09d2-4b1c-a0fc-9b879d470679",
+      "content_id": "2885399d-9210-4ab8-ae44-f408e1ba885c",
+      "claim_id": "C83",
+      "claim": "There was no correlation between cell type prevalence and its likelihood to be affected.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, there was no correlation between cell type prevalence and its likelihood to be affected (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Result from correlation analysis shown in Figure 5A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:54.023341Z"
+    },
+    {
+      "id": "a54dad0f-93aa-4390-b443-4f6ee54e9aab",
+      "content_id": "2885399d-9210-4ab8-ae44-f408e1ba885c",
+      "claim_id": "C84",
+      "claim": "Endothelia were more likely to be affected by diseases than other prevalent cell classes.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, endothelia were more likely to be affected by diseases than other prevalent cell classes, whereas immunocytes and epithelia were the least likely to be affected among the prevalent cell classes (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Result from susceptibility analysis shown in Figure 5B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:54.023341Z"
+    },
+    {
+      "id": "37c6474b-d27e-473f-92ce-c1261af8d160",
+      "content_id": "2885399d-9210-4ab8-ae44-f408e1ba885c",
+      "claim_id": "C85",
+      "claim": "Immunocytes had similar expression signatures across tissues, in accordance with their common functions.",
+      "claim_type": "EXPLICIT",
+      "source": "To analyze this further, a cross-tissue study of 20 human tissues showed that immunocytes had similar expression signatures across tissues, in accordance with their common functions, whereas endothelia had tissue-specific expression signatures that reflect their tissue-specialized roles (Jones et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Jones et al., 2022",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:54.023341Z"
+    },
+    {
+      "id": "8996cf89-70d0-4e8e-a65f-9efbf1cc0e30",
+      "content_id": "2885399d-9210-4ab8-ae44-f408e1ba885c",
+      "claim_id": "C86",
+      "claim": "Endothelia had tissue-specific expression signatures that reflect their tissue-specialized roles.",
+      "claim_type": "EXPLICIT",
+      "source": "To analyze this further, a cross-tissue study of 20 human tissues showed that immunocytes had similar expression signatures across tissues, in accordance with their common functions, whereas endothelia had tissue-specific expression signatures that reflect their tissue-specialized roles (Jones et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Jones et al., 2022",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:54.023341Z"
+    },
+    {
+      "id": "5a53fec3-bb81-4924-bdd5-78b6c12440eb",
+      "content_id": "2885399d-9210-4ab8-ae44-f408e1ba885c",
+      "claim_id": "C87",
+      "claim": "Germline impairment of immunocytes is more likely lethal.",
+      "claim_type": "IMPLICIT",
+      "source": "Hence, it seems that germline impairment of immunocytes is more likely lethal, whereas the tissue-specialization of endothelia limits the impact of their germline impairment and thus facilitates overall survival.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on expression signature data and susceptibility patterns",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:54.023341Z"
+    },
+    {
+      "id": "2a8d0315-6d61-4aab-bab0-1c0e7d3c7f15",
+      "content_id": "2885399d-9210-4ab8-ae44-f408e1ba885c",
+      "claim_id": "C88",
+      "claim": "The tissue-specialization of endothelia limits the impact of their germline impairment and thus facilitates overall survival.",
+      "claim_type": "IMPLICIT",
+      "source": "Hence, it seems that germline impairment of immunocytes is more likely lethal, whereas the tissue-specialization of endothelia limits the impact of their germline impairment and thus facilitates overall survival.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on expression signature data and susceptibility patterns",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:54.023341Z"
+    },
+    {
+      "id": "bd25dd93-1703-47a9-9ca3-0a90690e6c8f",
+      "content_id": "2885399d-9210-4ab8-ae44-f408e1ba885c",
+      "claim_id": "C89",
+      "claim": "Mitochondrial diseases tend to affect muscle cells, in accordance with their energetic demands.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, we showed that mitochondrial diseases tend to affect muscle cells, in accordance with their energetic demands (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Result from the study's analysis shown in Figure 1E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:54.023341Z"
+    },
+    {
+      "id": "0894ad27-3bc2-4424-85fa-3f0fa9387658",
+      "content_id": "2885399d-9210-4ab8-ae44-f408e1ba885c",
+      "claim_id": "C90",
+      "claim": "Diseases inflicting on multiple tissues likely affect similar cell types among those tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, we showed that diseases inflicting on multiple tissues likely affect similar cell types among those tissues, thereby providing a mechanistic explanation for this phenomenon (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Result from the study's analysis shown in Figure 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:54.023341Z"
+    },
+    {
+      "id": "c942e4b5-d8df-475d-97c4-d557c52465ee",
+      "content_id": "2885399d-9210-4ab8-ae44-f408e1ba885c",
+      "claim_id": "C91",
+      "claim": "Oncogenes of heritable lung and trachea cancers likely affect basal cells.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, by separately analyzing oncogenes and TSGs of heritable lung and trachea cancers, we found that oncogenes likely affect basal cells, and TSGs likely affect monocytes (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Result from separate analysis shown in Figure 4C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:54.023341Z"
+    },
+    {
+      "id": "4762edbf-ea84-4737-a2ee-c638d73d2abc",
+      "content_id": "2885399d-9210-4ab8-ae44-f408e1ba885c",
+      "claim_id": "C92",
+      "claim": "TSGs of heritable lung and trachea cancers likely affect monocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, by separately analyzing oncogenes and TSGs of heritable lung and trachea cancers, we found that oncogenes likely affect basal cells, and TSGs likely affect monocytes (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Result from separate analysis shown in Figure 4C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:54.023341Z"
+    },
+    {
+      "id": "70d270b5-35da-41f5-a0c4-6c1b43d4deb8",
+      "content_id": "2885399d-9210-4ab8-ae44-f408e1ba885c",
+      "claim_id": "C93",
+      "claim": "Tissue-constructive cells are more susceptible to oncogene mutations.",
+      "claim_type": "IMPLICIT",
+      "source": "This could suggest that tissue-constructive cells are more susceptible to oncogene mutations, whereas protective cells, such as monocytes, are more susceptible to TSG mutations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from the pattern of affected cell types for oncogenes vs TSGs",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:54.023341Z"
+    },
+    {
+      "id": "47389c2c-bc33-477c-ad95-05cb73d2af47",
+      "content_id": "2885399d-9210-4ab8-ae44-f408e1ba885c",
+      "claim_id": "C94",
+      "claim": "Protective cells, such as monocytes, are more susceptible to TSG mutations.",
+      "claim_type": "IMPLICIT",
+      "source": "This could suggest that tissue-constructive cells are more susceptible to oncogene mutations, whereas protective cells, such as monocytes, are more susceptible to TSG mutations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from the pattern of affected cell types for oncogenes vs TSGs",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:54.023341Z"
+    },
+    {
+      "id": "1c12f869-4ea8-4a66-b688-d920646bbce3",
+      "content_id": "2885399d-9210-4ab8-ae44-f408e1ba885c",
+      "claim_id": "C95",
+      "claim": "Monocytes function in the elimination of malignant transformation of cells in different tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "The latter is consistent with the function of monocytes in the elimination of malignant transformation of cells in different tissues (Robinson et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Robinson et al., 2021",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:54.023341Z"
+    },
+    {
+      "id": "fe12d3ca-85c0-4c1d-b7c6-7f9e7a99a06d",
+      "content_id": "2885399d-9210-4ab8-ae44-f408e1ba885c",
+      "claim_id": "C96",
+      "claim": "Autosomal recessive limb-girdle muscular dystrophy disrupts intercellular communication among muscle cell types, via mutations in the DAG1 receptor.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with their results, we found that autosomal recessive limb-girdle muscular dystrophy disrupts intercellular communication among muscle cell types, via mutations in the DAG1 receptor (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Result from the study's analysis shown in Figure 4B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:54.023341Z"
+    },
+    {
+      "id": "d45ec670-928d-4333-9cbb-61dfa3773a6d",
+      "content_id": "2885399d-9210-4ab8-ae44-f408e1ba885c",
+      "claim_id": "C97",
+      "claim": "By applying PrEDiCT separately to the ligand of DAG1, LAMA2, the study highlighted the involvement of mesenchymal stem cells in autosomal recessive limb-girdle muscular dystrophy.",
+      "claim_type": "EXPLICIT",
+      "source": "Yet, by applying PrEDiCT separately to the ligand of DAG1, LAMA2, we also highlighted the involvement of mesenchymal stem cells in the disease (Urciuolo et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Result from the study's analysis and cited from Urciuolo et al., 2013",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:54.023341Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "bd97e6ce-6e1f-4203-923c-c85531288378",
+      "content_id": "2885399d-9210-4ab8-ae44-f408e1ba885c",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The PrEDiCT method was applied to 1,140 Mendelian diseases across six human tissues (bone marrow, lung, skeletal muscle, spleen, tongue, trachea) comprising 129 cell types, identifying 489 likely disease-cell-type associations covering 328 diseases and 102 cell types using a median preferential expression score with permutation-based significance testing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C20, C30, C67-C70 provide comprehensive methodological details and quantitative results. The workflow is clearly described with specific thresholds (PrEDiCT \u22651, FDR <0.1), and the scale of analysis (34,249 total associations) is well-documented. The statistical approach using permutation tests is appropriate for this type of analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:05:54.023341Z"
+    },
+    {
+      "id": "857c0f5f-4800-4d0a-8161-41e1235b5742",
+      "content_id": "2885399d-9210-4ab8-ae44-f408e1ba885c",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "PrEDiCT successfully identified known disease-affected cell types in proof-of-concept cases: primary ciliary dyskinesia associated with lung ciliated cells, Heinz body anemias with bone marrow erythrocytes, and four of five mitochondrial complex deficiencies with slow and fast muscle cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23, C25, C26 demonstrate successful validation with known disease-cell-type relationships cited from literature (C22, C24). The mitochondrial complex II deficiency case (C27) shows appropriate acknowledgment of statistical stringency limitations. These proof-of-concept examples provide strong initial validation of the method.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:05:54.023341Z"
+    },
+    {
+      "id": "e6866161-7b09-4f2f-bd47-26a45526caea",
+      "content_id": "2885399d-9210-4ab8-ae44-f408e1ba885c",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Literature text-mining identified 229 disease-cell-type pairs with significant co-appearance, and likely associations showed significant enrichment for these literature-supported pairs (8.4% vs 0.7%, p<E-15) with low false-positive rates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C29 provide statistical validation through literature co-occurrence analysis using appropriate Chi-squared and Fisher's exact tests. The enrichment is substantial and highly significant. Claim C71 confirms low false-positive rates. This represents robust large-scale validation, though text-mining has inherent limitations in distinguishing positive from speculative results.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:05:54.023341Z"
+    },
+    {
+      "id": "9aefbbbf-8ed1-4792-9dff-aebb9fea541b",
+      "content_id": "2885399d-9210-4ab8-ae44-f408e1ba885c",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Mouse single-cell data analysis yielded 97 cell clusters and 380 likely disease-cell-type associations. PrEDiCT scores showed modest correlation between matching human-mouse cell types (r=0.38, p<E-15) but not non-matching types (r=-0.02), with 30% of human diseases affecting matching mouse cell types (significantly more than chance, p<0.01).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C36, C72-C78, C81 provide comprehensive cross-species validation. The modest correlation (r=0.38) for matching cell types is reasonable given biological differences between species. The statistical significance is strong (p<E-15 for correlation, p<0.01 for enrichment). Control analyses (C74, C81) address potential confounding by disease genes. The recapitulation of proof-of-concept cases (C75-C78) strengthens confidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:05:54.023341Z"
+    },
+    {
+      "id": "30bd6b92-22dc-4f7b-841e-3c5b9d5cddaa",
+      "content_id": "2885399d-9210-4ab8-ae44-f408e1ba885c",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Multi-tissue diseases (168/328, 51%) showed enrichment for affecting matching cell types across tissues (18% vs chance, p<0.01), with chronic granulomatous disease exemplifying this pattern by affecting phagocytes in spleen, lung, and bone marrow.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C42 demonstrate a novel biological insight with appropriate statistical testing. The identification of 840 matching cell-type pairs (C39) and enrichment analysis (C41-C42) are methodologically sound. The CGD example (C43-C46) provides strong biological validation, including therapeutic relevance (bone marrow transplant). This represents a significant mechanistic insight into multi-tissue disease manifestation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:05:54.023341Z"
+    },
+    {
+      "id": "bb5fc70a-608e-4537-a9fb-dea85ad21ce6",
+      "content_id": "2885399d-9210-4ab8-ae44-f408e1ba885c",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Separate analysis of ligand and receptor genes for seven diseases revealed distinct affected cell types: hyper-IgM immunodeficiency affected na\u00efve B cells through CD40 (receptor, PrEDiCT=2.9, FDR=0.06) and CD4\u03b1\u03b2 T cells through CD40LG (ligand, PrEDiCT=3.7, FDR<0.001).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C50, C79 demonstrate methodological refinement for diseases with distinct cellular mechanisms. The hyper-IgM example shows how joint analysis (C48) missed B cells but separate analysis (C49-C50) correctly identified both cell types. The biological rationale is sound and supported by literature (C47). This represents an important methodological advancement.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:05:54.023341Z"
+    },
+    {
+      "id": "c4f41213-4880-436a-a0e5-03589db43ebf",
+      "content_id": "2885399d-9210-4ab8-ae44-f408e1ba885c",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "For autosomal recessive limb-girdle muscular dystrophy, separate analysis of LAMA2 (ligand) and DAG1 (receptor) identified mesenchymal stem cells and satellite stem cells as affected cell types, respectively, with both predictions supported by experimental evidence from mouse models and patient studies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C55, C96-C97 provide strong validation through convergent evidence from multiple sources. The separate ligand/receptor analysis (C52) revealed cell types missed by joint analysis. Supporting evidence includes patient studies (C53) and mouse rescue experiments (C54-C55) that validate both predictions. This demonstrates the power of function-based refinement.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:05:54.023341Z"
+    },
+    {
+      "id": "ed048aec-1078-4583-8a8e-ac95a2f4749c",
+      "content_id": "2885399d-9210-4ab8-ae44-f408e1ba885c",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "For heritable airway cancers, separate analysis of oncogenes and tumor suppressor genes revealed that oncogenes likely affect basal cells while TSGs affect intermediate and non-classical monocytes, suggesting distinct cellular vulnerabilities.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C57, C91-C92 demonstrate another application of function-based refinement. The distinction between oncogene and TSG effects on different cell types is biologically plausible and represents a novel insight. However, this finding would benefit from additional experimental validation beyond the computational prediction.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:05:54.023341Z"
+    },
+    {
+      "id": "304afd06-ceb4-4cea-8361-3b14f4ff8fdc",
+      "content_id": "2885399d-9210-4ab8-ae44-f408e1ba885c",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Cell-type susceptibility analysis revealed that capillary endothelial cells of the tongue were most susceptible (25%), susceptibility did not correlate with cell-type prevalence (r=-0.02), and fast/slow muscle cells were highly susceptible despite representing <1% of skeletal muscle cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C62, C82-C83 provide quantitative characterization of cell-type vulnerability. The lack of correlation between prevalence and susceptibility (C60, C83) is an important negative result supported by appropriate statistical testing. The muscle cell example (C61-C62) illustrates this principle clearly. The analysis covers 328 diseases and 102 cell types, providing adequate statistical power.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:05:54.023341Z"
+    },
+    {
+      "id": "785e5cb0-a55a-401a-a868-d4720195e702",
+      "content_id": "2885399d-9210-4ab8-ae44-f408e1ba885c",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Cell-type susceptibility varied significantly between cell classes (p=1.5E-3, ANOVA), with endothelia being most susceptible and immunocytes/epithelia being least susceptible among common cell classes (p<0.05, Mann-Whitney U test).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C65, C84 demonstrate statistically significant differences in susceptibility across cell classes using appropriate tests (ANOVA, Mann-Whitney U). The findings are biologically interesting and suggest fundamental differences in cellular vulnerability. The statistical significance is strong and multiple testing correction was applied.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:05:54.023341Z"
+    },
+    {
+      "id": "f25dd639-450c-4611-9b72-546c40f8d131",
+      "content_id": "2885399d-9210-4ab8-ae44-f408e1ba885c",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The differential susceptibility of cell classes is explained by immunocytes having similar expression signatures across tissues (suggesting germline impairment is lethal) while endothelia have tissue-specific signatures (limiting impact of germline impairment).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C85-C86 cite cross-tissue expression data from Jones et al., 2022. However, claims C87-C88 are speculative inferences about lethality without direct evidence. While the hypothesis is plausible and logically consistent with the data, it remains untested. The authors appropriately use cautious language ('it seems that'), but this interpretation requires experimental validation to be considered supported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:05:54.023341Z"
+    },
+    {
+      "id": "01668219-d4d2-4aa1-a7a9-144bcac1e2af",
+      "content_id": "2885399d-9210-4ab8-ae44-f408e1ba885c",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The differential effects of oncogenes (affecting basal cells) versus TSGs (affecting monocytes) in airway cancers suggests tissue-constructive cells are more susceptible to oncogene mutations while protective cells are more susceptible to TSG mutations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C93-C94 are explicitly speculative ('could suggest') based on the pattern observed in C91-C92. While claim C95 provides supporting evidence for monocyte function, the broader hypothesis about differential susceptibility remains speculative. This represents an interesting hypothesis that requires experimental validation. The authors appropriately present this as speculation rather than established fact.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:05:54.023341Z"
+    },
+    {
+      "id": "eed96b14-5272-457a-b3be-e43fb1a630f8",
+      "content_id": "2885399d-9210-4ab8-ae44-f408e1ba885c",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "HPO annotations were validated against ODiseA database, showing 76% agreement (490/649 annotations), supporting the use of HPO for disease-tissue associations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C66 provides important validation of the disease-tissue annotation approach. The 76% agreement rate is substantial and supports the reliability of HPO annotations. This validation strengthens confidence in the disease-tissue associations used throughout the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:05:54.023341Z"
+    },
+    {
+      "id": "bf901f3a-980a-49dc-b40d-9fc0e6d6fc64",
+      "content_id": "2885399d-9210-4ab8-ae44-f408e1ba885c",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The study demonstrated that mitochondrial diseases tend to affect muscle cells (consistent with energetic demands) and that multi-tissue diseases affect similar cell types across tissues, providing mechanistic insights.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C89-C90 summarize key biological insights from the study. C89 is supported by the mitochondrial complex deficiency results (C26-C27), and C90 is supported by the multi-tissue disease analysis (C37-C42). These represent important mechanistic insights into disease biology.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:05:54.023341Z"
+    },
+    {
+      "id": "8a454d15-d0fe-4df9-b0c0-d042ff1e5898",
+      "content_id": "2885399d-9210-4ab8-ae44-f408e1ba885c",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Background claims establish that hereditary diseases affect 6% of the population, identifying affected cell types facilitates disease understanding, disease genes tend to be preferentially expressed in affected cell types, and approximately 30% of Mendelian diseases manifest in tissues that overexpress disease genes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C12, C80 provide background context from prior literature. All claims are appropriately cited and represent established knowledge in the field. The 30% figure (C80) is particularly relevant as it contextualizes the study's success rate (29% of diseases with identified affected cell types). These claims appropriately frame the study's rationale.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:05:54.023341Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "d74b3509-2349-48bb-8c5e-2f1f8041cdba",
+      "result_id": "bd97e6ce-6e1f-4203-923c-c85531288378"
+    },
+    {
+      "claim_id": "c636abae-6bcb-44e2-a7a9-3b16d847b95b",
+      "result_id": "bd97e6ce-6e1f-4203-923c-c85531288378"
+    },
+    {
+      "claim_id": "963d17d9-e2cb-442b-b7c8-b4a41945e8c3",
+      "result_id": "bd97e6ce-6e1f-4203-923c-c85531288378"
+    },
+    {
+      "claim_id": "6d7e56f8-45b3-4a9d-a808-466b5ac1c8b6",
+      "result_id": "bd97e6ce-6e1f-4203-923c-c85531288378"
+    },
+    {
+      "claim_id": "87b5d154-a416-4af1-8c2e-99f8661f65e7",
+      "result_id": "bd97e6ce-6e1f-4203-923c-c85531288378"
+    },
+    {
+      "claim_id": "f559f77d-958f-40da-a9b8-0e3ee589a943",
+      "result_id": "bd97e6ce-6e1f-4203-923c-c85531288378"
+    },
+    {
+      "claim_id": "2ce7e36f-8e4a-45be-9793-2c8f0d8b6395",
+      "result_id": "bd97e6ce-6e1f-4203-923c-c85531288378"
+    },
+    {
+      "claim_id": "45df8eab-70eb-4419-89c9-779d2a2a1c4b",
+      "result_id": "bd97e6ce-6e1f-4203-923c-c85531288378"
+    },
+    {
+      "claim_id": "db48ace6-63f2-472f-a086-7d90eaaa5d41",
+      "result_id": "bd97e6ce-6e1f-4203-923c-c85531288378"
+    },
+    {
+      "claim_id": "53b5d641-2a7e-45e2-9893-ff77f6f608ac",
+      "result_id": "bd97e6ce-6e1f-4203-923c-c85531288378"
+    },
+    {
+      "claim_id": "885670ce-05ba-4082-93f9-9680accb5e7d",
+      "result_id": "bd97e6ce-6e1f-4203-923c-c85531288378"
+    },
+    {
+      "claim_id": "971dc38c-2559-4f32-9718-4134388f6c29",
+      "result_id": "bd97e6ce-6e1f-4203-923c-c85531288378"
+    },
+    {
+      "claim_id": "6b34f6da-f57e-488d-b8ef-c39f036a2195",
+      "result_id": "bd97e6ce-6e1f-4203-923c-c85531288378"
+    },
+    {
+      "claim_id": "561200af-4f78-4bb8-a62b-579b29cb99b8",
+      "result_id": "857c0f5f-4800-4d0a-8161-41e1235b5742"
+    },
+    {
+      "claim_id": "20bdb38f-8491-46b8-a92c-22a8f0cbae6a",
+      "result_id": "857c0f5f-4800-4d0a-8161-41e1235b5742"
+    },
+    {
+      "claim_id": "50b42942-4c10-476c-82cb-46e5744c3e1c",
+      "result_id": "857c0f5f-4800-4d0a-8161-41e1235b5742"
+    },
+    {
+      "claim_id": "1a7ed548-4211-4979-bc1c-82c55cf0d1d0",
+      "result_id": "857c0f5f-4800-4d0a-8161-41e1235b5742"
+    },
+    {
+      "claim_id": "9b8b7b70-d0c9-4079-977d-de001f59d764",
+      "result_id": "857c0f5f-4800-4d0a-8161-41e1235b5742"
+    },
+    {
+      "claim_id": "e0091f3d-8439-428f-be4d-d64d635c06da",
+      "result_id": "857c0f5f-4800-4d0a-8161-41e1235b5742"
+    },
+    {
+      "claim_id": "7388dd6d-030b-41ac-b0dd-aa4687000c58",
+      "result_id": "857c0f5f-4800-4d0a-8161-41e1235b5742"
+    },
+    {
+      "claim_id": "d5469833-acef-4a97-839a-53d6e5146e2c",
+      "result_id": "e6866161-7b09-4f2f-bd47-26a45526caea"
+    },
+    {
+      "claim_id": "b9b43a95-7aee-4214-abea-b8d307243076",
+      "result_id": "e6866161-7b09-4f2f-bd47-26a45526caea"
+    },
+    {
+      "claim_id": "b6db6eb5-97ce-4ad5-bdf3-bdd7ab919f60",
+      "result_id": "e6866161-7b09-4f2f-bd47-26a45526caea"
+    },
+    {
+      "claim_id": "a7a16c07-8ece-4b2a-a6ea-c35b722515cd",
+      "result_id": "9aefbbbf-8ed1-4792-9dff-aebb9fea541b"
+    },
+    {
+      "claim_id": "53e99dc3-fd35-4279-808b-44e23429b8ad",
+      "result_id": "9aefbbbf-8ed1-4792-9dff-aebb9fea541b"
+    },
+    {
+      "claim_id": "0ef44d02-c61b-4f13-9152-0326719190bf",
+      "result_id": "9aefbbbf-8ed1-4792-9dff-aebb9fea541b"
+    },
+    {
+      "claim_id": "b510a455-4c97-450f-9bdf-ff3206f9db19",
+      "result_id": "9aefbbbf-8ed1-4792-9dff-aebb9fea541b"
+    },
+    {
+      "claim_id": "718d2afc-af54-4894-82fb-ab72b79b8004",
+      "result_id": "9aefbbbf-8ed1-4792-9dff-aebb9fea541b"
+    },
+    {
+      "claim_id": "ead652e2-1ad1-435d-a084-ba986c12b396",
+      "result_id": "9aefbbbf-8ed1-4792-9dff-aebb9fea541b"
+    },
+    {
+      "claim_id": "2df12a6c-4c61-43ce-b19d-b3095b52414b",
+      "result_id": "9aefbbbf-8ed1-4792-9dff-aebb9fea541b"
+    },
+    {
+      "claim_id": "3b02189b-ae9b-40e3-9426-22668e20e417",
+      "result_id": "9aefbbbf-8ed1-4792-9dff-aebb9fea541b"
+    },
+    {
+      "claim_id": "ae9da9f7-f9fa-4137-9c2e-d7e7b850251c",
+      "result_id": "9aefbbbf-8ed1-4792-9dff-aebb9fea541b"
+    },
+    {
+      "claim_id": "4850df57-3e45-41b8-b081-bed2ba4b6c83",
+      "result_id": "9aefbbbf-8ed1-4792-9dff-aebb9fea541b"
+    },
+    {
+      "claim_id": "65d92ed9-abe8-42fa-8775-d13e8aba98cd",
+      "result_id": "9aefbbbf-8ed1-4792-9dff-aebb9fea541b"
+    },
+    {
+      "claim_id": "e9333ed3-9478-496f-9cc6-30821db9684d",
+      "result_id": "9aefbbbf-8ed1-4792-9dff-aebb9fea541b"
+    },
+    {
+      "claim_id": "5aa54dd0-57e2-4dd7-a7fe-09e52ed056b0",
+      "result_id": "9aefbbbf-8ed1-4792-9dff-aebb9fea541b"
+    },
+    {
+      "claim_id": "7dc8d4e9-91ef-4b7e-a9e6-744242630e25",
+      "result_id": "9aefbbbf-8ed1-4792-9dff-aebb9fea541b"
+    },
+    {
+      "claim_id": "24102f17-518e-4dd7-af12-95381be9ab13",
+      "result_id": "30bd6b92-22dc-4f7b-841e-3c5b9d5cddaa"
+    },
+    {
+      "claim_id": "120fd94f-5a6b-45b9-94f0-9894dbba7f4d",
+      "result_id": "30bd6b92-22dc-4f7b-841e-3c5b9d5cddaa"
+    },
+    {
+      "claim_id": "9224ddba-5f70-43c5-926b-d373aef5f238",
+      "result_id": "30bd6b92-22dc-4f7b-841e-3c5b9d5cddaa"
+    },
+    {
+      "claim_id": "f66014a9-f32c-46c0-9875-59d4f522e2a9",
+      "result_id": "30bd6b92-22dc-4f7b-841e-3c5b9d5cddaa"
+    },
+    {
+      "claim_id": "be8eac2a-e09b-4542-a4cb-8cce2732db54",
+      "result_id": "30bd6b92-22dc-4f7b-841e-3c5b9d5cddaa"
+    },
+    {
+      "claim_id": "48a1dbcc-405a-42f3-8821-b56f12d44ea5",
+      "result_id": "30bd6b92-22dc-4f7b-841e-3c5b9d5cddaa"
+    },
+    {
+      "claim_id": "2e115bc3-718d-457c-b6da-46c36908ea30",
+      "result_id": "30bd6b92-22dc-4f7b-841e-3c5b9d5cddaa"
+    },
+    {
+      "claim_id": "2428ec1a-2167-4d98-ad88-57844a9cfecf",
+      "result_id": "30bd6b92-22dc-4f7b-841e-3c5b9d5cddaa"
+    },
+    {
+      "claim_id": "d6fdb0b4-a819-4786-84a4-72b7b03913d1",
+      "result_id": "30bd6b92-22dc-4f7b-841e-3c5b9d5cddaa"
+    },
+    {
+      "claim_id": "6ea81537-f670-4a79-b364-687ef90dd06f",
+      "result_id": "30bd6b92-22dc-4f7b-841e-3c5b9d5cddaa"
+    },
+    {
+      "claim_id": "78033bef-cb06-4b8d-9f77-4d8c98ccb9ff",
+      "result_id": "bb5fc70a-608e-4537-a9fb-dea85ad21ce6"
+    },
+    {
+      "claim_id": "7a065d68-8b9b-4d60-8561-eb4bb83149e1",
+      "result_id": "bb5fc70a-608e-4537-a9fb-dea85ad21ce6"
+    },
+    {
+      "claim_id": "8ad38e88-a74a-4202-97c6-4489598ecb6f",
+      "result_id": "bb5fc70a-608e-4537-a9fb-dea85ad21ce6"
+    },
+    {
+      "claim_id": "1879a1b5-c000-4471-b0d6-6e95db95da7d",
+      "result_id": "bb5fc70a-608e-4537-a9fb-dea85ad21ce6"
+    },
+    {
+      "claim_id": "d8fe5c9f-befb-4f36-bec1-5cc03f0e36c1",
+      "result_id": "bb5fc70a-608e-4537-a9fb-dea85ad21ce6"
+    },
+    {
+      "claim_id": "ccc1bc69-1516-4873-b73d-a1c0d4a22ad2",
+      "result_id": "c4f41213-4880-436a-a0e5-03589db43ebf"
+    },
+    {
+      "claim_id": "49888520-e4b2-4cac-94ce-faa4fd946ab5",
+      "result_id": "c4f41213-4880-436a-a0e5-03589db43ebf"
+    },
+    {
+      "claim_id": "104f2c72-4c05-46a5-ab7e-84db64585c30",
+      "result_id": "c4f41213-4880-436a-a0e5-03589db43ebf"
+    },
+    {
+      "claim_id": "2c827922-6955-4d24-8e7d-7d07587d2795",
+      "result_id": "c4f41213-4880-436a-a0e5-03589db43ebf"
+    },
+    {
+      "claim_id": "2ddd3096-7a9a-45c4-a600-acb01cc49e1c",
+      "result_id": "c4f41213-4880-436a-a0e5-03589db43ebf"
+    },
+    {
+      "claim_id": "fe12d3ca-85c0-4c1d-b7c6-7f9e7a99a06d",
+      "result_id": "c4f41213-4880-436a-a0e5-03589db43ebf"
+    },
+    {
+      "claim_id": "d45ec670-928d-4333-9cbb-61dfa3773a6d",
+      "result_id": "c4f41213-4880-436a-a0e5-03589db43ebf"
+    },
+    {
+      "claim_id": "af66449e-1da6-45f7-8be2-d43f45a6a5c3",
+      "result_id": "ed048aec-1078-4583-8a8e-ac95a2f4749c"
+    },
+    {
+      "claim_id": "b953e1f3-2184-4007-ae6b-2617c07df16c",
+      "result_id": "ed048aec-1078-4583-8a8e-ac95a2f4749c"
+    },
+    {
+      "claim_id": "c942e4b5-d8df-475d-97c4-d557c52465ee",
+      "result_id": "ed048aec-1078-4583-8a8e-ac95a2f4749c"
+    },
+    {
+      "claim_id": "4762edbf-ea84-4737-a2ee-c638d73d2abc",
+      "result_id": "ed048aec-1078-4583-8a8e-ac95a2f4749c"
+    },
+    {
+      "claim_id": "02a6b8f7-9bcf-40c6-90cc-e838fce2fab7",
+      "result_id": "304afd06-ceb4-4cea-8361-3b14f4ff8fdc"
+    },
+    {
+      "claim_id": "e02dfa69-62e7-45ed-a481-6d86cd05a27b",
+      "result_id": "304afd06-ceb4-4cea-8361-3b14f4ff8fdc"
+    },
+    {
+      "claim_id": "7d2d423d-3086-4aa3-bef5-cd444f2308df",
+      "result_id": "304afd06-ceb4-4cea-8361-3b14f4ff8fdc"
+    },
+    {
+      "claim_id": "10107f46-f8e6-433a-ac57-63d20222fcb9",
+      "result_id": "304afd06-ceb4-4cea-8361-3b14f4ff8fdc"
+    },
+    {
+      "claim_id": "bb4d10fb-7677-45d2-923d-117d90a6398d",
+      "result_id": "304afd06-ceb4-4cea-8361-3b14f4ff8fdc"
+    },
+    {
+      "claim_id": "92f89313-14d3-49b9-8d83-5bb544d61433",
+      "result_id": "304afd06-ceb4-4cea-8361-3b14f4ff8fdc"
+    },
+    {
+      "claim_id": "c16ab665-09d2-4b1c-a0fc-9b879d470679",
+      "result_id": "304afd06-ceb4-4cea-8361-3b14f4ff8fdc"
+    },
+    {
+      "claim_id": "f3b98acb-b8df-4e62-97b1-e4f1cca0d9d4",
+      "result_id": "785e5cb0-a55a-401a-a868-d4720195e702"
+    },
+    {
+      "claim_id": "fe1de13a-d98a-4325-b0b3-075aea7765aa",
+      "result_id": "785e5cb0-a55a-401a-a868-d4720195e702"
+    },
+    {
+      "claim_id": "f2d7590e-a74e-4ed9-9f3e-48f08137611d",
+      "result_id": "785e5cb0-a55a-401a-a868-d4720195e702"
+    },
+    {
+      "claim_id": "a54dad0f-93aa-4390-b443-4f6ee54e9aab",
+      "result_id": "785e5cb0-a55a-401a-a868-d4720195e702"
+    },
+    {
+      "claim_id": "37c6474b-d27e-473f-92ce-c1261af8d160",
+      "result_id": "f25dd639-450c-4611-9b72-546c40f8d131"
+    },
+    {
+      "claim_id": "8996cf89-70d0-4e8e-a65f-9efbf1cc0e30",
+      "result_id": "f25dd639-450c-4611-9b72-546c40f8d131"
+    },
+    {
+      "claim_id": "5a53fec3-bb81-4924-bdd5-78b6c12440eb",
+      "result_id": "f25dd639-450c-4611-9b72-546c40f8d131"
+    },
+    {
+      "claim_id": "2a8d0315-6d61-4aab-bab0-1c0e7d3c7f15",
+      "result_id": "f25dd639-450c-4611-9b72-546c40f8d131"
+    },
+    {
+      "claim_id": "70d270b5-35da-41f5-a0c4-6c1b43d4deb8",
+      "result_id": "01668219-d4d2-4aa1-a7a9-144bcac1e2af"
+    },
+    {
+      "claim_id": "47389c2c-bc33-477c-ad95-05cb73d2af47",
+      "result_id": "01668219-d4d2-4aa1-a7a9-144bcac1e2af"
+    },
+    {
+      "claim_id": "1c12f869-4ea8-4a66-b688-d920646bbce3",
+      "result_id": "01668219-d4d2-4aa1-a7a9-144bcac1e2af"
+    },
+    {
+      "claim_id": "8c50a130-afdf-488e-8497-c7453f822d9a",
+      "result_id": "eed96b14-5272-457a-b3be-e43fb1a630f8"
+    },
+    {
+      "claim_id": "bd25dd93-1703-47a9-9ca3-0a90690e6c8f",
+      "result_id": "bf901f3a-980a-49dc-b40d-9fc0e6d6fc64"
+    },
+    {
+      "claim_id": "0894ad27-3bc2-4424-85fa-3f0fa9387658",
+      "result_id": "bf901f3a-980a-49dc-b40d-9fc0e6d6fc64"
+    },
+    {
+      "claim_id": "4cf5b3e7-1aec-421f-8905-9c551b76bd1a",
+      "result_id": "8a454d15-d0fe-4df9-b0c0-d042ff1e5898"
+    },
+    {
+      "claim_id": "21a09157-b3be-42f6-a99d-3afa8253c918",
+      "result_id": "8a454d15-d0fe-4df9-b0c0-d042ff1e5898"
+    },
+    {
+      "claim_id": "1a8e3e83-a5f0-437c-ad14-7a69a8554bfe",
+      "result_id": "8a454d15-d0fe-4df9-b0c0-d042ff1e5898"
+    },
+    {
+      "claim_id": "f4396087-56a3-494d-b0fd-d47ab83f5593",
+      "result_id": "8a454d15-d0fe-4df9-b0c0-d042ff1e5898"
+    },
+    {
+      "claim_id": "cae58422-da12-4b88-8686-f0b9603b8175",
+      "result_id": "8a454d15-d0fe-4df9-b0c0-d042ff1e5898"
+    },
+    {
+      "claim_id": "cf5efb9f-4ae8-4b61-999b-cc48406ad8d0",
+      "result_id": "8a454d15-d0fe-4df9-b0c0-d042ff1e5898"
+    },
+    {
+      "claim_id": "311fdbbe-75db-4bb4-80a9-767448515918",
+      "result_id": "8a454d15-d0fe-4df9-b0c0-d042ff1e5898"
+    },
+    {
+      "claim_id": "431d3fcc-228a-4f1d-b099-1358b68a16e9",
+      "result_id": "8a454d15-d0fe-4df9-b0c0-d042ff1e5898"
+    },
+    {
+      "claim_id": "17fd1b6a-1c5d-4a6a-b190-cb25bc5a8f5e",
+      "result_id": "8a454d15-d0fe-4df9-b0c0-d042ff1e5898"
+    },
+    {
+      "claim_id": "a9cfe052-83fa-4346-a700-b239f73f5ff8",
+      "result_id": "8a454d15-d0fe-4df9-b0c0-d042ff1e5898"
+    },
+    {
+      "claim_id": "8125f55f-f0fc-4832-8416-6c835ffee33b",
+      "result_id": "8a454d15-d0fe-4df9-b0c0-d042ff1e5898"
+    },
+    {
+      "claim_id": "951302c4-47e9-45e1-b752-0e120f88b573",
+      "result_id": "8a454d15-d0fe-4df9-b0c0-d042ff1e5898"
+    },
+    {
+      "claim_id": "9cd5e19e-079d-4ad6-8bc2-2ae10a6c0b94",
+      "result_id": "8a454d15-d0fe-4df9-b0c0-d042ff1e5898"
+    }
+  ],
+  "comparisons": []
+}

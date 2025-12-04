@@ -1,0 +1,341 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "The study included 24 MEG participants and 25 fMRI participants after exclusions, with appropriate ethical approvals and inclusion criteria.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4 provide clear participant demographics and exclusion criteria for both experiments. Claims C86-C88 confirm ethical approvals and inclusion criteria. The sample sizes are adequate for neuroimaging studies and exclusion criteria are justified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "Recognition rates in both MEG (44.9\u00b13.6%) and fMRI (48.0\u00b12.6%) experiments did not significantly differ from the intended threshold of 50%.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C7 report non-significant differences from 50% with appropriate statistical tests (Wilcoxon signed-rank tests, p>0.05). This validates that the adaptive staircase procedure successfully titrated stimulus contrast to achieve threshold-level recognition.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "Categorization accuracy was significantly higher for recognized (MEG: 86.1\u00b11.9%, fMRI: 78.8\u00b12.2%) than unrecognized images, though unrecognized trials showed above-chance performance (MEG: 40.1\u00b11.8%, fMRI: 32\u00b11.9%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C11 provide behavioral validation with appropriate statistical tests showing above-chance performance in both conditions and significant differences between them. The above-chance performance in unrecognized trials is consistent with prior literature (C11), suggesting unconscious processing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C19"
+    ],
+    "result": "Recognition outcome could be decoded from MEG signals from 200-900 ms after stimulus onset, peaking at 580 ms, preceding the emergence of category information.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C13 report decoding results with appropriate statistical testing (cluster-based permutation test, p<0.05). Claim C19 correctly interprets the temporal sequence. The methods describe appropriate decoding procedures with cross-validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C24",
+      "C25"
+    ],
+    "result": "Category information was only decodable in recognized trials (significance at 470 ms, sustained until 1060 ms) but not in unrecognized trials throughout the epoch.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C17 and C24-C25 consistently show category decoding depends on recognition state, with appropriate statistical testing. The RSA analysis (C24-C25) confirms the decoding results. An early peak at 290 ms (C16) did not survive cluster correction, appropriately noted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Category information emerged later in the main task (470 ms) compared to a high-contrast localizer task (110 ms significance, 170 ms peak), indicating that low visibility requires more time-consuming recurrent processing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C21 and C72 provide control experiment data showing faster category decoding with high-contrast stimuli. Claims C70-C71 and C73 appropriately compare to prior literature and interpret the delay as reflecting recurrent processing under uncertainty. The control experiment strengthens the interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C26",
+      "C27"
+    ],
+    "result": "Recognized images showed reduced representational dissimilarity (clustering) starting at 130 ms, which may facilitate category representation formation at ~470 ms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C22-C23 report RSA findings showing clustering of recognized images with appropriate statistics. However, claims C26-C27 make causal interpretations about facilitation that are speculative and not directly tested. The temporal precedence is suggestive but does not establish a causal relationship.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C28",
+      "C34",
+      "C50",
+      "C83"
+    ],
+    "result": "Recognition-related information emerged simultaneously at 110-120 ms across multiple ventral visual and frontoparietal regions, despite late emergence of category information at 470 ms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28, C34, C50, and C83 consistently report early, concurrent onset of recognition-related signals across widespread regions using MEG-fMRI fusion with appropriate statistical testing (cluster-based permutation tests). The simultaneity across regions is well-documented and contrasts with feedforward models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Recognition model effects in VTC were transient and intermittent (predominantly 0-1000 ms), while EVC showed late onset (~600 ms). Two-state model effects in EVC were early (120 ms) and sustained.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C33 describe differential temporal dynamics between models and regions with statistical support from commonality analysis. The contrasting patterns between recognition and two-state models in EVC are particularly striking and well-documented in Figure 4.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C45",
+      "C46"
+    ],
+    "result": "The two-state model better explained neural dynamics in EVC and VTC, while the recognition model was superior for SAL, DAN, FPCN, and DMN networks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C40 report ANOVA results with extremely significant p-values and large effect sizes for network-level differences. Claims C45-C46 appropriately summarize these findings. The statistical evidence is strong, though the very small p-value (p=0) in C38 should be reported more precisely.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Significant model \u00d7 time interactions occurred in all networks except DAN, with DMN showing a temporal shift from recognition model dominance (early) to two-state model dominance (late).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C43 report interaction effects with appropriate statistics. Claim C44 interprets the DMN shift as functional flexibility, which is reasonable given the data. The temporal dynamics are well-characterized with statistical support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "The salience network showed relatively small model effects and is situated between ventral visual and frontoparietal regions in the cortical hierarchy, suggesting gradual representational format changes along the hierarchy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C47 correctly notes smaller effects in SAL compared to other networks (visible in Figure 5C). Claim C48 appropriately cites prior work on cortical hierarchy. Claim C49 makes a reasonable inference about gradual changes, though this interpretation is somewhat speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C84",
+      "C85"
+    ],
+    "result": "Visual regions exhibit a two-state representational format (bifurcation between recognized/unrecognized), while frontoparietal networks show variability reduction with sharper category information in recognized trials, organized by functional networks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C52 and C84-C85 synthesize the main findings about differential representational formats. These conclusions are well-supported by the model comparison results (C35-C40) and temporal dynamics analyses. The network-level organization is clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Early onset in frontoparietal regions is consistent with prior findings and suggests parallel processing across cortical regions rather than simple feedforward processing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C55 appropriately contextualize findings within prior literature (Bar et al., 2006; Kar and DiCarlo, 2021; Barbeau et al., 2008). The interpretation of parallel processing is reasonable given the simultaneous onset, though alternative explanations exist.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C56",
+      "C57"
+    ],
+    "result": "Early frontoparietal signals may be triggered by fast magnocellular/dorsal stream inputs or thalamic projections, while ventral visual signals likely arise from parvocellular/ventral stream inputs facilitated by dorsal feedback.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C56-C57 propose mechanistic explanations based on prior theoretical work, but these are speculative interpretations not directly tested in the current study. The proposed pathways are plausible but require additional evidence (e.g., connectivity analyses, lesion studies) for validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Reduced neural variability in frontoparietal regions during recognized trials suggests enhanced stimulus processing, while high variability in unrecognized trials may reflect limited frontoparietal engagement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C58 appropriately cites prior work linking reduced variability to cortical engagement. Claims C59-C60 make reasonable interpretations of the recognition model effects, though C60 acknowledges the speculation with appropriate caveats about challenging viewing conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Recognition model effects were particularly strong in FPCN (80% explained variance) and DAN (98.4% explained variance), which may reflect attention-related modulations or direct involvement in perceptual processing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C62 report high explanatory power with precise quantification. Claim C63 appropriately cites functional roles of these networks. Claims C64-C66 offer plausible interpretations (attention vs. perception) but acknowledge these are speculative, appropriately citing relevant literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Early FPCN/DAN responses may reflect fast analysis facilitating ventral stream processing or evidence accumulation, consistent with recognition-related activity (110-120 ms) preceding category information (470 ms).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C68 propose alternative interpretations appropriately marked as speculative with literature support. Claim C69 provides empirical support for the temporal sequence. The interpretations are reasonable but not definitively tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "The delayed category information emergence is consistent with prior findings showing increased latency with shorter viewing duration, reduced visible area, or degraded images.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C76 appropriately cite multiple prior studies supporting the interpretation that challenging viewing conditions delay category information emergence. This contextualizes the current findings within established literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "DMN shows enhanced engagement during recognition despite deactivation, with a temporal shift from recognition model effects (early) to two-state model effects (late), possibly reflecting enhanced communication with ventral visual regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C77 cites prior findings from the same dataset. Claims C78-C79 are supported by the current analyses. Claim C80 offers a speculative but reasonable interpretation about intercommunication, appropriately marked as speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C81",
+      "C82"
+    ],
+    "result": "DMN's late-stage effects might reflect interactions between visual inputs and prior knowledge guiding perceptual decisions, given its role in associative processing and prior-guided perception.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C81-C82 propose functional interpretations based on DMN's known roles, but these are explicitly speculative. The proposed mechanism is plausible but not directly tested. Additional experiments would be needed to validate this interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C89",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "The study used previously published datasets with appropriate stimulus preparation, threshold determination, and data acquisition procedures for both MEG and fMRI experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C99 provide methodological details that are clearly stated and appropriate for the study design. The use of previously published datasets (C89) is transparent. Methods are sufficiently detailed for reproducibility.",
+    "result_type": "MINOR"
+  }
+]

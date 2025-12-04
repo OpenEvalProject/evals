@@ -1,0 +1,223 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "The study deployed wearable RF proximity sensors in South African households to measure close-range contact patterns (<1.5m) during SARS-CoV-2 transmission. The study enrolled households with \u22652 contacts where no members reported symptoms prior to index case onset, conducted three-times-weekly visits for testing, and deployed sensors for two weeks to measure face-to-face interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C31 collectively describe a well-documented methodological approach including study location/timing, enrollment criteria, follow-up protocols, testing methods, sensor deployment, and data cleaning procedures. The methods are clearly specified with technical details (e.g., sensor specifications, contact interval definitions, exclusion criteria) that support reproducibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C32",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "The study screened 1531 individuals, identified 277 (18%) SARS-CoV-2 positive cases, enrolled 124 (45%) with 373 household contacts, and after data cleaning obtained contact data for 340 individuals (88 index cases and 252 household contacts). 93 individuals (19%) were excluded due to non-compliance issues with sensor wearing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32, C36-C41 present the study flow from screening through final analysis with clear numbers and percentages at each stage. The data are internally consistent and supported by Figure 1. The reporting of exclusions and factors associated with data availability (C41) demonstrates transparency about potential selection bias.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Households included in the analysis had a median of 4 members (IQR 3-5), with a median of 3 SARS-CoV-2 cases per household (IQR 1-4) and 67% household attack rate (IQR 50-100%). Most individuals (66%) lived in households with 3-5 members, 49% in homes with 1-2 sleeping rooms, and one-third experienced crowding (>2 people per sleeping room).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C47 provide descriptive statistics on household characteristics that are clearly presented with appropriate measures (medians, IQRs, percentages). These data establish the context of crowded living conditions relevant to transmission dynamics and are supported by Table 1.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "The study measured close-range proximity events with median daily duration of 18 min (IQR 9-45), maximum duration of 61 min (IQR 25-142), average event duration of 0.7 min (IQR 0.5-0.8), and median frequency of 26 events per day (IQR 10-58). Contact patterns varied by age group, with highest median daily contact duration observed in <5 year, 5-12 year, and 35-59 year age groups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C52 present descriptive statistics on contact patterns with appropriate measures and are supported by Figures 2-4 and Table 2. The age-stratified analysis (C52) is visualized in Figure 4 showing contact matrices. The data provide baseline characterization of household contact patterns.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "No association was found between any contact parameters (duration, frequency, cumulative time, average duration) and SARS-CoV-2 infection using Wilcoxon rank-sum test (p=0.1-0.8) or univariate logistic regression. Sleeping in the same room as the index case was also not associated with transmission (OR 0.94, 95% CI 0.47-1.88).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C55 present consistent negative findings across multiple statistical approaches (non-parametric and parametric tests). The results are supported by Table 3 showing p-values for all contact parameters. The lack of association with room-sharing (C55) is particularly notable given prior literature suggesting this as a risk factor.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "On multivariable analysis controlling for index age and SARS-CoV-2 variant, index case minimum Ct value <30 (aOR 16.8, 95% CI 3.1-93.1 vs Ct >35) and female sex of contacts (aOR 2.5, 95% CI 1.3-5.0) were significantly associated with SARS-CoV-2 acquisition. However, no contact parameters (duration, frequency, cumulative time, average duration) were associated with acquisition (aOR 1.0-1.1).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C35, C56-C58 present the main multivariable analysis results showing viral load and sex as risk factors but no association with contact parameters. The findings are supported by Table 4 with appropriate statistical methods (mixed effects logistic regression accounting for clustering). The wide confidence interval for Ct <30 (3.1-93.1) suggests imprecision but the effect is still significant.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C59"
+    ],
+    "result": "Sensitivity analysis excluding households with members seropositive at baseline showed similar results to the main analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C59 reports a sensitivity analysis (Table 5) that strengthens the main findings by showing results are robust to exclusion of potentially immune individuals. This addresses a potential confounding factor.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "In an alternative analysis considering contact with all SARS-CoV-2 infected household members (not just the presumptive index), obesity (aOR 4.1, 95% CI 1.5-11.1 vs normal weight) and not currently smoking (aOR 3.2, 95% CI 1.2-9.2) were significantly associated with acquisition. No contact parameters were associated with acquisition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C62 present results from an alternative analytical approach that addresses potential index case misclassification. The findings are supported by Table 6. The identification of obesity as a risk factor is consistent with COVID-19 literature. The protective effect of smoking is counterintuitive and may reflect confounding or selection bias. Importantly, contact parameters remain non-significant.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C73",
+      "C74"
+    ],
+    "result": "The study did not find an association between close-range proximity events and SARS-CoV-2 household transmission. The authors suggest this may be due to study limitations, that airborne transmission plays a larger role than droplet-mediated transmission during close-proximity contacts, or that high baseline contact rates in crowded households exceed transmission thresholds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C73 accurately summarizes the main negative finding. However, C74 presents speculative explanations without additional data to distinguish between them. The authors appropriately acknowledge uncertainty about the mechanism, but the relative contributions of study limitations vs. true biological phenomena cannot be determined from this study alone.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C86",
+      "C87"
+    ],
+    "result": "The study had multiple limitations including: sensors only measure face-to-face interactions (C75), missing the most infectious pre-symptomatic period (C77), potential behavior changes after awareness of infection (C78), no data on NPI usage like masks (C79), no data on indoor vs outdoor contacts (C80), possible index case misclassification (C81), not considering tertiary transmission (C82), possible exposure to non-household cases (C83), not considering multiple introductions (C84), compliance issues with 73 sensors not worn (C86), and small sample size reducing power (C87).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C87 (excluding C85) present a comprehensive and honest assessment of study limitations. These are important for interpreting the negative findings. The limitations are plausible and well-reasoned, though some (C78, C81, C83) are speculative. The sensor limitation (C75) is particularly important as it means the study cannot assess airborne transmission. The small sample size concern (C87) is valid given the wide confidence intervals observed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C85"
+    ],
+    "result": "The manuscript cites prior literature on SARS-CoV-2 epidemiology in South Africa (C1-C2), transmission routes (C3-C7), household transmission importance (C8-C11), use of high-resolution contact data for other pathogens (C12, C63-C66), SARS-CoV-2 contact tracing findings (C67-C68), aerosol transmission evidence (C69), and local housing conditions (C70-C71).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C12, C63-C72, C85 appropriately cite prior literature to establish context. The citations appear relevant and properly attributed. However, C12 cites 'Pung et al., 1956' which is clearly an error (SARS-CoV-2 emerged in 2019, so a 1956 citation is impossible). This citation error undermines confidence but doesn't invalidate the broader literature review.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C88",
+      "C89"
+    ],
+    "result": "The study provides high-resolution household contact data that can parametrize future transmission models for SARS-CoV-2 and other pathogens (C88). Increased ventilation could potentially reduce secondary transmission in households (C89).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C88 is reasonable - the descriptive contact data (Figures 2-4, Table 2) could inform models regardless of the negative transmission findings. However, C89 is speculative and not directly supported by study data since ventilation was not measured. While consistent with aerosol transmission literature cited, this intervention suggestion goes beyond what the data demonstrate.",
+    "result_type": "MINOR"
+  }
+]

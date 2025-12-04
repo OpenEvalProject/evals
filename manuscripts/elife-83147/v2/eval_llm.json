@@ -1,0 +1,270 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "In the coupled Cha-Noma model of fast \u03b2-cell oscillations, \u03b2-cell hubs are primarily differentiated by elevated metabolic activity (kglyc) rather than gap junction coupling (gcoup). Hubs showed significantly higher kglyc (p<0.001) but only slightly higher gcoup (p=0.032) and no difference in gKATP compared to non-hubs. The rate of glucokinase activity (kglyc) was more strongly correlated with Ca2+ oscillation duty cycle than either gKATP or gcoup (p<0.0001), and this finding was robust across multiple thresholds and hub definitions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C45 provide consistent computational evidence from the Cha-Noma model showing that metabolic activity (kglyc) is the primary distinguishing feature of \u03b2-cell hubs. The statistical significance is reported with appropriate p-values, effect sizes are provided (Cohen's d=2.85 for kglyc), and robustness is demonstrated through sensitivity analyses across multiple thresholds and alternative hub definitions. The correlation analysis linking kglyc to duty cycle provides a mechanistic explanation for why this parameter distinguishes hubs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "In the coupled Integrated Oscillator Model (IOM) of slow \u03b2-cell oscillations, \u03b2-cell hubs were differentiated by lower gKATP (p=0.04) and higher gcoup (p=0.0028), but not by kglyc (p=0.19). Duty cycle was strongly negatively correlated with gKATP and weakly positively correlated with kglyc. The parameter most correlated with duty cycle (gKATP in IOM, kglyc in Cha-Noma) was most influential in determining hubs, independent of oscillation type. When the Cha-Noma model was simulated with a smaller islet size (260 cells, matching the IOM), the influence of kglyc and gcoup on hubs became more similar.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C49-C56 present results from the IOM that differ from the Cha-Noma model, with gap junction coupling playing a larger role. However, the IOM was limited to 260 cells due to computational constraints and model instability (C48, C157), and required an unusually high threshold (C156). The authors acknowledge these limitations and attribute the increased importance of gcoup partially to the small islet size (C56). The findings are less stable across thresholds than the Cha-Noma results (C157). While the general principle that duty cycle-correlated parameters determine hubs is supported, the specific IOM results are uncertain due to methodological limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Experimental measurements in mouse islets showed that \u03b2-cell hubs had significantly higher NAD(P)H autofluorescence (p=0.0061), indicating elevated metabolic activity. However, there was no difference in gap junction permeability measured by FRAP between hubs and non-hubs (p=0.15), and no correlation between FRAP recovery rate and normalized degree (p=0.37). These findings were consistent across different oscillation types (slow, fast, mixed) and multiple synchronization thresholds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C66 provide experimental validation of the computational findings. The NAD(P)H measurements directly assess metabolic activity and show significant differences between hubs and non-hubs with appropriate statistical testing. The FRAP measurements assess gap junction permeability and consistently show no relationship with hub status across multiple conditions and thresholds. The authors acknowledge FRAP is less sensitive than patch clamping (C159) but justify its use for enabling simultaneous calcium imaging (C160). The consistency across oscillation types and thresholds strengthens the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "In the coupled Cha-Noma model, functional and structural networks showed minimal overlap. The probability of synchronization given gap junction connection was Pr(Sync|GJ)=0.39, while the probability of gap junction connection given synchronization was only Pr(GJ|Sync)=0.04. When the synchronization threshold was decreased, Pr(Sync|GJ) increased to nearly 1.0, confirming gap junctions are required for synchronization. However, at thresholds producing scale-free-like distributions, additional similarities beyond gap junctions are required for high synchronization. This finding was consistent across multiple thresholds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C79 provide a rigorous probabilistic analysis of the relationship between functional and structural networks. The conditional probabilities are clearly defined and quantified. The threshold sensitivity analysis (C70-C72, C76-C79) demonstrates that while gap junctions are necessary for synchronization (as expected), they are not sufficient to explain the high synchronization defining functional network edges at biologically relevant thresholds. The consistency across thresholds (C79) strengthens this conclusion. The analysis appropriately distinguishes between necessity (gap junctions required) and sufficiency (additional factors needed).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "In the coupled Cha-Noma model, synchronized cell pairs were more likely to share similar metabolic activity (kglyc) than to be gap junction coupled. The probability Pr(Similar kglyc|Sync) was significantly higher than Pr(GJ|Sync) (~20% vs <5%). The metabolic network (cells with similar kglyc) showed greater overlap with the functional network than the structural network did.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C82 extend the probabilistic analysis to compare structural and metabolic networks. The comparison is controlled by setting parameters such that Pr(Sync|Similar kglyc) = Pr(Sync|GJ), allowing direct comparison of the reverse conditional probabilities. The significantly higher probability of shared metabolic activity given synchronization provides strong evidence that intrinsic dynamics drive functional network edges more than structural connections. The methodology is sound and the conclusion follows logically from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Analysis of weighted paths in the Cha-Noma model showed that while gap junction connections are spatially constrained, Ca2+ synchronization has no distance constraint. For synchronized cell pairs, the total gap junction conductance normalized by distance was significantly higher than for non-synchronized pairs (p<0.05), and similarly for total kglyc. Distance-dependent analysis revealed that total kglyc was significantly higher for synchronized cells 1-5 cells apart (with larger significance than gcoup), while total gcoup was significantly higher for synchronized cells 4-7 cells apart. This indicates that similar metabolic activity influences short-range functional connections (up to 5 cells), while high gap junction conductance is necessary for longer-range connections (5-7 cells).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C95 provide a sophisticated analysis of how structural and metabolic properties influence functional connections at different spatial scales. The weighted path analysis appropriately accounts for the fact that functional connections can span multiple cells. The distance-dependent analysis with Bonferroni correction for multiple comparisons is statistically rigorous. The finding that metabolic similarity dominates at short range while gap junction conductance becomes important at longer range provides mechanistic insight and is consistent with the biophysics of electrical coupling and metabolic heterogeneity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "Experimental analysis of Cx36 knockout mice showed that reducing gap junction coupling progressively decreased functional network degree, clustering coefficient, and global efficiency. Cx36+/- islets showed decreased degree compared to WT, and Cx36-/- showed further decreases. Clustering coefficient decreased with reduced coupling but remained higher than random networks for all genotypes. Global efficiency decreased with reduced coupling and was less than random networks for WT, but Cx36-/- islets showed overlap with random networks. Distance between synchronized cells remained less than average distance for all genotypes. These results suggest gap junctions contribute to global network properties (efficiency) but less to local properties (clustering).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C108 provide experimental evidence for the role of gap junctions in functional network topology. The use of three genotypes (WT, heterozygous, homozygous knockout) provides a dose-response relationship. Statistical comparisons are appropriate, and comparison with random networks provides important context. The finding that clustering remains above random even with no gap junctions (C101) supports the conclusion that factors beyond structure influence local topology. The progressive decrease in global efficiency with reduced coupling demonstrates the importance of gap junctions for whole-islet coordination. The experimental design is sound and conclusions are well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "Computational simulations in the Cha-Noma model with reduced gap junction conductance (0.12, 0.06, 0.03 nS) recapitulated experimental findings. Average degree and correlation decreased with reduced coupling. Pr(Sync|GJ) decreased significantly with reduced coupling. Clustering coefficient progressively decreased but remained above random networks. Global efficiency progressively decreased and remained below random networks. These trends matched experimental observations and confirmed that gap junctions influence global functional network topology more than local topology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C116 provide computational validation of the experimental Cx36 knockout results. The simulations test three levels of gap junction conductance, providing a dose-response relationship that parallels the three genotypes. The qualitative agreement between simulations and experiments (C114) strengthens both sets of findings. The consistency in showing that clustering remains above random while efficiency decreases demonstrates that the computational model captures key aspects of islet network behavior. The convergence of experimental and computational evidence strongly supports the conclusions about gap junction roles in network topology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "The study concludes that cell intrinsic properties, particularly metabolic activity, distinguish variations in synchronization between cells more than gap junction coupling. The functional network primarily reflects variations in cellular metabolic activity rather than structural gap junction connections (Pr(GJ|Sync) <5% vs Pr(Similar kglyc|Sync) ~20%). While gap junctions are essential for overall islet synchronization, additional intrinsic \u03b2-cell factors (metabolic activity, KATP conductance) are necessary for very strong synchronization between \u03b2-cell pairs. Cells with similar intrinsic characteristics require less electrical coupling to be highly synchronized.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C132 synthesize the major conclusions from computational and experimental results. The conclusions are well-supported by the convergent evidence from multiple approaches: (1) Cha-Noma simulations showing kglyc distinguishes hubs, (2) experimental NAD(P)H measurements confirming elevated metabolic activity in hubs, (3) probabilistic analysis showing functional edges more likely reflect metabolic similarity than gap junction connections, (4) weighted path analysis showing metabolic similarity influences short-range connections. The mechanistic explanation (C128-C131) linking metabolic activity to membrane potential and coupling current is biophysically sound. The distinction between gap junctions being necessary but not sufficient for high synchronization is clearly established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C179",
+      "C180",
+      "C181",
+      "C182",
+      "C183"
+    ],
+    "result": "The study's three major conclusions are: (1) Highly connected \u03b2-cell subpopulations (hubs) are defined by intrinsic properties more than gap junctions; (2) The functional network primarily reflects variations in intrinsic cellular properties; (3) Removing structural network edges by decreasing gap junction conductance decreases global communication efficiency and local connectivity and causes the functional network to become sparser. The authors caution that conclusions about structure using functional networks should be made carefully, and suggest these findings have broader implications for understanding function-structure relationships in biological networks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C179-C183 summarize the study's main findings. These conclusions are well-supported by the comprehensive evidence presented: computational modeling with two independent models (Cha-Noma and IOM), experimental validation with NAD(P)H and FRAP measurements, probabilistic network analysis, weighted path analysis, and Cx36 knockout experiments. The convergence of multiple independent lines of evidence strongly supports all three major conclusions. The cautionary note about inferring structure from function (C181) is appropriate given the demonstrated disconnect between functional and structural networks. The broader implications (C182-C183) are reasonable extrapolations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158"
+    ],
+    "result": "The computational models used (Cha-Noma and IOM) are based on careful physiological recordings and have been previously validated. While the models have limitations in describing \u03b2-cell dynamics, the results are internally consistent (functional and structural networks derived from same model). The choice of synchronization threshold (Rth) is influential and was chosen to match prior experimental results showing scale-free-like distributions. Trends were consistent across thresholds and hub definitions for the Cha-Noma model. The IOM required a very high threshold due to small islet size and model instability, but consistent results were found regarding parameters influencing duty cycle and hubs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C148-C158 address methodological considerations and limitations. The authors appropriately acknowledge model limitations (C149) while noting that internal consistency makes results valid for comparing functional and structural networks (C150). The threshold sensitivity analyses (C155) demonstrate robustness of Cha-Noma findings. The acknowledgment of IOM limitations (C156-C157) is appropriate, and the authors correctly note that despite these limitations, the key finding about duty cycle-correlated parameters determining hubs remains consistent (C158). The methodological transparency and sensitivity analyses strengthen confidence in the conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165"
+    ],
+    "result": "The study acknowledges several experimental limitations: FRAP is less sensitive than patch clamping but enables multi-cell measurements with calcium imaging; Cx36 global deletion may influence \u03b2-cell specification, though prior studies show no significant changes in NAD(P)H response, islet architecture, or intrinsic insulin secretion in dissociated cells; dynamic changes in gap junction distribution over time are not accounted for in models, but are not predicted to substantially impact \u03b2-cell hubs given that hubs are more influenced by intrinsic activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C159-C165 appropriately acknowledge experimental limitations and provide reasonable justifications or mitigations. The FRAP limitation (C159) is balanced by its advantages for the study design (C160). The Cx36 knockout concerns (C161) are addressed by citing prior work showing no major developmental effects (C162-C163). The prediction about dynamic gap junction changes (C165) is a reasonable inference from the main findings, though it remains speculative. The transparent discussion of limitations is appropriate and does not undermine the main conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C166",
+      "C167",
+      "C168",
+      "C169",
+      "C170",
+      "C171",
+      "C172",
+      "C173",
+      "C174",
+      "C175",
+      "C176",
+      "C177"
+    ],
+    "result": "The study acknowledges several limitations regarding Ca2+ wave propagation, other islet cell types, and translation to human islets. Phase lag from propagating Ca2+ waves may influence apparent synchronization and functional networks. The study only analyzes \u03b2-cells, not \u03b1-cells, \u03b4-cells, or other cell types that can influence \u03b2-cell dynamics via paracrine mechanisms or potentially through gap junction coupling. Human islets have more mixed cell types than mouse islets, and experimental evidence suggests human functional networks may differ from mouse networks. Future work should examine wave initiator cells and include other cell types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C166-C177 acknowledge important biological complexities not fully addressed in the current study. The discussion of phase lag effects (C166-C167) is appropriate, and the suggestion for future work on wave initiators (C168) is reasonable, supported by prior work (C169). The limitation to \u03b2-cells only (C171) is acknowledged with appropriate citations showing this is standard practice in the field. The concerns about other cell types (C170, C172-C174) and translation to human islets (C176-C177) are well-founded and appropriately cited. These limitations do not invalidate the current findings but appropriately scope their interpretation.",
+    "result_type": "MINOR"
+  }
+]

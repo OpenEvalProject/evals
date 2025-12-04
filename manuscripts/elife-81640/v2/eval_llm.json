@@ -1,0 +1,324 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Under complete outcrossing (k=1) and no fitness cost (s=0), the zeel-1;peel-1 element spreads rapidly with a maximum allele change comparable to a beneficial allele with selection coefficient 0.44, which is 2-4 times higher than lactase persistence in humans. However, gene drive is weaker at extreme allele frequencies due to rarity of the element at low frequency and rarity of vulnerable genotypes at high frequency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C36 are supported by modeling results shown in Figure 1E. The comparison to lactase persistence (C33) is appropriately cited. The inference about dynamics at extreme frequencies (C34-C36) follows logically from the model structure and is consistent with theoretical expectations for gene drive systems.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "When the zeel-1;peel-1 element carries a fitness cost to the host, dynamics at extreme allele frequencies are amplified. At low frequency, carrying costs counteract gene drive, while at high frequency they prevent fixation, leading to stable equilibrium. Under typical C. elegans outcrossing rates (~1%), the element will be lost under all but the mildest carrying costs (0.008), as increasing fitness costs require increasing outcrossing to reach equilibrium.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C43 are supported by modeling results shown in Figures 1F-H and Figure 1\u2014figure supplement 1. The outcrossing rates for C. elegans are appropriately cited (C42). The conclusions about the relationship between fitness costs, outcrossing rates, and element persistence follow logically from the model and are consistent with population genetic theory.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C46",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "The active zeel-1;peel-1 haplotype is associated with higher fitness in laboratory conditions. N2marker (with active element) outcompeted N2zeel-1;peel-1(CB4856) (without element) with relative fitness w=1.18. N2 laid 9% more embryos and was 9% larger at 72hr than N2zeel-1;peel-1(CB4856), indicating faster growth. These results suggest variants associated with the active haplotype promote fitness, providing a potential mechanism for element persistence in selfing lineages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46, C49-C50 are supported by experimental data in Figures 2A-C with appropriate statistical tests (p<0.001). However, C52-C53 represent inferences that may be premature. The fitness advantage could be due to the active element itself OR linked mutations in the ~140-370 kb introgressed region (as the authors acknowledge in C47-C48). The NIL strain carries a large genomic region, not just zeel-1;peel-1, making it difficult to attribute the fitness effect specifically to the element.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Loss of peel-1 function decreases fitness in laboratory conditions. The N2peel-1(trunc) strain, which produces a truncated 46 amino acid protein, showed loss of toxin function (zero embryonic lethality in crosses). N2peel-1(trunc) produced 6% fewer offspring, were 7% smaller at 72hr, and had reduced competitive fitness (w=1.06) compared to wildtype. This fitness difference accounts for 32% of the difference in the NIL comparison, suggesting peel-1 plays a biologically relevant role beyond toxin activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C56, C58-C60 are supported by experimental data in Figures 3A-E. The loss-of-function is validated by embryo lethality assays (C55-C56). The fitness effects (C58-C60) are statistically supported. However, the conclusion that peel-1 has a non-toxin role (C62-C63) relies on a single CRISPR allele, raising concerns about potential background mutations affecting the phenotype (as authors acknowledge in C102).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "Multiple independently derived peel-1 alleles confirm the fitness role. Two revertant alleles (kah1000, kah1001) restored wildtype function and showed no fitness difference from wildtype. Four new loss-of-function alleles (kah1003-6, including early stops and start codon deletion) all showed equivalent fitness defects to the original truncation mutant. Revertant alleles showed 25% embryonic lethality in crosses while loss-of-function alleles showed zero lethality, confirming their functional status.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C101 are strongly supported by experimental data in Figure 4. The use of multiple independent alleles (2 revertants, 4 loss-of-function) addresses the concern about background mutations from the original experiment. The embryo lethality assays (C95-C96) validate the functional status of the alleles. The competition experiments (C97-C100) show consistent results across replicate alleles within each class, strongly supporting a fitness role for peel-1 independent of its toxin function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "Loss of the toxin peel-1 decreased fitness of hermaphrodites, resulting in reductions in fecundity and body size. These findings suggest peel-1 has a biological role beyond toxin lethality, and demonstrate that a TA element can provide fitness benefit to hosts either during initial evolution or by being co-opted following selfish spread.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C6 are supported by experimental data from multiple experiments (Figures 2-4). Claim C7 is a reasonable inference from the fitness data. Claim C8 represents a broader conclusion that is supported by the experimental findings but involves some speculation about evolutionary scenarios. The evidence strongly supports that peel-1 affects fitness beyond its toxin role, though the mechanism remains unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Maintenance of ancient polymorphism at zeel-1;peel-1 is inconsistent with a history of selfish activity. In outcrossing populations, genic drive should fix the active haplotype rapidly, while in the androdioecious C. elegans mating system, high selfing rates should either fix the element or allow it to be lost by drift.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C30 are supported by theoretical expectations (cited to Noble et al., 2021) and the observed genetic diversity data (Figure 1B-C, C26-C27). The logic is sound: the ancient polymorphism (8 million generations, C27) is difficult to reconcile with strong gene drive, which should lead to rapid fixation or loss. This motivates the investigation of alternative mechanisms for element maintenance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C112",
+      "C114",
+      "C115"
+    ],
+    "result": "The two major haplotypes of zeel-1;peel-1 (with and without the element) exhibit high genetic diversity dating to roughly 8 million generations ago. The gene tree shows two major branches distinguishing N2 and CB4856 haplotypes, with a distribution consistent with balancing selection acting on each haplotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C27 are supported by Figure 1B and citation to Lee et al., 2021. Claims C112, C114-C115 are supported by Figure 1C showing the gene tree. The inference of balancing selection (C115) is reasonable given the ancient, maintained polymorphism, though it remains one possible explanation among others (drift, linked selection, etc.).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C61"
+    ],
+    "result": "Additional genetic variations linked to the zeel-1;peel-1 locus play a role in laboratory fitness, as the peel-1 mutations did not fully phenocopy the fitness of the NIL line. The fitness difference associated with peel-1 accounts for 32% of the difference arising from the N2zeel-1;peel-1(CB4856) comparison.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C67 are supported by comparing the fitness effects in Figures 2 and 3. The NIL strain shows w=1.18 while the peel-1 truncation shows w=1.06, indicating that peel-1 accounts for only part of the fitness difference. The calculation in C61 (32%) is based on the experimental data. This suggests other variants in the introgressed region contribute to fitness, which is a reasonable conclusion given the size of the introgressed interval (140-370 kb).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C40",
+      "C44",
+      "C45",
+      "C79",
+      "C80"
+    ],
+    "result": "Previous models showed TA element spread accelerates with outcrossing rate. One hypothesis is that TA elements in selfing Caenorhabditis originated in an outcrossing ancestor and persisted by drift or balancing selection, with only incidental selfish activity. This work provides a mechanism (fitness benefit) for spread and maintenance that helps explain TA element prevalence in selfing Caenorhabditis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40, C44-C45, C79 appropriately cite prior work. Claim C80 represents the main conclusion of the paper, which is supported by the experimental demonstration that peel-1 provides a fitness benefit (Results 4-5). However, the claim that this definitively explains TA element prevalence is somewhat overstated\u2014the work demonstrates one possible mechanism but doesn't rule out others or test whether this mechanism applies to other TA elements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C102"
+    ],
+    "result": "The fitness differences may be mediated via egg-laying rate, and higher fecundity suggests differences in self-sperm production among strains. However, the authors acknowledge they cannot exclude the possibility that phenotypic differences in the original peel-1 loss-of-function strain are due to background mutations, as additional strains were not tested for egg-laying and growth rate phenotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C64-C65 are speculative hypotheses about mechanisms (marked as SPECULATION in evidence_type). Claim C102 is an important acknowledgment of a limitation. While the multiple allele experiments (Figure 4) address concerns about background mutations for fitness competition assays, the authors did not measure fecundity and body size for the additional alleles. This leaves some uncertainty about whether the specific phenotypes (6-7% differences) are due to peel-1 or background mutations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "peel-1 transcripts are restricted to sperm, yet the results suggest it affects adult phenotypes like fecundity and growth rate. Possible mechanisms include: PEEL-1 protein persisting to adulthood at low levels, long-lasting developmental effects (toxicity arises late in embryogenesis), communication of parentage (toxicity depends on sperm donor sex and dosage), or regulation by parental environmental conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C83 is supported by citation. Claim C84 is a reasonable inference from the experimental data. However, claims C85-C90 are all speculative hypotheses (marked as SPECULATION) about mechanisms. No experiments are presented to test these mechanisms. While these are plausible hypotheses for future work, they remain unvalidated speculation at this point.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "The role of peel-1 in a secondary biological process was considered in its initial characterization. Such a role would help initial spread of the element when low frequency and initial toxicity should prevent spread. The current work supports this model, suggesting both roles of peel-1 (toxin and fitness benefit) could co-evolve together.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C68 is supported by citation to Seidel et al., 2011. Claims C69-C70 represent evolutionary inferences based on the experimental findings. The logic is sound: a fitness benefit would help overcome the barrier to initial spread when the element is rare and before the antidote evolves. However, this remains somewhat speculative as the authors don't directly test evolutionary scenarios or demonstrate co-evolution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "The zeel-1;peel-1 locus shows signatures of balancing selection, which appears widespread in C. elegans. Hyperdivergent regions punctuate the genome, and balancing selection across diverse ecological niches may explain their maintenance. Previously, maintenance was hypothesized to arise from linkage to nearby polymorphisms under balancing selection, but the current results suggest peel-1 itself could be under balancing selection, potentially affecting life history traits differently in different environments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C73, C75 are supported by citations and established knowledge. Claim C74 is a hypothesis from cited work. Claims C76-C78 represent new hypotheses based on the current experimental findings. The inference that peel-1 could be under balancing selection (C76) is reasonable given the fitness benefit in lab conditions, though the authors acknowledge this is speculative (C78). Testing whether peel-1 has environment-dependent fitness effects would require additional experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Background on selfish genetic elements and toxin-antidote systems. Selfish elements promote their transmission potentially at the expense of the organism through diverse mechanisms. Theory indicates they decrease with inbreeding, but recent discoveries of TA elements in selfing nematodes challenge this view. TA elements are post-segregation distorters with linked toxin and antidote components. The zeel-1;peel-1 system in C. elegans is one of the most complete mechanistic descriptions, where sperm-delivered toxin induces arrest in embryos lacking the zygotic antidote.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C1-C25) provide established background knowledge and context, appropriately supported by citations to prior work. They accurately describe the field's understanding of selfish genetic elements, TA systems, and the specific zeel-1;peel-1 system. This background appropriately motivates the current study's investigation of fitness effects independent of gene drive.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C81",
+      "C82"
+    ],
+    "result": "The observation of a toxin directly affecting biological traits mirrors work in transposable elements, which can be domesticated for phenotypic benefit. This previously undescribed, non-toxin related role of a TA element is expected to shape evolutionary trajectories of both the element and the organism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C81 appropriately compares the findings to prior work on transposable elements (cited to Werren, 2011). Claim C82 represents a speculative conclusion about evolutionary implications. While the comparison is apt and the evolutionary implications are plausible, the claim that this role is \"previously undescribed\" may be overstated given C68 (the possibility was considered in initial characterization). The evolutionary implications remain to be tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "Methodological details of the competition assay strains. N2zeel-1;peel-1(CB4856) carries a 140-370 kb introgression from CB4856 (inactive haplotype) into N2. N2marker carries the active element native to N2. Males are absent and outcrossing prevented, so fitness is estimated from true-breeding hermaphrodites. N2glb-5;npr-1(CB4856) serves as a positive control with known fitness-decreasing alleles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These methodological claims (C103-C108) are appropriately supported by citations and describe the experimental design. The strain descriptions are consistent with prior work (C103, C108 cite Ben-David et al., 2017 and Zhao et al., 2018). The experimental design (C107) is clearly described and appropriate for measuring fitness in selfing hermaphrodites.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C47",
+      "C48"
+    ],
+    "result": "Association of the active zeel-1;peel-1 allele with higher fitness suggests that either induction of toxicity/rescue is not costly, or the active allele is linked to fitness-advantageous mutations in the N2 background, or both.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C48 represent alternative interpretations of the fitness data from C46. These are reasonable alternative hypotheses that the authors appropriately acknowledge. The subsequent experiments with peel-1-specific mutations (Figures 3-4) help distinguish between these alternatives, showing that peel-1 itself contributes to fitness but doesn't account for all the difference (supporting \"both\" as the answer).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C121",
+      "C122"
+    ],
+    "result": "Methodological details of the simulation shown in Figure 1H: initial frequency of the element was 50%, and black indicates animals that have lost the element.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C121-C122) are simple methodological details stated in the figure caption and are supported by the figure itself. They are accurate descriptions of the simulation parameters.",
+    "result_type": "MINOR"
+  }
+]

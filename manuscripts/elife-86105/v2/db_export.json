@@ -1,0 +1,1541 @@
+{
+  "submission": {
+    "id": "eb7a298e-0afc-4c39-b757-44e0b0cdbd1c",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-04T03:37:34.994602Z",
+    "updated_at": "2025-12-04T03:37:34.994602Z"
+  },
+  "content": [
+    {
+      "id": "6e9c3c90-902a-4f8b-8162-1a62466647a5",
+      "submission_id": "eb7a298e-0afc-4c39-b757-44e0b0cdbd1c",
+      "content_type": "manuscript",
+      "content_text": "# Conditional blastocyst complementation of a defective Foxa2 lineage efficiently promotes the generation of the whole lung\n\n## Authors\n\n- Akihiro Miura<sup>1</sup> ([ORCID: 0000-0002-1217-7220](https://orcid.org/0000-0002-1217-7220))\n- Hemanta Sarmah<sup>1</sup> ([ORCID: 0000-0002-9374-9269](https://orcid.org/0000-0002-9374-9269))\n- Junichi Tanaka<sup>1</sup>\n- Youngmin Hwang<sup>1</sup> ([ORCID: 0000-0001-5190-6062](https://orcid.org/0000-0001-5190-6062))\n- Anri Sawada<sup>1</sup>\n- Yuko Shimamura<sup>1</sup>\n- Takehiro Otoshi<sup>1</sup>\n- Yuri Kondo<sup>1</sup>\n- Yinshan Fang<sup>1</sup>\n- Dai Shimizu<sup>1</sup>\n- Zurab Ninish<sup>1</sup>\n- Jake Le Suer<sup>3</sup>\n- Nicole C Dubois<sup>5</sup>\n- Jennifer Davis<sup>6</sup>\n- Shinichi Toyooka<sup>2</sup>\n- Jun Wu<sup>7</sup> ([ORCID: 0000-0001-9863-1668](https://orcid.org/0000-0001-9863-1668))\n- Jianwen Que<sup>1</sup>\n- Finn J Hawkins<sup>3</sup>\n- Chyuan-Sheng Lin<sup>8</sup>\n- Munemasa Mori<sup>1</sup> ([ORCID: 0000-0002-7283-7198](https://orcid.org/0000-0002-7283-7198)) \u2020\n\n### Affiliations\n\n1. Columbia Center for Human Development and Division of Pulmonary, Allergy, Critical Care, Department of Medicine, Columbia University Medical Center New York United States ([ROR:00hj8s172](https://ror.org/00hj8s172))\n2. Department of Thoracic, Breast and Endocrinological Surgery, Okayama University Graduate School of Medicine, Dentistry and Pharmaceutical Sciences Okayama Japan ([ROR:02pc6pc55](https://ror.org/02pc6pc55))\n3. The Pulmonary Center and Department of Medicine, Boston University School of Medicine Boston United States ([ROR:010b9wj87](https://ror.org/010b9wj87))\n4. Center for Regenerative Medicine, Boston University and Boston Medical Center Boston United States ([ROR:010b9wj87](https://ror.org/010b9wj87))\n5. Department of Cell, Developmental and Regenerative Biology, Icahn School of Medicine at Mount Sinai New York United States ([ROR:04a9tmd77](https://ror.org/04a9tmd77))\n6. Department of Pathology, University of Washington Seattle United States ([ROR:00cvxb145](https://ror.org/00cvxb145))\n7. Department of Molecular Biology, University of Texas Southwestern Medical Center Dallas United States ([ROR:00t9vx427](https://ror.org/00t9vx427))\n8. Bernard and Shirlee Brown Glaucoma Laboratory, Department of Pathology and Cell Biology, College of Physicians and Surgeons, Columbia University Irving Medical Center New York United States ([ROR:00hj8s172](https://ror.org/00hj8s172))\n\n\u2020 Corresponding author\n\n## Abstract\n\nMillions suffer from incurable lung diseases, and the donor lung shortage hampers organ transplants. Generating the whole organ in conjunction with the thymus is a significant milestone for organ transplantation because the thymus is the central organ to educate immune cells. Using lineage-tracing mice and human pluripotent stem cell (PSC)-derived lung-directed differentiation, we revealed that gastrulating Foxa2 lineage contributed to both lung mesenchyme and epithelium formation. Interestingly, Foxa2 lineage-derived cells in the lung mesenchyme progressively increased and occupied more than half of the mesenchyme niche, including endothelial cells, during lung development. Foxa2 promoter-driven, conditional Fgfr2 gene depletion caused the lung and thymus agenesis phenotype in mice. Wild-type donor mouse PSCs injected into their blastocysts rescued this phenotype by complementing the Fgfr2-defective niche in the lung epithelium and mesenchyme and thymic epithelium. Donor cell is shown to replace the entire lung epithelial and robust mesenchymal niche during lung development, efficiently complementing the nearly entire lung niche. Importantly, those mice survived until adulthood with normal lung function. These results suggest that our Foxa2 lineage-based model is unique for the progressive mobilization of donor cells into both epithelial and mesenchymal lung niches and thymus generation, which can provide critical insights into studying lung transplantation post-transplantation shortly.\n\n## Introduction\n\nWhole organ generation to treat various intractable diseases has long been challenging (Hackett et al., 2010; Kemter et al., 2020; Ott et al., 2010; Petersen et al., 2010; Wang, 2019). Organ bioengineering strategy based on recellularizing tissue-specific progenitors into the decellularized scaffolds, induced pluripotent stem cell (iPSC)-derived organoids, or 3D bioprinters are the next-generation tissue transplant therapies (Guyette et al., 2014; Kotton and Morrisey, 2014; Petersen et al., 2010; Tian et al., 2021). Even with these techniques, however, the mammalian lung is one of the most challenging organs to replicate because of its anatomical complexity and cellular diversity. It contains hundreds of airway branches and a thin micron-sized alveolar layer of inflated and well-vascularized alveoli composed of billions of cells from more than 50 different cell types (Crapo et al., 1982; Kotton and Morrisey, 2014; Stone et al., 1992; Travaglini et al., 2020). Donor organs for lung transplantation are in short supply worldwide, but the technology does not exist to generate whole lungs composed of tissue-specific epithelial and mesenchymal cells, including endothelial cells. Lungs grow fully only through natural lung development.\n\nDuring development, lung epithelial and mesenchymal precursors interact to initiate an elaborate developmental program of organogenesis that includes specification, pattern formation, progenitor cell expansion, and differentiation. The lung epithelial cells are derived from the foregut, definitive endoderm (DE) derivatives, classically labeled by Sox17 and Forkhead Box A2 (Foxa2) (Green et al., 2011; Huang et al., 2014). Multiple genetic studies using Sonic Hedgehog (Shh) Cre lineage-tracing mice have also shown that the entire Nkx2-1+ lung and tracheal epithelial primordium arises from Shh+ DE (Cardoso and Kotton, 2008; Christodoulou et al., 2011; Harris et al., 2006; Kadzik and Morrisey, 2012; Tian et al., 2011; Weaver et al., 1999; Xing et al., 2008).\n\nThe lung mesenchyme primordium is derived from Wnt2+ Isl1+ cardiopulmonary progenitors (CPP) (Peng et al., 2013). CPP is the derivative of Osr1+ Nkx6-1+Barx1\u2212 Wnt4low foregut lung mesoderm that arises from lateral plate mesoderm (LPM) (Han et al., 2020). While DE and LPM arise from primitive streaks (PS) during gastrulation, the exact lineage origin of LPM has been a complete mystery.\n\nMesendoderm is a bipotent transitional state between the PS and nascent mesoderm labeled by Mixl1, Pdgfr\u03b1, and Brachyury (T) during gastrulation that can give rise to both DE and mesoderm (Hart et al., 2002; Tada et al., 2005). Although it was speculated that mesendoderm might form LPM and DE, there have been no conclusive genetic studies on whether mesendoderm gives rise to both lung epithelium and mesenchyme. Pdgfr\u03b1 is expressed in the epiblast-derived mesendoderm, the primitive endoderm (PrE), and its extra-embryonic endoderm derivatives, such as parietal and visceral endoderm, around E5.5\u2013E7.5. Foxa2 plays a pivotal role in alveolarization and airway goblet cell expansion (Wan et al., 2004), while there was a significant knowledge gap regarding Foxa2 lineage during lung development.\n\nBlastocyst complementation (BC) has been proposed as a promising option for tissue-specific niche complementation (Chen et al., 1993). This unique technology has been further developed into intra- and interspecies organ generations such as kidney, pancreas, thymus, and blood vessels (Hamanaka et al., 2018; Kobayashi et al., 2010; Usui et al., 2012; Yamaguchi et al., 2017). However, co-generation of targeted organs and thymus has never been reported, while educating host immune cells for organ transplantation is critical to avoid graft-versus-host disease (GvHD) post-transplantation (Bos et al., 2022). The production of entire organs, including tissue-specific epithelium and mesenchyme, including endothelium, was also tricky because the origin of pulmonary endothelium seems similar to the other organs. Unfortunately, even with BC, the lungs produced were non-functional and very inefficient, and in addition, the chimeric lungs contained a substantial amount of host-derived tissue (Kitahara et al., 2020; Wen et al., 2021). Previously, we established the conditional blastocyst complementation (CBC) approach, which targets specific lineages complemented by donor PSCs (Mori et al., 2019). Using lineage-specific drivers of lung endoderm in CBC avoids the effects of genetic manipulation in non-target organs for the generation of empty organ niches that lead to functional chimeric lung generation (Mori et al., 2019). However, most of the lung mesenchyme and endothelium were still derived mainly from the host cells, which was the severe limitation of CBC (Mori et al., 2019). Given that the CBC approach targeted endodermal lungs, we speculated that this limitation was due to a significant gap in our knowledge of the origin of all lung cell types, especially pulmonary mesenchyme, including endothelium. In particular, the complementation of endothelium is a critical issue for overcoming hyperacute rejection after lung transplantation. To overcome this critical issue, we explored the origin and the program of whole lung epithelium and mesenchyme, the major components of the lung.\n\nWe hypothesized that targeting a single lung precursor lineage may facilitate the designing of the entire lung generation. Our Foxa2-based CBC methodology diverges from our prior Shh-based CBC model (Mori et al., 2019), which targeted the earliest lung precursor lineage, mesendoderm, allowing us to label entire lung epithelium and about 20% of mesenchyme, enough for leading to generating the whole lungs efficiently. Accidentally, we also found that Fgfr2 deficiency in the Foxa2 lineage caused a thymus agenesis phenotype, which was simultaneously rescued by injecting pluripotent stem cells (PSCs) into the blastocysts. Our Foxa2 lineage-based CBC approach results in the highly efficient co-generation of functional lungs and thymus, offering new avenues for exploring the future of autologous lung transplantation.\n\n## Results\n\n### Pdgfr\u03b1+ lineage during gastrulation gives rise to the entire lung mesenchyme\n\nTo determine the origin of LPM and pulmonary endothelium that leads to the whole lung generation, we performed lung mesenchyme precursor lineage-tracing analysis using PdgfraCreERT2/+; RosatdTomato/+ mice. At E5.5 tamoxifen (Tm) administration, E14.5 lung immunostaining analysis showed that the entire lung mesenchyme was labeled with tdTomato but not in the epithelium (Figure 1A). E12.5 morphometric analyses showed an extremely high proportion of lung mesenchyme labeling with tdTomato (Figure 1B, C). Among three embryos at E12.5, two showed 100% tdTomato labeling for lung mesenchyme markers, while one showed about 60% labeling in the mesenchyme (Figure 1C). Sma+ airway smooth muscle cells (86.9% \u00b1 22.7), Pdgfr\u03b1+ lung mesenchyme (78.7% \u00b1 36.9), and VE-cadherin+ endothelium (82.5% \u00b1 30.4) were labeled with tdTomato (Figure 1C). These results indicate that the whole lung mesenchyme originates from the Pdgfr\u03b1 lineage around early-to-mid-streak-stage embryos before LPM formation. In addition, the Pdgfr\u03b1 lineage labels 20.5% \u00b1 18.3 the lung epithelium (Figure 1B, arrows), suggesting that the contribution of the Pdgfr\u03b1 lineage to the lung endoderm is limited. It indicates that the Pdgfr\u03b1 lineage faces challenges in rendering the entire lung niches effectively defective across both the endoderm and mesoderm for CBC-mediated lung generation.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/86105/elife-86105-fig1-v2.jpg)\n\n**Figure 1.:** (A) Left: Schematic of tamoxifen administration. Right: Representative immunofluorescence (IF)-confocal imaging of E14.5 PdgfraCreERT2/+; Rosa26tdTomato/+ lineage tracing mouse lungs. Scale bars = 100 \u03bcm. (B) Tamoxifen administration at E5.5 and analyzed at E12.5. Pdgfr\u03b1-lineage-driven tdTomato (red) labeled the part of lung epithelium (arrows) and entire lung mesenchyme, including Sma+ airway smooth muscle cells, Pdgfr\u03b1+ mesenchyme, and VE-cadherin+ capillaries. Enlarged box: dotted box. Scale bar = 50 \u03bcm. (C) Quantification of PdgfraCreERT2/+; Rosa26tdTomato/+ lineage labeling (n = 3 per group, each plot showed different embryos). Error bars represent mean \u00b1 standard deviation (SD). (D\u2013F) Representative IF-confocal imaging of E6.5 Foxa2Cre/+; Rosa26tdTomato/+ embryo. E-cadherin or Sox2 indicates epiblast. (D) Mixl1 (red) expression represents primitive streak (PS) (yellow dotted area). (E) Foxa2-lineage (red) marked a broader region of the distal component of the anteriolarizing PS (arrows), expressing Foxa2 protein (arrowhead). (F) Foxa2-lineage (red)-labeled Pdgfr\u03b1 (green) expressing mesendoderm (arrows). Scale bars = 50 \u03bcm. (G) Quantification of Foxa2-lineage labeling in PS (n = 3 per group, each plot showed different embryos). Error bars represent mean \u00b1 SD.\n\n### Foxa2 lineage labels Pdgfr\u03b1+ mesendoderm niche during mouse development\n\nSingle-cell RNA-seq (scRNA-seq) analysis using Foxa2-Venus fusion protein reporter mice indicated that the Foxa2 lineage might give rise to LPM and DE (Scheibner et al., 2021).\n\nGiven that Foxa2 and Pdgfr\u03b1 are expressed during the conversion from mesendoderm to mesenchyme (Artus et al., 2010; Kopper and Benvenisty, 2012; Scheibner et al., 2021; Tada et al., 2005), we used Foxa2-lineage-tracing mice (Foxa2Cre/+; RosatdTomato/+) (Horn et al., 2012) to determine whether the Foxa2 lineage would label Mixl1+ or Pdgfr\u03b1+ mesendoderm during gastrulation. We found that Mixl1+ within the PS region (Figure 1D, yellow dotted line), 87.3% \u00b1 5.26 expressed Pdgfr\u03b1 protein (Figure 1E, F). While the Foxa2 lineage appeared in the distal compartment of Mixl1 weakly positive mesendoderm (Figure 1E, arrows) at the anterior primitive streak besides the Foxa2 protein-expressing DE (Figure 1E, arrowheads), those Foxa2 lineage-driven tdTomato labeled 27.5% \u00b1 1.15 of mid-streak PS and 18.6% \u00b1 8.93 in the Pdgfr\u03b1+ mesendoderm of PS around mid-streak-stage embryos (Figure 1F, G, arrows). These results suggest that the Foxa2 lineage-labeled Pdgfr\u03b1+ cells are the distal component of mesendoderm, most likely the derivative of posterior epiblasts since Foxa2 is expressed only in the posterior epiblasts before gastrulation (Scheibner et al., 2021). Based on our Foxa2-lineage-tracing data on early embryogenesis, we further examined whether Foxa2 lineage would label lung mesenchyme.\n\n### Foxa2-lineage labeling increased during lung development, leading to occupy the entire lung epithelium and half of the lung mesenchyme, including lung endothelium\n\nFoxa2-lineage-tracing mice (Foxa2Cre/+; RosatdTomato/+) faithfully target Nkx2-5+ cardiac progenitors associated with the origin of Wnt2+ Isl1+ CPP (Bardot et al., 2017; Peng et al., 2013) lung mesenchyme. However, there was no conclusive evidence of whether Foxa2 lineage can give rise to Wnt2+ Isl1+ CPP (Bardot et al., 2017; Peng et al., 2013). Using the Foxa2-lineage-tracing mice, we found from immunostaining that the Foxa2-lineage labeled the entire lung epithelium and most of the lung mesenchyme at E16.5 (Figure 2A\u2013C). Quantitative analyses by flow cytometry (FCM) in the E14.5 developing lungs of Foxa2-lineage-tracing mice showed that Foxa2-lineage labeled almost the entire lung epithelium (93.3% \u00b1 2.00) and about 20% of lung mesenchyme (24.2% \u00b1 5.51), including endothelial cells (16.8% \u00b1 5.12) (Figure 2D, E), which was a similar proportion of the Foxa2-lineage-labeled Pdgfr\u03b1+ mesendoderm (Figure 1E\u2013G). Contrary to expectations, Foxa2-lineage-labeled cells increased dramatically throughout lung development (Figure 2E). In adulthood, the Foxa2-lineage labeling reached about 99.97% \u00b1 0.06 in lung epithelium, 51.3% \u00b1 1.72 in lung mesenchyme, and 60.0% \u00b1 8.44 in lung endothelial cells, with more than twofold change in the lung endothelium, compared with E14.5 (Figure 2E). Morphometric analysis of immunostaining further confirmed the Foxa2-lineage labeling of each mesenchyme marker. Foxa2 lineage marked about 30\u201340% of E14.5 multiple cell types of lung mesenchyme such as Sma+ smooth muscle cells (31.9% \u00b1 9.16), VE-cadherin+ (39.3% \u00b1 12.5), or Pecam1+ (36.9% \u00b1 10.4) endothelial cells, Pdgfr\u03b2+ pericytes of the pulmonary arteries and pulmonary veins (41.4% \u00b1 10.5), and WT1+ mesothelial cells (31.9% \u00b1 23.7) (Figure 2F, G). Interestingly, no clear Foxa2 protein level expression was observed in the mesenchyme of the embryonic lungs at E14.5 and E18.5 (Figure 2\u2014figure supplement 1A), consistent with previously reported Foxa2 protein expression patterns (Wan et al., 2004). However, the LungMAP deposited single-cell RNA-seq database analysis showed a sporadic Foxa2 transcriptional expression pattern in developing lung mesenchyme, particularly in proliferating endothelium, on E15.5 and E17.5 (Figure 2\u2014figure supplement 1B). We confirmed Foxa2 transcriptional expression in lung mesenchyme by in situ hybridization analysis on E18.5 (Figure 2\u2014figure supplement 1C, D). The expression was detected mostly in tdTomato positive but low frequency in the negative cells, which indicates that lung mesenchyme spontaneously expressed Foxa2 at a transcriptional level and turned on tdTomato during lung development. We also sorted the cell fraction of CD45\u2212CD31\u2212EPCAM\u2212tdTomato+ and CD45\u2212CD31\u2212EPCAM\u2212tdTomato\u2212 from developing lung mesenchyme at E18.5. We observed a slight increase in the relative expression of Foxa2 in the tdTomato+ fraction of embryonic lung mesenchyme, most likely contributing to the labeling in the Foxa2-lineage-tracing mice (Figure 2\u2014figure supplement 1E). These results suggest pulmonary mesenchymal progenitor cells turned on Foxa2 expression slightly at the mRNA level rather than the protein level, which led to a gradual increase in Foxa2 lineage labeling. Furthermore, tdTomato+ endothelial cells were found to have a slightly higher proliferative capacity than tdTomato\u2212 cells (Figure 2\u2014figure supplement 1). These results suggest that Foxa2 lineage+ pulmonary mesenchymal appeared during lung development, and lineage labeling gradually increased compared to Foxa2- lung mesenchyme progenitors throughout lung development.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/86105/elife-86105-fig2-v2.jpg)\n\n**Figure 2.:** (A\u2013C) Immunofluorescence (IF)-confocal imaging of E16.5 Foxa2Cre/+; RosatdTomato/+ embryonic lung: (A) Foxa2-lineage (red)-labeled E-cadherin+ lung epithelium (green) entirely and Pfgfr\u03b2+ mesenchyme (cyan) partially. (B) Foxa2-lineage partially labeled VE-cadherin+ capillary (ca) (enlarged box, blue arrowhead). (C) Foxa2-lineage-labeled Pdgfr\u03b2+ smooth muscle cells of the pulmonary artery (pa) (enlarged box, white arrowhead) and pulmonary vein (pv, yellow arrowhead). Scale bars (A), (B), and (C) = 200, 100, and 100 \u03bcm, respectively. (D, E) Representative histograms and the graphs of flow cytometry (FCM) quantitative analyses for CD31\u2212Epcam+ lung epithelium, CD31\u2212Epcam\u2212 mesenchyme, and CD31+Epcam\u2212 endothelium at E14.5, E18.5, P0, and 4 weeks adult (n = 4, 6, 7, and 3, independent biological replicates, respectively) of Foxa2Cre/+; RosatdTomato/+ mouse lungs. The gradual increase of % tdTomato+ lineage labeling in both lung mesenchyme and endothelium. Statistical analysis: one-way analysis of variance (ANOVA) with the Tukey post hoc test; statistically significant if **p < 0.01, ***p < 0.001, ****p < 0.0001. Error bars represent mean \u00b1 standard deviation (SD). (F) Representative IF-confocal imaging of E14.5 Foxa2Cre/+; RosatdTomato/+ embryonic lungs. tdTomato labeled entirely with lung epithelial markers Nkx2-1 (left) but a relatively low proportion of mesenchyme (Pdgfr\u03b2: middle and Sma: right). Scale bar = 50 \u00b5m. (G) Graphs: The morphometric analysis: % of E14.5 Foxa2-lineage labeling in Nkx2-1+ epithelium, Pdgfr\u03b2+ mesenchyme, Sma+ airway smooth muscle, VE-Cadherin+ capillaries, Pecam1+ arteries, or WT1+ mesothelium (n = 3 per biological replicates, 5 fields per group). Error bars represent mean \u00b1 SD.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/86105/elife-86105-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Representative immunofluorescence (IF)-confocal imaging of E14.5 and E18.5 mouse embryonic lungs. Foxa2 (green) was expressed in lung epithelial cells labeled by E-cadherin (red) but not in E-cadherin negative lung mesenchymal area. Scale bar = 50 \u00b5m (B) Single-cell analysis of mouse LungMAP. Foxa2 expression was observed in lung mesenchyme and endothelium in E15.5 and E17.5 (arrows). (C, D) Representative IF and in situ hybridization-confocal imaging of E18.5 mouse embryonic lungs. Dotted lines: enlarged image. Foxa2 mRNA was expressed in lung epithelial cells and lung mesenchyme. Most of the Foxa2 mRNA expression was colocalized with tdTomato. Scale bars (left, right) = 50 \u00b5m, 20 \u00b5m. (E) Graphs: Foxa2 qPCR for tdTomato+ (tdT+) or tdTomato\u2212 (tdT\u2212) CD45\u2212CD31\u2212EPCAM\u2212 mesenchymal cells and CD45\u2212CD31\u2212EpCAM+ epithelial cells sorted by Fluorescence-activated cell sorting (FACS) from E18.5 Foxa2-lineage-tracing mice (n = 3, each biological replicate). (F) Flow cytometry quantitative analyses: 5-ethynyl-2-deoxyuridine (EdU) labeling cells in CD31+Epcam\u2212 endothelium at E14.5 and E18.5 (n = 6, each independent biological replicate, respectively) of Foxa2Cre/+; RosatdTomato/+ lungs. Statistical analysis: paired Student\u2019s t-test, significance at *p < 0.05, ns: non-significant. Error bars represent mean \u00b1 standard deviation (SD).\n\n### Co-development of endodermal and mesodermal lung progenitors derived from MXIL1+ PDGFR\u03b1+ FOXA2+ mesendoderm in the directed differentiation protocol using hiPSC\n\nTo determine whether Foxa2 or Pdgfr\u03b1 mesendoderm is an evolutionarily well-conserved niche that can give rise to both pulmonary endoderm and mesoderm, we modified a previously reported protocol to establish a pulmonary endoderm\u2013mesoderm co-developmentally directed differentiation protocol (Chen et al., 2017; Gotoh et al., 2014; Hawkins et al., 2017; Huang et al., 2014; Konishi et al., 2016; Figure 3A). With this optimized protocol, various hiPSC lines efficiently induced a lung bud-like appearance, indicated by NKX2-1 expression in lung epithelial cells (Gotoh et al., 2014; Konishi et al., 2016). On day 6, NKX2-1+ cells emerged in bud structure (Figure 3B, asterisk, and S2A). On day 10, TBX4+ lung mesenchyme arose and surrounded the NKX2-1+SOX9+ lung epithelium (Figure 3B, C, Figure 3\u2014figure supplement 1A, B). Morphometric analysis of budding structure with lung markers revealed the heterogeneity of bud structures (Figure 3\u2014figure supplement 1). The budding morphology appeared 2.8% \u00b10 .90 per field on day 6 and progressively increased its proportion and reached around 57.4% \u00b1 9.10. Among the developing bud structures, NKX2-1 was initially turned on 44.5% \u00b1 6.41 at day 6, but the proportion progressively increased, and NKX2-1 was positive on the 95.9% \u00b1 3.98 of day 15 budding structures. It indicates that the bud-like structure preceded the lung cell fate specification. Interestingly, we found SOX9 expression in the 27.9% \u00b1 13.1 of NKX2-1+ lung bud cells on day 8, but it dramatically increased and reached nearly 100% positive on day 15 (98.4% \u00b1 1.98). This result indicated that NKX2-1 precedes the expression of SOX9. The proportion of TBX4+ cells progressively increased in non-budding areas during the differentiation (48.2% \u00b1 3.17). The qPCR kinetics analyses across the time point further supported the appearance of lung mesenchyme, represented by LPM marker expression peaked on days 6\u20138: OSR1, FGF10, BMP4, and PDGFRA (Loh et al., 2016), and smooth muscle cell markers peaked on days 8\u201310: ACTA2 and PDGFR\u0392 (Han et al., 2020), and CPP markers peaked on days 8\u201312; ISL1, WNT2, FOXF1, and TBX4 (Kishimoto et al., 2020; Peng et al., 2013), peaked on days 10\u201314 simultaneously with pulmonary epithelial markers, NKX2-1 and CPM (Figure 3D; Gotoh et al., 2014).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/86105/elife-86105-fig3-v2.jpg)\n\n**Figure 3.:** (A) Schematic culture protocol of hiPSC-derived endodermal and mesodermal lung progenitor cell co-differentiation. (B) Representative phase-contrast images of the directed differentiation time course. Bud structure appeared on day 6 (asterisk). Scale bars = 100 \u03bcm. (C) Representative immunofluorescence (IF)-confocal imaging of differentiating hiPSCs at day 14 culture. Lung epithelium (NKX2-1), distal lung bud epithelium (SOX9), mesenchyme (TBX4), and nucleus (Hoechst) markers. The budding structures expressed SOX9 and NKX2-1 (asterisk), and monolayer cells expressed TBX4. Scale bar = 100 \u03bcm. (D) RT-PCR analyses of lung mesenchyme and epithelium markers in time course according to the protocol shown in (A). Each plot showed a different biological experiment (n = 3 independent experiments). Error bars represent mean \u00b1 standard deviation (SD). (E) Flow cytometry (FCM)-based protein kinetic analyses during definitive endoderm (DE) and lateral plate mesoderm (LPM) induction; MIXL1 expression preceded compared to PDGFR\u03b1 or FOXA2. FOXA2 appearance in the subset of the PDGFR\u03b1+ population (red asterisk) (n = 3 independent experiments). (F) Representative IF imaging of 36-hr-cultured hiPSCs. Scale bar = 100 \u03bcm. (G) Schematic summary of FCM analysis. (H) Quantitative Reverse Transcription Polymerase Chain Reaction (qRT-PCR) analyses further confirmed the preceded MIXL1 induction and subsequent expression of PDGFR\u03b1 and FOXA2. All graphs: Data normalized by undifferentiated induced pluripotent stem cells (iPSCs). Each plot showed a different biological experiment (n = 3 independent experiments). Error bars represent mean \u00b1 SD.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/86105/elife-86105-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A, B) Representative immunofluorescence (IF) imaging of days 6, 8, 10, 12, and 15 directed differentiations. Bud structure gradually formed larger colonies with NKX2-1 (green) and SOX9 (red) expression over time. In contrast, nuclear TBX4+ cells (magenta) emerged in the area of non-bud structures over time. Scale bar = 100 \u00b5m. (C, D) Graphs: Quantification of morphometric analyses (A), % bud structure area, % NKX2-1+ or SOX9+ cells in bud structure, and % SOX9+ cells in NKX2-1+ cells or NKX2-1+ cells in SOX9+ cells, % TBX4+ cells in non-bud structure. Each plot showed different experimental replicates (5 fields per each group). Error bars represent mean \u00b1 standard deviation (SD).\n\nIn this differentiation protocol, NKX2-1+ lung endoderm and WNT2+TBX4+ lung mesoderm were derived from the anteroventral endoderm and mesoderm at day 15 after Activin-mediated DE and LPM induction, respectively (Chen et al., 2017; Huang et al., 2014). During PS induction from days 0 to 3, cell surface markers of PDGFR\u03b1 and EPCAM and intracellular FOXA2 and MIXL1 kinetics were analyzed by FCM every 12 hr (Figure 3E). Briefly, 12 hr after the Activin induction, more than 60% of the EPCAM+PDGFR\u03b1\u2212 PS first turned on MIXL1, the mesendoderm marker (Hart et al., 2002; Tada et al., 2005). Subsequently, the epithelial\u2013mesenchymal transition occurred 24 hr later, as represented by the PDGFR\u03b1 induction in EPCAM+MIXL1+ mesendoderm. After 36 hr, more than 90% of MIXL1+EPCAM+ mesoderm cells expressed PDGFR\u03b1. At the same time, expression of FOXA2 appeared in some of those mesoderm cells (Figure 3E, F, asterisk). Thereafter, PDGFR\u03b1 expression decreased, and 72 hr later, mutual FOXA2 induction appeared when EPCAM+FOXA2+ DE and EPCAM\u2212FOXA2\u2212 LPM were presented (Figure 3G). The dynamics of MIXL1, PDGFR\u03b1, and FOXA2 were further revealed by qPCR analysis (Figure 3H). These results suggest that PDGFR\u03b1+ and FOXA2+ lineage are redundant but distinct stages of mesendoderm development. It indicates that mesendoderm is the lung precursor niche, with short-time window, contributing to both endodermal and mesodermal-derived lungs, evolutionally conserved across mouse development and human-directed differentiation.\n\n### Foxa2-driven Fgfr2 conditional knockout showed a lung agenesis phenotype\n\nSince the Foxa2-lineage+ mesendoderm forms endodermal and mesodermal lung niches (Figure 3E), and the lung mesenchyme lineage was progressively labeled and reached more than 50% by Foxa2 lineage (Figure 2E), we investigated the Foxa2-lineage-based CBC strategy. To explore this possibility, we analyzed Foxa2-driven Fgfr2 conditional knockout mouse phenotype (Foxa2Cre/+; Fgfr2flox/flox, hereafter, Foxa2Cre/+; Fgfr2 cKO). Mitotic signaling via Fgfr2 is required for both lung epithelium and mesenchyme, and systemic knockout mice of Fgf10 or Fgfr2 exhibit a phenotype of lung agenesis (Arman et al., 1999; De Langhe et al., 2006; De Moerlooze et al., 2000; Sekine et al., 1999). Based on the results of Foxa2-lineage tracing and the need for Fgfr2 signaling, it was predicted that Foxa2Cre/+; Fgfr2 cKO mice would be used to generate vacant niches in both lung epithelium and mesenchyme. We did not observe differences in the apparent gross morphology of embryos in Foxa2Cre/+; Fgfr2 cKO mice however, they exhibited a lung agenesis phenotype and died at birth by respiratory distress (Figure 4\u2014figure supplement 1A, B). We did not observe agenesis phenotype in other major endodermal organs, such as the liver, esophagus, pancreas, and intestine (Figure 4\u2014figure supplement 1). This is because those organs were Foxa2-lineage labeled (Figure 4\u2014figure supplement 1), but Fgfr2 is not critical for their organ formation. We also confirmed that kidney, glandular stomach, hair follicles, tooth bud, and limbs were preserved, which is known to form organ defective phenotype in the Fgfr2 systemic knockout (Figure 4\u2014figure supplement 1; Arman et al., 1999; De Langhe et al., 2006; De Moerlooze et al., 2000; Sekine et al., 1999), while thymus was found to be the agenesis phenotype in the Foxa2-driven Fgfr2 knockout mice (Figure 4\u2014figure supplement 2A).\n\n### Generation of the entire lungs in Foxa2-driven Fgfr2-deficient mice via CBC\n\nTo examine whether donor cells complement the lung agenesis phenotype, we generated nGFP+iPSCs from RosanT-nG mice (hereafter, nGFP+iPSCs) via Sendai virus-mediated reprogramming (Huang et al., 2014). nGFP+iPSCs were injected into mouse blastocysts (Figure 4A), and chimerism was analyzed at E17.5. Strikingly, donor nGFP+iPSCs generated whole lungs in Foxa2Cre/+; Fgfr2 cKO mice, but general chimerism in other organs were diverse (Figure 4B, Figure 4\u2014figure supplement 3A, and Table 1). Importantly, almost the entire lung epithelial, mesenchymal, and endothelial cell population at E17.5 was composed exclusively of nGFP+iPSCs (Figure 4C\u2013E and Figure 4\u2014figure supplement 3B\u2013D). In contrast, wild-type, Shh-driven heterozygous, or knockout mice showed about 6.48\u201392.3% chimerism in the mesenchymal and endothelial lineages of the lung (Figure 4E, Figure 4\u2014figure supplement 3C, and Table 1). We further compared the chimerism of each cell type in Foxa2Cre/+; Fgfr2 cKO mice and ShhCre/+; Fgfr2 cKO mice. Interestingly, Sma+ lung airway mesenchyme (80.5 \u00b1 12.0% vs 46.3 \u00b1 16.6%, p = 0.0057), Pecam+ capillary (87.5 \u00b1 7.5% vs 62.7 \u00b1 15.9%, p = 0.0134), and NG2+ pericyte (80.6 \u00b1 13.6% vs 57.5 \u00b1 10.6%, p = 0.0171) showed higher chimerism in the complemented lungs of Foxa2Cre/+; Fgfr2 cKO mice (Figure 4F\u2013H, Figure 4\u2014figure supplement 4) than that of ShhCre/+; Fgfr2 cKO mice. Given that the Foxa2Cre/+; Fgfr2 cKO mice showed shorter truncated trachea than ShhCre/+; Fgfr2 cKO mice (Figure 4\u2014figure supplement 5A, B), the rescued trachea of Foxa2Cre/+; Fgfr2 cKO mice exhibited higher chimerism in epithelium than that of ShhCre/+; Fgfr2 cKO mice (95.4 \u00b1 5.72% vs 70.82 \u00b1 18.6%, p = 0 .0223) (Figure 4\u2014figure supplement 5). Foxa2Cre/+; Fgfr2 cKO mice did not show the difference in CD45+ cell chimerism (Figure 4\u2014figure supplement 3) compared with other genotyping because those cells originate from the yolk sac, liver, or spleen (Yokomizo et al., 2022), the off-targeted organs. Interestingly, Foxa2Cre/+; Fgfr2 cKO mouse showed thymus agenesis phenotype (Figure 4\u2014figure supplement 2), but it was rescued by donor PSC injection into the blastocysts of Foxa2Cre/+; Fgfr2 cKO mice (Figure 4B, arrows). The chimerism in the Epcam+ thymic epithelium showed higher in Foxa2Cre/+; Fgfr2 cKO mice than ShhCre/+; Fgfr2 cKO mice (92.4 \u00b1 5.10% vs 28.7 \u00b1 25.4%, p = 0 .0006) (Figure 4\u2014figure supplement 2). This result suggests that the PSC injection completely rescued both the thymus and lung aplasia phenotype, and lungs and thymus were co-generated in the Foxa2Cre/+; Fgfr2 cKO mice.\n\n**Table 1.**\n E17.5 chimerism of Foxa2 or Shh promoter-driven conditional blastocyst complementation.\n\n\n<table>\n  <thead>\n    <tr>\n      <th rowspan=\"2\" colspan=\"2\"></th>\n      <th rowspan=\"2\">Liver</th>\n      <th rowspan=\"2\">Hematopoietic cells</th>\n      <th colspan=\"4\">Lung</th>\n    </tr>\n    <tr>\n      <th>Whole</th>\n      <th>Epithelium</th>\n      <th>Mesenchyme</th>\n      <th>Endothelium</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td rowspan=\"9\">Foxa2-Cre</td>\n      <td rowspan=\"5\">Fgfr2 cKO</td>\n      <td>56.2</td>\n      <td>71.3</td>\n      <td>91.8</td>\n      <td>99.8</td>\n      <td>92.3</td>\n      <td>73.1</td>\n    </tr>\n    <tr>\n      <td>54.5</td>\n      <td>64.9</td>\n      <td>90.6</td>\n      <td>99.7</td>\n      <td>89.8</td>\n      <td>91.7</td>\n    </tr>\n    <tr>\n      <td>48.3</td>\n      <td>62.9</td>\n      <td>90.3</td>\n      <td>99.6</td>\n      <td>86.7</td>\n      <td>76.7</td>\n    </tr>\n    <tr>\n      <td>39.4</td>\n      <td>57.8</td>\n      <td>87.7</td>\n      <td>99.8</td>\n      <td>86.2</td>\n      <td>73.9</td>\n    </tr>\n    <tr>\n      <td>14.4</td>\n      <td>21.1</td>\n      <td>58.9</td>\n      <td>99.5</td>\n      <td>57</td>\n      <td>38.6</td>\n    </tr>\n    <tr>\n      <td rowspan=\"4\">Fgfr2 hetero</td>\n      <td>60.2</td>\n      <td>68.7</td>\n      <td>65.9</td>\n      <td>51.6</td>\n      <td>75</td>\n      <td>68.1</td>\n    </tr>\n    <tr>\n      <td>55.8</td>\n      <td>70</td>\n      <td>88.8</td>\n      <td>76.1</td>\n      <td>89</td>\n      <td>88.5</td>\n    </tr>\n    <tr>\n      <td>24.8</td>\n      <td>32</td>\n      <td>42.1</td>\n      <td>44.6</td>\n      <td>38.4</td>\n      <td>41.1</td>\n    </tr>\n    <tr>\n      <td>9.7</td>\n      <td>12.6</td>\n      <td>21.2</td>\n      <td>50.7</td>\n      <td>19.3</td>\n      <td>13.4</td>\n    </tr>\n    <tr>\n      <td rowspan=\"22\">Shh-Cre</td>\n      <td rowspan=\"5\">Fgfr2 cKO</td>\n      <td>35.7</td>\n      <td>38.9</td>\n      <td>73.6</td>\n      <td>99.7</td>\n      <td>70.2</td>\n      <td>69.3</td>\n    </tr>\n    <tr>\n      <td>13</td>\n      <td>18.8</td>\n      <td>79.2</td>\n      <td>99.9</td>\n      <td>75.3</td>\n      <td>72.6</td>\n    </tr>\n    <tr>\n      <td>28.8</td>\n      <td>26.6</td>\n      <td>68.3</td>\n      <td>97.3</td>\n      <td>66</td>\n      <td>47.3</td>\n    </tr>\n    <tr>\n      <td>43.1</td>\n      <td>53.8</td>\n      <td>67.5</td>\n      <td>98</td>\n      <td>64.8</td>\n      <td>54.9</td>\n    </tr>\n    <tr>\n      <td>19.2</td>\n      <td>18.9</td>\n      <td>63.7</td>\n      <td>99.5</td>\n      <td>55.1</td>\n      <td>60.1</td>\n    </tr>\n    <tr>\n      <td rowspan=\"6\">Fgfr2hetero</td>\n      <td>57.4</td>\n      <td>12.7</td>\n      <td>33.6</td>\n      <td>38.3</td>\n      <td>33.4</td>\n      <td>22.1</td>\n    </tr>\n    <tr>\n      <td>44.4</td>\n      <td>44.8</td>\n      <td>84.3</td>\n      <td>96.8</td>\n      <td>81.8</td>\n      <td>71.2</td>\n    </tr>\n    <tr>\n      <td>13.8</td>\n      <td>52.8</td>\n      <td>83.1</td>\n      <td>98.3</td>\n      <td>79.1</td>\n      <td>82.9</td>\n    </tr>\n    <tr>\n      <td>16.2</td>\n      <td>6.8</td>\n      <td>26.1</td>\n      <td>20.9</td>\n      <td>21.6</td>\n      <td>9.58</td>\n    </tr>\n    <tr>\n      <td>41.2</td>\n      <td>48.6</td>\n      <td>70.3</td>\n      <td>83.6</td>\n      <td>66.3</td>\n      <td>52.6</td>\n    </tr>\n    <tr>\n      <td>40</td>\n      <td>41.5</td>\n      <td>76.8</td>\n      <td>71</td>\n      <td>76.5</td>\n      <td>66.6</td>\n    </tr>\n    <tr>\n      <td rowspan=\"11\">Wild type</td>\n      <td>79.1</td>\n      <td>100</td>\n      <td>89.5</td>\n      <td>90.4</td>\n      <td>83.2</td>\n      <td>80.7</td>\n    </tr>\n    <tr>\n      <td>60.1</td>\n      <td>53.8</td>\n      <td>68.5</td>\n      <td>77.6</td>\n      <td>65.3</td>\n      <td>66.4</td>\n    </tr>\n    <tr>\n      <td>22.3</td>\n      <td>17.8</td>\n      <td>56.7</td>\n      <td>17.8</td>\n      <td>60.8</td>\n      <td>65.6</td>\n    </tr>\n    <tr>\n      <td>20.1</td>\n      <td>15.4</td>\n      <td>53.1</td>\n      <td>54.5</td>\n      <td>52</td>\n      <td>50.8</td>\n    </tr>\n    <tr>\n      <td>2.64</td>\n      <td>4.08</td>\n      <td>8.82</td>\n      <td>13.8</td>\n      <td>6.48</td>\n      <td>8.69</td>\n    </tr>\n    <tr>\n      <td>24.3</td>\n      <td>19.1</td>\n      <td>54.9</td>\n      <td>65.1</td>\n      <td>51.1</td>\n      <td>30.4</td>\n    </tr>\n    <tr>\n      <td>23.9</td>\n      <td>18.6</td>\n      <td>54.2</td>\n      <td>44</td>\n      <td>55.3</td>\n      <td>30.9</td>\n    </tr>\n    <tr>\n      <td>49</td>\n      <td>51</td>\n      <td>59.6</td>\n      <td>76.7</td>\n      <td>56.5</td>\n      <td>31.3</td>\n    </tr>\n    <tr>\n      <td>19.8</td>\n      <td>15.6</td>\n      <td>45.7</td>\n      <td>47.4</td>\n      <td>30.4</td>\n      <td>70.4</td>\n    </tr>\n    <tr>\n      <td>2.9</td>\n      <td>2.19</td>\n      <td>43.3</td>\n      <td>39.4</td>\n      <td>37</td>\n      <td>32.5</td>\n    </tr>\n    <tr>\n      <td>77.1</td>\n      <td>69.7</td>\n      <td>91.3</td>\n      <td>96.2</td>\n      <td>89.7</td>\n      <td>91.3</td>\n    </tr>\n  </tbody>\n</table>\n\n![Figure 4.](https://cdn.elifesciences.org/articles/86105/elife-86105-fig4-v2.jpg)\n\n**Figure 4.:** (A) Schema of CBC experiment: a2i/VPA/LIF-treated SSEA1high CD31high nGFP+iPSCs were sorted and injected into WT, Fgfr2 hetero (heterozygous: Foxa2cre/+; Fgfr2flox/+; Rosa26tdTomato/+), and Fgfr2 cKO (homozygous: Foxa2cre/+; Fgfr2flox/flox; Rosa26tdTomato/+) blastocysts. (B) Gross morphology, GFP (green: donor nGFP+iPSCs-derived signals) and tdTomato (host Foxa2-lineage-derived signals) fluorescence of freshly isolated lungs from E17.5 chimeric WT (left), Fgfr2 hetero (left middle) and Fgfr2 cKO (right middle) that were injected with nGFP+iPSCs. Control: littermate Fgfr2 cKO mouse without nGFP+iPSCs injection (right). Arrows: rescued thymus formation. (C) Representative immunofluorescence (IF)-confocal imaging of E17.5 Fgfr2 cKO or Fgfr2 hetero lungs injected with nGFP+iPSCs. Dotted lines: enlarged images: Fgfr2 hetero lungs holding host-derived cells. On the other hand, Fgfr2 cKO lungs were entirely composed of donor-derived nGFP+ cells. Scale bars left and right = 0.5 mm and 50 \u03bcm. Graphs: % GFP in (D) CD31\u2212Epcam+ lung epithelium and (E) CD31\u2212Epcam\u2212 mesenchyme analyzed by flow cytometry. Each plot showed different biological animals. Foxa2Cre; Fgfr2 cKO; RosatdTomato (n = 5, independent biological replicates), Foxa2Cre; Fgfr2 hetero; RosatdTomato (n = 4), ShhCre; Fgfr2 cKO; RosatdTomato (n = 5), ShhCre/+; Fgfr2 hetero; RosatdTomato (n = 6), and WT (n = 11). Statistical analyses: unpaired Student\u2019s t-test, significance at *p < 0.05, **p < 0.01, ***p < 0.001. Error bars represent mean \u00b1 standard deviation (SD). Representative IF-confocal imaging of (F) Foxa2Cre; Fgfr2 cKO; RosatdTomato and (G) ShhCre; Fgfr2 cKO; RosatdTomato injected with nGFP+iPSCs. (H) Morphometric analysis: % GFP in Nkx2-1+ epithelial cells (left) and Sma+ airway smooth muscle cells (right) in Foxa2Cre; Fgfr2 cKO; RosatdTomato and ShhCre; Fgfr2 cKO; RosatdTomato. Statistical analyses: unpaired Student\u2019s t-test, significance if *p < 0.05, **p < 0.01, ns: non-significant. Error bars represent mean \u00b1 SD. Scale bars = 50 \u03bcm. (I) Representative IF-confocal imaging of E14.5 lung of Fgfr2 cKO injected with nGFP+iPSCs. GFP and tdTomato indicate donor and host-derived cells, respectively. Scale bar = 20 \u03bcm. (J) Split images of (I) visualizing GFP+ donor cells and tdTomato+ host cells, co-stained with Ki67. Scale bar = 20 \u03bcm. (K) Graphs: % Ki67 labeling in mesenchymal cells of E14.5 Foxa2Cre/+; Fgfr2 cKO chimeric lungs. Statistical analyses: paired Student\u2019s t-test, significance if *p < 0.05, ns: non-significant. Error bars represent mean \u00b1 SD.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/86105/elife-86105-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Representative gross morphology of E14.5 Foxa2Cre/+; Fgfr2 hetero and Foxa2Cre/+; Fgfr2 cKO. There were no differences in the appearance of the embryos between Fgfr2 hetero and Fgfr2 cKO. Limb (arrows) and placenta (pl) are present in all genotypes. Conversely, the Fgfr2 cKO embryo showed lung agenesis phenotype (bottom, asterisk) (n = 6 per each group). (B) Representative immunofluorescence (IF)-confocal imaging of E10.5 Foxa2Cre/+; Fgfr2 hetero and Foxa2Cre/+; Fgfr2 cKO: Fgfr2 cKO did not form Sox2+NKX2-1+ proximal airway bifurcation. Scale bar = 20 \u03bcm. Lu: lung, Eso: esophagus, Tr: trachea. (C) HE stains and IF imaging of Foxa2Cre/+; Fgfr2 cKO; Rosa26tdTomato/+ at E16.5. tdTomato (red) signal indicate Foxa2 lineage. The internal organs such as the intestine, pancreas, kidney, tooth buds, and hair follicles were normally formed in Fgfr2 cKO. Scale bar = 200 \u00b5m.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/86105/elife-86105-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A) Representative image of Foxa2Cre/+; Fgfr2 cKO; Rosa26tdTomato/+, Foxa2Cre/+; Fgfr2 hetero; Rosa26tdTomato/+, and ShhCre/+; Fgfr2 cKO; Rosa26tdTomato/+. Foxa2Cre/+; Fgfr2 cKO; Rosa26tdTomato/+ showed thymus and lung agenesis, while ShhCre/+; Fgfr2 cKO; Rosa26tdTomato/+ showed only lung agenesis. Lu: lung, Ht: heart, Tr: trachea, Th: thymus. (B) Representative immunofluorescence (IF) imaging of E17.5 thymus of Foxa2Cre/+; Fgfr2 cKO; Rosa26tdTomato/+ and ShhCre/+; Fgfr2 cKO; Rosa26tdTomato/+ injected with nGFP+iPSCs. GFP indicates donor cells. Dotted line: Epcam+ thymic epithelial cells. Scale bar = 20 \u03bcm. (C) Graphs: % chimerism of thymus epithelium and mesenchyme. Each plot showed different embryos. Foxa2Cre; Fgfr2 cKO; RosatdTomato (n = 5, independent biological replicates), Foxa2Cre; Fgfr2 hetero; RosatdTomato (n = 3), ShhCre; Fgfr2 cKO; RosatdTomato (n = 5). Statistical analysis: one-way analysis of variance (ANOVA) with the Tukey post hoc test; statistically significant at *p < 0.05, ***p < 0.001, ns: non-significant. Each plot showed different embryos. Error bars represent mean \u00b1 standard deviation (SD).\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/86105/elife-86105-fig4-figsupp3-v2.jpg)\n\n**Figure 4\u2014figure supplement 3.:** (A) Representative gross morphology of chimeric embryos of WT + nGFP+iPSCs, Foxa2Cre/+; Fgfr2 hetero; Rosa26tdTomato/+ + nGFP+iPSCs, Foxa2Cre/+; Fgfr2 cKO; Rosa26tdTomato/+ + nGFP+iPSCs. The color indicated various GFP+ chimerism on the skin of those embryos and the residual host Foxa2-lineage tdTomato signals. (B) Representative immunofluorescence (IF)-confocal imaging of E17.5 lungs of chimeric Foxa2Cre/+; Fgfr2 cKO; Rosa26tdTomato/+ + nGFP+iPSCs. The E17.5 rescued lungs expressed differentiated cell markers such as Pdpn (alveolar type1 cells), Sftpc (type 2 cells), Scgb1a1 (club cells), Foxj1 (multiciliated cells), Cgrp (neuroendocrine cells), Sma (smooth muscle cells), and VE-cadherin (endothelial cells). Scale bar = 20 \u03bcm. Graphs: % GFP in (C) CD31+Epcam\u2212 lung endothelium and (D) CD45+ hematopoietic cells analyzed by flow cytometry. Each plot showed different biological animals. Foxa2Cre; Fgfr2 cKO; RosatdTomato (n = 5, independent biological replicates), Foxa2Cre; Fgfr2 hetero; RosatdTomato (n = 4), ShhCre; Fgfr2 cKO; RosatdTomato (n = 5), ShhCre/+; Fgfr2 hetero; RosatdTomato (n = 6), and WT (n = 11). Error bars represent mean \u00b1 standard deviation (SD). Statistical analyses: unpaired Student\u2019s t-test, significance at *p < 0.05, ns: non-significant. (E) Graphs: % of donor cell chimerism at E14.5: % of GFP in CD31\u2212Epcam+ lung epithelium fraction, CD31\u2212Epcam\u2212 mesenchyme, and CD31+Epcam\u2212 endothelium analyzed by flow cytometry. Each plot: a different biological animal (see Table 2). Foxa2Cre; Fgfr2 cKO; RosatdTomato (n = 3, independent biological replicates), Foxa2Cre; Fgfr2 hetero; RosatdTomato (n = 5), and WT (n = 5) at E14.5. Error bars represent mean \u00b1 SD. Statistical analyses: unpaired Student\u2019s t-test, significance at *p < 0.05, ns: non-significant. (F) Representative IF-confocal imaging of E14.5 Shh-lineage-tracing mouse lungs (ShhCre/+; RosatdTomato/+). Shh-lineage labeled the entire lung epithelium but rarely mesenchyme, distinct from Foxa2 lineage mice (see Figure 2F). Scale bar = 100 \u03bcm.\n\n![Figure 4\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/86105/elife-86105-fig4-figsupp4-v2.jpg)\n\n**Figure 4\u2014figure supplement 4.:** Representative immunofluorescence (IF)-confocal imaging of E17.5 lung of Foxa2Cre/+; Fgfr2 cKO and ShhCre/+; Fgfr2 cKO injected with nGFP+iPSCs. GFP indicates donor cells. Graphs: % chimerism of GFP+ donor cells with E17.5 lung mesenchyme markers such as SMA+ PECAM+ artery, SMA- PECAM+ veins, PECAM+ capillaries, NG2+ pericytes, and WT1+ mesothelium. Each plot showed different embryos. Foxa2Cre; Fgfr2 cKO; RosatdTomato (n = 5, independent biological replicates) and ShhCre; Fgfr2 cKO; RosatdTomato (n = 5). N = 5 biological replicates. Error bars represent mean \u00b1 standard deviation (SD). Statistical analyses: unpaired Student\u2019s t-test, significance at *p < 0.05, ns: non-significant. Scale bar = 20 \u03bcm.\n\n![Figure 4\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/86105/elife-86105-fig4-figsupp5-v2.jpg)\n\n**Figure 4\u2014figure supplement 5.:** (A, B) Representative image of Foxa2Cre/+; Fgfr2 cKO; Rosa26tdTomato/+ and ShhCre/+; Fgfr2 cKO; Rosa26tdTomato/+trachea. Asterisks indicate the trachea end. Foxa2 trachea ends in the middle of the thoracic cavity, while Shh ends after bifurcation. (C, D) Representative immunofluorescence (IF)-confocal imaging of E17.5 trachea of (C) Foxa2Cre/+; Fgfr2 cKO; RosatdTomato and (D) ShhCre/+; Fgfr2 cKO; RosatdTomato injected with nGFP+iPSCs. GFP and tdTomato indicate donor cells and host lineage cells, respectively. Dotted lines: enlarged images. (E) Graphs: % chimerism of tracheal epithelium and mesenchyme. each plot showed different embryos. Foxa2Cre; Fgfr2 cKO; RosatdTomato (n = 5, independent biological replicates), Foxa2Cre; Fgfr2 hetero; RosatdTomato (n = 3), ShhCre; Fgfr2 cKO; RosatdTomato (n = 5). Statistical analysis: one-way analysis of variance (ANOVA) with the Tukey post hoc test; statistically significant at *p < 0.05, **p < 0.01, ns: non-significant. Error bars represent mean \u00b1 standard deviation (SD).\n\n### Fgfr2 knockout in lung mesenchyme suppressed their proliferation and showed higher chimerism of the entire lung by CBC\n\nPrevious reports described that Fgfr2 is critical for lung epithelial cell development but also important for lung mesenchyme proliferation (Yin et al., 2008). Although tdTomato+ Fgfr2 knockout mesenchymal cells remained in early lung development at E14.5 (Figure 4I), the percentage of Ki67+ proliferating cells was significantly higher in GFP+ donor cells compared to tdTomato+ host cells (Figure 4J, K). These results suggest that generating Fgfr2-deficient niche in the host Foxa2-lineage-derived lung mesenchyme is efficient for donor iPSCs recruitment in the defective Foxa2 lineage mesenchyme niches during development.\n\n### Generation of functional lungs in Foxa2-driven Fgfr2-deficient mice via CBC\n\nAlthough we observed nearly the whole lung generation in the Foxa2Cre/+; Fgfr2 cKO during lung development, it was unclear whether the Foxa2-lineage-based CBC approach was efficient enough for obtaining fully functional lungs and the rescued mice would survive until adulthood. We injected GFP-expressing mouse embryonic stem cells (PSCCAG-GFP) into mouse blastocysts and analyzed the chimeric mice postnatal days to address this issue. We found that Foxa2Cre/+; Fgfr2 cKO, PSCCAG-GFP rescued mice survived at 4 weeks postnatal days without any difference in their gross appearance and behavior from the littermate control; Foxa2Cre/+; Fgfr2 hetero, PSCCAG-GFP mice (Figure 5A, asterisks). They showed no significant difference in their respiratory functions of f (frequency) (232.9 \u00b1 18.5 vs 236.2 \u00b1 25.7%, p = 0.790), TV (tidal volume) (0.253 \u00b1 0.06 vs 0.233 \u00b1 0.06, p = 0.514), Raw (airway resistance) (4.340 \u00b1 1.65 vs 5.393 \u00b1 3.80, p = 0.556), and EF50 (expiratory flow at the point 50% of TV is expired) (2.484 \u00b10 .513 vs 2.376 \u00b10 .860, p = 0.793) (Figure 5B). Macroscopic analysis showed strong GFP signals but little host-derived tdTomato signals in the lungs of Foxa2Cre/+; Fgfr2 cKO, PSCCAG-GFP rescued mice compared to littermate controls (Figure 5C, D), suggesting efficient donor complementation in both epithelial and mesenchymal lung progenitors. FCM analyses confirmed a significantly lower proportion of the residual tdTomato+ host-derived cells in the epithelium (0.29% \u00b1 0.40 vs 45.9% \u00b1 24.1, p = 0.0004), mesenchyme (1.80% \u00b1 1.94 vs 28.1% \u00b1 11.5, p < 0.0001), and endothelium (3.86% \u00b1 4.89 vs 44.6% \u00b1 16.5, p < 0.0001) of the complemented adult lungs compared to the littermate control (Figure 5E, F). IF of lungs from Foxa2Cre/+; Fgfr2 cKO, PSCCAG-GFP rescued animals confirmed extensive GFP overlap with markers of the airway and alveolar epithelial cell types and mesenchyme (Figure 5G). We also confirmed that PSCCAG-GFP injection into Foxa2Cre/+; Fgfr2 cKO blastocysts simultaneously rescued the thymus agenesis phenotype (Figure 5C, H, arrows).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/86105/elife-86105-fig5-v2.jpg)\n\n**Figure 5.:** (A) Adult mice of Foxa2Cre/+; Fgfr2 cKO; RosatdTomato (asterisks) or Foxa2Cre/+; Fgfr2 hetero; RosatdTomato injected with PSCCAG-GFP. (B) Graphs: Respiratory function analysis of f (frequency), TV (tidal volume), Raw (airway resistance), and EF50 (expiratory flow at the point 50% of TV is expired) of Foxa2Cre/+; Fgfr2 cKO; RosatdTomato (n = 5, independent biological replicates), Foxa2Cre/+; Fgfr2 hetero; RosatdTomato (n = 19). Statistical analyses: unpaired Student\u2019s t-test, significance at ns: non-significant. (C) Gross morphology of 4 weeks rescued lung and thymus from Foxa2Cre/+; Fgfr2 cKO; RosatdTomato (Fgfr2 cKO) or Foxa2Cre/+; Fgfr2 hetero; RosatdTomato (Fgfr2 hetero) injected with PSCCAG-GFP. Scale bar = 5 mm. (D) Fluorescent signals of 4 weeks chimeric lungs. GFP (green: donor PSCCAG-GFP-derived signals) and tdTomato (red: host Foxa2-lineage-derived signals) fluorescence of freshly isolated lungs after removing thymus. Scale bar = 5 mm. (E) Representative immunofluorescence (IF) tiled-scan confocal-IF imaging of 4 weeks Fgfr2 cKO or Fgfr2 hetero lungs injected with PSCCAG-GFP. Fgfr2 cKO lungs showed less host origin tdTomato+ cells compared to Fgfr2 hetero. Scale bar = 3 mm. (F) Flow cytometry (FCM) analysis: Graphs: Remaining tdTomato+ cell population of each cell type in 4 weeks Fgfr2 cKO or Fgfr2 hetero lungs injected with PSCCAG-GFP. Statistical analyses: unpaired Student\u2019s t-test, significance if ***p < 0.001 and ****p < 0.0001. (G) Representative IF-confocal imaging of 4 weeks chimeric lungs from Fgfr2 cKO or Fgfr2 hetero injected with PSCCAG-GFP expressed differentiated cell markers such as Pdpn (alveolar type1 cells), Sftpc (type 2 cells), Scgb1a1 (club cells), Sma (smooth muscle cells), and VE-cadherin (endothelial cells). Scale bar = 20 \u03bcm. (H) Fluorescent signals of 4 weeks chimeric thymus. Arrows in C and H: rescued thymus formation, Scale bar = 1 mm.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/86105/elife-86105-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Pluripotent stem cell (PSC) differentiation will be initiated by the Mixl1+ induction and the subsequent temporal expression of an early mesendoderm (ME) marker, Pdgfr\u03b1. After that, the late mesendoderm marker marked by Foxa2 will turn on. Pdgfr\u03b1 and Foxa2 lineage partially overlap at the distal component of primitive streak stage during gastrulation. Pdgfr\u03b1+ early ME lineage gives rise to the partial lung epithelial cells, most likely by the overlapping Foxa2+ lineage and entire lung mesenchyme through lateral plate mesoderm (LPM) induction and cardiopulmonary lineage (CPP). On the other hand, the Foxa2 lineage gives rise to the whole lung epithelium and about 20% of CPP in early lung development at E12.5\u2013E14.5. Strikingly, the whole lungs, including lung epithelium, mesenchyme, and endothelial cells, were produced solely by donor induced pluripotent stem cells (iPSCs) via complementing the Foxa2-lineage\u2019s mitotic defective lung niches. (B) Top left panel: Schematic diagram of mesendoderm lineage trajectory for lung formation based on the single-cell RNA-seq (scRNA-seq) deposited database (Pijuan-Sala et al., 2019). During gastrulation, a bipotent mesendoderm (Mes: rounded blue area) appears in the transition from primitive streak (PS) and NM, labeled by Mixl1, T, Gsc, and Eomes. NM forms LPM. Mesendoderm also gives rise to anteriolar PS (APS) and, subsequently, definitive endoderm (DE). Top right panel: Clustering of scRNA-seq provided in the deposited database (Pijuan-Sala et al., 2019). Bottom left panel: Time point of scRNA-seq provided in the deposited database (Pijuan-Sala et al., 2019). Bottom: Foxa2 is expressed in the PS (black arrow) and the part of NM (red arrow). In contrast, Shh appeared in DE but not in PS, NM, or APS. A few cells showed Pdgfr\u03b1 in PS (black arrow) but most expressed Pdgfra in NM (red arrow) and LPM.\n\nThese results indicate that Foxa2Cre/+; Fgfr2 cKO provides defective niches in both lung epithelium and mesenchyme and thymic epithelium to be complemented by donor PSCs, enabling the entire lungs and thymus co-generation.\n\n## Discussion\n\nThe presence of committed organ precursors capable of contributing to multi-embryonic layers after pluripotent epiblast formation has been assumed, but the identity and origin of the lung precursors needed to be better defined. Although the Foxa2 lineage could not give rise to the entire lung cells, we have identified a Foxa2 lineage that provides a significant steppingstone for facilitating functional whole lung generation. Since donor cells formed about 50\u201380% chimerism in the complemented lung mesenchyme niches at E14.5 (Table 2) and endogenous Foxa2 lineage forms only 20\u201330% in the lung mesenchyme at E14.5, Fgfr2 defects at the Foxa2 lineage in early lung development are important but not sufficient for the complete lung mesenchyme niche complementation. Losing Fgfr2 expression in Foxa2 lineage cells resulted in lower proliferative ability than donor cells during chimeric lung mesenchyme development (Figure 4I\u2013K), allowing progressive lung mesenchyme complementation in lung development and postnatal days, leading to promoting efficient whole lung generation.\n\n**Table 2.**\n E14.5 chimerism of Foxa2 promoter-driven conditional blastocyst complementation.\n\n\n<table>\n  <thead>\n    <tr>\n      <th rowspan=\"2\" colspan=\"2\"></th>\n      <th rowspan=\"2\">Liver</th>\n      <th colspan=\"4\">Lung</th>\n    </tr>\n    <tr>\n      <th>Whole</th>\n      <th>Epithelium</th>\n      <th>Mesenchyme</th>\n      <th>Endothelium</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td rowspan=\"13\">Foxa2-Cre</td>\n      <td rowspan=\"3\">Fgfr2 cKO</td>\n      <td>59.9</td>\n      <td>81.9</td>\n      <td>99.4</td>\n      <td>81.4</td>\n      <td>86.2</td>\n    </tr>\n    <tr>\n      <td>51</td>\n      <td>75.4</td>\n      <td>99.4</td>\n      <td>75.4</td>\n      <td>56.8</td>\n    </tr>\n    <tr>\n      <td>25.3</td>\n      <td>56.5</td>\n      <td>97.4</td>\n      <td>54.1</td>\n      <td>63.2</td>\n    </tr>\n    <tr>\n      <td rowspan=\"5\">Fgfr2 hetero</td>\n      <td>37.1</td>\n      <td>54.4</td>\n      <td>56.9</td>\n      <td>54</td>\n      <td>58.9</td>\n    </tr>\n    <tr>\n      <td>29.8</td>\n      <td>48.6</td>\n      <td>83.3</td>\n      <td>47.7</td>\n      <td>47.3</td>\n    </tr>\n    <tr>\n      <td>18.7</td>\n      <td>43.4</td>\n      <td>18</td>\n      <td>45</td>\n      <td>31</td>\n    </tr>\n    <tr>\n      <td>0.54</td>\n      <td>0.24</td>\n      <td>0.91</td>\n      <td>0.1</td>\n      <td>2.11</td>\n    </tr>\n    <tr>\n      <td>0.4</td>\n      <td>0.17</td>\n      <td>1.02</td>\n      <td>0.058</td>\n      <td>1.23</td>\n    </tr>\n    <tr>\n      <td rowspan=\"5\">Wild type</td>\n      <td>39</td>\n      <td>68.7</td>\n      <td>56.2</td>\n      <td>69.2</td>\n      <td>67.5</td>\n    </tr>\n    <tr>\n      <td>29.4</td>\n      <td>81.1</td>\n      <td>62.7</td>\n      <td>81.8</td>\n      <td>80.8</td>\n    </tr>\n    <tr>\n      <td>28.6</td>\n      <td>73.9</td>\n      <td>39.6</td>\n      <td>75.6</td>\n      <td>76.4</td>\n    </tr>\n    <tr>\n      <td>13.8</td>\n      <td>29.5</td>\n      <td>5.57</td>\n      <td>30.4</td>\n      <td>29.6</td>\n    </tr>\n    <tr>\n      <td>0</td>\n      <td>2.22</td>\n      <td>5.52</td>\n      <td>1.5</td>\n      <td>16</td>\n    </tr>\n  </tbody>\n</table>\n\nLung epithelial cell precursors were well known to be Shh+ DE in the lung development field (Cardoso and Kotton, 2008; Christodoulou et al., 2011; Harris et al., 2006; Kadzik and Morrisey, 2012; Tian et al., 2011; Weaver et al., 1999; Xing et al., 2008), and indeed, the Shh-lineage traces putative DE-derived epithelial lineage but little lung mesenchyme (Figure 4\u2014figure supplement 3). Targeting the endodermal lung lineage driven by Shh was sufficient for lung epithelial complementation but insufficient to generate whole lungs, and host-derived cells remained substantially in the mesodermal lung component (Mori et al., 2019).\n\nIn contrast to lung epithelial precursors, the orderly commitment and the origin of the entire pulmonary mesenchyme needed to be better defined. We showed that gastrulating Pdgfr\u03b1 lineage is the origin of the whole lung mesoderm, including endothelium (Figure 1A, B). Furthermore, Foxa2 or Pdgfr\u03b1 lineage labels a population primarily comprised of the earliest specified precursors in the distal compartment of mesendoderm, similar to human iPSC cell-derived directed differentiation protocol. Our findings, summarized in Figure 5\u2014figure supplement 1A, pinpoint the lineage hierarchy of specified lung precursors in gastrulating mesendoderm, further supported by the scRNA-seq analysis in early embryonic development (Figure 5\u2014figure supplement 1; Pijuan-Sala et al., 2019).\n\nAs previously indicated that nascent mesoderm differentiation into a CPP fate (Bardot et al., 2017; Devine et al., 2014; Ng et al., 2022; Peng et al., 2013), we clarified the orderly mesendoderm progression of gene expression, Mixl1, Pdgfr\u03b1, and Foxa2, and lung progenitor-related markers that parallels the commitment of Foxa2+ Pdgfr\u03b1+ mesendoderm to an LPM and DE fate in the lung-directed differentiation protocol using human iPSC (Figure 3), not clarified in the previous pioneering works (Chen et al., 2017; Hawkins et al., 2017; Huang et al., 2014). We uncovered that PDGFR\u03b1+ mesendoderm primes the cell fate of Foxa2+ DE after the MIXL1+ mesendoderm specification in the directed differentiation. How the lung progenitors acquire the lung epithelial cell fate of NKX2-1 with the distal lung tip marker, SOX9, and TBX4+ mesenchyme marker is also fundamental for understanding human lung development.\n\nOur lineage tracing analysis also highlighted the unanticipated Foxa2 lineage program, the progressive increase of lineage labeling by spontaneous expression of Foxa2 mRNA that occupies more than half of the lung mesenchyme during lung development. Foxa2 lineage+ lung mesenchyme is a part of Pdgfr\u03b1 lineage+ cells, potentially providing a unique competitive developmental niche during lung development. Further analyses using Foxa2CreERT2-lineage-tracing mice are required to clarify it. Intriguingly, the Foxa2 lineage+ mesenchyme did not show any discrete fates that would predict anatomical localization\u2014depleting Fgfr2 in the Foxa2 lineage results in the loss of the Fgfr2 mitogen-mediated function of Foxa2 lineage+ lung mesenchyme, which leads to the loss of proliferative ability in most host lung mesenchyme. The Foxa2-lineage labeling in lung mesenchyme is around 20% at E14.5 (Figure 2D, E). Moreover, the donor cell complementation in lung mesenchyme at E14.5 still holds host-derived lung mesenchyme but decreases at E17.5 and adulthood (Figures 4I, C, 5E, F). These results indicate that the defective Foxa2 lineage is critically essential for efficient lung complementation.\n\nWe also found that the combination of Fgfr2 depletion in Foxa2 lineage preserved other major organs, such as kidney, glandular stomach, hair follicles, tooth bud, and limbs, distinct from the agenesis or dysgenesis phenotype caused by the systemic Fgfr2 depletion (Arman et al., 1999; De Langhe et al., 2006; De Moerlooze et al., 2000; Sekine et al., 1999). This is because the timing and the requirement of Fgfr2 are different from the lineage in each organ (Bates, 2011; Revest et al., 2001). We accidentally found a thymus agenesis phenotype in the Foxa2Cre/+; Fgfr2 cKO mice but not in ShhCre/+; Fgfr2 cKO mice and its complementation. The thymus is raised in the third pharyngeal pouch with the requirement of the Forkhead Box N1 (Foxn1) transcription factor in epithelial cells (Chhatta et al., 2021), while the redundant role of Foxa2 and Foxa1 in T cell maturation was reported (Ramachandran et al., 2022). The previous report generated thymus using BC by the Foxn1 depletion in host animals, followed by the PSC injections (Yamazaki et al., 2022). Our reports showed novel evidence of the requirement of Fgfr2 signaling for thymus formation, specifically in the Foxa2 lineage, associated with the previous statements regarding the critical role of Fgfr2 in thymus formation and thymic epithelial cell differentiation (Dooley et al., 2007; Revest et al., 2001). This study showed evidence that thymus formation is essentially formed in the Foxa2 lineage but not Shh, supported by the previous report that the dynamic Shh expression regulates larynx-esophageal separation and esophageal constriction on the fourth pharyngeal pouches above the lungs during development (Ramachandran et al., 2022). Corresponding to the previous report, the mice with the rescued thymus showed no apparent signs of immune deficiency and survived until adulthood (Yamazaki et al., 2022). In these complemented mice, immune cells were most likely educated in self-recognition by donor cells\u2019 derived thymus epithelium and induced central tolerance. How thymic epithelium is distinctively lineage labeled by Foxa2 and Shh, and the tolerance difference should be investigated further. It is also important to note that GvHD is a crucial risk factor for long-term survival following human lung transplantation (Bos et al., 2022). If we transplant the complemented lungs as a graft containing the conditioned host- and donor-derived immune cells to the recipient that provided donor PSC, it may not cause GvHD. This unique research direction of autologous lung transplantation must be extensively investigated using recipient-derived iPSC with our CBC lung generation models.\n\nAn unambiguous proof of the developmental origins of patterned organs is critical for developing regenerative strategies and a better understanding of the genes responsible for congenital malformations. The human-derived developmental program modification to match the host animals is vital for the future development of whole lung generation via CBC using human iPSCs. More broadly, our studies offer a new paradigm that can be applied to modeling various congenital lung diseases of both lung mesenchyme and epithelium and future autologous transplantation therapies using iPSC in the near future.\n\n## Methods\n\n### Mouse\n\nShhCre/+ mice (cat. 05622), Rosa26tdTomato/ tdTomato mice (cat. 07914), Rosa26nT-nG/nT-nG mice (cat. 023035), and PdgfraCreERT2/+ mice (cat. 032770) were obtained from the Jackson Lab. X. Zhang kindly gifted Fgfr2flox/flox mice. We further backcrossed these mice for over three generations with CD-1 mice (cat. 022) from the Charles River. Dr. Nicole C Dubois kindly provided Foxa2Cre/Cre mice (129 \u00d7 B6 mixed background). For conditional deletion of Fgfr2 (Fgfr2 cKO), we crossed Fgfr2flox/flox; Rosa26tdTomato/tdTomato females with Foxa2Cre/Cre; Fgfr2flox/+, Foxa2Cre/+; Fgfr2flox/+, or ShhCre/+; Fgfr2flox/+ males, respectively. PCR performed genotyping of the Shh-Cre, Rosa26-tdTomato, Rosa26-nTnG, and Pdgfra-CreERT2 alleles according to the protocol provided by the vendor. For detecting the Fgfr2 floxed allele, we performed PCR using the primer sets: 5\u2032-ATAGGAGCAACAGGCGG-3\u2032, and 5\u2032-CAAGAGGCGACCAGTCA-3\u2032 (Mori et al., 2019). For the CBC, genotyping of chimeric animals was confirmed by 10,000 sorted cells from GFP-negative, tdTomato-positive sorted liver or lung cells. Briefly, liver or lung fibroblasts of adult chimeric mice were primarily cultured in Dulbecco\u2019s modified Eagle's medium (DMEM) + 10% fetal bovine serum (FBS) supplemented with penicillin/streptomycin. Then tdTomato+ cells were sorted out, and genotyping was confirmed. In addition to this, IF imaging of Fgfr2 in tdTomato+ tracheal epithelial cells was also conducted to confirm Fgfr2 knockout for adult chimera analysis using tyramid signal amplification (AKOYA Biosciences, SAT705A001EA). For lineage tracing with PdgfraCreERT2/+; Rosa26tdTomato/+ mice, 1 dose of 200 \u00b5g tamoxifen (MedChem Express, HY-13757A) per g of body weight was given via oral gavage injection. All animal experiments were approved by Columbia University Institutional Animal Care and Use Committee in accordance with US National Institutes of Health guidelines.\n\n### Culture of human PSCs\n\nAll PSC lines were maintained in feeder-free conditions on laminin iMatrix-511 silk E8 (Amsbio, AMS.892021) in StemFit 04 complete Medium (Amsbio, SFB-504), supplemented with Primocin (Invivogen, ant-pm-1), and passaged with TrypLE Select (Gibco, A1285901). All human iPSC lines used were characterized for pluripotency and were found to be karyotypically normal. The BU3NGST cell line was kindly gifted by Dr. Finn Hawkins and Dr. Darrell Kotton at Boston University, Boston, MA. Dr. Jennifer Davis, the University of Washington School of Medicine, Seattle, WA, kindly gifted the Rainbow cell line. PD2 and TD1 hiPSC were generated from deidentified commercially available human peripheral blood mononuclear cell and tracheal epithelial cell lines via the manufacturing protocol of Sendai virus-mediated reprogramming (CytoTune2.0) (Thermo Fisher, A16517) under the CUIMC ESCRO guidelines. Every other month, all iPSC lines screened negative for mycoplasma contamination using a MycoAlert PLUS detection kit (Lonza, LT07-710).\n\n### Differentiation of hPSCs into lung epithelial and mesenchymal cells\n\nThe directed differentiation protocols were modified from previous protocols to maximize lung mesenchymal cell generation concomitantly with NKX2-1+ lung epithelium (Hawkins et al., 2017; Huang et al., 2014). Briefly, DE and LPM precursors were induced once seeded hPSC-formed colonies by the Activin induction using the STEMdiff Definitive Endoderm Kit (StemCell Technologies, 05110) for 72 hr. Differentiated cells were dissociated and passaged in Laminin511-coated tissue culture plates in a complete serum-free differentiation medium (cSFDM) (Chen et al., 2017). To induce DE and LPM into the anterior foregut endoderm and mesoderm, the cSFDM was supplemented with 10 \u00b5M SB431542 (MedChem Express, HY-10431) and 2 \u00b5M Dorsomorphin (Tocris, 3093) for 48 hr and 10 \u00b5M SB431542 and 2 \u00b5M IWP2 (Tocris, 3533) for 24 hr. Cells were then cultured for 7\u201310 additional days in cSFDM containing 3 \u00b5M CHIR99021, 10 ng/ml recombinant human FGF10 (R&D Systems, 345-FG), 10 ng/ml recombinant human KGF (R&D Systems, 251-KG), 10 ng/ml recombinant human BMP4 (R&D Systems, 314-BP), and 50 nM retinoid acid (Sigma-Aldrich, R2625) to induce NKX2-1 positive lung epithelial cells and WNT2+TBX4+ lung mesenchymal cells.\n\n### Immunofluorescence\n\nBefore the immunostaining, antigen retrieval was performed using Unmasking Solution (Vector Laboratories, H-3300) for 10 min at around 100\u00b0C by microwave. 4\u20137 \u00b5m tissue sections were incubated with primary antibodies in the staining buffer containing 0.025% Triton X-100, and 1% bovine serum albumin (BSA) overnight at 4\u00b0C. Mouse primary antibody staining was done using M.O.M kit (Vector Labs, BMK-2202). Then washed in PBS and incubated with secondary antibodies conjugated with Alexa488, 567, or 647 (Thermo Scientific, 1:400) with NucBlue Fixed Cell Ready Probes Reagent (Hoechst) (Thermo Scientific, R37605) for 1.5 hr, and mounted with ProLong Gold antifade reagent (Invitrogen, P36930). The images were captured by a Zeiss confocal 710 microscope or Leica Stellaris 8 confocal microscopy or DMi8 Leica widefield microscope. The antibodies are listed in Supplementary file 1.\n\n### Immunocytochemistry\n\nCells on culture dishes were fixed with 4% paraformaldehyde (PFA) for 30 min at room temperature (RT), permeabilized, and blocked with staining buffer for 1 hr at RT. Primary antibodies were incubated overnight at 4\u00b0C in the staining buffer. After three washes in PBS, secondary antibodies and NucBlue Fixed Cell Ready Probes Reagent (Hoechst) were incubated for 1 hr. The samples were imaged using DMi8 Leica widefield microscope. The antibodies are listed in Supplementary file 1.\n\n### RNAScope in situ hybridization\n\nRNA at E18.5 lung sections were stained by RNAScope probes: Mm-Foxa2-T8 (Advanced Cell Diagnostics, #409111-T8) or Negative control (NC) (Advanced Cell Diagnostics, #324341) using the RNAScope HiPlex12 Reagent kit v2 (Advanced Cell Diagnostics, #324419) according to manufacture-provided protocol. Subsequently, sections were incubated with tdTomato antibody for 2 hr at RT, washed in PBS, incubated with secondary antibody conjugated with Alexa488 with NucBlue Fixed Cell Ready Probes Reagent (Hoechst) for 1.5 hr, and mounted with ProLong Gold antifade reagent. The images of Foxa2 and NC in situ hybridization were captured with the same setting by a Zeiss confocal 710 microscope.\n\n### FCM analyses of mouse lung tissue\n\nLungs from lineage-tracing mice at E14.5, E18.5, P0, and 4 weeks or lungs from CBC chimeric mice at E14.5, E17.5, and 4 weeks were harvested and prepared for the FCM, as previously described (Mori et al., 2019). Briefly, tissues were minced with microscissors, and incubated in 1 ml of pre-warmed dissociation buffer (1 mg/ml DNase [Sigma, DN25], 5 mg/ml collagen [Roche, 10103578001], and 15 U/ml Dispase II [Stemcell Technologies, 7913]) in Hanks' Balanced Salt Solution (HBSS) at 37\u00b0C on the rocker with 80 r.p.m. speed, and then neutralized by FACS buffer containing 2% FBS, Glutamax, 2 mM Ethylenediaminetetraacetic acid (EDTA) and 10 mM 4-(2-hydroxyethyl)-1-piperazineethanesulfonic acid (HEPES) in HBSS after the 30\u201360 min incubation. After filtrating the cells with a 40 \u00b5m filter (FALCON, 352235), cell pellets were resuspended with 1 ml of cold RBC lysis buffer (BioLegend, 420301) to lyse the remaining erythrocytes for 5 min on ice, and neutralized by 1 ml cold FACS buffer. After that, it was centrifuged at 350 rcf, 4\u00b0C, for 3 min to remove the lysed blood cells. For FCM analysis, one million cells were transferred in 100 \u00b5l of FACS buffer supplemented with 0.5 \u00b5M Y27632 and then added 2 \u00b5l Fc Block (BD Pharmingen, 553141) per sample followed by 10 min incubation on ice. Cells were incubated with the following antibodies: CD31-APC (BioLegend, 102510, 1/50), Epcam-BV711 (BioLegend, 118233, 1/50), or Epcam-BV421 (BioLegend, 118225, 1/50), Aqua Zombie (BioLegend, 423101, 1/100), CD45-BV605 (BioLegend, 103104, 1/50) for 30 min on ice. After staining, cells were washed twice with FACS buffer before resuspending in 500 \u00b5l FACS buffer for the subsequent analyses using SONY MA900 or NovoCyte. Compensation was manually performed to minimize the tdTomato signal leakage to the GFP and BV605 channel using FlowJo (ver. 10. 7. 1). Two samples from E14.5 lineage-tracing mice were removed from analysis based on inaccurate staining of live staining. Total four lungs were calculated from six embryos.\n\n### Real-time quantitative RT-PCR\n\nTotal RNA was extracted using a Direct-zol RNA MiniPrep Plus kit (Zymo Research, R2072), and cDNA was synthesized using Primescript RT Master Mix (Takara, RR036B). The cDNAs were then used as templates for quantitative RT-PCR analysis with gene-specific primers. Reactions (10 \u00b5l) were performed Luna Universal qPCR Master Mix (New England Biolabs, M3003X). mRNA abundance for each gene was determined relative to GAPDH mRNA using the 2\u2212\u0394\u0394Ct method. The primers are listed in Supplementary file 2. Data were represented as mean \u00b1 standard deviation of measurements. The number of animals or cells per group is provided in the legends. The undetected values in each biological experiment in Figure 3D were removed from the graphs.\n\n### EdU assay\n\n100 \u00b5g of EdU (Click iT EDU cell proliferation kit, C10337) was injected to pregnant females by intraperitoneal injection 4 hr prior to analysis. Lungs from lineage-tracing mice at E14.5 and E18.5 were harvested and prepared for the FCM. Then cells were fixed by 4% PFA in PBS and stained by the anufacture\u2019s protocol.\n\n### nGFP+ iPSC establishment\n\nE14.5 lung tissues of Rosa26nTnG/nTnG mice were harvested in a dissociation buffer described above. The dissociated cells were seeded on a 10-cm dish, and only lung fibroblast survived after 1 week in Mouse Embryonic Fibroblast (MEF) medium (Mori et al., 2019). The fibroblasts were passaged using Accutase (Innovative Cell Technologies, AT104) and seeded on gelatin (Millipore-Sigma, ES006B)-coated 6-well plates with a density of 0.1 million cells per well. Upon cell attachment, Yamanaka reprogramming factors were induced to iPSCs via Sendai virus using CytoTune2.0 (Thermo Fisher, A16517). To establish nGFP+ iPSCs, the Cre plasmid was transfected using Fugene HD transfection reagent (Promega, E2311), then GFP+tdTomato\u2212 live cells were sorted out by SONY MA900, and single clones were expanded.\n\n### Culture of mouse PSC and preparation for CBC donor\n\nFor the lung complementation analysis, we injected following PSCs into blastocysts: nGFP+iPSC (established in this study), PSCCAG-GFP (C57BL/6Nx129S6 background, MTI-GlobalStem: cat. no. GSC-5003). Those PSCs were cultured in a2i/VPA/LIF medium on a feeder, as previously reported (Mori et al., 2019). These PSCs were passaged and seeded in 105 cells in 6-well plate every 2\u20133 days. For the CBC donor cell preparation, PSCs were trypsinized 2 min and resuspended in 4 ml cold DMEM + 10% FBS immediately and filtering the cells with a 40 \u03bcm filter. Cells were centrifuged at 350 rcf, 4\u00b0C, for 3 min, and the supernatant was removed. After being washed with flow buffer containing 0.2% BSA, 1% Glutamax, and 1 \u00b5M Y27632, 1 million cells were resuspended in 100 \u00b5l flow buffer. The following antibodies were added: Epcam-BV421 (1:50), SSEA1-PE (1:20), CD31-APC (1:20), and Zombie Aqua Fixable Viability Kit (1:100). EpcamhighSSEA1highCD31high cells were sorted by SONY MA900 and subsequently prepared for the injection.\n\n### Blastocyst preparation and embryo transfer\n\nBlastocysts were prepared by mating Foxa2Cre/Cre; Fgfr2flox/+, Foxa2Cre/+; Fgfr2flox/+, or ShhCre/+; Fgfr2flox/+ males (all 129 \u00d7 B6 \u00d7 CD-1 background) with superovulated Fgfr2flox/flox; Rosa26tdTomato/tdTomato females (129 \u00d7 B6 \u00d7 CD-1 background). Blastocysts were harvested at E3.5 after superovulation (Mori et al., 2019). Twenty sorted PSCs were injected into each blastocyst. After the PSC injection, blastocysts were cultured in an M2 medium (Cosmobio) for a few hours in a 37\u00b0C, 5% CO2 incubator for recovery. Then, blastocysts were transferred to the uterus of the pseudopregnant foster mother (see Supplementary file 3).\n\n### Respiratory function analysis\n\nRespiratory function was measured in 4 weeks chimeric mutant mice (Foxa2Cre/+; Fgfr2 cKO; RosatdTomato or Foxa2Cre/+; Fgfr2 hetero; RosatdTomato injected with PSCCAG-GFP) using Buxco FinePointe NAM 2-SiteStaion (DSI) with non-invasive technique (Pennock et al., 1979). Values for all measurements represent an average of 5 min monitoring with no rejection index.\n\n### Morphometric analysis\n\nTo determine the relative number of specific cell populations, 5 non-overlapping random fields per mouse were analyzed (\u00d740 magnification) after capturing the images by confocal microscopes (see above). We counted the number of GFP+ cells or tdTomato+ cells co-immunostained with specific antibodies for each field. Hoechst co-staining was used to determine the cell number for each lineage as identified by differentiation markers. Those analyses were processed using ImageJ (NIH).\n\n### Statistical analysis\n\nData analysis was performed using Prism 8. Data acquired by performing biological replicas of two or three independent experiments are presented as the mean \u00b1 SD. Statistical significance was determined using a two-tailed t-test and unpaired one- or two-way analysis of variance with the Tukey post hoc test. *p < 0.05, **p < 0.01, ***p < 0.001, ****p < 0.0001, ns: non-significant.\n",
+      "created_at": "2025-12-04T03:37:34.994602Z"
+    },
+    {
+      "id": "41c19114-db38-4f2c-a0ea-8ab5f95ee560",
+      "submission_id": "eb7a298e-0afc-4c39-b757-44e0b0cdbd1c",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Edward E Morrisey, https://ror.org/00b30xv10 University of Pennsylvania United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.86105.sa0](https://doi.org/10.7554/eLife.86105.sa0)\n\nThis study clearly shows the ability to generate whole lungs using a blastocyst complementation assay. The work elegantly uses a Foxa2 deficient by ground to promote generation of lungs from a Foxa2 replete donor. These findings will spur further interest in xenotransplantation approaches for human organs.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Edward E Morrisey, https://ror.org/00b30xv10 University of Pennsylvania United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.86105.sa1](https://doi.org/10.7554/eLife.86105.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Conditional blastocyst complementation of a defective Foxa2 lineage efficiently promotes generation of the whole lung\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1) Please provide additional data to better reveal the contribution of Foxa2 lineage-labeled Pdgfra+ cells to early mesoderm.\n\n2) Please provide additional data to illustrate the heterogeneity of the cell types in the reported culture systems.\n\n3) Provide quantitation of lineage tracing experiments as outlined by reviewer #2.\n\n4) Provide an additional explanation of the uniqueness of this lung agenesis model as compared to previously reported models i.e. Fgfr2 null.\n\nReviewer #1 (Recommendations for the authors):\n\n1) The authors use the term bona fide lung generative lineage (BFL) throughout the manuscript. However, the data do not support the concept as such, it should be either be removed or rephrased.\n\n2) The authors state (line 147-148) that the \"Foxa2 lineage-labeled Pdgfra+ cells ingress from the primitive streak to the nascent mesoderm regions\", providing the data shown in Figure 1D as evidence. While it seems reasonable to conclude that this is the case, a single static confocal image isn't sufficient data upon which to draw this conclusion.\n\n3) In Figure 3B, the authors highlight \"distal lung bud epithelium\". While the Nkx2.1+ cells do also appear to express SOX9, the majority of SOX9+ cells in the culture do not appear to express SOX9. This should be clarified. Are most of the SOX9-expressing cells in this culture system in fact mesenchyme, which only small clusters of Nkx2.1+/Sox9+ lung epithelium?\n\n4) The authors should more explicitly outline how blastocyst complementation using the current knockout mouse model (Foxa2-Cre; Fgfr2 fl/fl) significantly adds to the existing body of literature where blastocyst complementation has already been performed in mice with a severe lung hypoplasia or agenesis phenotype (Nkx2.1-/-, Fgf10-/-, conditional epithelial-specific ablation of Ctnnb1 or Fgfr2).\n\n5) In Figures 4D and Tables 1-2 blastocyst complementation following conditional loss of Fgfr2 with either the Foxa2-Cre or Shh-Cre are compared, but no statistics are provided. Specifically, the authors claim that in contrast to the Shh-Cre animals, in the Foxa2-Cre mice that \"almost the entire lung epithelial, mesenchymal and endothelial cells populations at E17.5 was composed exclusively of nGFP+iPSCs\". However, the numbers provided don't seem to support this claim. For example, just looking at the mesenchyme Foxa2-Cre (92.6, 90, 89.8, 87.3, 57.6) versus Shh-Cre (71.7, 76.5). While it is true that the mean percentage is slightly higher in the Foxa2 mice, although the mean is in fact slightly higher (83.5% versus 74.1%), this is both not statistically significant and even if it was, a relatively small difference given that it is a major claim being made to support the significance of the findings. These data need to be expanded and clarified, particularly in relation to the previous comment (#4).\n\n6) It is interesting that despite the lung agenesis phenotype, the other organs appear to be relatively spared (Supplemental Figure 2). It would be interesting to explore this further.\n\nReviewer #2 (Recommendations for the authors):\n\nThe conclusions of this paper are mostly well supported by data, but some aspects of data analysis need to be clarified and extended.\n\n1). Figure 4D showed that ~20% of mesenchyme and endothelium cells are still derived from host cells, it will be interesting for authors to investigate whether host cells contribute to certain types of mesenchyme and endothelium cells or random contributed.\n\n2). For figure 1B, the text describes Pdgfrb+ pulmonary mesenchyme, however, the figure show Pdgfra staining.\n\n3). The author should discuss the reason that they did not observe agenesis phenotype in other major internal organs in Foxa2-driven Fgfr2-deficient mice.\n",
+      "created_at": "2025-12-04T03:37:34.994602Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T03:37:34.994602Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T03:37:34.994602Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "8007635b-38b3-4ed1-82cc-33edfd4f2467",
+      "content_id": "6e9c3c90-902a-4f8b-8162-1a62466647a5",
+      "claim_id": "C1",
+      "claim": "Millions suffer from incurable lung diseases, and the donor lung shortage hampers organ transplants.",
+      "claim_type": "EXPLICIT",
+      "source": "Millions suffer from incurable lung diseases, and the donor lung shortage hampers organ transplants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about the clinical context, representing established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:37:34.994602Z"
+    },
+    {
+      "id": "4fdc95b2-75eb-458b-93bc-58bd3362263f",
+      "content_id": "6e9c3c90-902a-4f8b-8162-1a62466647a5",
+      "claim_id": "C2",
+      "claim": "Gastrulating Foxa2 lineage contributed to both lung mesenchyme and epithelium formation.",
+      "claim_type": "EXPLICIT",
+      "source": "Using lineage-tracing mice and human pluripotent stem cell (PSC)-derived lung-directed differentiation, we revealed that gastrulating Foxa2 lineage contributed to both lung mesenchyme and epithelium formation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by lineage-tracing experiments in mice and human PSC differentiation studies presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:37:34.994602Z"
+    },
+    {
+      "id": "6238a214-0714-495b-8cbd-5b174a4f9463",
+      "content_id": "6e9c3c90-902a-4f8b-8162-1a62466647a5",
+      "claim_id": "C3",
+      "claim": "Foxa2 lineage-derived cells in the lung mesenchyme progressively increased and occupied more than half of the mesenchyme niche, including endothelial cells, during lung development.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, Foxa2 lineage-derived cells in the lung mesenchyme progressively increased and occupied more than half of the mesenchyme niche, including endothelial cells, during lung development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by quantitative flow cytometry and immunostaining data showing progressive increase in Foxa2 lineage labeling during development.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:37:34.994602Z"
+    },
+    {
+      "id": "275ed119-38c3-4563-9e21-6f7b5d59ba19",
+      "content_id": "6e9c3c90-902a-4f8b-8162-1a62466647a5",
+      "claim_id": "C4",
+      "claim": "Foxa2 promoter-driven, conditional Fgfr2 gene depletion caused the lung and thymus agenesis phenotype in mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Foxa2 promoter-driven, conditional Fgfr2 gene depletion caused the lung and thymus agenesis phenotype in mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from Foxa2Cre/+; Fgfr2 cKO mice showing lung and thymus agenesis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:37:34.994602Z"
+    },
+    {
+      "id": "773296cf-f79e-4587-a47f-c57e0a83b1d2",
+      "content_id": "6e9c3c90-902a-4f8b-8162-1a62466647a5",
+      "claim_id": "C5",
+      "claim": "Wild-type donor mouse PSCs injected into blastocysts rescued the lung and thymus agenesis phenotype by complementing the Fgfr2-defective niche in the lung epithelium and mesenchyme and thymic epithelium.",
+      "claim_type": "EXPLICIT",
+      "source": "Wild-type donor mouse PSCs injected into their blastocysts rescued this phenotype by complementing the Fgfr2-defective niche in the lung epithelium and mesenchyme and thymic epithelium.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by blastocyst complementation experiments showing rescue of the agenesis phenotype.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:37:34.994602Z"
+    },
+    {
+      "id": "6b7a4f7d-3cfa-429b-8577-afa5b1484f73",
+      "content_id": "6e9c3c90-902a-4f8b-8162-1a62466647a5",
+      "claim_id": "C6",
+      "claim": "Donor cells replaced the entire lung epithelial and robust mesenchymal niche during lung development, efficiently complementing the nearly entire lung niche.",
+      "claim_type": "EXPLICIT",
+      "source": "Donor cell is shown to replace the entire lung epithelial and robust mesenchymal niche during lung development, efficiently complementing the nearly entire lung niche.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by flow cytometry and immunostaining data showing high chimerism in complemented lungs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:37:34.994602Z"
+    },
+    {
+      "id": "7b5a8ab0-df0d-4950-9b2e-b88d8d11bdbe",
+      "content_id": "6e9c3c90-902a-4f8b-8162-1a62466647a5",
+      "claim_id": "C7",
+      "claim": "Rescued mice survived until adulthood with normal lung function.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, those mice survived until adulthood with normal lung function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by respiratory function analysis and survival data of adult chimeric mice.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:37:34.994602Z"
+    },
+    {
+      "id": "31c711ad-7eb0-4d24-bd7d-7f7bef4af4e1",
+      "content_id": "6e9c3c90-902a-4f8b-8162-1a62466647a5",
+      "claim_id": "C8",
+      "claim": "The mammalian lung contains hundreds of airway branches and a thin micron-sized alveolar layer of inflated and well-vascularized alveoli composed of billions of cells from more than 50 different cell types.",
+      "claim_type": "EXPLICIT",
+      "source": "It contains hundreds of airway branches and a thin micron-sized alveolar layer of inflated and well-vascularized alveoli composed of billions of cells from more than 50 different cell types (Crapo et al., 1982; Kotton and Morrisey, 2014; Stone et al., 1992; Travaglini et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature describing lung anatomy and cellular composition.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:37:34.994602Z"
+    },
+    {
+      "id": "7bf4f90c-a01e-4263-9a51-22f98485eb51",
+      "content_id": "6e9c3c90-902a-4f8b-8162-1a62466647a5",
+      "claim_id": "C9",
+      "claim": "Lung epithelial cells are derived from the foregut, definitive endoderm derivatives, classically labeled by Sox17 and Forkhead Box A2 (Foxa2).",
+      "claim_type": "EXPLICIT",
+      "source": "The lung epithelial cells are derived from the foregut, definitive endoderm (DE) derivatives, classically labeled by Sox17 and Forkhead Box A2 (Foxa2) (Green et al., 2011; Huang et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies establishing the endodermal origin of lung epithelium.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:37:34.994602Z"
+    },
+    {
+      "id": "bf573c61-b41a-437a-bf67-ba99ec428597",
+      "content_id": "6e9c3c90-902a-4f8b-8162-1a62466647a5",
+      "claim_id": "C10",
+      "claim": "The entire Nkx2-1+ lung and tracheal epithelial primordium arises from Shh+ definitive endoderm.",
+      "claim_type": "EXPLICIT",
+      "source": "Multiple genetic studies using Sonic Hedgehog (Shh) Cre lineage-tracing mice have also shown that the entire Nkx2-1+ lung and tracheal epithelial primordium arises from Shh+ DE (Cardoso and Kotton, 2008; Christodoulou et al., 2011; Harris et al., 2006; Kadzik and Morrisey, 2012; Tian et al., 2011; Weaver et al., 1999; Xing et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to previous lineage-tracing studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:37:34.994602Z"
+    },
+    {
+      "id": "4e6370b6-b722-400a-8930-37acc7334892",
+      "content_id": "6e9c3c90-902a-4f8b-8162-1a62466647a5",
+      "claim_id": "C11",
+      "claim": "The lung mesenchyme primordium is derived from Wnt2+ Isl1+ cardiopulmonary progenitors (CPP).",
+      "claim_type": "EXPLICIT",
+      "source": "The lung mesenchyme primordium is derived from Wnt2+ Isl1+ cardiopulmonary progenitors (CPP) (Peng et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a previous study identifying CPP as the source of lung mesenchyme.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:37:34.994602Z"
+    },
+    {
+      "id": "b9ae3059-bb84-4765-8853-e3bc079cda82",
+      "content_id": "6e9c3c90-902a-4f8b-8162-1a62466647a5",
+      "claim_id": "C12",
+      "claim": "CPP is the derivative of Osr1+ Nkx6-1+Barx1\u2212 Wnt4low foregut lung mesoderm that arises from lateral plate mesoderm (LPM).",
+      "claim_type": "EXPLICIT",
+      "source": "CPP is the derivative of Osr1+ Nkx6-1+Barx1\u2212 Wnt4low foregut lung mesoderm that arises from lateral plate mesoderm (LPM) (Han et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a previous study tracing the developmental origin of CPP.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:37:34.994602Z"
+    },
+    {
+      "id": "afde76b5-481d-4b10-a707-aa357795acfd",
+      "content_id": "6e9c3c90-902a-4f8b-8162-1a62466647a5",
+      "claim_id": "C13",
+      "claim": "Mesendoderm is a bipotent transitional state between the primitive streak and nascent mesoderm labeled by Mixl1, Pdgfr\u03b1, and Brachyury (T) during gastrulation that can give rise to both definitive endoderm and mesoderm.",
+      "claim_type": "EXPLICIT",
+      "source": "Mesendoderm is a bipotent transitional state between the PS and nascent mesoderm labeled by Mixl1, Pdgfr\u03b1, and Brachyury (T) during gastrulation that can give rise to both DE and mesoderm (Hart et al., 2002; Tada et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies characterizing mesendoderm.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:37:34.994602Z"
+    },
+    {
+      "id": "78700129-11aa-4d39-8685-332fadd7edd1",
+      "content_id": "6e9c3c90-902a-4f8b-8162-1a62466647a5",
+      "claim_id": "C14",
+      "claim": "Pdgfr\u03b1 is expressed in the epiblast-derived mesendoderm, the primitive endoderm (PrE), and its extra-embryonic endoderm derivatives, such as parietal and visceral endoderm, around E5.5\u2013E7.5.",
+      "claim_type": "EXPLICIT",
+      "source": "Pdgfr\u03b1 is expressed in the epiblast-derived mesendoderm, the primitive endoderm (PrE), and its extra-embryonic endoderm derivatives, such as parietal and visceral endoderm, around E5.5\u2013E7.5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about known expression patterns of Pdgfr\u03b1 during early development.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:37:34.994602Z"
+    },
+    {
+      "id": "c9530272-9954-48b0-8756-e24e7a9fe72a",
+      "content_id": "6e9c3c90-902a-4f8b-8162-1a62466647a5",
+      "claim_id": "C15",
+      "claim": "Foxa2 plays a pivotal role in alveolarization and airway goblet cell expansion.",
+      "claim_type": "EXPLICIT",
+      "source": "Foxa2 plays a pivotal role in alveolarization and airway goblet cell expansion (Wan et al., 2004), while there was a significant knowledge gap regarding Foxa2 lineage during lung development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a previous study on Foxa2 function.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:37:34.994602Z"
+    },
+    {
+      "id": "67ab6bb6-3e52-4df0-b320-e74e80d8f5f7",
+      "content_id": "6e9c3c90-902a-4f8b-8162-1a62466647a5",
+      "claim_id": "C17",
+      "claim": "E12.5 morphometric analyses showed an extremely high proportion of lung mesenchyme labeling with tdTomato in PdgfraCreERT2/+; RosatdTomato/+ mice.",
+      "claim_type": "EXPLICIT",
+      "source": "E12.5 morphometric analyses showed an extremely high proportion of lung mesenchyme labeling with tdTomato (Figure 1B, C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by morphometric analysis data shown in Figure 1B and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:37:34.994602Z"
+    },
+    {
+      "id": "bafcab22-d6bb-454e-87c2-62a7d984aab2",
+      "content_id": "6e9c3c90-902a-4f8b-8162-1a62466647a5",
+      "claim_id": "C18",
+      "claim": "Among three embryos at E12.5, two showed 100% tdTomato labeling for lung mesenchyme markers, while one showed about 60% labeling in the mesenchyme.",
+      "claim_type": "EXPLICIT",
+      "source": "Among three embryos at E12.5, two showed 100% tdTomato labeling for lung mesenchyme markers, while one showed about 60% labeling in the mesenchyme (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by quantitative data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:37:34.994602Z"
+    },
+    {
+      "id": "bf4b663e-a972-4bfd-a132-ea9f2c86018c",
+      "content_id": "6e9c3c90-902a-4f8b-8162-1a62466647a5",
+      "claim_id": "C19",
+      "claim": "Sma+ airway smooth muscle cells (86.9% \u00b1 22.7), Pdgfr\u03b1+ lung mesenchyme (78.7% \u00b1 36.9), and VE-cadherin+ endothelium (82.5% \u00b1 30.4) were labeled with tdTomato in PdgfraCreERT2/+; RosatdTomato/+ mice at E12.5.",
+      "claim_type": "EXPLICIT",
+      "source": "Sma+ airway smooth muscle cells (86.9% \u00b1 22.7), Pdgfr\u03b1+ lung mesenchyme (78.7% \u00b1 36.9), and VE-cadherin+ endothelium (82.5% \u00b1 30.4) were labeled with tdTomato (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by quantitative morphometric data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:37:34.994602Z"
+    },
+    {
+      "id": "89e27f6d-947d-4896-b5f0-633b1b2c6621",
+      "content_id": "6e9c3c90-902a-4f8b-8162-1a62466647a5",
+      "claim_id": "C20",
+      "claim": "The Pdgfr\u03b1 lineage labels 20.5% \u00b1 18.3 of the lung epithelium.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the Pdgfr\u03b1 lineage labels 20.5% \u00b1 18.3 the lung epithelium (Figure 1B, arrows), suggesting that the contribution of the Pdgfr\u03b1 lineage to the lung endoderm is limited.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by quantitative data from lineage-tracing experiments shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:37:34.994602Z"
+    },
+    {
+      "id": "929ace3a-1246-4da3-bc5c-bce7d305e1e0",
+      "content_id": "6e9c3c90-902a-4f8b-8162-1a62466647a5",
+      "claim_id": "C21",
+      "claim": "87.3% \u00b1 5.26 of Mixl1+ cells within the primitive streak region expressed Pdgfr\u03b1 protein.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that Mixl1+ within the PS region (Figure 1D, yellow dotted line), 87.3% \u00b1 5.26 expressed Pdgfr\u03b1 protein (Figure 1E, F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunostaining and quantification data shown in Figures 1D, E, and F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:37:34.994602Z"
+    },
+    {
+      "id": "395c0d8a-2c3e-465e-9233-52f8d582dd62",
+      "content_id": "6e9c3c90-902a-4f8b-8162-1a62466647a5",
+      "claim_id": "C22",
+      "claim": "Foxa2 lineage-driven tdTomato labeled 27.5% \u00b1 1.15 of mid-streak primitive streak and 18.6% \u00b1 8.93 in the Pdgfr\u03b1+ mesendoderm of primitive streak around mid-streak-stage embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "those Foxa2 lineage-driven tdTomato labeled 27.5% \u00b1 1.15 of mid-streak PS and 18.6% \u00b1 8.93 in the Pdgfr\u03b1+ mesendoderm of PS around mid-streak-stage embryos (Figure 1F, G, arrows).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by quantitative data from Foxa2 lineage-tracing experiments shown in Figures 1F and G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:37:34.994602Z"
+    },
+    {
+      "id": "bc174de6-8f7c-465f-a737-2fd25b833f65",
+      "content_id": "6e9c3c90-902a-4f8b-8162-1a62466647a5",
+      "claim_id": "C23",
+      "claim": "Foxa2-lineage labeled the entire lung epithelium and most of the lung mesenchyme at E16.5.",
+      "claim_type": "EXPLICIT",
+      "source": "Using the Foxa2-lineage-tracing mice, we found from immunostaining that the Foxa2-lineage labeled the entire lung epithelium and most of the lung mesenchyme at E16.5 (Figure 2A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunostaining data shown in Figures 2A-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:37:34.994602Z"
+    },
+    {
+      "id": "3d65e809-2af6-4fa1-bdff-8538d18e1918",
+      "content_id": "6e9c3c90-902a-4f8b-8162-1a62466647a5",
+      "claim_id": "C24",
+      "claim": "Foxa2-lineage labeled almost the entire lung epithelium (93.3% \u00b1 2.00) and about 20% of lung mesenchyme (24.2% \u00b1 5.51), including endothelial cells (16.8% \u00b1 5.12) at E14.5.",
+      "claim_type": "EXPLICIT",
+      "source": "Quantitative analyses by flow cytometry (FCM) in the E14.5 developing lungs of Foxa2-lineage-tracing mice showed that Foxa2-lineage labeled almost the entire lung epithelium (93.3% \u00b1 2.00) and about 20% of lung mesenchyme (24.2% \u00b1 5.51), including endothelial cells (16.8% \u00b1 5.12) (Figure 2D, E)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by flow cytometry data shown in Figures 2D and E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:37:34.994602Z"
+    },
+    {
+      "id": "bb5574d0-8486-4e74-b85d-30e1d80a7d9f",
+      "content_id": "6e9c3c90-902a-4f8b-8162-1a62466647a5",
+      "claim_id": "C25",
+      "claim": "Foxa2-lineage-labeled cells increased dramatically throughout lung development.",
+      "claim_type": "EXPLICIT",
+      "source": "Contrary to expectations, Foxa2-lineage-labeled cells increased dramatically throughout lung development (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by flow cytometry data across developmental time points shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:37:34.994602Z"
+    },
+    {
+      "id": "9d464c7f-ef26-4963-a7a2-11ff313c7872",
+      "content_id": "6e9c3c90-902a-4f8b-8162-1a62466647a5",
+      "claim_id": "C26",
+      "claim": "In adulthood, the Foxa2-lineage labeling reached about 99.97% \u00b1 0.06 in lung epithelium, 51.3% \u00b1 1.72 in lung mesenchyme, and 60.0% \u00b1 8.44 in lung endothelial cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In adulthood, the Foxa2-lineage labeling reached about 99.97% \u00b1 0.06 in lung epithelium, 51.3% \u00b1 1.72 in lung mesenchyme, and 60.0% \u00b1 8.44 in lung endothelial cells, with more than twofold change in the lung endothelium, compared with E14.5 (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by flow cytometry data from adult mice shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:37:34.994602Z"
+    },
+    {
+      "id": "c0991938-6900-4b6a-b65a-16c70f5bb2e8",
+      "content_id": "6e9c3c90-902a-4f8b-8162-1a62466647a5",
+      "claim_id": "C27",
+      "claim": "Foxa2 lineage marked about 30\u201340% of E14.5 multiple cell types of lung mesenchyme such as Sma+ smooth muscle cells (31.9% \u00b1 9.16), VE-cadherin+ (39.3% \u00b1 12.5), or Pecam1+ (36.9% \u00b1 10.4) endothelial cells, Pdgfr\u03b2+ pericytes of the pulmonary arteries and pulmonary veins (41.4% \u00b1 10.5), and WT1+ mesothelial cells (31.9% \u00b1 23.7).",
+      "claim_type": "EXPLICIT",
+      "source": "Foxa2 lineage marked about 30\u201340% of E14.5 multiple cell types of lung mesenchyme such as Sma+ smooth muscle cells (31.9% \u00b1 9.16), VE-cadherin+ (39.3% \u00b1 12.5), or Pecam1+ (36.9% \u00b1 10.4) endothelial cells, Pdgfr\u03b2+ pericytes of the pulmonary arteries and pulmonary veins (41.4% \u00b1 10.5), and WT1+ mesothelial cells (31.9% \u00b1 23.7) (Figure 2F, G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by morphometric analysis data shown in Figures 2F and G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:37:34.994602Z"
+    },
+    {
+      "id": "626e835f-bd58-4a87-beef-991222ee01d9",
+      "content_id": "6e9c3c90-902a-4f8b-8162-1a62466647a5",
+      "claim_id": "C28",
+      "claim": "No clear Foxa2 protein level expression was observed in the mesenchyme of the embryonic lungs at E14.5 and E18.5.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, no clear Foxa2 protein level expression was observed in the mesenchyme of the embryonic lungs at E14.5 and E18.5 (Figure 2\u2014figure supplement 1A), consistent with previously reported Foxa2 protein expression patterns (Wan et al., 2004).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunostaining data shown in Figure 2\u2014figure supplement 1A and citation to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:37:34.994602Z"
+    },
+    {
+      "id": "ed8a6d4d-b201-4dcb-ba37-145842d01227",
+      "content_id": "6e9c3c90-902a-4f8b-8162-1a62466647a5",
+      "claim_id": "C29",
+      "claim": "The LungMAP deposited single-cell RNA-seq database analysis showed a sporadic Foxa2 transcriptional expression pattern in developing lung mesenchyme, particularly in proliferating endothelium, on E15.5 and E17.5.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the LungMAP deposited single-cell RNA-seq database analysis showed a sporadic Foxa2 transcriptional expression pattern in developing lung mesenchyme, particularly in proliferating endothelium, on E15.5 and E17.5 (Figure 2\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by analysis of publicly available single-cell RNA-seq data shown in Figure 2\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:37:34.994602Z"
+    },
+    {
+      "id": "125a16fa-eedc-437e-b33d-5a1a131b0405",
+      "content_id": "6e9c3c90-902a-4f8b-8162-1a62466647a5",
+      "claim_id": "C30",
+      "claim": "Foxa2 transcriptional expression in lung mesenchyme was confirmed by in situ hybridization analysis on E18.5.",
+      "claim_type": "EXPLICIT",
+      "source": "We confirmed Foxa2 transcriptional expression in lung mesenchyme by in situ hybridization analysis on E18.5 (Figure 2\u2014figure supplement 1C, D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by in situ hybridization data shown in Figure 2\u2014figure supplement 1C and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:37:34.994602Z"
+    },
+    {
+      "id": "e3793d83-c768-4d75-9810-93149c876ed9",
+      "content_id": "6e9c3c90-902a-4f8b-8162-1a62466647a5",
+      "claim_id": "C31",
+      "claim": "A slight increase in the relative expression of Foxa2 was observed in the tdTomato+ fraction of embryonic lung mesenchyme at E18.5.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed a slight increase in the relative expression of Foxa2 in the tdTomato+ fraction of embryonic lung mesenchyme, most likely contributing to the labeling in the Foxa2-lineage-tracing mice (Figure 2\u2014figure supplement 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by qPCR data from sorted cells shown in Figure 2\u2014figure supplement 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:37:34.994602Z"
+    },
+    {
+      "id": "a9fa9081-0965-4c27-9931-8ec8e3291cee",
+      "content_id": "6e9c3c90-902a-4f8b-8162-1a62466647a5",
+      "claim_id": "C32",
+      "claim": "tdTomato+ endothelial cells were found to have a slightly higher proliferative capacity than tdTomato\u2212 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, tdTomato+ endothelial cells were found to have a slightly higher proliferative capacity than tdTomato\u2212 cells (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by EdU labeling data shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:37:34.994602Z"
+    },
+    {
+      "id": "5d547ee0-583c-43e2-8cb9-a1da5fe54ec3",
+      "content_id": "6e9c3c90-902a-4f8b-8162-1a62466647a5",
+      "claim_id": "C33",
+      "claim": "With the optimized protocol, various hiPSC lines efficiently induced a lung bud-like appearance, indicated by NKX2-1 expression in lung epithelial cells.",
+      "claim_type": "EXPLICIT",
+      "source": "With this optimized protocol, various hiPSC lines efficiently induced a lung bud-like appearance, indicated by NKX2-1 expression in lung epithelial cells (Gotoh et al., 2014; Konishi et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the differentiation protocol results and citations to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:37:34.994602Z"
+    },
+    {
+      "id": "8ec4780e-8fed-4ab9-985c-96dd373d4baf",
+      "content_id": "6e9c3c90-902a-4f8b-8162-1a62466647a5",
+      "claim_id": "C34",
+      "claim": "On day 6, NKX2-1+ cells emerged in bud structure.",
+      "claim_type": "EXPLICIT",
+      "source": "On day 6, NKX2-1+ cells emerged in bud structure (Figure 3B, asterisk, and S2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunostaining data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:37:34.994602Z"
+    },
+    {
+      "id": "e77c7771-44d4-4d16-b51f-6f33898205dc",
+      "content_id": "6e9c3c90-902a-4f8b-8162-1a62466647a5",
+      "claim_id": "C35",
+      "claim": "On day 10, TBX4+ lung mesenchyme arose and surrounded the NKX2-1+SOX9+ lung epithelium.",
+      "claim_type": "EXPLICIT",
+      "source": "On day 10, TBX4+ lung mesenchyme arose and surrounded the NKX2-1+SOX9+ lung epithelium (Figure 3B, C, Figure 3\u2014figure supplement 1A, B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunostaining data shown in Figures 3B, C, and Figure 3\u2014figure supplement 1A, B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:37:34.994602Z"
+    },
+    {
+      "id": "1ed0a188-e470-495c-9722-191ba0e96657",
+      "content_id": "6e9c3c90-902a-4f8b-8162-1a62466647a5",
+      "claim_id": "C36",
+      "claim": "The budding morphology appeared 2.8% \u00b1 0.90 per field on day 6 and progressively increased its proportion and reached around 57.4% \u00b1 9.10.",
+      "claim_type": "EXPLICIT",
+      "source": "The budding morphology appeared 2.8% \u00b10 .90 per field on day 6 and progressively increased its proportion and reached around 57.4% \u00b1 9.10.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by morphometric analysis of the differentiation cultures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:37:34.994602Z"
+    },
+    {
+      "id": "f00ae54f-e4e3-4bb9-923b-f4afbe788048",
+      "content_id": "6e9c3c90-902a-4f8b-8162-1a62466647a5",
+      "claim_id": "C37",
+      "claim": "NKX2-1 was initially turned on 44.5% \u00b1 6.41 at day 6, but the proportion progressively increased, and NKX2-1 was positive on the 95.9% \u00b1 3.98 of day 15 budding structures.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the developing bud structures, NKX2-1 was initially turned on 44.5% \u00b1 6.41 at day 6, but the proportion progressively increased, and NKX2-1 was positive on the 95.9% \u00b1 3.98 of day 15 budding structures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by morphometric analysis of NKX2-1 expression over time.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:37:34.994602Z"
+    },
+    {
+      "id": "245e0b53-b93e-4ef6-85bc-a3f95583ee00",
+      "content_id": "6e9c3c90-902a-4f8b-8162-1a62466647a5",
+      "claim_id": "C38",
+      "claim": "SOX9 expression was found in 27.9% \u00b1 13.1 of NKX2-1+ lung bud cells on day 8, but it dramatically increased and reached nearly 100% positive on day 15 (98.4% \u00b1 1.98).",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we found SOX9 expression in the 27.9% \u00b1 13.1 of NKX2-1+ lung bud cells on day 8, but it dramatically increased and reached nearly 100% positive on day 15 (98.4% \u00b1 1.98).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by morphometric analysis of SOX9 expression over time.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:37:34.994602Z"
+    },
+    {
+      "id": "05e0dba9-9b7a-4325-a43f-fdeab3be4a22",
+      "content_id": "6e9c3c90-902a-4f8b-8162-1a62466647a5",
+      "claim_id": "C39",
+      "claim": "NKX2-1 precedes the expression of SOX9.",
+      "claim_type": "IMPLICIT",
+      "source": "This result indicated that NKX2-1 precedes the expression of SOX9.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the temporal expression patterns of NKX2-1 and SOX9 during differentiation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:37:34.994602Z"
+    },
+    {
+      "id": "071f378d-212c-46ef-a959-ec11ffa88440",
+      "content_id": "6e9c3c90-902a-4f8b-8162-1a62466647a5",
+      "claim_id": "C40",
+      "claim": "The proportion of TBX4+ cells progressively increased in non-budding areas during the differentiation (48.2% \u00b1 3.17).",
+      "claim_type": "EXPLICIT",
+      "source": "The proportion of TBX4+ cells progressively increased in non-budding areas during the differentiation (48.2% \u00b1 3.17).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by morphometric analysis of TBX4 expression.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:37:34.994602Z"
+    },
+    {
+      "id": "56cae68e-6a93-472a-b407-de5aefc4daaa",
+      "content_id": "6e9c3c90-902a-4f8b-8162-1a62466647a5",
+      "claim_id": "C41",
+      "claim": "12 hr after the Activin induction, more than 60% of the EPCAM+PDGFR\u03b1\u2212 primitive streak first turned on MIXL1, the mesendoderm marker.",
+      "claim_type": "EXPLICIT",
+      "source": "Briefly, 12 hr after the Activin induction, more than 60% of the EPCAM+PDGFR\u03b1\u2212 PS first turned on MIXL1, the mesendoderm marker (Hart et al., 2002; Tada et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by flow cytometry kinetics data during differentiation and citations to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:37:34.994602Z"
+    },
+    {
+      "id": "043bae43-3f0e-4373-b408-e563af543116",
+      "content_id": "6e9c3c90-902a-4f8b-8162-1a62466647a5",
+      "claim_id": "C42",
+      "claim": "After 36 hr, more than 90% of MIXL1+EPCAM+ mesoderm cells expressed PDGFR\u03b1.",
+      "claim_type": "EXPLICIT",
+      "source": "After 36 hr, more than 90% of MIXL1+EPCAM+ mesoderm cells expressed PDGFR\u03b1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by flow cytometry kinetics data during differentiation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:37:34.994602Z"
+    },
+    {
+      "id": "9b33940a-1da0-41a1-af9d-cd7eb4900047",
+      "content_id": "6e9c3c90-902a-4f8b-8162-1a62466647a5",
+      "claim_id": "C43",
+      "claim": "Expression of FOXA2 appeared in some of those mesoderm cells at 36 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "At the same time, expression of FOXA2 appeared in some of those mesoderm cells (Figure 3E, F, asterisk).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by flow cytometry data shown in Figures 3E and F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:37:34.994602Z"
+    },
+    {
+      "id": "4e310241-1036-4357-a241-4ac21d7b37cd",
+      "content_id": "6e9c3c90-902a-4f8b-8162-1a62466647a5",
+      "claim_id": "C44",
+      "claim": "72 hr later, mutual FOXA2 induction appeared when EPCAM+FOXA2+ definitive endoderm and EPCAM\u2212FOXA2\u2212 lateral plate mesoderm were presented.",
+      "claim_type": "EXPLICIT",
+      "source": "Thereafter, PDGFR\u03b1 expression decreased, and 72 hr later, mutual FOXA2 induction appeared when EPCAM+FOXA2+ DE and EPCAM\u2212FOXA2\u2212 LPM were presented (Figure 3G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by flow cytometry data shown in Figure 3G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:37:34.994602Z"
+    },
+    {
+      "id": "b944c3b6-68ec-42b1-8454-b15855efe7cb",
+      "content_id": "6e9c3c90-902a-4f8b-8162-1a62466647a5",
+      "claim_id": "C45",
+      "claim": "PDGFR\u03b1+ and FOXA2+ lineage are redundant but distinct stages of mesendoderm development.",
+      "claim_type": "IMPLICIT",
+      "source": "These results suggest that PDGFR\u03b1+ and FOXA2+ lineage are redundant but distinct stages of mesendoderm development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the temporal expression patterns of PDGFR\u03b1 and FOXA2 during differentiation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:37:34.994602Z"
+    },
+    {
+      "id": "07f49777-1f70-4746-a961-1439dc95063b",
+      "content_id": "6e9c3c90-902a-4f8b-8162-1a62466647a5",
+      "claim_id": "C46",
+      "claim": "Mesendoderm is the lung precursor niche, with short-time window, contributing to both endodermal and mesodermal-derived lungs, evolutionally conserved across mouse development and human-directed differentiation.",
+      "claim_type": "IMPLICIT",
+      "source": "It indicates that mesendoderm is the lung precursor niche, with short-time window, contributing to both endodermal and mesodermal-derived lungs, evolutionally conserved across mouse development and human-directed differentiation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the combined results of mouse lineage tracing and human iPSC differentiation experiments.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:37:34.994602Z"
+    },
+    {
+      "id": "a2ea545a-132a-4e29-9c0a-983c78251f1f",
+      "content_id": "6e9c3c90-902a-4f8b-8162-1a62466647a5",
+      "claim_id": "C47",
+      "claim": "Systemic knockout mice of Fgf10 or Fgfr2 exhibit a phenotype of lung agenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Mitotic signaling via Fgfr2 is required for both lung epithelium and mesenchyme, and systemic knockout mice of Fgf10 or Fgfr2 exhibit a phenotype of lung agenesis (Arman et al., 1999; De Langhe et al., 2006; De Moerlooze et al., 2000; Sekine et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies on Fgf10 and Fgfr2 knockout mice.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:37:34.994602Z"
+    },
+    {
+      "id": "65c55596-a592-4313-a915-f834764541ef",
+      "content_id": "6e9c3c90-902a-4f8b-8162-1a62466647a5",
+      "claim_id": "C48",
+      "claim": "Foxa2Cre/+; Fgfr2 cKO mice exhibited a lung agenesis phenotype and died at birth by respiratory distress.",
+      "claim_type": "EXPLICIT",
+      "source": "We did not observe differences in the apparent gross morphology of embryos in Foxa2Cre/+; Fgfr2 cKO mice however, they exhibited a lung agenesis phenotype and died at birth by respiratory distress (Figure 4\u2014figure supplement 1A, B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by phenotypic analysis of Foxa2Cre/+; Fgfr2 cKO mice shown in Figure 4\u2014figure supplement 1A, B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:37:34.994602Z"
+    },
+    {
+      "id": "6c501ffa-a5d9-48f9-a4a8-e2974a5bf219",
+      "content_id": "6e9c3c90-902a-4f8b-8162-1a62466647a5",
+      "claim_id": "C49",
+      "claim": "Foxa2Cre/+; Fgfr2 cKO mice did not show agenesis phenotype in other major endodermal organs, such as the liver, esophagus, pancreas, and intestine.",
+      "claim_type": "EXPLICIT",
+      "source": "We did not observe agenesis phenotype in other major endodermal organs, such as the liver, esophagus, pancreas, and intestine (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by histological analysis shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:37:34.994602Z"
+    },
+    {
+      "id": "79526798-1f97-41f1-9029-18ac44a49975",
+      "content_id": "6e9c3c90-902a-4f8b-8162-1a62466647a5",
+      "claim_id": "C50",
+      "claim": "Kidney, glandular stomach, hair follicles, tooth bud, and limbs were preserved in Foxa2Cre/+; Fgfr2 cKO mice.",
+      "claim_type": "EXPLICIT",
+      "source": "We also confirmed that kidney, glandular stomach, hair follicles, tooth bud, and limbs were preserved, which is known to form organ defective phenotype in the Fgfr2 systemic knockout (Figure 4\u2014figure supplement 1; Arman et al., 1999; De Langhe et al., 2006; De Moerlooze et al., 2000; Sekine et al., 1999)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by histological analysis shown in Figure 4\u2014figure supplement 1 and citations to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:37:34.994602Z"
+    },
+    {
+      "id": "e492c239-fe2c-4b4c-b29d-af6074241b86",
+      "content_id": "6e9c3c90-902a-4f8b-8162-1a62466647a5",
+      "claim_id": "C51",
+      "claim": "Thymus was found to be the agenesis phenotype in the Foxa2-driven Fgfr2 knockout mice.",
+      "claim_type": "EXPLICIT",
+      "source": "while thymus was found to be the agenesis phenotype in the Foxa2-driven Fgfr2 knockout mice (Figure 4\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by phenotypic analysis shown in Figure 4\u2014figure supplement 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:37:34.994602Z"
+    },
+    {
+      "id": "4f869438-93a1-4297-9b13-4a6b436c8e94",
+      "content_id": "6e9c3c90-902a-4f8b-8162-1a62466647a5",
+      "claim_id": "C52",
+      "claim": "Donor nGFP+iPSCs generated whole lungs in Foxa2Cre/+; Fgfr2 cKO mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, donor nGFP+iPSCs generated whole lungs in Foxa2Cre/+; Fgfr2 cKO mice, but general chimerism in other organs were diverse (Figure 4B, Figure 4\u2014figure supplement 3A, and Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by blastocyst complementation experiments shown in Figure 4B, Figure 4\u2014figure supplement 3A, and Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:37:34.994602Z"
+    },
+    {
+      "id": "e5aba305-8198-4652-999c-273a45b11727",
+      "content_id": "6e9c3c90-902a-4f8b-8162-1a62466647a5",
+      "claim_id": "C53",
+      "claim": "Almost the entire lung epithelial, mesenchymal, and endothelial cell population at E17.5 was composed exclusively of nGFP+iPSCs in complemented Foxa2Cre/+; Fgfr2 cKO mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, almost the entire lung epithelial, mesenchymal, and endothelial cell population at E17.5 was composed exclusively of nGFP+iPSCs (Figure 4C\u2013E and Figure 4\u2014figure supplement 3B\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by flow cytometry and immunostaining data shown in Figures 4C-E and Figure 4\u2014figure supplement 3B-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:37:34.994602Z"
+    },
+    {
+      "id": "9e3fafde-69b1-499c-89b9-84bc9be6b790",
+      "content_id": "6e9c3c90-902a-4f8b-8162-1a62466647a5",
+      "claim_id": "C54",
+      "claim": "Wild-type, Shh-driven heterozygous, or knockout mice showed about 6.48\u201392.3% chimerism in the mesenchymal and endothelial lineages of the lung.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, wild-type, Shh-driven heterozygous, or knockout mice showed about 6.48\u201392.3% chimerism in the mesenchymal and endothelial lineages of the lung (Figure 4E, Figure 4\u2014figure supplement 3C, and Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by flow cytometry data shown in Figure 4E, Figure 4\u2014figure supplement 3C, and Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:37:34.994602Z"
+    },
+    {
+      "id": "1dcb3fab-5145-4bb0-bd91-8eccb7cad8d3",
+      "content_id": "6e9c3c90-902a-4f8b-8162-1a62466647a5",
+      "claim_id": "C55",
+      "claim": "Sma+ lung airway mesenchyme (80.5 \u00b1 12.0% vs 46.3 \u00b1 16.6%, p = 0.0057), Pecam+ capillary (87.5 \u00b1 7.5% vs 62.7 \u00b1 15.9%, p = 0.0134), and NG2+ pericyte (80.6 \u00b1 13.6% vs 57.5 \u00b1 10.6%, p = 0.0171) showed higher chimerism in the complemented lungs of Foxa2Cre/+; Fgfr2 cKO mice than that of ShhCre/+; Fgfr2 cKO mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, Sma+ lung airway mesenchyme (80.5 \u00b1 12.0% vs 46.3 \u00b1 16.6%, p = 0.0057), Pecam+ capillary (87.5 \u00b1 7.5% vs 62.7 \u00b1 15.9%, p = 0.0134), and NG2+ pericyte (80.6 \u00b1 13.6% vs 57.5 \u00b1 10.6%, p = 0.0171) showed higher chimerism in the complemented lungs of Foxa2Cre/+; Fgfr2 cKO mice (Figure 4F\u2013H, Figure 4\u2014figure supplement 4) than that of ShhCre/+; Fgfr2 cKO mice.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by morphometric analysis comparing Foxa2 and Shh-driven complementation shown in Figures 4F-H and Figure 4\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:37:34.994602Z"
+    },
+    {
+      "id": "0ffc45e4-206f-410e-91a7-c0ca58f9083c",
+      "content_id": "6e9c3c90-902a-4f8b-8162-1a62466647a5",
+      "claim_id": "C56",
+      "claim": "The rescued trachea of Foxa2Cre/+; Fgfr2 cKO mice exhibited higher chimerism in epithelium than that of ShhCre/+; Fgfr2 cKO mice (95.4 \u00b1 5.72% vs 70.82 \u00b1 18.6%, p = 0.0223).",
+      "claim_type": "EXPLICIT",
+      "source": "Given that the Foxa2Cre/+; Fgfr2 cKO mice showed shorter truncated trachea than ShhCre/+; Fgfr2 cKO mice (Figure 4\u2014figure supplement 5A, B), the rescued trachea of Foxa2Cre/+; Fgfr2 cKO mice exhibited higher chimerism in epithelium than that of ShhCre/+; Fgfr2 cKO mice (95.4 \u00b1 5.72% vs 70.82 \u00b1 18.6%, p = 0 .0223) (Figure 4\u2014figure supplement 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by morphometric analysis of tracheal chimerism shown in Figure 4\u2014figure supplement 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:37:34.994602Z"
+    },
+    {
+      "id": "8015168e-5515-4a8c-a9e0-85f9078dc772",
+      "content_id": "6e9c3c90-902a-4f8b-8162-1a62466647a5",
+      "claim_id": "C57",
+      "claim": "The PSC injection completely rescued both the thymus and lung aplasia phenotype, and lungs and thymus were co-generated in the Foxa2Cre/+; Fgfr2 cKO mice.",
+      "claim_type": "EXPLICIT",
+      "source": "This result suggests that the PSC injection completely rescued both the thymus and lung aplasia phenotype, and lungs and thymus were co-generated in the Foxa2Cre/+; Fgfr2 cKO mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the rescue of both lung and thymus agenesis phenotypes in complemented mice.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:37:34.994602Z"
+    },
+    {
+      "id": "8a88670d-57ed-41b6-b58d-4d78f5f70f24",
+      "content_id": "6e9c3c90-902a-4f8b-8162-1a62466647a5",
+      "claim_id": "C58",
+      "claim": "The chimerism in the Epcam+ thymic epithelium showed higher in Foxa2Cre/+; Fgfr2 cKO mice than ShhCre/+; Fgfr2 cKO mice (92.4 \u00b1 5.10% vs 28.7 \u00b1 25.4%, p = 0.0006).",
+      "claim_type": "EXPLICIT",
+      "source": "The chimerism in the Epcam+ thymic epithelium showed higher in Foxa2Cre/+; Fgfr2 cKO mice than ShhCre/+; Fgfr2 cKO mice (92.4 \u00b1 5.10% vs 28.7 \u00b1 25.4%, p = 0 .0006) (Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by flow cytometry analysis of thymic epithelium shown in Figure 4\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:37:34.994602Z"
+    },
+    {
+      "id": "b024cfc5-4755-4ea4-a4b6-7ae3f8ee0b3c",
+      "content_id": "6e9c3c90-902a-4f8b-8162-1a62466647a5",
+      "claim_id": "C59",
+      "claim": "Fgfr2 is critical for lung epithelial cell development but also important for lung mesenchyme proliferation.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous reports described that Fgfr2 is critical for lung epithelial cell development but also important for lung mesenchyme proliferation (Yin et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a previous study on Fgfr2 function.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:37:34.994602Z"
+    },
+    {
+      "id": "d9d57c36-da79-453a-840a-1fc58fa2b22c",
+      "content_id": "6e9c3c90-902a-4f8b-8162-1a62466647a5",
+      "claim_id": "C60",
+      "claim": "The percentage of Ki67+ proliferating cells was significantly higher in GFP+ donor cells compared to tdTomato+ host cells at E14.5.",
+      "claim_type": "EXPLICIT",
+      "source": "Although tdTomato+ Fgfr2 knockout mesenchymal cells remained in early lung development at E14.5 (Figure 4I), the percentage of Ki67+ proliferating cells was significantly higher in GFP+ donor cells compared to tdTomato+ host cells (Figure 4J, K).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by Ki67 proliferation analysis shown in Figures 4I-K.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:37:34.994602Z"
+    },
+    {
+      "id": "66b3faa7-9ca2-44ff-bdf6-23c0ac9f17b7",
+      "content_id": "6e9c3c90-902a-4f8b-8162-1a62466647a5",
+      "claim_id": "C61",
+      "claim": "Foxa2Cre/+; Fgfr2 cKO, PSCCAG-GFP rescued mice survived at 4 weeks postnatal days without any difference in their gross appearance and behavior from the littermate control.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that Foxa2Cre/+; Fgfr2 cKO, PSCCAG-GFP rescued mice survived at 4 weeks postnatal days without any difference in their gross appearance and behavior from the littermate control; Foxa2Cre/+; Fgfr2 hetero, PSCCAG-GFP mice (Figure 5A, asterisks).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by survival and phenotypic analysis of adult rescued mice shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:37:34.994602Z"
+    },
+    {
+      "id": "9bc38698-f0ed-425d-b1ac-29676bb558fe",
+      "content_id": "6e9c3c90-902a-4f8b-8162-1a62466647a5",
+      "claim_id": "C62",
+      "claim": "Rescued mice showed no significant difference in their respiratory functions of f (frequency), TV (tidal volume), Raw (airway resistance), and EF50 (expiratory flow at the point 50% of TV is expired) compared to controls.",
+      "claim_type": "EXPLICIT",
+      "source": "They showed no significant difference in their respiratory functions of f (frequency) (232.9 \u00b1 18.5 vs 236.2 \u00b1 25.7%, p = 0.790), TV (tidal volume) (0.253 \u00b1 0.06 vs 0.233 \u00b1 0.06, p = 0.514), Raw (airway resistance) (4.340 \u00b1 1.65 vs 5.393 \u00b1 3.80, p = 0.556), and EF50 (expiratory flow at the point 50% of TV is expired) (2.484 \u00b10 .513 vs 2.376 \u00b10 .860, p = 0.793) (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by respiratory function analysis shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:37:34.994602Z"
+    },
+    {
+      "id": "f0cb1960-27ab-4cf9-8dcc-cc097d873d55",
+      "content_id": "6e9c3c90-902a-4f8b-8162-1a62466647a5",
+      "claim_id": "C63",
+      "claim": "FCM analyses confirmed a significantly lower proportion of the residual tdTomato+ host-derived cells in the epithelium (0.29% \u00b1 0.40 vs 45.9% \u00b1 24.1, p = 0.0004), mesenchyme (1.80% \u00b1 1.94 vs 28.1% \u00b1 11.5, p < 0.0001), and endothelium (3.86% \u00b1 4.89 vs 44.6% \u00b1 16.5, p < 0.0001) of the complemented adult lungs compared to the littermate control.",
+      "claim_type": "EXPLICIT",
+      "source": "FCM analyses confirmed a significantly lower proportion of the residual tdTomato+ host-derived cells in the epithelium (0.29% \u00b1 0.40 vs 45.9% \u00b1 24.1, p = 0.0004), mesenchyme (1.80% \u00b1 1.94 vs 28.1% \u00b1 11.5, p < 0.0001), and endothelium (3.86% \u00b1 4.89 vs 44.6% \u00b1 16.5, p < 0.0001) of the complemented adult lungs compared to the littermate control (Figure 5E, F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by flow cytometry analysis of adult lungs shown in Figures 5E and F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:37:34.994602Z"
+    },
+    {
+      "id": "e7eda695-1b23-4ec0-b0d1-be4f4a380e89",
+      "content_id": "6e9c3c90-902a-4f8b-8162-1a62466647a5",
+      "claim_id": "C64",
+      "claim": "PSCCAG-GFP injection into Foxa2Cre/+; Fgfr2 cKO blastocysts simultaneously rescued the thymus agenesis phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "We also confirmed that PSCCAG-GFP injection into Foxa2Cre/+; Fgfr2 cKO blastocysts simultaneously rescued the thymus agenesis phenotype (Figure 5C, H, arrows).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by gross morphology and fluorescence imaging shown in Figures 5C and H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:37:34.994602Z"
+    },
+    {
+      "id": "a0401f46-122e-48c6-8a49-35cacf292036",
+      "content_id": "6e9c3c90-902a-4f8b-8162-1a62466647a5",
+      "claim_id": "C65",
+      "claim": "Foxa2Cre/+; Fgfr2 cKO provides defective niches in both lung epithelium and mesenchyme and thymic epithelium to be complemented by donor PSCs, enabling the entire lungs and thymus co-generation.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that Foxa2Cre/+; Fgfr2 cKO provides defective niches in both lung epithelium and mesenchyme and thymic epithelium to be complemented by donor PSCs, enabling the entire lungs and thymus co-generation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement supported by the combined results of complementation experiments.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:37:34.994602Z"
+    },
+    {
+      "id": "ddfe04f7-0fa5-4c0c-80a1-28f0f2031598",
+      "content_id": "6e9c3c90-902a-4f8b-8162-1a62466647a5",
+      "claim_id": "C66",
+      "claim": "Donor cells formed about 50\u201380% chimerism in the complemented lung mesenchyme niches at E14.5.",
+      "claim_type": "EXPLICIT",
+      "source": "Since donor cells formed about 50\u201380% chimerism in the complemented lung mesenchyme niches at E14.5 (Table 2) and endogenous Foxa2 lineage forms only 20\u201330% in the lung mesenchyme at E14.5, Fgfr2 defects at the Foxa2 lineage in early lung development are important but not sufficient for the complete lung mesenchyme niche complementation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by chimerism data shown in Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:37:34.994602Z"
+    },
+    {
+      "id": "9891c82f-d8e5-4da1-bb2e-6c2125f1f971",
+      "content_id": "6e9c3c90-902a-4f8b-8162-1a62466647a5",
+      "claim_id": "C67",
+      "claim": "Losing Fgfr2 expression in Foxa2 lineage cells resulted in lower proliferative ability than donor cells during chimeric lung mesenchyme development.",
+      "claim_type": "EXPLICIT",
+      "source": "Losing Fgfr2 expression in Foxa2 lineage cells resulted in lower proliferative ability than donor cells during chimeric lung mesenchyme development (Figure 4I\u2013K), allowing progressive lung mesenchyme complementation in lung development and postnatal days, leading to promoting efficient whole lung generation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by Ki67 proliferation analysis shown in Figures 4I-K.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:37:34.994602Z"
+    },
+    {
+      "id": "8e5fe275-a0ac-41f6-bff7-04260bf1ee66",
+      "content_id": "6e9c3c90-902a-4f8b-8162-1a62466647a5",
+      "claim_id": "C68",
+      "claim": "Targeting the endodermal lung lineage driven by Shh was sufficient for lung epithelial complementation but insufficient to generate whole lungs, and host-derived cells remained substantially in the mesodermal lung component.",
+      "claim_type": "EXPLICIT",
+      "source": "Targeting the endodermal lung lineage driven by Shh was sufficient for lung epithelial complementation but insufficient to generate whole lungs, and host-derived cells remained substantially in the mesodermal lung component (Mori et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:37:34.994602Z"
+    },
+    {
+      "id": "14b492ac-33d7-4601-807b-741617c29129",
+      "content_id": "6e9c3c90-902a-4f8b-8162-1a62466647a5",
+      "claim_id": "C69",
+      "claim": "Gastrulating Pdgfr\u03b1 lineage is the origin of the whole lung mesoderm, including endothelium.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to lung epithelial precursors, the orderly commitment and the origin of the entire pulmonary mesenchyme needed to be better defined. We showed that gastrulating Pdgfr\u03b1 lineage is the origin of the whole lung mesoderm, including endothelium (Figure 1A, B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by Pdgfr\u03b1 lineage-tracing data shown in Figures 1A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:37:34.994602Z"
+    },
+    {
+      "id": "2c4d9b73-aa76-4823-9e9a-9f17d59e4206",
+      "content_id": "6e9c3c90-902a-4f8b-8162-1a62466647a5",
+      "claim_id": "C70",
+      "claim": "Foxa2 or Pdgfr\u03b1 lineage labels a population primarily comprised of the earliest specified precursors in the distal compartment of mesendoderm.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, Foxa2 or Pdgfr\u03b1 lineage labels a population primarily comprised of the earliest specified precursors in the distal compartment of mesendoderm, similar to human iPSC cell-derived directed differentiation protocol.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by lineage-tracing data in mice and human iPSC differentiation experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:37:34.994602Z"
+    },
+    {
+      "id": "4a95e538-8683-4f37-9c67-2348fc48a209",
+      "content_id": "6e9c3c90-902a-4f8b-8162-1a62466647a5",
+      "claim_id": "C71",
+      "claim": "PDGFR\u03b1+ mesendoderm primes the cell fate of Foxa2+ definitive endoderm after the MIXL1+ mesendoderm specification in the directed differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "We uncovered that PDGFR\u03b1+ mesendoderm primes the cell fate of Foxa2+ DE after the MIXL1+ mesendoderm specification in the directed differentiation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by flow cytometry kinetics data during human iPSC differentiation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:37:34.994602Z"
+    },
+    {
+      "id": "26ae07d6-fe06-4223-89a8-86d7fd991ed2",
+      "content_id": "6e9c3c90-902a-4f8b-8162-1a62466647a5",
+      "claim_id": "C72",
+      "claim": "The Foxa2 lineage+ mesenchyme did not show any discrete fates that would predict anatomical localization.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, the Foxa2 lineage+ mesenchyme did not show any discrete fates that would predict anatomical localization\u2014depleting Fgfr2 in the Foxa2 lineage results in the loss of the Fgfr2 mitogen-mediated function of Foxa2 lineage+ lung mesenchyme, which leads to the loss of proliferative ability in most host lung mesenchyme.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that Foxa2 lineage+ cells are distributed throughout the mesenchyme without specific localization.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:37:34.994602Z"
+    },
+    {
+      "id": "d51eb109-c14a-49e3-a6e1-c8b737b406f7",
+      "content_id": "6e9c3c90-902a-4f8b-8162-1a62466647a5",
+      "claim_id": "C73",
+      "claim": "The combination of Fgfr2 depletion in Foxa2 lineage preserved other major organs, such as kidney, glandular stomach, hair follicles, tooth bud, and limbs, distinct from the agenesis or dysgenesis phenotype caused by the systemic Fgfr2 depletion.",
+      "claim_type": "EXPLICIT",
+      "source": "We also found that the combination of Fgfr2 depletion in Foxa2 lineage preserved other major organs, such as kidney, glandular stomach, hair follicles, tooth bud, and limbs, distinct from the agenesis or dysgenesis phenotype caused by the systemic Fgfr2 depletion (Arman et al., 1999; De Langhe et al., 2006; De Moerlooze et al., 2000; Sekine et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by histological analysis and citations to previous work on systemic Fgfr2 knockout.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:37:34.994602Z"
+    },
+    {
+      "id": "a1ee2cee-846e-4108-845f-82a19ff14769",
+      "content_id": "6e9c3c90-902a-4f8b-8162-1a62466647a5",
+      "claim_id": "C74",
+      "claim": "The timing and the requirement of Fgfr2 are different from the lineage in each organ.",
+      "claim_type": "EXPLICIT",
+      "source": "This is because the timing and the requirement of Fgfr2 are different from the lineage in each organ (Bates, 2011; Revest et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies on Fgfr2 function in different organs.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:37:34.994602Z"
+    },
+    {
+      "id": "259ee39a-5a1e-4598-9c97-e3a8e0ffe93a",
+      "content_id": "6e9c3c90-902a-4f8b-8162-1a62466647a5",
+      "claim_id": "C75",
+      "claim": "Fgfr2 signaling is required for thymus formation, specifically in the Foxa2 lineage.",
+      "claim_type": "EXPLICIT",
+      "source": "Our reports showed novel evidence of the requirement of Fgfr2 signaling for thymus formation, specifically in the Foxa2 lineage, associated with the previous statements regarding the critical role of Fgfr2 in thymus formation and thymic epithelial cell differentiation (Dooley et al., 2007; Revest et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the thymus agenesis phenotype in Foxa2Cre/+; Fgfr2 cKO mice and citations to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:37:34.994602Z"
+    },
+    {
+      "id": "a9cd6530-94c7-4989-afc5-c156ef6814e5",
+      "content_id": "6e9c3c90-902a-4f8b-8162-1a62466647a5",
+      "claim_id": "C76",
+      "claim": "Thymus formation is essentially formed in the Foxa2 lineage but not Shh.",
+      "claim_type": "EXPLICIT",
+      "source": "This study showed evidence that thymus formation is essentially formed in the Foxa2 lineage but not Shh, supported by the previous report that the dynamic Shh expression regulates larynx-esophageal separation and esophageal constriction on the fourth pharyngeal pouches above the lungs during development (Ramachandran et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the differential thymus phenotypes in Foxa2 vs Shh-driven Fgfr2 knockout mice and citation to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:37:34.994602Z"
+    },
+    {
+      "id": "ea6690aa-7c85-4cce-9934-5c951bd66baf",
+      "content_id": "6e9c3c90-902a-4f8b-8162-1a62466647a5",
+      "claim_id": "C77",
+      "claim": "In complemented mice with rescued thymus, immune cells were most likely educated in self-recognition by donor cells' derived thymus epithelium and induced central tolerance.",
+      "claim_type": "IMPLICIT",
+      "source": "In these complemented mice, immune cells were most likely educated in self-recognition by donor cells' derived thymus epithelium and induced central tolerance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the known function of thymus in immune cell education and the high chimerism of donor cells in thymic epithelium.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:37:34.994602Z"
+    },
+    {
+      "id": "23dd512d-0e0c-4e92-a6f6-c7a269a84bd2",
+      "content_id": "6e9c3c90-902a-4f8b-8162-1a62466647a5",
+      "claim_id": "C78",
+      "claim": "GvHD is a crucial risk factor for long-term survival following human lung transplantation.",
+      "claim_type": "EXPLICIT",
+      "source": "It is also important to note that GvHD is a crucial risk factor for long-term survival following human lung transplantation (Bos et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a previous study on lung transplantation outcomes.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:37:34.994602Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "8349a235-b6dc-403f-9586-73c34575b1d3",
+      "content_id": "6e9c3c90-902a-4f8b-8162-1a62466647a5",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Pdgfr\u03b1 lineage during gastrulation gives rise to the entire lung mesenchyme. Lineage tracing with PdgfraCreERT2/+ mice at E5.5 showed that at E12.5, the Pdgfr\u03b1 lineage labeled the entire lung mesenchyme (86.9% \u00b1 22.7 Sma+ smooth muscle cells, 78.7% \u00b1 36.9 Pdgfr\u03b1+ mesenchyme, 82.5% \u00b1 30.4 VE-cadherin+ endothelium) but only 20.5% \u00b1 18.3 of lung epithelium.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C20 and C69 provide converging evidence from lineage tracing experiments showing high labeling efficiency in mesenchyme markers with quantitative data. The small sample size (n=3) for E12.5 analysis and high variability in some measurements (e.g., Pdgfr\u03b1+ mesenchyme SD of 36.9) are noted, but the overall pattern is consistent across multiple cell types and supported by immunostaining and morphometric analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:37:34.994602Z"
+    },
+    {
+      "id": "ca7aaa6b-1bc0-4881-b473-e6cab61188c6",
+      "content_id": "6e9c3c90-902a-4f8b-8162-1a62466647a5",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Foxa2 lineage labels both lung epithelium and mesenchyme, with progressive increase in mesenchyme labeling during development. At E14.5, Foxa2 lineage labeled 93.3% \u00b1 2.00 of lung epithelium and 24.2% \u00b1 5.51 of mesenchyme. By adulthood, labeling reached 99.97% \u00b1 0.06 in epithelium, 51.3% \u00b1 1.72 in mesenchyme, and 60.0% \u00b1 8.44 in endothelial cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C27 are supported by flow cytometry and immunostaining data across multiple developmental time points (E14.5, E18.5, P0, adult). The progressive increase in mesenchyme labeling is well-documented with appropriate statistical analysis (n=4-7 biological replicates). The morphometric analysis of specific cell types (C27) provides additional validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:37:34.994602Z"
+    },
+    {
+      "id": "9ad6ed87-194b-47e2-8974-c6c168e91dee",
+      "content_id": "6e9c3c90-902a-4f8b-8162-1a62466647a5",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Foxa2 protein is not detected in lung mesenchyme, but Foxa2 mRNA is expressed at low levels in mesenchymal cells, particularly in proliferating endothelium. This sporadic transcriptional expression contributes to progressive lineage labeling during development.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C32 are supported by multiple complementary approaches: immunostaining showing no protein expression (C28), single-cell RNA-seq analysis showing sporadic mRNA expression (C29), in situ hybridization confirming mRNA presence (C30), qPCR showing slight increase in tdTomato+ cells (C31), and EdU labeling showing higher proliferation in tdTomato+ endothelial cells (C32). This explains the mechanism of progressive labeling.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:37:34.994602Z"
+    },
+    {
+      "id": "d949f0ea-e91f-4c8c-84dc-9b60c931b7c6",
+      "content_id": "6e9c3c90-902a-4f8b-8162-1a62466647a5",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Human iPSC differentiation protocol generates lung epithelial and mesenchymal cells with temporal progression of markers. NKX2-1+ cells emerge on day 6 (44.5% \u00b1 6.41), increasing to 95.9% \u00b1 3.98 by day 15. SOX9 expression follows NKX2-1, increasing from 27.9% \u00b1 13.1 on day 8 to 98.4% \u00b1 1.98 on day 15. TBX4+ mesenchyme progressively increases to 48.2% \u00b1 3.17.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C40 are supported by immunostaining, morphometric analysis, and qPCR data showing temporal progression of lung markers. The data demonstrate coordinated development of epithelial and mesenchymal lineages. Sample sizes appear adequate (n=3 independent experiments for qPCR, 5 fields per group for morphometry), though more biological replicates would strengthen conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:37:34.994602Z"
+    },
+    {
+      "id": "e238e454-95e6-4e3e-b8f4-9f0e539b0fc7",
+      "content_id": "6e9c3c90-902a-4f8b-8162-1a62466647a5",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "During human iPSC differentiation, mesendoderm development follows a temporal sequence: MIXL1 expression at 12 hr (>60% of cells), followed by PDGFR\u03b1 expression at 36 hr (>90% of MIXL1+ cells), with FOXA2 appearing in a subset of PDGFR\u03b1+ cells. By 72 hr, FOXA2+ definitive endoderm and FOXA2- lateral plate mesoderm diverge, indicating that PDGFR\u03b1+ and FOXA2+ lineages represent distinct but overlapping stages of mesendoderm development.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C46, C70-C71 are supported by flow cytometry kinetics data with 12-hour resolution and qPCR analysis (n=3 independent experiments). The temporal sequence is clearly demonstrated, and the conclusion that mesendoderm is a lung precursor niche is well-supported by the parallel findings in mouse lineage tracing. The evolutionary conservation claim is justified by the concordance between mouse and human data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:37:34.994602Z"
+    },
+    {
+      "id": "97bbb09b-ce9c-44d6-9202-a776cf65d7b2",
+      "content_id": "6e9c3c90-902a-4f8b-8162-1a62466647a5",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Foxa2Cre/+-driven conditional Fgfr2 knockout causes lung and thymus agenesis while preserving other organs. Foxa2Cre/+; Fgfr2 cKO mice exhibit lung and thymus agenesis and die at birth from respiratory distress, but other endodermal organs (liver, esophagus, pancreas, intestine) and organs affected by systemic Fgfr2 knockout (kidney, stomach, hair follicles, tooth bud, limbs) are preserved.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C47-C51 are supported by phenotypic analysis with histological examination. The specificity of the phenotype to lung and thymus is well-documented. The preservation of other organs distinguishes this conditional knockout from systemic Fgfr2 knockout, as supported by citations to previous work. Sample sizes are not explicitly stated for all analyses, which is a minor limitation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:37:34.994602Z"
+    },
+    {
+      "id": "a9c8c422-381d-48d6-9bcc-c9d3c857ce1c",
+      "content_id": "6e9c3c90-902a-4f8b-8162-1a62466647a5",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Blastocyst complementation with wild-type PSCs rescues lung and thymus agenesis in Foxa2Cre/+; Fgfr2 cKO mice. Donor cells generate nearly complete lungs with high chimerism in epithelium (99.7-99.8%), mesenchyme (86.2-92.3%), and endothelium (73.1-91.7%) at E17.5. Foxa2-driven complementation shows significantly higher mesenchyme chimerism than Shh-driven complementation (80.5% vs 46.3% in Sma+ cells, p=0.0057; 87.5% vs 62.7% in Pecam+ capillaries, p=0.0134).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C6, C52-C58 are supported by extensive flow cytometry, immunostaining, and morphometric analysis with appropriate statistical comparisons. Sample sizes are adequate (n=5 for Foxa2 cKO, n=5 for Shh cKO). The high chimerism levels and statistical significance of differences between Foxa2 and Shh-driven complementation strongly support the conclusions. Table 1 provides comprehensive individual animal data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:37:34.994602Z"
+    },
+    {
+      "id": "3cbf9c50-5e6d-49bb-b91c-cc6cb75c8c61",
+      "content_id": "6e9c3c90-902a-4f8b-8162-1a62466647a5",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Fgfr2 deficiency in Foxa2 lineage cells reduces proliferation, enabling progressive donor cell complementation. At E14.5, Ki67+ proliferating cells were significantly higher in GFP+ donor cells compared to tdTomato+ host cells. Donor cells formed 50-80% chimerism in lung mesenchyme at E14.5, despite endogenous Foxa2 lineage forming only 20-30% at this stage.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C60, C66-C67 are supported by Ki67 proliferation analysis and chimerism data from Table 2. The mechanism explaining progressive complementation is logical and supported by the data. However, the statistical analysis for Ki67 data could be more robust (appears to be paired t-test with limited sample size), and the exact sample sizes for E14.5 chimerism analysis are not clearly stated in the text.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:37:34.994602Z"
+    },
+    {
+      "id": "26c5eb8e-e540-47b3-95fe-2ec43ff1e3a3",
+      "content_id": "6e9c3c90-902a-4f8b-8162-1a62466647a5",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Rescued Foxa2Cre/+; Fgfr2 cKO mice survive to adulthood with normal lung function and co-generated thymus. At 4 weeks, rescued mice showed no significant differences in respiratory function parameters (frequency, tidal volume, airway resistance, expiratory flow) compared to controls. Adult lungs had minimal host-derived cells (0.29% \u00b1 0.40 in epithelium, 1.80% \u00b1 1.94 in mesenchyme, 3.86% \u00b1 4.89 in endothelium, all p<0.001 vs controls).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C61-C65 are supported by survival data, respiratory function analysis (n=5 cKO, n=19 hetero controls), and flow cytometry analysis of adult lungs. The functional normality of rescued lungs is well-demonstrated. The simultaneous rescue of thymus is documented by gross morphology and fluorescence imaging. This represents a key translational finding, though long-term survival beyond 4 weeks is not reported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:37:34.994602Z"
+    },
+    {
+      "id": "41c6bf1d-ae2c-4cf1-ba21-d207f5f53325",
+      "content_id": "6e9c3c90-902a-4f8b-8162-1a62466647a5",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Foxa2-driven complementation is superior to Shh-driven complementation for whole lung generation. Shh-driven complementation is sufficient for epithelial complementation but insufficient for mesenchyme. Foxa2 lineage-based approach targets both epithelial and mesenchymal niches. Fgfr2 depletion in Foxa2 lineage preserves other organs due to differential timing and requirements of Fgfr2 signaling. Thymus formation requires Fgfr2 in Foxa2 lineage but not Shh lineage.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68, C72-C76 are supported by comparative data between Foxa2 and Shh-driven complementation, histological analysis of other organs, and differential thymus phenotypes. The mechanistic explanations are supported by citations to previous work on Fgfr2 function. The superiority of Foxa2-driven approach is clearly demonstrated by the quantitative chimerism data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:37:34.994602Z"
+    },
+    {
+      "id": "77c27f53-c3cc-42d0-93b6-fc79d6c75bf3",
+      "content_id": "6e9c3c90-902a-4f8b-8162-1a62466647a5",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Complemented mice with rescued thymus likely develop central tolerance through donor-derived thymic epithelium education of immune cells. GvHD is a crucial risk factor for long-term survival following human lung transplantation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C77 is an inference based on known thymus function and high donor chimerism in thymic epithelium, but no direct experimental evidence of immune tolerance is provided (no GvHD testing, no immune cell characterization). Claim C78 is supported by citation but is background information. The potential for avoiding GvHD through co-generation of thymus is speculative and requires experimental validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:37:34.994602Z"
+    },
+    {
+      "id": "b0703fc5-59bc-409a-84ab-0942515eeb89",
+      "content_id": "6e9c3c90-902a-4f8b-8162-1a62466647a5",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Background on lung biology and development. The manuscript provides context on lung disease burden, lung anatomy and cellular complexity, developmental origins of lung epithelium (Sox17+, Foxa2+, Shh+ definitive endoderm) and mesenchyme (Wnt2+ Isl1+ CPP from lateral plate mesoderm), and mesendoderm as a bipotent transitional state during gastrulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C8-C15 are background information supported by citations to established literature. These claims provide necessary context but do not represent novel findings of this study. C1 is general knowledge, C8 is well-established anatomy, and C9-C15 summarize previous developmental biology studies.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:37:34.994602Z"
+    },
+    {
+      "id": "89cad171-722b-44e9-ba9b-26e7bb051886",
+      "content_id": "6e9c3c90-902a-4f8b-8162-1a62466647a5",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Summary claims about Foxa2 lineage contribution to lung development. These are high-level summary statements of the main findings regarding Foxa2 lineage contribution to both lung epithelium and mesenchyme, with progressive increase in mesenchyme occupancy.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2-C3 are abstract-level summaries of the detailed findings presented in other claim groups. They are supported by the comprehensive lineage tracing data (C21-C27) but represent summary statements rather than specific experimental results. These claims accurately reflect the overall findings of the study.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:37:34.994602Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "67ab6bb6-3e52-4df0-b320-e74e80d8f5f7",
+      "result_id": "8349a235-b6dc-403f-9586-73c34575b1d3"
+    },
+    {
+      "claim_id": "bafcab22-d6bb-454e-87c2-62a7d984aab2",
+      "result_id": "8349a235-b6dc-403f-9586-73c34575b1d3"
+    },
+    {
+      "claim_id": "bf4b663e-a972-4bfd-a132-ea9f2c86018c",
+      "result_id": "8349a235-b6dc-403f-9586-73c34575b1d3"
+    },
+    {
+      "claim_id": "89e27f6d-947d-4896-b5f0-633b1b2c6621",
+      "result_id": "8349a235-b6dc-403f-9586-73c34575b1d3"
+    },
+    {
+      "claim_id": "14b492ac-33d7-4601-807b-741617c29129",
+      "result_id": "8349a235-b6dc-403f-9586-73c34575b1d3"
+    },
+    {
+      "claim_id": "929ace3a-1246-4da3-bc5c-bce7d305e1e0",
+      "result_id": "ca7aaa6b-1bc0-4881-b473-e6cab61188c6"
+    },
+    {
+      "claim_id": "395c0d8a-2c3e-465e-9233-52f8d582dd62",
+      "result_id": "ca7aaa6b-1bc0-4881-b473-e6cab61188c6"
+    },
+    {
+      "claim_id": "bc174de6-8f7c-465f-a737-2fd25b833f65",
+      "result_id": "ca7aaa6b-1bc0-4881-b473-e6cab61188c6"
+    },
+    {
+      "claim_id": "3d65e809-2af6-4fa1-bdff-8538d18e1918",
+      "result_id": "ca7aaa6b-1bc0-4881-b473-e6cab61188c6"
+    },
+    {
+      "claim_id": "bb5574d0-8486-4e74-b85d-30e1d80a7d9f",
+      "result_id": "ca7aaa6b-1bc0-4881-b473-e6cab61188c6"
+    },
+    {
+      "claim_id": "9d464c7f-ef26-4963-a7a2-11ff313c7872",
+      "result_id": "ca7aaa6b-1bc0-4881-b473-e6cab61188c6"
+    },
+    {
+      "claim_id": "c0991938-6900-4b6a-b65a-16c70f5bb2e8",
+      "result_id": "ca7aaa6b-1bc0-4881-b473-e6cab61188c6"
+    },
+    {
+      "claim_id": "626e835f-bd58-4a87-beef-991222ee01d9",
+      "result_id": "9ad6ed87-194b-47e2-8974-c6c168e91dee"
+    },
+    {
+      "claim_id": "ed8a6d4d-b201-4dcb-ba37-145842d01227",
+      "result_id": "9ad6ed87-194b-47e2-8974-c6c168e91dee"
+    },
+    {
+      "claim_id": "125a16fa-eedc-437e-b33d-5a1a131b0405",
+      "result_id": "9ad6ed87-194b-47e2-8974-c6c168e91dee"
+    },
+    {
+      "claim_id": "e3793d83-c768-4d75-9810-93149c876ed9",
+      "result_id": "9ad6ed87-194b-47e2-8974-c6c168e91dee"
+    },
+    {
+      "claim_id": "a9fa9081-0965-4c27-9931-8ec8e3291cee",
+      "result_id": "9ad6ed87-194b-47e2-8974-c6c168e91dee"
+    },
+    {
+      "claim_id": "5d547ee0-583c-43e2-8cb9-a1da5fe54ec3",
+      "result_id": "d949f0ea-e91f-4c8c-84dc-9b60c931b7c6"
+    },
+    {
+      "claim_id": "8ec4780e-8fed-4ab9-985c-96dd373d4baf",
+      "result_id": "d949f0ea-e91f-4c8c-84dc-9b60c931b7c6"
+    },
+    {
+      "claim_id": "e77c7771-44d4-4d16-b51f-6f33898205dc",
+      "result_id": "d949f0ea-e91f-4c8c-84dc-9b60c931b7c6"
+    },
+    {
+      "claim_id": "1ed0a188-e470-495c-9722-191ba0e96657",
+      "result_id": "d949f0ea-e91f-4c8c-84dc-9b60c931b7c6"
+    },
+    {
+      "claim_id": "f00ae54f-e4e3-4bb9-923b-f4afbe788048",
+      "result_id": "d949f0ea-e91f-4c8c-84dc-9b60c931b7c6"
+    },
+    {
+      "claim_id": "245e0b53-b93e-4ef6-85bc-a3f95583ee00",
+      "result_id": "d949f0ea-e91f-4c8c-84dc-9b60c931b7c6"
+    },
+    {
+      "claim_id": "05e0dba9-9b7a-4325-a43f-fdeab3be4a22",
+      "result_id": "d949f0ea-e91f-4c8c-84dc-9b60c931b7c6"
+    },
+    {
+      "claim_id": "071f378d-212c-46ef-a959-ec11ffa88440",
+      "result_id": "d949f0ea-e91f-4c8c-84dc-9b60c931b7c6"
+    },
+    {
+      "claim_id": "56cae68e-6a93-472a-b407-de5aefc4daaa",
+      "result_id": "e238e454-95e6-4e3e-b8f4-9f0e539b0fc7"
+    },
+    {
+      "claim_id": "043bae43-3f0e-4373-b408-e563af543116",
+      "result_id": "e238e454-95e6-4e3e-b8f4-9f0e539b0fc7"
+    },
+    {
+      "claim_id": "9b33940a-1da0-41a1-af9d-cd7eb4900047",
+      "result_id": "e238e454-95e6-4e3e-b8f4-9f0e539b0fc7"
+    },
+    {
+      "claim_id": "4e310241-1036-4357-a241-4ac21d7b37cd",
+      "result_id": "e238e454-95e6-4e3e-b8f4-9f0e539b0fc7"
+    },
+    {
+      "claim_id": "b944c3b6-68ec-42b1-8454-b15855efe7cb",
+      "result_id": "e238e454-95e6-4e3e-b8f4-9f0e539b0fc7"
+    },
+    {
+      "claim_id": "07f49777-1f70-4746-a961-1439dc95063b",
+      "result_id": "e238e454-95e6-4e3e-b8f4-9f0e539b0fc7"
+    },
+    {
+      "claim_id": "2c4d9b73-aa76-4823-9e9a-9f17d59e4206",
+      "result_id": "e238e454-95e6-4e3e-b8f4-9f0e539b0fc7"
+    },
+    {
+      "claim_id": "4a95e538-8683-4f37-9c67-2348fc48a209",
+      "result_id": "e238e454-95e6-4e3e-b8f4-9f0e539b0fc7"
+    },
+    {
+      "claim_id": "275ed119-38c3-4563-9e21-6f7b5d59ba19",
+      "result_id": "97bbb09b-ce9c-44d6-9202-a776cf65d7b2"
+    },
+    {
+      "claim_id": "a2ea545a-132a-4e29-9c0a-983c78251f1f",
+      "result_id": "97bbb09b-ce9c-44d6-9202-a776cf65d7b2"
+    },
+    {
+      "claim_id": "65c55596-a592-4313-a915-f834764541ef",
+      "result_id": "97bbb09b-ce9c-44d6-9202-a776cf65d7b2"
+    },
+    {
+      "claim_id": "6c501ffa-a5d9-48f9-a4a8-e2974a5bf219",
+      "result_id": "97bbb09b-ce9c-44d6-9202-a776cf65d7b2"
+    },
+    {
+      "claim_id": "79526798-1f97-41f1-9029-18ac44a49975",
+      "result_id": "97bbb09b-ce9c-44d6-9202-a776cf65d7b2"
+    },
+    {
+      "claim_id": "e492c239-fe2c-4b4c-b29d-af6074241b86",
+      "result_id": "97bbb09b-ce9c-44d6-9202-a776cf65d7b2"
+    },
+    {
+      "claim_id": "773296cf-f79e-4587-a47f-c57e0a83b1d2",
+      "result_id": "a9c8c422-381d-48d6-9bcc-c9d3c857ce1c"
+    },
+    {
+      "claim_id": "6b7a4f7d-3cfa-429b-8577-afa5b1484f73",
+      "result_id": "a9c8c422-381d-48d6-9bcc-c9d3c857ce1c"
+    },
+    {
+      "claim_id": "4f869438-93a1-4297-9b13-4a6b436c8e94",
+      "result_id": "a9c8c422-381d-48d6-9bcc-c9d3c857ce1c"
+    },
+    {
+      "claim_id": "e5aba305-8198-4652-999c-273a45b11727",
+      "result_id": "a9c8c422-381d-48d6-9bcc-c9d3c857ce1c"
+    },
+    {
+      "claim_id": "9e3fafde-69b1-499c-89b9-84bc9be6b790",
+      "result_id": "a9c8c422-381d-48d6-9bcc-c9d3c857ce1c"
+    },
+    {
+      "claim_id": "1dcb3fab-5145-4bb0-bd91-8eccb7cad8d3",
+      "result_id": "a9c8c422-381d-48d6-9bcc-c9d3c857ce1c"
+    },
+    {
+      "claim_id": "0ffc45e4-206f-410e-91a7-c0ca58f9083c",
+      "result_id": "a9c8c422-381d-48d6-9bcc-c9d3c857ce1c"
+    },
+    {
+      "claim_id": "8015168e-5515-4a8c-a9e0-85f9078dc772",
+      "result_id": "a9c8c422-381d-48d6-9bcc-c9d3c857ce1c"
+    },
+    {
+      "claim_id": "8a88670d-57ed-41b6-b58d-4d78f5f70f24",
+      "result_id": "a9c8c422-381d-48d6-9bcc-c9d3c857ce1c"
+    },
+    {
+      "claim_id": "b024cfc5-4755-4ea4-a4b6-7ae3f8ee0b3c",
+      "result_id": "3cbf9c50-5e6d-49bb-b91c-cc6cb75c8c61"
+    },
+    {
+      "claim_id": "d9d57c36-da79-453a-840a-1fc58fa2b22c",
+      "result_id": "3cbf9c50-5e6d-49bb-b91c-cc6cb75c8c61"
+    },
+    {
+      "claim_id": "ddfe04f7-0fa5-4c0c-80a1-28f0f2031598",
+      "result_id": "3cbf9c50-5e6d-49bb-b91c-cc6cb75c8c61"
+    },
+    {
+      "claim_id": "9891c82f-d8e5-4da1-bb2e-6c2125f1f971",
+      "result_id": "3cbf9c50-5e6d-49bb-b91c-cc6cb75c8c61"
+    },
+    {
+      "claim_id": "7b5a8ab0-df0d-4950-9b2e-b88d8d11bdbe",
+      "result_id": "26c5eb8e-e540-47b3-95fe-2ec43ff1e3a3"
+    },
+    {
+      "claim_id": "66b3faa7-9ca2-44ff-bdf6-23c0ac9f17b7",
+      "result_id": "26c5eb8e-e540-47b3-95fe-2ec43ff1e3a3"
+    },
+    {
+      "claim_id": "9bc38698-f0ed-425d-b1ac-29676bb558fe",
+      "result_id": "26c5eb8e-e540-47b3-95fe-2ec43ff1e3a3"
+    },
+    {
+      "claim_id": "f0cb1960-27ab-4cf9-8dcc-cc097d873d55",
+      "result_id": "26c5eb8e-e540-47b3-95fe-2ec43ff1e3a3"
+    },
+    {
+      "claim_id": "e7eda695-1b23-4ec0-b0d1-be4f4a380e89",
+      "result_id": "26c5eb8e-e540-47b3-95fe-2ec43ff1e3a3"
+    },
+    {
+      "claim_id": "a0401f46-122e-48c6-8a49-35cacf292036",
+      "result_id": "26c5eb8e-e540-47b3-95fe-2ec43ff1e3a3"
+    },
+    {
+      "claim_id": "8e5fe275-a0ac-41f6-bff7-04260bf1ee66",
+      "result_id": "41c6bf1d-ae2c-4cf1-ba21-d207f5f53325"
+    },
+    {
+      "claim_id": "26ae07d6-fe06-4223-89a8-86d7fd991ed2",
+      "result_id": "41c6bf1d-ae2c-4cf1-ba21-d207f5f53325"
+    },
+    {
+      "claim_id": "d51eb109-c14a-49e3-a6e1-c8b737b406f7",
+      "result_id": "41c6bf1d-ae2c-4cf1-ba21-d207f5f53325"
+    },
+    {
+      "claim_id": "a1ee2cee-846e-4108-845f-82a19ff14769",
+      "result_id": "41c6bf1d-ae2c-4cf1-ba21-d207f5f53325"
+    },
+    {
+      "claim_id": "259ee39a-5a1e-4598-9c97-e3a8e0ffe93a",
+      "result_id": "41c6bf1d-ae2c-4cf1-ba21-d207f5f53325"
+    },
+    {
+      "claim_id": "a9cd6530-94c7-4989-afc5-c156ef6814e5",
+      "result_id": "41c6bf1d-ae2c-4cf1-ba21-d207f5f53325"
+    },
+    {
+      "claim_id": "ea6690aa-7c85-4cce-9934-5c951bd66baf",
+      "result_id": "77c27f53-c3cc-42d0-93b6-fc79d6c75bf3"
+    },
+    {
+      "claim_id": "23dd512d-0e0c-4e92-a6f6-c7a269a84bd2",
+      "result_id": "77c27f53-c3cc-42d0-93b6-fc79d6c75bf3"
+    },
+    {
+      "claim_id": "8007635b-38b3-4ed1-82cc-33edfd4f2467",
+      "result_id": "b0703fc5-59bc-409a-84ab-0942515eeb89"
+    },
+    {
+      "claim_id": "31c711ad-7eb0-4d24-bd7d-7f7bef4af4e1",
+      "result_id": "b0703fc5-59bc-409a-84ab-0942515eeb89"
+    },
+    {
+      "claim_id": "7bf4f90c-a01e-4263-9a51-22f98485eb51",
+      "result_id": "b0703fc5-59bc-409a-84ab-0942515eeb89"
+    },
+    {
+      "claim_id": "bf573c61-b41a-437a-bf67-ba99ec428597",
+      "result_id": "b0703fc5-59bc-409a-84ab-0942515eeb89"
+    },
+    {
+      "claim_id": "4e6370b6-b722-400a-8930-37acc7334892",
+      "result_id": "b0703fc5-59bc-409a-84ab-0942515eeb89"
+    },
+    {
+      "claim_id": "b9ae3059-bb84-4765-8853-e3bc079cda82",
+      "result_id": "b0703fc5-59bc-409a-84ab-0942515eeb89"
+    },
+    {
+      "claim_id": "afde76b5-481d-4b10-a707-aa357795acfd",
+      "result_id": "b0703fc5-59bc-409a-84ab-0942515eeb89"
+    },
+    {
+      "claim_id": "78700129-11aa-4d39-8685-332fadd7edd1",
+      "result_id": "b0703fc5-59bc-409a-84ab-0942515eeb89"
+    },
+    {
+      "claim_id": "c9530272-9954-48b0-8756-e24e7a9fe72a",
+      "result_id": "b0703fc5-59bc-409a-84ab-0942515eeb89"
+    },
+    {
+      "claim_id": "4fdc95b2-75eb-458b-93bc-58bd3362263f",
+      "result_id": "89cad171-722b-44e9-ba9b-26e7bb051886"
+    },
+    {
+      "claim_id": "6238a214-0714-495b-8cbd-5b174a4f9463",
+      "result_id": "89cad171-722b-44e9-ba9b-26e7bb051886"
+    }
+  ],
+  "comparisons": []
+}

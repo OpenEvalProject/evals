@@ -1,0 +1,686 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "result": "Enhancers are regulatory elements that control gene expression in a temporal and cell-type-specific manner during development. Disease-associated genetic variants at enhancers, identified through WGS and GWAS, are thought to alter enhancer activity and contribute to developmental diseases (enhanceropathies).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4 are well-supported by foundational citations (Banerji et al., 1981; Kleinjan and van Heyningen, 2005; Gusev et al., 2014; Parker et al., 2013). These claims establish the conceptual framework of the review and are consistent with established knowledge in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "Point mutations in a SHH enhancer located over 1 Mb from the SHH promoter cause polydactyly. This enhancer was mapped to an intron of LMBR1 and shows activity overlapping with SHH expression in the zone of polarizing activity during limb specification, while not regulating closer genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C9 are supported by appropriate citations (Lettice et al., 2003, 2017; Williamson et al., 2016). This is a well-characterized example of an enhanceropathy demonstrating long-range gene regulation and serves as a foundational case study for the review.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C10",
+      "C11"
+    ],
+    "result": "Additional examples of long-range enhancers include an IRX3 enhancer with obesity-associated variants in the brain and a cardiometabolic risk-associated enhancer regulating FST ~522 kb away in the liver.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C11 are supported by citations (Smemo et al., 2014; Civelek et al., 2017). These examples reinforce the concept of long-range enhancer regulation established in the SHH example.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "A risk-associated enhancer for fetal hemoglobin persistence alters BCL11A expression, but the direct phenotypic effect is mediated by BCL11A's target HbF, not BCL11A itself. This regulatory event is specific to hematopoietic cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C14 are supported by citations (Bauer et al., 2013; Basak et al., 2015). This example illustrates the concept of indirect and cell-type-specific mechanisms of enhanceropathies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "TBX5 is a driver of congenital heart defects (CHD), with coding mutations causing Holt-Oram Syndrome. Sequencing studies identified variants that ablate a TBX5 enhancer, suggesting that TBX5 enhanceropathies can phenocopy haploinsufficiency caused by gene mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C18 are supported by appropriate citations (Fahed et al., 2013; Bruneau et al., 2001; McDermott et al., 2005; Smemo et al., 2012). This example demonstrates how enhancer variants can phenocopy genetic variants, a key concept in the review.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C19"
+    ],
+    "result": "The assignment of risk variants to mechanisms of developmental diseases is often non-trivial.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C19 is a reasonable inference from the examples provided (C5-C18) and sets up the motivation for the review's focus on functional characterization methods.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C20",
+      "C21"
+    ],
+    "result": "Single-cell ATAC-Seq and chromosome conformation capture assays have been applied to identify thousands of cell-type-specific enhancers and enhancer-promoter interactions in developmental systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C21 are supported by multiple citations (Cusanovich et al., 2018a,b; Domcke et al., 2020; Gao et al., 2022; Lu et al., 2020; Ron et al., 2017). These are established methods for enhancer identification.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C22",
+      "C24",
+      "C25"
+    ],
+    "result": "Reporter assays, including those using luciferase or lacZ, have been used to characterize enhancer activity in vivo. The VISTA Enhancer browser documents thousands of enhancers tested in embryonic mice using reporter assays.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22, C24-C25 are supported by appropriate citations (Conrad and Botchan, 1982; Kvon et al., 2020; Pennacchio et al., 2006; Smemo et al., 2012; Visel et al., 2007). These describe foundational and current reporter assay approaches.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Massively parallel reporter assays (MPRAs) enable high-throughput measurement of enhancer activity. Inoue et al. characterized over 2,000 enhancers during hESC differentiation, finding that enhancer activity correlated with endogenous chromatin marks and that regulatory activity depended on chromatin context while sequence determined transcriptional direction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C30 are supported by citations (Melnikov et al., 2012; Patwardhan et al., 2009; Inoue et al., 2019). The Inoue et al. study is appropriately described as demonstrating key principles of MPRA applications.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C31",
+      "C32"
+    ],
+    "result": "STARR-seq is a massively parallel reporter assay that systematically tests genomic fragments for enhancer activity. An adaptation has been applied in vivo to assess 408 sequences in the early mouse brain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C32 are supported by citations (Arnold et al., 2013; Lambert et al., 2021). These describe STARR-seq methodology and its in vivo application.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "MPRAs combined with single-cell RNA-Seq enable characterization of enhancer activity in heterogeneous cell systems. Lalanne et al. identified an enhancer of Lamc1 with pleiotropic activity in two populations, contrasting with Lamc1 expression in a single cell type, suggesting Lamc1 expression is not strictly dependent on this nearby enhancer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C36 are supported by citations (Lalanne et al., 2022; Zhao et al., 2023). The Lalanne et al. example demonstrates the power of single-cell MPRAs to reveal complex regulatory relationships.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Reporter assays have several limitations: reporter vector choice can dramatically affect results (10-fold differences observed), insert length may not capture all functional sequences (poor correlation between lengths), and exogenous assays do not recapitulate endogenous function (half of putative enhancers did not correlate with endogenous chromatin signatures).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C42 are supported by appropriate citations (Lungu-Mitea and Lundqvist, 2020; Romanov et al., 2021; Klein et al., 2020; Inoue et al., 2019). These limitations are well-documented and important caveats for interpreting reporter assay data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "TALENs were initially applied to endogenously perturb enhancers. Wang et al. used TALENs to introduce variants at a lupus-associated enhancer, disrupting TNFAIP3 promoter interaction and downregulating NF-\u03baB. However, TALENs are too difficult to scale for genetic screens.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C46 are supported by citations (Boch et al., 2009; Moscou and Bogdanove, 2009; Wang et al., 2016; Morbitzer et al., 2011; Reyon et al., 2012; Weber et al., 2011). These describe early genome editing approaches and their limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "CRISPR/Cas9 has been widely adopted for endogenous gene perturbation. Since single sgRNAs may be insufficient to disrupt enhancers, paired sgRNAs are used for deletion. Zhou et al. used this approach to identify multiple enhancers essential for SOX2 expression and pluripotency maintenance in ESCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C51 are supported by citations (Jinek et al., 2012; He et al., 2011; Reddy et al., 2012; Zhou et al., 2014). These describe the application of CRISPR/Cas9 to enhancer studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Diao et al. increased throughput by generating a pool of sgRNAs spanning 174 potential enhancers to tile the POU5F1 locus in hESCs, identifying regulators including enhancers with atypical behavior (temporary gene expression reduction) and enhancer-like promoters regulating multiple genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C54 are supported by citation (Diao et al., 2017). This study demonstrates the power of tiling screens to comprehensively characterize regulatory elements at a locus.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C55",
+      "C56"
+    ],
+    "result": "CRISPR/Cas9-mediated enhancer perturbation is limited by efficiency and scalability. Requiring two sgRNAs is inefficient and generates heterogeneous cell populations. Clonal selection is required for homozygous knockout due to low cleavage efficiency of both alleles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C56 are supported by citations (Zheng et al., 2014; Eleveld et al., 2021). These are well-documented limitations of CRISPR/Cas9 deletion approaches.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "CRISPR-based epigenetic modification tools (CRISPRi/a) fuse dCas9 with chromatin modifiers. KRAB introduces H3K9me3 to repress enhancers (CRISPRi), while p300 activates enhancers (CRISPRa). These tools are potent modifiers capable of robust effects with a single sgRNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C61 are supported by citations (Qi et al., 2013; Gilbert et al., 2013; Hilton et al., 2015; Thakore et al., 2015). These describe established CRISPRi/a methodologies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Fulco et al. applied a tiling CRISPRi screen targeting two loci with essential transcription factors, identifying 9 enhancers regulating TF expression with phenotypic consequences on cell growth. This indicates only a subset of chromatin-profiled enhancers impact gene expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C64 are supported by citations (Fulco et al., 2016; Crawford et al., 2006; Malin et al., 2013). This study demonstrates the power of CRISPRi screens to identify functionally important enhancers.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "CRISPRi-FlowFISH combines enhancer screens with RNA FISH-based gene labeling. Fulco et al. applied this to over 4,000 enhancer-gene pairs, showing that enhancers do not always regulate the closest gene.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C67 are supported by citation (Fulco et al., 2019). This approach enables direct measurement of enhancer effects on specific genes at scale.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Single-cell RNA-seq has been combined with CRISPR screens (Perturb-seq) to provide transcriptome-wide readouts. Dixit et al. first demonstrated this approach for gene knockouts, and it has been applied with dCas9-KRAB due to low Cas9 knockout efficiency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C70 are supported by citations (Dixit et al., 2016; Adamson et al., 2016). These describe the development of single-cell CRISPR screening approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C71",
+      "C72"
+    ],
+    "result": "Single-cell CRISPR screens have been applied to hESC-to-cardiomyocyte differentiation, identifying enhancers impacting cardiac lineage specification. Similar screens have been applied to promoters in neuronal and endoderm development, but enhancer applications remain limited.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C72 are supported by citations (Armendariz et al., 2022; Genga et al., 2019; Tian et al., 2019). These describe applications of single-cell CRISPR screens to developmental systems.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "A limitation of scRNA-seq is difficulty detecting lowly expressed genes, limiting statistical analysis and causing false negatives. TAP-Seq addresses this by selectively enriching key transcripts, increasing detection sensitivity and reducing sequencing costs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C75 are supported by citation (Schraivogel et al., 2020). This describes a well-known limitation of scRNA-seq and a technical solution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Reporter assays can be adapted to study variants by incorporating patient-derived nucleotide changes. Smemo et al. identified a TBX5 enhancer G-to-T transversion in a CHD patient. The wildtype enhancer showed myocardium-specific expression in transgenic mice, while the mutant showed abrogated activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C79 are supported by citation (Smemo et al., 2012). This is a well-characterized example of using reporter assays to validate patient variants.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Saturation mutagenesis with MPRA enables high-throughput variant analysis at single nucleotide resolution. Kircher et al. examined over 30,000 variants for 20 disease-associated regulatory elements, identifying variants in the ZRS (SHH limb enhancer) known to cause polydactyly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C83 are supported by citations (Kircher et al., 2019; Riddle et al., 1993; Zeller et al., 2009). This demonstrates the power of saturation mutagenesis MPRAs for variant characterization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Factor IX is associated with Hemophilia B Leyden, with single nucleotide changes in the promoter implicated in disease. Kircher et al. discovered mutations in HNF4A and ETS-related transcription factor binding sequences that reduced promoter activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C86 describe findings from the Kircher et al. study. The association of Factor IX with Hemophilia B Leyden is established knowledge, and the specific findings are attributed to the cited study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Zhao et al. developed single-cell MPRA screens and applied them to test 113 variants of the Gnb3 promoter in mouse retina. They validated cell type specificity and captured effects of variants in the E-box motif, finding most affected expression level but only one affected cell type specificity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C91 are supported by citations (Zhao et al., 2023; Murphy et al., 2019). This demonstrates the power of single-cell MPRAs to dissect variant effects in heterogeneous tissues.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C92",
+      "C93"
+    ],
+    "result": "CRISPRi operates at ~1 kb resolution and cannot resolve function at variant level. CRISPR/Cas9-generated indels (typically <30 bp) offer higher resolution than CRISPRi/a.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C93 are supported by citations (Lensch et al., 2022; Li et al., 2020; Thakore et al., 2015; Allen et al., 2018; Koike-Yusa et al., 2014; Kosicki et al., 2022; van Overbeek et al., 2016). This describes a key limitation of CRISPRi and the advantage of CRISPR/Cas9 for variant-level studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "CRISPR/Cas9 exploits non-homologous end joining to generate random indels. Canver et al. first characterized enhancer activity using CRISPR/Cas9 saturation mutagenesis of the BCL11A erythroid enhancer, pinpointing nucleotides altering BCL11A and HbF expression by tiling with gRNAs and quantifying effects through flow cytometry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C99 are supported by citations (Canver et al., 2015; Bauer et al., 2012, 2013). This describes a landmark study demonstrating CRISPR/Cas9 saturation mutagenesis for enhancer characterization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C100",
+      "C101"
+    ],
+    "result": "Double-strand breaks caused by CRISPR/Cas9 can be detrimental to cells. Base editing has solved this problem.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C101 describe a known limitation of CRISPR/Cas9 and the development of base editing as a solution. These are established concepts in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Martin-Rufino et al. applied base editing screens to alter variants in the \u03b3-hemoglobin gene (HBG1/2) promoter. Using ~120 sgRNAs with FACS-based enrichment, they identified variants increasing HbF expression and performed pooled single-cell genotyping to link variants to phenotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C104 are supported by citation (Martin-Rufino et al., 2023). This demonstrates the application of base editing screens to study regulatory variants.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C105",
+      "C106"
+    ],
+    "result": "Chen et al. combined deep learning with CRISPRi and base editing screens to identify variants in CD69 enhancers. Morris et al. extended base editing screening to functionally test GWAS variants for blood traits with single-cell RNA-Seq readout.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C106 are supported by citations (Chen et al., 2023; Morris et al., 2023). These describe recent applications of base editing screens.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R32",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "Prime editing can be applied to study enhancer variants. Findlay et al. used saturation mutagenesis with homology-directed repair to study BRCA1 exons, supplying all possible variants and quantifying effects through growth-based screens while sequencing variants in genomic DNA and measuring RNA-level effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C110 are supported by citations (Erwood et al., 2022; Findlay et al., 2018). While the Findlay study focused on coding regions, it demonstrates a comprehensive approach that could be extended to enhancers.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R33",
+    "claim_ids": [
+      "C111",
+      "C112"
+    ],
+    "result": "GWAS indicate ~90% of disease-associated variants are non-coding and likely at enhancers. However, the vast majority of enhancers and their phenotype-associated genetic variants remain uncharacterized.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C112 are supported by citation (Edwards et al., 2013) and represent established knowledge. This sets up the motivation for future work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R34",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "Existing enhancer studies have focused on static in vitro systems, especially cell lines. CRISPRi studies have been performed in hPSCs during differentiation. Understanding enhancer networks may require dense temporal sampling due to time-dependent enhancer activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C115 are supported by citations (Fulco et al., 2019; Armendariz et al., 2022; Genga et al., 2019; Wu et al., 2022; Bonn et al., 2012). These describe current approaches and challenges.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R35",
+    "claim_ids": [
+      "C116",
+      "C117"
+    ],
+    "result": "Organoids are available for various developmental systems (brain, kidney, heart). A CRISPRi screen has been applied to an organoid model, identifying key TFs in fetal lung development through promoter perturbation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C117 are supported by citations (Di Lullo and Kriegstein, 2017; Lewis-Israeli et al., 2021; Nishinakamura, 2019; Sun et al., 2022). These describe the availability and application of organoid models.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R36",
+    "claim_ids": [
+      "C118",
+      "C119"
+    ],
+    "result": "In vivo systems can interrogate individual enhancers and variants. While in vivo CRISPR screens have been accomplished, perturbation complexity remains a key challenge.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C119 are supported by citations (Smemo et al., 2012; Gemberling et al., 2021; Jin et al., 2020). These describe current capabilities and limitations of in vivo approaches.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R37",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "FISH-based methods identify regulatory elements by perturbing enhancers and sorting cells based on RNA fluorescence, but can only survey a handful of pre-identified genes. MerFISH, seqFISH, and osmFISH can increase gene detection scale but are challenging to establish. Targeted transcript amplification enriches genes of interest.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C123 are supported by citations (Fulco et al., 2019; Reilly et al., 2021; Codeluppi et al., 2018; De Biase et al., 2021; Eng et al., 2019; Xia et al., 2019; Schraivogel et al., 2020). These describe various approaches to measure gene expression as readouts.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R38",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "Cell Painting is a multiplexed image-based assay detecting cellular organelles through fluorescent dyes. Combined with CRISPR perturbations, optical screens provide information on organelle localization, cell morphology, and cell-cell interactions, and have been used to characterize perturbation of essential genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124-C126 are supported by citations (Bray et al., 2016; Feldman et al., 2019; Funk et al., 2022). These describe morphological readout approaches.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R39",
+    "claim_ids": [
+      "C127",
+      "C128"
+    ],
+    "result": "Cunningham et al. identified two Tbx5 enhancers not essential for limb development through genetic knockout. Patch-seq combines electrophysiological recordings with single-cell RNA sequencing and immunochemistry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C127-C128 are supported by citations (Cunningham et al., 2018; Cadwell et al., 2016; Fuzik et al., 2016). These describe functional readout approaches.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R40",
+    "claim_ids": [
+      "C129",
+      "C130"
+    ],
+    "result": "It is not feasible to experimentally test all regulatory elements and sequence variants for their impact on developmental disorders. Computational models that can accurately predict regulatory activity of sequence variants will be essential to close this gap.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C129-C130 represent reasonable assessments of practical limitations and future needs. This sets up the discussion of predictive modeling.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R41",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "Sei is a sequence-based deep learning model trained on ~20,000 epigenetic features from ~1300 cell lines and tissues. It accurately predicts whether a DNA sequence is a regulatory element, in what cell contexts, and how genetic variants alter enhancer activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C131-C133 are supported by citation (Chen et al., 2022). These describe the capabilities of the Sei model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R42",
+    "claim_ids": [
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "Enformer applies deep learning to predict gene regulatory activity from genomic sequences. A key advance is using information from distal genomic interactions (~100 kb) to improve predictions, enabling prediction of long-range promoter-enhancer interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C134-C136 are supported by citation (Avsec et al., 2021). These describe the capabilities of the Enformer model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R43",
+    "claim_ids": [
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141"
+    ],
+    "result": "Current predictive modeling approaches focus on molecular phenotypes (expression, epigenetic status). Accurate predictions rely on good training data, but existing data is mostly from cell lines, and epigenetic data from human developmental systems (especially in vivo) is rare. Active learning strategies integrating experimental and modeling components will be crucial.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C137-C141 represent reasonable assessments of current limitations and future needs in predictive modeling. These are logical conclusions based on the state of the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R44",
+    "claim_ids": [
+      "C142",
+      "C143",
+      "C144"
+    ],
+    "result": "Predictive models need to be accurate across diverse populations, requiring the ability to model genetic background effects. Development of explainable AI models will offer insights into features important for prediction. Improved predictive modeling will drive clinical applications to interpret variant impacts in patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C142-C144 are supported by citation (Novakovsky et al., 2023) and represent reasonable future directions. These are logical extensions of current capabilities.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R45",
+    "claim_ids": [
+      "C145",
+      "C146",
+      "C147",
+      "C148"
+    ],
+    "result": "The field has progressed rapidly from the initial discovery of enhancers in SV40 four decades ago. The 2000s saw development of advanced reporter systems and MPRAs. The 2010s witnessed comprehensive enhancer mapping and genome engineering tools at cellular resolution. In the coming decade, innovative technologies will enable high-throughput characterization of enhancer variants' impacts on molecular and cellular phenotypes in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C145-C148 provide a historical summary supported by citations (Banerji et al., 1981; Patwardhan et al., 2009, 2012) and reasonable projections for the future. This is an appropriate synthesis for a review conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R46",
+    "claim_ids": [
+      "C149",
+      "C150",
+      "C151"
+    ],
+    "result": "Experimental strategies alone will not be sufficient to gain comprehensive views of all enhancers at nucleotide and cellular resolution. Predictive modeling and machine learning approaches will be instrumental to achieve this goal. This knowledge will enable interpretation of enhancer variants in research and clinical settings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C149-C151 represent reasonable conclusions about future needs and anticipated outcomes. These are logical extensions of the review's discussion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R47",
+    "claim_ids": [
+      "C152",
+      "C153",
+      "C154"
+    ],
+    "result": "The functional characterization of enhancer variants is a multi-step process linking genotypes to molecular, cellular, and organismal phenotypes. The SHH enhancer variant causing polydactyly is a well-characterized example, but the role of most cis-regulatory elements in developmental disease remains unclear.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C152-C154 summarize the conceptual framework presented in Figure 1 and are consistent with the review's content. These represent appropriate synthesis of the review's themes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R48",
+    "claim_ids": [
+      "C155",
+      "C156",
+      "C157"
+    ],
+    "result": "Studies of enhancer variants have used diverse genomic perturbation methods, biosystems, and readouts. These three layers can be organized into increasing levels of complexity with increasing biomedical relevance. Future technologies will enable analyses of higher complexity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C155-C157 summarize the conceptual framework presented in Figure 2 and are consistent with the review's content. These represent appropriate synthesis of the review's organizational structure.",
+    "result_type": "MINOR"
+  }
+]

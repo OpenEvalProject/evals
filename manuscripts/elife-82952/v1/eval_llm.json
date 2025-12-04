@@ -1,0 +1,282 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "result": "ADn contains a higher proportion of HD cells (54%) compared to RSC (12%), with ADn HD cells showing stronger directional tuning as measured by directional information (median 0.084 vs 0.015 bits/spike) and resultant length (median 0.21 vs 0.084).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4 provide converging evidence from recordings in 12 mice with appropriate statistical tests (Kruskal-Wallis with multiple comparisons). The HD cell selection criteria were clearly defined and applied consistently. Sample sizes are adequate (ADn HD n=150, RSC HD n=73) and the differences are highly significant (p<0.0001).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "HD cell ensembles in both ADn and RSC maintain coherent preferred firing directions after cue rotations, with ADn showing higher rigidity (circular correlation 0.91, n=603 pairs) than RSC (0.28, n=269 pairs). Individual HD cells show stable preferred directions and tuning strength across trials.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C9 demonstrate ensemble coherence through multiple complementary analyses: pairwise correlations (C5-C6), stability across time segments (C7), and consistency of tuning strength (C8-C9). The lower correlation in RSC (0.28) is still significant and consistent with RSC's known multimodal selectivity. Statistical tests are appropriate (circular correlations, Wilcoxon Signed-Rank tests).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C10",
+      "C15",
+      "C76"
+    ],
+    "result": "HD representations in simultaneously recorded ADn and RSC ensembles are coordinated during cue rotations, with rotations showing significant correlation (coefficient 0.54-0.74) that exceeds shuffled controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C15, and C76 provide consistent evidence for ADn-RSC coordination using both tuning curve rotations and decoded HD errors. The correlations are statistically significant and exceed shuffle controls (p<0.01-0.0001). Sample sizes are adequate (7-8 mice, 95 unique ensembles for decoding).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "GLM-based decoding of HD from neural ensembles shows better accuracy in ADn (median error 36.32\u00b0) than RSC (47.53\u00b0), with performance degrading at high angular velocities in both regions. Decoded errors reflect ensemble tuning curve rotations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C14 validate the decoding approach through multiple checks: comparison to shuffled data, angular velocity effects, and correlation with tuning curve rotations (r=0.73-0.75). The two-way ANOVA (C13) appropriately tests regional and velocity effects. The decoding method is well-described and validated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C16",
+      "C80",
+      "C81"
+    ],
+    "result": "ADn and RSC HD representations update synchronously (within 20ms) in response to cue rotations, as measured by temporal cross-correlations of decoded errors showing peaks at 0ms lag.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16, C80, and C81 provide strong evidence for synchronous updating through temporal cross-correlation analysis. The majority of trials show 0ms lag peaks (Kolmogorov-Smirnov test p<0.0001), and this holds for both stable and rotation periods (Wilcoxon test p=0.88, n=28 ensembles). Multiple validation approaches in supplementary analyses strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "During darkness (cue-off), HD cells maintain preferred directions but show increased variability and drift. Mean firing rates remain stable in ADn but are marginally reduced in RSC. Peak firing rates decrease in both regions, while only RSC shows reduced HD tuning strength (resultant length).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C22 characterize HD cell responses to darkness with appropriate statistical tests (Wilcoxon Signed-Rank). The differential effects on RSC vs ADn are consistent with RSC's known sensitivity to visual input. Sample sizes are adequate (ADn n=91-155, RSC n=27-159 depending on measure). The modest drift (median increase from 15.9\u00b0 to 25.6\u00b0, p=0.0053) is statistically significant.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C40",
+      "C82",
+      "C83",
+      "C90"
+    ],
+    "result": "HD representations remain coordinated between ADn and RSC during darkness, with similar circular correlations in cue-on (r=0.277) and cue-off (r=0.256) periods. This coordination can be challenged during periods of high angular velocity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C24 and C40, C82-C83, C90 demonstrate maintained coordination in darkness through decoding analysis. The lack of significant difference between cue-on and cue-off correlations (p=0.677, n=12 ensembles) supports the conclusion. The caveat about high angular velocity periods (C83) is appropriately noted and supported by supplementary data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C84"
+    ],
+    "result": "Anatomical tracing reveals dense ADn inputs to RSC but surprisingly sparse RSC inputs to ADn, with RSC-to-ADn projections localized primarily in granular and ventral RSC. These findings are consistent with previous rat studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C27 and C84 report anatomical connectivity using retrograde rabies tracing and retrobeads. The methods are standard and well-validated. The asymmetry is clearly demonstrated and consistent with cited literature (Shibata 1998, van Groen & Wyss 1990). The localization to granular RSC is specific and well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Functional connectivity analysis reveals strong asymmetry: 6.88% of ADn-RSC pairs show putative monosynaptic connections in the ADn-to-RSC direction (91/326 ADn units connected) versus only 0.08% in the RSC-to-ADn direction (4/749 RSC units). ADn HD cells have mean 4.23 RSC partners while non-HD cells have 0.04.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C33 quantify functional connectivity using spike cross-correlation with established criteria (Peyrache 2015, Stark & Abeles 2009). The extreme asymmetry (86-fold difference) is striking and well-documented. The preferential connectivity of HD cells (C32-C33) is clearly demonstrated. Sample sizes are large (5056 possible pairs analyzed).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C34",
+      "C35"
+    ],
+    "result": "Connected ADn-RSC HD cell pairs show a small but significant bias toward similar preferred directions (circular mean -5.4\u00b0, p=0.002), while non-connected pairs show uniform distribution (p=0.086).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C35 demonstrate tuning similarity in connected pairs using Rayleigh test for non-uniformity. The bias is modest (circular SD 61\u00b0) but statistically significant. The contrast with non-connected pairs strengthens the conclusion. Sample size is adequate (n=73 connected units, 6 mice).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C77",
+      "C78"
+    ],
+    "result": "Large cue rotations were more likely to result in under-rotations, but the egocentric experience of cue rotation (whether cue was in or out of view) did not significantly affect the magnitude of HD representation rotations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C78 address potential confounds in the rotation experiments. The analysis of egocentric cue position is thorough, with no correlation found between cue bearing and rotation magnitude (r=-0.034 to 0.007). The ANOVA shows an effect of rotation size but not egocentric view category, supporting the conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C79"
+    ],
+    "result": "HD reference shifts after cue rotation occur at variable speeds, with mostly slow, continuous drifts observed in both ADn and RSC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C79 describes the temporal dynamics of HD realignment based on decoding analysis. The observation is well-documented in Figure 2C and supplementary figures, and is consistent with previous literature in flies and rodents (C97-C99).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C92"
+    ],
+    "result": "ADn sustains the RSC HD code through widespread feedforward connectivity to both regular-spiking and fast-spiking units, targeting not only HD-tuned units but also units with complex, multimodal receptive fields.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C86 and C92 synthesize the connectivity findings (anatomical and functional) to propose a circuit model. The inference is well-supported by the data showing connections to both HD and non-HD units in RSC, and to both RS and FS cell types. The conclusion is appropriately cautious about the role of multimodal units.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C87"
+    ],
+    "result": "The sparse RSC-to-ADn connections identified are unlikely to alone drive changes or stability in ADn preferred directions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C87 is a reasonable inference from the extreme sparsity of RSC-to-ADn connections (4/749 units, 0.08% of pairs). The qualifier 'alone' is appropriate, acknowledging that RSC may influence ADn through indirect pathways. This is consistent with the synchronous updating observed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C93",
+      "C94"
+    ],
+    "result": "The bias toward similar tuning between connected ADn-RSC HD units suggests that ADn HD code is not simply inherited in RSC but is likely integrated with other spatial codes via different circuit organization principles involving both FS and RS neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C94 provide a mechanistic interpretation of the tuning similarity data (C34). The comparison with POS (where HD is simply inherited) is appropriate and supported by citations. The inference about integration with other spatial codes is reasonable given RSC's known multimodal properties and the connections to non-HD units.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C95",
+      "C96"
+    ],
+    "result": "Visually driven HD updating is a complex process that privileges coordination across brain regions over sustained error signals, though the 20ms temporal resolution of decoding may occlude faster monosynaptic dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C95 is a well-supported conclusion from the synchronous updating data (C16, C80-C81). Claim C96 appropriately acknowledges a methodological limitation. The conclusion is appropriately cautious and recognizes that faster dynamics may exist below the detection threshold.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C102"
+    ],
+    "result": "Extended navigation within the same environment and repeated exposure to unstable cues increased the incidence of under-rotations or 0\u00b0 rotations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C102 identifies a behavioral factor affecting HD realignment, supported by data in Figure 2\u2014figure supplement 2B and consistent with cited literature on landmark devaluation (Knierim 1995, Knight & Hayman 2014). This is an important control observation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C105",
+      "C106"
+    ],
+    "result": "The asymmetry in ADn-RSC connectivity was more extreme than previously reported ADn-POS connectivity, possibly due to widespread sampling across RSC layers and subregions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C105 makes a comparison with previous work that is supported by citations. However, C106's speculation about methodological factors is uncertain\u2014while the widespread sampling is documented, whether this fully explains the difference from POS is unclear. The authors appropriately frame this as speculation ('possibly exacerbated').",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C103",
+      "C104"
+    ],
+    "result": "POS could provide visual reference information to ADn, RSC, and LMN through reciprocal connections with visual areas, or visual-HD integration could occur via cortico-thalamic control through thalamic reticular nucleus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C103-C104 are explicitly speculative ('could provide', 'another possible route') about circuit mechanisms not directly tested in this study. While supported by anatomical citations, these remain hypotheses requiring future experimental validation. The authors appropriately present these as possibilities rather than conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C109"
+    ],
+    "result": "Dense interconnections between RSC and hippocampal formation may support coordinated HD representation across the brain to ensure consistent spatial computations relevant to behavioral output.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C109 is speculative about functional implications ('may support') extending beyond the data presented. While the anatomical connections are documented in cited literature, the functional role in coordinating brain-wide HD representations is not directly tested. This is appropriately framed as speculation.",
+    "result_type": "MINOR"
+  }
+]

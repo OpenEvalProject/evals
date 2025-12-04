@@ -1,0 +1,299 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "The authors developed a morphological signature of bortezomib resistance by identifying 45 features that significantly differed between resistant and sensitive cells after controlling for technical variables. This signature was generated using linear modeling to adjust for batch effects, incubation time, cell density, and clone ID, followed by feature selection and application of the singscore method to compute a normalized resistance score.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C9, C57-C66 describe a rigorous feature selection and signature generation process with appropriate controls for technical artifacts. The linear modeling approach (C57), systematic exclusion of confounding features (C58), and validation that the signature correlates with resistance status rather than technical variables (C64-C66) provide strong methodological support. The use of 45 features (C59) and singscore method (C60-C61) is well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C10",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "The Bortezomib Signature correctly predicted bortezomib resistance in 7 out of 10 clones not included in the training dataset, with accuracy ranging from 78-92% across training, validation, test, and holdout datasets. The signature performed better than random chance in all testing conditions and outperformed alternative feature selection approaches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C68-C78 present quantitative performance metrics across multiple independent datasets with appropriate statistical comparisons to random permutations. The use of proper machine learning practices with separate training, validation, test, and holdout datasets (C67-C75) strengthens the evaluation. Performance metrics (accuracy 78-92%, AUROC 0.84-0.97) and comparison to alternative methods (C77) provide robust evidence for the signature's predictive capability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "The Bortezomib Signature showed specificity for bortezomib resistance compared to resistance to other ubiquitin-proteasome system (UPS) targeting drugs. The signature correctly identified 4/5 ixazomib-resistant and 3/5 CB-5083-resistant clones, but with lower AUROC values (0.63 and 0.60 respectively) compared to bortezomib-resistant clones.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C12 and C79-C85 demonstrate drug specificity through comparative analysis with other UPS-targeting drugs. The lower performance on ixazomib and CB-5083 resistant clones (C79-C83) compared to bortezomib provides evidence for specificity (C84-C85). However, the moderate performance on related drugs suggests the signature captures some general UPS-related features while maintaining bortezomib specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "The Bortezomib Signature generalized to new clones not included in the training dataset, correctly characterizing 7/10 clones (4/5 resistant, 3/5 sensitive) with an AUROC of 0.75. Three clones (WT10, WT15, BZ06) were consistently misclassified, potentially due to unique morphological features or orthogonal resistance mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C93 demonstrate generalizability with quantitative performance metrics on independent biological replicates. The AUROC of 0.75 (C86) and correct classification of 7/10 clones (C87-C88) support generalizability (C92-C93). The analysis of misclassified clones (C89-C91) acknowledges limitations and provides mechanistic hypotheses, though these remain speculative without additional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C13",
+      "C98",
+      "C99",
+      "C105"
+    ],
+    "result": "The study establishes a proof-of-concept framework for unbiased analysis of drug resistance using high-content microscopy and Cell Painting, demonstrating that morphological features can identify drug-resistant cells in the absence of drug treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13, C98-C99, and C105 represent the main conclusions supported by the experimental results. The identification of morphological features (C98), development of a reproducible pipeline (C99), and demonstration of resistance prediction without drug treatment (C105) are well-supported by the data presented in claims C8-C93. The proof-of-concept nature (C13) appropriately acknowledges the scope and limitations of the work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Bortezomib-resistant clones showed LD50 values 2.8- to 9-fold higher than parental HCT116 cells, while sensitive clones had LD50s 0.7- to 1.2-fold that of parental cells. Most clones showed similar sensitivity to taxol and mitoxantrone as parental cells, with one exception (BZ06) showing 14-fold higher LD50 for mitoxantrone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C50 present quantitative proliferation assay results that characterize the drug sensitivity phenotypes of the clones. The fold-change values for bortezomib (C45-C46), taxol (C48), and mitoxantrone (C49-C50) are clearly stated and supported by data in Figure 1\u2014figure supplement 2. The identification of BZ06 as an outlier (C50) is important for interpreting later misclassification results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Cellular heterogeneity within and between clones prevented qualitative visual distinction of resistant from sensitive cells, and initial morphological profiles did not cleanly separate clones by resistance status, necessitating quantitative feature refinement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C56 describe observations from microscopy images and initial profiling that motivated the need for sophisticated computational analysis. The visual heterogeneity (C52-C53) and failure of initial profiles to distinguish clones (C54-C55) are supported by Figure 2A and Figure 2\u2014figure supplement 2. This provides important justification for the feature selection approach described in later claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Drug-resistant clones were isolated from HCT116 cells, a mismatch repair-deficient cell line that expresses multidrug resistance pumps at low levels and provides a genetically heterogeneous population, allowing isolation of resistant clones in 2-3 weeks. Two published bortezomib-resistant clones (A and E) with PSMB5 mutations were also used.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C44 describe the experimental model and clone isolation methodology. The characteristics of HCT116 cells (C40-C41) are supported by citations, the timeline (C42) is an experimental observation, and the use of published clones with known mutations (C44) is documented. The hypothesis about rapid selection favoring intrinsic resistance (C43) is speculative but reasonable given the experimental design.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C51",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "Cell Painting was used to label eight cellular components with six fluorescent dyes imaged in five channels. CellProfiler extracted approximately 3,528 morphological features from 25,331,572 cells, representing stain intensities, co-localization, textures, areas, and other patterns across different cellular compartments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C38, C51, C113-C115 describe the Cell Painting methodology and feature extraction. The protocol is well-established (cited as Bray et al., 2016), the number of features (C38, C114) and cells analyzed (C114) are quantitative results, and the types of features extracted (C115) are standard CellProfiler outputs. The methodology is reproducible and well-documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "Image data processing used cytominer-database and pycytominer to aggregate single cells into well-level profiles, perform z-score normalization, and apply feature selection removing low variance, highly correlated, missing, blocklisted, and outlier features, resulting in 782 features. Batch effect correction was not applied as large batch effects were not detected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C122 describe standard image-based profiling pipeline steps with appropriate software tools and parameters. The aggregation (C118), normalization (C119), and feature selection criteria (C120) are well-established practices. The decision not to apply batch correction (C122) is justified by the analysis showing minimal batch effects (C64-C65). The final feature count of 782 (C121) is clearly stated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "The Bortezomib Signature misclassified three clones, including BZ06 which showed reduced sensitivity to both mitoxantrone and bortezomib. Misclassifications may result from orthogonal resistance mechanisms or unrelated mutations in the genetically heterogeneous HCT116 cell line, and targeted sequencing of PSMB5 could provide additional information.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C100-C104 acknowledge limitations and propose mechanistic explanations for misclassifications. The observation about BZ06 (C101) is supported by proliferation data (C50), but the explanations for misclassifications (C102) remain speculative. The suggestion for targeted sequencing (C103) is a reasonable future direction but does not provide current evidence. The genetic heterogeneity of HCT116 (C102) is cited but its specific contribution to misclassifications is uncertain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "Different mechanisms of bortezomib resistance may generate distinct morphological profiles, and with larger datasets it may be possible to identify signatures for distinct resistance mechanisms and other drugs. Extension to patient samples is unclear but could improve targeted cancer therapy. Further refinement may develop Cell Painting as a tool for identifying and overcoming drug resistance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C106-C110 represent speculative future directions and potential applications. While the inference about distinct morphological profiles (C106) is supported by the specificity data (C11-C12), the statements about larger datasets (C107), patient samples (C108), clinical impact (C109), and future refinements (C110) are appropriately framed as uncertain or speculative. These represent reasonable extrapolations but lack direct experimental support.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Drug resistance is a major challenge in cancer therapy, with both intrinsic and acquired forms. Current methods for evaluating resistance depend on viability assays and sequencing with known limitations. High-content microscopy has shown promise for predicting biological phenotypes but has not been used to examine resistance features in the absence of drug treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C34 provide background context supported by citations to prior literature. These claims establish the clinical problem (C1-C2, C14-C15), categorize resistance types (C16), describe current limitations (C3, C17-C18, C26-C27), and review prior work with imaging approaches (C29-C33). The gap in the literature (C34) motivates the current study. All statements are either well-established knowledge or properly cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "The study tested the hypothesis that cell morphology could provide an unbiased readout of drug resistance using HCT116 cells and bortezomib, a proteasome inhibitor to which many cancer cells possess intrinsic resistance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C7 state the central hypothesis and experimental system. The hypothesis (C4) is clearly stated, and the choice of HCT116 cells (C5) and bortezomib (C6-C7) is justified by established characteristics. These claims appropriately frame the study's objectives and rationale.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "The Bortezomib Signature is conceptually similar to the on-disease/off-disease score in requiring three phenotypic measurements, but differs technically (non-parametric vs. linear projection) and in goals (phenotypic classification vs. perturbation alignment).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C97 compare the current approach to prior work (Heiser et al., 2020). The conceptual similarity (C94-C95) and technical/goal differences (C96-C97) are clearly articulated and help position the work within the existing literature. This comparison is appropriate and well-supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C111",
+      "C112"
+    ],
+    "result": "HCT116 cells were purchased from ATCC and maintained under standard culture conditions. Cells were confirmed to be mycoplasma-free using a PCR-based method.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C112 describe basic cell culture methodology and quality control. The source of cells (C111) and mycoplasma testing (C112) are standard practices that are appropriately documented. These represent routine methodological details.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,267 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C28",
+      "C80",
+      "C81",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "The study employed a comprehensive longitudinal design analyzing 24 PLWH on ART over a decade using high-dimensional supervised and unsupervised flow cytometry to characterize IRs (PD-1, TIGIT, LAG-3, TIM-3, CD39) and functional markers (CD107a, IFN\u03b3, IL-2) across CD8+ T-cell subsets under different stimulation conditions (bulk, SEB-activated, HIV-1-specific). The cohort included appropriate controls (24 early infected, 24 healthy controls) balanced by age.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C28, C80, C81, C107-C111 collectively describe a well-designed longitudinal study with appropriate sample sizes, controls, and exclusion criteria. The methodology is clearly stated with specific timepoints (S1: 2.2 years, S2: 10.1 years on ART), balanced groups, and comprehensive analytical approaches combining supervised and unsupervised methods.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C72",
+      "C77"
+    ],
+    "result": "Persistent alterations in IRs co-expression patterns were observed in CD8+ T-cells that were not mitigated by long-term ART. Specifically, TIGIT expression increased continuously in central memory (CM) CD8+ T-cells throughout ART, while other IRs (PD-1, LAG-3, TIM-3, CD39) showed transient increases that normalized over time. Na\u00efve and CM cells showed persistent reductions in cells lacking IR expression with increases in cells expressing one or more IRs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C32-C37, C72, C77 are supported by longitudinal flow cytometry data shown in Figure 1 with appropriate statistical analyses. The distinction between persistent TIGIT alterations and transient changes in other IRs is clearly demonstrated across multiple CD8+ T-cell subsets with statistical significance reported (p-values provided). The data show consistent patterns across timepoints S1 and S2.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C73",
+      "C75",
+      "C76"
+    ],
+    "result": "Negative correlations were identified between TIGIT+ and TIGIT+TIM-3+ CD8+ T-cell frequencies and CD4+ T-cell counts in PLWH on ART. In S1, CM cells expressing 2 or >1 IRs negatively correlated with CD4+ counts (p=0.0054, r=-0.64; p=0.0087, r=-0.61). In S2, total TIGIT+ CD8+ T-cells and CM cells expressing 2 IRs showed significant negative correlations with CD4+ counts (p=0.0157, r=-0.58; p=0.0072, r=-0.64).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C38-C41, C73, C75-C76 are supported by correlation analyses shown in Figure 1E-G with specific p-values and correlation coefficients reported. The statistical approach (Spearman correlation) is appropriate for the data type. Multiple testing correction (Holm's method) was applied. However, the causal interpretation in C76 is inferential and should be considered hypothesis-generating rather than definitively established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Unsupervised clustering analysis of 1,988,936 total CD8+ T-cells identified 38 cellular clusters, with 8 showing significant differences across groups. Memory-like clusters with low IR expression (#6, #7) expanded over time on ART, while effector-like clusters with TIGIT expression (#9, #11) contracted. This indicates continuous reshaping of CD8+ T-cell populations during long-term ART.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C42-C49, C82-C84 are supported by net-SNE unsupervised clustering analysis shown in Figure 2 with appropriate statistical comparisons. The methodology is clearly described (KNN algorithm, 14 parameters, heatmap visualization). Statistical significance is reported for inter- and intragroup comparisons. The interpretation of cluster dynamics (expansion/contraction) is consistent with the quantitative data presented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C86",
+      "C87"
+    ],
+    "result": "Analysis of 253,021 SEB-activated CD8+ T-cells identified 29 clusters, with 6 showing significant differences. Memory-like clusters dominated, with functional exclusion between IL-2-expressing clusters (#5, #6) and CD107a/IFN\u03b3-expressing clusters (#2, #3, #8). IL-2 expression increased significantly across subsets over time on ART, suggesting partial functional remodeling of CD8+ T-cell populations independent of antigen.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C54, C86-C87 are supported by unsupervised clustering and supervised analyses shown in Figure 3 and supplementary data. The functional exclusion pattern is clearly demonstrated in the heatmap (Figure 3D). Statistical significance for IL-2 increases is shown in supplementary figures. The inference about functional remodeling (C86, C87) is reasonable based on the data but represents interpretation rather than direct observation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C6",
+      "C29",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C91"
+    ],
+    "result": "Unsupervised analysis of 53,751 HIV-1-specific CD8+ T-cells identified 26 clusters, with 3 memory-like clusters (#1, #2, #3) showing significant decreases on ART. These clusters shared TIGIT expression with low CD107a. Supervised analysis confirmed decreases in CD107a+ TIGIT+ HIV-1-specific CM CD8+ T-cells, including monofunctional CD107a+ and bifunctional CD107a+IFN\u03b3+ and CD107a+IL-2+ cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C29, C55-C62, C91 are supported by both unsupervised (Figure 4C-E) and supervised (Figure 4F-G) analyses with appropriate statistical testing. The phenotypic characterization of clusters is clearly shown in heatmaps. The selective reduction in CM compartment is statistically significant. The interpretation that TIGIT is a signature of dysfunction (C91) is supported by the data but also draws on cited literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C7",
+      "C30",
+      "C63",
+      "C64",
+      "C92",
+      "C93"
+    ],
+    "result": "TIGIT blockade specifically restored CD107a expression in HIV-1-specific CD8+ T-cells across cellular compartments, with the most marked effect in the central memory compartment (p<0.005). This recovery occurred independently of changes in IFN\u03b3 or IL-2 production. This is reported as the first demonstration of CD107a recovery by TIGIT blockade in HIV-1-specific CD8+ T-cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C30, C63-C64, C92-C93 are supported by immune checkpoint blockade experiments shown in Figure 5 with appropriate statistical testing (Wilcoxon matched-pairs signed rank test). The specificity for CD107a without affecting IFN\u03b3 or IL-2 is clearly demonstrated. However, the novelty claim (C93) cannot be fully verified without comprehensive literature review. Sample size for ICB experiments (n=20 total, 10 per timepoint) is modest but adequate for paired analyses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C31",
+      "C65",
+      "C98"
+    ],
+    "result": "The response to TIGIT, TIM-3, or TIGIT+TIM-3 blockade was heterogeneous across HIV-1-specific CD8+ T-cell differentiation stages and functions. TIM-3 blockade alone showed no effect, and dual TIGIT+TIM-3 blockade did not reveal an additive effect over TIGIT blockade alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31, C65, C98 are supported by ICB experimental data in Figure 5C showing differential responses across CD8+ T-cell subsets. The lack of TIM-3 effect and absence of additive effect with combination blockade are clearly demonstrated. The heterogeneity across differentiation stages is evident in the subset-specific analyses. Statistical comparisons appropriately use paired tests.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C66"
+    ],
+    "result": "No changes in IFN\u03b3 and IL-2 production were observed for any ICB conditions tested (\u03b1TIGIT, \u03b1TIM-3, or \u03b1TIGIT+\u03b1TIM-3).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C66 is supported by data shown in Figure 5D-E demonstrating no significant changes in IFN\u03b3 or IL-2 across all ICB conditions tested. This negative result is important for understanding the specificity of TIGIT blockade effects and is appropriately reported with statistical testing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C8",
+      "C105",
+      "C106"
+    ],
+    "result": "TIGIT is identified as a critical target for T-cell exhaustion precision immunotherapies in PLWH at all ART stages, based on its persistent expression, association with CD107a loss in HIV-1-specific CD8+ T-cells, and specific recovery of CD107a by TIGIT blockade.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C8, C105-C106 represent therapeutic implications inferred from the experimental data. While the data support TIGIT as a marker of dysfunction and demonstrate CD107a recovery with blockade, the claim about therapeutic potential requires clinical validation not provided in this study. The authors acknowledge limitations including sample size, use of peripheral blood only, limited functional markers, and lack of in vivo data. The therapeutic recommendation is reasonable but premature without additional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C71",
+      "C74"
+    ],
+    "result": "The study overcame previous limitations by using longitudinal data, multiple IRs, and analysis across CD8+ T-cell subsets. The findings confirm continuous TIGIT expression despite ART in agreement with previous studies and uncover novel associations with immune status.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71, C74 appropriately contextualize the study's contributions. The methodological advantages over prior work (longitudinal design, multiple IRs, subset analysis) are valid. The confirmation of TIGIT persistence is supported by the data and consistent with cited literature. The novelty of associations with CD4+ counts represents a genuine contribution, though the mechanistic basis remains to be established.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C90",
+      "C95",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "The authors acknowledge several study limitations and provide speculation about mechanisms. These include: potential influence of \u03b3-chain cytokines on TIGIT expression, possible association with T-bet/Eomes axis, differences from other studies due to methodological variations, TIM-3 ligand promiscuity, potential effects on other cell types, limited sample size and use of peripheral blood, use of only Gag antigen, and need for additional molecular characterization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C79, C90, C95, C99-C103 represent appropriate acknowledgment of limitations and speculation about mechanisms. These are clearly identified as speculative or based on cited literature rather than direct observations from the current study. The limitations are reasonable and do not fundamentally undermine the main findings but appropriately contextualize the scope and interpretation of results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C85",
+      "C89",
+      "C94",
+      "C96",
+      "C97"
+    ],
+    "result": "The introduction and discussion provide extensive background on HIV-1, ART, CD8+ T-cell exhaustion, inhibitory receptors, and immune checkpoint blockade, drawing on established literature. This includes the role of CD8+ T-cells in viral control, the definition of T-cell exhaustion, the association of IRs with disease progression, and the controversial status of ICB as an HIV-1 cure intervention.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C9-C26, C67-C70, C85, C89, C94, C96-C97 represent background knowledge and literature review appropriately supported by citations. These claims establish the scientific context and rationale for the study. The citations appear appropriate and the characterizations of prior work are reasonable, though individual citation accuracy was not verified. These claims provide essential context but are not novel findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C27",
+      "C88",
+      "C104"
+    ],
+    "result": "The study provides unprecedented detail on continuous reshaping of CD8+ T-cell clusters in PLWH over a decade of ART, indicating enormous plasticity and constant homeostasis. The simultaneous characterization of IRs co-expression and functional patterns is critical for understanding T-cell exhaustion regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27, C88, C104 represent summary statements about the study's contributions. The claim of 'unprecedented detail' is supported by the comprehensive longitudinal design, multiple analytical approaches, and extensive phenotypic characterization. The interpretation of plasticity and homeostasis is reasonable based on the cluster dynamics observed. These represent appropriate synthesis of the findings.",
+    "result_type": "MINOR"
+  }
+]

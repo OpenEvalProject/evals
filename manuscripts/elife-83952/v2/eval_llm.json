@@ -1,0 +1,483 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C18",
+      "C19",
+      "C26"
+    ],
+    "result": "X. laevis is an allotetraploid that arose from hybridization of two diploid species separated by ~34 million years, which occurred ~18 million years ago. A subsequent whole-genome duplication restored meiotic pairing, and most genes are still encoded as two homeologous copies on parallel, non-inter-recombining chromosomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C18, C19, and C26 are all supported by citations to Session et al., 2016 and represent established knowledge about X. laevis evolutionary history. These claims provide essential background context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "4772 genes show significant activation by stage 9 in X. laevis, with two-thirds having substantial maternal contributions that mask their activation when quantifying exon-overlapping reads alone. These genes fail to be activated in triptolide-treated embryos, and 2662 genes (56%) represent the first wave of genome activation as determined by cycloheximide treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C37 are supported by RNA-seq data shown in Figure 1C and Supplementary files. The use of both exon and intron signal to detect activation is methodologically sound, and the triptolide and cycloheximide experiments appropriately distinguish primary from secondary activation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Most genes in X. laevis are retained as two homeologous copies, and a majority of these undergo asymmetric activation in the early embryo. Activated genes are preferentially encoded as two homeologous copies (p=2.3\u00d710\u207b\u00b2\u00b2\u2075), with asymmetry more pronounced at stage 8 that balances somewhat as genome activation progresses, and slightly less pronounced for strictly zygotic genes compared to maternal-zygotic genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, C38-C42 are well-supported by RNA-seq data in Figure 2A-E with appropriate statistical tests. The observation of asymmetric homeolog activation is a core finding demonstrated through multiple lines of evidence including temporal dynamics and gene classification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C43",
+      "C44"
+    ],
+    "result": "After genome activation, a heightened imbalance in favor of the L homeolog emerges in differentiated cell lineages, and for one-third of genes activated in more than one lineage, different homeologs are activated in different lineages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C44 are supported by RNA-seq data from Johnson et al., 2022 shown in Figure 2D and Figure 2\u2014figure supplement 1E-I. The lineage-specific analysis demonstrates that homeolog bias increases during development and varies by cell type.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C45",
+      "C46"
+    ],
+    "result": "Genes activated from both subgenomes are enriched in transcriptional regulators (p<0.01), but there is no evidence for stronger functional divergence between homeologs expressed asymmetrically as estimated by dN/dS ratio.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C46 are supported by Gene Ontology enrichment analysis (Figure 2\u2014figure supplement 1J) and dN/dS analysis (Figure 2\u2014figure supplement 1K-L). The lack of correlation between expression asymmetry and coding sequence divergence suggests regulatory rather than functional divergence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "mir-427 is one of the most strongly activated genes in the X. laevis embryonic genome, encoded as 33 precursor copies on Chr1L over 55 kilobases in the v10.1 assembly. The corresponding region on Chr1S is unalignable, suggesting mir-427 is encoded only on the L subgenome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C52 are supported by RNA-seq data (Figure 2D, Figure 2\u2014figure supplement 2A-D) and genome alignment analysis. The identification of the mir-427 locus structure and its L-specific location is well-documented through multiple lines of genomic evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "X. tropicalis encodes 171 tandemly arrayed mir-427 precursors on Chr03, thought to accelerate mature miR-427 accumulation during the MZT. Zebrafish encodes >2000 mir-430 precursors. The mir-427 locus has undergone genomic remodeling in X. laevis, resulting in absence from the S subgenome and possibly translocation between chromosomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C57 are supported by citations to Owens et al., 2016 for X. tropicalis and multiple citations for zebrafish. The inference about genomic remodeling (C56) is reasonable given the different chromosomal locations and copy number differences, though C57 (translocation) is appropriately presented as speculation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Cell dissociation is necessary for efficient CUT&RUN in X. laevis blastulae. H3K4me3 and H3K27ac are enriched at TSS regions of activated genes at stages 8 and 9, and differential homeolog activation significantly correlates with differential histone modification profiles, with a slight bias toward stronger L homeolog chromatin activity. No promoter sequence differences implicate differential transcription factor recruitment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C62 are supported by CUT&RUN data in Figure 3A-C and Figure 3\u2014figure supplement 1. The correlation between histone modifications and gene activation is well-demonstrated, and the lack of promoter sequence differences (C62) appropriately directs attention to distal regulatory elements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "15,654 putative open and acetylated gene-distal regulatory regions were identified at genome activation, with 5047 classified as high-confidence predicted enhancers. 79% of predicted enhancers lifted over to homeologous chromosomes, with >92% flanked by the same homeologous genes. Only 21% of high-confidence enhancer pairs had conserved activity in both homeologs. Differential predicted enhancer density significantly correlated with differential activation (p=1.3\u00d710\u207b\u00b9\u2076), while conserved enhancers had equivalent density near both homeologs (p=0.67).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C71 are supported by ATAC-seq and CUT&RUN data in Figure 3 and Figure 3\u2014figure supplement 2. The enhancer prediction methodology is rigorous, requiring enrichment in multiple replicates. The correlation between differential enhancer activity and differential gene activation (C69-C71) is a key finding supported by appropriate statistical tests.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "OCT4 and SOX2/3 binding motifs are strongly enriched in both active L and S enhancers. Given that mammalian OCT4 and SOX2 are master regulators of pluripotent stem cell induction and zebrafish homologs are maternally provided and required for embryonic genome activation, the authors hypothesized that differential enhancer binding by maternal X. laevis OCT4 and SOXB1 homologs underlies asymmetric activation of the L and S subgenomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C75 are supported by motif enrichment analysis (Figure 3F, Supplementary file 4) and citations to prior work. The hypothesis (C75) is well-motivated by the motif enrichment data and comparative biology, setting up the subsequent functional experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "RNA-seq confirms high maternal levels of sox3 and pou5f3.3 mRNA. Morpholino combinations targeting these genes led to mild (pou5f3.3+sox3), severe (pou5f3.2+pou5f3.3), or complete developmental arrest (all three morpholinos) with gastrulation defects, consistent with X. tropicalis reports.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C80 are supported by RNA-seq data (Figure 3\u2014figure supplement 2E) and phenotypic observations (Figure 4\u2014figure supplement 1A). The morpholino phenotypes are consistent with prior work in X. tropicalis (Gentsch et al., 2019), validating the approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "RNA-seq of morpholino-treated embryos revealed that only 15% of genes exhibited deficient activation while 43% exhibited higher levels. Gene increases could be due to direct or indirect transcriptional repression and were predominantly detected from intron signal. A larger proportion of strictly zygotic genes were down-regulated compared to maternal-zygotic genes (p=6.6\u00d710\u207b\u00b9\u2078).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C85 are supported by RNA-seq data in Figure 4A and Figure 4\u2014figure supplement 1. The observation that many genes are up-regulated in morphants (C82) is unexpected but well-documented. The use of intron signal (C84) appropriately rules out post-transcriptional effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Nearly 70% of first-wave genes were down-regulated in Pou5f3/Sox3 morpholino-treated embryos with cycloheximide treatment, suggesting that maternal Pou5f3 and Sox3 directly activate a large proportion of first-wave genome activation, but newly synthesized zygotic factors rapidly mobilize to refine target gene expression levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C88 are supported by RNA-seq data in Figure 4A-C and Figure 4\u2014figure supplement 1B-F. The cycloheximide experiment appropriately distinguishes direct from indirect effects, and the inference about zygotic refinement (C88) is well-supported by the difference between morpholino effects with and without cycloheximide.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C89",
+      "C90"
+    ],
+    "result": "In the absence of wild-type Pou5f3 and Sox3 activity, divergent homeolog activation is reduced for a subset of genes. A significantly larger proportion of strictly zygotic genes encoded on both subgenomes is activated by Pou5f3 and Sox3 compared to singleton genes (p=0.0020).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C90 are supported by RNA-seq data in Figure 4D-G and Figure 4\u2014figure supplement 1M-N. The observation that Pou5f3/Sox3 preferentially regulate genes with two homeologs (C90) suggests these factors mediate homeolog-specific expression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "CUT&RUN revealed thousands of binding sites for Pou5f3 and Sox3. Homer de novo motif analysis recovered the OCT4 and SOX3 binding sequences as top hits (p=10\u207b\u00b2\u2075\u00b2 and p=10\u207b\u00b9\u2070\u2074). At least 10% of peaks contain matches to the Oct4-Sox2 heterodimer motif, suggesting Pou5f3 and Sox3 may form a complex in the blastula.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C94 are supported by CUT&RUN data in Figure 4I and Figure 4\u2014figure supplement 2. The motif analysis validates the antibodies and the inference about complex formation (C94) is reasonable given the dimer motif presence and mammalian precedent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "CUT&RUN signal for Pou5f3 and Sox3 is enriched near genes down-regulated in morphants (p<1\u00d710\u207b\u2074\u00b3) but not up-regulated genes, confirming up-regulation is an indirect effect. Down-regulated genes are highly significantly nearer to predicted regulatory elements with enriched Pou5f3 and Sox3 binding (p<1\u00d710\u207b\u00b3\u2070\u2070). Differential Pou5f3 and Sox3 binding mirrors differential predicted enhancer activity, and subgenome-specific binding is enriched near the affected homeolog (p=7.9\u00d710\u207b\u00b9\u00b3).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C100 are supported by CUT&RUN data analysis in Figure 4I-L and Figure 4\u2014figure supplement 2. The correlation between TF binding, enhancer activity, and gene regulation is well-demonstrated through multiple complementary analyses with highly significant p-values.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "There is broad conservation of relative expression levels between X. tropicalis and X. laevis when homeolog levels are summed (Spearman's \u03c1=0.67), but the correlation weakens when subgenomes are considered independently (L: \u03c1=0.56; S: \u03c1=0.47). X. tropicalis is a better estimator for the composite X. laevis transcriptome than for either subtranscriptome individually (p<4.3\u00d710\u207b\u00b9\u00b3 for strictly zygotic genes), suggesting X. laevis underwent regulatory changes post-allotetraploidization that maintained relative gene expression dosage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C104 are supported by comparative RNA-seq analysis in Figure 5A and Figure 5\u2014figure supplement 1A-C. The statistical analysis appropriately demonstrates that combined homeolog expression better matches the diploid state than individual homeologs, supporting the dosage maintenance hypothesis (C104).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Genes activated from both X. laevis homeologs are more likely to have orthologous X. tropicalis activation (p=1.7\u00d710\u207b\u2074\u2074) and conserved X. tropicalis Pou5f3/Sox3 regulation (p<1.7\u00d710\u207b\u2076), suggesting many differentially activated homeologs have acquired novel ZGA regulation by Pou5f3 and Sox3 compared to the inferred ancestral state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C107 are supported by statistical analysis in Figure 5B and Figure 5\u2014figure supplement 1D with citation to Gentsch et al., 2019. The inference about novel regulation (C107) is well-supported by the conservation analysis showing differential patterns for co-activated versus differentially activated homeologs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C108",
+      "C109"
+    ],
+    "result": "Subgenome-specific predicted enhancers are less likely to be conserved with X. tropicalis (p=1.5\u00d710\u207b\u2077\u2076 for high confidence enhancers), consistent with greater regulatory innovation underlying differentially activated homeologs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C109 are supported by statistical analysis in Figure 5C and Figure 5\u2014figure supplement 1E. The enhancer conservation analysis parallels the gene activation conservation analysis, providing independent support for the regulatory innovation hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "Genes activated in X. laevis are largely also expressed in zebrafish embryos. Co-activated X. laevis homeologs are more likely to be part of the first wave of zebrafish genome activation (p=4.3\u00d710\u207b\u00b9\u00b2) and targeted by zebrafish maternal homologs of OCT4, SOX2, and NANOG (p=1.8\u00d710\u207b\u2074\u2075). Subgenome-shared predicted enhancers are more likely to have evidence for conservation in zebrafish (p=2.8\u00d710\u207b\u2075\u2078 for all enhancers). This suggests the regulatory architecture underlying differential homeolog activation is more likely to be derived, in contrast to deeply conserved networks regulating co-activated homeologs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C114 are supported by comparative analysis with zebrafish data in Figure 5D and Figure 5\u2014figure supplement 1F-H. The conservation analysis across ~450 million years of evolution provides strong support for the conclusion that co-activated homeologs represent conserved regulatory programs while differential activation represents derived innovation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "Xenopus and possibly all Anuran amphibians lack a NANOG ortholog, likely due to a chromosomal deletion. Maternal Pou5f3.3 and Sox3 seem to have subsumed NANOG's roles in X. laevis genome activation, while zygotic factors such as Ventx help promote cell potency in the early gastrula.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C117 are supported by citation to Schuff et al., 2012 for NANOG absence and citations to Scerbo et al., 2012 and Schuff et al., 2012 for Ventx. The inference about Pou5f3.3/Sox3 subsuming NANOG's role (C116) is reasonable given the functional data and the absence of NANOG.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C118"
+    ],
+    "result": "There is core-vertebrate mechanistic conservation in genome activation amid both cis- and trans-regulatory shuffling, which converge to support pluripotent stem cell induction and embryonic development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C118 is supported by the comparative analyses with X. tropicalis and zebrafish showing conservation of gene expression levels and regulatory factors despite regulatory architecture differences. This represents a synthesis of the major findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "Pou5f3.3 and Sox3 are maternal activators of embryonic genome activation, differentially recruited to the two homeologous subgenomes by a rewired enhancer network. A majority of annotated homeolog pairs experience differential activation during the MZT, driven by subgenome-specific enhancer gain and/or loss correlated with differential Pou5f3.3/Sox3 binding and regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C122 represent the main conclusions of the study, supported by the morpholino, CUT&RUN, ATAC-seq, and RNA-seq data presented throughout. These claims synthesize the major findings into a coherent model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C123"
+    ],
+    "result": "The magnitude of regulatory divergence between X. laevis subgenomes has had a net neutral effect on the composite reprogrammed embryonic transcriptome, as combined subgenome activation produces a transcriptome akin to diploid X. tropicalis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C123 is supported by the comparative transcriptome analysis in Figure 5A showing Spearman's \u03c1=0.67 for combined L+S expression versus X. tropicalis. This represents a key interpretation of the dosage maintenance findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C124",
+      "C127"
+    ],
+    "result": "Regulatory divergence between the X. laevis subgenomes is likely even broader as embryogenesis proceeds. Focusing on accessible chromatin in animal caps may have underestimated the magnitude of homeologous enhancer divergence regulating endodermal fate in vegetal cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C124 and C127 are presented as speculation and limitations in the Discussion. C124 is based on observed trends but lacks direct evidence for later stages. C127 appropriately acknowledges a methodological limitation of the ATAC-seq approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C128"
+    ],
+    "result": "Subgenome regulatory differences in X. laevis converge to producing ancestral dosages in the transcriptome, based on the close morphological similarity of X. tropicalis and X. laevis embryos.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C128 is presented as a prediction based on morphological similarity and is supported by the transcriptome data for early stages. The prediction for later stages is reasonable given the established morphological similarity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "Although homeolog expression bias can derive from gene regulatory differences evolved in the parental species prior to hybridization, the authors propose that regulatory upheaval in X. laevis post-hybridization led to expression level gain or loss in one homeolog, which was subsequently corrected by compensatory changes to the other homeolog. This implies that early development exerts constraint on the reprogrammed embryonic transcriptome while tolerating regulatory turnover.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C129-C131 represent a proposed model in the Discussion. C129 is supported by citations, but C130 is explicitly presented as a proposal with citations to support the concept but not direct evidence for this specific mechanism in X. laevis. C131 is an inference from the proposed model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C132",
+      "C133"
+    ],
+    "result": "The reconfiguration of the mir-427 cluster highlights how essential MZT regulatory mechanisms can evolve neutrally. X. laevis embryos illustrate how the pluripotency program may have accommodated regulatory network disruptions, genomic instability, and aneuploidy across the animal tree.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C132-C133 are interpretations of the mir-427 findings and the broader study results. C132 is supported by the mir-427 genomic data showing different configurations in X. laevis and X. tropicalis despite conserved function. C133 represents a broader implication of the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Background on zygotic genome activation across animals: ZGA is triggered after transcriptional quiescence following fertilization. In mammals, this occurs during slow first cleavages before pluripotent stem cell induction by NANOG, OCT4, and SOX2. In zebrafish, Xenopus, and Drosophila, genomes activate in the blastula hours after fertilization. Zebrafish maternal homologs of NANOG, OCT4, and SOX2 are required for genome activation. Drosophila uses unrelated maternal factors (Zelda, CLAMP, GAF) that share functional aspects with vertebrate pluripotency factors. This diversity implies the pluripotency gene network has been extensively modified over evolutionary time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C17 provide background context supported by multiple citations to established literature. These claims accurately represent prior knowledge about ZGA mechanisms across animals and set up the rationale for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Background on X. laevis: The recent high-quality genome assembly has made it feasible to resolve differential expression and regulation between subgenomes. Allopolyploidy often provokes acute effects on gene expression, leading to regulatory shifts over time. For X. laevis, there is a broad trend toward balanced homeolog expression with a subtle L bias that emerges after genome activation, and an overall trajectory similar to diploid X. tropicalis. Initial observations demonstrated differential homeologous enhancer activity in the eye and divergent cis-regulatory landscapes in the early gastrula, suggesting embryonic genome activation is likely asymmetric between subgenomes. However, ZGA regulators had not previously been identified in X. laevis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C30 provide background on X. laevis biology and prior work, supported by citations to Session et al., 2016; Elurbe et al., 2017; Ochi et al., 2017; and others. These claims accurately represent prior knowledge and identify the gap addressed by this study (C30).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Summary of main findings: The authors identify maternal Pou5f3 and Sox3 as top-level regulators of X. laevis pluripotency and ZGA, elucidate the predicted enhancer architecture that differentially recruits them to homeologous gene copies between subgenomes, and show that despite differential subgenome activation, combined transcriptional output converges to proportionally resemble the diploid state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C33 summarize the main findings stated in the introduction and are supported by the data presented throughout the manuscript (morpholino experiments, CUT&RUN, ATAC-seq, and comparative transcriptomics).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R32",
+    "claim_ids": [
+      "C125",
+      "C126"
+    ],
+    "result": "In X. tropicalis, signal transducers and transcription factors including Pou5f3.2/3, Sox3, Smad1/2, \u03b2-catenin, Vegt, Otx1, and Foxh1 regulate embryo-wide and regional gene activation, and binding motifs for some of these are found in differentially active X. laevis enhancers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125-C126 are supported by citations to Charney et al., 2017; Gentsch et al., 2019; Paraiso et al., 2019 for X. tropicalis and motif analysis in Figure 3F and Supplementary file 4 for X. laevis. This provides context for the broader regulatory network.",
+    "result_type": "MINOR"
+  }
+]

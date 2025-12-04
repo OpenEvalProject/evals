@@ -1,0 +1,365 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C100"
+    ],
+    "result": "Bumblebees successfully learned to discriminate between plus and multiplication sign patterns using differential conditioning. Both groups (n=20 each) achieved >92% accuracy after 70 training choices, with no significant difference between groups or effect of colony membership.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C44 provide convergent statistical evidence (Wilcoxon tests, GLMM analysis) showing both groups learned the discrimination task with high accuracy. The experimental design (C31-C35) is clearly described with appropriate controls and sample sizes. Performance was maintained in unrewarded tests (C42-C44), confirming genuine learning rather than reward-tracking.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Bees did not discriminate patterns from a distance, showing ~50% correct initial pattern inspections upon arena entry. Even when initially approaching the correct pattern, bees consistently performed close-range scans before making decisions, indicating reliance on close inspection rather than distance-based discrimination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C49 provide statistical evidence (chi-square test, p=0.55) that initial pattern selection was at chance level. Observational data (C48, C102-C103) consistently shows scanning behavior even after correct initial approaches. This convergent evidence strongly supports that bees require close inspection for this task.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Transfer tests revealed that bees relied on specific pattern regions and orientations for discrimination. Bees successfully discriminated bottom-half patterns (p<7.7e-3) and showed orientation-specific preferences, but failed to discriminate top-half patterns alone (p>0.83), indicating reliance on lower pattern sections and individual bar orientations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C57 provide statistical evidence from three transfer tests with appropriate controls. The bottom-half test shows significant discrimination (C50), top-half test shows chance performance (C52), and single-bar test shows orientation specificity (C54-C56). These results are internally consistent and support the conclusion that bees use partial cues (C58-C59).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C127"
+    ],
+    "result": "Bees exhibited stereotyped scanning behavior, preferentially inspecting the lower portions of patterns (89.2% for Group 1, 87% for Group 2) with a left-side bias. Scanning patterns were pattern-specific: Group 1 bees scanned the vertical bar center for plus signs and lower left corner for multiplication signs, while both groups showed consistent approach strategies regardless of reward contingency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C83 provide detailed quantitative observations from video analysis showing consistent scanning patterns. The percentages and specific behaviors are well-documented across multiple bees and trials. The consistency of behavior across both training groups (C127) and alignment with transfer test performance (C84) provides strong convergent support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Quantitative flight analysis revealed distinct behavioral states: bees approached at median 0.20 m/s, slowed to 0.11 m/s during pattern inspection from 10-50mm distance, spending ~1.51s per inspection. During inspection, bees oriented their bodies at ~\u00b130\u00b0 to the wall, while showing wider orientation ranges during inter-pattern flights. Rejection flights were three times faster than acceptance flights.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C67 provide precise quantitative measurements from video analysis with clear methodology. The measurements are internally consistent (e.g., speed changes correlate with behavioral states) and include appropriate statistical descriptors (medians, SEMs). The body orientation data (C66) is particularly well-characterized with specific angles.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154"
+    ],
+    "result": "Bees demonstrated persistent, learned scanning strategies focused on lower pattern regions. In bottom-half tests, bees maintained their trained scanning patterns and showed longer hovering times for correct acceptances (p<2.7e-4). In top-half tests, despite inability to discriminate (p>0.83), bees continued scanning lower sections where no cues existed, revealing strong spatial bias and limited adaptability to novel cue locations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C99 and C149-C154 provide convergent evidence from heatmap analysis and hovering time measurements. Statistical tests (C94-C97) support differential scanning times. The persistence of lower-region scanning even when cues are absent (C90, C152) is particularly compelling evidence for learned spatial strategies. The interpretation of limited adaptability (C153-C154) is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C106",
+      "C143",
+      "C147",
+      "C148",
+      "C155",
+      "C156",
+      "C157",
+      "C158"
+    ],
+    "result": "Bees employed active vision strategies involving sequential feature scanning to efficiently discriminate patterns. Selective scanning behaviors enhanced discrimination accuracy, with bees dynamically integrating sensory sampling and decision-making. This strategy minimizes cognitive load by focusing on minimal, stable visual cues, though it shows experience-dependent limitations in adaptability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C9 and C106 summarize the main findings supported by the detailed behavioral data. Claims C143-C158 provide interpretive synthesis consistent with the experimental observations. The conclusion about active vision (C8-C9, C106) is well-supported by the scanning behavior data, though some interpretations about cognitive load (C155) are more speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C101",
+      "C26",
+      "C100"
+    ],
+    "result": "Unlike honeybees in Y-maze experiments that failed to discriminate plus from multiplication signs at fixed distances (~50\u00b0 visual angle), bumblebees in this free-flight arena successfully learned the discrimination by inspecting patterns at close range (1-5 cm, 90-160\u00b0 visual angle).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C26 accurately cites prior honeybee failures, while C100-C101 document the successful bumblebee performance with specific distance and angle measurements. The comparison is valid and highlights the importance of inspection distance, though the species difference (bumblebee vs honeybee) is a potential confound not fully addressed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "Previous research showed that honeybees trained with absolute conditioning prioritized lower pattern halves and failed top-half discrimination, but learned whole patterns with differential conditioning. This contrasts with the current bumblebee study where differential conditioning still resulted in lower-half preference.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C110 accurately cite prior research on honeybees. However, the comparison reveals an interesting discrepancy: the current study used differential conditioning but bees still showed lower-half bias, unlike the cited honeybee studies. This suggests species or methodological differences that warrant further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C71",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "Bees showed a consistent left-side scanning preference (pseudoneglect), a phenomenon also observed in humans and birds. Since insect and vertebrate visual systems evolved independently, this represents convergent evolution, though the computational advantage remains unknown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C71 documents the left preference in the data. Claims C118-C121 appropriately cite comparative literature and make reasonable evolutionary inferences. The acknowledgment of unknown mechanism (C122) is appropriately cautious. The convergent evolution argument (C121) is logically sound given independent evolution of visual systems.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C66",
+      "C123",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "Bees' tendency to scan with one eye predominantly facing the pattern (~\u00b130\u00b0 body orientation) may provide computational advantages. Previous modeling suggested that having one eye partially obscured could provide more distinct neural inputs to mushroom bodies and allow simultaneous learning of pattern and location cues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C66 provides solid observational data on body orientation. However, claims C123-C126 are largely speculative interpretations based on prior modeling work. The connection between the observed behavior and the proposed neural mechanism is not directly tested. The speculation is reasonable but requires experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "Multiple factors may explain bees' lower-pattern preference: ecological factors (lower flowers contain more nectar), anatomical factors (functional differences in eye regions), and efficiency factors (capturing key information quickly). However, these remain speculative explanations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C111-C117 cite relevant literature (C111, C113) but are primarily speculative explanations for the observed lower-pattern bias. While the hypotheses are plausible and grounded in prior research, none are directly tested in this study. Claims C115 and C117 are particularly speculative without supporting data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "Flight tracking analysis suggests bees learn both rewarding and aversive pattern features during training, with the stimulus directing scanning behavior. Bees occasionally scanned multiple pattern elements in sequence, contradicting the hypothesis that they simply searched for the first visual item at lower left.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C130-C131 provide observational evidence of sequential scanning that contradicts the simpler hypothesis (C128). Claim C129 appropriately notes this conflict. The inference that bees learn both positive and negative features (C132) is reasonable given the differential conditioning protocol and observed behaviors. Claim C133 provides relevant context from prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C144",
+      "C145",
+      "C146"
+    ],
+    "result": "Bees showed differential scanning times based on cue availability: shorter scanning when rejecting partial patterns (bottom-half or top-half tests) compared to acceptance, but similar times for acceptance and rejection of complete patterns. This aligns with rapid rejection when learned evidence is reduced.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C144-C145 report specific observational patterns from the data shown in figures. Claim C146 appropriately connects to prior research. The pattern is internally consistent: bees spend less time when expected cues are absent, suggesting efficient decision-making. However, statistical tests for these specific comparisons are not fully reported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139"
+    ],
+    "result": "Historical context shows evolution of bee pattern discrimination paradigms: early horizontal presentation limited bees to local cues, vertical presentation enabled study of diverse features, and Y-mazes controlled decision distance but limited analysis of scanning strategies. The current free-flight paradigm enables detailed scanning behavior analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C134-C139 provide accurate historical context citing appropriate literature. The progression from horizontal to vertical presentation to Y-mazes to free-flight arenas is well-documented. The critique that Y-mazes are less useful for studying scanning strategies (C139) is reasonable and justifies the current methodology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C140",
+      "C141",
+      "C142"
+    ],
+    "result": "Analysis of rejection responses provides valuable insights into decision-making processes and visual features used by bees, yet this approach has been largely ignored in insect visual learning literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C140-C141 make reasonable assertions about the value of analyzing rejection responses, supported by citations. Claim C142 accurately characterizes a gap in the literature. This justifies the study's focus on both acceptance and rejection behaviors, though the claim about being \"largely ignored\" could benefit from more systematic literature review.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C159",
+      "C160",
+      "C161"
+    ],
+    "result": "The study developed an automated tracking algorithm that operates without prior training and minimal free parameters, enabling faster, energy-efficient analysis of bee flight behavior using standard or high-frame-rate cameras.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C160-C161 describe specific capabilities of the developed algorithm. Claim C159 provides context about technological advances. The algorithm's capabilities are demonstrated through the extensive analysis presented. However, detailed validation metrics, comparison with other methods, and code availability are not discussed, limiting full assessment of the methodological contribution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Background context on active vision across species and bee visual discrimination capabilities. Active vision is well-documented in vertebrates and insects, with various species showing characteristic scanning behaviors. Bees can discriminate complex patterns but have historically failed some simple discriminations, with performance affected by viewing distance, neural sensitivity, and scanning procedures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C30 provide literature review and background context, appropriately citing prior research. These claims establish the scientific foundation for the study but do not present new findings. The citations appear accurate and relevant, though the characterization of some prior work (e.g., C25-C26) could be more nuanced regarding experimental conditions.",
+    "result_type": "MINOR"
+  }
+]

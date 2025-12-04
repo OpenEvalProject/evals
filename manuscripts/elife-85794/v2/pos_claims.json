@@ -1,0 +1,938 @@
+[
+  {
+    "query": "Environmental DNA (eDNA) is becoming an increasingly important tool in diverse scientific fields from ecological biomonitoring to wastewater surveillance of viruses.",
+    "matched_segment": "Environmental DNA (eDNA) is becoming an increasingly important tool in diverse scientific fields from ecological biomonitoring to wastewater surveillance of viruses.",
+    "start": {
+      "xpath": "/article/front/article-meta/abstract",
+      "char_offset": 0
+    },
+    "stop": {
+      "xpath": "/article/front/article-meta/abstract",
+      "char_offset": 165
+    },
+    "len": 165
+  },
+  {
+    "query": "The fundamental challenge in eDNA analyses has been the bioinformatical assignment of reads to taxonomic groups.",
+    "matched_segment": "The fundamental challenge in eDNA analyses has been the bioinformatical assignment of reads to taxonomic groups.",
+    "start": {
+      "xpath": "/article/front/article-meta/abstract",
+      "char_offset": 166
+    },
+    "stop": {
+      "xpath": "/article/front/article-meta/abstract",
+      "char_offset": 278
+    },
+    "len": 112
+  },
+  {
+    "query": "It has long been known that full probabilistic methods for phylogenetic assignment are preferable, but unfortunately, such methods are computationally intensive and are typically inapplicable to modern next-generation sequencing data.",
+    "matched_segment": "It has long been known that full probabilistic methods for phylogenetic assignment are preferable, but unfortunately, such methods are computationally intensive and are typically inapplicable to modern next-generation sequencing data.",
+    "start": {
+      "xpath": "/article/front/article-meta/abstract",
+      "char_offset": 279
+    },
+    "stop": {
+      "xpath": "/article/front/article-meta/abstract",
+      "char_offset": 513
+    },
+    "len": 234
+  },
+  {
+    "query": "Applying the new method to several mock communities and simulated datasets, we show that it identifies more reads at both high and low taxonomic levels more accurately than other leading methods.",
+    "matched_segment": "Applying the new method to several mock communities and simulated datasets, we show that it identifies more reads at both high and low taxonomic levels more accurately than other leading methods.",
+    "start": {
+      "xpath": "/article/front/article-meta/abstract",
+      "char_offset": 608
+    },
+    "stop": {
+      "xpath": "/article/front/article-meta/abstract",
+      "char_offset": 803
+    },
+    "len": 195
+  },
+  {
+    "query": "The advantage of the method is particularly apparent in the presence of polymorphisms and/or sequencing errors and when the true species is not represented in the reference database.",
+    "matched_segment": "The advantage of the method is particularly apparent in the presence of polymorphisms and/or sequencing errors and when the true species is not represented in the reference database.",
+    "start": {
+      "xpath": "/article/front/article-meta/abstract",
+      "char_offset": 804
+    },
+    "stop": {
+      "xpath": "/article/front/article-meta/abstract",
+      "char_offset": 986
+    },
+    "len": 182
+  },
+  {
+    "query": "The advantage of the method is particularly apparent in the presence of polymorphisms and/or sequencing errors and when the true species is not represented in the reference database.",
+    "matched_segment": "The advantage of the method is particularly apparent in the presence of polymorphisms and/or sequencing errors and when the true species is not represented in the reference database.",
+    "start": {
+      "xpath": "/article/front/article-meta/abstract",
+      "char_offset": 804
+    },
+    "stop": {
+      "xpath": "/article/front/article-meta/abstract",
+      "char_offset": 986
+    },
+    "len": 182
+  },
+  {
+    "query": "This has led to the publication of more than 80 taxonomic classification methods (Gardner et al., 2019).",
+    "matched_segment": "This has led to the publication of more than 80 taxonomic classification methods (Gardner et al., 2019).",
+    "start": {
+      "xpath": "/article/body/sec[1]/p[1]",
+      "char_offset": 228
+    },
+    "stop": {
+      "xpath": "/article/body/sec[1]/p[1]",
+      "char_offset": 332
+    },
+    "len": 104
+  },
+  {
+    "query": "There are three major strategies in classification methods: (1) composition-based, which do not align sequences but extract compositional features (e.g., kmers) to build models of probabilistic taxonomic inclusion; (2) alignment-based, which rely on alignments to directly compare query sequences to reference sequences but do not use trees; and (3) phylogenetic-based, which rely on a phylogenetic tree reconstruction method, in addition to alignments, to perform a placement of the query onto the tree.",
+    "matched_segment": "There are three major strategies in classification methods: (1) composition-based, which do not align sequences but extract compositional features (e.g., kmers) to build models of probabilistic taxonomic inclusion; (2) alignment-based, which rely on alignments to directly compare query sequences to reference sequences but do not use trees; and (3) phylogenetic-based, which rely on a phylogenetic tree reconstruction method, in addition to alignments, to perform a placement of the query onto the tree.",
+    "start": {
+      "xpath": "/article/body/sec[1]/p[1]",
+      "char_offset": 333
+    },
+    "stop": {
+      "xpath": "/article/body/sec[1]/p[1]",
+      "char_offset": 837
+    },
+    "len": 504
+  },
+  {
+    "query": "These methods require an exact match between the kmer in the query sequence and the kmer in the reference database.",
+    "matched_segment": "These methods require an exact match between the kmer in the query sequence and the kmer in the reference database.",
+    "start": {
+      "xpath": "/article/body/sec[1]/p[2]",
+      "char_offset": 139
+    },
+    "stop": {
+      "xpath": "/article/body/sec[1]/p[2]",
+      "char_offset": 254
+    },
+    "len": 115
+  },
+  {
+    "query": "As a result of hash indexing of kmers, kraken2 (Wood et al., 2019), for example, can classify >1 million reads within 1 min using the entire Geengenes or SILVA databases (Lu and Salzberg, 2020).",
+    "matched_segment": "As a result of hash indexing of kmers, kraken2 (Wood et al., 2019), for example, can classify >1 million reads within 1 min using the entire Geengenes or SILVA databases (Lu and Salzberg, 2020).",
+    "start": {
+      "xpath": "/article/body/sec[1]/p[2]",
+      "char_offset": 255
+    },
+    "stop": {
+      "xpath": "/article/body/sec[1]/p[2]",
+      "char_offset": 449
+    },
+    "len": 194
+  },
+  {
+    "query": "However, alignment-based methods can be many orders of magnitude slower than composition-based tools since datasets with >10 million reads require weeks of BLASTN running time (Ainsworth et al., 2017).",
+    "matched_segment": "However, alignment-based methods can be many orders of magnitude slower than composition-based tools since datasets with >10 million reads require weeks of BLASTN running time (Ainsworth et al., 2017).",
+    "start": {
+      "xpath": "/article/body/sec[1]/p[2]",
+      "char_offset": 693
+    },
+    "stop": {
+      "xpath": "/article/body/sec[1]/p[2]",
+      "char_offset": 894
+    },
+    "len": 201
+  },
+  {
+    "query": "However, alignment-based methods can be many orders of magnitude slower than composition-based tools since datasets with >10 million reads require weeks of BLASTN running time (Ainsworth et al., 2017).",
+    "matched_segment": "However, alignment-based methods can be many orders of magnitude slower than composition-based tools since datasets with >10 million reads require weeks of BLASTN running time (Ainsworth et al., 2017).",
+    "start": {
+      "xpath": "/article/body/sec[1]/p[2]",
+      "char_offset": 693
+    },
+    "stop": {
+      "xpath": "/article/body/sec[1]/p[2]",
+      "char_offset": 894
+    },
+    "len": 201
+  },
+  {
+    "query": "However, large datasets with high rates of evolution are hard to align accurately (Sievers et al., 2011) and phylogeny estimation methods produce poor trees when MSAs are not of high quality (Kapli et al., 2020).",
+    "matched_segment": "However, large datasets with high rates of evolution are hard to align accurately (Sievers et al., 2011) and phylogeny estimation methods produce poor trees when MSAs are not of high quality (Kapli et al., 2020).",
+    "start": {
+      "xpath": "/article/body/sec[1]/p[3]",
+      "char_offset": 247
+    },
+    "stop": {
+      "xpath": "/article/body/sec[1]/p[3]",
+      "char_offset": 459
+    },
+    "len": 212
+  },
+  {
+    "query": "However, large datasets with high rates of evolution are hard to align accurately (Sievers et al., 2011) and phylogeny estimation methods produce poor trees when MSAs are not of high quality (Kapli et al., 2020).",
+    "matched_segment": "However, large datasets with high rates of evolution are hard to align accurately (Sievers et al., 2011) and phylogeny estimation methods produce poor trees when MSAs are not of high quality (Kapli et al., 2020).",
+    "start": {
+      "xpath": "/article/body/sec[1]/p[3]",
+      "char_offset": 247
+    },
+    "stop": {
+      "xpath": "/article/body/sec[1]/p[3]",
+      "char_offset": 459
+    },
+    "len": 212
+  },
+  {
+    "query": "Furthermore, phylogenetic placement tends to be computationally demanding as both running time and memory usage scale linearly with the size of the reference database (Balaban et al., 2020).",
+    "matched_segment": "Furthermore, phylogenetic placement tends to be computationally demanding as both running time and memory usage scale linearly with the size of the reference database (Balaban et al., 2020).",
+    "start": {
+      "xpath": "/article/body/sec[1]/p[3]",
+      "char_offset": 460
+    },
+    "stop": {
+      "xpath": "/article/body/sec[1]/p[3]",
+      "char_offset": 650
+    },
+    "len": 190
+  },
+  {
+    "query": "Even for reference databases that contain sequences as few as 1600 sequences, assignment for a single query using the most cited phylogenetic placement method, pplacer (Matsen et al., 2010), takes more than 7 min and requires over 10 GB of RAM (on a Dell PowerEdge server with 32 CPU threads and 512 GB of RAM).",
+    "matched_segment": "Even for reference databases that contain sequences as few as 1600 sequences, assignment for a single query using the most cited phylogenetic placement method, pplacer (Matsen et al., 2010), takes more than 7 min and requires over 10 GB of RAM (on a Dell PowerEdge server with 32 CPU threads and 512 GB of RAM).",
+    "start": {
+      "xpath": "/article/body/sec[1]/p[3]",
+      "char_offset": 651
+    },
+    "stop": {
+      "xpath": "/article/body/sec[1]/p[3]",
+      "char_offset": 962
+    },
+    "len": 311
+  },
+  {
+    "query": "At this rate, a reference database that contains a metabarcode such as cytochrome oxidase 1 (COI) that has at least 1.5 million reference sequences, assigning just a single query would require 20.9 hr and 2.37 TB RAM.",
+    "matched_segment": "At this rate, a reference database that contains a metabarcode such as cytochrome oxidase 1 (COI) that has at least 1.5 million reference sequences, assigning just a single query would require 20.9 hr and 2.37 TB RAM.",
+    "start": {
+      "xpath": "/article/body/sec[1]/p[3]",
+      "char_offset": 963
+    },
+    "stop": {
+      "xpath": "/article/body/sec[1]/p[3]",
+      "char_offset": 1180
+    },
+    "len": 217
+  },
+  {
+    "query": "To address these challenges, the most recent implementations of phylogeny-based methods (Barbera et al., 2019) rely on reference database reduction techniques (i.e., using only representative taxa or consensus sequences for a sparse backbone tree) to handle the large amount of data that is routinely produced.",
+    "matched_segment": "To address these challenges, the most recent implementations of phylogeny-based methods (Barbera et al., 2019) rely on reference database reduction techniques (i.e., using only representative taxa or consensus sequences for a sparse backbone tree) to handle the large amount of data that is routinely produced.",
+    "start": {
+      "xpath": "/article/body/sec[1]/p[4]",
+      "char_offset": 0
+    },
+    "stop": {
+      "xpath": "/article/body/sec[1]/p[4]",
+      "char_offset": 310
+    },
+    "len": 310
+  },
+  {
+    "query": "Often a single species is selected to represent an entire clade (Czech et al., 2022).",
+    "matched_segment": "Often a single species is selected to represent an entire clade (Czech et al., 2022).",
+    "start": {
+      "xpath": "/article/body/sec[1]/p[4]",
+      "char_offset": 311
+    },
+    "stop": {
+      "xpath": "/article/body/sec[1]/p[4]",
+      "char_offset": 396
+    },
+    "len": 85
+  },
+  {
+    "query": "While this reduces the computational cost, it also reduces the granularity, and potentially the accuracy, of the assignments.",
+    "matched_segment": "While this reduces the computational cost, it also reduces the granularity, and potentially the accuracy, of the assignments.",
+    "start": {
+      "xpath": "/article/body/sec[1]/p[4]",
+      "char_offset": 397
+    },
+    "stop": {
+      "xpath": "/article/body/sec[1]/p[4]",
+      "char_offset": 522
+    },
+    "len": 125
+  },
+  {
+    "query": "Here, we describe a new method for phylogenetic placement, implemented in the program 'Tronko' (https://github.com/lpipes/tronko, Mapper and Pipes, 2024), the first phylogeny-based taxonomic classification method designed to truly enable the use of modern-day reference databases and NGS data.",
+    "matched_segment": "Here, we describe a new method for phylogenetic placement, implemented in the program 'Tronko' (https://github.com/lpipes/tronko, Mapper and Pipes, 2024), the first phylogeny-based taxonomic classification method designed to truly enable the use of modern-day reference databases and NGS data.",
+    "start": {
+      "xpath": "/article/body/sec[1]/p[5]",
+      "char_offset": 0
+    },
+    "stop": {
+      "xpath": "/article/body/sec[1]/p[5]",
+      "char_offset": 293
+    },
+    "len": 293
+  },
+  {
+    "query": "Tronko shows speed-ups >20 times over pplacer, with a vastly reduced memory requirement illustrating the computational advantage of the approximations in Tronko (Figure 1\u2014figure supplement 2).",
+    "matched_segment": "Tronko shows speed-ups >20 times over pplacer, with a vastly reduced memory requirement illustrating the computational advantage of the approximations in Tronko (Figure 1\u2014figure supplement 2).",
+    "start": {
+      "xpath": "/article/body/sec[2]/p[1]",
+      "char_offset": 446
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/p[1]",
+      "char_offset": 639
+    },
+    "len": 193
+  },
+  {
+    "query": "Tronko demonstrates a speed-up >2 times over APPLES-2 with a similar memory footprint.",
+    "matched_segment": "Tronko demonstrates a speed-up >2 times over APPLES-2 with a similar memory footprint.",
+    "start": {
+      "xpath": "/article/body/sec[2]/p[1]",
+      "char_offset": 640
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/p[1]",
+      "char_offset": 726
+    },
+    "len": 86
+  },
+  {
+    "query": "In terms of accuracy, all methods had a 100% true-positive rate at the species level.",
+    "matched_segment": "In terms of accuracy, all methods had a 100% true-positive rate at the species level.",
+    "start": {
+      "xpath": "/article/body/sec[2]/p[1]",
+      "char_offset": 727
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/p[1]",
+      "char_offset": 812
+    },
+    "len": 85
+  },
+  {
+    "query": "Additionally, in terms of the species assignment rate (the percentage of queries that were assigned at the species level), Tronko assigns the most queries.",
+    "matched_segment": "Additionally, in terms of the species assignment rate (the percentage of queries that were assigned at the species level), Tronko assigns the most queries.",
+    "start": {
+      "xpath": "/article/body/sec[2]/p[1]",
+      "char_offset": 813
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/p[1]",
+      "char_offset": 968
+    },
+    "len": 155
+  },
+  {
+    "query": "Using 150 bp paired-end reads with 1% error, Tronko had a misclassification rate of only 9.8% with a recall rate of 70.1% at the genus level using a cut-off set to 15 while kraken2, MEGAN, and metaphlan2 had misclassification rates of 33.5, 10.0, and 27.7%, respectively, with recall rates of 90.6, 52.1, and 95.0% (see Figure 2B).",
+    "matched_segment": "Using 150 bp paired-end reads with 1% error, Tronko had a misclassification rate of only 9.8% with a recall rate of 70.1% at the genus level using a cut-off set to 15 while kraken2, MEGAN, and metaphlan2 had misclassification rates of 33.5, 10.0, and 27.7%, respectively, with recall rates of 90.6, 52.1, and 95.0% (see Figure 2B).",
+    "start": {
+      "xpath": "/article/body/sec[2]/p[4]",
+      "char_offset": 268
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/p[4]",
+      "char_offset": 599
+    },
+    "len": 331
+  },
+  {
+    "query": "Using 150 bp paired-end reads with 1% error, Tronko had a misclassification rate of only 9.8% with a recall rate of 70.1% at the genus level using a cut-off set to 15 while kraken2, MEGAN, and metaphlan2 had misclassification rates of 33.5, 10.0, and 27.7%, respectively, with recall rates of 90.6, 52.1, and 95.0% (see Figure 2B).",
+    "matched_segment": "Using 150 bp paired-end reads with 1% error, Tronko had a misclassification rate of only 9.8% with a recall rate of 70.1% at the genus level using a cut-off set to 15 while kraken2, MEGAN, and metaphlan2 had misclassification rates of 33.5, 10.0, and 27.7%, respectively, with recall rates of 90.6, 52.1, and 95.0% (see Figure 2B).",
+    "start": {
+      "xpath": "/article/body/sec[2]/p[4]",
+      "char_offset": 268
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/p[4]",
+      "char_offset": 599
+    },
+    "len": 331
+  },
+  {
+    "query": "Using 150 bp paired-end reads with 0% error (Figure 4D), Tronko had a misclassification rate at only 0.1% with a recall rate of 58.6% at the species level using a cut-off set to 10 while kraken2, MEGAN, and metaphlan2 had misclassification rates of 1.5, 0.1, and 11.0%, respectively, with recall rates of 85.4, 60.7, and 98.14%.",
+    "matched_segment": "Using 150 bp paired-end reads with 0% error (Figure 4D), Tronko had a misclassification rate at only 0.1% with a recall rate of 58.6% at the species level using a cut-off set to 10 while kraken2, MEGAN, and metaphlan2 had misclassification rates of 1.5, 0.1, and 11.0%, respectively, with recall rates of 85.4, 60.7, and 98.14%.",
+    "start": {
+      "xpath": "/article/body/sec[2]/p[5]",
+      "char_offset": 456
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/p[5]",
+      "char_offset": 784
+    },
+    "len": 328
+  },
+  {
+    "query": "Using 150 bp paired-end reads with 0% error (Figure 4D), Tronko had a misclassification rate at only 0.1% with a recall rate of 58.6% at the species level using a cut-off set to 10 while kraken2, MEGAN, and metaphlan2 had misclassification rates of 1.5, 0.1, and 11.0%, respectively, with recall rates of 85.4, 60.7, and 98.14%.",
+    "matched_segment": "Using 150 bp paired-end reads with 0% error (Figure 4D), Tronko had a misclassification rate at only 0.1% with a recall rate of 58.6% at the species level using a cut-off set to 10 while kraken2, MEGAN, and metaphlan2 had misclassification rates of 1.5, 0.1, and 11.0%, respectively, with recall rates of 85.4, 60.7, and 98.14%.",
+    "start": {
+      "xpath": "/article/body/sec[2]/p[5]",
+      "char_offset": 456
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/p[5]",
+      "char_offset": 784
+    },
+    "len": 328
+  },
+  {
+    "query": "We also observe that for increasing error rates, kraken2 and metaphlan2 have a substantial increase in misclassification rate.",
+    "matched_segment": "We also observe that for increasing error rates, kraken2 and metaphlan2 have a substantial increase in misclassification rate.",
+    "start": {
+      "xpath": "/article/body/sec[2]/p[5]",
+      "char_offset": 1059
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/p[5]",
+      "char_offset": 1185
+    },
+    "len": 126
+  },
+  {
+    "query": "In all simulations at both the genus and family levels, Tronko had a higher recall and a lower misclassification rate than all other methods.",
+    "matched_segment": "In all simulations at both the genus and family levels, Tronko had a higher recall and a lower misclassification rate than all other methods.",
+    "start": {
+      "xpath": "/article/body/sec[2]/p[6]",
+      "char_offset": 528
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/p[6]",
+      "char_offset": 669
+    },
+    "len": 141
+  },
+  {
+    "query": "For the data from Schirmer et al., 2015, at the species level, Tronko had a <0.6% misclassification rate at every cut-off with a recall rate of 11.0% at cut-off 0 (Figure 6A; see Figure 6\u2014figure supplement 1 for plot without outliers).",
+    "matched_segment": "For the data from Schirmer et al., 2015, at the species level, Tronko had a <0.6% misclassification rate at every cut-off with a recall rate of 11.0% at cut-off 0 (Figure 6A; see Figure 6\u2014figure supplement 1 for plot without outliers).",
+    "start": {
+      "xpath": "/article/body/sec[2]/p[7]",
+      "char_offset": 1002
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/p[7]",
+      "char_offset": 1238
+    },
+    "len": 236
+  },
+  {
+    "query": "kraken2 had a misclassification rate of 1.2% with a recall rate of 10.6% when using its default database, and a misclassification rate of 3.5% and a recall rate of 35.1% when using the same reference sequences as Tronko.",
+    "matched_segment": "kraken2 had a misclassification rate of 1.2% with a recall rate of 10.6% when using its default database, and a misclassification rate of 3.5% and a recall rate of 35.1% when using the same reference sequences as Tronko.",
+    "start": {
+      "xpath": "/article/body/sec[2]/p[7]",
+      "char_offset": 1239
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/p[7]",
+      "char_offset": 1459
+    },
+    "len": 220
+  },
+  {
+    "query": "metaphlan2 did not have any assignments at the species, genus, or family level using the default database, and it had an 8.3% misclassification and 8.9% recall rate at the species level when using the same reference sequences as Tronko.",
+    "matched_segment": "metaphlan2 did not have any assignments at the species, genus, or family level using the default database, and it had an 8.3% misclassification and 8.9% recall rate at the species level when using the same reference sequences as Tronko.",
+    "start": {
+      "xpath": "/article/body/sec[2]/p[7]",
+      "char_offset": 1460
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/p[7]",
+      "char_offset": 1696
+    },
+    "len": 236
+  },
+  {
+    "query": "For the data from Lluch et al., 2015, at the genus level, Tronko had a misclassification rate of 0.6% and a recall rate of 22.3% using a cut-off of 0, while all other methods had a misclassification rate of >8% (see Figure 6\u2014figure supplement 2 for a close-up of the rates).",
+    "matched_segment": "For the data from Lluch et al., 2015, at the genus level, Tronko had a misclassification rate of 0.6% and a recall rate of 22.3% using a cut-off of 0, while all other methods had a misclassification rate of >8% (see Figure 6\u2014figure supplement 2 for a close-up of the rates).",
+    "start": {
+      "xpath": "/article/body/sec[2]/p[8]",
+      "char_offset": 0
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/p[8]",
+      "char_offset": 275
+    },
+    "len": 275
+  },
+  {
+    "query": "For the data from Gohl et al., 2016, at the species level, Tronko had a <2.6% misclassification rate at every cut-off with a recall rate of 12.8% at cut-off 0 (Figure 6C; see Figure 6\u2014figure supplement 3 for plot without outliers).",
+    "matched_segment": "For the data from Gohl et al., 2016, at the species level, Tronko had a <2.6% misclassification rate at every cut-off with a recall rate of 12.8% at cut-off 0 (Figure 6C; see Figure 6\u2014figure supplement 3 for plot without outliers).",
+    "start": {
+      "xpath": "/article/body/sec[2]/p[9]",
+      "char_offset": 0
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/p[9]",
+      "char_offset": 232
+    },
+    "len": 232
+  },
+  {
+    "query": "At the genus level, Tronko had a misclassification rate of <0.5% with a recall rate of 78.3% at the cut-off of 0 (Figure 6D; see Figure 6\u2014figure supplement 4 for plot without outliers).",
+    "matched_segment": "At the genus level, Tronko had a misclassification rate of <0.5% with a recall rate of 78.3% at the cut-off of 0 (Figure 6D; see Figure 6\u2014figure supplement 4 for plot without outliers).",
+    "start": {
+      "xpath": "/article/body/sec[2]/p[10]",
+      "char_offset": 232
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/p[10]",
+      "char_offset": 418
+    },
+    "len": 186
+  },
+  {
+    "query": "Among the methods compared here, kraken2 is clearly the fastest (Figure 7A).",
+    "matched_segment": "Among the methods compared here, kraken2 is clearly the fastest (Figure 7A).",
+    "start": {
+      "xpath": "/article/body/sec[3]/p[3]",
+      "char_offset": 0
+    },
+    "stop": {
+      "xpath": "/article/body/sec[3]/p[3]",
+      "char_offset": 76
+    },
+    "len": 76
+  },
+  {
+    "query": "However, it generally also has the worst performance with a higher misclassification rate than other methods, especially in the leave-one-species-out simulations (Figure 2).",
+    "matched_segment": "However, it generally also has the worst performance with a higher misclassification rate than other methods, especially in the leave-one-species-out simulations (Figure 2).",
+    "start": {
+      "xpath": "/article/body/sec[3]/p[3]",
+      "char_offset": 77
+    },
+    "stop": {
+      "xpath": "/article/body/sec[3]/p[3]",
+      "char_offset": 250
+    },
+    "len": 173
+  },
+  {
+    "query": "Both metaphlan2 and MEGAN tend to fall within the convex hull of Tronko.",
+    "matched_segment": "Both metaphlan2 and MEGAN tend to fall within the convex hull of Tronko.",
+    "start": {
+      "xpath": "/article/body/sec[3]/p[4]",
+      "char_offset": 0
+    },
+    "stop": {
+      "xpath": "/article/body/sec[3]/p[4]",
+      "char_offset": 72
+    },
+    "len": 72
+  },
+  {
+    "query": "Typically, metaphlan2 assigns much more aggressively, and therefore, has both a recall and misclassification rate that is much higher than MEGAN, which assigns very conservatively.",
+    "matched_segment": "Typically, metaphlan2 assigns much more aggressively, and therefore, has both a recall and misclassification rate that is much higher than MEGAN, which assigns very conservatively.",
+    "start": {
+      "xpath": "/article/body/sec[3]/p[4]",
+      "char_offset": 73
+    },
+    "stop": {
+      "xpath": "/article/body/sec[3]/p[4]",
+      "char_offset": 253
+    },
+    "len": 180
+  },
+  {
+    "query": "We also note that the computational speed of MEGAN is so low that it, in some applications, may be prohibitive (Figure 7A).",
+    "matched_segment": "We also note that the computational speed of MEGAN is so low that it, in some applications, may be prohibitive (Figure 7A).",
+    "start": {
+      "xpath": "/article/body/sec[3]/p[4]",
+      "char_offset": 254
+    },
+    "stop": {
+      "xpath": "/article/body/sec[3]/p[4]",
+      "char_offset": 377
+    },
+    "len": 123
+  },
+  {
+    "query": "However, in the case, where short, single-end reads are used (i.e., 150 bp single-end reads), the wavefront alignment performs worse than the Needleman\u2013Wunsch alignment (see Figure 2\u2014figure supplement 2D\u2013F and Figure 4\u2014figure supplement 2D\u2013F).",
+    "matched_segment": "However, in the case, where short, single-end reads are used (i.e., 150 bp single-end reads), the wavefront alignment performs worse than the Needleman\u2013Wunsch alignment (see Figure 2\u2014figure supplement 2D\u2013F and Figure 4\u2014figure supplement 2D\u2013F).",
+    "start": {
+      "xpath": "/article/body/sec[3]/p[5]",
+      "char_offset": 164
+    },
+    "stop": {
+      "xpath": "/article/body/sec[3]/p[5]",
+      "char_offset": 409
+    },
+    "len": 245
+  },
+  {
+    "query": "However, when there is a large difference between the two sequences being aligned, we notice that the wavefront alignment forces an end-to-end alignment which contains large gaps at the beginning and end of the alignment.",
+    "matched_segment": "However, when there is a large difference between the two sequences being aligned, we notice that the wavefront alignment forces an end-to-end alignment which contains large gaps at the beginning and end of the alignment.",
+    "start": {
+      "xpath": "/article/body/sec[3]/p[5]",
+      "char_offset": 605
+    },
+    "stop": {
+      "xpath": "/article/body/sec[3]/p[5]",
+      "char_offset": 826
+    },
+    "len": 221
+  },
+  {
+    "query": "Hence, based on current implementations, we cannot recommend the use of the wavefront alignment for assignment purposes of short reads, although this conclusion could change with future improvements in the implementation of the wavefront alignment algorithm.",
+    "matched_segment": "Hence, based on current implementations, we cannot recommend the use of the wavefront alignment for assignment purposes of short reads, although this conclusion could change with future improvements in the implementation of the wavefront alignment algorithm.",
+    "start": {
+      "xpath": "/article/body/sec[3]/p[5]",
+      "char_offset": 827
+    },
+    "stop": {
+      "xpath": "/article/body/sec[3]/p[5]",
+      "char_offset": 1085
+    },
+    "len": 258
+  },
+  {
+    "query": "Tronko is currently not applicable to eukaryotic genomic data as it requires well-curated alignments of markers and associated phylogenetic trees, although we note that whole-genome phylogenetic reference databases for such data could potentially be constructed.",
+    "matched_segment": "Tronko is currently not applicable to eukaryotic genomic data as it requires well-curated alignments of markers and associated phylogenetic trees, although we note that whole-genome phylogenetic reference databases for such data could potentially be constructed.",
+    "start": {
+      "xpath": "/article/body/sec[3]/p[6]",
+      "char_offset": 0
+    },
+    "stop": {
+      "xpath": "/article/body/sec[3]/p[6]",
+      "char_offset": 262
+    },
+    "len": 262
+  },
+  {
+    "query": "Tronko currently has larger memory requirements than methods that are not phylogeny-based.",
+    "matched_segment": "Tronko currently has larger memory requirements than methods that are not phylogeny-based.",
+    "start": {
+      "xpath": "/article/body/sec[3]/p[6]",
+      "char_offset": 365
+    },
+    "stop": {
+      "xpath": "/article/body/sec[3]/p[6]",
+      "char_offset": 455
+    },
+    "len": 90
+  },
+  {
+    "query": "Nonetheless, for assignment to viruses, amplicon sequencing, and other forms of non-genomic barcoding, Tronko provides a substantial improvement over existing assignment methods and is the first full phylogenetic assignment method applicable to modern large datasets generated using NGS.",
+    "matched_segment": "Nonetheless, for assignment to viruses, amplicon sequencing, and other forms of non-genomic barcoding, Tronko provides a substantial improvement over existing assignment methods and is the first full phylogenetic assignment method applicable to modern large datasets generated using NGS.",
+    "start": {
+      "xpath": "/article/body/sec[3]/p[6]",
+      "char_offset": 456
+    },
+    "stop": {
+      "xpath": "/article/body/sec[3]/p[6]",
+      "char_offset": 743
+    },
+    "len": 287
+  },
+  {
+    "query": "Nonetheless, for assignment to viruses, amplicon sequencing, and other forms of non-genomic barcoding, Tronko provides a substantial improvement over existing assignment methods and is the first full phylogenetic assignment method applicable to modern large datasets generated using NGS.",
+    "matched_segment": "Nonetheless, for assignment to viruses, amplicon sequencing, and other forms of non-genomic barcoding, Tronko provides a substantial improvement over existing assignment methods and is the first full phylogenetic assignment method applicable to modern large datasets generated using NGS.",
+    "start": {
+      "xpath": "/article/body/sec[3]/p[6]",
+      "char_offset": 456
+    },
+    "stop": {
+      "xpath": "/article/body/sec[3]/p[6]",
+      "char_offset": 743
+    },
+    "len": 287
+  },
+  {
+    "query": "Tronko can be downloaded at https://github.com/lpipes/tronko and is available under an open-software license (Mapper and Pipes, 2024).",
+    "matched_segment": "Tronko can be downloaded at https://github.com/lpipes/tronko and is available under an open-software license (Mapper and Pipes, 2024).",
+    "start": {
+      "xpath": "/article/body/sec[3]/p[7]",
+      "char_offset": 200
+    },
+    "stop": {
+      "xpath": "/article/body/sec[3]/p[7]",
+      "char_offset": 334
+    },
+    "len": 134
+  },
+  {
+    "query": "The algorithm used for assignment takes advantage of pre-calculated posterior probabilities of nucleotides at internal nodes of a phylogeny.",
+    "matched_segment": "The algorithm used for assignment takes advantage of pre-calculated posterior probabilities of nucleotides at internal nodes of a phylogeny.",
+    "start": {
+      "xpath": "/article/body/sec[4]/sec[1]/p[1]",
+      "char_offset": 0
+    },
+    "stop": {
+      "xpath": "/article/body/sec[4]/sec[1]/p[1]",
+      "char_offset": 140
+    },
+    "len": 140
+  },
+  {
+    "query": "The calculations are achieved using an algorithm that traverses the tree only twice to calculate posterior probabilities simultaneously for all nodes in the tree.",
+    "matched_segment": "The calculations are achieved using an algorithm that traverses the tree only twice to calculate posterior probabilities simultaneously for all nodes in the tree.",
+    "start": {
+      "xpath": "/article/body/sec[4]/sec[1]/p[1]",
+      "char_offset": 565
+    },
+    "stop": {
+      "xpath": "/article/body/sec[4]/sec[1]/p[1]",
+      "char_offset": 727
+    },
+    "len": 162
+  },
+  {
+    "query": "While naive application of standard algorithms for calculating posterior probabilities in a node, to all nodes of a tree, has computational complexity that is quadratic in the number of nodes, the algorithm used here is linear in the number of nodes as it calculates posterior probabilities for all nodes using a single postorder and a single preorder traversal without having to repeat the calculation for each node in the tree.",
+    "matched_segment": "While naive application of standard algorithms for calculating posterior probabilities in a node, to all nodes of a tree, has computational complexity that is quadratic in the number of nodes, the algorithm used here is linear in the number of nodes as it calculates posterior probabilities for all nodes using a single postorder and a single preorder traversal without having to repeat the calculation for each node in the tree.",
+    "start": {
+      "xpath": "/article/body/sec[4]/sec[1]/p[1]",
+      "char_offset": 1101
+    },
+    "stop": {
+      "xpath": "/article/body/sec[4]/sec[1]/p[1]",
+      "char_offset": 1530
+    },
+    "len": 429
+  },
+  {
+    "query": "MSAs for a large number of sequences can become unreliable and computationally challenging to work with due to the large number of insertions and deletions.",
+    "matched_segment": "MSAs for a large number of sequences can become unreliable and computationally challenging to work with due to the large number of insertions and deletions.",
+    "start": {
+      "xpath": "/article/body/sec[4]/sec[2]/p[1]",
+      "char_offset": 0
+    },
+    "stop": {
+      "xpath": "/article/body/sec[4]/sec[2]/p[1]",
+      "char_offset": 156
+    },
+    "len": 156
+  },
+  {
+    "query": "FAMSA is used to optimize for speed since it is 1\u20132 orders of magnitude faster than Clustal (Higgins and Sharp, 1988) or MAFFT (Katoh et al., 2002) with similar quality (see Deorowicz et al., 2016).",
+    "matched_segment": "FAMSA is used to optimize for speed since it is 1\u20132 orders of magnitude faster than Clustal (Higgins and Sharp, 1988) or MAFFT (Katoh et al., 2002) with similar quality (see Deorowicz et al., 2016).",
+    "start": {
+      "xpath": "/article/body/sec[4]/sec[2]/p[5]",
+      "char_offset": 458
+    },
+    "stop": {
+      "xpath": "/article/body/sec[4]/sec[2]/p[5]",
+      "char_offset": 656
+    },
+    "len": 198
+  },
+  {
+    "query": "We use BWA-MEM as the original Minimap2 manuscript (Li, 2018) demonstrated that BWA-MEM had the lowest error rate for the same amount of fractional mapped reads compared to Minimap2, SNAP (Zaharia et al., 2011), and bowtie2 (Langdon, 2015).",
+    "matched_segment": "We use BWA-MEM as the original Minimap2 manuscript (Li, 2018) demonstrated that BWA-MEM had the lowest error rate for the same amount of fractional mapped reads compared to Minimap2, SNAP (Zaharia et al., 2011), and bowtie2 (Langdon, 2015).",
+    "start": {
+      "xpath": "/article/body/sec[4]/sec[4]/p[1]",
+      "char_offset": 248
+    },
+    "stop": {
+      "xpath": "/article/body/sec[4]/sec[4]/p[1]",
+      "char_offset": 488
+    },
+    "len": 240
+  },
+  {
+    "query": "Tronko was able to assign 1,000,000 queries in \u223c8 hr with the choice of aligner being negligible.",
+    "matched_segment": "Tronko was able to assign 1,000,000 queries in \u223c8 hr with the choice of aligner being negligible.",
+    "start": {
+      "xpath": "/article/body/sec[2]/p[11]",
+      "char_offset": 378
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/p[11]",
+      "char_offset": 475
+    },
+    "len": 97
+  },
+  {
+    "query": "Tronko had the highest peak memory (\u223c50 GBs) as it stores all reference sequences, their trees, and their posterior probabilities in memory.",
+    "matched_segment": "Tronko had the highest peak memory (\u223c50 GBs) as it stores all reference sequences, their trees, and their posterior probabilities in memory.",
+    "start": {
+      "xpath": "/article/body/sec[2]/p[11]",
+      "char_offset": 476
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/p[11]",
+      "char_offset": 616
+    },
+    "len": 140
+  },
+  {
+    "query": "We note that for very large databases, the memory requirements can, in theory, be reduced by processing different alignment subsets sequentially.",
+    "matched_segment": "We note that for very large databases, the memory requirements can, in theory, be reduced by processing different alignment subsets sequentially.",
+    "start": {
+      "xpath": "/article/body/sec[2]/p[11]",
+      "char_offset": 617
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/p[11]",
+      "char_offset": 762
+    },
+    "len": 145
+  },
+  {
+    "query": "Both leave-one-species-out and leave-one-individual-out simulations show that Tronko recovers the correct taxonomy with higher probability than competing methods and represents a substantial improvement over current assignment methods.",
+    "matched_segment": "Both leave-one-species-out and leave-one-individual-out simulations show that Tronko recovers the correct taxonomy with higher probability than competing methods and represents a substantial improvement over current assignment methods.",
+    "start": {
+      "xpath": "/article/body/sec[3]/p[1]",
+      "char_offset": 0
+    },
+    "stop": {
+      "xpath": "/article/body/sec[3]/p[1]",
+      "char_offset": 235
+    },
+    "len": 235
+  },
+  {
+    "query": "The advantage of Tronko comes from the use of limited full-sequence alignments and the use of phylogenetic assignment based on a fast approximation to the likelihood.",
+    "matched_segment": "The advantage of Tronko comes from the use of limited full-sequence alignments and the use of phylogenetic assignment based on a fast approximation to the likelihood.",
+    "start": {
+      "xpath": "/article/body/sec[3]/p[1]",
+      "char_offset": 236
+    },
+    "stop": {
+      "xpath": "/article/body/sec[3]/p[1]",
+      "char_offset": 402
+    },
+    "len": 166
+  },
+  {
+    "query": "We note that in most cases the other methods evaluated here fall within the convex hull of Tronko, showing that Tronko dominates those methods, and in no cases do other methods fall above the convex hull of Tronko.",
+    "matched_segment": "We note that in most cases the other methods evaluated here fall within the convex hull of Tronko, showing that Tronko dominates those methods, and in no cases do other methods fall above the convex hull of Tronko.",
+    "start": {
+      "xpath": "/article/body/sec[3]/p[2]",
+      "char_offset": 185
+    },
+    "stop": {
+      "xpath": "/article/body/sec[3]/p[2]",
+      "char_offset": 399
+    },
+    "len": 214
+  },
+  {
+    "query": "We note that in most cases the other methods evaluated here fall within the convex hull of Tronko, showing that Tronko dominates those methods, and in no cases do other methods fall above the convex hull of Tronko.",
+    "matched_segment": "We note that in most cases the other methods evaluated here fall within the convex hull of Tronko, showing that Tronko dominates those methods, and in no cases do other methods fall above the convex hull of Tronko.",
+    "start": {
+      "xpath": "/article/body/sec[3]/p[2]",
+      "char_offset": 185
+    },
+    "stop": {
+      "xpath": "/article/body/sec[3]/p[2]",
+      "char_offset": 399
+    },
+    "len": 214
+  },
+  {
+    "query": "Tronko also accurately assigned genera from the Scolopacidae family (top left of matrices in Figure 3) using Needleman\u2013Wunsch with a cut-off of 10 compared to kraken2, metaphlan2, and pplacer.",
+    "matched_segment": "Tronko also accurately assigned genera from the Scolopacidae family (top left of matrices in Figure 3) using Needleman\u2013Wunsch with a cut-off of 10 compared to kraken2, metaphlan2, and pplacer.",
+    "start": {
+      "xpath": "/article/body/sec[2]/p[4]",
+      "char_offset": 1185
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/p[4]",
+      "char_offset": 1377
+    },
+    "len": 192
+  },
+  {
+    "query": "Both metaphlan and kraken2 have a number of mis-assignments within the family of Laridae (see blue points across the diagonal in Figure 4\u2014figure supplement 1A and B) and Tronko is able to accurately assign species within this family or assign at the genus or family level.",
+    "matched_segment": "Both metaphlan and kraken2 have a number of mis-assignments within the family of Laridae (see blue points across the diagonal in Figure 4\u2014figure supplement 1A and B) and Tronko is able to accurately assign species within this family or assign at the genus or family level.",
+    "start": {
+      "xpath": "/article/body/sec[2]/p[5]",
+      "char_offset": 785
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/p[5]",
+      "char_offset": 1058
+    },
+    "len": 273
+  },
+  {
+    "query": "Both metaphlan and kraken2 have a number of mis-assignments within the family of Laridae (see blue points across the diagonal in Figure 4\u2014figure supplement 1A and B) and Tronko is able to accurately assign species within this family or assign at the genus or family level.",
+    "matched_segment": "Both metaphlan and kraken2 have a number of mis-assignments within the family of Laridae (see blue points across the diagonal in Figure 4\u2014figure supplement 1A and B) and Tronko is able to accurately assign species within this family or assign at the genus or family level.",
+    "start": {
+      "xpath": "/article/body/sec[2]/p[5]",
+      "char_offset": 785
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/p[5]",
+      "char_offset": 1058
+    },
+    "len": 273
+  },
+  {
+    "query": "We explored different combinations of tree estimation methods (including IQ-TREE2 Minh et al., 2020), multiple sequence aligners, and global aligners (Figure 2\u2014figure supplement 2). While most combinations of methods were quite similar (especially for the genus level), the use of FAMSA + RAxML + NW was optimal with regard to speed and accuracy.",
+    "matched_segment": "We explored different combinations of tree estimation methods (including IQ-TREE2 Minh et al., 2020), multiple sequence aligners, and global aligners (Figure 2\u2014figure supplement 2). While most combinations of methods were quite similar (especially for the genus level), the use of FAMSA + RAxML + NW was optimal with regard to speed and accuracy.",
+    "start": {
+      "xpath": "/article/body/sec[4]/sec[2]/p[5]",
+      "char_offset": 657
+    },
+    "stop": {
+      "xpath": "/article/body/sec[4]/sec[2]/p[5]",
+      "char_offset": 1004
+    },
+    "len": 347
+  },
+  {
+    "query": "Note that the procedure for phylogeny estimating and calculation of posterior probabilities only has to be done once for a marker and then can be used repeatedly for assignment using different datasets of query sequences.",
+    "matched_segment": "Note that the procedure for phylogeny estimating and calculation of posterior probabilities only has to be done once for a marker and then can be used repeatedly for assignment using different datasets of query sequences.",
+    "start": {
+      "xpath": "/article/body/sec[4]/sec[2]/p[5]",
+      "char_offset": 1377
+    },
+    "stop": {
+      "xpath": "/article/body/sec[4]/sec[2]/p[5]",
+      "char_offset": 1598
+    },
+    "len": 221
+  },
+  {
+    "query": "Minimizing the score function, therefore, corresponds to maximizing the full phylogenetic likelihood function assuming that the branch leading to the query sequence is infinitesimally short and connects with the tree in an existing node.",
+    "matched_segment": "Minimizing the score function, therefore, corresponds to maximizing the full phylogenetic likelihood function assuming that the branch leading to the query sequence is infinitesimally short and connects with the tree in an existing node.",
+    "start": {
+      "xpath": "/article/body/sec[4]/sec[4]/p[5]",
+      "char_offset": 377
+    },
+    "stop": {
+      "xpath": "/article/body/sec[4]/sec[4]/p[5]",
+      "char_offset": 614
+    },
+    "len": 237
+  },
+  {
+    "query": "An alternative interpretation is that the score maximizes the probability of observing the query sequence if it is placed exactly in a node or, equivalently, minimizes the expected mismatch between the query and a predicted sequence sampled form the node.",
+    "matched_segment": "An alternative interpretation is that the score maximizes the probability of observing the query sequence if it is placed exactly in a node or, equivalently, minimizes the expected mismatch between the query and a predicted sequence sampled form the node.",
+    "start": {
+      "xpath": "/article/body/sec[4]/sec[4]/p[5]",
+      "char_offset": 615
+    },
+    "stop": {
+      "xpath": "/article/body/sec[4]/sec[4]/p[5]",
+      "char_offset": 870
+    },
+    "len": 255
+  },
+  {
+    "query": "After calculation of scores, the LCA of all of the lowest scoring nodes, using a user-defined cut-off parameter, is calculated.",
+    "matched_segment": "After calculation of scores, the LCA of all of the lowest scoring nodes, using a user-defined cut-off parameter, is calculated.",
+    "start": {
+      "xpath": "/article/body/sec[4]/sec[4]/p[9]",
+      "char_offset": 0
+    },
+    "stop": {
+      "xpath": "/article/body/sec[4]/sec[4]/p[9]",
+      "char_offset": 127
+    },
+    "len": 127
+  },
+  {
+    "query": "The classification of query sequences is parallelized.",
+    "matched_segment": "The classification of query sequences is parallelized.",
+    "start": {
+      "xpath": "/article/body/sec[4]/sec[4]/p[9]",
+      "char_offset": 600
+    },
+    "stop": {
+      "xpath": "/article/body/sec[4]/sec[4]/p[9]",
+      "char_offset": 654
+    },
+    "len": 54
+  }
+]

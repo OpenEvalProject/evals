@@ -1,0 +1,191 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "The study used hippocampal recordings from 5 rats running on two novel linear tracks with rest sessions before (PRE) and after (POST), detecting 8485, 4643, and 14,326 candidate events in PRE, RUN, and POST respectively. Replay events were detected using weighted correlation with Bayesian decoding, requiring ripple power z-score >3 and significance based on two shuffle distributions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C21 and C51-C57 provide comprehensive methodological details including experimental design, subject information, surgical procedures, and analysis criteria. The data collection and detection methods are clearly described with specific parameters, providing a solid foundation for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "At alpha level 0.05, the estimated false-positive rate was 7.5% for RUN and 8.7% for POST replay events, both higher than the nominal alpha level. RUN replay events were more prevalent and showed higher track discriminability than POST replay events.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C24 report quantitative findings with confidence intervals showing that actual false-positive rates exceed the nominal alpha level. The observation about RUN vs POST differences is supported by data and consistent with prior literature (C24 cites supporting studies).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "For POST replay events with ripple power below z-score 5, mean log odds difference was near zero across all alpha levels tested. A ripple power threshold is not necessary for RUN replay but a threshold of z-score 3-5 is recommended for POST replay to reduce false-positives.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C31 present data-driven conclusions about ripple power thresholds. The finding that low ripple power POST events are indistinguishable from spurious events (C29) logically supports the differential recommendations for RUN vs POST (C30-C31), backed by the analysis shown in Figure 2.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Pre-decoding shuffles (spike train and place field circular shuffles) performed better than post-decoding shuffles for both RUN and POST. The time bin permutation shuffle showed significantly lower log odds difference and had the poorest performance when using FPR-matched alpha levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C35 present comparative analysis results shown in Figure 3. The conclusion that pre-decoding shuffles are more efficacious (C35) is directly supported by the quantitative comparisons (C32-C34) with appropriate statistical controls (FPR-matched alpha levels).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Increasing the number of shuffles increased mean log odds difference and decreased false-positive rates. After FPR-matching to 5%, stricter methods (2+ shuffles) detected more replay events than single shuffle methods. Using 2+ shuffles achieved the highest proportion of events and largest mean log odds difference, while adding jump distance criteria performed poorly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C40 present a coherent set of findings from Figure 4 showing that multiple shuffles improve detection performance when properly controlled for false-positive rates. The counterintuitive finding that stricter methods detect more events after FPR-matching (C37) is well-explained and supported by specific quantitative examples.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C41",
+      "C42"
+    ],
+    "result": "For rank-order correlation analysis, using independent events (median spike time) maintained false-positive rate around 5%, while using all spikes increased it to around 17%.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C42 report quantitative results with confidence intervals from Figure 5. The substantial difference in false-positive rates (5% vs 17%) demonstrates the importance of maintaining statistical independence assumptions, with clear implications for methodological choices.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Using FPR-matched alpha levels, all methods detected preplay events at approximately 10% (chance level for two tracks) with mean log odds difference near zero, indicating that preplay is indistinguishable from randomly generated spurious replay events regardless of detection method used.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C45 present a consistent finding across all tested methods that preplay events show no evidence of true replay. The convergence of multiple independent methods on the same null result (C43-C44) strongly supports the conclusion that preplay is indistinguishable from chance (C45).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Using FPR-matched alpha levels, all methods produced similar track discriminability for POST (log odds ~1) and RUN (log odds ~2) replay events. However, linear and weighted correlation methods with 2+ shuffles detected higher proportions of significant events, showing significant improvement in overall detection performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C49 synthesize the comprehensive method comparison from Figure 6. The finding that track discriminability converges across methods after FPR-matching (C46, C48) while detection rates still vary (C47) provides important insights into method performance, with the conclusion about 2+ shuffles (C49) well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C50"
+    ],
+    "result": "The use of spatially smoothed place fields or spike bursts spanning multiple time bins violates the assumption of independent samples in statistical tests.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C50 presents a valid statistical concern that is fundamental to the interpretation of the results. This is a logical inference about statistical assumptions that is well-established in statistical theory and directly relevant to understanding why false-positive rates exceed nominal alpha levels.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "The introduction establishes that hippocampal replay is a well-documented phenomenon where sequential neural activity patterns from behavior spontaneously reactivate during rest/sleep, thought to support memory consolidation. However, replay lacks a ground truth for validation, requiring statistical inference based on comparison to shuffled distributions. Current methods (rank-order, weighted correlation, linear fit) vary substantially in implementation, leading to reproducibility issues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C18 provide comprehensive background supported by extensive citations to established literature. The characterization of the field's current state and methodological challenges (C17-C18) accurately frames the motivation for the study. These are well-established facts and observations from prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C25"
+    ],
+    "result": "The presence of immediate sensory or other external inputs may help direct hippocampal place cell ensembles toward representing the local current environment during awake replay.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C25 is explicitly speculative (marked as SPECULATION in evidence_type) and offers a potential explanation for observed differences between RUN and POST replay. While plausible, this mechanistic hypothesis is not directly tested in the study and remains uncertain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Replay events preferentially occur during sharp-wave ripples (150-250 Hz oscillations). Previous studies have used varying ripple power thresholds (2-7 SD above baseline), though many recent studies have opted not to use ripple power as a criterion, relying instead on multi-unit activity alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C28 accurately describe established findings and methodological trends in the field, supported by appropriate citations. These provide important context for understanding the study's investigation of ripple power thresholds.",
+    "result_type": "MINOR"
+  }
+]

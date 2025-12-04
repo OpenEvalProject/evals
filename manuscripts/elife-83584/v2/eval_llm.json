@@ -1,0 +1,395 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C36",
+      "C37",
+      "C41",
+      "C52",
+      "C55",
+      "C56",
+      "C113"
+    ],
+    "result": "mRNA transfer from human MCF7 cells to mouse MEFs is non-selective, prevalent across the transcriptome, and strongly correlates with donor cell expression levels (Pearson/Spearman >0.9). This was demonstrated through RNA-seq showing 283 robustly transferred mRNAs and validated with tdTomato reporter experiments showing expression-dependent transfer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C3, C36, C52, C55 provide converging evidence from RNA-seq (Figure 2) and reporter assays (Figure 5) demonstrating non-selective, expression-dependent transfer. The high correlation coefficients (>0.9), validation across multiple methods (RNA-seq, qRT-PCR, smFISH), and lack of transfer-promoting motifs (C40, C41, C88) strongly support this result. The tdTomato experiments (C37, C77-79) provide direct experimental validation of the expression-dependence relationship.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C38",
+      "C60",
+      "C62"
+    ],
+    "result": "Typically less than 1% of endogenous mRNAs undergo transfer, with a median transfer percentage of 0.34% across the human transcriptome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C38, C60 consistently report <1% transfer with specific quantification (median 0.34%, Figure 3A). This is supported by direct measurements from RNA-seq data and is consistent with previous findings cited in C31. The low percentage is well-documented across multiple genes and experimental approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C39",
+      "C42",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C96"
+    ],
+    "result": "mRNA transfer is contact-dependent and occurs via tunneling nanotubes (TNTs), not through diffusion or extracellular vesicles. This was demonstrated using quadrapod spatial separation and conditioned media experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C39, C42, C90-92 provide experimental evidence from quadrapod experiments (Figure 6-supplement 1) showing transfer requires cell-cell contact. The conditioned media experiments rule out diffusion-based mechanisms. Claims C93-95 provide direct visualization of mRNAs in TNT structures. The convergence of spatial separation experiments and imaging data strongly supports TNT-mediated transfer.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "KRT8 and CCND1 mRNAs were visualized within actin-containing TNT structures connecting MCF7 and MEF cells, providing direct evidence for TNT-mediated mRNA transfer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-95 are supported by live imaging (Figure 6-supplement 2) and smFISH with phalloidin staining (Figure 6) showing mRNAs within TNT structures. The visualization of mRNAs in actin-containing protrusions with TNT characteristics (thin, long, above substratum) provides direct morphological evidence. However, TNTs are fragile and difficult to capture, limiting the number of examples.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C40",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "No cis-acting RNA elements that promote transfer were identified through three approaches: \u03b2-actin fragment fusion experiments, de novo motif discovery, and analysis of known EV-targeting motifs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40, C80-88 describe three independent negative results: (1) \u03b2-actin fragments did not enhance transfer (Figure 5-supplement 1), (2) purine-rich motifs found in highly transferred mRNAs were also present in poorly transferred mRNAs (Figure 5-supplement 2), and (3) known EV-targeting motifs were either absent or present at similar frequencies in control sets. The convergence of three negative results from different approaches strongly supports the conclusion of non-selective transfer without specific cis elements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C6",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Co-culture with MCF7 cancer cells induces dramatic transcriptome changes in MEFs, including upregulation of >1000 genes and downregulation of ~3000 genes, with significant overlap with cancer-associated fibroblast (CAF) markers including TNC, ACTA2, and KRT8.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C97-105 are supported by RNA-seq showing >4000 differentially expressed genes (Figure 7C), with 30 upregulated and 17 downregulated genes overlapping with published CAF signatures (Figure 8). The upregulation of established CAF markers (TNC, ACTA2, KRT8) and extracellular matrix genes provides strong evidence. However, C101 and C105 appropriately note this is speculation about CAF-like phenotypes, and C151 acknowledges alternative mechanisms cannot be excluded.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "RNA-seq results were validated by qRT-PCR for 10 highly transferred genes and by smFISH for KRT8, PSAP, and CCND1 mRNAs, with transfer levels consistent with expression-dependent transfer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-73 describe validation experiments using orthogonal methods (qRT-PCR in Figure 4A, smFISH in Figure 4B-C). The agreement between RNA-seq and validation methods supports the reliability of the RNA-seq results. C73 notes KRT8 transferred more than CCND1/PSAP, consistent with higher expression, supporting the expression-dependence model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Using tdTomato reporter mRNAs with different expression levels, transfer increased proportionally with expression: low-expressing cells (429 copies) transferred ~7 molecules (1.6%), high-expressing cells (1250 copies) transferred ~25 molecules (2%), and doxycycline induction increased both expression and transfer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-79 provide direct experimental validation of expression-dependent transfer using controlled reporter systems (Figure 5B-C). The smFISH quantification shows clear dose-response relationships between expression level and transfer. This provides strong causal evidence for the expression-dependence relationship observed in the transcriptome-wide analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "RNA-seq achieved high quality with 90-92% unique alignment, detecting >14,000 mouse and >16,000 human genes. After background subtraction, co-culture samples showed 6.6-fold higher human reads in MEFs compared to Mix controls, with 10,566 human transcripts detected and 7,504 genes with >10 RPM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-50 describe technical quality metrics and data processing results. The high alignment rates (C43) indicate good library quality. The careful background subtraction (C45-46) and detection of thousands of genes (C47-50) demonstrate robust detection of transferred RNAs. These technical details support the validity of downstream analyses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C51"
+    ],
+    "result": "Human \u03b2-actin mRNA was significantly enriched in MEFs after co-culture, as confirmed by RT-PCR and qRT-PCR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C51 is supported by RT-PCR (Figure 1C) and qRT-PCR (Figure 1D) showing significant enrichment of human \u03b2-actin in co-cultured MEFs. This serves as a positive control validating the experimental system and is consistent with previous findings (C32).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Transferred mRNAs are enriched for housekeeping genes including cytoskeletal components (ACTB, ACTG), translation factors (EEF1A1, EEF2), ribosomal proteins, and keratins (KRT8, 18, 19, 80), with GO terms enriched for translation, RNA transport, and ribosome biogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-54, C74-76 describe the functional composition of transferred mRNAs based on the 283 robustly transferred genes. The enrichment for highly expressed housekeeping genes is consistent with expression-dependent transfer. GO term analysis (Figure 2-supplement 2) supports the functional enrichment. The identification of keratins is consistent with published findings (C54).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C58",
+      "C59"
+    ],
+    "result": "When examining fold-change of transfer across the whole transcriptome, there is no correlation with expression (Pearson=0.07), and mitochondrial RNAs showed poor transfer despite high expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-59 describe the lack of correlation between expression and fold-change (Figure 2-supplement 1), which is distinct from the correlation between expression and absolute transfer levels. The poor transfer of mitochondrial RNAs (C59) despite high expression provides an important exception and control, suggesting transfer is not simply passive diffusion but may require specific cellular localization or packaging.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C61",
+      "C63"
+    ],
+    "result": "The percentage of RNA transfer did not correlate linearly with gene expression, and transfer was largely independent of mRNA stability (half-life).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61 and C63 are supported by linear regression analyses (Figure 3B, 3C) showing no correlation between percent transfer and expression or mRNA half-life. This indicates that while absolute transfer depends on expression, the proportion transferred is relatively constant across genes, supporting a non-selective mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Transfer of primate-specific genes and lncRNAs was detected: 12 primate-specific mRNAs with no mouse orthologs transferred, and 100 of 102 detected lncRNAs (>10 RPM) showed transfer with FC>2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-68 describe detection of specialized RNA classes. The transfer of primate-specific genes (C64-65) demonstrates the method can detect species-specific transcripts. The high proportion of lncRNAs showing transfer (C67) suggests the mechanism is not limited to mRNAs. However, expression levels were generally low for these RNAs.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C69",
+      "C70"
+    ],
+    "result": "mRNAs from 40 breast cancer-related overexpressed genes and 77 breast cancer-related mutated genes underwent transfer from MCF7 to MEFs, with significant enrichment (p<3.776e-13).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-70 are supported by hypergeometric test showing significant enrichment of cancer-related genes among transferred mRNAs (Figure 3D). This demonstrates that cancer-relevant transcripts can transfer, which has potential biological significance. However, this is expected given expression-dependent transfer and high expression of many cancer genes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "Pathway analysis of differentially expressed genes in co-cultured MEFs showed upregulation of ribosome biogenesis, RNA transport, focal adhesion, MAPK signaling, and Ras signaling, while calcium signaling, Rap1 signaling, cytokine-cytokine interactions, and immunity genes were downregulated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-111 describe KEGG pathway analysis results (Figure 7-supplement 1, Figure 7C). The upregulation of translation-related pathways and cancer-related signaling pathways, along with downregulation of immune pathways, is consistent with the CAF-like phenotype hypothesis. The pathway analysis is appropriately conducted on the differentially expressed genes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "FISH-based quantification of transfer was 5-10 fold higher than RNA-seq estimates, potentially due to mRNA degradation during trypsinization and technical biases in RNA-seq library preparation favoring high-abundance transcripts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C127-130 identify an important technical discrepancy between methods. C127 documents the quantitative difference, while C128-130 provide plausible technical explanations. The observation that trypsinization causes mRNA loss (C128) and that RNA-seq has known biases (C129) are reasonable. This suggests RNA-seq may underestimate transfer, making the reported values conservative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C145",
+      "C146",
+      "C147"
+    ],
+    "result": "A bioRxiv preprint independently replicated key findings in a different human-mouse co-culture system, showing contact-dependent transfer at 0.33-1.3% (bulk RNA-seq) and 1.2% (scRNA-seq), with non-specific transfer correlating with donor expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C145-147 cite a preprint that reportedly replicates the main findings. However, the authors note this preprint lacked a Mix control and FISH validation, which are critical for ruling out contamination and validating transfer. Without these controls, the independent replication is less definitive. The preprint citation provides some external validation but with acknowledged limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C1",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Background on RNA transfer mechanisms: EVs (especially exosomes) are the prevalent mechanism for RNA transfer but primarily contain small RNAs and mRNA fragments. Alternative mechanisms include retroviral-like capsids (ARC, PEG10) and TNTs, which the authors previously showed can transfer full-length mRNAs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C7-C35 provide literature review and background from prior work. These are appropriately cited claims about established knowledge (C7-C27) and the authors' previous findings (C1, C18, C30-C35). The citations support the statements about EV limitations for full-length mRNA transfer (C14-C15) and the authors' prior TNT work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C112",
+      "C123",
+      "C133",
+      "C135",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C148",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C159",
+      "C162",
+      "C163",
+      "C164",
+      "C166"
+    ],
+    "result": "Speculative claims about mechanisms and implications: RNA transfer may modulate immune responses, require specialized packaging/modification, involve co-transcriptional marking, have physiological roles in cancer and tissue homeostasis, and potentially be used for mRNA drug delivery.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C112, C123, C133, C135, C137-C142, C148, C150-C153, C159, C162-C164, C166 are explicitly speculative (marked as SPECULATION in evidence_type) or acknowledge uncertainty. These represent reasonable hypotheses based on the data but lack direct experimental support. They appropriately identify future research directions and potential implications while acknowledging limitations (e.g., C151 notes alternative mechanisms cannot be excluded).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C124",
+      "C125",
+      "C126",
+      "C131",
+      "C132",
+      "C134",
+      "C136",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C160",
+      "C161",
+      "C165"
+    ],
+    "result": "Literature context: Expression-dependent RNA transfer has been observed in other systems (keratinocytes, plants), EVs from hepatic cells contain mRNAs similar to those transferred here, TNTs are found in multiple cancers and transfer various cargos, and stress conditions modulate TNT formation and transfer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C122, C124-C126, C131-C132, C134, C136, C154-C158, C160-C161, C165 provide literature context through citations. These appropriately reference published work to contextualize the findings. The citations support comparisons to other systems and provide background on TNT biology and cancer relevance.",
+    "result_type": "MINOR"
+  }
+]

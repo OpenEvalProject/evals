@@ -1,0 +1,332 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C35",
+      "C36"
+    ],
+    "result": "Background selection models explain ~60% of variance in human diversity levels at the megabase scale, nearly doubling the explanatory power of previous work (McVicker et al., 2009) which explained only 32%.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2 and C35 provide consistent quantitative results showing 60% variance explained by the CADD-based model at 1 Mb scale. C36 provides the comparison benchmark from prior work. The improvement is substantial and well-documented with out-of-sample predictions (C33-C34), reducing concerns about overfitting.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Selective sweeps have had little or no detectable effect on linked neutral diversity in humans. Adding sweep effects to models does not improve fit, and the estimated proportion of substitutions causing sweeps is approximately zero across all tested substitution types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple converging lines of evidence support this conclusion: model comparison shows no improvement when sweeps are added (C3, C40), parameter estimates are ~0 (C41), and the background selection model alone provides good quantitative fits around both synonymous and nonsynonymous substitutions (C42-C43), refuting the 'masked sweeps' hypothesis (C44). The spatial signature analysis (C37) and prior Drosophila work (C39) support the method's ability to distinguish these effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C65",
+      "C107"
+    ],
+    "result": "Approximately 80% of deleterious mutations affecting neutral diversity occur in non-exonic regions, contrasting with previous work that found minimal contribution from non-exonic regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The quantitative estimates are consistent across different annotation methods (C61-C62 show 76-85% non-exonic). The finding is supported by model comparisons showing diminished predictive ability when only exonic regions are included (C59) and that non-exonic regions account for most reduction in diversity (C60, C65). This directly contradicts prior work (C58), representing a major revision.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Background selection is the dominant mode of linked selection in humans, with marked effects throughout autosomes: ~37% reduction in the most affected 10% of sites, ~2.1% reduction even in the least affected 10%, and a mean reduction of ~17%.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The quantitative characterization of background selection effects (C102-C104) is well-supported by the model fits and robustness analyses (C105). The conclusion that background selection is dominant (C6-C7) follows logically from the negligible sweep effects and the widespread impact across the genome. The spatial distribution of effects is documented with appropriate controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C76",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "The estimated deleterious mutation rates from the best-fitting models are plausible, falling well below the upper bound based on total mutation rates, and are validated by independent estimates from evolutionary rates along the human lineage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The parameter estimates are validated through multiple approaches: comparison with mutation rate bounds (C79), independent validation using evolutionary rates (C83-C87), and appropriate controls for confounding factors (C86). The expectation that estimates should be below the total mutation rate is justified (C80-C82). The closer agreement with CADD-based estimates is explained by better single-site resolution (C88). Potential biases are acknowledged (C89-C90).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C109",
+      "C70",
+      "C71",
+      "C67",
+      "C68",
+      "C69",
+      "C72",
+      "C73"
+    ],
+    "result": "Phylogenetic conservation is the best predictor of regions under selection, with functional genomic annotations providing little improvement over conservation alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple model comparisons consistently show that conservation-based predictions outperform or match those incorporating additional functional information (C67-C69). The finding is robust across different phylogenetic depths (C72-C73). The result that ENCODE annotations without conservation perform poorly (C68) while CADD scores (which include conservation) offer minimal improvement (C69) strongly supports the primacy of conservation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C74",
+      "C75"
+    ],
+    "result": "The best-fitting models use 5-7% of sites with the highest conservation scores as selection targets, consistent with independent estimates of the proportion of the human genome under functional constraint.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The optimal percentage (C74) is determined by multiple model fit metrics and agrees well with independent estimates from Ward and Kellis, 2012 and Rands et al., 2014 (C75). This external validation strengthens confidence in the model specification.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C92",
+      "C95",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "The background selection maps are well-calibrated across most of the range of predicted values, with exceptions at the extremes: imprecision at sites with strongest selection (due to technical approximation) and excess diversity at sites with weakest selection (possibly reflecting archaic introgression).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The calibration is demonstrated quantitatively (C92, R\u00b2=0.96). The limitations are clearly identified: technical approximation affecting strong selection sites (C95) and unexplained excess diversity in weak selection regions (C97-C98). The archaic introgression hypothesis (C99-C100) is plausible and supported by citations, though speculative. The robustness across populations (C97) strengthens the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "The study analyzes 1000 Genomes Project Phase III data from 26 populations, focusing on 108 YRI genomes, using carefully selected neutral sites, mutation rate estimates from primate phylogenies, and a recombination map designed to minimize circularity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The data sources and methodological choices are clearly described (C22-C32). Key controls include: using least-conserved non-genic sites as neutral (C25), accounting for mutation rate variation (C26), using a recombination map less dependent on diversity (C27-C28), and avoiding circularity in CADD scores (C32). The robustness across populations (C24) supports generalizability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C33",
+      "C34"
+    ],
+    "result": "Overfitting has negligible effect on the results, as expected given the model has only 7 fitted parameters and uses ~653M putatively neutral sites across ~2600 LD blocks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The assessment is justified by the favorable ratio of data to parameters (C34) and is verified through out-of-sample predictions in 2 Mb windows (C33). The large amount of data relative to model complexity makes overfitting unlikely.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C66"
+    ],
+    "result": "Selection strength estimates differ between exonic and non-exonic regions, but including separate parameters for these regions does not improve predictions because background selection effects are fairly insensitive to selection strength.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The finding that separate parameters don't improve predictions (C66) is consistent with theoretical expectations that background selection effects are insensitive to selection strength (C64), with the key difference being spatial extent rather than total magnitude. This justifies the simpler model and the interpretation that proportions of deleterious mutations approximate relative effects (C63-C64).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C106"
+    ],
+    "result": "The background selection maps provide a more accurate null model than currently used for population genetic inferences that rely on diversity levels, such as demographic history inference.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This implication follows logically from the demonstrated improvement in explaining diversity variation (60% vs 32%) and the good calibration of the maps. The claim is appropriately framed as an implication with citations to relevant applications (Schiffels and Durbin, 2014; Terhorst et al., 2017; Pouyet et al., 2018).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "The lack of detectable sweeps does not imply rare adaptation; instead, adaptation may have been driven by polygenic selection on complex traits, which would produce negligible effects on linked diversity while stabilizing selection on such traits could contribute substantially to background selection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This is a plausible theoretical interpretation supported by appropriate citations (C46-C57), but it remains speculative. The claims about polygenic adaptation dynamics (C49-C53) and stabilizing selection effects (C54-C56) are based on theoretical work, not direct evidence from this study. The connection to the observed dominance of background selection (C57) is logical but inferential. This represents an important hypothesis for future work rather than a demonstrated result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C115"
+    ],
+    "result": "The inference method should be able to distinguish background selection from selective sweeps based on their different spatial signatures, and should capture effects of hard, partial, and soft sweeps that resulted in substitutions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The methodological capability is supported by theoretical reasoning (C37, C115), previous successful application in Drosophila (C39), and appropriate citations (C38). However, the actual failure to detect sweeps in humans could reflect either their true absence or limitations in detection power. The method's validity is supported but the negative result requires careful interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C101"
+    ],
+    "result": "Background selection effects not captured by the models would cause underestimation of the range and extent of background selection effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is a valid acknowledgment of potential bias direction, supported by citation (Elyashiv et al., 2016). It appropriately qualifies the quantitative estimates as potentially conservative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C112"
+    ],
+    "result": "A simple model of background selection conceived three decades ago provides reliable quantitative prediction of genetic diversity levels throughout human autosomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This conclusion is well-supported by the cumulative evidence: high variance explained (60%), good calibration, plausible parameter estimates, and robustness across populations and model specifications. The characterization as 'simple' and 'reliable' is justified by the results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "The model calculates marginal probabilities of polymorphism at neutral sites and uses composite likelihood to infer selection parameters, yielding both parameter estimates and maps of expected diversity levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims describe the methodological framework accurately. The approach is standard for this type of inference and is appropriately referenced to prior work. The description is consistent with the results presented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C1",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Background knowledge: Linked selection (both selective sweeps and background selection) reduces neutral diversity near selected sites, with effects depending on recombination rate and density of selected sites, as observed across many taxa.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims accurately summarize established theory and empirical findings from the cited literature. They provide appropriate context for the study but are not novel results from this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Prior work context: McVicker et al., 2009 showed good fit of background selection models but with unrealistically high deleterious mutation rates, leading to debate about whether sweeps were being 'soaked up' by the model or truly had minimal effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims accurately characterize the prior literature and the controversy that motivated this study. The assessment of McVicker et al.'s mutation rate estimates as unrealistic (C16) is supported by comparison with total mutation rate bounds.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C108",
+      "C110",
+      "C111"
+    ],
+    "result": "Despite known functional turnover in non-coding regions on evolutionary timescales, phylogenetic conservation remains the best predictor, and it remains unclear how much the maps can be improved.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The observation about functional turnover (C108) is supported by citations. The finding that conservation is still the best predictor (C109, covered in another result) creates an interesting tension. The uncertainty about future improvements (C111) is an appropriate acknowledgment of current limitations.",
+    "result_type": "MINOR"
+  }
+]

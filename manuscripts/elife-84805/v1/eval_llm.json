@@ -1,0 +1,395 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C6",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "The authors developed a novel computational method combining coevolution analysis, neural network-based state-specific contact identification, and AlphaFold2 biasing to predict structures of the entire sugar porter superfamily in each state of the transport cycle, and used these contacts to generate free-energy landscapes via enhanced sampling MD simulations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C42-C45 describe a coherent methodological pipeline that is well-documented in the manuscript with detailed methods sections and supporting figures (Figure 2). The approach successfully integrates multiple computational techniques to address the stated goal of predicting conformational states.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Coevolution analysis identified state-specific encouraged and discouraged contacts that are spread throughout the protein structure and display strong state dependency, with approximately 10% of top coevolving pairs representing contacts not formed in available crystal structures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C61 are supported by data presented in Figures 2B, 3, and Tables 1-2. The neural network training and layer-wise relevance propagation analysis provides quantitative evidence for state-specific contact patterns, though the small training set (36 chains) raises concerns about overfitting that the authors acknowledge.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "The generated sugar porter models have acceptable quality with mean RMSD of ~2.5 \u00c5 to closest experimental structures, which improves to ~2.1 \u00c5 after 10 ns MD relaxation, with the RosettaMP pipeline bringing models close to local free-energy minima.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C67 are supported by quantitative RMSD analysis presented in Figure 4 with confidence intervals. The improvement after MD relaxation is demonstrated for specific cases (GLUT5, STP10), providing evidence for model quality. However, the assessment is limited by the small number of available experimental structures for comparison.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "The method successfully predicted structural features absent from the training set, including a unique helical kink in STP10 TM10 and accurate GLUT4 inward-open models, demonstrating the method's ability to capture transporter-specific features and generalize beyond training data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C73 provide strong validation through comparison with structures determined after model training (STP10 7AAR, GLUT4). The RMSD values (1.8-2.3 \u00c5) and identification of novel structural features (TM10 kink) demonstrate predictive power beyond simple interpolation of training data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "AWH simulations (250-650 ns) generated free-energy landscapes for GLUT5 showing the outward-facing state as most favorable in absence of substrate, with low barriers (4.6-9.9 kJ/mol) between outward-open and outward-occluded states, and the largest barrier (~35.7 kJ/mol) between occluded and inward-occluded states, consistent with experimental kinetic estimates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C89 are supported by extensive MD simulation data presented in Figure 5 with convergence analysis (Figure 5 supplements). The agreement between the computed barrier (~35.7 kJ/mol) and experimental estimates (43 kJ/mol from GLUT1 kinetics) provides strong validation, though the comparison across different isoforms introduces some uncertainty.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "The relaxed GLUT5 occluded state does not fall on the transition state barrier, and coevolution-driven simulations may be detecting a pre-transition state occluded conformation that is lowly populated in the presence of substrate, while failing to fully stabilize the inward-open state in substrate absence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C90-C94 involve significant speculation (C93 explicitly speculative) about the nature of the detected occluded state. While the observation that the relaxed occluded state differs from the transition state is data-supported (C90, Figure 5), the interpretation as a pre-transition state (C92-C93) requires additional experimental validation. The failure to stabilize inward-open state (C94) is expected but limits completeness.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C133"
+    ],
+    "result": "The evolutionary-based collective variable approach enables efficient generation of free-energy landscapes with simulations of hundreds of nanoseconds, representing at least an order of magnitude performance improvement over previous methods while maintaining accuracy consistent with experimental kinetic measurements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C96 and C133 are supported by convergence analysis and comparison to previous work (Galochkina et al., 2019; Selvam et al., 2018). The agreement with experimental activation barriers provides validation of accuracy. However, the authors appropriately note that methods are \"not strictly comparable,\" introducing some uncertainty in the magnitude of improvement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "Family-wide analysis identified conserved state-specific interactions throughout the transport cycle, including salt-bridge networks stabilizing outward-facing states, TM7b-TM1 interactions driving occluded state formation, TM10a-TM8 contacts characterizing inward-facing transitions, and intracellular gate opening mechanisms involving Glu401-Arg159 salt bridge breakage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C109 are extensively supported by structural analysis presented in Figure 6 with multiple sequence alignments and distance measurements. The identification of specific residue interactions is backed by both computational models and literature citations (e.g., C103 citing experimental mutagenesis). The mechanistic interpretations (e.g., C105) are reasonable inferences from the structural data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "The latch mechanism for proton coupling involves protonation-dependent breakage of the Asp27-Arg133 salt bridge enabling TM1-TM7b interaction and occluded state formation, with subfamily-specific variations in how the unpaired Arg133 is stabilized (TM6 Glu206 in XylE, phospholipid headgroups in STP10).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C119 validate and extend the previously proposed latch mechanism with structural evidence from multiple transporter subfamilies. The coevolution analysis (C116-C117) and structural models (C118-C119, Figure 7) provide strong support. The mechanism is consistent with prior experimental work (C110-C113) and explains subfamily differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "Analysis of passive transporters reveals that HXTs maintain the latch interaction throughout the cycle via large-scale helical bundle pivoting enabled by helix-breaking residues at position 202, while GLUT2 retains the salt bridge through assistance from a serine residue at position 205.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C124 explain mechanistic differences between proton-coupled and passive transporters through structural analysis (Figure 7, Figure 7 supplements). The identification of specific residues (Pro/Gly at 202, Ser at 205) and their functional roles is supported by sequence alignments and structural models, providing mechanistic insight into the evolution of coupling specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "The work enables separation of state-specific and transporter-specific features through coevolution-based analysis, creating low-dimensional projections describing conformational transitions that can be used to construct free-energy landscapes while minimizing information loss during dimensionality reduction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C128-C132 describe key methodological advantages demonstrated through validation on newly reported structures (C130, claims C68-C73). The ability to separate state and subfamily features is evidenced by the successful identification of both conserved and subfamily-specific contacts (Figure 6, Figure 7).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C8",
+      "C46",
+      "C47",
+      "C140",
+      "C141",
+      "C142"
+    ],
+    "result": "Comparative analysis across sugar porter models identified conserved molecular determinants of the transport cycle family-wide, including the critical role of TM7b-TM1 interactions in occluded state formation, which explains the evolution of proton coupling even when the proton-accepting residue doesn't directly coordinate substrate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C46-C47, and C140-C142 represent major conclusions supported by extensive comparative analysis across multiple subfamilies. The identification of TM7b-TM1 interactions as critical for occluded state formation (C141) is supported by coevolution analysis, structural models, and consistency with experimental mutagenesis data (C58, C103).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C9",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151"
+    ],
+    "result": "The analysis validates and extends the latch mechanism by identifying subfamily-specific variations in salt bridge partner residues and revealing that TM7b-TM1 interactions are part of a larger network including TM7b-TM8 contacts, with TM7b playing an orchestrating role throughout the second half of the transport cycle while TM10b has a more passive role.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9 and C145-C151 extend mechanistic understanding beyond the original latch proposal through detailed structural analysis. The identification of alternative stabilization mechanisms (C145-C148) and the characterization of TM7b's orchestrating role (C149-C150) versus TM10b's passive role (C151) are supported by contact analysis and structural comparisons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C135",
+      "C163",
+      "C164",
+      "C167"
+    ],
+    "result": "The approach provides a rational framework for understanding sugar porter function at the molecular level and potentially enables re-engineering of transporters with different characteristics, highlighting the fine-tuned and intricate interactions evolved even in simple transporters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C135, C163-C164, and C167 represent appropriate conclusions about the significance and potential applications of the work. The framework is demonstrated through successful mechanistic insights (C135, C163), though the re-engineering applications (C164) remain prospective. The conceptual conclusion about transporter complexity (C167) is well-supported by the detailed interaction networks identified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C10",
+      "C134",
+      "C165",
+      "C166"
+    ],
+    "result": "The computational approach is claimed to be transferable to other transporter families and protein families in general, with potential applications in guiding experimental dynamics studies and rational perturbation of free-energy landscapes through targeted mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C10, C134, C165-C166 are largely speculative about broader applicability and future applications. While the methodology is sound and successful for sugar porters, transferability to other protein families (C10, C134) and specific experimental applications (C165-C166) require demonstration. These represent reasonable hypotheses but lack direct supporting evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Sugar porters represent the largest and most widespread family of secondary-active transporters across all kingdoms of life, with mammalian GLUTs (14 isoforms in humans) playing critical roles in glucose homeostasis and showing upregulation in cancers, while other organisms express specialized isoforms for diverse functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 and C11-C25 provide established background knowledge about sugar porter biology, all supported by appropriate literature citations. These claims establish the biological importance and diversity of the protein family being studied.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Despite being the best structurally characterized MFS transporter family, sugar porters lack complete structural coverage across all conformational states, with current transport models being predominantly descriptive and oversimplified, though distantly related members show high structural conservation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C5 and C26-C40 establish the knowledge gap and structural characteristics of sugar porters that motivate the study. These are well-supported by literature citations and accurately describe the state of the field, providing clear rationale for the computational approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C41",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "AlphaFold2 models collectively capture major conformational states but cannot deterministically predict specific states, with PCA analysis showing that sugar porters cluster by subfamily rather than conformational state, necessitating the development of methods to rationally steer models into specific states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41, C48-C50 establish the limitations of existing AlphaFold2 predictions and justify the need for the state-specific biasing approach. The PCA analysis (C50, Figure 1D-E) provides clear evidence for the clustering by subfamily rather than state.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Previous free-energy landscapes for GLUT transporters were generated from limited structures, lacked the occluded conformation, and did not consider transferability of structural features across family members, with GLUT5 chosen for detailed study as the only transporter with structures in both fully outward- and inward-facing conformations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C78 provide appropriate critique of prior work and justification for the choice of GLUT5 as the model system. The limitations of previous studies are accurately described with citations, and the rationale for GLUT5 selection is sound.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C86",
+      "C125",
+      "C126",
+      "C127",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C157",
+      "C158",
+      "C159",
+      "C160"
+    ],
+    "result": "Background structural and mechanistic knowledge about sugar porters, including asymmetric sugar coordination, rocker-switch mechanism similarities to rocking-bundle proteins, and challenges in capturing transition states experimentally, with PfHT1's occluded state likely not representing a true transition state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86, C125-C127, C136-C139, C157-C160 provide relevant background knowledge and context, all appropriately supported by literature citations. These establish important mechanistic concepts and experimental challenges that inform the computational approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C161",
+      "C162"
+    ],
+    "result": "Analysis suggests TM10b dynamics are important with possible facilitation by TM10a-TM8 stabilization, that only one salt-bridge pair fully breaks between occluded and inward-occluded states in GLUT5, potentially indicating asymmetric rocker-switch rearrangements, and that PfHT1 may represent a pre-transition state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C152-C156 and C161-C162 involve significant speculation (C152, C156, C162 explicitly speculative) about mechanistic details and the nature of specific states. While based on structural analysis (C153-C155, C161), these interpretations require additional experimental validation to be considered fully supported.",
+    "result_type": "MINOR"
+  }
+]

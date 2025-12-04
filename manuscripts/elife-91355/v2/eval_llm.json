@@ -1,0 +1,226 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "The frequency of mechanical stimulation during sleep deprivation significantly affects the magnitude of sleep rebound in Drosophila. High-frequency stimulation (20s intervals) produces significant rebound, while lower frequencies (120s, 220s) do not, despite achieving similar levels of sleep deprivation. Paradoxically, 6hr deprivation with high-frequency stimulation produced greater rebound than 12hr or 24hr deprivation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C18 provide converging evidence from multiple deprivation durations (6hr, 12hr, 24hr) and stimulation frequencies (20s, 120s, 220s) showing that mechanical stimulation frequency, rather than sleep loss per se, determines rebound magnitude. The data are internally consistent and supported by figures. The paradoxical finding that shorter deprivation produces greater rebound (C17) further supports that mechanical perturbation has sleep-independent effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Using the Ethoscope system with yoked controls reveals homeostatic sleep rebound that is masked when comparing sleep-deprived flies to undisturbed controls. Focal flies showed significantly higher sleep than yoked controls despite both experiencing identical mechanical perturbation, demonstrating that mechanical stimulation produces sleep-independent effects that mask true homeostatic responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C24 describe the yoked control paradigm and demonstrate its utility. The key finding (C23) that focal flies show significant rebound compared to yoked controls but not undisturbed controls (C20-C21) is well-supported by data. The explanation that mechanical stimulation increases activity levels (C24) provides a mechanistic basis for the masking effect. This represents a methodological advance with clear experimental support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Sleep-deprived focal flies display modest but significant increases in cumulative sleep over two successive cycles when compared to yoked controls, though they fail to discharge a substantial portion of sleep debt. The rebound is characterized by increased bout duration rather than bout number.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C27 describe multi-cycle sleep rebound with appropriate statistical support from Figure 3. The finding that rebound persists across multiple cycles but remains modest is internally consistent. The architectural analysis (C27) provides mechanistic insight. However, the small magnitude of recovery (C26) raises questions about whether all homeostatically-regulated sleep is being captured by standard definitions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "When sleep is defined using longer inactivity criteria (\u226525 min), sleep-deprived flies recover approximately 50% of lost sleep by the third day of recovery, with over 25% of flies overshooting their sleep debt. This long-bout sleep shows stronger homeostatic regulation than standard sleep definitions, with significant increases on days 2 and 3 of recovery.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C33 provide strong evidence that long-bout sleep is more homeostatically regulated than standard sleep. The systematic analysis across inactivity criteria (C28, Figure 4B) is methodologically sound. The finding that ~50% of sleep debt is recovered (C29-C30) and that flies overshoot debt (C31) are hallmarks of homeostatic control. The control showing all flies naturally display such bouts (C32) addresses a potential artifact concern.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Selective deprivation of long-bout sleep (using 22 min inactivity triggers) produces state-specific homeostatic rebound. When analyzed using 25 min inactivity criteria, focal flies show significant increases in long-bout sleep across all 3 post-deprivation days, while standard sleep analysis (5 min criteria) reveals no rebound.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C39 demonstrate state-specific sleep homeostasis through an elegant experimental design. The dissociation between standard sleep (no rebound, C37) and long-bout sleep (significant rebound, C38) when using state-specific deprivation strongly supports the existence of distinct sleep states with independent homeostatic regulation. The architectural changes (C39) provide additional support. This is analogous to REM/NREM-specific deprivation in mammals.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "MALDI-TOF mass spectrometry analysis reveals that most molecular changes following sleep deprivation reflect mechanical perturbation rather than sleep pressure. When yoked controls are included, only ~4% of detected molecules track sleep pressure, compared to ~68% showing increases without yoked controls. Serotonin (177.1 m/z) is identified as a candidate sleep pressure-tracking molecule, replicated across independent experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C46 demonstrate the critical importance of yoked controls for molecular studies. The dramatic reduction from 127 to 8 candidate molecules (C40, C43) when including yoked controls is striking and well-supported by Figure 6. The identification of serotonin (C45-C46) is supported by m/z matching, literature citations, and replication (C44). However, only 2 of 8 candidates replicated, suggesting the need for additional validation of other candidates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Prior literature establishes that serotonin promotes sleep in Drosophila through multiple lines of evidence: pharmacological increases and neuronal excitation increase sleep, genetic loss of synthesis or receptors decreases sleep, loss of serotonin transporter increases sleep, and loss of serotonin-inactivating enzymes increases both rebound and brain serotonin levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C52 accurately summarize published literature supporting serotonin's sleep-promoting role. These are appropriately cited claims from prior work that provide context for the current findings. The convergent evidence from multiple experimental approaches (pharmacology, genetics, receptor knockouts) strengthens the interpretation that serotonin acts as a sleep substance. This contextualizes the MALDI-TOF findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "The study establishes three main conclusions: (1) deep sleep states are the primary target of homeostatic control, (2) multi-cycle sleep rebound occurs following deprivation, and (3) serotonin levels track sleep pressure in the central brain when accounting for mechanical perturbation effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C56 represent the authors' summary conclusions, which are well-supported by the experimental data presented throughout the manuscript. Each conclusion is backed by multiple experiments with appropriate controls. The integration of behavioral (long-bout sleep homeostasis) and molecular (serotonin) findings provides a comprehensive picture of sleep homeostasis in Drosophila.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "Sleep disruption has significant health consequences in humans, sleep evolved at least 740 million years ago, and Drosophila is a useful model for sleep research. However, flies show modest sleep rebound (0-25 min recovery from 200-500 min lost, ~12.5% total recovery) compared to humans (~40% recovery).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C6 provide background context from published literature. These are appropriately cited and establish the rationale for the study. The comparison between fly and human sleep recovery (C5-C6) motivates the investigation into whether methodological issues might explain the apparent species difference.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C7",
+      "C63",
+      "C66"
+    ],
+    "result": "Mechanical perturbation used for sleep deprivation produces stress-related biochemical changes even when delivered during wakefulness, and chronic mechanical agitation produces stress in multiple species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C63, and C66 are supported by appropriate citations to published literature. These establish that mechanical sleep deprivation has known confounding effects, providing crucial motivation for the yoked control approach. The evidence spans both Drosophila and mammalian studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C8",
+      "C9"
+    ],
+    "result": "In mammals, sleep consists of multiple physiologically discrete stages that respond differentially to sleep deprivation, with slow-wave sleep preferentially increased following deprivation compared to REM sleep.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C9 accurately summarize well-established mammalian sleep biology from cited literature. This provides important comparative context for interpreting the fly results and motivates the investigation of whether flies also have distinct sleep states with differential homeostatic regulation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Prior work has established that flies have a deep sleep state characterized by distinct brain signaling, reduced metabolic rate, and waste clearance, with longer bouts (30-60 min) being stronger reflections of homeostatic control. Flies display bimodal long-bout sleep patterns with more deep sleep at night.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C12 and C57-C62 accurately summarize published literature establishing the existence of deep sleep in flies. These are appropriately cited and provide essential context for the current study's focus on long-bout sleep. The convergent evidence from multiple physiological measures (brain activity, metabolism, waste clearance) strengthens the case for distinct sleep states.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C64",
+      "C65"
+    ],
+    "result": "Previous work using the Ethoscope system revealed low homeostatic rebound and no deprivation-associated death. Even gentle handling in rodents, thought to cause little stress, affects feeding behavior following deprivation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C65 cite relevant prior work. C64 provides context for why the Ethoscope system was chosen and what previous results showed. C65 extends the argument that all deprivation methods have confounds to mammalian studies, strengthening the rationale for yoked controls.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "A previous HPLC study failed to detect serotonin increases in sleep-deprived flies, but MALDI-TOF imaging suggests increases are localized to the central brain rather than optic lobes, potentially explaining why whole-brain assays might miss these changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C67 accurately cites prior work, but C68-C70 involve speculation about why results differ. While the spatial resolution argument is plausible and supported by Figure 6B/F showing central brain localization, the inference that whole-brain assays would miss this signal (C69-C70) is not directly tested. The authors appropriately mark these as implicit/inferred claims, but additional experiments would be needed to confirm this explanation.",
+    "result_type": "MINOR"
+  }
+]

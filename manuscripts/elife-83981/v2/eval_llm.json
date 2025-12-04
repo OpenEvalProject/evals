@@ -1,0 +1,265 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Single-cell RNA sequencing of NEOLP (n=3) and EOLP (n=2) samples identified 46,377 cells across 47 clusters, annotated as 8 major cell types. T cells constituted the highest proportion overall, though with substantial variation (47.47% in EOLP-2 to 71.93% in NEOLP-3). EOLP showed increased proportions of B cells, myeloid cells, neutrophils, and plasmacytoid dendritic cells compared to NEOLP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The scRNA-seq experimental design is clearly described with appropriate sample sizes for exploratory analysis. Cell clustering, annotation, and compositional analyses are standard approaches supported by figures. The observation of variable T cell proportions across samples is transparently reported. However, the small sample size (n=2 EOLP, n=3 NEOLP) limits statistical power for compositional comparisons, and no statistical tests are reported for these differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "NK/T cell populations were subdivided into 23 clusters and annotated as 6 major subpopulations: NK cells, CD8+ T cells, CD4+ T cells, CD4+CD8+ T cells, CD8+ Trm cells, and CD4+CD8+ Trm cells. EOLP exhibited fewer CD8+ T cells but more CD4+ T cells, CD8+ Trm cells, and CD4+CD8+ T cells than NEOLP. CD8+ Trm cells showed higher expression of cytotoxic and inflammatory genes (GZMA, GZMK, TNF, PRF1) compared to other T cell subsets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The T cell subclustering and annotation are supported by marker gene expression (Figure 2A-B). The differential abundance of T cell subsets between EOLP and NEOLP is clearly shown (Figure 2C), though statistical testing is not reported. Gene expression patterns distinguishing CD8+ Trm cells are well-documented (Figure 2D-E). The biological interpretation of these expression patterns is reasonable given established knowledge of these genes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Differential expression analysis between EOLP and NEOLP revealed that CD8+ Trm cells in EOLP showed significantly increased expression of marker genes (CD69, GNLY) and pro-inflammatory genes (GZMB, IFNG, TNF, PRF1). These differentially expressed genes were enriched in pathways related to cytokine production, T cell activation, and cell activation. Pseudotime analysis suggested CD8+ Trm cells represent a terminal differentiation state in OLP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The differential expression analysis is appropriately conducted and supported by Figure 2\u2014figure supplement 2B and Supplementary files. GO enrichment analysis provides functional context (Figure 2F). Pseudotime trajectory analysis (Figure 2G) supports the terminal differentiation interpretation, though this is inherently inferential. The convergence of multiple analytical approaches strengthens these findings, though the small sample size remains a limitation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Spatial transcriptomics analysis of normal oral mucosa (n=2), NEOLP (n=3), and EOLP (n=1) revealed that CD8+ Trm cells were predominantly distributed adjacent to the epithelium across all tissue types, with progressively higher abundance from normal mucosa to NEOLP to EOLP. In EOLP, epithelial loss was observed in some regions, with corresponding reduction of CD8+ Trm cells in those areas but presence in deeper lamina propria.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The spatial transcriptomics data provides valuable spatial context (Figure 3A-B) and the histological observations are clearly documented. However, the EOLP group has only n=1 sample, which is insufficient for drawing generalizable conclusions about EOLP. The spatial distribution patterns are descriptive and lack quantitative analysis or statistical testing. The observation about epithelial loss and CD8+ Trm distribution is interesting but requires validation in additional samples.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C50",
+      "C51"
+    ],
+    "result": "Spatial transcriptomics revealed higher expression of TNF, IL17A/IL17RA, and IFNGR1 in OLP compared to normal oral mucosa, with significantly enhanced signals of IFNGR1 and IL17RA in EOLP compared to NEOLP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The spatial gene expression patterns are reported but lack quantitative analysis or statistical testing. The comparison between EOLP and NEOLP is particularly problematic given only n=1 EOLP sample in the spatial transcriptomics dataset. While the observation is consistent with other findings in the manuscript, it cannot be considered well-supported without proper replication and statistical analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "A clinical cohort of 40 OLP patients (27 NEOLP, 13 EOLP) was established with no significant differences in demographic or clinical variables between groups except for diagnosis. The cohort included detailed clinical characterization including age, gender, smoking/drinking status, VAS scores, and disease duration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The clinical cohort is well-characterized with appropriate demographic and clinical data (Table 1). Statistical comparisons between NEOLP and EOLP groups are reported with p-values, showing no significant differences in baseline characteristics. This provides a solid foundation for subsequent molecular analyses, though the relatively small sample size (especially n=13 EOLP) limits statistical power.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Bulk RNA-seq of the clinical cohort confirmed that CD8+ Trm marker genes (ITGA1, LITAF, SKIL, CD69) and cytokine-related genes (IL17RA, IFNGR1, IFNAR1, TNFRSF6B, GZMB) were significantly increased in EOLP versus NEOLP. These genes were also significantly associated with recurrent erosion versus persistent non-erosion outcomes in 1-year follow-up. Multivariate logistic regression controlling for confounders confirmed these associations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The bulk RNA-seq validation is appropriately conducted with statistical testing (Figure 4A-D, Table 2). Multivariate logistic regression analysis controlling for age, gender, smoking, and drinking strengthens the findings by addressing potential confounders. The consistency between cross-sectional (EOLP vs NEOLP) and longitudinal (recurrent erosion vs persistent non-erosion) analyses provides strong support. P-values and odds ratios are reported in Table 2, showing statistical significance for multiple genes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Immunofluorescence staining verified the presence of CD8+ Trm cells (CD8+CD69+) in both NEOLP and EOLP, with significantly higher abundance in EOLP. CD8+ Trm cells were predominantly located close to the basal layer. In EOLP, CD8+ Trm cells accumulated more obviously under erosive epithelium with disrupted basement membrane, and more T cells (including CD8+ Trm cells) were entering the epithelial layer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The immunofluorescence data (Figure 5A-D) provides protein-level validation of the scRNA-seq and spatial transcriptomics findings. The spatial localization observations are clearly documented with representative images. The qualitative descriptions of basement membrane disruption and T cell infiltration are consistent with known OLP pathology. However, quantitative analysis of cell counts or spatial metrics would strengthen these observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C79"
+    ],
+    "result": "Flow cytometry quantification confirmed that CD8+ Trm cells (CD3+CD8+CD69+CCR7-) were significantly more abundant in EOLP than NEOLP (p<0.05).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The flow cytometry analysis provides quantitative validation with appropriate gating strategy (Figure 5E-G). Statistical significance is reported (p=0.0203), and the finding is consistent with all other lines of evidence in the manuscript. The sorting strategy is clearly defined and follows established conventions for identifying Trm cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C80",
+      "C81"
+    ],
+    "result": "ELISA analysis of sorted CD8+ Trm cells stimulated with PHA showed that cells from EOLP produced significantly higher levels of inflammatory cytokines (TNF-\u03b1, IFN-\u03b3, IL-17) compared to NEOLP, with the increase in IFN-\u03b3 being statistically significant (p=0.0203).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The ELISA functional assay (Figure 5H) provides direct evidence of enhanced cytokine production by CD8+ Trm cells in EOLP. The experimental design with PHA stimulation is appropriate for assessing functional capacity. Statistical significance is reported for IFN-\u03b3, while TNF-\u03b1 and IL-17 show trends in the same direction. This functional validation is critical for supporting the mechanistic claims about CD8+ Trm cell activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C83",
+      "C88",
+      "C89",
+      "C90",
+      "C94",
+      "C95",
+      "C96",
+      "C99",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C111",
+      "C112"
+    ],
+    "result": "The authors conclude that CD8+ Trm cells play a crucial role in OLP pathology and contribute to erosion by secreting multiple cytokines (particularly IFN-\u03b3). CD8+ Trm cells are increased in number and functionally more active in EOLP, distributed primarily in the lamina propria near the basement membrane, and their presence is strongly correlated with clinical manifestations and outcomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This overarching conclusion is well-supported by convergent evidence from multiple experimental approaches: scRNA-seq showing increased CD8+ Trm abundance and activation signatures in EOLP (C24, C30, C34-C36), spatial transcriptomics showing their localization (C47, C113), bulk RNA-seq validation in clinical cohort (C63-C71), immunofluorescence confirmation (C72-C78), flow cytometry quantification (C79), and functional ELISA demonstrating enhanced cytokine production (C80-C81). The consistency across methodologies and the inclusion of clinical outcome data strengthen the causal inference, though direct mechanistic proof would require interventional studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C82",
+      "C117",
+      "C118"
+    ],
+    "result": "The authors claim this is the first comprehensive characterization of CD8+ Trm cells in OLP tissues with different clinical manifestations, providing a novel molecular mechanism for OLP erosion and new insights into OLP pathological development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The novelty claim appears justified based on the comprehensive multi-modal approach (scRNA-seq, spatial transcriptomics, bulk RNA-seq, immunofluorescence, flow cytometry, functional assays) applied to well-characterized clinical samples. The integration of spatial and functional data with clinical outcomes represents a significant advance. However, the claim of \"first\" comprehensive characterization should be verified against the literature, and the mechanistic understanding remains correlative rather than definitively causal.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "CD8+ Trm cells exist in normal oral mucosa, NEOLP, and EOLP with gradually increasing content. In EOLP, CD8+ Trm cells are more extensive, especially in epithelial deletion areas. Pseudotime analysis indicates CD8+ Trm cells represent a terminal differentiation state in OLP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The progressive increase in CD8+ Trm cells from normal to NEOLP to EOLP is supported by multiple lines of evidence (scRNA-seq C24, spatial transcriptomics C45-C46, immunofluorescence C73, flow cytometry C79). The spatial distribution in epithelial deletion areas is documented by spatial transcriptomics (C48-C49, C86). The terminal differentiation state is supported by pseudotime analysis (C38, Figure 2G), though this is an inferential conclusion based on computational trajectory analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C102",
+      "C103"
+    ],
+    "result": "The authors found no statistically significant association between medication therapy and recurrent erosion in the cohort, speculating this might be because CD8+ Trm cells are difficult to eradicate with current medications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The lack of association between medication and clinical outcome (C102) is reported but the data are not shown (Table 3 shows medication distribution but no statistical test of association with outcome). The speculation about CD8+ Trm resistance to medication (C103) is not supported by any experimental evidence in this study. This represents an interesting hypothesis for future investigation but should not be presented as a supported finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C109",
+      "C110"
+    ],
+    "result": "The authors propose that CD8+ Trm cells may become a potential immunotherapy target for OLP and provide new ideas for treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This is a speculative proposal for future therapeutic development based on the study's findings about CD8+ Trm cell involvement in OLP pathology. While the underlying data supporting CD8+ Trm involvement are solid, no therapeutic interventions were tested in this study. This represents a reasonable hypothesis for future investigation but is not a supported result of the current work.",
+    "result_type": "MINOR"
+  }
+]

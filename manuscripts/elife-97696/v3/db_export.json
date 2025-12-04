@@ -1,0 +1,1527 @@
+{
+  "submission": {
+    "id": "cdf8f687-9205-48f8-91c5-13c1aaf6dd54",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-04T05:00:20.969271Z",
+    "updated_at": "2025-12-04T05:00:20.969271Z"
+  },
+  "content": [
+    {
+      "id": "395edc1c-71e5-4539-802e-2fbebde71476",
+      "submission_id": "cdf8f687-9205-48f8-91c5-13c1aaf6dd54",
+      "content_type": "manuscript",
+      "content_text": "# Isoleucine gate blocks K+ conduction in C-type inactivation\n\n## Authors\n\n- Werner Treptow<sup>1</sup> ([ORCID: 0000-0003-4564-3205](https://orcid.org/0000-0003-4564-3205)) \u2020\n- Yichen Liu<sup>3</sup> ([ORCID: 0000-0003-0774-6932](https://orcid.org/0000-0003-0774-6932))\n- Carlos AZ Bassetto<sup>2</sup> ([ORCID: 0000-0002-7012-5699](https://orcid.org/0000-0002-7012-5699))\n- Bernardo I Pinto<sup>2</sup> ([ORCID: 0000-0003-0200-1069](https://orcid.org/0000-0003-0200-1069))\n- Joao Antonio Alves Nunes<sup>1</sup>\n- Ramon Mendoza Uriarte<sup>2</sup>\n- Christophe J Chipot<sup>2</sup> ([ORCID: 0000-0002-9122-1698](https://orcid.org/0000-0002-9122-1698))\n- Francisco Bezanilla<sup>2</sup> ([ORCID: 0000-0002-6663-7931](https://orcid.org/0000-0002-6663-7931))\n- Benoit Roux<sup>2</sup> ([ORCID: 0000-0002-5254-2712](https://orcid.org/0000-0002-5254-2712)) \u2020\n\n### Affiliations\n\n1. Laborat\u00f3rio de Biologia Te\u00f3rica e Computacional (LBTC), Universidade de Bras\u00edlia Brasilia Brazil ([ROR:02xfp8v59](https://ror.org/02xfp8v59))\n2. Department of Biochemistry and Molecular Biology, The University of Chicago Chicago United States ([ROR:024mw5h28](https://ror.org/024mw5h28))\n3. Department of Neurobiology, The University of Chicago Chicago United States ([ROR:024mw5h28](https://ror.org/024mw5h28))\n4. Laboratoire International Associe\u0301 Centre National de la Recherche Scientifique et University of Illinois at Urbana\u2212Champaign, Unite\u0301 Mixte de Recherche No. 7019, Universite\u0301 de Lorraine, Universite\u0301 de Lorraine Vand\u0153uvre-le\u0300s-Nancy France ([ROR:04vfs2w97](https://ror.org/04vfs2w97))\n5. NIH Center for Macromolecular Modeling and Bioinformatics, Beckman Institute for Advanced Science and Technology, and Department of Physics, University of Illinois at Urbana\u2212Champaign Urbana United States ([ROR:047426m28](https://ror.org/047426m28))\n6. Centro Interdisciplinario de Neurociencia de Valpara\u00edso, Facultad de Ciencias, Universidad de Valpara\u00edso Valpara\u00edso Chile ([ROR:00h9jrb69](https://ror.org/00h9jrb69))\n\n\u2020 Corresponding author\n\n## Abstract\n\nMany voltage-gated potassium (Kv) channels display a time-dependent phenomenon called C-type inactivation, whereby prolonged activation by voltage leads to the inhibition of ionic conduction, a process that involves a conformational change at the selectivity filter toward a non-conductive state. Recently, a high-resolution structure of a strongly inactivated triple-mutant channel kv1.2-kv2.1-3m revealed a novel conformation of the selectivity filter that is dilated at its outer end, distinct from the well-characterized conductive state. While the experimental structure was interpreted as the elusive non-conductive state, our molecular dynamics simulations and electrophysiological measurements show that the dilated filter of kv1.2-kv2.1-3m is conductive and, as such, cannot completely account for the inactivation of the channel observed in the structural experiments. The simulation shows that an additional conformational change, implicating isoleucine residues at position 398 along the pore lining segment S6, is required to effectively block ion conduction. The I398 residues from the four subunits act as a state-dependent hydrophobic gate located immediately beneath the selectivity filter. These observations are corroborated by electrophysiological experiments showing that ion permeation can be resumed in the kv1.2-kv2.1-3m channel when I398 is mutated to an asparagine\u2014a mutation that does not abolish C-type inactivation since digitoxin (AgTxII) fails to block the ionic permeation of kv1.2-kv2.1-3m_I398N. As a critical piece of the C-type inactivation machinery, this structural feature is the potential target of a broad class of quaternary ammonium (QA) blockers and negatively charged activators thus opening new research directions toward the development of drugs that specifically modulate gating states of Kv channels.\n\n## Introduction\n\nThe selectivity filter of voltage-gated potassium (Kv) channels is a specialized molecular structure, responsible for the fast and selective conduction of potassium (K+) over other ionic species. It is well established that the selectivity filter of Kv channels can exist in both conductive and non-conductive states (Figure 1). Known as the process of (slow) C-type inactivation (Hoshi et al., 1990; Ostmeyer et al., 2013), the conductive to non-conductive conformational transition is of great physiological importance as it contributes to fine-tune long-term activity of Kv channels. The canonical conductive conformational state of the filter was first revealed with the crystallographic structure of the prototypical bacterial K+ channel KcsA at high resolution (e.g. PDB id 1BL8 [Doyle et al., 1998] or 1K4C [Zhou et al., 2001]). Molecular dynamics (MD) studies confirm that ion conduction along this filter conformation is possible and unopposed by large free-energy barriers (Bern\u00e8che and Roux, 2001; Kopec et al., 2019). Since, additional structures have been resolved for other Kv channels of the (eukaryotic) Shaker family, broadening our knowledge of the conductive state of the filter (Long et al., 2007). Recently, high-resolution structures of Kv channels revealed a novel conformation of the selectivity filter that is partially dilated at its outer end and constricted near its internal face (Tan et al., 2022; Reddi et al., 2022; Yangyu et al., 2024). Because a number of mutations known to strongly enhance the process of C-type inactivation were introduced in the construct used in structural determination (Perozo et al., 1993), this \u2018dilated\u2019 conformation has been interpreted as the non-conductive conformational state of the selectivity filter, accounting for the phenomenon of C-type inactivation. Reinforcing that notion, the most recent structure of the wild-type Shaker B channel displays the same dilated conformation of the filter at low concentration of external potassium (Stix et al., 2023).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/97696/elife-97696-fig1-v3.jpg)\n\n**Figure 1.:** (A) Schematic representation of a voltage-gated K+ channel undergoing C-type inactivation, whereby prolonged activation by an external voltage V leads to blockage of ionic conduction across the selectivity filter of the open channel. The voltage-sensor positively charged S4 helix (blue), the S4S5 linker (red), and main-pore S6 helix (silver) are highlighted. (B) Structural models of the selectivity filter in the conductive and dilated conformations. The conductive and dilated conformations derive respectively from the high-resolution X-ray structures of the wild-type (Long et al., 2007) and triple-mutant (Reddi et al., 2022) kv1.2-kv2.1 channel (PDB codes 2R9R and 7SIT). Major structural deviations (root-mean-square deviation [RMSD]) between the selectivity filter conformations are primarily accounted for side-chain rearrangements of Y373 and D375. Despite the side-chain rearrangements of Y373 and D375, the profile of oxygen-oxygen distances between opposing subunits of the selectivity filter indicates that the geometry of sites S4 and S3 in the dilated conformation closely resembles that of the conductive state. For comparison purposes, the profile of oxygen-oxygen distances is also shown along the selectivity filter of the experimental structures of the conductive state of Shaker B (Tan et al., 2022) (PDB code 7SIP) and the dilated conformations of Shaker-W434F (Tan et al., 2022) (PDB code 7SJI) and Kv1.3 (Selvakumar et al., 2022) (PDB code 7SJ1). (C) Electrostatic properties of the conductive and dilated conformations of the selectivity filter. Shown are molecular representations of the main-pore S6 segments of the channel, highlighting the permeation pathway along the intracellular entrance (iN), central cavity (cC), and selectivity-filter sites (S4, S3, S2, S1, S0, Sext). Hydrated cavities (red) give ionic access to the selectivity filter from the intracellular and extracellular milieu. The dielectric morphology of the protein and waters accounts for a significant voltage drop (\u0278) across the selectivity filter. The voltage-drop profile along the permeation pathway was computed as described elsewhere (Souza et al., 2014), following the charge-imbalance protocol which is a variant of the linear field method (Roux, 2008).\n\nThe \u2018dilated\u2019 and \u2018conductive\u2019 filter conformations differ markedly. The all-atom root-mean-square deviations (RMSD) of the selectivity filter between the dilated and the conductive conformation is about 3.0 \u00c5, arising mostly from rearrangements of the side chain of the highly conserved tyrosine and aspartic acid along the signature of the selectivity filter TVGYGD (Figure 1). Yet, despite the considerable conformational differences, a simple inspection reveals no apparent physical barrier opposing ion conduction along the permeation pathway of the \u2018dilated\u2019 structure, challenging its postulated non-conductivity. The selectivity filter in the dilated conformation is accessible to the intracellular solution via a large open and hydrated vestibular cavity. Incoming ions can bind to sites S4 and S3 and translocate to the extracellular side via a hydrated crevice corresponding to the widened sites S2, S1, and S0. The open and fully hydrated vestibular cavity is clearly conductive in the dilated conformation, which disagrees with previous cysteine modification and blocker-protection assays indicating that the cavity of the channel is changed in the slow-inactivated state compared with the open state (Panyi and Deutsch, 2007). Besides, the voltage drop across the selectivity filter through the conductive and dilated conformations is similar (Figure 1C). In contrast to classic chemical and peptide blockers or the constricted filter associated with the inactivation of the KcsA bacterial channel that typically inhibit conduction by providing a physical barrier along the permeation pathway (Ostmeyer et al., 2013; Yangyu et al., 2024; Eriksson and Roux, 2002; Banerjee et al., 2013; Cuello et al., 2010), the dilated conformation does not appear to impose any structural impediment to ionic conduction. These observations beg for a quantitative assessment of the ion conduction properties of the dilated conformation, and the relation of the latter to the functional C-type inactivated state identified in electrophysiological experiments.\n\n## Results\n\nTo address these questions, detailed all-atom MD simulations were carried out on the basis of the high-resolution X-ray structure of the kv1.2-kv2.1-3m chimera channel containing the triple mutation W362F, S367T, and V377T (Reddi et al., 2022). These mutations enhance C-type inactivation in the kv1.2-kv2.1 chimera, making the pore similar to the pore of the Shaker channel. To circumvent the uncertainties inherent with MD and achieve robust conclusions, simulations based on two established force fields, AMBER (Maier et al., 2015; Joung and Cheatham, 2008) and CHARMM36m (Huang et al., 2017), were considered. Additional simulations were also carried out using a version of CHARMM36m force field with a few modified interactions to explain the difference in ion conduction with the AMBER force field (Materials and methods, Supplementary files 1 and 2) In all the simulations, the channel was embedded in a fully hydrated phospholipid bilayer at 150 mM KCl and simulated with an applied transmembrane (TM) of +200 mV.\n\nThe kv1.2-kv2.1-3m channel with the dilated selectivity filter appears remarkably stable during a 10 \u03bcs simulation using the AMBER force field (Figure 2). The structural RMSD of the selectivity filter relative to the initial X-ray structure (Reddi et al., 2022) is less than 2.8 \u00c5, indicative of structural stability (Figure 2B, structural deviation R). Simulation of kv1.2-kv2.1-3m with the CHARMM36m force field also illustrates the stability of the dilated conformation over the microsecond timescale, with structural deviation of the selectivity filter less than 2.5 \u00c5 (Figure 2C, structural deviation R). The average density of the K+ ions along the permeation pathway from the AMBER trajectory is consistent with a predominant occupancy of the sites S4, S3, and Sext. Not resolved in the X-ray structure of kv1.2-kv2.1-3m (Reddi et al., 2022), the density at the external site Sext results from close interactions of K+ and the carboxylate group of D375. The acidic side chain adopts a relaxed conformation throughout the simulation, in which the carboxylate moiety is fully exposed to the external solution in an orientation similar to that previously reported in the cryogenic electron microscopy (cryo-EM) structure of the homologous Kv1.3 channel with a dilated selectivity filter (Selvakumar et al., 2022). According to a hard-knock mechanism at the level of binding sites S4 and S3 (Figure 2\u2014figure supplement 1; Stix et al., 2023), there is an early voltage-driven K+ conduction event across the selectivity filter within the first ~2 \u03bcs of the simulation (Figure 2B, trajectory of K+ along the permeation pathway Z). Conduction increases the residence time of the ion in the dilated region of the selectivity filter and accounts for a minor density peak at the level of site S1 (Figure 2B, linear density of K+), which is consistent with the resolved electron density of the cation in the experimental structures (Tan et al., 2022; Reddi et al., 2022; Yangyu et al., 2024; Stix et al., 2023).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/97696/elife-97696-fig2-v3.jpg)\n\n**Figure 2.:** (A) Molecular representation of the main pore of the channel, highlighting the initial configuration of the selectivity filter, I398 (red) and V402 (light gray). (B and C) Analysis of AMBER and CHARMM36m trajectories. Shown is the structural deviation of the selectivity filter (R), the trajectory of K+ ions along the permeation pathway (Z), and the intersubunit C\u03b2-C\u03b2 separation distance of I398 and V402 (L) as a function of simulation time. Inset shows instantaneous configurations of I398 (red arrows). Time averages are the linear density of K+ ions, the linear density of water oxygen, and the pore radius profile (r) along the permeation pathway Z.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/97696/elife-97696-fig2-figsupp1-v3.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A, B) Shown are representative single-ion conduction events across the selectivity filter of the triple-mutant channel along AMBER and CHARMM36m simulations. (C) Closure of the isoleucine gate blocks ion conduction across the the selectivity filter.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/97696/elife-97696-fig2-figsupp2-v3.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) Molecular representation of the main pore of the channel, highlighting the initial configuration of the selectivity filter, I398 (red) and V402 (light gray). (B and C) Analysis of AMBER* (restrained to keep I398 open) and CHARMM36m-NBFIX trajectories. Shown are the structural deviation of the selectivity filter (R), trajectory of K+ along the permeation pathway (Z), and the intersubunit C\u03b2-C\u03b2 separation distance of I398 and V402 (L) as a function of simulation time. Inset shows instantaneous configurations of I398 (red arrows). Time averages are the linear density of K+ ions, the linear density of waters, and the pore radius profile (r) along the permeation pathway Z.\n\nThe knock-on mechanism depends on the concentration of incoming ions in the central cavity of the channel. Although the last conduction event takes place around ~2 \u03bcs of simulation, note that only after ~4 \u03bcs of simulation, the knock-on mechanism is persistently disrupted as ions are excluded from the central cavity of the channel by the isoleucine side chains at position 398. More specifically, ion access to the central cavity of the channel and their subsequent conduction across the selectivity filter completely cease after ~4 \u03bcs of simulation time when the side chain of isoleucine at position 398 from all four S6 segments twist toward the central axis of the channel, dehydrating and blocking the permeation pathway immediately beneath the selectivity filter (Figure 2B, density of water along the pore axis). The C\u03b2-C\u03b2 distance between I398 in opposing subunits decreases over a period of 3\u20134 \u03bcs, reaching a value of about 9 \u00c5\u2014in stark contrast with the initial distance of 15 \u00c5 in the X-ray structure (Reddi et al., 2022; Figure 2, separation distance L of I398). As a consequence, the pore radius becomes locally constricted (\u22642 \u00c5), blocking ion conduction (Figure 2B, pore radius r) (Treptow and Tarek, 2006).\n\nIn contrast, ion conduction events are observed in the simulation with the CHARMM36m force field. This observation is in sharp contrast with the conclusion drawn from previous simulations of the dilated conformation of Shaker B also based on the CHARMM36m force field, where no ion conduction event was observed even with an applied membrane potential of +300 mV (Tan et al., 2022; Stix et al., 2023). Importantly, dihedral restraints were applied in these simulations to preclude deviations from the X-ray structure; it is possible that those restraints apparently prevented ion conduction through the open-dilated conformation. Because this is the same conformation of the selectivity filter and the same CHARMM36m force field, suggesting that the key difference in the simulation results is more likely due to different MD simulation conditions used than the very minor differences in the pore domain between Kv1.2-2.1-3m and Shaker. Because the CHARMM36m force field favors the open configuration of the isoleucine gate, the simulation shows that the dilated conformation is highly conductive under membrane depolarization. The distribution of ions along the permeation pathway in the CHARMM36m simulation is distinct from that inferred from the AMBER simulations, as the increased mobility of K+ in the selectivity filter accounts for a more pronounced reallocation of the ionic density from sites S4/S3 to sites S2/S1.\n\nTo further clarify the ion conduction properties of the dilated filter and understand the role of isoleucine 398, we simulate the channel with the AMBER force field in the presence of harmonic distance restraint to keep the isoleucine gate in the open configuration (Figure 2\u2014figure supplement 2). Compared to the unrestrained simulation with the AMBER force field, a larger number of ions access the central cavity of the channel, triggering two spontaneous conduction events across the selectivity filter in the early ~4 \u03bcs of the simulation. The density profile of the K+ ion along the channel axis is distinct from that of the unconstrained simulation. Partial reallocation of the ionic density from sites S4/S3 to sites S2/S1 reflects the increased mobility of K+ in the selectivity filter, thereby corroborating the hypothesis that the dilated conformation of the selectivity filter is conductive when the isoleucine gate is open. This conclusion is further confirmed from additional simulations based on a hybrid CHARMM36m force field referred to as CHARMM36m-NBFIX in which only the ion-carbonyl, ion-water, and water-carbonyl interactions were adjusted to mimic the values from the AMBER force field (Figure 2\u2014figure supplement 2, Supplementary file 2). While the changes are fairly small and reproduce known behavior for the conductive state of the selectivity filter (Materials and methods, Supplementary file 3), the simulations recapitulate the ion conduction properties of the dilated conformation from AMBER, demonstrating how these three key interactions are directly responsible for the observed differences with CHARMM36m. In the CHARMM36m-NBFIX simulation, the local concentration of ions in the central cavity of the channel is significantly smaller than that of the original trajectory. Pronounced density peaks at sites S4/S3 indicates that K+ binds more strongly to the selectivity filter. The combined effect yields a conductive AMBER-like channel, characterized by fewer conduction events per simulation time.\n\nThese simulations strongly suggest that there is nothing about the dilated conformation of the filter that inherently impedes ion conduction, and that the conformational motion of I398 is necessary to truly block conduction. Thus, it is the conformational change implicating the isoleucine gate that leads the channel toward a true non-conductive state. As a significant modification of the channel structure, the local rearrangement of I398 seems to be coupled to motions of other regions of the main pore, including V402 at the highly conserved PVP motif (Figure 2). Analysis indicates that CHARMM36m favors the open and fully hydrated state of the I398 gate. The average intersubunit C\u03b2-C\u03b2 distance of the isoleucine side chains (~16 \u00c5) is close to the reference value in the X-ray structure (~15 \u00c5) most of the simulation time. Gating fluctuations of I398 are, however, clearly observed in the late stages of the simulation and correlate well with the reduction of ions in the central cavity of the channel and with the conduction across the selectivity filter. Particularly important, the CHARMM36m simulation adds support to the assumption that the dilated conformation of the selectivity filter is conductive, and that closure of the isoleucine gate is required to shut down ion transport across the channel.\n\nDespite intrinsic force-field differences with respect to channel conductivity, all three atomistic models support the conclusion that the dilated conformation of the selectivity filter is, by itself, conductive and the isoleucine gate seems to be important to block K+ current across the channel. According to the voltage-driven MD trajectories in which the isoleucine gate is open, the total number of conduction events across the dilated conformation of the selectivity filter over the total simulation time is 44 (ions)/30 \u03bcs (Supplementary file 4). Based on the number of crossing events per simulation time, the ionic current of a macroscopic population of ion channels in the open-gate dilated state is ~0.2 pA at the TM voltage of +200 mV (single-channel conductance of ~1.17 pS in symmetric 150 mM KCl). In all likelihood underestimation of the channel conductance as a consequence of the well-documented force-field limitations in reproducing the ionic current in Kv channels at low voltages (<300 mV) (Jensen et al., 2013), the estimate of ~0.2 pA is still orders of magnitude larger than the measured current in the triple-mutant channel upon C-type inactivation (vide infra), and, therefore, the conductivity properties of the \u2018dilated\u2019 conformation of the selectivity filter cannot explain alone the inactivation of kv1.2-kv2.1-3m under membrane depolarization. Consistent with single-channel measurements (Yang et al., 1997), the estimate of ~1.17 pS is actually more comparable to simulation predictions of the single-channel conductance of the conductive selectivity filter i.e., ~3.5 pS in symmetric 300 mM KCl (Stix et al., 2023). Beside the dilated conformation of the selectivity filter, the isoleucine gate then appears to be a critical molecular element of the channel machinery, largely implicated in C-type inactivation.\n\nTo validate and corroborate the key role of the isoleucine gate in C-type inactivation inferred from the MD simulations, electrophysiology experiments were carried out (Materials and methods, Figure 3). In stark contrast with recordings of the kv1.2-kv2.1 chimera channel (Figure 3A), C-type inactivation is greatly enhanced in the triple-mutant channel kv1.2-kv2.1-3m, as is evidenced by the fast decay of the ionic current in the ms timescale and the macroscopic current appearing on similar scales as gating current (Figure 3B, Figure 3\u2014figure supplement 1). However, substitution of the isoleucine by the polar amino acid asparagine, with similar side-chain volume, restores the conductivity of the triple-mutant channel (Figure 3C). While not disturbing the current-voltage relationship of the triple-mutant channel, mutation I398N drastically increases ionic conduction without any apparent time-dependent inactivation (Figure 3D and E). Importantly, restoration of ion conduction with I398N is not caused by inadvertently stabilizing the selectivity filter in the conductive state, as demonstrated by pore-blocking toxin assays. Agitoxin-II (AgTxII), dendrotoxin, and charybdotoxin (CTX) are potent toxin blockers of Kv channels (Takacs et al., 2009), binding to the outer mouth of the channel (Yangyu et al., 2024; Eriksson and Roux, 2002; Banerjee et al., 2013). Such pore-blocking toxins preferentially bind and occlude the conductive conformation of the selectivity filter of Kv channels and are not effective in blocking channels that have W434F-like selectivity filter, as indicated by previous functional studies (Kitaguchi et al., 2004) as well as implicit solvent binding free-energy calculations (Materials and methods, Figure 3F, Figure 3\u2014figure supplement 2, Supplementary file 5). Whereas AgTxII blocks the ionic current across the conductive kv1.2-kv2.1 channel by binding to the outer mouth of the filter in the conductive conformation (Figure 3G), it fails to bind and occlude the kv1.2-kv2.1-3m channel with its filter mostly in the dilated conformation (Figure 3H). Similar effect is observed in Kv1.2-kv2.1-3m_I398N, suggesting the resumed ion permeation is not caused by any stabilization effect of I398N on the selectivity filter and most likely the ions are conducting through the dilated filter (Figure 3I). Because kv1.2-kv2.1-3m and kv1.2-kv2.1-3m_I398N are not affected by the toxin (Figure 3J), the ion conduction in kv1.2-kv2.1-3m_I398N mutant indicates that the permeation pathway must be altered at some location along the permeation pathway other than the selectivity filter. Such structural modifications of the permeation pathway are specific of C-type inactivation since a double mutant (S367T/V377T) of the chimera channel kv1.2-kv2.1-2m that does not inactivate and is blocked by AgTxII, irrespective of the I398N mutation (Figure 3\u2014figure supplement 3), suggesting that I398N mutation neither affect the selectivity filter of kv1.2-kv2.1-2m nor kv1.2-kv2.1-3m. The critical C-type inactivation mutation W362F (Perozo et al., 1993) is missing in the kv1.2-kv2.1-2m channel, hence its inability to slow-inactivate.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/97696/elife-97696-fig3-v3.jpg)\n\n**Figure 3.:** (A, B, C, and D) Macroscopic current recorded from: (A) kv1.2-kv2.1 chimera, (B) triple-mutant kv1.2-kv2.1-3m, (C) triple-mutant kv1.2-kv2.1-3m with I398N substitution, and (D) their respective comparison at +80 mV (the line colors correspond to the colors indicated in A, B, and C of the three mutants at +80 mV). The triple mutation W362F, S367T, and V377T in kv1.2-kv2.1-3m significantly speed up the inactivation process and the gating current could be seen simultaneously with ionic current (shown in inset, with gating current highlighted in yellow and ionic current highlighted in blue). Note the effect of the triple mutation cancel out with the I398N substitution. (E) Current-voltage relationship (IV curve). Due to the mixture of gating current and ionic current in kv1.2-kv2.1-3m, only curves shown are taken from the peak current. Voltage-dependent activation relationship for kv1.2-kv2.1, kv1.2-2.1-2m, and kv1.2\u20132.1-2m_I398N are shown in Figure 3\u2014figure supplement 3. (F) Net free-energy difference (\u1403\u1403G) involved in the binding of the charybdotoxin (CTX) to the conductive (Banerjee et al., 2013) and dilated conformations of the selectivity filter of the kv1.2-kv2.1 chimera channel. \u1403\u1403G indicates a strong preference of CTX to the conductive conformation of the selectivity filter. The same binding preference is found between CTX and kv1.2-kv2.1-3m (Supplementary file 5). (G, H, I, and J) Effects of agitoxin-II, a more potent CTX analogous (Takacs et al., 2009), on kv1.2-kv2.1 chimera, triple-mutant kv1.2-kv2.1-3m, triple-mutant kv1.2-kv2.1-3m with I398N substitution. Clearly, agitoxin binds and blocks the chimera channel while shows minimal influence on triple and triple_I398N, suggesting the selectivity filter in triple_I398N likely also adopts a dilated conformation.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/97696/elife-97696-fig3-figsupp1-v3.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Ionic traces from the triple-mutant channel and (B) its time constants fitted with a one exponential decay. When extrapolated to +200 mV where the simulation was performed, the time constant (tau) was in the microsecond range (gray dashed line indicates 1 ms), suggesting the timescale of the simulation and the conformational changes seen were relevant in physiological terms. Data plotted with mean and SEM.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/97696/elife-97696-fig3-figsupp2-v3.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A) Docking of CTX to the selectivity filter of the kv1.2-kv2.1 chimera channel. (B) Docking solutions (light black traces) best reproducing the experimentally resolved bound state of the toxin (tick black trace, PDB 4JTD). (C) Dielectric (\u2208) map of the toxin-protein complex considered in the Poisson-Boltzmann calculation. (D, E, and F) Energy distribution of best docking solutions shown in (B). Poisson-Boltzmann (\u1403GLP) and van der Waals (\u1403ELP) electrostatic contributions to the binding free energy of CTX are shown. The van der Waals component was scaled by an empirical factor \u03bb=0.17, intended to resolve the protein-solvent interaction absent in the implicit solvent representation. The same procedure was adopted to estimate the binding energy of CTX to all channel constructs and states (Supplementary file 5).\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/97696/elife-97696-fig3-figsupp3-v3.jpg)\n\n**Figure 3\u2014figure supplement 3.:** (A) Macroscopic current from the double-mutant chimera channel kv1.2-kv2.1-2m (S367T/V377T). (B) Macroscopic current from kv1.2-kv2.1-2m with I398N substitution. Mutation I398N in the absence of W362F does not significantly alter the phenotype of the channel. (C) G-V curves for kv1.2-kv2.1, kv1.2\u20132.1-2m, and kv1.2\u20132.1-2m_I398N. The G-V curves were measured from the tail currents and fitted using a two-state model given by: $G(V)=[1+exp(\\frac{zF}{RT}(V\u2212V_{\\frac{1}{2}}))]^{\u22121}$, where z is the apparent charge expressed in units of elementary charge $e_{0}$, V is the voltage and $V_{1/2}$ is the voltage of half maximal conductance. R, T, and F have their usual meanings. All three mutants share similar voltage dependency in activation: V1/2 (mV): kv1.2-kv2.1 (\u20134.6\u00b10.7), kv1.2-2.1-2m (\u201315.9\u00b10.6) and kv1.2-2.1-2m_I398N (\u20138.1\u00b10.6) and z: kv1.2-kv2.1 (2.4\u00b10.1), kv1.2-2.1-2m (2.7\u00b10.2) and kv1.2-2.1-2m_I398N (2.5\u00b10.1). All three mutants share similar voltage dependency in activation. (D, E, and F) Effects of 100 nM agitoxin-II (AgTxII) on the double-mutant kv1.2-kv2.1-2m and double-mutant kv1.2-kv2.1-2m with I398N substitution. AgTxII binds and blocks efficiently both channel constructs, suggesting the effect of I398N depends on the C-type inactivation induced by the W362F mutation.\n\n![Figure 3\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/97696/elife-97696-fig3-figsupp4-v3.jpg)\n\n**Figure 3\u2014figure supplement 4.:** (A) Molecular representation of the main pore of the channel, highlighting the initial configuration of the selectivity filter, N398 (green) and V402 (light gray). (B and C) Analysis of AMBER and CHARMM36m trajectories. Shown are the structural deviation of the selectivity filter (R), trajectory of K+ along the permeation pathway (Z), and the intersubunit C\u03b2-C\u03b2 separation distance of N398 and V402 (L) as a function of simulation time. Inset shows instantaneous configurations of N398 (green arrows). Time averages are the linear density of K+ ions, the linear density of waters, and the pore radius profile (r) along the permeation pathway Z.\n\n![Figure 3\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/97696/elife-97696-fig3-figsupp5-v3.jpg)\n\n**Figure 3\u2014figure supplement 5.:** (A) Logos conservation across K+ channels. (B) Multiple sequence alignment of most studied K+ channels.\n\nConsistent with experiment, a polar amino acid allows ion conduction by keeping the permeation pathway constitutively hydrated and open. Additional simulations of the triple-mutant channel support this view by revealing that I398N prevents closure of the gate at position 398 (Supplementary file 1). Figure 3\u2014figure supplement 4 shows the AMBER simulation of the triple-mutant channel with the I398N mutation. The conformation of the dilated selectivity filter is stable in presence of the mutation. The average intersubunit C\u03b2-C\u03b2 distance of I398N fluctuates between ~11 \u00c5 and ~15 \u00c5 in the beginning of the AMBER trajectory, before reaching the value of ~9 \u00c5 in the final stage of the simulation. Compared to the wild-type simulation, the local pore radius and water density are significantly enhanced under I398N mutation (Supplementary file 6). The open and hydrated configuration of the gate in the I398N mutant allows ion conduction across the dilated selectivity filter as long as structural fluctuations of the PVP motif (V402) do not obstruct the permeation pathway, as expected because that motif is the main gate of the channel. Similar conclusions can be drawn from CHARM36m simulation in which long-lived fluctuations of the mutant gate I398N allows intermittent conduction of ions across the dilated conformation of the selectivity filter over the microsecond timescale.\n\n## Discussion\n\nTaken together, the present computational and experimental results demonstrate that the dilated conformation of the selectivity filter of kv1.2-kv2.1-3m is conductive and that an isoleucine gate is critical to block K+ currents during C-type inactivation of the channel. Judged by the primary sequence conservation of I398 (Figure 3\u2014figure supplement 5), the isoleucine gate seems to be relevant for potassium channels that undergo C-type inactivation in general, and, potentially, for other voltage-gated Na+ channels possessing distinct selectivity filters (Liu et al., 2023). The action of the isoleucine gate in C-type inactivation is averted by the I398N mutation because the pathway remains hydrated with the polar asparagine side. In the homologous Shaker B channel, the single mutation I470C affects the rate of inactivation (Holmgren et al., 1997; Peters et al., 2013) while the double mutation T449V/I470C (Olcese et al., 2001) converts the slow inactivated state into a conductive state. Both mutations alter the slow-inactivation phenotype under long depolarizations, strongly corroborating our findings. Closing of the I398 gate in the dilated conformation of kv1.2-kv2.1-3m involves occlusion of the binding site of internally applied quaternary ammonium (QA) blockers (Lenaeus et al., 2005), explaining the previously reported 20-fold decreased affinity of TEA for the inactivated state of Shaker-IR compared with that of the open state (Panyi and Deutsch, 2007). On the other hand, the mechanism whereby I398N renders the gate constitutively open, not occluding the binding site of QA blockers, is also consistent with the demonstration that I470C in Shaker-IR morphs the channel that does not trap QA blockers into one that does (Holmgren et al., 1997) and with the fact that MTSEA modifications on the inactivated state are sixfold slower than in the open state of the T449K/I470C Shaker-IR (Panyi and Deutsch, 2007). Across all these measured effects, the modus operandi of the isoleucine gate is expected to be coupled to the PVP motif, and, therefore, to reflect to some extent the conformational allostery between the selectivity filter and the bundle-crossing region previously reported for C-type inactivation (Panyi and Deutsch, 2007; Cuello et al., 2017; Labro et al., 2018). While these experimental results were indicative of the role of the isoleucine gate its mechanistic significance with regards to the non-conductive C-type inactivation seems to have been overlooked (Tan et al., 2022; Reddi et al., 2022; Yangyu et al., 2024; Stix et al., 2023).\n\nIt is important to address the approximate and imperfect nature of the atomic models used in the present MD simulations. Even with well-established force fields like AMBER and CHARMM36m, ion conduction through the selectivity filter in the canonical \u2018conductive\u2019 conformation tends to be too small compared to experimental values, especially at physiological voltages (less 50 mV) (Jensen et al., 2013). With AMBER, there is observable ion conduction via the hard-knock mechanism (no water molecules between the ions) but a fairly high voltage (200\u2013300 mV) is required to generate a significant ionic current (K\u00f6pfer et al., 2014). With CHARMM36m, there is also observable conduction via the hard-knock mechanism at high voltages, albeit less so than with AMBER. Thus, the simulated conductance through K+ channels is generally too small, and it is relative to this baseline that conduction through the open dilated conformation of the filter based on the of kv1.2-kv2.1-3m structure must be critically assessed. Here, along the dilated conformation of the selectivity filter, we find that there is no substantial ion conduction with the AMBER force field because the ion binds strongly to the selectivity filter sites S4 and S3. This behavior is reproduced by the CHARMM36m-NBFIX force field, with its AMBER-like ion-carbonyl interactions. However, there is noticeable ion conduction with the CHARMM36m force field because the ion does not bind strongly to the sites S4 and S3. In fact, multiple conduction events across the open-dilated conformation of the triple-mutant chimera channel were observed in the simulation with the CHARMM36m force field, with no applied restraints.\n\nOur physiological experiments demonstrate that by mutating I398 to a polar residue, ion permeation can be resumed in the triple mutation. More importantly, this effect is not a result of reverting C-type inactivation and stabilizing the filter in the conductive state, as shown by the toxin blocking experiments (Figure 3, Figure 3\u2014figure supplement 3). This implies that the potassium ions are permeating through the dilated filter in kv1.2-kv2.1-3m_I398N, providing strong evidence that I398 is in fact the residue that is responsible for blocking the ion conduction during C-type inactivation instead of the dilated filter. We note that the activation and deactivation become extremely fast in the kv1.2-kv2.1-3m_I398N construct which maybe the consequence of rendering the slow-inactivated state conductive, a fact that should be explored further but is beyond the scope of this study. However, the main conclusion still stands: I398 most likely form the barrier for conduction in C-type inactivated channels and the dilated filter itself is not sufficient.\n\nBased on our findings, we propose that the structures of kv1.2-kv2.1-3m (Reddi et al., 2022), Shaker-W434F (Tan et al., 2022), Kv1.2-W366F (Yangyu et al., 2024), and Shaker-lowK (Stix et al., 2023) corresponds to a conductive metastable intermediate on the path toward the true non-conductive C-type inactivated state wherein the permeation pathway is blocked by the isoleucine gate. The free-energy landscape associated with the with C-type inactivation process comprises two sequential transitions between three metastable states: conductive \u2192 dilated-intermediate \u2192 deeply inactivated. Each transition was characterized by a separate potential of mean force (PMF) calculation (Materials and methods, Figure 4, Figure 4\u2014figure supplements 1 and 2). The first PMF monitoring the conformation of the selectivity filter while the isoleucine gate is in the open conformation shows two metastable states: conductive and dilated. The transition, which favors the latter state with a downhill free-energy change of \u201312 kcal/mol, involves a significant conformational change of Y373 from its buried configuration next to T367 in the conductive state toward its externally exposed orientation in the intermediate state resulting from unfavorable close interactions between the polar side chain of Y373 and F362. This is actually a metastable intermediate state that remains conductive. As shown by the second PMF monitoring the closure of the isoleucine gate toward a non-conductive deep inactivated state while the filter remains in dilated conformation shows a downhill change of \u20136.0 kcal/mol. Notwithstanding the limited accuracies of these computational estimates, the forward and backward free-energy barriers for these two transitions are in qualitative agreement with C-type inactivation of the triple-mutant channel in the sense that kv1.2-kv2.1-3m inactivates substantially faster than recovers from it\u2014at +200 mV, the time constant of C-type inactivation is predicted to be in the same microsecond range of the simulated deep inactivation of the channel (Figure 3, Figure 3\u2014figure supplement 1). The overall free-energy landscapes pointing toward the greater stability of the \u2018deep inactivated\u2019 state is qualitatively correct.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/97696/elife-97696-fig4-v3.jpg)\n\n**Figure 4.:** (A) Free-energy profile w(s) along the conformational transition path s connecting the conductive (s=0.2) and dilated (s=1) states of the selectivity filter. The free-energy profile is conditional to the open configuration of the isoleucine gate. (B) Free-energy profile w(d) associated to closure of the isoleucine gate. The reaction coordinate d corresponds to the inter-subunit separation distance between \u03b2-carbon atoms of I398. The free-energy profile is conditional to the dilated conformation of the selectivity filter. (C) C-type inactivation mechanism of the triple-mutant channel inferred from the representative structures of the selectivity filter and isoleucine gate along the free-energy profiles (A) and (B).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/97696/elife-97696-fig4-figsupp1-v3.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A, B) Time evolution of the instantaneous (red) and target (black) root-mean-square deviation (RMSD) of the selectivity filter between states O and D. Reference structures of the dilated and conductive states of the selectivity filter were respectively defined on basis of the high-resolution X-ray structures of the triple-mutant kv1.2-kv2.1-3m and kv1.2-kv2.1 (PDB codes 7SIT and 2R9R). Targeted molecular dynamics (TMD) was carried out for 50 ns with an applied constant force of 400 kcal/mol/\u00c52, corresponding to a per atom constant force of 2.38 kcal/mol/\u00c52. (C) A total of 22 atomic distances were used for definition of the conformational path between states D and O (red dashes): 14 main-chain carbonyl distances between two opposing subunits of the channel, 4 side-chain distances between TYR373(OH) and THR367(O), and 4 side-chain distances between ASP375(OD2) and PHE362(CD1). Atomic distances were symmetrized across the channel to support convergence of the calculation. (D) Time evolution of a representative coordinate of the transformation path. The coordinate was smoothed out following a running average procedure of the data. The running average length was 10% of the total number of data points, i.e., 500 (red). (E) The resulting string z consisted of 111 equidistant points i satisfying the monotonic condition $z_{i}\u2212z_{i\u22121}+z_{i+1}\u2212z_{i}\\leqz_{i+1}\u2212z_{i\u22121}$ at a distance interval of 0.25 \u00c5.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/97696/elife-97696-fig4-figsupp2-v3.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A, B) Respectively shown is the root-mean-square deviation (RMSD) of the free-energy profiles w(s) and w(d) as a function of simulation time t.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/97696/elife-97696-fig4-figsupp3-v3.jpg)\n\n**Figure 4\u2014figure supplement 3.:** (A) Molecular representation of the main pore of the channel, highlighting the initial configuration of the selectivity filter, I398 (red) and V402 (light gray). Two sodium (Na+) ions (yellow) are shown in the selectivity filter at the ion binding sites S3 and S4. (B and C) Analysis of AMBER and CHARMM36m trajectories. Shown are the structural deviation of the selectivity filter (R), trajectory of Na+ along the permeation pathway (Z), and the intersubunit C\u03b2-C\u03b2 separation distance of I398 and V402 (L) as a function of simulation time. Inset shows instantaneous configurations of I398 (red arrows). Time averages are the linear density of Na+ ions, the linear density of waters, and the pore radius profile (r) along the permeation pathway Z.\n\nThe new structural insights into the intricate mechanism of C-type inactivation suggests new research directions in the field. Worth of investigation is the experimental observation that Shaker B leaks Na+ in the absence or low concentration of K+ in the C-type inactivation state (Starkus et al., 1997). AMBER and CHARM36m simulations of kv1.2-kv2.1-3m in presence of 150 mM NaCl show that one or two Na+ ions can stably bind the dilated conformation of the selectivity filter at sites S3, S4, and Sext, while favoring the open configuration of the isoleucine gate (Materials and methods, Figure 4\u2014figure supplement 3 and Supplementary file 1). The internal [Na+]/[K+] concentration ratio seems to affect the closing of the isoleucine gate with functional implications for sodium leak in C-type inactivation. Also important, it is the more extensive investigation of the structure-function relationship of the inactivation gate according to the amino acid sequence within the pore domain. In particular, note that except for hERG, most studied potassium channels including, Kv1.2, Shaker-B, KcsA, and MthK, display either isoleucine, leucine, valine, or phenylalanine at position 398 (Figure 3\u2014figure supplement 5). The hERG channel has a tyrosine at position 398 which in the cryo-EM structure (Wang and MacKinnon, 2017) is twisted toward the central cavity in the open state. Because tyrosine is bulkier than asparagine, there is a chance that C-type inactivation in hERG also involves constriction of the permeation pathway at position 398 when the selectivity filter is dilated\u2014another fascinating assumption worth of investigation in structural studies. As a piece of the molecular machinery implicated in multiple states, the isoleucine gate might interfere in a state-dependent manner with the mechanism of action of a broad class of QA blockers (Panyi and Deutsch, 2007) and negatively charged activators that bind beneath the selectivity filter and operate as master keys to open a variety of K+ channels (Schewe et al., 2019). Of particular importance, the understanding of this last aspect could offer a distinct advantage in the development of drugs that modulate gating states of potassium channels more specifically.\n\n## Materials and methods\n\n### Molecular dynamics\n\nThe high-resolution X-ray structure of the triple-mutant Kv1.2 channel (kv1.2-kv2.1-3m) was obtained from the Protein Data Bank (PDB code 7SIT) (Reddi et al., 2022). The channel structure was embedded in a (POPC) phospholipid bilayer, hydrated by a symmetric 150 mM KCl solution. Using the purpose-built Anton2 supercomputer (Shaw et al., 2014), the system was simulated with Desmond at constant temperature 300 K and pressure 1 atm, neutral pH and with applied TM electrostatic potential (Supplementary file 1). MD simulations were performed. Equations of motion were integrated using a time step of 2.5 fs and van der Waals interactions were truncated at 12 \u00c5. Ionic currents were driven by application of a constant electric field E across the simulation box to mimic a voltage clamp experiment at the depolarized voltage of +200 mV (corresponding to a TM electric field of 0.043 kcal/mol/\u00c5/e) (Roux, 2008). Simulations were performed with three distinct all-atom force fields: AMBER, CHARMM36m, and CHARMM36m-NBFIX. ff14SB version of the AMBER force field (Maier et al., 2015) was used in combination with ion parameters by Joung and Cheatham, 2008, CHARMM36m (Huang et al., 2017) was used with standard ion parameters and CHARMM36m-NBFIX was used with modified ion parameters in which ion-carbonyl interactions were made more attractive to mimic the Joung and Cheatham model. Specifically, all parameters of CHARMM36m are preserved in CHARMM36m-NBFIX except for three critical interactions. In CHARMM36m-NBFIX, the nonbonded pairwise ion-carbonyl, ion-water, and water-carbonyl Lennard-Jones parameters Emin and Rmin are adjusted (NBFIX) to mimic the value of these three interactions in the AMBER force field. Supplementary file 2 shows the optimized energy E and distance R for the ion-carbonyl, ion-water, and water-carbonyl interactions in CHARMM36m-NBFIX. Water molecules were described by the TIP3P model (Jorgensen et al., 1983). Setup and analysis of the MD trajectories was performed in visual MD (VMD) (Humphrey et al., 1996).\n\n### Site-directed mutagenesis and RNA synthesis\n\nKv1.2-kv2.1 chimera (kindly provided by Eduardo Perozo) was cloned into pMax vector flanked by Xenopus \u03b2-globin sequence. Mutagenesis was performed utilizing the QuickChange techniques. All the clones were verified with full-length sequencing (Plasmidsaurus). DNA was linearized at the unique PmeI restriction site and then transcribed in vitro using T7 transcription kit (Ambion).\n\n### Channel expression in Xenopus oocytes and electrophysiology\n\nOvaries of Xenopus laevis were purchased from XENOPUS1. The follicular membrane was digested by collagenase type II (Worthington Biochemical Corporation) 2 mg/ml supplemented with bovine serum albumin 1 \u2009mg/ml. Oocytes were incubated in standard oocytes solution (SOS) containing in mM: 96 NaCl, 2 KCl, 1.8 CaCl2, 1 MgCl2, 0.1 EDTA, 10 HEPES, and pH set to 7.4 with NaOH. SOS was supplemented with 50 mg/ml gentamycin. Stage V-VI oocytes were then selected and microinjected with 50\u2013150 ng of cRNA. Injected oocytes were maintained in SOS solution and kept at 18\u00b0C for 1\u20134 days prior to recordings. Ionic currents were recorded using the cut-open voltage-clamp technique (Stefani and Bezanilla, 1998). Voltage-measuring pipettes were pulled using a horizontal puller (P-87 Model, Sutter Instruments, Novato, CA, USA) with resistance between 0.3 and 0.8 M\u2126 were used to impale the oocytes. Currents were acquired by a setup comprising a Dagan CA-1B amplifier (Dagan, Minneapolis, MN, USA) with a built-in low-pass four-pole Bessel filter for a cutoff frequency of 20 kHz. Using a 16-bit A/D converter (USB-1604, Measurement Computing, Norton, MA, USA) for acquisition and controlled by an in-house software (GPatch64MC), data were sampled at 1 MHz, digitally filtered at Nyquist frequency and decimated for a storage acquisition rate of 100 kHz. Capacitive transient currents were compensated using a dedicated circuit. The voltage clamp was controlled by GPatch64MC and we used the USB-1604 16-bit as the D/A converter. Transient capacitive current was compensated by a dedicated circuit and in some cases, the transients were further minimized by an online P/N protocol holding at \u201380 mV (Armstrong and Bezanilla, 1973). All experiments were performed at room temperature (~17\u201318\u00b0C) in external solution containing: (in mM) 120 potassium methylsulfonate (KMES), 2 calcium hydroxide, 0.1 EDTA, and 10 HEPES, pH = 7.40 (with MES). Internal solution was composed by (in mM): 120 KMES, 10 HEPES, and 2 EGTA, pH = 7.40 (with MES). AgTxII was obtained from Alomone Labs and was titrated to 100 nM in the external solution prior to experiments. The current were elicited prior to the external application of the toxin. The blockage effects were assessed by series of 50 depolarizing pulses (from \u2013120 to +60 mV) every 5 or 10 s. Between experiments, 1% albumin solution (in water) was used to clean the chamber and the bridges. All chemicals used were purchased from Sigma-Aldrich (St. Louis, MO, USA). GraphPad 9 (Prism) and in-house software (Analysis) were used to analyze the data.\n\n### Binding free energy of CTX\n\nThe high-resolution X-ray structures of kv1.2-kv2.1 (PDB code 2R9R) (Long et al., 2007) and kv1.2-kv2.1-3m (PDB code 7SIT) (Reddi et al., 2022) were used as molecular templates for modeling (Webb and Sali, 2014) the pore domain of the wild-type, double-mutant (S367T/V377T) and triple-mutant (W362F/S367T/V377T) constructs of the channel in the conductive and \u2018dilated\u2019 conformational states, respectively. Binding of the molecular structure of CTX (Bontems et al., 1992) to each of the channel constructs was investigated with HDOCK (Yan et al., 2020), according to the condition that Lys27 of CTX is in close proximity to the external entrance of the selectivity filter. The RMSD between docking poses and the X-ray bound configuration of CTX (Banerjee et al., 2013) was considered as the structural criterion (RMSD\u22645 \u00c5) to select docking solutions best reproducing the bound state of the toxin. At least 10 independent docking solutions were selected for computation of the net free-energy difference (\u1403\u1403G) involved in the binding of CTX to each of the channel constructs and states.\n\n\u1403\u1403G was evaluated according to the continuous implicit solvent calculations of the PB-VDW model used in previous studies (Eriksson and Roux, 2002). The Poisson-Boltzmann (PB) solvation energy of the ligand-protein bound complex (\u1403GLP) was calculated using the Adaptive Poisson-Boltzmann Solver 1.4.1 (APBS) (Baker et al., 2001) through a finite-difference scheme, by considering a 240 \u00c5 cubed box and a grid of 1.0\u00d71.0\u00d71.0 \u00c53. By representing explicitly the protein atoms without any charges, a dummy run was first carried out with APBS to generate dielectric, charge, and accessibility maps for the molecule in solution. Following the molecular surface definition, the internal dielectric constant of the protein was set to 15. The electrolyte solution was represented with a dielectric constant of 80 and salt concentration of 100 mM. These maps were then modified for the inclusion of a low-dielectric (\u2208=2) lipid surrogate. Input files and maps for APBS were generated with APBSmem (Callenberg et al., 2010). The van der Waals component of the bare electrostatic energy of the bound complex (\u1403ELP) was computed with the CHARMM36m force field (Huang et al., 2017) by using the namdenergy plugin linked to VMD (Humphrey et al., 1996). The van der Waals component was scaled by an empirical factor (\u03bb=0.17), intended to resolve the protein-solvent interaction, absent in the implicit solvent representation (Nandigrami et al., 2022). Calculations included the two experimentally resolved bound potassium ions at sites S2/S4 and S3/S4 of the conductive and \u2018dilated\u2019 conformation of the selectivity filter, respectively. Solvent accessible surface area and entropic contributions (Gilson et al., 1997) associated to the binding energy of CTX were assumed to be similar in both conformations of the channel and as such, they were not included in the calculation of the net binding free-energy difference \u1403\u1403G.\n\n### Primary sequence analysis\n\nPrimary sequence logos conservation throughout the main-pore segments PH, SF, and S6 were generated with Weblogo3 (Crooks et al., 2004) by taking into consideration an HMMER3.0 (Finn et al., 2011) generated multiple sequence alignment of 657 unique UniProt sequences.\n\n### Energetics of C-type inactivation\n\nThe energetics of C-type inactivation was investigated by means of two PMFs. The first PMF reports the free-energy profile associated to the conformational transition of the selectivity filter between the conductive and dilated states, conditional to an open isoleucine gate. The second PMF reports the free-energy profile associated to closure of the isoleucine gate under the condition of a dilated conformation of the selectivity filter. Both conditions were imposed in the free-energy calculations via soft harmonic restraints of 0.5 kcal/mol/\u00c52 respectively applied to \u03b1-carbon atoms of residue I398 and the selectivity filter. PMFs were determined employing the NAMD (Phillips et al., 2020) implementation of the well-tempered metadynamics extended adaptive biasing force algorithm (Fu et al., 2018; Fu et al., 2019), with the corrected z-averaged restraint estimator (Lesage et al., 2017). Calculations were respectively carried out with CHARMM36m (Huang et al., 2017) and the ff14SB version of the AMBER force field (Maier et al., 2015).\n\nThe free-energy profile associated to the conformational transition of the selectivity filter between the conductive and dilated states was computed with two path-collective variables (PCVs) (Branduardi et al., 2007), formed by 22 internal atomic distances. The first PCV, s, corresponds to the path connecting the two end states of the transformation, i.e., a string of discrete intermediate values inferred from an independent targeted MD simulation, whereas the second, orthogonal one, \u03c3, represents the width of the tube embracing the path. The gradient of the free energy was measured along s, while a soft harmonic potential with a force constant of 5 kcal/mol \u00c52 was applied on \u0461. No time-dependent bias was applied until a threshold of 50,000 samples was reached.\n\nFor the free-energy profile underlying the constriction of the pore domain, the collective variable (CV), d=d1+d2, was defined as the sum of two Euclidean distances separating the \u03b2-carbon atom of residue I398 of subunits KCH1 and KCH3, on the one hand, and of subunits KCH2 and KCH4, on the other hand. The reaction pathway, 18\u2264d\u226436 \u00c5, was discretized in bins 0.1 \u00c5 wide, wherein samples of the local force acting along the CV were accrued. To minimize nonequilibrium effects, no time-dependent bias was applied until a threshold of 10,000 samples was reached.\n\n### MD simulation of the MthK channel with CHARMM36m, AMBER, and CHARMM36m-NBFIX\n\nIon conduction through the canonical \u2018conductive\u2019 conformation of the selectivity filter K+ channels was examined for the well-established CHARMM36m and AMBER force fields, as well as the CHARMM36m-NBFIX modified force field. The simulations were carried out on the basis of the very accurate X-ray crystal structure of the MthK channel at 1.45 \u00c5 resolution (PDB code 3LDC) (Ye et al., 2010). For each force field, a 2 \u03bcs simulation was generated. In the simulated system, the channel structure was embedded in a (POPC) phospholipid bilayer, hydrated by a symmetric 400 mM KCl solution. The system was simulated in the NVT ensemble at constant temperature 320 K and pressure 1 atm, neutral pH, and with applied TM electrostatic potential (300 mV). Restraints were applied to the dihedral angels of the backbone of the selectivity filter with a flat-bottom restraint with a 0.159 kcal/mol/degree2 force constant. The following angels were allowed to vary \u00b110 degrees from the crystal structure dihedral angels, viz. \u00b110 degrees from Thr59 (\u03d5: 77, \u03c8: 9), Val60 (\u03d5: \u201363, \u03c8: \u201345), Gly61 (\u03d5: 48, \u03c8: 52), Tyr62 (\u03d5: \u201352, \u03c8: \u201336), and Gly63 (\u03d5: 84, \u03c8: 8). Beyond these ranges the restraints push the dihedrals back. In addition, to the selectivity restraints, harmonic distance restraints were applied on the level of the C-alpha distances of Pro19 and Phe97 to keep the inner gate open during the simulations, with a force constant of 2.39 kcal/mol/\u00c52 and applied to both adjacent and opposing subunits, viz., Pro19: 25.5 \u00c5 for adjacent and 36 \u00c5 for opposing subunits, and Phe97: 26 \u00c5 for adjacent and 36.6 \u00c5 for opposing subunits. The CHARMM36m and CHARMM36m-NBFIX simulations were performed on OpenMM 7.7 (Eastman et al., 2017) for 2 \u00b5s with frames recorded every 100 ps. A real-space cutoff of 12 \u00c5 was used, and the potential was smoothly truncated at the cutoff with a switching function starting at 10 \u00c5. The long-range electrostatics were treated with PME. The constant temperature was maintained with the Langevin dynamics thermostat with 1/ps friction coefficient. The AMBER simulation followed a similar route as the CHARMM36m simulations with the following changes. The simulation was performed with AMBER20 using the PMEMD GPU accelerated MD simulation engine. A real-space cutoff of 9 \u00c5 was used.\n\nOur simulations at 300 mV indicate that the MthK structure is conductive at the level of the selectivity filter sites S4 through S1, with an average conduction rate per voltage of 48.24 pS in symmetric 400 mM KCl\u2014 significantly below the recorded single-channel conductance of MthK, i.e., ~170 pS in symmetric 150 mM KCl (Li et al., 2007) or ~96 pS in symmetric 200 mM KCl (Zadek and Nimigean, 2006). Force-field differences in the simulated conduction rate and mechanism of MthK resume are as follows: (1) conduction is accelerated in the AMBER force field via the hard-knock mechanism; (2) conduction is slower in the CHARMM36 force field via the hard-knock mechanism; and (3) conduction is also accelerated in the AMBER-like CHARMM-NBFIX force field via the hard-knock mechanism. Independently, these findings support that CHARMM36m-NBFIX with only modified ion-carbonyl, ion-water, and water-carbonyl interactions is able to reproduce the known AMBER-like ion conduction behavior, including the accelerated conduction rates and hard-knock mechanism.\n",
+      "created_at": "2025-12-04T05:00:20.969271Z"
+    },
+    {
+      "id": "16615cce-ea2c-4bdf-9c77-c162a3f87a0f",
+      "submission_id": "cdf8f687-9205-48f8-91c5-13c1aaf6dd54",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Leon D Islas, https://ror.org/01tmp8f25 Universidad Nacional Aut\u00f3noma de M\u00e9xico Mexico\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.97696.sa0](https://doi.org/10.7554/eLife.97696.sa0)\n\nThis manuscript addresses the molecular mechanism of C-type inactivation observed in a mutant of the Kv2.1-1.2 (Shaker-like) chimeric voltage-gated potassium channel. Previous structural studies using a triple mutant of this channel, which enhance slow inactivation, have demonstrated that inactivation involves a dilation at the outer mouth of the selectivity filter of the channel, leading to a non-conductive state. Here, based on solid molecular dynamics simulations, corroborated by electrophysiological experiments, the authors conclude that the dilated state on its own is conductive, and that an additional conformational change involving occlusion of the pore by I398 is critical to halt conduction. This important conclusion is thought-provoking and motivates further exploration to evaluate pore dilation and I398 in other Kv channels.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Leon D Islas, https://ror.org/01tmp8f25 Universidad Nacional Aut\u00f3noma de M\u00e9xico Mexico\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.97696.sa1](https://doi.org/10.7554/eLife.97696.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Isoleucine gate blocks K+ conduction in C-type inactivation\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Merritt Maduke as the Senior Editor.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\nDuring collaborative discussion, three reviewers and the reviewing editor identified the following main concerns that the authors should respond to.\n\n1) It is well established that K-selective channels support potassium permeation through tight coordination by the selectivity filter. It is not clear how a dilated pore might allow selective permeation of this ion. The authors need to clarify possible mechanisms regardless of the MD simulation results.\n\n2) The main conclusion of this manuscript is based on the results of long MD simulations with three force fields. Two of the force fields give inconsistent results and this is fixed by simulations with an ad-hoc correction of the CHARM36 force field. There are no simulations carried out with the corrected CHARMM36m-NBFIX force field that indicate that it continues to reproduce known behavior in WT channels. Authors suggest that the difference in simulation results might be due to the application of harmonic restrains in previous simulations. It should be clarified with simulations if the key differences in results are due to properties of the force fields or the setup of the simulation system.\n\n3) In the AMBER simulation presented in Figure 2, permeation cessation does not seem to be correlated with the movement of the I398 as stated in the text. Please clarify.\n\n4) It is stated that in the AMBER simulations, the distance between \u03b2 carbons of I398 residues is reduced to 9 angstroms and this leads to a less than 2 angstroms constriction. What are the expected dimensions for the I398N mutant channel? Do simulations of this mutant channel show a WT-like permeation behavior or a dilated selectivity filter.\n\n5) The authors claim that the simulations indicate a similar rate of potassium flow for the kv1.2/2.1-3m channels in the dilated state as for WT Shaker channels. However, it has been known for a while that Shaker W434F channels, which are thought to be permanently c-type inactivated, still allow permeation at the same rate as WT, ~13 pS, just with extremely low open probabilities and very short duration (Yang, Yan and Sigworth, 1997). The simulations presented here, and elsewhere, seem to suggest that the permeability of the slow inactivated state(s) is just significantly reduced. This important discrepancy needs clarification.\n\n6) The 3m channel and the 3m-I398N mutant seem to activate are much more positive voltages than the kv1.2/2.1 channel (Figure 3 E) however in the comparison of time courses (Figure 3d) the I398N mutant activates way faster at the same voltage, this seems to be inconsistent. Also, the voltage pulses employed are too short. Kv1.2 channels slow-inactivate over a time course of seconds. It is possible that the I398N mutant still inactivates over seconds. In fact, Figure 3c shows an indication of slow inactivation as compared with kv1.2/2.1 channels. Given that the I398N mutation activates at more positive voltages, inactivation should be assessed at voltages that saturate the open probability for each channel.\n\nReviewer #1:\n\nIn the present manuscript, Treptow, Liu, Bassetto Jr and colleagues propose a novel mechanism for how C-type inactivation diminishes ion conduction in voltage-gated potassium (Kv) channels. C-type inactivation is a time-dependent mechanism that manifests as a decrease in the ionic current within the second timescale until it reaches a steady-state with minimal conductance. Although the mechanism of C-type inactivation was originally studied in the Shaker Kv channel (Hoshi et al. 1991 Neuron), the structural basis for a related mechanism of slow inactivation was first studied in the KcsA channel (Chakrapani et al. 2007 JGP, Cordero-Morales et al. 2006 NSMB, Imai et al. 2010 PNAS, Kim et al. 2016 JGP, Maffeo et al. 2012 Chem.Rev., Piasta et al. 2011 JGP, Tilegenova et al. 2017 PNAS, Varga et al. 2007 Biochim Biophys Acta, Cuello et al. 2010 Nature). A consensus based on the large amount of experimental data collected on KcsA pointed to the selectivity filter (SF) as the responsible part of the channel for C-type inactivation, which was proposed to collapse during inactivation. This collapse of the filter was the accepted working model prior to recent cryo-EM structures of Kv channels in C-type inactivated states showing that the filter dilates during inactivation (Reddi et al. 2022 Sci.Adv, Tan et al. 2022 Sci Adv, Selvakumar et al. 2022 Nat Comm, Wu Y et al. 2024 pre-print, Stix et al. 2023 Sci Adv,). As the mechanism of selective K+ permeation at high rates has long been established to result from multiple occupancy of the SF (see below), dilation of the filter to remove the outer K+ binding sites would be expected to diminish ion permeation during inactivation, an expectation borne out in Molecular Dynamics simulations (Tan et al. 2022 Sci Adv, Stix et al., 2023Sci Adv). The mechanism proposed by the authors in the present paper, however, challenges our current understanding of the general mechanism for C-type inactivation in Kv1 channels by proposing a new residue, an Ile below the SF as the 'true' gate that impedes ion conduction in C-type inactivated channels. The proposed novel mechanism arises from an MD simulation using the AMBER forcefield and the cryo-EM structure of the Kv1.2-2.1 chimera with 3-point mutations (3m). The 3m mutation (W362F, S367T and V377T) aims to render the channel in a non-conducting C-type inactivated state by speeding its inactivation in a fashion similar to W434F in Shaker (Perozo et al. 1993 Neuron, Yang et al. 1997 JGP) but failing to do so, the Kv1.2/2.1-3m channel is still able to conduct ions; a transient, fast inactivating macroscopic current can be seen upon depolarization. The reason for this is that the chimeric channel contains the sequence of Kv1.2 in the SF, which is known to be particularly resistant to inactivation and requiring more than one mutation to achieve a fast-inactivating phenotype (Suarez-Delgado et al. 2020 JGP, Wu et al. 2022 JGP, Reddi et al. 2022 Sci.Advances).\n\nThe fact that the authors chose this particular chimeric channel with the 3 point mutations (Kv1.2/2.1-3m) to study the mechanism of ion permeation during C-type inactivation is an odd choice given that block of ion permeation is incomplete in this mutant (Figure 3B) (Reddi et al. 2022 Sci.Advances). Moreover, the data presented in this manuscript do not support the authors' conclusions.\n\nStrengths:\n\nThe new idea presented by the authors is provocative and both MD simulations and electrophysiological techniques are appropriate to explore the mechanism of C-type inactivation.\n\nWeaknesses:\n\n1) The authors seem confused why a dilated filter would be less conductive than one containing 4 ion binding sites. Although details about the mechanism of K+ permeation across the SF remain incompletely understood (including whether there is 'hard' or 'soft knock-on' between ions to promote permeation), it would seem to be established that K+ channels are exquisitely K+ selective because the backbone carbonyls replace waters of hydration and that multiple ions bound within the filter repulse each other to promote rapid throughput (Doyle et al. 1998 and Zhou et al. 2001, Morais-Cabral et al. 2001, Zhou and Mackinnon 2003).\n\n2) The authors proposal that I398 is the gate for C-type inactivation is inconsistent with over multiple structures of KcsA and Kv channels with varying propensities to inactivate because that residue never occludes ion permeation in any of those structures, solved by both X-ray crystallography or cryo-EM. The bar should be high for overturning the weight of evidence that KcsA collapses during inactivation or that Kv channels dilate, and would logically require new structures to support the key conclusions in this study.\n\n3) The MD simulations and the permeation events.\n\nThe mechanism proposed by the authors arises from the sole finding of Ile398 twisting during MD simulations produced with the Kv1.2/2.1-3m structure and the AMBER forcefield. The authors propose that the twisting of the Ile creates a gate under the SF that blocks ion permeation during C-type inactivation. This MD result was observed using the unrestrained structure and the AMBER forcefield is the hypothesis generator and the only condition where the authors see this conformational change (Figure 2B). The MD simulations using the CHARMM36 forcefield, on the contrary, show permeation events for half the 10 \u00b5s simulation (Figure 2C) and no twisting on the I398. This discrepancy is presented by the authors as a property of the different forcefields used, so they use CHARMM36m-NBFIX to approximate the CHARMM36m force field parameters to AMBER, the permeation events reduce, however, the Ile does not flip in this simulation. These inconsistencies are problematic and not adequately justified by the authors.\n\nIn addition, to contextualize these permeation events, it is necessary to see how these simulations, with the exact same conditions and force fields would describe ion permeation for the WT channel in a conducting conformation. The WT MD simulations would likely show many more permeation events without flipping of the I398. This direct comparison will help understand which simulation/force field is more representative of the functional state of the channel and put in context how conductive/nonconductive the Kv1.2/2.1-3m channel is. It seems likely that the present results would be qualitatively consistent with simulations of Shaker performed while constraining the structure and showing that dilation diminishes ion permeation The identity of the I398 as a gate\n\nIf the I398 residue is a gate and the residue responsible for diminishing ionic flow in the C-type inactivated state, it is rather curious that it has never been seen before given how many simulations have been run on KcsA and Kv channels. Can the authors provide a rationale for supporting their conclusions in light of what has already been done? How many times did the authors observe the conformational change of this residue relative to the amount of MD runs? If the authors constrain the structure as in previous simulations on Shaker, would I398 no longer adopt a conformation that blocks ion permeation? Also, the results in Figure 2 and FigS2 using the AMBER forcefield, seem to disagree. When the authors repeat the MD simulations using the AMBER forcefield restricting the I398 movement and making it 'permeable' the permeation stops after 2 \u00b5s with a long residency of K+ ions in the pore. This result alone would seem to challenge the authors hypothesis and clearly suggests that the twist of the I398 is not required to stop ion permeation events because the dilated structure alone seems to be doing that. The CHARMM36m-NBFIX simulations show only 3 permeation events during the whole simulation. How do the authors reconcile these results with their conclusions?\n\n4) Functional consequences of the I398N mutation\n\nIt is known that mutations at I398 have a strong functional effect in other channels like Shaker (I470) or KcsA (F103), where previous studies have provided support for a key role of this residue in coupling opening of the inner gate with conformational changes in the SF during inactivation. Those studies are considerably more detailed than the present functional studies and would seem to be inconsistent with I398 functioning as a gate. Val substitutes well for Ile, both Cys and Phe are slower and Leu is faster, and no mutations completely disrupt C-type inactivation (Holmgren et al. 1997, Peter CJ et al. Sci Reports 2013, Cuello et al. 2010 Nature 466 203-8, Cuello et al.2010 Nature 466 272-5). How can the authors reconcile their new ideas with these earlier studies and mechanistic ideas about the role of I398? In addition, introducing an Asn, introduces a polar side chain in a hydrophobic region, a radical change that can affect more than just the C-type inactivation of the channel. In order to understand the effect of I398N it is necessary to study the effect of that mutant in isolation without the 3m mutations since it is a new mutation in the context of Kv1.2/2.1. For instance, does it also impair C-type inactivation in the absence of the 3m mutations? Does it affect the permeation of potassium? Does it shift the G-V curve? Without this information it's not possible to fully understand the results presented in Figure 3. Might introducing a polar residue in this region impact ion binding within the SF? Might the mutation alter inactivation by increasing the affinity of K+ for the filter? Finally, the MD simulation results with an Asn at position 398 disagree with the proposed mechanisms and the functional data. The electrophysiological experiments show a channel that conducts ions (Figure 3C) however the MD simulations using the AMBER forcefield do not, and the CHARMM36m only shows permeation events for 3 \u00b5s out of 10. How do the authors explain these results?\n\n5) Toxin binding to the outer pore\n\nThe results presented with AgTxII seem quite preliminary and it's hard to understand how they support the proposal of I398 functioning as a gate. Only a few traces are shown at one toxin concentration rather than time courses to demonstrate that equilibrium has been achieved. It seems that the 3m mutations are somehow altering toxin binding regardless of whether the I398N mutations rescue ion conduction, but how this supports I398 functioning as a gate is unclear. How do the AgTxII results relate to the model proposed for CTX in Fig3F? Are the authors proposing that the outer pore of the SF changes its architecture when the I398N mutation is introduced?\n\nRecommendations for the authors\n\n1) The statement \"These simulations strongly suggest that the filter in the dilated conformation can conduct K+ ions, and that the conformational motion of I398 is necessary to truly block conduction.\" As well as \"Despite intrinsic force-field differences with respect to channel conductivity, all three atomistic models support that the dilated conformation of the selectivity filter is, by itself, conductive and the isoleucine gate is required to effectively block K+ current across the channel.\" are not fully supported by the MD results since restricting the conformational motion of I398 also blocks conductions as shown in S2, please review these statements.\n\n2) \"Gating fluctuations of I398 are, however, clearly observed in the late stages of the simulation and, correlate well with the reduction of ions in the central cavity of the channel and with the conduction across the selectivity filter. Particularly important, the CHARMM36m simulation adds support to the assumption that the dilated conformation of the selectivity filter is conductive, and that closure of the isoleucine gate is required to shut down ion transport across the channel.\" Please reference these results in the figure, the CHARMM36m forcefield did not show the Ile changing its conformation in the Figures presented.\n\n3) In observance of the result \"the estimate of ~0.2pA is still orders of magnitude larger than the measured current in the triple-mutant channel upon C-type inactivation (vide infra), and, therefore, the conductivity properties of the \"dilated\" conformation of the selectivity filter cannot explain alone the inactivation of kv1.2-kv2.1-3m under membrane depolarization.\" There is another possible explanation for this discrepancy related to the configuration of the MD simulations. Taken together the variability of the results restraining vs non-restraining the I398, there is a possibility that the calculations obtained from the MD simulations are not representing the C-type inactivated state of the Kv1.2/2.1-3m triple mutant.\n\n4) \"Recently, high-resolution structures of Kv channels revealed a novel conformation of the selectivity filter that is partially dilated at its outer end and constricted near its internal face (8-10)\". The internal face of the SF architecture of all the cited structures (S3 and S4) can still solve densities for coordinated K ions in their internal face and as stated in the legend of Figure 1 resembles that on the conductive state, arguing against the constricted conformation stated by the authors please review.\n\n5) This statement in the Abstract could be misleading for the reader, if I understand it correctly, it reads as if the electrophysiology measurements demonstrate that the Kv1.2-2.1-3m mutant is conducting, but then is stated that functional experiments show inactivation, please review: \"While the experimental structure was interpreted as the elusive non-conductive state, molecular dynamics simulations and electrophysiology measurements demonstrate that the dilated filter of kv1.2-kv2.1-3m, however, is conductive and, as such, cannot completely account for the inactivation of the channel observed in functional experiments\".\n\nReviewer #2:\n\nBased on computational analysis of structures of the conductive WT Shaker B and Kv1.2-2.1 chimera and the pore-dilated Shaker-W434F and triple-mutant Kv1.2-2.1 chimera channels, the authors hypothesize that pore-dilation alone cannot account for the non-conductive tendency of these channels in the C-type inactivated state. The authors then go on to analyze the Kv1.2-2.1 triple mutant (kv1.2-kv2.1-3m) by simulation with AMBER and CHARMM36m force fields, and find that under conditions where the pore-lining residue I398 is allowed to relax, the I398 side chains from all four subunits rapidly twist to occlude K+ conduction, whereas K+ conduction is maintained under conditions where I398 does not occlude the pore, as in the kv1.2-kv2.1-3m crystal structure.\n\nTo validate the role of I398 in controlling conduction in pore-dilated channels, the authors introduce the mutation I398N in kv1.2-kv2.1-3m channels and find that the substitution with the hydrophilic asparagine residue effectively abrogates C-type inactivation behavior. The addition of I398N does not appear to act by preventing the pore-dilated conformation, as Agitoxin-II, which strongly blocks the open-conducting but not pore-dilated channels, does not block the kv1.2-kv2.1-3m-I398N channels.\n\nThe manuscript follows a logical series of experiments and thoughtful, rigorous analysis. The mechanism presented is supported by computational and electrophysiological data, and underscores a potential role for conformational changes in pore-lining residues in inactivation that may occur in other K+ channels.\n\nResults presented in the manuscript make the strong prediction that an asparagine at position 398 should not occlude the pore in the triple-mutant background, and should stabilize conduction even when the pore is \"dilated\". It should be possible to show this directly with a simulation, and I think such a demonstration would greatly strengthen the manuscript.\n\nReviewer #3:\n\nThis manuscript reports on an investigation by Treptow et al. of C-type inactivation in voltage-gated potassium (Kv) channels, a process whereby prolonged voltage activation leads to a nonconductive state. They examined a triple-mutant Kv1.2-Kv2.1 channel to provide a detailed characterization of the dilated conformation of the selectivity filter. This structure was initially thought to represent the nonconductive state. However, molecular dynamics simulations and electrophysiology showed that this dilated state is actually conductive. The study found that effective inactivation involves an additional conformational change at isoleucine residues (I398) in the pore-lining segment S6, which acts as a hydrophobic gate just below the selectivity filter. This mechanism is critical for C-type inactivation and presents new targets for drug development to modulate Kv channel gating states. This work constitutes a significantly novel contribution to our understanding of the mechanism of conduction of potassium ions. As such, I strongly recommend publication.\n\nI have a few comments that the authors could consider for improving the presentation of their results:\n\n1) The conformational free energy landscape is a crucial piece of the story, which gives quantitative substance to the hypotheses tested throughout the work. However, the description of these results appears surprisingly only in the Discussion section as an afterthought. The authors should make an effort to incorporate these results in the body of the results.\n\n2) Related to the previous point is a general lack of details concerning these calculations. For instance, it is imperative to have an idea of the error associated to the estimated free energies.\n\n3) The differential affinity of the toxin for the two selectivity filter conformations is another crucial piece of the puzzle as it enables to unambiguously interpret the effect of the mutation of isoleucine into asparagine. However, the docking and binding affinity calculations are buried in the supplementary information. The authors should consider giving greater space and emphasis to these results in the main text\n\n4) I am intrigued by the massively different behavior shown by the charmm force-field. What is the reason for this? I wonder if the greater stability of the hydrated configuration of the isoleucine side chain is an artifact due to the water model (tip3p does not reproduce water's surface tension, so wetting/dewetting transitions are not expected to be correctly described).\n",
+      "created_at": "2025-12-04T05:00:20.969271Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T05:00:20.969271Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T05:00:20.969271Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "094decf1-ae23-42fe-b6b3-4dfb3f18349a",
+      "content_id": "395edc1c-71e5-4539-802e-2fbebde71476",
+      "claim_id": "C1",
+      "claim": "Many voltage-gated potassium (Kv) channels display a time-dependent phenomenon called C-type inactivation, whereby prolonged activation by voltage leads to the inhibition of ionic conduction.",
+      "claim_type": "EXPLICIT",
+      "source": "Many voltage-gated potassium (Kv) channels display a time-dependent phenomenon called C-type inactivation, whereby prolonged activation by voltage leads to the inhibition of ionic conduction, a process that involves a conformational change at the selectivity filter toward a non-conductive state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a well-established phenomenon in the field, supported by citations in the manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:00:20.969271Z"
+    },
+    {
+      "id": "05b12484-419b-4856-8254-7feadaeaf846",
+      "content_id": "395edc1c-71e5-4539-802e-2fbebde71476",
+      "claim_id": "C2",
+      "claim": "C-type inactivation involves a conformational change at the selectivity filter toward a non-conductive state.",
+      "claim_type": "EXPLICIT",
+      "source": "Many voltage-gated potassium (Kv) channels display a time-dependent phenomenon called C-type inactivation, whereby prolonged activation by voltage leads to the inhibition of ionic conduction, a process that involves a conformational change at the selectivity filter toward a non-conductive state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about C-type inactivation mechanism.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:00:20.969271Z"
+    },
+    {
+      "id": "61d4afed-ab78-4fe5-945b-a9bf02bc514a",
+      "content_id": "395edc1c-71e5-4539-802e-2fbebde71476",
+      "claim_id": "C3",
+      "claim": "A high-resolution structure of a strongly inactivated triple-mutant channel kv1.2-kv2.1-3m revealed a novel conformation of the selectivity filter that is dilated at its outer end.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, a high-resolution structure of a strongly inactivated triple-mutant channel kv1.2-kv2.1-3m revealed a novel conformation of the selectivity filter that is dilated at its outer end, distinct from the well-characterized conductive state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "References a structural study (Reddi et al., 2022) that resolved this structure.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:00:20.969271Z"
+    },
+    {
+      "id": "6c567d21-ecc1-40b1-9ef4-abcdb94dbd00",
+      "content_id": "395edc1c-71e5-4539-802e-2fbebde71476",
+      "claim_id": "C4",
+      "claim": "The dilated filter of kv1.2-kv2.1-3m is conductive.",
+      "claim_type": "EXPLICIT",
+      "source": "While the experimental structure was interpreted as the elusive non-conductive state, our molecular dynamics simulations and electrophysiological measurements show that the dilated filter of kv1.2-kv2.1-3m is conductive and, as such, cannot completely account for the inactivation of the channel observed in the structural experiments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by MD simulations and electrophysiological experiments presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:00:20.969271Z"
+    },
+    {
+      "id": "63852fca-cbe1-4ffd-88c7-be415a9ab444",
+      "content_id": "395edc1c-71e5-4539-802e-2fbebde71476",
+      "claim_id": "C5",
+      "claim": "An additional conformational change, implicating isoleucine residues at position 398 along the pore lining segment S6, is required to effectively block ion conduction.",
+      "claim_type": "EXPLICIT",
+      "source": "The simulation shows that an additional conformational change, implicating isoleucine residues at position 398 along the pore lining segment S6, is required to effectively block ion conduction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Derived from MD simulation results presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:00:20.969271Z"
+    },
+    {
+      "id": "4d6b7e11-57ed-455c-a4cb-5c6ce9079ecb",
+      "content_id": "395edc1c-71e5-4539-802e-2fbebde71476",
+      "claim_id": "C6",
+      "claim": "The I398 residues from the four subunits act as a state-dependent hydrophobic gate located immediately beneath the selectivity filter.",
+      "claim_type": "EXPLICIT",
+      "source": "The I398 residues from the four subunits act as a state-dependent hydrophobic gate located immediately beneath the selectivity filter.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from MD simulations showing gate closure.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:00:20.969271Z"
+    },
+    {
+      "id": "994b101e-84e2-47c1-b223-ef470a2eb3dd",
+      "content_id": "395edc1c-71e5-4539-802e-2fbebde71476",
+      "claim_id": "C7",
+      "claim": "Ion permeation can be resumed in the kv1.2-kv2.1-3m channel when I398 is mutated to an asparagine.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations are corroborated by electrophysiological experiments showing that ion permeation can be resumed in the kv1.2-kv2.1-3m channel when I398 is mutated to an asparagine\u2014a mutation that does not abolish C-type inactivation since digitoxin (AgTxII) fails to block the ionic permeation of kv1.2-kv2.1-3m_I398N.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by electrophysiological measurements presented in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:00:20.969271Z"
+    },
+    {
+      "id": "289c205c-27c9-4ade-a13b-c7646b61f240",
+      "content_id": "395edc1c-71e5-4539-802e-2fbebde71476",
+      "claim_id": "C8",
+      "claim": "The I398N mutation does not abolish C-type inactivation since AgTxII fails to block the ionic permeation of kv1.2-kv2.1-3m_I398N.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations are corroborated by electrophysiological experiments showing that ion permeation can be resumed in the kv1.2-kv2.1-3m channel when I398 is mutated to an asparagine\u2014a mutation that does not abolish C-type inactivation since digitoxin (AgTxII) fails to block the ionic permeation of kv1.2-kv2.1-3m_I398N.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by toxin blocking experiments shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:00:20.969271Z"
+    },
+    {
+      "id": "41b6350c-4807-43c9-9f82-352403cb6398",
+      "content_id": "395edc1c-71e5-4539-802e-2fbebde71476",
+      "claim_id": "C9",
+      "claim": "The selectivity filter of Kv channels can exist in both conductive and non-conductive states.",
+      "claim_type": "EXPLICIT",
+      "source": "It is well established that the selectivity filter of Kv channels can exist in both conductive and non-conductive states (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is established knowledge in the field, illustrated in Figure 1.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:00:20.969271Z"
+    },
+    {
+      "id": "6cbf2572-1d33-4835-8a07-25f5e9b11c34",
+      "content_id": "395edc1c-71e5-4539-802e-2fbebde71476",
+      "claim_id": "C10",
+      "claim": "C-type inactivation contributes to fine-tune long-term activity of Kv channels.",
+      "claim_type": "EXPLICIT",
+      "source": "Known as the process of (slow) C-type inactivation (Hoshi et al., 1990; Ostmeyer et al., 2013), the conductive to non-conductive conformational transition is of great physiological importance as it contributes to fine-tune long-term activity of Kv channels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous work (Hoshi et al., 1990; Ostmeyer et al., 2013).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:00:20.969271Z"
+    },
+    {
+      "id": "ba8c32ae-1958-4d3e-b852-3e08dcf3123e",
+      "content_id": "395edc1c-71e5-4539-802e-2fbebde71476",
+      "claim_id": "C11",
+      "claim": "The canonical conductive conformational state of the filter was first revealed with the crystallographic structure of the prototypical bacterial K+ channel KcsA at high resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "The canonical conductive conformational state of the filter was first revealed with the crystallographic structure of the prototypical bacterial K+ channel KcsA at high resolution (e.g. PDB id 1BL8 [Doyle et al., 1998] or 1K4C [Zhou et al., 2001]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "References specific PDB structures from cited studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:00:20.969271Z"
+    },
+    {
+      "id": "2ff0953c-84f2-49bf-9499-1b5b5aa0a5e1",
+      "content_id": "395edc1c-71e5-4539-802e-2fbebde71476",
+      "claim_id": "C12",
+      "claim": "Molecular dynamics studies confirm that ion conduction along the conductive filter conformation is possible and unopposed by large free-energy barriers.",
+      "claim_type": "EXPLICIT",
+      "source": "Molecular dynamics (MD) studies confirm that ion conduction along this filter conformation is possible and unopposed by large free-energy barriers (Bern\u00e8che and Roux, 2001; Kopec et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous MD studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:00:20.969271Z"
+    },
+    {
+      "id": "60834280-0792-429a-89d5-f7d1f610ad9d",
+      "content_id": "395edc1c-71e5-4539-802e-2fbebde71476",
+      "claim_id": "C13",
+      "claim": "High-resolution structures of Kv channels revealed a novel conformation of the selectivity filter that is partially dilated at its outer end and constricted near its internal face.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, high-resolution structures of Kv channels revealed a novel conformation of the selectivity filter that is partially dilated at its outer end and constricted near its internal face (Tan et al., 2022; Reddi et al., 2022; Yangyu et al., 2024).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "References multiple structural studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:00:20.969271Z"
+    },
+    {
+      "id": "f1797332-0a79-4b7b-b328-55c984e00d73",
+      "content_id": "395edc1c-71e5-4539-802e-2fbebde71476",
+      "claim_id": "C14",
+      "claim": "The 'dilated' conformation has been interpreted as the non-conductive conformational state of the selectivity filter, accounting for the phenomenon of C-type inactivation.",
+      "claim_type": "EXPLICIT",
+      "source": "Because a number of mutations known to strongly enhance the process of C-type inactivation were introduced in the construct used in structural determination (Perozo et al., 1993), this 'dilated' conformation has been interpreted as the non-conductive conformational state of the selectivity filter, accounting for the phenomenon of C-type inactivation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the interpretation from previous structural studies that the current manuscript challenges.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:00:20.969271Z"
+    },
+    {
+      "id": "0065bdae-7c40-4c4a-824e-563cb7933c66",
+      "content_id": "395edc1c-71e5-4539-802e-2fbebde71476",
+      "claim_id": "C15",
+      "claim": "The most recent structure of the wild-type Shaker B channel displays the same dilated conformation of the filter at low concentration of external potassium.",
+      "claim_type": "EXPLICIT",
+      "source": "Reinforcing that notion, the most recent structure of the wild-type Shaker B channel displays the same dilated conformation of the filter at low concentration of external potassium (Stix et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "References a recent structural study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:00:20.969271Z"
+    },
+    {
+      "id": "6f31cd2d-622c-438c-8ec8-6f65641e2f14",
+      "content_id": "395edc1c-71e5-4539-802e-2fbebde71476",
+      "claim_id": "C16",
+      "claim": "The all-atom root-mean-square deviations (RMSD) of the selectivity filter between the dilated and the conductive conformation is about 3.0 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "The all-atom root-mean-square deviations (RMSD) of the selectivity filter between the dilated and the conductive conformation is about 3.0 \u00c5, arising mostly from rearrangements of the side chain of the highly conserved tyrosine and aspartic acid along the signature of the selectivity filter TVGYGD (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Structural comparison shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:00:20.969271Z"
+    },
+    {
+      "id": "1485c774-c64f-49f0-a518-2974813947f8",
+      "content_id": "395edc1c-71e5-4539-802e-2fbebde71476",
+      "claim_id": "C17",
+      "claim": "The selectivity filter in the dilated conformation is accessible to the intracellular solution via a large open and hydrated vestibular cavity.",
+      "claim_type": "EXPLICIT",
+      "source": "The selectivity filter in the dilated conformation is accessible to the intracellular solution via a large open and hydrated vestibular cavity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Structural observation from the dilated conformation structure.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:00:20.969271Z"
+    },
+    {
+      "id": "bbdab661-1dc9-441c-8102-7e5493cef287",
+      "content_id": "395edc1c-71e5-4539-802e-2fbebde71476",
+      "claim_id": "C18",
+      "claim": "The voltage drop across the selectivity filter through the conductive and dilated conformations is similar.",
+      "claim_type": "EXPLICIT",
+      "source": "Besides, the voltage drop across the selectivity filter through the conductive and dilated conformations is similar (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Computational analysis shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:00:20.969271Z"
+    },
+    {
+      "id": "125610c7-5d6c-4d16-a5ed-dfa9cb8fa1fb",
+      "content_id": "395edc1c-71e5-4539-802e-2fbebde71476",
+      "claim_id": "C19",
+      "claim": "The kv1.2-kv2.1-3m channel with the dilated selectivity filter appears remarkably stable during a 10 \u03bcs simulation using the AMBER force field.",
+      "claim_type": "EXPLICIT",
+      "source": "The kv1.2-kv2.1-3m channel with the dilated selectivity filter appears remarkably stable during a 10 \u03bcs simulation using the AMBER force field (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "MD simulation results shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:00:20.969271Z"
+    },
+    {
+      "id": "f9ed62e9-590c-409b-975b-4d9590ab6c94",
+      "content_id": "395edc1c-71e5-4539-802e-2fbebde71476",
+      "claim_id": "C20",
+      "claim": "The structural RMSD of the selectivity filter relative to the initial X-ray structure is less than 2.8 \u00c5 in AMBER simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "The structural RMSD of the selectivity filter relative to the initial X-ray structure (Reddi et al., 2022) is less than 2.8 \u00c5, indicative of structural stability (Figure 2B, structural deviation R).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "MD simulation analysis shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:00:20.969271Z"
+    },
+    {
+      "id": "253b2eba-ec72-454a-ab70-3e35a535a521",
+      "content_id": "395edc1c-71e5-4539-802e-2fbebde71476",
+      "claim_id": "C21",
+      "claim": "There is an early voltage-driven K+ conduction event across the selectivity filter within the first ~2 \u03bcs of the AMBER simulation.",
+      "claim_type": "EXPLICIT",
+      "source": "According to a hard-knock mechanism at the level of binding sites S4 and S3 (Figure 2\u2014figure supplement 1; Stix et al., 2023), there is an early voltage-driven K+ conduction event across the selectivity filter within the first ~2 \u03bcs of the simulation (Figure 2B, trajectory of K+ along the permeation pathway Z).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "MD simulation results shown in Figure 2B and Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:00:20.969271Z"
+    },
+    {
+      "id": "4afd3f02-588f-41c4-8039-476eb9488a85",
+      "content_id": "395edc1c-71e5-4539-802e-2fbebde71476",
+      "claim_id": "C22",
+      "claim": "Ion access to the central cavity of the channel and their subsequent conduction across the selectivity filter completely cease after ~4 \u03bcs of simulation time when the side chain of isoleucine at position 398 from all four S6 segments twist toward the central axis of the channel.",
+      "claim_type": "EXPLICIT",
+      "source": "More specifically, ion access to the central cavity of the channel and their subsequent conduction across the selectivity filter completely cease after ~4 \u03bcs of simulation time when the side chain of isoleucine at position 398 from all four S6 segments twist toward the central axis of the channel, dehydrating and blocking the permeation pathway immediately beneath the selectivity filter (Figure 2B, density of water along the pore axis).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "MD simulation results shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:00:20.969271Z"
+    },
+    {
+      "id": "4317378a-6f35-4f52-9736-1d60dc5c5a15",
+      "content_id": "395edc1c-71e5-4539-802e-2fbebde71476",
+      "claim_id": "C23",
+      "claim": "The C\u03b2-C\u03b2 distance between I398 in opposing subunits decreases over a period of 3\u20134 \u03bcs, reaching a value of about 9 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "The C\u03b2-C\u03b2 distance between I398 in opposing subunits decreases over a period of 3\u20134 \u03bcs, reaching a value of about 9 \u00c5\u2014in stark contrast with the initial distance of 15 \u00c5 in the X-ray structure (Reddi et al., 2022; Figure 2, separation distance L of I398).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "MD simulation analysis shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:00:20.969271Z"
+    },
+    {
+      "id": "ffaa0d61-9037-4698-be75-b1ea3418b253",
+      "content_id": "395edc1c-71e5-4539-802e-2fbebde71476",
+      "claim_id": "C24",
+      "claim": "Ion conduction events are observed in the simulation with the CHARMM36m force field.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, ion conduction events are observed in the simulation with the CHARMM36m force field.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "MD simulation results with CHARMM36m force field.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:00:20.969271Z"
+    },
+    {
+      "id": "7c6daa17-f3bf-48ab-83f1-c1ad3a9f9aab",
+      "content_id": "395edc1c-71e5-4539-802e-2fbebde71476",
+      "claim_id": "C25",
+      "claim": "The CHARMM36m force field favors the open configuration of the isoleucine gate.",
+      "claim_type": "EXPLICIT",
+      "source": "Because the CHARMM36m force field favors the open configuration of the isoleucine gate, the simulation shows that the dilated conformation is highly conductive under membrane depolarization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from MD simulation behavior with CHARMM36m.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:00:20.969271Z"
+    },
+    {
+      "id": "30c0dd96-915a-487a-8661-9574e8eb2213",
+      "content_id": "395edc1c-71e5-4539-802e-2fbebde71476",
+      "claim_id": "C26",
+      "claim": "The dilated conformation is highly conductive under membrane depolarization when the isoleucine gate is open.",
+      "claim_type": "EXPLICIT",
+      "source": "Because the CHARMM36m force field favors the open configuration of the isoleucine gate, the simulation shows that the dilated conformation is highly conductive under membrane depolarization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "MD simulation results with CHARMM36m force field.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:00:20.969271Z"
+    },
+    {
+      "id": "63772632-427f-417b-bcb1-f11a9fcfb1e6",
+      "content_id": "395edc1c-71e5-4539-802e-2fbebde71476",
+      "claim_id": "C27",
+      "claim": "The dilated conformation of the selectivity filter is conductive when the isoleucine gate is open.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to the unrestrained simulation with the AMBER force field, a larger number of ions access the central cavity of the channel, triggering two spontaneous conduction events across the selectivity filter in the early ~4 \u03bcs of the simulation. The density profile of the K+ ion along the channel axis is distinct from that of the unconstrained simulation. Partial reallocation of the ionic density from sites S4/S3 to sites S2/S1 reflects the increased mobility of K+ in the selectivity filter, thereby corroborating the hypothesis that the dilated conformation of the selectivity filter is conductive when the isoleucine gate is open.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "MD simulation with restraints to keep I398 gate open, shown in Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:00:20.969271Z"
+    },
+    {
+      "id": "5b797698-9880-46d0-ab0f-646ecda9d308",
+      "content_id": "395edc1c-71e5-4539-802e-2fbebde71476",
+      "claim_id": "C28",
+      "claim": "The total number of conduction events across the dilated conformation of the selectivity filter over the total simulation time is 44 (ions)/30 \u03bcs.",
+      "claim_type": "EXPLICIT",
+      "source": "According to the voltage-driven MD trajectories in which the isoleucine gate is open, the total number of conduction events across the dilated conformation of the selectivity filter over the total simulation time is 44 (ions)/30 \u03bcs (Supplementary file 4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Quantitative analysis of MD simulation data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:00:20.969271Z"
+    },
+    {
+      "id": "ee31d464-df77-4d32-b90b-9b26712ed631",
+      "content_id": "395edc1c-71e5-4539-802e-2fbebde71476",
+      "claim_id": "C29",
+      "claim": "The ionic current of a macroscopic population of ion channels in the open-gate dilated state is ~0.2 pA at the TM voltage of +200 mV.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on the number of crossing events per simulation time, the ionic current of a macroscopic population of ion channels in the open-gate dilated state is ~0.2 pA at the TM voltage of +200 mV (single-channel conductance of ~1.17 pS in symmetric 150 mM KCl).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Calculated from MD simulation conduction events.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:00:20.969271Z"
+    },
+    {
+      "id": "c7967b3c-c469-4c48-bdad-85f77c8b4b05",
+      "content_id": "395edc1c-71e5-4539-802e-2fbebde71476",
+      "claim_id": "C30",
+      "claim": "The estimate of ~0.2 pA is orders of magnitude larger than the measured current in the triple-mutant channel upon C-type inactivation.",
+      "claim_type": "EXPLICIT",
+      "source": "In all likelihood underestimation of the channel conductance as a consequence of the well-documented force-field limitations in reproducing the ionic current in Kv channels at low voltages (<300 mV) (Jensen et al., 2013), the estimate of ~0.2 pA is still orders of magnitude larger than the measured current in the triple-mutant channel upon C-type inactivation (vide infra), and, therefore, the conductivity properties of the 'dilated' conformation of the selectivity filter cannot explain alone the inactivation of kv1.2-kv2.1-3m under membrane depolarization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison between simulation and experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:00:20.969271Z"
+    },
+    {
+      "id": "c8760129-0e03-4d0c-a039-f85baf477d0b",
+      "content_id": "395edc1c-71e5-4539-802e-2fbebde71476",
+      "claim_id": "C31",
+      "claim": "C-type inactivation is greatly enhanced in the triple-mutant channel kv1.2-kv2.1-3m.",
+      "claim_type": "EXPLICIT",
+      "source": "In stark contrast with recordings of the kv1.2-kv2.1 chimera channel (Figure 3A), C-type inactivation is greatly enhanced in the triple-mutant channel kv1.2-kv2.1-3m, as is evidenced by the fast decay of the ionic current in the ms timescale and the macroscopic current appearing on similar scales as gating current (Figure 3B, Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Electrophysiological measurements shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:00:20.969271Z"
+    },
+    {
+      "id": "31c60b94-a8ce-4565-a627-87150580b05f",
+      "content_id": "395edc1c-71e5-4539-802e-2fbebde71476",
+      "claim_id": "C32",
+      "claim": "Substitution of the isoleucine by the polar amino acid asparagine restores the conductivity of the triple-mutant channel.",
+      "claim_type": "EXPLICIT",
+      "source": "However, substitution of the isoleucine by the polar amino acid asparagine, with similar side-chain volume, restores the conductivity of the triple-mutant channel (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Electrophysiological measurements shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:00:20.969271Z"
+    },
+    {
+      "id": "50428f38-0e26-4f3d-b428-e317e218bfe6",
+      "content_id": "395edc1c-71e5-4539-802e-2fbebde71476",
+      "claim_id": "C33",
+      "claim": "Mutation I398N drastically increases ionic conduction without any apparent time-dependent inactivation.",
+      "claim_type": "EXPLICIT",
+      "source": "While not disturbing the current-voltage relationship of the triple-mutant channel, mutation I398N drastically increases ionic conduction without any apparent time-dependent inactivation (Figure 3D and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Electrophysiological measurements shown in Figure 3D and E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:00:20.969271Z"
+    },
+    {
+      "id": "1d737957-99cd-45b3-af84-16c699446d25",
+      "content_id": "395edc1c-71e5-4539-802e-2fbebde71476",
+      "claim_id": "C34",
+      "claim": "Restoration of ion conduction with I398N is not caused by inadvertently stabilizing the selectivity filter in the conductive state.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, restoration of ion conduction with I398N is not caused by inadvertently stabilizing the selectivity filter in the conductive state, as demonstrated by pore-blocking toxin assays.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by toxin blocking experiments shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:00:20.969271Z"
+    },
+    {
+      "id": "7000c8cc-58ea-415c-86f3-ac3e513fffb0",
+      "content_id": "395edc1c-71e5-4539-802e-2fbebde71476",
+      "claim_id": "C35",
+      "claim": "Agitoxin-II (AgTxII), dendrotoxin, and charybdotoxin (CTX) are potent toxin blockers of Kv channels.",
+      "claim_type": "EXPLICIT",
+      "source": "Agitoxin-II (AgTxII), dendrotoxin, and charybdotoxin (CTX) are potent toxin blockers of Kv channels (Takacs et al., 2009), binding to the outer mouth of the channel (Yangyu et al., 2024; Eriksson and Roux, 2002; Banerjee et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:00:20.969271Z"
+    },
+    {
+      "id": "eac714f1-6be1-42a7-92ed-3608493c6236",
+      "content_id": "395edc1c-71e5-4539-802e-2fbebde71476",
+      "claim_id": "C36",
+      "claim": "Pore-blocking toxins preferentially bind and occlude the conductive conformation of the selectivity filter of Kv channels.",
+      "claim_type": "EXPLICIT",
+      "source": "Such pore-blocking toxins preferentially bind and occlude the conductive conformation of the selectivity filter of Kv channels and are not effective in blocking channels that have W434F-like selectivity filter, as indicated by previous functional studies (Kitaguchi et al., 2004) as well as implicit solvent binding free-energy calculations (Materials and methods, Figure 3F, Figure 3\u2014figure supplement 2, Supplementary file 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by previous studies and computational calculations shown in Figure 3F.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:00:20.969271Z"
+    },
+    {
+      "id": "4206ea3d-0bb9-49aa-bbf8-969c08e2513c",
+      "content_id": "395edc1c-71e5-4539-802e-2fbebde71476",
+      "claim_id": "C37",
+      "claim": "AgTxII blocks the ionic current across the conductive kv1.2-kv2.1 channel by binding to the outer mouth of the filter in the conductive conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas AgTxII blocks the ionic current across the conductive kv1.2-kv2.1 channel by binding to the outer mouth of the filter in the conductive conformation (Figure 3G), it fails to bind and occlude the kv1.2-kv2.1-3m channel with its filter mostly in the dilated conformation (Figure 3H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Electrophysiological experiments shown in Figure 3G and H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:00:20.969271Z"
+    },
+    {
+      "id": "07cd1db6-fd6b-4c63-85dc-585188ea4695",
+      "content_id": "395edc1c-71e5-4539-802e-2fbebde71476",
+      "claim_id": "C38",
+      "claim": "AgTxII fails to bind and occlude the kv1.2-kv2.1-3m channel with its filter mostly in the dilated conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas AgTxII blocks the ionic current across the conductive kv1.2-kv2.1 channel by binding to the outer mouth of the filter in the conductive conformation (Figure 3G), it fails to bind and occlude the kv1.2-kv2.1-3m channel with its filter mostly in the dilated conformation (Figure 3H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Electrophysiological experiments shown in Figure 3H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:00:20.969271Z"
+    },
+    {
+      "id": "02d0b3f8-30f6-4276-86a7-76edec5f5d22",
+      "content_id": "395edc1c-71e5-4539-802e-2fbebde71476",
+      "claim_id": "C39",
+      "claim": "The resumed ion permeation in kv1.2-kv2.1-3m_I398N is not caused by any stabilization effect of I398N on the selectivity filter and most likely the ions are conducting through the dilated filter.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar effect is observed in Kv1.2-kv2.1-3m_I398N, suggesting the resumed ion permeation is not caused by any stabilization effect of I398N on the selectivity filter and most likely the ions are conducting through the dilated filter (Figure 3I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Electrophysiological experiments shown in Figure 3I.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:00:20.969271Z"
+    },
+    {
+      "id": "e7397563-fa36-4c2e-89c9-422e066cbbbb",
+      "content_id": "395edc1c-71e5-4539-802e-2fbebde71476",
+      "claim_id": "C40",
+      "claim": "The ion conduction in kv1.2-kv2.1-3m_I398N mutant indicates that the permeation pathway must be altered at some location along the permeation pathway other than the selectivity filter.",
+      "claim_type": "EXPLICIT",
+      "source": "Because kv1.2-kv2.1-3m and kv1.2-kv2.1-3m_I398N are not affected by the toxin (Figure 3J), the ion conduction in kv1.2-kv2.1-3m_I398N mutant indicates that the permeation pathway must be altered at some location along the permeation pathway other than the selectivity filter.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inference from toxin blocking experiments shown in Figure 3J.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:00:20.969271Z"
+    },
+    {
+      "id": "d994ceda-a36d-4b56-b859-fefe2663b91c",
+      "content_id": "395edc1c-71e5-4539-802e-2fbebde71476",
+      "claim_id": "C41",
+      "claim": "A double mutant (S367T/V377T) of the chimera channel kv1.2-kv2.1-2m that does not inactivate is blocked by AgTxII, irrespective of the I398N mutation.",
+      "claim_type": "EXPLICIT",
+      "source": "Such structural modifications of the permeation pathway are specific of C-type inactivation since a double mutant (S367T/V377T) of the chimera channel kv1.2-kv2.1-2m that does not inactivate and is blocked by AgTxII, irrespective of the I398N mutation (Figure 3\u2014figure supplement 3), suggesting that I398N mutation neither affect the selectivity filter of kv1.2-kv2.1-2m nor kv1.2-kv2.1-3m.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Electrophysiological experiments shown in Figure 3\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:00:20.969271Z"
+    },
+    {
+      "id": "bd77b3e8-4cad-4907-b8d0-a304602bd53e",
+      "content_id": "395edc1c-71e5-4539-802e-2fbebde71476",
+      "claim_id": "C42",
+      "claim": "The critical C-type inactivation mutation W362F is missing in the kv1.2-kv2.1-2m channel, hence its inability to slow-inactivate.",
+      "claim_type": "EXPLICIT",
+      "source": "The critical C-type inactivation mutation W362F (Perozo et al., 1993) is missing in the kv1.2-kv2.1-2m channel, hence its inability to slow-inactivate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Explanation of experimental observations based on known mutation effects.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:00:20.969271Z"
+    },
+    {
+      "id": "fd6b1ddb-dd7a-40ab-839c-36c51811c050",
+      "content_id": "395edc1c-71e5-4539-802e-2fbebde71476",
+      "claim_id": "C43",
+      "claim": "A polar amino acid allows ion conduction by keeping the permeation pathway constitutively hydrated and open.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with experiment, a polar amino acid allows ion conduction by keeping the permeation pathway constitutively hydrated and open.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion from MD simulations of I398N mutant.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:00:20.969271Z"
+    },
+    {
+      "id": "42bfaf4d-2490-4d28-b48a-8b11e44f967c",
+      "content_id": "395edc1c-71e5-4539-802e-2fbebde71476",
+      "claim_id": "C44",
+      "claim": "I398N prevents closure of the gate at position 398.",
+      "claim_type": "EXPLICIT",
+      "source": "Additional simulations of the triple-mutant channel support this view by revealing that I398N prevents closure of the gate at position 398 (Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "MD simulation results shown in Figure 3\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:00:20.969271Z"
+    },
+    {
+      "id": "3cb5d444-2039-421d-aed5-c7b0c3423f63",
+      "content_id": "395edc1c-71e5-4539-802e-2fbebde71476",
+      "claim_id": "C45",
+      "claim": "The dilated conformation of the selectivity filter of kv1.2-kv2.1-3m is conductive.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, the present computational and experimental results demonstrate that the dilated conformation of the selectivity filter of kv1.2-kv2.1-3m is conductive and that an isoleucine gate is critical to block K+ currents during C-type inactivation of the channel.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Main conclusion from combined computational and experimental results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:00:20.969271Z"
+    },
+    {
+      "id": "b8594476-5a64-4c37-8204-f76a0dcd1219",
+      "content_id": "395edc1c-71e5-4539-802e-2fbebde71476",
+      "claim_id": "C46",
+      "claim": "An isoleucine gate is critical to block K+ currents during C-type inactivation of the channel.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, the present computational and experimental results demonstrate that the dilated conformation of the selectivity filter of kv1.2-kv2.1-3m is conductive and that an isoleucine gate is critical to block K+ currents during C-type inactivation of the channel.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Main conclusion from combined computational and experimental results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:00:20.969271Z"
+    },
+    {
+      "id": "24aa258f-263a-4a01-9c9f-08efb1928dee",
+      "content_id": "395edc1c-71e5-4539-802e-2fbebde71476",
+      "claim_id": "C47",
+      "claim": "The isoleucine gate seems to be relevant for potassium channels that undergo C-type inactivation in general.",
+      "claim_type": "EXPLICIT",
+      "source": "Judged by the primary sequence conservation of I398 (Figure 3\u2014figure supplement 5), the isoleucine gate seems to be relevant for potassium channels that undergo C-type inactivation in general, and, potentially, for other voltage-gated Na+ channels possessing distinct selectivity filters (Liu et al., 2023).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inference from sequence conservation analysis shown in Figure 3\u2014figure supplement 5.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:00:20.969271Z"
+    },
+    {
+      "id": "b7f082c3-2e07-436f-b145-e2b9145ee557",
+      "content_id": "395edc1c-71e5-4539-802e-2fbebde71476",
+      "claim_id": "C48",
+      "claim": "The action of the isoleucine gate in C-type inactivation is averted by the I398N mutation because the pathway remains hydrated with the polar asparagine side.",
+      "claim_type": "EXPLICIT",
+      "source": "The action of the isoleucine gate in C-type inactivation is averted by the I398N mutation because the pathway remains hydrated with the polar asparagine side.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Mechanistic explanation based on MD simulations and experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:00:20.969271Z"
+    },
+    {
+      "id": "aad184ea-2cec-488c-8859-9bf8ab3cc063",
+      "content_id": "395edc1c-71e5-4539-802e-2fbebde71476",
+      "claim_id": "C49",
+      "claim": "In the homologous Shaker B channel, the single mutation I470C affects the rate of inactivation.",
+      "claim_type": "EXPLICIT",
+      "source": "In the homologous Shaker B channel, the single mutation I470C affects the rate of inactivation (Holmgren et al., 1997; Peters et al., 2013) while the double mutation T449V/I470C (Olcese et al., 2001) converts the slow inactivated state into a conductive state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous experimental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:00:20.969271Z"
+    },
+    {
+      "id": "db672f59-849f-476a-818b-53bab26dacf7",
+      "content_id": "395edc1c-71e5-4539-802e-2fbebde71476",
+      "claim_id": "C50",
+      "claim": "The double mutation T449V/I470C converts the slow inactivated state into a conductive state.",
+      "claim_type": "EXPLICIT",
+      "source": "In the homologous Shaker B channel, the single mutation I470C affects the rate of inactivation (Holmgren et al., 1997; Peters et al., 2013) while the double mutation T449V/I470C (Olcese et al., 2001) converts the slow inactivated state into a conductive state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous experimental study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:00:20.969271Z"
+    },
+    {
+      "id": "315d5a8f-e198-4232-a726-d92b48565d1d",
+      "content_id": "395edc1c-71e5-4539-802e-2fbebde71476",
+      "claim_id": "C51",
+      "claim": "Closing of the I398 gate in the dilated conformation of kv1.2-kv2.1-3m involves occlusion of the binding site of internally applied quaternary ammonium (QA) blockers.",
+      "claim_type": "EXPLICIT",
+      "source": "Closing of the I398 gate in the dilated conformation of kv1.2-kv2.1-3m involves occlusion of the binding site of internally applied quaternary ammonium (QA) blockers (Lenaeus et al., 2005), explaining the previously reported 20-fold decreased affinity of TEA for the inactivated state of Shaker-IR compared with that of the open state (Panyi and Deutsch, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference connecting current findings to previous experimental observations.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:00:20.969271Z"
+    },
+    {
+      "id": "e4efd092-827d-46f4-8fb3-fa29584dd7d4",
+      "content_id": "395edc1c-71e5-4539-802e-2fbebde71476",
+      "claim_id": "C52",
+      "claim": "The mechanism whereby I398N renders the gate constitutively open is consistent with the demonstration that I470C in Shaker-IR morphs the channel that does not trap QA blockers into one that does.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, the mechanism whereby I398N renders the gate constitutively open, not occluding the binding site of QA blockers, is also consistent with the demonstration that I470C in Shaker-IR morphs the channel that does not trap QA blockers into one that does (Holmgren et al., 1997) and with the fact that MTSEA modifications on the inactivated state are sixfold slower than in the open state of the T449K/I470C Shaker-IR (Panyi and Deutsch, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference connecting current findings to previous experimental observations.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:00:20.969271Z"
+    },
+    {
+      "id": "3bbe3e4f-35d7-47f6-9cb7-c84e70b6404a",
+      "content_id": "395edc1c-71e5-4539-802e-2fbebde71476",
+      "claim_id": "C53",
+      "claim": "The modus operandi of the isoleucine gate is expected to be coupled to the PVP motif.",
+      "claim_type": "EXPLICIT",
+      "source": "Across all these measured effects, the modus operandi of the isoleucine gate is expected to be coupled to the PVP motif, and, therefore, to reflect to some extent the conformational allostery between the selectivity filter and the bundle-crossing region previously reported for C-type inactivation (Panyi and Deutsch, 2007; Cuello et al., 2017; Labro et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on observed coupling in simulations and previous literature.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:00:20.969271Z"
+    },
+    {
+      "id": "9eed1299-ee13-405d-96c4-970bda5e5019",
+      "content_id": "395edc1c-71e5-4539-802e-2fbebde71476",
+      "claim_id": "C54",
+      "claim": "Ion conduction through the selectivity filter in the canonical 'conductive' conformation tends to be too small compared to experimental values with well-established force fields like AMBER and CHARMM36m, especially at physiological voltages.",
+      "claim_type": "EXPLICIT",
+      "source": "Even with well-established force fields like AMBER and CHARMM36m, ion conduction through the selectivity filter in the canonical 'conductive' conformation tends to be too small compared to experimental values, especially at physiological voltages (less 50 mV) (Jensen et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Known limitation of force fields, supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:00:20.969271Z"
+    },
+    {
+      "id": "df743e8d-8da1-491a-b04e-4117dd41262e",
+      "content_id": "395edc1c-71e5-4539-802e-2fbebde71476",
+      "claim_id": "C55",
+      "claim": "With AMBER, there is observable ion conduction via the hard-knock mechanism but a fairly high voltage (200\u2013300 mV) is required to generate a significant ionic current.",
+      "claim_type": "EXPLICIT",
+      "source": "With AMBER, there is observable ion conduction via the hard-knock mechanism (no water molecules between the ions) but a fairly high voltage (200\u2013300 mV) is required to generate a significant ionic current (K\u00f6pfer et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Known behavior of AMBER force field, supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:00:20.969271Z"
+    },
+    {
+      "id": "e534175a-20ad-4044-83e1-ff9a1ddc985e",
+      "content_id": "395edc1c-71e5-4539-802e-2fbebde71476",
+      "claim_id": "C56",
+      "claim": "With CHARMM36m, there is observable conduction via the hard-knock mechanism at high voltages, albeit less so than with AMBER.",
+      "claim_type": "EXPLICIT",
+      "source": "With CHARMM36m, there is also observable conduction via the hard-knock mechanism at high voltages, albeit less so than with AMBER.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observation from MD simulations in this study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:00:20.969271Z"
+    },
+    {
+      "id": "2ba1fd36-ec15-40ad-9ad3-c8b8bbff0855",
+      "content_id": "395edc1c-71e5-4539-802e-2fbebde71476",
+      "claim_id": "C57",
+      "claim": "There is no substantial ion conduction with the AMBER force field along the dilated conformation because the ion binds strongly to the selectivity filter sites S4 and S3.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, along the dilated conformation of the selectivity filter, we find that there is no substantial ion conduction with the AMBER force field because the ion binds strongly to the selectivity filter sites S4 and S3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observation from MD simulations in this study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:00:20.969271Z"
+    },
+    {
+      "id": "be5ff6b4-a77d-4b08-a40d-a01b7fbc4e93",
+      "content_id": "395edc1c-71e5-4539-802e-2fbebde71476",
+      "claim_id": "C58",
+      "claim": "There is noticeable ion conduction with the CHARMM36m force field because the ion does not bind strongly to the sites S4 and S3.",
+      "claim_type": "EXPLICIT",
+      "source": "However, there is noticeable ion conduction with the CHARMM36m force field because the ion does not bind strongly to the sites S4 and S3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observation from MD simulations in this study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:00:20.969271Z"
+    },
+    {
+      "id": "cbfe2794-37bb-4766-9d54-1a18abb09048",
+      "content_id": "395edc1c-71e5-4539-802e-2fbebde71476",
+      "claim_id": "C59",
+      "claim": "Multiple conduction events across the open-dilated conformation of the triple-mutant chimera channel were observed in the simulation with the CHARMM36m force field, with no applied restraints.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, multiple conduction events across the open-dilated conformation of the triple-mutant chimera channel were observed in the simulation with the CHARMM36m force field, with no applied restraints.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observation from MD simulations in this study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:00:20.969271Z"
+    },
+    {
+      "id": "d23abeda-139d-420d-b2ba-55d03ddae798",
+      "content_id": "395edc1c-71e5-4539-802e-2fbebde71476",
+      "claim_id": "C60",
+      "claim": "The structures of kv1.2-kv2.1-3m, Shaker-W434F, Kv1.2-W366F, and Shaker-lowK correspond to a conductive metastable intermediate on the path toward the true non-conductive C-type inactivated state.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on our findings, we propose that the structures of kv1.2-kv2.1-3m (Reddi et al., 2022), Shaker-W434F (Tan et al., 2022), Kv1.2-W366F (Yangyu et al., 2024), and Shaker-lowK (Stix et al., 2023) corresponds to a conductive metastable intermediate on the path toward the true non-conductive C-type inactivated state wherein the permeation pathway is blocked by the isoleucine gate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Proposed model based on combined computational and experimental findings.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:00:20.969271Z"
+    },
+    {
+      "id": "1d1d923b-a243-4a76-a8e2-5ed6a3dc8b40",
+      "content_id": "395edc1c-71e5-4539-802e-2fbebde71476",
+      "claim_id": "C61",
+      "claim": "The free-energy landscape associated with C-type inactivation comprises two sequential transitions between three metastable states: conductive \u2192 dilated-intermediate \u2192 deeply inactivated.",
+      "claim_type": "EXPLICIT",
+      "source": "The free-energy landscape associated with the with C-type inactivation process comprises two sequential transitions between three metastable states: conductive \u2192 dilated-intermediate \u2192 deeply inactivated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Proposed model based on free-energy calculations shown in Figure 4.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:00:20.969271Z"
+    },
+    {
+      "id": "2c5cc84e-2695-4d0b-9dcd-7bf122be3edc",
+      "content_id": "395edc1c-71e5-4539-802e-2fbebde71476",
+      "claim_id": "C62",
+      "claim": "The transition from conductive to dilated state favors the dilated state with a downhill free-energy change of \u201312 kcal/mol.",
+      "claim_type": "EXPLICIT",
+      "source": "The first PMF monitoring the conformation of the selectivity filter while the isoleucine gate is in the open conformation shows two metastable states: conductive and dilated. The transition, which favors the latter state with a downhill free-energy change of \u201312 kcal/mol, involves a significant conformational change of Y373 from its buried configuration next to T367 in the conductive state toward its externally exposed orientation in the intermediate state resulting from unfavorable close interactions between the polar side chain of Y373 and F362.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Free-energy calculation results shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:00:20.969271Z"
+    },
+    {
+      "id": "af347981-863b-49e1-a607-70fd81e23424",
+      "content_id": "395edc1c-71e5-4539-802e-2fbebde71476",
+      "claim_id": "C63",
+      "claim": "The transition from dilated-intermediate to deeply inactivated state shows a downhill change of \u20136.0 kcal/mol.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown by the second PMF monitoring the closure of the isoleucine gate toward a non-conductive deep inactivated state while the filter remains in dilated conformation shows a downhill change of \u20136.0 kcal/mol.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Free-energy calculation results shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:00:20.969271Z"
+    },
+    {
+      "id": "33b2795c-0397-4af4-bc2a-367901f3c203",
+      "content_id": "395edc1c-71e5-4539-802e-2fbebde71476",
+      "claim_id": "C64",
+      "claim": "At +200 mV, the time constant of C-type inactivation is predicted to be in the same microsecond range of the simulated deep inactivation of the channel.",
+      "claim_type": "EXPLICIT",
+      "source": "Notwithstanding the limited accuracies of these computational estimates, the forward and backward free-energy barriers for these two transitions are in qualitative agreement with C-type inactivation of the triple-mutant channel in the sense that kv1.2-kv2.1-3m inactivates substantially faster than recovers from it\u2014at +200 mV, the time constant of C-type inactivation is predicted to be in the same microsecond range of the simulated deep inactivation of the channel (Figure 3, Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Comparison between free-energy calculations and experimental timescales shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:00:20.969271Z"
+    },
+    {
+      "id": "a9dc2d0d-2a64-45c3-aa44-ffb4bd765577",
+      "content_id": "395edc1c-71e5-4539-802e-2fbebde71476",
+      "claim_id": "C65",
+      "claim": "One or two Na+ ions can stably bind the dilated conformation of the selectivity filter at sites S3, S4, and Sext in the presence of 150 mM NaCl.",
+      "claim_type": "EXPLICIT",
+      "source": "AMBER and CHARM36m simulations of kv1.2-kv2.1-3m in presence of 150 mM NaCl show that one or two Na+ ions can stably bind the dilated conformation of the selectivity filter at sites S3, S4, and Sext, while favoring the open configuration of the isoleucine gate (Materials and methods, Figure 4\u2014figure supplement 3 and Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "MD simulation results shown in Figure 4\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:00:20.969271Z"
+    },
+    {
+      "id": "6ca2677c-bb1d-404b-b457-9add435c8de3",
+      "content_id": "395edc1c-71e5-4539-802e-2fbebde71476",
+      "claim_id": "C66",
+      "claim": "The internal [Na+]/[K+] concentration ratio seems to affect the closing of the isoleucine gate with functional implications for sodium leak in C-type inactivation.",
+      "claim_type": "EXPLICIT",
+      "source": "The internal [Na+]/[K+] concentration ratio seems to affect the closing of the isoleucine gate with functional implications for sodium leak in C-type inactivation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from MD simulations with Na+ ions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:00:20.969271Z"
+    },
+    {
+      "id": "0567778d-a3b4-41c5-8c9a-21774ad31b76",
+      "content_id": "395edc1c-71e5-4539-802e-2fbebde71476",
+      "claim_id": "C67",
+      "claim": "Most studied potassium channels including Kv1.2, Shaker-B, KcsA, and MthK display either isoleucine, leucine, valine, or phenylalanine at position 398.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, note that except for hERG, most studied potassium channels including, Kv1.2, Shaker-B, KcsA, and MthK, display either isoleucine, leucine, valine, or phenylalanine at position 398 (Figure 3\u2014figure supplement 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Sequence analysis shown in Figure 3\u2014figure supplement 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:00:20.969271Z"
+    },
+    {
+      "id": "d8b06644-3d94-4f83-88eb-f874adef5d4f",
+      "content_id": "395edc1c-71e5-4539-802e-2fbebde71476",
+      "claim_id": "C68",
+      "claim": "The hERG channel has a tyrosine at position 398 which in the cryo-EM structure is twisted toward the central cavity in the open state.",
+      "claim_type": "EXPLICIT",
+      "source": "The hERG channel has a tyrosine at position 398 which in the cryo-EM structure (Wang and MacKinnon, 2017) is twisted toward the central cavity in the open state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observation from cited cryo-EM structure.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:00:20.969271Z"
+    },
+    {
+      "id": "601578a9-c547-4749-bca3-e157c0bd31a8",
+      "content_id": "395edc1c-71e5-4539-802e-2fbebde71476",
+      "claim_id": "C69",
+      "claim": "C-type inactivation in hERG might also involve constriction of the permeation pathway at position 398 when the selectivity filter is dilated.",
+      "claim_type": "EXPLICIT",
+      "source": "Because tyrosine is bulkier than asparagine, there is a chance that C-type inactivation in hERG also involves constriction of the permeation pathway at position 398 when the selectivity filter is dilated\u2014another fascinating assumption worth of investigation in structural studies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation based on structural comparison.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:00:20.969271Z"
+    },
+    {
+      "id": "6dc58ea2-dd60-4f37-b823-b5c9bdd85545",
+      "content_id": "395edc1c-71e5-4539-802e-2fbebde71476",
+      "claim_id": "C70",
+      "claim": "The isoleucine gate might interfere in a state-dependent manner with the mechanism of action of a broad class of QA blockers and negatively charged activators.",
+      "claim_type": "EXPLICIT",
+      "source": "As a piece of the molecular machinery implicated in multiple states, the isoleucine gate might interfere in a state-dependent manner with the mechanism of action of a broad class of QA blockers (Panyi and Deutsch, 2007) and negatively charged activators that bind beneath the selectivity filter and operate as master keys to open a variety of K+ channels (Schewe et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation about broader implications, supported by citations.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:00:20.969271Z"
+    },
+    {
+      "id": "d9514e71-5be3-4479-b964-51ac3191c285",
+      "content_id": "395edc1c-71e5-4539-802e-2fbebde71476",
+      "claim_id": "C71",
+      "claim": "The understanding of the isoleucine gate could offer a distinct advantage in the development of drugs that modulate gating states of potassium channels more specifically.",
+      "claim_type": "EXPLICIT",
+      "source": "Of particular importance, the understanding of this last aspect could offer a distinct advantage in the development of drugs that modulate gating states of potassium channels more specifically.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation about potential applications.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:00:20.969271Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "a41bd231-7e59-4cbb-8d7b-db2e10030f86",
+      "content_id": "395edc1c-71e5-4539-802e-2fbebde71476",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "C-type inactivation is a well-established phenomenon in voltage-gated potassium channels involving conformational changes at the selectivity filter that transition from conductive to non-conductive states, contributing to long-term channel activity regulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C2, C9, and C10 represent established knowledge in the field, supported by multiple citations and consistent with the broader literature on Kv channel inactivation. These background claims provide the foundation for the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T05:00:20.969271Z"
+    },
+    {
+      "id": "096db542-6844-4945-bf62-0185a25c7c92",
+      "content_id": "395edc1c-71e5-4539-802e-2fbebde71476",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Recent high-resolution structures of Kv channels revealed a dilated conformation of the selectivity filter that has been interpreted as the non-conductive C-type inactivated state.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C13, C14, and C15 accurately describe prior structural work (Reddi et al., 2022; Tan et al., 2022; Stix et al., 2023) that identified the dilated filter conformation and its interpretation. These are well-documented findings from the cited literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T05:00:20.969271Z"
+    },
+    {
+      "id": "50def512-68c5-4e67-b5ab-f31df8e42be7",
+      "content_id": "395edc1c-71e5-4539-802e-2fbebde71476",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "MD simulations using multiple force fields (AMBER, CHARMM36m, and CHARMM36m-NBFIX) demonstrate that the dilated conformation of the selectivity filter in kv1.2-kv2.1-3m is conductive, with estimated currents (~0.2 pA at +200 mV) orders of magnitude larger than experimentally measured inactivated currents.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C19-C21, C24, C26-C30, and C45 are well-supported by extensive MD simulation data shown in Figures 2 and supplementary figures. Multiple force fields converge on the conclusion that the dilated filter is conductive when the I398 gate is open. The quantitative estimates acknowledge force field limitations while demonstrating the key finding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T05:00:20.969271Z"
+    },
+    {
+      "id": "b7f02382-fab2-4929-8273-d0549323f1a7",
+      "content_id": "395edc1c-71e5-4539-802e-2fbebde71476",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "MD simulations reveal that isoleucine residues at position 398 form a hydrophobic gate that closes during simulations, constricting the permeation pathway beneath the selectivity filter and blocking ion conduction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C6, C22, C23, and C46 are supported by detailed MD simulation data in Figure 2 showing the time-dependent closure of the I398 gate, with C\u03b2-C\u03b2 distances decreasing from ~15 \u00c5 to ~9 \u00c5, accompanied by dehydration and cessation of ion conduction. The structural and dynamic evidence is compelling.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T05:00:20.969271Z"
+    },
+    {
+      "id": "31f7841c-f03d-41a5-b14c-d5687dfbed12",
+      "content_id": "395edc1c-71e5-4539-802e-2fbebde71476",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Electrophysiological experiments show that the I398N mutation restores ion conduction in the triple-mutant channel without reverting C-type inactivation, as demonstrated by the lack of time-dependent inactivation and increased ionic current.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C31-C34 are supported by electrophysiological data in Figure 3 showing that I398N dramatically increases conductance in kv1.2-kv2.1-3m while maintaining the dilated filter conformation (as shown by toxin blocking experiments). The experimental evidence directly validates the computational predictions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T05:00:20.969271Z"
+    },
+    {
+      "id": "81637f2d-465c-4e67-b2d7-6aa6dc53b23c",
+      "content_id": "395edc1c-71e5-4539-802e-2fbebde71476",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Toxin blocking experiments with AgTxII demonstrate that the I398N mutation does not stabilize the selectivity filter in the conductive state, indicating that ions conduct through the dilated filter and that the permeation pathway alteration occurs at I398 rather than the selectivity filter.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8, C34-C40 are supported by comprehensive toxin blocking experiments (Figure 3G-J) and computational binding free-energy calculations (Figure 3F). AgTxII blocks the conductive kv1.2-kv2.1 channel but not kv1.2-kv2.1-3m or kv1.2-kv2.1-3m_I398N, providing strong evidence that both maintain the dilated filter conformation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T05:00:20.969271Z"
+    },
+    {
+      "id": "b905d316-7803-42f9-bb07-23c06ba0135a",
+      "content_id": "395edc1c-71e5-4539-802e-2fbebde71476",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Control experiments with the double mutant kv1.2-kv2.1-2m (lacking W362F) show that AgTxII blocks the channel regardless of I398N mutation, demonstrating that the I398N effect is specific to C-type inactivation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41 and C42 are supported by control experiments in Figure 3\u2014figure supplement 3. The double mutant lacking the critical W362F mutation does not inactivate and is blocked by AgTxII with or without I398N, confirming the specificity of the I398 gate mechanism to C-type inactivation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T05:00:20.969271Z"
+    },
+    {
+      "id": "fdb3c26f-0cfc-44b5-a290-b8e233885241",
+      "content_id": "395edc1c-71e5-4539-802e-2fbebde71476",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "MD simulations of the I398N mutant show that the polar asparagine substitution keeps the permeation pathway constitutively hydrated and open, preventing gate closure.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43, C44, and C48 are supported by MD simulation data in Figure 3\u2014figure supplement 4 showing that I398N maintains an open, hydrated gate configuration. The mechanistic explanation is consistent with both computational and experimental observations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T05:00:20.969271Z"
+    },
+    {
+      "id": "a56fe2d3-d0f0-43af-93c2-abe3f9e1a80c",
+      "content_id": "395edc1c-71e5-4539-802e-2fbebde71476",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Sequence conservation analysis shows that position 398 is occupied by hydrophobic residues (isoleucine, leucine, valine, or phenylalanine) in most studied potassium channels, suggesting the isoleucine gate is broadly relevant for C-type inactivation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47 and C67 are supported by sequence alignment data in Figure 3\u2014figure supplement 5. The conservation of hydrophobic residues at position 398 across multiple K+ channels provides evidence for the general relevance of this gating mechanism.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T05:00:20.969271Z"
+    },
+    {
+      "id": "d5d72105-d08e-456a-a7ce-b6a8100361f1",
+      "content_id": "395edc1c-71e5-4539-802e-2fbebde71476",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Previous experimental observations in Shaker B channel showing that I470C mutations affect inactivation rates and QA blocker binding are consistent with the proposed I398 gate mechanism.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C52 appropriately cite and interpret prior experimental work (Holmgren et al., 1997; Olcese et al., 2001; Panyi and Deutsch, 2007) that is consistent with the current findings. The authors correctly connect historical observations to their new mechanistic model.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T05:00:20.969271Z"
+    },
+    {
+      "id": "a9315689-2b62-4711-8df7-1042962a8cea",
+      "content_id": "395edc1c-71e5-4539-802e-2fbebde71476",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Free-energy calculations reveal a three-state model for C-type inactivation (conductive \u2192 dilated-intermediate \u2192 deeply inactivated) with sequential transitions showing downhill free-energy changes of -12 kcal/mol and -6 kcal/mol, with timescales consistent with experimental observations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C64 are supported by PMF calculations shown in Figure 4. The free-energy landscape is qualitatively consistent with experimental kinetics (Figure 3\u2014figure supplement 1), though the authors appropriately acknowledge computational limitations. The proposed three-state model integrates structural, computational, and experimental data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T05:00:20.969271Z"
+    },
+    {
+      "id": "37382eb9-98c5-4615-a433-02537f2c7183",
+      "content_id": "395edc1c-71e5-4539-802e-2fbebde71476",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Force field comparisons reveal that AMBER and CHARMM36m differ in their treatment of ion-carbonyl interactions, affecting ion binding at the selectivity filter and gate configuration, but both support the conclusion that the dilated filter is conductive when the I398 gate is open.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C59 provide important methodological context about force field limitations and differences. The authors appropriately acknowledge known issues with simulating ion conduction at physiological voltages and demonstrate that their main conclusions are robust across different force fields. The CHARMM36m-NBFIX validation strengthens the findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T05:00:20.969271Z"
+    },
+    {
+      "id": "9c28a35d-a356-4597-99f5-24284bf09c39",
+      "content_id": "395edc1c-71e5-4539-802e-2fbebde71476",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Structural analysis shows that the dilated and conductive conformations differ by ~3.0 \u00c5 RMSD, but the dilated filter remains accessible via a hydrated cavity with similar voltage drop across the selectivity filter.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C18 are supported by structural comparisons and electrostatic calculations shown in Figure 1. The quantitative structural analysis provides important context for understanding why the dilated conformation should be conductive.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T05:00:20.969271Z"
+    },
+    {
+      "id": "4a22d3ef-d6cc-4f49-8bb5-9b6c73bb838c",
+      "content_id": "395edc1c-71e5-4539-802e-2fbebde71476",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The CHARMM36m force field favors the open configuration of the isoleucine gate.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C25 is supported by MD simulation observations showing that CHARMM36m maintains the I398 gate in an open configuration more readily than AMBER. This force field difference is important for interpreting the simulation results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T05:00:20.969271Z"
+    },
+    {
+      "id": "86826e1a-a6fa-46ce-8cb0-ab694a2c6a5a",
+      "content_id": "395edc1c-71e5-4539-802e-2fbebde71476",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The isoleucine gate is expected to be coupled to the PVP motif, reflecting conformational allostery between the selectivity filter and bundle-crossing region.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C53 is supported by observations in the MD simulations (Figure 2) showing correlated motions between I398 and V402 (part of the PVP motif), consistent with prior literature on C-type inactivation allostery. The coupling is observed but not exhaustively characterized.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T05:00:20.969271Z"
+    },
+    {
+      "id": "c3e5c20d-6d1d-439c-ac1d-6dcfead3c02f",
+      "content_id": "395edc1c-71e5-4539-802e-2fbebde71476",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "MD simulations in 150 mM NaCl show that Na+ ions can stably bind the dilated selectivity filter while favoring an open I398 gate configuration, suggesting that Na+/K+ concentration ratios may affect gate closure with implications for sodium leak during C-type inactivation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C65 and C66 are based on preliminary MD simulations (Figure 4\u2014figure supplement 3) showing Na+ binding to the dilated filter. While the observations are interesting, the functional implications for sodium leak are speculative and would require additional experimental validation. The connection to physiological sodium leak is not firmly established.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T05:00:20.969271Z"
+    },
+    {
+      "id": "7667b686-af73-4193-996d-36c0b9fee5cd",
+      "content_id": "395edc1c-71e5-4539-802e-2fbebde71476",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The hERG channel has a tyrosine at position 398, and C-type inactivation in hERG might involve constriction at this position when the selectivity filter is dilated.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C68 and C69 are based on structural observations from cited work (Wang and MacKinnon, 2017) and speculation about hERG inactivation. While the structural observation is accurate, the proposed mechanism for hERG is explicitly acknowledged as speculative and requires experimental investigation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T05:00:20.969271Z"
+    },
+    {
+      "id": "acb499fc-c91b-4885-b38c-5eddedc0bdd6",
+      "content_id": "395edc1c-71e5-4539-802e-2fbebde71476",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The isoleucine gate might interfere with QA blockers and negatively charged activators in a state-dependent manner, potentially offering advantages for drug development targeting specific gating states.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C70 and C71 are speculative proposals about potential drug development applications. While the mechanistic insights about the I398 gate are well-supported, the specific implications for drug design are hypothetical and would require extensive follow-up work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T05:00:20.969271Z"
+    },
+    {
+      "id": "aeb6a18b-203f-4978-8fd5-755e1bd20c8b",
+      "content_id": "395edc1c-71e5-4539-802e-2fbebde71476",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "The canonical conductive state of the K+ channel selectivity filter was first revealed by KcsA crystal structures, and MD studies confirm ion conduction is possible without large free-energy barriers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11 and C12 accurately cite foundational structural and computational work on K+ channel selectivity filters. These are well-established findings that provide appropriate background context.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T05:00:20.969271Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "094decf1-ae23-42fe-b6b3-4dfb3f18349a",
+      "result_id": "a41bd231-7e59-4cbb-8d7b-db2e10030f86"
+    },
+    {
+      "claim_id": "05b12484-419b-4856-8254-7feadaeaf846",
+      "result_id": "a41bd231-7e59-4cbb-8d7b-db2e10030f86"
+    },
+    {
+      "claim_id": "41b6350c-4807-43c9-9f82-352403cb6398",
+      "result_id": "a41bd231-7e59-4cbb-8d7b-db2e10030f86"
+    },
+    {
+      "claim_id": "6cbf2572-1d33-4835-8a07-25f5e9b11c34",
+      "result_id": "a41bd231-7e59-4cbb-8d7b-db2e10030f86"
+    },
+    {
+      "claim_id": "61d4afed-ab78-4fe5-945b-a9bf02bc514a",
+      "result_id": "096db542-6844-4945-bf62-0185a25c7c92"
+    },
+    {
+      "claim_id": "60834280-0792-429a-89d5-f7d1f610ad9d",
+      "result_id": "096db542-6844-4945-bf62-0185a25c7c92"
+    },
+    {
+      "claim_id": "f1797332-0a79-4b7b-b328-55c984e00d73",
+      "result_id": "096db542-6844-4945-bf62-0185a25c7c92"
+    },
+    {
+      "claim_id": "0065bdae-7c40-4c4a-824e-563cb7933c66",
+      "result_id": "096db542-6844-4945-bf62-0185a25c7c92"
+    },
+    {
+      "claim_id": "6c567d21-ecc1-40b1-9ef4-abcdb94dbd00",
+      "result_id": "50def512-68c5-4e67-b5ab-f31df8e42be7"
+    },
+    {
+      "claim_id": "125610c7-5d6c-4d16-a5ed-dfa9cb8fa1fb",
+      "result_id": "50def512-68c5-4e67-b5ab-f31df8e42be7"
+    },
+    {
+      "claim_id": "f9ed62e9-590c-409b-975b-4d9590ab6c94",
+      "result_id": "50def512-68c5-4e67-b5ab-f31df8e42be7"
+    },
+    {
+      "claim_id": "253b2eba-ec72-454a-ab70-3e35a535a521",
+      "result_id": "50def512-68c5-4e67-b5ab-f31df8e42be7"
+    },
+    {
+      "claim_id": "ffaa0d61-9037-4698-be75-b1ea3418b253",
+      "result_id": "50def512-68c5-4e67-b5ab-f31df8e42be7"
+    },
+    {
+      "claim_id": "30c0dd96-915a-487a-8661-9574e8eb2213",
+      "result_id": "50def512-68c5-4e67-b5ab-f31df8e42be7"
+    },
+    {
+      "claim_id": "63772632-427f-417b-bcb1-f11a9fcfb1e6",
+      "result_id": "50def512-68c5-4e67-b5ab-f31df8e42be7"
+    },
+    {
+      "claim_id": "5b797698-9880-46d0-ab0f-646ecda9d308",
+      "result_id": "50def512-68c5-4e67-b5ab-f31df8e42be7"
+    },
+    {
+      "claim_id": "ee31d464-df77-4d32-b90b-9b26712ed631",
+      "result_id": "50def512-68c5-4e67-b5ab-f31df8e42be7"
+    },
+    {
+      "claim_id": "c7967b3c-c469-4c48-bdad-85f77c8b4b05",
+      "result_id": "50def512-68c5-4e67-b5ab-f31df8e42be7"
+    },
+    {
+      "claim_id": "3cb5d444-2039-421d-aed5-c7b0c3423f63",
+      "result_id": "50def512-68c5-4e67-b5ab-f31df8e42be7"
+    },
+    {
+      "claim_id": "63852fca-cbe1-4ffd-88c7-be415a9ab444",
+      "result_id": "b7f02382-fab2-4929-8273-d0549323f1a7"
+    },
+    {
+      "claim_id": "4d6b7e11-57ed-455c-a4cb-5c6ce9079ecb",
+      "result_id": "b7f02382-fab2-4929-8273-d0549323f1a7"
+    },
+    {
+      "claim_id": "4afd3f02-588f-41c4-8039-476eb9488a85",
+      "result_id": "b7f02382-fab2-4929-8273-d0549323f1a7"
+    },
+    {
+      "claim_id": "4317378a-6f35-4f52-9736-1d60dc5c5a15",
+      "result_id": "b7f02382-fab2-4929-8273-d0549323f1a7"
+    },
+    {
+      "claim_id": "b8594476-5a64-4c37-8204-f76a0dcd1219",
+      "result_id": "b7f02382-fab2-4929-8273-d0549323f1a7"
+    },
+    {
+      "claim_id": "994b101e-84e2-47c1-b223-ef470a2eb3dd",
+      "result_id": "31f7841c-f03d-41a5-b14c-d5687dfbed12"
+    },
+    {
+      "claim_id": "c8760129-0e03-4d0c-a039-f85baf477d0b",
+      "result_id": "31f7841c-f03d-41a5-b14c-d5687dfbed12"
+    },
+    {
+      "claim_id": "31c60b94-a8ce-4565-a627-87150580b05f",
+      "result_id": "31f7841c-f03d-41a5-b14c-d5687dfbed12"
+    },
+    {
+      "claim_id": "50428f38-0e26-4f3d-b428-e317e218bfe6",
+      "result_id": "31f7841c-f03d-41a5-b14c-d5687dfbed12"
+    },
+    {
+      "claim_id": "1d737957-99cd-45b3-af84-16c699446d25",
+      "result_id": "31f7841c-f03d-41a5-b14c-d5687dfbed12"
+    },
+    {
+      "claim_id": "289c205c-27c9-4ade-a13b-c7646b61f240",
+      "result_id": "81637f2d-465c-4e67-b2d7-6aa6dc53b23c"
+    },
+    {
+      "claim_id": "1d737957-99cd-45b3-af84-16c699446d25",
+      "result_id": "81637f2d-465c-4e67-b2d7-6aa6dc53b23c"
+    },
+    {
+      "claim_id": "7000c8cc-58ea-415c-86f3-ac3e513fffb0",
+      "result_id": "81637f2d-465c-4e67-b2d7-6aa6dc53b23c"
+    },
+    {
+      "claim_id": "eac714f1-6be1-42a7-92ed-3608493c6236",
+      "result_id": "81637f2d-465c-4e67-b2d7-6aa6dc53b23c"
+    },
+    {
+      "claim_id": "4206ea3d-0bb9-49aa-bbf8-969c08e2513c",
+      "result_id": "81637f2d-465c-4e67-b2d7-6aa6dc53b23c"
+    },
+    {
+      "claim_id": "07cd1db6-fd6b-4c63-85dc-585188ea4695",
+      "result_id": "81637f2d-465c-4e67-b2d7-6aa6dc53b23c"
+    },
+    {
+      "claim_id": "02d0b3f8-30f6-4276-86a7-76edec5f5d22",
+      "result_id": "81637f2d-465c-4e67-b2d7-6aa6dc53b23c"
+    },
+    {
+      "claim_id": "e7397563-fa36-4c2e-89c9-422e066cbbbb",
+      "result_id": "81637f2d-465c-4e67-b2d7-6aa6dc53b23c"
+    },
+    {
+      "claim_id": "d994ceda-a36d-4b56-b859-fefe2663b91c",
+      "result_id": "b905d316-7803-42f9-bb07-23c06ba0135a"
+    },
+    {
+      "claim_id": "bd77b3e8-4cad-4907-b8d0-a304602bd53e",
+      "result_id": "b905d316-7803-42f9-bb07-23c06ba0135a"
+    },
+    {
+      "claim_id": "fd6b1ddb-dd7a-40ab-839c-36c51811c050",
+      "result_id": "fdb3c26f-0cfc-44b5-a290-b8e233885241"
+    },
+    {
+      "claim_id": "42bfaf4d-2490-4d28-b48a-8b11e44f967c",
+      "result_id": "fdb3c26f-0cfc-44b5-a290-b8e233885241"
+    },
+    {
+      "claim_id": "b7f082c3-2e07-436f-b145-e2b9145ee557",
+      "result_id": "fdb3c26f-0cfc-44b5-a290-b8e233885241"
+    },
+    {
+      "claim_id": "24aa258f-263a-4a01-9c9f-08efb1928dee",
+      "result_id": "a56fe2d3-d0f0-43af-93c2-abe3f9e1a80c"
+    },
+    {
+      "claim_id": "0567778d-a3b4-41c5-8c9a-21774ad31b76",
+      "result_id": "a56fe2d3-d0f0-43af-93c2-abe3f9e1a80c"
+    },
+    {
+      "claim_id": "aad184ea-2cec-488c-8859-9bf8ab3cc063",
+      "result_id": "d5d72105-d08e-456a-a7ce-b6a8100361f1"
+    },
+    {
+      "claim_id": "db672f59-849f-476a-818b-53bab26dacf7",
+      "result_id": "d5d72105-d08e-456a-a7ce-b6a8100361f1"
+    },
+    {
+      "claim_id": "315d5a8f-e198-4232-a726-d92b48565d1d",
+      "result_id": "d5d72105-d08e-456a-a7ce-b6a8100361f1"
+    },
+    {
+      "claim_id": "e4efd092-827d-46f4-8fb3-fa29584dd7d4",
+      "result_id": "d5d72105-d08e-456a-a7ce-b6a8100361f1"
+    },
+    {
+      "claim_id": "d23abeda-139d-420d-b2ba-55d03ddae798",
+      "result_id": "a9315689-2b62-4711-8df7-1042962a8cea"
+    },
+    {
+      "claim_id": "1d1d923b-a243-4a76-a8e2-5ed6a3dc8b40",
+      "result_id": "a9315689-2b62-4711-8df7-1042962a8cea"
+    },
+    {
+      "claim_id": "2c5cc84e-2695-4d0b-9dcd-7bf122be3edc",
+      "result_id": "a9315689-2b62-4711-8df7-1042962a8cea"
+    },
+    {
+      "claim_id": "af347981-863b-49e1-a607-70fd81e23424",
+      "result_id": "a9315689-2b62-4711-8df7-1042962a8cea"
+    },
+    {
+      "claim_id": "33b2795c-0397-4af4-bc2a-367901f3c203",
+      "result_id": "a9315689-2b62-4711-8df7-1042962a8cea"
+    },
+    {
+      "claim_id": "9eed1299-ee13-405d-96c4-970bda5e5019",
+      "result_id": "37382eb9-98c5-4615-a433-02537f2c7183"
+    },
+    {
+      "claim_id": "df743e8d-8da1-491a-b04e-4117dd41262e",
+      "result_id": "37382eb9-98c5-4615-a433-02537f2c7183"
+    },
+    {
+      "claim_id": "e534175a-20ad-4044-83e1-ff9a1ddc985e",
+      "result_id": "37382eb9-98c5-4615-a433-02537f2c7183"
+    },
+    {
+      "claim_id": "2ba1fd36-ec15-40ad-9ad3-c8b8bbff0855",
+      "result_id": "37382eb9-98c5-4615-a433-02537f2c7183"
+    },
+    {
+      "claim_id": "be5ff6b4-a77d-4b08-a40d-a01b7fbc4e93",
+      "result_id": "37382eb9-98c5-4615-a433-02537f2c7183"
+    },
+    {
+      "claim_id": "cbfe2794-37bb-4766-9d54-1a18abb09048",
+      "result_id": "37382eb9-98c5-4615-a433-02537f2c7183"
+    },
+    {
+      "claim_id": "6f31cd2d-622c-438c-8ec8-6f65641e2f14",
+      "result_id": "9c28a35d-a356-4597-99f5-24284bf09c39"
+    },
+    {
+      "claim_id": "1485c774-c64f-49f0-a518-2974813947f8",
+      "result_id": "9c28a35d-a356-4597-99f5-24284bf09c39"
+    },
+    {
+      "claim_id": "bbdab661-1dc9-441c-8102-7e5493cef287",
+      "result_id": "9c28a35d-a356-4597-99f5-24284bf09c39"
+    },
+    {
+      "claim_id": "7c6daa17-f3bf-48ab-83f1-c1ad3a9f9aab",
+      "result_id": "4a22d3ef-d6cc-4f49-8bb5-9b6c73bb838c"
+    },
+    {
+      "claim_id": "3bbe3e4f-35d7-47f6-9cb7-c84e70b6404a",
+      "result_id": "86826e1a-a6fa-46ce-8cb0-ab694a2c6a5a"
+    },
+    {
+      "claim_id": "a9dc2d0d-2a64-45c3-aa44-ffb4bd765577",
+      "result_id": "c3e5c20d-6d1d-439c-ac1d-6dcfead3c02f"
+    },
+    {
+      "claim_id": "6ca2677c-bb1d-404b-b457-9add435c8de3",
+      "result_id": "c3e5c20d-6d1d-439c-ac1d-6dcfead3c02f"
+    },
+    {
+      "claim_id": "d8b06644-3d94-4f83-88eb-f874adef5d4f",
+      "result_id": "7667b686-af73-4193-996d-36c0b9fee5cd"
+    },
+    {
+      "claim_id": "601578a9-c547-4749-bca3-e157c0bd31a8",
+      "result_id": "7667b686-af73-4193-996d-36c0b9fee5cd"
+    },
+    {
+      "claim_id": "6dc58ea2-dd60-4f37-b823-b5c9bdd85545",
+      "result_id": "acb499fc-c91b-4885-b38c-5eddedc0bdd6"
+    },
+    {
+      "claim_id": "d9514e71-5be3-4479-b964-51ac3191c285",
+      "result_id": "acb499fc-c91b-4885-b38c-5eddedc0bdd6"
+    },
+    {
+      "claim_id": "ba8c32ae-1958-4d3e-b852-3e08dcf3123e",
+      "result_id": "aeb6a18b-203f-4978-8fd5-755e1bd20c8b"
+    },
+    {
+      "claim_id": "2ff0953c-84f2-49bf-9499-1b5b5aa0a5e1",
+      "result_id": "aeb6a18b-203f-4978-8fd5-755e1bd20c8b"
+    }
+  ],
+  "comparisons": []
+}

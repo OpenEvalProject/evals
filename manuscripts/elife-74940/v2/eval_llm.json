@@ -1,0 +1,338 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "Drosha co-immunoprecipitation from adult mouse DG NSCs identified 165 interacting proteins, of which 84% are RNA-binding proteins. Approximately 50% of the canonical large Drosha complex proteins were identified, with DGCR8 highly enriched as expected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C6 are well-supported by mass spectrometry data with appropriate statistical thresholds (p<0.05, log2 FC \u22653, FDR \u22640.001, peptide count \u22654). The identification of DGCR8 and overlap with known Drosha complexes validates the approach. The enrichment analysis and comparison with published datasets (Macias et al., 2015; Rouillard et al., 2016) provide strong supporting evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "RNA pull-down experiments identified 128 proteins bound to the Nfib 5' UTR HP and 83 proteins bound to the 3' UTR HP, with the majority (91% and 94% respectively) being known RNA-binding proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C10 are supported by mass spectrometry data from RNA pull-down experiments with appropriate statistical criteria (p<0.05, log2 FC \u22651, FDR \u22640.1, peptide count \u22654). The high percentage of known RBPs validates the specificity of the pull-down approach and is confirmed by comparison with established RBP databases.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "MetaCore and GO term analysis revealed distinct functional enrichments between 5' UTR and 3' UTR HP-binding proteins, with translation initiation and elongation strongly enriched in the 5' UTR HP set (21-22%, p-values 10\u207b\u00b2\u00b3-10\u207b\u00b2\u00b9) but less relevant for the 3' UTR HP set (9%, p-values 10\u207b\u2075-10\u207b\u2074).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C15 are supported by systematic enrichment analysis with highly significant p-values. The differential enrichment patterns between 5' and 3' UTR HP-binding proteins suggest distinct functional roles. However, the biological interpretation would benefit from experimental validation of the predicted functional differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Hybrid probe experiments revealed that most RBPs bind to flanking regions rather than the hairpin sequences themselves, with translation 10-fold enriched in 5' UTR HP flanking proteins and gene expression/RNA processing enriched in 3' UTR HP flanking proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C20 are supported by hybrid probe pull-down experiments and GO enrichment analysis. The experimental design using AR RNA substitution for HP sequences is appropriate for distinguishing HP-specific from flanking region binding. The 10-fold enrichment for translation in 5' UTR flanking proteins is statistically significant and biologically meaningful.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Comparison of Nfib 5' UTR and 3' UTR HP-interacting proteins identified 18 proteins that bind preferentially to the 3' UTR HP region, with Hnrnpl, SAFB, Sfpq, and Nono showing highest enrichment and significant association with negative regulation of mRNA metabolic processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C23 are supported by comparative mass spectrometry analysis with appropriate statistical thresholds and GO enrichment analysis. The identification of SAFB as a 3' UTR HP-preferring protein is particularly important for the subsequent mechanistic studies and is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Comparison of Drosha and Nfib HP interactomes identified 18 RBPs interacting with both Drosha and Nfib UTR regions, while the majority of Drosha partners (127/165) including DGCR8 did not interact with Nfib HP regions, suggesting distinct protein complexes for canonical and non-canonical Drosha pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C28 are supported by systematic comparison of interactome datasets. The finding that DGCR8 does not interact with Nfib HP regions is particularly important for establishing the distinction between canonical miRNA processing and non-canonical mRNA regulation. The inference in C28 is logical and well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Tet-on reporter cell lines demonstrated that the Nfib 3' UTR HP confers Drosha sensitivity, with Drosha cKO increasing GFP expression specifically in the 3' UTR HP reporter but not in the control reporter.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C32 are supported by FACS analysis and immunohistochemistry data. The reporter system design is appropriate, with proper controls (Tet-on ctrl vs. Tet-on 3' UTR HP). The differential response to Drosha deletion validates the specificity of the 3' UTR HP-mediated regulation. The cell lines retained stem cell properties, confirming their validity for functional studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Functional screening of 18 RBPs identified SAFB, Qki, Sam68, and Sart1 as negative regulators and Dhx9, Sf1, Hnrnpu, TDP-43, and FUS as positive regulators of Nfib 3' UTR HP reporter expression, with FUS and SAFB showing corresponding effects on mRNA levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C37 are supported by FACS and RT-qPCR data from systematic RBP overexpression experiments. The finding that both FUS and SAFB affect mRNA levels correspondingly with protein levels (C35-C37) supports their role in mRNA stability regulation. However, the claim that they 'act by regulation of mRNA stability' (C37) is an inference that would benefit from additional mechanistic validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "SAFB showed strong binding preference for the Nfib 3' UTR HP over the 5' UTR HP, and SAFB overexpression specifically reduced EGFPd2 expression in Tet-on 3' UTR HP cells but increased it in 5' UTR HP cells, demonstrating sequence-specific regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C43 are supported by mass spectrometry binding data and functional reporter assays with statistical significance. The differential effects on 5' vs. 3' UTR HP reporters (C40-C41) demonstrate specificity. The conclusion that SAFB regulates Nfib mRNA stability through the 3' UTR HP (C43) is well-supported by the convergent evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Endogenous SAFB co-precipitated with endogenous Drosha from DG NSCs, and this interaction persisted in the presence of RNase, indicating that RNA is not required for the Drosha-SAFB interaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C47 are supported by co-immunoprecipitation and immunoblot data with appropriate negative controls (PKC-\u03b1). The RNase treatment experiment (C46-C47) provides strong evidence that the interaction is protein-protein rather than RNA-mediated. The experimental design is rigorous with proper controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "SAFB overexpression reduced Tet-on 3' UTR HP reporter expression in a Drosha-dependent manner, as simultaneous Drosha cKO and SAFB overexpression reversed the SAFB-mediated reduction, demonstrating that Drosha and SAFB work together.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C51 are supported by RT-qPCR and FACS data from rescue experiments. The experimental design with simultaneous manipulation of both Drosha and SAFB is appropriate for testing their functional interaction. The reversal of SAFB effects by Drosha deletion (C50) provides strong evidence for their cooperative function (C51).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "The SAFB RE domain is required for binding to Drosha and for enhancing Drosha activity toward the Nfib 3' UTR HP, as demonstrated by a SAFB-\u0394RE mutant showing 5.7-fold reduced Drosha binding and loss of function in the reporter assay.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C56 are supported by co-immunoprecipitation, densitometry, and functional reporter assays. The SAFB-\u0394RE mutant provides strong loss-of-function evidence for the role of the RE domain. The control showing similar expression levels of WT and mutant SAFB (C55) is important for ruling out expression differences. The inference about RE domain function (C56) is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "SAFB directly binds Nfib mRNA as demonstrated by CLIP experiments, and SAFB overexpression significantly reduced endogenous Nfib mRNA levels in DG NSCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C59 are supported by CLIP-qPCR data showing direct SAFB-Nfib mRNA interaction and RT-qPCR data showing SAFB effects on endogenous Nfib levels. The use of Hnrnpu as a positive control validates the CLIP approach. The conclusion of direct binding and regulation (C59) is well-supported by the convergent evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C60",
+      "C61"
+    ],
+    "result": "Safb knockdown led to rapid cell death in DG NSCs within 48 hours but increased Nfib mRNA levels in N2A cells, supporting SAFB's importance for Nfib mRNA processing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C61 are supported by immunohistochemistry and RT-qPCR data. The rapid cell death in DG NSCs (C60) prevented fate analysis but is consistent with SAFB's critical cellular functions. The use of N2A cells as an alternative system (C61) is appropriate and provides supporting evidence for SAFB's role in Nfib regulation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "In vitro processing assays demonstrated that Drosha complexes from wild-type cells completely processed the Nfib 3' UTR HP probe but not the AR RNA control, and that reducing SAFB levels in the Drosha complex proportionally reduced processing efficiency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C66 are supported by in vitro processing assays with RT-qPCR quantification. The experimental design with titrated SAFB levels (mixing WT and KD lysates) is rigorous and demonstrates dose-dependent effects. The AR RNA control probe validates specificity. The conclusion of direct SAFB-dependent processing (C66) is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C67",
+      "C68"
+    ],
+    "result": "Tandem RNA-immunoprecipitation (RIP2) experiments demonstrated that Drosha and SAFB simultaneously interact on the same native Nfib mRNA in DG NSCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C68 are supported by tandem RIP2 experiments with RT-PCR detection. The sequential precipitation approach is appropriate for demonstrating simultaneous binding to the same transcript. The use of IgG controls validates specificity. The inference of simultaneous interaction (C68) is well-supported by the experimental design.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "SAFB is expressed by many cells in the adult DG and V-SVZ including NSCs, with significantly higher levels in neurons than in astrocytes and oligodendrocytes, and GFP reporter expression from the Tet-on 3' UTR HP increased in differentiated astrocytes compared to undifferentiated NSCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C73 are supported by immunohistochemistry and FACS data. The quantification of SAFB levels across cell types (C72) is statistically significant. The increased reporter expression in astrocytes (C73) is consistent with reduced Drosha/SAFB-mediated processing during differentiation. The data support cell-type-specific regulation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "DG NSCs express higher SAFB levels than V-SVZ NSCs, and SAFB overexpression in V-SVZ NSCs specifically reduced oligodendrocyte production (from 33.2% to 19.9%, p<0.01) without affecting astrocytic differentiation, demonstrating cell-autonomous regulation of NSC fate choices.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C79 are supported by immunohistochemistry, quantification, and cell fate analysis with statistical significance. The differential SAFB expression between DG and V-SVZ NSCs (C74) correlates with their distinct differentiation potentials. The specific effect on oligodendrocyte production without affecting astrocytes (C76-C77) demonstrates specificity. The inference of cell-autonomous fate regulation (C78-C79) is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Conditional deletion of Safb in adult DG NSCs increased oligodendrocyte production 2.1-fold in homozygous and 1.6-fold in heterozygous mice, with enrichment strongest in the hilus region, demonstrating dosage-sensitive regulation of NSC fate in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C87 are supported by in vivo lineage tracing with immunohistochemistry and quantification. The graded response to gene dosage (C80-C82) demonstrates dosage sensitivity. The spatial analysis showing preferential enrichment in the hilus (C84-C86) provides important detail about oligodendrocyte distribution. The inference about increased production and migration (C87) is well-supported by the spatial data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C88",
+      "C89"
+    ],
+    "result": "Loss of SAFB in Safb cKO mice correlated with a 1.8-fold increase in NFIB levels in GFP+ SGZ cells and increased oligodendrocyte production.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C89 are supported by immunohistochemistry and quantification data. The correlation between SAFB loss, increased NFIB, and increased oligodendrocyte production (C89) is consistent with the proposed mechanism. However, the claim is correlative rather than demonstrating direct causation, which would require additional experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "SAFB prevents NSC expression of NFIB by binding to Nfib mRNA and enhancing Drosha-dependent cleavage, thereby blocking oligodendrocyte production to enable neuron generation in adult hippocampal NSCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C93 represent the main conclusions synthesizing multiple lines of evidence including CLIP, in vitro processing, reporter assays, gain-of-function, and loss-of-function experiments. The mechanistic model is well-supported by convergent evidence from molecular, cellular, and in vivo studies. The claims appropriately summarize the major findings of the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "Process network and GO term analysis of Drosha-interacting proteins showed that 34% are involved in transcription and mRNA processing (p=10\u207b\u2076\u00b9), with RNA splicing as the top GO term (>30-fold enrichment), while only 2-7% are linked to other processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C109 are supported by systematic enrichment analysis with highly significant p-values. The strong enrichment for RNA-related processes validates the specificity of the Drosha IP and is consistent with Drosha's known functions. The analysis provides important functional context for the identified interactors.",
+    "result_type": "MINOR"
+  }
+]

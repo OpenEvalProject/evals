@@ -1,0 +1,224 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "The authors successfully generated a panel of 12 HaloTagged DNA repair factors at endogenous loci in U2OS cells using CRISPR-Cas9 and homology-directed repair. All cell lines were homozygously edited except Halo-SHLD2, and the tagged proteins showed proper subcellular localization and near-endogenous expression levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C6 provide converging evidence from genomic PCR (C3), Western blotting (C4), and live-cell imaging (C5-C6) that demonstrate successful genome editing and proper protein expression and localization. The methodology is well-documented and validated across multiple independent approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Most HaloTagged proteins retained DNA repair functionality, with exceptions being ATM (non-functional at both termini), and partially functional Halo-MDC1 and Halo-53BP1 as demonstrated by clonogenic survival assays and foci formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C12 are supported by multiple lines of evidence including foci formation assays (C7), clonogenic survival data (C8-C11), and comparison with knockout cell lines (C11-C12). The conclusion that Halo-ATM is non-functional is particularly well-supported by comparison with ATM inhibitor treatment (C9-C10).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C13",
+      "C14"
+    ],
+    "result": "Absolute protein abundance of HaloTagged DNA repair factors in U2OS cells ranged from ~1,600 molecules/cell (ATM) to ~180,000 molecules/cell (REV7), with ATM, SHLD1, SHLD2, and SHLD3 having the lowest expression levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C14 are supported by in-gel fluorescence quantification with TEV correction factors and validated by flow cytometry (Figure 3B-C shows strong correlation). The methodology accounts for technical artifacts and includes appropriate controls and standards.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "DNA repair factors show distinct recruitment kinetics to laser-induced DNA damage sites, with DNA-PKcs and NBS1 arriving rapidly (t1/2 ~22-31s), MDC1 and RNF168 at intermediate times (t1/2 ~69-77s), RNF169 delayed (t1/2 ~186s), and 53BP1/RIF1 slowly (t1/2 ~550-669s).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C19 are supported by systematic laser microirradiation experiments with quantitative kinetic analysis (Figure 4B-C). The observed hierarchy is consistent with known DDR signaling cascades, and the inference that RNF169 requires RNF168-mediated chromatin modification (C18) is reasonable given the kinetic delay.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "SHLD2 recruitment to DNA damage sites is dependent on SHLD3, and SHLD2 and SHLD3 are initially recruited simultaneously in comparable amounts, but SHLD3 continues to accumulate after SHLD2 plateaus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C22 are supported by genetic knockout experiments (C20, Figure 4\u2014supplement 1C) and quantitative recruitment kinetics under identical imaging conditions (C21-C22, Figure 4\u2014supplement 1D). The data clearly demonstrate the genetic dependency and differential accumulation patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Single-molecule imaging reveals that SHLD1, SHLD2, and SHLD3 have significantly different diffusion coefficients (Dfree = 1.0-3.7 \u03bcm\u00b2/s), indicating the Shieldin complex is not preassembled in the nucleoplasm.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C25 are supported by live-cell single-molecule tracking data (Figure 5B). The inference that different diffusion coefficients indicate lack of preassembly (C25) is logical and consistent with the distinct recruitment kinetics observed in C15-C19. However, alternative explanations (e.g., transient complex formation) are not fully excluded.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "DNA repair factors show diverse chromatin binding dynamics, with MDC1 and RIF1 exhibiting constitutive chromatin association (Fbound ~68-69%) comparable to histone H2B (Fbound ~66%), suggesting they search for DNA breaks by local chromatin scanning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C31 are supported by systematic single-molecule diffusion analysis (Figure 5C-D) with appropriate controls (H2B and 3xNLS). The high chromatin-bound fraction of MDC1 and RIF1 is striking and well-documented. The inference about chromatin scanning (C31) is reasonable but represents one possible interpretation of the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C32"
+    ],
+    "result": "DNA damage induction by Zeocin significantly increases the chromatin-bound fraction of RNF169, 53BP1, SHLD2, SHLD3, and DNA-PKcs, consistent with their recruitment to DNA breaks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C32 is supported by single-molecule imaging data comparing untreated and Zeocin-treated cells (Figure 5D) with statistical analysis showing significant increases. This provides an alternative method to detect DNA repair factor recruitment beyond traditional foci-based approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C33"
+    ],
+    "result": "Within DNA repair foci, 29% of 53BP1 molecules exhibit slow diffusion (Dfree2=0.6 \u03bcm\u00b2/s) compared to 17% outside foci, consistent with both chromatin-bound and phase-separated populations within foci.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C33 is supported by dual-color imaging and spatial filtering analysis (Figure 5\u2014supplement 1H). The three-state model analysis provides mechanistic insight into 53BP1 behavior within repair foci, distinguishing chromatin-bound from phase-separated molecules.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Residence time analysis reveals that all DNA repair factors dissociate from chromatin faster than H2B (t1/2 = 2.4-5.8s vs 7.7s for H2B), and DNA damage increases residence times for 53BP1, SHLD2, and SHLD3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C36 are supported by residence time analysis with appropriate photobleaching controls (Figure 6B-C). The methodology accounts for photobleaching by measuring H2B fluorescence decay, and the increased residence times after Zeocin treatment are consistent with enhanced binding affinity at DNA lesions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "The BRCT domains of MDC1 drive recruitment to DNA damage foci, while the PST repeat domain mediates constitutive chromatin association. Deletion of PST eliminates chromatin binding, while BRCT deletion prevents foci formation but not chromatin association.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C41 are supported by domain deletion analysis combining live-cell imaging (C37, Figure 7C), single-molecule tracking (C39-C40, Figure 7D), and citations to prior work (C37). The inferences about domain function (C38, C41) are well-supported by the complementary phenotypes of the deletion mutants.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Both PST and BRCT domains are critical for efficient homologous recombination, but only BRCT is required for 53BP1 recruitment to DSBs. MDC1 is constitutively tethered to chromatin via PST and enriched at DNA lesions via BRCT-\u03b3H2AX interaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C47 are supported by multiple complementary assays: single-molecule imaging after DNA damage (C42), DR-GFP HR reporter assays (C43-C44), and immunofluorescence (C45). The model proposed in C47 integrates all observations coherently, though the functional significance of constitutive PST-mediated chromatin binding for HR (C46) requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1"
+    ],
+    "result": "U2OS cells do not express ATRX, a known contributing factor to homologous recombination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C1 is supported by citations to published studies. This is an important caveat for interpreting HR-related results in this cell line, though it does not affect the validity of the current study's findings on NHEJ factors.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "The manuscript provides comprehensive background on DNA repair pathways, DDR signaling, and the molecular mechanisms of DSB repair, supported by extensive citations to prior literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C68 represent well-established knowledge in the DNA repair field, supported by appropriate citations to review articles and primary research. These provide necessary context for interpreting the current study's findings.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,207 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C8",
+      "C9",
+      "C12"
+    ],
+    "result": "The manuscript establishes the context that many published biomedical results lack robustness, with inappropriate statistical methods and data fragility being major contributors to unreliable research findings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C8, C9, and C12 are well-supported by multiple citations to established literature on the replicability crisis, research quality issues, and statistical methodology problems. These claims reflect documented scientific consensus and provide appropriate context for the work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C13",
+      "C14",
+      "C15",
+      "C23",
+      "C25",
+      "C26",
+      "C31",
+      "C32"
+    ],
+    "result": "The manuscript describes the prior Ellipse of Insignificance (EOI) analysis method, which quantifies robustness of dichotomous outcome trials by determining how much miscoding between events and non-events would be required to lose statistical significance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C4, C13-C15, C23, C25-C26, and C31-C32 accurately describe the EOI methodology from prior work (Grimes, 2022). These are appropriately cited and provide necessary background for understanding ROAR's contribution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C27",
+      "C46"
+    ],
+    "result": "The manuscript identifies a key limitation of EOI analysis: it does not account for data redaction scenarios where significant results might arise from censoring or neglecting observations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C27, and C46 correctly identify the gap that ROAR addresses. This limitation is a logical inference from EOI's design (which handles miscoding but not redaction) and establishes the motivation for the new method.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "The manuscript establishes that data redaction creates spurious results, can be difficult to detect, may arise from multiple causes (accidental or deliberate), and currently lacks adequate analytical tools for impact assessment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C20 are supported by citations and reflect established knowledge about data redaction challenges. These claims appropriately motivate the need for ROAR as a tool to quantify redaction impacts.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C21",
+      "C22",
+      "C24",
+      "C29",
+      "C34",
+      "C45",
+      "C47"
+    ],
+    "result": "The manuscript introduces ROAR as a novel method that extends EOI to quantify the impact of data redaction in dichotomous outcome trials, producing a bounded cubic curve rather than an ellipse and calculating the minimal redaction required to lose significance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C7, C21-C22, C24, C29, C34, C45, and C47 describe ROAR's core functionality. The mathematical derivation is presented (using Lagrange multipliers for the cubic curve), and the method's capabilities are clearly stated. The approach is mathematically sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C37",
+      "C38"
+    ],
+    "result": "In a simulated example with specific parameters (a=70, b=30, c=50, d=50), ROAR analysis demonstrates that redaction of 10-16 subjects (5.66% of total) would be required to lose statistical significance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C38 present results from a simulated dataset shown in Figure 1 and Table 2. The calculations appear consistent with the described methodology, and the example effectively demonstrates ROAR's behavior.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C43",
+      "C66",
+      "C67"
+    ],
+    "result": "ROAR analysis applied to a large vitamin D supplementation meta-analysis (N=39,197) reveals that redaction of only 14 subjects (0.036%) would be sufficient to nullify the reported 15% reduction in cancer mortality risk.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C41, C43, C66-C67 present a compelling real-world application. The meta-analysis data is properly cited (Zhang et al., 2019), confounding is assessed as minimal (<0.09%), and ROAR calculations are shown in Figure 2 and Table 2. This demonstrates ROAR's utility in revealing fragility even in large studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C68"
+    ],
+    "result": "A subsequent 2022 meta-analysis found no significant reduction in cancer mortality with vitamin D supplementation, potentially validating ROAR's identification of fragility in the 2019 meta-analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C68 is supported by citation to Zhang et al., 2022. This provides external validation that the fragility identified by ROAR may have been real, as later evidence failed to replicate the finding. This strengthens the case for ROAR's utility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "ROAR has specific limitations: it is only applicable to dichotomous outcome trials, should be used cautiously with time-to-event data, uses chi-squared rather than Fisher's exact test, and may show discordance with Fisher's test in edge cases with small sample sizes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C53 appropriately acknowledge methodological limitations. The chi-squared vs. Fisher's exact test issue is well-documented (C53 cites prior work), and the authors appropriately note that discordance is typically negligible except in rare events with very small trials.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C70",
+      "C71"
+    ],
+    "result": "When applied to meta-analyses, ROAR has important limitations: it is only valid when confounding between studies is minimal (crude RR \u2248 adjusted RR), and it provides only a global fragility metric without identifying which specific studies might have redaction issues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C71 appropriately identify limitations of ROAR's application to meta-analyses. The confounding threshold is reasonable, and the acknowledgment that ROAR cannot identify specific problematic studies is an important caveat for interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "The manuscript discusses how preregistration, while theoretically reducing redaction bias, does not prevent p-hacking or HARKing in practice, with researchers frequently deviating from preregistered plans, particularly regarding sample size and exclusion criteria.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C62 are well-supported by multiple citations to research on preregistration effectiveness (Bakker et al., 2020; Singh et al., 2021; van den Akker et al., 2023; Claesen et al., 2021). This contextualizes ROAR's utility even in preregistered studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "ROAR has broader applicability beyond clinical trials, including preclinical work, cohort studies, observational studies, and potentially case-control studies, where redaction bias risk is higher due to less oversight.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C63-C64 make reasonable inferences about broader applicability, but C65 explicitly states this is speculative ('potential application'). No empirical validation is provided for these applications beyond the simulated and meta-analysis examples. Further validation would strengthen these claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "The manuscript concludes that ROAR, like EOI, has potential for detecting statistical manipulations and identifying weak results, with broad applicability in meta-research to improve research reproducibility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C72-C75 make broad statements about ROAR's potential impact. While C72 is supported by citation (Fanelli, 2009), claims C73 and C75 are explicitly speculative ('potential role'). The vitamin D example (C74) provides some support, but systematic validation of ROAR's ability to detect manipulation or improve reproducibility would be needed for full support.",
+    "result_type": "MINOR"
+  }
+]

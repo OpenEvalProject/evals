@@ -1,0 +1,2104 @@
+{
+  "submission": {
+    "id": "311806fe-b474-4562-910c-1d7f41ed3f71",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-04T04:55:55.522134Z",
+    "updated_at": "2025-12-04T04:55:55.522134Z"
+  },
+  "content": [
+    {
+      "id": "250a4d1f-5f7b-4d45-9467-309b724b81e9",
+      "submission_id": "311806fe-b474-4562-910c-1d7f41ed3f71",
+      "content_type": "manuscript",
+      "content_text": "# Arp2/3 complex activity enables nuclear YAP for na\u00efve pluripotency of human embryonic stem cells\n\n## Authors\n\n- Nathaniel Paul Meyer<sup>1</sup> ([ORCID: 0000-0002-8327-8563](https://orcid.org/0000-0002-8327-8563))\n- Tania Singh<sup>1</sup> ([ORCID: 0000-0003-0692-4821](https://orcid.org/0000-0003-0692-4821))\n- Matthew L Kutys<sup>1</sup> ([ORCID: 0000-0002-0752-649X](https://orcid.org/0000-0002-0752-649X))\n- Todd G Nystul<sup>2</sup> ([ORCID: 0000-0002-6250-2394](https://orcid.org/0000-0002-6250-2394))\n- Diane L Barber<sup>1</sup> ([ORCID: 0000-0001-7185-9435](https://orcid.org/0000-0001-7185-9435)) \u2020\n\n### Affiliations\n\n1. Department of Cell & Tissue Biology, University of California, San Francisco San Francisco United States ([ROR:043mz5j54](https://ror.org/043mz5j54))\n2. Departments of Anatomy and OB-GYN/RS, University of California, San Francisco San Francisco United States ([ROR:043mz5j54](https://ror.org/043mz5j54))\n\n\u2020 Corresponding author\n\n## Abstract\n\nOur understanding of the transitions of human embryonic stem cells (hESCs) between distinct stages of pluripotency relies predominantly on regulation by transcriptional and epigenetic programs with limited insight on the role of established morphological changes. We report remodeling of the actin cytoskeleton of hESCs as they transition from primed to na\u00efve pluripotency which includes assembly of a ring of contractile actin filaments encapsulating colonies of na\u00efve hESCs. Activity of the Arp2/3 complex is required for formation of the actin ring, to establish uniform cell mechanics within na\u00efve colonies, to promote nuclear translocation of the Hippo pathway effectors YAP and TAZ, and for effective transition to na\u00efve pluripotency. RNA-sequencing analysis confirms that Arp2/3 complex activity regulates Hippo signaling in hESCs, and impaired na\u00efve pluripotency with inhibited Arp2/3 complex activity is rescued by expressing a constitutively active, nuclear-localized YAP-S127A. Moreover, expression of YAP-S127A partially restores the actin filament fence with Arp2/3 complex inhibition, suggesting that actin filament remodeling is both upstream and downstream of YAP activity. These new findings on the cell biology of hESCs reveal a mechanism for cytoskeletal dynamics coordinating cell mechanics to regulate gene expression and facilitate transitions between pluripotency states.\n\n## Introduction\n\nDerivation of clonal pluripotent stem cells (PSCs) from embryos yields cells with a spectrum of pluripotent states, depending on the species, developmental progression of the embryo, and culture conditions. Clonal mouse embryonic stem cells (mESCs) represent a ground state of pluripotency and closely recapitulate the na\u00efve blastocyst from which they are isolated (Nichols and Smith, 2009). In contrast, clonal human and other primate PSCs, as conventionally isolated and maintained, are in a primed state of pluripotency and more closely resemble the post-implantation epiblast (Nakamura et al., 2016). To study the na\u00efve state of clonal human PSCs, culture conditions have been developed that dedifferentiate primed human embryonic stem cells (hESCs) to a na\u00efve state of pluripotency (Theunissen et al., 2014; Duggal et al., 2015; Takashima et al., 2014; Szczerbinska et al., 2019). Development of culture conditions that convert and sustain a na\u00efve pluripotent state in human PSCs provided an opportunity to study human development before gastrulation (Rossant and Tam, 2017).\n\nSuch in vitro models of na\u00efve pluripotency provided insights into the transcriptomic, epigenetic, and proteomic programs that maintain a functional na\u00efve pluripotency state in stem cells (Duggal et al., 2015; Warrier et al., 2017; Theunissen et al., 2016). We have limited understanding, however, of how established morphological changes during the transition from primed to naive states are regulated and whether morphological changes regulate state transitions. Notably, remodeling of the actin cytoskeleton in response to intracellular signaling and biophysical cues is a predominant determinant for changes in cell morphology as well as for PSC fate and associated gene expression, proliferation, and differentiation (Naqvi and McNamara, 2020). Moreover, the actin cytoskeleton coordinates changes in cell shape which are essential for developmental embryogenesis (Chalut and Paluch, 2016), and accordingly, mechanoregulation has been studied for roles in exit from the pluripotent state toward targeted cell fates including endodermal (Chen et al., 2020), ectodermal (Keung et al., 2012), and mesodermal (Przybyla et al., 2016) lineages (Ireland and Simmons, 2015). Directly targeting actin filament dynamics has been shown to also regulate PSC fate (Hogrebe et al., 2020; Rosowski et al., 2015; Gerecht et al., 2007). Additionally, other components of the cytoskeleton, such as microtubules and intermediate filaments, have been established to modulate stem cell behavior, although studies have primarily focused on how they impact nucleus morphology and activity (Putra et al., 2023; Romero et al., 2022; Ndiaye et al., 2022).\n\nActin-associated proteins, including \u03b2-catenin for enabling Wnt pathway activity, facilitate the maintenance of the na\u00efve pluripotent state in mESCs (De Belly et al., 2021). During murine preimplantation development, actin filaments generate mechanical forces that contribute to differentiation throughout the blastocyst stage by modulating mechanosensitive signaling pathways such as Hippo signaling (Hirate et al., 2015; Zenker et al., 2018). These actin structures allow cells within the developing blastocyst to organize based on contractility, coupling mechanosensing, and fate specification (Ma\u00eetre et al., 2016). Despite evidence that morphological changes and actin filament remodeling determine na\u00efve pluripotency during mouse development, their roles in hESC na\u00efve pluripotency remain unclear.\n\nWe investigated the role of morphological changes during hESC dedifferentiation to a na\u00efve state of pluripotency and identified the assembly of a ring of contractile actin filaments encapsulating na\u00efve but not primed colonies that is tethered to adherens junctions and decorated with phosphorylated myosin light chain (pMLC) and cortactin. We found that activity of the Arp2/3 complex, an actin filament nucleator, but not formins, which also nucleate actin filaments, is necessary for the formation of the actin ring, na\u00efve cell mechanics, including decreased cell-substrate tensional forces and colony formation, and transition to na\u00efve pluripotency. RNAseq analysis suggested a role for Hippo pathway signaling in Arp2/3 regulated na\u00efve pluripotency, which we confirmed by showing increased nuclear localization of the transcriptional co-activators YAP and TAZ in na\u00efve compared with primed hESCs that is blocked by inhibition of Arp2/3 complex activity. Consistent with these findings, na\u00efve pluripotency, as well as the actin filament ring that is blocked by inhibiting Arp2/3 complex activity, is restored by expressing a nuclear-localized non-phosphorylatable YAP (YAP-S127A), indicating that actin filament remodeling is both upstream and downstream of YAP activity. Our data provide new mechanistic insights into how actin filament dynamics regulates the na\u00efve state of hESCs pluripotency and the integration between actin filament remodeling and pluripotency.\n\n## Results\n\n### Actin filament remodeling as hESCs transition to a na\u00efve state\n\nFor morphological analysis of pluripotency states, HUES8 primed hESCs were grown on Matrigel and dedifferentiated to na\u00efve pluripotency using previously reported conditions in an mTeSR-based medium supplemented with MEK (PD0325901) and GSK3 (CHIR99021) inhibitors, the adenylyl cyclase activator forskolin, human leukemia inhibitory factor (LIF), basic fibroblast growth factor (bFGF), and ascorbic acid (Duggal et al., 2015; Qin et al., 2016). We found that this treatment induced colonies to develop a prominent dome-shape by day 6 of dedifferentiation and increase expression of na\u00efve pluripotency markers DNMT3L, DPPA3, KLF2, and KLF4, as determined by rt-PCR (Figure 1A and B), which confirms the transition to a na\u00efve state. Staining fixed cells for actin filaments with phalloidin revealed that na\u00efve but not primed colonies had a ring of bundled actin filaments at the colony periphery (Figure 1C). A similar actin ring also formed around colonies of na\u00efve H9 cells and na\u00efve WTC11 induced PSCs (iPSCs) (Figure 1\u2014figure supplement 1A) as well as HUES8 cells dedifferentiated by alternative medium supplements (Figure 1\u2014figure supplement 1B). Moreover, the actin ring assembled independently of na\u00efve colony size (Figure 1\u2014figure supplement 1C).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/89725/elife-89725-fig1-v2.jpg)\n\n**Figure 1.:** (A) Schematic of the dedifferentiation process from primed to na\u00efve hESCs. (B) Confirmation of dedifferentiation indicated by increased expression of pluripotency genes associated with a na\u00efve state as determined by quantitative PCR (qPCR). Data represent the means \u00b1 SD normalized to Oct4 (n=3 separate cell preparations). Two-way ANOVA with Tukey post hoc test was used to compare between groups. (C\u2013G) Images of primed and na\u00efve stem cells stained or immunolabeled for actin cytoskeleton components. (C) Confocal (left and middle) and super-resolution (right) images of hESCs stained for F-actin with phalloidin (white) and Hoechst (blue) show a bundled actin filament ring around colonies of na\u00efve but not primed cells. (D\u2013F) Confocal images of na\u00efve hESCs immunolabeled for \u03b2-catenin (D), phosphorylated myosin light chain (pMLC) (E), and cortactin (F) and stained for F-actin with phalloidin (magenta) to characterize the actin filament ring. Scale bars, 25 \u00b5M. (G) Representative stress maps generated by traction force microscopy (TFM). Dotted outlines indicate colony boarders. Scale bar, 50 \u00b5M.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/89725/elife-89725-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Confocal images of na\u00efve H9 human embryonic stem cells (hESCs) and WTC11 induced pluripotent stem cells (iPSCs) stained for F-actin with phalloidin. (B) Confocal images of na\u00efve hESCs using an alternative dedifferentiation medium (Qin et al., 2016). (C) Confocal images of na\u00efve hESCs at different colony sizes. (D) Super-resolution images of hESCs stained for F-actin with phalloidin (magenta) and Hoechst (cyan). Orthogonal views (left panels) in conjunction with 3D reconstruction (right panel) demonstrate the 3D architecture of the actin ring in na\u00efve colonies. (E) Phase contrast images of colonies used to show representative tractions for traction force microscopy in Figure 1G. Images are representative from at least three separate determinations. Scale bars, 25 \u00b5M.\n\nAn actin filament ring is reported to encircle colonies of clonal human PSCs to provide a mechanosensitive element linked to focal adhesions (N\u00e4rv\u00e4 et al., 2017). The actin filament ring we observed around na\u00efve hESC colonies was instead tethered to adherens junctions, as indicated by co-labeling for \u03b2-catenin, with separated interdigitated adherens junctions suggesting a contractile force (Figure 1D, crosshairs). The contractile property of the ring was also suggested by the actin ring around na\u00efve hESC colonies being decorated with pMLC as determined by immunolabeling (Figure 1E). In contrast, primed hESC colonies had irregular aggregates of pMLC with limited co-localization with actin filaments. Additionally, immunolabeling for cortactin, a regulator of cortical branched actin filaments, partly overlapped with the actin ring (Figure 1F). The subcellular localization of the actin ring was confirmed with 3D reconstruction (Figure 1\u2014figure supplement 1D). Together, these data indicate a contractile actin ring surrounding na\u00efve but not primed hESC colonies, with the ring likely composed of unbranched actin filaments, which bind pMLC, and branched filaments, which bind cortactin.\n\nThe nature of the actin ring enclosing colonies of na\u00efve but not primed hESC colonies suggested a potential difference in colony mechanics, which we determined by using traction force microscopy. Increased cell-matrix traction forces are associated with destabilized adherens junctions in epithelial monolayers (Mertz et al., 2013; Scarpa et al., 2015). Consistent with pMLC localization, primed colonies exhibited elevated cell-substrate tractions that were distributed throughout the colony (Figure 1G, left; Figure 1\u2014figure supplement 1E). In contrast, na\u00efve colonies exhibited overall low magnitude cell-substrate tractions that were localized to the colony periphery and largely absent from the colony interior (Figure 1G, right; Figure 1\u2014figure supplement 1E), suggesting decreased cell-substrate tensional force and a likely shift to more stabilized cell-cell forces. Along with pMLC localization, these low traction forces are consistent with uniform cell-cell adhesion in na\u00efve hESC colonies. Together these data reveal a significant reorganization of the actin cytoskeleton during the transition to a na\u00efve state of pluripotency that includes the assembly of a contractile actin ring surrounding na\u00efve cell colonies, coincident with attenuated cell-substrate traction forces and a transition to enhanced cell-cell junction traction force within the colony unit.\n\n### Arp2/3 complex activity is necessary for transition of hESC to na\u00efve pluripotency\n\nThe assembly of an actin ring in na\u00efve but not primed hESC colonies led us to ask whether the actin ring has a functional significance in the transition to na\u00efve pluripotency. New actin filaments are predominantly generated by two distinct nucleators, the Arp2/3 complex, which generates branched filaments, and formins, which generate unbranched filaments (Pollard, 2007). We found that the actin ring assembled when na\u00efve cells are generated in the presence of SMIFH2, a broad-spectrum inhibitor of formin activity (Rizvi et al., 2009; Ganguly et al., 2015) but not CK666, a selective pharmacological inhibitor of Arp2/3 complex activity (Nolen et al., 2009; Yang et al., 2012 ; Figure 2A), despite the ring likely being composed of both unbranched and branched actin filaments as indicated by pMLC and cortactin immunolabeling. Additionally, CK666 blocked increased expression of markers of na\u00efve pluripotency seen in controls, determined by quantitative PCR (qPCR) of PECAM1, ESRRB, KLF4, and DNMT3L (Figure 2B). To eliminate the possibility that CK666 treatment led cells to exit pluripotency and differentiate, we immunolabeled for the general pluripotency markers OCT4 and SOX2 and found that CK666-treated cells remained broadly pluripotent (Figure 2\u2014figure supplement 1A and B). To further confirm that Arp2/3 complex activity is necessary for the actin filament ring, we also treated cells with CK869, another inhibitor of Arp2/3 complex activity (Hetrick et al., 2013) . Consistent with our finding using CK666, CK869 blocked the formation of the actin ring without impairing pluripotency (Figure 2\u2014figure supplement 1A and B).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/89725/elife-89725-fig2-v2.jpg)\n\n**Figure 2.:** (A) Confocal images of D6 na\u00efve human embryonic stem cells (hESCs) maintained in the absence (Control) or presence of 80 \u00b5M CK666 or 50 \u00b5M SMIFH2 and stained for F-actin with phalloidin and nuclei with Hoechst. (B) Expression of the indicated pluripotency transcripts determined by quantitative PCR (qPCR) at D6 of dedifferentiation in the absence (Control) or presence of CK666 or SMIFH2. The Arp2/3 complex activity inhibitor CK666 impairs upregulation of pluripotency genes used to identify na\u00efve pluripotency. Data are the means \u00b1 SD of three determinations normalized to Oct4. Two-way ANOVA with Tukey post hoc test was used to compare between groups. (C\u2013E) Confocal images of control primed and na\u00efve hESCs and D6 cells dedifferentiated in the presence of CK666 immunolabeled for the primed marker SSEA3, quantified in (D) and the na\u00efve marker KLF4, quantified in (E). Box plots in (D) and (E) show median, first and third quartile, with whiskers extending to observations within 1.5 times the interquartile range. (F) Clonogenicity, determined by alkaline phosphatase positive colonies (quantified in top panel and representative brightfield images in bottom panel) in control primed and na\u00efve hESC as well as dedifferentiated in the presence of CK666 or 80 \u00b5M CK689, an inactive analog of CK666. Data are the means \u00b1 SD normalized to the number of cells plated in three separate determinations. Box plots are as described in (D, E) and one-way ANOVA with Tukey post hoc test was used to compare between groups. Scale bars, 25 \u00b5M. (G) Representative stress maps generated by traction force microscopy (TFM). Dotted outlines indicate colony boarders. Scale bar, 50 \u00b5M.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/89725/elife-89725-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Confocal images of D6 na\u00efve human embryonic stem cells (hESCs) treated with or without CK666 or CK869 stained for F-actin with phalloidin (magenta) and Hoechst (blue) and immunolabeled for pluripotency markers Oct4 (red) and Sox2 (green). (B) Quantification of cells double positive for Oct4 and Sox2. (C) Quantification of EdU+ cells after a 1 hr pulse of EdU. Data in (A, B, C) are the means \u00b1 SD normalized to the number of cells plated from three separate determinations. One-way ANOVA with Tukey post hoc test was used to compare between groups for data in (B, C); no significant differences were found. (D) Confocal images of na\u00efve hESCs treated with CK666 and stained for cortactin (green) and F-actin (magenta). (E) Phase contrast images of colonies used to show representative tractions for traction force microscopy in Figure 2G. Images are representative from at least three separate determinations. Scale bars, 25 \u00b5M.\n\nTo further assess the pluripotent state of cells dedifferentiated in the presence of CK666, we immunolabeled for the primed pluripotent marker SSEA3 (Trusler et al., 2018). SSEA3 expression significantly decreased with dedifferentiation in control conditions, as previously reported (Liu et al., 2017) but remained at levels similar to primed cells in the presence of CK666 (Figure 2C and D). Additionally, the na\u00efve pluripotency marker KLF4 (Takashima et al., 2014) translocated from the cytoplasm to the nucleus with control dedifferentiation but not in the presence of CK666 (Figure 2C and E). Although branched actin filaments generated by Arp2/3 complex promote cell cycle progression and proliferation (Molinie et al., 2019), we used an EdU pulse (1 hour) to show no difference in EdU incorporation in the absence or presence of CK666 or CK869 (Figure 2\u2014figure supplement 1C), indicating that the inhibitors did not change cell proliferation. Consistent with CK666 disrupting the actin filament ring, it also disrupted localization of cortactin around na\u00efve colonies (Figure 2\u2014figure supplement 1D).\n\nWe further tested effects of CK666 on a functional na\u00efve pluripotent state by staining for alkaline phosphatase and scoring for colony formation, which indicates the capacity for clonogenic expansion and self-renewal (Rostovskaya et al., 2019). Primed and na\u00efve hESCs were passaged and plated at clonogenic cell numbers and maintained for 5 days without or with CK666. In controls, colony formation was greater in na\u00efve compared with primed hESC, as previously reported (Chen et al., 2022). However, with CK666 but not CK689, an inactive analog of CK666, there was no increase in colony formation in na\u00efve compared with primed cells (Figure 2F). Additionally, traction force microscopy revealed that elevated cell-substrate tractions throughout colonies of primed but not na\u00efve cells (Figure 1G) were retained when hESCs were dedifferentiated in the presence of CK666 (Figure 2G; Figure 2\u2014figure supplement 1E). These data identify an essential role for the Arp2/3 complex in promoting an actin filament ring and uniform na\u00efve colony mechanics as well as acquiring a na\u00efve pluripotent state in hESCs.\n\n### Arp2/3 complex activity enables active YAP for na\u00efve pluripotency\n\nTo understand how Arp2/3 complex activity affects the transcriptional circuitry required for na\u00efve pluripotency, we performed bulk RNA-sequencing (RNAseq) on primed and na\u00efve hESCs and hESCs dedifferentiated in the presence of CK666 (Figure 3A). We found that primed, na\u00efve, and CK666-treated cells had a total of 12,817 differentially expressed genes (DEGs) with an adjusted pval<0.05 (false discovery rate [FDR]-corrected by Benjamini-Hochberg procedure). Of these DEGs, 182 were unique to control primed cells compared with control na\u00efve cells and were not differentially expressed in CK666-treated cells; CK666-treated cells compared with control primed or control na\u00efve cells had 102 and 502 DEGs, respectively. To determine the transcriptional networks involved in the dedifferentiation from primed to na\u00efve pluripotency, we identified KEGG pathways in control na\u00efve dedifferentiation which revealed Hippo signaling as the top candidate (Figure 3B). Additionally, transcription factor binding motif analysis revealed that one of the top candidates was TEAD2 (Figure 3C), which is a downstream effector of Hippo signaling.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/89725/elife-89725-fig3-v2.jpg)\n\n**Figure 3.:** (A) Volcano plots showing transcriptome fold-changes (padj) of dedifferentiations in the absence (Control Na\u00efve) or presence of CK666-treated dedifferentiations compared with primed hESCs. Each dot represents a single gene, with significant genes (padj<0.05; false discovery rate [FDR]-corrected by Benjamini-Hochberg procedure) in green. Notable primed and na\u00efve markers are depicted in magenta and blue, respectively. (B, C) KEGG pathway analysis (B) and transcription factor enrichment analysis (C) of control primed and na\u00efve hESCs. The number of differentially expressed genes (DEGs) indicated in each pathway is displayed and asterisks indicate significantly enriched pathways (p<0.05). (D) Unbiased screening of all known YAP target genes in dedifferentiated cells in the absence (Control Naive) and presence of CK666. Affected genes were further analyzed to indicate whether they are enriched in control, CK666-treated, or both conditions when compared with primed controls. (E) Expression of selected YAP target genes from bulk RNA-sequencing (RNAseq), with asterisks indicating significant difference (padj<0.05). (F) Representative confocal images of control primed and na\u00efve hESCs and na\u00efve hESCs generated in the presence of 80 \u00b5M CK666 immunolabeled for YAP and stained for nuclei with Hoechst and F-actin with phalloidin. (G) Quantification of nuclear to cytoplasmic ratio of YAP from images as shown in (F). Box plots show median, first and third quartile, with whiskers extending to observations within 1.5 times the interquartile range. Data are from five separate cell preparations and one-way ANOVA with Tukey post hoc test was used to compare between groups. Scale bars, 25 \u00b5M.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/89725/elife-89725-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Confocal images of D6 primed and na\u00efve human embryonic stem cells (hESCs) in the absence (Control) or presence of 80 \u00b5M CK666 immunolabled for TAZ (green) and stained for F-actin with phalloidin (magenta) and Hoechst (blue). (B) Quantification of nuclear to cytoplasmic ratio of TAZ from images shown in (A). Box plots show median, first and third quartile, with whiskers extending to observations within 1.5 times the interquartile range. Data are from five separate cell preparations and one-way ANOVA with Tukey post hoc test was used to compare between groups. Images are representative from at least three separate determinations. Scale bars, 25 \u00b5M. (C, D) Representative immunoblot of total YAP in cell lysates (C) and quantification (D) of total YAP in immunoblots from three separate cell preparations. Data are from three separate cell preparations and one-way ANOVA with Tukey post hoc test was used to compare between groups.\n\nThe Hippo effector protein YAP is a known regulator of the human na\u00efve pluripotent state, with overexpression of YAP in PSCs promoting the acquisition of na\u00efve pluripotency (Qin et al., 2016). Although actin filament dynamics is reported to regulate YAP signaling (Hsiao et al., 2016; Furukawa et al., 2017), to our knowledge a role for Arp2/3 complex activity regulating YAP or TAZ activity in human na\u00efve pluripotency has not been reported. For an unbiased global analysis of known YAP target genes, we used two publicly available datasets (Estar\u00e1s et al., 2017; Pagliari et al., 2021) and found that of the 3744 YAP target genes identified in our RNAseq dataset, 3156 (84%) were not differentially expressed in any condition and 588 (16%) were enriched in one or multiple conditions. Of those 588 enriched YAP target genes, 174 (30%) were significantly enriched in the control na\u00efve dedifferentiation condition versus the control primed condition; 407 (69%) were significantly enriched among CK666-treated dedifferentiation condition versus the control primed condition; and 7 (1%) were significantly enriched in both conditions versus the control primed condition (Figure 3D, adjusted pval>0.05).\n\nOf the genes significantly enriched in the control na\u00efve condition compared with the control primed condition, known na\u00efve pluripotency markers such as OTX2, DLG2, and CRY1 were significantly upregulated, and these na\u00efve markers were not significantly increased in CK666-treated cells (Figure 3E, left). As expected, genes significantly enriched among both DEG lists included known YAP and Hippo targets such as ANKRD1, SLIT2, and CHD10 (Figure 3E, right). Genes significantly enriched among the CK666-treated condition include the negative Hippo regulator AMOT (Zhao et al., 2011), and lineage-commitment genes such as SOX6 and SPEF2 (Figure 3E, middle). To verify this prediction, we immunolabeled cells to determine YAP localization and found increased nuclear to cytoplasmic ratios of YAP (Figure 3F and G) and TAZ (Figure 3\u2014figure supplement 1A and B) with control dedifferentiation that was blocked by CK666. Immunoblotting total cell lysates for total YAP abundance indicated no difference between primed and na\u00efve hESCs and a small but significant increase in hESCs treated with CK666 (Figure 3\u2014figure supplement 1C and D). These data indicate that a Hippo signaling pathway program, driven by mediators such as YAP, is active during dedifferentiation to na\u00efve pluripotency but is disrupted by inhibiting Arp2/3 complex activity.\n\nConsistent with our findings, actin filaments and associated proteins generate mechanical forces during preimplantation development that contribute to differentiation throughout the blastocyst stage by modulating mechanosensitive pathways such as Hippo (Hirate et al., 2015; Zenker et al., 2018). These actin structures allow cells within the developing blastocyst to organize based on contractility, coupling mechanosensing, and fate specification (Ma\u00eetre et al., 2016). Therefore, we hypothesized that Arp2/3 complex activity facilitated na\u00efve dedifferentiation through increasing YAP nuclear localization. To test this prediction, we asked whether primed hESCs stably expressing a constitutively active, nuclear-localized YAP (YAP-S127A) could restore na\u00efve dedifferentiation in the presence of CK666. Accordingly, we found that that expression of YAP-S127A in the presence of CK666 restored two markers of the na\u00efve state, increased nuclear localization of KLF4 (Figure 4A and B) and decreased SSEA3 (Figure 4C and D). In contrast, acquisition of a na\u00efve pluripotency state remained blocked with CK666 treatment in cells overexpressing wildtype YAP (YAP-WT) (Figure 4A\u2013D). Colony formation, a functional form of na\u00efve pluripotency, was also restored by heterologous expression of YAP-S127A but not YAP-WT in the presence of CK666 (Figure 4E), indicating that Arp2/3 complex activity is necessary for active nuclear-localized YAP to induce a na\u00efve pluripotency state. In addition, we found that expressing YAP-S127A but not YAP-WT in the presence of CK666 partially restored a contractile actin ring enclosing na\u00efve cell colonies (Figure 4F), indicating bidirectional signaling between actin filament remodeling and active nuclear-localized YAP for assembly of the actin filament ring around na\u00efve hESC colonies. Thus, we conclude that both the transition from primed to na\u00efve hESC pluripotency includes an Arp2/3 complex-dependent actin filament remodeling that enables active nuclear-localized YAP, and that nuclear-localized YAP enables actin filament remodeling for na\u00efve pluripotency.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/89725/elife-89725-fig4-v2.jpg)\n\n**Figure 4.:** (A, C) Representative confocal images of control primed, control na\u00efve cells, and cells dedifferentiated in the presence of CK666 with or without stably overexpressing YAP-WT or YAP-S127A immunolabeled for the primed marker SSEA3 (A) or the na\u00efve marker KLF4 (C) and stained for nuclei with Hoechst and F-actin with phalloidin. (B, D) Images as in (A) and (C) were used to quantify, respectively, the number of SSEA3 puncta (B) and the nuclear to cytoplasmic ratio of KLF4 (D). Box are plots as described for Figure 2. (E) Clonogenicity, determined by alkaline phosphatase positive colonies (quantified in top panel and representative brightfield images in bottom panel) in control primed and na\u00efve human embryonic stem cell (hESC), and dedifferentiated in the presence of CK666 with stably expressed YAP WT or YAP-S127A. Data are the means \u00b1 SD normalized to the number of cells plated from five separate determinations, with box plots as described for Figure 2d and e and one-way ANOVA with Tukey post hoc test was used to compare between groups. Representative confocal images of control primed, control na\u00efve cells, and cells dedifferentiated in the presence of CK666 with or without stably expressing YAP-WT or YAP-S127A immunolabeled for phosphorylated myosin light chain (pMLC) and stained for nuclei with Hoechst and F-actin with phalloidin. Scale bars, 25 \u00b5M.\n\n## Discussion\n\nOur new findings support a model in which na\u00efve pluripotency is characterized by an Arp2/3 complex-dependent remodeling of the actin cytoskeleton that includes formation of a contractile actin ring enclosing na\u00efve colonies and establishment of uniform tensional forces in colonies likely enabled by the actin ring being physically associated with \u03b2-catenin and pMLC, which are known to play roles in pluripotency (Xu et al., 2016; De Belly et al., 2021). Moreover, Arp2/3 activity facilitates dedifferentiation to a na\u00efve state of pluripotency through promoting nuclear translocation of YAP and regulating Hippo target gene expression. Consistent with these findings, whereas the transition to na\u00efve pluripotency is blocked with inhibiting Arp2/3 complex activity, this transition is restored by expression of a constitutively active, nuclear-localized YAP-S127A.\n\nThe contractile rings we describe are distinct from those that assemble around Xenopus neural crest cells (Shellard et al., 2018), which function to enhance migratory capacity, and around colonies of iPSCs (N\u00e4rv\u00e4 et al., 2017), which function to enhance cell-substrate adhesion. Induced pluripotency has long been proposed to be closer to na\u00efve pluripotency than primed stem cells as conventionally isolated and maintained (Nichols and Smith, 2009; Theunissen et al., 2016). Our findings also highlight distinct differences between murine cells and hESCs. Cells within the ICM of mouse blastocysts exclude YAP from the nucleus whereas cells within the ICM of human blastocysts maintain nuclear YAP (Qin et al., 2016; Nishioka et al., 2009). This difference in YAP localization is retained in vitro, with murine na\u00efve PSCs having predominantly cytosolic YAP (Chung et al., 2016), and human na\u00efve PSCs having predominantly nuclear YAP (Figure 3F and G). How this difference in YAP localization occurs between mouse and human is unknown, although YAP localization is reported to be regulated by stability of the actin cytoskeleton and contractility, as well as various mechanical regulators (Furukawa et al., 2017).\n\nThe role of the actin cytoskeleton in exit from the pluripotent state has also highlighted how actin dynamics may facilitate cell fate decisions. For example, cells located at the colony edge of primed hESCs have distinct cytoskeletal dynamics and are uniquely poised to exit pluripotency and differentiate (Rosowski et al., 2015 ; Kim et al., 2022). Positional differences in differentiation potential such as these have been proposed as a mechanism executed in early embryo symmetry breaking with rearrangement of the actin cytoskeleton being required for the first cell fate decision in the blastocyst (Skamagki et al., 2013; Chen et al., 2018). Thus, it may be possible that the contractile actin ring we observe at the edge of na\u00efve colonies (Figure 1C) functions as a hub for regulating cell fate dynamics through similar mechanisms as first cell fate decision including modulation of mechanosensitive signaling such as YAP and through pathways such as Hippo. Our finding that the actin ring, which is lost in the presence of CK666, is restored by YAP-S127A but not YAP-WT suggests a complex circuitry between YAP activity and actin filament remodeling.\n\nFurther highlighting differences between hESCs and mESCs, we recently reported that Arp2/3 complex activity is necessary for the differentiation of clonal mouse na\u00efve PSCs to the primed epiblast state, which is in part mediated by translocation of myocardin-related transcription factor MRTF from the cytosol to the nucleus (Aloisio and Barber, 2022). Additionally, a recent report suggests that Arp2/3 complex activity may form a positive feedback loop with YAP-TEAD1 transcriptional activity controlling cytoskeletal reorganization (Pagliari et al., 2021). Thus, Arp2/3 complex activity may regulate na\u00efve pluripotency at multiple stages including initially to reorganize the actin cytoskeleton, but also during maintenance of na\u00efve pluripotency through regulating YAP localization and hence activity.\n\nTaken together, our findings increase our understanding of actin dynamics and cell mechanics as regulators of cell fate transitions. A role for contractile actin filaments as a mechanoresponsive element for pluripotency states is well established (De Belly et al., 2022), and our work identifies cytoskeletal dynamics essential for uniform colony mechanics and the na\u00efve pluripotent state, the role of Arp2/3 complex activity, and YAP/TAZ activity as a promising target for reprogramming of hESCs and for regenerative medicine.\n\n## Methods\n\n### Cell culture\n\nPrimed hESC lines HUES8 (RRID: CVCL_B207), H9 (RRID: CVCL_1240), and WTC11 (RRID: CVCL_Y803) were maintained on Matrigel (Corning Life Science #354277) in feeder-free mTeSR-1 medium (STEMCELL Technologies # 85850) at 37\u00b0C with 5% CO2 with daily medium changes. Cells were passaged approximately every 3 days, by dissociating with Accutase (STEMCELL Technologies #07920) and including the Rho-associated coiled-coil kinase (ROCKi) inhibitor Y-276932 (10 \u00b5M; Selleckchem #S1049) in the plating medium to facilitate survival. All cell lines were routinely confirmed to be negative for mycoplasma by testing with a MycoAlert Mycoplasma Detection Kit (Lonza # LT07-701). The HUES8 cell line was authenticated using STR Profiling (Human Cell STR Profiling Service; ATCC).\n\n### Generation of na\u00efve hESCs\n\nDedifferentiation was completed using previously published methods (Duggal et al., 2015; Qin et al., 2016). In brief, cells were plated at a density of 10,000 cells per cm (Nakamura et al., 2016) in the presence of ROCKi (10 \u00b5M). After 24 hr, cells were washed three times with PBS and incubated in na\u00efve dedifferentiation medium of mTeSR-1 supplemented with 12 ng/mL bFGF (Peprotech #AF-100-18B), 1 \u00b5M PD0325901 (MEKi, Selleckchem #S1036), 3 \u00b5M CHIR99021 (GSK3\u03b2i, Selleckchem #S2924), 10 \u00b5M forskolin (STEMCELL Technologies #72112), 50 ng/mL ascorbic acid (Sigma # A92902), and 1000 U recombinant human LIF (STEMCELL Technologies #78055). Medium was replaced daily, and cells were passaged every 3 days with Accutase. Where indicated, the na\u00efve dedifferentiation medium 2iFL was used, which consisted of mTeSR-1 supplemented with 0.5 \u03bcM PD0325901, 3 \u03bcM CHIR9902, 10 \u03bcM forskolin, and 1000 U recombinant human LIF. For actin nucleator experiments, na\u00efve dedifferentiation media was supplemented with either 80 \u03bcM CK666 (EMD Millipore #182515), 80 \u03bcM CK689 (EMD Millipore #182517), or 50 \u03bcM SMIFH2 (Sigma #S4826) throughout the entire dedifferentiation process. When passaging, media was supplemented with both ROCKi (10 \u00b5M) and the appropriate inhibitor.\n\n### qPCR\n\nTotal RNA was isolated using RNAeasy Mini Plus (QIAGEN #74134) kits and cDNA was generated using iScript cDNA Synthesis kits (Bio-Rad #1708890) as per the manufacturer\u2019s specifications. Quantitative PCR was performed using iQ SYBR Green Supermix (Bio-Rad #1708882) and analyzed on a QuantStudio six Flex Real-Time PCR System (Applied Biosystems).\n\n<table>\n  <thead>\n    <tr>\n      <th>qPCR primer name</th>\n      <th>Sequence (5\u2019 to 3\u2019)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>GAPDH_for</td>\n      <td>ACAACTTTGGTATCGTGGAAGG</td>\n    </tr>\n    <tr>\n      <td>GAPDH_rev</td>\n      <td>GCCATCACGCCACAGTTTC</td>\n    </tr>\n    <tr>\n      <td>Oct4_for</td>\n      <td>GTGTTCAGCCAAAAGACCATCT</td>\n    </tr>\n    <tr>\n      <td>Oct4_rev</td>\n      <td>GGCCTGCATGAGGGTTTCT</td>\n    </tr>\n    <tr>\n      <td>Dnmt3l_for</td>\n      <td>TGAACAAGGAAGACCTGGACG</td>\n    </tr>\n    <tr>\n      <td>Dnmt3l_rev</td>\n      <td>CAGTGCCTGCTCCTTATGGCT</td>\n    </tr>\n    <tr>\n      <td>Klf2_for</td>\n      <td>ACCAAGAGCTCGCACCTAAA</td>\n    </tr>\n    <tr>\n      <td>Klf2_rev</td>\n      <td>GTGGCACTGAAAGGGTCTGT</td>\n    </tr>\n    <tr>\n      <td>Klf4_for</td>\n      <td>CGGACATCAACGACGTGAG</td>\n    </tr>\n    <tr>\n      <td>Klf4_rev</td>\n      <td>GACGCCTTCAGCACGAACT</td>\n    </tr>\n    <tr>\n      <td>DPPA3_for</td>\n      <td>TAGCGAATCTGTTTCCCCTCT</td>\n    </tr>\n    <tr>\n      <td>DPPA3_rev</td>\n      <td>CTGCTGTAAAGCCACTCATCTT</td>\n    </tr>\n    <tr>\n      <td>PECAM1_for</td>\n      <td>AACAGTGTTGACATGAAGAGCC</td>\n    </tr>\n    <tr>\n      <td>PECAM1_rev</td>\n      <td>TGTAAAACAGCACGTCATCCTT</td>\n    </tr>\n    <tr>\n      <td>ESRRB_for</td>\n      <td>ATCAAGTGCGAGTACATGCTC</td>\n    </tr>\n    <tr>\n      <td>ESRRB_rev</td>\n      <td>CGCCTCCGTTTGGTGATCTC</td>\n    </tr>\n  </tbody>\n</table>\n\n### Staining and immunolabeling\n\nFor microscopy, cells were plated on Matrigel-coated glass coverslips prepared using an ultrasonic cleaning bath (Branson). In brief, coverslips were sonicated for 20 min in the presence of diluted Versa-Clear (Fisher Scientific #18-200-700) in double distilled H2O (ddH2O), washed three times using ddH2O, sonicated for 20 min in ddH2O, washed three times using ddH2O, and sterilized and stored in 70% ethanol until use. Cells were maintained for indicated times, typically 3 days, washed briefly with PBS, fixed with 4% PFA for 12 min at room temperature (RT), permeabilized with 0.1% Triton X-100 in PBS for 5 min, and incubated with blocking buffer consisting of 0.1% Triton X-100 in PBS and 1% BSA for 1 hr. Cells were then incubated with primary antibodies diluted in blocking buffer overnight at 4\u00b0C, washed with PBS three times, and incubated for 1 hr at RT with secondary antibodies, followed by a final PBS 3\u00d7 wash, with the second wash containing Hoechst 33342 (1:10,000; Molecular Probes #H-3570) to stain nuclei. To stain for actin filaments, either rhodamine phalloidin (1:400, Invitrogen #R415) or Phalloidin-iFluor 647 (1:1000, Abcam #ab176759) was added to the secondary antibody incubation. Secondary antibodies used were Alexa Fluor 488 or 594 for the appropriate species primaries (1:500, Invitrogen #A-11037). To assess proliferation, EdU staining was performed according to the manufacturer\u2019s guidelines with a 1 hr EdU pulse (Click-iT EdU Cell Proliferation Kit for Imaging, Alexa Fluor 647 dye, Fisher Scientific, #C10340).\n\n<table>\n  <thead>\n    <tr>\n      <th>Antibody</th>\n      <th>Source</th>\n      <th>Catalog number</th>\n      <th>RRID</th>\n      <th>Dilution</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>\u03b2-Catenin</td>\n      <td>BD Transduction</td>\n      <td>#610154</td>\n      <td>AB_397555</td>\n      <td>1:200 ICC</td>\n    </tr>\n    <tr>\n      <td>pMLC (Thr18/Ser19)</td>\n      <td>Cell Signaling</td>\n      <td>#3674</td>\n      <td>AB_2147464</td>\n      <td>1:200 ICC</td>\n    </tr>\n    <tr>\n      <td>pan-ERM</td>\n      <td>Cell Signaling</td>\n      <td>#3142</td>\n      <td>AB_2100313</td>\n      <td>1:400 ICC</td>\n    </tr>\n    <tr>\n      <td>Moesin</td>\n      <td>Cell Signaling</td>\n      <td>#3146</td>\n      <td>AB_2251034</td>\n      <td>1:400 ICC</td>\n    </tr>\n    <tr>\n      <td>Ezrin</td>\n      <td>Cell Signaling</td>\n      <td>#3145</td>\n      <td>AB_2100309</td>\n      <td>1:400 ICC</td>\n    </tr>\n    <tr>\n      <td>SSEA3</td>\n      <td>Santa Cruz</td>\n      <td>sc-21703</td>\n      <td>AB_628288</td>\n      <td>1:200 ICC</td>\n    </tr>\n    <tr>\n      <td>KLF4</td>\n      <td>Cell Signaling</td>\n      <td>#4038</td>\n      <td>AB_2265207</td>\n      <td>1:200 ICC</td>\n    </tr>\n    <tr>\n      <td>YAP</td>\n      <td>Sigma-Aldrich</td>\n      <td>HPA038885</td>\n      <td>AB_2676255</td>\n      <td>1:400 ICC</td>\n    </tr>\n    <tr>\n      <td>YAP</td>\n      <td>Cell Signaling</td>\n      <td>#4912</td>\n      <td>AB_2218911</td>\n      <td>1:1000 WB</td>\n    </tr>\n    <tr>\n      <td>TAZ</td>\n      <td>Sigma-Aldrich</td>\n      <td>HPA039557</td>\n      <td>AB_10672899</td>\n      <td>1:400 ICC</td>\n    </tr>\n    <tr>\n      <td>Oct3/4 (C-10)</td>\n      <td>Santa Cruz</td>\n      <td>sc-5279</td>\n      <td>AB_628051</td>\n      <td>1:400 ICC</td>\n    </tr>\n    <tr>\n      <td>Sox2</td>\n      <td>Cell Signaling</td>\n      <td>#3579</td>\n      <td>AB_2195767</td>\n      <td>1:400 ICC</td>\n    </tr>\n    <tr>\n      <td>Cortactin</td>\n      <td>Cell Signaling</td>\n      <td>#3503</td>\n      <td>AB_2115160</td>\n      <td>1:200 ICC</td>\n    </tr>\n  </tbody>\n</table>\n\n### Confocal and super-resolution image acquisition and quantification\n\nCells were imaged using an inverted microscope system (Nikon Eclipse TE2000 Perfect Focus System; Nikon Instruments) equipped with a spinning-disk confocal scanner unit (CSU10; Yokogawa), a 488 nm solid-state laser (LMM5; Spectral Applied Research), and a multipoint stage (MS-2000; Applied Scientific Instruments). A CoolSnap HQ2 cooled charge-coupled camera (Photometrics) was used to take images with a camera triggered electronic shutter controlled by NIS Elements Imaging Software (Nikon) and a 60\u00d7 Plan Apochromat TIRF 1.45 NA oil immersion objective equipped with a Borealis (Andor) to normalize illumination. High-resolution and super-resolution images were acquired using a Yokogawa CSU-W1/SoRa spinning disk confocal system (Yokogawa) and an ORCA Fusion BT sCMOS camera (Hamamatsu) using 2\u00d72 camera binning. Nuclear-to-cytoplasmic ratios of immunolabeled proteins and number of puncta per cell were quantified using NIS Elements Imaging Software (Nikon). Briefly, the fluorescence in the nucleus (detected by Hoescht) and in the cytoplasm were manually sampled by selection of regions-of-interest. Three regions-of-interest outside of any cell were used to calculate background fluorescence and was subtracted from both nuclear and cytoplasmic fluorescence values. The ratio of fluorescence was then determined by diving the nuclear fluorescence intensity with that of the cytoplasm for a given cell. Quantification of puncta for SSEA3 was done by creating a 3D projection of full-cell z-stacks by using NIS Elements Imaging Software. Surfaces were created using the 3D thresholding tool normalized across all images and the total number of puncta was recorded. The total number of cells was then counted, as determined by the number of Hoescht positive nuclei, and the number of puncta per cell was calculated by dividing the total number of puncta by the number of cells in each field of view. Percentage of positive cells for Oct4/Sox2 staining and EdU incorporation was determined by manually counting the total number of nuclei in each field of view. Oct4, Sox2, or EdU were manually counted and the total number of positive cells was divided by the total number of cells to determine the percent positive. We used IMARIS software (Oxford Instruments) to generate 3D renderings.\n\n### Traction force microscopy\n\nPolyacrylamide gels of 7.9 kPa stiffness were made by adjusting acrylamide and bisacrylamide stock solution (Bio-Rad Laboratories, Hercules, CA, USA) concentrations. A solution of 40% acrylamide, 2% bisacrylamide, and 1\u00d7 PBS was polymerized by adding tetramethylethylene diamine (Fisher BioReagents) and 1% ammonium persulfate. A droplet of the gel solution supplemented with 0.2 \u03bcm fluorescent beads solution (Molecular Probe, Fisher Scientific) was deposited on a quartz slide (Fisher Scientific) and covered with a 25 mm glass (Fisher) coverslip pretreated with 3-aminopropyltrimethoxysilane (Sigma-Aldrich) and glutaraldehyde (Sigma-Aldrich). After polymerization, the gel surface attached to the quartz slide was functionalized with Matrigel via polydopamine. The gel was sterilized and stored in 1\u00d7 PBS before cell seeding. The traction forces exerted by colonies on the polyacrylamide gel substrates were computed by measuring the displacement of fluorescent beads embedded within the gel. Briefly, images of bead motion near the substrate surface, distributed in and around the contact region of a single cell (before and after cell detachment with 10% sodium dodecyl sulfate), were acquired with Yokogawa CSU-21/Zeiss Axiovert 200 M inverted spinning disk microscope with a Zeiss LD C-Apochromat 40\u00d7, 1.1 NA water-immersion objective and an Evolve EMCCD camera (Photometrics). The traction stress vector fields were generated using an open-source package of FIJI plugins (https://sites.google.com/site/qingzongtseng/tfm).\n\n### Colony formation assay\n\nTo determine clonogenic potential, cells were dissociated with Accutase and plated on Matrigel-coated six-well dishes at a density of 1000 cells per cm (Nakamura et al., 2016) in the presence of ROCKi (10 \u00b5M). Five days after plating, cells were stained for alkaline phosphatase as per the manufacturer\u2019s protocol (StemAb Alkaline Phosphatase Staining Kit II, ReproCell #00-0055) and imaged using a Leica DFC 7000t microscope. To quantify the number of alkaline phosphatase positive colonies, images were analyzed using Fiji (Schindelin et al., 2012).\n\n### Library preparation and RNAseq\n\nRNA was extracted using RNeasy Mini kits (QIAGEN) according to the manufacturer\u2019s instructions and concentrations were determined by NanoDrop. Library preparation and RNAseq were performed by Novogene Co. Ltd (USA). Briefly, RNA purity was measured using a NanoPhotometer spectrophotometer (IMPLEN). RNA integrity and quantity were determined using a Bioanalyzer 2100 system (Agilent Technologies). Three paired biological replicate libraries were prepared for each condition, with each library generated with 1 \u00b5g of RNA per sample. Sequencing libraries were generated using NEBNext Ultra RNA Library Prep Kit for Illumina (NEB) following the manufacturer\u2019s recommendations and index codes were added to attribute sequences to each sample. Briefly, mRNA was purified from total RNA using poly-T oligo-attached magnetic beads. Fragmentation was carried out using divalent cations under elevated temperature in NEBNext First Strand Synthesis Reaction Buffer (5\u00d7). First strand cDNA was synthesized using random hexamer primer and M-MuLV Reverse Transcriptase (RNase H-). Second strand cDNA synthesis was subsequently performed using DNA Polymerase I and RNase H. Remaining overhangs were converted into blunt ends via exonuclease/polymerase activities. After adenylation of 3\u2019 ends of DNA fragments, NEBNext Adaptor with hairpin loop structure were ligated to prepare for hybridization. In order to select cDNA fragments of preferentially 150\u2013200 bp in length, the library fragments were purified with AMPure XP system (Beckman Coulter, Beverly, MA, USA). Then 3 \u00b5L USER Enzyme (NEB, USA) was used with size-selected, adaptor-ligated cDNA at 37\u00b0C for 15 min followed by 5 min at 95\u00b0C before PCR. Then PCR was performed with Phusion High-Fidelity DNA polymerase, Universal PCR primers, and Index (X) Primer. At last, PCR products were purified (AMPure XP system) and library quality was assessed on the Agilent Bioanalyzer 2100 system.\n\n### RNAseq analysis\n\nRaw data (raw reads) were processed through fastp to remove adapters, poly-N sequences, and reads with low quality. Q20, Q30, and GC content of the clean data were calculated and found to be within the normal range. All the downstream analyses were based on the clean data with high quality. Reference genome (ID: 51) and gene model annotation files were downloaded from genome website browser (NCBI) directly. Paired-end clean reads were aligned to the reference genome using the Spliced Transcripts Alignment to a Reference (STAR) software. FeatureCounts was used to count the read numbers mapped of each gene. And then RPKM of each gene was calculated based on the length of the gene and reads count mapped to this gene. Differential expression analysis was performed using DESeq2 R package. The resulting p values were adjusted using the Benjamini and Hochberg\u2019s approach for controlling the FDR. Genes with a padj<0.05 found by DESeq2 were assigned as differentially expressed. The R package clusterProfiler was used to test the statistical enrichment of differential expression genes in KEGG pathways. KEGG terms with padj<0.05 were considered significant enrichment. Transcription factor binding motif analysis was performed using Enrichr (Chen et al., 2013; Kuleshov et al., 2016). To investigate YAP target gene expression, supplementary tables generated as previously described (see \u2018Supplemental Methods\u2019 in Pagliari et al., 2021 and Estar\u00e1s et al., 2017) were used to generate YAP target gene lists (Estar\u00e1s et al., 2017; Pagliari et al., 2021).\n\n### Plasmids, site-directed mutagenesis, and generation of lentivirus\n\npGAMA-YAP was a gift from Miguel Ramalho-Santos (Addgene plasmid #74942). Site-directed mutagenesis was performed on the pGAMA-YAP construct to create p-GAMA-YAP-S127A using the QuikChange Lightning kit (Agilent Technologies #210513). Forward primers used for the Ser-to-Ala substitution were as follows: 5\u2032-GTTCGAGCTCATGCCTCTCCAGC-3\u2032 and 5\u2019-GCTGGAGAGGCATGAGCTCGAAC-3\u2019. The pGAMA-YAP-S127A plasmid was confirmed via DNA sequencing. To prepare lentivirus, HEK293-FT (Invitrogen #R70007) cells were grown in Dulbecco\u2019s Modified Eagle Medium (Thermo Fisher #11965118) supplemented with 10% fetal bovine serum (Peak Serum #PS-FB4), non-essential amino acids (UCSF CCF #CCFGA001), pen/strep (UCSF CCF #CCFGK003), and sodium pyruvate (UCSF CCF #CCFGE001) and maintained at 37\u00b0C with 5% CO2. Lentivirus was generated according to the manufacturer\u2019s specifications by co-transfecting HEK293-FTs with a mixture of packaging plasmids (ViraPower Lentivirus Expression System; Thermo Fisher #K497500). Briefly, 5\u00d7106 HEK293-FTs were seeded onto a 10 cm dish containing 10 mL of complete medium without antibiotics. After 24 hr, cells were transfected with a mixture of 3 \u00b5g of the lentiviral plasmid containing the gene of interest and 9 \u00b5g of the ViraPower Packaging Mix using Lipofectamine 2000 (Thermo Fisher #11668030). At 72 hr post-transfection, supernatant was collected, filtered, and concentrated using Lenti-X Concentrator (Takarabio #631231). Concentrated viral supernatant was aliquoted and stored at \u201380\u00b0C.\n\nTo generate hESC lines stably expressing YAP-WT and YAP-S127A, primed HUES8 cells were grown to approximately 60% confluency in one well of a six-well plate. Medium was aspirated, washed once with PBS, and cells were then fed with 1 mL fresh media containing 2 \u00b5g of polybrene (Millipore Sigma #TR-1003-G), and incubated for 15 min at 37\u00b0C. Concentrated virus supernatant (100 \u00b5L) was added and after 6\u20138 hr 1 mL of fresh medium was added. After 36 hr, viral particles were removed by replacing medium. Three days after virus infection, hESCs were passaged and expanded to three wells in a six-well plate. After wells reached ~75% confluency, hESCs were sorted for high mCherry expression by using a BD FACS Aria3u. Sorted cells were maintained as described above with the addition of penicillin and streptomycin for 3 days, after which cells were then maintained in standard antibiotic-free mTeSR-1 media.\n\n### Western blot analysis\n\nTotal lysates were obtained from primed cells, na\u00efve cells, and cells dedifferentiated in the presence of 80 \u00b5M CK666 at day 6 which were plated on Matrigel-coated six-well plates. Cells were washed 3\u00d7 in cold PBS on ice, lysed in 100 \u00b5L/well RIPA buffer (50 mM Tris-HCl, 150 mM NaCl, 1 mM EDTA, 1% NP-40, 0.5% deoxycholate, 0.1% SDS supplemented with protease inhibitors PEFA) while rotating at 4\u00b0C for 10 min. Cells were then scrapped into microfuge tubes, and a post-nuclear supernatant was collected after centrifugation at 12,000 rpm for 5 min at 4\u00b0C. Proteins in lysates were separated by SDS-PAGE and transferred to polyvinylidene difluoride membranes. The membranes were blocked in Tris-buffered saline (TBS) containing 0.1% Tween and 5% non-fat dry milk (TBST) for 60 min at RT and incubated overnight at 4\u00b0C with antibodies in TBST containing 5% non-fat dry milk. After washing, membranes were incubated with peroxidase-conjugated secondary antibodies (Jackson ImmunoResearch Laboratories) in TBST for 1 hr at RT, and bound antibodies were developed by enhanced chemiluminescence using SuperSignal West Femto (Thermo Fisher Scientific) and imaged using an Alpha Innotech FluorChem Q (Alpha Innotech). For quantification, the average intensity of each YAP band was normalized to that of the GAPDH band in each sample.\n\n### Quantification and statistical analysis\n\nAll statistical tests and sample sizes are included in the Figure Legends and text. All data shown are mean \u00b1 SD. In all cases, p values are represented as follows: ****p<0.0001, ***p<0.001, **p<0.001, and *p<0.05. All quantifications were statistically analyzed using ANOVA with Tukey post hoc tests. Statistical analysis was performed using GraphPad Prism version 10.1.2.\n",
+      "created_at": "2025-12-04T04:55:55.522134Z"
+    },
+    {
+      "id": "0bcb079d-6688-4edf-8ec3-eabc9c784917",
+      "submission_id": "311806fe-b474-4562-910c-1d7f41ed3f71",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Valerie Horsley, https://ror.org/03v76x132 Yale University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.89725.sa0](https://doi.org/10.7554/eLife.89725.sa0)\n\nThis important work identifies a mechanism for cytoskeletal dynamics coordinating cell mechanics to regulate gene expression and facilitate transitions between pluripotency states in human embryonic stem cells. The data were collected and analyzed using convincing and validated methodology and can be used as a starting point for studies of the cell biology of embryonic stem cells.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Valerie Horsley, https://ror.org/03v76x132 Yale University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.89725.sa1](https://doi.org/10.7554/eLife.89725.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\n[Editors' note: this paper was reviewed by Review Commons.]\n",
+      "created_at": "2025-12-04T04:55:55.522134Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T04:55:55.522134Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T04:55:55.522134Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "664888ec-26cc-4325-b572-9f0d6751a0d9",
+      "content_id": "250a4d1f-5f7b-4d45-9467-309b724b81e9",
+      "claim_id": "C1",
+      "claim": "HUES8 primed hESCs were grown on Matrigel and dedifferentiated to na\u00efve pluripotency using mTeSR-based medium supplemented with MEK (PD0325901) and GSK3 (CHIR99021) inhibitors, the adenylyl cyclase activator forskolin, human leukemia inhibitory factor (LIF), basic fibroblast growth factor (bFGF), and ascorbic acid.",
+      "claim_type": "EXPLICIT",
+      "source": "HUES8 primed hESCs were grown on Matrigel and dedifferentiated to na\u00efve pluripotency using previously reported conditions in an mTeSR-based medium supplemented with MEK (PD0325901) and GSK3 (CHIR99021) inhibitors, the adenylyl cyclase activator forskolin, human leukemia inhibitory factor (LIF), basic fibroblast growth factor (bFGF), and ascorbic acid (Duggal et al., 2015; Qin et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the experimental protocol used for dedifferentiation, which is supported by citations to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:55:55.522134Z"
+    },
+    {
+      "id": "b66b11e2-65c8-40fb-92ec-c4672938116c",
+      "content_id": "250a4d1f-5f7b-4d45-9467-309b724b81e9",
+      "claim_id": "C2",
+      "claim": "Treatment with dedifferentiation medium induced colonies to develop a prominent dome-shape by day 6 of dedifferentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that this treatment induced colonies to develop a prominent dome-shape by day 6 of dedifferentiation and increase expression of na\u00efve pluripotency markers DNMT3L, DPPA3, KLF2, and KLF4, as determined by rt-PCR (Figure 1A and B), which confirms the transition to a na\u00efve state.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental observations and referenced to Figure 1A and B showing morphological changes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:55:55.522134Z"
+    },
+    {
+      "id": "087bba23-a79a-4ed4-8ebe-eef7766b75e1",
+      "content_id": "250a4d1f-5f7b-4d45-9467-309b724b81e9",
+      "claim_id": "C3",
+      "claim": "Treatment with dedifferentiation medium increased expression of na\u00efve pluripotency markers DNMT3L, DPPA3, KLF2, and KLF4, as determined by rt-PCR.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that this treatment induced colonies to develop a prominent dome-shape by day 6 of dedifferentiation and increase expression of na\u00efve pluripotency markers DNMT3L, DPPA3, KLF2, and KLF4, as determined by rt-PCR (Figure 1A and B), which confirms the transition to a na\u00efve state.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by rt-PCR data showing increased expression of specific markers, as shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:55:55.522134Z"
+    },
+    {
+      "id": "f6d10d92-7ab7-4a09-b876-0eddf26438c5",
+      "content_id": "250a4d1f-5f7b-4d45-9467-309b724b81e9",
+      "claim_id": "C4",
+      "claim": "Na\u00efve but not primed colonies had a ring of bundled actin filaments at the colony periphery.",
+      "claim_type": "EXPLICIT",
+      "source": "Staining fixed cells for actin filaments with phalloidin revealed that na\u00efve but not primed colonies had a ring of bundled actin filaments at the colony periphery (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by phalloidin staining data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:55:55.522134Z"
+    },
+    {
+      "id": "1f7b3859-8921-426e-801a-99d8a3855873",
+      "content_id": "250a4d1f-5f7b-4d45-9467-309b724b81e9",
+      "claim_id": "C5",
+      "claim": "A similar actin ring formed around colonies of na\u00efve H9 cells and na\u00efve WTC11 induced PSCs (iPSCs).",
+      "claim_type": "EXPLICIT",
+      "source": "A similar actin ring also formed around colonies of na\u00efve H9 cells and na\u00efve WTC11 induced PSCs (iPSCs) (Figure 1\u2014figure supplement 1A) as well as HUES8 cells dedifferentiated by alternative medium supplements (Figure 1\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by imaging data from multiple cell lines shown in Figure 1\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:55:55.522134Z"
+    },
+    {
+      "id": "7eb3132f-b53a-48e1-9124-ccde4a124a24",
+      "content_id": "250a4d1f-5f7b-4d45-9467-309b724b81e9",
+      "claim_id": "C6",
+      "claim": "The actin ring assembled independently of na\u00efve colony size.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the actin ring assembled independently of na\u00efve colony size (Figure 1\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by imaging data showing actin rings in colonies of different sizes, as shown in Figure 1\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:55:55.522134Z"
+    },
+    {
+      "id": "62787de8-f9ce-4ddd-98b6-81c1045a7002",
+      "content_id": "250a4d1f-5f7b-4d45-9467-309b724b81e9",
+      "claim_id": "C7",
+      "claim": "The actin filament ring around na\u00efve hESC colonies was tethered to adherens junctions, as indicated by co-labeling for \u03b2-catenin.",
+      "claim_type": "EXPLICIT",
+      "source": "The actin filament ring we observed around na\u00efve hESC colonies was instead tethered to adherens junctions, as indicated by co-labeling for \u03b2-catenin, with separated interdigitated adherens junctions suggesting a contractile force (Figure 1D, crosshairs).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by immunolabeling data showing co-localization of actin and \u03b2-catenin, as shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:55:55.522134Z"
+    },
+    {
+      "id": "5a0e0b65-76af-4fc3-928d-e99e63a3b0af",
+      "content_id": "250a4d1f-5f7b-4d45-9467-309b724b81e9",
+      "claim_id": "C8",
+      "claim": "Separated interdigitated adherens junctions suggest a contractile force in na\u00efve hESC colonies.",
+      "claim_type": "EXPLICIT",
+      "source": "The actin filament ring we observed around na\u00efve hESC colonies was instead tethered to adherens junctions, as indicated by co-labeling for \u03b2-catenin, with separated interdigitated adherens junctions suggesting a contractile force (Figure 1D, crosshairs).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on morphological observations from imaging data in Figure 1D.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:55:55.522134Z"
+    },
+    {
+      "id": "df276921-d69f-468a-89c6-23bbcbad27ad",
+      "content_id": "250a4d1f-5f7b-4d45-9467-309b724b81e9",
+      "claim_id": "C9",
+      "claim": "The actin ring around na\u00efve hESC colonies was decorated with phosphorylated myosin light chain (pMLC).",
+      "claim_type": "EXPLICIT",
+      "source": "The contractile property of the ring was also suggested by the actin ring around na\u00efve hESC colonies being decorated with pMLC as determined by immunolabeling (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by immunolabeling data showing pMLC localization, as shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:55:55.522134Z"
+    },
+    {
+      "id": "2a7523f7-8dad-4372-ac0a-34668578f05a",
+      "content_id": "250a4d1f-5f7b-4d45-9467-309b724b81e9",
+      "claim_id": "C10",
+      "claim": "Primed hESC colonies had irregular aggregates of pMLC with limited co-localization with actin filaments.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, primed hESC colonies had irregular aggregates of pMLC with limited co-localization with actin filaments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by immunolabeling data comparing primed and na\u00efve cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:55:55.522134Z"
+    },
+    {
+      "id": "ef94a487-74b6-40ff-a79f-88d1166fc6c4",
+      "content_id": "250a4d1f-5f7b-4d45-9467-309b724b81e9",
+      "claim_id": "C11",
+      "claim": "Immunolabeling for cortactin partly overlapped with the actin ring in na\u00efve hESC colonies.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, immunolabeling for cortactin, a regulator of cortical branched actin filaments, partly overlapped with the actin ring (Figure 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by immunolabeling data showing cortactin localization, as shown in Figure 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:55:55.522134Z"
+    },
+    {
+      "id": "be05ae80-6902-4522-8586-5c55fe80b4c0",
+      "content_id": "250a4d1f-5f7b-4d45-9467-309b724b81e9",
+      "claim_id": "C12",
+      "claim": "The actin ring is likely composed of unbranched actin filaments, which bind pMLC, and branched filaments, which bind cortactin.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these data indicate a contractile actin ring surrounding na\u00efve but not primed hESC colonies, with the ring likely composed of unbranched actin filaments, which bind pMLC, and branched filaments, which bind cortactin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the co-localization data of pMLC and cortactin with actin filaments, drawing on established knowledge about actin-binding proteins.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:55:55.522134Z"
+    },
+    {
+      "id": "a5591079-c441-4e4c-8172-6335c741a29b",
+      "content_id": "250a4d1f-5f7b-4d45-9467-309b724b81e9",
+      "claim_id": "C13",
+      "claim": "Primed colonies exhibited elevated cell-substrate tractions that were distributed throughout the colony.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with pMLC localization, primed colonies exhibited elevated cell-substrate tractions that were distributed throughout the colony (Figure 1G, left; Figure 1\u2014figure supplement 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by traction force microscopy data shown in Figure 1G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:55:55.522134Z"
+    },
+    {
+      "id": "d9701578-a99f-42e6-b460-533779e2bb41",
+      "content_id": "250a4d1f-5f7b-4d45-9467-309b724b81e9",
+      "claim_id": "C14",
+      "claim": "Na\u00efve colonies exhibited overall low magnitude cell-substrate tractions that were localized to the colony periphery and largely absent from the colony interior.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, na\u00efve colonies exhibited overall low magnitude cell-substrate tractions that were localized to the colony periphery and largely absent from the colony interior (Figure 1G, right; Figure 1\u2014figure supplement 1E), suggesting decreased cell-substrate tensional force and a likely shift to more stabilized cell-cell forces.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by traction force microscopy data shown in Figure 1G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:55:55.522134Z"
+    },
+    {
+      "id": "2500127f-25d8-445d-b361-bb9601a2fb28",
+      "content_id": "250a4d1f-5f7b-4d45-9467-309b724b81e9",
+      "claim_id": "C15",
+      "claim": "Low traction forces in na\u00efve colonies suggest decreased cell-substrate tensional force and a likely shift to more stabilized cell-cell forces.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, na\u00efve colonies exhibited overall low magnitude cell-substrate tractions that were localized to the colony periphery and largely absent from the colony interior (Figure 1G, right; Figure 1\u2014figure supplement 1E), suggesting decreased cell-substrate tensional force and a likely shift to more stabilized cell-cell forces.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is inferred from traction force microscopy data and pMLC localization patterns.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:55:55.522134Z"
+    },
+    {
+      "id": "dbedc8ba-0277-456a-b877-e8af117f3faf",
+      "content_id": "250a4d1f-5f7b-4d45-9467-309b724b81e9",
+      "claim_id": "C16",
+      "claim": "The actin ring assembled when na\u00efve cells are generated in the presence of SMIFH2, a broad-spectrum inhibitor of formin activity.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the actin ring assembled when na\u00efve cells are generated in the presence of SMIFH2, a broad-spectrum inhibitor of formin activity (Rizvi et al., 2009; Ganguly et al., 2015) but not CK666, a selective pharmacological inhibitor of Arp2/3 complex activity (Nolen et al., 2009; Yang et al., 2012 ; Figure 2A), despite the ring likely being composed of both unbranched and branched actin filaments as indicated by pMLC and cortactin immunolabeling.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by imaging data showing actin ring formation in the presence of SMIFH2, as shown in Figure 2A, and is supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:55:55.522134Z"
+    },
+    {
+      "id": "e4d1704a-fc9f-416a-91a4-f9cc9aef903b",
+      "content_id": "250a4d1f-5f7b-4d45-9467-309b724b81e9",
+      "claim_id": "C17",
+      "claim": "The actin ring did not assemble when na\u00efve cells are generated in the presence of CK666, a selective pharmacological inhibitor of Arp2/3 complex activity.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the actin ring assembled when na\u00efve cells are generated in the presence of SMIFH2, a broad-spectrum inhibitor of formin activity (Rizvi et al., 2009; Ganguly et al., 2015) but not CK666, a selective pharmacological inhibitor of Arp2/3 complex activity (Nolen et al., 2009; Yang et al., 2012 ; Figure 2A), despite the ring likely being composed of both unbranched and branched actin filaments as indicated by pMLC and cortactin immunolabeling.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by imaging data showing lack of actin ring formation in the presence of CK666, as shown in Figure 2A, and is supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:55:55.522134Z"
+    },
+    {
+      "id": "f7db0a42-e7de-4d9e-819b-2c45c9515ce5",
+      "content_id": "250a4d1f-5f7b-4d45-9467-309b724b81e9",
+      "claim_id": "C18",
+      "claim": "CK666 blocked increased expression of markers of na\u00efve pluripotency PECAM1, ESRRB, KLF4, and DNMT3L.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, CK666 blocked increased expression of markers of na\u00efve pluripotency seen in controls, determined by quantitative PCR (qPCR) of PECAM1, ESRRB, KLF4, and DNMT3L (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by qPCR data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:55:55.522134Z"
+    },
+    {
+      "id": "93224ff8-13d2-4079-b351-a367430071a1",
+      "content_id": "250a4d1f-5f7b-4d45-9467-309b724b81e9",
+      "claim_id": "C19",
+      "claim": "CK666-treated cells remained broadly pluripotent as indicated by immunolabeling for OCT4 and SOX2.",
+      "claim_type": "EXPLICIT",
+      "source": "To eliminate the possibility that CK666 treatment led cells to exit pluripotency and differentiate, we immunolabeled for the general pluripotency markers OCT4 and SOX2 and found that CK666-treated cells remained broadly pluripotent (Figure 2\u2014figure supplement 1A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by immunolabeling data shown in Figure 2\u2014figure supplement 1A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:55:55.522134Z"
+    },
+    {
+      "id": "82939f74-e639-454f-898c-871eb68ac118",
+      "content_id": "250a4d1f-5f7b-4d45-9467-309b724b81e9",
+      "claim_id": "C20",
+      "claim": "CK869, another inhibitor of Arp2/3 complex activity, blocked the formation of the actin ring without impairing pluripotency.",
+      "claim_type": "EXPLICIT",
+      "source": "To further confirm that Arp2/3 complex activity is necessary for the actin filament ring, we also treated cells with CK869, another inhibitor of Arp2/3 complex activity (Hetrick et al., 2013) . Consistent with our finding using CK666, CK869 blocked the formation of the actin ring without impairing pluripotency (Figure 2\u2014figure supplement 1A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by imaging data shown in Figure 2\u2014figure supplement 1A and B, and is supported by a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:55:55.522134Z"
+    },
+    {
+      "id": "f07dd854-154c-4727-91fb-31557a415b6c",
+      "content_id": "250a4d1f-5f7b-4d45-9467-309b724b81e9",
+      "claim_id": "C21",
+      "claim": "SSEA3 expression significantly decreased with dedifferentiation in control conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "SSEA3 expression significantly decreased with dedifferentiation in control conditions, as previously reported (Liu et al., 2017) but remained at levels similar to primed cells in the presence of CK666 (Figure 2C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by immunolabeling data shown in Figure 2C and D, and is supported by a citation to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:55:55.522134Z"
+    },
+    {
+      "id": "f81a9dc4-8e68-4be2-b949-bcea4bf31db5",
+      "content_id": "250a4d1f-5f7b-4d45-9467-309b724b81e9",
+      "claim_id": "C22",
+      "claim": "SSEA3 expression remained at levels similar to primed cells in the presence of CK666.",
+      "claim_type": "EXPLICIT",
+      "source": "SSEA3 expression significantly decreased with dedifferentiation in control conditions, as previously reported (Liu et al., 2017) but remained at levels similar to primed cells in the presence of CK666 (Figure 2C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by immunolabeling data shown in Figure 2C and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:55:55.522134Z"
+    },
+    {
+      "id": "2e651844-1121-4fd0-be15-391c9974e69a",
+      "content_id": "250a4d1f-5f7b-4d45-9467-309b724b81e9",
+      "claim_id": "C23",
+      "claim": "The na\u00efve pluripotency marker KLF4 translocated from the cytoplasm to the nucleus with control dedifferentiation but not in the presence of CK666.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, the na\u00efve pluripotency marker KLF4 (Takashima et al., 2014) translocated from the cytoplasm to the nucleus with control dedifferentiation but not in the presence of CK666 (Figure 2C and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by immunolabeling data shown in Figure 2C and E, and is supported by a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:55:55.522134Z"
+    },
+    {
+      "id": "8ab32160-31b8-470d-8dc6-04562214c7e8",
+      "content_id": "250a4d1f-5f7b-4d45-9467-309b724b81e9",
+      "claim_id": "C24",
+      "claim": "There was no difference in EdU incorporation in the absence or presence of CK666 or CK869.",
+      "claim_type": "EXPLICIT",
+      "source": "Although branched actin filaments generated by Arp2/3 complex promote cell cycle progression and proliferation (Molinie et al., 2019), we used an EdU pulse (1 hour) to show no difference in EdU incorporation in the absence or presence of CK666 or CK869 (Figure 2\u2014figure supplement 1C), indicating that the inhibitors did not change cell proliferation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by EdU incorporation data shown in Figure 2\u2014figure supplement 1C, and is supported by a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:55:55.522134Z"
+    },
+    {
+      "id": "6cf93a0a-5a33-4a75-b9f8-6cb6bd4f65b9",
+      "content_id": "250a4d1f-5f7b-4d45-9467-309b724b81e9",
+      "claim_id": "C25",
+      "claim": "CK666 disrupted localization of cortactin around na\u00efve colonies.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with CK666 disrupting the actin filament ring, it also disrupted localization of cortactin around na\u00efve colonies (Figure 2\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by immunolabeling data shown in Figure 2\u2014figure supplement 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:55:55.522134Z"
+    },
+    {
+      "id": "85c99633-fa46-4630-8356-31e7c7abc6b5",
+      "content_id": "250a4d1f-5f7b-4d45-9467-309b724b81e9",
+      "claim_id": "C26",
+      "claim": "Colony formation was greater in na\u00efve compared with primed hESC in controls.",
+      "claim_type": "EXPLICIT",
+      "source": "In controls, colony formation was greater in na\u00efve compared with primed hESC, as previously reported (Chen et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by colony formation assay data and is supported by a citation to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:55:55.522134Z"
+    },
+    {
+      "id": "eeae511a-531c-4f89-b8ac-6348b06a25c8",
+      "content_id": "250a4d1f-5f7b-4d45-9467-309b724b81e9",
+      "claim_id": "C27",
+      "claim": "With CK666 but not CK689, an inactive analog of CK666, there was no increase in colony formation in na\u00efve compared with primed cells.",
+      "claim_type": "EXPLICIT",
+      "source": "However, with CK666 but not CK689, an inactive analog of CK666, there was no increase in colony formation in na\u00efve compared with primed cells (Figure 2F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by colony formation assay data shown in Figure 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:55:55.522134Z"
+    },
+    {
+      "id": "729da20f-b0e1-46ef-b607-3e28a3500942",
+      "content_id": "250a4d1f-5f7b-4d45-9467-309b724b81e9",
+      "claim_id": "C28",
+      "claim": "Elevated cell-substrate tractions throughout colonies of primed but not na\u00efve cells were retained when hESCs were dedifferentiated in the presence of CK666.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, traction force microscopy revealed that elevated cell-substrate tractions throughout colonies of primed but not na\u00efve cells (Figure 1G) were retained when hESCs were dedifferentiated in the presence of CK666 (Figure 2G; Figure 2\u2014figure supplement 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by traction force microscopy data shown in Figure 2G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:55:55.522134Z"
+    },
+    {
+      "id": "e475c219-deb1-4cae-818a-e325ffd4f38f",
+      "content_id": "250a4d1f-5f7b-4d45-9467-309b724b81e9",
+      "claim_id": "C29",
+      "claim": "Arp2/3 complex activity is essential for promoting an actin filament ring and uniform na\u00efve colony mechanics.",
+      "claim_type": "EXPLICIT",
+      "source": "These data identify an essential role for the Arp2/3 complex in promoting an actin filament ring and uniform na\u00efve colony mechanics as well as acquiring a na\u00efve pluripotent state in hESCs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the collective experimental data showing effects of Arp2/3 inhibition on actin ring formation and colony mechanics.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:55:55.522134Z"
+    },
+    {
+      "id": "ea3c4fc7-4112-42e9-810a-3ec2c7ca59f9",
+      "content_id": "250a4d1f-5f7b-4d45-9467-309b724b81e9",
+      "claim_id": "C30",
+      "claim": "Arp2/3 complex activity is essential for acquiring a na\u00efve pluripotent state in hESCs.",
+      "claim_type": "EXPLICIT",
+      "source": "These data identify an essential role for the Arp2/3 complex in promoting an actin filament ring and uniform na\u00efve colony mechanics as well as acquiring a na\u00efve pluripotent state in hESCs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the collective experimental data showing effects of Arp2/3 inhibition on na\u00efve pluripotency markers and colony formation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:55:55.522134Z"
+    },
+    {
+      "id": "f00324d4-b411-4c12-ae16-eec22c80f252",
+      "content_id": "250a4d1f-5f7b-4d45-9467-309b724b81e9",
+      "claim_id": "C31",
+      "claim": "Primed, na\u00efve, and CK666-treated cells had a total of 12,817 differentially expressed genes (DEGs) with an adjusted pval<0.05.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that primed, na\u00efve, and CK666-treated cells had a total of 12,817 differentially expressed genes (DEGs) with an adjusted pval<0.05 (false discovery rate [FDR]-corrected by Benjamini-Hochberg procedure).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by RNA-sequencing analysis data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:55:55.522134Z"
+    },
+    {
+      "id": "8332fbed-6736-4a81-be17-d53dc5ecd54e",
+      "content_id": "250a4d1f-5f7b-4d45-9467-309b724b81e9",
+      "claim_id": "C32",
+      "claim": "182 DEGs were unique to control primed cells compared with control na\u00efve cells and were not differentially expressed in CK666-treated cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Of these DEGs, 182 were unique to control primed cells compared with control na\u00efve cells and were not differentially expressed in CK666-treated cells; CK666-treated cells compared with control primed or control na\u00efve cells had 102 and 502 DEGs, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by RNA-sequencing analysis data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:55:55.522134Z"
+    },
+    {
+      "id": "84d900dc-ae84-4678-9be9-252fb93fb278",
+      "content_id": "250a4d1f-5f7b-4d45-9467-309b724b81e9",
+      "claim_id": "C33",
+      "claim": "CK666-treated cells compared with control primed or control na\u00efve cells had 102 and 502 DEGs, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Of these DEGs, 182 were unique to control primed cells compared with control na\u00efve cells and were not differentially expressed in CK666-treated cells; CK666-treated cells compared with control primed or control na\u00efve cells had 102 and 502 DEGs, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by RNA-sequencing analysis data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:55:55.522134Z"
+    },
+    {
+      "id": "5b97f729-2857-4876-9cb4-5f285f688212",
+      "content_id": "250a4d1f-5f7b-4d45-9467-309b724b81e9",
+      "claim_id": "C34",
+      "claim": "Hippo signaling was the top candidate pathway in control na\u00efve dedifferentiation identified by KEGG pathway analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "To determine the transcriptional networks involved in the dedifferentiation from primed to na\u00efve pluripotency, we identified KEGG pathways in control na\u00efve dedifferentiation which revealed Hippo signaling as the top candidate (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by KEGG pathway analysis shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:55:55.522134Z"
+    },
+    {
+      "id": "ac115cc6-0601-4658-be09-de600d207ced",
+      "content_id": "250a4d1f-5f7b-4d45-9467-309b724b81e9",
+      "claim_id": "C35",
+      "claim": "TEAD2 was one of the top candidates in transcription factor binding motif analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, transcription factor binding motif analysis revealed that one of the top candidates was TEAD2 (Figure 3C), which is a downstream effector of Hippo signaling.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by transcription factor enrichment analysis shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:55:55.522134Z"
+    },
+    {
+      "id": "f38f73a1-06bc-4bfe-9a02-41a131771989",
+      "content_id": "250a4d1f-5f7b-4d45-9467-309b724b81e9",
+      "claim_id": "C36",
+      "claim": "TEAD2 is a downstream effector of Hippo signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, transcription factor binding motif analysis revealed that one of the top candidates was TEAD2 (Figure 3C), which is a downstream effector of Hippo signaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge about the Hippo signaling pathway.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:55:55.522134Z"
+    },
+    {
+      "id": "5d173c39-b04e-4977-8b67-bc6e127c8193",
+      "content_id": "250a4d1f-5f7b-4d45-9467-309b724b81e9",
+      "claim_id": "C37",
+      "claim": "Of the 3744 YAP target genes identified in the RNAseq dataset, 3156 (84%) were not differentially expressed in any condition and 588 (16%) were enriched in one or multiple conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "For an unbiased global analysis of known YAP target genes, we used two publicly available datasets (Estar\u00e1s et al., 2017; Pagliari et al., 2021) and found that of the 3744 YAP target genes identified in our RNAseq dataset, 3156 (84%) were not differentially expressed in any condition and 588 (16%) were enriched in one or multiple conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by RNA-sequencing analysis using publicly available YAP target gene datasets.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:55:55.522134Z"
+    },
+    {
+      "id": "766f7a5c-f0f9-4670-8ee3-05b264c58982",
+      "content_id": "250a4d1f-5f7b-4d45-9467-309b724b81e9",
+      "claim_id": "C38",
+      "claim": "Of the 588 enriched YAP target genes, 174 (30%) were significantly enriched in the control na\u00efve dedifferentiation condition versus the control primed condition.",
+      "claim_type": "EXPLICIT",
+      "source": "Of those 588 enriched YAP target genes, 174 (30%) were significantly enriched in the control na\u00efve dedifferentiation condition versus the control primed condition; 407 (69%) were significantly enriched among CK666-treated dedifferentiation condition versus the control primed condition; and 7 (1%) were significantly enriched in both conditions versus the control primed condition (Figure 3D, adjusted pval>0.05).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by RNA-sequencing analysis shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:55:55.522134Z"
+    },
+    {
+      "id": "430ec9ee-9c57-4158-ab9f-aedb40032925",
+      "content_id": "250a4d1f-5f7b-4d45-9467-309b724b81e9",
+      "claim_id": "C39",
+      "claim": "407 (69%) of enriched YAP target genes were significantly enriched among CK666-treated dedifferentiation condition versus the control primed condition.",
+      "claim_type": "EXPLICIT",
+      "source": "Of those 588 enriched YAP target genes, 174 (30%) were significantly enriched in the control na\u00efve dedifferentiation condition versus the control primed condition; 407 (69%) were significantly enriched among CK666-treated dedifferentiation condition versus the control primed condition; and 7 (1%) were significantly enriched in both conditions versus the control primed condition (Figure 3D, adjusted pval>0.05).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by RNA-sequencing analysis shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:55:55.522134Z"
+    },
+    {
+      "id": "28c454e6-fd54-4171-a54d-19aeb8b29ee4",
+      "content_id": "250a4d1f-5f7b-4d45-9467-309b724b81e9",
+      "claim_id": "C40",
+      "claim": "7 (1%) of enriched YAP target genes were significantly enriched in both control na\u00efve and CK666-treated conditions versus the control primed condition.",
+      "claim_type": "EXPLICIT",
+      "source": "Of those 588 enriched YAP target genes, 174 (30%) were significantly enriched in the control na\u00efve dedifferentiation condition versus the control primed condition; 407 (69%) were significantly enriched among CK666-treated dedifferentiation condition versus the control primed condition; and 7 (1%) were significantly enriched in both conditions versus the control primed condition (Figure 3D, adjusted pval>0.05).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by RNA-sequencing analysis shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:55:55.522134Z"
+    },
+    {
+      "id": "cd9967f4-0605-4177-b8cf-6dce098e8e7b",
+      "content_id": "250a4d1f-5f7b-4d45-9467-309b724b81e9",
+      "claim_id": "C41",
+      "claim": "Known na\u00efve pluripotency markers such as OTX2, DLG2, and CRY1 were significantly upregulated in control na\u00efve condition compared with control primed condition.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the genes significantly enriched in the control na\u00efve condition compared with the control primed condition, known na\u00efve pluripotency markers such as OTX2, DLG2, and CRY1 were significantly upregulated, and these na\u00efve markers were not significantly increased in CK666-treated cells (Figure 3E, left).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by RNA-sequencing data shown in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:55:55.522134Z"
+    },
+    {
+      "id": "eb3bef79-5c04-4e83-a432-4d31fda988dc",
+      "content_id": "250a4d1f-5f7b-4d45-9467-309b724b81e9",
+      "claim_id": "C42",
+      "claim": "Na\u00efve markers OTX2, DLG2, and CRY1 were not significantly increased in CK666-treated cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the genes significantly enriched in the control na\u00efve condition compared with the control primed condition, known na\u00efve pluripotency markers such as OTX2, DLG2, and CRY1 were significantly upregulated, and these na\u00efve markers were not significantly increased in CK666-treated cells (Figure 3E, left).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by RNA-sequencing data shown in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:55:55.522134Z"
+    },
+    {
+      "id": "b306c8bc-1839-4656-aadc-798d70cc3acb",
+      "content_id": "250a4d1f-5f7b-4d45-9467-309b724b81e9",
+      "claim_id": "C43",
+      "claim": "Genes significantly enriched among both control na\u00efve and CK666-treated conditions included known YAP and Hippo targets such as ANKRD1, SLIT2, and CHD10.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, genes significantly enriched among both DEG lists included known YAP and Hippo targets such as ANKRD1, SLIT2, and CHD10 (Figure 3E, right).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by RNA-sequencing data shown in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:55:55.522134Z"
+    },
+    {
+      "id": "c71bcd21-4f09-4fa3-a24a-f7a5e452f9ee",
+      "content_id": "250a4d1f-5f7b-4d45-9467-309b724b81e9",
+      "claim_id": "C44",
+      "claim": "Genes significantly enriched among the CK666-treated condition include the negative Hippo regulator AMOT.",
+      "claim_type": "EXPLICIT",
+      "source": "Genes significantly enriched among the CK666-treated condition include the negative Hippo regulator AMOT (Zhao et al., 2011), and lineage-commitment genes such as SOX6 and SPEF2 (Figure 3E, middle).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by RNA-sequencing data shown in Figure 3E and is supported by a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:55:55.522134Z"
+    },
+    {
+      "id": "1e4d05ad-f83f-4f66-92c3-4423c53a17a5",
+      "content_id": "250a4d1f-5f7b-4d45-9467-309b724b81e9",
+      "claim_id": "C45",
+      "claim": "Genes significantly enriched among the CK666-treated condition include lineage-commitment genes such as SOX6 and SPEF2.",
+      "claim_type": "EXPLICIT",
+      "source": "Genes significantly enriched among the CK666-treated condition include the negative Hippo regulator AMOT (Zhao et al., 2011), and lineage-commitment genes such as SOX6 and SPEF2 (Figure 3E, middle).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by RNA-sequencing data shown in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:55:55.522134Z"
+    },
+    {
+      "id": "4fb1c23a-05cb-4b04-9b85-35ee373c935c",
+      "content_id": "250a4d1f-5f7b-4d45-9467-309b724b81e9",
+      "claim_id": "C46",
+      "claim": "Increased nuclear to cytoplasmic ratios of YAP with control dedifferentiation was blocked by CK666.",
+      "claim_type": "EXPLICIT",
+      "source": "To verify this prediction, we immunolabeled cells to determine YAP localization and found increased nuclear to cytoplasmic ratios of YAP (Figure 3F and G) and TAZ (Figure 3\u2014figure supplement 1A and B) with control dedifferentiation that was blocked by CK666.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by immunolabeling data shown in Figure 3F and G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:55:55.522134Z"
+    },
+    {
+      "id": "92c77e46-0d8c-46f9-adc6-5f14a14cae51",
+      "content_id": "250a4d1f-5f7b-4d45-9467-309b724b81e9",
+      "claim_id": "C47",
+      "claim": "Increased nuclear to cytoplasmic ratios of TAZ with control dedifferentiation was blocked by CK666.",
+      "claim_type": "EXPLICIT",
+      "source": "To verify this prediction, we immunolabeled cells to determine YAP localization and found increased nuclear to cytoplasmic ratios of YAP (Figure 3F and G) and TAZ (Figure 3\u2014figure supplement 1A and B) with control dedifferentiation that was blocked by CK666.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by immunolabeling data shown in Figure 3\u2014figure supplement 1A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:55:55.522134Z"
+    },
+    {
+      "id": "e4800a14-e048-4ce6-abde-0eb95421716c",
+      "content_id": "250a4d1f-5f7b-4d45-9467-309b724b81e9",
+      "claim_id": "C48",
+      "claim": "Immunoblotting total cell lysates for total YAP abundance indicated no difference between primed and na\u00efve hESCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Immunoblotting total cell lysates for total YAP abundance indicated no difference between primed and na\u00efve hESCs and a small but significant increase in hESCs treated with CK666 (Figure 3\u2014figure supplement 1C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by immunoblotting data shown in Figure 3\u2014figure supplement 1C and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:55:55.522134Z"
+    },
+    {
+      "id": "4ad36395-f018-4b22-bb3c-9f8ab4bb2077",
+      "content_id": "250a4d1f-5f7b-4d45-9467-309b724b81e9",
+      "claim_id": "C49",
+      "claim": "Immunoblotting total cell lysates for total YAP abundance indicated a small but significant increase in hESCs treated with CK666.",
+      "claim_type": "EXPLICIT",
+      "source": "Immunoblotting total cell lysates for total YAP abundance indicated no difference between primed and na\u00efve hESCs and a small but significant increase in hESCs treated with CK666 (Figure 3\u2014figure supplement 1C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by immunoblotting data shown in Figure 3\u2014figure supplement 1C and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:55:55.522134Z"
+    },
+    {
+      "id": "711315fc-4bdb-4dde-b10b-efc848ed1545",
+      "content_id": "250a4d1f-5f7b-4d45-9467-309b724b81e9",
+      "claim_id": "C50",
+      "claim": "Actin filaments and associated proteins generate mechanical forces during preimplantation development that contribute to differentiation throughout the blastocyst stage by modulating mechanosensitive pathways such as Hippo.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with our findings, actin filaments and associated proteins generate mechanical forces during preimplantation development that contribute to differentiation throughout the blastocyst stage by modulating mechanosensitive pathways such as Hippo (Hirate et al., 2015; Zenker et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:55:55.522134Z"
+    },
+    {
+      "id": "f727091a-b157-4d74-a244-c0e8c55857e3",
+      "content_id": "250a4d1f-5f7b-4d45-9467-309b724b81e9",
+      "claim_id": "C51",
+      "claim": "Actin structures allow cells within the developing blastocyst to organize based on contractility, coupling mechanosensing, and fate specification.",
+      "claim_type": "EXPLICIT",
+      "source": "These actin structures allow cells within the developing blastocyst to organize based on contractility, coupling mechanosensing, and fate specification (Ma\u00eetre et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:55:55.522134Z"
+    },
+    {
+      "id": "ba42234b-2f62-44a6-9aac-9180e4d1aa8b",
+      "content_id": "250a4d1f-5f7b-4d45-9467-309b724b81e9",
+      "claim_id": "C52",
+      "claim": "Expression of YAP-S127A in the presence of CK666 restored increased nuclear localization of KLF4.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, we found that that expression of YAP-S127A in the presence of CK666 restored two markers of the na\u00efve state, increased nuclear localization of KLF4 (Figure 4A and B) and decreased SSEA3 (Figure 4C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by immunolabeling data shown in Figure 4A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:55:55.522134Z"
+    },
+    {
+      "id": "9beab77c-f05d-4385-923a-6bb23116611d",
+      "content_id": "250a4d1f-5f7b-4d45-9467-309b724b81e9",
+      "claim_id": "C53",
+      "claim": "Expression of YAP-S127A in the presence of CK666 restored decreased SSEA3.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, we found that that expression of YAP-S127A in the presence of CK666 restored two markers of the na\u00efve state, increased nuclear localization of KLF4 (Figure 4A and B) and decreased SSEA3 (Figure 4C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by immunolabeling data shown in Figure 4C and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:55:55.522134Z"
+    },
+    {
+      "id": "9c633901-5231-4ac1-8dda-09012cf8547f",
+      "content_id": "250a4d1f-5f7b-4d45-9467-309b724b81e9",
+      "claim_id": "C54",
+      "claim": "Acquisition of a na\u00efve pluripotency state remained blocked with CK666 treatment in cells overexpressing wildtype YAP (YAP-WT).",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, acquisition of a na\u00efve pluripotency state remained blocked with CK666 treatment in cells overexpressing wildtype YAP (YAP-WT) (Figure 4A\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by immunolabeling data shown in Figure 4A-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:55:55.522134Z"
+    },
+    {
+      "id": "a90b1e47-b8d4-469b-8698-62eb2d081267",
+      "content_id": "250a4d1f-5f7b-4d45-9467-309b724b81e9",
+      "claim_id": "C55",
+      "claim": "Colony formation was restored by heterologous expression of YAP-S127A but not YAP-WT in the presence of CK666.",
+      "claim_type": "EXPLICIT",
+      "source": "Colony formation, a functional form of na\u00efve pluripotency, was also restored by heterologous expression of YAP-S127A but not YAP-WT in the presence of CK666 (Figure 4E), indicating that Arp2/3 complex activity is necessary for active nuclear-localized YAP to induce a na\u00efve pluripotency state.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by colony formation assay data shown in Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:55:55.522134Z"
+    },
+    {
+      "id": "ebf448db-7dfd-41cf-9d40-bce04882434a",
+      "content_id": "250a4d1f-5f7b-4d45-9467-309b724b81e9",
+      "claim_id": "C56",
+      "claim": "Arp2/3 complex activity is necessary for active nuclear-localized YAP to induce a na\u00efve pluripotency state.",
+      "claim_type": "EXPLICIT",
+      "source": "Colony formation, a functional form of na\u00efve pluripotency, was also restored by heterologous expression of YAP-S127A but not YAP-WT in the presence of CK666 (Figure 4E), indicating that Arp2/3 complex activity is necessary for active nuclear-localized YAP to induce a na\u00efve pluripotency state.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is inferred from the rescue experiment showing that constitutively active YAP restores na\u00efve pluripotency when Arp2/3 is inhibited.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:55:55.522134Z"
+    },
+    {
+      "id": "904a41ce-268e-4156-87eb-9ae593a47daf",
+      "content_id": "250a4d1f-5f7b-4d45-9467-309b724b81e9",
+      "claim_id": "C57",
+      "claim": "Expressing YAP-S127A but not YAP-WT in the presence of CK666 partially restored a contractile actin ring enclosing na\u00efve cell colonies.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we found that expressing YAP-S127A but not YAP-WT in the presence of CK666 partially restored a contractile actin ring enclosing na\u00efve cell colonies (Figure 4F), indicating bidirectional signaling between actin filament remodeling and active nuclear-localized YAP for assembly of the actin filament ring around na\u00efve hESC colonies.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by immunolabeling data shown in Figure 4F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:55:55.522134Z"
+    },
+    {
+      "id": "48765063-b209-4f51-8d66-7d3fb442da8e",
+      "content_id": "250a4d1f-5f7b-4d45-9467-309b724b81e9",
+      "claim_id": "C58",
+      "claim": "There is bidirectional signaling between actin filament remodeling and active nuclear-localized YAP for assembly of the actin filament ring around na\u00efve hESC colonies.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we found that expressing YAP-S127A but not YAP-WT in the presence of CK666 partially restored a contractile actin ring enclosing na\u00efve cell colonies (Figure 4F), indicating bidirectional signaling between actin filament remodeling and active nuclear-localized YAP for assembly of the actin filament ring around na\u00efve hESC colonies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the observation that YAP-S127A can partially restore the actin ring when Arp2/3 is inhibited, suggesting YAP acts downstream of actin remodeling but also feeds back to regulate it.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:55:55.522134Z"
+    },
+    {
+      "id": "73a24d8e-2a6b-4a62-b086-cd559854bd48",
+      "content_id": "250a4d1f-5f7b-4d45-9467-309b724b81e9",
+      "claim_id": "C59",
+      "claim": "The transition from primed to na\u00efve hESC pluripotency includes an Arp2/3 complex-dependent actin filament remodeling that enables active nuclear-localized YAP.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we conclude that both the transition from primed to na\u00efve hESC pluripotency includes an Arp2/3 complex-dependent actin filament remodeling that enables active nuclear-localized YAP, and that nuclear-localized YAP enables actin filament remodeling for na\u00efve pluripotency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a conclusion drawn from the collective experimental data showing the relationship between Arp2/3 activity, actin remodeling, and YAP localization.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:55:55.522134Z"
+    },
+    {
+      "id": "a68ec42a-c212-44a5-9436-1a2b1c43ef94",
+      "content_id": "250a4d1f-5f7b-4d45-9467-309b724b81e9",
+      "claim_id": "C60",
+      "claim": "Nuclear-localized YAP enables actin filament remodeling for na\u00efve pluripotency.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we conclude that both the transition from primed to na\u00efve hESC pluripotency includes an Arp2/3 complex-dependent actin filament remodeling that enables active nuclear-localized YAP, and that nuclear-localized YAP enables actin filament remodeling for na\u00efve pluripotency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a conclusion drawn from the collective experimental data showing that YAP-S127A can partially restore actin ring formation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:55:55.522134Z"
+    },
+    {
+      "id": "c80ca3ea-37b9-4c57-aa13-5f5601d983a7",
+      "content_id": "250a4d1f-5f7b-4d45-9467-309b724b81e9",
+      "claim_id": "C61",
+      "claim": "Na\u00efve pluripotency is characterized by an Arp2/3 complex-dependent remodeling of the actin cytoskeleton that includes formation of a contractile actin ring enclosing na\u00efve colonies.",
+      "claim_type": "EXPLICIT",
+      "source": "Our new findings support a model in which na\u00efve pluripotency is characterized by an Arp2/3 complex-dependent remodeling of the actin cytoskeleton that includes formation of a contractile actin ring enclosing na\u00efve colonies and establishment of uniform tensional forces in colonies likely enabled by the actin ring being physically associated with \u03b2-catenin and pMLC, which are known to play roles in pluripotency (Xu et al., 2016; De Belly et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a summary of the findings supported by the experimental data and citations to previous work.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:55:55.522134Z"
+    },
+    {
+      "id": "faf88bf2-57ad-4cac-b916-cedc436a689c",
+      "content_id": "250a4d1f-5f7b-4d45-9467-309b724b81e9",
+      "claim_id": "C62",
+      "claim": "Na\u00efve pluripotency is characterized by establishment of uniform tensional forces in colonies likely enabled by the actin ring being physically associated with \u03b2-catenin and pMLC.",
+      "claim_type": "EXPLICIT",
+      "source": "Our new findings support a model in which na\u00efve pluripotency is characterized by an Arp2/3 complex-dependent remodeling of the actin cytoskeleton that includes formation of a contractile actin ring enclosing na\u00efve colonies and establishment of uniform tensional forces in colonies likely enabled by the actin ring being physically associated with \u03b2-catenin and pMLC, which are known to play roles in pluripotency (Xu et al., 2016; De Belly et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the traction force microscopy data and immunolabeling showing co-localization of actin with \u03b2-catenin and pMLC, supported by citations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:55:55.522134Z"
+    },
+    {
+      "id": "f5348b90-c039-40fc-85e4-5e06ad80e8cc",
+      "content_id": "250a4d1f-5f7b-4d45-9467-309b724b81e9",
+      "claim_id": "C63",
+      "claim": "\u03b2-catenin and pMLC are known to play roles in pluripotency.",
+      "claim_type": "EXPLICIT",
+      "source": "Our new findings support a model in which na\u00efve pluripotency is characterized by an Arp2/3 complex-dependent remodeling of the actin cytoskeleton that includes formation of a contractile actin ring enclosing na\u00efve colonies and establishment of uniform tensional forces in colonies likely enabled by the actin ring being physically associated with \u03b2-catenin and pMLC, which are known to play roles in pluripotency (Xu et al., 2016; De Belly et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:55:55.522134Z"
+    },
+    {
+      "id": "640e86e0-cdd8-437e-9a1d-4b974c9a594a",
+      "content_id": "250a4d1f-5f7b-4d45-9467-309b724b81e9",
+      "claim_id": "C64",
+      "claim": "Arp2/3 activity facilitates dedifferentiation to a na\u00efve state of pluripotency through promoting nuclear translocation of YAP and regulating Hippo target gene expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, Arp2/3 activity facilitates dedifferentiation to a na\u00efve state of pluripotency through promoting nuclear translocation of YAP and regulating Hippo target gene expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a summary of the findings supported by the experimental data on YAP localization and RNA-sequencing analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:55:55.522134Z"
+    },
+    {
+      "id": "4c0eafa8-ce11-49c3-9ef5-0f1baccbf0f7",
+      "content_id": "250a4d1f-5f7b-4d45-9467-309b724b81e9",
+      "claim_id": "C65",
+      "claim": "The transition to na\u00efve pluripotency is blocked with inhibiting Arp2/3 complex activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with these findings, whereas the transition to na\u00efve pluripotency is blocked with inhibiting Arp2/3 complex activity, this transition is restored by expression of a constitutively active, nuclear-localized YAP-S127A.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the experimental data showing effects of CK666 on na\u00efve pluripotency markers.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:55:55.522134Z"
+    },
+    {
+      "id": "f55ea1dd-be76-450f-8812-7d24c1c466ed",
+      "content_id": "250a4d1f-5f7b-4d45-9467-309b724b81e9",
+      "claim_id": "C66",
+      "claim": "The transition to na\u00efve pluripotency is restored by expression of a constitutively active, nuclear-localized YAP-S127A when Arp2/3 complex activity is inhibited.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with these findings, whereas the transition to na\u00efve pluripotency is blocked with inhibiting Arp2/3 complex activity, this transition is restored by expression of a constitutively active, nuclear-localized YAP-S127A.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the rescue experiment data showing YAP-S127A restores na\u00efve markers and colony formation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:55:55.522134Z"
+    },
+    {
+      "id": "dffc26ac-5363-447d-a23d-4713e809acce",
+      "content_id": "250a4d1f-5f7b-4d45-9467-309b724b81e9",
+      "claim_id": "C67",
+      "claim": "The contractile rings described are distinct from those that assemble around Xenopus neural crest cells, which function to enhance migratory capacity.",
+      "claim_type": "EXPLICIT",
+      "source": "The contractile rings we describe are distinct from those that assemble around Xenopus neural crest cells (Shellard et al., 2018), which function to enhance migratory capacity, and around colonies of iPSCs (N\u00e4rv\u00e4 et al., 2017), which function to enhance cell-substrate adhesion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous work describing different types of contractile rings.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:55:55.522134Z"
+    },
+    {
+      "id": "477d7796-2f3b-4e74-bf1a-d455cf0fb930",
+      "content_id": "250a4d1f-5f7b-4d45-9467-309b724b81e9",
+      "claim_id": "C68",
+      "claim": "The contractile rings described are distinct from those that assemble around colonies of iPSCs, which function to enhance cell-substrate adhesion.",
+      "claim_type": "EXPLICIT",
+      "source": "The contractile rings we describe are distinct from those that assemble around Xenopus neural crest cells (Shellard et al., 2018), which function to enhance migratory capacity, and around colonies of iPSCs (N\u00e4rv\u00e4 et al., 2017), which function to enhance cell-substrate adhesion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous work describing different types of contractile rings.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:55:55.522134Z"
+    },
+    {
+      "id": "dfb37087-551e-4b28-ae87-7a11991aabfe",
+      "content_id": "250a4d1f-5f7b-4d45-9467-309b724b81e9",
+      "claim_id": "C69",
+      "claim": "Induced pluripotency has long been proposed to be closer to na\u00efve pluripotency than primed stem cells as conventionally isolated and maintained.",
+      "claim_type": "EXPLICIT",
+      "source": "Induced pluripotency has long been proposed to be closer to na\u00efve pluripotency than primed stem cells as conventionally isolated and maintained (Nichols and Smith, 2009; Theunissen et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:55:55.522134Z"
+    },
+    {
+      "id": "9a0a2978-9f15-4d63-afbd-c5bc16029a36",
+      "content_id": "250a4d1f-5f7b-4d45-9467-309b724b81e9",
+      "claim_id": "C70",
+      "claim": "Cells within the ICM of mouse blastocysts exclude YAP from the nucleus.",
+      "claim_type": "EXPLICIT",
+      "source": "Cells within the ICM of mouse blastocysts exclude YAP from the nucleus whereas cells within the ICM of human blastocysts maintain nuclear YAP (Qin et al., 2016; Nishioka et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:55:55.522134Z"
+    },
+    {
+      "id": "624b5ee3-d8a3-4599-afb2-f4a40319386c",
+      "content_id": "250a4d1f-5f7b-4d45-9467-309b724b81e9",
+      "claim_id": "C71",
+      "claim": "Cells within the ICM of human blastocysts maintain nuclear YAP.",
+      "claim_type": "EXPLICIT",
+      "source": "Cells within the ICM of mouse blastocysts exclude YAP from the nucleus whereas cells within the ICM of human blastocysts maintain nuclear YAP (Qin et al., 2016; Nishioka et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:55:55.522134Z"
+    },
+    {
+      "id": "c659600c-883f-4824-b7b1-a0142d3f056e",
+      "content_id": "250a4d1f-5f7b-4d45-9467-309b724b81e9",
+      "claim_id": "C72",
+      "claim": "Murine na\u00efve PSCs have predominantly cytosolic YAP.",
+      "claim_type": "EXPLICIT",
+      "source": "This difference in YAP localization is retained in vitro, with murine na\u00efve PSCs having predominantly cytosolic YAP (Chung et al., 2016), and human na\u00efve PSCs having predominantly nuclear YAP (Figure 3F and G).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:55:55.522134Z"
+    },
+    {
+      "id": "a25150a1-41ae-474b-a5f0-26b57f548542",
+      "content_id": "250a4d1f-5f7b-4d45-9467-309b724b81e9",
+      "claim_id": "C73",
+      "claim": "Human na\u00efve PSCs have predominantly nuclear YAP.",
+      "claim_type": "EXPLICIT",
+      "source": "This difference in YAP localization is retained in vitro, with murine na\u00efve PSCs having predominantly cytosolic YAP (Chung et al., 2016), and human na\u00efve PSCs having predominantly nuclear YAP (Figure 3F and G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by immunolabeling data shown in Figure 3F and G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:55:55.522134Z"
+    },
+    {
+      "id": "d8db9097-4b39-4c92-b88e-d57decd94c69",
+      "content_id": "250a4d1f-5f7b-4d45-9467-309b724b81e9",
+      "claim_id": "C74",
+      "claim": "YAP localization is reported to be regulated by stability of the actin cytoskeleton and contractility, as well as various mechanical regulators.",
+      "claim_type": "EXPLICIT",
+      "source": "How this difference in YAP localization occurs between mouse and human is unknown, although YAP localization is reported to be regulated by stability of the actin cytoskeleton and contractility, as well as various mechanical regulators (Furukawa et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:55:55.522134Z"
+    },
+    {
+      "id": "b2b9e40e-3687-49bf-9a29-e9c49be02388",
+      "content_id": "250a4d1f-5f7b-4d45-9467-309b724b81e9",
+      "claim_id": "C75",
+      "claim": "Cells located at the colony edge of primed hESCs have distinct cytoskeletal dynamics and are uniquely poised to exit pluripotency and differentiate.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, cells located at the colony edge of primed hESCs have distinct cytoskeletal dynamics and are uniquely poised to exit pluripotency and differentiate (Rosowski et al., 2015 ; Kim et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:55:55.522134Z"
+    },
+    {
+      "id": "6ed6ad39-8723-4ad7-adc7-3925c6e2eacb",
+      "content_id": "250a4d1f-5f7b-4d45-9467-309b724b81e9",
+      "claim_id": "C76",
+      "claim": "Rearrangement of the actin cytoskeleton is required for the first cell fate decision in the blastocyst.",
+      "claim_type": "EXPLICIT",
+      "source": "Positional differences in differentiation potential such as these have been proposed as a mechanism executed in early embryo symmetry breaking with rearrangement of the actin cytoskeleton being required for the first cell fate decision in the blastocyst (Skamagki et al., 2013; Chen et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:55:55.522134Z"
+    },
+    {
+      "id": "305a0368-e98f-496f-a667-44337d36058f",
+      "content_id": "250a4d1f-5f7b-4d45-9467-309b724b81e9",
+      "claim_id": "C77",
+      "claim": "The contractile actin ring at the edge of na\u00efve colonies may function as a hub for regulating cell fate dynamics through modulation of mechanosensitive signaling such as YAP and through pathways such as Hippo.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, it may be possible that the contractile actin ring we observe at the edge of na\u00efve colonies (Figure 1C) functions as a hub for regulating cell fate dynamics through similar mechanisms as first cell fate decision including modulation of mechanosensitive signaling such as YAP and through pathways such as Hippo.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is speculative, based on inference from the observed actin ring and its association with YAP signaling.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:55:55.522134Z"
+    },
+    {
+      "id": "54ac5ee7-5ba2-4de1-bde9-428a082f6094",
+      "content_id": "250a4d1f-5f7b-4d45-9467-309b724b81e9",
+      "claim_id": "C78",
+      "claim": "Arp2/3 complex activity is necessary for the differentiation of clonal mouse na\u00efve PSCs to the primed epiblast state, which is in part mediated by translocation of myocardin-related transcription factor MRTF from the cytosol to the nucleus.",
+      "claim_type": "EXPLICIT",
+      "source": "Further highlighting differences between hESCs and mESCs, we recently reported that Arp2/3 complex activity is necessary for the differentiation of clonal mouse na\u00efve PSCs to the primed epiblast state, which is in part mediated by translocation of myocardin-related transcription factor MRTF from the cytosol to the nucleus (Aloisio and Barber, 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to previous work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:55:55.522134Z"
+    },
+    {
+      "id": "ea4e6a3e-57f5-49fa-9e52-604e95acce57",
+      "content_id": "250a4d1f-5f7b-4d45-9467-309b724b81e9",
+      "claim_id": "C79",
+      "claim": "Arp2/3 complex activity may form a positive feedback loop with YAP-TEAD1 transcriptional activity controlling cytoskeletal reorganization.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, a recent report suggests that Arp2/3 complex activity may form a positive feedback loop with YAP-TEAD1 transcriptional activity controlling cytoskeletal reorganization (Pagliari et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:55:55.522134Z"
+    },
+    {
+      "id": "ad9f3bd8-bf5a-4b05-871b-1724feee6e9c",
+      "content_id": "250a4d1f-5f7b-4d45-9467-309b724b81e9",
+      "claim_id": "C80",
+      "claim": "Arp2/3 complex activity may regulate na\u00efve pluripotency at multiple stages including initially to reorganize the actin cytoskeleton, but also during maintenance of na\u00efve pluripotency through regulating YAP localization and hence activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, Arp2/3 complex activity may regulate na\u00efve pluripotency at multiple stages including initially to reorganize the actin cytoskeleton, but also during maintenance of na\u00efve pluripotency through regulating YAP localization and hence activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative, based on inference from the experimental findings and cited literature.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:55:55.522134Z"
+    },
+    {
+      "id": "82de1fe3-d4dd-46c2-a4d9-743f20f01004",
+      "content_id": "250a4d1f-5f7b-4d45-9467-309b724b81e9",
+      "claim_id": "C81",
+      "claim": "A role for contractile actin filaments as a mechanoresponsive element for pluripotency states is well established.",
+      "claim_type": "EXPLICIT",
+      "source": "A role for contractile actin filaments as a mechanoresponsive element for pluripotency states is well established (De Belly et al., 2022), and our work identifies cytoskeletal dynamics essential for uniform colony mechanics and the na\u00efve pluripotent state, the role of Arp2/3 complex activity, and YAP/TAZ activity as a promising target for reprogramming of hESCs and for regenerative medicine.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:55:55.522134Z"
+    },
+    {
+      "id": "30461808-3b31-40a8-a57b-7f81ad517f08",
+      "content_id": "250a4d1f-5f7b-4d45-9467-309b724b81e9",
+      "claim_id": "C82",
+      "claim": "This work identifies cytoskeletal dynamics essential for uniform colony mechanics and the na\u00efve pluripotent state.",
+      "claim_type": "EXPLICIT",
+      "source": "A role for contractile actin filaments as a mechanoresponsive element for pluripotency states is well established (De Belly et al., 2022), and our work identifies cytoskeletal dynamics essential for uniform colony mechanics and the na\u00efve pluripotent state, the role of Arp2/3 complex activity, and YAP/TAZ activity as a promising target for reprogramming of hESCs and for regenerative medicine.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a summary of the findings from the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:55:55.522134Z"
+    },
+    {
+      "id": "4e906336-425d-477e-b7c1-a45098638269",
+      "content_id": "250a4d1f-5f7b-4d45-9467-309b724b81e9",
+      "claim_id": "C83",
+      "claim": "YAP/TAZ activity is a promising target for reprogramming of hESCs and for regenerative medicine.",
+      "claim_type": "EXPLICIT",
+      "source": "A role for contractile actin filaments as a mechanoresponsive element for pluripotency states is well established (De Belly et al., 2022), and our work identifies cytoskeletal dynamics essential for uniform colony mechanics and the na\u00efve pluripotent state, the role of Arp2/3 complex activity, and YAP/TAZ activity as a promising target for reprogramming of hESCs and for regenerative medicine.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative, based on the implications of the findings for future applications.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:55:55.522134Z"
+    },
+    {
+      "id": "d93d7a1b-61ee-4de3-9c35-f523a7e0d34c",
+      "content_id": "250a4d1f-5f7b-4d45-9467-309b724b81e9",
+      "claim_id": "C84",
+      "claim": "Clonal mouse embryonic stem cells (mESCs) represent a ground state of pluripotency and closely recapitulate the na\u00efve blastocyst from which they are isolated.",
+      "claim_type": "EXPLICIT",
+      "source": "Clonal mouse embryonic stem cells (mESCs) represent a ground state of pluripotency and closely recapitulate the na\u00efve blastocyst from which they are isolated (Nichols and Smith, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:55:55.522134Z"
+    },
+    {
+      "id": "13584192-1c22-44fd-98c9-23ee354ae8aa",
+      "content_id": "250a4d1f-5f7b-4d45-9467-309b724b81e9",
+      "claim_id": "C85",
+      "claim": "Clonal human and other primate PSCs, as conventionally isolated and maintained, are in a primed state of pluripotency and more closely resemble the post-implantation epiblast.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, clonal human and other primate PSCs, as conventionally isolated and maintained, are in a primed state of pluripotency and more closely resemble the post-implantation epiblast (Nakamura et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:55:55.522134Z"
+    },
+    {
+      "id": "9e8f5a96-33bf-4082-b09f-97663d002a4d",
+      "content_id": "250a4d1f-5f7b-4d45-9467-309b724b81e9",
+      "claim_id": "C86",
+      "claim": "Culture conditions have been developed that dedifferentiate primed human embryonic stem cells (hESCs) to a na\u00efve state of pluripotency.",
+      "claim_type": "EXPLICIT",
+      "source": "To study the na\u00efve state of clonal human PSCs, culture conditions have been developed that dedifferentiate primed human embryonic stem cells (hESCs) to a na\u00efve state of pluripotency (Theunissen et al., 2014; Duggal et al., 2015; Takashima et al., 2014; Szczerbinska et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:55:55.522134Z"
+    },
+    {
+      "id": "cefcd559-b7e6-4107-bb35-bb93e86516dd",
+      "content_id": "250a4d1f-5f7b-4d45-9467-309b724b81e9",
+      "claim_id": "C87",
+      "claim": "Development of culture conditions that convert and sustain a na\u00efve pluripotent state in human PSCs provided an opportunity to study human development before gastrulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Development of culture conditions that convert and sustain a na\u00efve pluripotent state in human PSCs provided an opportunity to study human development before gastrulation (Rossant and Tam, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:55:55.522134Z"
+    },
+    {
+      "id": "ea9ff86f-2dd2-4be9-b64a-1bcbb08fdc47",
+      "content_id": "250a4d1f-5f7b-4d45-9467-309b724b81e9",
+      "claim_id": "C88",
+      "claim": "In vitro models of na\u00efve pluripotency provided insights into the transcriptomic, epigenetic, and proteomic programs that maintain a functional na\u00efve pluripotency state in stem cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Such in vitro models of na\u00efve pluripotency provided insights into the transcriptomic, epigenetic, and proteomic programs that maintain a functional na\u00efve pluripotency state in stem cells (Duggal et al., 2015; Warrier et al., 2017; Theunissen et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:55:55.522134Z"
+    },
+    {
+      "id": "d4891f08-7b03-408d-a36d-d31f91f9f7f5",
+      "content_id": "250a4d1f-5f7b-4d45-9467-309b724b81e9",
+      "claim_id": "C89",
+      "claim": "There is limited understanding of how established morphological changes during the transition from primed to naive states are regulated and whether morphological changes regulate state transitions.",
+      "claim_type": "EXPLICIT",
+      "source": "We have limited understanding, however, of how established morphological changes during the transition from primed to naive states are regulated and whether morphological changes regulate state transitions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an assessment of the current state of knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:55:55.522134Z"
+    },
+    {
+      "id": "100660bf-c7cb-4f25-b867-8134656f0f2c",
+      "content_id": "250a4d1f-5f7b-4d45-9467-309b724b81e9",
+      "claim_id": "C90",
+      "claim": "Remodeling of the actin cytoskeleton in response to intracellular signaling and biophysical cues is a predominant determinant for changes in cell morphology as well as for PSC fate and associated gene expression, proliferation, and differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, remodeling of the actin cytoskeleton in response to intracellular signaling and biophysical cues is a predominant determinant for changes in cell morphology as well as for PSC fate and associated gene expression, proliferation, and differentiation (Naqvi and McNamara, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:55:55.522134Z"
+    },
+    {
+      "id": "2da8c444-bad1-489e-b80c-3d0d71f5ed45",
+      "content_id": "250a4d1f-5f7b-4d45-9467-309b724b81e9",
+      "claim_id": "C91",
+      "claim": "The actin cytoskeleton coordinates changes in cell shape which are essential for developmental embryogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the actin cytoskeleton coordinates changes in cell shape which are essential for developmental embryogenesis (Chalut and Paluch, 2016), and accordingly, mechanoregulation has been studied for roles in exit from the pluripotent state toward targeted cell fates including endodermal (Chen et al., 2020), ectodermal (Keung et al., 2012), and mesodermal (Przybyla et al., 2016) lineages (Ireland and Simmons, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:55:55.522134Z"
+    },
+    {
+      "id": "a009a58b-356a-4a74-b175-82050d17ce75",
+      "content_id": "250a4d1f-5f7b-4d45-9467-309b724b81e9",
+      "claim_id": "C92",
+      "claim": "Mechanoregulation has been studied for roles in exit from the pluripotent state toward targeted cell fates including endodermal, ectodermal, and mesodermal lineages.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the actin cytoskeleton coordinates changes in cell shape which are essential for developmental embryogenesis (Chalut and Paluch, 2016), and accordingly, mechanoregulation has been studied for roles in exit from the pluripotent state toward targeted cell fates including endodermal (Chen et al., 2020), ectodermal (Keung et al., 2012), and mesodermal (Przybyla et al., 2016) lineages (Ireland and Simmons, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:55:55.522134Z"
+    },
+    {
+      "id": "c30a4f65-3b69-4d92-8cc0-b442d3c33c80",
+      "content_id": "250a4d1f-5f7b-4d45-9467-309b724b81e9",
+      "claim_id": "C93",
+      "claim": "Directly targeting actin filament dynamics has been shown to regulate PSC fate.",
+      "claim_type": "EXPLICIT",
+      "source": "Directly targeting actin filament dynamics has been shown to also regulate PSC fate (Hogrebe et al., 2020; Rosowski et al., 2015; Gerecht et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:55:55.522134Z"
+    },
+    {
+      "id": "a9b06eb2-02b3-4093-bb7e-47a11c2679a3",
+      "content_id": "250a4d1f-5f7b-4d45-9467-309b724b81e9",
+      "claim_id": "C94",
+      "claim": "Other components of the cytoskeleton, such as microtubules and intermediate filaments, have been established to modulate stem cell behavior, although studies have primarily focused on how they impact nucleus morphology and activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, other components of the cytoskeleton, such as microtubules and intermediate filaments, have been established to modulate stem cell behavior, although studies have primarily focused on how they impact nucleus morphology and activity (Putra et al., 2023; Romero et al., 2022; Ndiaye et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:55:55.522134Z"
+    },
+    {
+      "id": "41b0bdd7-f9ac-4fb1-ace1-387731fdc251",
+      "content_id": "250a4d1f-5f7b-4d45-9467-309b724b81e9",
+      "claim_id": "C95",
+      "claim": "\u03b2-catenin facilitates the maintenance of the na\u00efve pluripotent state in mESCs by enabling Wnt pathway activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Actin-associated proteins, including \u03b2-catenin for enabling Wnt pathway activity, facilitate the maintenance of the na\u00efve pluripotent state in mESCs (De Belly et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:55:55.522134Z"
+    },
+    {
+      "id": "bbaad14b-55b4-497c-a6d6-79da73385aaf",
+      "content_id": "250a4d1f-5f7b-4d45-9467-309b724b81e9",
+      "claim_id": "C96",
+      "claim": "During murine preimplantation development, actin filaments generate mechanical forces that contribute to differentiation throughout the blastocyst stage by modulating mechanosensitive signaling pathways such as Hippo signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "During murine preimplantation development, actin filaments generate mechanical forces that contribute to differentiation throughout the blastocyst stage by modulating mechanosensitive signaling pathways such as Hippo signaling (Hirate et al., 2015; Zenker et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:55:55.522134Z"
+    },
+    {
+      "id": "4be9a36b-55d4-4c77-9c29-afcf3ce06de8",
+      "content_id": "250a4d1f-5f7b-4d45-9467-309b724b81e9",
+      "claim_id": "C97",
+      "claim": "Despite evidence that morphological changes and actin filament remodeling determine na\u00efve pluripotency during mouse development, their roles in hESC na\u00efve pluripotency remain unclear.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite evidence that morphological changes and actin filament remodeling determine na\u00efve pluripotency during mouse development, their roles in hESC na\u00efve pluripotency remain unclear.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an assessment of the current state of knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:55:55.522134Z"
+    },
+    {
+      "id": "ed6fb5c7-237c-4654-9cb8-9b603d3b2862",
+      "content_id": "250a4d1f-5f7b-4d45-9467-309b724b81e9",
+      "claim_id": "C98",
+      "claim": "Activity of the Arp2/3 complex is required for formation of the actin ring in na\u00efve hESC colonies.",
+      "claim_type": "EXPLICIT",
+      "source": "Activity of the Arp2/3 complex is required for formation of the actin ring, to establish uniform cell mechanics within na\u00efve colonies, to promote nuclear translocation of the Hippo pathway effectors YAP and TAZ, and for effective transition to na\u00efve pluripotency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a summary of the findings from the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:55:55.522134Z"
+    },
+    {
+      "id": "11c2fe85-b62a-431e-8444-9bcdda22d223",
+      "content_id": "250a4d1f-5f7b-4d45-9467-309b724b81e9",
+      "claim_id": "C99",
+      "claim": "Activity of the Arp2/3 complex is required to establish uniform cell mechanics within na\u00efve colonies.",
+      "claim_type": "EXPLICIT",
+      "source": "Activity of the Arp2/3 complex is required for formation of the actin ring, to establish uniform cell mechanics within na\u00efve colonies, to promote nuclear translocation of the Hippo pathway effectors YAP and TAZ, and for effective transition to na\u00efve pluripotency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a summary of the findings from the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:55:55.522134Z"
+    },
+    {
+      "id": "02b144a2-68df-4daf-81ed-dea5fe6d2799",
+      "content_id": "250a4d1f-5f7b-4d45-9467-309b724b81e9",
+      "claim_id": "C100",
+      "claim": "Activity of the Arp2/3 complex is required to promote nuclear translocation of the Hippo pathway effectors YAP and TAZ.",
+      "claim_type": "EXPLICIT",
+      "source": "Activity of the Arp2/3 complex is required for formation of the actin ring, to establish uniform cell mechanics within na\u00efve colonies, to promote nuclear translocation of the Hippo pathway effectors YAP and TAZ, and for effective transition to na\u00efve pluripotency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a summary of the findings from the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:55:55.522134Z"
+    },
+    {
+      "id": "2caa9e33-5a40-4b48-ad41-0c470f81b053",
+      "content_id": "250a4d1f-5f7b-4d45-9467-309b724b81e9",
+      "claim_id": "C101",
+      "claim": "Activity of the Arp2/3 complex is required for effective transition to na\u00efve pluripotency.",
+      "claim_type": "EXPLICIT",
+      "source": "Activity of the Arp2/3 complex is required for formation of the actin ring, to establish uniform cell mechanics within na\u00efve colonies, to promote nuclear translocation of the Hippo pathway effectors YAP and TAZ, and for effective transition to na\u00efve pluripotency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a summary of the findings from the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:55:55.522134Z"
+    },
+    {
+      "id": "f5a9b823-1865-4ca1-8686-3b8e0da85195",
+      "content_id": "250a4d1f-5f7b-4d45-9467-309b724b81e9",
+      "claim_id": "C102",
+      "claim": "RNA-sequencing analysis confirms that Arp2/3 complex activity regulates Hippo signaling in hESCs.",
+      "claim_type": "EXPLICIT",
+      "source": "RNA-sequencing analysis confirms that Arp2/3 complex activity regulates Hippo signaling in hESCs, and impaired na\u00efve pluripotency with inhibited Arp2/3 complex activity is rescued by expressing a constitutively active, nuclear-localized YAP-S127A.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by RNA-sequencing data showing enrichment of Hippo pathway genes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:55:55.522134Z"
+    },
+    {
+      "id": "5009343c-fee5-4fa7-86c9-8f4cbab26a45",
+      "content_id": "250a4d1f-5f7b-4d45-9467-309b724b81e9",
+      "claim_id": "C103",
+      "claim": "Impaired na\u00efve pluripotency with inhibited Arp2/3 complex activity is rescued by expressing a constitutively active, nuclear-localized YAP-S127A.",
+      "claim_type": "EXPLICIT",
+      "source": "RNA-sequencing analysis confirms that Arp2/3 complex activity regulates Hippo signaling in hESCs, and impaired na\u00efve pluripotency with inhibited Arp2/3 complex activity is rescued by expressing a constitutively active, nuclear-localized YAP-S127A.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by rescue experiment data showing restoration of na\u00efve markers and colony formation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:55:55.522134Z"
+    },
+    {
+      "id": "b03ce721-0277-4ef5-973f-fcbef4a845c0",
+      "content_id": "250a4d1f-5f7b-4d45-9467-309b724b81e9",
+      "claim_id": "C104",
+      "claim": "Expression of YAP-S127A partially restores the actin filament fence with Arp2/3 complex inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, expression of YAP-S127A partially restores the actin filament fence with Arp2/3 complex inhibition, suggesting that actin filament remodeling is both upstream and downstream of YAP activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by imaging data showing partial restoration of the actin ring.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:55:55.522134Z"
+    },
+    {
+      "id": "7ee8e356-9c8a-433e-9300-ed40271967fa",
+      "content_id": "250a4d1f-5f7b-4d45-9467-309b724b81e9",
+      "claim_id": "C105",
+      "claim": "Actin filament remodeling is both upstream and downstream of YAP activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, expression of YAP-S127A partially restores the actin filament fence with Arp2/3 complex inhibition, suggesting that actin filament remodeling is both upstream and downstream of YAP activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the bidirectional relationship observed between actin remodeling and YAP activity.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:55:55.522134Z"
+    },
+    {
+      "id": "36507cad-095a-46de-a274-f11db54321b4",
+      "content_id": "250a4d1f-5f7b-4d45-9467-309b724b81e9",
+      "claim_id": "C106",
+      "claim": "These findings reveal a mechanism for cytoskeletal dynamics coordinating cell mechanics to regulate gene expression and facilitate transitions between pluripotency states.",
+      "claim_type": "EXPLICIT",
+      "source": "These new findings on the cell biology of hESCs reveal a mechanism for cytoskeletal dynamics coordinating cell mechanics to regulate gene expression and facilitate transitions between pluripotency states.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a summary of the overall findings and their implications.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:55:55.522134Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "2b3d5883-9498-40f2-9ce9-127fcac472c3",
+      "content_id": "250a4d1f-5f7b-4d45-9467-309b724b81e9",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "HUES8 primed hESCs were dedifferentiated to na\u00efve pluripotency using a defined medium, resulting in dome-shaped colonies by day 6 and increased expression of na\u00efve pluripotency markers DNMT3L, DPPA3, KLF2, and KLF4.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3 describe the dedifferentiation protocol and its outcomes. The morphological changes (C2) and marker expression (C3) are supported by Figure 1A-B and rt-PCR data. The protocol (C1) is cited to previous work, providing methodological validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:55:55.522134Z"
+    },
+    {
+      "id": "0c38cf62-3399-447c-a64c-b3e63937bfb7",
+      "content_id": "250a4d1f-5f7b-4d45-9467-309b724b81e9",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Na\u00efve but not primed hESC colonies exhibit a contractile actin ring at the colony periphery, tethered to adherens junctions and decorated with pMLC and cortactin, suggesting the ring is composed of both unbranched and branched actin filaments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C12 collectively describe the actin ring structure in na\u00efve colonies. The presence of the ring (C4-C6) is supported by phalloidin staining across multiple cell lines. Co-localization with \u03b2-catenin (C7), pMLC (C9), and cortactin (C11) is shown in Figure 1D-F. The inference about filament composition (C12) is reasonable given the protein markers, though direct structural evidence is not provided.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:55:55.522134Z"
+    },
+    {
+      "id": "8f5edb14-2438-4d97-a4e9-f17748c0ba32",
+      "content_id": "250a4d1f-5f7b-4d45-9467-309b724b81e9",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Primed colonies exhibit elevated cell-substrate tractions distributed throughout the colony, while na\u00efve colonies show low magnitude tractions localized to the periphery, suggesting decreased cell-substrate tensional force and a shift to stabilized cell-cell forces in na\u00efve colonies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C15 describe traction force differences between primed and na\u00efve colonies. The data from traction force microscopy (Figure 1G) support the differential traction patterns. The interpretation about force redistribution (C15) is a reasonable inference from the data, though direct measurement of cell-cell forces is not provided.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:55:55.522134Z"
+    },
+    {
+      "id": "33d9be27-e1e6-47df-88f2-7268414d48e4",
+      "content_id": "250a4d1f-5f7b-4d45-9467-309b724b81e9",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Arp2/3 complex activity, but not formin activity, is necessary for actin ring formation, na\u00efve pluripotency marker expression, and colony mechanics. Inhibition with CK666 or CK869 blocks the transition to na\u00efve pluripotency without affecting general pluripotency or proliferation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C28 demonstrate the requirement for Arp2/3 activity using pharmacological inhibitors. The specificity is shown by comparing CK666/CK869 (Arp2/3 inhibitors) with SMIFH2 (formin inhibitor) and CK689 (inactive control). Multiple readouts (actin ring, markers, colony formation, traction forces) consistently show effects of Arp2/3 inhibition. Controls for pluripotency (C19) and proliferation (C24) address potential confounds.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:55:55.522134Z"
+    },
+    {
+      "id": "eeb6c016-75c9-4f94-a2ff-2d58cf8871d7",
+      "content_id": "250a4d1f-5f7b-4d45-9467-309b724b81e9",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Colony formation is greater in na\u00efve compared to primed hESCs in control conditions, but this increase is abolished by CK666 treatment, not by the inactive analog CK689.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C27 describe functional consequences of Arp2/3 inhibition on colony formation. The data (Figure 2F) show specificity with the inactive analog control (CK689), supporting that the effect is due to Arp2/3 inhibition rather than off-target effects.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:55:55.522134Z"
+    },
+    {
+      "id": "98420e44-ec71-4e08-9eb6-ae28419e3626",
+      "content_id": "250a4d1f-5f7b-4d45-9467-309b724b81e9",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Arp2/3 complex activity is essential for promoting an actin filament ring, uniform na\u00efve colony mechanics, and acquiring a na\u00efve pluripotent state in hESCs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C30 are summary conclusions drawn from the collective experimental data (C16-C28). The multiple lines of evidence (structural, molecular, functional) support these conclusions, though the term 'essential' is strong and based on pharmacological inhibition rather than genetic knockout.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:55:55.522134Z"
+    },
+    {
+      "id": "39eb5814-3d36-43d4-b8a4-c63853d22e01",
+      "content_id": "250a4d1f-5f7b-4d45-9467-309b724b81e9",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "RNA-sequencing analysis identified 12,817 differentially expressed genes across primed, na\u00efve, and CK666-treated conditions, with Hippo signaling and TEAD2 transcription factor binding as top candidates in na\u00efve dedifferentiation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C36 describe RNA-seq analysis results. The DEG counts (C31-C33) and pathway analysis (C34-C35) are supported by the data in Figure 3A-C. The identification of TEAD2 as a Hippo effector (C36) is established knowledge appropriately cited.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:55:55.522134Z"
+    },
+    {
+      "id": "ab484294-d655-4e14-9fb6-0494a6461842",
+      "content_id": "250a4d1f-5f7b-4d45-9467-309b724b81e9",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Analysis of YAP target genes shows differential enrichment patterns: 174 genes enriched in control na\u00efve, 407 in CK666-treated, and 7 in both conditions. Na\u00efve-specific genes include pluripotency markers (OTX2, DLG2, CRY1), while CK666-enriched genes include Hippo regulators (AMOT) and lineage-commitment genes (SOX6, SPEF2).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C45 describe YAP target gene analysis using publicly available datasets. The quantitative breakdown (C37-C40) and specific gene examples (C41-C45) are supported by Figure 3D-E. The use of published YAP target gene lists is appropriately cited, though the quality and overlap of these datasets could affect interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:55:55.522134Z"
+    },
+    {
+      "id": "174cb130-4519-4bbb-b2ec-3fd37552c395",
+      "content_id": "250a4d1f-5f7b-4d45-9467-309b724b81e9",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Nuclear to cytoplasmic ratios of YAP and TAZ increase with control dedifferentiation but are blocked by CK666. Total YAP abundance shows no difference between primed and na\u00efve cells but increases slightly with CK666 treatment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C49 describe YAP/TAZ localization and abundance. The immunofluorescence data (Figure 3F-G, Figure 3\u2014supplement 1A-B) support the localization changes. The Western blot data (Figure 3\u2014supplement 1C-D) show total YAP levels. The small increase in total YAP with CK666 (C49) is noted as significant but modest.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:55:55.522134Z"
+    },
+    {
+      "id": "762e7761-c097-4e83-b412-25d7886c09ff",
+      "content_id": "250a4d1f-5f7b-4d45-9467-309b724b81e9",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Expression of constitutively active YAP-S127A, but not wildtype YAP, rescues na\u00efve pluripotency markers (nuclear KLF4, decreased SSEA3) and colony formation in the presence of CK666, indicating that Arp2/3 activity is necessary for active nuclear-localized YAP to induce na\u00efve pluripotency.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C56 describe rescue experiments with YAP-S127A. The data (Figure 4A-E) show that constitutively active YAP can bypass the requirement for Arp2/3 activity, supporting the model that Arp2/3 acts upstream of YAP. The specificity is demonstrated by the lack of rescue with wildtype YAP (C54).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:55:55.522134Z"
+    },
+    {
+      "id": "8e3d3a10-2059-463a-9d32-1882ec6b0d42",
+      "content_id": "250a4d1f-5f7b-4d45-9467-309b724b81e9",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Expression of YAP-S127A, but not YAP-WT, partially restores the contractile actin ring in the presence of CK666, indicating bidirectional signaling between actin filament remodeling and active nuclear-localized YAP.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C58 describe partial rescue of the actin ring by YAP-S127A. The imaging data (Figure 4F) support the partial restoration. The inference of bidirectional signaling (C58) is reasonable given that YAP can restore the actin ring when Arp2/3 is inhibited, though the mechanism is not fully elucidated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:55:55.522134Z"
+    },
+    {
+      "id": "2db1b79c-382d-4e4a-91de-9f9efa71385a",
+      "content_id": "250a4d1f-5f7b-4d45-9467-309b724b81e9",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The transition from primed to na\u00efve hESC pluripotency includes Arp2/3 complex-dependent actin filament remodeling that enables active nuclear-localized YAP, and nuclear-localized YAP enables actin filament remodeling for na\u00efve pluripotency.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C60 are integrative conclusions from the experimental data. The bidirectional relationship is supported by: (1) Arp2/3 inhibition blocking YAP nuclear localization (C46), and (2) constitutively active YAP partially restoring the actin ring when Arp2/3 is inhibited (C57). This represents a well-supported mechanistic model.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:55:55.522134Z"
+    },
+    {
+      "id": "86ac354a-c3b5-4b40-9cf9-df6f83f23af4",
+      "content_id": "250a4d1f-5f7b-4d45-9467-309b724b81e9",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Na\u00efve pluripotency is characterized by Arp2/3 complex-dependent actin cytoskeleton remodeling, including formation of a contractile actin ring and establishment of uniform tensional forces, likely enabled by the actin ring's association with \u03b2-catenin and pMLC, which are known to play roles in pluripotency.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C63 summarize the structural and mechanical features of na\u00efve colonies. The actin ring formation (C61) and its association with \u03b2-catenin and pMLC (C62) are supported by imaging data. The roles of \u03b2-catenin and pMLC in pluripotency (C63) are appropriately cited to previous work.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:55:55.522134Z"
+    },
+    {
+      "id": "79a56e47-ecb2-420c-8d06-e3ba7c4f332d",
+      "content_id": "250a4d1f-5f7b-4d45-9467-309b724b81e9",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Arp2/3 activity facilitates dedifferentiation to na\u00efve pluripotency through promoting nuclear translocation of YAP and regulating Hippo target gene expression. While Arp2/3 inhibition blocks this transition, it is restored by expressing constitutively active YAP-S127A.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C66 integrate the mechanistic findings. The role of Arp2/3 in YAP localization (C64) is supported by immunofluorescence data (C46). The blocking effect of Arp2/3 inhibition (C65) and rescue by YAP-S127A (C66) are supported by multiple assays (C52-C55).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:55:55.522134Z"
+    },
+    {
+      "id": "a8772403-c859-4e42-b93c-cceadb6ca5ce",
+      "content_id": "250a4d1f-5f7b-4d45-9467-309b724b81e9",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The manuscript contextualizes findings within established knowledge about actin cytoskeleton roles in pluripotency, embryonic development, and mechanosensitive signaling, citing relevant prior work on mouse and human systems.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C96 (selected) represent citations to and summaries of prior work. These are appropriately referenced and provide context for the current findings. The accuracy of these claims depends on the cited literature, which appears to be appropriately selected.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:55:55.522134Z"
+    },
+    {
+      "id": "49b0d4bf-64e2-4630-9dc3-7f75246c9a9e",
+      "content_id": "250a4d1f-5f7b-4d45-9467-309b724b81e9",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The authors speculate that the contractile actin ring may function as a hub for regulating cell fate dynamics, that Arp2/3 may regulate na\u00efve pluripotency at multiple stages, and that YAP/TAZ activity is a promising target for hESC reprogramming and regenerative medicine.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C77, C80, and C83 are explicitly speculative or represent future directions. While these are reasonable hypotheses based on the data, they are not directly tested in the manuscript. C77 and C80 are appropriately qualified as possibilities, while C83 represents a translational implication that requires further validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:55:55.522134Z"
+    },
+    {
+      "id": "b24297e5-54a2-49c6-888e-c64c5361f3d1",
+      "content_id": "250a4d1f-5f7b-4d45-9467-309b724b81e9",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The authors identify a gap in understanding how morphological changes during primed-to-na\u00efve transitions are regulated and whether they regulate state transitions, particularly in human ESCs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C89 and C97 represent assessments of the current state of knowledge that motivate the study. These are reasonable characterizations of the field and are supported by the limited prior work on this specific question in human cells.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:55:55.522134Z"
+    },
+    {
+      "id": "9d4ce2d4-0791-40ee-8aaa-b5c03d9839ce",
+      "content_id": "250a4d1f-5f7b-4d45-9467-309b724b81e9",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The study reveals that Arp2/3 complex activity is required for actin ring formation, uniform cell mechanics, YAP/TAZ nuclear translocation, and effective transition to na\u00efve pluripotency, with actin filament remodeling acting both upstream and downstream of YAP activity to coordinate cell mechanics and gene expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C98-C106 are summary statements of the main findings. These are well-supported by the collective experimental evidence presented throughout the manuscript, including structural (actin ring), mechanical (traction forces), molecular (marker expression, YAP localization), transcriptional (RNA-seq), and functional (colony formation) data, along with rescue experiments.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:55:55.522134Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "664888ec-26cc-4325-b572-9f0d6751a0d9",
+      "result_id": "2b3d5883-9498-40f2-9ce9-127fcac472c3"
+    },
+    {
+      "claim_id": "b66b11e2-65c8-40fb-92ec-c4672938116c",
+      "result_id": "2b3d5883-9498-40f2-9ce9-127fcac472c3"
+    },
+    {
+      "claim_id": "087bba23-a79a-4ed4-8ebe-eef7766b75e1",
+      "result_id": "2b3d5883-9498-40f2-9ce9-127fcac472c3"
+    },
+    {
+      "claim_id": "f6d10d92-7ab7-4a09-b876-0eddf26438c5",
+      "result_id": "0c38cf62-3399-447c-a64c-b3e63937bfb7"
+    },
+    {
+      "claim_id": "1f7b3859-8921-426e-801a-99d8a3855873",
+      "result_id": "0c38cf62-3399-447c-a64c-b3e63937bfb7"
+    },
+    {
+      "claim_id": "7eb3132f-b53a-48e1-9124-ccde4a124a24",
+      "result_id": "0c38cf62-3399-447c-a64c-b3e63937bfb7"
+    },
+    {
+      "claim_id": "62787de8-f9ce-4ddd-98b6-81c1045a7002",
+      "result_id": "0c38cf62-3399-447c-a64c-b3e63937bfb7"
+    },
+    {
+      "claim_id": "5a0e0b65-76af-4fc3-928d-e99e63a3b0af",
+      "result_id": "0c38cf62-3399-447c-a64c-b3e63937bfb7"
+    },
+    {
+      "claim_id": "df276921-d69f-468a-89c6-23bbcbad27ad",
+      "result_id": "0c38cf62-3399-447c-a64c-b3e63937bfb7"
+    },
+    {
+      "claim_id": "2a7523f7-8dad-4372-ac0a-34668578f05a",
+      "result_id": "0c38cf62-3399-447c-a64c-b3e63937bfb7"
+    },
+    {
+      "claim_id": "ef94a487-74b6-40ff-a79f-88d1166fc6c4",
+      "result_id": "0c38cf62-3399-447c-a64c-b3e63937bfb7"
+    },
+    {
+      "claim_id": "be05ae80-6902-4522-8586-5c55fe80b4c0",
+      "result_id": "0c38cf62-3399-447c-a64c-b3e63937bfb7"
+    },
+    {
+      "claim_id": "a5591079-c441-4e4c-8172-6335c741a29b",
+      "result_id": "8f5edb14-2438-4d97-a4e9-f17748c0ba32"
+    },
+    {
+      "claim_id": "d9701578-a99f-42e6-b460-533779e2bb41",
+      "result_id": "8f5edb14-2438-4d97-a4e9-f17748c0ba32"
+    },
+    {
+      "claim_id": "2500127f-25d8-445d-b361-bb9601a2fb28",
+      "result_id": "8f5edb14-2438-4d97-a4e9-f17748c0ba32"
+    },
+    {
+      "claim_id": "dbedc8ba-0277-456a-b877-e8af117f3faf",
+      "result_id": "33d9be27-e1e6-47df-88f2-7268414d48e4"
+    },
+    {
+      "claim_id": "e4d1704a-fc9f-416a-91a4-f9cc9aef903b",
+      "result_id": "33d9be27-e1e6-47df-88f2-7268414d48e4"
+    },
+    {
+      "claim_id": "f7db0a42-e7de-4d9e-819b-2c45c9515ce5",
+      "result_id": "33d9be27-e1e6-47df-88f2-7268414d48e4"
+    },
+    {
+      "claim_id": "93224ff8-13d2-4079-b351-a367430071a1",
+      "result_id": "33d9be27-e1e6-47df-88f2-7268414d48e4"
+    },
+    {
+      "claim_id": "82939f74-e639-454f-898c-871eb68ac118",
+      "result_id": "33d9be27-e1e6-47df-88f2-7268414d48e4"
+    },
+    {
+      "claim_id": "f07dd854-154c-4727-91fb-31557a415b6c",
+      "result_id": "33d9be27-e1e6-47df-88f2-7268414d48e4"
+    },
+    {
+      "claim_id": "f81a9dc4-8e68-4be2-b949-bcea4bf31db5",
+      "result_id": "33d9be27-e1e6-47df-88f2-7268414d48e4"
+    },
+    {
+      "claim_id": "2e651844-1121-4fd0-be15-391c9974e69a",
+      "result_id": "33d9be27-e1e6-47df-88f2-7268414d48e4"
+    },
+    {
+      "claim_id": "8ab32160-31b8-470d-8dc6-04562214c7e8",
+      "result_id": "33d9be27-e1e6-47df-88f2-7268414d48e4"
+    },
+    {
+      "claim_id": "6cf93a0a-5a33-4a75-b9f8-6cb6bd4f65b9",
+      "result_id": "33d9be27-e1e6-47df-88f2-7268414d48e4"
+    },
+    {
+      "claim_id": "eeae511a-531c-4f89-b8ac-6348b06a25c8",
+      "result_id": "33d9be27-e1e6-47df-88f2-7268414d48e4"
+    },
+    {
+      "claim_id": "729da20f-b0e1-46ef-b607-3e28a3500942",
+      "result_id": "33d9be27-e1e6-47df-88f2-7268414d48e4"
+    },
+    {
+      "claim_id": "85c99633-fa46-4630-8356-31e7c7abc6b5",
+      "result_id": "eeb6c016-75c9-4f94-a2ff-2d58cf8871d7"
+    },
+    {
+      "claim_id": "eeae511a-531c-4f89-b8ac-6348b06a25c8",
+      "result_id": "eeb6c016-75c9-4f94-a2ff-2d58cf8871d7"
+    },
+    {
+      "claim_id": "e475c219-deb1-4cae-818a-e325ffd4f38f",
+      "result_id": "98420e44-ec71-4e08-9eb6-ae28419e3626"
+    },
+    {
+      "claim_id": "ea3c4fc7-4112-42e9-810a-3ec2c7ca59f9",
+      "result_id": "98420e44-ec71-4e08-9eb6-ae28419e3626"
+    },
+    {
+      "claim_id": "f00324d4-b411-4c12-ae16-eec22c80f252",
+      "result_id": "39eb5814-3d36-43d4-b8a4-c63853d22e01"
+    },
+    {
+      "claim_id": "8332fbed-6736-4a81-be17-d53dc5ecd54e",
+      "result_id": "39eb5814-3d36-43d4-b8a4-c63853d22e01"
+    },
+    {
+      "claim_id": "84d900dc-ae84-4678-9be9-252fb93fb278",
+      "result_id": "39eb5814-3d36-43d4-b8a4-c63853d22e01"
+    },
+    {
+      "claim_id": "5b97f729-2857-4876-9cb4-5f285f688212",
+      "result_id": "39eb5814-3d36-43d4-b8a4-c63853d22e01"
+    },
+    {
+      "claim_id": "ac115cc6-0601-4658-be09-de600d207ced",
+      "result_id": "39eb5814-3d36-43d4-b8a4-c63853d22e01"
+    },
+    {
+      "claim_id": "f38f73a1-06bc-4bfe-9a02-41a131771989",
+      "result_id": "39eb5814-3d36-43d4-b8a4-c63853d22e01"
+    },
+    {
+      "claim_id": "5d173c39-b04e-4977-8b67-bc6e127c8193",
+      "result_id": "ab484294-d655-4e14-9fb6-0494a6461842"
+    },
+    {
+      "claim_id": "766f7a5c-f0f9-4670-8ee3-05b264c58982",
+      "result_id": "ab484294-d655-4e14-9fb6-0494a6461842"
+    },
+    {
+      "claim_id": "430ec9ee-9c57-4158-ab9f-aedb40032925",
+      "result_id": "ab484294-d655-4e14-9fb6-0494a6461842"
+    },
+    {
+      "claim_id": "28c454e6-fd54-4171-a54d-19aeb8b29ee4",
+      "result_id": "ab484294-d655-4e14-9fb6-0494a6461842"
+    },
+    {
+      "claim_id": "cd9967f4-0605-4177-b8cf-6dce098e8e7b",
+      "result_id": "ab484294-d655-4e14-9fb6-0494a6461842"
+    },
+    {
+      "claim_id": "eb3bef79-5c04-4e83-a432-4d31fda988dc",
+      "result_id": "ab484294-d655-4e14-9fb6-0494a6461842"
+    },
+    {
+      "claim_id": "b306c8bc-1839-4656-aadc-798d70cc3acb",
+      "result_id": "ab484294-d655-4e14-9fb6-0494a6461842"
+    },
+    {
+      "claim_id": "c71bcd21-4f09-4fa3-a24a-f7a5e452f9ee",
+      "result_id": "ab484294-d655-4e14-9fb6-0494a6461842"
+    },
+    {
+      "claim_id": "1e4d05ad-f83f-4f66-92c3-4423c53a17a5",
+      "result_id": "ab484294-d655-4e14-9fb6-0494a6461842"
+    },
+    {
+      "claim_id": "4fb1c23a-05cb-4b04-9b85-35ee373c935c",
+      "result_id": "174cb130-4519-4bbb-b2ec-3fd37552c395"
+    },
+    {
+      "claim_id": "92c77e46-0d8c-46f9-adc6-5f14a14cae51",
+      "result_id": "174cb130-4519-4bbb-b2ec-3fd37552c395"
+    },
+    {
+      "claim_id": "e4800a14-e048-4ce6-abde-0eb95421716c",
+      "result_id": "174cb130-4519-4bbb-b2ec-3fd37552c395"
+    },
+    {
+      "claim_id": "4ad36395-f018-4b22-bb3c-9f8ab4bb2077",
+      "result_id": "174cb130-4519-4bbb-b2ec-3fd37552c395"
+    },
+    {
+      "claim_id": "ba42234b-2f62-44a6-9aac-9180e4d1aa8b",
+      "result_id": "762e7761-c097-4e83-b412-25d7886c09ff"
+    },
+    {
+      "claim_id": "9beab77c-f05d-4385-923a-6bb23116611d",
+      "result_id": "762e7761-c097-4e83-b412-25d7886c09ff"
+    },
+    {
+      "claim_id": "9c633901-5231-4ac1-8dda-09012cf8547f",
+      "result_id": "762e7761-c097-4e83-b412-25d7886c09ff"
+    },
+    {
+      "claim_id": "a90b1e47-b8d4-469b-8698-62eb2d081267",
+      "result_id": "762e7761-c097-4e83-b412-25d7886c09ff"
+    },
+    {
+      "claim_id": "ebf448db-7dfd-41cf-9d40-bce04882434a",
+      "result_id": "762e7761-c097-4e83-b412-25d7886c09ff"
+    },
+    {
+      "claim_id": "904a41ce-268e-4156-87eb-9ae593a47daf",
+      "result_id": "8e3d3a10-2059-463a-9d32-1882ec6b0d42"
+    },
+    {
+      "claim_id": "48765063-b209-4f51-8d66-7d3fb442da8e",
+      "result_id": "8e3d3a10-2059-463a-9d32-1882ec6b0d42"
+    },
+    {
+      "claim_id": "73a24d8e-2a6b-4a62-b086-cd559854bd48",
+      "result_id": "2db1b79c-382d-4e4a-91de-9f9efa71385a"
+    },
+    {
+      "claim_id": "a68ec42a-c212-44a5-9436-1a2b1c43ef94",
+      "result_id": "2db1b79c-382d-4e4a-91de-9f9efa71385a"
+    },
+    {
+      "claim_id": "c80ca3ea-37b9-4c57-aa13-5f5601d983a7",
+      "result_id": "86ac354a-c3b5-4b40-9cf9-df6f83f23af4"
+    },
+    {
+      "claim_id": "faf88bf2-57ad-4cac-b916-cedc436a689c",
+      "result_id": "86ac354a-c3b5-4b40-9cf9-df6f83f23af4"
+    },
+    {
+      "claim_id": "f5348b90-c039-40fc-85e4-5e06ad80e8cc",
+      "result_id": "86ac354a-c3b5-4b40-9cf9-df6f83f23af4"
+    },
+    {
+      "claim_id": "640e86e0-cdd8-437e-9a1d-4b974c9a594a",
+      "result_id": "79a56e47-ecb2-420c-8d06-e3ba7c4f332d"
+    },
+    {
+      "claim_id": "4c0eafa8-ce11-49c3-9ef5-0f1baccbf0f7",
+      "result_id": "79a56e47-ecb2-420c-8d06-e3ba7c4f332d"
+    },
+    {
+      "claim_id": "f55ea1dd-be76-450f-8812-7d24c1c466ed",
+      "result_id": "79a56e47-ecb2-420c-8d06-e3ba7c4f332d"
+    },
+    {
+      "claim_id": "711315fc-4bdb-4dde-b10b-efc848ed1545",
+      "result_id": "a8772403-c859-4e42-b93c-cceadb6ca5ce"
+    },
+    {
+      "claim_id": "f727091a-b157-4d74-a244-c0e8c55857e3",
+      "result_id": "a8772403-c859-4e42-b93c-cceadb6ca5ce"
+    },
+    {
+      "claim_id": "dffc26ac-5363-447d-a23d-4713e809acce",
+      "result_id": "a8772403-c859-4e42-b93c-cceadb6ca5ce"
+    },
+    {
+      "claim_id": "477d7796-2f3b-4e74-bf1a-d455cf0fb930",
+      "result_id": "a8772403-c859-4e42-b93c-cceadb6ca5ce"
+    },
+    {
+      "claim_id": "dfb37087-551e-4b28-ae87-7a11991aabfe",
+      "result_id": "a8772403-c859-4e42-b93c-cceadb6ca5ce"
+    },
+    {
+      "claim_id": "9a0a2978-9f15-4d63-afbd-c5bc16029a36",
+      "result_id": "a8772403-c859-4e42-b93c-cceadb6ca5ce"
+    },
+    {
+      "claim_id": "624b5ee3-d8a3-4599-afb2-f4a40319386c",
+      "result_id": "a8772403-c859-4e42-b93c-cceadb6ca5ce"
+    },
+    {
+      "claim_id": "c659600c-883f-4824-b7b1-a0142d3f056e",
+      "result_id": "a8772403-c859-4e42-b93c-cceadb6ca5ce"
+    },
+    {
+      "claim_id": "a25150a1-41ae-474b-a5f0-26b57f548542",
+      "result_id": "a8772403-c859-4e42-b93c-cceadb6ca5ce"
+    },
+    {
+      "claim_id": "d8db9097-4b39-4c92-b88e-d57decd94c69",
+      "result_id": "a8772403-c859-4e42-b93c-cceadb6ca5ce"
+    },
+    {
+      "claim_id": "b2b9e40e-3687-49bf-9a29-e9c49be02388",
+      "result_id": "a8772403-c859-4e42-b93c-cceadb6ca5ce"
+    },
+    {
+      "claim_id": "6ed6ad39-8723-4ad7-adc7-3925c6e2eacb",
+      "result_id": "a8772403-c859-4e42-b93c-cceadb6ca5ce"
+    },
+    {
+      "claim_id": "54ac5ee7-5ba2-4de1-bde9-428a082f6094",
+      "result_id": "a8772403-c859-4e42-b93c-cceadb6ca5ce"
+    },
+    {
+      "claim_id": "ea4e6a3e-57f5-49fa-9e52-604e95acce57",
+      "result_id": "a8772403-c859-4e42-b93c-cceadb6ca5ce"
+    },
+    {
+      "claim_id": "82de1fe3-d4dd-46c2-a4d9-743f20f01004",
+      "result_id": "a8772403-c859-4e42-b93c-cceadb6ca5ce"
+    },
+    {
+      "claim_id": "d93d7a1b-61ee-4de3-9c35-f523a7e0d34c",
+      "result_id": "a8772403-c859-4e42-b93c-cceadb6ca5ce"
+    },
+    {
+      "claim_id": "13584192-1c22-44fd-98c9-23ee354ae8aa",
+      "result_id": "a8772403-c859-4e42-b93c-cceadb6ca5ce"
+    },
+    {
+      "claim_id": "9e8f5a96-33bf-4082-b09f-97663d002a4d",
+      "result_id": "a8772403-c859-4e42-b93c-cceadb6ca5ce"
+    },
+    {
+      "claim_id": "cefcd559-b7e6-4107-bb35-bb93e86516dd",
+      "result_id": "a8772403-c859-4e42-b93c-cceadb6ca5ce"
+    },
+    {
+      "claim_id": "ea9ff86f-2dd2-4be9-b64a-1bcbb08fdc47",
+      "result_id": "a8772403-c859-4e42-b93c-cceadb6ca5ce"
+    },
+    {
+      "claim_id": "100660bf-c7cb-4f25-b867-8134656f0f2c",
+      "result_id": "a8772403-c859-4e42-b93c-cceadb6ca5ce"
+    },
+    {
+      "claim_id": "2da8c444-bad1-489e-b80c-3d0d71f5ed45",
+      "result_id": "a8772403-c859-4e42-b93c-cceadb6ca5ce"
+    },
+    {
+      "claim_id": "a009a58b-356a-4a74-b175-82050d17ce75",
+      "result_id": "a8772403-c859-4e42-b93c-cceadb6ca5ce"
+    },
+    {
+      "claim_id": "c30a4f65-3b69-4d92-8cc0-b442d3c33c80",
+      "result_id": "a8772403-c859-4e42-b93c-cceadb6ca5ce"
+    },
+    {
+      "claim_id": "a9b06eb2-02b3-4093-bb7e-47a11c2679a3",
+      "result_id": "a8772403-c859-4e42-b93c-cceadb6ca5ce"
+    },
+    {
+      "claim_id": "41b0bdd7-f9ac-4fb1-ace1-387731fdc251",
+      "result_id": "a8772403-c859-4e42-b93c-cceadb6ca5ce"
+    },
+    {
+      "claim_id": "bbaad14b-55b4-497c-a6d6-79da73385aaf",
+      "result_id": "a8772403-c859-4e42-b93c-cceadb6ca5ce"
+    },
+    {
+      "claim_id": "305a0368-e98f-496f-a667-44337d36058f",
+      "result_id": "49b0d4bf-64e2-4630-9dc3-7f75246c9a9e"
+    },
+    {
+      "claim_id": "ad9f3bd8-bf5a-4b05-871b-1724feee6e9c",
+      "result_id": "49b0d4bf-64e2-4630-9dc3-7f75246c9a9e"
+    },
+    {
+      "claim_id": "4e906336-425d-477e-b7c1-a45098638269",
+      "result_id": "49b0d4bf-64e2-4630-9dc3-7f75246c9a9e"
+    },
+    {
+      "claim_id": "d4891f08-7b03-408d-a36d-d31f91f9f7f5",
+      "result_id": "b24297e5-54a2-49c6-888e-c64c5361f3d1"
+    },
+    {
+      "claim_id": "4be9a36b-55d4-4c77-9c29-afcf3ce06de8",
+      "result_id": "b24297e5-54a2-49c6-888e-c64c5361f3d1"
+    },
+    {
+      "claim_id": "ed6fb5c7-237c-4654-9cb8-9b603d3b2862",
+      "result_id": "9d4ce2d4-0791-40ee-8aaa-b5c03d9839ce"
+    },
+    {
+      "claim_id": "11c2fe85-b62a-431e-8444-9bcdda22d223",
+      "result_id": "9d4ce2d4-0791-40ee-8aaa-b5c03d9839ce"
+    },
+    {
+      "claim_id": "02b144a2-68df-4daf-81ed-dea5fe6d2799",
+      "result_id": "9d4ce2d4-0791-40ee-8aaa-b5c03d9839ce"
+    },
+    {
+      "claim_id": "2caa9e33-5a40-4b48-ad41-0c470f81b053",
+      "result_id": "9d4ce2d4-0791-40ee-8aaa-b5c03d9839ce"
+    },
+    {
+      "claim_id": "f5a9b823-1865-4ca1-8686-3b8e0da85195",
+      "result_id": "9d4ce2d4-0791-40ee-8aaa-b5c03d9839ce"
+    },
+    {
+      "claim_id": "5009343c-fee5-4fa7-86c9-8f4cbab26a45",
+      "result_id": "9d4ce2d4-0791-40ee-8aaa-b5c03d9839ce"
+    },
+    {
+      "claim_id": "b03ce721-0277-4ef5-973f-fcbef4a845c0",
+      "result_id": "9d4ce2d4-0791-40ee-8aaa-b5c03d9839ce"
+    },
+    {
+      "claim_id": "7ee8e356-9c8a-433e-9300-ed40271967fa",
+      "result_id": "9d4ce2d4-0791-40ee-8aaa-b5c03d9839ce"
+    },
+    {
+      "claim_id": "36507cad-095a-46de-a274-f11db54321b4",
+      "result_id": "9d4ce2d4-0791-40ee-8aaa-b5c03d9839ce"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,500 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "The manuscript establishes the theoretical foundation based on the SPEAR model, which posits that theta oscillations (4-10 Hz) in the hippocampus separate encoding and recall processes at different phases, with the peak associated with encoding and the trough with recall.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C15-C21 collectively establish well-documented prior knowledge about theta oscillations and the SPEAR model. These claims are supported by multiple citations to established literature and represent the theoretical foundation for the current study. The claims are consistent with accepted neuroscience knowledge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "Prior work has established that memories are stored in sparse ensembles of hippocampal neurons (engram cells) that are active during encoding and reactivate during recall, and that artificial reactivation of these neurons can induce recall-like behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C8-C11 describe well-established prior findings about engram neurons, supported by appropriate citations. These claims accurately represent the state of knowledge about memory engram cells and activity-based tagging strategies used in prior research.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C13",
+      "C14",
+      "C24",
+      "C31"
+    ],
+    "result": "Previous engram reactivation studies used fixed-frequency stimulation (typically 20 Hz) without considering ongoing theta oscillations, and there have been discrepancies in optimal stimulation frequencies across studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C13, C14, C24, C31 accurately characterize limitations of prior research methods. These are supported by citations and represent a valid gap in the literature that motivates the current study. The observation about 20 Hz being above natural DG firing rates (C31-C32) is supported by cited data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "The study developed a real-time phase prediction algorithm to deliver optogenetic stimulation at specific phases of theta oscillations measured in CA1, with engram neurons tagged and reactivated in DG rather than CA3 to avoid seizure-like activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C37 describe the methodological approach. The algorithm implementation (C34-C35) is clearly described and code is made available. The choice to stimulate DG rather than CA3 (C27) is justified by practical concerns about seizure activity, though this is based on unpublished observations. The methodological choices are reasonable given the constraints.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "The closed-loop phase-specific stimulation algorithm achieved high specificity (83-84% TNR for peak and trough) compared to fixed-frequency controls (46% for 6 Hz, 3% for 20 Hz), with moderate sensitivity (58-59% TPR).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C43 present quantitative validation of the algorithm performance shown in Figure 1Cii. The specificity metrics demonstrate that the algorithm successfully targets specific phases. The moderate sensitivity (~58-59%) is acknowledged and justified as acceptable since natural memory processes don't occur every theta cycle. The data support the technical validity of the approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "The experimental design tested four stimulation modes within subjects using a fear conditioning paradigm with two contexts, including habituation, tagging, recall, and reactivation phases, with randomized stimulation order to control for repeated reactivation effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C58 describe the experimental design and behavioral paradigm. The within-subject design with randomization (C44-C45) is appropriate for controlling inter-subject variability. The habituation data (C47-C53) and fear conditioning results (C54-C58) shown in Figure 2 demonstrate successful establishment of the behavioral paradigm with appropriate controls (FS+ vs FS-).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Post fear conditioning, experimental animals showed elevated baseline freezing in the neutral context A (10%) compared to pre-conditioning (1.5%), though lower than freezing in the fearful context B (45-46%), which persisted across experimental days.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C62 describe an important feature of the behavioral results shown in Figure 2E. The elevated baseline freezing in context A is interpreted as potential generalization (C59) and is acknowledged as making detection of light-induced freezing more challenging (C61). The consistency across days (C62) justifies pooling data. This is a limitation but is transparently reported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C5",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Trough stimulation was significantly more effective than peak, 6 Hz, or 20 Hz stimulation in eliciting behavioral recall, with only trough stimulation producing light-induced freezing significantly different from habituation trials and significantly higher than peak stimulation in within-animal comparisons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C63-C71 present the primary behavioral finding shown in Figure 3. The data demonstrate that trough stimulation consistently increased freezing across both stimulation epochs (C63), while other conditions failed to do so or showed inconsistent effects (C64-C65). Statistical comparisons support the superiority of trough stimulation (C66, C68, C70). The interpretation that increases with other stimulation modes resemble habituation effects (C69) is reasonable given Figure 2C data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C72"
+    ],
+    "result": "Experimental animals showed significantly higher freezing post-reactivation in neutral context A, interpreted as potential strengthening of the original tagged memory.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C72 presents an observation with a speculative interpretation. While the increased freezing is observed (supported by data), the interpretation as memory strengthening is not directly tested and could have alternative explanations (e.g., further generalization, cumulative stress). The claim appropriately uses cautious language ('we believe indicates a potential'), but the mechanism remains uncertain without additional experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Theta oscillations showed higher frequency during locomotion compared to freezing across all experimental epochs, while theta power did not differ significantly between freezing and non-freezing conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C75 describe basic electrophysiological observations shown in Figures 4B and Figure 1\u2014figure supplement 2. The frequency difference between locomotion and freezing (C73-C74) is consistent with established literature. The lack of power difference (C75) is clearly stated and provides validation that recordings captured network activity appropriately.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C6",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C114"
+    ],
+    "result": "Trough stimulation specifically increased theta-gamma phase-amplitude coupling (modulation index) during the stimulation epoch, with the strongest coupling between 4-8 Hz theta phase and 55-85 Hz mid-gamma amplitude, and this increase correlated with behavioral freezing response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C79-C84, C114 present the primary electrophysiological finding shown in Figure 5. The modulation index analysis demonstrates that only trough stimulation significantly increased theta-gamma coupling during stimulation (C81-C82), which returned to baseline post-stimulation. The correlation between MI and freezing for trough stimulation (C84, C123) provides a link between neural and behavioral measures. The analysis methods are appropriate and clearly described.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C86",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "The modulation was observed in mid-gamma (55-85 Hz) rather than slow gamma (25-50 Hz), contrary to expectations from literature on natural recall, with mid-gamma arriving at the descending phase of theta.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86, C115-C118 describe an unexpected finding shown in Figure 5\u2014figure supplement 1 and Figure 5\u2014figure supplement 2. The observation that mid-gamma rather than slow gamma was modulated is clearly documented and acknowledged as surprising (C86). The authors appropriately note this discrepancy with natural recall literature and offer potential explanations in the Discussion (C119-C122). This transparency about unexpected results strengthens the overall evaluation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C7",
+      "C30",
+      "C87",
+      "C88",
+      "C93",
+      "C94",
+      "C98",
+      "C99"
+    ],
+    "result": "The results provide a causal link between phase-specific activation of engram cells and behavioral memory expression, supporting the SPEAR model and demonstrating that artificial recall correlates with increased theta-gamma coupling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C30, C87-C88, C93-C94, C98-C99 present the main conclusions. The causal link (C7) is supported by the experimental manipulation showing that trough stimulation drives both behavioral and electrophysiological changes. The support for the SPEAR model (C30, C93) is justified given that trough stimulation (associated with recall in the model) was most effective. The correlation between behavior and theta-gamma coupling (C88) is demonstrated in Figure 5D. However, the authors appropriately acknowledge limitations (C95-C97) regarding how well the artificial stimulation replicates natural recall.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "6 Hz stimulation was moderately effective only when baseline freezing was low, while 20 Hz stimulation did not produce significant light-induced freezing, possibly due to elevated baseline freezing masking effects or feedforward inhibition in CA3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C103-C111 discuss the limited effectiveness of fixed-frequency controls. The observation that 6 Hz worked only with low baseline (C103) is supported by the data. However, the explanations for 20 Hz ineffectiveness (C106-C110) are largely speculative. The hypothesis about feedforward inhibition (C109) is supported by citation to Lee et al. 2019, but this remains an untested explanation in the current study. The elevated baseline (C106) is a plausible alternative explanation but also not definitively tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "The artificial reactivation protocol is unlikely to replicate the intricate phase relationships of natural recall, and the driven DG activity may not be properly phase-locked with local theta in stratum granulosum.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C97 represent important limitations acknowledged by the authors. These are reasonable concerns given that: (1) stimulation was in DG rather than CA3, (2) theta was measured in CA1 not DG, and (3) the stimulation pattern is simplified compared to natural activity patterns. The authors appropriately acknowledge these limitations while noting that positive results despite these constraints suggest robustness of hippocampal organization (C98).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "Two hypotheses are proposed for the unexpected mid-gamma modulation: (1) artificial and natural memory reactivation may involve distinct circuitry due to the Tet-tag system labeling primarily excitatory cells, or (2) fear memory induction may also encode contextual information.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C119-C122 present speculative explanations for the unexpected gamma findings. While both hypotheses are plausible, neither is tested in the current study. The evidence cited for the second hypothesis (C122, from Redondo et al. 2014) is indirect. These remain as potential explanations requiring future investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C123",
+      "C124"
+    ],
+    "result": "The modulation index was significantly correlated with freezing behavior only for trough-phase stimulation, suggesting that behavioral variability has underpinnings in neural processing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C123-C124 describe the correlation analysis shown in Figure 5D. The significant correlation for trough (R=0.61, p<0.05) but not peak stimulation (R=-0.37, p=0.27) is clearly demonstrated. The interpretation that behavioral variability reflects neural processing (C124) is reasonable given this phase-specific correlation. However, the sample size for this correlation analysis is relatively small (n=11-12 animals showing light-induced freezing).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C113",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "Future work should include direct measures of CA1 and CA3 activity, more naturalistic optogenetic stimulation patterns, repeated same-stimulation experiments to assess memory effects, calcium imaging or high-density recordings, and testing of CA3 and EC engram neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C102, C113, C125-C129 outline appropriate future directions that address limitations of the current study. These suggestions are logical extensions that would: (1) provide mechanistic insights into downstream effects (C100), (2) test the SPEAR model more rigorously (C101-C102, C126-C127), (3) assess effects on original memories (C113), and (4) provide cellular-level mechanisms (C125). The acknowledgment that CA3 reactivation hasn't been successfully demonstrated (C128) is an honest assessment of the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C112"
+    ],
+    "result": "Testing all four stimulation modes within subjects prevented assessment of specific effects of each stimulation type on the original memory.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C112 acknowledges a limitation of the within-subject design. While this design was chosen to control inter-subject variability (C44), it does prevent assessment of how each stimulation mode individually affects memory consolidation or reconsolidation. This is an honest acknowledgment of a trade-off in experimental design.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C130",
+      "C131"
+    ],
+    "result": "The systematic investigation provides new insights into the impact of stimulation frequency and phase on engram reactivation and demonstrates the utility of closed-loop photo-stimulation approaches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C130-C131 present appropriate summary conclusions. The study does provide new insights by being the first to systematically compare phase-specific versus fixed-frequency engram reactivation. The demonstration of closed-loop stimulation utility is supported by the superior behavioral and electrophysiological outcomes with trough stimulation. The acknowledgment that future work will refine these approaches (C131) is appropriately modest.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140"
+    ],
+    "result": "The study used 53 male C57BL/6 mice (4-8 months old), with 17 experimental and 9 control animals included in final analysis after exclusions based on pre-defined criteria for stimulation effects and LFP quality, with appropriate ethical approvals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C132-C140 describe the animal subjects and exclusion criteria. The exclusion of females (C134) is justified by elevated anxiety making fear assessment difficult, though this limits generalizability. The exclusion criteria (C136-C137) are pre-defined and reasonable: lack of behavioral response and poor LFP quality. The final sample sizes (17 experimental, 9 control) are adequate for the statistical analyses performed. Ethical compliance is documented (C132).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155"
+    ],
+    "result": "Surgical procedures involved bilateral AAV9-TRE-ChR2-EYFP injection in DG, implantation of fiber optics and LFP electrode targeted to CA1 stratum pyramidale with post-hoc histological verification, followed by appropriate post-operative care and habituation procedures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C141-C155 provide detailed surgical and behavioral methodology. The procedures are standard for optogenetic engram studies. Post-hoc verification of electrode placement (C146) with correction for layer differences (C37, C139) is appropriate. The behavioral contexts are well-differentiated (C152-C154). The methodology is sufficiently detailed for replication.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165"
+    ],
+    "result": "The tagging protocol involved removing doxycycline 48 hours before fear conditioning with four 1.2 mA foot shocks for experimental animals, followed by recall testing and four days of randomized stimulation testing in the neutral context.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C156-C165 describe the tagging and testing protocol. The 48-hour doxycycline withdrawal (C156) is standard for Tet-tag systems. The fear conditioning parameters (C157) are appropriate. The randomization of stimulation order (C164) is important for controlling order effects. The four-epoch trial structure (C165) allows for within-trial baseline and stimulation comparisons.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C166",
+      "C167",
+      "C168",
+      "C169",
+      "C170",
+      "C171",
+      "C172",
+      "C173",
+      "C174"
+    ],
+    "result": "LFP signals were recorded at 1 kHz and processed in real-time using RTXI software, with freezing behavior scored using the automated ezTrack package validated against manual scoring, requiring 6 seconds of immobility to be considered freezing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C166-C174 describe electrophysiology and behavioral scoring methods. The 1 kHz sampling rate (C168) is adequate for theta and gamma analysis. The use of automated scoring (C170) with validation against manual scoring (C173-C174) reduces experimenter bias. The 6-second freezing criterion (C172) is standard. The methods are appropriate and well-documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C175",
+      "C176",
+      "C177",
+      "C178",
+      "C179",
+      "C180",
+      "C181"
+    ],
+    "result": "Histological procedures included transcardial perfusion 90 minutes after final testing, EYFP immunostaining with appropriate antibodies, and confocal imaging to verify viral expression and electrode placement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C175-C181 describe standard histological methods for verifying viral expression and electrode placement. The 90-minute delay before perfusion (C176) is appropriate for capturing activity-dependent markers if needed. The immunostaining protocol (C178-C179) uses standard antibodies and dilutions. The methods are sufficient for verification purposes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C182",
+      "C183",
+      "C184",
+      "C185",
+      "C186"
+    ],
+    "result": "Statistical analyses included normality testing (Shapiro-Wilk), variance testing (Levene's), paired or independent t-tests as appropriate, and Bonferroni correction for multiple comparisons, implemented in Python using SciPy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C182-C186 describe appropriate statistical methods. The normality testing (C182) and variance testing (C183) are appropriate preliminary checks. The use of t-tests (C184) is suitable for the comparisons made. Bonferroni correction (C185) appropriately controls for multiple comparisons. The implementation in Python/SciPy (C186) is transparent and reproducible.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C187",
+      "C188",
+      "C189",
+      "C190",
+      "C191",
+      "C192",
+      "C193",
+      "C194",
+      "C195",
+      "C196"
+    ],
+    "result": "LFP analysis used custom Python scripts with Scipy and Chronux implementations, including bandpass filtering (1-100 Hz), notch filtering (60 Hz), multi-taper spectral estimation, and post-hoc phase analysis using Hilbert transform to calculate sensitivity and specificity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C187-C196 describe detailed LFP analysis methods. The filtering parameters (C189-C190) are appropriate for removing noise while preserving signals of interest. The multi-taper method (C191) is a robust spectral estimation technique. The post-hoc phase analysis (C192-C194) using Hilbert transform is standard. The definitions of sensitivity and specificity (C195-C196) are correct. The methods are reproducible.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C197",
+      "C198",
+      "C199",
+      "C200",
+      "C201",
+      "C202",
+      "C203"
+    ],
+    "result": "Phase-amplitude coupling was quantified using the modulation index based on Kullback-Leibler divergence between the observed gamma amplitude distribution across theta phases and a uniform distribution, with theta phase from 4-10 Hz and gamma amplitude from slow (35-55 Hz) and mid (55-85 Hz) bands.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C197-C203 describe the modulation index calculation method adopted from Tort et al. 2010. The method is well-established for quantifying phase-amplitude coupling. The frequency ranges for theta (C198) and gamma (C199) are appropriate. The binning (C200) and normalization procedures are standard. The comodulogram parameters (C203) allow for comprehensive frequency-frequency coupling analysis. The methods are appropriate and clearly described.",
+    "result_type": "MINOR"
+  }
+]

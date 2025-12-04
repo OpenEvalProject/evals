@@ -1,0 +1,334 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C26",
+      "C27"
+    ],
+    "result": "An F0 CRISPR/Cas9 behavioral screen identified linc-mipep and linc-wrb as micropeptide candidates with specific daytime hyperactivity phenotypes. Ribosome profiling identified brain-enriched micropeptide candidates, and CRISPR targeting efficiently induced mutations (40-100% indel rates). The screen identified linc-mipep and linc-wrb with correlated behavioral fingerprints (r=0.67) and specific daytime hyperactivity when mutated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C24, C26-C27 describe a systematic screening approach with appropriate controls and quantitative validation. The ribosome profiling data (C21), in situ hybridization (C22), CRISPR efficiency validation (C24), and behavioral phenotyping (C26-C27) provide converging evidence. The correlation coefficient and mutation rates are quantified, and multiple independent lines of evidence support the identification of these two genes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Sequence analysis revealed that linc-mipep and linc-wrb share structural and sequence homology. They have 72% BLAST identity in mRNA sequences, 92% identity in a conserved non-coding element, homology in sORF exon structure, and ribosome-protected fragments suggesting they encode proteins of 87aa and 93aa respectively. Both transcripts are expressed throughout embryogenesis through 5 dpf.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C32 present quantitative sequence analysis data with specific metrics (72% BLAST identity, 92% conservation, protein sizes). The ribosome profiling data (C31) and expression data (C32) are supported by figures. These complementary analyses provide strong evidence for the structural relationship and coding potential of these genes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Multiple mutant alleles affecting the coding sequence of linc-mipep (start codon, frameshift, large deletion) produce similar daytime hyperactivity phenotypes, while 3'UTR deletion does not. Double mutants show enhanced hyperactivity in a dose-dependent manner, with each additional loss of a gene copy increasing hyperactivity levels. The phenotype persists in maternal-zygotic mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C39 demonstrate systematic genetic dissection using multiple alleles to distinguish coding from non-coding functions. The comparison of different mutation types (C33), persistence in maternal-zygotic mutants (C37), and dose-dependent effects (C38) provide strong evidence for protein-coding function. The genetic logic is sound and the behavioral data support the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "The linc-mipep sORF rescues hyperactivity in linc-mipep mutants without affecting wild-type activity levels or nighttime activity. Cross-rescue experiments show linc-mipep can rescue linc-wrb heterozygous mutants to near wild-type levels, suggesting functional redundancy between the proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C43 present rescue experiments that are critical for establishing sufficiency and functional relationships. The data show specificity (no effect on WT, C41), rescue of the mutant phenotype (C40), and cross-rescue capability (C42). These experiments provide strong evidence for protein function and partial redundancy, though the cross-rescue is only tested in heterozygotes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Custom antibodies detect Linc-mipep and Linc-wrb proteins in developing wild-type embryos and larvae, with nuclear localization in non-dividing cells. Linc-mipep shows stronger and broader expression than Linc-wrb. Both proteins are absent in linc-mipep;linc-wrb double mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C47 provide direct protein-level evidence using custom antibodies. The antibody specificity is validated by absence of signal in double mutants (C47). The nuclear localization (C46) is consistent with the proposed chromatin function. The comparative expression patterns (C45) are documented with imaging data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Protein BLAST and synteny analysis identified evolutionary relationships between linc-mipep, linc-wrb, and vertebrate HMGN1/HMGN2 proteins. linc-wrb is syntenic to human HMGN1. An ancestral HMGN protein was identified in lamprey. The N-terminal sequence of an APEX1-like gene in lancelet aligns to HMGN family members. linc-mipep likely arose from duplication of linc-wrb during teleost genome duplication.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C48-C56 present evolutionary analyses with some strong evidence (synteny, sequence conservation) but also speculation about origins (C54, C55). The lamprey sequence (C51) and synteny data (C50) are well-supported. However, the proposed evolutionary scenario for linc-mipep origin (C55) and the connection to the lancelet APEX1-like gene (C53-C54) involve significant inference. The evolutionary narrative is plausible but would benefit from additional functional or phylogenetic validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Human HMGN1 rescues the hyperactivity phenotype in linc-mipep mutants but not in linc-wrb mutants, indicating functional homology between linc-mipep and human HMGN1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C59 demonstrate functional conservation through cross-species rescue experiments. The successful rescue of linc-mipep mutants by human HMGN1 (C57) provides strong evidence for functional homology. The failure to rescue linc-wrb mutants (C58) suggests functional divergence. This is a critical result establishing evolutionary conservation of function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Behavioral pharmacology reveals that linc-mipep mutants resemble wild-type fish treated with NMDA receptor antagonists and glucocorticoid receptor agonists. NMDA antagonist treatment produces hyperactivity in wild-type fish similar to mutants, with non-additive effects in mutants, suggesting shared mechanisms. Mutants show sensitization to glucocorticoid signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C68 use pharmacological profiling to identify affected pathways. The hierarchical clustering analysis (C60), dose-response experiments (C66-C67), and non-additive effects (C68) provide strong evidence for NMDA pathway involvement. The glucocorticoid sensitization (C64-C65) is well-documented. However, these are correlative analyses that suggest but do not prove direct mechanistic links. The inference about shared mechanisms (C68) is reasonable but indirect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Omni-ATAC-seq reveals broad chromatin accessibility changes in linc-mipep;linc-wrb mutant brains: 2167 regions lost accessibility and 1220 gained accessibility. Regions losing accessibility are enriched for CTCF, ATF/CREB, AP-1, GMEB2, and ISGF3G motifs. Regions gaining accessibility are enriched for KLF/SP and EGR family motifs. c-fos transcription is reduced in mutant brains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C75 present genome-wide chromatin accessibility data with appropriate statistical analysis. The quantification of affected regions (C69), motif enrichment analysis (C70-C71, C74-C75), and validation of c-fos expression (C73) provide converging evidence. The sample size (3 replicates) and correlation between replicates support data quality. The biological interpretation linking to immediate early genes is well-founded.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Single-cell multiomics analysis using integrated diffusion and MELD reveals that differentiating neuronal progenitor, glial progenitor, and cerebellar granule cell states are more likely in wild-type brains, while oligodendrocyte progenitor cell (OPC) states are more likely in linc-mipep mutant brains. This indicates linc-mipep preferentially regulates oligodendrocyte and cerebellar cell states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C80 present sophisticated single-cell analysis using appropriate computational methods (integrated diffusion, MELD). The cell type-specific effects are quantified and visualized. The conclusion about preferential regulation (C80) is a reasonable inference from the likelihood scores. The analysis includes both wild-type and mutant cells from sibling-matched samples, reducing batch effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C88",
+      "C90",
+      "C92"
+    ],
+    "result": "Single-cell ATAC-seq reveals cell type-specific chromatin accessibility changes in linc-mipep mutants. In cerebellar granule cells, 645 regions lost and 344 gained accessibility, with loss at Bhlhe22, Hic1, Neurod2, and Nfia motifs. Purkinje neurons lost accessibility at Gbx2 motifs and showed decreased expression of roraa, rorb, foxp4, and prkcg. ChIP-seq shows reduced RNA Polymerase II binding at cerebellar development genes (zic2a, ascl1b, atxn3).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C92 integrate single-cell ATAC-seq, RNA-seq, and ChIP-seq data to demonstrate cell type-specific effects. The quantification of affected regions (C84), identification of specific TF motifs (C85, C88), and validation with gene expression (C90) and Pol II binding (C92) provide strong converging evidence. The cited functions of affected genes are supported by literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C93",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C100",
+      "C101"
+    ],
+    "result": "OPCs from linc-mipep mutants show altered chromatin accessibility at E2f7, Elf1, Fev, Hinfp, and Sox10 binding sites, with 136 genes down-regulated and 57 up-regulated. There is a significant 13% decrease (p=0.0053) in olig2+ cells in mutant brains. Genes involved in glucocorticoid signaling (fkbp5) and stress response (scg5) show reduced expression. Multiple NMDA receptor-related genes show reduced expression in mutant OPCs, including grin1a and grin1b.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C101 present comprehensive analysis of OPC-specific effects combining chromatin accessibility, gene expression, and in vivo validation. The quantification of differentially expressed genes (C95), statistical validation of cell number changes (C96, p=0.0053), and GO enrichment analysis (C100, adjusted p=0.0294) provide strong evidence. The connection to NMDA signaling is well-supported by multiple genes showing coordinated changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C104"
+    ],
+    "result": "linc-mipep and linc-wrb encode micropeptides with homology to HMGN1 that are required for development of vertebrate-specific brain cell types. Loss of these micropeptides causes dysregulation of NMDA receptor pathways and preferentially alters gene regulatory networks establishing cerebellar cells and oligodendrocytes, with dose-dependent effects on behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C7, C104 represent the main conclusions of the study, supported by the comprehensive evidence from genetic, behavioral, pharmacological, and genomic analyses detailed in other result groups. The integration of multiple experimental approaches (mutant analysis, rescue experiments, single-cell multiomics, pharmacology) provides strong support for these central claims. The dose-dependent effects and cell type specificity are well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C8",
+      "C81",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "The affected cell types (cerebellar cells and oligodendrocytes) are evolutionarily newer vertebrate-specific cell types that develop postnatally in humans. The study proposes that linc-mipep, linc-wrb, and HMGN1 co-evolved with gene regulatory networks establishing these vertebrate-specific cell types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C8, C81, C107 about evolutionary novelty of cell types are supported by citations to established literature. However, the hypothesis that these genes co-evolved with vertebrate-specific cell type networks (C108) is speculative, though supported by the observation that these cell types are most affected (C109). The connection between the evolutionary origin of the genes and the cell types they regulate is correlative rather than causally demonstrated. This represents an interesting hypothesis requiring additional evolutionary and functional studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C102"
+    ],
+    "result": "Some genes misregulated in linc-mipep mutant OPCs (erbb4, mag, qkia, myt1b) are also enriched in wild-type granule cells, despite different developmental origins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C102 identifies an interesting pattern of shared gene expression between affected OPCs and wild-type granule cells. This is supported by single-cell RNA-seq data shown in figures. This observation suggests potential shared regulatory mechanisms or convergent gene expression programs, though the functional significance is not fully explored.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C103"
+    ],
+    "result": "This is the first zebrafish brain single-cell multiome analysis to understand cell type-specific effects of loss-of-function of micropeptide-encoding genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C103 is a statement about methodological novelty. The combined single-cell RNA-seq and ATAC-seq analysis in zebrafish brain is well-executed and represents a technical advance. However, this is a methodological claim rather than a biological finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C82",
+      "C83"
+    ],
+    "result": "Antibody staining reveals that Linc-wrb protein is evenly expressed across the brain at 5 dpf, including in cerebellar regions and olig2:GFP+ OPCs, while Linc-mipep is more weakly expressed in torus longitudinalis and tegmentum.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C83 describe spatial expression patterns based on antibody staining. The data are supported by figures showing co-localization with olig2:GFP. These are descriptive observations that provide context for understanding where the proteins function, though some non-specific staining is noted for the Linc-wrb antibody.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "The results are discussed in context of Down syndrome pathology (where HMGN1 is overexpressed) and previous findings about NMDA receptors in oligodendrocyte development and function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C113 cite established knowledge from the literature about Down syndrome, NMDA receptors in OPCs, and oligodendrocyte glucose transport. These are accurate representations of prior work used to contextualize the current findings, but they are not novel results from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C25",
+      "C72",
+      "C76",
+      "C86",
+      "C87",
+      "C89",
+      "C91",
+      "C94",
+      "C99"
+    ],
+    "result": "Background claims about lincRNAs, micropeptides, CNS diversity, and specific gene functions cited from the literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C1-C3, C9-C20, C25, C72, C76, C86-C87, C89, C91, C94, C99) represent established knowledge from the literature, properly cited. They provide necessary context but are not novel findings from this study. The citations appear appropriate and the statements accurately represent current understanding in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C105",
+      "C106"
+    ],
+    "result": "The evolutionary origin of linc-mipep, linc-wrb, and HMGN1 is discussed, with identification of an ancestral HMGN protein in lamprey lacking the C-terminal regulatory domain of human HMGN1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C105 is speculative about origins from non-coding transcripts in invertebrates. Claim C106 about the lamprey sequence is supported by sequence analysis data. However, the evolutionary narrative involves significant inference and speculation. The identification of the lamprey sequence is a solid finding, but the broader evolutionary story requires additional validation.",
+    "result_type": "MINOR"
+  }
+]

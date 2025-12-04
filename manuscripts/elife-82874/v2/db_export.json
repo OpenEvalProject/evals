@@ -1,0 +1,1823 @@
+{
+  "submission": {
+    "id": "ac654878-e2d7-476c-8725-6f13674adf92",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-04T02:12:33.004809Z",
+    "updated_at": "2025-12-04T02:12:33.004809Z"
+  },
+  "content": [
+    {
+      "id": "771f1a72-e8ba-4cc5-ab7d-36d4b101dc25",
+      "submission_id": "ac654878-e2d7-476c-8725-6f13674adf92",
+      "content_type": "manuscript",
+      "content_text": "# An extracellular vesicle targeting ligand that binds to Arc proteins and facilitates Arc transport in vivo\n\n## Authors\n\n- Peter H Lee<sup>1</sup> ([ORCID: 0000-0003-2411-6094](https://orcid.org/0000-0003-2411-6094)) \u2020\n- Michael Anaya<sup>1</sup>\n- Mark S Ladinsky<sup>1</sup> ([ORCID: 0000-0002-1036-3513](https://orcid.org/0000-0002-1036-3513))\n- Justin M Reitsma<sup>1</sup>\n- Kai Zinn<sup>1</sup> ([ORCID: 0000-0002-6706-5605](https://orcid.org/0000-0002-6706-5605)) \u2020\n\n### Affiliations\n\n1. Division of Biology and Biological Engineering, California Institute of Technology Pasadena United States ([ROR:05dxps055](https://ror.org/05dxps055))\n\n\u2020 Corresponding author\n\n## Abstract\n\nCommunication between distant cells can be mediated by extracellular vesicles (EVs) that deliver proteins and RNAs to recipient cells. Little is known about how EVs are targeted to specific cell types. Here, we identify the Drosophila cell-surface protein Stranded at second (Sas) as a targeting ligand for EVs. Full-length Sas is present in EV preparations from transfected Drosophila Schneider 2 (S2) cells. Sas is a binding partner for the Ptp10D receptor tyrosine phosphatase, and Sas-bearing EVs preferentially target to cells expressing Ptp10D. We used co-immunoprecipitation and peptide binding to show that the cytoplasmic domain (ICD) of Sas binds to dArc1 and mammalian Arc. dArc1 and Arc are related to retrotransposon Gag proteins. They form virus-like capsids which encapsulate Arc and other mRNAs and are transported between cells via EVs. The Sas ICD contains a motif required for dArc1 binding that is shared by the mammalian and Drosophila amyloid precursor protein (APP) orthologs, and the APP ICD also binds to mammalian Arc. Sas facilitates delivery of dArc1 capsids bearing dArc1 mRNA into distant Ptp10D-expressing recipient cells in vivo.\n\n## Introduction\n\nExtracellular vesicles (EVs) are mediators of cell-cell communication that transport specific protein and RNA cargoes. They are a heterogeneous collection of vesicular structures that are exported from cells by a variety of mechanisms. Exosomes are 30\u2013150 nm in diameter and are released into cell supernatants via fusion of multivesicular bodies (MVBs) with the plasma membrane. Exosomes and other EVs carry specific proteins and RNAs, and EVs derived from different cell types contain different cargoes. EV cargoes are biomarkers for specific diseases. Because EVs can encapsulate RNAs and protect them from degradation, and then deliver those RNAs to recipient cells, they represent a promising new type of therapeutic agent (O\u2019Brien et al., 2020; Teng and Fussenegger, 2020).\n\nLittle is known about mechanisms involved in EV targeting to specific cell types. EVs are internalized into cells after receptor binding using a variety of endocytic mechanisms, resulting in the delivery of their cargoes into the recipient cells. They can also directly activate intracellular signaling without endocytosis by interacting with cell surface receptors. In this paper, we identify Stranded at second (Sas), a large Drosophila cell surface protein (CSP; Schonbaum et al., 1992), as an EV targeting ligand. Full-length Sas (SasFL) has an extracellular domain (ECD) containing a signal peptide, a unique N-terminal region, four von Willebrand factor C (VWFC) domains, and three Fibronectin Type III (FN-III) repeats (Figure 1a). A shorter isoform, Sasshort, which is translated from an alternatively spliced mRNA, lacks a 345 amino acid (aa) region of the ECD. The two Sas isoforms share a single transmembrane (TM) domain and a short cytoplasmic domain (ICD).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/82874/elife-82874-fig1-v2.jpg)\n\n**Figure 1.:** (a) Schematic diagram of the SasFL protein. The Sasshort isoform lacks the EVT region. (b) SasFL moves away from expressing cells. V5-SasFL was expressed together with mCD8-GFP (transmembrane CSP) in Apterous neurons in late stage 16 embryos. (i,iv) double-labeling (V5, magenta; GFP, green); (ii, v) V5 channel; (iii, vi) GFP channel. (i-iii) Brain lobes. GFP labels cell bodies (arrowheads in iii) and axon tracts. V5 labels cell bodies only weakly (arrowheads in ii), strongly labels some axon tracts, and localizes to the periphery (sheath) of the brain lobes (arrows in ii). (iv-vi) Ventral nerve cord. GFP strongly labels Ap VNC cell bodies (arrowheads in vi) and weakly labels Ap axons (arrow in vi). V5 weakly labels cell bodies (arrowheads in v), and strongly labels segments of axons (arrows in v) and areas adjacent to the axons. These may be extracellular matrix and/or glial sheaths. Scale bar, 10 \u00b5m. (c) Western blot, showing that SasFL localizes to EVs. EVs were prepared from supernatants from S2 cells expressing the indicated protein, and equal amounts of cell lysate proteins and EV proteins were loaded on the gel. Top panel, anti-V5 blot. SasFL migrates slightly above the 250 kD marker, and Sasshort slightly below it. Middle panel, Wg (EV marker). Almost all of the Wg is in EVs. Bottom panel, anti-\u03b2-actin (cytoplasmic marker) blot. There is no signal in EVs. In these samples, 60% of SasFL and 10% of Sasshort is in EVs; the average over 4 experiments was 46% in EVs for SasFL and 10% for Sasshort. The absence of \u03b2-actin signal in the EVs shows that they are not heavily contaminated by cytosol. (d) Localization of endogenous Sas isoforms in the embryonic gut. Wild-type (wt) late stage 16 embryos were triple-stained for SasFL (using the [Schonbaum et al., 1992] antiserum, which primarily recognizes the EVT region; green), Sasshort (using our antipeptide antibody; red), and Crumbs (apical marker; blue). (i-iv) Foregut; (v-viii), hindgut. Note that in both gut regions SasFL colocalizes with Crumbs at the apical (luminal) cell surfaces (arrows), while anti-Sasshort labels the entire width of the gut wall (brackets). See Figure 1\u2014figure supplement 1 for images of anti-Sasshort staining of wt and sas mutant embryos, demonstrating antibody specificity. Scale bar in d-i, 20 \u00b5m; in (d-v), 10 \u00b5m.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/82874/elife-82874-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (a) Western blot of S2 cell lysates with antibodies against SasFL (Sas-PB/PD)(Schonbaum et al., 1992), Sasshort (Sas PA/PC), and \u03b2-tubulin. Left, S2 cells expressing SasFL; right, S2 cells expressing Sasshort. Anti-Sas-PB/PD recognizes a band of >250 kD, while anti-Sas-PA/PC recognizes a 180 kD band. (b) V5-Sasshort was expressed together with mCD8-GFP (transmembrane CSP) in Apterous neurons in late stage 16 embryos. Left panels: double-labeling (V5, magenta; GFP, green); middle panels: V5 channel; right panels: GFP channel. Top panels, brain lobes. GFP labels cell bodies (arrowheads). V5 labels a subset of these cell bodies (arrowheads). Bottom panels, ventral nerve cord. GFP strongly labels Ap VNC cell bodies (arrowheads). V5 labels cell bodies (arrowheads) and segments of axons. Scale bar, 10 \u00b5m. (c) Side views of late stage 16 wt (b) and sas15 (null mutant) (c) whole embryos, triple-stained with anti-SasFL, anti-Sasshort, and anti-Crumbs. ii\u2019, v\u2019 show the anti-SasFL channel only, and iii\u2019\u2019, vi\u2019\u2019 show the anti-Sasshort channel. Note that there is no detectable staining of the sas mutant embryo with either antibody, showing that the anti-Sasshort antibody recognizes Sas in vivo and does not detectably cross-react with other proteins. Scale bar, 50 \u00b5m. (d) Western blot with anti-V5 (top) and anti-Wg (bottom), comparing EVs made by a standard ultracentrifugation protocol (left) and using the Exosome Isolation Kit (right). Both EV samples contain the >250 kD SasFL and 67 kD Wg proteins.\n\nSas is commonly used as a marker for the apical surfaces of epithelially derived cells, including tracheal cells in the respiratory system. sas mutant larvae die at or before second instar (hence the name stranded at second, which is derived from baseball terminology) and have tracheal phenotypes in larvae but no known phenotypes in embryos (Schonbaum et al., 1992). A tyrosine motif in the Sas ICD was found to bind to the PTB domain of Numb (Chien et al., 1998), an protein involved in endocytosis that is a negative regulator of Notch signaling. Sas has no obvious mammalian orthologs, but there are many mammalian CSPs that contain VWFC and FN-III domains.\n\nIn earlier work, we identified the receptor tyrosine phosphatase (RPTP) Ptp10D as a binding partner for Sas, and showed that Sas::Ptp10D interactions regulate embryonic axon guidance, as well as glial migration and proliferation (Lee et al., 2013). Ptp10D is one of the two Drosophila R3 subfamily RPTPs, which have ECDs composed of long chains of FN-III repeats. Sas::Ptp10D interactions also control the elimination of neoplastic epithelial clones by surrounding normal tissue. Sas is on normal epithelial cells, and it relocalizes to the parts of their cell surfaces that are adjacent to the neoplastic clone and binds to Ptp10D on the neoplastic cells. Ptp10D in turn relocalizes and dephosphorylates the EGF receptor tyrosine kinase, leading to death of the neoplastic cells (Yamamoto et al., 2017). The Sas ECD has other binding partners as well, because it interacts with cells that do not express Ptp10D in live embryo staining assays (Lee et al., 2013).\n\nMammalian Arc is a locally translated dendritic protein that regulates synaptic plasticity, in part by modulating endocytosis of AMPA receptors (Chowdhury et al., 2006; Shepherd et al., 2006). The Drosophila genome encodes two proteins distantly related to mammalian Arc, dArc1 and dArc2. The dArc2 gene, which encodes a truncated protein, was likely generated by a gene duplication, and the dArc1 and dArc2 genes are adjacent (Mattaliano et al., 2007). dArc1 functions in larval and adult brain neurons to regulate aspects of metabolism (Mattaliano et al., 2007; Mosher et al., 2015; Keith et al., 2021). Arc and dArc1 evolved independently from retrotransposon Gag proteins (Shepherd, 2018). Remarkably, they both form virus-like capsids that can encapsulate Arc mRNAs and are transported between cells via EVs (Ashley et al., 2018; Pastuzyn et al., 2018; Hantak et al., 2021). dArc1, but not dArc2, has a C-terminal Zn2+ finger that might be involved in nucleic acid binding (Pastuzyn et al., 2018; Erlendsson et al., 2020). Mammalian Arc lacks Zn2+ fingers, but RNA is required for normal capsid assembly (Pastuzyn et al., 2018). Drosophila dArc1 capsids bearing dArc1 mRNA move from neurons to muscles across larval neuromuscular junction (NMJ) synapses, and dArc1 transfer is required for activity-induced induction of morphological synaptic plasticity (Ashley et al., 2018).\n\nHere we show that full-length Sas expressed in cultured Drosophila cells localizes to EVs that preferentially target to cells expressing Ptp10D. Sas binds to dArc1 in EVs via a tyrosine motif in its ICD that is conserved between Sas and the human and Drosophila APP orthologs. This finding led us to examine mammalian Arc as well, and we showed that it also binds to Sas and APP. The interaction between APP and Arc is of interest because several studies have implicated Arc in control of \u03b2-amyloid accumulation and Alzheimer\u2019s disease (AD) (Wu et al., 2011; Landgren et al., 2012; Bi et al., 2018). APP also localizes to EVs (Laulagnier et al., 2018; P\u00e9rez-Gonz\u00e1lez et al., 2020).\n\nSince Sas binds to dArc1, which can encapsulate its own mRNA (Ashley et al., 2018), we then investigated whether Sas EVs can target dArc1 mRNA to Ptp10D-expressing recipient cells in vivo. Here, we show that co-expression of dArc1 and full-length Sas in embryonic salivary glands (SGs) causes dArc1 mRNA to appear in distant tracheal cells that express Ptp10D.\n\n## Results and discussion\n\n### Sas is an EV targeting ligand\n\nSas has two isoforms, translated from alternatively spliced mRNAs. SasFL (PB/PD isoform) is a 1693 aa single-transmembrane cell-surface protein with a short (37 aa) ICD. It contains a 345 aa region (EVT) between the VWFC and FN-III domains that is lacking in the Sasshort (PA/PC) isoform (Figure 1a). We expressed SasFL tagged with an N-terminal V5 epitope tag (inserted immediately after the signal sequence) in embryonic late stage 16 Apterous (Ap) neurons, which consist of paired neurons (one per hemisegment) in the ventral nerve cord (VNC) and scattered neurons in the brain lobes. It was expressed together with mCD8-GFP, which is also a transmembrane CSP. The GFP signal was restricted to Ap neuron cell bodies, with faint staining on the axons. However, V5-SasFL was observed in sheaths around brain lobes and in areas adjacent to axons in the VNC, as well as in puncta throughout the VNC and brain (Figure 1b). The V5 signal in cell bodies was very weak, especially in the brain.\n\nWe also expressed V5-Sasshort in Ap neurons, and observed that V5 staining was restricted to cell bodies and axons in the VNC, and to cell bodies in the brain (Figure 1\u2014figure supplement 1). Thus, although SasFL and Sasshort have the same TM and ICD, they differ in subcellular localization, with Sasshort being retained in expressing cells and SasFL moving away from these cells and into the extracellular matrix.\n\nMovement of V5-SasFL, and presumably of endogenous SasFL, away from its source could occur through cleavage of the Sas ECD from the cell surface or by release of intact Sas in EVs. To distinguish between these possibilities, we expressed V5-tagged SasFL and Sasshort in transiently transfected Drosophila Schneider 2 (S2) cells, which express endogenous Sas at almost undetectable levels. We prepared EVs from S2 cell supernatants using the Invitrogen Exosome Isolation Kit or by ultracentrifugation, and analyzed their contents by western blotting. EVs contained the Wg protein, which is a marker for EVs in S2 cells and is present at very low levels in lysates (Koles et al., 2012; Figure 1c, Figure 1\u2014figure supplement 1). They lacked \u03b2-actin, showing that they are not heavily contaminated by cytosol. We found that about 50% of V5-SasFL localized to EVs, while ~90% of V5-Sasshort was retained in the cell lysate (Figure 1c). We did not observe any proteolytic cleavage products in EVs or unpurified supernatants.\n\nEV preparations made using the Exosome Isolation kit have similar characteristics to those generated by ultracentrifugation (Skottvoll et al., 2019), and the kit requires much less material, allowing EVs to be purified from small-scale transfections. However, to confirm results obtained with the kit, we also purified EVs from S2 cells expressing V5-tagged SasFL using a standard ultracentrifugation protocol (Th\u00e9ry et al., 2006), and showed that SasFL and Wg are also present in these EVs (Figure 1\u2014figure supplement 1).\n\nThe commonly used rabbit antiserum against Sas primarily recognizes the EVT region, so embryo staining reveals the localization of endogenous SasFL (Schonbaum et al., 1992). To visualize Sasshort, we made an anti-peptide antibody against a sequence spanning an exon junction in the PA/PC isoforms. This recognizes Sasshort, and staining with the antibody is eliminated in sas mutant embryos (Figure 1\u2014figure supplement 1). Double-staining of the foregut and hindgut with the two Sas antibodies showed that SasFL localizes to apical cell surfaces, while Sasshort is distributed across the entire cell membrane (Figure 1d). These data imply that the EVT sequence lacking in Sasshort is required for both apical localization and targeting to EVs. Polarized cells can release EVs with different cargoes from their apical and basolateral surfaces (Matsui et al., 2021), so EV targeting could be downstream of apical localization in vivo. S2 cells are unpolarized, however, so this mechanism is unlikely to apply to trafficking of SasFL to EVs in cultured S2s.\n\n### Analysis of SasFL EVs by electron microscopy\n\nTo demonstrate that Sas is actually on EVs, we used immuno-EM and EM tomography to analyze purified EV preparations from V5-SasFL-expressing S2 cells. The tomographic images showed that the EVs span a range of sizes, from ~30 nm in diameter to >100 nm, and that they are a mixture of single and double-membrane vesicles (Figure 2c and d, Figure 2\u2014figure supplement 1). For immuno-EM, we incubated EVs with anti-V5, followed by gold-labeled anti-mouse secondary antibody. Figure 2a shows a typical image, in which an EV is associated with multiple 10 nm gold particles. The distance between the EV membrane (yellow bracket: diameter of the vesicle) and a gold particle (white bracket: distance between membrane and a particle) can be more than 40 nm. This likely reflects the large size of the Sas ECD, in which the N-terminal V5 epitope is separated by 1590 aa from the TM domain. The distance is variable, however, because the Sas ECD, which is composed of a chain of domains separated by linkers, is likely to be flexible and able to adopt many different conformations. The region outside the membrane boundary is of higher density, probably because it represents the protein sheath around the EV membrane. To further characterize Sas localization, we performed an experiment in which EVs were incubated with both mouse anti-V5 and rabbit anti-Sas, which primarily recognizes the EVT region in the middle of the ECD, followed by 10 nm gold particle-labeled anti-mouse secondary antibody and 5 nm gold particle-labeled anti-rabbit secondary antibody. Figure 2b shows an EV that is associated with multiple 10 nm (arrow) and 5 nm (arrowhead) gold particles.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/82874/elife-82874-fig2-v2.jpg)\n\n**Figure 2.:** (a, b) Immuno-EM images of EVs from a purified EV prep from V5-SasFL-expressing S2 cells. EV outline (membrane) diameters are indicated by yellow brackets. White brackets, separation between EV outline and a gold particle. (a) Immuno-EM with 10 nm anti-V5 gold particles (arrows). (b) Immuno-EM with both 10 nm anti-V5 (large gold, arrow) and 5 nm anti-Sas (small gold, arrowhead). (c) EM tomogram of an empty double-membrane vesicle (arrows). Apparent EV sizes differ between immuno-EM and tomography, which use very different preparation methods. A low-mag view of a single slice from an EM tomogram of an EV preparation is shown in Figure 2\u2014figure supplement 1. (d) EM tomogram of a double-membrane vesicle (arrows) with a capsid-sized denser object inside it (arrowhead). Figure 2\u2014figure supplement 1 shows a 3D reconstruction of this EV. Empty and filled single-membrane EVs were also observed (Figure 2\u2014figure supplement 1). Scale bars in (a\u2013d), 50 nm. (e) Nanoparticle Tracking Analysis (conventional NTA with NanoSight) of purified EV preparations from untransfected (green curve) and SasFL-expressing (blue curve) S2 cells. The mean size distribution is indicated. Standard error indicated by red color around curves. Source data files include an Excel file of raw data for the NTA analysis, the conversion of the numbers from numbers of EVs per sample to numbers of EVs per cell, based on cell counts, and plots of the data.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/82874/elife-82874-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (a) Tomogram of an empty single-membrane EV. (b) Tomogram of a single-membrane EV enclosing a denser object (arrow). Scale bars in (a\u2013b), 50 nm. (c) A still image from , which displays a reconstruction of the double-membrane EV from Figure 2d. The denser object inside the EV is in magenta. (d) A low-magnification image of a single slice from a tomogram, showing multiple EVs of various sizes (arrows). Scale bar in (d), 200 nm.\n\nTo analyze the numbers and sizes of EVs from SasFL-expressing and control S2s, we examined purified EVs using Nanoparticle Tracking Analysis with a NanoSight instrument (NTA, System Biosciences, LLC). We observed that the distribution of EV diameters was shifted toward smaller values in cells expressing SasFL (mean diameter = 102 nm, vs. 129 nm for control cells) (Figure 2e). Expression of SasFL increased the number of EVs per cell in the exosome size range (30\u2013150 nm in diameter) by 44%, and the number of EVs per cell of <100 nm in diameter by 72%, suggesting that the presence of high levels of SasFL increases the rate of EV production.\n\nMany of the EVs from V5-SasFL-expressing S2 cells EVs had denser objects within their boundaries (Figure 2d, Figure 2\u2014figure supplement 1). These were typically 30\u201340 nm in diameter. Such objects were also found within EVs from untransfected S2 cells (Ashley et al., 2018), so their presence does not require expression of SasFL.\n\n### SasFL EVs target to cells expressing Ptp10D\n\nHaving shown that SasFL moves away from expressing neurons in the embryo and is an EV component, we then asked whether it can be incorporated into distant cells in vivo, presumably through endocytosis of EVs. We expressed V5-SasFL in 3rd instar larval salivary glands (SGs) using an SG-specific GAL4 driver, Sage-GAL4. SG-specific expression of dsRed from this driver in whole larvae is shown in Figure 3\u2014figure supplement 1. We then visualized V5 staining in other tissues. We found that V5-SasFL made in SGs is present in imaginal discs, which are separated from SGs by larval hemolymph (wing and haltere discs shown in Figure 3a\u2013c). There was no V5 staining in imaginal discs from driver-alone larvae (compare Figure 3a and b). We also expressed V5-Sasshort in SGs, and this was not observed in imaginal discs (Figure 3c). This is consistent with the observation that V5-Sasshort does not move away from expressing Ap neurons and is restricted to cell lysates in S2 cells (Figure 1b and c). wt discs express the Sas receptor Ptp10D at low levels (see Figure 3\u2014figure supplement 1), but we do not know whether Ptp10D is required for SasFL binding to discs. Overexpressed Ptp10D can stimulate SasFL accumulation in discs, however (see Figure 3\u2014figure supplement 1).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/82874/elife-82874-fig3-v2.jpg)\n\n**Figure 3.:** (a) A third instar wing disc, with a portion of the haltere disc (right side), from a Sage-GAL4/+ (SG-specific driver) larva, showing no V5 staining. (b) A wing disc, with a portion of the haltere disc, from a Sage >V5-SasFL larva, showing bright V5 staining. (c) A wing disc, with a portion of the haltere disc, from a Sage >V5-Sasshort larva, showing little or no V5 staining. Imaginal discs display no expression of GFP or mCherry reporters driven by Sage-GAL4. (d-f) Wing discs incubated with EVs from V5-SasFL-expressing S2 cells and stained with anti-V5. For anti-Ptp10D and anti-Numb staining, see Figure 3\u2014figure supplement 1. (d) ap-GAL4/+; (e) ap >Ptp10 D; (f) ap >Ptp10 D+Numb. (d) Low levels of anti-V5 staining are observed. (e) Higher levels are observed in disc folds, which also express Ptp10D (Figure 3\u2014figure supplement 1). (f) Bright anti-V5 staining is observed throughout the disc. This pattern matches anti-Numb staining (Figure 3\u2014figure supplement 1). Scale bars in (a) and (d), 50 \u00b5m. (g) Transfer of SasFL from EVs into recipient S2 cells. Supernatants from S2 cells expressing V5-SasFL were incubated with cultures of untransfected S2 cells or cells expressing Ptp10D, Numb, or both, and cell lysates analyzed by western blotting with anti-V5. Note that V5-SasFL levels were elevated relative to control cells by expression of either Ptp10D or Numb, and that levels were further increased by coexpression of Ptp10D and Numb coexpression. (h) Quantitation of results from panels (d-f) and (g). Levels of transferred V5-SasFL were increased by ~fourfold relative to untransfected controls by Ptp10D+Numb coexpression in S2 cells (n=6), and by ~threefold relative to ap-GAL4/+control by Ptp10D+Numb coexpression in wing discs (n=5). Quantitation was done using Image J.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/82874/elife-82874-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (a-c) show the anti-V5 channel, (a\u2019-c\u2019) the anti-Ptp10D channel, (a\u2019\u2019-c\u2019\u2019) the anti-Numb channel, and (a\u2019\u2019\u2019-c\u2019\u2019\u2019) all three channels. When Numb is overexpressed, it labels the entire disc (c\u2019\u2019). Ptp10D localizes to cells in disc folds when overexpressed (b\u2019 and c\u2019). These folds label brightly with anti-V5 in b. (d, d\u2019) Whole larva expressing dsRed from the Sage-GAL4 driver. (d) Phase-contrast/fluorescent image, showing dsRed in SGs (red). (d\u2019) Fluorescent signal alone, in white. Note that there is no fluorescence outside the SGs, demonstrating the specificity of the driver. Scale bar in (a), 50 \u00b5m; scale bar in d\u2019, 1 mm.\n\nTo examine the mechanisms involved in specific targeting of Sas EVs, we added supernatants (EV fraction) from V5-SasFL-expressing S2 cells to S2 cell cultures and analyzed recipient cell lysates by western blotting. We observed that expression of the Sas receptor Ptp10D in recipient cells increased V5-SasFL levels in these cells, as did expression of Numb, a regulator of endocytosis that binds to the Sas ICD (Chien et al., 1998). Expression of both Ptp10D and Numb produced a synergistic effect, increasing V5-SasFL by ~fourfold relative to untransfected recipient cells (Figure 3g\u2013h). We speculate that binding of Numb to the Sas ICD increases Sas uptake and/or protects endocytosed Sas from degradation.\n\nWe then developed an assay to examine the effects of Ptp10D and Numb on Sas targeting in larval cells by incubating dissected 3rd instar wing imaginal discs with V5-SasFL supernatants. Wing discs from driver-alone (control) larvae displayed weak V5 staining after incubation with V5-SasFL EVs. Staining was increased in discs from larvae expressing Ptp10D in imaginal discs, and further elevated (~threefold increase relative to driver control) by expression of both Ptp10D and Numb (Figure 3d\u2013f and h; Figure 3\u2014figure supplement 1).\n\n### Sas binds to dArc1 and mammalian Arc via a conserved tyrosine motif\n\nTo examine whether Sas interacts with specific EV cargoes, we made EV preparations from S2 cells expressing V5-SasFL and from untransfected control cells, lysed them with nonionic detergent, incubated the lysate with anti-V5-coupled magnetic beads, and analyzed bead-bound proteins by mass spectrometry (Figure 4a, Supplementary file 1). We ranked the identified proteins by their degree of enrichment in the V5-SasFL sample relative to the control. Proteins that are present in the V5-SasFL sample should include EV cargoes that bind to SasFL and are therefore present in V5 IPs, plus proteins that nonspecifically bind to V5 beads. Proteins in the control sample would be only those that nonspecifically bind to V5 beads. We observed that the most highly enriched protein (after Sas itself) is dArc1 (22-fold) (Figure 4b). dArc2 is #7 on the list (6-fold). dArc1 mRNA, presumably encapsulated within dArc1 capsids, is known to be a prominent mRNA component of EVs from Drosophila cultured cells (Lefebvre et al., 2016; Ashley et al., 2018). Our data suggest that dArc1, and possibly dArc2, associate with SasFL, since they are enriched in V5 IPs from cells expressing V5-SasFL. We then went on to show that dArc1 binds directly to the Sas ICD (see below).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/82874/elife-82874-fig4-v2.jpg)\n\n**Figure 4.:** (a) Protocol for mass spectrometry analysis. Purified EVs from control S2 cells or S2 cells expressing V5-SasFL were lysed and IP\u2019d with anti-V5, followed by protease digestion and mass spectrometry analysis. (b) Mass spectrometry results. The 7 proteins present at the highest levels in IPs from V5-SasFL EVs relative to IPs from control EVs (>6 fold ratio) are listed. Sas itself was the most highly enriched protein, as expected. dArc1 and dArc2 were enriched by 22-fold and 6-fold, respectively. (c) Co-IP/western blot analysis of association between Sas and Arc fusion proteins in transfected S2 cells. S2 cells were transfected with the V5-mCD8ECD-SasTM-ICD fusion protein construct, or with equivalent constructs in which the Sas ICD was replaced by the Appl or APP ICD, with or without Myc-tagged dArc1 or mammalian (rat) Arc (rArcFL) constructs. Lysates (Input 1%) were blotted with anti-Myc and anti-V5 (left), and IP\u2019d with anti-Myc nanobody and blotted with anti-V5 and anti-Myc (right). Anti-V5 bands of the correct size were observed in anti-Myc IPs when dArc1-Myc was expressed with Sas or Appl ICD constructs (red symbols and boxes), and when Myc-rArcFL was expressed together with Sas or APP ICD constructs (blue symbols and boxes)(n=6). (d) Direct binding of purified GST-dArc1 and GST-rArcFL fusion proteins to Sas, APP, and Appl ICD peptides, as well as to scrambled and YDNPSY deletion mutant Sas peptides. Biotinylated peptides were bound to streptavidin magnetic beads, which were incubated with GST-Arc proteins, followed by western blotting of bead-bound proteins with anti-GST. GST-dArc1 bound to the wild-type, but not to scrambled or YDNPSY deletion mutant Sas ICD peptides, while GST-rArcFL bound to wild-type Sas and APP ICD peptides. (e) Sequences of the complete Sas, APP, and Appl ICDs, corresponding to biotinylated peptide sequences. The conserved tyrosine motif is boxed, with tyrosines in red. *, stop codons.\n\nThe presence of Arc proteins in EVs is consistent with published data from both mammalian and Drosophila cell cultures. EVs from media of short-term cultures of mouse cortical neurons were shown to contain denser objects whose size (~30 nm in diameter) was consistent with mammalian Arc capsids, and which were associated with anti-Arc gold particles (Pastuzyn et al., 2018). For dArc1, capsid-like structures that bound to anti-dArc1 gold particles were detected in lysed preparations of EVs from S2 cells (Ashley et al., 2018). The dArc1 capsid is 37 nm in diameter (Erlendsson et al., 2020; Hallin et al., 2021). As described above, EM tomography of EVs from SasFL-expressing S2 cells showed denser objects of 30\u201340 nm in diameter within many of them (Figure 2d, Figure 2\u2014figure supplement 1), consistent with the idea that these are dArc1 capsids. A video of a 3D reconstruction of the EM tomogram of the EV in Figure 2d is included, and Figure 2\u2014figure supplement 1 shows a still image from this video.\n\nOther proteins observed in the mass spectrometric analysis that were present at higher levels in the IP from V5-SasFL-expressing EVs included small ribonucleoproteins (SmE and SmF), a ribosomal protein (NHP2), and a collagen (Vkg; Figure 4b). Proteins in these categories were found to be major EV components in a proteomic analysis of S2 and Kc167 cell EVs (Koppen et al., 2011). We think it likely that some or all these proteins are abundant contaminants that do not actually interact with Sas but happened to be present at higher levels in the IP from Sas-expressing cells vs. the IP from control cells. We did not further examine any of these proteins.\n\nSince dArc1 was enriched in SasFL preparations purified from EV lysates with anti-V5, we then investigated whether it binds to the Sas ICD (which would be in the EV interior) by co-IP in S2 cells. We coexpressed Myc epitope-tagged dArc1 with a fusion protein in which the V5-tagged ECD of mouse CD8 was attached to the TM domain and the 37 aa ICD of Sas. We then IP\u2019d cell lysates with anti-Myc, and detected V5-mCD8ECD-SasTM-ICD and dArc1-Myc by western blotting. We observed that dArc1 co-IP\u2019d with the Sas ICD fusion protein (Figure 4c).\n\nThe Sas ICD sequence contains the sequence motif YDNPSY, which is a PTB-binding motif (NPXY) that overlaps by two amino acids with an SH2-binding motif (YXXP) that is also a potential Abl tyrosine kinase substrate sequence (Colicelli, 2010; Figure 4e). The NPXY motif is the target for binding of the Numb PTB (Li et al., 1998). This suggests that an SH2 protein and a PTB protein might compete for binding to this sequence, if the first tyrosine was phosphorylated to create an SH2 docking site. The PTB domain of Numb does not require tyrosine phosphorylation to bind to its NPXY target. Interestingly, in an earlier mass spectrometric analysis, we found that the Shc protein, which contains a phosphotyrosine-binding SH2 domain, was associated with Sas purified from S2 cells treated with pervanadate to induce high-level tyrosine phosphorylation.\n\nWe searched for other Drosophila CSPs containing a sequence with similar properties in their ICDs, and found only one, Appl, which has the sequence YENPTY but is otherwise unrelated to the Sas ICD. Human APP, the mammalian ortholog of Appl, contains the same sequence in its short ICD (Figure 4e), as do the two APP paralogs, APLP1 and APLP2. We then replaced the Sas ICD in the V5-mCD8ECD-SasTM-ICD construct with the Appl and APP ICDs, and found that the Appl ICD protein co-IP\u2019d with dArc1-Myc (Figure 4c), implicating the Y(D/E)NP(S/T)Y sequence in binding to dArc1. This sequence contains the consensus motif for binding of mammalian Arc to TARP\u03b32, CaMKII, and NMDA receptor peptides, which is X-P-X-(Y/F/H)(Zhang et al., 2015; Nielsen et al., 2019). Arc binds to the NMDA receptor as a monomer (Nielsen et al., 2019). The TARP\u03b32 Arc-binding peptide is RIPSYR, which is similar to the sequences in Sas (PSYK) and APP (PTYK). Accordingly, we expressed Myc-tagged mammalian Arc (rArcFL) in S2 cells and examined whether it could co-IP with the V5-mCD8-ICD fusion proteins. We observed that Myc-rArcFL was able to co-IP with the Sas and APP ICDs (Figure 4c).\n\nThe co-IP data indicate that the Sas, APP, and Appl ICDs associate with dArc1 and Arc, but does not show that the proteins bind directly to each other. To evaluate this, we made the complete Sas, APP, and Appl ICDs (Figure 4e), as well as a scrambled version of the Sas ICD and a deletion mutant of the Sas ICD that lacks the YDNPSY sequence, as biotinylated peptides, and bound these to streptavidin-coupled magnetic beads. To make purified Arc proteins for binding, we expressed dArc1 and mammalian Arc as GST fusion proteins in E. coli. We mixed the beads with purified GST-dArc1 and GST-rArcFL proteins and examined whether we could observe specific binding. As a positive control, we made purified Numb PTB domain, and showed that it bound as expected to the Sas, APP, and Appl peptides, which all contain the NPXY PTB-binding motif, but not to the scrambled Sas peptide or the YDNPSY deletion mutant. In the peptide binding assay, we observed that dArc1 directly bound to the Sas ICD peptide, but not to the other peptides. Mammalian Arc also bound to the Sas ICD peptide, as well as to the APP ICD peptide (Figure 4d).\n\nMammalian and Drosophila Arc are not orthologs, and are apparently derived from independent Ty3/gypsy retrotransposon lineages (Ashley et al., 2018; Pastuzyn et al., 2018; Hantak et al., 2021). The fact that both proteins mediate intercellular communication suggests that they may be products of convergent evolution. Our results implicate the Y(D/E)NP(S/T)Y sequence as a determinant of binding to Arcs (Figure 4e), and show that fly and mammalian Arcs can bind to the same peptide sequences.\n\nOur data also suggest that APP might be a CSP that has a relationship to Arc which is similar to that of Sas to dArc1. APP also localizes to EVs (Laulagnier et al., 2018; P\u00e9rez-Gonz\u00e1lez et al., 2020). The connection between APP and Arc will be of interest to explore in future studies, since Arc has been implicated in AD pathogenesis (Wu et al., 2011; Landgren et al., 2012; Bi et al., 2018). The first Y in the YENPTY motif in APP has been reported to be a substrate for the Abl tyrosine kinase (Zambrano et al., 2001). If YENP was phosphorylated, it would become a docking site for a class of SH2 domain proteins, and binding of this protein(s) could occlude Arc binding to the adjacent PTYK sequence. The Abl inhibitor imatinib (Gleevec), which would be expected to block phosphorylation of this site, inhibits formation of \u03b2-amyloid peptide (A\u03b2)(Netzer et al., 2003), and binding of Arc to APP could be relevant to this effect.\n\nExcel file of mass spectrometry data. Contains two tabs: (1) Raw MaxQuant File; (2) Peptide and LFQ values.\n\n### Sas can facilitate intercellular transfer of dArc1 and its mRNA in vivo\n\nSas is not required for loading of dArc1 capsids into EVs, since dArc1 mRNA is a normal component of EVs from cell lines that do not express Sas. If it behaves like mammalian Arc in its interactions with peptides (Nielsen et al., 2019), dArc1 might bind to Sas as a monomer. Perhaps Sas recruits dArc1 monomers (possibly bound to mRNA via their Zn2+ fingers) to nascent EVs during their biogenesis, and they then assemble into capsids. Binding of Sas to dArc1 may help to increase the probability that Sas-bearing EVs contain dArc1 capsids bearing dArc1 mRNA. One function of Sas might then be to deliver the EVs and their dArc1 capsid cargo, including encapsulated RNA, to specific recipient cells that express the Sas binding partner Ptp10D.\n\nHaving shown that SasFL can move within larvae and that it binds to dArc1, which is a known component of EVs that mediates intercellular communication, we then examined whether it can cause dArc1 to move from source cells into recipient cells in vivo. To establish an assay system for dArc1 capsid movement in embryos, we first expressed V5-SasFL in late stage 16 embryonic SGs together with RFP, and observed that V5 signal moved to the gut and tracheae, while RFP was retained in the SGs as expected. When V5-Sasshort was expressed in SGs, however, V5 staining was only observed in the SGs (Figure 5\u2014figure supplement 1). This is consistent with the failure of V5-Sasshort to move from SGs to imaginal discs in larvae (Figure 3c).\n\nTo examine dArc1 protein transport, we needed to express untagged dArc1 and visualize it with antibody against dArc1 (Ashley et al., 2018), because we were unsuccessful in detecting movement of tagged versions of dArc1. dArc1 is made at very low levels in embryos. In late stage 16 control embryos (Sage-GAL4/+ or Sage-GAL4 >SasFL), we observed faint staining throughout the embryo, with higher levels in the gut (Figure 5\u2014figure supplement 2). We then expressed dArc1 from a UAS construct that contained only the dArc1 open reading frame (ORF), flanked by heterologous 5\u2019 and 3\u2019 UTR sequences. The 3\u2019 UTR was derived from SV40. When we expressed dArc1 alone in SGs, we observed bright anti-dArc1 staining in the SGs and increased staining relative to controls in the gut and in dots in the body wall. When SasFL and dArc1 were expressed together, dArc1 staining in the gut was further increased (Figure 5\u2014figure supplement 2).\n\nTo localize dArc1 staining in the body wall and compare it to Ptp10D staining, we examined dissected \u2018fillets\u2019 at high magnification. For reference, Figure 5\u2014figure supplement 1 shows the evolution of Ptp10D expression in fillets from stage 14 to late stage 16. VNC expression continuously increases during this time period, while tracheal expression begins in stage 14, decreases in stage 15, and re-emerges at stage 16, at which time Ptp10D is expressed in the main tracheal trunk and major tracheal branches. Figure 5d\u2019 shows that, in late stage 16 embryos expressing both SasFL and dArc1 in SGs, there were many bright puncta stained with anti-dArc1 in the dorsal tracheal trunk, which expresses Ptp10D. These puncta appeared similar to those previously observed at larval NMJs (Ashley et al., 2018). They were not detectable in control embryos (Sage-GAL4/+; Figure 5a\u2019).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/82874/elife-82874-fig5-v2.jpg)\n\n**Figure 5.:** (a-d) Localization of dArc1 protein and Ptp10D in high-magnification views of body walls from fillets of late stage 16 embryos (anterior to the left, dorsal up). (a) Control (Sage-GAL4/+); (b) Sage >dArc1; (c), Sage >SasFL; (d), Sage >SasFL + dArc1. (a\u2013d) show double-staining with anti-dArc1 (red) and anti-Ptp10D (blue). (a\u2019-d\u2019) show the dArc1 channel alone. (a\u2019\u2019-d\u2019\u2019) show the Ptp10D channel alone. Arrows, dorsal tracheal trunk. There are numerous bright dArc1 puncta in the tracheal trunk when SasFL and dArc1 are expressed together. Fewer and weaker puncta are observed when SasFL or dArc1 are expressed alone, and no puncta are seen in Sage-GAL4/+ controls. (e\u2013i) dArc1 mRNA from the endogenous gene (+strand), detected by FISH with a 3\u2019 UTR minus-strand (antisense) probe. (e) Control (Sage-GAL4/+); (f) Sage >dArc1; (g) Sage >SasFL; (h) Sage >SasFL + dArc1. There is weak expression of dArc1 mRNA in the SGs in controls. When dArc1 (from an ORF construct) is expressed alone, bright SG staining is observed, indicating that exogenous dArc1 increases expression of endogenous dArc1 mRNA. There are also scattered dArc1 mRNA puncta elsewhere in the embryo. When SasFL and dArc1 are expressed together, bright dArc1 mRNA FISH staining of the entire tracheal system is observed (arrows indicate dorsal tracheal trunks), as well as the foregut (arrowhead) and esophagus (n>100 embryos examined for each genotype; representative results are shown). i, i\u2019, high-magnification views of dArc1 mRNA in the tracheae in an obliquely mounted (anterior to the left, dorsal up) embryo expressing SasFL and dArc1 in SGs. i\u2019 is a higher-magnification inset (yellow dotted outline) from (i). Arrow in (i), SG; arrowhead, foregut loop. Arrow in i\u2019, dorsal tracheal trunk; arrowhead, transverse connective. Scale bar in (e) (applies to e\u2013h), 50 \u00b5m; scale bar in (a) (applies to a\u2013d), 10 \u00b5m; scale bar in (i), 50 \u00b5m; scale bar in (i\u2019), 50 \u00b5m.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/82874/elife-82874-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (a-d) Expression of Ptp10D in the tracheae (arrows) and VNC axons (arrowheads) of wt embryos of advancing age, from stage 14 (a), through stage 15 and early 16 (b and c), to late stage 16 (d). In (d), the white arrow indicates the dorsal tracheal trunk and the yellow arrows indicate transverse connectives (also indicated in b). (e\u2013g) Localization of RFP (e), V5-SasFL (f), and V5-Sasshort (g), driven by Sage-GAL4. Whole-mount late stage 16 embryos (top-down view, anterior to the left) were double-stained with anti-RFP (e) or anti-V5 (f,g) (magenta) plus anti-Crumbs (apical marker, expressed in epithelia, including tracheae; green). e\u2019 shows the RFP channel alone, and f\u2019 and g\u2019 show the V5 channel. Arrows, SGs. Note that V5-SasFL is observed in the gut and peripheral dots, while RFP and V5-Sasshort are retained in the SGs. Scale bar in a (applies to a\u2013d), 20 \u00b5M; scale bar in e (applies to e\u2013g), 50 \u00b5M.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/82874/elife-82874-fig5-figsupp2-v2.jpg)\n\n**Figure 5\u2014figure supplement 2.:** (a-d) Localization of dArc1 protein in whole-mount late stage 16 embryos. (a) Control (Sage-GAL4/+); (b) Sage >dArc1 ORF; (c) Sage >SasFL; (d) Sage >SasFL + dArc1 ORF. (a\u2013d) show double-staining with anti-dArc1 (magenta) and anti-Crumbs (green). (a\u2019-d\u2019) show the dArc1 channel alone. Arrows, SGs. Bright dArc1 SG staining is observed when dArc1 is expressed. When SasFL and dArc1 are both expressed, bright dArc1 staining of the gut and peripheral dots is observed. Weaker gut staining is observed when dArc1 is expressed alone. (e\u2013h) FISH analysis of these 4 genotypes, using a + (sense) strand dArc1 3\u2019 UTR probe, which would detect the (-) strand. No specific signal is observed. (i) FISH analysis of embryos expressing Sasshort and dArc1 ORF from Sage-GAL4. No signal is observed outside of the SGs (arrow). (j) FISH analysis of dArc1 mRNA expression in embryos expressing SasECD-TM-GFP and dArc1 ORF from Sage-GAL4. No signal is observed outside of the SGs. (i\u2019-j\u2019), FISH analysis of these two genotypes, using a + (sense) strand dArc1 3\u2019 UTR probe. No specific signal is observed. (k\u2013m), FISH analysis of embryos expressing dArc1 ORF, SasFL and dArc1 ORF, and Sasshort and dArc1 ORF from Sage-GAL4, with SV40 3\u2019 UTR antisense strand (+) (k\u2013m) and SV40 3\u2019 UTR sense strand (-) (k\u2019-m\u2019) probes. Signal is observed only in the SGs (arrows) with the antisense probe (detecting the +strand), and no signal is observed with the sense probe. Scale bars in (a) and (e) (applies to all panels), 50 \u00b5m.\n\nThere were lower numbers of fainter dArc1 puncta in tracheal trunks of the two other genotypes (Sage >dArc1 and Sage >SasFL)(Figure 5b\u2019 and c\u2019). Endogenous Sas is expressed at low levels in SGs, and endogenous dArc1 mRNA is also present in SGs (Figure 5g), although dArc1 protein is not detectable. Endogenous SasFL may be able to transport some of the overexpressed dArc1, and overexpressed SasFL might transport some endogenous dArc1, giving rise to the observed puncta. It is also interesting that dArc1 (and dArc1 mRNA; see below) is observed in tracheal cells, but not in VNC neurons, which also express Ptp10D at high levels. There is a glial sheath around the VNC at late stage 16, and this might block access of EVs to Ptp10D-expressing neurons. Alternatively, perhaps there are cofactors required for EV binding and/or internalization that are not expressed in neurons.\n\nDramatic effects of SasFL on dArc1 expression and localization were observed when endogenous dArc1 mRNA was examined by fluorescence in situ hybridization (FISH) in embryos expressing the UAS-dArc1 ORF construct in SGs. To detect mRNA, we used the 700 nt antisense 3\u2019 UTR probe employed in the (Ashley et al., 2018) paper to visualize dArc1 mRNA puncta at the NMJ. Note that this probe does not recognize overexpressed dArc1 mRNA made from the UAS construct, because that contains only the dArc1 ORF and no dArc1 3\u2019 UTR sequences. In late stage 16 control embryos (Sage-GAL4/+), we observed faint FISH signals in the SGs and a few puncta elsewhere in the embryo (Figure 5e). A similar pattern was seen in Sage >SasFL embryos (Figure 5g). When dArc1 was expressed from the UAS-dArc1 ORF construct, we observed bright FISH signals in SGs with the endogenous dArc1 3\u2019 UTR probe (Figure 5f). There were also scattered puncta in other parts of the embryos. This shows that exogenous dArc1 induces expression of endogenous dArc1 mRNA (or stabilizes the mRNA). No signal was observed when a sense dArc1 3\u2019 UTR probe was used for FISH (Figure 5\u2014figure supplement 2). Finally, when SasFL and dArc1 were expressed together, we observed a completely different pattern, in which the entire tracheal system is lit up by the FISH signal for the endogenous dArc1 3\u2019 UTR (Figure 5h). The foregut and esophagus also stain brightly. By contrast, in embryos expressing Sasshort and dArc1 in SGs, the dArc1 FISH signal is observed in the SGs, with only a few puncta elsewhere in the embryo (Figure 5\u2014figure supplement 2), consistent with the fact that Sasshort cannot move within the embryo (Figure 5\u2014figure supplement 1).\n\nWhen an antisense probe for the SV40 3\u2019 UTR sequence in the UAS-dArc1 construct was used for FISH, we observed signal only within the SGs, even when SasFL was coexpressed (Figure 5\u2014figure supplement 2). This suggests that dArc1 mRNA lacking the endogenous dArc1 3\u2019 UTR sequences is not efficiently loaded into dArc1 capsids that can move elsewhere in the embryo. This is consistent with the findings of Ashley et al., 2018, who showed that the dArc1 3\u2019 UTR is required for dArc1 mRNA transfer at the NMJ. No signal was observed when a sense SV40 3\u2019 UTR probe was used for FISH (Figure 5\u2014figure supplement 2).\n\nFigure 5i and i\u2019 show the tracheae and SGs at higher magnification in side views of an embryo expressing both SasFL and dArc1 in SGs. The dorsal tracheal trunk (arrow) and the transverse connective (arrowhead) both display bright dArc1 FISH signals. Note that, because this is a confocal image (optical section), the cells at the edges of the tracheal trunk are bright, while the hollow lumen is dark. The brightness of the tracheal FISH signal suggests that it represents not only dArc1 mRNA transferred from capsids, but dArc1 mRNA synthesized in these cells in response to dArc1 protein made from the dArc1 mRNA transported in the capsid. If this is correct, it would represent an amplification mechanism in which translated dArc1 mRNA from EVs can induce expression of much more dArc1 mRNA in the recipient cells. Finally, we examined whether the Sas ICD is required for dArc1 mRNA transport by expressing dArc1 together with a protein (SasECD-TM-GFP) in which the Sas ICD was replaced by GFP. This protein is present in EVs when expressed in S2 cells, but it does not produce any dArc1 FISH signal outside of the SGs (Figure 5\u2014figure supplement 2), indicating that it cannot facilitate transport of dArc1 capsids to tracheal cells.\n\n### Conclusions\n\nOur results on movement of Sas EVs containing dArc1 capsids are summarized in the diagram of Figure 6. These findings contribute to the understanding of intercellular communication mechanisms by showing that SasFL is an EV targeting ligand that can direct internalization of EVs into cells expressing the Sas receptor Ptp10D. Endogenous SasFL is likely to move between cells in vivo, because tagged SasFL moves away from both neuronal and non-neuronal cells when ectopically expressed.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/82874/elife-82874-fig6-v2.jpg)\n\n**Figure 6.:** Steps 1 and 2, the presence of the dArc1 protein made from a UAS-dArc1 ORF construct increases expression of endogenous dArc1 mRNA in embryonic SGs. EVs with SasFL on their surfaces bearing dArc1 capsids containing endogenous dArc1 mRNA diffuse or are transported through the hemolymph (Step 3) and bind to Ptp10D-expressing tracheal cells (Step 4). The EVs internalize into the tracheal cells and release dArc1 mRNA (Step 5), and dArc1 protein translated from that mRNA induces expression of more endogenous dArc1 mRNA (Steps 5 and 6). Nuclei, orange circles in 1\u20132 and blue circles in 4\u20136.\n\ndArc1 is related to retrotransposon Gag proteins, and it forms a capsid that contains dArc1 mRNA and is loaded into EVs (Ashley et al., 2018). Overexpressed SasFL can facilitate transfer of dArc1 capsids into distant Ptp10D-expressing recipient cells in vivo. Whether endogenous SasFL also transfers dArc1 between cells cannot be determined from our data, and would be difficult to evaluate, since both the sas and dArc1 genes are broadly expressed. The Sas ICD binds directly to dArc1.\n\nMammalian Arc also forms capsids that are transported via EVs (Pastuzyn et al., 2018), and it binds to the Sas and APP ICDs, which share a tyrosine motif. Full-length APP and some of its proteolytic products are localized to EVs, and EVs from N2a cells bearing tagged APP are internalized into cultured neurons, but not into glia (Laulagnier et al., 2018). It will be interesting to determine if APP EVs contain Arc capsids, and if the presence of APP on Arc-containing EVs causes Arc to be preferentially delivered to a specific population of neurons. This could have implications for Alzheimer\u2019s disease research, because APP is the source of \u03b2-amyloid peptide and Arc has been linked to \u03b2-amyloid accumulation and AD pathogenesis (Wu et al., 2011; Landgren et al., 2012; Bi et al., 2018).\n\n## Methods\n\n### Fly stocks and genetics\n\nThe following stocks were used: yw for wild-type control, ap-GAL4 (Bloomington 50156), UAS-mCD8::GFP (Bloomington 5130), UAS-myr::mRFP (Bloomington 7118), UAS-mCherry.NLS (Bloomington 38424), sas15 (null mutant)(Bloomington 2098), Sage-GAL4 (a gift from Deborah J. Andrew), Ptp10DEP1172 (Bloomington 11332), UAS-dArc1 (Bloomington 37532), UAS-Numb (a gift from Yuh Nung Jan), UAS-SasFL and UAS-V5-SasFL (Lee et al., 2013), Arc1esm18 (Bloomington 37530). Crosses and embryo collections were performed at room temperature. For overexpression experiments, embryos were shifted to 29 \u00b0C for at least 120 min prior to fixation and staining and 3rd instar larvae were shifted to 29 \u00b0C for overnight for further analysis. For the EV targeting experiments, imaginal discs from 3rd instar larvae were harvested at room temperature and incubated in 200 \u00b5l of S2 supernatant overnight at 29 \u00b0C before fixation and staining. There are 10,000\u201350,000 cells in a 3rd instar imaginal disc. Given the results from the NTA analysis, we can conclude that ~140,000 EVs are present in 200 \u00b5l of supernatant from V5-SasFL-expressing S2 cells. We used 5 wing discs per incubation, so the ratio of EVs to cells is ~0.5 to~2. The relative V5 signal intensities on the imaginal discs were measured by densitometry analysis using ImageJ software.\n\n### Immunohistochemistry\n\nEmbryos and larval tissues were stained with standard immunohistochemical procedures. The following antibodies were used: rabbit anti-V5 (1:1000, Invitrogen); mouse anti-GFP (1:1000, Invitrogen); rabbit-anti-SasFL (1:2000, gift of D. Cavener); rat-anti-Sasshort (1:50, GenScript USA Inc); mAb Cq4 against crumbs (1:100, DSHB); guinea pig-anti-Numb (1:1000, gift from J. Skeath); rabbit-anti-dArc1 (1:100, gift from T. Thomson); mAb 8B2 against Ptp10D (1:5, DSHB); mAb MR1A against Prospero (1:40, DSHB); rat-anti-Repo (1/2000, gift from S. Banerjee); rabbit anti-Evi (Wntless, 1:5000, gift from K. Basler); FITC-conjugated phalloidin (1:1000, Thermo Fisher Scientific); AlexaFluor 488 anti-mouse, AlexaFluor 488 anti-rat, AlexaFluor 568 anti-rabbit, AlexaFluor 568 anti-rat and AlexaFluor 647 anti-mouse (1:1000, Invitrogen). Rat anti-Sasshort antibody was generated against a synthetic peptide, HSSIPANGANNLQP, flanking the EVT region (intron is between the N and G residues) and the KLH-conjugated antibody was purified by protein G column (GenScript USA Inc). Samples were mounted in VECTASHIELD (Vector Laboratories) and analyzed on a Zeiss LSM 880.\n\n### Cell culture and preparation of EVs and cell lysates\n\nEVs and cell lysates were prepared from S2 cells (ATCC, CRL-1963) that were cultured for four days at 22\u2103 in Schneider\u2019s medium (Gibco) supplemented with 10% exosome-free FBS (#EXO-FBSHI-50A-1, SBI) to avoid contamination from Bovine serum exosomes. S2 cells were authenticated and confirmed to be free of mycoplasma by ATCC. DNA constructs were transiently transfected into S2 cells using Effectene (Qiagen). EVs for western blot analysis and electron microscopy were collected using Total Exosome Isolation reagent (#4478359, Invitrogen) from the supernatants of S2 cultures. This kit has been found to produce exosomes of equivalent quality from mammalian cells (with respect to the presence of exosome markers and the depletion of non-exosome proteins) to those generated using ultracentrifugation (Skottvoll et al., 2019). One part of the reagent and two parts of supernatant were mixed and incubated at 4\u2103 overnight. Pellets of EVs were collected after centrifugation at 10,000 x g for 60 min at 4\u2103. The EV pellets were resuspended in PBS for western blot analysis.\n\nTo prepare EVs using the ultracentrifugation protocol of Th\u00e9ry et al., 2006, S2 cells were cultured in a medium with 10% exosome-free FBS (SBI) and the cultures were grown in 100 mm Petri dishes at 22\u2103. Cells were collected at 1\u20131.5\u00d7106 cells/ml. The supernatant from a 50 ml culture was filtered using a 0.22 \u00b5m filter to eliminate dead cells and large debris prior to further purification by ultracentrifugation (Optima MAX-XP, Beckman Coulter). The filtered supernatants were spun at 100,000 x g for 70 min and the collected EV pellets were resuspended in PBS. Then, the samples were spun again at 100,000 x g for 70 min. The final EV pellet was resuspended in 60 \u00b5L of PBS and processed for further analyses or stored at \u201380\u2103.\n\nFor the EV targeting experiments between S2 cells, supernatants from transiently transfected donor cells were collected and filtered using 0.22 \u00b5m PVDF membranes before resuspension and incubation with the recipient cells. Two days before the supernatant swap between EV donor and recipient cell cultures, the recipient cells were transiently transfected with DNA constructs. The recipient cells were incubated in the supernatants with EVs from donor cells for 2 hr at 22\u2103. For western blot analyses, cell lysates were prepared using RIPA cell lysis buffer. To measure the size and number of EV particles from S2 cell culture, collected EV pellets were subjected to NTA by System Biosciences, LLC (Palo Alto, CA, USA) using a NanoSight instrument. The NTA measurements rely on light scattering to extract particle size and the number of particles in a sample and the NTA software (Version 2.3) collects data on multiple particles to calculate the hydrodynamic diameter of each particle using the Stokes-Einstein equation (System Biosciences, LLC).\n\n### Mass spectrometry analysis\n\nSamples were lyophilized and proteins were trypsin-digested as previously described (Pierce et al., 2013). A total of 200 ng of digested peptides were analyzed as previously described (Sung et al., 2016). Briefly, peptides were loaded onto a 26 cm analytical HPLC column (75 \u00b5m inner diameter) packed with ReproSil-Pur C18AQ 1.9 \u00b5m resin (120 \u00c5 pore size; Dr. Maisch, Ammerbuch, Germany). Peptides were separated with a 120 min gradient at a flow rate of 350 nl/min at 50 \u00b0C (column heater) using the following gradient: 2\u20136% solvent B (7.5 min), 6\u201325% B (82.5 min), 25\u201340% B (30 min), 40\u2013100% B (1 min), and 100% B (9 min), where solvent A was 97.8% H2O, 2% ACN, and 0.2% formic acid, and solvent B was 19.8% H2O, 80% ACN, and 0.2% formic acid. Samples were analyzed using an EASY-nLC 1000 coupled to an Orbitrap Fusion operated in data-dependent acquisition mode to automatically switch between a full scan (m/z=350\u20131500) in the Orbitrap at 120,000 resolving power and an MS/MS scan of higher-energy collisional dissociation fragmentation detected in the ion trap (using TopSpeed). The automatic gain control (AGC) targets of the Orbitrap and ion trap were 400,000 and 10,000.\n\n### Mass spectrometry data\n\nRaw data were searched using MaxQuant (version 1.5.3.30)(Cox and Mann, 2008; Wagner et al., 2011) against the Uniprot D melanogaster database. Fragment ion tolerance was 0.5 Da. Precursor mass tolerance was 4.5 ppm after automatic recalibration. Searches were permitted up to two missed tryptic peptide cleavages. Cysteine carbamidomethylation was designated as a fixed modification while Methionine oxidation and N-terminal acetylation were designated as variable modifications. False discovery rates were estimated to be <1% using a target-decoy approach. Complete data are in Supplementary file 1.\n\n### Protein expression and purification\n\nTo express and purify Arc proteins in the E. coli system, the cDNAs of dArc1, dArc2 and rArc were subcloned into the pGEX-4T-1 vectors together with GST-6xHis-tags and TEV protease cleavage site. Arc proteins were expressed in E. coli strain BL21 (DE3) grown in LB broth by induction of log-phase cultures with 1 mM isopropyl-\u03b2-D-thiogalactopyranoside (IPTG) and incubated overnight at 23 \u00b0C. Cells were pelleted and resuspended in B-PER lysis buffer (#78243, Thermo Fisher Scientific) before centrifugation to collect cell lysates.\n\nTagged Arc proteins were pulled down using Ni-NTA resin column and the eluates with GST-6xHis-dArc1 and GST-6xHis\u2013rArc proteins were used for peptide binding assays.\n\n### Western blotting\n\nProteins were separated by SDS\u2013PAGE, transferred at 200 mA for 60 min to nitrocellulose membranes using a Bio-Rad Wet Tank Blotting System in Tris-Glycine Transfer Buffer with 10% methanol. Blocked membranes were incubated with primary antibodies in 0.5% milk PBS-0.1% Tween for overnight. HRP-conjugated antibodies (anti-V5-HRP (#RV5-45P-Z, ICL), anti-mouse IgG HRP (#sc-516102, Santa Cruz Biotechnology), anti-beta-actin-HRP (#HRP-60008, Proteintech), anti-rabbit IgG HRP (#65\u20136120, Invitrogen), anti-rat IgG HRP (#35470, Invitrogen), anti-alpha-tubulin-HRP (#HRP-66031, Proteintech), anti-cMyc-HRP (#RMYC-45P-Z, ICL), and anti-GST-HRP (#MA4-004-HRP, Invitrogen)) were used at 1:10,000 for 60 min. Blots were developed using ECL Western Blotting Substrate (#32109, Pierce), and imaged on a MINI-MED 90 X-Ray Film Processor (AFP Manufacturing Co.).\n\n### Electron tomography and immuno-EM\n\nFor imaging of EVs by electron tomography (ET), EVs were prepared using the Exosome Isolation Kit as described above. Supernatant was removed and replaced with ~10 ml 10% Ficoll, 5% sucrose in 0.1 M sodium cacodylate trihydrate with minimal disturbance of the pellet. Pellets were transferred to brass planchettes (type A/B; Ted Pella, Inc) and ultra-rapidly frozen with a HPM-010 high-pressure freezing machine (Bal-Tec/ABRA). Vitrified samples were transferred under liquid nitrogen to cryo-tubes (nunc) containing a frozen solution of 2.5% osmium tetroxide, 0.05% uranyl acetate in acetone and placed in an AFS-2 Freeze-Substitution Machine (Leica Microsystems, Vienna). Samples were freeze-substituted at \u201390 \u00b0C for 72 hr, warmed to \u201320 \u00b0C over 12 hr, held at \u201320\u00b0 for 12 hr, then warmed to room temperature. Samples were rinsed 3 x with acetone and infiltrated into Epon-Araldite resin (Electron Microscopy Sciences). Resin was polymerized at 60 \u00b0C for 24 hr.\n\nSerial semi-thin (170 nm) sections were cut with a UC6 ultramicrotome (Leica Microsystems) using a diamond knife (Diatome Ltd., Switzerland). Sections were collected onto Formar-coated copper/rhodium slot grids (Electron Microscopy Sciences) and stained with 3% uranyl acetate and lead citrate. Colloidal gold particles (10 nm) were placed on both surfaces of the grid to serve as fiducial markers for subsequent image alignment. Grids were placed in a dual-axis tomography holder (Model 2040; Fischione Instruments, Inc) and imaged with a Tecnai T12 transmission electron microscope (Thermo-Fisher Scientific) at 120 k eV. For dual-axis tomography, grids were tilted +/-62\u00b0 and images acquired at 1\u00b0 intervals. The grid was rotated 90\u00b0 and a similar tilt-series was recorded about the orthogonal axis. Tilt-series data was acquired automatically using the SerialEM software package. Tomographic data was calculated, analyzed and modeled on iMac Pro and M1 computers (Apple, Inc) using the IMOD software package.\n\nFor immuno-EM, EV pellets were prepared as per above. Supernatant was removed and pellets fixed with 4% paraformaldehyde in PBS for 1 hr. Pellets were then infiltrated with 2.1 M sucrose in PBS over 24 hr, with >3 changes of the infiltration solution during that time. Pellets were placed onto aluminum sectioning stubs, drained of excess liquid and frozen in liquid nitrogen. Cryosections (100 nm) were cut at \u2013140 \u00b0C with a UC6/FC6 cryoultramicrotome (Leica Microsystems) using cryo-diamond knives (Diatome Ltd). Cryosections were collected with a wire loop containing 2.3 M sucrose in PBS and transferred to Formvar-coated, carbon-coated, glow-discharged 100-mesh copper/rhodium grids (Electron Microscopy Sciences) at room temperature. Nonspecific antibody binding sites were blocked by incubating the grids with 10% calf serum in PBS for 30\u2019. Sections were then labeled with 1\u00b0 antibodies (diluted in 5% calf serum/PBS) for 2 hr, rinsed 4 x with PBS, then labeled with 10 nm and/or 15 nm gold-conjugated 2\u00b0 antibodies (diluted in 5% calf serum/PBS) for 2 hr. Grids were rinsed 4 x with PBS, 3 x with dH2O then simultaneously negatively stained and stabilized with 1% uranyl acetate, 1% methylcellulose in dH2O. Immuno-EM samples were imaged as per the tomography samples, above.\n\n### Immunoprecipitation\n\nFor the Myc-co-IP assay, transiently transfected S2 cells using Effectene (Qiagen) were cultured in Schneider\u2019s medium at 22 \u2009\u00b0C for 4 days. Tagged expression constructs (V5-mCD8ECD-sasTM-ICD, V5-mCD8ECD-APPICD, V5-mCD8ECD-ApplICD, dArc1-Myc and Myc-rArc) were cloned in pAc5.1B vector according to standard cloning procedure. For IP analysis, cell lysates were prepared using IP Lysis buffer (#87787, Pierce) and the lysates were incubated in Myc-Trap agarose (#yta-20, Chromotek) following the manufacturer\u2019s protocol and the eluates were analyzed by standard western blot analysis.\n\n### Peptide binding assay\n\nFor the peptide binding assay, biotinylated peptides (wt SasICD, SasICD variations (scrambled and \u0394YDNPSY), APPICD and ApplICD) made by RS Synthesis, Inc, were incubated with Streptavidin magnetic beads (#88817, Pierce) for 45 min at 4 \u00b0C and the beads were extensively washed with TBST. Purified GST-6xHis-dArc1 and rArc proteins were added to the beads with bound biotinylated peptides and incubated at 4 \u00b0C overnight. Similar experiments were performed with Numb PTB domain protein purified from E. coli. The beads were carefully washed with TBST and eluates prepared for western blot analysis following the standard protocol described above.\n\n### Fluorescent in situ hybridization (FISH)\n\nThe FISH protocol was a modification of protocols from Kosman et al., 2004. Fixed L16 whole embryos were prepared using standard protocols and rinsed with ethanol quickly four times. Then the embryos were permeabilized twice with a mixture of xylenes and ethanol (1:2, v/v) and washed three times with ethanol for 5 min each. To rehydrate the embryos, the embryos were washed with 100%, 50% and 0% methanol in PBT sequentially for 30 min each step. The rehydrated embryos were permeabilized again using proteinase K (20 \u00b5g/mL in PBT) for exactly 7 min and washed three times for 5 min each in PBT followed by a second fixation (5% paraformaldyhyde and 1% DMSO in PBT) for 25 min and washed three times in PBT for 5 min each. Then the embryos were prepared for pre-hybridization by incubation in 50% hybridization buffer (50% formamide, 5 x SSC, 100 \u03bcg/ml fragmented salmon testes DNA, 50 \u03bcg/ml heparin, 0.1% Tween-20) in PBT for 5 min. For pre-hybridization, embryos were incubated in hybridization buffer for more than 90 min at 55\u2103 while changing the buffer every 30 min. The pre-hybridized embryos were incubated in DIG-tagged dArc1 mRNA probe for 18 hr at 55\u2103 for annealing. The embryos were washed with hybridization buffer three times for 30 min each at 55\u2103, after which the buffer was replaced with replaced the buffer with PBT containing rhodamine-conjugated sheep anti-DIG antibody (#11207750910, SigmaAldrich) overnight at 4\u2103. Then the embryos were washed and mounted for confocal microscopy.\n\n### Probe preparation\n\nProbes for detection of endogenous dArc1 mRNA were designed against a 760 nt region of the dArc1 mRNA 3\u2019 UTR sequence, which was used for FISH in a previous study (Ashley et al., 2018). Probes for detetion of dArc1 mRNA from the UAS-dArc1 ORF construct were designed against a 616 nt region of SV40 3\u2019 UTR sequence. To generate antisense and sense probes for dArc1 mRNA, cDNA sequences from dArc1 were PCR amplified and purified to use as positive and negative probe templates. The same procedure was used for antisense and sense probes for the SV40 3\u2019 UTR. The DNA templates were heated to 55\u2103 for 2 min and then put back on ice. Transcription reactions were set up to label probes with digoxigenin (DIG, # 11277073910, Roche) and incubated at 37\u2103 for 2 hr. Probes were precipitated and resuspended in hybridization buffer and stored at \u201320\u2103.\n\nThe following primers were used to generate endogenous dArc1 mRNA probes:\n\nThese primers were used to generate SV40 3\u2019 UTR mRNA probes:\n",
+      "created_at": "2025-12-04T02:12:33.004809Z"
+    },
+    {
+      "id": "63221760-8887-4dd2-89fc-be75b0dea988",
+      "submission_id": "ac654878-e2d7-476c-8725-6f13674adf92",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- K VijayRaghavan, https://ror.org/03ht1xw27 National Centre for Biological Sciences, Tata Institute of Fundamental Research India\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.82874.sa0](https://doi.org/10.7554/eLife.82874.sa0)\n\nThe manuscript addresses how extracellular vesicles (EV) are targeted to their recipient cells once they are produced and released. The study shows that a transmembrane protein Sas gets incorporated into EVs, and this protein binds to its receptor Ptp10D on target cells, thus targeting the EVs. The expression of dARC1 in the EV-producing cells leads to the increased expression of the protein dARC1 protein and mRNAs in the recipient cells.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- K VijayRaghavan, https://ror.org/03ht1xw27 National Centre for Biological Sciences, Tata Institute of Fundamental Research India\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.82874.sa1](https://doi.org/10.7554/eLife.82874.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"An extracellular vesicle targeting ligand that binds to Arc proteins and facilitates Arc transport in vivo\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and K VijayRaghavan as the Senior Editor. The following individual involved in the review of your submission has agreed to reveal their identity: Jason D Shepherd (Reviewer #1).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\nExtracellular vesicles (EVs) are emerging as important mediators of cell-to-cell signaling. In this paper the authors aim to demonstrate that Stranded at second (Sas), a Drosophila cell surface protein, binds to dArc1 and Ptp10D to mediate intercellular transport of dArc1 via EVs. dArc1 protein has been shown to form virus-like capsids that carry dArc1 mRNA from neurons to muscle, but little is known about this new intercellular communication pathway. Similarly, not much is known generally about how EVs are targeted to specific cell types, or how specific EV cargo can be delivered. Thus, this work is of interest to cell biologists and neuroscientists. However, the jumbled description of the results and lack of rigor in some experiments diminish the impact and interpretability of the conclusions. Moreover, almost all experiments rely on gain-of-function and over-expression of Sas, thus the relevance to normal physiological signaling is unclear. There are other concerns detailed below that need to be addressed before acceptance. The authors are urged to address concerns raised that can be dealt with using Drosophila. The manuscript should also be toned to make it more 'Drosophila-centric' as generalizations will require additional experiments ( such as with mammalian cell culture). While re-writing, a substantial reduction in the introduction is also suggested. In particular, there is no need to summarise the results in this section in such detail.\n\nWe detail below a composite summary of the major points raised by the reviewers for your attention,\n\nThe authors' EV isolation protocol is generally not a preferred procedure because it precipitates proteinaceous non-vesicular material, resulting in a mixed preparation of vesicles and protein aggregates. While the authors point to Skotvoll et al., 2019, this paper compares only one approach (ultracentrifugation) to the EV isolation kit. While there is an overlap in the protein components of these approaches in their report, there are considerable differences in the identified proteins. The consensus in the field is that these kits fall under what MISEV2018 Guidelines describe as \"high recovery, low specificity\" methods, and very likely, these samples have a greater incidence of non-vesicular materials. In this case, the authors' samples are more \"secretome-like\" and this is observed in their EM of S2 EVs (Figure S2 a,b,d). Using a more robust and specific EV isolation approach, such as a combination of filtration or ultracentrifugation, followed by density gradient fractionation would absolutely improve the quality of their manuscript by providing more convincing evidence that the proposed cargoes are indeed trafficked within EVs. The authors should provide further experimental validation of Sas's EV enrichment, isolating EVs from cultured cells using a more accurate approach.\n\nThe description of the results omits some data in the figures and is not in a logical order. This makes the manuscript hard to read and follow. There is also a lack of rigor and quantification in some experiments. Specifically:\n\n1. Figure 1\n\nLack of quantification: 1 image is just not enough.\n\nCalculate the ratio lysate/EV, also with EVi as a marker for EVs. Only the lysate is shown. EVs should also!\n\nThe authors claim (line 153) that most of FL Sas are in EVs? ` It looks like 60%, but it depends on the loading. Please quantify.\n\nFurther:\n\nIn Figure 1b, the authors suggest that full-length Sas is a predominant EV component, but not Sas-short. The figure would be strengthened by including data describing the in vivo distribution of the V5-tagged short Sas isoform in conjunction with mCD8-GFP. One would expect the Sas-short isoform to be less broadly distributed compared to Sas-FL.\n\nIn Supplemental Figure 1, the full blots should be shown for panel A. Why are the control \u03b2-Tub bands shown side-by-side, but not the bands for Sas-FL and Sas-short? Also, the authors could include protein samples from wild-type and Sas-15 embryos to enhance the validation of their antibody reagents.\n\n2. Figure 2: Nice IEM and tomography, but many details are needed. Could more IEM profiles (more examples) be provided to be sure of `BG and specificity (in a gallery). Are the capsid reconstitution with purified dARC1 and 2 performed in the presence of darc1 rRNA? Any RNA (figure 2)? Description of dArc1 putative capsids is absent from the Results section (2f,g) until describing Figure 4 data (line 362). Given that there is no immuno-EM labeling of dArc1 protein, it is not clear if Sas and dArc1 are localized to the same EVs. Nor is it clear if the double membrane EVs are actually EVs that contain capsids. Overall, the EM data lacks quantification. How many EVs on average show Sas labeling? How many EVs have double membranes? The immuno-EM data would be strengthened by adding quantifications in the form of distance measurements of gold particles of Anti-V5 and Anti-Sas in relation to EV membranes. The dense protein staining surrounding EVs seems unusual, is this due to an artifact of the purification? EV kits are generally non-specific and isolate non-EV membranes, Corroboration using ultracentrifugation or size exclusion chromatography methods would be beneficial. SAS-FL overexpression results in more EVs, which confounds subsequent experiments suggesting that Sas targets EVs to specific cell types/regions.\n\n3. Figure 3: There are no data showing the expression of Sas in SG cells using the GAL4 lines. Is this expression restricted to just SG cells? (The results jump from a-b to f-g. c-e are out of order. It will be easier if this is ordered). The quantification in g should be broken into two and paired with the actual data (c-e, and f). It is not clear how the quantification in g was performed. How many western blots (WBs) were analyzed? There seems to be a bubble in the first lane of f, which would preclude quantification. Why is d not quantified, and there seems to be an overall increase in background staining in e that is not specific to discs? The source data files are not labeled and these data should be incorporated into annotated supplemental figures. Is transfer in a-b due to Ptp10D? How many WBs were quantified in g? What is the specificity for full-length Sas? The expression of short Sas should not lead to its incorporation in EVs and their overnight addition should not lead to the same effect (Figure 3). This should be better investigated as short Sas is a good control for full-length Sas.\n\nIn the salivary gland (SG) expression data presented in Figure 3a-b, the authors should have included V5-Sas-short as a negative control for cross-tissue transport. Similarly, in Figure 3c-e, EVs isolated from Sas-Short transfected cells should have been included as a control in the overnight EV-imaginal disc incubation assays. Does over-expression of Numb on its own lead to increased uptake of Sas-FL EVs? Also, does the need for Ptp10D and Numb over-expression for efficient capture of Sas-FL EVs in Figure 3c-e raise doubts about the data presented in Figure 3a-b, in which the transfer from SGs seems to be efficient without the need for Ptp10D or Numb over-expression?\n\nAlso\n\na: Are wing discs the only recipient tissues upon S2 cells EVs exposure? The tissues in Figure 5 are the trachea and guts. Why switch?\n\nb: What about Ptp10D mutant disc (as in section 2)?\n\nBetter quantification? Number of discs etc.\n\n4. Figure 4: C and d, IP data has no inputs for IPs, no sizing markers, and no IgG controls for antibody specificity. These data would also be more convincing if done with FL Sas and included co-Ips from cell lysates.\n\nThe IPs presented in Figure 4C with myc-tagged constructs are not controlled properly. Western blots of protein extracts prior to IPs should be shown and a control antibody should be used to show equal loading in the WB for either dArc1-Myc or Myc-rArc-FL expressing cells. Showing the IPs one on top of each other is very confusing and WBs are critical to showing that the expected proteins are expressed in the transfected cells, even if their IP signature is negative.\n\n5. In general, the WBs in the figures show very white backgrounds with high contrast. Please check if any contrast enhancement (or other such changes) were made and if so, they need to be documented and justified. Else, please revert to raw images of blots. Total protein controls are also missing.\n\n6. Figure 5: Ashley et al. (Cell 2018) showed that dArc1 mRNA transfer required the 3'UTR so it is puzzling that the authors used heterologous UTRs. The results using FISH on endogenous dArc1 mRNA are dramatic. The authors should show definitively that their probe does not pick up over-expressed dArc1. In general, a better quantitative analysis should be provided. For instance, there is no quantitative data for Figure 5, but this point should be examined in other figures as well. The dAC1 increased expression in the target cells upon dARC1 increased production in SG(Figure 5) becomes an important part of the paper (and the model) but is not investigated! How does it work? Does the delivery of darc1 mRNAs packaged in capsids simply lead to more dARC1 translation? Is it proportional?\n\nOr, is there also stimulation of darc1 transcription? Is there also an increase in the mRNA level (we cannot see the SG control of 5o (sage>+) supporting the authors' claim on line 562!).\n\nAlso:\n\na: What is the dARC1 LOF mutant phenotype in SG and trachea?\n\nb: Do EV produced upon FL Sas v5 expression in an SG not produce dARC1 in the recipient trachea?\n\nc: Does this also depend on the same synergetic presence of Ptp10D and Numb in the trachea? Ptp10D LOF?\n\nThe authors' data suggest that dArc1 protein and mRNA are transferred by Sas-FL expressing EVs to Ptp10D enriched tissues in fly embryos. Could the authors conduct immuno-EM or nano-flow cytometry studies to assess the general proportion of Sas and dArc1 co-expression in purified EVs? If the general model is accurate, one would expect a higher degree of co-occurrence compared to control EV cargos. Additionally, evaluating the dArc1 protein and mRNA transfer properties in different genetic backgrounds (i.e. Sas-FL and Sas-Short in Ptp10D over-expressed or in Ptp10D null embryos) would significantly enhance the paper.\n\nAlso in Figure 5, the results suggesting that transgenic over-expression of dArc1 leads to a strongly increased expression of endogenous dArc1 should be validated using a complementary strategy (e.g. RT-qPCR on dissected tissue specimens, RNA-FISH with probes specific to the endogenous mRNA).\n\n- For all the tissue imaging studies, including those in Figures 5-6,, the authors should provide an indication of how many specimens were analyzed in total, presuming the samples shown in the figures were representative of observations made across multiple tissue specimens co-labeled in the same experiment.\n\n7. Figure 6: what is the red circle (and blue)?\n\nWhat is the black circle, an SG cell?\n\n8. Most (all) experiments are performed with over-expression of FL Sas or ICD. Does endogenous Sas bind endogenous Ptp10D and dARC1? ICDs? Also full-length APP? Many of the conclusions would be strengthened by the loss of function experiments, especially showing a requirement for Sas in dArc1 transfer.\n\n9. Use of more extensive fly genetics using specific Ptp10D LOF in wing discs and trachea (to show the converse of the GOF). Does Ptp10D acts as the MAIN receptor to FL Sas? Numb LOF, a combination of LOF and GOF? Does Ptp10D GOF compensate for Numb and vice versa?\n\n\u2013 The introduction section would benefit from some sentence restructuring, synthesizing major ideas into a more coherent train of thought. For instance, very short, matter-of-fact statements such as \"EV cargoes are biomarkers for specific diseases\" are not helpful, especially since no specific examples of diseases are provided. Also, more primary sources of literature should be cited, as many statements are lacking supporting evidence, particularly those describing EV biology and characteristics.\n\n\u2013 While the authors use \"comparatively\" to describe the current knowledge of EV-biogenesis pathways as \"well understood,\" this is not an appropriate description and can be misleading. EV-biogenesis pathways are only beginning to be unraveled.\n\n\u2013 When describing their major finding (Lee et al., 2013) that Ptp10D is a binding partner for Sas, The authors should stress that this was done in a previous study. Simply adding a world like \"previously\" will make this clear.\n\n\u2013 The paragraph from lines 85-90 stating that 'Sas localizes to EVs, as demonstrated\u2026' appears to be out of context and is more appropriate for the 'Results' section.\n\n\u2013 The authors should mention what device they used for NTA, not just provide the name of the outsourcing company. From their description, it appears they used NanoSight, but don't provide acquisition parameters.\n\n\u2013 In Figure 2 f,g the authors provide EM images of capsid-like structures for dArc1 and dArc2, however, they do not address these until much later in the manuscript, when they describe how these capsids were generated. The authors should consider reorganizing their figures to improve the flow of their narration and not group them into categories, as this makes the manuscript more difficult to follow.\n\n\u2013 There may be referencing errors in the manuscript when mentioning figures, for instance when they describe the detection of V5-mCD8ECD-SasTM-ICD by western blotting, they reference Figure 4d, but it appears they actually mean Figure 4c. Another such error appears in the text describing Figure 5n, which depicts Drosophila embryos co-expressing SasFL and dArc1, and which authors describe as Figure 5m. I recommend that they carefully double-check the manuscript for any such errors, which are confusing for the reader.\n\n\u2013 When appropriate the authors should add statistical analysis to their quantitative data, for example, Figure 3g.\n",
+      "created_at": "2025-12-04T02:12:33.004809Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T02:12:33.004809Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T02:12:33.004809Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "5c62c309-f82c-434e-9d7f-1bcba93420ab",
+      "content_id": "771f1a72-e8ba-4cc5-ab7d-36d4b101dc25",
+      "claim_id": "C1",
+      "claim": "Extracellular vesicles (EVs) are mediators of cell-cell communication that transport specific protein and RNA cargoes.",
+      "claim_type": "EXPLICIT",
+      "source": "Extracellular vesicles (EVs) are mediators of cell-cell communication that transport specific protein and RNA cargoes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established scientific knowledge about EVs and their function in cell-cell communication.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:12:33.004809Z"
+    },
+    {
+      "id": "b47ab37d-e542-4f81-9d1b-56580200b031",
+      "content_id": "771f1a72-e8ba-4cc5-ab7d-36d4b101dc25",
+      "claim_id": "C2",
+      "claim": "Exosomes are 30\u2013150 nm in diameter and are released into cell supernatants via fusion of multivesicular bodies (MVBs) with the plasma membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "Exosomes are 30\u2013150 nm in diameter and are released into cell supernatants via fusion of multivesicular bodies (MVBs) with the plasma membrane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about exosome characteristics and biogenesis.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:12:33.004809Z"
+    },
+    {
+      "id": "0611752d-50f7-4eaf-a138-3af36a11e64a",
+      "content_id": "771f1a72-e8ba-4cc5-ab7d-36d4b101dc25",
+      "claim_id": "C3",
+      "claim": "Full-length Sas (SasFL) has an extracellular domain (ECD) containing a signal peptide, a unique N-terminal region, four von Willebrand factor C (VWFC) domains, and three Fibronectin Type III (FN-III) repeats.",
+      "claim_type": "EXPLICIT",
+      "source": "Full-length Sas (SasFL) has an extracellular domain (ECD) containing a signal peptide, a unique N-terminal region, four von Willebrand factor C (VWFC) domains, and three Fibronectin Type III (FN-III) repeats (Figure 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The protein domain structure is described in the text and illustrated in Figure 1a.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:12:33.004809Z"
+    },
+    {
+      "id": "456a4dc2-47aa-4e36-bee7-2bd6fd9d479c",
+      "content_id": "771f1a72-e8ba-4cc5-ab7d-36d4b101dc25",
+      "claim_id": "C4",
+      "claim": "The Sasshort isoform lacks a 345 amino acid region of the ECD.",
+      "claim_type": "EXPLICIT",
+      "source": "A shorter isoform, Sasshort, which is translated from an alternatively spliced mRNA, lacks a 345 amino acid (aa) region of the ECD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the structural difference between Sas isoforms.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:12:33.004809Z"
+    },
+    {
+      "id": "c05cce0c-75c1-482d-b7f4-d25f99175935",
+      "content_id": "771f1a72-e8ba-4cc5-ab7d-36d4b101dc25",
+      "claim_id": "C5",
+      "claim": "V5-SasFL moves away from expressing cells when expressed in Apterous neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "SasFL moves away from expressing cells. V5-SasFL was expressed together with mCD8-GFP (transmembrane CSP) in Apterous neurons in late stage 16 embryos.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 1b shows V5-SasFL localization in areas distant from cell bodies, including sheaths and extracellular regions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:12:33.004809Z"
+    },
+    {
+      "id": "a03817d5-426f-4d21-a8bd-17ea2bc91be5",
+      "content_id": "771f1a72-e8ba-4cc5-ab7d-36d4b101dc25",
+      "claim_id": "C6",
+      "claim": "V5-Sasshort is retained in expressing cells and does not move away like V5-SasFL.",
+      "claim_type": "EXPLICIT",
+      "source": "We also expressed V5-Sasshort in Ap neurons, and observed that V5 staining was restricted to cell bodies and axons in the VNC, and to cell bodies in the brain (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The localization pattern of V5-Sasshort differs from V5-SasFL, being restricted to expressing cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:12:33.004809Z"
+    },
+    {
+      "id": "b329a397-c752-4394-9047-a8149d37ab7b",
+      "content_id": "771f1a72-e8ba-4cc5-ab7d-36d4b101dc25",
+      "claim_id": "C7",
+      "claim": "About 50% of V5-SasFL localizes to EVs when expressed in S2 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that about 50% of V5-SasFL localized to EVs, while ~90% of V5-Sasshort was retained in the cell lysate (Figure 1c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Western blot analysis in Figure 1c shows the distribution of SasFL between cell lysate and EV fractions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:12:33.004809Z"
+    },
+    {
+      "id": "35584d06-3d47-4faf-8c51-856d4346c4d3",
+      "content_id": "771f1a72-e8ba-4cc5-ab7d-36d4b101dc25",
+      "claim_id": "C8",
+      "claim": "About 90% of V5-Sasshort is retained in the cell lysate when expressed in S2 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that about 50% of V5-SasFL localized to EVs, while ~90% of V5-Sasshort was retained in the cell lysate (Figure 1c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Western blot analysis in Figure 1c shows the distribution of Sasshort between cell lysate and EV fractions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:12:33.004809Z"
+    },
+    {
+      "id": "1507f435-4927-4b6b-a2f8-6758fff0e68d",
+      "content_id": "771f1a72-e8ba-4cc5-ab7d-36d4b101dc25",
+      "claim_id": "C9",
+      "claim": "No proteolytic cleavage products of Sas were observed in EVs or unpurified supernatants.",
+      "claim_type": "EXPLICIT",
+      "source": "We did not observe any proteolytic cleavage products in EVs or unpurified supernatants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct observation from western blot analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:12:33.004809Z"
+    },
+    {
+      "id": "9b5f33d3-e7a3-47e0-8d72-5067a6173435",
+      "content_id": "771f1a72-e8ba-4cc5-ab7d-36d4b101dc25",
+      "claim_id": "C10",
+      "claim": "SasFL localizes to apical cell surfaces in the foregut and hindgut.",
+      "claim_type": "EXPLICIT",
+      "source": "Note that in both gut regions SasFL colocalizes with Crumbs at the apical (luminal) cell surfaces (arrows), while anti-Sasshort labels the entire width of the gut wall (brackets).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 1d shows colocalization of SasFL with the apical marker Crumbs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:12:33.004809Z"
+    },
+    {
+      "id": "fa41ee38-b18b-4ed2-8597-86969f950e8c",
+      "content_id": "771f1a72-e8ba-4cc5-ab7d-36d4b101dc25",
+      "claim_id": "C11",
+      "claim": "Sasshort is distributed across the entire cell membrane in the foregut and hindgut.",
+      "claim_type": "EXPLICIT",
+      "source": "Note that in both gut regions SasFL colocalizes with Crumbs at the apical (luminal) cell surfaces (arrows), while anti-Sasshort labels the entire width of the gut wall (brackets).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 1d shows Sasshort distribution across the entire gut wall.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:12:33.004809Z"
+    },
+    {
+      "id": "70733da3-6937-433b-816e-a0c2debfb685",
+      "content_id": "771f1a72-e8ba-4cc5-ab7d-36d4b101dc25",
+      "claim_id": "C12",
+      "claim": "The EVT sequence lacking in Sasshort is required for both apical localization and targeting to EVs.",
+      "claim_type": "EXPLICIT",
+      "source": "These data imply that the EVT sequence lacking in Sasshort is required for both apical localization and targeting to EVs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the differential localization patterns of SasFL and Sasshort.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:12:33.004809Z"
+    },
+    {
+      "id": "c84c28d6-c99d-48df-892d-e2b894a424be",
+      "content_id": "771f1a72-e8ba-4cc5-ab7d-36d4b101dc25",
+      "claim_id": "C13",
+      "claim": "EVs from V5-SasFL-expressing S2 cells span a range of sizes from ~30 nm to >100 nm in diameter.",
+      "claim_type": "EXPLICIT",
+      "source": "The tomographic images showed that the EVs span a range of sizes, from ~30 nm in diameter to >100 nm, and that they are a mixture of single and double-membrane vesicles (Figure 2c and d, Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "EM tomography images show the size distribution of EVs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:12:33.004809Z"
+    },
+    {
+      "id": "a849f421-319b-4f4a-ba38-fde9eea875ca",
+      "content_id": "771f1a72-e8ba-4cc5-ab7d-36d4b101dc25",
+      "claim_id": "C14",
+      "claim": "EVs from V5-SasFL-expressing S2 cells are a mixture of single and double-membrane vesicles.",
+      "claim_type": "EXPLICIT",
+      "source": "The tomographic images showed that the EVs span a range of sizes, from ~30 nm in diameter to >100 nm, and that they are a mixture of single and double-membrane vesicles (Figure 2c and d, Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "EM tomography images show both single and double-membrane vesicles.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:12:33.004809Z"
+    },
+    {
+      "id": "2d0d8ff1-e59c-4e41-829b-89ee42b092c4",
+      "content_id": "771f1a72-e8ba-4cc5-ab7d-36d4b101dc25",
+      "claim_id": "C15",
+      "claim": "The distance between the EV membrane and gold particles in immuno-EM can be more than 40 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "The distance between the EV membrane (yellow bracket: diameter of the vesicle) and a gold particle (white bracket: distance between membrane and a particle) can be more than 40 nm.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 2a shows measurements of distances between EV membrane and gold particles.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:12:33.004809Z"
+    },
+    {
+      "id": "e21e9fdf-0350-4598-9fa2-434aa690d269",
+      "content_id": "771f1a72-e8ba-4cc5-ab7d-36d4b101dc25",
+      "claim_id": "C16",
+      "claim": "The large distance between the EV membrane and gold particles likely reflects the large size of the Sas ECD.",
+      "claim_type": "EXPLICIT",
+      "source": "This likely reflects the large size of the Sas ECD, in which the N-terminal V5 epitope is separated by 1590 aa from the TM domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the protein structure and the observed distances in immuno-EM.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:12:33.004809Z"
+    },
+    {
+      "id": "0b904823-d523-4ad0-8db7-78fe026e8b58",
+      "content_id": "771f1a72-e8ba-4cc5-ab7d-36d4b101dc25",
+      "claim_id": "C17",
+      "claim": "Expression of SasFL increased the number of EVs per cell in the exosome size range (30\u2013150 nm in diameter) by 44%.",
+      "claim_type": "EXPLICIT",
+      "source": "Expression of SasFL increased the number of EVs per cell in the exosome size range (30\u2013150 nm in diameter) by 44%, and the number of EVs per cell of <100 nm in diameter by 72%, suggesting that the presence of high levels of SasFL increases the rate of EV production.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "NTA analysis in Figure 2e shows increased EV production in SasFL-expressing cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:12:33.004809Z"
+    },
+    {
+      "id": "c7256d3f-3095-4517-bcba-05d305d97123",
+      "content_id": "771f1a72-e8ba-4cc5-ab7d-36d4b101dc25",
+      "claim_id": "C18",
+      "claim": "Expression of SasFL increased the number of EVs per cell of <100 nm in diameter by 72%.",
+      "claim_type": "EXPLICIT",
+      "source": "Expression of SasFL increased the number of EVs per cell in the exosome size range (30\u2013150 nm in diameter) by 44%, and the number of EVs per cell of <100 nm in diameter by 72%, suggesting that the presence of high levels of SasFL increases the rate of EV production.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "NTA analysis in Figure 2e shows increased EV production in SasFL-expressing cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:12:33.004809Z"
+    },
+    {
+      "id": "48b7862a-74eb-4a42-a584-131ae3b9a34e",
+      "content_id": "771f1a72-e8ba-4cc5-ab7d-36d4b101dc25",
+      "claim_id": "C19",
+      "claim": "The distribution of EV diameters was shifted toward smaller values in cells expressing SasFL (mean diameter = 102 nm, vs. 129 nm for control cells).",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that the distribution of EV diameters was shifted toward smaller values in cells expressing SasFL (mean diameter = 102 nm, vs. 129 nm for control cells) (Figure 2e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "NTA analysis in Figure 2e shows the size distribution of EVs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:12:33.004809Z"
+    },
+    {
+      "id": "c4900503-86e8-4559-8cf1-f18afe63c971",
+      "content_id": "771f1a72-e8ba-4cc5-ab7d-36d4b101dc25",
+      "claim_id": "C20",
+      "claim": "Many EVs from V5-SasFL-expressing S2 cells had denser objects within their boundaries, typically 30\u201340 nm in diameter.",
+      "claim_type": "EXPLICIT",
+      "source": "Many of the EVs from V5-SasFL-expressing S2 cells EVs had denser objects within their boundaries (Figure 2d, Figure 2\u2014figure supplement 1). These were typically 30\u201340 nm in diameter.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "EM tomography images show denser objects within EVs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:12:33.004809Z"
+    },
+    {
+      "id": "af8c329d-d067-4992-b2c1-ab7170f5fd42",
+      "content_id": "771f1a72-e8ba-4cc5-ab7d-36d4b101dc25",
+      "claim_id": "C21",
+      "claim": "V5-SasFL made in salivary glands is present in imaginal discs, which are separated from SGs by larval hemolymph.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that V5-SasFL made in SGs is present in imaginal discs, which are separated from SGs by larval hemolymph (wing and haltere discs shown in Figure 3a\u2013c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 3b shows V5 staining in imaginal discs when SasFL is expressed in salivary glands.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:12:33.004809Z"
+    },
+    {
+      "id": "4e1e3d95-e889-422d-88aa-d4302f0b0a24",
+      "content_id": "771f1a72-e8ba-4cc5-ab7d-36d4b101dc25",
+      "claim_id": "C22",
+      "claim": "V5-Sasshort expressed in salivary glands is not observed in imaginal discs.",
+      "claim_type": "EXPLICIT",
+      "source": "We also expressed V5-Sasshort in SGs, and this was not observed in imaginal discs (Figure 3c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 3c shows absence of V5 staining in imaginal discs when Sasshort is expressed in salivary glands.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:12:33.004809Z"
+    },
+    {
+      "id": "1c1ed695-90d5-48fe-9a6c-ba56a2de858f",
+      "content_id": "771f1a72-e8ba-4cc5-ab7d-36d4b101dc25",
+      "claim_id": "C23",
+      "claim": "Expression of Ptp10D in recipient S2 cells increased V5-SasFL levels in these cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that expression of the Sas receptor Ptp10D in recipient cells increased V5-SasFL levels in these cells, as did expression of Numb, a regulator of endocytosis that binds to the Sas ICD (Chien et al., 1998).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Western blot analysis in Figure 3g shows increased V5-SasFL in cells expressing Ptp10D.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:12:33.004809Z"
+    },
+    {
+      "id": "636d66be-3e21-426c-94fc-f66e9c657dc3",
+      "content_id": "771f1a72-e8ba-4cc5-ab7d-36d4b101dc25",
+      "claim_id": "C24",
+      "claim": "Expression of Numb in recipient S2 cells increased V5-SasFL levels in these cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that expression of the Sas receptor Ptp10D in recipient cells increased V5-SasFL levels in these cells, as did expression of Numb, a regulator of endocytosis that binds to the Sas ICD (Chien et al., 1998).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Western blot analysis in Figure 3g shows increased V5-SasFL in cells expressing Numb.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:12:33.004809Z"
+    },
+    {
+      "id": "ffb109ed-7b25-4185-a8fe-798af2c67c5b",
+      "content_id": "771f1a72-e8ba-4cc5-ab7d-36d4b101dc25",
+      "claim_id": "C25",
+      "claim": "Expression of both Ptp10D and Numb produced a synergistic effect, increasing V5-SasFL by ~fourfold relative to untransfected recipient cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Expression of both Ptp10D and Numb produced a synergistic effect, increasing V5-SasFL by ~fourfold relative to untransfected recipient cells (Figure 3g\u2013h).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Western blot and quantification in Figures 3g-h show synergistic effect of Ptp10D and Numb coexpression.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:12:33.004809Z"
+    },
+    {
+      "id": "e1bc8051-9140-4cc7-af16-a19703818d44",
+      "content_id": "771f1a72-e8ba-4cc5-ab7d-36d4b101dc25",
+      "claim_id": "C26",
+      "claim": "Ptp10D is a binding partner for Sas.",
+      "claim_type": "EXPLICIT",
+      "source": "In earlier work, we identified the receptor tyrosine phosphatase (RPTP) Ptp10D as a binding partner for Sas, and showed that Sas::Ptp10D interactions regulate embryonic axon guidance, as well as glial migration and proliferation (Lee et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from previous work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:12:33.004809Z"
+    },
+    {
+      "id": "39ea8480-8b78-44ff-8262-ac1bc41cd04e",
+      "content_id": "771f1a72-e8ba-4cc5-ab7d-36d4b101dc25",
+      "claim_id": "C27",
+      "claim": "Sas::Ptp10D interactions regulate embryonic axon guidance, as well as glial migration and proliferation.",
+      "claim_type": "EXPLICIT",
+      "source": "In earlier work, we identified the receptor tyrosine phosphatase (RPTP) Ptp10D as a binding partner for Sas, and showed that Sas::Ptp10D interactions regulate embryonic axon guidance, as well as glial migration and proliferation (Lee et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from previous work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:12:33.004809Z"
+    },
+    {
+      "id": "75d058ce-611f-4347-8313-a018a4a3afec",
+      "content_id": "771f1a72-e8ba-4cc5-ab7d-36d4b101dc25",
+      "claim_id": "C28",
+      "claim": "dArc1 was the most highly enriched protein (after Sas itself) in mass spectrometry analysis of V5-SasFL EVs, with 22-fold enrichment.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that the most highly enriched protein (after Sas itself) is dArc1 (22-fold) (Figure 4b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Mass spectrometry data in Figure 4b shows dArc1 enrichment in V5-SasFL EVs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:12:33.004809Z"
+    },
+    {
+      "id": "607cc874-3927-4954-9f1e-56118256c5b1",
+      "content_id": "771f1a72-e8ba-4cc5-ab7d-36d4b101dc25",
+      "claim_id": "C29",
+      "claim": "dArc2 is enriched 6-fold in V5-SasFL EVs compared to control EVs.",
+      "claim_type": "EXPLICIT",
+      "source": "dArc2 is #7 on the list (6-fold).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Mass spectrometry data in Figure 4b shows dArc2 enrichment in V5-SasFL EVs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:12:33.004809Z"
+    },
+    {
+      "id": "65e9eac0-2c4c-4457-bc37-27104ea6dd3d",
+      "content_id": "771f1a72-e8ba-4cc5-ab7d-36d4b101dc25",
+      "claim_id": "C30",
+      "claim": "dArc1 mRNA is a prominent mRNA component of EVs from Drosophila cultured cells.",
+      "claim_type": "EXPLICIT",
+      "source": "dArc1 mRNA, presumably encapsulated within dArc1 capsids, is known to be a prominent mRNA component of EVs from Drosophila cultured cells (Lefebvre et al., 2016; Ashley et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from previous published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:12:33.004809Z"
+    },
+    {
+      "id": "3fc6d77c-4ce0-464f-b5a2-e90f65972d80",
+      "content_id": "771f1a72-e8ba-4cc5-ab7d-36d4b101dc25",
+      "claim_id": "C31",
+      "claim": "dArc1 binds directly to the Sas ICD.",
+      "claim_type": "EXPLICIT",
+      "source": "We then went on to show that dArc1 binds directly to the Sas ICD (see below).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through co-IP and peptide binding assays shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:12:33.004809Z"
+    },
+    {
+      "id": "04915ac9-68b9-4e1d-ac7b-66010190fa99",
+      "content_id": "771f1a72-e8ba-4cc5-ab7d-36d4b101dc25",
+      "claim_id": "C32",
+      "claim": "dArc1 co-IP'd with the Sas ICD fusion protein in S2 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that dArc1 co-IP'd with the Sas ICD fusion protein (Figure 4c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Co-IP experiment in Figure 4c shows interaction between dArc1 and Sas ICD.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:12:33.004809Z"
+    },
+    {
+      "id": "61c28940-1cc9-4c54-a13a-565084c18fc1",
+      "content_id": "771f1a72-e8ba-4cc5-ab7d-36d4b101dc25",
+      "claim_id": "C33",
+      "claim": "The Sas ICD sequence contains the sequence motif YDNPSY.",
+      "claim_type": "EXPLICIT",
+      "source": "The Sas ICD sequence contains the sequence motif YDNPSY, which is a PTB-binding motif (NPXY) that overlaps by two amino acids with an SH2-binding motif (YXXP) that is also a potential Abl tyrosine kinase substrate sequence (Colicelli, 2010; Figure 4e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The sequence is shown in Figure 4e and described in the text.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:12:33.004809Z"
+    },
+    {
+      "id": "1506f92b-fd42-40a4-88e9-fcce6de2f404",
+      "content_id": "771f1a72-e8ba-4cc5-ab7d-36d4b101dc25",
+      "claim_id": "C34",
+      "claim": "The NPXY motif in Sas is the target for binding of the Numb PTB.",
+      "claim_type": "EXPLICIT",
+      "source": "The NPXY motif is the target for binding of the Numb PTB (Li et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from previous published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:12:33.004809Z"
+    },
+    {
+      "id": "bb26de4d-4c54-4cb3-9e6a-f36154e4ce1f",
+      "content_id": "771f1a72-e8ba-4cc5-ab7d-36d4b101dc25",
+      "claim_id": "C35",
+      "claim": "Appl contains the sequence YENPTY in its ICD.",
+      "claim_type": "EXPLICIT",
+      "source": "We searched for other Drosophila CSPs containing a sequence with similar properties in their ICDs, and found only one, Appl, which has the sequence YENPTY but is otherwise unrelated to the Sas ICD.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The sequence is shown in Figure 4e and described in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:12:33.004809Z"
+    },
+    {
+      "id": "5bcb7d6a-12f4-4435-a262-1577b56af7c8",
+      "content_id": "771f1a72-e8ba-4cc5-ab7d-36d4b101dc25",
+      "claim_id": "C36",
+      "claim": "Human APP contains the sequence YENPTY in its ICD.",
+      "claim_type": "EXPLICIT",
+      "source": "Human APP, the mammalian ortholog of Appl, contains the same sequence in its short ICD (Figure 4e), as do the two APP paralogs, APLP1 and APLP2.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The sequence is shown in Figure 4e and described in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:12:33.004809Z"
+    },
+    {
+      "id": "53eba71f-b692-491e-99e8-380171661691",
+      "content_id": "771f1a72-e8ba-4cc5-ab7d-36d4b101dc25",
+      "claim_id": "C37",
+      "claim": "The Appl ICD protein co-IP'd with dArc1-Myc.",
+      "claim_type": "EXPLICIT",
+      "source": "We then replaced the Sas ICD in the V5-mCD8ECD-SasTM-ICD construct with the Appl and APP ICDs, and found that the Appl ICD protein co-IP'd with dArc1-Myc (Figure 4c), implicating the Y(D/E)NP(S/T)Y sequence in binding to dArc1.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Co-IP experiment in Figure 4c shows interaction between dArc1 and Appl ICD.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:12:33.004809Z"
+    },
+    {
+      "id": "74b46927-882b-4a5f-90ed-98c4049161e9",
+      "content_id": "771f1a72-e8ba-4cc5-ab7d-36d4b101dc25",
+      "claim_id": "C38",
+      "claim": "Myc-rArcFL was able to co-IP with the Sas and APP ICDs.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that Myc-rArcFL was able to co-IP with the Sas and APP ICDs (Figure 4c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Co-IP experiment in Figure 4c shows interaction between mammalian Arc and Sas/APP ICDs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:12:33.004809Z"
+    },
+    {
+      "id": "bbb7dc0c-50ee-4db2-b23f-505db6f20cd3",
+      "content_id": "771f1a72-e8ba-4cc5-ab7d-36d4b101dc25",
+      "claim_id": "C39",
+      "claim": "GST-dArc1 bound to the wild-type Sas ICD peptide but not to scrambled or YDNPSY deletion mutant Sas peptides.",
+      "claim_type": "EXPLICIT",
+      "source": "In the peptide binding assay, we observed that dArc1 directly bound to the Sas ICD peptide, but not to the other peptides.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Peptide binding assay in Figure 4d shows specific binding of dArc1 to wild-type Sas ICD peptide.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:12:33.004809Z"
+    },
+    {
+      "id": "eec42fe5-7358-4bb6-a486-77c078396334",
+      "content_id": "771f1a72-e8ba-4cc5-ab7d-36d4b101dc25",
+      "claim_id": "C40",
+      "claim": "GST-rArcFL bound to the Sas ICD peptide and the APP ICD peptide.",
+      "claim_type": "EXPLICIT",
+      "source": "Mammalian Arc also bound to the Sas ICD peptide, as well as to the APP ICD peptide (Figure 4d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Peptide binding assay in Figure 4d shows binding of mammalian Arc to Sas and APP ICD peptides.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:12:33.004809Z"
+    },
+    {
+      "id": "26402ac3-3bb0-41b8-9b35-11228b0bc57a",
+      "content_id": "771f1a72-e8ba-4cc5-ab7d-36d4b101dc25",
+      "claim_id": "C41",
+      "claim": "Mammalian and Drosophila Arc are not orthologs and are apparently derived from independent Ty3/gypsy retrotransposon lineages.",
+      "claim_type": "EXPLICIT",
+      "source": "Mammalian and Drosophila Arc are not orthologs, and are apparently derived from independent Ty3/gypsy retrotransposon lineages (Ashley et al., 2018; Pastuzyn et al., 2018; Hantak et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from previous published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:12:33.004809Z"
+    },
+    {
+      "id": "01171165-cbc9-42fe-ae6c-e13796708f29",
+      "content_id": "771f1a72-e8ba-4cc5-ab7d-36d4b101dc25",
+      "claim_id": "C42",
+      "claim": "The Y(D/E)NP(S/T)Y sequence is a determinant of binding to Arcs.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results implicate the Y(D/E)NP(S/T)Y sequence as a determinant of binding to Arcs (Figure 4e), and show that fly and mammalian Arcs can bind to the same peptide sequences.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the co-IP and peptide binding experiments showing that proteins with this motif bind to Arc proteins.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:12:33.004809Z"
+    },
+    {
+      "id": "8f5795ed-dcc1-47d7-9a49-228bf4a277cf",
+      "content_id": "771f1a72-e8ba-4cc5-ab7d-36d4b101dc25",
+      "claim_id": "C43",
+      "claim": "APP localizes to EVs.",
+      "claim_type": "EXPLICIT",
+      "source": "APP also localizes to EVs (Laulagnier et al., 2018; P\u00e9rez-Gonz\u00e1lez et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from previous published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:12:33.004809Z"
+    },
+    {
+      "id": "7cb083cb-6594-42f5-8f8d-8151e49e0dbc",
+      "content_id": "771f1a72-e8ba-4cc5-ab7d-36d4b101dc25",
+      "claim_id": "C44",
+      "claim": "Arc has been implicated in Alzheimer's disease pathogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "The connection between APP and Arc will be of interest to explore in future studies, since Arc has been implicated in AD pathogenesis (Wu et al., 2011; Landgren et al., 2012; Bi et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from previous published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:12:33.004809Z"
+    },
+    {
+      "id": "fedad1a3-5ef3-4dd3-ba71-ee9cda576df9",
+      "content_id": "771f1a72-e8ba-4cc5-ab7d-36d4b101dc25",
+      "claim_id": "C45",
+      "claim": "V5-SasFL expressed in salivary glands moves to the gut and tracheae in late stage 16 embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "To establish an assay system for dArc1 capsid movement in embryos, we first expressed V5-SasFL in late stage 16 embryonic SGs together with RFP, and observed that V5 signal moved to the gut and tracheae, while RFP was retained in the SGs as expected.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:12:33.004809Z"
+    },
+    {
+      "id": "d2e257f2-434f-44b2-b5d0-dadf48ac8cd7",
+      "content_id": "771f1a72-e8ba-4cc5-ab7d-36d4b101dc25",
+      "claim_id": "C46",
+      "claim": "V5-Sasshort expressed in salivary glands is only observed in the SGs and not in other tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "When V5-Sasshort was expressed in SGs, however, V5 staining was only observed in the SGs (Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:12:33.004809Z"
+    },
+    {
+      "id": "a30c1643-cabf-4a39-8714-8a7bbb7ba87e",
+      "content_id": "771f1a72-e8ba-4cc5-ab7d-36d4b101dc25",
+      "claim_id": "C47",
+      "claim": "dArc1 is made at very low levels in embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "dArc1 is made at very low levels in embryos.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct observation from antibody staining experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:12:33.004809Z"
+    },
+    {
+      "id": "8a903a0f-9bf0-490b-9f30-653551778c06",
+      "content_id": "771f1a72-e8ba-4cc5-ab7d-36d4b101dc25",
+      "claim_id": "C48",
+      "claim": "When SasFL and dArc1 were expressed together in salivary glands, there were many bright puncta stained with anti-dArc1 in the dorsal tracheal trunk.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 5d' shows that, in late stage 16 embryos expressing both SasFL and dArc1 in SGs, there were many bright puncta stained with anti-dArc1 in the dorsal tracheal trunk, which expresses Ptp10D.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 5d' shows dArc1 puncta in tracheal trunk when SasFL and dArc1 are coexpressed.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:12:33.004809Z"
+    },
+    {
+      "id": "c42a3f34-14b3-4796-8e2b-4021066f9cf7",
+      "content_id": "771f1a72-e8ba-4cc5-ab7d-36d4b101dc25",
+      "claim_id": "C49",
+      "claim": "No dArc1 puncta were detectable in control embryos (Sage-GAL4/+) in the dorsal tracheal trunk.",
+      "claim_type": "EXPLICIT",
+      "source": "They were not detectable in control embryos (Sage-GAL4/+; Figure 5a').",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 5a' shows absence of dArc1 puncta in control embryos.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:12:33.004809Z"
+    },
+    {
+      "id": "f9d9a09a-7b89-4b8e-b69f-16df3bef08b4",
+      "content_id": "771f1a72-e8ba-4cc5-ab7d-36d4b101dc25",
+      "claim_id": "C50",
+      "claim": "Exogenous dArc1 induces expression of endogenous dArc1 mRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "This shows that exogenous dArc1 induces expression of endogenous dArc1 mRNA (or stabilizes the mRNA).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "FISH analysis shows increased endogenous dArc1 mRNA signal when exogenous dArc1 is expressed.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:12:33.004809Z"
+    },
+    {
+      "id": "8158fd53-a0cb-4014-ada9-2e5d0066e35d",
+      "content_id": "771f1a72-e8ba-4cc5-ab7d-36d4b101dc25",
+      "claim_id": "C51",
+      "claim": "When SasFL and dArc1 were expressed together in salivary glands, the entire tracheal system is lit up by the FISH signal for the endogenous dArc1 3' UTR.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, when SasFL and dArc1 were expressed together, we observed a completely different pattern, in which the entire tracheal system is lit up by the FISH signal for the endogenous dArc1 3' UTR (Figure 5h).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 5h shows bright FISH signal throughout the tracheal system.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:12:33.004809Z"
+    },
+    {
+      "id": "8ad1464d-58dd-4d98-9b75-798001fb06eb",
+      "content_id": "771f1a72-e8ba-4cc5-ab7d-36d4b101dc25",
+      "claim_id": "C52",
+      "claim": "dArc1 mRNA lacking the endogenous dArc1 3' UTR sequences is not efficiently loaded into dArc1 capsids that can move elsewhere in the embryo.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that dArc1 mRNA lacking the endogenous dArc1 3' UTR sequences is not efficiently loaded into dArc1 capsids that can move elsewhere in the embryo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "FISH with SV40 3' UTR probe shows signal only in SGs, not in distant tissues.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:12:33.004809Z"
+    },
+    {
+      "id": "2a48f3f1-c615-4978-8c2c-07de6d2511ca",
+      "content_id": "771f1a72-e8ba-4cc5-ab7d-36d4b101dc25",
+      "claim_id": "C53",
+      "claim": "The dArc1 3' UTR is required for dArc1 mRNA transfer at the NMJ.",
+      "claim_type": "EXPLICIT",
+      "source": "This is consistent with the findings of Ashley et al., 2018, who showed that the dArc1 3' UTR is required for dArc1 mRNA transfer at the NMJ.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from previous published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:12:33.004809Z"
+    },
+    {
+      "id": "061519b3-f95d-4bc0-8f32-396020e18803",
+      "content_id": "771f1a72-e8ba-4cc5-ab7d-36d4b101dc25",
+      "claim_id": "C54",
+      "claim": "The Sas ICD is required for dArc1 mRNA transport to tracheal cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we examined whether the Sas ICD is required for dArc1 mRNA transport by expressing dArc1 together with a protein (SasECD-TM-GFP) in which the Sas ICD was replaced by GFP. This protein is present in EVs when expressed in S2 cells, but it does not produce any dArc1 FISH signal outside of the SGs (Figure 5\u2014figure supplement 2), indicating that it cannot facilitate transport of dArc1 capsids to tracheal cells.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 5\u2014figure supplement 2 shows absence of dArc1 FISH signal outside SGs when Sas ICD is replaced by GFP.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:12:33.004809Z"
+    },
+    {
+      "id": "a1787569-102a-4041-ad4f-25d53d462ebd",
+      "content_id": "771f1a72-e8ba-4cc5-ab7d-36d4b101dc25",
+      "claim_id": "C55",
+      "claim": "SasFL is an EV targeting ligand that can direct internalization of EVs into cells expressing the Sas receptor Ptp10D.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings contribute to the understanding of intercellular communication mechanisms by showing that SasFL is an EV targeting ligand that can direct internalization of EVs into cells expressing the Sas receptor Ptp10D.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion based on the experimental data showing preferential targeting of SasFL EVs to Ptp10D-expressing cells.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:12:33.004809Z"
+    },
+    {
+      "id": "898789ef-5b19-4eff-bc7b-82eb3a5f9281",
+      "content_id": "771f1a72-e8ba-4cc5-ab7d-36d4b101dc25",
+      "claim_id": "C56",
+      "claim": "Endogenous SasFL is likely to move between cells in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Endogenous SasFL is likely to move between cells in vivo, because tagged SasFL moves away from both neuronal and non-neuronal cells when ectopically expressed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that tagged SasFL moves away from expressing cells.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:12:33.004809Z"
+    },
+    {
+      "id": "75eff271-8ea7-4893-85ef-e60d6f6b2f90",
+      "content_id": "771f1a72-e8ba-4cc5-ab7d-36d4b101dc25",
+      "claim_id": "C57",
+      "claim": "dArc1 forms a capsid that contains dArc1 mRNA and is loaded into EVs.",
+      "claim_type": "EXPLICIT",
+      "source": "dArc1 is related to retrotransposon Gag proteins, and it forms a capsid that contains dArc1 mRNA and is loaded into EVs (Ashley et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from previous published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:12:33.004809Z"
+    },
+    {
+      "id": "a58f7015-ac1f-497f-8152-dd0f4de63de7",
+      "content_id": "771f1a72-e8ba-4cc5-ab7d-36d4b101dc25",
+      "claim_id": "C58",
+      "claim": "Overexpressed SasFL can facilitate transfer of dArc1 capsids into distant Ptp10D-expressing recipient cells in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Overexpressed SasFL can facilitate transfer of dArc1 capsids into distant Ptp10D-expressing recipient cells in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by the FISH and immunostaining experiments showing dArc1 and dArc1 mRNA in tracheal cells when SasFL and dArc1 are coexpressed in SGs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:12:33.004809Z"
+    },
+    {
+      "id": "12afb7d2-bdd5-4715-b0ee-4256470000a6",
+      "content_id": "771f1a72-e8ba-4cc5-ab7d-36d4b101dc25",
+      "claim_id": "C59",
+      "claim": "Mammalian Arc forms capsids that are transported via EVs.",
+      "claim_type": "EXPLICIT",
+      "source": "Mammalian Arc also forms capsids that are transported via EVs (Pastuzyn et al., 2018), and it binds to the Sas and APP ICDs, which share a tyrosine motif.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from previous published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:12:33.004809Z"
+    },
+    {
+      "id": "59010f1b-5dda-499b-b449-41aaa775c159",
+      "content_id": "771f1a72-e8ba-4cc5-ab7d-36d4b101dc25",
+      "claim_id": "C60",
+      "claim": "Full-length APP and some of its proteolytic products are localized to EVs.",
+      "claim_type": "EXPLICIT",
+      "source": "Full-length APP and some of its proteolytic products are localized to EVs, and EVs from N2a cells bearing tagged APP are internalized into cultured neurons, but not into glia (Laulagnier et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from previous published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:12:33.004809Z"
+    },
+    {
+      "id": "1dd6d350-fcbf-4bbd-89a3-bef083236aa8",
+      "content_id": "771f1a72-e8ba-4cc5-ab7d-36d4b101dc25",
+      "claim_id": "C61",
+      "claim": "EVs from N2a cells bearing tagged APP are internalized into cultured neurons, but not into glia.",
+      "claim_type": "EXPLICIT",
+      "source": "Full-length APP and some of its proteolytic products are localized to EVs, and EVs from N2a cells bearing tagged APP are internalized into cultured neurons, but not into glia (Laulagnier et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from previous published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:12:33.004809Z"
+    },
+    {
+      "id": "394a70d9-73b2-49fc-b311-12bf88ccf24f",
+      "content_id": "771f1a72-e8ba-4cc5-ab7d-36d4b101dc25",
+      "claim_id": "C62",
+      "claim": "sas mutant larvae die at or before second instar and have tracheal phenotypes in larvae but no known phenotypes in embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "sas mutant larvae die at or before second instar (hence the name stranded at second, which is derived from baseball terminology) and have tracheal phenotypes in larvae but no known phenotypes in embryos (Schonbaum et al., 1992).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from previous published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:12:33.004809Z"
+    },
+    {
+      "id": "36cc4c36-ccac-4329-8549-7db9ff16658d",
+      "content_id": "771f1a72-e8ba-4cc5-ab7d-36d4b101dc25",
+      "claim_id": "C63",
+      "claim": "A tyrosine motif in the Sas ICD was found to bind to the PTB domain of Numb.",
+      "claim_type": "EXPLICIT",
+      "source": "A tyrosine motif in the Sas ICD was found to bind to the PTB domain of Numb (Chien et al., 1998), an protein involved in endocytosis that is a negative regulator of Notch signaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from previous published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:12:33.004809Z"
+    },
+    {
+      "id": "bd72e89e-9902-4561-92b3-bbc930c57014",
+      "content_id": "771f1a72-e8ba-4cc5-ab7d-36d4b101dc25",
+      "claim_id": "C64",
+      "claim": "Mammalian Arc is a locally translated dendritic protein that regulates synaptic plasticity, in part by modulating endocytosis of AMPA receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "Mammalian Arc is a locally translated dendritic protein that regulates synaptic plasticity, in part by modulating endocytosis of AMPA receptors (Chowdhury et al., 2006; Shepherd et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from previous published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:12:33.004809Z"
+    },
+    {
+      "id": "217b74b6-a8a2-4524-8096-34dfa9659ed3",
+      "content_id": "771f1a72-e8ba-4cc5-ab7d-36d4b101dc25",
+      "claim_id": "C65",
+      "claim": "The Drosophila genome encodes two proteins distantly related to mammalian Arc, dArc1 and dArc2.",
+      "claim_type": "EXPLICIT",
+      "source": "The Drosophila genome encodes two proteins distantly related to mammalian Arc, dArc1 and dArc2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the Drosophila genome.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:12:33.004809Z"
+    },
+    {
+      "id": "81f31160-aefe-4dd7-a4d6-c02dec34baed",
+      "content_id": "771f1a72-e8ba-4cc5-ab7d-36d4b101dc25",
+      "claim_id": "C66",
+      "claim": "dArc1 functions in larval and adult brain neurons to regulate aspects of metabolism.",
+      "claim_type": "EXPLICIT",
+      "source": "dArc1 functions in larval and adult brain neurons to regulate aspects of metabolism (Mattaliano et al., 2007; Mosher et al., 2015; Keith et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from previous published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:12:33.004809Z"
+    },
+    {
+      "id": "85b08eb3-ee55-48d2-b03d-1b2a19586739",
+      "content_id": "771f1a72-e8ba-4cc5-ab7d-36d4b101dc25",
+      "claim_id": "C67",
+      "claim": "Arc and dArc1 evolved independently from retrotransposon Gag proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Arc and dArc1 evolved independently from retrotransposon Gag proteins (Shepherd, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from previous published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:12:33.004809Z"
+    },
+    {
+      "id": "baf945de-6eab-4544-85dd-5aa48d9983ff",
+      "content_id": "771f1a72-e8ba-4cc5-ab7d-36d4b101dc25",
+      "claim_id": "C68",
+      "claim": "Arc and dArc1 both form virus-like capsids that can encapsulate Arc mRNAs and are transported between cells via EVs.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, they both form virus-like capsids that can encapsulate Arc mRNAs and are transported between cells via EVs (Ashley et al., 2018; Pastuzyn et al., 2018; Hantak et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from previous published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:12:33.004809Z"
+    },
+    {
+      "id": "9f5b8510-75a9-4d29-b5d3-f094545247ee",
+      "content_id": "771f1a72-e8ba-4cc5-ab7d-36d4b101dc25",
+      "claim_id": "C69",
+      "claim": "dArc1 has a C-terminal Zn2+ finger that might be involved in nucleic acid binding.",
+      "claim_type": "EXPLICIT",
+      "source": "dArc1, but not dArc2, has a C-terminal Zn2+ finger that might be involved in nucleic acid binding (Pastuzyn et al., 2018; Erlendsson et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from previous published work.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:12:33.004809Z"
+    },
+    {
+      "id": "57fcb0ea-bbb8-4dcb-a0d1-2c1166784865",
+      "content_id": "771f1a72-e8ba-4cc5-ab7d-36d4b101dc25",
+      "claim_id": "C70",
+      "claim": "RNA is required for normal mammalian Arc capsid assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "Mammalian Arc lacks Zn2+ fingers, but RNA is required for normal capsid assembly (Pastuzyn et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from previous published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:12:33.004809Z"
+    },
+    {
+      "id": "1eb3ed8c-438c-4fda-afb3-23ab6d834ef5",
+      "content_id": "771f1a72-e8ba-4cc5-ab7d-36d4b101dc25",
+      "claim_id": "C71",
+      "claim": "Drosophila dArc1 capsids bearing dArc1 mRNA move from neurons to muscles across larval neuromuscular junction (NMJ) synapses.",
+      "claim_type": "EXPLICIT",
+      "source": "Drosophila dArc1 capsids bearing dArc1 mRNA move from neurons to muscles across larval neuromuscular junction (NMJ) synapses, and dArc1 transfer is required for activity-induced induction of morphological synaptic plasticity (Ashley et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from previous published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:12:33.004809Z"
+    },
+    {
+      "id": "93bce392-9386-4616-be87-64f8dc30a2e8",
+      "content_id": "771f1a72-e8ba-4cc5-ab7d-36d4b101dc25",
+      "claim_id": "C72",
+      "claim": "dArc1 transfer is required for activity-induced induction of morphological synaptic plasticity at the NMJ.",
+      "claim_type": "EXPLICIT",
+      "source": "Drosophila dArc1 capsids bearing dArc1 mRNA move from neurons to muscles across larval neuromuscular junction (NMJ) synapses, and dArc1 transfer is required for activity-induced induction of morphological synaptic plasticity (Ashley et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from previous published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:12:33.004809Z"
+    },
+    {
+      "id": "763096f1-aefc-46a2-95ce-b2e4d3c82fd9",
+      "content_id": "771f1a72-e8ba-4cc5-ab7d-36d4b101dc25",
+      "claim_id": "C73",
+      "claim": "Sas-bearing EVs preferentially target to cells expressing Ptp10D.",
+      "claim_type": "EXPLICIT",
+      "source": "Sas is a binding partner for the Ptp10D receptor tyrosine phosphatase, and Sas-bearing EVs preferentially target to cells expressing Ptp10D.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by the experiments showing increased uptake of SasFL EVs by Ptp10D-expressing cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:12:33.004809Z"
+    },
+    {
+      "id": "0aff92e9-a2c7-433b-8464-97ca976ff362",
+      "content_id": "771f1a72-e8ba-4cc5-ab7d-36d4b101dc25",
+      "claim_id": "C74",
+      "claim": "The cytoplasmic domain (ICD) of Sas binds to dArc1 and mammalian Arc.",
+      "claim_type": "EXPLICIT",
+      "source": "We used co-immunoprecipitation and peptide binding to show that the cytoplasmic domain (ICD) of Sas binds to dArc1 and mammalian Arc.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by co-IP and peptide binding experiments in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:12:33.004809Z"
+    },
+    {
+      "id": "5bd6cf93-5ce3-4eba-a785-37fdd8bd57ac",
+      "content_id": "771f1a72-e8ba-4cc5-ab7d-36d4b101dc25",
+      "claim_id": "C75",
+      "claim": "The Sas ICD contains a motif required for dArc1 binding that is shared by the mammalian and Drosophila amyloid precursor protein (APP) orthologs.",
+      "claim_type": "EXPLICIT",
+      "source": "The Sas ICD contains a motif required for dArc1 binding that is shared by the mammalian and Drosophila amyloid precursor protein (APP) orthologs, and the APP ICD also binds to mammalian Arc.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by the sequence analysis and binding experiments showing that Sas, APP, and Appl ICDs share the Y(D/E)NP(S/T)Y motif and bind to Arc proteins.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:12:33.004809Z"
+    },
+    {
+      "id": "439bf311-9340-4254-99e1-aaecf32950ec",
+      "content_id": "771f1a72-e8ba-4cc5-ab7d-36d4b101dc25",
+      "claim_id": "C76",
+      "claim": "The APP ICD binds to mammalian Arc.",
+      "claim_type": "EXPLICIT",
+      "source": "The Sas ICD contains a motif required for dArc1 binding that is shared by the mammalian and Drosophila amyloid precursor protein (APP) orthologs, and the APP ICD also binds to mammalian Arc.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by co-IP and peptide binding experiments in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:12:33.004809Z"
+    },
+    {
+      "id": "82f8f8c5-4154-4723-8141-caa37726d02a",
+      "content_id": "771f1a72-e8ba-4cc5-ab7d-36d4b101dc25",
+      "claim_id": "C77",
+      "claim": "Sas facilitates delivery of dArc1 capsids bearing dArc1 mRNA into distant Ptp10D-expressing recipient cells in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Sas facilitates delivery of dArc1 capsids bearing dArc1 mRNA into distant Ptp10D-expressing recipient cells in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by the FISH and immunostaining experiments showing dArc1 and dArc1 mRNA in tracheal cells when SasFL and dArc1 are coexpressed in SGs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:12:33.004809Z"
+    },
+    {
+      "id": "4a6985ac-d2a2-4410-9d74-a2bdda6ae62c",
+      "content_id": "771f1a72-e8ba-4cc5-ab7d-36d4b101dc25",
+      "claim_id": "C78",
+      "claim": "EVs contain the Wg protein, which is a marker for EVs in S2 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "EVs contained the Wg protein, which is a marker for EVs in S2 cells and is present at very low levels in lysates (Koles et al., 2012; Figure 1c, Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Western blot in Figure 1c shows Wg in EV fractions, and this is cited from previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:12:33.004809Z"
+    },
+    {
+      "id": "0fa6f771-7ff1-487e-a49a-2fa3053c415a",
+      "content_id": "771f1a72-e8ba-4cc5-ab7d-36d4b101dc25",
+      "claim_id": "C79",
+      "claim": "EVs lack \u03b2-actin, showing that they are not heavily contaminated by cytosol.",
+      "claim_type": "EXPLICIT",
+      "source": "They lacked \u03b2-actin, showing that they are not heavily contaminated by cytosol.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Western blot in Figure 1c shows absence of \u03b2-actin in EV fractions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:12:33.004809Z"
+    },
+    {
+      "id": "3807b180-3da8-42fe-8549-148e62554b5d",
+      "content_id": "771f1a72-e8ba-4cc5-ab7d-36d4b101dc25",
+      "claim_id": "C80",
+      "claim": "EV preparations made using the Exosome Isolation kit have similar characteristics to those generated by ultracentrifugation.",
+      "claim_type": "EXPLICIT",
+      "source": "EV preparations made using the Exosome Isolation kit have similar characteristics to those generated by ultracentrifugation (Skottvoll et al., 2019), and the kit requires much less material, allowing EVs to be purified from small-scale transfections.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from previous published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:12:33.004809Z"
+    },
+    {
+      "id": "e9529ce8-93e8-4576-bca2-d1be54fc70c8",
+      "content_id": "771f1a72-e8ba-4cc5-ab7d-36d4b101dc25",
+      "claim_id": "C81",
+      "claim": "The dArc1 capsid is 37 nm in diameter.",
+      "claim_type": "EXPLICIT",
+      "source": "The dArc1 capsid is 37 nm in diameter (Erlendsson et al., 2020; Hallin et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from previous published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:12:33.004809Z"
+    },
+    {
+      "id": "78899562-57a0-4d3d-8d3c-d4d20b281fca",
+      "content_id": "771f1a72-e8ba-4cc5-ab7d-36d4b101dc25",
+      "claim_id": "C82",
+      "claim": "EVs from media of short-term cultures of mouse cortical neurons contain denser objects whose size (~30 nm in diameter) is consistent with mammalian Arc capsids.",
+      "claim_type": "EXPLICIT",
+      "source": "EVs from media of short-term cultures of mouse cortical neurons were shown to contain denser objects whose size (~30 nm in diameter) was consistent with mammalian Arc capsids, and which were associated with anti-Arc gold particles (Pastuzyn et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from previous published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:12:33.004809Z"
+    },
+    {
+      "id": "386d7402-4b21-4151-bae4-c06433112e59",
+      "content_id": "771f1a72-e8ba-4cc5-ab7d-36d4b101dc25",
+      "claim_id": "C83",
+      "claim": "Capsid-like structures that bound to anti-dArc1 gold particles were detected in lysed preparations of EVs from S2 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "For dArc1, capsid-like structures that bound to anti-dArc1 gold particles were detected in lysed preparations of EVs from S2 cells (Ashley et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from previous published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:12:33.004809Z"
+    },
+    {
+      "id": "1d766664-2026-4601-9de0-e774973847d4",
+      "content_id": "771f1a72-e8ba-4cc5-ab7d-36d4b101dc25",
+      "claim_id": "C84",
+      "claim": "The Y(D/E)NP(S/T)Y sequence contains the consensus motif for binding of mammalian Arc to TARP\u03b32, CaMKII, and NMDA receptor peptides, which is X-P-X-(Y/F/H).",
+      "claim_type": "EXPLICIT",
+      "source": "This sequence contains the consensus motif for binding of mammalian Arc to TARP\u03b32, CaMKII, and NMDA receptor peptides, which is X-P-X-(Y/F/H)(Zhang et al., 2015; Nielsen et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from previous published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:12:33.004809Z"
+    },
+    {
+      "id": "c7ccccec-0420-41d1-b2db-d00bd183380f",
+      "content_id": "771f1a72-e8ba-4cc5-ab7d-36d4b101dc25",
+      "claim_id": "C85",
+      "claim": "Arc binds to the NMDA receptor as a monomer.",
+      "claim_type": "EXPLICIT",
+      "source": "Arc binds to the NMDA receptor as a monomer (Nielsen et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from previous published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:12:33.004809Z"
+    },
+    {
+      "id": "72479e90-014e-4171-a75d-f9e8bda980c5",
+      "content_id": "771f1a72-e8ba-4cc5-ab7d-36d4b101dc25",
+      "claim_id": "C86",
+      "claim": "The first Y in the YENPTY motif in APP has been reported to be a substrate for the Abl tyrosine kinase.",
+      "claim_type": "EXPLICIT",
+      "source": "The first Y in the YENPTY motif in APP has been reported to be a substrate for the Abl tyrosine kinase (Zambrano et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from previous published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:12:33.004809Z"
+    },
+    {
+      "id": "823d70f0-1390-45ef-ac0f-3112e50ad0d8",
+      "content_id": "771f1a72-e8ba-4cc5-ab7d-36d4b101dc25",
+      "claim_id": "C87",
+      "claim": "The Abl inhibitor imatinib (Gleevec) inhibits formation of \u03b2-amyloid peptide (A\u03b2).",
+      "claim_type": "EXPLICIT",
+      "source": "The Abl inhibitor imatinib (Gleevec), which would be expected to block phosphorylation of this site, inhibits formation of \u03b2-amyloid peptide (A\u03b2)(Netzer et al., 2003), and binding of Arc to APP could be relevant to this effect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from previous published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:12:33.004809Z"
+    },
+    {
+      "id": "bdf4bdc4-cc72-49c4-9c37-c4303bbfb2c6",
+      "content_id": "771f1a72-e8ba-4cc5-ab7d-36d4b101dc25",
+      "claim_id": "C88",
+      "claim": "Binding of Numb to the Sas ICD may increase Sas uptake and/or protect endocytosed Sas from degradation.",
+      "claim_type": "EXPLICIT",
+      "source": "We speculate that binding of Numb to the Sas ICD increases Sas uptake and/or protects endocytosed Sas from degradation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the observed synergistic effect of Numb and Ptp10D on SasFL uptake.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:12:33.004809Z"
+    },
+    {
+      "id": "fbbfef5a-6ebe-4fc8-aa47-1abca8a92c3e",
+      "content_id": "771f1a72-e8ba-4cc5-ab7d-36d4b101dc25",
+      "claim_id": "C89",
+      "claim": "Sas is not required for loading of dArc1 capsids into EVs.",
+      "claim_type": "EXPLICIT",
+      "source": "Sas is not required for loading of dArc1 capsids into EVs, since dArc1 mRNA is a normal component of EVs from cell lines that do not express Sas.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that dArc1 mRNA is found in EVs from cells that don't express Sas.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:12:33.004809Z"
+    },
+    {
+      "id": "a3884d86-a5f4-47dc-a6ce-039f188eda42",
+      "content_id": "771f1a72-e8ba-4cc5-ab7d-36d4b101dc25",
+      "claim_id": "C90",
+      "claim": "Binding of Sas to dArc1 may help to increase the probability that Sas-bearing EVs contain dArc1 capsids bearing dArc1 mRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Binding of Sas to dArc1 may help to increase the probability that Sas-bearing EVs contain dArc1 capsids bearing dArc1 mRNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about the functional role of Sas-dArc1 interaction.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:12:33.004809Z"
+    },
+    {
+      "id": "a33efc0a-53ab-4cbb-a86c-06aeb23fe224",
+      "content_id": "771f1a72-e8ba-4cc5-ab7d-36d4b101dc25",
+      "claim_id": "C91",
+      "claim": "One function of Sas might be to deliver EVs and their dArc1 capsid cargo, including encapsulated RNA, to specific recipient cells that express the Sas binding partner Ptp10D.",
+      "claim_type": "EXPLICIT",
+      "source": "One function of Sas might then be to deliver the EVs and their dArc1 capsid cargo, including encapsulated RNA, to specific recipient cells that express the Sas binding partner Ptp10D.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about the functional role of Sas in EV targeting.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:12:33.004809Z"
+    },
+    {
+      "id": "dcc4aa6e-0382-4820-b76a-58729d52d8a2",
+      "content_id": "771f1a72-e8ba-4cc5-ab7d-36d4b101dc25",
+      "claim_id": "C92",
+      "claim": "The brightness of the tracheal FISH signal suggests that it represents not only dArc1 mRNA transferred from capsids, but dArc1 mRNA synthesized in these cells in response to dArc1 protein made from the dArc1 mRNA transported in the capsid.",
+      "claim_type": "EXPLICIT",
+      "source": "The brightness of the tracheal FISH signal suggests that it represents not only dArc1 mRNA transferred from capsids, but dArc1 mRNA synthesized in these cells in response to dArc1 protein made from the dArc1 mRNA transported in the capsid.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the intensity of the FISH signal in tracheal cells.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:12:33.004809Z"
+    },
+    {
+      "id": "10224ff5-bd4b-46a3-b6c7-509360d5a535",
+      "content_id": "771f1a72-e8ba-4cc5-ab7d-36d4b101dc25",
+      "claim_id": "C93",
+      "claim": "There is a glial sheath around the VNC at late stage 16.",
+      "claim_type": "EXPLICIT",
+      "source": "There is a glial sheath around the VNC at late stage 16, and this might block access of EVs to Ptp10D-expressing neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a possible explanation for why dArc1 is not observed in VNC neurons.",
+      "evidence_type": "[\"KNOWLEDGE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:12:33.004809Z"
+    },
+    {
+      "id": "de7411af-9e95-4c21-9b1c-4fb36e21409d",
+      "content_id": "771f1a72-e8ba-4cc5-ab7d-36d4b101dc25",
+      "claim_id": "C94",
+      "claim": "Sas::Ptp10D interactions control the elimination of neoplastic epithelial clones by surrounding normal tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "Sas::Ptp10D interactions also control the elimination of neoplastic epithelial clones by surrounding normal tissue. Sas is on normal epithelial cells, and it relocalizes to the parts of their cell surfaces that are adjacent to the neoplastic clone and binds to Ptp10D on the neoplastic cells. Ptp10D in turn relocalizes and dephosphorylates the EGF receptor tyrosine kinase, leading to death of the neoplastic cells (Yamamoto et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from previous published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:12:33.004809Z"
+    },
+    {
+      "id": "4d34165c-d6b4-4ef3-a3b1-641bccc1fac1",
+      "content_id": "771f1a72-e8ba-4cc5-ab7d-36d4b101dc25",
+      "claim_id": "C95",
+      "claim": "The Sas ECD has binding partners other than Ptp10D.",
+      "claim_type": "EXPLICIT",
+      "source": "The Sas ECD has other binding partners as well, because it interacts with cells that do not express Ptp10D in live embryo staining assays (Lee et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from previous published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:12:33.004809Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "ab8c2f80-7f34-4460-823a-52217cce53c4",
+      "content_id": "771f1a72-e8ba-4cc5-ab7d-36d4b101dc25",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "SasFL and Sasshort are two isoforms of the Sas protein that differ in their localization patterns. SasFL contains an EVT region that is absent in Sasshort, and this region is required for both apical localization in epithelial cells and targeting to extracellular vesicles (EVs). When expressed in S2 cells, approximately 50% of SasFL localizes to EVs while ~90% of Sasshort remains in the cell lysate, with no proteolytic cleavage products observed.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C12 provide converging evidence from multiple experimental approaches (western blotting, immunofluorescence, and cellular fractionation) demonstrating differential localization of SasFL and Sasshort. The structural characterization (C3-C4), cellular localization data (C5-C6, C10-C11), and biochemical fractionation (C7-C9) consistently support the conclusion that the EVT region is required for EV targeting and apical localization (C12).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:12:33.004809Z"
+    },
+    {
+      "id": "f9e30aa9-f938-4722-af40-02dc2699b17f",
+      "content_id": "771f1a72-e8ba-4cc5-ab7d-36d4b101dc25",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "EVs from SasFL-expressing S2 cells are heterogeneous in size (30 nm to >100 nm diameter) and membrane composition (single and double-membrane vesicles). Expression of SasFL increases EV production by 44% in the exosome size range and shifts the size distribution toward smaller vesicles (mean 102 nm vs. 129 nm for controls). Many EVs contain denser objects 30-40 nm in diameter, consistent with dArc1 capsids.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C20 are supported by complementary electron microscopy techniques (immuno-EM and tomography) and nanoparticle tracking analysis. The EM data (C13-C16, C20) provide direct visualization of EV structure, while NTA (C17-C19) provides quantitative measurements of size distribution and particle numbers. The large distance between membrane and gold particles (C15-C16) is reasonably explained by the protein structure.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:12:33.004809Z"
+    },
+    {
+      "id": "325778c8-d991-4978-83bd-80affb120048",
+      "content_id": "771f1a72-e8ba-4cc5-ab7d-36d4b101dc25",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "SasFL-containing EVs can move between tissues in vivo and are preferentially internalized by cells expressing the Sas receptor Ptp10D. Expression of Ptp10D and Numb in recipient cells synergistically increases SasFL uptake by ~4-fold in S2 cells and ~3-fold in imaginal discs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C25 demonstrate EV targeting specificity through both in vivo (C21-C22) and in vitro (C23-C25) experiments. The differential behavior of SasFL vs. Sasshort (C21-C22) and the dose-dependent effects of Ptp10D and Numb expression (C23-C25) provide strong evidence for receptor-mediated EV uptake. The synergistic effect is quantified and reproducible.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:12:33.004809Z"
+    },
+    {
+      "id": "c0b917e5-0faa-494f-ba31-9d63eeb4e0c7",
+      "content_id": "771f1a72-e8ba-4cc5-ab7d-36d4b101dc25",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The Sas intracellular domain (ICD) binds directly to dArc1 and mammalian Arc through a conserved Y(D/E)NP(S/T)Y motif. This motif is shared with APP and Appl ICDs, which also bind to Arc proteins. Mass spectrometry identified dArc1 as the most enriched protein (22-fold) in SasFL EVs, and direct binding was confirmed by co-immunoprecipitation and peptide binding assays.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C42 provide multiple lines of evidence for Sas-Arc interaction: mass spectrometry enrichment (C28-C29), co-IP experiments (C32, C37-C38), and direct peptide binding assays (C39-C40). The identification of a conserved binding motif (C33-C36, C42) and demonstration that both fly and mammalian Arc proteins bind to this motif strengthen the conclusion. The convergence of unbiased discovery (mass spec) and targeted validation (co-IP, peptide binding) is compelling.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:12:33.004809Z"
+    },
+    {
+      "id": "02694fea-369f-4a48-b286-adf3c38731e0",
+      "content_id": "771f1a72-e8ba-4cc5-ab7d-36d4b101dc25",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "SasFL facilitates intercellular transfer of dArc1 capsids and dArc1 mRNA in vivo. When SasFL and dArc1 are co-expressed in salivary glands, dArc1 protein puncta and endogenous dArc1 mRNA appear in distant Ptp10D-expressing tracheal cells. This transfer requires both the Sas ICD and the endogenous dArc1 3' UTR.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C54 demonstrate functional EV-mediated cargo delivery through complementary approaches: immunostaining for protein (C45-C49) and FISH for mRNA (C50-C52). The requirement for the Sas ICD (C54) and dArc1 3' UTR (C52-C53) provides mechanistic insight. The dramatic increase in tracheal dArc1 mRNA signal when SasFL and dArc1 are co-expressed (C51) compared to controls (C49) is striking and reproducible (n>100 embryos).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:12:33.004809Z"
+    },
+    {
+      "id": "ad6c4171-6eed-47f5-a79d-bdeb71bbae74",
+      "content_id": "771f1a72-e8ba-4cc5-ab7d-36d4b101dc25",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "EV preparations contain the EV marker Wg and lack the cytosolic marker \u03b2-actin, confirming their identity as EVs with minimal cytosolic contamination. EVs prepared using the Exosome Isolation kit have similar characteristics to those prepared by ultracentrifugation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C78-C80 provide quality control validation for EV preparations. The presence of Wg (C78) and absence of \u03b2-actin (C79) are standard markers for EV purity. The comparison between isolation methods (C80) is supported by citation and confirmed by the authors' own western blots showing similar protein compositions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:12:33.004809Z"
+    },
+    {
+      "id": "d8719ced-fa78-437b-b6b9-c80f8f7b8637",
+      "content_id": "771f1a72-e8ba-4cc5-ab7d-36d4b101dc25",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "EVs are mediators of cell-cell communication that transport specific protein and RNA cargoes. Exosomes are 30-150 nm in diameter and are released via fusion of multivesicular bodies with the plasma membrane.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2 represent established background knowledge about EVs and exosomes, cited appropriately and consistent with the field's understanding. These provide necessary context for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:12:33.004809Z"
+    },
+    {
+      "id": "ad55fb31-477d-4601-bf84-1842041feb82",
+      "content_id": "771f1a72-e8ba-4cc5-ab7d-36d4b101dc25",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Prior work established that Ptp10D is a binding partner for Sas and that Sas::Ptp10D interactions regulate multiple developmental processes including axon guidance, glial migration, and elimination of neoplastic clones. The Sas ICD contains a tyrosine motif that binds to Numb PTB domain.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C27, C62-C63, C94-C95 accurately cite prior published work by the authors and others. These citations are appropriately used to provide context and build on established findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:12:33.004809Z"
+    },
+    {
+      "id": "bb4ea0fe-3603-4011-a61e-4633676e99e5",
+      "content_id": "771f1a72-e8ba-4cc5-ab7d-36d4b101dc25",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Prior work established that Arc and dArc1 are retrotransposon-derived proteins that form capsids containing their own mRNAs and are transported via EVs. Mammalian Arc regulates synaptic plasticity, while dArc1 regulates metabolism. APP also localizes to EVs and has been implicated in Alzheimer's disease along with Arc.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30, C41, C43-C44, C57, C59-C72, C81-C87 accurately cite extensive prior literature on Arc/dArc1 biology, APP localization, and their roles in neuronal function and disease. These citations appropriately contextualize the current findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:12:33.004809Z"
+    },
+    {
+      "id": "b2139ccd-6284-46fc-acef-3dfbe07cc2cf",
+      "content_id": "771f1a72-e8ba-4cc5-ab7d-36d4b101dc25",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "SasFL functions as an EV targeting ligand that directs EVs to Ptp10D-expressing cells and facilitates delivery of dArc1 capsids bearing dArc1 mRNA to distant recipient cells in vivo. The Sas ICD binds to dArc1 and mammalian Arc through a conserved motif shared with APP.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C58, C73-C77 represent summary conclusions that integrate the experimental findings. These are well-supported by the data presented in the other claim groups, particularly the EV targeting experiments (C21-C25), binding studies (C28-C42), and in vivo transfer experiments (C45-C54).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:12:33.004809Z"
+    },
+    {
+      "id": "e82a6b07-c0cc-4bd7-8382-877032b8da68",
+      "content_id": "771f1a72-e8ba-4cc5-ab7d-36d4b101dc25",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The authors speculate about mechanisms underlying their observations, including: (1) Numb binding may increase Sas uptake or protect it from degradation, (2) Sas-dArc1 binding may increase the probability of dArc1 capsid loading into Sas-bearing EVs, (3) the bright tracheal FISH signal may represent amplification through induced endogenous dArc1 expression, and (4) a glial sheath may block EV access to VNC neurons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C88-C93 are explicitly speculative (C88, C90, C91, C93) or inferential (C89, C92). While these speculations are reasonable given the data, they lack direct experimental support. The speculation about mRNA amplification (C92) is plausible given the signal intensity but would require additional experiments to confirm. These represent hypotheses for future work rather than established findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:12:33.004809Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "0611752d-50f7-4eaf-a138-3af36a11e64a",
+      "result_id": "ab8c2f80-7f34-4460-823a-52217cce53c4"
+    },
+    {
+      "claim_id": "456a4dc2-47aa-4e36-bee7-2bd6fd9d479c",
+      "result_id": "ab8c2f80-7f34-4460-823a-52217cce53c4"
+    },
+    {
+      "claim_id": "c05cce0c-75c1-482d-b7f4-d25f99175935",
+      "result_id": "ab8c2f80-7f34-4460-823a-52217cce53c4"
+    },
+    {
+      "claim_id": "a03817d5-426f-4d21-a8bd-17ea2bc91be5",
+      "result_id": "ab8c2f80-7f34-4460-823a-52217cce53c4"
+    },
+    {
+      "claim_id": "b329a397-c752-4394-9047-a8149d37ab7b",
+      "result_id": "ab8c2f80-7f34-4460-823a-52217cce53c4"
+    },
+    {
+      "claim_id": "35584d06-3d47-4faf-8c51-856d4346c4d3",
+      "result_id": "ab8c2f80-7f34-4460-823a-52217cce53c4"
+    },
+    {
+      "claim_id": "1507f435-4927-4b6b-a2f8-6758fff0e68d",
+      "result_id": "ab8c2f80-7f34-4460-823a-52217cce53c4"
+    },
+    {
+      "claim_id": "9b5f33d3-e7a3-47e0-8d72-5067a6173435",
+      "result_id": "ab8c2f80-7f34-4460-823a-52217cce53c4"
+    },
+    {
+      "claim_id": "fa41ee38-b18b-4ed2-8597-86969f950e8c",
+      "result_id": "ab8c2f80-7f34-4460-823a-52217cce53c4"
+    },
+    {
+      "claim_id": "70733da3-6937-433b-816e-a0c2debfb685",
+      "result_id": "ab8c2f80-7f34-4460-823a-52217cce53c4"
+    },
+    {
+      "claim_id": "c84c28d6-c99d-48df-892d-e2b894a424be",
+      "result_id": "f9e30aa9-f938-4722-af40-02dc2699b17f"
+    },
+    {
+      "claim_id": "a849f421-319b-4f4a-ba38-fde9eea875ca",
+      "result_id": "f9e30aa9-f938-4722-af40-02dc2699b17f"
+    },
+    {
+      "claim_id": "2d0d8ff1-e59c-4e41-829b-89ee42b092c4",
+      "result_id": "f9e30aa9-f938-4722-af40-02dc2699b17f"
+    },
+    {
+      "claim_id": "e21e9fdf-0350-4598-9fa2-434aa690d269",
+      "result_id": "f9e30aa9-f938-4722-af40-02dc2699b17f"
+    },
+    {
+      "claim_id": "0b904823-d523-4ad0-8db7-78fe026e8b58",
+      "result_id": "f9e30aa9-f938-4722-af40-02dc2699b17f"
+    },
+    {
+      "claim_id": "c7256d3f-3095-4517-bcba-05d305d97123",
+      "result_id": "f9e30aa9-f938-4722-af40-02dc2699b17f"
+    },
+    {
+      "claim_id": "48b7862a-74eb-4a42-a584-131ae3b9a34e",
+      "result_id": "f9e30aa9-f938-4722-af40-02dc2699b17f"
+    },
+    {
+      "claim_id": "c4900503-86e8-4559-8cf1-f18afe63c971",
+      "result_id": "f9e30aa9-f938-4722-af40-02dc2699b17f"
+    },
+    {
+      "claim_id": "af8c329d-d067-4992-b2c1-ab7170f5fd42",
+      "result_id": "325778c8-d991-4978-83bd-80affb120048"
+    },
+    {
+      "claim_id": "4e1e3d95-e889-422d-88aa-d4302f0b0a24",
+      "result_id": "325778c8-d991-4978-83bd-80affb120048"
+    },
+    {
+      "claim_id": "1c1ed695-90d5-48fe-9a6c-ba56a2de858f",
+      "result_id": "325778c8-d991-4978-83bd-80affb120048"
+    },
+    {
+      "claim_id": "636d66be-3e21-426c-94fc-f66e9c657dc3",
+      "result_id": "325778c8-d991-4978-83bd-80affb120048"
+    },
+    {
+      "claim_id": "ffb109ed-7b25-4185-a8fe-798af2c67c5b",
+      "result_id": "325778c8-d991-4978-83bd-80affb120048"
+    },
+    {
+      "claim_id": "75d058ce-611f-4347-8313-a018a4a3afec",
+      "result_id": "c0b917e5-0faa-494f-ba31-9d63eeb4e0c7"
+    },
+    {
+      "claim_id": "607cc874-3927-4954-9f1e-56118256c5b1",
+      "result_id": "c0b917e5-0faa-494f-ba31-9d63eeb4e0c7"
+    },
+    {
+      "claim_id": "65e9eac0-2c4c-4457-bc37-27104ea6dd3d",
+      "result_id": "c0b917e5-0faa-494f-ba31-9d63eeb4e0c7"
+    },
+    {
+      "claim_id": "3fc6d77c-4ce0-464f-b5a2-e90f65972d80",
+      "result_id": "c0b917e5-0faa-494f-ba31-9d63eeb4e0c7"
+    },
+    {
+      "claim_id": "04915ac9-68b9-4e1d-ac7b-66010190fa99",
+      "result_id": "c0b917e5-0faa-494f-ba31-9d63eeb4e0c7"
+    },
+    {
+      "claim_id": "61c28940-1cc9-4c54-a13a-565084c18fc1",
+      "result_id": "c0b917e5-0faa-494f-ba31-9d63eeb4e0c7"
+    },
+    {
+      "claim_id": "1506f92b-fd42-40a4-88e9-fcce6de2f404",
+      "result_id": "c0b917e5-0faa-494f-ba31-9d63eeb4e0c7"
+    },
+    {
+      "claim_id": "bb26de4d-4c54-4cb3-9e6a-f36154e4ce1f",
+      "result_id": "c0b917e5-0faa-494f-ba31-9d63eeb4e0c7"
+    },
+    {
+      "claim_id": "5bcb7d6a-12f4-4435-a262-1577b56af7c8",
+      "result_id": "c0b917e5-0faa-494f-ba31-9d63eeb4e0c7"
+    },
+    {
+      "claim_id": "53eba71f-b692-491e-99e8-380171661691",
+      "result_id": "c0b917e5-0faa-494f-ba31-9d63eeb4e0c7"
+    },
+    {
+      "claim_id": "74b46927-882b-4a5f-90ed-98c4049161e9",
+      "result_id": "c0b917e5-0faa-494f-ba31-9d63eeb4e0c7"
+    },
+    {
+      "claim_id": "bbb7dc0c-50ee-4db2-b23f-505db6f20cd3",
+      "result_id": "c0b917e5-0faa-494f-ba31-9d63eeb4e0c7"
+    },
+    {
+      "claim_id": "eec42fe5-7358-4bb6-a486-77c078396334",
+      "result_id": "c0b917e5-0faa-494f-ba31-9d63eeb4e0c7"
+    },
+    {
+      "claim_id": "01171165-cbc9-42fe-ae6c-e13796708f29",
+      "result_id": "c0b917e5-0faa-494f-ba31-9d63eeb4e0c7"
+    },
+    {
+      "claim_id": "fedad1a3-5ef3-4dd3-ba71-ee9cda576df9",
+      "result_id": "02694fea-369f-4a48-b286-adf3c38731e0"
+    },
+    {
+      "claim_id": "d2e257f2-434f-44b2-b5d0-dadf48ac8cd7",
+      "result_id": "02694fea-369f-4a48-b286-adf3c38731e0"
+    },
+    {
+      "claim_id": "a30c1643-cabf-4a39-8714-8a7bbb7ba87e",
+      "result_id": "02694fea-369f-4a48-b286-adf3c38731e0"
+    },
+    {
+      "claim_id": "8a903a0f-9bf0-490b-9f30-653551778c06",
+      "result_id": "02694fea-369f-4a48-b286-adf3c38731e0"
+    },
+    {
+      "claim_id": "c42a3f34-14b3-4796-8e2b-4021066f9cf7",
+      "result_id": "02694fea-369f-4a48-b286-adf3c38731e0"
+    },
+    {
+      "claim_id": "f9d9a09a-7b89-4b8e-b69f-16df3bef08b4",
+      "result_id": "02694fea-369f-4a48-b286-adf3c38731e0"
+    },
+    {
+      "claim_id": "8158fd53-a0cb-4014-ada9-2e5d0066e35d",
+      "result_id": "02694fea-369f-4a48-b286-adf3c38731e0"
+    },
+    {
+      "claim_id": "8ad1464d-58dd-4d98-9b75-798001fb06eb",
+      "result_id": "02694fea-369f-4a48-b286-adf3c38731e0"
+    },
+    {
+      "claim_id": "2a48f3f1-c615-4978-8c2c-07de6d2511ca",
+      "result_id": "02694fea-369f-4a48-b286-adf3c38731e0"
+    },
+    {
+      "claim_id": "061519b3-f95d-4bc0-8f32-396020e18803",
+      "result_id": "02694fea-369f-4a48-b286-adf3c38731e0"
+    },
+    {
+      "claim_id": "4a6985ac-d2a2-4410-9d74-a2bdda6ae62c",
+      "result_id": "ad6c4171-6eed-47f5-a79d-bdeb71bbae74"
+    },
+    {
+      "claim_id": "0fa6f771-7ff1-487e-a49a-2fa3053c415a",
+      "result_id": "ad6c4171-6eed-47f5-a79d-bdeb71bbae74"
+    },
+    {
+      "claim_id": "3807b180-3da8-42fe-8549-148e62554b5d",
+      "result_id": "ad6c4171-6eed-47f5-a79d-bdeb71bbae74"
+    },
+    {
+      "claim_id": "5c62c309-f82c-434e-9d7f-1bcba93420ab",
+      "result_id": "d8719ced-fa78-437b-b6b9-c80f8f7b8637"
+    },
+    {
+      "claim_id": "b47ab37d-e542-4f81-9d1b-56580200b031",
+      "result_id": "d8719ced-fa78-437b-b6b9-c80f8f7b8637"
+    },
+    {
+      "claim_id": "e1bc8051-9140-4cc7-af16-a19703818d44",
+      "result_id": "ad55fb31-477d-4601-bf84-1842041feb82"
+    },
+    {
+      "claim_id": "39ea8480-8b78-44ff-8262-ac1bc41cd04e",
+      "result_id": "ad55fb31-477d-4601-bf84-1842041feb82"
+    },
+    {
+      "claim_id": "394a70d9-73b2-49fc-b311-12bf88ccf24f",
+      "result_id": "ad55fb31-477d-4601-bf84-1842041feb82"
+    },
+    {
+      "claim_id": "36cc4c36-ccac-4329-8549-7db9ff16658d",
+      "result_id": "ad55fb31-477d-4601-bf84-1842041feb82"
+    },
+    {
+      "claim_id": "de7411af-9e95-4c21-9b1c-4fb36e21409d",
+      "result_id": "ad55fb31-477d-4601-bf84-1842041feb82"
+    },
+    {
+      "claim_id": "4d34165c-d6b4-4ef3-a3b1-641bccc1fac1",
+      "result_id": "ad55fb31-477d-4601-bf84-1842041feb82"
+    },
+    {
+      "claim_id": "65e9eac0-2c4c-4457-bc37-27104ea6dd3d",
+      "result_id": "bb4ea0fe-3603-4011-a61e-4633676e99e5"
+    },
+    {
+      "claim_id": "26402ac3-3bb0-41b8-9b35-11228b0bc57a",
+      "result_id": "bb4ea0fe-3603-4011-a61e-4633676e99e5"
+    },
+    {
+      "claim_id": "8f5795ed-dcc1-47d7-9a49-228bf4a277cf",
+      "result_id": "bb4ea0fe-3603-4011-a61e-4633676e99e5"
+    },
+    {
+      "claim_id": "7cb083cb-6594-42f5-8f8d-8151e49e0dbc",
+      "result_id": "bb4ea0fe-3603-4011-a61e-4633676e99e5"
+    },
+    {
+      "claim_id": "75eff271-8ea7-4893-85ef-e60d6f6b2f90",
+      "result_id": "bb4ea0fe-3603-4011-a61e-4633676e99e5"
+    },
+    {
+      "claim_id": "12afb7d2-bdd5-4715-b0ee-4256470000a6",
+      "result_id": "bb4ea0fe-3603-4011-a61e-4633676e99e5"
+    },
+    {
+      "claim_id": "59010f1b-5dda-499b-b449-41aaa775c159",
+      "result_id": "bb4ea0fe-3603-4011-a61e-4633676e99e5"
+    },
+    {
+      "claim_id": "1dd6d350-fcbf-4bbd-89a3-bef083236aa8",
+      "result_id": "bb4ea0fe-3603-4011-a61e-4633676e99e5"
+    },
+    {
+      "claim_id": "bd72e89e-9902-4561-92b3-bbc930c57014",
+      "result_id": "bb4ea0fe-3603-4011-a61e-4633676e99e5"
+    },
+    {
+      "claim_id": "217b74b6-a8a2-4524-8096-34dfa9659ed3",
+      "result_id": "bb4ea0fe-3603-4011-a61e-4633676e99e5"
+    },
+    {
+      "claim_id": "81f31160-aefe-4dd7-a4d6-c02dec34baed",
+      "result_id": "bb4ea0fe-3603-4011-a61e-4633676e99e5"
+    },
+    {
+      "claim_id": "85b08eb3-ee55-48d2-b03d-1b2a19586739",
+      "result_id": "bb4ea0fe-3603-4011-a61e-4633676e99e5"
+    },
+    {
+      "claim_id": "baf945de-6eab-4544-85dd-5aa48d9983ff",
+      "result_id": "bb4ea0fe-3603-4011-a61e-4633676e99e5"
+    },
+    {
+      "claim_id": "9f5b8510-75a9-4d29-b5d3-f094545247ee",
+      "result_id": "bb4ea0fe-3603-4011-a61e-4633676e99e5"
+    },
+    {
+      "claim_id": "57fcb0ea-bbb8-4dcb-a0d1-2c1166784865",
+      "result_id": "bb4ea0fe-3603-4011-a61e-4633676e99e5"
+    },
+    {
+      "claim_id": "1eb3ed8c-438c-4fda-afb3-23ab6d834ef5",
+      "result_id": "bb4ea0fe-3603-4011-a61e-4633676e99e5"
+    },
+    {
+      "claim_id": "93bce392-9386-4616-be87-64f8dc30a2e8",
+      "result_id": "bb4ea0fe-3603-4011-a61e-4633676e99e5"
+    },
+    {
+      "claim_id": "e9529ce8-93e8-4576-bca2-d1be54fc70c8",
+      "result_id": "bb4ea0fe-3603-4011-a61e-4633676e99e5"
+    },
+    {
+      "claim_id": "78899562-57a0-4d3d-8d3c-d4d20b281fca",
+      "result_id": "bb4ea0fe-3603-4011-a61e-4633676e99e5"
+    },
+    {
+      "claim_id": "386d7402-4b21-4151-bae4-c06433112e59",
+      "result_id": "bb4ea0fe-3603-4011-a61e-4633676e99e5"
+    },
+    {
+      "claim_id": "1d766664-2026-4601-9de0-e774973847d4",
+      "result_id": "bb4ea0fe-3603-4011-a61e-4633676e99e5"
+    },
+    {
+      "claim_id": "c7ccccec-0420-41d1-b2db-d00bd183380f",
+      "result_id": "bb4ea0fe-3603-4011-a61e-4633676e99e5"
+    },
+    {
+      "claim_id": "72479e90-014e-4171-a75d-f9e8bda980c5",
+      "result_id": "bb4ea0fe-3603-4011-a61e-4633676e99e5"
+    },
+    {
+      "claim_id": "823d70f0-1390-45ef-ac0f-3112e50ad0d8",
+      "result_id": "bb4ea0fe-3603-4011-a61e-4633676e99e5"
+    },
+    {
+      "claim_id": "a1787569-102a-4041-ad4f-25d53d462ebd",
+      "result_id": "b2139ccd-6284-46fc-acef-3dfbe07cc2cf"
+    },
+    {
+      "claim_id": "898789ef-5b19-4eff-bc7b-82eb3a5f9281",
+      "result_id": "b2139ccd-6284-46fc-acef-3dfbe07cc2cf"
+    },
+    {
+      "claim_id": "a58f7015-ac1f-497f-8152-dd0f4de63de7",
+      "result_id": "b2139ccd-6284-46fc-acef-3dfbe07cc2cf"
+    },
+    {
+      "claim_id": "763096f1-aefc-46a2-95ce-b2e4d3c82fd9",
+      "result_id": "b2139ccd-6284-46fc-acef-3dfbe07cc2cf"
+    },
+    {
+      "claim_id": "0aff92e9-a2c7-433b-8464-97ca976ff362",
+      "result_id": "b2139ccd-6284-46fc-acef-3dfbe07cc2cf"
+    },
+    {
+      "claim_id": "5bd6cf93-5ce3-4eba-a785-37fdd8bd57ac",
+      "result_id": "b2139ccd-6284-46fc-acef-3dfbe07cc2cf"
+    },
+    {
+      "claim_id": "439bf311-9340-4254-99e1-aaecf32950ec",
+      "result_id": "b2139ccd-6284-46fc-acef-3dfbe07cc2cf"
+    },
+    {
+      "claim_id": "82f8f8c5-4154-4723-8141-caa37726d02a",
+      "result_id": "b2139ccd-6284-46fc-acef-3dfbe07cc2cf"
+    },
+    {
+      "claim_id": "bdf4bdc4-cc72-49c4-9c37-c4303bbfb2c6",
+      "result_id": "e82a6b07-c0cc-4bd7-8382-877032b8da68"
+    },
+    {
+      "claim_id": "fbbfef5a-6ebe-4fc8-aa47-1abca8a92c3e",
+      "result_id": "e82a6b07-c0cc-4bd7-8382-877032b8da68"
+    },
+    {
+      "claim_id": "a3884d86-a5f4-47dc-a6ce-039f188eda42",
+      "result_id": "e82a6b07-c0cc-4bd7-8382-877032b8da68"
+    },
+    {
+      "claim_id": "a33efc0a-53ab-4cbb-a86c-06aeb23fe224",
+      "result_id": "e82a6b07-c0cc-4bd7-8382-877032b8da68"
+    },
+    {
+      "claim_id": "dcc4aa6e-0382-4820-b76a-58729d52d8a2",
+      "result_id": "e82a6b07-c0cc-4bd7-8382-877032b8da68"
+    },
+    {
+      "claim_id": "10224ff5-bd4b-46a3-b6c7-509360d5a535",
+      "result_id": "e82a6b07-c0cc-4bd7-8382-877032b8da68"
+    }
+  ],
+  "comparisons": []
+}

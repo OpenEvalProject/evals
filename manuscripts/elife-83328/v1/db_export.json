@@ -1,0 +1,1757 @@
+{
+  "submission": {
+    "id": "dc81d986-3891-4d26-a275-1535c44185d1",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-04T02:56:14.307747Z",
+    "updated_at": "2025-12-04T02:56:14.307747Z"
+  },
+  "content": [
+    {
+      "id": "c95a0ce8-b9a4-4427-9259-7ea84c655398",
+      "submission_id": "dc81d986-3891-4d26-a275-1535c44185d1",
+      "content_type": "manuscript",
+      "content_text": "# Synchronous multi-segmental activity between metachronal waves controls locomotion speed in Drosophila larvae\n\n## Authors\n\n- Yingtao Liu<sup>1</sup> ([ORCID: 0000-0002-5090-8784](https://orcid.org/0000-0002-5090-8784))\n- Eri Hasegawa<sup>2</sup>\n- Akinao Nose<sup>1</sup>\n- Maarten F Zwart<sup>3</sup> ([ORCID: 0000-0002-5073-8631](https://orcid.org/0000-0002-5073-8631)) \u2020\n- Hiroshi Kohsaka<sup>2</sup> ([ORCID: 0000-0003-1087-9680](https://orcid.org/0000-0003-1087-9680)) \u2020\n\n### Affiliations\n\n1. Department of Physics, Graduate School of Science, The University of Tokyo Tokyo Japan ([ROR:057zh3y96](https://ror.org/057zh3y96))\n2. Department of Complexity Science and Engineering, Graduate School of Frontier Science, The University of Tokyo Kashiwa Japan ([ROR:057zh3y96](https://ror.org/057zh3y96))\n3. School of Psychology and Neuroscience, Centre of Biophotonics, University of St Andrews St Andrews United Kingdom ([ROR:02wn5qz54](https://ror.org/02wn5qz54))\n4. Graduate School of Informatics and Engineering, The University of Electro-Communications Tokyo Japan ([ROR:02x73b849](https://ror.org/02x73b849))\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe ability to adjust the speed of locomotion is essential for survival. In limbed animals, the frequency of locomotion is modulated primarily by changing the duration of the stance phase. The underlying neural mechanisms of this selective modulation remain an open question. Here, we report a neural circuit controlling a similarly selective adjustment of locomotion frequency in Drosophila larvae. Drosophila larvae crawl using peristaltic waves of muscle contractions. We find that larvae adjust the frequency of locomotion mostly by varying the time between consecutive contraction waves, reminiscent of limbed locomotion. A specific set of muscles, the lateral transverse (LT) muscles, co-contract in all segments during this phase, the duration of which sets the duration of the interwave phase. We identify two types of GABAergic interneurons in the LT neural network, premotor neuron A26f and its presynaptic partner A31c, which exhibit segmentally synchronized activity and control locomotor frequency by setting the amplitude and duration of LT muscle contractions. Altogether, our results reveal an inhibitory central circuit that sets the frequency of locomotion by controlling the duration of the period in between peristaltic waves. Further analysis of the descending inputs onto this circuit will help understand the higher control of this selective modulation.\n\n## Introduction\n\nAnimals flexibly adapt their speed of locomotion to meet their behavioral needs (Alexander, 1989; Byrne, 2019; DeAngelis et al., 2019). In recent decades, the neural basis of the modulation of the speed of locomotion across the animal kingdom has received much attention. The mesencephalic locomotor region (MLR), which projects to reticulospinal neurons that in turn innervate spinal circuits, has been identified in all vertebrate species studied to date as an important control center (Ryczko et al., 2017). Increasingly intense stimulation of the MLR causes increases in the speed of locomotion, with accompanying gait transitions (Atsuta et al., 1990; Grillner, 1985; Shik et al., 1966; Shik and Orlovsky, 1976; Skinner and Garcia-Rill, 1984). The spinal cord recruits different types of motor neurons at different speeds, with the accompanying changes in gait requiring widespread reconfiguration within its circuitry (Dasen, 2017; Kiehn, 2016).\n\nHow does the central nervous system (CNS) vary the frequency of locomotion to achieve the required speeds? In a range of species, descending projecting excitatory neurons have been shown to drive the rhythm of locomotion (Berg et al., 2018; Caggiano et al., 2018; Capelli et al., 2017; Friesen and Kristan, 2007; Gatto and Goulding, 2018; Josset et al., 2018; Roberts et al., 2010). In mice, studies using optogenetics have shown that excitatory neurons are necessary and sufficient for rhythm generation (H\u00e4gglund et al., 2010; H\u00e4gglund et al., 2013), with studies ongoing to uncover the precise identity of the rhythm generators (Kiehn, 2016). Zebrafish, which use axial locomotion to move, have different central modules corresponding in adults to fast, intermediate, and slow locomotion that are selectively recruited to command the motor pools specific for different speeds (Ampatzis et al., 2013; Ampatzis et al., 2014). The pacemaker neurons driving locomotion at different speeds have bursting frequencies related to their module affiliation (Song et al., 2020).\n\nThe kinematics of movement change as a function of frequency depending on the species and gait. Swimming animals modulate their undulatory frequency by controlling the intersegmental lag, which is linearly scaled with the locomotor cycle duration (Grillner, 1974). On the other hand, limbed animals change the frequency of walking by varying the locomotor cycle differentially: the stance phase is varied, but the swing phase is almost unchanged, even as animals switch to different gaits. This holds true for animals ranging from insects and tardigrades to mammals (Boije and Kullander, 2018; Frigon et al., 2014; Grillner et al., 1979; Jacobson and Hollyday, 1982; Nirody et al., 2021). How the nervous system generates this asymmetry in the variation of stance and swing phases is still an open question (Bidaye et al., 2018; Boije and Kullander, 2018; Kiehn, 2016).\n\nHere, we investigated the speed-dependent modulation of locomotion in Drosophila larvae and the underlying neural mechanisms. The Drosophila larva moves by peristaltic waves, in which body wall muscles contract sequentially from one end to the other (Berrigan and Pepin, 1995; Heckscher et al., 2012; Sun et al., 2022). We found that the Drosophila larval locomotor cycle is also differentially modulated: the phase in between each consecutive peristaltic wave (the \u2018interwave\u2019 phase), not the peristaltic wave itself, is primarily varied with speed, reminiscent of the stance phase in limbed locomotion. We then examined the underlying muscular dynamics and found that the interwave phase is characterized by synchronous contractions of the lateral transverse (LT) muscles along the anterior\u2013posterior axis. The amplitude and duration of their contraction scale with the duration of the interwave phase. Using EM connectomics and calcium imaging, we identified two types of interneurons that are associated with the LT neural circuitry and show segmentally synchronized activity: GABAergic premotor neuron A26f and its presynaptic partner GABAergic interneuron A31c. Using optogenetics, we revealed that both A31c and A26f neurons are sufficient and necessary for the desired contraction of the LT muscles and set the speed of locomotion through the modulation of the interwave phase. Our results reveal that the Drosophila larva uses a similar strategy to regulate speed as limbed animals by varying the two main phases of the cycle differentially and that the activity of an inhibitory circuit helps to generate this variation.\n\n## Results\n\n### Variability in the interwave phase of crawling contributes to speed variability\n\nCrawling behavior in Drosophila larvae is generated by repetitive waves of propagation along the length of their body (Berrigan and Pepin, 1995). A previous study in mildly physically restrained first-instar larvae showed that crawling speed correlates with stride period more than stride length (Heckscher et al., 2012). It has been shown that the lag between the contraction of adjacent segments during the peristaltic wave (intersegmental lag) scales with the cycle period in the intact animal and the isolated CNS (Heckscher et al., 2012; Lemon et al., 2015). These observations suggest that the cycle period varies through a uniform, rather than an asymmetric, modulation of the phases of the locomotor cycle. However, physically restricted larvae and the isolated CNS have long cycle periods (2\u201320 s), presumably due to aberrant or absent input from sensory neurons (Caldwell et al., 2003; Hughes and Thomas, 2007; Sch\u00fctzler et al., 2019; Zarin et al., 2019). How the larva varies locomotion in crawling within the normal range of cycle periods (0.6\u20132 s) is therefore not understood. We therefore first aimed to address this question (Figure 1A\u2013I and Figure 1\u2014figure supplement 1A\u2013F). We recorded third-instar larvae freely crawling on an agarose plate and measured the displacement of their body wall segments (Figure 1A\u2013C). Larvae crawled at varying speeds even within the same environmental conditions such as temperature (Figure 1D and E, 0.35\u20131.23 mm/s, n = 18 larvae). We found that the locomotion speed in these freely crawling animals also correlated with stride frequency more so than stride length, consistent with a previous report (Heckscher et al., 2012; Figure 1E). To further characterize the underlying kinematic changes, we assessed how the two previously identified phases within the locomotor cycle (Heckscher et al., 2012) change with speed. In the first phase, local body wall contractions are propagated from the posterior to anterior segments (here called \u2018wave phase\u2019), whereas the second is characterized by the period from mouth parts unhooking to the onset of the tail contraction (\u2018interwave phase\u2019; Figure 1F).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/83328/elife-83328-fig1-v1.jpg)\n\n**Figure 1.:** (A\u2013I) Recording of locomotion parameters from top view (n = 268 strides, 54 episodes, 18 larvae). (A) Schematic drawing of the crawling assay from top view. (B) An example frame of top-view recording. (C) Measurement of the stride duration, stride length, and speed. (D) Relationship between speed and mean stride length. Each dot shows a single episode. r represents Pearson correlation coefficient. (E) Relationship between speed and mean stride frequency. Each dot shows a single episode. (F) Schematic representation of the two phases of a locomotor cycle. (G) Relationship between the duration of wave phase and speed. (H) Relationship between the duration of interwave phase and speed. (I) Interwave duty factor, the proportion of interwave phase in the stride duration, decreases with speeds. Linear regression coefficient is \u20130.47. (J\u2013O) Recording of locomotion parameters and muscular kinematics from side view (n = 9 larvae, 18 episodes, 67 strides). Scale bars: 1 mm. (J) Schematic drawing of the crawling assay from side view. (J\u2019) An example frame of side-view recording. LT2: lateral transverse muscle 2; VL4: ventral longitudinal muscle 4. (K) Representative tracking of the muscle movement during forward crawling. Top-left panel shows the muscle movement with a fast speed. Top-right panel shows the muscle movement with a slow speed. Bottom panels demonstrate the dynamics of muscle lengths in the data shown in the top panels. (L) Relationship between the contraction duration of LT2 muscle and two temporal parameters (circles indicate stride duration, and triangles indicate interwave duration) (Pearson correlation coefficients; stride duration: 0.84 and interwave duration: 0.89). (M) Relationship between the contraction duration of LT2 muscle and wave duration (Pearson correlation coefficient: 0.20). (N) Relationship between the mean duration of LT2 muscle contraction and speed. (O) Schematic of the relationship between LT muscle (LTM) contraction and crawling speed. The duration of the two phases and the contraction of LT muscles are correlated with crawling speed. In (D, E, G, H, I, L, M, N), different colors indicate different animals.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/83328/elife-83328-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A\u2013F) Supplement to top-view crawling assay. Scale bars: 1mm. (A) Criteria to determine the unhooking moment and the wave initiation moment (see \u2018Materials and methods\u2019 for details). Asterisks indicate the key frames (upper asterisk: unhooking moment; lower asterisk: wave initiation moment). Scale bar: 1 mm. (B) Relationship between stride frequency and stride length. (C\u2013C\u2019) Relationship between speed and the two component phases (Pearson correlation coefficient: \u20130.74 for interwave phase and \u20130.62 for the wave duration; p-value=0.127). (D) Relationship between the duration of wave phase and interwave phase. (E) Relationship between stride length and the duration of interwave phase. (F) Relationship between stride duration and the duration of component phases. Lines: cubic regression (regression coefficients: interwave, [0.78,\u20132.1, 1.7, 0.3]; wave, [0.78, 3.1,\u20131.7, \u20130.3]; see \u2018Materials and methods\u2019 for details). (G\u2013J) Supplement to side-view crawling assay. (G) An example frame of side-view recording. Lower panel is an enlarged image of the region indicated by the white rectangular in the top panel. The range of muscles (DO1, LT2, and VL4) is labeled. Scale bar: 1 mm. (G\u2019) Dynamics of muscle length during forward crawling measured from the side-view assay (n = 8 larvae, 10 episodes, 28 strides). Muscle length is normalized to 0\u20131 by 0 and the maximum length of the muscle. Time is aligned by the wave_init moment and the unhooking moment (see \u2018Materials and methods\u2019 for details). Each trace initiates and ends at the beginning and end of a locomotor cycle. Scale bar: 0.5 mm. (H\u2013J) Relationship between the minimum length of LT2 muscles and the crawling kinematics (see \u2018Materials and methods\u2019 for details). (H) Relationship with the stride duration (upper) and the duration of interwave phase (lower). (H\u2019) Relationship with the duration of wave phase. (I) Relationship with the duration of wave phase. (J) Relationship between the mean of minimum length of LT2 muscles and the speed. In (B, C, C\u2019, D, E, F, F\u2019, H, H\u2019, I, J), different colors indicated different animals.\n\nNext, we analyzed how crawling speed related to the two locomotor cycle phases (Figure 1G\u2013I). We found that both the interwave phase and the wave phase are correlated with crawling speed (Figure 1\u2014figure supplement 1C\u2013C\u2019; Pearson correlation coefficient: the wave phase vs. speed r = \u20130.62, the interwave phase vs. speed r = \u20130.74). The interwave duration at faster speeds is close to 0; indeed, the duty factor of the interwave phase, which is given by the ratio of the interwave phase duration to stride duration, decreased with speed (Figure 1I; linear regression coefficient = \u20130.47, r2 = 0.55) and was reduced to zero at the faster speeds. The wave and interwave phases are modulated independently, as can be seen by the lack in correlation between these two phases (Figure 1\u2014figure supplement 1D and E). These results suggest that the speed-dependent modulation of crawling frequency is largely due to modulation of the interwave phase.\n\nWe quantified the duration of each phase in freely crawling larvae. To evaluate the contribution of these two phases to stride duration, we plotted the duration of these phases as a function of stride duration (Figure 1\u2014figure supplement 1F and F\u2019). Both are correlated with stride duration, with the interwave phase correlated more strongly than the wave phase (interwave phase r = 0.86, wave phase r = 0.56, p<0.0001). What becomes clear from this analysis is that as the stride duration decreases, the interwave phase shortens while the wave duration stays more or less constant; when the interwave duration becomes minimal, further decreases in stride duration are accompanied by decreases in wave duration. These observations suggest that the interwave phase between peristaltic waves is more variable than wave phase, and that there is a range-dependent modulation of the frequency of locomotion.\n\n### Synchronous contraction of transverse muscles during the interwave phase\n\nTo reveal the nature of the interwave phase, we examined the movement of body wall muscles during free crawling. The ends of individual muscles were labeled by expressing GFP in the tendon cells using sr-Gal4 (Schnorrer et al., 2007) and imaged from the side (Figure 1J and J\u2019). This allowed us to analyze the contraction dynamics of each muscle in freely crawling larvae. The dynamics of two longitudinal muscles (DO1 and VL4) that span the anterior and posterior boundary of each segment and one transverse muscle (LT2) that runs perpendicular to the anterior\u2013posterior axis of the animal were examined (Figure 1K, Figure 1\u2014figure supplement 1G, and Figure 1\u2014videos 1 and 2). We made three observations: first, consistent with a previous study (Heckscher et al., 2012), longitudinal muscles exhibited propagation from the posterior segment to the anterior in forward crawling (Figure 1L and Figure 1\u2014figure supplement 1G\u2019). Second, the LT2 transverse muscles only showed synchronous contractions across abdominal segments A2-A7 (Figure 1K and Figure 1\u2014figure supplement 1G\u2019), in contrast to the earlier report (Heckscher et al., 2012). Furthermore, while most longitudinal muscles were contracting during peristaltic waves, the transverse muscles contracted exclusively during the interwave phase (Figure 1\u2014figure supplement 1G\u2019). Third, the longitudinal muscles in the posterior-most segments (VL4 and DO1 in A6 and A7 in Figure 1\u2014figure supplement 1G\u2019) contract during the interwave phase (see \u2018Discussion\u2019). Taken together, longitudinal muscles predominantly show sequential activity during the wave phase, whereas transverse muscles exhibit synchronous activity during the interwave phase.\n\nThe phase-specific contraction of transverse muscles led us to investigate their role during the interwave phase. Accordingly, we analyzed the contraction duration of transverse muscles and analyzed its relationship with the duration of the two locomotor phases. While the duration of the wave phase was not strongly correlated, the duration of the interwave phase had a high correlation with the contraction duration of transverse muscles (wave phase r = 0.20, interwave phase r = 0.89, p<0.0001; the Pearson correlation coefficient, Figure 1L and M). Stride duration, which is the sum of the wave duration and the interwave duration, also had a strong correlation with the contraction duration of transverse muscles (r = 0.84, Figure 1L). This result suggests that the contraction duration of transverse muscles could be related to crawling speed. We therefore plotted the duration of transverse muscle contractions against crawling speed (Figure 1N) and found that they were indeed correlated (r = \u20130.59). Next, we analyzed the relationship between the amplitude of transverse muscle contraction and the crawling kinematics. As is the case with the contraction duration, the contraction amplitude is also correlated with the interphase duration and stride duration but not the wave duration (Figure 1\u2014figure supplement 1H and I). On the other hand, the contraction amplitude is only weakly correlated with speed (Figure 1\u2014figure supplement 1J). These results show that the duration and amplitude of the synchronous contractions of transverse muscles are related to the duration of interwave phase (Figure 1O). Importantly, the duration of the synchronous contraction is correlated with crawling speed (Figure 1O).\n\n### Identification of GABAergic interneurons A31c showing segmentally synchronized activity\n\nIn a screen for neurons that are activated during the interwave phase, we identified cell-type A31c (Figure 2\u2014figure supplement 1). By reviewing the existing genetic driver expression patterns (Li et al., 2014), we identified several genetic drivers targeting the A31c neuron, including a split GAL4 driver (A31c-a8-sp) specifically targeting the A31c neuron in segment A8, a split GAL4 driver (A31c-sp) targeting A31c neurons in neuromeres A2-A8, and a LexA driver (A31c-LexA) that targets A31c neurons in neuromeres A2-A8 with variable expression patterns. We first used these lines to investigate the morphology and neurotransmitter identity of A31c neurons. The neurites project dorsally by approximately one neuromere, mostly to the anterior (Figure 2A). The synaptic input sites are located along the dorsolateral (DL) tract (Landgraf et al., 2003), while the synaptic output sites are mainly positioned dorsally near the midline (Figure 2A and B). Using immunohistochemistry, we found that A31c neurons are GABAergic (Figure 2\u2014figure supplement 1A).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/83328/elife-83328-fig2-v1.jpg)\n\n**Figure 2.:** (A) A31c single-neuron morphology shown by EM reconstruction and genetically mosaic analysis. TP1: transverse projection 1; DM: dorsomedial fascicle; DL: dorsolateral fascicle (Landgraf et al., 2003). Arrowheads indicate the tract of TP1. Scale bars: 20 \u03bcm. (B) Pre- and postsynapse markers label the input and output sites of A31c neurons (A31c-sp>UAS-syt::GFP, UAS-DenMark). Scale bars: 20 \u03bcm. (C\u2013E) Recording of calcium activity of A31c neurons (A31c-sp>UAS-CD4::GCaMP6f) and group activity of nSyb neurons (nSyb-LexA>LexAop-RGECO1) which reports the pan-neuronal activity in fictive locomotion (n = 5 larvae, 15 traces). (C) Example recordings of A31c neurons and nSyb neurons in fictive forward locomotion. The vertical dashed lines indicate synchronous activity. The inclined dashed lines indicate neural activity that corresponds to fictive forward crawling. (D) Group data of calcium imaging of A31c neurons and nSyb neurons. Each trace is aligned by activity peak of nSyb_a4 and nSyb_a2 and normalized to 0\u20131 by the activity maximum and minimum of the whole recording. Magenta arrows indicate the co-activation of A31c neurons. Green arrows indicate the wave-like activity of A31c neurons. Black lines represent the average calcium activity. Shading represents the standard error. Colored lines represent the three example traces. Gray lines represent all other traces. Ticks along the horizontal axis indicate the activity peaks of nSyb_a4 and nSyb_a2. Ticks along the vertical axis indicate the 0. (E) Cross-correlation of neuronal activity between the neuron in each segment (from A2 to A7/A8) and the one in A7/A8 (black: A31c neurons; gray: nSyb neurons). See \u2018Materials and methods\u2019 for details.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/83328/elife-83328-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Immunostaining reveals that A31c neuron is GABAergic. Scale bars: 10 \u03bcm. (B) Comparison of the amplitude of the peak calcium signals of the A31c_a4 neuron in different motor states (BW: backward wave; PSync: posterior synchronous burst; FW: forward wave) (n = 5 larvae). (C) Comparison of the amplitude of the peak calcium signals of nSyb neurons and A31c neurons when nSyb-a7 reaches the peak (n = 5 larvae, see magenta arrowheads in Figure 2E).\n\nWe then used a dual-color imaging system to monitor the activity of A31c neurons using A31c-sp>UAS-CD4::GCAMP6f and the pan-neuronal activity using nSyb-LexA>LexAop-RGECO1 in the isolated CNS (Figure 2C\u2013E and Figure 2\u2014figure supplement 1B and C; see \u2018Materials and methods\u2019 for details). The pan-neuronal activity patterns were used as an indicator of the fictive behaviors produced (Lemon et al., 2015), including stereotyped fictive forward waves (FW). At the initiation of forward locomotion, all abdominal A31c neurons show burst-like coactivation preceding the FW (Figure 2C and D). As observed in muscle contraction patterns described in the previous section (Figure 1\u2014figure supplement 1G\u2019), panneuronal signals in the posterior-most segments (A6 and A7) show preparatory synchronous activity (Figure 2C), which causes the overlap of A31c activity with the posterior segmental panneuronal activity. However, the synchronous activity of A31c neurons primarily occurred between FW propagations. During the FW that follows, A31c neurons in anterior segments A2-A5 are re-activated in a wave-like sequence, which could indicate their potential involvement in peristaltic waves (Figure 2C and D). The intersegmental lags of pan-neuronal activity between neighboring segments show non-zero values, which reflects the propagation of neuronal activity along the body axis (Figure 2E). On the other hand, the intersegmental lag of A31c activity during the interwave phase is near zero, consistent with their synchronized activity (Figure 2E). To sum, these results show that A31c neurons exhibit synchronous multi-segmental activity during the interwave phase.\n\n### A31c neurons receive synaptic inputs from descending neurons and provide synaptic output to local and ascending neurons\n\nTo understand the details of the connectivity of the circuit A31c is part of, we reconstructed the connectivity of A31c using EM connectomics (see \u2018Materials and methods\u2019 for details). We identified A31c neurons in neuromeres A2-A8 in the database of the larval CNS, reconstructed all pre- and postsynaptic partners, and analyzed their connectivity (Figure 3A\u2013C and Figure 3\u2014figure supplement 1A and B). We analyzed the connectivity of A31c neurons in anterior segments A2-A3 and posterior segments A7-A8 separately (Figure 3B\u2013D). We found that the synaptic inputs to A31c neurons are similar in the anterior and posterior segments, with several descending cell types innervating A31c across segments (Figure 3D). The same subesophageal descending neuron cell type (here labeled \u2018S10\u2019) provides a significant plurality of the synaptic input. Among postsynaptic targets, we found that just one cell type is consistent between segments A2-A3 and A7-A8: A26f neurons, which are among their top three postsynaptic partners (Figure 3D). A26f neurons also receive synaptic inputs from the ascending cell type A19f, one of the top postsynaptic partners of A31c neurons (Jonaitis, 2020). Interestingly, it has previously been reported that A26f strongly innervates the transverse motor neurons (Zarin et al., 2019; Zwart et al., 2016).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/83328/elife-83328-fig3-v1.jpg)\n\n**Figure 3.:** (A) Identification of all A31c neurons in the EM database. Scale bar: 20 \u03bcm. (B\u2013B\u2019\u2019 and C\u2013C\u2019\u2019) Morphology of an anterior (B\u2013B\u2019\u2019) and a posterior (C\u2013C\u2019\u2019) A31c neuron. (B, C) Frontal view, (B\u2019, C\u2019) dorsal view, and (B\u2019\u2019, C\u2019\u2019) lateral view. Red circles indicate the output sites. Cyan circles indicate the input sites. Scale bar: 10 \u03bcm. (D) Top pre- and postsynaptic partners of anterior and posterior A31c neurons.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/83328/elife-83328-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Reconstructed main synaptic partners of A31c neurons. Scale bar: 20 \u03bcm. (B) A sample EM image shows the A31c presynaptic site. Scale bar: 0.5 \u03bcm. (C) trans-Tango reveals the postsynaptic partners (magenta) of A31c neurons (cyan) (A31c-a8-sp>trans-Tango). Scale bars: 20 \u03bcm. (D) Quantification of the number of samples that shows expression in regions or neurons repeatedly targeted by trans-Tango.\n\nWe next used trans-Tango, a genetic tool for tracing postsynaptic partners (Talay et al., 2017), to confirm the identity of the postsynaptic neurons of A31c-a8. We repeatedly identified Tango expression in an A26f-like cell type in segment A7, in addition to other neurons, some of which we could identify (four samples showing A26f-a7 neurons; Figure 3\u2014figure supplement 1C and D). These results collectively show that A26f neurons are postsynaptic to A31c neurons.\n\n### A26f GABAergic premotor neurons show segmentally synchronized activity preceding the fictive forward wave\n\nSince A26f neurons are postsynaptic to A31c (Figure 3D and Figure 3\u2014figure supplement 1C and D) and strongly innervate LT motor neurons (Figure 4A and Figure 4\u2014figure supplement 1A; Zarin et al., 2019; Zwart et al., 2016), we next focused on A26f neurons to understand the neural mechanism underlying the generation of the interwave phase. We used a split GAL4 driver (\u2018A26f-sp\u2019), which labels A26f neurons in neuromeres A3-A5 (Figure 4B), to investigate their morphology and neurotransmitter identity. A26f neurons have synaptic input sites dorsally near the midline and synaptic output sites near the DL tract (Figure 4B). Remarkably, A26f neurons project their axon along the DL tract for multiple segments. As a representative example, the axon of A26f in neuromere A5 extends four neuromeres from A6 neuromere to A3 neuromere (Figure 4B). We found that A26f neurons are GABAergic (Figure 4\u2014figure supplement 1B). It has previously been reported that A26f neurons are corazoninergic (Zarin et al., 2019). However, a comparison of the morphology of A26f neurons with confirmed corazoninergic neurons (Santos et al., 2007) and the absence of peptidergic dense core vesicles in A26f neurons in the EM connectomics dataset suggest that A26f neurons are not corazoninergic. A26f neurons form inhibitory synapses onto MNs innervating LT muscles in multiple neuromeres, which suggests the potential of A26f neurons to control the activity of LT muscles broadly in multiple segments.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/83328/elife-83328-fig4-v1.jpg)\n\n**Figure 4.:** (A) A26f neurons innervate motor neurons. Top: postsynaptic neurons of A26f neurons revealed by connectomics analysis in A1 neuromere (Zarin et al., 2019). Bottom: layout of body wall muscles in a hemi-segment. Purple, blue, and sky-blue muscles are innervated by motor neurons in the same color in the top panel. (B) Morphology of A26f neurons shown by the EM reconstruction and confocal images. Scale bars: 10 \u03bcm. (C\u2013E) Recording of calcium activity of A26f neurons (A26f-sp>UAS-CD4::GCaMP6f) and group activity of nSyb neurons (nSyb-LexA>LexAop-RGECO1) (n = 6 larvae, 18 traces). (C) Example recordings of A26f neurons and nSyb neurons in fictive forward locomotion. The vertical dashed lines in the A26f plot indicate synchronous activity. The vertical dashed lines in the nSyb traces indicate synchronous activity at the posterior-most segments during the interwave phase. The inclined dashed lines in the nSyb traces indicate neural activity that corresponds to fictive forward crawling. (D) Group data of calcium imaging of A26f neurons and nSyb neurons. Each trace is aligned to the activity peak of nSyb_a4 and nSyb_a2 and normalized to 0\u20131 by the activity maximum and minimum of the whole recording. Black lines represent the average calcium activity. Shading represents the standard error. Colored lines represent the three example traces. Gray lines represent all other traces. Ticks along the horizontal axis indicate the activity peaks of nSyb_a4 and nSyb_a2. Ticks along the vertical axis indicate the 0. (E) Cross-correlation of neuronal activity between the neuron in each segment (A3\u2013A5) and the one in A5 (black: A26f neurons, gray: nSyb neurons). See \u2018Materials and methods\u2019 for details. (F) Simultaneous calcium imaging of A31c and A26f neurons. Bottom: recording of calcium activity of A26f-a5 neuron (A26f-sp>UAS-CD4::GCaMP6f) and A31c-a4 neuron (A31c-LexA>LexAop-jRCaMP1b) (n = 6 larvae, 13 traces). Colored lines indicate the example traces. Black lines indicate the average calcium activity. Gray lines indicate all other traces. The left vertical dashed line indicates the first synchronous activity of A31c (normalized time = 0), and the right vertical dashed line indicates the second synchronous activity of A31c (normalized time = 1). Top: peak time of A26f signals relative to the first peak time of A31c signals.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/83328/elife-83328-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Premotor interneurons that target the motor neurons innervating LT1-4 muscles. (B) Immunostaining reveals that A26f neuron is GABAergic. (C) A26f-sp labels A26f neurons in A3 to A5 neuromeres. (D) Calcium signals of A26f neurons and nSyb neurons in fictive locomotor cycles. In all panels, scale bars indicate 10 \u03bcm.\n\nNext, we related the activity patterns of A26f neurons to fictive crawling by performing dual-color imaging experiments of A26f-sp>UAS-CD4::GCaMP6f and nSyb-LexA>LexAop-RGECO1 in the isolated CNS (Figure 4C and Figure 4\u2014figure supplement 1C and D; see \u2018Materials and methods\u2019 for further details). This line restricts expression to A26f in segments A3-A5. Unlike most neurons, which show fictive wave-like activity (Lemon et al., 2015), the A26f neurons we could image with this line only showed synchronized activity, which mostly occurred before the fictive peristaltic wave progressed anteriorly from segment A4 (Figure 4C and D). Instead, A26f activity overlaps considerably with the synchronous increases in activity seen in the panneuronal line in segments A7-A5 that characterize the interwave phase (Figure 4C; see \u2018Discussion\u2019). Consistent with their synchronized activity, the activity of A26f segmental homologs is highly correlated, unlike pan-neuronal activity (Figure 4E). A26f neurons can exhibit one or several peaks at the initiation phase of the FW (Figure 4C and D). To sum, A26f neurons have four important characteristics: (1) they form inhibitory synapses with motor neurons in multiple segments targeting transverse muscles; (2) A26f neurons in the abdominal segments are activated simultaneously; (3) A26f neurons are activated between wave phases; and (4) they are postsynaptic to A31c neurons.\n\nAs both A26f and A31c neurons show robust synchronous activity at the initiation of FW, we then monitored the activity of the two neurons simultaneously by using A31c-LexA>LexAop-jRGECO1b, A26f-sp>UAS-CD4::GCaMP6f. We found that the synchronous peak of A26f neurons is \u2018bookended\u2019 by the peaks in A31c activity of neighboring segments (Figure 4F). This alternating activity pattern between A31c and A26f is consistent with the inhibitory nature of the A31c-A26f synapses and suggests these cell types might be involved in determining the duration of the interwave phase.\n\n### Activation of A26f neurons reduces the amplitude of LT muscle contractions during forward crawling\n\nTo assess whether A26f neurons can inhibit the activity of LT muscles, we analyzed muscle responses to the optogenetic activation of A26f neurons during forward peristaltic waves. We combined the optogenetic activator UAS-CsChrimson targeted by A26f-sp to activate A26f neurons and the muscle genetic marker mhc-GFP expressing GFP to visualize the body wall muscles (A26f-sp>UAS-CsChrimson, mhc-GFP). We used A26f-sp negative animals as a control (UAS-CsChrimson, mhc-GFP). Because of the spectral overlap between the light to activate CsChrimson and that to excite GFP, we used a confocal microscopy system that separates the light for optogenetics and imaging into two sections of the objective back aperture, respectively, in combination with a new preparation we call \u2018sideways preparation\u2019 (Figure 5A and B; see \u2018Materials and methods\u2019 for detail).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/83328/elife-83328-fig5-v1.jpg)\n\n**Figure 5.:** (A\u2013D) Optogenetic activation of A26f neurons reduces the contraction amplitude of the LT2 muscle during forward crawling in the sideways preparation. (E\u2013H) Optogenetic activation of A31c neurons causes contraction of the LT muscle in the fillet preparation. (A, E) Experimental setups. See \u2018Materials and methods\u2019 for details. (B, F) Schematics of the imaging setup (top) and sample fluorescence images (bottom). Scale bars: 0.5 mm. (C, G) Traces of the length of the transverse muscle LT2 and the longitudinal muscle VL2 in the optogenetic experiments. Shaded regions show the timing when the light stimulus is applied. Arrowheads indicate where the measurement was made in Figure 5D. (D) The minimum length of the LT2 muscle was increased by the activation of A26f neurons (A26f group: n = 8 larvae, 28 trials; control group: n = 8 larvae, 28 trials). Muscle lengths are normalized to the minimum length during the light-off period. Different colors indicate different animals. The hierarchical bootstrap test is used (see \u2018Materials and methods\u2019 for details). (H) The length of the LT2 muscle in quiescent larvae was decreased by the activation of A31c neurons (A26f group: n = 8 larvae, 62 trials; control: n = 8 larvae, 56 trials). Muscle lengths are normalized to the minimum length during the light-off period. Different colors indicate different animals. The hierarchical bootstrap test is used (see \u2018Materials and methods\u2019 for details).\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/83328/elife-83328-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) The minimum length of longitudinal VL muscles during forward waves in sideways preparation decreased during optogenetic activation of A26f neurons. Different colors indicate different animals. (B) The length of VL muscles in quiescent larvae was not affected by optogenetic activation of A31c neurons. Different colors indicate different animals.\n\nWe tracked the length of muscle LT2 and longitudinal muscle VL2 in segment A5 upon optogenetic stimulation. Activation of the A26f neurons reduced the contraction amplitude of the LT2 muscle, while the contraction of the VL2 muscle was almost unchanged (Figure 5C and D and Figure 5\u2014figure supplement 1A). These results confirm that activation of A26f neurons is sufficient for the inhibition of the contraction of LT muscles.\n\n### Activation of A31c neurons induces the contraction of LT muscles\n\nAs A31c could inhibit A26f based on its connectivity (Figure 3D and Figure 2\u2014figure supplement 1A) and the activity analyses described above (Figure 4F), we tested whether activation of A31c neurons can enhance contractions of LT muscles. We therefore activated A31c neurons and analyzed the change in LT2 muscle length using animals carrying A31c-sp>UAS-Chr2.T159C, mhc-GFP transgenes. We restricted the stimulation laser to the abdominal neuromeres in a semi-intact preparation (\u2018fillet preparation,\u2019 Lemon et al., 2015) to avoid activating SEG or brain neurons (Figure 5E and F). The stimulation caused the contraction of LT muscles in all visualized abdominal neuromeres (A3-A8; Figure 5G), causing a reduction in the minimum length of the LT2 muscle (Figure 5H). These results suggest that activation of A31c neurons is sufficient to activate the LT muscles. As no apparent contraction of other muscles was observed (Figure 5\u2014figure supplement 1B), we assume that the A31c neurons mainly regulate the activity of the LT muscles.\n\n### Silencing A31c or A26f neurons influences the amplitude of LT muscle contractions during forward crawling\n\nNext, we examined whether the interneurons of interest were required for the observed contraction of the LT muscles. To test this, we used optogenetic silencing combined with muscular imaging in the sideways preparation (Figure 5A). We first tested whether A26f neurons are required for the contractions of transverse muscles by using animals carrying A26f-sp>UAS-GtACR1, mhc-GFP for optogenetic silencing and muscular visualization. We found that the minimum length of muscle LT2 decreased after optogenetic silencing of A26f, suggesting increased levels of contraction (Figure 6A and B). We next assessed the requirement of A31c neurons by using A31c-sp>UAS-GtACR1, mhc-GFP. We found that after optogenetic silencing the minimum length of the LT2 muscle in segment A5 was increased during forward cycles (Figure 6A and B). In contrast, the minimum length of muscle VL2 was not affected by the inhibition of A26f or A31c (Figure 6C). These results reveal that the activity of A26f and A31c neurons is necessary for the appropriate contractions of LT muscles observed during locomotor cycles.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/83328/elife-83328-fig6-v1.jpg)\n\n**Figure 6.:** (A) Traces of the length of transverse muscles (LT2) in the sideways preparation with optogenetic stimulation. (B, C) Quantification of the minimum length of LT muscles and VL muscles by the optogenetic inhibition of A26f or A31c neurons (A26f group: n = 8 larvae, 28 trials; control group: n = 8 larvae, 26 trials; A31c group: n = 8 larvae, 27 trials). Muscle lengths are normalized to the minimum length during the light-off period. Different colors indicate different animals. The hierarchical bootstrap test is used (see \u2018Materials and methods\u2019 for details). (B) The minimum length of LT muscles was affected by the optogenetic inhibition of A26f or A31c neurons. (C) VL muscles was not affected by the optogenetic inhibition of A26f or A31c neurons.\n\n### A26f neurons modulate interwave duration\n\nOur previous results suggest that the activation of A26f neurons reduces the contraction of the LT muscles, thereby potentially reducing the duration of the interwave phase. To test this hypothesis, we activated A26f neurons and analyzed the kinematics of crawling in animals of the genotype A26f-sp>CsChrimson on low-concentration agarose plates (0.7%; Figure 7A and B). We used animals that lacked the A26f.DBD transgene as a control (A26f.AD>CsChrimson).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/83328/elife-83328-fig7-v1.jpg)\n\n**Figure 7.:** (A) Experimental setup for optogenetics in free-crawling larvae. (B) Example frames show that the interwave phase is reduced during the activation of A26f neurons. Scale bars: 1 mm. (C\u2013C\u2019\u2019) Crawling dynamics changed during the activation of A26f neurons (A26f group: n = 10 larvae, 30 trials; control group: n = 10 larvae, 30 trials). (D\u2013D\u2019\u2019) Crawling dynamics changed during the inhibition of A26f neurons (A26f group: n = 10 larvae, 20 trials; control group: n = 10 larvae, 20 trials). (E\u2013E\u2019\u2019) Crawling dynamics changed during the activation of A31c neurons (A31c group: n = 10 larvae, 25 trials; control group: n = 10 larvae, 25 trials). (F\u2013F\u2019\u2019) Crawling dynamics changed during the inhibition of A31c neurons (A31c group: n = 10 larvae, 25 trials; control group: n = 10 larvae, 25 trials). In (C\u2013F\u2019\u2019), different colors indicate different animals and the hierarchical bootstrap test is used (see \u2018Materials and methods\u2019 for details).\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/83328/elife-83328-fig7-figsupp1-v1.jpg)\n\n**Figure 7\u2014figure supplement 1.:** (A, B) Activation of A26f neurons. (C, D) Inhibition of A26f neurons. (E, F) Activation of A31c neurons. (G, H) Inhibition of A31c neurons. Statistical results are obtained by the hierarchical bootstrap test (see \u2018Materials and methods\u2019 for details). In all panels, different colors indicate different animals.\n\n![Figure 7\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/83328/elife-83328-fig7-figsupp2-v1.jpg)\n\n**Figure 7\u2014figure supplement 2.:** (A) The expression pattern of A26f-sp>UAS-CsChrimson. Cyan indicates the split-GAL4-driven expression. Magenta indicates the Fasciclin2 (Fas2)-positive tracts. (B) The expression pattern of A31c-sp>UAS-VNC-CsChrimson. (C) The expression pattern of A31c-sp>UAS-GtACR1. (D) The expression pattern of A31c-sp>UAS-GtACR1 co-labeled with a neuroblast marker Deadpan (Dpn). Cyan indicates the split-Gal4 driver expression. Magenta indicates anti-Dpn immunostaining. (Di) A stacked confocal image in the brain. (Dii\u2013Div) Enlarged z planes of the boxes in (i). In all panels, scale bars indicate 20 \u03bcm.\n\nDuring optogenetic activation of A26f neurons, larvae exhibited faster crawling (Figure 7B). By analyzing the kinematics, we confirmed that the interwave phase and the total stride duration were both significantly decreased during the optogenetic activation (Figure 7C and C\u2019). On the other hand, the wave duration was slightly increased (Figure 7\u2014figure supplement 1A). Consistent with these results, the speed of crawling was significantly increased (Figure 7C\u2019\u2019). These results show that the activation of A26f neurons leads to an increase in stride frequency and speed.\n\nNext, we asked whether A26f neurons are required to regulate the interwave phase and thereby the speed of freely crawling animals. To this end, we optogenetically inhibited A26f neurons in animals carrying A26f-sp>GtACR1 and analyzed their crawling kinematics (Figure 7D\u2013D\u2019\u2019 and Figure 7\u2014figure supplement 1C and D). We found that inhibiting the A26f neurons increased the interwave duration and stride duration but had no significant effect on the wave duration (Figure 7D and D\u2019 and Figure 7\u2014figure supplement 1C), resulting in decreased speeds (Figure 7D\u2019\u2019). Combined with our previous analyses, these results indicate that the A26f neurons are involved in regulating the speed of locomotion by modulating the contraction of LT muscles.\n\n### Activation of A31c neurons caused the increases in interwave duration and stride duration\n\nNext, we tested the effect of manipulating A31c on crawling (Figure 7E and F and Figure 7\u2014figure supplement 1E\u2013H). To activate A31c neurons, we used a genetic system UAS-VNC-CsChrimson that confines the expression of CsChrimson to the VNC neurons targeted by the A31c-sp transgene, resulting in expression in neuromeres A2-A8. We used animals carrying UAS-VNC-CsChrimson only as a control. During the activation of A31c neurons, the interwave duration and the stride duration were significantly increased, while no significant difference was found in the wave duration (Figure 7E and E\u2019 and Figure 7\u2014figure supplement 1E). These effects are consistent with those observed during the inhibition of A26f neurons (Figure 7D and D\u2019 and Figure 7\u2014figure supplement 1C). On the other hand, the inhibition of A31c neurons, which we achieved by expressing GtACR1 in A31c neurons using the A31c-sp driver line, did not induce defects in crawling kinematics (Figure 7F\u2013F\u2019\u2019 and Figure 7\u2014figure supplement 1G and H). This implies that additional cell types to A31c could set the level and timing of activity in A26f and therefore the speed of locomotion. Moreover, A31c-sp>GtACR1 is expressed in cells in the brain and subesophageal ganglion. However, the majority of A31c-sp+ cells in the brain are positive to Deadpan (dpn) (Figure 7\u2014figure supplement 2D), a marker for neuroblast (Doe, 2017), and the terminals of A31c-sp+ cells in the brain lack synapse-like morphology, suggesting that most A31c-sp+ cells in the brain are not mature neurons. Our data therefore imply that A31c neurons could contribute to the regulation of interwave phase duration, possibly through A26f neurons, by the multi-segmental synchronous excitation of transverse muscles within the interwave phase.\n\n## Discussion\n\nIn summary, we aimed to understand the neural mechanisms that underlie the selective modulation of one phase of the locomotor cycle during speed control. We used the Drosophila larva as a model and found that this animal uses a strategy to primarily vary the phase between consecutive peristaltic waves for speed regulation. To implement this strategy, the larva modulates the amplitude and duration of the contraction of the LT muscles that are perpendicular to the crawling direction, which contract synchronously along the anterior-posterior axis before the onset of the peristaltic wave. The GABAergic interneurons A26f and A31c, upstream of the MNs innervating the LT muscles, showed segmentally synchronized activity preceding the FW. Connectivity analysis further revealed that A31c neurons receive shared descending input and synapse onto ascending neurons and local neurons, including A26f. These neurons are involved in modulating the activity of the LT muscles and thus the interwave duration and speed. Altogether, we established a neural basis for speed regulation by linking the speed-dependent modulation of contractions of muscles to the interneurons that control their activity (Figure 8).\n\n![Figure 8.](https://cdn.elifesciences.org/articles/83328/elife-83328-fig8-v1.jpg)\n\n**Figure 8.:** Contraction of transverse muscles is suppressed by A26f neurons to make the interwave phase short and crawl fast (left panel). Multi-segmental synchronous activity of A31c and A26f neurons elongates the interwave phase duration to decrease crawling speed (right panel).\n\n### Mechanics and mechanisms of modulating the speed of locomotion\n\nLocomotion speed is a function of stride frequency and stride length. We found that, similar to previous findings, the speed of Drosophila larval crawling is determined more so by stride frequency than stride length (Frigon et al., 2014; Grillner et al., 1979; Jacobson and Hollyday, 1982; Nirody et al., 2021). Furthermore, similar to limbed animals including mammals and other insects, the two constituent phases of a locomotor cycle vary differentially with speed, with the interwave phase varying more than the wave phase. This similarity between the dynamics of locomotion between limbed and axial locomotion could be indicative of the kinematic constraints of each type of movement. For limbed locomotion, the forces required to move the limb during the swing phase depend on the limb\u2019s mass. Large limbed animals, such as horses and humans (Boije and Kullander, 2018; Minassian et al., 2017), use momentum-based strategies, requiring only brief active contractions in swing muscles, whereas smaller animals such as stick insects and mice (Bellardita and Kiehn, 2015; Bidaye et al., 2018) require constant neural input onto the swing muscles. In both cases, the relative invariance of the duration of this phase suggests that the rotational inertia of swinging limbs may be an important limiting factor in limbed locomotion (Kilbourne, 2013a; Kilbourne and Hoffman, 2013b; Kilbourne and Hoffman, 2015; Rocha\u2010Barbosa et al., 2005). The relative invariance of the peristaltic wave phase in the Drosophila larva suggests a similar constraint on the its motor system. Furthermore, the transverse muscles, and therefore its contractions during the interwave phase, may be an evolutionary adaptation, with an additional set of neurons having developed to control them. Consistent with this hypothesis, the last common ancestor to all bilaterians, the so-called \u2018Urbilaterian,\u2019 is thought to have only had circular and longitudinal muscles (Cannon et al., 2016), and transverse muscles have only been identified in the larvae of some other species of Diptera (e.g., Tribolium castaneum, Schultheis et al., 2019; Galleria mellonella, Emery et al., 2019). Furthermore, the transverse muscles are under independent neuromodulatory control (Elliott et al., 2021), and their motor neurons are innervated by a distinct set of interneurons (Zwart et al., 2016; Kohsaka et al., 2019).\n\nIn addition to the kinematic and evolutionary constraints, the differential modulation of the locomotor cycle may have several advantages. First, it could improve energy efficiency within a particular range of speeds: though the contraction and extension of LT muscles during the movement of the head must entail a metabolic cost, the energy cost of moving the center of mass (CoM) might be reduced during slower movements. The CoM is mainly moved in the pistoning phase during the head extension and the tail contraction (Heckscher et al., 2012), and the transverse muscle contractions, which we speculate are involved in driving head movements, might be a more efficient method of extending the anterior segments by regulating the hydrostatic skeleton (Trimmer and Issberner, 2007). This speculation is supported by our observation that in the posterior segments, longitudinal muscles contract during the interwave phase (as is also reflected in our activity imaging experiments in Figures 2 and 4, which show pronounced increases in activity in the posterior segments in between fictive waves), which may act to further support the hydrostatic skeleton in driving head extension. Second, it could be a more efficient control strategy: independent control of the extension of the head and the peristaltic wave may reduce the complexity of motor control and increase the flexibility of the head and tail by allowing the two ends to be moved separately. This may be particularly important as the anterior-most segments are involved in other motor programs including feeding (Melcher and Pankratz, 2005), and the transverse muscles control self-righting behavior (Picao-Osorio et al., 2015).\n\n### Neuronal control of speed modulation\n\nA large body of work has identified the neural basis of the regulation of speed of locomotion in vertebrates, identifying associated circuits across the brain and spinal cord. Mouse, zebrafish, and Xenopus spinal cord preparations have been used to describe the selective recruitment of specific interneuron and motor neurons at different speeds (Berg et al., 2018; Boije and Kullander, 2018; Gatto and Goulding, 2018; Grillner and El Manira, 2020; Grillner and Kozlov, 2021; Kiehn, 2016; Roberts et al., 2010). These neurons are interconnected between members of the same \u2018module,\u2019 each of which is sequentially recruited as the animal adjusts its speed of locomotion. Neuromodulation tunes the recruitment of neurons within these modules in the adjustment of speed during locomotion (Jha and Thirumalai, 2020). In limbed animals, changes in speeds are often accompanied by changes in gait (Bellardita and Kiehn, 2015). How the corresponding qualitative and quantitative changes in the locomotor cycle are achieved is an area of active research. In the mouse spinal cord, V2a interneurons are required for maintaining left\u2013right alternation at high-speed trotting (Crone et al., 2009). Furthermore, commissural V0V neurons are necessary for trot at all speeds, and ablation of commissural V0V and V0D neurons abolishes walk, trot, and gallop gaits (Bellardita and Kiehn, 2015). In the brainstem, the MLR controls the initiation of locomotion and the expression of specific gaits. The MLR\u2019s cuneiform nucleus (CnF) and the pedunculopontine nucleus mediate alternating locomotor stepping in mice, whereas the CnF alone is necessary for high-speed synchronous locomotion such as found in galloping (Caggiano et al., 2018). A recent study identified distinct subclasses of glutamatergic neurons within the MLR, each with distinct roles in motor control outside of locomotion (Ferreira-Pinto et al., 2021), suggesting that this nucleus has wider roles in regulating behavior. Despite this recent attention to the modulation of the speed of locomotion, the neural basis of the differential modulation of the locomotor cycle is still unknown. We have uncovered a set of inhibitory neurons, whose activity determines the duration of the interwave phase, thereby setting the frequency of locomotion. The inhibitory nature of this set of cells regulating muscle contractions has many parallels in other systems. One of the simplest circuit designs for rhythm generation, the \u2018half-center oscillator,\u2019 relies on reciprocal inhibition to generate alternating patterns of activity (Marder and Bucher, 2001), and reciprocal inhibition within the spinal cord is thought to underlie the generation of alternation during locomotion (Deliagina and Orlovsky, 1980; Geertsen et al., 2011; Pratt and Jordan, 1987). Indeed, inhibitory neurons shape the rhythms of neural activity on different timescales in systems from crustacean stomatogastric ganglion to vertebrate cortical circuits (Cardin, 2019; Marder and Bucher, 2001). In addition, a parallel between the Drosophila larval system and limbed locomotion can be seen in the mechanics of movement. For instance, in cats, the extensor muscles are mainly activated during the stance phase, while the flexor muscles are mainly activated in the swing phase (Engberg and Lundberg, 1969); similarly, we found that the fruit fly larva contracts its transverse muscles during the interwave phase, and its longitudinal muscles during the wave phase. These parallels may be mirrored within the neural circuitry mediating these muscle contractions. While the detailed implementation will obviously differ, the inhibitory neural circuit motif underlying the generation of the asymmetry of the two constituent phases of locomotion could therefore be conserved between species.\n\nOur EM connectomics results also show that descending input has the potential to shape the activity of the speed modulation circuit. A31c receives strong synaptic input from descending neurons (e.g., S10 and T19x make up 32% of total input of A31cs in segments A2 and A3); the levels and timing of activity in A31c could therefore be modulated by descending cell types, which in turn could affect the activity of A26f and therefore the speed of crawling. It is also possible that this descending input acts to synchronize the activity of A31c across abdominal segments. Moreover, there are several cell types postsynaptic to A31c that send ascending projections from the VNC to thoracic and subesophageal segments (VNC-IN, A19f). These could be involved in relaying the state of the motor network, for example, to provide higher brain centers with information on the current phase of the locomotor cycle or the intended speed of locomotion. Further exploration of the connectivity of A31c and its postsynaptic partner A26f will reveal how the activity of these descending and ascending projections relates to the speed modulation circuit.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Genetic reagent(Drosophila melanogaster)</td>\n      <td>yw</td>\n      <td>Bloomington Drosophila Stock Center</td>\n      <td>BDSC #6598</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent(D. melanogaster)</td>\n      <td>GMR24H08-GAL4.AD</td>\n      <td>Bloomington Drosophila Stock Center</td>\n      <td>BDSC #68300</td>\n      <td>A31c-a8-sp.AD</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent(D. melanogaster)</td>\n      <td>GMR45F08-GAL4.DBD</td>\n      <td>Bloomington Drosophila Stock Center</td>\n      <td>BDSC #70239</td>\n      <td>A31c-a8-sp.DBD</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent(D. melanogaster)</td>\n      <td>GMR44F09-GAL4.DBD</td>\n      <td>Bloomington Drosophila Stock Center</td>\n      <td>BDSC #71061</td>\n      <td>A31c-sp.DBD</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent(D. melanogaster)</td>\n      <td>GMR41F02-GAL4.AD</td>\n      <td>Bloomington Drosophila Stock Center</td>\n      <td>BDSC #75660</td>\n      <td>A31c-sp.AD</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent(D. melanogaster)</td>\n      <td>R76E09-LexA</td>\n      <td>Bloomington Drosophila Stock Center</td>\n      <td>BDSC #54951</td>\n      <td>A26f-LexA</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent(D. melanogaster)</td>\n      <td>VT050223-GAL4.AD</td>\n      <td>Bloomington Drosophila Stock Center</td>\n      <td>BDSC #72931</td>\n      <td>A26f-sp.AD</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent(D. melanogaster)</td>\n      <td>R15E05-GAL4.DBD</td>\n      <td>Bloomington Drosophila Stock Center</td>\n      <td>BDSC #68731</td>\n      <td>A26f-sp.DBD</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent(D. melanogaster)</td>\n      <td>GMR45F08-GAL4</td>\n      <td>Bloomington Drosophila Stock Center</td>\n      <td>BDSC #49565</td>\n      <td>A31c-a8-Gal4</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent(D. melanogaster)</td>\n      <td>GMR76E09-GAL4</td>\n      <td>Bloomington Drosophila Stock Center</td>\n      <td>BDSC #39931</td>\n      <td>A26f-GAL4</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent(D. melanogaster)</td>\n      <td>GMR41F02-LexA</td>\n      <td>Bloomington Drosophila Stock Center</td>\n      <td>BDSC #54794</td>\n      <td>A31c-LexA</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent(D. melanogaster)</td>\n      <td>nSyb-LexA_VK00027</td>\n      <td>This study</td>\n      <td></td>\n      <td>nSyb-LexA_VK27</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent(D. melanogaster)</td>\n      <td>eve[RRa-F]-GAL4</td>\n      <td>Gift from Dr. Miki Fujioka</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent(D. melanogaster)</td>\n      <td>sr-GAL4</td>\n      <td>Bloomington Drosophila Stock Center</td>\n      <td>BDSC #26663</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent(D. melanogaster)</td>\n      <td>UAS-CD4::GCaMP6f_attp40</td>\n      <td>Kohsaka et al., 2014</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent(D. melanogaster)</td>\n      <td>LexAop2-RGECO1_VK00005</td>\n      <td>Kohsaka et al., 2014</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent(D. melanogaster)</td>\n      <td>LexAop-jRCaMP1b</td>\n      <td>Bloomington Drosophila Stock Center</td>\n      <td>BDSC #64428</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent(D. melanogaster)</td>\n      <td>20XUAS-6XGFP</td>\n      <td>Bloomington Drosophila Stock Center</td>\n      <td>BDSC #52262</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent(D. melanogaster)</td>\n      <td>trans-Tango</td>\n      <td>Bloomington Drosophila Stock Center</td>\n      <td>BDSC #77124</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent(D. melanogaster)</td>\n      <td>MCFO-4</td>\n      <td>Bloomington Drosophila Stock Center</td>\n      <td>BDSC #64088</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent(D. melanogaster)</td>\n      <td>mhc-GFP</td>\n      <td>Gift from Dr. Cynthia L. Hughes</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent(D. melanogaster)</td>\n      <td>UAS-CsChrimson::mVenus</td>\n      <td>Bloomington Drosophila Stock Center</td>\n      <td>BDSC #55136</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent(D. melanogaster)</td>\n      <td>UAS-GtACR1_attp2</td>\n      <td>Gift from Dr. Chris Doe</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent(D. melanogaster)</td>\n      <td>UAS-VNC-CsChrimson</td>\n      <td>Gift from Dr. Karen Hibbard (Hiramoto et al., 2021)</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-GFP (rabbit, polyclonal)</td>\n      <td>Frontier Institute</td>\n      <td>Af2020</td>\n      <td>1:1000</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-Fas2 (mouse, monoclonal)</td>\n      <td>Developmental Studies Hybridoma Bank</td>\n      <td>1D4</td>\n      <td>1:10</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-GFP (guinea pig, polyclonal)</td>\n      <td>Frontier Institute</td>\n      <td>Af1180</td>\n      <td>1:1000</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-HA (rabbit, monoclonal)</td>\n      <td>Cell Signaling Technology</td>\n      <td>C29F4</td>\n      <td>1:1000</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-ChAT (mouse, monoclonal)</td>\n      <td>Developmental Studies Hybridoma Bank</td>\n      <td>4B1</td>\n      <td>1:50</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-GABA (rabbit, polyclonal)</td>\n      <td>Sigma</td>\n      <td>A2052</td>\n      <td>1:100</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-VGluT (mouse, polyclonal)</td>\n      <td>Gift from Dr. Hermann Aberle</td>\n      <td></td>\n      <td>1:1000</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-DsRed (rabbit, polyclonal)</td>\n      <td>Clontech</td>\n      <td>#632496</td>\n      <td>1:500</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Alexa Fluor 488-conjugated anti-rabbit IgG (goat, polyclonal)</td>\n      <td>Invitrogen Molecular Probes</td>\n      <td>A-11034</td>\n      <td>1:300</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Alexa Fluor 555-conjugated anti-mouse IgG (goat, polyclonal)</td>\n      <td>Invitrogen Molecular Probes</td>\n      <td>A-21424</td>\n      <td>1:300</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Alexa Fluor 488-conjugated anti-guinea pig IgG (goat, polyclonal)</td>\n      <td>Invitrogen Molecular Probes</td>\n      <td>A-11073</td>\n      <td>1:300</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>FIJI</td>\n      <td>Abr\u00e0moff et al., 2004</td>\n      <td>RRID:SCR_002285</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>DeepLabCut</td>\n      <td>Mathis et al., 2018</td>\n      <td>https://github.com/DeepLabCut/DeepLabCut; (RRID:SCR_021391, version 2.1); Mathis et al., 2023</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Fly strains\n\nExcept where specifically mentioned, larvae were raised in standard cornmeal-based food at room temperature (25\u00b0C), and third-instar larvae were used for experiments. We used the following all-trans retinal (ATR) feeding conditions for optogenetics: 10 mM ATR yeast from 18 to 36 hr in CsChrimson and Channelrhodopsin 2 (Chr2.T159C) groups, 3 mM ATR yeast from 24 to 48 hr in GtACR1 groups. Fly strains are listed in Key resources table. We used the split GAL4 drivers A31c-a8-sp (R24H08-GAL4.AD, R45F08-GAL4.DBD), A31c-sp (R41F02-GAL4.AD, R44F09-GAL4.DBD), and A26f-sp (VT050223-GAL4.AD, R15E05-GAL4.DBD). Transgenic flies nSyb-LexA were generated in the lab. The enhancer sequence of neuronal Synaptobrevin (nSyb) (R57C10, Pfeiffer et al., 2012) was cloned into pBPLexA::p65Uw plasmid (Pfeiffer et al., 2010). The transgenic line was generated in the VK00027 locus (BestGene Inc, USA). Sources of the fly strains are listed in Key resources table.\n\n### Immunostaining and calcium imaging\n\nWe used a standard immunostaining procedure (Kohsaka et al., 2014). First, the larvae were dissected in the fillet preparation, fixed in 4% formaldehyde for 30\u2009min at room temperature, washed twice with 0.2% Triton X-100 in PBS (PBT) for 15\u2009min at room temperature, blocked with 5% normal goat serum in PBT for 30\u2009min at room temperature, and stained with the first antibody at 4\u00b0C for 24\u201348 hr. Then, the preparations were washed twice with PBT for 15\u2009min and stained with the second antibody at 4\u00b0C for 24\u201348 hr. Sources and concentrations of antibodies are listed in Key resources table.\n\nIn the calcium imaging of the isolated CNS, the CNS of third-instar larvae was dissected out (Kohsaka et al., 2014), transferred to a drop of TES buffer (TES 5\u2009mM, NaCl 135\u2009mM, KCl 5\u2009mM, MgCl2 4\u2009mM, CaCl2 2\u2009mM, sucrose 36\u2009mM; pH \u2009=\u20097.15), and attached dorsal-up on MAS-coated slide glass for imaging (Matsunami Glass, Japan). GCaMP6f fluorescence was detected by a spinning-disk confocal unit (CSU21, Yokogawa, Japan) and an EMCCD camera (iXon, Andor Technology, Germany) on an upright microscope, Axioskop2 FS (Zeiss, Germany). We used a dual-view system (CSU-DV, Solution Systems, Japan) to perform dual-color calcium imaging for GCaMP and R-GECO1.\n\n### Top-view crawling assay and analysis\n\nThird-instar wandering larvae of sr-GAL4>20xUAS-6xGFP about 0\u20134 hr after the start of wandering were used. We transferred a larva onto an agarose plate of a standard concentration (1.5%), waited for about 1 min, and took a video for 5 min. An Olympus stereomicroscope (SZX16, Olympus, Japan) and a \u00d70.7 lens were used for magnification. A CMOS camera (C11440-22CU, Hamamatsu Photonics, Japan) was used for video recording. A square of 1.6 \u00d7 1.6 cm of 1024 \u00d7 1024 pixels was recorded. The frame rate was set at 30 Hz. A mercury lamp (U-HGLGPS, Olympus) and an excitation filter (460\u2013495 nm) were used to deliver ~5 \u03bcW/mm2 of blue light for illumination.\n\nWe reviewed all videos to extract episodes of straight runs of more than three strides. We then randomly selected three episodes for each larva and analyzed the stride parameters. An ImageJ script was used to manually annotate the video to obtain kinematic parameters (version 1.53, Abr\u00e0moff et al., 2004). The stride length was obtained from the distance between the landing positions of the prominent ventral denticle at A8 on one lateral side. The stride duration was obtained from the duration between the unhooking moments. The time of wave initiation was annotated when the A8 prominent denticle moved half a segmental length. The speed was calculated by dividing the total stride lengths by the total stride durations in an episode.\n\nTo model the relationship between the stride duration and the duration of the two constituent phases, we tested the polynomial models and the piecewise linear model with two pieces. We then compared the Bayesian information criterion (BIC) between these models (Burnham and Anderson, 2004). The BIC is defined as\n\n$$\nBIC=Kln\u2061(n)\u22122ln\u2061(L^).\n$$\n\nwhere K is the number of estimated parameters in the model, n is the amount of data, $L^$ is the maximum value of the likelihood function for the model. In the case of least-squares estimation with normally distributed errors, BIC can be expressed as\n\n$$\nBIC=Kln\u2061(n)+nln\u2061(\\sigma^^{2}),\n$$\n\nwhere $\\sigma^^{2}$ is the average of the squares of residuals. We calculated the BIC for the linear piecewise model of two pieces and the polynomial models of degrees from 2 to 10. The BIC has a minimum value with the cubic polynomial model.\n\n### Side-view imaging of the muscular ends and analysis\n\nThird-instar wandering larvae about 0\u201312 hr after starting wandering were used. An agarose plate of a standard concentration (1.5%) with black ink (0.2%) was used as the substrate. We oriented a CMOS camera (C11440-22CU, Hamamatsu, Japan) and its zoom lens (MLM3X-MP, Computar, Japan) with a 2\u00d7 extender (FP-EX2, RICOH, Japan) horizontally for recording. Each time one larva was transferred to the agarose plate for recording. We manually moved the plate to let the camera focus on the larval body wall. The top-view imaging was simultaneously recorded with the same instrument described in the previous method section. A mercury lamp (U-HGLGPS, Olympus) and an excitation filter (460\u2013495 nm) were used to deliver 5 \u03bcW/mm2 of blue light for the illumination of the GFP-tagged tendon cells. We recorded at 30 Hz for about 3 min and typically collected 3\u20135 episodes in focus. Each episode includes 2\u20135 straight crawls.\n\nWe reviewed all videos to select two episodes for each larva that had the best focus and analyzed the stride parameters. To visualize the kinematics of the muscular movement, we used DeepLabCut (Mathis et al., 2018) to track the muscular ends in muscles LT2, VL4, and DO1. We labeled the muscular ends for 40\u201350 frames in each video and trained the resnet50 network with the labeled frames for 1,000,000 iterations. To understand the relationship between the contraction of LT muscles and the head and tail movement, an ImageJ script was used to obtain the minimum/maximum length of the LT2 muscle, the stride length, and the interwave duration (Abr\u00e0moff et al., 2004). To obtain the minimum/maximum length of the LT2 muscle, we annotated the position of the muscular ends of the LT2 muscle in segments A2-A7 when they were mostly contracted and extended and calculated the distance of the pairs of muscular ends. To obtain the stride length, we annotated the landing positions of the tail and calculated the distance. The interwave duration was obtained as described in the previous section. The speed was calculated by dividing the stride length by the stride duration.\n\n### Trans-synaptic tracing by trans-Tango\n\nAs trans-Tango expression is leaky in larval ventral nerve cord (VNC) neurons when using the recommended rearing temperature 18\u00b0C (Talay et al., 2017), trans-Tango larvae were incubated at 30\u00b0C for 1 d before the experiment. trans-Tango expression was thereby restricted to a small number of neurons in combination with the split GAL4 driver A31c-a8. We then identified each single neuron by comparing its morphology to the EM database (Ohyama et al., 2015).\n\n### EM reconstruction\n\nSerial sectioning transmission electron microscopy (ssTEM) data were analyzed as described in Ohyama et al., 2015. Briefly, reconstructions were made in a modified version of CATMAID (Saalfeld et al., 2009; http://www.catmaid.org). LT motoneurons and their presynaptic partners had been identified and reconstructed previously within the ssTEM volume (Zwart et al., 2016). These reconstructions were used to identify and reconstruct all presynaptic partners.\n\n### Measurement and quantification of calcium activity\n\nTo analyze calcium imaging data, we manually circled regions of interest (ROIs) using ImageJ (version 1.53, Abr\u00e0moff et al., 2004). ROIs were chosen at the medial dendritic sites for the A26f neurons, at the axons for the A31c neurons, and the neuropil for the pan-neuronal line in each neuromere. To compare the calcium imaging of different forward cycles, we normalized the time in Figures 2D and 4D relative to the peak \u0394F/F of nSyb in segments A4 and A1. We normalized the time in Figure 4F\u2019 relative to the peak \u0394F/F of A31c in A4 preceding the FW and the peak \u0394F/F of A31c in A4 during the FW. To obtain the time-lagged cross-correlation, we slide a trace of calcium activity as in Figure 2D or Figure 4D, calculated the Pearson correlation coefficients with traces of calcium activity in other segments, and calculated the mean value of correlation coefficients by using Fisher-z correction.\n\n### Optogenetic assay of free crawling\n\nWe assayed the response of larvae to optogenetic stimulation by using the same imaging system as the top-view imaging assay. The background illumination and the light for the optogenetic stimulation were set as the following. In the GtACR1 groups, we used a 590 nm LED of ~150 \u03bcW/mm2 to provide the optogenetic stimulation, while a 660 nm LED (M660L3, Thorlabs, USA) or an infrared light (LDQ-150IR2-850, CCS, Japan) provided the background illumination. In the CsChrimson groups, we used an 850 nm infrared light (LDQ-150IR2-850, CCS) of ~40 \u03bcW/mm2 to provide the background light and used the 660 nm LED to apply the optogenetic stimulation of ~60 \u03bcW/mm2. We used an ImageJ script to manually annotate videos to obtain the kinematic parameters (version 1.53, Abr\u00e0moff et al., 2004). In the experiments using GtACR1, the larva can show transient turning or stopping responses to 590 nm light. In these groups, we analyzed strides if forward cycles were not halted or after forward cycles were reinitiated. In the experiment using A26f-sp drivers, we only analyzed the data when the GtACR1/CsChrimson was expressed in more than four A26f neurons, which was determined by post hoc staining.\n\n### Assay of muscular response to optogenetic stimulation in the fillet and sideways preparation\n\nWe used a semi-intact fillet preparation to assay muscular responses to optogenetic activation (Kohsaka et al., 2014). After the preparation, we waited for about 10 min, until the larva stopped its frequent spontaneous axial waves.\n\nTo constrain the movement of the larva without impairing peristaltic behavior and visualize the lateral side of the larva, we devised a new preparation named sideways preparation. In this preparation, the larva is fixed by two pins on a vertical side of a polydimethylsiloxane (PDMS; Silpot 184, Toray, Japan) plate and oriented lateral side up to visualize the LT muscles. The larva can show spontaneous forward peristalsis-like behavior in this preparation. In the preparation, we prepared a PDMS plate with a standing PDMS island filled with 4\u00b0C TES buffer, transferred a larva to the PDMS plate, and used two pins to fix the head and tail of the third-instar larvae (Figure 5A and B). The tail was pinned to the bottom PDMS substrate to make the pin perpendicular to the larval sagittal plane with two pricking points close to the two prominent lateral denticles in the A8 segment. The head was pinned to the PDMS island to make the pin perpendicular to the larval frontal plane. After pinning, the PDMS island was attached to the tail pin and supported the ventral larval body. 4\u00b0C TES buffer was used to reduce the larval motion during the preparation. We changed the buffer to 25\u00b0C before imaging.\n\nA local stimulation microscope was used for muscular imaging and optogenetic stimulation (Matsunaga et al., 2013; Takagi et al., 2017). The microscope (FV1000, Olympus) has two separate optical paths for muscular imaging and optical stimulation, respectively: blue light from a Xeon lamp (X-Cite exacte, Excelitas Technologies, USA) and a GFP dichroic mirror (U-MGFP/XL, Olympus), which were used to image the muscles in the abdominal segments A3/A4 to A7/A8, and a scanning laser of blue (488 nm) or green (559 nm) light, which was used to stimulate the CNS optogenetically. A dichroic mirror separates the two optical paths. To fit the larva into the field of view, we used a 4x Olympus objective and a 1\u00d7 or a 0.63\u00d7 adapter. Muscular contractions were recorded by an EMCCD camera (iXon, Andor Technology). We used different combinations of optogenetic stimulation and muscular illumination. In the sideways preparation, a rectangular scanning of about 0.85 mm \u00d7 0.4 mm by the 559 nm laser was used for optogenetic stimulation (~20 \u03bcW/mm2 for the CsChrimson groups and ~40 \u03bcW/mm2 for the GtACR1 groups), while blue light of ~10 \u03bcW/mm2 was used for muscular illumination. In the fillet preparation, a \u2018tornado\u2019 scanning of a radius of ~0.3 mm by a 488 nm laser was used to activate the Chr2 (~40 mW/mm2), while a blue light of ~50 \u03bcW/mm2 was used for muscular illumination. DeepLabCut (Mathis et al., 2018) was used to track the muscular ends. We labeled the muscular ends in 40\u201350 frames in each video and trained them using the resnet50 network. The neural network was trained 1,000,000 times.\n\n### Statistical tests for the optogenetic experiments\n\nWe estimated the sample sizes according to conventions in this field. Changes in most values (stride duration, stride length, etc.) were directly used for statistical tests except that the changes in muscle length were normalized to the minimal length within each animal. We tested the significance of the changes before and after the optogenetic manipulation and compared the changes between the experimental and the control. As each animal was treated with optogenetic stimulation multiple times, to increase the statistical power and avoid Type I error (false positive), we used hierarchical bootstrapping methods for the comparison before and after the optogenetic stimulation and the comparison between the experimental and control group (Saravanan et al., 2020). To generate the bootstrapped dataset, we resampled data from the experimental dataset 10,000 times. Each time we (1) resample $n$ animals with replacement ($n$ is the animal number in the experiment), and (2) resample $m_{1},..,m_{n}$ trials within animals with replacement ($m_{i}$ is the number of trials of the resampled animal $i$ in the experiment) (Saravanan et al., 2020). For the comparison before and after the optogenetic stimulation, we used the empirical method by (1) computing the animal-wide mean of the bootstrapped sample $\\mu^{\u2217}$, (2) computing the difference between $\\mu^{\u2217}$ and the animal-wide mean of the experiment \u00b5, and (3) computing the p-value as the quantile of \u00b5 in $\\mu^{\u2217}\u2212\\mu$ Efron and Tibshirani, 1994. For the comparison between the experimental and control group, we (1) computed the animal-wide mean of the two bootstrapped samples ($\\mu^{a,\u2217}$ and $\\mu^{b,\u2217}$), (2) computed a joint probability distribution of $\\mu^{a,\u2217}$ and $\\mu^{b,\u2217}$, and (3) computed the p-value as the density of the joint probability (Saravanan et al., 2020). All analysis was done with Python (version 3.9.12) scripts using the libraries NumPy (version 1.21.5) and SciPy (version 1.7.3). Asterisks represent the range of p-values (*p<0.05; **p<0.005; ***p<0.0005).\n",
+      "created_at": "2025-12-04T02:56:14.307747Z"
+    },
+    {
+      "id": "010bd090-a738-4e06-af88-14f26f9b33c5",
+      "submission_id": "dc81d986-3891-4d26-a275-1535c44185d1",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- K VijayRaghavan, https://ror.org/03ht1xw27 National Centre for Biological Sciences, Tata Institute of Fundamental Research Hyderabad India\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.83328.sa0](https://doi.org/10.7554/eLife.83328.sa0)\n\nExploiting the power of the Drosophila larva as a model, this fundamental study sheds light on the neuronal mechanisms of speed regulation during locomotion. The data obtained using a combination of functional and structural approaches are rigorous and convincing. The identified mechanism of speed regulation could be shared with limbed animals and therefore this work is of relevance to those studying the motor system and locomotion across species.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- K VijayRaghavan, https://ror.org/03ht1xw27 National Centre for Biological Sciences, Tata Institute of Fundamental Research Hyderabad India\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.83328.sa1](https://doi.org/10.7554/eLife.83328.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Synchronous multi-segmental activity between metachronal waves controls locomotion speed in Drosophila larvae\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and K VijayRaghavan as the Senior Editor. The following individual involved in the review of your submission has agreed to reveal their identity: Jimena Berni (Reviewer #3).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\nLiu et al. investigated the mechanism of speed control in larval fruit flies in which movement is generated by the coordination of muscle contraction across several segments forming a peristaltic wave. The authors showed very convincing behavioral data demonstrating that the inter-wave phase is regulated to control speed. They found that one of the Lateral transverse muscles (LT2) is constantly contracted during the inter-wave phase. The authors further describe two inhibitory neurons projecting onto LT2 motoneuron (A31c and A26f) that exhibit patterns of activity suggesting that they could be involved in the process. Overall, it is a very interesting paper that describes a new mechanism of speed control, but several points need to be solved before the manuscript is ready for publication:\n\n1) When the neuronal activity is manipulated affecting the contraction of the motoneuron LT2, the interwave time and the speed of locomotion are altered. Data describing the pattern of activity of A31c and A26f neurons in the isolated nervous system is not completely convincing, due to the clear overlap of the neuronal activity with the contraction of abdominal segments.\n\n2) The number of some of the behavioural experiments is very low. Add more.\n\n3) The authors show the A26f and A31c neurons have an opposite role in crawling and LT muscle contractions and the existing EM connectomics data. Experiments of dual color imaging showed that the activity of A26f is bookended to peaks of A31c activity in adjacent segments, however, the authors to not causatively show that A31c inhibits A26f. The authors could for instance activate A31C and image in A26f. I do not impose to do those experiments, especially in case genetic lines to do them do not already exist or would be difficult to make in a reasonable time. However, if such experiments cannot be performed, the author should tone down the direct dependence of inhibition of A26f on A31c (alone), as the authors do not directly show that the inhibition of A26f by A31c is responsible for the changes in LT contractions.\n\n4) Some findings from EM connectomics could be discussed further. For example, A31c receives synaptic inputs from descending neurons (E.g. S10). This could suggest that A31c could modulate the speed of locomotion depending on these inputs, which could inhibit A31c to promote faster crawling or promote its activity for slower crawling. Likewise, what would be the putative role of the ascending neurons? How do A31c from different segments synchronize their activity: do they synapse onto A31c of adjacent segments? It could be beneficial to discuss and speculate on some of the information gained from connectivity analysis further.\n\n5) The text lacks clarity and should be improved:\n\na) The authors should clarify the expression patterns of the lines that they used in each of the activation/silencing experiments. They show images on VNC in these lines. Do these lines label selectively the relevant neurons or where there any off-targets in the SEZ/brain, as those could have an effect on the phenotypes? Since they use UAS-VNC Chrimson for A19c optogenetic activation in Figure 7 supplement, it suggests that this line has off-targets in the SEZ and/or brain. Given the EM connectomics and functional imaging data to complement the optogenetic manipulation data, any off-targets would not necessarily change the interpretation of the experiments or the conclusion but this caveat if it exists should be mentioned (e.g. optogenetic inactivation of A31c?).\n\nb) Line 130-140 the authors suggest that when the stride duration is approximately 1 s the inter-wave duration is minimal and the wave phase reduces with stride duration and when it is above 1.2 s the wave duration is constant and the inter-wave duration increases with stride duration.Given that these thresholds are approximate and they might depend on other factors, like the size of the larva, etc. could the authors formulate this differently? Maybe something along the lines of for example saying that the stride duration decreases as the inter-wave duration decrease while the wave duration remains constant and when the inter-wave duration becomes minimal, then the stride duration can further decrease depending on the duration of the wave that is no longer constant.\n\nc) L310-312 authors say that there is a synchronous activity in neurons A26f from neuromeres a3-a5. However, the authors couldn't examine the activity in all segments as the line labels only A26f in these segments (a3-a5). The way it is written it is not clear that they only observe a3-a5 synchronous activity because they genetically restrict GCAMP to these cells. This should be explained more clearly in the text.\n\n6) The authors found that A26f and A31c are GABA-ergic. Did they check for other neurotransmitters and they found both of these neurons are negative or did they only check for GABA?\n\nNote: Consider abstracting the connectivity motif to a GABA-ergic neuron inhibiting a GABA-ergic pre-motor neuron instead of A31c inhibiting A26f and add that the pre-pre-motor GABAergic neuron receives descending input.\n\nReviewer #1 (Recommendations for the authors):\n\n1) Experiments of dual color imaging showed that the activity of A26f is bookended to peaks of A31c activity in adjacent segments, however, the authors do not causatively show that A31c inhibits A26f, by for instance activating A31C and imaging in A26f. Given that the authors show these neurons have an opposite role on crawling and LT muscle contractions and the existing EM connectomics data, I am not necessarily suggesting doing those experiments, in case genetic lines to do them do not already exist or would be difficult to make in a reasonable time. However, if such experiments cannot be performed, the author should tone down the direct dependence of inhibition of A26f on A31c (alone), as the authors do not directly show that the inhibition of A26f by A31c is responsible for the changes in LT contractions.\n\n2) Some findings from EM connectomics could be discussed further. For example, A31c receives synaptic inputs from descending neurons (E.g. S10). This could suggest that A31c could modulate the speed of locomotion depending on these inputs, which could inhibit A31c to promote faster crawling or promote its activity for slower crawling. Likewise, what would be the putative role of the ascending neurons? How do A31c from different segments synchronize their activity: do they synapse onto A31c of adjacent segments? It could be beneficial to discuss and speculate on some of the information gained from connectivity analysis further.\n\n3) The authors should clarify the expression patterns of the lines that they used in each of the activation/silencing experiments. They show images on VNC in these lines. Do these lines label selectively the relevant neurons or where there any off-targets in the SEZ/brain, as those could have an effect on the phenotypes? Since they use UAS-VNC Chrimson for A19c optogenetic activation in Figure 7 supplement, it suggests that this line has off-targets in the SEZ and/or brain. Given the EM connectomics and functional imaging data to complement the optogenetic manipulation data, any off-targets would not necessarily change the interpretation of the experiments or the conclusion but this caveat if it exists should be mentioned (e.g. optogenetic inactivation of A31c?).\n\n4) Line 130-140 the authors suggest that when the stride duration is approximately 1 s the inter-wave duration is minimal and the wave phase reduces with stride duration and when it is above 1.2 s the wave duration is constant and the inter-wave duration increases with stride duration.\n\nGiven that these thresholds are approximate and they might depend on other factors, like the size of the larva, etc. could the authors formulate this differently? Maybe something along the lines of for example saying that the stride duration decreases as the inter-wave duration decrease while the wave duration remains constant and when the inter-wave duration becomes minimal, then the stride duration can further decrease depending on the duration of the wave that is no longer constant.\n\n5) The authors found that A26f and A31c are GABA-ergic. Did they check for other neurotransmitters and they found both of these neurons are negative or did they only check for GABA?\n\n6) L310-312 authors say that there is a synchronous activity in neurons A26f from neuromeres a3-a5. However, the authors couldn't examine the activity in all segments as the line labels only A26f in these segments (a3-a5). The way it is written it is not clear that they only observe a3-a5 synchronous activity because they genetically restrict GCAMP to these cells. This should be explained more clearly in the text.\n\n7) I would suggest abstracting this connectivity motif to GABA-ergic neuron inhibit a GABA-ergic pre-motor neuron instead of A31c inhibit A26f and add that the pre-pre-motor GAB-ergic neuron receives descending input.\n",
+      "created_at": "2025-12-04T02:56:14.307747Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T02:56:14.307747Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T02:56:14.307747Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "71283c14-bb1b-471d-a5c4-8eb877e7e3b5",
+      "content_id": "c95a0ce8-b9a4-4427-9259-7ea84c655398",
+      "claim_id": "C1",
+      "claim": "Drosophila larvae adjust the frequency of locomotion mostly by varying the time between consecutive contraction waves.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that larvae adjust the frequency of locomotion mostly by varying the time between consecutive contraction waves, reminiscent of limbed locomotion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by kinematic analysis data presented in Figure 1 showing correlation between interwave phase duration and locomotion speed.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:56:14.307747Z"
+    },
+    {
+      "id": "95b8dfa1-435a-4eda-adb8-77d1ff538f91",
+      "content_id": "c95a0ce8-b9a4-4427-9259-7ea84c655398",
+      "claim_id": "C2",
+      "claim": "The lateral transverse (LT) muscles co-contract in all segments during the interwave phase.",
+      "claim_type": "EXPLICIT",
+      "source": "A specific set of muscles, the lateral transverse (LT) muscles, co-contract in all segments during this phase, the duration of which sets the duration of the interwave phase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by side-view imaging data showing synchronous LT muscle contractions across segments A2-A7 during the interwave phase (Figure 1K, Figure 1\u2014figure supplement 1G').",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:56:14.307747Z"
+    },
+    {
+      "id": "315ab87d-0c77-4f75-8157-22182ecf7896",
+      "content_id": "c95a0ce8-b9a4-4427-9259-7ea84c655398",
+      "claim_id": "C3",
+      "claim": "The duration of the LT muscle contractions sets the duration of the interwave phase.",
+      "claim_type": "EXPLICIT",
+      "source": "A specific set of muscles, the lateral transverse (LT) muscles, co-contract in all segments during this phase, the duration of which sets the duration of the interwave phase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by correlation analysis showing strong correlation (r = 0.89) between LT2 muscle contraction duration and interwave phase duration (Figure 1L).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:56:14.307747Z"
+    },
+    {
+      "id": "c0dcafc7-56c6-4d72-8bb6-b95d86ae995e",
+      "content_id": "c95a0ce8-b9a4-4427-9259-7ea84c655398",
+      "claim_id": "C4",
+      "claim": "GABAergic interneuron A26f is a premotor neuron that exhibits segmentally synchronized activity.",
+      "claim_type": "EXPLICIT",
+      "source": "We identify two types of GABAergic interneurons in the LT neural network, premotor neuron A26f and its presynaptic partner A31c, which exhibit segmentally synchronized activity and control locomotor frequency by setting the amplitude and duration of LT muscle contractions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by calcium imaging showing synchronized activity of A26f neurons across segments (Figure 4C-E) and immunostaining showing GABAergic identity (Figure 4\u2014figure supplement 1B).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:56:14.307747Z"
+    },
+    {
+      "id": "363cca24-0b07-43b0-b07a-49676b3123b8",
+      "content_id": "c95a0ce8-b9a4-4427-9259-7ea84c655398",
+      "claim_id": "C5",
+      "claim": "GABAergic interneuron A31c is presynaptic to A26f and exhibits segmentally synchronized activity.",
+      "claim_type": "EXPLICIT",
+      "source": "We identify two types of GABAergic interneurons in the LT neural network, premotor neuron A26f and its presynaptic partner A31c, which exhibit segmentally synchronized activity and control locomotor frequency by setting the amplitude and duration of LT muscle contractions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by EM connectomics showing A31c-A26f connectivity (Figure 3D), trans-Tango tracing (Figure 3\u2014figure supplement 1C and D), calcium imaging showing synchronized activity (Figure 2C-E), and immunostaining showing GABAergic identity (Figure 2\u2014figure supplement 1A).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:56:14.307747Z"
+    },
+    {
+      "id": "3dd65b31-6190-4e00-bf8d-7786c40a5530",
+      "content_id": "c95a0ce8-b9a4-4427-9259-7ea84c655398",
+      "claim_id": "C6",
+      "claim": "A26f and A31c neurons control locomotor frequency by setting the amplitude and duration of LT muscle contractions.",
+      "claim_type": "EXPLICIT",
+      "source": "We identify two types of GABAergic interneurons in the LT neural network, premotor neuron A26f and its presynaptic partner A31c, which exhibit segmentally synchronized activity and control locomotor frequency by setting the amplitude and duration of LT muscle contractions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by optogenetic manipulation experiments showing that activation/inhibition of A26f and A31c affects LT muscle contraction amplitude (Figures 5, 6) and locomotor frequency (Figure 7).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:56:14.307747Z"
+    },
+    {
+      "id": "ee12fd4f-2271-41fa-b83c-8ee48f4a98b1",
+      "content_id": "c95a0ce8-b9a4-4427-9259-7ea84c655398",
+      "claim_id": "C7",
+      "claim": "Locomotion speed in freely crawling third-instar larvae ranges from 0.35 to 1.23 mm/s.",
+      "claim_type": "EXPLICIT",
+      "source": "Larvae crawled at varying speeds even within the same environmental conditions such as temperature (Figure 1D and E, 0.35\u20131.23 mm/s, n = 18 larvae).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by direct measurement from top-view crawling assay data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:56:14.307747Z"
+    },
+    {
+      "id": "0661f01a-3985-4578-af2f-d92c5f691202",
+      "content_id": "c95a0ce8-b9a4-4427-9259-7ea84c655398",
+      "claim_id": "C8",
+      "claim": "Locomotion speed correlates more strongly with stride frequency than with stride length in freely crawling larvae.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the locomotion speed in these freely crawling animals also correlated with stride frequency more so than stride length, consistent with a previous report (Heckscher et al., 2012; Figure 1E).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by correlation analysis from top-view crawling data (Figure 1D, E) and cited previous work (Heckscher et al., 2012).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:56:14.307747Z"
+    },
+    {
+      "id": "4ea79592-e5bd-4975-92d4-4c46b26d1cc4",
+      "content_id": "c95a0ce8-b9a4-4427-9259-7ea84c655398",
+      "claim_id": "C9",
+      "claim": "The interwave phase is more strongly correlated with crawling speed than the wave phase.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that both the interwave phase and the wave phase are correlated with crawling speed (Figure 1\u2014figure supplement 1C\u2013C'; Pearson correlation coefficient: the wave phase vs. speed r = \u20130.62, the interwave phase vs. speed r = \u20130.74).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by correlation analysis showing r = -0.74 for interwave phase vs. speed and r = -0.62 for wave phase vs. speed.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:56:14.307747Z"
+    },
+    {
+      "id": "faae1ede-4f04-482b-aa6c-ea9ae0300793",
+      "content_id": "c95a0ce8-b9a4-4427-9259-7ea84c655398",
+      "claim_id": "C10",
+      "claim": "The duty factor of the interwave phase decreases with speed.",
+      "claim_type": "EXPLICIT",
+      "source": "indeed, the duty factor of the interwave phase, which is given by the ratio of the interwave phase duration to stride duration, decreased with speed (Figure 1I; linear regression coefficient = \u20130.47, r2 = 0.55) and was reduced to zero at the faster speeds.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by regression analysis of top-view crawling data showing linear regression coefficient = -0.47.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:56:14.307747Z"
+    },
+    {
+      "id": "b1fbb433-5b6e-4978-9b2b-7876e57bc3af",
+      "content_id": "c95a0ce8-b9a4-4427-9259-7ea84c655398",
+      "claim_id": "C11",
+      "claim": "The interwave phase is correlated more strongly with stride duration than the wave phase.",
+      "claim_type": "EXPLICIT",
+      "source": "Both are correlated with stride duration, with the interwave phase correlated more strongly than the wave phase (interwave phase r = 0.86, wave phase r = 0.56, p<0.0001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by correlation analysis showing r = 0.86 for interwave phase and r = 0.56 for wave phase with stride duration.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:56:14.307747Z"
+    },
+    {
+      "id": "80af2339-e06b-47d0-a72a-ffd4c799cca3",
+      "content_id": "c95a0ce8-b9a4-4427-9259-7ea84c655398",
+      "claim_id": "C12",
+      "claim": "As stride duration decreases, the interwave phase shortens while the wave duration stays relatively constant.",
+      "claim_type": "EXPLICIT",
+      "source": "What becomes clear from this analysis is that as the stride duration decreases, the interwave phase shortens while the wave duration stays more or less constant; when the interwave duration becomes minimal, further decreases in stride duration are accompanied by decreases in wave duration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by analysis of phase durations as a function of stride duration (Figure 1\u2014figure supplement 1F and F').",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:56:14.307747Z"
+    },
+    {
+      "id": "4d18a4f5-0911-4c54-b227-dfc19019a194",
+      "content_id": "c95a0ce8-b9a4-4427-9259-7ea84c655398",
+      "claim_id": "C13",
+      "claim": "Longitudinal muscles exhibit propagation from the posterior segment to the anterior during forward crawling.",
+      "claim_type": "EXPLICIT",
+      "source": "first, consistent with a previous study (Heckscher et al., 2012), longitudinal muscles exhibited propagation from the posterior segment to the anterior in forward crawling (Figure 1L and Figure 1\u2014figure supplement 1G').",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by side-view muscle imaging data and cited previous work (Heckscher et al., 2012).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:56:14.307747Z"
+    },
+    {
+      "id": "33444f82-b536-4182-ad00-acd7857ba5d8",
+      "content_id": "c95a0ce8-b9a4-4427-9259-7ea84c655398",
+      "claim_id": "C14",
+      "claim": "LT2 transverse muscles show synchronous contractions across abdominal segments A2-A7.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, the LT2 transverse muscles only showed synchronous contractions across abdominal segments A2-A7 (Figure 1K and Figure 1\u2014figure supplement 1G'), in contrast to the earlier report (Heckscher et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by side-view muscle imaging data showing synchronous activity patterns.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:56:14.307747Z"
+    },
+    {
+      "id": "8ff9bfe8-8227-4aae-b297-c3d8a16151e2",
+      "content_id": "c95a0ce8-b9a4-4427-9259-7ea84c655398",
+      "claim_id": "C15",
+      "claim": "Transverse muscles contract exclusively during the interwave phase.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, while most longitudinal muscles were contracting during peristaltic waves, the transverse muscles contracted exclusively during the interwave phase (Figure 1\u2014figure supplement 1G').",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by temporal analysis of muscle contraction dynamics from side-view imaging.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:56:14.307747Z"
+    },
+    {
+      "id": "1592aaf6-b548-4b5b-9683-064a01d38b09",
+      "content_id": "c95a0ce8-b9a4-4427-9259-7ea84c655398",
+      "claim_id": "C16",
+      "claim": "The duration of the interwave phase has a high correlation with the contraction duration of transverse muscles (r = 0.89).",
+      "claim_type": "EXPLICIT",
+      "source": "While the duration of the wave phase was not strongly correlated, the duration of the interwave phase had a high correlation with the contraction duration of transverse muscles (wave phase r = 0.20, interwave phase r = 0.89, p<0.0001; the Pearson correlation coefficient, Figure 1L and M).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by correlation analysis of muscle contraction duration and locomotor phase durations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:56:14.307747Z"
+    },
+    {
+      "id": "62d08f69-fd55-47c0-bc0a-42347798cd2f",
+      "content_id": "c95a0ce8-b9a4-4427-9259-7ea84c655398",
+      "claim_id": "C17",
+      "claim": "The contraction duration of transverse muscles is correlated with crawling speed (r = -0.59).",
+      "claim_type": "EXPLICIT",
+      "source": "We therefore plotted the duration of transverse muscle contractions against crawling speed (Figure 1N) and found that they were indeed correlated (r = \u20130.59).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by correlation analysis between LT muscle contraction duration and speed.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:56:14.307747Z"
+    },
+    {
+      "id": "fab8be81-909b-4c55-9223-2a0c9ffa581f",
+      "content_id": "c95a0ce8-b9a4-4427-9259-7ea84c655398",
+      "claim_id": "C18",
+      "claim": "A31c neurons are GABAergic.",
+      "claim_type": "EXPLICIT",
+      "source": "Using immunohistochemistry, we found that A31c neurons are GABAergic (Figure 2\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by immunostaining data showing GABA expression in A31c neurons.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:56:14.307747Z"
+    },
+    {
+      "id": "382bd344-2bd5-4881-9aa6-e7d6bc51d607",
+      "content_id": "c95a0ce8-b9a4-4427-9259-7ea84c655398",
+      "claim_id": "C19",
+      "claim": "A31c neurons exhibit burst-like coactivation across all abdominal segments at the initiation of forward locomotion.",
+      "claim_type": "EXPLICIT",
+      "source": "At the initiation of forward locomotion, all abdominal A31c neurons show burst-like coactivation preceding the FW (Figure 2C and D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by dual-color calcium imaging data in isolated CNS preparations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:56:14.307747Z"
+    },
+    {
+      "id": "4ac2363e-15de-4d6f-b0c2-a4f6fc5e527f",
+      "content_id": "c95a0ce8-b9a4-4427-9259-7ea84c655398",
+      "claim_id": "C20",
+      "claim": "A31c neurons exhibit synchronous multi-segmental activity during the interwave phase.",
+      "claim_type": "EXPLICIT",
+      "source": "To sum, these results show that A31c neurons exhibit synchronous multi-segmental activity during the interwave phase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by calcium imaging showing near-zero intersegmental lag during interwave phase (Figure 2E).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:56:14.307747Z"
+    },
+    {
+      "id": "3b4504bf-7c50-4429-b28a-ecd9ed69d0a9",
+      "content_id": "c95a0ce8-b9a4-4427-9259-7ea84c655398",
+      "claim_id": "C21",
+      "claim": "The subesophageal descending neuron cell type S10 provides a significant plurality of the synaptic input to A31c neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "The same subesophageal descending neuron cell type (here labeled 'S10') provides a significant plurality of the synaptic input.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by EM connectomics reconstruction and analysis of A31c synaptic partners (Figure 3D).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:56:14.307747Z"
+    },
+    {
+      "id": "ddec8546-547a-42a6-b9ce-663f9e4d5b09",
+      "content_id": "c95a0ce8-b9a4-4427-9259-7ea84c655398",
+      "claim_id": "C22",
+      "claim": "A26f neurons are among the top three postsynaptic partners of A31c neurons in both anterior and posterior segments.",
+      "claim_type": "EXPLICIT",
+      "source": "Among postsynaptic targets, we found that just one cell type is consistent between segments A2-A3 and A7-A8: A26f neurons, which are among their top three postsynaptic partners (Figure 3D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by EM connectomics analysis of A31c postsynaptic partners.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:56:14.307747Z"
+    },
+    {
+      "id": "aa080fd7-d5d5-4d0a-8a4d-ef0cd4f0f0f0",
+      "content_id": "c95a0ce8-b9a4-4427-9259-7ea84c655398",
+      "claim_id": "C23",
+      "claim": "A26f neurons strongly innervate transverse motor neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, it has previously been reported that A26f strongly innervates the transverse motor neurons (Zarin et al., 2019; Zwart et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by cited previous work (Zarin et al., 2019; Zwart et al., 2016).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:56:14.307747Z"
+    },
+    {
+      "id": "78e6c8e3-fbcc-4ab9-8422-4115288bc795",
+      "content_id": "c95a0ce8-b9a4-4427-9259-7ea84c655398",
+      "claim_id": "C24",
+      "claim": "A26f neurons are GABAergic.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that A26f neurons are GABAergic (Figure 4\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by immunostaining data showing GABA expression in A26f neurons.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:56:14.307747Z"
+    },
+    {
+      "id": "1057ed4c-4d67-407b-bc4d-3ea4a52e79cf",
+      "content_id": "c95a0ce8-b9a4-4427-9259-7ea84c655398",
+      "claim_id": "C25",
+      "claim": "A26f neurons are not corazoninergic.",
+      "claim_type": "EXPLICIT",
+      "source": "However, a comparison of the morphology of A26f neurons with confirmed corazoninergic neurons (Santos et al., 2007) and the absence of peptidergic dense core vesicles in A26f neurons in the EM connectomics dataset suggest that A26f neurons are not corazoninergic.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by morphological comparison with confirmed corazoninergic neurons and EM analysis showing absence of dense core vesicles.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:56:14.307747Z"
+    },
+    {
+      "id": "c930d85a-d7f3-429f-8b2f-3b88787d9a2d",
+      "content_id": "c95a0ce8-b9a4-4427-9259-7ea84c655398",
+      "claim_id": "C26",
+      "claim": "A26f neurons form inhibitory synapses onto motor neurons innervating LT muscles in multiple neuromeres.",
+      "claim_type": "EXPLICIT",
+      "source": "A26f neurons form inhibitory synapses onto MNs innervating LT muscles in multiple neuromeres, which suggests the potential of A26f neurons to control the activity of LT muscles broadly in multiple segments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by EM connectomics analysis showing synaptic connections and GABAergic identity of A26f.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:56:14.307747Z"
+    },
+    {
+      "id": "aec2c84b-c944-4af1-ab87-903557a22ea9",
+      "content_id": "c95a0ce8-b9a4-4427-9259-7ea84c655398",
+      "claim_id": "C27",
+      "claim": "A26f neurons show synchronized activity that mostly occurs before the fictive peristaltic wave progresses anteriorly from segment A4.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike most neurons, which show fictive wave-like activity (Lemon et al., 2015), the A26f neurons we could image with this line only showed synchronized activity, which mostly occurred before the fictive peristaltic wave progressed anteriorly from segment A4 (Figure 4C and D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by dual-color calcium imaging data in isolated CNS preparations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:56:14.307747Z"
+    },
+    {
+      "id": "bc45a717-2eac-457b-9af8-9f6accc8c66c",
+      "content_id": "c95a0ce8-b9a4-4427-9259-7ea84c655398",
+      "claim_id": "C28",
+      "claim": "A26f activity overlaps considerably with the synchronous increases in activity seen in the panneuronal line in segments A7-A5 that characterize the interwave phase.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, A26f activity overlaps considerably with the synchronous increases in activity seen in the panneuronal line in segments A7-A5 that characterize the interwave phase (Figure 4C; see 'Discussion').",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by temporal analysis of dual-color calcium imaging data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:56:14.307747Z"
+    },
+    {
+      "id": "14c74477-2d66-45f7-9ff8-6a1e5e8b91c4",
+      "content_id": "c95a0ce8-b9a4-4427-9259-7ea84c655398",
+      "claim_id": "C29",
+      "claim": "The activity of A26f segmental homologs is highly correlated, unlike pan-neuronal activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with their synchronized activity, the activity of A26f segmental homologs is highly correlated, unlike pan-neuronal activity (Figure 4E).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by cross-correlation analysis of calcium imaging data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:56:14.307747Z"
+    },
+    {
+      "id": "a31b0fdc-16d1-4f18-926c-8063f64894bc",
+      "content_id": "c95a0ce8-b9a4-4427-9259-7ea84c655398",
+      "claim_id": "C30",
+      "claim": "The synchronous peak of A26f neurons is 'bookended' by the peaks in A31c activity of neighboring segments.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the synchronous peak of A26f neurons is 'bookended' by the peaks in A31c activity of neighboring segments (Figure 4F).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by simultaneous calcium imaging of A31c and A26f neurons.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:56:14.307747Z"
+    },
+    {
+      "id": "6c72b4e7-78ba-4a4c-b049-b2eb4839fb2b",
+      "content_id": "c95a0ce8-b9a4-4427-9259-7ea84c655398",
+      "claim_id": "C31",
+      "claim": "The alternating activity pattern between A31c and A26f is consistent with the inhibitory nature of the A31c-A26f synapses.",
+      "claim_type": "EXPLICIT",
+      "source": "This alternating activity pattern between A31c and A26f is consistent with the inhibitory nature of the A31c-A26f synapses and suggests these cell types might be involved in determining the duration of the interwave phase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on temporal relationship of activity patterns and known GABAergic identity of A31c.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:56:14.307747Z"
+    },
+    {
+      "id": "b559b2e6-c7f6-4564-974c-ad08cfb817b8",
+      "content_id": "c95a0ce8-b9a4-4427-9259-7ea84c655398",
+      "claim_id": "C32",
+      "claim": "Activation of A26f neurons reduces the contraction amplitude of the LT2 muscle during forward crawling.",
+      "claim_type": "EXPLICIT",
+      "source": "Activation of the A26f neurons reduced the contraction amplitude of the LT2 muscle, while the contraction of the VL2 muscle was almost unchanged (Figure 5C and D and Figure 5\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by optogenetic activation experiments combined with muscle imaging in sideways preparation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:56:14.307747Z"
+    },
+    {
+      "id": "775ca4b1-0b67-4768-8481-629424a8e6d6",
+      "content_id": "c95a0ce8-b9a4-4427-9259-7ea84c655398",
+      "claim_id": "C33",
+      "claim": "Activation of A31c neurons is sufficient to activate the LT muscles.",
+      "claim_type": "EXPLICIT",
+      "source": "The stimulation caused the contraction of LT muscles in all visualized abdominal neuromeres (A3-A8; Figure 5G), causing a reduction in the minimum length of the LT2 muscle (Figure 5H). These results suggest that activation of A31c neurons is sufficient to activate the LT muscles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by optogenetic activation experiments in fillet preparation showing LT muscle contraction.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:56:14.307747Z"
+    },
+    {
+      "id": "01529f96-a406-4f37-a257-0d1a6dac1855",
+      "content_id": "c95a0ce8-b9a4-4427-9259-7ea84c655398",
+      "claim_id": "C34",
+      "claim": "Optogenetic silencing of A26f neurons increases the contraction of LT2 muscles.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the minimum length of muscle LT2 decreased after optogenetic silencing of A26f, suggesting increased levels of contraction (Figure 6A and B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by optogenetic silencing experiments combined with muscle imaging.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:56:14.307747Z"
+    },
+    {
+      "id": "34b4ce0a-d996-4202-b7ae-2e6dc36e8b41",
+      "content_id": "c95a0ce8-b9a4-4427-9259-7ea84c655398",
+      "claim_id": "C35",
+      "claim": "Optogenetic silencing of A31c neurons increases the minimum length of LT2 muscles during forward cycles.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that after optogenetic silencing the minimum length of the LT2 muscle in segment A5 was increased during forward cycles (Figure 6A and B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by optogenetic silencing experiments combined with muscle imaging.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:56:14.307747Z"
+    },
+    {
+      "id": "484bed13-ff04-4318-b524-91600da66e83",
+      "content_id": "c95a0ce8-b9a4-4427-9259-7ea84c655398",
+      "claim_id": "C36",
+      "claim": "The activity of A26f and A31c neurons is necessary for the appropriate contractions of LT muscles observed during locomotor cycles.",
+      "claim_type": "EXPLICIT",
+      "source": "These results reveal that the activity of A26f and A31c neurons is necessary for the appropriate contractions of LT muscles observed during locomotor cycles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by optogenetic silencing experiments showing altered LT muscle contractions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:56:14.307747Z"
+    },
+    {
+      "id": "b4f7b45e-edaf-41dd-90df-4d57dd3ac334",
+      "content_id": "c95a0ce8-b9a4-4427-9259-7ea84c655398",
+      "claim_id": "C37",
+      "claim": "Activation of A26f neurons decreases the interwave phase duration during free crawling.",
+      "claim_type": "EXPLICIT",
+      "source": "By analyzing the kinematics, we confirmed that the interwave phase and the total stride duration were both significantly decreased during the optogenetic activation (Figure 7C and C').",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by optogenetic activation experiments during free crawling with kinematic analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:56:14.307747Z"
+    },
+    {
+      "id": "a02d7389-5f66-44e5-a2d9-0dbc42a2df5e",
+      "content_id": "c95a0ce8-b9a4-4427-9259-7ea84c655398",
+      "claim_id": "C38",
+      "claim": "Activation of A26f neurons increases crawling speed.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with these results, the speed of crawling was significantly increased (Figure 7C'').",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by optogenetic activation experiments during free crawling with speed measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:56:14.307747Z"
+    },
+    {
+      "id": "376c88ef-b77a-4136-93fd-8f14ee77c8de",
+      "content_id": "c95a0ce8-b9a4-4427-9259-7ea84c655398",
+      "claim_id": "C39",
+      "claim": "Inhibiting A26f neurons increases the interwave duration and stride duration.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that inhibiting the A26f neurons increased the interwave duration and stride duration but had no significant effect on the wave duration (Figure 7D and D' and Figure 7\u2014figure supplement 1C), resulting in decreased speeds (Figure 7D'').",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by optogenetic inhibition experiments during free crawling with kinematic analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:56:14.307747Z"
+    },
+    {
+      "id": "1f7154f9-89fc-4fb7-bbfb-ad22729b4cb3",
+      "content_id": "c95a0ce8-b9a4-4427-9259-7ea84c655398",
+      "claim_id": "C40",
+      "claim": "A26f neurons are involved in regulating the speed of locomotion by modulating the contraction of LT muscles.",
+      "claim_type": "EXPLICIT",
+      "source": "Combined with our previous analyses, these results indicate that the A26f neurons are involved in regulating the speed of locomotion by modulating the contraction of LT muscles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by combined results from muscle imaging and behavioral optogenetic experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:56:14.307747Z"
+    },
+    {
+      "id": "64fdbdea-bf63-4902-8403-e656546d750d",
+      "content_id": "c95a0ce8-b9a4-4427-9259-7ea84c655398",
+      "claim_id": "C41",
+      "claim": "Activation of A31c neurons increases the interwave duration and stride duration.",
+      "claim_type": "EXPLICIT",
+      "source": "During the activation of A31c neurons, the interwave duration and the stride duration were significantly increased, while no significant difference was found in the wave duration (Figure 7E and E' and Figure 7\u2014figure supplement 1E).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by optogenetic activation experiments during free crawling with kinematic analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:56:14.307747Z"
+    },
+    {
+      "id": "75385808-f933-41d0-850e-a5848679f172",
+      "content_id": "c95a0ce8-b9a4-4427-9259-7ea84c655398",
+      "claim_id": "C42",
+      "claim": "The effects of A31c activation on crawling kinematics are consistent with those observed during the inhibition of A26f neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "These effects are consistent with those observed during the inhibition of A26f neurons (Figure 7D and D' and Figure 7\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by comparison of optogenetic manipulation results for A31c and A26f.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:56:14.307747Z"
+    },
+    {
+      "id": "b866ed12-5283-46e5-a75f-165594067de8",
+      "content_id": "c95a0ce8-b9a4-4427-9259-7ea84c655398",
+      "claim_id": "C43",
+      "claim": "Inhibition of A31c neurons does not induce defects in crawling kinematics.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, the inhibition of A31c neurons, which we achieved by expressing GtACR1 in A31c neurons using the A31c-sp driver line, did not induce defects in crawling kinematics (Figure 7F\u2013F'' and Figure 7\u2014figure supplement 1G and H).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by optogenetic inhibition experiments during free crawling showing no significant kinematic changes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:56:14.307747Z"
+    },
+    {
+      "id": "a7e5523f-4af5-4cc5-a7e8-d6a62fcd04f2",
+      "content_id": "c95a0ce8-b9a4-4427-9259-7ea84c655398",
+      "claim_id": "C44",
+      "claim": "Additional cell types to A31c could set the level and timing of activity in A26f and therefore the speed of locomotion.",
+      "claim_type": "EXPLICIT",
+      "source": "This implies that additional cell types to A31c could set the level and timing of activity in A26f and therefore the speed of locomotion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the lack of effect of A31c inhibition on crawling kinematics.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:56:14.307747Z"
+    },
+    {
+      "id": "5996c6d3-4a51-4fa2-9312-b83336f2cdfd",
+      "content_id": "c95a0ce8-b9a4-4427-9259-7ea84c655398",
+      "claim_id": "C45",
+      "claim": "The Drosophila larva uses a strategy to primarily vary the phase between consecutive peristaltic waves for speed regulation.",
+      "claim_type": "EXPLICIT",
+      "source": "We used the Drosophila larva as a model and found that this animal uses a strategy to primarily vary the phase between consecutive peristaltic waves for speed regulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by kinematic analysis showing differential modulation of interwave vs. wave phase with speed.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:56:14.307747Z"
+    },
+    {
+      "id": "84d763d2-b3fd-4147-a5c9-85d4b74b7d6e",
+      "content_id": "c95a0ce8-b9a4-4427-9259-7ea84c655398",
+      "claim_id": "C46",
+      "claim": "The larva modulates the amplitude and duration of the contraction of the LT muscles to implement speed regulation.",
+      "claim_type": "EXPLICIT",
+      "source": "To implement this strategy, the larva modulates the amplitude and duration of the contraction of the LT muscles that are perpendicular to the crawling direction, which contract synchronously along the anterior-posterior axis before the onset of the peristaltic wave.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by muscle imaging data showing correlation between LT muscle contraction parameters and interwave phase duration.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:56:14.307747Z"
+    },
+    {
+      "id": "aeea9deb-9a41-4358-a79c-f7080f4a7ca1",
+      "content_id": "c95a0ce8-b9a4-4427-9259-7ea84c655398",
+      "claim_id": "C47",
+      "claim": "A31c neurons receive shared descending input.",
+      "claim_type": "EXPLICIT",
+      "source": "Connectivity analysis further revealed that A31c neurons receive shared descending input and synapse onto ascending neurons and local neurons, including A26f.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by EM connectomics analysis showing descending neuron S10 as major input to A31c across segments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:56:14.307747Z"
+    },
+    {
+      "id": "b5a45097-ba2f-42cb-af27-a07675223e1f",
+      "content_id": "c95a0ce8-b9a4-4427-9259-7ea84c655398",
+      "claim_id": "C48",
+      "claim": "A31c neurons synapse onto ascending neurons and local neurons, including A26f.",
+      "claim_type": "EXPLICIT",
+      "source": "Connectivity analysis further revealed that A31c neurons receive shared descending input and synapse onto ascending neurons and local neurons, including A26f.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by EM connectomics analysis showing A31c postsynaptic partners including A26f and ascending neurons like A19f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:56:14.307747Z"
+    },
+    {
+      "id": "b794d946-3e01-485c-9c02-e664210d30b2",
+      "content_id": "c95a0ce8-b9a4-4427-9259-7ea84c655398",
+      "claim_id": "C49",
+      "claim": "A26f and A31c neurons are involved in modulating the activity of the LT muscles and thus the interwave duration and speed.",
+      "claim_type": "EXPLICIT",
+      "source": "These neurons are involved in modulating the activity of the LT muscles and thus the interwave duration and speed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by combined results from optogenetic manipulation, muscle imaging, and behavioral analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:56:14.307747Z"
+    },
+    {
+      "id": "f42c164b-98cd-4966-8fbd-bd8a0174619d",
+      "content_id": "c95a0ce8-b9a4-4427-9259-7ea84c655398",
+      "claim_id": "C50",
+      "claim": "The speed of Drosophila larval crawling is determined more by stride frequency than stride length.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that, similar to previous findings, the speed of Drosophila larval crawling is determined more so by stride frequency than stride length (Frigon et al., 2014; Grillner et al., 1979; Jacobson and Hollyday, 1982; Nirody et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by correlation analysis of crawling data and cited previous work in other species.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:56:14.307747Z"
+    },
+    {
+      "id": "d5d4dfeb-6770-49f9-ac60-f5be9275f09e",
+      "content_id": "c95a0ce8-b9a4-4427-9259-7ea84c655398",
+      "claim_id": "C51",
+      "claim": "Similar to limbed animals, the two constituent phases of a locomotor cycle in Drosophila larvae vary differentially with speed.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, similar to limbed animals including mammals and other insects, the two constituent phases of a locomotor cycle vary differentially with speed, with the interwave phase varying more than the wave phase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by kinematic analysis showing differential modulation of phases and comparison with cited literature on limbed locomotion.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:56:14.307747Z"
+    },
+    {
+      "id": "e8a28d45-763d-4796-bf26-3365cee88dd5",
+      "content_id": "c95a0ce8-b9a4-4427-9259-7ea84c655398",
+      "claim_id": "C52",
+      "claim": "The similarity between the dynamics of locomotion between limbed and axial locomotion could be indicative of the kinematic constraints of each type of movement.",
+      "claim_type": "EXPLICIT",
+      "source": "This similarity between the dynamics of locomotion between limbed and axial locomotion could be indicative of the kinematic constraints of each type of movement.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative interpretation based on observed similarities between larval and limbed locomotion.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:56:14.307747Z"
+    },
+    {
+      "id": "e5e6ab42-f632-452a-99d5-cd01365c751b",
+      "content_id": "c95a0ce8-b9a4-4427-9259-7ea84c655398",
+      "claim_id": "C53",
+      "claim": "The relative invariance of the duration of the swing phase in limbed locomotion suggests that the rotational inertia of swinging limbs may be an important limiting factor.",
+      "claim_type": "EXPLICIT",
+      "source": "In both cases, the relative invariance of the duration of this phase suggests that the rotational inertia of swinging limbs may be an important limiting factor in limbed locomotion (Kilbourne, 2013a; Kilbourne and Hoffman, 2013b; Kilbourne and Hoffman, 2015; Rocha\u2010Barbosa et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative interpretation based on cited literature about limbed locomotion mechanics.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:56:14.307747Z"
+    },
+    {
+      "id": "d1978bd3-a895-448a-9170-aa7b5d55ad2e",
+      "content_id": "c95a0ce8-b9a4-4427-9259-7ea84c655398",
+      "claim_id": "C54",
+      "claim": "The relative invariance of the peristaltic wave phase in the Drosophila larva suggests a similar constraint on its motor system.",
+      "claim_type": "EXPLICIT",
+      "source": "The relative invariance of the peristaltic wave phase in the Drosophila larva suggests a similar constraint on the its motor system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative interpretation based on observed wave phase invariance and comparison with limbed locomotion.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:56:14.307747Z"
+    },
+    {
+      "id": "f146845f-6177-4e02-a508-65afff41d9c9",
+      "content_id": "c95a0ce8-b9a4-4427-9259-7ea84c655398",
+      "claim_id": "C55",
+      "claim": "The transverse muscles may be an evolutionary adaptation, with an additional set of neurons having developed to control them.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the transverse muscles, and therefore its contractions during the interwave phase, may be an evolutionary adaptation, with an additional set of neurons having developed to control them.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative interpretation based on evolutionary considerations and observed neural control.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:56:14.307747Z"
+    },
+    {
+      "id": "1dcd9d16-06d5-4044-b2c9-249e0d39443a",
+      "content_id": "c95a0ce8-b9a4-4427-9259-7ea84c655398",
+      "claim_id": "C56",
+      "claim": "The last common ancestor to all bilaterians is thought to have only had circular and longitudinal muscles.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this hypothesis, the last common ancestor to all bilaterians, the so-called 'Urbilaterian,' is thought to have only had circular and longitudinal muscles (Cannon et al., 2016), and transverse muscles have only been identified in the larvae of some other species of Diptera (e.g., Tribolium castaneum, Schultheis et al., 2019; Galleria mellonella, Emery et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by cited evolutionary and comparative studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:56:14.307747Z"
+    },
+    {
+      "id": "a8d92c52-a1a3-4df6-8381-b2c3511fc042",
+      "content_id": "c95a0ce8-b9a4-4427-9259-7ea84c655398",
+      "claim_id": "C57",
+      "claim": "Transverse muscles have only been identified in the larvae of some species of Diptera.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this hypothesis, the last common ancestor to all bilaterians, the so-called 'Urbilaterian,' is thought to have only had circular and longitudinal muscles (Cannon et al., 2016), and transverse muscles have only been identified in the larvae of some other species of Diptera (e.g., Tribolium castaneum, Schultheis et al., 2019; Galleria mellonella, Emery et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by cited comparative studies in other insect species.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:56:14.307747Z"
+    },
+    {
+      "id": "f3450b18-e066-4d6f-a5f5-d60ebbb52224",
+      "content_id": "c95a0ce8-b9a4-4427-9259-7ea84c655398",
+      "claim_id": "C58",
+      "claim": "The transverse muscles are under independent neuromodulatory control.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the transverse muscles are under independent neuromodulatory control (Elliott et al., 2021), and their motor neurons are innervated by a distinct set of interneurons (Zwart et al., 2016; Kohsaka et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by cited previous work on neuromodulation and neural circuits.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:56:14.307747Z"
+    },
+    {
+      "id": "c29a8bea-1366-4c14-8a48-537a54edcaca",
+      "content_id": "c95a0ce8-b9a4-4427-9259-7ea84c655398",
+      "claim_id": "C59",
+      "claim": "The motor neurons of transverse muscles are innervated by a distinct set of interneurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the transverse muscles are under independent neuromodulatory control (Elliott et al., 2021), and their motor neurons are innervated by a distinct set of interneurons (Zwart et al., 2016; Kohsaka et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by cited previous work on neural circuits.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:56:14.307747Z"
+    },
+    {
+      "id": "6d9bd5fd-9d32-407f-a76b-26a8fbd9782b",
+      "content_id": "c95a0ce8-b9a4-4427-9259-7ea84c655398",
+      "claim_id": "C60",
+      "claim": "The mesencephalic locomotor region (MLR) has been identified in all vertebrate species studied to date as an important control center for locomotion speed.",
+      "claim_type": "EXPLICIT",
+      "source": "The mesencephalic locomotor region (MLR), which projects to reticulospinal neurons that in turn innervate spinal circuits, has been identified in all vertebrate species studied to date as an important control center (Ryczko et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by cited review of vertebrate locomotion control.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:56:14.307747Z"
+    },
+    {
+      "id": "f01ec21d-534e-409f-802b-82072ac52d20",
+      "content_id": "c95a0ce8-b9a4-4427-9259-7ea84c655398",
+      "claim_id": "C61",
+      "claim": "Increasingly intense stimulation of the MLR causes increases in the speed of locomotion, with accompanying gait transitions.",
+      "claim_type": "EXPLICIT",
+      "source": "Increasingly intense stimulation of the MLR causes increases in the speed of locomotion, with accompanying gait transitions (Atsuta et al., 1990; Grillner, 1985; Shik et al., 1966; Shik and Orlovsky, 1976; Skinner and Garcia-Rill, 1984).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by cited experimental studies on MLR stimulation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:56:14.307747Z"
+    },
+    {
+      "id": "aff7a27d-9021-4691-bd4d-400e89b8b164",
+      "content_id": "c95a0ce8-b9a4-4427-9259-7ea84c655398",
+      "claim_id": "C62",
+      "claim": "In a range of species, descending projecting excitatory neurons have been shown to drive the rhythm of locomotion.",
+      "claim_type": "EXPLICIT",
+      "source": "In a range of species, descending projecting excitatory neurons have been shown to drive the rhythm of locomotion (Berg et al., 2018; Caggiano et al., 2018; Capelli et al., 2017; Friesen and Kristan, 2007; Gatto and Goulding, 2018; Josset et al., 2018; Roberts et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by cited studies across multiple species.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:56:14.307747Z"
+    },
+    {
+      "id": "819521ae-2666-4b08-8d5c-e9e5234926e4",
+      "content_id": "c95a0ce8-b9a4-4427-9259-7ea84c655398",
+      "claim_id": "C63",
+      "claim": "In mice, excitatory neurons are necessary and sufficient for rhythm generation in the spinal cord.",
+      "claim_type": "EXPLICIT",
+      "source": "In mice, studies using optogenetics have shown that excitatory neurons are necessary and sufficient for rhythm generation (H\u00e4gglund et al., 2010; H\u00e4gglund et al., 2013), with studies ongoing to uncover the precise identity of the rhythm generators (Kiehn, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by cited optogenetic studies in mice.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:56:14.307747Z"
+    },
+    {
+      "id": "4b64caa7-be0a-400b-9cd6-a3e21aa2a011",
+      "content_id": "c95a0ce8-b9a4-4427-9259-7ea84c655398",
+      "claim_id": "C64",
+      "claim": "Zebrafish have different central modules corresponding to fast, intermediate, and slow locomotion that are selectively recruited.",
+      "claim_type": "EXPLICIT",
+      "source": "Zebrafish, which use axial locomotion to move, have different central modules corresponding in adults to fast, intermediate, and slow locomotion that are selectively recruited to command the motor pools specific for different speeds (Ampatzis et al., 2013; Ampatzis et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by cited studies on zebrafish locomotion circuits.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:56:14.307747Z"
+    },
+    {
+      "id": "929cfcc8-8d89-47b3-b508-3df32b593e24",
+      "content_id": "c95a0ce8-b9a4-4427-9259-7ea84c655398",
+      "claim_id": "C65",
+      "claim": "Swimming animals modulate their undulatory frequency by controlling the intersegmental lag, which is linearly scaled with the locomotor cycle duration.",
+      "claim_type": "EXPLICIT",
+      "source": "Swimming animals modulate their undulatory frequency by controlling the intersegmental lag, which is linearly scaled with the locomotor cycle duration (Grillner, 1974).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by cited work on swimming locomotion.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:56:14.307747Z"
+    },
+    {
+      "id": "37b2efb4-1f46-42d1-a81b-f67d4e37b236",
+      "content_id": "c95a0ce8-b9a4-4427-9259-7ea84c655398",
+      "claim_id": "C66",
+      "claim": "Limbed animals change the frequency of walking by varying the stance phase but keeping the swing phase almost unchanged.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, limbed animals change the frequency of walking by varying the locomotor cycle differentially: the stance phase is varied, but the swing phase is almost unchanged, even as animals switch to different gaits. This holds true for animals ranging from insects and tardigrades to mammals (Boije and Kullander, 2018; Frigon et al., 2014; Grillner et al., 1979; Jacobson and Hollyday, 1982; Nirody et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by cited studies across multiple species with limbed locomotion.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:56:14.307747Z"
+    },
+    {
+      "id": "bee1bda1-c7b4-47d6-90b9-58b713614218",
+      "content_id": "c95a0ce8-b9a4-4427-9259-7ea84c655398",
+      "claim_id": "C67",
+      "claim": "Reciprocal inhibition within the spinal cord is thought to underlie the generation of alternation during locomotion.",
+      "claim_type": "EXPLICIT",
+      "source": "One of the simplest circuit designs for rhythm generation, the 'half-center oscillator,' relies on reciprocal inhibition to generate alternating patterns of activity (Marder and Bucher, 2001), and reciprocal inhibition within the spinal cord is thought to underlie the generation of alternation during locomotion (Deliagina and Orlovsky, 1980; Geertsen et al., 2011; Pratt and Jordan, 1987).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by cited theoretical and experimental work on locomotor circuits.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:56:14.307747Z"
+    },
+    {
+      "id": "797fdcd3-0f45-4425-a0d8-2a191075abe9",
+      "content_id": "c95a0ce8-b9a4-4427-9259-7ea84c655398",
+      "claim_id": "C68",
+      "claim": "Inhibitory neurons shape the rhythms of neural activity on different timescales in systems from crustacean stomatogastric ganglion to vertebrate cortical circuits.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, inhibitory neurons shape the rhythms of neural activity on different timescales in systems from crustacean stomatogastric ganglion to vertebrate cortical circuits (Cardin, 2019; Marder and Bucher, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by cited reviews on inhibitory circuit function.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:56:14.307747Z"
+    },
+    {
+      "id": "e8a54a2b-6988-48d6-8d7a-ecb50095176c",
+      "content_id": "c95a0ce8-b9a4-4427-9259-7ea84c655398",
+      "claim_id": "C69",
+      "claim": "In cats, the extensor muscles are mainly activated during the stance phase, while the flexor muscles are mainly activated in the swing phase.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, in cats, the extensor muscles are mainly activated during the stance phase, while the flexor muscles are mainly activated in the swing phase (Engberg and Lundberg, 1969); similarly, we found that the fruit fly larva contracts its transverse muscles during the interwave phase, and its longitudinal muscles during the wave phase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by cited work on cat locomotion and comparison with larval data.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:56:14.307747Z"
+    },
+    {
+      "id": "6813d2d3-ad1e-4d5f-84b9-db73c34135cf",
+      "content_id": "c95a0ce8-b9a4-4427-9259-7ea84c655398",
+      "claim_id": "C70",
+      "claim": "The inhibitory neural circuit motif underlying the generation of the asymmetry of the two constituent phases of locomotion could be conserved between species.",
+      "claim_type": "EXPLICIT",
+      "source": "These parallels may be mirrored within the neural circuitry mediating these muscle contractions. While the detailed implementation will obviously differ, the inhibitory neural circuit motif underlying the generation of the asymmetry of the two constituent phases of locomotion could therefore be conserved between species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative interpretation based on observed parallels between larval and limbed locomotion.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:56:14.307747Z"
+    },
+    {
+      "id": "e3c96ad3-3ed6-4399-a29c-5405706fae12",
+      "content_id": "c95a0ce8-b9a4-4427-9259-7ea84c655398",
+      "claim_id": "C71",
+      "claim": "Descending input has the potential to shape the activity of the speed modulation circuit through A31c neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Our EM connectomics results also show that descending input has the potential to shape the activity of the speed modulation circuit. A31c receives strong synaptic input from descending neurons (e.g., S10 and T19x make up 32% of total input of A31cs in segments A2 and A3); the levels and timing of activity in A31c could therefore be modulated by descending cell types, which in turn could affect the activity of A26f and therefore the speed of crawling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by EM connectomics data showing descending inputs to A31c.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:56:14.307747Z"
+    },
+    {
+      "id": "21b2948d-0193-46ea-ba63-3e6c4ed76506",
+      "content_id": "c95a0ce8-b9a4-4427-9259-7ea84c655398",
+      "claim_id": "C72",
+      "claim": "Descending input to A31c could act to synchronize the activity of A31c across abdominal segments.",
+      "claim_type": "EXPLICIT",
+      "source": "It is also possible that this descending input acts to synchronize the activity of A31c across abdominal segments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative interpretation based on shared descending input pattern.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:56:14.307747Z"
+    },
+    {
+      "id": "7cbad63c-1ac1-4c88-8cb1-51cd7ff95a7d",
+      "content_id": "c95a0ce8-b9a4-4427-9259-7ea84c655398",
+      "claim_id": "C73",
+      "claim": "Ascending projections postsynaptic to A31c could be involved in relaying the state of the motor network to higher brain centers.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, there are several cell types postsynaptic to A31c that send ascending projections from the VNC to thoracic and subesophageal segments (VNC-IN, A19f). These could be involved in relaying the state of the motor network, for example, to provide higher brain centers with information on the current phase of the locomotor cycle or the intended speed of locomotion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative interpretation based on connectivity patterns of A31c postsynaptic partners.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:56:14.307747Z"
+    },
+    {
+      "id": "e08e0bce-57d8-4517-a475-9b91ffc63989",
+      "content_id": "c95a0ce8-b9a4-4427-9259-7ea84c655398",
+      "claim_id": "C74",
+      "claim": "Physically restricted larvae and the isolated CNS have long cycle periods (2\u201320 s), presumably due to aberrant or absent input from sensory neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "However, physically restricted larvae and the isolated CNS have long cycle periods (2\u201320 s), presumably due to aberrant or absent input from sensory neurons (Caldwell et al., 2003; Hughes and Thomas, 2007; Sch\u00fctzler et al., 2019; Zarin et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by cited previous work on restricted preparations and inference about sensory input.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:56:14.307747Z"
+    },
+    {
+      "id": "38ae3a6d-6f1e-4f84-93a0-380674da59fc",
+      "content_id": "c95a0ce8-b9a4-4427-9259-7ea84c655398",
+      "claim_id": "C75",
+      "claim": "The normal range of cycle periods in freely crawling larvae is 0.6\u20132 s.",
+      "claim_type": "EXPLICIT",
+      "source": "How the larva varies locomotion in crawling within the normal range of cycle periods (0.6\u20132 s) is therefore not understood.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as background information defining the normal range.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:56:14.307747Z"
+    },
+    {
+      "id": "b2876c07-a711-49b9-93c1-131c1845a43a",
+      "content_id": "c95a0ce8-b9a4-4427-9259-7ea84c655398",
+      "claim_id": "C76",
+      "claim": "The intersegmental lag between the contraction of adjacent segments during the peristaltic wave scales with the cycle period in the intact animal and the isolated CNS.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been shown that the lag between the contraction of adjacent segments during the peristaltic wave (intersegmental lag) scales with the cycle period in the intact animal and the isolated CNS (Heckscher et al., 2012; Lemon et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by cited previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:56:14.307747Z"
+    },
+    {
+      "id": "4798f36b-bad0-453a-9066-49e49d5019be",
+      "content_id": "c95a0ce8-b9a4-4427-9259-7ea84c655398",
+      "claim_id": "C77",
+      "claim": "Crawling speed correlates with stride period more than stride length in mildly physically restrained first-instar larvae.",
+      "claim_type": "EXPLICIT",
+      "source": "A previous study in mildly physically restrained first-instar larvae showed that crawling speed correlates with stride period more than stride length (Heckscher et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by cited previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:56:14.307747Z"
+    },
+    {
+      "id": "aa969900-1956-4834-b2b1-82d007826d54",
+      "content_id": "c95a0ce8-b9a4-4427-9259-7ea84c655398",
+      "claim_id": "C78",
+      "claim": "Longitudinal muscles in the posterior-most segments (VL4 and DO1 in A6 and A7) contract during the interwave phase.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, the longitudinal muscles in the posterior-most segments (VL4 and DO1 in A6 and A7 in Figure 1\u2014figure supplement 1G') contract during the interwave phase (see 'Discussion').",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by side-view muscle imaging data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:56:14.307747Z"
+    },
+    {
+      "id": "134f5797-9c26-498a-b2c6-ca6d66fdc40d",
+      "content_id": "c95a0ce8-b9a4-4427-9259-7ea84c655398",
+      "claim_id": "C79",
+      "claim": "The axon of A26f in neuromere A5 extends four neuromeres from A6 neuromere to A3 neuromere.",
+      "claim_type": "EXPLICIT",
+      "source": "As a representative example, the axon of A26f in neuromere A5 extends four neuromeres from A6 neuromere to A3 neuromere (Figure 4B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by morphological analysis from confocal imaging and EM reconstruction.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:56:14.307747Z"
+    },
+    {
+      "id": "4e64f3e4-3c0c-4e3f-a859-0f96d1abaa25",
+      "content_id": "c95a0ce8-b9a4-4427-9259-7ea84c655398",
+      "claim_id": "C80",
+      "claim": "A26f neurons can exhibit one or several peaks at the initiation phase of the fictive forward wave.",
+      "claim_type": "EXPLICIT",
+      "source": "A26f neurons can exhibit one or several peaks at the initiation phase of the FW (Figure 4C and D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by calcium imaging data showing variable peak patterns.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:56:14.307747Z"
+    },
+    {
+      "id": "d4a59b4e-8d19-417a-9c88-011fd9b67b13",
+      "content_id": "c95a0ce8-b9a4-4427-9259-7ea84c655398",
+      "claim_id": "C81",
+      "claim": "A26f neurons have synaptic input sites dorsally near the midline and synaptic output sites near the DL tract.",
+      "claim_type": "EXPLICIT",
+      "source": "A26f neurons have synaptic input sites dorsally near the midline and synaptic output sites near the DL tract (Figure 4B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by synaptic marker imaging showing spatial distribution of pre- and postsynaptic sites.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:56:14.307747Z"
+    },
+    {
+      "id": "b6036030-1b6b-4801-bc09-7f12c8d81b9c",
+      "content_id": "c95a0ce8-b9a4-4427-9259-7ea84c655398",
+      "claim_id": "C82",
+      "claim": "A31c neurons have synaptic input sites along the dorsolateral (DL) tract and synaptic output sites mainly positioned dorsally near the midline.",
+      "claim_type": "EXPLICIT",
+      "source": "The synaptic input sites are located along the dorsolateral (DL) tract (Landgraf et al., 2003), while the synaptic output sites are mainly positioned dorsally near the midline (Figure 2A and B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by synaptic marker imaging and EM reconstruction showing spatial distribution of synapses.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:56:14.307747Z"
+    },
+    {
+      "id": "7d32b050-a786-4a06-9f88-c8837cb0a77f",
+      "content_id": "c95a0ce8-b9a4-4427-9259-7ea84c655398",
+      "claim_id": "C83",
+      "claim": "A31c neurons project dorsally by approximately one neuromere, mostly to the anterior.",
+      "claim_type": "EXPLICIT",
+      "source": "The neurites project dorsally by approximately one neuromere, mostly to the anterior (Figure 2A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by morphological analysis from EM reconstruction and genetic labeling.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:56:14.307747Z"
+    },
+    {
+      "id": "9532022b-9e98-4cb8-8029-9bba0bb76f58",
+      "content_id": "c95a0ce8-b9a4-4427-9259-7ea84c655398",
+      "claim_id": "C84",
+      "claim": "A26f neurons receive synaptic inputs from the ascending cell type A19f.",
+      "claim_type": "EXPLICIT",
+      "source": "A26f neurons also receive synaptic inputs from the ascending cell type A19f, one of the top postsynaptic partners of A31c neurons (Jonaitis, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by EM connectomics analysis and cited work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:56:14.307747Z"
+    },
+    {
+      "id": "d9a937cf-9365-4bb8-93ea-f7207b66368d",
+      "content_id": "c95a0ce8-b9a4-4427-9259-7ea84c655398",
+      "claim_id": "C85",
+      "claim": "Most A31c-sp+ cells in the brain are positive to Deadpan (dpn), a marker for neuroblast.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the majority of A31c-sp+ cells in the brain are positive to Deadpan (dpn) (Figure 7\u2014figure supplement 2D), a marker for neuroblast (Doe, 2017), and the terminals of A31c-sp+ cells in the brain lack synapse-like morphology, suggesting that most A31c-sp+ cells in the brain are not mature neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by immunostaining data showing dpn expression and morphological analysis.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:56:14.307747Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "8afced85-9bda-4c69-b0cd-268b4be7d760",
+      "content_id": "c95a0ce8-b9a4-4427-9259-7ea84c655398",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Drosophila larvae modulate locomotion speed primarily by varying the interwave phase duration rather than the wave phase duration. The interwave phase correlates more strongly with speed (r = -0.74) than the wave phase (r = -0.62), and its duty factor decreases with speed. As stride duration decreases, the interwave phase shortens while wave duration remains relatively constant.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C9-C12, and C45 collectively demonstrate through kinematic analysis that larvae adjust locomotion frequency primarily by modulating the interwave phase. The correlation coefficients, duty factor analysis, and phase duration relationships provide converging quantitative evidence for this differential modulation strategy.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:56:14.307747Z"
+    },
+    {
+      "id": "24126ec2-5925-4c35-92dd-28b213ce63ae",
+      "content_id": "c95a0ce8-b9a4-4427-9259-7ea84c655398",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Lateral transverse (LT) muscles contract synchronously across segments A2-A7 exclusively during the interwave phase, and the duration and amplitude of these contractions correlate strongly with interwave phase duration (r = 0.89) and crawling speed (r = -0.59).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2-C3, C14-C17, and C46 are supported by side-view muscle imaging showing synchronous LT muscle activity during the interwave phase and strong correlations between LT contraction parameters and locomotor timing. The high correlation coefficient (r = 0.89) provides robust quantitative support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:56:14.307747Z"
+    },
+    {
+      "id": "7f250375-0836-4714-a69e-7ef7873545a9",
+      "content_id": "c95a0ce8-b9a4-4427-9259-7ea84c655398",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "GABAergic interneuron A31c exhibits segmentally synchronized activity during the interwave phase, receives shared descending input from neuron S10, and synapses onto ascending neurons and local neurons including A26f.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C20 and C47-C48 are supported by immunostaining confirming GABAergic identity, calcium imaging showing near-zero intersegmental lag during interwave phase, and EM connectomics revealing connectivity patterns. Multiple complementary techniques provide strong converging evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:56:14.307747Z"
+    },
+    {
+      "id": "fe3c3167-8d92-47ce-8473-d8db4ecd1e84",
+      "content_id": "c95a0ce8-b9a4-4427-9259-7ea84c655398",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "GABAergic premotor neuron A26f is postsynaptic to A31c, exhibits segmentally synchronized activity preceding fictive forward waves, and forms inhibitory synapses onto motor neurons innervating LT muscles across multiple segments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C22-C29 are supported by EM connectomics showing A31c-A26f connectivity and A26f connections to LT motor neurons, calcium imaging demonstrating synchronized activity, and immunostaining confirming GABAergic identity. The convergence of anatomical and functional data strongly supports these findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:56:14.307747Z"
+    },
+    {
+      "id": "afa276c5-0500-40b2-aa2f-4c6dab9a08a9",
+      "content_id": "c95a0ce8-b9a4-4427-9259-7ea84c655398",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "A26f neuronal activity is temporally 'bookended' by A31c activity peaks from neighboring segments, consistent with inhibitory A31c-A26f synapses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C31 are supported by simultaneous dual-color calcium imaging showing the temporal relationship between A31c and A26f activity. The alternating pattern is consistent with the known GABAergic/inhibitory nature of both neurons, though the inference about functional significance is reasonable but not directly tested.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:56:14.307747Z"
+    },
+    {
+      "id": "ebbdd88c-ae56-4914-9087-9fcfc18ae9ad",
+      "content_id": "c95a0ce8-b9a4-4427-9259-7ea84c655398",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Optogenetic manipulation of A26f and A31c neurons bidirectionally modulates LT muscle contraction amplitude. Activation of A26f reduces LT muscle contraction, while activation of A31c increases it. Silencing either neuron produces opposite effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C36 are supported by optogenetic experiments in sideways and fillet preparations combined with muscle imaging. The bidirectional effects and complementary activation/silencing experiments provide strong causal evidence for the necessity and sufficiency of these neurons in controlling LT muscle activity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:56:14.307747Z"
+    },
+    {
+      "id": "0438e4e2-2c3f-42c8-9b80-93872a8847c4",
+      "content_id": "c95a0ce8-b9a4-4427-9259-7ea84c655398",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "A26f neurons regulate locomotion speed by modulating LT muscle contractions and interwave phase duration. Activation of A26f decreases interwave duration and increases speed, while inhibition increases interwave duration and decreases speed.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C40, C6, and C49 are supported by optogenetic manipulation during free crawling with kinematic analysis. The consistent bidirectional effects on interwave duration and speed, combined with muscle contraction data, establish a clear causal link between A26f activity and locomotion speed control.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:56:14.307747Z"
+    },
+    {
+      "id": "182583d0-f9f0-48cb-a30c-7ab157f4d7b0",
+      "content_id": "c95a0ce8-b9a4-4427-9259-7ea84c655398",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Activation of A31c neurons increases interwave duration and stride duration (consistent with A26f inhibition effects), but inhibition of A31c does not affect crawling kinematics, suggesting additional cell types regulate A26f activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C44 are supported by optogenetic experiments showing asymmetric effects of A31c manipulation. The lack of effect from A31c inhibition is a negative result that is properly interpreted to suggest circuit redundancy. The inference about additional cell types (C44) is reasonable given the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:56:14.307747Z"
+    },
+    {
+      "id": "32020666-20b0-4037-8062-9e87f47cb9bc",
+      "content_id": "c95a0ce8-b9a4-4427-9259-7ea84c655398",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "In freely crawling third-instar larvae, locomotion speed ranges from 0.35 to 1.23 mm/s and correlates more strongly with stride frequency than stride length, similar to findings in other species.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C8 and C50 are supported by direct measurements from top-view crawling assays and correlation analysis. The consistency with cited previous work in Drosophila and other species strengthens the finding.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:56:14.307747Z"
+    },
+    {
+      "id": "26dfafd6-765b-44d1-86d2-4bbe00810eb6",
+      "content_id": "c95a0ce8-b9a4-4427-9259-7ea84c655398",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Longitudinal muscles exhibit anterior-to-posterior propagation during forward crawling, though posterior-most segment longitudinal muscles (VL4 and DO1 in A6-A7) contract during the interwave phase.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13 and C78 are supported by side-view muscle imaging data and are consistent with cited previous work. The observation about posterior segment behavior during interwave phase is noted but not extensively explored.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:56:14.307747Z"
+    },
+    {
+      "id": "a6121656-4442-4121-b57d-6339f4e67380",
+      "content_id": "c95a0ce8-b9a4-4427-9259-7ea84c655398",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Descending neuron S10 provides a significant plurality of synaptic input to A31c neurons across segments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C21 is supported by EM connectomics reconstruction and quantitative analysis showing S10 comprises 32% of total input to A31c in segments A2-A3 and 62% in A7-A8. The anatomical data is clear and quantified.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:56:14.307747Z"
+    },
+    {
+      "id": "3aff6e11-0017-4834-a98f-60f93c6d2bae",
+      "content_id": "c95a0ce8-b9a4-4427-9259-7ea84c655398",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Descending input to A31c has the potential to shape speed modulation circuit activity and synchronize A31c activity across segments. Ascending projections postsynaptic to A31c could relay motor network state to higher brain centers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C71-C73 are based on anatomical connectivity data from EM but represent speculative functional interpretations. While the connectivity patterns are established (C71 supported by data), the proposed functional roles (C72-C73) are reasonable hypotheses but lack direct experimental validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:56:14.307747Z"
+    },
+    {
+      "id": "ed0bef85-321d-40f7-948c-b10e19296bc4",
+      "content_id": "c95a0ce8-b9a4-4427-9259-7ea84c655398",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Similar to limbed animals, Drosophila larvae show differential modulation of locomotor cycle phases with speed, with parallels in muscle activation patterns (transverse muscles during interwave phase analogous to extensor muscles during stance phase).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51, C66, and C69 draw comparisons between larval and limbed locomotion based on the current kinematic data and extensive cited literature. The parallel is well-supported by both the presented data and comparative citations, though the mechanistic basis for the similarity remains speculative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:56:14.307747Z"
+    },
+    {
+      "id": "8362a518-f46d-4a66-882e-48d12fab31f3",
+      "content_id": "c95a0ce8-b9a4-4427-9259-7ea84c655398",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The similarity in locomotor dynamics between limbed and axial locomotion may reflect kinematic constraints, with the relative invariance of wave phase potentially analogous to swing phase constraints in limbed locomotion. The inhibitory circuit motif underlying phase asymmetry may be conserved across species.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C52-C55 and C70 represent speculative interpretations about evolutionary and mechanical constraints. While the observations are valid, the proposed explanations about rotational inertia, evolutionary adaptation, and circuit conservation are hypotheses that lack direct experimental support in this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:56:14.307747Z"
+    },
+    {
+      "id": "1cdedc71-0147-411b-b332-c483cfa132f7",
+      "content_id": "c95a0ce8-b9a4-4427-9259-7ea84c655398",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Transverse muscles are thought to be an evolutionary innovation in Diptera, as the urbilaterian ancestor likely had only circular and longitudinal muscles. These muscles are under independent neuromodulatory control with distinct innervation patterns.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C59 are supported by cited evolutionary, comparative, and previous circuit studies. These represent established knowledge from the literature rather than novel findings from this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:56:14.307747Z"
+    },
+    {
+      "id": "2f9fe21c-9d3d-4976-96a7-0f23bebd3ac0",
+      "content_id": "c95a0ce8-b9a4-4427-9259-7ea84c655398",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Background on vertebrate and other model systems: The MLR controls locomotion speed in vertebrates, descending excitatory neurons drive locomotion rhythm across species, and inhibitory circuits shape rhythmic activity in multiple systems.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C65, C67-C68 represent established knowledge from cited literature providing context for the current study. These are accurately cited background claims rather than novel findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:56:14.307747Z"
+    },
+    {
+      "id": "457f7860-2589-413d-90ed-8fe45f7fe166",
+      "content_id": "c95a0ce8-b9a4-4427-9259-7ea84c655398",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Previous work established that physically restricted larvae and isolated CNS have long cycle periods (2-20 s) compared to freely crawling larvae (0.6-2 s), and that intersegmental lag scales with cycle period.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C74-C77 accurately represent cited previous work and provide context for why the current study focused on freely crawling larvae. These are background claims supported by appropriate citations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:56:14.307747Z"
+    },
+    {
+      "id": "3fabcbe7-db30-474d-ab5f-b848decc6005",
+      "content_id": "c95a0ce8-b9a4-4427-9259-7ea84c655398",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Morphological characterization of A26f and A31c neurons: A26f axons extend across multiple neuromeres, with input sites dorsally and output sites near the DL tract. A31c neurons project dorsally approximately one neuromere with inputs along the DL tract and outputs near the midline.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C79-C84 are supported by confocal imaging, EM reconstruction, and synaptic marker analysis. These anatomical descriptions provide important characterization of the neurons of interest.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:56:14.307747Z"
+    },
+    {
+      "id": "318423a1-beab-4432-8d23-c6576473c174",
+      "content_id": "c95a0ce8-b9a4-4427-9259-7ea84c655398",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Most A31c-sp+ cells in the brain are neuroblasts (Deadpan-positive) rather than mature neurons, suggesting brain expression in the driver line does not represent functional neurons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C85 is supported by immunostaining showing dpn expression and morphological analysis. This addresses a potential confound in the optogenetic experiments and strengthens the interpretation that behavioral effects are due to VNC neurons.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:56:14.307747Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "71283c14-bb1b-471d-a5c4-8eb877e7e3b5",
+      "result_id": "8afced85-9bda-4c69-b0cd-268b4be7d760"
+    },
+    {
+      "claim_id": "4ea79592-e5bd-4975-92d4-4c46b26d1cc4",
+      "result_id": "8afced85-9bda-4c69-b0cd-268b4be7d760"
+    },
+    {
+      "claim_id": "faae1ede-4f04-482b-aa6c-ea9ae0300793",
+      "result_id": "8afced85-9bda-4c69-b0cd-268b4be7d760"
+    },
+    {
+      "claim_id": "b1fbb433-5b6e-4978-9b2b-7876e57bc3af",
+      "result_id": "8afced85-9bda-4c69-b0cd-268b4be7d760"
+    },
+    {
+      "claim_id": "80af2339-e06b-47d0-a72a-ffd4c799cca3",
+      "result_id": "8afced85-9bda-4c69-b0cd-268b4be7d760"
+    },
+    {
+      "claim_id": "5996c6d3-4a51-4fa2-9312-b83336f2cdfd",
+      "result_id": "8afced85-9bda-4c69-b0cd-268b4be7d760"
+    },
+    {
+      "claim_id": "95b8dfa1-435a-4eda-adb8-77d1ff538f91",
+      "result_id": "24126ec2-5925-4c35-92dd-28b213ce63ae"
+    },
+    {
+      "claim_id": "315ab87d-0c77-4f75-8157-22182ecf7896",
+      "result_id": "24126ec2-5925-4c35-92dd-28b213ce63ae"
+    },
+    {
+      "claim_id": "33444f82-b536-4182-ad00-acd7857ba5d8",
+      "result_id": "24126ec2-5925-4c35-92dd-28b213ce63ae"
+    },
+    {
+      "claim_id": "8ff9bfe8-8227-4aae-b297-c3d8a16151e2",
+      "result_id": "24126ec2-5925-4c35-92dd-28b213ce63ae"
+    },
+    {
+      "claim_id": "1592aaf6-b548-4b5b-9683-064a01d38b09",
+      "result_id": "24126ec2-5925-4c35-92dd-28b213ce63ae"
+    },
+    {
+      "claim_id": "62d08f69-fd55-47c0-bc0a-42347798cd2f",
+      "result_id": "24126ec2-5925-4c35-92dd-28b213ce63ae"
+    },
+    {
+      "claim_id": "84d763d2-b3fd-4147-a5c9-85d4b74b7d6e",
+      "result_id": "24126ec2-5925-4c35-92dd-28b213ce63ae"
+    },
+    {
+      "claim_id": "fab8be81-909b-4c55-9223-2a0c9ffa581f",
+      "result_id": "7f250375-0836-4714-a69e-7ef7873545a9"
+    },
+    {
+      "claim_id": "382bd344-2bd5-4881-9aa6-e7d6bc51d607",
+      "result_id": "7f250375-0836-4714-a69e-7ef7873545a9"
+    },
+    {
+      "claim_id": "4ac2363e-15de-4d6f-b0c2-a4f6fc5e527f",
+      "result_id": "7f250375-0836-4714-a69e-7ef7873545a9"
+    },
+    {
+      "claim_id": "aeea9deb-9a41-4358-a79c-f7080f4a7ca1",
+      "result_id": "7f250375-0836-4714-a69e-7ef7873545a9"
+    },
+    {
+      "claim_id": "b5a45097-ba2f-42cb-af27-a07675223e1f",
+      "result_id": "7f250375-0836-4714-a69e-7ef7873545a9"
+    },
+    {
+      "claim_id": "c0dcafc7-56c6-4d72-8bb6-b95d86ae995e",
+      "result_id": "fe3c3167-8d92-47ce-8473-d8db4ecd1e84"
+    },
+    {
+      "claim_id": "ddec8546-547a-42a6-b9ce-663f9e4d5b09",
+      "result_id": "fe3c3167-8d92-47ce-8473-d8db4ecd1e84"
+    },
+    {
+      "claim_id": "aa080fd7-d5d5-4d0a-8a4d-ef0cd4f0f0f0",
+      "result_id": "fe3c3167-8d92-47ce-8473-d8db4ecd1e84"
+    },
+    {
+      "claim_id": "78e6c8e3-fbcc-4ab9-8422-4115288bc795",
+      "result_id": "fe3c3167-8d92-47ce-8473-d8db4ecd1e84"
+    },
+    {
+      "claim_id": "1057ed4c-4d67-407b-bc4d-3ea4a52e79cf",
+      "result_id": "fe3c3167-8d92-47ce-8473-d8db4ecd1e84"
+    },
+    {
+      "claim_id": "c930d85a-d7f3-429f-8b2f-3b88787d9a2d",
+      "result_id": "fe3c3167-8d92-47ce-8473-d8db4ecd1e84"
+    },
+    {
+      "claim_id": "aec2c84b-c944-4af1-ab87-903557a22ea9",
+      "result_id": "fe3c3167-8d92-47ce-8473-d8db4ecd1e84"
+    },
+    {
+      "claim_id": "bc45a717-2eac-457b-9af8-9f6accc8c66c",
+      "result_id": "fe3c3167-8d92-47ce-8473-d8db4ecd1e84"
+    },
+    {
+      "claim_id": "14c74477-2d66-45f7-9ff8-6a1e5e8b91c4",
+      "result_id": "fe3c3167-8d92-47ce-8473-d8db4ecd1e84"
+    },
+    {
+      "claim_id": "a31b0fdc-16d1-4f18-926c-8063f64894bc",
+      "result_id": "afa276c5-0500-40b2-aa2f-4c6dab9a08a9"
+    },
+    {
+      "claim_id": "6c72b4e7-78ba-4a4c-b049-b2eb4839fb2b",
+      "result_id": "afa276c5-0500-40b2-aa2f-4c6dab9a08a9"
+    },
+    {
+      "claim_id": "b559b2e6-c7f6-4564-974c-ad08cfb817b8",
+      "result_id": "ebbdd88c-ae56-4914-9087-9fcfc18ae9ad"
+    },
+    {
+      "claim_id": "775ca4b1-0b67-4768-8481-629424a8e6d6",
+      "result_id": "ebbdd88c-ae56-4914-9087-9fcfc18ae9ad"
+    },
+    {
+      "claim_id": "01529f96-a406-4f37-a257-0d1a6dac1855",
+      "result_id": "ebbdd88c-ae56-4914-9087-9fcfc18ae9ad"
+    },
+    {
+      "claim_id": "34b4ce0a-d996-4202-b7ae-2e6dc36e8b41",
+      "result_id": "ebbdd88c-ae56-4914-9087-9fcfc18ae9ad"
+    },
+    {
+      "claim_id": "484bed13-ff04-4318-b524-91600da66e83",
+      "result_id": "ebbdd88c-ae56-4914-9087-9fcfc18ae9ad"
+    },
+    {
+      "claim_id": "b4f7b45e-edaf-41dd-90df-4d57dd3ac334",
+      "result_id": "0438e4e2-2c3f-42c8-9b80-93872a8847c4"
+    },
+    {
+      "claim_id": "a02d7389-5f66-44e5-a2d9-0dbc42a2df5e",
+      "result_id": "0438e4e2-2c3f-42c8-9b80-93872a8847c4"
+    },
+    {
+      "claim_id": "376c88ef-b77a-4136-93fd-8f14ee77c8de",
+      "result_id": "0438e4e2-2c3f-42c8-9b80-93872a8847c4"
+    },
+    {
+      "claim_id": "1f7154f9-89fc-4fb7-bbfb-ad22729b4cb3",
+      "result_id": "0438e4e2-2c3f-42c8-9b80-93872a8847c4"
+    },
+    {
+      "claim_id": "3dd65b31-6190-4e00-bf8d-7786c40a5530",
+      "result_id": "0438e4e2-2c3f-42c8-9b80-93872a8847c4"
+    },
+    {
+      "claim_id": "b794d946-3e01-485c-9c02-e664210d30b2",
+      "result_id": "0438e4e2-2c3f-42c8-9b80-93872a8847c4"
+    },
+    {
+      "claim_id": "64fdbdea-bf63-4902-8403-e656546d750d",
+      "result_id": "182583d0-f9f0-48cb-a30c-7ab157f4d7b0"
+    },
+    {
+      "claim_id": "75385808-f933-41d0-850e-a5848679f172",
+      "result_id": "182583d0-f9f0-48cb-a30c-7ab157f4d7b0"
+    },
+    {
+      "claim_id": "b866ed12-5283-46e5-a75f-165594067de8",
+      "result_id": "182583d0-f9f0-48cb-a30c-7ab157f4d7b0"
+    },
+    {
+      "claim_id": "a7e5523f-4af5-4cc5-a7e8-d6a62fcd04f2",
+      "result_id": "182583d0-f9f0-48cb-a30c-7ab157f4d7b0"
+    },
+    {
+      "claim_id": "ee12fd4f-2271-41fa-b83c-8ee48f4a98b1",
+      "result_id": "32020666-20b0-4037-8062-9e87f47cb9bc"
+    },
+    {
+      "claim_id": "0661f01a-3985-4578-af2f-d92c5f691202",
+      "result_id": "32020666-20b0-4037-8062-9e87f47cb9bc"
+    },
+    {
+      "claim_id": "f42c164b-98cd-4966-8fbd-bd8a0174619d",
+      "result_id": "32020666-20b0-4037-8062-9e87f47cb9bc"
+    },
+    {
+      "claim_id": "4d18a4f5-0911-4c54-b227-dfc19019a194",
+      "result_id": "26dfafd6-765b-44d1-86d2-4bbe00810eb6"
+    },
+    {
+      "claim_id": "aa969900-1956-4834-b2b1-82d007826d54",
+      "result_id": "26dfafd6-765b-44d1-86d2-4bbe00810eb6"
+    },
+    {
+      "claim_id": "3b4504bf-7c50-4429-b28a-ecd9ed69d0a9",
+      "result_id": "a6121656-4442-4121-b57d-6339f4e67380"
+    },
+    {
+      "claim_id": "e3c96ad3-3ed6-4399-a29c-5405706fae12",
+      "result_id": "3aff6e11-0017-4834-a98f-60f93c6d2bae"
+    },
+    {
+      "claim_id": "21b2948d-0193-46ea-ba63-3e6c4ed76506",
+      "result_id": "3aff6e11-0017-4834-a98f-60f93c6d2bae"
+    },
+    {
+      "claim_id": "7cbad63c-1ac1-4c88-8cb1-51cd7ff95a7d",
+      "result_id": "3aff6e11-0017-4834-a98f-60f93c6d2bae"
+    },
+    {
+      "claim_id": "d5d4dfeb-6770-49f9-ac60-f5be9275f09e",
+      "result_id": "ed0bef85-321d-40f7-948c-b10e19296bc4"
+    },
+    {
+      "claim_id": "37b2efb4-1f46-42d1-a81b-f67d4e37b236",
+      "result_id": "ed0bef85-321d-40f7-948c-b10e19296bc4"
+    },
+    {
+      "claim_id": "e8a54a2b-6988-48d6-8d7a-ecb50095176c",
+      "result_id": "ed0bef85-321d-40f7-948c-b10e19296bc4"
+    },
+    {
+      "claim_id": "e8a28d45-763d-4796-bf26-3365cee88dd5",
+      "result_id": "8362a518-f46d-4a66-882e-48d12fab31f3"
+    },
+    {
+      "claim_id": "e5e6ab42-f632-452a-99d5-cd01365c751b",
+      "result_id": "8362a518-f46d-4a66-882e-48d12fab31f3"
+    },
+    {
+      "claim_id": "d1978bd3-a895-448a-9170-aa7b5d55ad2e",
+      "result_id": "8362a518-f46d-4a66-882e-48d12fab31f3"
+    },
+    {
+      "claim_id": "f146845f-6177-4e02-a508-65afff41d9c9",
+      "result_id": "8362a518-f46d-4a66-882e-48d12fab31f3"
+    },
+    {
+      "claim_id": "6813d2d3-ad1e-4d5f-84b9-db73c34135cf",
+      "result_id": "8362a518-f46d-4a66-882e-48d12fab31f3"
+    },
+    {
+      "claim_id": "1dcd9d16-06d5-4044-b2c9-249e0d39443a",
+      "result_id": "1cdedc71-0147-411b-b332-c483cfa132f7"
+    },
+    {
+      "claim_id": "a8d92c52-a1a3-4df6-8381-b2c3511fc042",
+      "result_id": "1cdedc71-0147-411b-b332-c483cfa132f7"
+    },
+    {
+      "claim_id": "f3450b18-e066-4d6f-a5f5-d60ebbb52224",
+      "result_id": "1cdedc71-0147-411b-b332-c483cfa132f7"
+    },
+    {
+      "claim_id": "c29a8bea-1366-4c14-8a48-537a54edcaca",
+      "result_id": "1cdedc71-0147-411b-b332-c483cfa132f7"
+    },
+    {
+      "claim_id": "6d9bd5fd-9d32-407f-a76b-26a8fbd9782b",
+      "result_id": "2f9fe21c-9d3d-4976-96a7-0f23bebd3ac0"
+    },
+    {
+      "claim_id": "f01ec21d-534e-409f-802b-82072ac52d20",
+      "result_id": "2f9fe21c-9d3d-4976-96a7-0f23bebd3ac0"
+    },
+    {
+      "claim_id": "aff7a27d-9021-4691-bd4d-400e89b8b164",
+      "result_id": "2f9fe21c-9d3d-4976-96a7-0f23bebd3ac0"
+    },
+    {
+      "claim_id": "819521ae-2666-4b08-8d5c-e9e5234926e4",
+      "result_id": "2f9fe21c-9d3d-4976-96a7-0f23bebd3ac0"
+    },
+    {
+      "claim_id": "4b64caa7-be0a-400b-9cd6-a3e21aa2a011",
+      "result_id": "2f9fe21c-9d3d-4976-96a7-0f23bebd3ac0"
+    },
+    {
+      "claim_id": "929cfcc8-8d89-47b3-b508-3df32b593e24",
+      "result_id": "2f9fe21c-9d3d-4976-96a7-0f23bebd3ac0"
+    },
+    {
+      "claim_id": "bee1bda1-c7b4-47d6-90b9-58b713614218",
+      "result_id": "2f9fe21c-9d3d-4976-96a7-0f23bebd3ac0"
+    },
+    {
+      "claim_id": "797fdcd3-0f45-4425-a0d8-2a191075abe9",
+      "result_id": "2f9fe21c-9d3d-4976-96a7-0f23bebd3ac0"
+    },
+    {
+      "claim_id": "e08e0bce-57d8-4517-a475-9b91ffc63989",
+      "result_id": "457f7860-2589-413d-90ed-8fe45f7fe166"
+    },
+    {
+      "claim_id": "38ae3a6d-6f1e-4f84-93a0-380674da59fc",
+      "result_id": "457f7860-2589-413d-90ed-8fe45f7fe166"
+    },
+    {
+      "claim_id": "b2876c07-a711-49b9-93c1-131c1845a43a",
+      "result_id": "457f7860-2589-413d-90ed-8fe45f7fe166"
+    },
+    {
+      "claim_id": "4798f36b-bad0-453a-9066-49e49d5019be",
+      "result_id": "457f7860-2589-413d-90ed-8fe45f7fe166"
+    },
+    {
+      "claim_id": "134f5797-9c26-498a-b2c6-ca6d66fdc40d",
+      "result_id": "3fabcbe7-db30-474d-ab5f-b848decc6005"
+    },
+    {
+      "claim_id": "4e64f3e4-3c0c-4e3f-a859-0f96d1abaa25",
+      "result_id": "3fabcbe7-db30-474d-ab5f-b848decc6005"
+    },
+    {
+      "claim_id": "d4a59b4e-8d19-417a-9c88-011fd9b67b13",
+      "result_id": "3fabcbe7-db30-474d-ab5f-b848decc6005"
+    },
+    {
+      "claim_id": "b6036030-1b6b-4801-bc09-7f12c8d81b9c",
+      "result_id": "3fabcbe7-db30-474d-ab5f-b848decc6005"
+    },
+    {
+      "claim_id": "7d32b050-a786-4a06-9f88-c8837cb0a77f",
+      "result_id": "3fabcbe7-db30-474d-ab5f-b848decc6005"
+    },
+    {
+      "claim_id": "9532022b-9e98-4cb8-8029-9bba0bb76f58",
+      "result_id": "3fabcbe7-db30-474d-ab5f-b848decc6005"
+    },
+    {
+      "claim_id": "d9a937cf-9365-4bb8-93ea-f7207b66368d",
+      "result_id": "318423a1-beab-4432-8d23-c6576473c174"
+    }
+  ],
+  "comparisons": []
+}

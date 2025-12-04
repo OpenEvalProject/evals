@@ -1,0 +1,323 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C32",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Colocalization analysis identified 79 genetic loci with shared genetic architecture between T2DadjBMI and WHRadjBMI, including 143 variants in five loci with discordant effects (protection from T2D but increased abdominal obesity) and 851 SNPs in 73 loci with concordant effects. Fine-mapping identified secondary signals at the 5q21.1 locus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C43 describe the primary colocalization findings using established methods (Coloc.abf, Hyprcoloc, SuSiE). The identification of both concordant and discordant loci is well-documented with specific numbers of variants and loci. The inclusion of nominally significant variants (C39-C40) is justified by citation. Fine-mapping results (C41-C42) provide additional resolution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C44",
+      "C45"
+    ],
+    "result": "Phenome-wide association study (PheWAS) demonstrated that all lead discordant variants showed consistent associations with increased abdominal obesity but protection from T2D across multiple anthropometric and glycemic traits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C45 describe PheWAS results that validate the discordant phenotype across multiple related traits. The consistency across metrics strengthens the finding, though the manuscript does not provide detailed statistical tests for each trait association.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C46",
+      "C47"
+    ],
+    "result": "Variant effect prediction revealed that discordant variants overwhelmingly lie in noncoding regions (with only one missense variant), suggesting their function involves altering genetic regulation of proximal genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C47 present VEP analysis results and draw a reasonable inference about regulatory function. The inference (C47) is appropriately supported by citation and is consistent with established understanding of noncoding variant function.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Chromatin state enrichment analysis and TACTICAL tissue-of-action prediction identified adipose tissue as the primary tissue of action at three discordant loci, with skeletal muscle and liver sharing classification at two loci. Discordant variants showed specific enrichment in active adipose chromatin states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C51 describe tissue-of-action predictions using multiple lines of evidence (chromatin states, TACTICAL scores). The specific enrichment in active adipose chromatin states (C48) contrasts with decreased activity in other tissues (C49), providing tissue-specific evidence. The predictions are data-driven and methodologically sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "GWAS-QTL colocalization analysis identified seven candidate effector genes at three discordant loci: THADA-AS at 2p21, GIN1/PAM/PPIP5K2 at 5q21.1 (including a novel PAM splice variant), and PEPD at 19q13.11. GIN1 and PPIP5K2 represent high-confidence predictions replicated across multiple methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C58 describe eGene predictions using orthogonal colocalization methods (Coloc.abf and SMR). The identification of a novel PAM splice variant (C55) adds mechanistic detail. The high-confidence designation for GIN1 and PPIP5K2 (C58) is justified by replication across methods, following established frameworks for reconciling colocalization results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C59",
+      "C60"
+    ],
+    "result": "Single-cell RNA sequencing analysis showed that predicted effector genes are expressed in adipocytes and adipocyte progenitor stem cells (ASPCs), cell types known to drive body fat distribution associations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C60 provide cell-type-specific expression validation using published single-cell data. The connection to ASPCs and adipocytes is well-supported by citations (C60) and consistent with the tissue-of-action predictions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C67",
+      "C69"
+    ],
+    "result": "Adipose tissue expression of THADA-AS, PEPD, and GIN1 showed significant correlations with inflammatory, glycemic, and anthropometric phenotypes in the METSIM cohort. THADA-AS expression correlated with insulin resistance and inflammation markers; GIN1 expression correlated with adiponectin; PEPD expression correlated with IL-1RA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C63, C67, C69 present correlation analysis results with appropriate FDR correction (5%). The correlations provide phenotypic context for the eGenes, though the authors acknowledge difficulty parsing THADA vs THADA-AS due to single-strand sequencing (C109). The correlations are observational and do not establish causation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C70",
+      "C71"
+    ],
+    "result": "All predicted effector genes except PPIP5K2 showed dynamic expression during a 16-day adipogenesis time course, suggesting potential functional roles in regulating preadipocyte fate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C71 present adipogenesis time course data with statistical testing (likelihood ratio test). The inference about functional roles (C71) is appropriately qualified as potential/implied rather than definitive. The dynamic expression patterns support but do not prove functional involvement.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C81",
+      "C82"
+    ],
+    "result": "At the 5q21.1 locus, the T allele of rs6860588 is associated with protection from T2D and increased abdominal obesity through coordinated regulation of multiple genes (decreased GIN1 and PPIP5K2 in adipose, increased PAM in skeletal muscle, altered PAM splicing). The authors propose this promotes adipogenesis and glycolysis in adipose tissue while increasing skeletal muscle peptide secretion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C72-C73 present well-supported associations from colocalization and QTL data. However, the mechanistic model (C81-C82) integrates these findings with literature on gene function to propose a complex multi-tissue mechanism. While internally consistent and supported by TOA/QTL analyses, the model remains speculative (acknowledged in evidence_type as SPECULATION) and requires experimental validation. The proposed mechanisms for GIN1, PAM, and PPIP5K2 are inferred from studies in other contexts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "At the 2p21 locus containing THADA/THADA-AS, the authors propose that regulatory interactions between the antisense transcript THADA-AS and THADA could explain the discordant association, based on prior studies showing THADA's role in calcium signaling, thermogenesis, and metabolic phenotypes in model organisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C96-C102 synthesize prior literature (C96-C101) to propose a mechanism involving antisense regulation (C102). While the association is well-replicated (C96) and prior functional studies are cited, the proposed antisense regulatory mechanism (C102) is explicitly speculative. The authors acknowledge difficulty parsing THADA vs THADA-AS expression (C109), limiting interpretation of correlation data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "At the 19q13.11 locus, PEPD was identified as an effector gene, with prior studies showing its depletion reduces adipogenic potential and insulin signaling. A secondary signal (rs731839) was also detected but requires further investigation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C104 present colocalization results and cite relevant functional studies of PEPD. The identification of a secondary signal (C105-C106) adds complexity. The authors appropriately acknowledge the need for additional work (C107) to resolve this multi-tissue, multi-gene locus.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C83",
+      "C91"
+    ],
+    "result": "Six genetic signals in five loci show discordant associations (protection from T2D with increased abdominal obesity), with significant adipose tissue involvement at three loci. These findings contradict the typical relationship between abdominal fat accumulation and T2D risk.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C9 summarize the main findings, which are well-supported by the detailed analyses in other claim groups. Claims C83 and C91 appropriately frame the significance of identifying mechanisms that uncouple abdominal obesity from T2D risk, though C91's characterization as \"contradicting\" established trends may overstate the novelty given prior MHO literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "The authors acknowledge multiple limitations including the need for experimental validation, technical limitations of single-strand sequencing for parsing sense/antisense transcripts, lack of ancestry diversity, and caution against clinical use without further validation. They propose specific experimental approaches (CRISPR editing, animal models) as necessary next steps.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C115 appropriately acknowledge study limitations and the speculative nature of mechanistic models. The authors clearly state that predictions require validation and should not be used clinically without further work. This transparent discussion of limitations and future directions is appropriate for a computational/predictive study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "The introduction establishes the relationship between obesity, abdominal fat distribution (measured by WHRadjBMI), metabolic syndrome, and T2D risk, noting that mechanisms uncoupling abdominal obesity from T2D risk have not been previously described, despite examples of genetic variants affecting overall BMI without increasing disease risk.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C28 provide background context supported by appropriate citations. The distinction between previously described BMI-related MHO mechanisms (C25-C26) and the lack of described WHRadjBMI-related mechanisms (C27-C28) appropriately motivates the study. All background claims are either well-established knowledge or properly cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "The methodological framework uses colocalization analysis (COLOC) to identify shared genetic architecture and TACTICAL to predict tissues of action and effector genes, approaches that have been validated in prior studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C31 describe established computational methods with appropriate citations. These methods form the analytical foundation of the study and have been previously validated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C68",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C80"
+    ],
+    "result": "The authors integrate literature on the biological functions of inflammatory markers (IL-1RA, CRP), adiponectin, and the predicted effector genes (GIN1, PAM, PPIP5K2) to interpret their correlation and expression findings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C68, C74-C77, C80 cite relevant literature to provide biological context for interpreting the study's findings. These citations appropriately support the interpretation of correlation results and inform mechanistic hypotheses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "The discussion contextualizes findings within the broader MHO literature, noting controversy about MHO as an intermediate state while citing evidence for genetic influences on MHO predisposition, including examples of genes affecting BMI or body fat distribution with protective metabolic effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C90 appropriately situate the findings within existing MHO literature with proper citations. The discussion acknowledges both the controversy around MHO and accumulating evidence for genetic mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "The authors speculate about potential clinical applications including personalized risk stratification and therapeutic strategies, while emphasizing the need for functional characterization and validation before clinical implementation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C95 appropriately present speculative clinical implications while maintaining appropriate caution. The speculation is clearly identified as such and conditioned on future validation work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C61",
+      "C78",
+      "C79"
+    ],
+    "result": "The authors use correlation analysis as a tool to reveal biologically relevant functional relationships and make inferences about tissue-specific effects of PAM based on its known function in peptide amidation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C61 establishes the rationale for correlation analysis with citation. Claims C78-C79 make reasonable inferences about PAM function in different tissues based on established biochemistry, though these remain to be experimentally validated.",
+    "result_type": "MINOR"
+  }
+]

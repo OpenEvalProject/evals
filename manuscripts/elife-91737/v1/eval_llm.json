@@ -1,0 +1,170 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "This pilot study enrolled 13 TNBC patients who received neoadjuvant treatment with adebrelimab (PD-L1 inhibitor), SBRT (24 Gy/3 fractions), and platinum-based chemotherapy (nab-paclitaxel plus carboplatin). Of these, 10 patients (76.9%) completed SBRT and surgery and were evaluable for efficacy. The median age was 51 years, median tumor size was 33 mm, and 46.2% had stage III disease at baseline.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The study design and patient characteristics are clearly described with specific inclusion criteria (C14), treatment protocol details (C15-C18), and baseline demographics (C21-C34). Patient disposition is transparently reported with reasons for exclusions (C35-C36). The methodology is adequately documented for a pilot study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C23",
+      "C37",
+      "C38",
+      "C39",
+      "C24",
+      "C25",
+      "C40",
+      "C95"
+    ],
+    "result": "In the 10 efficacy-evaluable patients, the primary endpoint of pathological complete response (pCR) was achieved in 90% (9/10, 95% CI 55.5-99.8%). Secondary endpoints showed 100% RCB 0-I rate (95% CI 67.9-100.0%) and 100% objective response rate (95% CI 67.9-100.0%), with three patients achieving complete radiographic response. Four patients with positive lymph nodes at baseline had nodal downstaging to N0.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The efficacy outcomes are clearly reported with appropriate confidence intervals (C37-C39). The data are internally consistent across claims and supported by Figure 2 (C95). However, the very small sample size (n=10) results in wide confidence intervals (e.g., 55.5-99.8% for pCR), limiting the precision and generalizability of these estimates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Safety analysis in all 13 enrolled patients showed that adverse events (AEs) occurred in 92.3% (any grade) and 53.8% (grade 3-4). The most common grade 3+ AE was neutropenia (30.8%). Immune-related AEs occurred in 23.1% of patients, including thyroid disorders and one case of serious immune-mediated myositis. Two patients required carboplatin dose reduction but completed treatment. No radiation-related dermatitis or treatment-related deaths occurred.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The safety data are comprehensively reported with specific frequencies for all AE categories (C26-C56). The findings are internally consistent and reference Table 3 for detailed documentation. The safety profile appears acceptable for this combination therapy, though the small sample size limits the ability to detect rare adverse events.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C58",
+      "C57",
+      "C6"
+    ],
+    "result": "The study reports that adding SBRT to adebrelimab and chemotherapy achieved a 90% pCR rate, which the authors claim is significantly higher than historical controls from KEYNOTE-522 and IMpassion031 trials (58-64.8% pCR rates with ICI plus chemotherapy alone).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNSUPPORTED",
+    "evaluation": "While the 90% pCR rate is numerically higher than historical controls (C57, C6), the claim of 'significantly higher' (C58) is not supported by statistical testing. The study is non-comparative with only 10 evaluable patients, and the wide confidence interval (55.5-99.8%) overlaps substantially with historical control rates. The authors acknowledge this limitation but still make claims of significance without appropriate statistical justification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C80"
+    ],
+    "result": "The authors propose that SBRT (24 Gy/3 fractions) exerts synergistic immunomodulatory effects with immunochemotherapy rather than just local tumor eradication, based on the dose being lower than conventional preoperative radiotherapy (45-50 Gy) and preclinical evidence showing SBRT enhances immune responses when combined with checkpoint inhibitors and chemotherapy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The mechanistic hypothesis (C61, C80) is speculative and not directly tested in this study. While preclinical evidence supports immunomodulatory effects of SBRT (C62-C64), the current study design cannot distinguish between local tumor effects and systemic immune effects. The reasoning about dose equivalence (C59-C60) is logical but the bioequivalent dose calculation lacks methodological details (e.g., \u03b1/\u03b2 ratio used).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "The authors hypothesize that the higher pCR rate in their study (90%) compared to the PEARL study (74%) may be due to differences in chemotherapy regimens, specifically their use of carboplatin-based therapy (all patients) versus taxane-based therapy with only 52% receiving platinum in PEARL. They cite evidence that platinum increases pCR rates by ~15.1% and that nab-paclitaxel with ICIs may be more effective than paclitaxel.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This is explicitly presented as a hypothesis (C73) rather than a demonstrated finding. While the supporting evidence from prior studies is appropriately cited (C71-C72), the comparison is confounded by multiple factors including different patient populations, ICIs used (adebrelimab vs pembrolizumab), and small sample sizes. The 16% difference in pCR rates could easily be due to chance given the wide confidence intervals in both studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "The authors claim that adding SBRT did not increase adverse events compared to historical controls, with rates of 92.3% (any grade) and 53.8% (grade 3+) versus 99% and 57-76.8% respectively in KEYNOTE-522/IMpassion031, and that SBRT did not increase immune-related AEs compared to KEYNOTE-522.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNSUPPORTED",
+    "evaluation": "These comparative safety claims (C75-C77) are not supported by statistical testing and involve cross-trial comparisons without adjustment for differences in patient populations, follow-up duration, or AE reporting methods. The overlapping rates could easily reflect random variation or systematic differences in AE ascertainment rather than true equivalence. The study lacks a control arm to properly assess whether SBRT adds toxicity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "The authors cite prior studies showing that SBRT combined with immunotherapy or chemotherapy has demonstrated efficacy in TNBC, including the TONIC trial (17% vs 8% progression-free at 24 weeks with SBRT plus nivolumab vs nivolumab alone) and studies showing 36-67% pCR rates with SBRT plus chemotherapy without increased adverse events.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims appropriately summarize prior published work with proper citations (C65-C68). The references support the rationale for the current study design. However, the relevance of the TONIC trial (C65) is limited as it studied metastatic disease with different endpoints, not neoadjuvant pCR.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C78",
+      "C79"
+    ],
+    "result": "The authors conclude that adding SBRT to adebrelimab and neoadjuvant platinum-containing chemotherapy represents a convenient and feasible regimen for TNBC with promising efficacy and acceptable toxicities, supporting further exploration of this combination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This conclusion (C78-C79) is appropriately cautious given the pilot study design. The efficacy data (90% pCR) and safety profile support feasibility, and the authors correctly call for further exploration rather than claiming definitive superiority. The conclusion is consistent with the data presented, though the small sample size and lack of control group limit the strength of evidence.",
+    "result_type": "MAJOR"
+  }
+]

@@ -1,0 +1,247 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C59"
+    ],
+    "result": "NAD(P)H FLIM reveals a tonotopic gradient in the cellular balance between NADPH and NADH along the developing basilar papilla. The gradient in \u03c4bound, observed from E6 through E14, reflects differences in glucose metabolism between proximal (high-frequency) and distal (low-frequency) hair cells, with longer \u03c4bound lifetimes indicating higher NADPH/NADH ratios in proximal regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C20-C24 are directly supported by NAD(P)H FLIM data presented in Figure 2, showing significant differences in \u03c4bound along the tonotopic axis at multiple developmental stages. The technical basis for interpreting \u03c4bound as reflecting NADPH/NADH balance is established through citations (C18, C24) and is a well-accepted principle of FLIM. The gradient is consistently observed across developmental timepoints coinciding with HC specification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Mitochondrial membrane potential shows no tonotopic gradient during development. TMRM fluorescence measurements reveal no significant differences in mitochondrial activity between proximal and distal regions at any developmental stage (E7-E16), though HCs show higher mitochondrial activity than supporting cells from E14 onwards.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C27 are directly supported by TMRM data in Figure 3A-C showing no positional differences in mitochondrial membrane potential. This finding is important for ruling out glycolytic-to-oxidative metabolic switching as the basis for the NAD(P)H gradient. The inference in C28 logically follows from the data, though it remains an interpretation rather than direct measurement of ATP production pathways.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C29",
+      "C30"
+    ],
+    "result": "Glucose uptake does not vary along the tonotopic axis. 2-NBDG fluorescence analyses show no differences in glucose uptake between proximal and distal regions or between cell types at any developmental stage, suggesting that differences in glucose fate rather than flux underpin the metabolic gradient.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C29 is supported by 2-NBDG data in Figure 3\u2014figure supplement 2B-C. The inference in C30 is logical given that both glucose uptake and mitochondrial activity show no tonotopic differences, leaving differences in cytosolic glucose routing as the remaining explanation. However, 2-NBDG measures uptake and initial phosphorylation, not total flux through metabolic pathways.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C31",
+      "C32"
+    ],
+    "result": "Pyruvate kinase M2 (Pkm2) shows differential expression along the tonotopic axis. Pkm2 is the only enzyme linked with cytosolic glucose flux and cellular NADPH/NADH showing consistent differential expression throughout development, with higher protein expression in proximal compared to distal hair cells between E9 and E14.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C32 are supported by converging evidence from RNA-seq, microarray, RNA scope (Figure 3\u2014figure supplement 3A, Figure 4\u2014figure supplements 1-3), and immunohistochemistry (Figure 4). The use of multiple validation methods strengthens confidence in the differential expression. However, the claim that Pkm2 is the 'only' enzyme showing consistent differential expression depends on the specific validation criteria applied and may be overstated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Intracellular pH shows a tonotopic gradient at E9 with more alkaline pH in proximal hair cells. This pH gradient is consistent with higher PPP activity and dimeric Pkm2 in the proximal region. The pH gradient reverses at E14, after the critical period for tonotopic specification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C33 is supported by pHrodo Red data in Figure 5 showing opposing pH gradients in HCs and SCs at E9. Claim C35 is supported by Figure 5\u2014figure supplement 3. However, C34 is an interpretation based on known biochemical relationships rather than direct measurement of PPP activity or Pkm2 oligomerization state. The reversal at E14 is documented but its functional significance remains speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C42",
+      "C43"
+    ],
+    "result": "Blocking cytosolic glucose metabolism with 2-DOG abolishes tonotopic patterning during a critical developmental window. Treatment from E6.5 to E13.5 eliminates the normal gradient in HC morphology, producing uniformly distal-like phenotypes. Time-course experiments show that 48 hours of treatment (but not 24 hours) is sufficient to disrupt patterning, indicating glucose metabolism acts during the same window as morphogen signaling (E6.5-E8).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C38 are well-supported by morphometric data in Figure 6A-D showing loss of size gradients after 2-DOG treatment. The time-course data (C42) in Figure 6C-D and Figure 7A,C,D clearly demonstrate a critical window. However, 2-DOG also affects proliferation (C40) and HC density (C39), raising questions about whether effects are solely due to altered glucose routing versus general metabolic stress. The addition of sodium pyruvate helps address this but doesn't fully resolve it.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Tonotopic patterning requires glucose flux through the pentose phosphate pathway and upper glycolysis. Treatment with 6-AN (PPP inhibitor) significantly reduces proximal HC size, while blocking lower glycolysis with YZ9 (PFK inhibitor) has no effect on tonotopic patterning, indicating that glucose routing in the upper branch of glycolysis regulates positional identity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C44 is supported by data in Figure 7C showing effects of 6-AN. Claim C45 is supported by Figure 7\u2014figure supplement 2 showing no effect of YZ9. The inference in C46 is logical but relies on the assumption that these inhibitors are specific and complete. The lack of effect with YZ9 is notable but the statistical analysis shows it did not produce a significant interaction term, which is different from the other inhibitors, suggesting the interpretation requires caution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Both PPP and Pkm2 pathways are required for establishing tonotopic HC identity. Shikonin (Pkm2 inhibitor) abolishes the gradient in HC lumenal surface area but not nuclear area. Combined inhibition of PPP (6-AN) and Pkm2 (shikonin) mimics the effects of blocking all glycolysis with 2-DOG, indicating both pathways contribute to positional identity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C49 are supported by morphometric data in Figure 8A,C,E,F. The observation that shikonin affects lumenal surface area but not nuclear area (C48) is interesting and suggests pathway-specific effects on different aspects of HC morphology. The additive effect of combined inhibition (C49) supports the interpretation that both pathways are important, though the mechanism remains unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C51",
+      "C52"
+    ],
+    "result": "Mitochondrial pyruvate oxidation is required for overall developmental progression but not tonotopic patterning. UK5099 treatment (blocking mitochondrial pyruvate carrier) causes global developmental abnormalities including immature or absent stereociliary bundles at all positions, rather than position-specific effects on tonotopic gradients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C51 is supported by data in Figure 9A,C showing abnormal HC morphologies after UK5099 treatment. The interpretation in C52 is reasonable given that effects are global rather than position-specific, contrasting with the tonotopic-specific effects of cytosolic glucose metabolism inhibitors. However, the severe developmental disruption makes it difficult to assess whether more subtle tonotopic effects might be masked.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C60"
+    ],
+    "result": "Cytosolic glucose metabolism regulates morphogen expression along the tonotopic axis. Treatment with 2-DOG disrupts the normal expression patterns of Bmp7 and Chdl1, with Bmp7 increasing and Chdl1 decreasing along the entire BP. Treatment with 6-AN also alters morphogen expression, while mitochondrial inhibition (UK5099) does not affect Bmp7 expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C56 are supported by in situ hybridization data in Figure 10E and supplements. The changes in morphogen expression after metabolic perturbation provide a mechanistic link between metabolism and patterning. However, the in situ data are qualitative and the precise quantitative changes are not measured. The global nature of the changes (C54) makes it challenging to predict how they would affect the morphogen gradient.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C5"
+    ],
+    "result": "Exogenous Chdl1 partially rescues tonotopic patterning when glucose metabolism is blocked. Treatment with 2-DOG plus Chdl1 protein restores gradients in HC lumenal surface area and nuclear area along the proximal-to-distal axis, demonstrating a causal link between metabolic state, morphogen signaling, and HC positional identity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C57 is supported by rescue data in Figure 11 showing partial restoration of morphological gradients with Chdl1 supplementation. This is a critical experiment demonstrating that the metabolic effects are mediated through the morphogen pathway. However, the rescue is 'partial' and the dose-response shows effects only at higher Chdl1 concentrations. The causal link (C5, C58) is strongly supported but the mechanism of how metabolism regulates morphogen expression remains unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C62",
+      "C63"
+    ],
+    "result": "The metabolic gradient reflects differences in cytosolic glucose fate rather than glycolytic-to-oxidative switching. The increased \u03c4bound lifetime and higher NADPH/NADH ratio in proximal HCs, along with higher Pkm2 expression and more alkaline pH, are consistent with differential routing of glucose through cytosolic pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims synthesize multiple lines of evidence (FLIM, TMRM, 2-NBDG, Pkm2 expression, pH measurements) to support the interpretation that the metabolic gradient reflects cytosolic glucose routing. The logic is sound and supported by citations (C62: Gr\u00fcning et al., 2011; Yang and Lu, 2015; Alfarouk et al., 2020; C63: Nandi et al., 2020; Zhang et al., 2019). However, these remain interpretations of correlative data rather than direct measurements of pathway flux.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C6",
+      "C7",
+      "C8",
+      "C16",
+      "C36",
+      "C41",
+      "C61"
+    ],
+    "result": "Background and context claims establish the biological significance and novelty of the study. These include the organization of tonotopy in vertebrate auditory systems, vulnerability of high-frequency HCs to damage, the timing of tonotopic specification (E6-E7.5), the role of Bmp7/Chdl1 gradients, and the lack of prior work on metabolism in inner ear development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims provide essential context and are supported by appropriate citations (C1, C6-C8, C36, C41) or represent accurate statements about the state of the field (C16). Claim C61 about novelty is justified given the comprehensive literature review. These are primarily literature-based claims that frame the study's significance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C17",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C78",
+      "C79",
+      "C81",
+      "C82"
+    ],
+    "result": "Literature review claims establish the broader context of metabolism in development and the specific biology of the basilar papilla. These include the role of metabolism in cell fate, metabolic reprogramming in various developmental systems, PPP function, HC development in the BP, and morphogen signaling in development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims are appropriately supported by citations to relevant literature and provide necessary background for interpreting the study's findings. They establish that metabolic regulation of development is a recognized phenomenon in other systems and provide specific details about BP development and morphogen signaling that contextualize the experimental results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C77",
+      "C80"
+    ],
+    "result": "Speculative claims about potential mechanisms and comparisons to prior work. These include the possibility that PPP-derived cholesterol might regulate HC electrical tuning and that metabolic perturbation mimics effects of altered Shh/Bmp7 signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C77 is explicitly speculative ('may also regulate') and represents a reasonable hypothesis based on known connections between PPP, cholesterol synthesis, and ion channel function, but lacks direct experimental support. Claim C80 makes a comparison to prior work (Son et al., 2015; Mann et al., 2014) that is reasonable but the phenotypic similarity doesn't prove mechanistic equivalence.",
+    "result_type": "MINOR"
+  }
+]

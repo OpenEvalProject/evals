@@ -1,0 +1,1839 @@
+{
+  "submission": {
+    "id": "4c05cb29-b55c-4969-a4bf-7d3677102339",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-04T02:21:30.463525Z",
+    "updated_at": "2025-12-04T02:21:30.463525Z"
+  },
+  "content": [
+    {
+      "id": "d41ca7be-fa28-4d59-bcf2-874dee260a23",
+      "submission_id": "4c05cb29-b55c-4969-a4bf-7d3677102339",
+      "content_type": "manuscript",
+      "content_text": "# Pupil size reflects activation of subcortical ascending arousal system nuclei during rest\n\n## Authors\n\n- Beth Lloyd<sup>1</sup> ([ORCID: 0000-0003-4034-8119](https://orcid.org/0000-0003-4034-8119)) \u2020\n- Lycia D de Voogd<sup>2</sup>\n- Ver\u00f3nica M\u00e4ki-Marttunen<sup>1</sup>\n- Sander Nieuwenhuis<sup>1</sup> ([ORCID: 0000-0003-2418-3879](https://orcid.org/0000-0003-2418-3879))\n\n### Affiliations\n\n1. Institute of Psychology, Leiden University Leiden Netherlands ([ROR:027bh9e22](https://ror.org/027bh9e22))\n2. Donders Institute, Centre for Cognitive Neuroimaging, Radboud University Nijmegen Nijmegen Netherlands ([ROR:016xsfp80](https://ror.org/016xsfp80))\n3. Behavioural Science Institute, Radboud University Nijmegen Netherlands ([ROR:016xsfp80](https://ror.org/016xsfp80))\n\n\u2020 Corresponding author\n\n## Abstract\n\nNeuromodulatory nuclei that are part of the ascending arousal system (AAS) play a crucial role in regulating cortical state and optimizing task performance. Pupil diameter, under constant luminance conditions, is increasingly used as an index of activity of these AAS nuclei. Indeed, task-based functional imaging studies in humans have begun to provide evidence of stimulus-driven pupil-AAS coupling. However, whether there is such a tight pupil-AAS coupling during rest is not clear. To address this question, we examined simultaneously acquired resting-state fMRI and pupil-size data from 74 participants, focusing on six AAS nuclei: the locus coeruleus, ventral tegmental area, substantia nigra, dorsal and median raphe nuclei, and cholinergic basal forebrain. Activation in all six AAS nuclei was optimally correlated with pupil size at 0\u20132 s lags, suggesting that spontaneous pupil changes were almost immediately followed by corresponding BOLD-signal changes in the AAS. These results suggest that spontaneous changes in pupil size that occur during states of rest can be used as a noninvasive general index of activity in AAS nuclei. Importantly, the nature of pupil-AAS coupling during rest appears to be vastly different from the relatively slow canonical hemodynamic response function that has been used to characterize task-related pupil-AAS coupling.\n\n## Introduction\n\nNeuromodulatory brainstem, midbrain, and basal forebrain nuclei that together form the core of the ascending arousal system (AAS) are situated deep in the brain. They have widespread projections to the cortex, making them ideally suited to alter cortical states and optimize task performance (Bunzeck and D\u00fczel, 2006; de Gee et al., 2017; Shine et al., 2021; Thiele and Bellgrove, 2018). Pupil diameter, under constant luminance conditions, has vastly been used as a proxy for activity of these subcortical nuclei (Joshi and Gold, 2020). Indeed, task-related activity of these nuclei is accompanied by changes in pupil size and its first-order derivative (i.e., rate of change), as evidenced by animal studies and functional magnetic resonance imaging (fMRI) studies in humans (Cazettes et al., 2021; de Gee et al., 2017; Murphy et al., 2014; Varazzani et al., 2015; Yang et al., 2021). Animal studies have also found pupil-AAS coupling of spontaneous fluctuations during rest (Joshi et al., 2016; Reimer et al., 2016). However, it is still largely unclear whether similar coupling can be found between resting-state fluctuations of pupil size and blood oxygen level-dependent (BOLD) signals in the human AAS. Assessing if and how activity in neuromodulatory brainstem, midbrain, and basal forebrain nuclei can be inferred from pupil size measurements is relevant for promoting our scientific and clinical understanding of AAS function.\n\nA small number of human resting-state fMRI studies have investigated the brain activity associated with fluctuations in pupil size (Breeden et al., 2017; M\u00e4ki-Marttunen and Espeseth, 2021; Murphy et al., 2014; Yellin et al., 2015) and pupil derivative (DiNuzzo et al., 2019; Schneider et al., 2016). Their results with respect to a coupling between pupil size and AAS activity are inconclusive, with most studies not reporting evidence for such a relationship. However, the majority of these studies did not focus on the AAS. Moreover, they did not include specific localization methods to delineate AAS regions of interest (ROIs) or correct for physiological sources of noise, such as cardiac and respiratory fluctuations. These approaches are important for reliable measurements in these subcortical nuclei (Brooks et al., 2013; Matt et al., 2019). To date, only Murphy et al., 2014 specifically investigated the relationship between pupil size and one AAS nucleus, namely the locus coeruleus (LC). The authors found a positive coupling between fluctuations in pupil size and activation in the LC during rest. To our knowledge, there have been no human fMRI studies so far that have reported a relationship between pupil size and other AAS nuclei during rest, despite the growing evidence from animal studies (Joshi et al., 2016; Reimer et al., 2016) speaking for such a relationship. Therefore, in this study, we aimed to investigate whether pupil size (and the pupil derivative) can be used as an index of activity in neuromodulatory AAS nuclei during rest.\n\nTo address this aim, we systematically examined simultaneous measurements of resting-state fMRI and pupil size from a large sample of healthy adults (N = 74). We monitored BOLD signal from a number of subcortical nuclei part of the AAS and implicated in the control of cortical arousal levels: the LC, the ventral tegmental area (VTA), dopaminergic substantia nigra (SN), the dorsal (DR) and median (MR) raphe nuclei, and the nucleus basalis of Meynert in the cholinergic basal forebrain (BF). Due to their size and location in the brain, studying these small nuclei using fMRI comes with a unique set of challenges (Forstmann et al., 2016; Liu et al., 2017; Matt et al., 2019). Here, we mitigated these challenges by implementing a number of methods, including multi-echo imaging to increase signal-to-noise ratio in subcortical structures (Mileti\u0107 et al., 2020; Puckett et al., 2018; Turker et al., 2021), neuromelanin-weighted T1 imaging for delineation of the LC (Clewett et al., 2016; Keren et al., 2015; M\u00e4ki-Marttunen and Espeseth, 2021; Priovoulos et al., 2018), optimized brainstem co-registration (ANTs SyN; Ewert et al., 2019), physiological noise regression to suppress respiratory and cardiac artifacts (Glover et al., 2000; Harvey et al., 2008), and no spatial smoothing of fMRI data (de Gee et al., 2017).\n\nAs a first analysis, we intended to reproduce the analyses from two previous studies that did (Murphy et al., 2014) and did not (Schneider et al., 2016) find AAS correlates of pupil size during rest. The analyses in these studies were performed under the assumption that the relationship between pupil size and resting-state BOLD activity in AAS nuclei is governed by the canonical hemodynamic response function (HRF). As we could not replicate previous findings, we reasoned it is possible that during rest, when there is no external stimulus driving neural activity, the temporal relation between pupil dilation and AAS activity does not follow an HRF-like waveform. Therefore, we began examining the temporal relationship between pupil time series and AAS-BOLD activation using various transfer functions based on the canonical HRF, taking into account that subcortical structures have been characterized by faster time-to-peak (TTP) of the HRF than the cortex (Lau et al., 2011; Lewis et al., 2018; Yen et al., 2011). It is possible that the HRF does not provide an adequate model of the relationship between resting-state fluctuations in pupil size and AAS BOLD activity. We therefore also explored cross-correlations between AAS BOLD activity and the unconvolved pupil time series, systematically varying the forward and backward lag between the two measures. Together, these analyses offer new insights into the use of pupil size as an index of activity in AAS regions.\n\n## Results\n\nThis section is organized as follows. We first report a couple of verification analyses aimed to ensure that we could replicate the resting-state correlations between pupil size and whole-brain BOLD patterns reported in previous studies and assess the signal quality within the subcortical nuclei. Then, we attempt to reproduce the pupil-LC coupling that was reported in Murphy et al., 2014 by applying their convolution approach and LC localization method, as well as by interrogating the signal within our group LC ROI. After this, we move on to report three key analyses of pupil-AAS coupling aimed at understanding the temporal relationship between the two as well as the nature of this relationship: (i) an analysis in which we account for region- and participant-specific HRF differences in the convolution approach of the pupil time series; (ii) an analysis in which we explore pupil-AAS coupling while systematically adjusting the TTP of the HRF; and (iii) a cross-correlation analysis and cross-spectral power density analysis in which we explore the possibility that, during rest, the temporal relationship between pupil size and AAS BOLD patterns is not mediated by the HRF typically used in event-related fMRI design.\n\n### Whole-brain pupil-BOLD patterns consistent with previous studies\n\nWe aimed to verify that our data showed the expected pupil-associated BOLD response patterns at the level of the cortex, cerebellum, and subcortical parts of the limbic system. To this end, we followed as closely as possible the approaches from two previous studies reporting pupil-BOLD coupling during rest (Murphy et al., 2014; Schneider et al., 2016) and indeed largely replicated their findings. First, following the approach by Schneider et al., 2016, we used pupil size (1 s shift) as a regressor in a GLM and convolved it with the canonical HRF (i.e., 6 s TTP). The assumption here is that the neural activity associated with spontaneous changes in pupil size is transformed into resting-state BOLD signal according to the same impulse response function as that driving neurovascular coupling during task performance. Indeed, we found positive correlations in the thalamus and negative correlations in the visual cortex and sensorimotor areas, as well as in the precuneus, cuneus, insula, superior temporal gyrus, and parahippocampal gyrus. These patterns of activation are consistent with those reported by Schneider et al., 2016 (Figure 1A and Table 1). Second, we carried out the analysis in line with Murphy et al., 2014, using pupil size (not shifted) as a regressor and convolving it with the canonical HRF (i.e., 6 s TTP) as well as its temporal and dispersion derivatives (Figure 1B and Table 2). Adding these derivatives allows the timing of the HRF response peak and the width of the HRF response to vary across the whole brain. Here, we found significant clusters in the visual cortex, the insula, the anterior cingulate gyrus, and the inferior frontal gyrus, consistent with what was reported by Murphy et al., 2014. Overall, we found pupil-related BOLD response patterns across the whole brain that were highly consistent with the ones reported by the previous two studies.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/84822/elife-84822-fig1-v1.jpg)\n\n**Figure 1.:** Neural correlates of pupil size from the analysis using the convolution approach (A) reproduced from Figure 1B of Schneider et al., 2016 and (B) reproduced from Figure 2A of Murphy et al., 2014. Note that we only refer to the red and yellow activation in the figure from Murphy et al., 2014. Statistical parametric maps are thresholded at p<0.001, uncorrected, for visualization purposes only. Whole-brain cluster-level family-wise error (FWE)-corrected inferential statistics, in MNI space, are reported in Tables 1 and 2 (n = 70). Statistical maps used to generate this figure is available in Figure 1\u2014source data 1.\n\n**Table 1.**\n Regions showing pupil-BOLD coupling using the convolution methods from Schneider et al., 2016.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th colspan=\"2\">Cluster</th>\n    </tr>\n    <tr>\n      <th></th>\n      <th>K</th>\n      <th>pcorr</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Positive</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Thalamus (R), posterior cingulate cortex (R/L)</td>\n      <td>871</td>\n      <td>&lt;0.001</td>\n    </tr>\n    <tr>\n      <td>Rectus (L)</td>\n      <td>199</td>\n      <td>0.010</td>\n    </tr>\n    <tr>\n      <td>Cerebellum (R)</td>\n      <td>142</td>\n      <td>0.043</td>\n    </tr>\n    <tr>\n      <td>Cerebellum crus (L)</td>\n      <td>250</td>\n      <td>0.003</td>\n    </tr>\n    <tr>\n      <td>Negative</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cerebellum crus (R/L), cerebellum 6 (R/L), cerebellum 4/5 (R/L), lingual gyrus (R/L), calcarine (R/L), fusiform gyrus (R/L), cuneus (R/L), precuneus (R/L), cerebellum 4+5 (L), cerebellar vermis, hippocampus (R/L), parahippocampal gyrus (R), amygdala (R/L), thalamus (R), superior occipital gyrus (R/L), middle occipital gyrus (R/L), inferior occipital gyrus (R/L), superior parietal gyrus (L), inferior temporal gyrus (R/L), middle temporal gyrus (R/L), superior temporal gyrus (R/L), insula (R), postcentral gyrus (L), precentral gyrus (L), paracentral lobule (R/L), supplementary motor area (R/L), middle cingulate gyrus</td>\n      <td>65223</td>\n      <td>&lt;0.001</td>\n    </tr>\n  </tbody>\n</table>\n\n_Reported clusters survived whole-brain family-wise error (FWE) correction at the cluster level (pFWE=0.05). Source data for Table 1 available in Figure 1\u2014source data 1.R, right; L, left; pcorr, whole-brain-corrected cluster p-values; k, cluster size; BOLD, blood oxygen level-dependent._\n\n**Table 2.**\n Regions showing pupil-BOLD coupling using convolution methods from Murphy et al., 2014.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th colspan=\"2\">Cluster</th>\n    </tr>\n    <tr>\n      <th></th>\n      <th>K</th>\n      <th>pcorr</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Middle occipital gyrus (R/L), superior occipital gyrus (R/L), calcarine gyrus (R/L), cuneus (R/L), precuneus (R/L), angular gyrus (R/L), fusiform gyrus (R/L), cerebellum (R/L), middle temporal pole (R/L), inferior temporal pole (L), insula (R), inferior parietal lobule (R/L), superior parietal lobule (L), postcentral gyrus (R/L), middle frontal gyrus (R/L), medial frontal gyrus (R/L), inferior frontal gyrus (R/L), superior frontal gyrus (R/L), posterior cingulate gyrus, middle cingulate gyrus, anterior cingulate gyrus, supplementary motor area (R/L), middle frontal orbital (R/L), inferior frontal orbital (R/L), cerebellum crus II (R/L), cerebellum crus I (R/L), cerebellum 8 (R/L), cerebellum 9 (R/L), Pons</td>\n      <td>91471</td>\n      <td>&lt;0.001</td>\n    </tr>\n    <tr>\n      <td>Rectus (R/L)</td>\n      <td>146</td>\n      <td>0.010</td>\n    </tr>\n  </tbody>\n</table>\n\n_Reported clusters survived whole-brain family-wise error (FWE) correction at the cluster level (pFWE=0.05). Source data for Table 2 is available in Figure 1\u2014source data 1.R, right; L, left; pcorr, whole-brain-corrected cluster p-values; k, cluster size;.BOLD, blood oxygen level-dependent._\n\nFollowing Murphy et al., 2014 approach, we also inspected pupil-associated activity in the LC. However, we did not find significant voxels when using our group LC mask as an ROI or when we applied the more liberal mask ( Keren et al., 2009) used by Murphy et al., 2014. Thus, contrary to Murphy et al., 2014, we were unable to replicate pupil-LC BOLD coupling using the same convolution methods.\n\n### Assessment of the quality of subcortical fMRI data\n\nTo assess the quality of the subcortical functional data we extracted the temporal signal-to-noise ratio (tSNR) from each ROI (see \u2018Materials and methods\u2019). The average tSNR across the AAS ROIs (Figure 2B; range: 23.3\u201372.9) and cortical regions (range: 49.6\u2013106.3) were in line with previous reports (Brooks et al., 2013, Figure 1: brainstem range: ~1\u201350 and cortex range ~50\u2013112; Singh et al., 2022, Figure 2B: brainstem range: 0\u201350, cortex range: 0\u201350). We also replicated a recently reported pattern of positive (partial) correlations among the signal fluctuations in each pair of subcortical ROIs, controlled for activity in the pons (Figure 2C; van den Brink et al., 2019; see also Singh et al., 2022). Only the correlation between the DR and VTA was negative. Therefore, we are confident that the data had sufficient tSNR in our AAS ROIs to be able to assess pupil-AAS coupling.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/84822/elife-84822-fig2-v1.jpg)\n\n**Figure 2.:** (A) All subcortical ROIs overlaid on the group T1 template. (B) Individual data points showing the temporal signal-to-noise ratio for each ROI for session 1 (left) and session 2 (right; black points indicate the mean). (C) Correlation matrix showing that activity in subcortical nuclei co-varied positively with activity in other subcortical nuclei, with the strongest coupling present between the VTA and SN, which is to be expected given their close proximity, and the weakest (negative correlation) between the VTA and DR. Note: correlations were FDR-corrected and controlled for activity in the pons (n = 70). (D) FSE image of an example participant. Hyperintensities corresponding to the LC are visible in the yellow box (top). Using the FSE images, the LC (red) was manually delineated on the individual level following established protocols (Clewett et al., 2016; Mather et al., 2017). The graph shows the LC contrast-to-noise ratio for all participants (n = 67). The gray dot indicates the grand mean. LC, locus coeruleus; VTA, ventral tegmental area; SN, substantia nigra; DR, dorsal raphe; MR, medial raphe; BF, basal forebrain; ACC, anterior cingulate cortex; OCC, calcarine sulcus; CNR, contrast-to-noise ratio; ROI, region of interest; fMRI, functional magnetic resonance imaging; FDR, false discovery rate. Source data used to generate this figure is available in Figure 2\u2014source data 1.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/84822/elife-84822-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Individual T1 images (T1native space) were submitted to a template building algorithm where they were aligned and used to generate a group average (T1template). (B) Individual T1 images (T1native space) were coregistered to the T1 template in a separate coregistration step, generating individual T1 images in group space (T1group space). SyN, symmetric normalization.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/84822/elife-84822-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) The sample-specific template T1. (B) The average of all individual warped T1 images. (C) The standard deviation of all individual warped T1 images. (D) Individual examples displaying the ascending arousal system (AAS) region of interest (ROI) masks on top of the individual warped T1.\n\n### No pupil-AAS coupling using region- and participant-specific estimates of the HRF\n\nThe methods that have previously been used to examine co-fluctuations between pupil size and fMRI BOLD patterns worked under the assumption that the shape of the HRF during rest is homogeneous across the whole brain (Breeden et al., 2017; DiNuzzo et al., 2019; Schneider et al., 2016; Yellin et al., 2015). This assumption may not be correct, and because even a 1 s latency difference between assumed HRF and actual HRF can have a significant impact on fMRI results (Wall et al., 2009), it may be important to account for regional and individual differences (Bailes et al., 2023; Handwerker et al., 2004) in the shape of the HRF. Indeed, subcortical structures have been characterized by faster BOLD responses (TTP 4\u20135 s; Lau et al., 2011; Lewis et al., 2018; Yen et al., 2011) compared to the cortex (TTP 5\u20136 s; Lewis et al., 2018; Friston et al., 2000). Therefore, we next estimated ROI-specific and participant-specific HRFs using an approach in which spontaneous pseudo-events were identified in our resting-state data and then aligned to determine the delay between the pseudo-events and corresponding BOLD signatures (Rangaprakash et al., 2018; Wu et al., 2013). The number of detected pseudo-events per ROI is shown in Figure 3C. Note that for some participants only one session was used to estimate these HRFs, so the number of detected pseudo-events for these participants tended to be smaller.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/84822/elife-84822-fig3-v1.jpg)\n\n**Figure 3.:** (A) One participant\u2019s pre-processed LC BOLD signal (concatenated across the two sessions), evaluated against a chosen threshold (>1 SD) to extract onsets of spontaneous neural events (indicated in yellow). (B) Estimated HRFs for each participant and ROI. Black lines indicate the average across participants. (C) The number of spontaneous neural events that were used to estimate the region- and participant-specific HRFs. Black dots indicate the mean. (D) TTP of the HRF for each participant and ROI. Black dots indicate the average across participants. Overview of the pupil data processing pipeline of one randomly chosen participant for pupil size (E) and the pupil derivative (F). The plots portray the raw pupil data (blue), the pupil time series down-sampled to the TR (red), and the convolved pupil time series (for LC HRF, green). The extracted t-values from the first-level resting-state HRF analysis for pupil size (G) and the pupil derivative (H). p-Values refer to one-sample t-tests (difference from zero; FDR-corrected; n = 70). LC, locus coeruleus; VTA, ventral tegmental area; SN, substantia nigra; DR, dorsal raphe; MR, median raphe; BF, basal forebrain; ACC, anterior cingulate cortex; OCC, calcarine sulcus; HRF, hemodynamic response function; BOLD, blood oxygen level-dependent; TTP, time-to-peak; FDR, false discovery rate. Source data used to generate this figure available in Figure 3\u2014source data 1.\n\nAfter carrying out pairwise comparisons, we found that, as expected, the TTP of the estimated HRFs was significantly faster for all subcortical AAS ROIs than for each of the two cortical ROIs (Msubcortical ROIs = 4.7 s, SDsubcortical ROIs = 0.6 s, Mcortical ROIs = 5.4 s, SDcortical ROIs = 0.8 s; Figure 3D). The pupil-BOLD analysis using these specific HRFs, however, revealed no significant pupil-AAS correlations (Figure 3G and H). We only found that pupil size correlated negatively with activation in the OCC (pcorr<0.001 [pupil size], pcorr=0.018 [pupil derivative], false discovery rate [FDR]-corrected). Note that the negative sign of this correlation is consistent with what we reported above and with previous reports linking pupil size to decreased activity in the visual system (Schneider et al., 2016; Yellin et al., 2015).\n\nIn sum, the use of region- and participant-specific HRFs also did not result in significant pupil-AAS coupling. Importantly, by focusing on pseudo-events in the fMRI data, this approach still assumes that neurovascular coupling during rest (and other passive conditions) is characterized by the typical sluggish HRF used in event-related fMRI design.\n\n### Positive pupil-AAS coupling using HRFs with rapid time-to-peaks\n\nSince the analysis strategy so far unexpectedly did not result in pupil-AAS coupling, we let go of the assumption of a relatively slow HRF similar to that driving neurovascular coupling during task performance. Therefore, we further examined a potential relationship between pupil and AAS ROIs by examining how systematically varying the TTP (from 1 s to 6 s) of the default canonical HRF affected the coupling between pupil dynamics and our AAS ROIs. This analysis was inspired by a recent animal study (Pais-Rold\u00e1n et al., 2020) showing that pupil-BOLD signal coupling dynamics vary across time.\n\nWe found that for almost all AAS ROIs the strength of pupil-BOLD coupling differed across TTPs (main effect of TTP; LC: p<0.001; VTA: p<0.001; SN: p<0.001; MR: p=0.043; BF: p=0.009, FDR-corrected for nine ROIs). The overall pattern shows that coupling between pupil size and AAS BOLD patterns increases with earlier TTPs. Specifically, we found positive correlations for all AAS regions at earlier TTPs (especially the 1 s [Figure 4B] and 2 s TTPs) but no significant correlations (LC, VTA, SN, DR, MR) at later TTPs (5\u20136 s; Figure 4A). For the OCC ROI, we found a positive correlation at the 1 s TTP, followed by a shift to negative correlations at later TTPs (4\u20136 s), which is in line with previous work (Breeden et al., 2017; Schneider et al., 2016; Yellin et al., 2015) and the results we reported above (\u2018Whole-brain pupil-BOLD patterns consistent with previous studies\u2019). The ACC correlated positively with pupil size at predominantly early TTPs (1\u20134 s; Figure 4CD), similar to the AAS ROIs, and in line with pupil-BOLD coupling in default-mode network areas (Yellin et al., 2015). To ensure the robustness of these findings, we repeated the analyses for each session separately. The pattern of results was visually and statistically similar between the two sessions, and in line with the results when both sessions were combined (Figure 4\u2014figure supplement 1).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/84822/elife-84822-fig4-v1.jpg)\n\n**Figure 4.:** Graphs show the extracted t-statistics as a function of the systematically adjusted TTP for each participant in the subcortical ROIs (A) and the validation and control ROIs (D). p-Values refer to one-sample t-tests (difference from zero; FDR-corrected). Black dots indicate the mean. (B) Statistical maps showing pupil-BOLD correlations in the subcortex for the 1 s TTP. (c) Statistical maps showing unsmoothed pupil-BOLD correlations across the cortex for each TTP (1\u20136 s). All statistical maps were thresholded at p<0.005 (uncorrected) for visualization purposes only (n = 70). LC, locus coeruleus; VTA, ventral tegmental area; SN, substantia nigra; DR, dorsal raphe; MR, median raphe; BF, basal forebrain; ACC, anterior cingulate cortex; OCC, calcarine sulcus; BOLD, blood oxygen level-dependent; FDR, false discovery rate; TTP, time-to-peak; HRF, hemodynamic response function; ROI, region of interest. Source data used to generate this figure is available in Figure 4\u2014source data 1.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/84822/elife-84822-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Graphs show the individual t-statistics (black point indicates the mean) of the pupil size-BOLD signal correlation as a function of the systematically adjusted TTP for all ROIs, p-Values refer to one-sample t-tests (difference from zero; FDR-corrected; n = 70). These results show that smaller ROIs, in particular the LC, DR, and MR, are more prone to a drop in statistical power when the data is halved. LC, locus coeruleus; VTA, ventral tegmental area; SN, substantia nigra; DR, dorsal raphe; MR, medial raphe; ACC, anterior cingulate cortex; OCC, calcarine sulcus; BOLD, blood oxygen level-dependent; FDR, false discovery rate; TTP, time-to-peak; HRF, hemodynamic response function; ROI, region of interest. Source data used to generate this figure is available in Figure 4\u2014source data 2.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/84822/elife-84822-fig4-figsupp2-v1.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A) Graphs show the individual t-statistics (black point indicates the mean) of the pupil derivative-BOLD signal correlation as a function of the systematically adjusted TTP for all ROIs, p-Values refer to one-sample t-tests (difference from zero; FDR-corrected). (B) The corresponding whole-brain associations between BOLD signal and the pupil derivative as a function of the TTP of the HRF (1 s TTP: top panel to 6 s TTP: bottom panel). The warm colors reflect areas in which BOLD activity is positively correlated with pupil derivative. The cold colors reflect areas where BOLD activity is negatively correlated with the pupil derivative. Both positive and negative contrast maps were sampled at p<0.005 (uncorrected) for visualization only (n = 70). LC, locus coeruleus; VTA, ventral tegmental area; SN, substantia nigra; DR, dorsal raphe; MR, medial raphe; ACC, anterior cingulate cortex; OCC, calcarine sulcus; BOLD, blood oxygen level-dependent; FDR, false discovery rate; TTP, time-to-peak; HRF, hemodynamic response function; ROI, region of interest. Source data used to generate this figure is available in Figure 4\u2014source data 3.\n\nSimilar analyses for the pupil derivative also showed significant differences in the strength of pupil-BOLD coupling across the TTPs for the VTA (p=0.012), SN (p=0.022), DR (p=0.002), ACC (p=0.009), and OCC (p<0.001; FDR-corrected for nine ROIs). The overall pattern and follow-up t-tests revealed similar but attenuated effects in comparison to pupil size (Figure 4\u2014figure supplement 2A). The most prominent exception was the OCC, which showed a curvilinear relationship with largest correlations for intermediate TTPs (2\u20135 s), which is also visible upon inspecting the whole-brain maps in Figure 4\u2014figure supplement 2B. The same analyses carried out for the control region in the pons revealed no main effect of TTP for pupil size or the pupil derivative, nor were there any positive or negative associations with pupil size or the pupil derivative for any TTP, attesting to the specificity of the pupil-BOLD associations found in our AAS and cortical ROIs. Statistical parametric maps including whole-brain results for all TTPs are shown in Figure 4C and Figure 4\u2014figure supplement 2B.\n\nObserving Figure 4, it seems that the LC exhibited greater inter-individual variability in pupil-BOLD signal correlations than most other ROIs. To explore the reasons for these differences, we investigated the correlation between a participant\u2019s t-statistic (i.e., for the LC at TTP = 1 s) and the size of their LC mask, as well as the tSNR in the LC. However, we did not find any significant correlation between the t-statistic and mask size (Spearman\u2019s rho(68) = 0.11, p=0.38) or tSNR (session 1: Spearman\u2019s rho(68) = 0.12, p=0.34; session 2: Spearman\u2019s rho(68) = \u20130.06, p=0.63). Additionally, we examined whether participants with a negative correlation in one session also exhibited a negative correlation in the other session, but this was not the case (Spearman\u2019s rho(54) = 0.18, p=0.19; n = 56 [participants with both sessions included]). Therefore, it remains an open question what drives these individual differences in pupil-LC BOLD signal correlations.\n\nThese exploratory analyses suggest that positive coupling between fluctuations in pupil diameter and AAS BOLD signal can be found when using a shorter transfer function (i.e., using TTPs of 1\u20132 s), but not with the broad HRFs that are typically used to model event-related BOLD responses (i.e., with a longer TTP; Friston et al., 2000).\n\n### Positive pupil-AAS coupling when BOLD patterns closely follow pupil fluctuations\n\nIn our next analysis, we wanted to release the assumption that BOLD responses associated with pupil-size changes would resemble an HRF. Therefore, we correlated the BOLD signal from our AAS ROIs with the unconvolved pupil vector using a cross-correlation approach (Pais-Rold\u00e1n et al., 2020; Yellin et al., 2015). This method also allowed us to interrogate the pupil-BOLD coupling in both time directions. To that end, we shifted the pupil vector 8 s backward and forward, in steps of 2 s, with negative lags (backward) corresponding to pupil changes preceding the BOLD signal and positive lags (forward) corresponding to pupil changes succeeding the BOLD signal (Figure 5A and B).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/84822/elife-84822-fig5-v1.jpg)\n\n**Figure 5.:** Pupil-BOLD time-series cross-correlations for all AAS nuclei ROIs (A) and control ROIs (B). Negative (positive) time lags indicate that the pupil signal precedes (follows) the BOLD signal. p-Values refer to one-sample t-tests for the corresponding time bin. (C) Statistical comparisons of pupil size-BOLD signal coupling at lag = 0 s before (full) and after regressing out LC BOLD signal (partial). Statistics refer to two-tailed t-tests (FDR-corrected) comparing the full and partial correlation coefficients. Black lines (A, B) and bar plots (C) indicate the grand mean and shaded regions (A, B) and error bars (C) indicate \u00b1 standard error of the mean (SEM). Black font and black dots indicate significant time bins (p<0.05, FDR-corrected) (n = 70). BOLD, blood oxygen level-dependent; AAS,ascending arousal system; ROI, region of interest; LC,locus coeruleus; FDR, false discovery rate. Source data used to generate this figure is available in Figure 5\u2014source data 1.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/84822/elife-84822-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** The BOLD time series was shifted forward and backward by 8 s in steps of 2 s. Positive (negative) time lags indicate that the pupil signal precedes (follows) the BOLD signal. Black lines indicate the grand mean, and shaded regions indicate the standard error of the mean. Black dots indicate significant one-sample t-tests (p<0.05, FDR-corrected; n = 70). LC, locus coeruleus; VTA, ventral tegmental area; SN, substantia nigra; DR, dorsal raphe; MR, medial raphe; ACC, anterior cingulate cortex; OCC, calcarine sulcus; BOLD, blood oxygen level-dependent; FDR. false discovery rate. Source data used to generate this figure available in Figure 5\u2014source data 1.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/84822/elife-84822-fig5-figsupp2-v1.jpg)\n\n**Figure 5\u2014figure supplement 2.:** The BOLD time series was shifted forward and backward by 8 s in steps of 2 s. Positive (negative) time lags indicate that the pupil signal precedes (follows) the BOLD signal. Shaded regions indicate the standard error of the mean. Black dots indicate significant one-sample t-tests (p<0.05, FDR-corrected; n = 70). LC, locus coeruleus; VTA, ventral tegmental area; SN, substantia nigra; DR, dorsal raphe; MR, medial raphe; ACC, anterior cingulate cortex; OCC, calcarine sulcus; BOLD, blood oxygen level-dependent; FDR, false discovery rate. Source data used to generate this figure is available in Figure 5\u2014source data 2.\n\nCritically, and in line with the TTP analysis, we found significant positive pupil-BOLD correlations for all AAS ROIs (except the DR), with the strongest correlations occurring at lag 0 (Figure 5A). These results again suggest that the relationship between pupil size and AAS activity is temporally close, rather than following the shape of an HRF with a 5 or 6 s TTP. In addition, these patterns of results appeared to be stable across the two sessions (Figure 5\u2014figure supplement 1). For the pupil derivative (Figure 5\u2014figure supplement 2), we observed a similar pattern in SN and VTA, with stronger correlations at lag 0, although overall the correlation coefficients were attenuated compared to those for pupil size, or not present in some AAS ROIs (LC, MR, and BF).\n\nFor comparison, we also computed cross-correlations between pupil size and BOLD signal extracted from our validation and control ROIs (ACC, OCC, pons; Figure 5B). The OCC showed strong negative correlations at lags +4 to +8 s, similar to previous studies (Murphy et al., 2014; Schneider et al., 2016), and in line with the replication and TTP analyses reported above. However, the OCC also showed a positive correlation with pupil size at short lags (\u20132 s to +2 s). Similarly, we found that both ACC and OCC correlated most strongly with the pupil derivative (Figure 5\u2014figure supplement 2) at relatively short positive lags (0 s to +4 s), with a shift to a strong negative correlation at maximum positive lags (+8 s), especially in the OCC.\n\nTo determine whether the observed pupil-AAS BOLD signal cross-correlation results were independent of the LC, we recomputed the correlations between pupil size and BOLD signal after partialing out the contribution of the LC BOLD signal using linear regression. As shown in Figure 5C, partialing out the contribution of the LC resulted in a slight but significant drop for the BF (p=0.028). The signal from the VTA, SN, MR, and BF remained significantly correlated with pupil size (ps<0.030). These results contribute further evidence to the notion that pupil size is not selectively driven by the LC, but that a broader network of AAS nuclei is involved.\n\nTogether, the TTP analysis and cross-correlation analysis yield essentially the same outcome, suggesting that no HRF convolution is needed to characterize the relationship between pupil size and AAS BOLD patterns during rest.\n\n### Pupil-AAS coupling is largely driven by oscillations in low-frequency band\n\nFinally, to better understand the nature of the pupil-AAS coupling, we carried out an exploratory cross-spectral density analysis (Figure 6A, B). The cross-power spectral density is the Fourier transform of the cross-correlation functions reported above, and hence expresses the relationship between the pupil and AAS signals in the frequency domain. To determine which frequency bands were driving the observed positive pupil-AAS correlations, we calculated the cross-spectral power density (see \u2018Materials and methods\u2019) of the pupil size time series and average BOLD time series extracted from each ROI. A simple peak detection indicated that the correlations for most AAS nuclei and both cortical ROIs (ACC and OCC) were largely driven by frequencies between 0.04 and 0.09 Hz (LC: 0.09; VTA: 0.04; SN: 0.03; DR: 0.008; MR: 0.04; BF: 0.04; ACC: 0.04; OCC: 0.07; Figure 6AB).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/84822/elife-84822-fig6-v1.jpg)\n\n**Figure 6.:** Cross-spectral power density for subcortical ROIs (A) and cortical ROIs (B) averaged across participants. Black lines indicate the grand mean and shaded regions indicate \u00b1 SEM (n = 70). LC, locus coeruleus; VTA, ventral tegmental area; SN, substantia nigra; DR, dorsal raphe; MR, median raphe; BF, basal forebrain; ACC, anterior cingulate cortex; OCC, calcarine sulcus; ROI, region of interest. Source data used to generate this figure is available in Figure 6\u2014source data 1.\n\n## Discussion\n\nIn this study, we examined whether, during rest, non-luminance-related spontaneous fluctuations in pupil size were associated with fluctuations in BOLD signal in nuclei part of the AAS. We found a positive correlation between pupil size and BOLD signal in all of the AAS ROIs: LC, VTA, SN, DR, MR, and (sublenticular) BF. This finding is in line with recent animal studies (Joshi et al., 2016; Reimer et al., 2016) indicating that pupil changes reflect activity in multiple neuromodulatory systems, not only the noradrenergic system. Critically, using two different methodological approaches, we found that pupil-AAS coupling was strongest when the two signals were assumed to occur close in time. This means that during rest, unlike in response to task events (de Gee et al., 2017), BOLD signal fluctuations in AAS nuclei immediately follow fluctuations in pupil size. This correlation was largely driven by slow oscillations (i.e., ~0.05\u20130.1 Hz) in both measures. Together, our results suggest that pupil size can be used as a noninvasive readout of AAS activity and reveal new insights into the temporal dynamics of pupil-AAS coupling during rest.\n\nWe found robust positive correlations between pupil size and BOLD signal in five of our AAS ROIs: LC, VTA, SN, MR, and (sublenticular) BF. The correlations with the VTA, SN, MR, and BF BOLD signals remained significant after controlling for the effect of the LC BOLD signal, suggesting that these AAS nuclei have independent influences on pupil size. The positive relationship with pupil size was less robust for the DR, and only significant in the TTP analyses, perhaps because this area had lower tSNR than the other subcortical ROIs. Thus, unlike what findings from previous studies (e.g., Murphy et al., 2014) may have implicitly suggested, the coupling between pupil size and activation of the AAS is not specific for the LC. Our findings contribute to a growing body of literature showing a more general role for AAS nuclei in driving pupil size changes. Specifically, our findings are consistent with recent animal studies that found co-fluctuations in pupil size and LC and BF activity during rest (Joshi et al., 2016; Reimer et al., 2016); with studies showing that optogenetic activation of the LC or DR increases pupil size (Breton-Provencher and Sur, 2019; Cazettes et al., 2021); and with human task-related fMRI work showing positive correlations between event-related pupil responses and BOLD responses in the LC, VTA, and BF (de Gee et al., 2017). Unfortunately, it has become common practice for researchers to interpret task-related pupillometry data in terms of the role of the LC in cognitive and brain function. However, our findings reinforce previous arguments (Joshi and Gold, 2020) that changes in pupil size should not be used to infer a selective role for the LC.\n\nThe temporal relationship between pupil size and AAS BOLD response patterns was different than we had expected based on reports from previous resting-state and event-related fMRI studies (de Gee et al., 2017; Murphy et al., 2014). Namely, we found that BOLD signal in the AAS closely followed the corresponding pupil fluctuations. These results were corroborated by a series of analyses in which we convolved the pupil time series with HRFs with systematically varied TTP (1\u20136 s). Pupil time series that were convolved with the canonical HRF (TTP = 6 s) or region-specific HRFs based on a point process approach were not significantly related to AAS activation. Instead, maximal and significant pupil-AAS coupling was found using HRFs with TTPs of 1\u20133 s. In addition, cross-correlations between the unconvolved pupil time series and AAS BOLD time series similarly revealed maximum correlations when the signals occurred close in time (at lags of 0\u20132 s). For the pupil derivative, we obtained similar results, with strongest cross-correlations around lag 0 s to +2 s, although the correlation coefficients were overall attenuated and only remained significant in the VTA and SN. Our findings are in line with previous research that has suggested that subcortical regions (Lewis et al., 2018) and AAS nuclei (de Gee et al., 2017) are characterized by faster event-related hemodynamic responses than cortical regions. However, our findings suggest an even closer temporal relationship between pupil size and BOLD response patterns in AAS nuclei during rest. Therefore, these findings, although correlational, have implications for our understanding of the time scale at which AAS regions might drive changes in pupil diameter.\n\nFurthermore, our findings may provide a reason why most previous human resting-state pupil-fMRI studies (e.g., Breeden et al., 2017; Schneider et al., 2016; Yellin et al., 2015) did not find or report pupil-AAS coupling. Namely, these studies only investigated pupil-BOLD coupling with longer time lags between pupil changes and corresponding BOLD response patterns. Using standard TTPs, we (broadly) replicated previously reported associations between pupil size and cortical BOLD response patterns (e.g., negative coupling with the visual cortex, positive coupling with the thalamus and posterior cingulate cortex; e.g., Murphy et al., 2014; Schneider et al., 2016; Yellin et al., 2015). However, we did not find evidence that standard TTPs characterized the coupling between resting-state pupil size and AAS activation. Although one of these previous studies did report pupil-LC coupling (Murphy et al., 2014), we were unable to replicate this finding in our data, despite using the same convolution methods, LC mask, and other methodological details of this study, and despite a much larger sample size (70 vs. 14 included participants). Although we cannot make a direct comparison between the shape of human and mouse HRFs, a recent study in rats (Pais-Rold\u00e1n et al., 2020) also found temporally close positive coupling (i.e., 1 s TTP) between resting-state pupil dynamics and BOLD signal in specific areas in the brainstem including the A5 noradrenergic cell group (which projects to the spinal cord). This study, however, did not find evidence for a coupling between pupil dynamics and any of the AAS nuclei. Although this seems inconsistent with our findings, note that the rats in this study were anesthetized. Preliminary evidence suggests that behavioral states can strongly modulate pupil-AAS coupling (Megemont et al., 2022), and therefore it is possible that in an anesthetized state pupil-AAS coupling is reduced or absent.\n\nOur findings raise the question how the neuronal activity in AAS nuclei that contributes to resting-state pupil fluctuations is coupled to the BOLD signal in these areas. The main frequency band that drove our pupil-AAS coupling was ~0.05\u20130.1 Hz. Interestingly, recent work in the mouse cortex has shown that the ultra-slow (~0.1 Hz) BOLD fluctuations that are characteristic of resting-state fMRI data are entrained by ultra-slow vasomotor oscillations that lead to rhythmic changes in the diameter of brain arterioles. These vasomotor oscillations, in turn, are entrained by rhythmic local neuronal activity in the same ultra-low-frequency band (Drew et al., 2020; Mateo et al., 2017). These findings beg the question whether this neurovascular coupling sequence may be responsible for our findings. However, in the mouse brain this sequence, from neuronal activity and vasomotion to blood oxygenation levels, was estimated to last approximately 2.6 s (Mateo et al., 2017). This seems inconsistent with the 0\u20132 s interval between our estimated timing of the AAS neuronal activity underlying pupil fluctuations and the timing of corresponding AAS BOLD signals. Future work in animal models should therefore examine the physiological basis of these seemingly close temporal relationships between activity of AAS nuclei and corresponding changes in pupil size by simultaneously measuring pupil size changes and rhythmic BOLD fluctuations during awake rest.\n\nOur study has several potential limitations. First, although our EPI sequence had a higher spatial resolution (2 mm isotropic) than previous studies linking pupil size to BOLD (e.g., 3.5 mm isotropic in Murphy et al., 2014), imaging small subcortical structures at this conventional spatial resolution may have led to partial-volume averaging (Forstmann et al., 2016; Liu et al., 2017), especially in the LC, the smallest of our ROIs. To mitigate this concern, we did not apply spatial smoothing to the EPI data. Our confidence in the LC imaging data reported here is also bolstered by the fact that the LC showed the same pattern of results as other, much larger nuclei, including the VTA, SN, and BF, that are less susceptible to partial-volume averaging effects. We also note that a further increase in spatial resolution at 3T would be accompanied by a dramatic drop in signal-to-noise ratio (Murphy et al., 2007), and therefore would not per se lead to a better signal from the AAS regions. Although future studies combining pupillometry with ultra-high-field fMRI (e.g., 7T) could circumvent this problem, measuring pupil size in ultra-high-field scanners is still challenging. A second potential limitation concerns the proximity of some of the subcortical ROIs to air- and cerebrospinal fluid-filled cavities as well as major arteries, making them particularly prone to movement and other sources of physiological noise (Brooks et al., 2013). To mitigate this concern, we included an extensive physiological noise correction model, accounting for measured cardiac and respiratory signal components as well as residual signal from the fourth ventricle. Furthermore, if the BOLD signal in AAS nuclei was largely driven by noise, this could not explain the robust temporal relationship between AAS BOLD and pupil size, and the selective absence of pupil-BOLD coupling in the pons, our control region that is also susceptible to physiological noise artifacts. A third drawback is that our analyses were limited by the temporal resolution of our fMRI data. Due to our 2 s TR, we were unable to interrogate potentially meaningful, faster pupil-BOLD correlations. Future studies using ultra-high-field fMRI and/or simultaneous imaging techniques (Barth et al., 2016; Lewis et al., 2016) can speed up image acquisition and assess the presence of pupil-BOLD correlations at a faster timescale.\n\nIn conclusion, we show that spontaneous changes in pupil size that occur during rest reflect activity in a variety of nuclei that are part of the AAS. This suggests that pupil size can be used as a noninvasive and general index of AAS activity, in contrast to previous work suggesting a selective role for the LC in arousal-related pupil size changes. However, the nature of pupil-AAS coupling during rest appears to be vastly different from task-related pupil-AAS coupling, which has previously been modeled using a canonical HRF. Together, our findings provide new insights into the nature and temporal dynamics of AAS-linked pupil size fluctuations.\n\n## Materials and methods\n\nThis study was preregistered on the Open Science Framework before data analysis (https://osf.io/5rjcf/). Note that preregistration occurred after data collection; due to circumstances surrounding the global pandemic, already collected data was used to address our hypotheses. As we could not replicate previous findings, we needed to deviate from the preregistration. When we deviated from the preregistration, this will be explicitly mentioned below.\n\n### Participants\n\nSeventy-four right-handed participants were recruited from New York University and completed two resting-state sessions on two consecutive days. Two participants were excluded entirely and one session for one participant was excluded due to technical issues with the scanner, leaving a sample size of 72 participants for the current study (mean age: 22.5 y; age range: 18\u201333 y; sex: 39 females, 33 males; gender: 39 females, 33 males, ethnicity: Asian/Asian American: 23, Asian: 1, Black/African American: 2, Caucasian/White/European American: 23, Hispanic non-white: 9, Latin: 1, Middle Eastern: 1, Mixed: 6, unknown: 6). The resting-state and pupil data were collected in the context of a larger study on extinction learning not published yet. On both days, the resting-state sessions were collected before the participants carried out a separate event-related fMRI task. The sample size (n = 72) was determined based on a between-group difference within the task that was conducted following the resting-state session used in this study. Exclusion criteria for participation were as follows: current treatment or treatment in the last year of psychiatric, neurological, or endocrine disease, current treatment with any medication, average use of >3 alcoholic beverages daily, average use of recreational drugs, habitual smoking, uncorrected vision, and contraindications for MRI. The two resting-state sessions were part of a larger study of which the data will not be reported here. The study was approved by the University Committee on Activities Involving Human Subjects at New York University (Institutional Review Board #2016-2), and the study was conducted in accordance with these guidelines and regulations. All participants provided written informed consent. Participants received a payment ($35 per hour) for their participation.\n\n### Procedure\n\nAll participants completed two resting-state sessions of 5 min each, 24 hr apart (\u00b12 hr). During the session, they were instructed to think of nothing in particular, let their mind wander but not to have any repetitive thoughts such as counting. They were instructed to keep their eyes open and maintain their gaze on a centrally presented fixation dot (RGB: 60, 60, 255) on a gray screen (RGB: 125, 125, 125).\n\n### MRI data acquisition\n\nMRI data was acquired using a Siemens MAGNETOM Prisma 3T MR scanner. T2*-weighted BOLD images were recorded using a customized multi-echo EPI sequence (2.0 mm isotropic) with ascending slice acquisition (58 axial slices; TR = 2 s; TE = 14.4, 39.1 ms; partial Fourier = 6/8; GRAPPA acceleration factor = 2; multiband acceleration factor = 2; flip angle = 65\u00b0; slice matrix size 104 \u00d7 \u00d7104; slice thickness = 2.0 mm; FOV: 208 \u00d7 208 mm; slice gap = 0; bandwidth: 2090 Hz/px; echo spacing: 0.56 ms). Multi-echo EPI protocols can be used to avoid the tradeoff between BOLD sensitivity in the cortex and subcortex (Turker et al., 2021). To account for regional variation in susceptibility-induced signal dropout, voxel-wise weighted sums of both echoes were calculated based on local contrast-to-noise ratio (Poser et al., 2006). A structural image (0.9 mm isotropic) was acquired using a T1-weighted 3D MP-RAGE (TR = 2.3 s; TE = 2.32 ms; flip angle = 8\u00b0, FOV = 256 \u00d7 256 \u00d7 230 mm). A fast-spin echo (FSE) neuromelanin-sensitive structural scan was acquired for delineation of the LC (11 axial slices, TR = 750 ms, TE = 10 ms, flip angle = 120\u00b0, bandwidth = 220 Hz/Px, slice thickness = 2.5 mm, slice gap = 3.5 mm; in-plane resolution = 0.429 \u00d7 0.429 mm). Note that a large slice gap is a common feature in the use of FSE scans for LC imaging (Liu et al., 2017). This procedure allows for a high in-plane resolution but with a thicker slice thickness, resulting in elongated voxels that match the cylindrical shape of the LC. To minimize excessive movement during scanning, we secured participants\u2019 heads in a pillow and medical tape was attached across their foreheads to provide immediate tactile feedback in case of any movement, which has been shown to reduce motion (Krause et al., 2019).\n\n### MRI data preprocessing\n\nPreprocessing of MRI data was carried out using Advanced Normalization Tools v2.1 (ANTs) and SPM12 (https://www.fil.ion.ucl.ac.uk/spm; Wellcome Department of Imaging Neuroscience, London, UK). Here, we deviated from the preregistration, as we reported we would carry out all preprocessing steps in SPM12. Since ANTs SyN was found to be the best performing method for normalization (Ewert et al., 2019), some steps, including standardization and registration, were carried out using ANTs instead.\n\nA whole-brain group template (T1template) was generated using all MP-RAGE scans (using antsMultivariateTemplateConstructinon2.sh; Figure 2\u2014figure supplement 1A). This process involved two steps: (1) participants\u2019 whole-brain T1 scans (T1native space) were coregistered to a common group space (T1group space); then (2) these coregistered scans were averaged to form a whole-brain group template (T1template). An initial fixed image was created by averaging all input files. For registration (or \u2018normalization\u2019) of input images, a set of linear (rigid, then affine) and nonlinear (SyN) algorithms were used. Each nonlinear registration was performed over four levels of increasingly fine-grained resolutions (100 \u00d7 70 \u00d7 50 \u00d7 10 iterations). We applied an N4 bias field correction on moving images before each registration (using N4BiasFieldCorrection function). Cross-correlation was the similarity metric used for registration. Greedy SyN (SyN) was the transformation model used for registration. The gradient step size for refining template updates was set at 0.20 mm. After the whole-brain template image (T1template) was generated, for optimal coregistration, all individual MP-RAGE scans (T1native space) were submitted to a new coregistration step (using antsRegistration.sh; Figure 2\u2014figure supplement 1B). For this we performed linear (rigid, then affine), followed by nonlinear (SyN), registration steps, resulting in optimized individual whole-brain scans in template space (T1group space). To ensure that individual MP-RAGE scans and the group template (T1native space to T1group space) had been registered accurately, we carried out visual checks for each individual using anatomical boundaries and ventricles as reference regions. We also calculated the average (Figure 2\u2014figure supplement 2B) and standard deviation (Figure 2\u2014figure supplement 2C) of the individual warped T1 images (n = 72). On the individual T1s standard deviation image (Figure 2\u2014figure supplement 2C), light areas (high values) indicate where the coregistration is more variable, while dark areas (low values) indicate low variability across the T1s. Overall, these images show that the brainstem/subcortical areas are well-registered (i.e., dark areas in the standard deviation image).\n\nMutual information maximization-based rigid-body registration was used to register MP-RAGE scans and functional images. Functional images were motion-corrected using rigid-body transformations. To move the functional images into group space, the affine transforms and displacement field transformations from the final coregistration (T1native space to T1group space) for each participant were applied to their respective functional images (using linear interpolation). To avoid contamination of AAS BOLD activity by signal from adjacent structures, all analyses reported in this article, except those aimed at replicating previous studies (see section \u2018Comparisons with previous studies\u2019), were performed without spatial smoothing.\n\nWe applied a movement and physiological noise correction model with 33 regressors in SPM12. These included six movement parameter regressors (three translations, three rotations) derived from rigid-body motion correction, high-pass filtering (1/128 Hz cut-off) and AR(1) serial autocorrelation corrections. In addition these included retrospective image-based correction (RETROICOR) of physiological noise artifacts (Glover et al., 2000) regressors. Raw pulse was preprocessed using PulseCor (https://github.com/lindvoo/PulseCor; de Voogd, 2023a) implemented in Python for artifact correction and peak detection. Fifth-order Fourier models of the cardiac and respiratory phase-related modulation of the BOLD signal were specified (van Buuren et al., 2009), yielding 10 nuisance regressors for cardiac noise and 10 for respiratory noise. Additional regressors were calculated for heart rate frequency, heart rate variability, (raw) abdominal circumference, respiratory frequency, respiratory amplitude, and respiration volume per unit time (Birn et al., 2006), yielding a total of 26 RETROICOR regressors (https://github.com/can-lab/RETROICORplus; Krause, 2021). An additional regressor was added to remove signal fluctuations from the fourth ventricle, which was manually delineated using individual MP-RAGE scans (M = 90, SD = 34 voxels). This movement and physiological noise correction model was added to all general linear models (GLMs) described below. Note that since scrubbing did not affect the outcomes of our initial preregistered analysis (replication of Murphy et al., 2014), we report only the analysis without scrubbing and opted to refrain from applying scrubbing in the subsequent exploratory analyses.\n\n### Pupil data acquisition and preprocessing\n\nPupil size was recorded using an MR-compatible eye-tracker (EyeLink 1000 Plus; SR Research, Osgoode, ON, Canada) at a sampling rate of 250 Hz. The eye-tracker was placed at the end of the scanner bore, such that the participant\u2019s right eye could be tracked via the head coil mirror. Before the start of each resting-state session, we began with a calibration of the eye-tracker using the standard five-point EyeLink calibration procedure.\n\nMoments when the eye-tracker received no pupil signal (i.e., during eye blinks) were marked automatically during acquisition by the manufacturer\u2019s blink detection algorithm. Pupil data was preprocessed using PupCor (https://github.com/lindvoo/PupCor; de Voogd, 2023b) implemented in Python. Missing and invalid data due to blinks were replaced using linear interpolation for the period from 100 ms before blink onset to 400 ms after blink offset. Following the automated interpolation procedure, the data were manually checked and corrected if any artifacts had not been successfully removed. Two sessions from two separate participants were excluded due to technical problems with the eye-tracker. To ensure the pupil data was of good quality, a session was excluded from all analyses if the raw pupil data contained >25% invalid samples (marked automatically during data acquisition by EyeLink\u2019s blink detection algorithm; n sessions excluded = 15). For the remaining sessions (n sessions included = 126; n participants = 70, average proportion invalid samples = 6.4%), we computed pupil size as well as the first-order derivative of the pupil size time series. The latter describes the slope of changes in pupil size, where positive values reflect pupil dilation and negative values reflect pupil constriction. Because pupil size lags behind the underlying neural activity in AAS nuclei (including the LC and DR; Cazettes et al., 2021; Joshi et al., 2016; Liu et al., 2017; Reimer et al., 2016), and in line with previous neuroimaging studies (Pfeffer et al., 2022; Schneider et al., 2016; Yellin et al., 2015), we shifted the pupil time series 1 s back in time. This step was only omitted when we attempted to replicate Murphy et al., 2014. Both pupil time series (i.e., pupil size and pupil derivative) were then resampled to the TR (2 s) resolution (0.5 Hz). To detect further artifactual samples, within each 2 s time bin, any sample \u00b13 SD outside the time bin mean was removed, after which the average of the corresponding time bin was recalculated from the remaining non-artifactual samples (percentage samples recalculated = 0.04%; as in Murphy et al., 2014). The results of these preprocessing steps were two pupil time series (pupil size and pupil derivative) that were equal in length to the number of fMRI volumes (i.e., 150) collected in each session.\n\n### Definition of ROIs\n\nThe LC was delineated on each participant\u2019s FSE scan using ITK-SNAP (version 3.8.0; Yushkevich et al., 2006). Two raters (BL and a research assistant) manually identified LC voxels following established protocols (Clewett et al., 2016; Mather et al., 2017). Pairwise dice similarity coefficients between both raters were high (M = 0.96; range: 0.70\u20131.00). As described in Clewett et al., 2016, left and right LC regions were identified in the axial slice ~7 mm below the inferior colliculus. Within this slice, two regions were delineated in the form of a cross ~1.29 mm wide and ~1.29 mm high (3 \u00d7 3 voxels, see Figure 2D), covering the 1\u20132 mm of LC neurons in this slice. The center voxel for each cross was placed on the voxel with the highest signal intensity that fell within an area anatomically consistent with the location of the LC. If the peak voxel was located immediately adjacent to the fourth ventricle, the center of the ROI was placed one voxel further away from the ventricle. This ensured that the peak voxel but no fourth ventricle voxels were included in the ROI. To ensure we captured LC intensity signal, we calculated an objective measure for comparisons namely contrast-to-noise ratios between the average signal intensity in the LC relative to a pontine reference region. Contrast-to-noise ratios were positive for all participants, indicating that LC intensity was consistently higher than pontine intensity (M = 0.17; range: 0.08\u20130.29; Figure 2D). The obtained contrast-to-noise ratios were in line with previous reports (Clewett et al., 2016; Mather et al., 2017). For three participants, we could not delineate LC ROIs because movement led to poor-quality FSE images. For these participants, we used the group LC ROI (i.e., average of all individual LC ROIs in group space thresholded at 2 SD above the mean). This group LC ROI was also used for visualization purposes. In line with current standards (Yi et al., 2021), the LC masks were then transformed (using nearest-neighbor interpolation) into template space by applying the linear and nonlinear transformations from the final coregistration (T1native space to T1group space) and resliced, resulting in the final individual LC masks in functional space (range of size in functional space: 1\u20137 voxels, M = 3.4, SD = 1.3 voxels).\n\nPublished probabilistic atlases were used for the remaining subcortical ROIs as there are no established protocols for individual segmentation of these regions: VTA (Trutti et al., 2021; size in functional space = 45 voxels), SN (Alkemade et al., 2020; 84 voxels), DR (Beliveau et al., 2015; 4 voxels), MR (Beliveau et al., 2015; 3 voxels), and the sublenticular (Ch4) part of the BF (Eickhoff et al., 2005; Zaborszky et al., 2008; 31 voxels), which includes the cholinergic nucleus basalis of Meynert (see Figure 2A). All atlases were originally in MNI space. To move the atlases into our study-specific template space, antsRegistration.sh (using the same parameters as described above) was applied to generate the transformation matrices between MNI space and template space, which were applied to each ROI mask. Each subcortical mask was then thresholded and resliced to the functional space. We visually verified anatomical accuracy of the ROIs on the T1s following published guidelines (Beliveau et al., 2015; Trutti et al., 2021) and by visually inspecting the original MNI-space ROIs and our transformed ROIs (Alkemade et al., 2020; Zaborszky et al., 2008). In the preregistration, we reported that we would only be examining pupil-BOLD coupling in the LC, VTA, and SN. We also opted to include the raphe nuclei and BF since recent evidence shows that they are involved in driving pupil size during task behaviors (Cazettes et al., 2021; de Gee et al., 2017).\n\nPrevious studies (Schneider et al., 2016; Yellin et al., 2015) have found a robust relationship between pupil size and BOLD patterns in the occipital cortex (OCC) and anterior cingulate cortex (ACC). Therefore, we included these two cortical regions as additional validation ROIs. Specifically, we obtained masks of the calcarine sulcus in the OCC (size in functional space = 1975 voxels) and ACC (1148 voxels) using the automated anatomical labeling atlas in SPM (Tzourio-Mazoyer et al., 2002). Lastly, to explore the specificity of our pupil-AAS BOLD results, we delineated a cubic ROI in the medial part of the basis pontis (pons; 8 voxels), which served as a control region in which we did not expect to find pupil-BOLD coupling. The same procedure as described above was carried out to move these masks from MNI space into our study-specific template space (see Figure 2\u2014figure supplement 2D for individual examples).\n\n### fMRI data quality assessment\n\n#### Comparisons with previous studies\n\nWe wanted to ensure that we could replicate the resting-state correlations between pupil size and BOLD patterns reported in previous studies. First, we followed the methods of Schneider et al., 2016. We convolved the pupil size time series with the canonical HRF (6 s TTP). This single-pupil regressor, along with the movement and physiological noise correction model, were entered into first-level GLMs. Note that we only refer to the light condition in Schneider et al., 2016 since we did not assess other light conditions. Second, we followed the methods of Murphy et al., 2014. Here, we used the preprocessed pupil size time series and convolved that with the default canonical HRF, as well as its temporal and dispersion derivatives (Friston et al., 2000). The resulting three pupil time series were entered into a first-level GLM together with the movement and physiological noise correction model. For the Murphy et al., 2014 comparison analysis, the first-level single-subject contrast maps were submitted to a second-level random-effects analysis (one-way ANOVA, three levels of pupil/basis functions). To interrogate pupil correlations within the LC, statistics were also carried at the second-level using small volume correction with our group LC mask and the LC mask (Keren et al., 2009) used by Murphy and colleagues as an ROI in SPM12. In line with the reports of Schneider et al., 2016 and Murphy et al., 2014, the analyses described here included spatial smoothing with a 6 mm full-width at half maximum (FWHM) Gaussian kernel.\n\n#### Assessment of the quality of subcortical fMRI data\n\nNext, we assessed the signal quality within the subcortical nuclei to ensure we would be able to capture pupil-AAS coupling. First, we inspected the tSNR of our data in all cortical and subcortical ROIs. To do this, the tSNR was calculated as the ratio of the mean and the standard deviation of the signal across the unsmoothed BOLD time series from the two sessions. We then averaged the resulting tSNR within each ROI. Second, we investigated whether we could replicate previous work reporting co-fluctuations between activity in various subcortical ROIs during rest (van den Brink et al., 2019). The extracted BOLD signal from each ROI (LC, VTA, SN, DR, MR, BF, and pons as a control region) per session, per participant, was denoised (using the movement and physiological noise correction model described above) and demeaned and then entered into a partial correlation analysis. We computed a partial correlation for each pair of AAS nuclei, controlling for activity in the pons. Correlation coefficients underwent a Fisher r-to-Z transform and were then submitted to one-sample t-tests.\n\n### Pupil-AAS coupling analyses\n\nTo systematically examine pupil-AAS coupling and understand the temporal relationship between the two signals, we conducted a set of three main analyses. The rationale for our approach was that previous studies (see \u2018Comparisons with previous studies\u2019) assumed that pupil-brain coupling during rest would follow the canonical HRF used in event-related fMRI designs. However, these assumptions may not be correct or may not apply to subcortical nuclei. Therefore, in our first analysis we (i) convolved the pupil time series with participant-specific and ROI-specific estimates of the HRF (described in \u2018Estimation of region- and participant-specific HRF\u2019), which showed a range of TTPs. In the second analysis, we (ii) systematically changed the TTP of the canonical HRF (from 1 to 6 s, in steps of 1 s) and convolved the pupil time series with each of these. Lastly, we (iii) performed a pupil-AAS cross-correlation analysis in which we did not convolve the pupil time series at all. Note that analyses (ii) and (iii) were not preregistered as they were carried out to better understand the outcome of analysis (i). Therefore, they should be deemed exploratory. We will now provide a detailed description of each of these analyses.\n\n### Estimation of region- and participant-specific HRF\n\nIn the first main analysis, we aimed to account for HRF variability across different brain regions and participants in our resting-state data. Here, we deviated from the preregistration, in which we stated that we would obtain participant-specific HRFs from event-related fMRI data. However, the HRFs based on these event-related fMRI data did not provide plausible HRFs in the AAS regions (i.e., did not rise up to one tall peak and follow with an undershoot), possibly because these AAS regions may not have been involved in the task at hand. Instead, we used a blind deconvolution technique developed by Wu et al., 2013 to estimate region- and participant-specific HRFs based on the data from both resting-state sessions. This point process method has been validated on simulated as well as empirical data (Rangaprakash et al., 2018; Wu et al., 2021). It assumes that a common HRF is shared across various spontaneous point process events (i.e., random neural events) in a given voxel or ROI. After physiological correction, the cleaned BOLD signal $y(t)$ at a given voxel or ROI is considered as the convolution of the voxel/ROI-specific HRF $h(t)$ and spontaneous neural events $x(t)$\n\n$$\ny(t)=x(t)\u2297h(t)+c+\u00a0\\epsilon(t)\n$$\n\nwhere $c$ is a constant term indicating the baseline magnitude of the BOLD response, $\u2107t$ is noise, and \u2297 denotes convolution. Spontaneous point process events $n^t$ were identified as BOLD fluctuations of relatively large amplitude (one or more standard deviations away from the mean; see Figure 3A). Before identifying these events, we removed movement and physiological noise with the same set of 33 regressors as described above (see \u2018MRI data preprocessing\u2019). We then applied a high-pass filter (1/128 Hz cut-off) and AR(1) serial autocorrelation corrections. These events were modeled as a train of Dirac delta functions given by\n\n$$\nn^(t)=\u00a0\\sumr=0\u221e\\delta(t\u2212\\tau)\n$$\n\nwhere $\\delta(t-\\tau)$ is the delta function. The ROI-specific HRF $ht$ was then fitted according to $n^t$ using a canonical HRF and two derivatives (temporal derivative and dispersion derivative; Friston et al., 2000). Once $ht$ was calculated, we obtained an approximation $n^t$ of the neural signal from the observed data using a Wiener filter. ROI-specific HRFs (Figure 3B) were estimated for all AAS nuclei (i.e., LC, VTA, SN, DR, MR, BF) and two validation regions (i.e., ACC, OCC) and one control region (i.e., pons). To maximize the number of spontaneous neural events, HRFs were estimated based on the concatenated BOLD signals from the two sessions (see Figure 3C for the number of detected pseudo-events per ROI). These HRFs were then convolved with the two pupil time series (i.e., pupil size [Figure 3E] and pupil derivative [Figure 3F]), forming the final pupil regressors that were entered into the GLMs for this analysis. GLMs were made up of a single pupil regressor-of-interest in addition to our physiological noise correction model described above. Analysis for pupil size included nine GLMs per participant, dedicated to six AAS nuclei (LC, VTA, SN, DR, MR, BF) and the three validation and control regions (ACC, OCC, pons). Similarly, nine models formed the analysis for the pupil derivative.\n\n### Systematic adjustment of HRF time-to-peak\n\nTo explore other possible temporal relationships between pupil size and AAS BOLD patterns, we carried out a second analysis of pupil-AAS coupling where the TTP of the HRF was systematically shifted in time (Pais-Rold\u00e1n et al., 2020). This was done using the canonical HRF (Friston et al., 2000), which by default has a TTP (delay of response relative to onset) of 6 s. To explore pupil-AAS coupling at shorter lags, we compared six HRFs with TTPs varying between 1, 2, 3, 4, 5, and 6 s. These HRFs were created using spm_hrf() in SPM, where parameter p(1) which refers to \u2018delay of response (relative to onset)\u2019 was adjusted from 6 (default) to 1, 2, 3, 4, and 5, respectively. Note that the 6 s TTP corresponds to the TTP used in the analysis corresponding to Schneider et al., 2016. These six HRFs were then convolved with the two pupil time series (pupil size, pupil derivative) for each participant, resulting in 12 pupil regressors. Each pupil size regressor was then added to the physiological noise correction model, making up six GLMs per participant, each focusing on one TTP (i.e., 1 s, 2 s, 3 s, 4 s, 5 s, 6 s). Similarly, six GLMs were created for the pupil derivative.\n\n### Analyses using unconvolved pupil time series\n\nTo further characterize the nature of pupil-AAS coupling, we carried out two analyses using the unconvolved pupil time series. Firstly, we performed a cross-correlation analysis (Pais-Rold\u00e1n et al., 2020) in which the preprocessed (downsampled, demeaned, unconvolved) pupil time series (size and derivative) were shifted forward and backward relative to the BOLD signal (denoised using the movement and physiological noise correction model and demeaned). Note that the BOLD signal from each ROI was first averaged and then entered into the cross-correlation analysis. Correlation coefficients for each time lag underwent a Fisher r-to-Z transform and were then submitted to one-sample t-tests. This analysis is similar to the TTP analysis but used unconvolved pupil time series and allowed us to investigate both positive and negative lags between the pupil and BOLD signals, which was not possible with the TTP method. Secondly, in order to determine which frequencies were driving the observed pupil-BOLD cross-correlations, we estimated for each ROI the cross-spectral power density (Yellin et al., 2015), the Fourier transform of the cross-correlations. We did this using cspd() in MATLAB, setting the window length to 10 samples with an overlap of three samples.\n\n### Statistical analyses\n\nAll first-level GLMs described above were constructed in SPM12 with session (session 1, session 2) as a within-subject factor (n = 56). For participants in which only one session could be included (i.e., due to pupil quality exclusion criteria or technical issues in a scanning session), a GLM was constructed using only one session (n = 14). All analyses carried out in this study was based on n = 70, unless otherwise mentioned.\n\nSecond-level analyses were carried out by extracting t-values from single-subject contrast maps generated from the first-level analyses. These weights were then submitted to a second-level random effects analysis (one-sample t-test) in R using \u2018stats\u2019 package. To correct for multiple comparisons, alpha levels (set at 0.05) were adjusted by controlling the FDR (Benjamini and Hochberg, 1995; R \u2018stats\u2019 package p.adjust (method = \u2018fdr\u2019)).\n\nFor the comparison analyses with Schneider et al., 2016 and Murphy et al., 2014, single-subject contrast maps obtained from first-level analyses were entered into second-level random effects analyses (one-sample t-test for Schneider et al., 2016 and a one-way repeated-measures ANOVA with three levels for Murphy et al., 2014 in SPM12). Here, we used a cluster-forming voxel-level threshold of p<0.001 (uncorrected). Alpha was set at 0.05 whole-brain family-wise error (FWE) corrected at the cluster level using Gaussian random field theory-based methods as implemented in SPM12 (Friston et al., 1996).\n",
+      "created_at": "2025-12-04T02:21:30.463525Z"
+    },
+    {
+      "id": "be65b86b-e7d5-4eb6-a5f7-6d7ff8694fe0",
+      "submission_id": "4c05cb29-b55c-4969-a4bf-7d3677102339",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Mara Mather, https://ror.org/03taz7m60 University of Southern California United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.84822.sa0](https://doi.org/10.7554/eLife.84822.sa0)\n\nThese are important findings that show that pupil size is not only governed by the locus coeruleus but also by other neuromodulatory subcortical systems. Furthermore, the authors demonstrate that using a standard hemodynamic response kernel is not appropriate for capturing the activity of these systems, at least at rest. Thus, this paper presents compelling evidence against two prevalent working assumptions among researchers in the field.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Mara Mather, https://ror.org/03taz7m60 University of Southern California United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.84822.sa1](https://doi.org/10.7554/eLife.84822.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Pupil size reflects activation of subcortical ascending arousal system nuclei during rest\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, including Mara Mather as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Christian B\u00fcchel as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Heidi I.L. Jacobs (Reviewer #3).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\nThe reviewers have each pointed out various points that should be clarified in the paper to further strengthen it.\n\nReviewer #1 (Recommendations for the authors):\n\np. 11: I found this statement confusing, \"These exploratory analyses suggest that fluctuations in pupil diameter have a much closer temporal relationship with changes in AAS-BOLD activity than what is characteristic of event-related responses.\" \u2013 this sounds like the authors are comparing the temporal relationship of pupil size to BOLD during spontaneous fluctuations and during task-based events. But their data do not compare these two situations and so I'm guessing that instead do the authors mean to compare the shorter TTPs seen in their results to what is characteristic of event-related responses as they are typically defined in the field (i.e., with a longer TTP). The statement should be clarified.\n\np. 21: \"Please note that we deviated from the preregistration and did not apply 'scrubbing' in addition to the 33 nuisance regressors.\" \u2013 it would help to clarify why this change was made.\n\nWhich FDR correction method was used? Does it allow for likely inter-correlated nature of the different outcomes?\n\nReviewer #2 (Recommendations for the authors):\n\nThe multiple panels in figures 3e,f should be titled in the figure rather than use described in the caption. Since they are arbitrary units and the y axis is not matched between 3e and 3f, the y axis for each plot should be scaled to the range of the data in each plot to enable a clearer view of the variability in each trace.\n\nSimilarly, in figure 4b and c (and S2), consider setting the y-axis limits from -2 to 2 and if necessary plotting LC in a physically larger (not differently-scaled) panel with y-axis from -2.5 to 2.5 or putting \"//\" around the violin plots for the LC that go beyond the -2 to 2 range. Seeing those extrema are less important than seeing the weight of the distribution, and this will enable readers to focus on the trend for each plot as TTP is varied.\n\nReviewer #3 (Recommendations for the authors):\n\nMy main concerns or questions relate to the robustness and replicability of these findings and interpretations. It seems that subjects were scanned twice, and at some point, in the results, a certain set of analyses was replicated in the second scan session (Figure S3, cross-correlations). Did I miss it or were the other analyses not replicated? If not, it would be valuable to demonstrate the robustness or reliability of the findings. What was the correlation of the BOLD signal across the two visits?\n\nOther questions that I have:\n\n2) Registration is critical for these tiny regions and there are no anatomical boundaries to verify their localization. How did the authors verify anatomical accuracy of registration \u2013 not functional correlation as mentioned in the manuscript? It would also help if the authors can provide individuals examples (or a video)?\n\n3) Figure 4: Correlations between TTP and pupil size were positive for all regions. Yet, the violin plot shows a large variability in correlations for the LC with substantial negative correlations as well (even at TTP=1s). What do these negative correlations reflect, and why is the range of correlations so much larger for the LC compared to the SN? Could this reflect contributions of noise coming from the fourth ventricle CSF or could this be related to error due to the small functional masks (1-7 voxels according to the methods)?\n\n4) Related to this: can the authors provide voxel count/volume of all ROIs examined?\n\n5) As indicated, animal work has demonstrated an important role for the locus coeruleus in pupil dilation. An important question would be to determine whether the observed results are independent of the LC (i.e. which effects would remain present when regressing out LC BOLD signal). This could inform the field on the unique contribution of the LC or is shared contribution with other nuclei.\n\n6) Lastly: Interestingly, the short Time to Peak was not uniquely observed for the neuromodulatory subcortical nuclei, but also in the cortex. How do the authors interpret this finding?\n",
+      "created_at": "2025-12-04T02:21:30.463525Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T02:21:30.463525Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T02:21:30.463525Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "312c4c62-f72c-44d4-8a8a-4daef6171cbf",
+      "content_id": "d41ca7be-fa28-4d59-bcf2-874dee260a23",
+      "claim_id": "C1",
+      "claim": "Neuromodulatory nuclei that are part of the ascending arousal system (AAS) play a crucial role in regulating cortical state and optimizing task performance.",
+      "claim_type": "EXPLICIT",
+      "source": "Neuromodulatory nuclei that are part of the ascending arousal system (AAS) play a crucial role in regulating cortical state and optimizing task performance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research (Bunzeck and D\u00fczel, 2006; de Gee et al., 2017; Shine et al., 2021; Thiele and Bellgrove, 2018) as indicated in the Introduction section.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:21:30.463525Z"
+    },
+    {
+      "id": "8bc9931f-e665-4251-aba8-6cd424c106e8",
+      "content_id": "d41ca7be-fa28-4d59-bcf2-874dee260a23",
+      "claim_id": "C2",
+      "claim": "Pupil diameter, under constant luminance conditions, is increasingly used as an index of activity of AAS nuclei.",
+      "claim_type": "EXPLICIT",
+      "source": "Pupil diameter, under constant luminance conditions, is increasingly used as an index of activity of these AAS nuclei.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Joshi and Gold, 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:21:30.463525Z"
+    },
+    {
+      "id": "ae3421e3-2d02-4860-849d-3d6e630ec1c4",
+      "content_id": "d41ca7be-fa28-4d59-bcf2-874dee260a23",
+      "claim_id": "C3",
+      "claim": "Task-based functional imaging studies in humans have begun to provide evidence of stimulus-driven pupil-AAS coupling.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, task-based functional imaging studies in humans have begun to provide evidence of stimulus-driven pupil-AAS coupling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research as indicated in the Abstract.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:21:30.463525Z"
+    },
+    {
+      "id": "7528c079-749c-426e-98cc-331d0a29d21b",
+      "content_id": "d41ca7be-fa28-4d59-bcf2-874dee260a23",
+      "claim_id": "C4",
+      "claim": "Activation in all six AAS nuclei was optimally correlated with pupil size at 0\u20132 s lags.",
+      "claim_type": "EXPLICIT",
+      "source": "Activation in all six AAS nuclei was optimally correlated with pupil size at 0\u20132 s lags, suggesting that spontaneous pupil changes were almost immediately followed by corresponding BOLD-signal changes in the AAS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the experimental data presented in the study, specifically the cross-correlation analysis shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:21:30.463525Z"
+    },
+    {
+      "id": "c8e4df81-a1c0-489b-9dc3-700b5c577d73",
+      "content_id": "d41ca7be-fa28-4d59-bcf2-874dee260a23",
+      "claim_id": "C5",
+      "claim": "Spontaneous pupil changes were almost immediately followed by corresponding BOLD-signal changes in the AAS.",
+      "claim_type": "EXPLICIT",
+      "source": "Activation in all six AAS nuclei was optimally correlated with pupil size at 0\u20132 s lags, suggesting that spontaneous pupil changes were almost immediately followed by corresponding BOLD-signal changes in the AAS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the 0-2s lag correlation data presented in the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:21:30.463525Z"
+    },
+    {
+      "id": "41cc729e-950a-46cc-984a-1df9560da298",
+      "content_id": "d41ca7be-fa28-4d59-bcf2-874dee260a23",
+      "claim_id": "C6",
+      "claim": "Spontaneous changes in pupil size that occur during states of rest can be used as a noninvasive general index of activity in AAS nuclei.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that spontaneous changes in pupil size that occur during states of rest can be used as a noninvasive general index of activity in AAS nuclei.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the experimental data showing correlations between pupil size and AAS BOLD activity.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:21:30.463525Z"
+    },
+    {
+      "id": "f7277dfc-8cc1-4bf3-a30b-e7362ea32dd6",
+      "content_id": "d41ca7be-fa28-4d59-bcf2-874dee260a23",
+      "claim_id": "C7",
+      "claim": "The nature of pupil-AAS coupling during rest appears to be vastly different from the relatively slow canonical hemodynamic response function that has been used to characterize task-related pupil-AAS coupling.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the nature of pupil-AAS coupling during rest appears to be vastly different from the relatively slow canonical hemodynamic response function that has been used to characterize task-related pupil-AAS coupling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the experimental findings showing optimal correlations at 0-2s lags rather than the typical 5-6s HRF.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:21:30.463525Z"
+    },
+    {
+      "id": "75d99fef-ee7e-48fb-b6cb-5b815e030fd1",
+      "content_id": "d41ca7be-fa28-4d59-bcf2-874dee260a23",
+      "claim_id": "C8",
+      "claim": "Task-related activity of AAS nuclei is accompanied by changes in pupil size and its first-order derivative.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, task-related activity of these nuclei is accompanied by changes in pupil size and its first-order derivative (i.e., rate of change), as evidenced by animal studies and functional magnetic resonance imaging (fMRI) studies in humans (Cazettes et al., 2021; de Gee et al., 2017; Murphy et al., 2014; Varazzani et al., 2015; Yang et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to multiple previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:21:30.463525Z"
+    },
+    {
+      "id": "a9ff60b6-2d3f-4f1a-a818-521caffa8664",
+      "content_id": "d41ca7be-fa28-4d59-bcf2-874dee260a23",
+      "claim_id": "C9",
+      "claim": "Animal studies have found pupil-AAS coupling of spontaneous fluctuations during rest.",
+      "claim_type": "EXPLICIT",
+      "source": "Animal studies have also found pupil-AAS coupling of spontaneous fluctuations during rest (Joshi et al., 2016; Reimer et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to animal studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:21:30.463525Z"
+    },
+    {
+      "id": "e2178e37-575d-42d4-a65e-a912d779ec3d",
+      "content_id": "d41ca7be-fa28-4d59-bcf2-874dee260a23",
+      "claim_id": "C10",
+      "claim": "It is still largely unclear whether similar coupling can be found between resting-state fluctuations of pupil size and blood oxygen level-dependent (BOLD) signals in the human AAS.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it is still largely unclear whether similar coupling can be found between resting-state fluctuations of pupil size and blood oxygen level-dependent (BOLD) signals in the human AAS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim represents a knowledge gap identified by the authors based on review of existing literature.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:21:30.463525Z"
+    },
+    {
+      "id": "31310d00-b687-457d-9dc6-df100fdee470",
+      "content_id": "d41ca7be-fa28-4d59-bcf2-874dee260a23",
+      "claim_id": "C11",
+      "claim": "The majority of previous human resting-state fMRI studies did not focus on the AAS.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the majority of these studies did not focus on the AAS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on the authors' review of previous literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:21:30.463525Z"
+    },
+    {
+      "id": "6f21abf4-1ef7-4f7e-afed-20fc998351e4",
+      "content_id": "d41ca7be-fa28-4d59-bcf2-874dee260a23",
+      "claim_id": "C12",
+      "claim": "Previous studies did not include specific localization methods to delineate AAS regions of interest (ROIs) or correct for physiological sources of noise.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, they did not include specific localization methods to delineate AAS regions of interest (ROIs) or correct for physiological sources of noise, such as cardiac and respiratory fluctuations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on the authors' review of previous literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:21:30.463525Z"
+    },
+    {
+      "id": "b61159e8-7944-407d-a07e-10771f8ea6f4",
+      "content_id": "d41ca7be-fa28-4d59-bcf2-874dee260a23",
+      "claim_id": "C13",
+      "claim": "Specific localization methods and physiological noise correction are important for reliable measurements in subcortical nuclei.",
+      "claim_type": "EXPLICIT",
+      "source": "These approaches are important for reliable measurements in these subcortical nuclei (Brooks et al., 2013; Matt et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous methodological studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:21:30.463525Z"
+    },
+    {
+      "id": "fda56c3e-b584-4b78-b502-5a2456a8cd30",
+      "content_id": "d41ca7be-fa28-4d59-bcf2-874dee260a23",
+      "claim_id": "C14",
+      "claim": "Murphy et al., 2014 found a positive coupling between fluctuations in pupil size and activation in the LC during rest.",
+      "claim_type": "EXPLICIT",
+      "source": "The authors found a positive coupling between fluctuations in pupil size and activation in the LC during rest.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on citation to Murphy et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:21:30.463525Z"
+    },
+    {
+      "id": "9e86efb5-8762-4647-ba69-f8556f0ff702",
+      "content_id": "d41ca7be-fa28-4d59-bcf2-874dee260a23",
+      "claim_id": "C15",
+      "claim": "There have been no human fMRI studies so far that have reported a relationship between pupil size and other AAS nuclei during rest.",
+      "claim_type": "EXPLICIT",
+      "source": "To our knowledge, there have been no human fMRI studies so far that have reported a relationship between pupil size and other AAS nuclei during rest, despite the growing evidence from animal studies (Joshi et al., 2016; Reimer et al., 2016) speaking for such a relationship.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on the authors' review of existing literature.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:21:30.463525Z"
+    },
+    {
+      "id": "66b9997d-9486-4c1d-9047-47cde47d49d2",
+      "content_id": "d41ca7be-fa28-4d59-bcf2-874dee260a23",
+      "claim_id": "C16",
+      "claim": "The study examined simultaneous measurements of resting-state fMRI and pupil size from 74 healthy adults.",
+      "claim_type": "EXPLICIT",
+      "source": "To address this aim, we systematically examined simultaneous measurements of resting-state fMRI and pupil size from a large sample of healthy adults (N = 74).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the study design and sample size.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:21:30.463525Z"
+    },
+    {
+      "id": "76609fe3-fa7d-4bdc-8894-93c8ea187535",
+      "content_id": "d41ca7be-fa28-4d59-bcf2-874dee260a23",
+      "claim_id": "C17",
+      "claim": "The study monitored BOLD signal from the LC, VTA, SN, DR, MR, and BF.",
+      "claim_type": "EXPLICIT",
+      "source": "We monitored BOLD signal from a number of subcortical nuclei part of the AAS and implicated in the control of cortical arousal levels: the LC, the ventral tegmental area (VTA), dopaminergic substantia nigra (SN), the dorsal (DR) and median (MR) raphe nuclei, and the nucleus basalis of Meynert in the cholinergic basal forebrain (BF).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the ROIs examined in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:21:30.463525Z"
+    },
+    {
+      "id": "ecb2a311-d7d6-4cc7-843a-98c21b3046a2",
+      "content_id": "d41ca7be-fa28-4d59-bcf2-874dee260a23",
+      "claim_id": "C18",
+      "claim": "Studying small subcortical nuclei using fMRI comes with a unique set of challenges due to their size and location in the brain.",
+      "claim_type": "EXPLICIT",
+      "source": "Due to their size and location in the brain, studying these small nuclei using fMRI comes with a unique set of challenges (Forstmann et al., 2016; Liu et al., 2017; Matt et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous methodological studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:21:30.463525Z"
+    },
+    {
+      "id": "2b766b48-98ac-43dd-87b3-6754ee8f9a1d",
+      "content_id": "d41ca7be-fa28-4d59-bcf2-874dee260a23",
+      "claim_id": "C19",
+      "claim": "Multi-echo imaging can increase signal-to-noise ratio in subcortical structures.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we mitigated these challenges by implementing a number of methods, including multi-echo imaging to increase signal-to-noise ratio in subcortical structures (Mileti\u0107 et al., 2020; Puckett et al., 2018; Turker et al., 2021)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous methodological studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:21:30.463525Z"
+    },
+    {
+      "id": "bb126cfc-eb94-4cf2-9ba8-ba8413647b1e",
+      "content_id": "d41ca7be-fa28-4d59-bcf2-874dee260a23",
+      "claim_id": "C20",
+      "claim": "Neuromelanin-weighted T1 imaging can be used for delineation of the LC.",
+      "claim_type": "EXPLICIT",
+      "source": "neuromelanin-weighted T1 imaging for delineation of the LC (Clewett et al., 2016; Keren et al., 2015; M\u00e4ki-Marttunen and Espeseth, 2021; Priovoulos et al., 2018)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous methodological studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:21:30.463525Z"
+    },
+    {
+      "id": "5f24c65c-e995-4a95-946f-de78d2dd9895",
+      "content_id": "d41ca7be-fa28-4d59-bcf2-874dee260a23",
+      "claim_id": "C21",
+      "claim": "The study replicated whole-brain pupil-BOLD patterns consistent with Schneider et al., 2016.",
+      "claim_type": "EXPLICIT",
+      "source": "First, following the approach by Schneider et al., 2016, we used pupil size (1 s shift) as a regressor in a GLM and convolved it with the canonical HRF (i.e., 6 s TTP). The assumption here is that the neural activity associated with spontaneous changes in pupil size is transformed into resting-state BOLD signal according to the same impulse response function as that driving neurovascular coupling during task performance. Indeed, we found positive correlations in the thalamus and negative correlations in the visual cortex and sensorimotor areas, as well as in the precuneus, cuneus, insula, superior temporal gyrus, and parahippocampal gyrus. These patterns of activation are consistent with those reported by Schneider et al., 2016 (Figure 1A and Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the experimental data shown in Figure 1A and Table 1.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:21:30.463525Z"
+    },
+    {
+      "id": "9cb0bd32-d3b8-4206-8095-3d589f6acbe3",
+      "content_id": "d41ca7be-fa28-4d59-bcf2-874dee260a23",
+      "claim_id": "C22",
+      "claim": "The study found significant clusters in the visual cortex, the insula, the anterior cingulate gyrus, and the inferior frontal gyrus, consistent with Murphy et al., 2014.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we found significant clusters in the visual cortex, the insula, the anterior cingulate gyrus, and the inferior frontal gyrus, consistent with what was reported by Murphy et al., 2014.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the experimental data and comparison to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:21:30.463525Z"
+    },
+    {
+      "id": "b08c467f-a062-43b7-bcc0-585ad07a17d8",
+      "content_id": "d41ca7be-fa28-4d59-bcf2-874dee260a23",
+      "claim_id": "C23",
+      "claim": "The study was unable to replicate pupil-LC BOLD coupling using the same convolution methods as Murphy et al., 2014.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, contrary to Murphy et al., 2014, we were unable to replicate pupil-LC BOLD coupling using the same convolution methods.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on the experimental results showing no significant pupil-LC coupling.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:21:30.463525Z"
+    },
+    {
+      "id": "8e784901-51a4-482d-a66a-89a4e02d5572",
+      "content_id": "d41ca7be-fa28-4d59-bcf2-874dee260a23",
+      "claim_id": "C24",
+      "claim": "The average tSNR across the AAS ROIs ranged from 23.3 to 72.9.",
+      "claim_type": "EXPLICIT",
+      "source": "The average tSNR across the AAS ROIs (Figure 2B; range: 23.3\u201372.9) and cortical regions (range: 49.6\u2013106.3) were in line with previous reports (Brooks et al., 2013, Figure 1: brainstem range: ~1\u201350 and cortex range ~50\u2013112; Singh et al., 2022, Figure 2B: brainstem range: 0\u201350, cortex range: 0\u201350).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the data shown in Figure 2B and comparison to previous studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:21:30.463525Z"
+    },
+    {
+      "id": "1c2a56ce-6e70-4a45-8aa9-7d5d8caccb46",
+      "content_id": "d41ca7be-fa28-4d59-bcf2-874dee260a23",
+      "claim_id": "C25",
+      "claim": "The study replicated a pattern of positive (partial) correlations among the signal fluctuations in each pair of subcortical ROIs, controlled for activity in the pons.",
+      "claim_type": "EXPLICIT",
+      "source": "We also replicated a recently reported pattern of positive (partial) correlations among the signal fluctuations in each pair of subcortical ROIs, controlled for activity in the pons (Figure 2C; van den Brink et al., 2019; see also Singh et al., 2022).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the data shown in Figure 2C and citations to previous studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:21:30.463525Z"
+    },
+    {
+      "id": "c1b80232-fe5f-4ce6-9369-fd47fcdec248",
+      "content_id": "d41ca7be-fa28-4d59-bcf2-874dee260a23",
+      "claim_id": "C26",
+      "claim": "The correlation between the DR and VTA was negative.",
+      "claim_type": "EXPLICIT",
+      "source": "Only the correlation between the DR and VTA was negative.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:21:30.463525Z"
+    },
+    {
+      "id": "2e01f76a-0301-41d0-a46b-1af5072e420c",
+      "content_id": "d41ca7be-fa28-4d59-bcf2-874dee260a23",
+      "claim_id": "C27",
+      "claim": "The use of region- and participant-specific HRFs did not result in significant pupil-AAS coupling.",
+      "claim_type": "EXPLICIT",
+      "source": "The pupil-BOLD analysis using these specific HRFs, however, revealed no significant pupil-AAS correlations (Figure 3G and H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the experimental data shown in Figure 3G and H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:21:30.463525Z"
+    },
+    {
+      "id": "7b12b25b-f167-496f-82f0-83b0fa48a640",
+      "content_id": "d41ca7be-fa28-4d59-bcf2-874dee260a23",
+      "claim_id": "C28",
+      "claim": "Pupil size correlated negatively with activation in the OCC.",
+      "claim_type": "EXPLICIT",
+      "source": "We only found that pupil size correlated negatively with activation in the OCC (pcorr<0.001 [pupil size], pcorr=0.018 [pupil derivative], false discovery rate [FDR]-corrected).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the experimental data with statistical significance values.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:21:30.463525Z"
+    },
+    {
+      "id": "3958b8f1-6fcf-4cc5-a996-b6da79bfb0c8",
+      "content_id": "d41ca7be-fa28-4d59-bcf2-874dee260a23",
+      "claim_id": "C29",
+      "claim": "The TTP of the estimated HRFs was significantly faster for all subcortical AAS ROIs than for each of the two cortical ROIs.",
+      "claim_type": "EXPLICIT",
+      "source": "After carrying out pairwise comparisons, we found that, as expected, the TTP of the estimated HRFs was significantly faster for all subcortical AAS ROIs than for each of the two cortical ROIs (Msubcortical ROIs = 4.7 s, SDsubcortical ROIs = 0.6 s, Mcortical ROIs = 5.4 s, SDcortical ROIs = 0.8 s; Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the experimental data shown in Figure 3D with statistical comparisons.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:21:30.463525Z"
+    },
+    {
+      "id": "ff374e3e-2752-46b3-9f42-e63b71a18ca2",
+      "content_id": "d41ca7be-fa28-4d59-bcf2-874dee260a23",
+      "claim_id": "C30",
+      "claim": "Subcortical structures have been characterized by faster BOLD responses (TTP 4\u20135 s) compared to the cortex (TTP 5\u20136 s).",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, subcortical structures have been characterized by faster BOLD responses (TTP 4\u20135 s; Lau et al., 2011; Lewis et al., 2018; Yen et al., 2011) compared to the cortex (TTP 5\u20136 s; Lewis et al., 2018; Friston et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:21:30.463525Z"
+    },
+    {
+      "id": "5586e283-8de4-4e42-9835-6f0bb8a43d9b",
+      "content_id": "d41ca7be-fa28-4d59-bcf2-874dee260a23",
+      "claim_id": "C31",
+      "claim": "For almost all AAS ROIs the strength of pupil-BOLD coupling differed across TTPs.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that for almost all AAS ROIs the strength of pupil-BOLD coupling differed across TTPs (main effect of TTP; LC: p<0.001; VTA: p<0.001; SN: p<0.001; MR: p=0.043; BF: p=0.009, FDR-corrected for nine ROIs).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the experimental data with statistical significance values.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:21:30.463525Z"
+    },
+    {
+      "id": "2070a9d9-5106-4ff2-b35b-5554bb29da91",
+      "content_id": "d41ca7be-fa28-4d59-bcf2-874dee260a23",
+      "claim_id": "C32",
+      "claim": "Coupling between pupil size and AAS BOLD patterns increases with earlier TTPs.",
+      "claim_type": "EXPLICIT",
+      "source": "The overall pattern shows that coupling between pupil size and AAS BOLD patterns increases with earlier TTPs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the pattern of results shown in Figure 4.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:21:30.463525Z"
+    },
+    {
+      "id": "f6aab792-6c5f-419d-959b-8495bdb7592c",
+      "content_id": "d41ca7be-fa28-4d59-bcf2-874dee260a23",
+      "claim_id": "C33",
+      "claim": "Positive correlations were found for all AAS regions at earlier TTPs (especially the 1 s and 2 s TTPs).",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, we found positive correlations for all AAS regions at earlier TTPs (especially the 1 s [Figure 4B] and 2 s TTPs) but no significant correlations (LC, VTA, SN, DR, MR) at later TTPs (5\u20136 s; Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the experimental data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:21:30.463525Z"
+    },
+    {
+      "id": "81f70efc-9035-4b15-9ff1-9452819399a8",
+      "content_id": "d41ca7be-fa28-4d59-bcf2-874dee260a23",
+      "claim_id": "C34",
+      "claim": "For the OCC ROI, there was a positive correlation at the 1 s TTP, followed by a shift to negative correlations at later TTPs (4\u20136 s).",
+      "claim_type": "EXPLICIT",
+      "source": "For the OCC ROI, we found a positive correlation at the 1 s TTP, followed by a shift to negative correlations at later TTPs (4\u20136 s), which is in line with previous work (Breeden et al., 2017; Schneider et al., 2016; Yellin et al., 2015) and the results we reported above ('Whole-brain pupil-BOLD patterns consistent with previous studies').",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the experimental data and citations to previous studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:21:30.463525Z"
+    },
+    {
+      "id": "003e321c-1060-4686-9b4c-ef525c1a0562",
+      "content_id": "d41ca7be-fa28-4d59-bcf2-874dee260a23",
+      "claim_id": "C35",
+      "claim": "The ACC correlated positively with pupil size at predominantly early TTPs (1\u20134 s).",
+      "claim_type": "EXPLICIT",
+      "source": "The ACC correlated positively with pupil size at predominantly early TTPs (1\u20134 s; Figure 4CD), similar to the AAS ROIs, and in line with pupil-BOLD coupling in default-mode network areas (Yellin et al., 2015).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the experimental data shown in Figure 4 and citation to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:21:30.463525Z"
+    },
+    {
+      "id": "5129f136-20d4-49b0-9f08-0eaaa0c11fa3",
+      "content_id": "d41ca7be-fa28-4d59-bcf2-874dee260a23",
+      "claim_id": "C36",
+      "claim": "Significant positive pupil-BOLD correlations were found for all AAS ROIs (except the DR), with the strongest correlations occurring at lag 0.",
+      "claim_type": "EXPLICIT",
+      "source": "Critically, and in line with the TTP analysis, we found significant positive pupil-BOLD correlations for all AAS ROIs (except the DR), with the strongest correlations occurring at lag 0 (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the experimental data shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:21:30.463525Z"
+    },
+    {
+      "id": "8b0fabb0-7028-4096-91d0-124aabebe237",
+      "content_id": "d41ca7be-fa28-4d59-bcf2-874dee260a23",
+      "claim_id": "C37",
+      "claim": "The relationship between pupil size and AAS activity is temporally close, rather than following the shape of an HRF with a 5 or 6 s TTP.",
+      "claim_type": "EXPLICIT",
+      "source": "These results again suggest that the relationship between pupil size and AAS activity is temporally close, rather than following the shape of an HRF with a 5 or 6 s TTP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the cross-correlation results showing strongest correlations at lag 0.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:21:30.463525Z"
+    },
+    {
+      "id": "982c742b-9d1b-4b95-8a54-3c4c7ef66566",
+      "content_id": "d41ca7be-fa28-4d59-bcf2-874dee260a23",
+      "claim_id": "C38",
+      "claim": "Partialing out the contribution of the LC resulted in a slight but significant drop for the BF.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 5C, partialing out the contribution of the LC resulted in a slight but significant drop for the BF (p=0.028).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the experimental data shown in Figure 5C with statistical significance values.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:21:30.463525Z"
+    },
+    {
+      "id": "c1260928-b937-4e9c-8ae9-49f487f11664",
+      "content_id": "d41ca7be-fa28-4d59-bcf2-874dee260a23",
+      "claim_id": "C39",
+      "claim": "The signal from the VTA, SN, MR, and BF remained significantly correlated with pupil size after partialing out the LC contribution.",
+      "claim_type": "EXPLICIT",
+      "source": "The signal from the VTA, SN, MR, and BF remained significantly correlated with pupil size (ps<0.030).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the experimental data with statistical significance values.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:21:30.463525Z"
+    },
+    {
+      "id": "297a62a1-8d9b-4113-b876-ff56dffafa1b",
+      "content_id": "d41ca7be-fa28-4d59-bcf2-874dee260a23",
+      "claim_id": "C40",
+      "claim": "Pupil size is not selectively driven by the LC, but a broader network of AAS nuclei is involved.",
+      "claim_type": "EXPLICIT",
+      "source": "These results contribute further evidence to the notion that pupil size is not selectively driven by the LC, but that a broader network of AAS nuclei is involved.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the partial correlation analysis showing independent contributions of multiple AAS nuclei.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:21:30.463525Z"
+    },
+    {
+      "id": "6c307ddf-7ceb-4e74-bc83-043973bbd10d",
+      "content_id": "d41ca7be-fa28-4d59-bcf2-874dee260a23",
+      "claim_id": "C41",
+      "claim": "The correlations for most AAS nuclei and both cortical ROIs were largely driven by frequencies between 0.04 and 0.09 Hz.",
+      "claim_type": "EXPLICIT",
+      "source": "A simple peak detection indicated that the correlations for most AAS nuclei and both cortical ROIs (ACC and OCC) were largely driven by frequencies between 0.04 and 0.09 Hz (LC: 0.09; VTA: 0.04; SN: 0.03; DR: 0.008; MR: 0.04; BF: 0.04; ACC: 0.04; OCC: 0.07; Figure 6AB).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the cross-spectral power density analysis shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:21:30.463525Z"
+    },
+    {
+      "id": "5354e6cf-86bb-4972-ab51-75c1797f2295",
+      "content_id": "d41ca7be-fa28-4d59-bcf2-874dee260a23",
+      "claim_id": "C42",
+      "claim": "A positive correlation was found between pupil size and BOLD signal in all of the AAS ROIs: LC, VTA, SN, DR, MR, and (sublenticular) BF.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, we examined whether, during rest, non-luminance-related spontaneous fluctuations in pupil size were associated with fluctuations in BOLD signal in nuclei part of the AAS. We found a positive correlation between pupil size and BOLD signal in all of the AAS ROIs: LC, VTA, SN, DR, MR, and (sublenticular) BF.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the experimental data from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:21:30.463525Z"
+    },
+    {
+      "id": "933eec29-2c6d-4465-8ee6-e29645ada9e4",
+      "content_id": "d41ca7be-fa28-4d59-bcf2-874dee260a23",
+      "claim_id": "C43",
+      "claim": "Pupil changes reflect activity in multiple neuromodulatory systems, not only the noradrenergic system.",
+      "claim_type": "EXPLICIT",
+      "source": "This finding is in line with recent animal studies (Joshi et al., 2016; Reimer et al., 2016) indicating that pupil changes reflect activity in multiple neuromodulatory systems, not only the noradrenergic system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the experimental data and citations to animal studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:21:30.463525Z"
+    },
+    {
+      "id": "b057391b-ea04-4e1c-bf98-7deff98dd0b8",
+      "content_id": "d41ca7be-fa28-4d59-bcf2-874dee260a23",
+      "claim_id": "C44",
+      "claim": "During rest, unlike in response to task events, BOLD signal fluctuations in AAS nuclei immediately follow fluctuations in pupil size.",
+      "claim_type": "EXPLICIT",
+      "source": "Critically, using two different methodological approaches, we found that pupil-AAS coupling was strongest when the two signals were assumed to occur close in time. This means that during rest, unlike in response to task events (de Gee et al., 2017), BOLD signal fluctuations in AAS nuclei immediately follow fluctuations in pupil size.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the experimental data and comparison to previous task-based studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:21:30.463525Z"
+    },
+    {
+      "id": "f321f55d-9100-4ac1-8f76-64caac28b2f1",
+      "content_id": "d41ca7be-fa28-4d59-bcf2-874dee260a23",
+      "claim_id": "C45",
+      "claim": "The correlation between pupil size and AAS BOLD signal was largely driven by slow oscillations (~0.05\u20130.1 Hz) in both measures.",
+      "claim_type": "EXPLICIT",
+      "source": "This correlation was largely driven by slow oscillations (i.e., ~0.05\u20130.1 Hz) in both measures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the cross-spectral power density analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:21:30.463525Z"
+    },
+    {
+      "id": "5548ab1d-3039-447d-8032-2a5aad5cab81",
+      "content_id": "d41ca7be-fa28-4d59-bcf2-874dee260a23",
+      "claim_id": "C46",
+      "claim": "Pupil size can be used as a noninvasive readout of AAS activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, our results suggest that pupil size can be used as a noninvasive readout of AAS activity and reveal new insights into the temporal dynamics of pupil-AAS coupling during rest.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the overall experimental findings of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:21:30.463525Z"
+    },
+    {
+      "id": "55bd788f-0556-4bd0-bcc0-9546b759d826",
+      "content_id": "d41ca7be-fa28-4d59-bcf2-874dee260a23",
+      "claim_id": "C47",
+      "claim": "Robust positive correlations were found between pupil size and BOLD signal in five AAS ROIs: LC, VTA, SN, MR, and (sublenticular) BF.",
+      "claim_type": "EXPLICIT",
+      "source": "We found robust positive correlations between pupil size and BOLD signal in five of our AAS ROIs: LC, VTA, SN, MR, and (sublenticular) BF.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the experimental data from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:21:30.463525Z"
+    },
+    {
+      "id": "7c520504-7336-424e-b273-90a10586be6d",
+      "content_id": "d41ca7be-fa28-4d59-bcf2-874dee260a23",
+      "claim_id": "C48",
+      "claim": "The correlations with the VTA, SN, MR, and BF BOLD signals remained significant after controlling for the effect of the LC BOLD signal.",
+      "claim_type": "EXPLICIT",
+      "source": "The correlations with the VTA, SN, MR, and BF BOLD signals remained significant after controlling for the effect of the LC BOLD signal, suggesting that these AAS nuclei have independent influences on pupil size.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the partial correlation analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:21:30.463525Z"
+    },
+    {
+      "id": "fc5227ac-d8c1-44b9-8310-a2d9d0357145",
+      "content_id": "d41ca7be-fa28-4d59-bcf2-874dee260a23",
+      "claim_id": "C49",
+      "claim": "The positive relationship with pupil size was less robust for the DR, and only significant in the TTP analyses.",
+      "claim_type": "EXPLICIT",
+      "source": "The positive relationship with pupil size was less robust for the DR, and only significant in the TTP analyses, perhaps because this area had lower tSNR than the other subcortical ROIs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the experimental data and speculation about the reason.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:21:30.463525Z"
+    },
+    {
+      "id": "84529835-3e04-4ff6-ba21-a1054b8e4e8f",
+      "content_id": "d41ca7be-fa28-4d59-bcf2-874dee260a23",
+      "claim_id": "C50",
+      "claim": "The coupling between pupil size and activation of the AAS is not specific for the LC.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, unlike what findings from previous studies (e.g., Murphy et al., 2014) may have implicitly suggested, the coupling between pupil size and activation of the AAS is not specific for the LC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the experimental data showing correlations with multiple AAS nuclei.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:21:30.463525Z"
+    },
+    {
+      "id": "a7b81982-7244-442b-90c9-8e6e2f6f5e96",
+      "content_id": "d41ca7be-fa28-4d59-bcf2-874dee260a23",
+      "claim_id": "C51",
+      "claim": "Optogenetic activation of the LC or DR increases pupil size.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, our findings are consistent with recent animal studies that found co-fluctuations in pupil size and LC and BF activity during rest (Joshi et al., 2016; Reimer et al., 2016); with studies showing that optogenetic activation of the LC or DR increases pupil size (Breton-Provencher and Sur, 2019; Cazettes et al., 2021)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to animal studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:21:30.463525Z"
+    },
+    {
+      "id": "38392260-aec7-4991-83a3-7c0046d548da",
+      "content_id": "d41ca7be-fa28-4d59-bcf2-874dee260a23",
+      "claim_id": "C52",
+      "claim": "Human task-related fMRI work has shown positive correlations between event-related pupil responses and BOLD responses in the LC, VTA, and BF.",
+      "claim_type": "EXPLICIT",
+      "source": "and with human task-related fMRI work showing positive correlations between event-related pupil responses and BOLD responses in the LC, VTA, and BF (de Gee et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a previous human fMRI study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:21:30.463525Z"
+    },
+    {
+      "id": "c4a4fd4d-b28c-4efb-881f-ac81b652675b",
+      "content_id": "d41ca7be-fa28-4d59-bcf2-874dee260a23",
+      "claim_id": "C53",
+      "claim": "Changes in pupil size should not be used to infer a selective role for the LC.",
+      "claim_type": "EXPLICIT",
+      "source": "However, our findings reinforce previous arguments (Joshi and Gold, 2020) that changes in pupil size should not be used to infer a selective role for the LC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the experimental findings and supported by citation to previous arguments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:21:30.463525Z"
+    },
+    {
+      "id": "d1143b40-5cf9-426b-93f5-038020bd8a46",
+      "content_id": "d41ca7be-fa28-4d59-bcf2-874dee260a23",
+      "claim_id": "C54",
+      "claim": "BOLD signal in the AAS closely followed the corresponding pupil fluctuations.",
+      "claim_type": "EXPLICIT",
+      "source": "The temporal relationship between pupil size and AAS BOLD response patterns was different than we had expected based on reports from previous resting-state and event-related fMRI studies (de Gee et al., 2017; Murphy et al., 2014). Namely, we found that BOLD signal in the AAS closely followed the corresponding pupil fluctuations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the experimental data from the cross-correlation analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:21:30.463525Z"
+    },
+    {
+      "id": "6ff6243e-4f68-4b38-bd57-26a8fec835a6",
+      "content_id": "d41ca7be-fa28-4d59-bcf2-874dee260a23",
+      "claim_id": "C55",
+      "claim": "Maximal and significant pupil-AAS coupling was found using HRFs with TTPs of 1\u20133 s.",
+      "claim_type": "EXPLICIT",
+      "source": "Pupil time series that were convolved with the canonical HRF (TTP = 6 s) or region-specific HRFs based on a point process approach were not significantly related to AAS activation. Instead, maximal and significant pupil-AAS coupling was found using HRFs with TTPs of 1\u20133 s.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the experimental data from the TTP analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:21:30.463525Z"
+    },
+    {
+      "id": "9c754228-8749-4579-bfc1-bf150310d028",
+      "content_id": "d41ca7be-fa28-4d59-bcf2-874dee260a23",
+      "claim_id": "C56",
+      "claim": "Cross-correlations between the unconvolved pupil time series and AAS BOLD time series revealed maximum correlations when the signals occurred close in time (at lags of 0\u20132 s).",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, cross-correlations between the unconvolved pupil time series and AAS BOLD time series similarly revealed maximum correlations when the signals occurred close in time (at lags of 0\u20132 s).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the experimental data from the cross-correlation analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:21:30.463525Z"
+    },
+    {
+      "id": "11e1dd62-a3cb-44f0-8aa8-bbd8864ee220",
+      "content_id": "d41ca7be-fa28-4d59-bcf2-874dee260a23",
+      "claim_id": "C57",
+      "claim": "Subcortical regions and AAS nuclei are characterized by faster event-related hemodynamic responses than cortical regions.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings are in line with previous research that has suggested that subcortical regions (Lewis et al., 2018) and AAS nuclei (de Gee et al., 2017) are characterized by faster event-related hemodynamic responses than cortical regions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies and the current experimental findings.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:21:30.463525Z"
+    },
+    {
+      "id": "65da5c1a-a900-4540-a3a5-1bb269dd8e05",
+      "content_id": "d41ca7be-fa28-4d59-bcf2-874dee260a23",
+      "claim_id": "C58",
+      "claim": "Most previous human resting-state pupil-fMRI studies did not find or report pupil-AAS coupling because they only investigated pupil-BOLD coupling with longer time lags.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, our findings may provide a reason why most previous human resting-state pupil-fMRI studies (e.g., Breeden et al., 2017; Schneider et al., 2016; Yellin et al., 2015) did not find or report pupil-AAS coupling. Namely, these studies only investigated pupil-BOLD coupling with longer time lags between pupil changes and corresponding BOLD response patterns.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the current findings and comparison to previous studies.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:21:30.463525Z"
+    },
+    {
+      "id": "3dc4cb7d-eee2-4ecc-8475-318a022230c8",
+      "content_id": "d41ca7be-fa28-4d59-bcf2-874dee260a23",
+      "claim_id": "C59",
+      "claim": "The study broadly replicated previously reported associations between pupil size and cortical BOLD response patterns using standard TTPs.",
+      "claim_type": "EXPLICIT",
+      "source": "Using standard TTPs, we (broadly) replicated previously reported associations between pupil size and cortical BOLD response patterns (e.g., negative coupling with the visual cortex, positive coupling with the thalamus and posterior cingulate cortex; e.g., Murphy et al., 2014; Schneider et al., 2016; Yellin et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the experimental data and citations to previous studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:21:30.463525Z"
+    },
+    {
+      "id": "19e863dd-5cd5-41da-af3f-77038cd5c8fa",
+      "content_id": "d41ca7be-fa28-4d59-bcf2-874dee260a23",
+      "claim_id": "C60",
+      "claim": "The study did not find evidence that standard TTPs characterized the coupling between resting-state pupil size and AAS activation.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we did not find evidence that standard TTPs characterized the coupling between resting-state pupil size and AAS activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the experimental data showing no significant correlations at standard TTPs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:21:30.463525Z"
+    },
+    {
+      "id": "d4a712ba-bdfc-4461-a295-a771de372b01",
+      "content_id": "d41ca7be-fa28-4d59-bcf2-874dee260a23",
+      "claim_id": "C61",
+      "claim": "A recent study in rats found temporally close positive coupling (i.e., 1 s TTP) between resting-state pupil dynamics and BOLD signal in specific areas in the brainstem including the A5 noradrenergic cell group.",
+      "claim_type": "EXPLICIT",
+      "source": "Although we cannot make a direct comparison between the shape of human and mouse HRFs, a recent study in rats (Pais-Rold\u00e1n et al., 2020) also found temporally close positive coupling (i.e., 1 s TTP) between resting-state pupil dynamics and BOLD signal in specific areas in the brainstem including the A5 noradrenergic cell group (which projects to the spinal cord).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to an animal study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:21:30.463525Z"
+    },
+    {
+      "id": "f2e3160a-163b-4657-88d3-0acb03da48f0",
+      "content_id": "d41ca7be-fa28-4d59-bcf2-874dee260a23",
+      "claim_id": "C62",
+      "claim": "The rat study by Pais-Rold\u00e1n et al., 2020 did not find evidence for a coupling between pupil dynamics and any of the AAS nuclei.",
+      "claim_type": "EXPLICIT",
+      "source": "This study, however, did not find evidence for a coupling between pupil dynamics and any of the AAS nuclei.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on citation to the animal study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:21:30.463525Z"
+    },
+    {
+      "id": "a85b02af-30f3-4ef9-9958-0c250f495a5f",
+      "content_id": "d41ca7be-fa28-4d59-bcf2-874dee260a23",
+      "claim_id": "C63",
+      "claim": "Behavioral states can strongly modulate pupil-AAS coupling.",
+      "claim_type": "EXPLICIT",
+      "source": "Preliminary evidence suggests that behavioral states can strongly modulate pupil-AAS coupling (Megemont et al., 2022)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to preliminary evidence.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:21:30.463525Z"
+    },
+    {
+      "id": "5175cc05-10bd-40d4-b8d1-94732b3a9783",
+      "content_id": "d41ca7be-fa28-4d59-bcf2-874dee260a23",
+      "claim_id": "C64",
+      "claim": "In an anesthetized state pupil-AAS coupling may be reduced or absent.",
+      "claim_type": "EXPLICIT",
+      "source": "and therefore it is possible that in an anesthetized state pupil-AAS coupling is reduced or absent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative claim based on the preliminary evidence about behavioral state modulation.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:21:30.463525Z"
+    },
+    {
+      "id": "3d43da7f-a572-487d-b9a7-413000edb0ff",
+      "content_id": "d41ca7be-fa28-4d59-bcf2-874dee260a23",
+      "claim_id": "C65",
+      "claim": "Ultra-slow (~0.1 Hz) BOLD fluctuations that are characteristic of resting-state fMRI data are entrained by ultra-slow vasomotor oscillations that lead to rhythmic changes in the diameter of brain arterioles.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, recent work in the mouse cortex has shown that the ultra-slow (~0.1 Hz) BOLD fluctuations that are characteristic of resting-state fMRI data are entrained by ultra-slow vasomotor oscillations that lead to rhythmic changes in the diameter of brain arterioles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to recent work in mouse cortex.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:21:30.463525Z"
+    },
+    {
+      "id": "7ec97810-612a-4934-92fc-98a06ddd43bb",
+      "content_id": "d41ca7be-fa28-4d59-bcf2-874dee260a23",
+      "claim_id": "C66",
+      "claim": "Vasomotor oscillations are entrained by rhythmic local neuronal activity in the same ultra-low-frequency band.",
+      "claim_type": "EXPLICIT",
+      "source": "These vasomotor oscillations, in turn, are entrained by rhythmic local neuronal activity in the same ultra-low-frequency band (Drew et al., 2020; Mateo et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:21:30.463525Z"
+    },
+    {
+      "id": "42d45df6-1009-468b-b734-1b4f37145964",
+      "content_id": "d41ca7be-fa28-4d59-bcf2-874dee260a23",
+      "claim_id": "C67",
+      "claim": "In the mouse brain the sequence from neuronal activity and vasomotion to blood oxygenation levels was estimated to last approximately 2.6 s.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in the mouse brain this sequence, from neuronal activity and vasomotion to blood oxygenation levels, was estimated to last approximately 2.6 s (Mateo et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:21:30.463525Z"
+    },
+    {
+      "id": "91ba4b46-e1bc-4f04-8b69-434cc4ec1067",
+      "content_id": "d41ca7be-fa28-4d59-bcf2-874dee260a23",
+      "claim_id": "C68",
+      "claim": "The EPI sequence had a higher spatial resolution (2 mm isotropic) than previous studies linking pupil size to BOLD.",
+      "claim_type": "EXPLICIT",
+      "source": "First, although our EPI sequence had a higher spatial resolution (2 mm isotropic) than previous studies linking pupil size to BOLD (e.g., 3.5 mm isotropic in Murphy et al., 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the spatial resolution used in the study and compares it to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:21:30.463525Z"
+    },
+    {
+      "id": "521b58c6-a08b-4a79-9f76-7cfa17da4c21",
+      "content_id": "d41ca7be-fa28-4d59-bcf2-874dee260a23",
+      "claim_id": "C69",
+      "claim": "Imaging small subcortical structures at conventional spatial resolution may have led to partial-volume averaging.",
+      "claim_type": "EXPLICIT",
+      "source": "imaging small subcortical structures at this conventional spatial resolution may have led to partial-volume averaging (Forstmann et al., 2016; Liu et al., 2017), especially in the LC, the smallest of our ROIs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a potential limitation acknowledged by the authors, supported by citations.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:21:30.463525Z"
+    },
+    {
+      "id": "217154c3-750b-4880-8ba1-ea578da21de4",
+      "content_id": "d41ca7be-fa28-4d59-bcf2-874dee260a23",
+      "claim_id": "C70",
+      "claim": "The study did not apply spatial smoothing to the EPI data.",
+      "claim_type": "EXPLICIT",
+      "source": "To mitigate this concern, we did not apply spatial smoothing to the EPI data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes a methodological choice made in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:21:30.463525Z"
+    },
+    {
+      "id": "aaa9f330-1d84-4e19-9d34-c5a3fe095c4b",
+      "content_id": "d41ca7be-fa28-4d59-bcf2-874dee260a23",
+      "claim_id": "C71",
+      "claim": "The LC showed the same pattern of results as other, much larger nuclei, including the VTA, SN, and BF.",
+      "claim_type": "EXPLICIT",
+      "source": "Our confidence in the LC imaging data reported here is also bolstered by the fact that the LC showed the same pattern of results as other, much larger nuclei, including the VTA, SN, and BF, that are less susceptible to partial-volume averaging effects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on the experimental data showing consistent patterns across ROIs.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:21:30.463525Z"
+    },
+    {
+      "id": "cad31039-0997-474f-b54d-d79c7f776636",
+      "content_id": "d41ca7be-fa28-4d59-bcf2-874dee260a23",
+      "claim_id": "C72",
+      "claim": "A further increase in spatial resolution at 3T would be accompanied by a dramatic drop in signal-to-noise ratio.",
+      "claim_type": "EXPLICIT",
+      "source": "We also note that a further increase in spatial resolution at 3T would be accompanied by a dramatic drop in signal-to-noise ratio (Murphy et al., 2007), and therefore would not per se lead to a better signal from the AAS regions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:21:30.463525Z"
+    },
+    {
+      "id": "8a733121-52f2-426c-b3f8-8d5fbbcda8fc",
+      "content_id": "d41ca7be-fa28-4d59-bcf2-874dee260a23",
+      "claim_id": "C73",
+      "claim": "The study included an extensive physiological noise correction model, accounting for measured cardiac and respiratory signal components as well as residual signal from the fourth ventricle.",
+      "claim_type": "EXPLICIT",
+      "source": "To mitigate this concern, we included an extensive physiological noise correction model, accounting for measured cardiac and respiratory signal components as well as residual signal from the fourth ventricle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes a methodological approach used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:21:30.463525Z"
+    },
+    {
+      "id": "0b83b32e-33f1-41d9-8e0c-f31c41542bfc",
+      "content_id": "d41ca7be-fa28-4d59-bcf2-874dee260a23",
+      "claim_id": "C74",
+      "claim": "If the BOLD signal in AAS nuclei was largely driven by noise, this could not explain the robust temporal relationship between AAS BOLD and pupil size.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, if the BOLD signal in AAS nuclei was largely driven by noise, this could not explain the robust temporal relationship between AAS BOLD and pupil size, and the selective absence of pupil-BOLD coupling in the pons, our control region that is also susceptible to physiological noise artifacts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical argument based on the experimental findings.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:21:30.463525Z"
+    },
+    {
+      "id": "e4fd62bb-4816-45e8-bcf8-d66edba12432",
+      "content_id": "d41ca7be-fa28-4d59-bcf2-874dee260a23",
+      "claim_id": "C75",
+      "claim": "The analyses were limited by the temporal resolution of the fMRI data due to the 2 s TR.",
+      "claim_type": "EXPLICIT",
+      "source": "A third drawback is that our analyses were limited by the temporal resolution of our fMRI data. Due to our 2 s TR, we were unable to interrogate potentially meaningful, faster pupil-BOLD correlations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a limitation acknowledged by the authors.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:21:30.463525Z"
+    },
+    {
+      "id": "11a84bd0-2fa4-4e3e-b2e6-11f5f2dbf6c1",
+      "content_id": "d41ca7be-fa28-4d59-bcf2-874dee260a23",
+      "claim_id": "C76",
+      "claim": "Spontaneous changes in pupil size that occur during rest reflect activity in a variety of nuclei that are part of the AAS.",
+      "claim_type": "EXPLICIT",
+      "source": "In conclusion, we show that spontaneous changes in pupil size that occur during rest reflect activity in a variety of nuclei that are part of the AAS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary claim based on the overall experimental findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:21:30.463525Z"
+    },
+    {
+      "id": "9d47f0b1-2b04-4f10-9f5a-e667058d3d81",
+      "content_id": "d41ca7be-fa28-4d59-bcf2-874dee260a23",
+      "claim_id": "C77",
+      "claim": "Pupil size can be used as a noninvasive and general index of AAS activity, in contrast to previous work suggesting a selective role for the LC in arousal-related pupil size changes.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that pupil size can be used as a noninvasive and general index of AAS activity, in contrast to previous work suggesting a selective role for the LC in arousal-related pupil size changes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary claim based on the overall experimental findings and comparison to previous work.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:21:30.463525Z"
+    },
+    {
+      "id": "b204700c-62e3-423c-9f38-ad9ab7530494",
+      "content_id": "d41ca7be-fa28-4d59-bcf2-874dee260a23",
+      "claim_id": "C78",
+      "claim": "The findings provide new insights into the nature and temporal dynamics of AAS-linked pupil size fluctuations.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, our findings provide new insights into the nature and temporal dynamics of AAS-linked pupil size fluctuations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary claim based on the overall experimental findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:21:30.463525Z"
+    },
+    {
+      "id": "e89326ae-5418-4eba-8668-fedff88cf7e4",
+      "content_id": "d41ca7be-fa28-4d59-bcf2-874dee260a23",
+      "claim_id": "C79",
+      "claim": "Seventy-four right-handed participants were recruited from New York University and completed two resting-state sessions on two consecutive days.",
+      "claim_type": "EXPLICIT",
+      "source": "Seventy-four right-handed participants were recruited from New York University and completed two resting-state sessions on two consecutive days.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the study sample and design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:21:30.463525Z"
+    },
+    {
+      "id": "66df0dc9-4d16-42c3-b94f-b071f30ea0bc",
+      "content_id": "d41ca7be-fa28-4d59-bcf2-874dee260a23",
+      "claim_id": "C80",
+      "claim": "Two participants were excluded entirely and one session for one participant was excluded due to technical issues with the scanner, leaving a sample size of 72 participants.",
+      "claim_type": "EXPLICIT",
+      "source": "Two participants were excluded entirely and one session for one participant was excluded due to technical issues with the scanner, leaving a sample size of 72 participants for the current study",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the final sample size after exclusions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:21:30.463525Z"
+    },
+    {
+      "id": "f63af42f-6c4c-4fe5-a02b-20611359e25c",
+      "content_id": "d41ca7be-fa28-4d59-bcf2-874dee260a23",
+      "claim_id": "C81",
+      "claim": "Multi-echo EPI protocols can be used to avoid the tradeoff between BOLD sensitivity in the cortex and subcortex.",
+      "claim_type": "EXPLICIT",
+      "source": "Multi-echo EPI protocols can be used to avoid the tradeoff between BOLD sensitivity in the cortex and subcortex (Turker et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a previous methodological study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:21:30.463525Z"
+    },
+    {
+      "id": "700a8d7a-d763-4064-8356-9ba719f10591",
+      "content_id": "d41ca7be-fa28-4d59-bcf2-874dee260a23",
+      "claim_id": "C82",
+      "claim": "Voxel-wise weighted sums of both echoes were calculated based on local contrast-to-noise ratio to account for regional variation in susceptibility-induced signal dropout.",
+      "claim_type": "EXPLICIT",
+      "source": "To account for regional variation in susceptibility-induced signal dropout, voxel-wise weighted sums of both echoes were calculated based on local contrast-to-noise ratio (Poser et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes a methodological approach used in the study, supported by citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:21:30.463525Z"
+    },
+    {
+      "id": "844f1149-ddce-4a35-8699-8f9e8f1f3f5d",
+      "content_id": "d41ca7be-fa28-4d59-bcf2-874dee260a23",
+      "claim_id": "C83",
+      "claim": "ANTs SyN was found to be the best performing method for normalization.",
+      "claim_type": "EXPLICIT",
+      "source": "Since ANTs SyN was found to be the best performing method for normalization (Ewert et al., 2019), some steps, including standardization and registration, were carried out using ANTs instead.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a previous methodological study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:21:30.463525Z"
+    },
+    {
+      "id": "24b7f918-c577-4dc9-b850-e779ad14cd61",
+      "content_id": "d41ca7be-fa28-4d59-bcf2-874dee260a23",
+      "claim_id": "C84",
+      "claim": "All analyses reported in this article, except those aimed at replicating previous studies, were performed without spatial smoothing to avoid contamination of AAS BOLD activity by signal from adjacent structures.",
+      "claim_type": "EXPLICIT",
+      "source": "To avoid contamination of AAS BOLD activity by signal from adjacent structures, all analyses reported in this article, except those aimed at replicating previous studies (see section 'Comparisons with previous studies'), were performed without spatial smoothing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes a methodological choice made in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:21:30.463525Z"
+    },
+    {
+      "id": "843483d4-bc7f-480e-b108-cd1600458b61",
+      "content_id": "d41ca7be-fa28-4d59-bcf2-874dee260a23",
+      "claim_id": "C85",
+      "claim": "The study applied a movement and physiological noise correction model with 33 regressors in SPM12.",
+      "claim_type": "EXPLICIT",
+      "source": "We applied a movement and physiological noise correction model with 33 regressors in SPM12.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the physiological noise correction approach used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:21:30.463525Z"
+    },
+    {
+      "id": "0b097be2-a4c9-4617-88b1-252c05332f76",
+      "content_id": "d41ca7be-fa28-4d59-bcf2-874dee260a23",
+      "claim_id": "C86",
+      "claim": "Pupil size lags behind the underlying neural activity in AAS nuclei (including the LC and DR).",
+      "claim_type": "EXPLICIT",
+      "source": "Because pupil size lags behind the underlying neural activity in AAS nuclei (including the LC and DR; Cazettes et al., 2021; Joshi et al., 2016; Liu et al., 2017; Reimer et al., 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:21:30.463525Z"
+    },
+    {
+      "id": "5ff9985f-0f06-46da-9d63-b23f130fd278",
+      "content_id": "d41ca7be-fa28-4d59-bcf2-874dee260a23",
+      "claim_id": "C87",
+      "claim": "The pupil time series was shifted 1 s back in time in line with previous neuroimaging studies.",
+      "claim_type": "EXPLICIT",
+      "source": "and in line with previous neuroimaging studies (Pfeffer et al., 2022; Schneider et al., 2016; Yellin et al., 2015), we shifted the pupil time series 1 s back in time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes a methodological choice supported by citations to previous studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:21:30.463525Z"
+    },
+    {
+      "id": "5f05c118-4001-4afb-9d09-1d5bddf1bdde",
+      "content_id": "d41ca7be-fa28-4d59-bcf2-874dee260a23",
+      "claim_id": "C88",
+      "claim": "Pairwise dice similarity coefficients between both raters for LC delineation were high (M = 0.96; range: 0.70\u20131.00).",
+      "claim_type": "EXPLICIT",
+      "source": "Pairwise dice similarity coefficients between both raters were high (M = 0.96; range: 0.70\u20131.00).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the inter-rater reliability for LC delineation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:21:30.463525Z"
+    },
+    {
+      "id": "d29c7c58-cc3c-4e8d-8e64-2e7ce917dca1",
+      "content_id": "d41ca7be-fa28-4d59-bcf2-874dee260a23",
+      "claim_id": "C89",
+      "claim": "Contrast-to-noise ratios were positive for all participants, indicating that LC intensity was consistently higher than pontine intensity.",
+      "claim_type": "EXPLICIT",
+      "source": "Contrast-to-noise ratios were positive for all participants, indicating that LC intensity was consistently higher than pontine intensity (M = 0.17; range: 0.08\u20130.29; Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the data shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:21:30.463525Z"
+    },
+    {
+      "id": "fc6b9a4a-91a0-46aa-915a-ce8626624743",
+      "content_id": "d41ca7be-fa28-4d59-bcf2-874dee260a23",
+      "claim_id": "C90",
+      "claim": "The obtained contrast-to-noise ratios were in line with previous reports.",
+      "claim_type": "EXPLICIT",
+      "source": "The obtained contrast-to-noise ratios were in line with previous reports (Clewett et al., 2016; Mather et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by comparison to previous studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:21:30.463525Z"
+    },
+    {
+      "id": "b620b152-1de8-461a-b1ad-fb8f4e7f664f",
+      "content_id": "d41ca7be-fa28-4d59-bcf2-874dee260a23",
+      "claim_id": "C91",
+      "claim": "For three participants, the group LC ROI was used because movement led to poor-quality FSE images.",
+      "claim_type": "EXPLICIT",
+      "source": "For three participants, we could not delineate LC ROIs because movement led to poor-quality FSE images. For these participants, we used the group LC ROI (i.e., average of all individual LC ROIs in group space thresholded at 2 SD above the mean).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes how missing data was handled for some participants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:21:30.463525Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "d2f50e4d-66bc-4b83-9346-5f45ea9b2efb",
+      "content_id": "d41ca7be-fa28-4d59-bcf2-874dee260a23",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Prior work has established that AAS nuclei regulate cortical state and task performance, with pupil diameter used as an index of AAS activity. While animal studies have found pupil-AAS coupling during rest, human fMRI studies have not comprehensively examined this relationship across multiple AAS nuclei, with most previous studies lacking specific localization methods and physiological noise correction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C15 accurately characterize the state of prior knowledge based on appropriate citations. The authors correctly identify a gap in the literature regarding human resting-state pupil-AAS coupling across multiple nuclei (C10, C15), and appropriately critique methodological limitations of previous studies (C11-C13). The characterization of prior work appears accurate and well-supported by citations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:21:30.463525Z"
+    },
+    {
+      "id": "921a23b3-4350-49de-8e7e-b119fed21f9b",
+      "content_id": "d41ca7be-fa28-4d59-bcf2-874dee260a23",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The study examined simultaneous resting-state fMRI and pupil size measurements from 74 healthy adults (final n=72 after exclusions), monitoring BOLD signal from six AAS nuclei: LC, VTA, SN, DR, MR, and BF.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16, C17, C79, and C80 clearly describe the study design, sample size, and ROIs examined. The sample size is adequate for the analyses performed, and exclusion criteria are transparently reported. This represents standard methodological reporting.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:21:30.463525Z"
+    },
+    {
+      "id": "6ad3dca2-1000-4294-b20f-cf97b7e9048e",
+      "content_id": "d41ca7be-fa28-4d59-bcf2-874dee260a23",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The study implemented multiple methodological approaches to address challenges in imaging small subcortical nuclei, including multi-echo imaging, neuromelanin-weighted T1 imaging for LC delineation, optimized brainstem co-registration (ANTs SyN), extensive physiological noise correction (33 regressors), and no spatial smoothing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C20 and C81-C87 describe methodological choices that are well-justified by citations to previous work and represent current best practices for subcortical imaging. The approaches are appropriate for the research question and address known technical challenges. The methodological rigor is a strength of the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:21:30.463525Z"
+    },
+    {
+      "id": "e857aa98-061f-452b-95a3-8a8b8363f99c",
+      "content_id": "d41ca7be-fa28-4d59-bcf2-874dee260a23",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The study successfully replicated previously reported whole-brain pupil-BOLD patterns using standard HRF convolution methods, finding positive correlations in thalamus and negative correlations in visual cortex and other regions, consistent with Schneider et al. 2016 and Murphy et al. 2014.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21, C22, and C59 demonstrate successful replication of cortical pupil-BOLD patterns from previous studies, as evidenced by Figure 1 and Tables 1-2. This validation analysis strengthens confidence in the data quality and preprocessing pipeline, serving as an important positive control.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:21:30.463525Z"
+    },
+    {
+      "id": "9f0da2fc-e445-476f-943d-36e63511c8fa",
+      "content_id": "d41ca7be-fa28-4d59-bcf2-874dee260a23",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The study was unable to replicate the pupil-LC BOLD coupling reported by Murphy et al. 2014 using the same convolution methods, despite using a larger sample size (70 vs. 14 participants).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C23 reports a failure to replicate a key prior finding. This is transparently reported and important for the field. The larger sample size (70 vs. 14) and similar methodology make this a meaningful non-replication that motivated the exploratory analyses. However, differences in preprocessing or other methodological details not fully captured could contribute to this discrepancy.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:21:30.463525Z"
+    },
+    {
+      "id": "878a2a2d-bee0-47cc-be86-59f14b60d888",
+      "content_id": "d41ca7be-fa28-4d59-bcf2-874dee260a23",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Quality assessment of subcortical fMRI data showed adequate temporal signal-to-noise ratio (tSNR range: 23.3-72.9 for AAS ROIs) consistent with previous reports, positive partial correlations among AAS ROI pairs (except negative DR-VTA correlation), and high inter-rater reliability for LC delineation (dice coefficient M=0.96).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C26 and C88-C91 provide important data quality metrics that are consistent with previous literature (citations provided). The tSNR values, inter-rater reliability, and contrast-to-noise ratios all support adequate data quality for the subcortical ROIs. The replication of positive correlations among AAS ROIs (C25) provides additional validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:21:30.463525Z"
+    },
+    {
+      "id": "ffabc42b-227a-4628-9f46-cbce0013b7c4",
+      "content_id": "d41ca7be-fa28-4d59-bcf2-874dee260a23",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Using region- and participant-specific HRFs estimated from resting-state data did not reveal significant pupil-AAS coupling, only a negative correlation with occipital cortex. The estimated HRFs showed significantly faster time-to-peak for subcortical AAS ROIs (M=4.7s) compared to cortical ROIs (M=5.4s), consistent with prior literature.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C30 describe a negative result from the participant-specific HRF analysis, which is clearly reported with appropriate statistics. The finding that subcortical HRFs are faster than cortical HRFs (C29-C30) replicates prior work and validates the HRF estimation approach. The negative result for pupil-AAS coupling motivated subsequent exploratory analyses.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:21:30.463525Z"
+    },
+    {
+      "id": "f9498882-e1f3-461b-829e-164eb11835d2",
+      "content_id": "d41ca7be-fa28-4d59-bcf2-874dee260a23",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Systematic variation of HRF time-to-peak revealed that pupil-AAS coupling strength differed across TTPs for almost all AAS ROIs, with positive correlations found at early TTPs (1-3s) but not at standard TTPs (5-6s). Maximal coupling occurred at 1-2s TTPs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C33, C55, and C60 describe a key exploratory finding supported by statistical tests (Figure 4). The systematic TTP analysis is methodologically sound and reveals a novel temporal relationship. However, this was an exploratory analysis not preregistered, and the interpretation that this reflects true neurovascular coupling dynamics (rather than a statistical artifact or confound) requires caution and independent replication.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:21:30.463525Z"
+    },
+    {
+      "id": "dd9767fd-60c6-435d-9e1f-763fbf517642",
+      "content_id": "d41ca7be-fa28-4d59-bcf2-874dee260a23",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "For the occipital cortex ROI, there was a positive correlation at 1s TTP followed by negative correlations at later TTPs (4-6s), consistent with previous work. The anterior cingulate cortex showed positive correlations at early TTPs (1-4s), similar to AAS ROIs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C35 describe control/validation ROI results that are consistent with prior literature (citations provided). The biphasic response in OCC and early positive correlation in ACC provide important context for interpreting the AAS findings and suggest the early TTP effects are not unique to subcortical regions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:21:30.463525Z"
+    },
+    {
+      "id": "035b7dcb-53f9-4efc-a67c-6ec69be56367",
+      "content_id": "d41ca7be-fa28-4d59-bcf2-874dee260a23",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Cross-correlation analysis using unconvolved pupil time series revealed significant positive pupil-BOLD correlations for all AAS ROIs except DR, with strongest correlations at lag 0, suggesting that BOLD signal in AAS nuclei closely follows pupil fluctuations rather than following a standard HRF with 5-6s TTP.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C37, C54, and C56 describe the cross-correlation analysis results (Figure 5) that converge with the TTP analysis findings. The lag-0 maximum correlation is clearly shown in the data. However, the interpretation that BOLD 'immediately follows' pupil changes (C37, C54) may be overstated given the 2s TR limitation acknowledged by the authors (C75). The temporal resolution limits precise determination of the lag.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:21:30.463525Z"
+    },
+    {
+      "id": "27e06823-1e40-4d47-8a14-417ec29d1e76",
+      "content_id": "d41ca7be-fa28-4d59-bcf2-874dee260a23",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Partial correlation analysis controlling for LC BOLD signal showed that VTA, SN, MR, and BF remained significantly correlated with pupil size, suggesting these AAS nuclei have independent influences on pupil size beyond the LC contribution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C40 and C48 describe partial correlation results (Figure 5C) that address whether pupil-AAS coupling is LC-specific. The statistical tests support independent contributions from multiple nuclei. However, the interpretation of 'independent influences' (C40, C48) should be tempered by the fact that partial correlations only control for linear shared variance, and complex interactions among AAS nuclei are not fully captured by this analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:21:30.463525Z"
+    },
+    {
+      "id": "b0c0aa76-6dc2-4583-a325-eac4d5eaeaf0",
+      "content_id": "d41ca7be-fa28-4d59-bcf2-874dee260a23",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Cross-spectral power density analysis revealed that pupil-AAS correlations were largely driven by slow oscillations in the 0.04-0.09 Hz frequency band for most AAS nuclei and cortical ROIs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41 and C45 describe the frequency analysis results (Figure 6) using appropriate methods. The finding that low-frequency oscillations (~0.05-0.1 Hz) drive the coupling is clearly supported by the data. This frequency range is characteristic of resting-state fMRI fluctuations, providing important context for the temporal dynamics observed.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:21:30.463525Z"
+    },
+    {
+      "id": "30f337ee-8331-413e-8e41-eb174cd0adeb",
+      "content_id": "d41ca7be-fa28-4d59-bcf2-874dee260a23",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The study found positive correlations between pupil size and BOLD signal in all six AAS nuclei (LC, VTA, SN, DR, MR, BF), with activation optimally correlated at 0-2s lags. This suggests spontaneous pupil changes during rest can be used as a noninvasive general index of AAS activity, reflecting activity in multiple neuromodulatory systems rather than selectively the LC. The temporal dynamics differ substantially from task-related pupil-AAS coupling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C4-C5, C42-C44, C46-C47, C49-C50, and C76-C78 represent the main conclusions of the study. While the correlational findings are supported by the data, several factors create uncertainty: (1) The 2s TR limits precise temporal resolution (C75), making the exact lag uncertain; (2) The findings are exploratory and not preregistered; (3) The physiological mechanism underlying the rapid coupling is unclear and potentially inconsistent with known neurovascular coupling dynamics (C67 notes mouse studies suggest ~2.6s from neural activity to BOLD); (4) The DR showed weaker/inconsistent effects (C49); (5) Alternative explanations (e.g., shared physiological noise not fully removed, vascular coupling) are not fully ruled out. The claim that pupil reflects 'activity' in AAS nuclei (rather than just correlates with BOLD signal) involves causal interpretation of correlational data. Independent replication and mechanistic validation are needed.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:21:30.463525Z"
+    },
+    {
+      "id": "bca46575-e506-461a-894b-4ba5c5e3b7d8",
+      "content_id": "d41ca7be-fa28-4d59-bcf2-874dee260a23",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The findings are consistent with animal studies showing optogenetic activation of LC/DR increases pupil size, human task-related fMRI showing pupil-AAS correlations, and prior work showing subcortical regions have faster hemodynamic responses than cortical regions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C52 and C57 appropriately contextualize the current findings within prior literature through citations. The consistency with animal optogenetics and human task-based fMRI provides convergent validity. However, the authors acknowledge (C61-C62) that one rat study found different results, possibly due to anesthesia (C63-C64), highlighting the importance of behavioral state.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:21:30.463525Z"
+    },
+    {
+      "id": "9525864a-4dd0-414d-b9f8-d655553a79db",
+      "content_id": "d41ca7be-fa28-4d59-bcf2-874dee260a23",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The findings reinforce that changes in pupil size should not be used to infer a selective role for the LC, and may explain why previous resting-state studies did not find pupil-AAS coupling (they only examined longer time lags).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53 and C58 draw appropriate implications from the findings. The multi-nuclei involvement (C53) is supported by the data, though the strength of this claim depends on the validity of the partial correlation analysis. The explanation for prior null findings (C58) is plausible but speculative, as other methodological differences could also contribute.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:21:30.463525Z"
+    },
+    {
+      "id": "ec3b19fb-f6ae-4a1d-9315-4ce2d47a41c7",
+      "content_id": "d41ca7be-fa28-4d59-bcf2-874dee260a23",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Recent work in mouse cortex has shown that ultra-slow BOLD fluctuations (~0.1 Hz) are entrained by vasomotor oscillations driven by rhythmic neuronal activity, with the sequence from neuronal activity to blood oxygenation lasting approximately 2.6s in mice.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C67 accurately cite prior work on neurovascular coupling mechanisms. However, the authors note this ~2.6s timescale seems inconsistent with their 0-2s lag findings, raising questions about the physiological basis of the observed rapid coupling. This represents an important unresolved mechanistic question.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:21:30.463525Z"
+    },
+    {
+      "id": "1824f0d4-d3ec-4501-9bee-d4dc37a304ab",
+      "content_id": "d41ca7be-fa28-4d59-bcf2-874dee260a23",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The study acknowledges potential limitations including partial-volume averaging due to 2mm isotropic resolution, though this was mitigated by not applying spatial smoothing. The LC showed consistent patterns with larger nuclei less susceptible to partial-volume effects, and further increases in spatial resolution at 3T would reduce SNR.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C72 transparently acknowledge a key limitation (partial-volume averaging) and describe mitigation strategies. The argument that consistent patterns across ROIs of different sizes (C71) supports data validity is reasonable but not definitive. The point about SNR tradeoffs (C72) is valid and supported by citation. This represents appropriate limitation discussion.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:21:30.463525Z"
+    },
+    {
+      "id": "a71969d1-30b0-4e59-ba94-fff362c96766",
+      "content_id": "d41ca7be-fa28-4d59-bcf2-874dee260a23",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The study included extensive physiological noise correction (33 regressors including RETROICOR). If AAS BOLD signal was largely driven by noise, this could not explain the robust temporal relationship with pupil size or the selective absence of coupling in the pons control region.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C73-C74 describe physiological noise correction methods and provide a logical argument against noise-driven results. The pons control region showing no pupil coupling (while being similarly susceptible to physiological noise) is an important specificity control. However, the possibility of residual shared physiological signals not fully captured by the correction model cannot be completely ruled out.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:21:30.463525Z"
+    },
+    {
+      "id": "9ab6d60d-6a9b-4159-b679-33da3092f6a2",
+      "content_id": "d41ca7be-fa28-4d59-bcf2-874dee260a23",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "The analyses were limited by the 2s TR temporal resolution, preventing interrogation of potentially meaningful faster pupil-BOLD correlations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C75 acknowledges an important limitation that directly impacts interpretation of the 0-2s lag findings. With 2s TR, the temporal precision is insufficient to distinguish between 0s, 1s, or 2s lags, making claims about 'immediate' coupling (C5, C44) somewhat imprecise. This limitation is appropriately acknowledged and suggests the need for higher temporal resolution studies.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:21:30.463525Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "312c4c62-f72c-44d4-8a8a-4daef6171cbf",
+      "result_id": "d2f50e4d-66bc-4b83-9346-5f45ea9b2efb"
+    },
+    {
+      "claim_id": "8bc9931f-e665-4251-aba8-6cd424c106e8",
+      "result_id": "d2f50e4d-66bc-4b83-9346-5f45ea9b2efb"
+    },
+    {
+      "claim_id": "ae3421e3-2d02-4860-849d-3d6e630ec1c4",
+      "result_id": "d2f50e4d-66bc-4b83-9346-5f45ea9b2efb"
+    },
+    {
+      "claim_id": "75d99fef-ee7e-48fb-b6cb-5b815e030fd1",
+      "result_id": "d2f50e4d-66bc-4b83-9346-5f45ea9b2efb"
+    },
+    {
+      "claim_id": "a9ff60b6-2d3f-4f1a-a818-521caffa8664",
+      "result_id": "d2f50e4d-66bc-4b83-9346-5f45ea9b2efb"
+    },
+    {
+      "claim_id": "e2178e37-575d-42d4-a65e-a912d779ec3d",
+      "result_id": "d2f50e4d-66bc-4b83-9346-5f45ea9b2efb"
+    },
+    {
+      "claim_id": "31310d00-b687-457d-9dc6-df100fdee470",
+      "result_id": "d2f50e4d-66bc-4b83-9346-5f45ea9b2efb"
+    },
+    {
+      "claim_id": "6f21abf4-1ef7-4f7e-afed-20fc998351e4",
+      "result_id": "d2f50e4d-66bc-4b83-9346-5f45ea9b2efb"
+    },
+    {
+      "claim_id": "b61159e8-7944-407d-a07e-10771f8ea6f4",
+      "result_id": "d2f50e4d-66bc-4b83-9346-5f45ea9b2efb"
+    },
+    {
+      "claim_id": "fda56c3e-b584-4b78-b502-5a2456a8cd30",
+      "result_id": "d2f50e4d-66bc-4b83-9346-5f45ea9b2efb"
+    },
+    {
+      "claim_id": "9e86efb5-8762-4647-ba69-f8556f0ff702",
+      "result_id": "d2f50e4d-66bc-4b83-9346-5f45ea9b2efb"
+    },
+    {
+      "claim_id": "66b9997d-9486-4c1d-9047-47cde47d49d2",
+      "result_id": "921a23b3-4350-49de-8e7e-b119fed21f9b"
+    },
+    {
+      "claim_id": "76609fe3-fa7d-4bdc-8894-93c8ea187535",
+      "result_id": "921a23b3-4350-49de-8e7e-b119fed21f9b"
+    },
+    {
+      "claim_id": "e89326ae-5418-4eba-8668-fedff88cf7e4",
+      "result_id": "921a23b3-4350-49de-8e7e-b119fed21f9b"
+    },
+    {
+      "claim_id": "66df0dc9-4d16-42c3-b94f-b071f30ea0bc",
+      "result_id": "921a23b3-4350-49de-8e7e-b119fed21f9b"
+    },
+    {
+      "claim_id": "ecb2a311-d7d6-4cc7-843a-98c21b3046a2",
+      "result_id": "6ad3dca2-1000-4294-b20f-cf97b7e9048e"
+    },
+    {
+      "claim_id": "2b766b48-98ac-43dd-87b3-6754ee8f9a1d",
+      "result_id": "6ad3dca2-1000-4294-b20f-cf97b7e9048e"
+    },
+    {
+      "claim_id": "bb126cfc-eb94-4cf2-9ba8-ba8413647b1e",
+      "result_id": "6ad3dca2-1000-4294-b20f-cf97b7e9048e"
+    },
+    {
+      "claim_id": "f63af42f-6c4c-4fe5-a02b-20611359e25c",
+      "result_id": "6ad3dca2-1000-4294-b20f-cf97b7e9048e"
+    },
+    {
+      "claim_id": "700a8d7a-d763-4064-8356-9ba719f10591",
+      "result_id": "6ad3dca2-1000-4294-b20f-cf97b7e9048e"
+    },
+    {
+      "claim_id": "844f1149-ddce-4a35-8699-8f9e8f1f3f5d",
+      "result_id": "6ad3dca2-1000-4294-b20f-cf97b7e9048e"
+    },
+    {
+      "claim_id": "24b7f918-c577-4dc9-b850-e779ad14cd61",
+      "result_id": "6ad3dca2-1000-4294-b20f-cf97b7e9048e"
+    },
+    {
+      "claim_id": "843483d4-bc7f-480e-b108-cd1600458b61",
+      "result_id": "6ad3dca2-1000-4294-b20f-cf97b7e9048e"
+    },
+    {
+      "claim_id": "0b097be2-a4c9-4617-88b1-252c05332f76",
+      "result_id": "6ad3dca2-1000-4294-b20f-cf97b7e9048e"
+    },
+    {
+      "claim_id": "5ff9985f-0f06-46da-9d63-b23f130fd278",
+      "result_id": "6ad3dca2-1000-4294-b20f-cf97b7e9048e"
+    },
+    {
+      "claim_id": "5f24c65c-e995-4a95-946f-de78d2dd9895",
+      "result_id": "e857aa98-061f-452b-95a3-8a8b8363f99c"
+    },
+    {
+      "claim_id": "9cb0bd32-d3b8-4206-8095-3d589f6acbe3",
+      "result_id": "e857aa98-061f-452b-95a3-8a8b8363f99c"
+    },
+    {
+      "claim_id": "3dc4cb7d-eee2-4ecc-8475-318a022230c8",
+      "result_id": "e857aa98-061f-452b-95a3-8a8b8363f99c"
+    },
+    {
+      "claim_id": "b08c467f-a062-43b7-bcc0-585ad07a17d8",
+      "result_id": "9f0da2fc-e445-476f-943d-36e63511c8fa"
+    },
+    {
+      "claim_id": "8e784901-51a4-482d-a66a-89a4e02d5572",
+      "result_id": "878a2a2d-bee0-47cc-be86-59f14b60d888"
+    },
+    {
+      "claim_id": "1c2a56ce-6e70-4a45-8aa9-7d5d8caccb46",
+      "result_id": "878a2a2d-bee0-47cc-be86-59f14b60d888"
+    },
+    {
+      "claim_id": "c1b80232-fe5f-4ce6-9369-fd47fcdec248",
+      "result_id": "878a2a2d-bee0-47cc-be86-59f14b60d888"
+    },
+    {
+      "claim_id": "5f05c118-4001-4afb-9d09-1d5bddf1bdde",
+      "result_id": "878a2a2d-bee0-47cc-be86-59f14b60d888"
+    },
+    {
+      "claim_id": "d29c7c58-cc3c-4e8d-8e64-2e7ce917dca1",
+      "result_id": "878a2a2d-bee0-47cc-be86-59f14b60d888"
+    },
+    {
+      "claim_id": "fc6b9a4a-91a0-46aa-915a-ce8626624743",
+      "result_id": "878a2a2d-bee0-47cc-be86-59f14b60d888"
+    },
+    {
+      "claim_id": "b620b152-1de8-461a-b1ad-fb8f4e7f664f",
+      "result_id": "878a2a2d-bee0-47cc-be86-59f14b60d888"
+    },
+    {
+      "claim_id": "2e01f76a-0301-41d0-a46b-1af5072e420c",
+      "result_id": "ffabc42b-227a-4628-9f46-cbce0013b7c4"
+    },
+    {
+      "claim_id": "7b12b25b-f167-496f-82f0-83b0fa48a640",
+      "result_id": "ffabc42b-227a-4628-9f46-cbce0013b7c4"
+    },
+    {
+      "claim_id": "3958b8f1-6fcf-4cc5-a996-b6da79bfb0c8",
+      "result_id": "ffabc42b-227a-4628-9f46-cbce0013b7c4"
+    },
+    {
+      "claim_id": "ff374e3e-2752-46b3-9f42-e63b71a18ca2",
+      "result_id": "ffabc42b-227a-4628-9f46-cbce0013b7c4"
+    },
+    {
+      "claim_id": "5586e283-8de4-4e42-9835-6f0bb8a43d9b",
+      "result_id": "f9498882-e1f3-461b-829e-164eb11835d2"
+    },
+    {
+      "claim_id": "2070a9d9-5106-4ff2-b35b-5554bb29da91",
+      "result_id": "f9498882-e1f3-461b-829e-164eb11835d2"
+    },
+    {
+      "claim_id": "f6aab792-6c5f-419d-959b-8495bdb7592c",
+      "result_id": "f9498882-e1f3-461b-829e-164eb11835d2"
+    },
+    {
+      "claim_id": "6ff6243e-4f68-4b38-bd57-26a8fec835a6",
+      "result_id": "f9498882-e1f3-461b-829e-164eb11835d2"
+    },
+    {
+      "claim_id": "19e863dd-5cd5-41da-af3f-77038cd5c8fa",
+      "result_id": "f9498882-e1f3-461b-829e-164eb11835d2"
+    },
+    {
+      "claim_id": "81f70efc-9035-4b15-9ff1-9452819399a8",
+      "result_id": "dd9767fd-60c6-435d-9e1f-763fbf517642"
+    },
+    {
+      "claim_id": "003e321c-1060-4686-9b4c-ef525c1a0562",
+      "result_id": "dd9767fd-60c6-435d-9e1f-763fbf517642"
+    },
+    {
+      "claim_id": "5129f136-20d4-49b0-9f08-0eaaa0c11fa3",
+      "result_id": "035b7dcb-53f9-4efc-a67c-6ec69be56367"
+    },
+    {
+      "claim_id": "8b0fabb0-7028-4096-91d0-124aabebe237",
+      "result_id": "035b7dcb-53f9-4efc-a67c-6ec69be56367"
+    },
+    {
+      "claim_id": "d1143b40-5cf9-426b-93f5-038020bd8a46",
+      "result_id": "035b7dcb-53f9-4efc-a67c-6ec69be56367"
+    },
+    {
+      "claim_id": "9c754228-8749-4579-bfc1-bf150310d028",
+      "result_id": "035b7dcb-53f9-4efc-a67c-6ec69be56367"
+    },
+    {
+      "claim_id": "982c742b-9d1b-4b95-8a54-3c4c7ef66566",
+      "result_id": "27e06823-1e40-4d47-8a14-417ec29d1e76"
+    },
+    {
+      "claim_id": "c1260928-b937-4e9c-8ae9-49f487f11664",
+      "result_id": "27e06823-1e40-4d47-8a14-417ec29d1e76"
+    },
+    {
+      "claim_id": "297a62a1-8d9b-4113-b876-ff56dffafa1b",
+      "result_id": "27e06823-1e40-4d47-8a14-417ec29d1e76"
+    },
+    {
+      "claim_id": "7c520504-7336-424e-b273-90a10586be6d",
+      "result_id": "27e06823-1e40-4d47-8a14-417ec29d1e76"
+    },
+    {
+      "claim_id": "6c307ddf-7ceb-4e74-bc83-043973bbd10d",
+      "result_id": "b0c0aa76-6dc2-4583-a325-eac4d5eaeaf0"
+    },
+    {
+      "claim_id": "f321f55d-9100-4ac1-8f76-64caac28b2f1",
+      "result_id": "b0c0aa76-6dc2-4583-a325-eac4d5eaeaf0"
+    },
+    {
+      "claim_id": "7528c079-749c-426e-98cc-331d0a29d21b",
+      "result_id": "30f337ee-8331-413e-8e41-eb174cd0adeb"
+    },
+    {
+      "claim_id": "c8e4df81-a1c0-489b-9dc3-700b5c577d73",
+      "result_id": "30f337ee-8331-413e-8e41-eb174cd0adeb"
+    },
+    {
+      "claim_id": "5354e6cf-86bb-4972-ab51-75c1797f2295",
+      "result_id": "30f337ee-8331-413e-8e41-eb174cd0adeb"
+    },
+    {
+      "claim_id": "933eec29-2c6d-4465-8ee6-e29645ada9e4",
+      "result_id": "30f337ee-8331-413e-8e41-eb174cd0adeb"
+    },
+    {
+      "claim_id": "b057391b-ea04-4e1c-bf98-7deff98dd0b8",
+      "result_id": "30f337ee-8331-413e-8e41-eb174cd0adeb"
+    },
+    {
+      "claim_id": "5548ab1d-3039-447d-8032-2a5aad5cab81",
+      "result_id": "30f337ee-8331-413e-8e41-eb174cd0adeb"
+    },
+    {
+      "claim_id": "55bd788f-0556-4bd0-bcc0-9546b759d826",
+      "result_id": "30f337ee-8331-413e-8e41-eb174cd0adeb"
+    },
+    {
+      "claim_id": "fc5227ac-d8c1-44b9-8310-a2d9d0357145",
+      "result_id": "30f337ee-8331-413e-8e41-eb174cd0adeb"
+    },
+    {
+      "claim_id": "84529835-3e04-4ff6-ba21-a1054b8e4e8f",
+      "result_id": "30f337ee-8331-413e-8e41-eb174cd0adeb"
+    },
+    {
+      "claim_id": "11a84bd0-2fa4-4e3e-b2e6-11f5f2dbf6c1",
+      "result_id": "30f337ee-8331-413e-8e41-eb174cd0adeb"
+    },
+    {
+      "claim_id": "9d47f0b1-2b04-4f10-9f5a-e667058d3d81",
+      "result_id": "30f337ee-8331-413e-8e41-eb174cd0adeb"
+    },
+    {
+      "claim_id": "b204700c-62e3-423c-9f38-ad9ab7530494",
+      "result_id": "30f337ee-8331-413e-8e41-eb174cd0adeb"
+    },
+    {
+      "claim_id": "a7b81982-7244-442b-90c9-8e6e2f6f5e96",
+      "result_id": "bca46575-e506-461a-894b-4ba5c5e3b7d8"
+    },
+    {
+      "claim_id": "38392260-aec7-4991-83a3-7c0046d548da",
+      "result_id": "bca46575-e506-461a-894b-4ba5c5e3b7d8"
+    },
+    {
+      "claim_id": "11e1dd62-a3cb-44f0-8aa8-bbd8864ee220",
+      "result_id": "bca46575-e506-461a-894b-4ba5c5e3b7d8"
+    },
+    {
+      "claim_id": "c4a4fd4d-b28c-4efb-881f-ac81b652675b",
+      "result_id": "9525864a-4dd0-414d-b9f8-d655553a79db"
+    },
+    {
+      "claim_id": "65da5c1a-a900-4540-a3a5-1bb269dd8e05",
+      "result_id": "9525864a-4dd0-414d-b9f8-d655553a79db"
+    },
+    {
+      "claim_id": "3d43da7f-a572-487d-b9a7-413000edb0ff",
+      "result_id": "ec3b19fb-f6ae-4a1d-9315-4ce2d47a41c7"
+    },
+    {
+      "claim_id": "7ec97810-612a-4934-92fc-98a06ddd43bb",
+      "result_id": "ec3b19fb-f6ae-4a1d-9315-4ce2d47a41c7"
+    },
+    {
+      "claim_id": "42d45df6-1009-468b-b734-1b4f37145964",
+      "result_id": "ec3b19fb-f6ae-4a1d-9315-4ce2d47a41c7"
+    },
+    {
+      "claim_id": "91ba4b46-e1bc-4f04-8b69-434cc4ec1067",
+      "result_id": "1824f0d4-d3ec-4501-9bee-d4dc37a304ab"
+    },
+    {
+      "claim_id": "521b58c6-a08b-4a79-9f76-7cfa17da4c21",
+      "result_id": "1824f0d4-d3ec-4501-9bee-d4dc37a304ab"
+    },
+    {
+      "claim_id": "217154c3-750b-4880-8ba1-ea578da21de4",
+      "result_id": "1824f0d4-d3ec-4501-9bee-d4dc37a304ab"
+    },
+    {
+      "claim_id": "aaa9f330-1d84-4e19-9d34-c5a3fe095c4b",
+      "result_id": "1824f0d4-d3ec-4501-9bee-d4dc37a304ab"
+    },
+    {
+      "claim_id": "cad31039-0997-474f-b54d-d79c7f776636",
+      "result_id": "1824f0d4-d3ec-4501-9bee-d4dc37a304ab"
+    },
+    {
+      "claim_id": "8a733121-52f2-426c-b3f8-8d5fbbcda8fc",
+      "result_id": "a71969d1-30b0-4e59-ba94-fff362c96766"
+    },
+    {
+      "claim_id": "0b83b32e-33f1-41d9-8e0c-f31c41542bfc",
+      "result_id": "a71969d1-30b0-4e59-ba94-fff362c96766"
+    },
+    {
+      "claim_id": "e4fd62bb-4816-45e8-bcf8-d66edba12432",
+      "result_id": "9ab6d60d-6a9b-4159-b679-33da3092f6a2"
+    }
+  ],
+  "comparisons": []
+}

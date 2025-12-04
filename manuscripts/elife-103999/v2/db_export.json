@@ -1,0 +1,1611 @@
+{
+  "submission": {
+    "id": "e23b698d-991f-43a7-9164-9e43adb14303",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-04T05:20:40.011035Z",
+    "updated_at": "2025-12-04T05:20:40.011035Z"
+  },
+  "content": [
+    {
+      "id": "ba099b09-143d-419e-ad6d-3880638d0f8a",
+      "submission_id": "e23b698d-991f-43a7-9164-9e43adb14303",
+      "content_type": "manuscript",
+      "content_text": "# The dominant\u2013egalitarian transition in species-rich communities\n\n## Authors\n\n- David A Kessler<sup>1</sup> ([ORCID: 0000-0002-5279-1655](https://orcid.org/0000-0002-5279-1655)) \u2020\n- Nadav M Shnerb<sup>1</sup> ([ORCID: 0000-0003-4418-6284](https://orcid.org/0000-0003-4418-6284)) \u2020\n\n### Affiliations\n\n1. Department of Physics, Bar-Ilan University, Ramat-Gan Ramat-Gan Israel ([ROR:03kgsv495](https://ror.org/03kgsv495))\n\n\u2020 Corresponding author\n\n## Abstract\n\nDiverse communities of competing species are generally characterized by substantial niche overlap and strongly stochastic dynamics. Abundance fluctuations are proportional to population size, so the dynamics of rare populations is slower. Hence, once a population becomes rare, its abundance gets stuck at low values. Here, we analyze the effect of this phenomenon on community structure. We identify two distinct phases: a dominance phase, in which a tiny number of species constitute most of the community, and an egalitarian phase, where it takes a finite fraction of all species to constitute most of the community. Using empirical data from microbial, planktonic, and macroorganismal systems, we demonstrate the relevance of this transition and show how demographic stochasticity and immigration critically determine phase behavior. Our results suggest that even slight changes in noise strength or immigration rates can lead to abrupt shifts in community diversity.\n\n## Introduction\n\nMany ecological systems contain numerous competing species, strains, or types (Hutchinson, 1961; Stomp et al., 2011; ter Steege et al., 2013; Connolly et al., 2014; Fierer et al., 2007). In such systems, it can be assumed a priori that the structure of the community essentially reflects resource competition among species (Gause, 2003; Tilman, 1982), with factors such as niche overlap and fitness differences playing a central role in the community assembly (Chesson, 2000; Chesson, 2003). Analyzing these factors and their impact is crucial for understanding the dynamics of these systems, and consequently, for our ability to intervene in these dynamics to achieve desired outcomes \u2013 from maintaining biodiversity in a changing world to successfully altering the state of the gut microbiome (David et al., 2014; Grilli, 2020; Egu\u00edluz et al., 2019; Cooper et al., 2024; Callaghan et al., 2021).\n\nUnfortunately, progress in this area has been quite difficult. The coexistence of many species remains largely puzzling, especially given the competitive exclusion principle (Tilman, 1982) and the strict constraints on the stability and feasibility of such complex systems (May, 1972). Moreover, quantifying the relevant parameters in diverse communities is extremely challenging, particularly considering the high level of stochasticity typically present in ecological dynamics. As a result, approaches inspired by statistical physics, which examine generic models through a few summary statistics, have gained significant popularity in recent years (Fisher and Mehta, 2014; Kessler and Shnerb, 2015; Bunin, 2017; Barbier et al., 2018; Grilli, 2020; van Nes et al., 2024).\n\nBroadly speaking, attempts to present a generic analysis of diverse communities can be divided into two main approaches that differ in their interpretation of what determines dominance. In one class of models, the identity of the high-abundance species reflects intrinsic fitness differences (whether through growth rates, competitive advantage, or resource-use efficiency) so that the dominant species are effectively the \u2018fittest\u2019 (Fisher and Mehta, 2014; Bunin, 2017; Barbier et al., 2018; Azaele and Maritan, 2023; Marcus et al., 2022). In contrast, an alternative view holds that dominance arises from contingent stochastic dynamics: species happen to be abundant not because they are intrinsically superior, but as a result of random historical trajectories. These trajectories may reflect demographic noise, environmental stochasticity, or even deterministic chaos in systems with complex interactions.\n\nThe prototype of this second class of approaches was introduced in the neutral model proposed by Crow and Kimura, 1970 and Hubbell, 2001. In the original neutral models, demographic stochasticity \u2013 the inherent randomness in the birth\u2013death process at the individual level \u2013 is the sole driver of abundance variations. Analytical solutions to these models are relatively easy to obtain (Volkov et al., 2003; Azaele et al., 2015) and have been quite successful in explaining the observed species abundance distributions (SADs), as well as other static patterns, in both regional and local communities (Rosindell et al., 2011). However, pure demographic stochasticity cannot account for dynamic patterns, whether evolutionary (such as the time to the most recent common ancestor) (Nee, 2005; Ricklefs, 2006) or ecological (such as the dynamics of abundance variation and similarity indices) (Leigh, 2025; Chisholm and O\u2019Dwyer, 2014; Kalyuzhny et al., 2014b; Kalyuzhny et al., 2014a). Demographic stochasticity results in relatively slow and weak abundance variations, whereas observed variability is much stronger and occurs more rapidly (Kalyuzhny et al., 2014b; Chisholm et al., 2014).\n\nThe time-averaged neutral model (Kalyuzhny et al., 2015) addresses these limitations by relaxing the assumption of time-independent fitness. In this model, the relative fitness of each species fluctuates over time, but all species share the same mean fitness. The analysis of the time-averaged neutral model is more complex, as environmental stochasticity can facilitate coexistence through the storage effect (Chesson and Warner, 1981). However, the significance of this effect diminishes in highly diverse systems (Dean et al., 2017; Danino and Shnerb, 2018; Pande and Shnerb, 2022; Meyer et al., 2022).\n\nRecent studies have highlighted a notable effect of environmental stochasticity in competitive communities, known as \u2018stickiness\u2019 (van Nes et al., 2024) or \u2018diffusive trapping\u2019 (Dean and Shnerb, 2020). Under environmental stochasticity, abundance variations are proportional to population size, meaning that the dynamics of rare species is slow, causing them to linger near the extinction point for extended periods. van Nes et al., 2024 suggested that this stickiness enables time-averaged neutral models to produce patterns \u2013 such as changes in abundance over time, dominant species turnover, and community egality \u2013 that closely resemble those observed in real ecological communities. Similar results were found by Mallmin et al., 2024 in a system of competing species for which the overall dynamics are chaotic. This makes sense, given that the relative fitness of a specific species depends on the abundances of its competitors, so if these abundances fluctuate strongly over time, as they do in the chaotic phase, the community will likely reach a state that resembles time-averaged neutrality.\n\nOur main goal in this article is to identify a previously unrecognized phase transition between dominant and egalitarian communities. To describe this transition, we define the number of dominant species, $S_{1/2}$, as the minimum number of species that must be grouped together at a given moment to account for more than half of the total population. The level of equality in the community is then measured by the egality ratio, $S_{1/2}/S$, where $S$ is the total species richness. We show that in the dominance phase, the growth of $S_{1/2}$ with $S$ is sublinear, so the egality parameter approaches zero as $S\u2192\u221e$, whereas in the egalitarian phase, $S_{1/2}$ grows linearly with $S$, and the egality parameter converges to a finite value. We demonstrate the existence of these two phases through analysis of empirical data on patterns of commonness and rarity across a wide range of ecological systems, from tropical forest trees to the human microbiome.\n\nDuring the analysis and comparisons with the empirical data, we also arrived at two important insights.\n\nThe dominant\u2013egalitarian phase transition has practical implications. A small decrease in the immigration rate or, alternatively, a small increase in the level of stochasticity can lead to a sharp decline of the diversity within a given community. Moreover, in the section \u2018Materials and methods\u2019, we have examined cases in which neutrality is broken, including fitness differences and asymmetry in the competitive interaction matrix. The results of this study demonstrate that the phase transition between the egalitarian and dominance regimes is not an artifact of perfect neutrality, but remains robust over a finite region of parameter space near the neutral point.\n\n## Results\n\nAs we have already mentioned, without external immigration, the stickiness will eventually cause the abundance of all species, except one, to drop below any finite threshold, leading the community to a state of monodominance. To avoid disrupting the continuity of the main discussion, we detail and demonstrate this claim in \u2018SI A\u2019 (see also the supplement to Figure 1). Therefore, the basic model we study is given by\n\n$$\n\\frac{dN_{i}}{dt}=\\mu+N_{i}(1\u2212\\frac{\\sumj=1SN_{j}}{K})+r_{i}(t)N_{i}\\frac{dr_{i}}{dt}=\u2212\\frac{r_{i}}{\\tau}+\\theta\u03b7_{i}(t),\n$$\n\nwhere $N_{i}$, $i=1,\u2026,S$ is the abundance of the ith species. $K$ sets the overall carrying capacity. The growth rate of the ith species is  $1+r_{i}(t)$, where $r_{i}(t)$ is an independently fluctuating variable, with a correlation time $\\tau$, driven by the white noise $\u03b7_{i}$. The immigration rates of all species are identical and given by $\\mu>0.$ Further details on the model are given in the \u2018Materials and methods\u2019 section.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/103999/elife-103999-fig1-v2.jpg)\n\n**Figure 1.:** Red circles: results of a simulation of the process described in Equation 1 with parameters $S=200$, $\\mu=0.6$, $K=2\u22c510^{6}$, $\\sigma~_{e}=0.1$ and $\\tau=8$. The values of the extracted parameters for Equation 4 are $c=0.0034$ and $\\sigma~_{e}^{2}=0.0131$. The solid line in blue is the expression of Equation 4 with parameters $\\alpha=91.2$ and $\\beta=1.56$.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/103999/elife-103999-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Species abundances (left), log-abundance (middle), and the egality parameter $S_{1/2}/S$ (right) for the model considered in the main text of van Nes et al., 2024, Parameters are $S=100$, $\\sigma~_{e}=0.005$ and $K=100$.The dynamics of Equation SA2 was integrated. The log-abundance of all species performs a random walk (middle), hence, as time goes by, more and more species get stuck at negligible abundances (this is the diffusive trapping, or stickiness of the rare state, left), and only a single species dominates the community and the egality parameter decreases to $1/S$.\n\nis an independently fluctuating variable, with a correlation time $\\tau$, driven by the white noise $\u03b7_{i}$. The immigration rates of all species are identical and given by $\\mu>0.$ Further details on the model are given in the \u2018Materials and methods\u2019 section.\n\n### Stickiness and species abundance distribution\n\nWithout immigration, the carrying capacity parameter $K$ plays no role in the dynamics. Actually, by defining $N_{i}=Kn_{i}$ one may rescale Equation 1 to $K=1$. When immigration is introduced, the parameter $K/\\mu$ expresses the ratio between the carrying capacity and the typical minimum level of population size. The larger this ratio, the stronger the stickiness effect.\n\nOn top of that, since stickiness arises from environmental stochasticity, it becomes stronger as $\\sigma~_{e}^{2}\u2261\\theta^{2}\\tau^{2}$ increases. Dimensional analysis reveals that the dimensionless parameter that governs stickiness is\n\n$$\n\\gamma\u2261\\frac{K\u2062\\sigma~_{e}^{2}}{\\mu}.\n$$\n\nThe larger $\\gamma$ is, the stronger is the stickiness, and the community approaches monodominance when $\\gamma\u2192\u221e$; for example, when $\\mu\u21920$.\n\nIn order to advance in the analysis, we are interested in replacing Equation 1, which provides us with a description of an $S$-dimensional system where each species can affect every other species, with an effective, one-dimensional equation for a focal species, considering all others as a single rival species. In the classical neutral theory, with pure demographic stochasticity, this can be done trivially, as the species identity of a particular individual plays no role in the dynamics. In the time-averaged neutral theory, however, the situation is much more subtle.\n\nThe distinction between neutral and time-averaged neutral models \u2013 as it arises in the attempt to derive an effective one-species description \u2013 was clarified in Danino and Shnerb, 2018 and Steinmetz et al., 2020, and has to do with the difference between the time-averaged growth rate of a given species and the population-averaged growth rate of the community. In Equation 1, the linear growth rate of each species is $1+r(t)$. Since the $r$ process is symmetric around zero, the time-average growth rate of each species is unity. Nevertheless, the instantaneous growth rate of the community is, on average, greater than 1. At any given moment, the fitter species are growing faster, so that on average more than 50% of the individuals belong to instantaneously beneficial species. As a result, the typical value of $\\sumjN_{j}>K$, and therefore the dynamics of a single species satisfies the effective one-dimensional stochastic differential equation,\n\n$$\n\\frac{dN}{dt}=\\mu+(\\frac{\\sigma_{e}^{2}}{2}\u2212c)N+\\sigma_{e}\u03b7(t)N,\n$$\n\nwhere $c=E[(\\sumjN_{j}\u2212K)/K]$. The noise in the net growth rate of the ith species arises from two sources, the first being the direct effect of $\u03b7_{i}(t)$, and the second being the fluctuations in the competition term, $\u2212\\sumjN_{j}/K$. The two parameters $c$ and $\\sigma_{e}$ may be measured, for any given values of $K$, $S$, and $\\sigma~_{e}$, from long simulations of Equation 1. Unless we are looking at the most abundant species, the correlations between the competition term and $\u03b7_{i}$ are small, and the two contributions are roughly independent. Thus, the overall effect of these two contributions is\n\n$$\n\\sigma_{e}^{2}\u2248\\sigma~_{e}^{2}+\\sigma_{c}^{2}\n$$\n\nHere, $\\sigma_{c}^{2}$ is the time integral of the two-time correlation function of $c$ and equals $2\\tauVar[\\sumN_{i}/K]$. For example, for $\\sigma~_{e}=0.01$, $S=200$, $K=2\u22c510^{6}$, $\\mu=0.6$, we have $\\sigma_{c}^{2}\u22500.0031$ and $\\sigma_{e}^{2}\u22500.1031$, in line with Equation 3. The Stratonovich term $\\sigma_{e}^{2}/2$ expresses the fact that for a population that sometimes grows exponentially and sometimes declines, even if its average growth rate is zero, the arithmetic mean still increases over time. Once this term is introduced, the standard Ito calculus may be applied to Equation 2.\n\nOnce the relevant parameters are calibrated, the distribution for $P(N)$ may be extracted from Equation 2, see \u2018SI 2\u2019. The resulting distribution is\n\n$$\nP(n)=Ae^{\u2212\\alpha/n}n^{\u2212\\beta},\n$$\n\nwhere $\\alpha=2\\mu/\\sigma_{e}^{2}$, $\\beta=1+2c/\\sigma_{e}^{2}$ and $A$ is a normalization factor. Figure 1 illustrates the success of the approximation and the validity of Equation 4 in a simulation of a community of $S=200$ interacting species governed by Equation 1.\n\nA similar result was presented a few months ago by Mallmin et al., 2024, who dealt with a system of competing species where the community dynamics is chaotic (but without external stochasticity). In such a case, one can consider, for each focal species, all other species as an effective external environment whose fluctuations generate stochasticity in the instantaneous growth rate of the focal species. A discussion of the similarities and differences between our case and the chaotic model will be presented below.\n\n### The egalitarian transition\n\nThe most striking implication of Equation 4 is the sharp shift in the compositional properties of the community at $\\beta=2$. When $\\beta>2$, abundant species are relatively rare, resulting in an \u2018egalitarian\u2019 community. Conversely, when $\\beta<2$, the community composition is dominated by a few exceptionally abundant species.\n\nTo quantify the egality of the community, one may use the criterion suggested by van Nes et al., 2024, which involves comparing the total number of species, $S$, to the minimal number of species required to make up half of the community, $S_{1/2}$. In a more egalitarian community, the fraction $S_{1/2}/S$ is finite, indicating that the number of dominant species is proportional to the total number of species. In contrast, in a community dominated by only a few species, the ratio $S_{1/2}/S$ approaches zero as $S$ increases, meaning the number of dominant species is sublinear in $S$.\n\nIn Appendix C, we provide the relevant mathematical analysis, demonstrating that, as $\\beta$ decreases towards 2, $S_{1/2}/S$ monotonically decreases, and in the limit $\\beta\u21922^{+}$,\n\n$$\n\\frac{S_{1/2}}{S}\u223ce^{\u2212(ln\u20612)/(\\beta\u22122)}.\n$$\n\nThus, this egality parameter vanishes in a singular manner in that limit, indicating the transition out of the egalitarian phase.\n\nThe numerical results presented in Figure 2A illustrate this phenomenon and offer several additional interesting insights. Beyond the positive indication regarding the result in the limit where $S\u2192\u221e$, Figure 2A shows that the value of $\\beta$ depends only weakly on $S$ so it can be considered approximately constant. Moreover, as seen in Figure 2B, for $\\beta<2$ the dependence of $S_{1/2}$ on $S$ follows a power law, with an exponent approaching unity from below at the phase transition point $\\beta=2$.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/103999/elife-103999-fig2-v2.jpg)\n\n**Figure 2.:** Left panel (A): the egality parameter $S_{1/2}/S$ is plotted against $1/S$, the total number of species, for $\\sigma~_{e}=0.015$ (blue) 0.02 (red) 0.04 (orange) and 0.08 (green). For all these simulations $\\mu=0.6$, $\\tau=8$ and $K=10^{4}$. The values of the parameter $\\beta$, as extracted from the simulation, are plotted (again, vs. $1/S$) in the inset. As expected, for $\\beta>2$ (blue) the egality parameter $S_{1/2}/S$ extrapolates, at $S\u2192\u221e$, to a finite value, meaning that the fraction of high-abundance species is finite and the community is egalitarian. This feature is also reflected in the right panel (B), where at large $S$, $S_{1/2}\u223c0.04S$ for $\\sigma~_{e}=0.02$ (red) and $S_{1/2}\u223c0.08S$ for $\\sigma~_{e}=0.015$ (blue). On the other hand, when $\\sigma~_{e}=0.08$ (green), the value of $\\beta$ approaches 1.8 and is definitely smaller than two. In addition, the egality parameter extrapolates to zero at large $S$, meaning that the community is dominated by a small number of species. The results shown in the right panel suggest $S_{1/2}\u223cS^{0.3}$. The case $\\sigma~_{e}=0.04$ (orange) represents a near marginal case, for which $\\beta$ extrapolates to values slightly smaller than 2, and it would appear that $S_{1/2}/S$ is tending toward zero. Indeed, the right panel shows a power law with exponent smaller than unity and decreasing with increasing $\\sigma~_{e}$.\n\nOf course, there are other quantities one could employ to quantify the egality. One such possibility is the inverse participation ratio, $I$, defined as $I=[\\sumi(N_{i}/K)^{2}]^{\u22121}$. This varies from 1 in the limit of single species dominance to $S$ for an egalitarian community. Our measurements (not shown) indicate that, similarly to $S_{1/2}$, $I$ increases with $S$, though the exponents controlling the growth are slightly lower. For example, for $\\sigma~_{e}=0.08$, $I\u223cS^{0.26}$, as opposed to $S_{1/2}\u223cS^{0.29}$, and for $\\sigma~_{e}=0.4$, $I\u223cS^{0.4}$, while $S_{1/2}\u223cS^{.52}$.\n\n### Comparison with empirical results and the impact of demographic stochasticity\n\nLet us now examine the SAD in several cases of diverse communities, assess their degree of alignment with the results presented above, and attempt to differentiate between dominance and egalitarian communities, linking the results to the fundamental characteristics of each system.\n\nWe analyze the community structure in four systems: the human gut microbiome (David et al., 2014), marine prokaryotes (Egu\u00edluz et al., 2019), tropical trees (Cooper et al., 2024), and bird species (Callaghan et al., 2021). All of these communities are hyperdiverse, with thousands of species, making them reflective of the limit where $1/S$ is very close to zero \u2013 a limit where the distinction between egalitarian and dominance systems is clearly defined, with the relevant values of $S_{1/2}/S$ being those shown in Figure 2.\n\nFigure 3a shows the excellent agreement between the empirical data for the gut microbiome and our model prediction (Equation 4). In the case of ocean prokaryotes, presented in panel (b), only a pure power law is observed, perhaps because the sampling strength is insufficient. Weak sampling shifts the distribution leftward, thus hiding the true characteristics of the SAD for small abundance populations (Maruvka et al., 2010). In both cases $\\beta<2$, indicating that these systems are in the dominant phase, consistent with the very small values of $S_{1/2}/S$ observed in the data.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/103999/elife-103999-fig3-v2.jpg)\n\n**Figure 3.:** The gut microbial community (OTUs of subject A from David et al., 2014) fits our formula Equation 4 quite well. Immigration is extremely weak, but the sampling power is strong enough to reveal some of the effects of the decrease in the number of species at low densities due to immigration. The corresponding distribution for the oceanic prokaryote population Egu\u00edluz et al., 2019 is very close to a pure power law, possibly because the sampling is not deep enough (see text). In both cases, $\\beta<2$, indicating that the community is dominated by only a few species. The distributions for the global bird population (Callaghan et al., 2021) and tropical trees in the Amazon Basin (Cooper et al., 2024) show a clear transition between two power-law behaviors. As explained in the text, for these macroorganisms the effect of demographic stochasticity must be taken into account. When this is done (see \u2018SI D\u2019), we obtain an excellent fit for the results using the corrected formula. Equation 6. For birds, we find $\\beta\u22482$, placing them on the margin between egalitarian and dominance communities. For tropical trees in the Amazon Basin, $\\beta$ is definitely larger than two, indicating that the community is indeed egalitarian. Note the similarities between the values of $S_{1/2}/S$ in the empirical results and the numerical experiments in Figure 2. For more information, see \u2018SI E\u2019.\n\nIn contrast, in Figure 3c and d, for birds and Amazon basin trees, respectively, the empirical distribution does not fit Equation 4. Instead, the population size distribution shows a pronounced crossover between two descending power laws, without a maximum point at a finite abundance.\n\nTo explain this, we note that trees and birds differ from microorganisms in two important ways. First, since macroorganisms tend to have larger body sizes and longer lifespans, their metabolism buffers them against environmental fluctuations. Additionally, since populations of macroorganisms often span wide geographic ranges, most environmental variations appear uncorrelated across populations. Environmental variation that affects individuals, or small groups within the population, in an uncorrelated manner contributes to demographic stochasticity rather than to environmental stochasticity, which, by definition, affects entire populations coherently. Therefore, for macroorganisms we need to account for demographic stochasticity.\n\nIn \u2018SI D\u2019, we consider the case of a time-averaged neutral community with demographic stochasticity in addition to the previously considered immigration and environmental stochasticity. The expected distribution for species abundances now takes the form\n\n$$\nP(n)=An^{\u22121+2\\mu/\\sigma_{d}^{2}}(\\frac{\\sigma_{d}^{2}}{\\sigma_{e}^{2}}+n)^{\u22122c/\\sigma_{e}^{2}\u22122\\mu/\\sigma_{d}^{2}},\n$$\n\nwith $\\sigma_{d}$ parameterizing the strength of demographic stochasticity. Equation 6 converges to Equation 4 for values of $n$ satisfying $n\u226b\\sigma_{d}^{2}/\\sigma_{e}^{2}$ and predicts a different power-law for smaller values of $n$. With this new formula, one can now successfully fit the empirical data in Figure 3c and d. It is noteworthy that the transition point between the two power-laws happens for values of the abundance which are quite large, reinforcing our above comments about the effect of the large spatial and temporal scales of macroorganisms on reducing $\\sigma_{e}$ and increasing $\\sigma_{d}$.\n\nEven with the inclusion of demographic stochasticity, the distinction between dominant and egalitarian communities depends solely on the decay of the tail and its corresponding exponent $\\beta$, which, for Equation 6, remains as $\\beta=\u22121\u22122c/\\sigma_{e}^{2}$. Figure 3 thus illustrates the three types of behavior demonstrated in the numerical experiments shown in Figure 2: the microorganism communities are in the dominance phase, the tropical tree community is in the egalitarian phase, and the bird community appears to fall in between.\n\nA comparison between the values of the egality parameter in Figure 2 and the values of $S_{1/2}/S$ in van Nes et al., 2024 (for the same range of species richness $S$) also shows that some communities fall within the dominance phase, while others fall within the egalitarian phase. On the other hand, the results for plankton (Ser-Giacomi et al., 2018), in which $\\beta\\in[1...2]$, appear to suggest that these microorganismal communities are all in the dominance phase.\n\n### Relaxing the assumption of neutrality\n\nSo far, we have analyzed the properties of a system that is fully neutral in the deterministic limit \u2013 that is, all species have exactly the same fitness. In this section, we aim to explore, or at least provide a glimpse of, the outcomes that arise when this assumption is relaxed; in particular, we assess the robustness of our analysis in the vicinity of the neutral point.\n\nTo break perfect neutrality, we introduce heterogeneity into the interaction matrix. Specifically, we replace Equation 1 by\n\n$$\n\\frac{dN_{i}}{dt}=\\mu+N_{i}(1\u2212\\frac{N_{i}+\\sumj\\neqi(1\u22123\u03f5+\u03f5\\alpha_{i,j})N_{j}}{K})+r_{i}(t)N_{i}\\frac{dr_{i}}{dt}=\u2212\\frac{r_{i}}{\\tau}+\\theta\u03b7_{i}(t),\n$$\n\nwhere $\\alpha_{i,j}$ are zero-mean, unit-variance Gaussian random numbers, and $\\alpha_{i,j}$ is independent of $\\alpha_{j,i}$, so the interaction matrix is asymmetric. For $\u03f5=0$, this reduces to our original time-averaged neutral model. The additional $\u22123\u03f5$ term ensures that species compete most strongly against themselves, as is commonly assumed in ecological models, since the niche overlap between individuals of the same species is maximal.\n\nThe results are presented in Figure 4, which shows $S_{1/2}$ as a function of $\u03f5$ for two different values of the environmental stochasticity $\\sigma~_{e}$. As $\u03f5\u21920$, the system may reside either in the egalitarian phase (if $\\sigma~_{e}$ is small) or in the dominance phase under strong environmental stochasticity. In contrast, for large values of $\u03f5$, $S_{1/2}$ becomes independent of $\\sigma~_{e}$.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/103999/elife-103999-fig4-v2.jpg)\n\n**Figure 4.:** $S_{1/2}$, as obtained from simulations of Equation 7, is plotted against $\u03f5$, for $N=200$, $K=2\u22c510^{6}$ and $\\mu=0.6$. For $\\sigma~_{e}=0.01$ (blue circles), the system is in the egalitarian phase and the main effect of the transition to chaos is an effective enhancement of the strength of stochasticity that makes the system less egalitarian, hence $S_{1/2}$ decreases. The inverse effect is observed for $\\sigma_{e}=0.08$ (red squares). For large values of $\u03f5$, the effect of $\\sigma_{e}$ becomes negligible and the dependence of $S_{1/2}$ on $\\sigma_{e}$ weakens significantly. The data was obtained by averaging over at least 20 different realizations of the interaction matrix $\\alpha_{i,j}$.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/103999/elife-103999-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Time traces of species abundances for $\u03f5=0$ (left panel, time-averaged neutral) and $\u03f5=0.05$ (right panel, chaotic), with $S=200$, $K=10^{4}S$, and $\\tau=8$.Since $\\sigma~_{e}=0.01$, the system is in its egalitarian phase when $\u03f5=0$, and the abundance variations span approximately two orders of magnitude. In the chaotic phase (right panel), these variations span the entire range between $K$ and $\\mu=0.6$. Another notable feature is the emergence of cliques of high-abundance species in the chaotic phase, whereas in the stochastic phase there is a clear hierarchy of dominance. As a result, the chaotic phase exhibits a characteristic \u2018shoulder\u2019 of high-abundance species, as discussed in the main text.\n\nTo understand these results, note that in the absence of environmental stochasticity, the heterogeneous and asymmetric interactions lead to chaotic dynamics of the trajectories, as discussed in Arnoulx de Pirey and Bunin, 2024. Illustrations of fluctuation dynamics dominated by stochasticity versus those dominated by deterministic chaos are provided in \u2018SI F\u2019. Under chaotic dynamics, the system supports, at any instant of time, a clique of abundant species. This clique is stable in the sense that if all the species within it are placed together in a community, they will reach an equilibrium state in which all of them persist. However, the clique is invadable, meaning that at any given moment, there exist species outside the clique that are capable of invading and reaching high abundance (Kessler and Shnerb, 2025). Such a clique gives rise to a \u2018shoulder\u2019 at high abundance values (see Figure 5), since at any given moment there are several species with high abundance. In contrast, the hierarchical structure under pure environmental stochasticity leads to a simple power law, as seen earlier in Figure 1.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/103999/elife-103999-fig5-v2.jpg)\n\n**Figure 5.:** $ln\u2061P(n)$ vs.$ln\u2061n$ for $\u03f5={0\u00a0(solid blue line),0.05\u00a0(dashed red line)}$, $\\sigma~_{e}=0.01$.The distribution for $\u03f5=0$ is typical of the egalitarian phase with a large slope for large $n$. The distribution for $\u03f5=0.05$, however, has the slower falloff characteristic of the dominance phase. In addition, there is a shoulder for very large $n$, which is due to the existence of multiple sets of several transient quasi-stable species, arising from the chaotic dynamics present in the absence of environmental stochasticity.\n\nAs $\u03f5$ increases from zero to a finite value, the neutral-stochastic system discussed throughout this article transforms into a system where the dominant factor is deterministic chaos. In the chaotic phase, the dynamics still appears stochastic, but not due to fluctuations in external parameters, but rather as a result of the inherent characteristics of the deterministic dynamics.\n\nFigure 4 demonstrates that the transition to chaos affects $S_{1/2}$ in opposite ways in the two phases. In the egalitarian phase, the main effect of chaos is to increase the effective stochasticity, leading to a decline of $S_{1/2}$. In the dominance phase, by contrast, $S_{1/2}$ increases. This is due to the \u2018shoulder\u2019 in the abundance distribution described in Figure 5, that is, because dominance in the chaotic regime is associated with a clique rather than a single species.\n\n## Discussion\n\nHyperdiverse communities, like those analyzed in this article, are extremely important and frequently occur in nature. However, quantifying their specific parameters is an impossible task. Therefore, the attempt to understand the factors that dictate the community structure in these systems requires the use of models, which should preferably be as generic as possible.\n\nBroadly speaking, there are three generic scenarios for the dynamics of multispecies systems: those involving a stable clique of resident species; those in which the composition of the group of high-abundance species changes over time due to chaotic dynamics; and those assuming neutral dynamics.\n\nIn the first case, the set of high-abundance species is determined by their relative fitness (which reflects their intrinsic growth rate and interspecific interactions), which remains fixed over time. In the second, the composition of the dominant cliques varies intermittently over time, but this turnover is governed by deterministic factors, and at any given moment, only a specific set of low-abundance species is capable of exponential growth. Moreover, the system admits a characteristic timescale, the time required for one of these rare species to invade. This timescale depends logarithmically on the migration rate $\\mu$.\n\nIn the third case, discussed here, the identity of the high-abundance species at any given moment is a random outcome of environmental stochasticity. As in the chaotic case, there is no sharp separation between core species and low-abundance ones, and the fundamental timescale of the system is determined by the stickiness phenomenon described above.\n\nAs far as can be judged from the empirical SADs of Figure 2, it appears that they cannot be explained by the first scenario. Two of its main features are a gap between species with abundance of $O(K)$ and those with abundance of $O(\\mu)$, and a truncated Gaussian-shaped SAD for the high-abundance species \u2013 both of which are not observed in our distributions.\n\nThe chaotic case yields SADs that more closely resemble those we have reviewed here: they exhibit no gap and display a power-law behavior. In fact, when attempting to derive an effective equation for a single species, one arrives, as noted above, at the very same equation. As is well known, it is often possible to identify multiple underlying models that give rise to the same abundance distribution. Therefore, matching the SAD is a necessary condition for considering a model a plausible candidate, but leaves open the possibility of alternative explanations.\n\nTo tell apart chaos from environmental stochasticity, it may be necessary to focus specifically on the dynamics of the most abundant species. If the noise is intrinsic, originating from chaotic fluctuations, then a species that has reached dominance is expected to exhibit fluctuation patterns that differ markedly from those observed when the same species is rare. In contrast, if the fluctuations stem from external factors such as weather or precipitation, we would expect the statistical properties of abundance fluctuations to be independent of the species\u2019 current abundance level, as has been observed empirically (Kalyuzhny et al., 2014b).\n\nAnother test that may help distinguish between a chaotic and a stochastic system relates to the emergence of a fundamental timescale (Arnoulx de Pirey and Bunin, 2024) in chaotic dynamics \u2013 one associated with the invasion of rare species. Such a timescale does not appear in systems driven by external stochasticity. Like the previous approach, this too requires one to examine dynamic properties of the system, rather than relying solely on static features such as the abundance distribution.\n\nWhatever the underlying mechanism, the net result, as we have demonstrated herein, is that in the limit of strong interspecies coupling, a transition occurs between an egalitarian phase and a dominance phase. When the immigration rate $\\mu$ is reduced, total carrying capacity $K$ increases, or when environmental stochasticity $\\sigma_{e}$ increases, the system can suddenly lose a significant amount of diversity at the transition point. The dependence on the total population size $K$ is particularly interesting and has to do with the dispute about the relationships between productivity and species richness (Waide et al., 1999; Kadmon and Benjamini, 2006).\n\nWe will now discuss some potential extensions of the model described here and explore their possible implications.\n\nOur model assumed an uncorrelated response of species to environmental variations. This treatment can be easily extended to include correlated responses, using techniques similar to those implemented by Loreau and de Mazancourt, 2008. In general, under correlated responses, the effective number of species in the community decreases.\n\nAnother interesting point relates to the interplay between the stickiness mechanism, through which environmental stochasticity causes populations to spend long periods in a state of rarity, and mechanisms such as the storage effect or relative nonlinearity (Chesson, 1982; Chesson, 2000; Ellner et al., 2016; Letten et al., 2018) that allow rare populations to invade due to environmental stochasticity. It is likely that these mechanisms weaken as the number of species increases (for storage, this has been demonstrated in several studies; Chesson and Huntly, 1989; Pande and Shnerb, 2022), and therefore, at least in diverse communities of competing species, the dominant effect will actually be that of stickiness.\n\nThe time-averaged neutral dynamic considered here assumes that the differences in average fitness between species are negligible, at least to a first approximation. This assumption is necessary in situations where niche overlap is large; otherwise, fitness differences would cause the extinction of most species. The justification for this can come from processes leading to emergent neutrality (Holt, 2006; Vergnon et al., 2012), or from the fact that environmental stochasticity itself is also a mechanism that \u2018neutralizes\u2019 fitness differences (Pande and Shnerb, 2022). Extending our model as we have done above to include weak deviations from time-averaged neutrality, perhaps using the dynamic mean-field approximation (Roy et al., 2019) , is a critical first step, which remains to be explored in more detail.\n\nSpecies coexistence has long been, and remains, a theoretical puzzle of immense importance for understanding the dynamics of biological systems, with far-reaching practical implications. The research conducted in recent years has provided powerful theoretical tools that allow us to focus the discussion and understand the generic implications of community structure and the nature of species interactions on the range of possible outcomes. We believe that the parameter range we have addressed in this article \u2013 (nearly-) neutral dynamics and significant environmental stochasticity \u2013 is relevant for a wide variety of ecological systems, and we hope that our work will serve as a foundation for further studies that explain the wide range of diversity levels (for example, between a tropical forest and a tundra, or between different types of microbiome) in relation to the phase transition described here.\n\n## Materials and methods\n\n### Data compilation and analysis\n\nAs explained below, the phase transition we analyze in this paper manifests itself in two characteristics: the SAD and the egality parameter $S_{1/2}/S$. Like any phase transition in complex systems, the distinction between the two phases becomes sharper as the system grows larger, so that $S$ increases. To test our predictions, we used several recent large databases on communities with thousands of species: human microbiome (David et al., 2014), marine prokaryotes (Egu\u00edluz et al., 2019), tropical forest trees (Cooper et al., 2024), and birds (worldwide) (Callaghan et al., 2021).\n\n### The (noise-free) neutral model\n\nWe consider a community of $S$ populations, with differential responses to environmental variations. $N_{i}$ is the abundance of the ith species, and the carrying capacity parameter is denoted by $K$. With no stochasticity and no immigration, $N_{i}$ satisfies the equation\n\n$$\n\\frac{dN_{i}}{dt}=N_{i}(1\u2212\\frac{\\sumj=1SN_{j}}{K}).\n$$\n\nAs all species admit the same growth rate and interact in a symmetric manner, the model is neutral. In particular, any solution that satisfies $\\sumj=1SN_{j}=K$ is a steady state of the system.\n\n### The time-averaged neutral model\n\nTo allow for nontrivial dynamics, one would like to add environmental stochasticity and immigration to the process described in Equation 8. The rate of immigration is denoted by $\\mu$, and the growth rate of each species fluctuates in time, undergoing an Ornstein\u2013Uhlenbeck process with a correlation time $\\tau$. The corresponding set of stochastic differential equations, as set out in Equation 1.\n\n$$\n\\frac{dN_{i}}{dt}=\\mu+N_{i}(1\u2212\\frac{\\sumj=1SN_{j}}{K})+r_{i}(t)N_{i}\\frac{dr_{i}}{dt}=\u2212\\frac{r_{i}}{\\tau}+\\theta\u03b7_{i}(t),\n$$\n\nwhere $\u03b7_{i}(t)$ is a white-noise process of unit strength. The index i of $\u03b7_{i}$ indicates that each of the $S$ species responds to the environmental variations in an independent manner. The correlation function of $r_{i}$ is\n\n$$\n\u27e8r_{i}(t)r_{j}(t^{\u2032})\u27e9=\\delta_{i,j}\\frac{\\theta^{2}\\tau}{2}e^{\u2212|t\u2212t^{\u2032}|/\\tau}.\n$$\n\nThe equivalent white-noise strength of the environmental stochasticity, twice the diffusion constant of $log\u2061N_{i}$, is then given by $\\sigma~_{e}^{2}=\\theta^{2}\\tau^{2}$, the time integral of the $r_{i}$ correlation function.\n\n### Fokker\u2013Planck (FP) equations\n\nThe main analytical results presented in this article are based on solving FP equations. To derive these equations, we assumed a relatively short correlation time \u03c4 for the environmental stochasticity, which allows the use of a single effective equation for the process described in Equation 8. The relevant considerations are detailed in \u2018SI B\u2019.\n\n### Demographic stochasticity\n\nThis refers to the intrinsic randomness of the birth\u2013death process at the individual level. This stochasticity also manifests in erratic abundance variations, but the intensity of these fluctuations is weaker (compared to environmental stochasticity) when the population is large, and therefore it was not included in Equation 8 or in the analyses of van Nes et al., 2024 and Mallmin et al., 2024. However, demographic stochasticity is crucially important in small populations and in extinction processes; as we have seen, it must be considered outside the microorganism realm. To include demographic stochasticity in the treatment, one must add a term to the relevant equation that expresses noise whose amplitude scales with the square root of the population size, as opposed to environmental stochasticity, whose amplitude scales linearly with population size. The technical details can be found in \u2018SI D.\n",
+      "created_at": "2025-12-04T05:20:40.011035Z"
+    },
+    {
+      "id": "3b0440a2-ad99-42fc-b958-8dc4c1e1be85",
+      "submission_id": "e23b698d-991f-43a7-9164-9e43adb14303",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Ariel Amir, https://ror.org/0316ej306 Weizmann Institute of Science Israel\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.103999.sa0](https://doi.org/10.7554/eLife.103999.sa0)\n\nThis valuable paper explores the question of when complex ecosystems will be dominated by a few species. The authors present compelling, general arguments for a phase transition from what they call a dominance phase (few species dominate biomass) to an egalitarian phase (no species dominates the biomass).\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Ariel Amir, https://ror.org/0316ej306 Weizmann Institute of Science Israel\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.103999.sa1](https://doi.org/10.7554/eLife.103999.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Dominance to egalitarian transition in diverse communities\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Sergio Rasmann as the Senior Editor.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential Revisions:\n\nAs you can see below, while both reviewers appreciated the work and its contribution to the field, they raise several technical comments as well as ones pertaining to the presentation. The work will be strengthened if these are addressed in a revision.\n\nReviewer #1 (Recommendations for the authors):\n\nIn this manuscript, the authors investigate the effects of environmental noise on the dynamics of species in hyper-diverse communities. They assume that the community is \"time-averaged neutral\", namely follows a neutral model (inter- and intra-species interactions are the same), but subject to different and statistically-independent environmental noises. They calculate the species abundance distribution (SAD) and find that the highly-abundant (dominant) species consist of either a finite fraction of the species, or only a small subset of species (growing sub-linearly with the total number of species). The results are compared with SADs from field data.\n\nThe manuscript makes two additional contributions:\n\n(1) The discussion leading to these results takes the authors to recent popular concepts in the field such as \"diffusive trapping\" and \"stickiness\". In this context, they point out a problem with a recent paper that has received much attention.\n\n(2) They incorporate demographic noise, which I personally find to be the most original part of the work. Comparing the SADs with data, they argue that this term is important even in situations where one would expect a large number of individuals of each species.\n\nThe manuscript makes important contributions that merit publication in eLife, is well-structured and overall well-written. However, I found that there are issues in its present form that could be improved. This includes certain aspects of the presentation, and the comparison with other phenomena, in particular abundance fluctuations solely due to the interactions between species, to which the authors dedicate much of the Discussion section.\n\nMy particular comments are as follows:\n\n1. Regarding the presentation. I felt that Sec. IIIC that applies the theory to data, is written in a confusing way. It says: \"Figure 3 shows that the formula we presented \u2026 Equation (4) \u2026 describes the species abundance distribution for the gut microbiome quite well.\" But what was actually done with the data is not clear. I assume that Equation. (4) was fit to the data. But then the discussion goes on to compare with the result with demographic noise, which is given only later in the text (Equation. (6)). All this, without clearly pointing out which panel in Figure 3 is compared with which expression, and what parameters are being fit. Also, it would be helpful to include a table with the values of all parameter values obtained by the fit.\n\n2. In this context, it should be mentioned that the ability to fit the SADs to the expressions is certainly an important first step, but it is not a strongly selective criterion between theories. It is well-known that many theories can fit the same SADs. I feel that this point should at least be mentioned in the text (perhaps in the Discussion).\n\n3. A large part of the Discussion is dedicated to comparison of the model in question with chaotic dynamics due to the interactions between the species. There are several issues with this Discussion:\n\n(a) In line 217, right below Equation. (6), the authors make a distinction between \u03b1ij\\begin{document}$\\alpha_{ij}$\\end{document} that are \"O(1) in the strong coupling scenario, and O(1/S) in the weak coupling scenario\". This distinction is unclear and seems arbitrary. First of all, it is not clear what is meant by these scalings; one has to explain how the distribution of the values P(\u03b1ij\\begin{document}$\\alpha_{ij}$\\end{document}) changes with S, and at least distinguish between the changes to the mean and the standard deviation of the distribution. Secondly, these two scalings (whatever moments they refer to) seem arbitrary; the transition to chaos happens when the distribution width std(\u03b1)\u223c1/S1/2\\begin{document}$\\text{std}(\\alpha)\\sim1/S^{1/2}$\\end{document} which is neither of the above mentioned. Finally, these terms are not used in a consistent way, and the term \"high niche overlap\" is used later (referring to the strong coupling, perhaps?)\n\n(b) Line 219 says that \"weakly interacting species\" lead to a truncated Gaussian distribution. The truncated Gaussian is only obtained at a fixed point phase (and only for interaction distributions that have a finite variance). In the chaotic phase, for any scaling which allows for chaos, wide distributions are obtained.\n\n(c) Regarding sentence starting on line 220: \"Remarkably, even in the strongly interacting case, \u2026 , each species can be treated separately \u2026\". This has been shown numerically to give reasonable results, but I'm not sure that it is known to be an exact dynamical description in the \"strong interacting case\" as the authors define it.\n\n(d) Line 224: \"linear growth rate is weak and negative.\" This is true for any dynamics that yield chaos, as long as the fluctuation of the interaction sum-term in Equation. (6), are comparable in size to the other terms in the parenthesis in that equation.\n\n(e) Line 243: \"After all, it is well known that distinguishing between high-dimensional chaos and mere noise is virtually impossible.\" While this is true for standard chaos, it is not the case here, exactly because of the phenomena relating to the \"heteroclinic\" structure of the equations, that leads to phenomena such as \"stickiness\" that the authors refer to earlier. Some fingerprints are: (1) the internal timescale of the chaotic dynamics that need not at all be related to the timescales of environmental driving, and may be large for small migration. (2) SADs of chaotic dynamics, as a result of the previous point. (3) Changing the number of species one might cross the transition to chaos, and either see stable equilibria or fluctuations, in contrast with changes due to environmental changes.\n\n4. Finally, let me go back and say that I liked the inclusion of demographic noise in the model, and it is interesting that it plays a role in some of the data sets, even when population sizes would naively appear to be quite large (well above tens of individuals, where effects of demographic noise are usually important). If possible, I would have liked to see some discussion of this point. When is demographic noise expected to matter in this model, and what does it mean for the communities in question?\n\nReviewer #2 (Recommendations for the authors):\n\nIn their paper \"Dominance to egalitarian transition in diverse communities\", Kessler and Shnerb explore the question of if/when diverse ecosystems will be in a dominance phase (few species dominate biomass) or an egalitarian phase (no species dominates the biomass). To do this, the authors build on their previous work exploring time-averaged neutral models. The major technical advance of the work is to carefully use the Stratonovich formalism to show that, even though on average the growth rate is zero, given noise one will get an extra fluctuation-dependent contribution to the growth rate. This careful treatment shows that in this class of models, there exists a phase transition between these phases depending on noise and immigration rates.\n\nThe technical calculations are straight forward and seem to correct (these are mostly in the appendix). The major finding of the paper is a transition from what they call an egalitarian regime (\\\u03b2>2 in Equation 4) to a dominant regime (\\\u03b2 <2) in the SAD distribution. The authors then fit various SAD curves for four experimental systems in Figure 3.\n\nOverall, I found the paper quite compelling and thoughtful. I thought the problem was well motivated and the arguments were well made.\n\nI do have some questions and comments that I think could make the paper a little stronger.\n\n1. I would like much more discussion and motivation about the difference between \u03c3e~\\begin{document}$\\tilde{\\sigma_e}$\\end{document} (defined on top of page 3 below Equation 2) and the phenomenological parameter \\\u03c3_e in Equation 3. I am not sure what is exactly being assumed here and why the different notation?\u03c3e\\begin{document}$$\\displaystyle {\\sigma_e}$$\\end{document}\n\n2. The authors use a very particular definition of egalitarian and dominance based on the number of species needed to explain half the biomass and how it scales with the size of the ecosystem S? As a statistical physicist, I am wondering if alternative definitions of these quantities such as the Inverse participation Ratio (IPR) also show similar scaling?\n\n3. The authors make a cryptic statement about seeing only the tails of the ocean prokaryotic data. I would like much more discussion of this.\n\n4. Also, given the very close values of the empirical fits of \\\u03b2 to the critical \\\u03b2_c=2, it would be very useful to have some sense of error bars? For example, is \\\u03b2=2.03 really over the transition? I would like some bootstrapped error bars for these fit parameters.\n\n5. It would be nice to see some simulations for systems that are not strictly neutral and how well these can be approximated by the time-dependent neutral model. How large does the LV interaction matrix (A in Equation. 7) have to be before the arguments here break down for a simulated community?\n\nI think my primary substantial concern is about error bars on the fits. This is quite important for drawing conclusions about the real communities.\n",
+      "created_at": "2025-12-04T05:20:40.011035Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T05:20:40.011035Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T05:20:40.011035Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "97d67e39-1fca-4ae1-9663-d2b2f49e2bfa",
+      "content_id": "ba099b09-143d-419e-ad6d-3880638d0f8a",
+      "claim_id": "C1",
+      "claim": "Diverse communities of competing species are generally characterized by substantial niche overlap and strongly stochastic dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "Diverse communities of competing species are generally characterized by substantial niche overlap and strongly stochastic dynamics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement in the abstract without specific supporting data or citations in this sentence.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:20:40.011035Z"
+    },
+    {
+      "id": "722e06eb-492c-4adf-a1ab-ab6de720cd25",
+      "content_id": "ba099b09-143d-419e-ad6d-3880638d0f8a",
+      "claim_id": "C2",
+      "claim": "Abundance fluctuations are proportional to population size under environmental stochasticity.",
+      "claim_type": "EXPLICIT",
+      "source": "Abundance fluctuations are proportional to population size, so the dynamics of rare populations is slower.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical statement about the model behavior, supported by the mathematical framework presented.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:20:40.011035Z"
+    },
+    {
+      "id": "455036c8-d3fc-4a69-9a81-bfc8bbace049",
+      "content_id": "ba099b09-143d-419e-ad6d-3880638d0f8a",
+      "claim_id": "C3",
+      "claim": "Once a population becomes rare, its abundance gets stuck at low values.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, once a population becomes rare, its abundance gets stuck at low values.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This follows from the stickiness phenomenon described in the model and demonstrated in simulations.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:20:40.011035Z"
+    },
+    {
+      "id": "17bcf551-f0cd-4b4e-bd70-6fad3a5f285e",
+      "content_id": "ba099b09-143d-419e-ad6d-3880638d0f8a",
+      "claim_id": "C4",
+      "claim": "There exists a dominance phase in which a tiny number of species constitute most of the community.",
+      "claim_type": "EXPLICIT",
+      "source": "We identify two distinct phases: a dominance phase, in which a tiny number of species constitute most of the community, and an egalitarian phase, where it takes a finite fraction of all species to constitute most of the community.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through mathematical analysis and numerical simulations shown in Figure 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:20:40.011035Z"
+    },
+    {
+      "id": "44f27eb8-e7a1-4186-97c2-055492a42ef5",
+      "content_id": "ba099b09-143d-419e-ad6d-3880638d0f8a",
+      "claim_id": "C5",
+      "claim": "There exists an egalitarian phase where it takes a finite fraction of all species to constitute most of the community.",
+      "claim_type": "EXPLICIT",
+      "source": "We identify two distinct phases: a dominance phase, in which a tiny number of species constitute most of the community, and an egalitarian phase, where it takes a finite fraction of all species to constitute most of the community.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through mathematical analysis and numerical simulations shown in Figure 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:20:40.011035Z"
+    },
+    {
+      "id": "e547fc68-f35b-4853-a772-0188c7fee190",
+      "content_id": "ba099b09-143d-419e-ad6d-3880638d0f8a",
+      "claim_id": "C6",
+      "claim": "Demographic stochasticity and immigration critically determine phase behavior in ecological communities.",
+      "claim_type": "EXPLICIT",
+      "source": "Using empirical data from microbial, planktonic, and macroorganismal systems, we demonstrate the relevance of this transition and show how demographic stochasticity and immigration critically determine phase behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by analysis of empirical data from multiple systems shown in Figure 3.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:20:40.011035Z"
+    },
+    {
+      "id": "a237b7a4-c6c9-4b80-af16-cf59d850c1d8",
+      "content_id": "ba099b09-143d-419e-ad6d-3880638d0f8a",
+      "claim_id": "C7",
+      "claim": "Even slight changes in noise strength or immigration rates can lead to abrupt shifts in community diversity.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results suggest that even slight changes in noise strength or immigration rates can lead to abrupt shifts in community diversity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This follows from the phase transition analysis and is demonstrated in the numerical results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:20:40.011035Z"
+    },
+    {
+      "id": "b17e3a68-e4a5-4577-9a48-f54574980da9",
+      "content_id": "ba099b09-143d-419e-ad6d-3880638d0f8a",
+      "claim_id": "C8",
+      "claim": "Many ecological systems contain numerous competing species, strains, or types.",
+      "claim_type": "EXPLICIT",
+      "source": "Many ecological systems contain numerous competing species, strains, or types (Hutchinson, 1961; Stomp et al., 2011; ter Steege et al., 2013; Connolly et al., 2014; Fierer et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple literature citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:20:40.011035Z"
+    },
+    {
+      "id": "3985889c-b8b7-405c-bb66-e6ff8e528cc6",
+      "content_id": "ba099b09-143d-419e-ad6d-3880638d0f8a",
+      "claim_id": "C9",
+      "claim": "The structure of diverse communities essentially reflects resource competition among species.",
+      "claim_type": "EXPLICIT",
+      "source": "In such systems, it can be assumed a priori that the structure of the community essentially reflects resource competition among species (Gause, 2003; Tilman, 1982), with factors such as niche overlap and fitness differences playing a central role in the community assembly (Chesson, 2000; Chesson, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to foundational ecological theory.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:20:40.011035Z"
+    },
+    {
+      "id": "72477b1b-9b3b-4846-b362-9ef8df8b766a",
+      "content_id": "ba099b09-143d-419e-ad6d-3880638d0f8a",
+      "claim_id": "C10",
+      "claim": "The coexistence of many species remains largely puzzling, especially given the competitive exclusion principle.",
+      "claim_type": "EXPLICIT",
+      "source": "The coexistence of many species remains largely puzzling, especially given the competitive exclusion principle (Tilman, 1982) and the strict constraints on the stability and feasibility of such complex systems (May, 1972).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a well-known problem in ecology supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:20:40.011035Z"
+    },
+    {
+      "id": "52dcf63f-6dc9-4aba-bb14-fc751123d15a",
+      "content_id": "ba099b09-143d-419e-ad6d-3880638d0f8a",
+      "claim_id": "C11",
+      "claim": "Quantifying relevant parameters in diverse communities is extremely challenging due to high levels of stochasticity.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, quantifying the relevant parameters in diverse communities is extremely challenging, particularly considering the high level of stochasticity typically present in ecological dynamics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general observation about the difficulty of ecological research.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:20:40.011035Z"
+    },
+    {
+      "id": "78f76939-d518-4b99-8323-91b7c2669c9e",
+      "content_id": "ba099b09-143d-419e-ad6d-3880638d0f8a",
+      "claim_id": "C12",
+      "claim": "Approaches inspired by statistical physics have gained significant popularity in recent years for studying diverse communities.",
+      "claim_type": "EXPLICIT",
+      "source": "As a result, approaches inspired by statistical physics, which examine generic models through a few summary statistics, have gained significant popularity in recent years (Fisher and Mehta, 2014; Kessler and Shnerb, 2015; Bunin, 2017; Barbier et al., 2018; Grilli, 2020; van Nes et al., 2024).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple recent citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:20:40.011035Z"
+    },
+    {
+      "id": "3745cf9c-a3ec-4fe9-8e52-1076b5a805bb",
+      "content_id": "ba099b09-143d-419e-ad6d-3880638d0f8a",
+      "claim_id": "C13",
+      "claim": "In one class of models, the identity of high-abundance species reflects intrinsic fitness differences.",
+      "claim_type": "EXPLICIT",
+      "source": "In one class of models, the identity of the high-abundance species reflects intrinsic fitness differences (whether through growth rates, competitive advantage, or resource-use efficiency) so that the dominant species are effectively the 'fittest' (Fisher and Mehta, 2014; Bunin, 2017; Barbier et al., 2018; Azaele and Maritan, 2023; Marcus et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes one theoretical approach supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:20:40.011035Z"
+    },
+    {
+      "id": "e36b7cc6-2254-49dc-99ef-e6962ded3230",
+      "content_id": "ba099b09-143d-419e-ad6d-3880638d0f8a",
+      "claim_id": "C14",
+      "claim": "An alternative view holds that dominance arises from contingent stochastic dynamics rather than intrinsic superiority.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, an alternative view holds that dominance arises from contingent stochastic dynamics: species happen to be abundant not because they are intrinsically superior, but as a result of random historical trajectories.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes an alternative theoretical framework.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:20:40.011035Z"
+    },
+    {
+      "id": "63a0d87b-66c7-4289-a027-6e0d547341b6",
+      "content_id": "ba099b09-143d-419e-ad6d-3880638d0f8a",
+      "claim_id": "C15",
+      "claim": "The neutral model was introduced by Crow and Kimura (1970) and Hubbell (2001).",
+      "claim_type": "EXPLICIT",
+      "source": "The prototype of this second class of approaches was introduced in the neutral model proposed by Crow and Kimura, 1970 and Hubbell, 2001.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a historical citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:20:40.011035Z"
+    },
+    {
+      "id": "9e885e54-33dd-4973-ab2c-ccf7675822a2",
+      "content_id": "ba099b09-143d-419e-ad6d-3880638d0f8a",
+      "claim_id": "C16",
+      "claim": "In original neutral models, demographic stochasticity is the sole driver of abundance variations.",
+      "claim_type": "EXPLICIT",
+      "source": "In the original neutral models, demographic stochasticity \u2013 the inherent randomness in the birth\u2013death process at the individual level \u2013 is the sole driver of abundance variations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a key feature of neutral models.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:20:40.011035Z"
+    },
+    {
+      "id": "af63600d-9ffc-435e-8422-9119d217bad2",
+      "content_id": "ba099b09-143d-419e-ad6d-3880638d0f8a",
+      "claim_id": "C17",
+      "claim": "Analytical solutions to neutral models are relatively easy to obtain.",
+      "claim_type": "EXPLICIT",
+      "source": "Analytical solutions to these models are relatively easy to obtain (Volkov et al., 2003; Azaele et al., 2015) and have been quite successful in explaining the observed species abundance distributions (SADs), as well as other static patterns, in both regional and local communities (Rosindell et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to analytical work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:20:40.011035Z"
+    },
+    {
+      "id": "dd1d50c1-6c9c-46f0-a730-4d4b0ec0be23",
+      "content_id": "ba099b09-143d-419e-ad6d-3880638d0f8a",
+      "claim_id": "C18",
+      "claim": "Pure demographic stochasticity cannot account for dynamic patterns in ecological communities.",
+      "claim_type": "EXPLICIT",
+      "source": "However, pure demographic stochasticity cannot account for dynamic patterns, whether evolutionary (such as the time to the most recent common ancestor) (Nee, 2005; Ricklefs, 2006) or ecological (such as the dynamics of abundance variation and similarity indices) (Leigh, 2025; Chisholm and O'Dwyer, 2014; Kalyuzhny et al., 2014b; Kalyuzhny et al., 2014a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations showing limitations of pure demographic stochasticity.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:20:40.011035Z"
+    },
+    {
+      "id": "bdf5e14c-5f16-465f-8b05-74a97730d05b",
+      "content_id": "ba099b09-143d-419e-ad6d-3880638d0f8a",
+      "claim_id": "C19",
+      "claim": "Demographic stochasticity results in relatively slow and weak abundance variations compared to observed variability.",
+      "claim_type": "EXPLICIT",
+      "source": "Demographic stochasticity results in relatively slow and weak abundance variations, whereas observed variability is much stronger and occurs more rapidly (Kalyuzhny et al., 2014b; Chisholm et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by empirical observations cited.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:20:40.011035Z"
+    },
+    {
+      "id": "9b76f972-63aa-4d53-8f8d-4b96d1e68f7d",
+      "content_id": "ba099b09-143d-419e-ad6d-3880638d0f8a",
+      "claim_id": "C20",
+      "claim": "The time-averaged neutral model addresses limitations of the original neutral model by allowing relative fitness to fluctuate over time.",
+      "claim_type": "EXPLICIT",
+      "source": "The time-averaged neutral model (Kalyuzhny et al., 2015) addresses these limitations by relaxing the assumption of time-independent fitness. In this model, the relative fitness of each species fluctuates over time, but all species share the same mean fitness.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the time-averaged neutral model with citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:20:40.011035Z"
+    },
+    {
+      "id": "ca25c154-e7ca-4093-8b01-3e23c3d8217e",
+      "content_id": "ba099b09-143d-419e-ad6d-3880638d0f8a",
+      "claim_id": "C21",
+      "claim": "Environmental stochasticity can facilitate coexistence through the storage effect.",
+      "claim_type": "EXPLICIT",
+      "source": "The analysis of the time-averaged neutral model is more complex, as environmental stochasticity can facilitate coexistence through the storage effect (Chesson and Warner, 1981).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a known mechanism in ecology supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:20:40.011035Z"
+    },
+    {
+      "id": "1d61cb70-a24c-40b7-8ad9-6a7430bf5fa5",
+      "content_id": "ba099b09-143d-419e-ad6d-3880638d0f8a",
+      "claim_id": "C22",
+      "claim": "The significance of the storage effect diminishes in highly diverse systems.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the significance of this effect diminishes in highly diverse systems (Dean et al., 2017; Danino and Shnerb, 2018; Pande and Shnerb, 2022; Meyer et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple recent citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:20:40.011035Z"
+    },
+    {
+      "id": "f66cc23a-ffd1-4dad-8e43-602b3bb6443a",
+      "content_id": "ba099b09-143d-419e-ad6d-3880638d0f8a",
+      "claim_id": "C23",
+      "claim": "Environmental stochasticity causes 'stickiness' or 'diffusive trapping' where rare species linger near extinction for extended periods.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent studies have highlighted a notable effect of environmental stochasticity in competitive communities, known as 'stickiness' (van Nes et al., 2024) or 'diffusive trapping' (Dean and Shnerb, 2020). Under environmental stochasticity, abundance variations are proportional to population size, meaning that the dynamics of rare species is slow, causing them to linger near the extinction point for extended periods.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by recent citations and is a key mechanism in the model.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:20:40.011035Z"
+    },
+    {
+      "id": "e183b421-1262-40e9-b19f-553ccf6ec827",
+      "content_id": "ba099b09-143d-419e-ad6d-3880638d0f8a",
+      "claim_id": "C24",
+      "claim": "Stickiness enables time-averaged neutral models to produce patterns that closely resemble those observed in real ecological communities.",
+      "claim_type": "EXPLICIT",
+      "source": "van Nes et al., 2024 suggested that this stickiness enables time-averaged neutral models to produce patterns \u2013 such as changes in abundance over time, dominant species turnover, and community egality \u2013 that closely resemble those observed in real ecological communities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to van Nes et al., 2024.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:20:40.011035Z"
+    },
+    {
+      "id": "004f3281-c3f1-4cd4-80ff-c2518ef7d003",
+      "content_id": "ba099b09-143d-419e-ad6d-3880638d0f8a",
+      "claim_id": "C25",
+      "claim": "Similar results to time-averaged neutral models were found in systems with chaotic dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar results were found by Mallmin et al., 2024 in a system of competing species for which the overall dynamics are chaotic.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Mallmin et al., 2024.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:20:40.011035Z"
+    },
+    {
+      "id": "8bada064-c725-44af-8891-38d94e8c77e8",
+      "content_id": "ba099b09-143d-419e-ad6d-3880638d0f8a",
+      "claim_id": "C28",
+      "claim": "The phase transition between egalitarian and dominance regimes is robust over a finite region of parameter space near the neutral point.",
+      "claim_type": "EXPLICIT",
+      "source": "The results of this study demonstrate that the phase transition between the egalitarian and dominance regimes is not an artifact of perfect neutrality, but remains robust over a finite region of parameter space near the neutral point.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through simulations with broken neutrality shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:20:40.011035Z"
+    },
+    {
+      "id": "046a74fd-9e58-4e9a-92f3-da6adc5c34ac",
+      "content_id": "ba099b09-143d-419e-ad6d-3880638d0f8a",
+      "claim_id": "C29",
+      "claim": "Without external immigration, stickiness will eventually cause all species except one to drop below any finite threshold, leading to monodominance.",
+      "claim_type": "EXPLICIT",
+      "source": "As we have already mentioned, without external immigration, the stickiness will eventually cause the abundance of all species, except one, to drop below any finite threshold, leading the community to a state of monodominance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated in SI A and Figure 1 supplement.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:20:40.011035Z"
+    },
+    {
+      "id": "f09820fb-2f53-466d-b251-434371a8e219",
+      "content_id": "ba099b09-143d-419e-ad6d-3880638d0f8a",
+      "claim_id": "C33",
+      "claim": "The instantaneous growth rate of the community is, on average, greater than 1.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, the instantaneous growth rate of the community is, on average, greater than 1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explained through the dynamics of the model where fitter species grow faster at any moment.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:20:40.011035Z"
+    },
+    {
+      "id": "5d0348d8-465f-4724-840a-557f312c0c4d",
+      "content_id": "ba099b09-143d-419e-ad6d-3880638d0f8a",
+      "claim_id": "C34",
+      "claim": "At any given moment, more than 50% of individuals belong to instantaneously beneficial species.",
+      "claim_type": "EXPLICIT",
+      "source": "At any given moment, the fitter species are growing faster, so that on average more than 50% of the individuals belong to instantaneously beneficial species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This follows from the model dynamics.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:20:40.011035Z"
+    },
+    {
+      "id": "7e680674-b9bc-44e1-b104-589a9e1b4c4c",
+      "content_id": "ba099b09-143d-419e-ad6d-3880638d0f8a",
+      "claim_id": "C37",
+      "claim": "A similar result to the authors' model was presented by Mallmin et al., 2024 for a system with chaotic dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "A similar result was presented a few months ago by Mallmin et al., 2024, who dealt with a system of competing species where the community dynamics is chaotic (but without external stochasticity).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a citation to related work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:20:40.011035Z"
+    },
+    {
+      "id": "8bbc502f-897f-4b9c-bba0-3465440457b2",
+      "content_id": "ba099b09-143d-419e-ad6d-3880638d0f8a",
+      "claim_id": "C42",
+      "claim": "The egality parameter vanishes in a singular manner at the transition point \u03b2 = 2.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, this egality parameter vanishes in a singular manner in that limit, indicating the transition out of the egalitarian phase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This follows from the mathematical analysis of the limit.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:20:40.011035Z"
+    },
+    {
+      "id": "ac84a19d-2882-4d10-b1c3-2b39f77b0a9d",
+      "content_id": "ba099b09-143d-419e-ad6d-3880638d0f8a",
+      "claim_id": "C45",
+      "claim": "The gut microbiome data shows excellent agreement with the model prediction (Equation 4).",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 3a shows the excellent agreement between the empirical data for the gut microbiome and our model prediction (Equation 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 3a with data from David et al., 2014.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:20:40.011035Z"
+    },
+    {
+      "id": "dac547c8-1dbb-4282-8148-e88a04f027e8",
+      "content_id": "ba099b09-143d-419e-ad6d-3880638d0f8a",
+      "claim_id": "C46",
+      "claim": "For ocean prokaryotes, only a pure power law is observed, possibly because sampling strength is insufficient.",
+      "claim_type": "EXPLICIT",
+      "source": "In the case of ocean prokaryotes, presented in panel (b), only a pure power law is observed, perhaps because the sampling strength is insufficient.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in Figure 3b and explained by sampling limitations.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:20:40.011035Z"
+    },
+    {
+      "id": "6eafaabc-da76-4b67-a071-1994a46efd80",
+      "content_id": "ba099b09-143d-419e-ad6d-3880638d0f8a",
+      "claim_id": "C47",
+      "claim": "Weak sampling shifts the distribution leftward, hiding the true characteristics of the SAD for small abundance populations.",
+      "claim_type": "EXPLICIT",
+      "source": "Weak sampling shifts the distribution leftward, thus hiding the true characteristics of the SAD for small abundance populations (Maruvka et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a known effect supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:20:40.011035Z"
+    },
+    {
+      "id": "28ceb27d-e7fb-4138-b4fa-4f0780db5424",
+      "content_id": "ba099b09-143d-419e-ad6d-3880638d0f8a",
+      "claim_id": "C49",
+      "claim": "For birds and Amazon basin trees, the empirical distribution does not fit Equation 4 but shows a crossover between two descending power laws.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, in Figure 3c and d, for birds and Amazon basin trees, respectively, the empirical distribution does not fit Equation 4. Instead, the population size distribution shows a pronounced crossover between two descending power laws, without a maximum point at a finite abundance.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 3c and 3d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:20:40.011035Z"
+    },
+    {
+      "id": "e2f571f4-8a14-44fe-98c9-b3119cecf870",
+      "content_id": "ba099b09-143d-419e-ad6d-3880638d0f8a",
+      "claim_id": "C50",
+      "claim": "Macroorganisms have larger body sizes and longer lifespans that buffer them against environmental fluctuations.",
+      "claim_type": "EXPLICIT",
+      "source": "To explain this, we note that trees and birds differ from microorganisms in two important ways. First, since macroorganisms tend to have larger body sizes and longer lifespans, their metabolism buffers them against environmental fluctuations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a biological observation used to explain the model differences.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:20:40.011035Z"
+    },
+    {
+      "id": "b173dd78-2faf-4829-b2bc-89385850b69e",
+      "content_id": "ba099b09-143d-419e-ad6d-3880638d0f8a",
+      "claim_id": "C51",
+      "claim": "Environmental variation that affects individuals in an uncorrelated manner contributes to demographic rather than environmental stochasticity.",
+      "claim_type": "EXPLICIT",
+      "source": "Environmental variation that affects individuals, or small groups within the population, in an uncorrelated manner contributes to demographic stochasticity rather than to environmental stochasticity, which, by definition, affects entire populations coherently.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definitional distinction in the model framework.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:20:40.011035Z"
+    },
+    {
+      "id": "dd0ca2cd-7979-40a9-bee3-7b8d3c499af8",
+      "content_id": "ba099b09-143d-419e-ad6d-3880638d0f8a",
+      "claim_id": "C52",
+      "claim": "For macroorganisms, demographic stochasticity must be accounted for in the model.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, for macroorganisms we need to account for demographic stochasticity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This follows from the biological differences and is necessary to fit the data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:20:40.011035Z"
+    },
+    {
+      "id": "7feb5328-f9e0-40de-a481-6366925c3aaf",
+      "content_id": "ba099b09-143d-419e-ad6d-3880638d0f8a",
+      "claim_id": "C55",
+      "claim": "With the demographic stochasticity formula, the empirical data for birds and trees can be successfully fit.",
+      "claim_type": "EXPLICIT",
+      "source": "With this new formula, one can now successfully fit the empirical data in Figure 3c and d.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in Figure 3c and 3d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:20:40.011035Z"
+    },
+    {
+      "id": "a79fa4b0-89c7-48fd-8905-dd800b971d8b",
+      "content_id": "ba099b09-143d-419e-ad6d-3880638d0f8a",
+      "claim_id": "C57",
+      "claim": "Microorganism communities are in the dominance phase.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 3 thus illustrates the three types of behavior demonstrated in the numerical experiments shown in Figure 2: the microorganism communities are in the dominance phase, the tropical tree community is in the egalitarian phase, and the bird community appears to fall in between.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:20:40.011035Z"
+    },
+    {
+      "id": "3231ffb9-d27d-4684-a212-3b4e363cbee0",
+      "content_id": "ba099b09-143d-419e-ad6d-3880638d0f8a",
+      "claim_id": "C58",
+      "claim": "The tropical tree community is in the egalitarian phase.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 3 thus illustrates the three types of behavior demonstrated in the numerical experiments shown in Figure 2: the microorganism communities are in the dominance phase, the tropical tree community is in the egalitarian phase, and the bird community appears to fall in between.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:20:40.011035Z"
+    },
+    {
+      "id": "9d5fdf80-b3c6-4302-bded-0c4a257aa985",
+      "content_id": "ba099b09-143d-419e-ad6d-3880638d0f8a",
+      "claim_id": "C59",
+      "claim": "The bird community appears to fall between the dominance and egalitarian phases.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 3 thus illustrates the three types of behavior demonstrated in the numerical experiments shown in Figure 2: the microorganism communities are in the dominance phase, the tropical tree community is in the egalitarian phase, and the bird community appears to fall in between.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:20:40.011035Z"
+    },
+    {
+      "id": "797fc521-120f-4ea5-bfad-1131d6930dec",
+      "content_id": "ba099b09-143d-419e-ad6d-3880638d0f8a",
+      "claim_id": "C66",
+      "claim": "In the absence of environmental stochasticity, heterogeneous and asymmetric interactions lead to chaotic dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "To understand these results, note that in the absence of environmental stochasticity, the heterogeneous and asymmetric interactions lead to chaotic dynamics of the trajectories, as discussed in Arnoulx de Pirey and Bunin, 2024.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Arnoulx de Pirey and Bunin, 2024.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:20:40.011035Z"
+    },
+    {
+      "id": "a94dc1c9-ae88-4946-a3a9-b130033b120c",
+      "content_id": "ba099b09-143d-419e-ad6d-3880638d0f8a",
+      "claim_id": "C67",
+      "claim": "Under chaotic dynamics, the system supports a clique of abundant species at any instant.",
+      "claim_type": "EXPLICIT",
+      "source": "Under chaotic dynamics, the system supports, at any instant of time, a clique of abundant species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explained as a feature of chaotic dynamics.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:20:40.011035Z"
+    },
+    {
+      "id": "c44522b3-e50f-4c50-9929-88ea57d99bb4",
+      "content_id": "ba099b09-143d-419e-ad6d-3880638d0f8a",
+      "claim_id": "C68",
+      "claim": "The clique in chaotic dynamics is stable but invadable.",
+      "claim_type": "EXPLICIT",
+      "source": "This clique is stable in the sense that if all the species within it are placed together in a community, they will reach an equilibrium state in which all of them persist. However, the clique is invadable, meaning that at any given moment, there exist species outside the clique that are capable of invading and reaching high abundance (Kessler and Shnerb, 2025).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explained with reference to Kessler and Shnerb, 2025.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:20:40.011035Z"
+    },
+    {
+      "id": "1ee54e8c-1d56-412c-9356-31b4e44034ae",
+      "content_id": "ba099b09-143d-419e-ad6d-3880638d0f8a",
+      "claim_id": "C69",
+      "claim": "A clique in chaotic dynamics gives rise to a 'shoulder' at high abundance values in the distribution.",
+      "claim_type": "EXPLICIT",
+      "source": "Such a clique gives rise to a 'shoulder' at high abundance values (see Figure 5), since at any given moment there are several species with high abundance.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:20:40.011035Z"
+    },
+    {
+      "id": "ff5a0ec2-3c52-4553-a345-fda59f8c2e7b",
+      "content_id": "ba099b09-143d-419e-ad6d-3880638d0f8a",
+      "claim_id": "C70",
+      "claim": "The hierarchical structure under pure environmental stochasticity leads to a simple power law.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the hierarchical structure under pure environmental stochasticity leads to a simple power law, as seen earlier in Figure 1.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:20:40.011035Z"
+    },
+    {
+      "id": "0089f2c4-5f5b-416d-a785-544d95119e4f",
+      "content_id": "ba099b09-143d-419e-ad6d-3880638d0f8a",
+      "claim_id": "C73",
+      "claim": "Hyperdiverse communities are extremely important and frequently occur in nature.",
+      "claim_type": "EXPLICIT",
+      "source": "Hyperdiverse communities, like those analyzed in this article, are extremely important and frequently occur in nature.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about the importance of the study system.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:20:40.011035Z"
+    },
+    {
+      "id": "03563042-48f4-4401-ad3f-26e453c70b41",
+      "content_id": "ba099b09-143d-419e-ad6d-3880638d0f8a",
+      "claim_id": "C74",
+      "claim": "Quantifying specific parameters in hyperdiverse communities is an impossible task.",
+      "claim_type": "EXPLICIT",
+      "source": "However, quantifying their specific parameters is an impossible task.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a practical observation about the challenges of studying these systems.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:20:40.011035Z"
+    },
+    {
+      "id": "50a3891d-fdb7-4407-9df3-c65a185006a4",
+      "content_id": "ba099b09-143d-419e-ad6d-3880638d0f8a",
+      "claim_id": "C75",
+      "claim": "There are three generic scenarios for the dynamics of multispecies systems: stable clique, chaotic composition changes, and neutral dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "Broadly speaking, there are three generic scenarios for the dynamics of multispecies systems: those involving a stable clique of resident species; those in which the composition of the group of high-abundance species changes over time due to chaotic dynamics; and those assuming neutral dynamics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a classification of theoretical approaches.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:20:40.011035Z"
+    },
+    {
+      "id": "810ee994-8b43-44b9-a905-be0ee4eb3d68",
+      "content_id": "ba099b09-143d-419e-ad6d-3880638d0f8a",
+      "claim_id": "C76",
+      "claim": "In the stable clique scenario, the set of high-abundance species is determined by their relative fitness which remains fixed over time.",
+      "claim_type": "EXPLICIT",
+      "source": "In the first case, the set of high-abundance species is determined by their relative fitness (which reflects their intrinsic growth rate and interspecific interactions), which remains fixed over time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes one theoretical scenario.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:20:40.011035Z"
+    },
+    {
+      "id": "a1cc3155-d916-4832-bd20-44b3aa3d9bcd",
+      "content_id": "ba099b09-143d-419e-ad6d-3880638d0f8a",
+      "claim_id": "C77",
+      "claim": "In the chaotic scenario, the composition of dominant cliques varies intermittently but is governed by deterministic factors.",
+      "claim_type": "EXPLICIT",
+      "source": "In the second, the composition of the dominant cliques varies intermittently over time, but this turnover is governed by deterministic factors, and at any given moment, only a specific set of low-abundance species is capable of exponential growth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the chaotic scenario.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:20:40.011035Z"
+    },
+    {
+      "id": "aea10da4-516d-40d0-84d2-25268d8dbfcf",
+      "content_id": "ba099b09-143d-419e-ad6d-3880638d0f8a",
+      "claim_id": "C79",
+      "claim": "In the neutral stochastic scenario, the identity of high-abundance species is a random outcome of environmental stochasticity.",
+      "claim_type": "EXPLICIT",
+      "source": "In the third case, discussed here, the identity of the high-abundance species at any given moment is a random outcome of environmental stochasticity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the scenario analyzed in this paper.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:20:40.011035Z"
+    },
+    {
+      "id": "bdf586c7-e957-4957-a9f6-d1198fe33779",
+      "content_id": "ba099b09-143d-419e-ad6d-3880638d0f8a",
+      "claim_id": "C80",
+      "claim": "In the neutral stochastic scenario, there is no sharp separation between core species and low-abundance ones.",
+      "claim_type": "EXPLICIT",
+      "source": "As in the chaotic case, there is no sharp separation between core species and low-abundance ones, and the fundamental timescale of the system is determined by the stickiness phenomenon described above.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a property of the neutral stochastic model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:20:40.011035Z"
+    },
+    {
+      "id": "ef61eeb1-218c-4102-8172-a7c46033f7c2",
+      "content_id": "ba099b09-143d-419e-ad6d-3880638d0f8a",
+      "claim_id": "C81",
+      "claim": "Empirical SADs cannot be explained by the stable clique scenario.",
+      "claim_type": "EXPLICIT",
+      "source": "As far as can be judged from the empirical SADs of Figure 2, it appears that they cannot be explained by the first scenario.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on comparison with empirical data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:20:40.011035Z"
+    },
+    {
+      "id": "ba0a1238-2b95-4a13-9fe6-a193ff98b0b5",
+      "content_id": "ba099b09-143d-419e-ad6d-3880638d0f8a",
+      "claim_id": "C83",
+      "claim": "The chaotic case yields SADs that more closely resemble the observed distributions with no gap and power-law behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "The chaotic case yields SADs that more closely resemble those we have reviewed here: they exhibit no gap and display a power-law behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison between theoretical predictions and observations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:20:40.011035Z"
+    },
+    {
+      "id": "f7154411-9e23-41fe-b6fc-0c483fdfb0ca",
+      "content_id": "ba099b09-143d-419e-ad6d-3880638d0f8a",
+      "claim_id": "C84",
+      "claim": "When attempting to derive an effective equation for a single species in the chaotic case, one arrives at the same equation as in the environmental stochasticity case.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, when attempting to derive an effective equation for a single species, one arrives, as noted above, at the very same equation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical result about the equivalence of the two approaches.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:20:40.011035Z"
+    },
+    {
+      "id": "eaa6bc2d-13ef-478b-8e08-181b8b3b175c",
+      "content_id": "ba099b09-143d-419e-ad6d-3880638d0f8a",
+      "claim_id": "C85",
+      "claim": "Matching the SAD is a necessary but not sufficient condition for considering a model plausible.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, matching the SAD is a necessary condition for considering a model a plausible candidate, but leaves open the possibility of alternative explanations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological observation about model validation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:20:40.011035Z"
+    },
+    {
+      "id": "bb6bfc61-86ff-4a9e-94b3-0239791c2ef9",
+      "content_id": "ba099b09-143d-419e-ad6d-3880638d0f8a",
+      "claim_id": "C86",
+      "claim": "To distinguish chaos from environmental stochasticity, one should examine the dynamics of the most abundant species.",
+      "claim_type": "EXPLICIT",
+      "source": "To tell apart chaos from environmental stochasticity, it may be necessary to focus specifically on the dynamics of the most abundant species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed method for distinguishing between models.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:20:40.011035Z"
+    },
+    {
+      "id": "edcb341a-8c0f-41fa-b58e-bd608c15e8c1",
+      "content_id": "ba099b09-143d-419e-ad6d-3880638d0f8a",
+      "claim_id": "C87",
+      "claim": "If noise is intrinsic (chaotic), a dominant species should exhibit different fluctuation patterns than when rare.",
+      "claim_type": "EXPLICIT",
+      "source": "If the noise is intrinsic, originating from chaotic fluctuations, then a species that has reached dominance is expected to exhibit fluctuation patterns that differ markedly from those observed when the same species is rare.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a predicted difference between chaotic and stochastic systems.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:20:40.011035Z"
+    },
+    {
+      "id": "96fc0acf-a1ba-41af-a46c-223bb482c8c1",
+      "content_id": "ba099b09-143d-419e-ad6d-3880638d0f8a",
+      "claim_id": "C88",
+      "claim": "If fluctuations stem from external factors, the statistical properties should be independent of the species' current abundance level.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, if the fluctuations stem from external factors such as weather or precipitation, we would expect the statistical properties of abundance fluctuations to be independent of the species' current abundance level, as has been observed empirically (Kalyuzhny et al., 2014b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by empirical observations cited.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:20:40.011035Z"
+    },
+    {
+      "id": "00891549-913b-42e4-8054-d1d2e1bdfd29",
+      "content_id": "ba099b09-143d-419e-ad6d-3880638d0f8a",
+      "claim_id": "C89",
+      "claim": "A fundamental timescale associated with invasion of rare species appears in chaotic dynamics but not in systems driven by external stochasticity.",
+      "claim_type": "EXPLICIT",
+      "source": "Another test that may help distinguish between a chaotic and a stochastic system relates to the emergence of a fundamental timescale (Arnoulx de Pirey and Bunin, 2024) in chaotic dynamics \u2013 one associated with the invasion of rare species. Such a timescale does not appear in systems driven by external stochasticity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical difference between the two scenarios supported by citation.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:20:40.011035Z"
+    },
+    {
+      "id": "7f0b9a22-5708-4e35-a62a-2c019c8949ea",
+      "content_id": "ba099b09-143d-419e-ad6d-3880638d0f8a",
+      "claim_id": "C90",
+      "claim": "A transition occurs between an egalitarian phase and a dominance phase in the limit of strong interspecies coupling.",
+      "claim_type": "EXPLICIT",
+      "source": "Whatever the underlying mechanism, the net result, as we have demonstrated herein, is that in the limit of strong interspecies coupling, a transition occurs between an egalitarian phase and a dominance phase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main result of the paper demonstrated through analysis and simulations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:20:40.011035Z"
+    },
+    {
+      "id": "43def8d3-558b-42b6-bd00-d6e10b35a8b5",
+      "content_id": "ba099b09-143d-419e-ad6d-3880638d0f8a",
+      "claim_id": "C93",
+      "claim": "The model can be extended to include correlated responses of species to environmental variations.",
+      "claim_type": "EXPLICIT",
+      "source": "Our model assumed an uncorrelated response of species to environmental variations. This treatment can be easily extended to include correlated responses, using techniques similar to those implemented by Loreau and de Mazancourt, 2008.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed extension with citation to relevant methods.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:20:40.011035Z"
+    },
+    {
+      "id": "13a37712-203a-4bb3-91e0-1d1556a18e6c",
+      "content_id": "ba099b09-143d-419e-ad6d-3880638d0f8a",
+      "claim_id": "C94",
+      "claim": "Under correlated responses, the effective number of species in the community decreases.",
+      "claim_type": "EXPLICIT",
+      "source": "In general, under correlated responses, the effective number of species in the community decreases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a predicted consequence of correlated responses.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:20:40.011035Z"
+    },
+    {
+      "id": "5ffe1140-7d1e-4c5d-9e20-6e2e368163bf",
+      "content_id": "ba099b09-143d-419e-ad6d-3880638d0f8a",
+      "claim_id": "C95",
+      "claim": "Mechanisms like storage effect and relative nonlinearity that allow rare populations to invade likely weaken as the number of species increases.",
+      "claim_type": "EXPLICIT",
+      "source": "It is likely that these mechanisms weaken as the number of species increases (for storage, this has been demonstrated in several studies; Chesson and Huntly, 1989; Pande and Shnerb, 2022), and therefore, at least in diverse communities of competing species, the dominant effect will actually be that of stickiness.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations showing weakening of storage effect in diverse systems.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:20:40.011035Z"
+    },
+    {
+      "id": "eac41ea8-d4fc-450e-a4fe-916888e60c63",
+      "content_id": "ba099b09-143d-419e-ad6d-3880638d0f8a",
+      "claim_id": "C96",
+      "claim": "The time-averaged neutral dynamic assumes that differences in average fitness between species are negligible.",
+      "claim_type": "EXPLICIT",
+      "source": "The time-averaged neutral dynamic considered here assumes that the differences in average fitness between species are negligible, at least to a first approximation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a key assumption of the model.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:20:40.011035Z"
+    },
+    {
+      "id": "368f6eda-99ea-416a-bced-644d55217193",
+      "content_id": "ba099b09-143d-419e-ad6d-3880638d0f8a",
+      "claim_id": "C97",
+      "claim": "The assumption of negligible fitness differences is necessary when niche overlap is large.",
+      "claim_type": "EXPLICIT",
+      "source": "This assumption is necessary in situations where niche overlap is large; otherwise, fitness differences would cause the extinction of most species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical consequence of competitive exclusion.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:20:40.011035Z"
+    },
+    {
+      "id": "bc65b086-0b33-4e23-855c-6c68ec22952e",
+      "content_id": "ba099b09-143d-419e-ad6d-3880638d0f8a",
+      "claim_id": "C98",
+      "claim": "Emergent neutrality can justify the assumption of negligible fitness differences.",
+      "claim_type": "EXPLICIT",
+      "source": "The justification for this can come from processes leading to emergent neutrality (Holt, 2006; Vergnon et al., 2012), or from the fact that environmental stochasticity itself is also a mechanism that 'neutralizes' fitness differences (Pande and Shnerb, 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to relevant mechanisms.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:20:40.011035Z"
+    },
+    {
+      "id": "37f06afd-2a4a-4447-ada1-884b192ffece",
+      "content_id": "ba099b09-143d-419e-ad6d-3880638d0f8a",
+      "claim_id": "C99",
+      "claim": "Environmental stochasticity itself is a mechanism that 'neutralizes' fitness differences.",
+      "claim_type": "EXPLICIT",
+      "source": "The justification for this can come from processes leading to emergent neutrality (Holt, 2006; Vergnon et al., 2012), or from the fact that environmental stochasticity itself is also a mechanism that 'neutralizes' fitness differences (Pande and Shnerb, 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Pande and Shnerb, 2022.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:20:40.011035Z"
+    },
+    {
+      "id": "71cdd254-bc7f-4736-8660-f5d5938bcb7a",
+      "content_id": "ba099b09-143d-419e-ad6d-3880638d0f8a",
+      "claim_id": "C100",
+      "claim": "The parameter range of nearly-neutral dynamics and significant environmental stochasticity is relevant for a wide variety of ecological systems.",
+      "claim_type": "EXPLICIT",
+      "source": "We believe that the parameter range we have addressed in this article \u2013 (nearly-) neutral dynamics and significant environmental stochasticity \u2013 is relevant for a wide variety of ecological systems",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the broad applicability of the model.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:20:40.011035Z"
+    },
+    {
+      "id": "19e9c16b-a1d5-420c-b789-540d8f7261a0",
+      "content_id": "ba099b09-143d-419e-ad6d-3880638d0f8a",
+      "claim_id": "C101",
+      "claim": "The phase transition can explain the wide range of diversity levels between different ecosystems.",
+      "claim_type": "EXPLICIT",
+      "source": "and we hope that our work will serve as a foundation for further studies that explain the wide range of diversity levels (for example, between a tropical forest and a tundra, or between different types of microbiome) in relation to the phase transition described here.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed application of the theory.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:20:40.011035Z"
+    },
+    {
+      "id": "b39e1e8b-03bb-4128-ba0d-0a6466e3ed6d",
+      "content_id": "ba099b09-143d-419e-ad6d-3880638d0f8a",
+      "claim_id": "C104",
+      "claim": "The authors used large databases on communities with thousands of species to test their predictions.",
+      "claim_type": "EXPLICIT",
+      "source": "To test our predictions, we used several recent large databases on communities with thousands of species: human microbiome (David et al., 2014), marine prokaryotes (Egu\u00edluz et al., 2019), tropical forest trees (Cooper et al., 2024), and birds (worldwide) (Callaghan et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data sources used in the study.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:20:40.011035Z"
+    },
+    {
+      "id": "5e9589ae-42c4-4eba-a05d-27573d0557a6",
+      "content_id": "ba099b09-143d-419e-ad6d-3880638d0f8a",
+      "claim_id": "C108",
+      "claim": "The main analytical results are based on solving Fokker-Planck equations.",
+      "claim_type": "EXPLICIT",
+      "source": "The main analytical results presented in this article are based on solving FP equations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the analytical method used.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:20:40.011035Z"
+    },
+    {
+      "id": "b1666f8b-f151-4110-a072-843ecab72cad",
+      "content_id": "ba099b09-143d-419e-ad6d-3880638d0f8a",
+      "claim_id": "C109",
+      "claim": "A relatively short correlation time \u03c4 was assumed to allow the use of a single effective equation.",
+      "claim_type": "EXPLICIT",
+      "source": "To derive these equations, we assumed a relatively short correlation time \u03c4 for the environmental stochasticity, which allows the use of a single effective equation for the process described in Equation 8.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an assumption made in the analytical approach.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:20:40.011035Z"
+    },
+    {
+      "id": "e0ccfef3-e285-4bf0-904f-e08494075656",
+      "content_id": "ba099b09-143d-419e-ad6d-3880638d0f8a",
+      "claim_id": "C110",
+      "claim": "Demographic stochasticity is crucially important in small populations and in extinction processes.",
+      "claim_type": "EXPLICIT",
+      "source": "However, demographic stochasticity is crucially important in small populations and in extinction processes; as we have seen, it must be considered outside the microorganism realm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the analysis of macroorganism data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:20:40.011035Z"
+    },
+    {
+      "id": "d4011d9f-2dcc-47e9-bb12-cd01ea7d47f3",
+      "content_id": "ba099b09-143d-419e-ad6d-3880638d0f8a",
+      "claim_id": "C111",
+      "claim": "Demographic stochasticity is represented by noise whose amplitude scales with the square root of population size.",
+      "claim_type": "EXPLICIT",
+      "source": "To include demographic stochasticity in the treatment, one must add a term to the relevant equation that expresses noise whose amplitude scales with the square root of the population size, as opposed to environmental stochasticity, whose amplitude scales linearly with population size.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a standard representation of demographic stochasticity in population models.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:20:40.011035Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "6bf70ba3-58c2-47cd-92dd-61620febf021",
+      "content_id": "ba099b09-143d-419e-ad6d-3880638d0f8a",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Environmental stochasticity causes 'stickiness' where rare species remain at low abundances for extended periods because abundance fluctuations are proportional to population size. Without immigration, this leads to monodominance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C3, C23, and C29 collectively describe the stickiness mechanism and its consequences. The mechanism is supported by mathematical analysis (Equation 2), demonstrated in simulations (Figure 1 supplement), and is consistent with cited literature (van Nes et al., 2024; Dean and Shnerb, 2020).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T05:20:40.011035Z"
+    },
+    {
+      "id": "7faad8d9-641f-4e7f-b1d5-3a2d3a106ffe",
+      "content_id": "ba099b09-143d-419e-ad6d-3880638d0f8a",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The model identifies a phase transition between a dominance phase (where few species constitute most of the community) and an egalitarian phase (where a finite fraction of species constitute most of the community), with the transition occurring at \u03b2=2.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C5, C42, and C90 describe the central finding of the paper. The phase transition is demonstrated through mathematical analysis (Equation 5, Appendix C), numerical simulations (Figure 2), and empirical data fitting (Figure 3). The egality parameter S\u2081/\u2082/S shows the predicted singular behavior at \u03b2=2.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T05:20:40.011035Z"
+    },
+    {
+      "id": "05706aeb-5df2-4b3e-acc5-2a44921c0282",
+      "content_id": "ba099b09-143d-419e-ad6d-3880638d0f8a",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Microorganism communities (gut microbiome and ocean prokaryotes) are in the dominance phase with \u03b2<2, showing excellent agreement with model predictions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45, C46, and C57 are supported by empirical data analysis shown in Figure 3a-b. The gut microbiome data fits Equation 4 well (\u03b2=1.3\u00b10.01), and ocean prokaryotes show power-law behavior (\u03b2=1.65\u00b10.02). Both have very small S\u2081/\u2082/S ratios (~0.002), consistent with the dominance phase.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T05:20:40.011035Z"
+    },
+    {
+      "id": "15433b99-8b56-40ff-b9b8-9942256b14bd",
+      "content_id": "ba099b09-143d-419e-ad6d-3880638d0f8a",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Macroorganisms (birds and trees) require demographic stochasticity in addition to environmental stochasticity due to their larger body sizes and longer lifespans. With this modification (Equation 6), the model successfully fits empirical data, placing trees in the egalitarian phase and birds near the transition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C52, C55, C58-C59, and C110 describe the extension to macroorganisms. The biological reasoning for including demographic stochasticity is sound (C50-C51), and the modified formula (Equation 6) successfully fits the empirical data (Figure 3c-d). Trees show \u03b2=2.35\u00b10.15 (egalitarian) and birds show \u03b2=2.05\u00b10.05 (near transition).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T05:20:40.011035Z"
+    },
+    {
+      "id": "29ebba00-153f-4bc3-afcb-2e5051f3b996",
+      "content_id": "ba099b09-143d-419e-ad6d-3880638d0f8a",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Demographic stochasticity and immigration critically determine phase behavior, and slight changes in noise strength or immigration rates can lead to abrupt shifts in community diversity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6 and C7 are supported by the phase transition analysis and empirical data (Figure 3). The dimensionless parameter \u03b3=K\u03c3\u2091\u00b2/\u03bc governs the transition, showing that immigration (\u03bc) and environmental stochasticity (\u03c3\u2091) are critical determinants. The singular behavior at \u03b2=2 (Equation 5) demonstrates the abruptness of the transition.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T05:20:40.011035Z"
+    },
+    {
+      "id": "3ef8361e-590d-4747-8c96-8712f9a9d622",
+      "content_id": "ba099b09-143d-419e-ad6d-3880638d0f8a",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The phase transition is robust to breaking neutrality through heterogeneous and asymmetric interactions, which introduce chaotic dynamics. Chaotic dynamics produce a 'shoulder' in the abundance distribution due to cliques of abundant species, distinct from the simple power law under pure environmental stochasticity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28 and C66-C70 describe the robustness analysis. Figure 4 demonstrates that the phase transition persists with broken neutrality (\u03b5>0), and Figure 5 shows the characteristic 'shoulder' in the chaotic regime. The analysis is supported by citations (Arnoulx de Pirey and Bunin, 2024; Kessler and Shnerb, 2025).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T05:20:40.011035Z"
+    },
+    {
+      "id": "23708341-53a1-4046-8ba7-5d68400ed1b6",
+      "content_id": "ba099b09-143d-419e-ad6d-3880638d0f8a",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The instantaneous growth rate of the community is, on average, greater than 1 because more than 50% of individuals belong to instantaneously beneficial species at any given moment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33 and C34 describe a key feature of the time-averaged neutral model that explains why the effective parameter c in Equation 2 is positive. This follows logically from the model dynamics where fitter species grow faster at any moment, even though time-averaged fitness is equal across species.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T05:20:40.011035Z"
+    },
+    {
+      "id": "0c287c49-7a42-4184-a737-a0360671be31",
+      "content_id": "ba099b09-143d-419e-ad6d-3880638d0f8a",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Chaotic dynamics and environmental stochasticity can produce similar species abundance distributions, but can potentially be distinguished by examining the dynamics of abundant species or looking for fundamental timescales associated with rare species invasion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C83-C89 discuss the similarity between chaotic and stochastic models and propose methods to distinguish them. While the theoretical equivalence of effective equations (C84) is demonstrated, the proposed distinguishing tests (C86-C89) are largely speculative and not empirically validated in this study. The claims rely heavily on citations and theoretical reasoning rather than direct evidence.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T05:20:40.011035Z"
+    },
+    {
+      "id": "30081a04-5d3f-43ff-b698-142b3585f887",
+      "content_id": "ba099b09-143d-419e-ad6d-3880638d0f8a",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Pure demographic stochasticity in original neutral models cannot account for dynamic patterns and produces weaker/slower variations than observed. The time-averaged neutral model addresses this by allowing fitness to fluctuate, though the storage effect diminishes in highly diverse systems.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C22 provide background on neutral theory limitations and the motivation for the time-averaged neutral model. These claims are well-supported by multiple citations (Kalyuzhny et al., 2014a,b; Chisholm et al., 2014; Dean et al., 2017; Pande and Shnerb, 2022) and represent established knowledge in the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T05:20:40.011035Z"
+    },
+    {
+      "id": "4a0570b3-ffec-4ca7-b410-89f94bbd34ce",
+      "content_id": "ba099b09-143d-419e-ad6d-3880638d0f8a",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The time-averaged neutral model assumes negligible fitness differences between species, which is necessary when niche overlap is large and can be justified through emergent neutrality or the neutralizing effect of environmental stochasticity itself.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C96-C99 describe a key assumption of the model and its justification. The assumption is clearly stated (C96), the logical necessity is explained (C97), and justifications are provided through citations to emergent neutrality (Holt, 2006; Vergnon et al., 2012) and fitness neutralization mechanisms (Pande and Shnerb, 2022).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T05:20:40.011035Z"
+    },
+    {
+      "id": "81fcd818-ad38-418e-833e-a66c826e5212",
+      "content_id": "ba099b09-143d-419e-ad6d-3880638d0f8a",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The analytical results are based on solving Fokker-Planck equations, assuming a relatively short correlation time \u03c4 for environmental stochasticity to allow use of a single effective equation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C108 and C109 describe the analytical methodology. The use of Fokker-Planck equations is standard for stochastic processes, and the assumption of short correlation time is explicitly stated and justified as necessary for deriving the effective single-species equation (Equation 2). Details are provided in SI B.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T05:20:40.011035Z"
+    },
+    {
+      "id": "60155567-5dba-4d1c-8842-318a0c4e2617",
+      "content_id": "ba099b09-143d-419e-ad6d-3880638d0f8a",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The model can be extended to include correlated species responses and other mechanisms, and the parameter range of nearly-neutral dynamics with significant environmental stochasticity is relevant for a wide variety of ecological systems, potentially explaining diversity differences between ecosystems.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C93-C95, C100-C101 discuss potential extensions and applications of the model. While the extensions are plausible and cite relevant methods (Loreau and de Mazancourt, 2008), these are largely speculative proposals for future work rather than demonstrated results. The broad applicability claim (C100) is a belief statement without comprehensive validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T05:20:40.011035Z"
+    },
+    {
+      "id": "5920c9ac-12ea-4f04-a8be-858c7adf8fd6",
+      "content_id": "ba099b09-143d-419e-ad6d-3880638d0f8a",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Background claims establishing the ecological context, challenges in studying diverse communities, and classification of theoretical approaches to understanding species dominance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims (C1, C8-C17, C73-C77, C79-C80) provide background context and literature review. They are well-supported by appropriate citations to foundational and recent work in ecology and represent established knowledge in the field. They frame the motivation and context for the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T05:20:40.011035Z"
+    },
+    {
+      "id": "99a2cd8a-bd13-4972-b043-248079592b93",
+      "content_id": "ba099b09-143d-419e-ad6d-3880638d0f8a",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The study used large databases from four diverse ecological systems (human microbiome, marine prokaryotes, tropical trees, and birds) to test model predictions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C104 describes the empirical data sources used in the study. All four databases are properly cited (David et al., 2014; Egu\u00edluz et al., 2019; Cooper et al., 2024; Callaghan et al., 2021) and the data are analyzed in Figure 3.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T05:20:40.011035Z"
+    },
+    {
+      "id": "216da6dd-95d3-48ce-bbf6-73acec927b2f",
+      "content_id": "ba099b09-143d-419e-ad6d-3880638d0f8a",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Empirical species abundance distributions cannot be explained by the stable clique scenario, which predicts a gap between high and low abundance species and a truncated Gaussian distribution for abundant species.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C81 is supported by comparison of empirical data in Figure 3 with theoretical predictions. The observed distributions show no gap and display power-law behavior rather than the truncated Gaussian expected from the stable clique scenario, ruling out this alternative explanation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T05:20:40.011035Z"
+    },
+    {
+      "id": "5062e7e4-9a8f-4b1d-ab2b-eed89120d154",
+      "content_id": "ba099b09-143d-419e-ad6d-3880638d0f8a",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Recent work by van Nes et al. (2024) and Mallmin et al. (2024) showed that stickiness enables time-averaged neutral models and chaotic systems to produce patterns resembling real ecological communities.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24, C25, and C37 cite recent related work that supports and motivates the current study. These are properly attributed citations that establish the context for the current analysis and show consistency with recent findings in the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T05:20:40.011035Z"
+    },
+    {
+      "id": "49e80a76-c395-4762-a5a3-da1cb1b6a706",
+      "content_id": "ba099b09-143d-419e-ad6d-3880638d0f8a",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Weak sampling shifts the species abundance distribution leftward, hiding the true characteristics for small abundance populations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C47 describes a known sampling effect supported by citation (Maruvka et al., 2010). This is used to explain why ocean prokaryote data (Figure 3b) shows only a pure power law, potentially due to insufficient sampling depth.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T05:20:40.011035Z"
+    },
+    {
+      "id": "f1569a9e-89ab-4ef2-90af-5aad491cc966",
+      "content_id": "ba099b09-143d-419e-ad6d-3880638d0f8a",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Demographic stochasticity is represented by noise whose amplitude scales with the square root of population size, as opposed to environmental stochasticity which scales linearly with population size.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C111 describes the standard mathematical representation of demographic versus environmental stochasticity in population models. This is well-established theory and is correctly applied in the derivation of Equation 6 (detailed in SI D).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T05:20:40.011035Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "722e06eb-492c-4adf-a1ab-ab6de720cd25",
+      "result_id": "6bf70ba3-58c2-47cd-92dd-61620febf021"
+    },
+    {
+      "claim_id": "455036c8-d3fc-4a69-9a81-bfc8bbace049",
+      "result_id": "6bf70ba3-58c2-47cd-92dd-61620febf021"
+    },
+    {
+      "claim_id": "f66cc23a-ffd1-4dad-8e43-602b3bb6443a",
+      "result_id": "6bf70ba3-58c2-47cd-92dd-61620febf021"
+    },
+    {
+      "claim_id": "046a74fd-9e58-4e9a-92f3-da6adc5c34ac",
+      "result_id": "6bf70ba3-58c2-47cd-92dd-61620febf021"
+    },
+    {
+      "claim_id": "17bcf551-f0cd-4b4e-bd70-6fad3a5f285e",
+      "result_id": "7faad8d9-641f-4e7f-b1d5-3a2d3a106ffe"
+    },
+    {
+      "claim_id": "44f27eb8-e7a1-4186-97c2-055492a42ef5",
+      "result_id": "7faad8d9-641f-4e7f-b1d5-3a2d3a106ffe"
+    },
+    {
+      "claim_id": "8bbc502f-897f-4b9c-bba0-3465440457b2",
+      "result_id": "7faad8d9-641f-4e7f-b1d5-3a2d3a106ffe"
+    },
+    {
+      "claim_id": "7f0b9a22-5708-4e35-a62a-2c019c8949ea",
+      "result_id": "7faad8d9-641f-4e7f-b1d5-3a2d3a106ffe"
+    },
+    {
+      "claim_id": "ac84a19d-2882-4d10-b1c3-2b39f77b0a9d",
+      "result_id": "05706aeb-5df2-4b3e-acc5-2a44921c0282"
+    },
+    {
+      "claim_id": "dac547c8-1dbb-4282-8148-e88a04f027e8",
+      "result_id": "05706aeb-5df2-4b3e-acc5-2a44921c0282"
+    },
+    {
+      "claim_id": "a79fa4b0-89c7-48fd-8905-dd800b971d8b",
+      "result_id": "05706aeb-5df2-4b3e-acc5-2a44921c0282"
+    },
+    {
+      "claim_id": "28ceb27d-e7fb-4138-b4fa-4f0780db5424",
+      "result_id": "15433b99-8b56-40ff-b9b8-9942256b14bd"
+    },
+    {
+      "claim_id": "e2f571f4-8a14-44fe-98c9-b3119cecf870",
+      "result_id": "15433b99-8b56-40ff-b9b8-9942256b14bd"
+    },
+    {
+      "claim_id": "b173dd78-2faf-4829-b2bc-89385850b69e",
+      "result_id": "15433b99-8b56-40ff-b9b8-9942256b14bd"
+    },
+    {
+      "claim_id": "dd0ca2cd-7979-40a9-bee3-7b8d3c499af8",
+      "result_id": "15433b99-8b56-40ff-b9b8-9942256b14bd"
+    },
+    {
+      "claim_id": "7feb5328-f9e0-40de-a481-6366925c3aaf",
+      "result_id": "15433b99-8b56-40ff-b9b8-9942256b14bd"
+    },
+    {
+      "claim_id": "3231ffb9-d27d-4684-a212-3b4e363cbee0",
+      "result_id": "15433b99-8b56-40ff-b9b8-9942256b14bd"
+    },
+    {
+      "claim_id": "9d5fdf80-b3c6-4302-bded-0c4a257aa985",
+      "result_id": "15433b99-8b56-40ff-b9b8-9942256b14bd"
+    },
+    {
+      "claim_id": "e0ccfef3-e285-4bf0-904f-e08494075656",
+      "result_id": "15433b99-8b56-40ff-b9b8-9942256b14bd"
+    },
+    {
+      "claim_id": "e547fc68-f35b-4853-a772-0188c7fee190",
+      "result_id": "29ebba00-153f-4bc3-afcb-2e5051f3b996"
+    },
+    {
+      "claim_id": "a237b7a4-c6c9-4b80-af16-cf59d850c1d8",
+      "result_id": "29ebba00-153f-4bc3-afcb-2e5051f3b996"
+    },
+    {
+      "claim_id": "8bada064-c725-44af-8891-38d94e8c77e8",
+      "result_id": "3ef8361e-590d-4747-8c96-8712f9a9d622"
+    },
+    {
+      "claim_id": "797fc521-120f-4ea5-bfad-1131d6930dec",
+      "result_id": "3ef8361e-590d-4747-8c96-8712f9a9d622"
+    },
+    {
+      "claim_id": "a94dc1c9-ae88-4946-a3a9-b130033b120c",
+      "result_id": "3ef8361e-590d-4747-8c96-8712f9a9d622"
+    },
+    {
+      "claim_id": "c44522b3-e50f-4c50-9929-88ea57d99bb4",
+      "result_id": "3ef8361e-590d-4747-8c96-8712f9a9d622"
+    },
+    {
+      "claim_id": "1ee54e8c-1d56-412c-9356-31b4e44034ae",
+      "result_id": "3ef8361e-590d-4747-8c96-8712f9a9d622"
+    },
+    {
+      "claim_id": "ff5a0ec2-3c52-4553-a345-fda59f8c2e7b",
+      "result_id": "3ef8361e-590d-4747-8c96-8712f9a9d622"
+    },
+    {
+      "claim_id": "f09820fb-2f53-466d-b251-434371a8e219",
+      "result_id": "23708341-53a1-4046-8ba7-5d68400ed1b6"
+    },
+    {
+      "claim_id": "5d0348d8-465f-4724-840a-557f312c0c4d",
+      "result_id": "23708341-53a1-4046-8ba7-5d68400ed1b6"
+    },
+    {
+      "claim_id": "ba0a1238-2b95-4a13-9fe6-a193ff98b0b5",
+      "result_id": "0c287c49-7a42-4184-a737-a0360671be31"
+    },
+    {
+      "claim_id": "f7154411-9e23-41fe-b6fc-0c483fdfb0ca",
+      "result_id": "0c287c49-7a42-4184-a737-a0360671be31"
+    },
+    {
+      "claim_id": "eaa6bc2d-13ef-478b-8e08-181b8b3b175c",
+      "result_id": "0c287c49-7a42-4184-a737-a0360671be31"
+    },
+    {
+      "claim_id": "bb6bfc61-86ff-4a9e-94b3-0239791c2ef9",
+      "result_id": "0c287c49-7a42-4184-a737-a0360671be31"
+    },
+    {
+      "claim_id": "edcb341a-8c0f-41fa-b58e-bd608c15e8c1",
+      "result_id": "0c287c49-7a42-4184-a737-a0360671be31"
+    },
+    {
+      "claim_id": "96fc0acf-a1ba-41af-a46c-223bb482c8c1",
+      "result_id": "0c287c49-7a42-4184-a737-a0360671be31"
+    },
+    {
+      "claim_id": "00891549-913b-42e4-8054-d1d2e1bdfd29",
+      "result_id": "0c287c49-7a42-4184-a737-a0360671be31"
+    },
+    {
+      "claim_id": "dd1d50c1-6c9c-46f0-a730-4d4b0ec0be23",
+      "result_id": "30081a04-5d3f-43ff-b698-142b3585f887"
+    },
+    {
+      "claim_id": "bdf5e14c-5f16-465f-8b05-74a97730d05b",
+      "result_id": "30081a04-5d3f-43ff-b698-142b3585f887"
+    },
+    {
+      "claim_id": "9b76f972-63aa-4d53-8f8d-4b96d1e68f7d",
+      "result_id": "30081a04-5d3f-43ff-b698-142b3585f887"
+    },
+    {
+      "claim_id": "ca25c154-e7ca-4093-8b01-3e23c3d8217e",
+      "result_id": "30081a04-5d3f-43ff-b698-142b3585f887"
+    },
+    {
+      "claim_id": "1d61cb70-a24c-40b7-8ad9-6a7430bf5fa5",
+      "result_id": "30081a04-5d3f-43ff-b698-142b3585f887"
+    },
+    {
+      "claim_id": "eac41ea8-d4fc-450e-a4fe-916888e60c63",
+      "result_id": "4a0570b3-ffec-4ca7-b410-89f94bbd34ce"
+    },
+    {
+      "claim_id": "368f6eda-99ea-416a-bced-644d55217193",
+      "result_id": "4a0570b3-ffec-4ca7-b410-89f94bbd34ce"
+    },
+    {
+      "claim_id": "bc65b086-0b33-4e23-855c-6c68ec22952e",
+      "result_id": "4a0570b3-ffec-4ca7-b410-89f94bbd34ce"
+    },
+    {
+      "claim_id": "37f06afd-2a4a-4447-ada1-884b192ffece",
+      "result_id": "4a0570b3-ffec-4ca7-b410-89f94bbd34ce"
+    },
+    {
+      "claim_id": "5e9589ae-42c4-4eba-a05d-27573d0557a6",
+      "result_id": "81fcd818-ad38-418e-833e-a66c826e5212"
+    },
+    {
+      "claim_id": "b1666f8b-f151-4110-a072-843ecab72cad",
+      "result_id": "81fcd818-ad38-418e-833e-a66c826e5212"
+    },
+    {
+      "claim_id": "43def8d3-558b-42b6-bd00-d6e10b35a8b5",
+      "result_id": "60155567-5dba-4d1c-8842-318a0c4e2617"
+    },
+    {
+      "claim_id": "13a37712-203a-4bb3-91e0-1d1556a18e6c",
+      "result_id": "60155567-5dba-4d1c-8842-318a0c4e2617"
+    },
+    {
+      "claim_id": "5ffe1140-7d1e-4c5d-9e20-6e2e368163bf",
+      "result_id": "60155567-5dba-4d1c-8842-318a0c4e2617"
+    },
+    {
+      "claim_id": "71cdd254-bc7f-4736-8660-f5d5938bcb7a",
+      "result_id": "60155567-5dba-4d1c-8842-318a0c4e2617"
+    },
+    {
+      "claim_id": "19e9c16b-a1d5-420c-b789-540d8f7261a0",
+      "result_id": "60155567-5dba-4d1c-8842-318a0c4e2617"
+    },
+    {
+      "claim_id": "97d67e39-1fca-4ae1-9663-d2b2f49e2bfa",
+      "result_id": "5920c9ac-12ea-4f04-a8be-858c7adf8fd6"
+    },
+    {
+      "claim_id": "b17e3a68-e4a5-4577-9a48-f54574980da9",
+      "result_id": "5920c9ac-12ea-4f04-a8be-858c7adf8fd6"
+    },
+    {
+      "claim_id": "3985889c-b8b7-405c-bb66-e6ff8e528cc6",
+      "result_id": "5920c9ac-12ea-4f04-a8be-858c7adf8fd6"
+    },
+    {
+      "claim_id": "72477b1b-9b3b-4846-b362-9ef8df8b766a",
+      "result_id": "5920c9ac-12ea-4f04-a8be-858c7adf8fd6"
+    },
+    {
+      "claim_id": "52dcf63f-6dc9-4aba-bb14-fc751123d15a",
+      "result_id": "5920c9ac-12ea-4f04-a8be-858c7adf8fd6"
+    },
+    {
+      "claim_id": "78f76939-d518-4b99-8323-91b7c2669c9e",
+      "result_id": "5920c9ac-12ea-4f04-a8be-858c7adf8fd6"
+    },
+    {
+      "claim_id": "3745cf9c-a3ec-4fe9-8e52-1076b5a805bb",
+      "result_id": "5920c9ac-12ea-4f04-a8be-858c7adf8fd6"
+    },
+    {
+      "claim_id": "e36b7cc6-2254-49dc-99ef-e6962ded3230",
+      "result_id": "5920c9ac-12ea-4f04-a8be-858c7adf8fd6"
+    },
+    {
+      "claim_id": "63a0d87b-66c7-4289-a027-6e0d547341b6",
+      "result_id": "5920c9ac-12ea-4f04-a8be-858c7adf8fd6"
+    },
+    {
+      "claim_id": "9e885e54-33dd-4973-ab2c-ccf7675822a2",
+      "result_id": "5920c9ac-12ea-4f04-a8be-858c7adf8fd6"
+    },
+    {
+      "claim_id": "af63600d-9ffc-435e-8422-9119d217bad2",
+      "result_id": "5920c9ac-12ea-4f04-a8be-858c7adf8fd6"
+    },
+    {
+      "claim_id": "0089f2c4-5f5b-416d-a785-544d95119e4f",
+      "result_id": "5920c9ac-12ea-4f04-a8be-858c7adf8fd6"
+    },
+    {
+      "claim_id": "03563042-48f4-4401-ad3f-26e453c70b41",
+      "result_id": "5920c9ac-12ea-4f04-a8be-858c7adf8fd6"
+    },
+    {
+      "claim_id": "50a3891d-fdb7-4407-9df3-c65a185006a4",
+      "result_id": "5920c9ac-12ea-4f04-a8be-858c7adf8fd6"
+    },
+    {
+      "claim_id": "810ee994-8b43-44b9-a905-be0ee4eb3d68",
+      "result_id": "5920c9ac-12ea-4f04-a8be-858c7adf8fd6"
+    },
+    {
+      "claim_id": "a1cc3155-d916-4832-bd20-44b3aa3d9bcd",
+      "result_id": "5920c9ac-12ea-4f04-a8be-858c7adf8fd6"
+    },
+    {
+      "claim_id": "aea10da4-516d-40d0-84d2-25268d8dbfcf",
+      "result_id": "5920c9ac-12ea-4f04-a8be-858c7adf8fd6"
+    },
+    {
+      "claim_id": "bdf586c7-e957-4957-a9f6-d1198fe33779",
+      "result_id": "5920c9ac-12ea-4f04-a8be-858c7adf8fd6"
+    },
+    {
+      "claim_id": "b39e1e8b-03bb-4128-ba0d-0a6466e3ed6d",
+      "result_id": "99a2cd8a-bd13-4972-b043-248079592b93"
+    },
+    {
+      "claim_id": "ef61eeb1-218c-4102-8172-a7c46033f7c2",
+      "result_id": "216da6dd-95d3-48ce-bbf6-73acec927b2f"
+    },
+    {
+      "claim_id": "e183b421-1262-40e9-b19f-553ccf6ec827",
+      "result_id": "5062e7e4-9a8f-4b1d-ab2b-eed89120d154"
+    },
+    {
+      "claim_id": "004f3281-c3f1-4cd4-80ff-c2518ef7d003",
+      "result_id": "5062e7e4-9a8f-4b1d-ab2b-eed89120d154"
+    },
+    {
+      "claim_id": "7e680674-b9bc-44e1-b104-589a9e1b4c4c",
+      "result_id": "5062e7e4-9a8f-4b1d-ab2b-eed89120d154"
+    },
+    {
+      "claim_id": "6eafaabc-da76-4b67-a071-1994a46efd80",
+      "result_id": "49e80a76-c395-4762-a5a3-da1cb1b6a706"
+    },
+    {
+      "claim_id": "d4011d9f-2dcc-47e9-bb12-cd01ea7d47f3",
+      "result_id": "f1569a9e-89ab-4ef2-90af-5aad491cc966"
+    }
+  ],
+  "comparisons": []
+}

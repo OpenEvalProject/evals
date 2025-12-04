@@ -1,0 +1,699 @@
+{
+  "submission": {
+    "id": "25c0a350-2eac-48ed-9251-098c5257f6ec",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-04T04:42:40.878217Z",
+    "updated_at": "2025-12-04T04:42:40.878217Z"
+  },
+  "content": [
+    {
+      "id": "2e3e4804-190b-4863-833e-6f0270fa0553",
+      "submission_id": "25c0a350-2eac-48ed-9251-098c5257f6ec",
+      "content_type": "manuscript",
+      "content_text": "# How and why eLife selects papers for peer review\n\n## Authors\n\n- Timothy E Behrens \u2020\n- Olujimi A Ajijola\n- Mayank Chugh\n\n\u2020 Corresponding author\n\n## Abstract\n\nWhen deciding which submissions should be peer reviewed, eLife editors consider whether they will be able to find high-quality reviewers, and whether the reviews will be valuable to the scientific community.\n\n## Finding the right reviewers\n\nRecruiting good reviewers is difficult, and it is getting more difficult as the volume of published work increases year-on-year. Importantly, it is easier to find reviewers, particularly those with the deep expertise we need, for work that is interesting and rigorous. People simply prefer to review work that is of interest to them, and the same is true when it comes to finding editors to oversee the review process.\n\nSo there is a clear tension: we would like the outputs of the eLife peer-review process to be of the highest quality, but preparing such assessments is easier for work that editors and reviewers are willing to engage with. Therefore, one clear reason for why we only peer review some submissions is to ensure the quality and rigour of what we produce.\n\n## Focusing our efforts\n\nWe must continue to focus our efforts on those papers where the outputs of the eLife peer-review process are most valuable. This is not the same as deciding which papers are \u201cthe best\u201d. For example, there might be value in reviewing work that is controversial in a particular field of research. However, it does mean concentrating on papers where we believe the scientific content will be most inspiring to eLife readers.\n\nJust as editors and reviewers prefer to review work that is of interest to them, as readers we scientists pay more attention to reviews of work that has the potential to change the way we think about a question. Therefore, if we are going to change scientific publishing for the better, we will do so faster by focusing our efforts on such papers.\n\n## How it works\n\nThe peer-review process at eLife is overseen by a team of over 70 Senior Editors and more than 700 Reviewing Editors. Every paper submitted to the journal is assigned to a Senior Editor, who generally asks a small number of Reviewing Editors about the submission. The Reviewing Editors offer their scientific views on the paper, and there is an open discussion about whether to review the paper, using the reasoning laid out above. Editors are considering whether the work is of substantial interest, whether they will be able to find high-quality reviewers, and whether the reviews will be valuable to the scientific community.\n\nIf they decide to proceed, and if one of the Reviewing Editors agrees to handle the submission, they initiate the labour of love that is peer review. Once the reviews have been received, the Reviewing Editor and the reviewers craft the eLife assessment, which is vetted by the Senior Editor before publication. This assessment, together with the Public Reviews, helps readers to better understand the new findings, their validity, and their relevance to the broader scientific community. If this approach were adopted more widely, it would mean that a reader could judge the work in a given paper on its own merits, irrespective of where it was published.\n",
+      "created_at": "2025-12-04T04:42:40.878217Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T04:42:40.878217Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T04:42:40.878217Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "1f15d8e9-6ba1-4f0d-b4ae-658d1287a421",
+      "content_id": "2e3e4804-190b-4863-833e-6f0270fa0553",
+      "claim_id": "C1",
+      "claim": "eLife editors consider whether they will be able to find high-quality reviewers when deciding which submissions should be peer reviewed.",
+      "claim_type": "EXPLICIT",
+      "source": "When deciding which submissions should be peer reviewed, eLife editors consider whether they will be able to find high-quality reviewers, and whether the reviews will be valuable to the scientific community.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly stated in the abstract as a criterion used by eLife editors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:42:40.878217Z"
+    },
+    {
+      "id": "b99c373b-0bff-48e2-aa4e-a5f9b071471e",
+      "content_id": "2e3e4804-190b-4863-833e-6f0270fa0553",
+      "claim_id": "C2",
+      "claim": "eLife editors consider whether the reviews will be valuable to the scientific community when deciding which submissions should be peer reviewed.",
+      "claim_type": "EXPLICIT",
+      "source": "When deciding which submissions should be peer reviewed, eLife editors consider whether they will be able to find high-quality reviewers, and whether the reviews will be valuable to the scientific community.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly stated in the abstract as a criterion used by eLife editors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:42:40.878217Z"
+    },
+    {
+      "id": "98953716-bdca-4b0c-98e2-55e55793eedc",
+      "content_id": "2e3e4804-190b-4863-833e-6f0270fa0553",
+      "claim_id": "C3",
+      "claim": "Recruiting good reviewers is difficult.",
+      "claim_type": "EXPLICIT",
+      "source": "Recruiting good reviewers is difficult, and it is getting more difficult as the volume of published work increases year-on-year.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an observation about the current state of peer review.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:42:40.878217Z"
+    },
+    {
+      "id": "11e41dc5-3879-4987-8f8e-4140c4793b88",
+      "content_id": "2e3e4804-190b-4863-833e-6f0270fa0553",
+      "claim_id": "C4",
+      "claim": "Recruiting good reviewers is getting more difficult as the volume of published work increases year-on-year.",
+      "claim_type": "EXPLICIT",
+      "source": "Recruiting good reviewers is difficult, and it is getting more difficult as the volume of published work increases year-on-year.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an observation about a trend in peer review difficulty.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:42:40.878217Z"
+    },
+    {
+      "id": "2d000cbb-63f6-4d87-b29b-36f310c06df6",
+      "content_id": "2e3e4804-190b-4863-833e-6f0270fa0553",
+      "claim_id": "C5",
+      "claim": "It is easier to find reviewers for work that is interesting and rigorous.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, it is easier to find reviewers, particularly those with the deep expertise we need, for work that is interesting and rigorous.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an observation about reviewer recruitment patterns.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:42:40.878217Z"
+    },
+    {
+      "id": "ff1b1fe0-d2ff-4e81-a650-9f658e15f27a",
+      "content_id": "2e3e4804-190b-4863-833e-6f0270fa0553",
+      "claim_id": "C6",
+      "claim": "It is easier to find reviewers with deep expertise for work that is interesting and rigorous.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, it is easier to find reviewers, particularly those with the deep expertise we need, for work that is interesting and rigorous.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an observation about recruiting expert reviewers.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:42:40.878217Z"
+    },
+    {
+      "id": "a305df40-c305-4688-bcd8-2f26693de2a4",
+      "content_id": "2e3e4804-190b-4863-833e-6f0270fa0553",
+      "claim_id": "C7",
+      "claim": "People prefer to review work that is of interest to them.",
+      "claim_type": "EXPLICIT",
+      "source": "People simply prefer to review work that is of interest to them, and the same is true when it comes to finding editors to oversee the review process.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a general observation about reviewer preferences.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:42:40.878217Z"
+    },
+    {
+      "id": "4ab4cfda-494b-49a4-90af-b6418d7ed7b9",
+      "content_id": "2e3e4804-190b-4863-833e-6f0270fa0553",
+      "claim_id": "C8",
+      "claim": "Editors prefer to oversee the review process for work that is of interest to them.",
+      "claim_type": "EXPLICIT",
+      "source": "People simply prefer to review work that is of interest to them, and the same is true when it comes to finding editors to oversee the review process.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a general observation about editor preferences.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:42:40.878217Z"
+    },
+    {
+      "id": "0beb126a-1d10-4244-86d3-1e4be9c28c81",
+      "content_id": "2e3e4804-190b-4863-833e-6f0270fa0553",
+      "claim_id": "C9",
+      "claim": "There is a tension between wanting high-quality peer-review outputs and the fact that preparing such assessments is easier for work that editors and reviewers are willing to engage with.",
+      "claim_type": "EXPLICIT",
+      "source": "So there is a clear tension: we would like the outputs of the eLife peer-review process to be of the highest quality, but preparing such assessments is easier for work that editors and reviewers are willing to engage with.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an explicit tension in the peer review process.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:42:40.878217Z"
+    },
+    {
+      "id": "1ad576ad-44ae-425c-8750-46b88513fae3",
+      "content_id": "2e3e4804-190b-4863-833e-6f0270fa0553",
+      "claim_id": "C10",
+      "claim": "One reason eLife only peer reviews some submissions is to ensure the quality and rigour of what they produce.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, one clear reason for why we only peer review some submissions is to ensure the quality and rigour of what we produce.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an explicit rationale for selective peer review.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:42:40.878217Z"
+    },
+    {
+      "id": "3fd33292-6eae-4dd6-92f3-11841f88d1d5",
+      "content_id": "2e3e4804-190b-4863-833e-6f0270fa0553",
+      "claim_id": "C11",
+      "claim": "eLife must focus efforts on papers where the outputs of the eLife peer-review process are most valuable.",
+      "claim_type": "EXPLICIT",
+      "source": "We must continue to focus our efforts on those papers where the outputs of the eLife peer-review process are most valuable.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a policy or principle guiding eLife's approach.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:42:40.878217Z"
+    },
+    {
+      "id": "6c9ac2ac-2ed9-47d5-8c0f-a19c520cdc09",
+      "content_id": "2e3e4804-190b-4863-833e-6f0270fa0553",
+      "claim_id": "C12",
+      "claim": "Focusing on papers where peer-review outputs are most valuable is not the same as deciding which papers are 'the best'.",
+      "claim_type": "EXPLICIT",
+      "source": "This is not the same as deciding which papers are \"the best\".",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a clarification of eLife's selection criteria.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:42:40.878217Z"
+    },
+    {
+      "id": "63ff3f73-bf24-48fd-9958-bbf5e6e4a0b6",
+      "content_id": "2e3e4804-190b-4863-833e-6f0270fa0553",
+      "claim_id": "C13",
+      "claim": "There might be value in reviewing work that is controversial in a particular field of research.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, there might be value in reviewing work that is controversial in a particular field of research.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a hypothetical example of valuable work to review.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:42:40.878217Z"
+    },
+    {
+      "id": "34c6ffe4-6cfa-4342-b6dc-d0503affca05",
+      "content_id": "2e3e4804-190b-4863-833e-6f0270fa0553",
+      "claim_id": "C14",
+      "claim": "eLife concentrates on papers where they believe the scientific content will be most inspiring to eLife readers.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it does mean concentrating on papers where we believe the scientific content will be most inspiring to eLife readers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a criterion for paper selection.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:42:40.878217Z"
+    },
+    {
+      "id": "60539329-e5ea-4084-86e1-b374c454fa34",
+      "content_id": "2e3e4804-190b-4863-833e-6f0270fa0553",
+      "claim_id": "C15",
+      "claim": "Scientists pay more attention to reviews of work that has the potential to change the way they think about a question.",
+      "claim_type": "EXPLICIT",
+      "source": "Just as editors and reviewers prefer to review work that is of interest to them, as readers we scientists pay more attention to reviews of work that has the potential to change the way we think about a question.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an observation about scientist behavior as readers.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:42:40.878217Z"
+    },
+    {
+      "id": "b8f9aa4e-cfef-4f70-9666-a93d19b5169a",
+      "content_id": "2e3e4804-190b-4863-833e-6f0270fa0553",
+      "claim_id": "C16",
+      "claim": "eLife will change scientific publishing for the better faster by focusing efforts on papers that have the potential to change the way scientists think about a question.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, if we are going to change scientific publishing for the better, we will do so faster by focusing our efforts on such papers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a strategic rationale based on inference from reader behavior.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:42:40.878217Z"
+    },
+    {
+      "id": "383bbf7a-9dec-4ff5-bdd0-4effb84bb501",
+      "content_id": "2e3e4804-190b-4863-833e-6f0270fa0553",
+      "claim_id": "C17",
+      "claim": "The peer-review process at eLife is overseen by a team of over 70 Senior Editors.",
+      "claim_type": "EXPLICIT",
+      "source": "The peer-review process at eLife is overseen by a team of over 70 Senior Editors and more than 700 Reviewing Editors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a factual description of eLife's editorial structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:42:40.878217Z"
+    },
+    {
+      "id": "7618055a-41c3-4b45-a771-94871896975c",
+      "content_id": "2e3e4804-190b-4863-833e-6f0270fa0553",
+      "claim_id": "C18",
+      "claim": "The peer-review process at eLife is overseen by more than 700 Reviewing Editors.",
+      "claim_type": "EXPLICIT",
+      "source": "The peer-review process at eLife is overseen by a team of over 70 Senior Editors and more than 700 Reviewing Editors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a factual description of eLife's editorial structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:42:40.878217Z"
+    },
+    {
+      "id": "585374e6-0cc5-4189-873c-d19b386ef850",
+      "content_id": "2e3e4804-190b-4863-833e-6f0270fa0553",
+      "claim_id": "C19",
+      "claim": "Every paper submitted to eLife is assigned to a Senior Editor.",
+      "claim_type": "EXPLICIT",
+      "source": "Every paper submitted to the journal is assigned to a Senior Editor, who generally asks a small number of Reviewing Editors about the submission.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a description of eLife's submission process.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:42:40.878217Z"
+    },
+    {
+      "id": "b36a5416-270f-4681-97ee-9862cd17b5b7",
+      "content_id": "2e3e4804-190b-4863-833e-6f0270fa0553",
+      "claim_id": "C20",
+      "claim": "Senior Editors generally ask a small number of Reviewing Editors about the submission.",
+      "claim_type": "EXPLICIT",
+      "source": "Every paper submitted to the journal is assigned to a Senior Editor, who generally asks a small number of Reviewing Editors about the submission.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a description of eLife's submission process.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:42:40.878217Z"
+    },
+    {
+      "id": "8c43e090-0fed-4c3b-a3d0-9c0b847c5760",
+      "content_id": "2e3e4804-190b-4863-833e-6f0270fa0553",
+      "claim_id": "C21",
+      "claim": "Reviewing Editors offer their scientific views on the paper.",
+      "claim_type": "EXPLICIT",
+      "source": "The Reviewing Editors offer their scientific views on the paper, and there is an open discussion about whether to review the paper, using the reasoning laid out above.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a description of the Reviewing Editors' role.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:42:40.878217Z"
+    },
+    {
+      "id": "3665fbe3-1e63-4f17-928f-41f02095d712",
+      "content_id": "2e3e4804-190b-4863-833e-6f0270fa0553",
+      "claim_id": "C22",
+      "claim": "There is an open discussion about whether to review the paper.",
+      "claim_type": "EXPLICIT",
+      "source": "The Reviewing Editors offer their scientific views on the paper, and there is an open discussion about whether to review the paper, using the reasoning laid out above.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a description of eLife's decision-making process.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:42:40.878217Z"
+    },
+    {
+      "id": "ea2227dd-80a4-4b3a-afd1-9e4374bc6ac8",
+      "content_id": "2e3e4804-190b-4863-833e-6f0270fa0553",
+      "claim_id": "C23",
+      "claim": "Editors consider whether the work is of substantial interest when deciding whether to review a paper.",
+      "claim_type": "EXPLICIT",
+      "source": "Editors are considering whether the work is of substantial interest, whether they will be able to find high-quality reviewers, and whether the reviews will be valuable to the scientific community.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as one of the criteria editors use in their decision-making.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:42:40.878217Z"
+    },
+    {
+      "id": "2dbf6d28-9e8a-471f-96fe-383bbf6f0a12",
+      "content_id": "2e3e4804-190b-4863-833e-6f0270fa0553",
+      "claim_id": "C24",
+      "claim": "Editors consider whether they will be able to find high-quality reviewers when deciding whether to review a paper.",
+      "claim_type": "EXPLICIT",
+      "source": "Editors are considering whether the work is of substantial interest, whether they will be able to find high-quality reviewers, and whether the reviews will be valuable to the scientific community.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as one of the criteria editors use in their decision-making.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:42:40.878217Z"
+    },
+    {
+      "id": "76b22f76-7b8b-4200-a859-491cde865b07",
+      "content_id": "2e3e4804-190b-4863-833e-6f0270fa0553",
+      "claim_id": "C25",
+      "claim": "Editors consider whether the reviews will be valuable to the scientific community when deciding whether to review a paper.",
+      "claim_type": "EXPLICIT",
+      "source": "Editors are considering whether the work is of substantial interest, whether they will be able to find high-quality reviewers, and whether the reviews will be valuable to the scientific community.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as one of the criteria editors use in their decision-making.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:42:40.878217Z"
+    },
+    {
+      "id": "c7cdab57-be78-46c2-9a05-8157451ddae0",
+      "content_id": "2e3e4804-190b-4863-833e-6f0270fa0553",
+      "claim_id": "C26",
+      "claim": "If editors decide to proceed with peer review, one of the Reviewing Editors must agree to handle the submission.",
+      "claim_type": "EXPLICIT",
+      "source": "If they decide to proceed, and if one of the Reviewing Editors agrees to handle the submission, they initiate the labour of love that is peer review.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a condition for proceeding with peer review.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:42:40.878217Z"
+    },
+    {
+      "id": "640dbaf4-f317-4675-87e0-30185ac4c1ba",
+      "content_id": "2e3e4804-190b-4863-833e-6f0270fa0553",
+      "claim_id": "C27",
+      "claim": "The Reviewing Editor and the reviewers craft the eLife assessment after reviews have been received.",
+      "claim_type": "EXPLICIT",
+      "source": "Once the reviews have been received, the Reviewing Editor and the reviewers craft the eLife assessment, which is vetted by the Senior Editor before publication.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a description of the post-review process.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:42:40.878217Z"
+    },
+    {
+      "id": "b3b58122-16f3-44b1-8813-3c5890438418",
+      "content_id": "2e3e4804-190b-4863-833e-6f0270fa0553",
+      "claim_id": "C28",
+      "claim": "The eLife assessment is vetted by the Senior Editor before publication.",
+      "claim_type": "EXPLICIT",
+      "source": "Once the reviews have been received, the Reviewing Editor and the reviewers craft the eLife assessment, which is vetted by the Senior Editor before publication.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a description of the quality control process.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:42:40.878217Z"
+    },
+    {
+      "id": "96b87100-ca8b-4a4d-9b0c-4d433a5284bf",
+      "content_id": "2e3e4804-190b-4863-833e-6f0270fa0553",
+      "claim_id": "C29",
+      "claim": "The eLife assessment, together with the Public Reviews, helps readers to better understand the new findings.",
+      "claim_type": "EXPLICIT",
+      "source": "This assessment, together with the Public Reviews, helps readers to better understand the new findings, their validity, and their relevance to the broader scientific community.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a purpose of the assessment and public reviews.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:42:40.878217Z"
+    },
+    {
+      "id": "d16648eb-741f-47f0-a158-e84447307511",
+      "content_id": "2e3e4804-190b-4863-833e-6f0270fa0553",
+      "claim_id": "C30",
+      "claim": "The eLife assessment, together with the Public Reviews, helps readers to better understand the validity of new findings.",
+      "claim_type": "EXPLICIT",
+      "source": "This assessment, together with the Public Reviews, helps readers to better understand the new findings, their validity, and their relevance to the broader scientific community.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a purpose of the assessment and public reviews.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:42:40.878217Z"
+    },
+    {
+      "id": "0e8d27d4-31ec-4a50-9956-84f6e63666db",
+      "content_id": "2e3e4804-190b-4863-833e-6f0270fa0553",
+      "claim_id": "C31",
+      "claim": "The eLife assessment, together with the Public Reviews, helps readers to better understand the relevance of new findings to the broader scientific community.",
+      "claim_type": "EXPLICIT",
+      "source": "This assessment, together with the Public Reviews, helps readers to better understand the new findings, their validity, and their relevance to the broader scientific community.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a purpose of the assessment and public reviews.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:42:40.878217Z"
+    },
+    {
+      "id": "53100e68-1a0f-4dfb-ae2b-7cf3285bc810",
+      "content_id": "2e3e4804-190b-4863-833e-6f0270fa0553",
+      "claim_id": "C32",
+      "claim": "If eLife's approach were adopted more widely, a reader could judge the work in a given paper on its own merits, irrespective of where it was published.",
+      "claim_type": "EXPLICIT",
+      "source": "If this approach were adopted more widely, it would mean that a reader could judge the work in a given paper on its own merits, irrespective of where it was published.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a hypothetical outcome of wider adoption of eLife's approach.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:42:40.878217Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "3bb1c88d-a80a-47bd-bb64-73de4592c437",
+      "content_id": "2e3e4804-190b-4863-833e-6f0270fa0553",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "eLife editors use three primary criteria when deciding which submissions to peer review: whether the work is of substantial interest, whether they can find high-quality reviewers, and whether the reviews will be valuable to the scientific community.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C2, C23, C24, and C25 consistently describe the same three selection criteria stated both in the abstract and in the detailed process description. These are explicit policy statements about eLife's editorial decision-making process.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:42:40.878217Z"
+    },
+    {
+      "id": "28287ef8-6a7d-494f-9ec7-890daed04edd",
+      "content_id": "2e3e4804-190b-4863-833e-6f0270fa0553",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Recruiting good reviewers is increasingly difficult due to growing publication volumes, but recruitment is easier for interesting and rigorous work because reviewers and editors prefer to engage with work that interests them.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C3-C8 present assertions about reviewer recruitment challenges and preferences, but no empirical data, citations, or systematic evidence is provided to support these generalizations. These are presented as general knowledge claims without substantiation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:42:40.878217Z"
+    },
+    {
+      "id": "914c6482-f38b-47e5-a1ad-688b68baad85",
+      "content_id": "2e3e4804-190b-4863-833e-6f0270fa0553",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "eLife selectively peer reviews submissions to ensure quality and rigor of their review outputs, addressing the tension between wanting high-quality reviews and the practical reality that such reviews are easier to produce for work that engages editors and reviewers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9 and C10 explicitly state the rationale for selective peer review as a quality control mechanism. This is a clear policy statement about eLife's operational approach, though the underlying assumption about quality-engagement relationships (from C3-C8) remains unvalidated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:42:40.878217Z"
+    },
+    {
+      "id": "fd82455e-5526-4444-80cb-aa7b3959256d",
+      "content_id": "2e3e4804-190b-4863-833e-6f0270fa0553",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "eLife focuses on papers where peer-review outputs are most valuable, specifically concentrating on scientifically inspiring content rather than simply selecting 'the best' papers, with controversial work cited as an example of potentially valuable content.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C14 articulate eLife's selection philosophy, explicitly distinguishing their approach from traditional quality-based selection. These are clear policy statements about editorial priorities, with C13 providing an illustrative example.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:42:40.878217Z"
+    },
+    {
+      "id": "5189c461-9b84-4a70-b8de-2e0e6dd25588",
+      "content_id": "2e3e4804-190b-4863-833e-6f0270fa0553",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "eLife's strategy to change scientific publishing relies on focusing efforts on papers with potential to change scientific thinking, based on the premise that scientists pay more attention to reviews of such transformative work.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C15 makes an empirical assertion about scientist behavior without supporting evidence, and C16 builds a strategic conclusion on this unvalidated premise. The causal logic connecting reader attention to publishing reform is not demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:42:40.878217Z"
+    },
+    {
+      "id": "bbffb99a-a5b9-4be8-af1f-779de4fc532c",
+      "content_id": "2e3e4804-190b-4863-833e-6f0270fa0553",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "eLife's peer review process involves over 70 Senior Editors and more than 700 Reviewing Editors, with each submission assigned to a Senior Editor who consults Reviewing Editors for their scientific views and an open discussion about whether to proceed with review.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C22 and C26 provide factual descriptions of eLife's editorial structure and initial review process. These are straightforward descriptive statements about organizational structure and workflow that are internally consistent.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:42:40.878217Z"
+    },
+    {
+      "id": "a59638d6-0235-41ed-a4f6-d823bcbf9da3",
+      "content_id": "2e3e4804-190b-4863-833e-6f0270fa0553",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "After peer review, the Reviewing Editor and reviewers collaboratively craft an eLife assessment that is vetted by the Senior Editor before publication, with the assessment and Public Reviews helping readers understand the findings, their validity, and their broader relevance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C31 describe the post-review workflow and stated purposes of eLife's assessment system. These are procedural descriptions and stated objectives that are internally consistent, though the actual effectiveness in helping readers (C29-C31) is not empirically validated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:42:40.878217Z"
+    },
+    {
+      "id": "3e62729b-8203-4b5a-aab2-90753c3bbfd2",
+      "content_id": "2e3e4804-190b-4863-833e-6f0270fa0553",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "If eLife's approach were adopted more widely, readers could judge papers on their own merits irrespective of publication venue.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C32 is explicitly speculative about hypothetical outcomes of wider adoption. No evidence or mechanism is provided to support how eLife's approach would achieve venue-independent evaluation, making this an aspirational statement rather than a demonstrated result.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:42:40.878217Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "1f15d8e9-6ba1-4f0d-b4ae-658d1287a421",
+      "result_id": "3bb1c88d-a80a-47bd-bb64-73de4592c437"
+    },
+    {
+      "claim_id": "b99c373b-0bff-48e2-aa4e-a5f9b071471e",
+      "result_id": "3bb1c88d-a80a-47bd-bb64-73de4592c437"
+    },
+    {
+      "claim_id": "ea2227dd-80a4-4b3a-afd1-9e4374bc6ac8",
+      "result_id": "3bb1c88d-a80a-47bd-bb64-73de4592c437"
+    },
+    {
+      "claim_id": "2dbf6d28-9e8a-471f-96fe-383bbf6f0a12",
+      "result_id": "3bb1c88d-a80a-47bd-bb64-73de4592c437"
+    },
+    {
+      "claim_id": "76b22f76-7b8b-4200-a859-491cde865b07",
+      "result_id": "3bb1c88d-a80a-47bd-bb64-73de4592c437"
+    },
+    {
+      "claim_id": "98953716-bdca-4b0c-98e2-55e55793eedc",
+      "result_id": "28287ef8-6a7d-494f-9ec7-890daed04edd"
+    },
+    {
+      "claim_id": "11e41dc5-3879-4987-8f8e-4140c4793b88",
+      "result_id": "28287ef8-6a7d-494f-9ec7-890daed04edd"
+    },
+    {
+      "claim_id": "2d000cbb-63f6-4d87-b29b-36f310c06df6",
+      "result_id": "28287ef8-6a7d-494f-9ec7-890daed04edd"
+    },
+    {
+      "claim_id": "ff1b1fe0-d2ff-4e81-a650-9f658e15f27a",
+      "result_id": "28287ef8-6a7d-494f-9ec7-890daed04edd"
+    },
+    {
+      "claim_id": "a305df40-c305-4688-bcd8-2f26693de2a4",
+      "result_id": "28287ef8-6a7d-494f-9ec7-890daed04edd"
+    },
+    {
+      "claim_id": "4ab4cfda-494b-49a4-90af-b6418d7ed7b9",
+      "result_id": "28287ef8-6a7d-494f-9ec7-890daed04edd"
+    },
+    {
+      "claim_id": "0beb126a-1d10-4244-86d3-1e4be9c28c81",
+      "result_id": "914c6482-f38b-47e5-a1ad-688b68baad85"
+    },
+    {
+      "claim_id": "1ad576ad-44ae-425c-8750-46b88513fae3",
+      "result_id": "914c6482-f38b-47e5-a1ad-688b68baad85"
+    },
+    {
+      "claim_id": "3fd33292-6eae-4dd6-92f3-11841f88d1d5",
+      "result_id": "fd82455e-5526-4444-80cb-aa7b3959256d"
+    },
+    {
+      "claim_id": "6c9ac2ac-2ed9-47d5-8c0f-a19c520cdc09",
+      "result_id": "fd82455e-5526-4444-80cb-aa7b3959256d"
+    },
+    {
+      "claim_id": "63ff3f73-bf24-48fd-9958-bbf5e6e4a0b6",
+      "result_id": "fd82455e-5526-4444-80cb-aa7b3959256d"
+    },
+    {
+      "claim_id": "34c6ffe4-6cfa-4342-b6dc-d0503affca05",
+      "result_id": "fd82455e-5526-4444-80cb-aa7b3959256d"
+    },
+    {
+      "claim_id": "60539329-e5ea-4084-86e1-b374c454fa34",
+      "result_id": "5189c461-9b84-4a70-b8de-2e0e6dd25588"
+    },
+    {
+      "claim_id": "b8f9aa4e-cfef-4f70-9666-a93d19b5169a",
+      "result_id": "5189c461-9b84-4a70-b8de-2e0e6dd25588"
+    },
+    {
+      "claim_id": "383bbf7a-9dec-4ff5-bdd0-4effb84bb501",
+      "result_id": "bbffb99a-a5b9-4be8-af1f-779de4fc532c"
+    },
+    {
+      "claim_id": "7618055a-41c3-4b45-a771-94871896975c",
+      "result_id": "bbffb99a-a5b9-4be8-af1f-779de4fc532c"
+    },
+    {
+      "claim_id": "585374e6-0cc5-4189-873c-d19b386ef850",
+      "result_id": "bbffb99a-a5b9-4be8-af1f-779de4fc532c"
+    },
+    {
+      "claim_id": "b36a5416-270f-4681-97ee-9862cd17b5b7",
+      "result_id": "bbffb99a-a5b9-4be8-af1f-779de4fc532c"
+    },
+    {
+      "claim_id": "8c43e090-0fed-4c3b-a3d0-9c0b847c5760",
+      "result_id": "bbffb99a-a5b9-4be8-af1f-779de4fc532c"
+    },
+    {
+      "claim_id": "3665fbe3-1e63-4f17-928f-41f02095d712",
+      "result_id": "bbffb99a-a5b9-4be8-af1f-779de4fc532c"
+    },
+    {
+      "claim_id": "c7cdab57-be78-46c2-9a05-8157451ddae0",
+      "result_id": "bbffb99a-a5b9-4be8-af1f-779de4fc532c"
+    },
+    {
+      "claim_id": "640dbaf4-f317-4675-87e0-30185ac4c1ba",
+      "result_id": "a59638d6-0235-41ed-a4f6-d823bcbf9da3"
+    },
+    {
+      "claim_id": "b3b58122-16f3-44b1-8813-3c5890438418",
+      "result_id": "a59638d6-0235-41ed-a4f6-d823bcbf9da3"
+    },
+    {
+      "claim_id": "96b87100-ca8b-4a4d-9b0c-4d433a5284bf",
+      "result_id": "a59638d6-0235-41ed-a4f6-d823bcbf9da3"
+    },
+    {
+      "claim_id": "d16648eb-741f-47f0-a158-e84447307511",
+      "result_id": "a59638d6-0235-41ed-a4f6-d823bcbf9da3"
+    },
+    {
+      "claim_id": "0e8d27d4-31ec-4a50-9956-84f6e63666db",
+      "result_id": "a59638d6-0235-41ed-a4f6-d823bcbf9da3"
+    },
+    {
+      "claim_id": "53100e68-1a0f-4dfb-ae2b-7cf3285bc810",
+      "result_id": "3e62729b-8203-4b5a-aab2-90753c3bbfd2"
+    }
+  ],
+  "comparisons": []
+}

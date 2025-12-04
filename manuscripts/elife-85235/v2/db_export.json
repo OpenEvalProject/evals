@@ -1,0 +1,2204 @@
+{
+  "submission": {
+    "id": "ffa80301-2ee2-44b1-b82c-c004e361d393",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-04T04:18:24.731085Z",
+    "updated_at": "2025-12-04T04:18:24.731085Z"
+  },
+  "content": [
+    {
+      "id": "d5d8920a-052f-4dba-8dfd-aa10a48e8d11",
+      "submission_id": "ffa80301-2ee2-44b1-b82c-c004e361d393",
+      "content_type": "manuscript",
+      "content_text": "# Characterization of caffeine response regulatory variants in vascular endothelial cells\n\n## Authors\n\n- Carly Boye<sup>1</sup> ([ORCID: 0000-0002-9142-0240](https://orcid.org/0000-0002-9142-0240))\n- Cynthia A Kalita<sup>1</sup>\n- Anthony S Findley<sup>1</sup> ([ORCID: 0000-0001-9922-3076](https://orcid.org/0000-0001-9922-3076))\n- Adnan Alazizi<sup>1</sup>\n- Julong Wei<sup>1</sup>\n- Xiaoquan Wen<sup>2</sup>\n- Roger Pique-Regi<sup>1</sup> ([ORCID: 0000-0002-1262-2275](https://orcid.org/0000-0002-1262-2275)) \u2020\n- Francesca Luca<sup>1</sup> ([ORCID: 0000-0001-8252-9052](https://orcid.org/0000-0001-8252-9052)) \u2020\n\n### Affiliations\n\n1. Center for Molecular Medicine and Genetics, Wayne State University Detroit United States ([ROR:01070mq45](https://ror.org/01070mq45))\n2. Department of Biostatistics, University of Michigan Ann Arbor United States ([ROR:00jmfr291](https://ror.org/00jmfr291))\n3. Department of Obstetrics and Gynecology, Wayne State University Detroit United States ([ROR:01070mq45](https://ror.org/01070mq45))\n4. Department of Biology, University of Rome Tor Vergata Rome Italy ([ROR:02p77k626](https://ror.org/02p77k626))\n\n\u2020 Corresponding author\n\n## Abstract\n\nGenetic variants in gene regulatory sequences can modify gene expression and mediate the molecular response to environmental stimuli. In addition, genotype\u2013environment interactions (GxE) contribute to complex traits such as cardiovascular disease. Caffeine is the most widely consumed stimulant and is known to produce a vascular response. To investigate GxE for caffeine, we treated vascular endothelial cells with caffeine and used a massively parallel reporter assay to measure allelic effects on gene regulation for over 43,000 genetic variants. We identified 665 variants with allelic effects on gene regulation and 6 variants that regulate the gene expression response to caffeine (GxE, false discovery rate [FDR] < 5%). When overlapping our GxE results with expression quantitative trait loci colocalized with coronary artery disease and hypertension, we dissected their regulatory mechanisms and showed a modulatory role for caffeine. Our results demonstrate that massively parallel reporter assay is a powerful approach to identify and molecularly characterize GxE in the specific context of caffeine consumption.\n\n## Introduction\n\nCaffeine is the most widely consumed stimulant in the world (Planning Committee for a Workshop on Potential Health Hazards Associated with Consumption of Caffeine in Food and Dietary Supplements, Food and Nutrition Board, Board on Health Sciences Policy, Institute of Medicine, 2014). Caffeine produces a vascular response in the endothelium, causing vasodilation. The vascular endothelium, the innermost layer of arteries, is involved in several important functions, including regulation of blood flow, angiogenesis, thrombosis, and coagulation (Hadi et al., 2005; Kr\u00fcger-Genge et al., 2019). Endothelial dysfunction occurs in diseases such as atherosclerosis and hypertension (Xu et al., 2021), eventually leading to coronary artery disease (CAD) (Matsuzawa and Lerman, 2014). Multiple studies have investigated the role of caffeine in cardiovascular disease (CVD), and more broadly, vascular health in general, with conflicting results (Chieng et al., 2022; Ding et al., 2014; Turnbull et al., 2017) on the role of caffeine in CVD risk. Ding et al., 2014 meta-analyzed 36 studies and found no association between heavy coffee consumption and increased risk of CVD (Ding et al., 2014). Similarly, Turnbull et al., 2017 observed that moderate caffeine consumption was not associated with an increased risk of CVD or other cardiovascular events such as heart failure (Turnbull et al., 2017). Multiple studies suggested that caffeine may be beneficial in reducing the risk of CAD (Choi et al., 2015; Miranda et al., 2018; Voskoboinik et al., 2019), while others provided evidence that caffeine may reduce the risk of heart failure, but had no significant effect on the risk of coronary heart disease or CVD (Stevens et al., 2021). Most recently, Chieng et al., 2022 found that decaffeinated, ground, and instant coffee significantly decreased CVD risk and mortality (Chieng et al., 2022). The conflicting results from these epidemiological studies may have several causes, including potential interactions between caffeine consumption and other environmental and genetic risk factors. Recent molecular studies investigated the consequences of caffeine exposure on chromatin accessibility and gene expression in vascular endothelial cells (Findley et al., 2019). This study identified response factor motifs for caffeine, defined as transcription factor motifs that are enriched in differentially accessible regions, and demonstrated that caffeine can induce changes in gene regulation in endothelial cells.\n\nAnalyzing the changes in gene expression upon exposure to environmental stimuli is a powerful approach to discover genotype\u2013environment interactions (GxE). These molecular GxE result in a different response depending on genotype (Knowles et al., 2018; Knowles et al., 2017; Moyerbrailean et al., 2016b), potentially through allele-specific effects (ASE) on response factor binding or other environmental-specific gene regulatory mechanisms. Yet regulatory sequences that are differentially bound in response to environmental perturbations are poorly annotated. Single-nucleotide polymorphisms (SNPs) within caffeine response factor binding sites were enriched for artery expression quantitative trait loci (eQTLs) colocalized with CAD risk variants (Findley et al., 2019). The results of this study thus suggested that SNPs within regulatory elements active in the presence of caffeine may play a role in CAD risk and pointed to GxE in gene regulation as a potential mechanism underlying caffeine modulation of genetic risk for CAD. However, only a limited number of molecular GxE for caffeine have been studied so far, thus the transcription factors and regulatory sequences involved in caffeine GxE remain uncharacterized. Furthermore, it is important to study GxE in the relevant cell type; that is, endothelial cells which constitute the vascular endothelium. For these reasons, it is crucial to investigate and validate the mechanisms behind caffeine GxE in vascular endothelial cells.\n\nMassively parallel reporter assays (MPRA) have allowed studies of noncoding genetic variants and their role in gene regulation, at unprecedented scale (Arnold et al., 2013; Gordon et al., 2020; Kalita et al., 2018; Melnikov et al., 2012; Patwardhan et al., 2012; Tewhey et al., 2016; Ulirsch et al., 2016; Vockley et al., 2015; Wang et al., 2018). Originally developed to study the gene regulatory potential of promoters and enhancer sequences, MPRA protocols have been further developed to study regulatory genetic variation and fine map association signals (Kalita et al., 2018; Tewhey et al., 2016; Ulirsch et al., 2016; Vockley et al., 2015). MPRAs with synthetic regulatory sequences can test allelic activity for candidate regulatory variants independently of their allele frequency in the population (Kalita et al., 2018; Tewhey et al., 2016; Ulirsch et al., 2016; Vockley et al., 2015). In MPRAs, DNA sequences containing each allele are transfected into cells and RNA-seq is used to quantify the transcripts for each allele. To directly test allelic effects of tens of thousands of candidate regulatory sequences predicted to affect transcription factor binding (CentiSNPs; Moyerbrailean et al., 2016a), we used an MPRA called Biallelic Targeted STARR-Seq (BiT-STARR-Seq) (Kalita et al., 2018). Only two previous studies have used MPRAs to investigate DNA sequences that regulate the transcriptional response to treatments (Johnson et al., 2018; Shlyueva et al., 2014). One study utilized STARR-Seq to characterize enhancer activity in Drosophila cells upon treatment with the hormone ecdysone; however, it did not investigate GxE (Shlyueva et al., 2014). The other study utilized STARR-Seq to investigate the response to glucocorticoid treatment in the human cell line A549 (Johnson et al., 2018). Although this study investigated GxE interactions, only a small number of variants were tested as this study was limited to preexisting variation within the samples (as opposed to designed target sequences) and only two variants had significant GxE (Johnson et al., 2018). We aim to identify and validate the DNA sequences that regulate the transcriptional response to caffeine in the vascular endothelium and how genetic variation present in these regulatory elements may affect the transcriptional response to caffeine (Figure 1A).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/85235/elife-85235-fig1-v2.jpg)\n\n**Figure 1.:** (A) Genetic variants modulate transcriptional response dependent on environmental conditions. The pink bars represent different alleles present in our targets, and the green triangle represents a bound transcription factor. These target sequences are transfected into cells, RNA is extracted and sequenced, and then activity is measured for targets for both alleles. (B) Library composition based on annotation category: single-nucleotide polymorphisms (SNPs) predicted to alter transcription factor binding using a combination of sequence information and experimental data (centiSNPs) (Moyerbrailean et al., 2016b), SNPs associated with complex traits (genome-wide association studies [GWAS]), and expression quantitative trait loci (eQTL) in GTEx.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/85235/elife-85235-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Caffeine libraries are on the top, and water libraries are on bottom.\n\n## Results\n\n### Active regulatory regions in response to caffeine\n\nFor this study, we used a library of targets that was designed to capture a large number of predicted gene regulatory variants in motifs for hundreds of transcription factor binding sites (Figure 1B). The targets in our library consisted of self-transcribing enhancer regions containing a minimal promoter, a reporter gene, and the oligonucleotide containing the candidate regulatory SNP. These candidate regulatory SNPs belong to multiple categories, including SNPs predicted to alter transcription factor binding using a combination of sequence information and experimental data (centiSNPs) (Moyerbrailean et al., 2016b), SNPs associated with complex traits (genome-wide association studies [GWAS]), and eQTLs in GTEx. In addition, we included 1676 negative control sequences. To test if these putative regulatory sequences mediate the response to caffeine, we used DESeq2 to test for differential activity of the targets in cells treated with caffeine compared to cells in the control group (see \u2018Materials and methods\u2019 for the specific model). The library contained motifs in both the forward and reverse orientations within separate targets. Since these motifs may induce direction-specific effects, we performed the differential activity analysis per each direction separately (see Figure 2\u2014figure supplement 1; see also Figure 2\u2014figure supplements 2 and 3), and considered any target with false discovery rate (FDR) < 10% in either direction as significant. We observed 772 significantly differentially active targets: 546 upregulated targets and 226 downregulated targets (Figure 2A, Supplementary file 1), showing that caffeine overall increases the activity of the regulatory elements.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/85235/elife-85235-fig2-v2.jpg)\n\n**Figure 2.:** (A) Volcano plot for DESeq2 results showing targets differentially active in caffeine. The light red points are significant (false discovery rate [FDR] < 10%) targets containing caffeine response factor binding sites, the black points are significant targets not containing a caffeine response factor binding site, and the gray points are nonsignificant targets. The inset contains a QQ plot for targets containing a caffeine response factor binding site (red), or no caffeine response factor binding site (black). (B) Motifs enriched via test of proportions (p<0.05) within differentially active targets. Names of caffeine response factors are bolded. For B-D panels error bars represent the 95% confidence interval (motif occurrence, n >100). (C) Motifs enriched via test of proportions within upregulated targets (p<0.05). (D) Motifs enriched via test of proportions within downregulated targets (p<0.05).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/85235/elife-85235-fig2-figsupp1-v2.jpg)\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/85235/elife-85235-fig2-figsupp2-v2.jpg)\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/85235/elife-85235-fig2-figsupp3-v2.jpg)\n\nWe then focused on differentially active targets containing a known caffeine response factor as determined based on chromatin accessibility data from endothelial cells treated with caffeine (Findley et al., 2019). We observed that these targets had lower p-values, as observed in the QQ plot in Figure 2A (inset). To identify any additional transcription factors that may be important for the response to caffeine, we conducted a motif scan for 838 known transcription factor binding motifs using the JASPAR CORE Vertebrates 2022 database (Castro-Mondragon et al., 2022; Supplementary file 2). We found 19 motifs that were enriched for being within differentially active targets (Figure 2B, Supplementary file 3). We found the motif for ZNF423, one of the caffeine response factors, was enriched within the differentially active targets. The three most enriched motifs were NFATC1, NFATC4, and NFATC2. The NFAT transcription factor family is known for their involvement in the Ca2+/NFAT pathway. This signaling pathway plays an important role in maintaining the homeostasis of vascular endothelial cells (Wang et al., 2020) and contributes to the mediation of proliferation and migration (Johnson et al., 2003; Wang et al., 2020). Thus, improper signaling of the Ca2+/NFAT pathway can induce endothelial dysfunction (Garcia-Vaz et al., 2020; Wang et al., 2020). In diabetic mice, NFAT expression exacerbated atherosclerosis (Blanco et al., 2018; Zetterqvist et al., 2014) and increased foam cell formation (Du et al., 2021). In human coronary artery smooth muscle cells, NFAT signaling mediates vascular calcification (Goettsch et al., 2011). To better understand the regulatory response to caffeine, we then investigated which motifs were enriched for being within upregulated or downregulated targets separately (Supplementary file 3). We observed 19 motifs enriched for being within upregulated targets (Figure 2C) and 23 motifs enriched for being within downregulated targets (Figure 2D). Motifs enriched for being within upregulated targets include the previously mentioned NFATC1 and ZNF423. Motifs enriched for being within downregulated targets include the previously mentioned NFATC2 and ZNF423. We also observed that the motif for SREBF2, also called SREBP2, is enriched for being within downregulated targets. In hepatocytes, caffeine is known to suppress SREBF2 activity, which reduces PCSK9 expression, and thus increases LDLR expression, which could be protective against CVD (Lebeau et al., 2022). The corresponding transcription factors for these motifs could also play a role in mediating the response to caffeine in vascular endothelial cells. The motif for TEAD4 was also identified as enriched for being within downregulated targets. Interestingly, a CAD GWAS risk variant disrupts binding of TEAD4 in smooth muscle cells, causing lower expression of p16, which could potentially contribute to the risk identified at this locus (Almontashiri et al., 2015).\n\n### Allelic effects on gene regulation within conditions and in response to caffeine\n\nTo investigate how genetic variation affects regulatory sequences and their function in cells treated with caffeine and in the control samples, we tested for ASE. Since the library contained the same sequence in both the forward and reverse orientations in independent targets and the regulatory effect may be direction-dependent, we tested for ASE in each SNP/direction pair separately (Supplementary file 4; Figure 3\u2014figure supplement 1, see \u2018BiT-STARR-Seq Library Design\u2019 section for a more detailed description of terminology used). We observed 689 SNP/direction pairs (corresponding to 665 SNPs) with significant ASE out of 50,914 SNP/direction pairs (30,680 SNPs) tested (2.2%, FDR < 10%) (Figure 3A). Additionally, our library contained negative control sequences that were predicted to not have an allelic regulatory effect. These negative control sequences tend to have higher p-values than other sequences in our library, as predicted (Figure 3A). These results demonstrate that genetic variation within regulatory sequences within our library can modulate gene expression levels in vascular endothelial cells.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/85235/elife-85235-fig3-v2.jpg)\n\n**Figure 3.:** (A) QQ plot depicting the p-values for allele-specific effects (ASE), with negative control sequences labeled in lighter red (caffeine) or lighter blue (control). (B) QQ plot depicting the p-values for conditional allele-specific effects (cASE), with targets containing caffeine response factor motifs annotated in pink and all other sequences in blue. (C) Enrichment via Fisher\u2019s exact test (p<0.05) of ASE (green) and cASE (purple) variants in open chromatin regions and targets containing artery expression quantitative trait loci (eQTL). Error bars indicate 95% confidence intervals. The sample sizes for each test are reported in Supplementary file 3.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/85235/elife-85235-fig3-figsupp1-v2.jpg)\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/85235/elife-85235-fig3-figsupp2-v2.jpg)\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/85235/elife-85235-fig3-figsupp3-v2.jpg)\n\n**Figure 3\u2014figure supplement 3.:** \u2018Meta\u2019 is the combination of all three artery tissue types in GTEx. Error bars indicate 95% confidence interval. 3,401,115 SNPs were used in this analysis.\n\nTo directly test for GxE in the molecular response to caffeine, we tested for conditional allele-specific effects (cASE), where ASE is only significant in one condition, or significantly different between the two conditions. When testing for cASE, we observed 6 significant SNP/direction pairs (corresponding to 6 SNPs) out of 23,814 (15,927 SNPs) tested (FDR < 5%) (Figure 3B, Supplementary file 4, Figure 3\u2014figure supplement 2). Additionally, we annotated which of these cASE targets contains a known caffeine response factor as defined in Findley et al., 2019, based on ATAC-seq data. There is an enrichment for these targets containing caffeine response factors, as expected (Figure 3B). The size of this enrichment may be underestimated due to the relatively small amount of caffeine response factor motifs (4) present in the designed library. Importantly, these variants contribute to inter-individual variation in response to caffeine. Thus, we sought to further characterize these variants.\n\nTo investigate the regulatory architecture underlying these genetic effects on gene expression, we asked whether ASE (FDR < 10%) and cASE variants (here defined at a nominal p<0.0215, N = 569) were enriched in open chromatin regions as annotated in Findley et al., 2019. ASE variants were 2.4-fold enriched within open chromatin regions (p<2.2e-16, Figure 3C, green), while a more moderate trend was observed for cASE (1.2-fold, p=0.088, Figure 3C, purple). This difference in enrichment could be due to the difference between the native chromatin context versus the reporter assay context. Environmental effects on gene regulatory sequences may have a more complex regulatory architecture influenced by the chromatin context that may explain the difference in the enrichment results between ASE and cASE (Supplementary file 3).\n\nGenetic regulation of gene expression can be context-dependent, with factors such as cell type (Donovan et al., 2020; Kim-Hellmuth et al., 2020), developmental states (Cuomo et al., 2020; Strober et al., 2019), and environmental stimuli all contributing to GxE (GxE-eQTLs, also known as response eQTLs, dynamic eQTLs, context-eQTLs) (e.g., see Alasoo et al., 2019; Barreiro et al., 2012; \u00c7al\u0131\u015fkan et al., 2015; Findley et al., 2021; Kim-Hellmuth et al., 2017; Maranville et al., 2011; Moyerbrailean et al., 2016b). These context-specific effects can be captured without large cohorts if the appropriate experimental design is applied (Findley et al., 2021). Allele-specific expression experiments in two different conditions can detect GxE in small sample sizes compared to eQTL studies (Moyerbrailean et al., 2016b). To investigate the abundance of GxE missing from large databases such as GTEx (Consortium, 2020), we tested if cASE variants were enriched for artery eQTLs. Using variants within the open chromatin regions described above, we conducted a Fisher\u2019s exact test and found that ASE variants were 1.38 times more likely to be artery eQTLs (p=0.01, Figure 3C, green) compared to variants that did not show ASE. We observed a more moderate trend for cASE variants (1.2 times more likely to be artery eQTLs, p=0.26, Figure 3C, purple, Supplementary file 3).\n\n### Characterizing ASE and cASE across transcription factor motifs\n\nWe hypothesized that the regulatory context defined by the transcription factor motifs present in each target determines the effect of a genetic variant on expression in caffeine treated cells. We conducted a motif scan of the library of targets for 838 known transcription factor binding motifs from JASPAR (Castro-Mondragon et al., 2022; Supplementary file 2). We then used a test of proportions to identify any motifs that were disproportionately within targets containing significant ASE or cASE variants. For targets containing ASE variants, we observed 44 enriched motifs (Figure 4). For targets containing cASE variants, we observed 18 enriched motifs (Figure 4, Supplementary file 3 ). Factors of interest for cardiovascular function include NRF1, enriched for targets containing cASE and ASE variants, which is known to regulate lipid metabolism (Hirotsu et al., 2012; Huss and Kelly, 2004), and is annotated as part of the lipid metabolism pathway in Reactome (Fabregat et al., 2018). KLF15 and KLF14 are also enriched in targets with cASE and ASE. KLF15 is involved in cardiac lipid metabolism (Prosdocimo et al., 2014; Prosdocimo et al., 2015), and KLF14 has previously been associated with CVD (Fryar et al., 2012; Hu et al., 2018). Lastly, SREBF2, which was identified as enriched within our differential activity results, also has implications for disease as discussed previously. This implies that SREBF2 are important both in the interindividual response to caffeine as well as disease state, linking our identified GxE with atherosclerotic disease.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/85235/elife-85235-fig4-v2.jpg)\n\n**Figure 4.:** Motifs enriched via test of proportions (p<0.05) for significant ASE (green) or cASE (purple). The dotted lines represent the baseline proportion (mean number of significant variants within any motif) for ASE (green) and cASE (purple). Bolded factors are caffeine response factors as defined in Findley et al., 2019. Error bars represent the 95% confidence interval, motif occurrence n>100.\n\nWe also wanted to investigate if ASE and cASE variants were disproportionately present in caffeine response factor binding sites, which may indicate that caffeine response factors\u2019 regulatory function may be modified by genetic variation. For this analysis, we used annotations from Findley et al., 2019, which defines caffeine response factors as transcription factors with motifs that were significantly enriched or depleted in differentially accessible chromatin after treatment with caffeine. Factors INSM1 and PLAG1 are caffeine response factors as defined in Findley et al., 2019, confirming that genetic variation may modulate the response to caffeine by increasing binding activity of these transcription factors.\n\n### Validation of the regulatory mechanism for fine-mapped artery eQTLs\n\nComputational fine-mapping is a commonly used method to identify causal variants, often for complex traits; however, further functional validation is usually needed to confirm the regulatory mechanism underlying fine-mapped causal variants. We previously showed that artery eQTLs are enriched in caffeine response factor motifs (also see Figure 3\u2014figure supplement 3; Findley et al., 2019). We now leverage this finding to fine-map artery eQTLs using DAP-G and the caffeine response factor annotation from Findley et al., 2019. In our library, we tested 187 fine-mapped variants. We identified significant ASE for six SNPs (six SNP/direction pairs), thus validating the regulatory function of these fine-mapped causal eQTLs (Supplementary file 5). We also identified two fine-mapped artery eQTLs with significant cASE (p<0.0215; 2 SNP/direction; Supplementary file 5), which may represent hidden GxE in GTEx.\n\nWe then investigated if the genes shown to be linked to CAD and hypertension risk using both TWAS and colocalization analysis (INTACT, Okamoto et al., 2023) can be further modulated by GxE with caffeine. INTACT combines TWAS and colocalization approaches, thus overcoming the TWAS inherent linkage disequilibrium limitations. We identified eight cASE variants that regulate the expression of genes associated with CAD and hypertension (<10% FDR for INTACT analysis, p<0.0215 for cASE analysis, Supplementary file 6). We used available experimental data and computational predictions to dissect the regulatory mechanisms underlying context-specific allelic effects for two of these SNPs and their impact on CAD risk (Figures 5 and 6). We considered allelic effects on transcription factor binding, expression of the transcription factors, and disease risk. Specifically, we considered (i) predicted effects on transcription factor binding from CentiSNP, which uses a combination of sequence information and chromatin accessibility data to predict alleles that increase binding of specific transcription factors (Moyerbrailean et al., 2016a); (ii) changes in the expression of the genes encoding for the relevant transcription factors and changes in chromatin accessibility (Findley et al., 2019); and (iii) allelic effect on the target genes (this study and GTEx).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/85235/elife-85235-fig5-v2.jpg)\n\n**Figure 5.:** (A) Potential mechanism for rs4938344. (B) Transcription factors containing rs4938344 in a binding site are upregulated (via DESeq2) upon caffeine exposure (error bars are +/- standard error, FDR<10%, n=14). (C) Logos of transcription factor motifs with rs4938344 highlighted. (D) GTEx violin plot for AP000892.6. (E) Effect size from the BiT-STARR-Seq assay for this single-nucleotide polymorphism (SNP) within each condition (error bars are +/- standard error, n=4 replicates per condition, cASE p<0.0215, see \u2018cASE Analysis\u2019 section of methods). (F) Locus zoom plots showing genome-wide association studies (GWAS) and expression quantitative trait loci (eQTL) data for hypertension (left) and coronary artery disease (CAD) (right) in tibial artery tissue.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/85235/elife-85235-fig6-v2.jpg)\n\n**Figure 6.:** (A) Potential mechanism for rs4527034. (B) TERF2IP is upregulated (via DESeq2) upon caffeine exposure (error bars are +/- standard error, FDR<10%, n = 14). (C) Logos of TERF2IP motif with rs4527034 highlighted. (D) GTEx violin plot for KAT8. (E) Effect size from the BiT-STARR-Seq assay for this single-nucleotide polymorphism (SNP) within each condition (error bars are +/- standard error, n=4 replicates per condition, cASE p<0.0215, see \u2018cASE Analysis\u2019 section of methods). (F) Locus zoom plots showing genome-wide association studies (GWAS) and expression quantitative trait loci (eQTL) data for hypertension in coronary artery tissue.\n\nrs4938344 is an eQTL regulating the long noncoding RNA AP000892.6. The reference allele at this locus, G, results in decreased expression of AP000892.6 (as measured in GTEx and in the caffeine condition of our assay, Figure 5D and E, respectively). INTACT associated high expression of AP000892.6 with decreased risk of hypertension and CAD (Figure 5F). This SNP is predicted to modulate binding of GABP (a known repressor of transcription; Genuario and Perry, 1996) and ETV1 at this site (Figure 5C). These transcription factors are upregulated in caffeine-exposed endothelial cells (Findley et al., 2019; Figure 5B). This increase in expression uncovers allelic differences in gene regulation which are not detected in the absence of caffeine, likely because of the low expression of the repressor. The allelic differences in binding of these factors should lead to allelic differences in the expression of AP000892.6. Accordingly, the reference allele for this variant exhibited lower activity in response to caffeine in our BiT-STARR-Seq experiments (Figure 5E). This effect is consistent with the GTEx artery eQTL for AP000892.6 (Figure 5D). In summary, caffeine induces higher expression of the ETV1 and GABP transcription factors, which then bind preferentially to the reference allele at rs4938344; this results in lower expression of AP000892.6 and increased risk for CAD and hypertension (Figure 5A). AP000892.6 interacts with the RB1CC1 RNA (Gong et al., 2018), which may play a role in atherosclerosis via its function in forming the autophagosome (Chen et al., 2021).\n\nrs4527034 is an eQTL regulating the KAT8 gene. The reference allele at this locus, A, results in decreased expression of KAT8 (as measured in GTEx and in the control condition of our assay, Figure 6D and E, respectively). INTACT associated high expression of KAT8 with increased risk of hypertension (Figure 6F). This SNP is predicted to modulate binding of the TERF2IP transcription factor at this site (Figure 6C). TERF2IP is upregulated in caffeine-exposed endothelial cells (Findley et al., 2019; Figure 6B). This increase in expression may saturate all binding sites in the caffeine condition, while the transcription factor may only bind to the preferential allele in the control condition. The allelic differences in binding of these factors should lead to allelic differences in expression of KAT8 in the control condition, which is what we observe both in our BiT-STARR-Seq experiments (Figure 6E) and in GTEx artery eQTL for KAT8 (Figure 6D). In summary, in the absence of caffeine, TERF2IP binds preferentially to the reference allele at rs4527034, which results in lower expression of KAT8 and reduced risk for hypertension. In the presence of caffeine, TERF2IP is upregulated, resulting in increased binding and lower expression of KAT8, independently of the genotype, with an expected overall protective effect on hypertension. Confirming this potential mechanism for disease risk, TERF2IP expression levels were found to affect plaque formation in a mouse model (Kotla et al., 2019). High expression of KAT8, a histone acetyltransferase, also coincides with atherosclerotic progression, and histone acetylation increases in plaques within vascular endothelial cells (Grei\u00dfel et al., 2016; Zhang et al., 2018).\n\n## Discussion\n\nThis study utilized the MPRA BiT-STARR-Seq to identify gene regulatory activity in vascular endothelial cells exposed to caffeine. By utilizing BiT-STARR-Seq, we were able to identify a molecular response to caffeine, ASE, and cASE. By combining our results with preexisting annotations, we were able to characterize variants exhibiting cASE and identify potential mechanisms for some of these variants.\n\nHeart disease is one of the leading causes of death in the United States according to the CDC (http://wonder.cdc.gov/ucd-icd10.html). The most common type of heart disease is CAD, which affects over 18 million adults over the age of 20 y (Fryar et al., 2012). The common risk factors of CAD include hypertension, high cholesterol levels, and family history (Brown et al., 2022; Hajar, 2017). CAD occurs when plaques form in the arteries (atherosclerosis), causing a narrowing of the artery, which reduces blood flow to the heart. The innermost layer of the artery is composed of endothelial cells. The endothelium is involved in several important functions, including regulation of blood flow, angiogenesis, thrombosis, and coagulation (Hadi et al., 2005; Kr\u00fcger-Genge et al., 2019). Endothelial dysfunction occurs in diseases such as atherosclerosis and hypertension (Xu et al., 2021), eventually leading to CAD (Matsuzawa and Lerman, 2014). The molecular mechanisms behind endothelial dysfunction and the resulting diseases are largely unknown. Characterizing these molecular mechanisms is crucial in order to gain a more complete understanding of these disease phenotypes. Additionally, although caffeine is known to produce a vascular response, the current literature does not come to a consensus on the role of caffeine in CAD risk. Here, we characterized the regulatory response of noncoding variants to caffeine in vascular endothelial cells using an MPRA.\n\nBiT-STARR-Seq, the MPRA used in this study, has several advantages over other methods used to detect GxE. One common method of detecting GxE is response eQTL mapping, which includes collecting samples from large cohorts and exposing those cells to environmental perturbations (e.g., see Alasoo et al., 2019; Alasoo et al., 2018; Barreiro et al., 2012; \u00c7al\u0131\u015fkan et al., 2015; Fairfax et al., 2014; Huang et al., 2020; Kim-Hellmuth et al., 2017; Knowles et al., 2018; Lee et al., 2014; Mangravite et al., 2013; Manry et al., 2017; Maranville et al., 2011; N\u00e9d\u00e9lec et al., 2016; Quach et al., 2016). This method has several disadvantages as it cannot easily interrogate rare variants, relies on variation existing in a cohort (instead of investigating variants of interest), and requires larger cohort sizes to have enough power to detect GxE. In contrast, because our method uses a designed library of targets (Kalita et al., 2018), we are able to interrogate rare variants easily as our targets are synthesized. Similarly, we can design a library of specific variants to investigate (such as candidate regulatory variants) instead of relying on variation within a cohort (Kalita et al., 2018). BiT-STARR-Seq also allows us to directly compare two alleles within the same sequence context without requiring a large cohort. Despite the advantages of BiT-STARR-Seq, unlike response eQTL mapping, we are not interrogating these SNPs in their native chromatin context. Future work may include using genome-editing tools such as CRISPR to directly insert the desired variants in their endogenous locations in the genome. For our study, we determined BiT-STARR-Seq to be the ideal assay to determine GxE for a large number of SNPs.\n\nWe observed a regulatory response to caffeine treatment, consistent with previous studies in the same cell type (Findley et al., 2019; Moyerbrailean et al., 2016b). These results suggest that caffeine exposure significantly changes the regulatory activity of vascular endothelial cells, which may have important implications regarding the impact of lifestyle in CAD. As caffeine may modulate gene regulatory activity, the resulting impact on gene expression may increase or decrease CAD risk. In addition, we identified novel transcription factors contributing to the regulatory response to caffeine including several NFAT transcription factors, and SREBF2. NFAT transcription factors are largely known for their role in the Ca2+/NFAT signaling pathway, where Ca2+ binds to calmodulin, stimulating calcineurin, which then causes NFAT factors to localize in the nucleus (Crabtree and Olson, 2002; Klee et al., 1998). Caffeine is known to cause an increase in Ca2+ in human aortic endothelial cells (Corda et al., 1995), so it is understandable that we find these factors enriched for being within targets that respond to caffeine exposure. SREBF2, also known as SREBP2, is involved in sterol homeostasis (Horton et al., 2003). This result implies these novel transcription factors important for the regulatory response to caffeine may also contribute to understanding the role of caffeine in CAD risk. This coincides with findings that caffeine exposure can alter expression of genes, including those for transcription factors in mouse cardiomyocytes (Fang et al., 2014). Another study aimed to uncover mechanisms relevant to CVD upon caffeine exposure and found that caffeine inhibits the transcription factor SREBP2, which causes an overall protective effect against CVD (Lebeau et al., 2022). These results coincide with our findings.\n\nNoncoding regions of the genome contain regulatory variants that modulate gene expression. In this study, we identify and characterize over 600 variants exhibiting ASE. Numerous noncoding variants have been implicated in CAD risk via GWAS (Hartmann et al., 2022; Kessler and Schunkert, 2021; Koyama et al., 2020; Nikpay et al., 2015; Temprano\u2010Sagrera et al., 2022; van der Harst and Verweij, 2018), but they are generally uncharacterized. Few lead noncoding variants have been thoroughly investigated. One of these led the authors to propose and validate a molecular mechanism connecting expression of the EDN1 gene to the phenotypic outcome (Gupta et al., 2017; Wang and Musunuru, 2018). The specific mechanisms that detail how noncoding variants contribute to CAD will be critical in understanding CAD risk and ultimately developing clinical treatments. While understanding various genetic risk factors for CAD is important, GxE for these variants also have an impact on phenotype and have not been widely studied.\n\nSince previous studies have shown that GxE-eQTL can modulate complex disease risk, we expect that GxE detected in our assay may be relevant to CAD (Alasoo et al., 2019; Alasoo et al., 2018; Barreiro et al., 2012; \u00c7al\u0131\u015fkan et al., 2015; Fairfax et al., 2014; Findley et al., 2021; Huang et al., 2020; Kim-Hellmuth et al., 2017; Knowles et al., 2018; Lee et al., 2014; Mangravite et al., 2013; Manry et al., 2017; Maranville et al., 2011; N\u00e9d\u00e9lec et al., 2016; Quach et al., 2016). We tested for cASE, which occurs when ASE are only significant in one condition, or significantly different between the two conditions. This analysis identifies GxE which are important in understanding disease risk while accounting for genetic and environmental context. We identified 6 variants that regulate the gene expression response to caffeine and demonstrated that context-aware MPRAs can be used to dissect molecular mechanisms underlying cardiovascular health.\n\nBy fine-mapping artery eQTLs and combining the data collected from our assay with preexisting annotations, we produced potential mechanisms for two cASE variants through altered transcription factor expression and binding in response to caffeine. Our results indicated that both genetic and environmental factors are important in determining risk, and that the interaction between these factors can be informative to mechanisms and phenotypic consequences. Importantly, by utilizing multiple functional annotations, we are able to identify variants that may be relevant to disease but did not reach genome-wide significance in GWAS, possibly because of their context-specific effects. By studying different environmental contexts, we can identify that, in these instances, the presence of caffeine can impact the risk of poor cardiovascular health outcomes. If environmental context was not considered and this work was conducted solely in the control condition, the caffeine modulatory effect on risk would have been missed.\n\nAlthough we investigate GxE for caffeine in vascular endothelial cells, our experimental approach can be applied to various different complex diseases and their relevant cell types and treatments. To further validate our work, genome-editing tools could be used to investigate the effect of these variants in their native chromatin context. Additional validation could include allele-specific and condition-specific transcription factor binding assays (such as electrophoretic mobility shift assays) for the fine-mapped variants.\n\nOur study demonstrates the importance of considering environmental contexts when investigating gene regulatory activity as we identify several thousand instances of GxE in our library of candidate regulatory variants. Our data, combined with preexisting annotations, allowed us to identify transcription factors involved in GxE in caffeine and describe specific potential molecular mechanisms for some of these GxE. Our results provide important insights into the molecular regulatory effect of caffeine exposure and GxE for caffeine in vascular endothelial cells.\n\n## Materials and methods\n\n### Cell culture\n\nHuman umbilical vein endothelial cells (HUVECs) were obtained from Lonza (Cat# CC-2517-0000315288). Cells were cultured at 37\u00b0C with 5% CO2 and seeded at 5000 cells/cm2. EGM-2 growth medium (Lonza) was used to culture the cells.\n\n### Treatment\n\nTreatment concentration was the same as used in previous studies (Findley et al., 2019; Moyerbrailean et al., 2016b). We used a caffeine concentration of 1.16 \u00d7 10\u20133 M. In addition, water was used as a vehicle control as that was the solvent used to prepare the caffeine treatment.\n\n### BiT-STARR-Seq library design\n\nWe designed 43,556 target regulatory regions each containing an SNP in the middle and with a total length of 200 nucleotides. This set of targets corresponds to 87,112 constructs each containing only one of two alleles at the test SNP. Additionally, each construct can be integrated in the forward or reverse orientation, leading to a maximum of 174,224 constructs in either direction. Please also see below for a description of how we use library-related terms throughout the article. The library used is the same as reported in Kalita et al., 2018. Briefly, the library of target regulatory sequences consisted of several categories of regulatory variants, including eQTLs (Innocenti et al., 2011; Wen et al., 2015), SNPs predicted to disrupt transcription factor binding (centiSNPs) (Moyerbrailean et al., 2016a), and SNPs associated with complex traits in GWAS (Pickrell, 2014). Negative controls that were not predicted to have a regulatory effect were also included in the library (Moyerbrailean et al., 2016a). It is important to note that these negative controls are only predicted not to have a regulatory effect via computational annotation (Moyerbrailean et al., 2016a), so they may not be representative of true negative controls. This is why we largely do not utilize these SNPs as negative controls within our analyses. Our predictions of regulatory activity also did not account for environmental context, thus these sequences are also not suited to annotate our cASE results.\n\n### BiT-STARR-Seq experiments\n\nOligonucleotides were synthesized and used to create a DNA plasmid library, which was sequenced and used as a subsequent input for the ASE analysis. The DNA library was transfected into HUVECs using the Lonza Nucleofector X platform. Cells were electroporated using the DS-120 setting with primary cell solution P5. Caffeine was added at 1.16 \u00d7 10\u20133 M after transfection. Cells were incubated for 24 hr and lysed. We completed 6 replicates per treatment condition (caffeine and the water vehicle control) or 12 replicates in total.\n\n### Library preparation and sequencing\n\nRNA was extracted using the RNeasy Plus Mini kit (QIAGEN, Cat# 74136). A cDNA library was prepared using the Superscript III First-Strand Synthesis kit (Invitrogen, Cat# 18080-400). Sequencing was completed using the Illumina Nextseq 500 to generate 125 cycles for read 1, 30 cycles for read 2, 8 cycles for the fixed multiplexing index 2, and 10 cycles for index 1 (variable barcode). The average sequencing depth per library was 39,235,611 reads, for a total of 470,827,333 reads (Figure 1\u2014figure supplement 1, Supplementary file 7).\n\n### Processing sequence data\n\nTo analyze the RNA-seq data, we began by demultiplexing our data using the bcl2fastq software to create demultiplexed FASTQ files. We then aligned to hg19 using HISAT2. Afterward, we applied a filter to ensure the UMIs present match the expected UMI pattern (RDHBVDHBVD). Reads with short UMIs or those that do not match the expected sequence were removed. The resulting BAM files were then deduplicated using UMItools. We ran samtools mpileup followed by bcftools query to output read counts per each allele/direction combination.\n\n### Differential activity analysis\n\nTo test for a molecular response to caffeine, we used the R package DESeq2 (Love et al., 2014). To determine which model would best test for a molecular response to caffeine, we completed principal component analysis to identify major sources of variation. We identified that the first PC clearly represented allelic effects (Figure 2\u2014figure supplement 2, also see Figure 3\u2014figure supplements 1 and 3), thus we included allele (reference or alternate) as part of our model. Our model tested the effect of treatment, correcting for allele (~allele + treatment), as we observed a strong allelic effect. We ran DESeq2 for each direction (see Figure 2\u2014figure supplement 1) as the library contained motifs in both the forward and reverse orientations within separate target sequences. We considered targets as significant with Benjamini\u2013Hochberg FDR <10%.\n\n### ASE analysis\n\nTo test for ASE, we utilized the R package quantitative allele-specific analysis of reads (QuASAR-MPRA) (Kalita et al., 2017). QuASAR-MPRA is an extension of the QuASAR package which allows for analysis of barcoded MPRA data. QuASAR-MPRA uses a beta-binomial model and accounts for uneven initial allelic proportions present in the DNA library. We used the fitQuasarMpra() function to test for ASE in each experiment separately, estimating the ASE effect and its standard error. For each SNP/direction pair, we meta-analyzed the effect size using a weighted mean utilizing inverse-variance weighting for each condition separately. The z-score for each SNP-direction pair is subsequently calculated as the meta-analyzed effect size minus the DNA proportion, divided by the meta-analyzed standard error of the effect size. We then required each identifier to be within four or greater replicates (out of the six total replicates) and performed multiple test correction using the Benjamini\u2013Hochberg procedure. Significant ASE was then defined as having an FDR <10%.\n\n### cASE analysis\n\nTo test for cASE, we used a method previously developed by our lab called differential allele-specific test, or \u0394AST. The calculation for this parameter \u0394Z is provided in Moyerbrailean et al., 2016a as well as below. The QuASAR-MPRA package outputs betas for the treatment (\u03b2T) and the control (\u03b2C), as well as the standard error (se) for both groups, which are used to calculate a Z score for each condition independently $(\\frac{\\beta}{se})$. To contrast ASE between conditions we define the cASE statistic (\u0394Z)2 , as (\u0394Z)2 = (ZT - ZC)2 /2. From this (\u0394Z)2 statistic, we used the genomic control procedure (Devlin et al., 2001; Devlin and Roeder, 1999) to calibrate the median \u03c72 to the expected value and we calculated the p-values using the \u03c72 distribution. We then used the p.adjust() function to perform multiple test correction using the Benjamini\u2013Hochberg procedure. Significant cASE was then defined as having an FDR<5%.\n\n### Motif enrichment analysis\n\nThe motif scan was completed using the PWMScan tool, using all PWMs within the JASPAR (Castro-Mondragon et al., 2022) 2022 CORE database (838 motifs). A threshold of -t 10 (base 2) was used for the motif scan, which was restricted to the regions of our designed targets. Once the scan was complete, motifs that were present less than 100 times in the library were removed. For differentially active targets in response to caffeine, 222 motifs passed this filter. For motifs containing ASE variants, 359 motifs passed this filter. For motifs containing cASE variants, 417 motifs passed the filter. A test of proportion (prop.test() in R) was performed per each transcription factor, where the null proportion was the total number of significant targets/variants containing/within motifs (differentially active target, ASE or cASE) divided by the total number of nonsignificant targets/variants containing/within motifs. The test was done per motif, where the proportion being tested is the same as the null proportion, but conducted per motif rather than across all motifs. The related calculations are shown below:\n\nASE (FDR <10%) and cASE (p<0.0215) were considered significant. For follow-up analyses of cASE features, we relaxed the significance threshold to nominal p-value <0.0215.\n\n### Open chromatin region enrichment analysis\n\nTo test if certain variants were within open chromatin regions, we obtained the list of differentially accessible regions tested in Findley et al., 2019. We considered any accessible region (annotated as differentially accessible or not). Bedtools bed intersect tool was used to complete the overlap with the appropriate datasets (DESeq2, ASE, or cASE results), resulting in a list of targets or SNPs that were within open chromatin regions. This annotation was then used to complete the Fisher\u2019s exact test. Enrichments for significant ASE or cASE variants were performed separately.\n\n### Artery eQTL enrichment analysis\n\nTo determine if certain variants were artery eQTLs, we obtained GTEx v8 (Castro-Mondragon et al., 2022) data for aorta, coronary, and tibial artery tissues. We then intersected the list of variants of interest with the list of artery eQTLs. To determine if artery eQTLs were within differentially active targets, bedtools intersect was used, resulting in a list of targets that contained artery eQTLs. We further subset this list to variants within open chromatin regions (see previous section). This annotation was then used to complete the Fisher\u2019s exact test. Enrichments for significant ASE or cASE variants were performed separately.\n\n### Fine-mapping analysis with DAP-G\n\nBased on a previous study (Findley et al., 2019), we define caffeine response factors as transcription factors with motifs that were significantly enriched or depleted in differentially accessible chromatin after treatment with caffeine. We annotated genetic variants into two categories: (1) genetic variants in motifs for response factors and (2) genetic variants in motifs for transcription factors that are not caffeine response factors. By integration of these genetic variants annotation, we estimated the probability of each SNP regulating gene expression in a Bayesian hierarchical model using TORUS (Wen, 2016). These probabilities are then used in DAP-G (Zhang et al., 2020) to fine-map eQTLs from all three artery tissues in GTEx V8. A total of 364,427,888 eQTLs were fine-mapped across three artery tissues. We filtered for a posterior inclusion probability of >0.9.\n\n### Identification of putative causal genes\n\nTo better understand how cASE variants may impact traits related to cardiovascular health, we performed colocalization analysis of the causal GWAS variants with eQTLs using fastENLOC (Wen et al., 2017) by integration of fine-mapped eQTLs in the three artery tissues (see above section) and fine-mapped GWAS signals for CAD and hypertension. We fine-mapped GWAS using DAP (Wen, 2016). From fastENLOC, we obtained the gene locus-level colocalization probability for each gene which is used to evaluate how the gene is associated with complex traits or diseases. Intuitively, colocalization analysis identified the overlap of causal eQTLs and GWAS hits. However, it lacked the sensitivity due to the failure in distinguishing between the vertical pleiotropy (genetic effects on traits mediated by gene expression) and horizontal pleiotropy (independent effects on gene expression and traits) (Okamoto et al., 2023). To overcome the limitations in a single approach, we combined the evidence from colocalization and TWAS to estimate the probability of putative causal genes using the R package INTACT (Okamoto et al., 2023). Here, the TWAS data we utilized were from PTWAS (Zhang et al., 2020). We determined putative causal genes with FDR < 10%. We then identified variants regulating these putative causal genes using the DAP-G fine-mapping results, requiring a SNP-level colocalization probability >0.5, with no threshold on PIP (Supplementary file 6).\n",
+      "created_at": "2025-12-04T04:18:24.731085Z"
+    },
+    {
+      "id": "c680242b-04ba-49ff-b3cf-6dda069c0cff",
+      "submission_id": "ffa80301-2ee2-44b1-b82c-c004e361d393",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Stephen CJ Parker, https://ror.org/00jmfr291 University of Michigan United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.85235.sa0](https://doi.org/10.7554/eLife.85235.sa0)\n\nThis important study identifies context-specific regulatory variants by an MPRA screen in vascular endothelial cells exposed to caffeine. The authors use a compelling and creative approach to pinpoint potential molecular mechanisms of gene-by-environment effects on gene regulation. The variants they identify are likely linked to complex disease risk.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Stephen CJ Parker, https://ror.org/00jmfr291 University of Michigan United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.85235.sa1](https://doi.org/10.7554/eLife.85235.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Characterization of caffeine response regulatory variants in vascular endothelial cells\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Detlef Weigel as the Senior Editor.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\nPlease see the reviewer comments below, which elaborate on these overall essential revisions. Importantly, all three reviewers had a productive internal discussion and are in agreement about these revisions.\n\n1. Clarify p-value calculations, N oligos, Figure 2 ambiguities, selection of null SNPs, and method details. Convincingly demonstrate the overall robustness of the underlying data.\n\n2. Show a more convincing locus than the PIP4K2B example, which is only supported by a pTWAS result (with LD contamination issues) with no fine mapping or even nominal p-value evidence.\n\nReviewer #1 (Recommendations for the authors):\n\nIt would be good to have the number of ASE and cASE variants clearly stated.\n\nFigure 1 illustrates only parts of the questions of this study. It would be helpful to include also an illustration of the regulatory element activity underwater/caffeine conditions, and allelic comparison under the two comparisons.\n\n\"Only one lead non-coding variant has been thoroughly investigated\" (referring to EDN1) but what about e.g. SORT1? One could debate what's \"thorough\" but I'd soften this statement.\n\nSupplemental figure 2: what is the ethanol experiment here? I'm confused.\n\nThe quality of the supplementary figures and their legends could be improved. There are some errors in references to figure panels (SFigure 2 & 3), and axis legends that are way too small (SFigure 5). Please arrange the layout so that the figure and legend are on the same page.\n\n\"Only two previous studies have used MPRAs to investigate DNA sequences that regulate the transcriptional response to treatments\"- it is of course a matter of taste if preprints count here, but I'd add this one too: https://www.biorxiv.org/content/10.1101/2020.09.30.321323v1.full\n\nReviewer #2 (Recommendations for the authors):\n\n1. After performing differential activity analysis to determine significantly differentially active constructs, the authors move to investigate the allele effects of gene regulation in both treatment conditions. one point needs clarification:\n\nWhen ASE is tested for each SNP/direction in the control condition, 30096 pairs were tested, vs 49441 pairs in the caffeine treatment condition. How was the number of test pairs determined? Was this based on the number of differentially active constructs in that condition?\n\n2. Likewise with the cASE test: how was the initial SNP list of 28922 SNPs determined?\n\n3. In figure 5, identifying fine-mapped artery eQTLs with significant cASE, pTWAS was used to investigate the genes regulated by the eQTLs and their phenotypic consequences. Although the code is cited, it would be beneficial to have a brief summary of pTWAS, similar to the summary given for DAP-G in the methods section.\n\n4. The legend in supplemental figure 2 says \"Z-score scatter plots from ASE analysis comparing water and ethanol (A) and caffeine and water (B)\". However, there doesn't appear to be a Suppl. Figure 2A and 2B, just a single scatter plot. Likewise, ethanol is mentioned here as a treatment condition and does not appear elsewhere in the manuscript.\n\n5. The authors acknowledge the limitation of their MPRA with respect to native chromatin context in the discussion. Likewise, although HUVECs are a common model cell line for endothelial cells, they have their own limitations with respect to CAD pathophysiology. Adding this to the discussion would be beneficial.\n\n6. In figure five the SNP rs228271 is shown as an example of the prioritization approach, along with a proposed example mechanism. It would be interesting to see if part of this mechanism can be validated. For example: if the HUVECs cells used in this study are homozygous for the alternate allele of rs228271, does caffeine treatment decrease PIP4K2B activity?\n\n7. Columns in supplementary table 2 need to be explained.\n\n8. There are several places where the authors cite the literature but it is not clear how the cited studies and results relate to their study. Some examples are below:\n\na. Authors state that \"In diabetic mice, NFAT expression exacerbated atherosclerosis (Blanco et al., 2018; Zetterqvist et al., 2014) and increased foam cell formation (Du et al., 2021)\" In which cells did NFAT expression exacerbated atherosclerosis? In endothelial cells or other cells? How is this study relevant to caffeine response in endothelial cells? Is there a known causal link between caffeine consumption and atherosclerosis?\n\nb. Authors state that \"In hepatocytes, caffeine is known to suppress SREBF2 activity, which reduces PCSK9 expression, and thus increases LDLR expression, which could be protective against cardiovascular disease (Lebeau et al., 2022).\" How do the authors translate this knowledge to ECs and caffeine response? Does the same LDLR/PCSK9 pathway exist in ECs? Does SREBF2 regulate it? What is known about the relationship between caffeine and lipid signaling in ECs?\n\nc. Authors state that \"Factors of interest for cardiovascular function include NRF1, which is enriched for constructs containing both ASE and cASE variants, is known to regulate lipid metabolism (Hirotsu et al., 2012; Huss and Kelly, 2004), and is annotated as part of the lipid metabolism pathway in Reactome (Fabregat et al., 2018). KLF15 and KLF14 are enriched only in constructs with ASE. KLF15 is involved in cardiac lipid metabolism (Prosdocimo et al., 2014, 2015), and KLF14, has previously been associated with cardiovascular disease (Chen et al., 2012; Hu et al., 2018).\" what is the relationship between lipid metabolism and caffeine response in ECs?\n\n9. Authors perform enrichment analysis of cASE variants in GTEx artery eQTLs to ask if GTEx artery eQTLs are missing GxE eQTL effects. Artery eQTLs are enriched for gene expression from smooth muscle cells. There are endothelial eQTL datasets (PMIDs 32442411, 20170901, 23667179) Those are the appropriate datasets to test the authors' hypothesis and should be used in this study.\n\nReviewer #3 (Recommendations for the authors):\n\n1. You include some detail about experimental characteristics including a heatmap of counts per sample and PCA plots \u2013 elaborating to explicitly describe inter-replicate correlation and range of oligo activity (not just allelic bias) would be appreciated. It would also be helpful to give even limited details about where these variants come from, including which tissues the eQTLs correspond to, which diseases/traits for GWAS, etc. to set expectations for some of the enrichment analyses that are performed.\n\n2. Because you seem to be testing different sets of variants/construct orientations (i.e., denominators) across different analyses, it would be helpful to give greater clarity on where these numbers are coming from and to add sample sizes to your figure legends. Additionally, the abstract also points out some very specific numbers that are never mentioned in the main text (e.g., 7,152 variants that regulate the expression of caffeine, only mentioned in the discussion).\n\n3. The methods section mentions the use of QuASAR-MPRA, which enables \"analysis of barcoded MPRA data.\" You mention the use of UMIs to deduplicate reads (accounting for PCR duplicates), but are the oligos in this library barcoded during plasmid preparation? If so, what was the average and range of barcode depth across oligos?\n\n4. Negative control oligos are included in the library, but no description of how they were used for the analysis is given. They could be highlighted in a different color on the heat map and/or a description could be given whether they were used for setting thresholds.\n\n5. You show data and a proposed model for a specific variant in figure 5, but the inclusion of actual BiT-STARR-seq data would augment your interpretation and descriptive model.\n\n6. One additional study to cite in the introduction is \"Functional characterization of T2D-associated SNP effects on baseline and ER stress-responsive \u03b2 cell transcriptional activation\" (PMID: 34475398). This study examined treatment-specific effects on allelic bias in an MPRA, including variants known to be e- and caQTL.\n\n7. Though you present a model for GxE at a specific variant in figure 5, the study design cartoon in figure 1 only demonstrates allelic effects. Given that context-specific effects are the focal point of the manuscript, it would help readers to illustrate some hypothetical G, E, and GxE effects on MPRA activity.\n",
+      "created_at": "2025-12-04T04:18:24.731085Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T04:18:24.731085Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T04:18:24.731085Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "9e28fdaa-ab3d-414a-9d74-94685fadef58",
+      "content_id": "d5d8920a-052f-4dba-8dfd-aa10a48e8d11",
+      "claim_id": "C1",
+      "claim": "Caffeine is the most widely consumed stimulant in the world.",
+      "claim_type": "EXPLICIT",
+      "source": "Caffeine is the most widely consumed stimulant in the world (Planning Committee for a Workshop on Potential Health Hazards Associated with Consumption of Caffeine in Food and Dietary Supplements, Food and Nutrition Board, Board on Health Sciences Policy, Institute of Medicine, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Planning Committee for a Workshop on Potential Health Hazards Associated with Consumption of Caffeine in Food and Dietary Supplements, Food and Nutrition Board, Board on Health Sciences Policy, Institute of Medicine, 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:24.731085Z"
+    },
+    {
+      "id": "04294fe9-d92e-422e-a8c5-4cae9679498c",
+      "content_id": "d5d8920a-052f-4dba-8dfd-aa10a48e8d11",
+      "claim_id": "C2",
+      "claim": "Caffeine produces a vascular response in the endothelium, causing vasodilation.",
+      "claim_type": "EXPLICIT",
+      "source": "Caffeine produces a vascular response in the endothelium, causing vasodilation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as established knowledge without specific citation in this sentence",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:24.731085Z"
+    },
+    {
+      "id": "a7fcef40-553f-4bad-8eb9-82e334759a9a",
+      "content_id": "d5d8920a-052f-4dba-8dfd-aa10a48e8d11",
+      "claim_id": "C3",
+      "claim": "The vascular endothelium is the innermost layer of arteries.",
+      "claim_type": "EXPLICIT",
+      "source": "The vascular endothelium, the innermost layer of arteries, is involved in several important functions, including regulation of blood flow, angiogenesis, thrombosis, and coagulation (Hadi et al., 2005; Kr\u00fcger-Genge et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Hadi et al., 2005 and Kr\u00fcger-Genge et al., 2019",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:24.731085Z"
+    },
+    {
+      "id": "714edefb-25b7-4aaa-a9f8-c90df7a51393",
+      "content_id": "d5d8920a-052f-4dba-8dfd-aa10a48e8d11",
+      "claim_id": "C4",
+      "claim": "The vascular endothelium is involved in regulation of blood flow, angiogenesis, thrombosis, and coagulation.",
+      "claim_type": "EXPLICIT",
+      "source": "The vascular endothelium, the innermost layer of arteries, is involved in several important functions, including regulation of blood flow, angiogenesis, thrombosis, and coagulation (Hadi et al., 2005; Kr\u00fcger-Genge et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Hadi et al., 2005 and Kr\u00fcger-Genge et al., 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:24.731085Z"
+    },
+    {
+      "id": "bd51c7d9-a3f1-4677-848f-ec54dfde9917",
+      "content_id": "d5d8920a-052f-4dba-8dfd-aa10a48e8d11",
+      "claim_id": "C5",
+      "claim": "Endothelial dysfunction occurs in diseases such as atherosclerosis and hypertension.",
+      "claim_type": "EXPLICIT",
+      "source": "Endothelial dysfunction occurs in diseases such as atherosclerosis and hypertension (Xu et al., 2021), eventually leading to coronary artery disease (CAD) (Matsuzawa and Lerman, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Xu et al., 2021",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:24.731085Z"
+    },
+    {
+      "id": "09113359-d7bf-487d-bfac-00ea03852390",
+      "content_id": "d5d8920a-052f-4dba-8dfd-aa10a48e8d11",
+      "claim_id": "C6",
+      "claim": "Endothelial dysfunction eventually leads to coronary artery disease (CAD).",
+      "claim_type": "EXPLICIT",
+      "source": "Endothelial dysfunction occurs in diseases such as atherosclerosis and hypertension (Xu et al., 2021), eventually leading to coronary artery disease (CAD) (Matsuzawa and Lerman, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Matsuzawa and Lerman, 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:24.731085Z"
+    },
+    {
+      "id": "35e00742-d4ed-478c-98d3-63a508500865",
+      "content_id": "d5d8920a-052f-4dba-8dfd-aa10a48e8d11",
+      "claim_id": "C7",
+      "claim": "Multiple studies have investigated the role of caffeine in cardiovascular disease with conflicting results.",
+      "claim_type": "EXPLICIT",
+      "source": "Multiple studies have investigated the role of caffeine in cardiovascular disease (CVD), and more broadly, vascular health in general, with conflicting results (Chieng et al., 2022; Ding et al., 2014; Turnbull et al., 2017) on the role of caffeine in CVD risk.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Chieng et al., 2022; Ding et al., 2014; Turnbull et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:24.731085Z"
+    },
+    {
+      "id": "cbd0d039-8806-4e94-b767-12a916f13bf6",
+      "content_id": "d5d8920a-052f-4dba-8dfd-aa10a48e8d11",
+      "claim_id": "C8",
+      "claim": "Ding et al., 2014 meta-analyzed 36 studies and found no association between heavy coffee consumption and increased risk of CVD.",
+      "claim_type": "EXPLICIT",
+      "source": "Ding et al., 2014 meta-analyzed 36 studies and found no association between heavy coffee consumption and increased risk of CVD (Ding et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Ding et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:24.731085Z"
+    },
+    {
+      "id": "00516bcd-4ae1-472d-80fc-de6ce2606ceb",
+      "content_id": "d5d8920a-052f-4dba-8dfd-aa10a48e8d11",
+      "claim_id": "C9",
+      "claim": "Turnbull et al., 2017 observed that moderate caffeine consumption was not associated with an increased risk of CVD or other cardiovascular events such as heart failure.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, Turnbull et al., 2017 observed that moderate caffeine consumption was not associated with an increased risk of CVD or other cardiovascular events such as heart failure (Turnbull et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Turnbull et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:24.731085Z"
+    },
+    {
+      "id": "542a0715-b0e2-4840-9057-0c829165e711",
+      "content_id": "d5d8920a-052f-4dba-8dfd-aa10a48e8d11",
+      "claim_id": "C10",
+      "claim": "Multiple studies suggested that caffeine may be beneficial in reducing the risk of CAD.",
+      "claim_type": "EXPLICIT",
+      "source": "Multiple studies suggested that caffeine may be beneficial in reducing the risk of CAD (Choi et al., 2015; Miranda et al., 2018; Voskoboinik et al., 2019), while others provided evidence that caffeine may reduce the risk of heart failure, but had no significant effect on the risk of coronary heart disease or CVD (Stevens et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Choi et al., 2015; Miranda et al., 2018; Voskoboinik et al., 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:24.731085Z"
+    },
+    {
+      "id": "062a0a1e-ecef-4dfa-bd52-bd28c2af7e2f",
+      "content_id": "d5d8920a-052f-4dba-8dfd-aa10a48e8d11",
+      "claim_id": "C11",
+      "claim": "Caffeine may reduce the risk of heart failure, but had no significant effect on the risk of coronary heart disease or CVD.",
+      "claim_type": "EXPLICIT",
+      "source": "Multiple studies suggested that caffeine may be beneficial in reducing the risk of CAD (Choi et al., 2015; Miranda et al., 2018; Voskoboinik et al., 2019), while others provided evidence that caffeine may reduce the risk of heart failure, but had no significant effect on the risk of coronary heart disease or CVD (Stevens et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Stevens et al., 2021",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:24.731085Z"
+    },
+    {
+      "id": "1ee8aa7d-29f3-49a8-ae72-98effe7ebe39",
+      "content_id": "d5d8920a-052f-4dba-8dfd-aa10a48e8d11",
+      "claim_id": "C12",
+      "claim": "Chieng et al., 2022 found that decaffeinated, ground, and instant coffee significantly decreased CVD risk and mortality.",
+      "claim_type": "EXPLICIT",
+      "source": "Most recently, Chieng et al., 2022 found that decaffeinated, ground, and instant coffee significantly decreased CVD risk and mortality (Chieng et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Chieng et al., 2022",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:24.731085Z"
+    },
+    {
+      "id": "bc8a9358-ecef-4399-9dc2-0c34992ff9b4",
+      "content_id": "d5d8920a-052f-4dba-8dfd-aa10a48e8d11",
+      "claim_id": "C13",
+      "claim": "Caffeine can induce changes in gene regulation in endothelial cells.",
+      "claim_type": "EXPLICIT",
+      "source": "This study identified response factor motifs for caffeine, defined as transcription factor motifs that are enriched in differentially accessible regions, and demonstrated that caffeine can induce changes in gene regulation in endothelial cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Refers to a previous study (Findley et al., 2019) that demonstrated this finding",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:24.731085Z"
+    },
+    {
+      "id": "8e83dbd9-1a46-4890-ace7-6fd4d502b7e0",
+      "content_id": "d5d8920a-052f-4dba-8dfd-aa10a48e8d11",
+      "claim_id": "C14",
+      "claim": "SNPs within caffeine response factor binding sites were enriched for artery expression quantitative trait loci (eQTLs) colocalized with CAD risk variants.",
+      "claim_type": "EXPLICIT",
+      "source": "Single-nucleotide polymorphisms (SNPs) within caffeine response factor binding sites were enriched for artery expression quantitative trait loci (eQTLs) colocalized with CAD risk variants (Findley et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Findley et al., 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:24.731085Z"
+    },
+    {
+      "id": "899787e6-730e-43ea-ac32-ad3b40dcc25a",
+      "content_id": "d5d8920a-052f-4dba-8dfd-aa10a48e8d11",
+      "claim_id": "C15",
+      "claim": "The study used BiT-STARR-Seq to measure allelic effects on gene regulation for over 43,000 genetic variants.",
+      "claim_type": "EXPLICIT",
+      "source": "To investigate GxE for caffeine, we treated vascular endothelial cells with caffeine and used a massively parallel reporter assay to measure allelic effects on gene regulation for over 43,000 genetic variants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in the abstract as a description of the experimental approach used in this study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:24.731085Z"
+    },
+    {
+      "id": "bdca65c9-c727-4682-925c-cffcf52c6080",
+      "content_id": "d5d8920a-052f-4dba-8dfd-aa10a48e8d11",
+      "claim_id": "C16",
+      "claim": "The study identified 665 variants with allelic effects on gene regulation.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified 665 variants with allelic effects on gene regulation and 6 variants that regulate the gene expression response to caffeine (GxE, false discovery rate [FDR] < 5%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in the abstract as a result from the BiT-STARR-Seq experiments",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:24.731085Z"
+    },
+    {
+      "id": "aec15eed-2c7c-4952-88cb-2f250cab8852",
+      "content_id": "d5d8920a-052f-4dba-8dfd-aa10a48e8d11",
+      "claim_id": "C17",
+      "claim": "The study identified 6 variants that regulate the gene expression response to caffeine (GxE, FDR < 5%).",
+      "claim_type": "EXPLICIT",
+      "source": "We identified 665 variants with allelic effects on gene regulation and 6 variants that regulate the gene expression response to caffeine (GxE, false discovery rate [FDR] < 5%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in the abstract as a result from the BiT-STARR-Seq experiments",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:24.731085Z"
+    },
+    {
+      "id": "c3e2ff9b-977b-498d-b593-2e70626dadd5",
+      "content_id": "d5d8920a-052f-4dba-8dfd-aa10a48e8d11",
+      "claim_id": "C18",
+      "claim": "The library contained 43,556 target regulatory regions each containing an SNP in the middle with a total length of 200 nucleotides.",
+      "claim_type": "EXPLICIT",
+      "source": "We designed 43,556 target regulatory regions each containing an SNP in the middle and with a total length of 200 nucleotides.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Described in the BiT-STARR-Seq Library Design section of Materials and methods",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:24.731085Z"
+    },
+    {
+      "id": "b52110b9-7913-403c-86ec-f53f7e2029cc",
+      "content_id": "d5d8920a-052f-4dba-8dfd-aa10a48e8d11",
+      "claim_id": "C19",
+      "claim": "The study observed 772 significantly differentially active targets: 546 upregulated targets and 226 downregulated targets (FDR < 10%).",
+      "claim_type": "EXPLICIT",
+      "source": "We observed 772 significantly differentially active targets: 546 upregulated targets and 226 downregulated targets (Figure 2A, Supplementary file 1), showing that caffeine overall increases the activity of the regulatory elements.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data from DESeq2 analysis and shown in Figure 2A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:24.731085Z"
+    },
+    {
+      "id": "df3b6b39-f41c-4a51-96ab-401c05d23526",
+      "content_id": "d5d8920a-052f-4dba-8dfd-aa10a48e8d11",
+      "claim_id": "C20",
+      "claim": "Caffeine overall increases the activity of the regulatory elements.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed 772 significantly differentially active targets: 546 upregulated targets and 226 downregulated targets (Figure 2A, Supplementary file 1), showing that caffeine overall increases the activity of the regulatory elements.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the observation that more targets are upregulated (546) than downregulated (226) in response to caffeine",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:24.731085Z"
+    },
+    {
+      "id": "28e38843-9d3c-485f-9255-587fa36dec02",
+      "content_id": "d5d8920a-052f-4dba-8dfd-aa10a48e8d11",
+      "claim_id": "C21",
+      "claim": "The motif for ZNF423, one of the caffeine response factors, was enriched within the differentially active targets.",
+      "claim_type": "EXPLICIT",
+      "source": "We found the motif for ZNF423, one of the caffeine response factors, was enriched within the differentially active targets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by motif enrichment analysis using JASPAR database",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:24.731085Z"
+    },
+    {
+      "id": "c690d204-586c-4d3a-89cb-0845036a85cc",
+      "content_id": "d5d8920a-052f-4dba-8dfd-aa10a48e8d11",
+      "claim_id": "C22",
+      "claim": "The three most enriched motifs were NFATC1, NFATC4, and NFATC2.",
+      "claim_type": "EXPLICIT",
+      "source": "The three most enriched motifs were NFATC1, NFATC4, and NFATC2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by motif enrichment analysis results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:24.731085Z"
+    },
+    {
+      "id": "45145b53-1f8d-4fc3-8b44-f6ab0b1d02be",
+      "content_id": "d5d8920a-052f-4dba-8dfd-aa10a48e8d11",
+      "claim_id": "C23",
+      "claim": "The NFAT transcription factor family is known for their involvement in the Ca2+/NFAT pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "The NFAT transcription factor family is known for their involvement in the Ca2+/NFAT pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as established knowledge about NFAT transcription factors",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:24.731085Z"
+    },
+    {
+      "id": "1bcaa74d-7da1-4a4c-a137-51610c8cba11",
+      "content_id": "d5d8920a-052f-4dba-8dfd-aa10a48e8d11",
+      "claim_id": "C24",
+      "claim": "The Ca2+/NFAT signaling pathway plays an important role in maintaining the homeostasis of vascular endothelial cells.",
+      "claim_type": "EXPLICIT",
+      "source": "This signaling pathway plays an important role in maintaining the homeostasis of vascular endothelial cells (Wang et al., 2020) and contributes to the mediation of proliferation and migration (Johnson et al., 2003; Wang et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Wang et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:24.731085Z"
+    },
+    {
+      "id": "585886d5-72ab-4958-aa28-abdb4bc4b69f",
+      "content_id": "d5d8920a-052f-4dba-8dfd-aa10a48e8d11",
+      "claim_id": "C25",
+      "claim": "The Ca2+/NFAT pathway contributes to the mediation of proliferation and migration.",
+      "claim_type": "EXPLICIT",
+      "source": "This signaling pathway plays an important role in maintaining the homeostasis of vascular endothelial cells (Wang et al., 2020) and contributes to the mediation of proliferation and migration (Johnson et al., 2003; Wang et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Johnson et al., 2003 and Wang et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:24.731085Z"
+    },
+    {
+      "id": "8bcaacd2-bae6-4b5b-829b-cccd4d2e72dc",
+      "content_id": "d5d8920a-052f-4dba-8dfd-aa10a48e8d11",
+      "claim_id": "C26",
+      "claim": "Improper signaling of the Ca2+/NFAT pathway can induce endothelial dysfunction.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, improper signaling of the Ca2+/NFAT pathway can induce endothelial dysfunction (Garcia-Vaz et al., 2020; Wang et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Garcia-Vaz et al., 2020 and Wang et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:24.731085Z"
+    },
+    {
+      "id": "220eb8c4-99b2-4282-a661-ddfa633ad129",
+      "content_id": "d5d8920a-052f-4dba-8dfd-aa10a48e8d11",
+      "claim_id": "C27",
+      "claim": "In diabetic mice, NFAT expression exacerbated atherosclerosis.",
+      "claim_type": "EXPLICIT",
+      "source": "In diabetic mice, NFAT expression exacerbated atherosclerosis (Blanco et al., 2018; Zetterqvist et al., 2014) and increased foam cell formation (Du et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Blanco et al., 2018 and Zetterqvist et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:24.731085Z"
+    },
+    {
+      "id": "ef2ee9d6-3707-4b06-98d1-a06e119d3980",
+      "content_id": "d5d8920a-052f-4dba-8dfd-aa10a48e8d11",
+      "claim_id": "C28",
+      "claim": "In diabetic mice, NFAT expression increased foam cell formation.",
+      "claim_type": "EXPLICIT",
+      "source": "In diabetic mice, NFAT expression exacerbated atherosclerosis (Blanco et al., 2018; Zetterqvist et al., 2014) and increased foam cell formation (Du et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Du et al., 2021",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:24.731085Z"
+    },
+    {
+      "id": "f460a43e-c848-493c-8c6d-e73ee5c4f21b",
+      "content_id": "d5d8920a-052f-4dba-8dfd-aa10a48e8d11",
+      "claim_id": "C29",
+      "claim": "In human coronary artery smooth muscle cells, NFAT signaling mediates vascular calcification.",
+      "claim_type": "EXPLICIT",
+      "source": "In human coronary artery smooth muscle cells, NFAT signaling mediates vascular calcification (Goettsch et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Goettsch et al., 2011",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:24.731085Z"
+    },
+    {
+      "id": "00da4114-16f0-425b-bc04-69030f2d323c",
+      "content_id": "d5d8920a-052f-4dba-8dfd-aa10a48e8d11",
+      "claim_id": "C30",
+      "claim": "19 motifs were enriched for being within upregulated targets.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed 19 motifs enriched for being within upregulated targets (Figure 2C) and 23 motifs enriched for being within downregulated targets (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by motif enrichment analysis and shown in Figure 2C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:24.731085Z"
+    },
+    {
+      "id": "a27173dc-46d4-4204-bf72-6ce891d9ad9e",
+      "content_id": "d5d8920a-052f-4dba-8dfd-aa10a48e8d11",
+      "claim_id": "C31",
+      "claim": "23 motifs were enriched for being within downregulated targets.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed 19 motifs enriched for being within upregulated targets (Figure 2C) and 23 motifs enriched for being within downregulated targets (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by motif enrichment analysis and shown in Figure 2D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:24.731085Z"
+    },
+    {
+      "id": "472b40c7-07c9-4ae5-87d1-b041ae86da5e",
+      "content_id": "d5d8920a-052f-4dba-8dfd-aa10a48e8d11",
+      "claim_id": "C32",
+      "claim": "The motif for SREBF2 is enriched for being within downregulated targets.",
+      "claim_type": "EXPLICIT",
+      "source": "We also observed that the motif for SREBF2, also called SREBP2, is enriched for being within downregulated targets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by motif enrichment analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:24.731085Z"
+    },
+    {
+      "id": "322c01f5-c897-430a-9d8e-01edb3296c5e",
+      "content_id": "d5d8920a-052f-4dba-8dfd-aa10a48e8d11",
+      "claim_id": "C33",
+      "claim": "In hepatocytes, caffeine is known to suppress SREBF2 activity, which reduces PCSK9 expression, and thus increases LDLR expression, which could be protective against CVD.",
+      "claim_type": "EXPLICIT",
+      "source": "In hepatocytes, caffeine is known to suppress SREBF2 activity, which reduces PCSK9 expression, and thus increases LDLR expression, which could be protective against CVD (Lebeau et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Lebeau et al., 2022",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:24.731085Z"
+    },
+    {
+      "id": "4e5084fe-1691-41e3-880a-50f62844edb0",
+      "content_id": "d5d8920a-052f-4dba-8dfd-aa10a48e8d11",
+      "claim_id": "C34",
+      "claim": "The motif for TEAD4 was identified as enriched for being within downregulated targets.",
+      "claim_type": "EXPLICIT",
+      "source": "The motif for TEAD4 was also identified as enriched for being within downregulated targets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by motif enrichment analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:24.731085Z"
+    },
+    {
+      "id": "5e2a6fcb-3f87-4a10-9b56-e8ba410cf781",
+      "content_id": "d5d8920a-052f-4dba-8dfd-aa10a48e8d11",
+      "claim_id": "C35",
+      "claim": "A CAD GWAS risk variant disrupts binding of TEAD4 in smooth muscle cells, causing lower expression of p16, which could potentially contribute to the risk identified at this locus.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, a CAD GWAS risk variant disrupts binding of TEAD4 in smooth muscle cells, causing lower expression of p16, which could potentially contribute to the risk identified at this locus (Almontashiri et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Almontashiri et al., 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:24.731085Z"
+    },
+    {
+      "id": "63f29ff1-0456-4d6f-aad3-419708e6491b",
+      "content_id": "d5d8920a-052f-4dba-8dfd-aa10a48e8d11",
+      "claim_id": "C36",
+      "claim": "689 SNP/direction pairs (corresponding to 665 SNPs) showed significant ASE out of 50,914 SNP/direction pairs (30,680 SNPs) tested (2.2%, FDR < 10%).",
+      "claim_type": "EXPLICIT",
+      "source": "We observed 689 SNP/direction pairs (corresponding to 665 SNPs) with significant ASE out of 50,914 SNP/direction pairs (30,680 SNPs) tested (2.2%, FDR < 10%) (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by ASE analysis using QuASAR-MPRA and shown in Figure 3A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:24.731085Z"
+    },
+    {
+      "id": "735bfb3e-0b3a-4da8-951b-fe6e3e135abe",
+      "content_id": "d5d8920a-052f-4dba-8dfd-aa10a48e8d11",
+      "claim_id": "C37",
+      "claim": "Negative control sequences tend to have higher p-values than other sequences in the library.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, our library contained negative control sequences that were predicted to not have an allelic regulatory effect. These negative control sequences tend to have higher p-values than other sequences in our library, as predicted (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by ASE analysis results shown in Figure 3A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:24.731085Z"
+    },
+    {
+      "id": "1a2bd40a-8150-40a5-8183-87f6087849e0",
+      "content_id": "d5d8920a-052f-4dba-8dfd-aa10a48e8d11",
+      "claim_id": "C38",
+      "claim": "Genetic variation within regulatory sequences within the library can modulate gene expression levels in vascular endothelial cells.",
+      "claim_type": "EXPLICIT",
+      "source": "These results demonstrate that genetic variation within regulatory sequences within our library can modulate gene expression levels in vascular endothelial cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the observation of significant ASE in 689 SNP/direction pairs",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:24.731085Z"
+    },
+    {
+      "id": "9a9f0391-f39f-4659-a604-f2b9b07aed13",
+      "content_id": "d5d8920a-052f-4dba-8dfd-aa10a48e8d11",
+      "claim_id": "C39",
+      "claim": "6 significant SNP/direction pairs (corresponding to 6 SNPs) out of 23,814 (15,927 SNPs) tested showed cASE (FDR < 5%).",
+      "claim_type": "EXPLICIT",
+      "source": "When testing for cASE, we observed 6 significant SNP/direction pairs (corresponding to 6 SNPs) out of 23,814 (15,927 SNPs) tested (FDR < 5%) (Figure 3B, Supplementary file 4, Figure 3\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by cASE analysis using \u0394AST method and shown in Figure 3B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:24.731085Z"
+    },
+    {
+      "id": "c9cc529e-e422-43e3-8640-c951a7b5af17",
+      "content_id": "d5d8920a-052f-4dba-8dfd-aa10a48e8d11",
+      "claim_id": "C40",
+      "claim": "There is an enrichment for cASE targets containing caffeine response factors.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, we annotated which of these cASE targets contains a known caffeine response factor as defined in Findley et al., 2019, based on ATAC-seq data. There is an enrichment for these targets containing caffeine response factors, as expected (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by annotation analysis and shown in Figure 3B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:24.731085Z"
+    },
+    {
+      "id": "fbfbaa5a-b51c-472e-a99b-614567da1c65",
+      "content_id": "d5d8920a-052f-4dba-8dfd-aa10a48e8d11",
+      "claim_id": "C41",
+      "claim": "ASE variants were 2.4-fold enriched within open chromatin regions (p<2.2e-16).",
+      "claim_type": "EXPLICIT",
+      "source": "ASE variants were 2.4-fold enriched within open chromatin regions (p<2.2e-16, Figure 3C, green), while a more moderate trend was observed for cASE (1.2-fold, p=0.088, Figure 3C, purple).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Fisher's exact test and shown in Figure 3C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:24.731085Z"
+    },
+    {
+      "id": "4697f8da-7759-45ae-8a58-c6967f7085bd",
+      "content_id": "d5d8920a-052f-4dba-8dfd-aa10a48e8d11",
+      "claim_id": "C42",
+      "claim": "A more moderate trend was observed for cASE (1.2-fold, p=0.088) enrichment in open chromatin regions.",
+      "claim_type": "EXPLICIT",
+      "source": "ASE variants were 2.4-fold enriched within open chromatin regions (p<2.2e-16, Figure 3C, green), while a more moderate trend was observed for cASE (1.2-fold, p=0.088, Figure 3C, purple).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Fisher's exact test and shown in Figure 3C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:24.731085Z"
+    },
+    {
+      "id": "d9c4b580-4bbf-4ec6-b234-750e2e6699c5",
+      "content_id": "d5d8920a-052f-4dba-8dfd-aa10a48e8d11",
+      "claim_id": "C43",
+      "claim": "ASE variants were 1.38 times more likely to be artery eQTLs (p=0.01).",
+      "claim_type": "EXPLICIT",
+      "source": "Using variants within the open chromatin regions described above, we conducted a Fisher's exact test and found that ASE variants were 1.38 times more likely to be artery eQTLs (p=0.01, Figure 3C, green) compared to variants that did not show ASE.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Fisher's exact test and shown in Figure 3C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:24.731085Z"
+    },
+    {
+      "id": "78f5721e-475d-438e-8099-e1d3fd469463",
+      "content_id": "d5d8920a-052f-4dba-8dfd-aa10a48e8d11",
+      "claim_id": "C44",
+      "claim": "A more moderate trend was observed for cASE variants (1.2 times more likely to be artery eQTLs, p=0.26).",
+      "claim_type": "EXPLICIT",
+      "source": "We observed a more moderate trend for cASE variants (1.2 times more likely to be artery eQTLs, p=0.26, Figure 3C, purple, Supplementary file 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Fisher's exact test and shown in Figure 3C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:24.731085Z"
+    },
+    {
+      "id": "7b8b0838-6f70-46ef-92d8-2bd9a06e1ef1",
+      "content_id": "d5d8920a-052f-4dba-8dfd-aa10a48e8d11",
+      "claim_id": "C45",
+      "claim": "44 motifs were enriched for targets containing ASE variants.",
+      "claim_type": "EXPLICIT",
+      "source": "For targets containing ASE variants, we observed 44 enriched motifs (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by motif enrichment analysis using test of proportions and shown in Figure 4",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:24.731085Z"
+    },
+    {
+      "id": "6b050700-92a2-493e-8f3a-cbdf7edd9f16",
+      "content_id": "d5d8920a-052f-4dba-8dfd-aa10a48e8d11",
+      "claim_id": "C46",
+      "claim": "18 motifs were enriched for targets containing cASE variants.",
+      "claim_type": "EXPLICIT",
+      "source": "For targets containing cASE variants, we observed 18 enriched motifs (Figure 4, Supplementary file 3 ).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by motif enrichment analysis using test of proportions and shown in Figure 4",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:24.731085Z"
+    },
+    {
+      "id": "0ba4c4f4-3c10-4749-bf9b-9d28ea7db2dc",
+      "content_id": "d5d8920a-052f-4dba-8dfd-aa10a48e8d11",
+      "claim_id": "C47",
+      "claim": "NRF1 is enriched for targets containing cASE and ASE variants and is known to regulate lipid metabolism.",
+      "claim_type": "EXPLICIT",
+      "source": "Factors of interest for cardiovascular function include NRF1, enriched for targets containing cASE and ASE variants, which is known to regulate lipid metabolism (Hirotsu et al., 2012; Huss and Kelly, 2004), and is annotated as part of the lipid metabolism pathway in Reactome (Fabregat et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by motif enrichment analysis and citations to Hirotsu et al., 2012; Huss and Kelly, 2004; Fabregat et al., 2018",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:24.731085Z"
+    },
+    {
+      "id": "668681b2-6467-4b34-a526-766395726780",
+      "content_id": "d5d8920a-052f-4dba-8dfd-aa10a48e8d11",
+      "claim_id": "C48",
+      "claim": "KLF15 and KLF14 are enriched in targets with cASE and ASE.",
+      "claim_type": "EXPLICIT",
+      "source": "KLF15 and KLF14 are also enriched in targets with cASE and ASE.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by motif enrichment analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:24.731085Z"
+    },
+    {
+      "id": "41b9b30c-cef0-464d-82b8-5fea38c9ee82",
+      "content_id": "d5d8920a-052f-4dba-8dfd-aa10a48e8d11",
+      "claim_id": "C49",
+      "claim": "KLF15 is involved in cardiac lipid metabolism.",
+      "claim_type": "EXPLICIT",
+      "source": "KLF15 is involved in cardiac lipid metabolism (Prosdocimo et al., 2014; Prosdocimo et al., 2015), and KLF14 has previously been associated with CVD (Fryar et al., 2012; Hu et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Prosdocimo et al., 2014 and Prosdocimo et al., 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:24.731085Z"
+    },
+    {
+      "id": "398c1bc5-51c2-44e3-9c5e-b6172e9237ce",
+      "content_id": "d5d8920a-052f-4dba-8dfd-aa10a48e8d11",
+      "claim_id": "C50",
+      "claim": "KLF14 has previously been associated with CVD.",
+      "claim_type": "EXPLICIT",
+      "source": "KLF15 is involved in cardiac lipid metabolism (Prosdocimo et al., 2014; Prosdocimo et al., 2015), and KLF14 has previously been associated with CVD (Fryar et al., 2012; Hu et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Fryar et al., 2012 and Hu et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:24.731085Z"
+    },
+    {
+      "id": "088dcef4-d998-4d56-b19f-588cc5dbeead",
+      "content_id": "d5d8920a-052f-4dba-8dfd-aa10a48e8d11",
+      "claim_id": "C51",
+      "claim": "INSM1 and PLAG1 are caffeine response factors.",
+      "claim_type": "EXPLICIT",
+      "source": "Factors INSM1 and PLAG1 are caffeine response factors as defined in Findley et al., 2019, confirming that genetic variation may modulate the response to caffeine by increasing binding activity of these transcription factors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Findley et al., 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:24.731085Z"
+    },
+    {
+      "id": "5b25dac1-590e-4f28-941e-a69503636fde",
+      "content_id": "d5d8920a-052f-4dba-8dfd-aa10a48e8d11",
+      "claim_id": "C52",
+      "claim": "Genetic variation may modulate the response to caffeine by increasing binding activity of INSM1 and PLAG1 transcription factors.",
+      "claim_type": "EXPLICIT",
+      "source": "Factors INSM1 and PLAG1 are caffeine response factors as defined in Findley et al., 2019, confirming that genetic variation may modulate the response to caffeine by increasing binding activity of these transcription factors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the enrichment of INSM1 and PLAG1 motifs in targets with ASE and cASE",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:24.731085Z"
+    },
+    {
+      "id": "e215b6b6-1a8e-43b3-bb7e-372b62be5cf6",
+      "content_id": "d5d8920a-052f-4dba-8dfd-aa10a48e8d11",
+      "claim_id": "C53",
+      "claim": "The study tested 187 fine-mapped variants in the library.",
+      "claim_type": "EXPLICIT",
+      "source": "In our library, we tested 187 fine-mapped variants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as part of the fine-mapping validation analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:24.731085Z"
+    },
+    {
+      "id": "9a6bae6e-584c-47c3-bf6f-7d47d825e19a",
+      "content_id": "d5d8920a-052f-4dba-8dfd-aa10a48e8d11",
+      "claim_id": "C54",
+      "claim": "The study identified significant ASE for six SNPs (six SNP/direction pairs), validating the regulatory function of these fine-mapped causal eQTLs.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified significant ASE for six SNPs (six SNP/direction pairs), thus validating the regulatory function of these fine-mapped causal eQTLs (Supplementary file 5).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by ASE analysis of fine-mapped variants",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:24.731085Z"
+    },
+    {
+      "id": "fd4ccd55-d0f5-4a5b-ba93-970eb57e9707",
+      "content_id": "d5d8920a-052f-4dba-8dfd-aa10a48e8d11",
+      "claim_id": "C55",
+      "claim": "The study identified two fine-mapped artery eQTLs with significant cASE (p<0.0215; 2 SNP/direction).",
+      "claim_type": "EXPLICIT",
+      "source": "We also identified two fine-mapped artery eQTLs with significant cASE (p<0.0215; 2 SNP/direction; Supplementary file 5), which may represent hidden GxE in GTEx.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by cASE analysis of fine-mapped variants",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:24.731085Z"
+    },
+    {
+      "id": "3b909ec3-0915-4e4a-9c60-2785ec6c3661",
+      "content_id": "d5d8920a-052f-4dba-8dfd-aa10a48e8d11",
+      "claim_id": "C56",
+      "claim": "Two fine-mapped artery eQTLs with significant cASE may represent hidden GxE in GTEx.",
+      "claim_type": "EXPLICIT",
+      "source": "We also identified two fine-mapped artery eQTLs with significant cASE (p<0.0215; 2 SNP/direction; Supplementary file 5), which may represent hidden GxE in GTEx.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative interpretation of the cASE results for fine-mapped eQTLs",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:24.731085Z"
+    },
+    {
+      "id": "178c8a52-9e92-44b2-81d1-bb211d5c2ea9",
+      "content_id": "d5d8920a-052f-4dba-8dfd-aa10a48e8d11",
+      "claim_id": "C57",
+      "claim": "The study identified eight cASE variants that regulate the expression of genes associated with CAD and hypertension (<10% FDR for INTACT analysis, p<0.0215 for cASE analysis).",
+      "claim_type": "EXPLICIT",
+      "source": "We identified eight cASE variants that regulate the expression of genes associated with CAD and hypertension (<10% FDR for INTACT analysis, p<0.0215 for cASE analysis, Supplementary file 6).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by integration of INTACT analysis with cASE results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:24.731085Z"
+    },
+    {
+      "id": "dc06cedd-592a-4f19-92f7-b43305494333",
+      "content_id": "d5d8920a-052f-4dba-8dfd-aa10a48e8d11",
+      "claim_id": "C58",
+      "claim": "rs4938344 is an eQTL regulating the long noncoding RNA AP000892.6.",
+      "claim_type": "EXPLICIT",
+      "source": "rs4938344 is an eQTL regulating the long noncoding RNA AP000892.6.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by GTEx eQTL data",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:24.731085Z"
+    },
+    {
+      "id": "55dcbcc3-ecbe-4b76-89d8-9337d3217db2",
+      "content_id": "d5d8920a-052f-4dba-8dfd-aa10a48e8d11",
+      "claim_id": "C59",
+      "claim": "The reference allele (G) at rs4938344 results in decreased expression of AP000892.6.",
+      "claim_type": "EXPLICIT",
+      "source": "The reference allele at this locus, G, results in decreased expression of AP000892.6 (as measured in GTEx and in the caffeine condition of our assay, Figure 5D and E, respectively).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by GTEx data and BiT-STARR-Seq results shown in Figure 5D and E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:24.731085Z"
+    },
+    {
+      "id": "48a55dab-253d-43c3-9aef-e0f2850c9ef7",
+      "content_id": "d5d8920a-052f-4dba-8dfd-aa10a48e8d11",
+      "claim_id": "C60",
+      "claim": "INTACT associated high expression of AP000892.6 with decreased risk of hypertension and CAD.",
+      "claim_type": "EXPLICIT",
+      "source": "INTACT associated high expression of AP000892.6 with decreased risk of hypertension and CAD (Figure 5F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by INTACT analysis shown in Figure 5F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:24.731085Z"
+    },
+    {
+      "id": "f266406f-fbc2-48d2-bda3-fec5c2635f01",
+      "content_id": "d5d8920a-052f-4dba-8dfd-aa10a48e8d11",
+      "claim_id": "C61",
+      "claim": "rs4938344 is predicted to modulate binding of GABP and ETV1.",
+      "claim_type": "EXPLICIT",
+      "source": "This SNP is predicted to modulate binding of GABP (a known repressor of transcription; Genuario and Perry, 1996) and ETV1 at this site (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by CentiSNP predictions and shown in Figure 5C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:24.731085Z"
+    },
+    {
+      "id": "f3430c85-9b34-41cc-bb6e-66278967ff08",
+      "content_id": "d5d8920a-052f-4dba-8dfd-aa10a48e8d11",
+      "claim_id": "C62",
+      "claim": "GABP is a known repressor of transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "This SNP is predicted to modulate binding of GABP (a known repressor of transcription; Genuario and Perry, 1996) and ETV1 at this site (Figure 5C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Genuario and Perry, 1996",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:24.731085Z"
+    },
+    {
+      "id": "a1b6641f-24e5-4698-bc2d-f703cb457fed",
+      "content_id": "d5d8920a-052f-4dba-8dfd-aa10a48e8d11",
+      "claim_id": "C63",
+      "claim": "GABP and ETV1 transcription factors are upregulated in caffeine-exposed endothelial cells.",
+      "claim_type": "EXPLICIT",
+      "source": "These transcription factors are upregulated in caffeine-exposed endothelial cells (Findley et al., 2019; Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by citation to Findley et al., 2019 and shown in Figure 5B",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:24.731085Z"
+    },
+    {
+      "id": "06d06b89-3099-4d2d-a004-bb9e891a5de2",
+      "content_id": "d5d8920a-052f-4dba-8dfd-aa10a48e8d11",
+      "claim_id": "C64",
+      "claim": "The reference allele for rs4938344 exhibited lower activity in response to caffeine in BiT-STARR-Seq experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, the reference allele for this variant exhibited lower activity in response to caffeine in our BiT-STARR-Seq experiments (Figure 5E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by BiT-STARR-Seq experimental data shown in Figure 5E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:24.731085Z"
+    },
+    {
+      "id": "7fb40a7e-2e5c-4315-b873-fadde62b0730",
+      "content_id": "d5d8920a-052f-4dba-8dfd-aa10a48e8d11",
+      "claim_id": "C65",
+      "claim": "Caffeine induces higher expression of the ETV1 and GABP transcription factors, which then bind preferentially to the reference allele at rs4938344, resulting in lower expression of AP000892.6 and increased risk for CAD and hypertension.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, caffeine induces higher expression of the ETV1 and GABP transcription factors, which then bind preferentially to the reference allele at rs4938344; this results in lower expression of AP000892.6 and increased risk for CAD and hypertension (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Proposed mechanism integrating multiple lines of evidence shown in Figure 5A",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:24.731085Z"
+    },
+    {
+      "id": "30518969-6548-4acd-a9af-50155530d583",
+      "content_id": "d5d8920a-052f-4dba-8dfd-aa10a48e8d11",
+      "claim_id": "C66",
+      "claim": "AP000892.6 interacts with the RB1CC1 RNA.",
+      "claim_type": "EXPLICIT",
+      "source": "AP000892.6 interacts with the RB1CC1 RNA (Gong et al., 2018), which may play a role in atherosclerosis via its function in forming the autophagosome (Chen et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Gong et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:24.731085Z"
+    },
+    {
+      "id": "4ef65339-7fba-4985-acf9-bfdbb8fb482d",
+      "content_id": "d5d8920a-052f-4dba-8dfd-aa10a48e8d11",
+      "claim_id": "C67",
+      "claim": "RB1CC1 may play a role in atherosclerosis via its function in forming the autophagosome.",
+      "claim_type": "EXPLICIT",
+      "source": "AP000892.6 interacts with the RB1CC1 RNA (Gong et al., 2018), which may play a role in atherosclerosis via its function in forming the autophagosome (Chen et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Chen et al., 2021",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:24.731085Z"
+    },
+    {
+      "id": "cf643e4e-dc2a-4bbc-aaeb-e7ee60cc26ad",
+      "content_id": "d5d8920a-052f-4dba-8dfd-aa10a48e8d11",
+      "claim_id": "C68",
+      "claim": "rs4527034 is an eQTL regulating the KAT8 gene.",
+      "claim_type": "EXPLICIT",
+      "source": "rs4527034 is an eQTL regulating the KAT8 gene.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by GTEx eQTL data",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:24.731085Z"
+    },
+    {
+      "id": "7f2eae57-e9f5-46c6-b18d-83cb4c6acdb1",
+      "content_id": "d5d8920a-052f-4dba-8dfd-aa10a48e8d11",
+      "claim_id": "C69",
+      "claim": "The reference allele (A) at rs4527034 results in decreased expression of KAT8.",
+      "claim_type": "EXPLICIT",
+      "source": "The reference allele at this locus, A, results in decreased expression of KAT8 (as measured in GTEx and in the control condition of our assay, Figure 6D and E, respectively).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by GTEx data and BiT-STARR-Seq results shown in Figure 6D and E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:24.731085Z"
+    },
+    {
+      "id": "b082cf3b-848a-471c-a1af-13c2ce45ea86",
+      "content_id": "d5d8920a-052f-4dba-8dfd-aa10a48e8d11",
+      "claim_id": "C70",
+      "claim": "INTACT associated high expression of KAT8 with increased risk of hypertension.",
+      "claim_type": "EXPLICIT",
+      "source": "INTACT associated high expression of KAT8 with increased risk of hypertension (Figure 6F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by INTACT analysis shown in Figure 6F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:24.731085Z"
+    },
+    {
+      "id": "694e3c2a-4e9b-4070-856f-9ebb548513e0",
+      "content_id": "d5d8920a-052f-4dba-8dfd-aa10a48e8d11",
+      "claim_id": "C71",
+      "claim": "rs4527034 is predicted to modulate binding of the TERF2IP transcription factor.",
+      "claim_type": "EXPLICIT",
+      "source": "This SNP is predicted to modulate binding of the TERF2IP transcription factor at this site (Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by CentiSNP predictions and shown in Figure 6C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:24.731085Z"
+    },
+    {
+      "id": "f9e0f8cf-8b5e-4116-aaf0-1b9a5640c208",
+      "content_id": "d5d8920a-052f-4dba-8dfd-aa10a48e8d11",
+      "claim_id": "C72",
+      "claim": "TERF2IP is upregulated in caffeine-exposed endothelial cells.",
+      "claim_type": "EXPLICIT",
+      "source": "TERF2IP is upregulated in caffeine-exposed endothelial cells (Findley et al., 2019; Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by citation to Findley et al., 2019 and shown in Figure 6B",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:24.731085Z"
+    },
+    {
+      "id": "8e739728-74c8-4776-af2a-066386246fe1",
+      "content_id": "d5d8920a-052f-4dba-8dfd-aa10a48e8d11",
+      "claim_id": "C73",
+      "claim": "In the absence of caffeine, TERF2IP binds preferentially to the reference allele at rs4527034, which results in lower expression of KAT8 and reduced risk for hypertension.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, in the absence of caffeine, TERF2IP binds preferentially to the reference allele at rs4527034, which results in lower expression of KAT8 and reduced risk for hypertension.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Proposed mechanism integrating multiple lines of evidence",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:24.731085Z"
+    },
+    {
+      "id": "1669c409-7afd-44c2-a2c9-d5e24f0d2bb9",
+      "content_id": "d5d8920a-052f-4dba-8dfd-aa10a48e8d11",
+      "claim_id": "C74",
+      "claim": "In the presence of caffeine, TERF2IP is upregulated, resulting in increased binding and lower expression of KAT8, independently of the genotype, with an expected overall protective effect on hypertension.",
+      "claim_type": "EXPLICIT",
+      "source": "In the presence of caffeine, TERF2IP is upregulated, resulting in increased binding and lower expression of KAT8, independently of the genotype, with an expected overall protective effect on hypertension.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Proposed mechanism integrating multiple lines of evidence with speculative protective effect",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:24.731085Z"
+    },
+    {
+      "id": "57050380-68b3-48cc-84eb-14f579141990",
+      "content_id": "d5d8920a-052f-4dba-8dfd-aa10a48e8d11",
+      "claim_id": "C75",
+      "claim": "TERF2IP expression levels were found to affect plaque formation in a mouse model.",
+      "claim_type": "EXPLICIT",
+      "source": "Confirming this potential mechanism for disease risk, TERF2IP expression levels were found to affect plaque formation in a mouse model (Kotla et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Kotla et al., 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:24.731085Z"
+    },
+    {
+      "id": "ac42e133-b0f8-472d-a719-1824f4aae51f",
+      "content_id": "d5d8920a-052f-4dba-8dfd-aa10a48e8d11",
+      "claim_id": "C76",
+      "claim": "High expression of KAT8 coincides with atherosclerotic progression.",
+      "claim_type": "EXPLICIT",
+      "source": "High expression of KAT8, a histone acetyltransferase, also coincides with atherosclerotic progression, and histone acetylation increases in plaques within vascular endothelial cells (Grei\u00dfel et al., 2016; Zhang et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Grei\u00dfel et al., 2016 and Zhang et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:24.731085Z"
+    },
+    {
+      "id": "ba01847e-24c9-43f6-9386-a7a5ccfb8689",
+      "content_id": "d5d8920a-052f-4dba-8dfd-aa10a48e8d11",
+      "claim_id": "C77",
+      "claim": "Histone acetylation increases in plaques within vascular endothelial cells.",
+      "claim_type": "EXPLICIT",
+      "source": "High expression of KAT8, a histone acetyltransferase, also coincides with atherosclerotic progression, and histone acetylation increases in plaques within vascular endothelial cells (Grei\u00dfel et al., 2016; Zhang et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Grei\u00dfel et al., 2016 and Zhang et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:24.731085Z"
+    },
+    {
+      "id": "f596f0b6-7b72-4fa4-93d9-8cfbdcd95f5a",
+      "content_id": "d5d8920a-052f-4dba-8dfd-aa10a48e8d11",
+      "claim_id": "C78",
+      "claim": "Heart disease is one of the leading causes of death in the United States according to the CDC.",
+      "claim_type": "EXPLICIT",
+      "source": "Heart disease is one of the leading causes of death in the United States according to the CDC (http://wonder.cdc.gov/ucd-icd10.html).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to CDC data",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:24.731085Z"
+    },
+    {
+      "id": "85c1a9bc-1a9f-4d0d-87a6-fbe7116b1588",
+      "content_id": "d5d8920a-052f-4dba-8dfd-aa10a48e8d11",
+      "claim_id": "C79",
+      "claim": "The most common type of heart disease is CAD, which affects over 18 million adults over the age of 20 years.",
+      "claim_type": "EXPLICIT",
+      "source": "The most common type of heart disease is CAD, which affects over 18 million adults over the age of 20 y (Fryar et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Fryar et al., 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:24.731085Z"
+    },
+    {
+      "id": "fefc73da-d355-45d6-ab48-d6e7ced3d514",
+      "content_id": "d5d8920a-052f-4dba-8dfd-aa10a48e8d11",
+      "claim_id": "C80",
+      "claim": "The common risk factors of CAD include hypertension, high cholesterol levels, and family history.",
+      "claim_type": "EXPLICIT",
+      "source": "The common risk factors of CAD include hypertension, high cholesterol levels, and family history (Brown et al., 2022; Hajar, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Brown et al., 2022 and Hajar, 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:24.731085Z"
+    },
+    {
+      "id": "9d566e10-fdec-4e62-8926-db01e306224d",
+      "content_id": "d5d8920a-052f-4dba-8dfd-aa10a48e8d11",
+      "claim_id": "C81",
+      "claim": "CAD occurs when plaques form in the arteries (atherosclerosis), causing a narrowing of the artery, which reduces blood flow to the heart.",
+      "claim_type": "EXPLICIT",
+      "source": "CAD occurs when plaques form in the arteries (atherosclerosis), causing a narrowing of the artery, which reduces blood flow to the heart.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as established knowledge about CAD pathophysiology",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:24.731085Z"
+    },
+    {
+      "id": "99ed8151-f167-451e-a9f8-c4b0b0721736",
+      "content_id": "d5d8920a-052f-4dba-8dfd-aa10a48e8d11",
+      "claim_id": "C82",
+      "claim": "The innermost layer of the artery is composed of endothelial cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The innermost layer of the artery is composed of endothelial cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as established anatomical knowledge",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:24.731085Z"
+    },
+    {
+      "id": "7687d2a3-4fad-4cd6-8833-0335d7b52548",
+      "content_id": "d5d8920a-052f-4dba-8dfd-aa10a48e8d11",
+      "claim_id": "C83",
+      "claim": "The molecular mechanisms behind endothelial dysfunction and the resulting diseases are largely unknown.",
+      "claim_type": "EXPLICIT",
+      "source": "The molecular mechanisms behind endothelial dysfunction and the resulting diseases are largely unknown.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a knowledge gap motivating the study",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:24.731085Z"
+    },
+    {
+      "id": "18b535e7-fbdb-4487-8740-90602d3d3941",
+      "content_id": "d5d8920a-052f-4dba-8dfd-aa10a48e8d11",
+      "claim_id": "C84",
+      "claim": "BiT-STARR-Seq allows direct comparison of two alleles within the same sequence context without requiring a large cohort.",
+      "claim_type": "EXPLICIT",
+      "source": "BiT-STARR-Seq also allows us to directly compare two alleles within the same sequence context without requiring a large cohort.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as an advantage of the BiT-STARR-Seq method",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:24.731085Z"
+    },
+    {
+      "id": "5727e9c0-a369-4d8b-bc1c-a772859b1b0e",
+      "content_id": "d5d8920a-052f-4dba-8dfd-aa10a48e8d11",
+      "claim_id": "C85",
+      "claim": "BiT-STARR-Seq does not interrogate SNPs in their native chromatin context.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the advantages of BiT-STARR-Seq, unlike response eQTL mapping, we are not interrogating these SNPs in their native chromatin context.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a limitation of the BiT-STARR-Seq method",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:24.731085Z"
+    },
+    {
+      "id": "4779b3e6-c56c-45a2-8f27-230bca773b37",
+      "content_id": "d5d8920a-052f-4dba-8dfd-aa10a48e8d11",
+      "claim_id": "C86",
+      "claim": "Caffeine exposure significantly changes the regulatory activity of vascular endothelial cells.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that caffeine exposure significantly changes the regulatory activity of vascular endothelial cells, which may have important implications regarding the impact of lifestyle in CAD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the observation of 772 differentially active targets in response to caffeine",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:24.731085Z"
+    },
+    {
+      "id": "728795ff-fb7d-470a-9159-9ff7b1732e23",
+      "content_id": "d5d8920a-052f-4dba-8dfd-aa10a48e8d11",
+      "claim_id": "C87",
+      "claim": "Caffeine is known to cause an increase in Ca2+ in human aortic endothelial cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Caffeine is known to cause an increase in Ca2+ in human aortic endothelial cells (Corda et al., 1995), so it is understandable that we find these factors enriched for being within targets that respond to caffeine exposure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Corda et al., 1995",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:24.731085Z"
+    },
+    {
+      "id": "f77fef98-e47d-4d65-81b5-c1d1e0dd1717",
+      "content_id": "d5d8920a-052f-4dba-8dfd-aa10a48e8d11",
+      "claim_id": "C88",
+      "claim": "SREBF2 is involved in sterol homeostasis.",
+      "claim_type": "EXPLICIT",
+      "source": "SREBF2, also known as SREBP2, is involved in sterol homeostasis (Horton et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Horton et al., 2003",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:24.731085Z"
+    },
+    {
+      "id": "8f408c20-f53c-4c05-8dd9-92848a863655",
+      "content_id": "d5d8920a-052f-4dba-8dfd-aa10a48e8d11",
+      "claim_id": "C89",
+      "claim": "Caffeine exposure can alter expression of genes, including those for transcription factors in mouse cardiomyocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "This coincides with findings that caffeine exposure can alter expression of genes, including those for transcription factors in mouse cardiomyocytes (Fang et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Fang et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:24.731085Z"
+    },
+    {
+      "id": "002c6598-2755-48d5-96b7-64593a0eeffa",
+      "content_id": "d5d8920a-052f-4dba-8dfd-aa10a48e8d11",
+      "claim_id": "C90",
+      "claim": "Caffeine inhibits the transcription factor SREBP2, which causes an overall protective effect against CVD.",
+      "claim_type": "EXPLICIT",
+      "source": "Another study aimed to uncover mechanisms relevant to CVD upon caffeine exposure and found that caffeine inhibits the transcription factor SREBP2, which causes an overall protective effect against CVD (Lebeau et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Lebeau et al., 2022",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:24.731085Z"
+    },
+    {
+      "id": "89f26289-a68c-4be9-a2c7-1c730090c9eb",
+      "content_id": "d5d8920a-052f-4dba-8dfd-aa10a48e8d11",
+      "claim_id": "C91",
+      "claim": "Numerous noncoding variants have been implicated in CAD risk via GWAS.",
+      "claim_type": "EXPLICIT",
+      "source": "Numerous noncoding variants have been implicated in CAD risk via GWAS (Hartmann et al., 2022; Kessler and Schunkert, 2021; Koyama et al., 2020; Nikpay et al., 2015; Temprano\u2010Sagrera et al., 2022; van der Harst and Verweij, 2018), but they are generally uncharacterized.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to multiple GWAS studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:24.731085Z"
+    },
+    {
+      "id": "24e9ecb1-d4c8-4bbb-9d62-dea029808888",
+      "content_id": "d5d8920a-052f-4dba-8dfd-aa10a48e8d11",
+      "claim_id": "C92",
+      "claim": "Noncoding variants implicated in CAD risk via GWAS are generally uncharacterized.",
+      "claim_type": "EXPLICIT",
+      "source": "Numerous noncoding variants have been implicated in CAD risk via GWAS (Hartmann et al., 2022; Kessler and Schunkert, 2021; Koyama et al., 2020; Nikpay et al., 2015; Temprano\u2010Sagrera et al., 2022; van der Harst and Verweij, 2018), but they are generally uncharacterized.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a knowledge gap in the field",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:24.731085Z"
+    },
+    {
+      "id": "f359ff34-8353-44ad-9cf5-def2f2aac182",
+      "content_id": "d5d8920a-052f-4dba-8dfd-aa10a48e8d11",
+      "claim_id": "C93",
+      "claim": "GxE-eQTL can modulate complex disease risk.",
+      "claim_type": "EXPLICIT",
+      "source": "Since previous studies have shown that GxE-eQTL can modulate complex disease risk, we expect that GxE detected in our assay may be relevant to CAD (Alasoo et al., 2019; Alasoo et al., 2018; Barreiro et al., 2012; \u00c7al\u0131\u015fkan et al., 2015; Fairfax et al., 2014; Findley et al., 2021; Huang et al., 2020; Kim-Hellmuth et al., 2017; Knowles et al., 2018; Lee et al., 2014; Mangravite et al., 2013; Manry et al., 2017; Maranville et al., 2011; N\u00e9d\u00e9lec et al., 2016; Quach et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to multiple studies on GxE-eQTL",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:24.731085Z"
+    },
+    {
+      "id": "8bd0a63f-45ad-41ef-a76b-86b4858d4290",
+      "content_id": "d5d8920a-052f-4dba-8dfd-aa10a48e8d11",
+      "claim_id": "C94",
+      "claim": "Context-aware MPRAs can be used to dissect molecular mechanisms underlying cardiovascular health.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results demonstrate that massively parallel reporter assay is a powerful approach to identify and molecularly characterize GxE in the specific context of caffeine consumption.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the successful identification and characterization of GxE variants in this study",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:24.731085Z"
+    },
+    {
+      "id": "07de12fc-4760-49e6-a076-5b827e66258d",
+      "content_id": "d5d8920a-052f-4dba-8dfd-aa10a48e8d11",
+      "claim_id": "C95",
+      "claim": "Human umbilical vein endothelial cells (HUVECs) were obtained from Lonza.",
+      "claim_type": "EXPLICIT",
+      "source": "Human umbilical vein endothelial cells (HUVECs) were obtained from Lonza (Cat# CC-2517-0000315288).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in the Materials and methods section",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:24.731085Z"
+    },
+    {
+      "id": "bc0bf1aa-1210-4211-8072-ee262624c41c",
+      "content_id": "d5d8920a-052f-4dba-8dfd-aa10a48e8d11",
+      "claim_id": "C96",
+      "claim": "Cells were cultured at 37\u00b0C with 5% CO2 and seeded at 5000 cells/cm2.",
+      "claim_type": "EXPLICIT",
+      "source": "Cells were cultured at 37\u00b0C with 5% CO2 and seeded at 5000 cells/cm2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in the Materials and methods section",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:24.731085Z"
+    },
+    {
+      "id": "e2fbf5d3-7233-4283-975a-5d12f7673823",
+      "content_id": "d5d8920a-052f-4dba-8dfd-aa10a48e8d11",
+      "claim_id": "C97",
+      "claim": "A caffeine concentration of 1.16 \u00d7 10\u20133 M was used for treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "We used a caffeine concentration of 1.16 \u00d7 10\u20133 M.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in the Materials and methods section",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:24.731085Z"
+    },
+    {
+      "id": "1df7e119-115a-4679-9832-e2068625c20b",
+      "content_id": "d5d8920a-052f-4dba-8dfd-aa10a48e8d11",
+      "claim_id": "C98",
+      "claim": "Water was used as a vehicle control.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, water was used as a vehicle control as that was the solvent used to prepare the caffeine treatment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in the Materials and methods section",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:24.731085Z"
+    },
+    {
+      "id": "7fd70f71-59ce-4d83-8e64-10708210924b",
+      "content_id": "d5d8920a-052f-4dba-8dfd-aa10a48e8d11",
+      "claim_id": "C99",
+      "claim": "The library of target regulatory sequences consisted of eQTLs, SNPs predicted to disrupt transcription factor binding (centiSNPs), and SNPs associated with complex traits in GWAS.",
+      "claim_type": "EXPLICIT",
+      "source": "Briefly, the library of target regulatory sequences consisted of several categories of regulatory variants, including eQTLs (Innocenti et al., 2011; Wen et al., 2015), SNPs predicted to disrupt transcription factor binding (centiSNPs) (Moyerbrailean et al., 2016a), and SNPs associated with complex traits in GWAS (Pickrell, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in the Materials and methods section with supporting citations",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:24.731085Z"
+    },
+    {
+      "id": "973c6572-3da8-4211-bf80-a704512b4268",
+      "content_id": "d5d8920a-052f-4dba-8dfd-aa10a48e8d11",
+      "claim_id": "C100",
+      "claim": "Negative controls that were not predicted to have a regulatory effect were included in the library.",
+      "claim_type": "EXPLICIT",
+      "source": "Negative controls that were not predicted to have a regulatory effect were also included in the library (Moyerbrailean et al., 2016a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in the Materials and methods section with supporting citation",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:24.731085Z"
+    },
+    {
+      "id": "1ae54a5b-bfd4-4a7d-a84d-a9a0768feced",
+      "content_id": "d5d8920a-052f-4dba-8dfd-aa10a48e8d11",
+      "claim_id": "C101",
+      "claim": "The DNA library was transfected into HUVECs using the Lonza Nucleofector X platform.",
+      "claim_type": "EXPLICIT",
+      "source": "The DNA library was transfected into HUVECs using the Lonza Nucleofector X platform.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in the Materials and methods section",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:24.731085Z"
+    },
+    {
+      "id": "ad91f409-919a-4b9e-9f3d-fb92ba1ddb2d",
+      "content_id": "d5d8920a-052f-4dba-8dfd-aa10a48e8d11",
+      "claim_id": "C102",
+      "claim": "Cells were electroporated using the DS-120 setting with primary cell solution P5.",
+      "claim_type": "EXPLICIT",
+      "source": "Cells were electroporated using the DS-120 setting with primary cell solution P5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in the Materials and methods section",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:24.731085Z"
+    },
+    {
+      "id": "2bfc352b-7d2f-4912-a2a4-ae70bfdc6b0e",
+      "content_id": "d5d8920a-052f-4dba-8dfd-aa10a48e8d11",
+      "claim_id": "C103",
+      "claim": "Caffeine was added at 1.16 \u00d7 10\u20133 M after transfection.",
+      "claim_type": "EXPLICIT",
+      "source": "Caffeine was added at 1.16 \u00d7 10\u20133 M after transfection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in the Materials and methods section",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:24.731085Z"
+    },
+    {
+      "id": "ec4e9599-1dbe-4b5e-bf79-49c04c245fe1",
+      "content_id": "d5d8920a-052f-4dba-8dfd-aa10a48e8d11",
+      "claim_id": "C104",
+      "claim": "Cells were incubated for 24 hr and lysed.",
+      "claim_type": "EXPLICIT",
+      "source": "Cells were incubated for 24 hr and lysed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in the Materials and methods section",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:24.731085Z"
+    },
+    {
+      "id": "df837cf2-8dee-42d7-b3bf-5124fabe13ef",
+      "content_id": "d5d8920a-052f-4dba-8dfd-aa10a48e8d11",
+      "claim_id": "C105",
+      "claim": "6 replicates per treatment condition (caffeine and the water vehicle control) or 12 replicates in total were completed.",
+      "claim_type": "EXPLICIT",
+      "source": "We completed 6 replicates per treatment condition (caffeine and the water vehicle control) or 12 replicates in total.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in the Materials and methods section",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:24.731085Z"
+    },
+    {
+      "id": "8c52c146-c4b7-4e19-8ce9-668a65c4948a",
+      "content_id": "d5d8920a-052f-4dba-8dfd-aa10a48e8d11",
+      "claim_id": "C106",
+      "claim": "The average sequencing depth per library was 39,235,611 reads, for a total of 470,827,333 reads.",
+      "claim_type": "EXPLICIT",
+      "source": "The average sequencing depth per library was 39,235,611 reads, for a total of 470,827,333 reads (Figure 1\u2014figure supplement 1, Supplementary file 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in the Materials and methods section and shown in Figure 1\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:24.731085Z"
+    },
+    {
+      "id": "b07d496a-f202-4ff9-b1be-4a8a7767c959",
+      "content_id": "d5d8920a-052f-4dba-8dfd-aa10a48e8d11",
+      "claim_id": "C107",
+      "claim": "DESeq2 was used to test for a molecular response to caffeine.",
+      "claim_type": "EXPLICIT",
+      "source": "To test for a molecular response to caffeine, we used the R package DESeq2 (Love et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in the Materials and methods section with supporting citation",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:24.731085Z"
+    },
+    {
+      "id": "017a54ce-d4d2-4172-99fa-67fe7814ac44",
+      "content_id": "d5d8920a-052f-4dba-8dfd-aa10a48e8d11",
+      "claim_id": "C108",
+      "claim": "The model tested the effect of treatment, correcting for allele (~allele + treatment).",
+      "claim_type": "EXPLICIT",
+      "source": "Our model tested the effect of treatment, correcting for allele (~allele + treatment), as we observed a strong allelic effect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in the Materials and methods section",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:24.731085Z"
+    },
+    {
+      "id": "0121ae39-21a2-4508-a442-7efeeaee6ec0",
+      "content_id": "d5d8920a-052f-4dba-8dfd-aa10a48e8d11",
+      "claim_id": "C109",
+      "claim": "QuASAR-MPRA was used to test for ASE.",
+      "claim_type": "EXPLICIT",
+      "source": "To test for ASE, we utilized the R package quantitative allele-specific analysis of reads (QuASAR-MPRA) (Kalita et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in the Materials and methods section with supporting citation",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:24.731085Z"
+    },
+    {
+      "id": "d73a26c0-decc-4a2e-ad2d-3c9aa28bdeff",
+      "content_id": "d5d8920a-052f-4dba-8dfd-aa10a48e8d11",
+      "claim_id": "C110",
+      "claim": "QuASAR-MPRA uses a beta-binomial model and accounts for uneven initial allelic proportions present in the DNA library.",
+      "claim_type": "EXPLICIT",
+      "source": "QuASAR-MPRA uses a beta-binomial model and accounts for uneven initial allelic proportions present in the DNA library.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in the Materials and methods section",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:24.731085Z"
+    },
+    {
+      "id": "a51411f0-3ca2-4f85-919e-b05d913e8445",
+      "content_id": "d5d8920a-052f-4dba-8dfd-aa10a48e8d11",
+      "claim_id": "C111",
+      "claim": "The \u0394AST method was used to test for cASE.",
+      "claim_type": "EXPLICIT",
+      "source": "To test for cASE, we used a method previously developed by our lab called differential allele-specific test, or \u0394AST.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in the Materials and methods section",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:24.731085Z"
+    },
+    {
+      "id": "f3786808-2c5c-42d1-8aa5-4151168f7f1f",
+      "content_id": "d5d8920a-052f-4dba-8dfd-aa10a48e8d11",
+      "claim_id": "C112",
+      "claim": "The motif scan was completed using the PWMScan tool, using all PWMs within the JASPAR 2022 CORE database (838 motifs).",
+      "claim_type": "EXPLICIT",
+      "source": "The motif scan was completed using the PWMScan tool, using all PWMs within the JASPAR (Castro-Mondragon et al., 2022) 2022 CORE database (838 motifs).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in the Materials and methods section with supporting citation",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:24.731085Z"
+    },
+    {
+      "id": "7da2c7be-2c5f-426a-a1e0-9f4bd396990a",
+      "content_id": "d5d8920a-052f-4dba-8dfd-aa10a48e8d11",
+      "claim_id": "C113",
+      "claim": "DAP-G was used to fine-map eQTLs from all three artery tissues in GTEx V8.",
+      "claim_type": "EXPLICIT",
+      "source": "These probabilities are then used in DAP-G (Zhang et al., 2020) to fine-map eQTLs from all three artery tissues in GTEx V8.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in the Materials and methods section with supporting citation",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:24.731085Z"
+    },
+    {
+      "id": "84d26454-b06d-4dff-9b79-398ff35f9fed",
+      "content_id": "d5d8920a-052f-4dba-8dfd-aa10a48e8d11",
+      "claim_id": "C114",
+      "claim": "A total of 364,427,888 eQTLs were fine-mapped across three artery tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "A total of 364,427,888 eQTLs were fine-mapped across three artery tissues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in the Materials and methods section",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:24.731085Z"
+    },
+    {
+      "id": "74179880-659b-443a-ab79-6aa0db8cca40",
+      "content_id": "d5d8920a-052f-4dba-8dfd-aa10a48e8d11",
+      "claim_id": "C115",
+      "claim": "Colocalization analysis of the causal GWAS variants with eQTLs was performed using fastENLOC.",
+      "claim_type": "EXPLICIT",
+      "source": "To better understand how cASE variants may impact traits related to cardiovascular health, we performed colocalization analysis of the causal GWAS variants with eQTLs using fastENLOC (Wen et al., 2017) by integration of fine-mapped eQTLs in the three artery tissues (see above section) and fine-mapped GWAS signals for CAD and hypertension.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in the Materials and methods section with supporting citation",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:24.731085Z"
+    },
+    {
+      "id": "0b5cb719-4457-458b-a8bd-7335029a41a0",
+      "content_id": "d5d8920a-052f-4dba-8dfd-aa10a48e8d11",
+      "claim_id": "C116",
+      "claim": "The R package INTACT was used to estimate the probability of putative causal genes by combining evidence from colocalization and TWAS.",
+      "claim_type": "EXPLICIT",
+      "source": "To overcome the limitations in a single approach, we combined the evidence from colocalization and TWAS to estimate the probability of putative causal genes using the R package INTACT (Okamoto et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in the Materials and methods section with supporting citation",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:24.731085Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "b9eee9d5-2676-4eed-b3be-899059a7abfe",
+      "content_id": "d5d8920a-052f-4dba-8dfd-aa10a48e8d11",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The study used BiT-STARR-Seq to measure allelic effects on gene regulation for 43,556 target regulatory regions in vascular endothelial cells treated with caffeine or water control. The library included eQTLs, centiSNPs, GWAS variants, and negative controls. Six replicates per condition were performed with an average sequencing depth of 39,235,611 reads per library.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C18 and C95-C106 provide comprehensive methodological details including library design, cell culture conditions, treatment protocols, and sequencing depth. The experimental design is well-documented with appropriate controls (water vehicle control) and sufficient replication (6 replicates per condition). The sequencing depth is adequate for MPRA experiments.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:18:24.731085Z"
+    },
+    {
+      "id": "93cdc002-6b2d-45bc-b407-0582fbf32425",
+      "content_id": "d5d8920a-052f-4dba-8dfd-aa10a48e8d11",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Caffeine treatment resulted in 772 significantly differentially active targets (546 upregulated, 226 downregulated; FDR < 10%), demonstrating that caffeine overall increases regulatory element activity in vascular endothelial cells. DESeq2 was used with a model correcting for allelic effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C20 and C86-C108 describe differential activity analysis with appropriate statistical methods (DESeq2) and a model that accounts for the strong allelic effect observed in the data. The conclusion that caffeine increases regulatory activity is supported by the observation that more targets are upregulated (546) than downregulated (226). The FDR threshold of 10% is reasonable for this type of analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:18:24.731085Z"
+    },
+    {
+      "id": "db0228ca-58b0-4e76-92c5-a82c2f7355c1",
+      "content_id": "d5d8920a-052f-4dba-8dfd-aa10a48e8d11",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Motif enrichment analysis identified NFAT transcription factors (NFATC1, NFATC4, NFATC2) as the most enriched motifs in differentially active targets, along with ZNF423, SREBF2, and TEAD4. These factors are linked to Ca2+/NFAT signaling, endothelial homeostasis, and cardiovascular disease pathways.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C35 and C87-C90 describe motif enrichment results using JASPAR database (C112) with appropriate statistical testing (test of proportions). The biological interpretation connecting NFAT factors to Ca2+/NFAT signaling and cardiovascular disease is well-supported by citations. The finding that caffeine increases Ca2+ in endothelial cells (C87) provides mechanistic support for NFAT enrichment.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:18:24.731085Z"
+    },
+    {
+      "id": "941453f6-adcc-447e-890b-a6e6f7a7a1f4",
+      "content_id": "d5d8920a-052f-4dba-8dfd-aa10a48e8d11",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "ASE analysis identified 689 SNP/direction pairs (665 SNPs) with significant allelic effects (FDR < 10%) using QuASAR-MPRA. Negative control sequences showed higher p-values as expected, validating that genetic variation within regulatory sequences can modulate gene expression in vascular endothelial cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C38 and C109-C110 describe ASE analysis using an appropriate statistical method (QuASAR-MPRA with beta-binomial model) that accounts for uneven initial allelic proportions. The validation using negative controls (C37) strengthens confidence in the results. The FDR threshold of 10% is reasonable, and the detection rate of 2.2% is consistent with expectations for regulatory variants.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:18:24.731085Z"
+    },
+    {
+      "id": "862912d0-a16b-4906-b522-3a5e4641553d",
+      "content_id": "d5d8920a-052f-4dba-8dfd-aa10a48e8d11",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "cASE analysis identified 6 SNP/direction pairs (6 SNPs) showing genotype-environment interactions (FDR < 5%) using the \u0394AST method. These cASE targets were enriched for caffeine response factor motifs as expected.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C40 and C111 describe cASE analysis using the \u0394AST method with appropriate statistical rigor (FDR < 5%). The enrichment of caffeine response factors in cASE targets (C40) provides validation of the approach. However, the small number of significant cASE variants (6) and the acknowledgment that this enrichment may be underestimated due to limited caffeine response factor motifs in the library suggests the analysis may be underpowered for detecting GxE effects.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:18:24.731085Z"
+    },
+    {
+      "id": "2cf53a48-b517-4b13-9bf2-24ae7dd322e2",
+      "content_id": "d5d8920a-052f-4dba-8dfd-aa10a48e8d11",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "ASE variants showed 2.4-fold enrichment in open chromatin regions (p<2.2e-16) and were 1.38 times more likely to be artery eQTLs (p=0.01). cASE variants showed more moderate enrichments (1.2-fold for open chromatin, p=0.088; 1.2 times for artery eQTLs, p=0.26).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C44 describe enrichment analyses using Fisher's exact test with appropriate statistical reporting. The strong enrichment of ASE variants in open chromatin and artery eQTLs validates the functional relevance of identified variants. The weaker enrichment for cASE variants is acknowledged and discussed as potentially reflecting differences between native chromatin context and reporter assay context, which is a reasonable interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:18:24.731085Z"
+    },
+    {
+      "id": "2149b1f5-9db7-433f-aaf2-7658d0f63094",
+      "content_id": "d5d8920a-052f-4dba-8dfd-aa10a48e8d11",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Motif enrichment analysis identified 44 motifs enriched in ASE targets and 18 motifs enriched in cASE targets, including cardiovascular-relevant factors NRF1, KLF15, KLF14, SREBF2, and caffeine response factors INSM1 and PLAG1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C52 describe motif enrichment in ASE and cASE targets using test of proportions. The identification of cardiovascular-relevant transcription factors (C47-C50) is supported by appropriate citations linking these factors to lipid metabolism and CVD. The finding that caffeine response factors INSM1 and PLAG1 are enriched (C51-C52) provides validation that genetic variation can modulate caffeine response through these factors.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:18:24.731085Z"
+    },
+    {
+      "id": "895e25bc-6b6d-4c69-90cb-ab01c05d0bbb",
+      "content_id": "d5d8920a-052f-4dba-8dfd-aa10a48e8d11",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Fine-mapping analysis using DAP-G identified 187 variants tested in the library, with 6 SNPs showing significant ASE and 2 SNPs showing significant cASE (p<0.0215). The cASE variants may represent hidden GxE in GTEx.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C56 and C113-C114 describe fine-mapping validation using DAP-G with appropriate methodology. The identification of 6 ASE variants validates the regulatory function of fine-mapped eQTLs. The interpretation that 2 cASE variants may represent hidden GxE in GTEx (C56) is speculative but reasonable given that GTEx does not account for environmental exposures like caffeine. However, the nominal p-value threshold (p<0.0215) for cASE is less stringent than the FDR threshold used elsewhere.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:18:24.731085Z"
+    },
+    {
+      "id": "b1f58aba-fe3a-414b-a97f-8889c2493420",
+      "content_id": "d5d8920a-052f-4dba-8dfd-aa10a48e8d11",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Integration of cASE results with INTACT analysis (combining colocalization and TWAS) identified 8 cASE variants regulating genes associated with CAD and hypertension (<10% FDR for INTACT, p<0.0215 for cASE).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57, C115-C116 describe integration of multiple analytical approaches (fastENLOC for colocalization, INTACT for combining colocalization and TWAS) to identify disease-relevant cASE variants. The use of INTACT addresses limitations of individual approaches. However, the mixed significance thresholds (FDR for INTACT, nominal p-value for cASE) and the small number of variants identified (8) suggest this analysis may be exploratory rather than definitive.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:18:24.731085Z"
+    },
+    {
+      "id": "777d8f67-8084-429a-b89e-ebdb47bd1bfe",
+      "content_id": "d5d8920a-052f-4dba-8dfd-aa10a48e8d11",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "rs4938344 regulates lncRNA AP000892.6 expression through modulation of GABP and ETV1 binding. The reference allele (G) results in decreased AP000892.6 expression in caffeine conditions, associated with increased risk for CAD and hypertension. Caffeine induces GABP and ETV1 expression, which preferentially bind the reference allele, leading to lower AP000892.6 expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C67 present a detailed mechanistic model integrating multiple lines of evidence: GTEx eQTL data (C58-C59), INTACT disease association (C60), CentiSNP predictions (C61), transcription factor expression data (C63), and BiT-STARR-Seq results (C64). The proposed mechanism (C65) is well-supported by converging evidence. The connection to atherosclerosis through AP000892.6 interaction with RB1CC1 (C66-C67) provides additional biological plausibility. However, the mechanism remains correlative and would benefit from direct experimental validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:18:24.731085Z"
+    },
+    {
+      "id": "3cf7fe2d-ba94-4503-96a9-4aa0124d30eb",
+      "content_id": "d5d8920a-052f-4dba-8dfd-aa10a48e8d11",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "rs4527034 regulates KAT8 expression through modulation of TERF2IP binding. The reference allele (A) results in decreased KAT8 expression in control conditions, associated with reduced hypertension risk. Caffeine upregulates TERF2IP, leading to increased binding and lower KAT8 expression independently of genotype, with an expected protective effect on hypertension.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C77 present a mechanistic model similar to rs4938344, integrating GTEx eQTL data (C68-C69), INTACT disease association (C70), CentiSNP predictions (C71), transcription factor expression (C72), and BiT-STARR-Seq results. The proposed mechanisms (C73-C74) are supported by converging evidence. The connection to atherosclerosis through KAT8's role in histone acetylation (C76-C77) and TERF2IP's effect on plaque formation (C75) provides biological plausibility. However, the protective effect of caffeine (C74) is speculative and requires experimental validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:18:24.731085Z"
+    },
+    {
+      "id": "834bbb50-0065-48a5-9d5f-dfd1cf0398ef",
+      "content_id": "d5d8920a-052f-4dba-8dfd-aa10a48e8d11",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Background context establishes that caffeine is widely consumed and produces vascular responses, endothelial dysfunction leads to CAD, and previous studies on caffeine's role in CVD have shown conflicting results. Prior work demonstrated that caffeine can induce changes in gene regulation in endothelial cells and that SNPs in caffeine response factor binding sites are enriched for artery eQTLs colocalized with CAD risk variants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C14 and C78-C83 provide background context supported by appropriate citations. The conflicting results from epidemiological studies (C7-C12) motivate the need for molecular studies. The prior work by Findley et al., 2019 (C13-C14) provides the foundation for the current study's approach. All background claims are well-supported by citations to relevant literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:18:24.731085Z"
+    },
+    {
+      "id": "15bf4fa3-908b-4fd0-8b80-f117e091a26b",
+      "content_id": "d5d8920a-052f-4dba-8dfd-aa10a48e8d11",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "BiT-STARR-Seq offers advantages over response eQTL mapping by allowing direct allelic comparison without large cohorts, but does not interrogate SNPs in native chromatin context. Numerous noncoding CAD risk variants from GWAS remain uncharacterized, and GxE-eQTLs can modulate complex disease risk. Context-aware MPRAs can dissect molecular mechanisms underlying cardiovascular health.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C84-C85 and C91-C94 provide methodological context and rationale for the study approach. The advantages and limitations of BiT-STARR-Seq are clearly stated (C84-C85). The knowledge gap regarding uncharacterized noncoding variants (C91-C92) and the potential for GxE to modulate disease risk (C93) are well-supported by citations. The conclusion that context-aware MPRAs can dissect mechanisms (C94) is supported by the study's results but represents an inference from the data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:18:24.731085Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "899787e6-730e-43ea-ac32-ad3b40dcc25a",
+      "result_id": "b9eee9d5-2676-4eed-b3be-899059a7abfe"
+    },
+    {
+      "claim_id": "bdca65c9-c727-4682-925c-cffcf52c6080",
+      "result_id": "b9eee9d5-2676-4eed-b3be-899059a7abfe"
+    },
+    {
+      "claim_id": "aec15eed-2c7c-4952-88cb-2f250cab8852",
+      "result_id": "b9eee9d5-2676-4eed-b3be-899059a7abfe"
+    },
+    {
+      "claim_id": "c3e2ff9b-977b-498d-b593-2e70626dadd5",
+      "result_id": "b9eee9d5-2676-4eed-b3be-899059a7abfe"
+    },
+    {
+      "claim_id": "07de12fc-4760-49e6-a076-5b827e66258d",
+      "result_id": "b9eee9d5-2676-4eed-b3be-899059a7abfe"
+    },
+    {
+      "claim_id": "bc0bf1aa-1210-4211-8072-ee262624c41c",
+      "result_id": "b9eee9d5-2676-4eed-b3be-899059a7abfe"
+    },
+    {
+      "claim_id": "e2fbf5d3-7233-4283-975a-5d12f7673823",
+      "result_id": "b9eee9d5-2676-4eed-b3be-899059a7abfe"
+    },
+    {
+      "claim_id": "1df7e119-115a-4679-9832-e2068625c20b",
+      "result_id": "b9eee9d5-2676-4eed-b3be-899059a7abfe"
+    },
+    {
+      "claim_id": "7fd70f71-59ce-4d83-8e64-10708210924b",
+      "result_id": "b9eee9d5-2676-4eed-b3be-899059a7abfe"
+    },
+    {
+      "claim_id": "973c6572-3da8-4211-bf80-a704512b4268",
+      "result_id": "b9eee9d5-2676-4eed-b3be-899059a7abfe"
+    },
+    {
+      "claim_id": "1ae54a5b-bfd4-4a7d-a84d-a9a0768feced",
+      "result_id": "b9eee9d5-2676-4eed-b3be-899059a7abfe"
+    },
+    {
+      "claim_id": "ad91f409-919a-4b9e-9f3d-fb92ba1ddb2d",
+      "result_id": "b9eee9d5-2676-4eed-b3be-899059a7abfe"
+    },
+    {
+      "claim_id": "2bfc352b-7d2f-4912-a2a4-ae70bfdc6b0e",
+      "result_id": "b9eee9d5-2676-4eed-b3be-899059a7abfe"
+    },
+    {
+      "claim_id": "ec4e9599-1dbe-4b5e-bf79-49c04c245fe1",
+      "result_id": "b9eee9d5-2676-4eed-b3be-899059a7abfe"
+    },
+    {
+      "claim_id": "df837cf2-8dee-42d7-b3bf-5124fabe13ef",
+      "result_id": "b9eee9d5-2676-4eed-b3be-899059a7abfe"
+    },
+    {
+      "claim_id": "8c52c146-c4b7-4e19-8ce9-668a65c4948a",
+      "result_id": "b9eee9d5-2676-4eed-b3be-899059a7abfe"
+    },
+    {
+      "claim_id": "b52110b9-7913-403c-86ec-f53f7e2029cc",
+      "result_id": "93cdc002-6b2d-45bc-b407-0582fbf32425"
+    },
+    {
+      "claim_id": "df3b6b39-f41c-4a51-96ab-401c05d23526",
+      "result_id": "93cdc002-6b2d-45bc-b407-0582fbf32425"
+    },
+    {
+      "claim_id": "4779b3e6-c56c-45a2-8f27-230bca773b37",
+      "result_id": "93cdc002-6b2d-45bc-b407-0582fbf32425"
+    },
+    {
+      "claim_id": "b07d496a-f202-4ff9-b1be-4a8a7767c959",
+      "result_id": "93cdc002-6b2d-45bc-b407-0582fbf32425"
+    },
+    {
+      "claim_id": "017a54ce-d4d2-4172-99fa-67fe7814ac44",
+      "result_id": "93cdc002-6b2d-45bc-b407-0582fbf32425"
+    },
+    {
+      "claim_id": "28e38843-9d3c-485f-9255-587fa36dec02",
+      "result_id": "db0228ca-58b0-4e76-92c5-a82c2f7355c1"
+    },
+    {
+      "claim_id": "c690d204-586c-4d3a-89cb-0845036a85cc",
+      "result_id": "db0228ca-58b0-4e76-92c5-a82c2f7355c1"
+    },
+    {
+      "claim_id": "45145b53-1f8d-4fc3-8b44-f6ab0b1d02be",
+      "result_id": "db0228ca-58b0-4e76-92c5-a82c2f7355c1"
+    },
+    {
+      "claim_id": "1bcaa74d-7da1-4a4c-a137-51610c8cba11",
+      "result_id": "db0228ca-58b0-4e76-92c5-a82c2f7355c1"
+    },
+    {
+      "claim_id": "585886d5-72ab-4958-aa28-abdb4bc4b69f",
+      "result_id": "db0228ca-58b0-4e76-92c5-a82c2f7355c1"
+    },
+    {
+      "claim_id": "8bcaacd2-bae6-4b5b-829b-cccd4d2e72dc",
+      "result_id": "db0228ca-58b0-4e76-92c5-a82c2f7355c1"
+    },
+    {
+      "claim_id": "220eb8c4-99b2-4282-a661-ddfa633ad129",
+      "result_id": "db0228ca-58b0-4e76-92c5-a82c2f7355c1"
+    },
+    {
+      "claim_id": "ef2ee9d6-3707-4b06-98d1-a06e119d3980",
+      "result_id": "db0228ca-58b0-4e76-92c5-a82c2f7355c1"
+    },
+    {
+      "claim_id": "f460a43e-c848-493c-8c6d-e73ee5c4f21b",
+      "result_id": "db0228ca-58b0-4e76-92c5-a82c2f7355c1"
+    },
+    {
+      "claim_id": "00da4114-16f0-425b-bc04-69030f2d323c",
+      "result_id": "db0228ca-58b0-4e76-92c5-a82c2f7355c1"
+    },
+    {
+      "claim_id": "a27173dc-46d4-4204-bf72-6ce891d9ad9e",
+      "result_id": "db0228ca-58b0-4e76-92c5-a82c2f7355c1"
+    },
+    {
+      "claim_id": "472b40c7-07c9-4ae5-87d1-b041ae86da5e",
+      "result_id": "db0228ca-58b0-4e76-92c5-a82c2f7355c1"
+    },
+    {
+      "claim_id": "322c01f5-c897-430a-9d8e-01edb3296c5e",
+      "result_id": "db0228ca-58b0-4e76-92c5-a82c2f7355c1"
+    },
+    {
+      "claim_id": "4e5084fe-1691-41e3-880a-50f62844edb0",
+      "result_id": "db0228ca-58b0-4e76-92c5-a82c2f7355c1"
+    },
+    {
+      "claim_id": "5e2a6fcb-3f87-4a10-9b56-e8ba410cf781",
+      "result_id": "db0228ca-58b0-4e76-92c5-a82c2f7355c1"
+    },
+    {
+      "claim_id": "728795ff-fb7d-470a-9159-9ff7b1732e23",
+      "result_id": "db0228ca-58b0-4e76-92c5-a82c2f7355c1"
+    },
+    {
+      "claim_id": "f77fef98-e47d-4d65-81b5-c1d1e0dd1717",
+      "result_id": "db0228ca-58b0-4e76-92c5-a82c2f7355c1"
+    },
+    {
+      "claim_id": "8f408c20-f53c-4c05-8dd9-92848a863655",
+      "result_id": "db0228ca-58b0-4e76-92c5-a82c2f7355c1"
+    },
+    {
+      "claim_id": "002c6598-2755-48d5-96b7-64593a0eeffa",
+      "result_id": "db0228ca-58b0-4e76-92c5-a82c2f7355c1"
+    },
+    {
+      "claim_id": "f3786808-2c5c-42d1-8aa5-4151168f7f1f",
+      "result_id": "db0228ca-58b0-4e76-92c5-a82c2f7355c1"
+    },
+    {
+      "claim_id": "63f29ff1-0456-4d6f-aad3-419708e6491b",
+      "result_id": "941453f6-adcc-447e-890b-a6e6f7a7a1f4"
+    },
+    {
+      "claim_id": "735bfb3e-0b3a-4da8-951b-fe6e3e135abe",
+      "result_id": "941453f6-adcc-447e-890b-a6e6f7a7a1f4"
+    },
+    {
+      "claim_id": "1a2bd40a-8150-40a5-8183-87f6087849e0",
+      "result_id": "941453f6-adcc-447e-890b-a6e6f7a7a1f4"
+    },
+    {
+      "claim_id": "0121ae39-21a2-4508-a442-7efeeaee6ec0",
+      "result_id": "941453f6-adcc-447e-890b-a6e6f7a7a1f4"
+    },
+    {
+      "claim_id": "d73a26c0-decc-4a2e-ad2d-3c9aa28bdeff",
+      "result_id": "941453f6-adcc-447e-890b-a6e6f7a7a1f4"
+    },
+    {
+      "claim_id": "9a9f0391-f39f-4659-a604-f2b9b07aed13",
+      "result_id": "862912d0-a16b-4906-b522-3a5e4641553d"
+    },
+    {
+      "claim_id": "c9cc529e-e422-43e3-8640-c951a7b5af17",
+      "result_id": "862912d0-a16b-4906-b522-3a5e4641553d"
+    },
+    {
+      "claim_id": "a51411f0-3ca2-4f85-919e-b05d913e8445",
+      "result_id": "862912d0-a16b-4906-b522-3a5e4641553d"
+    },
+    {
+      "claim_id": "fbfbaa5a-b51c-472e-a99b-614567da1c65",
+      "result_id": "2cf53a48-b517-4b13-9bf2-24ae7dd322e2"
+    },
+    {
+      "claim_id": "4697f8da-7759-45ae-8a58-c6967f7085bd",
+      "result_id": "2cf53a48-b517-4b13-9bf2-24ae7dd322e2"
+    },
+    {
+      "claim_id": "d9c4b580-4bbf-4ec6-b234-750e2e6699c5",
+      "result_id": "2cf53a48-b517-4b13-9bf2-24ae7dd322e2"
+    },
+    {
+      "claim_id": "78f5721e-475d-438e-8099-e1d3fd469463",
+      "result_id": "2cf53a48-b517-4b13-9bf2-24ae7dd322e2"
+    },
+    {
+      "claim_id": "7b8b0838-6f70-46ef-92d8-2bd9a06e1ef1",
+      "result_id": "2149b1f5-9db7-433f-aaf2-7658d0f63094"
+    },
+    {
+      "claim_id": "6b050700-92a2-493e-8f3a-cbdf7edd9f16",
+      "result_id": "2149b1f5-9db7-433f-aaf2-7658d0f63094"
+    },
+    {
+      "claim_id": "0ba4c4f4-3c10-4749-bf9b-9d28ea7db2dc",
+      "result_id": "2149b1f5-9db7-433f-aaf2-7658d0f63094"
+    },
+    {
+      "claim_id": "668681b2-6467-4b34-a526-766395726780",
+      "result_id": "2149b1f5-9db7-433f-aaf2-7658d0f63094"
+    },
+    {
+      "claim_id": "41b9b30c-cef0-464d-82b8-5fea38c9ee82",
+      "result_id": "2149b1f5-9db7-433f-aaf2-7658d0f63094"
+    },
+    {
+      "claim_id": "398c1bc5-51c2-44e3-9c5e-b6172e9237ce",
+      "result_id": "2149b1f5-9db7-433f-aaf2-7658d0f63094"
+    },
+    {
+      "claim_id": "088dcef4-d998-4d56-b19f-588cc5dbeead",
+      "result_id": "2149b1f5-9db7-433f-aaf2-7658d0f63094"
+    },
+    {
+      "claim_id": "5b25dac1-590e-4f28-941e-a69503636fde",
+      "result_id": "2149b1f5-9db7-433f-aaf2-7658d0f63094"
+    },
+    {
+      "claim_id": "e215b6b6-1a8e-43b3-bb7e-372b62be5cf6",
+      "result_id": "895e25bc-6b6d-4c69-90cb-ab01c05d0bbb"
+    },
+    {
+      "claim_id": "9a6bae6e-584c-47c3-bf6f-7d47d825e19a",
+      "result_id": "895e25bc-6b6d-4c69-90cb-ab01c05d0bbb"
+    },
+    {
+      "claim_id": "fd4ccd55-d0f5-4a5b-ba93-970eb57e9707",
+      "result_id": "895e25bc-6b6d-4c69-90cb-ab01c05d0bbb"
+    },
+    {
+      "claim_id": "3b909ec3-0915-4e4a-9c60-2785ec6c3661",
+      "result_id": "895e25bc-6b6d-4c69-90cb-ab01c05d0bbb"
+    },
+    {
+      "claim_id": "7da2c7be-2c5f-426a-a1e0-9f4bd396990a",
+      "result_id": "895e25bc-6b6d-4c69-90cb-ab01c05d0bbb"
+    },
+    {
+      "claim_id": "84d26454-b06d-4dff-9b79-398ff35f9fed",
+      "result_id": "895e25bc-6b6d-4c69-90cb-ab01c05d0bbb"
+    },
+    {
+      "claim_id": "178c8a52-9e92-44b2-81d1-bb211d5c2ea9",
+      "result_id": "b1f58aba-fe3a-414b-a97f-8889c2493420"
+    },
+    {
+      "claim_id": "74179880-659b-443a-ab79-6aa0db8cca40",
+      "result_id": "b1f58aba-fe3a-414b-a97f-8889c2493420"
+    },
+    {
+      "claim_id": "0b5cb719-4457-458b-a8bd-7335029a41a0",
+      "result_id": "b1f58aba-fe3a-414b-a97f-8889c2493420"
+    },
+    {
+      "claim_id": "dc06cedd-592a-4f19-92f7-b43305494333",
+      "result_id": "777d8f67-8084-429a-b89e-ebdb47bd1bfe"
+    },
+    {
+      "claim_id": "55dcbcc3-ecbe-4b76-89d8-9337d3217db2",
+      "result_id": "777d8f67-8084-429a-b89e-ebdb47bd1bfe"
+    },
+    {
+      "claim_id": "48a55dab-253d-43c3-9aef-e0f2850c9ef7",
+      "result_id": "777d8f67-8084-429a-b89e-ebdb47bd1bfe"
+    },
+    {
+      "claim_id": "f266406f-fbc2-48d2-bda3-fec5c2635f01",
+      "result_id": "777d8f67-8084-429a-b89e-ebdb47bd1bfe"
+    },
+    {
+      "claim_id": "f3430c85-9b34-41cc-bb6e-66278967ff08",
+      "result_id": "777d8f67-8084-429a-b89e-ebdb47bd1bfe"
+    },
+    {
+      "claim_id": "a1b6641f-24e5-4698-bc2d-f703cb457fed",
+      "result_id": "777d8f67-8084-429a-b89e-ebdb47bd1bfe"
+    },
+    {
+      "claim_id": "06d06b89-3099-4d2d-a004-bb9e891a5de2",
+      "result_id": "777d8f67-8084-429a-b89e-ebdb47bd1bfe"
+    },
+    {
+      "claim_id": "7fb40a7e-2e5c-4315-b873-fadde62b0730",
+      "result_id": "777d8f67-8084-429a-b89e-ebdb47bd1bfe"
+    },
+    {
+      "claim_id": "30518969-6548-4acd-a9af-50155530d583",
+      "result_id": "777d8f67-8084-429a-b89e-ebdb47bd1bfe"
+    },
+    {
+      "claim_id": "4ef65339-7fba-4985-acf9-bfdbb8fb482d",
+      "result_id": "777d8f67-8084-429a-b89e-ebdb47bd1bfe"
+    },
+    {
+      "claim_id": "cf643e4e-dc2a-4bbc-aaeb-e7ee60cc26ad",
+      "result_id": "3cf7fe2d-ba94-4503-96a9-4aa0124d30eb"
+    },
+    {
+      "claim_id": "7f2eae57-e9f5-46c6-b18d-83cb4c6acdb1",
+      "result_id": "3cf7fe2d-ba94-4503-96a9-4aa0124d30eb"
+    },
+    {
+      "claim_id": "b082cf3b-848a-471c-a1af-13c2ce45ea86",
+      "result_id": "3cf7fe2d-ba94-4503-96a9-4aa0124d30eb"
+    },
+    {
+      "claim_id": "694e3c2a-4e9b-4070-856f-9ebb548513e0",
+      "result_id": "3cf7fe2d-ba94-4503-96a9-4aa0124d30eb"
+    },
+    {
+      "claim_id": "f9e0f8cf-8b5e-4116-aaf0-1b9a5640c208",
+      "result_id": "3cf7fe2d-ba94-4503-96a9-4aa0124d30eb"
+    },
+    {
+      "claim_id": "8e739728-74c8-4776-af2a-066386246fe1",
+      "result_id": "3cf7fe2d-ba94-4503-96a9-4aa0124d30eb"
+    },
+    {
+      "claim_id": "1669c409-7afd-44c2-a2c9-d5e24f0d2bb9",
+      "result_id": "3cf7fe2d-ba94-4503-96a9-4aa0124d30eb"
+    },
+    {
+      "claim_id": "57050380-68b3-48cc-84eb-14f579141990",
+      "result_id": "3cf7fe2d-ba94-4503-96a9-4aa0124d30eb"
+    },
+    {
+      "claim_id": "ac42e133-b0f8-472d-a719-1824f4aae51f",
+      "result_id": "3cf7fe2d-ba94-4503-96a9-4aa0124d30eb"
+    },
+    {
+      "claim_id": "ba01847e-24c9-43f6-9386-a7a5ccfb8689",
+      "result_id": "3cf7fe2d-ba94-4503-96a9-4aa0124d30eb"
+    },
+    {
+      "claim_id": "9e28fdaa-ab3d-414a-9d74-94685fadef58",
+      "result_id": "834bbb50-0065-48a5-9d5f-dfd1cf0398ef"
+    },
+    {
+      "claim_id": "04294fe9-d92e-422e-a8c5-4cae9679498c",
+      "result_id": "834bbb50-0065-48a5-9d5f-dfd1cf0398ef"
+    },
+    {
+      "claim_id": "a7fcef40-553f-4bad-8eb9-82e334759a9a",
+      "result_id": "834bbb50-0065-48a5-9d5f-dfd1cf0398ef"
+    },
+    {
+      "claim_id": "714edefb-25b7-4aaa-a9f8-c90df7a51393",
+      "result_id": "834bbb50-0065-48a5-9d5f-dfd1cf0398ef"
+    },
+    {
+      "claim_id": "bd51c7d9-a3f1-4677-848f-ec54dfde9917",
+      "result_id": "834bbb50-0065-48a5-9d5f-dfd1cf0398ef"
+    },
+    {
+      "claim_id": "09113359-d7bf-487d-bfac-00ea03852390",
+      "result_id": "834bbb50-0065-48a5-9d5f-dfd1cf0398ef"
+    },
+    {
+      "claim_id": "35e00742-d4ed-478c-98d3-63a508500865",
+      "result_id": "834bbb50-0065-48a5-9d5f-dfd1cf0398ef"
+    },
+    {
+      "claim_id": "cbd0d039-8806-4e94-b767-12a916f13bf6",
+      "result_id": "834bbb50-0065-48a5-9d5f-dfd1cf0398ef"
+    },
+    {
+      "claim_id": "00516bcd-4ae1-472d-80fc-de6ce2606ceb",
+      "result_id": "834bbb50-0065-48a5-9d5f-dfd1cf0398ef"
+    },
+    {
+      "claim_id": "542a0715-b0e2-4840-9057-0c829165e711",
+      "result_id": "834bbb50-0065-48a5-9d5f-dfd1cf0398ef"
+    },
+    {
+      "claim_id": "062a0a1e-ecef-4dfa-bd52-bd28c2af7e2f",
+      "result_id": "834bbb50-0065-48a5-9d5f-dfd1cf0398ef"
+    },
+    {
+      "claim_id": "1ee8aa7d-29f3-49a8-ae72-98effe7ebe39",
+      "result_id": "834bbb50-0065-48a5-9d5f-dfd1cf0398ef"
+    },
+    {
+      "claim_id": "bc8a9358-ecef-4399-9dc2-0c34992ff9b4",
+      "result_id": "834bbb50-0065-48a5-9d5f-dfd1cf0398ef"
+    },
+    {
+      "claim_id": "8e83dbd9-1a46-4890-ace7-6fd4d502b7e0",
+      "result_id": "834bbb50-0065-48a5-9d5f-dfd1cf0398ef"
+    },
+    {
+      "claim_id": "f596f0b6-7b72-4fa4-93d9-8cfbdcd95f5a",
+      "result_id": "834bbb50-0065-48a5-9d5f-dfd1cf0398ef"
+    },
+    {
+      "claim_id": "85c1a9bc-1a9f-4d0d-87a6-fbe7116b1588",
+      "result_id": "834bbb50-0065-48a5-9d5f-dfd1cf0398ef"
+    },
+    {
+      "claim_id": "fefc73da-d355-45d6-ab48-d6e7ced3d514",
+      "result_id": "834bbb50-0065-48a5-9d5f-dfd1cf0398ef"
+    },
+    {
+      "claim_id": "9d566e10-fdec-4e62-8926-db01e306224d",
+      "result_id": "834bbb50-0065-48a5-9d5f-dfd1cf0398ef"
+    },
+    {
+      "claim_id": "99ed8151-f167-451e-a9f8-c4b0b0721736",
+      "result_id": "834bbb50-0065-48a5-9d5f-dfd1cf0398ef"
+    },
+    {
+      "claim_id": "7687d2a3-4fad-4cd6-8833-0335d7b52548",
+      "result_id": "834bbb50-0065-48a5-9d5f-dfd1cf0398ef"
+    },
+    {
+      "claim_id": "18b535e7-fbdb-4487-8740-90602d3d3941",
+      "result_id": "15bf4fa3-908b-4fd0-8b80-f117e091a26b"
+    },
+    {
+      "claim_id": "5727e9c0-a369-4d8b-bc1c-a772859b1b0e",
+      "result_id": "15bf4fa3-908b-4fd0-8b80-f117e091a26b"
+    },
+    {
+      "claim_id": "89f26289-a68c-4be9-a2c7-1c730090c9eb",
+      "result_id": "15bf4fa3-908b-4fd0-8b80-f117e091a26b"
+    },
+    {
+      "claim_id": "24e9ecb1-d4c8-4bbb-9d62-dea029808888",
+      "result_id": "15bf4fa3-908b-4fd0-8b80-f117e091a26b"
+    },
+    {
+      "claim_id": "f359ff34-8353-44ad-9cf5-def2f2aac182",
+      "result_id": "15bf4fa3-908b-4fd0-8b80-f117e091a26b"
+    },
+    {
+      "claim_id": "8bd0a63f-45ad-41ef-a76b-86b4858d4290",
+      "result_id": "15bf4fa3-908b-4fd0-8b80-f117e091a26b"
+    }
+  ],
+  "comparisons": []
+}

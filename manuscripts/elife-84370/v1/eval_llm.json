@@ -1,0 +1,284 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C59"
+    ],
+    "result": "The four investigated fruits (blackcurrant, cherry, cranberry, and strawberry) are biochemically dissimilar from each other. PCA analysis shows that blackcurrant is discriminated on the first dimension (35% variance), cherry on the second dimension (28% variance), and cranberry and strawberry on the third dimension (25% variance). Qualitative data alone enabled perfect discrimination between fruits with several hundred diagnostic ions for each fruit. Taxonomic classification was not predictive of chemical proximity between fruits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C18 and C59 collectively demonstrate that the four fruits are biochemically distinct using multiple lines of evidence: PCA analysis showing clear separation along different dimensions, qualitative presence/absence data enabling perfect discrimination, and hierarchical clustering showing that phylogenetic relationships do not predict chemical similarity. The data are internally consistent and support the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C19"
+    ],
+    "result": "There was no correlation between ion quantities in fruits and flies that consumed them (all Kendall's \u03c4<0.2), indicating absence of direct contamination of fly samples by fruit material.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C19 is supported by correlation analysis showing weak correlations (\u03c4<0.2) between fruit and fly ion quantities. This control analysis is important for validating that detected ions in flies result from metabolism rather than contamination, though the threshold for 'no correlation' could be more rigorously justified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Analysis of ion intersections shows that most ions are shared between large groups of fruits and flies. The largest intersection includes 3,691 ions (32%) shared by all fruits and flies. The second largest comprises 1,103 ions (10%) shared among all flies but absent in fruits. Ions unique to flies raised on a particular diet are rare (0-7 ions), and ions distinctive of particular fruit-fly pairs are seldom (7-69 ions).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C25 present quantitative intersection analysis data that are internally consistent and support the metabolic generalism hypothesis. The pattern of large high-degree intersections and rare low-degree intersections is clearly documented. However, the biological interpretation depends on the threshold used to define ion presence (>1000 peak area), which could affect these counts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Intersection degree analysis reveals that 48.6% of fruit ions are common to all fruits, while 76.3% of fly ions are common to all flies regardless of diet. Notably, 92% of ions present in flies but not in any fruit (de novo metabolites) are common to all flies. Additionally, 39.4% of ions unique to a given fruit are found in all flies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C29 provide quantitative intersection degree analysis that demonstrates flies show greater metabolic convergence than fruits. The data are clearly reported and support the metabolic generalism hypothesis. The finding that most de novo fly metabolites are shared across diets is particularly compelling evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C30",
+      "C31"
+    ],
+    "result": "PCA analysis of the complete dataset shows that all fly samples cluster together and away from fruits, regardless of their diet. The metabolomes of flies fed on different fruits are mostly identical from a qualitative standpoint, supporting metabolic generalism over multi-host metabolic specialism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C31 are supported by PCA analysis showing clear clustering of all flies separate from fruits. This provides strong visual and quantitative evidence for metabolic generalism. The conclusion is consistent with the intersection analyses (C20-C29) and represents a key finding of the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "PCA analysis focusing on fly data demonstrates that flies' diets can be readily inferred from their metabolomes. The first dimension (20% variance) discriminates between biological replicates, while the second and third dimensions (18.3% and 10.5% variance) discriminate fly metabolomes according to their diet.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C34 are supported by PCA analysis of the fly dataset. The finding that diet can be discriminated despite overall qualitative similarity is important for understanding the quantitative plasticity of the metabolic response. However, the relatively modest variance explained by diet-discriminating dimensions (18.3% and 10.5%) should be noted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Elastic Net modeling identified diet-specific ions in flies that enabled perfect classification (>98% deviance explained). The 'large' list identified 169, 103, 121, and 40 ions for blackcurrant, cherry, cranberry, and strawberry diets respectively. These ions were significantly more abundant in flies of the corresponding diet. Few diet-specific ions were produced de novo (0-5%). Quantitative levels are critical for classification: ~300 ions using quantitative data achieve 75% accuracy, while ~1000 ions using qualitative data achieve similar performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C40 present comprehensive statistical modeling results that are internally consistent. The Elastic Net approach is appropriate for high-dimensional data. The finding that quantitative data are more informative than qualitative data for diet discrimination is well-supported. However, the 'perfect classification' claim should be interpreted cautiously as it may reflect overfitting given the small sample size relative to features.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Manual curation and mass spectra analysis identified 71 metabolites, with 26 confirmed using commercial standards. Identified metabolites belonged to major plant metabolite families including anthocyanins, flavonoids, organic and hydroxycinnamic acids, and terpenes. Many identified metabolites had been previously detected in the same fruits in published literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C43 describe metabolite identification results that are appropriately validated through multiple approaches: MS/MS analysis, comparison with standards (for 26 compounds), and literature confirmation. The identification confidence levels following Schymanski et al. 2014 guidelines add rigor. However, only 71 of 11,470 ions were identified, limiting mechanistic interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Quantification of identified metabolites shows differential accumulation patterns: major fruit metabolites like anthocyanins were detected in flies with relatively low abundance (fly/fruit ratio 0.01-0.001), while less abundant fruit metabolites like terpenes were relatively abundant in flies (fly/fruit ratio >0.5). This demonstrates that only some fruit metabolites are metabolized or excreted, while others accumulate in flies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C46 present quantitative metabolite data showing differential metabolic fates of different compound classes. The data support the conclusion that flies passively accumulate some metabolites while metabolizing others. However, the interpretation is limited by the small number of identified compounds (71) and lack of direct measurement of excretion or metabolism rates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Specific metabolites characteristic of each fruit were found accumulated in corresponding flies: organic acids (malic, quinic, citric) showed fruit-specific balances; anthocyanins (pelargonidin in strawberry, cyanidin derivatives in cherry and cranberry) were elevated in corresponding flies; terpenoids (linalool derivatives in blackcurrant, nerolidol in strawberry) discriminated flies by diet; hippuric acid, a metabolite produced by gut microbiome from phenolic compounds, was elevated in all flies, particularly cranberry-fed flies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C53 describe specific metabolite patterns that are well-supported by the data and consistent with published literature on fruit composition. The identification of hippuric acid as a metabolite of microbial origin provides evidence of some metabolic processing. These findings support both the passive accumulation hypothesis and demonstrate some active metabolism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C54",
+      "C55"
+    ],
+    "result": "Both cherry puree and cherry-fed flies contained amygdalin, a cyanogenic glucoside. Despite the known toxicity of cyanogenic glucosides, cherry has been identified as an excellent host for D. suzukii in oviposition preference and larval performance experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C55 are supported by metabolite identification data and citation to published performance experiments. This finding suggests D. suzukii can tolerate certain toxic compounds, though the mechanism of tolerance is not investigated. The apparent contradiction between toxin presence and good performance is noted but not fully explained.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C3",
+      "C57",
+      "C60",
+      "C62",
+      "C63"
+    ],
+    "result": "Consumption of biochemically dissimilar diets resulted in a canalized, generic qualitative response from generalist individuals, consistent with metabolic generalism. Individuals showed a remarkably fixed qualitative chemical response to diet, but the physiological response was plastic when relative metabolite amounts were considered. This simultaneous observation of a single general qualitative response and diverse quantitative responses is coherent with the metabolic generalism hypothesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C57, C60, C62, and C63 synthesize the major findings into a coherent interpretation supporting metabolic generalism. The evidence from intersection analyses, PCA, and metabolite identification consistently supports this conclusion. The distinction between qualitative similarity and quantitative plasticity is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C4",
+      "C58",
+      "C64"
+    ],
+    "result": "Many diet-specific metabolites, particularly secondary metabolites relating to fruit flavor (flavonoids), color (anthocyanins), and scent (terpenoids), were not metabolized and rather accumulated in consumer individuals. Very few de novo diet-specific metabolites were produced. This tolerant reaction leads to passive accumulation of diet-specific metabolites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C58, and C64 are well-supported by the metabolite identification and quantification data showing accumulation of specific compound classes. The finding that few de novo diet-specific metabolites are produced (C38) strengthens this conclusion. However, the claim that accumulation is 'probably detrimental to fitness' (C4) is speculative and not directly tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C5",
+      "C61"
+    ],
+    "result": "While individuals were mostly similar across diets from a qualitative standpoint, different diets had a significant impact on the quantity of ions, resulting in straightforward identification of insects' diets based on their metabolome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5 and C61 are supported by the PCA and Elastic Net analyses showing both overall similarity and diet discriminability. This apparent paradox is resolved by distinguishing qualitative (presence/absence) from quantitative (abundance) differences, which is a key insight of the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C6",
+      "C65"
+    ],
+    "result": "Dietary generalism may emerge from a passive, opportunistic use of various resources, stemming from reduced attention to hosts' biochemical peculiarities and a neutral, passive stance towards potential hosts, contrary to more widespread views of an active role of adaptation in this process.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C6 and C65 represent speculative interpretations of the data. While the evidence for passive accumulation and metabolic generalism is strong, the evolutionary mechanism ('reduced attention,' 'neutral stance') is inferred rather than directly tested. Alternative explanations (e.g., broad-spectrum detoxification) are not rigorously excluded. This interpretation requires additional evolutionary or comparative studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "The passive accumulation of terpenoids in blackcurrant-fed flies indicates D. suzukii may not have evolved efficient monoterpene metabolization pathways. A blackcurrant diet causes relatively high larval mortality and population extinction in a couple of generations. However, metabolic generalism may not exclude some adaptations to cope with specific classes of toxic compounds like cyanogenic glucosides.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C68 are supported by the terpenoid accumulation data (C66) and citations to published fitness studies (C67). The interpretation that lack of metabolism indicates lack of evolved pathways is reasonable but not definitively proven. The suggestion that some specific adaptations may exist (C68) is appropriately cautious and supported by the amygdalin tolerance observation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Passive accumulation of plant metabolites may provide benefits (e.g., flavonoid accumulation increases fitness in some species) and may be facilitated by plant domestication. Domestication of fruit crops has selected for traits like anthocyanin content while potentially reducing plant defenses, creating opportunities for diet generalism. Biochemical changes induced by domestication are expected to lead to increased diet generalism and increased levels of non-lethal plant secondary metabolites in herbivores.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C69-C75 present speculative hypotheses about the role of plant domestication in facilitating generalism. While individual claims are supported by citations (C69, C70, C72, C73, C74), the overall hypothesis connecting domestication to generalism in D. suzukii is not directly tested in this study. The predictions (C75) require additional comparative or experimental work to validate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C76"
+    ],
+    "result": "Metabolomic data might help track the diet of phytophagous insects in the wild, as fruit-specific metabolites were readily found in fly metabolomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C76 is a speculative application based on the finding that diet-specific metabolites accumulate in flies. While the laboratory data support this possibility, the claim requires validation in wild populations where diet history, environmental variation, and metabolite turnover rates may differ substantially from controlled conditions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C12",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "The experimental approach involved rearing D. suzukii (sampled from Montpellier, France) on four fruit media (60% fruit puree + 40% modified German Food medium) and analyzing samples using UHPLC-MS coupled to an Exactive Orbitrap mass spectrometer, detecting 11,470 unique ions. Raw data were deposited in the Metabolights repository (MTBLS4721).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12 and C78-C82 describe the experimental methods and data availability. The methods are clearly described and appropriate for untargeted metabolomics. The use of fruit purees rather than whole fruits is a reasonable compromise between standardization and biological relevance. Data deposition in a public repository supports reproducibility.",
+    "result_type": "MINOR"
+  }
+]

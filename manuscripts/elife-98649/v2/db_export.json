@@ -1,0 +1,1677 @@
+{
+  "submission": {
+    "id": "e32c32f4-c5ef-43c6-aa25-c880b21f39a4",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-04T04:43:50.672275Z",
+    "updated_at": "2025-12-04T04:43:50.672275Z"
+  },
+  "content": [
+    {
+      "id": "33784320-f8cf-46a9-b714-87ad6a859a0c",
+      "submission_id": "e32c32f4-c5ef-43c6-aa25-c880b21f39a4",
+      "content_type": "manuscript",
+      "content_text": "# Novel autophagy inducers by accelerating lysosomal clustering against Parkinson\u2019s disease\n\n## Authors\n\n- Yuki Date<sup>1</sup> ([ORCID: 0009-0004-1099-1829](https://orcid.org/0009-0004-1099-1829))\n- Yukiko Sasazawa<sup>2</sup> ([ORCID: 0000-0002-0287-273X](https://orcid.org/0000-0002-0287-273X))\n- Mitsuhiro Kitagawa<sup>2</sup>\n- Kentaro Gejima<sup>2</sup>\n- Ayami Suzuki<sup>2</sup>\n- Hideyuki Saya<sup>5</sup>\n- Yasuyuki Kida<sup>7</sup>\n- Masaya Imoto<sup>4</sup>\n- Eisuke Itakura<sup>8</sup>\n- Nobutaka Hattori<sup>2</sup> ([ORCID: 0000-0003-2305-301X](https://orcid.org/0000-0003-2305-301X)) \u2020\n- Shinji Saiki<sup>2</sup> ([ORCID: 0000-0002-9732-8488](https://orcid.org/0000-0002-9732-8488)) \u2020\n\n### Affiliations\n\n1. Department of Biology, Graduate School of Science and Engineering, Chiba University, Inage-ku Chiba Japan ([ROR:01hjzeq58](https://ror.org/01hjzeq58))\n2. Department of Neurology, Juntendo University Faculty of Medicine Tokyo Japan ([ROR:01692sz90](https://ror.org/01692sz90))\n3. Research Institute for Diseases of Old Age, Juntendo University Graduate School of Medicine Tokyo Japan ([ROR:01692sz90](https://ror.org/01692sz90))\n4. Division for Development of Autophagy Modulating Drugs, Juntendo University Faculty of Medicine Tokyo Japan ([ROR:01692sz90](https://ror.org/01692sz90))\n5. Division of Gene Regulation, Institute for Advanced Medical Research, School of Medicine, Keio University Tokyo Japan ([ROR:02kn6nx58](https://ror.org/02kn6nx58))\n6. Division of Gene Regulation, Cancer Center, Fujita Health University Toyoake Japan ([ROR:046f6cx68](https://ror.org/046f6cx68))\n7. Biotechnology Research Institute for Drug Discovery, National Institute of Advanced Industrial Science and Technology (AIST) Tsukuba Japan ([ROR:01703db54](https://ror.org/01703db54))\n8. Department of Biology, Graduate School of Science, Chiba University, Inage-ku Chiba Japan ([ROR:01hjzeq58](https://ror.org/01hjzeq58))\n9. Neurodegenerative Disorders Collaborative Laboratory, RIKEN Center for Brain Science Saitama Japan ([ROR:04j1n1c04](https://ror.org/04j1n1c04))\n10. Department of Neurology, Institute of Medicine, University of Tsukuba Ibaraki Japan ([ROR:02956yf07](https://ror.org/02956yf07))\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe autophagy-lysosome pathway plays an indispensable role in the protein quality control by degrading abnormal organelles and proteins including \u03b1-synuclein (\u03b1Syn) associated with the pathogenesis of Parkinson\u2019s disease (PD). However, the activation of this pathway is mainly by targeting lysosomal enzymic activity. Here, we focused on the autophagosome-lysosome fusion process around the microtubule-organizing center (MTOC) regulated by lysosomal positioning. Through high-throughput chemical screening, we identified 6 out of 1200 clinically approved drugs enabling the lysosomes to accumulate around the MTOC with autophagy flux enhancement. We further demonstrated that these compounds induce the lysosomal clustering through a JIP4-TRPML1-dependent mechanism. Among them, the lysosomal-clustering compound albendazole promoted the autophagy-dependent degradation of Triton-X-insoluble, proteasome inhibitor-induced aggregates. In a cellular PD model, albendazole boosted insoluble \u03b1Syn degradation. Our results revealed that lysosomal clustering can facilitate the breakdown of protein aggregates, suggesting that lysosome-clustering compounds may offer a promising therapeutic strategy against neurodegenerative diseases characterized by the presence of aggregate-prone proteins.\n\n## Introduction\n\nPD, the second most prevalent progressive neurodegenerative disorder after Alzheimer\u2019s disease, is characterized by dopamine depletion due to the loss of dopaminergic neurons in the substantia nigra pars compacta. PD affects a broad range of motor and nonmotor functions and develops in approximately 1% of individuals over the age of 65. One primary therapy for PD is dopamine supplementation, often through medications like levodopa. While levodopa has a transformative effect, its chronic use can result in adverse effects, such as wearing off and dyskinesia. Since current treatments do not prevent the loss of dopaminergic neurons, new therapeutic strategies are urgently needed to address the challenges of PD.\n\nThe aggregation and deposition of the \u03b1Syn protein, also known as Lewy bodies, within dopaminergic neurons in the substantia nigra play a critical role in the etiology of PD (Spillantini et al., 1997; Postuma et al., 2015). Research interest is increasing in the induction of autophagy, a primary protein degradation system that removes \u03b1Syn aggregates, using small-molecule compounds as a therapeutic approach (Webb et al., 2003; Gao et al., 2019; Choi et al., 2020b). During autophagy, an isolation membrane engulfs part of the cytoplasm, forming a double-membraned vesicle known as an autophagosome. This organelle then fuses with lysosomes, creating autolysosomes where lysosomal hydrolases break down the vesicle\u2019s contents. Notably, rapamycin, a recognized autophagy inducer, can inhibit \u03b1Syn aggregation in vivo and improve motor functions (Crews et al., 2010; Dehay et al., 2010). However, even with the discovery of autophagy inducers, no fully effective treatment has been established. For instance, while nilotinib boosts autophagic \u03b1Syn clearance in \u03b1Syn transgenic PD model mice, its performance in clinical trials was underwhelming. Therefore, compounds that can dismantle aggregated proteins using innovative mechanisms need to be developed.\n\nRecent studies have highlighted the importance of lysosomal distribution in regulating autophagy and its associated genes. Lysosomes clustering around the (MTOC) are pivotal in managing autophagic flux. The close physical association between these clustered lysosomes and autophagosomes facilitates their fusion as well as inhibition of the mechanistic target of rapamycin complex1 (Kimura et al., 2008; Korolchuk et al., 2011). The transport of lysosomes to the MTOC is dependent on the dynein/dynactin complex and involves several protein pathways: (i) the small GTPase Rab7\u2013Rab7 effector Rab-interacting lysosomal protein (RILP) pathway Johansson et al., 2007; Rocha et al., 2009; (ii) the transient receptor potential mucolipin 1 (TRPML1)\u2013apoptosis-linked gene 2 (ALG2) pathway Li et al., 2016; and (iii) the lysosomal membrane protein TMEM55B-JNK-interacting protein 4 (JIP4) pathway (Willett et al., 2017). Furthermore, we recently identified an additional pathway involving the phosphorylated JIP4\u2013TRPML1\u2013ALG2 complex induced by oxidative stress (Sasazawa et al., 2022). We also hypothesize that the phosphorylation status of JIP4 at T217 by CaMK2G serves as a controlling switch, altering its binding affinity and thus dictating the pathway activated by JIP4.\n\nNotably, disruptions in lysosome and autophagosome transport can contribute to neurodegenerative diseases. For example, dynactin mutations are linked to Perry\u2019s Disease, a rare hereditary neurodegenerative condition marked by autosomal dominant parkinsonism (Konno et al., 2017). Such mutations disrupt lysosomal distribution, leading to impaired autophagy and cell death (Ishikawa et al., 2014). Additionally, leucine-rich repeat kinase 2 (LRRK2), a causative protein in PD, is essential in regulating autophagosome and lysosomal trafficking, particularly in partnership with JIP4 (Bonet-Ponce et al., 2020; Kluss et al., 2022a; Kluss et al., 2022b).\n\nConversely, mounting evidence suggests that protein aggregates, including those causing neurodegenerative diseases, accumulate around MTOCs and are degraded via the autophagy-lysosome pathway. Proteasome inhibitors, for example, aggregate near the nucleus and undergo autophagic degradation (J\u00e4nen et al., 2010; Choi et al., 2020a). In the same vein, the pathogenic protein mutant huntingtin, linked to Huntington\u2019s disease, forms aggresomes near the nucleus and is degraded by autophagy (Waelter et al., 2001; Ma et al., 2022). Similarly, the \u03b1Syn aggregates that form Lewy bodies in patients with PD accumulate near the MTOC (Olanow et al., 2004), hinting at the possibility that MTOC-centric autophagy facilitates their removal. Prior research has shown that Arl8b overexpression inhibits the degradation of \u03b1Syn-A53T (Korolchuk et al., 2011), suggesting that lysosomal retrograde trafficking is vital in the breakdown of \u03b1Syn-A53T.\n\nTherefore, we hypothesize that compounds that induce lysosomal clustering near MTOCs could minimize the distance between lysosomes, autophagosomes, and degradation substrates, thereby enhancing the degradation of protein aggregates. Guided by this concept, we developed a screening system that employed high-content image screening to identify a novel set of autophagy inducers that encourage lysosomal clustering. We further demonstrated that these compounds effectively degrade \u03b1Syn aggregates, underscoring the potential of enhancing lysosomal clustering as a strategy for eliminating protein aggregates.\n\n## Results\n\n### Cell-based screening for compounds inducing lysosomal clustering\n\nTo identify compounds that enhance the degradation of \u03b1Syn aggregates, we first screened for the ability to induce lysosomal clustering and then assessed their autophagy-inducing activity (Figure 1A).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/98649/elife-98649-fig1-v2.jpg)\n\n**Figure 1.:** (A) Scheme for the process of screening for lysosomal-clustering compounds. (B) Strategies for screening lysosomal-clustering compounds. If lysosomes accumulate around the microtubule-organizing center (MTOC), the fluorescent intensity (red) in the circle increases. (C) INCellAnalyzer2200 images of SH-SY5Y cells co-expressing GFP-\u03b3-tubulin and LGP120-mCherry. I\u2013III details the procedure for lysosomal-clustering analysis using ImageJ. (I) Image depicting GFP-\u03b3-tubulin fluorescence. The MTOC position as extracted using ImageJ processing. (II) A circle approximately 7 \u03bcm in diameter is placed at the central coordinates of the MTOC position. (III) The circle is reflected onto the LGP120 image to measure the LGP120 fluorescence intensity (lysosomal clustering value) within the circle. (D) SH-SY5Y cell lines co-expressing GFP-\u03b3-tubulin and LGP120-mCherry were treated with either control medium or starvation medium (positive control). The results were analyzed using an INCellAnalyzer2200 and ImageJ. Scale bar: 20 \u03bcm. (E) Graph plotting the lysosomal clustering values (n>20). ****p<0.0001, Wilcoxon test. (F) Graph presenting the fold changes in the lysosome-clustering value for 1200 chemicals relative to the control. Chemicals with over a 1.1-fold change in lysosome-clustering value relative to the control were identified as lysosome-clustering compounds.\n\nFor the identification process, we devised a high-content image-screening system using INCell Analyzer2200. As a starting point, we engineered SH-SY5Y cells to stably express both LGP120-mCherry (a lysosomal marker) and GFP-\u03b3-tubulin (an MTOC marker) (Figure 1B). Using the INCellAnalyzer2200, we captured fluorescence images of GFP and mCherry. The distribution of lysosomes was then quantified using ImageJ software. We determined the MTOC location using the GFP-\u03b3-tubulin spot signal, then enclosed the MTOC in a circle roughly 7 \u00b5m in diameter. The intensity of the LGP120-mCherry signal within this circle was gauged, and its ratio to the overall intensity for the cell was determined (Figure 1C). This ratio, when related to the control, was defined as the lysosomal clustering value.\n\nTo verify the accuracy of our approach, we cultivated the cells under starvation conditions, using this as the positive control, and subsequently assessed lysosomal distribution. Starvation resulted in evident lysosomal clustering, noticeable in fluorescence images and corroborated by the elevated lysosomal clustering value (Figure 1D and E), thereby underscoring the utility of our high-content image-screening system.\n\nUsing this screening method, we assessed approximately 1200 compounds, all of which are clinically approved in Japan. Of these, 63 exhibited a high lysosomal clustering value greater than 1.1 (Figure 1F and Figure 1\u2014source data 1).\n\n### Topoisomerase inhibitor and benzimidazole-induced lysosomal clustering and autophagy\n\nTo identify the autophagy inducers, we assessed the autophagic activity of the selected compounds using RFP\u2013GFP tandem fluorescent-tagged LC3 (R-G-LC3) as a second screening test (Figure 2A; Takayama et al., 2017). We established SH-SY5Y cells that stably expressed R-G-LC3. During the fusion of autophagosomes with mammalian lysosomes in these cells, GFP fluorescence is quenched due to its pH sensitivity and subsequently degraded by lysosomal proteases. In contrast, RFP is resistant to both acidic conditions and lysosomal proteases, resulting in accumulation in lysosomes. The distinct properties of RFP and GFP enabled us to evaluate autophagic activity precisely by measuring the RFP/GFP fluorescence ratio in a cell using flow cytometry (Figure 2\u2014figure supplement 1).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/98649/elife-98649-fig2-v2.jpg)\n\n**Figure 2.:** (A) SH-SY5Y cells expressing red fluorescent protein (RFP)-green fluorescent protein (GFP) tandem fluorescent-tagged LC3 (R\u2013G\u2013LC3) were analyzed by flow cytometer after treatment with 63 lysosomal-clustering compounds for 20 hr. The graph illustrates the fold change in the RFP/GFP ratio for these 63 chemicals relative to the control. Auto-fluorescent chemicals were excluded if they had >1.1 fold change in RFP/GFP ratio relative to the control. After confirming endogenous lysosome accumulation using immunofluorescence, six lysosomal-clustering autophagy inducers were ultimately identified. Gray dots represent autofluorescence chemical data. (B) SH-SY5Y cells were treated with teniposide (10 \u03bcM), amsacrine (10 \u03bcM), etoposide (10 \u03bcM), albendazole (10 \u03bcM), oxibendazole (1 \u03bcM), and mebendazole (5 \u03bcM) for 4 hr. Cells were then fixed and stained with the indicated antibody and DAPI. Images were captured using a confocal microscope. Scale bar: 20 \u03bcm. Under similar conditions, these cells were analyzed using an INCellAnalyzer2200 and ImageJ for lysosomal clustering. The graph shows the lysosomal clustering values (n>30, from three biological replicates). Data are expressed as mean \u00b1 standard deviation. ****p<0.0001, ***p<0.001, **p<0.01, *p<0.05, two-way analysis of variance and Tukey\u2019s test. N.S., not statistically significant. (C) SH-SY5Y cells underwent treatment with lysosome-clustering compounds for 4 hr. Cell lysates were immunoblotted with the indicated antibodies. The amount of LC3II was estimated using ImageJ software (bottom panel).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/98649/elife-98649-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) SH-SY5Y tetracycline-on (Tet-on) cells expressing R-G-LC3 were cultured in the presence of doxycycline (Dox). After Dox removal, the cells were treated with either normal medium or subjected to starvation for 20 hr and analyzed by flow cytometry. Dot plots display the gate-positive cell population (autophagy-induced cells: red). (B) The histogram represents the number of cells on the vertical axis and the RFP/GFP ratio on the horizontal axis. (C) The bar graph indicates the RFP/GFP ratio relative to the control.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/98649/elife-98649-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) SH-SY5Y cells tetracycline-on (Tet-on) expressing RFP-GFP-LC3 were treated with dimethyl sulfoxide, starvation medium, Torin1 (1 \u03bcM), teniposide (10 \u03bcM), or albendazole (10 \u03bcM). Post-treatment, cells were fixed and stained with an anti-LAMP2 antibody (blue: 647 nm) and then imaged using a confocal microscope. Scale bar: 20 \u03bcm. (B) Bar graph showing the RFP/GFP ratio relative to the control, as revealed by flow cytometry analysis.\n\nFrom the secondary screening of the 63 compounds identified in the first screening, we identified 15 compounds that induced autophagy with lysosomal clustering (Figure 2A and Figure 1\u2014source data 1). Because five compounds are auto-fluorescent chemicals (denoted by gray dots in Figure 2A), we further evaluated the effects of the remaining 10 compounds on endogenous lysosomal clustering. We identified six compounds that induced lysosomal clustering and subsequent enhancement of autophagy (Figure 2B), which were categorized into two types: topoisomerase II inhibitors (topo-i), including teniposide, amsacrine, and etoposide; and benzimidazole class anthelmintics, comprising albendazole, oxibendazole, and mebendazole. An immunofluorescence assay of R-G-LC3-expressing SH-SY5Y cells revealed that both starvation and treatment with either teniposide or albendazole promoted autophagosomal perinuclear clustering and increased their colocalization with lysosomes (autolysosomes) (Figure 2\u2014figure supplement 2A).\n\nFurthermore, an autophagy flux assay conducted via western blot indicated that these compounds exhibited LC3B lipidation, an effect that was amplified by the lysosomal inhibitor bafilomycin A1 (Mizushima and Yoshimori, 2007; Figure 2C). The results indicate that we successfully identified a novel class of six autophagy inducers that promoted lysosomal clustering.\n\n### Six compounds induced lysosomal clustering and autophagy independently of mTORC1\n\nPrevious studies have shown that lysosomal retrograde transport regulates autophagic flux by facilitating autophagosome formation by suppressing mTORC1 and expediting fusion between autophagosomes and lysosomes (Kimura et al., 2008; Korolchuk et al., 2011). Conversely, we recently found that acrolein/H2O2 induces lysosomal clustering in an mTOR-independent manner (Sasazawa et al., 2022). In this study, we aimed to identify pharmacologic agents that act downstream rather than upstream in the autophagy pathway, with the goal of minimizing side effects. Therefore, we evaluated the effects of the compounds on the mTOR pathway. We examined whether the six compounds modulated mTORC1 activity by regulating lysosomal positioning. This was accomplished by monitoring the phosphorylation states of mTOR and the mTORC1 downstream effectors, such as ribosomal S6 protein kinase (p70S6K), ribosomal S6 protein (S6), and ULK1 (Klionsky et al., 2016). The addition of Torin1, a selective mTOR inhibitor, in the starvation medium inhibited the phosphorylation of S6, p70S6K, mTOR, and ULK1. In contrast, the six compounds only marginally reduced the p-p70S6K levels without affecting p-S6, p-mTOR, and p-ULK1 (Figure 3A). Given the lack of a clear link between lysosomal accumulation and mTORC1 activity, as demonstrated by Torin1 treatment (Figure 3B, Figure 2\u2014figure supplement 2A and B), the six compounds could induce autophagy independently of mTORC1 activity, indicating their potential as promising candidates for PD therapy.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/98649/elife-98649-fig3-v2.jpg)\n\n**Figure 3.:** (A) SH-SY5Y cells were treated with starvation medium, Torin1 (1 \u03bcM), teniposide (10 \u03bcM), amsacrine (10 \u03bcM), etoposide (10 \u03bcM), albendazole (10 \u03bcM), oxibendazole (1 \u03bcM), or mebendazole (5 \u03bcM) for 4 hr. Cell lysates were then immunoblotted with the specified antibody. (B) SH-SY5Y cells treated with Torin1 (1 \u03bcM) for 4 hr. These cells were fixed, stained with anti-\u03b3-tubulin (green) and anti-LAMP2 (red) antibodies, and imaged using an INCellAnalyzer2200. Scale bar: 20 \u03bcm. INCellAnalyzer2200 images were then analyzed using ImageJ for lysosomal clustering. The graph presents the lysosomal clustering values (n>30). Data are expressed as mean \u00b1 standard deviation.\n\n### Topoisomerase inhibitor and benzimidazole transported lysosomes dependently through the JIP4\u2013TRPML1 pathway\n\nVarious factors regulate lysosomal clustering. Four primary dynein-mediated pathways for lysosomal clustering have been identified: Rab7\u2013RILP (Johansson et al., 2007), TRPML1\u2013ALG2 (Li et al., 2016), TMEM55B\u2013JIP4 (Willett et al., 2017), and TRPML1\u2013JIP4\u2013ALG2 (Sasazawa et al., 2022) pathways. To discern which pathways are involved in the lysosomal retrograde transport initiated by the selected compounds, we first examined the effects of Rab7, RILP, ALG2, TRPML1, TMEM55B, and JIP4 knockdown on the lysosomal distribution induced by teniposide and albendazole, which typify topo-i and benzimidazole class anthelmintics, respectively. The knockdown efficiency against these genes was validated via western blotting and quantitative reverse-transcription polymerase chain reaction (Figure 4\u2014figure supplement 1). JIP4 and TRPML1 knockdown hindered teniposide-induced lysosomal clustering, whereas TMEM55B, ALG2, Rab7, and RILP knockdown did not. Conversely, albendazole-induced lysosomal clustering was hindered by JIP4, TRPML1, ALG2, and Rab7 knockdown, but TMEM55B and RILP knockdown had no such effect (Figure 4A and B). Moreover, lysosomal accumulation induced by teniposide/albendazole treatment was not attenuated by siRNA knockdown against TMEM55B, which is key in inducing starvation-dependent lysosomal clustering around the MTOC (Figure 4\u2014figure supplement 2A; Willett et al., 2017). Therefore, the knockdown efficiency of TMEM55B was sufficient, and these compounds (topo-i and benzimidazole) induced lysosomal clustering independently of TMEM55B, unlike when under starvation conditions.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/98649/elife-98649-fig4-v2.jpg)\n\n**Figure 4.:** (A) SH-SY5Y cells were transfected with the indicated siRNAs for 48 hr and then treated with teniposide (10 \u03bcM) and albendazole (10 \u03bcM) for 4 hr. Cells were fixed and stained with anti-\u03b3-tubulin (green) and anti-LAMP2 (red) antibodies. Images were captured using an INCellAnalyzer2200. Scale bar: 20 \u03bcm. (B) INCellAnalyzer2200 images were analyzed for lysosomal clustering using ImageJ. The graph presents the lysosomal clustering values (n>30, from three biological replicates). Data are expressed as mean \u00b1 standard deviation. ****p<0.0001, ***p<0.001, **p<0.01, *p<0.05, two-way analysis of variance (ANOVA) and Tukey\u2019s test. N.S., not statistically significant. The experiment was technically replicated at least three times. (C) SH-SY5Y WT and JIP4 knockout cells were cultured in 96-well black plates and treated with teniposide (1, 5, or 10 \u03bcM) and albendazole (1, 5, or 10 \u03bcM). Cells were fixed and stained with anti-\u03b3-tubulin (green) and anti-LAMP2 (red) antibodies. Images were captured using an INCellAnalyzer2200. (D) INCellAnalyzer2200 images were analyzed using ImageJ for lysosomal clustering. The graph presents the lysosomal clustering values for wild-type or JIP4 knockout cells (n>30, from three biological replicates). Data are expressed as mean \u00b1 standard deviation. ****p<0.0001, ***p<0.001, **p<0.01, *p<0.05, two-way ANOVA and Tukey\u2019s test. N.S., not statistically significant. The experiment was technically replicated at least three times. (E) SH-SY5Y cells were treated with teniposide (10 \u03bcM) and albendazole (10 \u03bcM) for 4 hr. Cells were fixed and stained with anti-JIP4 (green) and anti-LAMP2 (red) antibodies and 4\u2032,6-diamidino-2-phenylindole.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/98649/elife-98649-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A, B) SH-SY5Y cells were treated with the specified siRNAs, and the knockdown efficiency of each siRNA was validated via reverse-transcription quantitative polymerase chain reaction (n=3 technical replicates) or Western blotting. The graph data are expressed as mean \u00b1 standard deviation. ****p<0.0001, ***p<0.001, Student\u2019s t-test.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/98649/elife-98649-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A) SH-SY5Y cells were transfected with TMEM55B siRNA for 48 hr and then treated with teniposide (10 \u03bcM), albendazole (10 \u03bcM), or starvation medium for 4 hr. Cells were fixed and stained with anti-\u03b3-tubulin (green) and anti-LAMP2 (red) antibodies. Images were captured using an INCellAnalyzer2200. INCellAnalyzer2200 images were analyzed using ImageJ for lysosomal clustering. The graph presents the lysosomal clustering values (n>30, from three biological replicates). Data are expressed as mean \u00b1 standard deviation (SD). ****p<0.0001, ***p<0.001, **p<0.01, *p<0.05, two-way analysis of variance (ANOVA) and Tukey\u2019s test. N.S., not statistically significant. The experiment was technically replicated at least three times. (B) SH-SY5Y WT and JIP4 knockout cells were cultured in 96-well black plates and treated with amsacrine, etoposide, oxibendazole, or mebendazole at the specified concentrations. The cells were then fixed and stained with anti-\u03b3-tubulin (green) and anti-LAMP2 (red) antibodies before imaging with an INCellAnalyzer2200. INCellAnalyzer2200 images were processed and analyzed using ImageJ for lysosomal clustering. The graph presents the lysosomal clustering values of either wild-type or JIP4KO cells. (n>30). Data are expressed as mean \u00b1 SD. ****p<0.0001, ***p<0.001, **p<0.01, *p<0.05, two-way ANOVA and Tukey\u2019s test. N.S., not statistically significant.\n\nConversely, the enhancement of lysosomal retrograde transport in RILP knockdown cells in Figure 4B suggests the potential involvement of RILP in anterograde transport. However, to the best of our knowledge, no reports have investigated this matter. We presume that negative feedback mechanisms may be present.\n\nThese observations suggest that topo-i-driven lysosomal clustering is mediated by JIP4 and TRPML1, whereas albendazole-induced clustering involves JIP4, TRPML1, ALG2, and Rab7. Furthermore, in JIP4 knockout (KO) cells, lysosomal clustering induction by all six compounds was suppressed (Figure 4C and D, and Figure 4\u2014figure supplement 2B). Immunostaining using JIP4 antibodies revealed increased colocalization of JIP4 with LAMP2 under both teniposide and albendazole treatment conditions (Figure 4E). Collectively, these results show that, while teniposide and albendazole may stimulate lysosomal clustering via different pathways, both TRPML1 and JIP4 are instrumental in each pathway.\n\n### Topoisomerase inhibitor regulated lysosomal transport via phosphorylated JIP4\n\nWe previously determined that JIP4 plays a crucial role in regulating lysosomal clustering triggered by both oxidative stress and starvation. Interestingly, these two processes employ distinct pathways influenced by the phosphorylation status of JIP4. Specifically, oxidative stress results in the phosphorylation of JIP4 at T217 through CaMK2G activation, regulating lysosomal retrograde transport in tandem with TRPML1 and ALG2. In contrast, starvation mediates lysosomal retrograde transport predominantly through the TRPML1\u2013ALG2 and TMEM55B\u2013JIP4 pathways without JIP4 phosphorylation (Sasazawa et al., 2022).\n\nGiven this background, we determined whether lysosomal clustering induced by topo-i and benzimidazole is dependent on JIP4 phosphorylation. We employed Jak3 inhibitor VI, previously identified as an inhibitor of the JIP4 kinase CaMK2G, which regulates oxidative stress-induced lysosomal clustering (Sasazawa et al., 2022). Notably, Jak3 inhibitor VI effectively suppressed lysosomal clustering induced by the three topo-i compounds. In contrast, the effects of benzimidazole remained largely unaffected (Figure 5A and B). Moreover, Phos-tag sodium dodecyl sulfate-polyacrylamide gel electrophoresis (SDS-PAGE) analyses revealed that all three topo-i compounds induced JIP4 phosphorylation, an effect counteracted by Jak3 inhibitor VI (Figure 5C). siCaMK2G also inhibited lysosomal clustering induced by all three topo-i compounds (Figure 5D and E). In addition, Ca2+ imaging showed that teniposide, but not albendazole, upregulated Ca2+ flux (Figure 5\u2014figure supplement 1). This suggests that CaMK2G-phosphorylated JIP4 is pivotal for topo-i-induced lysosomal clustering. In addition, rescue experiments in JIP4 KO SH-SY5Y cells, which re-expressed either flag-tagged wild-type JIP4 or a phosphorylation-defective variant (T217A JIP4), revealed that only the cells with wild-type flag-JIP4 could recover the teniposide-induced lysosomal clustering phenotype (Figure 5F and G). This underscores the indispensability of JIP4 phosphorylation at T217 for the changes in lysosomal distribution induced by topo-i. In summary, while topo-i-induced lysosomal clustering is promoted by phosphorylated JIP4 (T217) in conjunction with TRPML1 (but not ALG2), benzimidazole-driven lysosomal retrograde transport, exemplified by albendazole, engages the TRPML1\u2013JIP4\u2013ALG2 and Rab7 pathways.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/98649/elife-98649-fig5-v2.jpg)\n\n**Figure 5.:** (A) SH-SY5Y cells were treated with dimethyl sulfoxide (DMSO), teniposide (10 \u03bcM), amsacrine (10 \u03bcM), etoposide (10 \u03bcM), albendazole (10 \u03bcM), oxibendazole (1 \u03bcM), or mebendazole (5 \u03bcM) with or without Jak3 inhibitor VI for 4 hr. Cells were fixed and stained with anti-\u03b3-tubulin (green) and anti-LAMP2 (red) antibodies. Images were captured using an INCellAnalyzer2200. Scale bar: 20 \u03bcm. (B) INCellAnalyzer2200 images were analyzed using ImageJ for lysosomal clustering. The graph presents the lysosomal clustering values for DMSO or Jak3 inhibitor VI (n>30, from 3 biological replicates). Data are expressed as mean \u00b1 standard deviation. ****p<0.0001, ***p<0.001, **p<0.01, *p<0.05, two-way analysis of variance (ANOVA) and Tukey\u2019s test. N.S., not statistically significant. The experiment was technically replicated at least three times. (C) SH-SY5Y cells were treated with teniposide (10 \u03bcM), amsacrine (10 \u03bcM), or etoposide (10 \u03bcM) with or without Jak3 inhibitor VI for 4 hr. Cell lysates underwent Phos-tag sodium dodecyl sulfate-polyacrylamide gel electrophoresis (SDS-PAGE) and were immunoblotted with an anti-JIP4 antibody. The graph displays the ratio of non-phosphorylated JIP4 to phosphorylated JIP4. (D) SH-SY5Y cells were transfected with CaMK2G siRNAs for 48 hr and then treated with teniposide (10 \u03bcM), amsacrine (10 \u03bcM), or etoposide (10 \u03bcM) for 4 hr. Cells were fixed and stained with anti-\u03b3-tubulin (green) and anti-LAMP2 (red) antibodies. Images were captured using an INCellAnalyzer2200. Scale bar: 20 \u03bcm. (E) INCellAnalyzer2200 images were analyzed using ImageJ for lysosomal clustering. The graph presents the lysosomal clustering values (n>30, from three biological replicates). Data are expressed as mean \u00b1 standard deviation. ****p<0.0001, two-way ANOVA, and Tukey\u2019s test. The experiment was technically replicated at least three times. (F) JIP4 KO cells were transfected with flag-tagged JIP4 (wild-type [WT] and T217A) for 24 hr and treated with teniposide (10 \u03bcM) for 4 hr. Cells were fixed and stained with the indicated antibodies. Scale bar: 20 \u03bcm. Approximately 70% of the cell area toward the cell center was automatically delineated using ImageJ, with the region excluded from this defined as the cellular peripheral region. The graph displays the percentage of cells with peripheral lysosomes. Data are expressed as mean \u00b1 standard deviation. *p<0.05, ****p<0.0001, two-way ANOVA and Tukey\u2019s test (n>20, from three biological replicates). (G) JIP4 KO cells were transfected with flag-tagged JIP4 (wild-type and T217A) for 24 hr and treated with teniposide (10 \u03bcM) for 4 hr. Cell lysates underwent SDS-PAGE and were immunoblotted with anti-JIP4 and anti-actin antibodies.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/98649/elife-98649-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** SH-SY5Y cells were treated with teniposide, amsacrine, etoposide, albendazole (1, 5, 10 \u00b5M), oxibendazole (0.1, 0.5, and 1 \u00b5M), or and mebendazole (0.5,1, and 5 \u00b5M) for 4 hr, and stained with Fluo4-AM for 30 min. The fluorescence intensity was measured using a plate reader.\n\n### Lysosomal-clustering compounds efficiently induced autophagy by transporting autophagosomes and lysosomes in a JIP4-dependent manner\n\nNext, we confirmed whether lysosomal clustering is essential for the autophagy triggered by the lysosomal-clustering compounds. We utilized a quantifiable HaloTag-LC3B assay to measure autophagic flux (Yim et al., 2022). In cells expressing HaloTag-LC3B, the HaloTag degrades within lysosomes in the absence of ligands. However, when ligands are introduced, the HaloTag portion accumulates inside lysosomes. This accumulation serves as an estimate of autophagic activity (Yim et al., 2022). We expressed HaloTag-LC3B in both parental SH-SY5Y cells and JIP4 KO cells and evaluated autophagic flux by adding topo-i and benzimidazole. JIP4 KO cells displayed reduced accumulation of the cleaved Halo bands on the in-gel fluorescence images for both compounds (Figure 6A and B). These findings reveal that both topo-i and benzimidazole provoke JIP4-dependent lysosomal clustering, subsequently inducing autophagy. Interestingly, JIP4 expression levels decreased in response to lysosomal-clustering compounds (Figure 6A and B). Moreover, the decrease in JIP4 expression in response to teniposide was suppressed by co-treatment with bafilomycin A1 (Figure 6\u2014figure supplement 1), indicating that JIP4 is eventually degraded by autophagy, although it is essential for lysosomal transport.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/98649/elife-98649-fig6-v2.jpg)\n\n**Figure 6.:** (A) SH-SY5Y cells stably expressing Halo-LC3 were labeled for 20 min with 100 nM tetramethylrhodamine (TMR)-conjugated ligand in a nutrient-rich medium. After washing with phosphate-buffered saline (PBS) and incubating the cells in normal medium for 30 min, cells were treated with dimethyl sulfoxide (DMSO), teniposide (10 \u03bcM), amsacrine (10 \u03bcM), etoposide (10 \u03bcM), albendazole (10 \u03bcM), oxibendazole (1 \u03bcM), or mebendazole (5 \u03bcM) for 4 hr. Cell lysates were immunoblotted with the indicated antibody and analyzed by in-gel fluorescence detection. (B) Quantification of results shown in panel A. The HaloTMR band intensity was normalized by the sum of the band intensities of HaloTMR-LC3B and HaloTMR. The vertical axis of the graph represents the intensity multiplied by 100. Mean values of data from five or three experiments are shown. Data are expressed as mean \u00b1 standard deviation. ****p< 0.0001, ***p<0.001, **p<0.01, *p<0.05, two-way analysis of variance and Tukey\u2019s test. (C) Cells treated as in panel A were fixed and stained with an anti-LAMP2 antibody (green). These cells were imaged using a confocal microscope. Scale bar: 20 \u03bcm. White arrows indicate Halo-LC3 dots. The magnified image shows LAMP2 (green) and Halo dots (red) accumulating at the cell periphery. (D) SH-SY5Y cells stably expressing Halo-LC3 were labeled for 20 min with 100 nM TMR-conjugated ligand in a nutrient-rich medium. After washing with PBS and incubating the cells in normal medium for 30 min, cells were treated with DMSO, teniposide (10 \u03bcM), albendazole (10\u00b5M), and/or Torin1 (100 nM) for 8 hr. Cell lysates were immunoblotted with the indicated antibody and analyzed by in-gel fluorescence detection (left). The HaloTMR band intensity was normalized by the sum of the band intensities of HaloTMR-LC3B and HaloTMR (right).\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/98649/elife-98649-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** SH-SY5Y cells were treated with 10 \u00b5M teniposide and with or without 30 nM bafilomycin A1 for 4 hr. Cell lysates were immunoblotted with anti-JIP4 and actin antibodies.\n\nFurthermore, immunofluorescence assay demonstrated that starvation, teniposide, and albendazole treatments promoted autophagosomal perinuclear clustering and enhanced their colocalization with lysosomes to form autolysosomes (Figure 6C). Interestingly, in JIP4 KO cells, lysosomal clustering and the accumulation of autophagosomes to the MTOC were inhibited. The accumulation of autolysosomes (indicated by the colocalization of Halo-LC3 with lysosomes) was observed at the cell periphery following teniposide treatment (Figure 6C, enlarged image), suggesting the induction of autophagy. As demonstrated in our previous study (Ishikawa et al., 2019), the inhibition of retrograde vesicular transport (e.g. through dynactin knockdown) causes both autophagosomes and lysosomes to disperse to the cell periphery, resulting in residual autolysosome formation there and preserving some autophagic flux. This likely caused the slight yet notable decline in autophagic flux in JIP4 KO cells treated with topo-i and benzimidazole. Conversely, in the presence of albendazole or under starvation conditions in JIP4 KO cells, the accumulation of autolysosomes at the cell periphery was infrequently observed. This supports the presumption that lysosomal clustering induced by albendazole or starvation is also mediated by pathways other than JIP4, such as the Rab7-mediated pathway.\n\nFurthermore, autophagosomes that did not colocalize with lysosomes were detected in the cytoplasm following treatments with teniposide and albendazole and under starvation conditions in JIP4 KO cells (Figure 6C, indicated by a white arrow). These findings imply that teniposide- and albendazole-induced autophagy stimulates JIP4-dependent lysosomal movement to induce autophagy and facilitate the formation of autolysosomes. Moreover, these results suggest the potential role of JIP4, not only in lysosomal retrograde transport, but also in autophagosomal retrograde transport. In summary, in JIP4 KO cells, lysosomes and autophagosomes are directed toward the cell periphery, thereby retaining some level of autophagic flux.\n\nIn addition, to assess the ability of lysosomal-clustering compounds to induce autophagy by promoting the formation of autolysosomes, we compared the autophagic activity between Halo-LC3 and co-treatment with Torin1, which does not induce lysosome clustering, and a lysosomal-clustering compound. Cotreatment with Torin1 and teniposide or albendazole-induced autophagy more effectively than Torin1 treatment alone, without affecting mTOR inhibition activity (Figure 6D). These findings indicate that the induction of autophagy by lysosome-clustering compounds is not caused by autophagosome formation but by the formation of autolysosomes.\n\n### Albendazole-degraded proteasome inhibitor MG132-induced aggregates\n\nBecause topo-i exhibits cytotoxicity and is clinically used as an anti-cancer drug, we explored the ability of albendazole to induce protein aggregate degradation through autophagy. Previous reports have shown that aggregates caused by proteasomal inhibition can be degraded by autophagy (J\u00e4nen et al., 2010; Choi et al., 2020a), and the significance of lysosomal clustering has also been highlighted (Zaarur et al., 2014). MG132, a well-known proteasomal inhibitor, increased p62 and poly-ubiquitinated protein levels in the Triton-X insoluble fraction. This increase declined time-dependently after the washout of MG132 (Figure 7A). Furthermore, the reduction in p62 and ubiquitin levels following the MG132 washout was markedly suppressed in autophagy-deficient FIP200 KO cells (Figure 7B). These results show that basal autophagy degrades the MG132-induced protein aggregates. Notably, albendazole treatment in conjunction with the MG132 washout induced p62 reduction more rapidly than DMSO treatment alone (Figure 7C). The effects of albendazole, however, were suppressed in FIP200 KO cells (Figure 7D). These findings imply that albendazole can degrade protein aggregates formed by a proteasome inhibitor in an autophagy-dependent manner.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/98649/elife-98649-fig7-v2.jpg)\n\n**Figure 7.:** (A) SH-SY5Y cells were treated with MG132 (1 \u03bcM) for 16 hr to induce aggresome formation. After washing out MG132 with normal medium at intervals of 4, 8, or 12 hr, cell lysates were separated into Triton-X-100\u2013soluble (soluble) and pellet fractions (insoluble), then subjected to sodium dodecyl sulfate-polyacrylamide gel electrophoresis and immunoblotting with the indicated antibody. (B) Wild-type (WT) or FIP200KO SH-SY5Y cells were treated with MG132 (1 \u03bcM) for 16 hr to induce aggresome formation. After washing out MG132 with normal medium at intervals of 3, 6, 9, or 12 hr, the same analysis as in panel A was performed. (C) SH-SY5Y cells were treated with MG132 (1 \u03bcM) for 16 hr. After washing out MG132 with either dimethyl sulfoxide (DMSO) or albendazole in normal medium at intervals of 3, 6, 9, or 12 hr, the same analysis as in panel A was performed. Bar graph showing the insoluble p62 ratio from panel C. (D) WT or FIP200KO SH-SY5Y cells were treated with MG132 (1 \u03bcM) for 16 hr to induce aggresome formation. After washing out MG132 with DMSO or albendazole in normal medium at intervals of 6, 9, or 12 hr, the same analysis as in panel A was performed.\n\n### Lysosomal clustering is required for the degradation of \u03b1Syn aggregates\n\nNext, we explored whether albendazole can degrade \u03b1Syn, the causative protein in PD. We established cellular models of PD wherein \u03b1Syn aggregation was prompted by the transduction of \u03b1Syn fibrils as seeds in \u03b1Syn-overexpressing cells (Nonaka et al., 2010). These \u03b1Syn fibrils were introduced into the SH-SY5Y cell line, which stably expressed the GFP-fused human \u03b1Syn. Notably, confocal microscopy analyses showed that upon the introduction of \u03b1Syn fibrils, lysosomes accumulated around the \u03b1Syn aggregates (Figure 8A). Albendazole further enhanced the concentration of lysosomes around these \u03b1Syn-GFP aggregates (Figure 8B). On electron microscopy, albendazole treatment induced a higher recruitment rate of autophagosomes and lysosomes to the \u03b1Syn aggregates than the control (Figure 8C). These observations suggest that lysosomes actively converge to aid in breaking down \u03b1Syn aggregates.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/98649/elife-98649-fig8-v2.jpg)\n\n**Figure 8.:** (A) SH-SY5Y cells overexpressing \u03b1Syn-GFP were transfected with \u03b1Syn fibril (0.2 \u00b5g/mL) using Lipofectamine 3000. After 48 hr, the cells were fixed and stained with an anti-LAMP2 antibody (red) and 4\u2032,6-diamidino-2-phenylindole (DAPI; blue). These cells were imaged using a confocal microscope. Scale bar: 20 \u03bcm. (B) SH-SY5Y cells overexpressing \u03b1Syn-GFP were transfected with \u03b1Syn fibril (0.2 \u00b5g/mL) using Lipofectamine 3000. After 48 hr, the transfection reagent was washed out, and the SH-SY5Y cells were treated with dimethyl sulfoxide (DMSO) or albendazole (10 \u03bcM) with or without bafilomycin A1 (30 nM) for 8 hr. Cells were fixed and stained with an anti-LAMP2 antibody (red) and DAPI (blue). The cells were imaged using a confocal microscope. Scale bar: 20 \u03bcm. The colocalization of LAMP2 and \u03b1Syn-GFP aggregates was assessed by measuring the fluorescence values of lysosomes in contact within the \u03b1Syn-GFP aggregation area using ImageJ (n >30). * p<0.05, Wilcoxon test. (C) SH-SY5Y cells overexpressing \u03b1Syn-GFP were transfected with \u03b1Syn fibril (0.2 \u00b5g/mL) using Lipofectamine 3000. After 48 hr, the transfection reagent was washed out, and the SH-SY5Y cells were treated with DMSO or albendazole (10 \u03bcM), followed by electron microscopy analysis. Lysosome-like structures are enlarged at the bottom. Scale bar: 2 \u03bcm. (D) SH-SY5Y cells overexpressing \u03b1Syn-GFP were transfected with \u03b1Syn fibril (0.2 \u00b5g/mL) using Lipofectamine 3000. After 48 hr, the transfection reagent was washed out, and the SH-SY5Y cells were treated with DMSO or albendazole (10 \u03bcM) with or without bafilomycin A1 (30 nM) for 8 hr. Cell lysates were separated into Triton-X-100\u2013soluble (soluble) and pellet fractions (insoluble), then subjected to sodium dodecyl sulfate polyacrylamide gel electrophoresis and immunoblotting with the indicated antibody. (E) Bar graph showing the insoluble \u03b1Syn-GFP ratio from panel D. Data are expressed as mean \u00b1 standard deviation. One-way analysis of variance and Dunnett\u2019s test.\n\n![Figure 8\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/98649/elife-98649-fig8-figsupp1-v2.jpg)\n\n**Figure 8\u2014figure supplement 1.:** (A) SH-SY5Y cells expressing \u03b1Syn-Halo were labeled for 20 min with 100 nM of tetramethylrhodamine-conjugated ligand in a nutrient-rich medium. After washing with phosphate-buffered saline and incubating in normal medium for 30 min, the cells were treated with 10 \u00b5M albendazole for 8 hr. The experiments were performed in triplicate. Cell lysates were separated by electrophoresis and analyzed by in-gel fluorescence detection (left). The HaloTMR band intensity was normalized by the sum of the band intensities of HaloTMR-\u03b1Syn and HaloTMR. The vertical axis of the graph represents the intensity multiplied by 100. Mean values of data from five or three experiments are shown. The graph data are expressed as mean \u00b1 standard deviation. ****p<0.0001, ***p<0.001, Student\u2019s t-test. (B, C) SH-SY5Y cells overexpressing \u03b1Syn-GFP were transfected with \u03b1Syn fibril (0.2 \u00b5g/mL) using Lipofectamine 3000. After 48 hr, the transfection reagent was washed out, and the SH-SY5Y cells were treated with 100 nM Torin1 with or without 100 nM bafilomycin A1 for 8 hr (B). Cell lysates were separated into Triton-X-100\u2013soluble (soluble) and pellet fractions (insoluble), then subjected to sodium dodecyl sulfate-polyacrylamide gel electrophoresis (SDS-PAGE) and immunoblotting with the indicated antibody (left). The amount of insoluble \u03b1Syn was quantified using ImageJ software (C). (D, E) SH-SY5Y cells overexpressing \u03b1Syn-GFP were transfected with \u03b1Syn fibril (0.2 \u00b5g/mL) using Lipofectamine 3000. After 48 hr, and washing out the transfection reagent, SH-SY5Y cells were treated with albendazole (10 \u03bcM) with or without 100 nM Torin1 for 8 hr (D). Cell lysates were separated into Triton-X-100\u2013soluble (soluble) and pellet fractions (insoluble), then subjected to SDS-PAGE and immunoblotting with the indicated antibody (left). The amount of insoluble \u03b1Syn was quantified using ImageJ software (E). (F, G) SH-SY5Y cells overexpressing \u03b1Syn-GFP were transfected with the indicated siRNAs for 24 hr and then transfected with \u03b1Syn fibril (0.2 \u00b5g/mL) using Lipofectamine 3000 for 48 hr. After washing out the transfection reagent, the SH-SY5Y cells were treated with dimethyl sulfoxide or albendazole (10 \u03bcM) for 8 hr. Cell lysates were separated into Triton-X-100\u2013soluble (soluble) and pellet fractions (insoluble) and subjected to SDS-PAGE and immunoblotting with the indicated antibody (F). The bar graph presents the ratio of the insoluble\u03b1Syn-GFP to the soluble GAPDH or insoluble p-\u03b1Syn to the soluble GAPDH of the intensity of the data in panel F (G). Data are expressed as mean \u00b1 standard deviation.\n\nTo verify the degradation of \u03b1Syn aggregates by albendazole, we introduced \u03b1Syn fibrils to induce \u03b1Syn aggregation, washed out the fibrils, and then treated cells with albendazole, either with or without bafilomycin A1. Subsequently, we assessed the \u03b1Syn concentration in the Triton-X insoluble fraction (Figure 8D). The introduction of \u03b1Syn fibrils notably increased \u03b1Syn-GFP levels, indicating \u03b1Syn aggregation in the Triton-X insoluble fraction. However, these levels decreased post-fibril washout after an 8 hr culture with standard media. This decline was mildly inhibited by bafilomycin A1, suggesting that basal autophagy degrades aggregated \u03b1Syn. Furthermore, albendazole treatment caused a marked tendency toward decreased \u03b1Syn-GFP levels compared with DMSO treatment. This decrease was also hindered by bafilomycin A1 (Figure 8D and E). This pattern indicates that albendazole mediates \u03b1Syn aggregate degradation through autophagy. Moreover, to evaluate the degradation of\u03b1Syn monomers by albendazole, we used SH-SY5Y cells stably expressing \u03b1Syn-Halo, to measure \u03b1Syn degradation by quantifying the cleaved Halo. Albendazole treatment induced a higher cleavage rate of Halo than DMSO treatment for 8 hr, suggesting that albendazole can degrade both \u03b1Syn monomers and aggregates (Figure 8\u2014figure supplement 1A). The unchanged \u03b1Syn-GFP levels in the soluble fraction (Figure 8D) are likely due to the abundance of soluble \u03b1Syn-GFP. Therefore, albendazole enhances the autophagy-mediated degradation of \u03b1Syn-GFP aggregates and monomers.\n\nNext, we investigated the degradation of \u03b1Syn-GFP aggregates by Torin1, which induces autophagy, but not lysosomal clustering. Torin1 also induced the degradation of aggregates, which was inhibited by bafilomycin A1 (Figure 8\u2014figure supplement 1B and C). However, the degradation activity of albendazole was more vigorous than that of Torin1 (Figure 8\u2014figure supplement 1D and E). Moreover, we found that Torin1 exhibited higher autophagic induction activity than albendazole (Figure 6D). These results suggest that albendazole, with its ability to gather lysosomes around the degradation substrate, more effectively facilitates degradation of insoluble\u03b1Syn than Torin1.\n\nWe have examined whether lysosomal clustering through the JIP4\u2013TRPML1 pathway is crucial for the degradation of \u03b1Syn aggregates. We evaluated the degradation activity of insoluble\u03b1Syn induced by the addition of \u03b1Syn fibrils to\u03b1Syn-GFP cells under JIP4, TMEM55B, or TRPML1 knockdown. Interestingly, the insoluble fraction assay showed that JIP4 and TRPML1 knockdown regulated the decrease of \u03b1Syn-GFP and p-\u03b1Syn levels in the insoluble fraction for both DMSO and albendazole treatments. The results were particularly more pronounced with TRPML1 knockdown. However, the knockdown of TMEM55B did not produce such findings (Figure 8\u2014figure supplement 1F and G). These data suggest that lysosomal clustering via the JIP4\u2013TRPML1 pathway plays a significant role in \u03b1Syn degradation.\n\n## Discussion\n\nIn this study, we developed a novel screening method for autophagy inducers that focused on lysosomal clustering and assessed their ability to degrade \u03b1Syn. We created a high-throughput screening system to quantify lysosomal accumulation by quantifying lysosomes located within a circular region centered on the MTOC. This was achieved through image analysis using INCellAnalyzer2200 and ImageJ (Figure 1). We discovered that topo-i and benzimidazole promoted lysosomal clustering via the JIP4\u2013TRPML1 pathway (Figures 2 and 4). Specifically, topo-i induced lysosomal clustering through the phosphorylation of JIP4 at T217 (Figure 5). Compounds that stimulate lysosomal clustering also facilitate the fusion of autophagosomes and lysosomes near the MTOC by transporting autophagosomes via JIP4 (Figure 6). Furthermore, albendazole-induced lysosomal accumulation around \u03b1Syn aggregates surrounding the nucleus, subsequently degrading these aggregates in a lysosome-dependent manner (Figure 8). Our results indicate that lysosomal clustering plays a significant role in \u03b1Syn degradation. Thus, novel lysosomal-clustering agents have potential clinical applications through the targeting of \u03b1Syn aggregation in PD.\n\nTopo-i and benzimidazole induce lysosomal clustering through distinct mechanisms. In our study, topo-i-driven lysosomal transport was regulated by JIP4 and TRPML1, but not by ALG2. This transport relies on the phosphorylation of JIP4 at T217 by CaMK2G. However, a previous study found that oxidative stress-induced lysosomal retrograde transport is influenced by the phosphorylated\u2013JIP4\u2013TRPML1\u2013ALG2 complex (Sasazawa et al., 2022). Therefore, topo-i induces lysosomal clustering via a unique mechanism, involving p-JIP4 and TRPML1 without ALG2. Considering that TRPML1 acts as a reactive oxygen species sensor in lysosomes (Zhang et al., 2016), topo-i may induce ROS production and stimulate TRPML1. Therefore, we assessed intracellular ROS in response to topo-i. Topo-i, such as teniposide, etoposide, and amsacrine, significantly increased ROS levels (Figure 9A). Moreover, N-acetyl-L-cysteine, a ROS scavenger, partially attenuated topo-i-induced lysosomal clustering (Figure 9B). Based on the activity of CAMK2G siRNA, as shown in Figure 5D and E, and S5, topo-i may activate TRPML1 in a ROS-dependent manner and increase PI(3,5)P2 binding with TRPML1 (Dong et al., 2010). Consecutive Ca2+ release via TRPML1 activated CAMK2G and is followed by enhanced lysosomal transport toward the MTOC via JIP4 phosphorylation.\n\n![Figure 9.](https://cdn.elifesciences.org/articles/98649/elife-98649-fig9-v2.jpg)\n\n**Figure 9.:** (A) SH-SY5Y cells were treated with the indicated compounds (10 \u00b5M) for 4 hr. The amount of intracellular reactive oxygen species (ROS) is examined by ROS Assay Kit -Highly Sensitive DCFH-DA (Dojindo) and the normalized pixels above threshold as measured using an INCellAnalyzer 2200 and ImageJ. (B) SH-SY5Y cell lines were pre-treated with 0.1 mM N-acetyl-L-cysteine for 24 hr and then treated with the indicated compound (10 \u00b5M) for an additional 4 hr. Cells were fixed and stained with anti-\u03b3-tubulin (green) and anti-LAMP2 (red) antibodies. Lysosomal distribution was examined using an INCellAnalyzer 2200 and quantified using ImageJ software. (C, D) SH-SY5Y cells were cultured in 96-well black plates and treated with teniposide (10 \u03bcM), amsacrine (10 \u03bcM), etoposide (10 \u03bcM), or albendazole (10 \u03bcM) with or without the p38 inhibitor (SB203580). Following treatment, cells were fixed and stained with anti-\u03b3-tubulin (green) and anti-LAMP2 (red) antibodies. They were then imaged using an INCellAnalyzer2200. INCellAnalyzer2200 images were analyzed for lysosomal clustering with ImageJ. The graph presents the lysosomal clustering value for either DMSO or the p38 inhibitor. (n>30, from three biological replicates). Data is shown as the mean \u00b1 standard deviation. ****p<0.0001, ***p<0.001, **p<0.01, *p<0.05, two-way analysis of variance and Tukey\u2019s test. N.S., not statistically significant. (E) SH-SY5Y cells were cultured and then treated with starvation medium, Torin1 (1 \u03bcM), teniposide (10 \u03bcM), amsacrine (10 \u03bcM), or etoposide (10 \u03bcM). Subsequently, cell lysates were immunoblotted with the indicated antibodies.\n\nJIP4 serves as a scaffold protein. Specifically, it binds to p38 MAPK and facilitates its activation, undergoing phosphorylation in the process (Kelkar et al., 2005; Pinder et al., 2015). Another study reported that curcumin-induced lysosomal clustering was inhibited using p38 inhibitors (Willett et al., 2017). Indeed, a p38 inhibitor prevented topo-i-induced lysosomal clustering, but it had no effect on benzimidazole (Figure 9C and D). Western blot analysis also showed that topo-i triggers p38 phosphorylation (Figure 9E). These data indicate the potential link of topo-i-induced lysosomal clustering\u2019 with p38. Since etoposide-induced DNA damage causes p38 phosphorylation (Khedri et al., 2019), topo-i-induced DNA damage could activate p38, facilitating lysosomal clustering. Moreover, topo-i failed to induce lysosomal clustering or autophagy flux in human adenocarcinoma HeLa cells (Figure 10A), suggesting that several molecules involved in lysosomal trafficking are absent in HeLa cells. In addition, autophagy flux assay for WB shows that topo-i did not induce autophagy in HeLa cells (Figure 10B). Further investigation is needed to elucidate the cellular specificity.\n\n![Figure 10.](https://cdn.elifesciences.org/articles/98649/elife-98649-fig10-v2.jpg)\n\n**Figure 10.:** (A) HeLa cells were treated with teniposide (10 \u03bcM), amsacrine (10 \u03bcM), etoposide (10 \u03bcM),albendazole (10 \u03bcM), oxibendazole (1 \u03bcM), or mebendazole (5 \u03bcM). Images were captured using an INCellAnalyzer2200. INCellAnalyzer2200 images were analyzed using ImageJ for lysosomal clustering. Scale bar: 20 \u03bcm.The graph presents the lysosomal clustering values (n>30, from three biological replicates). Data are expressed as mean \u00b1 standard deviation (SD). ****p<0.0001, ***p<0.001, **p<0.01, *p<0.05, two-way analysis of variance (ANOVA) and Tukey\u2019s test. N.S., not statistically significant. The experiment was technically replicated at least three times. (B) HeLa cells were treated with teniposide (10 \u03bcM), amsacrine (10 \u03bcM), etoposide (10 \u03bcM), albendazole (10 \u03bcM), oxibendazole (1 \u03bcM), or mebendazole (5 \u03bcM) for 4 hr. Cell lysates were immunoblotted with the indicated antibodies. The amount of LC3II was estimated using ImageJ software (bottom panel). (C) SH-SY5Y cells were cultured in 96-well black plates and treated with oxibendazole or nocodazole at specified concentrations (in \u00b5M). After treatment, cells were fixed and stained with anti-\u03b3-tubulin (green) and anti-LAMP2 (red) antibodies, followed by imaging with an INCellAnalyzer2200. Scale bar: 20 \u03bcm. INCellAnalyzer2200 images were processed and analyzed using ImageJ for lysosomal clustering. The graph presents the lysosomal clustering values (n>30). Data are expressed as mean \u00b1 SD. *p<0.0001, as determined by one-way ANOVA and Dunnett\u2019s test (vs. dimethyl sulfoxide [DMSO]). (D) SH-SY5Y cells were treated with albendazole (10 and 100 \u00b5M) or nocodazole (0.5 and 10 \u00b5M) for 4 h. Cells were fixed and stained with LAMP1 (red) and \u03b1-tubulin (green) antibodies. Scale bar: 20 \u03bcm. (E) HeLa cells were treated with albendazole at specified concentrations (in \u00b5M). After treatment, cells were fixed and stained with anti-\u03b3-tubulin (green) and anti-LAMP2 (red) antibodies, followed by imaging with an INCellAnalyzer2200. INCellAnalyzer2200 images were processed and analyzed using ImageJ for lysosomal clustering. The graph presents the lysosomal clustering values (n >30). Data are expressed as mean \u00b1 SD. *p<0.0001, as determined by one-way ANOVA and Dunnett\u2019s test (vs. DMSO). (F) HeLa cells were treated with albendazole (10 and 25 \u00b5M) for 4 hr. Cells were fixed and stained with LAMP1 (red) and \u03b1-tubulin (green) antibodies. Scale bar: 20 \u03bcm.\n\nBenzimidazole-induced lysosomal clustering is suppressed by the knockdown of factors such as JIP4, TRPML1, Rab7, and ALG2, which indicates their potential involvement in the retrograde lysosomal transport of benzimidazole. Benzimidazole binds to \u03b2-tubulin, disrupting microtubule-based processes in parasites (Lacey, 1988). We observed that oxibendazole, even in low concentrations, promoted lysosomal clustering. However, at high concentrations, it disrupted tubulin production, thereby inhibiting lysosomal clustering (Figure 10C). We hypothesized that tubulin polymerization induced by benzimidazole plays a key role in inducing lysosomal clustering. To clarify this, we observed the behavior of tubulin filaments in response to various albendazole concentrations under confocal microscopy. Under conditions where albendazole was administered to induce lysosomal clustering, tubulin filaments were observed only near the MTOC, and the filaments in the cell periphery were disassembled. In contrast, when exposed to higher albendazole concentrations, tubulin filaments throughout the cell were disassembled, resulting in the inhibition of lysosomal clustering (Figure 10D). This would explain why benzimidazole exerts lysosomal clustering activity within a narrow concentration range.\n\nInterestingly, benzimidazole not only failed to induce lysosomal clustering in HeLa cells, but it also transported lysosomes to the cell periphery. Moreover, this drug failed to induce autophagy flux (Figure 10B). Therefore, we examined the relationships between tubulin depolymerization and lysosomal clustering induced by albendazole in HeLa cells and found that albendazole did not induce lysosomal clustering but rather inhibited it at higher concentrations (Figure 10A, D and E). Interestingly, similar to SH-SY5Y cells, a low albendazole concentration (10 \u03bcM) induced tubulin depolymerization only at the cell periphery, whereas a high concentration (100 \u03bcM) depolymerized the entire cell (Figure 10E). However, unlike SH-SY5Y cells, no characteristic accumulation of tubulin filaments was observed near the MTOC under low albendazole concentration (10 \u00b5M); instead, they were arranged around the nucleus. Concurrently, lysosomes were around these dispersed tubulin filaments. Therefore, the differences in the effects of benzimidazole in HeLa and SH-SY5Y cells lie in the dose-dependent effects on the state of tubulin filaments.\n\nUnder JIP4, TRPML1, ALG2, and Rab7 silencing, lysosomes may fail to interact with microtubules, resulting in the inhibition of lysosomal clustering. We postulated that albendazole-induced lysosomal clustering is not mediated by factors activated by specific stimuli in lysosomal transport but, rather, is induced by spatially constraining conventional lysosomal transport mediated by various adaptors (i.e. JIP4, TRPML1, ALG2, and Rab7) through tubulin disassembly.\n\nLysosomal clustering within cells has diverse roles. It is associated with the PD-related protein LRRK2 in JIP4-mediated lysosomal positioning (Bonet-Ponce et al., 2020; Boecker et al., 2021) and is involved in oxidative stress response (Sasazawa et al., 2022), pH regulation, and various cellular functions.\n\nLysosomal clustering promotes the fusion of autophagosomes with lysosomes and assists in breaking down aggregates and other cellular components. Previous studies reported that lysosomal retrograde transport enhances the fusion of autophagosomes and lysosomes during nutrient starvation, thus triggering autophagy (Korolchuk et al., 2011). Consistent with these findings, our study showed that in JIP4 KO cells, Halo-LC3 degradation was inhibited, implying the significant role of JIP4 in this process.\n\nUbiquitinated protein, p62 aggregation, and the proteasome itself, when blocked by the proteasome inhibitor MG132, are eventually degraded via the autophagy-lysosome pathway (J\u00e4nen et al., 2010; Choi et al., 2020a). Moreover, forcing lysosomes to the cell periphery by overexpressing Arl8b inhibits the breakdown of aggregates induced by MG132 (Zaarur et al., 2014). Our research provides the first evidence for the involvement of lysosomal clustering in the degradation of MG132-induced aggresomes and \u03b1Syn fibril transduction.\n\nNotably, we showed that suppressing lysosomal clustering via the JIP4\u2013pathway inhibits \u03b1Syn degradation. Furthermore, by inducing lysosomal clustering, albendazole can degrade\u03b1Syn aggregates more effectively than Torin1. Our results highlight the critical role of lysosomal clustering in enhancing protein aggregate degradation.\n\nAggregates formed by the mutant huntingtin protein associated with Huntington\u2019s disease are typically found both in the nucleus and the cytoplasm. These aggregates attract autophagosomes via the autophagy adapter CCT2, leading to their autophagy-mediated degradation (Ma et al., 2022). During this process, the recruitment of lysosomes to the aggregates is evident. In our studies, we also observed increased lysosomal clustering and elevated LC3-II levels in the insoluble fraction during \u03b1Syn aggregate formation (Figure 8D). This observation suggests that LC3-II binds to \u03b1Syn aggregates, and the subsequent accumulation of autophagosomes and lysosomes around the aggregates stimulates autophagy, leading to \u03b1Syn aggregate degradation. Receptor proteins may link LC3-II to \u03b1Syn and the degradation of huntingtin protein aggregates.\n\nOverall, our results emphasize that lysosomal clustering is pivotal in aggregate degradation. Albendazole, by enhancing autophagy through lysosomal accumulation, is a promising therapeutic agent that can be administered to break down \u03b1Syn aggregates in Lewy body disease associated with PD.\n\n## Materials and methods\n\n### Reagents\n\nA chemical library consisting of about 1,200 clinically approved drugs in Japan was supplied by Prof. Hideyuki Saya (Fujita Medical University, Japan). Teniposide, amsacrine, etoposide, albendazole, oxibendazole, and mebendazole were purchased from Tokyo Chemical industry in Tokyo, Japan. Bafilomycin A1 was purchased from Sigma-Aldrich (St. Louis, MO, USA). Jak3 inhibitor VI was purchased from Merck Millipore (Burlington, MA, USA). SB203580 was purchased from AdipoGen Life Science (Liestal, Epalinges, Switzerland).\n\n### Cell culture\n\nSH-SY5Y cells (American Type Culture Collection, ATCC#CRL-2266, Virginia, USA, RRID:CVCL_0019) were cultured in Dulbecco\u2019s Modified Eagle\u2019s Medium (Nacalai Tesque, Kyoto, Japan) supplemented with 10% fetal bovine serum (FBS; MP bio, Ringmer, UK); 100 U/mL penicillin/streptomycin (Nacalai Tesque, Kyoto, Japan); minimum essential medium non-essential amino acid solution (Thermo Fisher Scientific, Waltham, MA, USA); 1 mM sodium pyruvate; and 2 mM L-glutamine at 37 \u00b0C with 5% CO2. For starvation treatment, cells were washed with phosphate-buffered saline (PBS) and incubated in amino acid-free DMEM without serum (starvation medium; Wako). Tetracycline-on (Tet-on) cells were generated by lentiviral transduction with a pCW57.1 vector (Addgene plasmid 41393, David Root Lab) containing a single-vector Tet-on component and were cultured in the presence of 1 \u00b5g/mL doxycycline (Clontech, Mountain View, CA, USA) during induction. All the cell lines were tested negative for mycoplasma contamination (MycoAlert Detection Kit, Lonza, Basel, Switzerland).\n\n### Stable cell line generation\n\nCells stably expressing LGP120-mCherry/GFP-\u03b3-tubulin were established by transfecting the respective vectors into SH-SY5Y cells using Lipofectamine LTX (Thermo Fisher Scientific), followed by selection with G418 (Roche Diagnostics, Switzerland). mCherry- and GFP-positive cells were sorted using a Cell Sorter Aria (BD) and plated on a 96-well plate. SH-SY5Y cells stably expressing mCherry-GFP-LC3 and Halo-LC3 were generated by either lentiviral or retroviral transduction. HEK293 cells were transiently co-transfected with lentiviral vectors using PEI MAX reagent (Polysciences, Warrington, PA, USA). At 4 hr post-transfection, the medium was replaced with fresh culture medium. After 72 hr of culturing, the growth medium containing the lentivirus was collected. SH-SY5Y cells were then incubated with the virus-containing medium for 48 hr. Uninfected cells were removed using 1 \u00b5g/mL puromycin or 5 \u00b5g/mL blasticidin S (Wako).\n\n### Lysosomal clustering analysis\n\nWild-type (WT) SH-SY5Y cells or those expressing GFP-\u03b3-tubulin/LGP120-mCherry were cultured in 96-well black plates (Corning: 3603 or Greiner: 655892). After 48 hr of culture, cells were treated with lysosome-clustering compounds for 4 hr. Cells were subsequently fixed with 4% paraformaldehyde (Nakarai Tesque) and stained with Hoechst33342 (Invitrogen, H3570) for 30 min. Image capture of cells was performed using a INCellAnalyzer2200 high-content imager (GE Healthcare, Chicago, USA). Lysosome distribution was quantified using Fiji software (ImageJ ver.2.1.0/1.53 c; Schindelin et al., 2012, RRID:SCR_002285). The image analysis was as follows:\n\nI: The MTOC position is identified from the \u03b3-tubulin image by ImageJ processing (\u2018ApplyLUT\u2019\u21d2\u2019Subtract Background\u2019\u21d2\u2019Threshold\u2019).\n\nII: A circle with a diameter of approximately 7 \u03bcm is centered on the MTOC coordinates.\n\nIII: This circle is superimposed on the LGP120 image, and the LGP120 fluorescence intensity within the circle is measured. The ratio of this fluorescence intensity to the whole-cell LAMP2 intensity is then calculated.\n\nProcesses I\u2013III can be automatically performed using ImageJ programming. The lysosomal clustering value was defined as the ratio relative to the control.\n\n### Immunoblotting\n\nWestern blot analysis was performed as previously described with minor modifications (Sasazawa et al., 2012; Sasazawa et al., 2015; Sasazawa et al., 2022). Cells were washed with cold PBS and lysed in lysis buffer (25 mM Tris\u2013HCl pH 7.6, 150 mM NaCl, 1% NP-40, 1% sodium deoxycholate, 0.1% sodium dodecyl sulfate [SDS], and protease inhibitor cocktail) for 15 min on ice. The lysates were centrifuged at 20,000 g for 15 min to obtain soluble cell lysates. For SDS polyacrylamide gel electrophoresis (SDS-PAGE), samples were mixed with 4x SDS sample buffer and boiled at 95 \u00b0C for 5 min. Protein (10 \u03bcg) was added to each lane of the gel, separated by SDS-PAGE (Bio-Rad), and then transferred to a polyvinylidene difluoride (PVDF) membrane (Bio-Rad) using transfer buffer (25 mM Tris, 192 mM glycine, and 10% v/v methanol). Immunoblot analysis was performed using the indicated antibodies, and immunoreactive proteins were visualized using the West Dura Extended Duration Substrate (Thermo Fisher Scientific). The primary antibodies used were as follows: anti-LC3B (Cell Signaling Technology Inc, Danvers, MA, RRID:AB_2137707); anti-\u03b2-actin (Merck Millipore, RRID:AB_2223041); anti-phospho-mTORC1 (Ser2448; Cell Signaling Technology Inc, RRID:AB_330970); anti-mTORC1 (Cell Signaling Technology Inc RRID:AB_330978),;anti-phospho-ULK1 (Ser757; Cell Signaling Technology Inc RRID:AB_2665508); anti-ULK1 (Cell Signaling Technology Inc, RRID:AB_11178668); anti-phospho-p70S6K (Cell Signaling Technology Inc,RRID:AB_2269803); anti-p70S6K (Cell Signaling Technology Inc, RRID:AB_390722); anti-phospho-S6 (Cell Signaling Technology Inc, RRID:AB_916156); anti-S6 (Cell Signaling Technology Inc, RRID:AB_331355); anti-p62 (Abcam, RRID:AB_945626); anti-multi-ubiquitin (MBL, RRID:AB_592937); anti-FIP200 (D10D11; Cell Signaling Technology Inc, RRID:AB_2797913); anti-GAPDH (Cell Signaling Technology Inc, RRID:AB_10622025); anti-TMEM55B (Proteintech, RRID:AB_2879391); anti-ALG2 (R&D Systems, Inc, RRID:AB_10972311); anti-JIP4 (Abcam, RRID:AB_299021); and anti-GFP (Proteintech, RRID:AB_11182611).\n\nTo analyze phosphorylated JIP4 levels, lysates underwent 6% Phos-tag (50 \u03bcmol/L) acrylamide gel (FUJIFILM Wako Pure Chemical) electrophoresis. After electrophoresis, the gel was soaked in running buffer with 10 mM ethylenediaminetetraacetic acid (EDTA) twice for 10 min each, and then placed in transfer buffer for 10 min. Proteins were transferred to a PVDF membrane and probed with the anti-JIP4 antibody.\n\n### Flow cytometry\n\nCells detached with trypsin-EDTA were resuspended in 10% FBS and 1 \u00b5g/mL 4\u2032,6-diamidino-2-phenylindole (DAPI) in PBS. They were then passed through a 70 \u00b5m cell strainer and analyzed using lasers equipped with NUV (BD) at 375 nm (DAPI), 488 nm (GFP), and 561 nm (RFP). Dead cells were identified by DAPI staining. For each sample, 10,000 cells were acquired, and RFP/GFP fluorescence ratios (red fluorescence intensity divided by green fluorescence intensity) were calculated for RFP-positive cells.\n\n### Immunofluorescence\n\nCells were cultured on coverslips and fixed with 4% paraformaldehyde (Nakarai Tesque) for 30 min. For immunostaining, fixed cells were permeabilized with 50 \u00b5g/mL digitonin in PBS for 15 min, blocked with 4% bovine serum albumin in PBS for 30 min, and then incubated with primary and secondary antibodies for 1 hr. Fluorescence images were captured using an LSM880 confocal laser scanning microscope (Carl Zeiss, Oberkochen, Germany). The primary antibodies used were as follows: anti-LAMP2 (Development Studies Hybridoma Bank, Iowa City, IA, UA; clone H4B4, RRID:AB_2134755); anti-\u03b3-tubulin (Abcam, RRID:AB_2904198); anti-JIP4 (Thermo Fisher Scientific, RRID:AB_2642850).\n\n### \u03b1-Synuclein aggregation assays\n\nSH-SY5Y cells overexpressing \u03b1-synuclein (\u03b1Syn)-GFP were cultured for 24 hr. Cells were transfected with \u03b1Syn fibril (0.2 \u00b5g/mL; Cosmobio) using Lipofectamine 3000 (Thermo Fisher Scientific). At 48 hr post-transfection, cells were evaluated either by immunostaining or the insoluble fraction assay.\n\n### Insoluble fraction assay\n\nInsoluble fraction analysis was performed as previously described with minor modifications (Oji et al., 2020). Cultured cells were washed with ice-cold PBS and lysed in Triton-X-100 buffer (50 mM Tris, 150 mM NaCl, 1 mM EDTA, 1% Triton-X-100, 10% glycerol, and protease inhibitor cocktail [Thermo Fisher Scientific]). Lysates were then centrifuged at 100,000 g for 20 min at 4 \u00b0C. The supernatants were designated as the detergent-soluble fraction. Pellets were washed with Triton-X-100 buffer, resuspended in SDS buffer (60 mM Tris-Cl [pH 6.8], 1 mM EDTA, 10% glycerol, 2% SDS, and protease inhibitor cocktail [Thermo Fisher Scientific]), and sonicated for 5 s\u00d74 using a microtip sonicator. After centrifugation at 13,000 rpm for 15 min, the supernatants were identified as the detergent-insoluble fraction. Equal volumes of both insoluble and soluble fractions were boiled at 95 \u00b0C for 10 min in SDS sample buffer and then analyzed by immunoblotting.\n\n### siRNA transfection\n\nTransfection of SH-SY5Y cells with siRNAs was performed using Lipofectamine RNAiMax (Thermo Fisher Scientific) following the manufacturer\u2019s instructions. The siRNAs used were described previously (Sasazawa et al., 2022) as follows: TRPML1 (SASI_Hs01_00067195); ALG2 (SASI_Hs01_00030269); Rab7a (SASI_Hs01_00104360); JIP4 (SASI_Hs01_00194613); TMEM55B (SASI_Hs02_00322347); and RILP CaMK2G (SASI_Hs01_00118118), all obtained from Sigma-Aldrich. Non-coding siRNA was obtained from Dharmacon (Lafayette, CO, USA).\n\n### Ultrastructural analysis of SH-SY5Y cells by electron microscopy\n\nCells were first treated with a solution containing 2% glutaraldehyde and 50 mM sucrose (Wako) in a 0.1 M phosphate buffer at pH 7.4. This was followed by post-fixation with 1% osmium tetroxide in the same buffer. The fixed samples were then progressively dehydrated using a graded ethanol series and embedded in Epok812 (Okenshoji). Ultrathin sections, approximately 70 nm thick, were prepared using a UC6 ultramicrotome (Leica) and subsequently stained with uranyl acetate and lead citrate. The sections were analyzed under a transmission electron microscope (JEM-1400, JEOL).\n\n### Measurement of intracellular calcium\n\nThe quantitative analyses of intracellular calcium were performed using Fluo4-AM by a plate reader (BioTek Synergy H1, Agilent Technologies, California, USA). SH-SY5Y cells were cultured in 96-well black plates (Corning: 3603 or Greiner: 655892). After 48 hr of culture, cells were treated with lysosomal clustering compounds for 4 hr. Cells were stained with Fluo4-AM (1 mg/ml) in BBS buffer (20 mM HEPES, 135 mM NaCl, 5.4 mM KCl, 2 mM CaCl2, 10 mM glucose) and washed once with BBS buffer before examination. With the excitation wavelength at 488 nm, fluorescence intensities at 518 nm were measured using the plate reader.\n\n### The measurement of the reactive oxygen species\n\nThe amount of intracellular reactive oxygen species (ROS) is examined by ROS Assay Kit -Highly Sensitive DCFH-DA (Dojindo, Japan). SH-SY5Y cells were cultured in 96-well black plates (Corning: 3603 or Greiner: 655892). After 48 hr of culture, cells were treated with lysosomal-clustering compounds for 4 hr. Cells were subsequently treated with a working solution for 30 min, which was prepared by dilution of Highly Sensitive DCFH-DA Dye (1:1000) in reconstituted DMEM. After being washed with a working solution, phenol red-free DMEM (Thermo Fisher Scientific) were added and fluorescence intensities were measured using an INCellAnalyzer 2200. The normalized pixels above the threshold of FITC were determined using ImageJ.\n\n### Materials availability statement\n\nThe Fiji code used for data analysis is available from supporting files. All genetic reagents are available from the corresponding author upon reasonable request.\n",
+      "created_at": "2025-12-04T04:43:50.672275Z"
+    },
+    {
+      "id": "08833166-c777-4969-a005-cfd9fd130904",
+      "submission_id": "e32c32f4-c5ef-43c6-aa25-c880b21f39a4",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Li Yu, https://ror.org/03cve4549 Tsinghua University China\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.98649.sa0](https://doi.org/10.7554/eLife.98649.sa0)\n\nThis study reports a valuable finding regarding the therapeutic efficacy of compounds fostering lysosomal clustering to enhance the clearance of protein aggregates in neurodegenerative disorders. The data were collected and analyzed using solid and validated methodology. While a deeper mechanistic understanding would have strengthened the study, the work will be of interest to cell biologist work on autophagy and lysosome and medical biologists working on neurodegenerative diseases.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Li Yu, https://ror.org/03cve4549 Tsinghua University China\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.98649.sa1](https://doi.org/10.7554/eLife.98649.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\n[Editors' note: this paper was reviewed by Review Commons.]\n",
+      "created_at": "2025-12-04T04:43:50.672275Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T04:43:50.672275Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T04:43:50.672275Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "f083f4d1-fbe3-4617-addd-7a589687e9d9",
+      "content_id": "33784320-f8cf-46a9-b714-87ad6a859a0c",
+      "claim_id": "C1",
+      "claim": "The autophagy-lysosome pathway plays an indispensable role in protein quality control by degrading abnormal organelles and proteins including \u03b1-synuclein (\u03b1Syn) associated with the pathogenesis of Parkinson's disease (PD).",
+      "claim_type": "EXPLICIT",
+      "source": "The autophagy-lysosome pathway plays an indispensable role in the protein quality control by degrading abnormal organelles and proteins including \u03b1-synuclein (\u03b1Syn) associated with the pathogenesis of Parkinson's disease (PD).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by established scientific knowledge about the autophagy-lysosome pathway and its role in neurodegenerative diseases.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:43:50.672275Z"
+    },
+    {
+      "id": "d1ac3b0a-c509-48c7-89d5-9fbf4359ee22",
+      "content_id": "33784320-f8cf-46a9-b714-87ad6a859a0c",
+      "claim_id": "C2",
+      "claim": "Through high-throughput chemical screening, 6 out of 1200 clinically approved drugs were identified that enable lysosomes to accumulate around the MTOC with autophagy flux enhancement.",
+      "claim_type": "EXPLICIT",
+      "source": "Through high-throughput chemical screening, we identified 6 out of 1200 clinically approved drugs enabling the lysosomes to accumulate around the MTOC with autophagy flux enhancement.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from the screening described in the manuscript, as shown in Figures 1 and 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:43:50.672275Z"
+    },
+    {
+      "id": "a53d8e1b-7739-4206-a84f-715027ba2539",
+      "content_id": "33784320-f8cf-46a9-b714-87ad6a859a0c",
+      "claim_id": "C3",
+      "claim": "The identified compounds induce lysosomal clustering through a JIP4-TRPML1-dependent mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "We further demonstrated that these compounds induce the lysosomal clustering through a JIP4-TRPML1-dependent mechanism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from knockdown experiments shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:43:50.672275Z"
+    },
+    {
+      "id": "18d80ce4-add3-4311-a204-13b28026d043",
+      "content_id": "33784320-f8cf-46a9-b714-87ad6a859a0c",
+      "claim_id": "C4",
+      "claim": "Albendazole promoted the autophagy-dependent degradation of Triton-X-insoluble, proteasome inhibitor-induced aggregates.",
+      "claim_type": "EXPLICIT",
+      "source": "Among them, the lysosomal-clustering compound albendazole promoted the autophagy-dependent degradation of Triton-X-insoluble, proteasome inhibitor-induced aggregates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:43:50.672275Z"
+    },
+    {
+      "id": "faa8461b-4669-45d0-9573-e2e53a3d2bb9",
+      "content_id": "33784320-f8cf-46a9-b714-87ad6a859a0c",
+      "claim_id": "C5",
+      "claim": "In a cellular PD model, albendazole boosted insoluble \u03b1Syn degradation.",
+      "claim_type": "EXPLICIT",
+      "source": "In a cellular PD model, albendazole boosted insoluble \u03b1Syn degradation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 8.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:43:50.672275Z"
+    },
+    {
+      "id": "bab3cc8f-cad5-41d8-b64f-7b8385bb1c0e",
+      "content_id": "33784320-f8cf-46a9-b714-87ad6a859a0c",
+      "claim_id": "C6",
+      "claim": "Lysosomal clustering can facilitate the breakdown of protein aggregates.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results revealed that lysosomal clustering can facilitate the breakdown of protein aggregates, suggesting that lysosome-clustering compounds may offer a promising therapeutic strategy against neurodegenerative diseases characterized by the presence of aggregate-prone proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the experimental data presented throughout the manuscript, particularly in Figures 7 and 8.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:43:50.672275Z"
+    },
+    {
+      "id": "f14c16b5-0de0-4e11-89fe-ff2ef69bfb91",
+      "content_id": "33784320-f8cf-46a9-b714-87ad6a859a0c",
+      "claim_id": "C7",
+      "claim": "PD is the second most prevalent progressive neurodegenerative disorder after Alzheimer's disease.",
+      "claim_type": "EXPLICIT",
+      "source": "PD, the second most prevalent progressive neurodegenerative disorder after Alzheimer's disease, is characterized by dopamine depletion due to the loss of dopaminergic neurons in the substantia nigra pars compacta.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about the epidemiology of Parkinson's disease.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:43:50.672275Z"
+    },
+    {
+      "id": "3aaf4275-690e-46de-9f05-433cd2c821ec",
+      "content_id": "33784320-f8cf-46a9-b714-87ad6a859a0c",
+      "claim_id": "C8",
+      "claim": "PD affects approximately 1% of individuals over the age of 65.",
+      "claim_type": "EXPLICIT",
+      "source": "PD affects a broad range of motor and nonmotor functions and develops in approximately 1% of individuals over the age of 65.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established epidemiological knowledge about Parkinson's disease prevalence.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:43:50.672275Z"
+    },
+    {
+      "id": "7532d885-d74e-4930-a652-99a940b276c4",
+      "content_id": "33784320-f8cf-46a9-b714-87ad6a859a0c",
+      "claim_id": "C9",
+      "claim": "Levodopa is a primary therapy for PD through dopamine supplementation.",
+      "claim_type": "EXPLICIT",
+      "source": "One primary therapy for PD is dopamine supplementation, often through medications like levodopa.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established clinical knowledge about PD treatment.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:43:50.672275Z"
+    },
+    {
+      "id": "badd87d2-1be1-4c6e-82e5-94dfbecb27b0",
+      "content_id": "33784320-f8cf-46a9-b714-87ad6a859a0c",
+      "claim_id": "C10",
+      "claim": "Chronic use of levodopa can result in adverse effects such as wearing off and dyskinesia.",
+      "claim_type": "EXPLICIT",
+      "source": "While levodopa has a transformative effect, its chronic use can result in adverse effects, such as wearing off and dyskinesia.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established clinical knowledge about levodopa side effects.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:43:50.672275Z"
+    },
+    {
+      "id": "a9cfcd85-9010-4db3-9f28-905874df3ecf",
+      "content_id": "33784320-f8cf-46a9-b714-87ad6a859a0c",
+      "claim_id": "C11",
+      "claim": "Current treatments do not prevent the loss of dopaminergic neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Since current treatments do not prevent the loss of dopaminergic neurons, new therapeutic strategies are urgently needed to address the challenges of PD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the limitations of current PD treatments.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:43:50.672275Z"
+    },
+    {
+      "id": "e6624cc5-b2f7-42ee-b10c-d4ae685853b3",
+      "content_id": "33784320-f8cf-46a9-b714-87ad6a859a0c",
+      "claim_id": "C12",
+      "claim": "The aggregation and deposition of the \u03b1Syn protein (Lewy bodies) within dopaminergic neurons in the substantia nigra play a critical role in the etiology of PD.",
+      "claim_type": "EXPLICIT",
+      "source": "The aggregation and deposition of the \u03b1Syn protein, also known as Lewy bodies, within dopaminergic neurons in the substantia nigra play a critical role in the etiology of PD (Spillantini et al., 1997; Postuma et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:43:50.672275Z"
+    },
+    {
+      "id": "c002bb95-85f1-43db-8c13-79e2adfa9b29",
+      "content_id": "33784320-f8cf-46a9-b714-87ad6a859a0c",
+      "claim_id": "C13",
+      "claim": "Autophagy is a primary protein degradation system that removes \u03b1Syn aggregates.",
+      "claim_type": "EXPLICIT",
+      "source": "Research interest is increasing in the induction of autophagy, a primary protein degradation system that removes \u03b1Syn aggregates, using small-molecule compounds as a therapeutic approach (Webb et al., 2003; Gao et al., 2019; Choi et al., 2020b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:43:50.672275Z"
+    },
+    {
+      "id": "f039d0c8-875e-4577-b145-bd9324ef0e68",
+      "content_id": "33784320-f8cf-46a9-b714-87ad6a859a0c",
+      "claim_id": "C14",
+      "claim": "During autophagy, an isolation membrane engulfs part of the cytoplasm, forming a double-membraned vesicle known as an autophagosome.",
+      "claim_type": "EXPLICIT",
+      "source": "During autophagy, an isolation membrane engulfs part of the cytoplasm, forming a double-membraned vesicle known as an autophagosome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the autophagy process.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:43:50.672275Z"
+    },
+    {
+      "id": "597f5659-a8b5-4ffb-a22c-3ddbe96e6003",
+      "content_id": "33784320-f8cf-46a9-b714-87ad6a859a0c",
+      "claim_id": "C15",
+      "claim": "Autophagosomes fuse with lysosomes, creating autolysosomes where lysosomal hydrolases break down the vesicle's contents.",
+      "claim_type": "EXPLICIT",
+      "source": "This organelle then fuses with lysosomes, creating autolysosomes where lysosomal hydrolases break down the vesicle's contents.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the autophagy process.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:43:50.672275Z"
+    },
+    {
+      "id": "e67d2ce7-ecfe-45df-9f18-5a66cf3193ea",
+      "content_id": "33784320-f8cf-46a9-b714-87ad6a859a0c",
+      "claim_id": "C16",
+      "claim": "Rapamycin can inhibit \u03b1Syn aggregation in vivo and improve motor functions.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, rapamycin, a recognized autophagy inducer, can inhibit \u03b1Syn aggregation in vivo and improve motor functions (Crews et al., 2010; Dehay et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:43:50.672275Z"
+    },
+    {
+      "id": "2bfc4357-f4e5-4576-a7ea-503f90739454",
+      "content_id": "33784320-f8cf-46a9-b714-87ad6a859a0c",
+      "claim_id": "C17",
+      "claim": "Nilotinib boosts autophagic \u03b1Syn clearance in \u03b1Syn transgenic PD model mice.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, while nilotinib boosts autophagic \u03b1Syn clearance in \u03b1Syn transgenic PD model mice, its performance in clinical trials was underwhelming.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on previous research findings.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:43:50.672275Z"
+    },
+    {
+      "id": "4e4e2cb6-9e5d-4bbe-a006-a78736494ecc",
+      "content_id": "33784320-f8cf-46a9-b714-87ad6a859a0c",
+      "claim_id": "C18",
+      "claim": "Nilotinib's performance in clinical trials was underwhelming.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, while nilotinib boosts autophagic \u03b1Syn clearance in \u03b1Syn transgenic PD model mice, its performance in clinical trials was underwhelming.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on previous clinical trial results.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:43:50.672275Z"
+    },
+    {
+      "id": "b7a8abe3-53a1-4ed8-aec7-c83180ce90a5",
+      "content_id": "33784320-f8cf-46a9-b714-87ad6a859a0c",
+      "claim_id": "C19",
+      "claim": "Lysosomes clustering around the MTOC are pivotal in managing autophagic flux.",
+      "claim_type": "EXPLICIT",
+      "source": "Lysosomes clustering around the (MTOC) are pivotal in managing autophagic flux.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:43:50.672275Z"
+    },
+    {
+      "id": "4e8dd46a-4218-473a-a6de-293d56ba0203",
+      "content_id": "33784320-f8cf-46a9-b714-87ad6a859a0c",
+      "claim_id": "C20",
+      "claim": "The close physical association between clustered lysosomes and autophagosomes facilitates their fusion and inhibits mTORC1.",
+      "claim_type": "EXPLICIT",
+      "source": "The close physical association between these clustered lysosomes and autophagosomes facilitates their fusion as well as inhibition of the mechanistic target of rapamycin complex1 (Kimura et al., 2008; Korolchuk et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:43:50.672275Z"
+    },
+    {
+      "id": "72996764-862e-4f9b-97bc-642a16529e45",
+      "content_id": "33784320-f8cf-46a9-b714-87ad6a859a0c",
+      "claim_id": "C21",
+      "claim": "The transport of lysosomes to the MTOC is dependent on the dynein/dynactin complex.",
+      "claim_type": "EXPLICIT",
+      "source": "The transport of lysosomes to the MTOC is dependent on the dynein/dynactin complex and involves several protein pathways",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about lysosomal transport mechanisms.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:43:50.672275Z"
+    },
+    {
+      "id": "ba5b1511-0f82-49f0-bfa0-576820595eef",
+      "content_id": "33784320-f8cf-46a9-b714-87ad6a859a0c",
+      "claim_id": "C22",
+      "claim": "The Rab7\u2013RILP pathway is involved in lysosomal transport to the MTOC.",
+      "claim_type": "EXPLICIT",
+      "source": "(i) the small GTPase Rab7\u2013Rab7 effector Rab-interacting lysosomal protein (RILP) pathway Johansson et al., 2007; Rocha et al., 2009;",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:43:50.672275Z"
+    },
+    {
+      "id": "625499cc-0147-4276-886a-3575aaa6da2e",
+      "content_id": "33784320-f8cf-46a9-b714-87ad6a859a0c",
+      "claim_id": "C23",
+      "claim": "The TRPML1\u2013ALG2 pathway is involved in lysosomal transport to the MTOC.",
+      "claim_type": "EXPLICIT",
+      "source": "(ii) the transient receptor potential mucolipin 1 (TRPML1)\u2013apoptosis-linked gene 2 (ALG2) pathway Li et al., 2016;",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:43:50.672275Z"
+    },
+    {
+      "id": "06bb3a38-c858-464b-8ecb-5c8d692edc3e",
+      "content_id": "33784320-f8cf-46a9-b714-87ad6a859a0c",
+      "claim_id": "C24",
+      "claim": "The TMEM55B-JIP4 pathway is involved in lysosomal transport to the MTOC.",
+      "claim_type": "EXPLICIT",
+      "source": "(iii) the lysosomal membrane protein TMEM55B-JNK-interacting protein 4 (JIP4) pathway (Willett et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:43:50.672275Z"
+    },
+    {
+      "id": "4821fb71-c979-4eb5-afbf-7735230f1ea5",
+      "content_id": "33784320-f8cf-46a9-b714-87ad6a859a0c",
+      "claim_id": "C25",
+      "claim": "Acrolein/H2O2 induces lysosomal clustering through the phosphorylated JIP4\u2013TRPML1\u2013ALG2 complex induced by oxidative stress.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we recently identified an additional pathway involving the phosphorylated JIP4\u2013TRPML1\u2013ALG2 complex induced by oxidative stress (Sasazawa et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to the authors' previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:43:50.672275Z"
+    },
+    {
+      "id": "dc6dad2e-7377-40e6-87a9-4f341acf6092",
+      "content_id": "33784320-f8cf-46a9-b714-87ad6a859a0c",
+      "claim_id": "C26",
+      "claim": "The phosphorylation status of JIP4 at T217 by CaMK2G serves as a controlling switch for pathway activation.",
+      "claim_type": "EXPLICIT",
+      "source": "We also hypothesize that the phosphorylation status of JIP4 at T217 by CaMK2G serves as a controlling switch, altering its binding affinity and thus dictating the pathway activated by JIP4.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis based on the authors' previous work.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:43:50.672275Z"
+    },
+    {
+      "id": "946a07c4-2e2f-476d-ab17-2803c02e7d7a",
+      "content_id": "33784320-f8cf-46a9-b714-87ad6a859a0c",
+      "claim_id": "C27",
+      "claim": "Dynactin mutations are linked to Perry's Disease.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, dynactin mutations are linked to Perry's Disease, a rare hereditary neurodegenerative condition marked by autosomal dominant parkinsonism (Konno et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:43:50.672275Z"
+    },
+    {
+      "id": "bbc76a93-772d-4740-a158-ac9a6ee4fd06",
+      "content_id": "33784320-f8cf-46a9-b714-87ad6a859a0c",
+      "claim_id": "C28",
+      "claim": "Dynactin mutations disrupt lysosomal distribution, leading to impaired autophagy and cell death.",
+      "claim_type": "EXPLICIT",
+      "source": "Such mutations disrupt lysosomal distribution, leading to impaired autophagy and cell death (Ishikawa et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:43:50.672275Z"
+    },
+    {
+      "id": "9d7f19a6-5fbe-418c-9b30-5cb29cffe537",
+      "content_id": "33784320-f8cf-46a9-b714-87ad6a859a0c",
+      "claim_id": "C29",
+      "claim": "LRRK2 is essential in regulating autophagosome and lysosomal trafficking, particularly in partnership with JIP4.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, leucine-rich repeat kinase 2 (LRRK2), a causative protein in PD, is essential in regulating autophagosome and lysosomal trafficking, particularly in partnership with JIP4 (Bonet-Ponce et al., 2020; Kluss et al., 2022a; Kluss et al., 2022b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:43:50.672275Z"
+    },
+    {
+      "id": "347a3862-aa31-4979-b83a-e78ca06e155a",
+      "content_id": "33784320-f8cf-46a9-b714-87ad6a859a0c",
+      "claim_id": "C30",
+      "claim": "Protein aggregates accumulate around MTOCs and are degraded via the autophagy-lysosome pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, mounting evidence suggests that protein aggregates, including those causing neurodegenerative diseases, accumulate around MTOCs and are degraded via the autophagy-lysosome pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:43:50.672275Z"
+    },
+    {
+      "id": "cf68330f-376e-475c-8212-dc50b69b6666",
+      "content_id": "33784320-f8cf-46a9-b714-87ad6a859a0c",
+      "claim_id": "C31",
+      "claim": "Proteasome inhibitors aggregate near the nucleus and undergo autophagic degradation.",
+      "claim_type": "EXPLICIT",
+      "source": "Proteasome inhibitors, for example, aggregate near the nucleus and undergo autophagic degradation (J\u00e4nen et al., 2010; Choi et al., 2020a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:43:50.672275Z"
+    },
+    {
+      "id": "59c4e4bd-bb38-49a5-a369-61382ffa7a57",
+      "content_id": "33784320-f8cf-46a9-b714-87ad6a859a0c",
+      "claim_id": "C32",
+      "claim": "Mutant huntingtin forms aggresomes near the nucleus and is degraded by autophagy.",
+      "claim_type": "EXPLICIT",
+      "source": "In the same vein, the pathogenic protein mutant huntingtin, linked to Huntington's disease, forms aggresomes near the nucleus and is degraded by autophagy (Waelter et al., 2001; Ma et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:43:50.672275Z"
+    },
+    {
+      "id": "61bf14b5-eaa0-4cd1-929f-29b6acd5ebd7",
+      "content_id": "33784320-f8cf-46a9-b714-87ad6a859a0c",
+      "claim_id": "C33",
+      "claim": "\u03b1Syn aggregates that form Lewy bodies in PD patients accumulate near the MTOC.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, the \u03b1Syn aggregates that form Lewy bodies in patients with PD accumulate near the MTOC (Olanow et al., 2004), hinting at the possibility that MTOC-centric autophagy facilitates their removal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:43:50.672275Z"
+    },
+    {
+      "id": "dab8d6a4-7d95-411c-a5a7-692366b76960",
+      "content_id": "33784320-f8cf-46a9-b714-87ad6a859a0c",
+      "claim_id": "C34",
+      "claim": "Arl8b overexpression inhibits the degradation of \u03b1Syn-A53T.",
+      "claim_type": "EXPLICIT",
+      "source": "Prior research has shown that Arl8b overexpression inhibits the degradation of \u03b1Syn-A53T (Korolchuk et al., 2011), suggesting that lysosomal retrograde trafficking is vital in the breakdown of \u03b1Syn-A53T.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:43:50.672275Z"
+    },
+    {
+      "id": "8581882d-d25c-48b6-b1bc-0e7e4e291187",
+      "content_id": "33784320-f8cf-46a9-b714-87ad6a859a0c",
+      "claim_id": "C35",
+      "claim": "Starvation resulted in evident lysosomal clustering.",
+      "claim_type": "EXPLICIT",
+      "source": "Starvation resulted in evident lysosomal clustering, noticeable in fluorescence images and corroborated by the elevated lysosomal clustering value (Figure 1D and E)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1D and E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:43:50.672275Z"
+    },
+    {
+      "id": "c1ae3f7c-0cfe-4d13-9310-f894e7ebdc12",
+      "content_id": "33784320-f8cf-46a9-b714-87ad6a859a0c",
+      "claim_id": "C36",
+      "claim": "63 compounds out of approximately 1200 exhibited a high lysosomal clustering value greater than 1.1.",
+      "claim_type": "EXPLICIT",
+      "source": "Of these, 63 exhibited a high lysosomal clustering value greater than 1.1 (Figure 1F and Figure 1\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:43:50.672275Z"
+    },
+    {
+      "id": "de12de00-2114-4cf4-983a-58053855c3d6",
+      "content_id": "33784320-f8cf-46a9-b714-87ad6a859a0c",
+      "claim_id": "C37",
+      "claim": "Six compounds were identified as lysosomal-clustering autophagy inducers.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified six compounds that induced lysosomal clustering and subsequent enhancement of autophagy (Figure 2B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:43:50.672275Z"
+    },
+    {
+      "id": "b37441c5-dbc2-4b00-a3da-5b5b1ebe540e",
+      "content_id": "33784320-f8cf-46a9-b714-87ad6a859a0c",
+      "claim_id": "C38",
+      "claim": "The six compounds were categorized into two types: topoisomerase II inhibitors and benzimidazole class anthelmintics.",
+      "claim_type": "EXPLICIT",
+      "source": "which were categorized into two types: topoisomerase II inhibitors (topo-i), including teniposide, amsacrine, and etoposide; and benzimidazole class anthelmintics, comprising albendazole, oxibendazole, and mebendazole.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a classification based on the chemical properties of the identified compounds.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:43:50.672275Z"
+    },
+    {
+      "id": "0b152536-91c2-48cc-909d-1b35fef7d3be",
+      "content_id": "33784320-f8cf-46a9-b714-87ad6a859a0c",
+      "claim_id": "C39",
+      "claim": "Starvation and treatment with teniposide or albendazole promoted autophagosomal perinuclear clustering and increased their colocalization with lysosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "An immunofluorescence assay of R-G-LC3-expressing SH-SY5Y cells revealed that both starvation and treatment with either teniposide or albendazole promoted autophagosomal perinuclear clustering and increased their colocalization with lysosomes (autolysosomes) (Figure 2\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2\u2014figure supplement 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:43:50.672275Z"
+    },
+    {
+      "id": "9a089eb6-7879-4874-821b-ac816921980e",
+      "content_id": "33784320-f8cf-46a9-b714-87ad6a859a0c",
+      "claim_id": "C40",
+      "claim": "The six compounds exhibited LC3B lipidation, an effect that was amplified by bafilomycin A1.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, an autophagy flux assay conducted via western blot indicated that these compounds exhibited LC3B lipidation, an effect that was amplified by the lysosomal inhibitor bafilomycin A1 (Mizushima and Yoshimori, 2007; Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:43:50.672275Z"
+    },
+    {
+      "id": "2bc889c2-2e64-4f7c-8cf1-3dbda2be8663",
+      "content_id": "33784320-f8cf-46a9-b714-87ad6a859a0c",
+      "claim_id": "C41",
+      "claim": "The six compounds only marginally reduced p-p70S6K levels without affecting p-S6, p-mTOR, and p-ULK1.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the six compounds only marginally reduced the p-p70S6K levels without affecting p-S6, p-mTOR, and p-ULK1 (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:43:50.672275Z"
+    },
+    {
+      "id": "dd0362dd-abc6-4a56-8551-0ce481fd8315",
+      "content_id": "33784320-f8cf-46a9-b714-87ad6a859a0c",
+      "claim_id": "C42",
+      "claim": "The six compounds could induce autophagy independently of mTORC1 activity.",
+      "claim_type": "EXPLICIT",
+      "source": "the six compounds could induce autophagy independently of mTORC1 activity, indicating their potential as promising candidates for PD therapy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the experimental data showing lack of effect on mTOR pathway markers.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:43:50.672275Z"
+    },
+    {
+      "id": "a25abc55-4c3f-4bae-9204-1a64bf17d399",
+      "content_id": "33784320-f8cf-46a9-b714-87ad6a859a0c",
+      "claim_id": "C43",
+      "claim": "JIP4 and TRPML1 knockdown hindered teniposide-induced lysosomal clustering.",
+      "claim_type": "EXPLICIT",
+      "source": "JIP4 and TRPML1 knockdown hindered teniposide-induced lysosomal clustering, whereas TMEM55B, ALG2, Rab7, and RILP knockdown did not.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:43:50.672275Z"
+    },
+    {
+      "id": "5ab34800-c93d-4ada-8466-9d7ff27145be",
+      "content_id": "33784320-f8cf-46a9-b714-87ad6a859a0c",
+      "claim_id": "C44",
+      "claim": "Albendazole-induced lysosomal clustering was hindered by JIP4, TRPML1, ALG2, and Rab7 knockdown.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, albendazole-induced lysosomal clustering was hindered by JIP4, TRPML1, ALG2, and Rab7 knockdown, but TMEM55B and RILP knockdown had no such effect (Figure 4A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:43:50.672275Z"
+    },
+    {
+      "id": "c2292c0c-dca4-4e5e-9521-ed88bb910ac4",
+      "content_id": "33784320-f8cf-46a9-b714-87ad6a859a0c",
+      "claim_id": "C45",
+      "claim": "Topo-i and benzimidazole induced lysosomal clustering independently of TMEM55B.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the knockdown efficiency of TMEM55B was sufficient, and these compounds (topo-i and benzimidazole) induced lysosomal clustering independently of TMEM55B, unlike when under starvation conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4\u2014figure supplement 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:43:50.672275Z"
+    },
+    {
+      "id": "85abaf81-6559-45df-87ba-85ff40c694b7",
+      "content_id": "33784320-f8cf-46a9-b714-87ad6a859a0c",
+      "claim_id": "C46",
+      "claim": "In JIP4 knockout cells, lysosomal clustering induction by all six compounds was suppressed.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, in JIP4 knockout (KO) cells, lysosomal clustering induction by all six compounds was suppressed (Figure 4C and D, and Figure 4\u2014figure supplement 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4C and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:43:50.672275Z"
+    },
+    {
+      "id": "65916693-bc04-485a-9159-8a49779032ac",
+      "content_id": "33784320-f8cf-46a9-b714-87ad6a859a0c",
+      "claim_id": "C47",
+      "claim": "Teniposide and albendazole treatment increased colocalization of JIP4 with LAMP2.",
+      "claim_type": "EXPLICIT",
+      "source": "Immunostaining using JIP4 antibodies revealed increased colocalization of JIP4 with LAMP2 under both teniposide and albendazole treatment conditions (Figure 4E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:43:50.672275Z"
+    },
+    {
+      "id": "a9588768-f340-4e3b-a036-7868f5d82638",
+      "content_id": "33784320-f8cf-46a9-b714-87ad6a859a0c",
+      "claim_id": "C48",
+      "claim": "Jak3 inhibitor VI effectively suppressed lysosomal clustering induced by the three topo-i compounds.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, Jak3 inhibitor VI effectively suppressed lysosomal clustering induced by the three topo-i compounds. In contrast, the effects of benzimidazole remained largely unaffected (Figure 5A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 5A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:43:50.672275Z"
+    },
+    {
+      "id": "455e8142-ce45-4ce3-8fca-2632fb3aa386",
+      "content_id": "33784320-f8cf-46a9-b714-87ad6a859a0c",
+      "claim_id": "C49",
+      "claim": "All three topo-i compounds induced JIP4 phosphorylation, an effect counteracted by Jak3 inhibitor VI.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, Phos-tag sodium dodecyl sulfate-polyacrylamide gel electrophoresis (SDS-PAGE) analyses revealed that all three topo-i compounds induced JIP4 phosphorylation, an effect counteracted by Jak3 inhibitor VI (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:43:50.672275Z"
+    },
+    {
+      "id": "7a6aeb2a-9e5f-42cb-970f-e46769ff283e",
+      "content_id": "33784320-f8cf-46a9-b714-87ad6a859a0c",
+      "claim_id": "C50",
+      "claim": "siCaMK2G inhibited lysosomal clustering induced by all three topo-i compounds.",
+      "claim_type": "EXPLICIT",
+      "source": "siCaMK2G also inhibited lysosomal clustering induced by all three topo-i compounds (Figure 5D and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 5D and E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:43:50.672275Z"
+    },
+    {
+      "id": "dad1d1f7-5dca-48e2-bd81-4ca8642b5b2a",
+      "content_id": "33784320-f8cf-46a9-b714-87ad6a859a0c",
+      "claim_id": "C51",
+      "claim": "Teniposide, but not albendazole, upregulated Ca2+ flux.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, Ca2+ imaging showed that teniposide, but not albendazole, upregulated Ca2+ flux (Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:43:50.672275Z"
+    },
+    {
+      "id": "7ecc475b-6d37-41cc-8fe9-2d8ba8f07eba",
+      "content_id": "33784320-f8cf-46a9-b714-87ad6a859a0c",
+      "claim_id": "C52",
+      "claim": "Only cells with wild-type flag-JIP4 could recover the teniposide-induced lysosomal clustering phenotype in JIP4 KO cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, rescue experiments in JIP4 KO SH-SY5Y cells, which re-expressed either flag-tagged wild-type JIP4 or a phosphorylation-defective variant (T217A JIP4), revealed that only the cells with wild-type flag-JIP4 could recover the teniposide-induced lysosomal clustering phenotype (Figure 5F and G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 5F and G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:43:50.672275Z"
+    },
+    {
+      "id": "a72ddcce-eae4-4da9-9b71-192d99a0369c",
+      "content_id": "33784320-f8cf-46a9-b714-87ad6a859a0c",
+      "claim_id": "C53",
+      "claim": "JIP4 KO cells displayed reduced accumulation of cleaved Halo bands for both topo-i and benzimidazole compounds.",
+      "claim_type": "EXPLICIT",
+      "source": "JIP4 KO cells displayed reduced accumulation of the cleaved Halo bands on the in-gel fluorescence images for both compounds (Figure 6A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 6A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:43:50.672275Z"
+    },
+    {
+      "id": "f6df1f70-8dc4-4b6a-bb38-80adb44e3805",
+      "content_id": "33784320-f8cf-46a9-b714-87ad6a859a0c",
+      "claim_id": "C54",
+      "claim": "JIP4 expression levels decreased in response to lysosomal-clustering compounds.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, JIP4 expression levels decreased in response to lysosomal-clustering compounds (Figure 6A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 6A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:43:50.672275Z"
+    },
+    {
+      "id": "b41a27c5-4880-4237-aa8b-3157717af248",
+      "content_id": "33784320-f8cf-46a9-b714-87ad6a859a0c",
+      "claim_id": "C55",
+      "claim": "The decrease in JIP4 expression in response to teniposide was suppressed by co-treatment with bafilomycin A1.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the decrease in JIP4 expression in response to teniposide was suppressed by co-treatment with bafilomycin A1 (Figure 6\u2014figure supplement 1)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:43:50.672275Z"
+    },
+    {
+      "id": "d135baff-1f34-4352-9798-8c28edf35606",
+      "content_id": "33784320-f8cf-46a9-b714-87ad6a859a0c",
+      "claim_id": "C56",
+      "claim": "JIP4 is eventually degraded by autophagy.",
+      "claim_type": "EXPLICIT",
+      "source": "indicating that JIP4 is eventually degraded by autophagy, although it is essential for lysosomal transport.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the experimental data showing JIP4 degradation that is blocked by bafilomycin A1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:43:50.672275Z"
+    },
+    {
+      "id": "652f6127-61a9-4913-b09b-77a4f1c5c3ef",
+      "content_id": "33784320-f8cf-46a9-b714-87ad6a859a0c",
+      "claim_id": "C57",
+      "claim": "Starvation, teniposide, and albendazole treatments promoted autophagosomal perinuclear clustering and enhanced their colocalization with lysosomes to form autolysosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, immunofluorescence assay demonstrated that starvation, teniposide, and albendazole treatments promoted autophagosomal perinuclear clustering and enhanced their colocalization with lysosomes to form autolysosomes (Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:43:50.672275Z"
+    },
+    {
+      "id": "99aa3e5b-865c-4cce-a700-cc4528525e25",
+      "content_id": "33784320-f8cf-46a9-b714-87ad6a859a0c",
+      "claim_id": "C58",
+      "claim": "Cotreatment with Torin1 and teniposide or albendazole induced autophagy more effectively than Torin1 treatment alone.",
+      "claim_type": "EXPLICIT",
+      "source": "Cotreatment with Torin1 and teniposide or albendazole-induced autophagy more effectively than Torin1 treatment alone, without affecting mTOR inhibition activity (Figure 6D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:43:50.672275Z"
+    },
+    {
+      "id": "ac67f525-55a6-4241-b41f-e60cb90fe41c",
+      "content_id": "33784320-f8cf-46a9-b714-87ad6a859a0c",
+      "claim_id": "C59",
+      "claim": "MG132 increased p62 and poly-ubiquitinated protein levels in the Triton-X insoluble fraction.",
+      "claim_type": "EXPLICIT",
+      "source": "MG132, a well-known proteasomal inhibitor, increased p62 and poly-ubiquitinated protein levels in the Triton-X insoluble fraction. This increase declined time-dependently after the washout of MG132 (Figure 7A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 7A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:43:50.672275Z"
+    },
+    {
+      "id": "5fa12d98-b728-420e-a9eb-38284123bbca",
+      "content_id": "33784320-f8cf-46a9-b714-87ad6a859a0c",
+      "claim_id": "C60",
+      "claim": "The reduction in p62 and ubiquitin levels following MG132 washout was markedly suppressed in autophagy-deficient FIP200 KO cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the reduction in p62 and ubiquitin levels following the MG132 washout was markedly suppressed in autophagy-deficient FIP200 KO cells (Figure 7B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 7B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:43:50.672275Z"
+    },
+    {
+      "id": "a20496ed-b13c-4066-b2ea-fb96377c52ca",
+      "content_id": "33784320-f8cf-46a9-b714-87ad6a859a0c",
+      "claim_id": "C61",
+      "claim": "Basal autophagy degrades MG132-induced protein aggregates.",
+      "claim_type": "EXPLICIT",
+      "source": "These results show that basal autophagy degrades the MG132-induced protein aggregates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the experimental data showing aggregate degradation that is blocked in FIP200 KO cells.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:43:50.672275Z"
+    },
+    {
+      "id": "cb08388a-7291-4469-bb59-52fd69056fc1",
+      "content_id": "33784320-f8cf-46a9-b714-87ad6a859a0c",
+      "claim_id": "C62",
+      "claim": "Albendazole treatment in conjunction with MG132 washout induced p62 reduction more rapidly than DMSO treatment alone.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, albendazole treatment in conjunction with the MG132 washout induced p62 reduction more rapidly than DMSO treatment alone (Figure 7C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 7C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:43:50.672275Z"
+    },
+    {
+      "id": "48b0df47-2c6c-4d69-871c-eb9d474c30db",
+      "content_id": "33784320-f8cf-46a9-b714-87ad6a859a0c",
+      "claim_id": "C63",
+      "claim": "The effects of albendazole on p62 reduction were suppressed in FIP200 KO cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The effects of albendazole, however, were suppressed in FIP200 KO cells (Figure 7D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 7D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:43:50.672275Z"
+    },
+    {
+      "id": "f2ebc5ea-6539-4b7a-b49b-3ab06468806d",
+      "content_id": "33784320-f8cf-46a9-b714-87ad6a859a0c",
+      "claim_id": "C64",
+      "claim": "Albendazole can degrade protein aggregates formed by a proteasome inhibitor in an autophagy-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings imply that albendazole can degrade protein aggregates formed by a proteasome inhibitor in an autophagy-dependent manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the experimental data showing albendazole-induced degradation that is blocked in FIP200 KO cells.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:43:50.672275Z"
+    },
+    {
+      "id": "d9e7b3d4-42b1-45d0-9c79-ebdfb9fe7c1d",
+      "content_id": "33784320-f8cf-46a9-b714-87ad6a859a0c",
+      "claim_id": "C65",
+      "claim": "Upon introduction of \u03b1Syn fibrils, lysosomes accumulated around the \u03b1Syn aggregates.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, confocal microscopy analyses showed that upon the introduction of \u03b1Syn fibrils, lysosomes accumulated around the \u03b1Syn aggregates (Figure 8A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 8A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:43:50.672275Z"
+    },
+    {
+      "id": "31efa744-400d-4bcc-9d08-9023523bac4f",
+      "content_id": "33784320-f8cf-46a9-b714-87ad6a859a0c",
+      "claim_id": "C66",
+      "claim": "Albendazole enhanced the concentration of lysosomes around \u03b1Syn-GFP aggregates.",
+      "claim_type": "EXPLICIT",
+      "source": "Albendazole further enhanced the concentration of lysosomes around these \u03b1Syn-GFP aggregates (Figure 8B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 8B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:43:50.672275Z"
+    },
+    {
+      "id": "0d00518b-5a80-4e20-97eb-2fcb488206c2",
+      "content_id": "33784320-f8cf-46a9-b714-87ad6a859a0c",
+      "claim_id": "C67",
+      "claim": "Albendazole treatment induced a higher recruitment rate of autophagosomes and lysosomes to \u03b1Syn aggregates than the control.",
+      "claim_type": "EXPLICIT",
+      "source": "On electron microscopy, albendazole treatment induced a higher recruitment rate of autophagosomes and lysosomes to the \u03b1Syn aggregates than the control (Figure 8C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 8C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:43:50.672275Z"
+    },
+    {
+      "id": "ce40405f-e8a0-4b97-a378-bf4ac431b344",
+      "content_id": "33784320-f8cf-46a9-b714-87ad6a859a0c",
+      "claim_id": "C68",
+      "claim": "Albendazole treatment caused a marked tendency toward decreased \u03b1Syn-GFP levels in the insoluble fraction.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, albendazole treatment caused a marked tendency toward decreased \u03b1Syn-GFP levels compared with DMSO treatment. This decrease was also hindered by bafilomycin A1 (Figure 8D and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 8D and E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:43:50.672275Z"
+    },
+    {
+      "id": "99266191-8b3f-41d9-a6e3-971fe532e5ac",
+      "content_id": "33784320-f8cf-46a9-b714-87ad6a859a0c",
+      "claim_id": "C69",
+      "claim": "Albendazole mediates \u03b1Syn aggregate degradation through autophagy.",
+      "claim_type": "EXPLICIT",
+      "source": "This pattern indicates that albendazole mediates \u03b1Syn aggregate degradation through autophagy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the experimental data showing degradation that is blocked by bafilomycin A1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:43:50.672275Z"
+    },
+    {
+      "id": "2ef7719c-430a-48ec-a037-c5b68a35312c",
+      "content_id": "33784320-f8cf-46a9-b714-87ad6a859a0c",
+      "claim_id": "C70",
+      "claim": "Albendazole treatment induced a higher cleavage rate of Halo than DMSO treatment for 8 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "Albendazole treatment induced a higher cleavage rate of Halo than DMSO treatment for 8 hr, suggesting that albendazole can degrade both \u03b1Syn monomers and aggregates (Figure 8\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 8\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:43:50.672275Z"
+    },
+    {
+      "id": "d0fd3b0e-d14d-488a-a953-07d75afeb78a",
+      "content_id": "33784320-f8cf-46a9-b714-87ad6a859a0c",
+      "claim_id": "C71",
+      "claim": "Torin1 induced the degradation of \u03b1Syn aggregates, which was inhibited by bafilomycin A1.",
+      "claim_type": "EXPLICIT",
+      "source": "Torin1 also induced the degradation of aggregates, which was inhibited by bafilomycin A1 (Figure 8\u2014figure supplement 1B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 8\u2014figure supplement 1B and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:43:50.672275Z"
+    },
+    {
+      "id": "acb9f836-bed6-4521-8f85-2c76f75012e1",
+      "content_id": "33784320-f8cf-46a9-b714-87ad6a859a0c",
+      "claim_id": "C72",
+      "claim": "The degradation activity of albendazole was more vigorous than that of Torin1.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the degradation activity of albendazole was more vigorous than that of Torin1 (Figure 8\u2014figure supplement 1D and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 8\u2014figure supplement 1D and E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:43:50.672275Z"
+    },
+    {
+      "id": "3340a3c2-0dfb-4416-bc88-34b195313c2d",
+      "content_id": "33784320-f8cf-46a9-b714-87ad6a859a0c",
+      "claim_id": "C73",
+      "claim": "JIP4 and TRPML1 knockdown regulated the decrease of \u03b1Syn-GFP and p-\u03b1Syn levels in the insoluble fraction for both DMSO and albendazole treatments.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the insoluble fraction assay showed that JIP4 and TRPML1 knockdown regulated the decrease of \u03b1Syn-GFP and p-\u03b1Syn levels in the insoluble fraction for both DMSO and albendazole treatments. The results were particularly more pronounced with TRPML1 knockdown. However, the knockdown of TMEM55B did not produce such findings (Figure 8\u2014figure supplement 1F and G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 8\u2014figure supplement 1F and G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:43:50.672275Z"
+    },
+    {
+      "id": "e53bb86d-b1cc-4bb2-bfcd-425c1fef9972",
+      "content_id": "33784320-f8cf-46a9-b714-87ad6a859a0c",
+      "claim_id": "C74",
+      "claim": "Lysosomal clustering via the JIP4\u2013TRPML1 pathway plays a significant role in \u03b1Syn degradation.",
+      "claim_type": "EXPLICIT",
+      "source": "These data suggest that lysosomal clustering via the JIP4\u2013TRPML1 pathway plays a significant role in \u03b1Syn degradation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the experimental data showing reduced degradation with JIP4 and TRPML1 knockdown.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:43:50.672275Z"
+    },
+    {
+      "id": "28614228-bb17-4b95-ab20-401ecd06f5ad",
+      "content_id": "33784320-f8cf-46a9-b714-87ad6a859a0c",
+      "claim_id": "C75",
+      "claim": "Topo-i induced ROS production.",
+      "claim_type": "EXPLICIT",
+      "source": "Topo-i, such as teniposide, etoposide, and amsacrine, significantly increased ROS levels (Figure 9A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 9A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:43:50.672275Z"
+    },
+    {
+      "id": "29450bd7-a14c-45df-8b1e-4f9c34d8b54c",
+      "content_id": "33784320-f8cf-46a9-b714-87ad6a859a0c",
+      "claim_id": "C76",
+      "claim": "N-acetyl-L-cysteine partially attenuated topo-i-induced lysosomal clustering.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, N-acetyl-L-cysteine, a ROS scavenger, partially attenuated topo-i-induced lysosomal clustering (Figure 9B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 9B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:43:50.672275Z"
+    },
+    {
+      "id": "9e336293-57fa-4247-810f-3c35c755b388",
+      "content_id": "33784320-f8cf-46a9-b714-87ad6a859a0c",
+      "claim_id": "C77",
+      "claim": "A p38 inhibitor prevented topo-i-induced lysosomal clustering, but had no effect on benzimidazole.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, a p38 inhibitor prevented topo-i-induced lysosomal clustering, but it had no effect on benzimidazole (Figure 9C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 9C and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:43:50.672275Z"
+    },
+    {
+      "id": "5ddc245d-4c93-4363-b03e-faee66c58c36",
+      "content_id": "33784320-f8cf-46a9-b714-87ad6a859a0c",
+      "claim_id": "C78",
+      "claim": "Topo-i triggers p38 phosphorylation.",
+      "claim_type": "EXPLICIT",
+      "source": "Western blot analysis also showed that topo-i triggers p38 phosphorylation (Figure 9E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 9E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:43:50.672275Z"
+    },
+    {
+      "id": "55e632ec-7700-482a-90f3-5d4590d65f34",
+      "content_id": "33784320-f8cf-46a9-b714-87ad6a859a0c",
+      "claim_id": "C79",
+      "claim": "Topo-i failed to induce lysosomal clustering or autophagy flux in HeLa cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, topo-i failed to induce lysosomal clustering or autophagy flux in human adenocarcinoma HeLa cells (Figure 10A)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 10A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:43:50.672275Z"
+    },
+    {
+      "id": "81e28a3d-5680-452c-828c-1fc0eb5cbdcd",
+      "content_id": "33784320-f8cf-46a9-b714-87ad6a859a0c",
+      "claim_id": "C80",
+      "claim": "Topo-i did not induce autophagy in HeLa cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, autophagy flux assay for WB shows that topo-i did not induce autophagy in HeLa cells (Figure 10B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 10B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:43:50.672275Z"
+    },
+    {
+      "id": "9c1d1ec3-af3f-499e-84b9-f2fb91bd2525",
+      "content_id": "33784320-f8cf-46a9-b714-87ad6a859a0c",
+      "claim_id": "C81",
+      "claim": "Oxibendazole at low concentrations promoted lysosomal clustering, but at high concentrations disrupted tubulin production and inhibited lysosomal clustering.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that oxibendazole, even in low concentrations, promoted lysosomal clustering. However, at high concentrations, it disrupted tubulin production, thereby inhibiting lysosomal clustering (Figure 10C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 10C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:43:50.672275Z"
+    },
+    {
+      "id": "9cac5c23-89ac-400b-87b6-3ac9e2cfb794",
+      "content_id": "33784320-f8cf-46a9-b714-87ad6a859a0c",
+      "claim_id": "C82",
+      "claim": "Under conditions where albendazole was administered to induce lysosomal clustering, tubulin filaments were observed only near the MTOC, and the filaments in the cell periphery were disassembled.",
+      "claim_type": "EXPLICIT",
+      "source": "Under conditions where albendazole was administered to induce lysosomal clustering, tubulin filaments were observed only near the MTOC, and the filaments in the cell periphery were disassembled. In contrast, when exposed to higher albendazole concentrations, tubulin filaments throughout the cell were disassembled, resulting in the inhibition of lysosomal clustering (Figure 10D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 10D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:43:50.672275Z"
+    },
+    {
+      "id": "5a59a137-fb3d-48f3-aba9-077f3e580821",
+      "content_id": "33784320-f8cf-46a9-b714-87ad6a859a0c",
+      "claim_id": "C83",
+      "claim": "Benzimidazole not only failed to induce lysosomal clustering in HeLa cells, but also transported lysosomes to the cell periphery.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, benzimidazole not only failed to induce lysosomal clustering in HeLa cells, but it also transported lysosomes to the cell periphery.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental observations in HeLa cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:43:50.672275Z"
+    },
+    {
+      "id": "5f338736-0d47-4939-8904-6d9c2dc1d51c",
+      "content_id": "33784320-f8cf-46a9-b714-87ad6a859a0c",
+      "claim_id": "C84",
+      "claim": "Benzimidazole failed to induce autophagy flux in HeLa cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, this drug failed to induce autophagy flux (Figure 10B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 10B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:43:50.672275Z"
+    },
+    {
+      "id": "f7d3874c-54a6-4729-89ca-420a76141f66",
+      "content_id": "33784320-f8cf-46a9-b714-87ad6a859a0c",
+      "claim_id": "C85",
+      "claim": "Albendazole did not induce lysosomal clustering in HeLa cells but rather inhibited it at higher concentrations.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, we examined the relationships between tubulin depolymerization and lysosomal clustering induced by albendazole in HeLa cells and found that albendazole did not induce lysosomal clustering but rather inhibited it at higher concentrations (Figure 10A, D and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 10A, D and E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:43:50.672275Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "2dfbac5b-534e-4063-86c5-57065eed4f89",
+      "content_id": "33784320-f8cf-46a9-b714-87ad6a859a0c",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "A high-throughput screening of ~1200 clinically approved drugs identified 6 compounds that induce lysosomal clustering around the MTOC. The screening used a novel image-based quantification system in SH-SY5Y cells expressing lysosomal and MTOC markers. The 6 compounds were categorized as topoisomerase II inhibitors (teniposide, amsacrine, etoposide) and benzimidazole anthelmintics (albendazole, oxibendazole, mebendazole).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C35-C38 are well-supported by experimental data shown in Figures 1 and 2. The screening methodology is clearly described, validation with starvation as positive control is shown (C35), and the identification of 63 initial hits narrowed to 6 final compounds is documented with appropriate imaging and quantification data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:43:50.672275Z"
+    },
+    {
+      "id": "427c47f7-d490-4779-bd8c-c9080f7ec339",
+      "content_id": "33784320-f8cf-46a9-b714-87ad6a859a0c",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The six identified compounds induce autophagy as demonstrated by LC3B lipidation and increased RFP/GFP ratio in tandem-tagged LC3 assays. Importantly, these compounds induce autophagy independently of mTORC1 activity, as evidenced by minimal effects on phosphorylation of mTOR pathway components (p-mTOR, p-ULK1, p-S6) compared to the mTOR inhibitor Torin1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C42 are supported by experimental data in Figures 2C and 3A. The autophagy flux assays show LC3B lipidation enhanced by bafilomycin A1, and the mTOR pathway analysis clearly distinguishes the compounds' mechanism from canonical mTOR-dependent autophagy induction. The comparison with Torin1 provides appropriate controls.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:43:50.672275Z"
+    },
+    {
+      "id": "54caa86b-576d-4fa1-9f8c-b1c5d604ca3e",
+      "content_id": "33784320-f8cf-46a9-b714-87ad6a859a0c",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The identified compounds induce lysosomal clustering through a JIP4-TRPML1-dependent mechanism. Teniposide-induced clustering requires JIP4 and TRPML1 but not TMEM55B, ALG2, Rab7, or RILP. Albendazole-induced clustering requires JIP4, TRPML1, ALG2, and Rab7 but not TMEM55B or RILP. JIP4 knockout suppresses clustering by all six compounds, and both compounds increase JIP4-LAMP2 colocalization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C43-C47 are well-supported by comprehensive knockdown and knockout experiments shown in Figure 4. The differential pathway requirements for topo-i versus benzimidazole compounds are clearly demonstrated through systematic siRNA knockdown studies with appropriate controls and quantification. The JIP4 knockout data provide strong genetic validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:43:50.672275Z"
+    },
+    {
+      "id": "94c35037-0bdc-491f-96fc-fb2c4812edfe",
+      "content_id": "33784320-f8cf-46a9-b714-87ad6a859a0c",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Topoisomerase inhibitors induce lysosomal clustering through JIP4 phosphorylation at T217 by CaMK2G. Jak3 inhibitor VI and CaMK2G knockdown suppress topo-i-induced clustering but not benzimidazole-induced clustering. Teniposide increases Ca2+ flux and induces JIP4 phosphorylation. Rescue experiments show that only wild-type JIP4, not the T217A phosphorylation-defective mutant, restores teniposide-induced clustering in JIP4 KO cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C52 are strongly supported by multiple complementary experiments in Figure 5. The Phos-tag gel analysis directly demonstrates JIP4 phosphorylation, pharmacological and genetic inhibition of CaMK2G show specificity for topo-i compounds, Ca2+ imaging provides mechanistic insight, and the rescue experiment with phospho-mutant provides definitive evidence for the requirement of T217 phosphorylation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:43:50.672275Z"
+    },
+    {
+      "id": "657ca938-a7cb-4fe5-8e2d-254034842851",
+      "content_id": "33784320-f8cf-46a9-b714-87ad6a859a0c",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Lysosomal-clustering compounds efficiently induce autophagy by transporting both autophagosomes and lysosomes in a JIP4-dependent manner. JIP4 KO cells show reduced autophagy flux as measured by HaloTag-LC3B cleavage. JIP4 itself is degraded by autophagy following compound treatment. Co-treatment with lysosomal-clustering compounds and Torin1 induces autophagy more effectively than Torin1 alone, indicating enhanced autolysosome formation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C58 are supported by data in Figure 6. The HaloTag-LC3B assay provides quantitative evidence for JIP4-dependent autophagy induction, bafilomycin A1 experiments confirm lysosomal degradation of JIP4, immunofluorescence shows enhanced autophagosome-lysosome colocalization, and the Torin1 co-treatment experiment demonstrates synergistic effects on autophagy induction through distinct mechanisms.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:43:50.672275Z"
+    },
+    {
+      "id": "14312611-4215-4985-b81d-1d20b7b73f86",
+      "content_id": "33784320-f8cf-46a9-b714-87ad6a859a0c",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Albendazole promotes autophagy-dependent degradation of proteasome inhibitor-induced protein aggregates. MG132 treatment increases p62 and ubiquitinated proteins in the insoluble fraction, which decrease over time after washout in an autophagy-dependent manner (blocked in FIP200 KO cells). Albendazole accelerates this degradation compared to DMSO control, and this effect is also blocked in FIP200 KO cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C59-C64 are well-supported by systematic experiments in Figure 7. The time-course experiments establish that basal autophagy degrades MG132-induced aggregates, the FIP200 KO experiments confirm autophagy-dependence, and the albendazole treatment experiments demonstrate enhanced degradation that is also autophagy-dependent. The experimental design with appropriate controls is rigorous.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:43:50.672275Z"
+    },
+    {
+      "id": "06bf6e73-e1d6-41eb-9310-4c8a652cb6b7",
+      "content_id": "33784320-f8cf-46a9-b714-87ad6a859a0c",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "In a cellular PD model using \u03b1Syn fibril-induced aggregation, albendazole enhances degradation of insoluble \u03b1Syn aggregates through autophagy. Lysosomes naturally accumulate around \u03b1Syn aggregates, and albendazole further enhances this clustering. Electron microscopy shows increased recruitment of autophagosomes and lysosomes to aggregates. Albendazole reduces insoluble \u03b1Syn-GFP levels in a bafilomycin A1-sensitive manner and degrades both monomers and aggregates more effectively than Torin1. JIP4 and TRPML1 knockdown reduce \u03b1Syn degradation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C65-C70, C72-C74 are strongly supported by comprehensive data in Figure 8 and supplements. The cellular PD model is well-established, multiple complementary techniques (confocal microscopy, EM, biochemical fractionation, HaloTag assay) provide converging evidence, bafilomycin A1 controls confirm autophagy-dependence, and the comparison with Torin1 demonstrates superior efficacy of the lysosomal clustering approach.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:43:50.672275Z"
+    },
+    {
+      "id": "7f50b32b-955e-40e2-8eb8-bdeddd96c351",
+      "content_id": "33784320-f8cf-46a9-b714-87ad6a859a0c",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Topoisomerase inhibitors induce lysosomal clustering through ROS production and p38 MAPK activation. Topo-i compounds significantly increase ROS levels, and the ROS scavenger N-acetyl-L-cysteine partially attenuates topo-i-induced clustering. A p38 inhibitor prevents topo-i-induced clustering but has no effect on benzimidazole. Western blot shows topo-i triggers p38 phosphorylation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C75-C78 are supported by data in Figure 9. The ROS measurements, pharmacological inhibition with NAC and p38 inhibitor, and Western blot analysis of p38 phosphorylation provide mechanistic insight into the topo-i pathway. The specificity for topo-i versus benzimidazole is clearly demonstrated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:43:50.672275Z"
+    },
+    {
+      "id": "5933bc77-d2e6-404b-afec-a10bf4ae7897",
+      "content_id": "33784320-f8cf-46a9-b714-87ad6a859a0c",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Topoisomerase inhibitors and benzimidazole compounds show cell-type-specific effects. Topo-i fails to induce lysosomal clustering or autophagy in HeLa cells. Benzimidazole not only fails to induce clustering in HeLa cells but transports lysosomes to the cell periphery and does not induce autophagy flux.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C79-C80, C83-C85 are supported by data in Figure 10A-B. The cell-type specificity is clearly demonstrated through imaging and Western blot analysis. However, the mechanistic basis for this difference is not fully elucidated, though the authors suggest differences in expression of trafficking factors.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:43:50.672275Z"
+    },
+    {
+      "id": "2dcbe7f4-4bed-4899-8623-710ec8470885",
+      "content_id": "33784320-f8cf-46a9-b714-87ad6a859a0c",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Benzimidazole compounds exhibit dose-dependent effects on tubulin and lysosomal clustering. At low concentrations, oxibendazole and albendazole promote lysosomal clustering with selective tubulin depolymerization at the cell periphery while maintaining filaments near the MTOC. At high concentrations, they disrupt tubulin throughout the cell and inhibit lysosomal clustering.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C81-C82 are supported by dose-response experiments and confocal microscopy in Figure 10C-D. The imaging clearly shows the spatial pattern of tubulin depolymerization at different concentrations. This provides mechanistic insight into the narrow concentration range for benzimidazole activity and explains the bell-shaped dose-response curve.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:43:50.672275Z"
+    },
+    {
+      "id": "43c195a4-37b1-418a-8955-f7e05cecbc7b",
+      "content_id": "33784320-f8cf-46a9-b714-87ad6a859a0c",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Lysosomal clustering facilitates the breakdown of protein aggregates, particularly those that accumulate near the MTOC. This is supported by prior evidence that protein aggregates including \u03b1Syn (Lewy bodies) in PD patients accumulate near the MTOC, and that Arl8b overexpression (which promotes lysosomal anterograde transport) inhibits \u03b1Syn-A53T degradation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C6 is the main conclusion supported by the experimental data throughout the manuscript (particularly Figures 7-8). Claims C30, C33-C34 provide literature context that supports the biological relevance of the findings. The convergence of prior knowledge about aggregate localization and the current experimental results on enhanced degradation through lysosomal clustering provides strong support for this conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:43:50.672275Z"
+    },
+    {
+      "id": "84e65da7-031e-41c4-a441-e401ecc08f46",
+      "content_id": "33784320-f8cf-46a9-b714-87ad6a859a0c",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Torin1 induces degradation of \u03b1Syn aggregates in an autophagy-dependent manner, as shown by inhibition with bafilomycin A1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C71 is supported by data in Figure 8\u2014figure supplement 1B-C. This serves as a positive control demonstrating that mTOR-dependent autophagy induction can also degrade \u03b1Syn aggregates, though less effectively than albendazole (C72).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:43:50.672275Z"
+    },
+    {
+      "id": "f14eccbb-abfc-4cd5-8447-78e0872c1779",
+      "content_id": "33784320-f8cf-46a9-b714-87ad6a859a0c",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Background claims establishing the role of autophagy-lysosome pathway in PD, epidemiology of PD, current treatments and limitations, \u03b1Syn aggregation in disease pathogenesis, autophagy as a therapeutic target, mechanisms of lysosomal transport, and connections between lysosomal trafficking defects and neurodegenerative diseases.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C7-C29, C31-C32 are background/context claims supported by established knowledge and citations to prior literature. These provide the scientific rationale for the study but are not novel findings from this work. The citations appear appropriate and the background is accurately represented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:43:50.672275Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "d1ac3b0a-c509-48c7-89d5-9fbf4359ee22",
+      "result_id": "2dfbac5b-534e-4063-86c5-57065eed4f89"
+    },
+    {
+      "claim_id": "8581882d-d25c-48b6-b1bc-0e7e4e291187",
+      "result_id": "2dfbac5b-534e-4063-86c5-57065eed4f89"
+    },
+    {
+      "claim_id": "c1ae3f7c-0cfe-4d13-9310-f894e7ebdc12",
+      "result_id": "2dfbac5b-534e-4063-86c5-57065eed4f89"
+    },
+    {
+      "claim_id": "de12de00-2114-4cf4-983a-58053855c3d6",
+      "result_id": "2dfbac5b-534e-4063-86c5-57065eed4f89"
+    },
+    {
+      "claim_id": "b37441c5-dbc2-4b00-a3da-5b5b1ebe540e",
+      "result_id": "2dfbac5b-534e-4063-86c5-57065eed4f89"
+    },
+    {
+      "claim_id": "0b152536-91c2-48cc-909d-1b35fef7d3be",
+      "result_id": "427c47f7-d490-4779-bd8c-c9080f7ec339"
+    },
+    {
+      "claim_id": "9a089eb6-7879-4874-821b-ac816921980e",
+      "result_id": "427c47f7-d490-4779-bd8c-c9080f7ec339"
+    },
+    {
+      "claim_id": "dd0362dd-abc6-4a56-8551-0ce481fd8315",
+      "result_id": "427c47f7-d490-4779-bd8c-c9080f7ec339"
+    },
+    {
+      "claim_id": "2bc889c2-2e64-4f7c-8cf1-3dbda2be8663",
+      "result_id": "427c47f7-d490-4779-bd8c-c9080f7ec339"
+    },
+    {
+      "claim_id": "a53d8e1b-7739-4206-a84f-715027ba2539",
+      "result_id": "54caa86b-576d-4fa1-9f8c-b1c5d604ca3e"
+    },
+    {
+      "claim_id": "a25abc55-4c3f-4bae-9204-1a64bf17d399",
+      "result_id": "54caa86b-576d-4fa1-9f8c-b1c5d604ca3e"
+    },
+    {
+      "claim_id": "5ab34800-c93d-4ada-8466-9d7ff27145be",
+      "result_id": "54caa86b-576d-4fa1-9f8c-b1c5d604ca3e"
+    },
+    {
+      "claim_id": "c2292c0c-dca4-4e5e-9521-ed88bb910ac4",
+      "result_id": "54caa86b-576d-4fa1-9f8c-b1c5d604ca3e"
+    },
+    {
+      "claim_id": "85abaf81-6559-45df-87ba-85ff40c694b7",
+      "result_id": "54caa86b-576d-4fa1-9f8c-b1c5d604ca3e"
+    },
+    {
+      "claim_id": "65916693-bc04-485a-9159-8a49779032ac",
+      "result_id": "54caa86b-576d-4fa1-9f8c-b1c5d604ca3e"
+    },
+    {
+      "claim_id": "a9588768-f340-4e3b-a036-7868f5d82638",
+      "result_id": "94c35037-0bdc-491f-96fc-fb2c4812edfe"
+    },
+    {
+      "claim_id": "455e8142-ce45-4ce3-8fca-2632fb3aa386",
+      "result_id": "94c35037-0bdc-491f-96fc-fb2c4812edfe"
+    },
+    {
+      "claim_id": "7a6aeb2a-9e5f-42cb-970f-e46769ff283e",
+      "result_id": "94c35037-0bdc-491f-96fc-fb2c4812edfe"
+    },
+    {
+      "claim_id": "dad1d1f7-5dca-48e2-bd81-4ca8642b5b2a",
+      "result_id": "94c35037-0bdc-491f-96fc-fb2c4812edfe"
+    },
+    {
+      "claim_id": "7ecc475b-6d37-41cc-8fe9-2d8ba8f07eba",
+      "result_id": "94c35037-0bdc-491f-96fc-fb2c4812edfe"
+    },
+    {
+      "claim_id": "a72ddcce-eae4-4da9-9b71-192d99a0369c",
+      "result_id": "657ca938-a7cb-4fe5-8e2d-254034842851"
+    },
+    {
+      "claim_id": "f6df1f70-8dc4-4b6a-bb38-80adb44e3805",
+      "result_id": "657ca938-a7cb-4fe5-8e2d-254034842851"
+    },
+    {
+      "claim_id": "b41a27c5-4880-4237-aa8b-3157717af248",
+      "result_id": "657ca938-a7cb-4fe5-8e2d-254034842851"
+    },
+    {
+      "claim_id": "d135baff-1f34-4352-9798-8c28edf35606",
+      "result_id": "657ca938-a7cb-4fe5-8e2d-254034842851"
+    },
+    {
+      "claim_id": "652f6127-61a9-4913-b09b-77a4f1c5c3ef",
+      "result_id": "657ca938-a7cb-4fe5-8e2d-254034842851"
+    },
+    {
+      "claim_id": "99aa3e5b-865c-4cce-a700-cc4528525e25",
+      "result_id": "657ca938-a7cb-4fe5-8e2d-254034842851"
+    },
+    {
+      "claim_id": "18d80ce4-add3-4311-a204-13b28026d043",
+      "result_id": "14312611-4215-4985-b81d-1d20b7b73f86"
+    },
+    {
+      "claim_id": "ac67f525-55a6-4241-b41f-e60cb90fe41c",
+      "result_id": "14312611-4215-4985-b81d-1d20b7b73f86"
+    },
+    {
+      "claim_id": "5fa12d98-b728-420e-a9eb-38284123bbca",
+      "result_id": "14312611-4215-4985-b81d-1d20b7b73f86"
+    },
+    {
+      "claim_id": "a20496ed-b13c-4066-b2ea-fb96377c52ca",
+      "result_id": "14312611-4215-4985-b81d-1d20b7b73f86"
+    },
+    {
+      "claim_id": "cb08388a-7291-4469-bb59-52fd69056fc1",
+      "result_id": "14312611-4215-4985-b81d-1d20b7b73f86"
+    },
+    {
+      "claim_id": "48b0df47-2c6c-4d69-871c-eb9d474c30db",
+      "result_id": "14312611-4215-4985-b81d-1d20b7b73f86"
+    },
+    {
+      "claim_id": "f2ebc5ea-6539-4b7a-b49b-3ab06468806d",
+      "result_id": "14312611-4215-4985-b81d-1d20b7b73f86"
+    },
+    {
+      "claim_id": "faa8461b-4669-45d0-9573-e2e53a3d2bb9",
+      "result_id": "06bf6e73-e1d6-41eb-9310-4c8a652cb6b7"
+    },
+    {
+      "claim_id": "d9e7b3d4-42b1-45d0-9c79-ebdfb9fe7c1d",
+      "result_id": "06bf6e73-e1d6-41eb-9310-4c8a652cb6b7"
+    },
+    {
+      "claim_id": "31efa744-400d-4bcc-9d08-9023523bac4f",
+      "result_id": "06bf6e73-e1d6-41eb-9310-4c8a652cb6b7"
+    },
+    {
+      "claim_id": "0d00518b-5a80-4e20-97eb-2fcb488206c2",
+      "result_id": "06bf6e73-e1d6-41eb-9310-4c8a652cb6b7"
+    },
+    {
+      "claim_id": "ce40405f-e8a0-4b97-a378-bf4ac431b344",
+      "result_id": "06bf6e73-e1d6-41eb-9310-4c8a652cb6b7"
+    },
+    {
+      "claim_id": "99266191-8b3f-41d9-a6e3-971fe532e5ac",
+      "result_id": "06bf6e73-e1d6-41eb-9310-4c8a652cb6b7"
+    },
+    {
+      "claim_id": "2ef7719c-430a-48ec-a037-c5b68a35312c",
+      "result_id": "06bf6e73-e1d6-41eb-9310-4c8a652cb6b7"
+    },
+    {
+      "claim_id": "acb9f836-bed6-4521-8f85-2c76f75012e1",
+      "result_id": "06bf6e73-e1d6-41eb-9310-4c8a652cb6b7"
+    },
+    {
+      "claim_id": "3340a3c2-0dfb-4416-bc88-34b195313c2d",
+      "result_id": "06bf6e73-e1d6-41eb-9310-4c8a652cb6b7"
+    },
+    {
+      "claim_id": "e53bb86d-b1cc-4bb2-bfcd-425c1fef9972",
+      "result_id": "06bf6e73-e1d6-41eb-9310-4c8a652cb6b7"
+    },
+    {
+      "claim_id": "28614228-bb17-4b95-ab20-401ecd06f5ad",
+      "result_id": "7f50b32b-955e-40e2-8eb8-bdeddd96c351"
+    },
+    {
+      "claim_id": "29450bd7-a14c-45df-8b1e-4f9c34d8b54c",
+      "result_id": "7f50b32b-955e-40e2-8eb8-bdeddd96c351"
+    },
+    {
+      "claim_id": "9e336293-57fa-4247-810f-3c35c755b388",
+      "result_id": "7f50b32b-955e-40e2-8eb8-bdeddd96c351"
+    },
+    {
+      "claim_id": "5ddc245d-4c93-4363-b03e-faee66c58c36",
+      "result_id": "7f50b32b-955e-40e2-8eb8-bdeddd96c351"
+    },
+    {
+      "claim_id": "55e632ec-7700-482a-90f3-5d4590d65f34",
+      "result_id": "5933bc77-d2e6-404b-afec-a10bf4ae7897"
+    },
+    {
+      "claim_id": "81e28a3d-5680-452c-828c-1fc0eb5cbdcd",
+      "result_id": "5933bc77-d2e6-404b-afec-a10bf4ae7897"
+    },
+    {
+      "claim_id": "5a59a137-fb3d-48f3-aba9-077f3e580821",
+      "result_id": "5933bc77-d2e6-404b-afec-a10bf4ae7897"
+    },
+    {
+      "claim_id": "5f338736-0d47-4939-8904-6d9c2dc1d51c",
+      "result_id": "5933bc77-d2e6-404b-afec-a10bf4ae7897"
+    },
+    {
+      "claim_id": "f7d3874c-54a6-4729-89ca-420a76141f66",
+      "result_id": "5933bc77-d2e6-404b-afec-a10bf4ae7897"
+    },
+    {
+      "claim_id": "9c1d1ec3-af3f-499e-84b9-f2fb91bd2525",
+      "result_id": "2dcbe7f4-4bed-4899-8623-710ec8470885"
+    },
+    {
+      "claim_id": "9cac5c23-89ac-400b-87b6-3ac9e2cfb794",
+      "result_id": "2dcbe7f4-4bed-4899-8623-710ec8470885"
+    },
+    {
+      "claim_id": "bab3cc8f-cad5-41d8-b64f-7b8385bb1c0e",
+      "result_id": "43c195a4-37b1-418a-8955-f7e05cecbc7b"
+    },
+    {
+      "claim_id": "347a3862-aa31-4979-b83a-e78ca06e155a",
+      "result_id": "43c195a4-37b1-418a-8955-f7e05cecbc7b"
+    },
+    {
+      "claim_id": "61bf14b5-eaa0-4cd1-929f-29b6acd5ebd7",
+      "result_id": "43c195a4-37b1-418a-8955-f7e05cecbc7b"
+    },
+    {
+      "claim_id": "dab8d6a4-7d95-411c-a5a7-692366b76960",
+      "result_id": "43c195a4-37b1-418a-8955-f7e05cecbc7b"
+    },
+    {
+      "claim_id": "d0fd3b0e-d14d-488a-a953-07d75afeb78a",
+      "result_id": "84e65da7-031e-41c4-a441-e401ecc08f46"
+    },
+    {
+      "claim_id": "f083f4d1-fbe3-4617-addd-7a589687e9d9",
+      "result_id": "f14eccbb-abfc-4cd5-8447-78e0872c1779"
+    },
+    {
+      "claim_id": "f14c16b5-0de0-4e11-89fe-ff2ef69bfb91",
+      "result_id": "f14eccbb-abfc-4cd5-8447-78e0872c1779"
+    },
+    {
+      "claim_id": "3aaf4275-690e-46de-9f05-433cd2c821ec",
+      "result_id": "f14eccbb-abfc-4cd5-8447-78e0872c1779"
+    },
+    {
+      "claim_id": "7532d885-d74e-4930-a652-99a940b276c4",
+      "result_id": "f14eccbb-abfc-4cd5-8447-78e0872c1779"
+    },
+    {
+      "claim_id": "badd87d2-1be1-4c6e-82e5-94dfbecb27b0",
+      "result_id": "f14eccbb-abfc-4cd5-8447-78e0872c1779"
+    },
+    {
+      "claim_id": "a9cfcd85-9010-4db3-9f28-905874df3ecf",
+      "result_id": "f14eccbb-abfc-4cd5-8447-78e0872c1779"
+    },
+    {
+      "claim_id": "e6624cc5-b2f7-42ee-b10c-d4ae685853b3",
+      "result_id": "f14eccbb-abfc-4cd5-8447-78e0872c1779"
+    },
+    {
+      "claim_id": "c002bb95-85f1-43db-8c13-79e2adfa9b29",
+      "result_id": "f14eccbb-abfc-4cd5-8447-78e0872c1779"
+    },
+    {
+      "claim_id": "f039d0c8-875e-4577-b145-bd9324ef0e68",
+      "result_id": "f14eccbb-abfc-4cd5-8447-78e0872c1779"
+    },
+    {
+      "claim_id": "597f5659-a8b5-4ffb-a22c-3ddbe96e6003",
+      "result_id": "f14eccbb-abfc-4cd5-8447-78e0872c1779"
+    },
+    {
+      "claim_id": "e67d2ce7-ecfe-45df-9f18-5a66cf3193ea",
+      "result_id": "f14eccbb-abfc-4cd5-8447-78e0872c1779"
+    },
+    {
+      "claim_id": "2bfc4357-f4e5-4576-a7ea-503f90739454",
+      "result_id": "f14eccbb-abfc-4cd5-8447-78e0872c1779"
+    },
+    {
+      "claim_id": "4e4e2cb6-9e5d-4bbe-a006-a78736494ecc",
+      "result_id": "f14eccbb-abfc-4cd5-8447-78e0872c1779"
+    },
+    {
+      "claim_id": "b7a8abe3-53a1-4ed8-aec7-c83180ce90a5",
+      "result_id": "f14eccbb-abfc-4cd5-8447-78e0872c1779"
+    },
+    {
+      "claim_id": "4e8dd46a-4218-473a-a6de-293d56ba0203",
+      "result_id": "f14eccbb-abfc-4cd5-8447-78e0872c1779"
+    },
+    {
+      "claim_id": "72996764-862e-4f9b-97bc-642a16529e45",
+      "result_id": "f14eccbb-abfc-4cd5-8447-78e0872c1779"
+    },
+    {
+      "claim_id": "ba5b1511-0f82-49f0-bfa0-576820595eef",
+      "result_id": "f14eccbb-abfc-4cd5-8447-78e0872c1779"
+    },
+    {
+      "claim_id": "625499cc-0147-4276-886a-3575aaa6da2e",
+      "result_id": "f14eccbb-abfc-4cd5-8447-78e0872c1779"
+    },
+    {
+      "claim_id": "06bb3a38-c858-464b-8ecb-5c8d692edc3e",
+      "result_id": "f14eccbb-abfc-4cd5-8447-78e0872c1779"
+    },
+    {
+      "claim_id": "4821fb71-c979-4eb5-afbf-7735230f1ea5",
+      "result_id": "f14eccbb-abfc-4cd5-8447-78e0872c1779"
+    },
+    {
+      "claim_id": "dc6dad2e-7377-40e6-87a9-4f341acf6092",
+      "result_id": "f14eccbb-abfc-4cd5-8447-78e0872c1779"
+    },
+    {
+      "claim_id": "946a07c4-2e2f-476d-ab17-2803c02e7d7a",
+      "result_id": "f14eccbb-abfc-4cd5-8447-78e0872c1779"
+    },
+    {
+      "claim_id": "bbc76a93-772d-4740-a158-ac9a6ee4fd06",
+      "result_id": "f14eccbb-abfc-4cd5-8447-78e0872c1779"
+    },
+    {
+      "claim_id": "9d7f19a6-5fbe-418c-9b30-5cb29cffe537",
+      "result_id": "f14eccbb-abfc-4cd5-8447-78e0872c1779"
+    },
+    {
+      "claim_id": "cf68330f-376e-475c-8212-dc50b69b6666",
+      "result_id": "f14eccbb-abfc-4cd5-8447-78e0872c1779"
+    },
+    {
+      "claim_id": "59c4e4bd-bb38-49a5-a369-61382ffa7a57",
+      "result_id": "f14eccbb-abfc-4cd5-8447-78e0872c1779"
+    }
+  ],
+  "comparisons": []
+}

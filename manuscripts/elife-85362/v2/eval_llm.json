@@ -1,0 +1,386 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C8",
+      "C9",
+      "C15",
+      "C30"
+    ],
+    "result": "Progressive intestinal proliferation of live E. coli during aging activates the transcription factor DAF-16 in C. elegans. DAF-16::GFP nuclear translocation increases on days 4 and 7 in worms fed live E. coli OP50, but not in worms fed heat-killed bacteria. This activation is attributed to the presence of live bacteria rather than aging itself, as evidenced by the correlation between increased bacterial CFU and DAF-16 activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C8, C9, C15, and C30 provide converging evidence from microscopy (DAF-16::GFP localization), CFU measurements, and controlled comparisons between live and killed bacteria. The data clearly demonstrate that live bacterial accumulation, not aging per se, drives DAF-16 activation. The experimental design includes appropriate controls (heat-killed and antibiotic-killed bacteria) and quantitative measurements across multiple timepoints.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "DAF-16 is required for maintenance of longevity and organismal fitness in worms fed live E. coli. daf-16(mu86) mutants exhibit shortened lifespan, reduced pharyngeal pumping and body bending, and increased intestinal barrier permeability when fed live bacteria, but not when fed heat-killed bacteria.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C16-C24 collectively demonstrate DAF-16's role through multiple phenotypic assays (lifespan, pharyngeal pumping, body bending, intestinal barrier integrity). The specificity to live bacteria (no effect with killed bacteria) strengthens the conclusion. Statistical significance is reported (p < 0.001 in multiple assays), and the results are consistent with cited prior work (C16, C22).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C34",
+      "C42"
+    ],
+    "result": "Indole, identified from E. coli culture supernatants by mass spectrometry and NMR, activates DAF-16 in C. elegans. Supplementation with indole (50-200 \u03bcM) induces DAF-16 nuclear translocation and up-regulates DAF-16 target genes (dod-3p::gfp and hsp-16.2p::nCherry) in young adult worms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C28, C34, and C42 provide strong evidence through chemical identification (MS/NMR), dose-response experiments, and reporter gene assays. The structural identification is confirmed by multiple analytical methods, and the biological activity is demonstrated through quantitative fluorescence microscopy. The dose-dependent response (50-200 \u03bcM) and increased indole levels in supplemented worms (C34) support the causal relationship.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Indole levels increase in worms during dysbiosis, correlating with bacterial accumulation. Indole levels in worms fed live E. coli OP50 increase from 30.9 to 105.9 nmol/g dry weight over days 1-7, paralleling increased bacterial CFU. In contrast, indole levels remain stable (~28-36 nmol/g) in worms fed heat-killed bacteria.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C29-C33 provide quantitative LC-MS measurements showing temporal correlation between indole accumulation and bacterial CFU. The control with heat-killed bacteria demonstrates that indole accumulation requires live bacterial metabolism in the gut. The measurements are precise and include appropriate replicates (n=3 independent experiments).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Bacterial tryptophanase (tnaA) is required for indole production and DAF-16 activation. The K-12 \u0394tnaA strain lacks both tnaA mRNA and indole production, and fails to activate DAF-16. Genetic rescue of tnaA restores indole production and DAF-16 activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C41 demonstrate causality through genetic manipulation. The \u0394tnaA knockout eliminates indole production and DAF-16 activation (C36-C38), while genetic complementation restores both phenotypes (C40-C41). Exogenous indole supplementation rescues DAF-16 activation in \u0394tnaA-fed worms (C39), confirming indole as the active molecule. The experimental logic is sound with appropriate controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Indole produced by bacteria in the gut inhibits E. coli proliferation through DAF-16, thereby maintaining normal lifespan. Worms fed K-12 \u0394tnaA exhibit shortened lifespan and increased bacterial loads compared to K-12-fed worms. Indole supplementation rescues lifespan and reduces bacterial CFU in wild-type but not daf-16 mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C55 establish a complete pathway from indole production to lifespan through bacterial control. The genetic epistasis experiments (C47-C48, C50, C52, C54) demonstrate DAF-16 dependence. CFU measurements and fluorescence imaging of mCherry-expressing bacteria provide quantitative and visual evidence. The rescue experiments with indole supplementation (C45-C46, C53) confirm the causal role of indole.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C6",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C74"
+    ],
+    "result": "TRPA-1, a cold-sensitive TRP channel, is involved in indole-mediated DAF-16 activation. RNAi knockdown of trpa-1 significantly inhibits DAF-16 nuclear translocation in response to both bacterial accumulation and exogenous indole treatment. TRPA-1 is required for indole's effects on lifespan extension and bacterial accumulation control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C59-C63, and C74 demonstrate TRPA-1's role through RNAi knockdown experiments showing loss of indole-mediated DAF-16 activation (C61-C62). The connection to mammalian TRPA-1 is supported by citation (C59-C60). Functional consequences on lifespan and bacterial loads are shown in subsequent claims. The experimental approach is appropriate, though the mechanism downstream of TRPA-1 remains incompletely defined.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "TRPA-1 is required for indole-mediated lifespan extension and bacterial control. Knockdown of trpa-1 shortens lifespan and increases bacterial CFU. Indole supplementation fails to extend lifespan or reduce bacterial loads in trpa-1 RNAi or trpa-1(ok999) mutant worms. Epistasis analysis shows trpa-1 and daf-16 function in the same pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C73 provide genetic evidence through both RNAi and deletion mutants. The epistasis experiment (C70) showing no additive effect of daf-16 knockdown in trpa-1 mutants supports a linear pathway. Loss-of-function experiments with indole supplementation (C68-C69, C72-C73) demonstrate TRPA-1 is epistatic to indole. Multiple independent experiments with consistent results strengthen the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C140",
+      "C146"
+    ],
+    "result": "TRPA-1 in neurons, but not intestine, is required for indole-mediated longevity. Tissue-specific RNAi experiments show that neuronal trpa-1 knockdown abolishes indole's lifespan extension and bacterial control effects, while intestinal trpa-1 knockdown does not. Both neuronal and intestinal TRPA-1 contribute to basal lifespan.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C87, C140, and C146 use tissue-specific RNAi strains to dissect TRPA-1 function. The differential requirement for neuronal TRPA-1 in indole response (C82-C83, C85-C86) versus both tissues for basal lifespan (C81) is clearly demonstrated. This suggests non-cell-autonomous signaling from neurons to intestine. The experimental design is rigorous with appropriate tissue-specific controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C4",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C120",
+      "C150",
+      "C156",
+      "C157"
+    ],
+    "result": "DAF-16 up-regulates lysozymes lys-7 and lys-8 to limit bacterial accumulation during aging. Single lys-7 mutants show mild lifespan reduction, while lys-7; lys-8 double mutants exhibit shortened lifespan, reduced fitness markers, and increased bacterial loads when fed live E. coli. The effects are specific to live bacteria, indicating lys-7 and lys-8 act synergistically downstream of DAF-16.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C90-C103, C120, C150, C156-C157 demonstrate the lysozyme pathway through genetic analysis. The synergistic effect of double mutants (C95, C102-C103) versus single mutants (C91-C94) indicates functional redundancy. Phenotypic specificity to live bacteria (C96, C101) parallels DAF-16 mutant phenotypes. The conclusion that lys-8 enhances lys-7 function (C156-C157) is supported by the genetic data, though the molecular mechanism is not defined.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "Expression of lys-7 and lys-8 is up-regulated by live bacterial accumulation in a DAF-16-dependent manner and requires neuronal TRPA-1. Reporter gene and qPCR analyses show increased lys-7p::gfp and lys-8p::gfp expression on days 4 and 7 with live but not heat-killed bacteria. This up-regulation is suppressed by daf-16 or neuronal trpa-1 knockdown, and is induced by exogenous indole.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C119 connect the upstream signaling (indole-TRPA-1-DAF-16) to downstream effectors (lysozymes) through expression analysis. Multiple methods (fluorescent reporters and qPCR) provide consistent results. The tissue-specific requirement for neuronal TRPA-1 (C116-C119) is consistent with the non-cell-autonomous model. The temporal correlation with bacterial accumulation and DAF-16 activation strengthens the pathway model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C104",
+      "C105"
+    ],
+    "result": "Indole's effects on lifespan extension and bacterial control require lys-7 and lys-8. Indole supplementation fails to extend lifespan or suppress bacterial CFU in lys-7; lys-8 double mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C105 demonstrate that lysozymes are epistatic to indole, placing them downstream in the pathway. The experiments are straightforward and the results are clear. However, this represents a relatively minor extension of the main pathway characterization, confirming the functional hierarchy rather than revealing new biology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C65"
+    ],
+    "result": "AHR-1 and SGK-1 are not required for indole-mediated DAF-16 activation. RNAi knockdown of ahr-1 or sgk-1 does not affect DAF-16 nuclear translocation in response to bacterial accumulation or indole treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C58 and C65 provide negative results that help define the mechanism. The experiments rule out previously reported pathways (AHR-1 from Sonowal et al., 2017; SGK-1 from cold-induced TRPA-1 activation). These are important controls that distinguish the indole-TRPA-1 pathway from related mechanisms. The negative results are clearly stated with appropriate statistical analysis (ns = not significant).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "TRPA-1 activation by indole and podocarpic acid occurs through distinct mechanisms. Indole does not activate SKN-1, and podocarpic acid does not activate DAF-16, despite both being TRPA-1 agonists.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C79 distinguish the indole-TRPA-1-DAF-16 pathway from the podocarpic acid-TRPA-1-SKN-1 pathway. The cross-testing experiments (C76, C78) clearly show pathway specificity. This is important for understanding TRPA-1 signaling diversity, though it represents a supporting observation rather than a primary finding of the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C13",
+      "C14"
+    ],
+    "result": "DAF-16 target genes dod-3p::gfp and hsp-16.2p::nCherry are up-regulated by live bacteria but not by heat-killed bacteria or starvation. Starvation induces DAF-16 nuclear translocation on day 1, but killed bacteria do not induce starvation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C11 and C13-C14 provide supporting evidence for DAF-16 activation specificity. The reporter gene assays confirm DAF-16 transcriptional activity parallels nuclear localization. The starvation control (C13-C14) rules out an alternative explanation for DAF-16 activation with killed bacteria. These are important validation experiments but represent confirmatory rather than primary findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C12"
+    ],
+    "result": "DAF-16 remains cytoplasmic in worms fed ampicillin-killed E. coli OP50 on days 4 and 7.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C12 provides an additional control showing that antibiotic-killed bacteria, like heat-killed bacteria, do not activate DAF-16. This confirms that bacterial viability, not the method of killing, determines DAF-16 activation. While important for ruling out artifacts, this is a straightforward control experiment.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C43",
+      "C56",
+      "C64",
+      "C66",
+      "C80",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C147",
+      "C148",
+      "C149",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C158",
+      "C159",
+      "C160"
+    ],
+    "result": "Background knowledge and prior work establish the context for the study. This includes: (1) indole as a bacterial signaling molecule that animals can sense; (2) TRPA-1 as a cold-sensitive TRP channel conserved from C. elegans to mammals; (3) lysozymes as antimicrobial effectors; (4) prior observations of bacterial accumulation during aging and DAF-16's role in longevity; and (5) connections to inflammatory bowel disease.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43, C56, C64, C66, C80, C121-C132, C141-C145, C147-C149, C151-C155, C158-C160 cite established literature to provide context. These citations appear accurate and appropriate based on the referenced studies. However, these are not results of the current study but rather background information. They support the rationale and interpretation but do not constitute findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C7",
+      "C55",
+      "C133",
+      "C134",
+      "C161"
+    ],
+    "result": "Indole functions as a microbial signal of gut dysbiosis to promote host fitness. The bacteria-derived metabolite may serve as a pathogen-associated molecular pattern recognized by metazoans, with potential therapeutic implications for inflammatory intestinal diseases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C7, C55, C133, C134, and C161 represent high-level interpretations and speculations. While the data support indole's role in host-microbe communication (C7, C55, C133), the characterization as a \"pathogen-associated molecular pattern\" (C134) is speculative and not directly tested. The therapeutic implications for IBD (C161) are proposed based on cited literature but not experimentally validated in this study. These are reasonable interpretations but extend beyond the direct experimental evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139"
+    ],
+    "result": "Indole inhibits bacterial accumulation in worms at concentrations (0.05-0.2 mM) below those that directly inhibit E. coli growth (>3 mM). This suggests indole acts through host mechanisms rather than direct bacterial growth inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C135-C139 address an important alternative explanation. The cited literature (C135-C137) establishes that indole concentrations used in the study are below those causing direct bacterial growth inhibition. The authors' data (C138) show effectiveness at 0.05-0.2 mM. The inference that direct bacterial inhibition is unlikely (C139) is reasonable given the concentration differences, though direct testing of bacterial growth in the experimental conditions would strengthen this conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C88",
+      "C89"
+    ],
+    "result": "C. elegans possesses various antimicrobial effector proteins including lysozymes, which are involved in host defense against pathogens.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C89 cite established knowledge about C. elegans innate immunity. These are accurate statements based on the cited literature (Dierking et al., 2016; multiple citations for C89) and provide necessary background for understanding the lysozyme experiments. However, these are not findings of the current study.",
+    "result_type": "MINOR"
+  }
+]

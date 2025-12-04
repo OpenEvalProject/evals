@@ -1,0 +1,1488 @@
+{
+  "submission": {
+    "id": "ca6b3390-f426-4f99-b046-128c8f3758c5",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-04T03:58:05.180849Z",
+    "updated_at": "2025-12-04T03:58:05.180849Z"
+  },
+  "content": [
+    {
+      "id": "6f014298-3b42-468d-b513-a6fa3ae7b8a6",
+      "submission_id": "ca6b3390-f426-4f99-b046-128c8f3758c5",
+      "content_type": "manuscript",
+      "content_text": "# Postsynaptic cell type and synaptic distance do not determine efficiency of monosynaptic rabies virus spread measured at synaptic resolution\n\n## Authors\n\n- Maribel Pati\u00f1o<sup>1</sup> ([ORCID: 0000-0003-0820-3315](https://orcid.org/0000-0003-0820-3315))\n- Willian N Lagos<sup>1</sup>\n- Neelakshi S Patne<sup>1</sup>\n- Paula A Miyazaki<sup>1</sup>\n- Sai Krishna Bhamidipati<sup>1</sup> ([ORCID: 0000-0003-3498-3730](https://orcid.org/0000-0003-3498-3730))\n- Forrest Collman<sup>4</sup> ([ORCID: 0000-0002-0280-7022](https://orcid.org/0000-0002-0280-7022))\n- Edward M Callaway<sup>1</sup> ([ORCID: 0000-0002-6366-5267](https://orcid.org/0000-0002-6366-5267)) \u2020\n\n### Affiliations\n\n1. Systems Neurobiology Laboratories, The Salk Institute for Biological Studies La Jolla United States ([ROR:03xez1567](https://ror.org/03xez1567))\n2. Neuroscience Graduate Program, University of California, San Diego La Jolla United States ([ROR:05rrcem69](https://ror.org/05rrcem69))\n3. Medical Scientist Training Program, University of California, San Diego La Jolla United States ([ROR:006w34k90](https://ror.org/006w34k90))\n4. Allen Institute for Brain Science Seattle United States ([ROR:00dcv1019](https://ror.org/00dcv1019))\n\n\u2020 Corresponding author\n\n## Abstract\n\nRetrograde monosynaptic tracing using glycoprotein-deleted rabies virus is an important component of the toolkit for investigation of neural circuit structure and connectivity. It allows for the identification of first-order presynaptic connections to cell populations of interest across both the central and peripheral nervous system, helping to decipher the complex connectivity patterns of neural networks that give rise to brain function. Despite its utility, the factors that influence the probability of transsynaptic rabies spread are not well understood. While it is well established that expression levels of rabies glycoprotein used to trans-complement G-deleted rabies can result in large changes in numbers of inputs labeled per starter cell (convergence index [CI]), it is not known how typical values of CI relate to the proportions of synaptic contacts or input neurons labeled. And it is not known whether inputs to different cell types, or synaptic contacts that are more proximal or distal to the cell body, are labeled with different probabilities. Here, we use a new rabies virus construct that allows for the simultaneous labeling of pre- and postsynaptic specializations to quantify the proportion of synaptic contacts labeled in mouse primary visual cortex. We demonstrate that with typical conditions about 40% of first-order presynaptic excitatory synapses to cortical excitatory and inhibitory neurons are labeled. We show that using matched tracing conditions there are similar proportions of labeled contacts onto L4 excitatory pyramidal, somatostatin (Sst) inhibitory, and vasoactive intestinal peptide (Vip) starter cell types. Furthermore, we find no difference in the proportions of labeled excitatory contacts onto postsynaptic sites at different subcellular locations.\n\n## Introduction\n\nMonosynaptic rabies tracing using glycoprotein (G)-deleted rabies virus (RVdG) is a powerful tool for the study of neural circuit connectivity. This method enables scientists to label, genetically manipulate, or monitor the activity of brain-wide monosynaptic inputs to cell populations of interest. Since its introduction (Wickersham et al., 2007a; Wickersham et al., 2007b) it has been widely used for the identification of presynaptic inputs to single neurons (Marshel et al., 2010; Rancz et al., 2011; Rossi et al., 2020; Wertz et al., 2015), projection-defined neurons (Cruz-Mart\u00edn et al., 2014; Levine et al., 2014), adult-born neurons (Deshpande et al., 2013; Garcia et al., 2014), transplanted neurons (Doerr et al., 2017; Grealish et al., 2015), hPSC-derived organoid neurons (Andersen et al., 2020; Miura et al., 2020), and genetically defined excitatory neurons (DeNardo et al., 2015; Kim et al., 2015), inhibitory neurons (Miyamichi et al., 2013; Wall et al., 2016), and non-neuronal cell types (Clark et al., 2021; Mount et al., 2019). In addition to being used for the identification of inputs, the incorporation of Ca2+ indicators and light-activated opsins into rabies reagents (Osakada et al., 2011) allows rabies tracing experiments to probe the relationship between function and connectivity (Rossi et al., 2020; Tian et al., 2016; Wertz et al., 2015; Wester et al., 2019). The ability of genetically modified RVdG to selectively spread retrogradely between synaptically connected cells allows for the identification of presynaptic partners regardless of their distance from one another and has led to novel insights throughout the nervous system.\n\nDespite the utility and widespread use of monosynaptic rabies tracing to study neural connectivity, there is uncertainty about the efficiency of transsynaptic spread from starter cells to input neurons and what factors influence the probability of spread. Although studies quantifying inputs to single neurons have provided some insight into the efficiency of spread (Marshel et al., 2010; Miyamichi et al., 2011; Rancz et al., 2011; Wertz et al., 2015) results vary widely across experimental conditions and no direct measurements of spread efficiency are available. Furthermore, using the convergence index (CI), defined as the number of rabies-labeled input neurons divided by the number of starter cells, recent studies have shown that the number of input neurons labeled per starter cell can be changed by as much as 10-fold by modifying the rabies glycoprotein (Kim et al., 2016), replacing the rabies virus strain (Reardon et al., 2016), or adjusting the level of glycoprotein expression (Lavin et al., 2020). Despite allowing quantitative comparisons between different reagents and conditions, these studies relied on methods that result in large animal to animal variability, require tedious counting across many animals, and can display high variability depending on the number of starter neurons (Tran-Van-Minh et al., 2022). Most importantly, CI measurements fail to quantify what proportion of all inputs are labeled. Additionally, the use of CI fails to address questions of the influence of biological factors on rabies spread efficiency, such as distance of synapses to the starter cell soma or differences of spread from different starter cell types.\n\nIn this study we examine the efficiency of RVdG retrograde spread from starter cell to input neurons at the synaptic level. We designed a new genetically modified rabies virus that labels presynaptic terminals with synaptophysin-RFP (SynPhRFP) and excitatory postsynaptic densities with postsynaptic density-95-GFP (PSD95GFP). Because more than 99% of PSD95 postsynaptic puncta colocalize with a presynaptic terminal (Micheva et al., 2010), this construct allows us to quantify the proportion of excitatory synapses on a starter cell that have their corresponding input neuron labeled with rabies virus (defined here as synaptic fraction [SF]). We find that with the particular reagents and conditions that we used, rabies retrogradely labels about 35\u201340% of excitatory synaptic contacts onto each of the excitatory and inhibitory cell populations we tested. Furthermore, we found that SF does not vary by the proximity or distance of synapses to the starter cell soma or by the type of neuronal dendrite. Finally, we model the factors that influence the relationship between SF and the fraction of input neurons labeled (input fraction [IF]) and show that under plausible conditions for our results in mouse visual cortex the IF/SF ratio is about 0.75, so an SF of 40% corresponds to an IF of 30% of input neurons labeled. This analysis also allows an estimate of the probability of rabies spread across a single synaptic contact (unitary synaptic efficiency, U) which we estimate to be about 0.28 (28%) when SF = 0.4. Overall, this study provides insight into some long-standing questions about the efficiency of monosynaptic rabies tracing. We further discuss that desired tracing efficiency varies depending on experimental aims, the likely relationships between SF and proportion of input neurons that are labeled, and that efficiency was not maximized with the experimental design used here.\n\n## Results\n\n### RVdG-PSD95GFP-SynPhRFP viral construct allows simultaneous fluorescent labeling of pre- and postsynaptic specializations\n\nTo investigate the transsynaptic spread of rabies virus from starter cells to input neurons at synaptic resolution, we developed a high-throughput and precise method to directly identify synapses labeled by transsynaptic spread. We created a new deletion-mutant rabies virus construct that expresses two synaptic fusion protein transgenes from the rabies G locus (Figure 1A), modeled after existing rabies constructs known to label multiple subcellular compartments of neurons (Wickersham et al., 2013). One gene encodes for a fusion protein of the excitatory postsynaptic marker, postsynaptic density 95 (PSD-95), and enhanced green fluorescent protein (eGFP). The other encodes for a fusion protein of the presynaptic marker synaptophysin (SynPh) and the bright and photostable red fluorescent protein TagRFP-T (Shaner et al., 2008). We chose the synaptophysin-TagRFP-T (SynPhRFP) fusion protein as it has previously been shown to result in a punctate red fluorescent pattern that colocalizes with varicosities on axons when expressed from the rabies genome (Wickersham et al., 2013). Injection of SAD-B19 EnvA+ RVdG-PSD95GFP-SynPhRFP in primary visual cortex (V1) of Sim1Cre mice expressing TVA and oG in Cre+ layer 5 neurons (derived from adeno-associated viruses [AAV] helper viruses, see Materials and methods) resulted in strong punctate green and red fluorescent labeling (Figure 1B), with green labeling prominent on dendrites and dendritic spines (Figure 2E and F). Super-resolution Airyscan imaging (see Materials and methods) revealed that GFP labeling colocalized with a subset of the puncta labeled with antibody staining against endogenous PSD-95 (Figure 1C). In addition to synaptic labeling there were typically nuclear aggregates of both red and green fluorescent protein in infected neurons (Figure 1B).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/89297/elife-89297-fig1-v2.jpg)\n\n**Figure 1.:** (A) Schematic of RVdG-PSD95GFP-SynPhRFP viral construct design. Two transgenes were inserted into the G locus of the rabies genome. One encodes a presynaptically targeted fluorescent fusion protein, synaptophysin TagRFP-T (SynPhRFP), and the other a postsynaptically targeted fluorescent fusion protein, PSD-95 eGFP (PSD95GFP). (B) Coronal sections of Sim1Cre mouse expressing TVA and oG in V1 infected with EnvA+ RVdG-PSD95GFP-SynPhRFP imaged at 20\u00d7 with confocal microscopy. Top row shows neurons expressing both PSD95GFP and SynPhRFP fusion proteins. Bottom row shows a zoomed in max intensity projection reconstructed image of the region enclosed by the dashed square in the top row. White arrows point to PSD-95 puncta, blue arrows to synaptophysin puncta, and gray arrows to large non-specific nuclear fluorescent aggregates. Scale bars represent 100 \u00b5m (top row) or 10 \u00b5m (bottom row). (C) Airyscan super-resolution max intensity projection reconstructed images taken at 63\u00d7 showing colocalization of PSD95GFP fusion protein expressed from the rabies genome with anti-PSD95 antibody staining in magenta. Scale bar = 1 \u00b5m.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/89297/elife-89297-fig2-v2.jpg)\n\n**Figure 2.:** (A) Schematic illustration of experimental design and timeline for control experiments without glycoprotein. Nr5a1Cre mice were injected in V1 with a mixture of AAV-CIAO-TVA and AAV-FLEX-smFP-myc. Three weeks later EnvA+ RVdG-PSD95GFP-SynPhRFP was injected into the same site and allowed to express for 7 days. (B) Representative image of V1 injection site, obtained using widefield fluorescence microscopy at 10\u00d7. Scale bar = 200 \u00b5m. (C) Max intensity projection reconstruction of images obtained using Airyscan super-resolution imaging at 63\u00d7. Top, example image of rabies-infected neuron labeled with smFP_myc, without glycoprotein. Bottom, zoomed in image of boxed region in top image, illustrating PSD-95 puncta colocalized with cytoplasmic smFP_myc. Scale bar = 20 \u00b5m (top) and scale bar = 2 \u00b5m (bottom).\n\n### Efficiency of rabies transsynaptic spread across excitatory synapses onto excitatory starter neurons\n\nTo quantify the proportion of synaptic contacts labeled with rabies virus, we injected a mixture of three Cre-dependent helper AAVs into the primary visual cortex (V1) of Nr5a1-Cre mice to target initial rabies infection to a sparse population of L4 excitatory neurons (Harris et al., 2014; Figure 3A, B). (1) AAV8-nef-AO-66/71-TVA950 (AAV-CIAO-TVA) expresses the TVA receptor for the avian sarcoma leukosis virus envelope protein, EnvA, which is necessary for entry of pseudotyped EnvA+ RVdG into Cre+ cells. However, recombinant-independent off-target leak expression of transgenes is common in recombinase-dependent DIO and FLEX AAV constructs. Because even miniscule quantities of TVA leak expression is sufficient for pseudotyped rabies to enter off-target cells and confound results (Callaway and Luo, 2015), it was necessary to minimize leak expression of TVA. We therefore used the novel cross-over insensitive ATG-out (CIAO) AAV construct, which has been shown to nearly eliminate leak expression and provide reliable and targeted transgene expression (Fischer et al., 2019), to express TVA in our population of interest. CIAO constructs have the ATG codon placed outside of the loxp mutant pairs loxp66/71 sites to ensure the gene coding region is out of frame with the ATG start signal in the absence of Cre-mediated recombination. Experiments in which AAV-CIAO-TVA and EnvA+ RVdG were injected into V1 of Cre-negative mice resulted in 15.83\u00b111.33 rabies-infected neurons (mean \u00b1 SEM, n=3 mice) indicating low levels of Cre-independent TVA expression. (2) AAV8-hSyn-FLEX-H2BBFP-oG expresses optimized rabies glycoprotein (oG) (Kim et al., 2016), which allows for trans-complementation in EnvA+ RVdG-infected neurons, also termed starter cells, allowing the rabies to spread retrogradely into presynaptically connected inputs. Co-expression of nuclear mTagBFP2 (BFP), a brighter and more photostable blue fluorescent protein (Subach et al., 2008), and oG allows for the unambiguous identification of starter cells (Figure 3C and E), defined as any cell that expresses both oG and rabies transgenes. (3) Because H2BBFP only labels the nucleus of starter cells, we also used AAV-CAG-FLEX-smFP_myc to generate cytoplasmic labeling, allowing dendrites of starter cells to be traced. This AAV expresses spaghetti monster fluorescent protein (smFP), which consists of dark non-fluorescent GFP fused to 10 Myc epitope tags that can be combined with anti-Myc antibody staining to attain bright fluorescent labeling of subcellular structures (Viswanathan et al., 2015). Infection of L4 excitatory neurons with AAV-CAG-FLEX-smFP_myc resulted in strong dendritic labeling that improved the ability to accurately trace apical and basal dendrites of starter cells (Figure 3C, E, and F). Three weeks after injection of a mixture of the three AAV helper viruses, EnvA+ RVdG-PSD95GFP-SynPhRFP was injected into the same location in V1 and allowed to express for 7 days. As expected from transsynaptic spread, we observed that many thalamic dLGN long-distance inputs to L4 excitatory neurons were reliably labeled with RVdG-PSD95GFP-SynPhRFP (Figure 3D).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/89297/elife-89297-fig3-v2.jpg)\n\n**Figure 3.:** (A) Schematic illustration of experimental design and timeline for monosynaptic rabies tracing. Nr5a1Cre mice were injected in V1 with a mixture of AAV-CIAO-TVA, AAV-FLEX-H2BBFP-oG, and AAV-FLEX-smFP_myc. Three weeks later EnvA+ RVdG-PSD95GFP-SynPhRFP was injected into the same site and allowed to express for 7 days. (B) Schematic of rabies retrograde spread efficiency quantification paradigm. Starter neurons are distinguished from input neurons based on expression of nuclear BFP from AAV-FLEX-H2BBFP-oG in addition to fusion proteins from EnvA+ RVdG-PSD95GFP-SynPhRFP. Starter neurons expressing smFP_myc are used for synaptic quantification to allow tracing of distal dendrites. Synaptic fraction is measured by quantifying the proportion of postsynaptic densities (PSD95GFP) on the starter neuron apposed with rabies-labeled presynaptic terminals (SynPhRFP). (C) Representative example images of V1 injection site, obtained using widefield fluorescence microscopy at \u00d710 magnification. Scale bar = 200 \u00b5m. (D) Coronal section example images obtained using widefield fluorescence microscopy at 10\u00d7 showing long-range monosynaptic input neurons in dorsal lateral geniculate nucleus (dLGN) to Nr5a1+ L4 neurons in V1 when using the new RVdG construct (top). No retrograde spread is observed when glycoprotein is omitted, see Figure 2 for additional information. Insets are zoomed in images of dashed box regions. Scale bar represents 1 mm in hemisection image or 200 \u00b5m in inset. (E) Max intensity projection reconstruction of images obtained using Airyscan super-resolution imaging at 63\u00d7. Left, example image of starter neuron (H2BBFP+,PSD95GFP+, and SynPhRFP+) labeled with smFP_myc. Middle, example image of the distal domain of an apical dendrite of a starter neuron. Right, example image of the proximal domain of a basal dendrite. Scale bar = 20 \u00b5m (all three). (F) Spatial resolution using Airyscan imaging is sufficient to quantify rabies transsynaptic spread at the synaptic level. Zoomed in max intensity projection reconstructed image of boxed region in (E) right, illustrating PSD-95 puncta colocalized with cytoplasmic smFP_myc. Top, yellow boxed region highlights a spine with PSD-95 puncta without an apposed rabies-labeled presynaptic density. White boxed region highlights a spine with PSD-95 puncta with an apposed rabies-labeled presynaptic density. Middle row, zoomed in max intensity projection reconstructed images of yellow boxed region and bottom rows are zoomed in max intensity projection reconstructed images of white boxed region. Top, scale bar = 2 \u00b5m and middle and bottom scale bar = 0.5 \u00b5m. (G) Percent of postsynaptic densities (PSD95GFP) on Nr5a1+ starter cells apposed with rabies-labeled presynaptic terminals (SynPhRFP). Left, quantification of colocalization at baseline (no glycoprotein) due to L4 to L4 connections compared to colocalization from transsynaptic spread (with glycoprotein). Middle, colocalization on the distal vs proximal domains of apical dendrites. Right, colocalization on apical vs basal dendrites. Values are reported as mean \u00b1 SEM. Statistics were calculated from the Wilcoxon rank-sum test for non-parametric comparisons. Individual data points (circles) indicate values for each neuron. n (number of neurons) = 5 and 9 and N (number of mice) = 2 and 3 for no oG and oG groups respectively. p-value > 0.05 = not significant (ns).\n\nTo quantify the proportion of excitatory synaptic contacts labeled on starter neurons (defined as SF), we first identified starter neurons that also expressed smFP using widefield fluorescence microscopy. Select areas of starter neuron dendrites that could be traced back to their parent cell bodies were imaged using Airyscan super-resolution microscopy (Huff et al., 2017) to increase the resolution and signal-to-noise and allow visualization of single synaptic puncta (Figure 3F). To assess the transsynaptic spreading efficiency, we quantified the proportion of starter cell excitatory postsynaptic specializations, labeled with PSD95GFP, that were directly apposed with rabies-labeled presynaptic terminals, labeled with SynPhRFP (Figure 3F). Because L4 excitatory neurons connect to one another, the direct connections between starter cells can generate co-labeling of pre- and postsynaptic specializations independent from transsynaptic spread. Co-labeling independent of transynaptic spread might also result from direct rabies infection of the small numbers of non-starter neurons infected with rabies due to leak expression of TVA (see above). It was therefore important to begin by quantifying how much of this \u2018background label\u2019 is present under conditions in which similar numbers of L4 neurons are directly infected with EnvA+ RVdG-PSD95GFP-SynPhRFP, but there is no transsynaptic spread. To quantify this we calculated the proportion of PSD95GFP puncta apposed to SynPhRFP in experiments that omitted oG (no AAV8-hSyn-FLEX-H2BBFP-oG, Figure 2A, B, and C). The omission of oG prevents retrograde spread of rabies virus and labeling of input neurons (Figure 3D), therefore observed SynPhRFP colocalization with PSD95GFP must be a result of L4 to L4 excitatory starter neuron connections and/or infection via TVA leak expression. We found that neurons in which oG was used for trans-complementation displayed significantly higher proportions of PSD95GFP puncta colocalized with SynPhRFP compared to neurons in which oG was omitted (50.61 \u00b1 3.92% vs 8.86 \u00b1 1.79% mean \u00b1 SEM respectively, Wilcoxon rank-sum test, p=0.001, n=9 neurons across 3 mice and n=5 neurons across 2 mice; Figure 3G). Within experimental condition groups, puncta colocalization did not vary significantly across neurons from distinct experimental animals. The difference between these values (50.61\u20138.86%) yields an estimate of 42% of postsynaptic densities whose presynaptic partners are transsynaptically labeled (SF = 0.42).\n\nTo determine how SF is related to distance from the cell body we sampled from different portions of the dendritic arbors of L4 starter cells. Sampled areas within 75 \u00b5m of the soma were classified as proximal dendritic domains and areas within 75 \u00b5m of the pial surface were considered distal domains. These distal domains are estimated to be about 250\u2013350 \u00b5m from the soma. We found no significant differences between SF at proximal regions of apical dendrites compared to the distal regions as determined by PSD95GFP and SynPhRFP puncta colocalization (49.14 \u00b1 3.49% vs 57 \u00b1 5.43% respectively, Wilcoxon rank-sum test, p=0.34; n=9 neurons across 3 mice, Figure 3G). We also compared SF at basal dendrites versus apical dendrites and observed no significant difference (44.52 \u00b1 3.96% vs 53.05 \u00b1 3.99% respectively, Wilcoxon rank-sum test, p=0.22; n=9 neurons across 3 mice and n=6 neurons across 3 mice, Figure 3G). Note that a fraction of the observed synaptic labeling might occur through indirect pathways rather than direct spread of rabies virus at the observed synapse (see below). This fraction is small relative to the variability in our measured SF at distal versus proximal or apical versus basal dendrites.\n\n### Efficiency of rabies transsynaptic spread across excitatory synapses onto inhibitory starter neurons\n\nTo assess possible differences in efficiency of rabies retrograde spread for different starter cell types, we conducted monosynaptic rabies tracing using RVdG-PSD95GFP-SynPhRFP as described above, but using mouse lines that express Cre recombinase in two distinct classes of inhibitory neurons. We used the knock-in SstCre and VipCre lines to target initial infection to either somatostatin (Sst)-expressing or vasoactive intestinal peptide (Vip)-expressing inhibitory neurons (Figure 4A). We selected Sst and Vip interneurons as both exhibit very low levels of recurrent connections compared to parvalbumin-expressing neurons, which connect extensively to each other (Campagnola et al., 2022; Pfeffer et al., 2013). We found no significant difference between the percent of PSD95GFP puncta apposed to SynPhRFP on Sst dendrites compared to Vip dendrites (36.13 \u00b1 1.73% vs 38.38\u00b1 1.22% respectively, Wilcoxon rank-sum test, p=0.44, n=9 neurons across 3 mice per line; Figure 4F). These values are comparable to the SF for labeling inputs to L4 starter cells (42%, see above). We also assessed whether SF varied based on distance from the cell body. For Sst starter cells, colocalization of PSD95GFP with SynPhRFP on proximal dendritic domains (within 75 \u00b5m of the cell body) did not differ significantly from distal dendritic domains (within 75 \u00b5m of the pial surface) (37.50 \u00b1 1.93% vs 33.85 \u00b1 2.43% respectively, Wilcoxon rank-sum test, p=0.55, Figure 4F). We observed similar results for Vip starter cells, with no difference between SF at proximal versus distal domains (39.80 \u00b1 1.90% vs 36.122 \u00b1 1.14% respectively, Wilcoxon rank-sum test, p=0.11, Figure 4F).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/89297/elife-89297-fig4-v2.jpg)\n\n**Figure 4.:** (A) Representative example images of V1 injection site for SstCre mouse line (top) and VipCre mouse line (bottom), obtained using widefield fluorescence microscopy at 10\u00d7. Scale bar = 200 \u00b5m. (B\u2013E) Max intensity projection reconstruction of images obtained using Airyscan super-resolution imaging at 63\u00d7. Example image of Vip+ (B) and Sst+ (D) starter neurons (H2BBFP+, PSD95GFP+, and SynPhRFP+) labeled with smFP_myc. Scale bar = 20 \u00b5m. (C and E) Zoomed in images of boxed regions in (B and D) respectively, illustrating PSD-95 puncta colocalized with cytoplasmic smFP_myc. Top, yellow boxed region highlights a spine with PSD-95 puncta without an apposed rabies-labeled presynaptic density. White boxed region highlights a spine with PSD-95 puncta with an apposed rabies-labeled presynaptic density. Middle row, zoomed in images of yellow boxed region and bottom rows are zoomed in images of white boxed region. Top, scale bar = 2 \u00b5m and middle and bottom scale bar = 0.5 \u00b5m. (F) Left, percent of postsynaptic densities (PSD95GFP) on Vip+ and Sst+ starter cells apposed with rabies-labeled presynaptic terminals (SynPhRFP). Middle, colocalization on the distal vs proximal domains of Sst+ dendrites. Right, colocalization on the distal vs proximal domains of Vip+ dendrites. Values are reported as mean \u00b1 SEM. Statistics were calculated from Wilcoxon rank-sum test for non-parametric comparisons. Individual data points (circles) indicate values for each neuron. n (number of neurons) = 9 and N (number of mice) = 3. p-value > 0.05 = not significant (ns).\n\n### Relationships between SF, IF, and U\n\nBecause prior studies have found large variability in the number of rabies-labeled input cells per starter cell (CI), there is great interest in understanding what fraction of all input neurons are labeled (IF). But for the great majority of circuits, the actual numbers of inputs to each neuron is unknown, so it is not possible to calculate IF from CI. Below, along with detailed derivation in Materials and methods, we provide a formal analysis and quantitative estimates of the relationships between SF and IF for cortical starter neurons. Overall, these analyses indicate that the SF data we have presented here provide a good estimate and important new insight into IF under the tracing conditions that we have used. But it is important to consider several factors that make SF likely to be somewhat larger than IF. Our analyses (Figures 5\u20136, and more detailed considerations in Materials and methods) indicate that for the cortical circuits we studied, our observed SF value of around 40% likely corresponds to an IF of about 30%. We further estimate that when SF is 40% for a cortical neuron, the probability of rabies spread across a single synaptic contact (unitary synaptic efficiency, U) is likely to be about 28%. For most applications, this spreading efficiency is likely to be near optimal because it can allow for detection of weak versus strong input sources (see Discussion); but there is clearly room for increasing spread if the experimental application or question calls for labeling closer to all input neurons.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/89297/elife-89297-fig5-v2.jpg)\n\n**Figure 5.:** (A) The percentage of inputs to a layer 4 excitatory neuron that provide common input to another layer 4 excitatory neuron (percentage of neurons connected) at increasing distances between layer 4 neurons. Based on identification of 17,883 presynaptic inputs to layer 4 cells. (B) Distribution of the numbers of synapses per connection for 76,678 excitatory neuron to excitatory neuron connections identified in electron micrographic reconstructions of a volume from adult mouse visual cortex. Y-axis is plotted on a log scale. Average number of synapses per connection = 1.0965 \u00b1 0.3726 (STD). The overwhelming majority of connections involve only one synaptic contact.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/89297/elife-89297-fig6-v2.jpg)\n\n**Figure 6.:** (A and C) SF against the ratio (R) of neurons with M values of 1 versus either 3 (A) or 2 (C) for different values of U. (B and D) Ratio of IF versus SF against the R of neurons with M values of 1 versus either 3 (B) or 2 (D) for different values of U.\n\nWhat is the expected relationship between SF and IF and what are the factors that make SF likely to be larger than IF? We have defined SF as the proportion of synaptic contacts that are labeled on a given starter neuron. It is important to note that SF will typically not be the same as the proportion of input neurons that are labeled (IF). In Materials and methods along with Figures 5\u20136, we formally consider factors that are likely to impact the relationship between SF and IF. We consider these relationships in the context of cortical circuits, as we have studied here, but the factors considered can also be applied to other brain areas with different circuit organization.\n\nThere are two main features of cortical circuit organization that influence the SF to IF relationship. These are: (1) the extent to which different starter neurons share common inputs; and (2) the distribution of the numbers of synaptic contacts provided per input neuron onto a particular starter neuron. Both of these factors have small impacts for our studies of cortical circuits using the Nr5a1Cre line to define starter cells. The first of these, shared common inputs, is small in cortex due to the sparse connectivity and the sparsity of starter cells in our experiments, but at most might cause SF to be about 20% more than IF (see Materials and methods for detailed consideration). The second factor is more complex, but our analyses show that for cortical circuits it is simplified by the fact that the great majority of connections are mediated by a single synaptic contact (Figure 5). As detailed in Materials and methods along with Figures 5\u20136, overall IF is likely to be at least 78% of SF (ratio of IF/SF = 0.78). With IF/SF = 0.78 our measured SF of 0.4 corresponds to 31% of input neurons labeled (IF = 0.31) and the probability of rabies virus spread across a single synaptic contact is estimated as 0.28 (U=0.28).\n\n## Discussion\n\nGenetically modified RVdG has proven instrumental in deciphering the intricate connectivity patterns of neural networks. Here, we investigated the efficiency with which RVdG spreads retrogradely across excitatory synapses and report, for the first time, direct measurements of the proportion of starter neurons\u2019 postsynaptic densities whose presynaptic inputs are labeled (SF) using the monosynaptic rabies tracing system. Our results demonstrate that with the particular AAV helper viruses, AAV titers, and EnvA+ RVdG titers and strain we used, about 40% of excitatory synaptic contacts onto the examined cell types were labeled. Further considerations detailed in the Results and Materials and methods indicate that the measured SF of 40% likely corresponds to at least 30% of input neurons labeled (IF = 0.30) and a probability of rabies spread across individual synapses (unitary efficiency, U) of 28%.\n\nOf note, we found that efficiency of spread did not vary depending on the distance of synapses to the cell body or across dendrite types. We were concerned that more distal synapses might be less likely to be labeled than proximal synapses because antibody staining for rabies particles shows that during the first 1\u20133 days post-infection, particles are concentrated around the cell body; but they are not detected more distally until later time points (Nassi and Callaway, 2006). In the experiments described here, efficiency of spread was quantified at 7 days post-infection. It therefore appears that any initial bias for spread at proximal synapses might be eliminated by use of longer survival times. Since we only compared efficiency at one typical time point, care should be taken in interpreting results at shorter times post-infection. The same factors that we have considered for their impact on the relationships between measured SF, IF, and U are also important to consider with respect to the spatial locations of labeled synapses. This is because synaptic labeling resulting from either shared inputs or multiple synaptic contacts from a single input neuron are not the result of the spread of rabies across a synaptic contact. Our analyses show that the proportions of labeled synapses arising from these mechanisms is small relative to the variability and proportions of observed SF at distal versus proximal synapses (Figures 3G and 4F).\n\nPrevious studies quantifying the numbers of rabies-labeled input cells per starter cell (CI) have identified several different factors that can increase or decrease the efficiency of transsynaptic spread. While there are few direct comparisons with matched titers of rabies viruses and helper viruses, both the strain of rabies virus and the strain and variant of rabies glycoprotein are likely to be influential. Importantly, when a particular rabies strain and glycoprotein are used, the CI appears to depend most strongly on the levels of G expressed in the starter cells (Callaway and Luo, 2015). Studies suggest that maximizing G expression, either through the use of strong promoters (Miyamichi et al., 2013) or optimized helper virus concentration (Lavin et al., 2020), increases spread efficiency. Importantly, the use of 2A linker elements has been implicated in reduced expression of G (Wall et al., 2010; Watabe-Uchida et al., 2012). Thus, the use of separate AAVs, with one expressing glycoprotein independently from other genes, is recommended to improve efficiency.\n\nA second factor likely to influence efficiency is the number of rabies particles entering a starter cell (Callaway and Luo, 2015). The variability between individual cells that we sampled (Figures 2G and 3C) is likely to reflect these differences. For example, there is expected variability in the numbers of oG-expressing AAV copies and EnvA+ RVdG particles entering each starter cell. Despite the variability that we observe between individual cells, under matched conditions these differences converge to similar means when averaged across even modest numbers of cells (typically 9 cells in our sample) that are far lower than the number of total starter cells in a typical animal. It is noteworthy that it would be straightforward to increase the SF well above the 35\u201340% we observed by simply increasing the levels of oG expression. For example, our AAV helper viruses were designed to allow unambiguous detection of starter cells for accurate quantification, and we therefore utilized a 2A linker element to express both nuclear BFP and oG from a single helper virus. For experiments where unambiguous starter cell detection is not crucial, oG expression can be increased by expression as a single protein from an alternate helper virus. Additionally, oG expression can be further increased through use of an expression amplification system such as TRE/tTA (Lavin et al., 2020).\n\nThese observations suggest that the efficiency of rabies tracing can be manipulated over a wide range depending on experimental goals. But counterintuitively, the ideal rate of spread is probably far less than 100% for most experiments. This is because the spread of rabies is likely to depend on the numbers of synaptic contacts as well as the size of the postsynaptic density, both of which are related to functional connection strength (Holler et al., 2021; Murthy et al., 2001). Thus, if a reasonably small fraction of inputs were labeled, the numbers of labeled presynaptic cells of different types would be expected to scale with the strength of connections from each cell type. But if rabies were to spread across 100% of synaptic contacts, this sensitivity would be lost; every input cell would be labeled regardless of connection strength. On the other hand, if efficiency were exceedingly low one would expect more variability between animals and the potential to fail to detect inputs from weak connections. As considered in our formal modeling of the relationships between proportion of synaptic contacts labeled, proportion of inputs labeled, and efficiency of rabies spread across individual synaptic contacts, a value of 40% of contacts labeled (SF = 0.4) likely corresponds to about 30% of inputs labeled (IF = 0.30) and a unitary synaptic efficiency of about 28% (U=0.28). We therefore suggest that values in the range of 35\u201350% of synaptic contacts labeled are likely to be near optimal in providing both large numbers of labeled input neurons and some degree of sensitivity to connection strength (Henrich et al., 2020). The equations that we derived (see Materials and methods) can also be used to provide insight into the relationships between numbers of synaptic contacts per input neuron and the relative probability that it will be labeled in comparison to other neurons with a different number of synaptic contacts. These equations can be used to assess circuit configurations that are likely to be different in other brain areas than for the cortical circuits on which we have focused.\n\nConsidering the finding that rabies labels less than half of synaptic inputs, it is likely that differential spread of rabies virus leads to differences in the probability of distinct input types being labeled. Although we found evidence that the subcellular location of synaptic contacts of input cells onto the dendrites of starter cells does not affect spread efficiency, it remains unknown what leads to the observed incomplete labeling. It is possible that this is affected by the number of synaptic contacts a presynaptic neuron makes onto the starter cell, differences in uptake receptors on the axon of distinct input cell types, or differences in postsynaptic density size (Callaway and Luo, 2015). Indeed, one limitation of our experimental design is that our light microscopy images do not allow accurate measurement of postsynaptic density size, which would require electron microscopy. Furthermore, it is important to note that we only examined spread efficiency at excitatory synapses labeled with the excitatory postsynaptic density marker PSD-95 and did not quantify the efficiency of spread to inhibitory presynaptic inputs. It should also be noted that the locations and numbers of postsynaptic sites were assessed based on expression of PSD-95-GFP from the rabies virus. If this overexpression were to somehow result in new puncta that do not have a presynaptic input this could result in an underestimate of proportion of actual PSDs labeled.\n\nOverall, we report the efficiency of spread achieved in multiple conditions consisting of distinct starter neuron types. Additionally, the described approach can be used by other researchers to test efficiency of spread across different rabies reagents, distinct input cell types, and starter neuron types not tested in this study.\n\n## Materials and methods\n\n### Mouse transgenic lines\n\nAll experimental procedures were approved by the Salk Institute Animal Care and Use Committee (IACUC). All the animals were handled according to the approved IACUC protocol 13-00005. C57BL/6J mice were used as wild-type. GENSAT BAC transgenic Nr5a1-Cre (Jackson Laboratory stock # 006364), knock-in Som-IRES-Cre (Jackson Laboratory stock #013044), knock-in Vip-IRES-Cre (Jackson Laboratory stock #028578), and GENSAT BAC transgenic Sim1_KJ18-cre mice have been previously described (Gerfen et al., 2013; Harris et al., 2014; Taniguchi et al., 2011). Transgenic mice were maintained on C57BL/6J backgrounds. Mice were housed with a 12 hr light and 12 hr dark cycle and ad libitum access to food and water. Both male and female mice were used for experiments.\n\n### Virus preparation\n\nThe following AAVs were produced by the Salk GT3 Viral Core: AAV8-hSyn-FLEX-H2BmTagBFP2-oG (3.57E+13 GC/ml) and AAV8-nef-AO-66/71-TVA950 (5.25E+13 GC/mL). AAV1-CAG.FLEX.GFPsm_myc.WPRE.SV40 (1.12E+13 GC/ml) was purchased from Addgene. EnvA+ RVdG-5PSD95eGFP-SynPhRFP (1.55E+08 IU/ml) was produced by the Salk GT3 Viral Core. AAVs and rabies virus can be purchased from the Salk Viral Vector Core.\n\n### Animal surgery for virus injection\n\nFor rabies transsynaptic spread efficiency experiments, mice received AAV helper injections at postnatal day (P) 50. Mice were initially anesthetized with 2% isoflurane and maintained at 1.5% isoflurane after placement on a stereotax (David Kopf Instruments, Model 940 series) for surgery and stereotaxic injections. A small craniotomy was made with a mounted drill over the primary visual cortex of the left hemisphere using the following coordinates: 3.4 mm posterior and 2.6 mm lateral relative to bregma. For transsynaptic tracing experiments AAV8-hSyn-FLEX-H2BmTagBFP2-oG, AAV8-nef-AO-66/71-TVA950, and AAV1-CAG.FLEX.GFPsm_myc.WPRE.SV40 were mixed at a ratio of 1:40, 1:100, and 1:2 to final concentrations of 8.92E+11, 5.25E+11, and 5.6E+12 GC/ml respectively. For control experiments with no oG AAV8-nef-AO-66/71-TVA950 and AAV1-CAG.FLEX.GFPsm_myc.WPRE.SV40 were mixed to a titer matched concentration of 5.25E+11 and 5.6E+12 GC/ml. 100 nl of mixture was injected into the center of V1 0.5\u20130.7 mm ventral from the pia using a pulled glass pipette with a tip size of 30 \u00b5m connected to a 1 ml syringe with 18 G tubing adapter and tubing. To prevent backflow, the pipette was left in the brain for 5 min after injection. Three weeks after AAV helper injection, 150 nl of EnvA+ RVdG-5PSD95eGFP-SynPhRFP was injected into the same site in V1. After recovery, mice were given water with ibuprofen (30 mg/kg) and housed for 7 days to allow for transsynaptic rabies spread and fluorescent protein expression.\n\n### Histology\n\nSeven days after rabies injection, brains were harvested after transcardial perfusion using PBS followed by 4% paraformaldehyde (PFA). Brains were dissected out from skulls and post-fixed with 2% PFA and 15% sucrose in PBS at 4\u00b0C for 16\u201320 hr, then immersed in 30% sucrose in PBS at 4\u00b0C before sectioning. 50 \u00b5m coronal brain sections were prepared using a freezing microtome. Free-floating sections were incubated at 4\u00b0C for 16 hr with rabbit anti-Myc (1:500, C3956; Sigma-Aldrich) primary antibody in PBS/0.5% normal donkey serum/0.1% Triton X-100, followed by donkey anti-rabbit conjugated to Alexa 647 (1:500, A-21206, Thermo Fisher) at room temperature for 2\u20133 hr. Immunostained tissue sections were mounted on slides with polyvinyl alcohol mounting medium containing DABCO and allowed to air-dry overnight.\n\nFor characterization of the population of Cre-expressing neurons in Nr5a1Cre mice, these animals were crossed with AI14 reporter mice (Jackson Laboratory stock #007914) to yield TdTomato expression in all Cre-expressing neurons (Wang et al., 2023). Three adult animals (73\u2013193 days of age) were perfused and brains removed, and sectioned as described above. Sections were processed as follows: antigen retrieval was performed using 10 nM sodium citrate buffer and then sections were immunostained with rabbit anti-NeuN (1:1000, ab177487, Abcam), mouse anti-GAD67 (1:1000, MAB5406, MilliporeSigma), rat anti-RFP (1:1000, 5F8-100, Chromotek) followed by Alexa 488 donkey anti-rabbit (1:1000, A21207, Thermo Fisher), Alexa 647 donkey anti-mouse (1:500, A31571, Thermo Fisher), and CF568 donkey anti-rat (1:500, 89138-546, Biotium), secondaries. Sections were first imaged on an Olympus BX63 microscope using a 10\u00d7/0.4 NA objective (Olympus) to identify the borders of V1 and layer 4. Sections for cell counting were then imaged on a Zeiss LSM880 confocal microscope using a 20\u00d7/0.8 NA objective. A stitched z-stack image was taken so that the entirety of V1 in one of the hemispheres of that section could be used for quantification. Within these regions the x,y,z coordinates of all RFP-positive (TdTomato) cells were marked and then these coordinates were used to calculate nearest-neighbor distances and the numbers of labeled neurons located with 50 \u00b5m of each labeled neuron. Across 774 labeled neurons whose positions were marked in 7 sections from 3 animals, we find that both the mean and median numbers of labeled neurons located within 50 \u00b5m of any given labeled neuron of interest is 7. Additional analyses also confirmed that only GAD-negative excitatory neurons were labeled.\n\n### Image acquisition and analysis\n\nIndividual sections were first scanned at \u00d710 magnification using an Olympus BX63 widefield fluorescent microscope to detect starter neurons triple positive for H2BBFP-oG, smFP_myc, and RVdG-PSD95GFP-SynPhRFP. Individual starter neurons were then imaged using a Zeiss LSM 880 Airyscan FAST Microscope with a Plan-Apochromat 63\u00d7/1.4 Oil DIC M27 objective. First, neurons were confirmed to be starter neurons by checking for expression of nuclear BFP. Z-stacks of images were acquired with a step interval of 500 nm for select dendritic domains. Dendrites immediately next to the soma and spanning 75 \u00b5m away were defined as proximal dendrites and representative images were acquired. Using expression of smFP_myc, dendrites were traced from the soma up to the pial surface. Dendritic regions spanning 75 \u00b5m from the pial surface were acquired and designated as distal domains. Images were processed and analyzed using NIH ImageJ software (FIJI). Airyscan super-resolution imaging can resolve structures ~120 nm apart in the lateral dimension and ~350 nm apart in the axial dimension. The synaptic cleft size, or space between the pre- and postsynaptic density, ranges from 20 to 30 nm, making it outside of the range of the resolution limit. Therefore, we required partial overlap, or colocalization, between pre- and postsynaptic markers and did not allow for any distance between the two markers to consider them a synapse. For synaptic counting, images were first analyzed with only the far-red (smFP_myc) and green channel visible to count all PSD95GFP-labeled postsynaptic densities colocalized with the far-red labeled dendritic region. After postsynaptic counts for that region were quantified, the red channel was turned on to quantify the number of presynaptic densities colocalized with postsynaptic densities. Due to the abundance of synapses across a 50 \u00b5m coronal section, puncta were counted manually one z-plane at a time. Images presented in manuscript are max intensity projection reconstructions to allow for 2D visualization of 3D structures. Wilcoxon rank-sum test for non-parametric comparisons was used for statistical analysis. For all figures: ***, p<0.001; ns = not significant, p>0.05.\n\n### EM analysis methods\n\nAnalysis of synaptic connectivity statistics from structural electron microscopy was done on the publicly available dataset of mouse visual cortex from the MicRonS project (Bae et al., 2023). To assess the number of synapses per excitatory connection, neurons were surveyed from the collection of cells that were annotated as having \u2018clean\u2019 or \u2018extended\u2019 axons, which reflect the set of axons which have been removed of false mergers. We included only neurons which had more than 100 synaptic outputs and were excitatory. For each excitatory cell, between 65% and 90% of its synapses could be mapped to a post-synaptic soma (Bae et al., 2023). Most post-synaptic somas have been cell typed in the dataset based on a model trained on soma and nucleus features (Elabbady et al., 2022), using labels provided by a combination of human labeling and unsupervised clustering (Schneider-Mizell et al., 2023). Therefore, we were able to calculate the average number of synapses per excitatory connection as a function of cell type for many cell-type interactions.\n\nFurther, for assessing shared connections onto layer 4 cells specifically, we calculated the distance from each post-synaptic soma to others layer 4 somas in the volume, and then measured which of those had connections from the same pre-synaptic axon. We then calculated the mean connected fraction as a function of distance between the two post-synaptic somas. All data analysis was done in python using the CAVEclient to access the dataset (Dorkenwald et al., 2023) and numpy (Harris et al., 2020), pandas (McKinney, 2010; team, T. pandas development, 2023), and scipy (Virtanen et al., 2020) to calculate these values.\n\n### Calculations of SF and IF\n\nWe conducted formal analyses of how several different factors in the organization of cortical circuits might influence the relationship between the proportion of postsynaptic specializations on a given starter neuron that have rabies-labeled presynaptic terminals (SF), the probability that rabies spreads across a single synaptic contact (U), and the proportion of input neurons to the starter neuron that are labeled (IF). We consider two different influences that are both expected to result in measured values of SF that are larger than IF. These are: (1) the extent to which different starter neurons share common inputs; and (2) the distribution of the numbers of synaptic contacts provided per input neuron onto a particular starter neuron.\n\n#### The potential impact of common inputs\n\nShared common inputs are expected to result in an SF value that is larger than the input proportion labeled (SF>IF). This is because the divergent connections of an input neuron can result in the labeling of a synaptic contact on a starter neuron even if rabies virus never spreads from the starter neuron at that particular synaptic contact. Specifically, rabies can spread from a different starter neuron resulting in expression of synRFP in the divergent input neuron. That synRFP could then result in labeling of a synaptic contact without any spread of rabies virus across the labeled contact. The rate of synaptic labeling on a given starter cell by this indirect route depends on three factors: the numbers and spatial distribution of other starter cells; the proportion of common inputs that are shared between starter cells at different distances; and the probability that inputs to a starter cell are labeled (IF).\n\nWe directly assessed the maximum possible numbers of other layer 4 starter cells and their spatial distributions by analyzing the density and distribution of Cre-expressing neurons in Nr5a1Cre mice. And we analyzed a 3D reconstructed EM volume to directly measure the probability that a neuron presynaptic to a layer 4 excitatory neuron also provides a common input to a neighboring layer 4 neuron (Figure 5A).\n\nTo calculate the proportion of the measured value of SF that arises from common input we sum together the contributions of all neurons providing shared input and then multiply by the estimated proportion of those neurons that were labeled (IF). Using an estimated IF of 0.3 (IF = 0.75 SF from common input and multiple contacts combined, see below), we obtain the following proportions of the measured value of SF that arise from common inputs at different distances from the subject neuron. At 0\u201350 \u00b5m the proportion of shared input is 5% (Figure 5A) and there are 7, nr5a1 neurons. If the rate at which inputs are labeled (IF) is 0.3 (see above and below) then 30% of the 5% shared inputs = 1.5% more labeled synapses can potentially be added indirectly by a second nearby starter neuron. But if 30% of the neurons providing input to the cell of interest were already labeled directly, then only 70% of the potential additions, or 1%, will be new additions. As additional nearby starter cells are incorporated into the network and their inputs become labeled, each new cell will add a progressively smaller percentage of new indirect inputs because the portion of previously unlabeled synapses will decrease; but for small numbers of input neurons, 1% remains a close approximation. For 7 other starter cells located within 50 \u00b5m of the subject neuron the total maximum contribution (assuming all nr5a1 neurons were rabies-infected starters) would be 7% of the measured SF value. At 50\u2013100 \u00b5m there are 13 additional nr5a1 neurons and the rate of shared input is 3.3%, yielding a total contribution of 9%. At 100\u2013200 \u00b5m there are an additional 28 potential starter neurons and the rate of shared input is 1%, yielding a total contribution of 6%. Contributions beyond 200 \u00b5m are negligible (less than 1%) due to the very low rate of common input (~0.1%). Altogether, the maximum possible proportion of labeled synapses that result from shared input is about 0.22 (0.07+0.09+0.06). Thus, this factor would be expected to result in SF being at most 22% greater than IF (IF = 0.78 SF). Since the proportion of nr5a1 neurons that are directly infected with rabies and serve as starters is almost certainly less than 1 and probably closer to 0.5, this is an overestimate. If only half of the nr5a1 neurons are starter cells then the proportion of labeled synapses resulting from shared input would be only 0.11 and IF/SF = 0.89.\n\n#### The impact of the distribution of the numbers of synaptic contacts provided per input neuron onto a particular starter neuron\n\nWe next consider how the numbers of synaptic contacts provided by each input neuron onto a given starter neuron will influence the relationship between SF and IF. Overall our consideration of this issue indicates that this will have only a small effect on our measures of excitatory inputs to cortical neurons because more than 90% of such connections involve only a single synaptic contact (see below). Regardless of the actual configuration of inputs, the maximum value of IF will be SF (SF = IF), but for most configurations SF is larger than IF (SF>IF; details below). It is informative to first consider scenarios in which SF = IF because this is not entirely intuitive. The most intuitive case is a configuration in which each input neuron invariably provides just one synaptic contact to the starter neuron. Here, it is straightforward to infer that SF and IF are equal because the only way to label an input neuron is for rabies to spread from the single synaptic contact and then for SynRFP to spread to and label that same synaptic contact. But for cases in which some or all input neurons provide more than one synaptic contact onto a starter neuron, the possible scenarios are less intuitive. Generally, such a configuration will cause IF to be less than SF (but not always). For example, rabies virus might spread from one of the contacts provided by an input neuron and this would then result in production of synRFP that labels all of the contacts provided by that input neuron. Taken at face value, one would expect that this would cause SF to be larger than IF; this is usually, but not always the case. In an extreme scenario, suppose that each input neuron has multiple synaptic contacts, but the number of synaptic contacts is equal for each neuron. In this case, SF will be equal to IF. For example, suppose a starter neuron has a total of 1000 synaptic contacts (S) that arise from 200 input neurons (N) each providing exactly 5 contacts. Even if rabies virus spreads from just 1 of the 5 contacts provided by an input neuron and then labels all 5 contacts, the proportion of postsynaptic specializations labeled (SF) will always be equal to the proportion of input neurons labeled (IF), regardless of how efficiently rabies virus spreads between neurons. If N*=number of labeled input neurons and S*=number of labeled synaptic contacts, then IF = N*/200; SF = S*/1000; S*/N*=5; therefore SF = IF. This relationship holds for all cases of S/N provided that all input neurons have the same S/N.\n\nThe actual configuration of cortical circuits is likely more complex and the precise features are not known for all input sources. However, available data based on a reconstructed EM volume (see EM analysis methods) indicate that in adult mouse visual cortex, it is rare for a local connection from an excitatory neuron onto another cortical neuron to involve more than one synaptic contact. Figure 5B plots the distribution of the numbers of synaptic contacts per connection for 76,678 excitatory neuron to excitatory neuron connections, involving 503 pre-synaptic cells and 26,079 post-synaptic cells (note the log scale of the Y-axis in Figure 5B). Out of 76,678 connections, only about 6000 (~8%) involve more than one synapse and only about 1000 (~1.3%) involve 3 or more synapses. The average number of synapses per connection is 1.0965 (std = 0.3726). Note that these values are much lower than observed in previously available data based on connections that were first identified by electrophysiology in brain slices from 12- to 23-day-old rats, followed by EM reconstruction of the labeled neurons (Feldmeyer et al., 1999; Feldmeyer et al., 2002; Feldmeyer et al., 2006). We consider the newer, much more extensive, and relatively unbiased data from adult mouse visual cortex to be more relevant to our experiments in adult mouse visual cortex. Nevertheless, we consider the potential impact of larger values since the equations we derive and the examples that we illustrate can be informative for future consideration of labeling in other circuits and cell types.\n\nHere, we describe how the distribution of input ratios (S/N=synapses per input neuron) influences the relationship between SF and IF. We refer to S/N as multiplicity, or M. For simplicity, we consider only cases with two different populations of input neurons (a and b), each with different numbers of synapses per neuron (Ma and Mb). With this scenario the relationship between SF and IF depends on both the proportion of input neurons in the a and b populations (ratio, R=Na/Nb) and on the probability that rabies virus spreads across a single synaptic contact (unitary synaptic efficiency, U). Below, we provide equations and their derivation that allow for calculation of both SF and IF given: (1) the ratio (R=Na/Nb) of the numbers of neurons (N) in population a (Na) and in population b (Nb); (2) the multiplicity of synaptic contacts per neuron (M) for population a (Ma) and population b (Mb); and (3) the unitary synaptic efficiency (U).\n\nAt an extreme, there might be just 1 S/N for one population (a, Ma = 1) and 3 S/N for another population (b, Mb = 3). Figure 6A and B plots the calculated values of SF and IF/SF, respectively, for different ratios (R) of Na/Nb and for different levels of unitary synaptic efficiency (U) when Ma = 1 and Mb = 3. Under these conditions and with a worst-case estimate of U=0.22 (our measured SF of 0.4 suggests actual U is closer to 0.28, see below), the smallest possible IF/SF value is ~0.8. If these were the actual values, then our measured SF of 0.4 would correspond to an IF value of 0.32, or 32% of all inputs labeled.\n\nWe consider a scenario with Ma = 1 and Mb = 2 to provide a closer simulation of the actual configuration of cortical circuits since values of 1 and 2 synapses per neuron account for nearly 99% of all connections (Figure 5B). Figure 6C and D plots the calculated values of SF and IF/SF, respectively, for different ratios (R) of Na/Nb and for different levels of unitary synaptic efficiency (U) when Ma = 1 and Mb = 2. Here, we see that the smallest IF/SF is now calculated when R is about 2 (Figure 6B) and that with R=2.0 our measured SF values of around 0.4 are typically calculated when U~=0.28 (Figure 6A). With U=0.28 and R=2.0, IF/SF in this scenario is about 0.91 (Figure 6B). Finally, if we consider that based on the actual measurements for cortical circuits the value for R is at least 10 (Figure 5B), our measured SF value of 0.4 corresponds to U~=0.35 (Figure 6C). With U=0.35 and R=10, IF/SF is about 0.95 (Figure 6D). Therefore, under this \u2018most plausible\u2019 scenario considering the impact of multiple synaptic contacts, our measured SF of 0.4 suggests that about 38% of input neurons are labeled (IF = 0.38) and that the probability of rabies virus spread across a single synaptic contact is 35% (U=0.35).\n\nThese estimates of IF and U are made independently from the effects of common input, which, as detailed above, are expected to result in IF being at most 78% of the measured value for SF. If we incorporate an additional maximum impact due to multiple synaptic contacts based on IF/SF = 0.95, then we obtain an overall estimate of 0.78\u00d70.95 = 0.74=IF/SF. With measured values of SF = 0.4 we estimate IF ~=0.3. Calculations above indicate that the impact of multiple synapses per contact will result in IF that is about 8% larger than U. Therefore, we estimate that, at a minimum, U=0.28.\n\n#### Derivation of equations relating SF to IF\n\nWe considered conditions in which there are two different populations of neurons, a and b, that each have different numbers of synaptic contacts (S) onto the starter neuron per input neuron (synapses per neuron, S/N, or multiplicity M). We assume that when there are multiple synaptic contacts from an input neuron to a starter neuron, the probability that rabies virus spreads across a synaptic contact (U) is the same for all contacts from both input populations and is independent for each contact. Further, if rabies spreads across one of an input neuron\u2019s contacts, the synRFP expressed from rabies virus in that neuron spreads to and labels all the synaptic terminals from that input neuron.\n\nAs shown in the equations and derivation below, the values for SF and IF depend on: (1) the ratio (R) of the numbers of neurons (N) in population a (Na) and population b (Nb); (2) the numbers of synaptic contacts per input neuron (multiplicity, M) for population a (Ma) and population b (Mb), and the probability that rabies virus will spread across an individual synaptic contact (U).\n\n$$\np_{x}=1\u2212(1\u2212U)^{M_{x}}\n$$\n\n\n\n$$\nN_{x}^{\u2217}=N_{x}\u2217p_{x}\n$$\n\n\n\n$$\nN_{a}^{\u2217}=R\u2217N_{b}\u2217p_{a}\n$$\n\n\n\n$$\nS_{x}^{*}=N_{x}^{*}*M_{x}\n$$\n\n\n\n$$\nIF=\\frac{N_{tot}^{\u2217}}{N_{tot}}=\u00a0\\frac{N_{a}^{\u2217}+N_{b}^{\u2217}}{N_{a}+N_{b}}=\\frac{(N_{a}\u2217p_{a})+(N_{b}\u2217p_{b})}{N_{a}+N_{b}}=\\frac{(N_{b}\u2217R\u2217p_{a})+(N_{b}\u2217p_{b})}{(N_{b}\u2217R)+N_{b}}=\\frac{(R\u2217p_{a})+p_{b}}{R+1}\n$$\n\n\n\n$$\nS_{tot}^{\u2217}=S_{a}^{\u2217}+S_{b}^{\u2217}=(N_{a}^{\u2217}\u2217M_{a})+(N_{b}^{\u2217}\u2217M_{b})=(N_{b}\u2217R\u2217p_{a}\u2217M_{a})+(N_{b}\u2217p_{b}\u2217M_{b})=N_{b}\u2217[(R\u2217p_{a}\u2217M_{a})+(p_{b}\u2217M_{b})]\n$$\n\n\n\n$$\nS_{tot}=S_{a}+S_{b}=N_{a}*M_{a}+N_{b}+M_{b}=R*N_{b}*M_{a}+N_{b}+M_{b}=N_{b}*[(M_{a}*R)+M_{b}]\n$$\n\n\n\n$$\nSF=\u00a0\\frac{S_{tot}^{\u2217}}{S_{tot}}=\u00a0\\frac{N_{b}\u2217[(R\u2217p_{a}\u2217M_{a})+(p_{b}\u2217M_{b})]}{N_{b}\u2217[(M_{a}\u2217R)+M_{b}]}=\\frac{(R\u2217p_{a}\u2217M_{a})+(p_{b}\u2217M_{b})}{(M_{a}\u2217R)+M_{b}}\n$$\n\n### Statistics and reproducibility\n\nNo statistical methods were used to pre-determine sample sizes; rather sample sizes were established based upon similar studies in the literature. Stereotaxic injections were repeated in three biological replicates for each mouse line, and both male and female mice were used. All statistical tests were performed using R version 4.1.1 and details of individual tests are described in figure legends. All data are reported as the mean \u00b1 SEM, except synapses per connections which is mean \u00b1 std.\n",
+      "created_at": "2025-12-04T03:58:05.180849Z"
+    },
+    {
+      "id": "74763017-7210-4e90-9be9-557101d69397",
+      "submission_id": "ca6b3390-f426-4f99-b046-128c8f3758c5",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Liqun Luo, https://ror.org/006w34k90 Howard Hughes Medical Institute, Stanford University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.89297.sa0](https://doi.org/10.7554/eLife.89297.sa0)\n\nThis study provides valuable new information on using monosynaptic rabies virus for trans-synaptic tracing, a widely used tool to map synaptic inputs to specific types of neurons in the mammalian brain. The authors provide convincing quantitative information about the efficiency for the rabies virus to cross synapses of visual cortical neurons in the mouse. They further demonstrate that the cortical cell type and location of synapse in the postsynaptic cell do not appear to affect the efficiency for the rabies virus to cross synapses.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Liqun Luo, https://ror.org/006w34k90 Howard Hughes Medical Institute, Stanford University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.89297.sa1](https://doi.org/10.7554/eLife.89297.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nDecision letter after peer review:\n\n[Editors\u2019 note: the authors submitted for reconsideration following the decision after peer review. What follows is the decision letter after the first round of review.]\n\nThank you for submitting the paper \"Quantification of Monosynaptic Rabies Tracing Efficiency\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen a Senior Editor. The reviewers have opted to remain anonymous.\n\nWe are sorry to say that, after consultation with the reviewers, we have decided that this work will not be considered further for publication by eLife.\n\nComments from all three reviewers are attached. The reviewers also had a robust discussion session after all reviews were submitted. While all three reviewers appreciate the value of your work, the consensus is that the advance is not sufficient for a full research article. In particular, the key measurement of \"labeling efficiency at synaptic level\" is very easily confused by readers as \"the efficiency with which rabies virus crosses synapses\", which is a more valuable measure that is less dependent on specific connectivity architectures of specific circuits.\n\nWe regret that we cannot consider the current manuscript further. However, if you are able to thoroughly address reviewers' critiques with further work, you are welcome to submit a revised manuscript to eLife as a new submission. We will try our best to recruit the same reviewers.\n\nReviewer #1 (Recommendations for the authors):\n\nG-deleted rabies virus has been widely used to trace monosynaptic inputs to specific populations of neurons in the mammalian brain since its first report by Callaway and colleagues in 2007. Despite its wide use, many fundamental properties of the method remain to be characterized. In this short report, Patino et al. addressed two important questions: (1) what fraction of synapses does the rabies virus cross from a starter cell? (2) does this vary for synapses located at different distances to the soma? Answers to these questions should help researchers to interpret their data and thus will be of general interest to the neural circuit community.\n\nTo answer these questions, the authors produced a new rabies virus that expresses both a presynaptic marker tagged with RFP and a postsynaptic marker (for excitatory neurons) tagged with GFP, and simply counted within starter cells the fraction of GFP+ puncta that have an adjacent RFP punctum. Since most RFP puncta are a result of the trans-synaptic transfer of rabies virus (the authors did a nice control of skipping G in one experiment), the authors can \"quantify efficiency of spread at the synaptic level\". The authors found about 35-40% of GFP+ puncta have RFP puncta next to them, and interestingly this number does not change whether these quantifications were performed close to the cell body or far from the cell body (thus answering question #2). However, the current version has a number of issues that should be addressed.\n\n1. While the authors conclude properly that under their experimental conditions, \"35% to 40% of excitatory inputs to the examined cell types were labeled,\" many readers would mistakenly think that \"rabies virus crosses 35-40% of synapses of the starter cells\" from reading this paper. The latter is unlikely true for two reasons. First, if starter cell 1 transfers rabies virus to presynaptic neuron 1, which not only connects with starter cell 1 but also starter cell 2, then a pair of green/red puncta between starter cell 2 and presynaptic neuron 1 could result even if rabies virus never crossed the synapse between starter cell 2 and presynaptic neuron 1. Second, if starter cell 1 forms 5 synapses with presynaptic neuron 1, then it is possible that the rabies virus just crossed 1 of the 5 synapses (there may be some data supporting 5-10 synapses between synaptic pairs of cortical excitatory neurons), and the other 4 pairs of puncta are incidental. Thus, the actual fraction of synapses that the rabies virus crosses is likely substantially below 35-40%. While the first caveat can be overcome by doing experiments from single starter cells, the second caveat cannot be avoided. It is possible that the authors could estimate -based on cortical connectivity data (luckily V1 is one of the best studied in this regard, including serial EM reconstruction)-\"what fraction of synapses does the rabies virus cross,\" which is a more fundamental question likely generalizable across cell types than \"what fraction of excitatory inputs are labeled,\" which will vary greatly across circuits because of specific connection properties. At the very least, the authors should distinguish these two questions clearly, and state why they can differ, so that readers won't come away being misled.\n\n2. I am confused by Figure 2F, one of the most important panels of the entire paper that provides examples of GFP/RFP co-staining at high resolution. GFP marks postsynaptic density and thus should colocalize with the dendritic marker (magenta) and RFP marks presynaptic terminals of presynaptic neurons and should be adjacent but outside the magenta-positive area. But the third row (the positive example) shows the exact opposite. Red is within the magenta area, whereas green is adjacent to the magenta area. Can the authors clarify?\n\n3. This brings an important issue of setting objective criteria for synaptic pairs: how much overlap, what's the maximum/minimum distance, etc, as this is the basis for the entire study. Indeed, what counts as a synaptic pair based on pre and postsynaptic markers in light microscopy is a debated issue. The authors are helped here by the sparse labeling of starter cells and presynaptic partners; still, I highly recommend that the authors state clearly the criteria in Methods.\n\n4. The negative control of omitting oG in Figure 2 is very nice; I hope that the authors will do the same for tracing inputs to the two types of inhibitory neurons. These inhibitory neurons are also known to form gap junctions and it will be interesting to see whether the rabies virus would jump through gap junctions without oG, even if they are not known to form substantial chemical synapses between them.\n\nReviewer #2 (Recommendations for the authors):\n\nPati\u00f1o et al. developed a new rabies viral vector that contains both PSD95GFP (an excitatory postsynaptic marker) and SynPhRFP (a general presynaptic marker) to quantify what proportion of all excitatory presynaptic contacts on a starter cell are labeled by rabies virus-mediated retrograde monosynaptic tracing. They defined the labeling efficiency as the proportion of PSD95GFP puncta that are directly opposed to SynPhRFP puncta, and compared the labeling efficiency values among different dendritic positions (i.e. apical, proximal, and basal dendrites) or different neuronal types (i.e. L4 excitatory neurons, Sst+ interneurons, and Vip+ interneurons). They find no significant difference in the labeling efficiency depending on subcellular locations and neuronal types. They show that about 40% of first-order presynaptic excitatory contacts on a starter cell are labeled in their experimental conditions with careful control experiments. Overall, the experimental design is sound although additional validation is necessary. This work demonstrates \"the labeling efficiency at synaptic levels\" of rabies virus-mediated input tracing. However, there are several concerns in relation to their claim and the significance of this analysis.\n\n1) The authors assume that all PSD95GFP puncta receive presynaptic contacts and the total number of PSD95GFP represents the total number of synapses on starter cells. This should be validated by examining the proportion of PSD95GFP puncta that associate with endogenous excitatory presynaptic markers such as VGLUT1.\n\n2) The authors appear to use \"the efficiency of spread\" as a phrase equivalent to \"the labeling efficiency\". However, these are different; the efficiency of spread should be defined as the proportion of synapses through which rabies virus particles are actually retrogradely transported. Assuming that one input neuron makes five presynaptic contacts onto a starter cell, even if rabies virus particles pass through only one synapse among them, all five presynaptic contacts should be labeled. Thus, labeling efficiency depends on the efficiency of spread and the number of presynaptic contacts per input neuron. The efficiency of spread is equivalent to the labeling efficiency only when one input neuron forms one presynaptic contact with a starter cell.\n\n3) There remain a number of questions about rabies virus-mediated input tracing, part of which are discussed by the authors. What percentage of all (excitatory or inhibitory) input cells are labeled? How large should the size of postsynaptic density be to allow for the retrograde spread of rabies virus particles? How many synapses does an input neuron form onto a starter cell? The number of synapses an input neuron forms depends on the subcellular locations of a starter cell or types of a starter cell. What presynaptic receptors are required for the transsynaptic spread of rabies viruses? Addressing these questions should be important for understanding the mechanism underlying rabies virus spread as well as more detailed connection properties of neural circuits. Unfortunately, the present study falls short of providing biological implications beyond \"the labeling efficiency at synaptic levels\".\n\n1) In Figure 3, higher magnification images representing PSD95GFP puncta that associate with SypPhRFP puncta should be included.\n\n2) It would be easier for readers to understand how the cross-over insensitive ATG-out (CIAO) AAV construct works if the authors could provide a concise explanation in the text.\n\nReviewer #3 (Recommendations for the authors):\n\nThe efficiency of rabies virus-mediated retrograde trans-synaptic tracing, one of the prevailing methods for deciphering cell-type specific neural connectivities, has long been in the debate yet has not definitively been addressed. To directly determine the efficiency, the authors took a simple and elegant strategy to visualize the excitatory post-synaptic structures with GFP-fused PSD95 and pre-synaptic structures with TagRFP-T-fused synaptophysin. They genetically modified the rabies genome to allow the simultaneous targetings of pre- and post-synaptic fluorescent markers to both the post-synaptic starter cells and their pre-synaptic partners. By high-resolution confocal microscopy, they showed along a dendrite of the starter post-synaptic neurons, the excitatory post-synaptic structures were visualized with GFP+ puncta, some of which were tightly paired with the RFP+ pre-synaptic puncta. After subtracting some background labeling caused regardless of trans-synaptic labeling, the authors revealed that, under their experimental conditions, approximately 42% of the post-synaptic puncta were coupled with the trans-synaptically labeled pre-synaptic puncta, hence providing the labeling efficiency of rabies-tracing. Importantly, the efficiency of rabies tracing was similar between excitatory and inhibitory starter cells, and also grossly invariant the along proximal vs. distal dendrites of the starter cells. These data provide useful basic properties of the rabies tracing method. However, the main conclusion could contain an overestimation because not all the labeled pre-synaptic structures were necessarily visualized from the starter cell of analysis. Overall, the present study at least estimated an upper limit of rabies tracing efficiency, which if carefully discussed should be useful for the community.\n\n1) The conclusion can be accepted without modification if the total number of starter cells in their experimental condition was near one. However, the authors simply generated starter cells by co-infection of AAVs in a cell-type specific Cre driver mouse line, in which usually hundreds of starter cells are generated in the injection site. Given that the labeled pre-synaptic neurons can connect to multiple post-synaptic partners located nearby, not all the labeled pre-synaptic structures found along the labeled dendrites of a given starter cell were necessarily visualized from the exact starter cell of analysis. This property of neural circuits likely led to an overestimation of rabies-tracing efficiency reported in the present study. To characterize if this overestimation happened, the authors can first analyze the number of starter cells in their samples and then examine a correlation between the number of starter cells and the fraction of GFP/RFP coupling. Ideally, increasing the number of animal samples with a smaller number of total starter cells could provide a better estimate. Overall, the present study at least estimated an upper limit of rabies tracing efficiency, which if carefully discussed should be useful for the community.\n\n2) Because GFP+ post-synaptic puncta were highly dense in the field of analysis, it is important to establish that the puncta detected along the Myc+ dendrites were mostly derived from the cell of analysis, not from adjacent uncharacterized cells. This can simply be achieved if the authors could analyze the density of GFP+ puncta along the Myc-positive but oG-negative dendrites as a negative control.\n\n3) For reproducibility, it is important to report more details of viral constructions, in particular, RVdG-5PSD95eGFP-SynPhRFP, and describe resource availability. Because not all non-US researchers obtain rabies stock from the Salk Viral Core, depositing the corresponding plasmids (and most importantly the sequence information) to a more generally accessible distributor such as Addgene would be appreciated.\n\n[Editors\u2019 note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Detection of monosynaptic rabies spread at synaptic resolution reveals factors influencing tracing efficiency\" for further consideration by eLife. Your revised article has been evaluated by Lu Chen (Senior Editor) and a Reviewing Editor.\n\nThe manuscript has been improved but there are some remaining issues that need to be addressed, as outlined below:\n\n1) Please streamline the descriptions in the Results section \"Relationships between\u2026\" (see comments from Reviewers #1 and #2 below). Please consider using new nomenclatures suggested by Reviewer #2 (all three reviewers agree on this during our discussion).\n\n2) Please address Reviewer #1's critique #1 regarding the 4% probability of shared common inputs only applies to a pair of starter cells using suggested analysis and potentially new data.\n\n3) Please address Reviewer #3's critique regarding the match between the title and data shown in the paper.\n\n4) Please address all other critiques as much as you can.\n\nReviewer #1 (Recommendations for the authors):\n\nThe efficiency of rabies virus (RV)-mediated retrograde trans-synaptic tracing, a prominent technique for unraveling cell-type specific neural connectivities, has not yet been definitively addressed. To assess the labeling efficiency at the synaptic level and examine the relationship between the synaptic and cellular labeling, the authors employed rabies-encoding GFP-fused PSD95 and TagRFP-fused synaptophysin to simultaneously label both post-synaptic structures on the starter cells and their corresponding pre-synaptic counterparts. Following the subtraction of background labeling unrelated to trans-synaptic labeling, the authors revealed that, under their experimental conditions, approximately 40% of the post-synaptic puncta were coupled with the trans-synaptically labeled pre-synaptic puncta, thereby providing the labeling efficiency at the synapse level (synaptic efficiency, SE). Importantly, SE values were comparable between excitatory and inhibitory starter cells, as well as consistent along the proximal and distal dendrites of the starter cells. Lastly, the authors offer a theoretical framework to interpret SE and to potentially establish a connection with the cellular labeling efficiency of pre-synaptic neurons (Input probability, IP). While the manuscript encompasses significant technical and theoretical advancements, I noticed two major points that warrant careful consideration in interpreting the author's conclusions.\n\n1. To analyze the associations between SE and IP, the authors appropriately introduced two factors. First, multiple starter neurons can share common input neurons, implying that the pre-synaptic structure of an observed starter neuron may be non-autonomously labeled from other starter cells. To characterize this effect, the authors conducted a thorough analysis of the existing literature and provided an estimated probability of 4% for two randomly selected cortical starter cells to share a common pre-synaptic neuron. Based on this estimate, they concluded that \"this factor would be expected to result in SE being about 4% greater than IP\". However, this conclusion holds only when analyzing samples with two starter cells. In reality, SE values are likely to be influenced by the number of starter cells (Ns) because, in a typical experiment involving Ns = 200-500 and given a 4% probability of shared common inputs in any pair of starter cells, nearly all labeled pre-synaptic neurons of the observed starter cell can be non-autonomously labeled from at least one of the other starter cells.\n\n2. The authors also appropriately introduced the second point: multiple pre-synaptic structures provided by an input neuron can all be labeled if the RV passes through any one of them. I appreciate the author's attempt to suggest that this factor may have only a modest influence on the relationship between SE and IP (Figure 5). However, I am concerned that this factor has a more pronounced impact on the interpretation of the observed spatial organization of the pre-synaptic structures. Even in an extreme scenario where the RV passes through only the proximal (P) or distal (D) synapse, assuming that the pre-synaptic neurons evenly provide pre-synaptic structures along the PD axis, the result would be the comparable SE values between P and D synapses. The manuscript would benefit from a more meticulous discussion of this issue.\n\n3. Considering my major point #1 above, I believe the manuscript would gain from the inclusion of an estimation of SE pertaining to a single starter cell, which is unlikely to be 0.4. The authors could begin by analyzing the number of starter cells in their samples and then perform a regression analysis to estimate the SE of a single starter cell. Increasing the number of animal samples with a smaller number of starter cells could contribute to obtaining a more accurate estimate. Furthermore, it would be advantageous to simulate the relationships between the number of starter cells (Ns) and SE, using assumed circuit structures and the efficiency of RV spread across a single synaptic contact (referred to as unitary efficiency, U).\n\n4. Although I appreciate the authors' endeavors to estimate the relationships between SE and IP, the relevant text could benefit from a more concise writing style, aligning with the rest of the manuscript. For eLife readers with diverse backgrounds, the inclusion of schematic diagrams would be instructive.\n\nReviewer #2 (Recommendations for the authors):\n\nG-deleted rabies virus has been widely used to trace monosynaptic inputs to specific populations of neurons in the mammalian brain since its first report by Callaway and colleagues in 2007. Despite its wide use, many fundamental properties of the method remain to be characterized. In this short report, Patino et al. addressed two important questions: (1) what the fraction of synapses does the rabies virus cross from a starter cell? (2) does this vary for synapses located at different distances to the soma? Answers to these questions should help researchers to interpret their data and thus will be of general interest to the neural circuit community.\n\nTo answer these questions, the authors produced a new rabies virus that expresses both a presynaptic marker tagged with RFP and a postsynaptic marker (for excitatory neurons) tagged with GFP, and simply counted within starter cells the fraction of GFP+ puncta that have an adjacent RFP punctum. Since most RFP puncta are a result of trans-synaptic transfer of rabies virus (the authors did a nice control of skipping G in one experiment), the authors can \"quantify efficiency of spread at the synaptic level\". The authors found about 35-40% of GFP+ puncta have RFP puncta next to them, and interestingly this number does not change whether these quantifications were performed close to the cell body or far from the cell body (thus answering question #2).\n\nI appreciate the length the authors went to address my critiques of the original manuscript on the issue of distinguishing (1) fraction of synapses that are co-labeled in the starter cell, (2) fraction of input neurons that are labeled by rabies virus, and (3) average efficiency of rabies virus crossing an individual synapses. This will clarify to the readers what the authors have done and what kind of conclusions they can take away. However, I have several remaining critiques to the above issue that should be addressed by further textual revision.\n\n1) I don't think the terms the authors used to describe the above three terms are the clearest. The authors used \"synaptic efficiency\" to describe (1), but it can easily be confused with (3). I recommend synapse proportion (SP) to parallel with input proportion (IP), or perhaps a bit better synapse fraction (SF) vs. input fraction (IF). Then (3) can be changed to \"Unitary synapse efficiency (U)\". These terms may be widely adopted in future publications on rabies tracing, so careful consideration is warranted.\n\n2) The textual description in the Results section \"Relationships between\u2026\" is often repetitive and needs to be streamlined. Specifically, I don't like the description of the results in the first paragraph ahead of all the analyses (and the authors have done these repetitively). For example, most of the first paragraph should be trimmed-just give the definition of the terms and move on to the actual \"formal analysis.\" Summarize the results at the end.\n\n3) The results of the formal analysis is based on the cortical circuit. It's important to emphasize that in circuits with denser connectivity, the relationship will be very different. As such, when these properties are discussed in other parts of the manuscript (abstract, introduction, discussion, etc.), please make sure to include the qualification phrase that these inferences were made from cortical circuits (e.g., last paragraph of Introduction).\n\nReviewer #3 (Recommendations for the authors):\n\n1) Prior studies have quantified the proportion of PSD95 labeled postsynaptic densities that are opposed by presynaptic terminals that are also labeled with various presynaptic markers, including synaptophysin and VGLUT1 (Neuron. 2010 Nov 18; 68(4): 639-653. doi: 10.1016/j.neuron.2010.09.024). Essentially every PSD95 labeled terminal has a labeled presynaptic contact. Synaptophysin is a reliable marker of presynaptic terminals but VGLUT1 is not. We have modified the text in the introduction which now reads: \"We designed a new genetically modified rabies virus that labels presynaptic terminals with synaptophysin-RFP (SynPhRFP) and excitatory postsynaptic densities with postsynaptic density-95-GFP (PSD95GFP). Because more than 99% of PSD95 postsynaptic puncta co-localize with a presynaptic terminal (Micheva et al., 2010), this construct allows us to quantify the proportion of excitatory synapses on a starter cell that have their corresponding input neuron labeled with rabies virus (defined here as synaptic efficiency [SE]).\"\n\nComment: I understand that \"endogenous\" PSD95 is a reliable postsynaptic marker in vivo. However, considering this is a new reagent and rabies viruses highly express transgenes, it is fair to experimentally show the colocalization rate of PSD95GFP expressed from rabies viruses and endogenous presynaptic markers (e.g. synaptophysin).\n\n2) We thank the reviewer for this excellent point. We have been very careful not to equate efficiency of spread to labeling efficiency. As described in the above response to a similar comment from reviewer #1 we have added a new Results section, \"Relationships between synaptic efficiency, input proportion, and unitary efficiency\". Here the value that we formally define as unitary efficiency (U) is equivalent to what the reviewer terms \"efficiency of spread\", while our measured values of synaptic efficiency (SE) correspond to what the reviewer describes as \"labeling efficiency\". We show that there are complex relationships between the proportion of labeled presynaptic terminals (SE), efficiency of spread across individual synapses (U), the distributions of numbers of synaptic contacts between connected neuron pairs, and the proportion of input neurons labeled (IP).\n\nComment: I appreciate the authors' effort to estimate IP and U from SE and that the authors clearly discriminate SE and the spread efficiency in the text. The results are informative to some extent but not definitive because they rely on several assumptions such as \"U is identical across synapses\" and \"there are two populations of input neurons that make the distinct numbers of presynaptic contacts per neuron onto starter cells\", which are likely different from real situations. I am afraid that this analysis is not strong enough to claim the utility of the novel rabies vectors.\n\n3) We would like to thank the reviewer for these thought-provoking questions. This is a rather disparate set of comments each of which relates to very different properties of either cortical circuit organization or rabies tracing. Some of these are known for limited aspects of cortical circuits while others remain unknown. With respect to rabies virus spread, some of these are known or can be inferred from published observations.\n\nBelow we further address each of the reviewer's specific questions.\n\nComment: There seems to be a misunderstanding of my previous review comment. I just listed examples of key questions about neural circuit organization and the mechanisms for the rabies virus spread, whose answers should bring important biological insights. I did not mean to request the authors to address all these questions.\n\n4) We disagree with the stated characterization of our results: \"Addressing these questions should be important for understanding the mechanism underlying rabies virus spread as well as more detailed connection properties of neural circuits. Unfortunately, the present study falls short of providing biological implications beyond \"the labeling efficiency at synaptic levels\". First, it was not a goal of our study to understand the mechanisms underlying the spread of rabies virus nor did we intend to reveal detailed connection properties of neural circuits. As stated in our Introduction, we were interested in identifying factors that influence the efficiency of transynaptic spread of rabies and we designed our experiments to address two such factors. These are the distance of synaptic contacts from the cell body and the type of postsynaptic neuron. Our data show that the proportions of labeled synaptic contacts are similar regardless of distance from the cell body and regardless of the postsynaptic cell types tested. These are quite important factors and given that the overall efficiency of spread can easily be increased or decreased by changing glycoprotein expression levels, these measures are more important than the overall measured efficiency in our experiments.\n\nComment: The title of the manuscript is now \"Detection of monosynaptic rabies spread at synaptic resolution reveals factors influencing tracing efficiency\". However, major achievements/findings of this study are that new rabies virus vectors that enable visualization of input synapses onto starter cells and estimation of the fraction of labeled presynaptic contacts are developed and that the proportions of labeled synaptic contacts are similar regardless of distance from the cell body and regardless of the postsynaptic cell types tested, as the authors state above. I am afraid that the authors do not provide \"factors that influence (alter) tracing efficiency\", which makes me feel that the title does not match with the data. If the scope of the manuscript is neither to understand the mechanisms underlying the spread of rabies virus nor to reveal detailed connection properties of neural circuits, can the authors clarify what kind of important questions could be addressed using this novel tool (the utility of the tool)?\n",
+      "created_at": "2025-12-04T03:58:05.180849Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T03:58:05.180849Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T03:58:05.180849Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "f5b057a4-cc0a-4b7a-8167-79ebae978b2c",
+      "content_id": "6f014298-3b42-468d-b513-a6fa3ae7b8a6",
+      "claim_id": "C1",
+      "claim": "Retrograde monosynaptic tracing using glycoprotein-deleted rabies virus allows for the identification of first-order presynaptic connections to cell populations of interest across both the central and peripheral nervous system.",
+      "claim_type": "EXPLICIT",
+      "source": "Retrograde monosynaptic tracing using glycoprotein-deleted rabies virus is an important component of the toolkit for investigation of neural circuit structure and connectivity. It allows for the identification of first-order presynaptic connections to cell populations of interest across both the central and peripheral nervous system, helping to decipher the complex connectivity patterns of neural networks that give rise to brain function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a well-established capability of the technique, supported by the broader scientific literature and the experimental work presented in this manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:58:05.180849Z"
+    },
+    {
+      "id": "7af656c6-fe21-4460-a9b4-be867bf4978b",
+      "content_id": "6f014298-3b42-468d-b513-a6fa3ae7b8a6",
+      "claim_id": "C2",
+      "claim": "Expression levels of rabies glycoprotein used to trans-complement G-deleted rabies can result in large changes in numbers of inputs labeled per starter cell (convergence index).",
+      "claim_type": "EXPLICIT",
+      "source": "While it is well established that expression levels of rabies glycoprotein used to trans-complement G-deleted rabies can result in large changes in numbers of inputs labeled per starter cell (convergence index [CI]), it is not known how typical values of CI relate to the proportions of synaptic contacts or input neurons labeled.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior studies in the field that have demonstrated this relationship.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:58:05.180849Z"
+    },
+    {
+      "id": "dcf1556d-1aff-4cfd-afc3-8914f2e611ca",
+      "content_id": "6f014298-3b42-468d-b513-a6fa3ae7b8a6",
+      "claim_id": "C3",
+      "claim": "With typical conditions about 40% of first-order presynaptic excitatory synapses to cortical excitatory and inhibitory neurons are labeled.",
+      "claim_type": "EXPLICIT",
+      "source": "We demonstrate that with typical conditions about 40% of first-order presynaptic excitatory synapses to cortical excitatory and inhibitory neurons are labeled.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study, supported by experimental data presented in Figures 3 and 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:58:05.180849Z"
+    },
+    {
+      "id": "95902ff9-7192-45f1-8703-34520a00afd9",
+      "content_id": "6f014298-3b42-468d-b513-a6fa3ae7b8a6",
+      "claim_id": "C4",
+      "claim": "Using matched tracing conditions there are similar proportions of labeled contacts onto L4 excitatory pyramidal, somatostatin (Sst) inhibitory, and vasoactive intestinal peptide (Vip) starter cell types.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that using matched tracing conditions there are similar proportions of labeled contacts onto L4 excitatory pyramidal, somatostatin (Sst) inhibitory, and vasoactive intestinal peptide (Vip) starter cell types.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by experimental data comparing different cell types in Figures 3 and 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:58:05.180849Z"
+    },
+    {
+      "id": "baddc201-a6f2-49e7-aab8-f9e1df77e774",
+      "content_id": "6f014298-3b42-468d-b513-a6fa3ae7b8a6",
+      "claim_id": "C5",
+      "claim": "There is no difference in the proportions of labeled excitatory contacts onto postsynaptic sites at different subcellular locations.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we find no difference in the proportions of labeled excitatory contacts onto postsynaptic sites at different subcellular locations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by experimental data comparing proximal and distal dendritic domains in Figures 3 and 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:58:05.180849Z"
+    },
+    {
+      "id": "d0e79b36-c9c9-4127-b07c-2a557640588e",
+      "content_id": "6f014298-3b42-468d-b513-a6fa3ae7b8a6",
+      "claim_id": "C6",
+      "claim": "Monosynaptic rabies tracing using glycoprotein (G)-deleted rabies virus (RVdG) has been widely used for the identification of presynaptic inputs to single neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Since its introduction (Wickersham et al., 2007a; Wickersham et al., 2007b) it has been widely used for the identification of presynaptic inputs to single neurons (Marshel et al., 2010; Rancz et al., 2011; Rossi et al., 2020; Wertz et al., 2015), projection-defined neurons (Cruz-Mart\u00edn et al., 2014; Levine et al., 2014), adult-born neurons (Deshpande et al., 2013; Garcia et al., 2014), transplanted neurons (Doerr et al., 2017; Grealish et al., 2015), hPSC-derived organoid neurons (Andersen et al., 2020; Miura et al., 2020), and genetically defined excitatory neurons (DeNardo et al., 2015; Kim et al., 2015), inhibitory neurons (Miyamichi et al., 2013; Wall et al., 2016), and non-neuronal cell types (Clark et al., 2021; Mount et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior studies demonstrating the widespread use of this technique.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:58:05.180849Z"
+    },
+    {
+      "id": "88fee8da-d6ec-406e-ad48-a534eca3f0d9",
+      "content_id": "6f014298-3b42-468d-b513-a6fa3ae7b8a6",
+      "claim_id": "C7",
+      "claim": "The incorporation of Ca2+ indicators and light-activated opsins into rabies reagents allows rabies tracing experiments to probe the relationship between function and connectivity.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to being used for the identification of inputs, the incorporation of Ca2+ indicators and light-activated opsins into rabies reagents (Osakada et al., 2011) allows rabies tracing experiments to probe the relationship between function and connectivity (Rossi et al., 2020; Tian et al., 2016; Wertz et al., 2015; Wester et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior studies that have demonstrated this capability.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:58:05.180849Z"
+    },
+    {
+      "id": "564aaf21-a7a5-46d9-b74f-3ed8370c49d8",
+      "content_id": "6f014298-3b42-468d-b513-a6fa3ae7b8a6",
+      "claim_id": "C8",
+      "claim": "There is uncertainty about the efficiency of transsynaptic spread from starter cells to input neurons and what factors influence the probability of spread.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the utility and widespread use of monosynaptic rabies tracing to study neural connectivity, there is uncertainty about the efficiency of transsynaptic spread from starter cells to input neurons and what factors influence the probability of spread.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the state of knowledge in the field, supported by the lack of direct measurements in prior studies.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:58:05.180849Z"
+    },
+    {
+      "id": "20ea8949-c88b-4bf8-8de6-f9e1586c56ce",
+      "content_id": "6f014298-3b42-468d-b513-a6fa3ae7b8a6",
+      "claim_id": "C9",
+      "claim": "Studies quantifying inputs to single neurons have provided some insight into the efficiency of spread but results vary widely across experimental conditions and no direct measurements of spread efficiency are available.",
+      "claim_type": "EXPLICIT",
+      "source": "Although studies quantifying inputs to single neurons have provided some insight into the efficiency of spread (Marshel et al., 2010; Miyamichi et al., 2011; Rancz et al., 2011; Wertz et al., 2015) results vary widely across experimental conditions and no direct measurements of spread efficiency are available.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior studies and the observation that direct measurements have not been made.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:58:05.180849Z"
+    },
+    {
+      "id": "87332a58-de88-49b9-82a1-ca1304f9807a",
+      "content_id": "6f014298-3b42-468d-b513-a6fa3ae7b8a6",
+      "claim_id": "C10",
+      "claim": "The number of input neurons labeled per starter cell can be changed by as much as 10-fold by modifying the rabies glycoprotein, replacing the rabies virus strain, or adjusting the level of glycoprotein expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, using the convergence index (CI), defined as the number of rabies-labeled input neurons divided by the number of starter cells, recent studies have shown that the number of input neurons labeled per starter cell can be changed by as much as 10-fold by modifying the rabies glycoprotein (Kim et al., 2016), replacing the rabies virus strain (Reardon et al., 2016), or adjusting the level of glycoprotein expression (Lavin et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior studies that have demonstrated these effects.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:58:05.180849Z"
+    },
+    {
+      "id": "95e7e794-671b-40e9-aac4-f915aedde416",
+      "content_id": "6f014298-3b42-468d-b513-a6fa3ae7b8a6",
+      "claim_id": "C11",
+      "claim": "CI measurements fail to quantify what proportion of all inputs are labeled.",
+      "claim_type": "EXPLICIT",
+      "source": "Most importantly, CI measurements fail to quantify what proportion of all inputs are labeled.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference about the limitations of the CI metric, as it only measures the ratio of labeled inputs to starter cells, not the proportion of all inputs.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:58:05.180849Z"
+    },
+    {
+      "id": "d84f0be3-9458-4426-b8de-45a3311d3d0c",
+      "content_id": "6f014298-3b42-468d-b513-a6fa3ae7b8a6",
+      "claim_id": "C12",
+      "claim": "The use of CI fails to address questions of the influence of biological factors on rabies spread efficiency, such as distance of synapses to the starter cell soma or differences of spread from different starter cell types.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, the use of CI fails to address questions of the influence of biological factors on rabies spread efficiency, such as distance of synapses to the starter cell soma or differences of spread from different starter cell types.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference about the limitations of the CI metric in addressing specific biological questions.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:58:05.180849Z"
+    },
+    {
+      "id": "196e98b3-631d-4979-b4bb-8d9905b76c65",
+      "content_id": "6f014298-3b42-468d-b513-a6fa3ae7b8a6",
+      "claim_id": "C13",
+      "claim": "A new genetically modified rabies virus was designed that labels presynaptic terminals with synaptophysin-RFP (SynPhRFP) and excitatory postsynaptic densities with postsynaptic density-95-GFP (PSD95GFP).",
+      "claim_type": "EXPLICIT",
+      "source": "We designed a new genetically modified rabies virus that labels presynaptic terminals with synaptophysin-RFP (SynPhRFP) and excitatory postsynaptic densities with postsynaptic density-95-GFP (PSD95GFP).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental design and the new tool developed in this study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:58:05.180849Z"
+    },
+    {
+      "id": "8dbdd49d-f1df-4a41-9848-ceaf8ab6498b",
+      "content_id": "6f014298-3b42-468d-b513-a6fa3ae7b8a6",
+      "claim_id": "C14",
+      "claim": "More than 99% of PSD95 postsynaptic puncta colocalize with a presynaptic terminal.",
+      "claim_type": "EXPLICIT",
+      "source": "Because more than 99% of PSD95 postsynaptic puncta colocalize with a presynaptic terminal (Micheva et al., 2010), this construct allows us to quantify the proportion of excitatory synapses on a starter cell that have their corresponding input neuron labeled with rabies virus (defined here as synaptic fraction [SF]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a prior study (Micheva et al., 2010).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:58:05.180849Z"
+    },
+    {
+      "id": "36d5996d-629f-41cd-8e27-756c937f279e",
+      "content_id": "6f014298-3b42-468d-b513-a6fa3ae7b8a6",
+      "claim_id": "C15",
+      "claim": "Rabies retrogradely labels about 35\u201340% of excitatory synaptic contacts onto each of the excitatory and inhibitory cell populations tested.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that with the particular reagents and conditions that we used, rabies retrogradely labels about 35\u201340% of excitatory synaptic contacts onto each of the excitatory and inhibitory cell populations we tested.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study, supported by experimental data presented in Figures 3 and 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:58:05.180849Z"
+    },
+    {
+      "id": "e9dbfdcc-195e-430b-89b2-f0df16cf4aad",
+      "content_id": "6f014298-3b42-468d-b513-a6fa3ae7b8a6",
+      "claim_id": "C16",
+      "claim": "SF does not vary by the proximity or distance of synapses to the starter cell soma or by the type of neuronal dendrite.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we found that SF does not vary by the proximity or distance of synapses to the starter cell soma or by the type of neuronal dendrite.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by experimental data comparing different dendritic locations in Figures 3 and 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:58:05.180849Z"
+    },
+    {
+      "id": "f8a7db3a-3bb7-4c2a-92ee-b25e95cef00b",
+      "content_id": "6f014298-3b42-468d-b513-a6fa3ae7b8a6",
+      "claim_id": "C17",
+      "claim": "Under plausible conditions for the results in mouse visual cortex the IF/SF ratio is about 0.75, so an SF of 40% corresponds to an IF of 30% of input neurons labeled.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we model the factors that influence the relationship between SF and the fraction of input neurons labeled (input fraction [IF]) and show that under plausible conditions for our results in mouse visual cortex the IF/SF ratio is about 0.75, so an SF of 40% corresponds to an IF of 30% of input neurons labeled.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding based on modeling and analysis of the data, as detailed in the Materials and methods section.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:58:05.180849Z"
+    },
+    {
+      "id": "353c04d5-4a11-405e-842a-5038d833136d",
+      "content_id": "6f014298-3b42-468d-b513-a6fa3ae7b8a6",
+      "claim_id": "C18",
+      "claim": "The probability of rabies spread across a single synaptic contact (unitary synaptic efficiency, U) is estimated to be about 0.28 (28%) when SF = 0.4.",
+      "claim_type": "EXPLICIT",
+      "source": "This analysis also allows an estimate of the probability of rabies spread across a single synaptic contact (unitary synaptic efficiency, U) which we estimate to be about 0.28 (28%) when SF = 0.4.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding based on modeling and analysis of the data, as detailed in the Materials and methods section.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:58:05.180849Z"
+    },
+    {
+      "id": "efc8f364-9eee-4b2c-8d38-7ea042151b22",
+      "content_id": "6f014298-3b42-468d-b513-a6fa3ae7b8a6",
+      "claim_id": "C19",
+      "claim": "Injection of SAD-B19 EnvA+ RVdG-PSD95GFP-SynPhRFP in primary visual cortex (V1) of Sim1Cre mice expressing TVA and oG in Cre+ layer 5 neurons resulted in strong punctate green and red fluorescent labeling.",
+      "claim_type": "EXPLICIT",
+      "source": "Injection of SAD-B19 EnvA+ RVdG-PSD95GFP-SynPhRFP in primary visual cortex (V1) of Sim1Cre mice expressing TVA and oG in Cre+ layer 5 neurons (derived from adeno-associated viruses [AAV] helper viruses, see Materials and methods) resulted in strong punctate green and red fluorescent labeling (Figure 1B), with green labeling prominent on dendrites and dendritic spines (Figure 2E and F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental observation supported by the images in Figure 1B and Figure 2E and F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:58:05.180849Z"
+    },
+    {
+      "id": "fce4c06c-fda1-4c00-9c49-b598fe068967",
+      "content_id": "6f014298-3b42-468d-b513-a6fa3ae7b8a6",
+      "claim_id": "C20",
+      "claim": "Super-resolution Airyscan imaging revealed that GFP labeling colocalized with a subset of the puncta labeled with antibody staining against endogenous PSD-95.",
+      "claim_type": "EXPLICIT",
+      "source": "Super-resolution Airyscan imaging (see Materials and methods) revealed that GFP labeling colocalized with a subset of the puncta labeled with antibody staining against endogenous PSD-95 (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental observation supported by the images in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:58:05.180849Z"
+    },
+    {
+      "id": "df303091-4e62-467b-8c63-de817cade747",
+      "content_id": "6f014298-3b42-468d-b513-a6fa3ae7b8a6",
+      "claim_id": "C21",
+      "claim": "In addition to synaptic labeling there were typically nuclear aggregates of both red and green fluorescent protein in infected neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to synaptic labeling there were typically nuclear aggregates of both red and green fluorescent protein in infected neurons (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental observation supported by the images in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:58:05.180849Z"
+    },
+    {
+      "id": "bbd4bbe9-07b6-43d4-b6a6-ff4a90980423",
+      "content_id": "6f014298-3b42-468d-b513-a6fa3ae7b8a6",
+      "claim_id": "C22",
+      "claim": "AAV-CIAO-TVA nearly eliminates leak expression and provides reliable and targeted transgene expression.",
+      "claim_type": "EXPLICIT",
+      "source": "We therefore used the novel cross-over insensitive ATG-out (CIAO) AAV construct, which has been shown to nearly eliminate leak expression and provide reliable and targeted transgene expression (Fischer et al., 2019), to express TVA in our population of interest.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a prior study (Fischer et al., 2019).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:58:05.180849Z"
+    },
+    {
+      "id": "5d259032-9354-4033-88a0-2f260075f79e",
+      "content_id": "6f014298-3b42-468d-b513-a6fa3ae7b8a6",
+      "claim_id": "C23",
+      "claim": "Experiments in which AAV-CIAO-TVA and EnvA+ RVdG were injected into V1 of Cre-negative mice resulted in 15.83\u00b111.33 rabies-infected neurons (mean \u00b1 SEM, n=3 mice) indicating low levels of Cre-independent TVA expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Experiments in which AAV-CIAO-TVA and EnvA+ RVdG were injected into V1 of Cre-negative mice resulted in 15.83\u00b111.33 rabies-infected neurons (mean \u00b1 SEM, n=3 mice) indicating low levels of Cre-independent TVA expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental result demonstrating the low level of leak expression with the CIAO construct.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:58:05.180849Z"
+    },
+    {
+      "id": "36e027e9-a4a5-4917-b026-801bfba8ad64",
+      "content_id": "6f014298-3b42-468d-b513-a6fa3ae7b8a6",
+      "claim_id": "C24",
+      "claim": "Many thalamic dLGN long-distance inputs to L4 excitatory neurons were reliably labeled with RVdG-PSD95GFP-SynPhRFP.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected from transsynaptic spread, we observed that many thalamic dLGN long-distance inputs to L4 excitatory neurons were reliably labeled with RVdG-PSD95GFP-SynPhRFP (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental observation supported by the images in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:58:05.180849Z"
+    },
+    {
+      "id": "68da8b35-b46f-45b2-9936-50c90c5e014f",
+      "content_id": "6f014298-3b42-468d-b513-a6fa3ae7b8a6",
+      "claim_id": "C25",
+      "claim": "Neurons in which oG was used for trans-complementation displayed significantly higher proportions of PSD95GFP puncta colocalized with SynPhRFP compared to neurons in which oG was omitted (50.61 \u00b1 3.92% vs 8.86 \u00b1 1.79% mean \u00b1 SEM respectively, Wilcoxon rank-sum test, p=0.001, n=9 neurons across 3 mice and n=5 neurons across 2 mice).",
+      "claim_type": "EXPLICIT",
+      "source": "We found that neurons in which oG was used for trans-complementation displayed significantly higher proportions of PSD95GFP puncta colocalized with SynPhRFP compared to neurons in which oG was omitted (50.61 \u00b1 3.92% vs 8.86 \u00b1 1.79% mean \u00b1 SEM respectively, Wilcoxon rank-sum test, p=0.001, n=9 neurons across 3 mice and n=5 neurons across 2 mice; Figure 3G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary experimental finding supported by statistical analysis and data shown in Figure 3G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:58:05.180849Z"
+    },
+    {
+      "id": "c9777fa7-3044-4fa0-9b6f-5e54598bd36c",
+      "content_id": "6f014298-3b42-468d-b513-a6fa3ae7b8a6",
+      "claim_id": "C26",
+      "claim": "The difference between colocalization values with and without oG (50.61\u20138.86%) yields an estimate of 42% of postsynaptic densities whose presynaptic partners are transsynaptically labeled (SF = 0.42).",
+      "claim_type": "EXPLICIT",
+      "source": "The difference between these values (50.61\u20138.86%) yields an estimate of 42% of postsynaptic densities whose presynaptic partners are transsynaptically labeled (SF = 0.42).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a calculation based on the experimental data presented.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:58:05.180849Z"
+    },
+    {
+      "id": "3e36f93e-b7cd-41eb-8a2a-73f861b3cf4e",
+      "content_id": "6f014298-3b42-468d-b513-a6fa3ae7b8a6",
+      "claim_id": "C27",
+      "claim": "There were no significant differences between SF at proximal regions of apical dendrites compared to the distal regions (49.14 \u00b1 3.49% vs 57 \u00b1 5.43% respectively, Wilcoxon rank-sum test, p=0.34; n=9 neurons across 3 mice).",
+      "claim_type": "EXPLICIT",
+      "source": "We found no significant differences between SF at proximal regions of apical dendrites compared to the distal regions as determined by PSD95GFP and SynPhRFP puncta colocalization (49.14 \u00b1 3.49% vs 57 \u00b1 5.43% respectively, Wilcoxon rank-sum test, p=0.34; n=9 neurons across 3 mice, Figure 3G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary experimental finding supported by statistical analysis and data shown in Figure 3G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:58:05.180849Z"
+    },
+    {
+      "id": "7edede2f-e86d-4d10-b465-9002bea6c67f",
+      "content_id": "6f014298-3b42-468d-b513-a6fa3ae7b8a6",
+      "claim_id": "C28",
+      "claim": "There was no significant difference in SF at basal dendrites versus apical dendrites (44.52 \u00b1 3.96% vs 53.05 \u00b1 3.99% respectively, Wilcoxon rank-sum test, p=0.22; n=9 neurons across 3 mice and n=6 neurons across 3 mice).",
+      "claim_type": "EXPLICIT",
+      "source": "We also compared SF at basal dendrites versus apical dendrites and observed no significant difference (44.52 \u00b1 3.96% vs 53.05 \u00b1 3.99% respectively, Wilcoxon rank-sum test, p=0.22; n=9 neurons across 3 mice and n=6 neurons across 3 mice, Figure 3G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary experimental finding supported by statistical analysis and data shown in Figure 3G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:58:05.180849Z"
+    },
+    {
+      "id": "3939a9d9-9390-46a8-a3b8-f7ec53aa3ae0",
+      "content_id": "6f014298-3b42-468d-b513-a6fa3ae7b8a6",
+      "claim_id": "C29",
+      "claim": "There was no significant difference between the percent of PSD95GFP puncta apposed to SynPhRFP on Sst dendrites compared to Vip dendrites (36.13 \u00b1 1.73% vs 38.38\u00b1 1.22% respectively, Wilcoxon rank-sum test, p=0.44, n=9 neurons across 3 mice per line).",
+      "claim_type": "EXPLICIT",
+      "source": "We found no significant difference between the percent of PSD95GFP puncta apposed to SynPhRFP on Sst dendrites compared to Vip dendrites (36.13 \u00b1 1.73% vs 38.38\u00b1 1.22% respectively, Wilcoxon rank-sum test, p=0.44, n=9 neurons across 3 mice per line; Figure 4F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary experimental finding supported by statistical analysis and data shown in Figure 4F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:58:05.180849Z"
+    },
+    {
+      "id": "dcaddcde-7ea7-4e6e-9711-51e9ae83ab66",
+      "content_id": "6f014298-3b42-468d-b513-a6fa3ae7b8a6",
+      "claim_id": "C30",
+      "claim": "For Sst starter cells, colocalization of PSD95GFP with SynPhRFP on proximal dendritic domains did not differ significantly from distal dendritic domains (37.50 \u00b1 1.93% vs 33.85 \u00b1 2.43% respectively, Wilcoxon rank-sum test, p=0.55).",
+      "claim_type": "EXPLICIT",
+      "source": "For Sst starter cells, colocalization of PSD95GFP with SynPhRFP on proximal dendritic domains (within 75 \u00b5m of the cell body) did not differ significantly from distal dendritic domains (within 75 \u00b5m of the pial surface) (37.50 \u00b1 1.93% vs 33.85 \u00b1 2.43% respectively, Wilcoxon rank-sum test, p=0.55, Figure 4F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary experimental finding supported by statistical analysis and data shown in Figure 4F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:58:05.180849Z"
+    },
+    {
+      "id": "4fafbf1c-9561-49bc-a48b-37d00a75ef0c",
+      "content_id": "6f014298-3b42-468d-b513-a6fa3ae7b8a6",
+      "claim_id": "C31",
+      "claim": "For Vip starter cells, there was no difference between SF at proximal versus distal domains (39.80 \u00b1 1.90% vs 36.122 \u00b1 1.14% respectively, Wilcoxon rank-sum test, p=0.11).",
+      "claim_type": "EXPLICIT",
+      "source": "We observed similar results for Vip starter cells, with no difference between SF at proximal versus distal domains (39.80 \u00b1 1.90% vs 36.122 \u00b1 1.14% respectively, Wilcoxon rank-sum test, p=0.11, Figure 4F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary experimental finding supported by statistical analysis and data shown in Figure 4F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:58:05.180849Z"
+    },
+    {
+      "id": "7ec0b1ee-5f1a-4835-ba3d-d3f75a8c9dc2",
+      "content_id": "6f014298-3b42-468d-b513-a6fa3ae7b8a6",
+      "claim_id": "C32",
+      "claim": "The measured SF of 40% likely corresponds to at least 30% of input neurons labeled (IF = 0.30) and a probability of rabies spread across individual synapses (unitary efficiency, U) of 28%.",
+      "claim_type": "EXPLICIT",
+      "source": "Further considerations detailed in the Results and Materials and methods indicate that the measured SF of 40% likely corresponds to at least 30% of input neurons labeled (IF = 0.30) and a probability of rabies spread across individual synapses (unitary efficiency, U) of 28%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding based on modeling and analysis of the data, as detailed in the Results and Materials and methods sections.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:58:05.180849Z"
+    },
+    {
+      "id": "dddc36d2-eb9c-44c3-9895-7323ef30212e",
+      "content_id": "6f014298-3b42-468d-b513-a6fa3ae7b8a6",
+      "claim_id": "C33",
+      "claim": "Efficiency of spread did not vary depending on the distance of synapses to the cell body or across dendrite types.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, we found that efficiency of spread did not vary depending on the distance of synapses to the cell body or across dendrite types.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the primary findings supported by experimental data in Figures 3 and 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:58:05.180849Z"
+    },
+    {
+      "id": "ab231ada-feab-45ba-bfbe-5b0eb6ad8a5d",
+      "content_id": "6f014298-3b42-468d-b513-a6fa3ae7b8a6",
+      "claim_id": "C34",
+      "claim": "During the first 1\u20133 days post-infection, rabies particles are concentrated around the cell body and are not detected more distally until later time points.",
+      "claim_type": "EXPLICIT",
+      "source": "We were concerned that more distal synapses might be less likely to be labeled than proximal synapses because antibody staining for rabies particles shows that during the first 1\u20133 days post-infection, particles are concentrated around the cell body; but they are not detected more distally until later time points (Nassi and Callaway, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a prior study (Nassi and Callaway, 2006).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:58:05.180849Z"
+    },
+    {
+      "id": "9d342ec8-9f5c-4576-8b75-01e46af7f0d4",
+      "content_id": "6f014298-3b42-468d-b513-a6fa3ae7b8a6",
+      "claim_id": "C35",
+      "claim": "Any initial bias for spread at proximal synapses might be eliminated by use of longer survival times.",
+      "claim_type": "EXPLICIT",
+      "source": "It therefore appears that any initial bias for spread at proximal synapses might be eliminated by use of longer survival times.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the experimental observation that no difference was found at 7 days post-infection.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:58:05.180849Z"
+    },
+    {
+      "id": "2984d854-ed65-41a8-908e-9b3ac04e5f05",
+      "content_id": "6f014298-3b42-468d-b513-a6fa3ae7b8a6",
+      "claim_id": "C36",
+      "claim": "Both the strain of rabies virus and the strain and variant of rabies glycoprotein are likely to be influential in the efficiency of transsynaptic spread.",
+      "claim_type": "EXPLICIT",
+      "source": "While there are few direct comparisons with matched titers of rabies viruses and helper viruses, both the strain of rabies virus and the strain and variant of rabies glycoprotein are likely to be influential.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on prior studies in the field, though direct comparisons are limited.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:58:05.180849Z"
+    },
+    {
+      "id": "dc2808d5-e8f5-44a7-bc12-c91a27c381b5",
+      "content_id": "6f014298-3b42-468d-b513-a6fa3ae7b8a6",
+      "claim_id": "C37",
+      "claim": "When a particular rabies strain and glycoprotein are used, the CI appears to depend most strongly on the levels of G expressed in the starter cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, when a particular rabies strain and glycoprotein are used, the CI appears to depend most strongly on the levels of G expressed in the starter cells (Callaway and Luo, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a prior study (Callaway and Luo, 2015).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:58:05.180849Z"
+    },
+    {
+      "id": "39e5b4d1-534f-4a24-b93a-b7b3d9aeffc1",
+      "content_id": "6f014298-3b42-468d-b513-a6fa3ae7b8a6",
+      "claim_id": "C38",
+      "claim": "Maximizing G expression, either through the use of strong promoters or optimized helper virus concentration, increases spread efficiency.",
+      "claim_type": "EXPLICIT",
+      "source": "Studies suggest that maximizing G expression, either through the use of strong promoters (Miyamichi et al., 2013) or optimized helper virus concentration (Lavin et al., 2020), increases spread efficiency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior studies (Miyamichi et al., 2013; Lavin et al., 2020).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:58:05.180849Z"
+    },
+    {
+      "id": "bf41b398-0f27-4ff2-884d-c51859be8b11",
+      "content_id": "6f014298-3b42-468d-b513-a6fa3ae7b8a6",
+      "claim_id": "C39",
+      "claim": "The use of 2A linker elements has been implicated in reduced expression of G.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the use of 2A linker elements has been implicated in reduced expression of G (Wall et al., 2010; Watabe-Uchida et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior studies (Wall et al., 2010; Watabe-Uchida et al., 2012).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:58:05.180849Z"
+    },
+    {
+      "id": "194c2928-3ef9-48ba-b0de-3220a7f1f88f",
+      "content_id": "6f014298-3b42-468d-b513-a6fa3ae7b8a6",
+      "claim_id": "C40",
+      "claim": "The use of separate AAVs, with one expressing glycoprotein independently from other genes, is recommended to improve efficiency.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the use of separate AAVs, with one expressing glycoprotein independently from other genes, is recommended to improve efficiency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation based on the inference from prior studies about the impact of 2A linker elements.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:58:05.180849Z"
+    },
+    {
+      "id": "f51bc07c-298f-4379-94aa-128a420e84d0",
+      "content_id": "6f014298-3b42-468d-b513-a6fa3ae7b8a6",
+      "claim_id": "C41",
+      "claim": "A second factor likely to influence efficiency is the number of rabies particles entering a starter cell.",
+      "claim_type": "EXPLICIT",
+      "source": "A second factor likely to influence efficiency is the number of rabies particles entering a starter cell (Callaway and Luo, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a prior study (Callaway and Luo, 2015).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:58:05.180849Z"
+    },
+    {
+      "id": "6f40cbde-7c07-43b2-9854-5d1e9372f931",
+      "content_id": "6f014298-3b42-468d-b513-a6fa3ae7b8a6",
+      "claim_id": "C42",
+      "claim": "The variability between individual cells sampled likely reflects differences in the numbers of oG-expressing AAV copies and EnvA+ RVdG particles entering each starter cell.",
+      "claim_type": "EXPLICIT",
+      "source": "The variability between individual cells that we sampled (Figures 2G and 3C) is likely to reflect these differences. For example, there is expected variability in the numbers of oG-expressing AAV copies and EnvA+ RVdG particles entering each starter cell.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the observed variability in the data and known factors that influence rabies spread.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:58:05.180849Z"
+    },
+    {
+      "id": "5216d350-36a6-4df1-850d-d525cb2102a8",
+      "content_id": "6f014298-3b42-468d-b513-a6fa3ae7b8a6",
+      "claim_id": "C43",
+      "claim": "It would be straightforward to increase the SF well above the 35\u201340% observed by simply increasing the levels of oG expression.",
+      "claim_type": "EXPLICIT",
+      "source": "It is noteworthy that it would be straightforward to increase the SF well above the 35\u201340% we observed by simply increasing the levels of oG expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the known relationship between oG expression levels and spread efficiency.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:58:05.180849Z"
+    },
+    {
+      "id": "f5cd09f4-da0d-4ac0-bb01-f0d28683c612",
+      "content_id": "6f014298-3b42-468d-b513-a6fa3ae7b8a6",
+      "claim_id": "C44",
+      "claim": "The ideal rate of spread is probably far less than 100% for most experiments because the spread of rabies is likely to depend on the numbers of synaptic contacts as well as the size of the postsynaptic density, both of which are related to functional connection strength.",
+      "claim_type": "EXPLICIT",
+      "source": "But counterintuitively, the ideal rate of spread is probably far less than 100% for most experiments. This is because the spread of rabies is likely to depend on the numbers of synaptic contacts as well as the size of the postsynaptic density, both of which are related to functional connection strength (Holler et al., 2021; Murthy et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the relationship between synaptic properties and connection strength, supported by citations to prior studies.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:58:05.180849Z"
+    },
+    {
+      "id": "65baa904-77f7-4525-bb07-2dfd71f074ed",
+      "content_id": "6f014298-3b42-468d-b513-a6fa3ae7b8a6",
+      "claim_id": "C45",
+      "claim": "If a reasonably small fraction of inputs were labeled, the numbers of labeled presynaptic cells of different types would be expected to scale with the strength of connections from each cell type.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, if a reasonably small fraction of inputs were labeled, the numbers of labeled presynaptic cells of different types would be expected to scale with the strength of connections from each cell type.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the relationship between labeling efficiency and connection strength.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:58:05.180849Z"
+    },
+    {
+      "id": "a0780e3e-f16a-4451-9957-869c26914643",
+      "content_id": "6f014298-3b42-468d-b513-a6fa3ae7b8a6",
+      "claim_id": "C46",
+      "claim": "If rabies were to spread across 100% of synaptic contacts, the sensitivity to connection strength would be lost; every input cell would be labeled regardless of connection strength.",
+      "claim_type": "EXPLICIT",
+      "source": "But if rabies were to spread across 100% of synaptic contacts, this sensitivity would be lost; every input cell would be labeled regardless of connection strength.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference about the consequences of complete labeling.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:58:05.180849Z"
+    },
+    {
+      "id": "0fd75e95-4e6a-47a6-8a56-c01723ba3278",
+      "content_id": "6f014298-3b42-468d-b513-a6fa3ae7b8a6",
+      "claim_id": "C47",
+      "claim": "If efficiency were exceedingly low one would expect more variability between animals and the potential to fail to detect inputs from weak connections.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, if efficiency were exceedingly low one would expect more variability between animals and the potential to fail to detect inputs from weak connections.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference about the consequences of very low labeling efficiency.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:58:05.180849Z"
+    },
+    {
+      "id": "9442eaba-9ef7-42e5-89e5-3b6a10c9e32f",
+      "content_id": "6f014298-3b42-468d-b513-a6fa3ae7b8a6",
+      "claim_id": "C48",
+      "claim": "Values in the range of 35\u201350% of synaptic contacts labeled are likely to be near optimal in providing both large numbers of labeled input neurons and some degree of sensitivity to connection strength.",
+      "claim_type": "EXPLICIT",
+      "source": "We therefore suggest that values in the range of 35\u201350% of synaptic contacts labeled are likely to be near optimal in providing both large numbers of labeled input neurons and some degree of sensitivity to connection strength (Henrich et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation based on the modeling and analysis of the data, supported by a citation.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:58:05.180849Z"
+    },
+    {
+      "id": "1fd92c84-0d8d-404f-a537-9e551ceb170d",
+      "content_id": "6f014298-3b42-468d-b513-a6fa3ae7b8a6",
+      "claim_id": "C49",
+      "claim": "It is possible that differential spread of rabies virus is affected by the number of synaptic contacts a presynaptic neuron makes onto the starter cell, differences in uptake receptors on the axon of distinct input cell types, or differences in postsynaptic density size.",
+      "claim_type": "EXPLICIT",
+      "source": "Although we found evidence that the subcellular location of synaptic contacts of input cells onto the dendrites of starter cells does not affect spread efficiency, it remains unknown what leads to the observed incomplete labeling. It is possible that this is affected by the number of synaptic contacts a presynaptic neuron makes onto the starter cell, differences in uptake receptors on the axon of distinct input cell types, or differences in postsynaptic density size (Callaway and Luo, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about possible factors that could influence spread efficiency, supported by a citation.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:58:05.180849Z"
+    },
+    {
+      "id": "a6fd28d7-ae18-4746-8e46-2d1efbcd3d7d",
+      "content_id": "6f014298-3b42-468d-b513-a6fa3ae7b8a6",
+      "claim_id": "C50",
+      "claim": "One limitation of the experimental design is that light microscopy images do not allow accurate measurement of postsynaptic density size, which would require electron microscopy.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, one limitation of our experimental design is that our light microscopy images do not allow accurate measurement of postsynaptic density size, which would require electron microscopy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an acknowledgment of a limitation of the experimental approach.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:58:05.180849Z"
+    },
+    {
+      "id": "e0f4425c-61c2-4b84-bc97-1646315b0d82",
+      "content_id": "6f014298-3b42-468d-b513-a6fa3ae7b8a6",
+      "claim_id": "C51",
+      "claim": "The study only examined spread efficiency at excitatory synapses labeled with the excitatory postsynaptic density marker PSD-95 and did not quantify the efficiency of spread to inhibitory presynaptic inputs.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, it is important to note that we only examined spread efficiency at excitatory synapses labeled with the excitatory postsynaptic density marker PSD-95 and did not quantify the efficiency of spread to inhibitory presynaptic inputs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an acknowledgment of a limitation of the experimental scope.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:58:05.180849Z"
+    },
+    {
+      "id": "06883d75-120c-488f-9aa2-bfd954d383a0",
+      "content_id": "6f014298-3b42-468d-b513-a6fa3ae7b8a6",
+      "claim_id": "C52",
+      "claim": "If overexpression of PSD-95-GFP from the rabies virus were to result in new puncta that do not have a presynaptic input, this could result in an underestimate of proportion of actual PSDs labeled.",
+      "claim_type": "EXPLICIT",
+      "source": "It should also be noted that the locations and numbers of postsynaptic sites were assessed based on expression of PSD-95-GFP from the rabies virus. If this overexpression were to somehow result in new puncta that do not have a presynaptic input this could result in an underestimate of proportion of actual PSDs labeled.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about a potential limitation of the experimental approach.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:58:05.180849Z"
+    },
+    {
+      "id": "f404e7f1-f013-43ef-8ee3-bf086648abcd",
+      "content_id": "6f014298-3b42-468d-b513-a6fa3ae7b8a6",
+      "claim_id": "C53",
+      "claim": "Across 774 labeled neurons in Nr5a1Cre mice, both the mean and median numbers of labeled neurons located within 50 \u00b5m of any given labeled neuron of interest is 7.",
+      "claim_type": "EXPLICIT",
+      "source": "Across 774 labeled neurons whose positions were marked in 7 sections from 3 animals, we find that both the mean and median numbers of labeled neurons located within 50 \u00b5m of any given labeled neuron of interest is 7.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental result from analysis of the spatial distribution of labeled neurons.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:58:05.180849Z"
+    },
+    {
+      "id": "ee55086a-1f58-4f1b-adb5-f992d82bae0a",
+      "content_id": "6f014298-3b42-468d-b513-a6fa3ae7b8a6",
+      "claim_id": "C54",
+      "claim": "Only GAD-negative excitatory neurons were labeled in Nr5a1Cre mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Additional analyses also confirmed that only GAD-negative excitatory neurons were labeled.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental result from immunostaining analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:58:05.180849Z"
+    },
+    {
+      "id": "eefb6815-412c-4da3-8cc5-5fc5e1c18884",
+      "content_id": "6f014298-3b42-468d-b513-a6fa3ae7b8a6",
+      "claim_id": "C55",
+      "claim": "In adult mouse visual cortex, it is rare for a local connection from an excitatory neuron onto another cortical neuron to involve more than one synaptic contact.",
+      "claim_type": "EXPLICIT",
+      "source": "However, available data based on a reconstructed EM volume (see EM analysis methods) indicate that in adult mouse visual cortex, it is rare for a local connection from an excitatory neuron onto another cortical neuron to involve more than one synaptic contact.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from analysis of EM data, as shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:58:05.180849Z"
+    },
+    {
+      "id": "863b0124-54fb-4d8c-908b-db2071d211b8",
+      "content_id": "6f014298-3b42-468d-b513-a6fa3ae7b8a6",
+      "claim_id": "C56",
+      "claim": "Out of 76,678 excitatory neuron to excitatory neuron connections, only about 6000 (~8%) involve more than one synapse and only about 1000 (~1.3%) involve 3 or more synapses.",
+      "claim_type": "EXPLICIT",
+      "source": "Out of 76,678 connections, only about 6000 (~8%) involve more than one synapse and only about 1000 (~1.3%) involve 3 or more synapses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from analysis of EM data, as shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:58:05.180849Z"
+    },
+    {
+      "id": "70c7df1e-3508-43a2-a81c-b7270c0d065a",
+      "content_id": "6f014298-3b42-468d-b513-a6fa3ae7b8a6",
+      "claim_id": "C57",
+      "claim": "The average number of synapses per connection in adult mouse visual cortex is 1.0965 (std = 0.3726).",
+      "claim_type": "EXPLICIT",
+      "source": "The average number of synapses per connection is 1.0965 (std = 0.3726).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from analysis of EM data, as shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:58:05.180849Z"
+    },
+    {
+      "id": "1af1f18d-3cac-44ed-ab38-ad3e89f950ad",
+      "content_id": "6f014298-3b42-468d-b513-a6fa3ae7b8a6",
+      "claim_id": "C58",
+      "claim": "Shared common inputs are expected to result in an SF value that is larger than the input proportion labeled (SF>IF).",
+      "claim_type": "EXPLICIT",
+      "source": "Shared common inputs are expected to result in an SF value that is larger than the input proportion labeled (SF>IF).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference about how shared inputs affect the relationship between SF and IF.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:58:05.180849Z"
+    },
+    {
+      "id": "265d3a99-d869-4858-b0a5-243afd10d3f7",
+      "content_id": "6f014298-3b42-468d-b513-a6fa3ae7b8a6",
+      "claim_id": "C59",
+      "claim": "The maximum possible proportion of labeled synapses that result from shared input is about 0.22, thus this factor would be expected to result in SF being at most 22% greater than IF (IF = 0.78 SF).",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, the maximum possible proportion of labeled synapses that result from shared input is about 0.22 (0.07+0.09+0.06). Thus, this factor would be expected to result in SF being at most 22% greater than IF (IF = 0.78 SF).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a calculation based on analysis of the spatial distribution of neurons and shared inputs.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:58:05.180849Z"
+    },
+    {
+      "id": "ded4f18d-03fd-4c54-895e-fcde3ab97268",
+      "content_id": "6f014298-3b42-468d-b513-a6fa3ae7b8a6",
+      "claim_id": "C60",
+      "claim": "If only half of the nr5a1 neurons are starter cells then the proportion of labeled synapses resulting from shared input would be only 0.11 and IF/SF = 0.89.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the proportion of nr5a1 neurons that are directly infected with rabies and serve as starters is almost certainly less than 1 and probably closer to 0.5, this is an overestimate. If only half of the nr5a1 neurons are starter cells then the proportion of labeled synapses resulting from shared input would be only 0.11 and IF/SF = 0.89.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a calculation based on a more realistic estimate of the proportion of starter cells.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:58:05.180849Z"
+    },
+    {
+      "id": "5b156832-0ede-4d8a-9ad9-78acf2656a80",
+      "content_id": "6f014298-3b42-468d-b513-a6fa3ae7b8a6",
+      "claim_id": "C61",
+      "claim": "For cases in which some or all input neurons provide more than one synaptic contact onto a starter neuron, the configuration will typically cause IF to be less than SF (but not always).",
+      "claim_type": "EXPLICIT",
+      "source": "But for cases in which some or all input neurons provide more than one synaptic contact onto a starter neuron, the possible scenarios are less intuitive. Generally, such a configuration will cause IF to be less than SF (but not always).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference about how multiple synaptic contacts affect the relationship between SF and IF.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:58:05.180849Z"
+    },
+    {
+      "id": "132716e6-48be-480f-9d44-e67fc8ee425a",
+      "content_id": "6f014298-3b42-468d-b513-a6fa3ae7b8a6",
+      "claim_id": "C62",
+      "claim": "In an extreme scenario where each input neuron has multiple synaptic contacts but the number of synaptic contacts is equal for each neuron, SF will be equal to IF.",
+      "claim_type": "EXPLICIT",
+      "source": "In an extreme scenario, suppose that each input neuron has multiple synaptic contacts, but the number of synaptic contacts is equal for each neuron. In this case, SF will be equal to IF.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference demonstrated through a mathematical example.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:58:05.180849Z"
+    },
+    {
+      "id": "36cee7fc-f65b-43a0-81d2-a2cf56fbc519",
+      "content_id": "6f014298-3b42-468d-b513-a6fa3ae7b8a6",
+      "claim_id": "C63",
+      "claim": "Under conditions with Ma = 1 and Mb = 3 and with a worst-case estimate of U=0.22, the smallest possible IF/SF value is ~0.8.",
+      "claim_type": "EXPLICIT",
+      "source": "Under these conditions and with a worst-case estimate of U=0.22 (our measured SF of 0.4 suggests actual U is closer to 0.28, see below), the smallest possible IF/SF value is ~0.8.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from modeling shown in Figure 6A and B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:58:05.180849Z"
+    },
+    {
+      "id": "d3d94a41-3dbe-49dc-9bcb-87681c4db6d3",
+      "content_id": "6f014298-3b42-468d-b513-a6fa3ae7b8a6",
+      "claim_id": "C64",
+      "claim": "With Ma = 1 and Mb = 2, when R=2.0 the measured SF values of around 0.4 are typically calculated when U~=0.28.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we see that the smallest IF/SF is now calculated when R is about 2 (Figure 6B) and that with R=2.0 our measured SF values of around 0.4 are typically calculated when U~=0.28 (Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from modeling shown in Figure 6C and D.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:58:05.180849Z"
+    },
+    {
+      "id": "776ba558-9114-46c2-abb4-596de856cf61",
+      "content_id": "6f014298-3b42-468d-b513-a6fa3ae7b8a6",
+      "claim_id": "C65",
+      "claim": "With U=0.28 and R=2.0, IF/SF in the scenario with Ma = 1 and Mb = 2 is about 0.91.",
+      "claim_type": "EXPLICIT",
+      "source": "With U=0.28 and R=2.0, IF/SF in this scenario is about 0.91 (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from modeling shown in Figure 6D.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:58:05.180849Z"
+    },
+    {
+      "id": "be4c27c5-d73d-4f1a-9335-c504442f9a09",
+      "content_id": "6f014298-3b42-468d-b513-a6fa3ae7b8a6",
+      "claim_id": "C66",
+      "claim": "Based on actual measurements for cortical circuits the value for R is at least 10.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, if we consider that based on the actual measurements for cortical circuits the value for R is at least 10 (Figure 5B), our measured SF value of 0.4 corresponds to U~=0.35 (Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from analysis of EM data shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:58:05.180849Z"
+    },
+    {
+      "id": "d8a50c93-f39f-4745-9eb3-af94d2a536d5",
+      "content_id": "6f014298-3b42-468d-b513-a6fa3ae7b8a6",
+      "claim_id": "C67",
+      "claim": "With U=0.35 and R=10, IF/SF is about 0.95.",
+      "claim_type": "EXPLICIT",
+      "source": "With U=0.35 and R=10, IF/SF is about 0.95 (Figure 6D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from modeling shown in Figure 6D.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:58:05.180849Z"
+    },
+    {
+      "id": "1505bf9a-43e3-4c9c-aa41-99c526de8838",
+      "content_id": "6f014298-3b42-468d-b513-a6fa3ae7b8a6",
+      "claim_id": "C69",
+      "claim": "If the maximum impact due to multiple synaptic contacts is incorporated (IF/SF = 0.95) along with the effect of common input (IF/SF = 0.78), then the overall estimate is 0.78\u00d70.95 = 0.74=IF/SF.",
+      "claim_type": "EXPLICIT",
+      "source": "If we incorporate an additional maximum impact due to multiple synaptic contacts based on IF/SF = 0.95, then we obtain an overall estimate of 0.78\u00d70.95 = 0.74=IF/SF.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a calculation combining the effects of common input and multiple synaptic contacts.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:58:05.180849Z"
+    },
+    {
+      "id": "02ee9ebe-4515-4b20-920b-89e0103c2056",
+      "content_id": "6f014298-3b42-468d-b513-a6fa3ae7b8a6",
+      "claim_id": "C70",
+      "claim": "With measured values of SF = 0.4, the estimate is IF ~=0.3.",
+      "claim_type": "EXPLICIT",
+      "source": "With measured values of SF = 0.4 we estimate IF ~=0.3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a calculation based on the combined effects of common input and multiple synaptic contacts.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:58:05.180849Z"
+    },
+    {
+      "id": "929c1636-07a3-42e0-92ee-13d1eb6aa8bf",
+      "content_id": "6f014298-3b42-468d-b513-a6fa3ae7b8a6",
+      "claim_id": "C71",
+      "claim": "The impact of multiple synapses per contact will result in IF that is about 8% larger than U, therefore U is estimated to be at a minimum 0.28.",
+      "claim_type": "EXPLICIT",
+      "source": "Calculations above indicate that the impact of multiple synapses per contact will result in IF that is about 8% larger than U. Therefore, we estimate that, at a minimum, U=0.28.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a calculation based on the modeling of the relationship between IF and U.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:58:05.180849Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "764ed76e-a641-4f50-ab49-a71128c67910",
+      "content_id": "6f014298-3b42-468d-b513-a6fa3ae7b8a6",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Retrograde monosynaptic rabies tracing is an established technique for identifying presynaptic connections to cell populations of interest and can be combined with functional tools like Ca2+ indicators and opsins.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C6, and C7 describe well-established capabilities of rabies tracing supported by extensive prior literature. These are background claims establishing the utility and widespread adoption of the technique, appropriately supported by multiple citations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:58:05.180849Z"
+    },
+    {
+      "id": "a337bb92-e657-4f82-b4e3-4e6e78ff36bb",
+      "content_id": "6f014298-3b42-468d-b513-a6fa3ae7b8a6",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Despite widespread use of rabies tracing, there is uncertainty about transsynaptic spread efficiency, and while convergence index (CI) can vary 10-fold with different conditions, CI measurements fail to quantify the proportion of all inputs labeled or address biological factors influencing spread.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C12 accurately characterize gaps in the field's knowledge and limitations of existing metrics (CI). These claims are supported by citations to prior work and logical reasoning about what CI can and cannot measure, establishing the motivation for the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:58:05.180849Z"
+    },
+    {
+      "id": "7a36194b-cd0e-4e46-86f1-d5432b838a37",
+      "content_id": "6f014298-3b42-468d-b513-a6fa3ae7b8a6",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "A new rabies virus construct (RVdG-PSD95GFP-SynPhRFP) was developed that labels presynaptic terminals with synaptophysin-RFP and postsynaptic densities with PSD95-GFP, producing punctate labeling that colocalizes with endogenous PSD-95.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13, C14, C19-C21 describe the development and validation of the new viral construct. The experimental observations are supported by imaging data in Figures 1 and 2, and the claim about PSD95 colocalization (C14) is appropriately supported by citation to prior work (Micheva et al., 2010).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:58:05.180849Z"
+    },
+    {
+      "id": "58a67176-db16-4646-a582-5ebdb12b94da",
+      "content_id": "6f014298-3b42-468d-b513-a6fa3ae7b8a6",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The AAV-CIAO-TVA construct nearly eliminates leak expression, with only 15.83\u00b111.33 rabies-infected neurons observed in Cre-negative control mice.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C23 demonstrate low off-target labeling with the CIAO construct. C22 is supported by citation to prior work, and C23 provides experimental validation with appropriate controls (n=3 mice). The low number of infected neurons in Cre-negative mice supports the claim of minimal leak expression.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:58:05.180849Z"
+    },
+    {
+      "id": "14cbed3f-2b54-4dc6-9c63-5ec1dad742ef",
+      "content_id": "6f014298-3b42-468d-b513-a6fa3ae7b8a6",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "With typical conditions, about 40% of excitatory synaptic contacts onto cortical excitatory and inhibitory neurons are labeled by rabies virus (SF = 0.40-0.42).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C15, C25-C26 present the primary quantitative finding. C25 shows statistically significant difference between conditions with and without glycoprotein (50.61\u00b13.92% vs 8.86\u00b11.79%, p=0.001, n=9 and 5 neurons), and C26 correctly calculates the difference to estimate SF=0.42. The statistical analysis is appropriate and sample sizes are reasonable.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:58:05.180849Z"
+    },
+    {
+      "id": "4e299d55-baac-4b04-ad26-b8551447343e",
+      "content_id": "6f014298-3b42-468d-b513-a6fa3ae7b8a6",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Using matched tracing conditions, similar proportions of labeled contacts are observed onto L4 excitatory, Sst inhibitory, and Vip inhibitory starter cell types (36-42% SF).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4 and C29 demonstrate that spread efficiency does not differ significantly between cell types. C29 provides statistical support (36.13\u00b11.73% vs 38.38\u00b11.22%, p=0.44, n=9 neurons per line). The use of matched conditions and appropriate statistical testing supports this conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:58:05.180849Z"
+    },
+    {
+      "id": "5879bcd2-13a8-468e-be8f-2a815a1a75ba",
+      "content_id": "6f014298-3b42-468d-b513-a6fa3ae7b8a6",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Spread efficiency does not vary by proximity of synapses to the cell body or by dendrite type, with no significant differences between proximal vs distal or apical vs basal dendrites.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C16, C27-C28, C30-C31, C33 demonstrate spatial uniformity of labeling. Multiple comparisons with appropriate statistical tests (Wilcoxon rank-sum) show no significant differences (all p>0.05) across dendritic locations for multiple cell types (L4 excitatory, Sst, Vip). Sample sizes are adequate (n=6-9 neurons).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:58:05.180849Z"
+    },
+    {
+      "id": "d4dad02a-1eec-4ebc-8437-7515ded9bfc9",
+      "content_id": "6f014298-3b42-468d-b513-a6fa3ae7b8a6",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "While rabies particles are initially concentrated near the cell body in the first 1-3 days post-infection, any initial bias for proximal synapses appears eliminated by 7 days post-infection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C34 is supported by citation to prior work (Nassi and Callaway, 2006), and C35 is a reasonable inference based on the experimental observation of no spatial bias at 7 days. However, the authors appropriately note this is based on a single time point, limiting generalizability to shorter survival times.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:58:05.180849Z"
+    },
+    {
+      "id": "0511b9e0-2357-4440-86a3-d8633a36ca8b",
+      "content_id": "6f014298-3b42-468d-b513-a6fa3ae7b8a6",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Analysis of Nr5a1Cre mice shows a mean of 7 labeled neurons within 50 \u03bcm of any given neuron, all GAD-negative excitatory neurons, and EM analysis reveals that in adult mouse visual cortex, most excitatory connections (>90%) involve only a single synaptic contact (average 1.0965\u00b10.3726).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C57 provide critical circuit characterization data. C53-C54 are supported by experimental analysis (774 neurons, 7 sections, 3 animals). C55-C57 are supported by extensive EM reconstruction data (76,678 connections) from the publicly available MicRonS dataset, providing robust quantification of synaptic connectivity patterns.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:58:05.180849Z"
+    },
+    {
+      "id": "885dfb98-d6a8-4f64-a1e1-4646af0e382e",
+      "content_id": "6f014298-3b42-468d-b513-a6fa3ae7b8a6",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Shared common inputs between starter cells result in SF being larger than IF, with a maximum impact of 22% (IF/SF=0.78) or 11% (IF/SF=0.89) if only half of nr5a1 neurons are starter cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C60 present modeling results accounting for shared inputs. The calculations are based on empirical data about neuron density and shared connectivity (Figure 5A) combined with estimated IF=0.3. The logic is sound and the authors appropriately note this is a maximum estimate, with more realistic scenarios yielding smaller corrections.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:58:05.180849Z"
+    },
+    {
+      "id": "64ff8812-52ba-4c90-a7a2-c651dd932ed5",
+      "content_id": "6f014298-3b42-468d-b513-a6fa3ae7b8a6",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Multiple synaptic contacts per input neuron typically cause IF to be less than SF, with modeling showing that under realistic cortical circuit conditions (R\u226510, Ma=1, Mb=2), IF/SF is approximately 0.91-0.95.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C67 present modeling of how multiple synaptic contacts affect the SF/IF relationship. The mathematical framework is sound (equations provided in Methods), and the analysis appropriately considers different scenarios. The use of empirical EM data (C66, Figure 5B) to constrain the model parameters strengthens the conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:58:05.180849Z"
+    },
+    {
+      "id": "a1b7f72d-14b8-4c79-85c4-3bf2da6d9592",
+      "content_id": "6f014298-3b42-468d-b513-a6fa3ae7b8a6",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Under plausible conditions for mouse visual cortex, an SF of 40% corresponds to IF of approximately 30% of input neurons labeled and unitary synaptic efficiency (U) of approximately 28%.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17, C32, C69-C71 integrate the modeling results to estimate IF and U from measured SF. The calculation combining effects of shared inputs (IF/SF=0.78) and multiple contacts (IF/SF=0.95) to yield overall IF/SF=0.74 is mathematically correct. The estimates are appropriately qualified as being based on plausible assumptions and empirical data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:58:05.180849Z"
+    },
+    {
+      "id": "992e550e-cfc5-4cc7-9066-1987ef2dd1f5",
+      "content_id": "6f014298-3b42-468d-b513-a6fa3ae7b8a6",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The probability of rabies spread across a single synaptic contact (unitary synaptic efficiency, U) is estimated to be about 28% when SF=0.4.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C18 is a direct consequence of the modeling presented in C17, C32, and C71. The estimate is derived from the mathematical framework relating SF, IF, and U, constrained by empirical measurements of SF and circuit connectivity. The value is consistent across multiple modeling scenarios.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:58:05.180849Z"
+    },
+    {
+      "id": "6b60cdf0-8766-4d31-88cf-2b3915863086",
+      "content_id": "6f014298-3b42-468d-b513-a6fa3ae7b8a6",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Many thalamic dLGN long-distance inputs to L4 excitatory neurons were reliably labeled with RVdG-PSD95GFP-SynPhRFP.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C24 demonstrates successful transsynaptic spread to expected long-range inputs. This is supported by imaging data (Figure 3D) showing labeled neurons in dLGN, consistent with known thalamocortical connectivity to L4. This serves as a positive control for the tracing system.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:58:05.180849Z"
+    },
+    {
+      "id": "5859637c-44c8-4474-a1ef-24647150144c",
+      "content_id": "6f014298-3b42-468d-b513-a6fa3ae7b8a6",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Rabies virus strain, glycoprotein variant, and expression levels (particularly avoiding 2A linkers) are likely influential factors in transsynaptic spread efficiency, with glycoprotein expression levels and number of rabies particles entering starter cells being key determinants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C41 discuss factors affecting spread efficiency based on prior literature. Each claim is appropriately supported by citations to relevant studies. These are reasonable inferences from the field's collective knowledge, though the authors note that direct comparisons with matched titers are limited.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:58:05.180849Z"
+    },
+    {
+      "id": "8f9adf64-6b1c-4de7-a473-e4d55253c795",
+      "content_id": "6f014298-3b42-468d-b513-a6fa3ae7b8a6",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The observed variability between individual cells likely reflects differences in AAV and rabies particle entry, and SF could be increased above 35-40% by increasing oG expression levels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C43 are reasonable inferences based on known factors affecting viral transduction and the relationship between glycoprotein levels and spread efficiency. C42 is supported by observed variability in the data (Figures 2G, 3C), and C43 follows logically from prior work showing glycoprotein levels affect CI.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:58:05.180849Z"
+    },
+    {
+      "id": "ef743a9a-895d-4fe7-b940-4a455cab2031",
+      "content_id": "6f014298-3b42-468d-b513-a6fa3ae7b8a6",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The ideal spread efficiency is likely 35-50% of synaptic contacts rather than 100%, as this range provides both large numbers of labeled inputs and sensitivity to connection strength, whereas complete labeling would eliminate sensitivity and very low efficiency would increase variability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C48 present a reasoned argument about optimal labeling efficiency. The logic is sound: rabies spread likely depends on synapse number and PSD size (supported by citations C44), so intermediate efficiency preserves information about connection strength. The recommendation for 35-50% is supported by citation (Henrich et al., 2020) and consistent with the measured values.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:58:05.180849Z"
+    },
+    {
+      "id": "78581fd8-3ab8-47ca-abc0-3d06327c6d24",
+      "content_id": "6f014298-3b42-468d-b513-a6fa3ae7b8a6",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The study has several limitations: light microscopy cannot accurately measure PSD size, only excitatory synapses were examined, and potential overexpression artifacts from PSD95-GFP could affect measurements. The mechanisms underlying incomplete labeling remain unknown but may involve synapse number, receptor differences, or PSD size.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C52 appropriately acknowledge study limitations. C49 is reasonable speculation supported by citation, while C50-C52 are honest assessments of methodological constraints. These limitations do not invalidate the main findings but appropriately qualify their interpretation and scope.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:58:05.180849Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "f5b057a4-cc0a-4b7a-8167-79ebae978b2c",
+      "result_id": "764ed76e-a641-4f50-ab49-a71128c67910"
+    },
+    {
+      "claim_id": "d0e79b36-c9c9-4127-b07c-2a557640588e",
+      "result_id": "764ed76e-a641-4f50-ab49-a71128c67910"
+    },
+    {
+      "claim_id": "88fee8da-d6ec-406e-ad48-a534eca3f0d9",
+      "result_id": "764ed76e-a641-4f50-ab49-a71128c67910"
+    },
+    {
+      "claim_id": "564aaf21-a7a5-46d9-b74f-3ed8370c49d8",
+      "result_id": "a337bb92-e657-4f82-b4e3-4e6e78ff36bb"
+    },
+    {
+      "claim_id": "20ea8949-c88b-4bf8-8de6-f9e1586c56ce",
+      "result_id": "a337bb92-e657-4f82-b4e3-4e6e78ff36bb"
+    },
+    {
+      "claim_id": "87332a58-de88-49b9-82a1-ca1304f9807a",
+      "result_id": "a337bb92-e657-4f82-b4e3-4e6e78ff36bb"
+    },
+    {
+      "claim_id": "95e7e794-671b-40e9-aac4-f915aedde416",
+      "result_id": "a337bb92-e657-4f82-b4e3-4e6e78ff36bb"
+    },
+    {
+      "claim_id": "d84f0be3-9458-4426-b8de-45a3311d3d0c",
+      "result_id": "a337bb92-e657-4f82-b4e3-4e6e78ff36bb"
+    },
+    {
+      "claim_id": "196e98b3-631d-4979-b4bb-8d9905b76c65",
+      "result_id": "7a36194b-cd0e-4e46-86f1-d5432b838a37"
+    },
+    {
+      "claim_id": "8dbdd49d-f1df-4a41-9848-ceaf8ab6498b",
+      "result_id": "7a36194b-cd0e-4e46-86f1-d5432b838a37"
+    },
+    {
+      "claim_id": "efc8f364-9eee-4b2c-8d38-7ea042151b22",
+      "result_id": "7a36194b-cd0e-4e46-86f1-d5432b838a37"
+    },
+    {
+      "claim_id": "fce4c06c-fda1-4c00-9c49-b598fe068967",
+      "result_id": "7a36194b-cd0e-4e46-86f1-d5432b838a37"
+    },
+    {
+      "claim_id": "df303091-4e62-467b-8c63-de817cade747",
+      "result_id": "7a36194b-cd0e-4e46-86f1-d5432b838a37"
+    },
+    {
+      "claim_id": "bbd4bbe9-07b6-43d4-b6a6-ff4a90980423",
+      "result_id": "58a67176-db16-4646-a582-5ebdb12b94da"
+    },
+    {
+      "claim_id": "5d259032-9354-4033-88a0-2f260075f79e",
+      "result_id": "58a67176-db16-4646-a582-5ebdb12b94da"
+    },
+    {
+      "claim_id": "dcf1556d-1aff-4cfd-afc3-8914f2e611ca",
+      "result_id": "14cbed3f-2b54-4dc6-9c63-5ec1dad742ef"
+    },
+    {
+      "claim_id": "36d5996d-629f-41cd-8e27-756c937f279e",
+      "result_id": "14cbed3f-2b54-4dc6-9c63-5ec1dad742ef"
+    },
+    {
+      "claim_id": "68da8b35-b46f-45b2-9936-50c90c5e014f",
+      "result_id": "14cbed3f-2b54-4dc6-9c63-5ec1dad742ef"
+    },
+    {
+      "claim_id": "c9777fa7-3044-4fa0-9b6f-5e54598bd36c",
+      "result_id": "14cbed3f-2b54-4dc6-9c63-5ec1dad742ef"
+    },
+    {
+      "claim_id": "95902ff9-7192-45f1-8703-34520a00afd9",
+      "result_id": "4e299d55-baac-4b04-ad26-b8551447343e"
+    },
+    {
+      "claim_id": "3939a9d9-9390-46a8-a3b8-f7ec53aa3ae0",
+      "result_id": "4e299d55-baac-4b04-ad26-b8551447343e"
+    },
+    {
+      "claim_id": "baddc201-a6f2-49e7-aab8-f9e1df77e774",
+      "result_id": "5879bcd2-13a8-468e-be8f-2a815a1a75ba"
+    },
+    {
+      "claim_id": "e9dbfdcc-195e-430b-89b2-f0df16cf4aad",
+      "result_id": "5879bcd2-13a8-468e-be8f-2a815a1a75ba"
+    },
+    {
+      "claim_id": "3e36f93e-b7cd-41eb-8a2a-73f861b3cf4e",
+      "result_id": "5879bcd2-13a8-468e-be8f-2a815a1a75ba"
+    },
+    {
+      "claim_id": "7edede2f-e86d-4d10-b465-9002bea6c67f",
+      "result_id": "5879bcd2-13a8-468e-be8f-2a815a1a75ba"
+    },
+    {
+      "claim_id": "dcaddcde-7ea7-4e6e-9711-51e9ae83ab66",
+      "result_id": "5879bcd2-13a8-468e-be8f-2a815a1a75ba"
+    },
+    {
+      "claim_id": "4fafbf1c-9561-49bc-a48b-37d00a75ef0c",
+      "result_id": "5879bcd2-13a8-468e-be8f-2a815a1a75ba"
+    },
+    {
+      "claim_id": "dddc36d2-eb9c-44c3-9895-7323ef30212e",
+      "result_id": "5879bcd2-13a8-468e-be8f-2a815a1a75ba"
+    },
+    {
+      "claim_id": "ab231ada-feab-45ba-bfbe-5b0eb6ad8a5d",
+      "result_id": "d4dad02a-1eec-4ebc-8437-7515ded9bfc9"
+    },
+    {
+      "claim_id": "9d342ec8-9f5c-4576-8b75-01e46af7f0d4",
+      "result_id": "d4dad02a-1eec-4ebc-8437-7515ded9bfc9"
+    },
+    {
+      "claim_id": "f404e7f1-f013-43ef-8ee3-bf086648abcd",
+      "result_id": "0511b9e0-2357-4440-86a3-d8633a36ca8b"
+    },
+    {
+      "claim_id": "ee55086a-1f58-4f1b-adb5-f992d82bae0a",
+      "result_id": "0511b9e0-2357-4440-86a3-d8633a36ca8b"
+    },
+    {
+      "claim_id": "eefb6815-412c-4da3-8cc5-5fc5e1c18884",
+      "result_id": "0511b9e0-2357-4440-86a3-d8633a36ca8b"
+    },
+    {
+      "claim_id": "863b0124-54fb-4d8c-908b-db2071d211b8",
+      "result_id": "0511b9e0-2357-4440-86a3-d8633a36ca8b"
+    },
+    {
+      "claim_id": "70c7df1e-3508-43a2-a81c-b7270c0d065a",
+      "result_id": "0511b9e0-2357-4440-86a3-d8633a36ca8b"
+    },
+    {
+      "claim_id": "1af1f18d-3cac-44ed-ab38-ad3e89f950ad",
+      "result_id": "885dfb98-d6a8-4f64-a1e1-4646af0e382e"
+    },
+    {
+      "claim_id": "265d3a99-d869-4858-b0a5-243afd10d3f7",
+      "result_id": "885dfb98-d6a8-4f64-a1e1-4646af0e382e"
+    },
+    {
+      "claim_id": "ded4f18d-03fd-4c54-895e-fcde3ab97268",
+      "result_id": "885dfb98-d6a8-4f64-a1e1-4646af0e382e"
+    },
+    {
+      "claim_id": "5b156832-0ede-4d8a-9ad9-78acf2656a80",
+      "result_id": "64ff8812-52ba-4c90-a7a2-c651dd932ed5"
+    },
+    {
+      "claim_id": "132716e6-48be-480f-9d44-e67fc8ee425a",
+      "result_id": "64ff8812-52ba-4c90-a7a2-c651dd932ed5"
+    },
+    {
+      "claim_id": "36cee7fc-f65b-43a0-81d2-a2cf56fbc519",
+      "result_id": "64ff8812-52ba-4c90-a7a2-c651dd932ed5"
+    },
+    {
+      "claim_id": "d3d94a41-3dbe-49dc-9bcb-87681c4db6d3",
+      "result_id": "64ff8812-52ba-4c90-a7a2-c651dd932ed5"
+    },
+    {
+      "claim_id": "776ba558-9114-46c2-abb4-596de856cf61",
+      "result_id": "64ff8812-52ba-4c90-a7a2-c651dd932ed5"
+    },
+    {
+      "claim_id": "be4c27c5-d73d-4f1a-9335-c504442f9a09",
+      "result_id": "64ff8812-52ba-4c90-a7a2-c651dd932ed5"
+    },
+    {
+      "claim_id": "d8a50c93-f39f-4745-9eb3-af94d2a536d5",
+      "result_id": "64ff8812-52ba-4c90-a7a2-c651dd932ed5"
+    },
+    {
+      "claim_id": "f8a7db3a-3bb7-4c2a-92ee-b25e95cef00b",
+      "result_id": "a1b7f72d-14b8-4c79-85c4-3bf2da6d9592"
+    },
+    {
+      "claim_id": "7ec0b1ee-5f1a-4835-ba3d-d3f75a8c9dc2",
+      "result_id": "a1b7f72d-14b8-4c79-85c4-3bf2da6d9592"
+    },
+    {
+      "claim_id": "1505bf9a-43e3-4c9c-aa41-99c526de8838",
+      "result_id": "a1b7f72d-14b8-4c79-85c4-3bf2da6d9592"
+    },
+    {
+      "claim_id": "02ee9ebe-4515-4b20-920b-89e0103c2056",
+      "result_id": "a1b7f72d-14b8-4c79-85c4-3bf2da6d9592"
+    },
+    {
+      "claim_id": "929c1636-07a3-42e0-92ee-13d1eb6aa8bf",
+      "result_id": "a1b7f72d-14b8-4c79-85c4-3bf2da6d9592"
+    },
+    {
+      "claim_id": "353c04d5-4a11-405e-842a-5038d833136d",
+      "result_id": "992e550e-cfc5-4cc7-9066-1987ef2dd1f5"
+    },
+    {
+      "claim_id": "36e027e9-a4a5-4917-b026-801bfba8ad64",
+      "result_id": "6b60cdf0-8766-4d31-88cf-2b3915863086"
+    },
+    {
+      "claim_id": "2984d854-ed65-41a8-908e-9b3ac04e5f05",
+      "result_id": "5859637c-44c8-4474-a1ef-24647150144c"
+    },
+    {
+      "claim_id": "dc2808d5-e8f5-44a7-bc12-c91a27c381b5",
+      "result_id": "5859637c-44c8-4474-a1ef-24647150144c"
+    },
+    {
+      "claim_id": "39e5b4d1-534f-4a24-b93a-b7b3d9aeffc1",
+      "result_id": "5859637c-44c8-4474-a1ef-24647150144c"
+    },
+    {
+      "claim_id": "bf41b398-0f27-4ff2-884d-c51859be8b11",
+      "result_id": "5859637c-44c8-4474-a1ef-24647150144c"
+    },
+    {
+      "claim_id": "194c2928-3ef9-48ba-b0de-3220a7f1f88f",
+      "result_id": "5859637c-44c8-4474-a1ef-24647150144c"
+    },
+    {
+      "claim_id": "f51bc07c-298f-4379-94aa-128a420e84d0",
+      "result_id": "5859637c-44c8-4474-a1ef-24647150144c"
+    },
+    {
+      "claim_id": "6f40cbde-7c07-43b2-9854-5d1e9372f931",
+      "result_id": "8f9adf64-6b1c-4de7-a473-e4d55253c795"
+    },
+    {
+      "claim_id": "5216d350-36a6-4df1-850d-d525cb2102a8",
+      "result_id": "8f9adf64-6b1c-4de7-a473-e4d55253c795"
+    },
+    {
+      "claim_id": "f5cd09f4-da0d-4ac0-bb01-f0d28683c612",
+      "result_id": "ef743a9a-895d-4fe7-b940-4a455cab2031"
+    },
+    {
+      "claim_id": "65baa904-77f7-4525-bb07-2dfd71f074ed",
+      "result_id": "ef743a9a-895d-4fe7-b940-4a455cab2031"
+    },
+    {
+      "claim_id": "a0780e3e-f16a-4451-9957-869c26914643",
+      "result_id": "ef743a9a-895d-4fe7-b940-4a455cab2031"
+    },
+    {
+      "claim_id": "0fd75e95-4e6a-47a6-8a56-c01723ba3278",
+      "result_id": "ef743a9a-895d-4fe7-b940-4a455cab2031"
+    },
+    {
+      "claim_id": "9442eaba-9ef7-42e5-89e5-3b6a10c9e32f",
+      "result_id": "ef743a9a-895d-4fe7-b940-4a455cab2031"
+    },
+    {
+      "claim_id": "1fd92c84-0d8d-404f-a537-9e551ceb170d",
+      "result_id": "78581fd8-3ab8-47ca-abc0-3d06327c6d24"
+    },
+    {
+      "claim_id": "a6fd28d7-ae18-4746-8e46-2d1efbcd3d7d",
+      "result_id": "78581fd8-3ab8-47ca-abc0-3d06327c6d24"
+    },
+    {
+      "claim_id": "e0f4425c-61c2-4b84-bc97-1646315b0d82",
+      "result_id": "78581fd8-3ab8-47ca-abc0-3d06327c6d24"
+    },
+    {
+      "claim_id": "06883d75-120c-488f-9aa2-bfd954d383a0",
+      "result_id": "78581fd8-3ab8-47ca-abc0-3d06327c6d24"
+    }
+  ],
+  "comparisons": []
+}

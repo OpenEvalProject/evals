@@ -1,0 +1,1542 @@
+{
+  "submission": {
+    "id": "62d18f44-9d40-4911-9cdc-480c17ee9e5e",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-04T03:40:00.490755Z",
+    "updated_at": "2025-12-04T03:40:00.490755Z"
+  },
+  "content": [
+    {
+      "id": "c54a4dda-7c0b-415c-8c83-0fef04cc9dd1",
+      "submission_id": "62d18f44-9d40-4911-9cdc-480c17ee9e5e",
+      "content_type": "manuscript",
+      "content_text": "# Evolutionary consequences of nascent multicellular life cycles\n\n## Authors\n\n- Jennifer T Pentz<sup>1</sup> ([ORCID: 0000-0002-8186-3005](https://orcid.org/0000-0002-8186-3005)) \u2020\n- Kathryn MacGillivray<sup>2</sup>\n- James G DuBose<sup>2</sup>\n- Peter L Conlin<sup>2</sup> ([ORCID: 0000-0002-2793-7624](https://orcid.org/0000-0002-2793-7624))\n- Emma Reinhardt<sup>4</sup>\n- Eric Libby<sup>5</sup>\n- William C Ratcliff<sup>2</sup> ([ORCID: 0000-0002-6837-8355](https://orcid.org/0000-0002-6837-8355)) \u2020\n\n### Affiliations\n\n1. Los Alamos National Laboratory Los Alamos United States ([ROR:01e41cf67](https://ror.org/01e41cf67))\n2. School of Biological Sciences, Georgia Institute of Technology Atlanta United States ([ROR:01zkghx44](https://ror.org/01zkghx44))\n3. Interdisciplinary Graduate Program in Quantitative Biosciences, Georgia Institute of Technology Atlanta United States ([ROR:01zkghx44](https://ror.org/01zkghx44))\n4. Department of Biology, University of North Carolina at Chapel Hill Chapel Hill United States ([ROR:0130frc33](https://ror.org/0130frc33))\n5. IceLab, Ume\u00e5 University Ume\u00e5 Sweden ([ROR:05kb8h459](https://ror.org/05kb8h459))\n\n\u2020 Corresponding author\n\n## Abstract\n\nA key step in the evolutionary transition to multicellularity is the origin of multicellular groups as biological individuals capable of adaptation. Comparative work, supported by theory, suggests clonal development should facilitate this transition, although this hypothesis has never been tested in a single model system. We evolved 20 replicate populations of otherwise isogenic clonally reproducing \u2018snowflake\u2019 yeast (\u0394ace2/\u2206ace2) and aggregative \u2018floc\u2019 yeast (GAL1p::FLO1 /GAL1p::FLO1) with daily selection for rapid growth in liquid media, which favors faster cell division, followed by selection for rapid sedimentation, which favors larger multicellular groups. While both genotypes adapted to this regime, growing faster and having higher survival during the group-selection phase, there was a stark difference in evolutionary dynamics. Aggregative floc yeast obtained nearly all their increased fitness from faster growth, not improved group survival; indicating that selection acted primarily at the level of cells. In contrast, clonal snowflake yeast mainly benefited from higher group-dependent fitness, indicating a shift in the level of Darwinian individuality from cells to groups. Through genome sequencing and mathematical modeling, we show that the genetic bottlenecks in a clonal life cycle also drive much higher rates of genetic drift\u2014a result with complex implications for this evolutionary transition. Our results highlight the central role that early multicellular life cycles play in the process of multicellular adaptation.\n\n## Introduction\n\nMulticellularity has evolved more than 50 times across the tree of life (Umen and Herron, 2021; Grosberg and Strathmann, 2007). Multicellular organisms vary widely in their life cycles, ecological niches, and traits, and there are few features shared by all members of this diverse group (O\u2019Malley, 2022). However, it is generally accepted that nascent multicellular lineages start out relatively simple (e.g. as undifferentiated groups of cells), gradually evolving increased organismal integration and functionality (Grosberg and Strathmann, 2007; Brunet and King, 2017; Pfeiffer and Bonhoeffer, 2003; Knoll, 2011; Herron et al., 2022). In some cases, multicellular groups that gain the capacity for group reproduction undergo a shift in evolutionary mode: the origin of multicellular Darwinian individuality (Michod, 2007; Godfrey-Smith, 2009; Buss, 2014; West et al., 2015; Maynard Smith and Szathmary, 1997). This shift, from cell-level traits being the focal point of adaptation in the unicellular ancestor, to group-level traits becoming the focal point of adaptation in a nascent multicellular lineage, represents a crucial tipping point in evolutionary dynamics. In this paper, we examine the impact of early multicellular life cycles on the capacity for groups to serve as evolutionary units capable of adaptation.\n\nThere are two basic routes to forming a multicellular body. Nascent multicellular organisms employing either of these routes to group formation possess distinct multicellular life cycles. Individual cells can \u2018stay together\u2019 by forming permanent cell-cell bonds, forming clonal clusters that exhibit little within-group genetic variation. Alternatively, free-living single cells can \u2018come together\u2019, or aggregate, and often evolve to do so in response to some stimuli, such as starvation (Bonner, 1998; Bonner, 2001; Crespi, 2001; Tarnita et al., 2013; Velicer and Vos, 2009). Multicellularity has evolved multiple times via both staying together and coming together (Grosberg and Strathmann, 2007; Bonner, 1998; Du et al., 2015), but \u2018complex multicellularity\u2019 (Knoll, 2011; e.g. plants, animals, fungi, red algae and brown algae) has only evolved in lineages that develop clonally (Brunet and King, 2017; Knoll, 2011; Fisher et al., 2020). Evolutionary theory explains this observation as a consequence of social evolution: clonal life cycles are a simple and powerful mechanism that \u2018de-Darwinizes\u2019 cells (Michod, 2007; Godfrey-Smith, 2009; Godfrey-Smith et al., 2013) while Darwinizing multicellular groups. By limiting within-group genetic diversity, clonal development prevents intra-organism genetic conflict, as there is little standing within-group genetic variation for selection to act on Buss, 2014; Maynard Smith and Szathmary, 1997; Clarke, 2014. Any genetic variation that arises due to mutation gets partitioned among multicellular offspring, allowing selection to act on the group-level effects of de novo mutations (Dahaj et al., 2021). Clonal groups align the fitness interests of cells and groups, allowing cells to evolve altruistic social traits necessary for cellular differentiation (Michod, 2007; Michod, 2006). Finally, organisms that aggregate from a free-living state may experience contrasting selection on the fitness of free-living single cells and the fitness of these cells in a multicellular group (M\u00e1rquez-Zacar\u00edas et al., 2021).\n\nWhile the numerous origins of multicellularity provide a uniquely rich set of natural experiments to examine correlations between developmental mode and organismal complexity (Umen and Herron, 2021; Brunet and King, 2017; Bonner, 2004; Fisher et al., 2013), there is no direct evidence that clonal development has played a causal role in the transition to multicellular individuality, and the subsequent evolution of organismal complexity. Indeed, a number of alternative explanations exist. For example, clonal development has evolved more frequently in aquatic environments, while aggregation has evolved more often in terrestrial environments (Bonner, 1998; Fisher et al., 2020). The lower complexity of aggregative organisms may be due simply to different life history selection in these fundamentally different environments, rather than evolutionary constraints due to within-organism genetic diversity. Alternatively, the potential for cellular differentiation appears to be highly contingent on the cell biology and behavioral repertoire of the unicellular ancestor (Brunet and King, 2017; Hanschen et al., 2016; King, 2004; King et al., 2008; Suga et al., 2013). The fact that complex multicellularity evolved in just five lineages may reflect historical contingency in developmental plasticity in these specific lineages, rather than evolutionary consequences of early developmental mode. Progress has been limited by the fact that all known transitions to multicellularity occurred in the deep past (>200 MYA Grosberg and Strathmann, 2007; Herron et al., 2009), obscuring the evolutionary dynamics of early multicellular evolution in extant lineages. Experiments directly comparing the evolutionary consequences of developmental mode have not yet been conducted, in part due to a lack of experimentally tractable model systems that can be induced to undergo either clonal or aggregative development.\n\nHere, we circumvent these constraints by synthetically generating an isogenic yeast model system capable of either clonal or aggregative development. We created clonal \u2018snowflake yeast\u2019 by knocking out ACE2 in a unicellular ancestor (Ratcliff et al., 2017; Pentz et al., 2020), and aggregative floc yeast by placing the dominant FLO1 gene under transcriptional control of the GAL1 promoter (Pentz et al., 2020; Smukalla et al., 2008). While these strains differ only in these two genes, these differences produce two fundamentally different life cycles: obligately multicellular snowflake yeast undergo a unicellular genetic bottleneck during ontogeny, making them clonal (Ratcliff et al., 2017; Ratcliff et al., 2012; Ratcliff et al., 2015), while floc yeast can form genetically diverse aggregates (Smukalla et al., 2008). We evolved 20 populations of each genotype for 24 weeks with galactose as the main carbon source, ensuring robust flocculation, selecting daily for both faster growth and increased multicellular size by selecting for rapid sedimentation in liquid media (Ratcliff et al., 2012). We chose this selective regime because it is a simple and powerful way to examine the evolutionary consequences of selection acting simultaneously on both cell-level traits (such as growth rate) and group-level traits (such as settling rate). While buoyancy regulation may be an important driver of multicellularity in some lineages (Dudin et al., 2021), we chose this selective regime because it is an efficient way to select on multicellular size, a fundamentally important multicellular trait (Tong et al., 2022).\n\nIn our experiment, both floc and snowflake yeast adapted to this fluctuating environment, settling faster and growing faster. However, competition experiments with their ancestors reveal fundamentally different modes of adaptation. In clonal snowflake yeast, groups of cells served as the primary evolutionary units, gaining nearly all their increased fitness during the settling selection phase of the experiment. In contrast, aggregative floc gained most of their fitness as the cell-level, with evolved floc growing faster but possessing no measurable advantage during settling selection when competing against their ancestor. Snowflake yeast, but not floc, are evolving as primarily multicellular Darwinian individuals. Clonal development, however, resulted in far more genetic drift than aggregation. Mathematical modeling suggests that this is the result of a key difference in their life cycles. In floc, a rare beneficial mutant can disperse into many groups, while in clonal snowflake yeast it is constrained to a few, exposing them to greater sampling error during group selection. This is a general property of clonal multicellular life cycles, and this disparity scales with the number of cells within the organism prior to reproduction. Together, our results show how a simple difference in the mechanism of group formation, whether cells adhere with reformable bonds or adhere permanently, can fundamentally change their subsequent evolutionary dynamics and impact the level of Darwinian individuality (Rose and Hammerschmidt, 2021).\n\n## Results\n\n### Experimental evolution\n\nOur selection regime involved 24 hr of batch culture followed by daily selection for rapid sedimentation in liquid media (Ratcliff et al., 2012). This selective scheme has previously been shown to promote multicellular adaption in snowflake yeast (Ratcliff et al., 2012; Ratcliff et al., 2015; Ratcliff et al., 2013; Bozdag et al., 2023) and has led to increases in cluster size of up to 20,000-fold over 600 consecutive rounds of selection (Bozdag et al., 2023). We have previously quantified the effect of settling selection on snowflake yeast by using a variety of tools (i.e. microscopy and flow cytometry Ratcliff et al., 2012; Ratcliff et al., 2015; Ratcliff et al., 2013; Bozdag et al., 2023) that cannot be used for floc, because floc aggregates form dynamically as the clusters are settling. Thus, we developed a method to measure the settling rate of both floc and snowflake yeast populations during sedimentation (Pentz et al., 2020), calculating the displacement of biomass as they settle via high-resolution video (see Methods). We measured the settling speed of each of the 40 populations weekly over the course of the 24week experiment (Figure 1A and B). Both snowflake yeast and floc evolved to settle significantly faster (one-way ANOVA; floc: F23,456=16.57, p<0.0001; snowflake: F23,456=13.65, p<0.0001, pairwise differences assessed with Tukey\u2019s post-hoc HSD with \u03b1=0.05). Floc, however, exhibited a much larger increase in settling rate than snowflake yeast (12-fold increase vs 1.3-fold increase after 24 weeks, respectively, Figure 1C).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/84336/elife-84336-fig1-v1.jpg)\n\n**Figure 1.:** The settling rate (as determined by time-lapse imaging, see Methods) of 40 independently evolving populations of snowflake yeast (A) and floc yeast (B) over 24 weeks of evolution. Settling rate was measured for each population weekly. Each data point shows the mean of 4 biological replicates for each population. Snowflake yeast evolved to settle 30% faster over 24 weeks of evolution, while floc evolved to settle an average of 12-fold faster (C).\n\nWe next examined the traits underlying increased settling speed. Using flow cytometry, we measured the size of 24-week evolved snowflake yeast. Biomass weighted mean forward scatter (a proxy for group size) increased by an average of 33% (Figure 2A and B; one-sided t-test, t=7.48, n=24, p<0.0001; non-overlayed histograms for individual snowflake isolates shown in Figure 2\u2014figure supplement 1). Evolved snowflake isolates retain the same basic growth form (Figure 2D and E). Examining one lineage through time, we found that size appeared to plateau after 8\u201310 weeks of settling selection (Figure 2C), which is consistent with previous work in this model system where aerobic metabolism, and the corresponding reliance on diffused oxygen for growth, strongly inhibits the evolution of increased size (Bozdag et al., 2023; Bozdag et al., 2021). By 24 weeks, floc yeast appeared to be aggregating far more efficiently than their ancestors. To quantify this, we measured the coefficient of variation in pixel opacity in a well-mixed population just prior to settling selection (Figure 2F). This standardized variance measurement is as a proxy for flocculation efficiency, as when more cells are in flocs, the biomass will be more heterogeneously distributed within the cuvette. Thirteen populations showed significantly increased flocculation efficiency relative to the ancestor (one-way ANOVA, F(20,46)=45.53, p<0.0001, pairwise differences assessed with Tukey\u2019s honestly significant difference [HSD] with \u0251=0.05). This resulted in a noticeable reduction in the density of free un-flocculated unicells, see examples of the ancestor (G) and a representative 24-week isolate (H). We confirmed that increased flocculation was not a product of cell density in floc cultures (Figure 2\u2014figure supplement 2) Thus, floc yeast evolved to settle more rapidly by forming larger aggregative groups and reducing the proportion of non-aggregated cells in the population (Figure 2G and H).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/84336/elife-84336-fig2-v1.jpg)\n\n**Figure 2.:** (A, B) Snowflake yeast increased their settling rate by evolving larger cluster size. Shown in (C) is the size distribution of a representative snowflake population (S8) every three weeks for the duration of the experiment. Relative to their ancestor (D), evolved snowflake yeast (E) are larger but retain a similar pattern of cellular attachment (insets). (F) We estimated the flocculation efficiency of ancestral and evolved floc by measuring the coefficient of variation in pixel intensity within cuvettes of a well-mixed population taken from shaking incubation (data on top, images from each population on the bottom). Flocculation efficiency was significantly higher in 13/20 evolved populations (significance at the overall \u03b1=0.05 level denoted by asterisks). Shown are the mean and standard deviation of four biological replicates normalized to the mean of the ancestor. Representative images of ancestral (G) and evolved (H) floc yeast (genotype F4), showing fewer planktonic cells in the evolved isolate with higher flocculation efficiency.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/84336/elife-84336-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Size distributions of evolved isolates of individual snowflake populations. Overlay shown in Figure 2B.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/84336/elife-84336-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) Culture densities (cells/mL) of stationary phase cultures of ancestor and evolved floc populations. (B) There is not a strong correlation between culture density and flocculation efficiency. (C) Histograms of pixel values from floc populations with the highest flocculation efficiencies (population F7 and F18, see Figure 2G). Pixel opacity does not saturate at either high or low pixel values, demonstrating that our method has a broad enough dynamic range to measure the opacity of both cells in a planktonic phase as well as large, optically dense clusters.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/84336/elife-84336-fig2-figsupp3-v1.jpg)\n\n**Figure 2\u2014figure supplement 3.:** (A) Snowflake yeast were constructed by deleting a gene responsible for mother-daughter cell separation following division, ACE2, resulting in clonal clusters, shown by fluorescently tagged clusters that are remain all green or all red during co-culture. Images adapted from Pentz et al., 2020. (B) Floc yeast were constructed by inserting a gene that confers strong flocculation, FLO1, resulting in chimeric clusters where fluorescently tagged cells will randomly aggregate, creating chimeric green and red clusters. (C, D) Simple schematics representing snowflake and flocculating yeast life cycles.\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/84336/elife-84336-fig2-figsupp4-v1.jpg)\n\n**Figure 2\u2014figure supplement 4.:** (A) Size distributions of ancestor and evolved snowflake yeast (data from Figure 2B) biomass-transformed with different bin sizes. (B) Mean cluster size of new size distributions is robust to a range of bin sizes.\n\n### Partitioning fitness between growth and multicellular-dependent survival\n\nA common way to analyze ETIs is to use the Price equation to partition fitness arising from selection acting at distinct levels, i.e., cells and groups (Rose and Hammerschmidt, 2021; Shelton and Michod, 2020). Our system is not amenable to this kind of decomposition given the dynamic nature of flocs: groups rapidly form and fuse during settling selection, changing in size and composition until they either succeed at joining the pellet at the bottom of the tube, where they rapidly adhere to these cells, or fail to do so and are discarded. The fluid nature of flocs, and corresponding difficulty of measuring their traits without changing the traits we seek to measure, prevents us from quantifying the genetic composition and fitness of flocs during settling selection - data that is necessary for a Price equation fitness decomposition. Fortunately, we can still gain insight into how selection is acting on cell and group-level traits by leveraging the biphasic nature of our experiment.\n\nFitness in our experiment depends on growth rate during the 24 hr of batch culture when the population is competing for resources, and survival during the subsequent settling selection step (Pentz et al., 2020; Ratcliff et al., 2012; Conlin and Ratcliff, 2016). Growth rate during batch culture is a classic trait under strong selection during experimental evolution (Lenski et al., 1991). The main way that a lineage can increase growth rates is by increasing the rate at which cells divide. In contrast, the main way in which a lineage can increase survival during settling selection is through changes in the phenotype of multicellular groups (i.e. increasing their size, packing density, or hydrodynamic profile Ratcliff et al., 2013). Thus, if populations evolve higher fitness during the growth phase, this can be taken as evidence that selection is acting effectively at the cell-level. Correspondingly, fitness improvement during the settling phase, where strong between-group selection determines survival, can be taken as evidence that selection is acting at the group-level.\n\nWe measured the fitness of evolved isolates (one isolate per 24-week evolved population, or 40 isolates in total) in competition against their unevolved ancestor one 24 hr period of growth, and one round of settling selection, allowing us to partition fitness increases amongst the two factors that affect fitness in our system: growth and settling. Both floc and snowflake yeast showed overall fitness increases in our experimental regime. However, floc yeast showed a significantly higher increase in fitness than snowflake yeast, increasing by an average of 15% as opposed to 7%, respectively (Figure 3A first panel: one-sample t-test, n=20, p<0.0001). Floc yeast showed a significant fitness advantage during growth (Figure 3A; mean increase = 24%, one-sample t-test, n=20 t=10.55, p<0.0001), but despite settling an average of 12-fold faster than their ancestor when grown in monoculture, were only slightly significantly more fit than their ancestor during settling selection (Figure 3A; mean increase = 3%, one-sample t-test, n=20, t=1.633, p=0.12). Snowflake yeast displayed the opposite behavior, possessing a 5.5% fitness benefit during growth (Figure 3A; one-sample t-test, n=20, t=8.374, p<0.0001) and a 28% fitness advantage over their ancestor during settling selection (Figure 3A; one-sample t-test, n=20, t=10.29, p<0.0001). Despite floc as an overall treatment group not having higher fitness during settling selection, isolates from 2/20 replicate populations did have detectably higher fitness than their ancestor when competing during settling selection (F20,63=4.528, p<0.0001, multiple comparisons controlled by a Bonferroni correction with overall \u03b1=0.05, the same two populations were identified using a Dunnett\u2019s test against an ancestor:ancestor control). In contrast, 12/20 snowflake populations significantly increased fitness during settling selection (F20,63=4.89, p<0.0001, multiple comparisons controlled using a Dunnett test against ancestor:ancestor control). To determine why floc obtained such marginal fitness benefit during settling selection despite evolving such a large increase in their rate of flocculation, we measured the genetic structure of flocs formed by five 24-week isolates from across the range of settling speeds by calculating their assortment (Yanni et al., 2019), a scaled statistic of genotypic enrichment relative to what would be expected by chance, which ranges from \u20131 to 1 (representative images of flocs, compressed to a single-cell thickness, shown in Figure 3C and D). Multicellular adaptation requires a positive correlation between group phenotype and underlying cell-level genotype; without this, selection acting on groups cannot drive changes in allele frequency (Clarke, 2014; Fletcher and Doebeli, 2009; Pepper and Smuts, 2002). Genotypes that achieve high assortment should thus have greater potential for multicellular adaptation.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/84336/elife-84336-fig3-v1.jpg)\n\n**Figure 3.:** (A) When competing against their ancestors, both snowflake and floc yeast increased fitness in our experimental regime (first panel). Floc yeast had a 15% average fitness increase over three days with daily selection for settling, while snowflake yeast had a 7% increase. However, snowflake and floc yeast evolved distinct differences in their fitness during the growth and settling selection phases of our experiment. Floc yeast obtained a 30% fitness advantage during growth, but showed no detectable increase in fitness during settling selection. Alternatively, snowflake yeast had a 28% fitness advantage during settling but only a 6% advantage during growth. Data points show the mean of four biological replicates for each evolved isolate. (B) When competing against their ancestor, representative floc isolates formed groups with low genetic assortment. This may explain the decoupling between dramatically increased group sedimentation rate (Figure 1B), and the negligible increase in fitness during settling selection. Shown are the mean and standard deviation of three and six biological replicates for the evolved isolates and ancestor, respectively. Representative flocs are shown in (C&D), with the ancestor competing against itself, or a RFP-labeled ancestor competing against an GFP-labeled 24-week evolved isolate (genotype F10).\n\nOverall assortment in floc was relatively low (mean of five randomly-selected strains from Figure 3B was 0.06), though there was significant among-strain variation (one-way ANOVA, F4,10=4.159, p=0.008). Low assortment impedes the potential for selection acting on groups to drive changes in allele frequencies, explaining why evolved floc yeast obtained little fitness benefit from their remarkably improved sedimentation rates. In contrast, snowflake yeast canonically have an assortment of 1 (when competing two strains, every group is entirely clonal Figure 2\u2014figure supplement 3; Pentz et al., 2020), allowing for selection acting on emergent group-level traits (i.e. settling speed) to act on underlying genetic mechanisms.\n\n### Genomic analysis provides insight into evolutionary dynamics\n\nWe sequenced the genome of one isolate per 24-week population (40 isolates in total), representing about 700 generations of evolution (Figure 4\u2014figure supplement 1). Floc yeast accumulated more mutations than snowflake yeast, an average of 5 vs 3 mutations per genotype, respectively (Figure 4A; two-tailed t-test, t=2.49, n=40, p=0.017). All mutations are listed in Supplementary file 1 (Snowflake) and Supplementary file 2 (Floc). To develop insight into how each life cycle affected the potential for selection to act on mutations, we compared the frequency of different types of point mutations (which constituted the large majority of total mutations; Figure 4B) to those predicted by a null model of evolution lacking selection. Specifically, we generated a distribution of the expected frequency of different types of mutation (i.e. missense, nonsense, synonymous, or intergenic) in yeast by simulating 100,000 mutations using the Python package Mutation-Simulator (K\u00fchl et al., 2021), then ran 1000 bootstrap simulations in which we sampled the actual number of mutations identified in both floc (104 mutations total) and snowflake (69 mutations total) populations. Then we compared the observed frequency of these four types of mutation in both floc and snowflake populations to this null distribution, which is the distribution of mutations expected without selection (i.e. under genetic drift).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/84336/elife-84336-fig4-v1.jpg)\n\n**Figure 4.:** After 24 weeks of evolution, floc yeast accumulated more mutations on average than snowflake yeast (5 vs 3, respectively, A). We categorized these mutations into four broad classes (B), then compared the number of each type of mutation to expectations based on a simulation of neutral evolution (C). We cannot distinguish the overall pattern of mutations in snowflake yeast from neutral expectations. In contrast, floc yeast showed strong evidence of selection, with more missense mutations and fewer synonymous and intergenic mutations than expected. The number in the upper left-hand corner of each subplot reports the shaded area of each distribution, which is the proportion of simulated runs in that observed a result at least as extreme as the observed number of mutations of that type we identified, pooling across all 20 floc and snowflake genotypes.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/84336/elife-84336-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** To assay the number of generations floc and snowflake yeast experienced over the duration of our selection experiment, we measured the number of doublings per day, quantified as the log2(density after 24 hr/density post-selection) every three weeks. On average, both snowflake and floc yeast experienced 4\u20135 doublings per day. Thus, over the course of 24 weeks, both snowflake and floc yeast underwent ~700 generations. Error bars represent standard deviation of three biological replicates.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/84336/elife-84336-fig4-figsupp2-v1.jpg)\n\n**Figure 4\u2014figure supplement 2.:** To determine if adaptation to growth on galactose increases flocculation as a pleiotropic side effect, we evolved five populations of floc for eight weeks with daily growth rate selection on YPG. These evolved a~20% increase in fitness during growth (one-way ANOVA; F5,12=59.45, p<0.0001, pairwise differences assessed with Tukey\u2019s post-hoc HSD with \u03b1=0.05), but a~40% reduction in flocculation efficiency (one-way ANOVA; F5,18=27.26, p<0.0001, pairwise differences assessed with Tukey\u2019s post-doc HSD with \u03b1=0.05), demonstrating that adaptation to faster growth alone does not drive increased flocculation. Shown is the mean and standard deviation of 3 and 4 biological replicates for fitness during growth and flocculation efficiency, respectively, normalized to the mean of the ancestor.\n\nThe overall pattern of mutations observed in snowflake yeast were not distinguishable from drift, with the number of mutations in each of the four categories being near the mean of the expectation under selective neutrality (Figure 4C). In contrast, the mutations in floc yeast show a strong signature of selection. We observed more missense mutations than expected based on drift (there was a 3% chance of observing at least this many missense mutations in our null model). Similarly, we observed fewer synonymous mutations and fewer mutations in intergenic regions than expected based on our null model (in both cases, there was a 3% chance of observing this many mutations or fewer in our null model). Nonsense mutations occur infrequently, and do not provide a sufficiently large sample size for analysis. Because we did not have a prior expectation about the deviation from the null, each of the above tests should be treated as a two-sided test, meaning there is a 6% chance of observing a deviation in either direction at least as large as the one observed for the three categories of mutation described above, even when the null hypothesis of no selection is true. Taken together, our results show that selection was acting strongly on the mutations found in floc, but not snowflake yeast. The analysis above only examined the overall statistical properties of mutations, and should not be interpreted to mean that snowflake yeast did not undergo adaptive evolution. Indeed, we see that all evolved isolates taken from all 20 populations have evolved to form larger groups (Figure 2A\u2013E, Figure 2\u2014figure supplement 1) that settle faster (Figure 1C) and are much more fit (Figure 3A). Some of the mutations identified within snowflake yeast are putatively adaptive, such as missense mutations in the cell cycle (i.e. ULP1, SLK19; Supplementary file 1) or mutations affecting cellular morphology (i.e. AYR1, ACM1, GSC2, CHC1, ARP7, HKR1), which prior work in snowflake yeast has shown are a common mode of evolving larger group size (Dahaj et al., 2021; Bozdag et al., 2023; Bozdag et al., 2021; Jacobeen et al., 2018). We saw only a single GAL2 mutant (in contrast to seven arising independently in floc, Supplementary file 2), which is consistent with less growth rate adaptation in snowflake yeast. Indeed, it is plausible that selection acting on multicellular traits also contributed to genetic drift through the hitchhiking of otherwise non-adaptive alleles (an outcome that has been seen previously in yeast selection experiments Lang et al., 2013).\n\nOur results (Figure 3) suggest that faster settling in floc, in contrast to snowflake yeast, is only marginally adaptive. Yet if that is the case, why would floc convergently evolve to settle an average of 12 times faster than their ancestor (Figure 1)? We see two potential explanations, which are not mutually exclusive. The first is that low genetic assortment during flocculation reduces, but does not eliminate, the benefit of faster settling. Indeed, we found that 24 week evolved floc were an average of 10% more fit than their ancestor during settling selection, although this difference was not statistically significant for the treatment as a whole. Consistent with flocculation itself being under selection, we saw five parallel missense mutations in FLO1, and four in MSN1, a transcriptional activator of another major flocculin gene, FLO11 (Fichtner et al., 2007; van Dyk et al., 2005; Bayly et al., 2005; Supplementary file 2). Greater statistical power during competitions may be required to detect the benefit of increased flocculation if it exists, however.\n\nAlternatively, it may be that faster settling has evolved as a pleiotropic consequence of increased growth rate. In our experiments, mutations that increase growth rate by altering carbon metabolism may also increase flocculation efficiency as a side-effect, because FLO1 expression is under the control of a GAL1 promoter. We saw seven parallel missense mutations in GAL2, a transmembrane galactose permease, which may increase the amount of galactose entering the cell. As the main carbon source in the medium and promoter of FLO1, this may both increase growth rate and flocculation rate simultaneously. We conducted an additional experiment to control for this possibility, evolving five floc genotypes for eight weeks with daily selection for growth rate, but not settling selection, in the same growth medium containing galactose. These controls evolved a 20.7% increase in fitness during the growth phase, but evolved a 40% decrease in flocculation efficiency (Figure 4\u2014figure supplement 2). We conclude that cell-level adaptation to growth on galactose does not drive increased flocculation as a pleiotropic side-effect. It is thus likely that the dramatically increased flocculation efficiency seen in our main experiment (Figure 1B) is an adaptation, albeit one that provides only a relatively small advantage (Figure 3A).\n\n### Life cycles result in different genetic bottlenecks: modeling adaptation in aggregative and clonally-developing life cycles\n\nTo reconcile the results above, in which clonal multicellularity both facilitates multicellular adaptation yet experiences more genetic drift, we developed a theoretical model. Specifically, we consider the fate of a rare, beneficial mutant lineage that arises during the population growth phase. If the mutant lineage is to eventually fix in the population, it must survive settling selection, which means being in at least one group that gets selected. The probability that at least one mutant cell survives settling selection depends on the fraction of groups that contain at least one mutant cell.\n\nAs a point of comparison we begin by considering a simple population of equal-sized groups in which each group contains exactly one mutant cell. In this scenario if there are k mutant cells then there are also k groups with a mutant cell. Since all groups are the same size, we can model the process of selection as a statistical sampling procedure in which groups are sampled randomly without replacement. For the mutant lineage to go extinct none of the k groups containing a mutant can be selected. The probability of such an event (call it pe) is described by a hypergeometric distribution: $p_{e}=\\prod1=0fN\\frac{N\u2212k\u2212i}{N\u2212i}$, where the total number of groups selected is expressed as a fraction f of a total population of N groups. If N is large, we can simplify this to $p_{e}\u2248e^{\u2212kf/(1\u2212f)}$, which shows that the probability a mutant lineage goes extinct exponentially decays as k increases.\n\nThe value of k depends on how mutant cells are partitioned across groups. In the above case we assumed for simplicity that each group contained only a single mutant cell. Such a scenario could arise in a population without preferential assortment (i.e. an idealized form of aggregative development) if the proportion of mutant cells is small in comparison to the number of groups. In contrast, when groups are highly assorted (e.g. clonal development), the initially rare mutant and all of its descendants will be represented in a small number of groups, reducing k by a factor that corresponds to mean group size. To get a sense of this effect, suppose a mutant arises at the beginning of the growth phase. The population then grows 100-fold, resulting in 100 mutant cells. Assuming the average size of a group is 50 cells, then if 1% of the population survives settling selection, the probability that the mutant lineage goes extinct in a population that develops clonally is 98%, while it is just 36.4% for a population developing aggregatively. To assess the robustness of our theoretical predictions, we used experimental data measuring the distribution of group sizes in floc and snowflake yeast and simulated different mutations arising in these populations. We considered mutations that either: 1. Alter cell growth by a factor (1+sc) where positive sc corresponds to a beneficial mutation, or 2. Improve the settling rate of that group by a factor of sg\u0387m, where m is the number of mutant cells. We assume the best scenario for a mutation to fix, that is, it arises at the very start of an exponential growth phase. We then used experimentally observed size distributions of groups to allocate the offspring of this original mutant cell. For simplicity, in the well-mixed aggregative life cycle, we randomly selected cells to be mutant, thereby causing larger groups to have more mutant cells (although keeping the proportion of mutants similar). For the clonal life cycle, we randomly selected groups, allocating mutant cells to it until we either ran out of cells, or had to choose a new group (biologically, these would be propagules of the first cluster, as they all descend from a common mutant ancestor). After allocating mutants, we simulated settling selection by probabilistically selecting groups, with survival weighted linearly by size. We iterated over five rounds of growth and size-dependent selection.\n\nWe recapitulate key dynamics from our experiments in this simple model. In the aggregative life cycle, selection readily acts on mutations that affect cellular growth rate (either favoring beneficial mutants or purging those that are deleterious; Figure 5A). In contrast, the clonal life cycle struggles to capture growth beneficial mutations- even mutants that doubled cellular growth rates went extinct ~40% of the time. When we examine mutations that increase group survival, we find that while they rarely go extinct in aggregative groups (Figure 5B), neither can they be efficiently selected upon (Figure 5C&D). In the clonal life cycle, even strongly group-beneficial mutants (e.g., increasing the probability of group survival 10-fold) go extinct far more often than not, as they are extremely susceptible to being lost in the first several rounds of the simulation when they are found in only a small number of groups. If they escape being lost by drift, however, they rapidly fix in the population (Figure 5C&D). Additionally, we show that these general results are robust to variation in the overall bottleneck size (Figure 5\u2014figure supplement 1). The clonal life cycle thus allows selection to act, albeit inefficiently, on group-survival beneficial mutations, while the aggregative life cycle is strongly biased in favor of capturing growth-enhancing mutations.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/84336/elife-84336-fig5-v1.jpg)\n\n**Figure 5.:** We examined the ability of organisms that develop clonally or aggregatively to fix mutations that increase growth rate (A) or group survival (B\u2013D). Aggregative organisms readily fixed growth beneficial mutations (A), but were unable to act upon group-beneficial mutations (B&C). In contrast, clonally-developing organisms were capable of fixing mutations that improve both growth and the survival of their group, though they faced far more stochastic loss of each type of beneficial mutation than floc. B-D show that clonal development stochastically loses even strongly group beneficial mutants a majority of the time due to sampling error (in D, sg = 10), but when these mutations persist beyond the first two rounds of selection, they rapidly fix. Note that 88% of the beneficial mutants within the clonal lineages went extinct in D.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/84336/elife-84336-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** We ran our model under different parameters of the bottleneck size (dictated by the dilution factor each day during size-based selection), X. We reran the simulations for Figure 5 with X=50 (a 2-fold smaller bottleneck han in our original model), and with a far less restrictrive bottleneck of X=1000. Variation in bottleneck size had little substantial effect on our overall model results. One notable change is that the proportion of sg mutants that go extinct in aggregative life cycles decreases for X=1000 as compared to X=100 (B, C, F, G, J, and K). This is because the odds of having multiple mutants in the same group has now increased, and they can greatly increase the probability that their group survives. This same effect causes sg mutants to spread faster in both life cycles (D, H, and L).\n\n## Discussion\n\nDuring the evolutionary transition to multicellularity, groups of cells become Darwinian individuals, capable of reproducing and possessing heritable variation in multicellular traits that affect fitness (Buss, 2014; Godfrey-Smith et al., 2013; Clarke, 2014; van Gestel and Tarnita, 2017; Libby and Rainey, 2013; Rainey and De Monte, 2014). Using a simple yeast model system, in which we engineered either an aggregative life cycle or one in which groups develop clonally, we used experimental evolution to examine how developmental mode impacts this evolutionary transition in individuality. Our two strains each differ from the common ancestor by a single mutation (loss of ACE2 for snowflake yeast, and gain of FLO1 functionality for floc), highlighting how initially trivial differences in the mode of group formation may underpin divergent evolutionary trajectories. The clonal multicellular life cycle, but not aggregation, allowed for efficient multicellular adaptation in response to selection on group-level traits, suggesting that in these populations there was a shift in the level of Darwinian individuality.\n\nWhile both clonally-developing snowflake yeast and aggregative floc evolved to settle faster in response to settling selection (forming larger, faster-settling clusters or flocs, respectively), only snowflake yeast showed a shift in the balance of selection from cells to groups. When competing evolved isolates against their ancestor, we found that snowflake yeast improved their fitness mainly during settling selection (a phase of the culture cycle that primarily reflects group-level properties), not the growth phase of the experiment (a period of the culture cycle that mainly reflects changes in cellular growth rate). Floc yeast adapted in the opposite manner, gaining a majority of their fitness increase during the growth phase, with little detectable increase in fitness during settling selection. When floc cells aggregate, they form groups with a genetic composition resembling the population as a whole. This low genetic assortment diminishes the ability for group-level selection to drive evolutionary change, impeding the transition to multicellular individuality.\n\nThe differential pattern of mutations in floc and snowflake yeast, informed by a simple mathematical model, highlights another significant impact of the mechanism of group formation: the rate of genetic drift. In floc yeast, natural selection efficiently acted on novel mutations, with fewer synonymous and intergenic mutations than expected by chance, and more missense mutations than expected by chance. As our method detects a divergence in the proportion of each mutation type from neutrality, these results could either be the result of selection against synonymous and intergenic mutations, selection for missense mutations, or both. While synonymous mutations may be non-neutral (Bailey et al., 2021; Shen et al., 2022), the vast majority of mutations that fix during microbial experimental evolution are nonsynonymous (Lang et al., 2013; Bailey et al., 2021), as these are often subject to positive selection (Good et al., 2017; Johnson et al., 2021). When we query all putative loss of function mutations that arose in our experiment in a genome-wide deletion collection grown on galactose (Giaever et al., 2002), we find that 46% of the mutations in floc are predicted to increase growth rates on this carbon source, in contrast to just 35% in snowflake yeast. This is consistent with selection on mutations affecting cellular growth rate being more efficacious in floc than snowflake yeast.\n\nSnowflake yeast, on the other hand, showed no statistical deviation from the expectations of neutrality. While initially surprising, this finding is consistent with group formation and selection playing a more central role in their evolution. Our model demonstrates that clonal development allows selection on group-level traits to be more efficacious, but simultaneously drives a much a higher overall rate of genetic drift, due to the higher probability that novel mutants will be lost during the group selection phase of the experiment. This result echoes prior theoretical work showing that the effective population size in a metapopulation is greatly reduced by strong among-deme selection, limited migration, and a small number of colonizing cells relative to carrying capacity (Whitlock and Barton, 1997).\n\nOur model highlights how the severity of genetic bottlenecking due to clonal development scales with organismal size, with larger organisms exacerbating drift. Relative to the standards of most extant multicellular organisms (Bell and Mooers, 1997), snowflake yeast are small. As a result, the realized disparity between clonal and aggregative development in many organisms may be considerably greater than what was observed in this paper. It is not yet clear what impact this has on the evolution of complex multicellularity. Reducing the ability for selection to act efficiently on cell-level fitness (i.e. growth rate) may relax constraints on the evolution of novel group-level traits that come at a cost to growth (Herron et al., 2009). In addition, relaxed selection can facilitate a broader search of potential trait space, which may open up novel adaptive routes that would have been constrained by strong selection. This may be especially important during an evolutionary transition in individuality, as the nature of the organism is being fundamentally reshaped and genotypes are presumably far from potential fitness optima. Indeed, relaxed selection appears to have played a central role in the evolution of larger and more complex genomes within eukaryotes (Lynch and Conery, 2003), freeing these populations from the ruthless efficiency of strong purifying selection.\n\nWhile floc and snowflake yeast differ starkly in evolutionary mode, our experiment was too short to examine long-term evolutionary consequences. Large scale change is possible in our system, but the evolution of macroscopic size appears to be much more challenging for snowflake yeast than in floc, requiring more innovation. Snowflake yeast must resolve fundamental biophysical challenges before they can form large groups, evolving larger size via three distinct biophysical mechanisms: reducing cellular density within clusters to limit cell-cell jamming, increasing the size and strength of the bonds connecting mother and daughter cells, and evolving branch entanglement so that group fracture requires breaking many cellular bonds, not just one (Bozdag et al., 2023). These innovations took 400\u2013600 serial transfers to evolve, and resulted in snowflake yeast that were 20,000 times larger than their ancestor, and 10,000 times more biomechanically tough. In contrast, evolving macroscopic size (Figure 2F) appears somewhat trivial for floc, likely due the relative ease and efficacy of increasing the strength of cell-cell adhesion.\n\nThere is an emerging consensus that clonal multicellular development provides the foundation upon which sustained multicellular adaptation may ultimately drive the evolution of dramatically increased multicellular complexity. This is supported by phylogenetic inference (Fisher et al., 2020; Fisher et al., 2013; King, 2004), first-principles theory (Tarnita et al., 2013; M\u00e1rquez-Zacar\u00edas et al., 2021; Ratcliff et al., 2017; van Gestel and Tarnita, 2017; Grosberg and Strathmann, 1998; Queller, 2000), and now, experimental evolution. In this paper, we show that only clonally developing snowflake yeast exhibited a shift in Darwinian individuality (Godfrey-Smith et al., 2013; Rose and Hammerschmidt, 2021), such that multicellular groups were the primary unit of selection, with increased fitness arising mainly via the group-selection phase of the life cycle. Aggregative floc, in contrast, behaved as a social unicellular organism, adapting in both phases of the experiment, but low assortment limited the potential fitness benefits of selection acting on groups. Persistent low genetic assortment during group formation presents a challenge to this evolutionary transition, blunting the impact of group-level selection, enabling within-group genetic conflict, and ultimately inhibiting a shift in the level of Darwinian individuality from cells to groups.\n\nAnd yet, aggregative multicellularity is clearly a successful life history strategy, evolving repeatedly in diverse lineages despite the issues described above. Our results thus raise a number of key questions for future research: how do lineages evolving aggregative multicellularity overcome the constraint of limited assortment? Is active kin recognition a pre-requisite to the evolution of multicellular individuality for aggregative life cycle, or can spatial structure generated by a patchy environment or viscous media like soil (Yanni et al., 2019) provide sufficiently high assortment for efficient, sustained multicellular adaptation? To this latter point, most lineages of aggregative multicellularity are terrestrial (Bonner, 1998; Fisher et al., 2020) - does this reflect the potential of for a highly structured environment to scaffold the origin of aggregative multicellularity (Black et al., 2020), or are there simply more ecological opportunities for a biphasic life cycle in terrestrial habitats? We still have only a rudimentary understanding of how key components of early multicellular life cycles (e.g. developmental mode, level of genetic assortment within groups, type and strength of selection on cellular and group-level traits, etc.) influence the evolution of multicellular complexity. Developing a robust, bottom-up understanding of multicellular evolution from first-principles theory will require the integration of multiple approaches- including mathematical modeling, fieldwork, and experiments incorporating both synthetic and naturally evolved multicellular organisms.\n\n## Methods\n\n### Strains and media\n\nStrains used in this study are listed in Table 1 and the construction of these is described in Pentz et al., 2020. Briefly, flocculant yeast were created by replacing the URA3 open reading frame (ORF) with the KAN-GAL1p::FLO1 cassette (Smukalla et al., 2008) and snowflake yeast were created by replacing the ACE2 ORF with the drug marker, KANMX. These genotypes were created from the same homozygous diploid unicellular ancestor (Saccharomyces cerevisiae strain Y55, accession JRIF00000000), so these strains differ only in their mode of cluster formation. All experiments were performed in rich medium composed of a mix of glucose and galactose (YPGal +Dex; per liter; 18 g galactose, 2 g glucose, 20 g peptone, 10 g yeast extract), shaking at 250 rpm at 30 \u00b0C. These growth conditions yield clusters of similar size after 24 h of growth.\n\n**Table 1.**\n Strains used in this study.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Strain</th>\n      <th>Relevant Genotype</th>\n      <th>Reference</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Snowflake</td>\n      <td>\u0394ace2::HYGMX / \u0394ace2::HYGMX</td>\n      <td>Pentz et al., 2020</td>\n    </tr>\n    <tr>\n      <td>Floc</td>\n      <td>\u0394ura3::KAN-GAL1p::FLO1 / \u0394ura3::KAN-GAL1p::FLO1</td>\n      <td>Pentz et al., 2020</td>\n    </tr>\n    <tr>\n      <td>Snowflake-GFP</td>\n      <td>\u0394lys2::TEF2p-yeGFP / \u0394lys2::TEF2p-yeGFP</td>\n      <td>Pentz et al., 2020</td>\n    </tr>\n    <tr>\n      <td>Floc-GFP</td>\n      <td>\u0394lys2::TEF2p-yeGFP / \u0394lys2::TEF2p-yeGFP</td>\n      <td>Pentz et al., 2020</td>\n    </tr>\n  </tbody>\n</table>\n\n### Experimental evolution\n\nTwenty replicate populations of both snowflake and floc yeast were initiated into 10 mL of YPGal +Dex from a single clone and grown overnight. Every 24 h, each population (40 populations total) was subjected to daily selection for settling for 5 min on the bench as described in Ratcliff et al., 2012. Briefly, 1.5 mL of each overnight culture was placed into a 2 mL microcentrifuge tube, left to settle on the bench for 5 min, after which the top 1.4 mL of culture was discarded. The remaining 100 \u00b5L of the pellet was transferred to a fresh tube containing 10 mL of culture media for the next round of growth and selection. Our selection regime yielded ~4\u20135 generations per day for both snowflake and floc yeast (Figure 4\u2014figure supplement 1). Every 7 days, whole populations were cryogenically stored at \u201380 \u00b0C. As a control, five populations of snowflake and floc yeast were evolved without settling selection for eight weeks. Specifically, five replicates of both snowflake and floc yeast were initiated as described above. Every 24 hr, each population (10 populations total) was briefly vortexed, then 100 \u00b5L was transferred to 10 mL of fresh medium. In the absence of settling selection, this would result in 6.6 generations of growth per day. The number of generations realized per transfer was lower than this upper ceiling (Figure 4\u2014figure supplement 1), because groups of cells surviving settling selection allow more biomass to be transferred. Whole populations were cryogenically stored at \u201380 \u00b0C every 7 days.\n\n### Measuring settling rate\n\nTo explore the dynamics of multicellular adaptation in floc and snowflake yeast populations, we measured the settling rate of each population every 7 days over the 24-week experiment. We thawed cryogenically-stored whole populations and subsequently inoculated 100 \u00b5L into 10 mL of YPGal +Dex and grew them for 24 hr. Then, 100 \u00b5L of overnight cultures was inoculated into fresh YPGal +Dex media and grown for an additional 24 hr. We measured the settling rate of populations as described in Pentz et al., 2020. Briefly, high-speed high-resolution videos of yeast populations settling in back-illuminated cuvettes were recorded using a Sony a7RII and 90 mm macro lens (24 fps, 3840x2,160 pixels). Then, custom scripts were used to determine the rate of yeast biomass displacement, or settling rate, based on changes in pixel densities over settling time (Pentz et al., 2020).\n\n### Phenotypic assessment of evolved populations\n\nSize distributions of evolved snowflake yeast were obtained via flow cytometry on a CyFlow Space flow cytometer using the forward scatter (FSC) channel as a proxy for cluster size. To account for the fact that larger clusters contain more biomass, we calculated a biomass-weighted mean size for each population. To do so, we developed a Python script that divides the distribution of cluster size into 100 bins, then determines the proportion of the population\u2019s total biomass that is found in each bin (sum of the FSC values for each cluster within that size range). This gives us a new distribution of the population\u2019s biomass across the range of cluster sizes. A sensitivity analysis showed that this algorithm is robust to bin size (Figure 2\u2014figure supplement 4) and the calculated means of the biomass-scaled distribution (reported in Figure 2A) are not affected by the bin size (Figure 2\u2014figure supplement 4).\n\nFlocculation efficiency was measured using the first frame from the timelapse videos used to measure settling rate in the week-24 evolved floc populations, as well as the ancestor (Pentz et al., 2020). The population is well-mixed in this frame, so floc aggregates will result in optically dense regions while the planktonic culture (single cells that are not in flocs) will be less optically dense. Thus, higher flocculation efficiency will result in a higher variance in the pixel density between floc aggregates and planktonic cells. A custom Python script was used to calculate the maximum variance in pixel density on four biological replicates for each population. A histogram of pixel brightness of the two floc populations with highest flocculation efficiencies (populations F7 and F18, see Figure 2G) showed that pixel opacity does not saturate at either high or low pixel values representing cells in dense flocs or un-flocculated cells (Figure 2\u2014figure supplement 2), respectively, showing that this approach broad enough dynamic range to determine flocculation efficiency.\n\n### Fitness competitions\n\nTo determine the fitness of evolved populations, a representative genotype was isolated from each population at the end of the experiment (24 weeks) by three rounds of single-colony selection on YPGal +Dex agarose plates (YPGal +Dex with 15 g/L agarose). Our selection regime is characterized by fluctuating periods of selection for growth and selection for rapid settling, or large size (Pentz et al., 2020; Ratcliff et al., 2012). Thus, it is important to measure fitness in both of these important life history traits. To do so, we quantified the fitness of evolved isolates relative to their ancestor over one round of growth and one round of settling selection. Specifically, to initiate competitions, we inoculated 10 mL cultures of YPGal +Dex with isolates from each population as well as a GFP-marked ancestor and grown for 24 hr. Then, we mixed each of the evolved isolates in equal volumes with its marked ancestor (floc or snowflake), and 100 \u00b5L of this mixture was inoculated into 10 mL of YPGal +Dex to start competitions. For snowflake competitions, whole cluster counts of the GFP-tagged ancestor and evolved isolate were obtained via flow cytometry using a CyFlow Space flow cytometer where GFP and non-GFP clusters can be distinguished using the FL1 fluorescence channel. For floc competitions, flocs were deflocculated using 50 mM EDTA (pH 7) prior to running on the flow cytometer, and cell counts of the GFP-tagged ancestor and evolved isolate were obtained similar to snowflake competitions. Counts were obtained at time 0 and after 24 hr of growth to determine the fitness of the evolved isolate over one period of growth. To measure fitness over one round of settling selection, 2 mL of the overnight mixed culture was aliquoted into a microcentrifuge tube, and 500 \u00b5L was used to determine pre-selection counts. The remaining 1.5 mL was used to perform one round of settling selection (5 min on the bench), after which the top 1.4 mL was discarded. The remaining bottom 100 \u00b5L was used to determine post-selection counts. In all competitions, relative fitness was calculated using the ratio of Malthusian growth parameters (Lenski et al., 1991). Relative fitness was normalized to the fitness of the ancestral strain for each environment.\n\nFitness was also measured for the five control populations of floc yeast relative to their ancestor over three transfers. Competitions were initiated as described above. Every 24 hr for 3 days, 100 \u00b5L was transferred to fresh medium. Counts at the beginning and end of the competition were obtained using flow cytometry as described above, and the relative fitness was calculated using the ratio of Malthusian growth parameters (Conlin and Ratcliff, 2016).\n\n### Floc assortment measurements\n\nTo calculate assortment, we co-cultured GFP-tagged evolved strains with an RFP-tagged ancestor. Strains were grown overnight at 30 \u00b0C in 10 mL of YP +1.8% galactose +0.2% dextrose. The next day, cultures were mixed by vortexing and a 1 mL sample was deflocculated by centrifuging and resuspending in 100 mM EDTA. To remove EDTA, which inhibits growth, strains were again centrifuged and resuspended in YP +1.8% galactose +0.2% dextrose. From this, 100 \u00b5L of each strain to be co-cultured were added to 10 mL of the same media to grow overnight at 30 \u00b0C. For imaging the next day, co-cultures were vortexed for 10 s, and 1.5 mL of culture was added to each of two tubes. One tube was for measuring the baseline population frequency of the two strains, and EDTA was added to a final concentration of 100 mM. The other tube for each co-culture was for settling selection, and was left on the bench for 5 min, then all but the bottom 100 uL was removed. The remaining 100 \u00b5L were deflocculated by adding EDTA to a final concentration of 200 mM. Both samples were concentrated by centrifugation, and a small sample was imaged with a 20 X microscope objective. Three images were taken for each sample. Cells in the red and green channels were counted using Otsu thresholding and watershedding in FIJI. Assortment was calculated using the following equation that controls for population frequency, where fset and fpop are the frequency of the evolved strain after settling selection and in the general population, respectively:\n\n$$\nAssortment=\\frac{f_{set}\u2212f_{pop}}{1\u2212f_{pop}}\n$$\n\n### Genomic DNA preparation\n\nTo determine the genetic basis of observed fitness differences, we performed whole-genome sequencing of 24-week evolved isolates and the starting ancestral genotypes. Yeast strains were streaked out for single colonies from \u201380 \u00b0C glycerol stocks. Single colonies were grown overnight in 10 mL YPGal +Dex and genomic DNA was isolated from 1 mL aliquots using the VWR Life Science Yeast Genomic DNA Purification Kit (VWR 89492\u2013616, https://us.vwr.com/).\n\n### Whole-genome sequencing\n\nDNA libraries were prepared using the NEBNext Ultra II FS DNA Library Prep Kit for Illumina (https://www.neb.com/) and were sequenced on an Illumina HiSeq 2500. Paired-end 150 bp reads were used for all samples. Mean coverage across the genome was 200 X for evolved isolate DNA and 50 X for ancestor DNA.\n\n### Sequencing analysis\n\nDNA sequences were quality trimmed using Trimmomatic (Bolger et al., 2014) and then aligned to the S288C reference genome R64-2-1 using the Burrows-Wheeler Aligner (Li and Durbin, 2010). Duplicates were marked using SAMBLASTER (Faust and Hall, 2014) then converted to a BAM file, then sorted and indexed. Variants were called using the Genome Analysis Tool Kit (GATK) HaplotypeCaller (McKenna et al., 2010). SNPs and INDELs were first filtered based on read depth and quality using vcffilter (https://github.com/vcflib/vcflib). Variants were removed with a read depth less than 10 and a quality score less than 20. Then, bcftools isec (https://github.com/samtools/bcftools, v1.18, RRID:SCR_002105; Danecek et al., 2021) was used to filter out variants shared between the ancestor and evolved isolates, accounting for variants called due to aligning S. cerevisiae strain Y55 used in our experiments to the S288C reference genome. Finally, bcftools isec was used again to identify unique variants for each evolved isolate. Variants were manually validated using the Integrated Genomics Viewer (Robinson et al., 2011). Final validated variants were pooled and annotated using SnpEff (Cingolani et al., 2012).\n\nNext, we performed a bootstrap analysis to compare the classes of variants called experimentally to a randomly generated sample of SNPs to determine if different mutational classes are over- or underrepresented in our experimental populations. First, we used Mutation-Simulator (K\u00fchl et al., 2021) to generate a null distribution of 100,000 random SNPs from across the S. cerevisiae S288C genome and annotated using SnpEff (Cingolani et al., 2012). Then, a custom Python script was used to perform a bootstrap analysis by first generating a random subsample of SNPs from the null distribution. The quantity of SNPs subsampled was equal to the pooled number of mutants seen experimentally for either snowflake or floc yeast (69 or 104 mutations, respectively). Next, we compared the number of SNPs in four mutational classes (missense, nonsense, synonymous/silent, and upstream gene variant) generated experimentally or simulated. We performed the bootstrap analysis 1000 times each for snowflake and floc yeast. Histograms for the number of simulated SNPs generated for different mutational classes in the bootstrap analysis can be seen in Figure 4C (experimental number shown as vertical blue and orange lines for snowflake and floc yeast, respectively). Finally, we determined the proportion (P) of runs where the # observed mutations > # simulated mutations and the P # observed mutations <simulated mutations (see Figure 4C). The code for the Python script is available at GitHub (https://github.com/gabe-dubose/emus; copy archived at DuBose, 2023).\n\n### Mathematical modeling\n\nWe consider the survival and fixation of mutant lineages by distinguishing between two phases of the experiment between transfers: the population growth phase and the settling selection phase. During the population growth phase, we assume that both the mutant and ancestral lineages reproduce exponentially until the total population increases by a factor of 100, that is they reach the carrying capacity. So if the initial population is I and there are m mutants, we assume the population grows via $I-me^{\\lambdat}+me^{\\lambda1+s_{c}t}$ , where the sign of sc determines whether the mutation is beneficial (sc >0) or deleterious (sc <0). We compute the number of mutants at carrying capacity and then place them in groups, according to whether we are simulating clonal or aggregative development. In the case of clonal development, we note that because of the branching pattern of snowflake yeast there can only be a maximum of one group that is mixed with mutant and ancestral lineages Ratcliff et al., 2015; Libby et al., 2014; all other groups with mutant cells are homogeneously mutant. We can simulate the distribution of mutants in groups of varying sizes by either tuning computational models of populations of snowflake yeast to fit experimental data or, instead, by directly using experimental data of group size distributions. We use the latter because it can easily be modified to consider aggregative development. Thus, for clonal development, we randomly select groups to place mutants. If there will be more mutant cells generated during growth (in this scenario, we are generating 100 mutant cells during the growth phase) than the size of the group, then the entire group is filled with mutant cells and a new group is selected to receive mutants, and so on until all mutant cells are allocated. In the case of aggregative development, we also use an experimentally derived distributions of group sizes but we select groups randomly weighted by their size to place individual mutant cells.\n\nWe simulate the settling selection phase of the experiment by randomly selecting groups weighted linearly by their size. For mutations that alter the survival of groups we assume that each mutant contributes an additional factor sg to the size of the group, that is the weight of a group is its size plus sg*m, or equivalently if there are n ancestral cells the weight is n+(1+sg)*m. We then select groups randomly without replacement according to this weight until we have selected 1/100th of the population. If the number of cells exceeds 1/100th of the population we simply rescale the selected number of cells to fit. Following selection, we compute the number of surviving mutants and, if they exceed 0, we return to the growth phase. We iterate this process five times.\n",
+      "created_at": "2025-12-04T03:40:00.490755Z"
+    },
+    {
+      "id": "97fac75c-5073-480e-ba78-a4507e3ef0b3",
+      "submission_id": "62d18f44-9d40-4911-9cdc-480c17ee9e5e",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Sara Mitri, https://ror.org/019whta54 University of Lausanne Switzerland\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.84336.sa0](https://doi.org/10.7554/eLife.84336.sa0)\n\nThis study provides fundamental insight into the evolution of multicellularity by experimentally demonstrating that yeast strains that form clonal groups evolve stronger group traits than ones that aggregate into non-clonal groups. Through modeling and analysis of the mutations accumulated during the experiment, this paper provides compelling evidence in support of clonal development favoring selection at the group rather than the cellular level.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Sara Mitri, https://ror.org/019whta54 University of Lausanne Switzerland\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.84336.sa1](https://doi.org/10.7554/eLife.84336.sa1)\n\nOur editorial process produces two outputs: i) public reviews designed to be posted alongside the preprint for the benefit of readers; ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\n[Editors\u2019 note: the authors submitted for reconsideration following the decision after peer review. What follows is the decision letter after the first round of review.]\n\nThank you for submitting the paper \"Evolutionary consequences of nascent multicellular life cycles\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, including Sara Mitri as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by a Senior Editor. The following individual involved in the review of your submission has agreed to reveal their identity: Mar\u00eda Rebolleda-G\u00f3mez (Reviewer #3).\n\nComments to the Authors:\n\nFirst, I would like to sincerely apologize for how long it has taken to get back to you. We are also sorry to say that, after consultation with the reviewers, we have decided that this work will not be considered further for publication by eLife.\n\nEven though two reviewers were very positive about the paper, one maintained that there were flaws with the experimental design. The first issue is that previous work has already demonstrated that selection for settling selects for Snowflake, not Floc, which makes it unsurprising that Snowflake is fitter than Floc under these same selective conditions. The second main criticism was regarding the way in which the two strains were created: the use of the GAL1 promoter may disadvantage the FLO1 strain such that the observed results are not due to inherent differences between aggregative and clonal multicellularity but are instead due to differences in strain background. We hope that the reviews, in addition to the lengthy discussion, which I have appended below, will be useful for you to revise the paper and resubmit it elsewhere.\n\nReviewer #1 (Recommendations for the authors):\n\nI was very impressed by the experimental design and the scale of the experiments. My recommendations are all minor and/or because of interest, rather than being required for acceptance.\n\nFirst, I found it interesting that the two strains differ only by 2 mutations. This means that the two potential evolutionary paths are actually very close together in origin. Does this have any significance for the evolution of multicellularity in yeast or is the selection regime too artificial to draw conclusions about these mutants in a natural environment? It might be interesting to add a few sentences on this to the Discussion section.\n\nAnother general comment I had was whether sedimentation is so obviously a group trait (L. 190-191). Although I am not so familiar with the literature, I know that this approach has been used for many years now, but is it that well-accepted? For example, the hydrodynamic profile was mentioned as something that could enhance sedimentation but sounds like an individual trait. This assumption is key to the whole conclusion of the paper, otherwise, it would not be justified to call it an evolutionary path towards multicellularity. In this sense, I find a bit strong in L. 460 to call selection for sedimentation \"a shift in biological individuality\".\n\nEven though there is a section entitled \"bottlenecks in the life cycle\", bottleneck size is not being varied. Given that one of the main hypotheses of the model is that a strong bottleneck is what results in drift, it would be interesting to run a few more simulations to show that an increased bottleneck would lead to the stronger selection. The result is of course already known from the literature, but it would be good to verify that this occurs here.\n\nA final point that could be discussed a bit more was the choice to pick single clones from each line. Is it possible that the single isolates you picked from each population may be cheaters, in particular in the floc lines? I understand that using 20 lines for each treatment protects to some extent against this, but it would be good to think about what this means statistically (e.g. if the majority of the population in an aggregate are cheaters, if there is some frequency-dependent selection, then in most lines you would miss the cooperators).\n\nReviewer #2 (Recommendations for the authors):\n\nThis study has a few fundamental flaws that substantially limit what can be concluded.\n\n1) The logic and interpretation of the selection and fitness experiments are circular.\n\n1a) The logic of the experiment is circular. As demonstrated previously by the authors, settling/centrifugation-based selection overwhelmingly selects Snowflake, not Floc.\n\nHowever, the key points of this paper, is that using this selection regimen, they find that Snowflake is fitter than Floc under these selective conditions. Thus, the authors use a roundabout way to demonstrate that this selective regimen selects for Snowflake, not Floc, a fact already demonstrated.\n\n1b) Related to point #1a, the second issue not considered is developmental constraints. For reasons that are unclear, Floc- yeast overwhelming seems to be selected for Snowflake. Thus, the cellular arrangements that promote this morphology are part of the evolutionary fitness valley that this strain is in that is highly optimal for this selective regimen. Indeed, the authors describe this in excellent detail in the discussion (that cellular connections matter for evolving Snowflake vs. Floc). Likewise, Floc in this regimen selects for stronger Floc, which is also in a fitness valley of its own. The selection regimen pushes these further into their fitness valleys that are sub-optimal under these selective conditions. Thus, the authors are not comparing the fitness of cellular-based undifferentiated multicellular versus aggregative undifferentiated multicellularity, they instead are measuring the fitness differences of the valleys these selected strains are in (and pushed further into), which again, as in point #1a overwhelmingly selects for Snowflake, not Floc. Thus, comparing an evolved strain optimized for selective conditions versus an evolved strain sub-optimal to the selective conditions.\n\n1c) The key missing experiment is to reverse the selection. I.e. put Snowflake and Floc into a selective regimen that selects for Floc and asks which strain is fitter. However, should Floc be fitter in these conditions, it would demonstrate the null hypothesis here, which is that \"you get what you select for\". Without doing the experiment itself, however, interpreting the experiment as presented ends up being incomplete. This doesn't even get into more complicated selective regimens with something like predators and mouth/feeding size limits.\n\n1d) One of the key points that do seem evident is that different modes of selection for the undifferentiated multicellular act at different levels (cell vs group). However, this is largely known as different developmental mechanisms of multicellularity are known to cell vs. group level selected. This experiment does demonstrate this point de novo, though the results are not unexpected.\n\n2) This experiment, due to point #1, lacks generalizability. Modeling helps with generalizability, but I think empirical data is critical and easily obtainable here.\n\n2a) Part of the way to address this would be by addressing point 1 above.\n\n2b) The most logical experiment would be to repeat these experiments in a related system \"multicellular\" system under different selective conditions and ask which morphology is fitter. Some of the authors have previously selected multicellular Chlamydomonas. Or transitioning the experiments to Dictyostelium and selecting at different stages of its life cycle. One or both of these would be highly powerful in generalizing the potential findings.\n\n3) What happens when selection is relaxed?\n\n3a) One of the claims is that resources during growth vs. cell division are where selection is operating, but what happens when this is relaxed? Loss of the undifferentiated multicellularity at different rates when selection is relaxed would be highly informative as to which strain is fitter.\n\n3b) One of the key things would be that in many organisms, motility will play a very large role in selection. As most unicellular Eukaryotes are motile (and their multicellular relatives \u2013 e.g. Chlamy and Dicty above), thus the fitness of group vs. individual may be substantially different when motility is taken into account.\n\n3c) One potential aspect of this is the balance of epigenetic vs. genetic changes given the results of the genome re-sequencing analysis. I.e. group level trains may be selected at the genetic level, while epigenetic traits may be selected at the cellular level or vice-versa thereby complicating the conclusion of this work. The authors do indeed directly state this in lines 444-445 \"While floc and snowflake yeast differ starry in evolutionary mode, our experiment was too short to examine the long-term evolutionary consequences\". Which, if these facts are unknown, makes interpretation of the findings in this paper difficult to place especially given the nature of only examining one selective condition.\n\nReviewer #3 (Recommendations for the authors):\n\nL. 92: Given that you do not explain yet that you are selecting for sinking, this sentence comes a little out of the blue (there are many other possible drivers of multicellularity). And given the start of the next paragraph, maybe it makes sense to specify that size selection is performed through settling.\n\nL. 147 How is this affected by cell density \u2013 I understand that you are using the coefficient of variation to standardize over different densities, but I wonder if your pixel opacity saturates at a certain density (this is not a problem in comparing your ancestor to evolved because the differences are very clear, but it could be a problem between similar looking flocculation efficiencies). I wonder if instead, you could normalize pixel heterogeneity by cell number in some way.\n\nFigure 2. \u2013 Change the ancestor reference line to have smaller dashes, or make it a different color. Dashes are the same width as the error bars and very similar to the width of the bars in the bar plot, making it visually harder to read the plot.\n\nLine 534 \u2013 How robust is the algorithm to bin size?\n\nIt is not clear to me how competitions of snowflakes were performed \u2013 cell counts on a flow-cytometer? How did you perform the counts?\n\nLine 328 \u2013 explain better why this is the case\n\nThis is beside the point, but I found interesting the last sentence\u2026 how can one get at first principles from fieldwork? Fieldwork helps us constrain the parameter space to what happens in nature, but I do not know if it is possible to get first principles when many things are all varying at once.\n",
+      "created_at": "2025-12-04T03:40:00.490755Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T03:40:00.490755Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T03:40:00.490755Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "352b931d-7a39-4996-911c-e42032da98a3",
+      "content_id": "c54a4dda-7c0b-415c-8c83-0fef04cc9dd1",
+      "claim_id": "C1",
+      "claim": "Multicellularity has evolved more than 50 times across the tree of life.",
+      "claim_type": "EXPLICIT",
+      "source": "Multicellularity has evolved more than 50 times across the tree of life (Umen and Herron, 2021; Grosberg and Strathmann, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Umen and Herron, 2021 and Grosberg and Strathmann, 2007",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:40:00.490755Z"
+    },
+    {
+      "id": "0cde993a-445e-4204-9bbc-65b8eb0de9dc",
+      "content_id": "c54a4dda-7c0b-415c-8c83-0fef04cc9dd1",
+      "claim_id": "C2",
+      "claim": "Complex multicellularity has only evolved in lineages that develop clonally.",
+      "claim_type": "EXPLICIT",
+      "source": "'complex multicellularity' (Knoll, 2011; e.g. plants, animals, fungi, red algae and brown algae) has only evolved in lineages that develop clonally (Brunet and King, 2017; Knoll, 2011; Fisher et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Brunet and King, 2017; Knoll, 2011; Fisher et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:40:00.490755Z"
+    },
+    {
+      "id": "a595e157-928e-4e05-9ce7-22f299924e17",
+      "content_id": "c54a4dda-7c0b-415c-8c83-0fef04cc9dd1",
+      "claim_id": "C3",
+      "claim": "Clonal development prevents intra-organism genetic conflict by limiting within-group genetic diversity.",
+      "claim_type": "EXPLICIT",
+      "source": "By limiting within-group genetic diversity, clonal development prevents intra-organism genetic conflict, as there is little standing within-group genetic variation for selection to act on Buss, 2014; Maynard Smith and Szathmary, 1997; Clarke, 2014.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Buss, 2014; Maynard Smith and Szathmary, 1997; Clarke, 2014",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:40:00.490755Z"
+    },
+    {
+      "id": "865a9560-7176-4a71-876c-943e7ac62c95",
+      "content_id": "c54a4dda-7c0b-415c-8c83-0fef04cc9dd1",
+      "claim_id": "C4",
+      "claim": "Snowflake yeast were created by knocking out ACE2 in a unicellular ancestor.",
+      "claim_type": "EXPLICIT",
+      "source": "We created clonal 'snowflake yeast' by knocking out ACE2 in a unicellular ancestor (Ratcliff et al., 2017; Pentz et al., 2020)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Ratcliff et al., 2017; Pentz et al., 2020",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:40:00.490755Z"
+    },
+    {
+      "id": "27ee087c-96ff-4a34-b3ba-3ef67e7dfd83",
+      "content_id": "c54a4dda-7c0b-415c-8c83-0fef04cc9dd1",
+      "claim_id": "C5",
+      "claim": "Aggregative floc yeast were created by placing the FLO1 gene under transcriptional control of the GAL1 promoter.",
+      "claim_type": "EXPLICIT",
+      "source": "aggregative 'floc' yeast (GAL1p::FLO1 /GAL1p::FLO1)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Described in the abstract and methods sections",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:40:00.490755Z"
+    },
+    {
+      "id": "ff4d9264-7e0d-47d0-97f6-21c20f296b18",
+      "content_id": "c54a4dda-7c0b-415c-8c83-0fef04cc9dd1",
+      "claim_id": "C6",
+      "claim": "Twenty replicate populations of both snowflake and floc yeast were evolved for 24 weeks.",
+      "claim_type": "EXPLICIT",
+      "source": "We evolved 20 replicate populations of otherwise isogenic clonally reproducing 'snowflake' yeast (\u0394ace2/\u2206ace2) and aggregative 'floc' yeast (GAL1p::FLO1 /GAL1p::FLO1) with daily selection for rapid growth in liquid media",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Described in the abstract and experimental evolution methods",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:40:00.490755Z"
+    },
+    {
+      "id": "7ae822a4-7037-4c80-8643-d00fb616ca11",
+      "content_id": "c54a4dda-7c0b-415c-8c83-0fef04cc9dd1",
+      "claim_id": "C7",
+      "claim": "Both snowflake yeast and floc evolved to settle significantly faster over 24 weeks.",
+      "claim_type": "EXPLICIT",
+      "source": "Both snowflake yeast and floc evolved to settle significantly faster (one-way ANOVA; floc: F23,456=16.57, p<0.0001; snowflake: F23,456=13.65, p<0.0001, pairwise differences assessed with Tukey's post-hoc HSD with \u03b1=0.05).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by statistical analysis of experimental data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:40:00.490755Z"
+    },
+    {
+      "id": "866a7da5-922e-4f3b-b9ed-b4a34a01d5ed",
+      "content_id": "c54a4dda-7c0b-415c-8c83-0fef04cc9dd1",
+      "claim_id": "C8",
+      "claim": "Floc exhibited a 12-fold increase in settling rate after 24 weeks.",
+      "claim_type": "EXPLICIT",
+      "source": "Floc, however, exhibited a much larger increase in settling rate than snowflake yeast (12-fold increase vs 1.3-fold increase after 24 weeks, respectively, Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental measurements shown in Figure 1C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:40:00.490755Z"
+    },
+    {
+      "id": "3df3d141-8bed-4b83-b4bb-287e914a95bb",
+      "content_id": "c54a4dda-7c0b-415c-8c83-0fef04cc9dd1",
+      "claim_id": "C9",
+      "claim": "Snowflake yeast exhibited a 1.3-fold increase in settling rate after 24 weeks.",
+      "claim_type": "EXPLICIT",
+      "source": "Floc, however, exhibited a much larger increase in settling rate than snowflake yeast (12-fold increase vs 1.3-fold increase after 24 weeks, respectively, Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental measurements shown in Figure 1C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:40:00.490755Z"
+    },
+    {
+      "id": "307a498b-1c9e-4f64-bdb1-0396502582fa",
+      "content_id": "c54a4dda-7c0b-415c-8c83-0fef04cc9dd1",
+      "claim_id": "C10",
+      "claim": "Evolved snowflake yeast increased their biomass weighted mean forward scatter by an average of 33%.",
+      "claim_type": "EXPLICIT",
+      "source": "Biomass weighted mean forward scatter (a proxy for group size) increased by an average of 33% (Figure 2A and B; one-sided t-test, t=7.48, n=24, p<0.0001; non-overlayed histograms for individual snowflake isolates shown in Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by flow cytometry data and statistical analysis shown in Figure 2A and B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:40:00.490755Z"
+    },
+    {
+      "id": "b3b51edc-782b-4a97-989f-94192858057a",
+      "content_id": "c54a4dda-7c0b-415c-8c83-0fef04cc9dd1",
+      "claim_id": "C11",
+      "claim": "Thirteen floc populations showed significantly increased flocculation efficiency relative to the ancestor.",
+      "claim_type": "EXPLICIT",
+      "source": "Thirteen populations showed significantly increased flocculation efficiency relative to the ancestor (one-way ANOVA, F(20,46)=45.53, p<0.0001, pairwise differences assessed with Tukey's honestly significant difference [HSD] with \u0251=0.05).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by statistical analysis of experimental data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:40:00.490755Z"
+    },
+    {
+      "id": "3dda26b9-b843-4eb4-8d44-c74b4290217e",
+      "content_id": "c54a4dda-7c0b-415c-8c83-0fef04cc9dd1",
+      "claim_id": "C12",
+      "claim": "Floc yeast showed a 15% average fitness increase over their ancestor.",
+      "claim_type": "EXPLICIT",
+      "source": "Floc yeast showed a significantly higher increase in fitness than snowflake yeast, increasing by an average of 15% as opposed to 7%, respectively (Figure 3A first panel: one-sample t-test, n=20, p<0.0001).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by competition experiments shown in Figure 3A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:40:00.490755Z"
+    },
+    {
+      "id": "bbe6d314-a371-499a-a980-ff86e581ea98",
+      "content_id": "c54a4dda-7c0b-415c-8c83-0fef04cc9dd1",
+      "claim_id": "C13",
+      "claim": "Snowflake yeast showed a 7% average fitness increase over their ancestor.",
+      "claim_type": "EXPLICIT",
+      "source": "Floc yeast showed a significantly higher increase in fitness than snowflake yeast, increasing by an average of 15% as opposed to 7%, respectively (Figure 3A first panel: one-sample t-test, n=20, p<0.0001).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by competition experiments shown in Figure 3A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:40:00.490755Z"
+    },
+    {
+      "id": "f7a1ada3-4f11-47b8-a49d-71c3211b7c5c",
+      "content_id": "c54a4dda-7c0b-415c-8c83-0fef04cc9dd1",
+      "claim_id": "C14",
+      "claim": "Floc yeast showed a 24% fitness advantage during growth.",
+      "claim_type": "EXPLICIT",
+      "source": "Floc yeast showed a significant fitness advantage during growth (Figure 3A; mean increase = 24%, one-sample t-test, n=20 t=10.55, p<0.0001)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by competition experiments shown in Figure 3A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:40:00.490755Z"
+    },
+    {
+      "id": "2159b7a8-d302-47ba-82b9-f0b5410aa3b8",
+      "content_id": "c54a4dda-7c0b-415c-8c83-0fef04cc9dd1",
+      "claim_id": "C15",
+      "claim": "Floc yeast showed only a 3% fitness advantage during settling selection, which was not statistically significant.",
+      "claim_type": "EXPLICIT",
+      "source": "but despite settling an average of 12-fold faster than their ancestor when grown in monoculture, were only slightly significantly more fit than their ancestor during settling selection (Figure 3A; mean increase = 3%, one-sample t-test, n=20, t=1.633, p=0.12).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by competition experiments shown in Figure 3A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:40:00.490755Z"
+    },
+    {
+      "id": "fa94c449-2482-46f8-bd0c-c419d6b1cd65",
+      "content_id": "c54a4dda-7c0b-415c-8c83-0fef04cc9dd1",
+      "claim_id": "C16",
+      "claim": "Snowflake yeast displayed a 5.5% fitness benefit during growth.",
+      "claim_type": "EXPLICIT",
+      "source": "Snowflake yeast displayed the opposite behavior, possessing a 5.5% fitness benefit during growth (Figure 3A; one-sample t-test, n=20, t=8.374, p<0.0001)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by competition experiments shown in Figure 3A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:40:00.490755Z"
+    },
+    {
+      "id": "408daa23-ba7c-4c20-b703-7d2551c706fd",
+      "content_id": "c54a4dda-7c0b-415c-8c83-0fef04cc9dd1",
+      "claim_id": "C17",
+      "claim": "Snowflake yeast displayed a 28% fitness advantage during settling selection.",
+      "claim_type": "EXPLICIT",
+      "source": "and a 28% fitness advantage over their ancestor during settling selection (Figure 3A; one-sample t-test, n=20, t=10.29, p<0.0001).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by competition experiments shown in Figure 3A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:40:00.490755Z"
+    },
+    {
+      "id": "5514d113-a3b5-4ad0-869d-522dafd6dc8e",
+      "content_id": "c54a4dda-7c0b-415c-8c83-0fef04cc9dd1",
+      "claim_id": "C18",
+      "claim": "Only 2 out of 20 floc populations had detectably higher fitness than their ancestor during settling selection.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite floc as an overall treatment group not having higher fitness during settling selection, isolates from 2/20 replicate populations did have detectably higher fitness than their ancestor when competing during settling selection (F20,63=4.528, p<0.0001, multiple comparisons controlled by a Bonferroni correction with overall \u03b1=0.05, the same two populations were identified using a Dunnett's test against an ancestor:ancestor control).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by statistical analysis of competition experiments",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:40:00.490755Z"
+    },
+    {
+      "id": "9aaca258-26b4-4188-97fd-cdf2c280adbf",
+      "content_id": "c54a4dda-7c0b-415c-8c83-0fef04cc9dd1",
+      "claim_id": "C19",
+      "claim": "12 out of 20 snowflake populations significantly increased fitness during settling selection.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, 12/20 snowflake populations significantly increased fitness during settling selection (F20,63=4.89, p<0.0001, multiple comparisons controlled using a Dunnett test against ancestor:ancestor control).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by statistical analysis of competition experiments",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:40:00.490755Z"
+    },
+    {
+      "id": "80b29b4b-b6ce-4982-a1dc-1fadb60fee12",
+      "content_id": "c54a4dda-7c0b-415c-8c83-0fef04cc9dd1",
+      "claim_id": "C20",
+      "claim": "Overall assortment in floc was relatively low with a mean of 0.06 across five randomly-selected strains.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall assortment in floc was relatively low (mean of five randomly-selected strains from Figure 3B was 0.06), though there was significant among-strain variation (one-way ANOVA, F4,10=4.159, p=0.008).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by assortment measurements shown in Figure 3B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:40:00.490755Z"
+    },
+    {
+      "id": "33a172eb-8049-434d-91d8-85bb5ec8271e",
+      "content_id": "c54a4dda-7c0b-415c-8c83-0fef04cc9dd1",
+      "claim_id": "C21",
+      "claim": "Snowflake yeast canonically have an assortment of 1.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, snowflake yeast canonically have an assortment of 1 (when competing two strains, every group is entirely clonal Figure 2\u2014figure supplement 3; Pentz et al., 2020)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by citation to Pentz et al., 2020 and Figure 2\u2014figure supplement 3",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:40:00.490755Z"
+    },
+    {
+      "id": "41e77780-42c8-40d6-888d-4d97652e89f6",
+      "content_id": "c54a4dda-7c0b-415c-8c83-0fef04cc9dd1",
+      "claim_id": "C22",
+      "claim": "Floc yeast accumulated more mutations than snowflake yeast, an average of 5 vs 3 mutations per genotype, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Floc yeast accumulated more mutations than snowflake yeast, an average of 5 vs 3 mutations per genotype, respectively (Figure 4A; two-tailed t-test, t=2.49, n=40, p=0.017).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by whole-genome sequencing data shown in Figure 4A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:40:00.490755Z"
+    },
+    {
+      "id": "ce7e206e-90f2-4b38-b2b7-23773873290b",
+      "content_id": "c54a4dda-7c0b-415c-8c83-0fef04cc9dd1",
+      "claim_id": "C23",
+      "claim": "The overall pattern of mutations observed in snowflake yeast were not distinguishable from drift.",
+      "claim_type": "EXPLICIT",
+      "source": "The overall pattern of mutations observed in snowflake yeast were not distinguishable from drift, with the number of mutations in each of the four categories being near the mean of the expectation under selective neutrality (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by comparison to null model simulations shown in Figure 4C",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:40:00.490755Z"
+    },
+    {
+      "id": "15e4dbbd-bb55-4304-9f7e-24f93339affc",
+      "content_id": "c54a4dda-7c0b-415c-8c83-0fef04cc9dd1",
+      "claim_id": "C24",
+      "claim": "The mutations in floc yeast show a strong signature of selection.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the mutations in floc yeast show a strong signature of selection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by comparison to null model showing more missense mutations and fewer synonymous and intergenic mutations than expected",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:40:00.490755Z"
+    },
+    {
+      "id": "9c89e82e-d581-42fa-b48c-0ff079911e82",
+      "content_id": "c54a4dda-7c0b-415c-8c83-0fef04cc9dd1",
+      "claim_id": "C25",
+      "claim": "Floc yeast observed more missense mutations than expected based on drift.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed more missense mutations than expected based on drift (there was a 3% chance of observing at least this many missense mutations in our null model).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by comparison to null model simulations",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:40:00.490755Z"
+    },
+    {
+      "id": "f9ca74e1-e54b-49ea-9d16-4f5b7f1ca647",
+      "content_id": "c54a4dda-7c0b-415c-8c83-0fef04cc9dd1",
+      "claim_id": "C26",
+      "claim": "Floc yeast observed fewer synonymous mutations than expected based on the null model.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, we observed fewer synonymous mutations and fewer mutations in intergenic regions than expected based on our null model (in both cases, there was a 3% chance of observing this many mutations or fewer in our null model).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by comparison to null model simulations",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:40:00.490755Z"
+    },
+    {
+      "id": "d4dcc35e-34a7-43cb-8108-cbd92a403a71",
+      "content_id": "c54a4dda-7c0b-415c-8c83-0fef04cc9dd1",
+      "claim_id": "C27",
+      "claim": "Floc yeast observed fewer mutations in intergenic regions than expected based on the null model.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, we observed fewer synonymous mutations and fewer mutations in intergenic regions than expected based on our null model (in both cases, there was a 3% chance of observing this many mutations or fewer in our null model).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by comparison to null model simulations",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:40:00.490755Z"
+    },
+    {
+      "id": "0e0208fb-aeee-4942-bfd9-e5c5dc09ca2c",
+      "content_id": "c54a4dda-7c0b-415c-8c83-0fef04cc9dd1",
+      "claim_id": "C28",
+      "claim": "Seven parallel missense mutations in GAL2 arose independently in floc.",
+      "claim_type": "EXPLICIT",
+      "source": "We saw seven parallel missense mutations in GAL2, a transmembrane galactose permease, which may increase the amount of galactose entering the cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by whole-genome sequencing data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:40:00.490755Z"
+    },
+    {
+      "id": "67531ca9-5c33-46d7-83f6-898b224cc3a6",
+      "content_id": "c54a4dda-7c0b-415c-8c83-0fef04cc9dd1",
+      "claim_id": "C29",
+      "claim": "Only a single GAL2 mutant arose in snowflake yeast.",
+      "claim_type": "EXPLICIT",
+      "source": "We saw only a single GAL2 mutant (in contrast to seven arising independently in floc, Supplementary file 2), which is consistent with less growth rate adaptation in snowflake yeast.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by whole-genome sequencing data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:40:00.490755Z"
+    },
+    {
+      "id": "e494c774-4d68-4d17-bf89-86fafe4c7409",
+      "content_id": "c54a4dda-7c0b-415c-8c83-0fef04cc9dd1",
+      "claim_id": "C30",
+      "claim": "Five parallel missense mutations in FLO1 were observed in floc yeast.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with flocculation itself being under selection, we saw five parallel missense mutations in FLO1, and four in MSN1, a transcriptional activator of another major flocculin gene, FLO11 (Fichtner et al., 2007; van Dyk et al., 2005; Bayly et al., 2005; Supplementary file 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by whole-genome sequencing data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:40:00.490755Z"
+    },
+    {
+      "id": "87eaecd4-f976-4985-874b-7354fdff0a2b",
+      "content_id": "c54a4dda-7c0b-415c-8c83-0fef04cc9dd1",
+      "claim_id": "C31",
+      "claim": "Four parallel missense mutations in MSN1 were observed in floc yeast.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with flocculation itself being under selection, we saw five parallel missense mutations in FLO1, and four in MSN1, a transcriptional activator of another major flocculin gene, FLO11 (Fichtner et al., 2007; van Dyk et al., 2005; Bayly et al., 2005; Supplementary file 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by whole-genome sequencing data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:40:00.490755Z"
+    },
+    {
+      "id": "6013a253-427d-451d-b2ef-047eb19a7eae",
+      "content_id": "c54a4dda-7c0b-415c-8c83-0fef04cc9dd1",
+      "claim_id": "C32",
+      "claim": "Floc yeast evolved for eight weeks with only growth rate selection showed a 20.7% increase in fitness during the growth phase.",
+      "claim_type": "EXPLICIT",
+      "source": "These controls evolved a 20.7% increase in fitness during the growth phase, but evolved a 40% decrease in flocculation efficiency (Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by control experiment data shown in Figure 4\u2014figure supplement 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:40:00.490755Z"
+    },
+    {
+      "id": "1191202f-c275-4784-a481-ef26032aba23",
+      "content_id": "c54a4dda-7c0b-415c-8c83-0fef04cc9dd1",
+      "claim_id": "C33",
+      "claim": "Floc yeast evolved for eight weeks with only growth rate selection showed a 40% decrease in flocculation efficiency.",
+      "claim_type": "EXPLICIT",
+      "source": "These controls evolved a 20.7% increase in fitness during the growth phase, but evolved a 40% decrease in flocculation efficiency (Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by control experiment data shown in Figure 4\u2014figure supplement 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:40:00.490755Z"
+    },
+    {
+      "id": "de7b09c3-75e7-428a-aca9-e5087a58be45",
+      "content_id": "c54a4dda-7c0b-415c-8c83-0fef04cc9dd1",
+      "claim_id": "C34",
+      "claim": "Cell-level adaptation to growth on galactose does not drive increased flocculation as a pleiotropic side-effect.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that cell-level adaptation to growth on galactose does not drive increased flocculation as a pleiotropic side-effect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by control experiment showing decreased flocculation with growth-only selection",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:40:00.490755Z"
+    },
+    {
+      "id": "dc47ca8d-8deb-4527-be9c-a1583eb6707b",
+      "content_id": "c54a4dda-7c0b-415c-8c83-0fef04cc9dd1",
+      "claim_id": "C35",
+      "claim": "In the clonal life cycle, selection readily acts on mutations that affect cellular growth rate.",
+      "claim_type": "IMPLICIT",
+      "source": "In the aggregative life cycle, selection readily acts on mutations that affect cellular growth rate (either favoring beneficial mutants or purging those that are deleterious; Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inferred from modeling results shown in Figure 5A",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:40:00.490755Z"
+    },
+    {
+      "id": "598ee63e-5bf8-4983-b6a0-30a7480d4ff7",
+      "content_id": "c54a4dda-7c0b-415c-8c83-0fef04cc9dd1",
+      "claim_id": "C36",
+      "claim": "In the aggregative life cycle, selection readily acts on mutations that affect cellular growth rate.",
+      "claim_type": "EXPLICIT",
+      "source": "In the aggregative life cycle, selection readily acts on mutations that affect cellular growth rate (either favoring beneficial mutants or purging those that are deleterious; Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by modeling results shown in Figure 5A",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:40:00.490755Z"
+    },
+    {
+      "id": "d81f95db-56e4-420c-8a8d-1bac6636c2af",
+      "content_id": "c54a4dda-7c0b-415c-8c83-0fef04cc9dd1",
+      "claim_id": "C37",
+      "claim": "In the clonal life cycle, even mutants that doubled cellular growth rates went extinct approximately 40% of the time.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the clonal life cycle struggles to capture growth beneficial mutations- even mutants that doubled cellular growth rates went extinct ~40% of the time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by modeling results",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:40:00.490755Z"
+    },
+    {
+      "id": "ad5a6cba-dbbb-439c-bead-56d720a90d74",
+      "content_id": "c54a4dda-7c0b-415c-8c83-0fef04cc9dd1",
+      "claim_id": "C38",
+      "claim": "In the aggregative life cycle, group-beneficial mutations rarely go extinct but cannot be efficiently selected upon.",
+      "claim_type": "EXPLICIT",
+      "source": "When we examine mutations that increase group survival, we find that while they rarely go extinct in aggregative groups (Figure 5B), neither can they be efficiently selected upon (Figure 5C&D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by modeling results shown in Figure 5B, C, and D",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:40:00.490755Z"
+    },
+    {
+      "id": "1439d494-177a-4830-8ac7-3c69a0ac738e",
+      "content_id": "c54a4dda-7c0b-415c-8c83-0fef04cc9dd1",
+      "claim_id": "C39",
+      "claim": "In the clonal life cycle, even strongly group-beneficial mutants go extinct far more often than not.",
+      "claim_type": "EXPLICIT",
+      "source": "In the clonal life cycle, even strongly group-beneficial mutants (e.g., increasing the probability of group survival 10-fold) go extinct far more often than not, as they are extremely susceptible to being lost in the first several rounds of the simulation when they are found in only a small number of groups.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by modeling results",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:40:00.490755Z"
+    },
+    {
+      "id": "c12eddb2-8c29-44c0-9e7d-c2ace8fbf83a",
+      "content_id": "c54a4dda-7c0b-415c-8c83-0fef04cc9dd1",
+      "claim_id": "C40",
+      "claim": "In the clonal life cycle, group-beneficial mutants that escape being lost by drift rapidly fix in the population.",
+      "claim_type": "EXPLICIT",
+      "source": "If they escape being lost by drift, however, they rapidly fix in the population (Figure 5C&D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by modeling results shown in Figure 5C and D",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:40:00.490755Z"
+    },
+    {
+      "id": "2c7d63e6-938c-4a9e-bade-8d51cf9d0628",
+      "content_id": "c54a4dda-7c0b-415c-8c83-0fef04cc9dd1",
+      "claim_id": "C41",
+      "claim": "The clonal life cycle allows selection to act on group-survival beneficial mutations, albeit inefficiently.",
+      "claim_type": "EXPLICIT",
+      "source": "The clonal life cycle thus allows selection to act, albeit inefficiently, on group-survival beneficial mutations, while the aggregative life cycle is strongly biased in favor of capturing growth-enhancing mutations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by modeling results",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:40:00.490755Z"
+    },
+    {
+      "id": "a385904e-a56b-462f-a1bc-c40162878c05",
+      "content_id": "c54a4dda-7c0b-415c-8c83-0fef04cc9dd1",
+      "claim_id": "C42",
+      "claim": "The aggregative life cycle is strongly biased in favor of capturing growth-enhancing mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "The clonal life cycle thus allows selection to act, albeit inefficiently, on group-survival beneficial mutations, while the aggregative life cycle is strongly biased in favor of capturing growth-enhancing mutations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by modeling results",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:40:00.490755Z"
+    },
+    {
+      "id": "d36982bf-e77d-4801-a8b0-1b8ee0f7268a",
+      "content_id": "c54a4dda-7c0b-415c-8c83-0fef04cc9dd1",
+      "claim_id": "C43",
+      "claim": "Only clonally developing snowflake yeast exhibited a shift in Darwinian individuality such that multicellular groups were the primary unit of selection.",
+      "claim_type": "EXPLICIT",
+      "source": "In this paper, we show that only clonally developing snowflake yeast exhibited a shift in Darwinian individuality (Godfrey-Smith et al., 2013; Rose and Hammerschmidt, 2021), such that multicellular groups were the primary unit of selection, with increased fitness arising mainly via the group-selection phase of the life cycle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by competition experiments showing fitness gains primarily during settling selection",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:40:00.490755Z"
+    },
+    {
+      "id": "dfc55ef1-49b5-4ab3-8fdf-21195102c28f",
+      "content_id": "c54a4dda-7c0b-415c-8c83-0fef04cc9dd1",
+      "claim_id": "C44",
+      "claim": "Aggregative floc behaved as a social unicellular organism, adapting in both phases of the experiment.",
+      "claim_type": "EXPLICIT",
+      "source": "Aggregative floc, in contrast, behaved as a social unicellular organism, adapting in both phases of the experiment, but low assortment limited the potential fitness benefits of selection acting on groups.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by competition experiments and assortment measurements",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:40:00.490755Z"
+    },
+    {
+      "id": "e0c6b0b4-1a5d-477e-a9ff-47eb4697739e",
+      "content_id": "c54a4dda-7c0b-415c-8c83-0fef04cc9dd1",
+      "claim_id": "C45",
+      "claim": "Low genetic assortment during group formation in floc blunts the impact of group-level selection.",
+      "claim_type": "EXPLICIT",
+      "source": "Persistent low genetic assortment during group formation presents a challenge to this evolutionary transition, blunting the impact of group-level selection, enabling within-group genetic conflict, and ultimately inhibiting a shift in the level of Darwinian individuality from cells to groups.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by assortment measurements and fitness competition results",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:40:00.490755Z"
+    },
+    {
+      "id": "edb2bb98-ca8b-4ace-b531-39410e721812",
+      "content_id": "c54a4dda-7c0b-415c-8c83-0fef04cc9dd1",
+      "claim_id": "C46",
+      "claim": "The severity of genetic bottlenecking due to clonal development scales with organismal size.",
+      "claim_type": "EXPLICIT",
+      "source": "Our model highlights how the severity of genetic bottlenecking due to clonal development scales with organismal size, with larger organisms exacerbating drift.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by mathematical modeling results",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:40:00.490755Z"
+    },
+    {
+      "id": "5428a89d-d14b-4f18-8293-260f943438aa",
+      "content_id": "c54a4dda-7c0b-415c-8c83-0fef04cc9dd1",
+      "claim_id": "C47",
+      "claim": "Both snowflake and floc yeast experienced approximately 700 generations over the course of 24 weeks.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, over the course of 24 weeks, both snowflake and floc yeast underwent ~700 generations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by measurements of doublings per day shown in Figure 4\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:40:00.490755Z"
+    },
+    {
+      "id": "06709da1-426f-4774-a616-b9f6da14681c",
+      "content_id": "c54a4dda-7c0b-415c-8c83-0fef04cc9dd1",
+      "claim_id": "C48",
+      "claim": "Snowflake yeast size appeared to plateau after 8-10 weeks of settling selection.",
+      "claim_type": "EXPLICIT",
+      "source": "Examining one lineage through time, we found that size appeared to plateau after 8\u201310 weeks of settling selection (Figure 2C), which is consistent with previous work in this model system where aerobic metabolism, and the corresponding reliance on diffused oxygen for growth, strongly inhibits the evolution of increased size (Bozdag et al., 2023; Bozdag et al., 2021).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by flow cytometry data shown in Figure 2C and citations to prior work",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:40:00.490755Z"
+    },
+    {
+      "id": "f09583c9-0448-4372-a708-f4c92ab8188e",
+      "content_id": "c54a4dda-7c0b-415c-8c83-0fef04cc9dd1",
+      "claim_id": "C49",
+      "claim": "Multicellular adaptation requires a positive correlation between group phenotype and underlying cell-level genotype.",
+      "claim_type": "EXPLICIT",
+      "source": "Multicellular adaptation requires a positive correlation between group phenotype and underlying cell-level genotype; without this, selection acting on groups cannot drive changes in allele frequency (Clarke, 2014; Fletcher and Doebeli, 2009; Pepper and Smuts, 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Clarke, 2014; Fletcher and Doebeli, 2009; Pepper and Smuts, 2002",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:40:00.490755Z"
+    },
+    {
+      "id": "8155a33c-7af1-445d-a1a8-70fc66aaa78e",
+      "content_id": "c54a4dda-7c0b-415c-8c83-0fef04cc9dd1",
+      "claim_id": "C50",
+      "claim": "Clonal development has evolved more frequently in aquatic environments.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, clonal development has evolved more frequently in aquatic environments, while aggregation has evolved more often in terrestrial environments (Bonner, 1998; Fisher et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Bonner, 1998; Fisher et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:40:00.490755Z"
+    },
+    {
+      "id": "129f1f6c-e789-47e5-abe5-77c8e10f8f8c",
+      "content_id": "c54a4dda-7c0b-415c-8c83-0fef04cc9dd1",
+      "claim_id": "C51",
+      "claim": "Aggregation has evolved more often in terrestrial environments.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, clonal development has evolved more frequently in aquatic environments, while aggregation has evolved more often in terrestrial environments (Bonner, 1998; Fisher et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Bonner, 1998; Fisher et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:40:00.490755Z"
+    },
+    {
+      "id": "cb0e4ce6-dff4-4c3a-a525-18e04312d5ba",
+      "content_id": "c54a4dda-7c0b-415c-8c83-0fef04cc9dd1",
+      "claim_id": "C52",
+      "claim": "All known transitions to multicellularity occurred in the deep past (>200 MYA).",
+      "claim_type": "EXPLICIT",
+      "source": "Progress has been limited by the fact that all known transitions to multicellularity occurred in the deep past (>200 MYA Grosberg and Strathmann, 2007; Herron et al., 2009)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Grosberg and Strathmann, 2007; Herron et al., 2009",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:40:00.490755Z"
+    },
+    {
+      "id": "3d447fcb-70ef-46c1-9b17-88f656bf417f",
+      "content_id": "c54a4dda-7c0b-415c-8c83-0fef04cc9dd1",
+      "claim_id": "C53",
+      "claim": "Snowflake yeast were constructed from Saccharomyces cerevisiae strain Y55.",
+      "claim_type": "EXPLICIT",
+      "source": "These genotypes were created from the same homozygous diploid unicellular ancestor (Saccharomyces cerevisiae strain Y55, accession JRIF00000000)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Described in the Methods section",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:40:00.490755Z"
+    },
+    {
+      "id": "5ad022f4-111f-4472-bbc8-bbe6ca1c9d42",
+      "content_id": "c54a4dda-7c0b-415c-8c83-0fef04cc9dd1",
+      "claim_id": "C54",
+      "claim": "Snowflake and floc strains differ only in their mode of cluster formation.",
+      "claim_type": "EXPLICIT",
+      "source": "so these strains differ only in their mode of cluster formation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Described in the Methods section",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:40:00.490755Z"
+    },
+    {
+      "id": "578007fe-0b86-4ed0-85ed-613169adb2ec",
+      "content_id": "c54a4dda-7c0b-415c-8c83-0fef04cc9dd1",
+      "claim_id": "C55",
+      "claim": "The selection regime involved 24 hr of batch culture followed by daily selection for rapid sedimentation in liquid media.",
+      "claim_type": "EXPLICIT",
+      "source": "Our selection regime involved 24 hr of batch culture followed by daily selection for rapid sedimentation in liquid media (Ratcliff et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Described in the Results section",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:40:00.490755Z"
+    },
+    {
+      "id": "14262398-2df4-4ff5-afab-63686a2e7435",
+      "content_id": "c54a4dda-7c0b-415c-8c83-0fef04cc9dd1",
+      "claim_id": "C56",
+      "claim": "The selective scheme has previously been shown to promote multicellular adaptation in snowflake yeast.",
+      "claim_type": "EXPLICIT",
+      "source": "This selective scheme has previously been shown to promote multicellular adaption in snowflake yeast (Ratcliff et al., 2012; Ratcliff et al., 2015; Ratcliff et al., 2013; Bozdag et al., 2023)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:40:00.490755Z"
+    },
+    {
+      "id": "136d31fc-3b3e-469a-a725-cc0165319dd2",
+      "content_id": "c54a4dda-7c0b-415c-8c83-0fef04cc9dd1",
+      "claim_id": "C57",
+      "claim": "Previous work has led to increases in cluster size of up to 20,000-fold over 600 consecutive rounds of selection.",
+      "claim_type": "EXPLICIT",
+      "source": "and has led to increases in cluster size of up to 20,000-fold over 600 consecutive rounds of selection (Bozdag et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Bozdag et al., 2023",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:40:00.490755Z"
+    },
+    {
+      "id": "674e041e-fc1c-4538-a39e-91ced0142a20",
+      "content_id": "c54a4dda-7c0b-415c-8c83-0fef04cc9dd1",
+      "claim_id": "C58",
+      "claim": "46% of the putative loss of function mutations in floc are predicted to increase growth rates on galactose.",
+      "claim_type": "EXPLICIT",
+      "source": "When we query all putative loss of function mutations that arose in our experiment in a genome-wide deletion collection grown on galactose (Giaever et al., 2002), we find that 46% of the mutations in floc are predicted to increase growth rates on this carbon source, in contrast to just 35% in snowflake yeast.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by comparison to genome-wide deletion collection data",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:40:00.490755Z"
+    },
+    {
+      "id": "fd99ad3c-5f7b-4e34-948f-1370cebb41cc",
+      "content_id": "c54a4dda-7c0b-415c-8c83-0fef04cc9dd1",
+      "claim_id": "C59",
+      "claim": "35% of the putative loss of function mutations in snowflake yeast are predicted to increase growth rates on galactose.",
+      "claim_type": "EXPLICIT",
+      "source": "When we query all putative loss of function mutations that arose in our experiment in a genome-wide deletion collection grown on galactose (Giaever et al., 2002), we find that 46% of the mutations in floc are predicted to increase growth rates on this carbon source, in contrast to just 35% in snowflake yeast.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by comparison to genome-wide deletion collection data",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:40:00.490755Z"
+    },
+    {
+      "id": "5e5b2ee7-9b2f-4c05-a3b5-162b129d6d8f",
+      "content_id": "c54a4dda-7c0b-415c-8c83-0fef04cc9dd1",
+      "claim_id": "C60",
+      "claim": "Relaxed selection appears to have played a central role in the evolution of larger and more complex genomes within eukaryotes.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, relaxed selection appears to have played a central role in the evolution of larger and more complex genomes within eukaryotes (Lynch and Conery, 2003)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Lynch and Conery, 2003",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:40:00.490755Z"
+    },
+    {
+      "id": "7868d30b-0103-4593-abd0-a9beae63dc25",
+      "content_id": "c54a4dda-7c0b-415c-8c83-0fef04cc9dd1",
+      "claim_id": "C61",
+      "claim": "Snowflake yeast evolved to be 20,000 times larger than their ancestor after 400-600 serial transfers.",
+      "claim_type": "EXPLICIT",
+      "source": "These innovations took 400\u2013600 serial transfers to evolve, and resulted in snowflake yeast that were 20,000 times larger than their ancestor, and 10,000 times more biomechanically tough.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to prior work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:40:00.490755Z"
+    },
+    {
+      "id": "5cfeaccd-e080-4520-a58b-fdb62ff37e3f",
+      "content_id": "c54a4dda-7c0b-415c-8c83-0fef04cc9dd1",
+      "claim_id": "C62",
+      "claim": "Snowflake yeast evolved to be 10,000 times more biomechanically tough after 400-600 serial transfers.",
+      "claim_type": "EXPLICIT",
+      "source": "These innovations took 400\u2013600 serial transfers to evolve, and resulted in snowflake yeast that were 20,000 times larger than their ancestor, and 10,000 times more biomechanically tough.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to prior work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:40:00.490755Z"
+    },
+    {
+      "id": "eba3c880-ecce-412f-ad87-38af49334fa6",
+      "content_id": "c54a4dda-7c0b-415c-8c83-0fef04cc9dd1",
+      "claim_id": "C63",
+      "claim": "Evolving macroscopic size appears somewhat trivial for floc, likely due to the relative ease of increasing the strength of cell-cell adhesion.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, evolving macroscopic size (Figure 2F) appears somewhat trivial for floc, likely due the relative ease and efficacy of increasing the strength of cell-cell adhesion.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inferred from experimental observations and comparison to snowflake yeast",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:40:00.490755Z"
+    },
+    {
+      "id": "9455178c-a913-4949-a136-815f2d8ea70d",
+      "content_id": "c54a4dda-7c0b-415c-8c83-0fef04cc9dd1",
+      "claim_id": "C64",
+      "claim": "Clonal multicellular development provides the foundation upon which sustained multicellular adaptation may ultimately drive the evolution of dramatically increased multicellular complexity.",
+      "claim_type": "EXPLICIT",
+      "source": "There is an emerging consensus that clonal multicellular development provides the foundation upon which sustained multicellular adaptation may ultimately drive the evolution of dramatically increased multicellular complexity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to phylogenetic inference, theory, and experimental evolution",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:40:00.490755Z"
+    },
+    {
+      "id": "44c84efd-9ddf-43bd-ac85-0fec6764e32f",
+      "content_id": "c54a4dda-7c0b-415c-8c83-0fef04cc9dd1",
+      "claim_id": "C65",
+      "claim": "Most lineages of aggregative multicellularity are terrestrial.",
+      "claim_type": "EXPLICIT",
+      "source": "To this latter point, most lineages of aggregative multicellularity are terrestrial (Bonner, 1998; Fisher et al., 2020)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Bonner, 1998; Fisher et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:40:00.490755Z"
+    },
+    {
+      "id": "f609da8a-2e3a-450a-9e03-1e97e59fcee3",
+      "content_id": "c54a4dda-7c0b-415c-8c83-0fef04cc9dd1",
+      "claim_id": "C66",
+      "claim": "Snowflake yeast must resolve fundamental biophysical challenges before they can form large groups.",
+      "claim_type": "EXPLICIT",
+      "source": "Snowflake yeast must resolve fundamental biophysical challenges before they can form large groups, evolving larger size via three distinct biophysical mechanisms: reducing cellular density within clusters to limit cell-cell jamming, increasing the size and strength of the bonds connecting mother and daughter cells, and evolving branch entanglement so that group fracture requires breaking many cellular bonds, not just one (Bozdag et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Bozdag et al., 2023",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:40:00.490755Z"
+    },
+    {
+      "id": "abaec66e-09e2-4742-a803-91e1110eb86f",
+      "content_id": "c54a4dda-7c0b-415c-8c83-0fef04cc9dd1",
+      "claim_id": "C67",
+      "claim": "Snowflake yeast evolve larger size via three distinct biophysical mechanisms: reducing cellular density, increasing bond size and strength, and evolving branch entanglement.",
+      "claim_type": "EXPLICIT",
+      "source": "evolving larger size via three distinct biophysical mechanisms: reducing cellular density within clusters to limit cell-cell jamming, increasing the size and strength of the bonds connecting mother and daughter cells, and evolving branch entanglement so that group fracture requires breaking many cellular bonds, not just one (Bozdag et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Bozdag et al., 2023",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:40:00.490755Z"
+    },
+    {
+      "id": "d9ccb970-d530-4d91-9512-398e439d0549",
+      "content_id": "c54a4dda-7c0b-415c-8c83-0fef04cc9dd1",
+      "claim_id": "C68",
+      "claim": "In a rare beneficial mutant scenario, if the proportion of mutant cells is small compared to the number of groups, each group would contain only a single mutant cell in an idealized aggregative development.",
+      "claim_type": "EXPLICIT",
+      "source": "Such a scenario could arise in a population without preferential assortment (i.e. an idealized form of aggregative development) if the proportion of mutant cells is small in comparison to the number of groups.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Described in the mathematical modeling section",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:40:00.490755Z"
+    },
+    {
+      "id": "3eab5953-3ed5-4695-a37f-8c85287f1558",
+      "content_id": "c54a4dda-7c0b-415c-8c83-0fef04cc9dd1",
+      "claim_id": "C69",
+      "claim": "When groups are highly assorted (e.g. clonal development), a rare beneficial mutant and all of its descendants will be represented in a small number of groups.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, when groups are highly assorted (e.g. clonal development), the initially rare mutant and all of its descendants will be represented in a small number of groups, reducing k by a factor that corresponds to mean group size.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Described in the mathematical modeling section",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:40:00.490755Z"
+    },
+    {
+      "id": "63e42488-eb80-4a69-8cfc-7f80d6ae8de1",
+      "content_id": "c54a4dda-7c0b-415c-8c83-0fef04cc9dd1",
+      "claim_id": "C70",
+      "claim": "If a mutant arises at the beginning of the growth phase and the population grows 100-fold, resulting in 100 mutant cells with an average group size of 50 cells and 1% survival, the probability that the mutant lineage goes extinct in a clonally developing population is 98%.",
+      "claim_type": "EXPLICIT",
+      "source": "To get a sense of this effect, suppose a mutant arises at the beginning of the growth phase. The population then grows 100-fold, resulting in 100 mutant cells. Assuming the average size of a group is 50 cells, then if 1% of the population survives settling selection, the probability that the mutant lineage goes extinct in a population that develops clonally is 98%, while it is just 36.4% for a population developing aggregatively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Calculated from mathematical model",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:40:00.490755Z"
+    },
+    {
+      "id": "1c2350b6-04dd-44fe-8f22-bf79e1722a68",
+      "content_id": "c54a4dda-7c0b-415c-8c83-0fef04cc9dd1",
+      "claim_id": "C71",
+      "claim": "If a mutant arises at the beginning of the growth phase and the population grows 100-fold, resulting in 100 mutant cells with an average group size of 50 cells and 1% survival, the probability that the mutant lineage goes extinct in an aggregatively developing population is 36.4%.",
+      "claim_type": "EXPLICIT",
+      "source": "To get a sense of this effect, suppose a mutant arises at the beginning of the growth phase. The population then grows 100-fold, resulting in 100 mutant cells. Assuming the average size of a group is 50 cells, then if 1% of the population survives settling selection, the probability that the mutant lineage goes extinct in a population that develops clonally is 98%, while it is just 36.4% for a population developing aggregatively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Calculated from mathematical model",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:40:00.490755Z"
+    },
+    {
+      "id": "d1295f42-7762-4d65-8187-64f90b2ad930",
+      "content_id": "c54a4dda-7c0b-415c-8c83-0fef04cc9dd1",
+      "claim_id": "C72",
+      "claim": "88% of the beneficial mutants within the clonal lineages went extinct in the model where sg = 10.",
+      "claim_type": "EXPLICIT",
+      "source": "Note that 88% of the beneficial mutants within the clonal lineages went extinct in D.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in the caption of Figure 5",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:40:00.490755Z"
+    },
+    {
+      "id": "2c8c001c-d3ae-41de-a559-a4bb6f79d15a",
+      "content_id": "c54a4dda-7c0b-415c-8c83-0fef04cc9dd1",
+      "claim_id": "C73",
+      "claim": "Fitness in the experiment depends on growth rate during the 24 hr of batch culture and survival during the subsequent settling selection step.",
+      "claim_type": "EXPLICIT",
+      "source": "Fitness in our experiment depends on growth rate during the 24 hr of batch culture when the population is competing for resources, and survival during the subsequent settling selection step (Pentz et al., 2020; Ratcliff et al., 2012; Conlin and Ratcliff, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior work",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:40:00.490755Z"
+    },
+    {
+      "id": "9d591a20-cecd-46ba-83c1-3395a8e7ba7c",
+      "content_id": "c54a4dda-7c0b-415c-8c83-0fef04cc9dd1",
+      "claim_id": "C75",
+      "claim": "The main way in which a lineage can increase survival during settling selection is through changes in the phenotype of multicellular groups.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the main way in which a lineage can increase survival during settling selection is through changes in the phenotype of multicellular groups (i.e. increasing their size, packing density, or hydrodynamic profile Ratcliff et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Ratcliff et al., 2013",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:40:00.490755Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "28b6e222-1550-484d-a1fb-432443d5f413",
+      "content_id": "c54a4dda-7c0b-415c-8c83-0fef04cc9dd1",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors created two isogenic yeast strains differing only in their mode of multicellular group formation: clonal snowflake yeast (\u0394ace2/\u0394ace2) and aggregative floc yeast (GAL1p::FLO1/GAL1p::FLO1), both derived from S. cerevisiae strain Y55. Twenty replicate populations of each were evolved for 24 weeks (~700 generations) under a selection regime involving 24 hr batch culture followed by daily settling selection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C6, C53-C55 provide a clear and well-documented experimental design. The genetic constructs are described with appropriate citations (C4, C5), the isogenic nature is confirmed (C53, C54), and the selection regime is clearly specified (C55, C6). The experimental setup is methodologically sound for comparing developmental modes.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:40:00.490755Z"
+    },
+    {
+      "id": "014c894c-42b8-4c06-9724-e5ff6fc2337d",
+      "content_id": "c54a4dda-7c0b-415c-8c83-0fef04cc9dd1",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Both snowflake and floc yeast evolved significantly faster settling rates over 24 weeks of evolution (~700 generations), with floc showing a 12-fold increase and snowflake showing a 1.3-fold increase in settling rate.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C9 are supported by appropriate statistical tests (one-way ANOVA with post-hoc comparisons) and visual data in Figure 1. The magnitude of change differs dramatically between the two strains (12-fold vs 1.3-fold), which is a key finding. Claim C47 provides important context about the number of generations experienced.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:40:00.490755Z"
+    },
+    {
+      "id": "6091fc81-02d9-4aef-85be-92c6bdb126ea",
+      "content_id": "c54a4dda-7c0b-415c-8c83-0fef04cc9dd1",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Evolved snowflake yeast increased their biomass-weighted mean forward scatter (a proxy for group size) by an average of 33%, with size appearing to plateau after 8-10 weeks of settling selection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C10 is supported by flow cytometry data with appropriate statistical testing (one-sided t-test, p<0.0001, n=24). Claim C48 is supported by time-course data (Figure 2C) and is consistent with prior work showing oxygen diffusion limits on size evolution. The plateau observation is appropriately contextualized with citations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:40:00.490755Z"
+    },
+    {
+      "id": "d5ba3756-1903-4e71-a656-2ddc16626718",
+      "content_id": "c54a4dda-7c0b-415c-8c83-0fef04cc9dd1",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Thirteen out of 20 floc populations showed significantly increased flocculation efficiency relative to the ancestor, with the authors suggesting that evolving macroscopic size appears relatively trivial for floc due to the ease of increasing cell-cell adhesion strength.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C11 is well-supported by statistical analysis (one-way ANOVA with Tukey's HSD). However, claim C63 is speculative (marked as SPECULATION in evidence_type) and represents an inference rather than a directly tested hypothesis. The ease of size evolution in floc compared to snowflake would require more direct comparative analysis to be fully supported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:40:00.490755Z"
+    },
+    {
+      "id": "6626248d-3da4-408f-be6f-8a2f5a9232a4",
+      "content_id": "c54a4dda-7c0b-415c-8c83-0fef04cc9dd1",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Floc yeast showed a 15% overall fitness increase (primarily from a 24% advantage during growth, with only 3% non-significant advantage during settling), while snowflake yeast showed a 7% overall fitness increase (primarily from a 28% advantage during settling, with 5.5% advantage during growth). Fitness depends on growth rate during batch culture and survival during settling selection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C17 are supported by competition experiments with appropriate statistical tests (one-sample t-tests). The partitioning of fitness between growth and settling phases is methodologically sound and reveals fundamentally different evolutionary dynamics. Claims C73 and C75 provide important context from prior work. The non-significant p-value for floc settling fitness (p=0.12, C15) is correctly reported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:40:00.490755Z"
+    },
+    {
+      "id": "e29520b9-c61e-4bc0-85bb-e9b94c558cc5",
+      "content_id": "c54a4dda-7c0b-415c-8c83-0fef04cc9dd1",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Only 2 out of 20 floc populations had detectably higher fitness than their ancestor during settling selection, while 12 out of 20 snowflake populations significantly increased fitness during settling selection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C19 are supported by appropriate statistical analyses (ANOVA with multiple comparison corrections using Bonferroni and Dunnett's tests). This result reinforces the differential evolutionary dynamics between the two developmental modes and is consistent with the overall fitness partitioning results.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:40:00.490755Z"
+    },
+    {
+      "id": "d96370f9-466d-4142-bcf4-2d17fea5da3a",
+      "content_id": "c54a4dda-7c0b-415c-8c83-0fef04cc9dd1",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Overall assortment in floc was relatively low (mean of 0.06 across five strains), while snowflake yeast canonically have an assortment of 1. Multicellular adaptation requires a positive correlation between group phenotype and underlying cell-level genotype.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C21 are supported by assortment measurements with appropriate statistical analysis (one-way ANOVA showing significant among-strain variation). Claim C49 provides important theoretical context from the literature. The low assortment in floc provides a mechanistic explanation for why increased settling rate did not translate to fitness gains during settling selection.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:40:00.490755Z"
+    },
+    {
+      "id": "81681b3a-55ca-4301-ba71-7bccd46c8c90",
+      "content_id": "c54a4dda-7c0b-415c-8c83-0fef04cc9dd1",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Floc yeast accumulated more mutations than snowflake yeast (5 vs 3 per genotype). The mutation pattern in snowflake yeast was not distinguishable from drift, while floc yeast showed a strong signature of selection with more missense mutations and fewer synonymous and intergenic mutations than expected under neutrality.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C22 is supported by whole-genome sequencing with appropriate statistical testing (two-tailed t-test, p=0.017). Claims C23-C27 are supported by comparison to a null model using bootstrap simulations (1000 iterations). The authors appropriately note that each test should be treated as two-sided (6% chance of deviation), and the pattern across multiple mutation types strengthens the inference of selection in floc.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:40:00.490755Z"
+    },
+    {
+      "id": "11fe9fa7-1b12-4a32-ba72-456c84c09032",
+      "content_id": "c54a4dda-7c0b-415c-8c83-0fef04cc9dd1",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Seven parallel missense mutations in GAL2 arose independently in floc (vs. only one in snowflake), and 46% of putative loss-of-function mutations in floc are predicted to increase growth rates on galactose (vs. 35% in snowflake).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C29 are supported by whole-genome sequencing data showing parallel evolution. Claims C58-C59 are supported by comparison to a genome-wide deletion collection. The convergent evolution of GAL2 mutations and the higher proportion of growth-beneficial mutations in floc are consistent with stronger selection on cell-level growth rate in the aggregative life cycle.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:40:00.490755Z"
+    },
+    {
+      "id": "1279fc72-5ce1-4fa0-a72a-d4f1f8e8ac09",
+      "content_id": "c54a4dda-7c0b-415c-8c83-0fef04cc9dd1",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Five parallel missense mutations in FLO1 and four in MSN1 (a transcriptional activator of FLO11) were observed in floc yeast.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C31 are supported by whole-genome sequencing data and appropriately contextualized with citations about MSN1 function. The parallel evolution of mutations in flocculation-related genes suggests these traits were under selection, though the fitness benefit during settling was minimal (see C15).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:40:00.490755Z"
+    },
+    {
+      "id": "e66f87e5-f149-4446-91c2-e6eb41391b5a",
+      "content_id": "c54a4dda-7c0b-415c-8c83-0fef04cc9dd1",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Control floc populations evolved with only growth rate selection (no settling selection) for eight weeks showed a 20.7% fitness increase during growth but a 40% decrease in flocculation efficiency, demonstrating that cell-level adaptation to growth on galactose does not drive increased flocculation as a pleiotropic side-effect.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C33 are supported by control experiment data with appropriate measurements. Claim C34 is a reasonable inference from the control experiment showing that growth-only selection actually decreases flocculation. This control addresses an important alternative hypothesis about pleiotropy between GAL metabolism and FLO1 expression.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:40:00.490755Z"
+    },
+    {
+      "id": "42f3046d-c736-47d8-b2e8-a9c90b81a529",
+      "content_id": "c54a4dda-7c0b-415c-8c83-0fef04cc9dd1",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Mathematical modeling shows that in aggregative life cycles, selection readily acts on mutations affecting cellular growth rate, while in clonal life cycles, even mutants that doubled growth rates went extinct ~40% of the time. For group-beneficial mutations, aggregative groups rarely lose mutants but cannot efficiently select upon them, while clonal groups lose even strongly beneficial mutants frequently but can rapidly fix those that escape drift. The probability of extinction for a rare mutant differs dramatically between life cycles (98% vs 36.4% for clonal vs aggregative in a specific scenario).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C42 and C68-C72 are supported by mathematical modeling using experimentally-derived size distributions. The model provides mechanistic insight into the observed differences in mutation accumulation and selection signatures. The specific extinction probabilities (C70-C71) are calculated from the model with clearly stated assumptions. The model results are consistent with the empirical genomic data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:40:00.490755Z"
+    },
+    {
+      "id": "789b107f-0430-4af7-bd4a-4b3bab4d206b",
+      "content_id": "c54a4dda-7c0b-415c-8c83-0fef04cc9dd1",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Only clonally developing snowflake yeast exhibited a shift in Darwinian individuality such that multicellular groups were the primary unit of selection. Aggregative floc behaved as a social unicellular organism, with low genetic assortment blunting the impact of group-level selection and inhibiting a shift in the level of Darwinian individuality from cells to groups.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C45 represent the main conclusions of the paper and are well-supported by the combined evidence from fitness partitioning experiments (C12-C19), assortment measurements (C20-C21), and genomic analysis (C22-C31). The inference about Darwinian individuality is appropriately grounded in the empirical data showing where fitness gains occurred in each life cycle.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:40:00.490755Z"
+    },
+    {
+      "id": "f18dcbe1-8b5f-4c96-a23b-52e1b7defa5e",
+      "content_id": "c54a4dda-7c0b-415c-8c83-0fef04cc9dd1",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The severity of genetic bottlenecking due to clonal development scales with organismal size, with larger organisms exacerbating drift.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C46 is supported by the mathematical modeling results. The model shows that as group size increases, the number of groups containing a rare mutant decreases proportionally, increasing the probability of stochastic loss during group selection. This is a general theoretical result with important implications for multicellular evolution.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:40:00.490755Z"
+    },
+    {
+      "id": "4c6489ca-ddd7-4379-a173-65e320933c51",
+      "content_id": "c54a4dda-7c0b-415c-8c83-0fef04cc9dd1",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Multicellularity has evolved more than 50 times, but complex multicellularity has only evolved in clonally developing lineages. Clonal development prevents intra-organism genetic conflict by limiting within-group genetic diversity. There is an emerging consensus that clonal development provides the foundation for the evolution of dramatically increased multicellular complexity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3, C50-C52, and C64 provide important background context from the literature and are supported by appropriate citations. These claims establish the motivation for the experimental work and are consistent with current understanding in the field. However, these are primarily literature-based claims rather than novel findings from this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:40:00.490755Z"
+    },
+    {
+      "id": "bba6a158-2769-42d0-a68f-cf73bbf2cde0",
+      "content_id": "c54a4dda-7c0b-415c-8c83-0fef04cc9dd1",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The selective scheme has previously been shown to promote multicellular adaptation in snowflake yeast, leading to increases in cluster size of up to 20,000-fold over 600 rounds of selection. Snowflake yeast must resolve fundamental biophysical challenges before forming large groups, evolving larger size via three distinct mechanisms: reducing cellular density, increasing bond size and strength, and evolving branch entanglement.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C57 and C61-C62, C66-C67 provide important context from prior work in the snowflake yeast system. These are appropriately cited and help contextualize why the 1.3-fold increase in settling rate and 33% increase in size observed in this 24-week experiment are relatively modest compared to what is possible with longer-term evolution.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:40:00.490755Z"
+    },
+    {
+      "id": "1f5ba8c3-1bc4-40ed-a452-50c1a38bd58a",
+      "content_id": "c54a4dda-7c0b-415c-8c83-0fef04cc9dd1",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Relaxed selection appears to have played a central role in the evolution of larger and more complex genomes within eukaryotes. Most lineages of aggregative multicellularity are terrestrial.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60 and C65 are supported by appropriate citations and provide context for discussing the implications of the findings. These are literature-based claims that help frame the discussion but are not novel findings from this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:40:00.490755Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "865a9560-7176-4a71-876c-943e7ac62c95",
+      "result_id": "28b6e222-1550-484d-a1fb-432443d5f413"
+    },
+    {
+      "claim_id": "27ee087c-96ff-4a34-b3ba-3ef67e7dfd83",
+      "result_id": "28b6e222-1550-484d-a1fb-432443d5f413"
+    },
+    {
+      "claim_id": "ff4d9264-7e0d-47d0-97f6-21c20f296b18",
+      "result_id": "28b6e222-1550-484d-a1fb-432443d5f413"
+    },
+    {
+      "claim_id": "3d447fcb-70ef-46c1-9b17-88f656bf417f",
+      "result_id": "28b6e222-1550-484d-a1fb-432443d5f413"
+    },
+    {
+      "claim_id": "5ad022f4-111f-4472-bbc8-bbe6ca1c9d42",
+      "result_id": "28b6e222-1550-484d-a1fb-432443d5f413"
+    },
+    {
+      "claim_id": "578007fe-0b86-4ed0-85ed-613169adb2ec",
+      "result_id": "28b6e222-1550-484d-a1fb-432443d5f413"
+    },
+    {
+      "claim_id": "7ae822a4-7037-4c80-8643-d00fb616ca11",
+      "result_id": "014c894c-42b8-4c06-9724-e5ff6fc2337d"
+    },
+    {
+      "claim_id": "866a7da5-922e-4f3b-b9ed-b4a34a01d5ed",
+      "result_id": "014c894c-42b8-4c06-9724-e5ff6fc2337d"
+    },
+    {
+      "claim_id": "3df3d141-8bed-4b83-b4bb-287e914a95bb",
+      "result_id": "014c894c-42b8-4c06-9724-e5ff6fc2337d"
+    },
+    {
+      "claim_id": "5428a89d-d14b-4f18-8293-260f943438aa",
+      "result_id": "014c894c-42b8-4c06-9724-e5ff6fc2337d"
+    },
+    {
+      "claim_id": "307a498b-1c9e-4f64-bdb1-0396502582fa",
+      "result_id": "6091fc81-02d9-4aef-85be-92c6bdb126ea"
+    },
+    {
+      "claim_id": "06709da1-426f-4774-a616-b9f6da14681c",
+      "result_id": "6091fc81-02d9-4aef-85be-92c6bdb126ea"
+    },
+    {
+      "claim_id": "b3b51edc-782b-4a97-989f-94192858057a",
+      "result_id": "d5ba3756-1903-4e71-a656-2ddc16626718"
+    },
+    {
+      "claim_id": "eba3c880-ecce-412f-ad87-38af49334fa6",
+      "result_id": "d5ba3756-1903-4e71-a656-2ddc16626718"
+    },
+    {
+      "claim_id": "3dda26b9-b843-4eb4-8d44-c74b4290217e",
+      "result_id": "6626248d-3da4-408f-be6f-8a2f5a9232a4"
+    },
+    {
+      "claim_id": "bbe6d314-a371-499a-a980-ff86e581ea98",
+      "result_id": "6626248d-3da4-408f-be6f-8a2f5a9232a4"
+    },
+    {
+      "claim_id": "f7a1ada3-4f11-47b8-a49d-71c3211b7c5c",
+      "result_id": "6626248d-3da4-408f-be6f-8a2f5a9232a4"
+    },
+    {
+      "claim_id": "2159b7a8-d302-47ba-82b9-f0b5410aa3b8",
+      "result_id": "6626248d-3da4-408f-be6f-8a2f5a9232a4"
+    },
+    {
+      "claim_id": "fa94c449-2482-46f8-bd0c-c419d6b1cd65",
+      "result_id": "6626248d-3da4-408f-be6f-8a2f5a9232a4"
+    },
+    {
+      "claim_id": "408daa23-ba7c-4c20-b703-7d2551c706fd",
+      "result_id": "6626248d-3da4-408f-be6f-8a2f5a9232a4"
+    },
+    {
+      "claim_id": "2c8c001c-d3ae-41de-a559-a4bb6f79d15a",
+      "result_id": "6626248d-3da4-408f-be6f-8a2f5a9232a4"
+    },
+    {
+      "claim_id": "9d591a20-cecd-46ba-83c1-3395a8e7ba7c",
+      "result_id": "6626248d-3da4-408f-be6f-8a2f5a9232a4"
+    },
+    {
+      "claim_id": "5514d113-a3b5-4ad0-869d-522dafd6dc8e",
+      "result_id": "e29520b9-c61e-4bc0-85bb-e9b94c558cc5"
+    },
+    {
+      "claim_id": "9aaca258-26b4-4188-97fd-cdf2c280adbf",
+      "result_id": "e29520b9-c61e-4bc0-85bb-e9b94c558cc5"
+    },
+    {
+      "claim_id": "80b29b4b-b6ce-4982-a1dc-1fadb60fee12",
+      "result_id": "d96370f9-466d-4142-bcf4-2d17fea5da3a"
+    },
+    {
+      "claim_id": "33a172eb-8049-434d-91d8-85bb5ec8271e",
+      "result_id": "d96370f9-466d-4142-bcf4-2d17fea5da3a"
+    },
+    {
+      "claim_id": "f09583c9-0448-4372-a708-f4c92ab8188e",
+      "result_id": "d96370f9-466d-4142-bcf4-2d17fea5da3a"
+    },
+    {
+      "claim_id": "41e77780-42c8-40d6-888d-4d97652e89f6",
+      "result_id": "81681b3a-55ca-4301-ba71-7bccd46c8c90"
+    },
+    {
+      "claim_id": "ce7e206e-90f2-4b38-b2b7-23773873290b",
+      "result_id": "81681b3a-55ca-4301-ba71-7bccd46c8c90"
+    },
+    {
+      "claim_id": "15e4dbbd-bb55-4304-9f7e-24f93339affc",
+      "result_id": "81681b3a-55ca-4301-ba71-7bccd46c8c90"
+    },
+    {
+      "claim_id": "9c89e82e-d581-42fa-b48c-0ff079911e82",
+      "result_id": "81681b3a-55ca-4301-ba71-7bccd46c8c90"
+    },
+    {
+      "claim_id": "f9ca74e1-e54b-49ea-9d16-4f5b7f1ca647",
+      "result_id": "81681b3a-55ca-4301-ba71-7bccd46c8c90"
+    },
+    {
+      "claim_id": "d4dcc35e-34a7-43cb-8108-cbd92a403a71",
+      "result_id": "81681b3a-55ca-4301-ba71-7bccd46c8c90"
+    },
+    {
+      "claim_id": "0e0208fb-aeee-4942-bfd9-e5c5dc09ca2c",
+      "result_id": "11fe9fa7-1b12-4a32-ba72-456c84c09032"
+    },
+    {
+      "claim_id": "67531ca9-5c33-46d7-83f6-898b224cc3a6",
+      "result_id": "11fe9fa7-1b12-4a32-ba72-456c84c09032"
+    },
+    {
+      "claim_id": "674e041e-fc1c-4538-a39e-91ced0142a20",
+      "result_id": "11fe9fa7-1b12-4a32-ba72-456c84c09032"
+    },
+    {
+      "claim_id": "fd99ad3c-5f7b-4e34-948f-1370cebb41cc",
+      "result_id": "11fe9fa7-1b12-4a32-ba72-456c84c09032"
+    },
+    {
+      "claim_id": "e494c774-4d68-4d17-bf89-86fafe4c7409",
+      "result_id": "1279fc72-5ce1-4fa0-a72a-d4f1f8e8ac09"
+    },
+    {
+      "claim_id": "87eaecd4-f976-4985-874b-7354fdff0a2b",
+      "result_id": "1279fc72-5ce1-4fa0-a72a-d4f1f8e8ac09"
+    },
+    {
+      "claim_id": "6013a253-427d-451d-b2ef-047eb19a7eae",
+      "result_id": "e66f87e5-f149-4446-91c2-e6eb41391b5a"
+    },
+    {
+      "claim_id": "1191202f-c275-4784-a481-ef26032aba23",
+      "result_id": "e66f87e5-f149-4446-91c2-e6eb41391b5a"
+    },
+    {
+      "claim_id": "de7b09c3-75e7-428a-aca9-e5087a58be45",
+      "result_id": "e66f87e5-f149-4446-91c2-e6eb41391b5a"
+    },
+    {
+      "claim_id": "598ee63e-5bf8-4983-b6a0-30a7480d4ff7",
+      "result_id": "42f3046d-c736-47d8-b2e8-a9c90b81a529"
+    },
+    {
+      "claim_id": "d81f95db-56e4-420c-8a8d-1bac6636c2af",
+      "result_id": "42f3046d-c736-47d8-b2e8-a9c90b81a529"
+    },
+    {
+      "claim_id": "ad5a6cba-dbbb-439c-bead-56d720a90d74",
+      "result_id": "42f3046d-c736-47d8-b2e8-a9c90b81a529"
+    },
+    {
+      "claim_id": "1439d494-177a-4830-8ac7-3c69a0ac738e",
+      "result_id": "42f3046d-c736-47d8-b2e8-a9c90b81a529"
+    },
+    {
+      "claim_id": "c12eddb2-8c29-44c0-9e7d-c2ace8fbf83a",
+      "result_id": "42f3046d-c736-47d8-b2e8-a9c90b81a529"
+    },
+    {
+      "claim_id": "2c7d63e6-938c-4a9e-bade-8d51cf9d0628",
+      "result_id": "42f3046d-c736-47d8-b2e8-a9c90b81a529"
+    },
+    {
+      "claim_id": "a385904e-a56b-462f-a1bc-c40162878c05",
+      "result_id": "42f3046d-c736-47d8-b2e8-a9c90b81a529"
+    },
+    {
+      "claim_id": "d9ccb970-d530-4d91-9512-398e439d0549",
+      "result_id": "42f3046d-c736-47d8-b2e8-a9c90b81a529"
+    },
+    {
+      "claim_id": "3eab5953-3ed5-4695-a37f-8c85287f1558",
+      "result_id": "42f3046d-c736-47d8-b2e8-a9c90b81a529"
+    },
+    {
+      "claim_id": "63e42488-eb80-4a69-8cfc-7f80d6ae8de1",
+      "result_id": "42f3046d-c736-47d8-b2e8-a9c90b81a529"
+    },
+    {
+      "claim_id": "1c2350b6-04dd-44fe-8f22-bf79e1722a68",
+      "result_id": "42f3046d-c736-47d8-b2e8-a9c90b81a529"
+    },
+    {
+      "claim_id": "d1295f42-7762-4d65-8187-64f90b2ad930",
+      "result_id": "42f3046d-c736-47d8-b2e8-a9c90b81a529"
+    },
+    {
+      "claim_id": "d36982bf-e77d-4801-a8b0-1b8ee0f7268a",
+      "result_id": "789b107f-0430-4af7-bd4a-4b3bab4d206b"
+    },
+    {
+      "claim_id": "dfc55ef1-49b5-4ab3-8fdf-21195102c28f",
+      "result_id": "789b107f-0430-4af7-bd4a-4b3bab4d206b"
+    },
+    {
+      "claim_id": "e0c6b0b4-1a5d-477e-a9ff-47eb4697739e",
+      "result_id": "789b107f-0430-4af7-bd4a-4b3bab4d206b"
+    },
+    {
+      "claim_id": "edb2bb98-ca8b-4ace-b531-39410e721812",
+      "result_id": "f18dcbe1-8b5f-4c96-a23b-52e1b7defa5e"
+    },
+    {
+      "claim_id": "352b931d-7a39-4996-911c-e42032da98a3",
+      "result_id": "4c6489ca-ddd7-4379-a173-65e320933c51"
+    },
+    {
+      "claim_id": "0cde993a-445e-4204-9bbc-65b8eb0de9dc",
+      "result_id": "4c6489ca-ddd7-4379-a173-65e320933c51"
+    },
+    {
+      "claim_id": "a595e157-928e-4e05-9ce7-22f299924e17",
+      "result_id": "4c6489ca-ddd7-4379-a173-65e320933c51"
+    },
+    {
+      "claim_id": "8155a33c-7af1-445d-a1a8-70fc66aaa78e",
+      "result_id": "4c6489ca-ddd7-4379-a173-65e320933c51"
+    },
+    {
+      "claim_id": "129f1f6c-e789-47e5-abe5-77c8e10f8f8c",
+      "result_id": "4c6489ca-ddd7-4379-a173-65e320933c51"
+    },
+    {
+      "claim_id": "cb0e4ce6-dff4-4c3a-a525-18e04312d5ba",
+      "result_id": "4c6489ca-ddd7-4379-a173-65e320933c51"
+    },
+    {
+      "claim_id": "9455178c-a913-4949-a136-815f2d8ea70d",
+      "result_id": "4c6489ca-ddd7-4379-a173-65e320933c51"
+    },
+    {
+      "claim_id": "14262398-2df4-4ff5-afab-63686a2e7435",
+      "result_id": "bba6a158-2769-42d0-a68f-cf73bbf2cde0"
+    },
+    {
+      "claim_id": "136d31fc-3b3e-469a-a725-cc0165319dd2",
+      "result_id": "bba6a158-2769-42d0-a68f-cf73bbf2cde0"
+    },
+    {
+      "claim_id": "7868d30b-0103-4593-abd0-a9beae63dc25",
+      "result_id": "bba6a158-2769-42d0-a68f-cf73bbf2cde0"
+    },
+    {
+      "claim_id": "5cfeaccd-e080-4520-a58b-fdb62ff37e3f",
+      "result_id": "bba6a158-2769-42d0-a68f-cf73bbf2cde0"
+    },
+    {
+      "claim_id": "f609da8a-2e3a-450a-9e03-1e97e59fcee3",
+      "result_id": "bba6a158-2769-42d0-a68f-cf73bbf2cde0"
+    },
+    {
+      "claim_id": "abaec66e-09e2-4742-a803-91e1110eb86f",
+      "result_id": "bba6a158-2769-42d0-a68f-cf73bbf2cde0"
+    },
+    {
+      "claim_id": "5e5b2ee7-9b2f-4c05-a3b5-162b129d6d8f",
+      "result_id": "1f5ba8c3-1bc4-40ed-a452-50c1a38bd58a"
+    },
+    {
+      "claim_id": "44c84efd-9ddf-43bd-ac85-0fec6764e32f",
+      "result_id": "1f5ba8c3-1bc4-40ed-a452-50c1a38bd58a"
+    }
+  ],
+  "comparisons": []
+}

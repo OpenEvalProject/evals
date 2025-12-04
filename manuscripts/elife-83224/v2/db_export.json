@@ -1,0 +1,2067 @@
+{
+  "submission": {
+    "id": "4f01597f-f56b-4d8b-85ae-2aceed062649",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-04T03:47:54.682284Z",
+    "updated_at": "2025-12-04T03:47:54.682284Z"
+  },
+  "content": [
+    {
+      "id": "c5c5edda-5dca-4c5c-9eb9-6ccac8d19cd4",
+      "submission_id": "4f01597f-f56b-4d8b-85ae-2aceed062649",
+      "content_type": "manuscript",
+      "content_text": "# Specific sensory neurons and insulin-like peptides modulate food type-dependent oogenesis and fertilization in Caenorhabditis elegans\n\n## Authors\n\n- Shashwat Mishra<sup>1</sup>\n- Mohamed Dabaja<sup>1</sup>\n- Asra Akhlaq<sup>1</sup>\n- Bianca Pereira<sup>1</sup>\n- Kelsey Marbach<sup>1</sup>\n- Mediha Rovcanin<sup>1</sup>\n- Rashmi Chandra<sup>1</sup>\n- Antonio Caballero<sup>2</sup>\n- Diana Fernandes de Abreu<sup>2</sup>\n- QueeLim Ch'ng<sup>2</sup> ([ORCID: 0000-0003-1941-3828](https://orcid.org/0000-0003-1941-3828))\n- Joy Alcedo<sup>1</sup> ([ORCID: 0000-0002-5279-6640](https://orcid.org/0000-0002-5279-6640)) \u2020\n\n### Affiliations\n\n1. Department of Biological Sciences, Wayne State University Detroit United States ([ROR:01070mq45](https://ror.org/01070mq45))\n2. Centre for Developmental Neurobiology, King\u2019s College London London United Kingdom ([ROR:0220mzb33](https://ror.org/0220mzb33))\n\n\u2020 Corresponding author\n\n## Abstract\n\nAn animal\u2019s responses to environmental cues are critical for its reproductive program. Thus, a mechanism that allows the animal to sense and adjust to its environment should make for a more efficient reproductive physiology. Here, we demonstrate that in Caenorhabditis elegans specific sensory neurons influence onset of oogenesis through insulin signaling in response to food-derived cues. The chemosensory neurons ASJ modulate oogenesis onset through the insulin-like peptide (ILP) INS-6. In contrast, other sensory neurons, the olfactory neurons AWA, regulate food type-dependent differences in C. elegans fertilization rates, but not onset of oogenesis. AWA modulates fertilization rates at least partly in parallel to insulin receptor signaling, since the insulin receptor DAF-2 regulates fertilization independently of food type, which requires ILPs other than INS-6. Together our findings suggest that optimal reproduction requires the integration of diverse food-derived inputs through multiple neuronal signals acting on the C. elegans germline.\n\n## Introduction\n\nThe survival of an individual and its species involves reproductive mechanisms that are subject to food-dependent modulation. In the worm Caenorhabditis elegans, sensory neurons influence food-dependent survival (Maier et al., 2010) and germline physiology (Dalf\u00f3 et al., 2012; Sowa et al., 2015; Aprison and Ruvinsky, 2017; Perez et al., 2021). This suggests the intriguing possibility that sensory perception optimizes survival by modulating the germline in a given environment, which makes it important to understand how the sensory system affects germ cells.\n\nIn the germline of the C. elegans hermaphrodite, germ cells first undergo spermatogenesis, before switching to oogenesis (Figure 1A; reviewed by Kimble and Crittenden, 2007). After oogenesis begins, oocytes undergo arrest at the diakinesis stage of prophase I (reviewed by Greenstein, 2005). Oocytes are released from this arrest in an assembly-line manner by a hormone secreted from sperm, where the oocyte most proximal to the spermatheca matures first (McCarter et al., 1999; Miller et al., 2001). Once released from arrest, the oocyte is also immediately ovulated into the spermatheca, where it is fertilized by a sperm (McCarter et al., 1999; Miller et al., 2001). Thus, in C. elegans hermaphrodites, the rate of oocyte maturation determines the rate of fertilization (McCarter et al., 1999).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/83224/elife-83224-fig1-v2.jpg)\n\n**Figure 1.:** (A) The C. elegans reproductive developmental program, which depicts the timing of the spermatogenesis-to-oogenesis switch at L4. (B) Somatic development was unchanged between animals fed the two Escherichia coli food types (n=286 on OP50; n=265 on CS180; p=0.72). (C\u2013E) Worms fed OP50 had more progeny (C), slower fertilization rates (D), and more sperm (E) than worms fed CS180. (F) Simplified illustration of vulval morphology at various substages of L4, where the nuclei of specific cells are shown (adapted from Mok et al., 2015). Red arrowheads indicate the finger-like structures at the sides of the vulva, which migrate ventrally during late L4. Lethargus is the molting period from L4 to young adulthood. (G) Early onset of oogenesis was determined by the initial expression of lin-41::GFP. Anterior is to the left and dorsal is to the top of each panel. Scale bar is 10 \u03bcm. (H\u2013I) Worms on CS180 began oogenesis earlier at mid-L4 than worms on OP50, based on the earliest lin-41::GFP (H) or oma-1::GFP (I) expression. Early oogenesis onset at mid-L4 is highlighted by a dotted box in these panels and later panels. (J) Adults on CS180 had more arrested oocytes than age-matched adults on OP50. Statistical analyses for (C, D, H and I) are in Figure 1\u2014source data 1. For (E), n of animals on OP50 is 14; n on CS180, 12. For (J), n of animals on OP50 is 23; n on CS180, 31. Error bars in (C\u2013D) represent standard deviation; (E, J) SEM. ** indicates p<0.01 and ***, p<0.001.\n\nSome of the C. elegans sensory neurons have been shown to modulate germ cell proliferation (Dalf\u00f3 et al., 2012; Aprison and Ruvinsky, 2017) and oocyte senescence (Sowa et al., 2015) in response to food or pheromones. However, it remains unclear whether the same sensory neurons regulate germline differentiation and fertilization or what signaling mechanisms underlie these sensory influences.\n\nInsulin signaling could mediate the sensory responses to food (reviewed by Allen et al., 2015). Worms have 40 insulin-like peptides (ILPs; Duret et al., 1998; Kawano et al., 2000; Pierce et al., 2001; Li et al., 2003), many of which are expressed in sensory neurons and could act alone or combinatorially to regulate several physiological programs (Cornils et al., 2011; Chen et al., 2013; Ritter et al., 2013; Fernandes de Abreu et al., 2014). Indeed, two ILPs, ins-3 and ins-33, have already been shown to regulate germ cell proliferation (Michaelson et al., 2010); however, the cells that secrete these signals that affect the germline are unknown.\n\nIn this study, we find that specific sensory neurons and ILPs regulate the timing of oogenesis and fertilization through food type-dependent and -independent mechanisms. In response to a specific food type, we show that the chemosensory neuron ASJ promotes early oogenesis. This ASJ-dependent effect on oogenesis involves ASJ-specific expression of the ILP ins-6. In contrast, an olfactory neuron, AWA, regulates food type-dependent fertilization rates through mechanisms that differ from insulin receptor signaling. The insulin receptor pathway alters fertilization rates independent of food cues and employs other ILPs. Thus, our work demonstrates that oogenesis onset and fertilization are subject to different ILP signals and sensory neuron activities, which ensure optimal reproduction within a changing environment.\n\n## Results\n\n### The bacterial food source modulates onset of oogenesis and fertilization rate in C. elegans\n\nPreviously, we have shown that different E. coli strains that serve as food for C. elegans can modulate the animals\u2019 reproductive physiology, independent of their somatic development (Maier et al., 2010). Wild-type C. elegans fed two different E. coli strains, OP50 and CS180, developed through four larval stages (L1 to L4; Figure 1A) at about the same rate (Figure 1B), before they molted into young adults. However, C. elegans grown on CS180 produced fewer progeny when compared to animals grown on OP50 (Figure 1C, Figure 1\u2014source data 1). This CS180-dependent phenotype was not because the animals had restricted food intake, since they showed no delay in developmental rates (Figure 1B). In fact, CS180-fed animals exhibited faster fertilization rates during the first 24 hr of adulthood (Figure 1D, Figure 1\u2014source data 1), which is opposite of what would be expected for food level-restricted animals (Maier et al., 2010).\n\nIn C. elegans, the total number of sperm made before the gametogenesis switch to oogenesis can limit the number of progeny (Ward and Carrel, 1979). Consistent with this idea, animals fed CS180 not only had fewer progeny (Figure 1C, Figure 1\u2014source data 1), but also fewer sperm than animals on OP50 (Figure 1E). To test the hypothesis that the lower sperm number in C. elegans on CS180 was because of an earlier switch from spermatogenesis to oogenesis, we examined when the oogenesis marker lin-41::GFP (Spike et al., 2014; Noble et al., 2016) was first expressed (Figure 1F to H, Figure 1\u2014source data 1). We found that a significant fraction of worms on CS180 began to express the oogenesis marker lin-41::GFP at the mid-L4 stage, which was before the marker was observed in any worms on OP50 (Figure 1H, Figure 1\u2014source data 1). Worms fed OP50 started to express lin-41::GFP only at late L4 (34%), when most animals on CS180 (69%) had already expressed the GFP marker (Figure 1H, Figure 1\u2014source data 1). To confirm further the effect of the CS180 diet on oogenesis, we also analyzed the initial expression of a second oogenesis reporter, oma-1::GFP (Detwiler et al., 2001; Lin, 2003), on CS180 or OP50. Similar to what we observed with lin-41::GFP, worms fed CS180 started to express oma-1::GFP at mid-L4 (20%), again before any OP50-fed worms (Figure 1I, Figure 1\u2014source data 1). The gonads of CS180-fed animals also had more arrested oocytes than the gonads of age-matched adults on OP50 (Figure 1J). Thus, our data are consistent with the hypothesis that the fewer progeny on CS180 can reflect earlier oogenesis on this food source. Together with the increased rate of fertilization in CS180-fed animals (Figure 1D, Figure 1\u2014source data 1), which would depend on the oocyte maturation rate (McCarter et al., 1999), our data suggest that CS180 promotes earlier and faster oocyte development.\n\n### CS180-derived cues that affect oocyte development are absent from the K-12 HT115 bacteria and Serratia marcescens\n\nOP50 is derived from an E. coli B strain (Brenner, 1974); CS180, from an E. coli K-12 strain (Pradel et al., 1992). One of the differences between the two bacterial strains is the outer core structures of the lipopolysaccharides (LPS) on their cell walls (Maier et al., 2010, and references therein). The OP50 LPS is shorter than the CS180 LPS (Figure 2A; Maier et al., 2010). To test if this difference in LPS alters oogenesis onset and fertilization rate, we examined wild-type C. elegans oocyte development on E. coli CS2429, which is a K-12 strain that is derived from CS180 but has a truncated LPS (Figure 2A; Pradel et al., 1992; Zhang et al., 2006). Interestingly, like on CS180, worms on CS2429 still displayed a lower number of progeny (Figure 2B, Figure 2\u2014source data 1), early oogenesis (Figure 2C, Figure 2\u2014source data 1), and faster fertilization (Figure 2D, Figure 2\u2014source data 1). This indicates that this difference in LPS structure is insufficient to affect oocyte development.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/83224/elife-83224-fig2-v2.jpg)\n\n**Figure 2.:** (A) The LPS of E. coli B and K-12 strains. CS2429 is derived from CS180 and has a truncated LPS (Maier et al., 2010, and references therein). The dotted blue line indicates the site of truncation. (B\u2013D) The shorter LPS of CS2429 elicited the same total progeny (B), a similar pattern of oogenesis reporter expression (C), and the same rate of fertilization (D), as the longer LPS of the parent strain CS180. (E\u2013F) C. elegans oogenesis onset (E) and fertilization rates (F) on the E. coli K-12 HT115 bacteria were compared to those of C. elegans on OP50 and CS180. (G\u2013H) Oogenesis at mid-L4 (G) and fertilization rates at 22 hr (H) on OP50 and CS180 were compared to oogenesis onset (G) and fertilization rates (H) on OP50 that had been supplemented with: (i) CS180-conditioned Luria broth (LB) media (med) or (ii) CS180-conditioned media that was filtered through a 0.45 \u03bcm nylon membrane (filtrate). For comparison, worms on OP50 that had been supplemented with LB alone or with LB that was filtered through a nylon membrane are also shown. (I) Two strains of the pathogen S. marcescens, Db1140 and Db11, did not induce early oogenesis. See Figure 2\u2014source data 1 for the sample sizes and complete statistical analyses of the data in this figure. Error bars represent standard deviations. * indicates p<0.05; **, p<0.01; ***, p<0.001; and suppl, supplementation.\n\nSince CS180 is an E. coli K-12 strain, we then asked if other K-12 bacteria elicit the same oocyte physiological responses. While worms on the E. coli K-12 HT115 bacteria (Takiff et al., 1989; Dasgupta et al., 1998) produced a similar number of progeny as worms fed CS180 (Figure 2\u2014source data 1), HT115-fed worms did not exhibit an early oogenesis onset (Figure 2E, Figure 2\u2014source data 1) or faster fertilization rates (Figure 2F, Figure 2\u2014source data 1). This suggests that the cue(s) that cause early oogenesis and faster fertilization (i) might differ from the cue(s) that modulate an animal\u2019s number of progeny and (ii) are specific to CS180 and its derivative CS2429.\n\nThus, we explored the potential nature of the CS180-derived cue(s) that affect oocyte physiology and supplemented OP50-fed worms with CS180-conditioned media. We found that these animals showed early expression of the oogenesis marker at mid-L4 and had faster fertilization rates, which are unlike the unsupplemented OP50-fed controls (Figure 2G and H, Figure 2\u2014source data 1). However, filtration of the CS180-conditioned media through a nylon membrane, which has a 0.45 \u03bcm diameter pore size, removed the cue(s) that promote early oocyte development and fast fertilization (Figure 2G and H, Figure 2\u2014source data 1). Because the cue(s) were lost by filtration through the nylon membrane filters (Hasegawa et al., 2003), the CS180-derived cue(s) that modulate oocyte physiology are unlikely to be small molecules, such as free metabolites.\n\nBecause it remains possible that the CS180-derived cue(s) stimulate C. elegans innate immunity, which in turn modulate oocyte fate and physiology, we also exposed wild-type worms to two strains of the more pathogenic bacteria S. marcescens (Pradel et al., 2007). The absence of early oogenesis onset on S. marcescens (Figure 2I, Figure 2\u2014source data 1) suggests that the CS180 responses are not general innate immune responses. Our findings also show that bacterial pathogenicity is insufficient to promote earlier oocyte development.\n\n### Food type modulates oogenesis onset and fertilization rate at different critical periods during development\n\nTo identify the critical periods for food type-dependent effects on onset of oogenesis and on fertilization, we grew worms on one food type and switched them to the second food type at different stages of larval development. Worms that were switched from OP50 to CS180 at the first larval stage (L1; Figure 3\u2014source data 1) or at the early part of the third larval stage (L3) behaved like worms that were fed CS180 continuously (Figure 3A and B, Figure 3\u2014source data 1). These worms produced less progeny (Figure 3A, Figure 3\u2014source data 1) and expressed the oogenesis reporter earlier than animals grown continuously on OP50 (Figure 3B, Figure 3\u2014source data 1). Since the germ cells of worms transferred to CS180 still responded to this food source, this suggests that the germ cell decision to switch to oogenesis occurs after early L3.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/83224/elife-83224-fig3-v2.jpg)\n\n**Figure 3.:** Wild-type C. elegans were shifted between E. coli OP50 and CS180 at different stages of larval development. (A\u2013B) The critical period for food-type modulation of total progeny (A) and oogenesis onset (B) is around late L3. (C\u2013F) The critical period for modulation of fertilization is after early L4. See Figure 3\u2014source data 1 for the sample sizes and complete statistical analyses of the data in this figure. Error bars represent standard deviations. * indicates p<0.05; **, p<0.01; ***, p<0.001; ns, not significant; and leth, lethargus.\n\nIn contrast, animals that were transferred from OP50 to CS180 at late L3 or later developmental stages showed the phenotype of animals that were always grown on OP50 (Figure 3A and B, Figure 3\u2014source data 1), which suggests that the germ cell decision to switch to oogenesis has already been made by late L3. This is further supported by our findings that the germ cells of worms that underwent the reciprocal switch from CS180 to OP50 responded consistently to OP50 only until early L3, but not at later stages (Figure 3A and B, Figure 3\u2014source data 1). Thus, food type can only modulate onset of oogenesis before late L3, consistent with a prior study that showed that germ cell fate determination occurs during this stage (Barton and Kimble, 1990).\n\nHowever, the critical window for the food-type effect on fertilization rate is after the early part of the fourth larval stage (L4; Figure 3C to F, Figure 3\u2014source data 1). Worms switched between one food source to the second food source at early L4 (Figure 3D, Figure 3\u2014source data 1) had the same fertilization rates as animals consistently fed the second food source. Animals switched at mid-L4 had a delayed and less robust fertilization response to the second food source (Figure 3E, Figure 3\u2014source data 1), whereas a food switch immediately after the molt into adulthood had no effect on fertilization rates (Figure 3F, Figure 3\u2014source data 1). Thus, fertilization rate is influenced by food type until just before C. elegans molts into a young adult.\n\n### A specific sensory neuron regulates the food-type differences in total progeny\n\nWe have previously shown that sensory perception of food type can alter C. elegans longevity (Maier et al., 2010), which led us to hypothesize that sensory neurons will also influence the number of progeny the animals produce on the different food sources. Accordingly, we tested mutants that impaired different subsets of sensory neurons. Unlike wild type, the osm-3 mutant, which has many defective sensory neurons (Tabish et al., 1995; Taylor et al., 2021), produced the same number of offspring on both OP50 and CS180 (Figure 4A, Figure 4\u2014source data 1). This suggests that at least some of the osm-3-expressing neurons alter the worm\u2019s total progeny in response to food type.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/83224/elife-83224-fig4-v2.jpg)\n\n**Figure 4.:** (A) Food-type differences in total progeny were lost in sensory mutants osm-3 and odr-1 and in animals lacking the ASJ neurons. (B) Total progeny of the strong reduction-of-function mutant daf-2(e1370) and the daf-16(mu86) loss-of-function mutant on OP50 and CS180. (C\u2013D) OP50- and CS180-dependent progeny of ILP deletion mutants, daf-28(tm2308) and ins-1(nr2091) (C) and ins-6(tm2416) (D). (E) Epistasis analysis between the food type-dependent total progeny phenotypes of daf-16(mu86) and ins-6(tm2416). While the animals in (A) and (C\u2013E) were grown continuously at 25\u00b0C, the animals in (B) were shifted from 20\u00b0C to 25\u00b0C at the early L3 stage, because daf-2 mutants arrest developmentally prior to the L3 stage at 25\u00b0C but not at 20\u00b0C. See Figure 4\u2014source data 1 for the sample sizes and complete statistical analyses of the data in this figure. Error bars represent standard deviations. ** indicates p<0.01; ***, p<0.001; and ns, not significant.\n\nSimilar to osm-3 mutants, a mutation in the guanylyl cyclase gene odr-1, which impairs a different subset of sensory neurons (L\u2019Etoile and Bargmann, 2000; Taylor et al., 2021), also produced the same number of progeny on OP50 and CS180 (Figure 4A, Figure 4\u2014source data 1). However, unlike osm-3 and odr-1 mutants, but like wild type, a defect in the transcription factor gene odr-7, which causes the specific loss of the olfactory neuron AWA (Sengupta et al., 1994), led to more progeny on OP50 than on CS180 (Figure 4A, Figure 4\u2014source data 1). This suggests that there is some neuronal specificity in the regulation of total progeny.\n\nosm-3 and odr-1 mutants share defects in several sensory neurons, including ASI, ASJ, and ASK (Tabish et al., 1995; L\u2019Etoile and Bargmann, 2000; Taylor et al., 2021). Individual ablation of the ASI and ASK neurons did not abolish the food type-dependent differences in total progeny (Figure 4A, Figure 4\u2014source data 1). Interestingly, loss of the ASJ neurons suppressed the differences in progeny number (Figure 4A, Figure 4\u2014source data 1) on OP50 versus CS180. Thus, our data show that, unlike ASI, ASK, and AWA, the neuron ASJ modulates the worm\u2019s total progeny in response to food cues.\n\n### The ILP ins-6 also regulates food-type differences in total progeny\n\nThe number of C. elegans progeny is also subject to regulation by insulin signaling (reviewed by Murphy and Hu, 2013), which led us to test whether insulin signaling will modulate the food-type differences in progeny number. Reduction-of-function mutations in daf-2, the C. elegans insulin-like growth factor receptor (Kimura et al., 1997; Gems et al., 1998), reduced or abolished the food-type differences in total progeny (Figure 4B, Figure 4\u2014source data 1). In contrast, a loss-of-function mutation in daf-16, the FOXO-like transcription factor that is antagonized by DAF-2 (Lin et al., 1997; Ogg et al., 1997), still led to food-type differences in the number of progeny on OP50 and CS180 (Figure 4B and E, Figure 4\u2014source data 1). Together these findings indicate that insulin signaling regulates total progeny in response to food cues.\n\nBecause ASJ neurons express at least three potential ILP ligands for the DAF-2 receptor, INS-1 (Kodama et al., 2006; Tomioka et al., 2006), INS-6 (Cornils et al., 2011), and DAF-28 (Li et al., 2003; Taylor et al., 2021), we tested the effects of these three peptides on progeny number. Deletion of either ins-1 or daf-28 did not alter the OP50- or CS180-dependent progeny number (Figure 4C, Figure 4\u2014source data 1). However, ins-6 deletion mutants lost the food-type differences in total progeny (Figure 4D and E, Figure 4\u2014source data 1), which were restored when daf-16 was also deleted (Figure 4E, Figure 4\u2014source data 1). Together these data suggest that there are specific ILPs, such as INS-6, that modulate food type-dependent total progeny, which depend on the insulin pathway transcription factor DAF-16.\n\n### ASJ sensory neurons promote early oogenesis on a CS180 bacterial diet\n\nSince sensory neurons modulate total progeny (Figure 4A, Figure 4\u2014source data 1), we next asked whether the same sensory neurons will also alter the timing of oogenesis in response to food-derived cues. We compared in parallel the onset of oogenesis in osm-3 mutants and in animals lacking their ASI or ASJ neurons.\n\nSimilar to the loss of food-type differences in its total progeny (Figure 4A, Figure 4\u2014source data 1), osm-3 mutants failed to exhibit early oogenesis on CS180 during mid-L4 (Figure 5A, Figure 5\u2014source data 1). This suggests that there are osm-3-expressing neurons that promote early oogenesis onset in response to food cues. In contrast, worms lacking ASI neurons showed early oogenesis during mid-L4 (Figure 5A, Figure 5\u2014source data 1). Yet, the continued low level of oogenesis during late L4 in ASI-ablated worms on CS180 might suggest that ASI plays a minor role in oogenesis and that the food-type differences in total progeny can be uncoupled from the food-type differences in oogenesis onset.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/83224/elife-83224-fig5-v2.jpg)\n\n**Figure 5.:** (A) Food type-dependent expression of the oogenesis reporter lin-41::GFP in control and different sensory mutants. (B\u2013D) lin-41::GFP expression in daf-2 reduction-of-function mutants (B), daf-16(mu86) (C), and in insulin-like peptide (ILP) deletion (\u0394) mutants (D). (E) Food type-dependent expression of a second oogenesis reporter, oma-1::GFP, in control, ASJ-ablated and ins-6(tm2416) worms. (F) Loss of daf-16 did not rescue the delay in oogenesis onset in ins-6(tm2416) mutants. Controls and daf-2 mutants in (B) were shifted from 20\u00b0C to 25\u00b0C as early L3s. In contrast, all other animals were continuously grown at 25\u00b0C on OP50 (white bars) or CS180 (gray bars). See Figure 5\u2014source data 1 for the sample sizes and complete statistical analyses of the data in this figure. * indicates p<0.05; **, p<0.01; ***, p<0.001; and leth, lethargus.\n\nMore importantly, ASJ-ablated worms showed no early expression of the oogenesis marker lin-41::GFP at mid-L4 and decreased lin-41::GFP even during late L4 and lethargus (Figure 5A, Figure 5\u2014source data 1). ASJ-ablated worms also did not show any mid-L4 expression of a second oogenesis marker, oma-1::GFP, which was again different from controls (Figure 5E, Figure 5\u2014source data 1). Thus, loss of ASJ delayed oogenesis based on the temporal expression of the two oogenesis reporters, lin-41::GFP and oma-1::GFP. These findings demonstrate that ASJ neurons not only modulate the animal\u2019s number of progeny, but also play a major role in promoting early oogenesis.\n\n### ins-6 promotes food type-dependent early oogenesis independent of the daf-16/FOXO transcription factor\n\nHow does ASJ promote oogenesis? Again, the ILPs expressed by ASJ are good candidates through which ASJ affects this process, since insulin signaling is an important regulator of oocyte development across metazoans (reviewed by Das and Arur, 2017). Indeed, both daf-2 reduction-of-function mutants lost the early expression of the oogenesis marker lin-41::GFP on CS180 (Figure 5B, Figure 5\u2014source data 1), whereas daf-16 deletion mutants continued to have early oogenesis on CS180 (Figure 5C, Figure 5\u2014source data 1). Together these observations suggest that insulin signaling also mediates the food-type effects on worm oogenesis.\n\nTo determine whether the same ILP that regulates total progeny again regulates the timing of oogenesis, we assayed the effects of ins-6 on oogenesis and compared these to the effects of ins-1 and daf-28. Similar to their lack of effect on food type-dependent total progeny (Figure 4C, Figure 4\u2014source data 1), the deletion of ins-1 or daf-28 had no effect on the OP50- or CS180-dependent onset of oogenesis (Figure 5D, Figure 5\u2014source data 1). However, ins-6 mutants had no early expression of lin-41::GFP (Figure 5D and F, Figure 5\u2014source data 1) or oma-1::GFP (Figure 5E, Figure 5\u2014source data 1) at mid-L4 on CS180. Thus, our data show that of the three ILPs tested, ins-6 alone is sufficient to modulate the food type-dependent onset of oogenesis (Figures 5 and 6).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/83224/elife-83224-fig6-v2.jpg)\n\n**Figure 6.:** (A) ins-6p::mCherry transcriptional reporter drcSi68 expression in ASI (n=29, OP50; n=29, CS180) and ASJ (n=30, OP50; n=30, CS180) neurons during mid-to-late L3. (B) lin-41::GFP expression in ins-6(tm2416) deletion mutants that were either rescued with: (i) the wild-type ins-6 genomic locus in two independent lines, jxEx27 and jxEx28; (ii) ASI neuron-specific expression of ins-6; or (iii) ASJ neuron-specific expression of ins-6 in two independent lines, jxEx58 and jxEx59. (C) lin-41::GFP expression in the (i) loxP-flanked ins-6(syb7547) homozygotes, (ii) ins-6(tm2416) homozygotes that carry the CRE recombinase transgene that is specifically expressed in ASJ (ASJp::CRE), (iii) ins-6(tm2416) heterozygotes that carry the ASJp::CRE transgene, (iv) ins-6(tm2416)/ins-6(syb7547) transheterozygotes, and (v) animals in which ins-6 was deleted specifically from ASJ but remains present in ASI. See Figure 6\u2014source data 1 for the sample sizes and complete statistical analyses of the data in this figure. * indicates p<0.05; **, p<0.01; ***, p<0.001; and leth, lethargus.\n\nSurprisingly, however, the lack of early oogenesis at mid-L4 in ins-6 mutants cannot be rescued by the loss of daf-16 (Figure 5F, Figure 5\u2014source data 1), which suggests that ins-6 modulates early oogenesis independent of daf-16. This is reminiscent of the daf-16-independence of daf-2 in promoting germline meiotic progression in response to food availability (Lopez et al., 2013). The daf-16 independence of ins-6 in regulating oogenesis also indicates that the mechanisms that underlie food type-dependent oogenesis onset are not completely the same as those that underlie the food-type differences in total progeny.\n\n### ASJ neurons modulate food type-dependent oogenesis onset through INS-6\n\nDuring the larval stages, ins-6 is expressed in two sensory neurons, ASI and ASJ (Cornils et al., 2011). Using the drcSi68 transcriptional reporter, which expresses ins-6p::mCherry in ASI and ASJ, we asked whether the ins-6 reporter expression changes when the animals are fed OP50 versus CS180. At mid-to-late L3, the critical period when the food source modulates oogenesis onset (Figure 3B, Figure 3\u2014source data 1), worms grown on CS180 showed higher ins-6p::mCherry expression in ASJ, but not in ASI, unlike worms on OP50 (Figure 6A). We also found that ASJ-expressed ins-6, but not ASI-expressed ins-6, is sufficient to rescue the oogenesis onset phenotype of ins-6 mutants, comparable to the rescue observed when ins-6 expression is driven from its own promoter (Figure 6B, Figure 6\u2014source data 1). These findings suggest that ASJ modulates early onset of oogenesis by producing INS-6.\n\nTo confirm that INS-6 does act from ASJ to modulate oogenesis, we next removed the ins-6 coding sequences from the ASJ neurons, but not from ASI neurons. Loss of ins-6 from ASJ delayed oogenesis, despite the continued presence of ins-6 in ASI (Figure 6C, Figure 6\u2014source data 1). Thus, we show that ASJ-expressed ins-6 is both sufficient and necessary to promote early oogenesis on the CS180 food source.\n\n### AWA olfactory neurons and insulin receptor signaling regulate food type-dependent fertilization rates through different mechanisms\n\nNext, we asked if sensory neurons also influence fertilization. While the odr-1 mutation had little effect on food type-dependent fertilization rates (Figure 7\u2014source data 1), a mutation in either osm-3 or another sensory gene, the G protein \u03b1 subunit odr-3 (Roayaie et al., 1998), suppressed the faster fertilization on CS180 (Figure 7A and B, Figure 7\u2014source data 1). This again suggests a role for sensory neurons in the food type-dependent modulation of fertilization rates.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/83224/elife-83224-fig7-v2.jpg)\n\n**Figure 7.:** (A\u2013B) Sensory mutations influenced the food-type effects on fertilization rates. (C\u2013I) Animals that lack the sensory neurons ADF (C), ASH (D), ASI (E), ASK (F), ASJ (G), AWB (H), and AWC (I). (J) Animals lacking the sensory neuron AWA in odr-7 mutants. (K) Animals that lack both AWA and ASJ. Controls for (G and K) carried the ofm-1p::gfp marker in the wild-type background. All other controls (A\u2013F, H\u2013J) were wild-type worms. (L) Food type-dependent expression of the oogenesis reporter lin-41::GFP in controls or animals lacking AWA and/or ASJ. See Figure 7\u2014source data 1 for the sample sizes and complete statistical analyses of the data in this figure. ** indicates p<0.01; ***, p<0.001; and leth, lethargus.\n\nBoth osm-3 and odr-3 are expressed in several chemosensory neurons, including ADF, ASH, ASI, ASK, and ASJ (Tabish et al., 1995; Roayaie et al., 1998; Taylor et al., 2021). Ablation of either ADF or ASH had no effect on the food type-induced variation in fertilization rates (Figure 7C and D, Figure 7\u2014source data 1). While the global fertilization rates were lower on OP50 and CS180, loss of either ASI or ASK again did not abolish the food-type differences in fertilization (Figure 7E and F, Figure 7\u2014source data 1). In addition, the ASJ neurons, which modulate onset of oogenesis (Figure 5A and E, Figure 5\u2014source data 1), did not affect fertilization rates on OP50 versus CS180 (Figure 7G, Figure 7\u2014source data 1), suggesting that ASJ specifically influences oogenesis, but not fertilization. Thus, our data suggest that other neurons expressing either osm-3 and/or odr-3, either individually or in combination, will modulate food type-dependent fertilization.\n\nWe also asked if the odr-3-expressing olfactory neurons AWA, AWB, and AWC (Roayaie et al., 1998) play a role in this process. While loss of AWB and AWC did not eliminate the fertilization rate differences on OP50 and CS180 (Figure 7H and I, Figure 7\u2014source data 1), loss of AWA (Sengupta et al., 1994; Yoshida et al., 2012) suppressed the food-type differences in fertilization (Figure 7J, Figure 7\u2014source data 1). However, this AWA-dependent regulation of fertilization is independent of the AWA-specific olfactory receptor ODR-10 (Figure 7\u2014source data 1; Sengupta et al., 1996). This suggests that AWA neurons regulate fertilization in response to food cues that are not ligands of ODR-10.\n\nNext, we asked if AWA and ASJ act synergistically during fertilization. However, we found no synergistic effect between the two neurons in regulating this process (compare Figure 7G and J to K, Figure 7\u2014source data 1). To determine if AWA neurons specifically regulate fertilization, we then examined when oogenesis begins in animals lacking AWA. We found that absence of AWA had no effect on early onset of oogenesis on CS180 (Figure 7L, Figure 7\u2014source data 1), similar to its lack of effect on progeny number (Figure 4A, Figure 4\u2014source data 1). Moreover, we observed no synergistic effect between AWA and ASJ in regulating oogenesis onset (Figure 7L, Figure 7\u2014source data 1). Thus, on given diets, we show that there are specific neurons that influence distinct aspects of oocyte development and physiology: ASJ for early oogenesis versus AWA for fertilization.\n\nTo explore whether AWA regulates fertilization through insulin signaling, we assayed the food type-dependent fertilization rates of insulin signaling mutants. The weak reduction-of-function mutant daf-2(e1368) or the null daf-16(mu86) mutant had little or no significant effect on fertilization (Figure 8A and C, Figure 8\u2014source data 1), but the stronger reduction-of-function mutant daf-2(e1370) (Lin et al., 1997; Gems et al., 1998) suppressed global fertilization rates (Figure 8B, Figure 8\u2014source data 1). However, the daf-2(e1370) mutant fertilization rate on OP50 still differed from that on CS180 (Figure 8B, Figure 8\u2014source data 1). This suggests that the DAF-2 receptor modulates overall fertilization rates, but not necessarily in response to food-derived cues. For this reason, the AWA food type-dependent influence on fertilization differs from the effects of insulin receptor signaling on this process.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/83224/elife-83224-fig8-v2.jpg)\n\n**Figure 8.:** (A) The weak reduction-of-function daf-2(e1368) mutant. (B) The strong reduction-of-function daf-2(e1370) mutant. (C\u2013F) daf-16 null mutants and the three insulin-like peptide (ILP) mutants, ins-6, daf-28, or ins-1. Controls and daf-2 mutants in (A\u2013B) were shifted from 20\u00b0C to 25\u00b0C as early L4s, whereas all other animals were continuously grown at 25\u00b0C on OP50 (black closed circles for wild type; black closed triangles for the indicated mutants) or CS180 (gray open circles for wild type; blue open triangles for the indicated mutants). See Figure 8\u2014source data 1 for the sample sizes and complete statistical analyses of the data in this figure.\n\nTo test if the ILPs that regulate fertilization also differ from the ILPs that regulate total progeny or oogenesis onset, we measured the effects of ins-6, daf-28, or ins-1 on fertilization. A single deletion of any of these ILPs had no effect on fertilization rates (Figure 8D to F, Figure 8\u2014source data 1), and deletion mutant combinations of these ILPs (Figure 8\u2014source data 1) did not exhibit any robust phenotypes that mirrored those of the strong daf-2(e1370) mutant phenotypes. This implies that there are multiple ILPs that act through the DAF-2 receptor to regulate fertilization. Notably, our findings indicate that the set of ILP activities that regulates fertilization is distinct from the set of ILPs that regulates onset of oogenesis.\n\n## Discussion\n\nGermline development must be coordinated with existing environmental resources to optimize population survival. The sensory system is an important interface between the environment and an animal\u2019s physiology, which suggests a role for the sensory system in germline biology. Not surprisingly, sensory neurons have been implicated in germline proliferation or senescence in C. elegans (Dalf\u00f3 et al., 2012; Sowa et al., 2015; Aprison and Ruvinsky, 2017) and potentially in gamete development in mammals (Boehm et al., 2005; Yoon et al., 2005). Here, we show that distinct sensory neurons acting through insulin-dependent and -independent signaling mechanisms influence specific steps in oocyte development and physiology in response to food-derived cues. Thus, discrete aspects of oocyte biology\u2014oocyte fate determination and successful oocyte fertilization\u2014are subject to different sets of cues that are sensed by different cells that work together to control the production of an animal\u2019s total progeny.\n\n### The sensory neurons that regulate oogenesis onset differ from those that affect fertilization\n\nUnlike the olfactory neuron AWA, the chemosensory neuron ASJ promotes early onset of oogenesis (Figure 7L, Figure 7\u2014source data 1, Figure 9). This ASJ-dependent effect does not appear to be a general response to stress, like pathogen stress (Figure 2I, Figure 2\u2014source data 1), but a response to specific food cues that are likely not small metabolites (Figure 2G, Figure 2\u2014source data 1). In contrast, the olfactory neuron AWA promotes the increased fertilization rates on the CS180 food source, but not ASJ and the other neurons that we have so far tested (Figure 7C to K, Figure 7\u2014source data 1, Figure 9). Together these data suggest that the sensory cue(s) that promote early oogenesis differ from the sensory cue(s) that affect fertilization.\n\n![Figure 9.](https://cdn.elifesciences.org/articles/83224/elife-83224-fig9-v2.jpg)\n\n**Figure 9.:** Insulin-like peptide (ILP) INS-6 acts from ASJ neurons to promote early onset of oogenesis. Olfactory neuron AWA promotes oocyte fertilization through mechanism(s) distinct from DAF-2 insulin receptor signaling, which in turn regulates fertilization independent of food type through the activities of other ILP(s).\n\nWhile AWA has a major role in food type-dependent fertilization, it is most likely not the only sensory neuron involved in this process. The osm-3 mutation, which impairs several sensory neurons (Tabish et al., 1995), also partly suppresses the faster fertilization on CS180 (Figure 7A, Figure 7\u2014source data 1). This raises the likelihood that other neurons regulate fertilization. In fact, we find that worms lacking ASI, ASK, and AWB neurons fertilize at a slower rate at certain or at all time points on OP50 and CS180, when compared to wild type (Figure 7E, F, and H, Figure 7\u2014source data 1). However, these animals still exhibit significant food-type differences in their fertilization rates (Figure 7E, F, and H, Figure 7\u2014source data 1). This means that ASI, ASK, and AWB are not required to regulate food-type effects on fertilization, but might have a role that are independent of food. A mechanism that includes several neurons to regulate fertilization would be expected, since it is a dynamic process that proceeds for several days. This makes it necessary for the worms to sense environmental changes continuously and adjust their reproductive physiology accordingly. Thus, the involvement of multiple sensory neurons would make for a more sensitive and efficient physiology.\n\nInterestingly, at least one of the sensory neurons that inhibits germline proliferation (Aprison and Ruvinsky, 2017), ASJ, also promotes food type-dependent early oogenesis (this work). This suggests that this sensory neuron might regulate oogenesis onset by regulating the first switch that occurs in the C. elegans germline, mitosis (i.e., proliferation) to meiosis (i.e., differentiation) (Kimble and Crittenden, 2007). Consistent with this hypothesis, we demonstrate that food type can only modulate onset of oogenesis before the late L3 stage (Figure 3B, Figure 3\u2014source data 1), which coincides with the time before germ cells enter meiosis (Kimble and Crittenden, 2007). Thus, some of the sensory neurons that influence the germline might have more than one function at different stages of germ cell development.\n\n### Oocyte development requires distinct insulin-like signaling mechanisms\n\nInsulin signaling is an important regulator of oogenesis, where impaired signaling leads to reproductive deficits across many species (reviewed by Das and Arur, 2017). Here, we find that specific ILPs regulate discrete stages of oocyte physiology. The ILP INS-6 acts from the ASJ neuron to modulate food type-dependent early oogenesis (Figure 6B and C, Figure 6\u2014source data 1, Figure 9), whereas it appears to have little or no effect on oocyte fertilization rates (Figure 8D, Figure 8\u2014source data 1). Although insulin receptor DAF-2 signaling does not appear to mediate the AWA neuron-dependent food-type effects on fertilization, DAF-2 does regulate overall fertilization independent of food sources (Figure 8B, Figure 8\u2014source data 1, Figure 9), where its ILP ligands remain to be identified. Since fertilization depends on oocyte maturation (McCarter et al., 1999), our data also suggest that different ILPs regulate specific stages of oogenesis\u2014onset versus maturation.\n\nOur findings further suggest that at least one of these ILPs, INS-6, can act independent of DAF-16, a known transcriptional effector of the DAF-2 receptor (Figure 5F, Figure 5\u2014source data 1). Distinct insulin-like signaling mechanisms\u2014daf-16-independent and daf-16-dependent\u2014might be necessary for optimal oogenesis and fertilization. A worm\u2019s number of progeny will likely be impacted by the timing of the spermatogenesis-to-oogenesis switch, as well as by successful fertilization. Hence, distinct ILP signaling mechanisms that can respond to disparate environmental cues might also explain the variability in the number of progeny of daf-16 mutants (Figure 4B and E, Figure 4\u2014source data 1).\n\nILPs might encode and integrate diverse cues that influence oocyte development. Considering the pleiotropic effects of insulin signaling on metazoan reproduction (Das and Arur, 2017), it is possible that the multiple ILPs present in other animals (Allen et al., 2015) will also have specific roles in coordinating oogenesis with fluctuations in a given environment. Thus, our study suggests that successful fertilization will require the careful integration of multiple environmental inputs through ILPs acting on the germline from neuronal, and potentially non-neuronal, cells.\n\n## Materials and methods\n\n### Worm strains and culture\n\n#### General maintenance\n\nC. elegans were cultured on NGM agar plates (Brenner, 1974) seeded with E. coli OP50, CS180, CS2429, or HT115 or with S. marcescens strains. All bacterial strains were initially cultured in Luria broth (LB) medium to logarithmic phase, prior to seeding the NGM agar plates. All animals were well-fed for at least two generations before any phenotypic analyses were conducted. All experiments were performed at 25\u00b0C, except for those that included the daf-2(e1368) or daf-2(e1370) temperature-sensitive mutations. daf-2 mutants grown as eggs until the L1 stage at 25\u00b0C become developmentally arrested (Gems et al., 1998). Thus, these mutants were first grown at 20\u00b0C, the permissive temperature, and shifted to 25\u00b0C before the critical periods defined for food-dependent modulation of oogenesis onset or fertilization, along with their corresponding controls. See Supplementary file 1 for the list of genotypes of the strains used in this study, which include the neuronally ablated animals. All strains generated in this study are available upon request.\n\n#### Generation of the lin-41::GFP daf-16(mu86) recombinant\n\nTo recombine lin-41::GFP with the daf-16(mu86) deletion on chromosome I, the strain carrying lin-41(tn1541[GFP::tev::s::lin-41]) (Spike et al., 2014) was crossed to a daf-16(mu86) homozygote. Among the subsequent progeny of the lin-41::GFP+/+daf-16 cross-progeny, we identified 1 recombination event out of 50 chromosomes, which was homozygous for lin-41::GFP and heterozygous for daf-16(mu86). This animal was allowed to reproduce to isolate the homozygous lin-41::GFP daf-16(mu86) recombinant strain.\n\n#### Generation of the loxP-flanked ins-6 strain, syb7547\n\nA region of the ins-6 genomic locus, which begins at the translation start codon in exon 1 until the translation stop codon in exon 2, was replaced with the ins-6 open reading frame (ORF) through CRISPR/Cas9 technology by SunyBiotech (Fujian, China). The inserted ORF, which lacks intron 1, was flanked at both ends with the loxP sequence, 5\u2019-ata act tcg tat agc ata cat tat acg aag tta t-3\u2019. The first loxP sequence was inserted 3 bases upstream of the start codon, whereas the second loxP sequence was inserted immediately after the stop codon. Two synonymous nucleotide changes were introduced into the inserted ORF to prevent its cleavage by Cas9 during the integration step: L14L (CTC to CTG) and C96C (TGC to TGT). syb7547 was outcrossed four times to the lin-41(tn1541[GFP::tev::s::lin-41]) strain (Spike et al., 2014) before analysis in the presence or absence of the trx-1p::nCRE recombinase transgene (ASJp::CRE). Like animals that have a wild-type ins-6 genomic locus, ins-6(syb7547) animals showed an earlier onset of oogenesis on CS180 during mid-L4 (Figure 6C, Figure 6\u2014source data 1) in the absence of the trx-1p::nCRE recombinase.\n\n#### Generation of the ASJp::CRE recombinase strain\n\nWe drove nCRE recombinase (gift of Mario de Bono) from the trx-1 promoter (Miranda-Vizuete et al., 2006; Cornils et al., 2011), with an unc-54 3\u2019 UTR from pPD95.77 (gift of Andrew Fire; pQZ116). The plasmid pQZ116 was introduced into a lin-41(tn1541[GFP::tev::s::lin-41]); ins-6(tm2416) animal, as an extrachromosomal array.\n\n### Measurement of the rate of development\n\nL1 larvae that hatched within a 2 hr period on each bacterial food source were collected and allowed to grow at 25\u00b0C for 32 hr on the same food source. The number of animals that were L1, L2, L3, or L4 larvae or adults were counted and represented as a percentage of the total population. The chi-square test was used to compare the stage distributions of worms fed the different bacteria.\n\n### Measurement of sperm and arrested oocytes\n\nTo count the number of sperm, 2- to 3-hr-old adult OD95 hermaphrodites that carry the transgene pie-1p::mCherry::his-58 (McNally et al., 2006) were anesthetized on a 1% agarose pad that contained 6 mM sodium azide. Series of Z-stack images of the spermathecae were captured at 100 ms as the exposure time, using a Nikon Eclipse Ti-E microscope and a Photometrics Coolsnap Myo cooled digital camera. The number of sperm was counted as red fluorescent puncta across the entire stacks.\n\nTo measure the number of arrested oocytes, young wild-type adult hermaphrodites were anesthetized as described above. The gonads were imaged under differential interference contrast microscopy. Counts from only one gonad arm were reported per animal. The Student\u2019s t-test was used to compare gamete counts between animals.\n\n### Measurement of total progeny\n\nIndividual young adult hermaphrodites were grown on a 35 mm plate seeded with the indicated bacteria. The mother was transferred to a new plate every 12\u201324 hr until reproduction ceased entirely. Total progeny that hatched were counted and reported. At least 10 animals were tested in each trial, and each strain studied was assayed in multiple independent trials. To analyze the daf-2 mutants and their corresponding controls, worms were first grown at 20\u00b0C, before they were transferred to 25\u00b0C at the early L3 stage. Statistical comparisons across multiple groups were determined by one-way ANOVA, followed by Tukey\u2019s correction.\n\n### Imaging the oogenesis reporters\n\nControl and mutants carrying lin-41::GFP (Spike et al., 2014) or oma-1::GFP (Lin, 2003) were imaged in parallel at \u00d7400 magnification, using a Nikon Eclipse Ti-E microscope and a Photometrics Coolsnap Myo cooled digital camera or a Nikon Eclipse Ni-U microscope and a Photometrics Coolsnap ES2 cooled digital camera. The exposure time was set at 500 ms, and the presence or absence of GFP was reported at different stages. The stages of the animal were determined by observing the vulval morphology under 400\u00d7, as described by Mok et al., 2015, and illustrated in Figure 1F. Based on the substages described by Mok et al., 2015, early L4 corresponded to the L4.0 to L4.2 substages; mid-L4, to the L4.3 to L4.5 substages; late L4, to the L4.6 to L4.8 substages, when the finger-like structures that formed at the sides of the vulva (red arrowheads in Figure 1F) had started to migrate ventrally; and lethargus to the L4.9 substage. To analyze the daf-2 mutants and their corresponding controls, worms were grown at 20\u00b0C and transferred to 25\u00b0C at the early L3 stage and then imaged at different subsequent stages. Statistical comparisons across multiple groups used the Fisher\u2019s exact test.\n\n### Imaging the ins-6p::mCherry transcriptional reporter\n\n#### Generation of the ins-6p::mCherry transcriptional reporter\n\nThe mCherry gene was flanked with 1.64 kb sequences upstream of the ins-6 start codon and 7.57 kb sequences downstream of the ins-6 stop codon. This reporter was cloned into a MosSCI vector for integration (pQL147) at the ttTi5605 site of chromosome II (Fr\u00f8kjaer-Jensen et al., 2008) to generate the ins-6p::mCherry drcSi68 worms.\n\n#### Imaging of drcSi68 worms\n\nThe worms were grown continuously on OP50 or CS180. Worms at the mid-to-late L3 stage were imaged at \u00d71000 magnification, using a Nikon Eclipse Ni-U microscope and a Photometrics Coolsnap ES2 cooled digital camera. The exposure time was set at 50 ms. Fluorescence intensities were quantified using a built-in fluorescence quantification algorithm (NIS-Elements, Nikon Instruments, Inc). Statistical analyses used two-way ANOVA and Tukey\u2019s correction.\n\n### Measuring the rates of fertilization\n\nFor every trial, 10\u201312 young adult worms were grown singly for a specified number of hours. At the end of each time point, the mother was bleached in a 5% sodium hypochlorite solution to release and count the fertilized embryos within its uterus. We also counted the number of hatched progeny that were laid on the plates. The total number of oocytes fertilized at each time point was the sum of the embryos within the uterus and those laid on the plates. We then divided the total number of fertilized oocytes by the duration of the collection to calculate the rate of fertilization at that specific time point. To analyze the daf-2 mutants and their corresponding controls, worms were first grown at 20\u00b0C and transferred to 25\u00b0C at the early L4 stage. Statistical comparisons across multiple groups were performed by two-way ANOVA and Tukey\u2019s correction.\n\nTo compare the food type-dependent changes in fertilization rates between wild type and different groups of animals, we normalized the 12 to 24 hr fertilization rates on CS180 to the 12 to 24 hr fertilization rates on OP50 of a given strain. The resulting normalized means were then compared to the food type-dependent change in fertilization rates of wild-type controls. Thus, p values were calculated by obtaining the t-score after comparing the percent change in wild type on CS180 versus OP50 to the percent change for the specific mutant on CS180 versus OP50.\n\n### Food-switch experiments\n\nC. elegans were grown on each bacteria and then transferred to the second bacteria at different stages. The early L3, late L3, early L4, and late L4 were determined based on the developmental rates of the animals on OP50 and CS180. L1 larvae that hatched within a 1 hr period at 25\u00b0C were collected and allowed to develop further at this temperature on the first bacteria for a certain duration before being shifted to the second bacteria: 20 hr for early L3, 24 hr for late L3, and 26 and 30 hr, respectively, for early and late L4. The early and late L4 stages were also confirmed by examining vulval morphology. To minimize contamination from the earlier bacteria, worms were allowed to roam on the second bacteria for 45\u201360 min and then transferred to a fresh plate seeded with the second bacteria. After this transfer, worms were assayed for total number of progeny, fertilization rate, or the expression of the lin-41::GFP oogenesis reporter.\n\nTo compare the food type-dependent changes in fertilization rates during the food switches, we normalized the 12 to 24 hr fertilization rates of the CS180-to-OP50 switched animals to the 12 to 24 hr fertilization rates of the OP50-to-CS180 switched animals. The p values of the subsequent normalized means were calculated by obtaining the t-score after comparing the percent change in food-switched animals to the percent change in non-switched controls on CS180.\n\n### Preparation of CS180-conditioned media for supplementation experiments\n\nFor each experimental trial, we grew a single colony of E. coli CS180 in 10\u201325 ml LB to an optical density of 0.5\u20130.6 at 600 nm (logarithmic growth phase) at 37\u00b0C. We then centrifuged 3\u20134 ml of the CS180 culture at 2380 \u00d7 g at 4\u00b0C for 15 min to remove the bacterial pellet and isolate the CS180-conditioned medium. We added 100 \u03bcl of the CS180-conditioned medium to each lawn of E. coli OP50 on 35 mm NGM agar plates to determine the effects of the medium on oogenesis onset and oocyte fertilization rates.\n\nIn addition, we passaged the CS180-conditioned medium through a sterile nylon membrane syringe filter with a 0.45 \u03bcm diameter pore size. We added 100 \u03bcl of the collected filtrate to a different lawn of OP50 on a 35 mm NGM agar plate to test whether the CS180-derived cue(s) that modulate oocyte physiology are small, free metabolites. To verify that the potential loss of CS180 cue(s) was not due to the cue(s) adsorbing to the membrane, we pre-incubated 3\u20134 ml of the CS180-conditioned medium with a postage stamp-sized 0.45 \u03bcm diameter nylon membrane. The pre-incubation was carried out for 10 min at room temperature using a nutator set at low speed. We also added 100 \u03bcl of the pre-adsorbed medium to other lawns of OP50 on 35 mm NGM agar plates. Pre-adsorption of the CS180-conditioned media with a nylon membrane filter still led to faster fertilization, similar to CS180-fed controls (Figure 2\u2014source data 1).\n\n### Statistical analysis\n\nStatistical analyses were done using GraphPad Prism 8 software. For more details, refer to above and the legends of the figures and their source data files.\n",
+      "created_at": "2025-12-04T03:47:54.682284Z"
+    },
+    {
+      "id": "c9db7e1d-f248-4317-b62b-1e5283bd96f8",
+      "submission_id": "4f01597f-f56b-4d8b-85ae-2aceed062649",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Patrick J Hu, https://ror.org/05dq2gs74 Vanderbilt University Medical Center United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.83224.sa0](https://doi.org/10.7554/eLife.83224.sa0)\n\nIn this work the authors perform a rigorous and detailed analysis of the cellular and molecular basis for food type influences on reproduction in C. elegans. Their experiments show convincingly that the effects of food type on oogenesis and fertilization are controlled by distinct cellular and molecular pathways. These important findings illuminate a role for insulin-like peptides in linking food type with reproduction and provide a framework for understanding evolutionary forces that may have shaped insulin-like signaling pathways in invertebrates.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Patrick J Hu, https://ror.org/05dq2gs74 Vanderbilt University Medical Center United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.83224.sa1](https://doi.org/10.7554/eLife.83224.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Specific sensory neurons and insulin-like peptides modulate food type-dependent oogenesis and fertilization in Caenorhabditis elegans\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, including Patrick J Hu as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Piali Sengupta as the Senior Editor.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1. Provide more insight into bacterial factors that might be contributing to the CS180 oogenesis phenotype;\n\n2. Perform oogenesis experiments using an additional readout distinct from the lin-41::GFP reporter;\n\n3. Strengthen evidence in support the roles of ASJ and INS-6 in mediating the CS180 early oogenesis phenotype (e.g., ASJ-specific deletion of ins-6);\n\n4. Address the issue of aberrant kinetics of lin-41::GFP expression in the ASJ ablation strain (potentially with a different oogenesis readout).\n\nReviewer #1 (Recommendations for the authors):\n\n1. Lines 84-85: I think the conclusion that the decreased progeny phenotype on CS180 is a readout for oogenesis is premature, as there are no data presented to show that the oocytes in CS180-fed animals are as functional as those from OP50-fed animals. Is there a reduction in cross-progeny from CS180-fed hermaphrodites compared to from those fed OP50?\n\n2. Lines 173-181 (Figures 4B and 4D): Two issues here. First, the daf-16 data presented in panels B and D differ. Which is correct? Second, daf-16;daf-2 double mutants should be tested; if daf-16 does not suppress the daf-2 phenotype, it might indicate that this is a daf-16-independent function of daf-2, which would be of interest.\n\n3. Lines 186-188 (Figure 4D): the daf-16;ins-6 data suggest that the roles of ins-6 and daf-16 in this process are complex. daf-16 is epistatic to ins-6, but daf-16 inactivation does not restore the food type difference in progeny that is observed in wild-type animals, as one might expect if INS-6 were simply inhibiting DAF-16 by activating DAF-2. This should be discussed.\n\n4. Lines 208-209 (Figure 5A): is the ASJ ablation phenotype daf-16-dependent?\n\n5. Lines 224-226 (Figure 5C): is the ins-6 mutant phenotype daf-16-dependent?\n\nReviewer #2 (Recommendations for the authors):\n\n1. CS180/OP50 mixing experiments could help indicate whether the onset of oogenesis phenotype, for example, is caused by the presence or absence of something in CS180. But even then, relative to a number of studies that have better defined what microbial determinants induce host changes, the current study is lacking in molecular insight.\n\n2. The daf-16 loss-of-function phenotype and suppression of daf-2 and ins-6 mutant phenotypes could be performed for the lin-41::GFP expression phenotype.\n\n3. If the authors insist on arguing that ins-6 expression in ASJ is induced by CS180 vs. OP50 to cause the observed phenotype, which as noted above seems somewhat implausible, then a strain carrying an ASJ-specific loss of ins-6 expression could be generated to provide support for the authors' model, both with respect to the involvement of ins-6 and ASJ in the observed phenotype.\n\nReviewer #3 (Recommendations for the authors):\n\nI'd like the authors to address two issues:\n\n1) The authors test only a very limited set of bacteria and do the experiments at a single temperature (25C), making the generality of these effects hard to extrapolate. In my opinion, it would be interesting to see whether the food type dependent effects on brood size are mirrored in a consistent manner by other K and B type E. coli strains from the C. elegans microbiome collection, or by microbiome strains predicted to correspond to LPS types equivalent to those studied here. ASJ is a known polymodal neuron, activated not only by water soluble cues possibly derived from bacterial LPS but also by temperature (with activity increased at higher temperatures). So, it would be interesting to determine if the observed food-type dependent effects in wild type worms are temperature dependent or independent (for example by testing at 20C and 25C).\n\n2) There is some variability in the assays measuring the fraction of worms expressing lin-41::GFP. Part of the issue is that the \"absolute time\" the germ cells spent developing into sperm before switching to oocytes was measured indirectly in the assay by measuring at \"developmental milestones\" in the soma (ie reaching a phenotypic milestone in the development the vulva) and not absolute time (eg hours post hatching, or hours post molt). I would have preferred the analysis to treat the data as a cumulative distribution of fraction expressing vs time and the comparison to focus on whether there is a shift in the distributions to later time points. But redoing the experiments as longitudinal measurements would be very laborious and unlikely to yield much of a difference. In any case, that shift should result in a change in the proportion of germ cells that developed into sperm, as shown for wild type in figure 1E. The number of sperm is the biologically relevant endpoint measurement, while the fraction expressing ling-41::GFP at some timepoints could be influenced by other variables, such as length of development (which is affected also by insulin signaling: extended in daf-2 mutants). The \"total sperm number before fertilization begins\" measurements were not done in the ins-6, odr-7 and would be very informative in testing the model that was proposed. In addition, it would be nice to get sperm counts in the daf-16 and daf-2 mutants, which did not fit quite neatly as ins-6 and odr-7 into the proposed division of labor between ASJ and AWA.\n",
+      "created_at": "2025-12-04T03:47:54.682284Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T03:47:54.682284Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T03:47:54.682284Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "dd44e7da-1584-49af-9f35-2962b959bb4c",
+      "content_id": "c5c5edda-5dca-4c5c-9eb9-6ccac8d19cd4",
+      "claim_id": "C1",
+      "claim": "C. elegans fed OP50 and CS180 developed through four larval stages at about the same rate.",
+      "claim_type": "EXPLICIT",
+      "source": "Wild-type C. elegans fed two different E. coli strains, OP50 and CS180, developed through four larval stages (L1 to L4; Figure 1A) at about the same rate (Figure 1B), before they molted into young adults.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Figure 1B showing stage distributions and statistical analysis (p=0.72)",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:47:54.682284Z"
+    },
+    {
+      "id": "1978eef4-25f7-4260-b48d-59456b93e0e6",
+      "content_id": "c5c5edda-5dca-4c5c-9eb9-6ccac8d19cd4",
+      "claim_id": "C2",
+      "claim": "C. elegans grown on CS180 produced fewer progeny compared to animals grown on OP50.",
+      "claim_type": "EXPLICIT",
+      "source": "However, C. elegans grown on CS180 produced fewer progeny when compared to animals grown on OP50 (Figure 1C, Figure 1\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1C and source data 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:47:54.682284Z"
+    },
+    {
+      "id": "45d5064a-4526-4a01-b4e8-f7e149a00cec",
+      "content_id": "c5c5edda-5dca-4c5c-9eb9-6ccac8d19cd4",
+      "claim_id": "C3",
+      "claim": "CS180-fed animals exhibited faster fertilization rates during the first 24 hr of adulthood.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, CS180-fed animals exhibited faster fertilization rates during the first 24 hr of adulthood (Figure 1D, Figure 1\u2014source data 1), which is opposite of what would be expected for food level-restricted animals (Maier et al., 2010).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data in Figure 1D and source data 1, with citation to prior work",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:47:54.682284Z"
+    },
+    {
+      "id": "324aaad5-2d0b-4dfc-ae7b-0b1cd81955dd",
+      "content_id": "c5c5edda-5dca-4c5c-9eb9-6ccac8d19cd4",
+      "claim_id": "C4",
+      "claim": "Animals fed CS180 had fewer sperm than animals on OP50.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this idea, animals fed CS180 not only had fewer progeny (Figure 1C, Figure 1\u2014source data 1), but also fewer sperm than animals on OP50 (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:47:54.682284Z"
+    },
+    {
+      "id": "a4968e63-9df9-4bfa-918b-746c4a6fe759",
+      "content_id": "c5c5edda-5dca-4c5c-9eb9-6ccac8d19cd4",
+      "claim_id": "C5",
+      "claim": "A significant fraction of worms on CS180 began to express the oogenesis marker lin-41::GFP at the mid-L4 stage, before the marker was observed in any worms on OP50.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that a significant fraction of worms on CS180 began to express the oogenesis marker lin-41::GFP at the mid-L4 stage, which was before the marker was observed in any worms on OP50 (Figure 1H, Figure 1\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data in Figure 1H and source data 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:47:54.682284Z"
+    },
+    {
+      "id": "d4f4acbf-6af2-414a-9254-67b8ad1dc20a",
+      "content_id": "c5c5edda-5dca-4c5c-9eb9-6ccac8d19cd4",
+      "claim_id": "C6",
+      "claim": "Worms fed CS180 started to express oma-1::GFP at mid-L4 before any OP50-fed worms.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to what we observed with lin-41::GFP, worms fed CS180 started to express oma-1::GFP at mid-L4 (20%), again before any OP50-fed worms (Figure 1I, Figure 1\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data in Figure 1I and source data 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:47:54.682284Z"
+    },
+    {
+      "id": "3d13159c-ddbf-41f6-aa9c-36519b7d1ac8",
+      "content_id": "c5c5edda-5dca-4c5c-9eb9-6ccac8d19cd4",
+      "claim_id": "C7",
+      "claim": "The gonads of CS180-fed animals had more arrested oocytes than the gonads of age-matched adults on OP50.",
+      "claim_type": "EXPLICIT",
+      "source": "The gonads of CS180-fed animals also had more arrested oocytes than the gonads of age-matched adults on OP50 (Figure 1J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1J",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:47:54.682284Z"
+    },
+    {
+      "id": "c96bbe8e-091a-4a5d-bcae-742791eb310b",
+      "content_id": "c5c5edda-5dca-4c5c-9eb9-6ccac8d19cd4",
+      "claim_id": "C8",
+      "claim": "The total number of sperm made before the gametogenesis switch to oogenesis can limit the number of progeny in C. elegans.",
+      "claim_type": "EXPLICIT",
+      "source": "In C. elegans, the total number of sperm made before the gametogenesis switch to oogenesis can limit the number of progeny (Ward and Carrel, 1979).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Ward and Carrel, 1979",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:47:54.682284Z"
+    },
+    {
+      "id": "5950a2e4-5ccb-4472-ae59-3b88dcc7e7ad",
+      "content_id": "c5c5edda-5dca-4c5c-9eb9-6ccac8d19cd4",
+      "claim_id": "C9",
+      "claim": "The rate of oocyte maturation determines the rate of fertilization in C. elegans hermaphrodites.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, in C. elegans hermaphrodites, the rate of oocyte maturation determines the rate of fertilization (McCarter et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to McCarter et al., 1999",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:47:54.682284Z"
+    },
+    {
+      "id": "4362ef02-8417-45ed-881c-119944f43a29",
+      "content_id": "c5c5edda-5dca-4c5c-9eb9-6ccac8d19cd4",
+      "claim_id": "C10",
+      "claim": "Worms on CS2429 displayed a lower number of progeny similar to CS180.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, like on CS180, worms on CS2429 still displayed a lower number of progeny (Figure 2B, Figure 2\u2014source data 1), early oogenesis (Figure 2C, Figure 2\u2014source data 1), and faster fertilization (Figure 2D, Figure 2\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data in Figure 2B and source data 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:47:54.682284Z"
+    },
+    {
+      "id": "b5f69b08-1b21-4413-aba8-2a989944945f",
+      "content_id": "c5c5edda-5dca-4c5c-9eb9-6ccac8d19cd4",
+      "claim_id": "C11",
+      "claim": "The difference in LPS structure between OP50 and CS180 is insufficient to affect oocyte development.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicates that this difference in LPS structure is insufficient to affect oocyte development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the observation that CS2429 (truncated LPS) shows same phenotype as CS180",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:47:54.682284Z"
+    },
+    {
+      "id": "55e04696-658a-4b0f-b016-cf405ab072ea",
+      "content_id": "c5c5edda-5dca-4c5c-9eb9-6ccac8d19cd4",
+      "claim_id": "C12",
+      "claim": "HT115-fed worms did not exhibit an early oogenesis onset.",
+      "claim_type": "EXPLICIT",
+      "source": "While worms on the E. coli K-12 HT115 bacteria (Takiff et al., 1989; Dasgupta et al., 1998) produced a similar number of progeny as worms fed CS180 (Figure 2\u2014source data 1), HT115-fed worms did not exhibit an early oogenesis onset (Figure 2E, Figure 2\u2014source data 1) or faster fertilization rates (Figure 2F, Figure 2\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data in Figure 2E and source data 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:47:54.682284Z"
+    },
+    {
+      "id": "acc7d292-9be6-4498-811a-8719c77a9eb4",
+      "content_id": "c5c5edda-5dca-4c5c-9eb9-6ccac8d19cd4",
+      "claim_id": "C13",
+      "claim": "Animals supplemented with CS180-conditioned media showed early expression of the oogenesis marker at mid-L4 and had faster fertilization rates.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that these animals showed early expression of the oogenesis marker at mid-L4 and had faster fertilization rates, which are unlike the unsupplemented OP50-fed controls (Figure 2G and H, Figure 2\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data in Figure 2G and H and source data 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:47:54.682284Z"
+    },
+    {
+      "id": "1468ae21-afc2-4f52-a8e4-769dc33e73a6",
+      "content_id": "c5c5edda-5dca-4c5c-9eb9-6ccac8d19cd4",
+      "claim_id": "C14",
+      "claim": "Filtration of CS180-conditioned media through a 0.45 \u03bcm nylon membrane removed the cue(s) that promote early oocyte development and fast fertilization.",
+      "claim_type": "EXPLICIT",
+      "source": "However, filtration of the CS180-conditioned media through a nylon membrane, which has a 0.45 \u03bcm diameter pore size, removed the cue(s) that promote early oocyte development and fast fertilization (Figure 2G and H, Figure 2\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data in Figure 2G and H and source data 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:47:54.682284Z"
+    },
+    {
+      "id": "dff2d9a0-d3ab-4490-8710-ab68a70a65dd",
+      "content_id": "c5c5edda-5dca-4c5c-9eb9-6ccac8d19cd4",
+      "claim_id": "C15",
+      "claim": "The CS180-derived cue(s) that modulate oocyte physiology are unlikely to be small molecules, such as free metabolites.",
+      "claim_type": "EXPLICIT",
+      "source": "Because the cue(s) were lost by filtration through the nylon membrane filters (Hasegawa et al., 2003), the CS180-derived cue(s) that modulate oocyte physiology are unlikely to be small molecules, such as free metabolites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from filtration experiment results, with citation to Hasegawa et al., 2003",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:47:54.682284Z"
+    },
+    {
+      "id": "9d665095-7933-44f8-b7e2-ee0cc1709bde",
+      "content_id": "c5c5edda-5dca-4c5c-9eb9-6ccac8d19cd4",
+      "claim_id": "C16",
+      "claim": "The absence of early oogenesis onset on S. marcescens suggests that the CS180 responses are not general innate immune responses.",
+      "claim_type": "EXPLICIT",
+      "source": "The absence of early oogenesis onset on S. marcescens (Figure 2I, Figure 2\u2014source data 1) suggests that the CS180 responses are not general innate immune responses.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inferred from experimental data showing no early oogenesis on S. marcescens",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:47:54.682284Z"
+    },
+    {
+      "id": "fab4e871-55ec-4d50-80c4-bb32804f7782",
+      "content_id": "c5c5edda-5dca-4c5c-9eb9-6ccac8d19cd4",
+      "claim_id": "C17",
+      "claim": "Bacterial pathogenicity is insufficient to promote earlier oocyte development.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings also show that bacterial pathogenicity is insufficient to promote earlier oocyte development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from S. marcescens experiments showing no early oogenesis",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:47:54.682284Z"
+    },
+    {
+      "id": "3ab63792-df2e-4328-9bb2-de14ee844d5a",
+      "content_id": "c5c5edda-5dca-4c5c-9eb9-6ccac8d19cd4",
+      "claim_id": "C18",
+      "claim": "Food type can only modulate onset of oogenesis before late L3.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, food type can only modulate onset of oogenesis before late L3, consistent with a prior study that showed that germ cell fate determination occurs during this stage (Barton and Kimble, 1990).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by food-switch experiments and citation to Barton and Kimble, 1990",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:47:54.682284Z"
+    },
+    {
+      "id": "b7999aa4-1c09-4cb1-ae1a-cdcecc55e7f7",
+      "content_id": "c5c5edda-5dca-4c5c-9eb9-6ccac8d19cd4",
+      "claim_id": "C19",
+      "claim": "The critical window for the food-type effect on fertilization rate is after the early part of the fourth larval stage (L4).",
+      "claim_type": "EXPLICIT",
+      "source": "However, the critical window for the food-type effect on fertilization rate is after the early part of the fourth larval stage (L4; Figure 3C to F, Figure 3\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by food-switch experiments shown in Figure 3C-F and source data 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:47:54.682284Z"
+    },
+    {
+      "id": "520cdd71-2d70-425e-a5e6-c3b07fb15140",
+      "content_id": "c5c5edda-5dca-4c5c-9eb9-6ccac8d19cd4",
+      "claim_id": "C20",
+      "claim": "The osm-3 mutant produced the same number of offspring on both OP50 and CS180.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, we tested mutants that impaired different subsets of sensory neurons. Unlike wild type, the osm-3 mutant, which has many defective sensory neurons (Tabish et al., 1995; Taylor et al., 2021), produced the same number of offspring on both OP50 and CS180 (Figure 4A, Figure 4\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data in Figure 4A and source data 1, with citations",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:47:54.682284Z"
+    },
+    {
+      "id": "27f4d1a6-d56c-4087-8b2e-d926c916bc37",
+      "content_id": "c5c5edda-5dca-4c5c-9eb9-6ccac8d19cd4",
+      "claim_id": "C21",
+      "claim": "A mutation in odr-1 produced the same number of progeny on OP50 and CS180.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to osm-3 mutants, a mutation in the guanylyl cyclase gene odr-1, which impairs a different subset of sensory neurons (L'Etoile and Bargmann, 2000; Taylor et al., 2021), also produced the same number of progeny on OP50 and CS180 (Figure 4A, Figure 4\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data in Figure 4A and source data 1, with citations",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:47:54.682284Z"
+    },
+    {
+      "id": "f6cd8909-f12f-4cb9-8350-5c2ef1b94088",
+      "content_id": "c5c5edda-5dca-4c5c-9eb9-6ccac8d19cd4",
+      "claim_id": "C22",
+      "claim": "A defect in odr-7, which causes the specific loss of the olfactory neuron AWA, led to more progeny on OP50 than on CS180.",
+      "claim_type": "EXPLICIT",
+      "source": "However, unlike osm-3 and odr-1 mutants, but like wild type, a defect in the transcription factor gene odr-7, which causes the specific loss of the olfactory neuron AWA (Sengupta et al., 1994), led to more progeny on OP50 than on CS180 (Figure 4A, Figure 4\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data in Figure 4A and source data 1, with citation",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:47:54.682284Z"
+    },
+    {
+      "id": "344576b0-a100-4b0c-acbc-4afb9cb9d6dc",
+      "content_id": "c5c5edda-5dca-4c5c-9eb9-6ccac8d19cd4",
+      "claim_id": "C23",
+      "claim": "Loss of the ASJ neurons suppressed the differences in progeny number on OP50 versus CS180.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, loss of the ASJ neurons suppressed the differences in progeny number (Figure 4A, Figure 4\u2014source data 1) on OP50 versus CS180.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data in Figure 4A and source data 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:47:54.682284Z"
+    },
+    {
+      "id": "a6126051-a77c-4078-a8b3-7413b902c030",
+      "content_id": "c5c5edda-5dca-4c5c-9eb9-6ccac8d19cd4",
+      "claim_id": "C24",
+      "claim": "The neuron ASJ modulates the worm's total progeny in response to food cues.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, our data show that, unlike ASI, ASK, and AWA, the neuron ASJ modulates the worm's total progeny in response to food cues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from ASJ ablation experiments showing loss of food-type differences",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:47:54.682284Z"
+    },
+    {
+      "id": "e27f574d-6233-4814-8c30-2a55251a8b84",
+      "content_id": "c5c5edda-5dca-4c5c-9eb9-6ccac8d19cd4",
+      "claim_id": "C25",
+      "claim": "Reduction-of-function mutations in daf-2 reduced or abolished the food-type differences in total progeny.",
+      "claim_type": "EXPLICIT",
+      "source": "Reduction-of-function mutations in daf-2, the C. elegans insulin-like growth factor receptor (Kimura et al., 1997; Gems et al., 1998), reduced or abolished the food-type differences in total progeny (Figure 4B, Figure 4\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data in Figure 4B and source data 1, with citations",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:47:54.682284Z"
+    },
+    {
+      "id": "5955141e-cdba-4b3d-861a-05ba4ca6e060",
+      "content_id": "c5c5edda-5dca-4c5c-9eb9-6ccac8d19cd4",
+      "claim_id": "C26",
+      "claim": "A loss-of-function mutation in daf-16 still led to food-type differences in the number of progeny on OP50 and CS180.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, a loss-of-function mutation in daf-16, the FOXO-like transcription factor that is antagonized by DAF-2 (Lin et al., 1997; Ogg et al., 1997), still led to food-type differences in the number of progeny on OP50 and CS180 (Figure 4B and E, Figure 4\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data in Figure 4B and E and source data 1, with citations",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:47:54.682284Z"
+    },
+    {
+      "id": "988c7ad4-2f79-4cff-9d79-a611ba1d6e1d",
+      "content_id": "c5c5edda-5dca-4c5c-9eb9-6ccac8d19cd4",
+      "claim_id": "C27",
+      "claim": "Deletion of either ins-1 or daf-28 did not alter the OP50- or CS180-dependent progeny number.",
+      "claim_type": "EXPLICIT",
+      "source": "Deletion of either ins-1 or daf-28 did not alter the OP50- or CS180-dependent progeny number (Figure 4C, Figure 4\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data in Figure 4C and source data 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:47:54.682284Z"
+    },
+    {
+      "id": "b933f6ef-a444-403b-898b-31510fedeea2",
+      "content_id": "c5c5edda-5dca-4c5c-9eb9-6ccac8d19cd4",
+      "claim_id": "C28",
+      "claim": "ins-6 deletion mutants lost the food-type differences in total progeny.",
+      "claim_type": "EXPLICIT",
+      "source": "However, ins-6 deletion mutants lost the food-type differences in total progeny (Figure 4D and E, Figure 4\u2014source data 1), which were restored when daf-16 was also deleted (Figure 4E, Figure 4\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data in Figure 4D and E and source data 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:47:54.682284Z"
+    },
+    {
+      "id": "99650561-19fc-492d-a7ef-c069e7c1372b",
+      "content_id": "c5c5edda-5dca-4c5c-9eb9-6ccac8d19cd4",
+      "claim_id": "C29",
+      "claim": "osm-3 mutants failed to exhibit early oogenesis on CS180 during mid-L4.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to the loss of food-type differences in its total progeny (Figure 4A, Figure 4\u2014source data 1), osm-3 mutants failed to exhibit early oogenesis on CS180 during mid-L4 (Figure 5A, Figure 5\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data in Figure 5A and source data 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:47:54.682284Z"
+    },
+    {
+      "id": "9db87160-ce8a-447b-ad09-1aeb6ef51b6a",
+      "content_id": "c5c5edda-5dca-4c5c-9eb9-6ccac8d19cd4",
+      "claim_id": "C30",
+      "claim": "ASJ-ablated worms showed no early expression of the oogenesis marker lin-41::GFP at mid-L4.",
+      "claim_type": "EXPLICIT",
+      "source": "More importantly, ASJ-ablated worms showed no early expression of the oogenesis marker lin-41::GFP at mid-L4 and decreased lin-41::GFP even during late L4 and lethargus (Figure 5A, Figure 5\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data in Figure 5A and source data 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:47:54.682284Z"
+    },
+    {
+      "id": "39f0e105-abea-42be-877d-2f56f8fc2ac1",
+      "content_id": "c5c5edda-5dca-4c5c-9eb9-6ccac8d19cd4",
+      "claim_id": "C31",
+      "claim": "ASJ neurons play a major role in promoting early oogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings demonstrate that ASJ neurons not only modulate the animal's number of progeny, but also play a major role in promoting early oogenesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from ASJ ablation experiments showing delayed oogenesis",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:47:54.682284Z"
+    },
+    {
+      "id": "5e90e68e-343d-49a6-ab18-701f21fa0a20",
+      "content_id": "c5c5edda-5dca-4c5c-9eb9-6ccac8d19cd4",
+      "claim_id": "C32",
+      "claim": "Both daf-2 reduction-of-function mutants lost the early expression of the oogenesis marker lin-41::GFP on CS180.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, both daf-2 reduction-of-function mutants lost the early expression of the oogenesis marker lin-41::GFP on CS180 (Figure 5B, Figure 5\u2014source data 1), whereas daf-16 deletion mutants continued to have early oogenesis on CS180 (Figure 5C, Figure 5\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data in Figure 5B and source data 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:47:54.682284Z"
+    },
+    {
+      "id": "c58e49ee-88eb-4616-9798-371b272de4e6",
+      "content_id": "c5c5edda-5dca-4c5c-9eb9-6ccac8d19cd4",
+      "claim_id": "C33",
+      "claim": "daf-16 deletion mutants continued to have early oogenesis on CS180.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, both daf-2 reduction-of-function mutants lost the early expression of the oogenesis marker lin-41::GFP on CS180 (Figure 5B, Figure 5\u2014source data 1), whereas daf-16 deletion mutants continued to have early oogenesis on CS180 (Figure 5C, Figure 5\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data in Figure 5C and source data 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:47:54.682284Z"
+    },
+    {
+      "id": "5c431d95-4982-49f9-a77e-8eea2b7d10d7",
+      "content_id": "c5c5edda-5dca-4c5c-9eb9-6ccac8d19cd4",
+      "claim_id": "C34",
+      "claim": "ins-6 mutants had no early expression of lin-41::GFP at mid-L4 on CS180.",
+      "claim_type": "EXPLICIT",
+      "source": "However, ins-6 mutants had no early expression of lin-41::GFP (Figure 5D and F, Figure 5\u2014source data 1) or oma-1::GFP (Figure 5E, Figure 5\u2014source data 1) at mid-L4 on CS180.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data in Figure 5D and F and source data 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:47:54.682284Z"
+    },
+    {
+      "id": "e977a7a9-fb4d-4b2c-95bb-51c9ea7cf4cc",
+      "content_id": "c5c5edda-5dca-4c5c-9eb9-6ccac8d19cd4",
+      "claim_id": "C35",
+      "claim": "Of the three ILPs tested, ins-6 alone is sufficient to modulate the food type-dependent onset of oogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, our data show that of the three ILPs tested, ins-6 alone is sufficient to modulate the food type-dependent onset of oogenesis (Figures 5 and 6).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from comparison of ins-1, daf-28, and ins-6 mutant phenotypes",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:47:54.682284Z"
+    },
+    {
+      "id": "cc004917-85f5-4bdf-8e6c-97739d111e96",
+      "content_id": "c5c5edda-5dca-4c5c-9eb9-6ccac8d19cd4",
+      "claim_id": "C36",
+      "claim": "The lack of early oogenesis at mid-L4 in ins-6 mutants cannot be rescued by the loss of daf-16.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, however, the lack of early oogenesis at mid-L4 in ins-6 mutants cannot be rescued by the loss of daf-16 (Figure 5F, Figure 5\u2014source data 1), which suggests that ins-6 modulates early oogenesis independent of daf-16.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data in Figure 5F and source data 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:47:54.682284Z"
+    },
+    {
+      "id": "8f44ce71-03bf-4b1d-b079-6cc5bcef76dd",
+      "content_id": "c5c5edda-5dca-4c5c-9eb9-6ccac8d19cd4",
+      "claim_id": "C37",
+      "claim": "ins-6 modulates early oogenesis independent of daf-16.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, however, the lack of early oogenesis at mid-L4 in ins-6 mutants cannot be rescued by the loss of daf-16 (Figure 5F, Figure 5\u2014source data 1), which suggests that ins-6 modulates early oogenesis independent of daf-16.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from epistasis analysis showing daf-16 deletion does not rescue ins-6 phenotype",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:47:54.682284Z"
+    },
+    {
+      "id": "3c1b7885-63e2-4d10-8101-09db7890b515",
+      "content_id": "c5c5edda-5dca-4c5c-9eb9-6ccac8d19cd4",
+      "claim_id": "C38",
+      "claim": "Worms grown on CS180 showed higher ins-6p::mCherry expression in ASJ, but not in ASI, at mid-to-late L3.",
+      "claim_type": "EXPLICIT",
+      "source": "At mid-to-late L3, the critical period when the food source modulates oogenesis onset (Figure 3B, Figure 3\u2014source data 1), worms grown on CS180 showed higher ins-6p::mCherry expression in ASJ, but not in ASI, unlike worms on OP50 (Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data in Figure 6A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:47:54.682284Z"
+    },
+    {
+      "id": "578e9518-5c69-439b-b7fd-faabcd50d05e",
+      "content_id": "c5c5edda-5dca-4c5c-9eb9-6ccac8d19cd4",
+      "claim_id": "C39",
+      "claim": "ASJ-expressed ins-6, but not ASI-expressed ins-6, is sufficient to rescue the oogenesis onset phenotype of ins-6 mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "We also found that ASJ-expressed ins-6, but not ASI-expressed ins-6, is sufficient to rescue the oogenesis onset phenotype of ins-6 mutants, comparable to the rescue observed when ins-6 expression is driven from its own promoter (Figure 6B, Figure 6\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data in Figure 6B and source data 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:47:54.682284Z"
+    },
+    {
+      "id": "22de3be9-7ff5-4394-8954-a71d3a6a76bc",
+      "content_id": "c5c5edda-5dca-4c5c-9eb9-6ccac8d19cd4",
+      "claim_id": "C40",
+      "claim": "Loss of ins-6 from ASJ delayed oogenesis, despite the continued presence of ins-6 in ASI.",
+      "claim_type": "EXPLICIT",
+      "source": "Loss of ins-6 from ASJ delayed oogenesis, despite the continued presence of ins-6 in ASI (Figure 6C, Figure 6\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data in Figure 6C and source data 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:47:54.682284Z"
+    },
+    {
+      "id": "b76bec04-7892-4a82-bf3c-0b81fd5a7d61",
+      "content_id": "c5c5edda-5dca-4c5c-9eb9-6ccac8d19cd4",
+      "claim_id": "C41",
+      "claim": "ASJ-expressed ins-6 is both sufficient and necessary to promote early oogenesis on the CS180 food source.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we show that ASJ-expressed ins-6 is both sufficient and necessary to promote early oogenesis on the CS180 food source.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from rescue and cell-specific deletion experiments",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:47:54.682284Z"
+    },
+    {
+      "id": "cdf55850-7920-40bd-a98a-88afb12e7225",
+      "content_id": "c5c5edda-5dca-4c5c-9eb9-6ccac8d19cd4",
+      "claim_id": "C42",
+      "claim": "A mutation in either osm-3 or odr-3 suppressed the faster fertilization on CS180.",
+      "claim_type": "EXPLICIT",
+      "source": "While the odr-1 mutation had little effect on food type-dependent fertilization rates (Figure 7\u2014source data 1), a mutation in either osm-3 or another sensory gene, the G protein \u03b1 subunit odr-3 (Roayaie et al., 1998), suppressed the faster fertilization on CS180 (Figure 7A and B, Figure 7\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data in Figure 7A and B and source data 1, with citation",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:47:54.682284Z"
+    },
+    {
+      "id": "881f322d-ad07-48b3-8f0f-c884a1dd5490",
+      "content_id": "c5c5edda-5dca-4c5c-9eb9-6ccac8d19cd4",
+      "claim_id": "C43",
+      "claim": "Ablation of either ADF or ASH had no effect on the food type-induced variation in fertilization rates.",
+      "claim_type": "EXPLICIT",
+      "source": "Ablation of either ADF or ASH had no effect on the food type-induced variation in fertilization rates (Figure 7C and D, Figure 7\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data in Figure 7C and D and source data 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:47:54.682284Z"
+    },
+    {
+      "id": "5fa75fec-3aef-47b9-a677-2c9c4eddde78",
+      "content_id": "c5c5edda-5dca-4c5c-9eb9-6ccac8d19cd4",
+      "claim_id": "C44",
+      "claim": "Loss of either ASI or ASK did not abolish the food-type differences in fertilization.",
+      "claim_type": "EXPLICIT",
+      "source": "While the global fertilization rates were lower on OP50 and CS180, loss of either ASI or ASK again did not abolish the food-type differences in fertilization (Figure 7E and F, Figure 7\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data in Figure 7E and F and source data 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:47:54.682284Z"
+    },
+    {
+      "id": "b08ced84-90a6-4cfa-8f11-c34a5ceb45a2",
+      "content_id": "c5c5edda-5dca-4c5c-9eb9-6ccac8d19cd4",
+      "claim_id": "C45",
+      "claim": "The ASJ neurons did not affect fertilization rates on OP50 versus CS180.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the ASJ neurons, which modulate onset of oogenesis (Figure 5A and E, Figure 5\u2014source data 1), did not affect fertilization rates on OP50 versus CS180 (Figure 7G, Figure 7\u2014source data 1), suggesting that ASJ specifically influences oogenesis, but not fertilization.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data in Figure 7G and source data 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:47:54.682284Z"
+    },
+    {
+      "id": "610d7dc7-4a17-4991-a19a-ad3d3b2b84fe",
+      "content_id": "c5c5edda-5dca-4c5c-9eb9-6ccac8d19cd4",
+      "claim_id": "C46",
+      "claim": "ASJ specifically influences oogenesis, but not fertilization.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the ASJ neurons, which modulate onset of oogenesis (Figure 5A and E, Figure 5\u2014source data 1), did not affect fertilization rates on OP50 versus CS180 (Figure 7G, Figure 7\u2014source data 1), suggesting that ASJ specifically influences oogenesis, but not fertilization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from ASJ ablation showing no effect on fertilization but effect on oogenesis",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:47:54.682284Z"
+    },
+    {
+      "id": "84772aa7-8107-4e53-afdc-68e066d86f1a",
+      "content_id": "c5c5edda-5dca-4c5c-9eb9-6ccac8d19cd4",
+      "claim_id": "C47",
+      "claim": "Loss of AWA suppressed the food-type differences in fertilization.",
+      "claim_type": "EXPLICIT",
+      "source": "While loss of AWB and AWC did not eliminate the fertilization rate differences on OP50 and CS180 (Figure 7H and I, Figure 7\u2014source data 1), loss of AWA (Sengupta et al., 1994; Yoshida et al., 2012) suppressed the food-type differences in fertilization (Figure 7J, Figure 7\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data in Figure 7J and source data 1, with citations",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:47:54.682284Z"
+    },
+    {
+      "id": "e9db3aec-0e70-4d47-8fa3-c0488197005e",
+      "content_id": "c5c5edda-5dca-4c5c-9eb9-6ccac8d19cd4",
+      "claim_id": "C48",
+      "claim": "AWA-dependent regulation of fertilization is independent of the AWA-specific olfactory receptor ODR-10.",
+      "claim_type": "EXPLICIT",
+      "source": "However, this AWA-dependent regulation of fertilization is independent of the AWA-specific olfactory receptor ODR-10 (Figure 7\u2014source data 1; Sengupta et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data in source data 1, with citation",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:47:54.682284Z"
+    },
+    {
+      "id": "fa9e56df-2037-424e-8df3-1092beb927f9",
+      "content_id": "c5c5edda-5dca-4c5c-9eb9-6ccac8d19cd4",
+      "claim_id": "C49",
+      "claim": "Absence of AWA had no effect on early onset of oogenesis on CS180.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that absence of AWA had no effect on early onset of oogenesis on CS180 (Figure 7L, Figure 7\u2014source data 1), similar to its lack of effect on progeny number (Figure 4A, Figure 4\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data in Figure 7L and source data 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:47:54.682284Z"
+    },
+    {
+      "id": "d0a2d19c-3c19-483f-8371-7b792ba3a5fb",
+      "content_id": "c5c5edda-5dca-4c5c-9eb9-6ccac8d19cd4",
+      "claim_id": "C50",
+      "claim": "On given diets, there are specific neurons that influence distinct aspects of oocyte development and physiology: ASJ for early oogenesis versus AWA for fertilization.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, on given diets, we show that there are specific neurons that influence distinct aspects of oocyte development and physiology: ASJ for early oogenesis versus AWA for fertilization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from comparison of ASJ and AWA ablation phenotypes",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:47:54.682284Z"
+    },
+    {
+      "id": "d8817385-5b29-4430-93fe-7d158d6ff05b",
+      "content_id": "c5c5edda-5dca-4c5c-9eb9-6ccac8d19cd4",
+      "claim_id": "C51",
+      "claim": "The strong reduction-of-function mutant daf-2(e1370) suppressed global fertilization rates.",
+      "claim_type": "EXPLICIT",
+      "source": "The weak reduction-of-function mutant daf-2(e1368) or the null daf-16(mu86) mutant had little or no significant effect on fertilization (Figure 8A and C, Figure 8\u2014source data 1), but the stronger reduction-of-function mutant daf-2(e1370) (Lin et al., 1997; Gems et al., 1998) suppressed global fertilization rates (Figure 8B, Figure 8\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data in Figure 8B and source data 1, with citations",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:47:54.682284Z"
+    },
+    {
+      "id": "b80e2bb1-06e8-46bd-b3e6-dd5741f28a75",
+      "content_id": "c5c5edda-5dca-4c5c-9eb9-6ccac8d19cd4",
+      "claim_id": "C52",
+      "claim": "The daf-2(e1370) mutant fertilization rate on OP50 still differed from that on CS180.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the daf-2(e1370) mutant fertilization rate on OP50 still differed from that on CS180 (Figure 8B, Figure 8\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data in Figure 8B and source data 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:47:54.682284Z"
+    },
+    {
+      "id": "cff7ce98-1a66-46a8-9d51-bb8f896dd207",
+      "content_id": "c5c5edda-5dca-4c5c-9eb9-6ccac8d19cd4",
+      "claim_id": "C53",
+      "claim": "The DAF-2 receptor modulates overall fertilization rates, but not necessarily in response to food-derived cues.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that the DAF-2 receptor modulates overall fertilization rates, but not necessarily in response to food-derived cues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from daf-2(e1370) showing reduced fertilization but still food-type differences",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:47:54.682284Z"
+    },
+    {
+      "id": "93b12112-806c-4867-af8c-55ba720407ec",
+      "content_id": "c5c5edda-5dca-4c5c-9eb9-6ccac8d19cd4",
+      "claim_id": "C54",
+      "claim": "The AWA food type-dependent influence on fertilization differs from the effects of insulin receptor signaling on this process.",
+      "claim_type": "EXPLICIT",
+      "source": "For this reason, the AWA food type-dependent influence on fertilization differs from the effects of insulin receptor signaling on this process.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from comparison of AWA and daf-2 phenotypes",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:47:54.682284Z"
+    },
+    {
+      "id": "6fa78acd-167b-42a9-8ca8-7da78ba6757a",
+      "content_id": "c5c5edda-5dca-4c5c-9eb9-6ccac8d19cd4",
+      "claim_id": "C55",
+      "claim": "A single deletion of ins-6, daf-28, or ins-1 had no effect on fertilization rates.",
+      "claim_type": "EXPLICIT",
+      "source": "A single deletion of any of these ILPs had no effect on fertilization rates (Figure 8D to F, Figure 8\u2014source data 1), and deletion mutant combinations of these ILPs (Figure 8\u2014source data 1) did not exhibit any robust phenotypes that mirrored those of the strong daf-2(e1370) mutant phenotypes.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data in Figure 8D-F and source data 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:47:54.682284Z"
+    },
+    {
+      "id": "9b7e4cc4-013b-4d64-98d6-6c3439e7c639",
+      "content_id": "c5c5edda-5dca-4c5c-9eb9-6ccac8d19cd4",
+      "claim_id": "C56",
+      "claim": "There are multiple ILPs that act through the DAF-2 receptor to regulate fertilization.",
+      "claim_type": "EXPLICIT",
+      "source": "This implies that there are multiple ILPs that act through the DAF-2 receptor to regulate fertilization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from lack of phenotype in single and combined ILP deletions",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:47:54.682284Z"
+    },
+    {
+      "id": "d1e21c49-841e-4464-b3a9-d99029e58615",
+      "content_id": "c5c5edda-5dca-4c5c-9eb9-6ccac8d19cd4",
+      "claim_id": "C57",
+      "claim": "The set of ILP activities that regulates fertilization is distinct from the set of ILPs that regulates onset of oogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, our findings indicate that the set of ILP activities that regulates fertilization is distinct from the set of ILPs that regulates onset of oogenesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from comparison of ILP effects on oogenesis versus fertilization",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:47:54.682284Z"
+    },
+    {
+      "id": "4b3d4fba-e58b-4f81-88c2-b1c7a256d9c8",
+      "content_id": "c5c5edda-5dca-4c5c-9eb9-6ccac8d19cd4",
+      "claim_id": "C58",
+      "claim": "Distinct sensory neurons acting through insulin-dependent and -independent signaling mechanisms influence specific steps in oocyte development and physiology in response to food-derived cues.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show that distinct sensory neurons acting through insulin-dependent and -independent signaling mechanisms influence specific steps in oocyte development and physiology in response to food-derived cues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary inference from all experimental results",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:47:54.682284Z"
+    },
+    {
+      "id": "edc77cdf-008a-4b20-870c-5ab3427264de",
+      "content_id": "c5c5edda-5dca-4c5c-9eb9-6ccac8d19cd4",
+      "claim_id": "C59",
+      "claim": "Discrete aspects of oocyte biology\u2014oocyte fate determination and successful oocyte fertilization\u2014are subject to different sets of cues that are sensed by different cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, discrete aspects of oocyte biology\u2014oocyte fate determination and successful oocyte fertilization\u2014are subject to different sets of cues that are sensed by different cells that work together to control the production of an animal's total progeny.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary inference from all experimental results",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:47:54.682284Z"
+    },
+    {
+      "id": "d6396b9d-94de-48ff-8555-cbaa2ac614ed",
+      "content_id": "c5c5edda-5dca-4c5c-9eb9-6ccac8d19cd4",
+      "claim_id": "C60",
+      "claim": "The chemosensory neuron ASJ promotes early onset of oogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike the olfactory neuron AWA, the chemosensory neuron ASJ promotes early onset of oogenesis (Figure 7L, Figure 7\u2014source data 1, Figure 9).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data in Figure 7L and source data 1, and Figure 9",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:47:54.682284Z"
+    },
+    {
+      "id": "7f0925e2-4751-40ce-85a6-833650271311",
+      "content_id": "c5c5edda-5dca-4c5c-9eb9-6ccac8d19cd4",
+      "claim_id": "C61",
+      "claim": "The ASJ-dependent effect on oogenesis does not appear to be a general response to stress, like pathogen stress.",
+      "claim_type": "EXPLICIT",
+      "source": "This ASJ-dependent effect does not appear to be a general response to stress, like pathogen stress (Figure 2I, Figure 2\u2014source data 1), but a response to specific food cues that are likely not small metabolites (Figure 2G, Figure 2\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inferred from S. marcescens and filtration experiments",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:47:54.682284Z"
+    },
+    {
+      "id": "06451f8d-ffe0-486c-9b9e-771cdf998ea0",
+      "content_id": "c5c5edda-5dca-4c5c-9eb9-6ccac8d19cd4",
+      "claim_id": "C62",
+      "claim": "The olfactory neuron AWA promotes the increased fertilization rates on the CS180 food source.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the olfactory neuron AWA promotes the increased fertilization rates on the CS180 food source, but not ASJ and the other neurons that we have so far tested (Figure 7C to K, Figure 7\u2014source data 1, Figure 9).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data in Figure 7C-K and source data 1, and Figure 9",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:47:54.682284Z"
+    },
+    {
+      "id": "9dad0e0b-3f0e-4270-ab18-d7c2ec9b6328",
+      "content_id": "c5c5edda-5dca-4c5c-9eb9-6ccac8d19cd4",
+      "claim_id": "C63",
+      "claim": "The sensory cue(s) that promote early oogenesis differ from the sensory cue(s) that affect fertilization.",
+      "claim_type": "EXPLICIT",
+      "source": "Together these data suggest that the sensory cue(s) that promote early oogenesis differ from the sensory cue(s) that affect fertilization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from different neurons (ASJ vs AWA) regulating different processes",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:47:54.682284Z"
+    },
+    {
+      "id": "d07a11d6-ff7e-407d-8ce5-cdffbd8d985e",
+      "content_id": "c5c5edda-5dca-4c5c-9eb9-6ccac8d19cd4",
+      "claim_id": "C64",
+      "claim": "AWA is most likely not the only sensory neuron involved in food type-dependent fertilization.",
+      "claim_type": "EXPLICIT",
+      "source": "While AWA has a major role in food type-dependent fertilization, it is most likely not the only sensory neuron involved in this process.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from osm-3 mutation also affecting fertilization",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:47:54.682284Z"
+    },
+    {
+      "id": "c557dda3-fad5-4981-8f1e-9ac223da25a3",
+      "content_id": "c5c5edda-5dca-4c5c-9eb9-6ccac8d19cd4",
+      "claim_id": "C65",
+      "claim": "The involvement of multiple sensory neurons would make for a more sensitive and efficient physiology.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the involvement of multiple sensory neurons would make for a more sensitive and efficient physiology.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative reasoning about the adaptive value of multiple neurons",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:47:54.682284Z"
+    },
+    {
+      "id": "ab5c7f10-9eee-49b4-b5ca-df394abf22d2",
+      "content_id": "c5c5edda-5dca-4c5c-9eb9-6ccac8d19cd4",
+      "claim_id": "C66",
+      "claim": "ASJ might regulate oogenesis onset by regulating the first switch that occurs in the C. elegans germline, mitosis to meiosis.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that this sensory neuron might regulate oogenesis onset by regulating the first switch that occurs in the C. elegans germline, mitosis (i.e., proliferation) to meiosis (i.e., differentiation) (Kimble and Crittenden, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative inference from ASJ affecting both proliferation and oogenesis, with citation",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:47:54.682284Z"
+    },
+    {
+      "id": "c133c482-df19-4668-a371-7dc3fb8cf971",
+      "content_id": "c5c5edda-5dca-4c5c-9eb9-6ccac8d19cd4",
+      "claim_id": "C67",
+      "claim": "Food type can only modulate onset of oogenesis before the late L3 stage, which coincides with the time before germ cells enter meiosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this hypothesis, we demonstrate that food type can only modulate onset of oogenesis before the late L3 stage (Figure 3B, Figure 3\u2014source data 1), which coincides with the time before germ cells enter meiosis (Kimble and Crittenden, 2007).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by food-switch experiments and citation to Kimble and Crittenden, 2007",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:47:54.682284Z"
+    },
+    {
+      "id": "90d061f9-aca9-4024-8f88-b1cf08edf0ae",
+      "content_id": "c5c5edda-5dca-4c5c-9eb9-6ccac8d19cd4",
+      "claim_id": "C68",
+      "claim": "Specific ILPs regulate discrete stages of oocyte physiology.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we find that specific ILPs regulate discrete stages of oocyte physiology.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary inference from ILP experiments",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:47:54.682284Z"
+    },
+    {
+      "id": "19d0aaa0-dc39-427f-afd4-ec2b0158f891",
+      "content_id": "c5c5edda-5dca-4c5c-9eb9-6ccac8d19cd4",
+      "claim_id": "C69",
+      "claim": "The ILP INS-6 acts from the ASJ neuron to modulate food type-dependent early oogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "The ILP INS-6 acts from the ASJ neuron to modulate food type-dependent early oogenesis (Figure 6B and C, Figure 6\u2014source data 1, Figure 9), whereas it appears to have little or no effect on oocyte fertilization rates (Figure 8D, Figure 8\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data in Figure 6B, C, 8D and source data, and Figure 9",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:47:54.682284Z"
+    },
+    {
+      "id": "13a7887c-898a-42f0-94c0-eb03c14648f9",
+      "content_id": "c5c5edda-5dca-4c5c-9eb9-6ccac8d19cd4",
+      "claim_id": "C70",
+      "claim": "INS-6 appears to have little or no effect on oocyte fertilization rates.",
+      "claim_type": "EXPLICIT",
+      "source": "The ILP INS-6 acts from the ASJ neuron to modulate food type-dependent early oogenesis (Figure 6B and C, Figure 6\u2014source data 1, Figure 9), whereas it appears to have little or no effect on oocyte fertilization rates (Figure 8D, Figure 8\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data in Figure 8D and source data 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:47:54.682284Z"
+    },
+    {
+      "id": "8b55e06f-55af-4173-b079-74c204881612",
+      "content_id": "c5c5edda-5dca-4c5c-9eb9-6ccac8d19cd4",
+      "claim_id": "C71",
+      "claim": "DAF-2 regulates overall fertilization independent of food sources.",
+      "claim_type": "EXPLICIT",
+      "source": "Although insulin receptor DAF-2 signaling does not appear to mediate the AWA neuron-dependent food-type effects on fertilization, DAF-2 does regulate overall fertilization independent of food sources (Figure 8B, Figure 8\u2014source data 1, Figure 9), where its ILP ligands remain to be identified.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data in Figure 8B and source data 1, and Figure 9",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:47:54.682284Z"
+    },
+    {
+      "id": "9e311a4a-8c06-4ce4-a049-e1c93aff8a4d",
+      "content_id": "c5c5edda-5dca-4c5c-9eb9-6ccac8d19cd4",
+      "claim_id": "C72",
+      "claim": "Different ILPs regulate specific stages of oogenesis\u2014onset versus maturation.",
+      "claim_type": "EXPLICIT",
+      "source": "Since fertilization depends on oocyte maturation (McCarter et al., 1999), our data also suggest that different ILPs regulate specific stages of oogenesis\u2014onset versus maturation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from INS-6 affecting oogenesis onset but not fertilization, with citation",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:47:54.682284Z"
+    },
+    {
+      "id": "3d28cb16-91b6-413b-af92-18e605c182e3",
+      "content_id": "c5c5edda-5dca-4c5c-9eb9-6ccac8d19cd4",
+      "claim_id": "C73",
+      "claim": "At least one ILP, INS-6, can act independent of DAF-16.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings further suggest that at least one of these ILPs, INS-6, can act independent of DAF-16, a known transcriptional effector of the DAF-2 receptor (Figure 5F, Figure 5\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data in Figure 5F and source data 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:47:54.682284Z"
+    },
+    {
+      "id": "559eeca1-1a04-4ced-9a39-3712be112ffd",
+      "content_id": "c5c5edda-5dca-4c5c-9eb9-6ccac8d19cd4",
+      "claim_id": "C74",
+      "claim": "Distinct insulin-like signaling mechanisms\u2014daf-16-independent and daf-16-dependent\u2014might be necessary for optimal oogenesis and fertilization.",
+      "claim_type": "EXPLICIT",
+      "source": "Distinct insulin-like signaling mechanisms\u2014daf-16-independent and daf-16-dependent\u2014might be necessary for optimal oogenesis and fertilization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative reasoning based on observed daf-16 independence of ins-6",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:47:54.682284Z"
+    },
+    {
+      "id": "e94aa254-57d4-490a-8d09-d56b167eca51",
+      "content_id": "c5c5edda-5dca-4c5c-9eb9-6ccac8d19cd4",
+      "claim_id": "C75",
+      "claim": "Distinct ILP signaling mechanisms that can respond to disparate environmental cues might explain the variability in the number of progeny of daf-16 mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, distinct ILP signaling mechanisms that can respond to disparate environmental cues might also explain the variability in the number of progeny of daf-16 mutants (Figure 4B and E, Figure 4\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Speculative reasoning based on observed phenotypic variability",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:47:54.682284Z"
+    },
+    {
+      "id": "04c99655-338d-4df0-92b0-bf2e819d479b",
+      "content_id": "c5c5edda-5dca-4c5c-9eb9-6ccac8d19cd4",
+      "claim_id": "C76",
+      "claim": "ILPs might encode and integrate diverse cues that influence oocyte development.",
+      "claim_type": "EXPLICIT",
+      "source": "ILPs might encode and integrate diverse cues that influence oocyte development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative reasoning based on multiple ILPs with different functions",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:47:54.682284Z"
+    },
+    {
+      "id": "024a4ea6-95b3-415e-9532-4265edcae0e0",
+      "content_id": "c5c5edda-5dca-4c5c-9eb9-6ccac8d19cd4",
+      "claim_id": "C77",
+      "claim": "It is possible that the multiple ILPs present in other animals will also have specific roles in coordinating oogenesis with fluctuations in a given environment.",
+      "claim_type": "EXPLICIT",
+      "source": "Considering the pleiotropic effects of insulin signaling on metazoan reproduction (Das and Arur, 2017), it is possible that the multiple ILPs present in other animals (Allen et al., 2015) will also have specific roles in coordinating oogenesis with fluctuations in a given environment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative reasoning based on C. elegans findings and citations to reviews",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:47:54.682284Z"
+    },
+    {
+      "id": "1d125e06-5dd8-498d-8a45-38b886432f61",
+      "content_id": "c5c5edda-5dca-4c5c-9eb9-6ccac8d19cd4",
+      "claim_id": "C78",
+      "claim": "Successful fertilization will require the careful integration of multiple environmental inputs through ILPs acting on the germline from neuronal, and potentially non-neuronal, cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, our study suggests that successful fertilization will require the careful integration of multiple environmental inputs through ILPs acting on the germline from neuronal, and potentially non-neuronal, cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary inference from all experimental results",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:47:54.682284Z"
+    },
+    {
+      "id": "0cfd70d9-ed07-420a-a253-0799b4bb4b3e",
+      "content_id": "c5c5edda-5dca-4c5c-9eb9-6ccac8d19cd4",
+      "claim_id": "C79",
+      "claim": "Sensory neurons influence food-dependent survival in C. elegans.",
+      "claim_type": "EXPLICIT",
+      "source": "In the worm Caenorhabditis elegans, sensory neurons influence food-dependent survival (Maier et al., 2010) and germline physiology (Dalf\u00f3 et al., 2012; Sowa et al., 2015; Aprison and Ruvinsky, 2017; Perez et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Maier et al., 2010",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:47:54.682284Z"
+    },
+    {
+      "id": "b96f0f5a-655c-4a81-94d3-6a3503b49ed2",
+      "content_id": "c5c5edda-5dca-4c5c-9eb9-6ccac8d19cd4",
+      "claim_id": "C80",
+      "claim": "Sensory neurons influence germline physiology in C. elegans.",
+      "claim_type": "EXPLICIT",
+      "source": "In the worm Caenorhabditis elegans, sensory neurons influence food-dependent survival (Maier et al., 2010) and germline physiology (Dalf\u00f3 et al., 2012; Sowa et al., 2015; Aprison and Ruvinsky, 2017; Perez et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Dalf\u00f3 et al., 2012; Sowa et al., 2015; Aprison and Ruvinsky, 2017; Perez et al., 2021",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:47:54.682284Z"
+    },
+    {
+      "id": "01ddae9f-5cf7-408a-ae25-bd1c2e434820",
+      "content_id": "c5c5edda-5dca-4c5c-9eb9-6ccac8d19cd4",
+      "claim_id": "C81",
+      "claim": "In the germline of the C. elegans hermaphrodite, germ cells first undergo spermatogenesis, before switching to oogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "In the germline of the C. elegans hermaphrodite, germ cells first undergo spermatogenesis, before switching to oogenesis (Figure 1A; reviewed by Kimble and Crittenden, 2007).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Established knowledge with citation to review by Kimble and Crittenden, 2007",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:47:54.682284Z"
+    },
+    {
+      "id": "94d2e20f-6d31-4c32-b110-4ba0a7c12f18",
+      "content_id": "c5c5edda-5dca-4c5c-9eb9-6ccac8d19cd4",
+      "claim_id": "C82",
+      "claim": "After oogenesis begins, oocytes undergo arrest at the diakinesis stage of prophase I.",
+      "claim_type": "EXPLICIT",
+      "source": "After oogenesis begins, oocytes undergo arrest at the diakinesis stage of prophase I (reviewed by Greenstein, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established knowledge with citation to review by Greenstein, 2005",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:47:54.682284Z"
+    },
+    {
+      "id": "72308c4c-b716-4079-8cfe-db8e417a71ce",
+      "content_id": "c5c5edda-5dca-4c5c-9eb9-6ccac8d19cd4",
+      "claim_id": "C83",
+      "claim": "Oocytes are released from arrest in an assembly-line manner by a hormone secreted from sperm.",
+      "claim_type": "EXPLICIT",
+      "source": "Oocytes are released from this arrest in an assembly-line manner by a hormone secreted from sperm, where the oocyte most proximal to the spermatheca matures first (McCarter et al., 1999; Miller et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established knowledge with citations to McCarter et al., 1999; Miller et al., 2001",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:47:54.682284Z"
+    },
+    {
+      "id": "54649ba5-82e6-4aab-ad64-eeb271c8ccdc",
+      "content_id": "c5c5edda-5dca-4c5c-9eb9-6ccac8d19cd4",
+      "claim_id": "C84",
+      "claim": "Once released from arrest, the oocyte is immediately ovulated into the spermatheca, where it is fertilized by a sperm.",
+      "claim_type": "EXPLICIT",
+      "source": "Once released from arrest, the oocyte is also immediately ovulated into the spermatheca, where it is fertilized by a sperm (McCarter et al., 1999; Miller et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established knowledge with citations to McCarter et al., 1999; Miller et al., 2001",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:47:54.682284Z"
+    },
+    {
+      "id": "1eb267b2-8502-4ce0-94a4-797418e2d494",
+      "content_id": "c5c5edda-5dca-4c5c-9eb9-6ccac8d19cd4",
+      "claim_id": "C85",
+      "claim": "Some C. elegans sensory neurons modulate germ cell proliferation in response to food or pheromones.",
+      "claim_type": "EXPLICIT",
+      "source": "Some of the C. elegans sensory neurons have been shown to modulate germ cell proliferation (Dalf\u00f3 et al., 2012; Aprison and Ruvinsky, 2017) and oocyte senescence (Sowa et al., 2015) in response to food or pheromones.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Dalf\u00f3 et al., 2012; Aprison and Ruvinsky, 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:47:54.682284Z"
+    },
+    {
+      "id": "5094c4a9-997f-4872-aaa6-aa6a1b3ebaed",
+      "content_id": "c5c5edda-5dca-4c5c-9eb9-6ccac8d19cd4",
+      "claim_id": "C86",
+      "claim": "Some C. elegans sensory neurons modulate oocyte senescence in response to food or pheromones.",
+      "claim_type": "EXPLICIT",
+      "source": "Some of the C. elegans sensory neurons have been shown to modulate germ cell proliferation (Dalf\u00f3 et al., 2012; Aprison and Ruvinsky, 2017) and oocyte senescence (Sowa et al., 2015) in response to food or pheromones.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Sowa et al., 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:47:54.682284Z"
+    },
+    {
+      "id": "978882c6-2f35-4781-8a7f-d11e182a5198",
+      "content_id": "c5c5edda-5dca-4c5c-9eb9-6ccac8d19cd4",
+      "claim_id": "C87",
+      "claim": "Worms have 40 insulin-like peptides (ILPs).",
+      "claim_type": "EXPLICIT",
+      "source": "Worms have 40 insulin-like peptides (ILPs; Duret et al., 1998; Kawano et al., 2000; Pierce et al., 2001; Li et al., 2003), many of which are expressed in sensory neurons and could act alone or combinatorially to regulate several physiological programs (Cornils et al., 2011; Chen et al., 2013; Ritter et al., 2013; Fernandes de Abreu et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established knowledge with citations to Duret et al., 1998; Kawano et al., 2000; Pierce et al., 2001; Li et al., 2003",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:47:54.682284Z"
+    },
+    {
+      "id": "788d0897-fb17-4212-a0c2-ddf3c8db3c25",
+      "content_id": "c5c5edda-5dca-4c5c-9eb9-6ccac8d19cd4",
+      "claim_id": "C88",
+      "claim": "Many ILPs are expressed in sensory neurons and could act alone or combinatorially to regulate several physiological programs.",
+      "claim_type": "EXPLICIT",
+      "source": "Worms have 40 insulin-like peptides (ILPs; Duret et al., 1998; Kawano et al., 2000; Pierce et al., 2001; Li et al., 2003), many of which are expressed in sensory neurons and could act alone or combinatorially to regulate several physiological programs (Cornils et al., 2011; Chen et al., 2013; Ritter et al., 2013; Fernandes de Abreu et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established knowledge with citations to Cornils et al., 2011; Chen et al., 2013; Ritter et al., 2013; Fernandes de Abreu et al., 2014",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:47:54.682284Z"
+    },
+    {
+      "id": "5761dbfc-29ba-4c21-b687-98f0a60c5f18",
+      "content_id": "c5c5edda-5dca-4c5c-9eb9-6ccac8d19cd4",
+      "claim_id": "C89",
+      "claim": "Two ILPs, ins-3 and ins-33, regulate germ cell proliferation.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, two ILPs, ins-3 and ins-33, have already been shown to regulate germ cell proliferation (Michaelson et al., 2010); however, the cells that secrete these signals that affect the germline are unknown.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Michaelson et al., 2010",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:47:54.682284Z"
+    },
+    {
+      "id": "75bed70a-a410-4c50-9a7c-2a4f90b0dd38",
+      "content_id": "c5c5edda-5dca-4c5c-9eb9-6ccac8d19cd4",
+      "claim_id": "C90",
+      "claim": "The cells that secrete ins-3 and ins-33 that affect the germline are unknown.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, two ILPs, ins-3 and ins-33, have already been shown to regulate germ cell proliferation (Michaelson et al., 2010); however, the cells that secrete these signals that affect the germline are unknown.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement of knowledge gap",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:47:54.682284Z"
+    },
+    {
+      "id": "8c478cd8-7799-4274-8d28-f6f22bcb2c41",
+      "content_id": "c5c5edda-5dca-4c5c-9eb9-6ccac8d19cd4",
+      "claim_id": "C91",
+      "claim": "The chemosensory neurons ASJ modulate oogenesis onset through the insulin-like peptide (ILP) INS-6.",
+      "claim_type": "EXPLICIT",
+      "source": "The chemosensory neurons ASJ modulate oogenesis onset through the insulin-like peptide (ILP) INS-6.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of experimental findings from the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:47:54.682284Z"
+    },
+    {
+      "id": "5915caeb-19dc-45e3-9764-0855d9773701",
+      "content_id": "c5c5edda-5dca-4c5c-9eb9-6ccac8d19cd4",
+      "claim_id": "C92",
+      "claim": "The olfactory neurons AWA regulate food type-dependent differences in C. elegans fertilization rates, but not onset of oogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, other sensory neurons, the olfactory neurons AWA, regulate food type-dependent differences in C. elegans fertilization rates, but not onset of oogenesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of experimental findings from the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:47:54.682284Z"
+    },
+    {
+      "id": "824eb971-50e4-44e6-a9ea-f541f8050b89",
+      "content_id": "c5c5edda-5dca-4c5c-9eb9-6ccac8d19cd4",
+      "claim_id": "C93",
+      "claim": "AWA modulates fertilization rates at least partly in parallel to insulin receptor signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "AWA modulates fertilization rates at least partly in parallel to insulin receptor signaling, since the insulin receptor DAF-2 regulates fertilization independently of food type, which requires ILPs other than INS-6.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of experimental findings from the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:47:54.682284Z"
+    },
+    {
+      "id": "3a8be65f-2369-4261-9f38-e1676d336506",
+      "content_id": "c5c5edda-5dca-4c5c-9eb9-6ccac8d19cd4",
+      "claim_id": "C94",
+      "claim": "The insulin receptor DAF-2 regulates fertilization independently of food type, which requires ILPs other than INS-6.",
+      "claim_type": "EXPLICIT",
+      "source": "AWA modulates fertilization rates at least partly in parallel to insulin receptor signaling, since the insulin receptor DAF-2 regulates fertilization independently of food type, which requires ILPs other than INS-6.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of experimental findings from the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:47:54.682284Z"
+    },
+    {
+      "id": "e5f33eaf-ee79-4c26-8bb2-89934b5dc591",
+      "content_id": "c5c5edda-5dca-4c5c-9eb9-6ccac8d19cd4",
+      "claim_id": "C95",
+      "claim": "Optimal reproduction requires the integration of diverse food-derived inputs through multiple neuronal signals acting on the C. elegans germline.",
+      "claim_type": "EXPLICIT",
+      "source": "Together our findings suggest that optimal reproduction requires the integration of diverse food-derived inputs through multiple neuronal signals acting on the C. elegans germline.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary inference from all experimental findings",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:47:54.682284Z"
+    },
+    {
+      "id": "ab62552b-c0f9-49c2-8522-603b54a36b79",
+      "content_id": "c5c5edda-5dca-4c5c-9eb9-6ccac8d19cd4",
+      "claim_id": "C96",
+      "claim": "OP50 is derived from an E. coli B strain.",
+      "claim_type": "EXPLICIT",
+      "source": "OP50 is derived from an E. coli B strain (Brenner, 1974); CS180, from an E. coli K-12 strain (Pradel et al., 1992).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established knowledge with citation to Brenner, 1974",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:47:54.682284Z"
+    },
+    {
+      "id": "7b528750-f305-4e39-b068-6f9d548d0c4c",
+      "content_id": "c5c5edda-5dca-4c5c-9eb9-6ccac8d19cd4",
+      "claim_id": "C97",
+      "claim": "CS180 is derived from an E. coli K-12 strain.",
+      "claim_type": "EXPLICIT",
+      "source": "OP50 is derived from an E. coli B strain (Brenner, 1974); CS180, from an E. coli K-12 strain (Pradel et al., 1992).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established knowledge with citation to Pradel et al., 1992",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:47:54.682284Z"
+    },
+    {
+      "id": "2660284a-b013-46af-9fa7-bc4a2a04b7b9",
+      "content_id": "c5c5edda-5dca-4c5c-9eb9-6ccac8d19cd4",
+      "claim_id": "C98",
+      "claim": "One of the differences between OP50 and CS180 bacterial strains is the outer core structures of the lipopolysaccharides (LPS) on their cell walls.",
+      "claim_type": "EXPLICIT",
+      "source": "One of the differences between the two bacterial strains is the outer core structures of the lipopolysaccharides (LPS) on their cell walls (Maier et al., 2010, and references therein).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established knowledge with citation to Maier et al., 2010",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:47:54.682284Z"
+    },
+    {
+      "id": "5476564f-dde5-4903-9980-38f332b97539",
+      "content_id": "c5c5edda-5dca-4c5c-9eb9-6ccac8d19cd4",
+      "claim_id": "C99",
+      "claim": "The OP50 LPS is shorter than the CS180 LPS.",
+      "claim_type": "EXPLICIT",
+      "source": "The OP50 LPS is shorter than the CS180 LPS (Figure 2A; Maier et al., 2010).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Established knowledge with citation to Maier et al., 2010 and shown in Figure 2A",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:47:54.682284Z"
+    },
+    {
+      "id": "f1e8c582-fc82-41aa-8582-f18ab810d45e",
+      "content_id": "c5c5edda-5dca-4c5c-9eb9-6ccac8d19cd4",
+      "claim_id": "C100",
+      "claim": "CS2429 is a K-12 strain that is derived from CS180 but has a truncated LPS.",
+      "claim_type": "EXPLICIT",
+      "source": "To test if this difference in LPS alters oogenesis onset and fertilization rate, we examined wild-type C. elegans oocyte development on E. coli CS2429, which is a K-12 strain that is derived from CS180 but has a truncated LPS (Figure 2A; Pradel et al., 1992; Zhang et al., 2006).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Established knowledge with citations to Pradel et al., 1992; Zhang et al., 2006",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:47:54.682284Z"
+    },
+    {
+      "id": "02db6b6d-b4c8-420a-9b19-2f0358d83851",
+      "content_id": "c5c5edda-5dca-4c5c-9eb9-6ccac8d19cd4",
+      "claim_id": "C101",
+      "claim": "During the larval stages, ins-6 is expressed in two sensory neurons, ASI and ASJ.",
+      "claim_type": "EXPLICIT",
+      "source": "During the larval stages, ins-6 is expressed in two sensory neurons, ASI and ASJ (Cornils et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established knowledge with citation to Cornils et al., 2011",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:47:54.682284Z"
+    },
+    {
+      "id": "448f4f9c-5af3-40e4-8829-116cbd749859",
+      "content_id": "c5c5edda-5dca-4c5c-9eb9-6ccac8d19cd4",
+      "claim_id": "C102",
+      "claim": "ASJ neurons express at least three potential ILP ligands for the DAF-2 receptor: INS-1, INS-6, and DAF-28.",
+      "claim_type": "EXPLICIT",
+      "source": "Because ASJ neurons express at least three potential ILP ligands for the DAF-2 receptor, INS-1 (Kodama et al., 2006; Tomioka et al., 2006), INS-6 (Cornils et al., 2011), and DAF-28 (Li et al., 2003; Taylor et al., 2021), we tested the effects of these three peptides on progeny number.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established knowledge with citations to Kodama et al., 2006; Tomioka et al., 2006; Cornils et al., 2011; Li et al., 2003; Taylor et al., 2021",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:47:54.682284Z"
+    },
+    {
+      "id": "82a312cb-b09c-476d-9191-b0eb39e2f633",
+      "content_id": "c5c5edda-5dca-4c5c-9eb9-6ccac8d19cd4",
+      "claim_id": "C103",
+      "claim": "Insulin signaling is an important regulator of oogenesis, where impaired signaling leads to reproductive deficits across many species.",
+      "claim_type": "EXPLICIT",
+      "source": "Insulin signaling is an important regulator of oogenesis, where impaired signaling leads to reproductive deficits across many species (reviewed by Das and Arur, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established knowledge with citation to review by Das and Arur, 2017",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:47:54.682284Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "f3e3fcce-fe18-430f-bb22-8ce55576e581",
+      "content_id": "c5c5edda-5dca-4c5c-9eb9-6ccac8d19cd4",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "C. elegans fed CS180 bacteria exhibit earlier oogenesis onset, faster fertilization rates, fewer total progeny, and fewer sperm compared to worms fed OP50, despite similar developmental rates through larval stages.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C7 provide converging evidence from multiple experimental readouts (developmental staging, progeny counts, fertilization rates, sperm counts, and two independent oogenesis markers) showing that CS180 food source accelerates oogenesis and fertilization while reducing total progeny. The data are internally consistent and supported by appropriate statistical analyses.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:47:54.682284Z"
+    },
+    {
+      "id": "528bccbc-952f-4f4e-86b5-5c680a79d358",
+      "content_id": "c5c5edda-5dca-4c5c-9eb9-6ccac8d19cd4",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The CS180-derived cues that promote early oogenesis and faster fertilization are specific to CS180 (not shared by other K-12 strains like HT115), are not due to LPS structural differences, are likely not small metabolites (based on filtration), and are not general pathogen/stress responses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C17 systematically rule out several potential mechanisms through appropriate controls (CS2429 with truncated LPS, HT115 K-12 strain, filtration experiments, pathogenic S. marcescens). The filtration experiment (C14-C15) provides strong evidence against small molecule cues, though the exact nature of the cue remains unidentified.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:47:54.682284Z"
+    },
+    {
+      "id": "8033bbd0-b343-4000-9f42-7842a6fdb5ba",
+      "content_id": "c5c5edda-5dca-4c5c-9eb9-6ccac8d19cd4",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Food-switch experiments reveal distinct critical periods for food-type effects: oogenesis onset can only be modulated before late L3, while fertilization rate is modulated after early L4.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C19 are supported by systematic food-switch experiments at different developmental stages (Figure 3), demonstrating temporal specificity of food effects. The results are consistent with known developmental biology of C. elegans germ cell fate determination and align with cited prior work (Barton and Kimble, 1990).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:47:54.682284Z"
+    },
+    {
+      "id": "ee32a63e-a0a7-45cc-b2eb-06bf1a6218c8",
+      "content_id": "c5c5edda-5dca-4c5c-9eb9-6ccac8d19cd4",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The ASJ sensory neurons specifically modulate food type-dependent differences in total progeny, as demonstrated by ablation experiments showing loss of OP50 vs CS180 differences, while other sensory neurons (osm-3, odr-1) also affect progeny but AWA does not.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C24 use a systematic approach testing multiple sensory mutants and ablations to identify ASJ as the key neuron. The specificity is demonstrated by comparing multiple neurons (ASI, ASK, AWA vs ASJ), with appropriate controls. The convergence of osm-3 and odr-1 mutant phenotypes pointing to ASJ strengthens the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:47:54.682284Z"
+    },
+    {
+      "id": "a1d24bb2-a243-40ce-aeae-61fb6a22bcee",
+      "content_id": "c5c5edda-5dca-4c5c-9eb9-6ccac8d19cd4",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Insulin signaling through DAF-2 receptor and specifically the insulin-like peptide INS-6 (but not INS-1 or DAF-28) mediates food type-dependent differences in total progeny, with INS-6 acting through a DAF-16-dependent mechanism for this phenotype.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C28 systematically test insulin signaling components using genetic mutants. The specificity of INS-6 among the three ILPs tested is clearly demonstrated, and epistasis analysis with daf-16 establishes the genetic pathway. Multiple alleles of daf-2 strengthen the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:47:54.682284Z"
+    },
+    {
+      "id": "01015c4c-8126-4f4b-8679-348570e66a8d",
+      "content_id": "c5c5edda-5dca-4c5c-9eb9-6ccac8d19cd4",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "ASJ neurons promote early oogenesis onset in response to CS180 food through insulin signaling, with both osm-3 mutants and ASJ-ablated animals failing to show early oogenesis, and daf-2 (but not daf-16) mutants losing the food-type effect. Among ILPs tested, only ins-6 is required for food type-dependent early oogenesis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C35 integrate neuronal and molecular mechanisms using two independent oogenesis markers (lin-41::GFP and oma-1::GFP), multiple genetic mutants, and ablation experiments. The convergence of ASJ ablation, osm-3 mutation, daf-2 mutation, and ins-6 deletion all showing loss of early oogenesis on CS180 provides strong support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:47:54.682284Z"
+    },
+    {
+      "id": "ae4cefa4-60c1-4473-9143-1e6ae81108ed",
+      "content_id": "c5c5edda-5dca-4c5c-9eb9-6ccac8d19cd4",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "INS-6 modulates early oogenesis independent of DAF-16, as demonstrated by epistasis analysis showing that daf-16 deletion cannot rescue the ins-6 mutant oogenesis phenotype.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C37 are supported by genetic epistasis experiments (Figure 5F) showing that the ins-6 oogenesis phenotype persists in daf-16; ins-6 double mutants. This is a surprising finding that distinguishes the mechanism of oogenesis onset from total progeny regulation and is appropriately presented as a novel observation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:47:54.682284Z"
+    },
+    {
+      "id": "93db3811-50b6-4f06-b278-69e42d875e9c",
+      "content_id": "c5c5edda-5dca-4c5c-9eb9-6ccac8d19cd4",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "INS-6 acts specifically from ASJ neurons (not ASI) to promote early oogenesis, as demonstrated by food-dependent ins-6 promoter activity in ASJ, cell-specific rescue experiments, and cell-specific deletion using Cre-lox.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C41 use multiple complementary approaches (transcriptional reporter, cell-specific rescue, cell-specific deletion) to establish both sufficiency and necessity of ASJ-expressed INS-6. The convergence of these three independent experimental strategies provides strong support for the cell-autonomous function.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:47:54.682284Z"
+    },
+    {
+      "id": "67d774c9-2fb7-4e8c-9f40-1390b9ab8749",
+      "content_id": "c5c5edda-5dca-4c5c-9eb9-6ccac8d19cd4",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "AWA olfactory neurons specifically regulate food type-dependent fertilization rates (independent of ODR-10 receptor), while ASJ neurons do not affect fertilization. This demonstrates that distinct sensory neurons control different aspects of oocyte physiology: ASJ for oogenesis onset versus AWA for fertilization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C50 systematically test multiple sensory neurons (ADF, ASH, ASI, ASK, ASJ, AWB, AWC, AWA) and identify AWA as specifically required for food-type differences in fertilization but not oogenesis. The double dissociation (ASJ affects oogenesis but not fertilization; AWA affects fertilization but not oogenesis) is particularly compelling.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:47:54.682284Z"
+    },
+    {
+      "id": "10a92d15-70ab-4676-9bc9-6a3f31ec5c86",
+      "content_id": "c5c5edda-5dca-4c5c-9eb9-6ccac8d19cd4",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The DAF-2 insulin receptor regulates overall fertilization rates independent of food type (as shown by strong daf-2(e1370) allele), which differs mechanistically from AWA-dependent food type-specific regulation of fertilization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C54 demonstrate that while daf-2(e1370) reduces overall fertilization, food-type differences persist, indicating DAF-2 acts through a food-independent mechanism. This distinguishes insulin receptor signaling from AWA-mediated food-dependent regulation. The use of multiple daf-2 alleles with different strengths strengthens the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:47:54.682284Z"
+    },
+    {
+      "id": "3dca4e43-6654-49df-ba5f-2849acbc4bff",
+      "content_id": "c5c5edda-5dca-4c5c-9eb9-6ccac8d19cd4",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Multiple ILPs (not including INS-6, DAF-28, or INS-1 individually) act through DAF-2 receptor to regulate fertilization, and this set of ILPs is distinct from those regulating oogenesis onset.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C57 are supported by systematic testing of individual and combined ILP deletions showing no single ILP or tested combination recapitulates the daf-2 fertilization phenotype. This implies functional redundancy among multiple ILPs for fertilization, contrasting with the specific role of INS-6 in oogenesis onset.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:47:54.682284Z"
+    },
+    {
+      "id": "3c0b5d0d-d8ec-40eb-8578-f8b039c7512d",
+      "content_id": "c5c5edda-5dca-4c5c-9eb9-6ccac8d19cd4",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Optimal reproduction in C. elegans requires integration of diverse food-derived inputs through multiple neuronal signals (ASJ and AWA) acting on distinct aspects of germline development (oogenesis onset vs. fertilization) via both insulin-dependent and insulin-independent mechanisms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C59, C63, and C95 represent the overarching synthesis of all experimental findings. The conclusion is well-supported by the systematic demonstration of: (1) distinct neurons for different processes, (2) distinct ILPs for different processes, (3) distinct critical periods, and (4) both insulin-dependent (ASJ-INS-6-oogenesis) and insulin-independent (AWA-fertilization) pathways.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:47:54.682284Z"
+    },
+    {
+      "id": "7a571410-e888-43bd-ae56-1371390b1ad2",
+      "content_id": "c5c5edda-5dca-4c5c-9eb9-6ccac8d19cd4",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "ASJ promotes early oogenesis through specific food cues (not general stress), AWA promotes fertilization, and multiple sensory neurons likely contribute to fertilization for sensitive environmental monitoring.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C62 and C64 are well-supported by experimental data. However, C65 is speculative reasoning about adaptive value rather than experimental evidence. The core experimental findings about ASJ and AWA are solid, but the speculation about 'more sensitive and efficient physiology' should be noted as interpretive.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:47:54.682284Z"
+    },
+    {
+      "id": "7f449e49-4974-46f2-b62b-5dddb015399a",
+      "content_id": "c5c5edda-5dca-4c5c-9eb9-6ccac8d19cd4",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "ASJ may regulate oogenesis onset by controlling the mitosis-to-meiosis switch in the germline, consistent with the critical period (before late L3) coinciding with germ cell entry into meiosis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C67 is well-supported by food-switch experiments and aligns with established developmental timing. Claim C66 is mechanistic speculation based on ASJ affecting both proliferation (from prior work) and oogenesis (current work), but the direct link to mitosis-meiosis switch is not experimentally demonstrated in this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:47:54.682284Z"
+    },
+    {
+      "id": "64fae2e2-c414-4c00-ba5f-d481c172064a",
+      "content_id": "c5c5edda-5dca-4c5c-9eb9-6ccac8d19cd4",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Specific ILPs regulate discrete stages of oocyte physiology: INS-6 from ASJ modulates oogenesis onset but not fertilization, while DAF-2 regulates overall fertilization independent of food through other ILPs. INS-6 can act independent of DAF-16.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C73 synthesize the ILP-specific findings with strong experimental support. The stage-specific roles of different ILPs (onset vs. maturation/fertilization) and the DAF-16 independence of INS-6 are well-documented through systematic genetic analysis. The inference about different ILPs for different stages (C72) is reasonable given that fertilization depends on maturation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:47:54.682284Z"
+    },
+    {
+      "id": "286e99bf-1cc5-481a-b092-3022cb32be7f",
+      "content_id": "c5c5edda-5dca-4c5c-9eb9-6ccac8d19cd4",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Distinct insulin-like signaling mechanisms (DAF-16-independent and DAF-16-dependent) may be necessary for optimal oogenesis and fertilization, potentially explaining phenotypic variability and allowing integration of diverse environmental cues. This may extend to other animals.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C74-C77 are largely speculative (as indicated by 'might' and 'possible'). While C74 is a reasonable hypothesis based on the DAF-16 independence of INS-6, claims C75-C77 extend beyond the data. The variability in daf-16 mutants (C75) is observed but not systematically characterized. Claims C76-C77 about broader implications are speculative and would require additional experiments.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:47:54.682284Z"
+    },
+    {
+      "id": "605ba46f-a2f7-401c-afaa-6e7f3ca9527a",
+      "content_id": "c5c5edda-5dca-4c5c-9eb9-6ccac8d19cd4",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Successful fertilization requires integration of multiple environmental inputs through ILPs acting on the germline from neuronal and potentially non-neuronal cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C78 is a reasonable synthesis of the findings showing multiple ILPs, multiple neurons, and multiple environmental inputs affecting fertilization. The caveat about 'potentially non-neuronal cells' is appropriately cautious since the study focused on neurons but doesn't exclude other sources.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:47:54.682284Z"
+    },
+    {
+      "id": "4195f136-5527-4069-93d6-5216df9a1b64",
+      "content_id": "c5c5edda-5dca-4c5c-9eb9-6ccac8d19cd4",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Background knowledge and prior work establishing: C. elegans reproductive biology, sensory neuron functions, insulin signaling components, bacterial strain characteristics, and the role of insulin signaling in reproduction across species.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C9, C79-C90, C96-C103 represent established knowledge from prior literature, appropriately cited. These provide essential context for interpreting the current findings. C90 identifies a knowledge gap that the current study addresses.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:47:54.682284Z"
+    },
+    {
+      "id": "c89c2cff-f3db-4e2b-bd9e-4bfa4685e0ed",
+      "content_id": "c5c5edda-5dca-4c5c-9eb9-6ccac8d19cd4",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Summary of main findings: ASJ neurons modulate oogenesis onset through INS-6; AWA neurons regulate food type-dependent fertilization partly in parallel to insulin receptor signaling; DAF-2 regulates fertilization independently of food type through other ILPs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C91-C94 are accurate summaries of the experimental findings presented in the study. These represent the core conclusions that are well-supported by the systematic experimental approaches described in the other claim groups.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:47:54.682284Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "dd44e7da-1584-49af-9f35-2962b959bb4c",
+      "result_id": "f3e3fcce-fe18-430f-bb22-8ce55576e581"
+    },
+    {
+      "claim_id": "1978eef4-25f7-4260-b48d-59456b93e0e6",
+      "result_id": "f3e3fcce-fe18-430f-bb22-8ce55576e581"
+    },
+    {
+      "claim_id": "45d5064a-4526-4a01-b4e8-f7e149a00cec",
+      "result_id": "f3e3fcce-fe18-430f-bb22-8ce55576e581"
+    },
+    {
+      "claim_id": "324aaad5-2d0b-4dfc-ae7b-0b1cd81955dd",
+      "result_id": "f3e3fcce-fe18-430f-bb22-8ce55576e581"
+    },
+    {
+      "claim_id": "a4968e63-9df9-4bfa-918b-746c4a6fe759",
+      "result_id": "f3e3fcce-fe18-430f-bb22-8ce55576e581"
+    },
+    {
+      "claim_id": "d4f4acbf-6af2-414a-9254-67b8ad1dc20a",
+      "result_id": "f3e3fcce-fe18-430f-bb22-8ce55576e581"
+    },
+    {
+      "claim_id": "3d13159c-ddbf-41f6-aa9c-36519b7d1ac8",
+      "result_id": "f3e3fcce-fe18-430f-bb22-8ce55576e581"
+    },
+    {
+      "claim_id": "4362ef02-8417-45ed-881c-119944f43a29",
+      "result_id": "528bccbc-952f-4f4e-86b5-5c680a79d358"
+    },
+    {
+      "claim_id": "b5f69b08-1b21-4413-aba8-2a989944945f",
+      "result_id": "528bccbc-952f-4f4e-86b5-5c680a79d358"
+    },
+    {
+      "claim_id": "55e04696-658a-4b0f-b016-cf405ab072ea",
+      "result_id": "528bccbc-952f-4f4e-86b5-5c680a79d358"
+    },
+    {
+      "claim_id": "acc7d292-9be6-4498-811a-8719c77a9eb4",
+      "result_id": "528bccbc-952f-4f4e-86b5-5c680a79d358"
+    },
+    {
+      "claim_id": "1468ae21-afc2-4f52-a8e4-769dc33e73a6",
+      "result_id": "528bccbc-952f-4f4e-86b5-5c680a79d358"
+    },
+    {
+      "claim_id": "dff2d9a0-d3ab-4490-8710-ab68a70a65dd",
+      "result_id": "528bccbc-952f-4f4e-86b5-5c680a79d358"
+    },
+    {
+      "claim_id": "9d665095-7933-44f8-b7e2-ee0cc1709bde",
+      "result_id": "528bccbc-952f-4f4e-86b5-5c680a79d358"
+    },
+    {
+      "claim_id": "fab4e871-55ec-4d50-80c4-bb32804f7782",
+      "result_id": "528bccbc-952f-4f4e-86b5-5c680a79d358"
+    },
+    {
+      "claim_id": "3ab63792-df2e-4328-9bb2-de14ee844d5a",
+      "result_id": "8033bbd0-b343-4000-9f42-7842a6fdb5ba"
+    },
+    {
+      "claim_id": "b7999aa4-1c09-4cb1-ae1a-cdcecc55e7f7",
+      "result_id": "8033bbd0-b343-4000-9f42-7842a6fdb5ba"
+    },
+    {
+      "claim_id": "520cdd71-2d70-425e-a5e6-c3b07fb15140",
+      "result_id": "ee32a63e-a0a7-45cc-b2eb-06bf1a6218c8"
+    },
+    {
+      "claim_id": "27f4d1a6-d56c-4087-8b2e-d926c916bc37",
+      "result_id": "ee32a63e-a0a7-45cc-b2eb-06bf1a6218c8"
+    },
+    {
+      "claim_id": "f6cd8909-f12f-4cb9-8350-5c2ef1b94088",
+      "result_id": "ee32a63e-a0a7-45cc-b2eb-06bf1a6218c8"
+    },
+    {
+      "claim_id": "344576b0-a100-4b0c-acbc-4afb9cb9d6dc",
+      "result_id": "ee32a63e-a0a7-45cc-b2eb-06bf1a6218c8"
+    },
+    {
+      "claim_id": "a6126051-a77c-4078-a8b3-7413b902c030",
+      "result_id": "ee32a63e-a0a7-45cc-b2eb-06bf1a6218c8"
+    },
+    {
+      "claim_id": "e27f574d-6233-4814-8c30-2a55251a8b84",
+      "result_id": "a1d24bb2-a243-40ce-aeae-61fb6a22bcee"
+    },
+    {
+      "claim_id": "5955141e-cdba-4b3d-861a-05ba4ca6e060",
+      "result_id": "a1d24bb2-a243-40ce-aeae-61fb6a22bcee"
+    },
+    {
+      "claim_id": "988c7ad4-2f79-4cff-9d79-a611ba1d6e1d",
+      "result_id": "a1d24bb2-a243-40ce-aeae-61fb6a22bcee"
+    },
+    {
+      "claim_id": "b933f6ef-a444-403b-898b-31510fedeea2",
+      "result_id": "a1d24bb2-a243-40ce-aeae-61fb6a22bcee"
+    },
+    {
+      "claim_id": "99650561-19fc-492d-a7ef-c069e7c1372b",
+      "result_id": "01015c4c-8126-4f4b-8679-348570e66a8d"
+    },
+    {
+      "claim_id": "9db87160-ce8a-447b-ad09-1aeb6ef51b6a",
+      "result_id": "01015c4c-8126-4f4b-8679-348570e66a8d"
+    },
+    {
+      "claim_id": "39f0e105-abea-42be-877d-2f56f8fc2ac1",
+      "result_id": "01015c4c-8126-4f4b-8679-348570e66a8d"
+    },
+    {
+      "claim_id": "5e90e68e-343d-49a6-ab18-701f21fa0a20",
+      "result_id": "01015c4c-8126-4f4b-8679-348570e66a8d"
+    },
+    {
+      "claim_id": "c58e49ee-88eb-4616-9798-371b272de4e6",
+      "result_id": "01015c4c-8126-4f4b-8679-348570e66a8d"
+    },
+    {
+      "claim_id": "5c431d95-4982-49f9-a77e-8eea2b7d10d7",
+      "result_id": "01015c4c-8126-4f4b-8679-348570e66a8d"
+    },
+    {
+      "claim_id": "e977a7a9-fb4d-4b2c-95bb-51c9ea7cf4cc",
+      "result_id": "01015c4c-8126-4f4b-8679-348570e66a8d"
+    },
+    {
+      "claim_id": "cc004917-85f5-4bdf-8e6c-97739d111e96",
+      "result_id": "ae4cefa4-60c1-4473-9143-1e6ae81108ed"
+    },
+    {
+      "claim_id": "8f44ce71-03bf-4b1d-b079-6cc5bcef76dd",
+      "result_id": "ae4cefa4-60c1-4473-9143-1e6ae81108ed"
+    },
+    {
+      "claim_id": "3c1b7885-63e2-4d10-8101-09db7890b515",
+      "result_id": "93db3811-50b6-4f06-b278-69e42d875e9c"
+    },
+    {
+      "claim_id": "578e9518-5c69-439b-b7fd-faabcd50d05e",
+      "result_id": "93db3811-50b6-4f06-b278-69e42d875e9c"
+    },
+    {
+      "claim_id": "22de3be9-7ff5-4394-8954-a71d3a6a76bc",
+      "result_id": "93db3811-50b6-4f06-b278-69e42d875e9c"
+    },
+    {
+      "claim_id": "b76bec04-7892-4a82-bf3c-0b81fd5a7d61",
+      "result_id": "93db3811-50b6-4f06-b278-69e42d875e9c"
+    },
+    {
+      "claim_id": "cdf55850-7920-40bd-a98a-88afb12e7225",
+      "result_id": "67d774c9-2fb7-4e8c-9f40-1390b9ab8749"
+    },
+    {
+      "claim_id": "881f322d-ad07-48b3-8f0f-c884a1dd5490",
+      "result_id": "67d774c9-2fb7-4e8c-9f40-1390b9ab8749"
+    },
+    {
+      "claim_id": "5fa75fec-3aef-47b9-a677-2c9c4eddde78",
+      "result_id": "67d774c9-2fb7-4e8c-9f40-1390b9ab8749"
+    },
+    {
+      "claim_id": "b08ced84-90a6-4cfa-8f11-c34a5ceb45a2",
+      "result_id": "67d774c9-2fb7-4e8c-9f40-1390b9ab8749"
+    },
+    {
+      "claim_id": "610d7dc7-4a17-4991-a19a-ad3d3b2b84fe",
+      "result_id": "67d774c9-2fb7-4e8c-9f40-1390b9ab8749"
+    },
+    {
+      "claim_id": "84772aa7-8107-4e53-afdc-68e066d86f1a",
+      "result_id": "67d774c9-2fb7-4e8c-9f40-1390b9ab8749"
+    },
+    {
+      "claim_id": "e9db3aec-0e70-4d47-8fa3-c0488197005e",
+      "result_id": "67d774c9-2fb7-4e8c-9f40-1390b9ab8749"
+    },
+    {
+      "claim_id": "fa9e56df-2037-424e-8df3-1092beb927f9",
+      "result_id": "67d774c9-2fb7-4e8c-9f40-1390b9ab8749"
+    },
+    {
+      "claim_id": "d0a2d19c-3c19-483f-8371-7b792ba3a5fb",
+      "result_id": "67d774c9-2fb7-4e8c-9f40-1390b9ab8749"
+    },
+    {
+      "claim_id": "d8817385-5b29-4430-93fe-7d158d6ff05b",
+      "result_id": "10a92d15-70ab-4676-9bc9-6a3f31ec5c86"
+    },
+    {
+      "claim_id": "b80e2bb1-06e8-46bd-b3e6-dd5741f28a75",
+      "result_id": "10a92d15-70ab-4676-9bc9-6a3f31ec5c86"
+    },
+    {
+      "claim_id": "cff7ce98-1a66-46a8-9d51-bb8f896dd207",
+      "result_id": "10a92d15-70ab-4676-9bc9-6a3f31ec5c86"
+    },
+    {
+      "claim_id": "93b12112-806c-4867-af8c-55ba720407ec",
+      "result_id": "10a92d15-70ab-4676-9bc9-6a3f31ec5c86"
+    },
+    {
+      "claim_id": "6fa78acd-167b-42a9-8ca8-7da78ba6757a",
+      "result_id": "3dca4e43-6654-49df-ba5f-2849acbc4bff"
+    },
+    {
+      "claim_id": "9b7e4cc4-013b-4d64-98d6-6c3439e7c639",
+      "result_id": "3dca4e43-6654-49df-ba5f-2849acbc4bff"
+    },
+    {
+      "claim_id": "d1e21c49-841e-4464-b3a9-d99029e58615",
+      "result_id": "3dca4e43-6654-49df-ba5f-2849acbc4bff"
+    },
+    {
+      "claim_id": "4b3d4fba-e58b-4f81-88c2-b1c7a256d9c8",
+      "result_id": "3c0b5d0d-d8ec-40eb-8578-f8b039c7512d"
+    },
+    {
+      "claim_id": "edc77cdf-008a-4b20-870c-5ab3427264de",
+      "result_id": "3c0b5d0d-d8ec-40eb-8578-f8b039c7512d"
+    },
+    {
+      "claim_id": "9dad0e0b-3f0e-4270-ab18-d7c2ec9b6328",
+      "result_id": "3c0b5d0d-d8ec-40eb-8578-f8b039c7512d"
+    },
+    {
+      "claim_id": "e5f33eaf-ee79-4c26-8bb2-89934b5dc591",
+      "result_id": "3c0b5d0d-d8ec-40eb-8578-f8b039c7512d"
+    },
+    {
+      "claim_id": "d6396b9d-94de-48ff-8555-cbaa2ac614ed",
+      "result_id": "7a571410-e888-43bd-ae56-1371390b1ad2"
+    },
+    {
+      "claim_id": "7f0925e2-4751-40ce-85a6-833650271311",
+      "result_id": "7a571410-e888-43bd-ae56-1371390b1ad2"
+    },
+    {
+      "claim_id": "06451f8d-ffe0-486c-9b9e-771cdf998ea0",
+      "result_id": "7a571410-e888-43bd-ae56-1371390b1ad2"
+    },
+    {
+      "claim_id": "d07a11d6-ff7e-407d-8ce5-cdffbd8d985e",
+      "result_id": "7a571410-e888-43bd-ae56-1371390b1ad2"
+    },
+    {
+      "claim_id": "c557dda3-fad5-4981-8f1e-9ac223da25a3",
+      "result_id": "7a571410-e888-43bd-ae56-1371390b1ad2"
+    },
+    {
+      "claim_id": "ab5c7f10-9eee-49b4-b5ca-df394abf22d2",
+      "result_id": "7f449e49-4974-46f2-b62b-5dddb015399a"
+    },
+    {
+      "claim_id": "c133c482-df19-4668-a371-7dc3fb8cf971",
+      "result_id": "7f449e49-4974-46f2-b62b-5dddb015399a"
+    },
+    {
+      "claim_id": "90d061f9-aca9-4024-8f88-b1cf08edf0ae",
+      "result_id": "64fae2e2-c414-4c00-ba5f-d481c172064a"
+    },
+    {
+      "claim_id": "19d0aaa0-dc39-427f-afd4-ec2b0158f891",
+      "result_id": "64fae2e2-c414-4c00-ba5f-d481c172064a"
+    },
+    {
+      "claim_id": "13a7887c-898a-42f0-94c0-eb03c14648f9",
+      "result_id": "64fae2e2-c414-4c00-ba5f-d481c172064a"
+    },
+    {
+      "claim_id": "8b55e06f-55af-4173-b079-74c204881612",
+      "result_id": "64fae2e2-c414-4c00-ba5f-d481c172064a"
+    },
+    {
+      "claim_id": "9e311a4a-8c06-4ce4-a049-e1c93aff8a4d",
+      "result_id": "64fae2e2-c414-4c00-ba5f-d481c172064a"
+    },
+    {
+      "claim_id": "3d28cb16-91b6-413b-af92-18e605c182e3",
+      "result_id": "64fae2e2-c414-4c00-ba5f-d481c172064a"
+    },
+    {
+      "claim_id": "559eeca1-1a04-4ced-9a39-3712be112ffd",
+      "result_id": "286e99bf-1cc5-481a-b092-3022cb32be7f"
+    },
+    {
+      "claim_id": "e94aa254-57d4-490a-8d09-d56b167eca51",
+      "result_id": "286e99bf-1cc5-481a-b092-3022cb32be7f"
+    },
+    {
+      "claim_id": "04c99655-338d-4df0-92b0-bf2e819d479b",
+      "result_id": "286e99bf-1cc5-481a-b092-3022cb32be7f"
+    },
+    {
+      "claim_id": "024a4ea6-95b3-415e-9532-4265edcae0e0",
+      "result_id": "286e99bf-1cc5-481a-b092-3022cb32be7f"
+    },
+    {
+      "claim_id": "1d125e06-5dd8-498d-8a45-38b886432f61",
+      "result_id": "605ba46f-a2f7-401c-afaa-6e7f3ca9527a"
+    },
+    {
+      "claim_id": "c96bbe8e-091a-4a5d-bcae-742791eb310b",
+      "result_id": "4195f136-5527-4069-93d6-5216df9a1b64"
+    },
+    {
+      "claim_id": "5950a2e4-5ccb-4472-ae59-3b88dcc7e7ad",
+      "result_id": "4195f136-5527-4069-93d6-5216df9a1b64"
+    },
+    {
+      "claim_id": "0cfd70d9-ed07-420a-a253-0799b4bb4b3e",
+      "result_id": "4195f136-5527-4069-93d6-5216df9a1b64"
+    },
+    {
+      "claim_id": "b96f0f5a-655c-4a81-94d3-6a3503b49ed2",
+      "result_id": "4195f136-5527-4069-93d6-5216df9a1b64"
+    },
+    {
+      "claim_id": "01ddae9f-5cf7-408a-ae25-bd1c2e434820",
+      "result_id": "4195f136-5527-4069-93d6-5216df9a1b64"
+    },
+    {
+      "claim_id": "94d2e20f-6d31-4c32-b110-4ba0a7c12f18",
+      "result_id": "4195f136-5527-4069-93d6-5216df9a1b64"
+    },
+    {
+      "claim_id": "72308c4c-b716-4079-8cfe-db8e417a71ce",
+      "result_id": "4195f136-5527-4069-93d6-5216df9a1b64"
+    },
+    {
+      "claim_id": "54649ba5-82e6-4aab-ad64-eeb271c8ccdc",
+      "result_id": "4195f136-5527-4069-93d6-5216df9a1b64"
+    },
+    {
+      "claim_id": "1eb267b2-8502-4ce0-94a4-797418e2d494",
+      "result_id": "4195f136-5527-4069-93d6-5216df9a1b64"
+    },
+    {
+      "claim_id": "5094c4a9-997f-4872-aaa6-aa6a1b3ebaed",
+      "result_id": "4195f136-5527-4069-93d6-5216df9a1b64"
+    },
+    {
+      "claim_id": "978882c6-2f35-4781-8a7f-d11e182a5198",
+      "result_id": "4195f136-5527-4069-93d6-5216df9a1b64"
+    },
+    {
+      "claim_id": "788d0897-fb17-4212-a0c2-ddf3c8db3c25",
+      "result_id": "4195f136-5527-4069-93d6-5216df9a1b64"
+    },
+    {
+      "claim_id": "5761dbfc-29ba-4c21-b687-98f0a60c5f18",
+      "result_id": "4195f136-5527-4069-93d6-5216df9a1b64"
+    },
+    {
+      "claim_id": "75bed70a-a410-4c50-9a7c-2a4f90b0dd38",
+      "result_id": "4195f136-5527-4069-93d6-5216df9a1b64"
+    },
+    {
+      "claim_id": "ab62552b-c0f9-49c2-8522-603b54a36b79",
+      "result_id": "4195f136-5527-4069-93d6-5216df9a1b64"
+    },
+    {
+      "claim_id": "7b528750-f305-4e39-b068-6f9d548d0c4c",
+      "result_id": "4195f136-5527-4069-93d6-5216df9a1b64"
+    },
+    {
+      "claim_id": "2660284a-b013-46af-9fa7-bc4a2a04b7b9",
+      "result_id": "4195f136-5527-4069-93d6-5216df9a1b64"
+    },
+    {
+      "claim_id": "5476564f-dde5-4903-9980-38f332b97539",
+      "result_id": "4195f136-5527-4069-93d6-5216df9a1b64"
+    },
+    {
+      "claim_id": "f1e8c582-fc82-41aa-8582-f18ab810d45e",
+      "result_id": "4195f136-5527-4069-93d6-5216df9a1b64"
+    },
+    {
+      "claim_id": "02db6b6d-b4c8-420a-9b19-2f0358d83851",
+      "result_id": "4195f136-5527-4069-93d6-5216df9a1b64"
+    },
+    {
+      "claim_id": "448f4f9c-5af3-40e4-8829-116cbd749859",
+      "result_id": "4195f136-5527-4069-93d6-5216df9a1b64"
+    },
+    {
+      "claim_id": "82a312cb-b09c-476d-9191-b0eb39e2f633",
+      "result_id": "4195f136-5527-4069-93d6-5216df9a1b64"
+    },
+    {
+      "claim_id": "8c478cd8-7799-4274-8d28-f6f22bcb2c41",
+      "result_id": "c89c2cff-f3db-4e2b-bd9e-4bfa4685e0ed"
+    },
+    {
+      "claim_id": "5915caeb-19dc-45e3-9764-0855d9773701",
+      "result_id": "c89c2cff-f3db-4e2b-bd9e-4bfa4685e0ed"
+    },
+    {
+      "claim_id": "824eb971-50e4-44e6-a9ea-f541f8050b89",
+      "result_id": "c89c2cff-f3db-4e2b-bd9e-4bfa4685e0ed"
+    },
+    {
+      "claim_id": "3a8be65f-2369-4261-9f38-e1676d336506",
+      "result_id": "c89c2cff-f3db-4e2b-bd9e-4bfa4685e0ed"
+    }
+  ],
+  "comparisons": []
+}

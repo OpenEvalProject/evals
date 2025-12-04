@@ -1,0 +1,297 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C37",
+      "C38",
+      "C60",
+      "C61",
+      "C62",
+      "C106"
+    ],
+    "result": "pHyp-DBS demonstrated high treatment efficacy with 91% (30/33) of patients achieving responder status (>30% improvement), an average improvement of 75.25\u00b129.59%, and 64% of patients showing >81% improvement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C37, C38, C60, C61, C62, and C106 consistently report the same efficacy data from the 33-patient cohort. The response rate, average improvement, and distribution of improvement levels are clearly documented with specific percentages and statistical measures, providing strong convergent evidence for high treatment efficacy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C39"
+    ],
+    "result": "Pediatric patients (\u226417 years) exhibited significantly greater symptom improvement (93%) compared to adult patients (66%), with age negatively correlated with treatment outcome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4 and C39 report consistent data showing pediatric patients had superior outcomes. The negative correlation between age and improvement (R=-0.61, R\u00b2=0.38, p<0.001) provides statistical support for this age-dependent effect, though the mechanism remains speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C40"
+    ],
+    "result": "No sex differences were observed in treatment outcomes, with males showing 75.57\u00b131.13% improvement and females showing 74.68\u00b128.00% improvement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C40 reports comparable improvement percentages between sexes with overlapping standard deviations. However, no statistical test results (e.g., t-test p-value) are provided to formally support the claim of 'no difference,' which would be necessary for a definitive conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C107"
+    ],
+    "result": "Probabilistic mapping identified an optimal stimulation target in the posterior-inferior-lateral region of the posterior hypothalamic area, with the centroid at MNI coordinates (7.5, -15, -6.5) and Talairach coordinates (6.5, -16, -1.5), encompassing 684 voxels associated with >90% improvement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C41-C44, and C107 provide convergent evidence from voxel efficacy mapping analysis. The permutation test (p<0.01) validates that the spatial pattern is not random. The specific coordinates and voxel count provide reproducible targeting information, though the supplementary pulse width analysis (Figure 3\u2014supplement 2) suggests some methodological sensitivity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Structural connectivity analysis identified three categories of fiber tracts associated with treatment efficacy: somatosensory (medial lemniscus, spinothalamic tract), emotional regulation (amygdalofugal pathway, anterior limb of internal capsule, medial forebrain bundle), and motor connections (superior cerebellar peduncle, rubrospinal tract, frontopontine tract, central tegmental tract, medial-longitudinal fasciculus, motor projections).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C48 describe structural connectivity findings using normative Human Connectome Project data. The identification of specific tracts is supported by tractography analysis with FDR correction (q<0.001). However, the functional categorization relies partly on literature citations rather than direct experimental validation, and the use of normative rather than patient-specific data is a limitation acknowledged by the authors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Functional connectivity analysis revealed that VAT connectivity to monoamine-producing regions (dorsal/medial raphe nuclei for serotonin, substantia nigra for dopamine) and key neurocircuitry areas for aggressive behavior (amygdala, nucleus accumbens, anterior cingulate cortex, bed nucleus of stria terminalis, hypothalamus, insula, periaqueductal gray) was significantly associated with clinical benefits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C51 report functional connectivity findings using normative resting-state fMRI data from 1000 subjects. The analysis includes appropriate statistical corrections (Bonferroni for individual maps, permutation testing for group-level maps at p<0.05). The functional roles of identified regions are supported by citations to prior literature, providing biological plausibility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C7"
+    ],
+    "result": "Functional connectivity between the stimulation target and periaqueductal gray (PAG), combined with patient age, predicted 52% of variance in symptom improvement (R=0.72, R\u00b2=0.52, p=1.86e-05), with the model retaining significance in leave-one-out cross-validation (R=0.65, R\u00b2=0.42, p=4.406e-5).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52, C53, and C7 present a predictive model with strong statistical support. The model explains substantial variance and survives cross-validation, suggesting genuine predictive power rather than overfitting. However, the model is based on normative connectivity data rather than patient-specific imaging, which may limit its generalizability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C54"
+    ],
+    "result": "Two-region models incorporating PAG connectivity with limbic structures (amygdala, anterior cingulate cortex, bed nucleus of stria terminalis, left nucleus accumbens, right orbitofrontal cortex, right fusiform gyrus) showed superior predictive performance (R\u00b2=0.56-0.58) compared to single-region models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C54 reports enhanced predictive performance when combining PAG with various limbic structures. The R\u00b2 values (0.56-0.58) show incremental improvement over the PAG-only model (R\u00b2=0.52), with highly significant p-values (10\u207b\u2077 range). However, no correction for multiple comparisons across the many possible two-region combinations is mentioned, which could inflate significance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C8"
+    ],
+    "result": "Imaging transcriptomics analysis identified genes associated with brain structures in the aggressive behavior neurocircuitry (hypothalamus, amygdala, prefrontal cortex, cingulate cortex), oxytocin signaling, and neuronal communication/plasticity (neuron projection, synapse, axon guidance, long-term potentiation).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C57 and C8 describe transcriptomic findings using the Allen Human Brain Atlas. The analysis includes appropriate statistical corrections (Bonferroni at p<0.005, FDR at q<0.005) and identifies biologically plausible gene sets. However, the analysis is based on normative adult control brains, not patient-specific data, and represents spatial correlations rather than causal mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C58",
+      "C59"
+    ],
+    "result": "Cell type analysis revealed significant overrepresentation of oligodendrocyte-associated genes and underrepresentation of astrocyte- and microglia-associated genes compared to expected distributions, confirmed by permutation testing (p<0.01).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58 and C59 report cell type enrichment findings with statistical validation via permutation testing. The results are consistent with the authors' interpretation regarding neuroinflammation and DBS mechanisms. However, the biological interpretation relies on indirect inference from gene expression patterns rather than direct cellular measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "The study cohort comprised 33 patients from 5 centers (12 females, 21 males; mean age 24.48\u00b110.28 years, range 10-52 years) with intractable aggressive behaviors. All patients had intellectual disability (82% severe, 18% moderate), with epilepsy (pediatric: 50%, adult: 62%) and ASD (pediatric: 34%, adult: 24%) as the most frequent diagnoses. pHyp-DBS was implanted bilaterally in 30 patients and unilaterally in 3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C36 provide consistent demographic and clinical data for the study cohort. The information is clearly documented in Table 1 and the text. This is descriptive data from the retrospective study with no apparent inconsistencies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C63",
+      "C64"
+    ],
+    "result": "The observed 75% average improvement is consistent with prior literature reporting ~90% improvement following hypothalamic neurosurgery for aggressive behavior. Outcomes were comparable between patients with directional versus conventional DBS electrodes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63 and C64 compare current results to prior literature. The comparison to historical data (C63) is appropriately cited, though the current study's 75% average is somewhat lower than the cited 90%. The comparison of electrode types (C64) is supported by citation but involves only 4 patients with directional electrodes, limiting the strength of this conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C66",
+      "C76",
+      "C79",
+      "C105",
+      "C108"
+    ],
+    "result": "The authors propose several mechanistic hypotheses: that treating dysfunctional circuitries during development may induce beneficial plastic changes; that modulation of somatosensory/motor pathways could reduce self-injurious behaviors; that stimulation of emotional regulation and motor tracts could mediate clinical improvement; and that individual tractography could guide optimal electrode placement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C66, C76, C79, C105, and C108 represent speculative inferences and proposed mechanisms. While these hypotheses are biologically plausible and consistent with the observed data, they are not directly tested in this study. These represent reasonable interpretations but require future experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C101"
+    ],
+    "result": "The study employed normative connectivity analyses using high-quality atlases from ~1000 healthy subjects, which have been previously shown to generate results comparable to patient-specific imaging data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70, C71, and C101 describe and justify the normative connectivity methodology. The approach is supported by citations to prior validation studies (Wang et al., 2021; Elias, 2022). However, this represents a methodological choice with inherent limitations acknowledged by the authors, rather than a primary finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C102",
+      "C103"
+    ],
+    "result": "The imaging transcriptomic analysis was based on the Allen Human Brain Atlas, derived from post-mortem biopsies of multiple adult control brains, which has been shown to be relevant to large-scale GWAS studies of specific patient populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102 and C103 describe the data source for transcriptomic analysis with appropriate citations. This is a methodological description supported by literature, though it highlights a limitation that the atlas is from control brains rather than patients with aggressive behavior.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C65",
+      "C67",
+      "C68",
+      "C69",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C77",
+      "C78",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "The manuscript provides extensive background on aggressive behavior, DBS therapy, hypothalamic anatomy and function, and mechanisms of DBS action, all supported by citations to prior literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C9-C29, C65, C67-C69, C72-C75, C77-C78, C80-C100 represent background knowledge and literature review. These claims are consistently supported by appropriate citations and represent established knowledge in the field. They provide context for the current study but are not primary findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C104",
+      "C109"
+    ],
+    "result": "The authors suggest that understanding the relationship between stimulation location and fiber tracts is important for surgical planning, and propose that future studies should investigate non-invasive neuromodulation approaches (dTMS, LIFUS) for targeting these deep brain structures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104 and C109 represent reasonable inferences about clinical implications and future research directions based on the study findings. These are appropriately framed as suggestions and future work rather than established conclusions.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,1751 @@
+{
+  "submission": {
+    "id": "54593d60-3d3b-4e40-a661-d047514121ad",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-04T04:05:28.979276Z",
+    "updated_at": "2025-12-04T04:05:28.979276Z"
+  },
+  "content": [
+    {
+      "id": "328d7c36-01af-444d-9cf1-cadf7a8b4e41",
+      "submission_id": "54593d60-3d3b-4e40-a661-d047514121ad",
+      "content_type": "manuscript",
+      "content_text": "# MTL neurons phase-lock to human hippocampal theta\n\n## Authors\n\n- Daniel R Schonhaut<sup>1</sup> ([ORCID: 0000-0001-8667-031X](https://orcid.org/0000-0001-8667-031X)) \u2020\n- Aditya M Rao<sup>2</sup> ([ORCID: 0000-0002-5854-5594](https://orcid.org/0000-0002-5854-5594))\n- Ashwin G Ramayya<sup>3</sup> ([ORCID: 0000-0002-4444-0433](https://orcid.org/0000-0002-4444-0433))\n- Ethan A Solomon<sup>4</sup>\n- Nora A Herweg<sup>2</sup> ([ORCID: 0000-0002-4647-7408](https://orcid.org/0000-0002-4647-7408))\n- Itzhak Fried<sup>5</sup> ([ORCID: 0000-0002-5962-2678](https://orcid.org/0000-0002-5962-2678))\n- Michael J Kahana<sup>2</sup> ([ORCID: 0000-0001-8122-9525](https://orcid.org/0000-0001-8122-9525)) \u2020\n\n### Affiliations\n\n1. Department of Neuroscience, Perelman School of Medicine, University of Pennsylvania Philadelphia United States ([ROR:00b30xv10](https://ror.org/00b30xv10))\n2. Department of Psychology, University of Pennsylvania Philadelphia United States ([ROR:00b30xv10](https://ror.org/00b30xv10))\n3. Department of Neurosurgery, University of Pennsylvania Philadelphia United States ([ROR:00b30xv10](https://ror.org/00b30xv10))\n4. Department of Bioengineering, University of Pennsylvania Philadelphia United States ([ROR:00b30xv10](https://ror.org/00b30xv10))\n5. Department of Neurosurgery, Neurosurgery, David Geffen School of Medicine and Semel Institute for Neuroscience and Human Behavior, University of California, Los Angeles Los Angeles United States ([ROR:046rm7j60](https://ror.org/046rm7j60))\n6. Faculty of Medicine, Tel-Aviv University Tel-Aviv Israel ([ROR:04mhzgx49](https://ror.org/04mhzgx49))\n\n\u2020 Corresponding author\n\n## Abstract\n\nMemory formation depends on neural activity across a network of regions, including the hippocampus and broader medial temporal lobe (MTL). Interactions between these regions have been studied indirectly using functional MRI, but the bases for interregional communication at a cellular level remain poorly understood. Here, we evaluate the hypothesis that oscillatory currents in the hippocampus synchronize the firing of neurons both within and outside the hippocampus. We recorded extracellular spikes from 1854 single- and multi-units simultaneously with hippocampal local field potentials (LFPs) in 28 neurosurgical patients who completed virtual navigation experiments. A majority of hippocampal neurons phase-locked to oscillations in the slow (2\u20134 Hz) or fast (6\u201310 Hz) theta bands, with a significant subset exhibiting nested slow theta \u00d7 beta frequency (13\u201320 Hz) phase-locking. Outside of the hippocampus, phase-locking to hippocampal oscillations occurred only at theta frequencies and primarily among neurons in the entorhinal cortex and amygdala. Moreover, extrahippocampal neurons phase-locked to hippocampal theta even when theta did not appear locally. These results indicate that spike-time synchronization with hippocampal theta is a defining feature of neuronal activity in the hippocampus and structurally connected MTL regions. Theta phase-locking could mediate flexible communication with the hippocampus to influence the content and quality of memories.\n\n## Introduction\n\nThe hippocampus is the operational hub of a spatially distributed episodic memory system that enables us to remember past experiences in rich detail, together with the place and time at which they occurred (Eichenbaum, 2000; Moscovitch et al., 2016). To serve in this capacity, the hippocampus must maintain precise but flexible connections with the rest of the memory system. Understanding the mechanisms that govern connections among regions supporting episodic memory is a major concern of systems neuroscience, and could accelerate efforts to develop treatments for memory disorders and age-related memory decline.\n\nA leading hypothesis is that theta (2\u201310 Hz) oscillations within the hippocampus facilitate interactions between the hippocampus and other brain regions (Buzs\u00e1ki, 2010; Fell and Axmacher, 2011; Moscovitch et al., 2016). Hippocampal neurons are more receptive to synaptic excitation at specific theta phases (Kamondi et al., 1998), so well-timed inputs can more effectively drive activity than inputs at random phases (Fries, 2005). Long-term potentiation and long-term depression in the rodent hippocampus also depend on theta phase (Pavlides et al., 1988; Huerta and Lisman, 1995; Hyman et al., 2003), offering a possible link between the phase at which inputs arrive and the strength of their encoding. Experimental evidence for this hypothesis comes largely from studies in the rat medial prefrontal cortex (mPFC), a downstream target of hippocampal area CA1. mPFC neurons phase-lock to hippocampal theta during short-term memory tasks (Siapas et al., 2005; Hyman et al., 2005; Sirota et al., 2008), and stronger phase-locking predicts better performance (Jones and Wilson, 2005; Hyman et al., 2010; Benchenane et al., 2010; Fujisawa and Buzs\u00e1ki, 2011) and greater information transfer between mPFC and hippocampal neurons (Ito et al., 2018; Padilla-Coreano et al., 2019). Phase-locking to hippocampal theta is also prevalent among cells in many other regions, including the entorhinal cortex (EC), amygdala, parietal cortex, thalamic nucleus reuniens, and some subcortical and brainstem nuclei (Kocsis and Vertes, 1992; Sirota et al., 2008; Fujisawa and Buzs\u00e1ki, 2011; Bienvenu et al., 2012; Fern\u00e1ndez-Ruiz et al., 2017; Ito et al., 2018). Theta phase-synchronization could thus be a general mechanism for relaying information between the hippocampus and a broad network of memory-related regions.\n\nIn humans, macroelectrode LFP recordings in epilepsy patients have revealed sporadically occurring theta oscillations in the hippocampus and cortex during spatial navigation and episodic memory engagement (Ekstrom et al., 2005; Watrous et al., 2011; Lega et al., 2012; Watrous et al., 2013a; Zhang and Jacobs, 2015; Vass et al., 2016; Aghajan et al., 2017; Stangl et al., 2021). Macroscale theta phase-synchronization within the MTL and PFC has consistently correlated with better memory performance (Babiloni et al., 2009; Watrous et al., 2013b; Solomon et al., 2017; Zheng et al., 2019; Kunz et al., 2019). Considerably less is known about how oscillations relate to neuronal firing in humans than in rodents. An early study in epilepsy patients found that a large percentage of MTL and neocortical neurons phase-locked to locally recorded theta oscillations (among other frequencies) as subjects navigated through a virtual environment (Jacobs et al., 2007), and another study found that MTL neurons phase-locked more strongly to locally recorded theta oscillations while subjects viewed images that they later recognized than those that they forgot (Rutishauser et al., 2010). These findings indicate that neural activity within the human episodic memory system is organized in part by a theta phase code. However, few studies in humans have examined interregional relations between spiking and LFP oscillation phase. A recent study found that increased coupling between spikes and distal theta oscillations in the MTL during an associative image encoding task predicted better subsequent recognition (Roux et al., 2022). Yet it remains unclear if distal spike\u2013LFP interactions are mediated by, or occur independently of, phase-locking to locally recorded oscillations. Regional differences in phase-locking prevalence to hippocampal oscillations are also underexplored. To address these questions, we leveraged the rare opportunity to record single- and multi-neuron activity simultaneously with LFP oscillations in multiple brain regions, including the hippocampus, in 28 neurosurgical patients implanted with intracranial electrodes.\n\n## Results\n\nSubjects were implanted with depth electrodes in the hippocampus, EC, amygdala, parahippocampal gyrus (PHG), superior temporal gyrus (STG), orbitofrontal cortex (OFC), and anterior cingulate cortex (ACC). From microwires that extended from the tips of these depth probes, we recorded extracellular spikes from 1,854 single- and multi-units (hereafter called \u2018neurons\u2019 Table 1) as subjects navigated through a virtual environment while completing one of several spatial memory tasks whose data we pooled for this analysis (see \u2018Materials and methods\u2019). In total, we identified 10\u201371 (median = 30.0) neurons per session across 55 recording sessions, and the firing rates of these neurons were log-normally distributed (median = 2.0 Hz). In addition, every subject had at least one microwire bundle implanted in the hippocampus, permitting neuronal firing to be analyzed simultaneously with oscillatory activity in the hippocampal LFP.\n\n**Table 1.**\n Neurons by region.Table shows how many subjects had at least one neuron in each brain region, how many neurons were recorded in each region, and the median, lower-, and upper-quartile firing rates for these neurons.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Region</th>\n      <th>Subjects</th>\n      <th>Neurons</th>\n      <th>Firing rate (Hz)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Hippocampus</td>\n      <td>27</td>\n      <td>391</td>\n      <td>1.6 (0.6, 4.7)</td>\n    </tr>\n    <tr>\n      <td>Entorhinal cortex</td>\n      <td>19</td>\n      <td>341</td>\n      <td>2.3 (1.0, 5.5)</td>\n    </tr>\n    <tr>\n      <td>Amygdala</td>\n      <td>23</td>\n      <td>439</td>\n      <td>1.5 (0.6, 3.7)</td>\n    </tr>\n    <tr>\n      <td>Parahippocampal gyrus</td>\n      <td>15</td>\n      <td>217</td>\n      <td>2.2 (0.8, 4.5)</td>\n    </tr>\n    <tr>\n      <td>Superior temporal gyrus</td>\n      <td>5</td>\n      <td>139</td>\n      <td>3.4 (1.4, 8.6)</td>\n    </tr>\n    <tr>\n      <td>Orbitofrontal cortex</td>\n      <td>15</td>\n      <td>193</td>\n      <td>2.0 (0.9, 4.9)</td>\n    </tr>\n    <tr>\n      <td>Anterior cingulate cortex</td>\n      <td>8</td>\n      <td>134</td>\n      <td>3.1 (1.4, 6.8)</td>\n    </tr>\n    <tr>\n      <td>Total</td>\n      <td>28</td>\n      <td>1854</td>\n      <td>2.0 (0.8, 5.0)</td>\n    </tr>\n  </tbody>\n</table>\n\n### Identifying oscillations in hippocampal microwire LFPs\n\nEarlier studies that have reported oscillatory properties of the human hippocampus during navigation have primarily utilized implanted macroelectrodes that integrate activity over hundreds of thousands of neurons (Ekstrom et al., 2005; Watrous et al., 2011; Aghajan et al., 2017; Vass et al., 2016). As the microwires used in the present study record at far smaller spatial scales, we first considered whether microwires exhibit oscillatory properties comparable to those observed in macroelectrode LFPs. We focused on 1\u201330 Hz signals for this analysis, avoiding higher frequencies at which spike-related artifacts can complicate LFP interpretation (Manning et al., 2009; Buzs\u00e1ki et al., 2012; Ray, 2015). Many individual electrodes showed peaks in spectral power that rose above the background 1/f line in session-averaged LFP spectrograms (Figure 1A), indicating the potential presence of oscillatory activity (Donoghue et al., 2020). The frequency and magnitude of these spectral peaks varied considerably across subjects (compare Figure 1A subpanels) yet appeared nearly exclusively between 2\u201320 Hz.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/85753/elife-85753-fig1-v2.jpg)\n\n**Figure 1.:** (A) Spectral power across the recording session is shown for hippocampal local field potentials (LFPs) from three example subjects. Arrows indicate spectral peaks above the background 1/f spectrum. (B) A hippocampal LFP trace (gray line = raw LFP, cyan line = 6 Hz\u2013filtered LFP) is shown immediately before and during a Better OSCillation (BOSC)\u2013detected theta oscillation, highlighted in pink. (C) Mean \u00b1 SEM percent time, across 28 subjects, that BOSC-detected oscillations were present in hippocampal LFPs at each frequency from 1 to 30 Hz.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/85753/elife-85753-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Subpanels show the mean \u00b1 SEM percent time, across n subjects, that Better OSCillation (BOSC)\u2013detected oscillations were present in each region at 1\u201330 Hz frequencies. Regions in which neurons were recorded from fewer subjects exhibit greater variance across subjects, so y-axis scaling varies among subpanels to accommodate the visualization of differing variances.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/85753/elife-85753-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) LFP traces show the mean waveform of the first three cycles of hippocampal oscillatory bouts at 3 Hz, 7 Hz, and 15 Hz, respectively. (B) Mean \u00b1 SEM asymmetry index of hippocampal oscillatory bouts at 3 Hz, 7 Hz, and 15 Hz. (C) Dice similarity coefficients show the overlap between 3 Hz, 7 Hz, and 15 Hz oscillatory bouts, respectively, and oscillatory bouts at all other examined frequencies in the hippocampal LFP. All figure panels show across-subject means after first aggregating each measure within-subject. Error bars and error shading show SEM across the 28 participants.\n\nTo determine if spectral peaks were associated with sustained oscillations versus asynchronous, high-amplitude events, we used the BOSC (Better OSCillation) detection method to identify time-resolved oscillatory \u2018bouts\u2019 in each hippocampal microwire recording (Whitten et al., 2011). Briefly, BOSC (alternatively called \u2018$P_{episode}$\u2019) defines an oscillatory bout according to two threshold criteria: Spectral power at a given frequency must exceed (1) a statistically defined amplitude above the 1/f spectrum, for (2) a minimum defined duration (we used 3 cycles; see \u2018Materials and methods\u2019 for more details). Figure 1B shows an example hippocampal LFP in which an initially aperiodic, \u20181/f-like\u2019 signal transitioned into a strong, 6 Hz oscillation that persisted for 6 cycles, with the BOSC-defined oscillatory bout highlighted in pink.\n\nAcross subjects, hippocampal oscillatory bouts were present \u223c1\u20136% of the time at the examined frequencies (Figure 1C; Figure 1\u2014figure supplement 2 shows oscillatory prevalence in other regions for comparison). The prevalence of these oscillations was not uniform across frequencies, but instead clustered around three, well-separated bands with peaks at 3 Hz, 7 Hz, and 15 Hz. These frequencies are consistent with the hippocampal slow theta (alternatively \u2018delta\u2019 2\u20134 Hz), fast theta (6\u201310 Hz), and beta band rhythms (13\u201320 Hz) previously described in macroelectrode recordings, and the prevalence of oscillatory bouts in our data was comparable to these earlier studies (Ekstrom et al., 2005; Lega et al., 2012; Watrous et al., 2013a; Goyal et al., 2020).\n\nAs peaks at 3 Hz, 7 Hz, and 15 Hz could reflect harmonic resonance or waveform asymmetries of a single oscillation, we sought to verify whether oscillatory bouts at these frequencies occurred independently. Mean LFP waveforms during the first three cycles of each oscillatory bout showed symmetrical, sinusoidal shapes at each peak frequency, without any apparent harmonics (Figure 1\u2014figure supplement 1A). We computed an asymmetry index for each waveform and confirmed that, on average across subjects, the 3 Hz and 7 Hz oscillations were nearly perfectly symmetrical, while the 15 Hz oscillation showed a very small asymmetry associated with a longer (by <1 ms) ascending than descending period (Figure 1\u2014figure supplement 1B). Finally, we examined the extent to which oscillatory bouts at each peak frequency occurred at overlapping times, measuring the Dice similarity coefficient between oscillatory bouts at each peak frequency and all remaining frequencies. We found that the 3 Hz, 7 Hz, and 15 Hz oscillations occurred at largely separable times (Figure 1\u2014figure supplement 1C). We concluded that hippocampal oscillatory bouts occur in three independent bands, centered at 3 Hz, 7 Hz, and 15 Hz.\n\nOscillatory prevalence varied between these frequency bands ($\u03c7^{2}(2)=13.9$, $p<0.0001$, likelihood ratio test between linear mixed-effects models testing frequency band as a fixed effect and holding subject as a random effect), such that slow theta was more prevalent than fast theta ($z=2.4$, $p=0.0336$, post-hoc pairwise z-tests, Bonferroni-Holm\u2013corrected for multiple comparisons) or beta oscillations ($z=3.9$, $p=0.0002$), while fast theta and beta oscillations occurred at similar rates ($z=1.5$, $p=0.1218$). These findings indicate that the human hippocampus exhibits several distinct, low-frequency oscillations that are conserved across spatial scales spanning several orders of magnitude, from microwire to macroelectrode fields. Moreover, theta oscillations are the predominant oscillatory component of the hippocampal LFP during virtual navigation.\n\n### Individual neuron phase-locking to hippocampal oscillations\n\nHaving confirmed the presence of hippocampal theta and beta oscillations, we next asked how these oscillations interacted with the timing of neuronal firing throughout recorded regions (Table 1). We quantified the phase-locking strength of individual neurons to ipsilateral hippocampal oscillations at a range of frequencies, 1\u201330 Hz. A neuron\u2019s phase-locking strength was defined as the mean resultant length (MRL) of hippocampal LFP phases across spike times at a given frequency, z-scored against a null distribution of MRLs obtained by circularly shifting the neuron\u2019s spike train 10,000 times at random (see \u2018Materials and methods\u2019). To control for the possibility that some neurons might phase-lock to asynchronous events in the hippocampal LFP, such as sharp waves or interictal discharges (Skelin et al., 2021; Reed et al., 2020), we restricted our analysis to spikes that coincided with BOSC-detected oscillatory bouts at each frequency, excluding 11% of neurons for which the number of included spikes did not suffice to accurately gauge phase-locking (see \u2018Materials and methods\u2019).\n\nFigure 2A illustrates the phase-locking of an EC neuron whose spikes appear in raster format above a simultaneously recorded, 3 s hippocampal LFP trace exhibiting slow theta rhythmicity. The neuron fired in bursts of 2\u20138 spikes on a majority of theta cycles, with each burst generally aligned with the theta cycle peak, while nearly no spikes occurred near the theta trough. Next, we examined the population phase-locking statistics for this neuron across the recording session (Figure 2C). Computing the mean hippocampal LFP trace surrounding each spike (the \u2018spike-triggered average LFP\u2019), we confirmed that the neuron preferentially fired just after the theta peak, with synchronous theta oscillations extending more than a full cycle before and after spike onset (Figure 2C, left subpanel, blue line). As a control, we also examined a spike-triggered average LFP drawn at random from the null distribution, which showed a nearly flat line consistent with absent phase-locking (Figure 2C, left subpanel, gray line). Graphing this neuron\u2019s phase-locking strength at frequencies from 1 to 30 Hz revealed that phase-locking to hippocampal oscillations occurred only in the slow theta band, peaking at 3 Hz (Figure 2C, middle subpanel). Finally, the circular histogram of spike-coincident, 3 Hz hippocampal LFP phases showed that most spikes occurred within a quarter-cycle after the theta peak (Figure 2C, right subpanel). Figure 2B and D\u2013J applies this analysis to representative neurons in the hippocampus, EC, amygdala, and OFC that phase-locked to LFP oscillations in the hippocampus. Most neurons exhibited unimodal peaks in phase-locking strength, most commonly in the theta range.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/85753/elife-85753-fig2-v2.jpg)\n\n**Figure 2.:** (A) Spikes from an EC neuron (top, vertical lines) are shown alongside local field potential (LFP) activity in the hippocampus during a slow theta oscillation (gray line = raw LFP, cyan line = 3 Hz\u2013filtered LFP). Panel (C) shows phase-locking statistics for this neuron across the recording session. (B\u2013J) Shown are nine neurons in the HPC (left column), EC (middle column), AMY (right column, top two rows), and OFC (right column, bottom row) that phase-locked to oscillatory signals in the hippocampus while subjects navigated through a virtual environment. The left subpanel for each neuron shows the mean hippocampal LFP centered on the time of each spike. The middle subpanel shows the phase-locking strength at each frequency relative to a null distribution of circularly shifted spikes. The right subpanel shows the spike\u2013phase distribution at the maximum phase-locking frequency. Dark gray (HPC), blue (EC), red (AMY), and purple (OFC) lines correspond to true spike times, while light gray lines correspond to circularly shifted spike times from a single draw from the null distribution. HPC = hippocampus; EC = entorhinal cortex; AMY = amygdala; OFC = orbitofrontal cortex.\n\n### Regional differences in hippocampal phase-locking\n\nWe next examined phase-locking at the population level, first considering the percentage of neurons in each region that significantly phase-locked to ipsilateral hippocampal LFP oscillations, irrespective of frequency. For each neuron, we derived an empirical phase-locking p-value by comparing the neuron\u2019s maximum phase-locking strength, across frequencies, to its null distribution of maximum phase-locking strengths (see \u2018Materials and methods\u2019). We then applied false discovery rate (FDR) correction at $\\alpha=0.05$ to the distribution of p-values within each region. Finally, for each region outside the hippocampus, we performed the same analyses and statistical corrections with respect to LFP oscillations in each neuron\u2019s local region, proximal to the electrode from which a neuron was recorded. This last step allowed us to directly compare phase-locking rates to local versus remote hippocampal oscillations.\n\nFigure 3A illustrates these analyses. As expected, neurons within the hippocampus phase-locked to hippocampal oscillations at the highest rate among recorded regions, with 59% of hippocampal neurons significantly phase-locked after FDR correction. High phase-locking rates to the hippocampus were also found for neurons in the EC (41%) and amygdala (29%), with phase-locking rates in the EC significantly higher than those in the amygdala ($z=3.6$, $p=0.0004$, post-hoc pairwise z-test from a logistic mixed-effects model testing neuron region as a fixed effect and holding subject as a random effect). Whereas amygdala neurons phase-locked to local oscillations at significantly higher rates (46%) than to oscillations in the hippocampus ($\u03c7^{2}(1)=32.6$, $p<0.0001$), neurons in the EC phase-locked to local (40%) and hippocampal oscillations at indistinguishable rates ($\u03c7^{2}(1)=0.2$, $p=0.6672$, likelihood ratio tests between logistic mixed-effects models testing oscillation region as a fixed effect and holding subject as a random effect).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/85753/elife-85753-fig3-v2.jpg)\n\n**Figure 3.:** (A) Bars show the percentage of neurons in each region that phase-locked to locally recorded local field potential (LFP) oscillations (light gray) and hippocampal LFP oscillations (dark gray). (Note that local and hippocampal LFP is identical for hippocampal neurons.) Phase-locking significance was set at false discovery rate (FDR)\u2013corrected $p<0.05$ within each bar group. (B) Heatmaps show the phase-locking strength (z-MRL; color scale intensity) by hippocampal LFP oscillation frequency (x-axis) for all significantly phase-locked neurons (y-axis; each row = one neuron) in the HPC, EC, AMY, and remaining regions (CTX), respectively. Neurons in each region are sorted from top to bottom by frequency of maximum phase-locking strength. Neurons depicted match the dark gray bars in (A). (C) Mean \u00b1 SEM phase-locking strength by hippocampal oscillation frequency is shown for all neurons in each region, regardless of their individual phase-locking significance as depicted in (A) and (B). HPC = hippocampus; EC = entorhinal cortex; AMY = amygdala; PHG = parahippocampal gyrus; STG = superior temporal gyrus; OFC = orbitofrontal cortex; ACC = anterior cingulate cortex.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/85753/elife-85753-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Heatmaps show the phase-locking strength (z-MRL; color scale intensity) by local oscillation frequency (x-axis) for all significantly phase-locked neurons (y-axis; each row = one neuron) in each region, respectively. Within the heatmap for each region, the order of neurons from top to bottom follows increasing preferred phase-locking frequency. The population of neurons depicted in these heatmaps matches the population represented by the light gray bars in Figure 3A.\n\nThese results stood in stark contrast to all remaining regions, where phase-locking to the hippocampus occurred at rates below 5%. Phase-locking to local oscillations was nonetheless prevalent in the PHG (24%) and STG (49%), indicating that many of these neurons fired at specific phases of LFP oscillations \u2014 just not those recorded in the hippocampus. In two regions of the prefrontal cortex, local phase-locking rates were relatively low (16% of OFC neurons and 6% of ACC neurons) although still significantly higher than phase-locking rates to the hippocampus (OFC: $\u03c7^{2}(1)=20.9$, $p<0.0001$; ACC: $\u03c7^{2}(1)=5.6$, $p=0.0178$; likelihood ratio tests between logistic mixed-effects models, as above). Altogether, these results highlight a triad of regions \u2014 the hippocampus, EC, and amygdala \u2014 that features strong spike-time synchronization to hippocampal oscillations, while neurons in more remote, cortical regions that are known to interact with hippocampus-dependent processes (Eichenbaum, 2000; Squire, 2011; Ranganath and Ritchey, 2012) phase-locked minimally to hippocampal rhythms.\n\n### Frequencies of hippocampal phase-locking\n\nIndividual neuron examples suggested that phase-locking to the hippocampus occurred most commonly at theta frequencies (Figure 2), although our analysis of hippocampal LFPs revealed oscillations extending up to \u223c20 Hz (Figure 1). Does this observation of preferential theta phase-locking hold at the population level, and does the frequency of hippocampal phase-locking vary by a neuron\u2019s region of origin? To answer these questions, we generated heatmaps of phase-locking strength by frequency for all neurons that phase-locked significantly to hippocampal oscillations at any frequency, as defined in the previous section (Figure 3B; these neurons correspond to the dark gray bars in Figure 3A). We made separate heatmaps for neurons in the hippocampus, EC, amygdala, and remaining regions, sorting the neurons in each region by frequency of maximum phase-locking strength. Figure 3\u2014figure supplement 1 shows analogous heatmaps for neurons in each region with respect to local, rather than hippocampal, oscillations, matching the population of neurons represented by the light gray bars in Figure 3A.\n\nIn the hippocampus, neurons phase-locked to local oscillations predominantly between 2\u201320 Hz. Only a few neurons phase-locked weakly at higher frequencies, which may be largely attributable to false discoveries (Figure 3B, far-left subpanel). Within the 2\u201320 Hz range, phase-locking was not unimodal, but instead clustered around three distinct peaks in the slow theta, fast theta, and beta bands. Most hippocampal neurons phase-locked only to a single band, with the exception of neurons that phase-locked maximally to beta oscillations, which also showed a near-universal tendency to phase-lock strongly to slow theta (see for example Figure 2H). These neurons may best be classified as nested slow theta \u00d7 beta phase-locking neurons, which to our knowledge have not previously been reported. In contrast, we did not observe nested phase-locking between fast theta and beta oscillations or between any other pair of frequency bands.\n\nAmong neurons outside the hippocampus, phase-locking to hippocampal oscillations occurred within a more constrained frequency range, between 2\u201310 Hz (Figure 3B, right three subpanels). In the EC, similar numbers of neurons showed preferential phase-locking to slow and fast hippocampal theta, respectively. In the amygdala and remaining cortical regions, this balance shifted: Only a few neurons phase-locked to fast hippocampal theta, while most neurons coupled exclusively to slow theta. Thus, while hippocampal neurons phase-locked to both theta and beta bands, for neurons outside the hippocampus, spike-time synchronization with hippocampal oscillations was restricted to theta frequencies.\n\nWe confirmed these conclusions in a secondary analysis that examined the mean phase-locking strength at each frequency across all neurons in each region, regardless of individual phase-locking significance (Figure 3C). This approach benefited from not requiring an explicit significance threshold to be defined. Instead, we assumed that if the neurons in a given region did not phase-lock measurably to the hippocampus, then the mean phase-locking strength across these neurons would approach zero with increasing sample size, since they would exhibit no difference against the null distribution. Indeed, population phase-locking strengths were close to zero across frequencies for neurons in the PHG, STG, OFC, and ACC, consistent with the relative absence of individually phase-locked neurons in these regions. In contrast, neurons in both the EC and the amygdala phase-locked strongly to slow hippocampal theta frequencies, while neurons in the EC, but not the amygdala, exhibited a secondary rise in phase-locking strength to fast hippocampal theta. Finally, neurons in the hippocampus showed stronger phase-locking to hippocampal oscillations at all frequencies than neurons in any other region, with peaks in phase-locking strength at all three oscillatory bands: slow theta, fast theta, and beta.\n\n### Local oscillation effects on remote hippocampal phase-locking\n\nOur data reveal that neurons not only within the hippocampus, but in remote regions \u2014 particularly the entorhinal cortex and amygdala \u2014 phase-lock to hippocampal theta oscillations. How do these remote spike\u2013phase associations occur? One possibility, given the strength of phase-locking to local oscillations (Figure 3\u2014figure supplement 1), is that phase-locking to the hippocampus is an indirect phenomenon, facilitated by transient phase coupling between oscillations in different regions (Figure 4\u2014figure supplement 1, blue arrows). In rodents, however, neurons in some regions phase-lock to hippocampal theta even in the absence of a local theta rhythm (Siapas et al., 2005), suggesting that interregional oscillatory coupling is not a strict requirement for remote spike\u2013phase associations (Figure 4\u2014figure supplement 1, red arrow).\n\nTo examine how interregional oscillatory coupling contributed to remote spike\u2013phase associations, we first considered the co-occurrence of oscillatory bouts in the hippocampus and in each extrahippocampal region. We reasoned that if remote spike\u2013phase associations were mediated by oscillatory coupling, then regions where neurons phase-locked to the hippocampus at higher rates should also show higher levels of oscillatory co-occurrence. Consistent with this hypothesis, hippocampal oscillations overlapped more with oscillations in the EC and amygdala than with oscillations in the STG, OFC, and ACC at most frequencies (Figure 4A; overlap calculated using the Dice similarity coefficient). However, hippocampal and PHG oscillations also overlapped strongly despite the relative absence of PHG neuron phase-locking to the hippocampus (Figure 3A) and abundant PHG neuron phase-locking to local theta (Figure 3\u2014figure supplement 1). Moreover, the overlap between local and hippocampal oscillations never exceeded 20% in any region at any frequency, indicating that neurons could, in principle, phase-lock to hippocampal oscillations independent of local oscillations, and vice versa. Overall, these results provide a mixed view for the hypothesis that interregional oscillatory coupling and remote spike\u2013phase associations are interchangeable.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/85753/elife-85753-fig4-v2.jpg)\n\n**Figure 4.:** (A) Mean \u00b1 SEM (across 28 subjects) Dice coefficient across subjects shows the percent overlap between oscillatory bouts in the hippocampus and in each extrahippocampal region. (B) Bars show the percentage of neurons in each region that phase-locked to hippocampal oscillations when local oscillations were present (light gray) or absent (dark gray). Phase-locking significance was set at false discovery rate (FDR)-corrected $p<0.05$ within each bar group. (C) Heatmaps show the phase-locking strength by hippocampal LFP oscillation frequency for all significantly phase-locked neurons in the EC (top row), AMY (middle row), and remaining regions (CTX; bottom row), when hippocampal and local oscillations co-occurred (left column) versus when only hippocampal oscillations occurred (middle column). The right column shows the left column minus middle column values. Neurons in each region are sorted from top to bottom by frequency with the maximum phase-locking strength, and the sorting order is constant across columns within each row. Neurons depicted match the union of light gray and dark gray bars in (B). (D) Phase-locking to the hippocampus is shown during co-occurring local and hippocampal oscillations (left) or only hippocampal oscillations (right). Each subpanel shows the mean \u00b1 SEM (across 28 subjects) phase-locking strength by hippocampal oscillation frequency for all neurons in each region, regardless of their individual phase-locking significance as depicted in (B) and (C). HPC = hippocampus; EC = entorhinal cortex; AMY = amygdala; PHG = parahippocampal gyrus; STG = superior temporal gyrus; OFC = orbitofrontal cortex; ACC = anterior cingulate cortex.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/85753/elife-85753-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Figure illustration shows two ways in which phase-locking of extrahippocampal neurons to hippocampal theta could occur. In the first scenario, an entorhinal cortex (EC) neuron phase-locks to the local theta rhythm, which in turn exhibits phase-synchrony with hippocampal theta (\u2018indirect phase-locking,\u2019 blue arrows). In the second scenario, the EC neuron is directly entrained to hippocampal theta, such that phase-locking can occur even absent a local theta rhythm (\u2018direct phase-locking,\u2019 red arrow).\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/85753/elife-85753-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** Bars show the percentage of neurons in each region that phase-locked to local oscillations when hippocampal oscillations were present (light gray) or absent (dark gray). Phase-locking significance was set at false discovery rate (FDR)\u2013corrected $p<0.05$ within each bar group.\n\nNext, we directly compared how remote phase-locking to the hippocampus varied as a function of local phase-locking effects. For each extrahippocampal neuron, we divided spikes into two categories: (1) spikes that occurred when an oscillation was present in both the hippocampus and a neuron\u2019s local region, and (2) spikes that occurred when an oscillation was present in the hippocampus but not the neuron\u2019s local region. As chance-level phase-locking values depend on sample size, for each neuron we matched the number of spikes in each group, at each frequency, excluding neurons with insufficient sample size (<50 spikes at any frequency; see \u2018Materials and methods\u2019). We then applied the same methods for determining phase-locking strength and significance as described in the previous section.\n\nFigure 4B shows the results from these analyses. FDR-corrected phase-locking rates during co-occurring local and hippocampal oscillations were comparable to phase-locking rates when all spikes were included (see Figure 3A), with high phase-locking to hippocampal oscillations among neurons in the EC and amygdala and minimal phase-locking among neurons in other regions. In contrast, when hippocampal oscillations occurred without co-occurring local oscillations, phase-locking rates to the hippocampus declined by nearly two-thirds in the EC (from 39% to 14% of neurons) and by half in the amygdala (from 28% to 15%), while phase-locking to the hippocampus in other regions mostly vanished. Phase-locking strength to the hippocampus decreased specifically at theta frequencies, and even neurons that remained significantly phase-locked in the absence of local oscillations showed reduced phase-locking strength (Figure 4C). We also considered the converse question, asking whether phase-locking to local oscillations depended on the presence of co-occurring oscillations in the hippocampus. While hippocampal oscillation presence did not affect local phase-locking rates in the amygdala and neocortex, in the EC the percentage of locally phase-locked neurons was reduced by more than half when hippocampal oscillations were absent (Figure 4\u2014figure supplement 2).\n\nFinally, we confirmed these findings at the population level by computing the mean phase-locking strength across all neurons in each region, without regard to phase-locking significance, while still matching the number of spikes at each frequency between conditions in which local and hippocampal oscillations co-occurred, or in which only hippocampal oscillations occurred. As in Figure 3C, when local and hippocampal oscillations co-occurred, EC and amygdala neurons both phase-locked strongly to slow hippocampal theta, phase-locking to fast hippocampal theta was restricted to EC neurons, and other regions showed negligible phase-locking to hippocampal oscillations at any frequency (Figure 4D, left subpanel). When local theta was absent, the strength of EC and amygdala neuron phase-locking to hippocampal theta was reduced by half, while still remaining well above chance (Figure 4D, right subpanel). Collectively, these results provide direct evidence that interregional LFP\u2013LFP theta coupling augments but is not strictly required for extrahippocampal neuron phase-locking to hippocampal theta.\n\n## Discussion\n\nBy combining datasets of single- and multi-neuron recordings in human subjects, we provide an empirical test of the hypothesis that LFP oscillations in the hippocampus synchronize the timing of neuronal firing both within the hippocampus and in functionally associated regions. Consistent with prior studies, we identify sporadic, oscillatory bouts in hippocampal LFPs within slow theta (2\u20134 Hz), fast theta (6\u201310 Hz), and beta (13\u201320 Hz) bands while subjects engaged in virtual navigation. Individual hippocampal neurons phase-lock to oscillations in each of these bands, including a previously undiscovered group of neurons that phase-lock to nested slow theta and beta rhythms. Outside the hippocampus, phase-locking to hippocampal oscillations occurs in both a region-specific (primarily EC and amygdala neurons) and frequency-specific (theta-preferring) manner. We further show a dissociation between region and frequency in the selective phase-locking of EC neurons to fast hippocampal theta, whereas neurons in all regions outside the hippocampus show some level of phase-locking to slow hippocampal theta. Finally, we provide the first direct evidence in humans that LFP\u2013LFP coupling enhances spike-time synchronization between regions, as extrahippocampal neurons phase-lock approximately twice as strongly to hippocampal theta when local theta oscillations co-occur, as when local theta is absent. Taken together, these findings reveal a fundamental relationship between MTL neuron firing and hippocampal theta phase that underscores a hypothesized role for theta oscillations in routing the information contents of memory.\n\nWe note a particularly striking difference between phase-locking rates to hippocampal theta in the EC and amygdala (\u223c30\u201340% of neurons) relative to all other recorded regions, which phase-lock minimally (<5%) despite their associations with hippocampus-dependent processes (Eichenbaum, 2000; Squire, 2011; Ranganath and Ritchey, 2012). This result is consistent with structural anatomy, as the hippocampus maintains strong, reciprocal connections with the EC and amygdala while connections to neocortex are sparser (Amaral, 2011). Still, given evidence in rodents that some mPFC neurons project directly to the hippocampus (Rajasethupathy et al., 2015), phase-lock to hippocampal theta (Siapas et al., 2005; Hyman et al., 2005; Sirota et al., 2008; Ito et al., 2018; Padilla-Coreano et al., 2019), and are critical for memory retrieval (Rajasethupathy et al., 2015; Yadav et al., 2022), we expected ACC and OFC neurons to show stronger associations with hippocampal theta than we observed. One possibility is that strong phase-locking to hippocampal theta occurs in the EC and amygdala at baseline, whereas phase-locking among neurons in the mPFC and other cortical areas is task-dependent. Consistently, a recent study in humans found that ACC and pre-supplementary motor area neurons phase-locked to hippocampal theta during a task-switching experiment in which subjects alternated between making recognition memory-based or categorization-based decisions (Minxha et al., 2017). It will be interesting for future work to consider how phase-locking rates vary by region under different task and stimulus conditions.\n\nWe find two differences in hippocampal phase-locking properties between the EC and amygdala. First, as in neocortical regions, amygdala neurons phase-lock at higher rates to local than to hippocampal oscillations, and local and hippocampal phase-locking occur at least somewhat independently. By contrast, EC neurons phase-lock to local and hippocampal theta oscillations at indistinguishable rates, and phase-locking is greatly disrupted when EC and hippocampal theta bouts are asynchronous. It is worth noting that in rodents, EC and hippocampal theta are phase-shifted but otherwise largely interchangeable, with EC inputs playing a major role in hippocampal theta generation (Buzs\u00e1ki, 2002). Theta phase-synchronization between these regions is critical in explaining many circuit-level phenomena in rodents, including grid cell and place cell interactions, phase precession, and encoding/retrieval phase separation (O\u2019Keefe and Burgess, 2005; Hasselmo, 2005; Burgess et al., 2007; Bonnevie et al., 2013; Fern\u00e1ndez-Ruiz et al., 2017). Theta occurs more sporadically in humans and other primates than in rodents, and may differ between mammals in other ways not yet well understood (Eliav et al., 2018; Trimper and Colgin, 2018; Bush and Burgess, 2019). Still, our results indicate that as in rodents, EC and hippocampal neurons in humans retain a uniquely high degree of spike-time synchronization with an overlapping theta rhythm.\n\nThe second difference between EC and amygdala neurons concerns the frequency of hippocampal phase-locking, with neurons in both regions phase-locking to slow hippocampal theta but only EC neurons phase-locking measurably to fast theta. This result may be placed in context with recent observations that hippocampal theta frequency varies along the longitudinal axis of the hippocampus, with faster theta occurring more posteriorly (Goyal et al., 2020; Penner et al., 2022), where the density of EC relative to amygdalar afferents is greater (Strange et al., 2014). While most of our hippocampal electrodes were located anteriorly, precluding a direct analysis of EC and amygdala phase-locking by hippocampal electrode position, this hypothesis may be worth examining in a different dataset.\n\nWe note an important difference in our methodological approach compared to prior studies that examined spike\u2013LFP phase relations in humans (Jacobs et al., 2007; Rutishauser et al., 2010; Watrous et al., 2018; Kami\u0144ski et al., 2020; Minxha et al., 2020; Qasim et al., 2021; Roux et al., 2022). These studies typically analyzed either all spikes or a large majority of spikes during time windows of interest, sometimes excluding spikes when spectral power fell below a predefined threshold \u2014 e.g., the bottom 25th percentile. Here, we wished to strictly test the hypothesis that neurons phase-lock to neural oscillations in the hippocampus, as defined by intervals when spectral power exceeds the 1/f spectrum by a significant amount for a sustained duration (Whitten et al., 2011; Donoghue et al., 2022). We considered this approach especially important given the sporadic nature of oscillatory bouts in human LFP recordings and the prevalence of asynchronous, high-power artifacts \u2014 interictal discharges (Reed et al., 2020), sharp-wave ripples (Skelin et al., 2021), duplicate spikes across channels (Dehnen et al., 2021), and movement or other non-neural artifacts that escape algorithmic detection. In our experience, phase-locking analyses that did not restrict spikes to verified oscillations produced qualitatively similar group-level results as we report here, but included many individual cases of likely spurious phase-locking to non-oscillatory signals. This methodological difference might explain discrepancies between our results and earlier findings that hippocampal neurons phase-lock to local oscillations at a wider range of frequencies \u2014 e.g., 20\u201330 Hz \u2014 that we did not observe (Jacobs et al., 2007).\n\nThis study has several important limitations. First, all subjects had pharmacoresistant epilepsy, and we cannot rule out that some results might stem from pathological activity. However, we sought to attenuate this possibility by analyzing spikes only during oscillatory bouts, and we are encouraged by the general agreement between our results and those in rodents. A second limitation concerns the quality of unit isolation, as we recorded spikes from single microwires with limited ability to resolve spiking contributions from different neurons. Although some studies in humans have attempted to distinguish between single-units and multi-units and between excitatory and inhibitory neurons, unit quality metrics from microwires do not instill high confidence in the accuracy with which these distinctions can be made, while the potential for higher-quality unit recordings using tetrodes or Neuropixels may soon provide clarity with respect to differences specific to cell type (Despouy et al., 2020; Chung et al., 2022). In the meantime, we believe it is unlikely that this limitation would change any of our main conclusions, which do not depend on knowing if a unit is truly \u2018single\u2019 or a combination of several neighboring cells.\n\nStill little is known about the relations between theta phase-locking and human cognition (Herweg et al., 2020). Prior studies have focused on the behavioral correlates of phase-locking to local theta rhythms within the MTL; according to one, for example, successful image encoding depended on theta phase-locking strength among hippocampal and amygdala neurons (Rutishauser et al., 2010), while another study found that MTL neurons can represent contextual information in their theta firing phase (Watrous et al., 2018). Here, we show that hippocampal theta oscillations also inform the timing of neuronal firing in regions beyond the hippocampus, positioning theta oscillations at the interplay between local circuit computations and interregional communication. In light of these results, brain and behavioral or physiological dissociations between local and interregional phase-locking, and between spike\u2013LFP and LFP\u2013LFP phase-synchronization, merit further investigation. Such analyses could unite findings from animal and human studies and advance a more mechanistic account of hippocampus-dependent processes across multiple scales, from single neurons to macroscopic fields.\n\n## Materials and methods\n\n### Participants\n\nSubjects were 28patients with pharmacoresistant epilepsy who were implanted with depth electrodes to monitor seizure activity. Clinical teams determined the location and number of implanted electrodes in each patient. We conducted bedside cognitive testing on a laptop computer. Subjects completed one of two experiments (see \u2018Spatial navigation tasks\u2019): Yellow Cab (18 subjects) or Goldmine (10 subjects). Demographic information was unavailable for Yellow Cab participants and is given below in aggregate for 11 Goldmine subjects, including the 10 analyzed subjects plus 1 pilot subject for whom technical problems prevented successful data collection.\n\n<table>\n  <thead>\n    <tr>\n      <th colspan=\"2\">Sex</th>\n      <th colspan=\"2\">Race</th>\n      <th colspan=\"2\">Age</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Female</td>\n      <td>7</td>\n      <td>Asian</td>\n      <td>1</td>\n      <td>20\u201325</td>\n      <td>5</td>\n    </tr>\n    <tr>\n      <td>Male</td>\n      <td>4</td>\n      <td>Black</td>\n      <td>1</td>\n      <td>25\u201331</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td>White</td>\n      <td>6</td>\n      <td>32\u201337</td>\n      <td>2</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td>Unknown or Not Reported</td>\n      <td>3</td>\n      <td>38\u201343</td>\n      <td>3</td>\n    </tr>\n  </tbody>\n</table>\n\nAll testing was completed under informed consent. Institutional review boards at the University of California, Los Angeles, and the University of Pennsylvania approved all experiments. The number of the UCLA IRB protocol on which the Goldmine experiment was conducted is #10\u2013000973.\n\n### Spatial navigation tasks\n\nWe analyzed data from 55 recording sessions (1\u20134 sessions per subject, mean duration = 33.6 min). During each session, subjects played one of two first-person navigation games, Yellow Cab or Goldmine, in which they freely explored a virtual environment and retrieved objects or navigated to specific locations. Previous studies have described the details of these experiments (Ekstrom et al., 2003; Jacobs et al., 2010; Schonhaut et al., 2023); for the present study, we pooled data across these studies to generate a large sample for conducting electrophysiological analyses. We analyzed intervals in which subjects could freely navigate through the virtual environment.\n\n### Recording equipment\n\nEach subject was implanted with 6\u201312 Behnke-Fried depth electrodes that feature macroelectrode contacts for clinical monitoring and 40 \u00b5m\u2013diameter, platinum-iridium microwires for measuring microscale LFPs and extracellular action potentials (Fried et al., 1999). Electrode localizations were confirmed by the clinical team from post-operative structural MRIs or post-operative CT scans co-registered to pre-operative structural MRIs. Microwires were packaged in bundles of eight high-impedance recording wires and one low-impedance wire that served as the recording reference. Each microwire bundle was threaded through the center of a depth probe and extended 5 mm from the implanted end. As microwires splay out during implantation and cannot reliably be visualized on post-operative scans, electrode localizations are regarded with a \u223c5 mm radius of uncertainty that preclude analyses at the level of regional substructures or hippocampal layers or subfields. Microwire LFPs were amplified and sampled at 28\u201332 kHz on a Neuralynx Cheetah (Neuralynx, Tucson, AZ) or Blackrock NeuroPort (Blackrock Microsystems, Salt Lake City, UT) recording system.\n\n### Spike sorting\n\nWe performed semi-automatic spike sorting and quality inspection on each microwire channel using the WaveClus software package in Matlab (Quiroga et al., 2004), as previously described (Ekstrom et al., 2003; Schonhaut et al., 2023). We isolated 0\u20138 units on each microwire channel, retaining both single-units and multi-units for subsequent analysis while removing units with low-amplitude waveforms relative to the noise floor, non-neuronal waveforms, inconsistent firing across the recording session, or other data quality issues. Spikes that clustered into separate clouds in reduced dimensional space were retained as separate units, while spikes that clustered into single clouds were merged. Repeated testing sessions occurred on different days, and we spike-sorted and analyzed these data separately.\n\n### LFP preprocessing and spectral feature extraction\n\nMicrowire LFPs were downsampled to 1000 Hz, bandpass-filtered between 0.1\u201380 Hz using a zero-phase Hann window, and notch-filtered at 60 Hz to remove electrical line noise. Bandpass frequencies were selected to reduce signal drift at the low end and spike waveform artifacts (or other high-amplitude noise) at the high end, while maintaining sufficient distance from frequencies of interest for analysis. Lastly, we identified and removed a small number of dead or overly noisy channels, identified as those for which the mean, cross-frequency spectral power differed by >2 standard deviations from the mean spectral power across channels in each microwire bundle. The remaining LFP channels were manually inspected prior to further analysis as a secondary quality inspection step. Lastly, we extracted instantaneous spectral power and phase estimates for each preprocessed LFP channel by convolving the time domain signal with five-cycle complex wavelets at 30 frequencies, linearly spaced from 1 to 30 Hz.\n\n### Oscillatory bout identification\n\nFor each LFP channel, we identified time-resolved oscillatory bouts at the 30 frequencies defined in the previous section using the BOSC (Better OSCillation) detection method, as described previously (Whitten et al., 2011). BOSC defines an oscillatory bout according to two threshold criteria: a power threshold, $P_{T}$, and a duration threshold, $D_{T}.P_{T}$ is set to the 95th percentile of the theoretical $\u03c7^{2}$ probability distribution of power values at each frequency, under the null hypothesis that powers can be modeled as a straight power law decaying function (the \u20181/f\u2019 spectrum). Defining $P_{T}$ for each frequency of interest requires first finding a best fit for 1/f. We obtained this fit by implementing the recently developed FOOOF (Fitting Oscillations & One-Over F) algorithm, which uses an iterative fitting procedure to decompose the power spectrogram into oscillatory components and a 1/f background fit (Donoghue et al., 2020). To avoid assuming that the 1/f spectrum was stationary across the recording session, we divided the LFP into 30 s epochs and re-fit 1/f (and $P_{T}$, by extension) in each epoch. Finally, we set $D_{T}=3/f$, consistent with the convention used in previous studies (Ekstrom et al., 2005; Watrous et al., 2011; Aghajan et al., 2017) that power at a given frequency $f$ must exceed $P_{T}$ for a minimum of three cycles for an oscillatory bout to be detected.\n\nOscillatory prevalence was calculated within three frequency bands of interest, defined as slow theta (2\u20134 Hz), fast theta (6\u201310 Hz), and beta (13\u201320 Hz). For each subject, we calculated the average oscillatory bout percentage across recording sessions, hippocampal microwire channels, and frequencies within each band. The resulting matrix provided a single measure of hippocampal LFP oscillation prevalence within each band, from each subject. Differences between bands were assessed using a linear mixed-effects model to account for repeated samples within subjects.\n\n### Waveform asymmetry\n\nWaveform asymmetry analyses were confined to oscillatory bouts as identified in the previous section. An inspection of the 3 Hz, 7 Hz, and 15 Hz oscillations averaged during the time windows corresponding to the first three cycles of each bout \u2014 1000 ms, 428 ms, and 200 ms, respectively \u2014 qualitatively assessed asymmetries in these waveforms. Then, an asymmetry index was computed in keeping with previously established methods (Roux et al., 2022) for 3 Hz, 7 Hz, and 15 Hz waveforms. After initial preprocessing of the microwire LFPs (see \u2018LFP preprocessing and spectral feature extraction\u2019), we applied a bandpass linear-phase Hamming-windowed FIR filter within a window of \u00b12 Hz centered at the frequency of interest, and identified local maxima and minima in windows equivalent to a half-cycle at this frequency. After aligning these extrema in the filtered LFP trace to the nearest peaks and troughs within a quarter-cycle in the raw, unfiltered LFP trace, we found the average difference between the time taken to ascend from a trough to the next peak and to descend from the peak to the subsequent trough. We normalized this average difference to the range $(\u22121,1)$ by dividing by the cycle length $\\frac{f_{s}}{f}$, where $f_{s}$ is the sampling frequency, and $f$ is the frequency of interest, giving the asymmetry index value. The asymmetry index values for each hippocampal recording were averaged first within subjects and then across subjects.\n\n### Phase-locking strength and significance\n\nWe computed phase-locking strengths at 30 frequencies (1\u201330 Hz with 1 Hz spacing) between each neuron\u2019s spike times and oscillations in the hippocampus, as well as between each neuron\u2019s spike times and oscillations in the neuron\u2019s local region (other microwires in the same bundle, excluding the neuron\u2019s own recording wire due to spike contamination of the LFP). For both of these comparisons, we retained only spikes that coincided with BOSC-detected oscillatory bouts to avoid reporting spike\u2013phase associations with non-oscillatory LFP phenomena. Phase-locking strength was then calculated as follows. First, at each frequency, we calculated the MRL of hippocampal LFP phases across spike times. The MRL is equal to the sum of phase angle unit vectors divided by the total number of samples, yielding a measure from 0 to 1 that indicates the extent to which the phase distribution is unimodal. This metric depends on sample size, with low $n$ yielding artificially high values due to chance clustering of phases. For this reason, we excluded neurons with <50 spikes at all frequencies of interest. Several other factors can artificially inflate the MRL, including nonuniform phase distributions in an underlying LFP signal, or autocorrelated spike times (Siapas et al., 2005). To control for these potential confounds, we used a permutation-based procedure in which we circularly shifted each neuron\u2019s spike train at random and then recalculated MRLs at each frequency, repeating this process 10,000 times per neuron to generate a null distribution. At each frequency, we then calculated phase-locking strength as the true MRL z-scored against null distribution MRLs at the same frequency.\n\nTo determine which neurons phase-locked significantly to local or hippocampal oscillations, we compared a neuron\u2019s maximum phase-locking strength across frequencies to a null distribution of maximum phase-locking strengths generated by taking the maximum of the null MRLs\u2019 z-scores across frequencies. We calculated an empirical p-value for each neuron with the formula $p=\\frac{r+1}{n+1}$, where $r$ is the number of permuted values $\\geq$ the true value for a given test statistic, and $n$ is the total number of permutations (North et al., 2002). Finally, we FDR\u2013corrected p-values with the adaptive linear step-up procedure, which controls the expected proportion of true null hypotheses among rejected nulls for both independent and positively dependent test statistics, and has greater statistical power than the commonly used Benjamini-Hochberg procedure (Benjamini et al., 2006). FDR correction was applied separately to p-values from each neuron region \u00d7 LFP region (local or hippocampal) pair to control the expected proportion of false positives within each of these groups. Neurons with FDR-corrected $p<0.05$ were deemed significantly phase-locked.\n\n### Interregional oscillatory co-occurrence\n\nCo-occurrence rates were determined between hippocampal and extrahippocampal oscillatory bouts by quantifying the Dice coefficient between each hippocampal electrode and each ipsilateral, extrahippocampal electrode. The Dice coefficient measures the similarity from 0 to 1 between two sets $A$ and $B$, with 0 indicating that the sets do not overlap and 1 indicating that $A$ and $B$ are equal: $Dice=\\frac{2|A\u2229B|}{|A|+|B|}$, where $|A|$ and $|B|$ correspond to the number of elements in each set and $|A\u2229B|$ is the number of elements common to both sets. We calculated these values using binarized oscillation detection vectors (oscillation present or absent) as defined in \u2018Oscillatory bout identification,\u2019 separately at each 1\u201330 Hz frequency.\n\n### Phase-locking to hippocampal oscillations during co-occurring or absent local oscillations\n\nWe divided spikes from each extrahippocampal neuron into two groups according to the following criteria: (1) BOSC-detected oscillations were present in both the hippocampus and a neuron\u2019s local region, or (2) BOSC-detected oscillations were present in the hippocampus but not the neuron\u2019s local region (Figure 4). These spike subsets were determined separately for each 1\u201330 Hz frequency. Phase-locking strengths were then calculated separately within each spike group, at each frequency, and significance determined relative to null distributions as described in \u2018Phase-locking strength and significance.\u2019 As chance-level phase-locking values depend on sample size, for each neuron we matched the number of spikes in each group, at each frequency, excluding neurons with insufficient sample size (<50 spikes at any frequency). For example, for neuron $i$ at frequency $j$, if 200 spikes occurred when local and hippocampal oscillations were both present and 150 spikes occurred when only hippocampal oscillations were present, we selected 150 spikes from the first group at random and proceeded to calculate phase-locking strength in each group. The same analytical approach was applied to a supplemental analysis (Figure 4\u2014figure supplement 2) in which extrahippocampal spikes were subdivided as: (1) local and hippocampal oscillations were both present, or (2) local oscillations were present but hippocampal oscillations were absent.\n\n### Statistics\n\nLinear and logistic mixed-effects models with fixed slopes and random intercepts were performed using the lme4 package in R (Baayen et al., 2008). All models included a single random effect of subject and a single fixed effect of interest, as specified in each result. p-values were obtained from likelihood ratio tests between nested models (with versus without inclusion of the fixed effect). We adopted this approach to control for inter-subject differences in our data that conventional methods such as linear regression would overlook, as they assume independence between neurons. This approach was particularly important for comparing effects between regions, as each subject had electrodes in only a subset of the regions that we analyzed. For models in which the independent variable was a categorical measure with three or more levels, if the likelihood ratio test revealed a significant effect ($p<0.05$), we performed post-hoc, pairwise z-tests on the fitted model terms with Bonferroni-Holm correction for multiple comparisons were noted in the Results.\n\n### Software\n\nMixed-effects models were fit using the lme4 package in R (Baayen et al., 2008). Spike sorting was performed using the Wave_clus software package in Matlab (Quiroga et al., 2004). All additional analyses were performed, and plots were generated, using code that was developed in-house in Python 3, utilizing standard libraries and the following publicly available packages: astropy (The Astropy Collaboration et al., 2022), fooof (Donoghue et al., 2020), matplotlib (Hunter, 2007), mne (Gramfort et al., 2013), numpy (Harris et al., 2020), pandas (McKinney, 2010), seaborn (Waskom, 2021), scipy (Virtanen et al., 2020), statsmodels (Seabold and Perktold, 2010), and xarray (Hoyer and Hamman, 2017).\n",
+      "created_at": "2025-12-04T04:05:28.979276Z"
+    },
+    {
+      "id": "2cb1a9a4-0732-4861-90b2-8fabbf06c718",
+      "submission_id": "54593d60-3d3b-4e40-a661-d047514121ad",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Caleb Kemere, https://ror.org/008zs3103 Rice University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.85753.sa0](https://doi.org/10.7554/eLife.85753.sa0)\n\nLarge sample size electrophysiology in human brains is rare, and thus this work is an important contribution to the field. The mesoscopic descriptive analyses provide a convincing bridge to work done in other species and will likely further contribute to its long term value to the field.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Caleb Kemere, https://ror.org/008zs3103 Rice University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.85753.sa1](https://doi.org/10.7554/eLife.85753.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nDecision letter after peer review:\n\n[Editors\u2019 note: the authors submitted for reconsideration following the decision after peer review. What follows is the decision letter after the first round of review.]\n\nThank you for submitting your article \"Single neurons throughout human memory regions phase-lock to hippocampal theta\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Laura Colgin as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Antonio Fernandez-Ruiz (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nAs the editors have judged that your manuscript is of interest, but as described below that additional experiments are required before it is published, we would like to draw your attention to changes in our revision policy that we have made in response to COVID-19 (https://elifesciences.org/articles/57162). First, because many researchers have temporarily lost access to the labs, we will give authors as much time as they need to submit revised manuscripts. We are also offering, if you choose, to post the manuscript to bioRxiv (if it is not already there) along with this decision letter and a formal designation that the manuscript is \"in revision at eLife\". Please let us know if you would like to pursue this option. (If your work is more suitable for medRxiv, you will need to post the preprint yourself, as the mechanisms for us to do so are still in development.)\n\nSummary:\n\nThis is a very intriguing paper showing how hippocampal local field potentials couple with the activity of other cortical regions. This mechanism has been and continues to be extensively studied in other mammals, and thus its existence and relevance in humans is exciting. The reviewers were unanimous in their opinion that this work is worthy of publication in eLife, but pointed to key aspects of the paper that they felt were insufficient.\n\nEssential revisions:\n\n1. Hippocampal Data:\n\nA) Critically, the authors should include similar analyses of hippocampal neurons (if they exist) and explain why they don't have them otherwise.\n\nB) The nature of the theta oscillations needs to be explicated \u2013 are they short bursts accompanying eye movements or more sustained periods? \u2013 and example spectrograms and traces shown.\n\nC) The authors should describe the anatomical locations of the hippocampal LFP electrodes, explain how they were chosen, and whether they varied from subject to subject.\n\n2. New Analyses: The authors focus on linking hippocampal LFP and extra-hippocampal spikes. In addition to hippocampal LFP -> hippocampal spikes (point 1A), it would be valuable to assess hippocampal LFP -> extra-hippocampal LFP. This might include looking at dynamics of theta-band coherence and/or theta-modulation of high \u03b3.\n\n3. Data Analysis Issues:\n\nA) While they explain that many of their spikes are coming from multi-units, they should be more upfront about this, and when possible, try to classify neurons as pyramidal or interneurons, and show results by neuron type / base firing rate.\n\nB) Critically, there is concern that some of the analyses use the same set of data to e.g., pick frequency bands and analyze coupling, rather than using some form of cross-validation.\n\nReviewer #1:\n\nHippocampal theta oscillations are among the most prominent rhythms in the mammalian brain. Extensive research in rodents has shown that neurons not only within the hippocampus but in widespread cortical areas can be phase-locked to hippocampal theta. Such cross-regional communication within theta frames has been postulated to be the foundation of many hippocampal operations. While previous studies in humans have documented the relationship between LFP theta and spiking in the hippocampus, coupling between hippocampal LFP and more remote cortical areas have not been demonstrated in human subjects. This is the topic of the present work. The authors show that spikes of single (and mostly multiunit) neurons in multiple cortical regions both in the same and opposite hemipheres are phase locked to transient occurrence of hippocampal theta LFP in the 2-6 Hz range. However, phase-locking is stronger in structure know to be part of the 'limbic system', such as the amygdala and entorhinal cortex. Theta phase locking was stronger to hippocampal than to local LFP and the magnitude of spike phase locking increased when the power of theta increased, associated with increased high frequency power. The results are straightforward and the analysis methods are reliable. The novel information is limited but informative and documents a missing aspect of theta communication in the human brain.\n\nComments:\n\n1. Given the simple message, the text is a bit long with many repetitions and loose ends. This applies to both Introduction and Discussion. Potential implications to learning, etc are interesting but the findings do not provide additional clues, thus those aspects of the discussion are mainly distractions. Instead, perhaps the authors would like to discuss potential mechanisms of remote unit entrainment. They are talking about multi-synaptic pathways but these are unlikely to be a valid conduit. Instead, the septum, entorhinal cortex or retrosplenial cortex, with their widespread projections, may be responsible for coordinating both hippocampal and neocortical areas.\n\n2. Arguably, the weakest part of the manuscript is the lack of hippocampal neurons. The authors refer to their own previous papers, but in a story which compares hippocampal theta oscillations with remote unit activity, it is strange that the magnitude of theta phase-locking to local hippocampal neurons is not available for comparison.\n\n3. How was the hippocampal LFP reference site chosen and did it vary substantially from subject to subject? Anterior or posterior locations?\n\n4. The authors list 1233 single neurons but in the discussion they make it clear that most of them were multiple neurons. This should be emphasized up front and may be used as an excuse why the authors did not attempt to separate pyramidal cells from interneurons (interneurons have a much higher propensity to be entrained by projected rhythms).\n\n5. Given that units were mixed, a logical extension would be to examine how hippocampal theta phase modulates high \u03b3 in neocortical areas. This could potentially yield a much larger data base, targeting the same question.\n\n6. In the Discussion, the authors suggest that cross-regional theta phase coupling could be related to learning and other cognitive performance. However, spike-LFP coupling and coherence is confounded by LFP power increase and the authors cite Herweg et al., 2020 which did not find a relationship between theta power and memory performance. Is it then not logical to assume that cross-regional coupling may also not be related to memory?\n\n7. Line 36. \"Long-term potentiation and long-term depression in the rodent hippocampus are also theta phase-dependent (Hyman et al., 2003).\" Pavlides et al. (Brain Res 1988) or Huerta and Lisman (Neuron 1995) are perhaps more relevant references here.\n\n8. Line 82: \"significant neocortical and contralateral phase-locking suggests\". This is a strange phase. Perhaps significant phase locking of neurons in the neocortex in both hemispheres or similar would be a better formulation.\n\nReviewer #2:\n\nIn this study, Schonhaut et al., describe the phase locking statistics of cortical and subcortical neurons with respect to hippocampal local field potential (LFP) recorded in 18 epilepsy patients undergoing seizure monitoring. Nearly 30% of extrahippocampal neurons showed phase locking to some bandpassed hippocampal signal. Amygdalar and entorhinal neurons were more likely to be phase locked, as compared to neurons recorded in other neocortical sites. Most neurons showed the strongest phase locking to hippocampal theta (2-8 Hz), though neocortical and amygdalar neurons tended to phase lock to lower theta bands. Spikes that were phase locked to hippocampal rhythms occurred during local LFP-states that showed moderate correlations with the spectral patterns observed in the hippocampus. These data are interpreted within the broader \"communication through coherence\" hypothesis.\n\nLarge N, multi-region, single unit studies from humans are rare and the kind of mesoscopic descriptive analyses provided here serve as an important bridge between the large rodent literature on hippocampal physiology and human physiology and cognition. That said, there are some weaknesses in the analyses that could be addressed in a revised report. Also, a deeper discussion of the biological origin of human theta is merited in the discussion to address alternate explanations \u2013 beyond communication through coherence \u2013 of the data.\n\nA similar statistical mistake was made several times. The author's logic goes like this: find the argmax in one sample, take the argument that generated that max, and use that to sample in another condition, and report that the max is higher in the first condition than the second. For example, on pg. 6 \"This is difficult to reconcile with our results, in which 248/362 neurons (68.5%) phase-locked more strongly to hippocampal LFPs than to locally-recorded LFPs at their preferred hippocampal phase-locking frequency.\" The same flaw can be seen in Figure 5, where the spikes are sub-sampled to occur during strong phase locking in one condition, thus almost guaranteeing high power in the frequency bands that generated that strong phase locking (which was observed). This is a case in which cross-validating the data may be useful. The authors could take a subset of the hippocampal data to define the preferred frequency, and then test phase locking on the held out data from the hippocampus and cortex.\n\nThe relationship between power and phase locking is not fully controlled in this paper. The phase seems to be calculated irrespective of whether there is any instantaneous power at that frequency band, introducing noise. This will bias away from finding significant phase locking to frequency bands that occur transiently. Therefore, I recommend defining some threshold of the existence of the spectral signal prior to using that signal to calculate phase.\n\nA related point has to do with the nature of the theta rhythm in the human. There has been considerable controversy over the years as to whether this is a comparable signal to that studied in the rodent. Based off the citations in this manuscript, and the nomenclature of the spectral band, the authors seek to make explicit the commonality of the underlying physiology, or function. Rodent theta is a sustained rhythm, while primate theta seems to come in bouts, perhaps even related to sampling statistics, such as saccades, leading to the suggestion that the apparent theta may be better thought of as semi-rhythmic evoked responses. How long were the bouts of high theta power? Was eye movement tracked? If so it would be important to relate the signal to eye movements. If the low frequency signal is phase locked to eye movement and potentially reflects semi-rhythmic information arriving to (from?) the hippocampus, then a stronger case could be made that hidden \"third parties\" synchronize the apparent communication through coherence observed here, and in fact there may be no communication at all.\n\nThe authors dedicate much of their discussion to relating the current result to the communication through coherence analyses. Oddly, LFP coherence was never addressed. A strong prediction of the current framing would be that: when coherence is high, phase locking should by high, and higher than other moments when power in either region is high but coherence is not observed. The authors should directly measure how phase locking is modulated by coherence.\n\nThe authors also lump together biological entities that should have difference phase locking behaviors. The amygdala is not a monolithic region, does phase locking differ by nucleus? Also, do fast spiking inhibitory cells differ from excitatory cells? The authors should relate their phase locking measure to mean firing rate to show that it is insensitive to lower level cell statistics. This is important since the conclusions of the study would be quite different if neurons in the entorhinal cortex had high rates which artifactually drove up phase locking values.\n\nReviewer #3:\n\nThe manuscript by Schonhaut et al. presents novel analysis on an impressive dataset of more than 1200 neurons across diverse brain areas in the human brain to investigate their modulation by hippocampal theta oscillations. They found a substantive proportion of cells phase-locked to hippocampal activity, mainly in the theta frequency band, in several areas know to be functionally related to the hippocampus, some of them receiving monosynaptic hippocampal inputs but other only indirect ones. These results extend previous reports in humans showing hippocampal interactions with these structures but at the level of mesoscopic activity and highlight the ubiquity of spike-theta timing and the importance of single-unit studies in humans. Additional analysis, detailed below, will contribute to give a better description of the data, provide stronger support for some of the authors' claims and clarify some issues.\n\n1. I assume that the dataset also includes hippocampal units, why then excluding them from the analysis? Although the main novelty is in the coupling of cells in other structures with hippocampal LFPs, it would be useful to also compare it with the coupling of local hippocampal cells.\n\n2. Include average power spectrum of hippocampal LFPs. Additional examples of raw LFP traces overlaid to spectrograms (perhaps in Supplementary) will help to illustrate the nature of hippocampal oscillations.\n\n3. The authors compared fractions of significantly modulated units and their preferred frequencies across regions. While very informative, these analyses are not sufficient to capture the richness of spike-LFP interactions likely existing in the dataset. Were there differences in the strength of phase-locking across regions? (this analysis could be added to Figure 2). Studies in rodents have shown that theta phase-locked units in different structures have characteristics preferred firing phases (when hippocampal LFP is used as a reference). Authors can easily look if this is also the case in their data. They should include both pooled data statistics of mean phases across regions and single neuron examples of firing probability by LFP phase (such examples could be added to the single unit plots in Figure 1).\n\n4. Did phase-locked and non phase-locked units have different properties? The authors can compare if they differ in basic properties such us mean firing rate, waveform width, inter-spike intervals, burstiness, etc., as it has been reported in other studies in non-human primates and rodents. These analyses could be extended to show if units with different properties also differ in their preferred phase-locking frequency, or phase. It would be very interesting if these analyses reveal the existence of heterogeneous cellular populations with different relation to hippocampal theta, even if the single-unit isolation quality is limited due to the low density recordings. In relation to this, authors should also plot unit auto-correlograms. ACGs can be computed for all the spikes, but also only for the strongly phase-locked spikes, to show if, at least during periods of strong oscillatory activity, some units show rhythmicity.\n\n5. To better interpret the results in Figure 4, it would be important to know if the recording sites in both hippocampi were from the same sub-region and similar location along the longitudinal hippocampal axis in each subject and if the degree of synchrony between the LFP in both hemispheres. Coherence or phase-locking between LFPs across hemispheres should be computed and also power spectrum for both of them shown.\n\n6. In Figure 4C-D it seems that phase-locking strength across hemispheres was not correlated but preferred frequency was. This should be quantified and mentioned in text before moving to the correlation in Figure 4E.\n\n7. The analysis in Figure 5D should be complemented by also checking the LFP-LFP phase-locking between the local region and the hippocampus. Were periods of high LFP power correlation also reflect enhanced phase-phase coupling? Were the structures also more phase-synchronous during periods of stronger spike-LFP coupling? These analyses could provide a more direct support for the interpretation of the authors in line with the CTC hypothesis.\n\n8. Was there any relation of the \"strongly phase-locked\" periods with global variables reflecting brain state (e.g. drowsiness versus attention to the task, etc.) or with the firing dynamics of the units (instantaneous firing rate or inter-spike intervals)?\n\n[Editors\u2019 note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"MTL neurons phase-lock to human hippocampal theta\" for further consideration by eLife. Your revised article has been evaluated by Laura Colgin (Senior Editor) and a Reviewing Editor.\n\nThe manuscript has been improved but there are some remaining issues that need to be addressed, as outlined below:\n\nEssential revisions:\n\nPlease address the third reviewer's comments regarding (1) the directionality of spike/LFP coupling, (2) assessing whether different frequency bands can be explained as higher-order harmonics, and (3) adding a citation and potentially some discussion of the Roux 2022 paper.\n\nReviewer #3 (Recommendations for the authors):\n\n1. At several parts in the manuscript the authors suggest that the coupling between extrahippocampal units to hippocampal oscillations is in the direction of LFP -> Spike (lines 168-169; 182-184; 238-239). I was surprised by this, because classically distal spike-LFP coupling is usually interpreted as directional coupling in the opposite direction (Spike -> LFP). This is because the common assumption would be that a if a spike in region A is coupled to the LFP in region B, then this is because the neuron in region A elicits post-synaptic currents in region B, hence spike -> LFP (see Buzs\u00e1ki and Schomburg, 2015; Liebe et al., 2012; Jacob et al., 2018; see also Roux et al., 2022 for an example in the human MTL). Now, this doesn't mean that coupling in the other direction LFP \u25ca Spike is not also possible, but it would require additional steps, whereby the LFP in region A entrains local neurons which then project to region B, where they elicit an LFP in region B which then induces firing of local neurons at specific phases. However, such an explanation is less parsimonious and thus requires additional evidence. Specifically, two additional analyses would be useful in this regard. First, the LFPs in region A and region B would have to be phase coupled. The authors demonstrate a coupling in terms of power, by measuring co-occurrence of 'bouts', but they do not demonstrate whether there is a consistent phase-relationship between the two regions where 'bouts' co-occur. Second, coupling measures which allow inferences about directionality should be applied to the spike and LFP time series. This can be done, for instance, by convolving the spike time series with a gaussian envelope and then applying the phase slope index to both time series (as done in Roux et al., 2022).\n\n2. Oscillatory bouts appear in three frequencies, ~3 Hz, ~7 Hz, ~ 15 Hz, with decreasing density of occurrence (i.e. 3 > 7 > 15 Hz). This could be indicative of an asymmetric 3 Hz oscillation which induces spurious signals at the first and second harmonic. Indeed, the 15 Hz oscillation appears to be coupled to the 3 Hz oscillation which would be consistent with this assumption (although the fact that 7 Hz is not, would not support this argument, but still). To counter this the authors should show how often bouts in the three frequency windows co-occur. If the higher frequencies are a reflection of asymmetric wave shapes then there should be a tight correlation with respect to when the bouts occur. Furthermore, the authors could investigate the waveshape of the 3 Hz oscillation by calculating an asymmetry index (as done in Roux et al., 2022; see Figure 5, figure supplement 1).\n\n3. A recent paper that seems highly relevant to the current one is not mentioned. I am referring to the paper by Roux et al. 2022 who also investigated local and distal (cross-regional) spike-LFP coupling in the human MTL during a memory task. In line with the current study, Roux et al. also show distal coupling of MTL neurons in theta. Furthermore, they demonstrate that this coupling is related to memory whereby coupling at faster frequencies predicts successful formation of associations, whereas coupling to slow frequencies predicts unsuccessful formation of associations. Crucially, and central to the current study, Roux et al. 2022 demonstrate that coupling at theta frequencies was correlated with the latency of co-firing of pairs of distally coupled neurons. Therefore, several statements in the paper should to be revisited in light of that previous study (i.e. lines 398-400; 311-316; 66-75). I assume the reason for why the authors did not include that study is that it appeared late in 2022, likely when this paper was already submitted or close to submission. I also think that the Roux et al. paper does not take away anything in terms of novelty from this paper, as Roux et al. were not able to split up the distal coupling into the different MTL subregions due to a lower yield in neurons. If anything, the two papers nicely complement each other and both support a central role of MTL theta oscillations in routing information in the human brain in the service of memory and navigation.\n\nReferences:\n\nBuzs\u00e1ki G, Schomburg EW. 2015. What does \u03b3 coherence tell us about inter-regional neural communication? Nature Neuroscience 18:484-489. DOI: https://doi.org/10.1038/nn.3952, PMID: 25706474\n\nLiebe S, Hoerzer GM, Logothetis NK, Rainer G. 2012. Theta coupling between V4 and prefrontal cortex predicts visual short-term memory performance. Nature Neuroscience 15:456-462,. DOI: https://doi.org/10.1038/nn. 3038, PMID: 22286175\n\nJacob SN, H\u00e4hnke D, Nieder A. 2018. Structuring of Abstract working memory content by fronto-parietal synchrony in primate cortex. Neuron 99:588-597.. DOI: https://doi.org/10.1016/j.neuron.2018.07.025, PMID: 30092215\n\nRoux et al. 2022. Oscillations support short latency co-firing of neurons during human episodic memory formation. eLife 2022;11:e78109. DOI: https://doi.org/10.7554/eLife.78109 1 of 27\n",
+      "created_at": "2025-12-04T04:05:28.979276Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T04:05:28.979276Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T04:05:28.979276Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "d67781a0-48ce-4e65-bd75-986fbb81b4c1",
+      "content_id": "328d7c36-01af-444d-9cf1-cadf7a8b4e41",
+      "claim_id": "C1",
+      "claim": "Memory formation depends on neural activity across a network of regions, including the hippocampus and broader medial temporal lobe (MTL).",
+      "claim_type": "EXPLICIT",
+      "source": "Memory formation depends on neural activity across a network of regions, including the hippocampus and broader medial temporal lobe (MTL).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about memory formation that draws from established scientific consensus in neuroscience.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:28.979276Z"
+    },
+    {
+      "id": "2d03bab6-ec57-4aee-a013-440d7c472913",
+      "content_id": "328d7c36-01af-444d-9cf1-cadf7a8b4e41",
+      "claim_id": "C2",
+      "claim": "Extracellular spikes were recorded from 1854 single- and multi-units simultaneously with hippocampal local field potentials (LFPs) in 28 neurosurgical patients who completed virtual navigation experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "We recorded extracellular spikes from 1854 single- and multi-units simultaneously with hippocampal local field potentials (LFPs) in 28 neurosurgical patients who completed virtual navigation experiments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental data collected in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:28.979276Z"
+    },
+    {
+      "id": "3e895700-73df-4de9-8bb1-8230820d32b9",
+      "content_id": "328d7c36-01af-444d-9cf1-cadf7a8b4e41",
+      "claim_id": "C3",
+      "claim": "A majority of hippocampal neurons phase-locked to oscillations in the slow (2\u20134 Hz) or fast (6\u201310 Hz) theta bands.",
+      "claim_type": "EXPLICIT",
+      "source": "A majority of hippocampal neurons phase-locked to oscillations in the slow (2\u20134 Hz) or fast (6\u201310 Hz) theta bands, with a significant subset exhibiting nested slow theta \u00d7 beta frequency (13\u201320 Hz) phase-locking.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the experimental data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:28.979276Z"
+    },
+    {
+      "id": "dc401b0a-650e-4b87-8a35-20da9ed38507",
+      "content_id": "328d7c36-01af-444d-9cf1-cadf7a8b4e41",
+      "claim_id": "C4",
+      "claim": "A significant subset of hippocampal neurons exhibited nested slow theta \u00d7 beta frequency (13\u201320 Hz) phase-locking.",
+      "claim_type": "EXPLICIT",
+      "source": "A majority of hippocampal neurons phase-locked to oscillations in the slow (2\u20134 Hz) or fast (6\u201310 Hz) theta bands, with a significant subset exhibiting nested slow theta \u00d7 beta frequency (13\u201320 Hz) phase-locking.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the experimental data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:28.979276Z"
+    },
+    {
+      "id": "b46b4743-3ce1-45c3-a68a-4eac820dbd17",
+      "content_id": "328d7c36-01af-444d-9cf1-cadf7a8b4e41",
+      "claim_id": "C5",
+      "claim": "Outside of the hippocampus, phase-locking to hippocampal oscillations occurred only at theta frequencies.",
+      "claim_type": "EXPLICIT",
+      "source": "Outside of the hippocampus, phase-locking to hippocampal oscillations occurred only at theta frequencies and primarily among neurons in the entorhinal cortex and amygdala.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the experimental data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:28.979276Z"
+    },
+    {
+      "id": "8ebfec65-bb6a-4dc6-a23b-39b70a6d2252",
+      "content_id": "328d7c36-01af-444d-9cf1-cadf7a8b4e41",
+      "claim_id": "C6",
+      "claim": "Phase-locking to hippocampal oscillations occurred primarily among neurons in the entorhinal cortex and amygdala.",
+      "claim_type": "EXPLICIT",
+      "source": "Outside of the hippocampus, phase-locking to hippocampal oscillations occurred only at theta frequencies and primarily among neurons in the entorhinal cortex and amygdala.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the experimental data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:28.979276Z"
+    },
+    {
+      "id": "c040b91c-ae78-4aca-bd06-0a2e7f5fb351",
+      "content_id": "328d7c36-01af-444d-9cf1-cadf7a8b4e41",
+      "claim_id": "C7",
+      "claim": "Extrahippocampal neurons phase-locked to hippocampal theta even when theta did not appear locally.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, extrahippocampal neurons phase-locked to hippocampal theta even when theta did not appear locally.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the experimental data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:28.979276Z"
+    },
+    {
+      "id": "bd374ad6-9397-4f23-a4d7-750f97c5a6f8",
+      "content_id": "328d7c36-01af-444d-9cf1-cadf7a8b4e41",
+      "claim_id": "C8",
+      "claim": "Spike-time synchronization with hippocampal theta is a defining feature of neuronal activity in the hippocampus and structurally connected MTL regions.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that spike-time synchronization with hippocampal theta is a defining feature of neuronal activity in the hippocampus and structurally connected MTL regions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the experimental findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:28.979276Z"
+    },
+    {
+      "id": "a4481f0c-9c0c-4952-bb0f-115f646ca83a",
+      "content_id": "328d7c36-01af-444d-9cf1-cadf7a8b4e41",
+      "claim_id": "C9",
+      "claim": "Theta phase-locking could mediate flexible communication with the hippocampus to influence the content and quality of memories.",
+      "claim_type": "EXPLICIT",
+      "source": "Theta phase-locking could mediate flexible communication with the hippocampus to influence the content and quality of memories.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about the potential functional role of theta phase-locking.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:28.979276Z"
+    },
+    {
+      "id": "4a8823c0-715e-4de7-8f96-530db6008715",
+      "content_id": "328d7c36-01af-444d-9cf1-cadf7a8b4e41",
+      "claim_id": "C10",
+      "claim": "The hippocampus is the operational hub of a spatially distributed episodic memory system that enables us to remember past experiences in rich detail, together with the place and time at which they occurred.",
+      "claim_type": "EXPLICIT",
+      "source": "The hippocampus is the operational hub of a spatially distributed episodic memory system that enables us to remember past experiences in rich detail, together with the place and time at which they occurred (Eichenbaum, 2000; Moscovitch et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:28.979276Z"
+    },
+    {
+      "id": "e19f6abf-38bb-4ad4-9c16-ac704b3ae632",
+      "content_id": "328d7c36-01af-444d-9cf1-cadf7a8b4e41",
+      "claim_id": "C11",
+      "claim": "Theta (2\u201310 Hz) oscillations within the hippocampus facilitate interactions between the hippocampus and other brain regions.",
+      "claim_type": "EXPLICIT",
+      "source": "A leading hypothesis is that theta (2\u201310 Hz) oscillations within the hippocampus facilitate interactions between the hippocampus and other brain regions (Buzs\u00e1ki, 2010; Fell and Axmacher, 2011; Moscovitch et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:28.979276Z"
+    },
+    {
+      "id": "15ce21df-7ad2-47e8-9b0d-3afe6e530132",
+      "content_id": "328d7c36-01af-444d-9cf1-cadf7a8b4e41",
+      "claim_id": "C12",
+      "claim": "Hippocampal neurons are more receptive to synaptic excitation at specific theta phases.",
+      "claim_type": "EXPLICIT",
+      "source": "Hippocampal neurons are more receptive to synaptic excitation at specific theta phases (Kamondi et al., 1998), so well-timed inputs can more effectively drive activity than inputs at random phases (Fries, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:28.979276Z"
+    },
+    {
+      "id": "4235e9c7-7168-4a6d-bc5e-61c263b3c995",
+      "content_id": "328d7c36-01af-444d-9cf1-cadf7a8b4e41",
+      "claim_id": "C13",
+      "claim": "Long-term potentiation and long-term depression in the rodent hippocampus depend on theta phase.",
+      "claim_type": "EXPLICIT",
+      "source": "Long-term potentiation and long-term depression in the rodent hippocampus also depend on theta phase (Pavlides et al., 1988; Huerta and Lisman, 1995; Hyman et al., 2003), offering a possible link between the phase at which inputs arrive and the strength of their encoding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:28.979276Z"
+    },
+    {
+      "id": "184ac7d4-41ca-420d-8111-8bc04ae47b94",
+      "content_id": "328d7c36-01af-444d-9cf1-cadf7a8b4e41",
+      "claim_id": "C14",
+      "claim": "mPFC neurons phase-lock to hippocampal theta during short-term memory tasks.",
+      "claim_type": "EXPLICIT",
+      "source": "mPFC neurons phase-lock to hippocampal theta during short-term memory tasks (Siapas et al., 2005; Hyman et al., 2005; Sirota et al., 2008), and stronger phase-locking predicts better performance (Jones and Wilson, 2005; Hyman et al., 2010; Benchenane et al., 2010; Fujisawa and Buzs\u00e1ki, 2011) and greater information transfer between mPFC and hippocampal neurons (Ito et al., 2018; Padilla-Coreano et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:28.979276Z"
+    },
+    {
+      "id": "1c0e19e8-a14b-4db4-af49-6776d6646340",
+      "content_id": "328d7c36-01af-444d-9cf1-cadf7a8b4e41",
+      "claim_id": "C15",
+      "claim": "Stronger phase-locking to hippocampal theta predicts better performance in memory tasks.",
+      "claim_type": "EXPLICIT",
+      "source": "mPFC neurons phase-lock to hippocampal theta during short-term memory tasks (Siapas et al., 2005; Hyman et al., 2005; Sirota et al., 2008), and stronger phase-locking predicts better performance (Jones and Wilson, 2005; Hyman et al., 2010; Benchenane et al., 2010; Fujisawa and Buzs\u00e1ki, 2011) and greater information transfer between mPFC and hippocampal neurons (Ito et al., 2018; Padilla-Coreano et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:28.979276Z"
+    },
+    {
+      "id": "df20fef1-c7d6-4574-bd6e-870170dd55b1",
+      "content_id": "328d7c36-01af-444d-9cf1-cadf7a8b4e41",
+      "claim_id": "C16",
+      "claim": "Phase-locking to hippocampal theta is prevalent among cells in the entorhinal cortex, amygdala, parietal cortex, thalamic nucleus reuniens, and some subcortical and brainstem nuclei.",
+      "claim_type": "EXPLICIT",
+      "source": "Phase-locking to hippocampal theta is also prevalent among cells in many other regions, including the entorhinal cortex (EC), amygdala, parietal cortex, thalamic nucleus reuniens, and some subcortical and brainstem nuclei (Kocsis and Vertes, 1992; Sirota et al., 2008; Fujisawa and Buzs\u00e1ki, 2011; Bienvenu et al., 2012; Fern\u00e1ndez-Ruiz et al., 2017; Ito et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:28.979276Z"
+    },
+    {
+      "id": "45b98aab-cb5b-4864-9448-240f1f615c2e",
+      "content_id": "328d7c36-01af-444d-9cf1-cadf7a8b4e41",
+      "claim_id": "C17",
+      "claim": "Theta phase-synchronization could be a general mechanism for relaying information between the hippocampus and a broad network of memory-related regions.",
+      "claim_type": "EXPLICIT",
+      "source": "Theta phase-synchronization could thus be a general mechanism for relaying information between the hippocampus and a broad network of memory-related regions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement based on inference from cited research.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:28.979276Z"
+    },
+    {
+      "id": "e1079a7b-1d38-41dc-9052-f5aad2590bad",
+      "content_id": "328d7c36-01af-444d-9cf1-cadf7a8b4e41",
+      "claim_id": "C18",
+      "claim": "Macroelectrode LFP recordings in epilepsy patients have revealed sporadically occurring theta oscillations in the hippocampus and cortex during spatial navigation and episodic memory engagement.",
+      "claim_type": "EXPLICIT",
+      "source": "In humans, macroelectrode LFP recordings in epilepsy patients have revealed sporadically occurring theta oscillations in the hippocampus and cortex during spatial navigation and episodic memory engagement (Ekstrom et al., 2005; Watrous et al., 2011; Lega et al., 2012; Watrous et al., 2013a; Zhang and Jacobs, 2015; Vass et al., 2016; Aghajan et al., 2017; Stangl et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:28.979276Z"
+    },
+    {
+      "id": "f45c0ce8-20e8-4c2d-b4b5-f10d8d862f9a",
+      "content_id": "328d7c36-01af-444d-9cf1-cadf7a8b4e41",
+      "claim_id": "C19",
+      "claim": "Macroscale theta phase-synchronization within the MTL and PFC has consistently correlated with better memory performance.",
+      "claim_type": "EXPLICIT",
+      "source": "Macroscale theta phase-synchronization within the MTL and PFC has consistently correlated with better memory performance (Babiloni et al., 2009; Watrous et al., 2013b; Solomon et al., 2017; Zheng et al., 2019; Kunz et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:28.979276Z"
+    },
+    {
+      "id": "7ff3d37f-2e10-471c-a416-424dfa039457",
+      "content_id": "328d7c36-01af-444d-9cf1-cadf7a8b4e41",
+      "claim_id": "C20",
+      "claim": "A large percentage of MTL and neocortical neurons phase-locked to locally recorded theta oscillations as subjects navigated through a virtual environment.",
+      "claim_type": "EXPLICIT",
+      "source": "An early study in epilepsy patients found that a large percentage of MTL and neocortical neurons phase-locked to locally recorded theta oscillations (among other frequencies) as subjects navigated through a virtual environment (Jacobs et al., 2007), and another study found that MTL neurons phase-locked more strongly to locally recorded theta oscillations while subjects viewed images that they later recognized than those that they forgot (Rutishauser et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:28.979276Z"
+    },
+    {
+      "id": "6c9a6c57-a3a8-449c-934d-c034d79915de",
+      "content_id": "328d7c36-01af-444d-9cf1-cadf7a8b4e41",
+      "claim_id": "C21",
+      "claim": "MTL neurons phase-locked more strongly to locally recorded theta oscillations while subjects viewed images that they later recognized than those that they forgot.",
+      "claim_type": "EXPLICIT",
+      "source": "An early study in epilepsy patients found that a large percentage of MTL and neocortical neurons phase-locked to locally recorded theta oscillations (among other frequencies) as subjects navigated through a virtual environment (Jacobs et al., 2007), and another study found that MTL neurons phase-locked more strongly to locally recorded theta oscillations while subjects viewed images that they later recognized than those that they forgot (Rutishauser et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:28.979276Z"
+    },
+    {
+      "id": "8d0d4e54-d3b5-4cd2-a98b-2b2c534d1f1c",
+      "content_id": "328d7c36-01af-444d-9cf1-cadf7a8b4e41",
+      "claim_id": "C22",
+      "claim": "Increased coupling between spikes and distal theta oscillations in the MTL during an associative image encoding task predicted better subsequent recognition.",
+      "claim_type": "EXPLICIT",
+      "source": "A recent study found that increased coupling between spikes and distal theta oscillations in the MTL during an associative image encoding task predicted better subsequent recognition (Roux et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:28.979276Z"
+    },
+    {
+      "id": "88bbc038-bd83-4004-a684-ebb6036efbb6",
+      "content_id": "328d7c36-01af-444d-9cf1-cadf7a8b4e41",
+      "claim_id": "C23",
+      "claim": "Subjects were implanted with depth electrodes in the hippocampus, EC, amygdala, parahippocampal gyrus (PHG), superior temporal gyrus (STG), orbitofrontal cortex (OFC), and anterior cingulate cortex (ACC).",
+      "claim_type": "EXPLICIT",
+      "source": "Subjects were implanted with depth electrodes in the hippocampus, EC, amygdala, parahippocampal gyrus (PHG), superior temporal gyrus (STG), orbitofrontal cortex (OFC), and anterior cingulate cortex (ACC).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental setup and data collection methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:28.979276Z"
+    },
+    {
+      "id": "5cbe96c9-38bb-48ab-aa9a-f1f5b727318a",
+      "content_id": "328d7c36-01af-444d-9cf1-cadf7a8b4e41",
+      "claim_id": "C24",
+      "claim": "10\u201371 neurons per session were identified across 55 recording sessions, with a median of 30.0 neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "In total, we identified 10\u201371 (median = 30.0) neurons per session across 55 recording sessions, and the firing rates of these neurons were log-normally distributed (median = 2.0 Hz).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental data collected in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:28.979276Z"
+    },
+    {
+      "id": "218b5cfd-f10c-451f-9f9f-7b54047b2fe0",
+      "content_id": "328d7c36-01af-444d-9cf1-cadf7a8b4e41",
+      "claim_id": "C25",
+      "claim": "The firing rates of neurons were log-normally distributed with a median of 2.0 Hz.",
+      "claim_type": "EXPLICIT",
+      "source": "In total, we identified 10\u201371 (median = 30.0) neurons per session across 55 recording sessions, and the firing rates of these neurons were log-normally distributed (median = 2.0 Hz).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental data collected in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:28.979276Z"
+    },
+    {
+      "id": "70bcd42d-6d7d-4e87-b8f2-29aea75e9774",
+      "content_id": "328d7c36-01af-444d-9cf1-cadf7a8b4e41",
+      "claim_id": "C26",
+      "claim": "Every subject had at least one microwire bundle implanted in the hippocampus.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, every subject had at least one microwire bundle implanted in the hippocampus, permitting neuronal firing to be analyzed simultaneously with oscillatory activity in the hippocampal LFP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental setup.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:28.979276Z"
+    },
+    {
+      "id": "f8cf6e25-8490-4e70-8665-36e2c975934e",
+      "content_id": "328d7c36-01af-444d-9cf1-cadf7a8b4e41",
+      "claim_id": "C27",
+      "claim": "Many individual hippocampal electrodes showed peaks in spectral power that rose above the background 1/f line in session-averaged LFP spectrograms.",
+      "claim_type": "EXPLICIT",
+      "source": "Many individual electrodes showed peaks in spectral power that rose above the background 1/f line in session-averaged LFP spectrograms (Figure 1A), indicating the potential presence of oscillatory activity (Donoghue et al., 2020).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the experimental data analysis, with reference to Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:28.979276Z"
+    },
+    {
+      "id": "bafca29a-2149-4724-b0e3-20d609c36be8",
+      "content_id": "328d7c36-01af-444d-9cf1-cadf7a8b4e41",
+      "claim_id": "C28",
+      "claim": "Spectral peaks in hippocampal LFPs appeared nearly exclusively between 2\u201320 Hz.",
+      "claim_type": "EXPLICIT",
+      "source": "The frequency and magnitude of these spectral peaks varied considerably across subjects (compare Figure 1A subpanels) yet appeared nearly exclusively between 2\u201320 Hz.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the experimental data analysis, with reference to Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:28.979276Z"
+    },
+    {
+      "id": "a3477cdf-9c7a-4ffd-9f6f-53e47326fe6f",
+      "content_id": "328d7c36-01af-444d-9cf1-cadf7a8b4e41",
+      "claim_id": "C29",
+      "claim": "Hippocampal oscillatory bouts were present approximately 1\u20136% of the time at the examined frequencies.",
+      "claim_type": "EXPLICIT",
+      "source": "Across subjects, hippocampal oscillatory bouts were present \u223c1\u20136% of the time at the examined frequencies (Figure 1C; Figure 1\u2014figure supplement 2 shows oscillatory prevalence in other regions for comparison).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the experimental data analysis, with reference to Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:28.979276Z"
+    },
+    {
+      "id": "ee1d43a9-eba8-4302-82e6-6901e0813eac",
+      "content_id": "328d7c36-01af-444d-9cf1-cadf7a8b4e41",
+      "claim_id": "C30",
+      "claim": "The prevalence of hippocampal oscillations clustered around three, well-separated bands with peaks at 3 Hz, 7 Hz, and 15 Hz.",
+      "claim_type": "EXPLICIT",
+      "source": "The prevalence of these oscillations was not uniform across frequencies, but instead clustered around three, well-separated bands with peaks at 3 Hz, 7 Hz, and 15 Hz.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the experimental data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:28.979276Z"
+    },
+    {
+      "id": "d6351209-c941-4bf7-8734-dc77a80c1e8b",
+      "content_id": "328d7c36-01af-444d-9cf1-cadf7a8b4e41",
+      "claim_id": "C31",
+      "claim": "The observed oscillation frequencies are consistent with hippocampal slow theta (2\u20134 Hz), fast theta (6\u201310 Hz), and beta band rhythms (13\u201320 Hz) previously described in macroelectrode recordings.",
+      "claim_type": "EXPLICIT",
+      "source": "These frequencies are consistent with the hippocampal slow theta (alternatively 'delta' 2\u20134 Hz), fast theta (6\u201310 Hz), and beta band rhythms (13\u201320 Hz) previously described in macroelectrode recordings, and the prevalence of oscillatory bouts in our data was comparable to these earlier studies (Ekstrom et al., 2005; Lega et al., 2012; Watrous et al., 2013a; Goyal et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement compares the current findings to prior research cited.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:28.979276Z"
+    },
+    {
+      "id": "2ed4e6ca-a6d6-4d9a-9d94-f5a8cbd51c13",
+      "content_id": "328d7c36-01af-444d-9cf1-cadf7a8b4e41",
+      "claim_id": "C32",
+      "claim": "Mean LFP waveforms during the first three cycles of each oscillatory bout showed symmetrical, sinusoidal shapes at each peak frequency, without any apparent harmonics.",
+      "claim_type": "EXPLICIT",
+      "source": "Mean LFP waveforms during the first three cycles of each oscillatory bout showed symmetrical, sinusoidal shapes at each peak frequency, without any apparent harmonics (Figure 1\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the experimental data analysis, with reference to Figure 1\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:28.979276Z"
+    },
+    {
+      "id": "8e564371-cf54-4fc5-b8a3-115c2f6e554b",
+      "content_id": "328d7c36-01af-444d-9cf1-cadf7a8b4e41",
+      "claim_id": "C33",
+      "claim": "The 3 Hz and 7 Hz oscillations were nearly perfectly symmetrical, while the 15 Hz oscillation showed a very small asymmetry associated with a longer (by <1 ms) ascending than descending period.",
+      "claim_type": "EXPLICIT",
+      "source": "We computed an asymmetry index for each waveform and confirmed that, on average across subjects, the 3 Hz and 7 Hz oscillations were nearly perfectly symmetrical, while the 15 Hz oscillation showed a very small asymmetry associated with a longer (by <1 ms) ascending than descending period (Figure 1\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the experimental data analysis, with reference to Figure 1\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:28.979276Z"
+    },
+    {
+      "id": "6e2c1133-9585-42f9-8578-b426bd6d8473",
+      "content_id": "328d7c36-01af-444d-9cf1-cadf7a8b4e41",
+      "claim_id": "C34",
+      "claim": "The 3 Hz, 7 Hz, and 15 Hz oscillations occurred at largely separable times.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the 3 Hz, 7 Hz, and 15 Hz oscillations occurred at largely separable times (Figure 1\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the experimental data analysis, with reference to Figure 1\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:28.979276Z"
+    },
+    {
+      "id": "2d420f1f-6c5d-4e6d-9bc8-d28c185e9362",
+      "content_id": "328d7c36-01af-444d-9cf1-cadf7a8b4e41",
+      "claim_id": "C35",
+      "claim": "Hippocampal oscillatory bouts occur in three independent bands, centered at 3 Hz, 7 Hz, and 15 Hz.",
+      "claim_type": "EXPLICIT",
+      "source": "We concluded that hippocampal oscillatory bouts occur in three independent bands, centered at 3 Hz, 7 Hz, and 15 Hz.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:28.979276Z"
+    },
+    {
+      "id": "a2946bf9-409e-40ef-973b-f24d452368e4",
+      "content_id": "328d7c36-01af-444d-9cf1-cadf7a8b4e41",
+      "claim_id": "C38",
+      "claim": "The human hippocampus exhibits several distinct, low-frequency oscillations that are conserved across spatial scales spanning several orders of magnitude, from microwire to macroelectrode fields.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings indicate that the human hippocampus exhibits several distinct, low-frequency oscillations that are conserved across spatial scales spanning several orders of magnitude, from microwire to macroelectrode fields.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:28.979276Z"
+    },
+    {
+      "id": "8dddc609-463c-4812-8749-a7bda6b890dc",
+      "content_id": "328d7c36-01af-444d-9cf1-cadf7a8b4e41",
+      "claim_id": "C39",
+      "claim": "Theta oscillations are the predominant oscillatory component of the hippocampal LFP during virtual navigation.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, theta oscillations are the predominant oscillatory component of the hippocampal LFP during virtual navigation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:28.979276Z"
+    },
+    {
+      "id": "fe29b971-c0b5-4943-93e4-d7e41000a192",
+      "content_id": "328d7c36-01af-444d-9cf1-cadf7a8b4e41",
+      "claim_id": "C40",
+      "claim": "59% of hippocampal neurons significantly phase-locked to hippocampal oscillations after FDR correction.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, neurons within the hippocampus phase-locked to hippocampal oscillations at the highest rate among recorded regions, with 59% of hippocampal neurons significantly phase-locked after FDR correction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from statistical analysis of the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:28.979276Z"
+    },
+    {
+      "id": "f0312711-0128-4898-a1d1-5de6780e05f8",
+      "content_id": "328d7c36-01af-444d-9cf1-cadf7a8b4e41",
+      "claim_id": "C46",
+      "claim": "Phase-locking to the hippocampus occurred at rates below 5% in PHG, STG, OFC, and ACC.",
+      "claim_type": "EXPLICIT",
+      "source": "These results stood in stark contrast to all remaining regions, where phase-locking to the hippocampus occurred at rates below 5%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the experimental data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:28.979276Z"
+    },
+    {
+      "id": "39551d44-58e6-4150-a56d-68906bab1fdf",
+      "content_id": "328d7c36-01af-444d-9cf1-cadf7a8b4e41",
+      "claim_id": "C47",
+      "claim": "Phase-locking to local oscillations was prevalent in the PHG (24%) and STG (49%).",
+      "claim_type": "EXPLICIT",
+      "source": "Phase-locking to local oscillations was nonetheless prevalent in the PHG (24%) and STG (49%), indicating that many of these neurons fired at specific phases of LFP oscillations \u2014 just not those recorded in the hippocampus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the experimental data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:28.979276Z"
+    },
+    {
+      "id": "17644283-c41e-4b7b-937d-cd69aa03221f",
+      "content_id": "328d7c36-01af-444d-9cf1-cadf7a8b4e41",
+      "claim_id": "C49",
+      "claim": "The hippocampus, EC, and amygdala feature strong spike-time synchronization to hippocampal oscillations.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, these results highlight a triad of regions \u2014 the hippocampus, EC, and amygdala \u2014 that features strong spike-time synchronization to hippocampal oscillations, while neurons in more remote, cortical regions that are known to interact with hippocampus-dependent processes (Eichenbaum, 2000; Squire, 2011; Ranganath and Ritchey, 2012) phase-locked minimally to hippocampal rhythms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:28.979276Z"
+    },
+    {
+      "id": "4b5220c3-daf0-4831-82b6-0abde09820f2",
+      "content_id": "328d7c36-01af-444d-9cf1-cadf7a8b4e41",
+      "claim_id": "C50",
+      "claim": "Neurons in more remote, cortical regions phase-locked minimally to hippocampal rhythms.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, these results highlight a triad of regions \u2014 the hippocampus, EC, and amygdala \u2014 that features strong spike-time synchronization to hippocampal oscillations, while neurons in more remote, cortical regions that are known to interact with hippocampus-dependent processes (Eichenbaum, 2000; Squire, 2011; Ranganath and Ritchey, 2012) phase-locked minimally to hippocampal rhythms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:28.979276Z"
+    },
+    {
+      "id": "74c432cc-bfe8-4e69-a5e0-cf743cd5ff5d",
+      "content_id": "328d7c36-01af-444d-9cf1-cadf7a8b4e41",
+      "claim_id": "C51",
+      "claim": "In the hippocampus, neurons phase-locked to local oscillations predominantly between 2\u201320 Hz.",
+      "claim_type": "EXPLICIT",
+      "source": "In the hippocampus, neurons phase-locked to local oscillations predominantly between 2\u201320 Hz.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the experimental data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:28.979276Z"
+    },
+    {
+      "id": "8d9308d9-ace5-4b7e-9566-2fa8d06605fb",
+      "content_id": "328d7c36-01af-444d-9cf1-cadf7a8b4e41",
+      "claim_id": "C52",
+      "claim": "Within the 2\u201320 Hz range, hippocampal neuron phase-locking clustered around three distinct peaks in the slow theta, fast theta, and beta bands.",
+      "claim_type": "EXPLICIT",
+      "source": "Within the 2\u201320 Hz range, phase-locking was not unimodal, but instead clustered around three distinct peaks in the slow theta, fast theta, and beta bands.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the experimental data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:28.979276Z"
+    },
+    {
+      "id": "009ba34c-0ce4-4f0e-9158-ff788b8def5a",
+      "content_id": "328d7c36-01af-444d-9cf1-cadf7a8b4e41",
+      "claim_id": "C53",
+      "claim": "Most hippocampal neurons phase-locked only to a single band, with the exception of neurons that phase-locked maximally to beta oscillations, which also showed a near-universal tendency to phase-lock strongly to slow theta.",
+      "claim_type": "EXPLICIT",
+      "source": "Most hippocampal neurons phase-locked only to a single band, with the exception of neurons that phase-locked maximally to beta oscillations, which also showed a near-universal tendency to phase-lock strongly to slow theta (see for example Figure 2H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the experimental data analysis, with reference to Figure 2H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:28.979276Z"
+    },
+    {
+      "id": "581a9bdb-db04-45ec-a02b-efbdeafce27a",
+      "content_id": "328d7c36-01af-444d-9cf1-cadf7a8b4e41",
+      "claim_id": "C54",
+      "claim": "Nested slow theta \u00d7 beta phase-locking neurons have not previously been reported.",
+      "claim_type": "EXPLICIT",
+      "source": "These neurons may best be classified as nested slow theta \u00d7 beta phase-locking neurons, which to our knowledge have not previously been reported.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the novelty of the finding based on the authors' knowledge of the literature.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:28.979276Z"
+    },
+    {
+      "id": "a346320f-b713-4269-909a-a26c716f9a46",
+      "content_id": "328d7c36-01af-444d-9cf1-cadf7a8b4e41",
+      "claim_id": "C55",
+      "claim": "Nested phase-locking between fast theta and beta oscillations or between any other pair of frequency bands was not observed.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, we did not observe nested phase-locking between fast theta and beta oscillations or between any other pair of frequency bands.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the experimental data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:28.979276Z"
+    },
+    {
+      "id": "87d240c9-9ccc-4a27-834a-c27765c37cc6",
+      "content_id": "328d7c36-01af-444d-9cf1-cadf7a8b4e41",
+      "claim_id": "C56",
+      "claim": "Among neurons outside the hippocampus, phase-locking to hippocampal oscillations occurred within a more constrained frequency range, between 2\u201310 Hz.",
+      "claim_type": "EXPLICIT",
+      "source": "Among neurons outside the hippocampus, phase-locking to hippocampal oscillations occurred within a more constrained frequency range, between 2\u201310 Hz (Figure 3B, right three subpanels).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the experimental data analysis, with reference to Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:28.979276Z"
+    },
+    {
+      "id": "fc3e3607-f3d2-4983-b3c8-cee3be4a3086",
+      "content_id": "328d7c36-01af-444d-9cf1-cadf7a8b4e41",
+      "claim_id": "C57",
+      "claim": "In the EC, similar numbers of neurons showed preferential phase-locking to slow and fast hippocampal theta.",
+      "claim_type": "EXPLICIT",
+      "source": "In the EC, similar numbers of neurons showed preferential phase-locking to slow and fast hippocampal theta, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the experimental data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:28.979276Z"
+    },
+    {
+      "id": "799e2a94-c8a0-4811-9d25-dd04a16c7581",
+      "content_id": "328d7c36-01af-444d-9cf1-cadf7a8b4e41",
+      "claim_id": "C58",
+      "claim": "In the amygdala and remaining cortical regions, only a few neurons phase-locked to fast hippocampal theta, while most neurons coupled exclusively to slow theta.",
+      "claim_type": "EXPLICIT",
+      "source": "In the amygdala and remaining cortical regions, this balance shifted: Only a few neurons phase-locked to fast hippocampal theta, while most neurons coupled exclusively to slow theta.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the experimental data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:28.979276Z"
+    },
+    {
+      "id": "b43aea1c-b31b-4607-aa76-dc84ea03b420",
+      "content_id": "328d7c36-01af-444d-9cf1-cadf7a8b4e41",
+      "claim_id": "C59",
+      "claim": "For neurons outside the hippocampus, spike-time synchronization with hippocampal oscillations was restricted to theta frequencies.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, while hippocampal neurons phase-locked to both theta and beta bands, for neurons outside the hippocampus, spike-time synchronization with hippocampal oscillations was restricted to theta frequencies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:28.979276Z"
+    },
+    {
+      "id": "942bb9a7-134d-4378-942c-0723552b878d",
+      "content_id": "328d7c36-01af-444d-9cf1-cadf7a8b4e41",
+      "claim_id": "C60",
+      "claim": "Hippocampal oscillations overlapped more with oscillations in the EC and amygdala than with oscillations in the STG, OFC, and ACC at most frequencies.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this hypothesis, hippocampal oscillations overlapped more with oscillations in the EC and amygdala than with oscillations in the STG, OFC, and ACC at most frequencies (Figure 4A; overlap calculated using the Dice similarity coefficient).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the experimental data analysis, with reference to Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:28.979276Z"
+    },
+    {
+      "id": "006a912e-92c4-4152-a516-4a766b270df4",
+      "content_id": "328d7c36-01af-444d-9cf1-cadf7a8b4e41",
+      "claim_id": "C61",
+      "claim": "The overlap between local and hippocampal oscillations never exceeded 20% in any region at any frequency.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the overlap between local and hippocampal oscillations never exceeded 20% in any region at any frequency, indicating that neurons could, in principle, phase-lock to hippocampal oscillations independent of local oscillations, and vice versa.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the experimental data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:28.979276Z"
+    },
+    {
+      "id": "dc196944-523f-4e3f-a9f7-fd8dd0244c3d",
+      "content_id": "328d7c36-01af-444d-9cf1-cadf7a8b4e41",
+      "claim_id": "C62",
+      "claim": "When hippocampal oscillations occurred without co-occurring local oscillations, phase-locking rates to the hippocampus declined by nearly two-thirds in the EC (from 39% to 14% of neurons) and by half in the amygdala (from 28% to 15%).",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, when hippocampal oscillations occurred without co-occurring local oscillations, phase-locking rates to the hippocampus declined by nearly two-thirds in the EC (from 39% to 14% of neurons) and by half in the amygdala (from 28% to 15%), while phase-locking to the hippocampus in other regions mostly vanished.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the experimental data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:28.979276Z"
+    },
+    {
+      "id": "ddacfb14-0572-498e-8fce-e3c4821cc070",
+      "content_id": "328d7c36-01af-444d-9cf1-cadf7a8b4e41",
+      "claim_id": "C63",
+      "claim": "Phase-locking strength to the hippocampus decreased specifically at theta frequencies when local oscillations were absent.",
+      "claim_type": "EXPLICIT",
+      "source": "Phase-locking strength to the hippocampus decreased specifically at theta frequencies, and even neurons that remained significantly phase-locked in the absence of local oscillations showed reduced phase-locking strength (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the experimental data analysis, with reference to Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:28.979276Z"
+    },
+    {
+      "id": "e6f346d9-ec23-4f45-bc64-9a94464bfd26",
+      "content_id": "328d7c36-01af-444d-9cf1-cadf7a8b4e41",
+      "claim_id": "C64",
+      "claim": "In the EC, the percentage of locally phase-locked neurons was reduced by more than half when hippocampal oscillations were absent.",
+      "claim_type": "EXPLICIT",
+      "source": "While hippocampal oscillation presence did not affect local phase-locking rates in the amygdala and neocortex, in the EC the percentage of locally phase-locked neurons was reduced by more than half when hippocampal oscillations were absent (Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the experimental data analysis, with reference to Figure 4\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:28.979276Z"
+    },
+    {
+      "id": "c68f7cb5-558f-4c30-9f15-10cebe7f2085",
+      "content_id": "328d7c36-01af-444d-9cf1-cadf7a8b4e41",
+      "claim_id": "C65",
+      "claim": "When local theta was absent, the strength of EC and amygdala neuron phase-locking to hippocampal theta was reduced by half, while still remaining well above chance.",
+      "claim_type": "EXPLICIT",
+      "source": "When local theta was absent, the strength of EC and amygdala neuron phase-locking to hippocampal theta was reduced by half, while still remaining well above chance (Figure 4D, right subpanel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the experimental data analysis, with reference to Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:28.979276Z"
+    },
+    {
+      "id": "7b287e27-3768-4506-bac5-1e138cd7b130",
+      "content_id": "328d7c36-01af-444d-9cf1-cadf7a8b4e41",
+      "claim_id": "C66",
+      "claim": "Interregional LFP\u2013LFP theta coupling augments but is not strictly required for extrahippocampal neuron phase-locking to hippocampal theta.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, these results provide direct evidence that interregional LFP\u2013LFP theta coupling augments but is not strictly required for extrahippocampal neuron phase-locking to hippocampal theta.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:28.979276Z"
+    },
+    {
+      "id": "021bf297-1d2c-426c-81f8-15aa2a64751b",
+      "content_id": "328d7c36-01af-444d-9cf1-cadf7a8b4e41",
+      "claim_id": "C67",
+      "claim": "Individual hippocampal neurons phase-lock to oscillations in slow theta, fast theta, and beta bands.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with prior studies, we identify sporadic, oscillatory bouts in hippocampal LFPs within slow theta (2\u20134 Hz), fast theta (6\u201310 Hz), and beta (13\u201320 Hz) bands while subjects engaged in virtual navigation. Individual hippocampal neurons phase-lock to oscillations in each of these bands, including a previously undiscovered group of neurons that phase-lock to nested slow theta and beta rhythms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the primary findings from the experimental data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:28.979276Z"
+    },
+    {
+      "id": "0937fd24-36f5-4f29-8823-1c2014666318",
+      "content_id": "328d7c36-01af-444d-9cf1-cadf7a8b4e41",
+      "claim_id": "C68",
+      "claim": "A previously undiscovered group of neurons phase-lock to nested slow theta and beta rhythms.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with prior studies, we identify sporadic, oscillatory bouts in hippocampal LFPs within slow theta (2\u20134 Hz), fast theta (6\u201310 Hz), and beta (13\u201320 Hz) bands while subjects engaged in virtual navigation. Individual hippocampal neurons phase-lock to oscillations in each of these bands, including a previously undiscovered group of neurons that phase-lock to nested slow theta and beta rhythms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the primary findings from the experimental data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:28.979276Z"
+    },
+    {
+      "id": "74c8edeb-f434-4290-ac79-8e2645b85b24",
+      "content_id": "328d7c36-01af-444d-9cf1-cadf7a8b4e41",
+      "claim_id": "C69",
+      "claim": "Outside the hippocampus, phase-locking to hippocampal oscillations occurs in both a region-specific (primarily EC and amygdala neurons) and frequency-specific (theta-preferring) manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Outside the hippocampus, phase-locking to hippocampal oscillations occurs in both a region-specific (primarily EC and amygdala neurons) and frequency-specific (theta-preferring) manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the primary findings from the experimental data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:28.979276Z"
+    },
+    {
+      "id": "8271c156-1b91-4226-b39b-1c8be18e5181",
+      "content_id": "328d7c36-01af-444d-9cf1-cadf7a8b4e41",
+      "claim_id": "C70",
+      "claim": "There is a dissociation between region and frequency in the selective phase-locking of EC neurons to fast hippocampal theta, whereas neurons in all regions outside the hippocampus show some level of phase-locking to slow hippocampal theta.",
+      "claim_type": "EXPLICIT",
+      "source": "We further show a dissociation between region and frequency in the selective phase-locking of EC neurons to fast hippocampal theta, whereas neurons in all regions outside the hippocampus show some level of phase-locking to slow hippocampal theta.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the primary findings from the experimental data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:28.979276Z"
+    },
+    {
+      "id": "fbfe1652-2885-4b35-ab1d-ecbc4833cf94",
+      "content_id": "328d7c36-01af-444d-9cf1-cadf7a8b4e41",
+      "claim_id": "C71",
+      "claim": "Extrahippocampal neurons phase-lock approximately twice as strongly to hippocampal theta when local theta oscillations co-occur, as when local theta is absent.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we provide the first direct evidence in humans that LFP\u2013LFP coupling enhances spike-time synchronization between regions, as extrahippocampal neurons phase-lock approximately twice as strongly to hippocampal theta when local theta oscillations co-occur, as when local theta is absent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the primary findings from the experimental data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:28.979276Z"
+    },
+    {
+      "id": "92fb4fc9-77c8-4bfc-9ccd-31959a907fae",
+      "content_id": "328d7c36-01af-444d-9cf1-cadf7a8b4e41",
+      "claim_id": "C72",
+      "claim": "There is a fundamental relationship between MTL neuron firing and hippocampal theta phase.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these findings reveal a fundamental relationship between MTL neuron firing and hippocampal theta phase that underscores a hypothesized role for theta oscillations in routing the information contents of memory.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:28.979276Z"
+    },
+    {
+      "id": "36f485e0-ea0c-48ca-a066-eb7a41c33bbf",
+      "content_id": "328d7c36-01af-444d-9cf1-cadf7a8b4e41",
+      "claim_id": "C73",
+      "claim": "The hippocampus maintains strong, reciprocal connections with the EC and amygdala while connections to neocortex are sparser.",
+      "claim_type": "EXPLICIT",
+      "source": "This result is consistent with structural anatomy, as the hippocampus maintains strong, reciprocal connections with the EC and amygdala while connections to neocortex are sparser (Amaral, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:28.979276Z"
+    },
+    {
+      "id": "21fc930d-b412-4166-bab5-b6f962a8f49b",
+      "content_id": "328d7c36-01af-444d-9cf1-cadf7a8b4e41",
+      "claim_id": "C74",
+      "claim": "Some mPFC neurons project directly to the hippocampus.",
+      "claim_type": "EXPLICIT",
+      "source": "Still, given evidence in rodents that some mPFC neurons project directly to the hippocampus (Rajasethupathy et al., 2015), phase-lock to hippocampal theta (Siapas et al., 2005; Hyman et al., 2005; Sirota et al., 2008; Ito et al., 2018; Padilla-Coreano et al., 2019), and are critical for memory retrieval (Rajasethupathy et al., 2015; Yadav et al., 2022), we expected ACC and OFC neurons to show stronger associations with hippocampal theta than we observed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:28.979276Z"
+    },
+    {
+      "id": "d4cd33dc-931e-4038-98f0-81c82e2ef030",
+      "content_id": "328d7c36-01af-444d-9cf1-cadf7a8b4e41",
+      "claim_id": "C75",
+      "claim": "mPFC neurons are critical for memory retrieval.",
+      "claim_type": "EXPLICIT",
+      "source": "Still, given evidence in rodents that some mPFC neurons project directly to the hippocampus (Rajasethupathy et al., 2015), phase-lock to hippocampal theta (Siapas et al., 2005; Hyman et al., 2005; Sirota et al., 2008; Ito et al., 2018; Padilla-Coreano et al., 2019), and are critical for memory retrieval (Rajasethupathy et al., 2015; Yadav et al., 2022), we expected ACC and OFC neurons to show stronger associations with hippocampal theta than we observed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:28.979276Z"
+    },
+    {
+      "id": "753a4dbc-71fc-48cb-9e80-1310a308c98e",
+      "content_id": "328d7c36-01af-444d-9cf1-cadf7a8b4e41",
+      "claim_id": "C76",
+      "claim": "Strong phase-locking to hippocampal theta may occur in the EC and amygdala at baseline, whereas phase-locking among neurons in the mPFC and other cortical areas may be task-dependent.",
+      "claim_type": "EXPLICIT",
+      "source": "One possibility is that strong phase-locking to hippocampal theta occurs in the EC and amygdala at baseline, whereas phase-locking among neurons in the mPFC and other cortical areas is task-dependent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about potential explanations for the findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:28.979276Z"
+    },
+    {
+      "id": "ca58fe8e-4ca0-4ce0-841b-dbbb4c87466d",
+      "content_id": "328d7c36-01af-444d-9cf1-cadf7a8b4e41",
+      "claim_id": "C77",
+      "claim": "ACC and pre-supplementary motor area neurons phase-locked to hippocampal theta during a task-switching experiment in which subjects alternated between making recognition memory-based or categorization-based decisions.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, a recent study in humans found that ACC and pre-supplementary motor area neurons phase-locked to hippocampal theta during a task-switching experiment in which subjects alternated between making recognition memory-based or categorization-based decisions (Minxha et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:28.979276Z"
+    },
+    {
+      "id": "1612b033-0b2c-4d5b-a181-8ea2d1ffb209",
+      "content_id": "328d7c36-01af-444d-9cf1-cadf7a8b4e41",
+      "claim_id": "C78",
+      "claim": "Amygdala neurons phase-lock at higher rates to local than to hippocampal oscillations, and local and hippocampal phase-locking occur at least somewhat independently.",
+      "claim_type": "EXPLICIT",
+      "source": "First, as in neocortical regions, amygdala neurons phase-lock at higher rates to local than to hippocampal oscillations, and local and hippocampal phase-locking occur at least somewhat independently.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of findings from the experimental data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:28.979276Z"
+    },
+    {
+      "id": "64f4031b-4fd8-49af-aa4d-7e5521f059ac",
+      "content_id": "328d7c36-01af-444d-9cf1-cadf7a8b4e41",
+      "claim_id": "C79",
+      "claim": "EC neurons phase-lock to local and hippocampal theta oscillations at indistinguishable rates, and phase-locking is greatly disrupted when EC and hippocampal theta bouts are asynchronous.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, EC neurons phase-lock to local and hippocampal theta oscillations at indistinguishable rates, and phase-locking is greatly disrupted when EC and hippocampal theta bouts are asynchronous.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of findings from the experimental data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:28.979276Z"
+    },
+    {
+      "id": "1726acb2-2651-4a05-affd-1bebac63a1c6",
+      "content_id": "328d7c36-01af-444d-9cf1-cadf7a8b4e41",
+      "claim_id": "C80",
+      "claim": "In rodents, EC and hippocampal theta are phase-shifted but otherwise largely interchangeable, with EC inputs playing a major role in hippocampal theta generation.",
+      "claim_type": "EXPLICIT",
+      "source": "It is worth noting that in rodents, EC and hippocampal theta are phase-shifted but otherwise largely interchangeable, with EC inputs playing a major role in hippocampal theta generation (Buzs\u00e1ki, 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:28.979276Z"
+    },
+    {
+      "id": "f005b6d2-5014-4b64-903c-02dccecd2425",
+      "content_id": "328d7c36-01af-444d-9cf1-cadf7a8b4e41",
+      "claim_id": "C81",
+      "claim": "Theta phase-synchronization between EC and hippocampus is critical in explaining many circuit-level phenomena in rodents, including grid cell and place cell interactions, phase precession, and encoding/retrieval phase separation.",
+      "claim_type": "EXPLICIT",
+      "source": "Theta phase-synchronization between these regions is critical in explaining many circuit-level phenomena in rodents, including grid cell and place cell interactions, phase precession, and encoding/retrieval phase separation (O'Keefe and Burgess, 2005; Hasselmo, 2005; Burgess et al., 2007; Bonnevie et al., 2013; Fern\u00e1ndez-Ruiz et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:28.979276Z"
+    },
+    {
+      "id": "b2c31573-2038-44ec-bbb2-e4b8291cbcbc",
+      "content_id": "328d7c36-01af-444d-9cf1-cadf7a8b4e41",
+      "claim_id": "C82",
+      "claim": "Theta occurs more sporadically in humans and other primates than in rodents.",
+      "claim_type": "EXPLICIT",
+      "source": "Theta occurs more sporadically in humans and other primates than in rodents, and may differ between mammals in other ways not yet well understood (Eliav et al., 2018; Trimper and Colgin, 2018; Bush and Burgess, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:28.979276Z"
+    },
+    {
+      "id": "1dac3a83-afcb-4cd3-b848-ea31957633b4",
+      "content_id": "328d7c36-01af-444d-9cf1-cadf7a8b4e41",
+      "claim_id": "C83",
+      "claim": "EC and hippocampal neurons in humans retain a uniquely high degree of spike-time synchronization with an overlapping theta rhythm.",
+      "claim_type": "EXPLICIT",
+      "source": "Still, our results indicate that as in rodents, EC and hippocampal neurons in humans retain a uniquely high degree of spike-time synchronization with an overlapping theta rhythm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:28.979276Z"
+    },
+    {
+      "id": "eb4633d7-3dda-4636-8fe6-195f384a31c2",
+      "content_id": "328d7c36-01af-444d-9cf1-cadf7a8b4e41",
+      "claim_id": "C84",
+      "claim": "Hippocampal theta frequency varies along the longitudinal axis of the hippocampus, with faster theta occurring more posteriorly.",
+      "claim_type": "EXPLICIT",
+      "source": "This result may be placed in context with recent observations that hippocampal theta frequency varies along the longitudinal axis of the hippocampus, with faster theta occurring more posteriorly (Goyal et al., 2020; Penner et al., 2022), where the density of EC relative to amygdalar afferents is greater (Strange et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:28.979276Z"
+    },
+    {
+      "id": "72ab78e6-6636-4eed-98b7-1b5fad12edbe",
+      "content_id": "328d7c36-01af-444d-9cf1-cadf7a8b4e41",
+      "claim_id": "C85",
+      "claim": "The density of EC relative to amygdalar afferents is greater in the posterior hippocampus.",
+      "claim_type": "EXPLICIT",
+      "source": "This result may be placed in context with recent observations that hippocampal theta frequency varies along the longitudinal axis of the hippocampus, with faster theta occurring more posteriorly (Goyal et al., 2020; Penner et al., 2022), where the density of EC relative to amygdalar afferents is greater (Strange et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:28.979276Z"
+    },
+    {
+      "id": "78b30f9e-73db-4ec3-94a9-6fbb386ecc9d",
+      "content_id": "328d7c36-01af-444d-9cf1-cadf7a8b4e41",
+      "claim_id": "C86",
+      "claim": "All subjects had pharmacoresistant epilepsy.",
+      "claim_type": "EXPLICIT",
+      "source": "First, all subjects had pharmacoresistant epilepsy, and we cannot rule out that some results might stem from pathological activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a limitation of the study related to the subject population.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:28.979276Z"
+    },
+    {
+      "id": "884711af-b6f5-485b-a9bb-fa8f2dcdf559",
+      "content_id": "328d7c36-01af-444d-9cf1-cadf7a8b4e41",
+      "claim_id": "C87",
+      "claim": "Subjects were 28 patients with pharmacoresistant epilepsy who were implanted with depth electrodes to monitor seizure activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Subjects were 28patients with pharmacoresistant epilepsy who were implanted with depth electrodes to monitor seizure activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the study participants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:28.979276Z"
+    },
+    {
+      "id": "7e2c2429-f4ff-4955-93db-cdde31ad996b",
+      "content_id": "328d7c36-01af-444d-9cf1-cadf7a8b4e41",
+      "claim_id": "C88",
+      "claim": "Subjects completed one of two experiments: Yellow Cab (18 subjects) or Goldmine (10 subjects).",
+      "claim_type": "EXPLICIT",
+      "source": "Subjects completed one of two experiments (see 'Spatial navigation tasks'): Yellow Cab (18 subjects) or Goldmine (10 subjects).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental tasks used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:28.979276Z"
+    },
+    {
+      "id": "f375b145-16e2-4b24-acd8-cc23e2f2d8c8",
+      "content_id": "328d7c36-01af-444d-9cf1-cadf7a8b4e41",
+      "claim_id": "C89",
+      "claim": "Data were analyzed from 55 recording sessions (1\u20134 sessions per subject, mean duration = 33.6 min).",
+      "claim_type": "EXPLICIT",
+      "source": "We analyzed data from 55 recording sessions (1\u20134 sessions per subject, mean duration = 33.6 min).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental data collected in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:28.979276Z"
+    },
+    {
+      "id": "a7d002c2-b6cf-45df-ad7c-daacff0df1e1",
+      "content_id": "328d7c36-01af-444d-9cf1-cadf7a8b4e41",
+      "claim_id": "C90",
+      "claim": "Each subject was implanted with 6\u201312 Behnke-Fried depth electrodes that feature macroelectrode contacts for clinical monitoring and 40 \u00b5m\u2013diameter, platinum-iridium microwires for measuring microscale LFPs and extracellular action potentials.",
+      "claim_type": "EXPLICIT",
+      "source": "Each subject was implanted with 6\u201312 Behnke-Fried depth electrodes that feature macroelectrode contacts for clinical monitoring and 40 \u00b5m\u2013diameter, platinum-iridium microwires for measuring microscale LFPs and extracellular action potentials (Fried et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the recording equipment used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:28.979276Z"
+    },
+    {
+      "id": "77d7adfb-d423-45c7-bd9a-369444eb5734",
+      "content_id": "328d7c36-01af-444d-9cf1-cadf7a8b4e41",
+      "claim_id": "C91",
+      "claim": "Microwire LFPs were amplified and sampled at 28\u201332 kHz on a Neuralynx Cheetah or Blackrock NeuroPort recording system.",
+      "claim_type": "EXPLICIT",
+      "source": "Microwire LFPs were amplified and sampled at 28\u201332 kHz on a Neuralynx Cheetah (Neuralynx, Tucson, AZ) or Blackrock NeuroPort (Blackrock Microsystems, Salt Lake City, UT) recording system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the recording equipment and parameters used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:28.979276Z"
+    },
+    {
+      "id": "ba9ac345-d0ba-4fd9-8847-58a2d1a6e913",
+      "content_id": "328d7c36-01af-444d-9cf1-cadf7a8b4e41",
+      "claim_id": "C92",
+      "claim": "Semi-automatic spike sorting and quality inspection was performed on each microwire channel using the WaveClus software package in Matlab.",
+      "claim_type": "EXPLICIT",
+      "source": "We performed semi-automatic spike sorting and quality inspection on each microwire channel using the WaveClus software package in Matlab (Quiroga et al., 2004), as previously described (Ekstrom et al., 2003; Schonhaut et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data analysis methods used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:28.979276Z"
+    },
+    {
+      "id": "03e47893-9ae6-4156-acdd-3f822581ea59",
+      "content_id": "328d7c36-01af-444d-9cf1-cadf7a8b4e41",
+      "claim_id": "C93",
+      "claim": "0\u20138 units were isolated on each microwire channel, retaining both single-units and multi-units for subsequent analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "We isolated 0\u20138 units on each microwire channel, retaining both single-units and multi-units for subsequent analysis while removing units with low-amplitude waveforms relative to the noise floor, non-neuronal waveforms, inconsistent firing across the recording session, or other data quality issues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data analysis methods used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:28.979276Z"
+    },
+    {
+      "id": "bdf0773e-5c7d-4b84-a598-3a5b92973dbb",
+      "content_id": "328d7c36-01af-444d-9cf1-cadf7a8b4e41",
+      "claim_id": "C94",
+      "claim": "Microwire LFPs were downsampled to 1000 Hz, bandpass-filtered between 0.1\u201380 Hz using a zero-phase Hann window, and notch-filtered at 60 Hz to remove electrical line noise.",
+      "claim_type": "EXPLICIT",
+      "source": "Microwire LFPs were downsampled to 1000 Hz, bandpass-filtered between 0.1\u201380 Hz using a zero-phase Hann window, and notch-filtered at 60 Hz to remove electrical line noise.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data preprocessing methods used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:28.979276Z"
+    },
+    {
+      "id": "6db3fc2a-af01-4a32-8ada-9540b56f3dec",
+      "content_id": "328d7c36-01af-444d-9cf1-cadf7a8b4e41",
+      "claim_id": "C95",
+      "claim": "Instantaneous spectral power and phase estimates were extracted for each preprocessed LFP channel by convolving the time domain signal with five-cycle complex wavelets at 30 frequencies, linearly spaced from 1 to 30 Hz.",
+      "claim_type": "EXPLICIT",
+      "source": "Lastly, we extracted instantaneous spectral power and phase estimates for each preprocessed LFP channel by convolving the time domain signal with five-cycle complex wavelets at 30 frequencies, linearly spaced from 1 to 30 Hz.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data analysis methods used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:28.979276Z"
+    },
+    {
+      "id": "d140c73a-7d78-420b-8440-5edd0e771ded",
+      "content_id": "328d7c36-01af-444d-9cf1-cadf7a8b4e41",
+      "claim_id": "C96",
+      "claim": "Time-resolved oscillatory bouts were identified at 30 frequencies using the BOSC (Better OSCillation) detection method.",
+      "claim_type": "EXPLICIT",
+      "source": "For each LFP channel, we identified time-resolved oscillatory bouts at the 30 frequencies defined in the previous section using the BOSC (Better OSCillation) detection method, as described previously (Whitten et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data analysis methods used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:28.979276Z"
+    },
+    {
+      "id": "8a4201c3-88e7-4119-9ba1-65743433ddab",
+      "content_id": "328d7c36-01af-444d-9cf1-cadf7a8b4e41",
+      "claim_id": "C98",
+      "claim": "The FOOOF (Fitting Oscillations & One-Over F) algorithm was used to decompose the power spectrogram into oscillatory components and a 1/f background fit.",
+      "claim_type": "EXPLICIT",
+      "source": "We obtained this fit by implementing the recently developed FOOOF (Fitting Oscillations & One-Over F) algorithm, which uses an iterative fitting procedure to decompose the power spectrogram into oscillatory components and a 1/f background fit (Donoghue et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data analysis methods used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:28.979276Z"
+    },
+    {
+      "id": "c87d423e-7ad7-46b2-ab16-0ce578541d99",
+      "content_id": "328d7c36-01af-444d-9cf1-cadf7a8b4e41",
+      "claim_id": "C99",
+      "claim": "Phase-locking strength was defined as the mean resultant length (MRL) of hippocampal LFP phases across spike times at a given frequency, z-scored against a null distribution of MRLs obtained by circularly shifting the neuron's spike train 10,000 times at random.",
+      "claim_type": "EXPLICIT",
+      "source": "A neuron's phase-locking strength was defined as the mean resultant length (MRL) of hippocampal LFP phases across spike times at a given frequency, z-scored against a null distribution of MRLs obtained by circularly shifting the neuron's spike train 10,000 times at random (see 'Materials and methods').",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data analysis methods used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:28.979276Z"
+    },
+    {
+      "id": "70ae6a60-4538-419f-b770-d7d65e6132e7",
+      "content_id": "328d7c36-01af-444d-9cf1-cadf7a8b4e41",
+      "claim_id": "C100",
+      "claim": "Spikes were restricted to those that coincided with BOSC-detected oscillatory bouts at each frequency, excluding 11% of neurons for which the number of included spikes did not suffice to accurately gauge phase-locking.",
+      "claim_type": "EXPLICIT",
+      "source": "To control for the possibility that some neurons might phase-lock to asynchronous events in the hippocampal LFP, such as sharp waves or interictal discharges (Skelin et al., 2021; Reed et al., 2020), we restricted our analysis to spikes that coincided with BOSC-detected oscillatory bouts at each frequency, excluding 11% of neurons for which the number of included spikes did not suffice to accurately gauge phase-locking (see 'Materials and methods').",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data analysis methods used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:05:28.979276Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "6eb0751d-7a47-474c-973d-d7b05a3a5155",
+      "content_id": "328d7c36-01af-444d-9cf1-cadf7a8b4e41",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The study recorded extracellular spikes from 1854 single- and multi-units simultaneously with hippocampal LFPs in 28 neurosurgical patients with pharmacoresistant epilepsy who completed virtual navigation experiments. Recordings were obtained from depth electrodes implanted in multiple brain regions including hippocampus, EC, amygdala, PHG, STG, OFC, and ACC. Data were processed using established methods including spike sorting, LFP preprocessing, oscillation detection (BOSC), and phase-locking analysis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C23-C26, C87-C100 collectively describe a well-documented experimental design with appropriate recording equipment, data collection procedures, and analysis methods. The methods are described in sufficient detail and use established techniques (WaveClus for spike sorting, BOSC for oscillation detection, FOOOF for spectral decomposition, permutation testing for phase-locking significance). Sample sizes and data quality control measures are specified.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:05:28.979276Z"
+    },
+    {
+      "id": "13f05ff2-fdff-405c-9b1d-93603c3e8c8f",
+      "content_id": "328d7c36-01af-444d-9cf1-cadf7a8b4e41",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Hippocampal microwire LFPs exhibited oscillatory bouts in three independent frequency bands centered at 3 Hz (slow theta), 7 Hz (fast theta), and 15 Hz (beta), present approximately 1-6% of the time. These oscillations showed symmetrical, sinusoidal waveforms without harmonics and occurred at largely separable times. The findings are consistent with prior macroelectrode recordings and demonstrate that human hippocampal oscillations are conserved across spatial scales from microwire to macroelectrode fields.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C35, C38-C39 present converging evidence from spectral analysis, waveform characterization, and temporal overlap analysis. The BOSC detection method appropriately identifies oscillatory bouts, waveform asymmetry analysis confirms independence of frequency bands, and Dice similarity coefficients demonstrate temporal separation. Statistical comparisons between frequency bands are reported with appropriate mixed-effects models. The consistency with prior macroelectrode studies (C31) strengthens the findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:05:28.979276Z"
+    },
+    {
+      "id": "35d5cc29-1fb6-439b-8fb4-c5f69732c74d",
+      "content_id": "328d7c36-01af-444d-9cf1-cadf7a8b4e41",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "A majority (59%) of hippocampal neurons significantly phase-locked to hippocampal oscillations, predominantly in the 2-20 Hz range with clustering around slow theta, fast theta, and beta bands. Most neurons phase-locked to a single band, except for a subset that exhibited nested slow theta \u00d7 beta phase-locking\u2014a previously unreported phenomenon. No nested phase-locking was observed between fast theta and beta or other frequency pairs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C4, C40, C51-C55, C67-C68 describe hippocampal neuron phase-locking patterns with appropriate statistical controls (FDR correction, permutation testing with 10,000 iterations). The discovery of nested slow theta \u00d7 beta phase-locking (C4, C53, C54, C68) is supported by data shown in Figure 2H and represents a novel finding. The claim of novelty (C54) is appropriately qualified ('to our knowledge'). The restriction of analysis to BOSC-detected oscillatory bouts (C100) strengthens confidence in the findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:05:28.979276Z"
+    },
+    {
+      "id": "d0d2c793-3c53-4064-bf5e-4947c30fff7a",
+      "content_id": "328d7c36-01af-444d-9cf1-cadf7a8b4e41",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Outside the hippocampus, phase-locking to hippocampal oscillations occurred only at theta frequencies (2-10 Hz) and primarily among neurons in the entorhinal cortex (41%) and amygdala (29%). EC neurons showed similar phase-locking to both slow and fast hippocampal theta, while amygdala and other regions coupled predominantly to slow theta. Phase-locking rates in more remote cortical regions (PHG, STG, OFC, ACC) were below 5%.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C6, C46-C47, C49-C50, C56-C59, C69-C70 present a coherent pattern of region-specific and frequency-specific phase-locking. Statistical comparisons using logistic mixed-effects models appropriately account for inter-subject variability and repeated measures. The finding that EC and amygdala neurons show high phase-locking rates while more distant cortical regions show minimal phase-locking is consistent with known anatomical connectivity (C73). The dissociation between EC (both slow and fast theta) and amygdala (primarily slow theta) is clearly demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:05:28.979276Z"
+    },
+    {
+      "id": "e738d245-e18f-4f0c-87e5-99e0dc959cbf",
+      "content_id": "328d7c36-01af-444d-9cf1-cadf7a8b4e41",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Extrahippocampal neurons phase-locked to hippocampal theta even when local theta oscillations were absent, though phase-locking strength was reduced by approximately half compared to when local and hippocampal oscillations co-occurred. The overlap between local and hippocampal oscillations never exceeded 20% in any region, indicating that phase-locking can occur independently of local oscillations. This provides direct evidence that interregional LFP-LFP theta coupling augments but is not strictly required for extrahippocampal neuron phase-locking to hippocampal theta.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C60-C66, C71 describe a carefully controlled analysis that matched spike counts between conditions to ensure valid comparisons. The finding that EC and amygdala neurons maintain significant phase-locking to hippocampal theta even without local oscillations (C62, C65) is supported by both individual neuron significance testing and population-level analyses (Figure 4). The quantification of oscillatory overlap using Dice coefficients (C60-C61) and the demonstration of reduced but persistent phase-locking (C62-C63, C65) provide converging evidence for the conclusion (C66).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:05:28.979276Z"
+    },
+    {
+      "id": "92752486-7dea-4e7c-8d61-fdae5d49df58",
+      "content_id": "328d7c36-01af-444d-9cf1-cadf7a8b4e41",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Spike-time synchronization with hippocampal theta is a defining feature of neuronal activity in the hippocampus and structurally connected MTL regions, revealing a fundamental relationship between MTL neuron firing and hippocampal theta phase.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8 and C72 represent high-level conclusions drawn from the collective experimental findings (C3-C7, C40, C49-C50, C56-C59, C62-C66). The conclusions are appropriately supported by the data showing high phase-locking rates in hippocampus, EC, and amygdala, frequency-specific patterns, and persistence of phase-locking even without local oscillations. These findings converge to support the interpretation of a fundamental relationship between MTL neuron firing and hippocampal theta.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:05:28.979276Z"
+    },
+    {
+      "id": "828243e6-dc95-4b78-9d24-7f4e047a3bab",
+      "content_id": "328d7c36-01af-444d-9cf1-cadf7a8b4e41",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Amygdala neurons phase-lock at higher rates to local than to hippocampal oscillations with relatively independent local and hippocampal phase-locking, while EC neurons phase-lock to local and hippocampal theta oscillations at indistinguishable rates with phase-locking greatly disrupted when EC and hippocampal theta bouts are asynchronous.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C78-C79 summarize key differences between amygdala and EC phase-locking patterns that are supported by the detailed analyses in C62-C64. The distinction is important for understanding regional differences in hippocampal-MTL interactions and is supported by appropriate statistical comparisons and the oscillation co-occurrence analyses.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:05:28.979276Z"
+    },
+    {
+      "id": "90bc0c48-7089-4b79-a2a4-82ba91549b77",
+      "content_id": "328d7c36-01af-444d-9cf1-cadf7a8b4e41",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "EC and hippocampal neurons in humans retain a uniquely high degree of spike-time synchronization with an overlapping theta rhythm, similar to rodents.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C83 draws a cross-species comparison supported by the current findings (C79, C64) and prior rodent literature (C80-C81). The conclusion is appropriately qualified and supported by the data showing indistinguishable phase-locking rates to local and hippocampal theta in EC and the strong dependence on oscillatory co-occurrence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:05:28.979276Z"
+    },
+    {
+      "id": "6c94b82f-11ed-4b24-aecf-49d2fa3da04d",
+      "content_id": "328d7c36-01af-444d-9cf1-cadf7a8b4e41",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The manuscript situates the current findings within established knowledge about hippocampal function in episodic memory, theta oscillations facilitating interregional communication, phase-dependent synaptic plasticity, and prior findings in rodents and humans regarding phase-locking and memory performance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C10-C22, C73-C75, C80-C82, C84-C85 represent background knowledge and prior work appropriately cited to provide context for the current study. These claims are supported by appropriate citations and represent accurate characterizations of the literature. The citations appear relevant and properly attributed.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:05:28.979276Z"
+    },
+    {
+      "id": "54f8e151-6bbe-4b0c-9d4d-1c45f3f063e6",
+      "content_id": "328d7c36-01af-444d-9cf1-cadf7a8b4e41",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The authors speculate that theta phase-locking could mediate flexible communication with the hippocampus to influence memory content and quality, that theta phase-synchronization could be a general mechanism for information relay, and that phase-locking in mPFC and cortical areas may be task-dependent.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C9, C17, C76 are explicitly speculative statements about potential functional roles and mechanisms. While these speculations are reasonable given the data, they are not directly tested in the current study. The authors appropriately qualify these as possibilities ('could mediate,' 'one possibility is') rather than established findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:05:28.979276Z"
+    },
+    {
+      "id": "bc92535b-fd02-4437-a3ba-631f65dd5b5c",
+      "content_id": "328d7c36-01af-444d-9cf1-cadf7a8b4e41",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "All subjects had pharmacoresistant epilepsy, which is acknowledged as a limitation that could potentially affect the results through pathological activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C86 appropriately acknowledges a significant limitation of the study. The authors note they cannot rule out effects of pathological activity, though they attempted to mitigate this by restricting analysis to oscillatory bouts and excluding interictal discharges. This is an important caveat for interpreting the generalizability of findings to healthy populations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:05:28.979276Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "2d03bab6-ec57-4aee-a013-440d7c472913",
+      "result_id": "6eb0751d-7a47-474c-973d-d7b05a3a5155"
+    },
+    {
+      "claim_id": "88bbc038-bd83-4004-a684-ebb6036efbb6",
+      "result_id": "6eb0751d-7a47-474c-973d-d7b05a3a5155"
+    },
+    {
+      "claim_id": "5cbe96c9-38bb-48ab-aa9a-f1f5b727318a",
+      "result_id": "6eb0751d-7a47-474c-973d-d7b05a3a5155"
+    },
+    {
+      "claim_id": "218b5cfd-f10c-451f-9f9f-7b54047b2fe0",
+      "result_id": "6eb0751d-7a47-474c-973d-d7b05a3a5155"
+    },
+    {
+      "claim_id": "70bcd42d-6d7d-4e87-b8f2-29aea75e9774",
+      "result_id": "6eb0751d-7a47-474c-973d-d7b05a3a5155"
+    },
+    {
+      "claim_id": "884711af-b6f5-485b-a9bb-fa8f2dcdf559",
+      "result_id": "6eb0751d-7a47-474c-973d-d7b05a3a5155"
+    },
+    {
+      "claim_id": "7e2c2429-f4ff-4955-93db-cdde31ad996b",
+      "result_id": "6eb0751d-7a47-474c-973d-d7b05a3a5155"
+    },
+    {
+      "claim_id": "f375b145-16e2-4b24-acd8-cc23e2f2d8c8",
+      "result_id": "6eb0751d-7a47-474c-973d-d7b05a3a5155"
+    },
+    {
+      "claim_id": "a7d002c2-b6cf-45df-ad7c-daacff0df1e1",
+      "result_id": "6eb0751d-7a47-474c-973d-d7b05a3a5155"
+    },
+    {
+      "claim_id": "77d7adfb-d423-45c7-bd9a-369444eb5734",
+      "result_id": "6eb0751d-7a47-474c-973d-d7b05a3a5155"
+    },
+    {
+      "claim_id": "ba9ac345-d0ba-4fd9-8847-58a2d1a6e913",
+      "result_id": "6eb0751d-7a47-474c-973d-d7b05a3a5155"
+    },
+    {
+      "claim_id": "03e47893-9ae6-4156-acdd-3f822581ea59",
+      "result_id": "6eb0751d-7a47-474c-973d-d7b05a3a5155"
+    },
+    {
+      "claim_id": "bdf0773e-5c7d-4b84-a598-3a5b92973dbb",
+      "result_id": "6eb0751d-7a47-474c-973d-d7b05a3a5155"
+    },
+    {
+      "claim_id": "6db3fc2a-af01-4a32-8ada-9540b56f3dec",
+      "result_id": "6eb0751d-7a47-474c-973d-d7b05a3a5155"
+    },
+    {
+      "claim_id": "d140c73a-7d78-420b-8440-5edd0e771ded",
+      "result_id": "6eb0751d-7a47-474c-973d-d7b05a3a5155"
+    },
+    {
+      "claim_id": "8a4201c3-88e7-4119-9ba1-65743433ddab",
+      "result_id": "6eb0751d-7a47-474c-973d-d7b05a3a5155"
+    },
+    {
+      "claim_id": "c87d423e-7ad7-46b2-ab16-0ce578541d99",
+      "result_id": "6eb0751d-7a47-474c-973d-d7b05a3a5155"
+    },
+    {
+      "claim_id": "70ae6a60-4538-419f-b770-d7d65e6132e7",
+      "result_id": "6eb0751d-7a47-474c-973d-d7b05a3a5155"
+    },
+    {
+      "claim_id": "f8cf6e25-8490-4e70-8665-36e2c975934e",
+      "result_id": "13f05ff2-fdff-405c-9b1d-93603c3e8c8f"
+    },
+    {
+      "claim_id": "bafca29a-2149-4724-b0e3-20d609c36be8",
+      "result_id": "13f05ff2-fdff-405c-9b1d-93603c3e8c8f"
+    },
+    {
+      "claim_id": "a3477cdf-9c7a-4ffd-9f6f-53e47326fe6f",
+      "result_id": "13f05ff2-fdff-405c-9b1d-93603c3e8c8f"
+    },
+    {
+      "claim_id": "ee1d43a9-eba8-4302-82e6-6901e0813eac",
+      "result_id": "13f05ff2-fdff-405c-9b1d-93603c3e8c8f"
+    },
+    {
+      "claim_id": "d6351209-c941-4bf7-8734-dc77a80c1e8b",
+      "result_id": "13f05ff2-fdff-405c-9b1d-93603c3e8c8f"
+    },
+    {
+      "claim_id": "2ed4e6ca-a6d6-4d9a-9d94-f5a8cbd51c13",
+      "result_id": "13f05ff2-fdff-405c-9b1d-93603c3e8c8f"
+    },
+    {
+      "claim_id": "8e564371-cf54-4fc5-b8a3-115c2f6e554b",
+      "result_id": "13f05ff2-fdff-405c-9b1d-93603c3e8c8f"
+    },
+    {
+      "claim_id": "6e2c1133-9585-42f9-8578-b426bd6d8473",
+      "result_id": "13f05ff2-fdff-405c-9b1d-93603c3e8c8f"
+    },
+    {
+      "claim_id": "2d420f1f-6c5d-4e6d-9bc8-d28c185e9362",
+      "result_id": "13f05ff2-fdff-405c-9b1d-93603c3e8c8f"
+    },
+    {
+      "claim_id": "a2946bf9-409e-40ef-973b-f24d452368e4",
+      "result_id": "13f05ff2-fdff-405c-9b1d-93603c3e8c8f"
+    },
+    {
+      "claim_id": "8dddc609-463c-4812-8749-a7bda6b890dc",
+      "result_id": "13f05ff2-fdff-405c-9b1d-93603c3e8c8f"
+    },
+    {
+      "claim_id": "3e895700-73df-4de9-8bb1-8230820d32b9",
+      "result_id": "35d5cc29-1fb6-439b-8fb4-c5f69732c74d"
+    },
+    {
+      "claim_id": "dc401b0a-650e-4b87-8a35-20da9ed38507",
+      "result_id": "35d5cc29-1fb6-439b-8fb4-c5f69732c74d"
+    },
+    {
+      "claim_id": "fe29b971-c0b5-4943-93e4-d7e41000a192",
+      "result_id": "35d5cc29-1fb6-439b-8fb4-c5f69732c74d"
+    },
+    {
+      "claim_id": "74c432cc-bfe8-4e69-a5e0-cf743cd5ff5d",
+      "result_id": "35d5cc29-1fb6-439b-8fb4-c5f69732c74d"
+    },
+    {
+      "claim_id": "8d9308d9-ace5-4b7e-9566-2fa8d06605fb",
+      "result_id": "35d5cc29-1fb6-439b-8fb4-c5f69732c74d"
+    },
+    {
+      "claim_id": "009ba34c-0ce4-4f0e-9158-ff788b8def5a",
+      "result_id": "35d5cc29-1fb6-439b-8fb4-c5f69732c74d"
+    },
+    {
+      "claim_id": "581a9bdb-db04-45ec-a02b-efbdeafce27a",
+      "result_id": "35d5cc29-1fb6-439b-8fb4-c5f69732c74d"
+    },
+    {
+      "claim_id": "a346320f-b713-4269-909a-a26c716f9a46",
+      "result_id": "35d5cc29-1fb6-439b-8fb4-c5f69732c74d"
+    },
+    {
+      "claim_id": "021bf297-1d2c-426c-81f8-15aa2a64751b",
+      "result_id": "35d5cc29-1fb6-439b-8fb4-c5f69732c74d"
+    },
+    {
+      "claim_id": "0937fd24-36f5-4f29-8823-1c2014666318",
+      "result_id": "35d5cc29-1fb6-439b-8fb4-c5f69732c74d"
+    },
+    {
+      "claim_id": "b46b4743-3ce1-45c3-a68a-4eac820dbd17",
+      "result_id": "d0d2c793-3c53-4064-bf5e-4947c30fff7a"
+    },
+    {
+      "claim_id": "8ebfec65-bb6a-4dc6-a23b-39b70a6d2252",
+      "result_id": "d0d2c793-3c53-4064-bf5e-4947c30fff7a"
+    },
+    {
+      "claim_id": "f0312711-0128-4898-a1d1-5de6780e05f8",
+      "result_id": "d0d2c793-3c53-4064-bf5e-4947c30fff7a"
+    },
+    {
+      "claim_id": "39551d44-58e6-4150-a56d-68906bab1fdf",
+      "result_id": "d0d2c793-3c53-4064-bf5e-4947c30fff7a"
+    },
+    {
+      "claim_id": "17644283-c41e-4b7b-937d-cd69aa03221f",
+      "result_id": "d0d2c793-3c53-4064-bf5e-4947c30fff7a"
+    },
+    {
+      "claim_id": "4b5220c3-daf0-4831-82b6-0abde09820f2",
+      "result_id": "d0d2c793-3c53-4064-bf5e-4947c30fff7a"
+    },
+    {
+      "claim_id": "87d240c9-9ccc-4a27-834a-c27765c37cc6",
+      "result_id": "d0d2c793-3c53-4064-bf5e-4947c30fff7a"
+    },
+    {
+      "claim_id": "fc3e3607-f3d2-4983-b3c8-cee3be4a3086",
+      "result_id": "d0d2c793-3c53-4064-bf5e-4947c30fff7a"
+    },
+    {
+      "claim_id": "799e2a94-c8a0-4811-9d25-dd04a16c7581",
+      "result_id": "d0d2c793-3c53-4064-bf5e-4947c30fff7a"
+    },
+    {
+      "claim_id": "b43aea1c-b31b-4607-aa76-dc84ea03b420",
+      "result_id": "d0d2c793-3c53-4064-bf5e-4947c30fff7a"
+    },
+    {
+      "claim_id": "74c8edeb-f434-4290-ac79-8e2645b85b24",
+      "result_id": "d0d2c793-3c53-4064-bf5e-4947c30fff7a"
+    },
+    {
+      "claim_id": "8271c156-1b91-4226-b39b-1c8be18e5181",
+      "result_id": "d0d2c793-3c53-4064-bf5e-4947c30fff7a"
+    },
+    {
+      "claim_id": "c040b91c-ae78-4aca-bd06-0a2e7f5fb351",
+      "result_id": "e738d245-e18f-4f0c-87e5-99e0dc959cbf"
+    },
+    {
+      "claim_id": "942bb9a7-134d-4378-942c-0723552b878d",
+      "result_id": "e738d245-e18f-4f0c-87e5-99e0dc959cbf"
+    },
+    {
+      "claim_id": "006a912e-92c4-4152-a516-4a766b270df4",
+      "result_id": "e738d245-e18f-4f0c-87e5-99e0dc959cbf"
+    },
+    {
+      "claim_id": "dc196944-523f-4e3f-a9f7-fd8dd0244c3d",
+      "result_id": "e738d245-e18f-4f0c-87e5-99e0dc959cbf"
+    },
+    {
+      "claim_id": "ddacfb14-0572-498e-8fce-e3c4821cc070",
+      "result_id": "e738d245-e18f-4f0c-87e5-99e0dc959cbf"
+    },
+    {
+      "claim_id": "e6f346d9-ec23-4f45-bc64-9a94464bfd26",
+      "result_id": "e738d245-e18f-4f0c-87e5-99e0dc959cbf"
+    },
+    {
+      "claim_id": "c68f7cb5-558f-4c30-9f15-10cebe7f2085",
+      "result_id": "e738d245-e18f-4f0c-87e5-99e0dc959cbf"
+    },
+    {
+      "claim_id": "7b287e27-3768-4506-bac5-1e138cd7b130",
+      "result_id": "e738d245-e18f-4f0c-87e5-99e0dc959cbf"
+    },
+    {
+      "claim_id": "fbfe1652-2885-4b35-ab1d-ecbc4833cf94",
+      "result_id": "e738d245-e18f-4f0c-87e5-99e0dc959cbf"
+    },
+    {
+      "claim_id": "bd374ad6-9397-4f23-a4d7-750f97c5a6f8",
+      "result_id": "92752486-7dea-4e7c-8d61-fdae5d49df58"
+    },
+    {
+      "claim_id": "92fb4fc9-77c8-4bfc-9ccd-31959a907fae",
+      "result_id": "92752486-7dea-4e7c-8d61-fdae5d49df58"
+    },
+    {
+      "claim_id": "1612b033-0b2c-4d5b-a181-8ea2d1ffb209",
+      "result_id": "828243e6-dc95-4b78-9d24-7f4e047a3bab"
+    },
+    {
+      "claim_id": "64f4031b-4fd8-49af-aa4d-7e5521f059ac",
+      "result_id": "828243e6-dc95-4b78-9d24-7f4e047a3bab"
+    },
+    {
+      "claim_id": "1dac3a83-afcb-4cd3-b848-ea31957633b4",
+      "result_id": "90bc0c48-7089-4b79-a2a4-82ba91549b77"
+    },
+    {
+      "claim_id": "d67781a0-48ce-4e65-bd75-986fbb81b4c1",
+      "result_id": "6c94b82f-11ed-4b24-aecf-49d2fa3da04d"
+    },
+    {
+      "claim_id": "4a8823c0-715e-4de7-8f96-530db6008715",
+      "result_id": "6c94b82f-11ed-4b24-aecf-49d2fa3da04d"
+    },
+    {
+      "claim_id": "e19f6abf-38bb-4ad4-9c16-ac704b3ae632",
+      "result_id": "6c94b82f-11ed-4b24-aecf-49d2fa3da04d"
+    },
+    {
+      "claim_id": "15ce21df-7ad2-47e8-9b0d-3afe6e530132",
+      "result_id": "6c94b82f-11ed-4b24-aecf-49d2fa3da04d"
+    },
+    {
+      "claim_id": "4235e9c7-7168-4a6d-bc5e-61c263b3c995",
+      "result_id": "6c94b82f-11ed-4b24-aecf-49d2fa3da04d"
+    },
+    {
+      "claim_id": "184ac7d4-41ca-420d-8111-8bc04ae47b94",
+      "result_id": "6c94b82f-11ed-4b24-aecf-49d2fa3da04d"
+    },
+    {
+      "claim_id": "1c0e19e8-a14b-4db4-af49-6776d6646340",
+      "result_id": "6c94b82f-11ed-4b24-aecf-49d2fa3da04d"
+    },
+    {
+      "claim_id": "df20fef1-c7d6-4574-bd6e-870170dd55b1",
+      "result_id": "6c94b82f-11ed-4b24-aecf-49d2fa3da04d"
+    },
+    {
+      "claim_id": "45b98aab-cb5b-4864-9448-240f1f615c2e",
+      "result_id": "6c94b82f-11ed-4b24-aecf-49d2fa3da04d"
+    },
+    {
+      "claim_id": "e1079a7b-1d38-41dc-9052-f5aad2590bad",
+      "result_id": "6c94b82f-11ed-4b24-aecf-49d2fa3da04d"
+    },
+    {
+      "claim_id": "f45c0ce8-20e8-4c2d-b4b5-f10d8d862f9a",
+      "result_id": "6c94b82f-11ed-4b24-aecf-49d2fa3da04d"
+    },
+    {
+      "claim_id": "7ff3d37f-2e10-471c-a416-424dfa039457",
+      "result_id": "6c94b82f-11ed-4b24-aecf-49d2fa3da04d"
+    },
+    {
+      "claim_id": "6c9a6c57-a3a8-449c-934d-c034d79915de",
+      "result_id": "6c94b82f-11ed-4b24-aecf-49d2fa3da04d"
+    },
+    {
+      "claim_id": "8d0d4e54-d3b5-4cd2-a98b-2b2c534d1f1c",
+      "result_id": "6c94b82f-11ed-4b24-aecf-49d2fa3da04d"
+    },
+    {
+      "claim_id": "36f485e0-ea0c-48ca-a066-eb7a41c33bbf",
+      "result_id": "6c94b82f-11ed-4b24-aecf-49d2fa3da04d"
+    },
+    {
+      "claim_id": "21fc930d-b412-4166-bab5-b6f962a8f49b",
+      "result_id": "6c94b82f-11ed-4b24-aecf-49d2fa3da04d"
+    },
+    {
+      "claim_id": "d4cd33dc-931e-4038-98f0-81c82e2ef030",
+      "result_id": "6c94b82f-11ed-4b24-aecf-49d2fa3da04d"
+    },
+    {
+      "claim_id": "1726acb2-2651-4a05-affd-1bebac63a1c6",
+      "result_id": "6c94b82f-11ed-4b24-aecf-49d2fa3da04d"
+    },
+    {
+      "claim_id": "f005b6d2-5014-4b64-903c-02dccecd2425",
+      "result_id": "6c94b82f-11ed-4b24-aecf-49d2fa3da04d"
+    },
+    {
+      "claim_id": "b2c31573-2038-44ec-bbb2-e4b8291cbcbc",
+      "result_id": "6c94b82f-11ed-4b24-aecf-49d2fa3da04d"
+    },
+    {
+      "claim_id": "eb4633d7-3dda-4636-8fe6-195f384a31c2",
+      "result_id": "6c94b82f-11ed-4b24-aecf-49d2fa3da04d"
+    },
+    {
+      "claim_id": "72ab78e6-6636-4eed-98b7-1b5fad12edbe",
+      "result_id": "6c94b82f-11ed-4b24-aecf-49d2fa3da04d"
+    },
+    {
+      "claim_id": "a4481f0c-9c0c-4952-bb0f-115f646ca83a",
+      "result_id": "54f8e151-6bbe-4b0c-9d4d-1c45f3f063e6"
+    },
+    {
+      "claim_id": "45b98aab-cb5b-4864-9448-240f1f615c2e",
+      "result_id": "54f8e151-6bbe-4b0c-9d4d-1c45f3f063e6"
+    },
+    {
+      "claim_id": "753a4dbc-71fc-48cb-9e80-1310a308c98e",
+      "result_id": "54f8e151-6bbe-4b0c-9d4d-1c45f3f063e6"
+    },
+    {
+      "claim_id": "78b30f9e-73db-4ec3-94a9-6fbb386ecc9d",
+      "result_id": "bc92535b-fd02-4437-a3ba-631f65dd5b5c"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,375 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "Visual prosthetics represent a promising solution for some cases of blindness by using electrical stimulation to restore rudimentary vision through phosphene patterns, requiring scene-processing to achieve functional vision.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5 provide well-established background on blindness prevalence and visual prosthetics, supported by multiple citations to peer-reviewed literature. These claims accurately represent the current state of the field and provide appropriate context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "Historical and recent studies demonstrate that electrical stimulation of V1 can reliably induce phosphene perception, with characteristics (size, brightness, threshold) dependent on cortical magnification and stimulation parameters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C11 accurately summarize established findings from multiple cited studies spanning decades of research. The claims appropriately characterize the state of knowledge regarding cortical stimulation and phosphene properties, providing solid foundation for the simulator development.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "The authors developed a biologically plausible, PyTorch-based phosphene simulator that integrates clinical and neurophysiological evidence, incorporates retinotopic organization and temporal dynamics, runs in real-time, uses differentiable operations for gradient-based optimization, and is suitable for both computational and behavioral applications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C17, C24-C26 describe the core features and capabilities of the simulator, supported by the implementation details, performance data (C22-C24), and successful demonstration in multiple experimental contexts (C15, C38, C46, C48). The technical implementation and experimental validation provide strong evidence for these claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C18",
+      "C54",
+      "C55"
+    ],
+    "result": "The simulator uses the reverse wedge-dipole visuotopic model of V1 from Polimeni et al. 2006 for mapping electrode locations to visual field, with options to substitute alternative models and compatibility with other retinotopic structures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18, C54, C55 describe the visuotopic mapping approach with appropriate citations. The flexibility to use alternative models and extend to other structures is documented in the methods and demonstrated in supplementary materials (Figure 1\u2014figure supplement 1).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C57",
+      "C59"
+    ],
+    "result": "The simulator models phosphene brightness and detection thresholds based on intracortical tissue activation in response to biphasic pulse trains, assuming correlation with deposited charge and using a thresholding model based on psychometric data from Fern\u00e1ndez et al. 2021.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C29, C57, C59 describe the brightness and threshold modeling approach with appropriate citations. The model's accuracy is validated through comparison with experimental data in Figures 2 and 3 (C20), demonstrating good fits to psychophysical data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C20",
+      "C38",
+      "C42",
+      "C43"
+    ],
+    "result": "The simulator accurately fits experimental data on the effects of stimulation parameters on phosphene perception probability and successfully learns to encode visual information in multiple training conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20, C38, C42, C43 are supported by quantitative comparisons with experimental data (Figures 2, 3) showing good fits (R\u00b2=0.950 for brightness, R\u00b2=0.844 for cross-validated perception probability), and by successful training outcomes in multiple experimental conditions (Figures 7, 8).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C60",
+      "C61"
+    ],
+    "result": "The simulator accounts for accommodation effects using a memory trace of stimulation history, fitting experimental data up to 200s but predicting moderate recovery over 1000s that differs from Schmidt et al. 1996 while staying within confidence intervals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C30-C33 describe temporal dynamics modeling with mixed validation. While the model fits data up to 200s (C31, Figure 4), the predicted recovery differs from Schmidt et al. 1996 (C32). The authors acknowledge this discrepancy but note it stays within confidence intervals (C33). The ambivalence in clinical data (C62) and acknowledged need for more research (C63) suggest uncertainty in this component.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C89",
+      "C90"
+    ],
+    "result": "The simulator achieves real-time performance (28.7 fps for 10,000 phosphenes at 256\u00d7256 resolution on NVIDIA A30 GPU, >100 fps for 1000 phosphenes on consumer GPU), running faster than state-of-the-art retinal prosthesis simulators but with a trade-off between speed and memory demand.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C23, C89-C90 are directly supported by performance benchmarking data presented in Figure 5. The measurements are clearly documented with specific hardware configurations and frame rates, providing quantitative evidence for the performance claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C34",
+      "C91",
+      "C92"
+    ],
+    "result": "The simulator is the first to incorporate empirical models of current spread in cortical tissue to simulate effects of stimulation current on phosphene size, unlike existing real-time cortical prosthesis simulators.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34, C91-C92 are supported by comparison with cited existing simulators (Li 2013, Wong et al. 2010) and integration of current spread models from multiple sources (Tehovnik and Slocum 2007, Winawer and Parvizi 2016, Bosking et al. 2017). The novelty claim is appropriately contextualized within the literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "The simulator can be tailored to simulate custom scenarios including different phosphene shapes and electrode interactions, with modular design allowing future extensions to other brain regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C36, C64-C66 are supported by demonstrations in supplementary figures (Figure 1\u2014figure supplements 2 and 3) showing elongated and custom phosphene shapes, and by citations to relevant studies on stimulation in other visual areas (C36). The modular implementation is documented in the methods.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C46",
+      "C47"
+    ],
+    "result": "In dynamic end-to-end video encoding experiments with 1000 phosphenes covering 16\u00b0 visual angle, the model successfully learned to represent input frames in phosphene vision after 45 epochs, representing the first explicit optimization of stimulation across the temporal domain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C38, C46-C47 are supported by experimental results shown in Figure 7. The successful learning is visually demonstrated, and the novelty claim regarding temporal optimization (C47) is appropriately contextualized. However, the claim of being 'first' (C47) relies on inference from literature review rather than exhaustive proof.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C48",
+      "C49"
+    ],
+    "result": "In constrained optimization experiments with natural scenes, the encoder learned efficient encoding strategies using limited discrete stimulation amplitudes (10 values, 0-128 \u00b5A), enabling accurate reconstruction while complying with safety constraints, though unconstrained optimization produced infeasible high amplitudes (>2000 \u00b5A).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C42, C48-C49 are supported by experimental results in Figure 8 showing successful reconstruction in both free and constrained conditions. The identification of infeasible amplitudes in unconstrained optimization (C39-C40) and successful adaptation to constraints (C41-C42) demonstrate practical utility. The quality of constrained reconstructions (C49) supports the efficiency claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C43",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "The model successfully converged to sparse phosphene encoding selectively representing object boundaries in supervised conditions, consistent with previous work on constrained optimization and recent emphasis on semantic segmentation in SPV research.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43, C76-C78 are supported by experimental results (Figure 8) and appropriate citations to related work. The successful boundary encoding (C43) aligns with cited trends in the field (C78) and previous optimization results (C76), providing convergent evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C45",
+      "C82"
+    ],
+    "result": "Adding coactivation current resulted in significantly increased simultaneously active neighboring electrodes (p<0.001), suggesting the encoder learns to exploit leak current between electrodes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45, C82 are supported by statistical analysis shown in Figure 8\u2014figure supplement 4. The significant p-value (p<0.001) and the interpretation regarding leak current exploitation are appropriately supported by the experimental design and results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C50",
+      "C51"
+    ],
+    "result": "While a realistic simulator exists for retinal prosthetic vision (Pulse2Percept), a biophysically-grounded simulation model for functional evaluation of cortical prosthetic vision remained to be developed prior to this work.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C51 accurately characterize the state of the field with appropriate citations. The gap identification (C51) is supported by literature review and citations acknowledging the need for more realistic models (Han et al. 2021, Dagnelie 2008).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "The field faces challenges due to limited, ambiguous, and sometimes contradictory data on cortical stimulation, requiring trade-offs between model complexity and accuracy while balancing real-time performance, flexibility, and biological realism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C63, C104-C106 provide honest assessment of limitations in available data and modeling challenges. These are supported by citations to conflicting studies (C62) and represent appropriate acknowledgment of the current state of the field and design constraints.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "The simulator has several acknowledged limitations: binary threshold rendering may be inaccurate, the leaky integrator and memory trace may oversimplify cortical activation, and validation used only symmetric biphasic pulse trains which may not generalize to other pulse shapes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C110 represent appropriate acknowledgment of model limitations with supporting citations (C108, C110). These honest assessments of potential inaccuracies and simplifications strengthen rather than weaken the overall work by clearly delineating scope and assumptions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "The simulator assumes electrode independence and models multi-phosphene percepts using linear summation, which appears valid for electrodes >1mm apart but may underestimate complexities for closer electrodes, despite clinical reports of interactions, double phosphenes, and unexpected percepts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C116 appropriately acknowledge model limitations regarding electrode interactions, supported by citations to clinical observations (C111-C112) and evidence for the independence assumption (C115). The acknowledgment of potential underestimation for close electrodes (C116) is appropriately cautious.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "The simulator currently only models V1 stimulation, though reliable phosphene thresholds have been obtained in other visual areas (LGN, V2, V3A, MT) and higher-order areas can elicit feature-specific percepts, suggesting potential for future extensions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C123 appropriately acknowledge current scope limitations (C118) while documenting evidence for potential extensions (C119-C121) with appropriate citations. The suggestions for future work (C122-C123) are reasonable given the cited evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Subjective interpretability is important alongside encoding efficiency, and while the model preserved correspondences in training conditions, maintaining interpretability in automated optimization remains challenging, especially for cortical prostheses where phosphenes differ greatly from natural images, requiring human observer involvement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C88 provide thoughtful discussion of interpretability challenges supported by visual evidence (C84, Figure 8) and appropriate citations (C88). The acknowledgment of challenges (C85-C86) and recommendation for human involvement (C88) represent sound methodological reasoning.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Future work could implement the simulator in game engines for immersive VR, incorporate eye-tracking for gaze-contingent processing (which has preliminary evidence for improving prosthetic vision quality), though clinical implementation may face unforeseen complexities and oculomotor behavior in blind individuals remains an active research area.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C100 provide reasonable suggestions for future work supported by appropriate citations. The acknowledgment of preliminary evidence (C98), potential complexities (C99), and ongoing research (C100) appropriately qualifies the suggestions while providing useful directions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Cortical neuroprostheses are in early development stages with continuously improving hardware and protocols, and clinical trials are limited to small numbers of blind volunteers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C103 accurately characterize the current state of the field with appropriate citations to recent work (C102) and clinical trials (C103). This contextualizes the challenges in model development and validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C52",
+      "C53"
+    ],
+    "result": "The simulator source code is available on GitHub and can be installed via pip as 'dynaphos'.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C53 provide clear information about code availability and installation, which is verifiable and supports reproducibility. This is a straightforward factual claim about software distribution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C124",
+      "C125"
+    ],
+    "result": "The open-source, biologically plausible phosphene simulator aims to provide an accessible platform for fundamental, clinical, and computational vision scientists working on cortical neuroprosthetic vision, contributing to the field's translational impact.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124-C125 represent appropriate summary statements about the work's goals and intended impact. These are supported by the demonstrated capabilities, open-source availability, and successful application in multiple contexts throughout the manuscript.",
+    "result_type": "MAJOR"
+  }
+]

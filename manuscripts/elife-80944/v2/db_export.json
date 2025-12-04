@@ -1,0 +1,1804 @@
+{
+  "submission": {
+    "id": "6842f1d0-6242-4602-906c-4278b3da09e4",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-04T03:44:22.529163Z",
+    "updated_at": "2025-12-04T03:44:22.529163Z"
+  },
+  "content": [
+    {
+      "id": "fb130db2-5e00-44df-8cac-a36af4c853ea",
+      "submission_id": "6842f1d0-6242-4602-906c-4278b3da09e4",
+      "content_type": "manuscript",
+      "content_text": "# Glucagon-like peptide-1 receptor activation stimulates PKA-mediated phosphorylation of Raptor and this contributes to the weight loss effect of liraglutide\n\n## Authors\n\n- Thao DV Le<sup>1</sup> ([ORCID: 0000-0002-6242-2562](https://orcid.org/0000-0002-6242-2562))\n- Dianxin Liu<sup>2</sup>\n- Gai-Linn K Besing<sup>1</sup>\n- Ritika Raghavan<sup>1</sup>\n- Blair J Ellis<sup>1</sup>\n- Ryan P Ceddia<sup>2</sup>\n- Sheila Collins<sup>1</sup> ([ORCID: 0000-0001-6812-8551](https://orcid.org/0000-0001-6812-8551)) \u2020\n- Julio E Ayala<sup>1</sup> ([ORCID: 0000-0003-3224-2365](https://orcid.org/0000-0003-3224-2365)) \u2020\n\n### Affiliations\n\n1. Department of Molecular Physiology and Biophysics, Vanderbilt University School of Medicine Nashville United States ([ROR:02vm5rt34](https://ror.org/02vm5rt34))\n2. Department of Medicine, Vanderbilt University Medical Center Nashville United States ([ROR:02vm5rt34](https://ror.org/02vm5rt34))\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe canonical target of the glucagon-like peptide-1 receptor (GLP-1R), Protein Kinase A (PKA), has been shown to stimulate mechanistic Target of Rapamycin Complex 1 (mTORC1) by phosphorylating the mTOR-regulating protein Raptor at Ser791 following \u03b2-adrenergic stimulation. The objective of these studies is to test whether GLP-1R agonists similarly stimulate mTORC1 via PKA phosphorylation of Raptor at Ser791 and whether this contributes to the weight loss effect of the therapeutic GLP-1R agonist liraglutide. We measured phosphorylation of the mTORC1 signaling target ribosomal protein S6 in Chinese Hamster Ovary cells expressing GLP-1R (CHO-Glp1r) treated with liraglutide in combination with PKA inhibitors. We also assessed liraglutide-mediated phosphorylation of the PKA substrate RRXS*/T* motif in CHO-Glp1r cells expressing Myc-tagged wild-type (WT) Raptor or a PKA-resistant (Ser791Ala) Raptor mutant. Finally, we measured the body weight response to liraglutide in WT mice and mice with a targeted knock-in of PKA-resistant Ser791Ala Raptor. Liraglutide increased phosphorylation of S6 and the PKA motif in WT Raptor in a PKA-dependent manner but failed to stimulate phosphorylation of the PKA motif in Ser791Ala Raptor in CHO-Glp1r cells. Lean Ser791Ala Raptor knock-in mice were resistant to liraglutide-induced weight loss but not setmelanotide-induced (melanocortin-4 receptor-dependent) weight loss. Diet-induced obese Ser791Ala Raptor knock-in mice were not resistant to liraglutide-induced weight loss; however, there was weight-dependent variation such that there was a tendency for obese Ser791Ala Raptor knock-in mice of lower relative body weight to be resistant to liraglutide-induced weight loss compared to weight-matched controls. Together, these findings suggest that PKA-mediated phosphorylation of Raptor at Ser791 contributes to liraglutide-induced weight loss.\n\n## Introduction\n\nGlucagon-like peptide-1 (GLP-1) receptor (GLP-1R) agonists reduce food intake and body weight and are approved for weight loss (Drucker, 2022). Elucidating the mechanisms through which GLP-1R agonists regulate body weight could enhance the therapeutic potential of these compounds or identify novel targets for anti-obesity drug development. We have shown that the GLP-1R agonist Exendin-4 (Ex4) stimulates mechanistic Target of Rapamycin (mTOR) Complex-1 (mTORC1) signaling and that inhibition of mTORC1 signaling in the ventromedial hypothalamus (VMH) with rapamycin blocks the anorectic effect induced by Ex4 in this nucleus (Brown et al., 2018; Burmeister et al., 2017). The present studies aim to define the mechanism(s) by which GLP-1R agonism stimulates mTORC1 signaling and reduces body weight.\n\nmTOR is a Ser/Thr protein kinase that forms two complexes: mTORC1 and mTOR complex 2 (mTORC2; Saxton and Sabatini, 2017). The rapamycin-sensitive mTORC1 has unique accessory proteins including Raptor (regulatory associated protein of mTOR). mTORC1 activity is stimulated by growth factors, nutrients, and hormones by promoting PI3K/Akt-mediated phosphorylation of tuberous sclerosis complex 1/2 (TSC1/2) (Kim et al., 2002). Activation of mTORC1 by GLP-1R agonists seemed unlikely since the GLP-1R is a G\u03b1s-coupled receptor that signals via protein kinase A (PKA; Thorens, 1992). However, activation of the G\u03b1s-coupled \u03b2-adrenergic receptor stimulates mTORC1 via Raptor phosphorylation by PKA (Liu et al., 2016), suggesting that GLP-1R activation can similarly stimulate mTORC1 via PKA phosphorylation of Raptor.\n\nHere we demonstrate that GLP-1R activation induces mTORC1 signaling and Raptor phosphorylation in a PKA-dependent manner and show that this contributes to weight loss by the therapeutic GLP-1R agonist liraglutide. This reveals a novel weight-lowering GLP-1R-PKA-mTORC1 axis and broadly suggests that other G\u03b1s-coupled receptors may use this PKA-mTORC1 pathway for certain biological responses.\n\n## Results\n\n### GLP-1R agonists activate mTORC1 in a PKA-dependent manner\n\nSimilar to Ex4 (Brown et al., 2018; Burmeister et al., 2017), liraglutide increases phosphorylation of the mTORC1 signaling target ribosomal protein S6 in CHO-GLP-1R cells, and this is blocked by the mTORC1 inhibitor rapamycin (Figure 1A; Figure 1\u2014figure supplement 1). The PKA inhibitor H89 also blocks S6 phosphorylation by liraglutide or the adenylyl cyclase/PKA activator forskolin (Figure 1B; Figure 1\u2014figure supplement 1). However, H89 has some off-target effects including inhibiting the S6 kinase p70S6K (Davies et al., 2000), likely explaining why H89 inhibits S6 phosphorylation by insulin (Figure 1B). KT5720, a PKA inhibitor with minimal off-target effects on p70S6K (Davies et al., 2000), also reduces liraglutide- and forskolin-induced phosphorylation of S6 and the PKA target CREB in a dose-dependent manner (Figure 1C; Figure 1\u2014figure supplement 1). Neither dose of KT5720 affected S6 phosphorylation by insulin (Figure 1C). Two doses of the pan-Akt inhibitor MK-2206 that block insulin-stimulated Akt phosphorylation did not affect stimulation of mTORC1 activity by liraglutide (Figure 1D; Figure 1\u2014figure supplement 1). These data suggest that liraglutide stimulates mTORC1 signaling in a PKA-dependent and Akt-independent manner.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/80944/elife-80944-fig1-v2.jpg)\n\n**Figure 1.:** (A) Immunoblot of pS6, S6, pCREB, and CREB and quantification of pS6 expression (pS6 /S6) in CHO-K1 cells transfected with the a vector expressing the hGLP1R and treated with DMSO or the mTORC1 inhibitor rapamycin (100 nM) for 30 min followed by treatment with 1 X PBS (Veh) or liraglutide (Lira, 10 nM) for 1 hr (Interaction: F (1, 8) = 6.926, p=0.0301; Inhibitor: F (1, 8) = 6.926, p=0.0301; Treatment: F (1, 8) = 22.50, p=0.0015). (B\u2013C) Immunoblot of pS6, S6, pCREB, and CREB and quantification of pS6 expression (pS6/S6) in CHO-K1 cells stably expressing the hGLP1R treated with DMSO (Veh) or either of the PKA inhibitors, (B) H89 (10 \u00b5M) or (C) KT5720 (10 \u00b5M or 50 \u03bcM), for 30 min followed by treatment with vehicle (PBS), Lira (10 nM), forskolin (Fsk, 10 \u00b5M), or insulin (Ins, 10 mg/mL) for 1 hr (H89: Interaction: F (1, 12) = 4.782, p=0.0493; Inhibitor: F (1, 12) = 4.782, p=0.0493; Treatment: F (1, 12) = 12.50, p=0.0041). KT5720: (Interaction: F (2, 18) = 15.32, p=0.0001; Inhibitor: F (2, 18) = 15.32, p=0.0001; Treatment: F (1, 18) = 36.14, p<0.0001). Quantification of pCREB expression (pCREB/CREB) is shown in Figure 1\u2014figure supplement 1. (D) Immunoblot of pS6, S6, pAkt, and Akt and quantification of pS6 expression (pS6/S6) in CHO-K1 cells stably expressing the hGLP1R treated with DMSO or the pan-Akt inhibitor MK-2206 (5 \u03bcM or 20 \u00b5M) for 30 min followed by treatment with vehicle (PBS), Lira (10 nM), Fsk (10 \u00b5M), or Ins (10 mg/mL) for 1 hr (Interaction: F (1, 12) = 0.02486, p=0.8773; Inhibitor: F (1, 12) = 0.02486, p=0.8773; Treatment: F (1, 12) = 110.2, p<0.0001). Quantification of pAkt expression (pAkt/Akt) is shown in Figure 1\u2014figure supplement 1. Analysis was done using two-way ANOVA followed by Tukey\u2019s multiple comparisons. Data are normalized to the respective control (Veh or Veh and inhibitor). Absolute data are shown in Figure 1\u2014figure supplement 1. All data are shown as mean \u00b1 SEM, ns not significant, * p<0.05, ** p<0.01, *** p<0.001, **** p<0.0001, n=3\u20134 biological replicates.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/80944/elife-80944-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (Resubmission Rev 2 Figure 1\u2014figure supplement 1\u2014source data 1). (A) Quantification of pS6 expression (pS6 /S6) in CHO-K1 cells transfected with the a vector expressing the hGLP1R and treated with DMSO or the mTORC1 inhibitor rapamycin (100 nM) for 30 min followed by treatment with 1 X PBS (Veh) or liraglutide (Lira, 10 nM) for 1 hr (Interaction: F (1, 8) = 31.10, p=0.0005; Inhibitor: F (1, 8) = 50.10, p=0.0001; Treatment: F (1, 8) = 39.17, p=0.0002). (B\u2013C) Quantification of pS6 (pS6/S6) and pCREB (pCREB/CREB) expression in CHO-K1 cells stably expressing the hGLP1R treated with DMSO (Veh) or either of the PKA inhibitors, (B) H89 (10 \u00b5M) or (C) KT5720 (10 \u00b5M or 50 \u03bcM), for 30 min followed by treatment with vehicle (PBS) or Lira (10 nM) for 1 hr (H89 pS6/S6: Interaction: F (1, 12) = 13.40, p=0.0033; Inhibitor: F (1, 12) = 21.00, p=0.0006; Treatment: F (1, 12) = 18.40, p=0.0011. H89 pCREB/CREB: Interaction: F (1, 8) = 356.7, p<0.0001; Inhibitor: F (1, 8) = 578.5, p<0.0001; Treatment: F (1, 8) = 361.3, p<0.0001. KT5720 pS6/S6: Interaction: F (2, 18) = 15.32, p=0.0001; Inhibitor: F (2, 18) = 15.32, p=0.0001; Treatment: F (1, 18) = 36.14, p<0.0001. KT5720 pCREB/CREB: Interaction: F (2, 12) = 30.76, p<0.0001; Inhibitor: F (2, 12) = 43.93, p<0.0001; Treatment: F (1, 12) = 63.66, p<0.0001). Quantification of pS6 and pAkt (pAkt/Akt) in CHO-K1 cells stably expressing the hGLP1R treated with DMSO or the pan-Akt inhibitor MK-2206 (5 \u03bcM or 20 \u00b5M) for 30 min followed by treatment with vehicle (PBS), Lira (10 nM) or Ins (10 mg/mL) for 1 hr (pS6/S6: Interaction: F (1, 12) = 17.67, p=0.0012; Inhibitor: F (1, 12) = 31.37, p=0.0001; Treatment: F (1, 12) = 181.6, p<0.0001. pAkt/Akt: Interaction: F (2, 12) = 60.57, p<0.0001; Inhibitor: F (1, 12) = 62.79, p<0.0001; Treatment: F (2, 12) = 61.73, p<0.0001). Analysis was done using two-way ANOVA followed by Tukey\u2019s multiple comparisons. Data are presented as absolute densitometry values and are shown as mean \u00b1 SEM, ns not significant, * p<0.05, ** p<0.01, *** p<0.001, **** p<0.0001, n=3\u20134 biological replicates.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/80944/elife-80944-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (Resubmission Rev 2 Figure 1\u2014figure supplement 2\u2014source data 1). (A) Quantification of pS6 expression (pS6/S6) and pCREB (pCREB/CREB) in CHO-K1 cells stably expressing the hGLP1R and treated with DMSO (Veh) or increasing doses of Lira for 1 h (pS6/S6: F (5, 12) = 70.69, p<0.0001; pCREB/CREB: F (5, 12) = 52.89, p<0.0001). (B) Quantification of pS6 expression (pS6/S6) and pCREB (pCREB/CREB) in CHO-K1 cells stably expressing the hGLP1R and treated with DMSO (Veh) or Lira (10 nM) for different time points (pS6/S6: F (4, 15) = 73.02, p<0.0001; pCREB/CREB: F (4, 15) = 178.2, p<0.0001). Analysis was done using one-way ANOVA followed by Brown-Forsythe test. Data are presented as absolute densitometry values and are shown as mean \u00b1 SEM, ** p<0.01, **** p<0.0001, n=3\u20134 biological replicates.\n\n### GLP-1R activation induces PKA phosphorylation of Raptor at Ser791\n\nThe catalytic subunit of PKA directly phosphorylates Ser791 of Raptor (Liu et al., 2016). We tested whether liraglutide promotes PKA phosphorylation of Raptor at Ser791 by expressing Myc-tagged wild-type (WT) Raptor or Myc-tagged mutant Raptor with alanine replacing serine at the 791st position (Ser791Ala Raptor) in CHO-GLP-1R cells. Using an antibody against the PKA motif RRXS*/T*, immunoblotting of immunoprecipitated Myc-proteins shows that liraglutide and forskolin increase PKA motif phosphorylation on Myc-WT Raptor in a PKA-dependent manner (blocked by H89), but liraglutide fails to increase PKA motif phosphorylation on Myc-Ser791Ala Raptor (Figure 2A and B). This was also observed in \u03b2-TC3 cells, an immortalized \u03b2-cell line endogenously expressing the GLP-1R (Figure 2C). A high concentration of the Akt inhibitor MK-2206 (20 \u03bcM) did not affect liraglutide-induced PKA motif phosphorylation of Raptor in CHO-GLP-1R (Figure 2A and B) or \u03b2-TC3 (Figure 2C) cells. Thus, liraglutide stimulates PKA phosphorylation of Raptor at Ser791.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/80944/elife-80944-fig2-v2.jpg)\n\n**Figure 2.:** (A) Immunoblot and quantification of phospho-PKA substrate (pRRXS*/T*) and Myc in CHO-K1 cells stably expressing the hGLP1R transfected with Myc-wild-type (WT) Raptor or Myc-Ser791Ala Raptor and treated with vehicle (DMSO) or H89 (10 \u00b5M) for 30 min followed by treatment with Lira (10 nM), forskolin (Fsk, 10 \u03bcM), or insulin (Ins, 10 mg/mL) for 1 hr (Interaction: F (4, 21) = 3.695, p=0.0071; Genotype: F (2, 21) = 10.51, p=0.0007; Treatment: F (2, 21) = 6.328, p=0.0071). (B) Immunoblot and quantification of phospho-PKA substrate and Myc in CHO-K1 cells stably expressing the hGLP1R transfected with Myc-wild-type (WT) Raptor and treated with vehicle (DMSO) or MK-2206 (20 \u03bcM) for 30 min followed by treatment with Lira (10 nM), Fsk (10 \u03bcM), or Ins (10 mg/mL) for 1 hr (Interaction: F (3, 16) = 0.4599, p=0.7141; Inhibitor: F (1, 16) = 0.04511, p=0.8345; Treatment: F (3, 16) = 44.26, p<0.0001). (C) Immunoblot and quantification of phospho-PKA substrate and Myc in \u03b2-TC3 cells transfected with Myc-wild-type (WT) Raptor or Myc-Ser791Ala Raptor and treated with vehicle (DMSO) or MK-2206 (10 \u00b5M) for 30 min followed by treatment with Lira (10 nM), forskolin (Fsk, 10 \u03bcM), or insulin (Ins, 10 mg/mL) for 1 hr (Interaction: F (3, 16) = 7.345, p=0.0026; Genotype: F (1, 16) = 22.18, p=0.0002; Treatment: F (3, 16) = 10.93, p=0.0004). Analysis was done using two-way ANOVA followed by Tukey\u2019s multiple comparisons. Data are shown as mean \u00b1 SEM, no symbol = not significant, * p<0.05, ** p<0.01, *** p<0.001, n=3\u20134 biological replicates.\n\n### PKA phosphorylation of Raptor at Ser791 mediates GLP-1R agonist-induced weight loss\n\nWe tested the physiological role of PKA phosphorylation of Raptor at Ser791 by measuring body weight and glycemic responses to liraglutide in wild-type (WT) and knock-in mice in which endogenous Raptor is replaced by a PKA-resistant Raptor expressing alanine instead of serine at position 791 in all tissues (CMV-Ser791Ala Raptor). WT and CMV-Ser791Ala Raptor knock-in mice lost weight in response to liraglutide treatment, but liraglutide-induced weight loss was attenuated in the CMV-Ser791Ala Raptor knock-in mice (Figure 3A\u2013D). This was primarily due to a lesser reduction in fat mass in liraglutide-treated CMV-Ser791Ala Raptor knock-in compared to WT mice (Figure 3E\u2013F). There was no significant difference between genotypes in the ability of liraglutide to reduce lean (Figure 3G\u2013H) or free fluid (not shown) mass. Metabolic cage experiments demonstrate that food intake was equally suppressed in WT and CMV-Ser791Ala Raptor knock-in mice during the first day of liraglutide treatment. However, food intake returned to pre-liraglutide treatment levels in CMV-Ser791Ala Raptor knock-in mice by the second day of treatment whereas they did not return to pre-liraglutide treatment levels in WT mice until the fifth day of dosing (Figure 3I\u2013J). Energy expenditure (EE) decreased in response to liraglutide in both genotypes and remained significantly lower in CMV-Ser791Ala Raptor knock-in mice compared to their vehicle counterparts for up to 8 days of dosing (Figure 3K\u2013L). In WT mice, EE only remained lower in liraglutide-treated mice for 3 days (Figure 3K\u2013L). These data suggest that phosphorylation of Raptor at Ser791 is required for the full body weight-lowering effect of liraglutide via regulation of both food intake and EE.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/80944/elife-80944-fig3-v2.jpg)\n\n**Figure 3.:** Body weight, body composition, and energy balance parameters in male wild-type (WT) and CMV-Ser791Ala Raptor knock-in (S791A) mice given vehicle (0.9% saline) or liraglutide (200 \u03bcg/kg) subcutaneously twice a day for 14 days. Absolute body weight (A), total mass (C), fat mass (E), and lean mass (G). Change in body weight (B), total mass (D), fat mass (F), and lean mass (H) from baseline (Day 0). Absolute daily food intake (I) and EE (J) and change in daily food intake (K) and EE (L) relative to baseline (Day 0) during a 10-day treatment period in metabolic cages. ((A), Interaction: F (42, 700)=14.10, p<0.0001. (B), Interaction: F (42, 700)=14.10, p<0.0001. (C), Interaction: F (3, 50)=42.94, p<0.0001. (D), F (3, 50)=42.94, p<0.0001. (E), Interaction: F (3, 36)=30.94, p<0.0001. (F), F (3, 36)=30.94, p<0.0001. (G), Interaction: F (3, 36)=12.19, p<0.0001. (H), F (3, 36)=12.19, p<0.0001. (I), Interaction: F (30, 112)=1.370, p<0.0213. (J), Interaction: F (30, 112)=1.706, p<0.0240. (K), Interaction: F (30, 120)=3.827, p<0.0001. (L), Interaction: F (30, 112)=3.827, p<0.0001) Analysis was done using mixed-effects analysis followed by Holm-Sidak\u2019s multiple comparisons between liraglutide-treated WT and CMV-Ser791Ala Raptor mice. Data are shown as mean \u00b1 SEM, * p<0.05, ** p<0.01, **** p<0.0001, n=13\u201314 (A\u2013D), 9\u201312 (E\u2013H), or 4 (I\u2013L) mice per group.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/80944/elife-80944-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A\u2013D) Total (A), fat (B), lean (C), and free body fluid (D) measurements in WT and CMV-Ser791Ala Raptor mice prior to vehicle or liraglutide administration. (E\u2013 F) 5 hr fasting blood glucose in male WT and CMV-Ser791Ala Raptor mice before drug treatment (E) and on treatment day 14 (F). (G) 5 hr fasting insulin in male WT and CMV-Ser791Ala Raptor mice before on treatment day 14. Analysis was done using one-way ANOVA followed by Holm-Sidak\u2019s multiple comparisons. Data are shown as mean \u00b1 SEM, ns not significant, n=4\u20138 mice per group.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/80944/elife-80944-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A) Targeting vector used by Ingenious Targeting Laboratory, Inc to introduce a Cre-inducible two base pair point mutation in an inverted exon 20 of the Raptor coding sequence. (B) Verification of correct target sequence expression by genomic DNA digestion. Wild-type (Control) DNA contains a SacI sequence that is absent in the Ser791Ala point mutant (red). SacI digestion of a subcloned 911 base pair (bp) genomic DNA fragment obtained from liver tissue of control mice produces two products at 371 bp and 540 bp. The corresponding 989 bp genomic DNA sequence obtained from CMV-Ser791Ala Raptor knock-in mice cannot be digested by SacI.\n\nThere was no difference between genotypes in fasting blood glucose prior to liraglutide treatment (Figure 3\u2014figure supplement 1). Two weeks of liraglutide treatment lowered fasting glucose to similar degrees in both genotypes, and there was no difference in fasting plasma insulin levels (Figure 3\u2014figure supplement 1).\n\nWe fed a separate cohort of control and CMV-Ser791Ala Raptor knock-in mice a 60% high-fat diet (HFD) to test whether PKA phosphorylation of Raptor at Ser791 is also required for the weight loss effect of liraglutide in the setting of obesity. Unlike lean mice, obese CMV-Ser791Ala mice were not significantly protected from weight loss induced by liraglutide (Figure 4A\u2013D). One caveat to interpreting these results is that CMV-Ser791Ala mice gained significantly more weight and fat mass when fed the 60% HFD prior to liraglutide treatment compared to wild-type mice (Figure 4C and E). We have anecdotally observed that mice with higher baseline body weight and fat mass tend to lose more weight in response to liraglutide. We now support this by showing a positive correlation between starting body weight and liraglutide-induced weight loss in both wild-type and CMV-Ser791Ala mice (Figure 4\u2014figure supplement 1). Although there is no difference in the relationship between starting body weight and liraglutide-induced weight loss between wild-type and CMV-Ser791Ala mice (Figure 4\u2014figure supplement 1), we determined the average baseline (pre-liraglutide treatment) body weight for both genotypes (43.4 g) and divided the results into mice with baseline body weights above vs. below 43.4 g (Figure 4\u2014figure supplement 1). There was no difference in liraglutide-induced weight loss between wild-type and CMV-Ser791Ala mice in mice with baseline body weights above 43.4 g (Figure 4I\u2013J). In mice with baseline body weights below 43.4 g, there was a tendency for CMV-Ser791Ala mice to lose less body weight in response to liraglutide (Figure 4K\u2013L). These results suggest that PKA phosphorylation of Raptor may contribute to liraglutide-induced weight loss in obese mice below a certain threshold body weight.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/80944/elife-80944-fig4-v2.jpg)\n\n**Figure 4.:** Body weight in male wild-type (WT) and CMV-Ser791Ala Raptor knock-in (S791A) mice fed a 60% HFD for 8\u201310 weeks and then given vehicle (0.9% saline) or liraglutide (200 \u03bcg/kg) subcutaneously twice a day for 9 days. Absolute body weight (A) and change in body weight (B) from baseline (Day 0). Absolute total mass (C), fat mass (E), and lean mass (G) on Days 0 and 9. Change in total mass (D), fat mass (F), and lean mass (H) from baseline (Day 0). Change in body weight in mice with a baseline body weight >43.4 g (I, J) and mice with a baseline body weight <43.4 g (K, L). ((A), Interaction: F (27, 297)=22.22, p<0.0001. (B), Interaction: F (27, 297)=22.22, p<0.0001. (C), Interaction: F (3, 33) = 39.82, p<0.0001. (D), F (3, 33) = 39.82, p<0.0001. (E), Interaction: F (3, 33) = 30.17, p<0.0001. (F), F (3, 33) = 30.17, p<0.0001. (G), Interaction: F (3, 33) = 25.69, p<0.0001. (H), F (3, 33) = 25.69, p<0.0001. (I), Interaction: F (27, 126)=40.94, p<0.0001. (J), F (3, 14) = 131.2, p<0.0001. (K), Interaction: F (27, 135)=17.98, p<0.0001. (L), F (3, 15) = 29.48, p<0.0001). Analysis was done using mixed-effects analysis followed by Holm-Sidak\u2019s multiple comparisons between liraglutide-treated WT and CMV-Ser791Ala Raptor mice. Data are shown as mean \u00b1 SEM, * p<0.05, ** p<0.01, n=7\u201312 mice per group (A \u2013 H), 3\u20135 (I, J), and 2\u20137 (K, L).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/80944/elife-80944-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Relationship between baseline body weight and liraglutide-induced weight loss in HFD-fed wild-type (WT) and CMV-Ser791Ala Raptor knock-in (S791A) mice (Test if slopes are non-zero: WT, F (1,10) = 9.666, p<0.01; S791A Raptor: F (1, 17) = 36.714, p<0.001. Test if slopes are different: WT vs. S791A: F (1, 17) = 1.266, p=0.28). Absolute body weight in mice with >43.3 g baseline body weight (B) and <43.3 g baseline body weight (C). ((A), F (3, 14) = 9.005, p=0.0014. (B), F (3, 15) = 0.3796, p=0.7691). Analysis was done using linear regression or one-way ANOVA followed by Holm-Sidak\u2019s multiple comparisons. Data are shown as mean \u00b1 SEM, ** p<0.01, n=3\u20135 (B) and 2\u20137 (C) mice per group.\n\n### PKA phosphorylation of Raptor at Ser791 does not mediate melanocortin-4 receptor (MC4R) agonist-induced weight loss\n\nTo test whether Raptor phosphorylation at Ser791 is required exclusively for the weight loss effect of liraglutide or is necessary for other weight loss drugs, particularly those targeting G\u03b1s-coupled receptors, we treated CMV-Ser791Ala Raptor knock-in mice with the MC4R agonist setmelanotide. Like the GLP-1R, the MC4R is also a G\u03b1s-coupled receptor, and setmelanotide is approved for weight loss in individuals with monogenic obesity caused by mutations in pro-opiomelanocortin, proprotein convertase subtilisin/kexin type 1, or leptin receptor deficiency and in individuals with Bardet-Biedl syndrome (Markham, 2021). As shown in Figure 5, CMV-Ser791Ala Raptor knock-in mice were not resistant to weight loss in response to setmelanotide. This suggests that Raptor phosphorylation at Ser791 by PKA contributes to the weight loss effect of GLP-1R agonists but not another G\u03b1s-targeting pharmacological agent such as setmelanotide.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/80944/elife-80944-fig5-v2.jpg)\n\n**Figure 5.:** Body weight and body composition in male wild-type (WT) and CMV-Ser791Ala Raptor knock-in (S791A) mice given vehicle (0.9% saline) or setmelanotide (4 mg/kg) subcutaneously once a day for 9 days. Absolute body weight (A), total mass (C), fat mass (E), and lean mass (G). Change in body weight (B), total mass (D), fat mass (F), and lean mass (H) from baseline (Day 0). (A), Interaction: F (27, 171)=4.955, p<0.0001. (B), Interaction: F (27, 171)=4.600, p<0.0001. (C), Interaction: F (3, 19) = 12.93, p<0.0001. (D, F) (3, 19) = 11.28, p=0.0002. (E), Interaction: F (3, 19) = 6.087, p=0.0044. (F), F (3, 19) = 6.087, p=0.0044. (G), Interaction: F (3, 19) = 1.311, p=0.2999. (H, F) (3, 1) = 1.311, p=0.2999. Analysis was done using mixed-effects analysis followed by Holm-Sidak\u2019s multiple comparisons between liraglutide-treated WT and CMV-Ser791Ala Raptor mice. Data are shown as mean \u00b1 SEM, * p<0.05, ** p<0.01, n=5\u20137 mice per group.\n\n## Discussion\n\nGLP-1R-stimulated mTORC1 signaling in the VMH reduces food intake (Burmeister et al., 2017). This is consistent with studies showing that activation of hypothalamic mTORC1 reduces food intake and mediates weight lowering by leptin (Blouet et al., 2008; Cota et al., 2008; Cota et al., 2006) . We show that PKA phosphorylates the mTORC1-regulatory protein Raptor at Ser791 in response to liraglutide and that this is responsible for ~50% of liraglutide-induced weight loss. Given the complexity of signaling mechanisms downstream of the GLP-1R (Fletcher et al., 2016), assigning specific pathways to a desirable phenotype could be leveraged towards more effective weight loss therapeutics.\n\nTo our knowledge, our study is the first to describe a PKA-mTORC1 interaction and its physiological relevance in the context of GLP-1R signaling. PKA is reported to either stimulate (Liu et al., 2016) or inhibit (Jewell et al., 2019) mTORC1 activity. Similar to our study, (Liu et al., 2016) show PKA-mediated stimulation of mTORC1 in cells incubated in serum-free media. This contrasts with inhibition of mTORC1 in cells cultured in serum-supplemented media reported by Jewell et al., 2019. Since mTORC1 is a cellular energy sensor, PKA exerts differential actions on mTORC1 depending on nutrient availability or cellular signaling and energy status, as originally shown by Scott and Lawrence, 1998 demonstrating that forskolin inhibits insulin-stimulated S6 phosphorylation and also subsequently shown by Liu and colleagues (Liu et al., 2016).\n\nIn vivo results using novel PKA-resistant Raptor knockin mice suggest that PKA phosphorylation of Raptor contributes to the weight loss effect of liraglutide in lean but not in obese mice. One limitation of these in vivo studies is that PKA-resistant Raptor is expressed in all tissues. Loss of PKA phosphorylation of Raptor in one or multiple tissues may contribute to our observation that CMV-Ser791Ala mice gained significantly more weight on the HFD compared to control mice. This difference in starting body weight could explain why liraglutide-induced weight loss was not attenuated in obese CMV-Ser791Ala mice, as in lean mice, since heavier mice tend to be more responsive to liraglutide (Figure 4\u2014figure supplement 1). This could offset any reduction in liraglutide responsiveness resulting from expression of PKA-resistant Raptor. We support this by showing that CMV-Ser791Ala mice with lower initial body weights display a tendency towards reduced responsiveness to liraglutide. Future studies will circumvent the limitations of the CMV-Ser791Ala model by introducing the Ser791Ala mutation to specific tissues/cell types that specifically mediate liraglutide-induced weight loss. The brain is a key target for the weight-lowering effects of GLP-1R agonists (Adams et al., 2018; Sisley et al., 2014; Varin et al., 2019). Regulation of energy balance by mTORC1 appears to be most critical in hypothalamic regions such as the arcuate (ARC), paraventricular hypothalamus (PVH), VMH, and suprachiasmatic nucleus (Cota et al., 2006; Inhoff et al., 2010; Proulx et al., 2008), where the GLP-1R is highly expressed (Jensen et al., 2018; Cork et al., 2015). The ARC mediates weight loss effects of liraglutide (Secher et al., 2014) and is engaged by systemic liraglutide (Salinas et al., 2018). Hindbrain regions are also engaged by systemic liraglutide and mediate its weight-lowering effects (Salinas et al., 2018; Fortin et al., 2020). Inhibition of PKA attenuates the anorectic effect of hindbrain-targeted Ex4 in rats (Hayes et al., 2011). Future studies expressing Ser791Ala Raptor in a brain region/cell-type specific manner will enable identification of neuronal population(s) where a PKA-mTORC1 interaction mediates the anorectic effect of GLP-1R agonists.\n\nThe observation that CMV-Ser791Ala Raptor knock-in mice were not resistant to the weight loss effect of the MC4R agonist setmelanotide suggests that PKA-mediated phosphorylation of Raptor at Ser791 is not a general mechanism for all G\u03b1s-coupled receptor-targeting weight loss drugs. However, as with our results using liraglutide in HFD-fed mice, a caveat to interpreting our findings with setmelanotide is the use of the whole-body CMV-Ser791Ala mouse model. Since the weight loss effect of setmelanotide is primarily mediated via activation of the MC4R in the PVH, future studies will test the hypothesis that the weight loss effect of setmelanotide will be blunted in PVH MC4R-specific Ser791Ala Raptor knock-in mice. This could establish a role for PKA-mediated regulation of mTORC1 as a key mechanism for weight loss along an ARC (target of GLP-1R agonists)-PVH (target of MC4R agonists) axis.\n\nOur results suggest that liraglutide does not regulate mTORC1 via Akt, as was observed for \u03b2AR signaling in adipocytes (Liu et al., 2016). Inhibition of Akt activity in the hindbrain (Rupprecht et al., 2013) or hypothalamus (Yang et al., 2017) attenuates the anorectic effect of Ex4, so identifying targets of Akt mediating the effects of GLP-1R agonists requires further study. AMP-activated protein kinase (AMPK) is also implicated in the metabolic actions of GLP-1R agonists. Studies from our lab and others show that GLP-1R agonists reduce food intake by inhibiting AMPK (Burmeister et al., 2017; Hayes et al., 2011; Burmeister et al., 2013; Sandoval et al., 2012). Since AMPK suppresses mTORC1 by phosphorylating TSC2 (Inoki et al., 2003) or Raptor (Gwinn et al., 2008), GLP-1R activation could stimulate mTORC1 by reducing AMPK activity. AMPK can also be inhibited by mTORC1 signaling (Dagon et al., 2012), so GLP-1R-mediated inhibition of AMPK may be downstream of mTORC1.\n\nIn summary, we have uncovered a novel signaling mechanism downstream of the GLP-1R characterized by PKA-mediated phosphorylation of Raptor and increased mTORC1 signaling that contributes to the weight-lowering effect of liraglutide. Given the variability in response and adverse effects (e.g. nausea) of current GLP-1-based drugs, the identification of therapeutically relevant signaling profiles downstream of the GLP-1R holds promise for improving efficacy and reducing side effects of these drugs. Furthermore, our findings provide a new framework for future investigations into the significance of the PKA-mTORC1 interaction to other beneficial metabolic effects of GLP-1R agonists. GLP-1R agonists continue to be used as glucose-lowering agents for type 2 diabetes based on their insulinotropic effect via pancreatic \u03b2-cells (Drucker, 2022). The PKA-mTORC1 interaction could contribute to this or another \u03b2-cell phenotype associated with GLP-1R agonists (e.g. proliferation/cytoprotection). Furthermore, GLP-1R agonists also display cardioprotective effects that could be mediated directly via effects on the heart and vasculature and/or be secondary to the ability of these drugs to improve glycemia, body weight, lipid profiles, and inflammation (Ussher and Drucker, 2023). This provides an opportunity to investigate whether the PKA-mTORC1 interaction contributes to the cardioprotective effects of GLP-1R agonists via direct or indirect mechanisms.\n\n## Materials and methods\n\n### Cell culture\n\nChinese Hamster Ovary cells expressing human GLP-1R (CHO-GLP-1R; DiscoveRx, Fremont, CA) were maintained at 37 \u00b0C (5% CO2, humidified) in Ham\u2019s F12 media containing 10 mM glucose, 1 mM pyruvate, and 1 mM glutamine (Cat#11765054, Gibco) supplemented with 10% fetal bovine serum (FBS; Cat#16140071, Gibco), 10 ml/l penicillin-streptomycin (Cat#91, Hyclone), and 0.8 mg/ml Geneticin G418 Sulfate (Cat#10131027, Gibco). \u03b2-TC3 cells (Efrat et al., 1988) were gifted by Dr. Richard O\u2019Brien and cultured in DMEM media containing 25 mM glucose, 1 mM pyruvate, and 1 mM glutamine (Cat#11995065, Gibco) supplemented with 15% FBS, 2% horse serum (Cat#26050088, Gibco) and 10 ml/l penicillin-streptomycin. All cells were authenticated by STR profiling (ATCC) and were verified to be free of mycoplasma. Cells were washed twice with serum-free Ham\u2019s F12 (CHO-GLP-1R) or DMEM (\u03b2-TC3) media containing 5.5 mM glucose for 3 hr and were treated with vehicle (1 X PBS) or liraglutide (Victoza, Novo Nordisk) for 1 hr with or without 30 min pre-treatment with vehicle (DMSO), PKA inhibitors H89 (Cat#2910, Tocris Bioscience) or KT5720 (Cat#1288, Tocris Bioscience), or the Akt inhibitor MK-2207 (Cat#S1078, Selleck Chemicals LLC) at concentrations stated in the figure legends. The time and dose of liraglutide treatment was determined by pilot dose response and time course experiments (Figure 1\u2014figure supplement 2).\n\n### Immunoblotting\n\nCells were washed once with ice-cold 1 X PBS and lysed in RIPA buffer (Cat#R0278, Sigma-Aldrich) containing 1 X protease and phosphatase inhibitors. After centrifugation of cell homogenates (17,000xg, 10 min, 4 \u00b0C), supernatant protein concentration was determined by BCA protein assay (Pierce BCA Protein Assay Kit, Cat#23225, Thermo Fisher Scientific). Twenty \u03bcg/lane was run (200 V, 45 min) in 4\u201320% Tris-glycine gels (Invitrogen) and transferred (100 V, 1 hr, 4 \u00b0C) onto PVDF membranes (Bio-Rad). Blots were blocked in buffer containing 5% BSA (Cat#A9418, Sigma-Aldrich) in 1 X Tris-Buffered Saline and 0.1% Tween\u201320 for 1 hr and incubated in primary antibodies (phospho-S6 Ser235/236, Cat#4858, RRID:AB_916156; total-S6, Cat#2317, RRID:AB_2238583; p-CREB, Cat#9198, RRID:AB_2561044; total-CREB, Cat#9104, RRIS:AB_490881; phospho-Akt Thr308, Cat#9275, RRID:AB_329828; total-Akt, Cat#9272, RRID:AB_329827; and Myc tag, Cat#2276, RRID:AB_2314825; Cell Signaling Technology) overnight at 4 \u00b0C and secondary antibodies (IRDye 800CW Goat anti-Rabbit IgG, Cat#926\u201332211, RRID:AB_621843 and IRDye 680RD Goat anti-Mouse IgG, Cat#926\u201368070, RRID:AB_10956588 LI-COR Biosciences) for 1 hr at room temperature. Blots were imaged with an Odyssey Imaging System and full lanes were analyzed using ImageJ.\n\n### Immunoprecipitation\n\nMyc-tagged wild-type (WT) and PKA-resistant mutant (Ser791Ala) Raptor vectors (Liu et al., 2016) were transfected into CHO-GLP-1R cells using lipofectamine-3000 (Invitrogen). Forty-eight hours later, cells were washed 2 X and maintained in serum-free media for 3 hr. Cells were treated with DMSO, H89 or MK-2207 for 30 min and treated with 1 X PBS, liraglutide, forskolin, or insulin for 1 hr at concentrations stated in the figure legend. Cells were washed once with ice-cold 1 X PBS and lysed in lysis buffer (25 mM Tris HCl, 131 150 mM NaCl, 1 \u00b5M EDTA, 1 \u00b5M EGTA, 2.5 mM sodium pyrophosphate, 100 mM sodium fluoride, 1 mM sodium orthovanadate) containing 1 X protease and phosphatase inhibitors. After centrifugation of cell homogenates (17,000xg, 10 min, 4 \u00b0C) supernatant protein concentration was determined by BCA protein assay. A total of 200 \u03bcg protein was incubated with anti\u2013c-Myc affinity gel (EZview Red Anti-c-Myc Affinity Gel, #E6654, Sigma-Aldrich) overnight. Beads were washed in lysis buffer and immunoblotting was done as described above using a PKA substrate monoclonal antibody (Cat#9624, Cell Signaling Technology).\n\n### Animals\n\nMice were kept on a 12 hr/12 hr light/dark cycle with ad libitum access to water and chow (5L0D, LabDiet) from weaning and were studied at 12\u201316 weeks old. Procedures were approved by the Institutional Animal Care and Use Committee at Vanderbilt University (Protocol #M1500158). Ser791Ala Raptor knock-in mice were generated by inGenious Targeting Laboratory Inc using the targeting vector shown in Figure 3\u2014figure supplement 2. The indicated loxP sites were engineered into the genomic DNA and a two base pair point mutation was introduced into a second inverted exon 20 of the Raptor coding sequence to change the codon for Ser at position 791 to Ala. Raptorfl/fl mice (013188, The Jackson Laboratory) were crossed to mice expressing the Ingenious construct, and offspring were then crossed to CMV-Cre (006054, The Jackson Laboratory) mice to generate hemizygous wild-type mice or hemizygous mice with global knock-in of Raptor Ser791Ala. This strategy was chosen because the Ingenious construct in homozygosity prior to Cre recombinase inadvertently created a hairpin loop in the transcript between the two exon 20 regions that was spliced out. Genotyping and cDNA sequencing confirmed expression of Ser791Ala Raptor in place of endogenous Raptor (Figure 3, Figure 3\u2014figure supplement 2). Male mice were switched to either a low-fat diet (D12450J, Research Diets, Inc) for 4 weeks or a 60% HFD (D12492, Research Diets, Inc) for 8\u201310 weeks prior to initiation of dosing. Mice were maintained on the low-fat diet and were administered vehicle (0.9% saline), liraglutide (200 \u03bcg/kg body weight, BID), or setmelanotide (4 mg/kg body weight once daily) subcutaneously for 9\u201314 days. Body weight was measured daily, and body composition was obtained by NMR (Minispec 235 LF90II-TD NMR Analyzer, Bruker) prior to and on the last day of dosing. Four hours fasting blood glucose and insulin levels were measured using a Contour Next EZ glucose meter (Cat#BD15789, Bayer) and an Ultra Sensitive Mouse Insulin ELISA kit (Crystal Chem), respectively. A separate cohort of male mice was acclimated to a Promethion System (Sable Systems International, Inc) for one week prior to undergoing dosing with vehicle or liraglutide as described above for 10 days. Food intake and energy expenditure were measured continuously.\n\n### Data analysis\n\nData were analyzed using Prism-9 (GraphPad Software, Inc). One-way or two-way ANOVA or mixed-effects analysis followed by Tukey\u2019s, Holm-Sidak\u2019s, or Brown-Forsythe multiple comparisons was used when appropriate and indicated in the figure legends. Linear regression analysis was also used as indicated in the figure legends. Sample size was determined based on the variability of the primary measurements of interest (phosphorylation of S6 for cell culture studies and body weight for in vivo studies) and the objective of detecting significance (p<0.05) with 90% certainty. Treatments were randomized and blinded to the experimenter when possible.\n",
+      "created_at": "2025-12-04T03:44:22.529163Z"
+    },
+    {
+      "id": "4834f52f-8842-4d1a-a743-0b61bfe3a965",
+      "submission_id": "6842f1d0-6242-4602-906c-4278b3da09e4",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Christoph Buettner, https://ror.org/05vt9qd57 Rutgers Robert Wood Johnson Medical School United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.80944.sa0](https://doi.org/10.7554/eLife.80944.sa0)\n\nThis manuscript provides support for the importance of PKA-dependent mTORC1 activation for the weight-loss effects of Liraglutide, and presumably many GPCR-dependent anorectic agents, while not affecting the food intake-reducing effects of the MC4Ractivator setmelanotide. The weight loss effect of liraglutide however was not impaired after HFD feeding, a model of obesity where GLP1 agonists are being used.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Christoph Buettner, https://ror.org/05vt9qd57 Rutgers Robert Wood Johnson Medical School United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.80944.sa1](https://doi.org/10.7554/eLife.80944.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Glucagon-Like Peptide-1 Receptor Activation Stimulates PKA-Mediated Phosphorylation of Raptor and this Contributes to the Weight Loss Effect of Liraglutide\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Mone Zaidi as the Senior Editor. The following individuals involved in the review of your submission have agreed to reveal their identity: Daniela Cota (Reviewer #2); Hongxia Ren (Reviewer #3).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\nThe reviewers agreed that the paper has potential, but the authors will need to provide substantial new data to answer the reviewers' concerns.\n\n1) Specifically, provide a comprehensive characterization of the mouse model in addition to the studies provided.\n\n2) Demonstrate specificity of the weight-loss effects to GPCR-PKA signaling.\n\n3) Provide a more comprehensive analysis of the changes in energy expenditure and provide a more comprehensive metabolic phenotyping (insulin levels etc).\n\nReviewer #1 (Recommendations for the authors):\n\n1. While I understand that the authors intend to publish a full characterization of the model elsewhere, it is impossible to evaluate the results of this manuscript without some information on the genetics of the model, and some data showing the expression of the mutant, however. The authors could add some more detail about the mouse model to this manuscript and send the manuscript describing the model in more detail for the reviewers to examine.\n\n2. The authors should examine the normal regulation of feeding/body weight by non-GPCR-dependent agents (e.g., leptin, GDF15, or many others). They would want to examine the effects of these on PKA/pS6 in cultured cells, as well.\n\n3. The authors should provide direct comparisons of the various conditions, rather than normalizing to individual baseline measurements.\n\nReviewer #2 (Recommendations for the authors):\n\n1. The authors claim that the difference in efficacy in weight loss in WT vs raptor mutants treated with Liraglutide is due to a very minor difference in food intake during the second day of treatment. By looking at the data, the sustained weight difference cannot be due to a very transitory difference in food intake, which by the end of the treatment has become comparable to the food intake of vehicle-treated mice. Authors should investigate changes in energy expenditure.\n\n2. Related to the above, previously published evidence suggests that central GLP1R agonism stimulates thermogenesis by recruiting the sympathetic nervous system (see Kooijman et al., Diabetologia 2015). It would be relevant to assess whether recruitment of the SNS is impaired in the Raptor mutant mice under liraglutide treatment. Authors could assess molecular changes for SNS markers and markers of increased thermogenesis in the brown adipose tissue and in the white adipose tissue. Authors could also assess possible differences in cold-induced SNS activity in their model.\n\n3. It is unclear why the authors did not test the relevance of their observations by inducing diet-induced obesity in their mouse model. Does the raptor mutant have a specific phenotype under diet-induced obesity?\n\n4. Liraglutide importantly impacts glucose metabolism. Here the authors show that 2-weeks Liraglutide treatment decreases fasting glucose levels independent of genotype. The authors however do not provide any information neither on insulin levels or on insulin sensitivity in their animal model. The mTOR pathway (including raptor) is an important funneling site of the molecular action of insulin. The fact that fasting glucose is decreased similarly in WT and mutant mice, does not preclude possible changes in fasting insulin or during dynamic tests (insulin tolerance tests).\n\n5. Statistical analyses carried out in figure 3 do not consider as independent factors the treatment and the genotype. Authors need to carry out 2-way anovas. Only if there is an interaction, the authors can conclude that for instance the total body mass (Figure 3C) or fat mass (Figure 3E) is different between liraglutide-treated WT and mutant mice.\n\n[Editors\u2019 note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Glucagon-Like Peptide-1 Receptor Activation Stimulates PKA-Mediated Phosphorylation of Raptor and this Contributes to the Weight Loss Effect of Liraglutide\" for further consideration by eLife. Your revised article has been evaluated by Mone Zaidi (Senior Editor) and a Reviewing Editor.\n\nThe manuscript has been improved but there are some remaining issues that need to be addressed, as outlined below:\n\nAll three reviewers and the reviewing editor feel that the revision only partly addressed the concerns raised. Specifically, the work lacks studies in diet-induced obesity which are required to explain the therapeutic mechanisms of GLP1 agonists, the failure to examine the anorectic response to other GPCR agonists to establish the specificity of the phosphorylation site for GLP1's signaling/effects versus that of other signaling pathways as the latter is what the authors imply.\n\nReviewer #1 (Recommendations for the authors):\n\nThe authors have made several useful changes to this revised manuscript, including adding additional information about the genesis of their mouse model. The validation remains a bit less complete than one would like, however- in the methods the authors state that they have sequenced the cDNA from these mice and refer to Supplemental Figure 1B, but the data are not provided here (or elsewhere).\n\nI am also disappointed that the authors have not examined the anorectic response to other agents, as this would provide a useful and important control for the specificity of the phosphorylation site for Lira (or other GPCR agonists).\n\nReviewer #2 (Recommendations for the authors):\n\nThe authors have only partly addressed the concerns of this reviewer.\n\nIn particular, although already pointed out by this reviewer, the authors have decided to not carry out studies under diet-induced obesity. This reduces the interest for the data in their present form, which remain preliminary.\n\nLiraglutide is used for weight loss in patients suffering from obesity and not to induce weight loss in lean individuals. The observations provided are made in non-obese mice. Whether what the authors observe still stands true in obesity and helps explain the therapeutic action of liraglutide remains to be demonstrated.\n\nIt is possible that mutant mice may have per se a phenotype in DIO, and this information would be relevant. Whether under DIO, mutant mice would respond similarly or differently from WT mice to Liraglutide would also be relevant information, even if this is a whole-body and not a cell-specific mutant, a limitation that could then be discussed by the authors.\n\nReviewer #3 (Recommendations for the authors):\n\nThe authors have made an effort to address the reviewers' comments. As a result, the quality of the manuscript was improved. However, the reviewer has the following questions to be further clarified.\n\n1. Appropriate method of statistical analysis needs to be used for results presented in Figure 1 and the accompanying supplemental figure. The reviewer suggests to use 2-way ANOVA instead.\n\n2. For signaling experiments using chemical probes, it is necessary to show the time course of the signaling dynamics and dose-dependent effect (as opposed to demonstrate the result using single dose and single time point).\n",
+      "created_at": "2025-12-04T03:44:22.529163Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T03:44:22.529163Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T03:44:22.529163Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "c2dcb0fc-d2dc-474d-9727-09b7959117c9",
+      "content_id": "fb130db2-5e00-44df-8cac-a36af4c853ea",
+      "claim_id": "C1",
+      "claim": "PKA has been shown to stimulate mTORC1 by phosphorylating Raptor at Ser791 following \u03b2-adrenergic stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "The canonical target of the glucagon-like peptide-1 receptor (GLP-1R), Protein Kinase A (PKA), has been shown to stimulate mechanistic Target of Rapamycin Complex 1 (mTORC1) by phosphorylating the mTOR-regulating protein Raptor at Ser791 following \u03b2-adrenergic stimulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work, as indicated by the context of the abstract referencing established knowledge.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:44:22.529163Z"
+    },
+    {
+      "id": "641bb387-dd82-42e1-bcf1-9fd640db093b",
+      "content_id": "fb130db2-5e00-44df-8cac-a36af4c853ea",
+      "claim_id": "C2",
+      "claim": "Liraglutide increases phosphorylation of S6 in CHO-GLP-1R cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to Ex4 (Brown et al., 2018; Burmeister et al., 2017), liraglutide increases phosphorylation of the mTORC1 signaling target ribosomal protein S6 in CHO-GLP-1R cells, and this is blocked by the mTORC1 inhibitor rapamycin (Figure 1A; Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 1A and Figure 1\u2014figure supplement 1, and references prior work with Ex4.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:44:22.529163Z"
+    },
+    {
+      "id": "f33c57ac-8695-407e-9e1b-0d358533719f",
+      "content_id": "fb130db2-5e00-44df-8cac-a36af4c853ea",
+      "claim_id": "C3",
+      "claim": "Rapamycin blocks liraglutide-induced phosphorylation of S6 in CHO-GLP-1R cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to Ex4 (Brown et al., 2018; Burmeister et al., 2017), liraglutide increases phosphorylation of the mTORC1 signaling target ribosomal protein S6 in CHO-GLP-1R cells, and this is blocked by the mTORC1 inhibitor rapamycin (Figure 1A; Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 1A and Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:44:22.529163Z"
+    },
+    {
+      "id": "1e3e55f4-407b-4731-acb1-287b912fda86",
+      "content_id": "fb130db2-5e00-44df-8cac-a36af4c853ea",
+      "claim_id": "C4",
+      "claim": "The PKA inhibitor H89 blocks S6 phosphorylation by liraglutide.",
+      "claim_type": "EXPLICIT",
+      "source": "The PKA inhibitor H89 also blocks S6 phosphorylation by liraglutide or the adenylyl cyclase/PKA activator forskolin (Figure 1B; Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 1B and Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:44:22.529163Z"
+    },
+    {
+      "id": "6f5d0523-be8f-42a0-9770-c807f9b3a9f8",
+      "content_id": "fb130db2-5e00-44df-8cac-a36af4c853ea",
+      "claim_id": "C5",
+      "claim": "H89 has off-target effects including inhibiting the S6 kinase p70S6K.",
+      "claim_type": "EXPLICIT",
+      "source": "However, H89 has some off-target effects including inhibiting the S6 kinase p70S6K (Davies et al., 2000), likely explaining why H89 inhibits S6 phosphorylation by insulin (Figure 1B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Davies et al., 2000.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:44:22.529163Z"
+    },
+    {
+      "id": "a55c094e-0cec-4dbb-9d4a-8c0211b1384a",
+      "content_id": "fb130db2-5e00-44df-8cac-a36af4c853ea",
+      "claim_id": "C6",
+      "claim": "H89 inhibits S6 phosphorylation by insulin.",
+      "claim_type": "EXPLICIT",
+      "source": "However, H89 has some off-target effects including inhibiting the S6 kinase p70S6K (Davies et al., 2000), likely explaining why H89 inhibits S6 phosphorylation by insulin (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:44:22.529163Z"
+    },
+    {
+      "id": "d406d6b1-108e-4882-8895-63e012804732",
+      "content_id": "fb130db2-5e00-44df-8cac-a36af4c853ea",
+      "claim_id": "C7",
+      "claim": "KT5720 is a PKA inhibitor with minimal off-target effects on p70S6K.",
+      "claim_type": "EXPLICIT",
+      "source": "KT5720, a PKA inhibitor with minimal off-target effects on p70S6K (Davies et al., 2000), also reduces liraglutide- and forskolin-induced phosphorylation of S6 and the PKA target CREB in a dose-dependent manner (Figure 1C; Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Davies et al., 2000.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:44:22.529163Z"
+    },
+    {
+      "id": "f7dec655-4d33-4970-9e07-50a4a0cfc0a0",
+      "content_id": "fb130db2-5e00-44df-8cac-a36af4c853ea",
+      "claim_id": "C8",
+      "claim": "KT5720 reduces liraglutide-induced phosphorylation of S6 in a dose-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "KT5720, a PKA inhibitor with minimal off-target effects on p70S6K (Davies et al., 2000), also reduces liraglutide- and forskolin-induced phosphorylation of S6 and the PKA target CREB in a dose-dependent manner (Figure 1C; Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 1C and Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:44:22.529163Z"
+    },
+    {
+      "id": "af2c66c0-4530-4f72-b539-0392a0ff6bdc",
+      "content_id": "fb130db2-5e00-44df-8cac-a36af4c853ea",
+      "claim_id": "C9",
+      "claim": "KT5720 does not affect S6 phosphorylation by insulin.",
+      "claim_type": "EXPLICIT",
+      "source": "Neither dose of KT5720 affected S6 phosphorylation by insulin (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:44:22.529163Z"
+    },
+    {
+      "id": "0d0b0ebf-9cbf-4d94-b35e-1dc70187d61c",
+      "content_id": "fb130db2-5e00-44df-8cac-a36af4c853ea",
+      "claim_id": "C10",
+      "claim": "The pan-Akt inhibitor MK-2206 does not affect stimulation of mTORC1 activity by liraglutide.",
+      "claim_type": "EXPLICIT",
+      "source": "Two doses of the pan-Akt inhibitor MK-2206 that block insulin-stimulated Akt phosphorylation did not affect stimulation of mTORC1 activity by liraglutide (Figure 1D; Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 1D and Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:44:22.529163Z"
+    },
+    {
+      "id": "eeadc500-a0d8-4260-8814-7f25352bc336",
+      "content_id": "fb130db2-5e00-44df-8cac-a36af4c853ea",
+      "claim_id": "C11",
+      "claim": "Liraglutide stimulates mTORC1 signaling in a PKA-dependent and Akt-independent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "These data suggest that liraglutide stimulates mTORC1 signaling in a PKA-dependent and Akt-independent manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the experimental data presented in Figure 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:44:22.529163Z"
+    },
+    {
+      "id": "27ae7770-0707-4c9e-ba1c-e75b0ca6b3ad",
+      "content_id": "fb130db2-5e00-44df-8cac-a36af4c853ea",
+      "claim_id": "C12",
+      "claim": "The catalytic subunit of PKA directly phosphorylates Ser791 of Raptor.",
+      "claim_type": "EXPLICIT",
+      "source": "The catalytic subunit of PKA directly phosphorylates Ser791 of Raptor (Liu et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Liu et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:44:22.529163Z"
+    },
+    {
+      "id": "68ac340f-7ae8-4ab4-9290-f50ba80ccf2e",
+      "content_id": "fb130db2-5e00-44df-8cac-a36af4c853ea",
+      "claim_id": "C13",
+      "claim": "Liraglutide increases PKA motif phosphorylation on Myc-WT Raptor in a PKA-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Using an antibody against the PKA motif RRXS*/T*, immunoblotting of immunoprecipitated Myc-proteins shows that liraglutide and forskolin increase PKA motif phosphorylation on Myc-WT Raptor in a PKA-dependent manner (blocked by H89), but liraglutide fails to increase PKA motif phosphorylation on Myc-Ser791Ala Raptor (Figure 2A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 2A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:44:22.529163Z"
+    },
+    {
+      "id": "97a1e04f-4687-4cf7-9bcf-c7a2600c77a0",
+      "content_id": "fb130db2-5e00-44df-8cac-a36af4c853ea",
+      "claim_id": "C14",
+      "claim": "Liraglutide fails to increase PKA motif phosphorylation on Myc-Ser791Ala Raptor.",
+      "claim_type": "EXPLICIT",
+      "source": "Using an antibody against the PKA motif RRXS*/T*, immunoblotting of immunoprecipitated Myc-proteins shows that liraglutide and forskolin increase PKA motif phosphorylation on Myc-WT Raptor in a PKA-dependent manner (blocked by H89), but liraglutide fails to increase PKA motif phosphorylation on Myc-Ser791Ala Raptor (Figure 2A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 2A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:44:22.529163Z"
+    },
+    {
+      "id": "0b0627b6-acaa-4392-8eb5-25043c0d524e",
+      "content_id": "fb130db2-5e00-44df-8cac-a36af4c853ea",
+      "claim_id": "C15",
+      "claim": "Liraglutide-induced PKA motif phosphorylation of Raptor was observed in \u03b2-TC3 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "This was also observed in \u03b2-TC3 cells, an immortalized \u03b2-cell line endogenously expressing the GLP-1R (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:44:22.529163Z"
+    },
+    {
+      "id": "36ebf160-a83f-48ad-86a5-89f39cce7d90",
+      "content_id": "fb130db2-5e00-44df-8cac-a36af4c853ea",
+      "claim_id": "C16",
+      "claim": "A high concentration of the Akt inhibitor MK-2206 (20 \u03bcM) did not affect liraglutide-induced PKA motif phosphorylation of Raptor in CHO-GLP-1R cells.",
+      "claim_type": "EXPLICIT",
+      "source": "A high concentration of the Akt inhibitor MK-2206 (20 \u03bcM) did not affect liraglutide-induced PKA motif phosphorylation of Raptor in CHO-GLP-1R (Figure 2A and B) or \u03b2-TC3 (Figure 2C) cells.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 2A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:44:22.529163Z"
+    },
+    {
+      "id": "5efd1773-c478-461e-8165-fd708c993c79",
+      "content_id": "fb130db2-5e00-44df-8cac-a36af4c853ea",
+      "claim_id": "C17",
+      "claim": "Liraglutide stimulates PKA phosphorylation of Raptor at Ser791.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, liraglutide stimulates PKA phosphorylation of Raptor at Ser791.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the experimental data presented in Figure 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:44:22.529163Z"
+    },
+    {
+      "id": "9e0c06aa-4cbd-4570-8cc9-1eb180075b9c",
+      "content_id": "fb130db2-5e00-44df-8cac-a36af4c853ea",
+      "claim_id": "C18",
+      "claim": "Liraglutide-induced weight loss was attenuated in CMV-Ser791Ala Raptor knock-in mice compared to WT mice.",
+      "claim_type": "EXPLICIT",
+      "source": "WT and CMV-Ser791Ala Raptor knock-in mice lost weight in response to liraglutide treatment, but liraglutide-induced weight loss was attenuated in the CMV-Ser791Ala Raptor knock-in mice (Figure 3A\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 3A\u2013D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:44:22.529163Z"
+    },
+    {
+      "id": "db9b5f9a-92e7-4ac3-9d95-612e7a760f85",
+      "content_id": "fb130db2-5e00-44df-8cac-a36af4c853ea",
+      "claim_id": "C19",
+      "claim": "Liraglutide-treated CMV-Ser791Ala Raptor knock-in mice had a lesser reduction in fat mass compared to WT mice.",
+      "claim_type": "EXPLICIT",
+      "source": "This was primarily due to a lesser reduction in fat mass in liraglutide-treated CMV-Ser791Ala Raptor knock-in compared to WT mice (Figure 3E\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 3E\u2013F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:44:22.529163Z"
+    },
+    {
+      "id": "6e7b91c5-7ab4-44f7-a705-3eccebb55be9",
+      "content_id": "fb130db2-5e00-44df-8cac-a36af4c853ea",
+      "claim_id": "C20",
+      "claim": "There was no significant difference between genotypes in the ability of liraglutide to reduce lean mass.",
+      "claim_type": "EXPLICIT",
+      "source": "There was no significant difference between genotypes in the ability of liraglutide to reduce lean (Figure 3G\u2013H) or free fluid (not shown) mass.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 3G\u2013H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:44:22.529163Z"
+    },
+    {
+      "id": "6d6ddd09-f6b0-44f5-bec4-5cd2a0b814e9",
+      "content_id": "fb130db2-5e00-44df-8cac-a36af4c853ea",
+      "claim_id": "C21",
+      "claim": "Food intake was equally suppressed in WT and CMV-Ser791Ala Raptor knock-in mice during the first day of liraglutide treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Metabolic cage experiments demonstrate that food intake was equally suppressed in WT and CMV-Ser791Ala Raptor knock-in mice during the first day of liraglutide treatment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data from metabolic cage experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:44:22.529163Z"
+    },
+    {
+      "id": "65493997-908c-4352-859a-263ad1ff036f",
+      "content_id": "fb130db2-5e00-44df-8cac-a36af4c853ea",
+      "claim_id": "C22",
+      "claim": "Food intake returned to pre-liraglutide treatment levels in CMV-Ser791Ala Raptor knock-in mice by the second day of treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "However, food intake returned to pre-liraglutide treatment levels in CMV-Ser791Ala Raptor knock-in mice by the second day of treatment whereas they did not return to pre-liraglutide treatment levels in WT mice until the fifth day of dosing (Figure 3I\u2013J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 3I\u2013J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:44:22.529163Z"
+    },
+    {
+      "id": "3d15b981-9e17-4056-be52-4e88832f531b",
+      "content_id": "fb130db2-5e00-44df-8cac-a36af4c853ea",
+      "claim_id": "C23",
+      "claim": "Energy expenditure decreased in response to liraglutide in both WT and CMV-Ser791Ala Raptor knock-in mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Energy expenditure (EE) decreased in response to liraglutide in both genotypes and remained significantly lower in CMV-Ser791Ala Raptor knock-in mice compared to their vehicle counterparts for up to 8 days of dosing (Figure 3K\u2013L).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 3K\u2013L.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:44:22.529163Z"
+    },
+    {
+      "id": "dbe8de16-ca6a-47bd-8444-7f5f2953c7a9",
+      "content_id": "fb130db2-5e00-44df-8cac-a36af4c853ea",
+      "claim_id": "C24",
+      "claim": "Energy expenditure remained significantly lower in liraglutide-treated CMV-Ser791Ala Raptor knock-in mice compared to their vehicle counterparts for up to 8 days of dosing.",
+      "claim_type": "EXPLICIT",
+      "source": "Energy expenditure (EE) decreased in response to liraglutide in both genotypes and remained significantly lower in CMV-Ser791Ala Raptor knock-in mice compared to their vehicle counterparts for up to 8 days of dosing (Figure 3K\u2013L).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 3K\u2013L.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:44:22.529163Z"
+    },
+    {
+      "id": "828b8590-7f58-442f-84ab-6e4ef5115e02",
+      "content_id": "fb130db2-5e00-44df-8cac-a36af4c853ea",
+      "claim_id": "C25",
+      "claim": "In WT mice, energy expenditure only remained lower in liraglutide-treated mice for 3 days.",
+      "claim_type": "EXPLICIT",
+      "source": "In WT mice, EE only remained lower in liraglutide-treated mice for 3 days (Figure 3K\u2013L).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 3K\u2013L.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:44:22.529163Z"
+    },
+    {
+      "id": "ad374461-aae5-4315-bdc2-ee03b6919400",
+      "content_id": "fb130db2-5e00-44df-8cac-a36af4c853ea",
+      "claim_id": "C26",
+      "claim": "Phosphorylation of Raptor at Ser791 is required for the full body weight-lowering effect of liraglutide via regulation of both food intake and energy expenditure.",
+      "claim_type": "EXPLICIT",
+      "source": "These data suggest that phosphorylation of Raptor at Ser791 is required for the full body weight-lowering effect of liraglutide via regulation of both food intake and EE.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the experimental data presented in Figure 3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:44:22.529163Z"
+    },
+    {
+      "id": "1cbaa580-4232-4786-a0db-fd5362ae8eb0",
+      "content_id": "fb130db2-5e00-44df-8cac-a36af4c853ea",
+      "claim_id": "C27",
+      "claim": "There was no difference between genotypes in fasting blood glucose prior to liraglutide treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "There was no difference between genotypes in fasting blood glucose prior to liraglutide treatment (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:44:22.529163Z"
+    },
+    {
+      "id": "c4a8e04f-225e-45ac-b98e-2df57582497e",
+      "content_id": "fb130db2-5e00-44df-8cac-a36af4c853ea",
+      "claim_id": "C28",
+      "claim": "Two weeks of liraglutide treatment lowered fasting glucose to similar degrees in both WT and CMV-Ser791Ala Raptor knock-in mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Two weeks of liraglutide treatment lowered fasting glucose to similar degrees in both genotypes, and there was no difference in fasting plasma insulin levels (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:44:22.529163Z"
+    },
+    {
+      "id": "122e146f-7230-4149-a0e6-139b42b90b1c",
+      "content_id": "fb130db2-5e00-44df-8cac-a36af4c853ea",
+      "claim_id": "C29",
+      "claim": "There was no difference in fasting plasma insulin levels between WT and CMV-Ser791Ala Raptor knock-in mice after two weeks of liraglutide treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Two weeks of liraglutide treatment lowered fasting glucose to similar degrees in both genotypes, and there was no difference in fasting plasma insulin levels (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:44:22.529163Z"
+    },
+    {
+      "id": "3d225ec6-22e6-4222-a377-fd445d4ffc6b",
+      "content_id": "fb130db2-5e00-44df-8cac-a36af4c853ea",
+      "claim_id": "C30",
+      "claim": "Obese CMV-Ser791Ala mice were not significantly protected from weight loss induced by liraglutide.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike lean mice, obese CMV-Ser791Ala mice were not significantly protected from weight loss induced by liraglutide (Figure 4A\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 4A\u2013D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:44:22.529163Z"
+    },
+    {
+      "id": "e21539d4-d427-44d9-a6a8-99b14e1cbef2",
+      "content_id": "fb130db2-5e00-44df-8cac-a36af4c853ea",
+      "claim_id": "C31",
+      "claim": "CMV-Ser791Ala mice gained significantly more weight when fed the 60% HFD prior to liraglutide treatment compared to wild-type mice.",
+      "claim_type": "EXPLICIT",
+      "source": "One caveat to interpreting these results is that CMV-Ser791Ala mice gained significantly more weight and fat mass when fed the 60% HFD prior to liraglutide treatment compared to wild-type mice (Figure 4C and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 4C and E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:44:22.529163Z"
+    },
+    {
+      "id": "823ff746-e4b5-4a3b-8c99-5179e5ad62fe",
+      "content_id": "fb130db2-5e00-44df-8cac-a36af4c853ea",
+      "claim_id": "C32",
+      "claim": "Mice with higher baseline body weight tend to lose more weight in response to liraglutide.",
+      "claim_type": "EXPLICIT",
+      "source": "We have anecdotally observed that mice with higher baseline body weight and fat mass tend to lose more weight in response to liraglutide. We now support this by showing a positive correlation between starting body weight and liraglutide-induced weight loss in both wild-type and CMV-Ser791Ala mice (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:44:22.529163Z"
+    },
+    {
+      "id": "5ca7e989-b180-4e59-85ba-6c4be61b4034",
+      "content_id": "fb130db2-5e00-44df-8cac-a36af4c853ea",
+      "claim_id": "C33",
+      "claim": "There is a positive correlation between starting body weight and liraglutide-induced weight loss in both wild-type and CMV-Ser791Ala mice.",
+      "claim_type": "EXPLICIT",
+      "source": "We now support this by showing a positive correlation between starting body weight and liraglutide-induced weight loss in both wild-type and CMV-Ser791Ala mice (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:44:22.529163Z"
+    },
+    {
+      "id": "76ff8894-fb6e-446d-abdb-a07642657cc6",
+      "content_id": "fb130db2-5e00-44df-8cac-a36af4c853ea",
+      "claim_id": "C34",
+      "claim": "There was no difference in liraglutide-induced weight loss between wild-type and CMV-Ser791Ala mice in mice with baseline body weights above 43.4 g.",
+      "claim_type": "EXPLICIT",
+      "source": "There was no difference in liraglutide-induced weight loss between wild-type and CMV-Ser791Ala mice in mice with baseline body weights above 43.4 g (Figure 4I\u2013J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 4I\u2013J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:44:22.529163Z"
+    },
+    {
+      "id": "e846784e-9e3e-40cc-b7b6-0976ceb83b0f",
+      "content_id": "fb130db2-5e00-44df-8cac-a36af4c853ea",
+      "claim_id": "C35",
+      "claim": "In mice with baseline body weights below 43.4 g, there was a tendency for CMV-Ser791Ala mice to lose less body weight in response to liraglutide.",
+      "claim_type": "EXPLICIT",
+      "source": "In mice with baseline body weights below 43.4 g, there was a tendency for CMV-Ser791Ala mice to lose less body weight in response to liraglutide (Figure 4K\u2013L).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 4K\u2013L.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:44:22.529163Z"
+    },
+    {
+      "id": "7ba69de9-aebb-4f5e-8b3b-87a518bec7a5",
+      "content_id": "fb130db2-5e00-44df-8cac-a36af4c853ea",
+      "claim_id": "C36",
+      "claim": "PKA phosphorylation of Raptor may contribute to liraglutide-induced weight loss in obese mice below a certain threshold body weight.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that PKA phosphorylation of Raptor may contribute to liraglutide-induced weight loss in obese mice below a certain threshold body weight.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the experimental data presented in Figure 4.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:44:22.529163Z"
+    },
+    {
+      "id": "4d75022b-bbda-4ecd-aa06-eae653572009",
+      "content_id": "fb130db2-5e00-44df-8cac-a36af4c853ea",
+      "claim_id": "C37",
+      "claim": "CMV-Ser791Ala Raptor knock-in mice were not resistant to weight loss in response to setmelanotide.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 5, CMV-Ser791Ala Raptor knock-in mice were not resistant to weight loss in response to setmelanotide.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:44:22.529163Z"
+    },
+    {
+      "id": "6923ad72-827f-4f74-b713-ae60355ed9a5",
+      "content_id": "fb130db2-5e00-44df-8cac-a36af4c853ea",
+      "claim_id": "C38",
+      "claim": "Raptor phosphorylation at Ser791 by PKA contributes to the weight loss effect of GLP-1R agonists but not setmelanotide.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that Raptor phosphorylation at Ser791 by PKA contributes to the weight loss effect of GLP-1R agonists but not another G\u03b1s-targeting pharmacological agent such as setmelanotide.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the experimental data presented in Figure 5.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:44:22.529163Z"
+    },
+    {
+      "id": "0631d883-fc12-45cf-bc14-f19fc4b51ac0",
+      "content_id": "fb130db2-5e00-44df-8cac-a36af4c853ea",
+      "claim_id": "C39",
+      "claim": "GLP-1R agonists reduce food intake and body weight and are approved for weight loss.",
+      "claim_type": "EXPLICIT",
+      "source": "Glucagon-like peptide-1 (GLP-1) receptor (GLP-1R) agonists reduce food intake and body weight and are approved for weight loss (Drucker, 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Drucker, 2022.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:44:22.529163Z"
+    },
+    {
+      "id": "47f00f12-43ff-43dc-9148-1b02e3d80209",
+      "content_id": "fb130db2-5e00-44df-8cac-a36af4c853ea",
+      "claim_id": "C40",
+      "claim": "Exendin-4 stimulates mTORC1 signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "We have shown that the GLP-1R agonist Exendin-4 (Ex4) stimulates mechanistic Target of Rapamycin (mTOR) Complex-1 (mTORC1) signaling and that inhibition of mTORC1 signaling in the ventromedial hypothalamus (VMH) with rapamycin blocks the anorectic effect induced by Ex4 in this nucleus (Brown et al., 2018; Burmeister et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Brown et al., 2018 and Burmeister et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:44:22.529163Z"
+    },
+    {
+      "id": "6e3831a7-0608-4308-9e26-26560d987cc6",
+      "content_id": "fb130db2-5e00-44df-8cac-a36af4c853ea",
+      "claim_id": "C41",
+      "claim": "Inhibition of mTORC1 signaling in the ventromedial hypothalamus with rapamycin blocks the anorectic effect induced by Exendin-4.",
+      "claim_type": "EXPLICIT",
+      "source": "We have shown that the GLP-1R agonist Exendin-4 (Ex4) stimulates mechanistic Target of Rapamycin (mTOR) Complex-1 (mTORC1) signaling and that inhibition of mTORC1 signaling in the ventromedial hypothalamus (VMH) with rapamycin blocks the anorectic effect induced by Ex4 in this nucleus (Brown et al., 2018; Burmeister et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Brown et al., 2018 and Burmeister et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:44:22.529163Z"
+    },
+    {
+      "id": "08a0654c-7f82-41c7-88c5-4b90c7e4454c",
+      "content_id": "fb130db2-5e00-44df-8cac-a36af4c853ea",
+      "claim_id": "C42",
+      "claim": "mTOR is a Ser/Thr protein kinase that forms two complexes: mTORC1 and mTOR complex 2 (mTORC2).",
+      "claim_type": "EXPLICIT",
+      "source": "mTOR is a Ser/Thr protein kinase that forms two complexes: mTORC1 and mTOR complex 2 (mTORC2; Saxton and Sabatini, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Saxton and Sabatini, 2017.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:44:22.529163Z"
+    },
+    {
+      "id": "22eb123f-f057-4f6c-83df-35faed2a7b30",
+      "content_id": "fb130db2-5e00-44df-8cac-a36af4c853ea",
+      "claim_id": "C43",
+      "claim": "The rapamycin-sensitive mTORC1 has unique accessory proteins including Raptor.",
+      "claim_type": "EXPLICIT",
+      "source": "The rapamycin-sensitive mTORC1 has unique accessory proteins including Raptor (regulatory associated protein of mTOR).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established scientific knowledge about mTORC1 composition.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:44:22.529163Z"
+    },
+    {
+      "id": "00fc0d47-65c9-4fdc-adfc-22bb16ce6a09",
+      "content_id": "fb130db2-5e00-44df-8cac-a36af4c853ea",
+      "claim_id": "C44",
+      "claim": "mTORC1 activity is stimulated by growth factors, nutrients, and hormones by promoting PI3K/Akt-mediated phosphorylation of tuberous sclerosis complex 1/2 (TSC1/2).",
+      "claim_type": "EXPLICIT",
+      "source": "mTORC1 activity is stimulated by growth factors, nutrients, and hormones by promoting PI3K/Akt-mediated phosphorylation of tuberous sclerosis complex 1/2 (TSC1/2) (Kim et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Kim et al., 2002.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:44:22.529163Z"
+    },
+    {
+      "id": "07d6533a-161b-410d-a8c2-81e289b78c13",
+      "content_id": "fb130db2-5e00-44df-8cac-a36af4c853ea",
+      "claim_id": "C45",
+      "claim": "The GLP-1R is a G\u03b1s-coupled receptor that signals via protein kinase A (PKA).",
+      "claim_type": "EXPLICIT",
+      "source": "Activation of mTORC1 by GLP-1R agonists seemed unlikely since the GLP-1R is a G\u03b1s-coupled receptor that signals via protein kinase A (PKA; Thorens, 1992).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Thorens, 1992.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:44:22.529163Z"
+    },
+    {
+      "id": "837b9fcd-2dea-4486-a8c6-22d90bd1f24b",
+      "content_id": "fb130db2-5e00-44df-8cac-a36af4c853ea",
+      "claim_id": "C46",
+      "claim": "Activation of the G\u03b1s-coupled \u03b2-adrenergic receptor stimulates mTORC1 via Raptor phosphorylation by PKA.",
+      "claim_type": "EXPLICIT",
+      "source": "However, activation of the G\u03b1s-coupled \u03b2-adrenergic receptor stimulates mTORC1 via Raptor phosphorylation by PKA (Liu et al., 2016), suggesting that GLP-1R activation can similarly stimulate mTORC1 via PKA phosphorylation of Raptor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Liu et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:44:22.529163Z"
+    },
+    {
+      "id": "0d5094b5-e794-49b7-b8ab-fca64135665d",
+      "content_id": "fb130db2-5e00-44df-8cac-a36af4c853ea",
+      "claim_id": "C47",
+      "claim": "GLP-1R activation can stimulate mTORC1 via PKA phosphorylation of Raptor.",
+      "claim_type": "EXPLICIT",
+      "source": "However, activation of the G\u03b1s-coupled \u03b2-adrenergic receptor stimulates mTORC1 via Raptor phosphorylation by PKA (Liu et al., 2016), suggesting that GLP-1R activation can similarly stimulate mTORC1 via PKA phosphorylation of Raptor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the citation to Liu et al., 2016 and the similarity between \u03b2-adrenergic receptor and GLP-1R signaling.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:44:22.529163Z"
+    },
+    {
+      "id": "1d3c1eb7-a258-4fdc-9267-710850220aca",
+      "content_id": "fb130db2-5e00-44df-8cac-a36af4c853ea",
+      "claim_id": "C48",
+      "claim": "GLP-1R activation induces mTORC1 signaling and Raptor phosphorylation in a PKA-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we demonstrate that GLP-1R activation induces mTORC1 signaling and Raptor phosphorylation in a PKA-dependent manner and show that this contributes to weight loss by the therapeutic GLP-1R agonist liraglutide.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:44:22.529163Z"
+    },
+    {
+      "id": "af9fa18d-b0a5-41f3-ba7c-e140b33df042",
+      "content_id": "fb130db2-5e00-44df-8cac-a36af4c853ea",
+      "claim_id": "C49",
+      "claim": "PKA-mediated phosphorylation of Raptor contributes to weight loss by liraglutide.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we demonstrate that GLP-1R activation induces mTORC1 signaling and Raptor phosphorylation in a PKA-dependent manner and show that this contributes to weight loss by the therapeutic GLP-1R agonist liraglutide.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:44:22.529163Z"
+    },
+    {
+      "id": "90a46460-af16-409c-8763-84d920db8548",
+      "content_id": "fb130db2-5e00-44df-8cac-a36af4c853ea",
+      "claim_id": "C50",
+      "claim": "GLP-1R-stimulated mTORC1 signaling in the VMH reduces food intake.",
+      "claim_type": "EXPLICIT",
+      "source": "GLP-1R-stimulated mTORC1 signaling in the VMH reduces food intake (Burmeister et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Burmeister et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:44:22.529163Z"
+    },
+    {
+      "id": "dae50382-b2ee-47ec-93f5-b34d831ea335",
+      "content_id": "fb130db2-5e00-44df-8cac-a36af4c853ea",
+      "claim_id": "C52",
+      "claim": "PKA phosphorylates Raptor at Ser791 in response to liraglutide and this is responsible for ~50% of liraglutide-induced weight loss.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that PKA phosphorylates the mTORC1-regulatory protein Raptor at Ser791 in response to liraglutide and that this is responsible for ~50% of liraglutide-induced weight loss.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:44:22.529163Z"
+    },
+    {
+      "id": "6960b0a3-6fbe-47e2-ae6c-ecbab3c03cbb",
+      "content_id": "fb130db2-5e00-44df-8cac-a36af4c853ea",
+      "claim_id": "C53",
+      "claim": "PKA is reported to either stimulate or inhibit mTORC1 activity.",
+      "claim_type": "EXPLICIT",
+      "source": "PKA is reported to either stimulate (Liu et al., 2016) or inhibit (Jewell et al., 2019) mTORC1 activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Liu et al., 2016 and Jewell et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:44:22.529163Z"
+    },
+    {
+      "id": "ca26ac28-78d1-46da-a7cc-546f8d027664",
+      "content_id": "fb130db2-5e00-44df-8cac-a36af4c853ea",
+      "claim_id": "C54",
+      "claim": "Liu et al., 2016 show PKA-mediated stimulation of mTORC1 in cells incubated in serum-free media.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to our study, (Liu et al., 2016) show PKA-mediated stimulation of mTORC1 in cells incubated in serum-free media.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Liu et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:44:22.529163Z"
+    },
+    {
+      "id": "c51bf0bb-0f9c-4372-8c03-9089c5cd7bef",
+      "content_id": "fb130db2-5e00-44df-8cac-a36af4c853ea",
+      "claim_id": "C55",
+      "claim": "Jewell et al., 2019 reported inhibition of mTORC1 in cells cultured in serum-supplemented media.",
+      "claim_type": "EXPLICIT",
+      "source": "This contrasts with inhibition of mTORC1 in cells cultured in serum-supplemented media reported by Jewell et al., 2019.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Jewell et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:44:22.529163Z"
+    },
+    {
+      "id": "c3aa509e-9651-4285-9a5d-e670866ae790",
+      "content_id": "fb130db2-5e00-44df-8cac-a36af4c853ea",
+      "claim_id": "C56",
+      "claim": "PKA exerts differential actions on mTORC1 depending on nutrient availability or cellular signaling and energy status.",
+      "claim_type": "EXPLICIT",
+      "source": "Since mTORC1 is a cellular energy sensor, PKA exerts differential actions on mTORC1 depending on nutrient availability or cellular signaling and energy status, as originally shown by Scott and Lawrence, 1998 demonstrating that forskolin inhibits insulin-stimulated S6 phosphorylation and also subsequently shown by Liu and colleagues (Liu et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Scott and Lawrence, 1998 and Liu et al., 2016.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:44:22.529163Z"
+    },
+    {
+      "id": "0defd754-2e5c-4bda-8551-a1de6b94366b",
+      "content_id": "fb130db2-5e00-44df-8cac-a36af4c853ea",
+      "claim_id": "C57",
+      "claim": "Forskolin inhibits insulin-stimulated S6 phosphorylation.",
+      "claim_type": "EXPLICIT",
+      "source": "Since mTORC1 is a cellular energy sensor, PKA exerts differential actions on mTORC1 depending on nutrient availability or cellular signaling and energy status, as originally shown by Scott and Lawrence, 1998 demonstrating that forskolin inhibits insulin-stimulated S6 phosphorylation and also subsequently shown by Liu and colleagues (Liu et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Scott and Lawrence, 1998.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:44:22.529163Z"
+    },
+    {
+      "id": "4700f70c-cf54-4adb-be65-a4d03495f2f4",
+      "content_id": "fb130db2-5e00-44df-8cac-a36af4c853ea",
+      "claim_id": "C58",
+      "claim": "PKA phosphorylation of Raptor contributes to the weight loss effect of liraglutide in lean but not in obese mice.",
+      "claim_type": "EXPLICIT",
+      "source": "In vivo results using novel PKA-resistant Raptor knockin mice suggest that PKA phosphorylation of Raptor contributes to the weight loss effect of liraglutide in lean but not in obese mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:44:22.529163Z"
+    },
+    {
+      "id": "108344d5-fb75-48d8-9a13-2672ec0ff33c",
+      "content_id": "fb130db2-5e00-44df-8cac-a36af4c853ea",
+      "claim_id": "C59",
+      "claim": "CMV-Ser791Ala mice gained significantly more weight on the HFD compared to control mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Loss of PKA phosphorylation of Raptor in one or multiple tissues may contribute to our observation that CMV-Ser791Ala mice gained significantly more weight on the HFD compared to control mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:44:22.529163Z"
+    },
+    {
+      "id": "b2746c5e-70c7-4a3a-9779-e20182b3af4d",
+      "content_id": "fb130db2-5e00-44df-8cac-a36af4c853ea",
+      "claim_id": "C60",
+      "claim": "Heavier mice tend to be more responsive to liraglutide.",
+      "claim_type": "EXPLICIT",
+      "source": "This difference in starting body weight could explain why liraglutide-induced weight loss was not attenuated in obese CMV-Ser791Ala mice, as in lean mice, since heavier mice tend to be more responsive to liraglutide (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:44:22.529163Z"
+    },
+    {
+      "id": "3792317b-1128-4044-a4af-dd7a802713c2",
+      "content_id": "fb130db2-5e00-44df-8cac-a36af4c853ea",
+      "claim_id": "C61",
+      "claim": "The brain is a key target for the weight-lowering effects of GLP-1R agonists.",
+      "claim_type": "EXPLICIT",
+      "source": "The brain is a key target for the weight-lowering effects of GLP-1R agonists (Adams et al., 2018; Sisley et al., 2014; Varin et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Adams et al., 2018; Sisley et al., 2014; Varin et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:44:22.529163Z"
+    },
+    {
+      "id": "d2edee89-ab0e-4f41-9eed-2d00c524a315",
+      "content_id": "fb130db2-5e00-44df-8cac-a36af4c853ea",
+      "claim_id": "C62",
+      "claim": "Regulation of energy balance by mTORC1 appears to be most critical in hypothalamic regions such as the arcuate (ARC), paraventricular hypothalamus (PVH), VMH, and suprachiasmatic nucleus.",
+      "claim_type": "EXPLICIT",
+      "source": "Regulation of energy balance by mTORC1 appears to be most critical in hypothalamic regions such as the arcuate (ARC), paraventricular hypothalamus (PVH), VMH, and suprachiasmatic nucleus (Cota et al., 2006; Inhoff et al., 2010; Proulx et al., 2008), where the GLP-1R is highly expressed (Jensen et al., 2018; Cork et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Cota et al., 2006; Inhoff et al., 2010; Proulx et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:44:22.529163Z"
+    },
+    {
+      "id": "0220b203-25f9-4670-8e5b-bb679aeadf8a",
+      "content_id": "fb130db2-5e00-44df-8cac-a36af4c853ea",
+      "claim_id": "C63",
+      "claim": "The GLP-1R is highly expressed in the arcuate, paraventricular hypothalamus, VMH, and suprachiasmatic nucleus.",
+      "claim_type": "EXPLICIT",
+      "source": "Regulation of energy balance by mTORC1 appears to be most critical in hypothalamic regions such as the arcuate (ARC), paraventricular hypothalamus (PVH), VMH, and suprachiasmatic nucleus (Cota et al., 2006; Inhoff et al., 2010; Proulx et al., 2008), where the GLP-1R is highly expressed (Jensen et al., 2018; Cork et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Jensen et al., 2018; Cork et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:44:22.529163Z"
+    },
+    {
+      "id": "00beb3b2-91a1-4ed1-b872-3409c1083c71",
+      "content_id": "fb130db2-5e00-44df-8cac-a36af4c853ea",
+      "claim_id": "C64",
+      "claim": "The ARC mediates weight loss effects of liraglutide.",
+      "claim_type": "EXPLICIT",
+      "source": "The ARC mediates weight loss effects of liraglutide (Secher et al., 2014) and is engaged by systemic liraglutide (Salinas et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Secher et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:44:22.529163Z"
+    },
+    {
+      "id": "bc0c8fae-1738-49f5-9c04-e437598272dc",
+      "content_id": "fb130db2-5e00-44df-8cac-a36af4c853ea",
+      "claim_id": "C65",
+      "claim": "The ARC is engaged by systemic liraglutide.",
+      "claim_type": "EXPLICIT",
+      "source": "The ARC mediates weight loss effects of liraglutide (Secher et al., 2014) and is engaged by systemic liraglutide (Salinas et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Salinas et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:44:22.529163Z"
+    },
+    {
+      "id": "3f8e960f-697d-471e-b981-9f8c172dc498",
+      "content_id": "fb130db2-5e00-44df-8cac-a36af4c853ea",
+      "claim_id": "C66",
+      "claim": "Hindbrain regions are engaged by systemic liraglutide and mediate its weight-lowering effects.",
+      "claim_type": "EXPLICIT",
+      "source": "Hindbrain regions are also engaged by systemic liraglutide and mediate its weight-lowering effects (Salinas et al., 2018; Fortin et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Salinas et al., 2018; Fortin et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:44:22.529163Z"
+    },
+    {
+      "id": "92e39841-d458-4818-897d-7782ec25d70e",
+      "content_id": "fb130db2-5e00-44df-8cac-a36af4c853ea",
+      "claim_id": "C67",
+      "claim": "Inhibition of PKA attenuates the anorectic effect of hindbrain-targeted Ex4 in rats.",
+      "claim_type": "EXPLICIT",
+      "source": "Inhibition of PKA attenuates the anorectic effect of hindbrain-targeted Ex4 in rats (Hayes et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Hayes et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:44:22.529163Z"
+    },
+    {
+      "id": "f7ebb097-1ecd-4af6-8fdd-d3156cab95ad",
+      "content_id": "fb130db2-5e00-44df-8cac-a36af4c853ea",
+      "claim_id": "C68",
+      "claim": "The MC4R is a G\u03b1s-coupled receptor.",
+      "claim_type": "EXPLICIT",
+      "source": "Like the GLP-1R, the MC4R is also a G\u03b1s-coupled receptor, and setmelanotide is approved for weight loss in individuals with monogenic obesity caused by mutations in pro-opiomelanocortin, proprotein convertase subtilisin/kexin type 1, or leptin receptor deficiency and in individuals with Bardet-Biedl syndrome (Markham, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established scientific knowledge about MC4R.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:44:22.529163Z"
+    },
+    {
+      "id": "846a4f9a-b2d9-4d8a-ab84-cecd51d1db18",
+      "content_id": "fb130db2-5e00-44df-8cac-a36af4c853ea",
+      "claim_id": "C69",
+      "claim": "Setmelanotide is approved for weight loss in individuals with monogenic obesity caused by mutations in pro-opiomelanocortin, proprotein convertase subtilisin/kexin type 1, or leptin receptor deficiency and in individuals with Bardet-Biedl syndrome.",
+      "claim_type": "EXPLICIT",
+      "source": "Like the GLP-1R, the MC4R is also a G\u03b1s-coupled receptor, and setmelanotide is approved for weight loss in individuals with monogenic obesity caused by mutations in pro-opiomelanocortin, proprotein convertase subtilisin/kexin type 1, or leptin receptor deficiency and in individuals with Bardet-Biedl syndrome (Markham, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Markham, 2021.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:44:22.529163Z"
+    },
+    {
+      "id": "7d63a1dc-60d7-4923-8721-ca57a89b52f8",
+      "content_id": "fb130db2-5e00-44df-8cac-a36af4c853ea",
+      "claim_id": "C70",
+      "claim": "Liraglutide does not regulate mTORC1 via Akt.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results suggest that liraglutide does not regulate mTORC1 via Akt, as was observed for \u03b2AR signaling in adipocytes (Liu et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the experimental data presented in the manuscript and contrasted with Liu et al., 2016.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:44:22.529163Z"
+    },
+    {
+      "id": "540252c8-d887-4390-89f2-1ed73f9ed2d0",
+      "content_id": "fb130db2-5e00-44df-8cac-a36af4c853ea",
+      "claim_id": "C71",
+      "claim": "\u03b2AR signaling regulates mTORC1 via Akt in adipocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results suggest that liraglutide does not regulate mTORC1 via Akt, as was observed for \u03b2AR signaling in adipocytes (Liu et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Liu et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:44:22.529163Z"
+    },
+    {
+      "id": "aab2d1df-067a-4e26-b219-9bb3155d7669",
+      "content_id": "fb130db2-5e00-44df-8cac-a36af4c853ea",
+      "claim_id": "C72",
+      "claim": "Inhibition of Akt activity in the hindbrain attenuates the anorectic effect of Ex4.",
+      "claim_type": "EXPLICIT",
+      "source": "Inhibition of Akt activity in the hindbrain (Rupprecht et al., 2013) or hypothalamus (Yang et al., 2017) attenuates the anorectic effect of Ex4, so identifying targets of Akt mediating the effects of GLP-1R agonists requires further study.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Rupprecht et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:44:22.529163Z"
+    },
+    {
+      "id": "c3281cad-9401-4205-91d6-617cbb78964b",
+      "content_id": "fb130db2-5e00-44df-8cac-a36af4c853ea",
+      "claim_id": "C73",
+      "claim": "Inhibition of Akt activity in the hypothalamus attenuates the anorectic effect of Ex4.",
+      "claim_type": "EXPLICIT",
+      "source": "Inhibition of Akt activity in the hindbrain (Rupprecht et al., 2013) or hypothalamus (Yang et al., 2017) attenuates the anorectic effect of Ex4, so identifying targets of Akt mediating the effects of GLP-1R agonists requires further study.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Yang et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:44:22.529163Z"
+    },
+    {
+      "id": "1fc6f8bb-0550-4a9d-a488-6705eca0cd77",
+      "content_id": "fb130db2-5e00-44df-8cac-a36af4c853ea",
+      "claim_id": "C74",
+      "claim": "GLP-1R agonists reduce food intake by inhibiting AMPK.",
+      "claim_type": "EXPLICIT",
+      "source": "Studies from our lab and others show that GLP-1R agonists reduce food intake by inhibiting AMPK (Burmeister et al., 2017; Hayes et al., 2011; Burmeister et al., 2013; Sandoval et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Burmeister et al., 2017; Hayes et al., 2011; Burmeister et al., 2013; Sandoval et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:44:22.529163Z"
+    },
+    {
+      "id": "17833e54-4bc9-43f2-ac60-781badac8a67",
+      "content_id": "fb130db2-5e00-44df-8cac-a36af4c853ea",
+      "claim_id": "C75",
+      "claim": "AMPK suppresses mTORC1 by phosphorylating TSC2.",
+      "claim_type": "EXPLICIT",
+      "source": "Since AMPK suppresses mTORC1 by phosphorylating TSC2 (Inoki et al., 2003) or Raptor (Gwinn et al., 2008), GLP-1R activation could stimulate mTORC1 by reducing AMPK activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Inoki et al., 2003.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:44:22.529163Z"
+    },
+    {
+      "id": "0a6c9938-38ae-421d-b1e3-1c3813b7d679",
+      "content_id": "fb130db2-5e00-44df-8cac-a36af4c853ea",
+      "claim_id": "C76",
+      "claim": "AMPK suppresses mTORC1 by phosphorylating Raptor.",
+      "claim_type": "EXPLICIT",
+      "source": "Since AMPK suppresses mTORC1 by phosphorylating TSC2 (Inoki et al., 2003) or Raptor (Gwinn et al., 2008), GLP-1R activation could stimulate mTORC1 by reducing AMPK activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Gwinn et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:44:22.529163Z"
+    },
+    {
+      "id": "75e65383-4ccc-4d73-ba53-31e234f551c1",
+      "content_id": "fb130db2-5e00-44df-8cac-a36af4c853ea",
+      "claim_id": "C77",
+      "claim": "GLP-1R activation could stimulate mTORC1 by reducing AMPK activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Since AMPK suppresses mTORC1 by phosphorylating TSC2 (Inoki et al., 2003) or Raptor (Gwinn et al., 2008), GLP-1R activation could stimulate mTORC1 by reducing AMPK activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative and inferred from the cited literature.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:44:22.529163Z"
+    },
+    {
+      "id": "34c747a6-a7d2-40ff-a504-33e7d44aa17a",
+      "content_id": "fb130db2-5e00-44df-8cac-a36af4c853ea",
+      "claim_id": "C78",
+      "claim": "AMPK can be inhibited by mTORC1 signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "AMPK can also be inhibited by mTORC1 signaling (Dagon et al., 2012), so GLP-1R-mediated inhibition of AMPK may be downstream of mTORC1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Dagon et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:44:22.529163Z"
+    },
+    {
+      "id": "c4d5122d-e602-44df-a61e-02cbedcaf625",
+      "content_id": "fb130db2-5e00-44df-8cac-a36af4c853ea",
+      "claim_id": "C79",
+      "claim": "GLP-1R-mediated inhibition of AMPK may be downstream of mTORC1.",
+      "claim_type": "EXPLICIT",
+      "source": "AMPK can also be inhibited by mTORC1 signaling (Dagon et al., 2012), so GLP-1R-mediated inhibition of AMPK may be downstream of mTORC1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative and inferred from the cited literature.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:44:22.529163Z"
+    },
+    {
+      "id": "5bdf09ef-9156-4d22-b271-b0361712e95f",
+      "content_id": "fb130db2-5e00-44df-8cac-a36af4c853ea",
+      "claim_id": "C80",
+      "claim": "PKA-mediated phosphorylation of Raptor and increased mTORC1 signaling contributes to the weight-lowering effect of liraglutide.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, we have uncovered a novel signaling mechanism downstream of the GLP-1R characterized by PKA-mediated phosphorylation of Raptor and increased mTORC1 signaling that contributes to the weight-lowering effect of liraglutide.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:44:22.529163Z"
+    },
+    {
+      "id": "9b0ae77c-ec1f-4a1d-bec9-1b98afe541f0",
+      "content_id": "fb130db2-5e00-44df-8cac-a36af4c853ea",
+      "claim_id": "C81",
+      "claim": "GLP-1R agonists continue to be used as glucose-lowering agents for type 2 diabetes based on their insulinotropic effect via pancreatic \u03b2-cells.",
+      "claim_type": "EXPLICIT",
+      "source": "GLP-1R agonists continue to be used as glucose-lowering agents for type 2 diabetes based on their insulinotropic effect via pancreatic \u03b2-cells (Drucker, 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Drucker, 2022.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:44:22.529163Z"
+    },
+    {
+      "id": "721ca3a1-c4f7-4543-b12c-f84b2d94211f",
+      "content_id": "fb130db2-5e00-44df-8cac-a36af4c853ea",
+      "claim_id": "C82",
+      "claim": "The PKA-mTORC1 interaction could contribute to the insulinotropic effect or another \u03b2-cell phenotype associated with GLP-1R agonists.",
+      "claim_type": "EXPLICIT",
+      "source": "The PKA-mTORC1 interaction could contribute to this or another \u03b2-cell phenotype associated with GLP-1R agonists (e.g. proliferation/cytoprotection).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative about potential mechanisms.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:44:22.529163Z"
+    },
+    {
+      "id": "ae73f181-4839-4c5a-9870-6691bc7458fe",
+      "content_id": "fb130db2-5e00-44df-8cac-a36af4c853ea",
+      "claim_id": "C83",
+      "claim": "GLP-1R agonists display cardioprotective effects.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, GLP-1R agonists also display cardioprotective effects that could be mediated directly via effects on the heart and vasculature and/or be secondary to the ability of these drugs to improve glycemia, body weight, lipid profiles, and inflammation (Ussher and Drucker, 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Ussher and Drucker, 2023.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:44:22.529163Z"
+    },
+    {
+      "id": "6bf2ea1e-9d52-4fef-9d5d-a779f0a51b11",
+      "content_id": "fb130db2-5e00-44df-8cac-a36af4c853ea",
+      "claim_id": "C84",
+      "claim": "The cardioprotective effects of GLP-1R agonists could be mediated directly via effects on the heart and vasculature and/or be secondary to the ability of these drugs to improve glycemia, body weight, lipid profiles, and inflammation.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, GLP-1R agonists also display cardioprotective effects that could be mediated directly via effects on the heart and vasculature and/or be secondary to the ability of these drugs to improve glycemia, body weight, lipid profiles, and inflammation (Ussher and Drucker, 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Ussher and Drucker, 2023 and involves speculation about mechanisms.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:44:22.529163Z"
+    },
+    {
+      "id": "7d30bd0d-daa3-4ea2-81dd-8d0fe25aa982",
+      "content_id": "fb130db2-5e00-44df-8cac-a36af4c853ea",
+      "claim_id": "C85",
+      "claim": "Lean Ser791Ala Raptor knock-in mice were resistant to liraglutide-induced weight loss.",
+      "claim_type": "EXPLICIT",
+      "source": "Lean Ser791Ala Raptor knock-in mice were resistant to liraglutide-induced weight loss but not setmelanotide-induced (melanocortin-4 receptor-dependent) weight loss.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:44:22.529163Z"
+    },
+    {
+      "id": "8e4270b3-5e8f-4628-90fa-110fd6ddadf9",
+      "content_id": "fb130db2-5e00-44df-8cac-a36af4c853ea",
+      "claim_id": "C86",
+      "claim": "Lean Ser791Ala Raptor knock-in mice were not resistant to setmelanotide-induced weight loss.",
+      "claim_type": "EXPLICIT",
+      "source": "Lean Ser791Ala Raptor knock-in mice were resistant to liraglutide-induced weight loss but not setmelanotide-induced (melanocortin-4 receptor-dependent) weight loss.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:44:22.529163Z"
+    },
+    {
+      "id": "e83b83af-f5c1-49e5-ba2b-61704e4f588f",
+      "content_id": "fb130db2-5e00-44df-8cac-a36af4c853ea",
+      "claim_id": "C87",
+      "claim": "Diet-induced obese Ser791Ala Raptor knock-in mice were not resistant to liraglutide-induced weight loss.",
+      "claim_type": "EXPLICIT",
+      "source": "Diet-induced obese Ser791Ala Raptor knock-in mice were not resistant to liraglutide-induced weight loss; however, there was weight-dependent variation such that there was a tendency for obese Ser791Ala Raptor knock-in mice of lower relative body weight to be resistant to liraglutide-induced weight loss compared to weight-matched controls.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:44:22.529163Z"
+    },
+    {
+      "id": "8ea26be9-ff84-49ba-ba04-02d89985358a",
+      "content_id": "fb130db2-5e00-44df-8cac-a36af4c853ea",
+      "claim_id": "C88",
+      "claim": "There was a tendency for obese Ser791Ala Raptor knock-in mice of lower relative body weight to be resistant to liraglutide-induced weight loss compared to weight-matched controls.",
+      "claim_type": "EXPLICIT",
+      "source": "Diet-induced obese Ser791Ala Raptor knock-in mice were not resistant to liraglutide-induced weight loss; however, there was weight-dependent variation such that there was a tendency for obese Ser791Ala Raptor knock-in mice of lower relative body weight to be resistant to liraglutide-induced weight loss compared to weight-matched controls.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:44:22.529163Z"
+    },
+    {
+      "id": "049973c9-27d3-4c0c-b2c3-d98f4d49ed4d",
+      "content_id": "fb130db2-5e00-44df-8cac-a36af4c853ea",
+      "claim_id": "C89",
+      "claim": "PKA-mediated phosphorylation of Raptor at Ser791 contributes to liraglutide-induced weight loss.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these findings suggest that PKA-mediated phosphorylation of Raptor at Ser791 contributes to liraglutide-induced weight loss.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:44:22.529163Z"
+    },
+    {
+      "id": "fb4a4b80-131b-4147-8fb4-44d4f6a8ab69",
+      "content_id": "fb130db2-5e00-44df-8cac-a36af4c853ea",
+      "claim_id": "C90",
+      "claim": "Liraglutide failed to stimulate phosphorylation of the PKA motif in Ser791Ala Raptor in CHO-Glp1r cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Liraglutide increased phosphorylation of S6 and the PKA motif in WT Raptor in a PKA-dependent manner but failed to stimulate phosphorylation of the PKA motif in Ser791Ala Raptor in CHO-Glp1r cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:44:22.529163Z"
+    },
+    {
+      "id": "55fe1073-0544-4686-89f7-87509d4234ca",
+      "content_id": "fb130db2-5e00-44df-8cac-a36af4c853ea",
+      "claim_id": "C91",
+      "claim": "Liraglutide increased phosphorylation of S6 and the PKA motif in WT Raptor in a PKA-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Liraglutide increased phosphorylation of S6 and the PKA motif in WT Raptor in a PKA-dependent manner but failed to stimulate phosphorylation of the PKA motif in Ser791Ala Raptor in CHO-Glp1r cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:44:22.529163Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "5f204ca3-c5d9-4e22-811b-32be25ce9458",
+      "content_id": "fb130db2-5e00-44df-8cac-a36af4c853ea",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Liraglutide stimulates mTORC1 signaling in a PKA-dependent and Akt-independent manner in CHO-GLP-1R cells. This is demonstrated by increased S6 phosphorylation that is blocked by rapamycin and PKA inhibitors (H89, KT5720) but not by the Akt inhibitor MK-2206.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2-C11 provide converging evidence from multiple pharmacological inhibitors showing that liraglutide-induced mTORC1 activation requires PKA but not Akt. The use of KT5720 (C7-C9) addresses concerns about H89 off-target effects (C5-C6), and the specificity is demonstrated by differential effects on insulin signaling (C6, C9). The data are internally consistent and appropriately controlled.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:44:22.529163Z"
+    },
+    {
+      "id": "bdf1caf3-63bd-4933-b7c5-fe294b1da5f5",
+      "content_id": "fb130db2-5e00-44df-8cac-a36af4c853ea",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Liraglutide induces PKA-dependent phosphorylation of Raptor at Ser791. This is shown by increased PKA motif phosphorylation on wild-type Raptor but not on Ser791Ala mutant Raptor in both CHO-GLP-1R and \u03b2-TC3 cells, and this phosphorylation is independent of Akt.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C17 demonstrate site-specific phosphorylation using a loss-of-function mutant (Ser791Ala) and PKA motif antibody. The observation in two cell types (CHO-GLP-1R and \u03b2-TC3) strengthens the finding. The Akt-independence (C16) is consistent with earlier results. However, the PKA motif antibody may have limited specificity, and direct demonstration of Ser791 phosphorylation (e.g., phospho-specific antibody or mass spectrometry) would be more definitive.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:44:22.529163Z"
+    },
+    {
+      "id": "5d500c2e-6659-4834-b44c-66af56c90a34",
+      "content_id": "fb130db2-5e00-44df-8cac-a36af4c853ea",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "PKA phosphorylation of Raptor at Ser791 is required for the full weight-lowering effect of liraglutide in lean mice, mediated through regulation of both food intake and energy expenditure. CMV-Ser791Ala Raptor knock-in mice show attenuated weight loss, reduced fat mass loss, and altered temporal dynamics of food intake suppression and energy expenditure reduction compared to wild-type mice.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C26 provide comprehensive in vivo evidence using a genetic loss-of-function model. The phenotype includes multiple complementary measurements (body weight, body composition, food intake, energy expenditure) with appropriate temporal resolution. The data show partial (~50%) attenuation of liraglutide effects, consistent with Raptor Ser791 phosphorylation contributing to but not being solely responsible for liraglutide's effects. Statistical analyses appear appropriate with sufficient sample sizes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:44:22.529163Z"
+    },
+    {
+      "id": "ebe76c54-cb7c-4fa1-b1f9-0d62b03ee0fe",
+      "content_id": "fb130db2-5e00-44df-8cac-a36af4c853ea",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Liraglutide treatment lowers fasting glucose similarly in both wild-type and CMV-Ser791Ala Raptor knock-in mice, with no differences in fasting insulin levels between genotypes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C29 demonstrate that the Ser791Ala mutation does not affect liraglutide's glucose-lowering effects, suggesting specificity of the Raptor phosphorylation site for weight regulation rather than glycemic control. This is an important control showing that the mutation doesn't globally impair liraglutide responsiveness.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:44:22.529163Z"
+    },
+    {
+      "id": "40e3f958-e044-4f3f-962f-e31c0f0b6b71",
+      "content_id": "fb130db2-5e00-44df-8cac-a36af4c853ea",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "In diet-induced obese mice, the role of PKA phosphorylation of Raptor at Ser791 in liraglutide-induced weight loss is confounded by baseline body weight differences. CMV-Ser791Ala mice gained more weight on high-fat diet, and weight loss responsiveness to liraglutide correlates positively with baseline body weight. When stratified by baseline weight, only mice below 43.4g show a tendency for reduced liraglutide responsiveness in CMV-Ser791Ala mice.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C30-C36, C58-C60 reveal a complex interaction between genotype, baseline body weight, and liraglutide responsiveness. The authors appropriately acknowledge the confounding effect of differential weight gain in CMV-Ser791Ala mice (C31, C59). The post-hoc stratification analysis (C34-C35) shows only a 'tendency' for reduced responsiveness in lower-weight mice, suggesting insufficient power. The positive correlation between baseline weight and weight loss (C32-C33, C60) is interesting but complicates interpretation of the genotype effect.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:44:22.529163Z"
+    },
+    {
+      "id": "71e9c9e5-b6de-475e-b4ee-6c2084ac44ed",
+      "content_id": "fb130db2-5e00-44df-8cac-a36af4c853ea",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "CMV-Ser791Ala Raptor knock-in mice are not resistant to weight loss induced by the MC4R agonist setmelanotide, suggesting that Raptor phosphorylation at Ser791 by PKA is specific to GLP-1R agonist-induced weight loss and not a general mechanism for all G\u03b1s-coupled receptor-mediated weight loss.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C38, C85-C86 provide important specificity controls showing that the Ser791Ala mutation selectively affects liraglutide but not setmelanotide responses. This suggests pathway specificity rather than a general metabolic impairment. However, the authors appropriately note in the discussion that tissue-specific effects cannot be ruled out with the whole-body CMV-Ser791Ala model.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:44:22.529163Z"
+    },
+    {
+      "id": "cf826b28-d9e2-4064-81ba-844da3e20f97",
+      "content_id": "fb130db2-5e00-44df-8cac-a36af4c853ea",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Prior work has established that PKA can stimulate mTORC1 by phosphorylating Raptor at Ser791 following \u03b2-adrenergic receptor stimulation, and that the catalytic subunit of PKA directly phosphorylates this site.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C12, C46 accurately cite prior work (Liu et al., 2016) establishing the PKA-Raptor-mTORC1 pathway in the context of \u03b2-adrenergic signaling. These citations provide the mechanistic foundation for the current study's hypothesis that GLP-1R, another G\u03b1s-coupled receptor, might use the same pathway.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:44:22.529163Z"
+    },
+    {
+      "id": "e4c31c14-0804-4998-b209-6b3ed15ca2b0",
+      "content_id": "fb130db2-5e00-44df-8cac-a36af4c853ea",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "PKA can either stimulate or inhibit mTORC1 activity depending on cellular context, with stimulation observed in serum-free conditions and inhibition in serum-supplemented conditions. This context-dependence relates to mTORC1's role as a cellular energy sensor.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C57 appropriately acknowledge conflicting literature on PKA-mTORC1 interactions and provide a reasonable explanation based on nutrient/energy status. The citations to Liu et al. 2016, Jewell et al. 2019, and Scott and Lawrence 1998 are appropriate. This contextualizes the current findings within the broader literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:44:22.529163Z"
+    },
+    {
+      "id": "594bedbd-26d0-43d7-9501-0744e300a94e",
+      "content_id": "fb130db2-5e00-44df-8cac-a36af4c853ea",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "H89 has off-target effects including inhibition of p70S6K, which explains its ability to block insulin-stimulated S6 phosphorylation. KT5720 is a more specific PKA inhibitor with minimal off-target effects on p70S6K.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C7 appropriately cite Davies et al. 2000 regarding inhibitor specificity and use this knowledge to justify the use of multiple PKA inhibitors with different selectivity profiles. This strengthens the conclusion that PKA is required for liraglutide-induced mTORC1 activation by addressing potential off-target effects.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:44:22.529163Z"
+    },
+    {
+      "id": "6c53081d-e642-4323-b08d-c5f28bc81200",
+      "content_id": "fb130db2-5e00-44df-8cac-a36af4c853ea",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Liraglutide does not regulate mTORC1 via Akt, contrasting with \u03b2-adrenergic receptor signaling in adipocytes. However, Akt inhibition in brain regions can attenuate the anorectic effects of GLP-1R agonists, suggesting Akt may have other roles in GLP-1R signaling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C70-C73 appropriately distinguish between the current findings (Akt-independent mTORC1 activation) and prior work showing Akt involvement in GLP-1R-mediated appetite suppression. This highlights the complexity of GLP-1R signaling and suggests multiple parallel pathways. The citations are appropriate and the interpretation is reasonable.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:44:22.529163Z"
+    },
+    {
+      "id": "573bc033-bede-42ff-b77b-fe9a8f574acf",
+      "content_id": "fb130db2-5e00-44df-8cac-a36af4c853ea",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "GLP-1R agonists reduce food intake by inhibiting AMPK. Since AMPK suppresses mTORC1 by phosphorylating TSC2 or Raptor, GLP-1R activation could stimulate mTORC1 by reducing AMPK activity. Alternatively, GLP-1R-mediated AMPK inhibition may be downstream of mTORC1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C74-C79 present speculative mechanistic connections between GLP-1R, AMPK, and mTORC1. While the individual components are supported by citations (C74-C76, C78), the proposed relationships (C77, C79) are explicitly speculative ('could', 'may be'). No experimental data in the current manuscript directly test these hypotheses, making this uncertain. These represent reasonable hypotheses for future work rather than established findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:44:22.529163Z"
+    },
+    {
+      "id": "b1e78159-2f96-487e-b740-b5dab6f4fb75",
+      "content_id": "fb130db2-5e00-44df-8cac-a36af4c853ea",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The manuscript establishes that GLP-1R activation induces PKA-mediated phosphorylation of Raptor at Ser791, leading to mTORC1 activation, and that this mechanism contributes to approximately 50% of liraglutide-induced weight loss.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims represent the core conclusions of the manuscript, integrating background knowledge (C39-C45), prior work (C40-C41, C50), the hypothesis (C47), and the current findings (C48-C49, C52, C80, C89). The ~50% contribution estimate (C52) is reasonable based on the partial attenuation observed in Ser791Ala mice. The claims are well-supported by the collective experimental evidence presented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:44:22.529163Z"
+    },
+    {
+      "id": "cb060518-1a69-4da1-8ef5-39f9d41e3980",
+      "content_id": "fb130db2-5e00-44df-8cac-a36af4c853ea",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The brain, particularly hypothalamic regions (ARC, PVH, VMH) and hindbrain, is a key target for GLP-1R agonist-mediated weight loss. These regions express GLP-1R and mTORC1, are engaged by systemic liraglutide, and PKA inhibition in hindbrain attenuates GLP-1R agonist effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C67 appropriately cite literature establishing the neuroanatomical basis for GLP-1R agonist action. These citations provide important context for interpreting the current findings and justify future tissue-specific studies. The claims accurately represent the cited work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:44:22.529163Z"
+    },
+    {
+      "id": "db9650fe-4baf-4cdd-a302-02881a87d0a5",
+      "content_id": "fb130db2-5e00-44df-8cac-a36af4c853ea",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The manuscript discusses potential broader implications of the PKA-mTORC1 interaction for other GLP-1R agonist effects, including glucose lowering via pancreatic \u03b2-cells and cardioprotective effects, though these remain speculative.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C68-C69, C81, C83 accurately cite background information about MC4R, setmelanotide, and GLP-1R agonist therapeutic uses. However, claims C82 and C84 are explicitly speculative ('could contribute', 'could be mediated') about potential roles of PKA-mTORC1 interactions in these other contexts. No experimental data address these possibilities, making them reasonable speculation for future work rather than supported findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:44:22.529163Z"
+    },
+    {
+      "id": "28e197da-c49a-447f-96dd-fd115ddb8c59",
+      "content_id": "fb130db2-5e00-44df-8cac-a36af4c853ea",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Diet-induced obese Ser791Ala Raptor knock-in mice overall were not resistant to liraglutide-induced weight loss, but there was a tendency for mice with lower relative body weight to show resistance compared to weight-matched controls.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C87-C88 accurately describe the complex findings in obese mice, appropriately noting the 'tendency' rather than claiming definitive resistance. This honest reporting of nuanced results is appropriate given the confounding factors discussed in the manuscript. The statistical support appears adequate though the effect is modest.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:44:22.529163Z"
+    },
+    {
+      "id": "c517a971-32f5-4b27-8bc8-aad77ac945ab",
+      "content_id": "fb130db2-5e00-44df-8cac-a36af4c853ea",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "In CHO-GLP-1R cells, liraglutide increased phosphorylation of S6 and the PKA motif in wild-type Raptor in a PKA-dependent manner but failed to stimulate PKA motif phosphorylation in Ser791Ala Raptor.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C90-C91 summarize key in vitro findings demonstrating the specificity of Ser791 as the liraglutide-responsive PKA phosphorylation site on Raptor. These data directly support the mechanistic model and validate the Ser791Ala mutation as a loss-of-function tool. The claims are well-supported by the experimental data shown in the figures.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:44:22.529163Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "641bb387-dd82-42e1-bcf1-9fd640db093b",
+      "result_id": "5f204ca3-c5d9-4e22-811b-32be25ce9458"
+    },
+    {
+      "claim_id": "f33c57ac-8695-407e-9e1b-0d358533719f",
+      "result_id": "5f204ca3-c5d9-4e22-811b-32be25ce9458"
+    },
+    {
+      "claim_id": "1e3e55f4-407b-4731-acb1-287b912fda86",
+      "result_id": "5f204ca3-c5d9-4e22-811b-32be25ce9458"
+    },
+    {
+      "claim_id": "f7dec655-4d33-4970-9e07-50a4a0cfc0a0",
+      "result_id": "5f204ca3-c5d9-4e22-811b-32be25ce9458"
+    },
+    {
+      "claim_id": "af2c66c0-4530-4f72-b539-0392a0ff6bdc",
+      "result_id": "5f204ca3-c5d9-4e22-811b-32be25ce9458"
+    },
+    {
+      "claim_id": "0d0b0ebf-9cbf-4d94-b35e-1dc70187d61c",
+      "result_id": "5f204ca3-c5d9-4e22-811b-32be25ce9458"
+    },
+    {
+      "claim_id": "eeadc500-a0d8-4260-8814-7f25352bc336",
+      "result_id": "5f204ca3-c5d9-4e22-811b-32be25ce9458"
+    },
+    {
+      "claim_id": "68ac340f-7ae8-4ab4-9290-f50ba80ccf2e",
+      "result_id": "bdf1caf3-63bd-4933-b7c5-fe294b1da5f5"
+    },
+    {
+      "claim_id": "97a1e04f-4687-4cf7-9bcf-c7a2600c77a0",
+      "result_id": "bdf1caf3-63bd-4933-b7c5-fe294b1da5f5"
+    },
+    {
+      "claim_id": "0b0627b6-acaa-4392-8eb5-25043c0d524e",
+      "result_id": "bdf1caf3-63bd-4933-b7c5-fe294b1da5f5"
+    },
+    {
+      "claim_id": "36ebf160-a83f-48ad-86a5-89f39cce7d90",
+      "result_id": "bdf1caf3-63bd-4933-b7c5-fe294b1da5f5"
+    },
+    {
+      "claim_id": "5efd1773-c478-461e-8165-fd708c993c79",
+      "result_id": "bdf1caf3-63bd-4933-b7c5-fe294b1da5f5"
+    },
+    {
+      "claim_id": "9e0c06aa-4cbd-4570-8cc9-1eb180075b9c",
+      "result_id": "5d500c2e-6659-4834-b44c-66af56c90a34"
+    },
+    {
+      "claim_id": "db9b5f9a-92e7-4ac3-9d95-612e7a760f85",
+      "result_id": "5d500c2e-6659-4834-b44c-66af56c90a34"
+    },
+    {
+      "claim_id": "6e7b91c5-7ab4-44f7-a705-3eccebb55be9",
+      "result_id": "5d500c2e-6659-4834-b44c-66af56c90a34"
+    },
+    {
+      "claim_id": "6d6ddd09-f6b0-44f5-bec4-5cd2a0b814e9",
+      "result_id": "5d500c2e-6659-4834-b44c-66af56c90a34"
+    },
+    {
+      "claim_id": "65493997-908c-4352-859a-263ad1ff036f",
+      "result_id": "5d500c2e-6659-4834-b44c-66af56c90a34"
+    },
+    {
+      "claim_id": "3d15b981-9e17-4056-be52-4e88832f531b",
+      "result_id": "5d500c2e-6659-4834-b44c-66af56c90a34"
+    },
+    {
+      "claim_id": "dbe8de16-ca6a-47bd-8444-7f5f2953c7a9",
+      "result_id": "5d500c2e-6659-4834-b44c-66af56c90a34"
+    },
+    {
+      "claim_id": "828b8590-7f58-442f-84ab-6e4ef5115e02",
+      "result_id": "5d500c2e-6659-4834-b44c-66af56c90a34"
+    },
+    {
+      "claim_id": "ad374461-aae5-4315-bdc2-ee03b6919400",
+      "result_id": "5d500c2e-6659-4834-b44c-66af56c90a34"
+    },
+    {
+      "claim_id": "1cbaa580-4232-4786-a0db-fd5362ae8eb0",
+      "result_id": "ebe76c54-cb7c-4fa1-b1f9-0d62b03ee0fe"
+    },
+    {
+      "claim_id": "c4a8e04f-225e-45ac-b98e-2df57582497e",
+      "result_id": "ebe76c54-cb7c-4fa1-b1f9-0d62b03ee0fe"
+    },
+    {
+      "claim_id": "122e146f-7230-4149-a0e6-139b42b90b1c",
+      "result_id": "ebe76c54-cb7c-4fa1-b1f9-0d62b03ee0fe"
+    },
+    {
+      "claim_id": "3d225ec6-22e6-4222-a377-fd445d4ffc6b",
+      "result_id": "40e3f958-e044-4f3f-962f-e31c0f0b6b71"
+    },
+    {
+      "claim_id": "e21539d4-d427-44d9-a6a8-99b14e1cbef2",
+      "result_id": "40e3f958-e044-4f3f-962f-e31c0f0b6b71"
+    },
+    {
+      "claim_id": "823ff746-e4b5-4a3b-8c99-5179e5ad62fe",
+      "result_id": "40e3f958-e044-4f3f-962f-e31c0f0b6b71"
+    },
+    {
+      "claim_id": "5ca7e989-b180-4e59-85ba-6c4be61b4034",
+      "result_id": "40e3f958-e044-4f3f-962f-e31c0f0b6b71"
+    },
+    {
+      "claim_id": "76ff8894-fb6e-446d-abdb-a07642657cc6",
+      "result_id": "40e3f958-e044-4f3f-962f-e31c0f0b6b71"
+    },
+    {
+      "claim_id": "e846784e-9e3e-40cc-b7b6-0976ceb83b0f",
+      "result_id": "40e3f958-e044-4f3f-962f-e31c0f0b6b71"
+    },
+    {
+      "claim_id": "7ba69de9-aebb-4f5e-8b3b-87a518bec7a5",
+      "result_id": "40e3f958-e044-4f3f-962f-e31c0f0b6b71"
+    },
+    {
+      "claim_id": "4700f70c-cf54-4adb-be65-a4d03495f2f4",
+      "result_id": "40e3f958-e044-4f3f-962f-e31c0f0b6b71"
+    },
+    {
+      "claim_id": "108344d5-fb75-48d8-9a13-2672ec0ff33c",
+      "result_id": "40e3f958-e044-4f3f-962f-e31c0f0b6b71"
+    },
+    {
+      "claim_id": "b2746c5e-70c7-4a3a-9779-e20182b3af4d",
+      "result_id": "40e3f958-e044-4f3f-962f-e31c0f0b6b71"
+    },
+    {
+      "claim_id": "4d75022b-bbda-4ecd-aa06-eae653572009",
+      "result_id": "71e9c9e5-b6de-475e-b4ee-6c2084ac44ed"
+    },
+    {
+      "claim_id": "6923ad72-827f-4f74-b713-ae60355ed9a5",
+      "result_id": "71e9c9e5-b6de-475e-b4ee-6c2084ac44ed"
+    },
+    {
+      "claim_id": "7d30bd0d-daa3-4ea2-81dd-8d0fe25aa982",
+      "result_id": "71e9c9e5-b6de-475e-b4ee-6c2084ac44ed"
+    },
+    {
+      "claim_id": "8e4270b3-5e8f-4628-90fa-110fd6ddadf9",
+      "result_id": "71e9c9e5-b6de-475e-b4ee-6c2084ac44ed"
+    },
+    {
+      "claim_id": "c2dcb0fc-d2dc-474d-9727-09b7959117c9",
+      "result_id": "cf826b28-d9e2-4064-81ba-844da3e20f97"
+    },
+    {
+      "claim_id": "27ae7770-0707-4c9e-ba1c-e75b0ca6b3ad",
+      "result_id": "cf826b28-d9e2-4064-81ba-844da3e20f97"
+    },
+    {
+      "claim_id": "837b9fcd-2dea-4486-a8c6-22d90bd1f24b",
+      "result_id": "cf826b28-d9e2-4064-81ba-844da3e20f97"
+    },
+    {
+      "claim_id": "6960b0a3-6fbe-47e2-ae6c-ecbab3c03cbb",
+      "result_id": "e4c31c14-0804-4998-b209-6b3ed15ca2b0"
+    },
+    {
+      "claim_id": "ca26ac28-78d1-46da-a7cc-546f8d027664",
+      "result_id": "e4c31c14-0804-4998-b209-6b3ed15ca2b0"
+    },
+    {
+      "claim_id": "c51bf0bb-0f9c-4372-8c03-9089c5cd7bef",
+      "result_id": "e4c31c14-0804-4998-b209-6b3ed15ca2b0"
+    },
+    {
+      "claim_id": "c3aa509e-9651-4285-9a5d-e670866ae790",
+      "result_id": "e4c31c14-0804-4998-b209-6b3ed15ca2b0"
+    },
+    {
+      "claim_id": "0defd754-2e5c-4bda-8551-a1de6b94366b",
+      "result_id": "e4c31c14-0804-4998-b209-6b3ed15ca2b0"
+    },
+    {
+      "claim_id": "6f5d0523-be8f-42a0-9770-c807f9b3a9f8",
+      "result_id": "594bedbd-26d0-43d7-9501-0744e300a94e"
+    },
+    {
+      "claim_id": "a55c094e-0cec-4dbb-9d4a-8c0211b1384a",
+      "result_id": "594bedbd-26d0-43d7-9501-0744e300a94e"
+    },
+    {
+      "claim_id": "d406d6b1-108e-4882-8895-63e012804732",
+      "result_id": "594bedbd-26d0-43d7-9501-0744e300a94e"
+    },
+    {
+      "claim_id": "7d63a1dc-60d7-4923-8721-ca57a89b52f8",
+      "result_id": "6c53081d-e642-4323-b08d-c5f28bc81200"
+    },
+    {
+      "claim_id": "540252c8-d887-4390-89f2-1ed73f9ed2d0",
+      "result_id": "6c53081d-e642-4323-b08d-c5f28bc81200"
+    },
+    {
+      "claim_id": "aab2d1df-067a-4e26-b219-9bb3155d7669",
+      "result_id": "6c53081d-e642-4323-b08d-c5f28bc81200"
+    },
+    {
+      "claim_id": "c3281cad-9401-4205-91d6-617cbb78964b",
+      "result_id": "6c53081d-e642-4323-b08d-c5f28bc81200"
+    },
+    {
+      "claim_id": "1fc6f8bb-0550-4a9d-a488-6705eca0cd77",
+      "result_id": "573bc033-bede-42ff-b77b-fe9a8f574acf"
+    },
+    {
+      "claim_id": "17833e54-4bc9-43f2-ac60-781badac8a67",
+      "result_id": "573bc033-bede-42ff-b77b-fe9a8f574acf"
+    },
+    {
+      "claim_id": "0a6c9938-38ae-421d-b1e3-1c3813b7d679",
+      "result_id": "573bc033-bede-42ff-b77b-fe9a8f574acf"
+    },
+    {
+      "claim_id": "75e65383-4ccc-4d73-ba53-31e234f551c1",
+      "result_id": "573bc033-bede-42ff-b77b-fe9a8f574acf"
+    },
+    {
+      "claim_id": "34c747a6-a7d2-40ff-a504-33e7d44aa17a",
+      "result_id": "573bc033-bede-42ff-b77b-fe9a8f574acf"
+    },
+    {
+      "claim_id": "c4d5122d-e602-44df-a61e-02cbedcaf625",
+      "result_id": "573bc033-bede-42ff-b77b-fe9a8f574acf"
+    },
+    {
+      "claim_id": "0631d883-fc12-45cf-bc14-f19fc4b51ac0",
+      "result_id": "b1e78159-2f96-487e-b740-b5dab6f4fb75"
+    },
+    {
+      "claim_id": "47f00f12-43ff-43dc-9148-1b02e3d80209",
+      "result_id": "b1e78159-2f96-487e-b740-b5dab6f4fb75"
+    },
+    {
+      "claim_id": "6e3831a7-0608-4308-9e26-26560d987cc6",
+      "result_id": "b1e78159-2f96-487e-b740-b5dab6f4fb75"
+    },
+    {
+      "claim_id": "08a0654c-7f82-41c7-88c5-4b90c7e4454c",
+      "result_id": "b1e78159-2f96-487e-b740-b5dab6f4fb75"
+    },
+    {
+      "claim_id": "22eb123f-f057-4f6c-83df-35faed2a7b30",
+      "result_id": "b1e78159-2f96-487e-b740-b5dab6f4fb75"
+    },
+    {
+      "claim_id": "00fc0d47-65c9-4fdc-adfc-22bb16ce6a09",
+      "result_id": "b1e78159-2f96-487e-b740-b5dab6f4fb75"
+    },
+    {
+      "claim_id": "07d6533a-161b-410d-a8c2-81e289b78c13",
+      "result_id": "b1e78159-2f96-487e-b740-b5dab6f4fb75"
+    },
+    {
+      "claim_id": "0d5094b5-e794-49b7-b8ab-fca64135665d",
+      "result_id": "b1e78159-2f96-487e-b740-b5dab6f4fb75"
+    },
+    {
+      "claim_id": "1d3c1eb7-a258-4fdc-9267-710850220aca",
+      "result_id": "b1e78159-2f96-487e-b740-b5dab6f4fb75"
+    },
+    {
+      "claim_id": "af9fa18d-b0a5-41f3-ba7c-e140b33df042",
+      "result_id": "b1e78159-2f96-487e-b740-b5dab6f4fb75"
+    },
+    {
+      "claim_id": "90a46460-af16-409c-8763-84d920db8548",
+      "result_id": "b1e78159-2f96-487e-b740-b5dab6f4fb75"
+    },
+    {
+      "claim_id": "dae50382-b2ee-47ec-93f5-b34d831ea335",
+      "result_id": "b1e78159-2f96-487e-b740-b5dab6f4fb75"
+    },
+    {
+      "claim_id": "5bdf09ef-9156-4d22-b271-b0361712e95f",
+      "result_id": "b1e78159-2f96-487e-b740-b5dab6f4fb75"
+    },
+    {
+      "claim_id": "049973c9-27d3-4c0c-b2c3-d98f4d49ed4d",
+      "result_id": "b1e78159-2f96-487e-b740-b5dab6f4fb75"
+    },
+    {
+      "claim_id": "3792317b-1128-4044-a4af-dd7a802713c2",
+      "result_id": "cb060518-1a69-4da1-8ef5-39f9d41e3980"
+    },
+    {
+      "claim_id": "d2edee89-ab0e-4f41-9eed-2d00c524a315",
+      "result_id": "cb060518-1a69-4da1-8ef5-39f9d41e3980"
+    },
+    {
+      "claim_id": "0220b203-25f9-4670-8e5b-bb679aeadf8a",
+      "result_id": "cb060518-1a69-4da1-8ef5-39f9d41e3980"
+    },
+    {
+      "claim_id": "00beb3b2-91a1-4ed1-b872-3409c1083c71",
+      "result_id": "cb060518-1a69-4da1-8ef5-39f9d41e3980"
+    },
+    {
+      "claim_id": "bc0c8fae-1738-49f5-9c04-e437598272dc",
+      "result_id": "cb060518-1a69-4da1-8ef5-39f9d41e3980"
+    },
+    {
+      "claim_id": "3f8e960f-697d-471e-b981-9f8c172dc498",
+      "result_id": "cb060518-1a69-4da1-8ef5-39f9d41e3980"
+    },
+    {
+      "claim_id": "92e39841-d458-4818-897d-7782ec25d70e",
+      "result_id": "cb060518-1a69-4da1-8ef5-39f9d41e3980"
+    },
+    {
+      "claim_id": "f7ebb097-1ecd-4af6-8fdd-d3156cab95ad",
+      "result_id": "db9650fe-4baf-4cdd-a302-02881a87d0a5"
+    },
+    {
+      "claim_id": "846a4f9a-b2d9-4d8a-ab84-cecd51d1db18",
+      "result_id": "db9650fe-4baf-4cdd-a302-02881a87d0a5"
+    },
+    {
+      "claim_id": "9b0ae77c-ec1f-4a1d-bec9-1b98afe541f0",
+      "result_id": "db9650fe-4baf-4cdd-a302-02881a87d0a5"
+    },
+    {
+      "claim_id": "721ca3a1-c4f7-4543-b12c-f84b2d94211f",
+      "result_id": "db9650fe-4baf-4cdd-a302-02881a87d0a5"
+    },
+    {
+      "claim_id": "ae73f181-4839-4c5a-9870-6691bc7458fe",
+      "result_id": "db9650fe-4baf-4cdd-a302-02881a87d0a5"
+    },
+    {
+      "claim_id": "6bf2ea1e-9d52-4fef-9d5d-a779f0a51b11",
+      "result_id": "db9650fe-4baf-4cdd-a302-02881a87d0a5"
+    },
+    {
+      "claim_id": "e83b83af-f5c1-49e5-ba2b-61704e4f588f",
+      "result_id": "28e197da-c49a-447f-96dd-fd115ddb8c59"
+    },
+    {
+      "claim_id": "8ea26be9-ff84-49ba-ba04-02d89985358a",
+      "result_id": "28e197da-c49a-447f-96dd-fd115ddb8c59"
+    },
+    {
+      "claim_id": "fb4a4b80-131b-4147-8fb4-44d4f6a8ab69",
+      "result_id": "c517a971-32f5-4b27-8bc8-aad77ac945ab"
+    },
+    {
+      "claim_id": "55fe1073-0544-4686-89f7-87509d4234ca",
+      "result_id": "c517a971-32f5-4b27-8bc8-aad77ac945ab"
+    }
+  ],
+  "comparisons": []
+}

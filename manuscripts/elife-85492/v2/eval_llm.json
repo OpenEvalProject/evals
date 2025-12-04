@@ -1,0 +1,407 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Simulation studies demonstrate that even for relatively simple admixture graphs (8-9 populations, 4-5 admixture events), the findGraphs method frequently identifies alternative models that fit nominally or significantly better than the true topology, with high topological diversity among well-fitting models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C39 and C43-C45 are directly supported by simulation data presented in Figure 1, showing that 60-100% of simulated datasets had at least one AG fitting significantly better than the true model depending on parsimony constraints. The high topological diversity is demonstrated visually in Figure 1e and quantitatively described in the text.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C155"
+    ],
+    "result": "Re-analysis of 22 published admixture graphs from 8 studies revealed that for 19 out of 22 cases, alternative models with equal or better fit were identified, with many showing qualitatively different topological features regarding population history inferences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C51 and C155 are strongly supported by comprehensive re-analysis data presented in Table 1, Figure 2, and detailed case studies. The systematic application of findGraphs to published datasets with bootstrap model comparison provides robust evidence for the existence of alternative well-fitting models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C52",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Re-analysis of the Bergstr\u00f6m et al. 2020 dog population history study identified an alternative model that fits nominally better and shows greater congruence with human population history, suggesting that parsimony constraints in the original exhaustive search may have missed the true topology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C62 are supported by the re-analysis data (Figure 3a, Table 1) showing a nominally better-fitting alternative model (p=0.332). The parallel between the alternative dog model and established human population history patterns (C55-C58, supported by citations) strengthens the plausibility of the alternative model, though the authors appropriately note this doesn't prove it's correct.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Re-analysis of the Lazaridis et al. 2014 European population history study found 40 alternative models fitting nominally or significantly better than the published model, though most support the core conclusion of three-way admixture in modern Europeans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C72 are supported by the re-analysis showing 40 better-fitting models out of 306 distinct graphs (C64), with some fitting significantly better (C65). While most alternatives support the three-way admixture conclusion (C66), the existence of 247 models fitting not significantly worse (C71) with topological diversity demonstrates model non-uniqueness (C72).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Re-analysis of the Shinde et al. 2019 Indus Valley study shows that under strict parsimony (3 admixture events), the published model is relatively stable, but relaxing parsimony to 4 events reveals high topological diversity, indicating that key historical conclusions depend critically on the parsimony assumption.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C87 are supported by systematic re-analysis with different parsimony constraints. With 3 admixture events, only 4 alternative topologies fit nominally better (C79), all sharing key features (C80). However, qpAdm analysis (C83) and exploration with 4 admixture events (C84-C85) reveal that the parsimony constraint is contradicted by f-statistic evidence, making the key historical conclusion (C86) dependent on an unjustified assumption (C87).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Re-analysis of the Librado et al. 2021 horse domestication study reveals that the published models with 3-5 admixture events fit the data extremely poorly (WR=23.9 SE for 3 events), and only models with 8-9 admixture events achieve acceptable fits, with many contradicting key inferences from the original study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C97 are strongly supported by quantitative fit statistics (C91: WR=23.9 SE) and systematic exploration showing acceptable fits only with 8-9 admixture events (C92). Among 16 temporally plausible models, 13 contradict the inference about CWC-Western steppe gene flow (C94), and only 8 support the Tarpan ancestry model (C97), demonstrating instability of key conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Re-analysis of the Hajdinjak et al. 2021 Upper Paleolithic study found that 71.4% of alternative models fit nominally better and 15.7% significantly better than the published model, with none of the 32 temporally plausible alternatives supporting the key finding of gene flows from Bacho Kiro IUP to all three of Ust'-Ishim, Tianyuan, and GoyetQ116-1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C106 are supported by systematic re-analysis data (Table 1, Figure 2, Figure 3c). The poor absolute fit (WR=4.8 SE, C100) and evidence of overfitting (C101) are demonstrated. Critically, manual inspection of 50 best-fitting topologies identified 32 as temporally plausible (C103), but none supported the key inference about Bacho Kiro IUP gene flows (C104), undermining a central conclusion of the original study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "Re-analysis of the Lipson et al. 2020b African population history study found high topological diversity among well-fitting models, with none of the four key AG features from the original study consistently supported across temporally plausible alternatives.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C113 are supported by re-analysis of 2,000 models showing 11.9% fit nominally better (C108), with evidence of overfitting (C110, Figure 2). The high topological diversity (C111, Figure 4a) and lack of consistent support for any of the four key features (C112, Table 2) demonstrate that the ancestral relationships of Shum Laka individuals remain unresolved (C113).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "Re-analysis of the Wang et al. 2021 East Asian population history study found that 1,724 of 1,778 alternative models fit nominally better than the published model, with the key inference about ubiquitous Andamanese-related gene flow in East Asia not supported by f-statistic analysis alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C122 are supported by systematic re-analysis (Table 1) showing 97% of models fit nominally better and 12.6% significantly better (C116). Among temporally plausible models, only 0-2 East Asian groups showed Onge-related ancestry (C117), while 19 showed European-related gene flows (C118). The best alternative model fitting significantly better (p=0.028, C120) contradicts the key inference (C121-C122).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138"
+    ],
+    "result": "Re-analysis of the Sikora et al. 2019 study found that for the 'Western' graph, the direction of gene flow between Mal'ta and CHG cannot be resolved by AG analysis, with 27 of 29 plausible models supporting the opposite direction from the published model; for the 'Eastern' graph, only one of three key features was universally supported.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C123-C138 are supported by systematic re-analysis of both graphs. For the Western graph, 27/29 plausible models support gene flow opposite to the published direction (C127), consistent with qpAdm analyses (C128). For the Eastern graph, only feature 2 was universally supported among 97 plausible models (C134), while features 3 and 1 were supported by 83/97 and 28/97 models respectively (C135-C136).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C156",
+      "C157"
+    ],
+    "result": "The authors developed findGraphs, a new method for automated admixture graph topology optimization that combines advantages of automated and manual approaches by allowing external information to be encoded as constraints, implemented in ADMIXTOOLS 2 with substantial performance improvements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C29 and C33-C36 describe the methodological contribution, which is demonstrated through successful application to simulated and real datasets throughout the manuscript. The conceptual innovation (C28) of exploring AG space rather than finding single models (C29) is clearly implemented. Performance gains (C34-C35) and new features (C36) are stated but specific benchmarks are not provided in the main text.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C31",
+      "C32"
+    ],
+    "result": "The study developed bootstrap-based methods for obtaining confidence intervals and p-values for model parameters and for comparing fits between models, addressing limitations of AIC/BIC approaches where effective degrees of freedom depend on graph topology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C32 are supported by the methodology described and applied throughout the manuscript (referenced in Appendix 1). The bootstrap model comparison method is used consistently to assess statistical significance of fit differences (e.g., C52, C65, C120). The limitation of AIC/BIC for AGs (C32) is a valid theoretical point supported by the topology-dependent nature of model complexity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "Admixture graphs are defined as directed acyclic bifurcating graphs with edges representing genetic drift and gene flow, fitted to f-statistics which measure allele frequency correlations between populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1 and C5-C10 provide definitional and mathematical background that is well-established in population genetics, supported by appropriate citations (Patterson et al. 2012, Lipson 2020a, etc.). These are standard definitions in the field and form the necessary foundation for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Previously published methods for finding fitting admixture graphs had three key limitations: not reliably indicating whether models are unique, not providing formal goodness-of-fit tests, and not testing statistical significance of fit differences between models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C15 accurately characterize limitations of prior methods (qpGraph, TreeMix) based on the authors' analysis and are supported by the demonstration throughout the manuscript that these limitations led to overconfidence in published models. The inference is reasonable given the evidence presented in the re-analyses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Exhaustive approaches to testing all possible admixture graphs are limited to small graphs (typically \u22646 groups, 2 admixture events) due to combinatorial explosion, and can miss important alternative models when parsimony constraints are applied or additional populations are excluded.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C19 are supported by citation to existing implementations (C16), computational complexity arguments (C17), and case study evidence (C18-C19, particularly the Bergstr\u00f6m et al. re-analysis showing how adding a population revealed a missed model with 3 admixture events).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Manual construction of admixture graphs, while able to incorporate external knowledge and human judgment, has the weakness of potentially validating user biases and missing alternative topologies that may better represent true history.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C26 provide a balanced assessment of manual approaches, supported by extensive citations to studies using these methods (C22). The strengths (C23-C24) and weaknesses (C25-C26) are reasonable inferences supported by the case study evidence presented in the Results section.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Some admixture events are indistinguishable with f-statistics (e.g., successive gene flows between lineages with no intervening branches), making optimal complexity class selection for topology search non-straightforward for random histories.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C42 describe a theoretical limitation of f-statistics that is well-established knowledge (C40) and is demonstrated in the simulation results where models with n events could be overly complex (C41-C42). This is a valid inference from the simulation data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146"
+    ],
+    "result": "While admixture graphs represent a powerful conceptual framework, manual construction without automated exploration can lead to overconfidence, and the ideal outcome of identifying uniquely fitting models is almost never achieved for graphs with >8 populations and >3 admixture events.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C139-C146 synthesize the main findings and recommendations. The inference about overconfidence (C140) is supported by the comprehensive re-analysis data. The statement about ideal outcomes rarely being achieved (C142) is supported by the authors' experience and the case studies presented. The recommendation for rigorous protocols (C146) follows logically from the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C147",
+      "C148",
+      "C149",
+      "C150"
+    ],
+    "result": "The proposed guidelines for admixture graph analysis are analogous to protocols introduced in medical genetics during the candidate gene association study reproducibility crisis, where rigorous standards for statistical significance and correction for multiple testing were established.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C147-C150 draw an analogy to medical genetics history, supported by appropriate citations (Ioannidis 2005, Hirschhorn and Daly 2005, etc.). The analogy is apt given the similar issues of multiple testing, publication bias, and need for rigorous standards, though the specific solutions differ between fields.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C151",
+      "C152",
+      "C153",
+      "C154"
+    ],
+    "result": "Sampling admixture graph space is useful for modeling population histories, but finding robust and accurate models is challenging because f-statistics are usually insufficient for identifying uniquely fitting models, necessitating incorporation of other evidence sources.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C151-C154 summarize the main conclusions of the study, directly supported by the comprehensive re-analysis of published models showing non-uniqueness of well-fitting models. This is a well-supported inference from the data presented throughout the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165"
+    ],
+    "result": "The limitations identified for complex admixture graph fitting do not invalidate other uses of f-statistics, including negative f3-statistics for detecting admixture, f4/D-statistics for testing population relationships, qpWave for testing ancestral population numbers, and qpAdm for estimating mixture proportions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C158-C165 appropriately clarify the scope of the study's concerns. These other methods remain valid because they either test specific hypotheses (C159-C161) or rely on empirical covariance matrices rather than specific deep history models (C162-C163). This is an important clarification supported by established knowledge and appropriate citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "result": "Most published studies have identified fitting admixture graphs through manual processes, and in nearly all cases many alternative models fit nominally or significantly better than published ones, suggesting strong claims should only be made when all well-fitting temporally plausible models share common features.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C4 represent the core findings and recommendations of the study. C2 is supported by literature review and citations. C3 is strongly supported by the systematic re-analysis data (Table 1, 19/22 cases). C4 is a reasonable recommendation based on the evidence, though it represents a normative conclusion rather than an empirical finding.",
+    "result_type": "MAJOR"
+  }
+]

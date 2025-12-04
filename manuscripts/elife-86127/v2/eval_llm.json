@@ -1,0 +1,390 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "The authors constructed a harmonized scRNA-seq atlas of the type II neuroblast lineage that captures molecularly and functionally defined stages of differentiation, including type II neuroblasts, Ase- and Ase+ immature INPs, young and old INPs, GMCs, neurons, and glia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C38 provide convergent evidence from scRNA-seq data showing that the atlas captures known cell types with expected marker expression patterns (C36, C37) and dynamic transcriptional states during differentiation (C38). The harmonization with prior datasets and validation with established markers (dpn, erm, ase, ham) supports the quality of the resource.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "FruC is identified as the predominant Fru isoform specifically expressed in type I and II neuroblasts but rapidly downregulated in differentiating progeny, with fru transcripts highly enriched in neuroblasts compared to immature INPs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C44 provide multiple lines of evidence: scRNA-seq shows fru enrichment in neuroblasts (C25, C39), protein analysis confirms FruC::Myc specific expression in neuroblasts but not progeny (C42, C43), and isoform-specific tagging demonstrates FruC is the predominant neuroblast isoform while FruA/B are ubiquitous (C43, C44). The convergence of transcriptomic and protein data strongly supports this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Loss of fruC function increases expression of Notch downstream-effector genes (Dpn, E(spl)m\u03b3) in immature INPs, while FruC overexpression reduces stemness gene expression and promotes premature INP commitment, demonstrating that FruC negatively regulates stemness gene expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C51 provide complementary loss-of-function (C46-C49) and gain-of-function (C50) evidence. The quantification showing >80% of fruC-mutant immature INPs ectopically express Dpn/E(spl)m\u03b3 vs <15% in wild-type (C47-C48) provides strong statistical support. FruC overexpression causing reduced cell diameter and precocious Ase expression (C50) confirms the negative regulatory role.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "FruC overexpression partially restores differentiation in brat-null brains by increasing INPs, GMCs, and neurons, and this effect is mediated through transcriptional repression as demonstrated by the ERD fusion construct.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C57 establish the functional consequence and mechanism. The brat-null background provides a sensitized system where translational control is compromised (C52-C53). Both full-length FruC and FruC-ERD fusion restore differentiation (C54, C56), demonstrating transcriptional repression is sufficient (C57). The use of the ERD domain is well-established in the field for testing repressor function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "FruC binds 9,301 genomic regions in type II neuroblasts, preferentially targeting promoters (59%) over enhancers (29%), with 74% of genes uniquely transcribed in neuroblasts bound by FruC compared to 41% in randomized controls, including stemness genes Notch, dpn, E(spl)m\u03b3, klu, and tll.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C65 present comprehensive CUT&RUN data with appropriate controls. The preferential binding to promoters vs random (C59-C60), overlap with accessible chromatin (C61), and specific enrichment at known stemness genes (C62) provide convergent evidence. The statistical comparison to randomized controls (C63-C64) strengthens the conclusion that FruC preferentially targets neuroblast-specific genes (C65).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Su(H), the DNA-binding component of the Notch transcriptional activator complex, binds 305 regions in 112 genes in type II neuroblasts, with 95.2% of Su(H)-bound promoters and 90.8% of enhancers overlapping with FruC-bound peaks, indicating FruC regulates Notch pathway genes by occupying functionally relevant regulatory elements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C70 demonstrate extensive co-occupancy of FruC and Su(H) at Notch pathway genes. The high percentage overlap (C69) is statistically compelling, and the enrichment of Su(H) binding at neuroblast-specific genes vs random control (C68: 12% vs 0%) supports functional relevance. However, co-occupancy alone doesn't prove functional interaction\u2014additional experiments showing FruC modulates Su(H) activity would strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "The Trithorax-like (Trl) transcription factor motif is significantly enriched in FruC-bound promoters and enhancers, with 85.4% of Trl-bound promoters and 87.8% of enhancers overlapping with FruC-bound regions, suggesting FruC may function together with Trl to regulate stemness gene transcription.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C76 provide motif analysis (C71) supported by prior literature (C72), establish biological plausibility through Trl's known interactions with PRC2 (C74), and demonstrate extensive genomic co-occupancy (C75). However, the conclusion that FruC functions together with Trl (C76) is speculative\u2014no direct functional evidence of cooperation is provided. Co-occupancy could reflect independent binding to similar regulatory contexts.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Loss of fruC function enhances the supernumerary neuroblast phenotype in brat-hypomorphic brains, with fruC-null brains showing greater than twofold increase in supernumerary neuroblasts compared to fru heterozygotes, supporting that FruC fine-tunes Notch pathway activity during asymmetric neuroblast division.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C81 establish functional significance using a sensitized genetic background. The dose-dependent enhancement (fru-/+ < fru-/-) (C79-C80) provides strong evidence for FruC's role. The brat-hypomorphic background is well-validated as a readout for Notch pathway activity (C78), making this an appropriate functional assay. The >2-fold increase is statistically significant based on the figures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "The supernumerary neuroblast phenotype in numb-hypomorphic brains provides a functional readout of Notch activity, and loss of fruC function enhances this phenotype in a dose-dependent manner, demonstrating that FruC fine-tunes Notch downstream-effector gene transcription.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C86 validate the numb-hypomorphic system as a Notch readout using MamDN (C82-C83) and demonstrate dose-dependent enhancement by fruC loss (C84-C85). The use of two independent hypomorphic backgrounds (brat and numb) strengthens the conclusion. The validation with dominant-negative Mam is critical for establishing that the phenotype reflects Notch activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Single-molecule FISH demonstrates that fruC knockdown significantly increases nascent transcription of Notch, dpn, and klu in neuroblasts while not affecting the control gene CycE, and RNAi knockdown of E(spl)m\u03b3 suppresses the enhanced supernumerary neuroblast phenotype in numb-hypomorphic fru heterozygotes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C91 provide direct transcriptional evidence using sm-FISH with appropriate controls. The use of intron probes to measure nascent transcription (C87-C88) is technically sound, and the CycE negative control (C87) demonstrates specificity. The genetic suppression by E(spl)m\u03b3 RNAi (C90) provides functional validation that increased Notch target gene transcription drives the phenotype. The convergence of transcriptional and genetic evidence strongly supports the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Loss of fruC function does not significantly increase H3K27ac levels at FruC-bound loci compared to the genome overall, with only 3.4% of FruC-bound regions showing >2-fold increase in H3K27ac, indicating H3K27 deacetylation plays a minor role in FruC-mediated gene regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C95 systematically test the H3K27ac hypothesis using genome-wide CUT&RUN. The comparison of FruC-bound regions (3.4% increased) to genome-wide changes (14.2% increased) (C92-C93) demonstrates no enrichment at FruC targets. The conclusion that H3K27 deacetylation plays a minor role (C95) is appropriately cautious and supported by the data. This negative result is important for ruling out alternative mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Loss of fruC function does not significantly increase H3K4me3 levels at FruC-bound loci compared to the genome overall, with only 7.45% of FruC-bound regions showing >2-fold increase, indicating H3K4 demethylation is unlikely to play a role in FruC-mediated gene regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C99 parallel the H3K27ac analysis for H3K4me3. The comparison shows no enrichment of changes at FruC-bound loci (7.45%) compared to genome-wide (26.7%) (C96-C97), supporting the conclusion that H3K4 demethylation is not the mechanism (C99). This systematic testing of alternative histone modifications strengthens the overall mechanistic model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Loss of fruC function leads to significant decreases in H3K27me3 at FruC-bound regions, with 43.3% of FruC-bound regions showing >2-fold decrease compared to 18.1% genome-wide, and H3K27me3 levels at FruC-bound peaks are significantly lower than canonical Polycomb domains, indicating FruC fine-tunes gene transcription by promoting low-level H3K27me3 enrichment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C106 provide the key mechanistic insight. The enrichment of H3K27me3 decreases at FruC-bound loci (43.3% vs 18.1% genome-wide) (C101-C103) is statistically compelling. The demonstration that FruC-bound peaks have 3-fold less H3K27me3 than canonical Pc domains (C109) is critical for establishing the 'low-level enrichment' model (C106). The convergence of loss-of-function effects and quantitative comparisons strongly supports this novel mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "Genome-wide analysis of H3K27me3 distribution shows that FruC-bound peaks have 3-fold less H3K27me3 coverage than canonical Polycomb domains, with more bins showing reduced reads in fruC-null brains at FruC-bound regions, confirming that FruC promotes low-level H3K27me3 enrichment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C110 provide quantitative validation of the low-level enrichment model using unbiased binning analysis. The 3-fold difference in coverage (C109) is substantial and the shift in read distribution at FruC-bound regions (C108) provides independent confirmation. This analysis addresses potential concerns about the biological significance of 'low-level' enrichment by quantitatively comparing to canonical Polycomb repression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "PRC2 core components Su(z)12 and Caf-1 are enriched at FruC-bound cis-regulatory elements in Notch, dpn, and E(spl)m\u03b3, with most FruC-bound peaks in neuroblast-specific genes showing PRC2 enrichment, supporting that FruC functions through low-level H3K27me3 enrichment to fine-tune gene transcription.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C115 establish the mechanistic link between FruC and PRC2. The enrichment of both PRC2 subunits at FruC-bound peaks (C112-C114) provides strong evidence for recruitment or co-occupancy. The convergence with H3K27me3 data (previous result) supports the model. However, the directionality of the relationship (does FruC recruit PRC2 or vice versa?) is not established\u2014this would require additional experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "Reducing PRC2 function through heterozygosity of E(z) or Caf-1 does not cause supernumerary neuroblasts alone but strongly enhances the phenotype in numb-hypomorphic brains, identical to fruC loss-of-function, demonstrating that PRC2 fine-tunes gene expression during asymmetric neuroblast division.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C118 provide critical functional validation that PRC2 acts in the same pathway as FruC. The genetic interaction (no effect alone, enhancement in sensitized background) (C116) parallels the fruC results, and the identical phenotype (C116) strongly supports the model that FruC and PRC2 function together (C118). This is a key result linking the genomic and functional data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C119",
+      "C120"
+    ],
+    "result": "The authors propose that FruC functions together with PRC2 to dampen gene expression in neuroblasts by promoting low-level H3K27me3 enrichment at enhancers and promoters, and that local low-level enrichment of repressive histone marks can fine-tune gene expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C120 represent the integrated model supported by multiple lines of evidence: FruC binding at target genes, H3K27me3 enrichment at FruC-bound sites, PRC2 co-occupancy, and parallel genetic interactions. The model is well-supported by the data, though the precise molecular mechanism of how FruC recruits or cooperates with PRC2 remains to be determined. The proposal about low-level repressive marks (C120) is a novel conceptual contribution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C28",
+      "C29"
+    ],
+    "result": "Loss of fruC function alone has no effect on INP commitment but enhances immature INP reversion to neuroblasts in numb- and brat-hypomorphic brains, demonstrating that FruC fine-tunes rather than determines cell fate decisions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C29 establish the 'fine-tuning' concept that is central to the paper. The lack of phenotype in wild-type background (C28) combined with enhancement in sensitized backgrounds (C29) demonstrates that FruC modulates rather than switches gene expression. This is critical for distinguishing FruC from other transcriptional repressors like Erm/Ham that can override Notch signaling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "The FruC-PRC2-H3K27me3 molecular pathway fine-tunes stemness gene expression in neuroblasts by promoting low-level H3K27me3 enrichment in cis-regulatory elements, with reduced PRC2 function phenocopying fruC loss-of-function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C33 represent the main conclusion integrating all prior results. The convergence of genomic (C30-C31) and genetic (C32) evidence strongly supports this pathway model. The parallel phenotypes of fruC and PRC2 reduction (C32) provide key functional validation. This represents a novel mechanism for gene regulation that differs from canonical Polycomb repression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "The mechanistic correlation between FruC-mediated downregulation of Notch pathway genes and PRC2-mediated low-level H3K27me3 enrichment appears broadly applicable to genes promoting stemness or priming differentiation in neuroblasts, and may be relevant to renal stem cells where fru is also enriched.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124-C125 are well-supported by the genomic data showing this mechanism applies to multiple neuroblast-specific genes beyond just Notch pathway components. However, claims C126-C127 about renal stem cells are speculative\u2014while fru expression in renal stem cells is documented (C126), no functional data in that system is provided (C127). The broader applicability within neuroblasts is supported, but extension to other stem cell types requires additional evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C34",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145"
+    ],
+    "result": "The mechanism of PRC2-H3K27me3 fine-tuning gene expression is likely conserved in metazoans, as PRC2 subunits and H3K27me3 are enriched at active genes in vertebrate embryonic stem cells and other cell types poised for cell-state transitions, with similar patterns of discrete peaks and low-level H3K27me3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C141-C144 accurately cite vertebrate literature showing PRC2/H3K27me3 at active genes, and the similarities noted (C143-C144) are valid. However, claim C142 acknowledges the functional significance in vertebrates 'remains unclear,' and claims C34 and C145 about conservation are speculative. While the parallel is intriguing, no functional experiments in vertebrate systems are presented. The evolutionary conservation claim requires direct experimental validation in other organisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "FruC differs from transcriptional repressors Erm and Ham in that it dampens rather than overrides Notch activity, as evidenced by FruC loss causing modest increases in Notch signaling that can be buffered by other mechanisms, and FruC overexpression not forcing premature differentiation despite reducing stemness markers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C128-C136 provide important context by comparing FruC to well-characterized repressors. The distinction between 'dampening' vs 'overriding' is supported by: (1) FruC loss being buffered in wild-type (C133), (2) FruC overexpression not forcing differentiation (C134), and (3) minimal changes in histone acetylation (C135). The comparison to Erm/Ham (C128-C131) is well-documented in the literature. This conceptual framework (C136) is important for understanding the biological significance of fine-tuning.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C137",
+      "C138",
+      "C139",
+      "C140"
+    ],
+    "result": "FruC-bound genes show undetectable H3K9me3 levels and only a small subset show increased H3K27ac in fruC-null brains, indicating that H3K9me3 enrichment and histone deacetylation play minor roles in FruC-mediated gene regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C137-C140 systematically rule out alternative mechanisms. The H3K9me3 data (C137) and lack of hp1a genetic interaction (C137) argue against heterochromatin-mediated repression. The limited H3K27ac changes (C139) support the conclusion about histone deacetylation (C140). These negative results are important for focusing the mechanism on H3K27me3, though the 'data not presented' for hp1a is a weakness in transparency.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152"
+    ],
+    "result": "FruC and PRC2 might fine-tune Notch pathway gene expression by modulating transcriptional bursts, as Su(H)-bound regions in Notch target genes are co-occupied by FruC and enriched for low-level H3K27me3 and PRC2 subunits, and transcriptional activator complex dwell time affects burst parameters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C146-C151 cite relevant literature about PRC2 and transcriptional bursts (C146-C150) and show co-occupancy of FruC, PRC2, and Su(H) (C151). However, claim C152 about modulating transcriptional bursts is entirely speculative\u2014no burst measurements are presented. While the hypothesis is plausible and well-motivated by the literature, it requires direct experimental validation using live-cell imaging or other burst-measuring techniques. This represents an interesting future direction rather than a supported conclusion.",
+    "result_type": "MINOR"
+  }
+]

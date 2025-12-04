@@ -1,0 +1,323 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "The EpCAM+Vim+CD24+ marker combination identifies EMT CSCs in cell lines. In the EMT-stem sub-line, 41% of cells were EpCAM+Vim+CD24+ compared to 2.1% in the parental CA1 line, and this profile was absent in normal keratinocytes and fibroblasts. Pan-keratin+Vim+CD24+ cells showed no enrichment in the EMT-stem sub-line, indicating that EpCAM, but not pan-keratin, is retained during EMT.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C35 provide converging evidence from cell line experiments with appropriate controls (normal keratinocytes, fibroblasts) and quantification (Figure 1E). The differential staining between EpCAM and pan-keratin strengthens the specificity of the marker combination. Statistical significance is reported (p<0.01, p<0.001).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "EpCAM+Vim+CD24+ cells are specifically enriched in the stroma of metastatic human OSCC tumors. These triple-positive cells were abundant in metastatic tumor stroma but not in non-metastatic tumors or normal regions. EpCAM+Vim+CD24- cells showed stromal enrichment but no difference between metastatic and non-metastatic tumors, and pan-keratin+Vim+CD24+ cells were not detected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C43 are supported by extensive imaging data from 74 human tumors across two cohorts (>12,000 imaging fields). The differential correlation between CD24+ and CD24- populations (C40-C42) and absence of pan-keratin+ cells (C39, C43) provide internal controls. Quantification is shown in Figure 2F with statistical significance (p<0.001).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "EpCAM+Vim+CD24+ cells in tumor stroma are tumor-derived rather than stromal cells. Analysis of published scRNAseq data showed 12% of tumor cells were EpCAM+Vim+CD24+ versus only 0.8% of non-tumor cells. EpCAM is epithelial-specific and not expressed in stromal or immune cells, supporting that these stromal cells are disseminating tumor cells enriched in metastatic specimens.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C49 are supported by independent scRNAseq data analysis (Puram et al., 2017) showing 15-fold enrichment in tumor vs non-tumor cells, and established knowledge about EpCAM specificity (C47). This addresses a critical alternative explanation that the observed cells might be non-tumor stromal cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C80",
+      "C81",
+      "C94",
+      "C95"
+    ],
+    "result": "CD24 expression is required for identifying metastasis-associated disseminating EMT CSCs. EpCAM+Vim+CD24- cells in the stroma did not correlate with metastasis, while EpCAM+Vim+CD24+ cells did. This indicates that CD24, a plasticity marker, is essential for identifying the clinically relevant EMT CSC population.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C51, C80-C81, C94-C95 demonstrate the specific requirement for CD24 through differential correlation analysis. The finding that EpCAM+Vim alone is insufficient (C50, C80, C94) while the triple-positive combination is predictive (C95) is well-supported by quantification data (Figure 2F) and prior characterization of CD24 as a plasticity marker.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C5"
+    ],
+    "result": "Machine learning using EpCAM, Vimentin, and CD24 staining predicts metastasis with high accuracy. An artificial neural network achieved 87-91% F1 accuracy and 87% AUC (94% sensitivity, 82% specificity) on the first cohort. Pan-keratin, Vimentin, and CD24 performed much worse across all classifiers, demonstrating the superiority of the EpCAM-based approach.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C62 and C5 are supported by systematic comparison of multiple machine learning algorithms with 10-fold cross-validation. The poor performance of pan-keratin (C61) serves as an internal negative control. However, the study would benefit from external validation on a completely independent cohort to confirm generalizability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "The trained ANN successfully predicted metastatic status in a blinded validation cohort. The model correctly predicted 54/59 slides (91.5%) from the second cohort. Training a new ANN on the larger second cohort (9000 images) achieved similar accuracy (89%) to the first cohort (3500 images), suggesting a performance plateau.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C66 demonstrate successful blinded validation (C64), though the validation was performed by the same research team on specimens from the same institution. The observation about performance plateau (C66) is supported by comparing two training sets but remains somewhat speculative without systematic investigation of the relationship between training set size and accuracy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C67",
+      "C86"
+    ],
+    "result": "Image-based machine learning using pixel intensity values is essential for high predictive accuracy. ANNs trained on summary cell count data showed no predictive utility compared to random signals, while the image-based ANN achieved high accuracy (ROC curves in Figure 3E).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67 and C86 are supported by direct comparison of different input types (Figure 3E). The finding that summary statistics are insufficient while pixel-level data succeeds suggests the ANN captures spatial patterns or intensity distributions not captured by simple cell counts. This is a valuable methodological insight.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "This is the first use of immunofluorescent staining in a machine learning pipeline for clinical prediction, achieving higher accuracy (87% AUC) than prior studies using immunohistochemistry and other biomarkers (75-82% AUC in breast, OSCC, and colorectal cancers).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C68 about novelty is difficult to verify without comprehensive literature review. Claims C69-C71 accurately cite prior studies but direct comparison is problematic due to different cancer types, patient populations, and validation approaches. The claimed superiority may reflect methodological differences rather than fundamental advantages of the approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C6",
+      "C7",
+      "C25",
+      "C26"
+    ],
+    "result": "Single disseminating EMT CSCs have been identified in human oral cancer specimens and are strongly correlated with metastasis. This addresses a long-standing gap in the field by demonstrating EMT-mediated dissemination in human tumors rather than just experimental models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C75, C6-C7, C25-C26 represent the study's main conclusions, supported by the imaging data (>12,000 fields from 74 tumors) and machine learning predictions. The correlation with metastasis is strong (87-89% accuracy), though causation cannot be established from this observational study. The identification of single disseminating cells is a key advance over prior work limited to cells attached to the tumor body.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Prior scRNAseq studies identified a partial EMT state retaining epithelial gene expression alongside mesenchymal genes, correlated with metastasis. However, epithelial keratins are not retained in the disseminating EMT CSCs identified in this study, only EpCAM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C78 accurately cite prior work (Puram et al., 2017). Claim C79 is supported by the pan-keratin staining results (C33, C39, C43). This reconciles the current findings with prior scRNAseq data by showing that EpCAM, but not keratins, is retained during EMT, representing a more refined understanding of the partial EMT state.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C83",
+      "C82"
+    ],
+    "result": "The EMT CSC state may be more complex than simple epithelial-mesenchymal coalescence, requiring CD24 as a plasticity marker even in cells driven to full morphological EMT by TGF\u03b2 treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C83 is speculative but reasonably supported by the requirement for CD24 beyond just epithelial and mesenchymal markers. Claim C82 cites prior work characterizing CD24 as a plasticity marker. The interpretation is logical but remains somewhat speculative about the mechanistic complexity of the EMT CSC state.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "The ANN may have reached a performance limit, as training on 9000 images achieved similar accuracy to 3500 images. More sophisticated architectures like CNNs might improve prediction, though they require more training data. Additional blinded validation cohorts would strengthen the conclusions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C87-C91 are largely speculative about future improvements. The observation about performance plateau (C87) is based on only two data points. Claims C89-C90 about CNN characteristics are general knowledge but their applicability to this specific problem is uncertain. Claim C91 appropriately acknowledges the need for further validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "The immunofluorescent co-staining approach successfully separates disseminating EMT CSCs from stromal content, overcoming a challenge that confounded prior attempts. Single-cell resolution across thousands of fields enabled observation and quantification of disseminating cells and training of the predictive ANN.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C93, C96-C98 describe methodological strengths supported by the data. The ability to distinguish tumor cells from stroma using EpCAM specificity (C92) and analyze single cells at scale (C97) are key technical advances. Claim C93 cites prior work (Tan et al., 2014) about challenges in developing EMT signatures.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C8",
+      "C9",
+      "C10",
+      "C72",
+      "C73"
+    ],
+    "result": "Prior work established that CSCs undergo EMT to drive metastasis in experimental models, but this process had not been observed in disseminating cells from human tumors in vivo, creating uncertainty about relevance to human cancer. The role of EMT has been inferred from mouse and cell line models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C8-C10, C72-C73 accurately characterize the state of the field based on cited literature. These claims establish the knowledge gap that motivates the study. The characterization of prior evidence and its limitations appears accurate and well-supported by citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "A key challenge in studying metastatic processes in human tumors is the inability to trace cell lineage. Cancer cells undergoing EMT downregulate epithelial markers, becoming indistinguishable from stromal cells once they detach. Prior attempts using epithelial/mesenchymal markers were limited to cells still attached to the tumor body.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C15 accurately describe methodological challenges in the field, supported by appropriate citations. The logical progression from the lineage tracing problem (C11) through marker downregulation (C12-C13) to limitations of prior approaches (C14-C15) is well-reasoned and establishes the rationale for the current study's approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C21",
+      "C22"
+    ],
+    "result": "EMT must be followed by MET for metastatic colonization, making retained plasticity an important feature of metastatic CSCs. EpCAM and CD24 are associated with enhanced MET ability and thus mark EMT CSCs with retained plasticity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C17, C21-C22 are supported by citations to prior work establishing the EMT-MET paradigm and the authors' previous characterization of EpCAM and CD24 as plasticity markers. This provides the biological rationale for using these markers to identify metastasis-relevant EMT CSCs.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "OSCC is a major health burden (>300,000 cases annually, 50% 5-year survival) with frequent lymph node metastasis, the most important outcome predictor. Current difficulty in determining metastatic status leads to sub-optimal treatment decisions. Accurate metastasis prediction could improve clinical management and reduce mortality and morbidity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C58 provide clinical context supported by epidemiological data and citations. These claims establish the clinical significance and potential impact of the work. The statements about current limitations (C56-C57) and potential benefits (C58) are reasonable, though the actual clinical utility would require prospective validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C3",
+      "C18",
+      "C19",
+      "C20",
+      "C23",
+      "C24",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Prior work by the authors identified EpCAM and CD24 as CSC markers retained in EMT cells with enhanced MET ability. This raised the prospect of identifying disseminated EMT CSCs in human specimens using these markers alongside Vimentin, as EpCAM is epithelial-specific and not normally found in stroma. CD44 cannot be used in intact tissue due to trypsin-dependent expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C18-C20, C23-C24, C27-C30 establish the rationale and prior foundation for the study based on the authors' previous work. The logic connecting marker retention (C19-C20) to detectability in stroma (C27-C28) is sound. Technical considerations about CD44 (C29) and Vimentin (C30) are supported by citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C84",
+      "C85"
+    ],
+    "result": "Image-based machine learning approaches employ more inputs and often achieve greater accuracy than simpler approaches, but come at the cost of increased computing requirements and reduced interpretability (the 'black box' problem).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C85 are general statements about machine learning methodology that are well-established in the field. These provide context for the methodological choices in the study and are supported by the comparison showing image-based approaches outperformed summary statistics (C67).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "The study used the CA1 OSCC cell line and EMT-stem sub-line derived from patient biopsies. Tumor specimens from 74 patients (24 in cohort 1, 50 in cohort 2 with 59 slides) were obtained with ethical approval and informed consent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C103 describe the materials and ethical compliance of the study. These are straightforward methodological details that establish the study design and sample sizes. Ethical approval and consent (C101) are appropriately documented.",
+    "result_type": "MINOR"
+  }
+]

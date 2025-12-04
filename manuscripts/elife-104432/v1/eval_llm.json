@@ -1,0 +1,300 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "The authors established an experimental system to measure simultaneous SOS and RAF translocation in single HeLa cells following EGF stimulation. Fluorescently labeled SOS and RAF showed dose-dependent translocation responses, with RAF exhibiting higher saturation than SOS, and minimal response to vehicle control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C48 describe the experimental setup and basic characterization of the system. The data in Figure 1 clearly demonstrates dose-dependent responses with appropriate controls (vehicle stimulation, Western blots for activation). The experimental design is sound with knockout of endogenous SOS1 and validation of the fusion proteins.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Significant bidirectional transfer entropy (TE) was detected between SOS and RAF following EGF stimulation, indicating feedback regulation. The TE measurements were statistically validated through bootstrapping and were significantly higher than vehicle controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C51-C56 establish the core finding of bidirectional TE. The statistical validation is thorough with bootstrap analysis (C54), mutual information controls (C53), and vehicle controls (C55). The Gaussian approximation assumption is validated (C50). The inference of feedback regulation (C56) is reasonable given the backward TE detection.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C111"
+    ],
+    "result": "TE time courses exhibited multiple peaks in both forward and backward directions, with separation between peaks indicating indirect information transfer through hidden states. The pattern of TE exchange between SOS and RAF supports the existence of feedback loops.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C67 and C111 describe the temporal structure of TE. The observation of multiple peaks is clearly shown in Figure 2B. The interpretation that separated peaks indicate hidden states (C61-C64) is theoretically sound based on information theory principles. The evidence for feedback loops from TE exchange patterns (C65-C66) is supported by Appendix 1-figure 7.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "The amount of TE showed bell-shaped dose dependencies that differed from response intensity dose dependencies, with maxima at different EGF concentrations. This demonstrates that TE provides unique information distinct from conventional response analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C69-C72 establish a key finding about the uniqueness of TE measurements. Figure 3A-B clearly shows the different dose-response profiles for intensity versus TE. This is a critical observation demonstrating that TE captures different aspects of signaling than traditional measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C112"
+    ],
+    "result": "Conditional TE analysis revealed that EGF/EGFR-conditioned TE exceeded non-conditioned TE in early peaks, suggesting multiple information tracks including bypasses involving EGF/EGFR outside the canonical EGFR/SOS/RAF pathway, or parallel pathways causing pseudo-correlation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C73-C78 and C112 describe conditional TE results suggesting complex network architecture. While the statistical analysis appears sound (C73), the interpretation is complicated. The authors acknowledge two possible explanations (bypass vs. parallel pathways, C78), and the unexpected result (conditional > non-conditional TE) requires additional validation. The stochastic ODE simulations mentioned (C75) are in supplementary material and not fully evaluated here.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Response/TE relationships differed from dose/TE relationships, with larger causal responses producing smaller TE in the late phase despite inducing larger result responses, possibly due to saturation effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C83 describe response/TE relationships shown in Figure 4. The data clearly shows the patterns described (C79-C82). However, the explanation for smaller TE with larger responses (C83) is speculative. The observation itself is well-supported, but the mechanistic interpretation requires further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C107",
+      "C122"
+    ],
+    "result": "MEK inhibitor treatment blocked ERK activation but minimally affected SOS and RAF translocation responses, while significantly increasing early backward TE. This indicates that MEK/ERK feedback normally suppresses backward TE, reducing RAF's control capability over SOS in the early phase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C88, C107, C122 describe MEK inhibitor effects shown in Figure 5. The Western blot data (C85) clearly shows ERK inhibition. The minimal effect on translocation (C86) with significant effect on TE (C87) is well-documented. The interpretation that feedback suppresses bw-TE (C88) is reasonable and consistent with known feedback loops (C84, C102-C105).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C138",
+      "C139"
+    ],
+    "result": "The R1131K SOS mutation had minimal effects on ERK phosphorylation, RAF activation, and translocation responses, but significantly impacted backward TE with opposite effects in early (increase) and late (decrease) phases. The effects showed complex interactions with MEK inhibitor treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C95, C138-C139 describe R1131K mutation effects shown in Figure 5. The data clearly demonstrates minimal effects on conventional measurements (C89-C90) but significant effects on TE (C91-C93). The phase-dependent and MEK inhibitor-dependent effects (C94-C95) are well-documented, though complex.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "The regulation system changed temporally after EGF stimulation. In the early phase, dysfunction of either MEK/ERK feedback or R1131K increased backward TE, suggesting tandem regulation. In the late phase, R1131K decreased backward TE only without MEK inhibitor, indicating temporal switching in regulatory mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C98, C124-C126 describe temporal regulation patterns shown in Figure 6. The 2D matrix analysis (Figure 6A) clearly demonstrates the phase-dependent effects. The proposed tandem regulation pathway (C124-C126) is a reasonable interpretation consistent with the data, though alternative explanations are not fully excluded.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "A change in TE regulation occurred between 20-30 minutes post-stimulation, coinciding with the transition from peak to plateau phases in translocation responses. This corresponds to the shift from transient to sustained signaling, with reduced EGFR activity in the late phase explaining insensitivity to MEK inhibitor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C132-C137 describe temporal transitions supported by Figure 1D, Figure 2, and citations (C134-C135). The correlation between TE regulation changes and response phase transitions is clearly observed (C132-C133). The interpretation linking reduced EGFR activity to MEK inhibitor insensitivity (C136) is reasonable and supported by supplementary data (Appendix 1-figure 10).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C9",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C158",
+      "C162"
+    ],
+    "result": "TE analysis identified functional disorders in the R1131K SOS mutation associated with Noonan syndrome. The mutation appears to affect the EGFR-to-SOS pathway rather than SOS-to-RAF, being defective in receiving input but not sending output. The abnormality changed temporally, disrupting mutual regulation between SOS and RAF.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C149-C154, C158, C162 describe the characterization of R1131K dysfunction. The TE analysis clearly reveals defects not apparent in conventional measurements (C159). The interpretation that R1131K affects input rather than output (C150-C151) is well-supported by the pattern of fw-TE (unaffected) versus bw-TE (affected). The temporal changes (C152) are documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144"
+    ],
+    "result": "The seemingly contradictory phase-dependent effects of R1131K can be explained by temporal changes in EGFR signaling intensity. R1131K did not affect forward TE in either phase, consistent with a model where the mutation sustains EGFR signaling to counteract negative feedback but cannot boost weak late-phase EGFR signals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C140-C144 provide mechanistic interpretation of R1131K effects. While the temporal explanation (C140) is reasonable, the specific mechanistic models (C143-C144) are speculative. The lack of fw-TE effects (C141-C142) is well-documented but the proposed mechanism requires additional validation beyond the current data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C145",
+      "C146",
+      "C147",
+      "C148"
+    ],
+    "result": "Despite the presence of endogenous SOS2 with similar function to SOS1, R1131K SOS1 appears to have a dominant negative effect on SOS2, and wild-type SOS1 at least partially regulates RAF translocation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C145-C148 address an important experimental consideration. The presence of SOS2 (C145) is acknowledged, and the inference of dominant negative effects (C147) is reasonable given that R1131K affects TE despite SOS2 presence. However, direct evidence for dominant negative effects is not provided, making this interpretation uncertain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C163"
+    ],
+    "result": "MEK inhibition rescued the R1131K-induced abnormality in the late phase but not in the early phase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C163 summarizes the differential rescue effects shown in Figure 5D and Figure 6A. The data clearly shows that MEK inhibitor eliminates the late bw-TE decrease caused by R1131K but does not prevent the early bw-TE increase.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C164",
+      "C165",
+      "C166",
+      "C167",
+      "C168",
+      "C169",
+      "C170"
+    ],
+    "result": "TE analysis enables model-free assessment of intracellular reaction networks from the perspective of control capability rather than activation strength. It successfully predicted feedback loops and multiple pathways, identified disorders from inhibitors and mutations, and provides a complementary approach to conventional ODE analysis with applications in pharmacology and pathology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C164-C170 present the overall conclusions of the study. The demonstration that TE provides unique information (C165-C166) is well-supported by the dose-response and response/TE comparisons. The successful prediction of network features (C167) and identification of disorders (C169) are documented throughout the results. The claim of complementarity to ODE analysis (C168) is reasonable given the model-free nature and different perspective.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C106",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "Multiple possible mechanisms could generate backward TE, including feedback loops from RAF to SOS and/or parallel input paths through EGF/EGFR. Various molecular mechanisms are proposed including liquid-liquid phase separation of EGFR-GRB2-SOS complexes, membrane remodeling, and RAF phosphorylation regulation, with parallel networks currently considered more likely for forward TE.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C99-C121 discuss possible mechanistic explanations for observed TE patterns. While the two general possibilities (feedback vs. parallel pathways, C99) are reasonable, the specific molecular mechanisms (C115-C120) are largely speculative, based on cited work but not directly tested. The authors' preference for parallel networks (C121) is stated as current interpretation rather than definitive conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "The authors developed and applied a method for TE assessment using Gaussian approximation and covariance matrices, applicable to relatively small numbers of time sequences, with bootstrapping for statistical evaluation. This enabled detection of significant TE between SOS and RAF using several hundred single-cell time courses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C28 describe the methodological approach. The method is based on previous work (C25-C26) with appropriate citations. The Gaussian approximation is validated (C50), and bootstrapping provides statistical rigor (C27, C54). The successful application to experimental data (C28) is demonstrated throughout the results.",
+    "result_type": "MINOR"
+  }
+]

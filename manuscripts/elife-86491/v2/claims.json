@@ -1,0 +1,1236 @@
+[
+  {
+    "claim_id": "C1",
+    "claim": "The manuscript presents a Bayesian approach to tracking choice strategies at trial resolution using evidence accumulation.",
+    "claim_type": "EXPLICIT",
+    "source": "Here, we present a simple but effective probabilistic approach to tracking choice strategies at trial resolution using Bayesian evidence accumulation.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated directly in the abstract as the main contribution of the work.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C2",
+    "claim": "The approach identifies both successful learning and exploratory strategies used in decision tasks performed by humans, non-human primates, rats, and synthetic agents.",
+    "claim_type": "EXPLICIT",
+    "source": "We show this approach identifies both successful learning and the exploratory strategies used in decision tasks performed by humans, non-human primates, rats, and synthetic agents.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by the analyses presented across multiple species in the Results section.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C3",
+    "claim": "Win-stay and lose-shift exploratory strategies are used independently during learning and rule changes.",
+    "claim_type": "EXPLICIT",
+    "source": "Both when subjects learn and when rules change the exploratory strategies of win-stay and lose-shift, often considered complementary, are consistently used independently.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is demonstrated through the analysis of rat behavior in Y-maze and lever-press tasks shown in Figure 5.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C4",
+    "claim": "The use of lose-shift is strong evidence that subjects have latently learnt the salient features of a new rewarded rule.",
+    "claim_type": "EXPLICIT",
+    "source": "Indeed, we find the use of lose-shift is strong evidence that subjects have latently learnt the salient features of a new rewarded rule.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by data showing elevated lose-shift probabilities before identified learning trials in Figure 5.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C5",
+    "claim": "The approach has low computational cost ideally suited for real-time analysis and closed-loop control.",
+    "claim_type": "EXPLICIT",
+    "source": "Our approach can be extended to any discrete choice strategy, and its low computational cost is ideally suited for real-time analysis and closed-loop control.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The computational simplicity is explained in the Methods section where the update is described as elementary arithmetic.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C6",
+    "claim": "The posterior distribution for P(strategy_i(t)|choices(1:t)) on trial t is a Beta distribution B(\u03b1_i(t),\u03b2_i(t)).",
+    "claim_type": "EXPLICIT",
+    "source": "The posterior distribution for P(strategyi(t)|choices(1:t)) on trial t is then the Beta distribution B(\u03b1i(t),\u03b2i(t)).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is derived mathematically in the Methods section using Bayesian conjugate priors.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C7",
+    "claim": "Throughout the manuscript, \u03b3=0.9 is used as the evidence decay rate unless otherwise noted.",
+    "claim_type": "EXPLICIT",
+    "source": "Throughout we use \u03b3=0.9 unless otherwise noted; we show below how the choice of \u03b3 affects strategy inference.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated explicitly in the main text and justified through simulations in Figure 2.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C8",
+    "claim": "In the Y-maze task, rats had to choose either the left or right arm and received reward based on four rules applied in sequence: right arm, cued arm, left arm, and uncued arm.",
+    "claim_type": "EXPLICIT",
+    "source": "In every trial, the rat had to choose either the left or right arm (Figure 1a), and received reward based on four rules that were applied in sequence: right arm, cued arm, left arm, and uncued arm.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This describes the experimental design shown in Figure 1.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C9",
+    "claim": "Rules in the Y-maze task switched after 10 consecutive correct trials or 11 correct out of 12 trials.",
+    "claim_type": "EXPLICIT",
+    "source": "These rules switched after 10 consecutive correct trials or 11 correct out of 12 trials.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as part of the task design description.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C10",
+    "claim": "Standard Bayesian inference (\u03b3=1) could not detect any switches in strategy in the synthetic agent simulation.",
+    "claim_type": "EXPLICIT",
+    "source": "We see standard Bayesian inference (\u03b3=1) could not detect any switches in strategy.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is demonstrated in Figure 2e showing that \u03b3=1 fails to track strategy switches.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C11",
+    "claim": "With \u03b3\u22480.9 or less, the algorithm detected switches in 10 trials or fewer and tracked the correct strategy in more than 88% of trials.",
+    "claim_type": "EXPLICIT",
+    "source": "But with \u03b3\u22480.9 or less, the algorithm detected switches in 10 trials or fewer, and tracked the correct strategy in more than 88% of trials (grey shading in Figure 2e).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This performance metric is shown in Figure 2e.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C12",
+    "claim": "The strategy-based criterion identified that learning occurred 12 times across the four rats in the Y-maze task, compared to 10 times using the original criterion.",
+    "claim_type": "EXPLICIT",
+    "source": "In the Y-maze task, this strategy-based criterion identified that learning occurred 12 times across the four rats, compared to 10 times using the original criterion (Figure 3c).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This comparison is shown in Figure 3c.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C13",
+    "claim": "For the lever-press task, the strategy criterion identified learning on average 30 \u00b1 5.8 trials earlier than the original criterion during learning of the first target rule.",
+    "claim_type": "EXPLICIT",
+    "source": "The strategy criterion robustly identified learning earlier, on average 30 \u00b1 5.8 trials earlier, during learning of the first target rule (Figure 3f, left).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This quantitative comparison is shown in Figure 3f.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C14",
+    "claim": "Rats which had been training on a spatial rule continued to have a high probability of executing a spatial strategy on each trial long after the rule had switched to a cue-based target rule.",
+    "claim_type": "EXPLICIT",
+    "source": "In both tasks, rats which had been training on a spatial rule continued to have a high probability of executing a spatial strategy on each trial long after the rule had switched to a cue-based target rule (Figure 4a, b, left panels).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This behavioral pattern is shown in Figure 4a and 4b left panels.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C15",
+    "claim": "The switch from a cued to a spatial rule evoked a considerably faster change in strategy than the spatial to cued switch.",
+    "claim_type": "EXPLICIT",
+    "source": "The switch from a cued to a spatial rule in both tasks evoked a considerably faster change in strategy.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is demonstrated by comparing the left and right panels of Figure 4a and 4b.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C16",
+    "claim": "Rule learning was preceded by a high probability of animals using lose-shift in response to the corresponding feature of the target rule.",
+    "claim_type": "EXPLICIT",
+    "source": "We found strong evidence that rule learning was preceded by a high probability of animals using lose-shift in response to the corresponding feature of the target rule (Figure 5a, d, top pair of panels).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This pattern is shown in Figure 5a and 5d.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C17",
+    "claim": "Immediately after a rule switch, lose-shift in response to the old rule's target feature declined rapidly as animals now persevered in applying the old rule.",
+    "claim_type": "EXPLICIT",
+    "source": "Immediately after a rule switch, lose-shift in response to the old rule's target feature declined rapidly as animals now persevered in applying the old rule, so frequently re-chose the same option after losing (Figure 5b, c, e, f).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is shown in Figure 5b, c, e, and f.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C18",
+    "claim": "Win-stay and lose-shift were independently used and changed during exploration around learning and rule changes.",
+    "claim_type": "EXPLICIT",
+    "source": "Lose-shift and win-stay were thus independently used and changed during exploration around learning and rule changes.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This conclusion is drawn from the independent patterns of win-stay and lose-shift shown in Figure 5.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C19",
+    "claim": "Most participants (13/20) learnt to choose the gain stimulus in the human gain/loss task.",
+    "claim_type": "EXPLICIT",
+    "source": "Applying the same learning criterion as above, of the MAP probability being above 0.5 until the end of the session, our inference algorithm suggests most participants learnt to choose the gain stimulus (13/20), but not to avoid the loss stimulus (5/20) (Figure 6d).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is shown in Figure 6d.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C20",
+    "claim": "Only 5 out of 20 participants learnt to avoid the loss stimulus in the human gain/loss task.",
+    "claim_type": "EXPLICIT",
+    "source": "Applying the same learning criterion as above, of the MAP probability being above 0.5 until the end of the session, our inference algorithm suggests most participants learnt to choose the gain stimulus (13/20), but not to avoid the loss stimulus (5/20) (Figure 6d).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is shown in Figure 6d.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C21",
+    "claim": "Stimulus-driven win-stay and lose-shift were both used for learning gain trials, but not for loss trials in the human task.",
+    "claim_type": "EXPLICIT",
+    "source": "We found stimulus-driven win-stay and lose-shift were both used for learning gain trials, but not for loss trials (Figure 6f).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is shown in Figure 6f.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C22",
+    "claim": "The monkey showed good evidence of learning by the time the criterion was reached, as P(strategy_i(t)|choices(1:t)) for the highest probability option became dominant at least 10 trials before the switch of reward probabilities.",
+    "claim_type": "EXPLICIT",
+    "source": "This confirmed the monkey showed good evidence of learning by the time the criterion was reached, as P(strategyi(t)|choices(1:t)) for the highest probability option became dominant at least 10 trials before the switch of reward probabilities (orange line, Figure 7c).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is shown in Figure 7c.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C23",
+    "claim": "Both repeating and switching strategies in the monkey were dominated by the probability of reward rather than the reward obtained.",
+    "claim_type": "EXPLICIT",
+    "source": "Independent of this evolution, both repeating and switching strategies were dominated by the probability of reward rather than the reward obtained (Figure 7e, g), evidence that the monkey was basing its decisions more on reward probability than immediate value.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is shown in Figure 7e and 7g.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C24",
+    "claim": "Win-stay and lose-shift are dissociable strategies.",
+    "claim_type": "EXPLICIT",
+    "source": "The analysis provides general insights about learning: that win-stay and lose-shift, commonly discussed as though yoked together (e.g. Izquierdo et al., 2017; Miller et al., 2017; Aguillon-Rodriguez et al., 2021; Roy et al., 2021), are dissociable strategies",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by the independent changes in win-stay and lose-shift shown in Figure 5 and discussed in the Results.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C25",
+    "claim": "Subjects' lose-shift choices show latent learning of new rules.",
+    "claim_type": "EXPLICIT",
+    "source": "and that subjects' lose-shift choices show latent learning of new rules.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by the elevated lose-shift probabilities before identified learning trials shown in Figure 5.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C26",
+    "claim": "The approach is computationally efficient and could be used in real time for triggering changes to task parameters or neural stimulation.",
+    "claim_type": "EXPLICIT",
+    "source": "Our approach is computationally efficient, could be used in real time for triggering changes to task parameters or neural stimulation",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The computational efficiency is explained in the Methods section where updates are described as elementary arithmetic.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C27",
+    "claim": "The approach is easily extended to more complex decision-making tasks.",
+    "claim_type": "EXPLICIT",
+    "source": "and is easily extended to more complex decision-making tasks",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is discussed in the Discussion section and supported by the variety of tasks analyzed.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C28",
+    "claim": "Open source toolboxes are provided in MATLAB and Python.",
+    "claim_type": "EXPLICIT",
+    "source": "to aid this we provide an open source toolbox in MATLAB (GitHub, copy archived at Humphries, 2023a) and Python (GitHub, copy archived at Humphries and Powell, 2023b).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The availability of code is stated explicitly.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C29",
+    "claim": "The posterior distribution is updated using Bayes theorem.",
+    "claim_type": "EXPLICIT",
+    "source": "We compute P(strategyi(t)|choices(1:t)) using Bayes theorem to provide an estimate of each probability and the uncertainty of that estimate, given the available evidence up to trial t",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is the fundamental mathematical approach described in the Methods.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C30",
+    "claim": "On each trial, there are two observable outcomes for a given strategy: the subject's choice is either consistent with that strategy (a success, x=1) or it is not (a failure, x=0).",
+    "claim_type": "EXPLICIT",
+    "source": "On each trial, there are two observable outcomes for a given strategy i: the subject's choice is either consistent with that strategy (a success, x=1) or it is not (a failure, x=0).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This defines the binary outcome model used in the approach.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C31",
+    "claim": "The likelihood P(choices(1:t)|strategy_i(t)) is a binomial distribution.",
+    "claim_type": "EXPLICIT",
+    "source": "As each trial in the sequence has two outcomes the likelihood P(choices(1:t)|strategyi(t)) is a binomial distribution.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This follows from the binary outcome model and is standard probability theory.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C32",
+    "claim": "The Beta distribution is the conjugate prior for the binomial distribution.",
+    "claim_type": "EXPLICIT",
+    "source": "The Beta distribution is the so-called conjugate prior for the binomial distribution, meaning that the posterior is also a Beta distribution, dramatically simplifying the calculations in Equation 1.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a well-known result in Bayesian statistics.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C33",
+    "claim": "Using Bayes theorem in this way assumes that the parameter being estimated is stationary.",
+    "claim_type": "EXPLICIT",
+    "source": "Using Bayes theorem in this way assumes that the parameter being estimated \u2013 here P(strategyi(t)|choices(1:t)) \u2013 is stationary.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a fundamental assumption of standard Bayesian inference.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C34",
+    "claim": "Choice behaviour is often non-stationary, as when a subject switches exploratory strategies while learning, or when an experimenter changes the target rule after learning.",
+    "claim_type": "EXPLICIT",
+    "source": "But choice behaviour is often non-stationary, as when a subject switches exploratory strategies while learning, or when an experimenter changes the target rule after learning, forcing a subject to switch away from the learnt strategy.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a general observation about behavior in learning tasks.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C35",
+    "claim": "The non-stationarity problem is solved by weighting the evidence entered into the Bayesian update by its recency.",
+    "claim_type": "EXPLICIT",
+    "source": "We solve the non-stationarity problem by weighting the evidence entered into the Bayesian update by its recency.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is the key innovation of the approach to handle non-stationary behavior.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C36",
+    "claim": "With \u03b3=1 we recover standard Bayesian inference.",
+    "claim_type": "EXPLICIT",
+    "source": "With \u03b3=1 we recover standard Bayesian inference",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is shown mathematically in the Methods section.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C37",
+    "claim": "The lower \u03b3, the stronger recent history is weighted.",
+    "claim_type": "EXPLICIT",
+    "source": "the lower \u03b3, the stronger recent history is weighted.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This follows from the exponential weighting formula in the Methods.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C38",
+    "claim": "Naive use of the Bayesian approach will fail to track changes in non-stationary behavior.",
+    "claim_type": "EXPLICIT",
+    "source": "As we show further below, naive use of the Bayesian approach will fail to track these changes.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is demonstrated in Figure 1\u2014figure supplement 1.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C39",
+    "claim": "The estimated MAP probabilities and inferred changes in strategy are robust to the choice of prior distribution.",
+    "claim_type": "EXPLICIT",
+    "source": "With the decay of evidence, the estimated MAP probabilities, and hence inferred changes in strategy, are robust to the choice of prior distribution (Figure 1\u2014figure supplement 2).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is shown in Figure 1\u2014figure supplement 2.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C40",
+    "claim": "The choice of scalar summaries (MAP and precision) was made to facilitate ease of plotting, quantifying, and combining across subjects the changes to the posteriors.",
+    "claim_type": "EXPLICIT",
+    "source": "The choice of scalar summaries (MAP and precision) here was made to facilitate ease of plotting (Figure 1 onwards), quantifying (Figure 2 onwards), and combining across subjects (Figure 3 onwards) the changes to the posteriors P(strategyi(t)|choices(1:t)).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This explains the methodological choice made by the authors.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C41",
+    "claim": "The full posterior is calculated for each trial, offering rich potential for further applications of this algorithm.",
+    "claim_type": "EXPLICIT",
+    "source": "but we emphasise that the full posterior is calculated for each trial, offering rich potential for further applications of this algorithm.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This highlights the extensibility of the approach.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C43",
+    "claim": "There is a range of \u03b3 over which the algorithm's performance is robust.",
+    "claim_type": "EXPLICIT",
+    "source": "the effects it has on the behaviour of the posterior distribution (Figure 2g\u2013i) and on the ability to correctly track switches in strategy (Figure 2\u2014figure supplement 2 and Figure 2\u2014figure supplement 3), give us a principled range of forgetting rates to consider, and over which the algorithm's performance is robust.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is shown through extensive simulations in Figure 2 and supplements.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C44",
+    "claim": "Rats adopted a lose-shift strategy matching the target rule before the learning of that rule was identified by overt choice behaviour.",
+    "claim_type": "EXPLICIT",
+    "source": "Rats adopted a lose-shift strategy matching the target rule before the learning of that rule was identified by overt choice behaviour (Figure 5a, d).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is shown in Figure 5a and 5d.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C45",
+    "claim": "After a switch in rewarded rules in the lever-press task, rats rapidly started using a lose-shift strategy that matched the new rule while still using a win-stay strategy based on the old rule.",
+    "claim_type": "EXPLICIT",
+    "source": "Conversely, after a switch in rewarded rules in the lever-press task, rats rapidly started using a lose-shift strategy that matched the new rule while still using a win-stay strategy based on the old rule (Figure 5b, c, e, f).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is shown in Figure 5b, c, e, and f.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C46",
+    "claim": "The data are consistent with ideas that negative and positive feedback can independently drive changes in decision making.",
+    "claim_type": "EXPLICIT",
+    "source": "These data are consistent with ideas that negative and positive feedback can independently drive changes in decision making.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an interpretation of the independent changes in win-stay and lose-shift strategies.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C47",
+    "claim": "Learning what not to do is easier than learning what to do.",
+    "claim_type": "IMPLICIT",
+    "source": "Indeed they support the idea that learning what not to do is easier than learning what to do.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is inferred from the earlier appearance of lose-shift compared to win-stay during learning.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C48",
+    "claim": "All three learning criteria showed that switching from a spatial to a cue-based rule is harder than the reverse switch.",
+    "claim_type": "EXPLICIT",
+    "source": "All three criteria showed that switching from a spatial to a cue-based rule is harder than the reverse switch.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is shown in Figure 3 and Figure 3\u2014figure supplement 1.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C49",
+    "claim": "Prior work suggests rats learn spatial rules more easily than visually cued rules.",
+    "claim_type": "EXPLICIT",
+    "source": "This is consistent with prior work suggesting rats learn spatial rules more easily than visually cued rules (Mackintosh, 1969).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This cites prior literature to support the finding.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C50",
+    "claim": "The algorithm quantifies the behavioural diversity in a given task by providing trial-resolution probabilities for each subject.",
+    "claim_type": "EXPLICIT",
+    "source": "As it provides trial-resolution probabilities for each subject, our algorithm quantifies the behavioural diversity in a given task.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is demonstrated through the individual subject analyses in Figures 3 and 4.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C51",
+    "claim": "Recent work by Pillow and colleagues introduced two innovative solutions to the problem of tracking a subject's behaviour.",
+    "claim_type": "EXPLICIT",
+    "source": "Reflecting this urgent need for fine-grained behavioural insights into how subjects make decisions, recent work by Pillow and colleagues introduced two innovative solutions to the problem of tracking a subject's behaviour (Roy et al., 2021; Ashwood et al., 2022).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This cites recent related work.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C52",
+    "claim": "PsyTrack continuously infers the parameters of a psychometric function to track the relative influence of different task features on choice in two-alternative forced-choice tasks.",
+    "claim_type": "EXPLICIT",
+    "source": "One solution (PsyTrack: Roy et al., 2021) continuously infers the parameters of a psychometric function to track the relative influence of different task features on choice in two-alternative forced-choice tasks",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the PsyTrack method from cited work.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C53",
+    "claim": "The approach of Ashwood et al. infers the hidden states underlying decision-making behaviour and the transitions between them, by modelling psychometric functions in each state.",
+    "claim_type": "EXPLICIT",
+    "source": "the other (Ashwood et al., 2022) infers the hidden states underlying decision-making behaviour and the transitions between them, by modelling psychometric functions in each state.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the method from Ashwood et al.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C54",
+    "claim": "The work of Pillow and colleagues applies to well-learnt behaviour, using computationally intensive models fit to all available data post hoc, but lacks the ability to infer when learning occurs.",
+    "claim_type": "EXPLICIT",
+    "source": "Their elegant work applies to well-learnt behaviour, using computationally intensive models fit to all available data post hoc, but lacks the ability to infer when learning occurs.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a comparison with the cited work.",
+    "evidence_type": [
+      "CITATION",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C55",
+    "claim": "The current approach focuses on behavioural strategies adopted during learning and rule switches, accumulates evidence up to trial t so can be used on-line, and is able to infer strategies in a few tens of trials.",
+    "claim_type": "EXPLICIT",
+    "source": "In contrast, our approach focuses on behavioural strategies adopted during learning and rule switches, accumulates evidence up to trial t so can be used on-line, and is able to infer strategies in a few tens of trials (Figures 2 and 6)",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This describes the advantages of the current approach compared to prior work.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C56",
+    "claim": "The current approach lacks a model of the transitions between strategies or the parameters which influence the current strategy.",
+    "claim_type": "EXPLICIT",
+    "source": "but lacks a model of the transitions between strategies or the parameters which influence the current strategy.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This acknowledges a limitation of the current approach.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C57",
+    "claim": "The current approach and that of Pillow and colleagues are complementary, collectively providing a richer toolbox for understanding a subject's behaviour on choice tasks.",
+    "claim_type": "EXPLICIT",
+    "source": "Our approach and that of Pillow and colleagues are thus complementary, collectively providing a richer toolbox for understanding a subject's behaviour on choice tasks.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a synthesis comparing the approaches.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C58",
+    "claim": "The probabilities computed by the algorithm are a description of the observer: what we can tell about the behaviour on trial t from the evidence so far.",
+    "claim_type": "EXPLICIT",
+    "source": "The probabilities computed by our algorithm are a description of the observer: what we can tell about the behaviour on trial t from the evidence so far.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This clarifies the interpretation of the algorithm's output.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C59",
+    "claim": "This Bayesian analysis of behaviour does not imply the animal is behaving in any optimal, Bayesian way, nor that its brain is computing or using probabilities.",
+    "claim_type": "EXPLICIT",
+    "source": "This Bayesian analysis of behaviour does not imply the animal is behaving in any optimal, Bayesian way, nor that its brain is computing or using probabilities (Knill and Pouget, 2004; Fiser et al., 2010; Pouget et al., 2013; Sohn et al., 2019).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This clarifies what the approach does not claim about animal cognition.",
+    "evidence_type": [
+      "INFERENCE",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C60",
+    "claim": "Using a Bayesian strategy analysis could let us formulate questions of optimality in behaviour and look for neural correlates of probabilistic representations.",
+    "claim_type": "EXPLICIT",
+    "source": "Nonetheless, using a Bayesian strategy analysis could let us then formulate those questions of optimality in behaviour and look for neural correlates of probabilistic representations.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This suggests potential future applications.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C61",
+    "claim": "A trial-by-trial analysis of a strategy could let us look for neural correlates, more accurately tracking the changes in neural activity that precede or align with changes in behavioural strategy.",
+    "claim_type": "EXPLICIT",
+    "source": "More generally, such a trial-by-trial analysis of a strategy could then let us look for neural correlates, more accurately tracking the changes in neural activity that precede or align with changes in behavioural strategy (Rich and Shapiro, 2009; Durstewitz et al., 2010; Karlsson et al., 2012; Powell and Redish, 2016; Guise and Shapiro, 2017).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This suggests potential applications for neuroscience research.",
+    "evidence_type": [
+      "SPECULATION",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C62",
+    "claim": "Bayesian inference assumes the parameter being estimated is stationary, but choice strategies are not.",
+    "claim_type": "EXPLICIT",
+    "source": "One issue we faced is that Bayesian inference assumes the parameter being estimated is stationary, but choice strategies are not, so any estimate of their probability must also change.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This identifies a key challenge addressed by the approach.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C63",
+    "claim": "The problem of non-stationarity is solved by weighting the evidence entering the Bayesian update by its recency.",
+    "claim_type": "EXPLICIT",
+    "source": "Here, we solve that problem by weighting the evidence entering the Bayesian update by its recency. This allows tracking the probabilities of strategies as they change, and is robust to the exact weighting used (Figure 2; Figure 2\u2014figure supplement 2 to Figure 2\u2014figure supplement 4).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This describes the solution and shows its robustness through simulations.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C64",
+    "claim": "The choice of how much to decay the influence of past evidence can determine how quickly a change in strategy is detected.",
+    "claim_type": "EXPLICIT",
+    "source": "The choice of how much to decay the influence of past evidence can determine how quickly a change in strategy is detected (Figure 2; Figure 2\u2014figure supplement 2 to Figure 2\u2014figure supplement 4)",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is shown through simulations in Figure 2 and supplements.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C65",
+    "claim": "Having a principled way of varying the weighting \u03b3 of evidence over time could be useful.",
+    "claim_type": "EXPLICIT",
+    "source": "For example, having a principled way of varying the weighting \u03b3 of evidence over time could be useful, potentially so that evidence is rapidly decayed around a switch in strategies and less rapidly during stable execution of a strategy.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This suggests a potential future improvement.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C66",
+    "claim": "All frequentist approaches to analysing the strategies of subjects also have at least one free parameter, namely the length of the time window over which to compute the probability they are using.",
+    "claim_type": "EXPLICIT",
+    "source": "However, all frequentist approaches to analysing the strategies of subjects also have at least one free parameter, namely the length of the time window over which to compute the probability they are using.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a general observation about alternative approaches.",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C67",
+    "claim": "Rather than \u03b3 introducing a further free parameter, it instead makes the inevitable free parameter of time explicit and bounded.",
+    "claim_type": "EXPLICIT",
+    "source": "Thus, rather than \u03b3 introducing a further free parameter, it instead makes the inevitable free parameter of time explicit and bounded: we have placed strong bounds on the values of \u03b3 by showing the trade-off between the speed of detecting a new strategy and the stability of detecting it.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This argues that \u03b3 is not an additional free parameter but makes existing implicit parameters explicit.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C68",
+    "claim": "The algorithm provides rich information about choice behaviour by computing a full posterior distribution for each modelled strategy, for every trial.",
+    "claim_type": "EXPLICIT",
+    "source": "Our algorithm provides rich information about choice behaviour by computing a full posterior distribution for each modelled strategy, for every trial.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the output of the algorithm.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C69",
+    "claim": "The choice of strategies examined is down to the end-user and what questions they wish to ask of their data.",
+    "claim_type": "EXPLICIT",
+    "source": "The richness of the information depends in part on the choice of strategies examined, which is down to the end-user and what questions they wish to ask of their data.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the flexibility of the approach.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C70",
+    "claim": "The range of strategy models usable with the inference algorithm is broad enough to cover many potential questions about decision making: all the algorithm needs is the success or failure to execute a given strategy on trial t.",
+    "claim_type": "EXPLICIT",
+    "source": "But the range of strategy models usable with our inference algorithm is broad enough to cover many potential questions about decision making: all the algorithm needs is the success or failure to execute a given strategy on trial t.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the extensibility of the approach.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C71",
+    "claim": "The approach can be used with more complex models of choice-history strategies than those considered, such as n-back history strategies.",
+    "claim_type": "EXPLICIT",
+    "source": "It can be used with more complex models of choice-history strategies than those considered here: for example, where classic win-stay and lose-shift consider only the previous trial, n-back history strategies (Lau and Glimcher, 2005; Akrami et al., 2018) could capture the effect of choices or outcomes t\u2212n trials ago on the decision at trial t.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This suggests potential extensions of the approach.",
+    "evidence_type": [
+      "SPECULATION",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C72",
+    "claim": "The approach could be used with economic games, tracking the probability of each player using specific response strategies to others' decisions, like Tit-for-Tat.",
+    "claim_type": "EXPLICIT",
+    "source": "It could also be used with economic games, tracking the probability of each player using specific response strategies to others' decisions, like Tit-for-Tat (Axelrod and Hamilton, 1981; Axelrod and Dion, 1988; Nowak and Sigmund, 1993; Ohtsuki et al., 2006).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This suggests potential applications to game theory.",
+    "evidence_type": [
+      "SPECULATION",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C73",
+    "claim": "While all tasks analyzed had two choices, the algorithm can just as easily compute probabilities of choice strategies in tasks with three or more choices.",
+    "claim_type": "EXPLICIT",
+    "source": "And while all tasks here had two choices, the algorithm can just as easily compute probabilities of choice strategies in tasks with three or more choices.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the generalizability of the approach.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C74",
+    "claim": "The computational cost per trial is extremely low, as elementary arithmetic alone is needed for computing the update to the posterior distribution.",
+    "claim_type": "EXPLICIT",
+    "source": "Despite this extensibility, the computational cost per trial is extremely low, as elementary arithmetic alone is needed for computing the update to the posterior distribution.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a key advantage of the approach.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C75",
+    "claim": "The inference algorithm can assess the probabilities of an extensive, flexible range of choice strategies in real time, allowing detailed interrogation and potentially closed-loop control of animal and human behaviour during decision-making tasks.",
+    "claim_type": "EXPLICIT",
+    "source": "Consequently, the inference algorithm we introduce here can assess the probabilities of an extensive, flexible range of choice strategies, and could do so in real time, allowing detailed interrogation and potentially closed-loop control of animal and human behaviour during decision-making tasks.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This summarizes the potential applications of the approach.",
+    "evidence_type": [
+      "INFERENCE",
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C76",
+    "claim": "Rat behavioural data on the Y-maze task came from the study of Peyrache et al., 2009.",
+    "claim_type": "EXPLICIT",
+    "source": "Rat behavioural data on the Y-maze task data came from the study of Peyrache et al., 2009.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This cites the source of the Y-maze data.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C77",
+    "claim": "The Y-maze dataset includes 50 sessions of four male Long-Evans rats performing a cross-modal rule-switch task.",
+    "claim_type": "EXPLICIT",
+    "source": "This dataset includes 50 sessions of four male Long-Evans rats performing a cross-modal rule-switch task.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the Y-maze dataset.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C78",
+    "claim": "In the Y-maze task, rats were trained to self-initiate the trial by running up the central stem of the maze and choosing one of the two arms.",
+    "claim_type": "EXPLICIT",
+    "source": "Rats were trained to self-initiate the trial by running up the central stem of the maze and choosing one of the two arms.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the Y-maze task procedure.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C79",
+    "claim": "In the Y-maze task, the rule was changed within session after performing 10 consecutive trials or 11 out of 12 correct trials.",
+    "claim_type": "EXPLICIT",
+    "source": "The rule was changed within session after performing 10 consecutive trials or 11 out of 12 correct trials.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the rule-switching criterion in the Y-maze task.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C80",
+    "claim": "In the original Y-maze study, learning was defined as the first of three consecutive trials followed by a performance of \u226580% until the end of the session.",
+    "claim_type": "EXPLICIT",
+    "source": "In the original study, learning was defined as the first of three consecutive trials followed by a performance of \u226580% until the end of the session.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the original learning criterion used in the Y-maze study.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C81",
+    "claim": "Rat behavioural data for the lever-press task were taken from 32 male Lister Hooded rats aged 11 weeks at the start of testing and food-restricted throughout behavioural training.",
+    "claim_type": "EXPLICIT",
+    "source": "Rat behavioural data for the lever-press task were taken from 32 male Lister Hooded rats (aged 11 weeks at the start of testing and food-restricted throughout behavioural training)",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the subjects in the lever-press task.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C82",
+    "claim": "The lever-press task was based on a previously published training protocol by Brady and Floresco, 2015.",
+    "claim_type": "EXPLICIT",
+    "source": "The task was run in standard two-lever operant boxes with cue lights above the levers and a food well between them (Med Associates, US) based on a previously published training protocol (Brady and Floresco, 2015).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This cites the source of the lever-press task design.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C83",
+    "claim": "In the lever-press task, after reaching the criterion of 10 consecutive correct trials, the rats had to learn to switch their responses to the second rule.",
+    "claim_type": "EXPLICIT",
+    "source": "After reaching the criterion of 10 consecutive correct trials, the rats had to learn to switch their responses to the second rule: rats which had learnt the spatial rule first were tested on the cue-based rule, and vice versa.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the rule-switching procedure in the lever-press task.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C84",
+    "claim": "Half the rats (N=16) in the lever-press task experienced the spatial rule first and all reached criterion on it and on the subsequent cued rule.",
+    "claim_type": "EXPLICIT",
+    "source": "Half the rats (N=16) experienced the spatial rule first: all reached criterion on it and on the subsequent cued rule.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the performance of one group in the lever-press task.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C85",
+    "claim": "Half the rats (N=16) in the lever-press task experienced the cued rule first: 12 reached criterion so were switched to the spatial rule, which all 12 reached criterion on as well.",
+    "claim_type": "EXPLICIT",
+    "source": "Half (N=16) experienced the cued rule first: 12 reached criterion so were switched to the spatial rule, which all 12 reached criterion on as well.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the performance of the other group in the lever-press task.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C86",
+    "claim": "The strategy-based definition of learning found the same number of learners in each condition of the lever-press task, so N=28 rats throughout for analysis of learning and strategy flexibility.",
+    "claim_type": "EXPLICIT",
+    "source": "Our strategy-based definition of learning (see below) found the same number of learners in each condition, so we have N=28 rats throughout for analysis of learning (Figure 3) and strategy flexibility (Figure 4).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This describes the sample size used in the analyses.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C87",
+    "claim": "In the human gain/loss task, participants (n=20, 10 male, 10 female) performed a two choice task similar to that of Pessiglione et al., 2006.",
+    "claim_type": "EXPLICIT",
+    "source": "Human participants (n=20, 10 male, 10 female) read a participation information leaflet and undertook informed consent. Participants performed a two choice task, similar to that of Pessiglione et al., 2006",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the human participants and task design.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C88",
+    "claim": "In the human gain/loss task, participants had to choose between two arbitrary stimuli that appeared above and below a central fixation point, across three pairs of stimuli corresponding to three interleaved trial types.",
+    "claim_type": "EXPLICIT",
+    "source": "in which they had to choose between two arbitrary stimuli that appeared above and below a central fixation point (Figure 6a), across three pairs of stimuli corresponding to three interleaved trial types.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This describes the task structure shown in Figure 6a.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C89",
+    "claim": "In the human gain/loss task, thirty trials of each type were presented, randomly interleaved.",
+    "claim_type": "EXPLICIT",
+    "source": "Thirty trials of each type were presented, randomly interleaved.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the trial structure of the human task.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C90",
+    "claim": "All human participants were informed that the amount they received would be dependent upon their performance, but all received the same amount (\u00a320) at the end of the task.",
+    "claim_type": "EXPLICIT",
+    "source": "All participants were informed that the amount they received would be dependent upon their performance, but all received the same amount (\u00a320) at the end of the task.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the compensation procedure for human participants.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C91",
+    "claim": "In the non-human primate stimulus-action task, there were six reward probability pairings associated with six visual stimuli per session.",
+    "claim_type": "EXPLICIT",
+    "source": "There were six reward probability pairings associated with six visual stimuli per session.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the task structure for the monkey experiment.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C92",
+    "claim": "In the non-human primate task, each of the six stimuli was presented in a blocked design with the stimulus change and block transition occurring after 80% choices (16/20 trials) of the side with the highest probability of the large reward.",
+    "claim_type": "EXPLICIT",
+    "source": "Each of the six stimuli was presented in a blocked design with the stimulus change and block transition occurring after 80% choices (16/20 trials) of the side with the highest probability of the large reward.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the block-switching criterion in the monkey task.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C93",
+    "claim": "A single session from one monkey was analyzed for the non-human primate task.",
+    "claim_type": "EXPLICIT",
+    "source": "We analysed here a single session from one monkey.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the data analyzed from the monkey experiment.",
+    "evidence_type": [
+      "DATA"
+    ]
+  }
+]

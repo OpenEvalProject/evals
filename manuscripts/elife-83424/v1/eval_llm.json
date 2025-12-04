@@ -1,0 +1,262 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C14",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C27",
+      "C32"
+    ],
+    "result": "The authors developed a dynamically optimized stimulation approach that uses greedy temporal dithering and spatial multiplexing to convert visual stimuli into electrical stimulation patterns. The approach is modular, consisting of three steps: defining an objective function based on linear reconstruction of visual stimuli from neural responses (C20-C23), constraining the solution using a calibrated dictionary of single-electrode responses (C27), and implementing a greedy algorithm that exploits temporal dithering and spatial multiplexing (C3-C5, C32).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The methodological framework is well-described and logically structured across claims C3-C5, C14, C20-C23, C27, and C32. The modular three-step approach (objective, constraint, algorithm) is clearly articulated with explicit mathematical formulations and experimental implementations. The assumptions underlying temporal dithering (slow visual integration) and spatial multiplexing (electrode independence) are stated and justified based on known neuroscience principles.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C17",
+      "C18",
+      "C19",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "The experimental system consisted of a 512-electrode array (60 \u03bcm spacing, 10 \u03bcm diameter electrodes) used for recording and stimulation in ex vivo macaque and rat retinas. Visual and electrical response properties were characterized using established methods, with analysis focused on ON and OFF parasol cells in macaque (and analogous cell types in rat) that formed complete mosaics across the recorded region.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C17-C19, and C89-C102 provide comprehensive methodological details about the experimental system, citing appropriate prior work. The electrode array specifications, stimulation parameters, recording methods, and cell type identification procedures are clearly described. The focus on parasol cells is justified by their complete mosaic coverage and numerical dominance in the recordings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C7",
+      "C15",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "The greedy temporal dithering algorithm substantially outperformed static pixel-wise mapping approaches (analogous to existing retinal implants) in reconstructing visual stimuli from electrically evoked responses. The algorithm was nearly optimal (<10% gap from theoretical optimum) for single-electrode dictionaries, but performance could be improved by ~40% with perfect control, suggesting that enhancing the stimulation dictionary would be beneficial.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C15, C33-C39 are supported by quantitative comparisons shown in Figures 2-3. The performance metrics (reconstruction error) are clearly defined and consistently applied. The comparison with an optimized static mapping provides a generous upper bound for existing approaches, strengthening the claim of substantial improvement. The gap analysis between greedy, optimal, and perfect control algorithms provides useful insights into performance limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C8",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Closed-loop validation experiments in rat retina demonstrated that reconstructions from evoked responses captured spatial structure of target images and showed appropriate differential activation of ON and OFF cells. However, evoked responses produced higher reconstruction error than calibrated responses, potentially due to non-stationarities in ex vivo recordings and/or failures of temporal independence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C8, C40-C45, C60-C62 describe closed-loop validation results shown in Figure 4. While the evoked responses did capture spatial structure (C40-C43), the higher error compared to calibrated responses (C45) raises concerns about the validity of the temporal dithering assumption under experimental conditions. The authors acknowledge this discrepancy and speculate about causes (C62), but do not definitively resolve whether the approach will work as predicted in vivo. The expanded 3-ms stimulation interval used for spike sorting (vs. the intended 0.1-ms interval) further limits the validation of the core temporal dithering concept.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C72"
+    ],
+    "result": "Spatial multiplexing analysis revealed that electrode interactions decreased systematically with distance, with <5% fractional change in activation threshold for electrodes 200 \u03bcm apart. This supports using a spatial exclusion radius to enable simultaneous stimulation of distant electrodes without interference.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C49 and C72 are supported by bi-electrode stimulation experiments shown in Figure 5B. The systematic characterization across 754 electrode pairs and 7 cells provides adequate statistical power. The 200 \u03bcm exclusion radius is empirically justified by the <5% threshold change criterion. However, the analysis is limited to 7 cells from 4 preparations, which may not fully capture variability across retinas or cell types.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C16",
+      "C50",
+      "C51",
+      "C77"
+    ],
+    "result": "The algorithm identified that ~50% of electrodes could be permanently disabled with minimal (<5%) increase in reconstruction error, suggesting a strategy for reducing power consumption in an implant. The approach effectively exploits non-selective activation by optimizing for stimulus reconstruction rather than requiring selective single-cell control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16, C50-C51, and C77 are supported by analysis in Figure 6 showing electrode usage frequency and reconstruction performance with restricted electrode sets. The finding that half the electrodes contribute minimally is practically useful for implant design. The observation that non-selective activation can be beneficial (C77) is an important insight that distinguishes this approach from methods requiring precise single-cell control.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Extension to naturalistic viewing with simulated eye movements showed that the reconstructed visual scene closely matched targets and captured fine details. Fixational eye movements improved reconstruction quality and reduced required electrical stimuli by ~4\u00d7, suggesting more accurate image reconstruction is possible with natural eye movements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C55 are supported by simulations shown in Figure 7. The extension to naturalistic viewing demonstrates practical applicability beyond static images. The beneficial effect of fixational eye movements (C53-C54) is an interesting finding supported by quantitative analysis. However, these are simulations using calibrated responses rather than closed-loop validation, which limits confidence given the discrepancies observed in C45.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Using perceptual similarity metrics (SSIM) instead of mean squared error (MSE) produced similar reconstructions with unlimited stimulation budget but higher-quality reconstructions with limited budgets. This suggests that perceptually accurate metrics could improve implant performance, though real-time implementation requires further development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C59 are supported by analysis in Figure 8. The comparison between MSE and SSIM optimization is methodologically sound, and the finding that SSIM performs better under budget constraints (C58) is practically relevant. The caveat about real-time implementation (C59) appropriately acknowledges current limitations. However, the exhaustive optimization approach used here (rather than greedy) limits direct comparison with the main algorithm.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "The temporal dithering approach assumes visual integration times of tens of milliseconds, based on evidence from flicker fusion, synaptic transfer timescales, and neurophysiological studies. However, RGC spike timing can have millisecond precision under certain conditions, and optimal readout resolution may be ~10 ms for many but not all visual tasks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C67 provide a balanced discussion of the temporal integration assumption, citing extensive prior literature. The authors acknowledge evidence for both slow integration (supporting their approach) and fast temporal precision (potentially challenging it). The synthesis in C67 appropriately qualifies the assumption as likely valid for many but not all conditions. This represents a fair assessment of current knowledge and uncertainty.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C68",
+      "C69"
+    ],
+    "result": "The linear reconstruction assumption is acknowledged as a first-order approximation that is 'almost certainly wrong in detail.' More accurate nonlinear or biologically realistic reconstruction models could improve performance but are not yet feasible for real-time optimization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C69 appropriately acknowledge a key limitation of the approach. The authors are transparent that linear reconstruction is a simplifying assumption made for computational tractability rather than biological accuracy. The suggestion of nonlinear alternatives (C69) with citations is reasonable, though the caveat about real-time implementation is important.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C73"
+    ],
+    "result": "The approach relies on specific electrical stimulation properties: brief low-amplitude pulses evoke single spikes with precise latencies, stimuli at the same electrode separated by \u226510 ms generate independent responses, and these properties should be tested in each neural circuit before application.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C71 cite prior work establishing key properties of electrical stimulation that enable temporal dithering. Claim C73 appropriately recommends validation in each target circuit. These assumptions are critical to the approach and are supported by cited literature, though the recommendation for circuit-specific testing (C73) acknowledges that generalization is not guaranteed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C85",
+      "C86"
+    ],
+    "result": "Potential improvements to the approach include enhancing the single-electrode dictionary with optimized multi-electrode patterns, replacing the greedy algorithm with multi-step optimization, and integrating other methods such as context-dependent preprocessing and exploitation of perceived phosphenes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C75, C85-C86 appropriately discuss potential extensions and improvements, citing relevant prior work. These are reasonable speculations about future directions rather than claims about current performance. The modular framework facilitates such extensions, as noted in C14.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Translation to human retinal implants is supported by physiological similarities between macaque and human retina, but requires several technical innovations: new surgical methods for stable implantation, modifications to handle non-stationarities, inference of cell properties without light responses, accounting for spontaneous activity in degenerated retina, and testing in central retina.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C84 provide a balanced assessment of translational potential and requirements. The speculation about translation (C78) is appropriately qualified by citing physiological similarities, while C79-C84 enumerate specific technical challenges that must be addressed. This represents a realistic appraisal of the path from ex vivo prototype to clinical application.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Neural implants have potential for sensory restoration, but progress has been limited by the difficulty of predicting and controlling neural responses to multi-electrode stimulation due to nonlinear interactions. Epiretinal implants activate surviving RGCs, but indiscriminate activation of multiple cell types has slowed progress toward high-fidelity vision restoration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C9-C13 provide appropriate background and motivation, drawing on established knowledge and prior work. These claims accurately characterize the state of the field and the challenges that motivate the current work. The statements are well-supported by citations and represent fair assessments of prior research.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C76",
+      "C87",
+      "C88"
+    ],
+    "result": "The hardware requirements for the proposed approach (calibration followed by open-loop stimulation) are less stringent than real-time closed-loop systems. The dynamic optimization framework could potentially improve performance of cortical sensory implants for arbitrarily complex stimuli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C88 make reasonable inferences about hardware requirements and broader applicability. The observation that open-loop operation after calibration is less demanding than real-time closed-loop (C76) is logically sound. The speculation about cortical applications (C87-C88) is appropriately qualified and cites relevant prior work on cortical stimulation.",
+    "result_type": "MINOR"
+  }
+]

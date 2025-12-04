@@ -1,0 +1,340 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C65",
+      "C66",
+      "C110"
+    ],
+    "result": "Machine learning classifiers trained on REM sleep EEG data can detect memory reactivation after TMR cues in human REM sleep. Classification performance was significantly higher for the experimental night compared to the adaptation night (p=0.004) and compared to chance (p=0.009), with reactivation most prominent around 1 second after cue onset.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C47-C50, C65-C66, and C110 collectively demonstrate successful detection of memory reactivation in REM sleep using machine learning. The experimental design includes appropriate controls (adaptation night, chance comparison), statistical significance is demonstrated with cluster-based permutation testing, and the temporal pattern is consistent. The adaptation night control (C48) showing no significant classification validates that the effect is memory-specific rather than sound-related.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C51",
+      "C53",
+      "C54",
+      "C67",
+      "C79",
+      "C80"
+    ],
+    "result": "TMR cues elicited increased theta power in both experimental and adaptation nights with no difference between conditions (p=0.68). Classification using only theta band did not differ from chance (p>0.3), indicating that theta activity relates to sound processing rather than memory reactivation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C37 and C51-C54 provide converging evidence that theta responses are sound-related rather than memory-specific. The lack of difference between experimental and adaptation conditions (C36) and the failure of theta-only classification (C53) support this interpretation. The positive control filtering out theta (C55-C57) further validates that reactivation information is carried in other frequency bands.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C61",
+      "C63",
+      "C64",
+      "C81"
+    ],
+    "result": "Classification performance positively correlated with overnight improvement in sequence memory (r=0.56, p=0.04), independent of pre-sleep learning (r=-0.39, p=0.17). However, TMR in REM did not produce overall behavioral benefits compared to the un-cued sequence (p=0.43).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While claims C5, C61, C63-C64, and C81 report a significant correlation between classification and behavior, the small sample size (n=14, acknowledged in C95) limits confidence in this finding. The correlation is significant but modest (r=0.56), and the lack of overall TMR benefit (C59) complicates interpretation. The authors acknowledge this limitation and recommend replication, making the behavioral significance uncertain despite the statistical result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C100",
+      "C101",
+      "C102",
+      "C105"
+    ],
+    "result": "Training classifiers on sleep data and testing on wake data provides more robust detection of reactivation than the reverse approach. This methodological choice ensures that features associated with reactivation in sleep are used by the models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C43 and C100-C102 describe the methodological rationale, while C105 provides empirical validation shown in Figure 2\u2014figure supplement 3. The approach is well-justified: training on wake could overweight features absent in sleep, whereas training on sleep captures reactivation-specific features that can be detected in the stronger wake signals. The comparison in C105 demonstrates this empirically.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C46",
+      "C99",
+      "C126",
+      "C127"
+    ],
+    "result": "An adaptation night control was included where participants heard TMR sounds before they were paired with any memory, ensuring that classification results reflect memory reactivation rather than responses to sounds alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C29, C46, C99, and C126-C127 describe a critical methodological control. The adaptation night provides a within-subjects control for sound-evoked responses, and the null classification result on this night (C48) validates that the experimental night effects are memory-specific. This is a well-designed control that strengthens the main findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C68",
+      "C96"
+    ],
+    "result": "Memory reactivation in REM sleep is delayed compared to wake, with classification more prominent around 0.6s in wake but starting ~0.4s later (~1s) in REM. This temporal pattern is consistent across trials and participants and parallels findings in non-REM sleep.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C70 report the temporal delay, C68 notes consistency across trials/participants, and C96 draws parallels to non-REM. The finding is supported by the cluster timing in Figure 2c-d. While C71 offers speculation about processing time, the core observation of delayed reactivation is well-supported by the data and consistent with prior non-REM findings (C72-C74).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "TMR in REM sleep did not produce overall behavioral benefits in the SRTT task, consistent with prior null findings in REM TMR studies and contrasting with reliable benefits observed with TMR in non-REM sleep.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59, C84-C85 report null behavioral effects that are consistent with prior literature (C60, C85-C86). This null result is important context for interpreting the correlation in C61. The authors provide plausible mechanistic explanations involving hippocampal-cortical disconnection in REM (C88-C93), though these remain speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "The lack of behavioral benefits from REM TMR may be explained by acetylcholine-mediated inhibition of hippocampal-cortical connections during REM, which could prevent hippocampus-dependent sequence learning benefits despite cortical reactivation. Alternatively, behavioral improvements might emerge with delayed testing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C88-C94 present speculative interpretations (C88-C90 cite prior work on acetylcholine, but the mechanistic link to the current null result is inferred). While the reasoning is plausible and grounded in neurobiology (C88, C92), these remain untested hypotheses. The alternative explanation in C94 is also speculative. These interpretations are reasonable but lack direct empirical support in the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C30",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "Participants performed a serial reaction time task (SRTT) with audio-visual cues organized into two implicit 12-item sequences, with only one sequence replayed during subsequent REM sleep. The task included matched sequences and random blocks to isolate sequence-specific learning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C27, C30, and C119-C125 describe the experimental design in detail. The SRTT is well-established as sleep-sensitive (C19-C21), sequences were matched for difficulty (C121), and the design includes appropriate controls (random blocks, un-cued sequence). The methodology is clearly described and appropriate for the research question.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "The study included 14 participants (from 16 recruited, 2 excluded for technical problems) who were right-handed, unfamiliar with the SRTT, had no sleep/neurological disorders, maintained regular sleep schedules, and abstained from alcohol/caffeine before testing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C118 describe the participant sample and inclusion criteria. The criteria are appropriate for a sleep study, though the final sample size (n=14) is relatively small, which the authors acknowledge as a limitation (C95). The exclusion criteria and pre-study requirements are standard for sleep research.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143"
+    ],
+    "result": "EEG data were acquired from 21 electrodes at 200 Hz, filtered 0.1-50 Hz, segmented -0.5 to 3s relative to cue onset, with outlier rejection (9.8% experimental, 10.5% adaptation) and ICA-based artifact removal for eye movements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C133-C143 describe standard EEG acquisition and preprocessing procedures. The methods are appropriate for sleep EEG, including ICA for eye movement artifacts which are common in REM (C142). Outlier rejection rates are reasonable and similar between conditions. The preprocessing is adequately described for replication.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148"
+    ],
+    "result": "Time-frequency analysis used a Hanning taper with 5 cycles, 0.5 Hz frequency steps, 5 ms time steps, and baseline correction (-300 to -100 ms). ERP analysis used -200 to 0 ms baseline with grand averaging across participants and channels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C144-C148 describe standard time-frequency and ERP analysis methods adapted from prior work (Cairney et al., 2018). The parameters are appropriate for the frequency ranges of interest and the baseline periods are standard. The methods are sufficiently detailed for replication.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160"
+    ],
+    "result": "Time\u00d7time classification used 100ms smoothing, LDA classifiers with 5-fold cross-validation, searchlight channel selection (from independent dataset), trial weighting based on theta power fidelity, and AUC as performance metric with cluster-based permutation testing across the full trial duration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C149-C160 describe the classification methodology in detail. The approach is sophisticated, including appropriate smoothing, cross-validation, independent channel selection (C150), and a novel trial weighting scheme based on TMR fidelity (C157-C158). The use of cluster-based permutation across the full trial duration (C160) provides stringent statistical control. Methods are well-justified and adequately described.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166"
+    ],
+    "result": "Behavioral performance was measured using sequence-specific skill (SSS), calculated as the difference between random and sequenced block reaction times, with improvement calculated as relative change from pre- to post-sleep for the best four blocks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C161-C166 describe the behavioral analysis methods. The use of SSS is well-justified by prior literature showing it consolidates most strongly with sleep (C162, citing Spencer et al., 2006; Cousins et al., 2014, 2016). The focus on best blocks (C161) is supported by prior work showing this is the most robust measure. The relative improvement calculation (C165) appropriately controls for baseline differences.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "ERP analysis showed a small amplitude increase immediately after TMR onset followed by a decrease at 500ms, with no significant difference between experimental and adaptation nights (p>0.1), suggesting ERPs relate to sound processing rather than memory.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C40 report ERP findings that parallel the theta results. The lack of difference between experimental and adaptation conditions (C39) supports the interpretation that ERPs reflect sound processing (C40). This converges with the theta findings (C36-C37) to indicate that early evoked responses are not memory-specific.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Classification with theta band filtered out showed significant effects similar to the original analysis, with significant differences against both chance (p=0.007) and adaptation night (p=0.009), confirming that reactivation information is not carried in theta.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C57 describe a positive control analysis that validates the theta-only null result (C53-C54). The similar pattern of results when theta is removed confirms that the classification signal comes from other frequency bands. This is an important control that strengthens the interpretation of the theta findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C62"
+    ],
+    "result": "Classification performance did not correlate with pre-sleep performance (r=-0.39, p=0.17), indicating that the extent of reactivation was not predicted by the degree of pre-sleep learning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C62 reports a null correlation that is important for interpreting the positive correlation with overnight improvement (C61). The lack of relationship with pre-sleep performance suggests that reactivation strength is not simply a function of initial learning strength. However, with n=14, this null result should be interpreted cautiously as the study may be underpowered to detect moderate correlations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C97",
+      "C98"
+    ],
+    "result": "Reactivations detected in REM sleep appear to occur in the same cortical areas used during task performance, with similar extracted features to wake activation, enabling detection by machine learning models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C97-C98 make inferences about cortical localization and feature similarity based on the successful classification. While the searchlight analysis (C44, C150) identified motor-area channels, the spatial resolution of scalp EEG is limited. The claim about 'same area' is somewhat overstated given EEG's spatial limitations. The feature similarity is inferred from successful cross-state classification but not directly demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C95"
+    ],
+    "result": "The relatively low number of participants (n=14) is acknowledged as a limitation for the correlation analysis, with recommendations for future replication.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C95 appropriately acknowledges a study limitation. With n=14, the study has limited power for correlation analyses, and the significant correlation (C61) should be interpreted cautiously. The authors' recommendation for replication is appropriate. This honest acknowledgment of limitations strengthens the overall credibility of the work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C6",
+      "C14",
+      "C111"
+    ],
+    "result": "This study provides the first evidence for memory reactivation in human REM sleep after TMR that is directly related to brain activity during wakeful task performance, uncovering properties of REM reactivation that parallel non-REM sleep.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C14, and C111 assert the novelty of the findings. The claim is supported by the literature review showing that while Sch\u00f6nauer et al. (2017) distinguished between tasks (C13), direct reinstatement of wake-related EEG activity in REM had not been demonstrated (C14). The current study's approach of training classifiers on sleep and testing on wake provides this direct link. The novelty claim is justified.",
+    "result_type": "MAJOR"
+  }
+]

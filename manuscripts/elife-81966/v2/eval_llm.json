@@ -1,0 +1,450 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "The manuscript establishes the clinical and biological context for studying KLHL40 deficiency, noting that mutations in KLHL40 cause severe congenital nemaline myopathy, that fetal akinesia has neuromuscular origins in >50% of cases with at least 30 causative genes identified, and that the ubiquitin-proteasome system (UPS) regulates myogenesis with mutations in UPS genes causing sarcomeric defects. The authors also note that sarcomeres and organelles act as interconnected hubs during muscle development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C6-C11 are all supported by citations to prior literature and represent established knowledge in the field. These claims provide appropriate background context for the study and are well-documented in the cited references.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C12",
+      "C90"
+    ],
+    "result": "Prior in vitro studies showed that the KLHL40-CUL3 complex stabilizes thin filament proteins (LMOD3, NEB) by ubiquitylation, though in vivo relevance was unknown. Mouse Klhl40 deletion causes extensive myofiber damage and neonatal lethality at 2-3 weeks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Both claims are supported by citations to prior literature (Garg et al., 2014). These establish the known functions of KLHL40 and motivate the need for in vivo studies, which this manuscript addresses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "The authors generated zebrafish klhl40a and klhl40b mutant alleles using CRISPR/Cas9. The human KLHL40 gene is duplicated in zebrafish as klhl40a (chromosome 2) and klhl40b (chromosome 24). Multiple frameshift alleles were created resulting in truncations in the BTB or BACK domains. RT-PCR showed similar mRNA levels in mutants vs. controls, but Western blot revealed 50% reduction in Klhl40 protein in single mutants and complete absence in double knockouts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C99 are well-supported by Sanger sequencing data (Figure 1B), RT-PCR (Figure 1\u2014figure supplement 1), and Western blot analysis (Figure 1\u2014figure supplement 1). The molecular characterization of the mutant alleles is thorough and demonstrates loss of Klhl40 protein.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "klhl40a and klhl40b mutant embryonic and larval fish showed no gross morphological defects, contrasting with prior morpholino studies. The authors suggest this discrepancy may be due to genetic compensation by other Kelch genes or modifier genes. klhl40a and klhl40b show overlapping expression in skeletal muscle, and the lack of klhl40b phenotype suggests functional redundancy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C103 are supported by visual observation data and citations to literature on genetic compensation (El-Brolosy et al., 2019; Sztal et al., 2018). The explanation for the morphant-mutant discrepancy is reasonable and well-documented in zebrafish genetics literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "klhl40a mutant zebrafish develop a progressive myopathic phenotype with leaner bodies from juvenile (1.5 months) to adult stage (3 months), while klhl40b mutants remain phenotypically normal. Swimming performance (Umax) is normal at 1.5 months but significantly reduced at 3 months in klhl40a mutants. Most klhl40a mutants die between 9-12 months while controls survive to 24 months, recapitulating the phenotype observed in KLHL40 patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C18 are well-supported by visual observation (Figure 1C), swimming performance assays (Figure 1D), and survival data (Figure 1E). The progressive nature of the phenotype is clearly demonstrated, and the comparison to patient phenotypes is appropriate. Statistical analysis shows significant differences at 3 months (p<0.001).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Ultrastructural analysis by TEM revealed that at the adult stage (3 months), klhl40a mutant muscle exhibits significantly reduced sarcomere width and height, dilated SR-ER vesicles with accumulation of membrane-bound structures (10-100 nm), rounder mitochondria with electron-dense matrix, and large gaps in the ECM between myofibers. No significant ultrastructural changes were observed at the juvenile stage (1.5 months). These findings indicate Klhl40a is required for sarcomere size regulation, intracellular membrane homeostasis, and ECM stability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C24 are strongly supported by TEM data with quantification (Figure 2A-F, Figure 2\u2014figure supplement 1). The temporal progression from normal ultrastructure at 1.5 months to multiple defects at 3 months is well-documented. Quantification shows significant differences (p<0.001) for sarcomere dimensions and mitochondrial morphology. The conclusion (C24) is a reasonable inference from the observed structural defects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Deep-scale quantitative proteomics identified 8,268 proteins across 16 samples. Proteome-transcriptome correlation analysis revealed 78% discordance between transcript-protein pairs, indicating extensive post-translational regulation. Most differential proteomic changes in klhl40a mutant muscle emerge during the pre-symptomatic juvenile stage (1.5 months) and remain primarily static during disease progression to the symptomatic adult stage (3 months).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C29 are well-supported by the proteomic data analysis (Figure 3, Figure 3\u2014figure supplement 1 and 2). The large-scale proteomic dataset is robust with appropriate replicates and PCA showing good sample grouping. The 78% discordance between transcriptome and proteome highlights the importance of post-translational regulation. The temporal dynamics showing early establishment of proteomic changes is clearly demonstrated in the heatmaps and correlation plots.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Pathway enrichment analysis showed that skeletal muscle developmental processes were enriched with increased abundance in klhl40a mutant muscle at the pre-symptomatic stage. Many proteins expressed during early sarcomere assembly in differentiating myotubes (Obscn, Nexn, Ilk, Vcl, etc.) were elevated in mutants, while sarcomeric proteins associated with mature myofibers showed reduced abundance. This suggests klhl40-deficient muscle exhibits defects in terminal differentiation with increased early sarcomeric and reduced late sarcomeric proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C33 are supported by pathway enrichment analysis (Figure 4A) and hierarchical clustering of proteomic data. The identification of specific early vs. late sarcomeric proteins is consistent with established knowledge of muscle development. The conclusion (C33) is a reasonable inference from the proteomic data showing this developmental arrest phenotype.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Proteomic analysis revealed increased glucose uptake and glycolytic pathway enzymes (Pygma, Pygmb, Eno3, Pfkm, Aldoa, Aldob, Aldoc, Pgk1, Pgam1, Pgam2, Pkmb) in klhl40a mutant muscle at the juvenile stage. Categories associated with cellular metabolism showed enrichment in amino acid and lipid metabolism, mitochondrial respiration, and nucleotide metabolism at both stages, suggesting altered bioenergetics balance. This metabolic shift is consistent with sarcomere remodeling in stress or disease states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C37 are supported by the proteomic data and pathway enrichment analysis (Figure 4A, Supplementary file 4). The identification of specific metabolic enzymes is data-driven. The interpretation linking metabolic changes to sarcomere remodeling is supported by citations to prior literature (Toepfer et al., 2020; Liu et al., 2022). The concurrent increase in both glycolytic and OXPHOS proteins suggests a disease-related metabolic shift rather than normal developmental transitions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Deep ubiquitylome profiling revealed that changes in ubiquitylation were established before functional and structural changes in klhl40a mutant muscle. Nebulin, a known direct target of the Klhl40-Cul3 complex, was identified with reduced ubiquitylation, validating the approach. Most proteins showed ubiquitylation changes that correlated positively at both pre-symptomatic and symptomatic stages, with no proteins showing opposite directions, suggesting robust and unidirectional ubiquitylation marks. Many ubiquitin ligases and deubiquitylases showed differential expression between control and mutant muscle.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C42 are well-supported by the ubiquitylome data analysis (Figure 3C, E, Supplementary file 2). The identification of nebulin (C39) as a known target validates the methodology. The correlation analysis (C40) and lack of proteins with opposite-direction changes (C41) are clearly shown in the data. The temporal dynamics parallel those seen in the proteome. The observation about differential expression of ubiquitin ligases/deubiquitylases (C42) is supported by the proteomic data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C43",
+      "C44"
+    ],
+    "result": "Integration of proteome and ubiquitylome data revealed that highly ubiquitylated proteins (Tmod4, Tnni2, Tpm2, Cfl2, Myom2) had decreased abundance in klhl40a mutant muscle. Many of these proteins are localized to thin filaments and contribute to nemaline myopathy, suggesting that other components of the ubiquitin proteasomal pathways may cause increased ubiquitylation and abnormal degradation affecting thin filament stability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C44 are supported by integrated analysis of proteomic and ubiquitylome data (Figure 4C-D, Supplementary files 8-9). The inverse relationship between ubiquitylation and protein abundance is clearly demonstrated. The localization of these proteins to thin filaments and their role in nemaline myopathy is consistent with established knowledge. The inference about other UPS components is reasonable given the differential expression of multiple ubiquitin ligases and deubiquitylases.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C45",
+      "C46"
+    ],
+    "result": "Analysis of proteins with reduced ubiquitylation and increased abundance identified Sar1a (vesicle trafficking), glycolytic proteins (Pkmb, Aldo, Aldob), and sarcomeric proteins (Ttn, Tnnt2, Nckipsd) as potential direct targets of the Klhl40-Cul3 complex. The reduced ubiquitylation of these proteins suggests they may be directly regulated through ubiquitylation by the Klhl40-Cul3 complex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C46 are supported by integrated analysis of proteomic and ubiquitylome data showing opposite-direction changes (reduced ubiquitylation, increased protein abundance). This analytical approach is sound for identifying potential direct substrates. The inference (C46) is reasonable, though direct validation through biochemical assays would strengthen the conclusion. The manuscript does provide such validation for Sar1a (see later claims), which supports the validity of this approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "SAR1A is a small GTPase required for COPII vesicle assembly at ER exit sites (ERES). Proteomic analysis showed Sar1a protein levels were significantly increased in klhl40a mutant muscle, while inner coat proteins Sec23b, Sec23d, and Golga2 were reduced, suggesting co-regulation. No changes were observed in outer coat proteins (Sec13, Sec31), ER resident protein Sec12, or other COPII proteins (Tango1, cTAGE5). These changes were regulated post-transcriptionally as no mRNA level differences were detected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C52 are well-supported. C47 is established knowledge supported by citation (Lee et al., 2005). C48-C51 are supported by proteomic data (Figure 5A, Supplementary file 1). C52 is supported by comparison with RNA-seq data (Supplementary file 3). The selective changes in specific COPII components (inner but not outer coat proteins) is interesting and suggests specific regulatory mechanisms rather than global effects on the secretory pathway.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C53",
+      "C54"
+    ],
+    "result": "Western blot analysis validated the proteomic findings, confirming increased Sar1a protein levels and reduced Sec24d and Golga2 in klhl40a mutant skeletal muscle at the adult stage (3 months).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C54 are supported by Western blot data (Figure 5B-C) with quantification showing significant differences (p<0.001). This orthogonal validation of the proteomic findings strengthens confidence in the mass spectrometry results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C55",
+      "C57"
+    ],
+    "result": "SAR1A mRNA overexpression (50-100 ng) in wild-type zebrafish larvae resulted in abnormal membrane-bound structures in the SR-ER region similar to those observed in klhl40a mutant fish. Immunofluorescence showed SAR1A-positive punctate structures co-localized with the ER marker PDI, suggesting that increased SAR1A protein levels cause abnormal accumulation of ER-derived membrane-bound structures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55 and C57 are supported by electron microscopy (Figure 5D) and immunofluorescence data (Figure 5E). The gain-of-function experiment phenocopying the klhl40a mutant ultrastructural defects provides strong evidence that elevated Sar1a is sufficient to cause ER membrane abnormalities. This is a key result linking Sar1a upregulation to the observed pathology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Immunofluorescence analysis showed that klhl40a deficient myofibers exhibited increased accumulation of Sar1a in the ER compared to controls, with an increased number of Sar1a and PDI-positive foci. The ultrastructure of abnormal membranous structures was similar to ER and lacked COPII vesicle organization, suggesting these structures originated from the ER.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C60 are supported by immunofluorescence data (Figure 6) with quantification. The co-localization with PDI (ER marker) and the ultrastructural similarity to ER membranes support the conclusion that these abnormal structures are ER-derived. This provides important mechanistic insight into the cellular pathology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Immunofluorescence revealed reduced ER exit sites (ERES, marked by Tango1) in klhl40a-deficient myofibers, though mutant myofibers showed an increased number of enlarged ERES sites (200-500 nm; 5.2\u00b11.91%) compared to controls (0.70\u00b10.39%). Examination of COPII vesicle protein Sec23B showed fewer COPII vesicles in klhl40a deficiency. The Golgi apparatus showed normal immunoreactivity in most myofibers (63\u00b114%) with varying amounts of GOLGA2-positive aggregates in others.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C64 are supported by immunofluorescence data (Figure 6) with quantification showing significant differences (p<0.0001). The finding of fewer but larger ERES sites is interesting and may represent a compensatory response. The reduced COPII vesicles and Golgi abnormalities are consistent with disrupted ER-to-Golgi trafficking. The quantification provides strong statistical support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Multiple autophagy markers (Atd5, Atg16l1, Atg4b, Atg9a, beclin, Lc3b, Lamp1, Lamp2) showed no alterations in klhl40a deficiency by proteomics or Western blot. ER stress markers (Bip, Calnexin, Ero1, Ire\u03b11, CHOP, PERK) showed no differences by proteome or RNA-seq analysis. xbp1 mRNA splicing (UPR marker) showed no change, and Western blot showed no differences in total or phospho-PERK levels, indicating lack of UPR activation in klhl40a deficiency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C68 are supported by proteomic data, Western blot analysis, and RT-PCR (Figure 6\u2014figure supplement 1). These negative results are important as they rule out autophagy dysregulation and ER stress/UPR as contributing mechanisms. This helps narrow the mechanistic focus to the specific vesicle trafficking defects. The multiple independent assays strengthen confidence in these negative findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C69"
+    ],
+    "result": "The combined evidence indicates that abnormally increased amounts of Sar1a do not result in the formation of productive COPII vesicles but instead contribute to abnormal vesicle formation associated with changes in crucial protein regulators of ER-Golgi vesicle trafficking.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C69 is a synthesis of the immunofluorescence and ultrastructural data (C58-C64). The conclusion is well-supported by the observation of increased Sar1a, reduced COPII vesicles, abnormal ER-derived membrane structures, and reduced downstream trafficking proteins. This represents a key mechanistic insight into how Sar1a dysregulation causes pathology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Co-immunoprecipitation assays in C2C12 cells showed SAR1A is a direct interactor of KLHL40. Overexpression assays demonstrated a reciprocal relationship: gradual decrease in KLHL40 resulted in concomitant increase in SAR1A protein levels. In the presence of proteasome inhibitor MG132, increased SAR1A stability was observed, suggesting KLHL40 targets SAR1A for proteasomal degradation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C72 are supported by co-immunoprecipitation (Figure 7A), overexpression assays (Figure 7B), and proteasome inhibitor experiments (Figure 7C). These experiments provide strong biochemical evidence for direct KLHL40-SAR1A interaction and KLHL40-mediated regulation of SAR1A protein stability through the proteasome. The reciprocal relationship and MG132 rescue are particularly compelling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "The SAR1A ubiquitylation site identified by ubiquitylome analysis is highly conserved in vertebrates. In vitro ubiquitylation assays showed increased SAR1A ubiquitylation over time with wild-type KLHL40 but not GST control. Disease-causing variants in the BTB domain (L86P) and BACK domain (W201L) showed similar SAR1A ubiquitylation as wild-type, but Kelch domain variants (R311L, E528K) resulted in significant reduction in SAR1A ubiquitylation, suggesting patients with Kelch domain variants may exhibit reduced SAR1A ubiquitylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C77 are supported by sequence alignment (Figure 7D) and in vitro ubiquitylation assays (Figure 7F-G, Figure 7\u2014figure supplement 1) with quantification. The conservation analysis strengthens the biological relevance. The differential effects of disease variants provide important genotype-phenotype insights: Kelch domain variants (which mediate substrate binding) lose SAR1A ubiquitylation activity while BTB/BACK domain variants retain it. This suggests different disease mechanisms for different variant classes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C78",
+      "C79"
+    ],
+    "result": "Ubiquitylation assays in C2C12 cells showed that KLHL40 is required for SAR1A ubiquitination by CUL3, as no ubiquitylation was observed in the absence of KLHL40. Together, these results demonstrate that KLHL40-CUL3 is a regulator of SAR1A in skeletal muscle under normal conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C79 are supported by ubiquitylation assays in C2C12 cells (Figure 7H). The requirement for KLHL40 in CUL3-mediated SAR1A ubiquitylation confirms KLHL40 acts as the substrate adaptor. Combined with the in vitro assays, interaction studies, and in vivo data, this provides strong evidence that KLHL40-CUL3 directly regulates SAR1A through ubiquitylation-mediated degradation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Immunofluorescence analysis showed extensive intracellular immunoreactivity of procollagens in klhl40a mutant muscle compared to controls (co-labeled with sarcomeric \u03b1-actinin). Collagen staining was reduced in mutant muscle with no intracellular collagen detected. Integrin \u03b2-1 showed significantly reduced levels in the ECM of mutant muscle compared to controls, with no intracellular staining observed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C82 are supported by immunofluorescence data (Figure 8A). The intracellular accumulation of procollagen (immature form) with reduced extracellular collagen (mature form) strongly suggests a trafficking defect preventing procollagen secretion and maturation. The reduced integrin \u03b2-1 in ECM is consistent with overall ECM defects. This provides important evidence linking the vesicle trafficking defects to ECM pathology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C83",
+      "C84"
+    ],
+    "result": "RUSH assays in human KLHL40 knockout MB135 myoblasts showed a reduced rate of ER-export of procollagen compared to controls and small cargo sialyl transferase, suggesting KLHL40 is critical for trafficking of large cargo proteins in skeletal muscle.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C84 are supported by RUSH assay data (Figure 8B-C) with quantification showing significant differences. The RUSH assay is a well-established method for measuring ER-to-Golgi trafficking kinetics. The selective effect on large cargo (procollagen) vs. small cargo (sialyl transferase) is particularly informative and suggests the trafficking defect is cargo-size dependent. This is consistent with the known role of Sar1a in large cargo trafficking.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Immunofluorescence analysis of KLHL40 nemaline myopathy patient muscle showed increased SAR1A immunoreactivity in most myofibers, with many showing very high levels. Patient muscle also showed increased collagen within muscle fibers, similar to klhl40a fish. This increased SAR1A expression is specific to KLHL40-deficient muscle, as centronuclear myopathy patients (RYR1 or MTM1 mutations) showed no changes in SAR1A protein levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C87 are supported by immunofluorescence data from patient muscle (Figure 9A) and Western blot comparison with other myopathies (Figure 9\u2014figure supplement 1). The translation of findings from zebrafish to human patients is crucial for clinical relevance. The specificity to KLHL40 deficiency (not seen in other myopathies) strengthens the mechanistic link. However, the patient sample size appears limited (specific numbers not provided), which is a minor limitation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C88",
+      "C89"
+    ],
+    "result": "Ultrastructural analysis of KLHL40 patient muscle revealed extensive vesicle accumulation and aberrant ECM structures with reduced collagen fibers, similar to klhl40 deficient zebrafish, in addition to nemaline bodies. This suggests defects in vesicle trafficking contribute to disease onset and pathology in KLHL40 deficiency in patient skeletal muscles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C89 are supported by electron microscopy data from patient muscle (Figure 9B). The similarity between patient and zebrafish ultrastructural defects validates the zebrafish model and confirms the vesicle trafficking defects occur in human disease. The presence of both nemaline bodies (classic pathology) and vesicle accumulation (newly identified pathology) suggests multiple pathogenic mechanisms. The inference (C89) is well-supported by the combined patient data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "The manuscript discusses prior work on CUL3-dependent regulation of COPII trafficking, noting that KLHL12-CUL3 ubiquitylates SEC31 to increase COPII vesicle size for procollagen secretion in mESCs, and is involved in routing procollagens to lysosomes in fibroblasts. KLHL12 is expressed at very low levels in normal skeletal muscle, and no differential changes in Klhl12 or Sec31 were identified in klhl40a deficiency. No changes in autophagy markers were observed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C111 are supported by citations to prior literature (Jin et al., 2012; Moretti et al., 2023; Omari et al., 2018) and the authors' own proteomic data. This discussion appropriately contextualizes the findings within existing knowledge of CUL3-mediated regulation of secretory pathways. The negative findings for KLHL12 and autophagy markers help distinguish the KLHL40-SAR1A pathway from related but distinct mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "ERES functions as an inter-organelle transport apparatus that modulates its shape and size during active transport. The increase in ERES size in klhl40a deficiency could be a compensatory mechanism to enhance secretory flux given the reduced procollagen trafficking. Reduced amounts of Sec16b and COPII proteins in mutant myofibers may underlie the reduced number of ERES sites and COPII vesicles despite increased Sar1a.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C112 is established knowledge supported by citation (Weigel et al., 2021). Claims C113-C114 are speculative interpretations of the data. While the compensatory mechanism hypothesis (C113) is plausible, it is not directly tested. The explanation for reduced ERES/COPII despite increased Sar1a (C114) is reasonable but also speculative. These interpretations would benefit from additional experimental validation, such as testing whether reducing Sar1a levels rescues the phenotype or whether overexpressing Sec16b/COPII proteins can compensate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "SAR1A and SAR1B are 90% identical and exhibit overlapping and unique functions in COPII assembly. SAR1B specifically regulates chylomicron trafficking in the small intestine, while both are required for Nav1.5 and procollagen trafficking and may compensate for each other. The authors speculate that downregulation of Sar1a levels in skeletal muscle may restore procollagen trafficking defects in klhl40a deficiency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C115-C117 are established knowledge supported by citations to prior literature (Melville et al., 2020; Georges et al., 2011; Jones et al., 2003; Levic et al., 2015; Kim et al., 2012; Cutrona et al., 2013). Claim C118 is speculation about potential therapeutic intervention. While the logic is sound (if increased Sar1a causes defects, reducing it might help), this has not been tested experimentally. This would be an important future direction but cannot be considered supported without experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "The manuscript concludes that defects in ECM are associated with contractures in neuromuscular diseases, vesicle trafficking dysregulation is associated with neurodegenerative and skeletal disorders, and klhl40a directly regulates vesicle trafficking contributing to disease pathology. Dynamic fine-tuning of the cellular proteome by ubiquitylation is critical for muscle function. The authors suggest that approaches targeting pro-disease pathways while activating protective pathways may be promising therapeutic strategies for this form of nemaline myopathy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C120 are general knowledge statements. Claim C121 is well-supported by the combined experimental data from the study. Claim C122 is a reasonable inference from the comprehensive proteomic and ubiquitylome data. Claim C123 is a speculative therapeutic suggestion that, while reasonable given the multiple pathways identified, is not directly tested. The overall conclusions are appropriate given the data, though the therapeutic speculation (C123) should be clearly identified as such.",
+    "result_type": "MAJOR"
+  }
+]

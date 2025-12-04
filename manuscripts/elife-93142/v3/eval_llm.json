@@ -1,0 +1,362 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "The manuscript provides background context on malaria epidemiology and the challenges facing current control strategies. Malaria causes over 245 million cases and 620,000 deaths annually, and while vector control has reduced cases historically, this progress is stalling due to insecticide and drug resistance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5 present established epidemiological facts supported by WHO citation (C1, C2) and general knowledge about vector control trends (C3-C5). These are background claims appropriately cited and consistent with the malaria control literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Lipophorin and Vitellogenin are characterized as the two most abundant secreted proteins in Anopheles hemolymph, with distinct expression patterns: Vitellogenin is induced only after blood feeding and wanes within 3 days, while Lipophorin is expressed constitutively with additional upregulation after blood feeding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C18-C20 are supported by Coomassie staining data in Figure 1A showing Lp and Vg as major bands, and by citations to Attardo et al., 2005 and Rono et al., 2010 for expression patterns. The experimental evidence and literature support are appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "The authors engineered the Lipophorin gene to co-express the Sc2A10 single-chain antibody (which binds P. falciparum sporozoites) by inserting Sc2A10 after the Lp signal peptide, utilizing a duplicated furin cleavage site for protein separation, introducing silent mutations to protect against future gRNA targeting, and placing a GFP marker in the first intron.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C8, C21-C25 describe the genetic engineering strategy, which is well-documented in Figure 1B, Materials and Methods, and supported by citation to Zavala et al., 1983 for 2A10 function. The design is logical and the molecular details are clearly presented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "The Lp::Sc2A10 transgene shows a subtle fitness cost: homozygous mosquitoes are viable and fertile with no obvious fitness defects, but careful analysis over 17 generations revealed transgene frequency decreased by 2.3% per generation, and homozygous females produced fewer progeny than wild-type.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C28 are supported by COPAS tracking data in Figure 1C and Supplementary file 2 showing gradual transgene loss, and fertility assays in Supplementary file 3. The fitness cost assessment is appropriately quantified and the conclusion is conservative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Mass spectrometry and western blot analysis confirmed that Sc2A10 is expressed and secreted into hemolymph, though at 10-20 fold lower abundance than Lp subunits. Western blots showed proper cleavage of Sc2A10 from ApoLpII, and the chimeric Lp::Sc2A10 protein is expressed at lower levels than wild-type Lp.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C34 are supported by mass spectrometry data in Table 1 showing peptide counts and western blot data in Figure 1D confirming proper cleavage. The quantitative inference about relative abundance (C31) is appropriately calculated from the peptide data corrected for protein size.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Lp::Sc2A10 transgenic mosquitoes show markedly reduced ability to transmit Plasmodium berghei expressing P. falciparum CSP to mice. Only 29.7% of mice exposed to homozygous transgenic mosquitoes became infected versus 97.1% for controls (p<0.0001). Heterozygous mosquitoes showed comparable transmission blocking (4/12 mice infected vs 17/18 controls, p=0.0006). The effect is PfCSP-specific, as transgenic mosquitoes transmitted control P. berghei normally.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C43 are supported by extensive bite-back experiments shown in Figure 2A-C and Supplementary file 4A-C with appropriate statistical analysis (Fisher's exact test). Sample sizes are adequate (n=34-37 mice for homozygous, n=12-18 for heterozygous), controls are appropriate, and the PfCSP-specificity control (C41-C43) strengthens the conclusion. The statistical significance is properly reported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C44",
+      "C56",
+      "C57"
+    ],
+    "result": "Saglin is characterized as a pro-parasitic gene whose loss reduces parasite prevalence and transmission, is homozygous viable, and has no obvious fitness cost in laboratory conditions, making it an attractive target for gene drive insertion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44, C56-C57 are supported by citations to published literature (Okulate et al., 2007; Ghosh et al., 2009; O'Brochta et al., 2019; Klug et al., 2023). These are appropriately cited background claims establishing the rationale for targeting Saglin.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "A suppression gene drive targeting wild-type Lp with zpg-Cas9 and 4 gRNAs was attempted but failed due to Lp haploinsufficiency. Most knock-in events unexpectedly resulted from compound recombination creating a GFP-RFP allele. Heterozygous mosquitoes carrying Lp-GD with either GFP-RFP or Lp::Sc2A10 showed developmental delay and lethality, demonstrating that wild-type Lp is haploinsufficient. Additionally, the zpg promoter showed low activity at the Lp locus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C55 describe an unsuccessful approach that revealed important biological constraints. The compound recombination (C47) is documented by sequencing and genetic linkage in Figure 3B, haploinsufficiency (C51-C53) is clearly shown in Figure 4B photograph, and low zpg activity (C49, C55) is inferred from inheritance data. The negative result is well-documented and scientifically valuable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "A Saglin-based gene drive (SagGDzpg) with zpg-Cas9 and 7 gRNAs (3 targeting Saglin, 4 targeting Lp) was constructed and correctly inserted on the X chromosome. However, it showed modest homing rates in G2: 57.7% GFP inheritance at the Lp locus and approximately 54.1% DsRed inheritance at Saglin, only slightly above the 50% expected without homing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C63 are supported by experimental design in Figure 5A, genetic crosses showing X-linkage (C59), and COPAS data in Figure 6A quantifying inheritance rates. The modest homing rates are appropriately quantified, though DsRed measurement uncertainty is acknowledged (C63).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Providing an independent vasa-Cas9 transgene rescued the poor homing of SagGDzpg, resulting in >79% GFP inheritance, demonstrating that the zpg promoter is sensitive to positional effects and has low activity when inserted in Saglin or Lp loci, unlike other reported loci such as DSX or Nudel.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C66 are supported by COPAS data in Figure 6B showing improved homing with vasa-Cas9 complementation. The inference about zpg positional sensitivity (C66) is reasonable given the contrast with published results at other loci (supported by citations to Kyrou et al., 2018; Hammond et al., 2021).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C67"
+    ],
+    "result": "A population of Lp::Sc2A10 combined with SagGDzpg maintained over seven generations showed increased frequency of both alleles (GFP: 59.2%, DsRed: >90%), indicating the modest gene drive was sufficient to counteract the Lp::Sc2A10 fitness cost.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C67 is supported by COPAS analysis over multiple generations. The data demonstrates that even modest drive activity can overcome fitness costs, though the long-term sustainability is not established.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "An improved Saglin gene drive (SagGDvasa) using vasa-Cas9 instead of zpg-Cas9 was constructed with 6 U6-gRNA units. It correctly inserted on the X chromosome and showed high homing rates in G2: 93% in males (391/405 GFP+) and 90.2% at Lp locus and 61.4% at Saglin locus in females. The vasa promoter was highly active at the Saglin locus, and western blotting confirmed Saglin knockout in homozygous mosquitoes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C75 are supported by experimental design in Figure 5B, genetic crosses confirming X-linkage (C69), detailed inheritance data in Table 2 and COPAS analysis (C71-C73), and western blot in Figure 5C (C75). The high homing rates represent a major improvement over SagGDzpg and are well-quantified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Population dynamics over >30 generations showed that Lp::Sc2A10 rapidly spread in all populations, with most becoming predominantly homozygous. DsRed-only individuals were absent early on, confirming lethality of SagGDvasa without a protected Lp allele. Several populations appeared fixed for Lp::Sc2A10, though population 2 showed reversal after G14. DsRed-negative individuals (up to 30%) persisted in some populations, likely representing drive-resistant Saglin mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C81 are supported by extensive COPAS tracking data in Figure 7 and Supplementary file 5 across 8 populations over many generations. The reciprocal dependence of the two transgenes is clearly demonstrated, and the emergence of resistance alleles is documented. This is a major result showing the system's behavior over evolutionary time.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "High-throughput sequencing of DsRed-negative larvae from populations 1 and 2 revealed diverse Saglin mutations. While most alleles were still wild-type, various mutations were detected, predominantly at gRNA2 target site, suggesting it was most active. Deletions spanning two gRNA sites were rare, but at least one haplotype with mutations at all three sites was recovered after four generations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C86 are supported by amplicon sequencing data shown in Figure 8A-B. The analysis appropriately characterizes the spectrum of resistance mutations and their distribution across gRNA target sites. The inference about gRNA2 activity (C84) is reasonable from the mutation patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "GFP-negative larvae appeared in populations 2 and 3 (2.4% at G14 in population 2) and developed into healthy, fertile adults. Sequencing revealed all 12 individuals were homozygous for the same mutations: a 3-nucleotide deletion removing one valine from the Lp signal peptide (gRNA2 site) and a 5-base deletion in the first intron (gRNA3 site). This combination preserved Lp function while conferring resistance to gene conversion, and indicates the first gRNA did not act.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C93 are supported by COPAS data, viability observations, and sequencing data in Figure 8C. The identification of a functional, drive-resistant Lp allele is a critical finding. However, the sample size is limited (n=12) and all from the same populations, so the generalizability of this specific mutation combination is uncertain. The inference that gRNA1 did not act (C93) is reasonable but somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "PCR and sequencing analysis of mosquitoes from generation 32 revealed genetic instability in the gRNA array. Two derivative alleles dominated: one retaining 5 of 6 gRNAs and another retaining only 2 gRNAs. Deletions occurred post-integration (verified by resequencing the original plasmid), likely early in population evolution as the same deletion was found in independently bred populations 1 and 2. The Cas9 gene remained intact despite gRNA deletions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C97 are supported by PCR and sequencing data in Figure 9. The genetic instability of repetitive gRNA arrays is well-documented and represents an important limitation of the system. The verification that deletions occurred post-integration (C95) and the timing inference (C96) are appropriately supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "[SagGDvasa; Lp::Sc2A10] mosquitoes maintained markedly decreased ability to transmit Plasmodium after >20 generations. In two experiments, 10 of 12 mice exposed to transgenic mosquitoes remained uninfected, compared to 4/4 control mice becoming infected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C100 are supported by bite-back experiments in Supplementary files 4D-E. However, the sample sizes are small (n=6 and n=6 mice for transgenics, n=4 controls total), and the authors acknowledge they cannot strictly confirm whether Saglin knockout enhanced protection. The result demonstrates persistence of transmission-blocking activity but is limited in statistical power.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "A CRISPR/Cas9-based gene drive was designed and installed in Saglin that disrupts this pro-parasitic gene and cleaves wild-type Lipophorin, causing Lp::Sc2A10 to replace wild-type and hitchhike with the Saglin drive. The drive reached high levels in caged populations and efficiently promoted spread of Lp::Sc2A10, though it generated drive-resistant alleles and showed instability in its gRNA array. This combination is expected to decrease transmission via two mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C17 summarize the overall gene drive strategy and outcomes. The claims are supported by the collective evidence from population dynamics (Figure 7), resistance mutations (Figure 8), and gRNA instability (Figure 9). The dual mechanism expectation (C17) is reasonable inference but not directly demonstrated. The result represents the main finding of the paper.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C9"
+    ],
+    "result": "Transgenic mosquitoes with Lp::Sc2A10 show a markedly decreased ability to transmit Plasmodium berghei expressing P. falciparum circumsporozoite protein to mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C9 is the high-level summary of the transmission-blocking phenotype, supported by the detailed bite-back experiments in claims C35-C43. This is appropriately supported by Figure 2 data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C101",
+      "C102"
+    ],
+    "result": "The 2A10 antibody targets the highly repeated and conserved NANP motif on the CSP protein across P. falciparum strains. Complete loss of this epitope is unlikely and would probably cause dramatic parasite fitness loss, as CSP is required in several sporozoite processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C102 are discussion points supported by citations to Coppi et al., 2011 and Balaban et al., 2021. These represent reasonable arguments about the durability of the approach against parasite evolution, though they are speculative regarding future evolutionary outcomes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C103"
+    ],
+    "result": "The zpg promoter is sensitive to positional effects and its usability in gene drive constructs may be restricted to a subset of genomic loci, showing low activity at Lp and Saglin loci in contrast to DSX or Nudel loci.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C103 synthesizes the zpg promoter findings from multiple experiments (claims C55, C66) and is supported by experimental data and citations. This is an important technical finding for future gene drive design.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "The genetic design represents a two-component gene drive where Lp::Sc2A10 has no drive capacity itself but rescues lethality and hitchhikes on SagGDvasa's drive capacity. The two loci are reciprocally dependent: Lp::Sc2A10 depends on SagGD for spread, and SagGD depends on Lp::Sc2A10 as a rescue allele. This can be viewed as a two-locus variation of rescue-type gene drives.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C106 present the conceptual framework for understanding the system, supported by the population dynamics data showing reciprocal dependence (claims C76-C78). The comparison to rescue-type drives (C106) is appropriately cited to Adolfi et al., 2020 and Champer et al., 2020a.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C107"
+    ],
+    "result": "A novel P. berghei strain was generated combining strong GFP fluorescence from \u0394p230p-GFP with P. falciparum CSP substitution from Pb-PfCSP strain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C107 describes a methodological development detailed in Materials and Methods. The generation of this parasite strain is appropriately documented and represents an important tool for the transmission experiments.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,1556 @@
+{
+  "submission": {
+    "id": "77847d35-ca95-4a01-8a58-069c1108b8fa",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-04T04:03:00.764880Z",
+    "updated_at": "2025-12-04T04:03:00.764880Z"
+  },
+  "content": [
+    {
+      "id": "9dfa8443-ee9c-4b26-b146-5483425097c6",
+      "submission_id": "77847d35-ca95-4a01-8a58-069c1108b8fa",
+      "content_type": "manuscript",
+      "content_text": "# RNA fusion in human retinal development\n\n## Authors\n\n- Wen Wang<sup>1</sup> ([ORCID: 0000-0002-8601-7385](https://orcid.org/0000-0002-8601-7385))\n- Xiao Zhang<sup>1</sup> ([ORCID: 0000-0002-8599-3181](https://orcid.org/0000-0002-8599-3181))\n- Ning Zhao<sup>1</sup>\n- Ze-Hua Xu<sup>1</sup>\n- Kangxin Jin<sup>1</sup> ([ORCID: 0000-0002-0108-6948](https://orcid.org/0000-0002-0108-6948)) \u2020\n- Zi-Bing Jin<sup>1</sup> ([ORCID: 0000-0003-0515-698X](https://orcid.org/0000-0003-0515-698X)) \u2020\n\n### Affiliations\n\n1. Beijing Institute of Ophthalmology, Beijing Tongren Eye Center, Beijing Tongren Hospital, Capital Medical University Beijing China ([ROR:013xs5b60](https://ror.org/013xs5b60))\n\n\u2020 Corresponding author\n\n## Abstract\n\nChimeric RNAs have been found in both cancerous and healthy human cells. They have regulatory effects on human stem/progenitor cell differentiation, stemness maintenance, and central nervous system development. However, whether they are present in human retinal cells and their physiological functions in the retinal development remain unknown. Based on the human embryonic stem cell-derived retinal organoids (ROs) spanning from days 0 to 120, we present the expression atlas of chimeric RNAs throughout the developing ROs. We confirmed the existence of some common chimeric RNAs and also discovered many novel chimeric RNAs during retinal development. We focused on CTNNBIP1-CLSTN1 (CTCL) whose downregulation caused precocious neuronal differentiation and a marked reduction of neural progenitors in human cerebral organoids. CTCL is universally present in human retinas, ROs, and retinal cell lines, and its loss-of-function biases the progenitor cells toward retinal pigment epithelial cell fate at the expense of retinal cells. Together, this work provides a landscape of chimeric RNAs and reveals evidence for their critical role in human retinal development.\n\n## Introduction\n\nThe human retina is a laminar structure with a large number of different component cells that form morphologically and functionally distinct circuits. They work in parallel and in combination to produce complex visual output (Hoon et al., 2014). During retinogenesis, different subtypes of neurons are generated from the same group of retinal progenitor cells (RPCs) and precisely self-assemble into a functionally mature retina (Masland, 2012).\n\nDissecting the molecular mechanisms of human retinogenesis and functional maintenance has always been a focus and a challenging issue, which is particularly important for the treatment of human retinal diseases such as macular degeneration. A few groups have systematically elucidated the transcriptomics, chromatin accessibility, and proteomic dynamics during human and mouse retinogenesis (Huang et al., 2023), and comprehensively described the similarities and differences during this process. Lu et al. identified an unexpected role for ATOH7 expression in the regulation of photoreceptor specification during late retinogenesis as well as the enriched bivalent modification of H3K4me3 and H3K27me3 in human but not in murine retinogenesis (Lu et al., 2020), further underscoring the limitations of using mouse models to study the human retina and transcriptional regulation in human retinogenesis.\n\nDifficulties in obtaining normal human retinal tissue have hampered studies of human retinal development. The emergence of retinal organoids (ROs) could circumvent this problem (Cheng et al., 2023; Jin et al., 2019). Many groups have used ROs to conduct studies related to human retinal development and have solved a basket of previously unsolvable problems, confirming the high similarity between ROs and human retina in terms of molecular features, cell types, and developmental rates (Cowan et al., 2020; Lu et al., 2020; Xie et al., 2020). Our group has extensive experience in RO culture and has conducted a series of studies using ROs (Deng et al., 2018; Ma et al., 2022; Pan et al., 2020; Zhang et al., 2021). For example, together with other groups, we have used ROs to confirm that retinoblastoma tumor cells are derived from cone precursor cells (Clevers, 2016; Jin et al., 2019; Li et al., 2022; Liu et al., 2021; Liu et al., 2020).\n\nChimeric RNAs are the ligation products of two or even more DNA or RNA sequences before or after transcription. They can be further translated into proteins in addition to their RNA form, increasing the richness of the transcriptome and proteome. Previous studies of chimeric RNAs have focused on tumors and larger tissues and organs, and found that chimeric RNAs are widely present in human normal and tumor tissues as part of the transcriptome and can regulate the activities of individual cells (Elfman and Li, 2018; Hu et al., 2018; Mertens et al., 2015; Singh et al., 2020). It has been shown that chimeric RNAs in normal human cortex increase with age and show differences in individual cells and tissues (Mehani et al., 2020), highlighting the critical role of chimeric RNAs in central nervous system (CNS) development and cell lineage maintenance. In 2021, Luo\u2019s group found that downregulation of CTNNBIP1-CLSTN1 (CTCL) affects the growth of cerebral organoids, causing premature neuronal differentiation, and a marked reduction of neural progenitors (Ou et al., 2021). As retina is a part of the CNS, we hypothesize that CTCL is also present in the retina and plays an important role in human retinal development.\n\nThis study aims to investigate the molecular mechanism of human retinal development and function maintenance from a new perspective of chimeric RNAs. We used human embryonic stem cell (hESC)-derived ROs and performed RNA sequencing. We found that chimeric RNAs were expressed at all stages of RO development. Chimeric RNA CTCL is widely expressed in the human retina but not in the murine retina, and is critical for the differentiation of RPCs into neural retina (NR) or retinal pigment epithelium (RPE). RPCs with a relatively high level of CTCL expression will differentiate into NR, while those with a relatively low level of CTCL will differentiate toward RPE. These results provide important evidence for the physiological function of chimeric RNAs in human retinogenesis.\n\n## Results\n\n### Chimeric RNAs are present throughout the retinogenesis\n\nTo explore the chimeric RNAs in the developing human retina, we cultured ROs according to the methods described previously (Kim et al., 2019; Lowe et al., 2016). On day 0 (D0) of differentiation, hESCs in a good growth state were dissociated into individual cells and seeded at a certain cell density in V-shaped low-adhesion culture dishes so that the cells would aggregate into clusters to induce the neuroepithelial formation. At D30 of differentiation, the RO outermost layer with translucent NR structures was visible. As the differentiation time prolonged, the NR gradually became denser. At D105 of differentiation, ROs could be seen with the formation of RPE. At D120 of differentiation, the outer segments of photoreceptor cells were seen on the surface of ROs. We collected organoids from 0 to 120 days for RNA sequencing (Figure 1, top and middle panels). Using FusionCatcher software, we examined chimeric RNAs in human ROs covering eight developmental stages from D0, 30, 45, 60, 75, 90, and 105\u2013120, corresponding to in vivo developmental stages D0, 30, 45, 60, 75, 90, 105, and 120 (Cowan et al., 2020), respectively. Each stage included two to three biological replicates (a total of N = 22), and each replicate contained approximately 100 ROs. To reduce false positives, splicing events were considered as positive chimeric RNA candidates only if spanning unique reads were detected at least once (Figure 1, bottom panel).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/92523/elife-92523-fig1-v3.jpg)\n\n**Figure 1.:** (Top panel) Procedure for the generation of human retinal organoids (ROs) from pluripotent stem cells. (Middle panel) D0\u2013120 human ROs were used for bulk RNA sequencing. Scale bars: 200 \u03bcm (D0) and 400 \u03bcm (D30\u2013D120). (Bottom panel) Illustration of chimeric RNA screening process and criteria by FusionCatcher.\n\nChimeric RNAs were continuously expressed during RO development (Figure 2A). Chimeric events were categorized according to the locations of the parental genes on the chromosome, either inter- or intra-chromosomal. While the number of intra-chromosomal chimeric RNAs increased with the development of ROs (r2 = 0.93, p = 0.00076, Pearson\u2019s correlation analysis), there was no such trend for inter-chromosomal chimeric RNAs (Figure 2B,C). Chimeric events can also be categorized according to the predicted effect (Figure 3\u2014figure supplement 1). In the top three categories, the number of \u2018In-frame\u2019 chimeric RNAs was 11.2%, followed by \u2018CDS(truncated)_UTR\u2019 (10.7%) and \u2018UTR_UTR\u2019 (10.7%) (Figure 3A). We further classified chimeric events according to the type of their parental genes. The majority of chimeric RNAs were formed between two protein-coding genes (61.9%) (Figure 3B).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/92523/elife-92523-fig2-v3.jpg)\n\n**Figure 2.:** (A) Circos plots of genomic distribution of chimeric RNA parental genes observed in this work. Red lines indicate parental genes located in the same chromosome. Blue lines indicate parental genes located in different chromosomes. The outermost colored lines of circos plots represent chromosomes. (B) Types of chimeric RNAs based on parental genes\u2019 genomic distribution. (C) Pearson\u2019s correlation analysis of the number of chimeric RNAs and developmental stages.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/92523/elife-92523-fig3-v3.jpg)\n\n**Figure 3.:** (A) Top 14 types and corresponding numbers of chimeric RNAs based on predicted effects. (B) Biotype quantification of parental gene combinations in all samples. TunpP: transcribed unprocessed pseudogene; TuniP: transcribed unitary pseudogene. (C) Motifs consisting of 20 bp DNA sequences around the fusion site. (D) Spearman correlation analysis of expression level of chimeric RNAs and their parental genes, p > 0.05.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/92523/elife-92523-fig3-figsupp1-v3.jpg)\n\nNext, we examined the motifs covering 10 bp sequences immediately upstream or downstream of the fusion site of parental genes and found that the canonical AG/GT donor\u2013acceptor motif had the highest position weight (Figure 3C). In addition, we also found that the expression of the chimeric RNAs did not correlate with the expression of the parental genes (Figure 3D). These results were consistent with previous reports (Ou et al., 2021; Singh et al., 2020), indicating that the procedure for screening chimeric RNAs was reliable and that these chimeric RNAs do not arise randomly, suggesting that they may play a role in the normal development and physiological activity of the retina.\n\n### CTCL is present in the human retina and at all the stages of RO development\n\nCTCL has been shown to have a regulatory role in human cerebral development. Similarly, four isoforms of CTCL, joined by alternative splicing of the parent pre-mRNAs, were detected in the ROs by RNA-seq. In-frame CTCL can be further translated into chimeric proteins, and we think that it plays a more critical role than the other three isoforms. It was dynamically expressed during RO development and there were two obvious higher expression timepoints at D60 and D120 (Figure 4A, B). Retinal cells like cones, rods, and horizonal cells had been generated around D120, so we chose D60 when most retinal cells were progenitors. To further validate the presence of CTCL in the developing human ROs, we extracted total RNAs from D60 human ROs, followed by reverse transcription and Sanger sequencing using specific primers to amplify the fragments containing fusion sites between CTNNBIP1 and CLSTN1 (Figure 4\u2014source data 1; Figure 4\u2014source data 2; Figure 4C,D and Key resources table). At D60, the In-frame, UTR_CDS(truncated)-1, and CDS(truncated)Intronic CTCL isoforms were confirmed but UTR_CDS(truncated)-2 CTCL was not detected.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/92523/elife-92523-fig4-v3.jpg)\n\n**Figure 4.:** (A) Heatmap of CTCL\u2019s spanning unique reads of each isoform in the indicated stages. UTR_CDS(TR)-1: UTR_CDS(truncated)-1; CDS(TR)Intronic: CDS(truncated)Intronic; UTR_CDS(TR)-2: UTR_CDS(truncated)-2. (B) Schematic diagram of the structures of the four isoforms of CTCL. Blue represents upstream parental gene, red represents downstream parental gene. (C) Four isoforms of CTCL in D60 ROs were validated by quantitative reverse transcription polymerase chain reaction (qRT-PCR). (D) Sanger sequencing to verify three isoforms of CTCL.\n\nTo further validate the widespread presence of the In-frame CTCL in vivo and in vitro, we examined it in various samples including mouse retinas, three human induced pluripotent stem cell (iPSC)-cultured ROs, and human retinas. Indeed, the In-frame CTCL was consistently identified in human retinas, iPSCs1/iPSCs2/iPSCs3-derived ROs, and H9 cells, but not in the mouse retinas (Figure 5\u2014source data 1; Figure 5\u2014source data 2; Figure 5\u2014source data 3; Figure 5\u2014source data 4; Figure 5). Moreover, we also screened CTCL using the retinal transcriptome sequencing data available in the Gene Expression Omnibus (GEO) database, all of the nine human retinal samples yielded uniformly positive results (Table 1; Sun et al., 2019; Zauhar et al., 2022). These results suggest that CTCL is universally generated in human retinas in vivo, ROs, and retinal cell lines in vitro, but not a phenomenon of the H9 cell line exclusively. The dynamic presence of CTCL, especially the In-frame isoform, suggests that it may play a vital role in human retinal development.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/92523/elife-92523-fig5-v3.jpg)\n\n**Figure 5.:** (A) The qRT-PCR validation of the In-frame CTCL in the mouse retina, iPSCs1/iPSCs2-derived ROs, and H9 cells. (B) The qRT-PCR validation of In-frame CTCL in the iPSCs3-derived ROs and human retina. (C) Verification of the In-frame CTCL in the mouse retina, iPSCs1/iPSCs2-derived ROs and H9 cells by Sanger sequencing. (D) Verification of the In-frame CTCL in the iPSCs3-derived ROs and human retinas by Sanger sequencing.\n\n**Table 1.**\n CTCL is detected in multiple healthy human retinas by RNA-seq.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Data source</th>\n      <th>Samples</th>\n      <th>Gene 1 symbol</th>\n      <th>Gene 2 symbol</th>\n      <th>Fusion point for gene 1</th>\n      <th>Fusion point for gene 2</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>PMID: 30874468 (Sun et al., 2019) Data published by our lab</td>\n      <td>Human retina</td>\n      <td>CTNNBIP1</td>\n      <td>CLSTN1</td>\n      <td>1:9871187:-</td>\n      <td>1:9773394:-</td>\n    </tr>\n    <tr>\n      <td>PMID: 30874468 (Sun et al., 2019)Data published by our lab</td>\n      <td>Human retina</td>\n      <td>CTNNBIP1</td>\n      <td>CLSTN1</td>\n      <td>1:9871187:-</td>\n      <td>1:9773394:-</td>\n    </tr>\n    <tr>\n      <td>PMID:35784369 (Zauhar et al., 2022)SRR22315404</td>\n      <td>Human retina</td>\n      <td>CTNNBIP1</td>\n      <td>CLSTN1</td>\n      <td>1:9871187:-</td>\n      <td>1:9773394:-</td>\n    </tr>\n    <tr>\n      <td>PMID:35784369 (Zauhar et al., 2022)SRR22315407</td>\n      <td>Human retina</td>\n      <td>CTNNBIP1</td>\n      <td>CLSTN1</td>\n      <td>1:9871187:-</td>\n      <td>1:9773394:-</td>\n    </tr>\n    <tr>\n      <td>PMID:35784369 (Zauhar et al., 2022)SRR22315408</td>\n      <td>Human retina</td>\n      <td>CTNNBIP1</td>\n      <td>CLSTN1</td>\n      <td>1:9871187:-</td>\n      <td>1:9773394:-</td>\n    </tr>\n    <tr>\n      <td>PMID:35784369 (Zauhar et al., 2022)SRR22315412</td>\n      <td>Human retina</td>\n      <td>CTNNBIP1</td>\n      <td>CLSTN1</td>\n      <td>1:9871187:-</td>\n      <td>1:9773394:-</td>\n    </tr>\n    <tr>\n      <td>PMID:35784369 (Zauhar et al., 2022)SRR22315419</td>\n      <td>Human retina</td>\n      <td>CTNNBIP1</td>\n      <td>CLSTN1</td>\n      <td>1:9871187:-</td>\n      <td>1:9773394:-</td>\n    </tr>\n    <tr>\n      <td>PMID:35784369 (Zauhar et al., 2022)SRR22315420</td>\n      <td>Human retina</td>\n      <td>CTNNBIP1</td>\n      <td>CLSTN1</td>\n      <td>1:9871187:-</td>\n      <td>1:9773394:-</td>\n    </tr>\n    <tr>\n      <td>PMID:35784369 (Zauhar et al., 2022)SRR22315424</td>\n      <td>Human retina</td>\n      <td>CTNNBIP1</td>\n      <td>CLSTN1</td>\n      <td>1:9871187:-</td>\n      <td>1:9773394:-</td>\n    </tr>\n  </tbody>\n</table>\n\n### CTCL knockdown obstructed NR differentiation but prompted the RPE differentiation\n\nAccording to the chimeric CTCL RNA expression levels (Figure 4A), we focused on the D60 In-frame CTCL to explore its function. A CRX-tdTomato reporter hPSC line was used in the CTCL-knockdown experiment. This cell line is derived from H9 cells and it has been shown that tdTomato follows CRX expression spatiotemporally and the cells had the same organoid yield as H9 cells, suggesting that genetic modification of H9 did not affect its developmental process (Pan et al., 2020). ROs were differentiated according to the previous report (Lowe et al., 2016; Figure 6\u2014figure supplement 1 and Video 1). Lentiviruses carrying shCTCL (short-hairpin CTCL) or scramble shRNA (see Key resources table) infected the retinal cells at D12. After 3 days, cells were harvested for analysis of knockdown efficiency (Figure 6A,B). Compared with the scramble shRNA group, the In-frame CTCL RNA level was reduced to approximately 70% (Figure 6B). The RNA levels of the parental genes, CTNNBIP1 and CLSTN1, showed no significant differences compared to the scramble shRNA group (Figure 6\u2014figure supplement 2).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/92523/elife-92523-fig6-v3.jpg)\n\n**Figure 6.:** (A) A schema illustrated the shRNA experiments. A CRX-tdTomato report line was used in this experiment. The shCTCL or scramble shRNA lentivirus transfected the retinal cells in three independent experiments on D12. All samples for shRNA experiments were collected on day 60, except those for analysis of knockdown efficiency. (B) Samples were obtained 48\u201372 hr after infection to examine the knockdown efficiency. There were two technical replicates for three independent experiments, t-test, ***, p < 0.001. Data were shown as mean \u00b1 standard deviation (SD). Scale bar = 200 \u03bcm. (C) D60 scramble shRNA-transfected retinal organoids (ROs) displayed a typical morphology of ROs with the expression of CRX. ShCTCL-transfected organoids showed thinner outer layers with much less CRX expression. BF, bright-field images, same as below.Scale bars = 200 \u03bcm. (D) The shCTCL group displayed much thinner outer layers (orange arrows in right panel). The outer layer thickness of 25 organoids from each group was measured for statistics analysis, t-test, ****, p < 0.0001. Data were shown as mean \u00b1 SD. Scale bar = 400 \u03bcm.(E) The section immunostaining of neural progenitor markers PAX6 and OTX2, and differentiated cell markers CRX, in shCTCL-treated organoids. Scale bars = 100 \u03bcm. (F) Whole-mount immunostaining of shCTCL-transfected organoids with CRX, shCTCL, and RPE-specific markers MITF and BEST1. Scale bars = 100 \u03bcm.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/92523/elife-92523-fig6-figsupp1-v3.jpg)\n\n**Figure 6\u2014figure supplement 1.:** This RO differentiation method was a combination of 2D and 3D culture. On D60, CTCL downregulated organoids displayed a thinner outer layer. Live imaging showed that D60 organoids expressed CRX reporter tdTomato (red) and shCTCL reporter GFP (green). Scale bars = 400 \u03bcm.\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/92523/elife-92523-fig6-figsupp2-v3.jpg)\n\n**Figure 6\u2014figure supplement 2.:** (A) The knockdown experiments showed no effect on the RNA expression levels of CTNNBIP1, n = 4, t-test, p > 0.05. (B) The knockdown experiments showed no effect on the RNA expression levels of CLSTN1, n = 4, t-test, p > 0.05.\n\n![Figure 6\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/92523/elife-92523-fig6-figsupp3-v3.jpg)\n\n**Figure 6\u2014figure supplement 3.:** Immunostaining of retinal pigment epithelial (RPE)-specific marker MITF on CTCL-knockdown organoids (A) and scramble shRNA organoids (B). Immunostaining of RPE-specific marker RPE65 on CTCL-knockdown organoids (C) and scramble shRNA organoids (D). The lower panel showed the amplified images of the indicated areas. Immunostaining of PAX6 on CTCL-knockdown organoids (E) and scramble shRNA organoids (F). Scale bars = 100 \u03bcm. BF, bright-field images.\n\n![Video 1.](https://cdn.elifesciences.org/articles/92523/elife-92523-video1.mp4.jpg)\n\nAt D60, ROs with scramble shRNA displayed the typical RO morphology with the generation of photoreceptor precursors (CRX+) (Figure 6C, upper panel, live-cell imaging). In the shCTCL group, the organoid morphology changed with a thinner outer layer, and the CRX proteins diminished where the pigments appeared (Figure 6C, lower panel, live-cell imaging). The average thickness of the outer layers in those two groups was calculated (Figure 6D, outer layer indicated with orange arrows, live-cell imaging), and there is a dramatic decrease in the outer layer thickness in the shCTCL group.\n\nTo identify the aberrations in cell fate specification caused by CTCL knockdown, we examined the organoids with RPC-specific markers, PAX6 and OTX2. It was shown that PAX6 was highly expressed, but OTX2 was much less, and CRX appeared where GFP (shCTCL) was relatively lower (Figure 6E). CRX is known to be highly expressed in photoreceptors and precursors but low in mature RPE (Lidgerwood et al., 2021). Since the organoids acquired the features of RPE, we hypothesized that the outer layer of CTCL-knockdown organoids switched to the RPE fate. To further confirm this, the organoids were immunostained with RPE-specific markers, MITF, BEST1, and RPE65, which were present in the nucleus, cytoplasm, and intracellular regions, respectively (Figure 6F, Figure 6\u2014figure supplement 3A, C). In contrast, no pigments or RPE-specific markers were observed in the scramble shRNA group, only the PAX6 was detected in the nucleus (Figure 6\u2014figure supplements 3B, D\u2013F). The shCTCL green fluorescence in Figure 6E\u2013F was captured with live imaging and the signal was not amplified with anti-GFP antibodies; as a result, the weaker green signals can not be seen in the images. Taken together, these results indicate that CTCL is essential for the ROs\u2019 differentiation and that CTCL knockdown would promote the RPE cell fate at the expense of neural retinal cells.\n\n### The underlying molecular changes in CTCL-knockdown ROs\n\nThe above results suggest that CTCL is essential for cell fate conversion in normal retinogenesis. To investigate the underlying molecular regulation, we compared the transcriptomes of shCTCL- and scramble shRNA-treated organoids by bulk RNA-seq. We obtained 3901 differentially expressed genes (DEGs) (shCTCL vs. scramble shRNA, |Log2(fold change)| > 1, p-value <0.05), among which 2720 were upregulated and 1181 downregulated (Figure 7A,B).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/92523/elife-92523-fig7-v3.jpg)\n\n**Figure 7.:** (A) Volcano plot shows differentially expressed genes (DEGs, p-values <0.05 and |Log2(shCTCL/scramble)| > 1) between shCTCL- and scramble shRNA-treated organoids at D60. (B) Heatmap of DEGs in shCTCL- and scramble shRNA-treated organoids. (C) Functional enrichment analysis of up- and downregulated DEGs. (D) Gene Set Enrichment Analysis (GSEA) results showed the enriched gene sets in shCTCL-treated organoids using the c8 reference gene set. (E) Expression of retinal pigment epithelial (RPE)-related genes in shCTCL- and scramble shRNA-treated organoids. (F) GSEA results showed the enriched gene sets in shCTCL-treated organoids using the hallmark reference gene set. (G) Expression of epithelial\u2013mesenchymal transition (EMT)-related genes in shCTCL- and scramble shRNA-treated organoids.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/92523/elife-92523-fig7-figsupp1-v3.jpg)\n\n**Figure 7\u2014figure supplement 1.:** (A) Bright-filed image of mature RPE differentiated from iPSCs. (B) The RT-qPCR results of CTCL RNA expression levels in D60 CTCL-knockdown organoids and the differentiated RPEs at the indicated timepoints. It showed that CTCL was expressed at a lower level in RPEs, even compared with that in the shCTCL-treated retinal organoids, n = 4, t-test, ****, p < 0.0001.\n\n![Figure 7\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/92523/elife-92523-fig7-figsupp2-v3.jpg)\n\nTo investigate the biological pathways affected by the loss-of-function of CTCL, we performed functional enrichment for up- and downregulated DEGs using Metascape. Upregulated DEGs were significantly enriched in pathways associated with extracellular matrix organization, morphogenesis, and epithelial cell differentiation. On the other hand, downregulated DEGs were significantly enriched in the neurogenesis-associated pathways (Figure 7C). To further understand the changes in cell composition between shCTCL- and scramble shRNA-treated organoids, we used the Gene Set Enrichment Analysis (GSEA) to analyze the whole-gene expression lists of the organoids. GSEA analysis with c8 as the reference gene set (Mootha et al., 2003; Subramanian et al., 2005) revealed that genes of RPE, ocular corneal, and conjunctival epithelial cells were significantly upregulated in shCTCL organoids; however, all genes related to neural retinal component cells (photoreceptor cells, M\u00fcller glial cells, horizontal cell, amacrine cell, and retinal ganglion cell) were downregulated (Figure 7D). Moreover, the expression pattern of RPE-related genes in shCTCL organoids was closer to that of RPE from induced pluripotent stem cells (Maruotti et al., 2015; Figure 7E and Figure 7\u2014figure supplement 1A). At the same time, CTCL remains in a low expression state during RPE development (Figure 7\u2014figure supplement 1B). These results suggest that CTCL has a positive role in the normal development of ROs and that CTCL deficiency would promote the differentiation of RPCs toward RPE.\n\nTo further explore the molecular mechanisms involved in this process, we performed the GSEA analysis using hallmark gene sets (Mootha et al., 2003; Subramanian et al., 2005). The most significantly enriched pathway was epithelial\u2013mesenchymal transition (EMT) (Figure 7F). And most of the EMT-related genes were relatively highly expressed in shCTCL-treated organoids (Figure 7\u2014figure supplement 2) (Figure 7G), which is particularly essential for neural crest delamination in vertebrates and the generation of different tissues during development (Kim et al., 2014b). Therefore, the downregulation of CTCL expression activated the EMT pathway which altered the directions of cell differentiation.\n\n## Discussion\n\nThe term \u2018chimeric RNA\u2019 refers to any transcript composed of transcripts from different parental genes, including gene fusion transcripts (Wu et al., 2019). Chimeric RNAs with two parental gene sequences will further generate new dysregulated wild-type proteins, new fusion proteins, and new non-coding RNAs, expanding the abundance of the transcriptome and proteome. The first chimeric RNA that lacks DNA alterations is AML1-ETO, which is associated with acute myeloid leukemia (Langabeer et al., 1997). Subsequently, cis-splicing between neighboring genes was also found to generate chimeric RNAs, such as the CTCF-sensitive cis-spliced fusion RNAs ADCK4-NUMBL in prostate cancer (Qin et al., 2015). In addition, chimeric RNAs can be generated by long-range inter- and intra-chromosomal trans-splicing (Li et al., 2008). Early phase of studies has focused on the role of chimeric RNAs in cancer, where they contribute to cancer development, and serve as biomarkers and therapeutic targets.\n\nAdvances in sequencing technology have facilitated the identification of chimeric RNAs and have stimulated the research in the field of cancer. However, researchers have also found that there are some misunderstandings about chimeric RNAs. For example, PAX3-FOXO1 was initially identified as a biomarker for alveolar rhabdomyosarcoma (Singh et al., 2022), but was later found to be present during normal muscle differentiation. PAX3-FOXO1 is transiently required for muscle lineage commitment (Xie et al., 2019), and can escape miR-495 regulation during muscle differentiation. If PAX3-FOXO1 is not withdrawn at the right timing, it can lead to tumorigenesis. DUS4L-BCAP29 was originally identified in gastric cancer, where it promotes cell proliferation and is therefore considered to have tumorigenic potential (Kim et al., 2014a). DUS4L-BCAP29 was subsequently identified in human non-cancerous tissues (Tang et al., 2017), and its role in promoting cell proliferation is not unique to cancer cells. It is a chimeric RNA present in normal physiology with a function in promoting neural differentiation (Tang et al., 2019). Therefore, studying chimeric RNAs in normal tissues has two implications: first, we can learn more about the normal physiological functions of chimeric RNAs; second, we can establish a control baseline for the discovery of tumor markers.\n\nIt is now well established that chimeric RNAs are abundant in normal human tissues and play a regulatory role in cellular activities. In this work, we investigated chimeric RNAs in retina for the first time. We present the expression atlas of chimeric RNAs throughout the developing ROs mimicking human retinas at various development stages. As a recently identified chimeric RNA, and the In-frame CTCL was reported to play a key role in cerebral development (Ou et al., 2021). Using the ROs as a model for loss-of-function experiments, we found that the In-frame CTCL also has a key role in the development of the retina and that CTCL deficiency inhibited NR differentiation but induced the RPE differentiation.\n\nIn-frame CTCL is generated by cis-splicing fusion of the first 5 exons of CTNNBIP1 and the last 17 exons of CLSTN1. The 5\u2032 parental gene CTNNBIP1 encodes a receptor for \u03b2-catenin, and their binding promotes the catabolism of \u03b2-catenin, which in turn puts the Wnt pathway in an inactive state (Fu et al., 2018). Its mutation has been shown to be associated with anterior segment dysgenesis 5 in the human disease database MalaCards (https://www.malacards.org/). CLSTN1 is a member of the calsyntenin family, a subset of the cadherin superfamily. It can mediate the axonal anterograde transport of certain types of vesicles (Nagase et al., 1998). The interesting question is that whether CTCL retains the biparental functions and/or acquires novel functions? Previous report demonstrated that CTCL could fine-tune Wnt signaling to regulate cerebral development (Ou et al., 2021). Therefore, in this study, we had expected CTCL to function by modulating the Wnt signaling pathway or by impacting vesicular trafficking. However, surprisingly, the GSEA and DEG functional enrichment results did not show significant changes in these two biological pathways (Figure 6C, D, F). The differences between the shCTCL- or scramble shRNA-treated organoids were mainly in EMT, extracellular matrix organization, morphogenesis, epithelial cell differentiation, and neurogenesis-associated pathways, suggesting that even the same chimeric RNAs may function differently in close tissues.\n\nIn summary, we have identified the chimeric RNAs in the developing human ROs and found that loss-of-function of CTCL inhibited NR differentiation while prompted the RPE differentiation. Although this chimeric RNA has been previously reported in the cerebral cortex and the retina is also part of the CNS, the two tissues differ in morphology, cellular composition, development, and function. Moreover, we have made new discoveries regarding the function and mechanism of CTCL. This study revealed for the first time a key role of chimeric RNAs in human retinal development, providing new insights into the role of chimeric RNAs in regulating tissue development. In the future, we will investigate more unreported chimeric RNAs in retinal development to further illustrate the critical role of chimeric RNAs in human retinal development.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Cell line (Homo sapiens)</td>\n      <td>CRX-tdTomato human ES reporter line-H9</td>\n      <td>PMID:32831148</td>\n      <td></td>\n      <td>Available upon reasonable request.</td>\n    </tr>\n    <tr>\n      <td>Cell line (Homo sapiens)</td>\n      <td>iPSCs1</td>\n      <td>PMID:36714839</td>\n      <td></td>\n      <td>Available upon reasonable request.</td>\n    </tr>\n    <tr>\n      <td>Cell line (Homo sapiens)</td>\n      <td>iPSCs2</td>\n      <td>PMID:35451725</td>\n      <td></td>\n      <td>Available upon reasonable request.</td>\n    </tr>\n    <tr>\n      <td>Cell line (Homo sapiens)</td>\n      <td>iPSCs3</td>\n      <td>PMID:33970142</td>\n      <td></td>\n      <td>Available upon reasonable request.</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-Pax6(rabbit polyclonal)</td>\n      <td>Biolegend</td>\n      <td>Cat.# 862002RRID: AB_3076431</td>\n      <td>Dilution: 1:200</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-Ki67 (rabbit polyclonal)</td>\n      <td>Abcam</td>\n      <td>Cat.# ab15580 RRID:AB_443209</td>\n      <td>Dilution: 1:200</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-OTX2 \uff08rabbit monoclonal\uff09</td>\n      <td>Abcam</td>\n      <td>Cat.# ab183951RRID: AB_3076432</td>\n      <td>Dilution: 1:200</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-HuC/D \uff08mouse monoclonal\uff09</td>\n      <td>Invitrogen</td>\n      <td>Cat.# A21271RRID:AB_221448</td>\n      <td>Dilution: 1:100</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-SOX2 \uff08mouse monoclonal\uff09</td>\n      <td>Santa Cruz</td>\n      <td>Cat.# sc-365823RRID:AB_10842165</td>\n      <td>Dilution: 1:200</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-MITF \uff08mouse monoclonal\uff09</td>\n      <td>Abcam</td>\n      <td>Cat.# ab3201RRID:AB_303601</td>\n      <td>Dilution: 1:100</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-GFAP (mouse monoclonal)</td>\n      <td>Santa Cruz</td>\n      <td>Cat.# sc-33673RRID:AB_627673</td>\n      <td>Dilution: 1:200</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-Sox9 (rabbit mono/oligo-colonal )</td>\n      <td>Invitrogen</td>\n      <td>Cat.# 711048RRID:AB_2633109</td>\n      <td>Dilution: 1:200</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti- RxR\u03b3 (mouse monoclonal)</td>\n      <td>Santa Cruz</td>\n      <td>Cat.# sc-365252RRID:AB_10850062</td>\n      <td>Dilution: 1:100</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pLenti-U6-shRNA-EF1a-EGFP-T2A-Puro-WPRE</td>\n      <td>This paper</td>\n      <td></td>\n      <td>Available upon reasonable request.</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>UTR_CDS(truncated)-1 CTCL-forward</td>\n      <td>Tsingke Biotechnology Co., Ltd</td>\n      <td></td>\n      <td>TGCAAAGCCCTTGGAACA</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>UTR_CDS(truncated)-1 CTCL-reverse</td>\n      <td>Tsingke Biotechnology Co., Ltd</td>\n      <td></td>\n      <td>TCCACTACCACTGCATCAAAG</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>in-frame CTCL-forward</td>\n      <td>Tsingke Biotechnology Co., Ltd</td>\n      <td></td>\n      <td>TTCCTACTTCTGCCCAGCC</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>in-frame CTCL-reverse</td>\n      <td>Tsingke Biotechnology Co., Ltd</td>\n      <td></td>\n      <td>AGGCCTGGATGGTGAATGAAT</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>CDS(truncated)_intronic CTCL-forward</td>\n      <td>Tsingke Biotechnology Co., Ltd</td>\n      <td></td>\n      <td>GAAGAGTCCGGAGGAGATGTA</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>CDS(truncated)_intronic CTCL-reverse</td>\n      <td>Tsingke Biotechnology Co., Ltd</td>\n      <td></td>\n      <td>ATTCTCTGCCAAGACTTACACC</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>UTR_CDS(truncated)-2 CTCL-forward</td>\n      <td>Tsingke Biotechnology Co., Ltd</td>\n      <td></td>\n      <td>CTCCTGCTGCTGCTACTG</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>UTR_CDS(truncated)-2 CTCL-reverse</td>\n      <td>Tsingke Biotechnology Co., Ltd</td>\n      <td></td>\n      <td>GGTCCCTTCCCACAATCATAG</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>GAPDH forward</td>\n      <td>Tsingke Biotechnology Co., Ltd</td>\n      <td></td>\n      <td>CTCTGACTTCAACAGCGACA</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>GAPDH reverse</td>\n      <td>Tsingke Biotechnology Co., Ltd</td>\n      <td></td>\n      <td>GTAGCCAAATTCGTTGTCATACC</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>ShCTCL</td>\n      <td>Tsingke Biotechnology Co., Ltd</td>\n      <td></td>\n      <td>TGCTTGTTAACCTGGTCGA</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Scramble</td>\n      <td>Tsingke Biotechnology Co, Ltd</td>\n      <td></td>\n      <td>GCCTAAGGTTAAGTCGCCCTCG</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>R (v4.0.3)</td>\n      <td>R Development Core Team, 2020</td>\n      <td>RRID:SCR_001905</td>\n      <td>https://www.r-project.org/</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>FusionCatcher</td>\n      <td>Nicorici, 2023</td>\n      <td></td>\n      <td>https://github.com/ndaniel/fusioncatcher</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Hisat2</td>\n      <td>Kim and Park, 2022</td>\n      <td></td>\n      <td>https://github.com/DaehwanKimLab/hisat2</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>samtools</td>\n      <td>Danecek et al., 2023</td>\n      <td></td>\n      <td>https://github.com/samtools/samtools</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>featureCounts</td>\n      <td>Liao et al., 2021</td>\n      <td></td>\n      <td>http://subread.sourceforge.net/featureCounts.html</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>ggplot2</td>\n      <td>Pedersen, 2022</td>\n      <td></td>\n      <td>https://rdocumentation.org/packages/ggplot2/versions/3.3.6</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>ggseqlogo</td>\n      <td>Wagih, 2017</td>\n      <td></td>\n      <td>https://github.com/omarwagih/ggseqlogo</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>chimeraviz</td>\n      <td>L\u00e5gstad, 2023</td>\n      <td></td>\n      <td>https://www.bioconductor.org/packages/release/bioc/html/chimeraviz.html</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>pheatmap</td>\n      <td>Kolde, 2019</td>\n      <td></td>\n      <td>https://rdocumentation.org/search?q=pheatmap</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>clusterProfiler</td>\n      <td>Yu, 2012</td>\n      <td></td>\n      <td>https://rdocumentation.org/search?q=clusterProfiler</td>\n    </tr>\n  </tbody>\n</table>\n\n### RNA sequencing and data analysis\n\nA total amount of 1\u20133 \u03bcg RNA per sample was used as input material for the RNA sample preparations. Sequencing libraries were generated using VAHTS Universal V6 RNA-seq Library Prep Kit for Illumina (NR604-01/02) following the manufacturer\u2019s recommendations and index codes were added to attribute sequences to each sample. Briefly, mRNA was purified from total RNA using poly-T oligo-attached magnetic beads. Then we added fragmentation buffer to break the mRNA into short fragments. First-strand cDNA was synthesized using random hexamer primer and RNase H. Second-strand cDNA synthesis was subsequently performed using buffer, dNTPs, DNA polymerase I, and RNase H. And then, the double stranded cDNA was purified by AMPure P beads or QiaQuick PCR kit. The purified double-stranded cDNA was repaired at the end, added a tail and connected to the sequencing connector, then the fragment size was selected, and finally the final cDNA library was obtained by PCR enrichment.\n\nWe used FusionCatcher (Nicorici et al., 2014) software (https://github.com/ndaniel/fusioncatcher) to identify chimeric RNAs in human ROs. Positive chimeric RNAs identified using FusionCatcher were selected with alignment of spanning unique reads. The expression level of chimeric RNAs was reflected from log(Spanning_unique_reads/Total_number_of_reads*10,000,000) value. To analyze the expression of parental genes in human ROs, raw reads were first mapped to the hg38 human genome reference sequence by Hisat2 software, then transcripts were assembled with featureCounts. Metascape (https://metascape.org/gp/index.html) is used for functional annotation. The position weight matrix of the 20 bp DNA sequence motif around the fusion site was calculated by the seqLogo R package. GSEA analysis is done with the R package clusterProfiler.\n\n### Generation of ROs from hESCs\n\nThe CRX-tdTomato human ES reporter line and iPSCs were used for the ROs differentiation. The hESCs were cultured to 80% confluence. Cell colonies were dissociated using dispase buffer (Stem cell, 07923) for 5 min at 37\u00b0C and were then cut into smaller pieces/aggregates. The aggregates were collected and mixed with Matrigel (RD). The solidified gel with ES cells were dispersed into small pieces with medium containing 1:1 mixture of Dulbecco\u2019s modified Eagle medium (DMEM)/F12, neurobasal medium, and 0.5\u00d7 N2 supplement (Gibco), 0.5\u00d7 B27 supplement (Gibco), 1\u00d7 MEM Non-Essential Amino Acids Solution (Gibco), 2 mM Glutamax (Gibco), and 0.1 mM 2-mercaptoenthanol. At day 1 (D1), hollow cysts could be observed in the dish and cysts started to attach to the culture dish and spread in 3 days. At D5, the cysts were dispersed into two culture dishes with same medium. Medium was changed every 5 days. On D15, detaching the cells with dispase and change to medium with DMEM/F12 (3:1), 1\u00d7 B27 supplement (Gibco), and 1\u00d7 MEM-NEAA (Gibco) for a week. Optic vesicles formed in this period. Finally, optic vesicles were transfered to serum medium with DMEM/F12 (3:1), 1\u00d7 B27 supplement (Gibco), 1\u00d7 MEM-NEAA (Gibco), 8% fetal bovine serum (Gibco), 100 mM Taurine (Sigma-Aldrich), and 2 mM Glutamax (Gibco). ROs would be collected at D60.\n\n### CTCL knockdown in the ROs\n\nRNA interference oligo (5\u2032-TGCTTGTTAACCTGGTCGA-3\u2032) against CTCL was cloned into lentivirus vector (pLenti-U6-shRNA-EF1a-EGFP-T2A-Puro-WPRE). D12 retinal cells were infected with lentiviruses ( Multiplicity of infection [MOI] = 10, the ratio of the number of transducing lentiviral particles to the number of cells) for 6 hr, and replaced with fresh medium. The fluorescence was detected after 48 hr. The expression of CTCL, CTNNBIP1, and CLSTN1 in retinal cells was analyzed at D15 by quantitative PCR.\n\n### Immunostaining of cryosections\n\nROs were fixed in 4% paraformaldehyde for 30 min and imbedded in O.C.T. compound and sectioned into 10 \u03bcm slices. The cryosections were blocked with 0.5% Triton X-100 in 4% bovine serum albumin (BSA) for 1 hr. After that, sections were incubated in primary antibodies (diluted in 4% BSA supplied with 0.5% Triton X-100) at 4\u00b0C overnight. The following primary antibodies were used: anti-OTX2 (1:200, Cat.# ab183951; Abcam), anti-PAX6 (1:200, Cat.# 901301; Biolegend), anti-SOX2 (1:200, Cat.# sc-365823; Santa Cruz), anti-HuC/D (1:100, Cat.# A21271; Invitrogen), anti-MITF (1:100, Cat.# ab3201; Abcam), anti-GFAP (1:200, Cat.# sc-33673; Santa Cruz), anti-Sox9 (1:200, Cat.# 711048; Invitrogen), anti-RxR\u03b3 (1:100, Cat.# sc-365252; Santa Cruz), and anti-Ki67 (1:200, Cat.# ab15580; Abcam). After washed with phosphate-buffered saline, cryosections were stained with Alexa Fluor-conjugated secondary antibodies (diluted 1:500, Invitrogen) for 1 hr at room temperature in the dark.\n\n### Quantification and statistical analysis\n\nHeatmap was plotted with the R package Pheatmap. All plots were drawn with R package ggplot2. Detailed statistical analysis of experiments can be found in the figure legends, including the statistical tests used, exact values, and biological replicates.\n\n### Resource availability\n\nFurther information and requests for resources and reagents should be directed to and will be fulfilled by the lead contact, Professor Zi-Bing Jin (jinzb502@ccmu.edu.cn).\n\n### Materials availability\n\nAll unique/stable reagents generated in this study are available from the lead contact with a completed materials transfer agreement.\n",
+      "created_at": "2025-12-04T04:03:00.764880Z"
+    },
+    {
+      "id": "58d1120d-0421-4573-b28d-5f54379c20bb",
+      "submission_id": "77847d35-ca95-4a01-8a58-069c1108b8fa",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Rebecca M Sappington, https://ror.org/04v8djg66 Wake Forest Baptist Medical Center United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.92523.sa0](https://doi.org/10.7554/eLife.92523.sa0)\n\nThe primary goal of this paper is to profile expression of chimeric RNAs in human retinal organoids throughout development. The fundamental findings provide an important step forward in understanding retinogenesis specifically and neurogenesis, generally. The compelling evidence unveils a previously unrecognized significant role of chimeric RNA CTCL in human retinal development.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Rebecca M Sappington, https://ror.org/04v8djg66 Wake Forest Baptist Medical Center United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.92523.sa1](https://doi.org/10.7554/eLife.92523.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nDecision letter after peer review:\n\nThank you for submitting the paper \"Profiling of chimeric RNAs in human retinal development with retinal organoids\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by a Senior Editor.\n\nComments to the Authors:\n\nWe are sorry to say that, after consultation with the reviewers, we have decided that this work will not be considered further for publication by eLife.\n\nThe consensus of the reviewers is that, while the work has strong potential for impact, concerns surrounding replication and reproducibility undermine the findings in this manuscript. Below is a detailed summary of reviewer comments:\n\nStrengths\n\n1. Novel study from the perspective of defining a role for chRNAs in early retinal development.\n\n2. Criteria and characterization parameters for the chimeric dataset are well-described and thoughtful.\n\n3. Evaluation of CTCL provides a functional valuation of the chimeric dataset and identifies a potential role in epithelial-mesenchymal transition (EMT), which is an interesting mechanism for cell fate switches in developmental and pathological processes.\n\nWeaknesses\n\n1. Studies appear to be limited to the use of a single cell line, which does not take into account variability between cell lines or between individuals. The field standard is 3 parent lines.\n\n2. While the coverage of 8 developmental stages is commendable, it seems that this suggests that an average of less than 3 retinal organoids was assessed at each developmental stage. With significant variability often observed between organoids, the use of an extremely limited number of organoids like this is further concerning.\n\n3. While the authors have published on the differentiation of retinal organoids in the past, and they discuss some features of retinal organoids at various developmental stages in this manuscript, it would strengthen the paper for the casual reader if some of this info was presented in Figure 1. For example, what is the significance of each developmental stage assessed, and how are the organoids characterized at each point? Representative immunostaining of organoids along with a description at each time point would greatly assist in the understanding of this study for those that are not up to date on retinal organoids.\n\n4. Concerns exist about the ability to reproduce these studies based on methods provided in the manuscript. For example, while the authors state that the \"CRX-tdTomato human ES reporter line was used for the ROs differentiation\", this does not state which cell line this actually is, nor whether this is an established cell line that has been previously characterized or not. More detail needs to be provided here and if this is a new reporter line extensive characterization needs to be performed.\n\n5. Some representative images in Figure 5 suggest that most cells are not transduced with shRNA, and sometimes very few are transduced. This is particularly concerning for scramble controls such as those observed in Figure 5C, where it appears that perhaps just 1 or 2 cells are transduced based upon the GFP reporter. It is not clear how much this variability affects these experiments, and the figures as presented suggest that scramble controls may not be better than untransduced cultures.\n\n6. Evidence for EMT is solely based on RNA sequencing. The authors should at least provide the qRT-PCR verifications.\n\n7. The Discussion section should provide greater context for the findings of the study, including recent progress in the roles of chRNAs (and the mechanisms) in tissue development and maintenance, differential functions in tumors and normal tissues should have compared and distinguished in the discussion, and relevance of loss of function studies to the retina, i.e. anterior segment dysgenesis 5 is a developmental disorder of the eye associated with mutations in CTNNBIP1.\n\nReviewer #1 (Recommendations for the authors):\n\nThe purpose of this study is to profile chimeric RNAs expression during human retinal development. Chimeric RNAs regulate stem/progenitor cell differentiation, stemness maintenance and central nervous system development. Using human embryonic stem cells (hESC)-derived retinal organoids (day 0 to day 120), the study profiled chimeric RNAs with RNA sequencing. This profiling identified several chimeric RNAs with commonality to neuronal differentiation and stem cell maintenance as well as chimeric RNAs that appear specific to retinogenesis. Based on these data, the functional significance of chimeric RNA CTNNBIP1-CLSTN1 (CTCL) in retinogenesis was examined. CTCL shRNA studies in human retinal organoids revealed that CTCL loss-of-function obstructs neural differentiation, but promotes of retinal pigment epithelial differentiation. These data provide an important step forward in understanding retinogenesis specifically and central nervous system development, generally.\n\nStrengths\n\n1. Reports first, the unbiased profile of chimeric RNA expression across a broad developmental period in human-derived retinal organoids.\n\n2. Criteria and characterization parameters for the chimeric dataset are well-described and thoughtful.\n\n3. Functional follow-up on CTCL identifies a novel role for this chimeric RNA in human retinogenesis and demonstrates the utility of the chimeric RNA profile more broadly.\n\n4. The functional consequence of CTCL downregulation has novel implications for developmental disorders of the retina.\n\nWeaknesses\n\n1. While justified by realistic and pervasive limitations, all studies here are performed in human retinal organoids. The relevance of this dataset to human development in vivo is unknown. As such, all findings from this study should be interpreted with the caveat that they may represent the characterization of a humanoid model that is not directly translatable to human development and disease.\n\n1. In the Discussion, it would be beneficial to mention Anterior segment dysgenesis 5, which is a developmental disorder of the eye associated with mutations in CTNNBIP1. This disorder is one of a collection of anterior segment dysgeneses that affect the entire anterior segment of the eye, including the cornea, iris, lens, trabecular meshwork, and Schlemm canal. This could provide more insight and context for the findings of the loss-of-function of studies.\n\nReviewer #2 (Recommendations for the authors):\n\nIn the manuscript by Wang et al., the authors reported the discovery of the chimeric RNAs (chRNAs), their quantities, and categories in human retinae. Using human iPS-derived retinal organoids as a model system, they described the dynamic expression patterns of the chRNAs during development and identified certain chRNAs that are constantly expressed during the course of development studied (up to 120 days). The function of chRNAs, taking CTCL as an example, was further demonstrated by loss-of-function experiments. They demonstrated that the knockdown of CTCL led to a reduced photoreceptor population while more cells expressing RPE-specific genes are observed. Lastly, they showed that the epithelium-mesenchymal transition is the underlying mechanism for such a fate switch from photoreceptor to RPE cells. This is the first study of the role of chimeric RNAs in early retinal development. The usage of human iPS-derived retinal organoids is proper for this subject. The paper is concisely written and should be of interest to the field of developmental biology and vision research.\n\n1) The paper for the first time revealed the landscape of chRNAs in the retina during early development. 2) The paper demonstrated that chRNAs may have important functions during neural tissue development. 3) The function of chRNAs may be tissue specific. 3) The potential mechanism of CTCL in epithelial-mesenchymal transition (EMT), an interesting mechanism involved in cell fate switches in developmental and pathological processes.\n\nMain concerns: the evidence for EMT is solely based on RNA sequencing. The authors should at least provide the qRT-PCR verifications. A few newest pieces of literature should be cited. In the Discussion section, recent progresses in the roles of chRNAs (and the mechanisms) in tissue development and maintenance should be addressed more extensively. Their differential function in tumors and normal tissues should have been compared and distinguished in the discussion.\n\nReviewer #3 (Recommendations for the authors):\n\nIn the manuscript by Wang et al., the authors set out to profile the expression of chimeric RNAs within the retina, using human pluripotent stem cell-derived retinal organoids as the model. Chimeric RNAs are typically characterized by the inclusion of exons from different genes and as such, they have not been as extensively studied as other gene targets. However, studies have demonstrated an important role for some chimeric RNAs in both normal development as well as in some disease states such as tumorigenesis. Despite this, relatively little is known about the expression patterns of chimeric RNAs in development, including within the development of the retina. To this end, the authors have pursued approaches to address this shortcoming by using human retinal organoid models. In the study, the authors first characterize the expression of chimeric RNAs in retinal organoids at various stages of development, from undifferentiated stem cells until 120 days of differentiation, at which point many (but not all) retinal cell types are represented. To then further demonstrate the significance of these chimeric RNAs, the authors then focus their studies upon one in particular \u2013 CTCL and assess the function of this chimeric RNA in loss-of-function studies that suggest that the early expression of CTCL in retinal development predisposes tissue toward a neural retina fate rather than RPE. Taken together, the studies are presented logically and are of interest to the scientific community, but a number of issues were identified that should be addressed to assist in the clarity of the research presented as well as the reproducibility of these studies for others.\n\nFirst, while the authors have published on the differentiation of retinal organoids in the past, and they discuss some features of retinal organoids at various developmental stages in this manuscript, it would strengthen the paper for the casual reader if some of this info was presented in Figure 1. For example, what is the significance of each developmental stage assessed, and how are the organoids characterized at each point? Representative immunostaining of organoids along with a description at each timepoint would greatly assist in the understanding of this study for those that are not up to date on retinal organoids.\n\nNext, some concerns exist about the ability to reproduce these studies based on methods provided in the manuscript. For example, while the authors state that the \"CRX-tdTomato human ES reporter line was used for the ROs differentiation\", this does not state which cell line this actually is, nor whether this is an established cell line that has been previously characterized or not. More detail needs to be provided here and if this is a new reporter line extensive characterization needs to be performed. Further, it seems that the studies were limited to the use of a single cell line, which does not take into account variability between cell lines nor between individuals, further reducing the potential impact of these results.\n\nNext, it seems concerning that the authors \"examined chimeric RNAs in 22 human ROs covering eight developmental stages\". While the coverage of 8 developmental stages is commendable, it seems that this suggests that an average of less than 3 retinal organoids was assessed at each developmental stage. With significant variability often observed between organoids, the use of an extremely limited number of organoids like this is further concerning, as it may not truly represent what may be found in other studies.\n\nSome concern also exists in the experimental manipulation of CTCL in the latter parts of the paper. The authors have selected this chimeric RNA as a proof of principle based on its observed expression in their studies, as well as previous studies that have assessed this RNA in cerebral organoids. To manipulate CTCL expression the authors have used shRNA approaches to knock down expression, in which their studies demonstrate an approximately 25% reduction in expression. However, some representative images in Figure 5 suggest that most cells are not transduced, and sometimes very few are transduced. This is particularly concerning for scramble controls such as those observed in Figure 5C, where it appears that perhaps just 1 or 2 cells are transduced based upon the GFP reporter. It is not clear how much this variability affects these experiments, and the figures as presented suggest that scramble controls may not be better than untransduced cultures.\n\nFinally, given the uncertainty around the limited numbers of organoids assessed (at least as determined by the studies as described by the authors) as well as the apparent difficulty in reproducibly transducing the organoids, it is concerning that the results presented will not be reproducible by others. While the studies are generally of interest, these shortcomings represent a concern.\n\nTo improve the manuscript, I recommend that the authors address multiple areas to improve reproducibility across studies. Either sample sizes need to be increased or if an error has been made in this review, then more effort needs to be made to describe sample sizes in the manuscript. Additional cell lines should also be used to validate these findings across subjects.\n\nFurther, I suggest justification of the studies further to create a more impactful, cohesive story. The study as it currently exists is a straightforward profiling of chimeric RNAs in the first few figures in a descriptive manner, and then an assessment of CTCL in the latter half. However, the selection of CTCL is not really based on the profiling and represents a somewhat incremental advance over previous studies in cerebral organoids. For justification in eLife, I would recommend further efforts made to integrate new findings of chimeric RNAs in retinal organoids.\n",
+      "created_at": "2025-12-04T04:03:00.764880Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T04:03:00.764880Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T04:03:00.764880Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "84ecac5e-f36e-4396-ab36-cdb88f849cef",
+      "content_id": "9dfa8443-ee9c-4b26-b146-5483425097c6",
+      "claim_id": "C1",
+      "claim": "Chimeric RNAs have been found in both cancerous and healthy human cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Chimeric RNAs have been found in both cancerous and healthy human cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established knowledge in the field, presented in the abstract without specific experimental data from this study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:03:00.764880Z"
+    },
+    {
+      "id": "c9599fae-64fe-4427-8a3b-748fa7ce4207",
+      "content_id": "9dfa8443-ee9c-4b26-b146-5483425097c6",
+      "claim_id": "C2",
+      "claim": "Chimeric RNAs have regulatory effects on human stem/progenitor cell differentiation, stemness maintenance, and central nervous system development.",
+      "claim_type": "EXPLICIT",
+      "source": "They have regulatory effects on human stem/progenitor cell differentiation, stemness maintenance, and central nervous system development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement references established knowledge from prior research in the field.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:03:00.764880Z"
+    },
+    {
+      "id": "5a299f8e-3f5e-4c49-bb2d-34541d9dffa5",
+      "content_id": "9dfa8443-ee9c-4b26-b146-5483425097c6",
+      "claim_id": "C3",
+      "claim": "The presence of chimeric RNAs in human retinal cells and their physiological functions in retinal development were previously unknown.",
+      "claim_type": "EXPLICIT",
+      "source": "However, whether they are present in human retinal cells and their physiological functions in the retinal development remain unknown.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement identifies a knowledge gap that the study aims to address.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:03:00.764880Z"
+    },
+    {
+      "id": "3778424d-22c4-45c2-8e22-ac62eb2d2670",
+      "content_id": "9dfa8443-ee9c-4b26-b146-5483425097c6",
+      "claim_id": "C4",
+      "claim": "The study presents an expression atlas of chimeric RNAs throughout developing retinal organoids from days 0 to 120.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on the human embryonic stem cell-derived retinal organoids (ROs) spanning from days 0 to 120, we present the expression atlas of chimeric RNAs throughout the developing ROs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the RNA sequencing data and analysis presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:03:00.764880Z"
+    },
+    {
+      "id": "95703838-24fd-4d6f-9fd5-c6fcc67ccd74",
+      "content_id": "9dfa8443-ee9c-4b26-b146-5483425097c6",
+      "claim_id": "C5",
+      "claim": "The study confirmed the existence of some common chimeric RNAs during retinal development.",
+      "claim_type": "EXPLICIT",
+      "source": "We confirmed the existence of some common chimeric RNAs and also discovered many novel chimeric RNAs during retinal development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the RNA sequencing data and validation experiments shown in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:03:00.764880Z"
+    },
+    {
+      "id": "b0041e68-ca37-40ce-88b0-eb54b3ef640a",
+      "content_id": "9dfa8443-ee9c-4b26-b146-5483425097c6",
+      "claim_id": "C6",
+      "claim": "The study discovered many novel chimeric RNAs during retinal development.",
+      "claim_type": "EXPLICIT",
+      "source": "We confirmed the existence of some common chimeric RNAs and also discovered many novel chimeric RNAs during retinal development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the RNA sequencing data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:03:00.764880Z"
+    },
+    {
+      "id": "a5fb6332-8db3-474b-85e8-2a10b7a35be1",
+      "content_id": "9dfa8443-ee9c-4b26-b146-5483425097c6",
+      "claim_id": "C7",
+      "claim": "Downregulation of CTNNBIP1-CLSTN1 (CTCL) caused precocious neuronal differentiation and a marked reduction of neural progenitors in human cerebral organoids.",
+      "claim_type": "EXPLICIT",
+      "source": "We focused on CTNNBIP1-CLSTN1 (CTCL) whose downregulation caused precocious neuronal differentiation and a marked reduction of neural progenitors in human cerebral organoids.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement references findings from a previous study (Ou et al., 2021) as cited in the introduction.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:03:00.764880Z"
+    },
+    {
+      "id": "3833e9e9-589d-46b7-bfef-c7ee315bf02a",
+      "content_id": "9dfa8443-ee9c-4b26-b146-5483425097c6",
+      "claim_id": "C8",
+      "claim": "CTCL is universally present in human retinas, retinal organoids, and retinal cell lines.",
+      "claim_type": "EXPLICIT",
+      "source": "CTCL is universally present in human retinas, ROs, and retinal cell lines, and its loss-of-function biases the progenitor cells toward retinal pigment epithelial cell fate at the expense of retinal cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by qRT-PCR validation and Sanger sequencing data shown in Figure 5 and Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:03:00.764880Z"
+    },
+    {
+      "id": "bf1e0d92-b6d7-431d-985e-eb066ac331f3",
+      "content_id": "9dfa8443-ee9c-4b26-b146-5483425097c6",
+      "claim_id": "C9",
+      "claim": "Loss-of-function of CTCL biases progenitor cells toward retinal pigment epithelial cell fate at the expense of retinal cells.",
+      "claim_type": "EXPLICIT",
+      "source": "CTCL is universally present in human retinas, ROs, and retinal cell lines, and its loss-of-function biases the progenitor cells toward retinal pigment epithelial cell fate at the expense of retinal cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the knockdown experiments and immunostaining data shown in Figures 6 and 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:03:00.764880Z"
+    },
+    {
+      "id": "32921592-b139-431d-8404-99b105a74786",
+      "content_id": "9dfa8443-ee9c-4b26-b146-5483425097c6",
+      "claim_id": "C10",
+      "claim": "The human retina is a laminar structure with a large number of different component cells that form morphologically and functionally distinct circuits.",
+      "claim_type": "EXPLICIT",
+      "source": "The human retina is a laminar structure with a large number of different component cells that form morphologically and functionally distinct circuits. They work in parallel and in combination to produce complex visual output (Hoon et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Hoon et al., 2014.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:03:00.764880Z"
+    },
+    {
+      "id": "e45c35b2-32fb-4ba9-997e-48f64feaa520",
+      "content_id": "9dfa8443-ee9c-4b26-b146-5483425097c6",
+      "claim_id": "C11",
+      "claim": "During retinogenesis, different subtypes of neurons are generated from the same group of retinal progenitor cells and precisely self-assemble into a functionally mature retina.",
+      "claim_type": "EXPLICIT",
+      "source": "During retinogenesis, different subtypes of neurons are generated from the same group of retinal progenitor cells (RPCs) and precisely self-assemble into a functionally mature retina (Masland, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Masland, 2012.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:03:00.764880Z"
+    },
+    {
+      "id": "3a618237-1e73-4a8c-a156-254060f84150",
+      "content_id": "9dfa8443-ee9c-4b26-b146-5483425097c6",
+      "claim_id": "C12",
+      "claim": "Lu et al. identified an unexpected role for ATOH7 expression in the regulation of photoreceptor specification during late retinogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Lu et al. identified an unexpected role for ATOH7 expression in the regulation of photoreceptor specification during late retinogenesis as well as the enriched bivalent modification of H3K4me3 and H3K27me3 in human but not in murine retinogenesis (Lu et al., 2020), further underscoring the limitations of using mouse models to study the human retina and transcriptional regulation in human retinogenesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Lu et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:03:00.764880Z"
+    },
+    {
+      "id": "2bcef14c-cc27-4ed0-adb9-70a7696caef4",
+      "content_id": "9dfa8443-ee9c-4b26-b146-5483425097c6",
+      "claim_id": "C13",
+      "claim": "Bivalent modification of H3K4me3 and H3K27me3 is enriched in human but not in murine retinogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Lu et al. identified an unexpected role for ATOH7 expression in the regulation of photoreceptor specification during late retinogenesis as well as the enriched bivalent modification of H3K4me3 and H3K27me3 in human but not in murine retinogenesis (Lu et al., 2020), further underscoring the limitations of using mouse models to study the human retina and transcriptional regulation in human retinogenesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Lu et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:03:00.764880Z"
+    },
+    {
+      "id": "91d563be-5cdd-45ed-9d60-e9e2e6f71e65",
+      "content_id": "9dfa8443-ee9c-4b26-b146-5483425097c6",
+      "claim_id": "C14",
+      "claim": "Retinal organoids have high similarity to human retina in terms of molecular features, cell types, and developmental rates.",
+      "claim_type": "EXPLICIT",
+      "source": "Many groups have used ROs to conduct studies related to human retinal development and have solved a basket of previously unsolvable problems, confirming the high similarity between ROs and human retina in terms of molecular features, cell types, and developmental rates (Cowan et al., 2020; Lu et al., 2020; Xie et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to Cowan et al., 2020; Lu et al., 2020; Xie et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:03:00.764880Z"
+    },
+    {
+      "id": "91e5b8a9-75d1-4f25-8131-02635d958429",
+      "content_id": "9dfa8443-ee9c-4b26-b146-5483425097c6",
+      "claim_id": "C15",
+      "claim": "Retinoblastoma tumor cells are derived from cone precursor cells.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, together with other groups, we have used ROs to confirm that retinoblastoma tumor cells are derived from cone precursor cells (Clevers, 2016; Jin et al., 2019; Li et al., 2022; Liu et al., 2021; Liu et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by multiple citations: Clevers, 2016; Jin et al., 2019; Li et al., 2022; Liu et al., 2021; Liu et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:03:00.764880Z"
+    },
+    {
+      "id": "7990a9c0-6822-4da3-9485-0dbdda9b9754",
+      "content_id": "9dfa8443-ee9c-4b26-b146-5483425097c6",
+      "claim_id": "C16",
+      "claim": "Chimeric RNAs are the ligation products of two or even more DNA or RNA sequences before or after transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "Chimeric RNAs are the ligation products of two or even more DNA or RNA sequences before or after transcription.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definitional statement based on established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:03:00.764880Z"
+    },
+    {
+      "id": "c54d8eff-7f28-4e08-8159-d188a15d7d4a",
+      "content_id": "9dfa8443-ee9c-4b26-b146-5483425097c6",
+      "claim_id": "C17",
+      "claim": "Chimeric RNAs can be further translated into proteins in addition to their RNA form.",
+      "claim_type": "EXPLICIT",
+      "source": "They can be further translated into proteins in addition to their RNA form, increasing the richness of the transcriptome and proteome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement reflects established knowledge about chimeric RNAs.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:03:00.764880Z"
+    },
+    {
+      "id": "cb19e173-033f-4867-8cd4-9c7dfdb72b58",
+      "content_id": "9dfa8443-ee9c-4b26-b146-5483425097c6",
+      "claim_id": "C18",
+      "claim": "Chimeric RNAs are widely present in human normal and tumor tissues as part of the transcriptome and can regulate the activities of individual cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies of chimeric RNAs have focused on tumors and larger tissues and organs, and found that chimeric RNAs are widely present in human normal and tumor tissues as part of the transcriptome and can regulate the activities of individual cells (Elfman and Li, 2018; Hu et al., 2018; Mertens et al., 2015; Singh et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to Elfman and Li, 2018; Hu et al., 2018; Mertens et al., 2015; Singh et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:03:00.764880Z"
+    },
+    {
+      "id": "82ec4edb-fec5-4057-968e-fa764f0a394b",
+      "content_id": "9dfa8443-ee9c-4b26-b146-5483425097c6",
+      "claim_id": "C19",
+      "claim": "Chimeric RNAs in normal human cortex increase with age and show differences in individual cells and tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been shown that chimeric RNAs in normal human cortex increase with age and show differences in individual cells and tissues (Mehani et al., 2020), highlighting the critical role of chimeric RNAs in central nervous system (CNS) development and cell lineage maintenance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Mehani et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:03:00.764880Z"
+    },
+    {
+      "id": "1d351865-ae69-4693-9450-f71094873d78",
+      "content_id": "9dfa8443-ee9c-4b26-b146-5483425097c6",
+      "claim_id": "C20",
+      "claim": "Downregulation of CTNNBIP1-CLSTN1 (CTCL) affects the growth of cerebral organoids, causing premature neuronal differentiation, and a marked reduction of neural progenitors.",
+      "claim_type": "EXPLICIT",
+      "source": "In 2021, Luo's group found that downregulation of CTNNBIP1-CLSTN1 (CTCL) affects the growth of cerebral organoids, causing premature neuronal differentiation, and a marked reduction of neural progenitors (Ou et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Ou et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:03:00.764880Z"
+    },
+    {
+      "id": "52e0d212-96f2-4e89-81ad-8de12cdf01e5",
+      "content_id": "9dfa8443-ee9c-4b26-b146-5483425097c6",
+      "claim_id": "C21",
+      "claim": "Chimeric RNAs were continuously expressed during retinal organoid development.",
+      "claim_type": "EXPLICIT",
+      "source": "Chimeric RNAs were continuously expressed during RO development (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the circos plots shown in Figure 2A displaying chimeric RNAs at all developmental stages.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:03:00.764880Z"
+    },
+    {
+      "id": "0c82954c-7879-4652-a5e0-b15955f5e879",
+      "content_id": "9dfa8443-ee9c-4b26-b146-5483425097c6",
+      "claim_id": "C22",
+      "claim": "The number of intra-chromosomal chimeric RNAs increased with the development of retinal organoids.",
+      "claim_type": "EXPLICIT",
+      "source": "While the number of intra-chromosomal chimeric RNAs increased with the development of ROs (r2 = 0.93, p = 0.00076, Pearson's correlation analysis), there was no such trend for inter-chromosomal chimeric RNAs (Figure 2B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by Pearson's correlation analysis (r2 = 0.93, p = 0.00076) and data shown in Figure 2B,C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:03:00.764880Z"
+    },
+    {
+      "id": "77f43f9b-421a-4c87-ae58-22d0fdea5e75",
+      "content_id": "9dfa8443-ee9c-4b26-b146-5483425097c6",
+      "claim_id": "C23",
+      "claim": "There was no trend of increase for inter-chromosomal chimeric RNAs during retinal organoid development.",
+      "claim_type": "EXPLICIT",
+      "source": "While the number of intra-chromosomal chimeric RNAs increased with the development of ROs (r2 = 0.93, p = 0.00076, Pearson's correlation analysis), there was no such trend for inter-chromosomal chimeric RNAs (Figure 2B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the correlation analysis and data shown in Figure 2B,C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:03:00.764880Z"
+    },
+    {
+      "id": "f9da0f60-8090-4792-957e-714db06b4f75",
+      "content_id": "9dfa8443-ee9c-4b26-b146-5483425097c6",
+      "claim_id": "C24",
+      "claim": "In-frame chimeric RNAs represent 11.2% of the top three categories of chimeric events.",
+      "claim_type": "EXPLICIT",
+      "source": "In the top three categories, the number of 'In-frame' chimeric RNAs was 11.2%, followed by 'CDS(truncated)_UTR' (10.7%) and 'UTR_UTR' (10.7%) (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the quantification data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:03:00.764880Z"
+    },
+    {
+      "id": "6c719beb-29a9-4010-8cca-2741740d940a",
+      "content_id": "9dfa8443-ee9c-4b26-b146-5483425097c6",
+      "claim_id": "C25",
+      "claim": "The majority of chimeric RNAs were formed between two protein-coding genes (61.9%).",
+      "claim_type": "EXPLICIT",
+      "source": "The majority of chimeric RNAs were formed between two protein-coding genes (61.9%) (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the biotype quantification data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:03:00.764880Z"
+    },
+    {
+      "id": "a86e4af6-f854-4b7f-affe-52ee2a086dd8",
+      "content_id": "9dfa8443-ee9c-4b26-b146-5483425097c6",
+      "claim_id": "C26",
+      "claim": "The canonical AG/GT donor\u2013acceptor motif had the highest position weight at the fusion site of parental genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Next, we examined the motifs covering 10 bp sequences immediately upstream or downstream of the fusion site of parental genes and found that the canonical AG/GT donor\u2013acceptor motif had the highest position weight (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the motif analysis shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:03:00.764880Z"
+    },
+    {
+      "id": "463a3426-ccf8-4b50-b9bd-dcea8694955c",
+      "content_id": "9dfa8443-ee9c-4b26-b146-5483425097c6",
+      "claim_id": "C27",
+      "claim": "The expression of chimeric RNAs did not correlate with the expression of the parental genes.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we also found that the expression of the chimeric RNAs did not correlate with the expression of the parental genes (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the Spearman correlation analysis shown in Figure 3D (p > 0.05).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:03:00.764880Z"
+    },
+    {
+      "id": "617bf4aa-c6eb-45c9-b56e-660e454a41ed",
+      "content_id": "9dfa8443-ee9c-4b26-b146-5483425097c6",
+      "claim_id": "C28",
+      "claim": "Four isoforms of CTCL, joined by alternative splicing of the parent pre-mRNAs, were detected in the retinal organoids by RNA-seq.",
+      "claim_type": "EXPLICIT",
+      "source": "CTCL has been shown to have a regulatory role in human cerebral development. Similarly, four isoforms of CTCL, joined by alternative splicing of the parent pre-mRNAs, were detected in the ROs by RNA-seq.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the RNA-seq data shown in Figure 4A and 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:03:00.764880Z"
+    },
+    {
+      "id": "9140af29-1435-4a05-b4a1-ff0a777b19aa",
+      "content_id": "9dfa8443-ee9c-4b26-b146-5483425097c6",
+      "claim_id": "C29",
+      "claim": "In-frame CTCL was dynamically expressed during retinal organoid development with two obvious higher expression timepoints at D60 and D120.",
+      "claim_type": "EXPLICIT",
+      "source": "In-frame CTCL can be further translated into chimeric proteins, and we think that it plays a more critical role than the other three isoforms. It was dynamically expressed during RO development and there were two obvious higher expression timepoints at D60 and D120 (Figure 4A, B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the expression data shown in Figure 4A and 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:03:00.764880Z"
+    },
+    {
+      "id": "76c81545-6d47-4ff7-98dc-5e641437df6b",
+      "content_id": "9dfa8443-ee9c-4b26-b146-5483425097c6",
+      "claim_id": "C30",
+      "claim": "At D60, the In-frame, UTR_CDS(truncated)-1, and CDS(truncated)Intronic CTCL isoforms were confirmed but UTR_CDS(truncated)-2 CTCL was not detected.",
+      "claim_type": "EXPLICIT",
+      "source": "At D60, the In-frame, UTR_CDS(truncated)-1, and CDS(truncated)Intronic CTCL isoforms were confirmed but UTR_CDS(truncated)-2 CTCL was not detected.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the qRT-PCR and Sanger sequencing validation shown in Figure 4C and 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:03:00.764880Z"
+    },
+    {
+      "id": "0cf236c3-171a-4aec-989c-33a2803f3ff1",
+      "content_id": "9dfa8443-ee9c-4b26-b146-5483425097c6",
+      "claim_id": "C31",
+      "claim": "The In-frame CTCL was consistently identified in human retinas, iPSCs1/iPSCs2/iPSCs3-derived ROs, and H9 cells, but not in mouse retinas.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the In-frame CTCL was consistently identified in human retinas, iPSCs1/iPSCs2/iPSCs3-derived ROs, and H9 cells, but not in the mouse retinas (Figure 5\u2014source data 1; Figure 5\u2014source data 2; Figure 5\u2014source data 3; Figure 5\u2014source data 4; Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the qRT-PCR and Sanger sequencing validation shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:03:00.764880Z"
+    },
+    {
+      "id": "35e76fa3-8242-4ad6-99ca-903d518575ef",
+      "content_id": "9dfa8443-ee9c-4b26-b146-5483425097c6",
+      "claim_id": "C32",
+      "claim": "All nine human retinal samples from the GEO database yielded uniformly positive results for CTCL.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, we also screened CTCL using the retinal transcriptome sequencing data available in the Gene Expression Omnibus (GEO) database, all of the nine human retinal samples yielded uniformly positive results (Table 1; Sun et al., 2019; Zauhar et al., 2022).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the data shown in Table 1 and citations to Sun et al., 2019; Zauhar et al., 2022.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:03:00.764880Z"
+    },
+    {
+      "id": "eb84ee3b-905c-455b-abe1-f66b04f41c61",
+      "content_id": "9dfa8443-ee9c-4b26-b146-5483425097c6",
+      "claim_id": "C33",
+      "claim": "CTCL is universally generated in human retinas in vivo, retinal organoids, and retinal cell lines in vitro, but not a phenomenon of the H9 cell line exclusively.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that CTCL is universally generated in human retinas in vivo, ROs, and retinal cell lines in vitro, but not a phenomenon of the H9 cell line exclusively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the validation data from multiple cell lines and samples shown in Figure 5 and Table 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:03:00.764880Z"
+    },
+    {
+      "id": "685781e1-2cb0-4314-9fdd-39bcb6420b84",
+      "content_id": "9dfa8443-ee9c-4b26-b146-5483425097c6",
+      "claim_id": "C34",
+      "claim": "Compared with the scramble shRNA group, the In-frame CTCL RNA level was reduced to approximately 70% in the shCTCL group.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared with the scramble shRNA group, the In-frame CTCL RNA level was reduced to approximately 70% (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the knockdown efficiency data shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:03:00.764880Z"
+    },
+    {
+      "id": "29765dc0-b388-4648-8e55-cefb81cf35d6",
+      "content_id": "9dfa8443-ee9c-4b26-b146-5483425097c6",
+      "claim_id": "C35",
+      "claim": "The RNA levels of the parental genes, CTNNBIP1 and CLSTN1, showed no significant differences compared to the scramble shRNA group.",
+      "claim_type": "EXPLICIT",
+      "source": "The RNA levels of the parental genes, CTNNBIP1 and CLSTN1, showed no significant differences compared to the scramble shRNA group (Figure 6\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the qRT-PCR data shown in Figure 6\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:03:00.764880Z"
+    },
+    {
+      "id": "28735bcd-2ab6-4ab4-b6b1-018cd39abbb2",
+      "content_id": "9dfa8443-ee9c-4b26-b146-5483425097c6",
+      "claim_id": "C36",
+      "claim": "ShCTCL-transfected organoids showed thinner outer layers with much less CRX expression compared to scramble shRNA-transfected organoids.",
+      "claim_type": "EXPLICIT",
+      "source": "D60 scramble shRNA-transfected retinal organoids (ROs) displayed a typical morphology of ROs with the expression of CRX. ShCTCL-transfected organoids showed thinner outer layers with much less CRX expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the live-cell imaging and immunostaining data shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:03:00.764880Z"
+    },
+    {
+      "id": "f3bdc729-a393-438e-b1b6-49d9094bc28a",
+      "content_id": "9dfa8443-ee9c-4b26-b146-5483425097c6",
+      "claim_id": "C37",
+      "claim": "There is a dramatic decrease in the outer layer thickness in the shCTCL group compared to the scramble shRNA group.",
+      "claim_type": "EXPLICIT",
+      "source": "The average thickness of the outer layers in those two groups was calculated (Figure 6D, outer layer indicated with orange arrows, live-cell imaging), and there is a dramatic decrease in the outer layer thickness in the shCTCL group.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the quantification data shown in Figure 6D (t-test, ****, p < 0.0001).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:03:00.764880Z"
+    },
+    {
+      "id": "5a359339-32b1-40d2-9b5f-b7571e4e4f4e",
+      "content_id": "9dfa8443-ee9c-4b26-b146-5483425097c6",
+      "claim_id": "C38",
+      "claim": "PAX6 was highly expressed in CTCL-knockdown organoids, but OTX2 was much less expressed.",
+      "claim_type": "EXPLICIT",
+      "source": "To identify the aberrations in cell fate specification caused by CTCL knockdown, we examined the organoids with RPC-specific markers, PAX6 and OTX2. It was shown that PAX6 was highly expressed, but OTX2 was much less, and CRX appeared where GFP (shCTCL) was relatively lower (Figure 6E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the immunostaining data shown in Figure 6E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:03:00.764880Z"
+    },
+    {
+      "id": "6fea7e07-92dd-45c5-af2e-ff980e1e8e07",
+      "content_id": "9dfa8443-ee9c-4b26-b146-5483425097c6",
+      "claim_id": "C39",
+      "claim": "CRX is highly expressed in photoreceptors and precursors but low in mature RPE.",
+      "claim_type": "EXPLICIT",
+      "source": "CRX is known to be highly expressed in photoreceptors and precursors but low in mature RPE (Lidgerwood et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Lidgerwood et al., 2021.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:03:00.764880Z"
+    },
+    {
+      "id": "93f1c2c9-547f-4e73-8724-4966846d24c5",
+      "content_id": "9dfa8443-ee9c-4b26-b146-5483425097c6",
+      "claim_id": "C40",
+      "claim": "CTCL knockdown would promote the RPE cell fate at the expense of neural retinal cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these results indicate that CTCL is essential for the ROs' differentiation and that CTCL knockdown would promote the RPE cell fate at the expense of neural retinal cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the immunostaining data showing RPE markers in shCTCL organoids (Figure 6E-F and Figure 6\u2014figure supplement 3).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:03:00.764880Z"
+    },
+    {
+      "id": "8fee5850-7d0a-4079-9048-e4c3a1d5dd3b",
+      "content_id": "9dfa8443-ee9c-4b26-b146-5483425097c6",
+      "claim_id": "C41",
+      "claim": "3901 differentially expressed genes were obtained between shCTCL- and scramble shRNA-treated organoids, with 2720 upregulated and 1181 downregulated.",
+      "claim_type": "EXPLICIT",
+      "source": "We obtained 3901 differentially expressed genes (DEGs) (shCTCL vs. scramble shRNA, |Log2(fold change)| > 1, p-value <0.05), among which 2720 were upregulated and 1181 downregulated (Figure 7A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the bulk RNA-seq data shown in Figure 7A and 7B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:03:00.764880Z"
+    },
+    {
+      "id": "7723a694-3bdf-4cf3-99e8-9986cab225b4",
+      "content_id": "9dfa8443-ee9c-4b26-b146-5483425097c6",
+      "claim_id": "C42",
+      "claim": "Upregulated DEGs were significantly enriched in pathways associated with extracellular matrix organization, morphogenesis, and epithelial cell differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Upregulated DEGs were significantly enriched in pathways associated with extracellular matrix organization, morphogenesis, and epithelial cell differentiation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the functional enrichment analysis shown in Figure 7C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:03:00.764880Z"
+    },
+    {
+      "id": "e0959579-9781-4ef3-be17-8e8665ff173b",
+      "content_id": "9dfa8443-ee9c-4b26-b146-5483425097c6",
+      "claim_id": "C43",
+      "claim": "Downregulated DEGs were significantly enriched in neurogenesis-associated pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, downregulated DEGs were significantly enriched in the neurogenesis-associated pathways (Figure 7C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the functional enrichment analysis shown in Figure 7C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:03:00.764880Z"
+    },
+    {
+      "id": "9c7a8a21-b1ce-4b49-97e7-ce1fbf5039a7",
+      "content_id": "9dfa8443-ee9c-4b26-b146-5483425097c6",
+      "claim_id": "C44",
+      "claim": "Genes of RPE, ocular corneal, and conjunctival epithelial cells were significantly upregulated in shCTCL organoids.",
+      "claim_type": "EXPLICIT",
+      "source": "GSEA analysis with c8 as the reference gene set (Mootha et al., 2003; Subramanian et al., 2005) revealed that genes of RPE, ocular corneal, and conjunctival epithelial cells were significantly upregulated in shCTCL organoids; however, all genes related to neural retinal component cells (photoreceptor cells, M\u00fcller glial cells, horizontal cell, amacrine cell, and retinal ganglion cell) were downregulated (Figure 7D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the GSEA analysis shown in Figure 7D, with citations to Mootha et al., 2003; Subramanian et al., 2005.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:03:00.764880Z"
+    },
+    {
+      "id": "b286f528-aa8e-460b-bcea-7e5ddba2ad11",
+      "content_id": "9dfa8443-ee9c-4b26-b146-5483425097c6",
+      "claim_id": "C45",
+      "claim": "All genes related to neural retinal component cells (photoreceptor cells, M\u00fcller glial cells, horizontal cell, amacrine cell, and retinal ganglion cell) were downregulated in shCTCL organoids.",
+      "claim_type": "EXPLICIT",
+      "source": "GSEA analysis with c8 as the reference gene set (Mootha et al., 2003; Subramanian et al., 2005) revealed that genes of RPE, ocular corneal, and conjunctival epithelial cells were significantly upregulated in shCTCL organoids; however, all genes related to neural retinal component cells (photoreceptor cells, M\u00fcller glial cells, horizontal cell, amacrine cell, and retinal ganglion cell) were downregulated (Figure 7D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the GSEA analysis shown in Figure 7D, with citations to Mootha et al., 2003; Subramanian et al., 2005.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:03:00.764880Z"
+    },
+    {
+      "id": "a430efc6-0475-4bf6-968f-b1756ca859b1",
+      "content_id": "9dfa8443-ee9c-4b26-b146-5483425097c6",
+      "claim_id": "C46",
+      "claim": "The expression pattern of RPE-related genes in shCTCL organoids was closer to that of RPE from induced pluripotent stem cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the expression pattern of RPE-related genes in shCTCL organoids was closer to that of RPE from induced pluripotent stem cells (Maruotti et al., 2015; Figure 7E and Figure 7\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the gene expression data shown in Figure 7E and Figure 7\u2014figure supplement 1A, with a citation to Maruotti et al., 2015.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:03:00.764880Z"
+    },
+    {
+      "id": "911bc9ef-33af-456a-ac5c-aee53e597063",
+      "content_id": "9dfa8443-ee9c-4b26-b146-5483425097c6",
+      "claim_id": "C47",
+      "claim": "CTCL remains in a low expression state during RPE development.",
+      "claim_type": "EXPLICIT",
+      "source": "At the same time, CTCL remains in a low expression state during RPE development (Figure 7\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the RT-qPCR data shown in Figure 7\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:03:00.764880Z"
+    },
+    {
+      "id": "0df00f35-8c0d-4a49-ab8b-5492bbbac0e8",
+      "content_id": "9dfa8443-ee9c-4b26-b146-5483425097c6",
+      "claim_id": "C48",
+      "claim": "The most significantly enriched pathway in shCTCL organoids was epithelial\u2013mesenchymal transition (EMT).",
+      "claim_type": "EXPLICIT",
+      "source": "To further explore the molecular mechanisms involved in this process, we performed the GSEA analysis using hallmark gene sets (Mootha et al., 2003; Subramanian et al., 2005). The most significantly enriched pathway was epithelial\u2013mesenchymal transition (EMT) (Figure 7F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the GSEA analysis shown in Figure 7F, with citations to Mootha et al., 2003; Subramanian et al., 2005.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:03:00.764880Z"
+    },
+    {
+      "id": "c0f3184c-886b-4a9d-a856-59db42219432",
+      "content_id": "9dfa8443-ee9c-4b26-b146-5483425097c6",
+      "claim_id": "C49",
+      "claim": "Most of the EMT-related genes were relatively highly expressed in shCTCL-treated organoids.",
+      "claim_type": "EXPLICIT",
+      "source": "And most of the EMT-related genes were relatively highly expressed in shCTCL-treated organoids (Figure 7\u2014figure supplement 2) (Figure 7G), which is particularly essential for neural crest delamination in vertebrates and the generation of different tissues during development (Kim et al., 2014b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the gene expression data shown in Figure 7G and Figure 7\u2014figure supplement 2, with a citation to Kim et al., 2014b.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:03:00.764880Z"
+    },
+    {
+      "id": "2cf7439b-6f56-4a38-8028-8bc385edae2d",
+      "content_id": "9dfa8443-ee9c-4b26-b146-5483425097c6",
+      "claim_id": "C50",
+      "claim": "EMT is particularly essential for neural crest delamination in vertebrates and the generation of different tissues during development.",
+      "claim_type": "EXPLICIT",
+      "source": "And most of the EMT-related genes were relatively highly expressed in shCTCL-treated organoids (Figure 7\u2014figure supplement 2) (Figure 7G), which is particularly essential for neural crest delamination in vertebrates and the generation of different tissues during development (Kim et al., 2014b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Kim et al., 2014b.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:03:00.764880Z"
+    },
+    {
+      "id": "3ddeafb9-1eb7-431b-ba37-fe30023ff2aa",
+      "content_id": "9dfa8443-ee9c-4b26-b146-5483425097c6",
+      "claim_id": "C51",
+      "claim": "The downregulation of CTCL expression activated the EMT pathway which altered the directions of cell differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the downregulation of CTCL expression activated the EMT pathway which altered the directions of cell differentiation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the GSEA analysis and gene expression data shown in Figure 7F and 7G.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:03:00.764880Z"
+    },
+    {
+      "id": "3084993e-b2cb-42b3-a1ba-0bf51515eb7d",
+      "content_id": "9dfa8443-ee9c-4b26-b146-5483425097c6",
+      "claim_id": "C52",
+      "claim": "The first chimeric RNA that lacks DNA alterations is AML1-ETO, which is associated with acute myeloid leukemia.",
+      "claim_type": "EXPLICIT",
+      "source": "The first chimeric RNA that lacks DNA alterations is AML1-ETO, which is associated with acute myeloid leukemia (Langabeer et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Langabeer et al., 1997.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:03:00.764880Z"
+    },
+    {
+      "id": "0ebdc066-81d4-4ec2-9ce7-7e34fefe412d",
+      "content_id": "9dfa8443-ee9c-4b26-b146-5483425097c6",
+      "claim_id": "C53",
+      "claim": "Cis-splicing between neighboring genes was found to generate chimeric RNAs, such as the CTCF-sensitive cis-spliced fusion RNAs ADCK4-NUMBL in prostate cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "Subsequently, cis-splicing between neighboring genes was also found to generate chimeric RNAs, such as the CTCF-sensitive cis-spliced fusion RNAs ADCK4-NUMBL in prostate cancer (Qin et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Qin et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:03:00.764880Z"
+    },
+    {
+      "id": "eabbdbcd-82c5-4663-91a0-0c119cb27230",
+      "content_id": "9dfa8443-ee9c-4b26-b146-5483425097c6",
+      "claim_id": "C54",
+      "claim": "Chimeric RNAs can be generated by long-range inter- and intra-chromosomal trans-splicing.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, chimeric RNAs can be generated by long-range inter- and intra-chromosomal trans-splicing (Li et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Li et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:03:00.764880Z"
+    },
+    {
+      "id": "88082968-0d6e-49ba-af33-555b1858509c",
+      "content_id": "9dfa8443-ee9c-4b26-b146-5483425097c6",
+      "claim_id": "C55",
+      "claim": "PAX3-FOXO1 was initially identified as a biomarker for alveolar rhabdomyosarcoma but was later found to be present during normal muscle differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, PAX3-FOXO1 was initially identified as a biomarker for alveolar rhabdomyosarcoma (Singh et al., 2022), but was later found to be present during normal muscle differentiation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Singh et al., 2022.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:03:00.764880Z"
+    },
+    {
+      "id": "cd9a20fc-2e8a-4e6a-858c-26f090f76f21",
+      "content_id": "9dfa8443-ee9c-4b26-b146-5483425097c6",
+      "claim_id": "C56",
+      "claim": "PAX3-FOXO1 is transiently required for muscle lineage commitment.",
+      "claim_type": "EXPLICIT",
+      "source": "PAX3-FOXO1 is transiently required for muscle lineage commitment (Xie et al., 2019), and can escape miR-495 regulation during muscle differentiation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Xie et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:03:00.764880Z"
+    },
+    {
+      "id": "ebfb12f4-2862-4938-9474-7fee962d3761",
+      "content_id": "9dfa8443-ee9c-4b26-b146-5483425097c6",
+      "claim_id": "C57",
+      "claim": "If PAX3-FOXO1 is not withdrawn at the right timing, it can lead to tumorigenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "If PAX3-FOXO1 is not withdrawn at the right timing, it can lead to tumorigenesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the discussion of PAX3-FOXO1's role in normal development versus cancer.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:03:00.764880Z"
+    },
+    {
+      "id": "c2682946-6405-43a7-8533-eb994f2b6087",
+      "content_id": "9dfa8443-ee9c-4b26-b146-5483425097c6",
+      "claim_id": "C58",
+      "claim": "DUS4L-BCAP29 was originally identified in gastric cancer, where it promotes cell proliferation.",
+      "claim_type": "EXPLICIT",
+      "source": "DUS4L-BCAP29 was originally identified in gastric cancer, where it promotes cell proliferation and is therefore considered to have tumorigenic potential (Kim et al., 2014a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Kim et al., 2014a.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:03:00.764880Z"
+    },
+    {
+      "id": "8ed7b76c-9bc7-4f09-8f39-aeb43376481b",
+      "content_id": "9dfa8443-ee9c-4b26-b146-5483425097c6",
+      "claim_id": "C59",
+      "claim": "DUS4L-BCAP29 was subsequently identified in human non-cancerous tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "DUS4L-BCAP29 was subsequently identified in human non-cancerous tissues (Tang et al., 2017), and its role in promoting cell proliferation is not unique to cancer cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Tang et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:03:00.764880Z"
+    },
+    {
+      "id": "83c5aadd-4a68-4384-8b41-06e5f55afdfe",
+      "content_id": "9dfa8443-ee9c-4b26-b146-5483425097c6",
+      "claim_id": "C60",
+      "claim": "DUS4L-BCAP29 is a chimeric RNA present in normal physiology with a function in promoting neural differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "It is a chimeric RNA present in normal physiology with a function in promoting neural differentiation (Tang et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Tang et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:03:00.764880Z"
+    },
+    {
+      "id": "4eeff3af-81ea-497b-907b-3d42ee85d517",
+      "content_id": "9dfa8443-ee9c-4b26-b146-5483425097c6",
+      "claim_id": "C61",
+      "claim": "In-frame CTCL is generated by cis-splicing fusion of the first 5 exons of CTNNBIP1 and the last 17 exons of CLSTN1.",
+      "claim_type": "EXPLICIT",
+      "source": "In-frame CTCL is generated by cis-splicing fusion of the first 5 exons of CTNNBIP1 and the last 17 exons of CLSTN1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a structural description based on the RNA-seq and sequencing data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:03:00.764880Z"
+    },
+    {
+      "id": "dc0aea2f-f155-4ecc-9ad5-c93080f6c3dd",
+      "content_id": "9dfa8443-ee9c-4b26-b146-5483425097c6",
+      "claim_id": "C62",
+      "claim": "The 5\u2032 parental gene CTNNBIP1 encodes a receptor for \u03b2-catenin, and their binding promotes the catabolism of \u03b2-catenin, which in turn puts the Wnt pathway in an inactive state.",
+      "claim_type": "EXPLICIT",
+      "source": "The 5\u2032 parental gene CTNNBIP1 encodes a receptor for \u03b2-catenin, and their binding promotes the catabolism of \u03b2-catenin, which in turn puts the Wnt pathway in an inactive state (Fu et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Fu et al., 2018.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:03:00.764880Z"
+    },
+    {
+      "id": "8d00f8a5-5c4b-4d3e-a31e-167fa5007f41",
+      "content_id": "9dfa8443-ee9c-4b26-b146-5483425097c6",
+      "claim_id": "C63",
+      "claim": "CTNNBIP1 mutation has been shown to be associated with anterior segment dysgenesis 5 in the human disease database MalaCards.",
+      "claim_type": "EXPLICIT",
+      "source": "Its mutation has been shown to be associated with anterior segment dysgenesis 5 in the human disease database MalaCards (https://www.malacards.org/).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement references information from the MalaCards database.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:03:00.764880Z"
+    },
+    {
+      "id": "cfa98f77-58e5-4403-882a-adb6c42931af",
+      "content_id": "9dfa8443-ee9c-4b26-b146-5483425097c6",
+      "claim_id": "C64",
+      "claim": "CLSTN1 is a member of the calsyntenin family, a subset of the cadherin superfamily.",
+      "claim_type": "EXPLICIT",
+      "source": "CLSTN1 is a member of the calsyntenin family, a subset of the cadherin superfamily.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established knowledge about CLSTN1.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:03:00.764880Z"
+    },
+    {
+      "id": "9e20a435-42de-4563-8f2b-869505a87e3d",
+      "content_id": "9dfa8443-ee9c-4b26-b146-5483425097c6",
+      "claim_id": "C65",
+      "claim": "CLSTN1 can mediate the axonal anterograde transport of certain types of vesicles.",
+      "claim_type": "EXPLICIT",
+      "source": "It can mediate the axonal anterograde transport of certain types of vesicles (Nagase et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Nagase et al., 1998.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:03:00.764880Z"
+    },
+    {
+      "id": "161d13d4-1c36-4c96-b763-4c0bf35ace2e",
+      "content_id": "9dfa8443-ee9c-4b26-b146-5483425097c6",
+      "claim_id": "C66",
+      "claim": "CTCL could fine-tune Wnt signaling to regulate cerebral development.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous report demonstrated that CTCL could fine-tune Wnt signaling to regulate cerebral development (Ou et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Ou et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:03:00.764880Z"
+    },
+    {
+      "id": "8f19d332-c0bd-47c2-a599-9a420ade72b6",
+      "content_id": "9dfa8443-ee9c-4b26-b146-5483425097c6",
+      "claim_id": "C67",
+      "claim": "The GSEA and DEG functional enrichment results did not show significant changes in Wnt signaling pathway or vesicular trafficking pathways in CTCL-knockdown organoids.",
+      "claim_type": "EXPLICIT",
+      "source": "However, surprisingly, the GSEA and DEG functional enrichment results did not show significant changes in these two biological pathways (Figure 6C, D, F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the GSEA and functional enrichment analysis shown in Figures 6 and 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:03:00.764880Z"
+    },
+    {
+      "id": "bab3003b-b32e-450e-8e1b-695f0978bf4a",
+      "content_id": "9dfa8443-ee9c-4b26-b146-5483425097c6",
+      "claim_id": "C68",
+      "claim": "The same chimeric RNAs may function differently in close tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "The differences between the shCTCL- or scramble shRNA-treated organoids were mainly in EMT, extracellular matrix organization, morphogenesis, epithelial cell differentiation, and neurogenesis-associated pathways, suggesting that even the same chimeric RNAs may function differently in close tissues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the comparison of CTCL function in cerebral versus retinal organoids.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:03:00.764880Z"
+    },
+    {
+      "id": "ad07afb1-cf15-4506-b299-1f107be2ea25",
+      "content_id": "9dfa8443-ee9c-4b26-b146-5483425097c6",
+      "claim_id": "C69",
+      "claim": "This study revealed for the first time a key role of chimeric RNAs in human retinal development.",
+      "claim_type": "EXPLICIT",
+      "source": "This study revealed for the first time a key role of chimeric RNAs in human retinal development, providing new insights into the role of chimeric RNAs in regulating tissue development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary claim based on the overall findings of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:03:00.764880Z"
+    },
+    {
+      "id": "0e5fd0d9-33b1-4d6a-beb7-c0a14d588697",
+      "content_id": "9dfa8443-ee9c-4b26-b146-5483425097c6",
+      "claim_id": "C70",
+      "claim": "At D30 of differentiation, the retinal organoid outermost layer with translucent neural retina structures was visible.",
+      "claim_type": "EXPLICIT",
+      "source": "At D30 of differentiation, the RO outermost layer with translucent NR structures was visible.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the organoid morphology observed during the differentiation process.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:03:00.764880Z"
+    },
+    {
+      "id": "4fc8868e-6023-460c-bc8c-95040bf12629",
+      "content_id": "9dfa8443-ee9c-4b26-b146-5483425097c6",
+      "claim_id": "C71",
+      "claim": "At D105 of differentiation, retinal organoids could be seen with the formation of RPE.",
+      "claim_type": "EXPLICIT",
+      "source": "At D105 of differentiation, ROs could be seen with the formation of RPE.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the organoid morphology observed during the differentiation process.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:03:00.764880Z"
+    },
+    {
+      "id": "e6055931-85bd-4db5-88c9-4cb0e0e09a29",
+      "content_id": "9dfa8443-ee9c-4b26-b146-5483425097c6",
+      "claim_id": "C72",
+      "claim": "At D120 of differentiation, the outer segments of photoreceptor cells were seen on the surface of retinal organoids.",
+      "claim_type": "EXPLICIT",
+      "source": "At D120 of differentiation, the outer segments of photoreceptor cells were seen on the surface of ROs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the organoid morphology observed during the differentiation process.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:03:00.764880Z"
+    },
+    {
+      "id": "2e0b9346-c095-42c3-99fc-cb95b510b05f",
+      "content_id": "9dfa8443-ee9c-4b26-b146-5483425097c6",
+      "claim_id": "C73",
+      "claim": "Retinal organoids covering eight developmental stages from D0, 30, 45, 60, 75, 90, and 105\u2013120 correspond to in vivo developmental stages D0, 30, 45, 60, 75, 90, 105, and 120.",
+      "claim_type": "EXPLICIT",
+      "source": "Using FusionCatcher software, we examined chimeric RNAs in human ROs covering eight developmental stages from D0, 30, 45, 60, 75, 90, and 105\u2013120, corresponding to in vivo developmental stages D0, 30, 45, 60, 75, 90, 105, and 120 (Cowan et al., 2020), respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Cowan et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:03:00.764880Z"
+    },
+    {
+      "id": "0f685fec-a3e4-442d-992f-0ca7fee38418",
+      "content_id": "9dfa8443-ee9c-4b26-b146-5483425097c6",
+      "claim_id": "C74",
+      "claim": "Each developmental stage included two to three biological replicates with a total of N = 22 samples.",
+      "claim_type": "EXPLICIT",
+      "source": "Each stage included two to three biological replicates (a total of N = 22), and each replicate contained approximately 100 ROs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental design of the RNA sequencing study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:03:00.764880Z"
+    },
+    {
+      "id": "3ccbffbb-17ef-426e-a509-9ba77c215df0",
+      "content_id": "9dfa8443-ee9c-4b26-b146-5483425097c6",
+      "claim_id": "C75",
+      "claim": "Each replicate contained approximately 100 retinal organoids.",
+      "claim_type": "EXPLICIT",
+      "source": "Each stage included two to three biological replicates (a total of N = 22), and each replicate contained approximately 100 ROs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental design of the RNA sequencing study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:03:00.764880Z"
+    },
+    {
+      "id": "3a0e542c-511e-4851-b435-52bfcd9d3142",
+      "content_id": "9dfa8443-ee9c-4b26-b146-5483425097c6",
+      "claim_id": "C76",
+      "claim": "Splicing events were considered as positive chimeric RNA candidates only if spanning unique reads were detected at least once.",
+      "claim_type": "EXPLICIT",
+      "source": "To reduce false positives, splicing events were considered as positive chimeric RNA candidates only if spanning unique reads were detected at least once (Figure 1, bottom panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the criteria used for identifying chimeric RNAs in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:03:00.764880Z"
+    },
+    {
+      "id": "9b1f3359-cee7-4efc-89ff-a2ccd4a448ab",
+      "content_id": "9dfa8443-ee9c-4b26-b146-5483425097c6",
+      "claim_id": "C77",
+      "claim": "CTCL has a positive role in the normal development of retinal organoids.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that CTCL has a positive role in the normal development of ROs and that CTCL deficiency would promote the differentiation of RPCs toward RPE.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the knockdown experiments and their effects on organoid development.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:03:00.764880Z"
+    },
+    {
+      "id": "941ea1c7-bcc9-43c0-9a90-809903f6c7c4",
+      "content_id": "9dfa8443-ee9c-4b26-b146-5483425097c6",
+      "claim_id": "C78",
+      "claim": "CTCL deficiency would promote the differentiation of RPCs toward RPE.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that CTCL has a positive role in the normal development of ROs and that CTCL deficiency would promote the differentiation of RPCs toward RPE.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the knockdown experiments showing increased RPE markers.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:03:00.764880Z"
+    },
+    {
+      "id": "2f33599b-374b-46b2-8335-49c8b4f63082",
+      "content_id": "9dfa8443-ee9c-4b26-b146-5483425097c6",
+      "claim_id": "C79",
+      "claim": "RPCs with a relatively high level of CTCL expression will differentiate into neural retina.",
+      "claim_type": "EXPLICIT",
+      "source": "RPCs with a relatively high level of CTCL expression will differentiate into NR, while those with a relatively low level of CTCL will differentiate toward RPE.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the knockdown experiments and expression patterns observed.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:03:00.764880Z"
+    },
+    {
+      "id": "94275f49-470f-40ea-804f-0d3131b9d8a7",
+      "content_id": "9dfa8443-ee9c-4b26-b146-5483425097c6",
+      "claim_id": "C80",
+      "claim": "RPCs with a relatively low level of CTCL will differentiate toward RPE.",
+      "claim_type": "EXPLICIT",
+      "source": "RPCs with a relatively high level of CTCL expression will differentiate into NR, while those with a relatively low level of CTCL will differentiate toward RPE.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the knockdown experiments and expression patterns observed.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:03:00.764880Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "97cda5ff-232b-4256-9405-ca3477322f05",
+      "content_id": "9dfa8443-ee9c-4b26-b146-5483425097c6",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The study presents an expression atlas of chimeric RNAs throughout retinal organoid development (D0-D120), showing that chimeric RNAs are continuously expressed, with intra-chromosomal chimeric RNAs increasing significantly with development (r\u00b2=0.93, p=0.00076) while inter-chromosomal chimeric RNAs show no such trend. The majority of chimeric RNAs are formed between protein-coding genes (61.9%), with canonical AG/GT splice motifs at fusion sites, and their expression does not correlate with parental gene expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C21-C27, C73-C76 collectively provide strong evidence for the chimeric RNA atlas. The RNA-seq data spans 8 developmental stages with 2-3 biological replicates (N=22), each containing ~100 organoids. Statistical analysis (Pearson correlation) supports the developmental trend for intra-chromosomal fusions. The characterization of fusion types, biotypes, motifs, and independence from parental gene expression is well-documented in Figures 2-3.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:03:00.764880Z"
+    },
+    {
+      "id": "efad03e7-8882-4112-96e0-af51f6e833a4",
+      "content_id": "9dfa8443-ee9c-4b26-b146-5483425097c6",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Four isoforms of CTCL were detected in retinal organoids by RNA-seq, with the in-frame isoform showing dynamic expression with peaks at D60 and D120. The in-frame CTCL was validated by qRT-PCR and Sanger sequencing in human retinas, multiple iPSC-derived retinal organoids, H9 cells, and nine human retinal samples from the GEO database, but was absent in mouse retinas.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C33, C61 are well-supported by multiple validation methods (RNA-seq, qRT-PCR, Sanger sequencing) across diverse human samples (retinal organoids from different iPSC lines, human retinas, GEO database samples) and appropriate negative controls (mouse retinas). The structural characterization and expression dynamics are documented in Figures 4-5 and Table 1.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:03:00.764880Z"
+    },
+    {
+      "id": "4a3938e0-b132-4d40-aded-b468c7f5df5c",
+      "content_id": "9dfa8443-ee9c-4b26-b146-5483425097c6",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "CTCL knockdown in retinal organoids reduced CTCL RNA levels to ~70% without affecting parental genes CTNNBIP1 and CLSTN1. This resulted in thinner outer layers with reduced CRX expression, altered progenitor marker expression (high PAX6, low OTX2), and increased RPE markers (MITF, BEST1, RPE65), indicating that CTCL loss-of-function biases progenitor cells toward RPE fate at the expense of neural retinal cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C40, C77-C78 are supported by multiple experimental approaches including qRT-PCR for knockdown efficiency, live-cell imaging for morphological changes, immunostaining for cell fate markers, and statistical analysis (t-test, p<0.0001 for outer layer thickness). The specificity of the knockdown (no effect on parental genes) and the comprehensive marker analysis (progenitor and differentiation markers) provide strong evidence for the functional role of CTCL.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:03:00.764880Z"
+    },
+    {
+      "id": "1b471bbe-867f-424a-a355-7aab14e9be05",
+      "content_id": "9dfa8443-ee9c-4b26-b146-5483425097c6",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Bulk RNA-seq of CTCL-knockdown organoids revealed 3901 DEGs (2720 upregulated, 1181 downregulated). Upregulated genes were enriched in extracellular matrix organization, morphogenesis, and epithelial cell differentiation pathways, while downregulated genes were enriched in neurogenesis pathways. GSEA analysis showed upregulation of RPE, corneal, and conjunctival epithelial cell genes, and downregulation of all neural retinal cell type genes. The most significantly enriched pathway was epithelial-mesenchymal transition (EMT), suggesting CTCL downregulation activates EMT to alter cell differentiation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C49, C51 are supported by comprehensive transcriptomic analysis using appropriate statistical thresholds (|Log2FC|>1, p<0.05) and multiple analytical approaches (functional enrichment, GSEA with c8 and hallmark gene sets). The convergent evidence from pathway analysis, cell-type-specific gene expression patterns, and EMT enrichment provides strong mechanistic insight. The data are well-visualized in Figure 7.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:03:00.764880Z"
+    },
+    {
+      "id": "cdb73add-bfdc-47d3-8679-ea4ee09ed334",
+      "content_id": "9dfa8443-ee9c-4b26-b146-5483425097c6",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "GSEA and DEG functional enrichment analyses did not show significant changes in Wnt signaling or vesicular trafficking pathways in CTCL-knockdown retinal organoids, despite previous reports of CTCL regulating cerebral development through Wnt signaling. The differences were mainly in EMT, extracellular matrix organization, morphogenesis, epithelial cell differentiation, and neurogenesis pathways, suggesting tissue-specific functions for CTCL.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C68 are supported by the GSEA and functional enrichment data shown in Figures 6-7. The negative result (no Wnt/vesicular trafficking changes) is appropriately documented and contrasted with prior cerebral organoid findings (C66), leading to a reasonable inference about tissue-specific functions. However, the absence of evidence is not definitive proof of absence\u2014additional targeted experiments could strengthen this conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:03:00.764880Z"
+    },
+    {
+      "id": "43618857-5f91-4e72-8c43-06f7fb26889a",
+      "content_id": "9dfa8443-ee9c-4b26-b146-5483425097c6",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The authors propose that RPCs with relatively high CTCL expression differentiate into neural retina, while those with relatively low CTCL expression differentiate toward RPE.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C79-C80 represent a model inferred from the knockdown data but lack direct evidence of CTCL expression levels in individual RPCs correlating with their differentiation fate. Single-cell analysis or lineage tracing experiments would be needed to validate this dose-dependent model. The inference is reasonable but requires additional experimental support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:03:00.764880Z"
+    },
+    {
+      "id": "e016d682-d26a-4a7a-9585-309df9611a15",
+      "content_id": "9dfa8443-ee9c-4b26-b146-5483425097c6",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Background claims establishing that chimeric RNAs are present in cancerous and healthy cells, have regulatory roles in stem cell differentiation and CNS development, can be translated into proteins, and increase with age in the cortex, but their presence and function in human retinal cells was previously unknown.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3, C16-C19 are appropriately cited background knowledge statements that establish the context and knowledge gap for the study. These are supported by multiple citations to prior literature and represent accurate summaries of the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:03:00.764880Z"
+    },
+    {
+      "id": "bbbbfcca-c7e9-49fb-b561-45f2277de63d",
+      "content_id": "9dfa8443-ee9c-4b26-b146-5483425097c6",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Background claims about prior work on chimeric RNAs, including CTCL's role in cerebral organoids, mechanisms of chimeric RNA generation, examples of chimeric RNAs in cancer and normal development (PAX3-FOXO1, DUS4L-BCAP29, AML1-ETO), and the functions of CTCL's parental genes CTNNBIP1 and CLSTN1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C20, C52-C66 are appropriately cited statements from prior literature that provide context for the current study. These citations appear accurate based on the references provided and establish the rationale for investigating CTCL in retinal development.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:03:00.764880Z"
+    },
+    {
+      "id": "36138b2d-039e-465b-8a82-03e6d2ff0821",
+      "content_id": "9dfa8443-ee9c-4b26-b146-5483425097c6",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Background claims about retinal structure and development, species differences in retinogenesis, the validity of retinal organoids as models, and the role of EMT in development.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C15, C39, C50 are appropriately cited background statements that establish the biological context and justify the use of retinal organoids. These are supported by citations to relevant literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:03:00.764880Z"
+    },
+    {
+      "id": "f09d2e47-127f-45ba-a908-1640227c1adf",
+      "content_id": "9dfa8443-ee9c-4b26-b146-5483425097c6",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The study confirmed some common chimeric RNAs and discovered many novel chimeric RNAs during retinal development, revealing for the first time a key role of chimeric RNAs in human retinal development.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C5-C6, C69 are summary statements that lack specific details about which chimeric RNAs are 'common' versus 'novel' and what criteria define novelty. While the atlas itself is well-documented, the distinction between confirmed and novel chimeric RNAs is not clearly delineated in the data presented. The claim of 'first time' revealing a key role is supported for CTCL specifically but may overstate the generality across all chimeric RNAs identified.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:03:00.764880Z"
+    },
+    {
+      "id": "c54aa2ce-1dcc-46e5-9b9c-d66ffd419d43",
+      "content_id": "9dfa8443-ee9c-4b26-b146-5483425097c6",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Morphological observations of retinal organoid development showing translucent neural retina structures at D30, RPE formation at D105, and photoreceptor outer segments at D120.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C70-C72 are descriptive observations of organoid morphology supported by the images in Figure 1. These are straightforward morphological characterizations that establish the developmental progression of the organoid system.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:03:00.764880Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "3778424d-22c4-45c2-8e22-ac62eb2d2670",
+      "result_id": "97cda5ff-232b-4256-9405-ca3477322f05"
+    },
+    {
+      "claim_id": "52e0d212-96f2-4e89-81ad-8de12cdf01e5",
+      "result_id": "97cda5ff-232b-4256-9405-ca3477322f05"
+    },
+    {
+      "claim_id": "0c82954c-7879-4652-a5e0-b15955f5e879",
+      "result_id": "97cda5ff-232b-4256-9405-ca3477322f05"
+    },
+    {
+      "claim_id": "77f43f9b-421a-4c87-ae58-22d0fdea5e75",
+      "result_id": "97cda5ff-232b-4256-9405-ca3477322f05"
+    },
+    {
+      "claim_id": "f9da0f60-8090-4792-957e-714db06b4f75",
+      "result_id": "97cda5ff-232b-4256-9405-ca3477322f05"
+    },
+    {
+      "claim_id": "6c719beb-29a9-4010-8cca-2741740d940a",
+      "result_id": "97cda5ff-232b-4256-9405-ca3477322f05"
+    },
+    {
+      "claim_id": "a86e4af6-f854-4b7f-affe-52ee2a086dd8",
+      "result_id": "97cda5ff-232b-4256-9405-ca3477322f05"
+    },
+    {
+      "claim_id": "463a3426-ccf8-4b50-b9bd-dcea8694955c",
+      "result_id": "97cda5ff-232b-4256-9405-ca3477322f05"
+    },
+    {
+      "claim_id": "2e0b9346-c095-42c3-99fc-cb95b510b05f",
+      "result_id": "97cda5ff-232b-4256-9405-ca3477322f05"
+    },
+    {
+      "claim_id": "0f685fec-a3e4-442d-992f-0ca7fee38418",
+      "result_id": "97cda5ff-232b-4256-9405-ca3477322f05"
+    },
+    {
+      "claim_id": "3ccbffbb-17ef-426e-a509-9ba77c215df0",
+      "result_id": "97cda5ff-232b-4256-9405-ca3477322f05"
+    },
+    {
+      "claim_id": "3a0e542c-511e-4851-b435-52bfcd9d3142",
+      "result_id": "97cda5ff-232b-4256-9405-ca3477322f05"
+    },
+    {
+      "claim_id": "617bf4aa-c6eb-45c9-b56e-660e454a41ed",
+      "result_id": "efad03e7-8882-4112-96e0-af51f6e833a4"
+    },
+    {
+      "claim_id": "9140af29-1435-4a05-b4a1-ff0a777b19aa",
+      "result_id": "efad03e7-8882-4112-96e0-af51f6e833a4"
+    },
+    {
+      "claim_id": "76c81545-6d47-4ff7-98dc-5e641437df6b",
+      "result_id": "efad03e7-8882-4112-96e0-af51f6e833a4"
+    },
+    {
+      "claim_id": "0cf236c3-171a-4aec-989c-33a2803f3ff1",
+      "result_id": "efad03e7-8882-4112-96e0-af51f6e833a4"
+    },
+    {
+      "claim_id": "35e76fa3-8242-4ad6-99ca-903d518575ef",
+      "result_id": "efad03e7-8882-4112-96e0-af51f6e833a4"
+    },
+    {
+      "claim_id": "eb84ee3b-905c-455b-abe1-f66b04f41c61",
+      "result_id": "efad03e7-8882-4112-96e0-af51f6e833a4"
+    },
+    {
+      "claim_id": "4eeff3af-81ea-497b-907b-3d42ee85d517",
+      "result_id": "efad03e7-8882-4112-96e0-af51f6e833a4"
+    },
+    {
+      "claim_id": "685781e1-2cb0-4314-9fdd-39bcb6420b84",
+      "result_id": "4a3938e0-b132-4d40-aded-b468c7f5df5c"
+    },
+    {
+      "claim_id": "29765dc0-b388-4648-8e55-cefb81cf35d6",
+      "result_id": "4a3938e0-b132-4d40-aded-b468c7f5df5c"
+    },
+    {
+      "claim_id": "28735bcd-2ab6-4ab4-b6b1-018cd39abbb2",
+      "result_id": "4a3938e0-b132-4d40-aded-b468c7f5df5c"
+    },
+    {
+      "claim_id": "f3bdc729-a393-438e-b1b6-49d9094bc28a",
+      "result_id": "4a3938e0-b132-4d40-aded-b468c7f5df5c"
+    },
+    {
+      "claim_id": "5a359339-32b1-40d2-9b5f-b7571e4e4f4e",
+      "result_id": "4a3938e0-b132-4d40-aded-b468c7f5df5c"
+    },
+    {
+      "claim_id": "93f1c2c9-547f-4e73-8724-4966846d24c5",
+      "result_id": "4a3938e0-b132-4d40-aded-b468c7f5df5c"
+    },
+    {
+      "claim_id": "9b1f3359-cee7-4efc-89ff-a2ccd4a448ab",
+      "result_id": "4a3938e0-b132-4d40-aded-b468c7f5df5c"
+    },
+    {
+      "claim_id": "941ea1c7-bcc9-43c0-9a90-809903f6c7c4",
+      "result_id": "4a3938e0-b132-4d40-aded-b468c7f5df5c"
+    },
+    {
+      "claim_id": "8fee5850-7d0a-4079-9048-e4c3a1d5dd3b",
+      "result_id": "1b471bbe-867f-424a-a355-7aab14e9be05"
+    },
+    {
+      "claim_id": "7723a694-3bdf-4cf3-99e8-9986cab225b4",
+      "result_id": "1b471bbe-867f-424a-a355-7aab14e9be05"
+    },
+    {
+      "claim_id": "e0959579-9781-4ef3-be17-8e8665ff173b",
+      "result_id": "1b471bbe-867f-424a-a355-7aab14e9be05"
+    },
+    {
+      "claim_id": "9c7a8a21-b1ce-4b49-97e7-ce1fbf5039a7",
+      "result_id": "1b471bbe-867f-424a-a355-7aab14e9be05"
+    },
+    {
+      "claim_id": "b286f528-aa8e-460b-bcea-7e5ddba2ad11",
+      "result_id": "1b471bbe-867f-424a-a355-7aab14e9be05"
+    },
+    {
+      "claim_id": "a430efc6-0475-4bf6-968f-b1756ca859b1",
+      "result_id": "1b471bbe-867f-424a-a355-7aab14e9be05"
+    },
+    {
+      "claim_id": "911bc9ef-33af-456a-ac5c-aee53e597063",
+      "result_id": "1b471bbe-867f-424a-a355-7aab14e9be05"
+    },
+    {
+      "claim_id": "0df00f35-8c0d-4a49-ab8b-5492bbbac0e8",
+      "result_id": "1b471bbe-867f-424a-a355-7aab14e9be05"
+    },
+    {
+      "claim_id": "c0f3184c-886b-4a9d-a856-59db42219432",
+      "result_id": "1b471bbe-867f-424a-a355-7aab14e9be05"
+    },
+    {
+      "claim_id": "3ddeafb9-1eb7-431b-ba37-fe30023ff2aa",
+      "result_id": "1b471bbe-867f-424a-a355-7aab14e9be05"
+    },
+    {
+      "claim_id": "8f19d332-c0bd-47c2-a599-9a420ade72b6",
+      "result_id": "cdb73add-bfdc-47d3-8679-ea4ee09ed334"
+    },
+    {
+      "claim_id": "bab3003b-b32e-450e-8e1b-695f0978bf4a",
+      "result_id": "cdb73add-bfdc-47d3-8679-ea4ee09ed334"
+    },
+    {
+      "claim_id": "2f33599b-374b-46b2-8335-49c8b4f63082",
+      "result_id": "43618857-5f91-4e72-8c43-06f7fb26889a"
+    },
+    {
+      "claim_id": "94275f49-470f-40ea-804f-0d3131b9d8a7",
+      "result_id": "43618857-5f91-4e72-8c43-06f7fb26889a"
+    },
+    {
+      "claim_id": "84ecac5e-f36e-4396-ab36-cdb88f849cef",
+      "result_id": "e016d682-d26a-4a7a-9585-309df9611a15"
+    },
+    {
+      "claim_id": "c9599fae-64fe-4427-8a3b-748fa7ce4207",
+      "result_id": "e016d682-d26a-4a7a-9585-309df9611a15"
+    },
+    {
+      "claim_id": "5a299f8e-3f5e-4c49-bb2d-34541d9dffa5",
+      "result_id": "e016d682-d26a-4a7a-9585-309df9611a15"
+    },
+    {
+      "claim_id": "7990a9c0-6822-4da3-9485-0dbdda9b9754",
+      "result_id": "e016d682-d26a-4a7a-9585-309df9611a15"
+    },
+    {
+      "claim_id": "c54d8eff-7f28-4e08-8159-d188a15d7d4a",
+      "result_id": "e016d682-d26a-4a7a-9585-309df9611a15"
+    },
+    {
+      "claim_id": "cb19e173-033f-4867-8cd4-9c7dfdb72b58",
+      "result_id": "e016d682-d26a-4a7a-9585-309df9611a15"
+    },
+    {
+      "claim_id": "82ec4edb-fec5-4057-968e-fa764f0a394b",
+      "result_id": "e016d682-d26a-4a7a-9585-309df9611a15"
+    },
+    {
+      "claim_id": "a5fb6332-8db3-474b-85e8-2a10b7a35be1",
+      "result_id": "bbbbfcca-c7e9-49fb-b561-45f2277de63d"
+    },
+    {
+      "claim_id": "1d351865-ae69-4693-9450-f71094873d78",
+      "result_id": "bbbbfcca-c7e9-49fb-b561-45f2277de63d"
+    },
+    {
+      "claim_id": "3084993e-b2cb-42b3-a1ba-0bf51515eb7d",
+      "result_id": "bbbbfcca-c7e9-49fb-b561-45f2277de63d"
+    },
+    {
+      "claim_id": "0ebdc066-81d4-4ec2-9ce7-7e34fefe412d",
+      "result_id": "bbbbfcca-c7e9-49fb-b561-45f2277de63d"
+    },
+    {
+      "claim_id": "eabbdbcd-82c5-4663-91a0-0c119cb27230",
+      "result_id": "bbbbfcca-c7e9-49fb-b561-45f2277de63d"
+    },
+    {
+      "claim_id": "88082968-0d6e-49ba-af33-555b1858509c",
+      "result_id": "bbbbfcca-c7e9-49fb-b561-45f2277de63d"
+    },
+    {
+      "claim_id": "cd9a20fc-2e8a-4e6a-858c-26f090f76f21",
+      "result_id": "bbbbfcca-c7e9-49fb-b561-45f2277de63d"
+    },
+    {
+      "claim_id": "ebfb12f4-2862-4938-9474-7fee962d3761",
+      "result_id": "bbbbfcca-c7e9-49fb-b561-45f2277de63d"
+    },
+    {
+      "claim_id": "c2682946-6405-43a7-8533-eb994f2b6087",
+      "result_id": "bbbbfcca-c7e9-49fb-b561-45f2277de63d"
+    },
+    {
+      "claim_id": "8ed7b76c-9bc7-4f09-8f39-aeb43376481b",
+      "result_id": "bbbbfcca-c7e9-49fb-b561-45f2277de63d"
+    },
+    {
+      "claim_id": "83c5aadd-4a68-4384-8b41-06e5f55afdfe",
+      "result_id": "bbbbfcca-c7e9-49fb-b561-45f2277de63d"
+    },
+    {
+      "claim_id": "dc0aea2f-f155-4ecc-9ad5-c93080f6c3dd",
+      "result_id": "bbbbfcca-c7e9-49fb-b561-45f2277de63d"
+    },
+    {
+      "claim_id": "8d00f8a5-5c4b-4d3e-a31e-167fa5007f41",
+      "result_id": "bbbbfcca-c7e9-49fb-b561-45f2277de63d"
+    },
+    {
+      "claim_id": "cfa98f77-58e5-4403-882a-adb6c42931af",
+      "result_id": "bbbbfcca-c7e9-49fb-b561-45f2277de63d"
+    },
+    {
+      "claim_id": "9e20a435-42de-4563-8f2b-869505a87e3d",
+      "result_id": "bbbbfcca-c7e9-49fb-b561-45f2277de63d"
+    },
+    {
+      "claim_id": "161d13d4-1c36-4c96-b763-4c0bf35ace2e",
+      "result_id": "bbbbfcca-c7e9-49fb-b561-45f2277de63d"
+    },
+    {
+      "claim_id": "32921592-b139-431d-8404-99b105a74786",
+      "result_id": "36138b2d-039e-465b-8a82-03e6d2ff0821"
+    },
+    {
+      "claim_id": "e45c35b2-32fb-4ba9-997e-48f64feaa520",
+      "result_id": "36138b2d-039e-465b-8a82-03e6d2ff0821"
+    },
+    {
+      "claim_id": "3a618237-1e73-4a8c-a156-254060f84150",
+      "result_id": "36138b2d-039e-465b-8a82-03e6d2ff0821"
+    },
+    {
+      "claim_id": "2bcef14c-cc27-4ed0-adb9-70a7696caef4",
+      "result_id": "36138b2d-039e-465b-8a82-03e6d2ff0821"
+    },
+    {
+      "claim_id": "91d563be-5cdd-45ed-9d60-e9e2e6f71e65",
+      "result_id": "36138b2d-039e-465b-8a82-03e6d2ff0821"
+    },
+    {
+      "claim_id": "91e5b8a9-75d1-4f25-8131-02635d958429",
+      "result_id": "36138b2d-039e-465b-8a82-03e6d2ff0821"
+    },
+    {
+      "claim_id": "6fea7e07-92dd-45c5-af2e-ff980e1e8e07",
+      "result_id": "36138b2d-039e-465b-8a82-03e6d2ff0821"
+    },
+    {
+      "claim_id": "2cf7439b-6f56-4a38-8028-8bc385edae2d",
+      "result_id": "36138b2d-039e-465b-8a82-03e6d2ff0821"
+    },
+    {
+      "claim_id": "95703838-24fd-4d6f-9fd5-c6fcc67ccd74",
+      "result_id": "f09d2e47-127f-45ba-a908-1640227c1adf"
+    },
+    {
+      "claim_id": "b0041e68-ca37-40ce-88b0-eb54b3ef640a",
+      "result_id": "f09d2e47-127f-45ba-a908-1640227c1adf"
+    },
+    {
+      "claim_id": "ad07afb1-cf15-4506-b299-1f107be2ea25",
+      "result_id": "f09d2e47-127f-45ba-a908-1640227c1adf"
+    },
+    {
+      "claim_id": "0e5fd0d9-33b1-4d6a-beb7-c0a14d588697",
+      "result_id": "c54aa2ce-1dcc-46e5-9b9c-d66ffd419d43"
+    },
+    {
+      "claim_id": "4fc8868e-6023-460c-bc8c-95040bf12629",
+      "result_id": "c54aa2ce-1dcc-46e5-9b9c-d66ffd419d43"
+    },
+    {
+      "claim_id": "e6055931-85bd-4db5-88c9-4cb0e0e09a29",
+      "result_id": "c54aa2ce-1dcc-46e5-9b9c-d66ffd419d43"
+    }
+  ],
+  "comparisons": []
+}

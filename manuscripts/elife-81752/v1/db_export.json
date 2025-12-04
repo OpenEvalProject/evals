@@ -1,0 +1,1498 @@
+{
+  "submission": {
+    "id": "935af7a2-8979-4a36-8229-79d5d500757a",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-04T01:44:45.198192Z",
+    "updated_at": "2025-12-04T01:44:45.198192Z"
+  },
+  "content": [
+    {
+      "id": "609d7e0b-75af-4103-886e-d89bebeef0af",
+      "submission_id": "935af7a2-8979-4a36-8229-79d5d500757a",
+      "content_type": "manuscript",
+      "content_text": "# Approximating missing epidemiological data for cervical cancer through Footprinting: A case study in India\n\n## Authors\n\n- Irene Man<sup>1</sup> ([ORCID: 0000-0003-3177-6904](https://orcid.org/0000-0003-3177-6904)) \u2020\n- Damien Georges<sup>1</sup>\n- Maxime Bonjour<sup>1</sup>\n- Iacopo Baussano<sup>1</sup> ([ORCID: 0000-0002-7322-1862](https://orcid.org/0000-0002-7322-1862))\n\n### Affiliations\n\n1. Early Detection, Prevention and Infections Branch, International Agency for Research on Cancer (IARC/WHO) Lyon France ([ROR:00v452281](https://ror.org/00v452281))\n\n\u2020 Corresponding author\n\n## Abstract\n\nLocal cervical cancer epidemiological data essential to project the context-specific impact of cervical cancer preventive measures are often missing. We developed a framework, hereafter named Footprinting, to approximate missing data on sexual behaviour, human papillomavirus (HPV) prevalence, or cervical cancer incidence, and applied it to an Indian case study. With our framework, we (1) identified clusters of Indian states with similar cervical cancer incidence patterns, (2) classified states without incidence data to the identified clusters based on similarity in sexual behaviour, (3) approximated missing cervical cancer incidence and HPV prevalence data based on available data within each cluster. Two main patterns of cervical cancer incidence, characterized by high and low incidence, were identified. Based on the patterns in the sexual behaviour data, all Indian states with missing data on cervical cancer incidence were classified to the low-incidence cluster. Finally, missing data on cervical cancer incidence and HPV prevalence were approximated based on the mean of the available data within each cluster. With the Footprinting framework, we approximated missing cervical cancer epidemiological data and made context-specific impact projections for cervical cancer preventive measures, to assist public health decisions on cervical cancer prevention in India and other countries.\n\n## Introduction\n\nCervical cancer is an important source of disease burden worldwide (de Martel et al., 2017). In 2020, the number of new cases and deaths due to cervical cancer worldwide were estimated to be 604,000 and 342,000, respectively (Sung et al., 2021). Vaccination against human papillomavirus (HPV), cervical cancer screening, and treatment of pre-cancer and cancer can reduce the burden of cervical cancer (Lei et al., 2020; Bouvard et al., 2021), but access to these preventive measures is still limited in many settings, especially in low- and middle-income countries (LMICs) (Bruni et al., 2021; de Sanjose and Tsu, 2019; Bonjour et al., 2021). To accelerate the scale-up of cervical cancer prevention worldwide, the World Health Organization developed a global strategy to eliminate cervical cancer as a public health problem (WHO, 2021). The strategy proposes an elimination target of 4 cases per 100,000 women-years (age-standardized) with three intervention targets: 90% of girls vaccinated against HPV by age 15; 70% of women receiving twice-lifetime screening with high-performance testing; and 90% of women having access to cervical pre-cancer and cancer treatment, and palliative care.\n\nFor the WHO\u2019s aspirational global targets to be perceived as realistic, achievable, and equitable, they must be adapted to local context (Tsu, 2020). The local need for and impact of cervical cancer preventive measures depend on the burden in a given population, which is determined by context-specific sexual behaviour, and HPV prevalence (Guan et al., 2012). Local data on these aspects are therefore crucial to derive projections of the health and economic impact of possible interventions. When based on adequate data, impact projections of cervical cancer preventive measures can help local health authorities set adequate public health targets and allocate resources accordingly (Goldie et al., 2006).\n\nHowever, local epidemiological data for cervical cancer needed to derive impact projections are sometimes missing. High-quality type- and age-specific data on HPV prevalence and cervical cancer incidence from local populations are often unavailable. The same holds for adequate data on sexual behaviour, for example, data on sex outside marriage, which are also prone to bias, for example, social desirability and recall bias (Morris et al., 2014; Kelly et al., 2013). When essential epidemiological data for projections are missing, there are two main possible solutions: collection and approximation. Collection of new data in a local context would be the preferred option. However, this could be time- and resource-demanding and therefore not always feasible. Alternatively, missing data on a given population can be approximated using available data from populations sharing similar characteristics.\n\nIn this paper, we propose a framework, hereafter named Footprinting, to approximate missing cervical cancer epidemiological data for a selected number of geographical units within a larger geographical target area, to derive impact projections of cervical cancer prevention. The framework is presented using a case study in India, the country with the world\u2019s highest expected burden of cervical cancer (Bonjour et al., 2021) and very limited access to cervical cancer preventive measures (Sankaranarayanan et al., 2019). To assist local public health decision-making in India, we applied Footprinting to approximate missing Indian state-specific cervical cancer incidence and HPV prevalence data and so to enable impact projections of cervical cancer preventive measures with state-specific granularity.\n\n## Results\n\n### Footprinting framework\n\nWe developed a framework, Footprinting, to approximate missing data on the three key aspects of cervical cancer epidemiology: sexual behaviour, HPV prevalence, and cervical cancer incidence. For convenience of explaining the framework, missing data across geographical units are for the moment assumed to occur in a hierarchical manner, that is, geographical units are ordered according to their levels of data availability (Figure 1). At the highest level, there are a small number of geographic units for which data on all three key aspects are available. For the Indian case study, there were two such states (out of 25 states or groups of states) with the high-quality type- and age-specific HPV prevalence data needed for impact projections (Franceschi et al., 2005; Dutta et al., 2012; Kataria et al., 2022). The remaining geographic units are further divided into levels of intermediate and low data availability. In the Indian case study, there were 12 states with cervical cancer incidence (Bray et al., 2017; Report of National Cancer Registry Programme, 2020) and sexual behaviour data, which were assigned to the intermediate level of data availability. The remaining 11 states only had data on sexual behaviour (National Behavioural Surveillance Survey: General Population, 2006) and were assigned to the low level of data availability. The three data sources with increasing data availability are labelled as \u2018Bottleneck\u2019, \u2018Pattern\u2019, and \u2018Footprint\u2018 data (Figure 1). See Figure 1\u2014source data 1 for the definition of the 25 states and a detailed overview of data availability by state.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/81752/elife-81752-fig1-v1.jpg)\n\nTo address the hierarchical form of missing data, we propose a three-step approach labelled as \u2018Clustering\u2019, \u2018Classification\u2019, and \u2018Projection\u2019. In brief, the approach first identifies clusters of geographical units sharing similar patterns of cervical cancer epidemiology and then uses the available data within each cluster to approximate data and extrapolate impact projections to geographical units with lower data availability. The details of the respective steps are as follows:\n\nAs previously mentioned, we assumed that data availability occurs hierarchically. However, the framework can also be applied with less stringent data requirements. Firstly, the source of Footprint data does not necessarily need to cover all geographical units. It is possible to train a classifier in the classification step with Footprint data available for only a part of clustered geographical units. Secondly, if none of the key cervical cancer epidemiological data (sexual behaviour, HPV prevalence, and cervical cancer incidence data) have large enough coverage to serve as Footprint data, alternative indicators of similarity, such as human development index and geographical distance, could also be used as substitutes. However, this might result in suboptimal classification, as we expect these indicators to correlate less well with cervical cancer risk. Finally, for the projection step, data on cervical cancer incidence, sexual behaviour, and HPV prevalence needed to calibrate projection models do not necessarily need to belong to the same geographical unit. Calibration can be performed as long as the three types of data are available within each cluster.\n\nWith these less stringent data requirements, the proposed framework should be sufficiently flexible to be applied to many situations. However, one should still be cautious in applying the framework when little data are available. If the data are not sufficiently granular, one might need to exclude geographical units with insufficient data or redefine bigger geographical units. Furthermore, one should assess the goodness-of-fit of the obtained clustering, performance of classification, correlation of data within different clusters, and calibration fits to ensure the validity of the final impact projections.\n\n### Clustering of cervical cancer incidence patterns in the Indian case study\n\nAs some Indian states have multiple cancer registries, we first obtained clusters of registry-specific cervical cancer incidence. See Materials and methods for the description of the source of cervical cancer incidence data and the statistical method used for clustering. Registry-specific cervical cancer incidence were obtained for up to four prefixed clusters (Figure 2). Model fit improved substantially when increasing the number of prefixed clusters from two to three, with the Bayesian information criterion (BIC) reducing from 6933 to 5700 (Table 1). Further increases in the number of prefixed clusters to four only led to marginal improvement in model fit, with a small reduction in BIC from 5700 to 5532, and a poorly defined cluster of only one registry. With the number of prefixed clusters set at five, the clustering method no longer converged. We concluded that two or three clusters were fitting to describe the patterns of cervical cancer incidence in the available data.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/81752/elife-81752-fig2-v1.jpg)\n\n**Figure 2.:** Clusterings under (A) 2, (B) 3, and (C) 4 prefixed clusters. Each panel within a row corresponds to a cluster within a k-clustering, with the cluster label given on top of the panel. The cervical cancer incidence data were extracted from volume XI of Cancer Incidence in Five Continents (CI5) (Bray et al., 2017) and the 2012\u20132016 report by the Indian National Centre for Disease Informatics and Research (NCDIR) (Report of National Cancer Registry Programme, 2020). Black: cluster mean of cervical cancer incidence; dark grey: registry incidence assigned to the cluster; light grey: registry incidence assigned to other clusters.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/81752/elife-81752-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** See Figure 1\u2014source data 1 for whether registries belong to CI5 or NCDIR.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/81752/elife-81752-fig2-figsupp2-v1.jpg)\n\n**Table 1.**\n Estimated parameters of clusters of cervical cancer incidence patterns.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Number of prefixed clusters</th>\n      <th>BIC*</th>\n      <th>Cluster label i</th>\n      <th>Number (%) of registries in cluster</th>\n      <th>Maximum incidence\u2020</th>\n      <th>Maximum incidence pattern</th>\n      <th>Maximum incidence age group\u2021</th>\n      <th>Maximum incidence age group pattern</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td rowspan=\"2\">2</td>\n      <td rowspan=\"2\">6933</td>\n      <td>1</td>\n      <td>27 (82%)</td>\n      <td>47 cases</td>\n      <td>Low</td>\n      <td>60\u201364 years</td>\n      <td>Late</td>\n    </tr>\n    <tr>\n      <td>2</td>\n      <td>6 (18%)</td>\n      <td>91 cases</td>\n      <td>High</td>\n      <td>55\u201359 years</td>\n      <td>Early</td>\n    </tr>\n    <tr>\n      <td rowspan=\"3\">3</td>\n      <td rowspan=\"3\">5700</td>\n      <td>1</td>\n      <td>19 (58%)</td>\n      <td>38 cases</td>\n      <td>Low</td>\n      <td>60\u201364 years</td>\n      <td>Late</td>\n    </tr>\n    <tr>\n      <td>2</td>\n      <td>5 (15%)</td>\n      <td>92 cases</td>\n      <td>High</td>\n      <td>55\u201359 years</td>\n      <td>Early</td>\n    </tr>\n    <tr>\n      <td>3</td>\n      <td>9 (27%)</td>\n      <td>64 cases</td>\n      <td>Intermediate</td>\n      <td>60\u201364 years</td>\n      <td>Late</td>\n    </tr>\n    <tr>\n      <td rowspan=\"4\">4</td>\n      <td rowspan=\"4\">5532</td>\n      <td>1</td>\n      <td>18 (55%)</td>\n      <td>39 cases</td>\n      <td>Low</td>\n      <td>60\u201364 years</td>\n      <td>Late</td>\n    </tr>\n    <tr>\n      <td>2</td>\n      <td>5 (15%)</td>\n      <td>92 cases</td>\n      <td>High</td>\n      <td>55\u201359 years</td>\n      <td>Early</td>\n    </tr>\n    <tr>\n      <td>3</td>\n      <td>9 (27%)</td>\n      <td>64 cases</td>\n      <td>Intermediate</td>\n      <td>60\u201364 years</td>\n      <td>Late</td>\n    </tr>\n    <tr>\n      <td>4</td>\n      <td>1 (3%)</td>\n      <td>20 cases</td>\n      <td>Very low</td>\n      <td>60\u201364 years</td>\n      <td>Early</td>\n    </tr>\n  </tbody>\n</table>\n\n_*Bayesian information criterion for evaluating the goodness-of-fit of obtained clustering.\u2020Maximum incidence given in cases per 100,000 women-years.\u2021Five-year age group in which the maximum incidence is located._\n\nThe cervical cancer incidence clusters differed in terms of magnitude of incidence and location of maximum incidence (Figure 2). When allowing two clusters, cluster 1 had a low maximum incidence of 47 cases per 100,000 women-years at age group 60\u201364 years, compared to cluster 2 with its higher maximum incidence of 91 cases per 100,000 women-years at the earlier age group of 55\u201359 years (Figure 2, Table 1). When allowing three clusters, we observed an additional cluster characterized by intermediate maximum incidence of 64 cases per 100,000 women-years at age group 60\u201364 years (Figure 2, Table 1). This third cluster mainly consisted of registries that had previously been assigned to the low-incidence cluster, that is, cluster 1 of the 2-clustering, while having a relatively high incidence (Figure 2, Table 2). See Figure 2\u2014source data 2 for additional details of the obtained clusters.\n\n**Table 2.**\n Clustering of cervical cancer incidence of Indian states based on clustering of registries.\n\n\n<table>\n  <thead>\n    <tr>\n      <th rowspan=\"2\">State/group of states*</th>\n      <th colspan=\"2\">2-Clustering</th>\n      <th colspan=\"3\">3-Clustering</th>\n      <th colspan=\"4\">4-Clustering</th>\n    </tr>\n    <tr>\n      <th>1(low, late)</th>\n      <th>2(high, early)</th>\n      <th>1(low, late)</th>\n      <th>2(high, early)</th>\n      <th>3(interm., late)</th>\n      <th>1(low, late)</th>\n      <th>2(high, early)</th>\n      <th>3(interm., late)</th>\n      <th>4(very low, early)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Andhra Pradesh</td>\n      <td>\u25cf</td>\n      <td></td>\n      <td>\u25cf</td>\n      <td></td>\n      <td></td>\n      <td>\u25cf</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Assam</td>\n      <td>\u25cf\u25cf\u25cf</td>\n      <td></td>\n      <td>\u25cf\u25cf\u25cf</td>\n      <td></td>\n      <td></td>\n      <td>\u25cf\u25cf</td>\n      <td></td>\n      <td></td>\n      <td>\u25cf</td>\n    </tr>\n    <tr>\n      <td>Delhi</td>\n      <td>\u25cf</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td>\u25cf</td>\n      <td></td>\n      <td></td>\n      <td>\u25cf</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gujarat+Dadra and Nagar Haveli</td>\n      <td>\u25cf</td>\n      <td></td>\n      <td>\u25cf</td>\n      <td></td>\n      <td></td>\n      <td>\u25cf</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Karnataka</td>\n      <td>\u25cf</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td>\u25cf</td>\n      <td></td>\n      <td></td>\n      <td>\u25cf</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Kerala +Lakshadweep</td>\n      <td>\u25cf\u25cf</td>\n      <td></td>\n      <td>\u25cf\u25cf</td>\n      <td></td>\n      <td></td>\n      <td>\u25cf\u25cf</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Madhya Pradesh</td>\n      <td>\u25cf</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td>\u25cf</td>\n      <td></td>\n      <td></td>\n      <td>\u25cf</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Maharashtra</td>\n      <td>\u25cf\u25cf\u25cf\u25cf\u25cf\u25cf</td>\n      <td>\u25cf</td>\n      <td>\u25cf\u25cf\u25cf\u25cf</td>\n      <td></td>\n      <td>\u25cf\u25cf\u25cf</td>\n      <td>\u25cf\u25cf\u25cf\u25cf</td>\n      <td></td>\n      <td>\u25cf\u25cf\u25cf</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Manipur</td>\n      <td>\u25cf\u25cf</td>\n      <td></td>\n      <td>\u25cf\u25cf</td>\n      <td></td>\n      <td></td>\n      <td>\u25cf\u25cf</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other North Eastern states\u2020</td>\n      <td>\u25cf\u25cf\u25cf\u25cf\u25cf</td>\n      <td>\u25cf\u25cf\u25cf\u25cf</td>\n      <td>\u25cf\u25cf\u25cf\u25cf</td>\n      <td>\u25cf\u25cf\u25cf\u25cf</td>\n      <td>\u25cf</td>\n      <td>\u25cf\u25cf\u25cf\u25cf</td>\n      <td>\u25cf\u25cf\u25cf\u25cf</td>\n      <td>\u25cf</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Punjab +Chandigarh</td>\n      <td>\u25cf</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td>\u25cf</td>\n      <td></td>\n      <td></td>\n      <td>\u25cf</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Sikkim</td>\n      <td>\u25cf</td>\n      <td></td>\n      <td>\u25cf</td>\n      <td></td>\n      <td></td>\n      <td>\u25cf</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Tamil Nadu +Puducherry</td>\n      <td>\u25cf</td>\n      <td>\u25cf</td>\n      <td></td>\n      <td>\u25cf</td>\n      <td>\u25cf</td>\n      <td></td>\n      <td>\u25cf</td>\n      <td>\u25cf</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>West Bengal +Andaman and Nicobar Islands</td>\n      <td>\u25cf</td>\n      <td></td>\n      <td>\u25cf</td>\n      <td></td>\n      <td></td>\n      <td>\u25cf</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n_Each circle represents the count of one registry being assigned to the corresponding cluster. Grey shading represents the cluster including the highest number of registries, either exclusively or in a draw with another cluster.Cluster labels and the corresponding patterns of maximum incidence and maximum incidence age group given in the second row were defined in the third, sixth, and eighth columns of Table 1, respectively.*States/or groups of states were defined as reported in the 2006 National Behaviour Surveillance Survey of the National AIDS Control Organization of India (National Behavioural Surveillance Survey: General Population, 2006).\u2020Other North Eastern states included Arunachal Pradesh, Nagaland, Meghalaya, Mizoram, and Tripura._\n\nThe registry clusters were then used to derive clusters of Indian states based on the majority rule (Table 2). When using the 2-clustering of registries, none of the states were exclusively attributed to cluster 2, hence 2-clustering could not be used for the classification step. When using 3-clustering, again none of the states were exclusively attributed to cluster 2, however, 8 and 4 states were assigned to clusters 1 and 3, that is, the clusters with low and intermediate incidence, respectively. Hence, we combined clusters 2 and 3, that is, the clusters with high and intermediate incidence as the new \u2018high-incidence\u2019 cluster, while keeping cluster 1 as the \u2018low-incidence\u2019 cluster. We note that, with these newly defined clusters, each cluster still contained at least one state with the highest level of data availability, which was necessary for the projection step. However, with the new definition of clusters, we could no longer distinguish patterns of early or late peak of incidence.\n\n### Classification of cervical cancer incidence patterns based on sexual behaviour data in the Indian case study\n\nA random forest (RF) classifier was constructed using sexual behaviour data corresponding to the states with identified clusters. See Materials and methods for the details of the source of sexual behaviour data, the variables included, and the statistical method used for classification. The variables with the first, second, and third highest predictive values for cluster of cervical cancer incidence patterns were \u2018proportion of urban male respondents reporting sex with non-regular partners in the last 12 months\u2019, \u2018median age of first sex in rural males\u2019, and \u2018median age of first sex in urban females\u2019, respectively (Figure 3\u2014source data 2). In particular, there was a good distinction between the high- and low-incidence clusters in terms of \u2018proportion of urban male respondents reporting sex with non-regular partners in the last 12 months\u2019, with high proportions associated with the high-incidence cluster (Figure 3). High values of \u2018median age of first sex in females\u2019 and low values of \u2018median age of first age in males\u2019 were also associated for the high-incidence cluster, although the distinction was less clear.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/81752/elife-81752-fig3-v1.jpg)\n\n**Figure 3.:** Indian state-specific data on (A) median age of first sex, (B) proportion of respondents reporting sex with non-regular partners in the last 12 months, (C) proportion of male respondents reporting sex with commercial partners in the last 12 months, and (D) proportion of male respondents by number of commercial partners in the last 12 months. Each violin plot and the associated cloud of circles correspond to a sexual behaviour variable. Each circle corresponds to the data of a state (or group of states). The data were extracted from the 2006 National Behaviour Surveillance Survey of the National AIDS Control Organization of India (National Behavioural Surveillance Survey: General Population, 2006). Blue and red: Indian states identified in the high and low cervical cancer incidence clusters. Grey: states without cervical cancer incidence data and therefore unknown cluster.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/81752/elife-81752-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** States or groups of states as reported in the 2006 National Behaviour Surveillance Survey of the National AIDS Control Organization of India. Other North Eastern states include Arunachal Pradesh, Nagaland, Meghalaya, Mizoram, and Tripura.\n\nThe estimated out-of-bag error of the constructed classifier was 29%. When applying the constructed classifier to the Indian states with identified clusters, only Karnataka and other North Eastern states (2 of 14 states; 14%) were wrongly classified to the low-incidence cluster (Table 3). Visualization shows that the sexual behaviour data for these two states resemble the other states belonging to the low-incidence cluster, despite being clustered into the high-incidence cluster (Figure 3, Figure 3\u2014figure supplement 1).\n\n**Table 3.**\n Identified and classified cluster of cervical cancer incidence pattern by Indian state.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Cervical cancer incidence data*</th>\n      <th>State/group of states\u2020</th>\n      <th>Identified cluster\u2021</th>\n      <th>Classified cluster\u00a7</th>\n      <th>Probability of belonging to the low-incidence cluster</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td rowspan=\"14\">Available</td>\n      <td>Andhra Pradesh</td>\n      <td>Low</td>\n      <td>Low</td>\n      <td>0.60</td>\n    </tr>\n    <tr>\n      <td>Assam</td>\n      <td>Low</td>\n      <td>Low</td>\n      <td>0.69</td>\n    </tr>\n    <tr>\n      <td>Delhi</td>\n      <td>High</td>\n      <td>High</td>\n      <td>0.42</td>\n    </tr>\n    <tr>\n      <td>Gujarat+Dadra and Nagar Haveli</td>\n      <td>Low</td>\n      <td>Low</td>\n      <td>0.69</td>\n    </tr>\n    <tr>\n      <td>Karnataka</td>\n      <td>High</td>\n      <td>Low</td>\n      <td>0.63</td>\n    </tr>\n    <tr>\n      <td>Kerala+Lakshadweep</td>\n      <td>Low</td>\n      <td>Low</td>\n      <td>0.60</td>\n    </tr>\n    <tr>\n      <td>Madhya Pradesh</td>\n      <td>High</td>\n      <td>High</td>\n      <td>0.44</td>\n    </tr>\n    <tr>\n      <td>Maharashtra</td>\n      <td>Low</td>\n      <td>Low</td>\n      <td>0.57</td>\n    </tr>\n    <tr>\n      <td>Manipur</td>\n      <td>Low</td>\n      <td>Low</td>\n      <td>0.65</td>\n    </tr>\n    <tr>\n      <td>Other North Eastern states\u00b6</td>\n      <td>High</td>\n      <td>Low</td>\n      <td>0.53</td>\n    </tr>\n    <tr>\n      <td>Punjab+Chandigarh</td>\n      <td>High</td>\n      <td>High</td>\n      <td>0.41</td>\n    </tr>\n    <tr>\n      <td>Sikkim</td>\n      <td>Low</td>\n      <td>Low</td>\n      <td>0.63</td>\n    </tr>\n    <tr>\n      <td>Tamil Nadu+Puducherry</td>\n      <td>High</td>\n      <td>High</td>\n      <td>0.38</td>\n    </tr>\n    <tr>\n      <td>West Bengal+Andaman and Nicobar Islands</td>\n      <td>Low</td>\n      <td>Low</td>\n      <td>0.71</td>\n    </tr>\n    <tr>\n      <td rowspan=\"11\">Unavailable</td>\n      <td>Bihar</td>\n      <td>-</td>\n      <td>Low</td>\n      <td>0.67</td>\n    </tr>\n    <tr>\n      <td>Chhattisgarh</td>\n      <td>-</td>\n      <td>Low</td>\n      <td>0.66</td>\n    </tr>\n    <tr>\n      <td>Goa+Daman and Diu</td>\n      <td>-</td>\n      <td>Low</td>\n      <td>0.54</td>\n    </tr>\n    <tr>\n      <td>Haryana</td>\n      <td>-</td>\n      <td>Low</td>\n      <td>0.66</td>\n    </tr>\n    <tr>\n      <td>Himachal Pradesh</td>\n      <td>-</td>\n      <td>Low</td>\n      <td>0.58</td>\n    </tr>\n    <tr>\n      <td>Jammu and Kashmir</td>\n      <td>-</td>\n      <td>Low</td>\n      <td>0.63</td>\n    </tr>\n    <tr>\n      <td>Jharkhand</td>\n      <td>-</td>\n      <td>Low</td>\n      <td>0.71</td>\n    </tr>\n    <tr>\n      <td>Orissa</td>\n      <td>-</td>\n      <td>Low</td>\n      <td>0.68</td>\n    </tr>\n    <tr>\n      <td>Rajasthan</td>\n      <td>-</td>\n      <td>Low</td>\n      <td>0.66</td>\n    </tr>\n    <tr>\n      <td>Uttar Pradesh</td>\n      <td>-</td>\n      <td>Low</td>\n      <td>0.64</td>\n    </tr>\n    <tr>\n      <td>Uttarakhand</td>\n      <td>-</td>\n      <td>Low</td>\n      <td>0.69</td>\n    </tr>\n  </tbody>\n</table>\n\n_*Availability of cervical cancer incidence data was based on the incidence data from volume XI of Cancer Incidence in Five Continents (CI5) (Bray et al., 2017) and the 2012\u20132016 report of the National Centre for Disease Informatics and Research (NCDIR) (Report of National Cancer Registry Programme, 2020).\u2020States/groups of states were defined as reported in the 2006 National Behaviour Surveillance Survey of the National AIDS Control Organization of India (National Behavioural Surveillance Survey: General Population, 2006).\u2021Identified clusters derived in the Clustering step.\u00a7Classified clusters derived in the Classification step. A given state was classified to the low-incidence cluster if the probability of belonging to the low-incidence cluster (given in the next column) was above 0.50. For the Indian states with available cervical cancer incidence data and hence already in an identified cluster, classification was done for the purpose of validation.\u00b6Other North Eastern states included Arunachal Pradesh, Nagaland, Meghalaya, Mizoram, and Tripura._\n\nSubsequently, the classifier was applied to classify the remaining states without cervical cancer incidence data and thus with unknown cluster. All 11 remaining Indian states received a higher probability of belonging to the low-incidence cluster (Table 3). Indeed, Figure 3 shows that the sexual behaviour data of the states with unknown cluster (indicated in grey) were generally closer to the sexual behaviour data of the states of the low-incidence cluster (indicated in red) than those of the high-incidence cluster (indicated in blue). Hence, we identified in total 19 and 6 states for the low- and high-incidence clusters, respectively.\n\nFinally, missing cervical cancer incidence data and HPV prevalence were approximated based on the mean within each cluster (Figure 2\u2014figure supplement 2). Approximation of HPV prevalence was based on the only one prevalence survey we could identify per cluster (Franceschi et al., 2005; Dutta et al., 2012). We verified that the HPV prevalence reported by the survey corresponding to the high-incidence cluster was higher than the prevalence reported by the one corresponding to the low-incidence cluster: HPV prevalence of 16.9% vs 9.8% (in women in the age range 20\u201360 years). This 1.7-fold difference in HPV prevalence was in the same order of magnitude as the 1.9-fold difference we found for the age-standardized cervical cancer incidence between the two clusters (17.9 vs 9.01 cases per 100,000 women-years). The final step of deriving impact projections for cervical cancer preventive measures for the whole of India with state-specific granularity was reported elsewhere (de Carvalho et al., 2023; Man et al., 2022).\n\n## Discussion\n\nIn this paper, we developed the Footprinting framework to approximate missing cervical cancer epidemiological data in some geographical units when deriving impact projections of cervical cancer preventive measures for a larger geographical area. In brief, the framework identified clusters of geographical units sharing similar patterns of cervical cancer epidemiology and uses the available data within each cluster to approximate data and extrapolate impact projections to geographical units with lower data availability. The framework was demonstrated using a case study approximating missing cervical cancer incidence and HPV prevalence data for a selection of Indian states. With the framework, we have derived, for the first time, impact projections of cervical cancer preventive measures for the whole of India with state-specific granularity (de Carvalho et al., 2023; Man et al., 2022).\n\nThis work has also generated a better understanding of cervical cancer epidemiology across India. We found that India can be divided into two main groups of 19 and 6 Indian states or groups of states that are characterized by low or high cervical cancer incidence, respectively. As expected, and in line with previous studies, individuals, in particular men, in high-incidence states had more sexual activity with non-regular partners, including commercial partners, than in low-incidence states (Vaccarella et al., 2006; Schulte-Frohlinde et al., 2022). While early sexual debut in women has also previously been suggested to be associated with high cervical cancer incidence and HPV positivity (Vaccarella et al., 2006; Schulte-Frohlinde et al., 2022), it was associated with lower cervical cancer incidence in the dataset we considered. We hypothesize that, for the Indian context, early sexual debut is common in states with a larger rural population, among whom less sexual activity occurs with non-regular partners, which is the main determining factor for a lower risk of cervical cancer. With the urbanization of rural areas, which often entails evolving socio-cultural norms, it is possible that more Indian states may shift to a high cancer incidence pattern, with an accompanying early peak in incidence (Baussano et al., 2016).\n\nIn our analysis of classifying clusters of cervical cancer incidence, we only included some of the sexual behaviour variables available in the NACO report (National Behavioural Surveillance Survey: General Population, 2006). We selected variables that were previously shown to be risk factors of HPV infection and cervical cancer risk and that are commonly available (e.g. age of sexual debut and number of sexual partners) so that the analyses can be easily applied to other settings (Vaccarella et al., 2006; Schulte-Frohlinde et al., 2022). In the Indian case study, the good classification performance shows that using the selected set was sufficient. As sexual behaviour variables are highly correlated, adding more variables might cause overfitting.\n\nIt should be noted that our Footprinting framework is similar to other extrapolation approaches previously used in model-based projection studies targeting large geographical areas with missing data, for example, a collection of LMICs or European countries (Brisson et al., 2020; Qendri et al., 2020). While the rationale behind different extrapolation approaches is similar, which is to approximate missing data from other geographical units with similar epidemiological indicators, there are also differences. A strength of our framework is that it relies on the observed patterns of epidemiology in the data to select key geographical units from which impact projections are extrapolated to other units instead of working with a predefined selection of key units. This allows the selection of key units that maximizes the representation of different epidemiological patterns in the data. Moreover, it also helps to pinpoint geographical units that could be interesting for future data collection efforts. Secondly, we used a newly developed clustering method (Subtil et al., 2017; Klich et al., 2021) that is able to assess the similarities between cervical cancer incidence of different geographical units based on the entire age-specific pattern, instead of clustering by age-standardized cervical cancer incidence or cervical cancer incidence in a certain age group only. Finally, we provided a detailed description of the clustering/mapping steps and intermediate results, which make them more reproducible and falsifiable.\n\nOur application of Footprinting on the Indian case study also bears some resemblance with the extrapolation of cervical cancer incidence by GLOBOCAN\u2019s nationwide estimates of cervical cancer incidence in India (Bray et al., 2017). Essentially, in GLOBOCAN, missing incidence was extrapolated based on urban or rural residency as a footprint, while we used sexual behaviour for this purpose and considered each state separately, which is necessary for state-specific impact projections. As a result, we neglected the variation between rural and urban areas within Indian states, which is a limitation of our analysis. We expect that Footprinting with further stratification of states by rural/urban residency could improve the approximation. Furthermore, our nationwide estimate of cervical cancer incidence derived from aggregating the state-specific estimates (reported in a separate manuscript; Man et al., 2022) was lower than the estimate reported by GLOBOCAN. This could be explained by the use of different methods of extrapolation and the fact that we included data from 17 additional cancer registries with relatively low incidence not included in GLOBOCAN estimates. Various possible adaptations of the proposed Footprinting framework are worth mentioning. Firstly, in the suboptimal situation where none of the relevant cervical cancer epidemiology data are available in some geographical units, data on indicators of human development and geographical location could be used as Footprint data. Secondly, while we focused on epidemiological data for cervical cancer, Footprinting could be used to approximate missing economic data (e.g. treatment or vaccine delivery costs) that are needed to assess the health economic impact of cervical cancer preventive measures, given that relevant Footprint data can be defined and collected. It is important to note that, in general, the applicability the proposed framework depends on the amount of data available. However, in our opinion, lack of data is a general challenge for approximating missing data, rather than a weakness particular to our methodology. By allowing possible adaptations, we believe that our framework is sufficiently flexible to effectively address missing data in many situations.\n\nThis work has provided a comprehensive framework to dealing with the important and ubiquitous challenge of missing data on cervical cancer epidemiology. By using the proposed framework, it is possible to derive robust and context-specific impact projections for cervical cancer preventive measures for a wide range of geographical settings. Such projections can assist local health authorities to plan and implement cervical cancer preventive strategies that are adapted to local needs and resources, intensifying efforts to reduce the high burden of cervical cancer still existing in many countries in low-resource settings.\n\n## Materials and methods\n\n### Data sources\n\nIn this section, we describe the data sources used in the Indian case study. The primary source of cervical cancer incidence data, which was used as Pattern data in the Clustering step, was cancer registry data from volume XI of Cancer Incidence in Five Continents (CI5) (Bray et al., 2017). It comprised incidence data from 16 cancer registries in 10 of the 25 Indian states (some states had more than one registry). In addition, cervical cancer incidence data were extracted from the 2012\u20132016 report by the Indian National Centre for Disease Informatics and Research (NCDIR) to provide data from 17 additional cancer registries not included in CI5 (Report of National Cancer Registry Programme, 2020). When data of a registry is both were reported both in CI5 and NCDIR, we only used the data from CI5. Combining the two sources provided incidence data for 33 registries in 14 Indian states. Cervical cancer incidence was reported by number of cases per 100,000 women-years, stratified by 5-year age groups from 15 to 79 years. See Figure 2\u2014figure supplement 1 and Figure 2\u2014source data 1 for the extracted incidence data by state.\n\nSexual behaviour data, which were used as Footprint data in the Classification step, were from the report of the National Behaviour Surveillance Survey by the National AIDS Control Organization (NACO) of India in 2006, which was the most recent edition at the moment of writing (National Behavioural Surveillance Survey: General Population, 2006). Data for all 25 Indian states were available in the survey. Sexual behaviour data by Indian state in the form of aggregate statistics of survey respondents were available for the following 4 groups of 12 variables:\n\nSee Figure 3\u2014figure supplement 1 and Figure 3\u2014source data 1 for the extracted sexual behaviour data by state.\n\n### Method to cluster cervical cancer incidence patterns\n\nThe statistical method employed in the Clustering step to cluster registry-specific cervical cancer incidence data was a Poisson-regression-based CEM clustering algorithm (Subtil et al., 2017; Klich et al., 2021), described in detail in Appendix 1. Briefly, clusters of age-specific cervical cancer incidence were obtained by likelihood-based optimization under Poisson regression model. The Poisson regression model for each cluster was characterized by three parameters: an intercept, one parameter for age, and one for the square of age. This parametric form was chosen to match the general pattern of incidence by age, namely, increasing from zero incidence from the youngest age group, then decreasing after reaching the maximum incidence (Figure 2\u2014figure supplement 1). Application of the clustering method required prefixing the number of clusters k. The goodness-of-fit of each k-clustering was evaluated based on the BIC. To transform the obtained clustering of registry-specific data to clustering of Indian states for states with multiple registries, we assigned each state to the cluster that included the highest number of registries, that is, according to a majority rule.\n\n### Method to classify cervical cancer incidence patterns based on sexual behaviour data\n\nIn the Classification step, we assigned the remaining states without cervical incidence data to the identified clusters based on RF using the sexual behaviour data as Footprint data (Breiman, 2001). The RF classifier was constructed using sexual behaviour data from states with identified clusters. The predictive value of each variable was evaluated with the mean decrease in accuracy, which expressed how much the accuracy of the model decreased if the variable was excluded. The performance of the classification step was validated by both out-of-bag error estimate and by applying the constructed classifier to the sexual behaviour data from states with identified clusters. Subsequently, the constructed classifier was applied to the sexual behaviour data from states without identified clusters, providing the probability to belong to each cluster. Each state was classified to the cluster receiving the highest probability. Classification was performed using the R package party version 1.3\u20137 with the following setting: cforest_control(teststat = 'quad', testtype = 'Univariate', mincriterion = 0.9, ntree = 50 000,, mtry = 3, maxdepth = 2, minsplit = 0, minbucket = 0).\n\nFinally, in the projection step, missing data on cervical cancer incidence and HPV prevalence were approximated based on the mean within each cluster. Results were validated based on the ratios of HPV prevalence and cervical cancer incidence across clusters. Derivation of impact projections was reported elsewhere (de Carvalho et al., 2023; Man et al., 2022).\n",
+      "created_at": "2025-12-04T01:44:45.198192Z"
+    },
+    {
+      "id": "6ce2e142-e284-4131-861d-e7c0c358064a",
+      "submission_id": "935af7a2-8979-4a36-8229-79d5d500757a",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Belinda Nicolau, https://ror.org/01pxwe438 McGill University Canada\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.81752.sa0](https://doi.org/10.7554/eLife.81752.sa0)\n\nThis study presents a useful framework for estimating missing data in cervical cancer epidemiology. The evidence supporting the authors' claims is solid, although validation studies in other populations will strengthen the methodology. The work will be of broad interest to researchers and policymakers interested in evaluating the impact of cervical cancer prevention measures.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Belinda Nicolau, https://ror.org/01pxwe438 McGill University Canada\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.81752.sa1](https://doi.org/10.7554/eLife.81752.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Footprinting\" missing epidemiological data for cervical cancer: a case study in India\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, including Belinda Nicolau as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Wendy Garrett as the Senior Editor. The following individuals involved in the review of your submission have agreed to reveal their identity: Esther Roura (Reviewer #1).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\nBoth reviewers' comments raised the question about the utility of this framework when little data are available on HPV prevalence, sexual behaviour, and cervical cancer incidence. What are the minimum data required to use this technique? What are the combinations of data that one can utilize with this methodology? Moreover, this methodology has not been validated; validation studies using data from countries where complete datasets are available (e.g., the US) will strengthen this methodology.\n\nThe authors should consider changing the name \"footprinting\"; as it is not intuitive in the context of the manuscript. Also, the authors should provide a more comprehensive explanation of the advantages of this technique over previous approaches, discussing its strengths and limitations.\n\nSimilarly, a more comprehensive explanation of the use of the sexual behaviour data is necessary; how did the authors decide which statistics to include in the methodology (e.g., age of first sexual intercourse, number of sexual partners lifetime)? Is there a guide to know which variables are ideal to apply in the technique?\n\nReviewer #1 (Recommendations for the authors):\n\nI have some general comments.\n\nThe word \"footprinting\" is not very intuitive in the context of the manuscript. It sounds a bit strange, especially in the title; in the manuscript it's fine.\n\nI have doubts about the utility of this framework when little data is available on HPV prevalence, sexual behavior, and cervical cancer incidence. What are the minimum data required to use this technique? What combinations of data types do you think we can do with this methodology (e.g., we only have sexual behavior but can use it with the HDI)?\n\nRegarding sexual behavior data, how do you decide the statistics to include in the methodology (e.g., the median age of first age, number of sexual partners lifetime)? Is there a guide to know which variables are more recommended to apply in the technique?\n\nIt will be interesting to validate this methodology in other regions with less available data to confirm its potential and utility.\n\nI also have more specific comments or questions.\n\nWhen a cancer registry is available in both CI5C and NCDIR, and the information is not the same, which one do you get?\n\nCan you explain how you decide the initial assignments in the CEM clustering algorithm (ranges of 100 repetitions)?\n\nConsidering that none of the clusterings obtained using the CEM clustering algorithm are appropriate (2, 3, or 4), have you considered another method of clustering instead of combining clusters 2 and 3?\n\nCan you explain more extensively the differences between the previous approaches and your approach, with the strengths and limitations, and why this technique is more advantageous than the other ones?\n\nReviewer #2 (Recommendations for the authors):\n\nThe proposed framework's strength is difficult to evaluate because the steps and justification for the model variables were not clearly presented, nor were the models validated. Since the whole framework is built on one single imputation, how do the authors account for uncertainties about the estimation? Perhaps the authors could consider validating these models by simulating models using data from countries where complete datasets are available (e.g., the US).\n\nThe manuscript would be strengthened by a more explicit stepwise delimitation of how to apply this model to data. The paper would be strengthened by including evidence for the utility of estimating HPV and cervical cancer rates based on sexual behaviours.\n\nLastly, it seems that the impact assessment of this work has already been published. Why was the current manuscript sent for publication after the paper on impact assessment was published?\n",
+      "created_at": "2025-12-04T01:44:45.198192Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T01:44:45.198192Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T01:44:45.198192Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "1d89dc0d-0398-4b39-8128-45f4553e2440",
+      "content_id": "609d7e0b-75af-4103-886e-d89bebeef0af",
+      "claim_id": "C1",
+      "claim": "In 2020, the number of new cervical cancer cases worldwide was estimated to be 604,000.",
+      "claim_type": "EXPLICIT",
+      "source": "In 2020, the number of new cases and deaths due to cervical cancer worldwide were estimated to be 604,000 and 342,000, respectively (Sung et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Sung et al., 2021",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:44:45.198192Z"
+    },
+    {
+      "id": "4cf62fc3-50e6-4065-9cd2-7acc95a208f7",
+      "content_id": "609d7e0b-75af-4103-886e-d89bebeef0af",
+      "claim_id": "C2",
+      "claim": "In 2020, the number of deaths due to cervical cancer worldwide was estimated to be 342,000.",
+      "claim_type": "EXPLICIT",
+      "source": "In 2020, the number of new cases and deaths due to cervical cancer worldwide were estimated to be 604,000 and 342,000, respectively (Sung et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Sung et al., 2021",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:44:45.198192Z"
+    },
+    {
+      "id": "d6632ee0-abfc-44a3-ac46-c33c1e33caa4",
+      "content_id": "609d7e0b-75af-4103-886e-d89bebeef0af",
+      "claim_id": "C3",
+      "claim": "Vaccination against human papillomavirus (HPV) can reduce the burden of cervical cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "Vaccination against human papillomavirus (HPV), cervical cancer screening, and treatment of pre-cancer and cancer can reduce the burden of cervical cancer (Lei et al., 2020; Bouvard et al., 2021)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Lei et al., 2020 and Bouvard et al., 2021",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:44:45.198192Z"
+    },
+    {
+      "id": "781ee51a-07ed-4778-af77-56771555c480",
+      "content_id": "609d7e0b-75af-4103-886e-d89bebeef0af",
+      "claim_id": "C4",
+      "claim": "Cervical cancer screening can reduce the burden of cervical cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "Vaccination against human papillomavirus (HPV), cervical cancer screening, and treatment of pre-cancer and cancer can reduce the burden of cervical cancer (Lei et al., 2020; Bouvard et al., 2021)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Lei et al., 2020 and Bouvard et al., 2021",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:44:45.198192Z"
+    },
+    {
+      "id": "7613ec25-dfbb-4e93-85d9-c11da19c3398",
+      "content_id": "609d7e0b-75af-4103-886e-d89bebeef0af",
+      "claim_id": "C5",
+      "claim": "Treatment of pre-cancer and cancer can reduce the burden of cervical cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "Vaccination against human papillomavirus (HPV), cervical cancer screening, and treatment of pre-cancer and cancer can reduce the burden of cervical cancer (Lei et al., 2020; Bouvard et al., 2021)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Lei et al., 2020 and Bouvard et al., 2021",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:44:45.198192Z"
+    },
+    {
+      "id": "b392a4cc-6fd8-4ef4-9982-c78f79fa068d",
+      "content_id": "609d7e0b-75af-4103-886e-d89bebeef0af",
+      "claim_id": "C6",
+      "claim": "Access to cervical cancer preventive measures is limited in many settings, especially in low- and middle-income countries (LMICs).",
+      "claim_type": "EXPLICIT",
+      "source": "but access to these preventive measures is still limited in many settings, especially in low- and middle-income countries (LMICs) (Bruni et al., 2021; de Sanjose and Tsu, 2019; Bonjour et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Bruni et al., 2021; de Sanjose and Tsu, 2019; Bonjour et al., 2021",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:44:45.198192Z"
+    },
+    {
+      "id": "8192170d-33a8-4d64-9282-428e475a93b4",
+      "content_id": "609d7e0b-75af-4103-886e-d89bebeef0af",
+      "claim_id": "C7",
+      "claim": "The World Health Organization developed a global strategy to eliminate cervical cancer as a public health problem.",
+      "claim_type": "EXPLICIT",
+      "source": "To accelerate the scale-up of cervical cancer prevention worldwide, the World Health Organization developed a global strategy to eliminate cervical cancer as a public health problem (WHO, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to WHO, 2021",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:44:45.198192Z"
+    },
+    {
+      "id": "c079fe83-044f-4b4a-8120-52938b225389",
+      "content_id": "609d7e0b-75af-4103-886e-d89bebeef0af",
+      "claim_id": "C8",
+      "claim": "The WHO elimination strategy proposes an elimination target of 4 cases per 100,000 women-years (age-standardized).",
+      "claim_type": "EXPLICIT",
+      "source": "The strategy proposes an elimination target of 4 cases per 100,000 women-years (age-standardized) with three intervention targets",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in the manuscript describing WHO strategy",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:44:45.198192Z"
+    },
+    {
+      "id": "14d6bce8-ad4d-4d58-90ca-c8acc5537d67",
+      "content_id": "609d7e0b-75af-4103-886e-d89bebeef0af",
+      "claim_id": "C9",
+      "claim": "The WHO strategy includes an intervention target of 90% of girls vaccinated against HPV by age 15.",
+      "claim_type": "EXPLICIT",
+      "source": "90% of girls vaccinated against HPV by age 15",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as part of WHO strategy intervention targets",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:44:45.198192Z"
+    },
+    {
+      "id": "e5303cb4-f4f0-4e0f-b364-1a10803bd0df",
+      "content_id": "609d7e0b-75af-4103-886e-d89bebeef0af",
+      "claim_id": "C10",
+      "claim": "The WHO strategy includes an intervention target of 70% of women receiving twice-lifetime screening with high-performance testing.",
+      "claim_type": "EXPLICIT",
+      "source": "70% of women receiving twice-lifetime screening with high-performance testing",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as part of WHO strategy intervention targets",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:44:45.198192Z"
+    },
+    {
+      "id": "44832ff5-9276-4174-a914-b4a9e4e0bc55",
+      "content_id": "609d7e0b-75af-4103-886e-d89bebeef0af",
+      "claim_id": "C11",
+      "claim": "The WHO strategy includes an intervention target of 90% of women having access to cervical pre-cancer and cancer treatment, and palliative care.",
+      "claim_type": "EXPLICIT",
+      "source": "90% of women having access to cervical pre-cancer and cancer treatment, and palliative care.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as part of WHO strategy intervention targets",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:44:45.198192Z"
+    },
+    {
+      "id": "deed5a13-92d4-43ef-b0f1-0d47fde4434c",
+      "content_id": "609d7e0b-75af-4103-886e-d89bebeef0af",
+      "claim_id": "C12",
+      "claim": "The local need for and impact of cervical cancer preventive measures depend on the burden in a given population, which is determined by context-specific sexual behaviour, and HPV prevalence.",
+      "claim_type": "EXPLICIT",
+      "source": "The local need for and impact of cervical cancer preventive measures depend on the burden in a given population, which is determined by context-specific sexual behaviour, and HPV prevalence (Guan et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Guan et al., 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:44:45.198192Z"
+    },
+    {
+      "id": "6d6bae44-2d1a-4aea-840f-01809a53524f",
+      "content_id": "609d7e0b-75af-4103-886e-d89bebeef0af",
+      "claim_id": "C13",
+      "claim": "Impact projections of cervical cancer preventive measures can help local health authorities set adequate public health targets and allocate resources accordingly when based on adequate data.",
+      "claim_type": "EXPLICIT",
+      "source": "When based on adequate data, impact projections of cervical cancer preventive measures can help local health authorities set adequate public health targets and allocate resources accordingly (Goldie et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Goldie et al., 2006",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:44:45.198192Z"
+    },
+    {
+      "id": "db67b5bb-6ce8-4f7c-b0bd-f6c4d3b192e1",
+      "content_id": "609d7e0b-75af-4103-886e-d89bebeef0af",
+      "claim_id": "C14",
+      "claim": "High-quality type- and age-specific data on HPV prevalence and cervical cancer incidence from local populations are often unavailable.",
+      "claim_type": "EXPLICIT",
+      "source": "High-quality type- and age-specific data on HPV prevalence and cervical cancer incidence from local populations are often unavailable.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "General statement about data availability challenges",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:44:45.198192Z"
+    },
+    {
+      "id": "98f45a76-842e-4042-b1c2-e4da72bbe7e0",
+      "content_id": "609d7e0b-75af-4103-886e-d89bebeef0af",
+      "claim_id": "C15",
+      "claim": "Data on sexual behaviour, such as sex outside marriage, are prone to bias including social desirability and recall bias.",
+      "claim_type": "EXPLICIT",
+      "source": "The same holds for adequate data on sexual behaviour, for example, data on sex outside marriage, which are also prone to bias, for example, social desirability and recall bias (Morris et al., 2014; Kelly et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Morris et al., 2014 and Kelly et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:44:45.198192Z"
+    },
+    {
+      "id": "94e74a77-bdb5-4527-b587-5e74d0a5802a",
+      "content_id": "609d7e0b-75af-4103-886e-d89bebeef0af",
+      "claim_id": "C16",
+      "claim": "India is the country with the world's highest expected burden of cervical cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "The framework is presented using a case study in India, the country with the world's highest expected burden of cervical cancer (Bonjour et al., 2021)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Bonjour et al., 2021",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:44:45.198192Z"
+    },
+    {
+      "id": "5f76ff16-eb97-463c-a404-91d2a4119b00",
+      "content_id": "609d7e0b-75af-4103-886e-d89bebeef0af",
+      "claim_id": "C17",
+      "claim": "India has very limited access to cervical cancer preventive measures.",
+      "claim_type": "EXPLICIT",
+      "source": "the country with the world's highest expected burden of cervical cancer (Bonjour et al., 2021) and very limited access to cervical cancer preventive measures (Sankaranarayanan et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Sankaranarayanan et al., 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:44:45.198192Z"
+    },
+    {
+      "id": "44afe1a7-a9d0-4a78-8549-0122492c0e4b",
+      "content_id": "609d7e0b-75af-4103-886e-d89bebeef0af",
+      "claim_id": "C18",
+      "claim": "There were two Indian states (out of 25 states or groups of states) with high-quality type- and age-specific HPV prevalence data needed for impact projections.",
+      "claim_type": "EXPLICIT",
+      "source": "For the Indian case study, there were two such states (out of 25 states or groups of states) with the high-quality type- and age-specific HPV prevalence data needed for impact projections (Franceschi et al., 2005; Dutta et al., 2012; Kataria et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Franceschi et al., 2005; Dutta et al., 2012; Kataria et al., 2022",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:44:45.198192Z"
+    },
+    {
+      "id": "1faf8aeb-c935-4fcb-9197-fed948c90cdc",
+      "content_id": "609d7e0b-75af-4103-886e-d89bebeef0af",
+      "claim_id": "C19",
+      "claim": "There were 12 Indian states with cervical cancer incidence and sexual behaviour data.",
+      "claim_type": "EXPLICIT",
+      "source": "In the Indian case study, there were 12 states with cervical cancer incidence (Bray et al., 2017; Report of National Cancer Registry Programme, 2020) and sexual behaviour data, which were assigned to the intermediate level of data availability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Bray et al., 2017 and Report of National Cancer Registry Programme, 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:44:45.198192Z"
+    },
+    {
+      "id": "0b689c11-26fb-4706-bab6-a87dd2b95499",
+      "content_id": "609d7e0b-75af-4103-886e-d89bebeef0af",
+      "claim_id": "C20",
+      "claim": "There were 11 Indian states that only had data on sexual behaviour.",
+      "claim_type": "EXPLICIT",
+      "source": "The remaining 11 states only had data on sexual behaviour (National Behavioural Surveillance Survey: General Population, 2006) and were assigned to the low level of data availability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to National Behavioural Surveillance Survey: General Population, 2006",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:44:45.198192Z"
+    },
+    {
+      "id": "caf8fa81-829e-4f0d-935c-1fe6f692ae19",
+      "content_id": "609d7e0b-75af-4103-886e-d89bebeef0af",
+      "claim_id": "C21",
+      "claim": "Model fit improved substantially when increasing the number of prefixed clusters from two to three, with the Bayesian information criterion (BIC) reducing from 6933 to 5700.",
+      "claim_type": "EXPLICIT",
+      "source": "Model fit improved substantially when increasing the number of prefixed clusters from two to three, with the Bayesian information criterion (BIC) reducing from 6933 to 5700 (Table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data in Table 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:44:45.198192Z"
+    },
+    {
+      "id": "a6500aa9-86f2-4bf6-9278-62a278a9cb51",
+      "content_id": "609d7e0b-75af-4103-886e-d89bebeef0af",
+      "claim_id": "C22",
+      "claim": "Further increases in the number of prefixed clusters to four only led to marginal improvement in model fit, with a small reduction in BIC from 5700 to 5532.",
+      "claim_type": "EXPLICIT",
+      "source": "Further increases in the number of prefixed clusters to four only led to marginal improvement in model fit, with a small reduction in BIC from 5700 to 5532",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data in Table 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:44:45.198192Z"
+    },
+    {
+      "id": "939add87-6f08-4efd-86d7-1205056f49a5",
+      "content_id": "609d7e0b-75af-4103-886e-d89bebeef0af",
+      "claim_id": "C23",
+      "claim": "With the number of prefixed clusters set at five, the clustering method no longer converged.",
+      "claim_type": "EXPLICIT",
+      "source": "With the number of prefixed clusters set at five, the clustering method no longer converged.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about clustering method performance",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:44:45.198192Z"
+    },
+    {
+      "id": "cd3a088b-6f57-4e55-a68f-61584c13297e",
+      "content_id": "609d7e0b-75af-4103-886e-d89bebeef0af",
+      "claim_id": "C24",
+      "claim": "Two or three clusters were fitting to describe the patterns of cervical cancer incidence in the available data.",
+      "claim_type": "EXPLICIT",
+      "source": "We concluded that two or three clusters were fitting to describe the patterns of cervical cancer incidence in the available data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion based on BIC analysis",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:44:45.198192Z"
+    },
+    {
+      "id": "975fbf28-af5c-4a39-9429-05c9b0cf4e2d",
+      "content_id": "609d7e0b-75af-4103-886e-d89bebeef0af",
+      "claim_id": "C25",
+      "claim": "In the 2-clustering, cluster 1 had a low maximum incidence of 47 cases per 100,000 women-years at age group 60\u201364 years.",
+      "claim_type": "EXPLICIT",
+      "source": "When allowing two clusters, cluster 1 had a low maximum incidence of 47 cases per 100,000 women-years at age group 60\u201364 years",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data in Table 1 and Figure 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:44:45.198192Z"
+    },
+    {
+      "id": "ed5c9db8-4fd5-490c-ab8f-99eb0575e239",
+      "content_id": "609d7e0b-75af-4103-886e-d89bebeef0af",
+      "claim_id": "C26",
+      "claim": "In the 2-clustering, cluster 2 had a higher maximum incidence of 91 cases per 100,000 women-years at the earlier age group of 55\u201359 years.",
+      "claim_type": "EXPLICIT",
+      "source": "compared to cluster 2 with its higher maximum incidence of 91 cases per 100,000 women-years at the earlier age group of 55\u201359 years (Figure 2, Table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data in Table 1 and Figure 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:44:45.198192Z"
+    },
+    {
+      "id": "340cafed-5140-4c71-97a7-831b45c4f97c",
+      "content_id": "609d7e0b-75af-4103-886e-d89bebeef0af",
+      "claim_id": "C27",
+      "claim": "In the 3-clustering, an additional cluster was characterized by intermediate maximum incidence of 64 cases per 100,000 women-years at age group 60\u201364 years.",
+      "claim_type": "EXPLICIT",
+      "source": "When allowing three clusters, we observed an additional cluster characterized by intermediate maximum incidence of 64 cases per 100,000 women-years at age group 60\u201364 years (Figure 2, Table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data in Table 1 and Figure 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:44:45.198192Z"
+    },
+    {
+      "id": "a21cea1c-f738-4d1f-8979-3a49ba9e1980",
+      "content_id": "609d7e0b-75af-4103-886e-d89bebeef0af",
+      "claim_id": "C28",
+      "claim": "The variable with the highest predictive value for cluster of cervical cancer incidence patterns was 'proportion of urban male respondents reporting sex with non-regular partners in the last 12 months'.",
+      "claim_type": "EXPLICIT",
+      "source": "The variables with the first, second, and third highest predictive values for cluster of cervical cancer incidence patterns were 'proportion of urban male respondents reporting sex with non-regular partners in the last 12 months', 'median age of first sex in rural males', and 'median age of first sex in urban females', respectively (Figure 3\u2014source data 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data in Figure 3\u2014source data 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:44:45.198192Z"
+    },
+    {
+      "id": "caf6f628-36fb-4883-b8fe-602e55a8db1a",
+      "content_id": "609d7e0b-75af-4103-886e-d89bebeef0af",
+      "claim_id": "C29",
+      "claim": "The variable with the second highest predictive value for cluster of cervical cancer incidence patterns was 'median age of first sex in rural males'.",
+      "claim_type": "EXPLICIT",
+      "source": "The variables with the first, second, and third highest predictive values for cluster of cervical cancer incidence patterns were 'proportion of urban male respondents reporting sex with non-regular partners in the last 12 months', 'median age of first sex in rural males', and 'median age of first sex in urban females', respectively (Figure 3\u2014source data 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data in Figure 3\u2014source data 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:44:45.198192Z"
+    },
+    {
+      "id": "0699df86-cd22-48ea-ad16-a2881b8e14be",
+      "content_id": "609d7e0b-75af-4103-886e-d89bebeef0af",
+      "claim_id": "C30",
+      "claim": "The variable with the third highest predictive value for cluster of cervical cancer incidence patterns was 'median age of first sex in urban females'.",
+      "claim_type": "EXPLICIT",
+      "source": "The variables with the first, second, and third highest predictive values for cluster of cervical cancer incidence patterns were 'proportion of urban male respondents reporting sex with non-regular partners in the last 12 months', 'median age of first sex in rural males', and 'median age of first sex in urban females', respectively (Figure 3\u2014source data 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data in Figure 3\u2014source data 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:44:45.198192Z"
+    },
+    {
+      "id": "a9925b9a-6aa3-4ace-9d30-522e6d9d18d9",
+      "content_id": "609d7e0b-75af-4103-886e-d89bebeef0af",
+      "claim_id": "C31",
+      "claim": "High proportions of urban male respondents reporting sex with non-regular partners in the last 12 months were associated with the high-incidence cluster.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, there was a good distinction between the high- and low-incidence clusters in terms of 'proportion of urban male respondents reporting sex with non-regular partners in the last 12 months', with high proportions associated with the high-incidence cluster (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:44:45.198192Z"
+    },
+    {
+      "id": "d92f8752-1389-43e1-961f-07c23cf63a52",
+      "content_id": "609d7e0b-75af-4103-886e-d89bebeef0af",
+      "claim_id": "C32",
+      "claim": "High values of 'median age of first sex in females' were associated with the high-incidence cluster.",
+      "claim_type": "EXPLICIT",
+      "source": "High values of 'median age of first sex in females' and low values of 'median age of first age in males' were also associated for the high-incidence cluster, although the distinction was less clear.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:44:45.198192Z"
+    },
+    {
+      "id": "e1e8b42d-b40b-4784-be34-b57c7d40f52c",
+      "content_id": "609d7e0b-75af-4103-886e-d89bebeef0af",
+      "claim_id": "C33",
+      "claim": "Low values of 'median age of first sex in males' were associated with the high-incidence cluster.",
+      "claim_type": "EXPLICIT",
+      "source": "High values of 'median age of first sex in females' and low values of 'median age of first age in males' were also associated for the high-incidence cluster, although the distinction was less clear.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:44:45.198192Z"
+    },
+    {
+      "id": "9875c2d5-5974-4f69-957e-ba6e5539dbe8",
+      "content_id": "609d7e0b-75af-4103-886e-d89bebeef0af",
+      "claim_id": "C34",
+      "claim": "The estimated out-of-bag error of the constructed classifier was 29%.",
+      "claim_type": "EXPLICIT",
+      "source": "The estimated out-of-bag error of the constructed classifier was 29%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of classifier performance metric",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:44:45.198192Z"
+    },
+    {
+      "id": "1d6484bf-5d4e-4b80-b90c-cd5d488cc5c9",
+      "content_id": "609d7e0b-75af-4103-886e-d89bebeef0af",
+      "claim_id": "C35",
+      "claim": "When applying the constructed classifier to the Indian states with identified clusters, only Karnataka and other North Eastern states (2 of 14 states; 14%) were wrongly classified to the low-incidence cluster.",
+      "claim_type": "EXPLICIT",
+      "source": "When applying the constructed classifier to the Indian states with identified clusters, only Karnataka and other North Eastern states (2 of 14 states; 14%) were wrongly classified to the low-incidence cluster (Table 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data in Table 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:44:45.198192Z"
+    },
+    {
+      "id": "2c5c2f6a-fd30-45a3-be8a-2b52223c1ccc",
+      "content_id": "609d7e0b-75af-4103-886e-d89bebeef0af",
+      "claim_id": "C36",
+      "claim": "All 11 remaining Indian states received a higher probability of belonging to the low-incidence cluster.",
+      "claim_type": "EXPLICIT",
+      "source": "All 11 remaining Indian states received a higher probability of belonging to the low-incidence cluster (Table 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data in Table 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:44:45.198192Z"
+    },
+    {
+      "id": "f23b0933-9f7a-48f6-bf5d-d6635170017c",
+      "content_id": "609d7e0b-75af-4103-886e-d89bebeef0af",
+      "claim_id": "C37",
+      "claim": "In total, 19 and 6 states were identified for the low- and high-incidence clusters, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, we identified in total 19 and 6 states for the low- and high-incidence clusters, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of classification results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:44:45.198192Z"
+    },
+    {
+      "id": "1f48eeee-de8d-48c9-81d8-92fe9321c366",
+      "content_id": "609d7e0b-75af-4103-886e-d89bebeef0af",
+      "claim_id": "C38",
+      "claim": "The HPV prevalence reported by the survey corresponding to the high-incidence cluster was 16.9% in women in the age range 20\u201360 years.",
+      "claim_type": "EXPLICIT",
+      "source": "We verified that the HPV prevalence reported by the survey corresponding to the high-incidence cluster was higher than the prevalence reported by the one corresponding to the low-incidence cluster: HPV prevalence of 16.9% vs 9.8% (in women in the age range 20\u201360 years).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data from surveys cited earlier (Franceschi et al., 2005; Dutta et al., 2012)",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:44:45.198192Z"
+    },
+    {
+      "id": "4bcd394d-916b-4c2f-98b0-5213942e1fff",
+      "content_id": "609d7e0b-75af-4103-886e-d89bebeef0af",
+      "claim_id": "C39",
+      "claim": "The HPV prevalence reported by the survey corresponding to the low-incidence cluster was 9.8% in women in the age range 20\u201360 years.",
+      "claim_type": "EXPLICIT",
+      "source": "We verified that the HPV prevalence reported by the survey corresponding to the high-incidence cluster was higher than the prevalence reported by the one corresponding to the low-incidence cluster: HPV prevalence of 16.9% vs 9.8% (in women in the age range 20\u201360 years).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data from surveys cited earlier (Franceschi et al., 2005; Dutta et al., 2012)",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:44:45.198192Z"
+    },
+    {
+      "id": "5caa273c-c85c-4d8e-b860-fa337dbea66d",
+      "content_id": "609d7e0b-75af-4103-886e-d89bebeef0af",
+      "claim_id": "C40",
+      "claim": "There was a 1.7-fold difference in HPV prevalence between the high-incidence and low-incidence clusters.",
+      "claim_type": "EXPLICIT",
+      "source": "This 1.7-fold difference in HPV prevalence was in the same order of magnitude as the 1.9-fold difference we found for the age-standardized cervical cancer incidence between the two clusters (17.9 vs 9.01 cases per 100,000 women-years).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Calculated from HPV prevalence data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:44:45.198192Z"
+    },
+    {
+      "id": "38fcfea7-b90e-47d4-ac9c-f20391adb73d",
+      "content_id": "609d7e0b-75af-4103-886e-d89bebeef0af",
+      "claim_id": "C41",
+      "claim": "There was a 1.9-fold difference in age-standardized cervical cancer incidence between the high-incidence and low-incidence clusters (17.9 vs 9.01 cases per 100,000 women-years).",
+      "claim_type": "EXPLICIT",
+      "source": "This 1.7-fold difference in HPV prevalence was in the same order of magnitude as the 1.9-fold difference we found for the age-standardized cervical cancer incidence between the two clusters (17.9 vs 9.01 cases per 100,000 women-years).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Calculated from cervical cancer incidence data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:44:45.198192Z"
+    },
+    {
+      "id": "07d2844f-afff-4f0b-8441-98756bfd77b2",
+      "content_id": "609d7e0b-75af-4103-886e-d89bebeef0af",
+      "claim_id": "C42",
+      "claim": "India can be divided into two main groups of 19 and 6 Indian states or groups of states that are characterized by low or high cervical cancer incidence, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that India can be divided into two main groups of 19 and 6 Indian states or groups of states that are characterized by low or high cervical cancer incidence, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of clustering and classification results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:44:45.198192Z"
+    },
+    {
+      "id": "6af043f6-663a-4eec-bf2b-f51d6487f262",
+      "content_id": "609d7e0b-75af-4103-886e-d89bebeef0af",
+      "claim_id": "C43",
+      "claim": "Individuals, in particular men, in high-incidence states had more sexual activity with non-regular partners, including commercial partners, than in low-incidence states.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, and in line with previous studies, individuals, in particular men, in high-incidence states had more sexual activity with non-regular partners, including commercial partners, than in low-incidence states (Vaccarella et al., 2006; Schulte-Frohlinde et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data analysis and citations to Vaccarella et al., 2006 and Schulte-Frohlinde et al., 2022",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:44:45.198192Z"
+    },
+    {
+      "id": "76214669-ad13-424f-a7ae-fd658ca471d7",
+      "content_id": "609d7e0b-75af-4103-886e-d89bebeef0af",
+      "claim_id": "C44",
+      "claim": "Early sexual debut in women has previously been suggested to be associated with high cervical cancer incidence and HPV positivity.",
+      "claim_type": "EXPLICIT",
+      "source": "While early sexual debut in women has also previously been suggested to be associated with high cervical cancer incidence and HPV positivity (Vaccarella et al., 2006; Schulte-Frohlinde et al., 2022)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Vaccarella et al., 2006 and Schulte-Frohlinde et al., 2022",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:44:45.198192Z"
+    },
+    {
+      "id": "3d6eeecf-de81-4f80-9e13-1e5c7ef507da",
+      "content_id": "609d7e0b-75af-4103-886e-d89bebeef0af",
+      "claim_id": "C45",
+      "claim": "In the Indian dataset, early sexual debut was associated with lower cervical cancer incidence.",
+      "claim_type": "EXPLICIT",
+      "source": "it was associated with lower cervical cancer incidence in the dataset we considered.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on data analysis in this study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:44:45.198192Z"
+    },
+    {
+      "id": "5d5a3b21-e4c0-4ef2-84b6-3fdad946832e",
+      "content_id": "609d7e0b-75af-4103-886e-d89bebeef0af",
+      "claim_id": "C46",
+      "claim": "For the Indian context, early sexual debut is common in states with a larger rural population, among whom less sexual activity occurs with non-regular partners.",
+      "claim_type": "EXPLICIT",
+      "source": "We hypothesize that, for the Indian context, early sexual debut is common in states with a larger rural population, among whom less sexual activity occurs with non-regular partners, which is the main determining factor for a lower risk of cervical cancer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Hypothesis based on data patterns observed",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:44:45.198192Z"
+    },
+    {
+      "id": "cd286bcc-a7c6-4d9c-a345-079184e15d91",
+      "content_id": "609d7e0b-75af-4103-886e-d89bebeef0af",
+      "claim_id": "C47",
+      "claim": "With the urbanization of rural areas, it is possible that more Indian states may shift to a high cancer incidence pattern, with an accompanying early peak in incidence.",
+      "claim_type": "EXPLICIT",
+      "source": "With the urbanization of rural areas, which often entails evolving socio-cultural norms, it is possible that more Indian states may shift to a high cancer incidence pattern, with an accompanying early peak in incidence (Baussano et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative statement supported by citation to Baussano et al., 2016",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:44:45.198192Z"
+    },
+    {
+      "id": "147edb21-3a44-4e17-8970-1f26bdfafea0",
+      "content_id": "609d7e0b-75af-4103-886e-d89bebeef0af",
+      "claim_id": "C48",
+      "claim": "The Footprinting framework can approximate missing data on sexual behaviour, HPV prevalence, or cervical cancer incidence.",
+      "claim_type": "EXPLICIT",
+      "source": "We developed a framework, hereafter named Footprinting, to approximate missing data on sexual behaviour, human papillomavirus (HPV) prevalence, or cervical cancer incidence, and applied it to an Indian case study.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of the framework's capabilities",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:44:45.198192Z"
+    },
+    {
+      "id": "17eaa3bd-9e64-4516-8037-219479032656",
+      "content_id": "609d7e0b-75af-4103-886e-d89bebeef0af",
+      "claim_id": "C49",
+      "claim": "Two main patterns of cervical cancer incidence, characterized by high and low incidence, were identified in India.",
+      "claim_type": "EXPLICIT",
+      "source": "Two main patterns of cervical cancer incidence, characterized by high and low incidence, were identified.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of clustering results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:44:45.198192Z"
+    },
+    {
+      "id": "19d18ca2-eeea-4d02-b478-bcde727d9137",
+      "content_id": "609d7e0b-75af-4103-886e-d89bebeef0af",
+      "claim_id": "C50",
+      "claim": "All Indian states with missing data on cervical cancer incidence were classified to the low-incidence cluster based on patterns in sexual behaviour data.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on the patterns in the sexual behaviour data, all Indian states with missing data on cervical cancer incidence were classified to the low-incidence cluster.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of classification results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:44:45.198192Z"
+    },
+    {
+      "id": "ca0b123f-3d8c-4858-bf28-93e33edf4853",
+      "content_id": "609d7e0b-75af-4103-886e-d89bebeef0af",
+      "claim_id": "C51",
+      "claim": "Missing data on cervical cancer incidence and HPV prevalence were approximated based on the mean of the available data within each cluster.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, missing data on cervical cancer incidence and HPV prevalence were approximated based on the mean of the available data within each cluster.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of approximation method",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:44:45.198192Z"
+    },
+    {
+      "id": "9ae10a0e-eb60-4593-8e62-ef4e9b052924",
+      "content_id": "609d7e0b-75af-4103-886e-d89bebeef0af",
+      "claim_id": "C52",
+      "claim": "The Footprinting framework enabled context-specific impact projections for cervical cancer preventive measures to assist public health decisions on cervical cancer prevention in India.",
+      "claim_type": "EXPLICIT",
+      "source": "With the Footprinting framework, we approximated missing cervical cancer epidemiological data and made context-specific impact projections for cervical cancer preventive measures, to assist public health decisions on cervical cancer prevention in India and other countries.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of framework application and outcomes",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:44:45.198192Z"
+    },
+    {
+      "id": "f29c3a91-f8b5-4071-905f-79709b972bb0",
+      "content_id": "609d7e0b-75af-4103-886e-d89bebeef0af",
+      "claim_id": "C53",
+      "claim": "Cervical cancer incidence data were extracted from volume XI of Cancer Incidence in Five Continents (CI5).",
+      "claim_type": "EXPLICIT",
+      "source": "The primary source of cervical cancer incidence data, which was used as Pattern data in the Clustering step, was cancer registry data from volume XI of Cancer Incidence in Five Continents (CI5) (Bray et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of data source with citation",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:44:45.198192Z"
+    },
+    {
+      "id": "bd2853b4-a486-437d-99cf-fcbe97f40658",
+      "content_id": "609d7e0b-75af-4103-886e-d89bebeef0af",
+      "claim_id": "C54",
+      "claim": "CI5 comprised incidence data from 16 cancer registries in 10 of the 25 Indian states.",
+      "claim_type": "EXPLICIT",
+      "source": "It comprised incidence data from 16 cancer registries in 10 of the 25 Indian states (some states had more than one registry).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of data coverage from CI5",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:44:45.198192Z"
+    },
+    {
+      "id": "9293243e-0c2f-467e-81da-1f1fb0fc3882",
+      "content_id": "609d7e0b-75af-4103-886e-d89bebeef0af",
+      "claim_id": "C55",
+      "claim": "Cervical cancer incidence data were extracted from the 2012\u20132016 report by the Indian National Centre for Disease Informatics and Research (NCDIR) to provide data from 17 additional cancer registries not included in CI5.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, cervical cancer incidence data were extracted from the 2012\u20132016 report by the Indian National Centre for Disease Informatics and Research (NCDIR) to provide data from 17 additional cancer registries not included in CI5 (Report of National Cancer Registry Programme, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of additional data source with citation",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:44:45.198192Z"
+    },
+    {
+      "id": "67a97f53-81f0-4bde-a79c-07d74455952a",
+      "content_id": "609d7e0b-75af-4103-886e-d89bebeef0af",
+      "claim_id": "C56",
+      "claim": "Combining CI5 and NCDIR sources provided incidence data for 33 registries in 14 Indian states.",
+      "claim_type": "EXPLICIT",
+      "source": "Combining the two sources provided incidence data for 33 registries in 14 Indian states.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of combined data coverage",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:44:45.198192Z"
+    },
+    {
+      "id": "bd962600-844d-46f9-916f-5a50d2568dec",
+      "content_id": "609d7e0b-75af-4103-886e-d89bebeef0af",
+      "claim_id": "C57",
+      "claim": "Sexual behaviour data were from the report of the National Behaviour Surveillance Survey by the National AIDS Control Organization (NACO) of India in 2006.",
+      "claim_type": "EXPLICIT",
+      "source": "Sexual behaviour data, which were used as Footprint data in the Classification step, were from the report of the National Behaviour Surveillance Survey by the National AIDS Control Organization (NACO) of India in 2006, which was the most recent edition at the moment of writing (National Behavioural Surveillance Survey: General Population, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of data source with citation",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:44:45.198192Z"
+    },
+    {
+      "id": "9ac37be6-3b10-4eb0-b5e0-68a83657fae7",
+      "content_id": "609d7e0b-75af-4103-886e-d89bebeef0af",
+      "claim_id": "C58",
+      "claim": "Sexual behaviour data for all 25 Indian states were available in the NACO survey.",
+      "claim_type": "EXPLICIT",
+      "source": "Data for all 25 Indian states were available in the survey.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of data coverage",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:44:45.198192Z"
+    },
+    {
+      "id": "4a430b42-af38-4466-bfe5-ad7190567091",
+      "content_id": "609d7e0b-75af-4103-886e-d89bebeef0af",
+      "claim_id": "C59",
+      "claim": "The Footprinting framework is similar to other extrapolation approaches previously used in model-based projection studies targeting large geographical areas with missing data.",
+      "claim_type": "EXPLICIT",
+      "source": "It should be noted that our Footprinting framework is similar to other extrapolation approaches previously used in model-based projection studies targeting large geographical areas with missing data, for example, a collection of LMICs or European countries (Brisson et al., 2020; Qendri et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison with existing methods supported by citations",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:44:45.198192Z"
+    },
+    {
+      "id": "5e77abad-850f-4342-b39d-07cec51b20d3",
+      "content_id": "609d7e0b-75af-4103-886e-d89bebeef0af",
+      "claim_id": "C60",
+      "claim": "The Footprinting framework relies on the observed patterns of epidemiology in the data to select key geographical units from which impact projections are extrapolated to other units instead of working with a predefined selection of key units.",
+      "claim_type": "EXPLICIT",
+      "source": "A strength of our framework is that it relies on the observed patterns of epidemiology in the data to select key geographical units from which impact projections are extrapolated to other units instead of working with a predefined selection of key units.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of framework methodology",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:44:45.198192Z"
+    },
+    {
+      "id": "837429c8-7d0e-4203-93f8-a8713482c3d0",
+      "content_id": "609d7e0b-75af-4103-886e-d89bebeef0af",
+      "claim_id": "C61",
+      "claim": "The clustering method used is able to assess the similarities between cervical cancer incidence of different geographical units based on the entire age-specific pattern.",
+      "claim_type": "EXPLICIT",
+      "source": "Secondly, we used a newly developed clustering method (Subtil et al., 2017; Klich et al., 2021) that is able to assess the similarities between cervical cancer incidence of different geographical units based on the entire age-specific pattern, instead of clustering by age-standardized cervical cancer incidence or cervical cancer incidence in a certain age group only.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of clustering method with citations",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:44:45.198192Z"
+    },
+    {
+      "id": "03763bce-76d8-485e-a4de-b3be3a1b68c6",
+      "content_id": "609d7e0b-75af-4103-886e-d89bebeef0af",
+      "claim_id": "C62",
+      "claim": "The nationwide estimate of cervical cancer incidence derived from aggregating the state-specific estimates was lower than the estimate reported by GLOBOCAN.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, our nationwide estimate of cervical cancer incidence derived from aggregating the state-specific estimates (reported in a separate manuscript; Man et al., 2022) was lower than the estimate reported by GLOBOCAN.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison of estimates with reference to separate manuscript",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:44:45.198192Z"
+    },
+    {
+      "id": "79bf2bbc-1dba-4b90-9d3c-7d143e8da884",
+      "content_id": "609d7e0b-75af-4103-886e-d89bebeef0af",
+      "claim_id": "C63",
+      "claim": "The difference between the study's nationwide estimate and GLOBOCAN could be explained by the use of different methods of extrapolation and the inclusion of data from 17 additional cancer registries with relatively low incidence not included in GLOBOCAN estimates.",
+      "claim_type": "EXPLICIT",
+      "source": "This could be explained by the use of different methods of extrapolation and the fact that we included data from 17 additional cancer registries with relatively low incidence not included in GLOBOCAN estimates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Explanation based on methodological differences",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:44:45.198192Z"
+    },
+    {
+      "id": "c2b6b9b7-ec08-4f5d-ae69-2104b324ebce",
+      "content_id": "609d7e0b-75af-4103-886e-d89bebeef0af",
+      "claim_id": "C64",
+      "claim": "The Footprinting framework can be used to approximate missing economic data (e.g. treatment or vaccine delivery costs) needed to assess the health economic impact of cervical cancer preventive measures.",
+      "claim_type": "EXPLICIT",
+      "source": "Secondly, while we focused on epidemiological data for cervical cancer, Footprinting could be used to approximate missing economic data (e.g. treatment or vaccine delivery costs) that are needed to assess the health economic impact of cervical cancer preventive measures, given that relevant Footprint data can be defined and collected.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Discussion of potential framework applications",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:44:45.198192Z"
+    },
+    {
+      "id": "6815bb7c-cd3a-4113-b6b4-38f0689f8593",
+      "content_id": "609d7e0b-75af-4103-886e-d89bebeef0af",
+      "claim_id": "C65",
+      "claim": "The applicability of the proposed framework depends on the amount of data available.",
+      "claim_type": "EXPLICIT",
+      "source": "It is important to note that, in general, the applicability the proposed framework depends on the amount of data available.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about framework limitations",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:44:45.198192Z"
+    },
+    {
+      "id": "8dd9944b-74d3-44b0-9f69-4574bf70c884",
+      "content_id": "609d7e0b-75af-4103-886e-d89bebeef0af",
+      "claim_id": "C66",
+      "claim": "The Footprinting framework is sufficiently flexible to effectively address missing data in many situations.",
+      "claim_type": "EXPLICIT",
+      "source": "By allowing possible adaptations, we believe that our framework is sufficiently flexible to effectively address missing data in many situations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about framework capabilities",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:44:45.198192Z"
+    },
+    {
+      "id": "06a9fd1f-8f61-4950-a3dc-702e043b0d71",
+      "content_id": "609d7e0b-75af-4103-886e-d89bebeef0af",
+      "claim_id": "C67",
+      "claim": "Impact projections derived using the Footprinting framework can assist local health authorities to plan and implement cervical cancer preventive strategies that are adapted to local needs and resources.",
+      "claim_type": "EXPLICIT",
+      "source": "Such projections can assist local health authorities to plan and implement cervical cancer preventive strategies that are adapted to local needs and resources, intensifying efforts to reduce the high burden of cervical cancer still existing in many countries in low-resource settings.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about practical applications of the framework",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:44:45.198192Z"
+    },
+    {
+      "id": "df6c9151-6b1d-40cf-ba8c-cc90b58c391b",
+      "content_id": "609d7e0b-75af-4103-886e-d89bebeef0af",
+      "claim_id": "C68",
+      "claim": "The Footprinting framework enabled impact projections of cervical cancer preventive measures for the whole of India with state-specific granularity for the first time.",
+      "claim_type": "EXPLICIT",
+      "source": "With the framework, we have derived, for the first time, impact projections of cervical cancer preventive measures for the whole of India with state-specific granularity (de Carvalho et al., 2023; Man et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about novel contribution with citations to related work",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:44:45.198192Z"
+    },
+    {
+      "id": "2c8e4dbd-6f64-4163-ab4e-882233f5e690",
+      "content_id": "609d7e0b-75af-4103-886e-d89bebeef0af",
+      "claim_id": "C69",
+      "claim": "Cervical cancer is an important source of disease burden worldwide.",
+      "claim_type": "EXPLICIT",
+      "source": "Cervical cancer is an important source of disease burden worldwide (de Martel et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to de Martel et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:44:45.198192Z"
+    },
+    {
+      "id": "c760a0bd-36f5-4c02-9c13-7077d8696443",
+      "content_id": "609d7e0b-75af-4103-886e-d89bebeef0af",
+      "claim_id": "C70",
+      "claim": "The Poisson regression model for each cluster was characterized by three parameters: an intercept, one parameter for age, and one for the square of age.",
+      "claim_type": "EXPLICIT",
+      "source": "The Poisson regression model for each cluster was characterized by three parameters: an intercept, one parameter for age, and one for the square of age.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of statistical model",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:44:45.198192Z"
+    },
+    {
+      "id": "93bee683-8307-443b-ae1a-2a054a0c783f",
+      "content_id": "609d7e0b-75af-4103-886e-d89bebeef0af",
+      "claim_id": "C71",
+      "claim": "The parametric form of the Poisson regression model was chosen to match the general pattern of incidence by age, namely, increasing from zero incidence from the youngest age group, then decreasing after reaching the maximum incidence.",
+      "claim_type": "EXPLICIT",
+      "source": "This parametric form was chosen to match the general pattern of incidence by age, namely, increasing from zero incidence from the youngest age group, then decreasing after reaching the maximum incidence (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Explanation of model choice with reference to figure",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:44:45.198192Z"
+    },
+    {
+      "id": "0a547676-8f2c-4e6b-95f9-49a183ca1118",
+      "content_id": "609d7e0b-75af-4103-886e-d89bebeef0af",
+      "claim_id": "C72",
+      "claim": "Classification was performed using the R package party version 1.3\u20137.",
+      "claim_type": "EXPLICIT",
+      "source": "Classification was performed using the R package party version 1.3\u20137 with the following setting: cforest_control(teststat = 'quad', testtype = 'Univariate', mincriterion = 0.9, ntree = 50 000,, mtry = 3, maxdepth = 2, minsplit = 0, minbucket = 0).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of computational methods",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:44:45.198192Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "9676c075-ce91-4c4e-a01b-e0841cff64a6",
+      "content_id": "609d7e0b-75af-4103-886e-d89bebeef0af",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Cervical cancer represents a significant global disease burden, with 604,000 new cases and 342,000 deaths estimated worldwide in 2020.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C2, and C69 are background statements supported by appropriate citations (Sung et al., 2021; de Martel et al., 2017). These provide context for the study but are not original findings from this work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:44:45.198192Z"
+    },
+    {
+      "id": "41c5a026-894f-4431-8725-127b9a75714f",
+      "content_id": "609d7e0b-75af-4103-886e-d89bebeef0af",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Cervical cancer prevention measures (HPV vaccination, screening, and treatment) can reduce disease burden, but access is limited in LMICs. The WHO developed a global elimination strategy with specific intervention targets.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C11 describe established knowledge and WHO policy supported by appropriate citations. These are background claims providing context for the study rather than original findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:44:45.198192Z"
+    },
+    {
+      "id": "704d1a7d-aa0c-498c-a6b9-6b7a9459b3a1",
+      "content_id": "609d7e0b-75af-4103-886e-d89bebeef0af",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Local cervical cancer epidemiological data (sexual behavior, HPV prevalence, cervical cancer incidence) are essential for impact projections but are often unavailable or subject to bias.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C15 establish the rationale for the study by documenting data gaps and challenges, supported by appropriate citations. These justify the need for the Footprinting framework.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:44:45.198192Z"
+    },
+    {
+      "id": "78793503-0434-4afa-9503-145f613b3b35",
+      "content_id": "609d7e0b-75af-4103-886e-d89bebeef0af",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "India has the world's highest cervical cancer burden with limited access to preventive measures. Data availability varies across Indian states: 2 states have complete HPV prevalence data, 12 have incidence and sexual behavior data, and 11 have only sexual behavior data.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C20 describe the Indian case study context and data availability, supported by appropriate citations. These establish the hierarchical data structure that motivates the Footprinting approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:44:45.198192Z"
+    },
+    {
+      "id": "109cfe8a-6f53-4cc2-920f-44398532d657",
+      "content_id": "609d7e0b-75af-4103-886e-d89bebeef0af",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Clustering analysis of cervical cancer incidence patterns identified 2-3 optimal clusters based on BIC. The 2-clustering revealed low-incidence (47 cases/100,000, peak at 60-64 years) and high-incidence (91 cases/100,000, peak at 55-59 years) patterns. The 3-clustering added an intermediate cluster (64 cases/100,000, peak at 60-64 years).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C27 describe the clustering results with specific BIC values and incidence patterns supported by Table 1 and Figure 2. The analysis appropriately uses BIC for model selection, though the decision to combine clusters 2 and 3 for classification purposes requires additional justification.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:44:45.198192Z"
+    },
+    {
+      "id": "137b4d6d-19b0-4357-8e78-3123cb4fbae0",
+      "content_id": "609d7e0b-75af-4103-886e-d89bebeef0af",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Sexual behavior variables predict cervical cancer incidence clusters. The top three predictors were: proportion of urban males reporting sex with non-regular partners, median age of first sex in rural males, and median age of first sex in urban females. High proportions of urban males with non-regular partners, high female age at first sex, and low male age at first sex were associated with high-incidence clusters.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C33 describe the random forest classification results supported by Figure 3 and source data. The associations are clearly demonstrated, though the authors note the distinction is less clear for age at first sex variables.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:44:45.198192Z"
+    },
+    {
+      "id": "59643861-de38-4201-8cc5-6797a54ad78f",
+      "content_id": "609d7e0b-75af-4103-886e-d89bebeef0af",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The random forest classifier achieved 29% out-of-bag error. When applied to states with known clusters, only 2 of 14 states (14%) were misclassified. All 11 states without incidence data were classified to the low-incidence cluster, resulting in 19 low-incidence and 6 high-incidence states total.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C37 report classifier performance metrics supported by Table 3. The 29% out-of-bag error but only 14% misclassification on known data suggests reasonable performance, though the discrepancy warrants explanation. The classification of all unknown states to low-incidence is data-driven but should be interpreted cautiously.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:44:45.198192Z"
+    },
+    {
+      "id": "1ed347d0-92d1-4c3c-a8a6-0fa5addede42",
+      "content_id": "609d7e0b-75af-4103-886e-d89bebeef0af",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "HPV prevalence validation showed 16.9% in the high-incidence cluster versus 9.8% in the low-incidence cluster (1.7-fold difference), comparable to the 1.9-fold difference in age-standardized cervical cancer incidence (17.9 vs 9.01 cases/100,000 women-years).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C41 provide validation of the clustering by comparing HPV prevalence and incidence ratios. The similar fold-differences (1.7 vs 1.9) support the validity of the clusters, though this is based on only one survey per cluster.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:44:45.198192Z"
+    },
+    {
+      "id": "2042a16a-7f30-425d-bf56-76145feebc3b",
+      "content_id": "609d7e0b-75af-4103-886e-d89bebeef0af",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "India divides into 19 low-incidence and 6 high-incidence states. High-incidence states show more sexual activity with non-regular partners. Contrary to prior literature, early sexual debut in women was associated with lower incidence in this dataset, hypothesized to reflect rural populations with less non-regular partner activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C42-C43 are well-supported by data. However, C45-C46 present a finding contradicting prior literature (C44) with only a speculative hypothesis (C46) as explanation. This unexpected finding requires additional validation or mechanistic investigation before being considered fully supported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:44:45.198192Z"
+    },
+    {
+      "id": "e5b5f511-ad05-4250-b503-7efbef0c28d3",
+      "content_id": "609d7e0b-75af-4103-886e-d89bebeef0af",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Urbanization may shift more Indian states to high cervical cancer incidence patterns with earlier peak incidence.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C47 is speculative about future trends based on urbanization. While supported by a citation (Baussano et al., 2016), this is a hypothesis rather than a demonstrated finding from the current data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:44:45.198192Z"
+    },
+    {
+      "id": "c4171208-e481-4fc4-972d-50cc0802448d",
+      "content_id": "609d7e0b-75af-4103-886e-d89bebeef0af",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The Footprinting framework successfully approximated missing cervical cancer epidemiological data for India. Two main incidence patterns were identified, states with missing data were classified, and missing incidence and HPV prevalence were approximated using cluster means. This enabled state-specific impact projections for the first time.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C52 and C68 summarize the framework's application and outcomes. The methodology is clearly described and executed, with results reported in companion manuscripts. The framework successfully addresses the stated goal of approximating missing data for impact projections.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:44:45.198192Z"
+    },
+    {
+      "id": "70045cdb-b2b1-42b5-81f1-cc61371c2ed2",
+      "content_id": "609d7e0b-75af-4103-886e-d89bebeef0af",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Data sources included cervical cancer incidence from CI5 (16 registries in 10 states) and NCDIR (17 additional registries), totaling 33 registries in 14 states. Sexual behavior data from the 2006 NACO survey covered all 25 states.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C58 describe data sources with appropriate citations. The methods section clearly documents data provenance and coverage, which is essential for reproducibility.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:44:45.198192Z"
+    },
+    {
+      "id": "53df97b9-23fb-4d0d-b474-e3cfaccf4fd1",
+      "content_id": "609d7e0b-75af-4103-886e-d89bebeef0af",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The Footprinting framework is similar to other extrapolation approaches but has strengths: it uses observed epidemiological patterns rather than predefined units, and employs a clustering method that considers entire age-specific incidence patterns rather than single summary measures.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C61 position the framework relative to existing methods with appropriate citations. The stated advantages are valid methodological improvements, though comparative performance evaluation would strengthen these claims.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:44:45.198192Z"
+    },
+    {
+      "id": "fcee1a0f-f739-4092-b25b-e82b5c97b0ac",
+      "content_id": "609d7e0b-75af-4103-886e-d89bebeef0af",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The study's nationwide cervical cancer incidence estimate was lower than GLOBOCAN's, potentially due to different extrapolation methods and inclusion of 17 additional low-incidence registries not in GLOBOCAN.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C63 acknowledge a discrepancy with GLOBOCAN estimates and provide plausible explanations. The explanation is reasonable given the methodological differences, though the magnitude of difference is not quantified.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:44:45.198192Z"
+    },
+    {
+      "id": "8102b23b-8db1-419a-bf80-d570f4ab43b0",
+      "content_id": "609d7e0b-75af-4103-886e-d89bebeef0af",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The Footprinting framework is flexible and could be adapted to approximate missing economic data or applied to other contexts, though applicability depends on data availability. Impact projections can assist local health authorities in planning cervical cancer prevention strategies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C67 discuss framework flexibility and applications. C64 is speculative about future applications, while C65-C67 appropriately acknowledge limitations and potential utility. These are reasonable interpretations of the framework's scope.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:44:45.198192Z"
+    },
+    {
+      "id": "00721e25-49e9-474d-b500-b49e1fad7692",
+      "content_id": "609d7e0b-75af-4103-886e-d89bebeef0af",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The clustering used Poisson regression with three parameters (intercept, age, age-squared) chosen to match the typical age-incidence pattern. Classification used the R package party version 1.3-7 with specified parameters.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C70-C72 describe statistical methods with appropriate justification. The Poisson model choice is reasonable for count data, and the parametric form matches expected incidence patterns. Software and parameters are specified for reproducibility.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:44:45.198192Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "1d89dc0d-0398-4b39-8128-45f4553e2440",
+      "result_id": "9676c075-ce91-4c4e-a01b-e0841cff64a6"
+    },
+    {
+      "claim_id": "4cf62fc3-50e6-4065-9cd2-7acc95a208f7",
+      "result_id": "9676c075-ce91-4c4e-a01b-e0841cff64a6"
+    },
+    {
+      "claim_id": "2c8e4dbd-6f64-4163-ab4e-882233f5e690",
+      "result_id": "9676c075-ce91-4c4e-a01b-e0841cff64a6"
+    },
+    {
+      "claim_id": "d6632ee0-abfc-44a3-ac46-c33c1e33caa4",
+      "result_id": "41c5a026-894f-4431-8725-127b9a75714f"
+    },
+    {
+      "claim_id": "781ee51a-07ed-4778-af77-56771555c480",
+      "result_id": "41c5a026-894f-4431-8725-127b9a75714f"
+    },
+    {
+      "claim_id": "7613ec25-dfbb-4e93-85d9-c11da19c3398",
+      "result_id": "41c5a026-894f-4431-8725-127b9a75714f"
+    },
+    {
+      "claim_id": "b392a4cc-6fd8-4ef4-9982-c78f79fa068d",
+      "result_id": "41c5a026-894f-4431-8725-127b9a75714f"
+    },
+    {
+      "claim_id": "8192170d-33a8-4d64-9282-428e475a93b4",
+      "result_id": "41c5a026-894f-4431-8725-127b9a75714f"
+    },
+    {
+      "claim_id": "c079fe83-044f-4b4a-8120-52938b225389",
+      "result_id": "41c5a026-894f-4431-8725-127b9a75714f"
+    },
+    {
+      "claim_id": "14d6bce8-ad4d-4d58-90ca-c8acc5537d67",
+      "result_id": "41c5a026-894f-4431-8725-127b9a75714f"
+    },
+    {
+      "claim_id": "e5303cb4-f4f0-4e0f-b364-1a10803bd0df",
+      "result_id": "41c5a026-894f-4431-8725-127b9a75714f"
+    },
+    {
+      "claim_id": "44832ff5-9276-4174-a914-b4a9e4e0bc55",
+      "result_id": "41c5a026-894f-4431-8725-127b9a75714f"
+    },
+    {
+      "claim_id": "deed5a13-92d4-43ef-b0f1-0d47fde4434c",
+      "result_id": "704d1a7d-aa0c-498c-a6b9-6b7a9459b3a1"
+    },
+    {
+      "claim_id": "6d6bae44-2d1a-4aea-840f-01809a53524f",
+      "result_id": "704d1a7d-aa0c-498c-a6b9-6b7a9459b3a1"
+    },
+    {
+      "claim_id": "db67b5bb-6ce8-4f7c-b0bd-f6c4d3b192e1",
+      "result_id": "704d1a7d-aa0c-498c-a6b9-6b7a9459b3a1"
+    },
+    {
+      "claim_id": "98f45a76-842e-4042-b1c2-e4da72bbe7e0",
+      "result_id": "704d1a7d-aa0c-498c-a6b9-6b7a9459b3a1"
+    },
+    {
+      "claim_id": "94e74a77-bdb5-4527-b587-5e74d0a5802a",
+      "result_id": "78793503-0434-4afa-9503-145f613b3b35"
+    },
+    {
+      "claim_id": "5f76ff16-eb97-463c-a404-91d2a4119b00",
+      "result_id": "78793503-0434-4afa-9503-145f613b3b35"
+    },
+    {
+      "claim_id": "44afe1a7-a9d0-4a78-8549-0122492c0e4b",
+      "result_id": "78793503-0434-4afa-9503-145f613b3b35"
+    },
+    {
+      "claim_id": "1faf8aeb-c935-4fcb-9197-fed948c90cdc",
+      "result_id": "78793503-0434-4afa-9503-145f613b3b35"
+    },
+    {
+      "claim_id": "0b689c11-26fb-4706-bab6-a87dd2b95499",
+      "result_id": "78793503-0434-4afa-9503-145f613b3b35"
+    },
+    {
+      "claim_id": "caf8fa81-829e-4f0d-935c-1fe6f692ae19",
+      "result_id": "109cfe8a-6f53-4cc2-920f-44398532d657"
+    },
+    {
+      "claim_id": "a6500aa9-86f2-4bf6-9278-62a278a9cb51",
+      "result_id": "109cfe8a-6f53-4cc2-920f-44398532d657"
+    },
+    {
+      "claim_id": "939add87-6f08-4efd-86d7-1205056f49a5",
+      "result_id": "109cfe8a-6f53-4cc2-920f-44398532d657"
+    },
+    {
+      "claim_id": "cd3a088b-6f57-4e55-a68f-61584c13297e",
+      "result_id": "109cfe8a-6f53-4cc2-920f-44398532d657"
+    },
+    {
+      "claim_id": "975fbf28-af5c-4a39-9429-05c9b0cf4e2d",
+      "result_id": "109cfe8a-6f53-4cc2-920f-44398532d657"
+    },
+    {
+      "claim_id": "ed5c9db8-4fd5-490c-ab8f-99eb0575e239",
+      "result_id": "109cfe8a-6f53-4cc2-920f-44398532d657"
+    },
+    {
+      "claim_id": "340cafed-5140-4c71-97a7-831b45c4f97c",
+      "result_id": "109cfe8a-6f53-4cc2-920f-44398532d657"
+    },
+    {
+      "claim_id": "a21cea1c-f738-4d1f-8979-3a49ba9e1980",
+      "result_id": "137b4d6d-19b0-4357-8e78-3123cb4fbae0"
+    },
+    {
+      "claim_id": "caf6f628-36fb-4883-b8fe-602e55a8db1a",
+      "result_id": "137b4d6d-19b0-4357-8e78-3123cb4fbae0"
+    },
+    {
+      "claim_id": "0699df86-cd22-48ea-ad16-a2881b8e14be",
+      "result_id": "137b4d6d-19b0-4357-8e78-3123cb4fbae0"
+    },
+    {
+      "claim_id": "a9925b9a-6aa3-4ace-9d30-522e6d9d18d9",
+      "result_id": "137b4d6d-19b0-4357-8e78-3123cb4fbae0"
+    },
+    {
+      "claim_id": "d92f8752-1389-43e1-961f-07c23cf63a52",
+      "result_id": "137b4d6d-19b0-4357-8e78-3123cb4fbae0"
+    },
+    {
+      "claim_id": "e1e8b42d-b40b-4784-be34-b57c7d40f52c",
+      "result_id": "137b4d6d-19b0-4357-8e78-3123cb4fbae0"
+    },
+    {
+      "claim_id": "9875c2d5-5974-4f69-957e-ba6e5539dbe8",
+      "result_id": "59643861-de38-4201-8cc5-6797a54ad78f"
+    },
+    {
+      "claim_id": "1d6484bf-5d4e-4b80-b90c-cd5d488cc5c9",
+      "result_id": "59643861-de38-4201-8cc5-6797a54ad78f"
+    },
+    {
+      "claim_id": "2c5c2f6a-fd30-45a3-be8a-2b52223c1ccc",
+      "result_id": "59643861-de38-4201-8cc5-6797a54ad78f"
+    },
+    {
+      "claim_id": "f23b0933-9f7a-48f6-bf5d-d6635170017c",
+      "result_id": "59643861-de38-4201-8cc5-6797a54ad78f"
+    },
+    {
+      "claim_id": "1f48eeee-de8d-48c9-81d8-92fe9321c366",
+      "result_id": "1ed347d0-92d1-4c3c-a8a6-0fa5addede42"
+    },
+    {
+      "claim_id": "4bcd394d-916b-4c2f-98b0-5213942e1fff",
+      "result_id": "1ed347d0-92d1-4c3c-a8a6-0fa5addede42"
+    },
+    {
+      "claim_id": "5caa273c-c85c-4d8e-b860-fa337dbea66d",
+      "result_id": "1ed347d0-92d1-4c3c-a8a6-0fa5addede42"
+    },
+    {
+      "claim_id": "38fcfea7-b90e-47d4-ac9c-f20391adb73d",
+      "result_id": "1ed347d0-92d1-4c3c-a8a6-0fa5addede42"
+    },
+    {
+      "claim_id": "07d2844f-afff-4f0b-8441-98756bfd77b2",
+      "result_id": "2042a16a-7f30-425d-bf56-76145feebc3b"
+    },
+    {
+      "claim_id": "6af043f6-663a-4eec-bf2b-f51d6487f262",
+      "result_id": "2042a16a-7f30-425d-bf56-76145feebc3b"
+    },
+    {
+      "claim_id": "76214669-ad13-424f-a7ae-fd658ca471d7",
+      "result_id": "2042a16a-7f30-425d-bf56-76145feebc3b"
+    },
+    {
+      "claim_id": "3d6eeecf-de81-4f80-9e13-1e5c7ef507da",
+      "result_id": "2042a16a-7f30-425d-bf56-76145feebc3b"
+    },
+    {
+      "claim_id": "5d5a3b21-e4c0-4ef2-84b6-3fdad946832e",
+      "result_id": "2042a16a-7f30-425d-bf56-76145feebc3b"
+    },
+    {
+      "claim_id": "cd286bcc-a7c6-4d9c-a345-079184e15d91",
+      "result_id": "e5b5f511-ad05-4250-b503-7efbef0c28d3"
+    },
+    {
+      "claim_id": "147edb21-3a44-4e17-8970-1f26bdfafea0",
+      "result_id": "c4171208-e481-4fc4-972d-50cc0802448d"
+    },
+    {
+      "claim_id": "17eaa3bd-9e64-4516-8037-219479032656",
+      "result_id": "c4171208-e481-4fc4-972d-50cc0802448d"
+    },
+    {
+      "claim_id": "19d18ca2-eeea-4d02-b478-bcde727d9137",
+      "result_id": "c4171208-e481-4fc4-972d-50cc0802448d"
+    },
+    {
+      "claim_id": "ca0b123f-3d8c-4858-bf28-93e33edf4853",
+      "result_id": "c4171208-e481-4fc4-972d-50cc0802448d"
+    },
+    {
+      "claim_id": "9ae10a0e-eb60-4593-8e62-ef4e9b052924",
+      "result_id": "c4171208-e481-4fc4-972d-50cc0802448d"
+    },
+    {
+      "claim_id": "df6c9151-6b1d-40cf-ba8c-cc90b58c391b",
+      "result_id": "c4171208-e481-4fc4-972d-50cc0802448d"
+    },
+    {
+      "claim_id": "f29c3a91-f8b5-4071-905f-79709b972bb0",
+      "result_id": "70045cdb-b2b1-42b5-81f1-cc61371c2ed2"
+    },
+    {
+      "claim_id": "bd2853b4-a486-437d-99cf-fcbe97f40658",
+      "result_id": "70045cdb-b2b1-42b5-81f1-cc61371c2ed2"
+    },
+    {
+      "claim_id": "9293243e-0c2f-467e-81da-1f1fb0fc3882",
+      "result_id": "70045cdb-b2b1-42b5-81f1-cc61371c2ed2"
+    },
+    {
+      "claim_id": "67a97f53-81f0-4bde-a79c-07d74455952a",
+      "result_id": "70045cdb-b2b1-42b5-81f1-cc61371c2ed2"
+    },
+    {
+      "claim_id": "bd962600-844d-46f9-916f-5a50d2568dec",
+      "result_id": "70045cdb-b2b1-42b5-81f1-cc61371c2ed2"
+    },
+    {
+      "claim_id": "9ac37be6-3b10-4eb0-b5e0-68a83657fae7",
+      "result_id": "70045cdb-b2b1-42b5-81f1-cc61371c2ed2"
+    },
+    {
+      "claim_id": "4a430b42-af38-4466-bfe5-ad7190567091",
+      "result_id": "53df97b9-23fb-4d0d-b474-e3cfaccf4fd1"
+    },
+    {
+      "claim_id": "5e77abad-850f-4342-b39d-07cec51b20d3",
+      "result_id": "53df97b9-23fb-4d0d-b474-e3cfaccf4fd1"
+    },
+    {
+      "claim_id": "837429c8-7d0e-4203-93f8-a8713482c3d0",
+      "result_id": "53df97b9-23fb-4d0d-b474-e3cfaccf4fd1"
+    },
+    {
+      "claim_id": "03763bce-76d8-485e-a4de-b3be3a1b68c6",
+      "result_id": "fcee1a0f-f739-4092-b25b-e82b5c97b0ac"
+    },
+    {
+      "claim_id": "79bf2bbc-1dba-4b90-9d3c-7d143e8da884",
+      "result_id": "fcee1a0f-f739-4092-b25b-e82b5c97b0ac"
+    },
+    {
+      "claim_id": "c2b6b9b7-ec08-4f5d-ae69-2104b324ebce",
+      "result_id": "8102b23b-8db1-419a-bf80-d570f4ab43b0"
+    },
+    {
+      "claim_id": "6815bb7c-cd3a-4113-b6b4-38f0689f8593",
+      "result_id": "8102b23b-8db1-419a-bf80-d570f4ab43b0"
+    },
+    {
+      "claim_id": "8dd9944b-74d3-44b0-9f69-4574bf70c884",
+      "result_id": "8102b23b-8db1-419a-bf80-d570f4ab43b0"
+    },
+    {
+      "claim_id": "06a9fd1f-8f61-4950-a3dc-702e043b0d71",
+      "result_id": "8102b23b-8db1-419a-bf80-d570f4ab43b0"
+    },
+    {
+      "claim_id": "c760a0bd-36f5-4c02-9c13-7077d8696443",
+      "result_id": "00721e25-49e9-474d-b500-b49e1fad7692"
+    },
+    {
+      "claim_id": "93bee683-8307-443b-ae1a-2a054a0c783f",
+      "result_id": "00721e25-49e9-474d-b500-b49e1fad7692"
+    },
+    {
+      "claim_id": "0a547676-8f2c-4e6b-95f9-49a183ca1118",
+      "result_id": "00721e25-49e9-474d-b500-b49e1fad7692"
+    }
+  ],
+  "comparisons": []
+}

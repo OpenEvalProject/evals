@@ -1,0 +1,273 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C3",
+      "C4",
+      "C5",
+      "C14",
+      "C15"
+    ],
+    "result": "Sex-inclusive research policies have been implemented by funding agencies and journals in multiple countries, leading to increased representation of women in clinical trials and female animals in preclinical research. These policies mandate inclusion of both sexes in biomedical studies, with the US government requiring women in clinical investigations since 1993 and NIH requiring both sexes in animal studies since 2016.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C3-C5, C14-C15 are well-supported by multiple citations documenting policy implementation and outcomes. The claims describe historical policy changes and their documented effects on research practices, with appropriate citations to government documents and peer-reviewed literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Men and women differ on average in disease incidence, presentation, risk factors, treatment response, and adverse drug reactions across multiple conditions including autoimmune diseases, mental health conditions, substance use disorders, and cardiovascular disease. These differences have led to differential treatment recommendations, such as the FDA's 2013 recommendation for lower zolpidem dosing in women.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C13 are supported by extensive citations to peer-reviewed literature and regulatory documents. Each specific disease category and clinical example is backed by appropriate references, providing a solid evidence base for the rationale behind sex-inclusive policies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C2",
+      "C19",
+      "C20",
+      "C61"
+    ],
+    "result": "Study designs, analyses, and interpretations in sex-inclusive research are often flawed, with training in methods to detect sex differences lagging behind the opportunity to investigate them. Many claims of sex differences are based on flawed approaches, representing a novel challenge for researchers who may lack adequate training.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C19-C20, C61 are supported by multiple citations documenting methodological problems in the literature. The inference about inadequate training (C20) follows logically from the documented widespread use of suboptimal approaches, making this a reasonable conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C21",
+      "C22",
+      "C62"
+    ],
+    "result": "NIH policy on sex as a biological variable (SABV) does not require statistical comparisons between sexes, yet most researchers conduct such comparisons, leading to a large increase in reported sex differences. NIH distinguishes studies intended to test for sex differences from those that are not, effectively proposing two different standards for research.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C18, C21-C22 are supported by citations to NIH policy documents and empirical studies of researcher behavior. Claim C62 is a reasonable interpretation of the policy distinction. The causal link between researcher behavior and increased reports (C18) is appropriately qualified as 'appears to have led.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Exploratory studies typically lack a priori hypotheses and adequate sample sizes for subgroup analyses, yet current policies expect within-sex analyses in all studies. This approach threatens reproducibility, fails to test alternative explanations like gender confounding, and will maximize false positive discoveries while attempting to reap benefits of exploratory research without confirmatory discipline.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C26, C63-C65 are supported by appropriate citations to statistical literature and policy documents. The logical argument connecting underpowered analyses to threats to reproducibility is sound and well-established in statistical theory. The distinction between exploratory and confirmatory research is well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Comparing sexes by qualitatively comparing within-sex p-values (the DISS error) fails to actually contrast the sexes and is one of the most common statistical mistakes in science. In underpowered studies with 80% overall power and 50% within-sex power, there is a 50% chance of discordant p-values by chance alone when no true sex difference exists. This approach is biased toward false positives but can also produce false negatives.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C37 are supported by citations to statistical literature and illustrated with Figure 2B. The statistical principles are correctly stated and the 50% probability calculation (C35) is properly cited. The demonstration of both false positive and false negative risks is logically sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C38",
+      "C39"
+    ],
+    "result": "In a study of abdominal obesity in children, authors using the DISS approach missed a large sex difference (P=0.001 for interaction) in the association between abdominal obesity and lipoprotein particle number because within-sex p-values were non-significant in both girls and boys, with the association being positive in girls and negative in boys.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C39 provide a concrete example of the DISS error leading to a false negative, supported by citations to both the original flawed study (Akiyama et al., 2022) and the correction (Vorland et al., 2023). This demonstrates the real-world consequences of the methodological error.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Including sex in statistical models can unmask treatment effects when effects differ by sex, but the main effect of sex is often confused with the sex-by-treatment interaction. This misinterpretation of ANOVA outputs is common and has been endorsed in NIH training materials.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C43 are supported by appropriate citations. The statistical principle (C40) is correctly stated and cited. The documentation that this error appears in NIH training materials (C43) is particularly concerning and well-documented with citation to NIH, 2020.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "In the dataset shown in Figure 2A, treatment is significant for males (P=0.036) but not females (P=0.342), yet the sex \u00d7 treatment interaction is not significant (P=0.496). The main effect of treatment is significant (P=0.034), indicating a treatment effect irrespective of sex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C53 are directly supported by data presented in Figure 2A. This example effectively demonstrates how the DISS error can lead to false conclusions about sex differences when the interaction term reveals no true difference between sexes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C54",
+      "C55"
+    ],
+    "result": "In the dataset shown in Figure 2B, treatment effects are not significant within females (P=0.115) or males (P=0.185), yet the sex \u00d7 treatment interaction is significant (P=0.038), indicating a true difference in responses between sexes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C55 are directly supported by data in Figure 2B. This example demonstrates the opposite scenario from Figure 2A, showing how the DISS approach can produce false negatives by missing real sex differences when within-sex tests are non-significant.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C66",
+      "C67"
+    ],
+    "result": "Sex is not a tangible single variable but an imperfect proxy for many factors that covary imperfectly. Sex and gender nearly always confound each other in human studies, and even non-human animals experience sex-specific environmental factors. It is better to measure sex-related variables directly than to reason backwards from sex to speculative mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C30, C66-C67 are supported by appropriate citations to conceptual and empirical literature. The argument about confounding between sex and gender is logically sound, and the recommendation to measure specific variables rather than using sex as a proxy is a reasonable methodological principle.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Statistical interactions require large sample sizes to detect, and only one in four subgroup interactions in exploratory analyses are true positives. In exploratory studies without strong prior hypotheses, the probability of finding true positives is lower than in confirmatory research, so even statistically significant findings should be treated with caution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C46, C73-C75 are supported by citations to statistical literature. The estimate that only 25% of exploratory subgroup interactions are true positives (C46) is properly cited to Kent et al., 2018. The statistical principles about pre-test probability are correctly stated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C44",
+      "C47",
+      "C48",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Findings of sex differences are used to shape public policy, and at least one treatment has been made less available to women based on small sex differences of controversial importance. Not all statistically significant sex differences are large enough to be important, and big data analyses can detect trivial differences. Clinical meaningfulness must be judged on effect size, not p-values.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44, C47-C48, C69-C71 are supported by appropriate citations. The concern about treatments being restricted based on questionable evidence (C47-C48) is documented with citations. The statistical principles about effect size versus significance (C69-C71) are well-established and properly cited.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "The recommendations are organized within the '4 Cs' framework (Consideration, Collection, Characterization, Communication) developed by NIH's Office of Research on Women's Health. The principles apply to observational studies, experiments, and clinical trials across all research types, and apply equally to gender or any other subgroup.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C59 accurately describe the organizational framework and scope of the recommendations. The attribution to NIH's Office of Research on Women's Health is stated as fact and the broad applicability of the principles is a reasonable assertion by the authors.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C60",
+      "C81",
+      "C82",
+      "C83",
+      "C86"
+    ],
+    "result": "Ignoring an entire sex without justification is incompatible with rigorous science, yet mandating sex-inclusive research without sound methodology attempts to reap benefits of exploratory research without confirmatory discipline. No other subgroup analysis has been singled out as appropriate for every study. While some discoveries will be real and meaningful, many will not, but the distinction between exploratory and confirmatory research will remain important.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60, C81-C83, C86 represent the authors' critical analysis and recommendations. These are logical conclusions drawn from the evidence presented throughout the manuscript. The observation that sex is uniquely mandated for all studies (C82) is a valid critique, and the prediction about mixed outcomes (C83) follows from statistical principles.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C27",
+      "C68",
+      "C72",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Gender affects human health and must be considered as a potential confounder. Researchers must avoid HARKing, reflexive assumptions about mechanisms (like attributing all female phenomena to estrogens), and sex essentialism. Observational studies must consider gendered exposures, and over-emphasis on sex beyond what data warrant will result in imprecise 'precision medicine' that ignores individual variation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27, C68, C72, C76-C80 represent methodological recommendations and cautions supported by citations and logical reasoning. The concern about HARKing (C72) is properly cited to Kerr, 1998. The warnings about sex essentialism and over-interpretation are reasonable based on the evidence presented about methodological problems.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C84",
+      "C85"
+    ],
+    "result": "The science of sex differences will almost certainly move away from sex as a binary category. As a research variable, sex is problematic\u2014an imperfect proxy for myriad traits that often do not covary tightly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C85 represent the authors' perspective on future directions, supported by the conceptual framework developed throughout the manuscript and citations to literature calling for new approaches to operationalizing sex. While C84 is speculative, it is a reasonable prediction based on current trends in the field.",
+    "result_type": "MINOR"
+  }
+]

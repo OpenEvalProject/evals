@@ -1,0 +1,263 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "The authors developed a biophysically detailed model of developing thalamocortical neurons at P7-P10 using evolutionary multiobjective optimization (EMO) methods. The model accurately reproduced neuron dynamics, synaptic properties, and network heterogeneity, yielding a heterogeneous database of models with monomodal parameter distributions occupying a compact region in PCA space.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C32 collectively describe a well-documented modeling approach. The EMO methods are established (C23-C24), the model architecture is justified by developmental anatomy (C25-C27), and the parameter analysis (C30-C32) demonstrates model quality. The figures support the claims about parameter distributions and PCA clustering.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C45",
+      "C48",
+      "C51",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C60"
+    ],
+    "result": "NMDA receptor dominance at developing retinothalamic synapses prevents the emergence of millisecond-timescale spike correlations between thalamocortical neurons at P7-P10, while preserving correlations at informative timescales (>100-200ms). This decorrelation results from an interaction between slow NMDAR current decay times and intrinsic neuron dynamics, not simple low-pass filtering.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C45, C53-C57 present the core modeling finding with strong support from Figure 2. The mechanistic analysis (C58, C60) is supported by Figure 2\u2014figure supplement 4. The timescale-specific decorrelation (C54-C56) aligns with known developmental timescales. Control analyses with homogeneous networks (C48, C51) strengthen the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C78"
+    ],
+    "result": "Precise correlations induced by high convergence during development are not merely non-informative but actively reduce spatial information conveyed by thalamic neurons. For P7-P10 convergence levels, AMPAR-only synapses lose 25-50% of spatial information compared to the biological NMDAR+AMPAR mixture, while AMPAR-only synapses are advantageous only at adult convergence levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C62-C65, C78 present information-theoretic analysis supported by Figure 3. The mutual information calculations follow established methods (Butts and Rokhsar, 2001). The finding that fast correlations reduce information during development but not in adults is internally consistent and well-quantified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C69",
+      "C72"
+    ],
+    "result": "At adult convergence levels, TRN inhibitory feedback does not induce significant fast-timescale correlations and is 'safe' for information transmission. However, at P7-P10 convergence levels, strong TRN synapses (particularly slow ones) could re-introduce parasitic correlations, suggesting that delayed development of functional TRN synapses is advantageous.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C67 establish TRN connectivity at P7-P10 (though C67 uses unpublished data). The modeling results (C69, C72) shown in Figure 4 demonstrate that biologically realistic TRN parameters do not produce high correlations. The conclusion about delayed TRN development is a reasonable inference from the model, though it remains a hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C79",
+      "C80"
+    ],
+    "result": "When both cortical excitatory and TRN inhibitory feedback are modeled together, combinations of synaptic conductances that reproduce in vivo firing rate data are insufficient to drive network synchronization at P7-P10 convergence levels. This suggests the developing thalamocortical system avoids configurations that would drive parasitic correlations, with feedback connection strength maintained at low levels until adult-like convergence is attained.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C74, C79-C80 describe results from the complete network model shown in Figure 5. The Monte Carlo parameter exploration is appropriate given the high-dimensional parameter space. The finding that biologically constrained parameters avoid high correlation regions is well-demonstrated, though the evolutionary interpretation (C80, C82) remains speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C4",
+      "C75",
+      "C76",
+      "C81",
+      "C82",
+      "C83",
+      "C119",
+      "C120"
+    ],
+    "result": "The authors propose a novel developmental principle: developing synapses and circuits evolved mechanisms to suppress 'parasitic' correlations arising from unrefined connectivity. Specifically, NMDAR dominance and delayed development of feedback connections prevent detrimental precise synchronization while preserving informative slow correlations necessary for circuit refinement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C75-C76, C81-C83, C119-C120 present the overarching hypothesis and novel principle. While speculative (C81-C82 are explicitly hypotheses), these claims are well-supported by the modeling results. The principle is logically consistent with the data, though it represents an interpretation rather than direct experimental validation. The evolutionary framing is reasonable but not directly testable from the model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "The model incorporates established developmental features of the P7-P10 visual thalamus: NMDAR dominance at retinothalamic synapses, high convergence (10-20 rGC inputs per TC neuron), active cortical and TRN feedback, low TC neuron firing rates (~1 spike/s), and homeostatic regulation of synaptic strength.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C44 describe well-established developmental features supported by multiple citations. These provide the biological constraints for the model. C67 uses unpublished data but is consistent with published work on TRN development. The homeostatic regulation assumption (C43) is well-supported and appropriately implemented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C113",
+      "C114"
+    ],
+    "result": "The authors introduce methodological innovations: using PCA of model parameters for qualitative assessment of EMO quality and heterogeneity, and using homeostatic regulation to functionally set synaptic conductances in heterogeneous networks rather than using fixed values.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C114 describe methodological contributions. The PCA approach (C113) is demonstrated in Figure 1\u2014figure supplement 1. The homeostatic regulation approach (C114) is well-justified for heterogeneous networks and is a practical solution to parameter setting. Both are valid methodological advances.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "The model predicts that NMDAR dominance and developmental delays in feedback connections diminish parasitic correlations while preserving slow correlations. This can be tested by recording TC neurons in thalamus-specific NR1 knockout mice (expecting higher fast but not slow correlations) or by optogenetically driving cortex/TRN to create adult-like feedback.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C118 present testable predictions from the model. The predictions are logical extensions of the modeling results. The proposed experiments (C116-C118) are feasible and would directly test the model's core hypotheses. These represent appropriate future directions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "The manuscript establishes the developmental context: correlated activity is essential for circuit development, retinal waves convey topographic information at slow timescales (>100ms), early synapses have adaptations for slow integration, and developing dLGN has high convergence (10-20 inputs) that should theoretically cause high-precision correlations, yet experimental observations show low fast-timescale correlations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C21 establish the background and motivation from literature. All are well-supported by appropriate citations to experimental and theoretical work. These claims accurately represent the state of knowledge and identify the key puzzle that motivates the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "The discussion contextualizes results within visual system development: retinal waves propagate slowly due to volume acetylcholine release, cortical receptive field diversity emerges from refined inputs, and the model is consistent with developmental changes in NMDAR expression and feedback connectivity that enable fast synchronization after eye-opening.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C91 provide developmental context supported by appropriate citations. C89-C90 are reasonable extrapolations from the model to later developmental stages, appropriately framed as interpretations. These claims connect the model to broader developmental processes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "The authors propose a third role for NMDARs beyond plasticity and amplification: decorrelation at fast timescales through complex interaction with neuron dynamics. This is consistent with observations that NMDAR blockade prevents ON/OFF segregation but not eye-specific lamination, and that NMDAR loss increases AMPAR-driven excitability, though in vivo compensation may be incomplete.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C97 present the novel NMDAR role, well-supported by the modeling (C97 references Figure 2\u2014figure supplement 4). Claims C98-C102 discuss implications and limitations, appropriately noting that C98 is speculative and C101-C102 acknowledge model limitations. The proposed role is consistent with existing literature (C92-C95, C99-C100).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "The discussion contrasts thalamic and cortical decorrelation mechanisms: cortex uses inhibitory balancing at eye-opening to achieve asynchronous states, while thalamus uses NMDAR-mediated decorrelation that preserves slow correlations and selectively attenuates fast correlations. Local inhibition would affect all timescales and be too slow to prevent initial wave-driven synchronization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C112 compare thalamic and cortical mechanisms, well-supported by citations (C103-C107, C111). The reasoning about why thalamus doesn't use inhibitory balancing (C108-C109) is logical and supported by the model results (C110). The speculation about slow inhibition onset (C112) is appropriately framed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1"
+    ],
+    "result": "Background claim that the developing visual thalamus and cortex extract positional information from correlated retinal activity through synaptic plasticity for connectivity refinement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C1 is a well-established background statement about developmental neuroscience, representing general knowledge in the field. It provides context for the study.",
+    "result_type": "MINOR"
+  }
+]

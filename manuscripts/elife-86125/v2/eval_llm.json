@@ -1,0 +1,340 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C128",
+      "C129"
+    ],
+    "result": "The study analyzed 24 PDAC patients who underwent surgical resection, divided into poor outcome (13 patients, died within 12 months) and good outcome (11 patients, survived \u226536 months) groups. Four-plex immunofluorescence staining was used to define tumor-proximal stroma, tumor-distal stroma, and immune-enriched regions, with 4 ROIs selected per domain per patient. Ninety-four RNA probes were applied to 12 ROIs per patient using the NanoString GeoMx DSP platform, generating 288 transcriptional datasets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C40, C128-C129 provide comprehensive methodological details including patient cohort characteristics, spatial profiling approach, and technical specifications. The study design is clearly described with appropriate controls (housekeeping and negative control genes) and sufficient sample size for spatial transcriptomics analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Hierarchical clustering and UMAP analysis successfully separated immune and stromal regions based on transcriptional profiles. Cell lineage markers confirmed appropriate localization of epithelial, fibroblast, and immune cells to their respective regions. Integration with scRNA-Seq data revealed that most stromal genes were expressed by fibroblasts, while CSF1R expression was derived from myeloid cells, CTNNB1 from endothelial cells, and KRT18 from epithelial cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C53 demonstrate successful spatial delineation of tissue regions using multiple analytical approaches (hierarchical clustering, UMAP, cell lineage markers). The integration with scRNA-Seq data (C50-C53) provides validation of cell-type-specific gene expression patterns. However, C45 notes that clinical outcome data did not cluster significantly in UMAP, which is appropriately reported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C54",
+      "C55",
+      "C56",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Tumor-proximal fibroblasts showed markedly increased expression of DKK3 and podoplanin (PDPN) compared to tumor-distal fibroblasts. Immunohistochemical staining confirmed extreme spatial polarization, with podoplanin expressed on stroma encasing tumor, DKK3 present in both tumor and tumor-proximal stroma, and C3 localized to distal stroma regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C6, C54-C56, C64-C67 provide converging evidence from spatial transcriptomics (NanoString) and immunohistochemistry validation. The spatial polarization of marker expression is demonstrated through multiple complementary approaches, with clear visual evidence in Figure 3.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Tumor-distal fibroblasts showed increased expression of C3, SFRP2, STAT3, IL-6, and THY1 compared to tumor-proximal regions. C3 and SFRP2 were particularly elevated, and C3 expression was localized to fibroblasts based on correlation with fibroblast (but not monocyte) marker genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C9, C58-C60 demonstrate distinct transcriptional profiles in tumor-distal fibroblasts. The localization of C3 to fibroblasts (C60) is supported by correlation analysis, though this is inferential rather than direct evidence. The findings are consistent with inflammatory CAF phenotypes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "scRNA-Seq analysis identified two fibroblast clusters (sc-proximal and sc-distal) with highly divergent transcriptional profiles (47 genes upregulated in distal, 36 in proximal). Sc-proximal fibroblasts expressed myofibroblast markers (MMP11, HOPX) and were enriched for cell division, chemotaxis, and Wnt ligand expression (WNT5A, WNT11, WNT2, WNT5B). Sc-distal fibroblasts expressed inflammatory CAF markers (CXCL12, CFD) and showed enrichment for ECM generation, complement activation, and retinoic acid metabolism pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C74 provide comprehensive characterization of fibroblast subpopulations using scRNA-Seq from three additional patients. The differential gene expression analysis is quantified (47 vs 36 genes), and pathway enrichment analysis reveals functionally distinct populations. The integration of spatial and single-cell data strengthens the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C75",
+      "C78",
+      "C79"
+    ],
+    "result": "Poor clinical outcome was associated with elevated expression of HIF-1\u03b1, podoplanin (PDPN), PDL1 (CD274), and VEGFA. In patients with poor outcome, PDPN was expressed broadly across the tumor microenvironment, while HIF-1\u03b1 and VEGF expression extended into distal stromal and immune regions, likely indicating more extensive hypoxia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C11, C75, C78-C79 identify prognostic markers associated with poor outcome. The spatial extension of HIF-1\u03b1 and VEGF expression (C79) provides additional prognostic information beyond expression levels alone. The interpretation of extensive hypoxia is reasonable but inferential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C76",
+      "C77",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Good clinical outcome was associated with expression of inflammatory and complement genes. Ten genes were upregulated in patients with survival beyond 3 years, characterized by immune activation markers including MHC class I and II, complement C3, chemokines CCL5 and CXCL9, integrin ITGB2, and STAT1. Good prognosis was associated with broad expression of immunostimulatory genes, while IL-11 and HLA-E were focused in distal stroma. C3 and NKG7 expression in immune regions was enhanced in good outcome patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C13, C76-C77, C80-C82 identify a comprehensive immune activation signature associated with favorable prognosis. The spatial distribution patterns (broad vs. focused expression) provide additional mechanistic insights. The findings are consistent with known roles of immune infiltration in cancer prognosis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C84",
+      "C89",
+      "C93",
+      "C94"
+    ],
+    "result": "Proximity to tumor strongly determined transcriptional activity of stromal cells. Tumor-proximal populations displayed myofibroblast features while distal populations had inflammatory profiles. Tumor-proximal fibroblasts were strong contributors to the Wnt ligand pool with high expression of WNT5A, WNT11, WNT2, WNT5, and WNT5B. Transcriptional regulation of cell division was increased in tumor-proximal fibroblasts, suggesting enhanced proliferation when locally exposed to tumor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84, C89, C93-C94 synthesize the major finding that spatial location relative to tumor is a key determinant of fibroblast phenotype. The findings are supported by both spatial transcriptomics and scRNA-Seq data, with citation support for the myofibroblast/inflammatory dichotomy (C89) and enhanced proliferation (C94).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "PDAC has poor clinical outcomes and poor long-term survival, with suboptimal responses to immunotherapy. While immunotherapy has transformed outcomes for many tumor types, its impact on PDAC has been disappointing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C14-C16 establish the clinical context for the study. These are well-established facts about PDAC supported by citation (C14) and general knowledge in the field. This provides appropriate motivation for the research.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C3",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "The PDAC microenvironment is characterized by abundant cancer-associated fibroblasts (CAFs) that are heterogeneous and play complex roles. CAFs can limit immune cell access, promote immunosuppression, and support tumor growth, but may also play protective roles. Transcriptional analyses have identified at least four CAF subsets with spatial organization (myofibroblasts proximal, inflammatory subsets distal) and associations with clinical outcome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C17-C32 provide comprehensive background on CAF biology in PDAC, supported by multiple citations. This establishes the rationale for spatial characterization of CAF subsets. The claims appropriately acknowledge both pro-tumorigenic and potentially protective CAF functions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C57",
+      "C85",
+      "C86",
+      "C87",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "DKK3 and PDPN are established markers of cancer-associated fibroblasts implicated in tumor growth support. PDPN expression is strongly enhanced on CAFs in PDAC, with high expression correlated with poor prognosis in some studies. Podoplanin-positive stromal cells enhance tumor cell invasion and proliferation, though downregulation of podoplanin alone does not reverse tumor-promoting effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57, C85-C87, C105-C107 provide literature context for the observed markers, supported by multiple citations. The acknowledgment that PDPN-prognosis associations are inconsistent across studies (C86) and that podoplanin downregulation is insufficient (C107) demonstrates appropriate nuance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C88"
+    ],
+    "result": "SFRP2 acts as a Wnt inhibitor. THY1 is commonly expressed on stem-like fibroblast populations. CD34 is a marker of stromal stem cells and was expressed in tumor-distal regions, potentially indicating spatial differentiation of stromal cells toward tumor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C63, C88 provide functional context for observed markers. C61 and C88 are established knowledge, C62 is citation-supported, and C63 reports the spatial expression pattern. The interpretation of spatial differentiation is speculative but reasonable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Myofibroblast markers included CXCL14 (a pro-tumorigenic chemokine) and WNT5A (which may contribute to adipocyte-to-CAF differentiation). Wnt ligand signaling plays a key role in PDAC progression and therapeutic resistance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C92 provide functional context for observed markers with citation support. C92 establishes the importance of Wnt signaling as established knowledge, while C90-C91 cite specific functions of identified markers.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "CAF populations expressing complement proteins have been observed in PDAC and overlap with inflammatory CAF profiles. Intracellular complement may impact immune surveillance. Vitamin A-containing lipid droplets are enriched in quiescent pancreatic stellate cells, and the increased retinoic acid signature in tumor-distal fibroblasts could indicate reduced activation. PDAC patients are often vitamin A deficient, and retinoic acid treatment can suppress stellate cell proliferation with reduced Wnt-\u03b2-catenin signaling. ATRA treatment is tolerable and under investigation in phase I trials.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C101 provide context for complement and retinoic acid findings with citation support. The interpretation that increased retinoic acid signature indicates reduced activation (C98) is inferential but reasonable given the cited evidence about quiescent stellate cells and vitamin A.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Distal fibroblast populations were enriched for genes associated with negative regulation of stem cell proliferation, potentially indicating a role in limiting tumor progression. CAF populations exhibit extreme plasticity, with IL-1 and TGF-\u03b2 emerging as important mediators of local phenotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C104 provide interpretation of pathway enrichment findings (C102) and context about CAF plasticity (C103-C104). C102 is appropriately speculative about functional implications. C103-C104 are citation-supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "HIF-1\u03b1 expression reflects the hypoxic PDAC environment and is an independent determinant of clinical outcome. Spatial extension of HIF-1\u03b1 into distal stroma and immune regions was an additional risk factor, indicating prognostic importance of hypoxia breadth. HIF-1\u03b1 expression is associated with glycolysis enrichment, mTORC1/MYC modulation, and immune suppression. HIF-1\u03b1 inhibitors offer therapeutic encouragement. Hypoxia likely explains increased VEGF in poor prognosis patients, though VEGF-targeted therapies have not shown significant utility in PDAC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C114 provide comprehensive context for HIF-1\u03b1 findings with citation support. C110 and C113 involve reasonable inferences from the data. C114 appropriately notes limited success of VEGF-targeted therapies while suggesting potential in multi-modal approaches.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "Increased immunoregulatory and immunostimulatory genes in good prognosis patients concur with studies showing lymphocytic infiltration as favorable. Elevated HLA class II expression in longer-term survivors may indicate an important role for antigen-presenting CAF populations. C3 expression was associated with good outcome, and in lung cancer, ApCAF benefit is mediated through complement proteins rescuing T cells from exhaustion. IL-11 expression in distal stroma was a positive prognostic sign. High NKG7 expression in immune regions was beneficial and is emerging as a predictive factor for checkpoint inhibitor response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C123 provide literature context for immune-related prognostic findings with extensive citation support. C117 appropriately notes the speculative nature of ApCAF involvement. The integration with lung cancer findings (C119) provides mechanistic context while acknowledging it's from a different tumor type.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "Immune checkpoint inhibition has been largely unsuccessful for PDAC patients, but there is latent immunogenicity within the PDAC microenvironment. Agonistic anti-CD40 antibodies have shown promise in clinical studies. Successful PDAC therapy may require multi-modal approaches such as HIF inhibition with immune checkpoint blockade or personalized vaccine regimens.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124-C127 provide therapeutic context and future directions. C124 is established knowledge, C125 is a reasonable inference from the immune activation findings, C126 is citation-supported, and C127 is appropriately speculative about future therapeutic strategies with citation support.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C83"
+    ],
+    "result": "NKG7 is a regulator of cytotoxic granule release.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C83 provides functional context for NKG7 findings, supported by citation to Ng et al., 2020. This is established knowledge appropriately cited.",
+    "result_type": "MINOR"
+  }
+]

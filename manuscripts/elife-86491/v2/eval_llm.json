@@ -1,0 +1,266 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C5",
+      "C6",
+      "C7",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C62",
+      "C74"
+    ],
+    "result": "The authors developed a Bayesian inference algorithm that tracks choice strategy probabilities at trial resolution by using Beta-binomial conjugate priors with exponential evidence decay (\u03b3=0.9) to handle non-stationary behavior, requiring only elementary arithmetic for updates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C29-C37 establish the mathematical foundation using standard Bayesian conjugate priors (well-established theory). Claims C33-C35 identify the non-stationarity problem and propose evidence decay as the solution. The computational efficiency (C5, C74) follows directly from the Beta-binomial conjugate prior property. The choice of \u03b3=0.9 (C7) is justified through simulations in Figure 2.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C38",
+      "C43",
+      "C63",
+      "C64"
+    ],
+    "result": "Validation with synthetic agents demonstrated that standard Bayesian inference (\u03b3=1) fails to detect strategy switches, while evidence decay with \u03b3\u22640.9 detects switches within 10 trials and tracks the correct strategy in >88% of trials, with robust performance across a range of \u03b3 values.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C11 are directly supported by Figure 2e showing quantitative performance metrics. Claims C38, C63-C64 demonstrate the necessity and robustness of evidence decay through extensive simulations (Figure 2 and supplements). The trade-off between detection speed and stability is well-characterized (C43, Figure 2\u2014figure supplements 2-4).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C48",
+      "C80",
+      "C86"
+    ],
+    "result": "The strategy-based learning criterion identified learning earlier than classical trial-counting criteria in both Y-maze and lever-press tasks, detecting learning 30\u00b15.8 trials earlier on average for the first rule in the lever-press task, and confirmed that spatial-to-cued rule switches are harder than cued-to-spatial switches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C13 provide specific quantitative comparisons shown in Figure 3c and 3f. The finding about asymmetric difficulty (C48) is supported across multiple learning criteria (Figure 3 and Figure 3\u2014figure supplement 1) and is consistent with prior literature (C49, Mackintosh 1969). Sample sizes are clearly stated (C86: N=28 rats).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C14",
+      "C15"
+    ],
+    "result": "Rats showed asymmetric behavioral flexibility to rule changes: they persisted in using spatial strategies long after switches to cue-based rules, but rapidly adopted spatial strategies after switches from cue-based to spatial rules.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C15 are directly demonstrated in Figure 4a-b comparing the two types of rule switches across both Y-maze and lever-press tasks. The trial-resolution tracking allows clear visualization of the different time courses. Individual variability is also quantified (Figure 4c-d).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C3",
+      "C16",
+      "C17",
+      "C18",
+      "C24",
+      "C45",
+      "C46"
+    ],
+    "result": "Win-stay and lose-shift exploratory strategies are used independently during learning and rule changes, with lose-shift declining rapidly after rule switches as animals persevere with the old rule, while win-stay changes follow different dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C18 are supported by Figure 5 showing independent temporal dynamics of win-stay and lose-shift around learning and rule changes. Claim C45 provides specific evidence from lever-press task (Figure 5b,c,e,f). The independence challenges prior assumptions (C24) and is consistent with independent feedback processing (C46). The data show neither strategy was at floor/ceiling, ruling out update constraints.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C4",
+      "C25",
+      "C44"
+    ],
+    "result": "Elevated lose-shift probabilities before identified learning trials provide evidence of latent learning, indicating subjects have learned salient features of the new rule before overt choice behavior demonstrates learning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C25, C44 are supported by Figure 5a,d showing elevated lose-shift matching the target rule before learning trials identified by both classical and strategy criteria. The bottom panels of Figure 5a,d confirm animals were still making errors, so the elevated lose-shift represents genuine strategic exploration rather than ceiling performance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C47"
+    ],
+    "result": "Learning what not to do (via lose-shift) is easier than learning what to do (via win-stay).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C47 is an inference from the earlier appearance of lose-shift compared to win-stay during learning. However, this interpretation is not directly tested and could have alternative explanations (e.g., different learning rates for positive vs. negative feedback, or different sensitivity to the two types of information). The claim requires additional experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "In a human gain/loss task with only 30 trials per condition, most participants (13/20) learned to choose the gain stimulus using stimulus-driven win-stay and lose-shift strategies, but few (5/20) learned to avoid the loss stimulus, with loss trials showing only location-driven exploration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C21 are supported by Figure 6d-f showing learning proportions and strategy probabilities. The task design is clearly described (C87-C90). The algorithm successfully tracks strategies with few trials, demonstrating its utility. However, the conclusion that no participants truly learned avoid-loss (discussed in text) suggests the 5/20 may reflect location bias rather than genuine learning.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "In a non-human primate performing a stochastic stimulus-action task, the algorithm confirmed learning occurred before the 80% criterion was reached, and revealed that both repeating and switching strategies were dominated by reward probability rather than obtained reward value.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C22 is supported by Figure 7c showing strategy probability became dominant before criterion. Claim C23 is supported by Figure 7e,g comparing probability-based vs. value-based strategies. However, only a single session from one monkey was analyzed (C93), which is insufficient for drawing general conclusions about primate decision-making. Replication across multiple sessions and animals is needed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "The current approach is complementary to recent methods by Pillow and colleagues (PsyTrack, Ashwood et al.): it focuses on learning and rule switches with online capability and rapid inference, while lacking models of strategy transitions, whereas their methods apply to well-learned behavior with post-hoc fitting but cannot infer when learning occurs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C57 provide a fair comparison with cited work. The characterization of prior methods (C52-C54) accurately represents the cited papers. The advantages (C55) and limitations (C56) of the current approach are honestly stated. The complementarity conclusion (C57) is reasonable given the different design goals and capabilities.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C75"
+    ],
+    "result": "The approach is extensible to various strategy types (n-back, economic games, multi-choice tasks) and applications (real-time analysis, closed-loop control), with open-source toolboxes provided in MATLAB and Python.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The extensibility claims (C70-C73) are supported by the algorithm's general design requiring only binary success/failure per strategy. The variety of tasks analyzed (rats, humans, monkeys; spatial, cued, probabilistic) demonstrates flexibility. Code availability (C28) is explicitly stated. The potential for real-time use (C75) follows from computational efficiency, though actual closed-loop implementation is not demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "The algorithm's MAP probability estimates and inferred strategy changes are robust to the choice of prior distribution (uniform vs. Jeffrey's), and while scalar summaries (MAP and precision) were used for visualization, the full posterior distribution is calculated for each trial.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C39 is demonstrated in Figure 1\u2014figure supplement 2 showing minimal differences between priors. Claims C40-C41 explain methodological choices and acknowledge that richer analyses using the full posterior are possible. This is appropriate transparency about design decisions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "The algorithm's probabilities describe the observer's inference about behavior, not the animal's internal computations, though the approach could enable future investigations of behavioral optimality and neural correlates of strategy use.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C59 appropriately clarify the interpretation of the algorithm's output and what it does not imply about animal cognition, citing relevant literature. Claims C60-C61 suggest reasonable future applications without overstating current capabilities. This represents appropriate scientific caution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "The evidence decay parameter \u03b3 makes explicit an inevitable free parameter (time window) that exists implicitly in all frequentist approaches to strategy analysis, with strong bounds placed on \u03b3 through characterization of the speed-stability trade-off.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C66 correctly identifies that frequentist approaches also have time-window parameters. Claim C67 argues that \u03b3 makes this explicit and bounded, which is supported by the extensive characterization in Figure 2 and supplements. This is a reasonable defense against the criticism of introducing a free parameter.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C2",
+      "C8",
+      "C9",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "The approach was validated across multiple species and task types: Y-maze task (4 rats, 50 sessions, 4 sequential rules), lever-press task (28 rats, 2 rules), human gain/loss task (20 participants), and non-human primate stimulus-action task (1 monkey, 1 session).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C8-C9, C76-C85 describe the experimental datasets used. The Y-maze data (C76-C80) comes from a published study. The lever-press task (C81-C86) is clearly described with appropriate sample sizes. The diversity of tasks and species demonstrates broad applicability, though the primate data is limited (C93).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C69"
+    ],
+    "result": "The choice of which strategies to examine is flexible and depends on the user's research questions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C69 is supported by the variety of strategy models defined in Tables 1-3 and the different strategies examined across tasks. This flexibility is a strength of the approach, though it also means users must make informed choices about which strategies to test.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,2304 @@
+{
+  "submission": {
+    "id": "a8244d00-90c9-4a53-9a7b-f09f9cbfc063",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-04T04:56:55.873300Z",
+    "updated_at": "2025-12-04T04:56:55.873300Z"
+  },
+  "content": [
+    {
+      "id": "0812d1a0-2ebd-43c9-af8e-d31cb09701b9",
+      "submission_id": "a8244d00-90c9-4a53-9a7b-f09f9cbfc063",
+      "content_type": "manuscript",
+      "content_text": "# Lost in translation: Inconvenient truths on the utility of mouse models in Alzheimer\u2019s disease research\n\n## Authors\n\n- Alberto Granzotto<sup>1</sup> ([ORCID: 0000-0001-9181-4373](https://orcid.org/0000-0001-9181-4373)) \u2020\n- Bryce Vissel<sup>3</sup>\n- Stefano L Sensi<sup>1</sup>\n\n### Affiliations\n\n1. Center for Advanced Studies and Technology \u2013 CAST, University G. d\u2019Annunzio of Chieti-Pescara Chieti Italy ([ROR:00qjgza05](https://ror.org/00qjgza05))\n2. Department of Neuroscience, Imaging, and Clinical Sciences, University G. d\u2019Annunzio of Chieti-Pescara Chieti Italy ([ROR:00qjgza05](https://ror.org/00qjgza05))\n3. St Vincent\u2019s Hospital Centre for Applied Medical Research, St Vincent\u2019s Hospital Darlinghurst Australia ([ROR:001kjn539](https://ror.org/001kjn539))\n4. School of Clinical Medicine, UNSW Medicine & Health, St Vincent's Healthcare Clinical Campus, Faculty of Medicine and Health, UNSW Sydney Sydney Australia ([ROR:03r8z3t63](https://ror.org/03r8z3t63))\n5. Institute for Advanced Biomedical Technologies \u2013 ITAB, University G. d\u2019Annunzio of Chieti-Pescara Chieti Italy ([ROR:00qjgza05](https://ror.org/00qjgza05))\n6. Institute of Neurology, SS Annunziata University Hospital, University G. d\u2019Annunzio of Chieti-Pescara Chieti Italy ([ROR:00qjgza05](https://ror.org/00qjgza05))\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe recent, controversial approval of antibody-based treatments for Alzheimer\u2019s disease (AD) is fueling a heated debate on the molecular determinants of this condition. The discussion should also incorporate a critical revision of the limitations of preclinical mouse models in advancing our understanding of AD. We critically discuss the limitations of animal models, stressing the need for careful consideration of how experiments are designed and results interpreted. We identify the shortcomings of AD models to recapitulate the complexity of the human disease. We dissect these issues at the quantitative, qualitative, temporal, and context-dependent levels. We argue that these models are based on the oversimplistic assumptions proposed by the amyloid cascade hypothesis (ACH) of AD and fail to account for the multifactorial nature of the condition. By shedding light on the constraints of current experimental tools, this review aims to foster the development and implementation of more clinically relevant tools. While we do not rule out a role for preclinical models, we call for alternative approaches to be explored and, most importantly, for a re-evaluation of the ACH.\n\n## Introduction\n\nThe accumulating failures of so many AD clinical trials, along with the recent, highly controversial Food and Drug Administration (FDA) approval of monoclonal antibodies \u2013 that at best show limited clinical benefits (H\u00f8ilund-Carlsen et al., 2024; Kepp et al., 2023a) \u2013 provide reason to reconsider the molecular determinants of AD and the ACH, in particular.\n\nIn its original formulation, the ACH identifies the dysmetabolism of \u03b2-amyloid (A\u03b2) and its parenchymal deposition into senile plaques as the primary driver of a pathogenic, although still unclear, series of molecular events leading to the formation of hyperphosphorylated tau inclusions and, eventually, neuronal death (Hardy and Higgins, 1992). The non-linear association between A\u03b2 plaques and cognitive deficits has led to revisions of the ACH, including the suggestion that soluble, low-molecular-weight A\u03b2 oligomers \u2013 rather than plaques \u2013 are the primary neurotoxic species (Cline et al., 2018; Lambert et al., 1998), although this too remains highly controversial (Morris et al., 2018; Morris et al., 2014). The ACH is also at the foundation of the current \u2018ATN research framework\u2019 for AD. The ATN is designed to provide a structured and unbiased categorization of the AD continuum and is based upon biological/molecular changes identified by post-mortem examination or by biomarkers (i.e. amyloid \u2013 \u2018A,\u2019 tau \u2013 \u2018T,\u2019 and neurodegeneration \u2013 \u2018N\u2019 Jack et al., 2018). There continue to be good reasons to consider that the ATN construct offers a suboptimal and incomplete heuristic value (Morris et al., 2018).\n\nWhile few scientists rule out any role of amyloid in the disease, there is growing skepticism around the sole centrality of A\u03b2 in AD. Novel hypotheses are reconsidering the construct in the light of mounting discrepancies with recent clinical, epidemiological, and pharmacological findings (Granzotto and Sensi, 2024; Herrup, 2022; Herrup, 2015; Kepp et al., 2023a; Kepp et al., 2023b; Kurkinen, 2023; Liu et al., 2023; Morris et al., 2018; Morris et al., 2014). These discrepancies include but are not limited to, the large proportion of cognitively unimpaired elderly who have amyloid pathology, the long-known evidence for the contribution of mixed neuropathology in AD cases, and the modest benefits offered by A\u03b2-lowering antibodies [reviewed in H\u00f8ilund-Carlsen et al., 2023, Granzotto and Sensi, 2024, and Guo et al., 2024]. In this context, two prominent studies investigating the effect of A\u03b2 passive immunotherapy in cognitively unimpaired subjects at risk of developing AD challenged the validity of the ACH. The Alzheimer\u2019s prevention initiative (API) Colombia study enrolled carriers of a mutation (PSEN E280A), conferring a particular risk of developing AD (Alzforum, 2022). The Anti-Amyloid Treatment in Asymptomatic Alzheimer\u2019s Disease (A4) study enrolled subjects with elevated brain levels of A\u03b2 as assessed by Amyloid PET imaging (Sperling et al., 2023). Both trials were unsuccessful, joining the long list of A\u03b2-targeting interventions that failed to produce clinically relevant benefits (Panza et al., 2019). As always, the amyloid proponents suggest it is not due to fallacies in the ACH and suggest other reasons for these trials' failure. However, these protestations are increasingly debated. Recently, Frisoni et al. attempted to reconcile the inconsistencies and proposed a more sophisticated view of the ACH that includes the contribution of stochastic elements to AD etiology, like environmental/modifiable factors and low-risk genes (Frisoni et al., 2022). However, the revised version still maintains a central role for amyloid in the disease. We do not exclude a role for amyloid. However, all current evidence points to an urgent need to begin revisiting the model, allowing for the likely molecular and cellular mechanisms, driven by a complex range of factors that ultimately generate Alzheimer\u2019s dementia.\n\nThe above concerns call for an urgent revaluation of the ACH and the development of new hypotheses. The reappraisal of the ACH should also encompass a re-evaluation of the preclinical models designed to recapitulate the AD phenotype and frequently employed as tools for early safety/efficacy testing of drug candidates and for the identification of novel, druggable targets (Ganesan et al., 2024; LaFerla and Green, 2012; Scearce-Levie et al., 2020). Transgenic mammals, particularly mice, are the organisms of choice for investigating AD-related mechanisms in a complex in vivo setting. AD is also modeled on invertebrates, like Drosophila melanogaster and Caenorhabditis elegans. However, the phylogenetic distance from mammals of these systems limits their relevance and overall implications for the dementia field (Elder et al., 2010).\n\nSo far, more than 210 rodent models have been generated to recapitulate AD\u2019s clinical features in research laboratories. Extensive, ongoing efforts have been and are made to engineer and characterize animal models to dissect the molecular mechanisms of the disease (Alzforum, 2023a). Unfortunately, the translational outcomes of these endeavors have, to date, been poor. We suggest that part of the reason is likely because of technical and biological limitations and, in some cases, conceptual flaws.\n\nDifferences in genetic background, transgenes, breeding and handling strategies, housing conditions, protocols for quantifying phenotypic traits, and endless additional variables make it challenging, if not impossible, to frame the information generated through these models within a consistent and comprehensive picture. Some of these issues have been discussed elsewhere (Errington, 2024; Mullane and Williams, 2019; Padmanabhan and G\u00f6tz, 2023; Reynolds, 2022). Here, we will focus on the transgenic mouse models' shortcomings in terms of why they offer limited support for the ACH and why their use as preclinical models needs to be taken with caution (Table 1).\n\n**Table 1.**\n Most common first- and second-generation transgenic models of Alzheimer\u2019s disease (AD).\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>Mouse line</th>\n      <th>Transgene(s)</th>\n      <th>Ref(s)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td rowspan=\"5\">First-generationAPP transgenic mice</td>\n      <td>PDAPP</td>\n      <td>APP V717F (Indiana)</td>\n      <td>Games et al., 1995; Rockenstein et al., 1995</td>\n    </tr>\n    <tr>\n      <td>Tg2576</td>\n      <td>APP K670N, M671L (Swedish)</td>\n      <td>Hsiao et al., 1996</td>\n    </tr>\n    <tr>\n      <td>APP23</td>\n      <td>APP K670N, M671L (Swedish)</td>\n      <td>Kelly et al., 2003; Van Dam et al., 2003</td>\n    </tr>\n    <tr>\n      <td>J20</td>\n      <td>APP K670N, M671L (Swedish), V717F (Indiana)</td>\n      <td>Mucke et al., 2000</td>\n    </tr>\n    <tr>\n      <td>TgCRND8</td>\n      <td>APP K670N, M671L (Swedish), V717F (Indiana)</td>\n      <td>Chishti et al., 2001</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">APP and PSEN transgenic mice</td>\n      <td>APPPS1</td>\n      <td>APP K670N, M671L (Swedish);PSEN1 L166P</td>\n      <td>Radde et al., 2006</td>\n    </tr>\n    <tr>\n      <td>5xFAD</td>\n      <td>APP K670N, M671L (Swedish), I716V (Florida), and V717I (London);PSEN1 M146L and L286V</td>\n      <td>Oakley et al., 2006; Tang et al., 2016</td>\n    </tr>\n    <tr>\n      <td rowspan=\"4\">Second-generation knock-in APP transgenic mice</td>\n      <td>App knock-in (humanized A\u03b2)</td>\n      <td>App G676R, F681Y, R684H (humanized A\u03b2)</td>\n      <td>Serneels et al., 2020</td>\n    </tr>\n    <tr>\n      <td>APPNL-F</td>\n      <td>Humanized A\u03b2+APP K670N, M671L (Swedish), I716F (Iberian)</td>\n      <td rowspan=\"2\">Saito et al., 2014</td>\n    </tr>\n    <tr>\n      <td>APPNL-G-F</td>\n      <td>Humanized A\u03b2+APP K670N, M671L (Swedish), I716F (Iberian), E693G (Arctic)</td>\n    </tr>\n    <tr>\n      <td>APPSAA</td>\n      <td>Humanized A\u03b2+APP K670N, M671L (Swedish), E693G (Arctic), T714I (Austrian)</td>\n      <td>Xia et al., 2022</td>\n    </tr>\n  </tbody>\n</table>\n\nIn the following sections, we will summarize the limitations in the preclinical modeling of AD that are sketched \u2013 in broad brush strokes \u2013 at the qualitative, quantitative, temporal, and context-dependent levels. However, we also discuss the opportunities offered by mouse models for addressing some still unresolved scientific questions.\n\n### Qualitative\n\n#### Mice with APP and PSEN mutations\n\nMost preclinical studies employ transgenic rodent models that, to different degrees, express human genes whose mutations are associated with the familial form of AD (fAD). Mutations in PSEN1 [encoding presenilin 1 (PSEN1)], PSEN2 [encoding presenilin 2 (PSEN2)], and/or APP [encoding amyloid precursor protein (APP)] affect APP processing and are causally implicated in the development of autosomal dominant AD (Figure 1). In many cases, to drive any phenotype, the mice express more than one of such mutations. However, the very low prevalence of fAD \u2013 less than 1% of total cases (Pavisic et al., 2020) \u2013 makes the findings obtained in these models impossible to generalize to the broad spectrum of sporadic AD cases (sAD), causing misleading overinterpretation of the results.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/90633/elife-90633-fig1-v2.jpg)\n\n**Figure 1.:** The scheme reports the pillars of the amyloid cascade hypothesis (ACH) left; modified from Karran et al., 2011. For each step, we aimed at identifying key limitations in the preclinical modeling of the cascade. We envision that these pitfalls, along with discrepancies of the amyloid construct cascade itself, critically dampen the potential translational value of these models.\n\nLong-term monitoring of neuropathological and functional changes in these models reveals a composite scenario that often conflicts with the clinical features of sporadic sAD (Drummond and Wisniewski, 2017). Two common issues with fAD models that contrast with the clinical manifestations of human disease are the absence of tau pathology and brain atrophy. Most models do not show neurodegeneration. When neurodegeneration does occur, modest neuronal loss is observed, and it is usually confined to discrete brain regions (e.g. a single layer of the cortex or hippocampal subfields) and even then, only in a small fraction of amyloid-dependent models of AD. Of note, these minor signs of neurodegeneration are primarily described in transgenic mice in which APP mutations occur in the presence of PSEN1 mutations, thereby raising questions on the specific contribution of A\u03b2 versus the role of PSEN1 in causing the pathological phenotype. Indeed, early studies pinpoint PSEN mutations in the mouse models as the likely primary drivers of features of AD-related neuronal dysfunction, like dysregulation of calcium (Ca2+) signaling, metal ion dyshomeostasis, synaptic dysfunction, impaired adult neurogenesis, and increased neuronal vulnerability to cytotoxic stimuli (Al Rahim et al., 2020; Corona et al., 2011; Duff et al., 1996; Hernandez-Sapiens et al., 2022; Mattson et al., 2000; Stutzmann et al., 2006; Stutzmann et al., 2004). Although not systematically studied, the effect of PSEN1 in animal models seems to occur in an A\u03b2-pathology independent fashion, as mice harboring APP and PSEN1 fAD mutations lose their phenotype upon removal of the PSEN1 mutation. Conversely, single Psen1 KI mutants continued to display functional alterations (Bomba et al., 2013; Stutzmann et al., 2006). Overall, this evidence suggests a critical role for PSEN in neurological function, a construct that has been conceptualized in the \u2018presenilin hypothesis of AD\u2019 (Shen and Kelleher, 2007; Yan et al., 2024). The construct identifies PSEN mutations and/or impaired PSEN functioning as the primary contributor to neurodegeneration in fAD. Importantly, the presenilin hypothesis offers an alternative view of fAD pathogenesis (Kelleher and Shen, 2017) as, contrary to the ACH, it points to the accumulation of A\u03b2 as the byproduct of a faulty enzymatic activity and not as the trigger of AD per se. Notably, systematic analysis of fAD-causing PSEN1 mutations has shown that in 75% of the dementia cases, the mutations led to decreased production of A\u03b2 fragments (Sun et al., 2017), supporting the notion that amyloid is not the disease driver. Conversely, it is not out of the question that human AD-causing mutations in APP contribute to AD via an effect on presenilin function. Thus, if the mouse models harboring PSEN (or PSEN + APP) mutations offer value, they may be a model of the presenilin hypothesis rather than a model of the ACH.\n\nThe idea that PSEN dysfunction \u2013 rather than A\u03b2 \u2013 is central to AD development is further supported by the clinical failures of \u03b3-secretase inhibitors. \u03b3-secretase comprises several subunits, including PSEN, and \u2013 beyond the cleavage of APP \u2013 the enzyme has numerous roles in the central nervous system (CNS). Unsurprisingly, \u03b3-secretase inhibitors, developed to limit APP cleavage and amyloid production, have been consistently found to worsen cognition in clinical trials (Coric et al., 2015; Doody et al., 2013). The effect was likely attributed to the inhibition of PSENs activity and its negative downstream impact on multiple signaling pathways, like Notch signaling (Hur, 2022).\n\nThe topological distribution and the mechanisms of \u2013 albeit modest \u2013 neuronal loss of these fAD models offer additional inconsistencies with the ACH (Jankowsky and Zheng, 2017). In these transgenic mice, neuronal demise, when present, often occurs in the form of necrotic cell death near senile plaques, a finding more in line with \u2018mechanical\u2019 disruption of neuronal integrity rather than the result of a chronic, staged, and regulated process of neuronal dysfunction (Tanaka et al., 2020). There are, of course, a few exceptions, such as the J20 model (Wright et al., 2013).\n\nTo circumvent the drawbacks posed by the first-generation overexpressing models, researchers have developed second-generation knock-in transgenic mice in which the App gene is humanized with the addition of fAD mutations. These models exhibit alterations of A\u03b2 metabolism that precede subtle cognitive deficits, A\u03b242 overproduction, increased A\u03b242/A\u03b240 ratio, and neuroinflammation without the pitfalls associated with APP overexpression. Although the approach bypasses the limitations posed by first-generation mice, critical drawbacks and divergence with clinical observations remain. For instance, to produce A\u03b2 neuropathology, knock-in models require the presence of multiple APP mutations not found in humans. The AppNL mice, a model that carries only the \u2018pathogenic\u2019 Swedish mutation, failed to develop amyloid pathology up to 22 months of age (Saito et al., 2014). Surprisingly, AppNL mice are proposed as a negative control for the multiple App knock-in strains (Alzforum, 2023b; Saito et al., 2014). Notably, assessment of synaptic functioning in App knock-in mice revealed only presynaptic alterations and not the postsynaptic alterations seen in humans. This suggests again that other factors like presenilins or gross inflammation, rather than a direct action of A\u03b2 per se, may cause human post-synaptic dysfunction and neuronal loss (Benitez et al., 2021). Similarly, the novel App knock-in mouse model AppSAA harbors multiple disease-causing mutations (Swedish, Arctic, and Austrian) to promote A\u03b2 pathology. Surprisingly, and in contrast to AD patients, AppSAA mice exhibit increased brain metabolism (measured by FDG-PET) as A\u03b2 pathology progresses (Xia et al., 2022). Like the first-generation models, knock-in mice do not develop tau pathology nor generate overt signs of neurodegeneration.\n\n#### Mice with tau mutations\n\nSeveral mouse lines have been engineered to mimic the inclusions of hyperphosphorylated tau observed in AD patients, which may potentially overcome the lack of tau pathology of APP strains. Tau pathology is considered an accurate correlate of AD-related neurodegeneration, as the extent and topological distribution of tau accumulation mirrors the disease\u2019s clinical course more faithfully than other biomarkers (Knopman et al., 2021). While they are often considered models of AD, most tau models overexpress the human MAPT gene, harboring mutations absent in AD cases but associated with frontotemporal lobar degeneration (FTLD). Unlike APP models, these mice better phenocopy some of the clinical features of AD, like neurofibrillary tangles (NFT) inclusions, neurodegeneration, and cognitive deficits. However, the strong genetic drive required to display an overt tau pathology raises questions on the generalizability of the findings when applied to sporadic forms of tauopathies, including AD.\n\nAn additional caveat is that tau isoforms differ between humans and mice. In humans, alternative splicing of the MAPT gene gives rise to six tau isoforms characterized by differences in length, N-terminal sequences, and the presence of three- (3 R) or four- (4 R) repeated microtubule-binding sequences (Hern\u00e1ndez et al., 2020). Compared to the human homolog, murine tau differs in terms of the number of repeats (tau 3 R is absent in adult mice) as well as in the sequence of the N-terminal domain (11 amino acids shorter in mice) (Hern\u00e1ndez et al., 2020). These features might be critical for shaping the physiological and pathological properties of the protein. For instance, the N-terminal domain is relevant for the tau-driven modulation of proteins involved in neuronal functioning (i.e. NMDA receptors Miyamoto et al., 2017, Synapsin-1, and Synaptotagmin-1, among others Hern\u00e1ndez et al., 2020; Stefanoska et al., 2018). Changes in the ratio between 3 R and 4 R isoforms are also different from what is found in neurodegenerative tauopathies, including AD (Bowles et al., 2022; Cherry et al., 2021; Ginsberg et al., 2006). Therefore, substantial over-expression of the human form of tau in mice, an experimental setting in which tau and its binding partners are profoundly different, may result in potential artifacts and findings with poor translational value. Notably, recent findings concerning immune-mediated neurodegeneration in animal models suggest new mechanisms of degeneration in human tauopathies (Chen et al., 2023). If the evidence continues to stack up, immune dysfunction in the tau mice may become a model of disease, at the very least for tauopathy, and could be worth pursuing.\n\n#### Mice with multiple transgenes\n\nAge-dependent A\u03b2 accumulation is common to many non-human species (i.e. non-human primates, dogs, sheep). However, whether this impacts animal cognition remains unclear, with the neuropathological features of AD mostly a matter for human beings. No other non-human animal \u2013 except possibly the Octodon degus (Steffen et al., 2016) \u2013 displays the coexistence of A\u03b2 pathology, NFT inclusions, glucose dysmetabolism, and neurodegeneration (Walker and Jucker, 2017). To generate a more robust phenotype, transgenic models harboring mutations on the APP and/or PSEN and the MAPT gene have been developed, like the 3xTg-AD or the TauPS2APP (Grueninger et al., 2010; Oddo et al., 2003). These examples indicate that extreme measures are required to generate models encompassing some of the critical features of AD. This is in stark contrast to humans, where the vast majority of AD cases occur without these gene mutations.\n\nThe failure of APP mutants to recapitulate disease without human tau mutations may, at the very least, point to the possible importance of crosstalk between A\u03b2 and tau. Mapt knock-out mice crossbred with APP transgenic models show reduced neuronal deficits and improved memory performance compared to mice harboring the wild-type Mapt gene. These results suggest that tau confers toxicity to A\u03b2 and not vice versa (Roberson et al., 2007; Ittner et al., 2010; Sasaguri et al., 2017). In addition, recently generated double knock-in mice harboring all six human MAPT isoforms and the humanized AppNL-F gene have been characterized. Notably, the humanization of the murine tau gene was found sufficient to accelerate the propagation of pathological tau independently of the presence of A\u03b2 (Saito et al., 2019). These observations suggest that tau in fact may sit above A\u03b2 in the cascade of events leading to AD.\n\n### Quantitative\n\nIn vitro and in vivo studies are primarily performed in settings in which A\u03b2 concentrations are several orders of magnitude above the physiological range (Figure 1). In vitro evidence, designed to demonstrate the neurotoxic properties of synthetic A\u03b2 adducts \u2013 in their different lengths and flavors \u2013, was based on cultured neurons exposed to nanomolar concentrations of low-molecular-weight oligomeric forms of the peptide. These levels are a thousand-fold higher than the concentration found in vivo, usually in the picomolar range (Kepp et al., 2023a). The physiological relevance of such high A\u03b2 concentrations is dubious. Mounting evidence suggests that physiological A\u03b2 levels exert neurotrophic-like effects on synaptogenesis, neuronal survival, growth, and differentiation (Giuffrida et al., 2009; Yankner et al., 1990; Zhou et al., 2022). This dichotomic behavior (where low concentrations have opposite effects than high concentrations) is common to many molecules, like for instance, neurotrophins where the balance between proBDNF and mature BDNF levels acts on the opposite side of the neurodegenerative-plasticity spectrum (Brem and Sensi, 2018).\n\nA further, often neglected issue of in vitro and in vivo studies using A\u03b2 oligomers is the lack of control over the aggregation state of A\u03b2. The in vitro and in vivo extracellular milieu contains variable amounts of molecules and ions that are known to affect A\u03b2 conformation (i.e., proteins, oxidizing and reducing agents, metal ions, and cell released A\u03b2 cleaving enzymes). Finally, two independent studies reported that A\u03b2 dimers \u2013 long considered central species in amyloid-driven toxicity \u2013 may be artifacts driven by SDS-based sample processing (Pujol-Pina et al., 2015; Watt et al., 2013).\n\nOther quantitative pitfalls are associated with in vivo genetic models of AD. Three key aminoacid substitutions make murine A\u03b2 less prone to aggregation when compared to its human counterpart. To overcome this issue, first-generation transgenic models overexpressed variable copy numbers of the APP gene harboring different AD-related mutations (Figure 1). The approach successfully generated A\u03b2-enriched plaques in the brain of the transgenic models. Yet, several limitations and questions of the relevance to human AD remain:\n\nAs above, the transgenic animal models drive very high levels of APP production, with the effect that high concentrations of A\u03b2 are generated. Other approaches involve the injection of A\u03b2 oligomers directly into the rodent brain. Both strategies can model some of the key effects of the disease, such as synapse loss. However, it is also likely that the high, unnatural monomer or oligomer concentrations drive additional responses, such as activation of inflammatory responses that per se produce damage in an amyloid-independent fashion.\n\n\u2018Quantitative\u2019 concerns also apply to tau models of AD. Although high levels of total tau have been reported in AD patients, there is no consensus that tau overexpression occurs in AD (Hier et al., 2022). The PS19 and the rTg4510 are two of the most widely used models of tau pathology for AD. They harbor the human 4 R tau with the P301S and the P301L mutation, respectively. However, these models generate expression levels that are 5- (for PS19) to 13-fold (for rTg4510) higher than the endogenous murine tau (Jankowsky and Zheng, 2017). The results are early signs of tau hyperphosphorylation, NFTs formation, neurodegeneration, overt cognitive and motor deficits, and early lethality (Lewis et al., 2000). Similar traits, however, have been reported in mice overexpressing wild-type murine tau. These findings thereby indicate that, in mice, tau overexpression is sufficient to promote neurotoxicity independently of the tau genotype (Adams et al., 2009).\n\n#### Temporal\n\nDespite decades of research efforts, aging remains the primary risk factor for AD (Herrup, 2010; Mattson and Arumugam, 2018). Aging offers the ideal battleground where multiple molecular determinants could wreak havoc in the brain. This aspect has not been adequately considered as a cofactor in the preclinical modeling of the disease or the critical interpretation of the results (Padmanabhan and G\u00f6tz, 2023). The time-dependent loss of physiological fitness impinges on many of the very same mechanisms linked to AD pathogenesis, like oxidative stress, mitochondrial dysfunction, impaired DNA repair, altered cellular metabolism, ion dyshomeostasis, aberrant neuronal network functioning, neuroinflammation, vascular disease, senescence, and stem cell exhaustion (L\u00f3pez-Ot\u00edn et al., 2013; Mattson and Arumugam, 2018). The gist is: is the dysregulation of A\u03b2 and tau that accelerates cellular demise during aging, or is a yet unidentified perturbation of the trajectory of physiological aging that results in the accumulation of misfolded proteins as a byproduct?\n\nThe early and aggressive presentation of amyloid- and tau-pathology observed in preclinical models of AD does not help to resolve this critical issue (Figure 2). Commonly used AD mouse models, like the 5xFAD, display amyloid deposits starting at 2\u20134 months of age (Oblak et al., 2021). The J20 mice develop amyloid pathology a bit later, following the onset of inflammation; however, this still occurs at a relatively young age (Wright et al., 2013). With all due limitations, this early accumulation can be translated to A\u03b2 deposits occurring in 4\u20138 year-old humans, a scenario not found even in the most aggressive cases of fAD, let alone sAD. It is also worth noting that even fAD cases require decades for the disease to take hold, usually when carriers of APP or PSEN mutations are in their 40 s or 50 s (Frisoni et al., 2022). These observations suggest that (1) the human brain can cope for decades with the genetically driven accumulation of A\u03b2 and/or that (2) additional age-related factors are required for disease onset. However, we acknowledge the argument that the purpose of the animal models is to accelerate pathology to study the disease, thereby requiring an aggressive phenotype to attempt to model human AD.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/90633/elife-90633-fig2-v2.jpg)\n\n**Figure 2.:** (A) The pictogram illustrates the dynamics of \u03b2-amyloid (A\u03b2) (red) and tau (blue) pathology as well as the trajectory of cognitive symptoms (green) in the sporadic forms of AD (modified from Frisoni et al., 2022). Please note that, in the case of familial form of AD (fAD) or APOE\u03b54-related AD, the pathology follows a similar sequence of events but with early and steeper trajectories (Frisoni et al., 2022). (B) The pictogram estimates the dynamics of key AD features as observed in the most widely used AD mouse models. Unlike what is observed in humans, in these preclinical settings, cognitive deficits usually anticipate the appearance of A\u03b2 pathology. Tau inclusions and signs of overt neurodegeneration are absent. (C) The pictogram estimates the dynamics of key AD features as observed in second-generation knock-in mouse models of AD. In this experimental setting, A\u03b2 pathology anticipates the development of subtle cognitive decline (Sakakibara et al., 2018). Like first-generation overexpressing models, tau tangles and brain atrophy are absent. The trajectories in B and C have been estimated by employing data extracted from publications using the mouse models listed in Table 1 and normalized for each pathological feature. Time courses of the original reports were used whenever possible, alternatively, early studies investigating the time-dependent changes in the phenotype of these models were interrogated.\n\nA temporal explanation is also called in support of the fact that first- and second-generation fAD models fail to develop tau pathology and brain atrophy. The case is frequently made that lack of NFT and overt neuronal loss rely on the AD time course since the short lifespan of rodents prevents the development of A\u03b2-driven tauopathy and neurodegeneration observed in humans. However, these arguments do not align with observations from non-human primates (Walker and Jucker, 2017). These mammals show steeper aging trajectories when compared to humans, with extensive cerebral A\u03b2 deposition that occurs at ages proportional to their lifespan and in the absence of tau pathology or overt signs of dementia (Finch and Sapolsky, 1999; Walker and Jucker, 2017).\n\n#### Context\n\nThe accumulated clinical evidence indicates that several genetic and environmental factors, with different potency, have been acknowledged as AD contributors (Frisoni et al., 2022; Knopman et al., 2021; Livingston et al., 2020).\n\nIn that context, molecular genetics analyses provide invaluable information on AD\u2019s complex etiology. Besides the rare mutations on APP, PSEN1, and PSEN2 genes showing an essentially 100% penetrance, linkage and genome-wide association studies (GWAS) have identified well over 20 additional genetic risk loci (Andrews et al., 2023). Although the contribution of each associated gene was frequently interpreted in relation to A\u03b2- or tau-pathology, it is notable that these genes belong to three major pathways: cholesterol and lipid metabolism, immune system and inflammatory responses, and endosomal vesicle cycling (Van Cauwenberghe et al., 2016).\n\nIn this context, the contribution of APOE is an area of active investigation (Chen et al., 2021; Ganesan et al., 2024). This key protein is involved in fat metabolism \u2013 including cholesterol. In humans, three major allelic variants exist: APOE\u03b52, \u03b53, and \u03b54 (Huebbe and Rimbach, 2017). Each genotype is strongly associated with a different risk of developing the late-onset form of the disease with the \u03b54 isoform increasing it while the \u03b52 being protective. The most common \u03b53 allele is considered neutral (Serrano-Pozo et al., 2021). Given the central role played by APOE in cholesterol metabolism and AD, caution must be exercised when interpreting results from preclinical models, as substantial dissimilarities exist among species in this very specific pathway. First, important differences concern APOE itself. The single mouse APOE isoform (mAPOE) shares only 70% of the homology with its human counterparts. This is a serious red flag, considering that the three human isoforms, 299 amino acids long, differ from each other for just up to two residues (Frieden and Garai, 2012). In agreement, early studies comparing the effects on A\u03b2 deposition of human isoforms vs. mAPOE revealed that mAPOE significantly accelerates plaque formation compared to its humanized homolog (Fagan et al., 2002). In addition, the daily turnover of the brain sterol pool is more than an order of magnitude higher in mice than in humans (0.4% vs 0.03% per day, respectively) (Dietschy and Turley, 2004). These findings indicate different synthesis, transport, and clearance needs that, in AD transgenic models, are likely to affect the pathology burden (Granzotto et al., 2011). Similarly, other risk factor-related genes for AD are often quite different in gene structure and processing in mice.\n\nProfound metabolic changes also accompany AD. Epidemiological evidence indicates that metabolic alterations are strongly involved in AD pathogenesis, with obesity and diabetes being included in the list of the 12 modifiable risk factors that account for around 40% of all dementia cases (Livingston et al., 2020). In the brain, insulin acts as a potent neurotrophic factor where it modulates critical activities, like synaptic plasticity and cognitive functions (Arnold et al., 2018). Importantly, central insulin resistance and defective insulin signaling have been consistently observed in human post-mortem studies, leading to the hypothesis that AD is a \u2018Type 3 diabetes\u2019 (Steen et al., 2005). Obesity, a risk factor for diabetes, is also increasingly recognized as an active player in AD. Chronic inflammation associated with obesity contributes to neuroinflammation, and adipokines, bioactive molecules secreted by adipose tissue, may have neuroinflammatory and neurodegenerative effects (Bomba et al., 2019; Kotredes et al., 2023; Mooldijk et al., 2022). In this context, calculations estimate a sevenfold higher basal metabolic rate in mice vs humans (Terpstra, 2001), a difference that might affect pathology progression or, as demonstrated in other settings, influence the effectiveness of disease-modifying interventions (Gordon-Larsen et al., 2021; Terpstra, 2001).\n\nBrain inflammation is emerging as a core feature of AD. The last few years have witnessed a significant advancement in our understanding of how inflammatory processes modulate the pathogenesis of AD (Kinney et al., 2018; Morris et al., 2018; Morris et al., 2014; Paolicelli et al., 2022). Robust associations were identified between AD susceptibility and genetic variants linked to genes specifically expressed by myeloid cells. These include CD33, CLU, MS4A4A and MS4A6A, PLCG2, SORL1, and TREM2 (Andrews et al., 2023; McQuade and Blurton-Jones, 2019). Functionally, these genes largely encode proteins involved in phagocytosis, a central and therapeutically exploitable process in AD (Andrews et al., 2023). In parallel, novel research tools have disclosed an even more composite scenario (Hasselmann and Blurton-Jones, 2020; Paolicelli et al., 2022). Comparative single-cell analysis of humans vs mice showed that brain cells of the two species exhibit similar transcriptomic profiles in physiological settings, but remarkable changes occur upon pathological conditions (Zhou et al., 2020). The effect is particularly prominent in microglia, the immune cells of the brain (Zhou et al., 2020). A twofold interpretation can be drawn. Either the disease model in preclinical settings differs from the human AD, and/or the response to AD pathology is highly context- and species-dependent. In addition, growing evidence helped to profoundly revise the view of the brain as an immune-privileged organ (Louveau et al., 2015), with cells of the adaptive immune system and the peripheral-central immune crosstalk increasingly recognized with a causal role in the pathophysiology of AD (see Andrews et al., 2023; Bettcher et al., 2021; Haage and De Jager, 2022 for comprehensive reviews on the topic).\n\nAn additional context-dependent issue in AD modeling is posed by the heterogeneous set of neuropathology that, at the population level, contribute to dementia in older adults (Boyle et al., 2018; Brenowitz et al., 2017). Post-mortem data reveal that most aging brains are the target of mixed neuropathology (i.e. AD, cerebral amyloid angiopathy, TDP-43, Lewy body, atherosclerosis, etc.) (Boyle et al., 2018) while the isolated presence of senile plaques and NFTs is found only in a tiny fraction of dementia cases (Boyle et al., 2021; Boyle et al., 2018; Brenowitz et al., 2017; Morris et al., 2018). Post-mortem examination of >1000 dementia cases identified >230 different neuropathological combinations (Boyle et al., 2018), indicating almost person-specific pathological signatures and disease trajectories. This complexity cannot be recapitulated in preclinical settings.\n\nWhen delving into AD, it is crucial to consider sex-related factors. The risk of developing AD is nearly double in women, a difference not fully explained by the female longer life expectancy (Reed-Geaghan, 2022). Although many studies are investigating sex-based differences in preclinical models, the results should be interpreted with caution. Indeed, biological differences can bias the outcomes. Among others, female mice lack the reproductive senescence features, including menopause and the extended post-reproductive periods, that characterize at least one-third of women\u2019s lifespan and that fall within the most critical timeframe for developing early signs of dementia (Moir and Tanzi, 2019). In agreement, a causative role of the dysregulation of sex hormones in explaining the higher vulnerability of women to AD has been proposed (Carroll et al., 2007; Ratnakumar et al., 2019; Xiong et al., 2022).\n\nFor what concerns preclinical models, additional differences in the underlying biology of humans and mice need to be more carefully considered when modeling AD, testing interventions, and interpreting the data. For instance, nocturnal rodents have opposite circadian cycles when compared to humans. Since most experimental procedures are performed during the rodent inactive phase, recent findings suggested that circadian rhythms might influence and bias translational studies (Esposito et al., 2020). This might also occur in the context of AD, considering the importance of inactive phases (i.e. sleep hours) for the clearance of brain interstitial fluids from proteins and solutes accumulated during the wake/active cycles, like A\u03b2 and tau (Holth et al., 2019; Roh et al., 2012). We raise this point to be comprehensive, but do not suggest it is the major limitation of the animal models.\n\nFinally, the experimental conditions under which laboratory animals are typically housed often overlook the significant impact of an enriched environment, social engagement, physical activity, and natural pathogens or pollutants \u2013 all crucial factors observed in real-world scenarios \u2013 on the development and progression of AD (de Sousa et al., 2023; Dhana et al., 2024; Kivipelto et al., 2018). These environmental elements play a core role in influencing molecular mechanisms that promote brain resilience against age-related insults, like the activation of neurotrophic and bioenergetic signaling pathways, vital factors for maintaining cognitive health and mitigating the effects of neurodegeneration (Cotman and Berchtold, 2002; Mattson and Arumugam, 2018). Incorporating these environmental features within experimental models is essential for capturing the holistic impact of lifestyle elements on AD pathology and developing more translatable therapeutic strategies.\n\n#### Implications for the ACH\n\nFirst-generation of APP (or tau) overexpressing mouse models remain the primary tools in use for studying AD (Table 1). The original findings with these and similar AD model mice were considered strong support of the ACH. In hindsight, studies showing that overloading the brain from birth with foreign protein/s generates a phenotype, while its/their removal has some subsequent benefit, may have been over-interpreted in support of the ACH. The interpretation is problematic not only in the context of the qualitative, quantitative, temporal, and contextual limitations of the models as discussed herein but also because of the absence of adequate controls for extensive protein overload.\n\nWhile the data do not exclude that A\u03b2 and/or tau may contribute to dementia, additional risk factor-related genes (e.g. TREM2, MS4A, CLU, etc.) or environmental cues should be tested in enriched preclinical settings. Embracing the complexity of the molecular mechanisms of AD could substantially advance our comprehension of the disease and help therapeutic strategies.\n\n#### Is all lost?\n\nWhile a purely A\u03b2-centric view of dementia is no longer tenable (Granzotto and Sensi, 2024; Herrup, 2015; Kepp et al., 2023a; Morris et al., 2018; Morris et al., 2014), preclinical mouse models may still provide answers to disease-related questions in three primary respects.\n\nFirst, mice are valuable for investigating the fundamental mechanisms through which perturbation of cellular interactions leads to brain dysfunction. Specifically, the commonly used mice \u2013 such as the J20 (Mucke et al., 2000; Wright et al., 2013) \u2013, induced neuroinflammation or senescence models, as well as non-genetically modified animals, may prove helpful in studying the consequences of altered cellular interactions associated with inflammatory response and/or aging, two critical factors in dementia (Engelhart et al., 2004). While the trigger of inflammation in the mouse models, such as the J20 mouse model, namely the ectopic overexpression of human proteins, may not be identical to what drives human AD, these models are still valuable for further our understanding of the role of aberrant microglial astrocytic and adaptive immune responses in neuronal and synapse dysfunction.\n\nSecond, the commonly used mice expressing full-length mutant APP and/or mutant PSENs help unravel A\u03b2-independent mechanisms involved in AD. In other words, what is the role of the full human APP, the presenilins, and the various fragments and isoforms, beyond their effects on A\u03b2, in brain function and pathology? These mechanisms have been investigated (Saganich et al., 2006) but they remain greatly under-explored.\n\nThird, a reconceptualization of murine models is needed. A question remains whether mice engineered with humanized genes (such as APP, MAPT, APOE\u03b54, TREM2, and so on) will prove valuable for modeling human AD. Many of us are hopeful, but it is still unclear how biochemical and cellular signaling mechanisms in mice interact with human genes, an area in need of further consideration.\n\n#### Alternative possibilities and future directions\n\nCollective efforts are underway to develop better, more informative, and predictive models to improve translation from animal to humans (Vitek et al., 2020). These include the generation of mice combining multiple genetic and environmental risk factors (Ganesan et al., 2024; Rizzo et al., 2023) or the development of novel strains to evaluate the impact of naturally occurring genetic variations (limited in laboratory strains) on the AD phenotype (Neuner et al., 2019; Onos et al., 2019). In that respect, we are cautiously excited by the MODEL-AD project (MODEL-AD Consortium, 2024). The outcomes of these studies designed to generate sAD-relevant models could be highly informative (Kotredes et al., 2023). In addition, AD involves complex mechanisms beyond amyloid plaques and tau tangles, like synaptic dysfunction, mitochondrial impairment, Ca2+ dysregulation, neuroinflammation, oxidative stress, metal ion dyshomeostasis, and disruptions in neuronal signaling. As we noted above, there are also questions about the effects of the environment and natural pathogens on the brain, which are also not well modeled in pristine mouse facilities. Animal models often fail to fully replicate the complex interplay of the environment and the molecular and cellular processes that are strongly associated with disease symptoms. A better modeling and a deeper exploration of these mechanisms \u2013 alone or in synergy with the pathological features of AD \u2013 could inform the development of more targeted interventions.\n\nIt is also imperative to heighten methodological rigor in investigations employing murine models. The inadequacy of adhering to the rigorous standards observed in human clinical trials should be addressed. For instance, at a minimum, implementing blinding protocols and preferably blinding across all aspects of the analyses has become mandatory to generate data with translational value (Cozachenco et al., 2023). Regrettably, most animal studies do not consistently observe such practices (Errington, 2024; Reynolds, 2022).\n\nThere has been a notable shift towards human-centric approaches, emphasizing human-derived cellular models, organoids, and larger animals, like non-human primates. Human cells of the central nervous system, usually derived from induced pluripotent stem cells (iPSC), have emerged as indispensable tools to delve into disease mechanisms specific to human biology. In this context, human-mouse chimeras are a valuable tool for studying the behavior of iPSC-derived cell subtypes xenografted in murine models of AD (Balusu et al., 2023; Espuny-Camacho et al., 2017; Hasselmann et al., 2019; Mancuso et al., 2019). However, like with any experimental model, some trade-offs are to be expected. Human cell engraftment is performed in immune-deficient AD strains, thereby missing the critical contribution of the immune system to the generation of the pathological phenotype.\n\nComplementing this, co-culture 3D systems and human brain organoids \u2013 multicellular, complex 3D structures \u2013 derived from iPSC provide a physiologically relevant platform to study the complexity of AD (Cenini et al., 2021; Kim et al., 2020; Penney et al., 2020). Of note, developing novel and user-friendly differentiation protocols for iPSCs into cells of the central nervous system is democratizing this technology, making it accessible to laboratories with limited expertise in stem cell research. This broadens the availability of iPSC-based approaches and facilitates the testing of disparate, non-mainstream hypotheses. Nevertheless, human cell- and organoid-based models possess inherent limitations. These include the absence of a fully developed and functional nervous system (i.e. complex circuit dynamics), the lack of tissue vascularization, and the inability to capture the intricate interplay between multiple organ systems (Andrews and Kriegstein, 2022).\n\nTo bridge these gaps, there is now mounting interest in larger animal models, including non-human primates (Jennings et al., 2016). These animal models still bear discrepancies in brain structure and function compared to humans, potentially affecting the translational capacity of the findings, let alone ethical concerns (Bailey and Taylor, 2016). Complementing this, a comparative biology approach has been recently proposed. This perspective stems from the idea that companion animals undergo concomitant age-related changes and share the same environment and lifestyle of the patients, thereby acting as a proxy of the complex network of factors that modulate the disease (de Sousa et al., 2023).\n\nThese diversified preclinical settings must be supplemented with human studies and clinical research data. In this regard, integrating in silico studies has great potential. One area revolves around developing multi-scale computational models, which provide an eco-system for integrating and interrogating molecular, cellular, and network-level interactions (Rollo et al., 2023). In silico work can also foster the development of personalized medicine approaches for AD, including factors acting inside and outside the CNS (Doraiswamy et al., 2018; Lee et al., 2019; Massetti et al., 2024). By incorporating individual patient data, including genetic profiles and environmental exposures, computational models can help predict disease progression and identify optimal treatment strategies tailored to each patient\u2019s unique circumstances (Forloni, 2020). Finally, in silico analysis can be employed to explore the heterogeneity of AD cases, considering the diverse clinical presentations and progression patterns observed among patients.\n\n### Conclusions\n\nIn conclusion, the limitations of current preclinical AD models and the questionable benefit observed in anti-A\u03b2 clinical trials call for an urgent reconsideration of our strategies (Granzotto and Sensi, 2024; H\u00f8ilund-Carlsen et al., 2023; Kepp et al., 2023b).\n\nOn the preclinical front, a more comprehensive setting involving other experimental systems and more rigorous experimental designs is required to guarantee the cost-effective generation of data with high translational value (Cozachenco et al., 2023).\n\nA more nuanced and context-dependent experimental approach, taken with careful thought, is crucial for the development of effective disease models and, ultimately, for improving our ability to prevent, diagnose, and treat this devastating disorder.\n",
+      "created_at": "2025-12-04T04:56:55.873300Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T04:56:55.873300Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T04:56:55.873300Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "e6350cad-066b-4dd0-b0b1-78b96bf60e00",
+      "content_id": "0812d1a0-2ebd-43c9-af8e-d31cb09701b9",
+      "claim_id": "C1",
+      "claim": "The recent approval of antibody-based treatments for Alzheimer's disease is controversial.",
+      "claim_type": "EXPLICIT",
+      "source": "The recent, controversial approval of antibody-based treatments for Alzheimer's disease (AD) is fueling a heated debate on the molecular determinants of this condition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript directly states that the approval is controversial and is fueling debate.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:56:55.873300Z"
+    },
+    {
+      "id": "c67a5793-cc66-4d11-9835-bd806c6005c0",
+      "content_id": "0812d1a0-2ebd-43c9-af8e-d31cb09701b9",
+      "claim_id": "C2",
+      "claim": "Antibody-based treatments for Alzheimer's disease show limited clinical benefits at best.",
+      "claim_type": "EXPLICIT",
+      "source": "The accumulating failures of so many AD clinical trials, along with the recent, highly controversial Food and Drug Administration (FDA) approval of monoclonal antibodies \u2013 that at best show limited clinical benefits (H\u00f8ilund-Carlsen et al., 2024; Kepp et al., 2023a) \u2013 provide reason to reconsider the molecular determinants of AD and the ACH, in particular.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to H\u00f8ilund-Carlsen et al., 2024 and Kepp et al., 2023a.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:56:55.873300Z"
+    },
+    {
+      "id": "382eb4a8-d734-48b4-9910-7be07871c4be",
+      "content_id": "0812d1a0-2ebd-43c9-af8e-d31cb09701b9",
+      "claim_id": "C3",
+      "claim": "Current AD mouse models are based on oversimplistic assumptions proposed by the amyloid cascade hypothesis.",
+      "claim_type": "EXPLICIT",
+      "source": "We argue that these models are based on the oversimplistic assumptions proposed by the amyloid cascade hypothesis (ACH) of AD and fail to account for the multifactorial nature of the condition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The authors explicitly argue this position in the abstract.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:56:55.873300Z"
+    },
+    {
+      "id": "8219fe83-4ef8-4715-8c3b-b542b2ea88f5",
+      "content_id": "0812d1a0-2ebd-43c9-af8e-d31cb09701b9",
+      "claim_id": "C4",
+      "claim": "The amyloid cascade hypothesis identifies \u03b2-amyloid dysmetabolism and its parenchymal deposition into senile plaques as the primary driver of AD pathogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "In its original formulation, the ACH identifies the dysmetabolism of \u03b2-amyloid (A\u03b2) and its parenchymal deposition into senile plaques as the primary driver of a pathogenic, although still unclear, series of molecular events leading to the formation of hyperphosphorylated tau inclusions and, eventually, neuronal death (Hardy and Higgins, 1992).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Hardy and Higgins, 1992, which is the original formulation of the ACH.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:56:55.873300Z"
+    },
+    {
+      "id": "c89e9a5b-2c8f-4b1f-8a98-313c16234fba",
+      "content_id": "0812d1a0-2ebd-43c9-af8e-d31cb09701b9",
+      "claim_id": "C5",
+      "claim": "There is a non-linear association between A\u03b2 plaques and cognitive deficits.",
+      "claim_type": "EXPLICIT",
+      "source": "The non-linear association between A\u03b2 plaques and cognitive deficits has led to revisions of the ACH, including the suggestion that soluble, low-molecular-weight A\u03b2 oligomers \u2013 rather than plaques \u2013 are the primary neurotoxic species (Cline et al., 2018; Lambert et al., 1998), although this too remains highly controversial (Morris et al., 2018; Morris et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to multiple studies discussing this association and its controversies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:56:55.873300Z"
+    },
+    {
+      "id": "7ecb22a1-8037-4634-82ba-d6ce48e1b5f3",
+      "content_id": "0812d1a0-2ebd-43c9-af8e-d31cb09701b9",
+      "claim_id": "C6",
+      "claim": "Soluble, low-molecular-weight A\u03b2 oligomers have been suggested as the primary neurotoxic species rather than plaques.",
+      "claim_type": "EXPLICIT",
+      "source": "The non-linear association between A\u03b2 plaques and cognitive deficits has led to revisions of the ACH, including the suggestion that soluble, low-molecular-weight A\u03b2 oligomers \u2013 rather than plaques \u2013 are the primary neurotoxic species (Cline et al., 2018; Lambert et al., 1998), although this too remains highly controversial (Morris et al., 2018; Morris et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Cline et al., 2018 and Lambert et al., 1998.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:56:55.873300Z"
+    },
+    {
+      "id": "6d198d3c-6d08-47a6-886c-190c523ebac8",
+      "content_id": "0812d1a0-2ebd-43c9-af8e-d31cb09701b9",
+      "claim_id": "C7",
+      "claim": "The suggestion that soluble A\u03b2 oligomers are the primary neurotoxic species remains highly controversial.",
+      "claim_type": "EXPLICIT",
+      "source": "The non-linear association between A\u03b2 plaques and cognitive deficits has led to revisions of the ACH, including the suggestion that soluble, low-molecular-weight A\u03b2 oligomers \u2013 rather than plaques \u2013 are the primary neurotoxic species (Cline et al., 2018; Lambert et al., 1998), although this too remains highly controversial (Morris et al., 2018; Morris et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Morris et al., 2018 and Morris et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:56:55.873300Z"
+    },
+    {
+      "id": "9ca2d252-4f64-460f-b876-026531d22032",
+      "content_id": "0812d1a0-2ebd-43c9-af8e-d31cb09701b9",
+      "claim_id": "C8",
+      "claim": "The ATN research framework for AD is based on amyloid, tau, and neurodegeneration.",
+      "claim_type": "EXPLICIT",
+      "source": "The ACH is also at the foundation of the current 'ATN research framework' for AD. The ATN is designed to provide a structured and unbiased categorization of the AD continuum and is based upon biological/molecular changes identified by post-mortem examination or by biomarkers (i.e. amyloid \u2013 'A,' tau \u2013 'T,' and neurodegeneration \u2013 'N' Jack et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Jack et al., 2018.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:56:55.873300Z"
+    },
+    {
+      "id": "75d8887e-610a-4f5f-93a2-755bc142c663",
+      "content_id": "0812d1a0-2ebd-43c9-af8e-d31cb09701b9",
+      "claim_id": "C9",
+      "claim": "The ATN construct offers suboptimal and incomplete heuristic value.",
+      "claim_type": "EXPLICIT",
+      "source": "There continue to be good reasons to consider that the ATN construct offers a suboptimal and incomplete heuristic value (Morris et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Morris et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:56:55.873300Z"
+    },
+    {
+      "id": "ab1dde22-5981-4dcf-806a-6876db6257ae",
+      "content_id": "0812d1a0-2ebd-43c9-af8e-d31cb09701b9",
+      "claim_id": "C10",
+      "claim": "There is growing skepticism around the sole centrality of A\u03b2 in AD.",
+      "claim_type": "EXPLICIT",
+      "source": "While few scientists rule out any role of amyloid in the disease, there is growing skepticism around the sole centrality of A\u03b2 in AD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The authors state this as an observation about the scientific community's views.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:56:55.873300Z"
+    },
+    {
+      "id": "5321c1f3-6802-4910-bed6-ef4ddacb9f1e",
+      "content_id": "0812d1a0-2ebd-43c9-af8e-d31cb09701b9",
+      "claim_id": "C11",
+      "claim": "A large proportion of cognitively unimpaired elderly have amyloid pathology.",
+      "claim_type": "EXPLICIT",
+      "source": "These discrepancies include but are not limited to, the large proportion of cognitively unimpaired elderly who have amyloid pathology, the long-known evidence for the contribution of mixed neuropathology in AD cases, and the modest benefits offered by A\u03b2-lowering antibodies [reviewed in H\u00f8ilund-Carlsen et al., 2023, Granzotto and Sensi, 2024, and Guo et al., 2024].",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to review articles.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:56:55.873300Z"
+    },
+    {
+      "id": "e50ff95c-1f83-46dd-9ecc-9cb81f2fd632",
+      "content_id": "0812d1a0-2ebd-43c9-af8e-d31cb09701b9",
+      "claim_id": "C12",
+      "claim": "Mixed neuropathology contributes to AD cases.",
+      "claim_type": "EXPLICIT",
+      "source": "These discrepancies include but are not limited to, the large proportion of cognitively unimpaired elderly who have amyloid pathology, the long-known evidence for the contribution of mixed neuropathology in AD cases, and the modest benefits offered by A\u03b2-lowering antibodies [reviewed in H\u00f8ilund-Carlsen et al., 2023, Granzotto and Sensi, 2024, and Guo et al., 2024].",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to review articles.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:56:55.873300Z"
+    },
+    {
+      "id": "bad5477d-6c02-44a9-81be-ced9f71cc428",
+      "content_id": "0812d1a0-2ebd-43c9-af8e-d31cb09701b9",
+      "claim_id": "C13",
+      "claim": "A\u03b2-lowering antibodies offer modest benefits.",
+      "claim_type": "EXPLICIT",
+      "source": "These discrepancies include but are not limited to, the large proportion of cognitively unimpaired elderly who have amyloid pathology, the long-known evidence for the contribution of mixed neuropathology in AD cases, and the modest benefits offered by A\u03b2-lowering antibodies [reviewed in H\u00f8ilund-Carlsen et al., 2023, Granzotto and Sensi, 2024, and Guo et al., 2024].",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to review articles.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:56:55.873300Z"
+    },
+    {
+      "id": "7c7d6f08-b8bc-44cd-b008-47aad97909b6",
+      "content_id": "0812d1a0-2ebd-43c9-af8e-d31cb09701b9",
+      "claim_id": "C14",
+      "claim": "The API Colombia study enrolled carriers of the PSEN E280A mutation.",
+      "claim_type": "EXPLICIT",
+      "source": "The Alzheimer's prevention initiative (API) Colombia study enrolled carriers of a mutation (PSEN E280A), conferring a particular risk of developing AD (Alzforum, 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Alzforum, 2022.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:56:55.873300Z"
+    },
+    {
+      "id": "4f7fba01-beaa-4e16-a94a-6b317a0733a2",
+      "content_id": "0812d1a0-2ebd-43c9-af8e-d31cb09701b9",
+      "claim_id": "C15",
+      "claim": "The PSEN E280A mutation confers a particular risk of developing AD.",
+      "claim_type": "EXPLICIT",
+      "source": "The Alzheimer's prevention initiative (API) Colombia study enrolled carriers of a mutation (PSEN E280A), conferring a particular risk of developing AD (Alzforum, 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Alzforum, 2022.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:56:55.873300Z"
+    },
+    {
+      "id": "4c1f350f-26d4-49b7-acc6-7443a46d8a09",
+      "content_id": "0812d1a0-2ebd-43c9-af8e-d31cb09701b9",
+      "claim_id": "C16",
+      "claim": "The A4 study enrolled subjects with elevated brain levels of A\u03b2 as assessed by Amyloid PET imaging.",
+      "claim_type": "EXPLICIT",
+      "source": "The Anti-Amyloid Treatment in Asymptomatic Alzheimer's Disease (A4) study enrolled subjects with elevated brain levels of A\u03b2 as assessed by Amyloid PET imaging (Sperling et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Sperling et al., 2023.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:56:55.873300Z"
+    },
+    {
+      "id": "7769c577-b64b-4671-a3ee-150692f34c71",
+      "content_id": "0812d1a0-2ebd-43c9-af8e-d31cb09701b9",
+      "claim_id": "C17",
+      "claim": "Both the API Colombia and A4 trials were unsuccessful.",
+      "claim_type": "EXPLICIT",
+      "source": "Both trials were unsuccessful, joining the long list of A\u03b2-targeting interventions that failed to produce clinically relevant benefits (Panza et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Panza et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:56:55.873300Z"
+    },
+    {
+      "id": "b7db9ad5-210f-4f51-9492-25d1cdeefe97",
+      "content_id": "0812d1a0-2ebd-43c9-af8e-d31cb09701b9",
+      "claim_id": "C18",
+      "claim": "More than 210 rodent models have been generated to recapitulate AD's clinical features.",
+      "claim_type": "EXPLICIT",
+      "source": "So far, more than 210 rodent models have been generated to recapitulate AD's clinical features in research laboratories.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The authors state this as a factual count of existing models.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:56:55.873300Z"
+    },
+    {
+      "id": "b402e943-513b-4025-8abe-ac294daf6689",
+      "content_id": "0812d1a0-2ebd-43c9-af8e-d31cb09701b9",
+      "claim_id": "C19",
+      "claim": "The translational outcomes of AD rodent models have been poor to date.",
+      "claim_type": "EXPLICIT",
+      "source": "Unfortunately, the translational outcomes of these endeavors have, to date, been poor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The authors make this assessment based on the overall outcomes of research using these models.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:56:55.873300Z"
+    },
+    {
+      "id": "f516a196-b78d-4061-b109-a237729bec4c",
+      "content_id": "0812d1a0-2ebd-43c9-af8e-d31cb09701b9",
+      "claim_id": "C20",
+      "claim": "Familial AD accounts for less than 1% of total AD cases.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the very low prevalence of fAD \u2013 less than 1% of total cases (Pavisic et al., 2020) \u2013 makes the findings obtained in these models impossible to generalize to the broad spectrum of sporadic AD cases (sAD), causing misleading overinterpretation of the results.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Pavisic et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:56:55.873300Z"
+    },
+    {
+      "id": "371351e8-d83e-4750-aafe-3ed846415453",
+      "content_id": "0812d1a0-2ebd-43c9-af8e-d31cb09701b9",
+      "claim_id": "C21",
+      "claim": "Most fAD models do not show tau pathology and brain atrophy.",
+      "claim_type": "EXPLICIT",
+      "source": "Two common issues with fAD models that contrast with the clinical manifestations of human disease are the absence of tau pathology and brain atrophy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The authors state this as a common observation across fAD models.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:56:55.873300Z"
+    },
+    {
+      "id": "90658e47-b0da-4702-9f3f-6e516c7e2514",
+      "content_id": "0812d1a0-2ebd-43c9-af8e-d31cb09701b9",
+      "claim_id": "C22",
+      "claim": "Most AD mouse models do not show neurodegeneration.",
+      "claim_type": "EXPLICIT",
+      "source": "Most models do not show neurodegeneration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The authors state this as a general observation about AD mouse models.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:56:55.873300Z"
+    },
+    {
+      "id": "d2425b4f-f000-4eb9-b337-c2e434dddbfa",
+      "content_id": "0812d1a0-2ebd-43c9-af8e-d31cb09701b9",
+      "claim_id": "C23",
+      "claim": "When neurodegeneration occurs in AD mouse models, modest neuronal loss is observed and is usually confined to discrete brain regions.",
+      "claim_type": "EXPLICIT",
+      "source": "When neurodegeneration does occur, modest neuronal loss is observed, and it is usually confined to discrete brain regions (e.g. a single layer of the cortex or hippocampal subfields) and even then, only in a small fraction of amyloid-dependent models of AD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The authors describe the characteristics of neurodegeneration when it does occur in models.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:56:55.873300Z"
+    },
+    {
+      "id": "c7613860-aaf9-4ef6-b086-9cfdd2443958",
+      "content_id": "0812d1a0-2ebd-43c9-af8e-d31cb09701b9",
+      "claim_id": "C24",
+      "claim": "Neurodegeneration in AD mouse models is primarily described in transgenic mice where APP mutations occur in the presence of PSEN1 mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, these minor signs of neurodegeneration are primarily described in transgenic mice in which APP mutations occur in the presence of PSEN1 mutations, thereby raising questions on the specific contribution of A\u03b2 versus the role of PSEN1 in causing the pathological phenotype.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The authors note this pattern across studies of AD mouse models.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:56:55.873300Z"
+    },
+    {
+      "id": "d26b423e-b7f3-44dd-8c3d-a53dbc27e092",
+      "content_id": "0812d1a0-2ebd-43c9-af8e-d31cb09701b9",
+      "claim_id": "C25",
+      "claim": "PSEN mutations are likely primary drivers of features of AD-related neuronal dysfunction in mouse models.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, early studies pinpoint PSEN mutations in the mouse models as the likely primary drivers of features of AD-related neuronal dysfunction, like dysregulation of calcium (Ca2+) signaling, metal ion dyshomeostasis, synaptic dysfunction, impaired adult neurogenesis, and increased neuronal vulnerability to cytotoxic stimuli (Al Rahim et al., 2020; Corona et al., 2011; Duff et al., 1996; Hernandez-Sapiens et al., 2022; Mattson et al., 2000; Stutzmann et al., 2006; Stutzmann et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to multiple studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:56:55.873300Z"
+    },
+    {
+      "id": "519452c0-7729-42f5-9d79-ac74b79d64cb",
+      "content_id": "0812d1a0-2ebd-43c9-af8e-d31cb09701b9",
+      "claim_id": "C26",
+      "claim": "The effect of PSEN1 in animal models occurs in an A\u03b2-pathology independent fashion.",
+      "claim_type": "EXPLICIT",
+      "source": "Although not systematically studied, the effect of PSEN1 in animal models seems to occur in an A\u03b2-pathology independent fashion, as mice harboring APP and PSEN1 fAD mutations lose their phenotype upon removal of the PSEN1 mutation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The authors describe experimental observations from studies manipulating PSEN1 mutations.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:56:55.873300Z"
+    },
+    {
+      "id": "fae5778a-b89f-4df1-b678-2a90bead9b2f",
+      "content_id": "0812d1a0-2ebd-43c9-af8e-d31cb09701b9",
+      "claim_id": "C27",
+      "claim": "Single Psen1 KI mutants display functional alterations.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, single Psen1 KI mutants continued to display functional alterations (Bomba et al., 2013; Stutzmann et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Bomba et al., 2013 and Stutzmann et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:56:55.873300Z"
+    },
+    {
+      "id": "0da1c425-c98e-438c-95b9-13fafba4ed7d",
+      "content_id": "0812d1a0-2ebd-43c9-af8e-d31cb09701b9",
+      "claim_id": "C28",
+      "claim": "The presenilin hypothesis identifies PSEN mutations and/or impaired PSEN functioning as the primary contributor to neurodegeneration in fAD.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, this evidence suggests a critical role for PSEN in neurological function, a construct that has been conceptualized in the 'presenilin hypothesis of AD' (Shen and Kelleher, 2007; Yan et al., 2024). The construct identifies PSEN mutations and/or impaired PSEN functioning as the primary contributor to neurodegeneration in fAD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Shen and Kelleher, 2007 and Yan et al., 2024.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:56:55.873300Z"
+    },
+    {
+      "id": "3ecc90d6-f172-437a-b380-c5eefcc89bc5",
+      "content_id": "0812d1a0-2ebd-43c9-af8e-d31cb09701b9",
+      "claim_id": "C29",
+      "claim": "In 75% of fAD cases, PSEN1 mutations led to decreased production of A\u03b2 fragments.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, systematic analysis of fAD-causing PSEN1 mutations has shown that in 75% of the dementia cases, the mutations led to decreased production of A\u03b2 fragments (Sun et al., 2017), supporting the notion that amyloid is not the disease driver.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Sun et al., 2017.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:56:55.873300Z"
+    },
+    {
+      "id": "fa9e0960-efa0-463b-a913-3b002383a05d",
+      "content_id": "0812d1a0-2ebd-43c9-af8e-d31cb09701b9",
+      "claim_id": "C30",
+      "claim": "\u03b3-secretase inhibitors have been found to worsen cognition in clinical trials.",
+      "claim_type": "EXPLICIT",
+      "source": "Unsurprisingly, \u03b3-secretase inhibitors, developed to limit APP cleavage and amyloid production, have been consistently found to worsen cognition in clinical trials (Coric et al., 2015; Doody et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Coric et al., 2015 and Doody et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:56:55.873300Z"
+    },
+    {
+      "id": "480a8bbb-19cd-4ae7-ba68-b5c24752070e",
+      "content_id": "0812d1a0-2ebd-43c9-af8e-d31cb09701b9",
+      "claim_id": "C31",
+      "claim": "The worsening of cognition by \u03b3-secretase inhibitors was likely attributed to the inhibition of PSENs activity and its negative downstream impact on multiple signaling pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "The effect was likely attributed to the inhibition of PSENs activity and its negative downstream impact on multiple signaling pathways, like Notch signaling (Hur, 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Hur, 2022.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:56:55.873300Z"
+    },
+    {
+      "id": "ebd0bb70-0316-49e9-a624-1f120bdefbb6",
+      "content_id": "0812d1a0-2ebd-43c9-af8e-d31cb09701b9",
+      "claim_id": "C32",
+      "claim": "Neuronal loss in fAD models often occurs in the form of necrotic cell death near senile plaques.",
+      "claim_type": "EXPLICIT",
+      "source": "In these transgenic mice, neuronal demise, when present, often occurs in the form of necrotic cell death near senile plaques, a finding more in line with 'mechanical' disruption of neuronal integrity rather than the result of a chronic, staged, and regulated process of neuronal dysfunction (Tanaka et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Tanaka et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:56:55.873300Z"
+    },
+    {
+      "id": "5f115dba-827a-41dc-a025-df14544566c2",
+      "content_id": "0812d1a0-2ebd-43c9-af8e-d31cb09701b9",
+      "claim_id": "C33",
+      "claim": "Second-generation knock-in transgenic mice have the App gene humanized with the addition of fAD mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "To circumvent the drawbacks posed by the first-generation overexpressing models, researchers have developed second-generation knock-in transgenic mice in which the App gene is humanized with the addition of fAD mutations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The authors describe the design of second-generation models.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:56:55.873300Z"
+    },
+    {
+      "id": "2e0e8305-a450-4ebe-a3d4-e889a5992032",
+      "content_id": "0812d1a0-2ebd-43c9-af8e-d31cb09701b9",
+      "claim_id": "C34",
+      "claim": "Second-generation knock-in models exhibit alterations of A\u03b2 metabolism that precede subtle cognitive deficits.",
+      "claim_type": "EXPLICIT",
+      "source": "These models exhibit alterations of A\u03b2 metabolism that precede subtle cognitive deficits, A\u03b242 overproduction, increased A\u03b242/A\u03b240 ratio, and neuroinflammation without the pitfalls associated with APP overexpression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The authors describe the characteristics of second-generation models.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:56:55.873300Z"
+    },
+    {
+      "id": "5b52a32b-ffb1-4db3-8128-439b2a22c74f",
+      "content_id": "0812d1a0-2ebd-43c9-af8e-d31cb09701b9",
+      "claim_id": "C35",
+      "claim": "Knock-in models require the presence of multiple APP mutations not found in humans to produce A\u03b2 neuropathology.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, to produce A\u03b2 neuropathology, knock-in models require the presence of multiple APP mutations not found in humans.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The authors state this as a limitation of knock-in models.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:56:55.873300Z"
+    },
+    {
+      "id": "7023e6f0-d942-4a6c-b301-fc78c96c91e9",
+      "content_id": "0812d1a0-2ebd-43c9-af8e-d31cb09701b9",
+      "claim_id": "C36",
+      "claim": "AppNL mice carrying only the Swedish mutation failed to develop amyloid pathology up to 22 months of age.",
+      "claim_type": "EXPLICIT",
+      "source": "The AppNL mice, a model that carries only the 'pathogenic' Swedish mutation, failed to develop amyloid pathology up to 22 months of age (Saito et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Saito et al., 2014.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:56:55.873300Z"
+    },
+    {
+      "id": "86b7b9e1-b625-4263-93e6-30757ec414e0",
+      "content_id": "0812d1a0-2ebd-43c9-af8e-d31cb09701b9",
+      "claim_id": "C37",
+      "claim": "Assessment of synaptic functioning in App knock-in mice revealed only presynaptic alterations and not the postsynaptic alterations seen in humans.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, assessment of synaptic functioning in App knock-in mice revealed only presynaptic alterations and not the postsynaptic alterations seen in humans. This suggests again that other factors like presenilins or gross inflammation, rather than a direct action of A\u03b2 per se, may cause human post-synaptic dysfunction and neuronal loss (Benitez et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Benitez et al., 2021.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:56:55.873300Z"
+    },
+    {
+      "id": "bbfba848-a6ac-4c5b-87a1-f14838bd9017",
+      "content_id": "0812d1a0-2ebd-43c9-af8e-d31cb09701b9",
+      "claim_id": "C38",
+      "claim": "AppSAA mice exhibit increased brain metabolism as A\u03b2 pathology progresses, in contrast to AD patients.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, and in contrast to AD patients, AppSAA mice exhibit increased brain metabolism (measured by FDG-PET) as A\u03b2 pathology progresses (Xia et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Xia et al., 2022.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:56:55.873300Z"
+    },
+    {
+      "id": "6d9563c9-0611-48aa-96c3-f0f2348a9283",
+      "content_id": "0812d1a0-2ebd-43c9-af8e-d31cb09701b9",
+      "claim_id": "C39",
+      "claim": "Knock-in mice do not develop tau pathology nor generate overt signs of neurodegeneration.",
+      "claim_type": "EXPLICIT",
+      "source": "Like the first-generation models, knock-in mice do not develop tau pathology nor generate overt signs of neurodegeneration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The authors state this as a characteristic of knock-in models.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:56:55.873300Z"
+    },
+    {
+      "id": "5df4b6ab-4a45-492d-be67-94a6bf776ced",
+      "content_id": "0812d1a0-2ebd-43c9-af8e-d31cb09701b9",
+      "claim_id": "C40",
+      "claim": "Tau pathology is considered an accurate correlate of AD-related neurodegeneration.",
+      "claim_type": "EXPLICIT",
+      "source": "Tau pathology is considered an accurate correlate of AD-related neurodegeneration, as the extent and topological distribution of tau accumulation mirrors the disease's clinical course more faithfully than other biomarkers (Knopman et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Knopman et al., 2021.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:56:55.873300Z"
+    },
+    {
+      "id": "b84cb858-1c5e-4d20-ab7d-675a824856b9",
+      "content_id": "0812d1a0-2ebd-43c9-af8e-d31cb09701b9",
+      "claim_id": "C41",
+      "claim": "Most tau models overexpress the human MAPT gene harboring mutations associated with frontotemporal lobar degeneration, not AD.",
+      "claim_type": "EXPLICIT",
+      "source": "While they are often considered models of AD, most tau models overexpress the human MAPT gene, harboring mutations absent in AD cases but associated with frontotemporal lobar degeneration (FTLD).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The authors describe the genetic basis of tau models.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:56:55.873300Z"
+    },
+    {
+      "id": "83f65252-99f7-4772-b940-64e1d399bee6",
+      "content_id": "0812d1a0-2ebd-43c9-af8e-d31cb09701b9",
+      "claim_id": "C42",
+      "claim": "Tau models better phenocopy some clinical features of AD like neurofibrillary tangles, neurodegeneration, and cognitive deficits compared to APP models.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike APP models, these mice better phenocopy some of the clinical features of AD, like neurofibrillary tangles (NFT) inclusions, neurodegeneration, and cognitive deficits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The authors compare tau models to APP models.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:56:55.873300Z"
+    },
+    {
+      "id": "d37a6f4d-b726-40c0-aba7-c2638d23ba32",
+      "content_id": "0812d1a0-2ebd-43c9-af8e-d31cb09701b9",
+      "claim_id": "C43",
+      "claim": "In humans, alternative splicing of the MAPT gene gives rise to six tau isoforms.",
+      "claim_type": "EXPLICIT",
+      "source": "In humans, alternative splicing of the MAPT gene gives rise to six tau isoforms characterized by differences in length, N-terminal sequences, and the presence of three- (3 R) or four- (4 R) repeated microtubule-binding sequences (Hern\u00e1ndez et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Hern\u00e1ndez et al., 2020.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:56:55.873300Z"
+    },
+    {
+      "id": "1898999b-c1c3-4623-ae85-dc8edf1e9d31",
+      "content_id": "0812d1a0-2ebd-43c9-af8e-d31cb09701b9",
+      "claim_id": "C44",
+      "claim": "Murine tau differs from human tau in the number of repeats, with tau 3 R absent in adult mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to the human homolog, murine tau differs in terms of the number of repeats (tau 3 R is absent in adult mice) as well as in the sequence of the N-terminal domain (11 amino acids shorter in mice) (Hern\u00e1ndez et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Hern\u00e1ndez et al., 2020.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:56:55.873300Z"
+    },
+    {
+      "id": "28738421-4623-436e-a38a-9c6f804a3daf",
+      "content_id": "0812d1a0-2ebd-43c9-af8e-d31cb09701b9",
+      "claim_id": "C45",
+      "claim": "Murine tau has an N-terminal domain that is 11 amino acids shorter than human tau.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to the human homolog, murine tau differs in terms of the number of repeats (tau 3 R is absent in adult mice) as well as in the sequence of the N-terminal domain (11 amino acids shorter in mice) (Hern\u00e1ndez et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Hern\u00e1ndez et al., 2020.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:56:55.873300Z"
+    },
+    {
+      "id": "2e3ae219-a3c4-4401-a86b-cdc9944dd8bd",
+      "content_id": "0812d1a0-2ebd-43c9-af8e-d31cb09701b9",
+      "claim_id": "C46",
+      "claim": "The N-terminal domain of tau is relevant for tau-driven modulation of proteins involved in neuronal functioning.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, the N-terminal domain is relevant for the tau-driven modulation of proteins involved in neuronal functioning (i.e. NMDA receptors Miyamoto et al., 2017, Synapsin-1, and Synaptotagmin-1, among others Hern\u00e1ndez et al., 2020; Stefanoska et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Miyamoto et al., 2017, Hern\u00e1ndez et al., 2020, and Stefanoska et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:56:55.873300Z"
+    },
+    {
+      "id": "38b723b1-64de-4487-9466-801d8ad8ce51",
+      "content_id": "0812d1a0-2ebd-43c9-af8e-d31cb09701b9",
+      "claim_id": "C47",
+      "claim": "Age-dependent A\u03b2 accumulation is common to many non-human species including non-human primates, dogs, and sheep.",
+      "claim_type": "EXPLICIT",
+      "source": "Age-dependent A\u03b2 accumulation is common to many non-human species (i.e. non-human primates, dogs, sheep).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The authors state this as a known fact about non-human species.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:56:55.873300Z"
+    },
+    {
+      "id": "5c293c03-e831-4b64-ba06-63cafd4e8c6e",
+      "content_id": "0812d1a0-2ebd-43c9-af8e-d31cb09701b9",
+      "claim_id": "C48",
+      "claim": "No non-human animal except possibly Octodon degus displays the coexistence of A\u03b2 pathology, NFT inclusions, glucose dysmetabolism, and neurodegeneration.",
+      "claim_type": "EXPLICIT",
+      "source": "No other non-human animal \u2013 except possibly the Octodon degus (Steffen et al., 2016) \u2013 displays the coexistence of A\u03b2 pathology, NFT inclusions, glucose dysmetabolism, and neurodegeneration (Walker and Jucker, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Steffen et al., 2016 and Walker and Jucker, 2017.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:56:55.873300Z"
+    },
+    {
+      "id": "c7e3a522-a2fe-40af-8064-fceba2f65f70",
+      "content_id": "0812d1a0-2ebd-43c9-af8e-d31cb09701b9",
+      "claim_id": "C49",
+      "claim": "Mapt knock-out mice crossbred with APP transgenic models show reduced neuronal deficits and improved memory performance compared to mice with wild-type Mapt.",
+      "claim_type": "EXPLICIT",
+      "source": "Mapt knock-out mice crossbred with APP transgenic models show reduced neuronal deficits and improved memory performance compared to mice harboring the wild-type Mapt gene. These results suggest that tau confers toxicity to A\u03b2 and not vice versa (Roberson et al., 2007; Ittner et al., 2010; Sasaguri et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Roberson et al., 2007, Ittner et al., 2010, and Sasaguri et al., 2017.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:56:55.873300Z"
+    },
+    {
+      "id": "a75aff29-6e47-4ad1-8ec8-18439389d641",
+      "content_id": "0812d1a0-2ebd-43c9-af8e-d31cb09701b9",
+      "claim_id": "C50",
+      "claim": "Tau confers toxicity to A\u03b2 and not vice versa.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that tau confers toxicity to A\u03b2 and not vice versa (Roberson et al., 2007; Ittner et al., 2010; Sasaguri et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Roberson et al., 2007, Ittner et al., 2010, and Sasaguri et al., 2017, and is inferred from experimental results.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:56:55.873300Z"
+    },
+    {
+      "id": "bc3485f1-388c-449d-9d65-bef9ec215697",
+      "content_id": "0812d1a0-2ebd-43c9-af8e-d31cb09701b9",
+      "claim_id": "C51",
+      "claim": "Humanization of the murine tau gene was sufficient to accelerate the propagation of pathological tau independently of the presence of A\u03b2.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the humanization of the murine tau gene was found sufficient to accelerate the propagation of pathological tau independently of the presence of A\u03b2 (Saito et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Saito et al., 2019.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:56:55.873300Z"
+    },
+    {
+      "id": "cc232e87-a27f-4488-b50c-a57757be4db3",
+      "content_id": "0812d1a0-2ebd-43c9-af8e-d31cb09701b9",
+      "claim_id": "C52",
+      "claim": "In vitro studies use A\u03b2 concentrations several orders of magnitude above the physiological range.",
+      "claim_type": "EXPLICIT",
+      "source": "In vitro and in vivo studies are primarily performed in settings in which A\u03b2 concentrations are several orders of magnitude above the physiological range (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The authors state this as a characteristic of in vitro studies and reference Figure 1.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:56:55.873300Z"
+    },
+    {
+      "id": "4d48d719-6cb9-41d8-8a7a-83ae9052e8ec",
+      "content_id": "0812d1a0-2ebd-43c9-af8e-d31cb09701b9",
+      "claim_id": "C53",
+      "claim": "In vitro evidence of A\u03b2 neurotoxicity was based on cultured neurons exposed to nanomolar concentrations of low-molecular-weight oligomeric forms of the peptide.",
+      "claim_type": "EXPLICIT",
+      "source": "In vitro evidence, designed to demonstrate the neurotoxic properties of synthetic A\u03b2 adducts \u2013 in their different lengths and flavors \u2013, was based on cultured neurons exposed to nanomolar concentrations of low-molecular-weight oligomeric forms of the peptide.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The authors describe the experimental design of in vitro studies.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:56:55.873300Z"
+    },
+    {
+      "id": "7e295b8f-f0c6-494d-a16e-63585c8c7c28",
+      "content_id": "0812d1a0-2ebd-43c9-af8e-d31cb09701b9",
+      "claim_id": "C54",
+      "claim": "In vitro A\u03b2 concentrations used are a thousand-fold higher than the concentration found in vivo, which is usually in the picomolar range.",
+      "claim_type": "EXPLICIT",
+      "source": "These levels are a thousand-fold higher than the concentration found in vivo, usually in the picomolar range (Kepp et al., 2023a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Kepp et al., 2023a.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:56:55.873300Z"
+    },
+    {
+      "id": "0e963d77-247c-484e-9e78-d7978c4c59ac",
+      "content_id": "0812d1a0-2ebd-43c9-af8e-d31cb09701b9",
+      "claim_id": "C55",
+      "claim": "Physiological A\u03b2 levels exert neurotrophic-like effects on synaptogenesis, neuronal survival, growth, and differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Mounting evidence suggests that physiological A\u03b2 levels exert neurotrophic-like effects on synaptogenesis, neuronal survival, growth, and differentiation (Giuffrida et al., 2009; Yankner et al., 1990; Zhou et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Giuffrida et al., 2009, Yankner et al., 1990, and Zhou et al., 2022.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:56:55.873300Z"
+    },
+    {
+      "id": "23a1104e-0a33-4e25-91e8-9ea3b3c0cf84",
+      "content_id": "0812d1a0-2ebd-43c9-af8e-d31cb09701b9",
+      "claim_id": "C56",
+      "claim": "A\u03b2 dimers may be artifacts driven by SDS-based sample processing.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, two independent studies reported that A\u03b2 dimers \u2013 long considered central species in amyloid-driven toxicity \u2013 may be artifacts driven by SDS-based sample processing (Pujol-Pina et al., 2015; Watt et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Pujol-Pina et al., 2015 and Watt et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:56:55.873300Z"
+    },
+    {
+      "id": "edab375a-5de4-454c-8dca-f633eeb4fa58",
+      "content_id": "0812d1a0-2ebd-43c9-af8e-d31cb09701b9",
+      "claim_id": "C57",
+      "claim": "Three key aminoacid substitutions make murine A\u03b2 less prone to aggregation compared to human A\u03b2.",
+      "claim_type": "EXPLICIT",
+      "source": "Three key aminoacid substitutions make murine A\u03b2 less prone to aggregation when compared to its human counterpart.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The authors state this as a known difference between murine and human A\u03b2.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:56:55.873300Z"
+    },
+    {
+      "id": "d7bbc4fd-39ee-411f-a809-6ed8bfbeacee",
+      "content_id": "0812d1a0-2ebd-43c9-af8e-d31cb09701b9",
+      "claim_id": "C58",
+      "claim": "First-generation transgenic models overexpressed variable copy numbers of the APP gene harboring different AD-related mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "To overcome this issue, first-generation transgenic models overexpressed variable copy numbers of the APP gene harboring different AD-related mutations (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The authors describe the design of first-generation models and reference Figure 1.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:56:55.873300Z"
+    },
+    {
+      "id": "0d35409a-9587-443f-822c-32cb6d338bea",
+      "content_id": "0812d1a0-2ebd-43c9-af8e-d31cb09701b9",
+      "claim_id": "C59",
+      "claim": "There is no consensus that tau overexpression occurs in AD.",
+      "claim_type": "EXPLICIT",
+      "source": "Although high levels of total tau have been reported in AD patients, there is no consensus that tau overexpression occurs in AD (Hier et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Hier et al., 2022.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:56:55.873300Z"
+    },
+    {
+      "id": "31bdd53d-6e38-4499-b85c-5aef6d9d1c38",
+      "content_id": "0812d1a0-2ebd-43c9-af8e-d31cb09701b9",
+      "claim_id": "C60",
+      "claim": "PS19 mice generate tau expression levels that are 5-fold higher than endogenous murine tau.",
+      "claim_type": "EXPLICIT",
+      "source": "They harbor the human 4 R tau with the P301S and the P301L mutation, respectively. However, these models generate expression levels that are 5- (for PS19) to 13-fold (for rTg4510) higher than the endogenous murine tau (Jankowsky and Zheng, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Jankowsky and Zheng, 2017.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:56:55.873300Z"
+    },
+    {
+      "id": "fc7693b0-e725-4984-b6fc-6a3cc780f8e0",
+      "content_id": "0812d1a0-2ebd-43c9-af8e-d31cb09701b9",
+      "claim_id": "C61",
+      "claim": "rTg4510 mice generate tau expression levels that are 13-fold higher than endogenous murine tau.",
+      "claim_type": "EXPLICIT",
+      "source": "They harbor the human 4 R tau with the P301S and the P301L mutation, respectively. However, these models generate expression levels that are 5- (for PS19) to 13-fold (for rTg4510) higher than the endogenous murine tau (Jankowsky and Zheng, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Jankowsky and Zheng, 2017.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:56:55.873300Z"
+    },
+    {
+      "id": "f4a460f6-e2a2-4548-adbc-1ca14340edf4",
+      "content_id": "0812d1a0-2ebd-43c9-af8e-d31cb09701b9",
+      "claim_id": "C62",
+      "claim": "Mice overexpressing wild-type murine tau show similar traits to those overexpressing mutant human tau.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar traits, however, have been reported in mice overexpressing wild-type murine tau. These findings thereby indicate that, in mice, tau overexpression is sufficient to promote neurotoxicity independently of the tau genotype (Adams et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Adams et al., 2009.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:56:55.873300Z"
+    },
+    {
+      "id": "d1d1bd57-716e-48ec-a506-edff431beddb",
+      "content_id": "0812d1a0-2ebd-43c9-af8e-d31cb09701b9",
+      "claim_id": "C63",
+      "claim": "In mice, tau overexpression is sufficient to promote neurotoxicity independently of the tau genotype.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings thereby indicate that, in mice, tau overexpression is sufficient to promote neurotoxicity independently of the tau genotype (Adams et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Adams et al., 2009 and is inferred from experimental results.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:56:55.873300Z"
+    },
+    {
+      "id": "0c6dab18-abb0-4780-8375-06684ad73bb2",
+      "content_id": "0812d1a0-2ebd-43c9-af8e-d31cb09701b9",
+      "claim_id": "C64",
+      "claim": "Aging remains the primary risk factor for AD.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite decades of research efforts, aging remains the primary risk factor for AD (Herrup, 2010; Mattson and Arumugam, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Herrup, 2010 and Mattson and Arumugam, 2018.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:56:55.873300Z"
+    },
+    {
+      "id": "a15e1b05-8bf3-4295-8013-f6615fdb5e6e",
+      "content_id": "0812d1a0-2ebd-43c9-af8e-d31cb09701b9",
+      "claim_id": "C65",
+      "claim": "5xFAD mice display amyloid deposits starting at 2-4 months of age.",
+      "claim_type": "EXPLICIT",
+      "source": "Commonly used AD mouse models, like the 5xFAD, display amyloid deposits starting at 2\u20134 months of age (Oblak et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Oblak et al., 2021.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:56:55.873300Z"
+    },
+    {
+      "id": "e4299330-ca4d-4d13-a585-47c46ef1e68f",
+      "content_id": "0812d1a0-2ebd-43c9-af8e-d31cb09701b9",
+      "claim_id": "C66",
+      "claim": "J20 mice develop amyloid pathology following the onset of inflammation at a relatively young age.",
+      "claim_type": "EXPLICIT",
+      "source": "The J20 mice develop amyloid pathology a bit later, following the onset of inflammation; however, this still occurs at a relatively young age (Wright et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Wright et al., 2013.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:56:55.873300Z"
+    },
+    {
+      "id": "641a2f76-dec8-4b8e-a0d4-04d1e6ab4068",
+      "content_id": "0812d1a0-2ebd-43c9-af8e-d31cb09701b9",
+      "claim_id": "C67",
+      "claim": "Even fAD cases require decades for the disease to take hold, usually when carriers are in their 40s or 50s.",
+      "claim_type": "EXPLICIT",
+      "source": "It is also worth noting that even fAD cases require decades for the disease to take hold, usually when carriers of APP or PSEN mutations are in their 40 s or 50 s (Frisoni et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Frisoni et al., 2022.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:56:55.873300Z"
+    },
+    {
+      "id": "acd62835-154c-4709-bf32-5482fdf2a638",
+      "content_id": "0812d1a0-2ebd-43c9-af8e-d31cb09701b9",
+      "claim_id": "C68",
+      "claim": "Non-human primates show extensive cerebral A\u03b2 deposition in the absence of tau pathology or overt signs of dementia.",
+      "claim_type": "EXPLICIT",
+      "source": "However, these arguments do not align with observations from non-human primates (Walker and Jucker, 2017). These mammals show steeper aging trajectories when compared to humans, with extensive cerebral A\u03b2 deposition that occurs at ages proportional to their lifespan and in the absence of tau pathology or overt signs of dementia (Finch and Sapolsky, 1999; Walker and Jucker, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Walker and Jucker, 2017 and Finch and Sapolsky, 1999.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:56:55.873300Z"
+    },
+    {
+      "id": "46bfae20-22f1-4a48-8ef5-ca0a80ac9213",
+      "content_id": "0812d1a0-2ebd-43c9-af8e-d31cb09701b9",
+      "claim_id": "C69",
+      "claim": "Genome-wide association studies have identified well over 20 genetic risk loci for AD.",
+      "claim_type": "EXPLICIT",
+      "source": "Besides the rare mutations on APP, PSEN1, and PSEN2 genes showing an essentially 100% penetrance, linkage and genome-wide association studies (GWAS) have identified well over 20 additional genetic risk loci (Andrews et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Andrews et al., 2023.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:56:55.873300Z"
+    },
+    {
+      "id": "45db6bd0-3bc4-41b1-88f8-ee132bca5358",
+      "content_id": "0812d1a0-2ebd-43c9-af8e-d31cb09701b9",
+      "claim_id": "C70",
+      "claim": "AD-associated genes belong to three major pathways: cholesterol and lipid metabolism, immune system and inflammatory responses, and endosomal vesicle cycling.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the contribution of each associated gene was frequently interpreted in relation to A\u03b2- or tau-pathology, it is notable that these genes belong to three major pathways: cholesterol and lipid metabolism, immune system and inflammatory responses, and endosomal vesicle cycling (Van Cauwenberghe et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Van Cauwenberghe et al., 2016.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:56:55.873300Z"
+    },
+    {
+      "id": "b38be9d9-b34e-4cbe-8b57-2e4474b4b6f2",
+      "content_id": "0812d1a0-2ebd-43c9-af8e-d31cb09701b9",
+      "claim_id": "C71",
+      "claim": "In humans, three major APOE allelic variants exist: APOE\u03b52, \u03b53, and \u03b54.",
+      "claim_type": "EXPLICIT",
+      "source": "This key protein is involved in fat metabolism \u2013 including cholesterol. In humans, three major allelic variants exist: APOE\u03b52, \u03b53, and \u03b54 (Huebbe and Rimbach, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Huebbe and Rimbach, 2017.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:56:55.873300Z"
+    },
+    {
+      "id": "4bcce839-8d51-4324-99a8-284bd3ace444",
+      "content_id": "0812d1a0-2ebd-43c9-af8e-d31cb09701b9",
+      "claim_id": "C72",
+      "claim": "The APOE\u03b54 isoform increases the risk of developing late-onset AD while APOE\u03b52 is protective.",
+      "claim_type": "EXPLICIT",
+      "source": "Each genotype is strongly associated with a different risk of developing the late-onset form of the disease with the \u03b54 isoform increasing it while the \u03b52 being protective.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The authors state this as established knowledge about APOE variants.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:56:55.873300Z"
+    },
+    {
+      "id": "2b771640-b9b0-4505-b761-6e5812608bdb",
+      "content_id": "0812d1a0-2ebd-43c9-af8e-d31cb09701b9",
+      "claim_id": "C73",
+      "claim": "The single mouse APOE isoform shares only 70% homology with human APOE.",
+      "claim_type": "EXPLICIT",
+      "source": "First, important differences concern APOE itself. The single mouse APOE isoform (mAPOE) shares only 70% of the homology with its human counterparts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The authors state this as a known difference between mouse and human APOE.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:56:55.873300Z"
+    },
+    {
+      "id": "8fca4f41-8b94-486d-a8d7-f9dd0fab32e9",
+      "content_id": "0812d1a0-2ebd-43c9-af8e-d31cb09701b9",
+      "claim_id": "C74",
+      "claim": "The three human APOE isoforms differ from each other by just up to two residues.",
+      "claim_type": "EXPLICIT",
+      "source": "This is a serious red flag, considering that the three human isoforms, 299 amino acids long, differ from each other for just up to two residues (Frieden and Garai, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Frieden and Garai, 2012.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:56:55.873300Z"
+    },
+    {
+      "id": "af9a6c03-ad4d-4729-80dc-cc2a7027758e",
+      "content_id": "0812d1a0-2ebd-43c9-af8e-d31cb09701b9",
+      "claim_id": "C75",
+      "claim": "mAPOE significantly accelerates plaque formation compared to human APOE.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement, early studies comparing the effects on A\u03b2 deposition of human isoforms vs. mAPOE revealed that mAPOE significantly accelerates plaque formation compared to its humanized homolog (Fagan et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Fagan et al., 2002.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:56:55.873300Z"
+    },
+    {
+      "id": "78ca98f7-5e42-44d2-b346-edf711184819",
+      "content_id": "0812d1a0-2ebd-43c9-af8e-d31cb09701b9",
+      "claim_id": "C76",
+      "claim": "The daily turnover of the brain sterol pool is more than an order of magnitude higher in mice than in humans (0.4% vs 0.03% per day).",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the daily turnover of the brain sterol pool is more than an order of magnitude higher in mice than in humans (0.4% vs 0.03% per day, respectively) (Dietschy and Turley, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Dietschy and Turley, 2004.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:56:55.873300Z"
+    },
+    {
+      "id": "1ed3371b-6197-467d-9c37-80b78b918a11",
+      "content_id": "0812d1a0-2ebd-43c9-af8e-d31cb09701b9",
+      "claim_id": "C77",
+      "claim": "Obesity and diabetes are included in the list of 12 modifiable risk factors that account for around 40% of all dementia cases.",
+      "claim_type": "EXPLICIT",
+      "source": "Epidemiological evidence indicates that metabolic alterations are strongly involved in AD pathogenesis, with obesity and diabetes being included in the list of the 12 modifiable risk factors that account for around 40% of all dementia cases (Livingston et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Livingston et al., 2020.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:56:55.873300Z"
+    },
+    {
+      "id": "2182a9ea-3a00-4008-9b0d-3f9d1333e1c1",
+      "content_id": "0812d1a0-2ebd-43c9-af8e-d31cb09701b9",
+      "claim_id": "C78",
+      "claim": "Central insulin resistance and defective insulin signaling have been consistently observed in human post-mortem studies.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, central insulin resistance and defective insulin signaling have been consistently observed in human post-mortem studies, leading to the hypothesis that AD is a 'Type 3 diabetes' (Steen et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Steen et al., 2005.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:56:55.873300Z"
+    },
+    {
+      "id": "211ef9ec-1b37-4277-a138-c50faffb15b0",
+      "content_id": "0812d1a0-2ebd-43c9-af8e-d31cb09701b9",
+      "claim_id": "C79",
+      "claim": "Calculations estimate a sevenfold higher basal metabolic rate in mice vs humans.",
+      "claim_type": "EXPLICIT",
+      "source": "In this context, calculations estimate a sevenfold higher basal metabolic rate in mice vs humans (Terpstra, 2001), a difference that might affect pathology progression or, as demonstrated in other settings, influence the effectiveness of disease-modifying interventions (Gordon-Larsen et al., 2021; Terpstra, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Terpstra, 2001.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:56:55.873300Z"
+    },
+    {
+      "id": "4e060e37-6103-46ef-b60b-2aeae815b848",
+      "content_id": "0812d1a0-2ebd-43c9-af8e-d31cb09701b9",
+      "claim_id": "C80",
+      "claim": "Robust associations were identified between AD susceptibility and genetic variants linked to genes specifically expressed by myeloid cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Robust associations were identified between AD susceptibility and genetic variants linked to genes specifically expressed by myeloid cells. These include CD33, CLU, MS4A4A and MS4A6A, PLCG2, SORL1, and TREM2 (Andrews et al., 2023; McQuade and Blurton-Jones, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Andrews et al., 2023 and McQuade and Blurton-Jones, 2019.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:56:55.873300Z"
+    },
+    {
+      "id": "922fb486-844f-4553-8ac3-99d041ca8c82",
+      "content_id": "0812d1a0-2ebd-43c9-af8e-d31cb09701b9",
+      "claim_id": "C81",
+      "claim": "Comparative single-cell analysis showed that brain cells of humans and mice exhibit similar transcriptomic profiles in physiological settings but remarkable changes occur upon pathological conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparative single-cell analysis of humans vs mice showed that brain cells of the two species exhibit similar transcriptomic profiles in physiological settings, but remarkable changes occur upon pathological conditions (Zhou et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Zhou et al., 2020.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:56:55.873300Z"
+    },
+    {
+      "id": "7a97c7a4-966a-493f-b08d-47b8038b44df",
+      "content_id": "0812d1a0-2ebd-43c9-af8e-d31cb09701b9",
+      "claim_id": "C82",
+      "claim": "The transcriptomic differences between humans and mice are particularly prominent in microglia.",
+      "claim_type": "EXPLICIT",
+      "source": "The effect is particularly prominent in microglia, the immune cells of the brain (Zhou et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Zhou et al., 2020.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:56:55.873300Z"
+    },
+    {
+      "id": "b14571ed-7797-421b-a2c2-243faebe358c",
+      "content_id": "0812d1a0-2ebd-43c9-af8e-d31cb09701b9",
+      "claim_id": "C83",
+      "claim": "Post-mortem data reveal that most aging brains are the target of mixed neuropathology.",
+      "claim_type": "EXPLICIT",
+      "source": "Post-mortem data reveal that most aging brains are the target of mixed neuropathology (i.e. AD, cerebral amyloid angiopathy, TDP-43, Lewy body, atherosclerosis, etc.) (Boyle et al., 2018) while the isolated presence of senile plaques and NFTs is found only in a tiny fraction of dementia cases (Boyle et al., 2021; Boyle et al., 2018; Brenowitz et al., 2017; Morris et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Boyle et al., 2018, Boyle et al., 2021, Brenowitz et al., 2017, and Morris et al., 2018.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:56:55.873300Z"
+    },
+    {
+      "id": "2ed5f5d5-7457-4cdd-9ea8-7cbe8dee2386",
+      "content_id": "0812d1a0-2ebd-43c9-af8e-d31cb09701b9",
+      "claim_id": "C84",
+      "claim": "Post-mortem examination of over 1000 dementia cases identified over 230 different neuropathological combinations.",
+      "claim_type": "EXPLICIT",
+      "source": "Post-mortem examination of >1000 dementia cases identified >230 different neuropathological combinations (Boyle et al., 2018), indicating almost person-specific pathological signatures and disease trajectories.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Boyle et al., 2018.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:56:55.873300Z"
+    },
+    {
+      "id": "014f13d5-cd87-42ce-80ae-d373d490cc0d",
+      "content_id": "0812d1a0-2ebd-43c9-af8e-d31cb09701b9",
+      "claim_id": "C85",
+      "claim": "The risk of developing AD is nearly double in women.",
+      "claim_type": "EXPLICIT",
+      "source": "The risk of developing AD is nearly double in women, a difference not fully explained by the female longer life expectancy (Reed-Geaghan, 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Reed-Geaghan, 2022.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:56:55.873300Z"
+    },
+    {
+      "id": "a30ffebb-b06b-48cc-ac21-89c661787668",
+      "content_id": "0812d1a0-2ebd-43c9-af8e-d31cb09701b9",
+      "claim_id": "C86",
+      "claim": "Female mice lack the reproductive senescence features including menopause and extended post-reproductive periods that characterize women.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, biological differences can bias the outcomes. Among others, female mice lack the reproductive senescence features, including menopause and the extended post-reproductive periods, that characterize at least one-third of women's lifespan and that fall within the most critical timeframe for developing early signs of dementia (Moir and Tanzi, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Moir and Tanzi, 2019.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:56:55.873300Z"
+    },
+    {
+      "id": "a0c20bd0-541e-413f-9521-51c344f2f687",
+      "content_id": "0812d1a0-2ebd-43c9-af8e-d31cb09701b9",
+      "claim_id": "C87",
+      "claim": "Circadian rhythms might influence and bias translational studies using rodent models.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, nocturnal rodents have opposite circadian cycles when compared to humans. Since most experimental procedures are performed during the rodent inactive phase, recent findings suggested that circadian rhythms might influence and bias translational studies (Esposito et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Esposito et al., 2020.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:56:55.873300Z"
+    },
+    {
+      "id": "99807909-6db7-470e-a9ea-0677070c1c53",
+      "content_id": "0812d1a0-2ebd-43c9-af8e-d31cb09701b9",
+      "claim_id": "C88",
+      "claim": "Sleep hours are important for the clearance of brain interstitial fluids from proteins and solutes accumulated during wake cycles, like A\u03b2 and tau.",
+      "claim_type": "EXPLICIT",
+      "source": "This might also occur in the context of AD, considering the importance of inactive phases (i.e. sleep hours) for the clearance of brain interstitial fluids from proteins and solutes accumulated during the wake/active cycles, like A\u03b2 and tau (Holth et al., 2019; Roh et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Holth et al., 2019 and Roh et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:56:55.873300Z"
+    },
+    {
+      "id": "5fc719df-23a2-4460-aefc-d57ef7616d05",
+      "content_id": "0812d1a0-2ebd-43c9-af8e-d31cb09701b9",
+      "claim_id": "C89",
+      "claim": "First-generation APP or tau overexpressing mouse models remain the primary tools in use for studying AD.",
+      "claim_type": "EXPLICIT",
+      "source": "First-generation of APP (or tau) overexpressing mouse models remain the primary tools in use for studying AD (Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The authors state this as a current practice in the field and reference Table 1.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:56:55.873300Z"
+    },
+    {
+      "id": "5369c6bd-cc26-4714-a3ba-516d0db06eb7",
+      "content_id": "0812d1a0-2ebd-43c9-af8e-d31cb09701b9",
+      "claim_id": "C90",
+      "claim": "Studies showing that overloading the brain with foreign proteins generates a phenotype may have been over-interpreted in support of the ACH.",
+      "claim_type": "EXPLICIT",
+      "source": "In hindsight, studies showing that overloading the brain from birth with foreign protein/s generates a phenotype, while its/their removal has some subsequent benefit, may have been over-interpreted in support of the ACH.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The authors argue this interpretation issue.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:56:55.873300Z"
+    },
+    {
+      "id": "6440873f-6809-4da8-890b-daeb8de00b42",
+      "content_id": "0812d1a0-2ebd-43c9-af8e-d31cb09701b9",
+      "claim_id": "C91",
+      "claim": "Mice are valuable for investigating fundamental mechanisms through which perturbation of cellular interactions leads to brain dysfunction.",
+      "claim_type": "EXPLICIT",
+      "source": "First, mice are valuable for investigating the fundamental mechanisms through which perturbation of cellular interactions leads to brain dysfunction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The authors propose this as a valuable use of mouse models.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:56:55.873300Z"
+    },
+    {
+      "id": "dd23f9cb-b416-4f7f-b2ef-c220e273c0e4",
+      "content_id": "0812d1a0-2ebd-43c9-af8e-d31cb09701b9",
+      "claim_id": "C92",
+      "claim": "Commonly used mice help unravel A\u03b2-independent mechanisms involved in AD.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, the commonly used mice expressing full-length mutant APP and/or mutant PSENs help unravel A\u03b2-independent mechanisms involved in AD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The authors propose this as another valuable use of mouse models.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:56:55.873300Z"
+    },
+    {
+      "id": "df380903-7d73-4aea-98b0-5c5ba358c8cb",
+      "content_id": "0812d1a0-2ebd-43c9-af8e-d31cb09701b9",
+      "claim_id": "C93",
+      "claim": "A reconceptualization of murine models is needed.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, a reconceptualization of murine models is needed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The authors call for this reconceptualization.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:56:55.873300Z"
+    },
+    {
+      "id": "4b341cd7-d893-45b5-acba-83156868b224",
+      "content_id": "0812d1a0-2ebd-43c9-af8e-d31cb09701b9",
+      "claim_id": "C94",
+      "claim": "Collective efforts are underway to develop better, more informative, and predictive models to improve translation from animal to humans.",
+      "claim_type": "EXPLICIT",
+      "source": "Collective efforts are underway to develop better, more informative, and predictive models to improve translation from animal to humans (Vitek et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Vitek et al., 2020.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:56:55.873300Z"
+    },
+    {
+      "id": "191174b1-28ad-4ec0-a59d-131e873b7c63",
+      "content_id": "0812d1a0-2ebd-43c9-af8e-d31cb09701b9",
+      "claim_id": "C95",
+      "claim": "Most animal studies do not consistently observe blinding protocols.",
+      "claim_type": "EXPLICIT",
+      "source": "Regrettably, most animal studies do not consistently observe such practices (Errington, 2024; Reynolds, 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Errington, 2024 and Reynolds, 2022.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:56:55.873300Z"
+    },
+    {
+      "id": "80d63b44-6983-4d84-8cb3-1c7c941a94d5",
+      "content_id": "0812d1a0-2ebd-43c9-af8e-d31cb09701b9",
+      "claim_id": "C96",
+      "claim": "Human cells derived from induced pluripotent stem cells have emerged as indispensable tools to delve into disease mechanisms specific to human biology.",
+      "claim_type": "EXPLICIT",
+      "source": "Human cells of the central nervous system, usually derived from induced pluripotent stem cells (iPSC), have emerged as indispensable tools to delve into disease mechanisms specific to human biology.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The authors state this as a development in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:56:55.873300Z"
+    },
+    {
+      "id": "3597f29b-4124-4746-98c6-ed10c8f1ef6c",
+      "content_id": "0812d1a0-2ebd-43c9-af8e-d31cb09701b9",
+      "claim_id": "C97",
+      "claim": "Human cell engraftment in AD models is performed in immune-deficient strains, missing the critical contribution of the immune system.",
+      "claim_type": "EXPLICIT",
+      "source": "However, like with any experimental model, some trade-offs are to be expected. Human cell engraftment is performed in immune-deficient AD strains, thereby missing the critical contribution of the immune system to the generation of the pathological phenotype.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The authors describe a limitation of human-mouse chimera models.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:56:55.873300Z"
+    },
+    {
+      "id": "1b9c155e-4fd0-44f2-b83d-3566da2801b8",
+      "content_id": "0812d1a0-2ebd-43c9-af8e-d31cb09701b9",
+      "claim_id": "C98",
+      "claim": "Human brain organoids provide a physiologically relevant platform to study the complexity of AD.",
+      "claim_type": "EXPLICIT",
+      "source": "Complementing this, co-culture 3D systems and human brain organoids \u2013 multicellular, complex 3D structures \u2013 derived from iPSC provide a physiologically relevant platform to study the complexity of AD (Cenini et al., 2021; Kim et al., 2020; Penney et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Cenini et al., 2021, Kim et al., 2020, and Penney et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:56:55.873300Z"
+    },
+    {
+      "id": "10ed548a-500d-4dad-b1f4-cb940079ba30",
+      "content_id": "0812d1a0-2ebd-43c9-af8e-d31cb09701b9",
+      "claim_id": "C99",
+      "claim": "Human cell- and organoid-based models lack a fully developed and functional nervous system, tissue vascularization, and the ability to capture interplay between multiple organ systems.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, human cell- and organoid-based models possess inherent limitations. These include the absence of a fully developed and functional nervous system (i.e. complex circuit dynamics), the lack of tissue vascularization, and the inability to capture the intricate interplay between multiple organ systems (Andrews and Kriegstein, 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Andrews and Kriegstein, 2022.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:56:55.873300Z"
+    },
+    {
+      "id": "962c70c0-69f7-45e0-8287-6da0fa99bb93",
+      "content_id": "0812d1a0-2ebd-43c9-af8e-d31cb09701b9",
+      "claim_id": "C100",
+      "claim": "There is mounting interest in larger animal models including non-human primates.",
+      "claim_type": "EXPLICIT",
+      "source": "To bridge these gaps, there is now mounting interest in larger animal models, including non-human primates (Jennings et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Jennings et al., 2016.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:56:55.873300Z"
+    },
+    {
+      "id": "82b2f2a2-205b-48a2-8539-771c74353beb",
+      "content_id": "0812d1a0-2ebd-43c9-af8e-d31cb09701b9",
+      "claim_id": "C101",
+      "claim": "A comparative biology approach has been proposed where companion animals act as a proxy of the complex network of factors that modulate the disease.",
+      "claim_type": "EXPLICIT",
+      "source": "Complementing this, a comparative biology approach has been recently proposed. This perspective stems from the idea that companion animals undergo concomitant age-related changes and share the same environment and lifestyle of the patients, thereby acting as a proxy of the complex network of factors that modulate the disease (de Sousa et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to de Sousa et al., 2023.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:56:55.873300Z"
+    },
+    {
+      "id": "73fc9a2e-26aa-475b-9acd-4289cb86ec90",
+      "content_id": "0812d1a0-2ebd-43c9-af8e-d31cb09701b9",
+      "claim_id": "C102",
+      "claim": "Multi-scale computational models provide an eco-system for integrating and interrogating molecular, cellular, and network-level interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "One area revolves around developing multi-scale computational models, which provide an eco-system for integrating and interrogating molecular, cellular, and network-level interactions (Rollo et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Rollo et al., 2023.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:56:55.873300Z"
+    },
+    {
+      "id": "5afe2e41-5a4a-451c-aa98-a35a1e242369",
+      "content_id": "0812d1a0-2ebd-43c9-af8e-d31cb09701b9",
+      "claim_id": "C103",
+      "claim": "Computational models can help predict disease progression and identify optimal treatment strategies tailored to each patient's unique circumstances.",
+      "claim_type": "EXPLICIT",
+      "source": "By incorporating individual patient data, including genetic profiles and environmental exposures, computational models can help predict disease progression and identify optimal treatment strategies tailored to each patient's unique circumstances (Forloni, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Forloni, 2020.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:56:55.873300Z"
+    },
+    {
+      "id": "0058b2af-f5be-4a07-b44c-c8ff1278765a",
+      "content_id": "0812d1a0-2ebd-43c9-af8e-d31cb09701b9",
+      "claim_id": "C104",
+      "claim": "The limitations of current preclinical AD models call for an urgent reconsideration of research strategies.",
+      "claim_type": "EXPLICIT",
+      "source": "In conclusion, the limitations of current preclinical AD models and the questionable benefit observed in anti-A\u03b2 clinical trials call for an urgent reconsideration of our strategies (Granzotto and Sensi, 2024; H\u00f8ilund-Carlsen et al., 2023; Kepp et al., 2023b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Granzotto and Sensi, 2024, H\u00f8ilund-Carlsen et al., 2023, and Kepp et al., 2023b.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:56:55.873300Z"
+    },
+    {
+      "id": "caa31d07-d7aa-487e-9ce3-d16c89a05116",
+      "content_id": "0812d1a0-2ebd-43c9-af8e-d31cb09701b9",
+      "claim_id": "C105",
+      "claim": "A more comprehensive setting involving other experimental systems and more rigorous experimental designs is required.",
+      "claim_type": "EXPLICIT",
+      "source": "On the preclinical front, a more comprehensive setting involving other experimental systems and more rigorous experimental designs is required to guarantee the cost-effective generation of data with high translational value (Cozachenco et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Cozachenco et al., 2023.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:56:55.873300Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "ebbbe9e0-9db5-4b63-985f-21d912b968b2",
+      "content_id": "0812d1a0-2ebd-43c9-af8e-d31cb09701b9",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The manuscript argues that recently approved antibody-based treatments for Alzheimer's disease are controversial and show limited clinical benefits at best, with A\u03b2-lowering antibodies offering only modest benefits.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C2, and C13 are supported by citations to peer-reviewed literature (H\u00f8ilund-Carlsen et al., 2024; Kepp et al., 2023a; and review articles). The characterization of the approval as controversial and the limited clinical benefits are documented in the cited sources, providing adequate support for this assessment of current AD therapeutics.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:56:55.873300Z"
+    },
+    {
+      "id": "a586a68a-1111-4995-8e47-571b415df7b8",
+      "content_id": "0812d1a0-2ebd-43c9-af8e-d31cb09701b9",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The authors argue that current AD mouse models are based on oversimplistic assumptions of the amyloid cascade hypothesis and that studies showing protein overload generates a phenotype may have been over-interpreted in support of the ACH.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C3 and C90 represent the authors' interpretive position rather than empirical findings. While the authors provide extensive evidence of model limitations throughout the manuscript, the claim that models are 'oversimplistic' and that results have been 'over-interpreted' are subjective assessments that depend on how one weighs the accumulated evidence. The evaluation is uncertain because these are opinion-based conclusions rather than testable hypotheses.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:56:55.873300Z"
+    },
+    {
+      "id": "c4ce5dd5-49f3-4617-aa45-afca0455367c",
+      "content_id": "0812d1a0-2ebd-43c9-af8e-d31cb09701b9",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The amyloid cascade hypothesis identifies \u03b2-amyloid dysmetabolism and deposition as the primary driver of AD pathogenesis, though there is a non-linear association between A\u03b2 plaques and cognitive deficits, leading to controversial revisions suggesting soluble oligomers as the primary neurotoxic species.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C7 accurately describe the ACH and its evolution, supported by appropriate citations (Hardy and Higgins, 1992; Cline et al., 2018; Lambert et al., 1998; Morris et al., 2018; Morris et al., 2014). These claims represent established knowledge in the field and the controversies are well-documented in the cited literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:56:55.873300Z"
+    },
+    {
+      "id": "a27677be-bc9f-4453-a675-7446e99cc116",
+      "content_id": "0812d1a0-2ebd-43c9-af8e-d31cb09701b9",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The ATN research framework for AD is based on amyloid, tau, and neurodegeneration, but offers suboptimal and incomplete heuristic value.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8 and C9 are supported by citations to Jack et al., 2018 and Morris et al., 2018. The description of the ATN framework is factual, and the critique of its limitations is supported by peer-reviewed literature, making this a well-supported characterization.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:56:55.873300Z"
+    },
+    {
+      "id": "c21a23fa-888f-41f6-a8b3-342e8f00d9ab",
+      "content_id": "0812d1a0-2ebd-43c9-af8e-d31cb09701b9",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "There is growing skepticism around the sole centrality of A\u03b2 in AD, supported by evidence that many cognitively unimpaired elderly have amyloid pathology and that mixed neuropathology contributes to AD cases.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C12 are supported by citations to review articles and represent well-documented observations in the field. The presence of amyloid pathology in cognitively normal individuals and the contribution of mixed neuropathology are established findings that challenge the ACH.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:56:55.873300Z"
+    },
+    {
+      "id": "8a876b2c-b89c-4e9d-9cd7-6224b2d8dff3",
+      "content_id": "0812d1a0-2ebd-43c9-af8e-d31cb09701b9",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The API Colombia study and A4 study, which enrolled subjects at high risk for AD or with elevated brain A\u03b2 levels, were both unsuccessful in demonstrating clinical benefits from A\u03b2-targeting interventions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C17 are supported by appropriate citations (Alzforum, 2022; Sperling et al., 2023; Panza et al., 2019). The description of these clinical trials and their outcomes is factual and well-documented, providing strong evidence against the efficacy of early A\u03b2-targeting interventions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:56:55.873300Z"
+    },
+    {
+      "id": "21aa0e12-48f1-4feb-9ab3-23f248265c9c",
+      "content_id": "0812d1a0-2ebd-43c9-af8e-d31cb09701b9",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "More than 210 rodent models have been generated to recapitulate AD's clinical features, but the translational outcomes have been poor to date.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18 and C19 are supported by the authors' knowledge of the field. The count of rodent models is presented as factual, and the assessment of poor translational outcomes is consistent with the broader literature on AD drug development failures. However, the lack of specific citations for the model count and the subjective nature of 'poor' outcomes introduce some uncertainty.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:56:55.873300Z"
+    },
+    {
+      "id": "33171913-0919-42b5-a318-9f04d6873e4c",
+      "content_id": "0812d1a0-2ebd-43c9-af8e-d31cb09701b9",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Familial AD accounts for less than 1% of total cases, and most fAD mouse models do not show tau pathology, brain atrophy, or neurodegeneration, with modest neuronal loss confined to discrete brain regions primarily in models with both APP and PSEN1 mutations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C24 are supported by citation to Pavisic et al., 2020 for the prevalence of fAD, and the characterization of model limitations is consistent with established knowledge in the field. The observation that neurodegeneration is primarily seen in APP+PSEN1 models is an important pattern that raises questions about the role of A\u03b2 versus PSEN1.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:56:55.873300Z"
+    },
+    {
+      "id": "1cd04c4e-53f7-434a-97de-2e57b9ca7e2b",
+      "content_id": "0812d1a0-2ebd-43c9-af8e-d31cb09701b9",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "PSEN mutations are likely primary drivers of AD-related neuronal dysfunction in mouse models, with effects occurring in an A\u03b2-independent fashion, supporting the presenilin hypothesis that identifies PSEN dysfunction as the primary contributor to neurodegeneration in fAD.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C28 are supported by multiple citations (Al Rahim et al., 2020; Corona et al., 2011; Duff et al., 1996; Hernandez-Sapiens et al., 2022; Mattson et al., 2000; Stutzmann et al., 2006; Stutzmann et al., 2004; Bomba et al., 2013; Shen and Kelleher, 2007; Yan et al., 2024). The evidence from genetic manipulation studies showing that PSEN1 removal eliminates the phenotype while single PSEN1 mutants retain dysfunction provides strong support for the presenilin hypothesis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:56:55.873300Z"
+    },
+    {
+      "id": "8cd07e35-4e99-45f0-bbaa-b3d7cb3c32c1",
+      "content_id": "0812d1a0-2ebd-43c9-af8e-d31cb09701b9",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "In 75% of fAD cases, PSEN1 mutations led to decreased production of A\u03b2 fragments, supporting the notion that amyloid is not the disease driver.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C29 is supported by citation to Sun et al., 2017, which provides systematic analysis of PSEN1 mutations. This is a critical finding that challenges the ACH, as it shows that most fAD-causing PSEN1 mutations actually decrease A\u03b2 production rather than increase it.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:56:55.873300Z"
+    },
+    {
+      "id": "3fa980d2-cf07-49c5-a4d1-c6b73329f0f7",
+      "content_id": "0812d1a0-2ebd-43c9-af8e-d31cb09701b9",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "\u03b3-secretase inhibitors have been found to worsen cognition in clinical trials, likely due to inhibition of PSEN activity and negative downstream impacts on signaling pathways like Notch signaling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30 and C31 are supported by citations to clinical trials (Coric et al., 2015; Doody et al., 2013) and mechanistic explanation (Hur, 2022). The consistent finding of cognitive worsening with \u03b3-secretase inhibitors provides clinical evidence supporting the importance of PSEN function beyond A\u03b2 production.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:56:55.873300Z"
+    },
+    {
+      "id": "9c953a4a-aaf5-4d0e-b602-adec5a52481c",
+      "content_id": "0812d1a0-2ebd-43c9-af8e-d31cb09701b9",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Neuronal loss in fAD models often occurs as necrotic cell death near senile plaques, suggesting mechanical disruption rather than chronic neuronal dysfunction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C32 is supported by citation to Tanaka et al., 2020. This observation is important because it suggests that the neuronal loss in these models may not accurately reflect the pathological process in human AD, where neurodegeneration is thought to be a more gradual, regulated process.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:56:55.873300Z"
+    },
+    {
+      "id": "7e34f5b0-2ad2-48ce-89bc-6ac454d731c5",
+      "content_id": "0812d1a0-2ebd-43c9-af8e-d31cb09701b9",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Second-generation knock-in models with humanized App genes exhibit A\u03b2 alterations preceding cognitive deficits but require multiple mutations not found in humans, fail to develop tau pathology or neurodegeneration, show only presynaptic alterations, and exhibit increased brain metabolism contrary to AD patients.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C39 are supported by citations to Saito et al., 2014; Benitez et al., 2021; and Xia et al., 2022. The evidence shows that even improved second-generation models have significant limitations, including the need for multiple mutations, lack of key AD features, and metabolic changes opposite to human disease.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:56:55.873300Z"
+    },
+    {
+      "id": "421e8954-933c-429c-9fe3-3091fb559df5",
+      "content_id": "0812d1a0-2ebd-43c9-af8e-d31cb09701b9",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Tau pathology is an accurate correlate of AD-related neurodegeneration, but most tau models overexpress human MAPT with FTLD-associated mutations rather than AD mutations, though they better phenocopy some AD features like NFTs and neurodegeneration compared to APP models.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C42 are supported by citation to Knopman et al., 2021 and established knowledge about tau models. The observation that tau models use FTLD mutations rather than AD-specific mutations is a critical limitation, though the models do capture some AD-relevant features better than APP models.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:56:55.873300Z"
+    },
+    {
+      "id": "75d3319e-647f-4b58-bbd0-778d394926ff",
+      "content_id": "0812d1a0-2ebd-43c9-af8e-d31cb09701b9",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Human tau has six isoforms from MAPT alternative splicing, while murine tau differs in repeat number (lacking 3R in adults) and has an N-terminal domain 11 amino acids shorter, which is relevant for tau-driven modulation of neuronal proteins.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C46 are supported by citations to Hern\u00e1ndez et al., 2020; Miyamoto et al., 2017; and Stefanoska et al., 2018. These species differences in tau structure are well-documented and represent important limitations for translating findings from mouse tau models to human disease.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:56:55.873300Z"
+    },
+    {
+      "id": "a1934648-3b1e-4fa1-818b-73490d023a6c",
+      "content_id": "0812d1a0-2ebd-43c9-af8e-d31cb09701b9",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Age-dependent A\u03b2 accumulation is common to many non-human species, but no non-human animal except possibly Octodon degus displays the coexistence of A\u03b2 pathology, NFT inclusions, glucose dysmetabolism, and neurodegeneration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47 and C48 are supported by citations to Steffen et al., 2016 and Walker and Jucker, 2017. This observation highlights the unique nature of human AD pathology and the difficulty of fully recapitulating the disease in animal models.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:56:55.873300Z"
+    },
+    {
+      "id": "07b85929-096b-4537-8b6f-509629c0b376",
+      "content_id": "0812d1a0-2ebd-43c9-af8e-d31cb09701b9",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Mapt knock-out mice crossed with APP transgenic models show reduced deficits and improved memory, suggesting tau confers toxicity to A\u03b2 rather than vice versa, and humanization of murine tau accelerates pathological tau propagation independently of A\u03b2.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C51 are supported by citations to Roberson et al., 2007; Ittner et al., 2010; Sasaguri et al., 2017; and Saito et al., 2019. These genetic studies provide strong evidence that tau may sit upstream of A\u03b2 in the pathological cascade, challenging the traditional ACH sequence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:56:55.873300Z"
+    },
+    {
+      "id": "6b78464d-d769-48c7-a56f-7339d6dda054",
+      "content_id": "0812d1a0-2ebd-43c9-af8e-d31cb09701b9",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "In vitro studies use A\u03b2 concentrations (nanomolar) that are thousand-fold higher than physiological levels (picomolar), while physiological A\u03b2 levels exert neurotrophic effects, and A\u03b2 dimers may be SDS-induced artifacts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C56 are supported by citations to Kepp et al., 2023a; Giuffrida et al., 2009; Yankner et al., 1990; Zhou et al., 2022; Pujol-Pina et al., 2015; and Watt et al., 2013. This is a critical methodological concern that questions the physiological relevance of many in vitro A\u03b2 toxicity studies.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:56:55.873300Z"
+    },
+    {
+      "id": "36f46be3-058e-47ac-bf1c-0667a1938106",
+      "content_id": "0812d1a0-2ebd-43c9-af8e-d31cb09701b9",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Murine A\u03b2 is less prone to aggregation than human A\u03b2 due to three amino acid substitutions, leading to the development of first-generation transgenic models that overexpress APP with AD-related mutations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57 and C58 describe well-established differences between mouse and human A\u03b2 and the rationale for first-generation model design. This is supported by general knowledge in the field and explains why APP overexpression was necessary to generate amyloid pathology in mice.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:56:55.873300Z"
+    },
+    {
+      "id": "7852f609-ce18-4e74-9a1a-e178807e9e76",
+      "content_id": "0812d1a0-2ebd-43c9-af8e-d31cb09701b9",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "There is no consensus that tau overexpression occurs in AD, yet PS19 and rTg4510 mice generate 5-13 fold higher tau expression than endogenous levels, and mice overexpressing wild-type murine tau show similar traits, indicating tau overexpression alone is sufficient for neurotoxicity in mice.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C63 are supported by citations to Hier et al., 2022; Jankowsky and Zheng, 2017; and Adams et al., 2009. The observation that wild-type tau overexpression produces similar phenotypes to mutant tau overexpression is critical, as it suggests the pathology may be driven by overexpression rather than specific mutations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:56:55.873300Z"
+    },
+    {
+      "id": "ca60f645-fafa-4e07-8b90-a1ffc634e385",
+      "content_id": "0812d1a0-2ebd-43c9-af8e-d31cb09701b9",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "Aging is the primary risk factor for AD, but mouse models develop pathology at very young ages (2-4 months for 5xFAD) compared to human disease which takes decades even in fAD cases, and non-human primates show A\u03b2 deposition without tau pathology or dementia.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C68 are supported by citations to Herrup, 2010; Mattson and Arumugam, 2018; Oblak et al., 2021; Wright et al., 2013; Frisoni et al., 2022; Walker and Jucker, 2017; and Finch and Sapolsky, 1999. The temporal mismatch between mouse models and human disease is a critical limitation that questions whether the models capture age-related mechanisms.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:56:55.873300Z"
+    },
+    {
+      "id": "003c7e3b-592e-45ef-9ec6-385d2e68cc5f",
+      "content_id": "0812d1a0-2ebd-43c9-af8e-d31cb09701b9",
+      "result_id": "R22",
+      "result_category": "llm",
+      "result": "GWAS have identified over 20 genetic risk loci for AD beyond APP/PSEN mutations, belonging to three major pathways: cholesterol/lipid metabolism, immune/inflammatory responses, and endosomal vesicle cycling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69 and C70 are supported by citations to Andrews et al., 2023 and Van Cauwenberghe et al., 2016. This genetic evidence highlights the multifactorial nature of AD and suggests that focusing solely on A\u03b2 may miss important disease mechanisms.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:56:55.873300Z"
+    },
+    {
+      "id": "31bbffac-b5e2-45b9-b810-9eab7ae6bc30",
+      "content_id": "0812d1a0-2ebd-43c9-af8e-d31cb09701b9",
+      "result_id": "R23",
+      "result_category": "llm",
+      "result": "Human APOE has three major variants (\u03b52, \u03b53, \u03b54) with different AD risk profiles, but mouse APOE shares only 70% homology with human APOE (despite human isoforms differing by only 1-2 residues), accelerates plaque formation differently, and mice have >10-fold higher brain sterol turnover than humans.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71-C76 are supported by citations to Huebbe and Rimbach, 2017; Frieden and Garai, 2012; Fagan et al., 2002; and Dietschy and Turley, 2004. These substantial differences in APOE structure and cholesterol metabolism between mice and humans represent critical limitations for translating findings related to this major AD risk factor.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:56:55.873300Z"
+    },
+    {
+      "id": "08e1bd7e-9340-4b23-bd6c-5b699a3d0648",
+      "content_id": "0812d1a0-2ebd-43c9-af8e-d31cb09701b9",
+      "result_id": "R24",
+      "result_category": "llm",
+      "result": "Obesity and diabetes account for ~40% of modifiable dementia risk, central insulin resistance is consistently observed in AD post-mortem studies, and mice have sevenfold higher basal metabolic rate than humans.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C77-C79 are supported by citations to Livingston et al., 2020; Steen et al., 2005; and Terpstra, 2001. These metabolic differences between mice and humans are important considerations for modeling AD, particularly given the strong links between metabolic dysfunction and dementia risk.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:56:55.873300Z"
+    },
+    {
+      "id": "546ff62a-a3d3-4607-8d52-6ec8759e52a4",
+      "content_id": "0812d1a0-2ebd-43c9-af8e-d31cb09701b9",
+      "result_id": "R25",
+      "result_category": "llm",
+      "result": "Genetic variants in myeloid cell-specific genes (CD33, CLU, MS4A4A/6A, PLCG2, SORL1, TREM2) are associated with AD susceptibility, and comparative single-cell analysis shows that human and mouse brain cells have similar transcriptomic profiles in health but diverge in disease, particularly in microglia.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C80-C82 are supported by citations to Andrews et al., 2023; McQuade and Blurton-Jones, 2019; and Zhou et al., 2020. The species-specific differences in immune cell responses to pathology are critical limitations for translating findings about neuroinflammation from mouse models to human disease.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:56:55.873300Z"
+    },
+    {
+      "id": "60ca74c5-fd2e-4668-8442-568cf1ca6e6d",
+      "content_id": "0812d1a0-2ebd-43c9-af8e-d31cb09701b9",
+      "result_id": "R26",
+      "result_category": "llm",
+      "result": "Post-mortem data reveal that most aging brains have mixed neuropathology, with >230 different neuropathological combinations identified in >1000 dementia cases, indicating person-specific pathological signatures.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C83 and C84 are supported by citations to Boyle et al., 2018; Boyle et al., 2021; Brenowitz et al., 2017; and Morris et al., 2018. This heterogeneity in human AD pathology is a critical observation that cannot be captured by single-pathway mouse models.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:56:55.873300Z"
+    },
+    {
+      "id": "65df978a-9613-438b-ade6-70b19105aa0b",
+      "content_id": "0812d1a0-2ebd-43c9-af8e-d31cb09701b9",
+      "result_id": "R27",
+      "result_category": "llm",
+      "result": "AD risk is nearly double in women, and female mice lack reproductive senescence features (menopause, extended post-reproductive periods) that characterize one-third of women's lifespan during the critical timeframe for dementia development.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C85 and C86 are supported by citations to Reed-Geaghan, 2022 and Moir and Tanzi, 2019. The sex differences in AD risk and the biological differences between female mice and women represent important limitations for modeling sex-specific aspects of the disease.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:56:55.873300Z"
+    },
+    {
+      "id": "b90949fc-5b3b-47d7-9e17-1d41cbf9a4e9",
+      "content_id": "0812d1a0-2ebd-43c9-af8e-d31cb09701b9",
+      "result_id": "R28",
+      "result_category": "llm",
+      "result": "Circadian rhythms might influence translational studies since rodents are nocturnal and most experiments are performed during their inactive phase, which is relevant given the importance of sleep for clearance of A\u03b2 and tau.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C87 and C88 are supported by citations to Esposito et al., 2020; Holth et al., 2019; and Roh et al., 2012. While this is a valid methodological concern, the authors acknowledge it may not be a major limitation compared to other issues discussed.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:56:55.873300Z"
+    },
+    {
+      "id": "863ebbba-caac-4615-908b-a805b84b7b2f",
+      "content_id": "0812d1a0-2ebd-43c9-af8e-d31cb09701b9",
+      "result_id": "R29",
+      "result_category": "llm",
+      "result": "First-generation APP/tau overexpressing models remain the primary tools for studying AD, but the authors propose that mice are valuable for investigating cellular interaction mechanisms and A\u03b2-independent mechanisms, and call for reconceptualization of murine models.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C89, C91-C93 mix factual observations (C89) with speculative proposals (C91-C93). While C89 is supported by knowledge of current practice, C91-C93 represent the authors' opinions about how models should be used going forward. These are reasonable proposals but represent future directions rather than established results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:56:55.873300Z"
+    },
+    {
+      "id": "3f46bebb-e491-48c2-8384-a13ef00f388d",
+      "content_id": "0812d1a0-2ebd-43c9-af8e-d31cb09701b9",
+      "result_id": "R30",
+      "result_category": "llm",
+      "result": "Collective efforts are underway to develop better models for translation, but most animal studies do not consistently observe blinding protocols.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C94 and C95 are supported by citations to Vitek et al., 2020; Errington, 2024; and Reynolds, 2022. The lack of rigorous experimental practices like blinding is a serious methodological concern that affects the reliability of preclinical findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:56:55.873300Z"
+    },
+    {
+      "id": "f2e1f772-4401-43d0-9ccb-b9ccf4caa3cc",
+      "content_id": "0812d1a0-2ebd-43c9-af8e-d31cb09701b9",
+      "result_id": "R31",
+      "result_category": "llm",
+      "result": "Human iPSC-derived cells and organoids have emerged as tools for studying human-specific disease mechanisms, but human cell engraftment requires immune-deficient strains (missing immune contributions), and organoids lack fully developed nervous systems, vascularization, and multi-organ interactions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C96-C99 are supported by citations to Cenini et al., 2021; Kim et al., 2020; Penney et al., 2020; and Andrews and Kriegstein, 2022. The authors provide a balanced assessment of the promise and limitations of human cell-based models as alternatives to animal models.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:56:55.873300Z"
+    },
+    {
+      "id": "9a754895-4856-429c-94d7-c1afb9a0e527",
+      "content_id": "0812d1a0-2ebd-43c9-af8e-d31cb09701b9",
+      "result_id": "R32",
+      "result_category": "llm",
+      "result": "There is mounting interest in larger animal models including non-human primates, and a comparative biology approach using companion animals has been proposed as proxies for the complex environmental factors modulating disease.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C100 and C101 are supported by citations to Jennings et al., 2016 and de Sousa et al., 2023. These represent emerging alternative approaches to AD modeling that may address some limitations of traditional mouse models.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:56:55.873300Z"
+    },
+    {
+      "id": "35545e4c-ded6-4d70-a848-dd56bae8343c",
+      "content_id": "0812d1a0-2ebd-43c9-af8e-d31cb09701b9",
+      "result_id": "R33",
+      "result_category": "llm",
+      "result": "Multi-scale computational models provide platforms for integrating molecular, cellular, and network-level interactions, and can help predict disease progression and identify personalized treatment strategies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C102 and C103 are supported by citations to Rollo et al., 2023 and Forloni, 2020. However, C103 includes speculative elements about future capabilities ('can help predict') that have not been fully validated, making this partially uncertain.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:56:55.873300Z"
+    },
+    {
+      "id": "0de86432-fc03-4b1e-80fc-d5b8e346304f",
+      "content_id": "0812d1a0-2ebd-43c9-af8e-d31cb09701b9",
+      "result_id": "R34",
+      "result_category": "llm",
+      "result": "The limitations of current preclinical AD models and questionable benefits of anti-A\u03b2 trials call for urgent reconsideration of research strategies, requiring more comprehensive experimental systems and rigorous designs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C104 and C105 are supported by citations to Granzotto and Sensi, 2024; H\u00f8ilund-Carlsen et al., 2023; Kepp et al., 2023b; and Cozachenco et al., 2023. These represent the authors' conclusions based on the accumulated evidence presented throughout the manuscript, though they are partly opinion-based recommendations for future research.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:56:55.873300Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "e6350cad-066b-4dd0-b0b1-78b96bf60e00",
+      "result_id": "ebbbe9e0-9db5-4b63-985f-21d912b968b2"
+    },
+    {
+      "claim_id": "c67a5793-cc66-4d11-9835-bd806c6005c0",
+      "result_id": "ebbbe9e0-9db5-4b63-985f-21d912b968b2"
+    },
+    {
+      "claim_id": "bad5477d-6c02-44a9-81be-ced9f71cc428",
+      "result_id": "ebbbe9e0-9db5-4b63-985f-21d912b968b2"
+    },
+    {
+      "claim_id": "382eb4a8-d734-48b4-9910-7be07871c4be",
+      "result_id": "a586a68a-1111-4995-8e47-571b415df7b8"
+    },
+    {
+      "claim_id": "5369c6bd-cc26-4714-a3ba-516d0db06eb7",
+      "result_id": "a586a68a-1111-4995-8e47-571b415df7b8"
+    },
+    {
+      "claim_id": "8219fe83-4ef8-4715-8c3b-b542b2ea88f5",
+      "result_id": "c4ce5dd5-49f3-4617-aa45-afca0455367c"
+    },
+    {
+      "claim_id": "c89e9a5b-2c8f-4b1f-8a98-313c16234fba",
+      "result_id": "c4ce5dd5-49f3-4617-aa45-afca0455367c"
+    },
+    {
+      "claim_id": "7ecb22a1-8037-4634-82ba-d6ce48e1b5f3",
+      "result_id": "c4ce5dd5-49f3-4617-aa45-afca0455367c"
+    },
+    {
+      "claim_id": "6d198d3c-6d08-47a6-886c-190c523ebac8",
+      "result_id": "c4ce5dd5-49f3-4617-aa45-afca0455367c"
+    },
+    {
+      "claim_id": "9ca2d252-4f64-460f-b876-026531d22032",
+      "result_id": "a27677be-bc9f-4453-a675-7446e99cc116"
+    },
+    {
+      "claim_id": "75d8887e-610a-4f5f-93a2-755bc142c663",
+      "result_id": "a27677be-bc9f-4453-a675-7446e99cc116"
+    },
+    {
+      "claim_id": "ab1dde22-5981-4dcf-806a-6876db6257ae",
+      "result_id": "c21a23fa-888f-41f6-a8b3-342e8f00d9ab"
+    },
+    {
+      "claim_id": "5321c1f3-6802-4910-bed6-ef4ddacb9f1e",
+      "result_id": "c21a23fa-888f-41f6-a8b3-342e8f00d9ab"
+    },
+    {
+      "claim_id": "e50ff95c-1f83-46dd-9ecc-9cb81f2fd632",
+      "result_id": "c21a23fa-888f-41f6-a8b3-342e8f00d9ab"
+    },
+    {
+      "claim_id": "7c7d6f08-b8bc-44cd-b008-47aad97909b6",
+      "result_id": "8a876b2c-b89c-4e9d-9cd7-6224b2d8dff3"
+    },
+    {
+      "claim_id": "4f7fba01-beaa-4e16-a94a-6b317a0733a2",
+      "result_id": "8a876b2c-b89c-4e9d-9cd7-6224b2d8dff3"
+    },
+    {
+      "claim_id": "4c1f350f-26d4-49b7-acc6-7443a46d8a09",
+      "result_id": "8a876b2c-b89c-4e9d-9cd7-6224b2d8dff3"
+    },
+    {
+      "claim_id": "7769c577-b64b-4671-a3ee-150692f34c71",
+      "result_id": "8a876b2c-b89c-4e9d-9cd7-6224b2d8dff3"
+    },
+    {
+      "claim_id": "b7db9ad5-210f-4f51-9492-25d1cdeefe97",
+      "result_id": "21aa0e12-48f1-4feb-9ab3-23f248265c9c"
+    },
+    {
+      "claim_id": "b402e943-513b-4025-8abe-ac294daf6689",
+      "result_id": "21aa0e12-48f1-4feb-9ab3-23f248265c9c"
+    },
+    {
+      "claim_id": "f516a196-b78d-4061-b109-a237729bec4c",
+      "result_id": "33171913-0919-42b5-a318-9f04d6873e4c"
+    },
+    {
+      "claim_id": "371351e8-d83e-4750-aafe-3ed846415453",
+      "result_id": "33171913-0919-42b5-a318-9f04d6873e4c"
+    },
+    {
+      "claim_id": "90658e47-b0da-4702-9f3f-6e516c7e2514",
+      "result_id": "33171913-0919-42b5-a318-9f04d6873e4c"
+    },
+    {
+      "claim_id": "d2425b4f-f000-4eb9-b337-c2e434dddbfa",
+      "result_id": "33171913-0919-42b5-a318-9f04d6873e4c"
+    },
+    {
+      "claim_id": "c7613860-aaf9-4ef6-b086-9cfdd2443958",
+      "result_id": "33171913-0919-42b5-a318-9f04d6873e4c"
+    },
+    {
+      "claim_id": "d26b423e-b7f3-44dd-8c3d-a53dbc27e092",
+      "result_id": "1cd04c4e-53f7-434a-97de-2e57b9ca7e2b"
+    },
+    {
+      "claim_id": "519452c0-7729-42f5-9d79-ac74b79d64cb",
+      "result_id": "1cd04c4e-53f7-434a-97de-2e57b9ca7e2b"
+    },
+    {
+      "claim_id": "fae5778a-b89f-4df1-b678-2a90bead9b2f",
+      "result_id": "1cd04c4e-53f7-434a-97de-2e57b9ca7e2b"
+    },
+    {
+      "claim_id": "0da1c425-c98e-438c-95b9-13fafba4ed7d",
+      "result_id": "1cd04c4e-53f7-434a-97de-2e57b9ca7e2b"
+    },
+    {
+      "claim_id": "3ecc90d6-f172-437a-b380-c5eefcc89bc5",
+      "result_id": "8cd07e35-4e99-45f0-bbaa-b3d7cb3c32c1"
+    },
+    {
+      "claim_id": "fa9e0960-efa0-463b-a913-3b002383a05d",
+      "result_id": "3fa980d2-cf07-49c5-a4d1-c6b73329f0f7"
+    },
+    {
+      "claim_id": "480a8bbb-19cd-4ae7-ba68-b5c24752070e",
+      "result_id": "3fa980d2-cf07-49c5-a4d1-c6b73329f0f7"
+    },
+    {
+      "claim_id": "ebd0bb70-0316-49e9-a624-1f120bdefbb6",
+      "result_id": "9c953a4a-aaf5-4d0e-b602-adec5a52481c"
+    },
+    {
+      "claim_id": "5f115dba-827a-41dc-a025-df14544566c2",
+      "result_id": "7e34f5b0-2ad2-48ce-89bc-6ac454d731c5"
+    },
+    {
+      "claim_id": "2e0e8305-a450-4ebe-a3d4-e889a5992032",
+      "result_id": "7e34f5b0-2ad2-48ce-89bc-6ac454d731c5"
+    },
+    {
+      "claim_id": "5b52a32b-ffb1-4db3-8128-439b2a22c74f",
+      "result_id": "7e34f5b0-2ad2-48ce-89bc-6ac454d731c5"
+    },
+    {
+      "claim_id": "7023e6f0-d942-4a6c-b301-fc78c96c91e9",
+      "result_id": "7e34f5b0-2ad2-48ce-89bc-6ac454d731c5"
+    },
+    {
+      "claim_id": "86b7b9e1-b625-4263-93e6-30757ec414e0",
+      "result_id": "7e34f5b0-2ad2-48ce-89bc-6ac454d731c5"
+    },
+    {
+      "claim_id": "bbfba848-a6ac-4c5b-87a1-f14838bd9017",
+      "result_id": "7e34f5b0-2ad2-48ce-89bc-6ac454d731c5"
+    },
+    {
+      "claim_id": "6d9563c9-0611-48aa-96c3-f0f2348a9283",
+      "result_id": "7e34f5b0-2ad2-48ce-89bc-6ac454d731c5"
+    },
+    {
+      "claim_id": "5df4b6ab-4a45-492d-be67-94a6bf776ced",
+      "result_id": "421e8954-933c-429c-9fe3-3091fb559df5"
+    },
+    {
+      "claim_id": "b84cb858-1c5e-4d20-ab7d-675a824856b9",
+      "result_id": "421e8954-933c-429c-9fe3-3091fb559df5"
+    },
+    {
+      "claim_id": "83f65252-99f7-4772-b940-64e1d399bee6",
+      "result_id": "421e8954-933c-429c-9fe3-3091fb559df5"
+    },
+    {
+      "claim_id": "d37a6f4d-b726-40c0-aba7-c2638d23ba32",
+      "result_id": "75d3319e-647f-4b58-bbd0-778d394926ff"
+    },
+    {
+      "claim_id": "1898999b-c1c3-4623-ae85-dc8edf1e9d31",
+      "result_id": "75d3319e-647f-4b58-bbd0-778d394926ff"
+    },
+    {
+      "claim_id": "28738421-4623-436e-a38a-9c6f804a3daf",
+      "result_id": "75d3319e-647f-4b58-bbd0-778d394926ff"
+    },
+    {
+      "claim_id": "2e3ae219-a3c4-4401-a86b-cdc9944dd8bd",
+      "result_id": "75d3319e-647f-4b58-bbd0-778d394926ff"
+    },
+    {
+      "claim_id": "38b723b1-64de-4487-9466-801d8ad8ce51",
+      "result_id": "a1934648-3b1e-4fa1-818b-73490d023a6c"
+    },
+    {
+      "claim_id": "5c293c03-e831-4b64-ba06-63cafd4e8c6e",
+      "result_id": "a1934648-3b1e-4fa1-818b-73490d023a6c"
+    },
+    {
+      "claim_id": "c7e3a522-a2fe-40af-8064-fceba2f65f70",
+      "result_id": "07b85929-096b-4537-8b6f-509629c0b376"
+    },
+    {
+      "claim_id": "a75aff29-6e47-4ad1-8ec8-18439389d641",
+      "result_id": "07b85929-096b-4537-8b6f-509629c0b376"
+    },
+    {
+      "claim_id": "bc3485f1-388c-449d-9d65-bef9ec215697",
+      "result_id": "07b85929-096b-4537-8b6f-509629c0b376"
+    },
+    {
+      "claim_id": "cc232e87-a27f-4488-b50c-a57757be4db3",
+      "result_id": "6b78464d-d769-48c7-a56f-7339d6dda054"
+    },
+    {
+      "claim_id": "4d48d719-6cb9-41d8-8a7a-83ae9052e8ec",
+      "result_id": "6b78464d-d769-48c7-a56f-7339d6dda054"
+    },
+    {
+      "claim_id": "7e295b8f-f0c6-494d-a16e-63585c8c7c28",
+      "result_id": "6b78464d-d769-48c7-a56f-7339d6dda054"
+    },
+    {
+      "claim_id": "0e963d77-247c-484e-9e78-d7978c4c59ac",
+      "result_id": "6b78464d-d769-48c7-a56f-7339d6dda054"
+    },
+    {
+      "claim_id": "23a1104e-0a33-4e25-91e8-9ea3b3c0cf84",
+      "result_id": "6b78464d-d769-48c7-a56f-7339d6dda054"
+    },
+    {
+      "claim_id": "edab375a-5de4-454c-8dca-f633eeb4fa58",
+      "result_id": "36f46be3-058e-47ac-bf1c-0667a1938106"
+    },
+    {
+      "claim_id": "d7bbc4fd-39ee-411f-a809-6ed8bfbeacee",
+      "result_id": "36f46be3-058e-47ac-bf1c-0667a1938106"
+    },
+    {
+      "claim_id": "0d35409a-9587-443f-822c-32cb6d338bea",
+      "result_id": "7852f609-ce18-4e74-9a1a-e178807e9e76"
+    },
+    {
+      "claim_id": "31bdd53d-6e38-4499-b85c-5aef6d9d1c38",
+      "result_id": "7852f609-ce18-4e74-9a1a-e178807e9e76"
+    },
+    {
+      "claim_id": "fc7693b0-e725-4984-b6fc-6a3cc780f8e0",
+      "result_id": "7852f609-ce18-4e74-9a1a-e178807e9e76"
+    },
+    {
+      "claim_id": "f4a460f6-e2a2-4548-adbc-1ca14340edf4",
+      "result_id": "7852f609-ce18-4e74-9a1a-e178807e9e76"
+    },
+    {
+      "claim_id": "d1d1bd57-716e-48ec-a506-edff431beddb",
+      "result_id": "7852f609-ce18-4e74-9a1a-e178807e9e76"
+    },
+    {
+      "claim_id": "0c6dab18-abb0-4780-8375-06684ad73bb2",
+      "result_id": "ca60f645-fafa-4e07-8b90-a1ffc634e385"
+    },
+    {
+      "claim_id": "a15e1b05-8bf3-4295-8013-f6615fdb5e6e",
+      "result_id": "ca60f645-fafa-4e07-8b90-a1ffc634e385"
+    },
+    {
+      "claim_id": "e4299330-ca4d-4d13-a585-47c46ef1e68f",
+      "result_id": "ca60f645-fafa-4e07-8b90-a1ffc634e385"
+    },
+    {
+      "claim_id": "641a2f76-dec8-4b8e-a0d4-04d1e6ab4068",
+      "result_id": "ca60f645-fafa-4e07-8b90-a1ffc634e385"
+    },
+    {
+      "claim_id": "acd62835-154c-4709-bf32-5482fdf2a638",
+      "result_id": "ca60f645-fafa-4e07-8b90-a1ffc634e385"
+    },
+    {
+      "claim_id": "46bfae20-22f1-4a48-8ef5-ca0a80ac9213",
+      "result_id": "003c7e3b-592e-45ef-9ec6-385d2e68cc5f"
+    },
+    {
+      "claim_id": "45db6bd0-3bc4-41b1-88f8-ee132bca5358",
+      "result_id": "003c7e3b-592e-45ef-9ec6-385d2e68cc5f"
+    },
+    {
+      "claim_id": "b38be9d9-b34e-4cbe-8b57-2e4474b4b6f2",
+      "result_id": "31bbffac-b5e2-45b9-b810-9eab7ae6bc30"
+    },
+    {
+      "claim_id": "4bcce839-8d51-4324-99a8-284bd3ace444",
+      "result_id": "31bbffac-b5e2-45b9-b810-9eab7ae6bc30"
+    },
+    {
+      "claim_id": "2b771640-b9b0-4505-b761-6e5812608bdb",
+      "result_id": "31bbffac-b5e2-45b9-b810-9eab7ae6bc30"
+    },
+    {
+      "claim_id": "8fca4f41-8b94-486d-a8d7-f9dd0fab32e9",
+      "result_id": "31bbffac-b5e2-45b9-b810-9eab7ae6bc30"
+    },
+    {
+      "claim_id": "af9a6c03-ad4d-4729-80dc-cc2a7027758e",
+      "result_id": "31bbffac-b5e2-45b9-b810-9eab7ae6bc30"
+    },
+    {
+      "claim_id": "78ca98f7-5e42-44d2-b346-edf711184819",
+      "result_id": "31bbffac-b5e2-45b9-b810-9eab7ae6bc30"
+    },
+    {
+      "claim_id": "1ed3371b-6197-467d-9c37-80b78b918a11",
+      "result_id": "08e1bd7e-9340-4b23-bd6c-5b699a3d0648"
+    },
+    {
+      "claim_id": "2182a9ea-3a00-4008-9b0d-3f9d1333e1c1",
+      "result_id": "08e1bd7e-9340-4b23-bd6c-5b699a3d0648"
+    },
+    {
+      "claim_id": "211ef9ec-1b37-4277-a138-c50faffb15b0",
+      "result_id": "08e1bd7e-9340-4b23-bd6c-5b699a3d0648"
+    },
+    {
+      "claim_id": "4e060e37-6103-46ef-b60b-2aeae815b848",
+      "result_id": "546ff62a-a3d3-4607-8d52-6ec8759e52a4"
+    },
+    {
+      "claim_id": "922fb486-844f-4553-8ac3-99d041ca8c82",
+      "result_id": "546ff62a-a3d3-4607-8d52-6ec8759e52a4"
+    },
+    {
+      "claim_id": "7a97c7a4-966a-493f-b08d-47b8038b44df",
+      "result_id": "546ff62a-a3d3-4607-8d52-6ec8759e52a4"
+    },
+    {
+      "claim_id": "b14571ed-7797-421b-a2c2-243faebe358c",
+      "result_id": "60ca74c5-fd2e-4668-8442-568cf1ca6e6d"
+    },
+    {
+      "claim_id": "2ed5f5d5-7457-4cdd-9ea8-7cbe8dee2386",
+      "result_id": "60ca74c5-fd2e-4668-8442-568cf1ca6e6d"
+    },
+    {
+      "claim_id": "014f13d5-cd87-42ce-80ae-d373d490cc0d",
+      "result_id": "65df978a-9613-438b-ade6-70b19105aa0b"
+    },
+    {
+      "claim_id": "a30ffebb-b06b-48cc-ac21-89c661787668",
+      "result_id": "65df978a-9613-438b-ade6-70b19105aa0b"
+    },
+    {
+      "claim_id": "a0c20bd0-541e-413f-9521-51c344f2f687",
+      "result_id": "b90949fc-5b3b-47d7-9e17-1d41cbf9a4e9"
+    },
+    {
+      "claim_id": "99807909-6db7-470e-a9ea-0677070c1c53",
+      "result_id": "b90949fc-5b3b-47d7-9e17-1d41cbf9a4e9"
+    },
+    {
+      "claim_id": "5fc719df-23a2-4460-aefc-d57ef7616d05",
+      "result_id": "863ebbba-caac-4615-908b-a805b84b7b2f"
+    },
+    {
+      "claim_id": "6440873f-6809-4da8-890b-daeb8de00b42",
+      "result_id": "863ebbba-caac-4615-908b-a805b84b7b2f"
+    },
+    {
+      "claim_id": "dd23f9cb-b416-4f7f-b2ef-c220e273c0e4",
+      "result_id": "863ebbba-caac-4615-908b-a805b84b7b2f"
+    },
+    {
+      "claim_id": "df380903-7d73-4aea-98b0-5c5ba358c8cb",
+      "result_id": "863ebbba-caac-4615-908b-a805b84b7b2f"
+    },
+    {
+      "claim_id": "4b341cd7-d893-45b5-acba-83156868b224",
+      "result_id": "3f46bebb-e491-48c2-8384-a13ef00f388d"
+    },
+    {
+      "claim_id": "191174b1-28ad-4ec0-a59d-131e873b7c63",
+      "result_id": "3f46bebb-e491-48c2-8384-a13ef00f388d"
+    },
+    {
+      "claim_id": "80d63b44-6983-4d84-8cb3-1c7c941a94d5",
+      "result_id": "f2e1f772-4401-43d0-9ccb-b9ccf4caa3cc"
+    },
+    {
+      "claim_id": "3597f29b-4124-4746-98c6-ed10c8f1ef6c",
+      "result_id": "f2e1f772-4401-43d0-9ccb-b9ccf4caa3cc"
+    },
+    {
+      "claim_id": "1b9c155e-4fd0-44f2-b83d-3566da2801b8",
+      "result_id": "f2e1f772-4401-43d0-9ccb-b9ccf4caa3cc"
+    },
+    {
+      "claim_id": "10ed548a-500d-4dad-b1f4-cb940079ba30",
+      "result_id": "f2e1f772-4401-43d0-9ccb-b9ccf4caa3cc"
+    },
+    {
+      "claim_id": "962c70c0-69f7-45e0-8287-6da0fa99bb93",
+      "result_id": "9a754895-4856-429c-94d7-c1afb9a0e527"
+    },
+    {
+      "claim_id": "82b2f2a2-205b-48a2-8539-771c74353beb",
+      "result_id": "9a754895-4856-429c-94d7-c1afb9a0e527"
+    },
+    {
+      "claim_id": "73fc9a2e-26aa-475b-9acd-4289cb86ec90",
+      "result_id": "35545e4c-ded6-4d70-a848-dd56bae8343c"
+    },
+    {
+      "claim_id": "5afe2e41-5a4a-451c-aa98-a35a1e242369",
+      "result_id": "35545e4c-ded6-4d70-a848-dd56bae8343c"
+    },
+    {
+      "claim_id": "0058b2af-f5be-4a07-b44c-c8ff1278765a",
+      "result_id": "0de86432-fc03-4b1e-80fc-d5b8e346304f"
+    },
+    {
+      "claim_id": "caa31d07-d7aa-487e-9ce3-d16c89a05116",
+      "result_id": "0de86432-fc03-4b1e-80fc-d5b8e346304f"
+    }
+  ],
+  "comparisons": []
+}

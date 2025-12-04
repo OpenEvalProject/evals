@@ -1,0 +1,309 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2"
+    ],
+    "result": "99% vitamin B2-deficient diet (B2D) reduced liver FAD levels by 70% in mice, with baseline FAD levels being highest in liver, heart, and kidney among metabolic organs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1 and C2 are well-supported by direct measurements of FAD concentrations in tissues shown in Figure 1a and 1c, with appropriate statistical analysis (one-way ANOVA for C1, comparison for C2). The 70% reduction is a substantial and clearly quantified effect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "B2D significantly altered body composition and energy expenditure in mice, reducing body weight gain, fat mass, oxygen consumption, and locomotor activity, while maintaining unchanged substrate preference and food intake. These effects were observed in both male and female mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C9 are supported by comprehensive metabolic phenotyping data (CLAMS measurements, body composition analysis) with appropriate statistical methods (two-way ANOVA, ANCOVA with lean body mass as covariate). The consistency across male and female mice (C9) strengthens the findings, though female data show trends rather than significant differences for some parameters.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C10"
+    ],
+    "result": "A 90% reduction in dietary riboflavin did not impact liver FAD levels or energy balance, establishing a threshold effect for B2D.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C10 is supported by measurements showing no significant changes in FAD levels or metabolic parameters with 90% B2D (Figure 1\u2014figure supplement 3). This negative control is important for establishing that 99% depletion is necessary for the observed phenotypes, though the manuscript could benefit from more mechanistic explanation of this threshold.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Liver FAD displays circadian accumulation coinciding with gluconeogenesis onset, and re-feeding after fasting raises blood glucose while depleting liver FAD concentrations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C13 are supported by measurements across light/dark cycles and fasting/re-feeding experiments (Figure 2a-c). The circadian pattern is appropriately cited to prior work (Patel et al., 2012), and the inverse relationship between blood glucose and liver FAD during re-feeding is clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C67"
+    ],
+    "result": "B2D impaired hepatic gluconeogenesis, as evidenced by reduced blood glucose during pyruvate tolerance tests and >50% reduction in basal hepatic glucose production measured by radiolabeled glucose infusion, indicating that FAD depletion directly affects liver glucose metabolism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C16 and C67 are strongly supported by multiple complementary approaches: pyruvate tolerance tests (Figure 2d) and gold-standard radiolabeled glucose infusion studies (Figure 2e). The >50% reduction in glucose production is substantial and clearly quantified. However, C65 notes that kidney also contributes to gluconeogenesis, which is acknowledged as a caveat but not fully addressed experimentally.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "B2D strongly repressed pathways related to fatty acid catabolism and lipid oxidation, with specific enrichment of flavoprotein genes among downregulated genes, including genes whose loss-of-function causes organic acidemias.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C19 are supported by RNA-seq data with appropriate pathway analysis (Panther Gene Ontology) and enrichment statistics. The identification of specific flavoprotein genes (Sqor, Ivd) linked to organic acidemias is well-cited and strengthens the clinical relevance of the model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "B2D caused hepatic steatosis with altered lipid profiles (reduced phospholipids and diacylglycerols, increased triglycerides) and activated transcription factor signatures associated with NAFLD, including HNF family members and SREBP1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C22 are supported by lipidomics data (Figure 2h), histology (Figure 2i), and HCT intersection analysis (Figure 2k). The convergence with NAFLD signatures is computationally rigorous. However, C21 uses the qualifier 'presumably' for the TG increase, indicating some uncertainty, though this is supported by source data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "PPAR\u03b1 binding is strongly enriched near promoter regions of flavoprotein genes, and B2D reduced expression of canonical PPAR\u03b1 target genes including PPAR\u03b1-regulated flavoproteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C25 are supported by analysis of published ChIP-seq data with strong statistical significance (p=1.19\u00d710\u207b\u00b9\u00b9, hypergeometric test) and DNA motif analysis. The integration of multiple datasets strengthens the conclusion about PPAR\u03b1's role in regulating flavoprotein expression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C68"
+    ],
+    "result": "Liver-specific PPAR\u03b1 knockdown (Ppara \u0394Hep) recapitulated B2D effects on body weight, glucose metabolism, and FAD levels, demonstrating that PPAR\u03b1 sustains FAD levels in the liver.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C28 and C68 are supported by comprehensive phenotyping of Ppara \u0394Hep mice using AAV-mediated gene deletion (Figure 3d-j). The similarity of phenotypes between genetic and dietary interventions provides strong evidence for PPAR\u03b1's role. However, the inference in C68 could be strengthened by demonstrating that PPAR\u03b1 overexpression rescues B2D phenotypes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C69"
+    ],
+    "result": "Lumiflavin (a riboflavin analog and competitive inhibitor) reduced PPAR\u03b1 transcriptional activity in reporter assays, suggesting that intact FAD pools contribute to PPAR\u03b1 activity and that PPAR\u03b1 requires riboflavin to direct glucogenic responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C30 and C69 are supported by PPRE-luciferase reporter assays (Figure 3l). However, this is a single in vitro experiment in HepG2 cells, and the mechanism by which FAD affects PPAR\u03b1 transcriptional activity is not elucidated. The inference in C69 combines multiple observations but would benefit from more direct mechanistic studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C66"
+    ],
+    "result": "Fenofibrate treatment (300 mg/kg daily for 2 weeks) rescued blood glucose levels and resolved hepatic steatosis in B2D mice, demonstrating that PPAR\u03b1 activation overcomes hypoglycemia and fatty liver phenotypes imposed by B2D.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C33 and C66 are supported by body weight measurements, blood glucose analysis, and histology (Figure 4b-e). The rescue of both metabolic and histological phenotypes by fenofibrate is compelling. However, C31 shows fenofibrate reduced body weight gain in B2D, which seems counterintuitive if it's rescuing the phenotype\u2014this requires clarification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C34",
+      "C35"
+    ],
+    "result": "Fenofibrate treatment in B2D mice more than doubled the number of induced flavoprotein genes and reversed gene expression signatures toward those depleted in clinical NAFLD, including the GABP transcriptional program.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C35 are supported by RNA-seq analysis (Figure 4f-g) with appropriate enrichment statistics. The convergence with clinical NAFLD data strengthens translational relevance. The computational approach (HCT intersection analysis) is rigorous and well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C74"
+    ],
+    "result": "B2D increased deoxysphingolipid pools and reduced the hepatic NAD/NADH ratio, with deoxysphingolipids known to impair mitochondrial function and contribute to energy deficits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C37 and C74 are supported by mass spectrometry measurements (Figure 5a-b). The connection to mitochondrial dysfunction is well-cited (Alecu et al., 2017; Muthusamy et al., 2020). However, C36 states deoxysphingolipids 'trended higher,' suggesting statistical significance was not achieved, which weakens this finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C38",
+      "C39"
+    ],
+    "result": "Fenofibrate was unable to restore FAD and FMN cofactor pools but B2D accumulated oxidized coenzyme Q10 and Q9, suggesting altered mitochondrial redox state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C39 are supported by mass spectrometry measurements (Figure 5c, 5e). The inability of fenofibrate to restore cofactor pools is important for understanding the mechanism of rescue. The accumulation of oxidized coenzyme Q suggests compensatory mechanisms, though the functional significance requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "B2D altered steady-state levels of amino acids and carnitines, with metabolite changes enriching for organic acidemias and inborn errors of the TCA cycle, including accumulation of oxidized TCA intermediates (fumarate, malate, 2HG).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C42 are supported by comprehensive mass spectrometry analysis (Figure 6a) and Metaboanalyst integration (Figure 6b). The enrichment for organic acidemias strengthens the relevance to IEMs. The accumulation of specific metabolites is consistent with impaired mitochondrial function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Pyruvate injection recovered blood glucose in B2D mice, and fenofibrate treatment in B2D selectively increased gluconeogenic amino acids (serine, glutamate, histidine, alanine) and TCA cycle metabolites (citrate, aconitate), suggesting alternative substrate provision for gluconeogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C45 are supported by pyruvate challenge experiments (Figure 6d) and metabolomics data (Figure 6a). The selective accumulation of gluconeogenic amino acids with fenofibrate treatment provides mechanistic insight into the rescue of hypoglycemia. However, the manuscript does not directly demonstrate that these amino acids are being used for gluconeogenesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C46",
+      "C70"
+    ],
+    "result": "B2D combined with fenofibrate activated the integrated stress response (ISR), as evidenced by robust GCN2 expression, eIF2\u03b1 phosphorylation, and elevated ATF4 levels, which precipitates concerted ISR activation to overcome fasting intolerance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46 and C70 are supported by Western blot analysis (Figure 6f) and RNA-seq data (Figure 6e). The activation of ISR markers is clear, and the model proposing ISR activation as a mechanism for fenofibrate rescue is well-reasoned. However, the causal role of ISR activation in the rescue would require genetic manipulation of ISR components.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C51"
+    ],
+    "result": "Background knowledge claims: Mutations in >50% of human flavoproteins cause IEMs; FAD supports flavoproteins enabling ETC, TCA cycle, and FAO; dietary riboflavin supplies the backbone for all FAD and FMN synthesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C48 and C51 represent established scientific knowledge appropriately cited (C47: Balasubramaniam et al., 2019) or representing fundamental biochemistry (C48, C51). These provide important context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Literature context claims: Various prior findings about NAD, PPAR\u03b1 agonists, riboflavin deficiency in diseases, mouse nutritional requirements, energy expenditure in LC-FAODs, mitochondrial disease, TCA intermediates, liver metabolic rates, deoxysphingolipids in NAFLD, PPAR\u03b1 and oxidative stress, ATF4 in NAFLD, fibrates in IEMs, and renal gluconeogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C65 represent appropriately cited prior work that provides context for the current study. These citations appear accurate based on the provided references, though independent verification of each citation was not performed. These contextual claims support the rationale and interpretation of the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C75"
+    ],
+    "result": "Speculative mechanistic interpretations: B2D causes energy conservation responses; NAFLD from B2D reflects lower hepatic FAO; B2D creates an environment for fenofibrate to co-opt ISR and adapt to TCA dysfunction; B2D restricts mitochondrial function causing reductive pressures and ROS formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C71-C73 and C75 are explicitly speculative interpretations of the data. While these interpretations are reasonable given the observations, they lack direct experimental validation. For example, C71's energy conservation hypothesis is not tested with metabolic flux studies, and C75's ROS formation claim lacks direct ROS measurements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C76"
+    ],
+    "result": "PPAR\u03b1 activation prevents oxidative stress by merging lower NAD/NADH and oxidized Q, lowering free energy of electron transport through complexes I and II.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C76 combines observed data (altered NAD/NADH and coenzyme Q ratios) with cited prior work (Ip et al., 2004) to infer a mechanism. However, the manuscript does not directly measure oxidative stress markers, electron transport chain activity, or free energy changes. This mechanistic interpretation requires experimental validation.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,1397 @@
+{
+  "submission": {
+    "id": "dea1ffe4-bc5b-4868-9c15-100f832e08eb",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-04T04:33:53.269755Z",
+    "updated_at": "2025-12-04T04:33:53.269755Z"
+  },
+  "content": [
+    {
+      "id": "99b55bc1-39df-474e-8aaf-d202ee39df82",
+      "submission_id": "dea1ffe4-bc5b-4868-9c15-100f832e08eb",
+      "content_type": "manuscript",
+      "content_text": "# Collaborative hunting in artificial agents with deep reinforcement learning\n\n## Authors\n\n- Kazushi Tsutsui<sup>1</sup> ([ORCID: 0000-0003-3443-0749](https://orcid.org/0000-0003-3443-0749)) \u2020\n- Ryoya Tanaka<sup>2</sup> ([ORCID: 0000-0002-6047-6030](https://orcid.org/0000-0002-6047-6030))\n- Kazuya Takeda<sup>1</sup>\n- Keisuke Fujii<sup>1</sup> ([ORCID: 0000-0001-5487-4297](https://orcid.org/0000-0001-5487-4297))\n\n### Affiliations\n\n1. Graduate School of Informatics, Nagoya University Nagoya Japan ([ROR:04chrp450](https://ror.org/04chrp450))\n2. Institute for Advanced Research, Nagoya University Nagoya Japan ([ROR:04chrp450](https://ror.org/04chrp450))\n3. Graduate School of Science, Nagoya University Nagoya Japan ([ROR:04chrp450](https://ror.org/04chrp450))\n4. Institute of Innovation for Future Society, Nagoya University Nagoya Japan ([ROR:04chrp450](https://ror.org/04chrp450))\n5. RIKEN Center for Advanced Intelligence Project Tokyo Japan ([ROR:03ckxwf91](https://ror.org/03ckxwf91))\n6. PRESTO, Japan Science and Technology Agency Tokyo Japan ([ROR:00097mb19](https://ror.org/00097mb19))\n\n\u2020 Corresponding author\n\n## Abstract\n\nCollaborative hunting, in which predators play different and complementary roles to capture prey, has been traditionally believed to be an advanced hunting strategy requiring large brains that involve high-level cognition. However, recent findings that collaborative hunting has also been documented in smaller-brained vertebrates have placed this previous belief under strain. Here, using computational multi-agent simulations based on deep reinforcement learning, we demonstrate that decisions underlying collaborative hunts do not necessarily rely on sophisticated cognitive processes. We found that apparently elaborate coordination can be achieved through a relatively simple decision process of mapping between states and actions related to distance-dependent internal representations formed by prior experience. Furthermore, we confirmed that this decision rule of predators is robust against unknown prey controlled by humans. Our computational ecological results emphasize that collaborative hunting can emerge in various intra- and inter-specific interactions in nature, and provide insights into the evolution of sociality.\n\n## Introduction\n\nCooperation among animals often provides fitness benefits to individuals in a competitive natural environment (Smith, 1982; Axelrod and Hamilton, 1981). Cooperative hunting, in which two or more individuals engage in a hunt to successfully capture prey, has been regarded as one of the most widely distributed forms of cooperation in animals (Packer and Ruttan, 1988), and has received considerable attention because of the close links between cooperative behavior, its apparent cognitive demand, and even sociality (Macdonald, 1983; Creel and Creel, 1995; Brosnan et al., 2010; Lang and Farine, 2017). Cooperative hunts have been documented in a wide variety of species (Lang and Farine, 2017; Bailey et al., 2013), yet \u2018collaboration\u2019 (or \u2018collaborative hunting\u2019), in which predators play different and complementary roles, has been reported in only a handful of vertebrate species (Stander, 1992; Boesch and Boesch, 1989; Gazda et al., 2005). For instance, previous studies have shown that mammals such as lions and chimpanzees are capable of dividing roles among individuals, such as when chasing prey or blocking the prey\u2019s escape path, to facilitate capture by the group (Stander, 1992; Boesch and Boesch, 1989). Collaborative hunts appear to be achieved through elaborate coordination with other hunters, and are often believed to be an advanced hunting strategy requiring large brains that involve high-level cognition such as aspects of theory of mind (Boesch and Boesch-Achermann, 2000; Boesch, 2002).\n\nHowever, recent findings have placed this previous belief under strain. In particular, cases of intra- and inter-specific collaborative hunting have also been demonstrated in smaller-brained vertebrates such as birds (Bednarz, 1988), reptiles (Dinets, 2015), and fish (Bshary et al., 2006; Steinegger et al., 2018). It seems possible that apparently elaborate hunting behavior can emerge in a relatively simple decision process in response to ecological needs (Steinegger et al., 2018). However, the decision process underlying collaborative hunting remains poorly understood because most previous studies thus far have relied exclusively on behavioral observations. Observational studies are essential for documenting such natural behavior, yet it is often difficult to identify the specific decision process that results in coordinated behavior. This limitation arises because seemingly simple behavior can result from complex processes (Evans et al., 2019) and vice versa (Couzin et al., 2002).\n\nWe, therefore, sought to further our understanding of the processes underlying collaborative hunting by adopting a different approach, namely, computational multi-agent simulation based on deep reinforcement learning. Deep reinforcement learning mechanisms were originally inspired by animal associative learning (Sutton and Barto, 1981), and are thought to be closely related to neural mechanisms for reward-based learning centering on dopamine (Schultz et al., 1997; Samejima et al., 2005; Doya, 2008). Given that associative learning is likely to be the most widely adopted learning mechanism in animals (Mackintosh, 1974; Wynne, 2001), collaborative hunting could arise through associative learning, where simple decision rules are developed based on behavioral cues [i.e. contingencies of reinforcement (Skinner, 2014)].\n\nSpecifically, we first explored whether predator agents based on deep reinforcement learning learn decision rules resulting in collaborative hunting and, if so, under what conditions through predator-prey interactions in a computational ecological environment. We then examined what internal representations are associated with the decision rules. Furthermore, we confirmed the generality of the acquired predators\u2019 decision rules using joint plays between agents (predators) and humans (prey). Notably, our predator agents successfully learned to collaborate in capturing their prey solely through a reinforcement learning algorithm, without employing explicit mechanisms comparable to aspects of theory of mind (Yoshida et al., 2008; Foerster, 2019; Hu and Foerster, 2020). Moreover, our results showed that the acquisition of decision rules resulting in collaborative hunting is facilitated by a combination of two factors: the difficulty of capturing prey during solitary hunting, and food (i.e. reward) sharing following capture. We also found that decisions underlying collaborative hunts were related to distance-dependent internal representations formed by prior experience. Furthermore, the decision rules worked robustly against unknown prey controlled by humans. These provide insight that collaborative hunts do not necessarily require sophisticated cognitive mechanisms, and simple decision rules based on mappings between states and actions can be practically useful in nature. Our results support the recent suggestions that the underlying processes facilitating collaborative hunting can be relatively simple (Lang and Farine, 2017).\n\n## Results\n\nWe set out to model the decision process of predators and prey in an interactive environment. In this study, we focused on a chase and escape scenario in a two-dimensional open environment. Chase and escape is a potentially complex phenomenon in which two or more agents interact in environments that change from moment to moment. Nevertheless, many studies have shown that the rules of chase/escape behavior (e.g. which direction to move at each time in a given situation) can be described by relatively simple mathematical models consisting of the current state (e.g. positions and velocities) (Brighton et al., 2017; Tsutsui et al., 2020; Howland, 1974). We, therefore, considered modeling the agent\u2019s decision process in a standard reinforcement learning framework for a finite Markov decision process in which each sequence is a distinct state. In this framework, the agent interacts with the environment through a sequence of states, actions, and rewards, and aims to select actions in a manner that maximizes cumulative future reward (Sutton and Barto, 2018).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/85694/elife-85694-fig1-v1.jpg)\n\n**Figure 1.:** (a) An agent\u2019s policy is represented by a deep neural network (see Methods). A state of the environment is given as input to the network. An action is sampled from the network\u2019s output, and the agent receives a reward and a subsequent state. The agent learns to select actions that maximize cumulative future rewards. In this study, each agent learned its policy network independently, that is, each agent treats the other agents as part of the environment. This illustration shows a case with three predators. (b) The movement trajectories are examples of interactions between predator(s) (dark blue, blue, and light blue) and prey (red) that overlay 10 episodes in each experimental condition. The experimental conditions were set as the number of predators (one, two, or three), relative mobility (fast, equal, or slow), and reward sharing (individual or shared), based on ecological findings.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/85694/elife-85694-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** The neural network is composed of four layers. The input to the neural network was the state and the output was each possible action, namely, a total of 13 action of the \u2018acceleration\u2019 in 12 directions every 30 degrees in the relative coordinate system and \u2018do nothing.\u2019 After the first two hidden layers of the MLP with 64 units, the network branches off into two streams. Each branch has one MLP layer with 32 hidden units. Rectified linear unit (ReLU) was used as the activation function for each layer. In the visualization of the agents\u2019 internal representations, the 32-dimensional hidden vector (parts filled in gray) was embedded in two dimensions, using t-distributed stochastic neighbor embedding (t-SNE).\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/85694/elife-85694-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** We used position and velocity information as the state (model input) for each agent. Assuming subjective observation, each variable, except absolute position, was converted to a relative coordinate system to the opponent; namely, prey for predators and nearest predator for prey, and inputted to the model. Moreover, for the prey input in the three-predator condition, the predator indices were sorted according to the distance between the prey and each predator. Specifically, we considered predator 1, predator 2, and predator 3 descending order in terms of distance. Similarly, in the predator input in the three-predator condition, we set itself as predator 1, the closer predator to itself as predator 2, and the farther predator as predator 3. In the figure, abs., rel.,bold p, and bold v denote an absolute, relative, position, and velocity, respectively.\n\n### Exploring the conditions under which collaborative hunting emerges\n\nWe first performed computational simulations with three experimental conditions to investigate the conditions under which collaborative hunting emerges (Figure 1b; Videos 1\u20133). As experimental conditions, we selected the number of predators, relative mobility, and prey (reward) sharing based on ecological findings (Bailey et al., 2013; Lang and Farine, 2017). For the number of predators, three conditions were set: 1 (one), 2 (two), and 3 (three). In all these conditions, the number of prey was set to 1. For the relative mobility, three conditions were set: 120% (fast), 100% (equal), and 80% (slow), which represented the acceleration of the predator, based on that of the prey. For the prey sharing, two conditions were set: with sharing (shared), in which all predators were rewarded when a predator catches the prey, and without sharing (individual), in which a predator was rewarded only when it catches the prey by itself. In total, there were 15 conditions.\n\n![Video 1.](https://cdn.elifesciences.org/articles/85694/elife-85694-video1.mp4.jpg)\n\n![Video 2.](https://cdn.elifesciences.org/articles/85694/elife-85694-video2.mp4.jpg)\n\n![Video 3.](https://cdn.elifesciences.org/articles/85694/elife-85694-video3.mp4.jpg)\n\nAs the example trajectories show, under the fast and equal conditions, the predators often caught their prey shortly after the episode began, whereas under the slow condition, the predators somewhat struggled to catch their prey (Fig. 1b). To evaluate their behavior, we calculated the proportion of predations that were successful and mean episode duration. For the fast and equal conditions, predations were successful in almost all episodes, regardless of the number of predators and the presence or absence of reward sharing (e.g. 0.99 \u00b1 0.00 for the one \u00d7 fast and one \u00d7 equal conditions; Figure 2\u2014figure supplement 1). This indicates that in situations where predators were faster than or equal in speed to their prey, they almost always succeeded in capturing the prey, even when they were the sole predator. Although the mean episode duration decreased with an increasing number of predators in both fast and equal conditions, the difference was small. As a whole, these results indicate that there is little benefit of cooperation among multiple predators in the fast and equal conditions. As it is unlikely that cooperation among predators will emerge under such conditions in nature from an evolutionary perspective (Smith, 1982; Axelrod and Hamilton, 1981), the analysis below is limited to the slow condition. For the slow condition, a solitary predator was rarely successful, and the proportion of predations that were successful increased with the number of predators (Figure 2a). Moreover, the mean duration decreased with an increasing number of predators (Figure 2a bottom). These results indicate that, under the slow condition, the benefits of cooperation among multiple predators are significant. In addition, except for the two \u00d7 individual condition, the increase in the proportion of success with an increasing number of predators was much greater than the theoretical prediction (Packer and Ruttan, 1988), calculated based on the proportion of solitary hunting, assuming that each predator\u2019s performance is independent of the others\u2019 (see Methods). These results indicate that under these conditions, elaborate hunting behavior (e.g. \u2018collaboration\u2019) that is qualitatively different from hunting alone may emerge.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/85694/elife-85694-fig2-v1.jpg)\n\n**Figure 2.:** (a) Proportion of predations that were successful (top) and mean episode duration (bottom). For both panels, quantitative data denote the mean of 100 episodes \u00b1 SEM across 10 random seeds. The error bars are barely visible because the variation is negligible. The theoretical prediction values were calculated based on the proportion of solitary hunts (see Methods). The proportion of predations that were successful increased as the number of predators increased ($F_{number(2,18)}$ = 1346.67, $p$<0.001; $\u03b7^{2}$ = 0.87; one vs. two: $t_{(9)}$ = 20.38, $p$<0.001; two vs. three: $t_{(9)}$ = 38.27, $p$<0.001). The mean duration decreased with increasing number of predators ($F_{number(2,18)}$ = 1564.01, $p$<0.001; $\u03b7^{2}$ = 0.94; one vs. two: $t_{(9)}$ = 15.98, $p$<0.001; two vs. three: $t_{(9)}$ = 40.65, $p$<0.001). (b) Typical example of different predator routes between the individual (left) and shared (right) conditions, in the two-predator condition. The numbers (1\u20133) show a series of state transitions (every second) starting from the same initial position. Each panel shows the agent positions and the trajectories leading up to that state. In these instances, the predators ultimately failed to capture the prey within the time limit (30 s) under the individual condition, whereas the predators successfully captured the prey in only 3 s under the shared condition. (c) Comparison of heat maps between individual (left) and shared (right) reward conditions. The heat maps of each agent were constructed based on the frequency of stay in each position, which was cumulative for 1000 episodes (100 episodes \u00d7 10 random seeds). In the individual condition, there were relatively high correlations between the heat maps of the prey and each predator, regardless of the number of predators (One:$r$=0.95,$p$<0.001, Two:$r$=0.83,$p$<0.001 in predator 1,$r$=0.78,$p$<0.001 in predator 2, Three:$r$=0.41,$p$<0.001 in predator 1,$r$=0.56,$p$<0.001 in predator 2,$r$=0.45,$p$<0.001 in predator 3). In contrast, in the shared condition, only one predator had a relatively high correlation, whereas the others had low correlations (Two:$r$=0.65,$p$<0.001 in predator 1,$r$=0.01,$p$=0.80 in predator 2, Three:$r$=0.17,$p$<0.001 in predator 1,$r$=0.54,$p$<0.001 in predator 2,$r$=0.03,$p$=0.23 in predator 3).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/85694/elife-85694-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** For both panels, quantitative data denote the mean of 100 episodes \u00b1 SEM across 10 random seeds.The theoretical prediction values were calculated based on the proportion of solitary hunts (see Methods). The heatmap of each agent was constructed based on the frequency of stay in each position, which was cumulative for 1,000episodes (100 episodes \u00d7 10 random seeds).\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/85694/elife-85694-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** To visualize theassociation between each predator in the two- and three-predator conditions and the baseline, which is the predatorin the one-predator condition, we produced overlays of the frequency of selection for each action. We calculated concordance rates and circular correlations to quantitatively evaluate these associations of action selection. The concordance rate has the advantage of being able to compare all 13 actions, whereas the circular correlation has theadvantage of being able to consider the proximity among each action, although it can only evaluate 12 actions,excluding \u2018do nothing.\u2019 As shown in this figure, the two indices showed similar trends. The predators whose heat maps were similar to that of their prey tended to have higher values on these indices. For all panels, quantitative datadenote the mean of 100 episodes \u00b1 SEM across 10 random seeds.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/85694/elife-85694-fig2-figsupp3-v1.jpg)\n\n**Figure 2\u2014figure supplement 3.:** Scaled distance is ameasure of how far a predator moves to capture its prey compared with the other predators during a hunt. Although simplified, this distribution reflects the role each predator played in a hunt. Specifically, if there is a large difference in the scaled distance among predators, individuals with a larger scaled distance (greater than 1) could play the role of \u2018chaser\u2019 (or \u2018driver\u2019), while individuals with a smaller scaled distance (less than 1) could play the role of \u2018blocker\u2019 (or \u2018ambusher\u2019). Moreover, if these distances do not differ among predators (concentrated near 1), it is likely that each predator pursued prey in the same manner, suggesting that there was no role division during the hunt. Furthermore, these distributions can be used to capture the flexibility of role division among predators. That is, if the distributions are separate and do not overlap, there is a division of roles among predators, and these roles are fixed inany hunt. On the other hand, if the distributions are separate but some of them overlap, the roles may have switched across hunts. Our results show that the distribution in the individual condition was concentrated around 1, whereas in the shared condition it was divided among individuals. This means that there was rarely role division among predators in the individual condition, while there was role division in the shared condition. These characteristics were more pronounced in the two-predator condition than in the three-predator condition. Perhaps this depends on the episode duration; the duration tends to be longer in the two-predator condition, and the difference in distance is likely to be clearer. Note that even under the two-predator condition, there was some overlap in the distribution inthe shared condition. This indicates that the basic roles were fixed among individuals, but interchanged according to the situation (or episode) in the condition. Additionally, because these role divisions are often discussed in the context of cooperation and cheating, we calculated the proportion of prey capture for each predator. The results did not indicate which role was more likely to catch the prey. That is, in the shared \u00d7 two conditions, the chaser tended to catch more prey, but, on the other hand, in the shared \u00d7 three conditions, the blocker tended to catch more prey. For all panels, quantitative data denote the mean of 100 episodes \u00b1 SEM across 10 random seeds.\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/85694/elife-85694-fig2-figsupp4-v1.jpg)\n\n**Figure 2\u2014figure supplement 4.:** The numbers (1 to 3) show a series of state transitions (every 0.6 s). Each panel shows the agent positions and the trajectories leading up to that state.\n\nThen, we examined agent behavioral patterns and found that there were differences in the movement paths that predators take to catch their prey among the conditions (Figure 2b). As shown in the typical example, under the individual condition, both predators moved in a similar manner toward their prey (Figure 2b left) and, in contrast, under the shared condition, one predator moved toward their prey while the other predator moved along a different route (Figure 2b right). To ascertain their behavioral patterns, we created heat maps showing the frequency of agent presence at each location in the area (Figure 2c). We found that there was a noticeable difference between the individual and shared reward conditions. In the individual condition, the heat maps of prey and respective predators were quite similar (Figure 2c), whereas this was not always the case in the shared condition (Figure 2c). In particular, the heat maps of predator 2 in the two-predator condition and predator 3 in the three-predator condition showed localized concentrations (Figure 2c far right, respectively). To assess these differences among predators in more detail, we compared the predators\u2019 decisions (i.e. action selections) in these conditions with that in the one-predator condition (i.e. solitary hunts) using two indices, concordance rate, and circular correlation (Berens, 2009; Figure 2\u2014figure supplement 2). Following previous studies (Scheel and Packer, 1991), we also calculated the ratios of distance moved during hunting among predators (Figure 2\u2014figure supplement 3). Overall, these findings support the idea that predators with heat maps similar to their prey acted as \u2018chasers\u2019 (or \u2018drivers\u2019), while predators with different heat maps behaved as \u2018blockers\u2019 (or \u2018ambushers\u2019). That is, our results show that, although most predators acted as chasers, some predators acted as blockers rather than chasers in the shared condition, indicating the emergence of collaborative hunting characterized by role divisions among predators under the condition.\n\n### Mechanistic interpretability of collaboration\n\nWe next sought the predators\u2019 internal representations to better understand how such collaborative hunting is accomplished. Using a two-dimensional t-distributed stochastic neighbor embedding (t-SNE) (van der Maaten and Hinton, 2008), we visualized the last hidden layers of the state and action streams in the policy network as internal representations of agents (Figure 3, Figure 3\u2014figure supplements 1\u20133). To understand how each agent represents its environment and what aspects of the state are well represented, we examined the relationship between the scenes of a typical scenario and their corresponding points on the embedding (Figure 3a and b). As expected, when the predator is likely to catch its prey (e.g. scene 4), the predator estimated a higher state value, whereas, when the predator is not (e.g. scene 5), the predator estimated a lower state value (Figure 3a top). Related to this, the variance of action values tends to be larger for both predator and prey when they are close (Figure 3a bottom), indicating that the difference in the value of choosing each action is greater when the choice of action is directly related to the reward (see also Figure 3\u2014figure supplement 4). These results suggest that the agents were able to learn the networks that output the estimations of state and action values consistent with our intuition.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/85694/elife-85694-fig3-v1.jpg)\n\n**Figure 3.:** (a) Two-dimensional t-distributed stochastic neighbor embedding (t-SNE) embedding of the representations in the last hidden layers of the state-value stream (top) and action-value stream (bottom) in the shared reward condition. The representation is assigned by the policy network of each agent to states experienced during predator-prey interactions. The points are colored according to the state values and standard deviation of the action values, respectively, predicted by the policy network (ranging from dark red (high) to dark blue (low)). (b) Corresponding states for each number in each embedding. The number (1\u20135) in each embedding corresponds to a selected series of state transitions. The series of agent positions in the state transitions (every second) and, for ease of visibility, the trajectories leading up to that state are shown. (c) Embedding colored according to the distances between predators and prey in the individual (left) and shared (right) reward conditions. Distances 1 and 2 denote the distances between predator 1 and prey and predator 2 and prey, respectively. If both distances are short, the point is colored blue; if both are long, it is colored white.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/85694/elife-85694-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** The representation is assigned by the policy network of each agent to states experienced during predator-prey interactions. The points are colored according to the state values and standard deviation of the actionvalues, respectively, predicted by the policy network (ranging from dark red (high) to dark blue (low)).\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/85694/elife-85694-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** The absolute coordinates (i.e. x and y positions) are directly associated with the reward, as are the distances between prey and predators, because each agent receives a negative reward (-1) for leaving the play area. We, therefore, colored the internal representation of the agent according to its position. The upper left corner of the play area corresponds to cyan, the lower left to green, the upper right to white, and the lower right to yellow. The embedding of state representations in the prey seems to be roughly clustered according to absolute position, compared to those of the predators. These indicate that prey might estimate the state and action values and make decisions associated with absolute position-dependent representations compared to predators.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/85694/elife-85694-fig3-figsupp3-v1.jpg)\n\n**Figure 3\u2014figure supplement 3.:** The points are colored according to the state values and standard deviation of the action values predicted by the policy network (top), the distances between prey and predators (middle), and absolute coordinates of itself, respectively.\n\n![Figure 3\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/85694/elife-85694-fig3-figsupp4-v1.jpg)\n\n**Figure 3\u2014figure supplement 4.:** We show the value for eachaction of each agent in a selected series of state transitions (scenes 1 to 5). The panels on the left side of the figure are the same as the plot in Figure 3. For both predator and prey, each action is defined in terms of a relative coordinate system to the opponent. In other words, action 1 denotes movement toward the opponent (for the prey, the nearest predator) and action 7 denotes movement in the opposite direction of the opponent. Thus, in the estimated action values of the prey, actions 5 to 9 tend to show relatively high values, and in those of predators, actions 1, 2, 3, 11, and 12 tend to show relatively high values. These results suggest that proximity to rewards plays a major role in estimating state-action values.\n\n![Figure 3\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/85694/elife-85694-fig3-figsupp5-v1.jpg)\n\n**Figure 3\u2014figure supplement 5.:** For consistency with the deep reinforcement learning agents, the input to the rule-based agents used to make decisions is limited to the current information (e.g. position and velocity), and the output is provided in a relative coordinate system to the prey. The predator first determines whether it, or another predator, is closer to the prey, and then, if the other predator is closer, it determines whether the distance 2 is less than the specified distance threshold. The decision rule for each predator is selected by this branching, with predator 1 adopting the three rules \u2018chase,\u2019 \u2018shortcut,\u2019 and \u2018approach,\u2019 and predator 2 adopting the two rules \u2018chase\u2019 and \u2018ambush\u2019 (see Methods for details). In the chase, the predator first determines whether it is near the outer edge of the play area and, if so, selects actions that will prevent it from leaving the play area. If the predator is not on the outside of the play area, then it determines whether the prey is on the inside of the play area,and, if so, selects actions that will drive them to the outside. In other situations, it selects actions so that the direction of movement is aligned with that of their prey. In the shortcut, the predator determines whether it is near the outeredge of the play area, and if so, selects the actions described above, otherwise selects actions that will produce shorter paths to the prey. In the approach, the predator determines whether it is near the outer edge of the play area and, if so, selects the actions described above, otherwise it selects actions that move it toward the prey. In the ambush, the predator selects actions that move toward the top center or bottom center of the play area and remain there until the situation changes.\n\n![Figure 3\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/85694/elife-85694-fig3-figsupp6-v1.jpg)\n\n**Figure 3\u2014figure supplement 6.:** The movement trajectories are examples of predator(s) (dark blue and blue) and prey (red) interactions that overlay 10 episodes. The proportion of successful predation and mean episode duration were 74.4 \u00b1 0.54 and 12.9 \u00b1 0.12 (mean of 100 episodes \u00b1 SEM across 10 random seeds), respectively. The heat map of each agent was constructed based on the frequency of stay in each position, which is cumulative for 1,000 episodes (100 episodes \u00d7 10 random seeds). One predator had a relatively high correlation between the heat maps, whereas the others had a lowcorrelation (r = 0.60, p<0.001 in predator 1, r = 0.20, p<0.001 in predator 2). This trend in results is similar to that in the deep reinforcement learning predator agents (compare Figure 2c). Note that, in the rule-based agentsimulation, the prey\u2019s decision was made by a policy network in the two \u00d7 shared condition (i.e. predatorrule-based agent vs. prey deep reinforcement learning agent).\n\n![Figure 3\u2014figure supplement 7.](https://cdn.elifesciences.org/articles/85694/elife-85694-fig3-figsupp7-v1.jpg)\n\n**Figure 3\u2014figure supplement 7.:** The embedding is colored according to the distances between predators and prey. Distances 1 and 2 denote the distance between predator 1 and prey and predator 2 and prey, respectively. If both distances are short, the point is colored blue; if both are long, it is colored white. Note that the accuracy in behavioral cloning from the top 1 to the top 5 was, in ascending order, 0.47, 0.61, 0.71, 0.78, 0.80 for predator 1 and 0.44, 0.55, 0.60, 0.66, and 0.70 for predator 2 for the linear network, and 0.65, 0.77, 0.82, 0.88, and 0.95 for predator 1 and 0.68, 0.78, 0.82, 0.85, and 0.90 for predator 2 for the nonlinear network.\n\n![Figure 3\u2014figure supplement 8.](https://cdn.elifesciences.org/articles/85694/elife-85694-fig3-figsupp8-v1.jpg)\n\n**Figure 3\u2014figure supplement 8.:** In coloring the embedding, the lower and upper limits of coloring were set to the fifth percentile and 95th percentile (gray lines), respectively, to prevent visibility from being compromised by extreme values that rarely occur.\n\n![Figure 3\u2014figure supplement 9.](https://cdn.elifesciences.org/articles/85694/elife-85694-fig3-figsupp9-v1.jpg)\n\n**Figure 3\u2014figure supplement 9.:** In coloring the embedding, the lower and upper limits of coloring were set to the fifth percentile and 95th percentile (gray lines), respectively, to prevent visibility from being compromised by extreme values that rarely occur.\n\n![Figure 3\u2014figure supplement 10.](https://cdn.elifesciences.org/articles/85694/elife-85694-fig3-figsupp10-v1.jpg)\n\n**Figure 3\u2014figure supplement 10.:** In coloring the embedding, the lower and upper limits of coloring were set to the fifth percentile and 95th percentile (gray lines), respectively, to prevent visibility from being compromised by extreme values that rarely occur.\n\n![Figure 3\u2014figure supplement 11.](https://cdn.elifesciences.org/articles/85694/elife-85694-fig3-figsupp11-v1.jpg)\n\n**Figure 3\u2014figure supplement 11.:** In coloring the embedding in behavioral cloning, the lower and upper limits of coloring were set to the fifth percentile and 95th percentile (gray lines), respectively, to prevent visibility from being compromised by extreme values that rarely occur.\n\nFurthermore, we found a distinct feature in the embedding of predators\u2019 representations. Specifically, in certain state transitions, the position of the points on the embedding changed little, even though the agents were moving (e.g. scenes 1\u20132 on the embedding of the predator 2). From this, we deduced that the predators\u2019 representations may be more focused on encoding the distance between themselves and others, rather than the specific locations of both parties. To test our reasoning, we colored the representations according to the distance between predators and prey; distance 1 denotes the distance between predator 1 and the prey, and distance 2 denotes that between predator 2 and the prey. As a result, the representations of predators in the shared condition could be clearly separated by the distance-dependent coloration (Fig. 3c right), in contrast to those in the individual condition (Fig. 3c left). These indicate that the predators in the shared condition estimated state and action values and made decisions associated with distance-dependent representations (see Figure 3\u2014figure supplement 2 for the prey\u2019s decision).\n\n### Evaluating the playing strength of predator agents using joint play with humans\n\nFinally, to verify the generality of predators\u2019 decisions against unknown prey, we conducted an experiment of joint play between agents and humans. In the joint play, human participants controlled prey on a screen using a joystick. The objective, as in the computational simulation described above, was to evade capture until the end of the episode (30 s) while remaining within the area. We found that the outcomes of the joint play showed similar trends to those of the computer simulation (Figure 4a), showing that the proportion of predations that were successful increased and the mean episode duration decreased as the number of predators increased. These indicate that the predator agents\u2019 decision rules worked well for the prey controlled by humans. To visualize the associations of states experienced by predator agents versus agents and versus humans, we show colored two-dimensional t-SNE embedding of the representations in the last hidden layers of the state and action streams (Figure 4b, Figure 4\u2014figure supplement 1). These showed that, in contrast to a previous study (Mnih et al., 2015), the states were quite distinct, suggesting that predator agents experienced unfamiliar states when playing against the prey controlled by humans. This unfamiliarity may make it difficult for predators to make proper decisions. Indeed, in the one-predator condition, the predator agent occasionally exhibited odd behavior (e.g. staying in one place; see Figure 4\u2014figure supplement 2). On the other hand, in the two- and three-predator conditions, predator agents rarely exhibited such behavior and showed superior performance. This indicates that decision rules of cooperative hunting acquired in certain environments could be applied in other somewhat different environments.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/85694/elife-85694-fig4-v1.jpg)\n\n**Figure 4.:** (a) Proportion of predations that were successful (top) and mean episode duration (bottom). For both panels, the thin line denotes the performance of each participant, and the thick line denotes the mean. The theoretical prediction values were calculated based on the mean of proportion of solitary hunts. The proportion of predations that were successful increased as the number of predators increased ($F_{number(1.28,11.48)}$ = 276.20, $p$<0.001; $\u03b7^{2}$ = 0.90; one vs. two: $t_{(9)}$ = 13.80, $p$<0.001; two vs. three: $t_{(9)}$ = 5.9402, $p$<0.001). The mean duration decreased with an increasing number of predators ($F_{number(2,18)}$ = 23.77, $p$<0.001; $\u03b7^{2}$ = 0.49; one vs. two: $t_{(9)}$ = 2.60, $p$=0.029; two vs. three: $t_{(9)}$ = 5.44, $p$<0.001). (b) Comparison of two-dimensional t-distributed stochastic neighbor embedding (t-SNE) embedding of the representations in the last hidden layers of state-value stream between self-play (predator agents vs. prey agent) and joint play (predator agents vs. prey human).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/85694/elife-85694-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** To visualize the associations of states experienced by predator agents versus agents (self-play) and versus humans (jointplay), we show colored two-dimensional t-SNE embedding of the representations in the last hidden layer of the action-value stream. Similar to those of the state stream (Figure 4b), the experienced states were quite distinct,especially in the one- and two-predator conditions.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/85694/elife-85694-fig4-figsupp2-v1.jpg)\n\n**Figure 4\u2014figure supplement 2.:** The heat map of each agent was made based on the frequency of stay in each position which iscumulative for 500 episodes (50 episodes \u00d7 10 participants). Our results showed a similar trend between self-play (predator agents vs. prey agent) and joint play (predator agents vs. prey human) in terms of role division among predators. For example, in the individual condition, the heat maps between/among predators were similar, indicating that there was no clear division of roles. On the other hand, in the shared condition, the heat maps between/among predators differed and it indicates that the roles were divided among them. In addition, one of the differences fromself-play was the instability of the predator agent\u2019s behavior in the one-predator condition. As shown in the figure, under certain conditions, the predator agent stopped moving from its location (the upper right corner of the area).\n\n## Discussion\n\nCollaborative hunting has been traditionally thought of as an advanced hunting strategy that involves high-level cognition such as aspects of theory of mind (Boesch and Boesch-Achermann, 2000; Boesch, 2002). Here, we have shown that \u2018collaboration\u2019(Boesch and Boesch, 1989) can emerge in group hunts of artificial agents based on deep reinforcement learning. Notably, our predator agents successfully learned to collaborate in capturing their prey solely through a reinforcement learning algorithm, without employing explicit mechanisms comparable to aspects of theory of mind (Yoshida et al., 2008; Foerster, 2019; Hu and Foerster, 2020). This means that, in contrast to the traditional view, apparently elaborate coordination can be accomplished by relatively simple decision rules, that is, mappings between states and actions. This result advances our understanding of cooperative hunting behavior and its decision process, and may offer a novel perspective on the evolution of sociality.\n\nOur results on agent behavior are broadly consistent with previous studies concerning observations of animal behavior in nature. First, as the number of predators increased, success rates increased and hunting duration decreased (Creel and Creel, 1995). Second, whether collaborative hunts emerge depended on two factors: the success rate of hunting alone (Busse, 1978; Boesch, 2002) and the presence or absence of reward sharing following prey capture (Boesch, 1994; Stanford, 1996). Third, while each predator generally maintained a consistent role during repeated collaborative hunts, there was flexibility for these roles to be swapped as needed (Stander, 1992; Boesch, 2002). Finally, predator agents in this study acquired different strategies depending on the conditions despite having exactly the same initial values (i.e. network weights), resonating with the findings that lions and chimpanzees living in different regions exhibit different hunting strategies (Stander, 1992; Boesch\u2010Achermann and Boesch, 1994). These results suggest the validity of our computational simulations and highlight the close link between predators\u2019 behavioral strategies and their living environments, such as the presence of other predators and sharing of prey.\n\nThe collaborative hunts have shown performance that surpasses the theoretical predictions based on solitary hunting outcomes. This result is in line with the notion that role division among predators in nature could provide fitness benefits (Lang and Farine, 2017; Boesch and Boesch-Achermann, 2000). Meanwhile, when three predators were involved, performance was comparable whether prey was shared or not. One possible factor that has caused this is spatial constraints. We found that predators occasionally block the prey\u2019s escape path, exploiting the boundaries of the play area and the chasing movements of other predators even in the individual reward condition (Figure 2\u2014figure supplement 4). These results suggest that, under certain scenarios, coordinated hunting behaviors that enhance the success rate of predators may emerge regardless of whether food is shared, potentially relating to the benefits of social predation, including interspecific hunting (Bshary et al., 2006; Thiebault et al., 2016; Sampaio et al., 2021).\n\nWe found that the mappings resulting in collaborative hunting were related to distance-dependent internal representations. Additionally, we showed that the distance-dependent rule-based predators successfully reproduced behaviors similar to those of the deep reinforcement learning predators, supporting the association between decisions and distances (Methods; Figure 3\u2014figure supplement 5, Figure 3\u2014figure supplement 6 and Figure 3\u2014figure supplement 7). Deep reinforcement learning has held the promise for providing a comprehensive framework for studying the interplay among learning, representation, and decision making (Botvinick et al., 2020; Mobbs et al., 2021), but such efforts for natural behavior have been limited (Banino et al., 2018; Jaderberg et al., 2019). Our result that the distance-dependent representations relate to collaborative hunting is reminiscent of a recent idea about the decision rules obtained by observation in fish (Steinegger et al., 2018). Notably, the input variables of predator agents do not include variables corresponding to the distance(s) between the other predator(s) and prey, and this means that the predators in the shared conditions acquired the internal representation relating to distance to prey, which would be a geometrically reasonable indicator, by optimization through interaction with their environment. Our results suggest that deep reinforcement learning methods can extract systems of rules that allow for the emergence of complex behaviors.\n\nThe predator agents\u2019 decision rules (i.e. policy networks) acquired through interactions with other agents (i.e. self-play) were also useful for unknown prey controlled by humans, despite the dissociation of the experienced states. This suggests that decision rules formed by associative learning can successfully address natural problems, such as catching prey with somewhat different movement patterns than one\u2019s usual prey. Note that the learning mechanism of associative learning (or reinforcement learning) is relatively simple, but it allows for flexible behavior in response to situations, in contrast to innate and simple stimulus-response. Indeed, our prey agents achieved a higher rate of successful evasions than those operated by humans. Our view that decisions for successful hunting are made through representations formed by prior experience is a counterpart to the recent idea that computational relevance for successful escape may be cached and ready to use, instead of being computed from scratch on the spot (Evans et al., 2019). If animals\u2019 decision processes in predator-prey dynamics are structured in this way, it could be a product of natural selection, enabling rapid, robust, and flexible action in interactions with severe time constraints.\n\nIn conclusion, we demonstrated that the decisions underlying collaborative hunting among artificial agents can be achieved through mappings between states and actions. This means that collaborative hunting can emerge in the absence of explicit mechanisms comparable to aspects of theory of mind, supporting the recent idea that collaborative hunting does not necessarily rely on complex cognitive processes in brains (Lang and Farine, 2017). Our computational ecology is an abstraction of a real predator-prey environment. Given that chase and escape often involve various factors, such as energy cost (Hubel et al., 2016), partial observability (Mugan and MacIver, 2020; Hunt et al., 2021), signal communication (Vail et al., 2013), and local surroundings (Evans et al., 2019), these results are only a first step on the path to understanding real decisions in predator-prey dynamics. Furthermore, exploring how mechanisms comparable to aspects of theory of mind (Yoshida et al., 2008; Foerster, 2019; Hu and Foerster, 2020) or the shared value functions (Lowe, 2017; Foerster et al., 2018; Rashid, 2020), which are increasingly common in multi-agent reinforcement learning, play a role in these interactions could be an intriguing direction for future research. We believe that our results provide a useful advance toward understanding natural value-based decisions and forge a critical link between ecology, ethology, psychology, neuroscience, and computer science.\n\n## Methods\n\n### Environment\n\nThe predator and prey interacted in a two-dimensional world with continuous space and discrete time. This environment was constructed by modifying an environment known as \u2018predator-prey\u2019 within a multi-agent particle environment (Lowe, 2017). Specifically, the position of each agent was calculated by integrating the acceleration (i.e. selected action) twice with the Euler method, and viscous resistance proportional to velocity was considered. The modifications were that the action space (play area size) was constrained to the range of \u20131 to 1 on the x and y axes, all agent (predator/prey) disk diameters were set to 0.1, landmarks (obstacles) were eliminated, and predator-to-predator contact was ignored for simplicity (Tsutsui et al., 2022). The predator(s) was rewarded for capturing the prey (+1), namely contacting the disks, and punished for moving out of the area (\u20131), and the prey was penalized for being captured by the predator or for moving out of the area (\u20131). The predator and prey were represented as a red and blue disk, respectively, and the play area was represented as a black square enclosing them. The time step was 0.1 s and the time limit in each episode was set to 30 s. The initial positions of the predators and prey in each episode were randomly selected from a range of \u20130.5 to 0.5 on the x and y axes.\n\n### Experimental conditions\n\nWe selected the number of predators, relative mobility, and prey (reward) sharing as experimental conditions, based on ecological findings (Bailey et al., 2013; Lang and Farine, 2017). For the number of predators, three conditions were set: 1 (one), 2 (two), and 3 (three). In all these conditions, the number of prey was set to 1. For the relative mobility, three conditions were set: 120% (fast), 100% (equal), and 80% (slow) for the acceleration exerted by the predator, based on that exerted by the prey. For the prey sharing, two conditions were set: with sharing (shared), in which all predators were rewarded when a predator catches the prey, and without sharing (individual), in which a predator was rewarded only when it catches prey by itself. In total, there were 15 conditions.\n\n### Agent architecture\n\nWe considered a sequential decision-making setting in which a single agent interacts with an environment $E$ in a sequence of observations, actions, and rewards. At each time-step $t$, the agent observes a state $s_{t}\\inS$ and selects an action $a_{t}$ from a discrete set of actions $A={1,2,\u2026,|A|}$. One time step later, in part as a consequence of its action, the agent receives a reward, $r_{t+1}\\inR$, and moves itself to a new state $s_{t+1}$. In the MDP, the agent thereby gives rise to a sequence that begins as follows: $s_{0},a_{0},r_{1},s_{1},a_{1},r_{2},s_{2},a_{2},r_{3},\u2026$, and learns a behavioral rule (policy) that depends upon these sequences.\n\nThe goal of the agent is to maximize the expected discounted return over time through its choice of actions (Sutton and Barto, 2018). The discounted return $R_{t}$ was defined as $\\sumk=0T\\gamma^{k}r_{t+k+1}$, where $\\gamma\\in[0,1]$ is a parameter called the discount rate that determines the present value of future rewards, and $T$ is the time step at which the task terminates. The state-value function, action-value function, and advantage function are defined as $V^{\\pi}(s)=E_{\\pi}[R_{t}|s_{t}=s]$, $Q^{\\pi}(s,a)=E_{\\pi}[R_{t}|s_{t}=s,a_{t}=a]$, and $A^{\\pi}(s,a)=Q^{\\pi}(s,a)\u2212V^{\\pi}(s)$, respectively, where $\\pi$ is a policy mapping states to actions. The optimal action-value function $Q^{\u22c6}(s,a)$ is then defined as the maximum expected discounted return achievable by following any strategy, after observing some state $s$ and then taking some action $a$, $Q^{\u22c6}(s,a)=max\\piE[R_{t}|s_{t}=s,a_{t}=a,\\pi]$. The optimal action-value function can be computed by finding a fixed point of the Bellman equations:\n\n$$\nQ^{\u22c6}(s,a)=E_{s^{\u2032}\u223c\\epsilon}[r+\\gammamaxa^{\u2032}Q^{\u22c6}(s^{\u2032},a^{\u2032}|s,a)],\n$$\n\nwhere $s^{\u2032}$ and $a^{\u2032}$ are the state and action at the next time-step, respectively. This is based on the following intuition: if the optimal value $Q^{\u22c6}(s^{\u2032},a^{\u2032})$ of the state $s^{\u2032}$ was known for all possible actions $a^{\u2032}$, the optimal strategy is to select the action $a^{\u2032}$ maximizing the expected value of $r+\\gammamaxa^{\u2032}Q^{\u22c6}(s^{\u2032},a^{\u2032})$. The basic idea behind many reinforcement learning algorithms is to estimate the action-value function by using the Bellman equation as an iterative update; $Q_{i+1}(s,a)=E[r+\\gammamaxa^{\u2032}Q_{i}(s^{\u2032},a^{\u2032}|s,a)]$. Such value iteration algorithms converge to the optimal action-value function in situations where all states can be sufficiently sampled, $Q_{i}\u2192Q^{\u22c6}$ as $i\u2192\u221e$. In practice, however, it is often difficult to apply this basic approach, which estimates the action-value function separately for each state, to real-world problems. Instead, it is common to use a function approximator to estimate the action-value function, $Q(s,a;\\theta)\u2248Q^{\u22c6}(s,a)$.\n\nThere are several possible methods for function approximation, yet we here use a neural network function approximator referred to as deep $Q$-network (DQN) (Mnih et al., 2015) and some of its extensions to overcome the limitations of the DQN, namely Double DQN (Van Hasselt et al., 2016), Prioritized Experience Replay (Schaul et al., 2015), and Dueling Networks (Wang, 2016). Naively, a $Q$-network with weights $\\theta$ can be trained by minimizing a loss function $L(\\theta)$ that changes at each iteration $i$,\n\n$$\nL_{i}(\\theta_{i})=E_{s,a\u223c\u03c1(\u22c5)}[\\frac{1}{2}(y_{i}\u2212Q(s,a;\\theta_{i}))^{2}],\n$$\n\nwhere $y_{i}=r+\\gammamaxa^{\u2032}Q(s^{\u2032},a^{\u2032};\\theta_{i\u22121}|s,a)$ is the target value for iteration $i$, and $\u03c1(s,a)$ is a probability distribution over states $s$ and actions $a$. The parameters from the previous iteration $\\theta_{i\u22121}$ are kept constant when optimizing the loss function $L(\\theta)$. By differentiating the loss function with respect to the weights we arrive at the following gradient,\n\n$$\n\u2207_{\\theta_{i}}L_{i}(\\theta_{i})=E_{s,a\u223c\u03c1(\u22c5);s^{\u2032}\u223cE}[(r+\\gammamaxa^{\u2032}Q(s^{\u2032},a^{\u2032};\\theta_{i\u22121})\u2212Q(s,a;\\theta_{i}))\u2207_{\\theta_{i}}Q(s,a;\\theta_{i})].\n$$\n\nWe could attempt to use the simplest $Q$-learning to learn the weights of the network $Q(s,a;\\theta)$ online; however, this estimator performs poorly in practice. In this simplest form, they discard incoming data immediately, after a single update. This results in two issues: ($i$) strongly correlated updates that break the i.i.d. assumption of many popular stochastic gradient-based algorithms and ($ii$) the rapid forgetting of possibly rare experiences that would be useful later. To address both of these issues, a technique called experience replay is often adopted (Lin, 1992), in which the agent\u2019s experiences at each time-step $e_{t}=(s_{t},a_{t},r_{t+1},s_{t+1})$ are stored in a dataset (also referred to as replay memory) $D={e_{1},e_{2},\u2026,e_{N}}$, where $N$ is the dataset size, for some time period. When training the $Q$-network, instead of only using the current experience as prescribed by standard $Q$-learning, mini-batches of experiences are sampled from $D$ uniformly, at random, to train the network. This enables breaking the temporal correlations by mixing more and fewer recent experiences for the updates, and rare experiences will be used for more than just a single update. Another technique, called the target-network, is also often used for updating to stabilize learning. To achieve this, the target value $y_{i}$ is replaced by $r+\\gammamaxa^{\u2032}Q(s^{\u2032},a^{\u2032};\\theta_{i}^{\u2212})$, where $\\theta_{i}^{\u2212}$ are the weights, which are frozen for a fixed number of iterations. The full algorithm combining these ingredients, namely experience replay and the target-network, is often called a deep Q-network (DQN), and its loss function takes the form:\n\n$$\nL_{i}(\\theta_{i})=E_{(s,a,r^{\u2032},s^{\u2032}\u223cu(D))}[(y_{i}^{DQN}\u2212Q(s,a;\\theta_{i}))^{2}],\n$$\n\nwhere\n\n$$\ny_{i}^{DQN}=r+\\gammamaxa^{\u2032}Q(s^{\u2032},a^{\u2032};\\theta_{i}^{\u2212}),\n$$\n\nand $U(\u22c5)$ is a uniform sampling.\n\nIt has become known that $Q$-learning algorithms perform poorly in some stochastic environments. This poor performance is caused by large overestimations of action values. These overestimations result from a positive bias that is introduced because $Q$-learning uses the maximum action value as an approximation for the maximum expected action value. As a method to alleviate the performance degradation due to the overestimation, Double $Q$-learning, which decomposes the maximum operation into action selection and action evaluation by introducing the double estimator, was proposed (Hasselt, 2010). Double DQN (DDQN) is an algorithm that applies the Double $Q$-learning method to DQN (Van Hasselt et al., 2016). For the DDQN, in contrast to the original Double $Q$-learning and the other proposed method (Fujimoto et al., 2018), the target network in the DQN architecture, although not fully decoupled, was used as the second value function, and the target value in the loss function (i.e. Eq. Agent architecture) for iteration $i$ is replaced as follows:\n\n$$\ny_{i}^{DDQN}=r+\\gammaQ(s^{\u2032},argmaxa^{\u2032}Q(s^{\u2032},a^{\u2032};\\theta_{i});\\theta^{\u2212}).\n$$\n\nPrioritized Experience Replay is a method that aims to make the learning more efficient and effective than if all transitions were replayed uniformly (Schaul et al., 2015). For the prioritized replay, the probability of sampling from the data-set for transition $i$ is defined as\n\n$$\nP(i)=\\frac{p_{i}^{\\alpha}}{\\sumkp_{k}^{\\alpha}},\n$$\n\nwhere $p_{i}>0$ is the priority of transition for iteration $i$ and the exponent $\\alpha$ determines how much prioritization is used, with $\\alpha=0$ corresponding to uniform sampling. The priority $p_{i}$ is determined by $p_{i}=|\\delta_{i}|+\u03f5$, where $\\delta_{i}$ is a temporal-difference (TD) error (e.g. $\\delta_{i}=r+\\gammamax_{a^{\u2032}}Q(s^{\u2032},a^{\u2032};\\theta_{i}^{\u2212})\u2212Q(s,a;\\theta_{i})$ in DQN) and $\u03f5$ is a small positive constant that prevents the case of transitions not being revisited once their error is zero. Prioritized replay introduces sampling bias, and therefore changes the solution to which the estimates will converge. This bias can be corrected by importance-sampling (IS) weights $w_{i}=(\\frac{1}{N}\\frac{1}{P(i)})^{\\beta}$ that fully compensate for the non-uniform probabilities $P(i)$ if $\\beta=1$.\n\nDueling Network is a neural network architecture designed for value-based algorithms such as DQN (Wang, 2016). This features two streams of computation, the value and advantage streams, sharing a common encoder, and is merged by an aggregation module that produces an estimate of the state-action value function. Intuitively, we can expect the dueling network to learn which states are (or are not) valuable, without having to learn the effect of each action for each state. For the reason of stability of the optimization, the last module of the network is implemented as follows:\n\n$$\nQ(s,a;\\theta,\u03b7,\u03be)=V(s;\\theta,\u03be)+(A(s,a;\\theta,\u03b7)\u2212\\frac{1}{|A|}\\suma^{\u2032}A(s,a^{\u2032};\\theta,\u03b7)),\n$$\n\nwhere $\\theta$ denotes the parameters of the common layers, whereas $\u03b7$ and $\u03be$ are the parameters of the layers of the two streams, respectively.\n\nWe here modeled an agent (predator/prey) with independent learning, one of the simplest approaches to multi-agent reinforcement learning (Tan, 1993). In this approach, each agent independently learns its own policy and treats the other agents as part of the environment. In other words, each agent learns policies that are conditioned only on their local observation history, and do not account for the non-stationarity of the multi-agent environment. That is, in contrast to previous studies on multi-agent reinforcement learning (Tesauro, 2003; Foerster et al., 2016; Silver et al., 2017; Lowe, 2017; Foerster et al., 2018; Sunehag, 2017; Rashid, 2020; Son et al., 2019; Baker, 2019; Christianos et al., 2020; Mugan and MacIver, 2020; Hamrick, 2021; Yu, 2022), our agents did not share network parameters and value functions, and did not access models of the environment for planning. For each agent $n$, the policy $\\pi^{n}$ is represented by a neural network and optimized, with the framework of DQN including DDQN, Prioritized Experience Replay, and Dueling architecture. The loss function of each agent takes the form:\n\n$$\nL_{i}(\\theta_{i},\u03b7_{i},\u03be_{i})=E_{s,a,r^{\u2032},s^{\u2032}\u223cP(D)}[(y_{i}\u2212Q(s,a;\\theta_{i},\u03b7_{i},\u03be_{i}))^{2}],\n$$\n\nwhere\n\n$$\ny_{i}=r+\\gammaQ(s^{\u2032},argmaxa^{\u2032}Q(s^{\u2032},a^{\u2032};\\theta_{i},\u03b7_{i},\u03be_{i});\\theta_{i}^{\u2212},\u03b7_{i}^{\u2212},\u03be_{i}^{\u2212}),\n$$\n\nand $P$ (\u00b7) is a prioritized sampling. For simplicity, we omitted the agent index $n$ in these equations.\n\n### Training details\n\nThe neural network was composed of four layers (Figure 1\u2014figure supplement 1). There was a separate output unit for each possible action, and only the state representation was an input to the neural network. The inputs to the neural network were the positions of a specific agent in the absolute coordinate system ($x$- and $y$-positions) and the positions and velocities of a specific agent and others in the relative coordinate system ($u$- and $v$-positions and $u$- and $v$-velocities) (Figure 1\u2014figure supplement 2), which were determined based on findings in neuroscience (O\u2019Keefe and Dostrovsky, 1971) and ethology (Brighton et al., 2017; Tsutsui et al., 2020), respectively. We assumed that delays in sensory processing were compensated for by estimation of motion of self (Wolpert et al., 1998; Kawato, 1999) and others (Tsutsui et al., 2021), and the current information at each time was used as input as is. The outputs were the acceleration in 12 directions every $30^{\u2218}$ in the relative coordinate system, which were determined with reference to an ecological study (Wilson et al., 2018). After the first two hidden layers of the MLP with 64 units, the network branched off into two streams. Each branch had one MLP layer with 32 hidden units. ReLU was used as the activation function for each layer (Glorot et al., 2011). The network parameters $\\theta^{n}$, $\u03b7^{n}$, and $\u03be^{n}$ were iteratively optimized via stochastic gradient descent with the Adam optimizer (Kingma and Ba, 2014). In the computation of the loss, we used Huber loss to prevent extreme gradient updates (Huber, 1992). The model was trained for 106 episodes, and the network parameters were copied to the target-network every 2000 episodes. The replay memory size was 104, the minibatch size during training was 32, and the learning rate was $10^{\u22126}$. The discount factor $\\gamma$ was set to 0.9, and $\\alpha$ was set to 0.6. We used an $\\epsilon$-greedy policy as the behavior policy $\\pi^{n}$, which chooses a random action with probability $\\epsilon$ or an action according to the optimal $Q$ function $argmaxa\\inA\u2061Q^{\u22c6}(s,a)$ with probability $1\u2212\\epsilon$. In this study, $\\epsilon$ was annealed linearly from 1 to 0.1 over the first 104 episodes and fixed at 0.1 thereafter.\n\n### Evaluation\n\nThe model performance was evaluated using the trained model. The initial position of each agent and termination criteria in each episode were the same as in training. During the evaluation, $\\epsilon$ was set to 0, and each agent took greedy actions. If the predator captured the prey within the time limit, the predator was deemed successful; otherwise, the prey was considered successful. Additionally, if one side (predators/prey) moved out of the area, the other side (prey/predators) was deemed successful. We first conducted a computational experiment (self-play: predator agent vs. prey agent). and then conducted a human behavioral experiment (joint play: predator agent vs. prey human). In the computational experiment, we simulated 100 episodes for each of the 10 random seeds (i.e. different initial positions), for a total of 1000 episodes in each condition. In the joint play, human participants controlled prey on a screen using a joystick and interacted with the predator agents for 50 episodes in each condition.\n\n### Participants\n\nTen males participated in the experiment (aged 22\u201325, mean = 23.5, s.d.=1.2). All participants were right-handed but one, had normal or corrected-to-normal vision, and were na\u00efve to the purpose of the study. This study was approved by the Ethics Committee of Nagoya University Graduate School of Informatics (No. 2021\u201327). Informed consent was obtained from each participant before the experiment. Participants received 1000 yen per hour as a reward.\n\n### Apparatus\n\nParticipants were seated in a chair, and they operated the joystick of an Xbox One controller that could tilt freely in any direction to control a disk on the screen. The stimuli were presented on a 26.5-inch monitor (EIZO EV2730Q) at a refresh rate of 60 Hz. A gray square surrounding the disks was defined as the play area. The diameter of each disk on the screen was 2.0 cm, and the width and height of the area were 40.0 cm. The acceleration of each disk on the screen was determined by the inclination of the joystick. Specifically, acceleration was added when the degree of joystick tilt exceeded half of the maximum tilt, and the direction of the acceleration was selected from 12 directions, discretized every 30 degrees in an absolute coordinate system corresponding to the direction of joystick tilt. The reason for setting the direction of acceleration with respect to the absolute coordinate system, rather than the relative coordinate system, in the human behavioral experiment was to allow participants to control more intuitively. The position and velocity of each disk on the screen were updated at 10 Hz (corresponding to the computational simulation) and the position during the episodes was recorded at 10 Hz on a computer (MacBook Pro) with Psychopy version 3.0. The viewing distance of the participants was about 60 cm.\n\n### Design\n\nParticipants controlled a red disk representing the prey on the screen. They were asked to evade the predator for 30 s without leaving the play area. The agent\u2019s initial position and the outcome of the episode were determined as described above. The experimental block consisted of five sets of 10 episodes, with a warm-up of 10 episodes so that participants could become accustomed to the task. In this experiment, we focused on the slow condition and there were thus five experimental conditions (one, two \u00d7 individual, two \u00d7 shared, three \u00d7 individual, and three \u00d7 shared). Each participant played one block (i.e. 50 episodes) of each experimental condition. The order of the experimental conditions was pseudo-randomized across participants.\n\n### Rule-based agent\n\nWe constructed rule-based predator agents to test whether they could reproduce similar behavior to predator agents based on deep reinforcement learning in the two \u00d7 shared condition. For consistency with the deep reinforcement learning agents, the input to the rule-based agent used to make decisions was limited to the current information (e.g. position and velocity) and the output was provided in a relative coordinate system to the prey; that is, action 1 denotes movement toward the prey and action 7 denotes movement in the opposite direction of the prey. The predator agent first determines whether it, or another predator, is closer to the prey, and then, if the other predator is closer, it determines whether the distance 2 is less than a certain distance threshold (set to 0.4 in our simulation). The decision rule for each predator is selected by this branching, with predator 1 adopting the three rules \u2018chase,\u2019 \u2018shortcut,\u2019 and \u2018approach,\u2019 and predator 2 adopting the two rules \u2018chase\u2019 and \u2018ambush.\u2019 For the chase, the predator first determines whether it is near the outer edge of the play area and, if so, selects actions that will prevent it from leaving the play area. Specifically, if the predator\u2019s position is such that  $|x|$ > 0.9 and $|y|$ > 0.9, action 3 for clockwise (CW) and action 11 for counterclockwise (CCW) was selected, respectively, and if 0.8 < $|x|\u2266$ $\u2266$ 0.9 and 0.8 < $|y|\u2266$ $\u2266$ 0.9, action 2 for CW and action 12 for CCW was selected. The CW and CCW were determined by the absolute position of the prey and the relative position vector between the closer predator and prey; the play area was divided into four parts based on the signs of the $x$ and $y$ coordinates, and CW and CCW were determined by the correspondence between each area and the sign of the larger component of absolute value ($x$ or $y$) of the relative position vector. For instance, if the closer predator is at (0.2, 0.3) and the prey is at (0.5, 0.2), it is determined to be CW. If the predator is not outside the play area, then it determines whether the prey is inside the play area, and, if so, selects actions that will drive them outside; if the prey\u2019s position is such that $|x|\u2266$ $\u2266$ 0.5 and $|y|\u2266$ $\u2266$ 0.5, action 11 for CW and action 3 for CCW was selected, and if 0.5 < $|x|\u2266$ $\u2266$ 0.6 and 0.5 < $|y|\u2266$ $\u2266$ 0.6, action 12 for CW and action 2 for CCW was selected. In other situations, the predator selects actions so that the direction of movement is aligned with that of the prey; if the angle of the velocity vectors between the predator and prey $\u03c8\u2266$ $\u2266$ \u201350 action 3, and if \u201350 < $\u03c8\u2266$ $\u2266$ \u201315 action 2, if \u201315 < $\u03c8\u2266$ $\u2266$ 15 action 1, if 15 < $\u03c8\u2266$ $\u2266$ 50 action 2, if 50 < $\u03c8$ action 3 was selected. For the shortcut, the predator determines whether it is near the outer edge of the play area, and if so, selected the action described above, otherwise, it selected actions that producing shorter paths to the prey; action 2 for CW and action 12 for CCW was selected. For the approach, the predator determines whether it is near the outer edge of the play area, and if so, selected the action described above, otherwise, it selected actions that move it toward the prey; action 1 was selected. For the ambush, the predator selected actions that move it toward the top center or bottom center of the play area and to remain that location until the situation changes. If the predator\u2019s position is such that $|y|\u2266$ $\u2266$ 0, the predator moved with respect to the bottom center point (\u20130.1, 0.5), and if $|y|$ > 0, it moved toward the top center point (0, 0.6). The coordinates of the top center and bottom center points were based on the result of deep reinforcement learning agents. Specifically, we first divided the play area into four parts based on the signs of the $x$ and $y$ coordinates with respect to the reference (i.e. bottom center or top center) point, and in each area, the predator selected actions 3, 8, or 12 (every 120 degrees) that will move it toward the reference point, depending on the direction of the prey from the predator\u2019s perspective. For instance, if the predator is at (\u20130.2, 0.8) and the prey is at (\u22120.2, \u20130.8), action 12 is selected.\n\n### Behavioral cloning\n\nWe constructed neural networks to clone the predatory behavior of rule-based agents. The neural network is composed of two weight layers; that is, it takes the state of environments as inputs as in the deep reinforcement learning agents, processes them through a hidden layer, and then outputs probabilities for each of the 13 potential actions using the softmax function. To ensure a fair comparison with the embedding of deep reinforcement learning agents, we set the number of units in the hidden layer to 32. In the networks, all layers were composed of the fully connected layer. In this study, for each agent (i.e. predator 1 and predator 2), we implemented two types of networks: a linear network without any nonlinear transformation, and a nonlinear network with ReLU activations. Specifically, in the linear network, the hidden layer is composed of the fully connected layer without nonlinearity,\n\n$$\nh=W_{xh}x+b_{h},\n$$\n\nwhere $x$, $h$, $W_{xh}$, and $b_{h}$ denote the input to the hidden layer (state), the output of the hidden layer, the input-to-hidden weight, and the bias, respectively. In the nonlinear network, the hidden layer is composed of the fully connected layers with nonlinearity,\n\n$$\nh=\\phi(W_{xh}x+b_{h}),\n$$\n\nwhere $\\phi$($x$)=max(0, $x$) is the rectified linear unit (ReLU) for nonlinearity. The neural network models were trained to minimize the cross entropy error,\n\n$$\nE=\u2212\\sumkt_{k}log\u2061y_{k},\n$$\n\nwhere $t$ and $y$ denote the actual actions taken by the rule-based agents and the predicted actions in each class $k$, respectively. Network parameters were optimized iteratively using stochastic gradient descent with the Adam optimizer. The learning rate, batch size, and epoch were set as 0.0001, 32, and 2000, respectively, for all agents and networks. The networks were trained, validated, and tested using simulation data for 1000 episodes (123,597 time steps), 100 episodes (16,805 time steps), and 100 episode (12076 time steps), respectively. The network weights were saved according to the best performance observed during the validation phase.\n\n### Data analysis\n\nAll data analysis was performed in Python 3.7. Successful predation was defined as the sum of the number of predators catching prey and the number of prey leaving the play area. The theoretical prediction assumes that each predator\u2019s performance is independent of the others\u2019 performance, and was defined as follows:\n\n$$\nH_{n}=1\u2212(1\u2212H_{1})^{n}\n$$\n\nwhere $H_{n}$ and $H_{1}$ denote the proportion of successful predation when the number of predators is $n$ and 1, respectively. The duration was defined as the time from the beginning to the end of the episode, with a maximum duration of 30 s. The heat maps were constructed based on the frequency of stay in each position, with the play area divided into 1600 (40\u00d740). The concordance rate was calculated by comparing the actual selected action by each agent in the two or three conditions with the action that would be chosen by the agent in the one condition if it were placed in a same situation. The circular correlation coefficient was calculated by converting the selected actions (1\u201312) into angles (0\u2013330 degrees) (Berens, 2009), and in this analysis, action 13 (do nothing) was excluded from the analysis. The two-dimensional embedding was made by transforming the vectors in the last hidden layers of state-value stream and action-value stream in the policy network using t-distributed stochastic neighbor embedding (t-SNE) (van der Maaten and Hinton, 2008). To reduce the influence of extremely large or small values, the color ranges of the $V$ value, SD $Q$ value, and distance were limited from the 5th percentile to the 95th percentile of whole values experienced by each agent (see Figure 3\u2014figure supplements 8\u201311).\n\n### Statistics\n\nAll quantitative data are reported as mean \u00b1 SEM across random seeds in the computational experiment and across participants in the human experiment. In the human experiment, sample sizes were not predetermined statistically, but rather were chosen based on field standards. The data were analyzed using one- or two-way repeated-measures analysis of variance (ANOVA) as appropriate. For these tests, Mauchly\u2019s test was used to test sphericity; if the sphericity assumption was violated, degrees of freedom were adjusted by the Greenhouse\u2013Geisser correction. To adjust the $p$ values for multiple comparisons, the Holm-Bonferonni method was used. The data distribution was assumed to be normal for multiple comparisons, but this was not formally tested. Two-tailed statistical tests were used for all applicable analyses. The significance level was set at an alpha value of 0.05. The theoretical prediction was excluded from statistical analyses (Figures 2a and 4a) because, from the equation, it is obvious that the proportion of successful predation increases as the number of predators increases. Specific test statistics, $p$ values, and effect sizes for the analyses are detailed in the corresponding figure captions. All statistical analyses were performed using R version 4.0.2 (The R Foundation for Statistical Computing).\n\n### Code availability\n\nThe code for computational simulation and figures is available at https://github.com/TsutsuiKazushi/collaborative-hunting; (copy archived at Kazushi, 2023).\n",
+      "created_at": "2025-12-04T04:33:53.269755Z"
+    },
+    {
+      "id": "56bbe8fe-d252-4a2a-a00a-758f40f45784",
+      "submission_id": "dea1ffe4-bc5b-4868-9c15-100f832e08eb",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Malcolm A MacIver, https://ror.org/000e0be47 Northwestern University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.85694.sa0](https://doi.org/10.7554/eLife.85694.sa0)\n\nCooperative hunting is typically attributed to certain mammals (and select birds) which express highly complex behaviors. This paper makes the valuable finding that in a highly idealized open environment, cooperative hunting can emerge through simple rules. This has implications for a reassessment, and perhaps a widening, of what groups of animals are believed to manifest cooperative hunting.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Malcolm A MacIver, https://ror.org/000e0be47 Northwestern University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.85694.sa1](https://doi.org/10.7554/eLife.85694.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Collaborative hunting in artificial agents with deep reinforcement learning\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Michael Frank as the Senior Editor.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions (for the authors):\n\n1) There are extensive remarks from the reviewers on the validity of some of the more theoretical claims. These need to be carefully addressed. Examples include whether it is correct to infer that more complex cognition is not needed for cooperative hunting because DQN can solve the problem; The absence of an explicit model does not mean that there isn't an implicit model of the other agents behaviors that is encoded in the neural network weights.\n\n2) The lack of causal analysis either needs to be addressed or the \"mediated by\"-type claims need to be tempered.\n\n3) There has been a translation of the DQN into simple rules, but at present the discussion is too incomplete for readers to understand why this was done and what can be concluded.\n\n4) A discussion of the limitations of this work in terms of the absence of things like shared value functions increasingly common in multi-agent RL and absence of partially observable environments common in predator-prey dynamics, would be helpful.\n\n5) Please address R3's comment that the paper's analysis is possible without RL, such as via behavioral cloning.\n\n6) Some of the reviews suggest better coverage of the relevant literature. Given the size of this literature, this has to be selective, but it appears some effort could be expended to further improve the scholarship of the work.\n\nReviewer #1 (Recommendations for the authors):\n\nFigure 2 \u2013 The gap between individual and shared only occurs at two predators, for both % successful predation and duration. It would be helpful to have a discussion of this point. Wild dog packs, for example, are typically larger: perhaps this because the space they work over is much larger (relative to disk size), the environment complexity, or something else, but in any case it would be interesting to know whether shared vs individual is the ruling condition.\n\nIt also suggests that sharing is not needed in the 3 predator situation to obtain the same results. Does that mean that the work is suggesting cooperation even occurs without sharing? This seems to be a significant problem, since it's hard to imagine how the term \"collaboration\" or \"cooperation\" can be applied in the absence of shared reward. If it is strictly a matter of reduction of duration and increase in rate of success, it may equate to a more limited form of cooperation? Are their biological analogs of group hunts without sharing?\n\n186 \u2013 We found that the mappings resulting in collaborative hunting were mediated by distance-dependent internal representations.\n\n'Mediated' here seems to play the role of a \"filler term\" as used in neuroscience (see Krakauer et al. 2017 Neuroscience needs behavior).\n\nOnly correlations have been shown, but this is a causal claim. To support the causal claim, it would be necessary to intervene in the network and show that the interventions in the internal representations have the predicted causal role.\n\n194 \u2013 The organization of this paragraph might be better reversed. One could argue that Figure S8 (which could be referenced here) providing similar results and DQN helps support the hypothesis that the representation of distance in the network plays a causal role in the outcome.\n\n234 \u2013 Initial position of each episode is unclear as previously noted.\n\n236 \u2013 The text above says -1 for moving out of arena to the prey, so if the prey moves out, is it just that, or does the predator also get +1 since the predator is now deemed \"successful\"?\n\nReviewer #2 (Recommendations for the authors):\n\n\u2013 I am not clear that there is sufficient evidence for lines 172-174. The absence of an explicit model does not mean that there isn't an implicit model of the other agents behaviors that is encoded in the neural network weights. I'm not clear what sort of experiment would allow you to distinguish this though there might be a way to run a linear probe to confirm that this information is not in the network weights?\n\n\u2013 The notation in lines 246-251 is confusing because it alternates between POMDP notation (i.e. that the agent gets an observation that is a transformation of the true state) and MDP notation. Is the setup an MDP or a POMDP?\n\n\u2013 Perhaps line 259 should be \"by finding a fixed point of the Bellman equations?\"\n\n\u2013 Line 271 should be \"Dueling Networks\" not \"Dueling Network\" \u2013 The sentence starting on line 271 and ending on 273 could or should be cut entirely as it doesn't provide much value and I think it's debatable whether DQN was the first algorithm to solve a high dimensional input problem; it very much depends on how you define high dimensiona\n\n\u2013 To get equation 3 from equation 2, there needs to be a factor of 1/2 somewhere.\n\n\u2013 In line 321 I don't know what identifiability means in the context of Q-learning? Is this a technical term used in some subfield that works on Q-learning? Why does subtracting the mean help with \"identifiability?\"\"\n\n\u2013 A discount factor of 0.9 is a wildly low discount factor, basically leading agents to only care about the next 10 steps. I don't think this necessarily affects the outcome of your project or necessarily requires any changes as I don't think agents need to do long horizon reasoning here, but it's worth keeping in mind!\n\n\u2013 I don't fully understand the claim that this expands the range of things that are understood to be possible to learn via associative learning. There's no theory precluding a model-free algorithm from learning this type of behavior so the claim in the discussion strikes me as odd. In practice, this type of result where model-free RL agents successfully hunt together have been around since the release of the multi-particle envs (see https://proceedings.neurips.cc/paper/2017/hash/68a9750337a418a86fe06c1991a1d64c-Abstract.html)\n\n\u2013 I think the rule-based model is neat but I don't understand what what question it answers. Did I perhaps miss something?\n\n\u2013 I don't find the evidence for the distance-dependent features compelling; is all of the evidence for it the t-SNE embeddings?\n\n\u2013 Lines 194-196 are confusing to me. Why does there being a rule-based model employ your DQN agent is also learning a similar rule-based model?\n\nReviewer #3 (Recommendations for the authors):My largest suggestion is to fit a linear model to rule-based behaviors and compare the t-SNE embeddings of the behavioral cloning policy with the embeddings of the RL policy? Is the use of RL truly important for this paper?Around line 362, the idea of Rule based agents and human controlled agents are also introduced. I would like to see linear models that take as observations the rule-based agents observations and output the rule based agents actions. Would the t-SNE embeddings look similar for these linear models and for the RL-trained models? If the embeddings look similar, what does that say about the emergence of these capabilities as a result of RL? Does training via RL even matter? Do we care if it doesn't matter?\n\nThere is a large amount of work on multi-agent learning that this paper seemingly ignores, or fails to evaluate against. Multi-Agent Actor-Critic for Mixed Cooperative-Competitive Environments has thousands of citations. However, I am willing to accept that there are limitations to what a single paper can cover.\n\nMore specific comments:\n\nLine 46-47. I do not know what \"simple descriptions with the distances can reproduce similar behavior\" is trying to convey.\n\nLines 50-51: \"Our approach of computational ecology bridges the gap between ecology, ethology, and neuroscience and may provide a comprehensive account of them.\" This is probably too strong of a claim.\n\nFigure 1: The architecture diagram is a little difficult to understand. The key has \"layer with ReLU\" but then I do not see any clear white boxes? I also do not see any clear units? I think that maybe this is happening inside of the \"prey,\" \"predator 1,\" etc boxes. However, this is all much too small. I think you should decide if you want this figure to be about the neural network architecture, or about the fact the environment is broken into 1 prey and N predators that share an observation.\n\nI think the actions are also not clear. There are probably too many lines in the figure.\n\nFor Figure 1 (b), why not just plot the actual density? Actually, I see this is included in Figure 2. I think this is the more helpful Figure!\n\nIn Figure 2, what form of Hypothesis testing was used? Was this a KS test? You can't assume the distributions are Gaussian? The presence of a chi-squared statistic seems to indicate Gaussian assumptions. But the distribution is strongly non-Gaussian in this case. A little more clarity would be helpful.\n\nLine 132 mentions that the variance is higher over the action distribution when the predator is about to catch the prey? This is actually the exact opposite of my intuition. I think that the actions hardly matter when the prey is far away, so there is no obvious optimal action, and the choice would be closer to uniform. I'm not sure that this matters very much, but it's interesting.\n\nLine 325 \u2013 Usually IL is reserved for Imitation Learning. I have never seen it used for Independent Learning.\n\nLine 324 \u2013 I think biological organisms usually model the behavior of other organisms and account for it while planning.\n\nLine 212 \u2013 Q-values do implicitly model the competencies of other agents.\n\nLine 196 \u2013 What does it mean to switch the decision rules with the distances?\n\nOverall, I think the problems considered by this paper are interesting. And I am happy you took the time to write it. This work made me think a lot about my own research. I appreciate your efforts here. Thank you.\n",
+      "created_at": "2025-12-04T04:33:53.269755Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T04:33:53.269755Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T04:33:53.269755Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "8dcacab8-94e5-4eb7-95f4-760ac39826bc",
+      "content_id": "99b55bc1-39df-474e-8aaf-d202ee39df82",
+      "claim_id": "C1",
+      "claim": "Collaborative hunting, in which predators play different and complementary roles to capture prey, has been traditionally believed to be an advanced hunting strategy requiring large brains that involve high-level cognition.",
+      "claim_type": "EXPLICIT",
+      "source": "Collaborative hunting, in which predators play different and complementary roles to capture prey, has been traditionally believed to be an advanced hunting strategy requiring large brains that involve high-level cognition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature in the introduction section.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:33:53.269755Z"
+    },
+    {
+      "id": "1b2a9d54-68c9-438b-96be-4445a6e2b537",
+      "content_id": "99b55bc1-39df-474e-8aaf-d202ee39df82",
+      "claim_id": "C2",
+      "claim": "Recent findings that collaborative hunting has been documented in smaller-brained vertebrates have placed the previous belief under strain.",
+      "claim_type": "EXPLICIT",
+      "source": "However, recent findings that collaborative hunting has also been documented in smaller-brained vertebrates have placed this previous belief under strain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to recent studies on smaller-brained vertebrates.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:33:53.269755Z"
+    },
+    {
+      "id": "378379f1-dbb0-42ff-bd3e-fdbc38f9b652",
+      "content_id": "99b55bc1-39df-474e-8aaf-d202ee39df82",
+      "claim_id": "C3",
+      "claim": "Decisions underlying collaborative hunts do not necessarily rely on sophisticated cognitive processes.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, using computational multi-agent simulations based on deep reinforcement learning, we demonstrate that decisions underlying collaborative hunts do not necessarily rely on sophisticated cognitive processes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the computational simulations and results presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:33:53.269755Z"
+    },
+    {
+      "id": "e352fcc8-0eb1-4c51-b011-e388631b9275",
+      "content_id": "99b55bc1-39df-474e-8aaf-d202ee39df82",
+      "claim_id": "C4",
+      "claim": "Apparently elaborate coordination can be achieved through a relatively simple decision process of mapping between states and actions related to distance-dependent internal representations formed by prior experience.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that apparently elaborate coordination can be achieved through a relatively simple decision process of mapping between states and actions related to distance-dependent internal representations formed by prior experience.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the analysis of internal representations and decision rules in the results section.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:33:53.269755Z"
+    },
+    {
+      "id": "6c9cf222-2530-42b4-ade8-e7f419a852a6",
+      "content_id": "99b55bc1-39df-474e-8aaf-d202ee39df82",
+      "claim_id": "C5",
+      "claim": "The decision rule of predators is robust against unknown prey controlled by humans.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we confirmed that this decision rule of predators is robust against unknown prey controlled by humans.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the human behavioral experiment results presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:33:53.269755Z"
+    },
+    {
+      "id": "3b847502-49a7-415d-a28f-2280705e8435",
+      "content_id": "99b55bc1-39df-474e-8aaf-d202ee39df82",
+      "claim_id": "C6",
+      "claim": "Collaborative hunting can emerge in various intra- and inter-specific interactions in nature.",
+      "claim_type": "EXPLICIT",
+      "source": "Our computational ecological results emphasize that collaborative hunting can emerge in various intra- and inter-specific interactions in nature, and provide insights into the evolution of sociality.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the computational results and their implications.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:33:53.269755Z"
+    },
+    {
+      "id": "8df9463e-24df-42b6-9a4e-4260d048a050",
+      "content_id": "99b55bc1-39df-474e-8aaf-d202ee39df82",
+      "claim_id": "C7",
+      "claim": "Cooperative hunting has been regarded as one of the most widely distributed forms of cooperation in animals.",
+      "claim_type": "EXPLICIT",
+      "source": "Cooperative hunting, in which two or more individuals engage in a hunt to successfully capture prey, has been regarded as one of the most widely distributed forms of cooperation in animals (Packer and Ruttan, 1988), and has received considerable attention because of the close links between cooperative behavior, its apparent cognitive demand, and even sociality (Macdonald, 1983; Creel and Creel, 1995; Brosnan et al., 2010; Lang and Farine, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:33:53.269755Z"
+    },
+    {
+      "id": "7c62905a-9dfa-4f20-9eb3-286b45fc92ca",
+      "content_id": "99b55bc1-39df-474e-8aaf-d202ee39df82",
+      "claim_id": "C8",
+      "claim": "Collaborative hunting, in which predators play different and complementary roles, has been reported in only a handful of vertebrate species.",
+      "claim_type": "EXPLICIT",
+      "source": "Cooperative hunts have been documented in a wide variety of species (Lang and Farine, 2017; Bailey et al., 2013), yet 'collaboration' (or 'collaborative hunting'), in which predators play different and complementary roles, has been reported in only a handful of vertebrate species (Stander, 1992; Boesch and Boesch, 1989; Gazda et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:33:53.269755Z"
+    },
+    {
+      "id": "a6e6bfa0-5d99-420e-bdec-69758fa198a1",
+      "content_id": "99b55bc1-39df-474e-8aaf-d202ee39df82",
+      "claim_id": "C9",
+      "claim": "Lions and chimpanzees are capable of dividing roles among individuals during hunting.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, previous studies have shown that mammals such as lions and chimpanzees are capable of dividing roles among individuals, such as when chasing prey or blocking the prey's escape path, to facilitate capture by the group (Stander, 1992; Boesch and Boesch, 1989).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous observational studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:33:53.269755Z"
+    },
+    {
+      "id": "efc654cb-2bf7-449b-a843-4d5db11a7008",
+      "content_id": "99b55bc1-39df-474e-8aaf-d202ee39df82",
+      "claim_id": "C10",
+      "claim": "Collaborative hunts are often believed to be an advanced hunting strategy requiring large brains that involve high-level cognition such as aspects of theory of mind.",
+      "claim_type": "EXPLICIT",
+      "source": "Collaborative hunts appear to be achieved through elaborate coordination with other hunters, and are often believed to be an advanced hunting strategy requiring large brains that involve high-level cognition such as aspects of theory of mind (Boesch and Boesch-Achermann, 2000; Boesch, 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:33:53.269755Z"
+    },
+    {
+      "id": "ae0c3a55-c79d-459c-a0fb-dc8b8459cf36",
+      "content_id": "99b55bc1-39df-474e-8aaf-d202ee39df82",
+      "claim_id": "C11",
+      "claim": "Cases of intra- and inter-specific collaborative hunting have been demonstrated in smaller-brained vertebrates such as birds, reptiles, and fish.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, cases of intra- and inter-specific collaborative hunting have also been demonstrated in smaller-brained vertebrates such as birds (Bednarz, 1988), reptiles (Dinets, 2015), and fish (Bshary et al., 2006; Steinegger et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous observational studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:33:53.269755Z"
+    },
+    {
+      "id": "cc2d6ba9-ac1b-4e37-8e7d-3a338130c2ec",
+      "content_id": "99b55bc1-39df-474e-8aaf-d202ee39df82",
+      "claim_id": "C12",
+      "claim": "Apparently elaborate hunting behavior can emerge in a relatively simple decision process in response to ecological needs.",
+      "claim_type": "EXPLICIT",
+      "source": "It seems possible that apparently elaborate hunting behavior can emerge in a relatively simple decision process in response to ecological needs (Steinegger et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:33:53.269755Z"
+    },
+    {
+      "id": "95575e39-7aee-4e44-97c3-c385837d18b2",
+      "content_id": "99b55bc1-39df-474e-8aaf-d202ee39df82",
+      "claim_id": "C13",
+      "claim": "The decision process underlying collaborative hunting remains poorly understood because most previous studies have relied exclusively on behavioral observations.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the decision process underlying collaborative hunting remains poorly understood because most previous studies thus far have relied exclusively on behavioral observations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on a review of previous literature and its limitations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:33:53.269755Z"
+    },
+    {
+      "id": "1ef4d299-f458-45a8-a380-49d7fc237997",
+      "content_id": "99b55bc1-39df-474e-8aaf-d202ee39df82",
+      "claim_id": "C14",
+      "claim": "It is often difficult to identify the specific decision process that results in coordinated behavior through observational studies.",
+      "claim_type": "EXPLICIT",
+      "source": "Observational studies are essential for documenting such natural behavior, yet it is often difficult to identify the specific decision process that results in coordinated behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on general knowledge about the limitations of observational studies.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:33:53.269755Z"
+    },
+    {
+      "id": "22c4cb8a-410f-41a4-b0c4-50243eee79af",
+      "content_id": "99b55bc1-39df-474e-8aaf-d202ee39df82",
+      "claim_id": "C15",
+      "claim": "Seemingly simple behavior can result from complex processes and vice versa.",
+      "claim_type": "EXPLICIT",
+      "source": "This limitation arises because seemingly simple behavior can result from complex processes (Evans et al., 2019) and vice versa (Couzin et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:33:53.269755Z"
+    },
+    {
+      "id": "e13261af-3f5c-4a6f-acf1-3e640d89b6da",
+      "content_id": "99b55bc1-39df-474e-8aaf-d202ee39df82",
+      "claim_id": "C16",
+      "claim": "Deep reinforcement learning mechanisms were originally inspired by animal associative learning.",
+      "claim_type": "EXPLICIT",
+      "source": "Deep reinforcement learning mechanisms were originally inspired by animal associative learning (Sutton and Barto, 1981), and are thought to be closely related to neural mechanisms for reward-based learning centering on dopamine (Schultz et al., 1997; Samejima et al., 2005; Doya, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:33:53.269755Z"
+    },
+    {
+      "id": "554e6a0a-8e37-4ac5-b97c-22d41140cd2f",
+      "content_id": "99b55bc1-39df-474e-8aaf-d202ee39df82",
+      "claim_id": "C17",
+      "claim": "Associative learning is likely to be the most widely adopted learning mechanism in animals.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that associative learning is likely to be the most widely adopted learning mechanism in animals (Mackintosh, 1974; Wynne, 2001), collaborative hunting could arise through associative learning, where simple decision rules are developed based on behavioral cues [i.e. contingencies of reinforcement (Skinner, 2014)].",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:33:53.269755Z"
+    },
+    {
+      "id": "463ccd42-c59c-4354-a863-b37f61265e33",
+      "content_id": "99b55bc1-39df-474e-8aaf-d202ee39df82",
+      "claim_id": "C18",
+      "claim": "Predator agents successfully learned to collaborate in capturing their prey solely through a reinforcement learning algorithm, without employing explicit mechanisms comparable to aspects of theory of mind.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, our predator agents successfully learned to collaborate in capturing their prey solely through a reinforcement learning algorithm, without employing explicit mechanisms comparable to aspects of theory of mind (Yoshida et al., 2008; Foerster, 2019; Hu and Foerster, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the computational simulation results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:33:53.269755Z"
+    },
+    {
+      "id": "c253eab3-9836-478e-a5af-cada96710651",
+      "content_id": "99b55bc1-39df-474e-8aaf-d202ee39df82",
+      "claim_id": "C19",
+      "claim": "The acquisition of decision rules resulting in collaborative hunting is facilitated by a combination of two factors: the difficulty of capturing prey during solitary hunting, and food (reward) sharing following capture.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, our results showed that the acquisition of decision rules resulting in collaborative hunting is facilitated by a combination of two factors: the difficulty of capturing prey during solitary hunting, and food (i.e. reward) sharing following capture.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the computational simulation results comparing different conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:33:53.269755Z"
+    },
+    {
+      "id": "d3fe287c-5df3-4f3a-9b08-3bdf6499b47f",
+      "content_id": "99b55bc1-39df-474e-8aaf-d202ee39df82",
+      "claim_id": "C20",
+      "claim": "Decisions underlying collaborative hunts were related to distance-dependent internal representations formed by prior experience.",
+      "claim_type": "EXPLICIT",
+      "source": "We also found that decisions underlying collaborative hunts were related to distance-dependent internal representations formed by prior experience.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the analysis of internal representations using t-SNE.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:33:53.269755Z"
+    },
+    {
+      "id": "fb75447e-bbfb-44f3-9350-63f1399aa437",
+      "content_id": "99b55bc1-39df-474e-8aaf-d202ee39df82",
+      "claim_id": "C21",
+      "claim": "The decision rules worked robustly against unknown prey controlled by humans.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the decision rules worked robustly against unknown prey controlled by humans.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the human behavioral experiment results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:33:53.269755Z"
+    },
+    {
+      "id": "1aad87a3-6946-4c4c-9be0-8faf3606110e",
+      "content_id": "99b55bc1-39df-474e-8aaf-d202ee39df82",
+      "claim_id": "C22",
+      "claim": "Collaborative hunts do not necessarily require sophisticated cognitive mechanisms, and simple decision rules based on mappings between states and actions can be practically useful in nature.",
+      "claim_type": "EXPLICIT",
+      "source": "These provide insight that collaborative hunts do not necessarily require sophisticated cognitive mechanisms, and simple decision rules based on mappings between states and actions can be practically useful in nature.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the computational and experimental results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:33:53.269755Z"
+    },
+    {
+      "id": "f20b35cb-0b23-4f90-8a97-192a90c52d71",
+      "content_id": "99b55bc1-39df-474e-8aaf-d202ee39df82",
+      "claim_id": "C23",
+      "claim": "The results support the recent suggestions that the underlying processes facilitating collaborative hunting can be relatively simple.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results support the recent suggestions that the underlying processes facilitating collaborative hunting can be relatively simple (Lang and Farine, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the results and a citation to previous literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:33:53.269755Z"
+    },
+    {
+      "id": "2125ddb6-b1de-42b2-862d-77346b409fa9",
+      "content_id": "99b55bc1-39df-474e-8aaf-d202ee39df82",
+      "claim_id": "C24",
+      "claim": "For the fast and equal conditions, predations were successful in almost all episodes, regardless of the number of predators and the presence or absence of reward sharing.",
+      "claim_type": "EXPLICIT",
+      "source": "For the fast and equal conditions, predations were successful in almost all episodes, regardless of the number of predators and the presence or absence of reward sharing (e.g. 0.99 \u00b1 0.00 for the one \u00d7 fast and one \u00d7 equal conditions; Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantitative data from the computational simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:33:53.269755Z"
+    },
+    {
+      "id": "a305f418-0d56-4b60-9795-067f8374ffeb",
+      "content_id": "99b55bc1-39df-474e-8aaf-d202ee39df82",
+      "claim_id": "C25",
+      "claim": "There is little benefit of cooperation among multiple predators in the fast and equal conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "As a whole, these results indicate that there is little benefit of cooperation among multiple predators in the fast and equal conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the simulation results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:33:53.269755Z"
+    },
+    {
+      "id": "ef56ba8e-b9f0-4884-9689-9a94c7e139e1",
+      "content_id": "99b55bc1-39df-474e-8aaf-d202ee39df82",
+      "claim_id": "C26",
+      "claim": "For the slow condition, a solitary predator was rarely successful, and the proportion of predations that were successful increased with the number of predators.",
+      "claim_type": "EXPLICIT",
+      "source": "For the slow condition, a solitary predator was rarely successful, and the proportion of predations that were successful increased with the number of predators (Figure 2a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantitative data from the computational simulations shown in Figure 2a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:33:53.269755Z"
+    },
+    {
+      "id": "8ab7bf3d-0163-4449-ac70-3b0a3e747a77",
+      "content_id": "99b55bc1-39df-474e-8aaf-d202ee39df82",
+      "claim_id": "C27",
+      "claim": "The mean duration decreased with an increasing number of predators in the slow condition.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the mean duration decreased with an increasing number of predators (Figure 2a bottom).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantitative data from the computational simulations shown in Figure 2a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:33:53.269755Z"
+    },
+    {
+      "id": "c645d66e-d9f8-4b61-b07d-ed6943577cb2",
+      "content_id": "99b55bc1-39df-474e-8aaf-d202ee39df82",
+      "claim_id": "C28",
+      "claim": "Under the slow condition, the benefits of cooperation among multiple predators are significant.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that, under the slow condition, the benefits of cooperation among multiple predators are significant.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the simulation results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:33:53.269755Z"
+    },
+    {
+      "id": "8148de0c-3714-417b-a63b-4eccaad489d4",
+      "content_id": "99b55bc1-39df-474e-8aaf-d202ee39df82",
+      "claim_id": "C29",
+      "claim": "Except for the two \u00d7 individual condition, the increase in the proportion of success with an increasing number of predators was much greater than the theoretical prediction.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, except for the two \u00d7 individual condition, the increase in the proportion of success with an increasing number of predators was much greater than the theoretical prediction (Packer and Ruttan, 1988), calculated based on the proportion of solitary hunting, assuming that each predator's performance is independent of the others' (see Methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by comparison of simulation data with theoretical predictions.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:33:53.269755Z"
+    },
+    {
+      "id": "ab072b9b-10b6-4e34-90fb-354c5880763f",
+      "content_id": "99b55bc1-39df-474e-8aaf-d202ee39df82",
+      "claim_id": "C30",
+      "claim": "Under certain conditions, elaborate hunting behavior (e.g. 'collaboration') that is qualitatively different from hunting alone may emerge.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that under these conditions, elaborate hunting behavior (e.g. 'collaboration') that is qualitatively different from hunting alone may emerge.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the simulation results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:33:53.269755Z"
+    },
+    {
+      "id": "f6270d30-fc3b-4256-aad6-ac2f92301cad",
+      "content_id": "99b55bc1-39df-474e-8aaf-d202ee39df82",
+      "claim_id": "C33",
+      "claim": "When the predator is likely to catch its prey, the predator estimated a higher state value.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, when the predator is likely to catch its prey (e.g. scene 4), the predator estimated a higher state value, whereas, when the predator is not (e.g. scene 5), the predator estimated a lower state value (Figure 3a top).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the visualization of internal representations in Figure 3a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:33:53.269755Z"
+    },
+    {
+      "id": "f5befc79-2f72-4c18-874a-518e666a9ab6",
+      "content_id": "99b55bc1-39df-474e-8aaf-d202ee39df82",
+      "claim_id": "C34",
+      "claim": "The variance of action values tends to be larger for both predator and prey when they are close.",
+      "claim_type": "EXPLICIT",
+      "source": "Related to this, the variance of action values tends to be larger for both predator and prey when they are close (Figure 3a bottom), indicating that the difference in the value of choosing each action is greater when the choice of action is directly related to the reward (see also Figure 3\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the visualization of internal representations in Figure 3a.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:33:53.269755Z"
+    },
+    {
+      "id": "108d74c1-6d7f-4a85-9991-6d629f059ec3",
+      "content_id": "99b55bc1-39df-474e-8aaf-d202ee39df82",
+      "claim_id": "C35",
+      "claim": "The agents were able to learn the networks that output the estimations of state and action values consistent with our intuition.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that the agents were able to learn the networks that output the estimations of state and action values consistent with our intuition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the analysis of internal representations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:33:53.269755Z"
+    },
+    {
+      "id": "202ccad8-e3c9-449a-ba8a-9ea035387a5d",
+      "content_id": "99b55bc1-39df-474e-8aaf-d202ee39df82",
+      "claim_id": "C36",
+      "claim": "The predators' representations may be more focused on encoding the distance between themselves and others, rather than the specific locations of both parties.",
+      "claim_type": "EXPLICIT",
+      "source": "From this, we deduced that the predators' representations may be more focused on encoding the distance between themselves and others, rather than the specific locations of both parties.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the t-SNE embeddings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:33:53.269755Z"
+    },
+    {
+      "id": "b890b7e9-38f6-40ed-87bf-27c5abd12d23",
+      "content_id": "99b55bc1-39df-474e-8aaf-d202ee39df82",
+      "claim_id": "C37",
+      "claim": "The representations of predators in the shared condition could be clearly separated by the distance-dependent coloration.",
+      "claim_type": "EXPLICIT",
+      "source": "As a result, the representations of predators in the shared condition could be clearly separated by the distance-dependent coloration (Fig. 3c right), in contrast to those in the individual condition (Fig. 3c left).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the visualization in Figure 3c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:33:53.269755Z"
+    },
+    {
+      "id": "b97a1939-1ddd-4a5e-a93c-3b13baeea5b0",
+      "content_id": "99b55bc1-39df-474e-8aaf-d202ee39df82",
+      "claim_id": "C38",
+      "claim": "The predators in the shared condition estimated state and action values and made decisions associated with distance-dependent representations.",
+      "claim_type": "EXPLICIT",
+      "source": "These indicate that the predators in the shared condition estimated state and action values and made decisions associated with distance-dependent representations (see Figure 3\u2014figure supplement 2 for the prey's decision).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on inference from the analysis of internal representations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:33:53.269755Z"
+    },
+    {
+      "id": "52bd4b22-f5be-43c1-88ea-056ef091f8ce",
+      "content_id": "99b55bc1-39df-474e-8aaf-d202ee39df82",
+      "claim_id": "C39",
+      "claim": "The outcomes of the joint play showed similar trends to those of the computer simulation.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the outcomes of the joint play showed similar trends to those of the computer simulation (Figure 4a), showing that the proportion of predations that were successful increased and the mean episode duration decreased as the number of predators increased.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the human behavioral experiment results shown in Figure 4a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:33:53.269755Z"
+    },
+    {
+      "id": "c904d586-1613-4436-a3e9-6009428d6002",
+      "content_id": "99b55bc1-39df-474e-8aaf-d202ee39df82",
+      "claim_id": "C40",
+      "claim": "The predator agents' decision rules worked well for the prey controlled by humans.",
+      "claim_type": "EXPLICIT",
+      "source": "These indicate that the predator agents' decision rules worked well for the prey controlled by humans.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the human behavioral experiment results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:33:53.269755Z"
+    },
+    {
+      "id": "c1ce4f7e-352f-4c8f-9a79-b79559d3ac53",
+      "content_id": "99b55bc1-39df-474e-8aaf-d202ee39df82",
+      "claim_id": "C41",
+      "claim": "The states experienced by predator agents versus agents and versus humans were quite distinct.",
+      "claim_type": "EXPLICIT",
+      "source": "These showed that, in contrast to a previous study (Mnih et al., 2015), the states were quite distinct, suggesting that predator agents experienced unfamiliar states when playing against the prey controlled by humans.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the t-SNE embeddings comparing self-play and joint play.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:33:53.269755Z"
+    },
+    {
+      "id": "63188302-d8ed-405d-b53b-0a79e5238c87",
+      "content_id": "99b55bc1-39df-474e-8aaf-d202ee39df82",
+      "claim_id": "C42",
+      "claim": "In the one-predator condition, the predator agent occasionally exhibited odd behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, in the one-predator condition, the predator agent occasionally exhibited odd behavior (e.g. staying in one place; see Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by observations from the human behavioral experiment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:33:53.269755Z"
+    },
+    {
+      "id": "1cc34618-a2c3-4f62-bcd7-6fe61bd4b52d",
+      "content_id": "99b55bc1-39df-474e-8aaf-d202ee39df82",
+      "claim_id": "C43",
+      "claim": "In the two- and three-predator conditions, predator agents rarely exhibited such behavior and showed superior performance.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, in the two- and three-predator conditions, predator agents rarely exhibited such behavior and showed superior performance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by observations from the human behavioral experiment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:33:53.269755Z"
+    },
+    {
+      "id": "23edf51c-411b-479a-845d-f968a1ceac77",
+      "content_id": "99b55bc1-39df-474e-8aaf-d202ee39df82",
+      "claim_id": "C44",
+      "claim": "Decision rules of cooperative hunting acquired in certain environments could be applied in other somewhat different environments.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicates that decision rules of cooperative hunting acquired in certain environments could be applied in other somewhat different environments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the human behavioral experiment results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:33:53.269755Z"
+    },
+    {
+      "id": "3289eaa4-43d3-4f0e-ad33-1b1edbd0c571",
+      "content_id": "99b55bc1-39df-474e-8aaf-d202ee39df82",
+      "claim_id": "C45",
+      "claim": "Apparently elaborate coordination can be accomplished by relatively simple decision rules, that is, mappings between states and actions.",
+      "claim_type": "EXPLICIT",
+      "source": "This means that, in contrast to the traditional view, apparently elaborate coordination can be accomplished by relatively simple decision rules, that is, mappings between states and actions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the overall results of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:33:53.269755Z"
+    },
+    {
+      "id": "94a11ea4-d5b2-45c4-88fa-33d84546a1c3",
+      "content_id": "99b55bc1-39df-474e-8aaf-d202ee39df82",
+      "claim_id": "C46",
+      "claim": "As the number of predators increased, success rates increased and hunting duration decreased.",
+      "claim_type": "EXPLICIT",
+      "source": "First, as the number of predators increased, success rates increased and hunting duration decreased (Creel and Creel, 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the simulation results and a citation to previous literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:33:53.269755Z"
+    },
+    {
+      "id": "f726e921-2a3d-4fb7-8fe5-a9d00c2266fc",
+      "content_id": "99b55bc1-39df-474e-8aaf-d202ee39df82",
+      "claim_id": "C47",
+      "claim": "Whether collaborative hunts emerge depended on two factors: the success rate of hunting alone and the presence or absence of reward sharing following prey capture.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, whether collaborative hunts emerge depended on two factors: the success rate of hunting alone (Busse, 1978; Boesch, 2002) and the presence or absence of reward sharing following prey capture (Boesch, 1994; Stanford, 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the simulation results and citations to previous literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:33:53.269755Z"
+    },
+    {
+      "id": "add2c229-894f-4244-9bb3-4e1353e909c3",
+      "content_id": "99b55bc1-39df-474e-8aaf-d202ee39df82",
+      "claim_id": "C48",
+      "claim": "While each predator generally maintained a consistent role during repeated collaborative hunts, there was flexibility for these roles to be swapped as needed.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, while each predator generally maintained a consistent role during repeated collaborative hunts, there was flexibility for these roles to be swapped as needed (Stander, 1992; Boesch, 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the simulation results and citations to previous literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:33:53.269755Z"
+    },
+    {
+      "id": "9c723b8d-7dbc-423e-97a6-c53657f5fdc2",
+      "content_id": "99b55bc1-39df-474e-8aaf-d202ee39df82",
+      "claim_id": "C49",
+      "claim": "Predator agents acquired different strategies depending on the conditions despite having exactly the same initial values.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, predator agents in this study acquired different strategies depending on the conditions despite having exactly the same initial values (i.e. network weights), resonating with the findings that lions and chimpanzees living in different regions exhibit different hunting strategies (Stander, 1992; Boesch\u2010Achermann and Boesch, 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the simulation results and citations to previous literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:33:53.269755Z"
+    },
+    {
+      "id": "3b90a8f7-f2be-4882-8ba4-af91c712e403",
+      "content_id": "99b55bc1-39df-474e-8aaf-d202ee39df82",
+      "claim_id": "C50",
+      "claim": "The results suggest the validity of the computational simulations and highlight the close link between predators' behavioral strategies and their living environments.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest the validity of our computational simulations and highlight the close link between predators' behavioral strategies and their living environments, such as the presence of other predators and sharing of prey.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the comparison of simulation results with natural observations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:33:53.269755Z"
+    },
+    {
+      "id": "3db8b54d-aef2-4626-8191-ff7973391fd0",
+      "content_id": "99b55bc1-39df-474e-8aaf-d202ee39df82",
+      "claim_id": "C51",
+      "claim": "The collaborative hunts have shown performance that surpasses the theoretical predictions based on solitary hunting outcomes.",
+      "claim_type": "EXPLICIT",
+      "source": "The collaborative hunts have shown performance that surpasses the theoretical predictions based on solitary hunting outcomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the comparison of simulation results with theoretical predictions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:33:53.269755Z"
+    },
+    {
+      "id": "0d94718a-4ffc-4559-914c-135503e98d03",
+      "content_id": "99b55bc1-39df-474e-8aaf-d202ee39df82",
+      "claim_id": "C52",
+      "claim": "Role division among predators in nature could provide fitness benefits.",
+      "claim_type": "EXPLICIT",
+      "source": "This result is in line with the notion that role division among predators in nature could provide fitness benefits (Lang and Farine, 2017; Boesch and Boesch-Achermann, 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the simulation results and citations to previous literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:33:53.269755Z"
+    },
+    {
+      "id": "eaceeb23-8376-4640-b776-5010200c61b0",
+      "content_id": "99b55bc1-39df-474e-8aaf-d202ee39df82",
+      "claim_id": "C53",
+      "claim": "When three predators were involved, performance was comparable whether prey was shared or not.",
+      "claim_type": "EXPLICIT",
+      "source": "Meanwhile, when three predators were involved, performance was comparable whether prey was shared or not.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the simulation results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:33:53.269755Z"
+    },
+    {
+      "id": "3519ce51-a37d-4359-9b8a-fc35208230ae",
+      "content_id": "99b55bc1-39df-474e-8aaf-d202ee39df82",
+      "claim_id": "C54",
+      "claim": "Predators occasionally block the prey's escape path, exploiting the boundaries of the play area and the chasing movements of other predators even in the individual reward condition.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that predators occasionally block the prey's escape path, exploiting the boundaries of the play area and the chasing movements of other predators even in the individual reward condition (Figure 2\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by observations from the simulation results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:33:53.269755Z"
+    },
+    {
+      "id": "519b1859-1a68-465f-b503-fca1b9e14a33",
+      "content_id": "99b55bc1-39df-474e-8aaf-d202ee39df82",
+      "claim_id": "C55",
+      "claim": "Under certain scenarios, coordinated hunting behaviors that enhance the success rate of predators may emerge regardless of whether food is shared.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that, under certain scenarios, coordinated hunting behaviors that enhance the success rate of predators may emerge regardless of whether food is shared, potentially relating to the benefits of social predation, including interspecific hunting (Bshary et al., 2006; Thiebault et al., 2016; Sampaio et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the simulation results and citations to previous literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:33:53.269755Z"
+    },
+    {
+      "id": "d0d79c61-52d7-49f1-b4eb-afcbeb8c324a",
+      "content_id": "99b55bc1-39df-474e-8aaf-d202ee39df82",
+      "claim_id": "C56",
+      "claim": "The mappings resulting in collaborative hunting were related to distance-dependent internal representations.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the mappings resulting in collaborative hunting were related to distance-dependent internal representations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the analysis of internal representations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:33:53.269755Z"
+    },
+    {
+      "id": "03edeb03-31a6-4539-853a-e9baf916e15e",
+      "content_id": "99b55bc1-39df-474e-8aaf-d202ee39df82",
+      "claim_id": "C57",
+      "claim": "The distance-dependent rule-based predators successfully reproduced behaviors similar to those of the deep reinforcement learning predators.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, we showed that the distance-dependent rule-based predators successfully reproduced behaviors similar to those of the deep reinforcement learning predators, supporting the association between decisions and distances (Methods; Figure 3\u2014figure supplement 5, Figure 3\u2014figure supplement 6 and Figure 3\u2014figure supplement 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the rule-based agent simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:33:53.269755Z"
+    },
+    {
+      "id": "0836818c-a38a-4663-8946-a9b069cced75",
+      "content_id": "99b55bc1-39df-474e-8aaf-d202ee39df82",
+      "claim_id": "C58",
+      "claim": "The distance-dependent representations relate to collaborative hunting is reminiscent of a recent idea about the decision rules obtained by observation in fish.",
+      "claim_type": "EXPLICIT",
+      "source": "Our result that the distance-dependent representations relate to collaborative hunting is reminiscent of a recent idea about the decision rules obtained by observation in fish (Steinegger et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on comparison with previous literature.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:33:53.269755Z"
+    },
+    {
+      "id": "4ada9da2-8785-4e98-aa2d-12a5c2cc71a7",
+      "content_id": "99b55bc1-39df-474e-8aaf-d202ee39df82",
+      "claim_id": "C59",
+      "claim": "The input variables of predator agents do not include variables corresponding to the distance(s) between the other predator(s) and prey.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the input variables of predator agents do not include variables corresponding to the distance(s) between the other predator(s) and prey, and this means that the predators in the shared conditions acquired the internal representation relating to distance to prey, which would be a geometrically reasonable indicator, by optimization through interaction with their environment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the description of the model architecture and the analysis of internal representations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:33:53.269755Z"
+    },
+    {
+      "id": "8cda8522-147c-4581-9246-2ee1486eaf96",
+      "content_id": "99b55bc1-39df-474e-8aaf-d202ee39df82",
+      "claim_id": "C60",
+      "claim": "Deep reinforcement learning methods can extract systems of rules that allow for the emergence of complex behaviors.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results suggest that deep reinforcement learning methods can extract systems of rules that allow for the emergence of complex behaviors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the overall results of the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:33:53.269755Z"
+    },
+    {
+      "id": "7c4cd20b-6bd6-42b5-b587-4d866db7814b",
+      "content_id": "99b55bc1-39df-474e-8aaf-d202ee39df82",
+      "claim_id": "C61",
+      "claim": "Decision rules formed by associative learning can successfully address natural problems, such as catching prey with somewhat different movement patterns than one's usual prey.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that decision rules formed by associative learning can successfully address natural problems, such as catching prey with somewhat different movement patterns than one's usual prey.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the human behavioral experiment results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:33:53.269755Z"
+    },
+    {
+      "id": "1ecfeb01-5432-4dbe-a233-466b19367268",
+      "content_id": "99b55bc1-39df-474e-8aaf-d202ee39df82",
+      "claim_id": "C62",
+      "claim": "The prey agents achieved a higher rate of successful evasions than those operated by humans.",
+      "claim_type": "EXPLICIT",
+      "source": "Note that the learning mechanism of associative learning (or reinforcement learning) is relatively simple, but it allows for flexible behavior in response to situations, in contrast to innate and simple stimulus-response. Indeed, our prey agents achieved a higher rate of successful evasions than those operated by humans.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by comparison of agent and human performance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:33:53.269755Z"
+    },
+    {
+      "id": "65f1089b-b9a8-4f5b-82ff-162f512e9c2f",
+      "content_id": "99b55bc1-39df-474e-8aaf-d202ee39df82",
+      "claim_id": "C63",
+      "claim": "If animals' decision processes in predator-prey dynamics are structured in this way, it could be a product of natural selection, enabling rapid, robust, and flexible action in interactions with severe time constraints.",
+      "claim_type": "EXPLICIT",
+      "source": "Our view that decisions for successful hunting are made through representations formed by prior experience is a counterpart to the recent idea that computational relevance for successful escape may be cached and ready to use, instead of being computed from scratch on the spot (Evans et al., 2019). If animals' decision processes in predator-prey dynamics are structured in this way, it could be a product of natural selection, enabling rapid, robust, and flexible action in interactions with severe time constraints.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on speculation about evolutionary implications.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:33:53.269755Z"
+    },
+    {
+      "id": "d3649fcd-9c9a-4592-8de8-a75c9853f1fb",
+      "content_id": "99b55bc1-39df-474e-8aaf-d202ee39df82",
+      "claim_id": "C64",
+      "claim": "Collaborative hunting can emerge in the absence of explicit mechanisms comparable to aspects of theory of mind.",
+      "claim_type": "EXPLICIT",
+      "source": "In conclusion, we demonstrated that the decisions underlying collaborative hunting among artificial agents can be achieved through mappings between states and actions. This means that collaborative hunting can emerge in the absence of explicit mechanisms comparable to aspects of theory of mind, supporting the recent idea that collaborative hunting does not necessarily rely on complex cognitive processes in brains (Lang and Farine, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the overall results and a citation to previous literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:33:53.269755Z"
+    },
+    {
+      "id": "95c67e2e-c0d1-434a-b859-463e417f485d",
+      "content_id": "99b55bc1-39df-474e-8aaf-d202ee39df82",
+      "claim_id": "C65",
+      "claim": "Chase and escape often involve various factors, such as energy cost, partial observability, signal communication, and local surroundings.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that chase and escape often involve various factors, such as energy cost (Hubel et al., 2016), partial observability (Mugan and MacIver, 2020; Hunt et al., 2021), signal communication (Vail et al., 2013), and local surroundings (Evans et al., 2019), these results are only a first step on the path to understanding real decisions in predator-prey dynamics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:33:53.269755Z"
+    },
+    {
+      "id": "d0f1fa6a-d0c3-4d23-b247-3f0ea181782d",
+      "content_id": "99b55bc1-39df-474e-8aaf-d202ee39df82",
+      "claim_id": "C70",
+      "claim": "Each agent learned its policy network independently, treating the other agents as part of the environment.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, each agent learned its policy network independently, that is, each agent treats the other agents as part of the environment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the training methodology used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:33:53.269755Z"
+    },
+    {
+      "id": "5f808bd4-70dd-4107-9883-2bfe9780a62c",
+      "content_id": "99b55bc1-39df-474e-8aaf-d202ee39df82",
+      "claim_id": "C71",
+      "claim": "The neural network is composed of four layers.",
+      "claim_type": "EXPLICIT",
+      "source": "The neural network is composed of four layers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the model architecture.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:33:53.269755Z"
+    },
+    {
+      "id": "cff2aa7d-c839-4271-9c04-06ccabd7762c",
+      "content_id": "99b55bc1-39df-474e-8aaf-d202ee39df82",
+      "claim_id": "C72",
+      "claim": "The input to the neural network was the state and the output was each possible action, namely, a total of 13 action of the 'acceleration' in 12 directions every 30 degrees in the relative coordinate system and 'do nothing.'",
+      "claim_type": "EXPLICIT",
+      "source": "The input to the neural network was the state and the output was each possible action, namely, a total of 13 action of the 'acceleration' in 12 directions every 30 degrees in the relative coordinate system and 'do nothing.'",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the model architecture.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:33:53.269755Z"
+    },
+    {
+      "id": "92195d5b-355e-4744-976a-d55fcbe77da8",
+      "content_id": "99b55bc1-39df-474e-8aaf-d202ee39df82",
+      "claim_id": "C73",
+      "claim": "Rectified linear unit (ReLU) was used as the activation function for each layer.",
+      "claim_type": "EXPLICIT",
+      "source": "Rectified linear unit (ReLU) was used as the activation function for each layer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the model architecture.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:33:53.269755Z"
+    },
+    {
+      "id": "818cea95-179f-48d1-9b76-5fe959891f1d",
+      "content_id": "99b55bc1-39df-474e-8aaf-d202ee39df82",
+      "claim_id": "C74",
+      "claim": "The model was trained for 10^6 episodes.",
+      "claim_type": "EXPLICIT",
+      "source": "The model was trained for 106 episodes, and the network parameters were copied to the target-network every 2000 episodes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the training procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:33:53.269755Z"
+    },
+    {
+      "id": "67899187-4b01-42b0-86d3-05e862cd52ee",
+      "content_id": "99b55bc1-39df-474e-8aaf-d202ee39df82",
+      "claim_id": "C75",
+      "claim": "Ten males participated in the human behavioral experiment.",
+      "claim_type": "EXPLICIT",
+      "source": "Ten males participated in the experiment (aged 22\u201325, mean = 23.5, s.d.=1.2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the participants in the human experiment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:33:53.269755Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "fb349449-b744-4e21-af15-1e30f02647e8",
+      "content_id": "99b55bc1-39df-474e-8aaf-d202ee39df82",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The manuscript challenges the traditional view that collaborative hunting requires large brains and high-level cognition by citing recent findings of collaborative hunting in smaller-brained vertebrates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C2, C10, and C11 establish the scientific context through appropriate citations to prior literature. The traditional view (C1, C10) and recent contradictory findings (C2, C11) are well-documented in the cited studies, providing a solid foundation for the research question.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:33:53.269755Z"
+    },
+    {
+      "id": "28c04dba-adc3-4db5-9da2-31a71f190e5b",
+      "content_id": "99b55bc1-39df-474e-8aaf-d202ee39df82",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Deep reinforcement learning agents successfully learned collaborative hunting behavior without explicit theory of mind mechanisms, with success facilitated by difficulty of solitary hunting and reward sharing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C30 are supported by quantitative simulation data (Figure 2a) showing increased success rates and decreased hunting duration with multiple predators. The comparison with theoretical predictions (C29) and the identification of key factors (C19) strengthen the result. Statistical tests confirm significance (p<0.001).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:33:53.269755Z"
+    },
+    {
+      "id": "39983412-1625-4a1a-a8d0-7355f4c78193",
+      "content_id": "99b55bc1-39df-474e-8aaf-d202ee39df82",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "In fast and equal mobility conditions, predators succeeded in almost all episodes regardless of predator number or reward sharing, indicating little benefit of cooperation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C25 are supported by quantitative data (0.99 \u00b1 0.00 success rate) from computational simulations. The inference that cooperation provides little benefit under these conditions (C25) logically follows from the data showing no performance difference with multiple predators.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:33:53.269755Z"
+    },
+    {
+      "id": "f61cb6bd-6716-4039-b1c6-b14b6951b221",
+      "content_id": "99b55bc1-39df-474e-8aaf-d202ee39df82",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Predators in the shared reward condition developed distance-dependent internal representations that guided collaborative hunting decisions, despite distance to other predators not being explicit inputs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C38, C56, and C59 are supported by t-SNE visualizations (Figure 3) showing clear separation by distance in shared conditions. The emergence of distance-dependent representations without explicit distance inputs (C59) is particularly compelling. However, t-SNE is a dimensionality reduction technique that can introduce artifacts, and the interpretation relies on visual inspection rather than quantitative metrics.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:33:53.269755Z"
+    },
+    {
+      "id": "7a9cba13-1a9b-4128-868b-d48d89ca143b",
+      "content_id": "99b55bc1-39df-474e-8aaf-d202ee39df82",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Distance-dependent rule-based predators successfully reproduced behaviors similar to deep reinforcement learning predators.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C57 is supported by rule-based agent simulations (Figure 3\u2014figure supplements 5-7) showing similar behavioral patterns. This provides convergent evidence for the distance-dependent decision mechanism. However, quantitative comparison metrics (e.g., success rates, behavioral similarity scores) would strengthen this claim.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:33:53.269755Z"
+    },
+    {
+      "id": "a04018f0-c0dc-4685-adba-b0192835edf5",
+      "content_id": "99b55bc1-39df-474e-8aaf-d202ee39df82",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Predator agents' decision rules generalized robustly to human-controlled prey despite experiencing unfamiliar states, with better performance in multi-predator conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C44 are supported by human behavioral experiment data (Figure 4a, n=10 participants). The similar trends between simulation and human experiments (C39) and the robustness despite state dissimilarity (C41) are well-documented. However, the sample size is modest (n=10, all male), limiting generalizability. The occasional odd behavior in one-predator conditions (C42) is acknowledged but not fully explained.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:33:53.269755Z"
+    },
+    {
+      "id": "b39a479c-473e-4f96-bab3-946a3607f16e",
+      "content_id": "99b55bc1-39df-474e-8aaf-d202ee39df82",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Simulation results align with natural observations of collaborative hunting, including increased success with more predators, dependence on solitary hunting difficulty and reward sharing, role flexibility, and strategy variation across conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C50 compare simulation results with cited natural observations. The alignment is generally well-supported, though the comparisons are qualitative rather than quantitative. The claim of validity (C50) is somewhat circular, as the simulations were designed based on these ecological findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:33:53.269755Z"
+    },
+    {
+      "id": "f578f3a1-f01e-4144-b0cb-82fd97bc7dff",
+      "content_id": "99b55bc1-39df-474e-8aaf-d202ee39df82",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Collaborative hunts exceeded theoretical predictions based on independent predator performance, with coordinated behaviors emerging even without reward sharing under certain spatial constraints.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C55 are supported by comparison with theoretical predictions (Figure 2a) and observations of blocking behavior (Figure 2\u2014figure supplement 4). The emergence of coordination without reward sharing (C53-C55) is interesting but requires more mechanistic explanation. The role of spatial constraints is speculative.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:33:53.269755Z"
+    },
+    {
+      "id": "55ce075d-150c-4455-920f-7b7c7fb5dfce",
+      "content_id": "99b55bc1-39df-474e-8aaf-d202ee39df82",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Collaborative hunting can emerge through simple state-action mappings based on distance-dependent representations, without requiring sophisticated cognitive mechanisms or theory of mind.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C4, C22, C23, C45, and C64 represent the main conclusion, supported by the collective evidence from simulations (C18-C30), internal representation analysis (C33-C38), and human experiments (C39-C44). The conclusion is well-supported but should be qualified: the study demonstrates sufficiency (simple mechanisms can produce collaborative hunting) but not necessity (natural collaborative hunting may still involve more complex cognition).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:33:53.269755Z"
+    },
+    {
+      "id": "613e3c3e-5472-4405-8003-cf37a6b81b35",
+      "content_id": "99b55bc1-39df-474e-8aaf-d202ee39df82",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Prey agents achieved higher successful evasion rates than human-controlled prey.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C62 is supported by comparison of agent and human performance in the experiments. This demonstrates the effectiveness of the learned prey strategies, though specific quantitative comparisons are not provided in the main text.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:33:53.269755Z"
+    },
+    {
+      "id": "4f05dae4-051d-42b2-95a9-311116388fa7",
+      "content_id": "99b55bc1-39df-474e-8aaf-d202ee39df82",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The findings suggest collaborative hunting can emerge in various natural interactions and may be a product of natural selection enabling rapid, robust action under time constraints.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C6 and C63 are speculative extrapolations from the computational results. While the reasoning is plausible, these claims about natural evolution and broad ecological implications go beyond what the simulations directly demonstrate. The study provides a proof of concept but does not test these evolutionary or ecological hypotheses.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:33:53.269755Z"
+    },
+    {
+      "id": "d143ad69-0ac8-4590-933a-140de0e69fe5",
+      "content_id": "99b55bc1-39df-474e-8aaf-d202ee39df82",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The study employed independent learning with 4-layer neural networks using specific architectural choices, trained for 10^6 episodes, with human experiments involving 10 male participants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C70-C75 describe methodological details that are clearly documented. However, several important details are missing or unclear: random seed specification for reproducibility, justification for architectural choices, convergence criteria, and the all-male participant sample limits generalizability of human experiments.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:33:53.269755Z"
+    },
+    {
+      "id": "7d3f344f-3a1f-4255-a937-9615a2e03847",
+      "content_id": "99b55bc1-39df-474e-8aaf-d202ee39df82",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Real predator-prey dynamics involve additional factors like energy cost, partial observability, signal communication, and local surroundings not captured in this simplified model.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C65 appropriately acknowledges limitations of the simplified model through citations to relevant literature. This is an important caveat for interpreting the results' applicability to natural systems.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:33:53.269755Z"
+    },
+    {
+      "id": "8c1c4994-f1c9-4399-a334-cb0c46dd7d54",
+      "content_id": "99b55bc1-39df-474e-8aaf-d202ee39df82",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Deep reinforcement learning is inspired by animal associative learning and related to dopamine-based reward learning, with associative learning being widely adopted in animals.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C17 are supported by appropriate citations to foundational literature. These claims establish the biological plausibility of using reinforcement learning to model animal behavior, though the connection between artificial RL algorithms and actual neural mechanisms remains an active area of research.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:33:53.269755Z"
+    },
+    {
+      "id": "d707f536-cf1f-4a26-9b7f-15c66f87b695",
+      "content_id": "99b55bc1-39df-474e-8aaf-d202ee39df82",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Deep reinforcement learning methods can extract systems of rules allowing emergence of complex behaviors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C60 is supported by the overall results showing emergence of collaborative hunting from simple learning rules. However, this is a general inference that could be stated more precisely regarding what types of complex behaviors and under what conditions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:33:53.269755Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "8dcacab8-94e5-4eb7-95f4-760ac39826bc",
+      "result_id": "fb349449-b744-4e21-af15-1e30f02647e8"
+    },
+    {
+      "claim_id": "1b2a9d54-68c9-438b-96be-4445a6e2b537",
+      "result_id": "fb349449-b744-4e21-af15-1e30f02647e8"
+    },
+    {
+      "claim_id": "efc654cb-2bf7-449b-a843-4d5db11a7008",
+      "result_id": "fb349449-b744-4e21-af15-1e30f02647e8"
+    },
+    {
+      "claim_id": "ae0c3a55-c79d-459c-a0fb-dc8b8459cf36",
+      "result_id": "fb349449-b744-4e21-af15-1e30f02647e8"
+    },
+    {
+      "claim_id": "463ccd42-c59c-4354-a863-b37f61265e33",
+      "result_id": "28c04dba-adc3-4db5-9da2-31a71f190e5b"
+    },
+    {
+      "claim_id": "c253eab3-9836-478e-a5af-cada96710651",
+      "result_id": "28c04dba-adc3-4db5-9da2-31a71f190e5b"
+    },
+    {
+      "claim_id": "ef56ba8e-b9f0-4884-9689-9a94c7e139e1",
+      "result_id": "28c04dba-adc3-4db5-9da2-31a71f190e5b"
+    },
+    {
+      "claim_id": "8ab7bf3d-0163-4449-ac70-3b0a3e747a77",
+      "result_id": "28c04dba-adc3-4db5-9da2-31a71f190e5b"
+    },
+    {
+      "claim_id": "c645d66e-d9f8-4b61-b07d-ed6943577cb2",
+      "result_id": "28c04dba-adc3-4db5-9da2-31a71f190e5b"
+    },
+    {
+      "claim_id": "8148de0c-3714-417b-a63b-4eccaad489d4",
+      "result_id": "28c04dba-adc3-4db5-9da2-31a71f190e5b"
+    },
+    {
+      "claim_id": "ab072b9b-10b6-4e34-90fb-354c5880763f",
+      "result_id": "28c04dba-adc3-4db5-9da2-31a71f190e5b"
+    },
+    {
+      "claim_id": "2125ddb6-b1de-42b2-862d-77346b409fa9",
+      "result_id": "39983412-1625-4a1a-a8d0-7355f4c78193"
+    },
+    {
+      "claim_id": "a305f418-0d56-4b60-9795-067f8374ffeb",
+      "result_id": "39983412-1625-4a1a-a8d0-7355f4c78193"
+    },
+    {
+      "claim_id": "f6270d30-fc3b-4256-aad6-ac2f92301cad",
+      "result_id": "f61cb6bd-6716-4039-b1c6-b14b6951b221"
+    },
+    {
+      "claim_id": "f5befc79-2f72-4c18-874a-518e666a9ab6",
+      "result_id": "f61cb6bd-6716-4039-b1c6-b14b6951b221"
+    },
+    {
+      "claim_id": "108d74c1-6d7f-4a85-9991-6d629f059ec3",
+      "result_id": "f61cb6bd-6716-4039-b1c6-b14b6951b221"
+    },
+    {
+      "claim_id": "202ccad8-e3c9-449a-ba8a-9ea035387a5d",
+      "result_id": "f61cb6bd-6716-4039-b1c6-b14b6951b221"
+    },
+    {
+      "claim_id": "b890b7e9-38f6-40ed-87bf-27c5abd12d23",
+      "result_id": "f61cb6bd-6716-4039-b1c6-b14b6951b221"
+    },
+    {
+      "claim_id": "b97a1939-1ddd-4a5e-a93c-3b13baeea5b0",
+      "result_id": "f61cb6bd-6716-4039-b1c6-b14b6951b221"
+    },
+    {
+      "claim_id": "d0d79c61-52d7-49f1-b4eb-afcbeb8c324a",
+      "result_id": "f61cb6bd-6716-4039-b1c6-b14b6951b221"
+    },
+    {
+      "claim_id": "4ada9da2-8785-4e98-aa2d-12a5c2cc71a7",
+      "result_id": "f61cb6bd-6716-4039-b1c6-b14b6951b221"
+    },
+    {
+      "claim_id": "03edeb03-31a6-4539-853a-e9baf916e15e",
+      "result_id": "7a9cba13-1a9b-4128-868b-d48d89ca143b"
+    },
+    {
+      "claim_id": "52bd4b22-f5be-43c1-88ea-056ef091f8ce",
+      "result_id": "a04018f0-c0dc-4685-adba-b0192835edf5"
+    },
+    {
+      "claim_id": "c904d586-1613-4436-a3e9-6009428d6002",
+      "result_id": "a04018f0-c0dc-4685-adba-b0192835edf5"
+    },
+    {
+      "claim_id": "c1ce4f7e-352f-4c8f-9a79-b79559d3ac53",
+      "result_id": "a04018f0-c0dc-4685-adba-b0192835edf5"
+    },
+    {
+      "claim_id": "63188302-d8ed-405d-b53b-0a79e5238c87",
+      "result_id": "a04018f0-c0dc-4685-adba-b0192835edf5"
+    },
+    {
+      "claim_id": "1cc34618-a2c3-4f62-bcd7-6fe61bd4b52d",
+      "result_id": "a04018f0-c0dc-4685-adba-b0192835edf5"
+    },
+    {
+      "claim_id": "23edf51c-411b-479a-845d-f968a1ceac77",
+      "result_id": "a04018f0-c0dc-4685-adba-b0192835edf5"
+    },
+    {
+      "claim_id": "6c9cf222-2530-42b4-ade8-e7f419a852a6",
+      "result_id": "a04018f0-c0dc-4685-adba-b0192835edf5"
+    },
+    {
+      "claim_id": "fb75447e-bbfb-44f3-9350-63f1399aa437",
+      "result_id": "a04018f0-c0dc-4685-adba-b0192835edf5"
+    },
+    {
+      "claim_id": "7c4cd20b-6bd6-42b5-b587-4d866db7814b",
+      "result_id": "a04018f0-c0dc-4685-adba-b0192835edf5"
+    },
+    {
+      "claim_id": "94a11ea4-d5b2-45c4-88fa-33d84546a1c3",
+      "result_id": "b39a479c-473e-4f96-bab3-946a3607f16e"
+    },
+    {
+      "claim_id": "f726e921-2a3d-4fb7-8fe5-a9d00c2266fc",
+      "result_id": "b39a479c-473e-4f96-bab3-946a3607f16e"
+    },
+    {
+      "claim_id": "add2c229-894f-4244-9bb3-4e1353e909c3",
+      "result_id": "b39a479c-473e-4f96-bab3-946a3607f16e"
+    },
+    {
+      "claim_id": "9c723b8d-7dbc-423e-97a6-c53657f5fdc2",
+      "result_id": "b39a479c-473e-4f96-bab3-946a3607f16e"
+    },
+    {
+      "claim_id": "3b90a8f7-f2be-4882-8ba4-af91c712e403",
+      "result_id": "b39a479c-473e-4f96-bab3-946a3607f16e"
+    },
+    {
+      "claim_id": "3db8b54d-aef2-4626-8191-ff7973391fd0",
+      "result_id": "f578f3a1-f01e-4144-b0cb-82fd97bc7dff"
+    },
+    {
+      "claim_id": "0d94718a-4ffc-4559-914c-135503e98d03",
+      "result_id": "f578f3a1-f01e-4144-b0cb-82fd97bc7dff"
+    },
+    {
+      "claim_id": "eaceeb23-8376-4640-b776-5010200c61b0",
+      "result_id": "f578f3a1-f01e-4144-b0cb-82fd97bc7dff"
+    },
+    {
+      "claim_id": "3519ce51-a37d-4359-9b8a-fc35208230ae",
+      "result_id": "f578f3a1-f01e-4144-b0cb-82fd97bc7dff"
+    },
+    {
+      "claim_id": "519b1859-1a68-465f-b503-fca1b9e14a33",
+      "result_id": "f578f3a1-f01e-4144-b0cb-82fd97bc7dff"
+    },
+    {
+      "claim_id": "378379f1-dbb0-42ff-bd3e-fdbc38f9b652",
+      "result_id": "55ce075d-150c-4455-920f-7b7c7fb5dfce"
+    },
+    {
+      "claim_id": "e352fcc8-0eb1-4c51-b011-e388631b9275",
+      "result_id": "55ce075d-150c-4455-920f-7b7c7fb5dfce"
+    },
+    {
+      "claim_id": "1aad87a3-6946-4c4c-9be0-8faf3606110e",
+      "result_id": "55ce075d-150c-4455-920f-7b7c7fb5dfce"
+    },
+    {
+      "claim_id": "f20b35cb-0b23-4f90-8a97-192a90c52d71",
+      "result_id": "55ce075d-150c-4455-920f-7b7c7fb5dfce"
+    },
+    {
+      "claim_id": "3289eaa4-43d3-4f0e-ad33-1b1edbd0c571",
+      "result_id": "55ce075d-150c-4455-920f-7b7c7fb5dfce"
+    },
+    {
+      "claim_id": "d3649fcd-9c9a-4592-8de8-a75c9853f1fb",
+      "result_id": "55ce075d-150c-4455-920f-7b7c7fb5dfce"
+    },
+    {
+      "claim_id": "1ecfeb01-5432-4dbe-a233-466b19367268",
+      "result_id": "613e3c3e-5472-4405-8003-cf37a6b81b35"
+    },
+    {
+      "claim_id": "3b847502-49a7-415d-a28f-2280705e8435",
+      "result_id": "4f05dae4-051d-42b2-95a9-311116388fa7"
+    },
+    {
+      "claim_id": "65f1089b-b9a8-4f5b-82ff-162f512e9c2f",
+      "result_id": "4f05dae4-051d-42b2-95a9-311116388fa7"
+    },
+    {
+      "claim_id": "d0f1fa6a-d0c3-4d23-b247-3f0ea181782d",
+      "result_id": "d143ad69-0ac8-4590-933a-140de0e69fe5"
+    },
+    {
+      "claim_id": "5f808bd4-70dd-4107-9883-2bfe9780a62c",
+      "result_id": "d143ad69-0ac8-4590-933a-140de0e69fe5"
+    },
+    {
+      "claim_id": "cff2aa7d-c839-4271-9c04-06ccabd7762c",
+      "result_id": "d143ad69-0ac8-4590-933a-140de0e69fe5"
+    },
+    {
+      "claim_id": "92195d5b-355e-4744-976a-d55fcbe77da8",
+      "result_id": "d143ad69-0ac8-4590-933a-140de0e69fe5"
+    },
+    {
+      "claim_id": "818cea95-179f-48d1-9b76-5fe959891f1d",
+      "result_id": "d143ad69-0ac8-4590-933a-140de0e69fe5"
+    },
+    {
+      "claim_id": "67899187-4b01-42b0-86d3-05e862cd52ee",
+      "result_id": "d143ad69-0ac8-4590-933a-140de0e69fe5"
+    },
+    {
+      "claim_id": "95c67e2e-c0d1-434a-b859-463e417f485d",
+      "result_id": "7d3f344f-3a1f-4255-a937-9615a2e03847"
+    },
+    {
+      "claim_id": "e13261af-3f5c-4a6f-acf1-3e640d89b6da",
+      "result_id": "8c1c4994-f1c9-4399-a334-cb0c46dd7d54"
+    },
+    {
+      "claim_id": "554e6a0a-8e37-4ac5-b97c-22d41140cd2f",
+      "result_id": "8c1c4994-f1c9-4399-a334-cb0c46dd7d54"
+    },
+    {
+      "claim_id": "8cda8522-147c-4581-9246-2ee1486eaf96",
+      "result_id": "d707f536-cf1f-4a26-9b7f-15c66f87b695"
+    }
+  ],
+  "comparisons": []
+}

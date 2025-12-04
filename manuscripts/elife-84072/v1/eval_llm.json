@@ -1,0 +1,192 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3"
+    ],
+    "result": "The study utilized two large datasets: the ABCD study with 7,512 participants at baseline (4,290 with 2-year follow-up) and a social network dataset with 16,065 middle school students.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 provide clear demographic and sample size information for both datasets. The numbers are explicitly stated with appropriate demographic breakdowns (sex, age) and are consistent with standard reporting practices for large-scale studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "The number of close friends showed significant nonlinear (quadratic) associations with mental health (12/20 measures) and cognition (7/10 measures), with an optimal breakpoint around 5 close friends where benefits plateaued or reversed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C13 collectively demonstrate robust nonlinear relationships using appropriate statistical methods (quadratic regression with Bonferroni correction, two-lines test). The reported F-values, p-values, effect sizes, and breakpoint estimates are internally consistent. However, the effect sizes are quite small (\u0394R\u00b2 = 0.18-0.50%), which while statistically significant, may have limited practical significance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "The nonlinear associations were consistent across sexes, and same-sex (but not opposite-sex) friendships drove the effects, with an optimal number of approximately 4 same-sex close friends.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C16 report sex-stratified and friendship-type analyses with appropriate statistical corrections. The finding that same-sex friendships show stronger associations is biologically and socially plausible for this age group. The breakpoint for same-sex friends (4.05) is consistent with the overall breakpoint (~5).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "The number of close friends was significantly associated with total cortical area and volume, but not with cortical thickness or subcortical volume.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C17-C18 report significant associations with appropriate statistics. However, C20 is problematic: p=0.02 for subcortical volume is below typical significance thresholds but is reported as non-significant, suggesting inconsistent application of significance criteria. The lack of clarity about the significance threshold used creates uncertainty about this null finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Cortical areas in social brain regions (OFC, insula, ACC, anterior temporal cortex, TPJ) showed nonlinear associations with close friend quantity, with effects present only in children with \u22645 friends (breakpoint ~5.3) and no correlation between the two groups' patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C28 demonstrate comprehensive brain imaging analyses with appropriate corrections (FDR) and subgroup analyses. The identification of specific social brain regions is consistent with prior literature. The finding that associations exist only in the \u22645 group and that patterns are uncorrelated between groups (r=-0.02, p=0.78) supports the nonlinear interpretation. Effect sizes remain small but are typical for neuroimaging studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "The spatial pattern of cortical areas associated with close friend quantity correlated specifically with \u03bc-opioid receptor density and with expression of OPRM1 and OPRK1 genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C31 report spatial correlation analyses with appropriate permutation testing. The specific association with \u03bc-opioid receptors (but not other neurotransmitter systems) after Bonferroni correction, along with corresponding gene expression patterns, provides converging molecular evidence. However, these are correlational analyses using atlas-based receptor maps from different populations (adults), which limits causal interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Longitudinal analyses showed that having closer to 5 friends predicted fewer ADHD symptoms 2 years later, with opposite effects in the >5 group. The relationship with crystallized intelligence was bidirectional, with effects primarily in the \u22645 group.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C36 report cross-lagged panel model results with appropriate fit statistics and subgroup analyses. The reversal of effects in the >5 group (C34: \u03b2=0.05, p=0.019) supports the nonlinear hypothesis. The bidirectional relationship with intelligence (C35-C36) is appropriately cautious about directionality. However, the effect sizes are small and the 2-year interval may not capture all relevant developmental changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Cortical areas in social brain regions partially mediated the associations between close friend quantity and both ADHD symptoms (6.5% mediated) and crystallized intelligence (13.5% mediated).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C40 report mediation analyses with confidence intervals and individual region effects. The mediation percentages are modest but statistically significant. However, mediation analysis with cross-sectional data (as stated in methods) cannot establish temporal precedence, limiting causal inference. The authors appropriately use 'partly mediated' language, but the cross-sectional limitation should be more prominent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "In an independent social network dataset, friendship network size (outdegree, indegree, reciprocal degree) showed nonlinear associations with well-being and GPA, with benefits diminishing beyond 7-8 outward nominations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C45 provide replication in an independent dataset with different measures and methodology. The consistency of nonlinear patterns across datasets strengthens the main findings. However, the breakpoints differ (7-8 vs. ~5), which the authors acknowledge (C115-C116) but may reflect measurement differences (nominations vs. self-reported close friends) or population differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "The study employed a two-step statistical approach: quadratic regression to detect nonlinearity, followed by two-lines tests to estimate breakpoints, addressing known limitations of quadratic regression for U-shaped effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C86 describe appropriate methodological choices. The acknowledgment of quadratic regression limitations (C85) and use of two-lines tests (C86) demonstrates methodological rigor. The log transformation (C83) is appropriate for skewed friendship data. This methodological approach is well-justified and properly cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C121"
+    ],
+    "result": "The study acknowledges key limitations including inability to determine causality, differences between datasets, lack of friendship quality measures, and limited generalizability to other age ranges and cultures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C121 appropriately acknowledge important limitations. The causal ambiguity (C113) is particularly important given the mediation analyses. The lack of friendship quality data (C117) is a significant limitation that could confound quantity effects. These limitations are honestly reported and appropriately constrain interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "The study concludes that a moderate number of close friends (up to ~5) in late childhood is associated with better mental health and cognition, partly explained by social brain structure and the opioid system, with potential implications for interventions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C122-C123 summarize the main findings but overstate the strength of mechanistic conclusions. While associations are demonstrated, the cross-sectional mediation analyses and correlational nature of the molecular data limit causal claims about 'explanation.' C124's suggestion of intervention implications is highly speculative given the observational design and acknowledged limitations. The conclusions should be more cautious about mechanistic and translational claims.",
+    "result_type": "MAJOR"
+  }
+]

@@ -1,0 +1,289 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C37",
+      "C38",
+      "C41",
+      "C42",
+      "C43",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "The study identifies a yeast ERGIC compartment that appears before cis-Golgi markers and gradually matures into the cis-Golgi. Using high-speed confocal microscopy (SCLIM), the authors tracked fluorescently-tagged proteins including Emp46, Ypt1, Rer1, Erd2, and Grh1, demonstrating that these proteins appear earlier than the cis-Golgi marker Mnn9 and exhibit spatial segregation during the ERGIC-to-Golgi transition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims are well-supported by extensive 4D imaging data (Figures 1-2) showing temporal sequences and quantitative peak-to-peak timing measurements (Table 1). The spatial segregation patterns are documented with line scan analyses. The methodology is appropriate, using dual-color time-lapse imaging with sufficient temporal resolution (5s intervals) and spatial resolution (<180nm). Multiple independent cisternae were analyzed for each protein pair, providing statistical support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "During cisternal maturation, early and late stage markers are spatially segregated within single cisternae, forming distinct zones. This segregation pattern occurs during both ERGIC-Golgi and Golgi-TGN transitions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The spatial segregation is demonstrated through high-resolution imaging (Figure 1E, J; Figure 1\u2014figure supplement 2) with line scan analyses showing distinct spatial distributions. The claim is strengthened by reference to previous correlative light-electron microscopy (C51) confirming segregation within continuous membrane compartments. The SCLIM technology provides sufficient spatial resolution to detect these patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "BFA treatment causes differential redistribution of Golgi proteins: early-appearing proteins (Grh1, Rer1, Sed5) form larger aggregates termed 'yeast GECCO', while later-appearing proteins (Vrg4, Mnn2) are absorbed into the ER. This pattern is similar to plant GECCO and mammalian Golgi remnants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The BFA experiments are well-controlled with DMSO vehicle controls and demonstrate reversibility (C76-C79). Quantitative co-localization analysis (Pearson's r) shows significant differences between BFA and control conditions (C74). The use of erg6\u0394 mutant to confer BFA sensitivity is appropriately justified (C69-C70). Time-course experiments demonstrate rapid and reversible effects. The comparison across species (C81) is supported by citations to previous work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "ERGIC compartments localize near ERES and exhibit transient 'hug-and-kiss' contact behavior. Earlier-appearing proteins during maturation (Grh1, Rer1) show higher co-localization with ERES marker Sec13 compared to later proteins (Vrg4, Sec7).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The spatial relationship is quantified using Pearson correlation coefficients (Figure 4C) with appropriate statistical analysis. The hug-and-kiss behavior is documented with 4D imaging showing 2-3 second contact periods (C67, Figure 4D). The temporal resolution (1.1s intervals for this experiment) is sufficient to capture these transient interactions. The gradient of co-localization correlating with appearance timing (C63) provides strong support for the model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Early Golgi proteins show distinct temporal dynamics: Sed5 appears slightly before Mnn9, Vrg4 appears after Mnn9, Sec21 peaks during Mnn9 decay phase, and Mnn2 peaks during Mnn9 decay, consistent with their known functions in the secretory pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The temporal relationships are documented with 4D imaging and quantified with peak-to-peak measurements (Figure 3, Table 1). The observations are consistent with established knowledge about protein functions (C57, C59 supported by citations). Multiple cisternae were analyzed for each protein pair (n=6-18), providing statistical support. The interpretations align with known biochemical pathways.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C156",
+      "C157",
+      "C158",
+      "C159"
+    ],
+    "result": "Ypt1 appears twice during cisternal maturation: first at the ERGIC stage and again at the Golgi-TGN transition. Triple-color imaging shows Ypt1 co-localizes with both cis-Golgi (Mnn9) and TGN (Sec7) markers, with significantly higher co-localization than between Mnn9 and Sec7.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The dual appearance is demonstrated through triple-color 3D imaging (Figure 6I-J) with quantitative co-localization analysis showing statistically significant differences (p<0.0001). The finding is consistent with previous reports of Ypt1 functions at multiple Golgi stages (C156-C158, supported by citations). The temporal dynamics are documented with dual-color 4D imaging (Figure 6A-H). The conclusion of multiple functions (C159) is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C163",
+      "C164",
+      "C165",
+      "C166",
+      "C167"
+    ],
+    "result": "Gea1 and Gea2 show differential localization during maturation: Gea1 appears synchronized with cis-Golgi marker Mnn9, while Gea2 appears much later at the interface between trans-Golgi and early TGN, suggesting distinct roles despite functional overlap.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The differential timing is documented with 4D imaging and quantified with peak-to-peak measurements (Figure 7, Table 1). The observations are consistent with recent reports (C91, C96 supported by citations). The interpretation of distinct roles (C165) is supported by the temporal data and is consistent with known genetic interactions (C164). The connection to Ypt1 recruitment (C166) and Imh1 recruitment (C167) is supported by citations and consistent with the observed timing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Late TGN proteins show coordinated dynamics: Imh1 appears synchronized with trans-Golgi marker Sys1, Gga1 shows similar dynamics to Gga2 at the TGN, and Ypt32 is the last protein to appear during TGN maturation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The temporal relationships are documented with 4D imaging (Figure 8). The Imh1-Sys1 synchronization is consistent with mammalian studies of Sys1 function (C99, supported by citation). The Gga1-Gga2 similarity supports functional redundancy (C101), though this is an inference. The Ypt32 timing is consistent with a recent report (C102, supported by citation). Multiple cisternae were analyzed providing statistical support.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C170",
+      "C171",
+      "C172",
+      "C173",
+      "C174",
+      "C175"
+    ],
+    "result": "AP-3 (Apl6) localizes primarily to trans-Golgi rather than TGN, appearing as small dots that accumulate and then fragment. This localization pattern suggests AP-3-mediated cargo export occurs at the trans-Golgi in a clathrin-independent manner, with formation of discrete cargo sorting zones.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The localization is quantified with co-localization analysis showing higher correlation with trans-Golgi markers (Sec21, Sys1) than TGN/cis-Golgi markers (Figure 8I-J). The dynamics are documented with 4D imaging showing dot formation, accumulation, and fragmentation (Figure 8K-O, Figure 8\u2014figure supplement 2). The clathrin-independence (C173) is supported by previous citations and the observation that clathrin appears at late TGN (C174). The spatial segregation within cisternae (C175) is documented with line scan analyses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C177",
+      "C178",
+      "C179",
+      "C180",
+      "C182",
+      "C183",
+      "C184",
+      "C185",
+      "C186"
+    ],
+    "result": "The study proposes a five-stage model of Golgi maturation: ERGIC/GECCO, cis/medial-Golgi, trans-Golgi, early TGN, and late TGN. The temporal order of 25 proteins in yeast corresponds well to the spatial order in mammalian Golgi stacks, suggesting evolutionary conservation of Golgi organization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The five-stage model is supported by the comprehensive temporal mapping of 25 proteins (Figure 9, Table 1) combining present and previous studies. The comparison to mammalian spatial organization (C183) is supported by citation to a study of >50 proteins. However, some aspects are speculative: the functional assignments to each stage (C177) are inferences, the coexistence of ERGIC and cis-Golgi as distinct zones (C180) is speculation, and the universality claims (C184, C186) are broad generalizations. The reclassification of Sed5 (C178) is justified but represents a reinterpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C125",
+      "C127"
+    ],
+    "result": "In mammalian HeLa cells, ERGIC markers (ERGIC-53, GRASP65, Rab1) are distributed at both the perinuclear Golgi ribbon and as peripheral puncta. ERES and ER networks are also present near the Golgi ribbon, suggesting short-distance transport through peri-Golgi ERES and ERGIC may be a dominant pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The spatial distributions are documented with 3D SCLIM imaging (Figures 10-11). However, the conclusion about dominant transport pathways (C113) is speculative and marked as such in the text. The observations are descriptive and do not provide functional evidence for transport mechanisms. The comparison to previous literature (C125, C127 with citations) supports the observations but not the mechanistic interpretation. This represents preliminary observations in mammalian cells rather than a definitive result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C132",
+      "C133",
+      "C134",
+      "C136",
+      "C150"
+    ],
+    "result": "The yeast ERGIC identified in this study is homologous to mammalian ERGIC and plant GECCO based on molecular components, functions, and BFA sensitivity. The results support a model where ERGIC represents a transient ER-Golgi transport carrier that matures into Golgi.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The homology argument is supported by multiple lines of evidence: similar molecular markers (Emp46/ERGIC-53, Ypt1/Rab1, Grh1/GRASP65), similar BFA responses (C81, C139-C150 with citations), and similar functional roles in cargo reception. The maturation model (C136) is directly supported by the 4D imaging data showing temporal progression. However, the claim of evolutionary conservation (C134) is a broader inference. The comparison to mammalian Golgi remnants (C150) is supported by citations but is an inference about equivalence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C137",
+      "C138"
+    ],
+    "result": "Cisternal maturation is proposed as a universal cargo transfer mechanism used in diverse membrane traffic pathways across organisms, supported by examples of endosomal maturation in mammalian cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This is explicitly presented as a proposal/speculation (C137) rather than a demonstrated result. The supporting evidence from endosomal maturation (C138) is cited from other studies but does not directly test the universality claim. While the yeast data support maturation in that system, extrapolating to a universal mechanism requires evidence from multiple systems that is not provided in this study. This represents a hypothesis rather than a supported conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C143",
+      "C144",
+      "C145",
+      "C146"
+    ],
+    "result": "Yeast GECCO is larger (1-2 \u03bcm) than plant GECCO (~0.5 \u03bcm), and unlike plant GECCO, yeast GECCO does not undergo disassembly after initial BFA-induced aggregation. This difference may reflect the absence of ER-Golgi tethering in yeast.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The size difference is documented through imaging (C143). The differential dynamics are shown through time-course experiments (C144-C145, Figure 5F). However, the explanation involving tethering molecules (C146) is explicitly presented as speculation and is not directly tested. The comparison to plant cells relies on citations to previous work. While the observations are solid, the mechanistic interpretation is uncertain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C187",
+      "C188",
+      "C189",
+      "C190",
+      "C191"
+    ],
+    "result": "The study employed appropriate yeast strains (YPH499, BY4741, erg6\u0394 for BFA experiments), PCR-mediated gene replacement for fluorescent tagging, and SCLIM imaging with spatial resolution <180 nm and temporal resolution of 1 volume per 5 seconds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The methods are clearly described with appropriate citations. The use of erg6\u0394 for BFA sensitivity is well-justified (C188). The technical specifications of SCLIM are provided (C191). The gene replacement methodology is standard and appropriately cited. However, some details are missing: no information about biological replicates, number of independent experiments, or blinding. The verification by PCR and fluorescence microscopy (C189) is appropriate but minimal.",
+    "result_type": "MINOR"
+  }
+]

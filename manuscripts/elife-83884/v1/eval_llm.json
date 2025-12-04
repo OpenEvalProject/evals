@@ -1,0 +1,306 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C45"
+    ],
+    "result": "let-767 is identified as a putative hydroxysteroid dehydrogenase essential for both lipid and ER protein homeostasis. An RNAi screen of 163 lipid droplet-associated proteins identified let-767 as specifically suppressing UPRER induction when knocked down, with effects on xbp-1 splicing and specificity for ER stress over other stress responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The screen methodology is clearly described (C29-C33), and multiple independent experiments demonstrate that let-767 RNAi suppresses UPRER induction (C39-C40, Figure 1B-C), reduces xbp-1 splicing (C41), and shows specificity for ER stress (C43-C44). The convergence of reporter assays, qPCR, and stress response specificity provides strong support for this central finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Knockdown of let-767 causes severe reduction in lipid droplet size and altered ER morphology. Lysate supplementation partially rescues ER and lipid droplet morphology but not UPRER function, suggesting distinct mechanisms underlying these phenotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Microscopy data (Figure 2C-D) clearly demonstrates morphological changes in both LDs and ER (C60-C61). The differential rescue by lysate supplementation (C62) is well-documented and supports the inference that morphological and functional defects have different underlying causes (C63-C64). The dissociation between morphological and functional rescue is a key observation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Supplementation with crude lysate or specific lipids (mmBCFA, oleic acid) rescues acs-1 RNAi phenotypes but not let-767 RNAi UPRER suppression, indicating the UPRER dysfunction is not due to simple lipid deficiency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The differential rescue experiments are well-controlled: lysate rescues acs-1 phenotypes (C55-C56) but only partially rescues let-767 phenotypes (C57), and specific lipid supplementation (C65-C67) shows minimal effects on let-767 UPRER. This systematic comparison across multiple lipid supplements (Figure 2\u2014supplement 1) strongly supports the conclusion that simple lipid deficiency does not explain the UPRER phenotype.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C125",
+      "C126",
+      "C127",
+      "C129"
+    ],
+    "result": "Knockdown of sbp-1, a master lipogenic transcription factor, rescues UPRER suppression in let-767 RNAi animals by reducing the entire fatty acid elongation pathway, supporting a model of pathway disequilibrium rather than simple product deficiency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The sbp-1 rescue is demonstrated through multiple complementary assays: reporter induction (C79, Figure 3B-C), xbp-1 splicing (C80, Figure 3A), and functional survival assays (C81-C82, Figure 3D-E). The observation that sbp-1 RNAi itself reduces UPRER capacity (C83) while still rescuing let-767 phenotypes strongly supports the pathway disequilibrium model (C126-C127). The combination of transcriptional, functional, and survival data provides robust support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "let-767 knockdown significantly reduces ER membrane protein mobility (measured by FRAP), with partial rescue by lysate supplementation. ER luminal protein dynamics are less severely affected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "FRAP experiments (Figure 4) provide quantitative measurements of membrane dynamics showing significant reduction in mobile fraction for membrane protein SPCS-1 (C90, ~50% reduction) with partial rescue by lysate (C91, to 62% of WT). The differential effect on luminal versus membrane proteins (C92-C93) is well-documented. The methodology is appropriate and the data clearly support altered membrane dynamics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C102",
+      "C103"
+    ],
+    "result": "Overexpression of ire-1b or xbp-1s bypasses normal UPRER regulation, but let-767 RNAi still suppresses UPRER induction in both contexts, indicating effects both on xbp-1 splicing and on post-splicing xbp-1s activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The genetic dissection using overexpression constructs is well-designed. The observation that let-767 RNAi reduces UPRER even with xbp-1s overexpression (C100, Figure 5C-D) while maintaining similar xbp-1s transcript levels (C102-C103, Figure 5E-F) provides strong evidence for post-splicing effects. The controls demonstrating construct sufficiency (C97-C98) are appropriate. This multi-level analysis effectively dissects the pathway.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C136",
+      "C137"
+    ],
+    "result": "In mammalian cells, supplementation with 3-oxostearic acid (the metabolite upstream of the let-767 ortholog HSD17B12) specifically reduces UPRER induction, while downstream metabolites do not, suggesting evolutionary conservation of this lipid-UPRER interaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The mammalian cell culture experiments (Figure 6) provide clear evidence that 3-oxostearic acid specifically suppresses UPRER (C110), while downstream metabolites do not (C111). The comparison to Cerulenin (C108, C136-C137) provides mechanistic context. The specificity of the effect (C113) and the use of appropriate controls strengthen the conclusion of evolutionary conservation (C114). However, the mechanism remains incompletely defined.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Among genes in the LCFA/mmBCFA pathways, acs-1 shows the most similar phenotype to let-767, while other pathway genes (elo-5, hpo-8) have milder effects. The phenotype is specific to let-767 and not a general feature of steroid dehydrogenases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The comparative analysis of related genes is systematic and well-controlled. Testing stdh genes (C47-C48, Figure 1\u2014supplement 1C-D) demonstrates specificity, while testing LCFA/mmBCFA pathway genes (C49-C50, Figure 1\u2014supplement 1E-F) establishes pathway involvement. The ranking of phenotype severity (C54) is supported by quantitative data. This establishes the specificity and pathway context of the let-767 phenotype.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C43",
+      "C44"
+    ],
+    "result": "let-767 RNAi does not suppress the heat shock response and has only minor effects on the mitochondrial stress response, demonstrating specificity for ER stress.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The specificity experiments using HSR and UPRmt reporters (Figure 1D-G) provide clear evidence that the effect is specific to UPRER (C43-C44). This is important for establishing that the phenotype is not due to general cellular dysfunction. The use of multiple stress response reporters is appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C76",
+      "C130"
+    ],
+    "result": "Untargeted lipidomic analysis shows global reduction in lipids including triglycerides in let-767 RNAi animals, but does not identify accumulation of specific upstream metabolites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the lipidomic analysis confirms global lipid reduction (C76, C130), the failure to identify accumulated intermediates (acknowledged in the text) limits the strength of this result. The technical challenges of identifying specific 3-oxoacyl species are noted, but this represents a gap in direct evidence for the proposed mechanism. The data support global disruption but not the specific accumulation hypothesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C124"
+    ],
+    "result": "ER stress itself reduces let-767 transcript levels, suggesting that let-767 reduction is not directly suppressing UPRER but that the effect depends on other factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The qPCR data (Figure 1\u2014supplement 1B) clearly shows that sec-11 RNAi reduces let-767 levels (C73, C124). The inference that this indicates the mechanism is not simply loss of let-767 (C74) is logical, though the alternative explanation is not fully tested. This observation is important for the mechanistic model but represents correlative rather than causal evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "The authors propose a model where let-767 knockdown causes accumulation of 3-oxoacyl-CoA and other intermediates that disrupt ER membrane quality, affecting both xbp-1 splicing and xbp-1s activity, with implications for proteopathic diseases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This is the authors' integrative model (Figure 7) synthesizing multiple observations. While the model is consistent with the data (membrane dynamics changes, differential rescue patterns, metabolite supplementation effects), direct evidence for 3-oxoacyl-CoA accumulation in C. elegans is lacking (lipidomics did not detect it). The mammalian cell data (C110-C113) supports the metabolite effect but doesn't prove accumulation in the worm model. The broader implications for disease (C119) are speculative. The model is plausible but incompletely validated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Background claims establishing the relationship between lipid metabolism and aging/disease, ER function, UPRER mechanisms, and the connection between lipid and protein homeostasis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are well-established background claims supported by appropriate citations to the literature. They provide necessary context but are not novel findings of this study. The claims accurately represent current understanding in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C46",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C131",
+      "C132",
+      "C134",
+      "C138",
+      "C139",
+      "C140"
+    ],
+    "result": "Discussion claims synthesizing the findings with prior literature on let-767 function, HSD17B12, fatty acid metabolism, ER membrane composition, and xbp-1 regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These discussion claims appropriately contextualize the findings within existing literature. The citations are appropriate and the synthesis is reasonable. Claims C121-C123 represent valid conclusions from the experimental data. These provide important context but are not primary experimental findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C75",
+      "C109",
+      "C133",
+      "C135"
+    ],
+    "result": "Speculative mechanistic claims about how let-767 knockdown might disrupt ER membrane function through accumulated intermediates or unbound protein partners.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These are explicitly speculative claims (marked as SPECULATION in evidence_type) that propose mechanisms not directly tested. While they are reasonable hypotheses consistent with the data, they lack direct experimental support. The speculation is appropriate for a discussion section but should not be considered established results.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,235 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "The authors constructed the first complete phylogenomic tree for all nine Numenius species using 514,771 bp across 524 loci from 62 samples. The phylogeny reveals two major clades (whimbrel and curlew) that diverged ~5 million years ago, with the slender-billed curlew sister to Eurasian curlew and the Eskimo curlew as a distinct lineage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The phylogenomic reconstruction is well-supported with appropriate methods (MP-EST, MCMCTree), adequate data (514,771 bp, 524 loci, 62 samples), and proper quality filtering. The use of ancient DNA from museum specimens successfully enabled inclusion of extinct species. Genomic clustering analyses (C98-C102) provided additional validation by correcting misidentified specimens. The methodology is sound with appropriate bootstrap support and convergence diagnostics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C154"
+    ],
+    "result": "40.6% of the evolutionary distinctness of the curlew clade has been lost with the presumed extinction of two species (N. tenuirostris and N. borealis), with another 15% currently endangered.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This calculation is based on established methods (Jetz et al., 2014) applied to the well-supported phylogenetic tree with divergence time estimates. The quantification of evolutionary loss is mathematically sound and provides important conservation context for the phylogenetic findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C33",
+      "C35",
+      "C37",
+      "C38",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Most Numenius species experienced sharp declines in effective population size (Ne) soon after the Last Glacial Maximum (~20,000 years ago), occurring prior to the Anthropocene and despite predicted increases in suitable breeding habitat based on bioclimatic variables.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the stairway plot analyses show consistent patterns across species, several methodological limitations create uncertainty: (1) Only 4-5 species could be analyzed due to sample size constraints (C79-C82); (2) The method performs best for recent rather than distant past (C77-C78), yet conclusions extend to ~20,000 years ago; (3) PSMC could not be run to corroborate findings (C84); (4) For N. borealis, high missingness affected reliability (C82); (5) The mutation rate assumption (8.11\u00d710\u207b\u2078) is borrowed from related species but not validated for Numenius. The paradoxical finding (decline despite habitat increase) is intriguing but requires additional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C34",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Ecological niche modeling predicted increases in suitable breeding habitat from the LGM through the mid-Holocene to present day for most species, based on bioclimatic variables and species occurrence data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The niche modeling methodology is rigorous with appropriate model selection (Maxent with ENMeval), cross-validation, and quality filtering. The use of 19 bioclimatic variables with collinearity reduction (VIF>3) and proper occurrence data filtering demonstrates methodological soundness. However, the authors acknowledge the limitation that models rely only on bioclimatic variables and may not capture other habitat factors (C34, C44).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C59",
+      "C60"
+    ],
+    "result": "The genetic diversity declines in Numenius coincide temporally with Late Quaternary megafaunal extinctions (20,000-10,000 years ago). The authors propose that loss of ecosystem-engineering megafauna, which maintained open grassland and tundra habitats, better explains the observed declines than climate change alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This is the central mechanistic claim but relies heavily on temporal correlation and inference rather than direct evidence. The temporal coincidence is documented (C19, C39-C40), and the ecological role of megafauna is well-established in the literature (C41-C43). However, the causal link is speculative (C20, C44, C60 marked as INFERENCE/SPECULATION). Alternative explanations are not rigorously tested. The mechanism assumes that bioclimatic niche models underestimate actual habitat loss due to vegetation succession (C43-C44), but this is not directly demonstrated. The claim would be strengthened by paleovegetation data or additional lines of evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Genetic diversity stabilized in the late Holocene when anthropogenic impacts were beginning to expand, suggesting that direct anthropogenic activity was not the main driver of earlier genetic diversity declines, though recent impacts may not yet be reflected in genomes due to long generation times.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The temporal mismatch between genetic diversity stabilization and anthropogenic expansion is clearly demonstrated (C46). The inference that anthropogenic factors were not the primary driver of earlier declines is logical given the timing (C47-C48). The caveat about potential lag effects due to long generation times (C49) appropriately acknowledges limitations in detecting recent impacts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "During the Last Glacial Period, tundra habitats dominated northern latitudes and the tundra-inhabiting Eurasian whimbrel (N. phaeopus) showed increased effective population size. Differences in demographic histories between N. phaeopus and N. hudsonicus reflect uneven glacial extent, with Siberia remaining largely ice-free while North America was heavily glaciated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The demographic patterns are supported by stairway plot data (C32), and the geological context is well-established (C30-C31, C54). The interpretation linking glacial geography to population dynamics (C53, C55) is reasonable and consistent with known biogeographic patterns. This provides important context for understanding species-specific variation in demographic trajectories.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Present-day effective population sizes are lower in the curlew clade (temperate grassland breeders) compared to the whimbrel clade (higher latitude tundra breeders), consistent with greater anthropogenic pressures on temperate grasslands.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The demographic comparison is data-driven (C50), and the differential anthropogenic pressure on temperate vs. tundra habitats is well-documented (C51). The inference linking these factors (C52) is reasonable, though the relative contribution of historical vs. contemporary factors cannot be fully disentangled.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "The presumably extinct slender-billed curlew (N. tenuirostris) had the lowest genetic diversity estimates among all species studied. While low genetic diversity may contribute to extinction risk, this relationship must be examined species-specifically and could be confounded by other factors like total population size.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The observation of lowest genetic diversity in N. tenuirostris is data-based (C56). The discussion appropriately cites literature on genetic diversity and extinction risk (C57) while acknowledging important caveats about causality and confounding factors (C58). The cautious interpretation is scientifically appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "While range expansion after the LGM could explain initial Ne declines, the persistence of declines beyond the mid-Holocene when habitat availability resembled pre-Anthropocene levels indicates that range expansion alone cannot explain the genetic diversity collapse.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The temporal extent of Ne declines is documented (C37), and the authors appropriately consider and reject range expansion as a sole explanation (C36, C38). This logical reasoning strengthens the argument for alternative mechanisms, though it remains largely based on exclusion rather than direct evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C61",
+      "C62"
+    ],
+    "result": "Non-breeding habitat availability is unlikely to account for post-LGM diversity declines in Old World shorebirds because coastline length increased in key areas like Southeast Asia due to sea level rise and shelf inundation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This addresses a potential alternative explanation. The geological process is well-documented (C61), and the inference about coastline availability (C62) is reasonable. However, this only addresses Old World species and doesn't fully exclude non-breeding habitat as a factor for all species.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C63",
+      "C64",
+      "C65",
+      "C103",
+      "C104"
+    ],
+    "result": "The study demonstrates that relatively brief evolutionary events like Late Quaternary megafaunal extinctions may have long-lasting effects (~10,000 years) on population dynamics, with broader implications for understanding genetic diversity loss in open habitat biota and conservation priorities for grassland ecosystems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims synthesize the study's broader implications and are appropriately framed as suggestions rather than definitive conclusions (C103). The conservation messages (C63, C65) follow logically from the findings. The temporal scale of effects (C64) is supported by the data. Background context claims (C1-C5, C21-C29) are well-supported by citations.",
+    "result_type": "MAJOR"
+  }
+]

@@ -1,0 +1,253 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "PRRX1 is upregulated in IPF lungs and localizes to mesenchymal cells in fibrotic areas. Analysis of three microarray datasets identified PRRX1 as upregulated in IPF, which was confirmed by qPCR and western blot showing both isoforms increased at mRNA and protein levels, with PRRX1a being the predominant isoform. Immunohistochemistry revealed PRRX1-positive cells accumulate in IPF fibroblast foci and are Vimentin+/CD45- mesenchymal cells, with variable ACTA2 expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims are well-supported by convergent evidence from multiple independent datasets (C1), validated by orthogonal methods including qPCR, western blot, and immunohistochemistry (C6-C12). The characterization of PRRX1-positive cells using multiple markers provides robust cell type identification. Sample sizes appear adequate for the analyses performed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "PRRX1 expression is restricted to fibroblast/mesenchymal lineages in human lungs. Single-cell transcriptomic analysis showed PRRX1 expression is confined to mesenchymal cell populations in both control and IPF lungs, with control lungs showing expression mainly in adventitial fibroblasts and IPF lungs showing additional expression in fibrosis-associated populations (HAS1high, PLIN2+, ACTA2+ cells). In vitro, PRRX1 is strongly expressed in primary lung fibroblasts compared to epithelial cells and macrophages, with increased mRNA (but not protein) levels in IPF versus control fibroblasts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The lineage restriction is convincingly demonstrated through single-cell RNA-seq analysis (C13-C15) and validated by in vitro qPCR comparing different cell types (C16). The discrepancy between mRNA and protein levels in IPF fibroblasts (C17) is appropriately noted and may reflect post-transcriptional regulation. The immunofluorescence data (C18) provides additional validation of protein expression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "PRRX1 expression in lung fibroblasts is regulated by a TGF-\u03b2/PGE2 balance. TGF-\u03b21 treatment (1 ng/ml) decreased PRRX1 isoform expression at 48 hours, while PGE2 treatment (100 nM) increased PRRX1 expression at both mRNA and protein levels in control and IPF fibroblasts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The opposing effects of TGF-\u03b21 and PGE2 on PRRX1 expression are demonstrated with appropriate controls and time points (C19-C20). The conclusion about balance (C21) is a reasonable inference from the data, though the term 'balance' implies a more complex regulatory relationship than directly demonstrated. The 48-hour time point is appropriate for assessing these effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "PRRX1 expression is controlled by extracellular matrix stiffness through PTGS2/ROCK signaling. PRRX1 mRNA levels increased on soft (1.5 kPa) versus stiff (28 kPa or glass) substrates in both control and IPF fibroblasts. This effect was abrogated by PTGS2 inhibition (NS398) and mimicked by ROCK inhibition (Fasudil) on stiff substrates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The mechanotransduction experiments are well-designed with appropriate substrate stiffness ranges that span physiological and pathological conditions (C22). The pharmacological interventions with NS398 and Fasudil (C23-C24) provide mechanistic insight, though these inhibitors may have off-target effects. The conclusion about PTGS2/ROCK balance (C25) is supported by the data but represents an inference about the regulatory mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "IPF fibroblast-derived ECM increases PRRX1 expression in control fibroblasts through PDGFR-dependent signaling. Control fibroblasts seeded on IPF-derived 3D ECM showed upregulated PRRX1a and PRRX1b mRNA compared to plastic or control ECM, while IPF fibroblasts showed stable expression. This effect was reversed by tyrosine kinase inhibitors (Imatinib, Nintedanib) and a specific PDGFR inhibitor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The 3D ECM experiments provide important context-dependent regulation of PRRX1 (C26-C27). The pharmacological validation with multiple inhibitors targeting PDGFR (C28-C29) strengthens the mechanistic conclusion. However, the stiffness measurements show similar elastic moduli for control and IPF ECM (~200 Pa), which is notably softer than the hydrogel experiments, raising questions about whether other ECM properties beyond stiffness drive the observed effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "PRRX1 promotes fibroblast proliferation by regulating cell cycle progression. PRRX1 knockdown decreased proliferation, induced G1/S arrest (decreased S phase, increased G1 phase), reduced expression of cyclins CCNA2 and CCNE2, and decreased KI67-positive cells. ChIP analysis showed PRRX1 binding to promoter regions of CCNA2, CCNE2, and MKI67 but not to GAPDH TSS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The proliferation phenotype is well-characterized using multiple complementary approaches: proliferation assays (C30), cell cycle analysis (C31), cyclin expression (C32), and KI67 staining (C33). The ChIP data (C34-C35) provides direct evidence for PRRX1 binding to target gene promoters, with appropriate negative control (GAPDH). The use of two independent siRNA sequences strengthens confidence in the specificity of the effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "PRRX1 regulates TGF-\u03b2-driven myofibroblastic differentiation through modulation of TGFBR2 and PPM1A. PRRX1 knockdown impaired TGF-\u03b21-induced upregulation of ACTA2 and ACTG2 at mRNA and protein levels. Transcriptome analysis identified TGF-\u03b2 pathway as the most significantly inhibited pathway. PRRX1 knockdown decreased TGFBR2 expression, increased PPM1A phosphatase expression (with PRRX1 binding detected at PPM1A promoter by ChIP), and inhibited SMAD2/3 phosphorylation while not affecting non-canonical AKT/JNK pathways. PPM1A knockdown partially rescued SMAD3 phosphorylation in PRRX1-depleted cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The mechanistic dissection of PRRX1's role in TGF-\u03b2 signaling is comprehensive and well-supported. The transcriptome analysis (C38) provides unbiased pathway identification, while focused validation of TGFBR2 (C39) and PPM1A (C42) with ChIP evidence for PPM1A (C44) establishes direct regulation. The rescue experiment with PPM1A knockdown (C43) provides strong evidence for the proposed mechanism. The specificity for canonical versus non-canonical TGF-\u03b2 signaling (C41) is important, though the data is not shown.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C45",
+      "C46"
+    ],
+    "result": "Complete Prrx1 loss in mouse embryonic fibroblasts inhibits TGF-\u03b21-induced myofibroblastic differentiation but promotes epithelial spheroid formation. Prrx1-/- MEFs showed inhibited upregulation of ACTA2 and COL1 at mRNA and protein levels after TGF-\u03b21 stimulation (1 and 10 ng/ml). In lung spheroid assays, Prrx1-/- MEFs as stromal cells promoted rather than dampened epithelial spheroid formation compared to wild-type MEFs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The genetic loss-of-function approach in Prrx1-/- MEFs (C45) validates findings from siRNA experiments and demonstrates effects at multiple TGF-\u03b21 concentrations. The spheroid assay (C46) provides important functional context, suggesting Prrx1 loss does not impair epithelial regeneration and may even enhance it. This addresses a key concern about potential adverse effects of PRRX1 inhibition on tissue repair.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Prrx1 expression is upregulated during the fibrotic phase in the bleomycin mouse model. Both Prrx1 isoforms showed increased mRNA expression from day 7-28, with protein upregulation confirmed from day 14-28. Single-cell RNA-seq analysis showed Prrx1 expression in Pi16+ adventitial and Col15a1+ parenchymal fibroblasts in control lungs, and additionally in Lrrc15+/Cthrc1+ fibrosis-associated fibroblasts in bleomycin-treated lungs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The temporal expression pattern is well-characterized across multiple time points (C47-C48), showing appropriate correlation with the fibrotic phase of the bleomycin model. The single-cell analysis (C49-C50) provides cellular resolution and identifies specific fibroblast subpopulations expressing Prrx1, consistent with the human IPF data. The slight decrease at day 21 is noted but does not undermine the overall pattern.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C51"
+    ],
+    "result": "Prrx1 heterozygous mice show no haploinsufficiency and are not protected from bleomycin-induced lung fibrosis. Prrx1+/- mice showed normal Prrx1 expression levels and developed fibrosis comparable to wild-type mice at day 14 after bleomycin treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The negative result is important for experimental design and is appropriately documented with multiple assays (qPCR, western blot, histology, hydroxyproline) shown in supplementary data. This finding justifies the subsequent use of ASO-mediated knockdown rather than relying on heterozygous mice for loss-of-function studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Prrx1 ASO treatment during the active fibrotic phase (days 7-13) attenuates bleomycin-induced lung fibrosis. Prrx1 ASO reduced Prrx1 expression at mRNA and protein levels, decreased lung injury scores, reduced collagen content (by picrosirius, IHC, and hydroxyproline assay), decreased ACTA2 and PDGFR+ cell accumulation, and reduced expression of fibrotic markers (Col1a1, Fn1, Acta2, Col14a1, Eln, Tnc) and inflammatory/fibrosis mediators (Tgfb1, Ctgf, Tnf, Serpin1). Proliferation markers (Mki67 mRNA, KI67+ cells, KI67+/PDGFR+ double-positive cells) were also decreased.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The in vivo ASO experiments are comprehensive and well-controlled, with multiple orthogonal measures of fibrosis (histology, biochemical, molecular). The treatment during the active fibrotic phase (days 7-13) represents a therapeutically relevant 'curative' approach. The breadth of endpoints assessed (C52-C64) provides strong evidence for anti-fibrotic efficacy. Sample sizes appear adequate (n=8-15 per group based on figures). The use of LNA-modified ASOs is appropriate for in vivo delivery.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C65"
+    ],
+    "result": "Prrx1 ASO treatment during late fibrotic phase (days 21-28) shows reduced efficacy. Treatment from day 21-27 showed less potent effects on hydroxyproline content, though injury score, PDGFR+ cell accumulation, and COL1/FN1 protein levels were still decreased at day 28.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The reduced efficacy during late-phase treatment (C65) is appropriately documented and provides important information about the therapeutic window. The partial effects suggest some benefit even in established fibrosis, though the reduced hydroxyproline response indicates limitations. This finding is consistent with the temporal expression pattern of Prrx1 and suggests optimal efficacy during active fibrogenesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "PRRX1 ASO attenuates fibrosis in precision-cut lung slices (PCLS) from mice and humans. In mouse PCLS, Prrx1 ASO decreased Acta2 mRNA at baseline and reduced FC-stimulated upregulation of Acta2, Col1a1, and Fn1 at mRNA and protein levels. In human control PCLS, PRRX1 ASO lessened FC-induced upregulation of ACTA2, COL1A1, and FN1 mRNA and decreased collagen accumulation. In IPF PCLS, PRRX1 ASO decreased expression of ACTA2, COL1A1, and FN1 mRNA at baseline.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The PCLS experiments provide important ex vivo validation in a more complex tissue context that preserves lung architecture and multiple cell types. The effects in both mouse and human PCLS (C68-C70) support translatability. The observation of effects in IPF PCLS at baseline (C67) is particularly relevant for therapeutic potential. However, sample sizes are small (n=3-6), and the variability in responses (noted as effects in 2/3 or 3/3 experiments) should be considered.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Summary of PRRX1 function in lung fibrosis. The authors conclude that PRRX1 TFs are upregulated in mesenchymal cells in IPF fibrotic areas, positively regulated by cues associated with undifferentiated phenotype, required for proliferation and myofibroblastic differentiation in vitro, and that ASO-mediated inhibition impacts fibrosis in preclinical models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These summary claims (C71-C74) accurately reflect the collective findings from the manuscript. Each component is supported by multiple lines of evidence presented in the grouped results above. The claims appropriately synthesize the major findings without overstating the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Background and context claims about PRRX1 and IPF. These claims establish known information about PRRX1 isoforms, developmental phenotypes, IPF pathogenesis, and prior work on PRRX1 in other tissues and disease contexts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are appropriately cited background claims (C2-C5, C78-C86) or established knowledge about IPF (C75-C77) that provide context for the study. The citations appear appropriate and the claims accurately represent prior work. These are not novel findings but necessary context.",
+    "result_type": "MINOR"
+  }
+]

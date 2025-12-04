@@ -1,0 +1,239 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3"
+    ],
+    "result": "The manuscript establishes the context and motivation for developing Tronko by describing the growing importance of eDNA analysis and the fundamental challenge of taxonomic assignment, noting that full probabilistic phylogenetic methods are preferable but computationally prohibitive for modern NGS data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 represent well-established knowledge in the field and provide appropriate context for the work. These are background claims supported by general scientific consensus and do not require experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "The manuscript reviews existing taxonomic classification methods, categorizing them into three strategies (composition-based, alignment-based, and phylogenetic-based) and documenting their computational limitations, particularly for phylogenetic methods which scale poorly with database size.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C20 provide a comprehensive literature review with appropriate citations. The computational measurements for pplacer (C16-C17) are supported by experimental data, though C17 is an extrapolation that assumes linear scaling. The review accurately characterizes the state of the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C21",
+      "C49",
+      "C51",
+      "C52",
+      "C53",
+      "C68",
+      "C71",
+      "C72",
+      "C74",
+      "C75"
+    ],
+    "result": "Tronko is presented as a novel phylogeny-based taxonomic classification method that uses pre-calculated posterior probabilities at tree nodes and a linear-time algorithm to enable phylogenetic assignment for modern NGS datasets, approximating full likelihood calculations by assuming infinitesimally short query branches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21, C49, C51-C53, C68, C71-C72, C74-C75 describe the methodological innovation of Tronko. The mathematical framework (C71-C72) provides theoretical justification for the approximation. The linear complexity claim (C53) is supported by the algorithmic description. However, the claim of being 'first' (C21, C49) is difficult to verify definitively without exhaustive literature review.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "For small reference databases (<1600 sequences), Tronko demonstrates >20\u00d7 speed-up over pplacer and >2\u00d7 speed-up over APPLES-2 with reduced memory requirements, while maintaining 100% true-positive rate and highest species assignment rate among phylogenetic methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C25 are supported by data in Figure 1\u2014figure supplement 2. All three methods achieved 100% accuracy on small databases (C24), validating the approximations in Tronko. The performance improvements are clearly demonstrated, though limited to small database sizes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C30",
+      "C31",
+      "C39",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "In leave-one-species-out cross-validation tests on COI and 16S data, Tronko consistently achieves lower misclassification rates relative to recall compared to kraken2, MEGAN, and metaphlan2, with the advantage particularly apparent at higher error rates and when species are missing from the reference database.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C27, C30-C31, C39, C60-C64 are supported by extensive simulation data in Figures 2-5. The convex hull analysis (C62-C63) provides a rigorous framework for comparing methods. The leave-one-species-out design directly tests the scenario where the true species is absent, which is a realistic and important test case.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C28",
+      "C29"
+    ],
+    "result": "In leave-one-individual-out tests with 0% error, Tronko achieved 0.1% misclassification rate with 58.6% recall at species level, compared to 1.5%, 0.1%, and 11.0% misclassification rates for kraken2, MEGAN, and metaphlan2 respectively.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C29 are supported by data in Figure 4D. The leave-one-individual-out test is less stringent than leave-one-species-out since closely related sequences remain in the database. Tronko's lower recall compared to other methods suggests more conservative assignment, which may be appropriate given the lower misclassification rate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "On four independent mock community datasets (Schirmer et al. 2015, Lluch et al. 2015, Gohl et al. 2016, Braukmann et al. 2019), Tronko consistently achieved low misclassification rates (<2.6% for 16S, <0.5% for COI) while maintaining moderate to high recall, outperforming other methods particularly when using the same reference database.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C37 are supported by data in Figure 6 and supplements. The mock community tests provide important validation on real experimental data. However, Tronko's recall is often lower than competing methods, suggesting a trade-off between precision and sensitivity. The comparison is complicated by different methods using different default databases.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C38",
+      "C42",
+      "C57",
+      "C58",
+      "C47"
+    ],
+    "result": "Computational benchmarking shows kraken2 is fastest but least accurate, MEGAN is prohibitively slow, and Tronko can process 1 million queries in ~8 hours with ~50 GB peak memory, representing higher memory usage than non-phylogenetic methods but practical performance for large-scale analyses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38, C42, C47, C57-C58 are supported by data in Figure 7. The computational analysis provides important practical information. The memory requirement (C47, C58) is acknowledged as a limitation but is within the range of modern computational resources. The speed comparison is fair as all methods were run on the same hardware.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C40",
+      "C41"
+    ],
+    "result": "Metaphlan2 and MEGAN show contrasting assignment strategies, with metaphlan2 assigning aggressively (high recall and misclassification) and MEGAN assigning conservatively (low recall and misclassification), both generally falling within Tronko's convex hull in recall-misclassification space.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C41 are supported by observations across multiple figures. This characterization helps explain the performance differences between methods and validates the convex hull analysis approach for method comparison.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "The wavefront alignment algorithm performs worse than Needleman-Wunsch for short single-end reads (150 bp) due to forcing end-to-end alignments with large gaps when sequences differ substantially, leading to a recommendation against using wavefront alignment for short read assignment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C45 are supported by data in Figure 2\u2014figure supplement 2D-F and Figure 4\u2014figure supplement 2D-F. The analysis appropriately identifies a limitation of the wavefront implementation and provides practical guidance. The recommendation (C45) is appropriately cautious, noting that future improvements might change this conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C67"
+    ],
+    "result": "The manuscript describes the rationale for algorithmic choices in Tronko-build, including using FAMSA for speed (1-2 orders of magnitude faster than alternatives), BWA-MEM for lowest error rate, and determining that FAMSA+RAxML+Needleman-Wunsch was optimal for speed and accuracy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C56, C67 are supported by citations and comparative data in Figure 2\u2014figure supplement 2. The methodological choices are well-justified. C67 is supported by empirical comparison of different method combinations, though 'optimal' is relative to the specific metrics and datasets tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C46",
+      "C59"
+    ],
+    "result": "The manuscript acknowledges current limitations of Tronko, including inapplicability to eukaryotic genomic data due to requiring well-curated marker alignments, though notes potential for future extension and that memory requirements could theoretically be reduced by sequential processing of alignment subsets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46 and C59 appropriately acknowledge limitations. C46 correctly identifies that the method is designed for marker-based approaches rather than whole-genome metagenomics. C59 is speculative about future improvements but appropriately qualified as theoretical.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C48"
+    ],
+    "result": "The manuscript concludes that Tronko identifies more reads at both high and low taxonomic levels more accurately than other leading methods, with advantages particularly apparent in the presence of polymorphisms/sequencing errors and when true species are absent from the reference database, providing substantial improvement for viruses, amplicon sequencing, and non-genomic barcoding applications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C6, C48 represent the main conclusions and are well-supported by the extensive simulation and mock community data presented throughout the manuscript. The advantages are demonstrated across multiple datasets and conditions. However, 'more accurately' should be qualified as 'lower misclassification rate' since recall is sometimes lower than competing methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C50"
+    ],
+    "result": "Tronko software is available at https://github.com/lpipes/tronko under an open-source license.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C50 is a factual statement about software availability that can be verified and is appropriately documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C65",
+      "C66"
+    ],
+    "result": "Within the Laridae family, metaphlan2 and kraken2 show numerous misassignments while Tronko accurately assigns species or appropriately assigns at genus/family level.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C66 are supported by data in Figure 4\u2014figure supplement 1. This provides a specific example of Tronko's improved performance on a challenging taxonomic group, illustrating the practical benefits of the phylogenetic approach.",
+    "result_type": "MINOR"
+  }
+]

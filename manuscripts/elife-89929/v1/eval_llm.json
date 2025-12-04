@@ -1,0 +1,291 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "The model architecture implements a biologically-inspired visual processing pathway with sequential patch sampling (5 patches of 75\u00d775 pixels at 0.1 m/s), feedforward connectivity from photoreceptors through lamina and medulla to lobula neurons, temporal integration with structured delays, and lateral inhibitory connections between lobula neurons. The connectivity is hypothesized to be refined through non-associative learning on time-varying natural images.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C29 provide detailed architectural specifications that are internally consistent and supported by references to figures. C30 explicitly frames the learning mechanism as a hypothesis, which is appropriate for a computational model. The model design is clearly described with specific parameters.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C92"
+    ],
+    "result": "After training on natural images, lobula neurons in the model develop spatiotemporal orientation selectivity with elongated on/off receptive fields, demonstrate specificity to orientation (e.g., 150\u00b0 tuned neuron firing at 26 spikes/sec), direction, contrast, and velocity, with responses closely resembling biological observations in bees and insects. Only a small subset of neurons respond to any given stimulus, indicating sparse and decorrelated activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C40 and C92 describe quantitative model results with specific firing rates, orientations, and tuning properties, supported by multiple figure references (2A-E). The comparison to biological data (C34, C39, C40) is appropriately cited. The sparse coding observation (C35) is consistent with the reported results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C41",
+      "C42"
+    ],
+    "result": "Increasing the number of lobula neurons in the model enhances the diversity of orientation-selective responses and enables finer encoding of orientations and motion patterns through more distributed tuning properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C42 describe scalability results supported by supplementary figures. The relationship between neuron number and encoding precision is a logical consequence of the model architecture and is presented with appropriate figure references.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Training on natural images produces highly decorrelated lobula neuron responses (strong diagonal correlation matrix) and significantly reduces the sparseness index, indicating selective and efficient coding. Training on shuffled natural images produces only moderate sparseness reduction and non-structured receptive fields, demonstrating that spatial structure in training images is essential for efficient feature encoding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C47 describe quantitative results from training experiments with appropriate controls (shuffled images). Figure 3 supports the correlation and sparseness measurements. The interpretation that spatial structure is necessary (C46-C47) is justified by the control experiment showing different outcomes with shuffled vs. natural images.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "After associative learning training, the MBON exhibits reduced activity to rewarded patterns (plus sign) and increased activity to punished patterns (multiplication sign), successfully discriminating between them. A control model with fixed random connectivity in the visual lobe fails to discriminate, and the MBON response pattern is consistent with biological PE1 neurons in honeybee mushroom bodies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C52 describe the associative learning results with appropriate controls (C51) and biological validation (C52). Figure 4B supports the MBON response dynamics. The comparison to biological data (Okada et al., 2007) strengthens the result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Model performance in discriminating plus from multiplication patterns depends critically on scanning parameters: scanning only the lower half or lower left corner achieves \u226596-98% accuracy, while whole-pattern scanning achieves only 63%, increased speed reduces accuracy to 70%, stationary scanning achieves 60%, and training from >100mm distance results in failure. This aligns with real bee behavior of approaching stimuli closely with initially random choices.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C56 describe systematic parameter variations with quantitative performance metrics supported by Figure 4C and citations to bee behavior studies. The results demonstrate the importance of active vision and are consistent with biological observations (C56).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Scanning the lower half of patterns at normal speed produces stronger, more selective lobula neuron activation in a smaller subset compared to whole-pattern scanning, which produces more widespread overlapping activation. Neural responses show significantly larger angular distance (better separability) when scanning is restricted to the lower half versus whole pattern.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C60 describe comparative analysis of scanning strategies with quantitative measures (angular distance) supported by Figure 5. The results logically follow from the model architecture and demonstrate how scanning behavior affects neural representation quality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "The model successfully discriminates various pattern types including angled bars, rotated crosses, spirals, gratings, oriented bars in quadrants (>99% accuracy on training, 61% on simplified variants), and human faces. It demonstrates generalization to novel patterns and implements both reward learning and rejection behavior (22% lower preference for negatively trained vs. novel patterns). Both real and simulated bees fail on 180\u00b0 rotated faces.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C66 describe performance across multiple tasks with specific accuracy values and appropriate comparisons to biological data. Figure 6 supports these results. The generalization capability (C62) and rejection behavior (C63) demonstrate sophisticated learning beyond simple discrimination.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C67"
+    ],
+    "result": "The model fails to replicate bee performance on complex patterns from Stach et al. 2004 that require recognizing spatial arrangements of orientations across four quadrants, despite successfully discriminating plus from multiplication signs when scanning whole patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C67 honestly reports a model limitation supported by Figure 6F. The authors acknowledge this failure and discuss it as indicating the model lacks mechanisms for integrating local features into global representations, which is appropriate scientific reporting.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Reducing the number of lobula neurons decreases variability in spatiotemporal receptive fields and overall model performance. With only 4 neurons, the model cannot encode full spatiotemporal structure (only vertical/horizontal fields). With 16 neurons, the model discriminates moderately complex patterns but fails on highly complex stimuli like human faces.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C71 describe systematic ablation studies varying neuron number, supported by Figure 7 and videos. The results logically demonstrate the relationship between network capacity and task complexity, with appropriate quantitative performance data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C72",
+      "C73"
+    ],
+    "result": "Fixed (non-plastic) inhibitory connections between lobula neurons limit the ability to encode moving orientations, indicating that plasticity of inhibitory interneurons plays a crucial role in efficient visual representation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C73 describe a control experiment (fixed vs. plastic inhibition) supported by Figure 8 and Video 6. The interpretation (C73) is justified by the experimental manipulation showing reduced encoding capacity without inhibitory plasticity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "The model demonstrates that active scanning and non-associative learning dynamically shape neural activity to optimize information flow. Lobula neurons self-organize into orientation-selective cells with sparse, decorrelated responses encoding orientations biased by speed and contrast, suggesting co-evolution with scanning behavior. The model's robust pattern recognition performance implies similar encoding mechanisms may exist in insects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C77 summarize the main findings of the study, integrating results from multiple experiments. C76 appropriately frames co-evolution as a suggestion rather than proven fact. C77's implication about biological systems is reasonable given the model's performance and biological validation throughout, though it remains an inference.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Bumblebees have compound eyes with ~5500 ommatidia containing three photoreceptor types (UV, blue, green wavelength sensitive), with green photoreceptors predominantly mediating visual pattern recognition, justifying the model's focus on green channel input.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C80 state biological facts supported by appropriate citations and provide justification for modeling decisions. These are well-established facts in the literature used to ground the model design.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C82",
+      "C83"
+    ],
+    "result": "The model was trained using 50,000 time-varying image patches randomly sampled from 100 natural flower and scene images during lateral scanning, with synaptic weights in the optic lobe updated through this exposure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C83 describe the training procedure with specific quantitative details. This is a straightforward methodological description supported by references to Methods and figures.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "The model implements associative learning in mushroom bodies using dopamine-modulated STDP for negative patterns and a novel octopamine-modulated STDP rule (hypothesized to induce synaptic depression) for positive patterns. This is grounded in biological evidence that mushroom bodies are critical for insect learning, that KC-MBON synapses follow Hebbian STDP (though STDP alone is insufficient), that octopamine and dopamine signal appetitive/aversive values, and that octopamine depresses STDP synapses. The resulting MBON responses match PE1 neurons in honeybee brains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C91 describe the associative learning implementation with extensive biological grounding through citations (C86-C90). C85 appropriately presents the octopamine rule as a hypothesis. C91 validates the model output against biological data. The biological foundation is strong, though C85's novel mechanism requires experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "Bees demonstrate remarkable visual learning capabilities including associating colors/orientations with rewards, categorizing patterns by identifying relevant features, grasping abstract concepts, and solving numerosity tasks through sequential scanning. However, it remains unclear how bees achieve complex pattern recognition despite low visual acuity and limited neural resources.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C6 provide background on bee cognitive abilities supported by extensive citations. C6 appropriately identifies a knowledge gap that motivates the study. These are well-established facts in the bee cognition literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Natural scenes have different statistical structure than artificial ones, and visual neurons are hypothesized to exploit these regularities for efficient encoding. Insect visual neurons have evolved mechanisms providing robust responses to naturalistic inputs, with fly photoreceptors extracting more information from natural time series than artificial stimuli. Insect sensory pathways dynamically adapt to environmental conditions, with experience-dependent adaptation observed in photoreceptors and motion-sensitive neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C14 provide theoretical and empirical background on efficient coding and neural adaptation, all supported by appropriate citations. C8 correctly identifies Barlow's hypothesis as a hypothesis. The claims establish the theoretical framework for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Active sampling strategies are widely observed across species, with primates using eye movements and insects using head/body movements to optimize visual processing. Bees engage in systematic scanning movements to construct neural representations, enumerate elements sequentially rather than in parallel, and prioritize specific pattern regions before decisions, overcoming limitations in discriminating similar hues in brief flashes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C22 establish the importance of active vision across species and specifically in bees, all supported by extensive citations. These provide the behavioral foundation motivating the model's focus on scanning behavior.",
+    "result_type": "MINOR"
+  }
+]

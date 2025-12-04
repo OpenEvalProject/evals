@@ -1,0 +1,297 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "A functional FIKK4.1-TurboID fusion protein was successfully generated and validated. The fusion protein shows biotin-dependent biotinylation of proteins in the parasitophorous vacuole and RBC compartment, particularly at the iRBC periphery, without compromising FIKK4.1 function as evidenced by normal Var2CSA trafficking.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C37 provide converging evidence from PCR validation (C32), western blot (C33), microscopy (C34-C35), and functional assays (C36) that the FIKK4.1-TurboID fusion is properly expressed, active, and functional. The multiple independent validation methods strongly support this result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "FIKK4.1-TurboID proximity labeling identified 101 parasite and 39 human proteins in its vicinity, with significant enrichment of exported proteins (62.3% vs 8% in the proteome). Key interactors include PfEMP1 trafficking proteins (PTP4, PTP2, PTP3), the 4.1R complex, and alpha-synuclein, with temporal differences showing enrichment of exported proteins at later stages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C51 present comprehensive mass spectrometry data with appropriate controls (NF54 wildtype) and statistical thresholds (1.5-log2 fold enrichment). The temporal analysis (C48-C51) and enrichment calculations (C39-C40) are well-supported by the data shown in Figure 1E-G.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "PTP4 and KAHRP were selected as molecular sensors and successfully tagged with TurboID in the FIKK4.1 conditional KO background. Both fusion proteins are functional, as evidenced by normal PfEMP1 surface translocation and proper localization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C60 describe the experimental design rationale (C52-C57) and validation (C58-C60). The selection criteria are well-justified based on prior phosphoproteomics data, and functional validation by flow cytometry (C59, Figure 2B) confirms the tags don't impair protein function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "KAHRP and PTP4 show distinct biotinylation patterns and partial co-localization with FIKK4.1. KAHRP shows stronger biotinylation signal than PTP4, both localize to the iRBC periphery with FIKK4.1 positioned more toward the cell lumen, and both can biotinylate FIKK4.1 despite limited spatial overlap, suggesting transient interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C69 are supported by multiple imaging modalities (western blot C61-C63, SIM microscopy C64-C67) and biochemical pulldown data (C68). The inference of transient co-localization (C69) is reasonable given the biotinylation evidence despite limited microscopic overlap.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "PerTurboID peptide-level analysis identified 3560 total peptides (2272 biotinylated), with 195 proteins in KAHRP-T and 150 in PTP4-T datasets. The three proteins (FIKK4.1, PTP4, KAHRP) appear in each other's datasets, and PTEX150 was the only non-exported protein in all three datasets, demonstrating specificity for exported proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C75 present clear quantitative data from mass spectrometry. The exclusion of non-biotinylated peptides (C71) strengthens specificity. The identification of PTEX150 in all datasets (C74-C75) serves as an appropriate control for the trafficking pathway.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Biotinylation mapping on the RHOPH complex reveals that most sites localize to disordered domains, with some buried sites (Clag3.1 positions 1321, 1323) suggesting conformational changes upon membrane insertion. RHOPH3 biotinylation on both sides of its transmembrane domain indicates labeling in the soluble trafficking state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C81 integrate structural data (PDB: 7KIY) with biotinylation patterns. The interpretation that disordered domains are more accessible (C77) is well-established. The inference about conformational states (C79, C81) is reasonable but somewhat speculative, though supported by structural context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Analysis of 29 PHIST proteins shows substantial reduction in biotinylation within the PRESAN domain despite no reduction in lysine content, suggesting these lysines are occluded by protein-protein interactions, potentially with PfEMP1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C86 present quantitative analysis shown in Figure 3B. The observation of reduced biotinylation in PRESAN domains (C85) with equal lysine content is data-driven. The inference of occlusion by protein-protein interactions (C86) is reasonable given known PHIST-PfEMP1 interactions (C84).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "PerTurboID reveals protein topology for membrane proteins: SEMP1 has N-terminus in RBC cytosol, other Maurer's cleft proteins show opposite orientation, Var2CSA is biotinylated only on cytosolic C-terminus, while RIFIN is biotinylated on N-terminal extracellular domain, likely during trafficking.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C93 use biotinylation patterns to infer topology. The logic is sound given that KAHRP and PTP4 lack transmembrane domains (C87-C88). The topology predictions (C89-C92) are well-supported by the data, though RIFIN biotinylation interpretation (C93) is somewhat speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Differential biotinylation by KAHRP vs PTP4 reveals spatial organization: 35 proteins show preferential biotinylation by one probe. KAHRP-associated proteins include peripheral proteins (Clag3.1, LYMP, MESA, GARP, PHISTb), while PTP4-associated proteins include chaperones (HSP70x, HSP40s, CCT8), consistent with J-dot localization. Surprisingly, Var2CSA is more biotinylated by PTP4 than KAHRP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C98 are supported by quantitative data in Figure 3D and Supplementary file 8. The association of PTP4 with chaperones (C96-C97) agrees with prior immunoprecipitation data. The unexpected Var2CSA-PTP4 association (C98) is honestly reported and appropriately noted as surprising.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "PerTurboID detects FIKK4.1 deletion as expected loss of biotinylation in the kinase domain with increased biotinylation upstream. KAHRP and PTP4 show local accessibility changes, with KAHRP changes concentrated around positions 351-364 (known FIKK4.1 phosphorylation sites) and PTP4 showing C-terminal increases. Changes in phosphorylated vs non-phosphorylated peptide ratios validate the approach.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C108 demonstrate the PerTurboID method works as intended, with the FIKK4.1 deletion serving as an internal control (C99-C101). The localized changes in KAHRP (C104-C105) and PTP4 (C103) are shown in Figure 4A. The phosphorylation ratio analysis (C106-C108) provides orthogonal validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "PerTurboID detects changes in post-translational modifications without specific enrichment: ACS7 shows loss of phosphorylated peptides at position 876 upon FIKK4.1 deletion, while RHOPH3 shows increased phosphorylation at position 853, consistent with prior phosphoproteomics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C112 demonstrate an additional capability of PerTurboID. The observations are validated by prior phosphoproteomics (C111, Davies et al., 2020), and the opposite effects on ACS7 vs RHOPH3 (C109-C110) show the method can detect both increases and decreases in phosphorylation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "Upon FIKK4.1 deletion, PTP3, SEMP1, and PF3D7_0702500 show increased biotinylation at almost all sites, suggesting substantial changes in localization or accessibility. Var2CSA shows increased biotinylation at position 2694 only, with other sites unchanged, suggesting subtle alterations. Overall, FIKK4.1 activity alters protein dynamics in the cytoadhesion complex environment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C122 are supported by volcano plots in Figure 4C-D. The global changes in PTP3, SEMP1, and PF3D7_0702500 (C113-C114) contrast with the single-site change in Var2CSA (C118-C121), suggesting different mechanisms. The overall conclusion (C122) is appropriately cautious.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C28",
+      "C123",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "Among 17 exported FIKK kinases, only FIKK4.1 shows significant reduction in Var2CSA surface presentation upon deletion. The reduction is unlikely due to misfolding, as four different antibodies against various Var2CSA domains show reduced binding, suggesting reduced surface exposure rather than conformational changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28, C123-C126 are supported by flow cytometry data in Figure 5A-B. Testing all FIKK kinases (C124) is comprehensive. The use of four different antibodies (C125) strengthens the conclusion that the defect is quantitative rather than conformational (C126). Statistical significance is shown (p<0.0001).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "FIKK4.1 has a general role in PfEMP1 surface translocation: deletion causes 51.5\u00b113% reduction in CD36-binding parasite adhesion and 54% reduction in Var2CSA-CSA binding, suggesting the effect is not limited to Var2CSA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C127-C129 demonstrate generalizability across PfEMP1 variants. The similar magnitude of effects for CD36-binding (C127) and CSA-binding (C128) parasites supports the inference of a general role (C129). Statistical significance is provided (p=0.0014, p=0.0033).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "Flow-based adhesion assays reveal that FIKK4.1 deletion affects both the number of binding cells and binding avidity. Differences are apparent at low flow (4.5 mL/hr), with much stronger reduction at high flow (150 mL/hr), indicating some cells lose CSA-binding ability entirely while others show reduced avidity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C130-C132 are supported by the flow rate titration data in Figure 5F. The experimental design (Figure 5E) is appropriate for distinguishing binding capacity from avidity. The interpretation that both parameters are affected (C132) is well-supported by the flow rate-dependent effects. Statistical significance is shown (p=0.0228 at 4.5 mL/hr, p=0.0008 at 150 mL/hr).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C29",
+      "C133",
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "FIKK4.1 is specific to PfEMP1 trafficking and does not affect RIFIN surface translocation, despite one RIFIN being differentially phosphorylated upon FIKK4.1 deletion. This indicates independent mechanisms for surface translocation of RIFINs and PfEMP1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29, C133-C136 are supported by flow cytometry data in Figure 5G-H showing no difference in RIFIN surface levels. The specificity for PfEMP1 (C135-C136) is a strong conclusion given that one RIFIN is phosphorylated by FIKK4.1 (C133), yet its trafficking is unaffected (C134).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C137",
+      "C138"
+    ],
+    "result": "PerTurboID can complement other protein accessibility methods (LiP-MS, thermal profiling) and has potential applications beyond gene deletion, including drug treatment effects, external stressors, and temporal trafficking studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C137-C138 are largely speculative about future applications. While the comparison to other methods (C137) is reasonable, the potential applications (C138) are not demonstrated in this work. These represent discussion points rather than established results.",
+    "result_type": "MINOR"
+  }
+]

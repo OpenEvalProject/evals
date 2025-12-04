@@ -1,0 +1,358 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "The E1371Q mutation in human CFTR introduces a non-native hydrogen bond between hQ1371 and hG576 that stabilizes the bursting state. This H-bond is present in the B1 state but not in the transition state, is maintained during flickery closures, and is unique to human CFTR compared to zebrafish CFTR and other ABCC proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C90 provide converging structural (cryo-EM), functional (macroscopic relaxations), and thermodynamic (mutant cycle analysis) evidence for the non-native H-bond. The structural data clearly shows the 3.0 \u00c5 distance in hCFTR-E1371Q (C59), the mutant cycle analysis demonstrates significant energetic coupling (\u0394\u0394Gint = 2.3 \u00b1 0.3 kT, p = 4.6 \u00d7 10\u207b\u2075) (C66-C68), and the comparison with zebrafish CFTR shows the species-specific nature of this interaction (C58, C61-C62, C90). The maintenance of the H-bond during flickery closures is supported by intraburst kinetic analysis (C70-C72, C87-C88).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "In zebrafish CFTR, NBD1 D-loop deletions (zT575\u0394 and zH576\u0394) destabilize the bursting state but show no significant energetic coupling with the zE1372Q/S mutations, indicating the absence of a gating state-dependent interaction analogous to that in human CFTR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C76 demonstrate that D-loop deletions in zCFTR shorten \u03c4b by 10-20 fold regardless of whether position 1372 contains glutamine or serine. The mutant cycle analyses show coupling energies not significantly different from zero (\u0394\u0394Gint = 0.34 \u00b1 0.22 kT, p = 0.17 for zT575\u0394; \u0394\u0394Gint = -0.60 \u00b1 0.28 kT, p = 0.073 for zH576\u0394) (C74, C76). This contrasts with the significant coupling observed in hCFTR and supports the structural observations that the analogous H-bond is absent in zebrafish.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C93",
+      "C94"
+    ],
+    "result": "The mutations K1250A, D1370N, E1371S, and E1371Q all completely abolish ATP hydrolysis in CFTR, as demonstrated by the lack of additive effects when combining these mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C81 and C93-C94 provide strong evidence through double mutant analysis. The key observation is that combining E1371S with either K1250A (p = 0.13) or D1370N (p = 0.09) does not significantly alter \u03c4b compared to the single mutants (C77, C80). This lack of additivity indicates that each single mutation already completely eliminates ATP hydrolysis. The logic is sound: if residual hydrolysis remained in any single mutant, combining mutations affecting different catalytic residues would further prolong bursts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C95",
+      "C96"
+    ],
+    "result": "The true non-hydrolytic closing rate (k\u208b\u2081) of wild-type CFTR is approximately 0.03 s\u207b\u00b9 at 25\u00b0C, as estimated from the burst durations of K1250A and E1371S mutants, which do not significantly alter B1-state stability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C96 are supported by the mutual lack of effect when combining K1250A and E1371S mutations (C77-C78), indicating neither mutation perturbs B1-state stability. Since both mutations completely abolish hydrolysis (C79, C94), their \u03c4b values provide unbiased estimates of the B1 state lifetime in WT CFTR. The experimental data showing similar \u03c4b values for both mutants (~30 s, yielding k\u208b\u2081 ~ 0.03 s\u207b\u00b9) supports this conclusion. This is a key quantitative result of the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C98",
+      "C99",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "The D1370N mutation destabilizes the B1 state by approximately 15-fold, accelerating the non-hydrolytic closing rate. This destabilization is explained by the loss of stabilizing interactions of the D1370 side chain with Mg\u00b2\u207a and S1251 that normally form during NBD subdomain closure in the B1 state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C99 demonstrate that D1370N shortens \u03c4b by ~14-15 fold in both E1371S and E1371Q backgrounds, indicating a large destabilizing effect on B1-state stability rather than residual ATPase activity. The structural analysis (C114-C115) shows that subdomain closure in the NBD-dimerized state reduces the D1370-Mg\u00b2\u207a distance from ~5.0 to 3.7 \u00c5 and the D1370-S1251 distance from ~4.1 to 3.0 \u00c5. The mechanistic explanation (C116) linking loss of these interactions to B1 destabilization is reasonable, though speculative. The experimental data strongly support the destabilization effect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C101",
+      "C102"
+    ],
+    "result": "The E1371Q mutation stabilizes the B1 state in all non-hydrolytic backgrounds tested, increasing \u03c4b by 5-16 fold depending on the background mutation, with the effect attributed to the non-native H-bond formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C83 and C101 provide experimental evidence that E1371Q increases \u03c4b by ~13-fold in E1371S background, ~16-fold in D1370N background, and ~5-fold in K1250A background. The smaller effect in K1250A is speculatively explained by a possible slight increase in the hG576-hQ1371 distance (C102), though this remains unverified structurally. The consistent stabilizing effect across multiple backgrounds strongly supports that E1371Q introduces a stabilizing interaction (the H-bond identified in Result 1).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "The coupling ratio (CR) for wild-type CFTR is approximately 0.99 at 25\u00b0C and 0.995 at 37\u00b0C, meaning only about 1 in 100 bursts is terminated by non-hydrolytic closure rather than ATP hydrolysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C118 calculates CR ~ 0.99 from the newly determined k\u208b\u2081 ~ 0.03 s\u207b\u00b9 and the established k\u2081 ~ 4 s\u207b\u00b9 at 25\u00b0C using the equation CR = k\u2081/(k\u2081 + k\u208b\u2081). Claims C120-C121 extrapolate to 37\u00b0C using published activation enthalpies, yielding CR ~ 0.995. The calculations are mathematically sound and based on the key experimental finding of k\u208b\u2081 ~ 0.03 s\u207b\u00b9. This quantifies the tight coupling between ATP hydrolysis and burst termination in WT CFTR.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "Site 2 separation remains the prevalent pathway for pore closure even in the absence of ATP hydrolysis, as demonstrated by the ability of the non-native H-bond to prolong bursts in non-hydrolytic mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C109 present a logical argument: if pore closure predominantly occurred through site 1 dissociation in non-hydrolytic mutants, then stabilizing site 2 with the E1371Q mutation would not prolong bursts. However, the observed 13-16 fold prolongation of \u03c4b when E1371Q is introduced into E1371S or D1370N backgrounds (C101) demonstrates that site 2 separation is rate-limiting for closure. This is an important mechanistic insight supported by the experimental data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "The non-native hQ1371-hG576 H-bond is maintained during flickery closures but disrupted during interburst closures, indicating that flickery closures involve local TMD movements without NBD dimer disruption, while interburst closures involve site 2 opening.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C125 is directly supported by the intraburst kinetic analysis showing no significant change in the H-bond strength between open and flickery closed states (C71-C72). The mechanistic interpretations (C126-C127) are reasonable inferences from this data combined with prior knowledge. Claims C128-C129 provide constraints on the extent of NBD separation during IB closures based on H-bond disruption and FRET data. The overall picture is well-supported by the experimental evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Background information on CFTR structure, function, and its role in cystic fibrosis, as well as general ABC protein architecture and the asymmetry of CFTR's two ATP-binding sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C28 provide established background knowledge about CFTR and ABC proteins, supported by appropriate citations. These claims establish the context for the study but do not represent novel findings. They are well-established facts in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Background on CFTR gating mechanism, conformational states, NBD dimerization, and the coupling between NBD and TMD movements during the gating cycle.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C43 describe established knowledge about CFTR gating mechanisms, supported by appropriate citations to prior work. These provide essential background for understanding the current study but represent prior knowledge rather than new findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Background on coupling ratios in ABC transporters, the challenge of measuring k\u208b\u2081 in WT CFTR, and the historical use of catalytic site mutants with widely varying burst durations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C56 establish the rationale for the study by describing the problem: the unknown true value of k\u208b\u2081 and the puzzling 200-fold range in burst durations of different catalytic site mutants. These claims are well-supported by citations and clearly motivate the research questions addressed in the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "E-to-Q mutations of the catalytic glutamate are widely used in structural studies of ABC proteins to trap prehydrolytic states, and cryo-EM structures confirm these mutants retain intact ATP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C86 describe established practice in ABC protein structural biology, supported by multiple citations. This provides important context for why the E1371Q mutant has been extensively used and why understanding its properties is important for interpreting structural data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C91",
+      "C92"
+    ],
+    "result": "Walker A and Walker B mutations in ABC proteins generally abolish ATP hydrolysis, though for hCFTR D1370N this has not been directly measured by ATPase assays.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C92 provide background on prior work with Walker mutants in other ABC proteins and identify a knowledge gap for hCFTR D1370N. This motivates the functional approach used in the current study to assess whether D1370N completely abolishes hydrolysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C97",
+      "C100"
+    ],
+    "result": "The E1371S mutation does not alter \u03c4b of D1370N CFTR, consistent with complete abolition of hydrolysis in D1370N, and the monotonically decaying burst duration distribution of D1370N reflects near-equilibrium gating.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97 and C100 provide additional supporting evidence for the complete abolition of hydrolysis in D1370N. The lack of effect of E1371S on D1370N \u03c4b (C97) is consistent with the double mutant analysis in Result 3. The citation to prior work on burst duration distributions (C100) provides independent support for the equilibrium gating interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Mutations at site 1 (K464A, H1348A) and P-ATP binding in site 1 affect non-hydrolytic burst duration, indicating that site 1 undergoes conformational changes during pore opening/closure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C106 cite prior work showing that site 1 also influences burst stability, supporting the broader context that both NBD sites undergo conformational changes during gating. This provides important background but represents prior findings rather than new results from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C112"
+    ],
+    "result": "The lack of effect of K1250A and E1371S mutations on k\u208b\u2081 is consistent with prior suggestions that inter-NBD contacts are already established in the transition state T\u2021.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C112 connects the current findings to prior work suggesting that site 2 contacts form early in the IB\u2192B transition. This is a reasonable interpretation that integrates the new data with existing models, though it remains somewhat speculative without direct structural evidence of the T\u2021 state.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C117",
+      "C122",
+      "C123"
+    ],
+    "result": "Prior estimates of coupling ratio and the effects of temperature and PKA on gating rates provide context for the current findings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117, C122-C123 cite prior work on coupling ratios and the effects of PKA on gating rates. These provide context for the improved estimate of CR in Result 7 but represent prior knowledge rather than new findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C124"
+    ],
+    "result": "A native H-bond between extracellular loops (R117-E1124) is present only in the open state and disrupted during both IB and flickery closures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C124 cites prior work on a different H-bond in CFTR that shows different gating state dependence than the non-native hQ1371-hG576 bond. This provides useful comparison but represents prior findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "The study is motivated by the unknown rate of non-hydrolytic closure and the puzzling 200-fold range in burst durations of catalytic site mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C7 clearly state the knowledge gaps and problems that motivate the study. These are well-supported by the cited literature showing the wide range of mutant burst durations. This establishes the rationale for the work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C130"
+    ],
+    "result": "Future structural work is needed to precisely determine the extent of NBD separation during interburst closures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C130 identifies a clear direction for future work. While the current study constrains the extent of NBD separation (large enough to disrupt H-bonds but too small for certain FRET sensors to detect), a structure of the IB state would provide definitive information. This is a reasonable suggestion for future research.",
+    "result_type": "MINOR"
+  }
+]

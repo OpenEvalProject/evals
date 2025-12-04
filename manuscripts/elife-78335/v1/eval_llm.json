@@ -1,0 +1,254 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "The manuscript establishes the historical and scientific context of metabolic scaling, noting that it has been studied for over 80 years across diverse organisms, but primarily through measurements of oxygen consumption and caloric intake, with gene expression and metabolic fluxes largely unexplored.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims accurately characterize prior work on metabolic scaling and are well-supported by extensive citations (C9, C10, C53-C58). The gap in knowledge regarding gene expression and metabolic fluxes (C15, C16) provides appropriate justification for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C23",
+      "C24",
+      "C25",
+      "C5",
+      "C19"
+    ],
+    "result": "Transcriptomic analysis of liver tissue from five species (mouse, rat, monkey, human, cattle) spanning a 30,000-fold range in body mass revealed that genes expressed inversely proportional to body size are predominantly metabolic genes involved in pyruvate, amino acid, and glucose metabolism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the finding is interesting, the analysis has critical limitations: only n=2 biological replicates per species (C17, C85), data from different public repositories with potential batch effects, and no validation that TMM normalization adequately controls for cross-species technical variation. The statistical significance (adjusted p<0.01) may not overcome these fundamental design limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C6",
+      "C28",
+      "C29",
+      "C30",
+      "C63"
+    ],
+    "result": "Genes that scale with body mass encode enzymes requiring oxygen, NAD+/NADH, or ATP/ADP for function, and include genes involved in detoxification of oxidative damage (ALDH7A1, GPX1, GLUL) and interorgan metabolic crosstalk (GPT1, ADIPOR1).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The functional categorization of scaled genes (C26, C27) is well-supported by the data in Figure 2, and the interpretation regarding energy-consuming processes and oxidative damage control is reasonable. The identification of interorgan crosstalk genes (C28-C30) provides mechanistic insight consistent with the later finding that scaling is absent in isolated cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "qPCR validation confirmed that metabolic genes (Glul, Lipe, Dlst) scale relative to the housekeeping gene Actb, while structural genes (Mmp3, Larp6) do not, indicating that scaling is specific to metabolic genes rather than reflecting global changes in RNA levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The qPCR validation (C31, C32) provides important confirmation that the transcriptomic findings are not artifacts of global RNA changes. The use of both metabolic and structural genes as positive and negative controls strengthens this conclusion (C33). However, validation of only 3 metabolic genes out of 20 identified is limited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C20"
+    ],
+    "result": "Proteomics analysis revealed that three proteins (GLUL, GPX1, MDH1) out of eight tested showed inverse correlation with body size, with GLUL also scaling in heart tissue, and approximately half of genes that scaled at the mRNA level also scaled at the protein level.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The proteomics data (C34, C35) are severely limited by having only n=1 per species, making statistical analysis impossible. While the finding that ~50% of mRNA-scaled genes also scale at the protein level (C20) is interesting, it cannot be rigorously evaluated without replicates. This represents a major limitation acknowledged by the authors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C36",
+      "C37"
+    ],
+    "result": "Liver transaminase concentrations (ALT and AST) and enzyme activities (peroxidase and pyruvate carboxylase) were 30-40% lower in rats compared to mice, consistent with scaling at the protein expression and enzyme activity levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The transaminase measurements (C36, n=5 per species) and enzyme activity assays (C37, n=5 per species) provide independent validation of scaling at the protein and functional levels. The statistical significance and adequate sample sizes support these findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C22",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "In vitro studies of isolated hepatocytes showed no significant differences in metabolic fluxes (glucose production, VPC, VCS, lipolysis) or oxygen consumption between mice and rats, consistent with prior literature showing that metabolic scaling disappears in cell-autonomous settings after ~24 hours in culture.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The in vitro findings (C38, C39) are well-controlled with adequate sample sizes (n=6 biological replicates) and are consistent with prior literature (C40-C42). The validation of PINTA assumptions (steady-state enrichment, linear glucose production) strengthens confidence in the flux measurements. This result is critical for establishing that scaling requires tissue/organismal context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C68"
+    ],
+    "result": "Ex vivo liver slice studies showed threefold higher glucose production per gram tissue in mice compared to rats, suggesting that hepatocyte-extrinsic signals from other liver cell types are involved in metabolic scaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the finding is statistically significant (C43), the sample size is very small (n=4 mice, n=2 rats), below the calculated requirement for adequate power. The interpretation that hepatocyte-extrinsic signals are involved (C44) is reasonable but speculative, as the experiment doesn't directly test this mechanism. Alternative explanations (e.g., differences in slice viability, oxygenation) are not excluded.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C7",
+      "C21"
+    ],
+    "result": "In vivo metabolic flux analysis using stable isotope tracers revealed that mice exhibit 2-3 fold higher rates of glucose production, gluconeogenesis (VPC), mitochondrial oxidation (VCS), and lipolysis compared to rats, demonstrating that metabolic scaling extends to multiple metabolic pathways and tissues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The in vivo flux measurements (C45-C48) are well-powered (n=4-6 per group), use validated methodology (PINTA), and include appropriate validation of tracer assumptions (steady-state enrichment, minimal glycogen). The finding that scaling occurs across multiple pathways and tissues (liver and adipose) strengthens the conclusion. Statistical significance is clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C49"
+    ],
+    "result": "No sex differences were observed in any of the measured metabolic fluxes between male and female mice and rats.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The analysis of sex differences (C49, n=6 per group) is appropriately powered and shows no significant differences, suggesting that metabolic scaling is independent of sex in these species. This is an important control that strengthens the generalizability of the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C67"
+    ],
+    "result": "Clustering analysis objectively demonstrated that in vitro metabolic flux data showed no species-specific clustering, while in vivo data led to distinct clustering of mice and rats, emphasizing that in vitro measurements fail to capture metabolic scaling present in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The clustering analysis (C51, C52) provides an objective, data-driven confirmation of the qualitative differences between in vitro and in vivo findings. This strengthens the conclusion that in vitro methods are inadequate for studying metabolic scaling (C67). The approach is appropriate and the interpretation is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C60",
+      "C61"
+    ],
+    "result": "The observed metabolic differences between mice and rats did not necessarily adhere quantitatively to the classic 3/4 power law of metabolic scaling, suggesting that the scaling relationship may be multidimensional with different metabolic processes exhibiting different scaling exponents.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is an important caveat (C60) that acknowledges the study's limitations. The interpretation that scaling may be multidimensional (C61) is reasonable and appropriately speculative. The authors correctly note that their study examined only a 10-fold range in body size (mouse to rat), which limits conclusions about the scaling exponent.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Metabolic scaling cannot be fully explained at the transcriptional level, as many rate-limiting enzymes did not scale at the mRNA level and only ~50% of mRNA-scaled genes scaled at the protein level, suggesting that both transcriptional and post-transcriptional mechanisms (e.g., enzyme activity) regulate metabolic flux scaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This interpretation (C64, C65) appropriately integrates the transcriptomic, proteomic, and flux data to conclude that multiple regulatory levels contribute to metabolic scaling. The acknowledgment of limitations regarding enzyme isoforms (C66) is appropriate. This represents a nuanced understanding of the complexity of metabolic regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C69",
+      "C70"
+    ],
+    "result": "The study has important limitations: the data cannot determine whether oxygen consumption drives metabolic changes or vice versa, and metabolic flux studies were performed only in mice and rats, the two most closely related species in the transcriptomics analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are important and appropriately acknowledged limitations (C69, C70). The inability to establish causality between oxygen consumption and metabolic alterations is a fundamental constraint of the observational approach. The limitation to rodents for flux studies is significant, though the authors reasonably argue that the scaling relationship likely extends beyond this range based on prior literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C73",
+      "C8",
+      "C76"
+    ],
+    "result": "The phenomenon of metabolic scaling extends beyond oxygen consumption to gene expression, protein expression, enzyme activity, and cytosolic and mitochondrial fluxes in vivo, and is regulated by cell-extrinsic factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is the central conclusion of the manuscript (C73, C8) and is well-supported by the convergent evidence from multiple experimental approaches. The conclusion that cell-extrinsic factors are involved (C76) is supported by the contrast between in vitro (no scaling) and ex vivo/in vivo (scaling present) findings, though the specific mechanisms remain to be elucidated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "The authors speculate on potential implications of metabolic scaling for hibernation, cancer biology (Peto's paradox), aging, and the use of murine disease models, and suggest that genetic manipulation of enzyme activity might abolish metabolic scaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These are appropriately labeled as speculative ideas (C74, C77, C79, C81, C82) that extend beyond the data. While interesting hypotheses, they lack direct experimental support in this study. The discussion of Peto's paradox (C78, C79) is particularly speculative, as the manuscript provides no cancer-related data. These represent future directions rather than supported conclusions.",
+    "result_type": "MINOR"
+  }
+]

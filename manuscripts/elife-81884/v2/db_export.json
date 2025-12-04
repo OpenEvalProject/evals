@@ -1,0 +1,2425 @@
+{
+  "submission": {
+    "id": "de7ed8c2-2df0-4928-b6c7-d0909f8dde94",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-04T04:25:06.167461Z",
+    "updated_at": "2025-12-04T04:25:06.167461Z"
+  },
+  "content": [
+    {
+      "id": "f47082c0-ec24-48a8-8015-14dbeedb6588",
+      "submission_id": "de7ed8c2-2df0-4928-b6c7-d0909f8dde94",
+      "content_type": "manuscript",
+      "content_text": "# Establishment of transgenic fluorescent mice for labeling synapses and screening synaptogenic adhesion molecules\n\n## Authors\n\n- Lei Yang<sup>1</sup> ([ORCID: 0000-0002-2882-5560](https://orcid.org/0000-0002-2882-5560))\n- Jingtao Zhang<sup>1</sup>\n- Sen Liu<sup>1</sup>\n- Yanning Zhang<sup>1</sup>\n- Li Wang<sup>1</sup>\n- Xiaotong Wang<sup>1</sup>\n- Shanshan Wang<sup>2</sup>\n- Ke Li<sup>1</sup>\n- Mengping Wei<sup>1</sup> \u2020\n- Chen Zhang<sup>1</sup> ([ORCID: 0000-0002-7940-8054](https://orcid.org/0000-0002-7940-8054)) \u2020\n\n### Affiliations\n\n1. School of Basic Medical Sciences, Beijing Key Laboratory of Neural Regeneration and Repair, Advanced Innovation Center for Human Brain Protection, Capital Medical University Beijing China ([ROR:013xs5b60](https://ror.org/013xs5b60))\n2. Peking-Tsinghua Center for Life Sciences, Academy for Advanced Interdisciplinary Studies, Peking University Beijing China ([ROR:02v51f717](https://ror.org/02v51f717))\n3. Chinese Institute for Brain Research Beijing China ([ROR:029819q61](https://ror.org/029819q61))\n\n\u2020 Corresponding author\n\n## Abstract\n\nSynapse is the fundamental structure for neurons to transmit information between cells. The proper synapse formation is crucial for developing neural circuits and cognitive functions of the brain. The aberrant synapse formation has been proved to cause many neurological disorders, including autism spectrum disorders and intellectual disability. Synaptic cell adhesion molecules (CAMs) are thought to play a major role in achieving mechanistic cell-cell recognition and initiating synapse formation via trans-synaptic interactions. Due to the diversity of synapses in different brain areas, circuits and neurons, although many synaptic CAMs, such as Neurexins (NRXNs), Neuroligins (NLGNs), Synaptic cell adhesion molecules (SynCAMs), Leucine-rich-repeat transmembrane neuronal proteins (LRRTMs), and SLIT and NTRK-like protein (SLITRKs) have been identified as synaptogenic molecules, how these molecules determine specific synapse formation and whether other molecules driving synapse formation remain undiscovered are unclear. Here, to provide a tool for synapse labeling and synaptic CAMs screening by artificial synapse formation (ASF) assay, we generated synaptotagmin-1-tdTomato (Syt1-tdTomato) transgenic mice by inserting the tdTomato-fused synaptotagmin-1 coding sequence into the genome of C57BL/6J mice. In the brain of Syt1-tdTomato transgenic mice, the tdTomato-fused synaptotagmin-1 (SYT1-tdTomato) signals were widely observed in different areas and overlapped with synapsin-1, a widely-used synaptic marker. In the olfactory bulb, the SYT1-tdTomato signals are highly enriched in the glomerulus. In the cultured hippocampal neurons, the SYT1-tdTomato signals showed colocalization with several synaptic markers. Compared to the wild-type (WT) mouse neurons, cultured hippocampal neurons from Syt1-tdTomato transgenic mice presented normal synaptic neurotransmission. In ASF assays, neurons from Syt1-tdTomato transgenic mice could form synaptic connections with HEK293T cells expressing NLGN2, LRRTM2, and SLITRK2 without immunostaining. Therefore, our work suggested that the Syt1-tdTomato transgenic mice with the ability to label synapses by tdTomato, and it will be a convenient tool for screening synaptogenic molecules.\n\n## Introduction\n\nSynapses, consisting of the presynaptic membrane, the synaptic cleft, and the postsynaptic membrane, are the intercellular connections that rapidly transmit information from presynaptic neurons to postsynaptic cells in a point-to-point manner (S\u00fcdhof, 2018). Synapse formation is an essential stage in brain development that begins during embryonic/postnatal development, and lasts throughout life (Biederer and Stagi, 2008). The proper formation of synapses is crucial for neural circuits\u2019 formation and cognitive function development, and abnormal synapse formation can cause many neurological disorders, including autism spectrum disorders (ASD) and mental retardation (Boda et al., 2010; McAllister, 2007; S\u00fcdhof, 2008; Zhang et al., 2009).\n\nSynaptic CAMs are molecules that act as a key role in initiating synapse formation through trans-synaptic interactions, and were originally proposed to enable mechanistic cell-cell recognition (Bukalo and Dityatev, 2012; Sanes and Yamagata, 2009; Yang et al., 2014). A variety of CAMs have been shown to initiate synapse formation, anchor and organize the precise alignment of the pre- and postsynaptic sides of a synapse, and enable enhanced short- and long-term synaptic plasticity of synaptic transmission (S\u00fcdhof, 2018; Scheiffele et al., 2000; Graf et al., 2004; Linhoff et al., 2009; de Wit et al., 2009; Ko et al., 2009; Kim et al., 2006; Woo et al., 2009; Wang et al., 2021; Takahashi et al., 2011; Sando et al., 2019; Pettem et al., 2013; Yim et al., 2013; Biederer et al., 2002). However, the synapses show diversities in types of neurotransmitter, release probability, and composition of postsynaptic receptors in different brain areas, and are organized by specific CAMs (Takahashi et al., 2011; S\u00fcdhof, 2021; Tanabe et al., 2017; Takahashi et al., 2012). Deletion of some CAMs only affects the pre- or post-synaptic organization rather than affects synapse numbers (Linhoff et al., 2009; Varoqueaux et al., 2006). In other cases, deletion of specific CAMs only induces the loss of synapse number in specific type of neurons or brain areas (Zhang et al., 2018; Chen et al., 2017). Therefore, how the CAMs determine specific synapse formation still needs to be elucidated and it cannot be excluded that some other CAMs driving synapse formation remain undiscovered.\n\nUp to now, a large-scale screen for synaptogenic CAMs remains difficult to implement. A study identifies gene transcripts encoding proteins expressed by postsynaptic neurons that potentially initiate the synaptic contacts\u2019 formation by performing a genome-wide, expression analysis of chick ciliary ganglion at the different stages of synapse formation (Brus\u00e9s, 2010). This screening method is comparatively complex and does not allow for direct observation of synapse formation. Another method for screening CAMs is the artificial synapse formation (ASF) assay (Scheiffele et al., 2000). It works by co-culturing non-neuronal cells, such as HEK293T cells, which are overexpressed by certain genes, with neurons. It can be observed that the generated synapses wrap around non-neuronal cells when the gene overexpressed has the synaptogenesis function. Many synaptogenic CAMs have been found to accumulate synapses around the non-neuronal cells in ASF experiments, including Neurexins (NRXNs), Neuroligins (NLGNs), Synaptic cell adhesion molecules (SynCAMs), Leucine-rich-repeat transmembrane neuronal proteins (LRRTMs), Latrophilins, Protein tyrosine phosphatase receptor type O (PTPRO), and others (Scheiffele et al., 2000; Graf et al., 2004; Linhoff et al., 2009; Biederer et al., 2002; Jiang et al., 2017b; Sando et al., 2019; Nam and Chen, 2005), which indicate that ASF assay is suitable for identifying new synaptogenic CAMs. However, ASF assay still requires a lot of time for immunohistochemically staining, making it difficult to perform large-scale screening.\n\nSynaptotagmin-1 (SYT1), a fast calcium sensor on synaptic vesicles (Kochubey et al., 2016; Xu et al., 2007), begins to be strongly expressed on embryonic day 18 and continues to increase until reaching stable levels in adulthood (postnatal day 60) in many brain regions (Wolfes and Dean, 2020). SYT1 is the most abundant synaptotagmin in synaptic vesicles (Fukuda, 2006). In the hippocampus, SYT1 is abundant in the stratum oriens, stratum radiatum, and stratum lacunosum molecular (Fox and Sanes, 2007). In this study, we fused tdTomato (tdTomato) to the end of the SYT1 protein, and used the PiggyBac transposon vector system to insert the synaptotagmin1-tdTomato (Syt1-tdTomato) gene into C57BL/6 J mice allete. The tdTomato signals were widely observed in the brain of Syt1-tdTomato transgenic mice, and colocalized with synaptic markers. We also observed the enrichment of SYT1-tdTomato in the glomerulus of the olfactory bulb. The transgenic mice can also be used for ASF experiments in order to visualize synapses by fluorescence microscopy without immunostaining. Therefore, the Syt1-tdTomato transgenic mice will be a valuable tool for large-scale screening of CAMs.\n\n## Results\n\n### Syt1-tdTomato transgenic mice express widely distributed fluorescent signals in synapse-rich regions of the brain\n\nWe used fertilized eggs microinjection with PiggyBac vectors carrying Syt1-tdTomato to generate a transgenic mouse line (C57BL/6 J background) with insertions of tdTomato-fused Syt1 into a mouse allele (Figure 1A). In the PiggyBac vector, there were two PiggyBac ITRs on either side of the Human ubiquitin C (UBC) promoter-Kozak-Syt1-tdTomato-polyA in order to facilitate transposon-mediated transgene integration. To verify the successful construction of a Syt1-tdTomato expression vector, we digested the targeting vectors with restriction enzymes (Figure 1A and B). According to the schematic diagram of the linearized expression vector, the fragment sizes we obtained after enzyme digestion of the expression vectors should be AvaI: 4.7/1.7/0.7/0.5 kb (Figure 1B, left); AflII/NcoI: 4.0/1.3/1.1/0.7/0.4/0.2 kb (Figure 1B, middle); NotI: 7.6 kb (Figure 1B, right), which was consistent with our design. After a successful construction, the Syt1-tdTomato expression vector was co-injected with transposed into fertilized eggs from C57BL/6 J mice. The offspring that carry the desired PiggyBac transgene were identified and selected by polymerase chain reaction (PCR).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/81884/elife-81884-fig1-v2.jpg)\n\n**Figure 1.:** (A) Schematic diagram of expression vector for generating Syt1-tdTomato transgenic mice. (B) The expression vector was digested by restriction enzymes for confirmation purposes. The size of enzyme digestion band (kb): (left) AvaI: 4.7/1.7/0.7/0.5; (middle) AflII/NcoI: 4.0/1.3/1.1/0.7/0.4/0.2; (right) NotI: 7.6. (C) Immunoblot analysis of protein in transgenic and wild-type mice brain. Equivalent amounts of protein were probed with antibodies to tdTomato and vasolin-containing protein (VCP, used as a loading control). (D) Immunoblot analysis of the expression of the transgenic protein in different tissues of Syt1-tdTomato transgenic mice. Equivalent amounts of protein were examined by immunoblotting with antibodies to tdTomato, SYT1, and VCP. Asterisk shows the band of SYT1-tdTomato and the hash shows the band of native SYT1.\n\nTo verify the expression of Syt1-tdTomato in the transgenic mice, we analyzed the expression of the Syt1-tdTomato in the brains of transgenic mice by immunoblotting. Immunoblotting using antibodies against tdTomato detected bands in the whole brain homogenate of Syt1-tdTomato transgenic mice at 8 weeks postnatal, but not in control mice (Figure 1C). We next probed the tissue specificity of transgene expression (Figure 1D). Among the tissues examined, tdTomato was detectable in the cortex, hippocampus, cerebellum, and olfactory bulb of the Syt1-tdTomato transgenic mice brain, and faint bands were present in the heart homogenate at the same size position. To assess the over-expression level of SYT1-tdTomato, we immunoblot the SYT1-tdTomato and native SYT1 using antibody against SYT1. We found that the expression level of SYT1-tdTomato is far less than the native SYT1 in the brain of transgenic mice (Figure 1D), suggesting less effect of overexpressed SYT1-tdTomato on native SYT1\u2019s function.\n\nTo identify the distribution of SYT1-tdTomato signals in the brain of transgenic mice, we made frozen brain slices from 8-week-old Syt1-tdTomato transgenic mice and WT mice, and the brain slices were stained with DAPI to visualize the cell nucleus. We observed that SYT1-tdTomato was widely expressed in the hippocampus, cortex, cerebellum, and olfactory bulb in transgenic mice, but not in WT mice (Figure 2A). In the hippocampus of transgenic mice, the signals of SYT1-tdTomato were relatively bright in the stratum oriens and stratum radiatum of CA1-CA3 and stratum lucidum of CA3, while the signals were absent in the stratum pyramidale (Figure 2B). In the cerebellum, the signals were stronger in the molecular layer compared with the granular layer (Figure 2C). In the olfactory bulb, the SYT1-tdTomato showed bright signals in the glomerular layer (Figure 2D). Thus, our results suggested a wide distribution of SYT1-tdTomato in different brain areas, especially synapse-rich regions.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/81884/elife-81884-fig2-v2.jpg)\n\n**Figure 2.:** (A) Representative fluorescence images of the sagittal plane of the brains in Syt1-tdTomato transgenic mice and wild-type (WT) mice (8 weeks). The SYT1-tdTomato signals were shown in channel tdTomato (red). All nuclei were stained with DAPI (cyan). (B\u2013D) Representative fluorescent images in different brain areas were obtained from the Syt1-tdTomato transgenic mice and WT mice (8 weeks). (B) Hippocampus and cortex; (C) cerebellum; (D) olfactory bulb.\n\n### SYT1-tdTomato signals colocalize with synaptic markers in situ and in cultured neurons\n\nTo observe whether the signals of SYT1-tdTomato localized well to the synaptic site, we performed immunostaining of synaptic markers in brain slices and cultured hippocampal neurons from Syt1-tdTomato transgenic mice. The signals of SYT1-tdTomato showed the same distribution as signals of synapsin-1 (SYN1), a widely-used synaptic marker, in hippocampus and cerebellum (Figure 3A). In the granular layer of the cerebellum and the glomerular layer of the olfactory bulb, the signals of SYT1-tdTomato were highly overlapped with signals of synapsin (Figure 3B). In addition, we quantified the intensity of SYT1-tdTomato signals in the olfactory bulb and found that the signals of SYT1-tdTomato were much higher in glomerular layer than that in the external plexiform layer (Figure 3C), suggesting an enrichment of SYT1-tdTomato in the glomerular layer of the olfactory bulb. These results suggest that SYT1-tdTomato could label synapse in situ in the brain, especially in the glomerular layer of the olfactory bulb.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/81884/elife-81884-fig3-v2.jpg)\n\n**Figure 3.:** (A) The images of SYT1-tdTomato (tdTomato) signals and synapsin1 (SYN1) signals in hippocampus and cerebellum. (B) Magnified images of SYT1-tdTomato and SYN1 in granular layer of cerebellum and the glomerular layer of olfactory bulb. The fluorescence intensity profiles of dash lines in zoomed images are plotted on the right. (C) The represent images (left) and mean intensity (right) of SYT1-tdTomato and SYN1 in glomerular layer (GL) and external plexiform layer (EPL) of olfactory bulb. All summary graphs show the mean \u00b1 standard error of the mean (SEM); statistical analysis was made by t-test (n=17 images in each group, ***p<0.001).\n\nIn the cultured neurons, we could also observe strong tdTomato fluorescence which co-localized with the staining of SYN1 (Figure 4A). Furthermore, we performed the immunostaining of pre- and post-synaptic markers, including Vesicular glutamate transporter 1 (VGLUT1), Glutamic acid decarboxylase 65 (GAD65), Postsynaptic density protein 95 (PSD95), Homer protein homolog 1 (Homer-1), and Gephyrin. Our results showed that the SYT1-tdTomato signals co-localized well with these synaptic markers (Figure 4B). The co-localization rates were identified as percentage of signal A colocalized with signal B in total signal A (A-B): SYN1-tdTomato: 70.55 \u00b1 1.447%; tdTomato-SYN1: 48.55 \u00b1 1.851%; VGLUT1-tdTomato: 61.09 \u00b1 1.517%; tdTomato-VGLUT1: 52.88 \u00b1 1.456%; GAD65-tdTomato: 52.08 \u00b1 2.442%; tdTomato-GAD65: 44.43 \u00b1 2.096%; PSD95-tdTomato: 68.50 \u00b1 2.397%; tdTomato-PSD95: 62.38 \u00b1 2.433%; Homer-1-tdTomato: 61.00 \u00b1 2.127%; tdTomato-Homer-1: 62.13 \u00b1 1.703%; Gephyrin-tdTomato: 48.87 \u00b1 2.466%; tdTomato-Gephyrin: 39.36 \u00b1 1.665% (Figure 4C). These results indicate that SYT1-tdTomato signals localize well to the synaptic site in the neurons from transgenic mice.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/81884/elife-81884-fig4-v2.jpg)\n\n**Figure 4.:** (A\u2013B) Representative images of hippocampal neurons from Syt1-tdTomato transgenic mice stained with antibodies against SYN1, VGLUT1, GAD65, PSD95, Homer-1, and Gephyrin at DIV 14. (C) Summary graphs of co-labeling rate of SYT1-tdTomato with SYN1, VGLUT1, GAD65, PSD95, Homer-1, and Gephyrin (SYN1: n=98/3, VGLUT1: n=90/3, GAD65: n=71/3, PSD95: n=61/3, Homer-1: n=81/3, Gephyrin: n=69/3). All summary graphs show the mean \u00b1 standard error of the mean (SEM).\n\n### Neurons from Syt1-tdTomato transgenic mice show normal excitability and synaptic transmission\n\nTo further explore whether the insertion of Syt1-tdTomato affects the electrophysiological properties and synaptic neurotransmission of neurons in transgenic mice, we performed patch-clamp recordings on the cultured hippocampal neurons from Syt1-tdTomato transgenic mice and WT mice. We recorded the action potentials in these neurons and found that the amplitude, frequency, and half-width of spontaneous action potentials in the neurons of Syt1-tdTomato transgenic mice are not significantly different with the WT mice (Amplitude: WT: 84.32 \u00b1 2.930 pA, TG: 78.99 \u00b1 3.325 pA; Frequency: WT: 0.4843 \u00b1 0.1379 Hz, TG: 0.5424 \u00b1 0.1391 Hz; Half width: WT: 2.178 \u00b1 0.2616 ms, TG: 2.301 \u00b1 0.2123 ms) (Figure 5A\u2013C). These results demonstrate that insertion Syt1-tdTomato does not affect the excitability of neurons in transgenic mice.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/81884/elife-81884-fig5-v2.jpg)\n\n**Figure 5.:** (A\u2013C) The spontaneous action potentials were recorded in hippocampal neurons of wild-type (WT) mice and Syt1-tdTomato transgenic mice (TG) at DIV 13\u201315. (A) Representative traces of action potential; (B) representative traces of single action potential; (C) summary graphs of the amplitude (left), frequency (center), and half widths (right). (WT: n=43/3; TG: n=45/3, amplitude: p=0.235, frequency: p=0.768, half widths: p=0.716). (D\u2013F) The mEPSCs were recorded in hippocampal neurons of WT mice and Syt1-tdTomato transgenic mice in 1 \u03bcM tetrodotoxin (TTX) and 0.1 mM picrotoxin (PTX) at DIV 13\u201315. (D) Representative traces of mEPSCs; (E) representative traces of normalized traces of mEPSCs; (F) summary graphs of the frequency (left), amplitude (center left) of mEPSCs and the rising slope (center right), decay \u03c4 (right) of normalized traces of mEPSCs. (WT: n=21/3; TG: n=26/3, amplitude: p=0.837, frequency: p=0.842, rising slope: p=0.681, decay \u03c4: p=0.894). (G\u2013I) The mIPSCs recordings in hippocampal neurons of WT mice and Syt1-tdTomato transgenic mice in 1 \u03bcM TTX and 10 \u03bcM CNQX at DIV 13\u201315. (G) Representative traces of mIPSCs; (H) representative traces of normalized traces of mIPSCs; (I) summary graphs of the frequency (left), amplitude (center left) of mIPSCs and the rising slope (center right), decay \u03c4 (right) of normalized traces of mIPSCs. (WT: n=59/4; TG: n=59/4, amplitude: p=0.102, frequency: p=0.578, rising slope: p=0.355, decay \u03c4: p=0.654). All summary graphs show the mean \u00b1 standard error of the mean (SEM); statistical comparisons were made by a two-tailed unpaired t-test (n.s, not significant).\n\nWe also examined the excitatory and inhibitory synaptic transmission mediated by AMPA receptors (AMPARs) or GABA receptors (GABARs) by recording the miniature excitatory postsynaptic currents (mEPSCs) and miniature inhibitory postsynaptic currents (mIPSCs). Our results show that both the amplitude and the frequency of mEPSCs and mIPSCs of the Syt1-tdTomato transgenic mice neurons are similar to the WT mice (mEPSCs: Amplitude: WT: 21.97 \u00b1 1.949 pA, TG: 22.50 \u00b1 1.670 pA; Frequency: WT: 0.2078 \u00b1 0.06898 Hz, TG: 0.2255 \u00b1 0.05640 Hz; mIPSCs: Amplitude: WT: 28.83 \u00b1 7.330 pA, TG: 31.48 \u00b1 9.982 pA; Frequency: WT: 0.2942 \u00b1 0.02385 Hz, TG: 0.2728 \u00b1 0.03020 Hz) (Figure 5D\u2013F and G\u2013I). An analysis of the rising slope and decay time course of the mEPSCs and mIPSCs (Figure 5F and I) shows no significant differences between Syt1-tdTomato transgenic mice and WT mice, indicating that the expression of SYT1-tdTomato did not influence the kinetics of mEPSCs and mIPSCs. Thus, our results demonstrate that the insertion of Syt1-tdTomato does not affect basal synaptic transmission.\n\n### Neurons from Syt1- tdTomato transgenic mice can be used for screening CAMs in an artificial synapse formation assay\n\nTo test whether Syt1-tdTomato transgenic mice could be used for screening CAMs in an artificial synapse formation assay, we performed a co-culture assay between neurons from Syt1-tdTomato transgenic mice and HEK293T cells transfected with Neuroligin 2 and green fluorescent protein (GFP). NLGN2 promotes synapse formation in ASF assays which can be used as a positive control (Scheiffele et al., 2000; Sando et al., 2019). After being co-cultured for 36\u201348 hr, the cells were stained and observed using confocal microscopy. We observed a strong accumulation of tdTomato signals around the transfected HEK293T cells (indicated by GFP). Additionally, the accumulated signals overlapped highly with the staining signals of SYN1 (Figure 6A).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/81884/elife-81884-fig6-v2.jpg)\n\n**Figure 6.:** (A) Representative fluorescent images of co-cultured neurons from Syt1-tdTomato transgenic mice with HEK293T cells transfected with plasmid encoding NLGN2 and GFP, which are also stained with synapsin antibody. (B) Representative fluorescent images of co-cultured neurons from Syt1-tdTomato transgenic mice with HEK293T cells transfected with plasmid encoding NLGN2, LRRTM2, SLITRK2, and GFP. (C) Summary graphs of the percentage of synapse-positive HEK293T cells from the panel B. (SYN1: Control: n=54 cells out of 854 cells/3 cultures; NLGN2: n=1417 cells out of 1599 cells/3 cultures; LRRTM2: n=692 cells out of 1259 cells/3 cultures; SLITRK2: n=374 cells out of 1032 cells/3 cultures. tdTomato: Control: n=148 cells out of 854 cells/3 cultures; NLGN2: n=1411 cells out of 1599 cells/3 cultures; LRRTM2: n=740 cells out of 1259 cells/3 cultures; SLITRK2: n=486 cells out of 1032 cells/3 cultures). All summary graphs show the mean \u00b1 standard error of the mean (SEM); statistical analysis was made by one-way ANOVA (***p<0.001).\n\nTo further confirm that neurons from Syt1-tdTomato transgenic mice can be used in ASF assays to screen synaptogenic molecules, we also tested other synaptogenic CAMs in ASF assays using neurons of Syt1-tdTomato transgenic mice. Our results showed that NLGN2, LRRTM2, and SLITRK2 enabled the formation of synaptic connections between transfected HEK293T cells and neurons from Syt1-tdTomato transgenic mice. We compared the percentage of synapse-positive HEK293T cells calculated by either tdTomato\u2019s signals or the stained synapsin signals as previously reported (Jiang et al., 2017b), and found that both signals had the ability to label the synapse accumulated around the HEK293T cells (SYN1: Control: 6.802 \u00b1 1.329%, NLGN2: 88.65 \u00b1 1.077%, LRRTM2: 56.69 \u00b1 2.234%, SLITRK2: 37.82 \u00b1 2.216%; tdTomato: Control: 15.70 \u00b1 1.949%, NLGN2: 88.94 \u00b1 0.9419%, LRRTM2: 60.48 \u00b1 2.186%, SLITRK2: 48.47 \u00b1 2.469%) (Figure 6B and C). According to the above results, we thought that neurons from Syt1-tdTomato transgenic mice are suitable for screening CAMs in an ASF assay.\n\n## Discussion\n\nIn our study, we generated transgenic mice by expressing fluorescent proteins to label synapses and skip the immunofluorescence staining step during synaptogenic adhesion molecules screening. We chose SYT1 as a media to transport tdTomato to the synapse by fusing tdTomato to the C-tail of SYT1. We identified the synaptic localization of SYT1-tdTomato and found that overexpression of SYT1-tdTomato has no effect on synaptic transmission in the transgenic mice and neurons. We demonstrated the availability of neurons from Syt1-tdTomato transgenic mice for ASF assay, which is useful for synaptogenic adhesion molecule screening.\n\nWe designed the SYT1-tdTomato expression vector and injected it into the fertilized eggs of C57BL/6 J mice in order to insert the Syt1-tdTomato gene into the genome of C57BL/6 J mice to create transgenic fluorescent mice. Due to random insertion, we do not know the actual insertion site and its number. However, according to the immunoblotting of tissue homogenizations, SYT1-tdTomato was detected in the hippocampus, cortex, cerebellum, and olfactory bulb of Syt1-tdTomato transgenic mice (Figure 1D). There was little SYT1-tdTomato expressed in other tissues although we use UBC promoter to drive SYT1-tdTomato expression. There might be a possible explanation: The gene of Syt1-tdTomato is inserted into the genome position where the brain-specific enhancer is located or neuron-specific topological chromatin domain (Jiang et al., 2017a; Court et al., 2014). The microscopic imaging of frozen sections of Syt1-tdTomato transgenic mice brain also show that SYT1-tdTomato signals were observed in the hippocampus, cortex, cerebellum, and olfactory bulb (Figure 2B, C and D), and the areas of strong signals were in keeping with previous studies on the distribution of SYT1 in the brain (Fox and Sanes, 2007; Berton et al., 1997). The co-labeling of SYN1 with SYT1-tdTomato signals in the brain slices (Figure 3A and B) further confirmed that the fluorescence of SYT1-tdTomato is well localized to synapses in situ. Although SYT1 is thought to be located at the presynaptic site as a fast calcium sensor on synaptic vesicles, it was also reported to show postsynaptic dendritic distribution (Hussain et al., 2017), which can explain that SYT1-tdTomato signals do not completely label synaptic sites in cultured neurons (Figure 4C).\n\nOverexpression of synaptic proteins were reported to affect the synaptic function. For instance, overexpression of synaptic vesicle protein synapsin caused the decrease in basal transmission and an increase in homosynaptic depression (Fioravante et al., 2007). Overexpression of post-synaptic scaffolding protein SAP97 caused the modifications of spine and synapse morphology (Poglia et al., 2011). Overexpression of synaptic CAM neuroligins caused the change in excitatory and inhibitory synapse properties (Chanda et al., 2017). The C-terminal ECFP Fusion was reported to impair SYT1 function (Han et al., 2005). The overexpression of C-terminal fused SYT1 might affect the presynaptic neurotransmitter release. It might further affect the synapse organization as the presynaptic neurotransmitter release can signal the organization of the synapse (Burlingham et al., 2022). We found that the electrophysiological properties of Syt1-tdTomato transgenic mice neurons were not significantly different from WT mice neurons (Figure 5), which might be due to that the expression levels of SYT1-tdTomato in the brain of transgenic mice were far less than the native SYT1 (Figure 1D). This provides us with better conditions for synaptogenic adhesion molecules screening with fewer effects on synaptic transmission. This also offers the possibility for Syt1-tdTomato transgenic mice to be used for labeling synapses to facilitate the study of electrophysiological recording and imaging in vivo.\n\nSeveral fluorescently tagged synaptic protein transgenic mice model, such as YFP tagged synaptophysin and pHluorin tagged synaptobrevin have been developed to label synapses (Umemori et al., 2004; Li et al., 2005). While these models can label synapse well, it lacks the functional analysis of neurotransmitter release in the overexpressed neurons as synaptophysin and synaptobrevin were reported to play a role in regulating neurotransmitter release. Considering the overexpression of synaptobrevin or synaptophysin were reported to promote neurite elongation or enhance neurotransmitter secretion, the synaptic organization and synaptic transmission might be changed in these models. Weiping Han et al. in their previous work (Han et al., 2005) have generated transgenic mice expressing a SYT1-ECFP fusion protein. The Syt1-ECFP mice expressed the fluorescent protein ECFP in the cortex, midbrain, and cerebellum. However, the expression pattern in their model showed some differences with ours: In the olfactory bulb, the SYT1-tdTomato signals were highly enriched in glomerular layer in our model, which was not observed in the previously reported Syt1-ECFP transgenic mice (Han et al., 2005). It suggested a potential application of our model in labeling synapses in the glomerular layer of olfactory bulb compared with Syt1- ECFP transgenic mice.\n\nIn the previous work synaptophysin-YFP was used to label neurites in pontine or vestibular explants-neuronal granule cells co-culture assay (Umemori et al., 2004), it provided us with an idea that the synaptic labeling neurons could be used for visualizing artificial synapse formation between neurons and non-neuronal cells. Syt1-tdTomato transgenic mice neurons were able to label positive HEK293T cells expressing synaptogenic molecules (NLGN2, LRRTM2, and SLITRK2) without immunostaining (Figure 6A, B and C). Because NLGN2, LRRTM2, and SLITRK2 are mainly expressed at the postsynaptic site, they can be recognized by presynaptic terminals marked by SYT1-tdTomato to form intact synapses. Even though it has been suggested that SYT1 is also expressed postsynaptic site, it remains unclear to us whether Syt1-tdTomato transgenic mice neurons can be used for screening synaptogenic molecules located at presynaptic site. In order to establish a complete screening system, we have also started to construct the transgenic fluorescent mice model that expresses fluorescent proteins and specifically transports them to postsynaptic spines.\n\nThe ASF assays using Syt1-tdTomato transgenic mice to screen for synaptogenic molecules have skipped the necessity of immunostaining. However, we still can only test the synapse accumulation around HEK293T cells which are transfected with the same plasmid. It requires large numbers of neurons and HEK293T cells for large-scale screening. To optimize the screening process for large-scale and high-throughput screening, we are examining the co-culture of neurons with multiple HEK293T cells transfected with different plasmids in the same well. The synapse-accumulated HEK293T cells in the co-culture system can be separated by cell digestion, single-cell picking, and single-cell sequencing can be used to identify the genotype of the picked cells. If it works, it will largely improve the throughput of screening in ASF assay.\n\n## Materials and methods\n\n### Construction of Syt1-tdTomato expression vector and generation of Syt1-tdTomato transgenic mice\n\nThe PiggyBac vector and UBC promoter (human ubiquitin C promoter) were chosen to construct the Syt1-tdTomato expression vector. In the PiggyBac vector, there are two PiggyBac ITRs located at the sides of the \u2018UBC promoter-Kozak-Syt1-tdTomato-polyA\u2019 cassette in order to promote transposes mediated transgene integration. The constructed vectors were co-injected with transposes into fertilized eggs from C57BL/6 J mice. The offspring were identified by PCR to select those carrying the required PiggyBac transgene. Counter-screening was performed on positive founder mice for transposes. The Cyagen Biosciences (Guangzhou) Inc conducted all of the processes.\n\n### Genotyping\n\nGenomic DNA was isolated from the tailpiece. This was done by taking an appropriate amount of rat tail (about 0.5 cm long) and placing it in a 1.5 mL EP tube. We then added 200 \u03bcL 50 mM NaOH and heated in a 100 \u00b0C water bath for 30 min for lysis. After vortex mixing, 16 \u03bcL 1 M tris-HCL was added to the end lysis. For PCR analysis, primers were designed according to the Syt1-tdTomato expression vector (primer F: TAGGGTAGGCTCTCCTGAATCGAC; primer R: ATTCATAAACTTCTGCTTCAGCTTG). The PCR was performed with the 2 \u00d7 Taq Plus Master Mix II (Vazyme, P213-01) and according to the manufacturer\u2019s instructions. The PCR products carried out electrophoresis on 1.5% agar gel. The amplification product was 396 bp.\n\n### Primary hippocampal neuronal culture\n\nNeurons for experiments were obtained from postnatal day 0 C57BL/6 J mice\u2019s hippocampus. The mice\u2019s brains were isolated, and the hippocampus were dissected on ice. After washing with DMEM (Gibco, 11995\u2013065), the hippocampus was placed in 0.25% trypsin (Sigma, T4049) and digested at 37 \u00b0C for 12 min. We added DMEM to end the digestion, and to count after blowing and mixing. Neurons were plated on glass coverslips (diameter 12 mm) that were coated with poly-D-lysine (Gibco, A38990401) at a density of 80,000 neurons per coverslip and cultured in Neurobasal Plus Medium (Gibco, A35829-01) containing 2% B-27 Plus Supplement (Gibco, A3592801) at 37 \u00b0C in 5% CO2 in a thermostatic cell incubator.\n\n### Tissues protein extraction and western blotting\n\nProtein was extracted from tissues of transgenic and wildtype mice using RIPA lysis buffer (Thermo Scientific, 89901) containing protease inhibitors (Roche, 4693132001). The concentration of extracted proteins were measured with BCA protein assay kit (Thermo Scientific, 23235) according to the manufacturer\u2019s instructions. SDS-PAGE was performed by using NuPAGE precast gels (Invitrogen, NP0303BOX). The membrane was scanned with an infrared imaging system (Odyssey). Antibodies against tdTomato (Novus, NBP2-78136, 1:1000 dilution) and vasolin-containing protein (ABclonal, A13368, 1:1000 dilution) were used.\n\n### Immunofluorescence staining of neurons\n\nThe cultures were fixed with 4% paraformaldehyde in phosphate-buffered saline (PBS, pH 7.4) for 10 min. After washing with PBS, the cultures were blocked and permeabilized with Blocking Buffer (0.3% Tween 20, 5% skimmed milk, and 2% goat serum in PBS). Cultures were incubated overnight with primary antibodies [anti-SYN1 (1:20,000; homemade), anti-VGLUT1 (1:2000; Synaptic Systems, 135 302), anti-GAD65 (1:5000; Sigma, G5638), anti-PSD95 (1:2000; NeuroMab, 75\u2013028), anti-Homer-1 (1:1000; Synaptic Systems, 160,011), or anti-Gephyrin (1:1000; Synaptic Systems, 147 011)] diluted in Blocking Buffer. After washing three times for 5 min in PBS, cultures were incubated for 30 min at room temperature with secondary antibodies [Goat anti-Rabbit IgG (H+L) Highly Cross-Adsorbed Secondary Antibody, Alexa Fluor Plus 647 (1:200; Invitrogen, A32733) or Dylight 649, Goat Anti-Mouse IgG (1:200; Abbkine, A23610)]. Samples were placed in mounting medium (Southernbiotech, 0100\u201301) after washing them three times for 5 min in PBS and once in double distilled H2O (ddH2O).\n\n### Immunofluorescence staining of mouse brain slices\n\nAdult mice (transgenic and WT) were deeply anesthetized with tribromoethanol and then transcardially perfused with 4% paraformaldehyde in phosphate-buffered saline (PBS, pH 7.4). The brains were removed and fixed in the 4% paraformaldehyde in PBS for 24 hr. After tissue dehydration with 15% and 30% sucrose solution in PBS, brains were embedded with a freezing embedding medium (optimum cutting temperature compound). The 40 \u03bcm thick sections were cut on a cryo-cut cryostat microtome. The sections were permeabilized with 0.3% Triton X-100 in PBS. After washing for 5 min in PBS, sections were incubated in PBS containing 5 \u03bcg/mL DAPI (Beyotime, C1002) for 20 min in order to stain cell nuclei, washed with PBS, and placed in the mounting medium.\n\n### Electrophysiological recordings\n\nNeurons at DIV 13\u201315 were taken for the experiment. Current clamp recordings of primary hippocampal neurons were carried out with a MultiClamp 700 A amplifier (Molecular Devices). Series resistance was compensated to 60\u201370%, and recordings with series resistances of >20 M\u03a9 were rejected. For AP recordings, neurons were patched and held in the current-clamp whole-cell configuration, and maintained in an external solution of 150 mM NaCl, 4 mM KCl, 10 mM HEPES, 2 mM CaCl2, 1 mM MgCl2, 10 mM glucose (pH 7.40, Osm 315 mOsm/kg). Microelectrodes (World Precision Instruments) were filled with internal solution, which contains 145 mM KCl, 5 mM NaCl, 10 mM HEPES, 5 mM EGTA, 4 mM MgATP, 0.3 mM Na2GTP (pH 7.25, Osm 305 mOsm/kg). Whole-cell voltage-clamp recordings of primary hippocampal neurons were carried out using a MultiClamp 700 A amplifier (Molecular Devices). Coverslips, seeded with primary hippocampal neurons, were kept in an external solution of 150 mM NaCl, 4 mM KCl, 2 mM CaCl2, 1 mM MgCl2, 10 mM HEPES, and 10 mM Glucose (pH 7.40, Osm 315 mOsm/kg). For mEPSC recordings, Tetrodotoxin (1 \u00b5M) was added to the external solution to block evoked synaptic responses. Patch recording pipettes (3\u20136 M\u03a9, World Precision Instruments) were filled with an internal solution of 110 mM Cs- Methanesulfonate, 20 mM TEA-Cl, 8 mM KCl, 10 mM EGTA, 10 mM HEPES, 3 mM MgATP, and 0.3 mM Na2GTP (pH 7.3, Osm 275\u2013285 mOsm/kg). For mIPSC recordings, patch recording pipettes (3\u20136 M\u03a9) are filled with an internal solution containing the following (in mM): 140 mM CsCl, 10 mM HEPES, 2 mM MgCl2, 4 mM Na2ATP, 0.4 mM Na3GTP, and 5 mM EGTA (pH 7.3, Osm 275\u2013285 mOsm/kg). Tetrodotoxin (1 \u00b5M), NBQX (10 \u00b5M), and D-APV (50 \u00b5M) was added to the external solution. The data were analyzed with Clampfit 10.2 (pClamp) and Igor 4.0 (WaveMetrics).\n\n### HEK293T cell culture and transfection\n\nHEK293T cells (KCB 200971YJ) were obtained from the Kunming Cell Bank, Chinese Academy of Sciences. The cell line was authenticated by STR profiling by the supplier and was checked for mycoplasma contamination regularly. They were cultured in COS medium (DMEM containing 10% FBS, 50 U/mL penicillin, 50 \u03bcg/mL streptomycin, 44.52 mM NaHCO3, pH 7.2\u20137.4) at 37 \u00b0C in 5% CO2 in a thermostatic cell incubator. For passaging, when cells grow to 80% cell density, discard the old medium, and add PBS to wash away metabolic waste and floating dead cells. Add 0.05% of Trypsin solution, digest in the incubator for 2 min, and add 2 times the volume of COS medium to terminate the digestion. Centrifuge the cell suspension and add a COS medium to resuspend the cells to culture. The HEK293T cells to be transfected were cultured in 24-well plates. After the cell density grew to about 80%, transfection was performed. Add plasmid and polyethyleneimine (PEI; 1 mg/mL in ddH2O) to 35 \u00b5l OPTI. The PEI plasmid ratio was 3:1. The mixture was incubated at room temperature for 30 min and then added dropwise to HEK293T cell cultures. For one well of a 24-well plate, 1.2 \u03bcg of each plasmid and 0.3 \u03bcg of GFP was transfected.\n\n### Artificial synapse formation\n\nAfter 24 hr of transfection, the HEK293T cells were digested by adding 0.05% trypsin, placed at 37\u2103 for 1 min, and the digestion was terminated by adding a COS medium. The cell suspension was centrifuged, resuspended in Neurobasal Plus Medium (containing B-27), counted, and then added dropwise into hippocampal neuronal culture at DIV 9 in vitro (40,000/coverslip), gently shaken, and placed at 37 \u00b0C in 5% CO2 in a thermostatic cell incubator. After 36\u201348 hr of incubation, immunocytochemical assays were performed.\n\n### Confocal imaging and image analysis\n\nFor immunofluorescence staining of neurons and mouse brain slices, images were captured using a confocal microscope (Olympus FV3000). Image J was used to analyze the co-labeling rate, and Matlab was used to analyze positive cells in the artificial synapse formation assay.\n\n### Statistical analysis\n\nStatistical analyses were conducted using GraphPad Prism 8.0.1 software for t-test. Results were displayed as mean \u00b1 standard error (SEM). Differences in means were accepted as significant if the results of the two-tailed unpaired t-test and one-way ANOVA were p<0.05.\n",
+      "created_at": "2025-12-04T04:25:06.167461Z"
+    },
+    {
+      "id": "72a8351d-dcf9-404d-b670-2ff0eb51dc4c",
+      "submission_id": "de7ed8c2-2df0-4928-b6c7-d0909f8dde94",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Kang Shen, https://ror.org/00f54p054 Stanford University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.81884.sa0](https://doi.org/10.7554/eLife.81884.sa0)\n\nIn this manuscript, Zhang and colleagues created a transgenic mouse strain that express SYT-1-tdt in all neurons. They showed that the labelled SYT-1 does not represent a strong over expression, colocalizes with multiple synaptic markers and label synapses in different regions. Importantly, they showed that the transgenic expression does not alter synaptic function using electrophysiogical assays. This reagent can be used to visualize synapses in vivo and in cultures.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Kang Shen, https://ror.org/00f54p054 Stanford University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.81884.sa1](https://doi.org/10.7554/eLife.81884.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Establishment of Transgenic Fluorescent Mice for Screening Synaptogenic Adhesion Molecules\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by John Huguenard as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1) To provide a further comparison between this transgenic strain with other existing strains in the literature.\n\n2) To improve the impact of this manuscript by demonstrating more utility of the transgenic strain.\n\nReviewer #1 (Recommendations for the authors):\n\nThe authors should test to what extent syt-2-tdt is expressed compared to the endogenous syt-1 level. This can be achieved with a western blot.\n\nIt seems that this mouse strain will be more useful than simply being used for synaptogenic screens in cultures. If that is the only use, I would think that the impact is not very high. I think it can also be used to label synapses in situ without immunostaining.\n\nReviewer #2 (Recommendations for the authors):\n\nYang et al. designed and generated Syt1-TDT transgenic mice, and analyzed them in cultured neurons and brain sections, showing that Syt1-TDT immunofluorescent signals colocalize with known synaptic marker proteins. The authors then showed extensive electrophysiological recordings showing that neurons from Syt1-TDT transgenic mice were electrophysiologically comparable to control neurons. Lastly, they performed artificial synapse formation assays showing that Syt1-TDT signals are recruited to HEK293T cells expressing known synaptogenic adhesion proteins.\n\nI agree with the authors that this new mouse line could be potentially useful for various cell biological analyses in neurons. However, to me, the advantage of this mouse line lies only in skipping the immunostaining procedures. Moreover, Syt1-TDT signals do not completely label synaptic sites in cultured neurons, based on colocalization % values (Figure 2).\n\nAnother concern is that the Introduction part of this manuscript was not written well to cover major progress in the field of mammalian synaptic adhesion proteins. The authors should cite more relevant research articles and a series of key review papers in the field. I recommend the authors that they should look up the following terms and cite a subset of references at appropriate places of text: synapse formation, synaptic adhesion, and synaptogenic proteins.\n\nReviewer #3 (Recommendations for the authors):\n\nWhile this mouse model will undoubtedly be useful, it is less clear whether this study presents a significant conceptual advance as several other mouse models expressing fluorescently tagged synaptic vesicle proteins have been available from the Jackson Labs. These current models include a similar model expressing synaptotagmin 1-eCFP fusion protein (B6SJL-Tg(Thy1-Syt1/ECFP)1Sud/J) or mice expressing a synaptophysin-YFP transgene (B6.Cg-Tg(Thy1-YFP/Syp)10Jrs/J). Moreover, spH21 transgenic mice (B6;CBA-Tg(Thy1-spH)21Vnmu/J) generated by the Murthy lab expressing fluorescent indicator synaptopHluorin (synaptobrevin and pHluorin chimera) have been characterized and available. Expression of the pHluorin tag provides the added advantage that one can test the presynaptic functionality of boutons formed in co-culture assays.\n",
+      "created_at": "2025-12-04T04:25:06.167461Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T04:25:06.167461Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T04:25:06.167461Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "85e4cc3f-46d1-4272-bcce-a02150e0574c",
+      "content_id": "f47082c0-ec24-48a8-8015-14dbeedb6588",
+      "claim_id": "C1",
+      "claim": "Synapse is the fundamental structure for neurons to transmit information between cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Synapse is the fundamental structure for neurons to transmit information between cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established scientific knowledge about synapses.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:25:06.167461Z"
+    },
+    {
+      "id": "a5d8fe63-08bd-4716-976e-2d080e685ad2",
+      "content_id": "f47082c0-ec24-48a8-8015-14dbeedb6588",
+      "claim_id": "C2",
+      "claim": "Proper synapse formation is crucial for developing neural circuits and cognitive functions of the brain.",
+      "claim_type": "EXPLICIT",
+      "source": "The proper synapse formation is crucial for developing neural circuits and cognitive functions of the brain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This reflects established scientific consensus about the importance of synapse formation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:25:06.167461Z"
+    },
+    {
+      "id": "f581d4a0-8559-4413-8024-04ca112e0eff",
+      "content_id": "f47082c0-ec24-48a8-8015-14dbeedb6588",
+      "claim_id": "C3",
+      "claim": "Aberrant synapse formation causes many neurological disorders, including autism spectrum disorders and intellectual disability.",
+      "claim_type": "EXPLICIT",
+      "source": "The aberrant synapse formation has been proved to cause many neurological disorders, including autism spectrum disorders and intellectual disability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim states this has been 'proved', suggesting support from prior research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:25:06.167461Z"
+    },
+    {
+      "id": "b5a97977-fdb7-4374-b348-b4cf36ae3b27",
+      "content_id": "f47082c0-ec24-48a8-8015-14dbeedb6588",
+      "claim_id": "C4",
+      "claim": "Synaptic cell adhesion molecules play a major role in achieving mechanistic cell-cell recognition and initiating synapse formation via trans-synaptic interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Synaptic cell adhesion molecules (CAMs) are thought to play a major role in achieving mechanistic cell-cell recognition and initiating synapse formation via trans-synaptic interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This represents established scientific understanding about the role of CAMs.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:25:06.167461Z"
+    },
+    {
+      "id": "c982519e-68a4-4c75-aa8e-55bc1b6d708f",
+      "content_id": "f47082c0-ec24-48a8-8015-14dbeedb6588",
+      "claim_id": "C5",
+      "claim": "Many synaptic CAMs have been identified as synaptogenic molecules, including Neurexins (NRXNs), Neuroligins (NLGNs), Synaptic cell adhesion molecules (SynCAMs), Leucine-rich-repeat transmembrane neuronal proteins (LRRTMs), and SLIT and NTRK-like protein (SLITRKs).",
+      "claim_type": "EXPLICIT",
+      "source": "although many synaptic CAMs, such as Neurexins (NRXNs), Neuroligins (NLGNs), Synaptic cell adhesion molecules (SynCAMs), Leucine-rich-repeat transmembrane neuronal proteins (LRRTMs), and SLIT and NTRK-like protein (SLITRKs) have been identified as synaptogenic molecules",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about prior research findings in the field.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:25:06.167461Z"
+    },
+    {
+      "id": "0fa7f291-c654-497c-aa56-a6ccb799fa40",
+      "content_id": "f47082c0-ec24-48a8-8015-14dbeedb6588",
+      "claim_id": "C6",
+      "claim": "The authors generated synaptotagmin-1-tdTomato (Syt1-tdTomato) transgenic mice by inserting the tdTomato-fused synaptotagmin-1 coding sequence into the genome of C57BL/6J mice.",
+      "claim_type": "EXPLICIT",
+      "source": "we generated synaptotagmin-1-tdTomato (Syt1-tdTomato) transgenic mice by inserting the tdTomato-fused synaptotagmin-1 coding sequence into the genome of C57BL/6J mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental method used to generate the transgenic mice.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:25:06.167461Z"
+    },
+    {
+      "id": "7c935c22-4620-4d39-8fe7-3cc2154693a2",
+      "content_id": "f47082c0-ec24-48a8-8015-14dbeedb6588",
+      "claim_id": "C7",
+      "claim": "In the brain of Syt1-tdTomato transgenic mice, the tdTomato-fused synaptotagmin-1 (SYT1-tdTomato) signals were widely observed in different areas.",
+      "claim_type": "EXPLICIT",
+      "source": "In the brain of Syt1-tdTomato transgenic mice, the tdTomato-fused synaptotagmin-1 (SYT1-tdTomato) signals were widely observed in different areas",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental observations described in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:25:06.167461Z"
+    },
+    {
+      "id": "08fd2465-d5b8-44e3-a40b-a6770ae6a8b3",
+      "content_id": "f47082c0-ec24-48a8-8015-14dbeedb6588",
+      "claim_id": "C8",
+      "claim": "SYT1-tdTomato signals overlapped with synapsin-1, a widely-used synaptic marker.",
+      "claim_type": "EXPLICIT",
+      "source": "overlapped with synapsin-1, a widely-used synaptic marker.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on experimental data from immunostaining and imaging.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:25:06.167461Z"
+    },
+    {
+      "id": "77686197-c25c-40b0-a554-a978e131ffc2",
+      "content_id": "f47082c0-ec24-48a8-8015-14dbeedb6588",
+      "claim_id": "C9",
+      "claim": "In the olfactory bulb, the SYT1-tdTomato signals are highly enriched in the glomerulus.",
+      "claim_type": "EXPLICIT",
+      "source": "In the olfactory bulb, the SYT1-tdTomato signals are highly enriched in the glomerulus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by imaging data from brain sections.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:25:06.167461Z"
+    },
+    {
+      "id": "3b09ab62-2a28-47b5-b888-b4e50214a7dc",
+      "content_id": "f47082c0-ec24-48a8-8015-14dbeedb6588",
+      "claim_id": "C10",
+      "claim": "In cultured hippocampal neurons, the SYT1-tdTomato signals showed colocalization with several synaptic markers.",
+      "claim_type": "EXPLICIT",
+      "source": "In the cultured hippocampal neurons, the SYT1-tdTomato signals showed colocalization with several synaptic markers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on immunostaining experiments in cultured neurons.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:25:06.167461Z"
+    },
+    {
+      "id": "84f03c6b-c1c0-4d0d-9905-81f6c1ec5382",
+      "content_id": "f47082c0-ec24-48a8-8015-14dbeedb6588",
+      "claim_id": "C11",
+      "claim": "Cultured hippocampal neurons from Syt1-tdTomato transgenic mice presented normal synaptic neurotransmission compared to wild-type mouse neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to the wild-type (WT) mouse neurons, cultured hippocampal neurons from Syt1-tdTomato transgenic mice presented normal synaptic neurotransmission.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by electrophysiological recordings comparing transgenic and WT neurons.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:25:06.167461Z"
+    },
+    {
+      "id": "9d03d1a0-0587-4a25-8e51-95dd95cf5c37",
+      "content_id": "f47082c0-ec24-48a8-8015-14dbeedb6588",
+      "claim_id": "C12",
+      "claim": "Neurons from Syt1-tdTomato transgenic mice could form synaptic connections with HEK293T cells expressing NLGN2, LRRTM2, and SLITRK2 without immunostaining in ASF assays.",
+      "claim_type": "EXPLICIT",
+      "source": "In ASF assays, neurons from Syt1-tdTomato transgenic mice could form synaptic connections with HEK293T cells expressing NLGN2, LRRTM2, and SLITRK2 without immunostaining.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on experimental data from artificial synapse formation assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:25:06.167461Z"
+    },
+    {
+      "id": "e308a300-46f2-4198-83f1-be6fec02523b",
+      "content_id": "f47082c0-ec24-48a8-8015-14dbeedb6588",
+      "claim_id": "C13",
+      "claim": "Synapses consist of the presynaptic membrane, the synaptic cleft, and the postsynaptic membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "Synapses, consisting of the presynaptic membrane, the synaptic cleft, and the postsynaptic membrane, are the intercellular connections that rapidly transmit information from presynaptic neurons to postsynaptic cells in a point-to-point manner (S\u00fcdhof, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to S\u00fcdhof, 2018.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:25:06.167461Z"
+    },
+    {
+      "id": "2ae43abc-ead8-4286-a8c3-ccdb0aad285c",
+      "content_id": "f47082c0-ec24-48a8-8015-14dbeedb6588",
+      "claim_id": "C14",
+      "claim": "Synapse formation begins during embryonic/postnatal development and lasts throughout life.",
+      "claim_type": "EXPLICIT",
+      "source": "Synapse formation is an essential stage in brain development that begins during embryonic/postnatal development, and lasts throughout life (Biederer and Stagi, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Biederer and Stagi, 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:25:06.167461Z"
+    },
+    {
+      "id": "800730e9-88c7-40b4-be52-8b6061479614",
+      "content_id": "f47082c0-ec24-48a8-8015-14dbeedb6588",
+      "claim_id": "C15",
+      "claim": "Abnormal synapse formation can cause many neurological disorders, including autism spectrum disorders (ASD) and mental retardation.",
+      "claim_type": "EXPLICIT",
+      "source": "abnormal synapse formation can cause many neurological disorders, including autism spectrum disorders (ASD) and mental retardation (Boda et al., 2010; McAllister, 2007; S\u00fcdhof, 2008; Zhang et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:25:06.167461Z"
+    },
+    {
+      "id": "2a93fdcf-0aea-4396-a908-67f740c45951",
+      "content_id": "f47082c0-ec24-48a8-8015-14dbeedb6588",
+      "claim_id": "C16",
+      "claim": "Synaptic CAMs act as a key role in initiating synapse formation through trans-synaptic interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Synaptic CAMs are molecules that act as a key role in initiating synapse formation through trans-synaptic interactions, and were originally proposed to enable mechanistic cell-cell recognition (Bukalo and Dityatev, 2012; Sanes and Yamagata, 2009; Yang et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:25:06.167461Z"
+    },
+    {
+      "id": "7ab07aea-638c-4735-a714-e4f81e36afe2",
+      "content_id": "f47082c0-ec24-48a8-8015-14dbeedb6588",
+      "claim_id": "C17",
+      "claim": "A variety of CAMs have been shown to initiate synapse formation, anchor and organize the precise alignment of the pre- and postsynaptic sides of a synapse, and enable enhanced short- and long-term synaptic plasticity of synaptic transmission.",
+      "claim_type": "EXPLICIT",
+      "source": "A variety of CAMs have been shown to initiate synapse formation, anchor and organize the precise alignment of the pre- and postsynaptic sides of a synapse, and enable enhanced short- and long-term synaptic plasticity of synaptic transmission (S\u00fcdhof, 2018; Scheiffele et al., 2000; Graf et al., 2004; Linhoff et al., 2009; de Wit et al., 2009; Ko et al., 2009; Kim et al., 2006; Woo et al., 2009; Wang et al., 2021; Takahashi et al., 2011; Sando et al., 2019; Pettem et al., 2013; Yim et al., 2013; Biederer et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:25:06.167461Z"
+    },
+    {
+      "id": "0115258d-e3be-4dd5-b70f-bfcad773e60c",
+      "content_id": "f47082c0-ec24-48a8-8015-14dbeedb6588",
+      "claim_id": "C18",
+      "claim": "Synapses show diversities in types of neurotransmitter, release probability, and composition of postsynaptic receptors in different brain areas.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the synapses show diversities in types of neurotransmitter, release probability, and composition of postsynaptic receptors in different brain areas, and are organized by specific CAMs (Takahashi et al., 2011; S\u00fcdhof, 2021; Tanabe et al., 2017; Takahashi et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:25:06.167461Z"
+    },
+    {
+      "id": "513548f6-7ce1-45f3-83e2-b23d1e448f3d",
+      "content_id": "f47082c0-ec24-48a8-8015-14dbeedb6588",
+      "claim_id": "C19",
+      "claim": "Deletion of some CAMs only affects the pre- or post-synaptic organization rather than affects synapse numbers.",
+      "claim_type": "EXPLICIT",
+      "source": "Deletion of some CAMs only affects the pre- or post-synaptic organization rather than affects synapse numbers (Linhoff et al., 2009; Varoqueaux et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:25:06.167461Z"
+    },
+    {
+      "id": "98ca9742-ddf0-41e0-acc8-3a0d16202eb2",
+      "content_id": "f47082c0-ec24-48a8-8015-14dbeedb6588",
+      "claim_id": "C20",
+      "claim": "Deletion of specific CAMs only induces the loss of synapse number in specific type of neurons or brain areas.",
+      "claim_type": "EXPLICIT",
+      "source": "In other cases, deletion of specific CAMs only induces the loss of synapse number in specific type of neurons or brain areas (Zhang et al., 2018; Chen et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:25:06.167461Z"
+    },
+    {
+      "id": "3c0ba1cb-7f9c-4065-a3c6-7f3722804606",
+      "content_id": "f47082c0-ec24-48a8-8015-14dbeedb6588",
+      "claim_id": "C21",
+      "claim": "The artificial synapse formation (ASF) assay works by co-culturing non-neuronal cells, such as HEK293T cells, which are overexpressed by certain genes, with neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "It works by co-culturing non-neuronal cells, such as HEK293T cells, which are overexpressed by certain genes, with neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodology of the ASF assay.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:25:06.167461Z"
+    },
+    {
+      "id": "99386a90-e690-4c84-bbb5-04115bfdd72a",
+      "content_id": "f47082c0-ec24-48a8-8015-14dbeedb6588",
+      "claim_id": "C22",
+      "claim": "Many synaptogenic CAMs have been found to accumulate synapses around the non-neuronal cells in ASF experiments, including Neurexins (NRXNs), Neuroligins (NLGNs), Synaptic cell adhesion molecules (SynCAMs), Leucine-rich-repeat transmembrane neuronal proteins (LRRTMs), Latrophilins, Protein tyrosine phosphatase receptor type O (PTPRO), and others.",
+      "claim_type": "EXPLICIT",
+      "source": "Many synaptogenic CAMs have been found to accumulate synapses around the non-neuronal cells in ASF experiments, including Neurexins (NRXNs), Neuroligins (NLGNs), Synaptic cell adhesion molecules (SynCAMs), Leucine-rich-repeat transmembrane neuronal proteins (LRRTMs), Latrophilins, Protein tyrosine phosphatase receptor type O (PTPRO), and others (Scheiffele et al., 2000; Graf et al., 2004; Linhoff et al., 2009; Biederer et al., 2002; Jiang et al., 2017b; Sando et al., 2019; Nam and Chen, 2005)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:25:06.167461Z"
+    },
+    {
+      "id": "08c92ff3-adbd-4942-a5bf-9164b37a7d42",
+      "content_id": "f47082c0-ec24-48a8-8015-14dbeedb6588",
+      "claim_id": "C23",
+      "claim": "ASF assay is suitable for identifying new synaptogenic CAMs.",
+      "claim_type": "EXPLICIT",
+      "source": "which indicate that ASF assay is suitable for identifying new synaptogenic CAMs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the successful identification of multiple CAMs using this assay.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:25:06.167461Z"
+    },
+    {
+      "id": "4748355d-542f-4635-aa4b-ae6e1c5a0ca7",
+      "content_id": "f47082c0-ec24-48a8-8015-14dbeedb6588",
+      "claim_id": "C24",
+      "claim": "ASF assay requires a lot of time for immunohistochemically staining, making it difficult to perform large-scale screening.",
+      "claim_type": "EXPLICIT",
+      "source": "However, ASF assay still requires a lot of time for immunohistochemically staining, making it difficult to perform large-scale screening.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the limitations of the current ASF assay methodology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:25:06.167461Z"
+    },
+    {
+      "id": "c7c22ccc-1026-4094-8e55-cadd5d5fe9af",
+      "content_id": "f47082c0-ec24-48a8-8015-14dbeedb6588",
+      "claim_id": "C25",
+      "claim": "Synaptotagmin-1 (SYT1) is a fast calcium sensor on synaptic vesicles.",
+      "claim_type": "EXPLICIT",
+      "source": "Synaptotagmin-1 (SYT1), a fast calcium sensor on synaptic vesicles (Kochubey et al., 2016; Xu et al., 2007)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:25:06.167461Z"
+    },
+    {
+      "id": "20c6a4cd-e6b2-45c7-ac3f-1c548a005127",
+      "content_id": "f47082c0-ec24-48a8-8015-14dbeedb6588",
+      "claim_id": "C26",
+      "claim": "SYT1 begins to be strongly expressed on embryonic day 18 and continues to increase until reaching stable levels in adulthood (postnatal day 60) in many brain regions.",
+      "claim_type": "EXPLICIT",
+      "source": "begins to be strongly expressed on embryonic day 18 and continues to increase until reaching stable levels in adulthood (postnatal day 60) in many brain regions (Wolfes and Dean, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Wolfes and Dean, 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:25:06.167461Z"
+    },
+    {
+      "id": "3021c09b-968c-47b3-a07d-487ff4e2a0d1",
+      "content_id": "f47082c0-ec24-48a8-8015-14dbeedb6588",
+      "claim_id": "C27",
+      "claim": "SYT1 is the most abundant synaptotagmin in synaptic vesicles.",
+      "claim_type": "EXPLICIT",
+      "source": "SYT1 is the most abundant synaptotagmin in synaptic vesicles (Fukuda, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Fukuda, 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:25:06.167461Z"
+    },
+    {
+      "id": "435f23a9-d402-4544-9366-05eeae0b8c59",
+      "content_id": "f47082c0-ec24-48a8-8015-14dbeedb6588",
+      "claim_id": "C28",
+      "claim": "In the hippocampus, SYT1 is abundant in the stratum oriens, stratum radiatum, and stratum lacunosum molecular.",
+      "claim_type": "EXPLICIT",
+      "source": "In the hippocampus, SYT1 is abundant in the stratum oriens, stratum radiatum, and stratum lacunosum molecular (Fox and Sanes, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Fox and Sanes, 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:25:06.167461Z"
+    },
+    {
+      "id": "cf3db881-7de6-412c-8877-f0b79a7ec63d",
+      "content_id": "f47082c0-ec24-48a8-8015-14dbeedb6588",
+      "claim_id": "C29",
+      "claim": "The authors used the PiggyBac transposon vector system to insert the synaptotagmin1-tdTomato (Syt1-tdTomato) gene into C57BL/6 J mice allele.",
+      "claim_type": "EXPLICIT",
+      "source": "used the PiggyBac transposon vector system to insert the synaptotagmin1-tdTomato (Syt1-tdTomato) gene into C57BL/6 J mice allete.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental method used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:25:06.167461Z"
+    },
+    {
+      "id": "56729e96-df3a-40a3-b176-eb52e2a27b21",
+      "content_id": "f47082c0-ec24-48a8-8015-14dbeedb6588",
+      "claim_id": "C30",
+      "claim": "The tdTomato signals were widely observed in the brain of Syt1-tdTomato transgenic mice.",
+      "claim_type": "EXPLICIT",
+      "source": "The tdTomato signals were widely observed in the brain of Syt1-tdTomato transgenic mice",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on experimental observations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:25:06.167461Z"
+    },
+    {
+      "id": "053b0967-c884-42d3-807b-db6d11bf60bb",
+      "content_id": "f47082c0-ec24-48a8-8015-14dbeedb6588",
+      "claim_id": "C31",
+      "claim": "The tdTomato signals colocalized with synaptic markers in the brain of Syt1-tdTomato transgenic mice.",
+      "claim_type": "EXPLICIT",
+      "source": "and colocalized with synaptic markers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on experimental observations from immunostaining.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:25:06.167461Z"
+    },
+    {
+      "id": "8d67ddc6-cde9-4518-b459-28036dbbbde6",
+      "content_id": "f47082c0-ec24-48a8-8015-14dbeedb6588",
+      "claim_id": "C32",
+      "claim": "The authors observed the enrichment of SYT1-tdTomato in the glomerulus of the olfactory bulb.",
+      "claim_type": "EXPLICIT",
+      "source": "We also observed the enrichment of SYT1-tdTomato in the glomerulus of the olfactory bulb.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on experimental observations from imaging.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:25:06.167461Z"
+    },
+    {
+      "id": "34d139ca-34c2-4c8b-a8a5-b6ba8755de5b",
+      "content_id": "f47082c0-ec24-48a8-8015-14dbeedb6588",
+      "claim_id": "C33",
+      "claim": "The transgenic mice can be used for ASF experiments to visualize synapses by fluorescence microscopy without immunostaining.",
+      "claim_type": "EXPLICIT",
+      "source": "The transgenic mice can also be used for ASF experiments in order to visualize synapses by fluorescence microscopy without immunostaining.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on experimental data from ASF assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:25:06.167461Z"
+    },
+    {
+      "id": "8b12a7d8-e888-4770-8dc3-4681d8f6d92a",
+      "content_id": "f47082c0-ec24-48a8-8015-14dbeedb6588",
+      "claim_id": "C34",
+      "claim": "The Syt1-tdTomato transgenic mice will be a valuable tool for large-scale screening of CAMs.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the Syt1-tdTomato transgenic mice will be a valuable tool for large-scale screening of CAMs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the experimental results and inferred potential applications.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:25:06.167461Z"
+    },
+    {
+      "id": "204e93d6-4884-46d7-aee5-879be06b0635",
+      "content_id": "f47082c0-ec24-48a8-8015-14dbeedb6588",
+      "claim_id": "C35",
+      "claim": "The expression vector was successfully constructed as confirmed by restriction enzyme digestion.",
+      "claim_type": "EXPLICIT",
+      "source": "To verify the successful construction of a Syt1-tdTomato expression vector, we digested the targeting vectors with restriction enzymes (Figure 1A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:25:06.167461Z"
+    },
+    {
+      "id": "7f49e731-462c-4eb4-90e8-e2bcd8f0b748",
+      "content_id": "f47082c0-ec24-48a8-8015-14dbeedb6588",
+      "claim_id": "C36",
+      "claim": "The fragment sizes obtained after enzyme digestion of the expression vectors were AvaI: 4.7/1.7/0.7/0.5 kb; AflII/NcoI: 4.0/1.3/1.1/0.7/0.4/0.2 kb; NotI: 7.6 kb, which was consistent with the design.",
+      "claim_type": "EXPLICIT",
+      "source": "According to the schematic diagram of the linearized expression vector, the fragment sizes we obtained after enzyme digestion of the expression vectors should be AvaI: 4.7/1.7/0.7/0.5 kb (Figure 1B, left); AflII/NcoI: 4.0/1.3/1.1/0.7/0.4/0.2 kb (Figure 1B, middle); NotI: 7.6 kb (Figure 1B, right), which was consistent with our design.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on experimental data from restriction enzyme digestion shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:25:06.167461Z"
+    },
+    {
+      "id": "d3e2bfa0-fb7b-4a31-8a8d-9363a932d9c3",
+      "content_id": "f47082c0-ec24-48a8-8015-14dbeedb6588",
+      "claim_id": "C37",
+      "claim": "Immunoblotting using antibodies against tdTomato detected bands in the whole brain homogenate of Syt1-tdTomato transgenic mice at 8 weeks postnatal, but not in control mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Immunoblotting using antibodies against tdTomato detected bands in the whole brain homogenate of Syt1-tdTomato transgenic mice at 8 weeks postnatal, but not in control mice (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on experimental data from immunoblotting shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:25:06.167461Z"
+    },
+    {
+      "id": "9048b3f7-30ae-4f63-9b09-02ff67c50eed",
+      "content_id": "f47082c0-ec24-48a8-8015-14dbeedb6588",
+      "claim_id": "C38",
+      "claim": "tdTomato was detectable in the cortex, hippocampus, cerebellum, and olfactory bulb of the Syt1-tdTomato transgenic mice brain.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the tissues examined, tdTomato was detectable in the cortex, hippocampus, cerebellum, and olfactory bulb of the Syt1-tdTomato transgenic mice brain",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on experimental data from immunoblotting shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:25:06.167461Z"
+    },
+    {
+      "id": "d0b8d2d7-7c69-49a5-80ac-458ad463294f",
+      "content_id": "f47082c0-ec24-48a8-8015-14dbeedb6588",
+      "claim_id": "C39",
+      "claim": "Faint bands of tdTomato were present in the heart homogenate at the same size position.",
+      "claim_type": "EXPLICIT",
+      "source": "and faint bands were present in the heart homogenate at the same size position.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on experimental data from immunoblotting shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:25:06.167461Z"
+    },
+    {
+      "id": "31bca92c-4d98-445e-a524-33766830fec0",
+      "content_id": "f47082c0-ec24-48a8-8015-14dbeedb6588",
+      "claim_id": "C40",
+      "claim": "The expression level of SYT1-tdTomato is far less than the native SYT1 in the brain of transgenic mice.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the expression level of SYT1-tdTomato is far less than the native SYT1 in the brain of transgenic mice (Figure 1D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on experimental data from immunoblotting shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:25:06.167461Z"
+    },
+    {
+      "id": "ea03d3b7-7bcd-4bec-95aa-27546a809020",
+      "content_id": "f47082c0-ec24-48a8-8015-14dbeedb6588",
+      "claim_id": "C41",
+      "claim": "The low expression level of SYT1-tdTomato suggests less effect of overexpressed SYT1-tdTomato on native SYT1's function.",
+      "claim_type": "EXPLICIT",
+      "source": "suggesting less effect of overexpressed SYT1-tdTomato on native SYT1's function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation of low expression levels.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:25:06.167461Z"
+    },
+    {
+      "id": "3fa7fa4a-83db-48c0-b910-90d652193724",
+      "content_id": "f47082c0-ec24-48a8-8015-14dbeedb6588",
+      "claim_id": "C42",
+      "claim": "SYT1-tdTomato was widely expressed in the hippocampus, cortex, cerebellum, and olfactory bulb in transgenic mice, but not in WT mice.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that SYT1-tdTomato was widely expressed in the hippocampus, cortex, cerebellum, and olfactory bulb in transgenic mice, but not in WT mice (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on experimental data from fluorescence imaging shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:25:06.167461Z"
+    },
+    {
+      "id": "4449e230-b2b6-44bd-8a4c-c87f653cf195",
+      "content_id": "f47082c0-ec24-48a8-8015-14dbeedb6588",
+      "claim_id": "C43",
+      "claim": "In the hippocampus of transgenic mice, the signals of SYT1-tdTomato were relatively bright in the stratum oriens and stratum radiatum of CA1-CA3 and stratum lucidum of CA3, while the signals were absent in the stratum pyramidale.",
+      "claim_type": "EXPLICIT",
+      "source": "In the hippocampus of transgenic mice, the signals of SYT1-tdTomato were relatively bright in the stratum oriens and stratum radiatum of CA1-CA3 and stratum lucidum of CA3, while the signals were absent in the stratum pyramidale (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on experimental data from fluorescence imaging shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:25:06.167461Z"
+    },
+    {
+      "id": "053b97ff-d935-4e98-a061-f16acc507b90",
+      "content_id": "f47082c0-ec24-48a8-8015-14dbeedb6588",
+      "claim_id": "C44",
+      "claim": "In the cerebellum, the signals were stronger in the molecular layer compared with the granular layer.",
+      "claim_type": "EXPLICIT",
+      "source": "In the cerebellum, the signals were stronger in the molecular layer compared with the granular layer (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on experimental data from fluorescence imaging shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:25:06.167461Z"
+    },
+    {
+      "id": "00a8deb6-2e7c-4779-914a-c3ed0e1dd545",
+      "content_id": "f47082c0-ec24-48a8-8015-14dbeedb6588",
+      "claim_id": "C45",
+      "claim": "In the olfactory bulb, the SYT1-tdTomato showed bright signals in the glomerular layer.",
+      "claim_type": "EXPLICIT",
+      "source": "In the olfactory bulb, the SYT1-tdTomato showed bright signals in the glomerular layer (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on experimental data from fluorescence imaging shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:25:06.167461Z"
+    },
+    {
+      "id": "8366a3ef-ff62-44a5-939b-3d51f404db6f",
+      "content_id": "f47082c0-ec24-48a8-8015-14dbeedb6588",
+      "claim_id": "C46",
+      "claim": "The results suggest a wide distribution of SYT1-tdTomato in different brain areas, especially synapse-rich regions.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, our results suggested a wide distribution of SYT1-tdTomato in different brain areas, especially synapse-rich regions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the imaging data showing widespread expression.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:25:06.167461Z"
+    },
+    {
+      "id": "e9571311-003b-450f-84d7-20687a63924c",
+      "content_id": "f47082c0-ec24-48a8-8015-14dbeedb6588",
+      "claim_id": "C47",
+      "claim": "The signals of SYT1-tdTomato showed the same distribution as signals of synapsin-1 (SYN1) in hippocampus and cerebellum.",
+      "claim_type": "EXPLICIT",
+      "source": "The signals of SYT1-tdTomato showed the same distribution as signals of synapsin-1 (SYN1), a widely-used synaptic marker, in hippocampus and cerebellum (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on experimental data from immunostaining shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:25:06.167461Z"
+    },
+    {
+      "id": "2b090f2f-fe1b-4f06-86f8-6dfaf53a0831",
+      "content_id": "f47082c0-ec24-48a8-8015-14dbeedb6588",
+      "claim_id": "C48",
+      "claim": "In the granular layer of the cerebellum and the glomerular layer of the olfactory bulb, the signals of SYT1-tdTomato were highly overlapped with signals of synapsin.",
+      "claim_type": "EXPLICIT",
+      "source": "In the granular layer of the cerebellum and the glomerular layer of the olfactory bulb, the signals of SYT1-tdTomato were highly overlapped with signals of synapsin (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on experimental data from immunostaining shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:25:06.167461Z"
+    },
+    {
+      "id": "5738e30a-db61-48b3-9320-4f4d60673fd7",
+      "content_id": "f47082c0-ec24-48a8-8015-14dbeedb6588",
+      "claim_id": "C49",
+      "claim": "The signals of SYT1-tdTomato were much higher in glomerular layer than that in the external plexiform layer of the olfactory bulb.",
+      "claim_type": "EXPLICIT",
+      "source": "we quantified the intensity of SYT1-tdTomato signals in the olfactory bulb and found that the signals of SYT1-tdTomato were much higher in glomerular layer than that in the external plexiform layer (Figure 3C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on experimental data from quantification shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:25:06.167461Z"
+    },
+    {
+      "id": "dfd80cd2-403e-4be7-bc56-ee0be399b678",
+      "content_id": "f47082c0-ec24-48a8-8015-14dbeedb6588",
+      "claim_id": "C50",
+      "claim": "The results suggest an enrichment of SYT1-tdTomato in the glomerular layer of the olfactory bulb.",
+      "claim_type": "EXPLICIT",
+      "source": "suggesting an enrichment of SYT1-tdTomato in the glomerular layer of the olfactory bulb.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the quantification data showing higher intensity in the glomerular layer.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:25:06.167461Z"
+    },
+    {
+      "id": "7163626b-47a6-49a9-8385-f64c2591bde4",
+      "content_id": "f47082c0-ec24-48a8-8015-14dbeedb6588",
+      "claim_id": "C51",
+      "claim": "SYT1-tdTomato could label synapse in situ in the brain, especially in the glomerular layer of the olfactory bulb.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that SYT1-tdTomato could label synapse in situ in the brain, especially in the glomerular layer of the olfactory bulb.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the colocalization and enrichment data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:25:06.167461Z"
+    },
+    {
+      "id": "ca748850-38e9-4c22-bacd-bfd532a30813",
+      "content_id": "f47082c0-ec24-48a8-8015-14dbeedb6588",
+      "claim_id": "C52",
+      "claim": "In cultured neurons, strong tdTomato fluorescence co-localized with the staining of SYN1.",
+      "claim_type": "EXPLICIT",
+      "source": "In the cultured neurons, we could also observe strong tdTomato fluorescence which co-localized with the staining of SYN1 (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on experimental data from immunostaining shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:25:06.167461Z"
+    },
+    {
+      "id": "f81ab45f-aedb-4457-bd4d-7e88b1f56a7a",
+      "content_id": "f47082c0-ec24-48a8-8015-14dbeedb6588",
+      "claim_id": "C53",
+      "claim": "The SYT1-tdTomato signals co-localized well with synaptic markers including VGLUT1, GAD65, PSD95, Homer-1, and Gephyrin.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results showed that the SYT1-tdTomato signals co-localized well with these synaptic markers (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on experimental data from immunostaining shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:25:06.167461Z"
+    },
+    {
+      "id": "7f804a39-dc0d-414f-b140-5625a03ec3c8",
+      "content_id": "f47082c0-ec24-48a8-8015-14dbeedb6588",
+      "claim_id": "C54",
+      "claim": "The co-localization rate of SYN1 with tdTomato was 70.55 \u00b1 1.447%.",
+      "claim_type": "EXPLICIT",
+      "source": "SYN1-tdTomato: 70.55 \u00b1 1.447%",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on quantification of colocalization data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:25:06.167461Z"
+    },
+    {
+      "id": "cd40ad5e-819c-41bb-afd5-0853b0c009a4",
+      "content_id": "f47082c0-ec24-48a8-8015-14dbeedb6588",
+      "claim_id": "C55",
+      "claim": "The co-localization rate of tdTomato with SYN1 was 48.55 \u00b1 1.851%.",
+      "claim_type": "EXPLICIT",
+      "source": "tdTomato-SYN1: 48.55 \u00b1 1.851%",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on quantification of colocalization data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:25:06.167461Z"
+    },
+    {
+      "id": "1fac56cf-d905-4b02-8bd9-de381c0c6904",
+      "content_id": "f47082c0-ec24-48a8-8015-14dbeedb6588",
+      "claim_id": "C56",
+      "claim": "The co-localization rate of VGLUT1 with tdTomato was 61.09 \u00b1 1.517%.",
+      "claim_type": "EXPLICIT",
+      "source": "VGLUT1-tdTomato: 61.09 \u00b1 1.517%",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on quantification of colocalization data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:25:06.167461Z"
+    },
+    {
+      "id": "33c834a8-75d9-499c-b64e-54ace3dd4d63",
+      "content_id": "f47082c0-ec24-48a8-8015-14dbeedb6588",
+      "claim_id": "C57",
+      "claim": "The co-localization rate of tdTomato with VGLUT1 was 52.88 \u00b1 1.456%.",
+      "claim_type": "EXPLICIT",
+      "source": "tdTomato-VGLUT1: 52.88 \u00b1 1.456%",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on quantification of colocalization data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:25:06.167461Z"
+    },
+    {
+      "id": "9c79ceb1-1309-4fec-ae42-c97427b85df0",
+      "content_id": "f47082c0-ec24-48a8-8015-14dbeedb6588",
+      "claim_id": "C58",
+      "claim": "The co-localization rate of GAD65 with tdTomato was 52.08 \u00b1 2.442%.",
+      "claim_type": "EXPLICIT",
+      "source": "GAD65-tdTomato: 52.08 \u00b1 2.442%",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on quantification of colocalization data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:25:06.167461Z"
+    },
+    {
+      "id": "eb0a90ae-7c85-47b3-905f-6014a73af87e",
+      "content_id": "f47082c0-ec24-48a8-8015-14dbeedb6588",
+      "claim_id": "C59",
+      "claim": "The co-localization rate of tdTomato with GAD65 was 44.43 \u00b1 2.096%.",
+      "claim_type": "EXPLICIT",
+      "source": "tdTomato-GAD65: 44.43 \u00b1 2.096%",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on quantification of colocalization data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:25:06.167461Z"
+    },
+    {
+      "id": "7b01847c-37ed-47c1-82b0-9717eee80344",
+      "content_id": "f47082c0-ec24-48a8-8015-14dbeedb6588",
+      "claim_id": "C60",
+      "claim": "The co-localization rate of PSD95 with tdTomato was 68.50 \u00b1 2.397%.",
+      "claim_type": "EXPLICIT",
+      "source": "PSD95-tdTomato: 68.50 \u00b1 2.397%",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on quantification of colocalization data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:25:06.167461Z"
+    },
+    {
+      "id": "6273d227-c710-4c85-a7aa-2e0b112df998",
+      "content_id": "f47082c0-ec24-48a8-8015-14dbeedb6588",
+      "claim_id": "C61",
+      "claim": "The co-localization rate of tdTomato with PSD95 was 62.38 \u00b1 2.433%.",
+      "claim_type": "EXPLICIT",
+      "source": "tdTomato-PSD95: 62.38 \u00b1 2.433%",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on quantification of colocalization data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:25:06.167461Z"
+    },
+    {
+      "id": "68e3f619-33aa-4219-ab48-b331522c1d3f",
+      "content_id": "f47082c0-ec24-48a8-8015-14dbeedb6588",
+      "claim_id": "C62",
+      "claim": "The co-localization rate of Homer-1 with tdTomato was 61.00 \u00b1 2.127%.",
+      "claim_type": "EXPLICIT",
+      "source": "Homer-1-tdTomato: 61.00 \u00b1 2.127%",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on quantification of colocalization data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:25:06.167461Z"
+    },
+    {
+      "id": "804bff09-507c-4538-8dfd-59003e9cc5e8",
+      "content_id": "f47082c0-ec24-48a8-8015-14dbeedb6588",
+      "claim_id": "C63",
+      "claim": "The co-localization rate of tdTomato with Homer-1 was 62.13 \u00b1 1.703%.",
+      "claim_type": "EXPLICIT",
+      "source": "tdTomato-Homer-1: 62.13 \u00b1 1.703%",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on quantification of colocalization data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:25:06.167461Z"
+    },
+    {
+      "id": "d593f21b-84d6-43e5-b9e8-a00b5fda023b",
+      "content_id": "f47082c0-ec24-48a8-8015-14dbeedb6588",
+      "claim_id": "C64",
+      "claim": "The co-localization rate of Gephyrin with tdTomato was 48.87 \u00b1 2.466%.",
+      "claim_type": "EXPLICIT",
+      "source": "Gephyrin-tdTomato: 48.87 \u00b1 2.466%",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on quantification of colocalization data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:25:06.167461Z"
+    },
+    {
+      "id": "79aba498-1caa-44bd-89f1-7e887a5d1b57",
+      "content_id": "f47082c0-ec24-48a8-8015-14dbeedb6588",
+      "claim_id": "C65",
+      "claim": "The co-localization rate of tdTomato with Gephyrin was 39.36 \u00b1 1.665%.",
+      "claim_type": "EXPLICIT",
+      "source": "tdTomato-Gephyrin: 39.36 \u00b1 1.665%",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on quantification of colocalization data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:25:06.167461Z"
+    },
+    {
+      "id": "3ea6cc2d-510e-4e58-99b2-d4fb4a93dda2",
+      "content_id": "f47082c0-ec24-48a8-8015-14dbeedb6588",
+      "claim_id": "C66",
+      "claim": "SYT1-tdTomato signals localize well to the synaptic site in the neurons from transgenic mice.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that SYT1-tdTomato signals localize well to the synaptic site in the neurons from transgenic mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the colocalization data with multiple synaptic markers.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:25:06.167461Z"
+    },
+    {
+      "id": "c2bcf034-70c3-4324-b4d8-926791d1907c",
+      "content_id": "f47082c0-ec24-48a8-8015-14dbeedb6588",
+      "claim_id": "C67",
+      "claim": "The amplitude of spontaneous action potentials in the neurons of Syt1-tdTomato transgenic mice is not significantly different from WT mice (WT: 84.32 \u00b1 2.930 pA, TG: 78.99 \u00b1 3.325 pA).",
+      "claim_type": "EXPLICIT",
+      "source": "the amplitude, frequency, and half-width of spontaneous action potentials in the neurons of Syt1-tdTomato transgenic mice are not significantly different with the WT mice (Amplitude: WT: 84.32 \u00b1 2.930 pA, TG: 78.99 \u00b1 3.325 pA",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on electrophysiological recordings shown in Figure 5A-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:25:06.167461Z"
+    },
+    {
+      "id": "26f5fcde-5a25-4613-a609-d81bcf5379c0",
+      "content_id": "f47082c0-ec24-48a8-8015-14dbeedb6588",
+      "claim_id": "C68",
+      "claim": "The frequency of spontaneous action potentials in the neurons of Syt1-tdTomato transgenic mice is not significantly different from WT mice (WT: 0.4843 \u00b1 0.1379 Hz, TG: 0.5424 \u00b1 0.1391 Hz).",
+      "claim_type": "EXPLICIT",
+      "source": "Frequency: WT: 0.4843 \u00b1 0.1379 Hz, TG: 0.5424 \u00b1 0.1391 Hz",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on electrophysiological recordings shown in Figure 5A-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:25:06.167461Z"
+    },
+    {
+      "id": "343955e6-89f6-4472-98f0-1c169e7c1120",
+      "content_id": "f47082c0-ec24-48a8-8015-14dbeedb6588",
+      "claim_id": "C69",
+      "claim": "The half-width of spontaneous action potentials in the neurons of Syt1-tdTomato transgenic mice is not significantly different from WT mice (WT: 2.178 \u00b1 0.2616 ms, TG: 2.301 \u00b1 0.2123 ms).",
+      "claim_type": "EXPLICIT",
+      "source": "Half width: WT: 2.178 \u00b1 0.2616 ms, TG: 2.301 \u00b1 0.2123 ms",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on electrophysiological recordings shown in Figure 5A-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:25:06.167461Z"
+    },
+    {
+      "id": "a0489bee-c397-44d5-b352-8951d71d6061",
+      "content_id": "f47082c0-ec24-48a8-8015-14dbeedb6588",
+      "claim_id": "C70",
+      "claim": "Insertion of Syt1-tdTomato does not affect the excitability of neurons in transgenic mice.",
+      "claim_type": "EXPLICIT",
+      "source": "These results demonstrate that insertion Syt1-tdTomato does not affect the excitability of neurons in transgenic mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the lack of significant differences in action potential properties.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:25:06.167461Z"
+    },
+    {
+      "id": "81a2505f-7fd2-4ded-8c8d-5ad29c106a25",
+      "content_id": "f47082c0-ec24-48a8-8015-14dbeedb6588",
+      "claim_id": "C71",
+      "claim": "The amplitude of mEPSCs in Syt1-tdTomato transgenic mice neurons is similar to WT mice (WT: 21.97 \u00b1 1.949 pA, TG: 22.50 \u00b1 1.670 pA).",
+      "claim_type": "EXPLICIT",
+      "source": "both the amplitude and the frequency of mEPSCs and mIPSCs of the Syt1-tdTomato transgenic mice neurons are similar to the WT mice (mEPSCs: Amplitude: WT: 21.97 \u00b1 1.949 pA, TG: 22.50 \u00b1 1.670 pA",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on electrophysiological recordings shown in Figure 5D-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:25:06.167461Z"
+    },
+    {
+      "id": "bb50ff05-78fa-47e2-b368-25853faea3a2",
+      "content_id": "f47082c0-ec24-48a8-8015-14dbeedb6588",
+      "claim_id": "C72",
+      "claim": "The frequency of mEPSCs in Syt1-tdTomato transgenic mice neurons is similar to WT mice (WT: 0.2078 \u00b1 0.06898 Hz, TG: 0.2255 \u00b1 0.05640 Hz).",
+      "claim_type": "EXPLICIT",
+      "source": "Frequency: WT: 0.2078 \u00b1 0.06898 Hz, TG: 0.2255 \u00b1 0.05640 Hz",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on electrophysiological recordings shown in Figure 5D-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:25:06.167461Z"
+    },
+    {
+      "id": "e891c144-d244-4388-b744-c010015c0548",
+      "content_id": "f47082c0-ec24-48a8-8015-14dbeedb6588",
+      "claim_id": "C73",
+      "claim": "The amplitude of mIPSCs in Syt1-tdTomato transgenic mice neurons is similar to WT mice (WT: 28.83 \u00b1 7.330 pA, TG: 31.48 \u00b1 9.982 pA).",
+      "claim_type": "EXPLICIT",
+      "source": "mIPSCs: Amplitude: WT: 28.83 \u00b1 7.330 pA, TG: 31.48 \u00b1 9.982 pA",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on electrophysiological recordings shown in Figure 5G-I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:25:06.167461Z"
+    },
+    {
+      "id": "0b566382-2741-41b3-a07d-b19ec6b2ef63",
+      "content_id": "f47082c0-ec24-48a8-8015-14dbeedb6588",
+      "claim_id": "C74",
+      "claim": "The frequency of mIPSCs in Syt1-tdTomato transgenic mice neurons is similar to WT mice (WT: 0.2942 \u00b1 0.02385 Hz, TG: 0.2728 \u00b1 0.03020 Hz).",
+      "claim_type": "EXPLICIT",
+      "source": "Frequency: WT: 0.2942 \u00b1 0.02385 Hz, TG: 0.2728 \u00b1 0.03020 Hz",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on electrophysiological recordings shown in Figure 5G-I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:25:06.167461Z"
+    },
+    {
+      "id": "3d949cbe-d716-446f-b35d-52ba8b7c382d",
+      "content_id": "f47082c0-ec24-48a8-8015-14dbeedb6588",
+      "claim_id": "C75",
+      "claim": "The expression of SYT1-tdTomato did not influence the kinetics of mEPSCs and mIPSCs.",
+      "claim_type": "EXPLICIT",
+      "source": "An analysis of the rising slope and decay time course of the mEPSCs and mIPSCs (Figure 5F and I) shows no significant differences between Syt1-tdTomato transgenic mice and WT mice, indicating that the expression of SYT1-tdTomato did not influence the kinetics of mEPSCs and mIPSCs.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the lack of significant differences in kinetic parameters.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:25:06.167461Z"
+    },
+    {
+      "id": "36da8605-9aaa-4396-a446-c8d5b78dbc48",
+      "content_id": "f47082c0-ec24-48a8-8015-14dbeedb6588",
+      "claim_id": "C76",
+      "claim": "The insertion of Syt1-tdTomato does not affect basal synaptic transmission.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, our results demonstrate that the insertion of Syt1-tdTomato does not affect basal synaptic transmission.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the lack of significant differences in mEPSCs and mIPSCs properties.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:25:06.167461Z"
+    },
+    {
+      "id": "10277b37-f9ef-416a-9a35-da6bae967d40",
+      "content_id": "f47082c0-ec24-48a8-8015-14dbeedb6588",
+      "claim_id": "C77",
+      "claim": "NLGN2 promotes synapse formation in ASF assays.",
+      "claim_type": "EXPLICIT",
+      "source": "NLGN2 promotes synapse formation in ASF assays which can be used as a positive control (Scheiffele et al., 2000; Sando et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:25:06.167461Z"
+    },
+    {
+      "id": "e4d84a6c-48da-4f7f-bfbd-17676b5b040a",
+      "content_id": "f47082c0-ec24-48a8-8015-14dbeedb6588",
+      "claim_id": "C78",
+      "claim": "A strong accumulation of tdTomato signals was observed around HEK293T cells transfected with NLGN2 and GFP when co-cultured with neurons from Syt1-tdTomato transgenic mice.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed a strong accumulation of tdTomato signals around the transfected HEK293T cells (indicated by GFP).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on experimental data from ASF assays shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:25:06.167461Z"
+    },
+    {
+      "id": "d76590f1-af5c-4afd-8c4f-aca194d190b7",
+      "content_id": "f47082c0-ec24-48a8-8015-14dbeedb6588",
+      "claim_id": "C79",
+      "claim": "The accumulated tdTomato signals overlapped highly with the staining signals of SYN1 in ASF assays.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, the accumulated signals overlapped highly with the staining signals of SYN1 (Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on experimental data from ASF assays shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:25:06.167461Z"
+    },
+    {
+      "id": "4fc8da5f-8950-48ba-8501-83f8b495a633",
+      "content_id": "f47082c0-ec24-48a8-8015-14dbeedb6588",
+      "claim_id": "C80",
+      "claim": "NLGN2, LRRTM2, and SLITRK2 enabled the formation of synaptic connections between transfected HEK293T cells and neurons from Syt1-tdTomato transgenic mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results showed that NLGN2, LRRTM2, and SLITRK2 enabled the formation of synaptic connections between transfected HEK293T cells and neurons from Syt1-tdTomato transgenic mice.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on experimental data from ASF assays shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:25:06.167461Z"
+    },
+    {
+      "id": "f98ef25d-6c0a-4f55-8659-c44ca9b5fa24",
+      "content_id": "f47082c0-ec24-48a8-8015-14dbeedb6588",
+      "claim_id": "C81",
+      "claim": "Both tdTomato signals and stained synapsin signals had the ability to label the synapse accumulated around the HEK293T cells in ASF assays.",
+      "claim_type": "EXPLICIT",
+      "source": "We compared the percentage of synapse-positive HEK293T cells calculated by either tdTomato's signals or the stained synapsin signals as previously reported (Jiang et al., 2017b), and found that both signals had the ability to label the synapse accumulated around the HEK293T cells",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on experimental data from ASF assays shown in Figure 6B and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:25:06.167461Z"
+    },
+    {
+      "id": "8a36cd5a-832c-46a4-9f4d-db09788dfb52",
+      "content_id": "f47082c0-ec24-48a8-8015-14dbeedb6588",
+      "claim_id": "C82",
+      "claim": "The percentage of synapse-positive HEK293T cells for control using SYN1 staining was 6.802 \u00b1 1.329%.",
+      "claim_type": "EXPLICIT",
+      "source": "SYN1: Control: 6.802 \u00b1 1.329%",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on quantification of ASF assay data shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:25:06.167461Z"
+    },
+    {
+      "id": "97bc7382-cf61-4557-aa4d-da9659d15252",
+      "content_id": "f47082c0-ec24-48a8-8015-14dbeedb6588",
+      "claim_id": "C83",
+      "claim": "The percentage of synapse-positive HEK293T cells for NLGN2 using SYN1 staining was 88.65 \u00b1 1.077%.",
+      "claim_type": "EXPLICIT",
+      "source": "NLGN2: 88.65 \u00b1 1.077%",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on quantification of ASF assay data shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:25:06.167461Z"
+    },
+    {
+      "id": "8d6f26b4-f426-4c7d-ae92-92340714fc1b",
+      "content_id": "f47082c0-ec24-48a8-8015-14dbeedb6588",
+      "claim_id": "C84",
+      "claim": "The percentage of synapse-positive HEK293T cells for LRRTM2 using SYN1 staining was 56.69 \u00b1 2.234%.",
+      "claim_type": "EXPLICIT",
+      "source": "LRRTM2: 56.69 \u00b1 2.234%",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on quantification of ASF assay data shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:25:06.167461Z"
+    },
+    {
+      "id": "90ae5921-5bf3-47b6-ad90-e73a2494781a",
+      "content_id": "f47082c0-ec24-48a8-8015-14dbeedb6588",
+      "claim_id": "C85",
+      "claim": "The percentage of synapse-positive HEK293T cells for SLITRK2 using SYN1 staining was 37.82 \u00b1 2.216%.",
+      "claim_type": "EXPLICIT",
+      "source": "SLITRK2: 37.82 \u00b1 2.216%",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on quantification of ASF assay data shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:25:06.167461Z"
+    },
+    {
+      "id": "ebc75b58-78a3-45b7-a75c-ab462808ae88",
+      "content_id": "f47082c0-ec24-48a8-8015-14dbeedb6588",
+      "claim_id": "C86",
+      "claim": "The percentage of synapse-positive HEK293T cells for control using tdTomato signals was 15.70 \u00b1 1.949%.",
+      "claim_type": "EXPLICIT",
+      "source": "tdTomato: Control: 15.70 \u00b1 1.949%",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on quantification of ASF assay data shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:25:06.167461Z"
+    },
+    {
+      "id": "820ef031-e354-4895-a048-5eddb2d68b78",
+      "content_id": "f47082c0-ec24-48a8-8015-14dbeedb6588",
+      "claim_id": "C87",
+      "claim": "The percentage of synapse-positive HEK293T cells for NLGN2 using tdTomato signals was 88.94 \u00b1 0.9419%.",
+      "claim_type": "EXPLICIT",
+      "source": "NLGN2: 88.94 \u00b1 0.9419%",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on quantification of ASF assay data shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:25:06.167461Z"
+    },
+    {
+      "id": "0778bda5-8410-44fc-9de8-45417c677041",
+      "content_id": "f47082c0-ec24-48a8-8015-14dbeedb6588",
+      "claim_id": "C88",
+      "claim": "The percentage of synapse-positive HEK293T cells for LRRTM2 using tdTomato signals was 60.48 \u00b1 2.186%.",
+      "claim_type": "EXPLICIT",
+      "source": "LRRTM2: 60.48 \u00b1 2.186%",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on quantification of ASF assay data shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:25:06.167461Z"
+    },
+    {
+      "id": "9bcb23b3-e831-4c6a-8d72-7354edffbc62",
+      "content_id": "f47082c0-ec24-48a8-8015-14dbeedb6588",
+      "claim_id": "C89",
+      "claim": "The percentage of synapse-positive HEK293T cells for SLITRK2 using tdTomato signals was 48.47 \u00b1 2.469%.",
+      "claim_type": "EXPLICIT",
+      "source": "SLITRK2: 48.47 \u00b1 2.469%",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on quantification of ASF assay data shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:25:06.167461Z"
+    },
+    {
+      "id": "514b430c-e711-4cbc-a079-7b711b0c4a9f",
+      "content_id": "f47082c0-ec24-48a8-8015-14dbeedb6588",
+      "claim_id": "C90",
+      "claim": "Neurons from Syt1-tdTomato transgenic mice are suitable for screening CAMs in an ASF assay.",
+      "claim_type": "EXPLICIT",
+      "source": "According to the above results, we thought that neurons from Syt1-tdTomato transgenic mice are suitable for screening CAMs in an ASF assay.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the successful demonstration of synapse formation with multiple CAMs.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:25:06.167461Z"
+    },
+    {
+      "id": "f19d08e0-8a5f-4a4d-8ccc-3eda1e7ac5eb",
+      "content_id": "f47082c0-ec24-48a8-8015-14dbeedb6588",
+      "claim_id": "C91",
+      "claim": "The authors chose SYT1 as a media to transport tdTomato to the synapse by fusing tdTomato to the C-tail of SYT1.",
+      "claim_type": "EXPLICIT",
+      "source": "We chose SYT1 as a media to transport tdTomato to the synapse by fusing tdTomato to the C-tail of SYT1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental design strategy.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:25:06.167461Z"
+    },
+    {
+      "id": "db0c5673-d1ff-45e0-b94d-f0e92887388f",
+      "content_id": "f47082c0-ec24-48a8-8015-14dbeedb6588",
+      "claim_id": "C92",
+      "claim": "The authors identified the synaptic localization of SYT1-tdTomato.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified the synaptic localization of SYT1-tdTomato",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on experimental data from imaging and colocalization studies.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:25:06.167461Z"
+    },
+    {
+      "id": "0488910e-a348-4419-81c3-de7675dff030",
+      "content_id": "f47082c0-ec24-48a8-8015-14dbeedb6588",
+      "claim_id": "C93",
+      "claim": "Overexpression of SYT1-tdTomato has no effect on synaptic transmission in the transgenic mice and neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "and found that overexpression of SYT1-tdTomato has no effect on synaptic transmission in the transgenic mice and neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on electrophysiological data showing no significant differences.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:25:06.167461Z"
+    },
+    {
+      "id": "2b0f9777-5d63-49b7-9b3f-c53f370b01d3",
+      "content_id": "f47082c0-ec24-48a8-8015-14dbeedb6588",
+      "claim_id": "C94",
+      "claim": "The authors demonstrated the availability of neurons from Syt1-tdTomato transgenic mice for ASF assay.",
+      "claim_type": "EXPLICIT",
+      "source": "We demonstrated the availability of neurons from Syt1-tdTomato transgenic mice for ASF assay",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on experimental data from ASF assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:25:06.167461Z"
+    },
+    {
+      "id": "746d66ff-035d-48fe-8db5-80501ea43ec4",
+      "content_id": "f47082c0-ec24-48a8-8015-14dbeedb6588",
+      "claim_id": "C95",
+      "claim": "The Syt1-tdTomato gene is inserted into the genome position where the brain-specific enhancer is located or neuron-specific topological chromatin domain.",
+      "claim_type": "EXPLICIT",
+      "source": "There might be a possible explanation: The gene of Syt1-tdTomato is inserted into the genome position where the brain-specific enhancer is located or neuron-specific topological chromatin domain (Jiang et al., 2017a; Court et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation for the observed expression pattern, supported by citations.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:25:06.167461Z"
+    },
+    {
+      "id": "b3312f51-dc70-4750-b9ed-5ddb2f02f080",
+      "content_id": "f47082c0-ec24-48a8-8015-14dbeedb6588",
+      "claim_id": "C96",
+      "claim": "The areas of strong SYT1-tdTomato signals are in keeping with previous studies on the distribution of SYT1 in the brain.",
+      "claim_type": "EXPLICIT",
+      "source": "and the areas of strong signals were in keeping with previous studies on the distribution of SYT1 in the brain (Fox and Sanes, 2007; Berton et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:25:06.167461Z"
+    },
+    {
+      "id": "686e4297-8601-4d33-a682-2bba99db8ad9",
+      "content_id": "f47082c0-ec24-48a8-8015-14dbeedb6588",
+      "claim_id": "C97",
+      "claim": "SYT1 is thought to be located at the presynaptic site as a fast calcium sensor on synaptic vesicles.",
+      "claim_type": "EXPLICIT",
+      "source": "Although SYT1 is thought to be located at the presynaptic site as a fast calcium sensor on synaptic vesicles",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This reflects established scientific knowledge about SYT1.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:25:06.167461Z"
+    },
+    {
+      "id": "822a3964-520e-4f6e-a0ed-33c30002c9a5",
+      "content_id": "f47082c0-ec24-48a8-8015-14dbeedb6588",
+      "claim_id": "C98",
+      "claim": "SYT1 was reported to show postsynaptic dendritic distribution.",
+      "claim_type": "EXPLICIT",
+      "source": "it was also reported to show postsynaptic dendritic distribution (Hussain et al., 2017)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Hussain et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:25:06.167461Z"
+    },
+    {
+      "id": "0fdc27b6-162c-4b69-b55a-faf29f9b7a5d",
+      "content_id": "f47082c0-ec24-48a8-8015-14dbeedb6588",
+      "claim_id": "C99",
+      "claim": "SYT1-tdTomato signals do not completely label synaptic sites in cultured neurons, which can be explained by postsynaptic dendritic distribution of SYT1.",
+      "claim_type": "EXPLICIT",
+      "source": "which can explain that SYT1-tdTomato signals do not completely label synaptic sites in cultured neurons (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the colocalization data and prior knowledge about SYT1 distribution.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:25:06.167461Z"
+    },
+    {
+      "id": "8b965be8-2544-4478-9d54-5ae1f66789d0",
+      "content_id": "f47082c0-ec24-48a8-8015-14dbeedb6588",
+      "claim_id": "C100",
+      "claim": "Overexpression of synapsin caused the decrease in basal transmission and an increase in homosynaptic depression.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, overexpression of synaptic vesicle protein synapsin caused the decrease in basal transmission and an increase in homosynaptic depression (Fioravante et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Fioravante et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:25:06.167461Z"
+    },
+    {
+      "id": "aa7ede7c-8cd9-4722-a939-9fb561fd4fd6",
+      "content_id": "f47082c0-ec24-48a8-8015-14dbeedb6588",
+      "claim_id": "C101",
+      "claim": "Overexpression of SAP97 caused the modifications of spine and synapse morphology.",
+      "claim_type": "EXPLICIT",
+      "source": "Overexpression of post-synaptic scaffolding protein SAP97 caused the modifications of spine and synapse morphology (Poglia et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Poglia et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:25:06.167461Z"
+    },
+    {
+      "id": "5cefda9e-4e1b-4cff-bcc4-43bcc06128c0",
+      "content_id": "f47082c0-ec24-48a8-8015-14dbeedb6588",
+      "claim_id": "C102",
+      "claim": "Overexpression of neuroligins caused the change in excitatory and inhibitory synapse properties.",
+      "claim_type": "EXPLICIT",
+      "source": "Overexpression of synaptic CAM neuroligins caused the change in excitatory and inhibitory synapse properties (Chanda et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Chanda et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:25:06.167461Z"
+    },
+    {
+      "id": "a37ed828-4835-4ca4-ae1e-ac1464b2b718",
+      "content_id": "f47082c0-ec24-48a8-8015-14dbeedb6588",
+      "claim_id": "C103",
+      "claim": "C-terminal ECFP Fusion was reported to impair SYT1 function.",
+      "claim_type": "EXPLICIT",
+      "source": "The C-terminal ECFP Fusion was reported to impair SYT1 function (Han et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Han et al., 2005.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:25:06.167461Z"
+    },
+    {
+      "id": "e08aea82-67d3-486c-a929-b45adedd8413",
+      "content_id": "f47082c0-ec24-48a8-8015-14dbeedb6588",
+      "claim_id": "C104",
+      "claim": "The overexpression of C-terminal fused SYT1 might affect the presynaptic neurotransmitter release.",
+      "claim_type": "EXPLICIT",
+      "source": "The overexpression of C-terminal fused SYT1 might affect the presynaptic neurotransmitter release.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about potential effects.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:25:06.167461Z"
+    },
+    {
+      "id": "0cee98de-1102-4108-8e5a-283ac165c7c3",
+      "content_id": "f47082c0-ec24-48a8-8015-14dbeedb6588",
+      "claim_id": "C105",
+      "claim": "Presynaptic neurotransmitter release can signal the organization of the synapse.",
+      "claim_type": "EXPLICIT",
+      "source": "as the presynaptic neurotransmitter release can signal the organization of the synapse (Burlingham et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Burlingham et al., 2022.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:25:06.167461Z"
+    },
+    {
+      "id": "fca7e902-27b3-4525-9cb1-5cd12f03da39",
+      "content_id": "f47082c0-ec24-48a8-8015-14dbeedb6588",
+      "claim_id": "C106",
+      "claim": "The low expression levels of SYT1-tdTomato might explain why the electrophysiological properties of Syt1-tdTomato transgenic mice neurons were not significantly different from WT mice neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "which might be due to that the expression levels of SYT1-tdTomato in the brain of transgenic mice were far less than the native SYT1 (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the expression level data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:25:06.167461Z"
+    },
+    {
+      "id": "1e4736cf-842f-41a1-8dea-a7615760b15f",
+      "content_id": "f47082c0-ec24-48a8-8015-14dbeedb6588",
+      "claim_id": "C107",
+      "claim": "The low expression of SYT1-tdTomato provides better conditions for synaptogenic adhesion molecules screening with fewer effects on synaptic transmission.",
+      "claim_type": "EXPLICIT",
+      "source": "This provides us with better conditions for synaptogenic adhesion molecules screening with fewer effects on synaptic transmission.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the electrophysiological data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:25:06.167461Z"
+    },
+    {
+      "id": "e84ee25f-9885-4790-ab29-b1135ac9b835",
+      "content_id": "f47082c0-ec24-48a8-8015-14dbeedb6588",
+      "claim_id": "C108",
+      "claim": "The low expression of SYT1-tdTomato offers the possibility for Syt1-tdTomato transgenic mice to be used for labeling synapses to facilitate the study of electrophysiological recording and imaging in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "This also offers the possibility for Syt1-tdTomato transgenic mice to be used for labeling synapses to facilitate the study of electrophysiological recording and imaging in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about potential applications.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:25:06.167461Z"
+    },
+    {
+      "id": "6921f814-1f62-4a83-9619-6a422f2a6146",
+      "content_id": "f47082c0-ec24-48a8-8015-14dbeedb6588",
+      "claim_id": "C109",
+      "claim": "Several fluorescently tagged synaptic protein transgenic mice models, such as YFP tagged synaptophysin and pHluorin tagged synaptobrevin, have been developed to label synapses.",
+      "claim_type": "EXPLICIT",
+      "source": "Several fluorescently tagged synaptic protein transgenic mice model, such as YFP tagged synaptophysin and pHluorin tagged synaptobrevin have been developed to label synapses (Umemori et al., 2004; Li et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:25:06.167461Z"
+    },
+    {
+      "id": "a110c8d6-4534-4e70-ad8d-750332fc3e53",
+      "content_id": "f47082c0-ec24-48a8-8015-14dbeedb6588",
+      "claim_id": "C110",
+      "claim": "Overexpression of synaptobrevin or synaptophysin were reported to promote neurite elongation or enhance neurotransmitter secretion.",
+      "claim_type": "EXPLICIT",
+      "source": "Considering the overexpression of synaptobrevin or synaptophysin were reported to promote neurite elongation or enhance neurotransmitter secretion",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This reflects prior research findings, though specific citations are not provided in this sentence.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:25:06.167461Z"
+    },
+    {
+      "id": "603e1a00-2ca1-473f-99d0-720749bb5ab6",
+      "content_id": "f47082c0-ec24-48a8-8015-14dbeedb6588",
+      "claim_id": "C111",
+      "claim": "The synaptic organization and synaptic transmission might be changed in synaptophysin and synaptobrevin overexpression models.",
+      "claim_type": "EXPLICIT",
+      "source": "the synaptic organization and synaptic transmission might be changed in these models.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative inference based on the effects of overexpression.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:25:06.167461Z"
+    },
+    {
+      "id": "0d4019b9-b98c-415e-9965-fe01a339196b",
+      "content_id": "f47082c0-ec24-48a8-8015-14dbeedb6588",
+      "claim_id": "C112",
+      "claim": "Weiping Han et al. have generated transgenic mice expressing a SYT1-ECFP fusion protein.",
+      "claim_type": "EXPLICIT",
+      "source": "Weiping Han et al. in their previous work (Han et al., 2005) have generated transgenic mice expressing a SYT1-ECFP fusion protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Han et al., 2005.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:25:06.167461Z"
+    },
+    {
+      "id": "0b73f277-c13c-40db-8eea-085b6cb6d3be",
+      "content_id": "f47082c0-ec24-48a8-8015-14dbeedb6588",
+      "claim_id": "C113",
+      "claim": "The Syt1-ECFP mice expressed the fluorescent protein ECFP in the cortex, midbrain, and cerebellum.",
+      "claim_type": "EXPLICIT",
+      "source": "The Syt1-ECFP mice expressed the fluorescent protein ECFP in the cortex, midbrain, and cerebellum.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on prior research cited.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:25:06.167461Z"
+    },
+    {
+      "id": "a5398d52-a4a2-4080-877d-96e6dc8eb2b7",
+      "content_id": "f47082c0-ec24-48a8-8015-14dbeedb6588",
+      "claim_id": "C114",
+      "claim": "In the olfactory bulb, the SYT1-tdTomato signals were highly enriched in glomerular layer in the current model, which was not observed in the previously reported Syt1-ECFP transgenic mice.",
+      "claim_type": "EXPLICIT",
+      "source": "In the olfactory bulb, the SYT1-tdTomato signals were highly enriched in glomerular layer in our model, which was not observed in the previously reported Syt1-ECFP transgenic mice (Han et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on comparison with prior research.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:25:06.167461Z"
+    },
+    {
+      "id": "e4c38850-fe2a-4cff-8806-91b604ed0876",
+      "content_id": "f47082c0-ec24-48a8-8015-14dbeedb6588",
+      "claim_id": "C115",
+      "claim": "The enrichment of SYT1-tdTomato in the glomerular layer suggests a potential application of the current model in labeling synapses in the glomerular layer of olfactory bulb compared with Syt1-ECFP transgenic mice.",
+      "claim_type": "EXPLICIT",
+      "source": "It suggested a potential application of our model in labeling synapses in the glomerular layer of olfactory bulb compared with Syt1- ECFP transgenic mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observed enrichment.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:25:06.167461Z"
+    },
+    {
+      "id": "be274238-5dce-4da7-97f7-f137bc1eabc1",
+      "content_id": "f47082c0-ec24-48a8-8015-14dbeedb6588",
+      "claim_id": "C116",
+      "claim": "Synaptophysin-YFP was used to label neurites in pontine or vestibular explants-neuronal granule cells co-culture assay.",
+      "claim_type": "EXPLICIT",
+      "source": "In the previous work synaptophysin-YFP was used to label neurites in pontine or vestibular explants-neuronal granule cells co-culture assay (Umemori et al., 2004)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Umemori et al., 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:25:06.167461Z"
+    },
+    {
+      "id": "a06e8ea6-333f-490e-b738-13c872c4d76d",
+      "content_id": "f47082c0-ec24-48a8-8015-14dbeedb6588",
+      "claim_id": "C117",
+      "claim": "The use of synaptophysin-YFP provided the idea that synaptic labeling neurons could be used for visualizing artificial synapse formation between neurons and non-neuronal cells.",
+      "claim_type": "EXPLICIT",
+      "source": "it provided us with an idea that the synaptic labeling neurons could be used for visualizing artificial synapse formation between neurons and non-neuronal cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on prior work.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:25:06.167461Z"
+    },
+    {
+      "id": "06f94c90-17e8-4b57-b1b4-37bfa9dc8f4c",
+      "content_id": "f47082c0-ec24-48a8-8015-14dbeedb6588",
+      "claim_id": "C118",
+      "claim": "NLGN2, LRRTM2, and SLITRK2 are mainly expressed at the postsynaptic site.",
+      "claim_type": "EXPLICIT",
+      "source": "Because NLGN2, LRRTM2, and SLITRK2 are mainly expressed at the postsynaptic site",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This reflects established knowledge about these proteins.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:25:06.167461Z"
+    },
+    {
+      "id": "5c7eb998-0fcf-4d10-82ac-4575db52ea2f",
+      "content_id": "f47082c0-ec24-48a8-8015-14dbeedb6588",
+      "claim_id": "C119",
+      "claim": "NLGN2, LRRTM2, and SLITRK2 can be recognized by presynaptic terminals marked by SYT1-tdTomato to form intact synapses.",
+      "claim_type": "EXPLICIT",
+      "source": "they can be recognized by presynaptic terminals marked by SYT1-tdTomato to form intact synapses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the ASF assay results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:25:06.167461Z"
+    },
+    {
+      "id": "298b97ac-a02c-4b34-9d83-e6f5313073d1",
+      "content_id": "f47082c0-ec24-48a8-8015-14dbeedb6588",
+      "claim_id": "C120",
+      "claim": "It remains unclear whether Syt1-tdTomato transgenic mice neurons can be used for screening synaptogenic molecules located at presynaptic site.",
+      "claim_type": "EXPLICIT",
+      "source": "Even though it has been suggested that SYT1 is also expressed postsynaptic site, it remains unclear to us whether Syt1-tdTomato transgenic mice neurons can be used for screening synaptogenic molecules located at presynaptic site.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the limitations and uncertainties of the current model.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:25:06.167461Z"
+    },
+    {
+      "id": "527d28be-a053-4ca1-8606-993caa01bd64",
+      "content_id": "f47082c0-ec24-48a8-8015-14dbeedb6588",
+      "claim_id": "C121",
+      "claim": "The authors have started to construct a transgenic fluorescent mice model that expresses fluorescent proteins and specifically transports them to postsynaptic spines.",
+      "claim_type": "EXPLICIT",
+      "source": "In order to establish a complete screening system, we have also started to construct the transgenic fluorescent mice model that expresses fluorescent proteins and specifically transports them to postsynaptic spines.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes ongoing work by the authors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:25:06.167461Z"
+    },
+    {
+      "id": "873b5581-6d75-4c5e-a82f-ab23c4bbfb32",
+      "content_id": "f47082c0-ec24-48a8-8015-14dbeedb6588",
+      "claim_id": "C122",
+      "claim": "The ASF assays using Syt1-tdTomato transgenic mice have skipped the necessity of immunostaining.",
+      "claim_type": "EXPLICIT",
+      "source": "The ASF assays using Syt1-tdTomato transgenic mice to screen for synaptogenic molecules have skipped the necessity of immunostaining.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the experimental results from ASF assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:25:06.167461Z"
+    },
+    {
+      "id": "67a1d2c8-033b-4fa0-b70a-3ddb098e47b5",
+      "content_id": "f47082c0-ec24-48a8-8015-14dbeedb6588",
+      "claim_id": "C123",
+      "claim": "The current ASF assay can only test the synapse accumulation around HEK293T cells which are transfected with the same plasmid.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we still can only test the synapse accumulation around HEK293T cells which are transfected with the same plasmid.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the current limitations of the method.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:25:06.167461Z"
+    },
+    {
+      "id": "ae41bd03-145b-4c65-9090-2852b84bd82c",
+      "content_id": "f47082c0-ec24-48a8-8015-14dbeedb6588",
+      "claim_id": "C124",
+      "claim": "The current ASF assay requires large numbers of neurons and HEK293T cells for large-scale screening.",
+      "claim_type": "EXPLICIT",
+      "source": "It requires large numbers of neurons and HEK293T cells for large-scale screening.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the current limitations of the method.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:25:06.167461Z"
+    },
+    {
+      "id": "43e5a62d-f865-40f1-939d-95018921bfea",
+      "content_id": "f47082c0-ec24-48a8-8015-14dbeedb6588",
+      "claim_id": "C125",
+      "claim": "The authors are examining the co-culture of neurons with multiple HEK293T cells transfected with different plasmids in the same well to optimize the screening process.",
+      "claim_type": "EXPLICIT",
+      "source": "To optimize the screening process for large-scale and high-throughput screening, we are examining the co-culture of neurons with multiple HEK293T cells transfected with different plasmids in the same well.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes ongoing work by the authors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:25:06.167461Z"
+    },
+    {
+      "id": "be527025-eb88-4a13-9b67-1ac8c42375b1",
+      "content_id": "f47082c0-ec24-48a8-8015-14dbeedb6588",
+      "claim_id": "C126",
+      "claim": "Single-cell picking and single-cell sequencing can be used to identify the genotype of synapse-accumulated HEK293T cells in the co-culture system.",
+      "claim_type": "EXPLICIT",
+      "source": "The synapse-accumulated HEK293T cells in the co-culture system can be separated by cell digestion, single-cell picking, and single-cell sequencing can be used to identify the genotype of the picked cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed methodology for future optimization.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:25:06.167461Z"
+    },
+    {
+      "id": "c27fb3af-21cb-40b8-a46e-926b73d66a20",
+      "content_id": "f47082c0-ec24-48a8-8015-14dbeedb6588",
+      "claim_id": "C127",
+      "claim": "If the proposed optimization works, it will largely improve the throughput of screening in ASF assay.",
+      "claim_type": "EXPLICIT",
+      "source": "If it works, it will largely improve the throughput of screening in ASF assay.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about potential future improvements.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:25:06.167461Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "b3980f57-d9e6-43d4-a25d-533ed7119b31",
+      "content_id": "f47082c0-ec24-48a8-8015-14dbeedb6588",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors successfully generated Syt1-tdTomato transgenic mice using the PiggyBac transposon system. The expression vector was confirmed by restriction enzyme digestion (C35, C36), and SYT1-tdTomato protein expression was detected in brain tissues (cortex, hippocampus, cerebellum, olfactory bulb) but at levels far lower than native SYT1 (C37-C41).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The construction and validation of the transgenic mice are well-documented with appropriate molecular biology techniques (restriction digestion, immunoblotting). The low expression level relative to native SYT1 (C40) is demonstrated by Western blot (Figure 1D) and provides important context for interpreting functional effects.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:25:06.167461Z"
+    },
+    {
+      "id": "6e765a32-0cc6-4879-8676-7c3cbb4f5d6a",
+      "content_id": "f47082c0-ec24-48a8-8015-14dbeedb6588",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "SYT1-tdTomato signals were widely distributed across multiple brain regions including hippocampus, cortex, cerebellum, and olfactory bulb, with region-specific patterns matching known synapse-rich areas. In hippocampus, signals were bright in stratum oriens and radiatum but absent in stratum pyramidale (C43); in cerebellum, signals were stronger in molecular versus granular layer (C44); in olfactory bulb, bright signals appeared in glomerular layer (C45).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The distribution patterns are well-documented with fluorescence imaging (Figure 2) and are consistent with known SYT1 expression patterns cited from prior literature (C96). The anatomical specificity strengthens the claim that the transgene labels synaptic regions appropriately.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:25:06.167461Z"
+    },
+    {
+      "id": "63701e26-702a-484c-87a3-5e4d729ca804",
+      "content_id": "f47082c0-ec24-48a8-8015-14dbeedb6588",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "SYT1-tdTomato signals colocalized with synapsin-1 (SYN1), a widely-used synaptic marker, in brain tissue sections. Colocalization was observed in hippocampus, cerebellum, and olfactory bulb (C47-C48). Quantification showed significantly higher SYT1-tdTomato intensity in the glomerular layer versus external plexiform layer of olfactory bulb (C49), indicating enrichment in this synapse-rich region (C50-C51).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The colocalization with SYN1 is demonstrated through immunostaining and confocal imaging (Figure 3A-B). Quantitative analysis (Figure 3C) provides statistical support (p<0.001) for the enrichment claim. This validates that SYT1-tdTomato labels synapses in situ.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:25:06.167461Z"
+    },
+    {
+      "id": "6604a773-6691-4dfa-b0bf-d801cc4509d9",
+      "content_id": "f47082c0-ec24-48a8-8015-14dbeedb6588",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "In cultured hippocampal neurons, SYT1-tdTomato signals colocalized with multiple pre- and postsynaptic markers including SYN1, VGLUT1, GAD65, PSD95, Homer-1, and Gephyrin. Colocalization rates ranged from ~40-70% depending on the marker and direction of analysis (C54-C65), indicating that SYT1-tdTomato localizes well to synaptic sites (C66).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The colocalization is demonstrated with multiple independent synaptic markers (Figure 4), providing convergent evidence. The quantification (Figure 4C) shows substantial but incomplete colocalization, which is appropriately interpreted given that SYT1 may have some postsynaptic localization (C98-C99). The use of both excitatory and inhibitory markers strengthens the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:25:06.167461Z"
+    },
+    {
+      "id": "3547d4f8-2986-44ff-83b9-572bceb58aab",
+      "content_id": "f47082c0-ec24-48a8-8015-14dbeedb6588",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Cultured hippocampal neurons from Syt1-tdTomato transgenic mice showed normal neuronal excitability compared to wild-type neurons. Action potential amplitude (WT: 84.32\u00b12.93 pA vs TG: 78.99\u00b13.33 pA), frequency (WT: 0.48\u00b10.14 Hz vs TG: 0.54\u00b10.14 Hz), and half-width (WT: 2.18\u00b10.26 ms vs TG: 2.30\u00b10.21 ms) were not significantly different (C67-C69), demonstrating that Syt1-tdTomato insertion does not affect neuronal excitability (C70).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The electrophysiological characterization (Figure 5A-C) provides appropriate functional validation. Statistical analysis shows no significant differences (p>0.05 for all parameters), and sample sizes appear adequate (WT: n=43/3; TG: n=45/3). This addresses a critical concern about whether the transgene disrupts normal neuronal function.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:25:06.167461Z"
+    },
+    {
+      "id": "87078e4f-f23d-442d-8170-44a9ca199a45",
+      "content_id": "f47082c0-ec24-48a8-8015-14dbeedb6588",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Basal synaptic transmission was normal in Syt1-tdTomato transgenic neurons. Both mEPSCs and mIPSCs showed similar amplitude and frequency between transgenic and wild-type neurons (C71-C74). Analysis of kinetics (rising slope and decay time) also showed no significant differences (C75), indicating that SYT1-tdTomato expression does not affect basal synaptic transmission (C76).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The comprehensive electrophysiological analysis (Figure 5D-I) examines both excitatory and inhibitory synaptic transmission with appropriate parameters. The lack of significant differences across multiple measures (amplitude, frequency, kinetics) provides strong evidence that the transgene does not disrupt synaptic function. Sample sizes are adequate (mEPSCs: WT n=21/3, TG n=26/3; mIPSCs: WT n=59/4, TG n=59/4).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:25:06.167461Z"
+    },
+    {
+      "id": "52d5c696-91c4-486c-8966-98e6cc6e36c6",
+      "content_id": "f47082c0-ec24-48a8-8015-14dbeedb6588",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Neurons from Syt1-tdTomato transgenic mice successfully formed synaptic connections with HEK293T cells expressing known synaptogenic CAMs (NLGN2, LRRTM2, SLITRK2) in artificial synapse formation (ASF) assays without requiring immunostaining (C12, C33). tdTomato signals accumulated around transfected cells and overlapped with SYN1 staining (C78-C79). Quantification showed that both tdTomato and SYN1 signals could identify synapse-positive cells with similar percentages (C81-C89), demonstrating suitability for CAM screening (C90).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The ASF assay validation (Figure 6) demonstrates the key application of this transgenic line. The use of established positive controls (NLGN2, LRRTM2, SLITRK2) is appropriate, and the comparison between tdTomato and SYN1 staining shows comparable detection capabilities. The elimination of immunostaining represents a significant methodological advance for screening applications. Statistical analysis (one-way ANOVA, p<0.001) supports the conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:25:06.167461Z"
+    },
+    {
+      "id": "e5d44c3e-a707-4481-b692-31e9694833bf",
+      "content_id": "f47082c0-ec24-48a8-8015-14dbeedb6588",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The authors speculate that the brain-specific expression pattern of Syt1-tdTomato may result from insertion near brain-specific enhancers or neuron-specific topological chromatin domains (C95), and note that the distribution pattern is consistent with previous studies of SYT1 localization (C96).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While the expression pattern is well-documented, the mechanistic explanation (C95) is speculative and supported only by analogy to other systems via citations. The insertion site was not mapped, so the actual genomic context is unknown. The consistency with prior SYT1 distribution studies (C96) provides some validation but doesn't confirm the proposed mechanism.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:25:06.167461Z"
+    },
+    {
+      "id": "ac057570-42b1-4650-80c4-5e7226465430",
+      "content_id": "f47082c0-ec24-48a8-8015-14dbeedb6588",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The incomplete colocalization of SYT1-tdTomato with synaptic markers in cultured neurons (Figure 4C) is explained by the fact that SYT1, while primarily presynaptic, has also been reported to show postsynaptic dendritic distribution (C98-C99).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The explanation is supported by citation to prior work (Hussain et al., 2017) demonstrating postsynaptic SYT1 localization. This provides a reasonable interpretation for the incomplete colocalization observed in the quantification data (C54-C65). The interpretation is consistent with the data and appropriately acknowledges complexity in SYT1 localization.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:25:06.167461Z"
+    },
+    {
+      "id": "3fe1d45d-c07a-4d63-8973-ee40f97f53f6",
+      "content_id": "f47082c0-ec24-48a8-8015-14dbeedb6588",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The authors discuss that overexpression of various synaptic proteins can affect synaptic function (C100-C103), and that C-terminal fusion can impair SYT1 function (C103-C104). They propose that the low expression level of SYT1-tdTomato relative to native SYT1 (C106) explains why no functional deficits were observed, providing better conditions for CAM screening (C107).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The discussion appropriately contextualizes the results within prior literature on overexpression effects. The inference that low expression levels (demonstrated in Figure 1D) explain the lack of functional phenotype (demonstrated in Figure 5) is reasonable and supported by the data. This interpretation strengthens the utility of the model for screening applications.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:25:06.167461Z"
+    },
+    {
+      "id": "8088e5fd-f0bf-4fe0-9146-fc1762c38ba4",
+      "content_id": "f47082c0-ec24-48a8-8015-14dbeedb6588",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The authors compare their Syt1-tdTomato model to previous fluorescent synaptic protein transgenic mice (synaptophysin-YFP, synaptobrevin-pHluorin, Syt1-ECFP). They note that their model shows enrichment in the olfactory bulb glomerular layer not observed in Syt1-ECFP mice (C114), suggesting a potential advantage for labeling synapses in this region (C115).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The comparison to prior models is appropriate and supported by citations. The specific difference in olfactory bulb expression (C114) is documented in the current data (Figures 2D, 3C) and represents a genuine distinction from the Han et al. 2005 model. However, the mechanistic basis for this difference is not explored.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:25:06.167461Z"
+    },
+    {
+      "id": "3a5844b1-a6f7-4f0a-a80f-fdac0150d4b1",
+      "content_id": "f47082c0-ec24-48a8-8015-14dbeedb6588",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The authors suggest potential future applications including in vivo electrophysiology and imaging (C108), acknowledge uncertainty about screening presynaptic CAMs (C120), and report ongoing construction of a complementary postsynaptic labeling model (C121).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "These are forward-looking statements about potential applications and ongoing work. C108 is speculative about in vivo applications not tested in the manuscript. C120 appropriately identifies a limitation regarding presynaptic CAM screening. C121 describes work in progress without results. These represent reasonable future directions but are not supported by data in the current manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:25:06.167461Z"
+    },
+    {
+      "id": "31fbe025-3318-4fe8-9cb4-cd905c2806dc",
+      "content_id": "f47082c0-ec24-48a8-8015-14dbeedb6588",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The authors note that their ASF assay eliminates immunostaining (C122) but acknowledge current limitations: only one plasmid can be tested per well (C123), requiring large numbers of cells for screening (C124). They describe ongoing optimization using multiplexed co-culture with single-cell sequencing to identify positive cells (C125-C126), which could improve throughput (C127).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "The elimination of immunostaining (C122) is demonstrated in the results (Figure 6). However, the limitations (C123-C124) and proposed solutions (C125-C127) represent methodological challenges and speculative future improvements not validated in the current work. The proposed multiplexing approach is reasonable but unproven.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:25:06.167461Z"
+    },
+    {
+      "id": "c742c5ae-43b2-4643-8c21-b964f8c6c69c",
+      "content_id": "f47082c0-ec24-48a8-8015-14dbeedb6588",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The introduction provides background on synapses, synapse formation, synaptic CAMs, and the ASF assay methodology, establishing the scientific context and rationale for developing the Syt1-tdTomato transgenic mice.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims represent established scientific knowledge and prior work, appropriately cited throughout. They provide necessary context but are not novel findings of this study. The background accurately represents the field and motivates the experimental approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:25:06.167461Z"
+    },
+    {
+      "id": "26e4b66c-b164-4130-9dd6-bc3dde609403",
+      "content_id": "f47082c0-ec24-48a8-8015-14dbeedb6588",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The authors conclude that Syt1-tdTomato transgenic mice will be a valuable tool for large-scale CAM screening (C34), summarizing their strategy of using SYT1 to transport tdTomato to synapses (C91), demonstrating synaptic localization (C92), showing no effect on synaptic transmission (C93), and validating the ASF assay application (C94).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This summary accurately reflects the major findings demonstrated in the manuscript. The conclusion that the mice will be valuable for screening (C34) is supported by the successful validation experiments (Figures 1-6), though the actual large-scale screening utility remains to be demonstrated in practice. The summary claims (C91-C94) are all supported by the experimental results.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:25:06.167461Z"
+    },
+    {
+      "id": "bada9ea4-2b88-46d8-b07d-194f809c45b1",
+      "content_id": "f47082c0-ec24-48a8-8015-14dbeedb6588",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The authors note that prior work using synaptophysin-YFP in co-culture assays (C116) inspired their approach (C117), and explain that NLGN2, LRRTM2, and SLITRK2 are postsynaptic proteins (C118) that can be recognized by presynaptic terminals marked by SYT1-tdTomato (C119).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The connection to prior work (C116-C117) is appropriately cited (Umemori et al., 2004). The characterization of the test CAMs as postsynaptic (C118) reflects established knowledge, and the inference that they can be recognized by SYT1-tdTomato-labeled presynaptic terminals (C119) is validated by the ASF assay results (Figure 6).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:25:06.167461Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "0fa7f291-c654-497c-aa56-a6ccb799fa40",
+      "result_id": "b3980f57-d9e6-43d4-a25d-533ed7119b31"
+    },
+    {
+      "claim_id": "cf3db881-7de6-412c-8877-f0b79a7ec63d",
+      "result_id": "b3980f57-d9e6-43d4-a25d-533ed7119b31"
+    },
+    {
+      "claim_id": "204e93d6-4884-46d7-aee5-879be06b0635",
+      "result_id": "b3980f57-d9e6-43d4-a25d-533ed7119b31"
+    },
+    {
+      "claim_id": "7f49e731-462c-4eb4-90e8-e2bcd8f0b748",
+      "result_id": "b3980f57-d9e6-43d4-a25d-533ed7119b31"
+    },
+    {
+      "claim_id": "d3e2bfa0-fb7b-4a31-8a8d-9363a932d9c3",
+      "result_id": "b3980f57-d9e6-43d4-a25d-533ed7119b31"
+    },
+    {
+      "claim_id": "9048b3f7-30ae-4f63-9b09-02ff67c50eed",
+      "result_id": "b3980f57-d9e6-43d4-a25d-533ed7119b31"
+    },
+    {
+      "claim_id": "d0b8d2d7-7c69-49a5-80ac-458ad463294f",
+      "result_id": "b3980f57-d9e6-43d4-a25d-533ed7119b31"
+    },
+    {
+      "claim_id": "31bca92c-4d98-445e-a524-33766830fec0",
+      "result_id": "b3980f57-d9e6-43d4-a25d-533ed7119b31"
+    },
+    {
+      "claim_id": "ea03d3b7-7bcd-4bec-95aa-27546a809020",
+      "result_id": "b3980f57-d9e6-43d4-a25d-533ed7119b31"
+    },
+    {
+      "claim_id": "7c935c22-4620-4d39-8fe7-3cc2154693a2",
+      "result_id": "6e765a32-0cc6-4879-8676-7c3cbb4f5d6a"
+    },
+    {
+      "claim_id": "56729e96-df3a-40a3-b176-eb52e2a27b21",
+      "result_id": "6e765a32-0cc6-4879-8676-7c3cbb4f5d6a"
+    },
+    {
+      "claim_id": "3fa7fa4a-83db-48c0-b910-90d652193724",
+      "result_id": "6e765a32-0cc6-4879-8676-7c3cbb4f5d6a"
+    },
+    {
+      "claim_id": "4449e230-b2b6-44bd-8a4c-c87f653cf195",
+      "result_id": "6e765a32-0cc6-4879-8676-7c3cbb4f5d6a"
+    },
+    {
+      "claim_id": "053b97ff-d935-4e98-a061-f16acc507b90",
+      "result_id": "6e765a32-0cc6-4879-8676-7c3cbb4f5d6a"
+    },
+    {
+      "claim_id": "00a8deb6-2e7c-4779-914a-c3ed0e1dd545",
+      "result_id": "6e765a32-0cc6-4879-8676-7c3cbb4f5d6a"
+    },
+    {
+      "claim_id": "8366a3ef-ff62-44a5-939b-3d51f404db6f",
+      "result_id": "6e765a32-0cc6-4879-8676-7c3cbb4f5d6a"
+    },
+    {
+      "claim_id": "08fd2465-d5b8-44e3-a40b-a6770ae6a8b3",
+      "result_id": "63701e26-702a-484c-87a3-5e4d729ca804"
+    },
+    {
+      "claim_id": "053b0967-c884-42d3-807b-db6d11bf60bb",
+      "result_id": "63701e26-702a-484c-87a3-5e4d729ca804"
+    },
+    {
+      "claim_id": "e9571311-003b-450f-84d7-20687a63924c",
+      "result_id": "63701e26-702a-484c-87a3-5e4d729ca804"
+    },
+    {
+      "claim_id": "2b090f2f-fe1b-4f06-86f8-6dfaf53a0831",
+      "result_id": "63701e26-702a-484c-87a3-5e4d729ca804"
+    },
+    {
+      "claim_id": "5738e30a-db61-48b3-9320-4f4d60673fd7",
+      "result_id": "63701e26-702a-484c-87a3-5e4d729ca804"
+    },
+    {
+      "claim_id": "dfd80cd2-403e-4be7-bc56-ee0be399b678",
+      "result_id": "63701e26-702a-484c-87a3-5e4d729ca804"
+    },
+    {
+      "claim_id": "7163626b-47a6-49a9-8385-f64c2591bde4",
+      "result_id": "63701e26-702a-484c-87a3-5e4d729ca804"
+    },
+    {
+      "claim_id": "3b09ab62-2a28-47b5-b888-b4e50214a7dc",
+      "result_id": "6604a773-6691-4dfa-b0bf-d801cc4509d9"
+    },
+    {
+      "claim_id": "ca748850-38e9-4c22-bacd-bfd532a30813",
+      "result_id": "6604a773-6691-4dfa-b0bf-d801cc4509d9"
+    },
+    {
+      "claim_id": "f81ab45f-aedb-4457-bd4d-7e88b1f56a7a",
+      "result_id": "6604a773-6691-4dfa-b0bf-d801cc4509d9"
+    },
+    {
+      "claim_id": "7f804a39-dc0d-414f-b140-5625a03ec3c8",
+      "result_id": "6604a773-6691-4dfa-b0bf-d801cc4509d9"
+    },
+    {
+      "claim_id": "cd40ad5e-819c-41bb-afd5-0853b0c009a4",
+      "result_id": "6604a773-6691-4dfa-b0bf-d801cc4509d9"
+    },
+    {
+      "claim_id": "1fac56cf-d905-4b02-8bd9-de381c0c6904",
+      "result_id": "6604a773-6691-4dfa-b0bf-d801cc4509d9"
+    },
+    {
+      "claim_id": "33c834a8-75d9-499c-b64e-54ace3dd4d63",
+      "result_id": "6604a773-6691-4dfa-b0bf-d801cc4509d9"
+    },
+    {
+      "claim_id": "9c79ceb1-1309-4fec-ae42-c97427b85df0",
+      "result_id": "6604a773-6691-4dfa-b0bf-d801cc4509d9"
+    },
+    {
+      "claim_id": "eb0a90ae-7c85-47b3-905f-6014a73af87e",
+      "result_id": "6604a773-6691-4dfa-b0bf-d801cc4509d9"
+    },
+    {
+      "claim_id": "7b01847c-37ed-47c1-82b0-9717eee80344",
+      "result_id": "6604a773-6691-4dfa-b0bf-d801cc4509d9"
+    },
+    {
+      "claim_id": "6273d227-c710-4c85-a7aa-2e0b112df998",
+      "result_id": "6604a773-6691-4dfa-b0bf-d801cc4509d9"
+    },
+    {
+      "claim_id": "68e3f619-33aa-4219-ab48-b331522c1d3f",
+      "result_id": "6604a773-6691-4dfa-b0bf-d801cc4509d9"
+    },
+    {
+      "claim_id": "804bff09-507c-4538-8dfd-59003e9cc5e8",
+      "result_id": "6604a773-6691-4dfa-b0bf-d801cc4509d9"
+    },
+    {
+      "claim_id": "d593f21b-84d6-43e5-b9e8-a00b5fda023b",
+      "result_id": "6604a773-6691-4dfa-b0bf-d801cc4509d9"
+    },
+    {
+      "claim_id": "79aba498-1caa-44bd-89f1-7e887a5d1b57",
+      "result_id": "6604a773-6691-4dfa-b0bf-d801cc4509d9"
+    },
+    {
+      "claim_id": "3ea6cc2d-510e-4e58-99b2-d4fb4a93dda2",
+      "result_id": "6604a773-6691-4dfa-b0bf-d801cc4509d9"
+    },
+    {
+      "claim_id": "84f03c6b-c1c0-4d0d-9905-81f6c1ec5382",
+      "result_id": "3547d4f8-2986-44ff-83b9-572bceb58aab"
+    },
+    {
+      "claim_id": "c2bcf034-70c3-4324-b4d8-926791d1907c",
+      "result_id": "3547d4f8-2986-44ff-83b9-572bceb58aab"
+    },
+    {
+      "claim_id": "26f5fcde-5a25-4613-a609-d81bcf5379c0",
+      "result_id": "3547d4f8-2986-44ff-83b9-572bceb58aab"
+    },
+    {
+      "claim_id": "343955e6-89f6-4472-98f0-1c169e7c1120",
+      "result_id": "3547d4f8-2986-44ff-83b9-572bceb58aab"
+    },
+    {
+      "claim_id": "a0489bee-c397-44d5-b352-8951d71d6061",
+      "result_id": "3547d4f8-2986-44ff-83b9-572bceb58aab"
+    },
+    {
+      "claim_id": "81a2505f-7fd2-4ded-8c8d-5ad29c106a25",
+      "result_id": "87078e4f-f23d-442d-8170-44a9ca199a45"
+    },
+    {
+      "claim_id": "bb50ff05-78fa-47e2-b368-25853faea3a2",
+      "result_id": "87078e4f-f23d-442d-8170-44a9ca199a45"
+    },
+    {
+      "claim_id": "e891c144-d244-4388-b744-c010015c0548",
+      "result_id": "87078e4f-f23d-442d-8170-44a9ca199a45"
+    },
+    {
+      "claim_id": "0b566382-2741-41b3-a07d-b19ec6b2ef63",
+      "result_id": "87078e4f-f23d-442d-8170-44a9ca199a45"
+    },
+    {
+      "claim_id": "3d949cbe-d716-446f-b35d-52ba8b7c382d",
+      "result_id": "87078e4f-f23d-442d-8170-44a9ca199a45"
+    },
+    {
+      "claim_id": "36da8605-9aaa-4396-a446-c8d5b78dbc48",
+      "result_id": "87078e4f-f23d-442d-8170-44a9ca199a45"
+    },
+    {
+      "claim_id": "9d03d1a0-0587-4a25-8e51-95dd95cf5c37",
+      "result_id": "52d5c696-91c4-486c-8966-98e6cc6e36c6"
+    },
+    {
+      "claim_id": "34d139ca-34c2-4c8b-a8a5-b6ba8755de5b",
+      "result_id": "52d5c696-91c4-486c-8966-98e6cc6e36c6"
+    },
+    {
+      "claim_id": "10277b37-f9ef-416a-9a35-da6bae967d40",
+      "result_id": "52d5c696-91c4-486c-8966-98e6cc6e36c6"
+    },
+    {
+      "claim_id": "e4d84a6c-48da-4f7f-bfbd-17676b5b040a",
+      "result_id": "52d5c696-91c4-486c-8966-98e6cc6e36c6"
+    },
+    {
+      "claim_id": "d76590f1-af5c-4afd-8c4f-aca194d190b7",
+      "result_id": "52d5c696-91c4-486c-8966-98e6cc6e36c6"
+    },
+    {
+      "claim_id": "4fc8da5f-8950-48ba-8501-83f8b495a633",
+      "result_id": "52d5c696-91c4-486c-8966-98e6cc6e36c6"
+    },
+    {
+      "claim_id": "f98ef25d-6c0a-4f55-8659-c44ca9b5fa24",
+      "result_id": "52d5c696-91c4-486c-8966-98e6cc6e36c6"
+    },
+    {
+      "claim_id": "8a36cd5a-832c-46a4-9f4d-db09788dfb52",
+      "result_id": "52d5c696-91c4-486c-8966-98e6cc6e36c6"
+    },
+    {
+      "claim_id": "97bc7382-cf61-4557-aa4d-da9659d15252",
+      "result_id": "52d5c696-91c4-486c-8966-98e6cc6e36c6"
+    },
+    {
+      "claim_id": "8d6f26b4-f426-4c7d-ae92-92340714fc1b",
+      "result_id": "52d5c696-91c4-486c-8966-98e6cc6e36c6"
+    },
+    {
+      "claim_id": "90ae5921-5bf3-47b6-ad90-e73a2494781a",
+      "result_id": "52d5c696-91c4-486c-8966-98e6cc6e36c6"
+    },
+    {
+      "claim_id": "ebc75b58-78a3-45b7-a75c-ab462808ae88",
+      "result_id": "52d5c696-91c4-486c-8966-98e6cc6e36c6"
+    },
+    {
+      "claim_id": "820ef031-e354-4895-a048-5eddb2d68b78",
+      "result_id": "52d5c696-91c4-486c-8966-98e6cc6e36c6"
+    },
+    {
+      "claim_id": "0778bda5-8410-44fc-9de8-45417c677041",
+      "result_id": "52d5c696-91c4-486c-8966-98e6cc6e36c6"
+    },
+    {
+      "claim_id": "9bcb23b3-e831-4c6a-8d72-7354edffbc62",
+      "result_id": "52d5c696-91c4-486c-8966-98e6cc6e36c6"
+    },
+    {
+      "claim_id": "514b430c-e711-4cbc-a079-7b711b0c4a9f",
+      "result_id": "52d5c696-91c4-486c-8966-98e6cc6e36c6"
+    },
+    {
+      "claim_id": "746d66ff-035d-48fe-8db5-80501ea43ec4",
+      "result_id": "e5d44c3e-a707-4481-b692-31e9694833bf"
+    },
+    {
+      "claim_id": "b3312f51-dc70-4750-b9ed-5ddb2f02f080",
+      "result_id": "e5d44c3e-a707-4481-b692-31e9694833bf"
+    },
+    {
+      "claim_id": "686e4297-8601-4d33-a682-2bba99db8ad9",
+      "result_id": "ac057570-42b1-4650-80c4-5e7226465430"
+    },
+    {
+      "claim_id": "822a3964-520e-4f6e-a0ed-33c30002c9a5",
+      "result_id": "ac057570-42b1-4650-80c4-5e7226465430"
+    },
+    {
+      "claim_id": "0fdc27b6-162c-4b69-b55a-faf29f9b7a5d",
+      "result_id": "ac057570-42b1-4650-80c4-5e7226465430"
+    },
+    {
+      "claim_id": "8b965be8-2544-4478-9d54-5ae1f66789d0",
+      "result_id": "3fe1d45d-c07a-4d63-8973-ee40f97f53f6"
+    },
+    {
+      "claim_id": "aa7ede7c-8cd9-4722-a939-9fb561fd4fd6",
+      "result_id": "3fe1d45d-c07a-4d63-8973-ee40f97f53f6"
+    },
+    {
+      "claim_id": "5cefda9e-4e1b-4cff-bcc4-43bcc06128c0",
+      "result_id": "3fe1d45d-c07a-4d63-8973-ee40f97f53f6"
+    },
+    {
+      "claim_id": "a37ed828-4835-4ca4-ae1e-ac1464b2b718",
+      "result_id": "3fe1d45d-c07a-4d63-8973-ee40f97f53f6"
+    },
+    {
+      "claim_id": "e08aea82-67d3-486c-a929-b45adedd8413",
+      "result_id": "3fe1d45d-c07a-4d63-8973-ee40f97f53f6"
+    },
+    {
+      "claim_id": "0cee98de-1102-4108-8e5a-283ac165c7c3",
+      "result_id": "3fe1d45d-c07a-4d63-8973-ee40f97f53f6"
+    },
+    {
+      "claim_id": "fca7e902-27b3-4525-9cb1-5cd12f03da39",
+      "result_id": "3fe1d45d-c07a-4d63-8973-ee40f97f53f6"
+    },
+    {
+      "claim_id": "1e4736cf-842f-41a1-8dea-a7615760b15f",
+      "result_id": "3fe1d45d-c07a-4d63-8973-ee40f97f53f6"
+    },
+    {
+      "claim_id": "6921f814-1f62-4a83-9619-6a422f2a6146",
+      "result_id": "8088e5fd-f0bf-4fe0-9146-fc1762c38ba4"
+    },
+    {
+      "claim_id": "a110c8d6-4534-4e70-ad8d-750332fc3e53",
+      "result_id": "8088e5fd-f0bf-4fe0-9146-fc1762c38ba4"
+    },
+    {
+      "claim_id": "603e1a00-2ca1-473f-99d0-720749bb5ab6",
+      "result_id": "8088e5fd-f0bf-4fe0-9146-fc1762c38ba4"
+    },
+    {
+      "claim_id": "0d4019b9-b98c-415e-9965-fe01a339196b",
+      "result_id": "8088e5fd-f0bf-4fe0-9146-fc1762c38ba4"
+    },
+    {
+      "claim_id": "0b73f277-c13c-40db-8eea-085b6cb6d3be",
+      "result_id": "8088e5fd-f0bf-4fe0-9146-fc1762c38ba4"
+    },
+    {
+      "claim_id": "a5398d52-a4a2-4080-877d-96e6dc8eb2b7",
+      "result_id": "8088e5fd-f0bf-4fe0-9146-fc1762c38ba4"
+    },
+    {
+      "claim_id": "e4c38850-fe2a-4cff-8806-91b604ed0876",
+      "result_id": "8088e5fd-f0bf-4fe0-9146-fc1762c38ba4"
+    },
+    {
+      "claim_id": "e84ee25f-9885-4790-ab29-b1135ac9b835",
+      "result_id": "3a5844b1-a6f7-4f0a-a80f-fdac0150d4b1"
+    },
+    {
+      "claim_id": "298b97ac-a02c-4b34-9d83-e6f5313073d1",
+      "result_id": "3a5844b1-a6f7-4f0a-a80f-fdac0150d4b1"
+    },
+    {
+      "claim_id": "527d28be-a053-4ca1-8606-993caa01bd64",
+      "result_id": "3a5844b1-a6f7-4f0a-a80f-fdac0150d4b1"
+    },
+    {
+      "claim_id": "873b5581-6d75-4c5e-a82f-ab23c4bbfb32",
+      "result_id": "31fbe025-3318-4fe8-9cb4-cd905c2806dc"
+    },
+    {
+      "claim_id": "67a1d2c8-033b-4fa0-b70a-3ddb098e47b5",
+      "result_id": "31fbe025-3318-4fe8-9cb4-cd905c2806dc"
+    },
+    {
+      "claim_id": "ae41bd03-145b-4c65-9090-2852b84bd82c",
+      "result_id": "31fbe025-3318-4fe8-9cb4-cd905c2806dc"
+    },
+    {
+      "claim_id": "43e5a62d-f865-40f1-939d-95018921bfea",
+      "result_id": "31fbe025-3318-4fe8-9cb4-cd905c2806dc"
+    },
+    {
+      "claim_id": "be527025-eb88-4a13-9b67-1ac8c42375b1",
+      "result_id": "31fbe025-3318-4fe8-9cb4-cd905c2806dc"
+    },
+    {
+      "claim_id": "c27fb3af-21cb-40b8-a46e-926b73d66a20",
+      "result_id": "31fbe025-3318-4fe8-9cb4-cd905c2806dc"
+    },
+    {
+      "claim_id": "85e4cc3f-46d1-4272-bcce-a02150e0574c",
+      "result_id": "c742c5ae-43b2-4643-8c21-b964f8c6c69c"
+    },
+    {
+      "claim_id": "a5d8fe63-08bd-4716-976e-2d080e685ad2",
+      "result_id": "c742c5ae-43b2-4643-8c21-b964f8c6c69c"
+    },
+    {
+      "claim_id": "f581d4a0-8559-4413-8024-04ca112e0eff",
+      "result_id": "c742c5ae-43b2-4643-8c21-b964f8c6c69c"
+    },
+    {
+      "claim_id": "b5a97977-fdb7-4374-b348-b4cf36ae3b27",
+      "result_id": "c742c5ae-43b2-4643-8c21-b964f8c6c69c"
+    },
+    {
+      "claim_id": "c982519e-68a4-4c75-aa8e-55bc1b6d708f",
+      "result_id": "c742c5ae-43b2-4643-8c21-b964f8c6c69c"
+    },
+    {
+      "claim_id": "e308a300-46f2-4198-83f1-be6fec02523b",
+      "result_id": "c742c5ae-43b2-4643-8c21-b964f8c6c69c"
+    },
+    {
+      "claim_id": "2ae43abc-ead8-4286-a8c3-ccdb0aad285c",
+      "result_id": "c742c5ae-43b2-4643-8c21-b964f8c6c69c"
+    },
+    {
+      "claim_id": "800730e9-88c7-40b4-be52-8b6061479614",
+      "result_id": "c742c5ae-43b2-4643-8c21-b964f8c6c69c"
+    },
+    {
+      "claim_id": "2a93fdcf-0aea-4396-a908-67f740c45951",
+      "result_id": "c742c5ae-43b2-4643-8c21-b964f8c6c69c"
+    },
+    {
+      "claim_id": "7ab07aea-638c-4735-a714-e4f81e36afe2",
+      "result_id": "c742c5ae-43b2-4643-8c21-b964f8c6c69c"
+    },
+    {
+      "claim_id": "0115258d-e3be-4dd5-b70f-bfcad773e60c",
+      "result_id": "c742c5ae-43b2-4643-8c21-b964f8c6c69c"
+    },
+    {
+      "claim_id": "513548f6-7ce1-45f3-83e2-b23d1e448f3d",
+      "result_id": "c742c5ae-43b2-4643-8c21-b964f8c6c69c"
+    },
+    {
+      "claim_id": "98ca9742-ddf0-41e0-acc8-3a0d16202eb2",
+      "result_id": "c742c5ae-43b2-4643-8c21-b964f8c6c69c"
+    },
+    {
+      "claim_id": "3c0ba1cb-7f9c-4065-a3c6-7f3722804606",
+      "result_id": "c742c5ae-43b2-4643-8c21-b964f8c6c69c"
+    },
+    {
+      "claim_id": "99386a90-e690-4c84-bbb5-04115bfdd72a",
+      "result_id": "c742c5ae-43b2-4643-8c21-b964f8c6c69c"
+    },
+    {
+      "claim_id": "08c92ff3-adbd-4942-a5bf-9164b37a7d42",
+      "result_id": "c742c5ae-43b2-4643-8c21-b964f8c6c69c"
+    },
+    {
+      "claim_id": "4748355d-542f-4635-aa4b-ae6e1c5a0ca7",
+      "result_id": "c742c5ae-43b2-4643-8c21-b964f8c6c69c"
+    },
+    {
+      "claim_id": "c7c22ccc-1026-4094-8e55-cadd5d5fe9af",
+      "result_id": "c742c5ae-43b2-4643-8c21-b964f8c6c69c"
+    },
+    {
+      "claim_id": "20c6a4cd-e6b2-45c7-ac3f-1c548a005127",
+      "result_id": "c742c5ae-43b2-4643-8c21-b964f8c6c69c"
+    },
+    {
+      "claim_id": "3021c09b-968c-47b3-a07d-487ff4e2a0d1",
+      "result_id": "c742c5ae-43b2-4643-8c21-b964f8c6c69c"
+    },
+    {
+      "claim_id": "435f23a9-d402-4544-9366-05eeae0b8c59",
+      "result_id": "c742c5ae-43b2-4643-8c21-b964f8c6c69c"
+    },
+    {
+      "claim_id": "8b12a7d8-e888-4770-8dc3-4681d8f6d92a",
+      "result_id": "26e4b66c-b164-4130-9dd6-bc3dde609403"
+    },
+    {
+      "claim_id": "f19d08e0-8a5f-4a4d-8ccc-3eda1e7ac5eb",
+      "result_id": "26e4b66c-b164-4130-9dd6-bc3dde609403"
+    },
+    {
+      "claim_id": "db0c5673-d1ff-45e0-b94d-f0e92887388f",
+      "result_id": "26e4b66c-b164-4130-9dd6-bc3dde609403"
+    },
+    {
+      "claim_id": "0488910e-a348-4419-81c3-de7675dff030",
+      "result_id": "26e4b66c-b164-4130-9dd6-bc3dde609403"
+    },
+    {
+      "claim_id": "2b0f9777-5d63-49b7-9b3f-c53f370b01d3",
+      "result_id": "26e4b66c-b164-4130-9dd6-bc3dde609403"
+    },
+    {
+      "claim_id": "be274238-5dce-4da7-97f7-f137bc1eabc1",
+      "result_id": "bada9ea4-2b88-46d8-b07d-194f809c45b1"
+    },
+    {
+      "claim_id": "a06e8ea6-333f-490e-b738-13c872c4d76d",
+      "result_id": "bada9ea4-2b88-46d8-b07d-194f809c45b1"
+    },
+    {
+      "claim_id": "06f94c90-17e8-4b57-b1b4-37bfa9dc8f4c",
+      "result_id": "bada9ea4-2b88-46d8-b07d-194f809c45b1"
+    },
+    {
+      "claim_id": "5c7eb998-0fcf-4d10-82ac-4575db52ea2f",
+      "result_id": "bada9ea4-2b88-46d8-b07d-194f809c45b1"
+    }
+  ],
+  "comparisons": []
+}

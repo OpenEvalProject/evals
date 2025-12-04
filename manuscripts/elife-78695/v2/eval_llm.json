@@ -1,0 +1,290 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C92",
+      "C93"
+    ],
+    "result": "Rps27 and Rps27l likely arose during whole-genome duplication(s) in a common vertebrate ancestor, as evidenced by phylogenetic analysis showing two paralogs in nearly all vertebrates but not invertebrates, synteny between the loci, and timing coinciding with known 1R/2R WGD events.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The evolutionary analysis is well-supported by multiple lines of evidence: phylogenetic trees showing distinct clades (C92), synteny analysis (C16-C17), correlation with WGD timing (C75-C80), and consistent identification as ohnologs in systematic studies (C76). The convergence of phylogenetic, syntenic, and temporal evidence provides strong support for WGD origin.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C89",
+      "C90"
+    ],
+    "result": "Rps27 and Rps27l proteins differ by only three N-terminal residues (K5R, P12L, R17K) out of 84 total residues, and these differences are well-conserved among mammals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The protein sequence differences are directly demonstrated through sequence alignment (C10-C11) and multi-species alignment showing conservation (C12). The presence of three introns with corresponding exon junctions (C89-C90) further supports the structural similarity and common origin.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C18",
+      "C19",
+      "C20",
+      "C94",
+      "C97"
+    ],
+    "result": "Rps27 and Rps27l have inversely correlated mRNA abundance across mouse cell types, with highest Rps27 in lymphocytes and highest Rps27l in mammary alveolar cells and hepatocytes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The inverse correlation is demonstrated through multiple independent datasets: Mouse Cell Atlas showing Pearson's r = -0.58 (C2), Tabula Muris (cited), and bulk RNA-seq (C18-C19). RT-qPCR validation (C4) and strong correlation with milk protein transcripts (C20, C97) provide orthogonal confirmation. The consistency across datasets and methods strongly supports this finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C23",
+      "C98",
+      "C99"
+    ],
+    "result": "Differences in Rps27 and Rps27l expression across cell types are not primarily driven by Trp53 activity, despite previous reports of Trp53 regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claim is supported by RT-qPCR showing Trp53 mRNA levels do not correlate with Rps27/Rps27l changes during mammary development, and single-cell data showing inverse correlation between Rps27l and other Trp53 targets (C98-C99). This contradicts the simple model of Trp53-driven expression differences, though it doesn't rule out Trp53 involvement in other contexts.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C25"
+    ],
+    "result": "Both Rps27 and Rps27l are incorporated into actively translating ribosomes (polysomes, 80S, and 40S fractions) and are not detectable in extra-ribosomal protein fractions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Density gradient fractionation with paralog-specific antibodies directly demonstrates incorporation into ribosomal fractions (C29-C31) and absence from extra-ribosomal fractions (C32). This confirms previous reports (C25) and validates the experimental approach for subsequent ribosome profiling studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C33",
+      "C34"
+    ],
+    "result": "The three paralog-specific amino acid positions of Rps27 are solvent-accessible in the ribosome structure and could modulate interactions with other molecules.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the solvent accessibility is demonstrated through structural analysis (C33), the claim that these residues 'could modulate interactions' (C34) is speculative. No direct evidence of differential molecular interactions is provided, and the homogenization experiments (discussed elsewhere) suggest these residues may not have functional significance in vivo.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C5",
+      "C35",
+      "C36",
+      "C37",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Rps27- and Rps27l-ribosomes associate preferentially with different transcripts, with 8 transcripts enriched in Rps27-ribosomes and 46 enriched in Rps27l-ribosomes, the latter showing enrichment for cell cycle-related Gene Ontology terms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The FLAG-IP ribosome profiling approach is well-controlled: FLAG-tagging did not alter total RPF landscape (C101-C102), ribosomes contain only one paralog (C100), and statistical analysis identified differentially enriched transcripts (C35-C36) with GO enrichment (C37). However, the authors appropriately note this demonstrates correlation, not causation, and the functional significance remains unclear given the homogenization results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C6",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C48"
+    ],
+    "result": "Murine Rps27 and Rps27l loss-of-function alleles are homozygous lethal at different developmental stages: Rps27 knockout causes early embryonic lethality (by e8.5), while Rps27l knockout causes postnatal lethality (P13-17).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The differential lethality timing is clearly demonstrated through breeding experiments and genotype analysis (C38-C44). Western blot confirmation of protein loss (C45-C46) validates the alleles. The finding that impaired Rps27 expression impacts viability earlier than Rps27l (C48) is well-supported, though the mechanistic interpretation requires caution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C47",
+      "C106"
+    ],
+    "result": "Rps27l-deficient tissues show increased expression of the intact Rps27 protein, analogous to previously reported compensatory upregulation between RP paralogs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Western blot analysis directly demonstrates increased Rps27 protein in Rps27l-deficient tissues (C47), and this is appropriately contextualized with previous literature showing similar phenomena (C106). This suggests a compensatory mechanism, though the extent and sufficiency of compensation is addressed by the homogenization experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Trp53 loss rescues Rps27l but not Rps27 homozygous knockout lethality, suggesting Rps27 loss disrupts ribosome biogenesis through a mechanism that cannot be mitigated by Trp53 depletion or is more severe than Rps27l loss.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The genetic crosses clearly demonstrate differential rescue by Trp53 loss (C50-C51). The interpretation (C52) is appropriately cautious, presenting two possible explanations. This result is consistent with previous literature on Rps27l rescue and provides new information about Rps27.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Expressing Rps27 protein from the endogenous Rps27l locus (or vice versa) completely rescues loss-of-function lethality, with homogenized mice showing normal genotype ratios and appropriate protein expression changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The homogenization rescue is definitively demonstrated through normal Mendelian ratios (C53) and western blot confirmation of protein swapping (C54-C57). The complete rescue of lethality (C58-C59) is the most critical finding, directly demonstrating functional equivalence of the proteins when expressed from the appropriate loci.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Homogenization of either Rps27 or Rps27l locus has no detectable effect on mouse fitness, organ morphology, tissue histology, or function of tissues that preferentially express either paralog, including mammary glands, liver, and hematopoietic organs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The comprehensive phenotypic characterization is exceptionally thorough: normal weight gain (C60), viability and fertility to 1 year (C61), blinded necropsy showing no differences (C62), normal bloodwork (C63), normal pup weights from homogenized dams (C64), and normal mammary gland morphology (C65-C66). The breadth and rigor of this characterization strongly support the conclusion of functional protein equivalence (C67-C69).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C70",
+      "C71"
+    ],
+    "result": "Homogenization of Rps27 or Rps27l has no detectable effect on liver and hematopoietic organ physiology in 9-10-month-old mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Bloodwork analysis of aged mice (C70) extends the phenotypic characterization to later life stages, demonstrating that functional equivalence persists with aging (C71). This addresses the possibility of age-dependent phenotypes and strengthens the overall conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "MEFs from homogenized mice show normal cell cycle distribution and equivalent survival/proliferation responses to doxorubicin and etoposide treatment, suggesting Rps27 and Rps27l proteins are interchangeable for cellular responses to genotoxic stress.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "EdU/DAPI flow cytometry demonstrates normal cell cycle distribution (C72), and dose-response curves show equivalent drug sensitivity across genotypes (C73). This directly tests the hypothesis that the paralogs might differ in Trp53-related stress responses, and the negative result (C74) further supports functional equivalence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C9",
+      "C115"
+    ],
+    "result": "Rps27 and Rps27l are evolutionarily retained because their subfunctionalized expression patterns render both genes necessary to achieve requisite total expression of two equivalent proteins across cell types, with total expression impacting fitness more than protein sequence differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This integrative conclusion (C9, C115) is well-supported by the combination of: inverse expression patterns, complete rescue by protein swapping, lack of phenotypes in homogenized mice, and lethality of individual knockouts. The dosage-sharing model through subfunctionalized expression is the most parsimonious explanation for all observations. However, the ribosome profiling data showing differential transcript association remains unexplained and suggests some complexity not fully captured by this model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C103",
+      "C104"
+    ],
+    "result": "The hypothesis that Rps27 and Rps27l engage in paralog buffering is disfavored because loss-of-function alleles are lethal in homozygosity even with both alleles of the other paralog intact.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The lethality of homozygous knockouts despite presence of the other paralog (C103) directly contradicts the paralog buffering hypothesis (C104). This is a clear negative result that helps narrow the possible evolutionary mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C26",
+      "C27",
+      "C28",
+      "C49",
+      "C105",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "Previous literature reports differential regulation of Rps27 and Rps27l by Trp53, differential binding to Mdm2, and distinct effects on DNA repair proteins, though the current study's results suggest these differences may not drive the observed expression patterns or be functionally significant in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims accurately summarize previous literature (C21-C22, C26-C28, C49, C105, C109-C114). The evaluation is appropriate because while the citations are accurate, the current study's findings (normal phenotypes in homogenized mice, lack of Trp53-driven expression patterns) suggest these previously reported differences may not be as functionally significant as initially thought. This represents good scientific practice in contextualizing prior work.",
+    "result_type": "MINOR"
+  }
+]

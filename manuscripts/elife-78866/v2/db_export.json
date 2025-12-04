@@ -1,0 +1,1620 @@
+{
+  "submission": {
+    "id": "28effafd-966b-41d6-9e53-ec8957c843eb",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-04T04:18:40.256726Z",
+    "updated_at": "2025-12-04T04:18:40.256726Z"
+  },
+  "content": [
+    {
+      "id": "fb77f3e4-1647-4693-9ebf-0c8c736d348d",
+      "submission_id": "28effafd-966b-41d6-9e53-ec8957c843eb",
+      "content_type": "manuscript",
+      "content_text": "# Nucleosome conformation dictates the histone code\n\n## Authors\n\n- Matthew R Marunde<sup>1</sup> ([ORCID: 0009-0007-5934-7200](https://orcid.org/0009-0007-5934-7200))\n- Harrison A Fuchs<sup>2</sup>\n- Jonathan M Burg<sup>1</sup>\n- Irina K Popova<sup>1</sup>\n- Anup Vaidya<sup>1</sup>\n- Nathan W Hall<sup>1</sup>\n- Ellen N Weinzapfel<sup>1</sup>\n- Matthew J Meiners<sup>1</sup>\n- Rachel Watson<sup>1</sup>\n- Zachary B Gillespie<sup>1</sup>\n- Hailey F Taylor<sup>1</sup>\n- Laylo Mukhsinova<sup>1</sup>\n- Ugochi C Onuoha<sup>1</sup>\n- Sarah A Howard<sup>1</sup>\n- Katherine Novitzky<sup>1</sup>\n- Eileen T McAnarney<sup>1</sup> ([ORCID: 0000-0003-2337-2889](https://orcid.org/0000-0003-2337-2889))\n- Krzysztof Krajewski<sup>4</sup> ([ORCID: 0000-0001-7159-617X](https://orcid.org/0000-0001-7159-617X))\n- Martis W Cowles<sup>1</sup>\n- Marcus A Cheek<sup>1</sup>\n- Zu-Wen Sun<sup>1</sup>\n- Bryan J Venters<sup>1</sup>\n- Michael-C Keogh<sup>1</sup> ([ORCID: 0000-0002-2219-8623](https://orcid.org/0000-0002-2219-8623)) \u2020\n- Catherine A Musselman<sup>2</sup> ([ORCID: 0000-0002-8356-7971](https://orcid.org/0000-0002-8356-7971)) \u2020\n\n### Affiliations\n\n1. EpiCypher Durham United States ([ROR:021skqj79](https://ror.org/021skqj79))\n2. Department of Biochemistry, University of Iowa Carver College of Medicine Aurora United States ([ROR:036jqmy94](https://ror.org/036jqmy94))\n3. Department of Biochemistry and Molecular Genetics, University of Colorado Anschutz Medical Campus Aurora United States ([ROR:03wmf1y16](https://ror.org/03wmf1y16))\n4. Department of Biochemistry and Biophysics, University of North Carolina at Chapel Hill Chapel Hill United States ([ROR:0130frc33](https://ror.org/0130frc33))\n\n\u2020 Corresponding author\n\n## Abstract\n\nHistone post-translational modifications (PTMs) play a critical role in chromatin regulation. It has been proposed that these PTMs form localized \u2018codes\u2019 that are read by specialized regions (reader domains) in chromatin-associated proteins (CAPs) to regulate downstream function. Substantial effort has been made to define [CAP: histone PTM] specificities, and thus decipher the histone code and guide epigenetic therapies. However, this has largely been done using the reductive approach of isolated reader domains and histone peptides, which cannot account for any higher-order factors. Here, we show that the [BPTF PHD finger and bromodomain: histone PTM] interaction is dependent on nucleosome context. The tandem reader selectively associates with nucleosomal H3K4me3 and H3K14ac or H3K18ac, a combinatorial engagement that despite being in cis is not predicted by peptides. This in vitro specificity of the BPTF tandem reader for PTM-defined nucleosomes is recapitulated in a cellular context. We propose that regulatable histone tail accessibility and its impact on the binding potential of reader domains necessitates we refine the \u2018histone code\u2019 concept and interrogate it at the nucleosome level.\n\n## Introduction\n\nThe eukaryotic genome exists in the form of chromatin, with the basic repeating nucleosome subunit a core-histone octamer (two each of H2A, H2B, H3, and H4) wrapped by ~147 base pairs of DNA (Figure 1a; Luger et al., 1997). Chromatin organization is critical for regulation of the underlying genome, and is spatially and temporally controlled through development and within somatic cells. A major potential mechanism to modulate chromatin structure is the posttranslational modification (PTM) of the histone proteins (Figure 1a). Globally speaking, particular histone PTMs are correlated with distinct chromatin states (e.g. transcriptional activation/repression, damaged DNA) and/or genomic elements (e.g. gene promoters, transcriptional enhancers, centromeres) (Wang et al., 2009; Zhou et al., 2011; Rivera and Ren, 2013). Importantly, it has been proposed that the PTMs function in diverse combinations, perhaps even forming a \u2018histone code\u2019 (Strahl and Allis, 2000; Gardner et al., 2011; Lee et al., 2010) read by chromatin associated proteins (CAPs) via their various \u2018reader domains,\u2019 thus localizing and/or regulating CAP activity (Rothbart and Strahl, 2014; Andrews et al., 2016a). However, the dictates of such a code, and the role of reader domains in its interpretation, are hotly debated, as it has been challenging to: determine the PTM pattern(s) read out by tandem domains in vitro, determine whether such patterns are actually being engaged in vivo, and finally determine if this has a biological outcome (Gardner et al., 2011; Rando, 2012; Smith and Shilatifard, 2010; Allis and Jenuwein, 2016). Resolving this situation is critical to define the fundamentals of any histone code, utilize PTM patterns in disease diagnostics, and therapeutically target CAP-PTM associations (Kelly et al., 2010; Ahuja et al., 2016; \u00d6nder et al., 2015; Zaware and Zhou, 2017).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/78866/elife-78866-fig1-v2.jpg)\n\n**Figure 1.:** (a) The nucleosome core particle (NCP) (PDB: 3LZ0): histone N- and C-terminal tails (as defined by trypsin digest) are depicted as dotted lines and to relative scale. (b) Secondary domain architecture of BPTF [Uniprot Q12830; 3,046 aa; 338 kDa]. Region covered by the C-terminal tandem PHD-BD (aa 2865\u20133036; as used through this study) in blue. (c, d) dCypher assay Alpha counts plotted as a function of GST-PHD-BD Query concentration to histone peptide (c) or NCP (d) Targets. (e) Relative EC50 (EC50rel) and 95% confidence interval (CI95) values from dCypher curves (in c, d) and Figure 1\u2014figure supplement 1d and e; for calculation see \u2019Materials and methods\u2019. Targets are color coded as per legends. ND, Not Detected, Not Testable.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/78866/elife-78866-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (a) dCypher is a no-wash bead-based proximity assay on the Alpha platform to interrogate chromatin readers (see \u2019Materials and methods\u2019). PTM-defined biotinylated peptides or NCPs (the potential Targets) are immobilized to streptavidin donor beads and tagged reader domain(s) (the Queries) to anti-tag Acceptor beads. Donor beads are excited at 680 nm causing the release of singlet oxygen and quantitative fluorescence emission (520\u2013620 nm) from proximal acceptor beads (i.e., bridged by a [Query:Target] interaction). (b,c) GST-PHD-BD selectivity (Query concentration as noted; chosen from dCypher curves in Figure 1d and e [EC80rel for H3K4me3 peptide; EC50rel for H3K4me3triac NCP]) for a panel of histone peptides (~100 nM final; b) and NCP (10 nM final; c). (d,e) GST-PHD-BD binding to histone H3 lysine 4 (H3K4) methyl states (me0 /me1/me2/me3) on peptides (d) or NCPs (e). Alpha Counts are plotted as a function of Query concentration. (f) dCypher assay alpha counts plotted as a function of GST-PHD-BD concentration to NCPs. (g) EC50rel values with 95% confidence intervals (CI95) (see \u2019Materials and methods\u2019 for calculation of same) from dCypher curves in (f) with Targets color coded as per legend (see also Supplementary file 1). ND, Not Detected.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/78866/elife-78866-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (a) versaNucs (see \u2019Materials and methods\u2019) (Lanes 1\u20137; post-translational modification (PTM) identity noted, 400 ng total DNA mass) were resolved by native PAGE (6%, 0.4 X TBE) and integrity confirmed by staining with ethidium bromide (vs. Lane 8; 147 \u00d7 601 biotinylated free DNA, 200 ng total DNA mass). (b) versaNucs (Lanes 1\u20137; 2 \u03bcg total protein mass) were resolved by reducing SDS-PAGE (4\u201320%) and histones visualized by Coomassie staining. Control lanes include unmodified nucleosome (native full length H3; EpiCypher #16\u20136006) and versaNuc precursor (H3.1 N\u220632 before enzymatic ligation of H3 peptide; Supplementary file 2D). (c) Indicated purified recombinants (see Supplementary file 2A) were resolved by SDS-PAGE and visualized by Coomassie staining.\n\nAs a starting point, it is necessary to clearly establish the PTM patterns actually engaged by reader domains. To date, the in vitro specificity of individual readers has primarily been determined with modified histone peptides (Andrews et al., 2016a; Patel and Wang, 2013; Musselman et al., 2012), with the selectivity of grouped domains generally derived from a simple sum of individual reader specificities (Patel and Wang, 2013; Ruthenburg et al., 2007). However, many enzymes that act on histone tails show altered activity on peptide and nucleosome substrates (Allali-Hassani et al., 2014; Kim et al., 2020; Strelow et al., 2016; St\u00fctzer et al., 2016; Marabelli et al., 2019; Jain et al., 2023; Thomas et al., 2023; Wang et al., 2023). Similarly, multiple reader domains display modified interaction with histone tail PTMs in the nucleosome context (Morrison et al., 2018; Wang and Hayes, 2007; Gatchalian et al., 2017; Peng et al., 2021; Ruthenburg et al., 2011; Spangler et al., 2023). This suggests a wide-ranging impact of the higher-order environment, and undermines the common approach of using positive peptide data to select nucleosomes for further analysis.\n\nHere, we instead take an unbiased approach to examine how nucleosome context could alter histone PTM pattern readout, using the BPTF PHD-BD tandem reader as a model system. We confirm the generally observed decrease in the affinity of each reader for nucleosomal histone tails relative to peptides, but also a nucleosomal restriction in the preferred PTM pattern. Our data suggests this is largely due to the reduced accessibility of histone tails in the nucleosome context, where the tails must be displaced from DNA to enable PTM readout. This alters the binding of individual domains, and the multivalent engagement of tandem domains. We propose the \u2018histone code\u2019 is ultimately defined by a combination of three elements: (1) the PTMs that can be recognized and bound by individual reader domains; (2) accessibility of the modified histone tails in the nucleosome context; and (3) the organization and multivalent binding potential of grouped domains (where the whole is greater than the sum of the parts).\n\n## Results\n\n### BPTF PHD-BD shows restricted and synergistic binding in the nucleosome context\n\nThe BPTF subunit is important for chromatin association of the NURF (Nucleosome Remodeling Factor) complex (Wysocka et al., 2006; Li et al., 2006), and pro-tumorigenic in several malignancies (Zahid et al., 2021b). At the BPTF C-terminus is a tandem of reader domains: a PHD finger and bromodomain (PHD-BD, Figure 1b). These are of interest for targeted therapeutics (Zahid et al., 2021a), so an understanding of their function has direct application. In the context of histone peptides, the PHD associates with H3 tri-methylated at lysine 4 (H3K4me3) (Li et al., 2006), while the BD binds H3 and H4 tails containing acetylated lysines (Kac), with a preference for H4 (Ruthenburg et al., 2011; Li et al., 2006; Olson et al., 2020). While efforts have been made to investigate the recruitment of BPTF PHD-BD to modified nucleosomes, only a limited subset of H3K4me3/H4Kac combinations based on peptide data have been tested, suggesting a preference for [H3K4me3, H4K5acK8acK12acK16ac (hereafter H4tetraac)] (Ruthenburg et al., 2011) or [H3K4me3, H4K16ac] (Ruthenburg et al., 2011; Nguyen et al., 2014).\n\nTo establish this study, we set out to more comprehensively investigate if context alters the BPTF PHD-BD readout of histone PTMs. To this end, we screened GST- and 6His- tagged forms of the tandem reader (GST-PHD-BD and 6His-PHD-BD) against large panels of biotinylated PTM-defined peptides (287x) and nucleosome core particles (NCPs, wrapped by 147 bp DNA; 59x) using the dCypher approach (Marunde et al., 2022a) on the Alpha platform (Eglen et al., 2008; Quinn et al., 2010; Figure 1\u2014figure supplement 1a). This no-wash bead-based proximity assay allows measurement of the relative EC50 (EC50rel) between Queries: Targets (i.e. readers: histone PTMs) by plotting Alpha Counts (fluorescence) as a function of protein concentration (Marunde et al., 2022a; see Supplementary file 1 for all EC50rel in this study, and \u2019Materials and methods\u2019 for their means of calculation and distinction from an equilibrium Kd).\n\nIn agreement with previous studies (Wysocka et al., 2006; Li et al., 2006), the GST-PHD-BD Query showed strong selectivity for methylated H3K4 peptides over all other methyl-residues represented (me1-2-3 at H3K9, H3K27, H3K36, and H4K20: Figure 1\u2014figure supplement 1b). Also in agreement with previously (Ruthenburg et al., 2011; Nguyen et al., 2014), GST-PHD-BD preferred acetylated H4 tail peptides, though we observed little difference in binding to a multiply acetylated tail vs. any singly acetylated residue on the same (Figure 1c and e and Figure 1\u2014figure supplement 1b). We also observed comparable binding to singly or multiply acetylated H3 tail peptides, though with approximately twofold weaker EC50rel as compared to H4 peptides (Figure 1c and e and Figure 1\u2014figure supplement 1b). Similar results were obtained with a 6His-PHD-BD Query (see \u2019Materials and methods\u2019). Finally, and again in agreement with previously (Chen et al., 2020), we observed no preference for a H3K4me3K9acK14acK18ac (hereafter H3K4me3triac) peptide over those containing each PTM class alone (Figure 1c and e). Thus, peptides provide no support for a \u2018histone code,\u2019 in which multivalent engagement by PHD-BD would be expected stronger than either individual domain to a combinatorially modified substrate.\n\nWe next examined the interaction of GST-PHD-BD with PTM-defined NCPs and found several striking differences. First, the overall affinity for nucleosomes was reduced relative to peptides (Figure 1c\u2013e). Second, NCPs recapitulated only a subset of the interactions observed with peptides (Figure 1c\u2013e and Figure 1\u2014figure supplement 1b and c). Differences included a newfound selectivity for H3K4me3 over the me2 /me1 states (Figure 1\u2014figure supplement 1d and e), and binding to acetylated H3 but not acetylated H4 (Figure 1d and e and Figure 1\u2014figure supplement 1b and c). A third contrast to peptides was a dramatic increase in the affinity of GST-PHD-BD for NCPs containing the H3K4me3triac combinatorial vs. those containing each PTM class alone (26-fold over H3K4me3; 20-fold over H3K4acK9acK14acK18ac (hereafter H3tetraac)) (Figure 1d and e). This last point would support a \u2018histone code\u2019 where reader domains act synergistically to engage preferred PTM patterns.\n\nTo further refine the PTM patterns recognized by GST-PHD-BD in the nucleosome context we tested substrates containing individual acetyl-lysines. We observed a similar EC50rel to H3K4me3triac for H3K4me3K14ac and H3K4me3K18ac, but fourfold weaker for H3K4me3K9ac (Figure 1\u2014figure supplement 1f and g). Notably, crystal structures of BPTF BD in complex with acetylated histone peptides (Ruthenburg et al., 2011) indicate the bromodomain binding pocket can accommodate only one acetyl-lysine. Thus, data supports that PHD-BD preferentially reads out nucleosomal H3K4me3K14ac or H3K4me3K18ac.\n\n### Individual reader domains have reduced affinity and altered specificity in the nucleosome context, with PHD-BD both required for full activity of the tandem module\n\nTo further dissect the contribution of each domain to synergistic binding by PHD-BD, we tested their individual reader ability for peptides and NCPs. As for the PHD-BD tandem, the 6His-PHD affinity for NCPs was reduced relative to peptides (Figure 2\u2014figure supplement 1a\u2013d and Supplementary file 1). Interestingly, while 6His-PHD was preferentially associated with H3K4me3 and approximately twofold weaker to H3K4me3triac peptides, this order was inverted for NCPs (compare Figure 2\u2014figure supplement 1a and c and Figure 2\u2014figure supplement 1b and d). The same affinity trends were observed for GST-PHD, which favored NCPs with H3K4me3 and co-incident acetyl-lysine, but had no preference between K9ac, K14ac, or K18ac (see \u2019Materials and methods\u2019 and Figure 2\u2014figure supplement 1b and e). Regarding the bromodomain, 6His-BD bound both acetylated H3 and H4 peptides, but with a preference for acetylated H4 (Ruthenburg et al., 2011; Figure 2\u2014figure supplement 1a and f). However, when presented with NCPs, it failed to bind any tested targets (Figure 2\u2014figure supplement 1b and g).\n\nTo further investigate the contribution of each domain to tandem activity, we created individual point mutants of the PHD (aromatic cage W2891A; PHDmut) or BD (ZA-loop N3007A; BDmut) (Figure 2a and Supplementary file 2A) to remove functionality but retain domain structure (Wysocka et al., 2006; Li et al., 2006; Figure 2\u2014figure supplement 2). On NCPs, GST-PHDmut-BD lost binding to all tested targets (including H3K4me3, H3tetraac, or H3K4me3triac), while GST-PHD-BDmut bound H3K4me3 weaker than H3K4me3triac but did not associate with H3tetraac (Figure 2b and c). This revealed that even in the tandem context a functional BD is insufficient to mediate NCP binding without a functional PHD.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/78866/elife-78866-fig2-v2.jpg)\n\n**Figure 2.:** (a) The PHD-H3K4me3 (top) and BD-Kac (bottom) binding pockets on previously solved structures of the individual domains in complex with histone peptides (PDB: 2FUU and 3QZT). Binding pockets are circled/labeled: on PHD for A1, R2, and K4me3; on BD for Kac. Relative location of PTM-binding residues W2891 (PHD) and N3007 (BD) also indicated and mutated to alanine in (b, c). (b) dCypher assay Alpha counts plotted as a function of GST-PHD-BDN3007A (GST-PHD-BDmut; top) or GST-PHDW2891A-BD (GST-PHDmut-BD; bottom) Query concentration to NCP Targets. (c) EC50rel (CI95) values from dCypher curves in (b). Targets color coded as per legends. ND, Not Detected.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/78866/elife-78866-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (a\u2013b) EC50rel (with CI95) values calculated from dCypher curves of GST-PHD, 6His-PHD, or 6His-BD Query binding to peptide (a) or nucleosome core particle (NCP) (b) Targets from curves in (c\u2013g), with same color code as per each legend. ND, not detected. -, not tested. (c\u2013e) Alpha counts plotted as a function of 6His-PHD Query concentration for peptide (c) or NCP (d) Targets, or for GST-PHD Query concentration for NCP (e). (f, g) Alpha counts plotted as a function of 6His-BD Query concentration for peptide (f) or NCP (g) Targets. See previously (Marunde et al., 2022a) and \u2019Materials and methods\u2019 regarding comparison of EC50rel across different affinity tags.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/78866/elife-78866-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (a\u2013b) Overlay of the 1H-15N-HSQC spectra of 15N-BPTF BD wild-type (a) and 15N-BPTF BD-N3007A (BDmut) (b) on titration of H4K16ac (1-25) tail peptide (Supplementary file 2D). Molar ratios are color coded as per legend. (c\u2013d) Binding curves for the five resonances with the highest chemical shift perturbations upon addition of peptide to 15N-BPTF BD wild-type (c) and 15N-BPTF BD-N3007A (BDmut) (d). Kd values were calculated using a single site binding isotherm accounting for ligand depletion (see \u2019Materials and methods\u2019) and are denoted on each plot.\n\nThus nucleosome context impacts the BPTF PHD-BD interaction with modified histone tails in a manner that would not be predicted by individual reader domain or histone peptide studies. PHD alone bound H3K4me3, but preferred this in context of H3 tail acetylation and without distinguishing individual acetylated residues (K9ac, K14ac, or K18ac; Figure 2\u2014figure supplement 1b and e). BD alone failed to associate with any NCPs. but when partnered with its endogenous PHD (wild-type) engaged the H3tetraac tail, but not individual acetylated forms (Figure 2b and Figure 1\u2014figure supplement 1c, f and g). Finally, PHD-BD showed a >20-fold preference for H3K4me3triac over H3K4me3 or H3tetraac (Figure 1d and e) and fourfold preference for H3K4me3 paired with H3K14ac or H3K18ac over H3K9ac (Figure 1\u2014figure supplement 1f and g).\n\n### The PHD-BD makes multivalent contacts with the acetylated H3 tail\n\nAs above, in the tandem context, the PHD supports BD association with the H3tetraac tail even where H3K4 is unmethylated. To investigate this, we used NMR spectroscopy to record sequential 1H,15N-HSQC spectra on 15N-labeled PHD-BD after addition of unlabeled H3triac, H3tetraac, or H3K4me3triac peptides (Figure 3a and Figure 3\u2014figure supplement 1a\u2013c). Chemical shift perturbations (CSPs) in BD resonances were observed on addition of all three peptides, indicating ligand engagement. Further, the bound state chemical shift was similar for all three peptides, suggesting an association mechanism independent of H3K4 modification state (Figure 3a). However, for PHD resonances the H3K4 modification state elicited distinct CSPs, with H3tetraac and H3triac showing nearly identical bound state chemical shifts vs. that for H3K4me3triac (Figure 3a). Together this reveals that PHD-BD associates with the acetylated H3 tail likely in a multivalent manner, employing both domains independent of H3K4 modification status, but forming a unique complex when H3K4 is trimethylated.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/78866/elife-78866-fig3-v2.jpg)\n\n**Figure 3.:** (a)1H,15N-HSQC overlays of 15N-PHD-BD apo (black) or in the presence of H3triac (green), H3tetraac (blue), or H3K4me3triac (red) peptides. Arrows denote trajectory of chemical shift perturbation (CSP) and are colored by peptide. Shown are representative resonances for the bromodomain (BD) (left) and plant homeodomain (PHD) (right) binding pockets. (b) Histone H3-A1 is essential for 6His-PHD-BD binding to nucleosome core particles (NCPs) (compare H3K4me3triac to N\u03941H3K4me3triac [integrity of each target confirmed with anti-H3K4me3 (Figure 3\u2014figure supplement 1d)]). dCypher assay Alpha counts are plotted as a function of Query concentration to indicated NCP Targets.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/78866/elife-78866-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (a\u2013c) Full spectral overlays of 15N-PHD-BD on titration with histone H3 tail peptides (aa 1\u201334): H3K4me3triac (a); H3triac (b); or H3tetraac (c). Molar ratios of each peptide are denoted by color in panel legends. (d) Validation of N-terminally truncated H3 NCP (N\u03941H3K4me3triac). Alpha counts plotted as a function of anti-H3K4me3 (RevMab Cat# 31-1039-00, lot # P-09\u201300676) concentration: binding of this antibody is dependent on H4K4me3 (compare H3K4me3 and NCP-unmodified) but independent of residue A1 (N\u03941H3K4me3triac) or acetylation at K9, K14 or K18 (H3K4me3triac). Table shows EC50rel (with CI95) values calculated from dCypher curves. Targets color coded as per legend. ND, not detected.\n\nThe PHD: H3 binding interface includes pockets for histone residues A1, R2, and K4me3 (Li et al., 2006; Figure 2a), with the last needed for robust NCP interaction by an isolated PHD. From our NMR data, we hypothesized the A1 and/or R2 interactions contribute to PHD-BD association with the acetylated H3 tail. To test this, we truncated A1 in the context of H3K4me3triac and observed PHD-BD was unable to bind the resulting NCP (N\u03941) (Figure 3b). Thus, recognition of the H3 N-terminus is critical for BPTF PHD engagement, an observation consistent with the binding mechanism for other PHD fingers (Musselman et al., 2009).\n\n### In the nucleosome context, DNA interactions occlude the H4 tail and alter reader engagement\n\nWe next asked how the BPTF BD interaction with acetylated H4 might be abrogated in nucleosomes, despite robust binding to comparable peptides (Figure 1, Figure 1\u2014figure supplement 1 and Figure 2\u2014figure supplement 1). Reduced reader binding to NCPs relative to peptides in dCypher (e.g. Figure 2\u2014figure supplement 1 and Supplementary file 1) is consistent with our NMR studies showing strong inhibition of PHD binding to H3K4me3 in the nucleosome context (Morrison et al., 2018). There we demonstrated that H3 tail occlusion is due primarily to K/R interactions with the nucleosomal DNA backbone (Morrison et al., 2018; Ghoneim et al., 2021). We thus explored if a similar mechanism operated for the H4 tail.\n\nThe H4 tail is K/R-rich, has decreased dynamics in the nucleosome vs. peptide context, and computational models suggest it may also form a fuzzy complex with DNA (Rabdano et al., 2021). To explore this further, we used NMR spectroscopy with an NCP containing 15N-H4 (Figure 4\u2014figure supplement 1). Due to its large size (~200 kDa) and resultant slow tumbling, only very flexible regions (such as the tails) should be NMR observable using this isotope labeling scheme (Figure 1a). Consistent with previously (Rabdano et al., 2021; Zhou et al., 2012; Kim et al., 2023) we observed resonances for only 15 of the 101 non-proline amino-acids of H4, corresponding to tail residues 1\u201315 (Figure 4). However, this represents only 15/20 possible resonances (assuming fast exchange on the NMR time-scale) for the H4 N-terminal tail (as classified by trypsin accessibility; e.g. Figure 1a; B\u00f6hm and Crane-Robinson, 1984). The severe line-broadening observed for residues 16\u201320 (the H4 tail basic patch: Figure 4\u2014figure supplement 2) indicates this region is likely stably associated with the nucleosome core, in agreement with previous structural and biochemical studies (Zheng and Hayes, 2003) However, the conformation of H4 residues 1\u201315 is less clear.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/78866/elife-78866-fig4-v2.jpg)\n\n**Figure 4.:** (a) Overlay 1H,15N-HSQC spectra of 15N-H4-NCP (black) and 15N-H4-tail peptide (residues 1\u201325, blue). (b) Overlay 1H,15N-HSQC spectra of 15N-H4-tail peptide upon titration of a 21 bp double-stranded DNA. Molar ratios are denoted by color in legend. (c) Overlay 1H,15N-HSQC spectra of 15N-H4-NCP (black) and 15N-H4-tail peptide saturated with DNA (red). (d) Overlay 1H,15N-HSQC spectra of 15N-H4-NCP (black) and 15N-H4KS16ac-NCP (red). (e) Overlay 1H,15N-HSQC spectra of 15N-H4KS16ac-NCP (red) upon titration of BPTF BD (blue). Molar ratios are denoted by color in legend. Note that contour levels are adjusted in (e) relative to (d) for visualization purposes.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/78866/elife-78866-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (a\u2013d) Histones (including 15N-H4) for NMR were individually purified and validated by MALDI mass spectrometry prior to nucleosome core particle (NCP) reconstitution (see \u2019Materials and methods\u2019). (e) The 15N-H4 containing NCP was resolved by native PAGE and stained with ethidium bromide to demonstrate reconstitution/absence of free DNA. (f) 15N-H4 containing NCPs were resolved by reducing SDS-PAGE and Coomassie stained to interrogate histone stoichiometry.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/78866/elife-78866-fig4-figsupp2-v2.jpg)\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/78866/elife-78866-fig4-figsupp3-v2.jpg)\n\n**Figure 4\u2014figure supplement 3.:** (a\u2013c) Installation of the acetyl-lysine analogue was validated by MALDI mass spectrometry and purity of protein by SDS-PAGE (see \u2019Materials and methods\u2019). *denotes contaminants (d) 15N-H4KS16ac containing nucleosome core particle (NCPs) were resolved by reducing SDS-PAGE and Coomassie stained to interrogate histone stoichiometry. (e) The 15N-H4KS16ac containing NCP was resolved by native PAGE and stained with ethidium bromide to demonstrate reconstitution/absence of free DNA. (f) Bromodomain PHD finger transcription factor (BPTF) Bromodomain (BD) purity was assessed by SDS-PAGE.\n\n![Figure 4\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/78866/elife-78866-fig4-figsupp4-v2.jpg)\n\n**Figure 4\u2014figure supplement 4.:** (a\u2013b) Alpha counts plotted as a function of GST-BRD4-BD1 Query concentration for peptide (a) or NCP (b) Targets. (c) EC50rel (with CI95) values calculated from dCypher curves in (a) and (b). Targets color coded as per legends. ND, Not detected. -, Not testable.\n\nTo further investigate any conformational differences between a free tail and that in the nucleosome context, we generated 15N-H4 (1-25) in peptide form. Overlay of the resulting NMR spectra showed CSPs in every H4 tail resonance when comparing peptide and NCP (Figure 4a), consistent with a context-dependent conformation. We next collected sequential 1H,15N-HSQC spectra of the 15N-H4 (1-25) peptide upon addition of unlabeled DNA (Figure 4b), and observed CSPs for every resonance, confirming the H4 tail bound DNA, and every residue is impacted. Overlay of the DNA-bound 15N-H4 peptide and 15N-H4-NCP spectra showed very similar chemical shifts, consistent with the entire H4 tail associating with nucleosomal DNA (Figure 4c), and in-line with previous cross-linking and molecular dynamics simulation studies (Murphy et al., 2017; Karch et al., 2018; Mullahoo et al., 2020). The differential linewidth of resonances indicates the H4 tail has two distinct dynamic regions: residues 1\u201315 likely exchange quickly between multiple conformations on DNA, consistent with a fuzzy complex Fuxreiter, 2018; Tompa and Fuxreiter, 2008; while residues 16\u201320 (the basic patch) exchange much more slowly and/or between fewer states, leading to signal loss. This is distinct from the H3 tail, where every residue experiences fast dynamics consistent with a fuzzy complex. The different behavior of the tails may be related to charge distribution and/or positioning relative to the NCP core.\n\nThe above data supports that, similar to the H3 tail, the H4 tail conformation in the nucleosome context occludes accessibility, and potentially explains the loss of BPTF BD/PHD-BD association with acetylated H4 in dCypher (Figure 1c\u2013e). To investigate this further, we generated a 15N-H4KS16ac-NCP. Relative to unmodified NCP, the acetylated NCP spectra had additional peaks (Figure 4d, Figure 4\u2014figure supplement 3), suggesting this modification weakens the H4 tail interaction with DNA (similar to previously observed with the charge neutralization mimetic H4K16Q Zhou et al., 2012). However, the broadness of the peaks suggests the acetylated H4 basic region (16-20) still interacts more robustly with DNA than H4 tail residues 1\u201315 (or indeed the H3 tail). Titration of BPTF BD into the 15N-H4KS16ac-NCP did not lead to any significant CSPs, supporting that H4K16ac was occluded from binding by this reader in the NCP context (Figure 4e).\n\nTo investigate if the nucleosome abrogates all interactions with the H4 tail we turned to an alternate bromodomain Query (GST-BRD4-BD1; Supplementary file 2A). BRD4-BD1 has previously been shown to bind acetylated H4 tail peptides Filippakopoulos et al., 2012, and dCypher confirmed the strongest EC50rel for H4tetraac over all peptides tested (Figure 4\u2014figure supplement 3a and c). In contrast to BPTF BD, BRD4-BD1 also bound H4tetraac in the nucleosome context, though with weaker affinity than the comparable peptide (EC50rel 7.4 nM NCP vs. 0.7 nM peptide; Figure 4\u2014figure supplement 4b and c). Thus, nucleosomal H4 tail accessibility is reader-dependent (also recently demonstrated for PHIP BD1-BD2 Morgan et al., 2021), and the ability to bind may rely on several factors including overall affinity or different engagement mechanisms. For instance, BRD4 BD1 (unlike BPTF BD) can associate with DNA (Miller et al., 2016; Kalra et al., 2022), and such competition may help disengage the H4 tail from the nucleosome core.\n\nTogether, this suggests that to enable binding in the nucleosome context a reader must be able to displace the modified histone tail from DNA. Tail accessibility can be enhanced by disrupting the DNA interaction via modification of sidechain charge (St\u00fctzer et al., 2016; Morrison et al., 2018), as where distal acetylation of the H3 tail improved BPTF PHD engagement with H3K4me3 (Figure 2\u2014figure supplement 1b, d and e). Notably, acetylation does not fully release the tail from DNA binding (Morrison et al., 2018; Mutskov et al., 1998), such that the PHD still showed weaker association with the H3K3me3triac NCP relative to peptide. This may also explain why BPTF BD alone was insufficient to engage the acetylated H3 or H4 tails in the nucleosome context, since as a weaker binder it cannot effectively displace even acetylated tails to engage its reader function.\n\n### BPTF PHD-BD interacts with nucleosomal H3K4me3triac in cis > trans\n\nAll nucleosome data above were with homotypic NCPs, where both H3 proteins in the octamer were identically modified. As such they cannot address the relative contribution of BPTF PHD-BD binding to their target PTMs in cis or trans. To definitively explore this we synthesized fully defined heterotypic NCPs (\u2019Materials and methods\u2019 and Jain et al., 2023) where PTMs could be independently distributed across each H3 tail (e.g. [H3K4me3K14ac \u2022 H3] vs. [H3K4me3 \u2022 H3K14ac]). In dCypher assays GST-PHD-BD showed 24-fold stronger binding to the cis vs. trans combinatorial context (EC50rel 10.8 nM [H3K4me3K14ac \u2022 H3] vs. 263 nM [H3K4me3 \u2022 H3K14ac]; Figure 5a and b). Furthermore, binding to the trans combinatorial NCP was indistinguishable from [H3K4me3 \u2022 H3], suggesting the tandem reader requires both PTMs in cis, and trans tail engagement is of minimal contribution. Supporting this interaction mechanism, GST-PHD-BD had only slightly improved binding to homotypic H3K4me3K14ac over heterotypic [H3K4me3K14ac \u2022 H3] (EC50rel 7.3 nM vs. 10.8 nM; Figure 5a and b), which would be expected if reader engagement to each nucleosomal H3 tail is an essentially independent event.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/78866/elife-78866-fig5-v2.jpg)\n\n**Figure 5.:** (a) dCypher assay Alpha counts plotted as a function of GST-PHD-BD Query concentration to homotypic (e.g. [H3 \u2022 H3]) or heterotypic (e.g. [H3 \u2022 H3K4me3]) NCP Targets (created as in \u2019Materials and methods\u2019). (b) Relative EC50 (EC50rel) and 95% confidence interval (CI95) values from dCypher curves (in a; for calculation see \u2019Materials and methods\u2019). \u2022 indicates a heterotypic Target. Limited testing data from a 6His-PHD-BD query added for comparison. Targets are color coded as per legends. ND, Not detected; -, Not tested.\n\n### BPTF PHD-BD promotes a specific association with H3K4me3triac in chromatin\n\nThe above data demonstrates that BPTF PHD-BD preferentially associates with nucleosomal H3K4me3K14ac or H3K4me3K18ac in vitro. To investigate if this preference is recapitulated on chromatin, we performed CUT&RUN with antibodies to BPTF, H3K4me3, and H3K18ac in K562 cells (\u2019Materials and methods\u2019 and Supplementary file 2). This identified extensive genomic co-localization of BPTF with each PTM, but the greatest degree of overlap when both are present (Figure 6\u2014figure supplement 1). As a bulk analysis, CUT&RUN is unable to confirm definitive co-enrichment of all elements, with one possible interpretation that these data represent distinct sub-populations. We thus designed a new approach (Reader CUT&RUN; \u2019Materials and methods\u2019) where GST-PHD-BD was complexed with an antibody to GST (\u03b1-GST) to create a CUT&RUN compatible reagent. We also developed DNA-barcoded PTM-defined NCPs (unmodified, H3K4me3, H3tetraac, and H3K4me3triac; Figure 6a) as a CUT&RUN spike-in to monitor assay performance and the GST-PHD-BD preference in situ. In these controlled studies GST-PHD-BD showed a dramatic preference for spike-ins containing the combinatorial signature (H3K4me3triac) relative to each PTM alone (sixfold over H3K4me3, 41-fold over H3tetraac; Figure 6b), recapitulating our dCypher observations (e.g. Figure 1d). The genomic enrichment of GST-PHD-BD further confirmed its combinatorial preference, with binding regions showing extensive overlap with those containing H3K4me3 and H3K18ac (Figure 6c and d). Furthermore, the genomic enrichment of GST-PHD-BD was also highly correlated with that of endogenous BPTF (Figure 6c and d), supporting that the tandem reader domains are sufficient to drive effective in vivo localization.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/78866/elife-78866-fig6-v2.jpg)\n\n**Figure 6.:** (a) CUTANA nucleosome spike-ins contain a 5\u2019biotin for immobilization to magnetic beads and a DNA barcode to define post-translational modification (PTM) status/monitor release into the CUT&RUN eluate. A four-member panel was assembled to explore GST-PHD-BD binding (unmodified, H3K4me3, H3tetraac, H3K4me3triac; on 80-N-25 DNA containing a central 147 bp 601 Nucleosome positioning sequence with embedded 22 bp DNA barcode). (b) GST-PHD-BD shows strong preference for spike-in nucleosome containing H3K4me3triac. Table shows relative release of spike-ins (percent barcoded nucleosome/total barcode reads) in Reader CUT&RUN (\u2019Materials and methods\u2019). Antibodies are noted by column; GST-BPTF (PHD-BD) is detected by \u03b1-GST to facilitate pAG-MNase recruitment. \u2018Nucleosome bandwidth\u2019 is the percentage of total sequence reads taken up by spike-in standards. (c) Heatmap of CUT&RUN signal aligned to the transcription start site (TSS, +/\u22122 kb) of 18,793 genes in K562 cells. Rows were k-means clustered into four groups (boxed) using ChAsE chromatin analysis tool (Younesy et al., 2016). High and low signal (red and blue, respectively) are ranked by / linked to H3K4me3 (top to bottom). (d) CUT&RUN RPKM normalized tracks at representative loci using Integrative Genomics Viewer (IGV, Broad Institute). Note the co-localization of BTPF (endogenous) or GST-PHD-BD (exogenous) with H3K4me3 and H3K18ac; that H3K18ac alone is insufficient to recruit BTPF or GST-PHD-BD; and that GST-PHD-BD shows robust recruitment at some locations where BPTF is absent (e.g. B4GALT2 promoter; see \u2018Discussion\u2019).\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/78866/elife-78866-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (a) Heatmap of CUT&RUN signal (see \u2019Materials and methods\u2019) aligned to the transcription start site (TSS, +/\u22122 kb) of 18,793 genes in K562 cells. High and low signal (red and blue, respectively) are ranked by / linked to H3K4me3 (top to bottom). (b\u2013c) CUT&RUN RPKM normalized tracks at representative loci using Integrative Genomics Viewer (IGV, Broad Institute). Note the general co-localization of BTPF (endogenous) with H3K4me3 and H3K18ac. (d) Venn overlap for H3K4me3, H3K18ac and BPTF peaks. Peaks were called using SEACR, designed for the Sparse Enrichment Analysis of CUT&RUN data Meers et al., 2019, and intersected using bedtools Quinlan, 2014. To compare data sets, the top peaks (number noted for each) were considered. (e) BPTF signal distribution for SEACR peaks represented as a Violin plot, and derived from Venn diagram groups. Column 1 depicts the signal distribution for all 8,405 BPTF peaks. Other columns depict BPTF peaks that overlap with peaks for H3K4me3, H3K18ac, or both PTMs (as noted). The Fisher exact test was used to determine if BPTF co-occupancy with specific PTMs or combinations were statistically significant (**** denotes p-value <10\u20134). See Supplementary file 2E for sequencing statistics; all project files available at Gene Expression Omnibus (GEO) accession GSE150617.\n\n## Discussion\n\nTaken together, our data indicate that nucleosome context strongly influences reader domain engagement with histone PTMs. Previous studies have described reduced reader affinity towards nucleosomes relative to histone tail peptides (Morrison et al., 2018; Wang and Hayes, 2007; Gatchalian et al., 2017; Peng et al., 2021), but here we show that the engaged PTM(s) may also be restricted (e.g. loss of BPTF BD and PHD-BD binding to H4tetraac; Figure 1c\u2013e and Figure 2\u2014figure supplement 1a\u2013b, f\u2013g), or the preferred PTM pattern may be altered (e.g. BPTF PHD having stronger binding to nucleosomal H3K4me3 with coincident tail acetylation; Figure 2\u2014figure supplement 1b and e). We propose this is due (at least in part) to the default association of nucleosomal histone tails with DNA (Ghoneim et al., 2021), which limits accessibility and requires reader domains to compete for tail engagement. As a result, histone PTMs may play multiple roles; weakening the DNA association to increase access for reader domains, providing a platform for reader domain binding, or both. We note this interaction model is largely based on in vitro studies with single nucleosomes (St\u00fctzer et al., 2016; Morrison et al., 2018; Rabdano et al., 2021; Zhou et al., 2012; Musselman and Kutateladze, 2022; Ohtomo et al., 2021; Ohtomo et al., 2023; Zandian et al., 2021; Furukawa et al., 2022; Jennings et al., 2023; Furukawa et al., 2020; Morrison et al., 2021), and thus does not fully capture the chromatin environment. However, via solid-state NMR spectroscopy, a nearly identical conformation of histone tails has also been observed in chromatin arrays (Musselman and Kutateladze, 2022; Shi et al., 2018; Shi et al., 2020; Gao et al., 2013; Xiang et al., 2018), and the H3 tail: DNA interaction has been observed in vivo by ChIP-exo (Rhee et al., 2014). As such, although the full nuclear context is definitively more complex, tail displacement is almost certain to be one factor.\n\nGiven occluded tail conformation in the nucleosome context, multivalent engagement of tandem domains is unlikely to be simply defined by raw potential (i.e. the sum of individually preferred PTMs), but also by binding opportunity. For BPTF PHD-BD, this manifests as a nucleosomal restriction on H4ac tail binding, and a selectivity for H3ac. Note that here we did not test a H3K4me3, H4K16ac combinatorial nucleosome to explore the previously reported BPTF PHD-BD preference (Ruthenburg et al., 2011). However, we do not intend to indicate that other combinations are not possible, but rather highlight a combination that was not predicted by peptide testing. We also note that H3K4me3 is invariably seen in (and most effectively created in) the cis context of H3 tail acetylation (see below) (Jain et al., 2023). As such the combinatorial H3 binding target we have identified for BPTF PHD-BD is also a preferred PTM pattern in vivo, and any nucleosome that contains H3K4me3 and H4K16ac might also be expected to contain H3 tail acetylation.\n\nWe observe multiple ways to combine multivalent contacts along the H3 tail, and thus support productive engagement. In the case of the BPTF PHD-BD tandem, the PHD can associate with H3 A1, R2, and K4me3 (Figure 2a, Figure 3a and b), while the BD can bind K14ac or K18ac (Figure 1\u2014figure supplement 1f\u2013g). Notably, when the H3 tail is only acetylated (as in the H3tetraac NCP) the resulting weakening of the tail/DNA interaction combined with BD binding to Kac and PHD finger binding to A1 and R2 together support weak engagement. Alternatively, for H3K4me3 absent any acetylation, PHD contacts with A1, R2, and K4me3 also support weak NCP engagement. Finally, strong binding occurs when H3K4me3 and H3K14ac or H3K18ac are present, promoting tail displacement and allowing both the PHD and BD to most effectively engage. Thus, within a tail displacement model, tandem domains can accommodate multiple distinct PTM signatures to engage modified nucleosomes. Notably, and as seen here, these may have varying strengths of interaction which in turn may mediate an array of responses within the chromatin landscape, including differences in CAP retention at particular sites, or stabilization at an intermediate modified state. The preference of BPTF PHD-BD for H3K4me3 with H3K14ac or H3K18ac over H3K9ac may be due to the in cis proximity of K9 to H3K4me3, restricting BD binding when the PHD finger is engaged. A corollary may also be important in the preferred cis vs. trans engagement with histone tails (Figure 5).\n\nOur observations on co-incident tail acetylation promoting H3K4 accessibility to BPTF PHD reader (this study) are also exhibited by MLL1C methyltransferase (Jain et al., 2023). There we identified a H3 acetylation-mediated switch that increases tail accessibility in the nucleosome context, and thus improves MLL1C-mediated H3K4 methylation. Evidence for this model includes an increased Kcat (enhanced tail accessibility leads to an increase in substrate concentration), and that H3 acetylation enhances MLL1C activity in cis but has no impact in trans (demonstrated with heterotypic nucleosomes). Furthermore, middle-down MS on bulk chromatin shows that H3 tail acetylation invariably accompanies cis H3K4 methylation. Together these studies strongly support that tail occlusion can have a strong regulatory effect on the epigenome.\n\nWhen moving from the peptide to nucleosome context we (and others) consistently observe individual reader domains to show reduced affinity and restricted specificity (Jain et al., 2023; Morrison et al., 2018; Wang and Hayes, 2007; Gatchalian et al., 2017; Peng et al., 2021; Marunde et al., 2022a; Morgan et al., 2021). An exception to this is readers with intrinsic DNA binding ability, such as the PWWPs. These form multivalent interactions with DNA and histone tails (so peptide studies are often uninformative) (Eidahl et al., 2013; van Nuland et al., 2013; Wang et al., 2020; Dukatz et al., 2019; Tian et al., 2019; Weinberg et al., 2019; Dilworth et al., 2022), but may also act to directly compete for the DNA, thus promoting tail accessibility when the target engaged (Weaver et al., 2018). Indeed, several mechanisms for modulating histone tail conformation can be imagined (Ghoneim et al., 2021). Beyond in cis modification of the target histone tail (as in this study), modification of an adjacent tail may alter the dynamics of the target, such trans-tail crosstalk being recently reported for H3 and H4 (Furukawa et al., 2020). Adjacent DNA binding domains within the same protein or complex may also play a role in displacing the target tail from DNA. Alternatively, histone tail accessibility can be modulated by changes to the canonical nucleosome composition, such as hexasomes depleted of one H2A-H2B dimer (Morrison et al., 2021).\n\nIn reader-CUT&RUN GST-PHD-BD recapitulated the dCypher preference for spike-in Nucs containing the combinatorial target (H3K4me3triac) over each PTM class alone (Figure 6b). Furthermore, GST-PHD-BD localization across the genome was highly correlated with regions that also contain H3K4me3, H3K18ac, and endogenous BPTF (Figure 6c\u2013d). Together, this suggests that the combinatorial readout of these PTMs is indeed a discerning factor in the genomic localization of BPTF: the activity of both domains is clearly important to achieve robust interaction, and thus at minimum critical to achieve proper kinetics on chromatin.\n\nIn an extended analysis of our genomics data, we considered that full-length BPTF (endogenous) could harbor additional regulatory potential over BPTF PHD-BD (exogenous). In this regard, while the dominant signature was where H3K4me3/H3K18ac co-localized with both endogenous and exogenous (Figure 6c\u2013d), we observed numerous locations where the PTM combinatorial overlapped only with exogenous (as at B4GALT2 in Figure 6d), while the contrasting pattern (PTMs only overlapped with endogenous) was a much rarer species. This may be due to the relative level of exogenous to endogenous protein (or the target PTMs), where one might expect a higher abundance of exogenous to extend to locations of lower PTM density. However, peak structure comparison does not appear to support this explanation, as sites retaining exogenous but lacking endogenous are not the weakest H3K4me3+/H3K18ac+ locations. We speculate a more interesting possibility: endogenous BPTF is subject to regulation that further refines its chromatin localization beyond the simple availability of H3K4me3/H3K18ac for its C-terminal PHD-BD. Indeed, there are increasing examples of auto-regulatory elements within CAPs that modulate their activity (Guo et al., 2015; Ruan et al., 2015; Lu et al., 2015; Misaki et al., 2016; Andrews et al., 2016b; Harrison et al., 2016; Ludwigsen et al., 2017; Isaac et al., 2017; Slaughter et al., 2018; Zhang et al., 2019; Tencer et al., 2020; Ren et al., 2020; Ren et al., 2021; Nodelman et al., 2021; Weinberg et al., 2021), suggesting that a histone code is more than the simple availability of potentially redundant positive signals.\n\nIt is becoming increasingly clear that we should interrogate the binding of readers to histone PTMs with more physiological entities: moving away from minimal-domain queries and histone peptide targets to full-length CAPs (or higher order complexes) and nucleosomes, and thus accommodate the regulatory potential on each side. Doubtless, a more thorough mechanistic understanding will reveal novel avenues to target these interactors with therapeutic intent.\n\n## Materials and methods\n\n### BPTF protein constructs and preparation\n\nHuman BPTF (Uniprot Q12830) PHD finger-bromodomain (PHD-BD) and PHD finger were cloned into pGEX6p with an N-terminal Glutathione S-Transferase (GST) tag and a PreScission protease cleavage site (Supplementary file 2A and Figure 1\u2014figure supplement 2). BPTF BD with an N-terminal 6xHistidine (6His) tag and Tobacco Etch Virus (TEV) protease cleavage site was from Addgene (plasmid 39111). The Q5 site-directed mutagenesis kit (New England Biolabs [NEB]) was used for domain addition/removal or single amino acid substitutions. All constructs were expressed in E. coli BL21 (DE3) (Thermo Fisher Scientific or NEB). Cells were grown to OD600 ~1.0 and induced with 0.8 mM IPTG at 18 \u00b0C for ~16 hr in LB (or M9 minimal media for NMR). M9 media was supplemented with vitamin (Centrum Adult), 1 g/L 15NH4Cl, and 5 g/L D-glucose. For constructs containing the BPTF PHD finger all growth media and buffers were supplemented with 100 \u03bcM ZnCl2. For purification of BPTF recombinants cells were lysed by sonication, and lysates were incubated with either glutathione agarose (Thermo Fisher Scientific) or Ni-NTA resin (Thermo Fisher Scientific) to respectively enrich for GST- and 6His-tagged proteins. Fusion proteins were eluted with reduced L-glutathione or imidazole as appropriate. For NMR, samples were cleaved from the GST tag using PreScission protease. All BPTF proteins were then further purified using anion exchange (Source 15Q, GE Healthcare Life Sciences) and size exclusion chromatography (SEC; Superdex 75, GE Healthcare Life Sciences). Protein concentrations were determined by UV-Vis spectroscopy.\n\n### Histone preparation and nucleosome core particle reconstitution for NMR\n\nUnmodified human histones H2A, H2B, and H3 (Supplementary file 2A) were expressed in E. coli Rosetta 2 (DE3) pLysS or BL21 (DE3) in LB media. Cells were grown to OD600~0.4 and induced with 0.4 mM IPTG at 37 \u00b0C for either 3 hr (for H3) or 4 hr (for H2A and H2B). 15N-labeled histone H4 (Supplementary file 2A) was expressed in Rosetta 2 (DE3) pLysS cells from a pET3a vector in M9 minimal media supplemented with vitamin, 1 g/L 15NH4Cl, and 5 g/L D-glucose. Cells were induced at OD600~0.4 with 0.2 mM IPTG at 37 \u00b0C for 3 hr. Histones were purified from inclusion bodies as previously (Bao et al., 2003) and purified by ion exchange. Mass spectrometry with positive electrospray ionization (Waters Q-Tof Premier) was used to validate histones and ensure no carbamylation occurred during purification (Figure 4\u2014figure supplement 1). Samples were diluted 1:2 or 1:4 in water/acetonitrile (1:1) with 0.1% (v/v) formic acid. Acquisition and deconvolution software used during data collection and analysis were MassLynx and MaxEnt respectively.\n\nFor acetyl lysine analog, 15N-labeled histone H4 with a K-to-C mutation at lysine 16 was expressed and purified similar to wild-type H4 as described above. The acetyl-mimetic residue (Ks16ac) was generated through radical-mediated thiol-ene addition to the thiol group of cysteine as previously described (Li et al., 2011; Bryan et al., 2017; Dhall et al., 2016; Dhall et al., 2014). Briefly, lyophilized H4K16C protein was resuspended to a concentration of 1 mM in de-gassed reaction buffer (a 200 mM acetic acid and 15 mM L-glutathione solution, pH 4.0 to which 5 mM azo radical initiator VA-044 (Wako chemicals #27776-21-2), and 50 mM N-vinylacetamide (TCI #5202-78-8) are added immediately before the reaction). The mixture was incubated at 45 \u00b0C for 2 hr in an anaerobic environment. Histones were then dialyzed against H2O to remove small molecules and subsequently subjected to mass spectrometry as described above to confirm the conversion of the K16C residue to the Ks16ac (Figure 4\u2014figure supplement 3).\n\nHistone octamers were prepared as previously (Bao et al., 2003). In brief, equimolar ratios of purified histones were combined in 20 mM Tris pH 7.5, 6 M guanidine HCl, 10 mM DTT and dialyzed into 20 mM Tris pH 7.5, 2 M KCl, 1 mM EDTA, 5 mM \u03b2-mercaptoethanol (\u03b2-ME). Octamers were SEC purified over a Sephacryl S-200 column (GE Healthcare Life Sciences).\n\nThe 147 bp Widom 601 nucleosome positioning sequence (NPS) (Lowary and Widom, 1998) was amplified in E. coli using a 32-repeat plasmid (Supplementary file 2A). DNA was purified by alkaline lysis (Bao et al., 2003), the 147 bp 601 NPS excised with EcoRV, polyethylene glycol precipitated, and further purified over a source 15Q column (GE Healthcare Life Sciences).\n\nReconstitution of Nucleosome core particles (NCPs) with 147 bp Widom 601 DNA was by desalting (Bao et al., 2003). In brief, octamer and DNA were combined in equimolar amounts in 2 M KCl and desalted to 150 mM KCl using a linear gradient over ~48 hr. NCPs were heat-shocked at 37 \u00b0C for 30 min for optimal positioning and purified using a 10\u201340% sucrose gradient. NCP formation was confirmed by sucrose gradient profile and native PAGE (see Figure 4\u2014figure supplements 1 and 3). NCP concentrations were determined by UV-vis spectroscopy (after diluting in 2 M KCl to disassemble NCPs) using the absorbance from 601 DNA (calculated \u03b5260=2,312,300.9 M\u20131cm\u20131).\n\n### H4 tail peptide purification for NMR\n\nThe histone H4 tail (residues 1\u201325 followed by a C-terminal tyrosine for quantification) was expressed from pGEX6p as a fusion with an N-terminal GST tag followed by a PreScission protease cleavage site (Supplementary file 2A). This was overexpressed in E. coli BL21 (DE3) (NEB) grown in M9 minimal media supplemented with vitamin (Centrum daily multivitamin), 1 g/L 15NH4Cl, and 5 g/L D-glucose. Cells were grown to OD600 ~1.0 and induced with 0.5 mM IPTG at 37 \u00b0C for 4 hr. The 15N-GST-H4 peptide fusion was purified on glutathione agarose resin (Thermofisher Scientific), cleaved with PreScission protease (16 hr at 4 \u00b0C), and products resolved by SEC (Superdex 75 10/300; GE Healthcare Life Sciences). Peptide identity was validated by mass spectrometry with positive electrospray ionization (Waters Q-Tof Premier). Samples were diluted 1:2 or 1:4 in water/acetonitrile (1:1) with 0.1% formic acid. Acquisition and deconvolution software used during data collection and analysis were MassLynx and MaxEnt, respectively. 15N-H4 (1-25) peptide concentration was determined by UV-vis spectroscopy using the non-native C-terminal tyrosine.\n\n### DNA preparation for NMR\n\nOligonucleotides (5\u2019-CTCAATTGGTCGTAGACAGCT-3\u2019 and the complement 5\u2019-AGCTGTCTACGAACCAATTGAG-3\u2019) for DNA titration NMR were from Integrated DNA Technologies (IDT). These were annealed at 50 \u03bcM by heating to 94 \u00b0C followed by gradual cooling to room temperature (in 10 mM Tris-HCl pH 7.5, 50 mM NaCl, 1 mM EDTA). Duplex DNA was purified on a source 15Q column (GE Healthcare Life Sciences) and analyzed by 1% agarose gel. DNA was precipitated in ethanol, resuspended in ddH2O, and concentration was determined by UV-vis and the predicted extinction coefficient (\u03b5260=333,804.5 M\u20131 cm\u20131).\n\n### NMR spectroscopy\n\n1H-15N heteronuclear single quantum coherence (HSQC) spectra were collected on 30 \u03bcM 15N-H4 tail peptide and 80.5 \u03bcM NCP samples in 20 mM MOPS pH 7.2, 150 mM KCl, 1 mM DTT, 1 mM EDTA, and 10% D2O. Data was collected at 25 \u00b0C on a 800 MHz Bruker spectrometer equipped with a cryoprobe. Titration of the 21 bp dsDNA into 15N-H4 tail peptide was performed through the collection of sequential 1H-15N HSQC spectra on the 15N-H4 tail in the apo state and with increasing DNA concentrations (spectra collected at [peptide:DNA] molar ratios of 1:0, 1:0.1, 1:0.25, 1:0.5, 1:1, 1:2, and 1:3).\n\nSequential 1H-15N HSQC spectra of 25 \u03bcM 15N-BD and 15N-BD (N3007A) were collected with increasing concentrations of H4K16ac tail peptide (Supplementary file 2D) in (50 mM potassium phosphate pH 7.2, 50 mM KCl, 1 mM DTT, 1 mM EDTA, 10% D2O) at 25 \u00b0C on an 800MHz Bruker spectrometer equipped with a cryogenic probe. Concentration of the stock H4K16ac peptide was analyzed by Pierce Quantitative Fluorometric Peptide Assay (Thermo Fisher Scientific). Spectra were collected with [15N-BD: H4K16ac peptide] at ratios 1:0, 1:0.5, 1:1, 1:2.5, 1:5, 1:10, 1:20, 1:30, 1:50, 1:70 and [15N-BD (N3007A): H4K16ac peptide] at ratios 1:0, 1:5, 1:20, 1:40. Sequential 1H-15N HSQC spectra of 50 \u03bcM 15N-PHD-BD were collected with increasing concentrations of histone tail peptides (H3K4me3triac, H3tetraac or H3triac: ratios 1:0, 1:0.1, 1:0.5, 1:1, 1:2, 1:4, and 1:8) in (50 mM potassium phosphate pH 7.2, 50 mM KCl, 1 mM DTT, 25 \u03bcM ZnCl2, 10% D2O) at 25 \u00b0C on an 800 MHz Bruker spectrometer equipped with a cryogenic probe. Sequential 1H-15N HSQC spectra of 86 \u00b5M 15N-H4Ks16ac NCP were collected with increasing concentrations of BPTF BD. Spectra were collected with [15N-H4Ks16ac NCP: BD] at ratios of 1:0, 1:0.5, 1:1, 1:2, and 1:3.2 in 20 mM MOPs pH 7.0, 1 mM DTT, 1 mM EDTA, 150 mM KCl, 10% D2O at 25 \u00b0C on an 800 MHz Bruker spectrometer equipped with a cryogenic probe. All NMR data was processed using NMRPipe (Delaglio et al., 1995) and analyzed using CcpNmr Analysis (Vranken et al., 2005).\n\n### Histone peptides for dCypher\n\nAll histone peptides for dCypher (Supplementary file 2B) were synthesized with a terminal Biotin (location as indicated) and identity was confirmed by mass spectrometry.\n\n### Semi-synthetic nucleosomes with defined (PTMs)\n\nPTM-defined histones, octamer,s and nucleosomes [dNucs or versaNucs; homotypic NCPs unless stated otherwise] for dCypher were synthesized/purified/assembled as previously (Shah et al., 2018; Th\u00e5lin et al., 2020) but without DNA barcoding (Supplementary file 2C\u2013D; and Figure 1\u2014figure supplement 2). PTMs were confirmed by mass-spectrometry and immunoblotting (if an antibody was available) (Weinberg et al., 2019; Goswami et al., 2021; Marunde et al., 2022b).\n\nFor dNucs, PTM-defined histones were mixed (at mg scale) to a defined stoichiometry and dialyzed/purified to octamers, which were subsequently assembled on 147 bp 5\u2019 biotinylated 601 DNA (Dyer et al., 2003). The resulting products (e.g. H3K4me3; EpiCypher#16\u20130316) contained full-length \u2018scarless\u2019 histones and minimal free-DNA (<5%).\n\nFor versaNucs, histone H3 tail peptides (aa1-31; A29L) with a PTM (or mutation) of interest were individually ligated to a H3 tailless nucleosome precursor (H3.1N\u039432 assembled on 147 bp 5\u2019 biotinylated 601 DNA; EpiCypher#16\u20130016). The resulting nucleosomes (assembled at 50\u2013100 \u03bcg scale) contained minimal free DNA (<5%), undetectable levels of peptide precursor, and \u226590% full-length H3.1 with the PTM(s)/mutations of interest (e.g. Figure 1\u2014figure supplement 2; Th\u00e5lin et al., 2020). In general, we observed no discernible difference in dNuc and versaNuc behavior (not shown), so they are used interchangeably in this study (while always including both forms if available; Supplementary file 2C\u2013D). However, versaNucs are not recommended for studies that encroach on the A29L position (as present in the final product): e.g., for modifiers or binders to H3R26, K27, or S28.\n\nHeterotypic nucleosomes (Supplementary file 2C) were created by approaches to be detailed elsewhere (manuscript in preparation). In brief, PTM-defined H3 histones were reacted to create obligate heterodimers joined by an N-terminal bridge containing a proteolytic cleavage site. Bridging was established by a one-way \u2018click\u2019-like reaction prior to N-terminal peptide ligation to C-terminal histone cores (i.e. yielding only AB; no AA or BB). Covalently bridged H3 heterodimers were assembled to PTM-defined octamers and nucleosomes as for unbridged histones, then enzymatically cleaved to excise the N-terminal bridge and yield an unscarred heterotypic nucleosome. Heterotypic identity was confirmed at all synthesis steps by analyses additional to those used for homotypics, including Nuc-MS on representative final nucleosomes (Schachner et al., 2021). Heterotypic nomenclature describes each PTM-defined histone in the NCP, such that [H3K4me3K14ac \u2022 H3] vs. [H3K4me3 \u2022 H3K14ac] contain the same total PTM complement but distributed cis or trans on the H3 N-termini.\n\n### dCypher binding assays\n\nThe dCypher approach (dCypher for brevity) was developed on the chemiluminescent bead-based, no-wash Alpha platform (PerkinElmer) for the high-throughput profiling of CAP binding to PTM-defined histone peptides and semi-synthetic nucleosomes (homotypic NCPs unless stated otherwise) (Marunde et al., 2022a; Morgan et al., 2021; Weinberg et al., 2019; Dilworth et al., 2022; Weinberg et al., 2021; Jain et al., 2020; Lloyd et al., 2020). In brief, biotinylated peptides or NCPs (the potential Targets) were individually coupled to streptavidin-coated \u2018Donor\u2019 beads, while epitope-tagged proteins (the Queries) were bound to anti-tag \u2018Acceptor\u2019 beads. After mixing potential reactants in a 384-well format, Donor beads were excited at 680 nm, releasing singlet oxygen that caused emission (520\u2013620 nm) in proximal (within 200 nm) Acceptor beads; this luminescent signal is directly correlated to interaction/binding affinity. A complete description of the dCypher approach is available (Marunde et al., 2022a; Morgan et al., 2021). dCypher binding assays to PTM-defined peptides/NCPs were as previously (Weinberg et al., 2019; Jain et al., 2020). In brief 5 \u03bcl of GST- or 6HIS- tagged reader domain (Query: specific identity/concentration as indicated) was incubated with 5 \u03bcl of biotinylated peptide (100 nM final)/NCP (10 nM final) (Target: specific identity as indicated) for 30 min at room temperature in the appropriate assay buffer ([Peptide: 50 mM Tris pH 7.5, 50 mM NaCl, 0.01% Tween-20, 0.01% BSA, 0.0004% Poly-L Lysine, 1 mM TCEP]; [NCP: 20 mM HEPES pH 7.5, 250 mM NaCl, 0.01% BSA, 0.01% NP-40, 1 mM DTT]) in a 384-well plate. For GST-tagged proteins, a 10 \u03bcl mix of 2.5 \u03bcg/ml glutathione (PerkinElmer) and 5 \u03bcg/ml streptavidin donor beads (PerkinElmer) was prepared in peptide or NCP bead buffer ([Peptide: as assay buffer]; [NCPs: as assay buffer minus DTT]) and added to each well. For 6HIS-tagged proteins, a 10 \u03bcl mix of 2.5 \u03bcg/ml Ni-NTA acceptor beads (PerkinElmer) and 10 \u03bcg/ml streptavidin donor beads was used. The plate was incubated at room temperature in subdued lighting for 60 min and the Alpha signal was measured on a PerkinElmer 2104 EnVision (680 nm laser excitation, 570 nm emission filter \u00b1 50 nm bandwidth). Each binding interaction was performed in duplicate (Marunde et al., 2022b). See below for a comparison of data derived from each epitope tag [GST vs. 6His].\n\n### Calculation of EC50rel\n\nBinding curves [Query: Target] were generated using a non-linear 4PL curve fit in Prism 8 (GraphPad). To rank [Query: Target] binding we used a four-parameter logistical (4PL) model and reported the resulting data fit as relative EC50s (EC50rel) (Sebaugh, 2011) and 95% confidence intervals (CI95) (Supplementary file 1 for all from the study). These values are defined as the concentration of Query (e.g. GST-PHD-BD) required to provoke a half-maximal response to Target along a representative dose-response curve (Beck et al., 2012). Notably, we report as EC50rel because a stable maximal response (100% \u00b1 5%) control is not included during data generation: as such we cannot ensure saturation. Although these values can be directly compared across Queries to understand relative binding (as they are within this study), they are not treated as an equilibrium dissociation constant (Kd). Very specific parameters must be met within the set-up of an Alpha assay to define a binding interaction Kd: namely the generation of saturation curves, or a competition assay to identify the Query concentration at least 5 x below bead binding saturation using 10 x Target (Cassel et al., 2010). Where necessary, values beyond the Alpha hook point (indicating bead saturation/competition with unbound Query) (Marunde et al., 2022b) were excluded and top signal constrained to average max signal for Target (in cases where signal never reached plateau, those were constrained to the average max signal within the assay). For statistical analysis, unpaired two-tailed t-tests were performed in Prism using Log(EC50rel) and standard error values/differences considered statistically significant when p<0.05 (Supplementary file 1).\n\n### Comparison of epitope tags [GST vs. 6His]\n\nFor dCypher assays BPTF PHD-BD and PHD Queries were N-terminally tagged with either GST- or 6His-, while the BD Query was only available as 6His- (due to expression/purification difficulties).\n\nA comparison of both epitope-tagged forms of PHD-BD revealed the resulting EC50rel data for most analogous Targets to rank order identically (Supplementary file 1). One interesting exception was for PHD-BD binding to H3K4me1, me2, and me3 peptides. Here, GST-PHD-BD showed similar EC50rel for each H3K4 methyl state, while 6His-PHD-BD displayed a moderate preference for H3K4me3. Furthermore, the EC50rel values of GST-tagged Queries were reduced compared to their 6His-tagged counterparts, indicating tighter binding. These results may be due to the use of epitope-specific beads (i.e. glutathione vs. nickel chelate acceptor beads; with the former being potentially more sensitive), and/or the dimerization of GST (Bell et al., 2013), which would be expected to enhance [Query: Target] binding via an effective local increase in Query concentration. Given the above, we note the importance to only compare EC50rel values between similarly tagged Queries.\n\n### CUTANA CUT&RUN, Illumina sequencing, and data analysis\n\nCUT&RUN was performed with K562 cells (fixed (H3K18ac) or native (all other targets)) using CUTANA protocol v1.5.1 Yusufova et al., 2021; an optimized version of that previously described (Skene et al., 2018). For each native CUT&RUN reaction, 500 K digitonin permeabilized cells were immobilized to Concanavalin-A beads (Con-A; EpiCypher #21\u20131401) and incubated overnight (4 \u00b0C with gentle rocking) with 0.5 \u00b5g of antibody (IgG, anti-H3K4me3 or anti-BPTF Supplementary file 2E; all PTM antibodies validated to SNAP-ChIP nucleosome standards as previously Shah et al., 2018). pAG-MNase (EpiCypher #15\u20131016) was added/activated and CUT&RUN enriched DNA was purified using the Monarch DNA Cleanup kit (NEB #T1030S). 10 ng DNA was used to prepare sequencing libraries with the Ultra II DNA Library Prep kit (NEB #E7645S).\n\nSome labile PTMs benefit from a light fixation step (not shown), so minor protocol modifications were made for H3K18ac. 500 K cells were crosslinked with 0.1% formaldehyde for 1 min at room temperature, and then quenched with 125 mM glycine. To help the cellular ingress of antibody/ egress of cleaved chromatin fragments the Wash, Antibody, and Digitonin buffers were supplemented with 1% Triton X-100 and 0.05% SDS. To reverse crosslinks prior to DNA column cleanup, CUT&RUN eluate was incubated overnight at 55 \u00b0C with 0.8 \u00b5l 10% SDS and 20 \u00b5g Proteinase K (Ambion #AM2546).\n\nLibraries were sequenced on the Illumina platform, obtaining ~4 million paired-end reads on average (Supplementary file 2E). Paired-end fastq files were aligned to the hg19 reference genome using Bowtie2 (Langmead and Salzberg, 2012). Uniquely aligned reads were retained, and blacklist regions (Amemiya et al., 2019) removed before subsequent analyses. Peaks were called using SEACR (Sparse Enrichment Analysis of CUT&RUN) (Meers et al., 2019). All sequencing data has been deposited in the NCBI Gene Expression Omnibus (GEO) with accession number GSE150617.\n\n### Reader CUT&RUN\n\nReader CUT&RUN (i.e. GST-PHD-BD as a detection tool) was performed as above for CUTANA CUT&RUN with the following modifications.\n\n500 K native K562 cells were used for each reaction and all buffers were supplemented with 1 \u00b5M TSA (Trichostatin A, Sigma #T8552) to protect potentially labile acetyl-PTMs (e.g. H3K18ac).\n\nA biotinylated CUTANA nucleosome mini-panel (unmodified, H3K4me3, H3tetraac, H3K4me3triac; each on 80-N-25 DNA containing a central 147 bp Widom 601 Nucleosome positioning sequence with embedded 22 bp DNA barcode: Figure 6a\u2013b) was synthesized, individually coupled to magnetic streptavidin beads (NEB #S1421S) at saturation, and spiked into each CUT&RUN reaction (final concentration 0.8 nM) with Con-A immobilized cells just prior to antibody addition. Each member of the nucleosome panel was DNA barcoded to define PTM status/monitor comparative release into the CUT&RUN eluate (to be quantified after sequencing). After nucleosome spike-in, GST-PHD-BD, GST (Supplementary file 2A) or IgG (Supplementary file 2E) were added to parallel reactions (each 70 nM final concentration), and incubated overnight at 4 \u00b0C. Samples were washed twice, and the appropriate incubated with 0.5 \u00b5g anti-GST (Supplementary file 2E) at room temperature for 30 min. Remainder of the assay was performed using standard CUT&RUN protocol and sequenced as above. All sequencing data has been deposited in GEO with accession number GSE150617.\n",
+      "created_at": "2025-12-04T04:18:40.256726Z"
+    },
+    {
+      "id": "9640e644-f108-4553-a272-7c313bcf49de",
+      "submission_id": "28effafd-966b-41d6-9e53-ec8957c843eb",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Geeta J Narlikar, https://ror.org/043mz5j54 University of California, San Francisco United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.78866.sa0](https://doi.org/10.7554/eLife.78866.sa0)\n\nThe manuscript investigates how the tandem reader domains in BPTF co-recognize two types of modifications present on histone tails, H3K4me3 and H3 acetylation. The authors provide compelling evidence for regulation of such recognition by the conformational restriction of histone tails due to interactions with nucleosomal DNA. The findings contribute valuable new insights into how the nucleosomal context impacts the action of tandem reader domains and should be of much interest to the broader chromatin field.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Geeta J Narlikar, https://ror.org/043mz5j54 University of California, San Francisco United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.78866.sa1](https://doi.org/10.7554/eLife.78866.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Nucleosome conformation dictates the histone code\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Jessica Tyler as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed their reviews with one another and the reviewing editor. Overall the reviewers judged that the work contributes new insights into how multiple histone modifications are recognized by tandem reader domains in a nucleosomal context. However, they also agreed that key in vitro experiments were missing to support the core conclusions about how the BPTF protein binds two separate marks in a nucleosomal context. They have in addition recommendations for more clearly acknowledging prior work and alternative models. Based on these discussions the Reviewing Editor has drafted the list of essential revisions to help you prepare a revised submission.\n\nEssential revisions:\n\n1. In many places the manuscript is written more generally as if the conclusions apply in all cases (e.g. the title, abstract, and introduction) and this remains to be determined. It is also overstated that there is a belief that peptides perfectly recapitulate nucleosomes. Authors should also point out that the nucleosomes are multi-valent and the data cannot discriminate binding of a single PHD-BD to single or multiple tails, and that the work is limited as it is using a construct of BPTF and in fact, there is at least one other reader domain involved.\n\n2. The authors seem to have overlooked the fact that mononucleosome substrates have been in use for determining the substrate specificity and mechanisms of quite a few enzymes that simply do not act on peptide substrates. For example, Dot1L doesn't do anything with peptides nor does COMPASS/Set1, both of which require intact nucleosomal substrates to measure their activity in response to ubiquitylated H2B. Thus, the authors' refinement of the \"histone code hypothesis\" is unnecessary and overdone. We suggest that they instead cite examples where nucleosome substrates have provided answers that cannot be obtained from peptide substrates alone. For example, extensive work from the Muir and Allis labs.\n\n3. The authors' focus on H3K4 and H3acetylation is informative but a bit puzzling as prior work by Ruthenburg and Allis (reference 33) conducted experimentation with nucleosomes and concluded that H3K4me3-H4K16ac is a modification state-bound preferentially by BPTF in vitro and in cells. And work in reference 34 also shows that acetylation on H4 is co-recognized with methylation on H3K4. The authors have ignored these previous results in their own discussions. Readers would benefit from a side-by-side comparison of the two acetylation states to get a sense of which is a stronger interaction and why both seemingly correlate in CUTnRUN or ChIP-seq. Importantly the authors need to measure the affinity of their GST-PHD-BD construct for nucleosomes containing H3K4me3-H4K16ac and compare it to the affinity for nucleosomes containing H3K4me3K18ac (or H3K4me3triac). The data should then be interpreted in the context of the prior work in references 33 and 34. It is possible that the authors will discover interesting differences in how acetylation is recognized by the BPTF BD on H3 vs H4 tails when it is anchored to the H3K4me3 mark on nucleosomes.\n\n4. The NMR experiments are all undertaken with 150mM KCl with no NaCl present. While NMR experimental constraints are understandable, the authors should avoid sweeping statements from NMR experiments regarding the dynamism of histone tails in chromatin, unless specific experiments are cited/conducted to demonstrate the same in cells. Many factors may contribute to the exclusion of BPTF from modified histone tails in cells, including the binding of other reader proteins, and the precise genomic localization of these modifications vis-a-vis BPTF. The important role of anchoring proteins must also be taken into account when considering binding/non-binding of substrates by CAPs. Thus, the NMR experiments presented in the manuscript do not report on whether BPTF binds H4K16ac in cells or indeed in vitro. If the PHD domain is capable of ultimately binding the H3 tail despite the tail's fuzzy interaction with DNA, the question remains as to why the bromodomain may not do so for acetylated H4 tails? This question also necessitates the in vitro experiment described in point 3 above.\n\n5. The peptide binding studies need some clarification. The work in reference 28 indicates the following Kds for the PHD domain of BPTF: ~2.7\u2009\u00b5M for H3K4me3 peptide and 5.0\u2009\u00b5M for H3K4me2 peptide. In contrast, the authors here see Kds in the nM range for H3K4me3 for the GST-PHD domain (42 nM EC50). Please clarify why these values are so different. Additionally, if the BD and PHD are indeed capable of co-recognizing H3K4 me3 and H3 K18 Ac, it is puzzling why in the context of the peptides, H3K4me3, H3K4me3tri-ac and H3tetratac are bound with similar affinities (0.88-2.4 nm), with only about a 2-fold enhancement in affinity from having both marks. These data suggest that perhaps these two marks are not bound in cis but rather in trans across different tails. The authors should comment/clarify this issue.\n\n6. Please double-check all figure references. It may have been how the paper was collated during submission, but it was difficult to know which figure/figure supplement was being referred to.\n\n7. Pg 5 line 135, the data shows that there is a stronger affinity for H3K4me3triac. Do the authors mean that PHD-BD preferentially reads out K14ac and K18ac over K9ac in the H3K4me3triac? Clarify.\n\n8. Pg 2 Lines 57-58, Unclear wording, \"same\" what?\n\n9. Pg 2 line 47, NCP as abbreviation instead as it is more standard.\n\n10. Figure 1A, Include residue numbers on the domain diagram.\n",
+      "created_at": "2025-12-04T04:18:40.256726Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T04:18:40.256726Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T04:18:40.256726Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "f8770f58-40d4-49fe-b98d-50a2a83898e4",
+      "content_id": "fb77f3e4-1647-4693-9ebf-0c8c736d348d",
+      "claim_id": "C1",
+      "claim": "The eukaryotic genome exists in the form of chromatin, with the basic repeating nucleosome subunit a core-histone octamer (two each of H2A, H2B, H3, and H4) wrapped by ~147 base pairs of DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "The eukaryotic genome exists in the form of chromatin, with the basic repeating nucleosome subunit a core-histone octamer (two each of H2A, H2B, H3, and H4) wrapped by ~147 base pairs of DNA (Figure 1a; Luger et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Luger et al., 1997, which is a foundational structural study of the nucleosome.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:40.256726Z"
+    },
+    {
+      "id": "56c3a52e-dd98-4f52-aaf1-37d47ff8d5ac",
+      "content_id": "fb77f3e4-1647-4693-9ebf-0c8c736d348d",
+      "claim_id": "C2",
+      "claim": "Particular histone PTMs are correlated with distinct chromatin states (e.g. transcriptional activation/repression, damaged DNA) and/or genomic elements (e.g. gene promoters, transcriptional enhancers, centromeres).",
+      "claim_type": "EXPLICIT",
+      "source": "Globally speaking, particular histone PTMs are correlated with distinct chromatin states (e.g. transcriptional activation/repression, damaged DNA) and/or genomic elements (e.g. gene promoters, transcriptional enhancers, centromeres) (Wang et al., 2009; Zhou et al., 2011; Rivera and Ren, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations (Wang et al., 2009; Zhou et al., 2011; Rivera and Ren, 2013) that document correlations between histone PTMs and chromatin states.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:40.256726Z"
+    },
+    {
+      "id": "59aeb98e-0069-4021-87bc-0dd89357636f",
+      "content_id": "fb77f3e4-1647-4693-9ebf-0c8c736d348d",
+      "claim_id": "C3",
+      "claim": "It has been proposed that histone PTMs function in diverse combinations, perhaps even forming a 'histone code'.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, it has been proposed that the PTMs function in diverse combinations, perhaps even forming a 'histone code' (Strahl and Allis, 2000; Gardner et al., 2011; Lee et al., 2010) read by chromatin associated proteins (CAPs) via their various 'reader domains,' thus localizing and/or regulating CAP activity (Rothbart and Strahl, 2014; Andrews et al., 2016a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to foundational papers on the histone code hypothesis (Strahl and Allis, 2000; Gardner et al., 2011; Lee et al., 2010) and reader domain function (Rothbart and Strahl, 2014; Andrews et al., 2016a).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:40.256726Z"
+    },
+    {
+      "id": "80fb0449-8bca-45e0-8c7e-4fb04d168420",
+      "content_id": "fb77f3e4-1647-4693-9ebf-0c8c736d348d",
+      "claim_id": "C4",
+      "claim": "The BPTF subunit is important for chromatin association of the NURF (Nucleosome Remodeling Factor) complex.",
+      "claim_type": "EXPLICIT",
+      "source": "The BPTF subunit is important for chromatin association of the NURF (Nucleosome Remodeling Factor) complex (Wysocka et al., 2006; Li et al., 2006), and pro-tumorigenic in several malignancies (Zahid et al., 2021b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to studies demonstrating BPTF's role in NURF complex chromatin association (Wysocka et al., 2006; Li et al., 2006).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:40.256726Z"
+    },
+    {
+      "id": "f4ec0d9a-80de-4445-9146-5472354d9d09",
+      "content_id": "fb77f3e4-1647-4693-9ebf-0c8c736d348d",
+      "claim_id": "C5",
+      "claim": "BPTF is pro-tumorigenic in several malignancies.",
+      "claim_type": "EXPLICIT",
+      "source": "The BPTF subunit is important for chromatin association of the NURF (Nucleosome Remodeling Factor) complex (Wysocka et al., 2006; Li et al., 2006), and pro-tumorigenic in several malignancies (Zahid et al., 2021b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Zahid et al., 2021b documenting BPTF's role in cancer.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:40.256726Z"
+    },
+    {
+      "id": "b028b108-b49d-4380-9c01-c094f6edae2d",
+      "content_id": "fb77f3e4-1647-4693-9ebf-0c8c736d348d",
+      "claim_id": "C6",
+      "claim": "The BPTF PHD finger associates with H3 tri-methylated at lysine 4 (H3K4me3) in the context of histone peptides.",
+      "claim_type": "EXPLICIT",
+      "source": "In the context of histone peptides, the PHD associates with H3 tri-methylated at lysine 4 (H3K4me3) (Li et al., 2006), while the BD binds H3 and H4 tails containing acetylated lysines (Kac), with a preference for H4 (Ruthenburg et al., 2011; Li et al., 2006; Olson et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Li et al., 2006 demonstrating PHD binding to H3K4me3 peptides.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:40.256726Z"
+    },
+    {
+      "id": "b9a7f7d6-ece9-4635-a6a8-390baac83424",
+      "content_id": "fb77f3e4-1647-4693-9ebf-0c8c736d348d",
+      "claim_id": "C7",
+      "claim": "The BPTF bromodomain binds H3 and H4 tails containing acetylated lysines, with a preference for H4 in peptide context.",
+      "claim_type": "EXPLICIT",
+      "source": "In the context of histone peptides, the PHD associates with H3 tri-methylated at lysine 4 (H3K4me3) (Li et al., 2006), while the BD binds H3 and H4 tails containing acetylated lysines (Kac), with a preference for H4 (Ruthenburg et al., 2011; Li et al., 2006; Olson et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to studies showing bromodomain binding preferences (Ruthenburg et al., 2011; Li et al., 2006; Olson et al., 2020).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:40.256726Z"
+    },
+    {
+      "id": "87666e14-3ca9-448a-a908-9afd2380832c",
+      "content_id": "fb77f3e4-1647-4693-9ebf-0c8c736d348d",
+      "claim_id": "C8",
+      "claim": "Previous studies suggested BPTF PHD-BD prefers [H3K4me3, H4tetraac] or [H3K4me3, H4K16ac] on nucleosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "While efforts have been made to investigate the recruitment of BPTF PHD-BD to modified nucleosomes, only a limited subset of H3K4me3/H4Kac combinations based on peptide data have been tested, suggesting a preference for [H3K4me3, H4K5acK8acK12acK16ac (hereafter H4tetraac)] (Ruthenburg et al., 2011) or [H3K4me3, H4K16ac] (Ruthenburg et al., 2011; Nguyen et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior studies (Ruthenburg et al., 2011; Nguyen et al., 2014) that tested limited nucleosome combinations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:40.256726Z"
+    },
+    {
+      "id": "dd02b75e-7929-45f4-b55f-093f0c57f8e4",
+      "content_id": "fb77f3e4-1647-4693-9ebf-0c8c736d348d",
+      "claim_id": "C9",
+      "claim": "GST-PHD-BD showed strong selectivity for methylated H3K4 peptides over all other methyl-residues represented (me1-2-3 at H3K9, H3K27, H3K36, and H4K20).",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with previous studies (Wysocka et al., 2006; Li et al., 2006), the GST-PHD-BD Query showed strong selectivity for methylated H3K4 peptides over all other methyl-residues represented (me1-2-3 at H3K9, H3K27, H3K36, and H4K20: Figure 1\u2014figure supplement 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1\u2014figure supplement 1b and is consistent with prior citations (Wysocka et al., 2006; Li et al., 2006).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:40.256726Z"
+    },
+    {
+      "id": "ed2ec6c6-35c8-4ec3-a75e-be8ec850932f",
+      "content_id": "fb77f3e4-1647-4693-9ebf-0c8c736d348d",
+      "claim_id": "C10",
+      "claim": "GST-PHD-BD preferred acetylated H4 tail peptides with little difference in binding to multiply acetylated tail vs. any singly acetylated residue.",
+      "claim_type": "EXPLICIT",
+      "source": "Also in agreement with previously (Ruthenburg et al., 2011; Nguyen et al., 2014), GST-PHD-BD preferred acetylated H4 tail peptides, though we observed little difference in binding to a multiply acetylated tail vs. any singly acetylated residue on the same (Figure 1c and e and Figure 1\u2014figure supplement 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data in Figure 1c, e, and Figure 1\u2014figure supplement 1b, and is consistent with prior studies (Ruthenburg et al., 2011; Nguyen et al., 2014).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:40.256726Z"
+    },
+    {
+      "id": "5b66bc45-d56b-4ee5-842d-7dee47d42eda",
+      "content_id": "fb77f3e4-1647-4693-9ebf-0c8c736d348d",
+      "claim_id": "C11",
+      "claim": "GST-PHD-BD showed comparable binding to singly or multiply acetylated H3 tail peptides, though with approximately twofold weaker EC50rel compared to H4 peptides.",
+      "claim_type": "EXPLICIT",
+      "source": "We also observed comparable binding to singly or multiply acetylated H3 tail peptides, though with approximately twofold weaker EC50rel as compared to H4 peptides (Figure 1c and e and Figure 1\u2014figure supplement 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1c, e, and Figure 1\u2014figure supplement 1b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:40.256726Z"
+    },
+    {
+      "id": "7f59fea3-6fda-485e-9a0d-3843247758df",
+      "content_id": "fb77f3e4-1647-4693-9ebf-0c8c736d348d",
+      "claim_id": "C12",
+      "claim": "GST-PHD-BD showed no preference for H3K4me3K9acK14acK18ac peptide over peptides containing each PTM class alone.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, and again in agreement with previously (Chen et al., 2020), we observed no preference for a H3K4me3K9acK14acK18ac (hereafter H3K4me3triac) peptide over those containing each PTM class alone (Figure 1c and e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data in Figure 1c and e, and is consistent with Chen et al., 2020.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:40.256726Z"
+    },
+    {
+      "id": "526db96c-4382-4fa1-936b-9a9b687ac9c1",
+      "content_id": "fb77f3e4-1647-4693-9ebf-0c8c736d348d",
+      "claim_id": "C13",
+      "claim": "The overall affinity of GST-PHD-BD for nucleosomes was reduced relative to peptides.",
+      "claim_type": "EXPLICIT",
+      "source": "We next examined the interaction of GST-PHD-BD with PTM-defined NCPs and found several striking differences. First, the overall affinity for nucleosomes was reduced relative to peptides (Figure 1c\u2013e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data comparing peptide and nucleosome binding shown in Figure 1c-e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:40.256726Z"
+    },
+    {
+      "id": "884f6d10-c95d-497c-b863-68d5f746ba1e",
+      "content_id": "fb77f3e4-1647-4693-9ebf-0c8c736d348d",
+      "claim_id": "C14",
+      "claim": "NCPs recapitulated only a subset of the interactions observed with peptides for GST-PHD-BD.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, NCPs recapitulated only a subset of the interactions observed with peptides (Figure 1c\u2013e and Figure 1\u2014figure supplement 1b and c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data comparing peptide and nucleosome binding patterns shown in multiple figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:40.256726Z"
+    },
+    {
+      "id": "eab7dbba-8dcf-4153-9e79-e3240b60cd72",
+      "content_id": "fb77f3e4-1647-4693-9ebf-0c8c736d348d",
+      "claim_id": "C15",
+      "claim": "GST-PHD-BD showed newfound selectivity for H3K4me3 over the me2/me1 states in nucleosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Differences included a newfound selectivity for H3K4me3 over the me2 /me1 states (Figure 1\u2014figure supplement 1d and e), and binding to acetylated H3 but not acetylated H4 (Figure 1d and e and Figure 1\u2014figure supplement 1b and c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1\u2014figure supplement 1d and e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:40.256726Z"
+    },
+    {
+      "id": "9e94eab9-09c2-4e28-8219-b98ce28073ab",
+      "content_id": "fb77f3e4-1647-4693-9ebf-0c8c736d348d",
+      "claim_id": "C16",
+      "claim": "GST-PHD-BD bound to acetylated H3 but not acetylated H4 in nucleosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Differences included a newfound selectivity for H3K4me3 over the me2 /me1 states (Figure 1\u2014figure supplement 1d and e), and binding to acetylated H3 but not acetylated H4 (Figure 1d and e and Figure 1\u2014figure supplement 1b and c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1d, e, and Figure 1\u2014figure supplement 1b and c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:40.256726Z"
+    },
+    {
+      "id": "d9f46512-2ff1-4e38-8278-5aec993410fb",
+      "content_id": "fb77f3e4-1647-4693-9ebf-0c8c736d348d",
+      "claim_id": "C17",
+      "claim": "GST-PHD-BD showed a dramatic increase in affinity for NCPs containing H3K4me3triac combinatorial vs. those containing each PTM class alone (26-fold over H3K4me3; 20-fold over H3tetraac).",
+      "claim_type": "EXPLICIT",
+      "source": "A third contrast to peptides was a dramatic increase in the affinity of GST-PHD-BD for NCPs containing the H3K4me3triac combinatorial vs. those containing each PTM class alone (26-fold over H3K4me3; 20-fold over H3K4acK9acK14acK18ac (hereafter H3tetraac)) (Figure 1d and e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data showing fold-change differences in EC50rel values presented in Figure 1d and e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:40.256726Z"
+    },
+    {
+      "id": "9edbc89c-c68d-41ab-b3e0-e1f21b729f19",
+      "content_id": "fb77f3e4-1647-4693-9ebf-0c8c736d348d",
+      "claim_id": "C18",
+      "claim": "GST-PHD-BD showed similar EC50rel to H3K4me3triac for H3K4me3K14ac and H3K4me3K18ac, but fourfold weaker for H3K4me3K9ac.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed a similar EC50rel to H3K4me3triac for H3K4me3K14ac and H3K4me3K18ac, but fourfold weaker for H3K4me3K9ac (Figure 1\u2014figure supplement 1f and g).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data comparing EC50rel values shown in Figure 1\u2014figure supplement 1f and g.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:40.256726Z"
+    },
+    {
+      "id": "1b2fc663-4783-4b4a-82d5-92db4234ba6d",
+      "content_id": "fb77f3e4-1647-4693-9ebf-0c8c736d348d",
+      "claim_id": "C19",
+      "claim": "Crystal structures of BPTF BD in complex with acetylated histone peptides indicate the bromodomain binding pocket can accommodate only one acetyl-lysine.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, crystal structures of BPTF BD in complex with acetylated histone peptides (Ruthenburg et al., 2011) indicate the bromodomain binding pocket can accommodate only one acetyl-lysine.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to structural studies (Ruthenburg et al., 2011).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:40.256726Z"
+    },
+    {
+      "id": "f87d358b-ed26-4b95-b420-89538dac67ef",
+      "content_id": "fb77f3e4-1647-4693-9ebf-0c8c736d348d",
+      "claim_id": "C20",
+      "claim": "BPTF PHD-BD preferentially reads out nucleosomal H3K4me3K14ac or H3K4me3K18ac.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, data supports that PHD-BD preferentially reads out nucleosomal H3K4me3K14ac or H3K4me3K18ac.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the experimental data showing differential binding to individual acetylated forms.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:40.256726Z"
+    },
+    {
+      "id": "c2c94c28-6ad9-4d8d-86de-5e45b7910046",
+      "content_id": "fb77f3e4-1647-4693-9ebf-0c8c736d348d",
+      "claim_id": "C21",
+      "claim": "The 6His-PHD affinity for NCPs was reduced relative to peptides.",
+      "claim_type": "EXPLICIT",
+      "source": "As for the PHD-BD tandem, the 6His-PHD affinity for NCPs was reduced relative to peptides (Figure 2\u2014figure supplement 1a\u2013d and Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2\u2014figure supplement 1a-d and Supplementary file 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:40.256726Z"
+    },
+    {
+      "id": "b96ff2e0-4667-4186-ad00-d4a5625a6ece",
+      "content_id": "fb77f3e4-1647-4693-9ebf-0c8c736d348d",
+      "claim_id": "C22",
+      "claim": "6His-PHD preferentially associated with H3K4me3 and approximately twofold weaker to H3K4me3triac peptides, but this order was inverted for NCPs.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, while 6His-PHD was preferentially associated with H3K4me3 and approximately twofold weaker to H3K4me3triac peptides, this order was inverted for NCPs (compare Figure 2\u2014figure supplement 1a and c and Figure 2\u2014figure supplement 1b and d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data comparing peptide and nucleosome binding shown in Figure 2\u2014figure supplement 1a-d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:40.256726Z"
+    },
+    {
+      "id": "9e90f78c-9476-469f-a11c-cb1331d97ab2",
+      "content_id": "fb77f3e4-1647-4693-9ebf-0c8c736d348d",
+      "claim_id": "C23",
+      "claim": "GST-PHD favored NCPs with H3K4me3 and co-incident acetyl-lysine, but had no preference between K9ac, K14ac, or K18ac.",
+      "claim_type": "EXPLICIT",
+      "source": "The same affinity trends were observed for GST-PHD, which favored NCPs with H3K4me3 and co-incident acetyl-lysine, but had no preference between K9ac, K14ac, or K18ac (see 'Materials and methods' and Figure 2\u2014figure supplement 1b and e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2\u2014figure supplement 1b and e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:40.256726Z"
+    },
+    {
+      "id": "414e4a66-ffec-4d9b-85dd-ff4a9da248b7",
+      "content_id": "fb77f3e4-1647-4693-9ebf-0c8c736d348d",
+      "claim_id": "C24",
+      "claim": "6His-BD bound both acetylated H3 and H4 peptides, but with a preference for acetylated H4.",
+      "claim_type": "EXPLICIT",
+      "source": "Regarding the bromodomain, 6His-BD bound both acetylated H3 and H4 peptides, but with a preference for acetylated H4 (Ruthenburg et al., 2011; Figure 2\u2014figure supplement 1a and f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data in Figure 2\u2014figure supplement 1a and f, and is consistent with Ruthenburg et al., 2011.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:40.256726Z"
+    },
+    {
+      "id": "71e0084f-43bc-48f3-8a88-b8211ee12d5b",
+      "content_id": "fb77f3e4-1647-4693-9ebf-0c8c736d348d",
+      "claim_id": "C25",
+      "claim": "6His-BD failed to bind any tested nucleosome targets.",
+      "claim_type": "EXPLICIT",
+      "source": "However, when presented with NCPs, it failed to bind any tested targets (Figure 2\u2014figure supplement 1b and g).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2\u2014figure supplement 1b and g.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:40.256726Z"
+    },
+    {
+      "id": "9b0ec951-a33f-4d4a-84b8-686e81988847",
+      "content_id": "fb77f3e4-1647-4693-9ebf-0c8c736d348d",
+      "claim_id": "C26",
+      "claim": "GST-PHDmut-BD lost binding to all tested nucleosome targets (including H3K4me3, H3tetraac, or H3K4me3triac).",
+      "claim_type": "EXPLICIT",
+      "source": "On NCPs, GST-PHDmut-BD lost binding to all tested targets (including H3K4me3, H3tetraac, or H3K4me3triac), while GST-PHD-BDmut bound H3K4me3 weaker than H3K4me3triac but did not associate with H3tetraac (Figure 2b and c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data from mutant studies shown in Figure 2b and c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:40.256726Z"
+    },
+    {
+      "id": "11ba4fff-d35e-48f8-b02c-2f20d0de23b8",
+      "content_id": "fb77f3e4-1647-4693-9ebf-0c8c736d348d",
+      "claim_id": "C27",
+      "claim": "GST-PHD-BDmut bound H3K4me3 weaker than H3K4me3triac but did not associate with H3tetraac.",
+      "claim_type": "EXPLICIT",
+      "source": "On NCPs, GST-PHDmut-BD lost binding to all tested targets (including H3K4me3, H3tetraac, or H3K4me3triac), while GST-PHD-BDmut bound H3K4me3 weaker than H3K4me3triac but did not associate with H3tetraac (Figure 2b and c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data from mutant studies shown in Figure 2b and c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:40.256726Z"
+    },
+    {
+      "id": "7c65cb44-4e0f-4f0f-ba45-e81d92da9f4a",
+      "content_id": "fb77f3e4-1647-4693-9ebf-0c8c736d348d",
+      "claim_id": "C28",
+      "claim": "A functional BD is insufficient to mediate NCP binding without a functional PHD in the tandem context.",
+      "claim_type": "EXPLICIT",
+      "source": "This revealed that even in the tandem context a functional BD is insufficient to mediate NCP binding without a functional PHD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the mutant studies showing that PHD mutation abolishes binding even when BD is functional.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:40.256726Z"
+    },
+    {
+      "id": "62d9b019-69e8-44e6-9cc3-ab869cb67c92",
+      "content_id": "fb77f3e4-1647-4693-9ebf-0c8c736d348d",
+      "claim_id": "C29",
+      "claim": "Chemical shift perturbations in BD resonances were observed on addition of H3triac, H3tetraac, or H3K4me3triac peptides to 15N-labeled PHD-BD.",
+      "claim_type": "EXPLICIT",
+      "source": "To investigate this, we used NMR spectroscopy to record sequential 1H,15N-HSQC spectra on 15N-labeled PHD-BD after addition of unlabeled H3triac, H3tetraac, or H3K4me3triac peptides (Figure 3a and Figure 3\u2014figure supplement 1a\u2013c). Chemical shift perturbations (CSPs) in BD resonances were observed on addition of all three peptides, indicating ligand engagement.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by NMR data shown in Figure 3a and Figure 3\u2014figure supplement 1a-c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:40.256726Z"
+    },
+    {
+      "id": "31f03b5a-af33-4429-8df2-134c82332699",
+      "content_id": "fb77f3e4-1647-4693-9ebf-0c8c736d348d",
+      "claim_id": "C30",
+      "claim": "The bound state chemical shift of BD was similar for H3triac, H3tetraac, and H3K4me3triac peptides, suggesting an association mechanism independent of H3K4 modification state.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, the bound state chemical shift was similar for all three peptides, suggesting an association mechanism independent of H3K4 modification state (Figure 3a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is inferred from NMR data showing similar chemical shifts across different peptides in Figure 3a.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:40.256726Z"
+    },
+    {
+      "id": "6d588f62-9c75-4f84-bd47-4fc0c192fc52",
+      "content_id": "fb77f3e4-1647-4693-9ebf-0c8c736d348d",
+      "claim_id": "C31",
+      "claim": "For PHD resonances, the H3K4 modification state elicited distinct CSPs, with H3tetraac and H3triac showing nearly identical bound state chemical shifts vs. that for H3K4me3triac.",
+      "claim_type": "EXPLICIT",
+      "source": "However, for PHD resonances the H3K4 modification state elicited distinct CSPs, with H3tetraac and H3triac showing nearly identical bound state chemical shifts vs. that for H3K4me3triac (Figure 3a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by NMR data showing differential chemical shifts for PHD resonances in Figure 3a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:40.256726Z"
+    },
+    {
+      "id": "10489452-8466-4e52-b6d5-3c3f3a17c612",
+      "content_id": "fb77f3e4-1647-4693-9ebf-0c8c736d348d",
+      "claim_id": "C32",
+      "claim": "PHD-BD associates with the acetylated H3 tail likely in a multivalent manner, employing both domains independent of H3K4 modification status, but forming a unique complex when H3K4 is trimethylated.",
+      "claim_type": "EXPLICIT",
+      "source": "Together this reveals that PHD-BD associates with the acetylated H3 tail likely in a multivalent manner, employing both domains independent of H3K4 modification status, but forming a unique complex when H3K4 is trimethylated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the NMR data showing differential binding modes depending on H3K4 methylation state.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:40.256726Z"
+    },
+    {
+      "id": "d2a0978a-400c-46a0-b373-c84807576bf0",
+      "content_id": "fb77f3e4-1647-4693-9ebf-0c8c736d348d",
+      "claim_id": "C33",
+      "claim": "Histone H3-A1 is essential for 6His-PHD-BD binding to NCPs.",
+      "claim_type": "EXPLICIT",
+      "source": "To test this, we truncated A1 in the context of H3K4me3triac and observed PHD-BD was unable to bind the resulting NCP (N\u03941) (Figure 3b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data showing loss of binding upon A1 truncation in Figure 3b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:40.256726Z"
+    },
+    {
+      "id": "e33bcafa-5989-48e0-bc46-5fe821503d7e",
+      "content_id": "fb77f3e4-1647-4693-9ebf-0c8c736d348d",
+      "claim_id": "C34",
+      "claim": "Recognition of the H3 N-terminus is critical for BPTF PHD engagement, consistent with the binding mechanism for other PHD fingers.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, recognition of the H3 N-terminus is critical for BPTF PHD engagement, an observation consistent with the binding mechanism for other PHD fingers (Musselman et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data on A1 truncation and is consistent with prior studies on PHD fingers (Musselman et al., 2009).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:40.256726Z"
+    },
+    {
+      "id": "dbb4547d-f898-47ae-8d09-9756575f1af2",
+      "content_id": "fb77f3e4-1647-4693-9ebf-0c8c736d348d",
+      "claim_id": "C35",
+      "claim": "The H4 tail is K/R-rich, has decreased dynamics in the nucleosome vs. peptide context.",
+      "claim_type": "EXPLICIT",
+      "source": "The H4 tail is K/R-rich, has decreased dynamics in the nucleosome vs. peptide context, and computational models suggest it may also form a fuzzy complex with DNA (Rabdano et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Rabdano et al., 2021 which includes computational modeling.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:40.256726Z"
+    },
+    {
+      "id": "fc26ea01-c0b8-4b98-93e7-e5e3c3bf9ac1",
+      "content_id": "fb77f3e4-1647-4693-9ebf-0c8c736d348d",
+      "claim_id": "C36",
+      "claim": "Only 15 of the 101 non-proline amino-acids of H4 were observable by NMR in the nucleosome context, corresponding to tail residues 1\u201315.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with previously (Rabdano et al., 2021; Zhou et al., 2012; Kim et al., 2023) we observed resonances for only 15 of the 101 non-proline amino-acids of H4, corresponding to tail residues 1\u201315 (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by NMR data shown in Figure 4 and is consistent with prior studies (Rabdano et al., 2021; Zhou et al., 2012; Kim et al., 2023).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:40.256726Z"
+    },
+    {
+      "id": "794a1dd3-93a6-48be-8aab-d15fda4112c2",
+      "content_id": "fb77f3e4-1647-4693-9ebf-0c8c736d348d",
+      "claim_id": "C37",
+      "claim": "The severe line-broadening observed for H4 residues 16\u201320 (the H4 tail basic patch) indicates this region is likely stably associated with the nucleosome core.",
+      "claim_type": "EXPLICIT",
+      "source": "The severe line-broadening observed for residues 16\u201320 (the H4 tail basic patch: Figure 4\u2014figure supplement 2) indicates this region is likely stably associated with the nucleosome core, in agreement with previous structural and biochemical studies (Zheng and Hayes, 2003)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is inferred from NMR line-broadening data and is consistent with prior structural studies (Zheng and Hayes, 2003).",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:40.256726Z"
+    },
+    {
+      "id": "50b73e9a-5b32-4b49-8a06-3259020aff23",
+      "content_id": "fb77f3e4-1647-4693-9ebf-0c8c736d348d",
+      "claim_id": "C38",
+      "claim": "Overlay of 15N-H4 peptide and 15N-H4-NCP NMR spectra showed chemical shift perturbations in every H4 tail resonance when comparing peptide and NCP.",
+      "claim_type": "EXPLICIT",
+      "source": "Overlay of the resulting NMR spectra showed CSPs in every H4 tail resonance when comparing peptide and NCP (Figure 4a), consistent with a context-dependent conformation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by NMR data shown in Figure 4a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:40.256726Z"
+    },
+    {
+      "id": "709e8d83-e36d-40d7-b205-842e6ed98f1e",
+      "content_id": "fb77f3e4-1647-4693-9ebf-0c8c736d348d",
+      "claim_id": "C39",
+      "claim": "The 15N-H4 (1-25) peptide showed CSPs for every resonance upon addition of unlabeled DNA, confirming the H4 tail bound DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "We next collected sequential 1H,15N-HSQC spectra of the 15N-H4 (1-25) peptide upon addition of unlabeled DNA (Figure 4b), and observed CSPs for every resonance, confirming the H4 tail bound DNA, and every residue is impacted.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by NMR titration data shown in Figure 4b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:40.256726Z"
+    },
+    {
+      "id": "bf3eac02-788e-406c-a9e7-ac76719e869f",
+      "content_id": "fb77f3e4-1647-4693-9ebf-0c8c736d348d",
+      "claim_id": "C40",
+      "claim": "Overlay of the DNA-bound 15N-H4 peptide and 15N-H4-NCP spectra showed very similar chemical shifts, consistent with the entire H4 tail associating with nucleosomal DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Overlay of the DNA-bound 15N-H4 peptide and 15N-H4-NCP spectra showed very similar chemical shifts, consistent with the entire H4 tail associating with nucleosomal DNA (Figure 4c), and in-line with previous cross-linking and molecular dynamics simulation studies (Murphy et al., 2017; Karch et al., 2018; Mullahoo et al., 2020).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by NMR data in Figure 4c and is consistent with prior cross-linking and simulation studies (Murphy et al., 2017; Karch et al., 2018; Mullahoo et al., 2020).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:40.256726Z"
+    },
+    {
+      "id": "8195c118-950a-4fe3-8b14-ac05c2b33d0c",
+      "content_id": "fb77f3e4-1647-4693-9ebf-0c8c736d348d",
+      "claim_id": "C41",
+      "claim": "The H4 tail has two distinct dynamic regions: residues 1\u201315 likely exchange quickly between multiple conformations on DNA, while residues 16\u201320 exchange much more slowly and/or between fewer states.",
+      "claim_type": "EXPLICIT",
+      "source": "The differential linewidth of resonances indicates the H4 tail has two distinct dynamic regions: residues 1\u201315 likely exchange quickly between multiple conformations on DNA, consistent with a fuzzy complex Fuxreiter, 2018; Tompa and Fuxreiter, 2008; while residues 16\u201320 (the basic patch) exchange much more slowly and/or between fewer states, leading to signal loss.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from NMR linewidth data and is consistent with the concept of fuzzy complexes (Fuxreiter, 2018; Tompa and Fuxreiter, 2008).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:40.256726Z"
+    },
+    {
+      "id": "e779a42f-bbf7-4f41-89f8-7b8f405a18d5",
+      "content_id": "fb77f3e4-1647-4693-9ebf-0c8c736d348d",
+      "claim_id": "C42",
+      "claim": "The different behavior of H3 and H4 tails may be related to charge distribution and/or positioning relative to the NCP core.",
+      "claim_type": "EXPLICIT",
+      "source": "This is distinct from the H3 tail, where every residue experiences fast dynamics consistent with a fuzzy complex. The different behavior of the tails may be related to charge distribution and/or positioning relative to the NCP core.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is speculative reasoning based on observed differences in tail dynamics.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:40.256726Z"
+    },
+    {
+      "id": "e6c53468-41ad-4897-98de-cd45b7e6ff7a",
+      "content_id": "fb77f3e4-1647-4693-9ebf-0c8c736d348d",
+      "claim_id": "C43",
+      "claim": "The acetylated 15N-H4KS16ac-NCP spectra had additional peaks relative to unmodified NCP, suggesting this modification weakens the H4 tail interaction with DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Relative to unmodified NCP, the acetylated NCP spectra had additional peaks (Figure 4d, Figure 4\u2014figure supplement 3), suggesting this modification weakens the H4 tail interaction with DNA (similar to previously observed with the charge neutralization mimetic H4K16Q Zhou et al., 2012).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is inferred from NMR data in Figure 4d and Figure 4\u2014figure supplement 3, and is consistent with prior studies on H4K16Q (Zhou et al., 2012).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:40.256726Z"
+    },
+    {
+      "id": "aa430a0b-f3bf-405d-9c79-16bb4b703f68",
+      "content_id": "fb77f3e4-1647-4693-9ebf-0c8c736d348d",
+      "claim_id": "C44",
+      "claim": "Titration of BPTF BD into the 15N-H4KS16ac-NCP did not lead to any significant CSPs, supporting that H4K16ac was occluded from binding by this reader in the NCP context.",
+      "claim_type": "EXPLICIT",
+      "source": "Titration of BPTF BD into the 15N-H4KS16ac-NCP did not lead to any significant CSPs, supporting that H4K16ac was occluded from binding by this reader in the NCP context (Figure 4e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by NMR titration data shown in Figure 4e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:40.256726Z"
+    },
+    {
+      "id": "e339b27a-7c90-44d5-ab1a-eed9dd5673ef",
+      "content_id": "fb77f3e4-1647-4693-9ebf-0c8c736d348d",
+      "claim_id": "C45",
+      "claim": "BRD4-BD1 bound H4tetraac peptides with the strongest EC50rel over all peptides tested.",
+      "claim_type": "EXPLICIT",
+      "source": "BRD4-BD1 has previously been shown to bind acetylated H4 tail peptides Filippakopoulos et al., 2012, and dCypher confirmed the strongest EC50rel for H4tetraac over all peptides tested (Figure 4\u2014figure supplement 3a and c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data in Figure 4\u2014figure supplement 3a and c, and is consistent with Filippakopoulos et al., 2012.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:40.256726Z"
+    },
+    {
+      "id": "3cb64318-440c-4876-a580-fcb960574424",
+      "content_id": "fb77f3e4-1647-4693-9ebf-0c8c736d348d",
+      "claim_id": "C46",
+      "claim": "BRD4-BD1 bound H4tetraac in the nucleosome context, though with weaker affinity than the comparable peptide (EC50rel 7.4 nM NCP vs. 0.7 nM peptide).",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to BPTF BD, BRD4-BD1 also bound H4tetraac in the nucleosome context, though with weaker affinity than the comparable peptide (EC50rel 7.4 nM NCP vs. 0.7 nM peptide; Figure 4\u2014figure supplement 4b and c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data comparing peptide and nucleosome binding in Figure 4\u2014figure supplement 4b and c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:40.256726Z"
+    },
+    {
+      "id": "bf25b4ef-b377-41f2-886c-d7df8786e594",
+      "content_id": "fb77f3e4-1647-4693-9ebf-0c8c736d348d",
+      "claim_id": "C47",
+      "claim": "Nucleosomal H4 tail accessibility is reader-dependent.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, nucleosomal H4 tail accessibility is reader-dependent (also recently demonstrated for PHIP BD1-BD2 Morgan et al., 2021), and the ability to bind may rely on several factors including overall affinity or different engagement mechanisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the differential binding of BPTF BD vs. BRD4-BD1 to nucleosomal H4, and is consistent with Morgan et al., 2021.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:40.256726Z"
+    },
+    {
+      "id": "7b40159a-0616-44cb-a629-1d39a5262a0d",
+      "content_id": "fb77f3e4-1647-4693-9ebf-0c8c736d348d",
+      "claim_id": "C48",
+      "claim": "BRD4 BD1 can associate with DNA, and such competition may help disengage the H4 tail from the nucleosome core.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, BRD4 BD1 (unlike BPTF BD) can associate with DNA (Miller et al., 2016; Kalra et al., 2022), and such competition may help disengage the H4 tail from the nucleosome core.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is speculative reasoning based on known DNA binding properties of BRD4 BD1 (Miller et al., 2016; Kalra et al., 2022).",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:40.256726Z"
+    },
+    {
+      "id": "0fb2cd20-68b1-4e83-b8b5-a7a76782d1bc",
+      "content_id": "fb77f3e4-1647-4693-9ebf-0c8c736d348d",
+      "claim_id": "C49",
+      "claim": "To enable binding in the nucleosome context a reader must be able to displace the modified histone tail from DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, this suggests that to enable binding in the nucleosome context a reader must be able to displace the modified histone tail from DNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the collective data on tail occlusion and reader binding.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:40.256726Z"
+    },
+    {
+      "id": "beffb00b-6519-4c0a-bbdb-23b92f205b6a",
+      "content_id": "fb77f3e4-1647-4693-9ebf-0c8c736d348d",
+      "claim_id": "C50",
+      "claim": "Tail accessibility can be enhanced by disrupting the DNA interaction via modification of sidechain charge.",
+      "claim_type": "EXPLICIT",
+      "source": "Tail accessibility can be enhanced by disrupting the DNA interaction via modification of sidechain charge (St\u00fctzer et al., 2016; Morrison et al., 2018), as where distal acetylation of the H3 tail improved BPTF PHD engagement with H3K4me3 (Figure 2\u2014figure supplement 1b, d and e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data in Figure 2\u2014figure supplement 1b, d, e and citations to prior studies (St\u00fctzer et al., 2016; Morrison et al., 2018).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:40.256726Z"
+    },
+    {
+      "id": "0f4c818b-7ebb-48e5-9df3-5f3e559bbb88",
+      "content_id": "fb77f3e4-1647-4693-9ebf-0c8c736d348d",
+      "claim_id": "C51",
+      "claim": "Acetylation does not fully release the tail from DNA binding.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, acetylation does not fully release the tail from DNA binding (Morrison et al., 2018; Mutskov et al., 1998), such that the PHD still showed weaker association with the H3K3me3triac NCP relative to peptide.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental observations and citations to prior studies (Morrison et al., 2018; Mutskov et al., 1998).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:40.256726Z"
+    },
+    {
+      "id": "958a9031-e257-41ee-b36d-38ba716e24c4",
+      "content_id": "fb77f3e4-1647-4693-9ebf-0c8c736d348d",
+      "claim_id": "C52",
+      "claim": "BPTF BD alone was insufficient to engage the acetylated H3 or H4 tails in the nucleosome context because as a weaker binder it cannot effectively displace even acetylated tails.",
+      "claim_type": "EXPLICIT",
+      "source": "This may also explain why BPTF BD alone was insufficient to engage the acetylated H3 or H4 tails in the nucleosome context, since as a weaker binder it cannot effectively displace even acetylated tails to engage its reader function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the binding data showing BD alone cannot bind nucleosomes.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:40.256726Z"
+    },
+    {
+      "id": "e860ceed-7716-4be6-b122-8f1fef16d5da",
+      "content_id": "fb77f3e4-1647-4693-9ebf-0c8c736d348d",
+      "claim_id": "C53",
+      "claim": "GST-PHD-BD showed 24-fold stronger binding to the cis vs. trans combinatorial context ([H3K4me3K14ac \u2022 H3] vs. [H3K4me3 \u2022 H3K14ac]).",
+      "claim_type": "EXPLICIT",
+      "source": "In dCypher assays GST-PHD-BD showed 24-fold stronger binding to the cis vs. trans combinatorial context (EC50rel 10.8 nM [H3K4me3K14ac \u2022 H3] vs. 263 nM [H3K4me3 \u2022 H3K14ac]; Figure 5a and b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data comparing cis and trans binding shown in Figure 5a and b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:40.256726Z"
+    },
+    {
+      "id": "68534f85-3ec5-4b54-a0dd-53cdf0ba920b",
+      "content_id": "fb77f3e4-1647-4693-9ebf-0c8c736d348d",
+      "claim_id": "C54",
+      "claim": "Binding to the trans combinatorial NCP was indistinguishable from [H3K4me3 \u2022 H3], suggesting the tandem reader requires both PTMs in cis.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, binding to the trans combinatorial NCP was indistinguishable from [H3K4me3 \u2022 H3], suggesting the tandem reader requires both PTMs in cis, and trans tail engagement is of minimal contribution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the binding data showing no enhancement for trans configuration.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:40.256726Z"
+    },
+    {
+      "id": "5309b11b-6e9c-407c-a477-e2f9ea656298",
+      "content_id": "fb77f3e4-1647-4693-9ebf-0c8c736d348d",
+      "claim_id": "C55",
+      "claim": "GST-PHD-BD had only slightly improved binding to homotypic H3K4me3K14ac over heterotypic [H3K4me3K14ac \u2022 H3] (EC50rel 7.3 nM vs. 10.8 nM).",
+      "claim_type": "EXPLICIT",
+      "source": "Supporting this interaction mechanism, GST-PHD-BD had only slightly improved binding to homotypic H3K4me3K14ac over heterotypic [H3K4me3K14ac \u2022 H3] (EC50rel 7.3 nM vs. 10.8 nM; Figure 5a and b), which would be expected if reader engagement to each nucleosomal H3 tail is an essentially independent event.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data comparing homotypic and heterotypic binding in Figure 5a and b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:40.256726Z"
+    },
+    {
+      "id": "7ad1f256-49cd-4fa1-be44-e847d8e3f480",
+      "content_id": "fb77f3e4-1647-4693-9ebf-0c8c736d348d",
+      "claim_id": "C56",
+      "claim": "Reader engagement to each nucleosomal H3 tail is an essentially independent event.",
+      "claim_type": "EXPLICIT",
+      "source": "Supporting this interaction mechanism, GST-PHD-BD had only slightly improved binding to homotypic H3K4me3K14ac over heterotypic [H3K4me3K14ac \u2022 H3] (EC50rel 7.3 nM vs. 10.8 nM; Figure 5a and b), which would be expected if reader engagement to each nucleosomal H3 tail is an essentially independent event.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the small difference in binding between homotypic and heterotypic nucleosomes.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:40.256726Z"
+    },
+    {
+      "id": "2a5c5a3b-0609-4605-9c33-14a1f4885bd4",
+      "content_id": "fb77f3e4-1647-4693-9ebf-0c8c736d348d",
+      "claim_id": "C57",
+      "claim": "CUT&RUN identified extensive genomic co-localization of BPTF with H3K4me3 and H3K18ac, with the greatest degree of overlap when both are present.",
+      "claim_type": "EXPLICIT",
+      "source": "To investigate if this preference is recapitulated on chromatin, we performed CUT&RUN with antibodies to BPTF, H3K4me3, and H3K18ac in K562 cells ('Materials and methods' and Supplementary file 2). This identified extensive genomic co-localization of BPTF with each PTM, but the greatest degree of overlap when both are present (Figure 6\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by CUT&RUN data shown in Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:40.256726Z"
+    },
+    {
+      "id": "0877ead0-f944-416a-8aea-1be578d35fac",
+      "content_id": "fb77f3e4-1647-4693-9ebf-0c8c736d348d",
+      "claim_id": "C58",
+      "claim": "In reader-CUT&RUN, GST-PHD-BD showed a dramatic preference for spike-in nucleosomes containing H3K4me3triac relative to each PTM alone (sixfold over H3K4me3, 41-fold over H3tetraac).",
+      "claim_type": "EXPLICIT",
+      "source": "In these controlled studies GST-PHD-BD showed a dramatic preference for spike-ins containing the combinatorial signature (H3K4me3triac) relative to each PTM alone (sixfold over H3K4me3, 41-fold over H3tetraac; Figure 6b), recapitulating our dCypher observations (e.g. Figure 1d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by reader-CUT&RUN spike-in data shown in Figure 6b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:40.256726Z"
+    },
+    {
+      "id": "fdab9d23-22ee-4723-9282-346866442e2e",
+      "content_id": "fb77f3e4-1647-4693-9ebf-0c8c736d348d",
+      "claim_id": "C59",
+      "claim": "The genomic enrichment of GST-PHD-BD showed extensive overlap with regions containing H3K4me3 and H3K18ac.",
+      "claim_type": "EXPLICIT",
+      "source": "The genomic enrichment of GST-PHD-BD further confirmed its combinatorial preference, with binding regions showing extensive overlap with those containing H3K4me3 and H3K18ac (Figure 6c and d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by genomic enrichment data shown in Figure 6c and d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:40.256726Z"
+    },
+    {
+      "id": "e154881a-628f-48c4-bbab-0d5dfd578b05",
+      "content_id": "fb77f3e4-1647-4693-9ebf-0c8c736d348d",
+      "claim_id": "C60",
+      "claim": "The genomic enrichment of GST-PHD-BD was highly correlated with that of endogenous BPTF.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the genomic enrichment of GST-PHD-BD was also highly correlated with that of endogenous BPTF (Figure 6c and d), supporting that the tandem reader domains are sufficient to drive effective in vivo localization.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by genomic enrichment data comparing exogenous and endogenous BPTF in Figure 6c and d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:40.256726Z"
+    },
+    {
+      "id": "b3022456-d331-4fb8-9f24-3fac1ed50a06",
+      "content_id": "fb77f3e4-1647-4693-9ebf-0c8c736d348d",
+      "claim_id": "C61",
+      "claim": "The tandem reader domains are sufficient to drive effective in vivo localization of BPTF.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the genomic enrichment of GST-PHD-BD was also highly correlated with that of endogenous BPTF (Figure 6c and d), supporting that the tandem reader domains are sufficient to drive effective in vivo localization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the correlation between exogenous PHD-BD and endogenous BPTF localization.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:40.256726Z"
+    },
+    {
+      "id": "79cf8dd4-9ffe-4e66-b869-ccdb87742bc6",
+      "content_id": "fb77f3e4-1647-4693-9ebf-0c8c736d348d",
+      "claim_id": "C62",
+      "claim": "Nucleosome context strongly influences reader domain engagement with histone PTMs.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, our data indicate that nucleosome context strongly influences reader domain engagement with histone PTMs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary claim synthesizing all the experimental observations in the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:40.256726Z"
+    },
+    {
+      "id": "5120d5ed-cd50-422b-b79d-00a4331b13c0",
+      "content_id": "fb77f3e4-1647-4693-9ebf-0c8c736d348d",
+      "claim_id": "C63",
+      "claim": "Multiple reader domains display modified interaction with histone tail PTMs in the nucleosome context.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, multiple reader domains display modified interaction with histone tail PTMs in the nucleosome context (Morrison et al., 2018; Wang and Hayes, 2007; Gatchalian et al., 2017; Peng et al., 2021; Ruthenburg et al., 2011; Spangler et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to multiple prior studies documenting context-dependent reader binding.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:40.256726Z"
+    },
+    {
+      "id": "7c7b9db4-7768-440b-b92f-ec4642595b6f",
+      "content_id": "fb77f3e4-1647-4693-9ebf-0c8c736d348d",
+      "claim_id": "C64",
+      "claim": "The default association of nucleosomal histone tails with DNA limits accessibility and requires reader domains to compete for tail engagement.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose this is due (at least in part) to the default association of nucleosomal histone tails with DNA (Ghoneim et al., 2021), which limits accessibility and requires reader domains to compete for tail engagement.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic proposal based on the collective data and is consistent with Ghoneim et al., 2021.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:40.256726Z"
+    },
+    {
+      "id": "c0b4d62d-46d7-4999-8230-65917d5ce17c",
+      "content_id": "fb77f3e4-1647-4693-9ebf-0c8c736d348d",
+      "claim_id": "C65",
+      "claim": "Histone PTMs may play multiple roles: weakening the DNA association to increase access for reader domains, providing a platform for reader domain binding, or both.",
+      "claim_type": "EXPLICIT",
+      "source": "As a result, histone PTMs may play multiple roles; weakening the DNA association to increase access for reader domains, providing a platform for reader domain binding, or both.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic proposal inferred from the experimental observations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:40.256726Z"
+    },
+    {
+      "id": "92747ac1-01f0-4f5d-a049-53dbe6f49107",
+      "content_id": "fb77f3e4-1647-4693-9ebf-0c8c736d348d",
+      "claim_id": "C66",
+      "claim": "A nearly identical conformation of histone tails has been observed in chromatin arrays via solid-state NMR spectroscopy.",
+      "claim_type": "EXPLICIT",
+      "source": "However, via solid-state NMR spectroscopy, a nearly identical conformation of histone tails has also been observed in chromatin arrays (Musselman and Kutateladze, 2022; Shi et al., 2018; Shi et al., 2020; Gao et al., 2013; Xiang et al., 2018), and the H3 tail: DNA interaction has been observed in vivo by ChIP-exo (Rhee et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to solid-state NMR studies on chromatin arrays (Musselman and Kutateladze, 2022; Shi et al., 2018; Shi et al., 2020; Gao et al., 2013; Xiang et al., 2018) and in vivo ChIP-exo (Rhee et al., 2014).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:40.256726Z"
+    },
+    {
+      "id": "9570765c-724b-41a8-a312-7a7819897916",
+      "content_id": "fb77f3e4-1647-4693-9ebf-0c8c736d348d",
+      "claim_id": "C67",
+      "claim": "The H3 tail:DNA interaction has been observed in vivo by ChIP-exo.",
+      "claim_type": "EXPLICIT",
+      "source": "However, via solid-state NMR spectroscopy, a nearly identical conformation of histone tails has also been observed in chromatin arrays (Musselman and Kutateladze, 2022; Shi et al., 2018; Shi et al., 2020; Gao et al., 2013; Xiang et al., 2018), and the H3 tail: DNA interaction has been observed in vivo by ChIP-exo (Rhee et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Rhee et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:40.256726Z"
+    },
+    {
+      "id": "1a67b45d-0860-4866-b236-d9a823fac49c",
+      "content_id": "fb77f3e4-1647-4693-9ebf-0c8c736d348d",
+      "claim_id": "C68",
+      "claim": "H3K4me3 is invariably seen in (and most effectively created in) the cis context of H3 tail acetylation.",
+      "claim_type": "EXPLICIT",
+      "source": "We also note that H3K4me3 is invariably seen in (and most effectively created in) the cis context of H3 tail acetylation (see below) (Jain et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Jain et al., 2023.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:40.256726Z"
+    },
+    {
+      "id": "09f9f66e-e140-4a2f-bf9c-1436f4681d2b",
+      "content_id": "fb77f3e4-1647-4693-9ebf-0c8c736d348d",
+      "claim_id": "C69",
+      "claim": "The preference of BPTF PHD-BD for H3K4me3 with H3K14ac or H3K18ac over H3K9ac may be due to the in cis proximity of K9 to H3K4me3, restricting BD binding when the PHD finger is engaged.",
+      "claim_type": "EXPLICIT",
+      "source": "The preference of BPTF PHD-BD for H3K4me3 with H3K14ac or H3K18ac over H3K9ac may be due to the in cis proximity of K9 to H3K4me3, restricting BD binding when the PHD finger is engaged.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic speculation based on structural considerations.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:40.256726Z"
+    },
+    {
+      "id": "3a6d02c7-da69-439f-9a84-69090d38be1f",
+      "content_id": "fb77f3e4-1647-4693-9ebf-0c8c736d348d",
+      "claim_id": "C70",
+      "claim": "H3 acetylation-mediated switch increases tail accessibility in the nucleosome context and improves MLL1C-mediated H3K4 methylation.",
+      "claim_type": "EXPLICIT",
+      "source": "Our observations on co-incident tail acetylation promoting H3K4 accessibility to BPTF PHD reader (this study) are also exhibited by MLL1C methyltransferase (Jain et al., 2023). There we identified a H3 acetylation-mediated switch that increases tail accessibility in the nucleosome context, and thus improves MLL1C-mediated H3K4 methylation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Jain et al., 2023.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:40.256726Z"
+    },
+    {
+      "id": "6997806e-185c-49c4-a76b-96d53b95dc38",
+      "content_id": "fb77f3e4-1647-4693-9ebf-0c8c736d348d",
+      "claim_id": "C71",
+      "claim": "H3 acetylation enhances MLL1C activity in cis but has no impact in trans.",
+      "claim_type": "EXPLICIT",
+      "source": "Evidence for this model includes an increased Kcat (enhanced tail accessibility leads to an increase in substrate concentration), and that H3 acetylation enhances MLL1C activity in cis but has no impact in trans (demonstrated with heterotypic nucleosomes).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by reference to data from Jain et al., 2023.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:40.256726Z"
+    },
+    {
+      "id": "862af584-d758-48fa-9ecc-103b027b8754",
+      "content_id": "fb77f3e4-1647-4693-9ebf-0c8c736d348d",
+      "claim_id": "C72",
+      "claim": "Middle-down MS on bulk chromatin shows that H3 tail acetylation invariably accompanies cis H3K4 methylation.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, middle-down MS on bulk chromatin shows that H3 tail acetylation invariably accompanies cis H3K4 methylation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by reference to mass spectrometry data, likely from Jain et al., 2023.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:40.256726Z"
+    },
+    {
+      "id": "5ae979d7-1f64-4dd3-8d8c-0acc1b73a2c6",
+      "content_id": "fb77f3e4-1647-4693-9ebf-0c8c736d348d",
+      "claim_id": "C73",
+      "claim": "Individual reader domains consistently show reduced affinity and restricted specificity when moving from peptide to nucleosome context.",
+      "claim_type": "EXPLICIT",
+      "source": "When moving from the peptide to nucleosome context we (and others) consistently observe individual reader domains to show reduced affinity and restricted specificity (Jain et al., 2023; Morrison et al., 2018; Wang and Hayes, 2007; Gatchalian et al., 2017; Peng et al., 2021; Marunde et al., 2022a; Morgan et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by data from this study and multiple citations to prior work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:40.256726Z"
+    },
+    {
+      "id": "c6fa921d-8dc3-4b32-9634-4f58d6bbea5b",
+      "content_id": "fb77f3e4-1647-4693-9ebf-0c8c736d348d",
+      "claim_id": "C74",
+      "claim": "PWWP readers form multivalent interactions with DNA and histone tails, so peptide studies are often uninformative.",
+      "claim_type": "EXPLICIT",
+      "source": "An exception to this is readers with intrinsic DNA binding ability, such as the PWWPs. These form multivalent interactions with DNA and histone tails (so peptide studies are often uninformative) (Eidahl et al., 2013; van Nuland et al., 2013; Wang et al., 2020; Dukatz et al., 2019; Tian et al., 2019; Weinberg et al., 2019; Dilworth et al., 2022), but may also act to directly compete for the DNA, thus promoting tail accessibility when the target engaged (Weaver et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations documenting PWWP reader behavior (Eidahl et al., 2013; van Nuland et al., 2013; Wang et al., 2020; Dukatz et al., 2019; Tian et al., 2019; Weinberg et al., 2019; Dilworth et al., 2022; Weaver et al., 2018).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:40.256726Z"
+    },
+    {
+      "id": "0ea61ce6-8ee7-4369-999e-92a2070f5f63",
+      "content_id": "fb77f3e4-1647-4693-9ebf-0c8c736d348d",
+      "claim_id": "C75",
+      "claim": "Modification of an adjacent tail may alter the dynamics of the target tail, such trans-tail crosstalk being recently reported for H3 and H4.",
+      "claim_type": "EXPLICIT",
+      "source": "Beyond in cis modification of the target histone tail (as in this study), modification of an adjacent tail may alter the dynamics of the target, such trans-tail crosstalk being recently reported for H3 and H4 (Furukawa et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Furukawa et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:40.256726Z"
+    },
+    {
+      "id": "47e1f321-9ef2-4c3c-a8bc-8e4293deb7b2",
+      "content_id": "fb77f3e4-1647-4693-9ebf-0c8c736d348d",
+      "claim_id": "C76",
+      "claim": "Histone tail accessibility can be modulated by changes to the canonical nucleosome composition, such as hexasomes depleted of one H2A-H2B dimer.",
+      "claim_type": "EXPLICIT",
+      "source": "Alternatively, histone tail accessibility can be modulated by changes to the canonical nucleosome composition, such as hexasomes depleted of one H2A-H2B dimer (Morrison et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Morrison et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:40.256726Z"
+    },
+    {
+      "id": "ed6e9a8b-cc20-4517-8e5c-ff82505b2faf",
+      "content_id": "fb77f3e4-1647-4693-9ebf-0c8c736d348d",
+      "claim_id": "C77",
+      "claim": "In reader-CUT&RUN, GST-PHD-BD recapitulated the dCypher preference for spike-in nucleosomes containing the combinatorial target (H3K4me3triac) over each PTM class alone.",
+      "claim_type": "EXPLICIT",
+      "source": "In reader-CUT&RUN GST-PHD-BD recapitulated the dCypher preference for spike-in Nucs containing the combinatorial target (H3K4me3triac) over each PTM class alone (Figure 6b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by reader-CUT&RUN data shown in Figure 6b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:40.256726Z"
+    },
+    {
+      "id": "c4679e3c-72d1-4b43-9928-6dd16c0c3dc8",
+      "content_id": "fb77f3e4-1647-4693-9ebf-0c8c736d348d",
+      "claim_id": "C78",
+      "claim": "The combinatorial readout of H3K4me3 and H3K18ac is a discerning factor in the genomic localization of BPTF.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, this suggests that the combinatorial readout of these PTMs is indeed a discerning factor in the genomic localization of BPTF: the activity of both domains is clearly important to achieve robust interaction, and thus at minimum critical to achieve proper kinetics on chromatin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the genomic localization data showing correlation between PTMs and BPTF binding.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:40.256726Z"
+    },
+    {
+      "id": "c2a8c454-a1c7-48e2-846b-569fe9383a36",
+      "content_id": "fb77f3e4-1647-4693-9ebf-0c8c736d348d",
+      "claim_id": "C79",
+      "claim": "There are increasing examples of auto-regulatory elements within CAPs that modulate their activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, there are increasing examples of auto-regulatory elements within CAPs that modulate their activity (Guo et al., 2015; Ruan et al., 2015; Lu et al., 2015; Misaki et al., 2016; Andrews et al., 2016b; Harrison et al., 2016; Ludwigsen et al., 2017; Isaac et al., 2017; Slaughter et al., 2018; Zhang et al., 2019; Tencer et al., 2020; Ren et al., 2020; Ren et al., 2021; Nodelman et al., 2021; Weinberg et al., 2021), suggesting that a histone code is more than the simple availability of potentially redundant positive signals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by numerous citations documenting auto-regulatory mechanisms in chromatin-associated proteins.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:40.256726Z"
+    },
+    {
+      "id": "610c157f-d9b9-4c59-8ac3-3a101b10fc4d",
+      "content_id": "fb77f3e4-1647-4693-9ebf-0c8c736d348d",
+      "claim_id": "C80",
+      "claim": "The 'histone code' is ultimately defined by a combination of three elements: (1) the PTMs that can be recognized and bound by individual reader domains; (2) accessibility of the modified histone tails in the nucleosome context; and (3) the organization and multivalent binding potential of grouped domains.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose the 'histone code' is ultimately defined by a combination of three elements: (1) the PTMs that can be recognized and bound by individual reader domains; (2) accessibility of the modified histone tails in the nucleosome context; and (3) the organization and multivalent binding potential of grouped domains (where the whole is greater than the sum of the parts).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conceptual framework proposed based on all the experimental observations in the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:18:40.256726Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "b4e139dc-e70b-4056-87b4-8066429e7d21",
+      "content_id": "fb77f3e4-1647-4693-9ebf-0c8c736d348d",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "GST-PHD-BD binding to histone peptides shows selectivity for H3K4 methylation and acetylated H3/H4 tails, with no synergistic binding to combinatorially modified peptides. The tandem reader binds methylated H3K4 peptides preferentially over other methylation sites, acetylated H4 peptides with similar affinity to singly or multiply acetylated forms, and acetylated H3 peptides with ~2-fold weaker affinity than H4. No preference was observed for H3K4me3K9acK14acK18ac peptide over peptides containing each PTM class alone.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C12 are well-supported by experimental dCypher data shown in Figure 1c, e, and Figure 1\u2014figure supplement 1b, and are consistent with prior studies (Wysocka et al., 2006; Li et al., 2006; Ruthenburg et al., 2011; Nguyen et al., 2014; Chen et al., 2020). The data demonstrate that peptide studies do not reveal synergistic binding by the tandem reader.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:18:40.256726Z"
+    },
+    {
+      "id": "71de51a8-9978-423c-ada6-f605f5a7af62",
+      "content_id": "fb77f3e4-1647-4693-9ebf-0c8c736d348d",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "GST-PHD-BD binding to nucleosomes shows dramatically altered specificity compared to peptides, with reduced overall affinity, restricted PTM recognition, and strong synergistic binding to H3K4me3 combined with H3 tail acetylation. The tandem reader shows 26-fold enhanced binding to H3K4me3triac over H3K4me3 alone and 20-fold over H3tetraac, with preference for H3K4me3K14ac or H3K4me3K18ac over H3K4me3K9ac. Notably, GST-PHD-BD binds acetylated H3 but not acetylated H4 in nucleosomes, contrasting with peptide studies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C18 and C20 are strongly supported by comprehensive dCypher data comparing peptide and nucleosome binding (Figure 1c-e, Figure 1\u2014figure supplement 1d-g). The data demonstrate context-dependent changes in binding specificity and reveal synergistic binding to combinatorially modified nucleosomes that was not observed with peptides. The fold-change calculations and EC50rel values provide quantitative support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:18:40.256726Z"
+    },
+    {
+      "id": "6dc01453-f675-4c0e-afc0-05e25df5ad00",
+      "content_id": "fb77f3e4-1647-4693-9ebf-0c8c736d348d",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Individual BPTF reader domains show reduced affinity and altered specificity for nucleosomes compared to peptides. The isolated PHD domain shows inverted preference for H3K4me3triac over H3K4me3 in nucleosomes versus peptides, and favors H3K4me3 with co-incident acetylation without distinguishing between K9ac, K14ac, or K18ac. The isolated bromodomain binds acetylated H3 and H4 peptides but fails to bind any tested nucleosome targets.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C25 are supported by experimental data in Figure 2\u2014figure supplement 1a-g comparing isolated domain binding to peptides and nucleosomes. The data show clear context-dependent changes in binding for both PHD and BD domains, with the BD completely losing nucleosome binding ability. This provides mechanistic insight into the tandem reader function.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:18:40.256726Z"
+    },
+    {
+      "id": "9f024b11-56a0-4b43-be85-a7e78604dc3d",
+      "content_id": "fb77f3e4-1647-4693-9ebf-0c8c736d348d",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Mutational analysis reveals that a functional PHD domain is essential for BPTF PHD-BD binding to nucleosomes, while the bromodomain enhances binding to combinatorially modified nucleosomes. PHD mutation (W2891A) abolishes binding to all tested nucleosome targets, while BD mutation (N3007A) reduces binding to H3K4me3triac but maintains weaker binding to H3K4me3.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C28 are supported by mutant dCypher data in Figure 2b-c. The experiments clearly demonstrate the requirement for a functional PHD domain and the contribution of the BD to enhanced binding of combinatorial PTMs. The use of structure-guided point mutations that disrupt binding without affecting domain folding (validated by NMR in Figure 2\u2014figure supplement 2) strengthens the conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:18:40.256726Z"
+    },
+    {
+      "id": "8b8f5c1d-c8b1-4b13-b8dd-eea5524fa860",
+      "content_id": "fb77f3e4-1647-4693-9ebf-0c8c736d348d",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "NMR spectroscopy reveals that BPTF PHD-BD associates with acetylated H3 tail peptides in a multivalent manner employing both domains, with the binding mode dependent on H3K4 methylation state. The BD shows similar chemical shifts for H3triac, H3tetraac, and H3K4me3triac peptides, while the PHD shows distinct chemical shifts for H3K4me3triac versus the acetylated-only peptides, indicating formation of a unique complex when H3K4 is trimethylated.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C32 are supported by NMR titration data in Figure 3a and Figure 3\u2014figure supplement 1a-c. The chemical shift perturbation analysis provides direct structural evidence for multivalent binding and differential recognition of H3K4me3. The interpretation that both domains engage the tail is reasonable given the observed CSPs in both PHD and BD resonances.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:18:40.256726Z"
+    },
+    {
+      "id": "933801b8-22c8-4434-8ba8-6e657391786c",
+      "content_id": "fb77f3e4-1647-4693-9ebf-0c8c736d348d",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The H3 N-terminal residue A1 is essential for BPTF PHD-BD binding to nucleosomes. Truncation of A1 in H3K4me3triac nucleosomes abolishes PHD-BD binding, consistent with the known binding mechanism of PHD fingers that recognize the H3 N-terminus.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C34 are supported by experimental data showing loss of binding to N\u03941H3K4me3triac nucleosomes (Figure 3b), with proper validation of the truncated nucleosome using anti-H3K4me3 antibody (Figure 3\u2014figure supplement 1d). The result is consistent with structural knowledge of PHD finger binding mechanisms (Musselman et al., 2009).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:18:40.256726Z"
+    },
+    {
+      "id": "2be5e8e4-7652-4b81-bf3a-7d04aabd1dbf",
+      "content_id": "fb77f3e4-1647-4693-9ebf-0c8c736d348d",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "NMR analysis of 15N-H4 nucleosomes reveals that the H4 tail associates with nucleosomal DNA in a context-dependent conformation with two distinct dynamic regions. Only residues 1-15 are observable by NMR, while residues 16-20 (the basic patch) show severe line-broadening indicating stable association with the nucleosome core. The H4 tail peptide shows chemical shift perturbations upon DNA binding that closely match those observed in the nucleosome context, and residues 1-15 exchange quickly between multiple conformations while residues 16-20 exchange more slowly.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C41 are supported by comprehensive NMR data in Figure 4a-c comparing 15N-H4 peptide and nucleosome spectra, with proper validation of nucleosome integrity (Figure 4\u2014figure supplement 1). The interpretation of differential dynamics based on linewidth is standard NMR practice. The results are consistent with prior studies (Rabdano et al., 2021; Zhou et al., 2012; Kim et al., 2023; Zheng and Hayes, 2003) and provide direct evidence for H4 tail-DNA interactions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:18:40.256726Z"
+    },
+    {
+      "id": "51034dc0-a93c-4f22-82e4-135c5a7bafe5",
+      "content_id": "fb77f3e4-1647-4693-9ebf-0c8c736d348d",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "H4K16 acetylation weakens but does not eliminate the H4 tail interaction with DNA, and BPTF BD cannot bind H4K16ac in the nucleosome context. NMR spectra of 15N-H4Ks16ac nucleosomes show additional peaks relative to unmodified nucleosomes, suggesting weakened DNA interaction. Titration of BPTF BD into 15N-H4Ks16ac nucleosomes produces no significant chemical shift perturbations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C44 are supported by NMR data in Figure 4d-e with proper validation of the acetyl-lysine analog installation (Figure 4\u2014figure supplement 3). The interpretation that additional peaks indicate weakened DNA interaction is reasonable and consistent with prior studies on H4K16Q (Zhou et al., 2012). The lack of CSPs upon BD titration provides direct evidence for occlusion of H4K16ac from reader binding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:18:40.256726Z"
+    },
+    {
+      "id": "7bcd4283-0620-4f40-9658-8c7b6f3e0bd2",
+      "content_id": "fb77f3e4-1647-4693-9ebf-0c8c736d348d",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Nucleosomal H4 tail accessibility is reader-dependent, as demonstrated by differential binding of BPTF BD and BRD4-BD1 to acetylated H4 nucleosomes. While BPTF BD fails to bind any tested nucleosome targets, BRD4-BD1 binds H4tetraac nucleosomes with ~10-fold weaker affinity than the comparable peptide (EC50rel 7.4 nM vs. 0.7 nM).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C47 are supported by dCypher data comparing BPTF BD and BRD4-BD1 binding (Figure 4\u2014figure supplement 4). The differential binding provides strong evidence that tail accessibility depends on reader properties such as affinity or engagement mechanism. The result is consistent with recent findings for PHIP BD1-BD2 (Morgan et al., 2021).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:18:40.256726Z"
+    },
+    {
+      "id": "0587f849-371b-49c8-9562-7b0897773519",
+      "content_id": "fb77f3e4-1647-4693-9ebf-0c8c736d348d",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "BPTF PHD-BD requires both H3K4me3 and H3 acetylation in cis for optimal nucleosome binding, with 24-fold stronger binding to cis versus trans configuration. Binding to trans combinatorial nucleosomes is indistinguishable from H3K4me3 alone, and homotypic H3K4me3K14ac shows only slightly improved binding over heterotypic [H3K4me3K14ac \u2022 H3] (EC50rel 7.3 nM vs. 10.8 nM), suggesting independent engagement of each H3 tail.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C56 are supported by dCypher data using heterotypic nucleosomes in Figure 5a-b. The use of fully defined heterotypic nucleosomes is a strength that allows definitive assessment of cis versus trans binding. The small difference between homotypic and heterotypic binding supports the interpretation of independent tail engagement. This is a key result demonstrating the importance of PTM configuration.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:18:40.256726Z"
+    },
+    {
+      "id": "372581b3-2ad9-4686-b292-ecc2b10b34bf",
+      "content_id": "fb77f3e4-1647-4693-9ebf-0c8c736d348d",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "BPTF PHD-BD shows preferential association with H3K4me3 and H3K18ac in chromatin, as demonstrated by CUT&RUN and reader-CUT&RUN experiments. Spike-in nucleosomes show 6-fold preference for H3K4me3triac over H3K4me3 and 41-fold over H3tetraac. Genomic enrichment of exogenous GST-PHD-BD shows extensive overlap with regions containing H3K4me3 and H3K18ac, and is highly correlated with endogenous BPTF localization, supporting that the tandem reader domains are sufficient to drive effective in vivo localization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C61, C77-C78 are supported by CUT&RUN data in Figure 6 and Figure 6\u2014figure supplement 1. The use of DNA-barcoded spike-in nucleosomes is a strength that provides internal controls for binding specificity. The correlation between exogenous PHD-BD and endogenous BPTF localization provides strong evidence that the tandem reader is sufficient for chromatin targeting. The genomic data recapitulate the in vitro dCypher findings, strengthening the overall conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:18:40.256726Z"
+    },
+    {
+      "id": "1aad094f-3a9b-4354-b09a-a4278ff4fb49",
+      "content_id": "fb77f3e4-1647-4693-9ebf-0c8c736d348d",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Nucleosome context strongly influences reader domain engagement with histone PTMs due to default association of histone tails with DNA, which limits accessibility and requires readers to compete for tail engagement. Histone PTMs play multiple roles by weakening DNA association to increase accessibility and providing a platform for reader binding. Tail accessibility can be enhanced by charge modification through acetylation, though this does not fully release tails from DNA binding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C52, C62, C64-C65 represent the central mechanistic model synthesized from all experimental observations. The model is well-supported by the collective data on reduced reader affinity for nucleosomes, differential binding of isolated versus tandem domains, NMR evidence for tail-DNA interactions, and effects of acetylation on binding. The proposal is consistent with prior work (Ghoneim et al., 2021; St\u00fctzer et al., 2016; Morrison et al., 2018) and provides a unifying framework for the observations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:18:40.256726Z"
+    },
+    {
+      "id": "4f92cff1-2afe-470a-9e37-aa1daa6a227d",
+      "content_id": "fb77f3e4-1647-4693-9ebf-0c8c736d348d",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Background claims establish the chromatin context, histone code hypothesis, and prior knowledge of BPTF PHD-BD binding to histone peptides. These include the nucleosome structure, correlations between histone PTMs and chromatin states, the histone code concept, BPTF's role in NURF complex and cancer, and peptide-based binding specificities showing PHD preference for H3K4me3 and BD preference for acetylated H4.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C8 are well-supported by appropriate citations to foundational and prior work. These background claims provide necessary context for the study and are not disputed. They establish the rationale for investigating nucleosome-level binding.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:18:40.256726Z"
+    },
+    {
+      "id": "85eddc0a-1883-4399-bdf0-197a3177e72b",
+      "content_id": "fb77f3e4-1647-4693-9ebf-0c8c736d348d",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Discussion claims place the current findings in broader context, noting that multiple reader domains show context-dependent binding, histone tail-DNA interactions occur in chromatin arrays and in vivo, H3K4me3 co-occurs with H3 acetylation in cis, similar accessibility effects are observed for MLL1C methyltransferase, and auto-regulatory elements modulate CAP activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63, C66-C68, C70-C76, C79 are supported by appropriate citations to prior work and provide important context for interpreting the current findings. These claims connect the study to broader themes in chromatin biology and are not disputed.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:18:40.256726Z"
+    },
+    {
+      "id": "2c2302c1-ded9-43bb-ad73-ef7e24e44849",
+      "content_id": "fb77f3e4-1647-4693-9ebf-0c8c736d348d",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Interpretive and speculative claims propose mechanisms and frameworks, including that the BD binding pocket accommodates one acetyl-lysine, H4 tail forms fuzzy complexes with DNA, differential tail behavior relates to charge distribution, BRD4 BD1 DNA binding may help disengage H4 tail, K9 proximity to K4me3 may restrict BD binding, and the histone code is defined by three elements: PTM recognition, tail accessibility, and multivalent binding potential.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19, C35, C42, C48, C69, C80 represent reasonable interpretations and speculations based on the data and prior structural/mechanistic knowledge. C19 is supported by crystal structures (Ruthenburg et al., 2011). C35 is supported by citation to computational models (Rabdano et al., 2021). C42, C48, and C69 are reasonable speculations. C80 represents the conceptual framework proposed by the authors, which is well-supported by the collective experimental observations and provides a refined model of the histone code.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:18:40.256726Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "dd02b75e-7929-45f4-b55f-093f0c57f8e4",
+      "result_id": "b4e139dc-e70b-4056-87b4-8066429e7d21"
+    },
+    {
+      "claim_id": "ed2ec6c6-35c8-4ec3-a75e-be8ec850932f",
+      "result_id": "b4e139dc-e70b-4056-87b4-8066429e7d21"
+    },
+    {
+      "claim_id": "5b66bc45-d56b-4ee5-842d-7dee47d42eda",
+      "result_id": "b4e139dc-e70b-4056-87b4-8066429e7d21"
+    },
+    {
+      "claim_id": "7f59fea3-6fda-485e-9a0d-3843247758df",
+      "result_id": "b4e139dc-e70b-4056-87b4-8066429e7d21"
+    },
+    {
+      "claim_id": "526db96c-4382-4fa1-936b-9a9b687ac9c1",
+      "result_id": "71de51a8-9978-423c-ada6-f605f5a7af62"
+    },
+    {
+      "claim_id": "884f6d10-c95d-497c-b863-68d5f746ba1e",
+      "result_id": "71de51a8-9978-423c-ada6-f605f5a7af62"
+    },
+    {
+      "claim_id": "eab7dbba-8dcf-4153-9e79-e3240b60cd72",
+      "result_id": "71de51a8-9978-423c-ada6-f605f5a7af62"
+    },
+    {
+      "claim_id": "9e94eab9-09c2-4e28-8219-b98ce28073ab",
+      "result_id": "71de51a8-9978-423c-ada6-f605f5a7af62"
+    },
+    {
+      "claim_id": "d9f46512-2ff1-4e38-8278-5aec993410fb",
+      "result_id": "71de51a8-9978-423c-ada6-f605f5a7af62"
+    },
+    {
+      "claim_id": "9edbc89c-c68d-41ab-b3e0-e1f21b729f19",
+      "result_id": "71de51a8-9978-423c-ada6-f605f5a7af62"
+    },
+    {
+      "claim_id": "f87d358b-ed26-4b95-b420-89538dac67ef",
+      "result_id": "71de51a8-9978-423c-ada6-f605f5a7af62"
+    },
+    {
+      "claim_id": "c2c94c28-6ad9-4d8d-86de-5e45b7910046",
+      "result_id": "6dc01453-f675-4c0e-afc0-05e25df5ad00"
+    },
+    {
+      "claim_id": "b96ff2e0-4667-4186-ad00-d4a5625a6ece",
+      "result_id": "6dc01453-f675-4c0e-afc0-05e25df5ad00"
+    },
+    {
+      "claim_id": "9e90f78c-9476-469f-a11c-cb1331d97ab2",
+      "result_id": "6dc01453-f675-4c0e-afc0-05e25df5ad00"
+    },
+    {
+      "claim_id": "414e4a66-ffec-4d9b-85dd-ff4a9da248b7",
+      "result_id": "6dc01453-f675-4c0e-afc0-05e25df5ad00"
+    },
+    {
+      "claim_id": "71e0084f-43bc-48f3-8a88-b8211ee12d5b",
+      "result_id": "6dc01453-f675-4c0e-afc0-05e25df5ad00"
+    },
+    {
+      "claim_id": "9b0ec951-a33f-4d4a-84b8-686e81988847",
+      "result_id": "9f024b11-56a0-4b43-be85-a7e78604dc3d"
+    },
+    {
+      "claim_id": "11ba4fff-d35e-48f8-b02c-2f20d0de23b8",
+      "result_id": "9f024b11-56a0-4b43-be85-a7e78604dc3d"
+    },
+    {
+      "claim_id": "7c65cb44-4e0f-4f0f-ba45-e81d92da9f4a",
+      "result_id": "9f024b11-56a0-4b43-be85-a7e78604dc3d"
+    },
+    {
+      "claim_id": "62d9b019-69e8-44e6-9cc3-ab869cb67c92",
+      "result_id": "8b8f5c1d-c8b1-4b13-b8dd-eea5524fa860"
+    },
+    {
+      "claim_id": "31f03b5a-af33-4429-8df2-134c82332699",
+      "result_id": "8b8f5c1d-c8b1-4b13-b8dd-eea5524fa860"
+    },
+    {
+      "claim_id": "6d588f62-9c75-4f84-bd47-4fc0c192fc52",
+      "result_id": "8b8f5c1d-c8b1-4b13-b8dd-eea5524fa860"
+    },
+    {
+      "claim_id": "10489452-8466-4e52-b6d5-3c3f3a17c612",
+      "result_id": "8b8f5c1d-c8b1-4b13-b8dd-eea5524fa860"
+    },
+    {
+      "claim_id": "d2a0978a-400c-46a0-b373-c84807576bf0",
+      "result_id": "933801b8-22c8-4434-8ba8-6e657391786c"
+    },
+    {
+      "claim_id": "e33bcafa-5989-48e0-bc46-5fe821503d7e",
+      "result_id": "933801b8-22c8-4434-8ba8-6e657391786c"
+    },
+    {
+      "claim_id": "fc26ea01-c0b8-4b98-93e7-e5e3c3bf9ac1",
+      "result_id": "2be5e8e4-7652-4b81-bf3a-7d04aabd1dbf"
+    },
+    {
+      "claim_id": "794a1dd3-93a6-48be-8aab-d15fda4112c2",
+      "result_id": "2be5e8e4-7652-4b81-bf3a-7d04aabd1dbf"
+    },
+    {
+      "claim_id": "50b73e9a-5b32-4b49-8a06-3259020aff23",
+      "result_id": "2be5e8e4-7652-4b81-bf3a-7d04aabd1dbf"
+    },
+    {
+      "claim_id": "709e8d83-e36d-40d7-b205-842e6ed98f1e",
+      "result_id": "2be5e8e4-7652-4b81-bf3a-7d04aabd1dbf"
+    },
+    {
+      "claim_id": "bf3eac02-788e-406c-a9e7-ac76719e869f",
+      "result_id": "2be5e8e4-7652-4b81-bf3a-7d04aabd1dbf"
+    },
+    {
+      "claim_id": "8195c118-950a-4fe3-8b14-ac05c2b33d0c",
+      "result_id": "2be5e8e4-7652-4b81-bf3a-7d04aabd1dbf"
+    },
+    {
+      "claim_id": "e6c53468-41ad-4897-98de-cd45b7e6ff7a",
+      "result_id": "51034dc0-a93c-4f22-82e4-135c5a7bafe5"
+    },
+    {
+      "claim_id": "aa430a0b-f3bf-405d-9c79-16bb4b703f68",
+      "result_id": "51034dc0-a93c-4f22-82e4-135c5a7bafe5"
+    },
+    {
+      "claim_id": "e339b27a-7c90-44d5-ab1a-eed9dd5673ef",
+      "result_id": "7bcd4283-0620-4f40-9658-8c7b6f3e0bd2"
+    },
+    {
+      "claim_id": "3cb64318-440c-4876-a580-fcb960574424",
+      "result_id": "7bcd4283-0620-4f40-9658-8c7b6f3e0bd2"
+    },
+    {
+      "claim_id": "bf25b4ef-b377-41f2-886c-d7df8786e594",
+      "result_id": "7bcd4283-0620-4f40-9658-8c7b6f3e0bd2"
+    },
+    {
+      "claim_id": "e860ceed-7716-4be6-b122-8f1fef16d5da",
+      "result_id": "0587f849-371b-49c8-9562-7b0897773519"
+    },
+    {
+      "claim_id": "68534f85-3ec5-4b54-a0dd-53cdf0ba920b",
+      "result_id": "0587f849-371b-49c8-9562-7b0897773519"
+    },
+    {
+      "claim_id": "5309b11b-6e9c-407c-a477-e2f9ea656298",
+      "result_id": "0587f849-371b-49c8-9562-7b0897773519"
+    },
+    {
+      "claim_id": "7ad1f256-49cd-4fa1-be44-e847d8e3f480",
+      "result_id": "0587f849-371b-49c8-9562-7b0897773519"
+    },
+    {
+      "claim_id": "2a5c5a3b-0609-4605-9c33-14a1f4885bd4",
+      "result_id": "372581b3-2ad9-4686-b292-ecc2b10b34bf"
+    },
+    {
+      "claim_id": "0877ead0-f944-416a-8aea-1be578d35fac",
+      "result_id": "372581b3-2ad9-4686-b292-ecc2b10b34bf"
+    },
+    {
+      "claim_id": "fdab9d23-22ee-4723-9282-346866442e2e",
+      "result_id": "372581b3-2ad9-4686-b292-ecc2b10b34bf"
+    },
+    {
+      "claim_id": "e154881a-628f-48c4-bbab-0d5dfd578b05",
+      "result_id": "372581b3-2ad9-4686-b292-ecc2b10b34bf"
+    },
+    {
+      "claim_id": "b3022456-d331-4fb8-9f24-3fac1ed50a06",
+      "result_id": "372581b3-2ad9-4686-b292-ecc2b10b34bf"
+    },
+    {
+      "claim_id": "ed6e9a8b-cc20-4517-8e5c-ff82505b2faf",
+      "result_id": "372581b3-2ad9-4686-b292-ecc2b10b34bf"
+    },
+    {
+      "claim_id": "c4679e3c-72d1-4b43-9928-6dd16c0c3dc8",
+      "result_id": "372581b3-2ad9-4686-b292-ecc2b10b34bf"
+    },
+    {
+      "claim_id": "0fb2cd20-68b1-4e83-b8b5-a7a76782d1bc",
+      "result_id": "1aad094f-3a9b-4354-b09a-a4278ff4fb49"
+    },
+    {
+      "claim_id": "beffb00b-6519-4c0a-bbdb-23b92f205b6a",
+      "result_id": "1aad094f-3a9b-4354-b09a-a4278ff4fb49"
+    },
+    {
+      "claim_id": "0f4c818b-7ebb-48e5-9df3-5f3e559bbb88",
+      "result_id": "1aad094f-3a9b-4354-b09a-a4278ff4fb49"
+    },
+    {
+      "claim_id": "958a9031-e257-41ee-b36d-38ba716e24c4",
+      "result_id": "1aad094f-3a9b-4354-b09a-a4278ff4fb49"
+    },
+    {
+      "claim_id": "79cf8dd4-9ffe-4e66-b869-ccdb87742bc6",
+      "result_id": "1aad094f-3a9b-4354-b09a-a4278ff4fb49"
+    },
+    {
+      "claim_id": "7c7b9db4-7768-440b-b92f-ec4642595b6f",
+      "result_id": "1aad094f-3a9b-4354-b09a-a4278ff4fb49"
+    },
+    {
+      "claim_id": "c0b4d62d-46d7-4999-8230-65917d5ce17c",
+      "result_id": "1aad094f-3a9b-4354-b09a-a4278ff4fb49"
+    },
+    {
+      "claim_id": "f8770f58-40d4-49fe-b98d-50a2a83898e4",
+      "result_id": "4f92cff1-2afe-470a-9e37-aa1daa6a227d"
+    },
+    {
+      "claim_id": "56c3a52e-dd98-4f52-aaf1-37d47ff8d5ac",
+      "result_id": "4f92cff1-2afe-470a-9e37-aa1daa6a227d"
+    },
+    {
+      "claim_id": "59aeb98e-0069-4021-87bc-0dd89357636f",
+      "result_id": "4f92cff1-2afe-470a-9e37-aa1daa6a227d"
+    },
+    {
+      "claim_id": "80fb0449-8bca-45e0-8c7e-4fb04d168420",
+      "result_id": "4f92cff1-2afe-470a-9e37-aa1daa6a227d"
+    },
+    {
+      "claim_id": "f4ec0d9a-80de-4445-9146-5472354d9d09",
+      "result_id": "4f92cff1-2afe-470a-9e37-aa1daa6a227d"
+    },
+    {
+      "claim_id": "b028b108-b49d-4380-9c01-c094f6edae2d",
+      "result_id": "4f92cff1-2afe-470a-9e37-aa1daa6a227d"
+    },
+    {
+      "claim_id": "b9a7f7d6-ece9-4635-a6a8-390baac83424",
+      "result_id": "4f92cff1-2afe-470a-9e37-aa1daa6a227d"
+    },
+    {
+      "claim_id": "87666e14-3ca9-448a-a908-9afd2380832c",
+      "result_id": "4f92cff1-2afe-470a-9e37-aa1daa6a227d"
+    },
+    {
+      "claim_id": "5120d5ed-cd50-422b-b79d-00a4331b13c0",
+      "result_id": "85eddc0a-1883-4399-bdf0-197a3177e72b"
+    },
+    {
+      "claim_id": "92747ac1-01f0-4f5d-a049-53dbe6f49107",
+      "result_id": "85eddc0a-1883-4399-bdf0-197a3177e72b"
+    },
+    {
+      "claim_id": "9570765c-724b-41a8-a312-7a7819897916",
+      "result_id": "85eddc0a-1883-4399-bdf0-197a3177e72b"
+    },
+    {
+      "claim_id": "1a67b45d-0860-4866-b236-d9a823fac49c",
+      "result_id": "85eddc0a-1883-4399-bdf0-197a3177e72b"
+    },
+    {
+      "claim_id": "3a6d02c7-da69-439f-9a84-69090d38be1f",
+      "result_id": "85eddc0a-1883-4399-bdf0-197a3177e72b"
+    },
+    {
+      "claim_id": "6997806e-185c-49c4-a76b-96d53b95dc38",
+      "result_id": "85eddc0a-1883-4399-bdf0-197a3177e72b"
+    },
+    {
+      "claim_id": "862af584-d758-48fa-9ecc-103b027b8754",
+      "result_id": "85eddc0a-1883-4399-bdf0-197a3177e72b"
+    },
+    {
+      "claim_id": "5ae979d7-1f64-4dd3-8d8c-0acc1b73a2c6",
+      "result_id": "85eddc0a-1883-4399-bdf0-197a3177e72b"
+    },
+    {
+      "claim_id": "c6fa921d-8dc3-4b32-9634-4f58d6bbea5b",
+      "result_id": "85eddc0a-1883-4399-bdf0-197a3177e72b"
+    },
+    {
+      "claim_id": "0ea61ce6-8ee7-4369-999e-92a2070f5f63",
+      "result_id": "85eddc0a-1883-4399-bdf0-197a3177e72b"
+    },
+    {
+      "claim_id": "47e1f321-9ef2-4c3c-a8bc-8e4293deb7b2",
+      "result_id": "85eddc0a-1883-4399-bdf0-197a3177e72b"
+    },
+    {
+      "claim_id": "c2a8c454-a1c7-48e2-846b-569fe9383a36",
+      "result_id": "85eddc0a-1883-4399-bdf0-197a3177e72b"
+    },
+    {
+      "claim_id": "1b2fc663-4783-4b4a-82d5-92db4234ba6d",
+      "result_id": "2c2302c1-ded9-43bb-ad73-ef7e24e44849"
+    },
+    {
+      "claim_id": "dbb4547d-f898-47ae-8d09-9756575f1af2",
+      "result_id": "2c2302c1-ded9-43bb-ad73-ef7e24e44849"
+    },
+    {
+      "claim_id": "e779a42f-bbf7-4f41-89f8-7b8f405a18d5",
+      "result_id": "2c2302c1-ded9-43bb-ad73-ef7e24e44849"
+    },
+    {
+      "claim_id": "7b40159a-0616-44cb-a629-1d39a5262a0d",
+      "result_id": "2c2302c1-ded9-43bb-ad73-ef7e24e44849"
+    },
+    {
+      "claim_id": "09f9f66e-e140-4a2f-bf9c-1436f4681d2b",
+      "result_id": "2c2302c1-ded9-43bb-ad73-ef7e24e44849"
+    },
+    {
+      "claim_id": "610c157f-d9b9-4c59-8ac3-3a101b10fc4d",
+      "result_id": "2c2302c1-ded9-43bb-ad73-ef7e24e44849"
+    }
+  ],
+  "comparisons": []
+}

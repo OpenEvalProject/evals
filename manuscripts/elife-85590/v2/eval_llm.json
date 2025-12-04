@@ -1,0 +1,318 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C78"
+    ],
+    "result": "Systemic propranolol administration decreased behavioral engagement and performance in a 2AFC task, with sex-specific effects. Propranolol reduced trial initiation by 63% in females and 37% in males (C28, C29), increased omissions fourfold in females but not males (C32, C33), and increased decision and reaction times particularly in females (C35-C40). Task engagement was impaired (C78) while premature responses and ITI lever pressing were unaffected or increased (C30, C34), suggesting specific effects on task-related behavior rather than general motor impairment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The behavioral effects are well-documented with appropriate statistical analyses (two-way ANOVAs, post-hoc tests) and adequate sample sizes (n=10 females, n=9 males). The sex-specific pattern is consistent across multiple behavioral measures. The control measure of ITI lever pressing (C34) strengthens the interpretation that effects are task-specific rather than due to general motor impairment or arousal changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C95",
+      "C101"
+    ],
+    "result": "Propranolol altered baseline neural properties in anterior M2 in a sex-specific manner. In females, propranolol reduced the proportion of task-locked neurons from 71.43% to 44.26% (C42, C43, C46) and caused a rightward shift in firing rate distribution (C50), increasing mean firing rates (C48, C49, C50). Males showed no significant change in task-locked neuron proportion (C44, C45, C46) or firing rate distribution (C51). Sex differences in baseline firing rates were present after saline but eliminated after propranolol (C47).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The electrophysiology findings are supported by adequate sample sizes (347 total units from 14 rats) and appropriate statistical tests (Fisher's exact test, Mann-Whitney test, two-way ANOVA). The sex-specific effects on baseline properties are clearly demonstrated and consistent with the behavioral findings showing greater female vulnerability. The rightward shift in firing rate distribution in females (C50) is interpreted as reduced inhibitory tone, which is mechanistically plausible.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C86",
+      "C87",
+      "C121",
+      "C122",
+      "C142",
+      "C158"
+    ],
+    "result": "Propranolol disrupted action plan separation in anterior M2 by impairing suppression of nonpreferred action plans. Under saline, neurons showed sustained separation of preferred and nonpreferred action plans for 1.3s in females and 1.1s in males (C56, C57). After propranolol, females showed no significant action plan separation (C58) while males showed only brief 100-300ms bursts (C59). The loss of separation was primarily driven by disinhibition of neurons responding to nonpreferred cues (C60, C158), with neurons that should be silenced continuing to show activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The neural encoding findings are well-supported by population-level analyses with appropriate statistical corrections (Holm-Sidak for multiple comparisons). The interpretation that propranolol causes disinhibition of nonpreferred action plans (C60) is supported by the data showing reduced negative z-scores for nonpreferred trials. The sex difference in severity (complete loss in females vs. brief bursts in males) is clearly demonstrated in Figures 3D-E.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C88"
+    ],
+    "result": "Linear classifier decoding of cue identity from M2 neural activity was highly accurate under saline conditions but accuracy was lost after propranolol in both sexes. Decoding accuracy was significantly above chance for sustained periods with saline (C61) but rarely exceeded chance levels after propranolol in both females and males (C62, C88).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The decoding analysis used appropriate methods (linear SVM with cross-validation, permutation testing for chance comparison) and controlled for neuron number and trial number. The loss of decoding accuracy after propranolol is consistent with the reduced action plan separation observed in the population analyses. The methods are clearly described and the analysis appears technically sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "When neural activity was aligned to lever press, propranolol disrupted sustained action plan representation leading up to movement execution. Under saline, action plans were represented ~1s before lever press (C66), but propranolol disrupted this sustained separation in both sexes (C67), with more severe effects in females (C70). This inability to maintain action plans likely contributed to delayed reaction times (C68).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The lever press-aligned analysis complements the cue-aligned findings and shows consistent effects of propranolol on action plan maintenance. The interpretation linking neural disruption to behavioral reaction time delays (C68) is reasonable given the temporal correspondence. The greater effect in females (C70) is consistent with other neural and behavioral measures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C80",
+      "C118",
+      "C132"
+    ],
+    "result": "Females showed higher \u03b2-noradrenergic receptor RNA expression in anterior M2 compared to males, particularly \u03b22 receptors (C71, C72). The increase in \u03b22 receptor RNA in females was primarily localized to vGAT+ inhibitory neurons (C73), while \u03b21 receptor RNA was predominantly on vGLUT+ excitatory neurons in both sexes (C74). This differential expression pattern provides a potential molecular mechanism for sex differences in behavioral and neural sensitivity to propranolol.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The RNAscope findings are supported by appropriate sample sizes (n=8 hemispheres, 4 animals per group), statistical analyses (two-way ANOVA with post-hoc tests), and clear anatomical localization using cell-type markers. The finding of higher \u03b22 receptor RNA on GABAergic neurons in females (C73) provides a plausible mechanism for the greater disruption of action plan separation in females, as \u03b22 modulation of inhibitory neurons could regulate suppression of nonpreferred action plans.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C11",
+      "C63",
+      "C64",
+      "C75",
+      "C81",
+      "C84",
+      "C85",
+      "C97",
+      "C136",
+      "C137",
+      "C138",
+      "C146",
+      "C147",
+      "C148"
+    ],
+    "result": "\u03b2-noradrenergic signaling is necessary for effective action plan signals in anterior M2 during decision-making. Loss of \u03b2-noradrenergic signaling through propranolol administration resulted in failure to suppress irrelevant action plans (C5), disrupted cue decoding (C6), delayed decision times (C7), and increased omissions particularly in females (C8). The mechanism involves \u03b2-noradrenergic modulation increasing signal-to-noise by enhancing relevant signals while suppressing irrelevant action plans (C11, C137, C148), with sex-specific sensitivity related to differential \u03b22 receptor expression on GABAergic interneurons (C75, C138).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This overarching conclusion integrates behavioral, neural, and molecular findings into a coherent mechanistic framework. The causal role of \u03b2-noradrenergic signaling is demonstrated through pharmacological manipulation, the neural mechanism is characterized through electrophysiology, and the molecular basis for sex differences is established through RNAscope. However, the systemic administration of propranolol (acknowledged in C105) means direct vs. indirect effects on M2 cannot be fully distinguished, which is appropriately noted as a limitation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C125",
+      "C143"
+    ],
+    "result": "The authors link neural disruption in M2 to behavioral deficits, proposing that diminished action plan encoding necessitates longer decision times or behavioral omissions (C89), and that decreased action plan separation was associated with increased omissions, decision times, and reaction times (C90, C143). These behavioral deficits were mediated by \u03b2-noradrenergic dependent alterations in M2 activity (C125).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The correlation between neural disruption and behavioral deficits is well-established through concurrent measurement. The temporal correspondence between loss of action plan separation and behavioral impairments supports a causal relationship, though the correlational nature of the link should be acknowledged. The interpretation is strengthened by prior causal studies cited (C64) showing that M2 action plan signals are necessary for 2AFC performance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C156"
+    ],
+    "result": "Under baseline (saline) conditions, M2 action plan encoding was similar between sexes. The data replicated prior findings of side-preferential activation and active inhibition for opposing cues/actions (C93), and these functions were consistent across sexes with similar task-related activity in females and males (C94, C156).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This finding establishes that sex differences emerge specifically under noradrenergic perturbation rather than reflecting baseline differences in M2 function. The replication of prior findings (C93) validates the experimental approach. The similar baseline function between sexes strengthens the interpretation that differential \u03b2-receptor expression (rather than fundamental differences in M2 circuitry) underlies the sex-specific vulnerability to propranolol.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C153",
+      "C154",
+      "C155"
+    ],
+    "result": "M2 neural activity showed ramping patterns when aligned to lever press but not cue onset (C99), suggesting the recorded neural data is more tightly aligned to action planning, motor preparation, and execution than sensory integration (C100). Two primary task-related activity drivers were identified: cue onset and lever press (C154), which bookend the expected duration of action plan signals (C155).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This characterization of the neural data helps interpret the functional role of the recorded M2 neurons. The observation of ramping activity aligned to movement (C99) is consistent with prior literature on M2 function. The interpretation that the data reflects action planning rather than sensory processing (C100) is reasonable given the temporal dynamics, though both processes likely contribute to some degree.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C127"
+    ],
+    "result": "The authors propose that differential \u03b2-receptor RNA expression in M2 supports propranolol acting directly within M2 (C103), though they acknowledge that behavioral and neural changes are likely influenced by indirect and collective actions of systemic propranolol in many regions (C105). They propose higher \u03b2-receptor RNA levels support greater dependence on \u03b2-adrenoreceptors to regulate M2 neural activity (C127).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The interpretation of direct M2 effects is complicated by systemic drug administration. While the RNAscope data showing differential receptor expression in M2 is solid, this alone cannot establish that propranolol acts primarily or directly on M2 to produce the observed effects. The authors appropriately acknowledge this limitation (C105). Future experiments with local M2 manipulations (suggested in C149) would be needed to definitively establish direct effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "The authors argue that behavioral deficits are not due to working memory impairments (C110) based on prior literature, and consider alternative explanations including behavioral disengagement (C112), reduced motivation/arousal (C113), but argue against arousal confounds based on increased ITI lever pressing (C115) and lack of difference in M2 action plan signals between early and late trials on saline sessions (C114).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The consideration of alternative explanations is appropriate and the arguments against arousal/motivation confounds are reasonable. The increased ITI lever pressing (C115) is a strong control showing that general motor output is not impaired. The analysis of early vs. late trials (C114) addresses potential confounds from declining motivation within sessions. However, the distinction between task engagement, motivation, and attention is somewhat blurred in the discussion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "The authors speculate that higher \u03b22 receptor expression on GABAergic neurons in females could facilitate risk-averse behavioral strategies (C134) by slowing decision times and reducing impulsivity. However, they note that in their study, reduced accuracy in females was driven by increased omissions rather than incorrect responses (C135), which they interpret as reflecting risk-averse propensity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This interpretation is highly speculative (C134 is marked as SPECULATION). The link between increased omissions and risk-aversion is not clearly established - omissions could alternatively reflect inability to form a decision rather than a conservative strategy. The speculation about GABAergic tone facilitating risk-aversion is interesting but not directly tested in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C82",
+      "C83",
+      "C91",
+      "C92",
+      "C98",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C116",
+      "C117",
+      "C128",
+      "C129",
+      "C159",
+      "C160"
+    ],
+    "result": "The introduction and discussion include extensive background claims about M2 function, LC-NE system properties, \u03b2-receptor pharmacology, and sex differences in decision-making and neuromodulation, all supported by citations to prior literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These background claims appropriately cite prior literature and establish the context for the current study. The citations appear appropriate and the characterization of prior work is consistent with the field. These claims provide necessary background but are not novel findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C150",
+      "C151",
+      "C152"
+    ],
+    "result": "Methodological details are provided about behavioral training (C150), task structure (C151), and recording locations (C152).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These methodological claims are clearly stated and provide necessary information for reproducibility. The training criteria (>100 trials, >70% accuracy for 3 days) and anatomical coordinates are specific and appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C149"
+    ],
+    "result": "The authors suggest future work should test \u03b2 receptor modulation explicitly within M2 neurons to test direct influence on decision-making behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is an appropriate suggestion for future work that would address the limitation of systemic drug administration acknowledged in the current study. Local manipulation experiments would provide stronger evidence for direct M2 effects.",
+    "result_type": "MINOR"
+  }
+]

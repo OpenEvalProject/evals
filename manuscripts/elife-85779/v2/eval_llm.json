@@ -1,0 +1,638 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3"
+    ],
+    "result": "Dialyzed conditioned media from wild-type HAP1 cells supported wild-type cell growth by 50%, while SLC25A1\u0394 cells doubled in number when fed wild-type media but did not support their own growth when fed their own conditioned media.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 are supported by Alamar blue cell viability assay data shown in Figure 1A. The experimental design includes appropriate controls (dialyzed vs non-dialyzed media, wild-type vs mutant conditioned media) and demonstrates differential effects of conditioned media on cell growth depending on genotype. The data suggest compositional differences between wild-type and SLC25A1\u0394 conditioned media.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "SLC25A1\u0394 cells showed more extensive proteome and transcriptome changes (668 proteins, 2433 transcripts) compared to SLC25A4\u0394 cells (110 proteins, 560 transcripts), with limited overlap between genotypes (84 proteins, 385 mRNAs shared, only 27 proteins and transcripts similarly modified).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C7 are supported by TMT proteomic and RNAseq data with appropriate statistical thresholds (log2 fold change and p-values) shown in volcano plots and Venn diagrams (Figures 1B, C, F, G, J). The magnitude of differences between genotypes is substantial and the limited overlap is clearly documented. Statistical analysis appears appropriate for the data types.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C8",
+      "C9"
+    ],
+    "result": "APOE was identified as one of five secreted proteins common to both SLC25A1\u0394 and SLC25A4\u0394 datasets and was among the most upregulated factors in both mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C9 are supported by annotation analysis of common hits (Figure 1J) and proteomic/transcriptomic data (Figures 1B-C, F-G). The identification of APOE as a shared upregulated factor is well-documented with appropriate references for protein annotations. This finding is central to the manuscript's main conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Approximately 10% of proteome hits in both mutants were mitochondrial proteins, with 10 mitochondrial proteins overlapping between genotypes, mostly downregulated complex III subunits and the supercomplex assembly factor COX7A2L.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C12 are supported by Mitocarta 3.0 annotation analysis and Venn diagram (Figure 1K). The identification of specific complex III subunits and COX7A2L is documented with appropriate citations. The enrichment analysis provides quantitative support for the extent of mitochondrial proteome changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "The enrichment of secretome-annotated proteins was comparable to the enrichment of Mitocarta 3.0 proteins in both SLC25A1\u0394 and SLC25A4\u0394 mutants, indicating that mutations in these mitochondrial transporters similarly affect secreted and mitochondrial proteomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C15 are supported by enrichment analysis shown in Figures 1L-N with hypergeometric probability calculations. The comparison between secretome and mitochondrial proteome enrichment is quantitative and statistically significant. This is a key finding supporting the manuscript's central thesis about mitochondrial regulation of the secretome.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Steroid biosynthesis was the most prominent ontology in SLC25A1\u0394 upregulated hits but was not modified in SLC25A4\u0394 mutants, suggesting APOE expression occurs independently from cholesterol synthesis pathway modifications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C18 are supported by gene ontology analysis (Figures 1O-P) with appropriate statistical corrections (Bonferroni). The differential ontology enrichment between mutants despite shared APOE upregulation provides evidence for independence of APOE expression from cholesterol synthesis. This inference is logical given the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "APOE protein expression and secretion increased 5-20 fold in SLC25A1\u0394 and SLC25A4\u0394 cells, was undetectable in unexposed media, and was sensitive to protein synthesis and secretory pathway inhibition but not lysosomal protease inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C23 are supported by MesoScale ELISA data (Figure 2A and supplement 1) with appropriate controls including cycloheximide, brefeldin A, and E-64 treatments. The use of multiple CRISPR clones strengthens the findings. The controls effectively rule out alternative explanations for APOE accumulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C24",
+      "C25"
+    ],
+    "result": "SLC25A1\u0394/\u0394 SH-SY5Y cells showed approximately 4-fold increased APOE secretion, and APOE mRNA increased approximately 3-fold in all three mutant cell types (SLC25A1\u0394, SLC25A4\u0394, SLC25A1\u0394/\u0394).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C25 are supported by MesoScale ELISA (Figure 2C) and qRT-PCR data (Figures 2D-F) in a second cell line (SH-SY5Y), demonstrating reproducibility across cell types. The consistency of APOE upregulation across different genetic backgrounds strengthens the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Cholesterol synthesis pathway genes were upregulated only in SLC25A1\u0394 cells, resulting in increased cholesterol and cholesterol-ester content in SLC25A1\u0394 but not in SLC25A4\u0394 or SLC25A1\u0394/\u0394 cells, despite similar APOE upregulation in all mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C30 are supported by qRT-PCR (Figures 2D-F) and lipidomics data (Figures 2G-K). The differential cholesterol synthesis response across mutants with similar APOE upregulation provides strong evidence that APOE expression is uncoupled from cholesterol synthesis pathways. The lipidomics data are comprehensive and appropriately analyzed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Complex I subunits were most affected in SLC25A1\u0394 cells, with complexes I and III showing the most degradation by immunoblot and decreased expression of high molecular weight respiratory complexes by blue native and two-dimensional gel electrophoresis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C34 are supported by multiple complementary techniques: proteomic analysis (Figure 3A), immunoblot (Figure 3B), blue native electrophoresis (Figure 3C), and two-dimensional gel electrophoresis (Figure 3D). The convergence of multiple methods strengthens the conclusion about respiratory chain defects in SLC25A1\u0394 cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "SLC25A4\u0394 cells had reduced complex III subunit levels affecting supercomplex migration, but the effect on APOE was not due to defective SLC25A4 transport activity as the inhibitor bongkrekic acid did not increase APOE levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C37 are supported by proteomic data (Figure 3\u2014supplement 1A), blue native electrophoresis (Figure 3\u2014supplement 1B), and bongkrekic acid experiments (Figure 3\u2014supplement 1C-D). The control experiment with bongkrekic acid effectively distinguishes between transport activity and structural effects of the mutation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "NDUFS3 and NDUFAF7 CRISPR mutants compromised mitochondrial respiration and increased APOE mRNA and protein in cells and conditioned media, demonstrating that complex I integrity and function regulate APOE expression and secretion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C41 are supported by Seahorse oximetry (Figures 3E, H), qRT-PCR (Figures 3F, I), and MesoScale ELISA (Figures 3G, J). The use of two independent complex I-related mutants strengthens the conclusion. The inference that complex I regulates APOE is well-supported by the convergent data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "SLC25A1\u0394 cells were more sensitive to antimycin, which increased APOE mRNA 3-fold in wild-type cells and doubled it in SLC25A1\u0394 cells, and increased APOE secretion 2-3 fold in both genotypes but not in cell lysates, demonstrating additive effects and sensitivity to complex III inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C49 are supported by Seahorse respiration data (Figure 3K), qRT-PCR (Figure 3L), and MesoScale ELISA (Figure 3M). The antimycin dose-response and differential sensitivity between genotypes are well-documented. The additive effect in SLC25A1\u0394 cells provides evidence for multiple mechanisms affecting APOE. Housekeeping gene controls strengthen the specificity of the APOE response.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "SLC25A4\u0394/\u0394 HEK293 cells showed minimal proteomic changes, while SLC25A4,5,6\u0394/\u0394 triple knockout cells had 223 differentially expressed proteins including 32 secretome proteins (including APOE), with approximately 2-fold increased APOE in both cell extracts and conditioned media.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C53 are supported by TMT proteomic data (Figures 4A-C) and MesoScale ELISA (Figure 4D) in a third cell line (HEK293). The comparison between single and triple knockout demonstrates the importance of redundancy among ANT paralogs. The consistent APOE upregulation across cell types strengthens the generalizability of the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "The SLC25A4,5,6\u0394/\u0394 triple knockout had 42 Mitocarta-annotated proteins including 4 of 10 complex III subunits with increased levels, selectively compromised complex III supercomplex formation, and reduced mitochondrial respiration by 5-fold, demonstrating that APOE upregulation occurs in diverse cell types with compromised complex III integrity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C58 are supported by annotation analysis (Figure 4B), proteomic data (Figure 4E), blue native electrophoresis (Figure 4F), and Seahorse stress test (Figure 4G). The comprehensive characterization of mitochondrial defects in the triple knockout provides strong mechanistic support for the link between complex III integrity and APOE expression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Mutagenesis of HIGD1A, COX18, COX20, and COX19 increased APOE levels 12-40 fold in cell lysates and conditioned media, while COX7A2L mutagenesis did not affect APOE expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C62 are supported by MesoScale ELISA data (Figure 5B) in HEK293 cells with appropriate citations for the functions of these complex IV assembly factors. The differential effects of COX7A2L vs HIGD1A provide insight into the specificity of the response, as COX7A2L affects supercomplex assembly without affecting individual complex biogenesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Mutagenesis of COX17, SLC31A1, and SLC25A3, or expression of copper-extruding ATP7A-LL mutant increased APOE expression and secretion in two independent mutant isolates, while ATP7A elimination alone did not increase APOE.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C67 are supported by MesoScale ELISA data (Figures 5C-G) in SH-SY5Y and HAP1 cells with appropriate citations for the copper homeostasis pathway. The use of multiple independent approaches (genetic and pharmacological) to disrupt copper availability strengthens the conclusion. The negative result with ATP7A alone is an important control.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Pharmacological and genetic reduction of cytoplasmic copper robustly increased APOE mRNA while TBP levels remained unchanged, demonstrating that impairing complex IV biogenesis directly or indirectly increases APOE expression in diverse cell lines and that diverse mechanisms converging on respiratory chain function can induce APOE expression and secretion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C71 are supported by NanoString mRNA quantification (Figure 5H) with appropriate housekeeping controls. The convergence of multiple genetic and pharmacological approaches targeting different points in the copper delivery pathway provides strong evidence for the generality of the mechanism. The inference about diverse mechanisms is well-supported by the breadth of experimental approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "APOE negatively correlated with basal oxygen consumption (r=-0.62, p=0.022) but not with extracellular acidification rate (p=0.2), with an exception in SLC25A20 mutants that increased APOE despite normal respiration, supporting that respiratory chain integrity rather than glycolytic adaptations modulate APOE expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C75 are supported by correlation analysis (Figure 5J) and Seahorse data across multiple mutants. The statistical analysis is appropriate for correlation studies. The SLC25A20 exception is acknowledged and suggests additional mechanisms beyond respiratory chain defects. The inference about glycolysis vs respiration is well-supported by the differential correlations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "N-acetyl cysteine treatment did not affect APOE mRNA levels, doxycycline modestly increased APOE secretion only in SLC25A1\u0394 cells despite robust stress response activation in wild-type cells, and FCCP failed to induce APOE despite activating stress response, demonstrating that ATF4-dependent stress response alone cannot account for elevated APOE.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C80 are supported by experimental data in Figure 5\u2014supplement 5 and Figure 3\u2014supplement 2 with appropriate citations. The multiple negative or modest results with different stress response activators effectively rule out reactive oxygen species and ATF4-dependent stress response as primary mechanisms. The controls with piericidin A and oligomycin strengthen the specificity of the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "iPSC-derived astrocytes increased APOE protein expression 2-fold after antimycin treatment in both cell lysates and conditioned media, while neuronal cells failed to increase APOE expression and APOE was not detected in neuronal conditioned media, demonstrating cell-type-specific modulation by electron transport chain intoxication.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C85 are supported by MesoScale ELISA data (Figure 6A) in iPSC-derived human neurons and astrocytes. The cell-type-specific response is an important finding that extends the mechanism to relevant brain cell types. The negative result in neurons is well-documented and biologically significant.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "APOE mRNA was upregulated 6-fold in mutant HAP1 cells and 1.5-fold in antimycin-treated astrocytes compared to TBP, with genes upregulated in antimycin-treated astrocytes significantly enriched in secretome-annotated genes (enrichment factor 2.8 vs 1.6), similar to changes in mitochondrially annotated transcripts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C88 are supported by NanoString mRNA quantification (Figures 6C-D) with appropriate housekeeping controls and enrichment analysis. The quantitative comparison of enrichment factors provides strong evidence for coordinated regulation of secretome and mitochondrial transcripts in response to mitochondrial damage.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Four upregulated mRNAs (APOE, TSPAN18, PTPN6, LOX) were common to SLC25A1\u0394, SLC25A4\u0394, and antimycin-treated astrocytes, increasing to 45 when considering shared functional annotations, with functional annotations mostly related to cytokine signaling ontologies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C91 are supported by Circos plot analysis (Figure 6E) and Metascape ontology analysis (Figure 6F) with appropriate statistical thresholds. The identification of shared genes and ontologies across different experimental conditions strengthens the generalizability of the inflammatory response associated with mitochondrial dysfunction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C92",
+      "C93"
+    ],
+    "result": "There was no correlation between the 85 upregulated genes in antimycin-treated astrocytes and changes in A1 reactive astrocyte phenotype induced by LPS, suggesting that APOE upregulation induced by mitochondrial disruption co-occurs with inflammatory mechanisms distinct from LPS-induced reactive astrocyte signatures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C93 are supported by correlation analysis (Figure 6\u2014supplement 1) comparing with published A1 astrocyte data. The lack of correlation with A1 phenotype is an important negative result that distinguishes the mitochondrial-induced inflammatory response from classical neuroinflammatory responses. The inference is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "In 5xFAD mice, APOE expression inversely correlated with complex I, II, and IV subunits across all ages but not in wild-type animals, with respiratory complex subunit expression varying with age in wild-type (complex I plateauing at 6 months) while APOE remained constant, but APOE progressively increased 7-fold in 5xFAD animals while electron transport chain complexes decreased with age.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C99 are supported by TMT mass spectrometry data from 86 mice (Figure 7B-D) with appropriate statistical analysis (correlation and two-way ANOVA). The large sample size and longitudinal design strengthen the findings. The inverse correlation between APOE and respiratory chain subunits in disease but not wild-type provides strong evidence for the proposed mechanism in vivo.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Significant decreases in complex I and COX7C (an Alzheimer's risk factor) expression were detected in 5xFAD cortex, with these respiratory chain changes preceding the APOE increase observed at 6 months of age, revealing that complex I and COX7C changes are followed by later APOE increases in diseased cortex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C102 are supported by proteomic data (Figure 7D) with appropriate citation for COX7C as an Alzheimer's risk factor. The temporal analysis showing respiratory chain changes precede APOE increases is critical for establishing a causal relationship. The statistical analysis appears appropriate for the longitudinal design.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "In the Banner cohort, brain protein expression representing SLC25A1\u0394 upregulated mRNAs correlated with accelerated cognitive decline (r=-0.607, p<1.03e-11), while downregulated mRNAs associated with slower decline (r=0.472, p<4.45e-07), and SLC25A1\u0394 TMT proteome proteins also correlated with accelerated decline (r=-0.537, p<4.45e-07).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C105 are supported by correlation analysis with cognitive trajectory in 106 human subjects (Figure 7E). The large sample size, longitudinal cognitive assessment, and strong correlations with appropriate p-values provide robust evidence. The convergence of transcriptomic and proteomic datasets strengthens the findings. However, correlation does not establish causation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C106",
+      "C107"
+    ],
+    "result": "The SLC25A1\u0394 upregulated mRNAs and proteome shared APOE and sterol synthesis as top ontologies, suggesting that genes and proteins sensitive to SLC25A1 expression regulate cellular processes important for cognition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C107 are supported by gene ontology analysis (Figures 1O-P) and correlation with cognitive trajectory. The inference about regulation of cognitive processes is supported by the correlation data but remains somewhat speculative as it does not establish direct causation. Additional mechanistic studies would strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "Greater expression of SLC25A1 interactome proteins strongly correlated with rapid cognitive decline (r=-0.527, p<9.92e-08), while mitochondrial ribosome and cytoplasmic ribosomal proteins correlated poorly (r=-0.23, p=0.013 and r=-0.24, p=0.249 respectively), suggesting a network of mitochondrial proteins including respiratory chain and SLC25A transporters regulates APOE expression and cognitive processes during aging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C111 are supported by correlation analysis (Figure 7E) with appropriate controls (ribosomal proteins). The specificity of the correlation to SLC25A1-related proteins vs control protein sets strengthens the findings. The inference about a regulatory network is well-supported by the convergent data, though mechanistic details remain to be elucidated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "Mutations in mitochondrial transporter genes SLC25A1 and SLC25A4 modify secretome and mitochondrial proteome to similar extents, upregulating APOE expression and secretion in diverse cellular systems in response to loss of electron transport chain integrity, with disruption of complexes I, III, and IV assembly and function increasing APOE, indicating that electron transport chain disruption is a main initiating event.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C117 summarize major findings supported by comprehensive data across multiple cell types, genetic manipulations, and analytical methods. The convergence of evidence from proteomic analysis, multiple mutants, and functional assays provides strong support for the central thesis. The breadth of experimental approaches strengthens the generalizability of the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "Genetic disruption of copper loading into complex IV with COX17 and COX19 mutants, indirect disruption of copper homeostasis at plasma membrane (SLC31A1, ATP7A), mitochondrial inner membrane (SLC25A3), or pharmacological copper chelation all increased APOE levels, and the mitochondrial protein network includes Alzheimer's disease risk loci genes necessary for complex I assembly and function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C120 are supported by experimental data with multiple genetic and pharmacological approaches (Figures 5B-H) and appropriate citations for Alzheimer's risk loci. The convergence of multiple independent approaches targeting different points in copper homeostasis and complex IV biogenesis provides strong mechanistic support. The connection to Alzheimer's risk genes is well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R32",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "Mitochondrial regulation of APOE expression extends to iPSC-derived human astrocytes and co-occurs with inflammatory gene expression response, demonstrating that mitochondria robustly regulate APOE expression and secretion, placing them upstream of APOE, with this mechanism potentially operating in dementia pathogenesis as supported by mouse Alzheimer's brains and aging human brain correlation studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C123 are supported by data in iPSC-derived astrocytes (Figure 6), NanoString analysis showing inflammatory response, and correlation studies in 5xFAD mice and human brains (Figure 7). The extension to relevant brain cell types and in vivo models strengthens the translational relevance. However, the proposition about dementia pathogenesis remains somewhat speculative and would benefit from additional mechanistic studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R33",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "Beyond electron transport chain integrity loss, other intramitochondrial mechanisms connect mitochondria to APOE expression, as SLC25A20 mutagenesis upregulated APOE despite normal respiration and wild-type respiratory chain subunit levels, and ACLY mutagenesis also increased APOE expression, suggesting additional mitochondrial and cytoplasmic regulatory mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124-C127 are supported by experimental data with SLC25A20 (Figure 5\u2014supplement 2) and ACLY mutants (Figure 5\u2014supplement 4). These exceptions to the respiratory chain mechanism are important for understanding the full complexity of APOE regulation. The inference about additional mechanisms is well-supported by these observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R34",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "Glycolytic adaptations, decreased ATP levels, cholesterol synthesis pathway upregulation, ATF4-dependent stress response, and redox imbalance are unlikely to account for increased APOE expression, as evidenced by lack of correlation with extracellular acidification, minimal AMPK activation at baseline, APOE upregulation without cholesterol synthesis changes, failure of FCCP and doxycycline to induce APOE, N-acetyl cysteine not affecting APOE mRNA, and absence of common transcription factors in upregulated transcriptomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C128-C134 are supported by multiple negative or control experiments (Figures 5\u2014supplements 2-5, Figure 3\u2014supplement 2) that systematically rule out alternative mechanisms. The comprehensive testing of alternative hypotheses strengthens the specificity of the respiratory chain mechanism. The negative results are well-documented with appropriate controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R35",
+    "claim_ids": [
+      "C135"
+    ],
+    "result": "A genome-wide screen in astrocytes and mutant cell lines is suggested as an effective method for uncovering further mechanisms by which mitochondria contribute to APOE expression regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C135 is a speculative suggestion for future research without supporting data. While the suggestion is reasonable given the findings, it represents proposed future work rather than a result from the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R36",
+    "claim_ids": [
+      "C136",
+      "C137",
+      "C138",
+      "C139"
+    ],
+    "result": "Previous work has demonstrated that mitochondrial distress regulates secretion of inflammatory cytokines, type I interferons, growth factor mitokines GDF15 and FGF21, mitochondrially-derived peptides, and alpha fetoprotein in hepatocytes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C136-C139 are supported by appropriate citations to prior literature. These claims provide context for the current findings by summarizing established knowledge about mitochondrial regulation of secreted factors.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R37",
+    "claim_ids": [
+      "C140",
+      "C141",
+      "C142",
+      "C143"
+    ],
+    "result": "APOE is the first apolipoprotein whose expression and secretion is modulated by mitochondrial mutations and is a harbinger of extended secreted proteome upregulation mediated by mitochondria, with the importance inferred from extent and magnitude comparable to mitochondrial proteome changes, adding to evidence that mitochondrial regulation of secreted proteome is more common than previously appreciated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C140-C143 are supported by the comprehensive proteomic data showing widespread secretome changes (Figures 1L-N) and appropriate citations. The novelty claim about APOE as the first apolipoprotein is supported by the literature review. The inference about broader secretome regulation is well-supported by the enrichment analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R38",
+    "claim_ids": [
+      "C144",
+      "C145",
+      "C146",
+      "C147"
+    ],
+    "result": "All three experimental conditions (SLC25A1\u0394, SLC25A4\u0394, antimycin-treated astrocytes) converged on common hits increasing when considering shared ontologies, showed increased secreted cytokines with gene ontologies enriched for cytokine signaling pathways, suggesting APOE upregulation in response to mitochondrial dysfunction is part of an inflammatory response initiated by mitochondria.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C144-C147 are supported by NanoString analysis (Figure 6B-F) and ontology analysis showing convergence on cytokine signaling pathways. The inference about inflammatory response is well-supported by the ontology enrichment data. The consistency across different experimental conditions strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R39",
+    "claim_ids": [
+      "C148"
+    ],
+    "result": "Mitochondria drive inflammatory signaling in the nervous system, as evidenced by antimycin-treated astrocytes and supported by growing literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C148 is supported by the antimycin-treated astrocyte data (Figure 6) and appropriate citations to supporting literature. The claim extends beyond the current data by citing additional evidence, which is appropriate for contextualizing the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R40",
+    "claim_ids": [
+      "C149",
+      "C150"
+    ],
+    "result": "APOE particles play necessary roles in handling toxic lipids by shuttling them between cell types with differential effects depending on origin, lipid species, and fate, and either APOE-dependent removal of toxic factors or delivery of missing factors could explain why dialyzed conditioned media from SLC25A1 mutant cells cannot support their own growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C149 is supported by appropriate citations about APOE function. Claim C150 is speculative reasoning based on the conditioned media experiments (Figure 1A) without direct experimental evidence. The speculation is reasonable but remains unproven and would require additional experiments to test these alternative hypotheses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R41",
+    "claim_ids": [
+      "C151",
+      "C152"
+    ],
+    "result": "Astrocytes play a prominent role in carrying and processing toxic lipids through APOE-dependent mechanisms, and APOE released from astrocytes following antimycin administration may not sustain astrocytes and/or neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C151 is supported by established knowledge about astrocyte function. Claim C152 is speculative reasoning based on the observation that astrocytes but not neurons increase APOE after antimycin (Figure 6A). The speculation is reasonable but lacks direct experimental evidence about the functional consequences of antimycin-induced APOE release.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R42",
+    "claim_ids": [
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157"
+    ],
+    "result": "The APOE E4 allele is the strongest genetic risk factor for sporadic Alzheimer's disease and along with A\u03b2 is thought to be an initiating and driving factor in disease etiology, while mitochondrial dysfunction is acknowledged as important but typically placed downstream of A\u03b2 and APOE, though some have proposed mitochondria act as upstream factors through metabolic and bioenergetic effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C153-C157 are supported by appropriate citations to the Alzheimer's disease literature. These claims provide important context for the significance of the current findings by summarizing the established understanding of APOE, A\u03b2, and mitochondria in Alzheimer's disease pathogenesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R43",
+    "claim_ids": [
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C163"
+    ],
+    "result": "Mitochondria could participate in Alzheimer's pathogenesis through modulation of APOE allele-dependent mechanisms, supported by inverse correlation between APOE and respiratory chain subunits in 5xFAD mice, with increased APOE E4 expression downstream of mitochondrial dysfunction potentially initiating or exacerbating APOE4 effects due to its aggregation and poor lipidation properties, opening the possibility that mitochondria act as initiators or drivers of Alzheimer's pathogenesis through APOE-dependent processes, with evidence from correlation of SLC25A1 proteome/transcriptome with human cognitive trajectory supporting this conception and the idea that mitochondria influence brain function and cognition through secretome modulation including APOE regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C158-C163 represent a novel proposition about mitochondria acting upstream of APOE in Alzheimer's pathogenesis. While supported by correlation data in 5xFAD mice (Figure 7) and human cognitive trajectory (Figure 7E), and by citations about APOE4 properties, the causal claims remain speculative. The correlations do not establish causation, and the proposition about initiating or driving Alzheimer's pathogenesis requires additional mechanistic studies and intervention experiments. The inference is reasonable but represents a hypothesis rather than a proven result.",
+    "result_type": "MAJOR"
+  }
+]

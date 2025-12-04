@@ -1,0 +1,2257 @@
+{
+  "submission": {
+    "id": "0bc8c11c-8403-487a-a53d-0a336be4694a",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-04T03:26:24.296224Z",
+    "updated_at": "2025-12-04T03:26:24.296224Z"
+  },
+  "content": [
+    {
+      "id": "813760a7-8101-4ef4-83c1-28d9670fd668",
+      "submission_id": "0bc8c11c-8403-487a-a53d-0a336be4694a",
+      "content_type": "manuscript",
+      "content_text": "# Long-timescale anti-directional rotation in Drosophila optomotor behavior\n\n## Authors\n\n- Omer Mano<sup>1</sup> ([ORCID: 0000-0003-2606-8567](https://orcid.org/0000-0003-2606-8567))\n- Minseung Choi<sup>2</sup> ([ORCID: 0000-0001-5398-219X](https://orcid.org/0000-0001-5398-219X))\n- Ryosuke Tanaka<sup>3</sup>\n- Matthew S Creamer<sup>3</sup>\n- Natalia CB Matos<sup>3</sup>\n- Joseph W Shomar<sup>4</sup> ([ORCID: 0009-0000-9534-6263](https://orcid.org/0009-0000-9534-6263))\n- Bara A Badwan<sup>5</sup>\n- Thomas R Clandinin<sup>2</sup> ([ORCID: 0000-0001-6277-6849](https://orcid.org/0000-0001-6277-6849))\n- Damon A Clark<sup>1</sup> ([ORCID: 0000-0001-8487-700X](https://orcid.org/0000-0001-8487-700X)) \u2020\n\n### Affiliations\n\n1. Department of Molecular, Cellular, and Developmental Biology, Yale University New Haven United States ([ROR:03v76x132](https://ror.org/03v76x132))\n2. Department of Neurobiology, Stanford University Stanford United States ([ROR:00f54p054](https://ror.org/00f54p054))\n3. Interdepartmental Neuroscience Program, Yale University New Haven United States ([ROR:03v76x132](https://ror.org/03v76x132))\n4. Department of Physics, Yale University New Haven United States ([ROR:03v76x132](https://ror.org/03v76x132))\n5. Department of Chemical Engineering, Yale University New Haven United States ([ROR:03v76x132](https://ror.org/03v76x132))\n6. Department of Neuroscience, Yale University New Haven United States ([ROR:03v76x132](https://ror.org/03v76x132))\n\n\u2020 Corresponding author\n\n## Abstract\n\nLocomotor movements cause visual images to be displaced across the eye, a retinal slip that is counteracted by stabilizing reflexes in many animals. In insects, optomotor turning causes the animal to turn in the direction of rotating visual stimuli, thereby reducing retinal slip and stabilizing trajectories through the world. This behavior has formed the basis for extensive dissections of motion vision. Here, we report that under certain stimulus conditions, two Drosophila species, including the widely studied Drosophila melanogaster, can suppress and even reverse the optomotor turning response over several seconds. Such \u2018anti-directional turning\u2019 is most strongly evoked by long-lasting, high-contrast, slow-moving visual stimuli that are distinct from those that promote syn-directional optomotor turning. Anti-directional turning, like the syn-directional optomotor response, requires the local motion detecting neurons T4 and T5. A subset of lobula plate tangential cells, CH cells, show involvement in these responses. Imaging from a variety of direction-selective cells in the lobula plate shows no evidence of dynamics that match the behavior, suggesting that the observed inversion in turning direction emerges downstream of the lobula plate. Further, anti-directional turning declines with age and exposure to light. These results show that Drosophila optomotor turning behaviors contain rich, stimulus-dependent dynamics that are inconsistent with simple reflexive stabilization responses.\n\n## Introduction\n\nVisual navigation requires active mechanisms to stabilize locomotor trajectories through the world. Insects exhibit an optomotor turning response, a behavior in which they rotate their bodies in the direction of visual patterns that rotate about them (Hassenstein and Reichardt, 1956; G\u00f6tz and Wenking, 1973; Buchner, 1976). This behavior is analogous to optomotor turning responses in fish (Clark, 1981) and the optokinetic response in mammals (Koerner and Schiller, 1972). In insects, this response is thought to be a course stabilizing mechanism that minimizes retinal slip, allowing animals to maintain their trajectory in the face of external or unexpected rotational forces (G\u00f6tz and Wenking, 1973; G\u00f6tz, 1975). For instance, if an insect attempts to walk in a straight line, it may slip and turn to the right. From the point of view of the insect, this turn is observed as optic flow rotating to the left. By responding to this leftward optic flow with a leftward turn, the insect can recover its original trajectory.\n\nIn fruit flies, the optomotor response relies on well-characterized circuitry (Yang and Clandinin, 2018). Photoreceptor signals are split into parallel ON and OFF pathways in the lamina and medulla (Joesch et al., 2010; Clark et al., 2011; Behnia et al., 2014; Strother et al., 2014), which are not direction-selective. These signals provide input to T4 and T5 cells, which compute direction-selective responses along four directions at every point in the fly visual field (Bausenwein et al., 1992; Maisak et al., 2013; Takemura et al., 2013; Shinomiya et al., 2019; Henning et al., 2022). The outputs of T4 and T5 cells are then summed across visual space by lobula plate tangential cells (LPTCs) (Joesch et al., 2008; Schnell et al., 2012; Maisak et al., 2013; Mauss et al., 2015; Barnhart et al., 2018). Different LPTCs provide distinct signals about the overall pattern of motion surrounding the fly, and have been linked to head and body movements (Krapp and Hengstenberg, 1996; Haikala et al., 2013; Kim et al., 2017).\n\nThere have been several reports of flies turning in the direction opposite to what is predicted by the optomotor turning response. In some cases, these counter-intuitive behaviors were observed using periodic stimuli with spatial wavelengths smaller than the receptive field of individual ommatidia, and thus can be accounted for by aliasing (G\u00f6tz, 1964; G\u00f6tz, 1970; Buchner, 1976). Work in a tethered flight simulator showed that when a moving pattern is presented in front of the fly, the animal turned in the direction of the stimulus motion (Tammero et al., 2004), as expected (G\u00f6tz, 1968). However, if the moving pattern was presented behind the fly, it attempted to turn in the direction opposite to stimulus motion (Tammero et al., 2004). In a different experimental preparation, rotational patterns were presented on a dome around freely walking flies (Williamson et al., 2018). Under these conditions, flies generally turned in the direction of motion of the stimulus, but these rotations were often punctuated by brief, large-magnitude saccades in the opposite direction. Similarly, experiments using flight simulators have reported spikes in the torque in the direction opposite the stimulus rotation (Wolf and Heisenberg, 1990). Interestingly, zebrafish have also been observed to turn in the opposite direction of optic flow under certain conditions (Bak-Coleman et al., 2015).\n\nHere, we show that rotational stimuli can elicit strong, consistent anti-directional turning behavior in two drosophilid species, Drosophila melanogaster and Drosophila yakuba. We report that flies respond to high-contrast, high-luminance rotational motion stimuli by first turning in the direction of stimulus motion, and then reversing their trajectory after approximately 1 s, depending on the species. In D. melanogaster, we characterize the dynamics of this behavior and the stimuli that drive it, showing that it is distinct from prior observations of anti-directional turning. The behavior depends critically on adaptation to back-to-front motion. We use the genetic tools available in D. melanogaster to show that this behavior relies on the motion detecting neurons T4 and T5. Silencing horizontal system (HS) neurons and CH neurons, two wide-field neurons downstream of T4 and T5, resulted in small changes in this complex turning behavior. However, the visually evoked responses of these direction-selective neurons could not account for the anti-directional behavior. Thus, the observed reversal must be mediated by downstream circuitry. Overall, these results show that circuits in the fly generate behaviors that oppose the direction of wide-field visual motion, showing that Drosophila turning responses are more complex than a simple stabilizing reflex.\n\n## Results\n\n### Anti-directional turning responses to high-contrast stimuli\n\nOptomotor turning responses are central to gaze stabilization, so we sought to examine this response across different conditions. Many studies have investigated this behavior using stimuli with low contrast, low light intensity, or both (G\u00f6tz and Wenking, 1973; Buchner, 1976; Rister et al., 2007; Seelig et al., 2010; Bahl et al., 2013; Bosch et al., 2015), at a variety of different speeds. However, natural scenes can have relatively high contrast and luminance, and such conditions have been poorly explored in the laboratory. In this experiment, we presented flies with rotational stimuli using high contrast and relatively high luminance.\n\nWe tethered individual female D. melanogaster above a freely rotating ball to characterize the optomotor response (Buchner, 1976; Creamer et al., 2019; Figure 1a). As expected, low-contrast, slow-moving sinusoidal gratings caused flies to turn in the same direction as the moving gratings via the classical optomotor turning response (Figure 1b; Hassenstein and Reichardt, 1956; G\u00f6tz, 1964; Buchner, 1976; Tammero et al., 2004; Seelig et al., 2010; Clark et al., 2011; Bahl et al., 2013; Silies et al., 2013; Clark et al., 2014; Bahl et al., 2015; Leonhardt et al., 2016; Salazar-Gatzimas et al., 2016; Strother et al., 2017; Creamer et al., 2018; Strother et al., 2018). However, when we changed the stimulus to high-contrast sinusoidal gratings (nominal 100% Weber contrast), flies turned in the stimulus direction for approximately 1 s, but then reversed course, and turned in the direction opposite to the stimulus motion for the duration of the stimulus presentation. Because this turning response is in the opposite direction of stimulus and the syn-directional optomotor turning response, we refer to it as anti-directional turning.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/86076/elife-86076-fig1-v1.jpg)\n\n**Figure 1.:** (a) We measured fly turning behavior as they walked on an air-suspended ball. Stimuli were presented over 270\u00b0 around the fly. (b) We presented drifting sinusoidal gratings for 5 s (shaded region) with either high contrast (c=1.0) or low contrast (c=0.25). When high-contrast sinusoidal gratings were presented, flies initially turned in the same direction as the stimulus, then started turning in the opposite direction after ~1 s of stimulation. Under low-contrast conditions, flies turned continuously in the same direction as the stimulus. In these experiments, the sine waves had a wavelength of 60\u00b0 and a temporal frequency of 1 Hz. Shaded patches represent \u00b11 SEM. N=10 flies. (c) We swept contrast between 0 and 1 and measured the mean turning response during the first 0.5 s (purple, purple bar in b) and during the last 4 s of the stimulus (brown, brown line in b). The response in the first 0.5 s increased with increasing contrast, while the response in the last 4 s increased from c=0 to c=0.25, and then decreased with increasing contrast, until flies turned in the direction opposite the stimulus direction at the highest contrasts. N=20 flies. (d) We repeated the presentation of drifting sinusoidal gratings, this time in the lab of author TRC, using a similar behavioral apparatus. Stimulus parameters were as described in (b). In these experiments, the population average shows that flies proceeded to zero net turning at high contrasts, but some individual flies exhibited anti-directional turning responses. N=20 flies. (e) We repeated the experiments with D. yakuba, also in the lab of TRC, and observed that this species exhibited a robust anti-directional turning response to high-contrast gratings and a classical syn-directional turning response to low-contrast gratings. N=11 flies.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/86076/elife-86076-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (a) Mean time traces of individual fly responses to the high-contrast stimulus, averaged over trials. The flies are those in Figure 1d. (b) Long-timescale responses of individual flies, averaged over the last 1.5 s of the 5 s stimulus in panel (a) (indicated by thick black line). Mean and SEM shown are over the trials presented to that fly.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/86076/elife-86076-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (a) Fly turning behavior at different mean screen brightness. We swept brightness from 100 cd/m2 to 0.1 cd/m2 and measured turning responses to high- and low-contrast stimuli. Flies performed the most anti-directional behavior in response to high-brightness stimuli. At 1 cd/m2, flies never turned in the opposite direction of the stimulus, and at 0.1 cd/m2, flies turned continuously in the same direction as the stimulus, even in high-contrast conditions. We also measured average turning during the last 4 s of stimulation (black bar above time traces). Average fly behavior shown as bars on the right, with individual fly behavior shown as dots. Shaded patches in the time trace plots represent \u00b11 SEM, as do vertical lines on bar plots. N=19, 10, 9, 8 flies, top to bottom. (b) Our wildtype flies were Oregon-R strain (Gohl et al., 2011) raised at 20\u00b0. They were grown on glucose-based food media with 12 hr light-dark cycles. Experiments were run at high temperature, 12\u201360 hr after eclosion. We used uniform, red balls to avoid visual feedback from walking. The response of these wildtype flies to a contrast-switching stimulus (as in Figure 2c) is shown in the upper left corner. We also tested different variations of all these parameters. Canton-S flies turned less overall, and showed less anti-directional turning, but still turned in the opposite direction after 5 s of high-contrast stimuli. We tested flies walking on highly visible silver balls with black dots and saw behavior similar to wildtype. Two-week-old flies showed reduced turning and much reduced anti-directional behavior. Flies raised at 25\u00b0C had behavior similar to 2-week-old flies. When we performed experiments at 25\u00b0C, we saw much less optomotor turning, but anti-directional turning persisted. Rearing on molasses-based media or in the dark did not have strong effects on behavior. N=22, 8, 12, 12, 24, 19, 19, 13 flies top to bottom, left to right. (c) Other changes to the experimental setup did not cause large differences in behavior. We compared responses to high-contrast stimuli presented with green light (peak wavelength: 525 nm) and blue light (peak wavelength: 450), and did not see large differences in behavior. Head-fixed flies (middle) showed similar behavior to head-free flies (a, top). N=5 and 11 flies, top to bottom.\n\nWe swept a range of contrasts and compared the fly turning in the first 500 ms to the turning after 1 s (Figure 1c). As contrast increased, the flies turned faster during the first half second of stimulus presentation, reaching a plateau at around 0.5 contrast, consistent with previous results (McCann and MacGinitie, 1965; Buchner, 1976; Heisenberg and Buchner, 1977; Duistermars et al., 2007; Bahl et al., 2015; Strother et al., 2017). Fly behavior after the first second of stimulation was more complex. At contrasts between 0 and 0.25, flies turned in the same direction as the stimulus, with faster turning as the contrast increased. When the contrast was greater than 0.25, turning decreased, lowering to no net sustained turning at around 0.8 contrast. Above a contrast of 0.8, flies began to turn in the direction opposite the stimulus.\n\nThese initial experiments took place in the lab of author DAC. To confirm that these unexpected responses did not reflect some idiosyncrasy of one specific behavioral apparatus or environment, we repeated these experiments in a second lab, that of author TRC. Under similar conditions, using the same strain of D. melanogaster, we reproduced the rapid deceleration after an initial, transient syn-directional response (Figure 1d), with some individual flies exhibiting significant anti-directional turning (Figure 1\u2014figure supplement 1). This demonstrates that the key features of this behavioral response are stable across experimental systems and laboratories, though the magnitude of anti-directional turning behavior in D. melanogaster is sensitive to some unknown experimental parameter differences between the laboratories.\n\nIndividual strains of D. melanogaster, and other drosophilid species, display significant variation in their locomotor patterns during walking (York et al., 2022). Indeed, when we tested a Canton-S D. melanogaster strain, we observed milder but significant anti-directional turning at long timescales (Figure 1\u2014figure supplement 2b). We reasoned that a strong test of the generality of anti-directional turning would be to examine turning behavior in another species, and selected D. yakuba. Strikingly, D. yakuba also displayed anti-directional turning behavior under similar conditions (Figure 1e). Thus, this behavior is not an idiosyncratic feature of a single laboratory strain.\n\n### Conditions for anti-directional turning behaviors\n\nWhile anti-directional turning behaviors have been reported before, other groups have presented similar stimuli without observing anti-directional behavior (G\u00f6tz and Wenking, 1973; Buchner, 1976; Rister et al., 2007; Seelig et al., 2010; Bahl et al., 2013; Bosch et al., 2015). We wondered what aspects of our experimental setup could lead to these behavioral differences. In our experiments, anti-directional turning was strongly linked to display brightness (Figure 1\u2014figure supplement 2a). When the mean brightness of the screens was reduced from 100 cd/m2 to 1 cd/m2, we saw no anti-directional turning in 5 s trials (though average optomotor behavior did decrease over the course of the stimulus presentation). When we further reduced the mean brightness to 0.1 cd/m2, flies persisted in their optomotor behavior throughout the stimulus presentation. We note that in these low-luminance experiments, low levels of ambient light in the nominally dark experimental rig could also reduce the effective contrast of the stimulus.\n\nWe tested a variety of other factors that might affect anti-directional turning. Anti-directional turning occurred when experiments were run both at hot temperatures and at room temperature (Figure 1\u2014figure supplement 2b). We also observed anti-directional behavior when flies were reared in the dark and on different media. We also tested several other experiment conditions (Figure 1\u2014figure supplement 2c). Flies responded with anti-directional turning to high-contrast stimuli presented at both blue and green wavelengths. We glued fly heads to their thorax to ensure stimuli could not be affected by head movements (Haikala et al., 2013; Kim et al., 2017), but found no difference between head-fixed and head-free flies. We did find a few factors that modulated anti-directional turning behavior. In particular, rearing D. melanogaster at 25\u00b0C instead of 20\u00b0C or testing flies that were 2 weeks old instead of 12\u201360 hr old both reduced overall turning behavior and eliminated anti-directional turning. In these cases, optomotor turning still decreased over the course of the 5 s, high-contrast trials, but did not reverse. As details of rearing temperature and the age at which behavior tests are run often vary across labs, it is possible that these factors, as well as stimulus brightness, account for the differences between our observations and the previous literature.\n\n### Distinct spatiotemporal tuning of the anti-directional behavioral response\n\nTo further characterize the anti-directional response, we swept the spatial and temporal frequency of the sinusoidal grating stimulus. Using only Weber contrasts of 1, we compared the early response (first quarter second, Figure 2a) to the late response (after 1 s, Figure 2b). D. melanogaster always turned in the optomotor direction during the early stimulus response. In this early response, flies turned most vigorously to stimuli with short spatial frequencies (~20\u00b0 wavelength) and fast temporal frequencies (~8 Hz), in agreement with earlier studies (Tammero et al., 2004; Creamer et al., 2018; Strother et al., 2018). However, during the longer-timescale response to high-contrast stimuli, flies only turned in the optomotor direction at very high temporal frequencies (>~16 Hz) and at very low temporal frequencies (<0.5 Hz). At intermediate temporal frequencies, flies showed a sustained anti-directional response. The maximal anti-directional response was achieved at 1 Hz and 45\u00b0 wavelength, distinct from the conditions for peak classical turning responses. Interestingly, the stimuli that elicit the strongest anti-directional response appear similar to those that maximally activate T4 and T5 neurons when those neurons are measured in head-fixed flies (Maisak et al., 2013; Leong et al., 2016; Arenz et al., 2017; Creamer et al., 2018; Strother et al., 2018; Wienecke et al., 2018).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/86076/elife-86076-fig2-v1.jpg)\n\n**Figure 2.:** (a) Heatmap of fly turning velocity during the first 0.5 s of sinusoidal grating stimulation under high-contrast conditions and variable temporal and spatial frequencies. The flies turned in the direction of the stimulus across all conditions and responded most to 8 Hz, 22\u00b0 stimuli. N=16, 21, 17, 21, 7, and 22 flies for spatial frequencies 1/120\u00b0, 1/90\u00b0, 1/60\u00b0, 1/45\u00b0, 1/30\u00b0, and 1/22\u00b0 respectively. (b) Heatmap as in (a), measured during the last 4 s of stimulation. Flies turned in the same direction as the stimulus at high and low temporal frequencies, but in the opposite direction of the stimulus at intermediate temporal frequencies, with a maximal anti-directional response at wavelengths between 30\u00b0 and 60\u00b0. (c) Switching stimulus contrast from high to low after 5 s caused flies to revert to syn-directional behavior after the anti-directional response. N=7 flies. (d) Presenting rotating random binary patterns (5\u00b0 vertical strips rotating at 150 \u00b0/s) induced anti-directional turning similar to that elicited by rotating sine wave gratings. N=7 flies. (e) We presented flies with 5 s of \u2018translational\u2019 stimuli (dark shaded region), with high-contrast sinusoidal gratings moving either front-to-back or back-to-front, bilaterally, for 5 s. After that, we presented high-contrast rotational sinusoidal grating stimuli (60\u00b0 wavelength, 1 Hz). Front-to-back stimulation did not affect the subsequent response to rotational stimuli, but back-to-front stimuli caused flies to turn immediately in the opposite direction of the stimulus. N=18 flies.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/86076/elife-86076-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** We presented flies with 5 s of adapting stimuli (dark shaded region) for 5 s, with adapting stimuli consisting of (1) mean gray luminance; (2) a stationary, 60\u00b0 wavelength contrast 1 sinusoid; or (3) a closed-loop, 60\u00b0 wavelength contrast 1 sinusoid, which rotated in response to the behavior of the fly, for instance rotating 90\u00b0 clockwise when the ball rotated 90\u00b0 clockwise. The closed-loop lag time was approximately 66 ms. After the adapter, we presented high-contrast rotational sinusoidal grating stimuli (60\u00b0 wavelength, 1 Hz). The closed-loop stimulus yields noisier responses because each fly controlled the stimulus for only about 1/5 of the trials. The qualitative behavior in all cases was comparable to the anti-directional turning observed elsewhere. N=10 flies.\n\n### Anti-directional turning results from adaptation effects\n\nWe were intrigued by the switch from syn-directional to anti-directional turning behavior. To investigate the dynamics of these changes, we presented a rotating sinusoidal stimulus at contrast 1 for 5 s, and then changed the contrast to 0.25 (Figure 2c). After the switch to low contrast, the flies quickly reverted classical, syn-directional optomotor behavior, demonstrating that no long-term switch in directional turning occurs during high-contrast stimulus presentation. This effect did not depend on the periodic nature of these stimuli: a rotating stimulus consisting of 5\u00b0-wide vertical bars with randomly chosen, binary contrasts (Clark et al., 2014) yielded similar behavioral responses (Figure 2d).\n\nTo further isolate the causes of this switch in behavior, we developed a protocol to adapt the fly to different stimuli before presenting the high-contrast rotational sinusoidal gratings to elicit the anti-directional turning response. This adapting protocol consisted of 5 s presentations of an adaptor stimulus, followed by a high-contrast rotational stimulus (Figure 2e, Figure 2\u2014figure supplement 1). The adaptor stimuli we tested were a uniform gray screen, a stationary high-contrast sinusoid, a closed-loop high-contrast sinusoid, or a high-contrast \u2018translational\u2019 sinusoidal stimulus. During the closed-loop adapter, the stimulus position was yoked to the fly\u2019s own turning to better simulate real rotation, a situation we hypothesized might yield less dependence on stimulus contrast (following Leonhardt et al., 2016). The translational stimulus had both left and right hemifields moving either front-to-back or back-to-front across the fly\u2019s two eyes (Creamer et al., 2018). These translational stimuli resulted in no net turning (Silies et al., 2013; Creamer et al., 2018), but specifically adapt motion detectors in both eyes selective for front-to-back or back-to-front motion. We found that adapting with a stationary or closed-loop high-contrast sinusoid had little effect on the behavior (Figure 2\u2014figure supplement 1). Similarly, adapting the fly with front-to-back stimuli did not have a strong effect on the subsequent response to rotational stimuli. However, adapting with back-to-front stimuli generated responses that no longer showed an initial syn-directional turning response, but instead exhibited anti-directional turning immediately after the rotational stimulus began. This result indicates that the anti-directional turning results from slow-timescale changes that depend on strong back-to-front motion.\n\n### Anti-directional turning is elicited when stimuli are presented in front of the fly\n\nA previous report of anti-directional turning behavior in flying tethered flies showed that flies turn in the opposite direction to stimuli that are presented behind their midline (Tammero et al., 2004). To test whether our results were caused by this effect, we split our stimulus into three regions: 90\u00b0 in front of the fly, 45\u00b0 in front of the midline on either side of the fly, and 45\u00b0 behind the midline on either side of the fly (Figure 3a). We found that flies displayed anti-directional turning when presented with stimuli only in the front region or only just in front of the midline (Figure 3b, c). They did not display anti-directional turning when moving stimuli were presented behind the midline (Figure 3b, c). This suggests a different mechanism from the behaviors that depend on posterior spatial location to elicit reverse turning (Tammero et al., 2004).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/86076/elife-86076-fig3-v1.jpg)\n\n**Figure 3.:** (a) We divided our panoramic display into three sections: the front 90\u00b0, the 45\u00b0 behind the fly on either side, and a middle 45\u00b0. (b) High-contrast sinusoidal gratings were presented on each of these three display sections, with the remaining sections blank. Flies turned syn-directionally when stimuli were presented behind the fly, and turned anti-directionally when stimuli were presented in front of the fly. Shaded patches represent \u00b11 SEM. N=55 flies. (c) Average turning in the last 4 s of the stimulus (black bar in b), in low-contrast and high-contrast conditions. Shaded patches in the time trace plots represent \u00b11 SEM. N=55 flies. (d) A single fly responds to many trials of sinusoidal grating stimuli at high contrast (blue bar) and low contrast (orange bar). We show a heatmap of the fly\u2019s responses over time (horizontal axis) and across trials (vertical axis). (e) We can ignore the magnitude of the turning and instead only quantify whether the fly was turning in the same direction as the stimulus (white area) or in the opposite direction (dark gray area). This shows sustained anti-directional turning, not brief saccades. (f) Averaging the direction (but not magnitude) of turning across trials and across flies yields a turning index for each point in time. Shaded patches in the time trace plots represent \u00b11 SEM. N=7 flies.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/86076/elife-86076-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** These are the traces from Figure 3d\u2013f, in which responses were measured to high-contrast followed by low-contrast sinusoids. Here, we aggregated all trials and over all flies, and plotted the distribution of rotational velocities at each timepoint (60 Hz). The most common velocities were near 0, but the full distribution clearly shifts negatively after ~2 s of the high-contrast stimulus, before shifting back positive for the low-contrast stimulus. This full distribution suggests that mean rotational velocities are a reasonable summary statistic for the distribution of turning velocities.\n\n### Anti-directional responses do not depend on saccades\n\nAnti-directional saccades have been reported in walking and flying flies (Wolf and Heisenberg, 1990; Williamson et al., 2018). In walking flies (Williamson et al., 2018), flies largely turned in syn-directionally, but these turns were sometimes interrupted by brief, high-amplitude saccades in the opposite direction, against the stimulus direction. If such saccades were frequent or high amplitude, the net effect could shift the average turning we measured, creating apparent anti-directional turning. To investigate this possibility, we plotted the turning response on a per-trial basis (Figure 3d). We then discarded information about the magnitude of the turns and considered only the direction of the turning at each point in time (Figure 3e). Strikingly, in many trials, flies continued to turn opposite to the stimulus for several seconds, a behavior unlike brief saccades. This prolonged turning against the stimulus was also observable in the distribution of turning over time in all trials over all flies (Figure 3\u2014figure supplement 1). Next, we calculated a turning index for each response timepoint (sampled at 60 Hz). This turning index represents the fraction of trials in which the fly turned in the direction of the stimulus at each timepoint minus the fraction of trials in which the fly turned in the opposite direction (Figure 3f). Since this turning index does not include the magnitude of turning, it is strongly affected by sustained low-amplitude turns and discounts any brief high-amplitude saccades. When presented with high-contrast stimuli, flies maintained a negative turning index, indicating that sustained turns, and not high-velocity saccades, underlie this anti-directional turning behavior. As such, it appears distinct from the reports of anti-directional saccades.\n\n### Anti-directional turning requires elementary motion detectors\n\nWhat neurons are involved in this anti-directional turning behavior? Previous work demonstrated that T4 and T5 are required for directional neural responses (Schnell et al., 2012), as well as for optomotor turning (Maisak et al., 2013; Salazar-Gatzimas et al., 2016; Salazar-Gatzimas et al., 2018), for walking speed regulation (Creamer et al., 2018), and for responses to visual looming stimuli (Schilling and Borst, 2015). We silenced the neurons T4 and T5 using shibirets (Kitamoto, 2001) and measured responses to sinusoidal stimuli that switched from high to low contrast (Figure 4a). Flies in which T4 and T5 had been silenced displayed only minimal responses to motion stimuli, with anti-directional turning suppressed along with classical syn-directional turning. Thus, we conclude that, like optomotor turning behaviors, this anti-directional behavior depends critically on signals from T4 and T5.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/86076/elife-86076-fig4-v1.jpg)\n\n**Figure 4.:** (a) We silenced T4 and T5 neurons by expressing shibirets selectively in those neurons. We measured turning behavior during a contrast-switching stimulus (as in Figure 2c). Results from flies with T4 and T5 silenced shown in dark red, while controls are in light red and gray. Average fly behavior during the last 4 s of the first contrast (black bar on left) shown as bars on the right, with individual fly behavior shown as dots. Note that the data labeled \u2018low contrast\u2019 are from experiments in which the low-contrast stimulus was shown before the high-contrast stimulus. Shaded patches in the time trace plots represent \u00b11 SEM, as do vertical lines on bar plots. *** indicates experimental results are significantly different from results, p<0.001 via a two-sample Student\u2019s t-test. * indicates p<0.05. N=17, 24, 19 flies with genotypes T4T5/Shibirets, T4T5/+, +/Shibirets. (b) Results from horizontal system (HS) neuron silencing as in (a). Silencing HS neurons reduced syn-directional turning behavior (p<0.001) but did not have a strong effect on anti-directional turning. N=34, 21, 19 flies with genotypes HS/Shibirets, HS/+, +/Shibirets. (c) Results from CH neuron silencing as in (a). CH neuron silencing reduced the degree of anti-directional turning (p<0.001). N=63, 57, 70 flies with genotypes CH/Shibirets, CH/+, +/Shibirets.\n\n### Anti-directional turning requires the CH LPTC\n\nSince the switch from optomotor to anti-directional behavior seems to be dependent on the direction of motion adaptation (Figure 2e), we reasoned that neurons involved in this behavior were likely to be downstream from T4 and T5. Relatively little is known about circuitry that connects the neurons T4 and T5 to optomotor turning behavior. However, horizontal system (HS) cells are well-studied postsynaptic partners of T4 and T5 (Joesch et al., 2008; Joesch et al., 2010). These LPTCs integrate information from front-to-back and back-to-front selective T4 and T5 cells across the fly\u2019s visual field (Mauss et al., 2015). HS cells have been implicated in visually evoked head turns (Kim et al., 2017) and body rotations in flight (Haikala et al., 2013) and in maintenance of direction during walking (Fujiwara et al., 2022). When we silenced HS neurons, we found small deficits in syn-directional turning behavior, consistent with prior results, but no deficits in anti-directional turning (Figure 4b), indicating that HS cells synaptic output is not required specifically for anti-directional turning behavior.\n\nNext, we turned to the CH LPTCs. These cells are GABAergic and are both pre-synaptic and post-synaptic in the lobula plate (Wei et al., 2020). In blowflies, these neurons play an inhibitory role in an interconnected LPTC circuit that shapes behavior (Borst and Weber, 2011). When we silenced CH neurons, we found a small increase in syn-directional turning and a decrease in anti-directional turning (Figure 4c). Overall, silencing this neuron type caused the flies to turn more in the direction of motion. This result suggests that CH activity contributes to the anti-directional turning response. However, since adapting to back-to-front translational stimuli significantly affected the dynamics of anti-directional turning, it seems likely that other neurons beyond HS and CH neurons are involved, since these two neurons both respond selectively to front-to-back motion (Eckert and Dvorak, 1983; Joesch et al., 2008).\n\n### Early direction-selective cells do not adapt to the stimulus\n\nThe anti-directional turning response is preceded by an initial syn-directional response. This change in behavior must be the result of changes in neural activity, but this change could happen at any point along the neural pathway between photoreceptors and motor neurons. In order to constrain possible mechanisms for generating the anti-directional turning behaviors, we used calcium imaging to interrogate the activity of direction-selective neurons during high- and low-contrast stimulation (Figure 5a). However, as calcium imaging experiments using two-photon microscopy require additional spectral filtering of the projector, we first confirmed that these spectral differences did not alter anti-directional turning responses. To do this, we re-measured the anti-directional turning behavior using optical filtering matched to the conditions needed for imaging. Using this spectrally distinct illuminant, we observed both syn-directional and anti-directional turning behaviors, following the previously observed dynamics (Figure 5\u2014figure supplement 1).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/86076/elife-86076-fig5-v1.jpg)\n\n**Figure 5.:** (a) We used two-photon microscopy to measure calcium activity in lobula plate neurons while presenting sinusoidal gratings at a range of contrasts. (b) T4 cells, marked in orange (left), responded to drifting sinusoidal gratings with increased calcium activity (middle). Darker colors indicate higher contrast, preferred direction in blue, null direction in red. When integrated across the stimulus presentation (right), calcium activity increased with stimulus contrast. N=8 flies. (c\u2013e) As in (b) measuring calcium activity in T5, horizontal system (HS), and CH neurons. N=8, 10, 15 flies.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/86076/elife-86076-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** High- and low-contrast sinusoidal stimuli were presented as in Figure 2c, but using the bandpass filters also used in our two-photon microscope stimulus presentation. N=30 flies.\n\nAs T4 and T5 neurons play a critical role in both the syn- and anti-directional turning responses, we first measured the calcium activity of these neurons as they responded to sine wave gratings at a range of contrasts in their preferred and null directions. The T4 and T5 neurons responded to sine wave gratings in their preferred direction by increasing their calcium activity for the full duration of the stimulus presentation, reaching a plateau after approximately 1 s (Figure 5b, c, middle). As we increased the contrast of the preferred direction stimuli, we found that both T4 and T5 cells had increased calcium activity throughout the contrast range (Figure 5b, c, right), consistent with prior measurements (Maisak et al., 2013). Thus, the responses of T4 and T5 cells do not capture the transition from syn-directional to anti-directional turning behavior.\n\nNext we examined two LPTCs downstream of T4 and T5 cells. Calcium activity in HS cells followed similar trends to T4 and T5. Calcium signals increased at the start of preferred direction stimuli presentation and stayed high until the end of the presentation (Figure 5d, middle). Increasing contrast caused stronger calcium responses with a mild saturation effect at high contrast (Figure 5d, right), consistent with prior voltage measurements (Joesch et al., 2008). These results indicate that the changes in the time course of optomotor behavior at high contrast are not related to changes in HS neuron activity. Finally, we measured calcium activity in CH cells. CH cells responded to visual stimuli more quickly than HS cells (Figure 5e, middle), and showed decreased calcium signals in response to null direction stimuli (Figure 5e, right). However, they also showed sustained responses to high-contrast stimuli, as in T4, T5, and HS neurons. These measurements suggest that the switch from syn- to anti-directional turning behavior is driven by cells downstream of or parallel to T4, T5, HS, and CH neurons.\n\n### Adult plasticity in anti-directional turning behavior\n\nIn behaving flies, the strength of anti-directional turning was dependent both on rearing temperature, which alters the rate of growth, and on age (Figure 1\u2014figure supplement 2). This raises the possibility that syn- and anti-directional turning responses might be plastic during the early adult stages of development. To probe this possibility, we presented 1 Hz, high-contrast, rotating sinusoidal grating at various stages during early adulthood (Figure 6). Strikingly, as flies aged from 0.5 to 4 days post eclosion (dpe), the initial syn-directional turning became less transient and more sustained, indicative of a weaker anti-directional turning drive. We then wondered whether this plasticity was intrinsically programmed, or dependent on visual input. To disambiguate these possibilities, we reared flies in darkness to 2 or 4 dpe and measured their turning responses (Figure 6, gray). Dark-reared flies exhibited a stronger deceleration away from syn-directional turning, similar to that found in more juvenile flies, arguing that visual input may sculpt the balance of syn- and anti-directional turning. Finally, we examined whether optomotor response plasticity could be detected in D. yakuba. However, in this species, anti-directional responses were stable across the first 4 days of adulthood, arguing that the role of visual experience in shaping these responses is itself evolutionarily tuned in drosophilids (Figure 6\u2014figure supplement 1).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/86076/elife-86076-fig6-v1.jpg)\n\n**Figure 6.:** (a) Adult flies at various ages post eclosion were presented with 5 s, high-contrast, rotating sinusoidal gratings as in Figure 2b. As the flies aged from 1 day post eclosion (dpe) to 2, 4, and 8 dpe, the initial anti-directional turning response transitioned into syn-directional turning. Dark-rearing flies at 2 dpe reduced this maturation effect. Shaded patches represent \u00b11 SEM. N=5\u201314 flies. (b) The last 1.5 s of the mean turning velocity of each fly was averaged, and the population response was plotted. (c) As in (a) but in the TRC lab, using 0.5, 1, 2, and 4 dpe, with dark rearing for 4 dpe. With maturation, the syn-directional turning became less transient. N=9\u201315 flies. (d) As in (b) but for data in (c).\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/86076/elife-86076-fig6-figsupp1-v1.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (a) Adult yakuba flies at various ages post eclosion were presented with 5 s, high-contrast, rotating sinusoidal gratings as in Figure 6. Data was acquired in the TRC lab. Anti-directional responses stayed consistent from 0.5 days post eclosion (dpe) to 1, 2, and 4 dpe, although the initial optomotor response became smaller as the flies aged. Shaded patches represent \u00b11 SEM. N=7\u201311 flies. (b) The last 1.5 s of the mean turning velocity of each fly was averaged, and the population response was plotted.\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/86076/elife-86076-fig6-figsupp2-v1.jpg)\n\n**Figure 6\u2014figure supplement 2.:** Schematic top view of the head of a fly, showing one eye on each side. A counterclockwise stimulus would tend to drive counterclockwise turning behavior on short timescales. In this schematic, this is driven by front-to-back motion detectors on the left eye and back-to-front motion detectors on the right eye (in black, as opposed to gray detectors, which are not active). The influences from the two eyes sum to contribute to counterclockwise turning. One putative anti-directional turning mechanism is shown in blue: under high-contrast and high-luminance conditions, on long timescales, the regressive motion detectors on the right eye influence turning with the opposite sign, with an influence stronger than the progressive motion detectors on the left eye. Our imaging data show that this reversal is not occurring in T4, T5, horizontal system (HS), or CH neurons (Figure 5), so must be somewhere parallel to or downstream of those neurons.\n\n## Discussion\n\nIn this study, we found we could elicit robust turning in the opposite direction of high-contrast motion stimuli (Figure 1). This behavior is qualitatively different from other turning behaviors reported in the literature (Figures 2 and 3), but shares elements with the circuitry necessary for optomotor behavior (Figure 4). However, the switch from syn-directional turning behavior to anti-directional turning behavior is not a reflection of changes in the activity of known direction-selective neuron types in the early visual system (Figure 5). Moreover, this anti-directional turning behavior exhibits a degree of experience-dependent plasticity (Figure 6).\n\n### Anti-directional turning is distinct from other against-stimuli behaviors\n\nThe anti-directional turning behavior we have characterized is distinct from previous reports of flies turning in the direction opposite to the stimulus motion. First, some opposite-direction turning behaviors can be explained by stimulus aliasing (Buchner, 1976). Aliasing cannot explain our results because the stimulus that maximally activates anti-directional behavior has a spatial frequency of 1/60 cycles per degree, well below the Nyquist frequency of the fly eye (~1/10 cycles per degree) (G\u00f6tz, 1970; Buchner, 1976) and below reports of higher acuity vision in flies (Juusola et al., 2017). Aliasing would also not explain the dependence on stimulus contrast.\n\nSecond, our observations also cannot be explained by stimuli to the rear of the fly driving it in the opposite direction (Tammero et al., 2004), since we observe anti-directional turning even when stimuli are only presented in only the 90\u00b0 in front of the fly (Figure 3).\n\nThird, it is also distinct from previous reports of reverse body saccades (Williamson et al., 2018) since it manifests in prolonged turns in the opposite direction of the stimulus and can be measured even when the magnitude of the turns is discarded (Figure 3).\n\nFourth, the behavior observed here also appears to be distinct from previously observed stimulus-density-dependent behavioral reversals (Katsov and Clandinin, 2008). Those previously reported behaviors showed immediate reversals, but it took ~1\u20132 s for flies in our paradigm to switch between optomotor and anti-directional behaviors.\n\n### Anti-directional turning is unlikely to be due to adaptation to contrast alone\n\nIn mammalian retina, the direction preference of cells can switch because of upstream circuit adaptation (Rivlin-Etzion et al., 2012; Vlasits et al., 2014). However, we do not believe the anti-directional turning we observe has similar causes. In the mammalian retina, direction switching occurs when non-direction-selective neurons adapt to high-contrast stimuli, which distorts the downstream direction-selective computation. Since the adaptation in those experiments occurs in non-direction-selective neurons, it cannot be affected by the direction of the adapter stimulus. However, we see differences in turning behavior depending on whether we adapt with front-to-back or back-to-front stimuli (Figure 2e). This observation rules out a mechanism based solely on contrast, since the contrast content of front-to-back and back-to-front stimuli are identical.\n\nThe fly\u2019s visual system, however, adapts its gain to stimulus contrast (Drews et al., 2020; Matulis et al., 2020). Importantly, the phenomenology of the anti-directional turning also argues that the contrast adaptation is incomplete or heterogeneous among neurons, since contrast 1 and contrast 0.25 stimuli result in such different behaviors. Contrast adaptation reported in the fly is also faster than the 1\u20132 s preceding the shift to anti-directional turning in these experiments.\n\n### Anti-directional turning behavior may require specific experimental and rearing conditions\n\nDespite these previous reports of anti-directional turning under certain conditions, other labs have measured sustained optomotor turning in response to high-contrast stimuli (G\u00f6tz and Wenking, 1973; Seelig et al., 2010; Bosch et al., 2015; Strother et al., 2017). Two major causes of this difference are likely display brightness and rearing conditions. Some experiments employ displays with mean luminances less than 5 cd/m2 (Rister et al., 2007; Seelig et al., 2010; Strother et al., 2017). Our screens, with a mean luminance of 100 cd/m2, are substantially brighter, but not especially bright when compared to natural scenes. In daytime natural scenes, foliage and the ground have average luminances of 200\u2013500 cd/m2 and the sky has an average luminance of around 4000 cd/m2 (Frazor and Geisler, 2006). We suspect that as researchers move to using displays that can more accurately depict natural scene luminances, anti-directional turning behaviors will be encountered more frequently.\n\nRearing conditions also significantly influenced anti-directional turning behavior. Flies reared at 25\u00b0C showed less anti-directional behavior than those reared at 20\u00b0C. Temperature has known developmental effects on neural connectivity (Kiral et al., 2021). We also found differences based on fly age and fly strain. Notably, all three of these parameters vary significantly across the field, with prior studies varying rearing temperatures from 18\u201320\u00b0C to 25\u00b0C (see for instance Juusola et al., 2017; Mongeau and Frye, 2017; Strother et al., 2017; Creamer et al., 2018; Ketkar et al., 2020), varying ages from 1 day to 10 days (see for instance Tammero et al., 2004; Bahl et al., 2013; Silies et al., 2013), and varying strain between Canton-S or Oregon-R (see for instance Rister et al., 2007; Clark et al., 2011). Thus, these factors likely contribute to this phenomenon not having been previously reported, even as rotating sinusoids have been widely used in behavioral experiments.\n\n### Tuning of anti-directional turning matches tuning of direction-selective neurons\n\nThe study of anti-directional turning behavior may yield clues about the temporal tuning of fly motion detectors. Optomotor behavior is tuned to visual stimuli in the range of 8\u201322 Hz (Tammero et al., 2004; Tuthill et al., 2013; Creamer et al., 2018; Strother et al., 2018), while anti-directional behavior is tuned to stimuli in the range of 0.5\u20134 Hz (Figure 2). Intriguingly, this slower tuning matches the tuning of T4, T5, and HS neurons, as measured via calcium imaging or electrophysiology (Joesch et al., 2008; Chiappe et al., 2010; Maisak et al., 2013; Creamer et al., 2018). Previous studies have suggested that the difference in tuning between behavior and imaging are due to octopamine that is released during behavior but not necessarily released during imaging (Chiappe et al., 2010; Arenz et al., 2017; Strother et al., 2018). In this work, we demonstrate a motion-related behavior tuned to low frequencies, comparable to those in neural measurements, during behavior that requires T4 and T5 neurons. Overall, this suggests that T4 and T5 are required for behaviors with very different temporal tuning, which in turn suggests that the temporal tuning of behavior is not determined solely by T4 and T5 tuning, but by other, parallel pathways as well.\n\n### Anti-directional turning reveals circuits that turn the fly counter to visual motion\n\nExperiments that show a decrease of turning over time to high-contrast stimuli (e.g., Figure 1d) could plausibly be explained by some kind of gain reduction or adaptation over time. However, the existence of turning in the direction opposite the stimulus motion in D. melanogaster and in D. yakuba requires a different explanation. These experiments reveal that over long timescales, a circuit that opposes the syn-directional optomotor turning response can dominate the behavioral response. Thus, this circuit is not simply scaling the magnitude of turning responses, but rather must be implementing an antagonistic, subtractive operation. We have schematized one possible subtractive circuit (Figure 6\u2014figure supplement 2), which shows an influence by regressive motion detectors on long timescales that drives anti-directional turning. Measurements of free walking behavior have shown that the time constant of the autocorrelation of fly turning is around 100 ms (Katsov et al., 2017; DeAngelis et al., 2019). Opposing syn- and anti-directional turning circuits could be used to balance and tune the strength of turning responses on short timescales, while the anti-directional turning is revealed on longer timescales. This sort of subtractive processing predominates in computing motion signals in the visual systems of insects (Mauss et al., 2015) and mammals (Rust et al., 2006), and could also explain the existence of syn- and anti-directional turning behaviors.\n\nIn summary, we have presented evidence of a transition from syn-directional turning to no turning or to anti-directional turning when high-contrast stimuli are presented to the fly. This persists across laboratory environments and across Drosophila species and shows plasticity with age. This behavior suggests that turning in response to rotational stimuli is not a simple reflex. Instead, the turning is likely driven by circuits with opposing influences on turning direction. These circuits appear to differentially adapt to the direction and contrast of the stimulus. This complexity makes the optomotor response a model for studying the interactions of circuits as they control the low-dimensional behaviors that change an animal\u2019s orientation.\n\n## Methods\n\n### Fly strains\n\nStrains used in these experiments are listed in (Tables 1 and 2).\n\n**Table 1.**\n Parental stock genotypes.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Name</th>\n      <th>Genotype</th>\n      <th>Source</th>\n      <th>Stock #</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Wildtype</td>\n      <td>+; +; + (IsoD1)</td>\n      <td>Gohl et al., 2011</td>\n      <td>N/A</td>\n    </tr>\n    <tr>\n      <td>T4T5-Gal4</td>\n      <td>+; +; R42F06-Gal4 (IsoD1 background)</td>\n      <td>BDSC</td>\n      <td>BDSC 41253</td>\n    </tr>\n    <tr>\n      <td>HS-Gal4</td>\n      <td>+; +; R27B03-Gal4 (IsoD1 bg)</td>\n      <td>Seelig et al., 2010</td>\n      <td>BDSC 49211</td>\n    </tr>\n    <tr>\n      <td>CH-Gal4</td>\n      <td>w; +; R35A10-Gal4 (Janelia bg)</td>\n      <td>BDSC</td>\n      <td>BDSC 49897</td>\n    </tr>\n    <tr>\n      <td>UAS-Shibirets</td>\n      <td>+; +; UAS-Shibirets (IsoD1 bg)</td>\n      <td>Silies et al., 2013</td>\n      <td>N/A</td>\n    </tr>\n    <tr>\n      <td>Empty Gal4</td>\n      <td>w; +; pBDPGAL4.1Uw (Janelia bg)</td>\n      <td>BDSC</td>\n      <td>BDSC 68384</td>\n    </tr>\n    <tr>\n      <td>GCaMP6f</td>\n      <td>w; UAS-GCaMP6f; +</td>\n      <td>BDSC</td>\n      <td>BDSC 42747</td>\n    </tr>\n    <tr>\n      <td>jGCaMP7b</td>\n      <td>w; +; UAS-jGCaMP7b</td>\n      <td>BDSC</td>\n      <td>BDSC 79029</td>\n    </tr>\n    <tr>\n      <td>mtdTomato</td>\n      <td>w; +; UAS-mtdTomato</td>\n      <td>BDSC</td>\n      <td>BDSC 30124</td>\n    </tr>\n  </tbody>\n</table>\n\n**Table 2.**\n Genotypes of flies used in behavior experiments.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Experimental</th>\n      <th>Gal4 control</th>\n      <th>UAS control</th>\n      <th>Background control</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>T4T5-Gal4 x UAS- Shibirets:+; +; R42F06-Gal4/UAS-Shibirets</td>\n      <td>T4T5-Gal4 x IsoD1: +;+;R42F06-Gal4/+</td>\n      <td>IsoD1 x UAS-Shibirets:+; +; +/UAS-Shibirets</td>\n      <td>IsoD1: +; +; +</td>\n    </tr>\n    <tr>\n      <td>HS-Gal4 x UAS- Shibirets:+; +; R27B03-Gal4/UAS-Shibirets</td>\n      <td>HS-Gal4 x IsoD1:+; +; R27B03-Gal4/+</td>\n      <td>IsoD1 x UAS-Shibirets:+; +; +/UAS-Shibirets</td>\n      <td>IsoD1: +; +; +</td>\n    </tr>\n    <tr>\n      <td>CH-Gal4 x UAS-Shibirets: w/+; +; R35A10-Gal4/UAS-Shibirets</td>\n      <td>CH-Gal4 x IsoD1:w/+; +; R35A10-Gal4/+</td>\n      <td>Empty Gal4 x UAS-Shibirets: +/w; +; pBDPGAL4.1Uw /UAS-Shibirets</td>\n      <td>Empty Gal4 X IsoD1: +/w; +;+/ pBDPGAL4.1Uw</td>\n    </tr>\n  </tbody>\n</table>\n\nGenotypes of files used in imaging experiments: +; +; HS-Gal4/UAS-jGCaMP7b, +; UAS-GC6f/+; T4T5-Gal4/UAS-mtdTomato, w/+; +; CH-Gal4/UAS-jGCaMP7b.\n\n### Fly rearing (DAC lab)\n\nUnless otherwise noted, flies were reared at 20\u00b0C in Panasonic MIR-154-PA incubators (Panasonic/PHC, Tokyo, Japan). The flies were circadian entrained on 12 hr light-dark cycles. Flies were raised on Archon Scientific glucose food (recipe D20102, Archon Scientific, Durham, NC, USA). We used CO2 to anesthetize flies more than 12 hr before the behavioral experiments.\n\nFlies were tested for behavior in rigs built in the labs of DAC and TRC. Behavior shown in Figure 1d, e, Figure 6c, d, Figure 1\u2014figure supplement 1, and Figure 6\u2014figure supplement 1 was acquired in the lab of TRC, while the rest was obtained in the lab of DAC.\n\n### Fly rearing (TRC lab)\n\nFlies were reared at 25\u00b0C, on molasses-based food, and circadian entrained on 12 hr light-dark cycles. Flies were collected within 3 hr of eclosion using brief CO2 anesthetization. D. melanogaster and D. yakuba were raised under identical conditions. Dark-reared flies were put in a dark chamber within 3 hr of eclosion. Flies tested at 0.5 dpe were collected during the first 2 hr of the light cycle and were exposed to light until they were tested.\n\n### Stimulus generation and behavioral turning assays (DAC lab)\n\nStimuli were presented using DLP Lightcrafter (Texas Instruments, Dallas, TX, USA) projectors (Creamer et al., 2019). Mirrors were used to bounce the projected light onto three screens made of back-projection material, surrounding the fly. The screens covered the front 270\u00b0 around the fly, and ~45\u00b0 in elevation above and below the fly. The projectors were set to monochrome mode (green unless otherwise noted), updating at 180 Hz. Stimulus video was generated through a custom MATLAB (Mathworks, Natick, MA, USA) application using PsychToolbox (Kleiner et al., 2007). Stimuli were mapped onto a virtual cylinder around the fly and the MATLAB application generated a viewpoint-corrected video signal. Stimuli are as described in the text. Unless stated otherwise, stimuli were preceded and succeeded by uniform intensity stimuli with the same mean luminance; in our figures, this is represented by gray periods. These interleaved uniform intensity stimuli typically lasted 5 s.\n\nBehavioral experiments were performed 12\u201360 hr after staging. For behavioral experiments, we selected female flies, and co-housed them with males after staging. Flies were cold-anesthetized and fixed to needles using UV-cured epoxy (Norland optical adhesive #63, Norland Products, Cranbury, NJ, USA). Flies were then placed above air-suspended polypropylene balls in a dark box maintained at 34\u201336\u00b0C in a room held at ~50% relative humidity (such that the box has relative humidity of 25\u201330%). These conditions yield robust walking and turning behaviors. These balls were 6 mm in diameter and weighed ~120 mg. The balls were painted with two layers of marker coatings \u2013 a base silver layer and a red top layer. The motion of balls was detected by either a Parallax mouse sensor board (Parallax, Rocklin, CA, USA) with an MCS-12086 sensor (Unity Opto Technology, Taipei, Taiwan), or a custom board with an ADNS 2080 sensor (Avago Technologies/Broadcom Inc, San Jose, TX, USA). The data from these sensors were transferred to a custom MATLAB application via an Arduino Uno board. Flies were excluded from analysis if they walked at an average speed of <1 mm/s over the entire experiment, or if the standard deviation of their turning was less than 1.5 times their meaning turning, an indication that they turned strongly and constitutively in one direction. These criteria typically excluded <10% of flies run.\n\n### Stimulus generation and behavioral turning assays (TRC lab)\n\nStimuli were presented using a DLP Lightcrafter (Texas Instruments, Dallas, TX, USA) projector. Three coherent optic fibers were used to direct the projected light onto three screens made of back-projection material, surrounding the fly (Clark et al., 2011; Clark et al., 2014). The screens covered the front 270\u00b0 around the fly, and ~45\u00b0 in elevation above and below the fly. The projectors were set to monochrome mode, updating at 120 Hz. Stimulus video was generated through Flystim (Choi et al., 2023), a custom Python application developed in the Clandinin Lab (Turner et al., 2022). Stimuli were mapped onto a virtual cylinder around the fly and Flystim generated a viewpoint-corrected video signal. Stimuli are as described in the text. Stimuli were preceded and succeeded by uniform intensity stimuli with the same mean luminance; in our figures, this is represented by the gray periods. These interleaved uniform intensity stimuli typically lasted 5 s.\n\nBehavioral experiments were performed 12\u201348 hr after eclosion, as described in the figures. Flies were cold-anesthetized and fixed to needles using UV-cured adhesive (Bondic, Niagara Falls, NY, USA). Flies were then placed above air-suspended balls made with LAST-A-FOAM FR-4615 polyurethane foam (General Plastics, Tacoma, WA, USA). These balls were 9 mm in diameter and weighed ~91.7 mg. The motion of balls was detected by a Flea3 FL3-U3-13Y3M camera (Teledyne Flir, Wilsonville, OR, USA) and Fictrac software (Moore et al., 2014). The entire apparatus was contained in a light-tight box maintained at 34\u00b0C in a room held at ~50% relative humidity (such that the box has relative humidity of 25\u201330%). These conditions yield robust walking and turning behaviors. There were no exclusion criteria applied to flies in analyzing these experiments.\n\n### Luminance measurements\n\nOur experiments revealed that luminance was a critical factor in generating the observed anti-directional turning. In the rigs in the DAC and TRC labs, we measured the luminance by placing a power meter in front of the rear-projection screens. The total power was converted to luminous intensity by dividing by the area of the sensor and by 2\u03c0 steradians, approximating the scattering by the screen as uniform in all directions. We then converted from watts to candelas by the standard factor and weighting by the photopic luminosity function centered on our mean screen wavelength (~540 nm). Though the human photopic luminosity function is an unusual choice for studying fly visual behavior, cd/m2 has been a standard unit for measuring screen luminous intensity in the field.\n\n### Imaging procedures\n\nTwo-photon imaging (Figure 5) was performed as previously described (Tanaka and Clark, 2022). Briefly, two-photon images were acquired with a Scientifica microscope at between 6 Hz and 13 Hz using a 930 nm femtosecond laser (SpectraPhysics, Santa Clara, CA, USA) using ScanImage (Pologruto et al., 2003). Visual stimuli were presented on three screens occupying 270\u00b0 of azimuthal angle about the fly using projectors (Creamer et al., 2019). Optical filters on the projector and emission filters prevented the visual stimulus light from leaking into the two-photon images.\n\nRegions of interest (ROIs) were extracted from image timeseries using a watershed algorithm. Responsive ROIs were included in the analyses. For T4 and T5 neurons, each ROI was identified as a T4-dominant or T5-dominant ROI by its response to light vs. dark edges, following prior procedures (Agrochao et al., 2020). For all neuron types, responses were averaged over ROIs and over trials of each stimulus type to obtain a measurement for each fly; these fly measurements acted as the independent measurements to compute means and standard error bars for the figure.\n\n### Statistical tests\n\nThroughout the paper, each fly was considered an independent sample for statistical purposes. Means and standard errors were computed over flies. For imaging experiments, ROIs from a specific neuron type were first averaged within each fly, creating a value for each fly\u2019s response. These values were used to calculate means and standard errors over the tested flies. In the silencing experiments, a two-sample Student\u2019s t-test was used to test for significant differences between the experimental genotype and parental controls.\n",
+      "created_at": "2025-12-04T03:26:24.296224Z"
+    },
+    {
+      "id": "74f6d48e-bbef-4316-9a8a-05d350ade31e",
+      "submission_id": "0bc8c11c-8403-487a-a53d-0a336be4694a",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- P Robin Hiesinger, https://ror.org/046ak2485 Institute for Biology Free University Berlin Germany\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.86076.sa0](https://doi.org/10.7554/eLife.86076.sa0)\n\nThe present study provides a valuable new perspective on the optomotor response based on an inversion of the behavior under specific (non-natural) conditions that may help elucidate the principles of this specific behavior. The evidence provided is convincing.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- P Robin Hiesinger, https://ror.org/046ak2485 Institute for Biology Free University Berlin Germany\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.86076.sa1](https://doi.org/10.7554/eLife.86076.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Long timescale anti-directional rotation in Drosophila optomotor behavior\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Claude Desplan as the Senior Editor.\n\nEssential revisions:\n\nAs you can see below, there was a consensus that the observed anti-directional turning is an interesting behavior that may help understand principles of optomotor behavior. However, it was less clear to the reviewers how this 'non-natural' behavior precisely informs about normal behavior and what the implications may be for a broader audience. An effort by the authors in clarifying these points might improve the paper.\n\nIn addition, the following revisions suggested by reviewer 2 were deemed essential to strengthen the conclusions such as they are:\n\n1) Given the dynamics of the behavior, it is important to look at the turning dynamics after the stimulus has stopped. If direction-selective adaptation mechanisms are regulating the turning response, one may find long-lasting biases even in the absence of stimulation. If the authors have more data after the stimulus end, it would be good to further expand the time range by a few seconds to show if this is the case or not (for example, in Figure 1b).\n\n2) Another important set of experiments is to perform closed-loop configuration tests that should allow the motion computing circuitry to adapt to the chosen environmental conditions. Explorations of the changes in turning response dynamics after such treatments should then enable further dissections of the mechanisms of adaptation. Closed-loop experiments under different contrast conditions have already been performed (for example, Leonhardt et al. 2016), which also showed complex response dynamics after stimulus on- and offset.\n\nReviewer #3 (Recommendations for the authors):\n\nIn Figure 3, noting that flies could turn with both fast and slow movements, which may be in different directions, and information may be lost in the average trace, the authors show the raw turning traces, as well as a binarized version that shows only turning direction. It is nice to see the raw traces, but I think it could also be helpful to the reader to summarize this data by showing the distribution of angular velocities at different time points.\n\nThe authors may want to cite the following work which describes anti-directional optomotor behavior in fish.\n\nBak-Coleman, J., Smith, D., and Coombs, S. (2015). Animal Behaviour. Animal Behaviour, 107(C), 7-17. http://doi.org/10.1016/j.anbehav.2015.06.007\n",
+      "created_at": "2025-12-04T03:26:24.296224Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T03:26:24.296224Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T03:26:24.296224Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "59392462-a046-4d9a-9b9a-1aa4cf5107ab",
+      "content_id": "813760a7-8101-4ef4-83c1-28d9670fd668",
+      "claim_id": "C1",
+      "claim": "Drosophila melanogaster can suppress and reverse the optomotor turning response over several seconds under certain stimulus conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we report that under certain stimulus conditions, two Drosophila species, including the widely studied Drosophila melanogaster, can suppress and even reverse the optomotor turning response over several seconds.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract directly states this finding, which is supported by behavioral data presented throughout the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:26:24.296224Z"
+    },
+    {
+      "id": "d5321f75-2836-4be3-bcfd-982a71a29452",
+      "content_id": "813760a7-8101-4ef4-83c1-28d9670fd668",
+      "claim_id": "C2",
+      "claim": "Drosophila yakuba can suppress and reverse the optomotor turning response over several seconds under certain stimulus conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we report that under certain stimulus conditions, two Drosophila species, including the widely studied Drosophila melanogaster, can suppress and even reverse the optomotor turning response over several seconds.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract states this finding for two species, and Figure 1e shows data for D. yakuba.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:26:24.296224Z"
+    },
+    {
+      "id": "87a0da30-248b-4608-86ca-e3e77c0b99c7",
+      "content_id": "813760a7-8101-4ef4-83c1-28d9670fd668",
+      "claim_id": "C3",
+      "claim": "Anti-directional turning is most strongly evoked by long-lasting, high-contrast, slow-moving visual stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "Such 'anti-directional turning' is most strongly evoked by long-lasting, high-contrast, slow-moving visual stimuli that are distinct from those that promote syn-directional optomotor turning.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract states this, and it is supported by data in Figure 2 showing spatiotemporal tuning.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:26:24.296224Z"
+    },
+    {
+      "id": "e57b8c13-fd2f-42fd-a5ec-44ce3ad4ccad",
+      "content_id": "813760a7-8101-4ef4-83c1-28d9670fd668",
+      "claim_id": "C4",
+      "claim": "Anti-directional turning requires the local motion detecting neurons T4 and T5.",
+      "claim_type": "EXPLICIT",
+      "source": "Anti-directional turning, like the syn-directional optomotor response, requires the local motion detecting neurons T4 and T5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract states this, and Figure 4a shows that silencing T4 and T5 eliminates anti-directional turning.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:26:24.296224Z"
+    },
+    {
+      "id": "88e2ea36-b4d1-4a22-a68b-e2e4ad73f4c4",
+      "content_id": "813760a7-8101-4ef4-83c1-28d9670fd668",
+      "claim_id": "C5",
+      "claim": "CH cells show involvement in anti-directional turning responses.",
+      "claim_type": "EXPLICIT",
+      "source": "A subset of lobula plate tangential cells, CH cells, show involvement in these responses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract states this, and Figure 4c shows that silencing CH neurons reduces anti-directional turning.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:26:24.296224Z"
+    },
+    {
+      "id": "421922e5-1609-4847-9fa5-1d3032787047",
+      "content_id": "813760a7-8101-4ef4-83c1-28d9670fd668",
+      "claim_id": "C6",
+      "claim": "Direction-selective cells in the lobula plate show no evidence of dynamics that match the anti-directional turning behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "Imaging from a variety of direction-selective cells in the lobula plate shows no evidence of dynamics that match the behavior, suggesting that the observed inversion in turning direction emerges downstream of the lobula plate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract states this, and Figure 5 shows calcium imaging data from T4, T5, HS, and CH neurons that do not show reversal dynamics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:26:24.296224Z"
+    },
+    {
+      "id": "ffd81248-8325-455e-818e-dd4e9688efd7",
+      "content_id": "813760a7-8101-4ef4-83c1-28d9670fd668",
+      "claim_id": "C7",
+      "claim": "The inversion in turning direction emerges downstream of the lobula plate.",
+      "claim_type": "EXPLICIT",
+      "source": "Imaging from a variety of direction-selective cells in the lobula plate shows no evidence of dynamics that match the behavior, suggesting that the observed inversion in turning direction emerges downstream of the lobula plate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion based on the imaging data showing no reversal in lobula plate neurons.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:26:24.296224Z"
+    },
+    {
+      "id": "33573bee-bedf-4d4c-b345-d8371b7e0308",
+      "content_id": "813760a7-8101-4ef4-83c1-28d9670fd668",
+      "claim_id": "C8",
+      "claim": "Anti-directional turning declines with age.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, anti-directional turning declines with age and exposure to light.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract states this, and Figure 6 shows behavioral data across different ages.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:26:24.296224Z"
+    },
+    {
+      "id": "6b011b7f-984a-471f-9bae-78105cc3da96",
+      "content_id": "813760a7-8101-4ef4-83c1-28d9670fd668",
+      "claim_id": "C9",
+      "claim": "Anti-directional turning declines with exposure to light.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, anti-directional turning declines with age and exposure to light.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract states this, and Figure 6 shows that dark-reared flies maintain stronger anti-directional responses.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:26:24.296224Z"
+    },
+    {
+      "id": "c27733b3-b775-4b1b-8dd1-43892cb97f04",
+      "content_id": "813760a7-8101-4ef4-83c1-28d9670fd668",
+      "claim_id": "C10",
+      "claim": "Drosophila optomotor turning behaviors contain rich, stimulus-dependent dynamics that are inconsistent with simple reflexive stabilization responses.",
+      "claim_type": "EXPLICIT",
+      "source": "These results show that Drosophila optomotor turning behaviors contain rich, stimulus-dependent dynamics that are inconsistent with simple reflexive stabilization responses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion in the abstract based on the overall findings.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:26:24.296224Z"
+    },
+    {
+      "id": "a6dc4796-bc9a-42b5-9407-beda4b0125c7",
+      "content_id": "813760a7-8101-4ef4-83c1-28d9670fd668",
+      "claim_id": "C11",
+      "claim": "The optomotor response is thought to be a course stabilizing mechanism that minimizes retinal slip.",
+      "claim_type": "EXPLICIT",
+      "source": "In insects, this response is thought to be a course stabilizing mechanism that minimizes retinal slip, allowing animals to maintain their trajectory in the face of external or unexpected rotational forces (G\u00f6tz and Wenking, 1973; G\u00f6tz, 1975).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with citations to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:26:24.296224Z"
+    },
+    {
+      "id": "e6d96892-c82d-4f4a-832e-b62df91376ef",
+      "content_id": "813760a7-8101-4ef4-83c1-28d9670fd668",
+      "claim_id": "C12",
+      "claim": "Photoreceptor signals are split into parallel ON and OFF pathways in the lamina and medulla.",
+      "claim_type": "EXPLICIT",
+      "source": "Photoreceptor signals are split into parallel ON and OFF pathways in the lamina and medulla (Joesch et al., 2010; Clark et al., 2011; Behnia et al., 2014; Strother et al., 2014), which are not direction-selective.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with citations to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:26:24.296224Z"
+    },
+    {
+      "id": "400c9c00-9e7f-4bdf-84ec-45a8ac409c90",
+      "content_id": "813760a7-8101-4ef4-83c1-28d9670fd668",
+      "claim_id": "C13",
+      "claim": "ON and OFF pathways in the lamina and medulla are not direction-selective.",
+      "claim_type": "EXPLICIT",
+      "source": "Photoreceptor signals are split into parallel ON and OFF pathways in the lamina and medulla (Joesch et al., 2010; Clark et al., 2011; Behnia et al., 2014; Strother et al., 2014), which are not direction-selective.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with citations to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:26:24.296224Z"
+    },
+    {
+      "id": "de72f182-32f4-4113-93eb-92422af7151f",
+      "content_id": "813760a7-8101-4ef4-83c1-28d9670fd668",
+      "claim_id": "C14",
+      "claim": "T4 and T5 cells compute direction-selective responses along four directions at every point in the fly visual field.",
+      "claim_type": "EXPLICIT",
+      "source": "These signals provide input to T4 and T5 cells, which compute direction-selective responses along four directions at every point in the fly visual field (Bausenwein et al., 1992; Maisak et al., 2013; Takemura et al., 2013; Shinomiya et al., 2019; Henning et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with citations to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:26:24.296224Z"
+    },
+    {
+      "id": "fddcd106-6106-4f52-a854-133f975ff11c",
+      "content_id": "813760a7-8101-4ef4-83c1-28d9670fd668",
+      "claim_id": "C15",
+      "claim": "The outputs of T4 and T5 cells are summed across visual space by lobula plate tangential cells (LPTCs).",
+      "claim_type": "EXPLICIT",
+      "source": "The outputs of T4 and T5 cells are then summed across visual space by lobula plate tangential cells (LPTCs) (Joesch et al., 2008; Schnell et al., 2012; Maisak et al., 2013; Mauss et al., 2015; Barnhart et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with citations to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:26:24.296224Z"
+    },
+    {
+      "id": "087b4fb1-667c-4839-8f8a-2c9b0cef3777",
+      "content_id": "813760a7-8101-4ef4-83c1-28d9670fd668",
+      "claim_id": "C16",
+      "claim": "Different LPTCs provide distinct signals about the overall pattern of motion surrounding the fly.",
+      "claim_type": "EXPLICIT",
+      "source": "Different LPTCs provide distinct signals about the overall pattern of motion surrounding the fly, and have been linked to head and body movements (Krapp and Hengstenberg, 1996; Haikala et al., 2013; Kim et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with citations to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:26:24.296224Z"
+    },
+    {
+      "id": "fa41598d-8250-4bad-9fd3-e707cd260cd2",
+      "content_id": "813760a7-8101-4ef4-83c1-28d9670fd668",
+      "claim_id": "C17",
+      "claim": "LPTCs have been linked to head and body movements.",
+      "claim_type": "EXPLICIT",
+      "source": "Different LPTCs provide distinct signals about the overall pattern of motion surrounding the fly, and have been linked to head and body movements (Krapp and Hengstenberg, 1996; Haikala et al., 2013; Kim et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with citations to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:26:24.296224Z"
+    },
+    {
+      "id": "17ab426c-76cd-4666-9682-7baf6338593a",
+      "content_id": "813760a7-8101-4ef4-83c1-28d9670fd668",
+      "claim_id": "C18",
+      "claim": "Some counter-intuitive turning behaviors in flies can be accounted for by aliasing when using periodic stimuli with spatial wavelengths smaller than the receptive field of individual ommatidia.",
+      "claim_type": "EXPLICIT",
+      "source": "In some cases, these counter-intuitive behaviors were observed using periodic stimuli with spatial wavelengths smaller than the receptive field of individual ommatidia, and thus can be accounted for by aliasing (G\u00f6tz, 1964; G\u00f6tz, 1970; Buchner, 1976).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an explanation for prior observations with citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:26:24.296224Z"
+    },
+    {
+      "id": "9b25824b-3590-4810-b3de-14712ae84151",
+      "content_id": "813760a7-8101-4ef4-83c1-28d9670fd668",
+      "claim_id": "C19",
+      "claim": "When a moving pattern is presented in front of a tethered flying fly, the animal turns in the direction of the stimulus motion.",
+      "claim_type": "EXPLICIT",
+      "source": "Work in a tethered flight simulator showed that when a moving pattern is presented in front of the fly, the animal turned in the direction of the stimulus motion (Tammero et al., 2004), as expected (G\u00f6tz, 1968).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a prior finding with citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:26:24.296224Z"
+    },
+    {
+      "id": "f0347827-ef23-4c12-9939-d872871489f8",
+      "content_id": "813760a7-8101-4ef4-83c1-28d9670fd668",
+      "claim_id": "C20",
+      "claim": "When a moving pattern is presented behind a tethered flying fly, the animal attempts to turn in the direction opposite to stimulus motion.",
+      "claim_type": "EXPLICIT",
+      "source": "However, if the moving pattern was presented behind the fly, it attempted to turn in the direction opposite to stimulus motion (Tammero et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a prior finding with citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:26:24.296224Z"
+    },
+    {
+      "id": "2e37c55a-9575-49fa-af8d-42f9a5264744",
+      "content_id": "813760a7-8101-4ef4-83c1-28d9670fd668",
+      "claim_id": "C21",
+      "claim": "Freely walking flies presented with rotational patterns on a dome generally turn in the direction of motion, but these rotations are often punctuated by brief, large-magnitude saccades in the opposite direction.",
+      "claim_type": "EXPLICIT",
+      "source": "In a different experimental preparation, rotational patterns were presented on a dome around freely walking flies (Williamson et al., 2018). Under these conditions, flies generally turned in the direction of motion of the stimulus, but these rotations were often punctuated by brief, large-magnitude saccades in the opposite direction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a prior finding with citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:26:24.296224Z"
+    },
+    {
+      "id": "874f344c-aeda-452c-a6a2-a0ffb6e19a24",
+      "content_id": "813760a7-8101-4ef4-83c1-28d9670fd668",
+      "claim_id": "C22",
+      "claim": "Experiments using flight simulators have reported spikes in torque in the direction opposite the stimulus rotation.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, experiments using flight simulators have reported spikes in the torque in the direction opposite the stimulus rotation (Wolf and Heisenberg, 1990).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a prior finding with citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:26:24.296224Z"
+    },
+    {
+      "id": "f922fff2-0b92-4bf2-93a2-0387d841f0af",
+      "content_id": "813760a7-8101-4ef4-83c1-28d9670fd668",
+      "claim_id": "C23",
+      "claim": "Zebrafish have been observed to turn in the opposite direction of optic flow under certain conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, zebrafish have also been observed to turn in the opposite direction of optic flow under certain conditions (Bak-Coleman et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a prior finding with citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:26:24.296224Z"
+    },
+    {
+      "id": "21cb08c2-1526-468f-af50-ab36d5e671e1",
+      "content_id": "813760a7-8101-4ef4-83c1-28d9670fd668",
+      "claim_id": "C24",
+      "claim": "Low-contrast, slow-moving sinusoidal gratings cause flies to turn in the same direction as the moving gratings via the classical optomotor turning response.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, low-contrast, slow-moving sinusoidal gratings caused flies to turn in the same direction as the moving gratings via the classical optomotor turning response (Figure 1b; Hassenstein and Reichardt, 1956; G\u00f6tz, 1964; Buchner, 1976; Tammero et al., 2004; Seelig et al., 2010; Clark et al., 2011; Bahl et al., 2013; Silies et al., 2013; Clark et al., 2014; Bahl et al., 2015; Leonhardt et al., 2016; Salazar-Gatzimas et al., 2016; Strother et al., 2017; Creamer et al., 2018; Strother et al., 2018).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text with citations and shown in Figure 1b.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:26:24.296224Z"
+    },
+    {
+      "id": "399bccd9-7551-41f8-aab7-96d4f2c7eeb9",
+      "content_id": "813760a7-8101-4ef4-83c1-28d9670fd668",
+      "claim_id": "C25",
+      "claim": "When presented with high-contrast sinusoidal gratings, flies turn in the stimulus direction for approximately 1 s, then reverse course and turn in the direction opposite to the stimulus motion for the duration of the stimulus presentation.",
+      "claim_type": "EXPLICIT",
+      "source": "However, when we changed the stimulus to high-contrast sinusoidal gratings (nominal 100% Weber contrast), flies turned in the stimulus direction for approximately 1 s, but then reversed course, and turned in the direction opposite to the stimulus motion for the duration of the stimulus presentation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text and shown in Figure 1b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:26:24.296224Z"
+    },
+    {
+      "id": "218e0a1c-bffe-4220-aef6-768b73fba324",
+      "content_id": "813760a7-8101-4ef4-83c1-28d9670fd668",
+      "claim_id": "C26",
+      "claim": "As contrast increases from 0 to 0.5, flies turn faster during the first 500 ms of stimulus presentation, reaching a plateau at around 0.5 contrast.",
+      "claim_type": "EXPLICIT",
+      "source": "As contrast increased, the flies turned faster during the first half second of stimulus presentation, reaching a plateau at around 0.5 contrast, consistent with previous results (McCann and MacGinitie, 1965; Buchner, 1976; Heisenberg and Buchner, 1977; Duistermars et al., 2007; Bahl et al., 2015; Strother et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text with citations and shown in Figure 1c.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:26:24.296224Z"
+    },
+    {
+      "id": "ee76ba2c-f232-46ab-b55b-6761a9a1bb2b",
+      "content_id": "813760a7-8101-4ef4-83c1-28d9670fd668",
+      "claim_id": "C27",
+      "claim": "At contrasts between 0 and 0.25, flies turn in the same direction as the stimulus after the first second of stimulation, with faster turning as the contrast increases.",
+      "claim_type": "EXPLICIT",
+      "source": "At contrasts between 0 and 0.25, flies turned in the same direction as the stimulus, with faster turning as the contrast increased.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text describing Figure 1c data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:26:24.296224Z"
+    },
+    {
+      "id": "3e3d4b9f-fb87-4b13-923d-9eddb0df17fb",
+      "content_id": "813760a7-8101-4ef4-83c1-28d9670fd668",
+      "claim_id": "C28",
+      "claim": "When contrast is greater than 0.25, sustained turning decreases, lowering to no net sustained turning at around 0.8 contrast.",
+      "claim_type": "EXPLICIT",
+      "source": "When the contrast was greater than 0.25, turning decreased, lowering to no net sustained turning at around 0.8 contrast.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text describing Figure 1c data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:26:24.296224Z"
+    },
+    {
+      "id": "99a7166e-e632-4abe-b6c3-27519cf6f94e",
+      "content_id": "813760a7-8101-4ef4-83c1-28d9670fd668",
+      "claim_id": "C29",
+      "claim": "Above a contrast of 0.8, flies begin to turn in the direction opposite the stimulus.",
+      "claim_type": "EXPLICIT",
+      "source": "Above a contrast of 0.8, flies began to turn in the direction opposite the stimulus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text describing Figure 1c data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:26:24.296224Z"
+    },
+    {
+      "id": "34f57a1d-20a5-43d1-8a23-7e3a916a3cb4",
+      "content_id": "813760a7-8101-4ef4-83c1-28d9670fd668",
+      "claim_id": "C30",
+      "claim": "Canton-S D. melanogaster strain displays milder but significant anti-directional turning at long timescales.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, when we tested a Canton-S D. melanogaster strain, we observed milder but significant anti-directional turning at long timescales (Figure 1\u2014figure supplement 2b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 1\u2014figure supplement 2b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:26:24.296224Z"
+    },
+    {
+      "id": "9da37c00-f550-4219-9b33-3d73e03046b1",
+      "content_id": "813760a7-8101-4ef4-83c1-28d9670fd668",
+      "claim_id": "C31",
+      "claim": "Anti-directional turning is strongly linked to display brightness.",
+      "claim_type": "EXPLICIT",
+      "source": "In our experiments, anti-directional turning was strongly linked to display brightness (Figure 1\u2014figure supplement 2a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 1\u2014figure supplement 2a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:26:24.296224Z"
+    },
+    {
+      "id": "53bbd685-c00b-4193-9603-f7712bf36280",
+      "content_id": "813760a7-8101-4ef4-83c1-28d9670fd668",
+      "claim_id": "C32",
+      "claim": "When mean brightness of screens is reduced from 100 cd/m2 to 1 cd/m2, there is no anti-directional turning in 5 s trials.",
+      "claim_type": "EXPLICIT",
+      "source": "When the mean brightness of the screens was reduced from 100 cd/m2 to 1 cd/m2, we saw no anti-directional turning in 5 s trials (though average optomotor behavior did decrease over the course of the stimulus presentation).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text describing Figure 1\u2014figure supplement 2a data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:26:24.296224Z"
+    },
+    {
+      "id": "82ad6d54-13cd-46b2-9d74-dd97b3b2ea3f",
+      "content_id": "813760a7-8101-4ef4-83c1-28d9670fd668",
+      "claim_id": "C33",
+      "claim": "When mean brightness is reduced to 0.1 cd/m2, flies persist in their optomotor behavior throughout the stimulus presentation.",
+      "claim_type": "EXPLICIT",
+      "source": "When we further reduced the mean brightness to 0.1 cd/m2, flies persisted in their optomotor behavior throughout the stimulus presentation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text describing Figure 1\u2014figure supplement 2a data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:26:24.296224Z"
+    },
+    {
+      "id": "b0aa4b1c-dc92-4b75-b584-0e7b4017c811",
+      "content_id": "813760a7-8101-4ef4-83c1-28d9670fd668",
+      "claim_id": "C34",
+      "claim": "Rearing D. melanogaster at 25\u00b0C instead of 20\u00b0C reduces overall turning behavior and eliminates anti-directional turning.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, rearing D. melanogaster at 25\u00b0C instead of 20\u00b0C or testing flies that were 2 weeks old instead of 12\u201360 hr old both reduced overall turning behavior and eliminated anti-directional turning.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text and shown in Figure 1\u2014figure supplement 2b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:26:24.296224Z"
+    },
+    {
+      "id": "535df568-0400-4b2a-8406-0516542fcced",
+      "content_id": "813760a7-8101-4ef4-83c1-28d9670fd668",
+      "claim_id": "C35",
+      "claim": "Testing flies that are 2 weeks old instead of 12\u201360 hr old reduces overall turning behavior and eliminates anti-directional turning.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, rearing D. melanogaster at 25\u00b0C instead of 20\u00b0C or testing flies that were 2 weeks old instead of 12\u201360 hr old both reduced overall turning behavior and eliminated anti-directional turning.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text and shown in Figure 1\u2014figure supplement 2b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:26:24.296224Z"
+    },
+    {
+      "id": "d3bf0946-a95c-4f16-af52-0b3e9bfba5ab",
+      "content_id": "813760a7-8101-4ef4-83c1-28d9670fd668",
+      "claim_id": "C36",
+      "claim": "D. melanogaster always turn in the optomotor direction during the early stimulus response (first quarter second).",
+      "claim_type": "EXPLICIT",
+      "source": "D. melanogaster always turned in the optomotor direction during the early stimulus response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text describing Figure 2a data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:26:24.296224Z"
+    },
+    {
+      "id": "f63954f1-78c0-464d-8cfd-6e4ad2ba7d1d",
+      "content_id": "813760a7-8101-4ef4-83c1-28d9670fd668",
+      "claim_id": "C37",
+      "claim": "In the early response, flies turn most vigorously to stimuli with short spatial frequencies (~20\u00b0 wavelength) and fast temporal frequencies (~8 Hz).",
+      "claim_type": "EXPLICIT",
+      "source": "In this early response, flies turned most vigorously to stimuli with short spatial frequencies (~20\u00b0 wavelength) and fast temporal frequencies (~8 Hz), in agreement with earlier studies (Tammero et al., 2004; Creamer et al., 2018; Strother et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text with citations and shown in Figure 2a.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:26:24.296224Z"
+    },
+    {
+      "id": "f0894476-b38a-48ac-8866-80d753f8f9fa",
+      "content_id": "813760a7-8101-4ef4-83c1-28d9670fd668",
+      "claim_id": "C38",
+      "claim": "During the longer-timescale response to high-contrast stimuli, flies only turn in the optomotor direction at very high temporal frequencies (>~16 Hz) and at very low temporal frequencies (<0.5 Hz).",
+      "claim_type": "EXPLICIT",
+      "source": "However, during the longer-timescale response to high-contrast stimuli, flies only turned in the optomotor direction at very high temporal frequencies (>~16 Hz) and at very low temporal frequencies (<0.5 Hz).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text describing Figure 2b data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:26:24.296224Z"
+    },
+    {
+      "id": "c258fdf5-67a5-4479-831d-f4ca26e7dabe",
+      "content_id": "813760a7-8101-4ef4-83c1-28d9670fd668",
+      "claim_id": "C39",
+      "claim": "At intermediate temporal frequencies, flies show a sustained anti-directional response.",
+      "claim_type": "EXPLICIT",
+      "source": "At intermediate temporal frequencies, flies showed a sustained anti-directional response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text describing Figure 2b data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:26:24.296224Z"
+    },
+    {
+      "id": "0208d85e-279b-40f4-8a44-a16f029538ae",
+      "content_id": "813760a7-8101-4ef4-83c1-28d9670fd668",
+      "claim_id": "C40",
+      "claim": "The maximal anti-directional response is achieved at 1 Hz and 45\u00b0 wavelength.",
+      "claim_type": "EXPLICIT",
+      "source": "The maximal anti-directional response was achieved at 1 Hz and 45\u00b0 wavelength, distinct from the conditions for peak classical turning responses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text describing Figure 2b data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:26:24.296224Z"
+    },
+    {
+      "id": "d1da9e32-2d44-4846-8a16-9ab6d5f8a1e1",
+      "content_id": "813760a7-8101-4ef4-83c1-28d9670fd668",
+      "claim_id": "C41",
+      "claim": "The stimuli that elicit the strongest anti-directional response appear similar to those that maximally activate T4 and T5 neurons when measured in head-fixed flies.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the stimuli that elicit the strongest anti-directional response appear similar to those that maximally activate T4 and T5 neurons when those neurons are measured in head-fixed flies (Maisak et al., 2013; Leong et al., 2016; Arenz et al., 2017; Creamer et al., 2018; Strother et al., 2018; Wienecke et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an observation with citations to prior work.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:26:24.296224Z"
+    },
+    {
+      "id": "4e268977-aa26-41be-baf6-2a2b0a839f60",
+      "content_id": "813760a7-8101-4ef4-83c1-28d9670fd668",
+      "claim_id": "C42",
+      "claim": "After switching from high contrast to low contrast, flies quickly revert to classical, syn-directional optomotor behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "After the switch to low contrast, the flies quickly reverted classical, syn-directional optomotor behavior, demonstrating that no long-term switch in directional turning occurs during high-contrast stimulus presentation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text describing Figure 2c data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:26:24.296224Z"
+    },
+    {
+      "id": "82325c33-8511-421f-b571-2fb206fe0ca0",
+      "content_id": "813760a7-8101-4ef4-83c1-28d9670fd668",
+      "claim_id": "C43",
+      "claim": "No long-term switch in directional turning occurs during high-contrast stimulus presentation.",
+      "claim_type": "EXPLICIT",
+      "source": "After the switch to low contrast, the flies quickly reverted classical, syn-directional optomotor behavior, demonstrating that no long-term switch in directional turning occurs during high-contrast stimulus presentation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion from the contrast-switching experiment in Figure 2c.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:26:24.296224Z"
+    },
+    {
+      "id": "a11d5bb8-5d56-4bef-be58-e4b464af75fc",
+      "content_id": "813760a7-8101-4ef4-83c1-28d9670fd668",
+      "claim_id": "C44",
+      "claim": "A rotating stimulus consisting of 5\u00b0-wide vertical bars with randomly chosen, binary contrasts yields similar behavioral responses to sinusoidal stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "This effect did not depend on the periodic nature of these stimuli: a rotating stimulus consisting of 5\u00b0-wide vertical bars with randomly chosen, binary contrasts (Clark et al., 2014) yielded similar behavioral responses (Figure 2d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text with citation and shown in Figure 2d.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:26:24.296224Z"
+    },
+    {
+      "id": "d591e5f5-40e5-4245-b8df-08c36fc5a1b3",
+      "content_id": "813760a7-8101-4ef4-83c1-28d9670fd668",
+      "claim_id": "C45",
+      "claim": "Adapting with front-to-back stimuli does not have a strong effect on the subsequent response to rotational stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that adapting with a stationary or closed-loop high-contrast sinusoid had little effect on the behavior (Figure 2\u2014figure supplement 1). Similarly, adapting the fly with front-to-back stimuli did not have a strong effect on the subsequent response to rotational stimuli.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 2e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:26:24.296224Z"
+    },
+    {
+      "id": "08ec0e88-3a2b-4eb1-8f85-80174aaf36cb",
+      "content_id": "813760a7-8101-4ef4-83c1-28d9670fd668",
+      "claim_id": "C46",
+      "claim": "Adapting with back-to-front stimuli generates responses that no longer show an initial syn-directional turning response, but instead exhibit anti-directional turning immediately after the rotational stimulus begins.",
+      "claim_type": "EXPLICIT",
+      "source": "However, adapting with back-to-front stimuli generated responses that no longer showed an initial syn-directional turning response, but instead exhibited anti-directional turning immediately after the rotational stimulus began.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text describing Figure 2e data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:26:24.296224Z"
+    },
+    {
+      "id": "0b4954dd-40a7-4805-8afe-79ecb1605197",
+      "content_id": "813760a7-8101-4ef4-83c1-28d9670fd668",
+      "claim_id": "C47",
+      "claim": "Anti-directional turning results from slow-timescale changes that depend on strong back-to-front motion.",
+      "claim_type": "EXPLICIT",
+      "source": "This result indicates that the anti-directional turning results from slow-timescale changes that depend on strong back-to-front motion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion from the adaptation experiments.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:26:24.296224Z"
+    },
+    {
+      "id": "2576efa3-7375-4a97-8651-125500a80a66",
+      "content_id": "813760a7-8101-4ef4-83c1-28d9670fd668",
+      "claim_id": "C48",
+      "claim": "Flies display anti-directional turning when presented with stimuli only in the front region (90\u00b0 in front of the fly).",
+      "claim_type": "EXPLICIT",
+      "source": "We found that flies displayed anti-directional turning when presented with stimuli only in the front region or only just in front of the midline (Figure 3b, c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 3b, c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:26:24.296224Z"
+    },
+    {
+      "id": "456f7c5b-1b66-49f4-9ad4-b1cb6bacfbbf",
+      "content_id": "813760a7-8101-4ef4-83c1-28d9670fd668",
+      "claim_id": "C49",
+      "claim": "Flies display anti-directional turning when presented with stimuli only just in front of the midline (45\u00b0 in front of the midline on either side).",
+      "claim_type": "EXPLICIT",
+      "source": "We found that flies displayed anti-directional turning when presented with stimuli only in the front region or only just in front of the midline (Figure 3b, c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 3b, c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:26:24.296224Z"
+    },
+    {
+      "id": "f3bd8767-5fb2-45d5-9075-97d5e66226a9",
+      "content_id": "813760a7-8101-4ef4-83c1-28d9670fd668",
+      "claim_id": "C50",
+      "claim": "Flies do not display anti-directional turning when moving stimuli are presented behind the midline.",
+      "claim_type": "EXPLICIT",
+      "source": "They did not display anti-directional turning when moving stimuli were presented behind the midline (Figure 3b, c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 3b, c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:26:24.296224Z"
+    },
+    {
+      "id": "ed17c74a-290a-4a8c-be05-76af95229378",
+      "content_id": "813760a7-8101-4ef4-83c1-28d9670fd668",
+      "claim_id": "C51",
+      "claim": "The anti-directional turning mechanism is different from behaviors that depend on posterior spatial location to elicit reverse turning.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests a different mechanism from the behaviors that depend on posterior spatial location to elicit reverse turning (Tammero et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion comparing to prior work.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:26:24.296224Z"
+    },
+    {
+      "id": "b7e38798-faa0-4b48-87a6-9725890d10a7",
+      "content_id": "813760a7-8101-4ef4-83c1-28d9670fd668",
+      "claim_id": "C52",
+      "claim": "In many trials, flies continue to turn opposite to the stimulus for several seconds.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, in many trials, flies continued to turn opposite to the stimulus for several seconds, a behavior unlike brief saccades.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text describing Figure 3e data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:26:24.296224Z"
+    },
+    {
+      "id": "b4695b50-1a3c-4a82-b6f4-7877e991c8b4",
+      "content_id": "813760a7-8101-4ef4-83c1-28d9670fd668",
+      "claim_id": "C53",
+      "claim": "When presented with high-contrast stimuli, flies maintain a negative turning index, indicating that sustained turns, and not high-velocity saccades, underlie anti-directional turning behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "When presented with high-contrast stimuli, flies maintained a negative turning index, indicating that sustained turns, and not high-velocity saccades, underlie this anti-directional turning behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text describing Figure 3f data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:26:24.296224Z"
+    },
+    {
+      "id": "f4823725-cc16-41f4-ad20-b818542a8e85",
+      "content_id": "813760a7-8101-4ef4-83c1-28d9670fd668",
+      "claim_id": "C54",
+      "claim": "Anti-directional turning behavior is distinct from reports of anti-directional saccades.",
+      "claim_type": "EXPLICIT",
+      "source": "As such, it appears distinct from the reports of anti-directional saccades.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion from the turning index analysis.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:26:24.296224Z"
+    },
+    {
+      "id": "4ebea630-281e-47da-a6be-fe4384164617",
+      "content_id": "813760a7-8101-4ef4-83c1-28d9670fd668",
+      "claim_id": "C55",
+      "claim": "T4 and T5 are required for directional neural responses.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous work demonstrated that T4 and T5 are required for directional neural responses (Schnell et al., 2012), as well as for optomotor turning (Maisak et al., 2013; Salazar-Gatzimas et al., 2016; Salazar-Gatzimas et al., 2018), for walking speed regulation (Creamer et al., 2018), and for responses to visual looming stimuli (Schilling and Borst, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:26:24.296224Z"
+    },
+    {
+      "id": "fd6cdebd-04e8-40e7-befc-019890bf95e1",
+      "content_id": "813760a7-8101-4ef4-83c1-28d9670fd668",
+      "claim_id": "C56",
+      "claim": "T4 and T5 are required for optomotor turning.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous work demonstrated that T4 and T5 are required for directional neural responses (Schnell et al., 2012), as well as for optomotor turning (Maisak et al., 2013; Salazar-Gatzimas et al., 2016; Salazar-Gatzimas et al., 2018), for walking speed regulation (Creamer et al., 2018), and for responses to visual looming stimuli (Schilling and Borst, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:26:24.296224Z"
+    },
+    {
+      "id": "508b3cf2-fb18-40b0-81fb-6ccac6ffda83",
+      "content_id": "813760a7-8101-4ef4-83c1-28d9670fd668",
+      "claim_id": "C57",
+      "claim": "T4 and T5 are required for walking speed regulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous work demonstrated that T4 and T5 are required for directional neural responses (Schnell et al., 2012), as well as for optomotor turning (Maisak et al., 2013; Salazar-Gatzimas et al., 2016; Salazar-Gatzimas et al., 2018), for walking speed regulation (Creamer et al., 2018), and for responses to visual looming stimuli (Schilling and Borst, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:26:24.296224Z"
+    },
+    {
+      "id": "c021b0a0-45cf-4f78-be58-9689700ac31e",
+      "content_id": "813760a7-8101-4ef4-83c1-28d9670fd668",
+      "claim_id": "C58",
+      "claim": "T4 and T5 are required for responses to visual looming stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous work demonstrated that T4 and T5 are required for directional neural responses (Schnell et al., 2012), as well as for optomotor turning (Maisak et al., 2013; Salazar-Gatzimas et al., 2016; Salazar-Gatzimas et al., 2018), for walking speed regulation (Creamer et al., 2018), and for responses to visual looming stimuli (Schilling and Borst, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:26:24.296224Z"
+    },
+    {
+      "id": "54848b7f-5db2-4255-8d49-b85778d74bb6",
+      "content_id": "813760a7-8101-4ef4-83c1-28d9670fd668",
+      "claim_id": "C59",
+      "claim": "Flies in which T4 and T5 have been silenced display only minimal responses to motion stimuli, with anti-directional turning suppressed along with classical syn-directional turning.",
+      "claim_type": "EXPLICIT",
+      "source": "Flies in which T4 and T5 had been silenced displayed only minimal responses to motion stimuli, with anti-directional turning suppressed along with classical syn-directional turning.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text describing Figure 4a data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:26:24.296224Z"
+    },
+    {
+      "id": "13a64d8c-7b73-4049-a226-bff621ba2b49",
+      "content_id": "813760a7-8101-4ef4-83c1-28d9670fd668",
+      "claim_id": "C60",
+      "claim": "Anti-directional behavior depends critically on signals from T4 and T5.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we conclude that, like optomotor turning behaviors, this anti-directional behavior depends critically on signals from T4 and T5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion from the T4/T5 silencing experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:26:24.296224Z"
+    },
+    {
+      "id": "03b7fe32-7044-4f6d-8be7-c37846a7a332",
+      "content_id": "813760a7-8101-4ef4-83c1-28d9670fd668",
+      "claim_id": "C61",
+      "claim": "HS cells integrate information from front-to-back and back-to-front selective T4 and T5 cells across the fly's visual field.",
+      "claim_type": "EXPLICIT",
+      "source": "However, horizontal system (HS) cells are well-studied postsynaptic partners of T4 and T5 (Joesch et al., 2008; Joesch et al., 2010). These LPTCs integrate information from front-to-back and back-to-front selective T4 and T5 cells across the fly's visual field (Mauss et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:26:24.296224Z"
+    },
+    {
+      "id": "0db8e909-6e63-4dd5-a765-6462e324546f",
+      "content_id": "813760a7-8101-4ef4-83c1-28d9670fd668",
+      "claim_id": "C62",
+      "claim": "HS cells have been implicated in visually evoked head turns.",
+      "claim_type": "EXPLICIT",
+      "source": "HS cells have been implicated in visually evoked head turns (Kim et al., 2017) and body rotations in flight (Haikala et al., 2013) and in maintenance of direction during walking (Fujiwara et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:26:24.296224Z"
+    },
+    {
+      "id": "21dbaf74-a85f-46df-9bca-f256606f6043",
+      "content_id": "813760a7-8101-4ef4-83c1-28d9670fd668",
+      "claim_id": "C63",
+      "claim": "HS cells have been implicated in body rotations in flight.",
+      "claim_type": "EXPLICIT",
+      "source": "HS cells have been implicated in visually evoked head turns (Kim et al., 2017) and body rotations in flight (Haikala et al., 2013) and in maintenance of direction during walking (Fujiwara et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:26:24.296224Z"
+    },
+    {
+      "id": "520b3a9c-20f9-48e9-ad59-bf87a0e5ee49",
+      "content_id": "813760a7-8101-4ef4-83c1-28d9670fd668",
+      "claim_id": "C64",
+      "claim": "HS cells have been implicated in maintenance of direction during walking.",
+      "claim_type": "EXPLICIT",
+      "source": "HS cells have been implicated in visually evoked head turns (Kim et al., 2017) and body rotations in flight (Haikala et al., 2013) and in maintenance of direction during walking (Fujiwara et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:26:24.296224Z"
+    },
+    {
+      "id": "5ba4182b-470f-4a1a-97cd-8c8fb59997ce",
+      "content_id": "813760a7-8101-4ef4-83c1-28d9670fd668",
+      "claim_id": "C65",
+      "claim": "Silencing HS neurons results in small deficits in syn-directional turning behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "When we silenced HS neurons, we found small deficits in syn-directional turning behavior, consistent with prior results, but no deficits in anti-directional turning (Figure 4b), indicating that HS cells synaptic output is not required specifically for anti-directional turning behavior.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 4b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:26:24.296224Z"
+    },
+    {
+      "id": "494d013e-e5b5-432d-ace2-69ca80d986dd",
+      "content_id": "813760a7-8101-4ef4-83c1-28d9670fd668",
+      "claim_id": "C66",
+      "claim": "Silencing HS neurons results in no deficits in anti-directional turning.",
+      "claim_type": "EXPLICIT",
+      "source": "When we silenced HS neurons, we found small deficits in syn-directional turning behavior, consistent with prior results, but no deficits in anti-directional turning (Figure 4b), indicating that HS cells synaptic output is not required specifically for anti-directional turning behavior.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 4b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:26:24.296224Z"
+    },
+    {
+      "id": "ef9b4578-e27d-466f-b81c-6e832cbf41c6",
+      "content_id": "813760a7-8101-4ef4-83c1-28d9670fd668",
+      "claim_id": "C67",
+      "claim": "HS cell synaptic output is not required specifically for anti-directional turning behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "When we silenced HS neurons, we found small deficits in syn-directional turning behavior, consistent with prior results, but no deficits in anti-directional turning (Figure 4b), indicating that HS cells synaptic output is not required specifically for anti-directional turning behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion from the HS silencing experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:26:24.296224Z"
+    },
+    {
+      "id": "89280514-a109-4533-ac1b-0f8dc82f3162",
+      "content_id": "813760a7-8101-4ef4-83c1-28d9670fd668",
+      "claim_id": "C68",
+      "claim": "CH LPTCs are GABAergic.",
+      "claim_type": "EXPLICIT",
+      "source": "These cells are GABAergic and are both pre-synaptic and post-synaptic in the lobula plate (Wei et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:26:24.296224Z"
+    },
+    {
+      "id": "9441d75d-729a-4180-a9aa-92c47b1295c1",
+      "content_id": "813760a7-8101-4ef4-83c1-28d9670fd668",
+      "claim_id": "C69",
+      "claim": "CH LPTCs are both pre-synaptic and post-synaptic in the lobula plate.",
+      "claim_type": "EXPLICIT",
+      "source": "These cells are GABAergic and are both pre-synaptic and post-synaptic in the lobula plate (Wei et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:26:24.296224Z"
+    },
+    {
+      "id": "b2150d47-5291-4e9f-89eb-8bde2d3edaf0",
+      "content_id": "813760a7-8101-4ef4-83c1-28d9670fd668",
+      "claim_id": "C70",
+      "claim": "In blowflies, CH neurons play an inhibitory role in an interconnected LPTC circuit that shapes behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "In blowflies, these neurons play an inhibitory role in an interconnected LPTC circuit that shapes behavior (Borst and Weber, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:26:24.296224Z"
+    },
+    {
+      "id": "f32344b0-ef3e-446b-bfb9-e2e385382fc1",
+      "content_id": "813760a7-8101-4ef4-83c1-28d9670fd668",
+      "claim_id": "C71",
+      "claim": "Silencing CH neurons causes a small increase in syn-directional turning.",
+      "claim_type": "EXPLICIT",
+      "source": "When we silenced CH neurons, we found a small increase in syn-directional turning and a decrease in anti-directional turning (Figure 4c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 4c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:26:24.296224Z"
+    },
+    {
+      "id": "ff2420db-b2f3-4073-962f-5af8ec8758fb",
+      "content_id": "813760a7-8101-4ef4-83c1-28d9670fd668",
+      "claim_id": "C72",
+      "claim": "Silencing CH neurons causes a decrease in anti-directional turning.",
+      "claim_type": "EXPLICIT",
+      "source": "When we silenced CH neurons, we found a small increase in syn-directional turning and a decrease in anti-directional turning (Figure 4c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 4c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:26:24.296224Z"
+    },
+    {
+      "id": "325ec87d-4615-41e2-97ed-fc7bc94365a7",
+      "content_id": "813760a7-8101-4ef4-83c1-28d9670fd668",
+      "claim_id": "C73",
+      "claim": "Silencing CH neurons causes flies to turn more in the direction of motion.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, silencing this neuron type caused the flies to turn more in the direction of motion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a summary of the CH silencing results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:26:24.296224Z"
+    },
+    {
+      "id": "d7660464-6cc1-4f8f-986c-de1c83200462",
+      "content_id": "813760a7-8101-4ef4-83c1-28d9670fd668",
+      "claim_id": "C74",
+      "claim": "CH activity contributes to the anti-directional turning response.",
+      "claim_type": "EXPLICIT",
+      "source": "This result suggests that CH activity contributes to the anti-directional turning response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion from the CH silencing experiments.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:26:24.296224Z"
+    },
+    {
+      "id": "cd941117-9e12-4892-90a2-7a3d6ed456aa",
+      "content_id": "813760a7-8101-4ef4-83c1-28d9670fd668",
+      "claim_id": "C75",
+      "claim": "Neurons beyond HS and CH neurons are likely involved in anti-directional turning, since adapting to back-to-front translational stimuli significantly affects the dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "However, since adapting to back-to-front translational stimuli significantly affected the dynamics of anti-directional turning, it seems likely that other neurons beyond HS and CH neurons are involved, since these two neurons both respond selectively to front-to-back motion (Eckert and Dvorak, 1983; Joesch et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion based on the adaptation experiments and known properties of HS and CH neurons.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:26:24.296224Z"
+    },
+    {
+      "id": "374c91db-719f-427a-bf13-27c1013d9c0c",
+      "content_id": "813760a7-8101-4ef4-83c1-28d9670fd668",
+      "claim_id": "C76",
+      "claim": "HS and CH neurons both respond selectively to front-to-back motion.",
+      "claim_type": "EXPLICIT",
+      "source": "However, since adapting to back-to-front translational stimuli significantly affected the dynamics of anti-directional turning, it seems likely that other neurons beyond HS and CH neurons are involved, since these two neurons both respond selectively to front-to-back motion (Eckert and Dvorak, 1983; Joesch et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:26:24.296224Z"
+    },
+    {
+      "id": "4ae2db08-82c3-4c6e-b24e-917945cf50d1",
+      "content_id": "813760a7-8101-4ef4-83c1-28d9670fd668",
+      "claim_id": "C77",
+      "claim": "T4 cells respond to drifting sinusoidal gratings in their preferred direction with increased calcium activity.",
+      "claim_type": "EXPLICIT",
+      "source": "T4 cells, marked in orange (left), responded to drifting sinusoidal gratings with increased calcium activity (middle).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 5b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:26:24.296224Z"
+    },
+    {
+      "id": "b872dea9-3b96-40e7-9c44-a493b8434e24",
+      "content_id": "813760a7-8101-4ef4-83c1-28d9670fd668",
+      "claim_id": "C78",
+      "claim": "T4 cell calcium activity increases with stimulus contrast.",
+      "claim_type": "EXPLICIT",
+      "source": "When integrated across the stimulus presentation (right), calcium activity increased with stimulus contrast.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text describing Figure 5b and shown in the figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:26:24.296224Z"
+    },
+    {
+      "id": "83a42e8a-06ca-4590-82df-70b23c6bdada",
+      "content_id": "813760a7-8101-4ef4-83c1-28d9670fd668",
+      "claim_id": "C79",
+      "claim": "T5 cell calcium activity increases with stimulus contrast.",
+      "claim_type": "EXPLICIT",
+      "source": "As we increased the contrast of the preferred direction stimuli, we found that both T4 and T5 cells had increased calcium activity throughout the contrast range (Figure 5b, c, right), consistent with prior measurements (Maisak et al., 2013).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text with citation and shown in Figure 5c.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:26:24.296224Z"
+    },
+    {
+      "id": "28e18ca0-3ab5-4ac2-9edb-5f21aa28d94e",
+      "content_id": "813760a7-8101-4ef4-83c1-28d9670fd668",
+      "claim_id": "C80",
+      "claim": "The responses of T4 and T5 cells do not capture the transition from syn-directional to anti-directional turning behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the responses of T4 and T5 cells do not capture the transition from syn-directional to anti-directional turning behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion from the T4/T5 imaging data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:26:24.296224Z"
+    },
+    {
+      "id": "e154219b-67e0-4671-a6d7-6b4a716b5a91",
+      "content_id": "813760a7-8101-4ef4-83c1-28d9670fd668",
+      "claim_id": "C81",
+      "claim": "Calcium signals in HS cells increase at the start of preferred direction stimuli presentation and stay high until the end of the presentation.",
+      "claim_type": "EXPLICIT",
+      "source": "Calcium activity in HS cells followed similar trends to T4 and T5. Calcium signals increased at the start of preferred direction stimuli presentation and stayed high until the end of the presentation (Figure 5d, middle).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 5d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:26:24.296224Z"
+    },
+    {
+      "id": "5a18cd88-f378-4058-a11f-e2cd654df1d1",
+      "content_id": "813760a7-8101-4ef4-83c1-28d9670fd668",
+      "claim_id": "C82",
+      "claim": "Increasing contrast causes stronger calcium responses in HS cells with a mild saturation effect at high contrast.",
+      "claim_type": "EXPLICIT",
+      "source": "Increasing contrast caused stronger calcium responses with a mild saturation effect at high contrast (Figure 5d, right), consistent with prior voltage measurements (Joesch et al., 2008).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text with citation and shown in Figure 5d.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:26:24.296224Z"
+    },
+    {
+      "id": "017b1b4f-d56d-4054-b028-1cf01c742fa7",
+      "content_id": "813760a7-8101-4ef4-83c1-28d9670fd668",
+      "claim_id": "C83",
+      "claim": "The changes in the time course of optomotor behavior at high contrast are not related to changes in HS neuron activity.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that the changes in the time course of optomotor behavior at high contrast are not related to changes in HS neuron activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion from the HS imaging data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:26:24.296224Z"
+    },
+    {
+      "id": "e772a75c-6705-4672-9018-42815ad9443d",
+      "content_id": "813760a7-8101-4ef4-83c1-28d9670fd668",
+      "claim_id": "C84",
+      "claim": "CH cells respond to visual stimuli more quickly than HS cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we measured calcium activity in CH cells. CH cells responded to visual stimuli more quickly than HS cells (Figure 5e, middle), and showed decreased calcium signals in response to null direction stimuli (Figure 5e, right).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 5e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:26:24.296224Z"
+    },
+    {
+      "id": "03aa0dc3-6076-4365-a72d-9e3672316e97",
+      "content_id": "813760a7-8101-4ef4-83c1-28d9670fd668",
+      "claim_id": "C85",
+      "claim": "CH cells show decreased calcium signals in response to null direction stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we measured calcium activity in CH cells. CH cells responded to visual stimuli more quickly than HS cells (Figure 5e, middle), and showed decreased calcium signals in response to null direction stimuli (Figure 5e, right).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 5e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:26:24.296224Z"
+    },
+    {
+      "id": "bdb9e071-cc8d-4d6c-8a87-561ac059b26c",
+      "content_id": "813760a7-8101-4ef4-83c1-28d9670fd668",
+      "claim_id": "C86",
+      "claim": "CH cells show sustained responses to high-contrast stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "However, they also showed sustained responses to high-contrast stimuli, as in T4, T5, and HS neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text describing Figure 5e data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:26:24.296224Z"
+    },
+    {
+      "id": "b9d1e947-bd20-4a71-9fb5-9fa54b9b747a",
+      "content_id": "813760a7-8101-4ef4-83c1-28d9670fd668",
+      "claim_id": "C87",
+      "claim": "The switch from syn- to anti-directional turning behavior is driven by cells downstream of or parallel to T4, T5, HS, and CH neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "These measurements suggest that the switch from syn- to anti-directional turning behavior is driven by cells downstream of or parallel to T4, T5, HS, and CH neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion from the imaging experiments.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:26:24.296224Z"
+    },
+    {
+      "id": "2c953f30-b546-4ef6-8776-5942f216a07c",
+      "content_id": "813760a7-8101-4ef4-83c1-28d9670fd668",
+      "claim_id": "C88",
+      "claim": "As flies age from 0.5 to 4 days post eclosion, the initial syn-directional turning becomes less transient and more sustained, indicative of a weaker anti-directional turning drive.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, as flies aged from 0.5 to 4 days post eclosion (dpe), the initial syn-directional turning became less transient and more sustained, indicative of a weaker anti-directional turning drive.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text describing Figure 6 data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:26:24.296224Z"
+    },
+    {
+      "id": "4522f267-b365-450e-ab44-370850fe29aa",
+      "content_id": "813760a7-8101-4ef4-83c1-28d9670fd668",
+      "claim_id": "C89",
+      "claim": "Dark-reared flies exhibit a stronger deceleration away from syn-directional turning, similar to that found in more juvenile flies.",
+      "claim_type": "EXPLICIT",
+      "source": "Dark-reared flies exhibited a stronger deceleration away from syn-directional turning, similar to that found in more juvenile flies, arguing that visual input may sculpt the balance of syn- and anti-directional turning.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text describing Figure 6 data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:26:24.296224Z"
+    },
+    {
+      "id": "e9f0387c-53ab-440b-8638-5b3af60208de",
+      "content_id": "813760a7-8101-4ef4-83c1-28d9670fd668",
+      "claim_id": "C90",
+      "claim": "Visual input may sculpt the balance of syn- and anti-directional turning.",
+      "claim_type": "EXPLICIT",
+      "source": "Dark-reared flies exhibited a stronger deceleration away from syn-directional turning, similar to that found in more juvenile flies, arguing that visual input may sculpt the balance of syn- and anti-directional turning.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion from the dark-rearing experiments.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:26:24.296224Z"
+    },
+    {
+      "id": "aa65aaad-0973-40e7-89ae-2d927d263404",
+      "content_id": "813760a7-8101-4ef4-83c1-28d9670fd668",
+      "claim_id": "C91",
+      "claim": "In D. yakuba, anti-directional responses are stable across the first 4 days of adulthood.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we examined whether optomotor response plasticity could be detected in D. yakuba. However, in this species, anti-directional responses were stable across the first 4 days of adulthood, arguing that the role of visual experience in shaping these responses is itself evolutionarily tuned in drosophilids (Figure 6\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:26:24.296224Z"
+    },
+    {
+      "id": "801404d4-9f1b-4699-a1d5-831d41582c86",
+      "content_id": "813760a7-8101-4ef4-83c1-28d9670fd668",
+      "claim_id": "C92",
+      "claim": "The role of visual experience in shaping optomotor responses is evolutionarily tuned in drosophilids.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we examined whether optomotor response plasticity could be detected in D. yakuba. However, in this species, anti-directional responses were stable across the first 4 days of adulthood, arguing that the role of visual experience in shaping these responses is itself evolutionarily tuned in drosophilids (Figure 6\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion from comparing D. melanogaster and D. yakuba developmental plasticity.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:26:24.296224Z"
+    },
+    {
+      "id": "5dc232b3-511b-4078-9d9f-b9cc775077ca",
+      "content_id": "813760a7-8101-4ef4-83c1-28d9670fd668",
+      "claim_id": "C93",
+      "claim": "The anti-directional turning behavior characterized in this study is distinct from previous reports of flies turning in the direction opposite to stimulus motion.",
+      "claim_type": "EXPLICIT",
+      "source": "The anti-directional turning behavior we have characterized is distinct from previous reports of flies turning in the direction opposite to the stimulus motion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion in the Discussion section.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:26:24.296224Z"
+    },
+    {
+      "id": "517abeaf-cde8-4333-850b-8879f69867b2",
+      "content_id": "813760a7-8101-4ef4-83c1-28d9670fd668",
+      "claim_id": "C94",
+      "claim": "Aliasing cannot explain the anti-directional turning results because the stimulus that maximally activates anti-directional behavior has a spatial frequency well below the Nyquist frequency of the fly eye.",
+      "claim_type": "EXPLICIT",
+      "source": "Aliasing cannot explain our results because the stimulus that maximally activates anti-directional behavior has a spatial frequency of 1/60 cycles per degree, well below the Nyquist frequency of the fly eye (~1/10 cycles per degree) (G\u00f6tz, 1970; Buchner, 1976) and below reports of higher acuity vision in flies (Juusola et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an argument with citations to prior work.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:26:24.296224Z"
+    },
+    {
+      "id": "bac95c99-38e7-4502-93f6-1c8a4db2f25e",
+      "content_id": "813760a7-8101-4ef4-83c1-28d9670fd668",
+      "claim_id": "C95",
+      "claim": "The Nyquist frequency of the fly eye is approximately 1/10 cycles per degree.",
+      "claim_type": "EXPLICIT",
+      "source": "Aliasing cannot explain our results because the stimulus that maximally activates anti-directional behavior has a spatial frequency of 1/60 cycles per degree, well below the Nyquist frequency of the fly eye (~1/10 cycles per degree) (G\u00f6tz, 1970; Buchner, 1976) and below reports of higher acuity vision in flies (Juusola et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:26:24.296224Z"
+    },
+    {
+      "id": "bea13595-7a6e-4e10-afe7-6015403fc9e2",
+      "content_id": "813760a7-8101-4ef4-83c1-28d9670fd668",
+      "claim_id": "C96",
+      "claim": "The anti-directional turning behavior is distinct from previously observed stimulus-density-dependent behavioral reversals.",
+      "claim_type": "EXPLICIT",
+      "source": "Fourth, the behavior observed here also appears to be distinct from previously observed stimulus-density-dependent behavioral reversals (Katsov and Clandinin, 2008). Those previously reported behaviors showed immediate reversals, but it took ~1\u20132 s for flies in our paradigm to switch between optomotor and anti-directional behaviors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a comparison to prior work with citation.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:26:24.296224Z"
+    },
+    {
+      "id": "ae3dace2-fa7c-4c2c-b843-12addec65a0b",
+      "content_id": "813760a7-8101-4ef4-83c1-28d9670fd668",
+      "claim_id": "C97",
+      "claim": "The anti-directional turning observed is unlikely to be due to adaptation to contrast alone.",
+      "claim_type": "EXPLICIT",
+      "source": "In mammalian retina, the direction preference of cells can switch because of upstream circuit adaptation (Rivlin-Etzion et al., 2012; Vlasits et al., 2014). However, we do not believe the anti-directional turning we observe has similar causes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion with citations to prior work.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:26:24.296224Z"
+    },
+    {
+      "id": "0341b62c-efec-48d3-8a73-66a8d6945f78",
+      "content_id": "813760a7-8101-4ef4-83c1-28d9670fd668",
+      "claim_id": "C98",
+      "claim": "The phenomenology of anti-directional turning argues that contrast adaptation is incomplete or heterogeneous among neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the phenomenology of the anti-directional turning also argues that the contrast adaptation is incomplete or heterogeneous among neurons, since contrast 1 and contrast 0.25 stimuli result in such different behaviors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an inference from the behavioral data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:26:24.296224Z"
+    },
+    {
+      "id": "53926503-6a5a-4f03-be45-f322b4377b37",
+      "content_id": "813760a7-8101-4ef4-83c1-28d9670fd668",
+      "claim_id": "C99",
+      "claim": "Display brightness is a major cause of differences between this study's observations and prior studies that measured sustained optomotor turning in response to high-contrast stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "Two major causes of this difference are likely display brightness and rearing conditions. Some experiments employ displays with mean luminances less than 5 cd/m2 (Rister et al., 2007; Seelig et al., 2010; Strother et al., 2017). Our screens, with a mean luminance of 100 cd/m2, are substantially brighter, but not especially bright when compared to natural scenes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an explanation with citations to prior work.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:26:24.296224Z"
+    },
+    {
+      "id": "00f7a69a-5175-4be5-8296-61e80f1fc27b",
+      "content_id": "813760a7-8101-4ef4-83c1-28d9670fd668",
+      "claim_id": "C100",
+      "claim": "Rearing conditions are a major cause of differences between this study's observations and prior studies that measured sustained optomotor turning in response to high-contrast stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "Two major causes of this difference are likely display brightness and rearing conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an explanation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:26:24.296224Z"
+    },
+    {
+      "id": "ab1a7fb9-e8fd-48d7-bf0f-13fce186b1e9",
+      "content_id": "813760a7-8101-4ef4-83c1-28d9670fd668",
+      "claim_id": "C101",
+      "claim": "In daytime natural scenes, foliage and the ground have average luminances of 200\u2013500 cd/m2.",
+      "claim_type": "EXPLICIT",
+      "source": "In daytime natural scenes, foliage and the ground have average luminances of 200\u2013500 cd/m2 and the sky has an average luminance of around 4000 cd/m2 (Frazor and Geisler, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:26:24.296224Z"
+    },
+    {
+      "id": "ee8cfcec-9a1c-4b62-9dd6-e0615af30346",
+      "content_id": "813760a7-8101-4ef4-83c1-28d9670fd668",
+      "claim_id": "C102",
+      "claim": "In daytime natural scenes, the sky has an average luminance of around 4000 cd/m2.",
+      "claim_type": "EXPLICIT",
+      "source": "In daytime natural scenes, foliage and the ground have average luminances of 200\u2013500 cd/m2 and the sky has an average luminance of around 4000 cd/m2 (Frazor and Geisler, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:26:24.296224Z"
+    },
+    {
+      "id": "93026aa8-684a-4a0c-8a8a-24a332389745",
+      "content_id": "813760a7-8101-4ef4-83c1-28d9670fd668",
+      "claim_id": "C103",
+      "claim": "Temperature has known developmental effects on neural connectivity.",
+      "claim_type": "EXPLICIT",
+      "source": "Temperature has known developmental effects on neural connectivity (Kiral et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:26:24.296224Z"
+    },
+    {
+      "id": "fb3b1b24-eb4c-4ca2-92f3-41ef62e58d29",
+      "content_id": "813760a7-8101-4ef4-83c1-28d9670fd668",
+      "claim_id": "C104",
+      "claim": "The temporal tuning of anti-directional behavior (0.5\u20134 Hz) matches the tuning of T4, T5, and HS neurons as measured via calcium imaging or electrophysiology.",
+      "claim_type": "EXPLICIT",
+      "source": "Optomotor behavior is tuned to visual stimuli in the range of 8\u201322 Hz (Tammero et al., 2004; Tuthill et al., 2013; Creamer et al., 2018; Strother et al., 2018), while anti-directional behavior is tuned to stimuli in the range of 0.5\u20134 Hz (Figure 2). Intriguingly, this slower tuning matches the tuning of T4, T5, and HS neurons, as measured via calcium imaging or electrophysiology (Joesch et al., 2008; Chiappe et al., 2010; Maisak et al., 2013; Creamer et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations to prior work and reference to Figure 2.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:26:24.296224Z"
+    },
+    {
+      "id": "107d392c-867e-4310-8824-03c2125c5020",
+      "content_id": "813760a7-8101-4ef4-83c1-28d9670fd668",
+      "claim_id": "C105",
+      "claim": "Previous studies have suggested that the difference in tuning between behavior and imaging are due to octopamine that is released during behavior but not necessarily during imaging.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies have suggested that the difference in tuning between behavior and imaging are due to octopamine that is released during behavior but not necessarily released during imaging (Chiappe et al., 2010; Arenz et al., 2017; Strother et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:26:24.296224Z"
+    },
+    {
+      "id": "283a3fd6-b8ea-4efd-9e00-4c309daed935",
+      "content_id": "813760a7-8101-4ef4-83c1-28d9670fd668",
+      "claim_id": "C106",
+      "claim": "T4 and T5 are required for behaviors with very different temporal tuning.",
+      "claim_type": "EXPLICIT",
+      "source": "In this work, we demonstrate a motion-related behavior tuned to low frequencies, comparable to those in neural measurements, during behavior that requires T4 and T5 neurons. Overall, this suggests that T4 and T5 are required for behaviors with very different temporal tuning, which in turn suggests that the temporal tuning of behavior is not determined solely by T4 and T5 tuning, but by other, parallel pathways as well.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion from the findings.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:26:24.296224Z"
+    },
+    {
+      "id": "b785fc6b-1c92-4896-a395-b0f5e3065117",
+      "content_id": "813760a7-8101-4ef4-83c1-28d9670fd668",
+      "claim_id": "C107",
+      "claim": "The temporal tuning of behavior is not determined solely by T4 and T5 tuning, but by other, parallel pathways as well.",
+      "claim_type": "EXPLICIT",
+      "source": "In this work, we demonstrate a motion-related behavior tuned to low frequencies, comparable to those in neural measurements, during behavior that requires T4 and T5 neurons. Overall, this suggests that T4 and T5 are required for behaviors with very different temporal tuning, which in turn suggests that the temporal tuning of behavior is not determined solely by T4 and T5 tuning, but by other, parallel pathways as well.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion from the findings.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:26:24.296224Z"
+    },
+    {
+      "id": "ebf94eb0-6a1e-4974-b071-deee9b6dd090",
+      "content_id": "813760a7-8101-4ef4-83c1-28d9670fd668",
+      "claim_id": "C108",
+      "claim": "The existence of turning in the direction opposite the stimulus motion requires a circuit that opposes the syn-directional optomotor turning response.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the existence of turning in the direction opposite the stimulus motion in D. melanogaster and in D. yakuba requires a different explanation. These experiments reveal that over long timescales, a circuit that opposes the syn-directional optomotor turning response can dominate the behavioral response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion from the findings.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:26:24.296224Z"
+    },
+    {
+      "id": "e439eca4-fe79-4d7e-aa49-82a876eba665",
+      "content_id": "813760a7-8101-4ef4-83c1-28d9670fd668",
+      "claim_id": "C109",
+      "claim": "The circuit that opposes syn-directional optomotor turning is not simply scaling the magnitude of turning responses, but must be implementing an antagonistic, subtractive operation.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, this circuit is not simply scaling the magnitude of turning responses, but rather must be implementing an antagonistic, subtractive operation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion from the findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:26:24.296224Z"
+    },
+    {
+      "id": "766e96c3-250e-4b79-a5a1-3e49fec3e7f2",
+      "content_id": "813760a7-8101-4ef4-83c1-28d9670fd668",
+      "claim_id": "C110",
+      "claim": "The time constant of the autocorrelation of fly turning in free walking behavior is around 100 ms.",
+      "claim_type": "EXPLICIT",
+      "source": "Measurements of free walking behavior have shown that the time constant of the autocorrelation of fly turning is around 100 ms (Katsov et al., 2017; DeAngelis et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:26:24.296224Z"
+    },
+    {
+      "id": "197887a4-e57c-448b-891d-3d62586505e3",
+      "content_id": "813760a7-8101-4ef4-83c1-28d9670fd668",
+      "claim_id": "C111",
+      "claim": "Opposing syn- and anti-directional turning circuits could be used to balance and tune the strength of turning responses on short timescales.",
+      "claim_type": "EXPLICIT",
+      "source": "Opposing syn- and anti-directional turning circuits could be used to balance and tune the strength of turning responses on short timescales, while the anti-directional turning is revealed on longer timescales.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a speculation about circuit function.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:26:24.296224Z"
+    },
+    {
+      "id": "80385c44-925f-460f-acf4-f06f59898c6d",
+      "content_id": "813760a7-8101-4ef4-83c1-28d9670fd668",
+      "claim_id": "C112",
+      "claim": "Subtractive processing predominates in computing motion signals in the visual systems of insects.",
+      "claim_type": "EXPLICIT",
+      "source": "This sort of subtractive processing predominates in computing motion signals in the visual systems of insects (Mauss et al., 2015) and mammals (Rust et al., 2006), and could also explain the existence of syn- and anti-directional turning behaviors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:26:24.296224Z"
+    },
+    {
+      "id": "33ddaebc-ee9b-49a9-9fa8-30f96bd74f4b",
+      "content_id": "813760a7-8101-4ef4-83c1-28d9670fd668",
+      "claim_id": "C113",
+      "claim": "Subtractive processing predominates in computing motion signals in the visual systems of mammals.",
+      "claim_type": "EXPLICIT",
+      "source": "This sort of subtractive processing predominates in computing motion signals in the visual systems of insects (Mauss et al., 2015) and mammals (Rust et al., 2006), and could also explain the existence of syn- and anti-directional turning behaviors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:26:24.296224Z"
+    },
+    {
+      "id": "91fda8dc-abc4-4b4a-81cf-20ea0fda6c21",
+      "content_id": "813760a7-8101-4ef4-83c1-28d9670fd668",
+      "claim_id": "C114",
+      "claim": "Turning in response to rotational stimuli is likely driven by circuits with opposing influences on turning direction.",
+      "claim_type": "EXPLICIT",
+      "source": "This behavior suggests that turning in response to rotational stimuli is not a simple reflex. Instead, the turning is likely driven by circuits with opposing influences on turning direction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion from the overall findings.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:26:24.296224Z"
+    },
+    {
+      "id": "0ed54383-1992-42f4-9239-d0060e2b0dd7",
+      "content_id": "813760a7-8101-4ef4-83c1-28d9670fd668",
+      "claim_id": "C115",
+      "claim": "The circuits driving turning appear to differentially adapt to the direction and contrast of the stimulus.",
+      "claim_type": "EXPLICIT",
+      "source": "These circuits appear to differentially adapt to the direction and contrast of the stimulus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion from the adaptation experiments.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:26:24.296224Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "ef088cd5-6834-4e57-a370-8bea6af1ca0f",
+      "content_id": "813760a7-8101-4ef4-83c1-28d9670fd668",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "D. melanogaster and D. yakuba exhibit anti-directional turning behavior in response to high-contrast stimuli, initially turning with the stimulus for ~1 s before reversing to turn against it. This behavior is observed across different strains and laboratories.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C2, C25, and C30 are supported by behavioral data from multiple laboratories (Figure 1b, 1d, 1e) showing the transition from syn-directional to anti-directional turning. The behavior is reproducible across species and strains, though with varying magnitudes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:26:24.296224Z"
+    },
+    {
+      "id": "fd616e76-da37-4069-87a4-bd130e07ef83",
+      "content_id": "813760a7-8101-4ef4-83c1-28d9670fd668",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Anti-directional turning is maximally evoked by stimuli with specific spatiotemporal properties: 1 Hz temporal frequency and 45\u00b0 wavelength, distinct from the optimal parameters for early syn-directional turning (8 Hz, 20\u00b0 wavelength).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C36-C40 are supported by systematic spatiotemporal frequency sweeps (Figure 2a, 2b) showing distinct tuning for early versus late responses. The data clearly demonstrate different optimal stimulus parameters for the two behaviors.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:26:24.296224Z"
+    },
+    {
+      "id": "1f9e4e9b-3094-4c97-8678-7ffe4590c60b",
+      "content_id": "813760a7-8101-4ef4-83c1-28d9670fd668",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The transition from syn-directional to anti-directional turning depends on stimulus contrast, with early responses increasing with contrast up to 0.5, while sustained responses show syn-directional turning at low contrast (0-0.25), decreasing turning at intermediate contrast (0.25-0.8), and anti-directional turning above 0.8 contrast.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C29 are supported by contrast sweep data (Figure 1c) showing the biphasic relationship between contrast and turning behavior at different timescales. The data clearly demonstrate the contrast-dependent transition.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:26:24.296224Z"
+    },
+    {
+      "id": "a4527f50-1349-4619-a09d-c37fa01e4d95",
+      "content_id": "813760a7-8101-4ef4-83c1-28d9670fd668",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Anti-directional turning is strongly dependent on display brightness, with the behavior eliminated at mean luminances below 1 cd/m\u00b2, and flies showing persistent syn-directional turning at 0.1 cd/m\u00b2.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C33 are supported by brightness sweep experiments (Figure 1\u2014figure supplement 2a) showing clear dependence on luminance. However, the authors note potential confounds from ambient light affecting effective contrast at low luminances.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:26:24.296224Z"
+    },
+    {
+      "id": "c285042a-05bc-42f3-9270-57b20b797ad9",
+      "content_id": "813760a7-8101-4ef4-83c1-28d9670fd668",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Rearing temperature and fly age affect anti-directional turning, with flies reared at 25\u00b0C or tested at 2 weeks old showing reduced overall turning and eliminated anti-directional behavior.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C35 are supported by data in Figure 1\u2014figure supplement 2b showing effects of temperature and age. However, the mechanisms underlying these effects are not explored, limiting mechanistic interpretation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:26:24.296224Z"
+    },
+    {
+      "id": "abceaca4-d59f-4876-a869-40c6cd35ec61",
+      "content_id": "813760a7-8101-4ef4-83c1-28d9670fd668",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Switching from high to low contrast causes flies to quickly revert to syn-directional turning, demonstrating no long-term switch in directional preference occurs during high-contrast stimulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C43 are supported by contrast-switching experiments (Figure 2c) showing rapid behavioral reversal. This demonstrates the behavior is dynamically controlled rather than representing a persistent state change.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:26:24.296224Z"
+    },
+    {
+      "id": "df8eba08-a1cb-4d3a-ad84-32acdf9545bc",
+      "content_id": "813760a7-8101-4ef4-83c1-28d9670fd668",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Anti-directional turning does not depend on periodic stimuli, as random binary contrast patterns produce similar behavioral responses to sinusoidal gratings.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C44 is supported by data in Figure 2d showing comparable responses to random patterns. This rules out explanations based on specific spatial periodicities.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:26:24.296224Z"
+    },
+    {
+      "id": "06915af2-ef4f-4cd6-a446-eb678fe38e7a",
+      "content_id": "813760a7-8101-4ef4-83c1-28d9670fd668",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Anti-directional turning results from adaptation to back-to-front motion. Adapting with back-to-front stimuli eliminates the initial syn-directional response, while front-to-back adaptation has minimal effect.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C47 are supported by directional adaptation experiments (Figure 2e) showing asymmetric effects of adaptation direction. This provides key mechanistic insight into the behavior's dependence on motion direction history.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:26:24.296224Z"
+    },
+    {
+      "id": "e094654e-d266-4899-97b8-ac37dd168820",
+      "content_id": "813760a7-8101-4ef4-83c1-28d9670fd668",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Anti-directional turning is elicited by stimuli presented in the front visual field (front 90\u00b0 or 45\u00b0 in front of midline) but not by stimuli behind the midline, distinguishing it from previously reported posterior-dependent reverse turning.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C51 are supported by spatial localization experiments (Figure 3b, 3c) showing clear dependence on anterior stimulus location. This effectively distinguishes the behavior from prior reports.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:26:24.296224Z"
+    },
+    {
+      "id": "028aa7c1-0ffe-45f8-8a1f-ee6389597c84",
+      "content_id": "813760a7-8101-4ef4-83c1-28d9670fd668",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Anti-directional turning consists of sustained turns rather than brief saccades, as demonstrated by prolonged opposite-direction turning in individual trials and negative turning indices that discount high-velocity movements.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C54 are supported by single-trial analysis (Figure 3d-f) and turning index calculations that separate sustained turning from saccadic movements. The analysis appropriately distinguishes between these behavioral modes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:26:24.296224Z"
+    },
+    {
+      "id": "d90df3f0-2865-4a93-ae33-cf433da095b2",
+      "content_id": "813760a7-8101-4ef4-83c1-28d9670fd668",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Anti-directional turning requires T4 and T5 motion-detecting neurons, as silencing these neurons eliminates both syn-directional and anti-directional turning responses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C59, C60 are supported by genetic silencing experiments (Figure 4a) showing loss of both behaviors when T4/T5 are inactivated. Statistical significance is demonstrated (p<0.001) with appropriate controls.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:26:24.296224Z"
+    },
+    {
+      "id": "918a3e91-84e7-4ad2-8266-2509fa4d7426",
+      "content_id": "813760a7-8101-4ef4-83c1-28d9670fd668",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "CH neurons contribute to anti-directional turning, as silencing these cells increases syn-directional turning and decreases anti-directional turning.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C71-C74 are supported by CH silencing experiments (Figure 4c) showing statistically significant effects (p<0.001 for anti-directional, p<0.05 for syn-directional). However, the effect is partial, suggesting CH neurons are not solely responsible.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:26:24.296224Z"
+    },
+    {
+      "id": "03c0dddf-23d5-4a1e-a13f-82cc5e44f186",
+      "content_id": "813760a7-8101-4ef4-83c1-28d9670fd668",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "HS neurons are not specifically required for anti-directional turning, as silencing these cells produces small deficits in syn-directional turning but no deficits in anti-directional behavior.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C67 are supported by HS silencing experiments (Figure 4b) with appropriate statistical tests. The lack of effect on anti-directional turning is clearly demonstrated, though small effects on syn-directional turning are observed.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:26:24.296224Z"
+    },
+    {
+      "id": "2ca78f89-42ca-4f65-bec8-f978e639df7d",
+      "content_id": "813760a7-8101-4ef4-83c1-28d9670fd668",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Neurons beyond HS and CH are likely involved in anti-directional turning, since back-to-front adaptation affects the behavior but both HS and CH respond selectively to front-to-back motion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C75-C76 present a logical inference based on the mismatch between adaptation requirements (C46-C47) and known directional preferences of HS/CH neurons. The reasoning is sound given the cited literature on these neurons' properties.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:26:24.296224Z"
+    },
+    {
+      "id": "b50e55e0-0010-4bde-b249-a80bd81b1674",
+      "content_id": "813760a7-8101-4ef4-83c1-28d9670fd668",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "T4, T5, HS, and CH neurons all show sustained responses to high-contrast stimuli without reversal dynamics, indicating the switch from syn- to anti-directional turning emerges downstream of or parallel to the lobula plate.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C7, C77-C87 are supported by calcium imaging data (Figure 5) showing monotonic increases in neural activity with contrast across all measured cell types. The absence of reversal dynamics in these neurons strongly supports the conclusion that the behavioral switch occurs downstream.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:26:24.296224Z"
+    },
+    {
+      "id": "3ebb56e5-07f7-4a44-a063-0361bf1b2da7",
+      "content_id": "813760a7-8101-4ef4-83c1-28d9670fd668",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Anti-directional turning declines with age in D. melanogaster, with flies showing progressively more sustained syn-directional turning from 0.5 to 8 days post-eclosion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8 and C88 are supported by developmental time-course experiments (Figure 6a-d) showing clear age-dependent changes. Data from both laboratories show consistent trends, though absolute magnitudes differ.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:26:24.296224Z"
+    },
+    {
+      "id": "9f4d947f-3074-4116-b167-24ae64aef4b3",
+      "content_id": "813760a7-8101-4ef4-83c1-28d9670fd668",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Visual experience during development modulates anti-directional turning, as dark-reared flies maintain stronger anti-directional responses similar to younger flies, suggesting visual input sculpts the balance between syn- and anti-directional circuits.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9, C89, C90 are supported by dark-rearing experiments (Figure 6) showing that visual deprivation preserves juvenile-like responses. This demonstrates experience-dependent plasticity, though the specific mechanisms remain unknown.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:26:24.296224Z"
+    },
+    {
+      "id": "083b37ba-bf26-4a79-b980-d047e1044134",
+      "content_id": "813760a7-8101-4ef4-83c1-28d9670fd668",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "D. yakuba shows stable anti-directional responses across early adulthood (0.5-4 days), suggesting the role of visual experience in shaping these responses is evolutionarily tuned across drosophilids.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C91-C92 are supported by D. yakuba developmental data (Figure 6\u2014figure supplement 1) showing species differences in plasticity. However, the evolutionary interpretation is speculative based on only two species.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:26:24.296224Z"
+    },
+    {
+      "id": "21eec872-54a5-4bfa-9dc4-b51c8b212023",
+      "content_id": "813760a7-8101-4ef4-83c1-28d9670fd668",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "The anti-directional turning behavior is distinct from previously reported opposite-direction behaviors: it cannot be explained by aliasing (spatial frequency well below Nyquist limit), posterior stimulus location, or immediate stimulus-density-dependent reversals.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C93-C96 present logical arguments distinguishing this behavior from prior reports, supported by spatial frequency analysis, spatial localization data (C48-C50), and temporal dynamics (1-2 s transition time). The reasoning is sound and well-supported.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:26:24.296224Z"
+    },
+    {
+      "id": "e7375744-5b19-4365-8960-17f025be412d",
+      "content_id": "813760a7-8101-4ef4-83c1-28d9670fd668",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Anti-directional turning is unlikely due to simple contrast adaptation alone, as the behavior depends on motion direction during adaptation and shows different responses to contrast 1.0 versus 0.25 stimuli.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C97-C98 are supported by the directional adaptation experiments (C45-C47) and contrast-switching data (C42-C43). The argument effectively rules out simple contrast adaptation as the sole mechanism.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:26:24.296224Z"
+    },
+    {
+      "id": "e81c5312-2cc7-4eb5-9b88-52714e4a23cc",
+      "content_id": "813760a7-8101-4ef4-83c1-28d9670fd668",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "Display brightness and rearing conditions likely explain differences between this study and prior work showing sustained optomotor turning at high contrast, with the 100 cd/m\u00b2 screens used here being more comparable to natural scene luminances (200-4000 cd/m\u00b2) than the <5 cd/m\u00b2 displays used previously.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C99-C103 present a reasonable explanation for discrepancies with prior literature, supported by the brightness dependence data (C31-C33) and cited natural scene measurements. However, other uncontrolled variables between studies may also contribute.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:26:24.296224Z"
+    },
+    {
+      "id": "4ce5ffe3-3b83-4b4d-8d37-577ca7967a9e",
+      "content_id": "813760a7-8101-4ef4-83c1-28d9670fd668",
+      "result_id": "R22",
+      "result_category": "llm",
+      "result": "The temporal tuning of anti-directional behavior (0.5-4 Hz) matches the tuning of T4, T5, and HS neurons measured via imaging, suggesting T4/T5 are required for behaviors with different temporal tuning and that behavioral tuning is not determined solely by these neurons but also by parallel pathways.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C104-C107 are supported by comparing behavioral tuning (Figure 2) with cited neural measurements. The inference about parallel pathways is logical given T4/T5 are required for both fast and slow behaviors, though direct evidence for the parallel pathways is not provided.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:26:24.296224Z"
+    },
+    {
+      "id": "16d71276-044d-413f-b77b-5b7c9caf025a",
+      "content_id": "813760a7-8101-4ef4-83c1-28d9670fd668",
+      "result_id": "R23",
+      "result_category": "llm",
+      "result": "Anti-directional turning reveals circuits that implement antagonistic, subtractive operations opposing syn-directional turning, with these circuits differentially adapting to stimulus direction and contrast rather than simply scaling response magnitude.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C108-C109, C114-C115 present mechanistic interpretations supported by the existence of true opposite-direction turning (not just reduced turning), directional adaptation effects (C45-C47), and contrast dependence (C26-C29). The subtractive interpretation is reasonable given the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:26:24.296224Z"
+    },
+    {
+      "id": "d7337c87-95cf-44d6-9097-acf16c1bf8f0",
+      "content_id": "813760a7-8101-4ef4-83c1-28d9670fd668",
+      "result_id": "R24",
+      "result_category": "llm",
+      "result": "Drosophila optomotor turning contains rich, stimulus-dependent dynamics inconsistent with simple reflexive stabilization responses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C10 is supported by the totality of findings showing complex spatiotemporal tuning, contrast dependence, adaptation effects, and developmental plasticity. This represents the overarching conclusion of the manuscript.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:26:24.296224Z"
+    },
+    {
+      "id": "b0654ed0-0c16-424c-9e4f-10b8614e1216",
+      "content_id": "813760a7-8101-4ef4-83c1-28d9670fd668",
+      "result_id": "R25",
+      "result_category": "llm",
+      "result": "The stimuli eliciting maximal anti-directional turning appear similar to those maximally activating T4/T5 neurons in head-fixed preparations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C41 notes a similarity between optimal behavioral and neural stimuli based on cited literature, but no direct comparison is made in this study. The claim is observational and the significance is unclear without quantitative comparison.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:26:24.296224Z"
+    },
+    {
+      "id": "bd5c463a-8748-4f2f-8d22-2e75227a089a",
+      "content_id": "813760a7-8101-4ef4-83c1-28d9670fd668",
+      "result_id": "R26",
+      "result_category": "llm",
+      "result": "Opposing syn- and anti-directional circuits could balance turning responses on short timescales while anti-directional turning is revealed on longer timescales.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C111 is explicitly speculative about circuit function. While consistent with the data, no direct evidence is provided for this specific functional role. This represents a hypothesis for future testing.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:26:24.296224Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "59392462-a046-4d9a-9b9a-1aa4cf5107ab",
+      "result_id": "ef088cd5-6834-4e57-a370-8bea6af1ca0f"
+    },
+    {
+      "claim_id": "d5321f75-2836-4be3-bcfd-982a71a29452",
+      "result_id": "ef088cd5-6834-4e57-a370-8bea6af1ca0f"
+    },
+    {
+      "claim_id": "399bccd9-7551-41f8-aab7-96d4f2c7eeb9",
+      "result_id": "ef088cd5-6834-4e57-a370-8bea6af1ca0f"
+    },
+    {
+      "claim_id": "34f57a1d-20a5-43d1-8a23-7e3a916a3cb4",
+      "result_id": "ef088cd5-6834-4e57-a370-8bea6af1ca0f"
+    },
+    {
+      "claim_id": "87a0da30-248b-4608-86ca-e3e77c0b99c7",
+      "result_id": "fd616e76-da37-4069-87a4-bd130e07ef83"
+    },
+    {
+      "claim_id": "d3bf0946-a95c-4f16-af52-0b3e9bfba5ab",
+      "result_id": "fd616e76-da37-4069-87a4-bd130e07ef83"
+    },
+    {
+      "claim_id": "f63954f1-78c0-464d-8cfd-6e4ad2ba7d1d",
+      "result_id": "fd616e76-da37-4069-87a4-bd130e07ef83"
+    },
+    {
+      "claim_id": "f0894476-b38a-48ac-8866-80d753f8f9fa",
+      "result_id": "fd616e76-da37-4069-87a4-bd130e07ef83"
+    },
+    {
+      "claim_id": "c258fdf5-67a5-4479-831d-f4ca26e7dabe",
+      "result_id": "fd616e76-da37-4069-87a4-bd130e07ef83"
+    },
+    {
+      "claim_id": "0208d85e-279b-40f4-8a44-a16f029538ae",
+      "result_id": "fd616e76-da37-4069-87a4-bd130e07ef83"
+    },
+    {
+      "claim_id": "218e0a1c-bffe-4220-aef6-768b73fba324",
+      "result_id": "1f9e4e9b-3094-4c97-8678-7ffe4590c60b"
+    },
+    {
+      "claim_id": "ee76ba2c-f232-46ab-b55b-6761a9a1bb2b",
+      "result_id": "1f9e4e9b-3094-4c97-8678-7ffe4590c60b"
+    },
+    {
+      "claim_id": "3e3d4b9f-fb87-4b13-923d-9eddb0df17fb",
+      "result_id": "1f9e4e9b-3094-4c97-8678-7ffe4590c60b"
+    },
+    {
+      "claim_id": "99a7166e-e632-4abe-b6c3-27519cf6f94e",
+      "result_id": "1f9e4e9b-3094-4c97-8678-7ffe4590c60b"
+    },
+    {
+      "claim_id": "9da37c00-f550-4219-9b33-3d73e03046b1",
+      "result_id": "a4527f50-1349-4619-a09d-c37fa01e4d95"
+    },
+    {
+      "claim_id": "53bbd685-c00b-4193-9603-f7712bf36280",
+      "result_id": "a4527f50-1349-4619-a09d-c37fa01e4d95"
+    },
+    {
+      "claim_id": "82ad6d54-13cd-46b2-9d74-dd97b3b2ea3f",
+      "result_id": "a4527f50-1349-4619-a09d-c37fa01e4d95"
+    },
+    {
+      "claim_id": "b0aa4b1c-dc92-4b75-b584-0e7b4017c811",
+      "result_id": "c285042a-05bc-42f3-9270-57b20b797ad9"
+    },
+    {
+      "claim_id": "535df568-0400-4b2a-8406-0516542fcced",
+      "result_id": "c285042a-05bc-42f3-9270-57b20b797ad9"
+    },
+    {
+      "claim_id": "4e268977-aa26-41be-baf6-2a2b0a839f60",
+      "result_id": "abceaca4-d59f-4876-a869-40c6cd35ec61"
+    },
+    {
+      "claim_id": "82325c33-8511-421f-b571-2fb206fe0ca0",
+      "result_id": "abceaca4-d59f-4876-a869-40c6cd35ec61"
+    },
+    {
+      "claim_id": "a11d5bb8-5d56-4bef-be58-e4b464af75fc",
+      "result_id": "df8eba08-a1cb-4d3a-ad84-32acdf9545bc"
+    },
+    {
+      "claim_id": "d591e5f5-40e5-4245-b8df-08c36fc5a1b3",
+      "result_id": "06915af2-ef4f-4cd6-a446-eb678fe38e7a"
+    },
+    {
+      "claim_id": "08ec0e88-3a2b-4eb1-8f85-80174aaf36cb",
+      "result_id": "06915af2-ef4f-4cd6-a446-eb678fe38e7a"
+    },
+    {
+      "claim_id": "0b4954dd-40a7-4805-8afe-79ecb1605197",
+      "result_id": "06915af2-ef4f-4cd6-a446-eb678fe38e7a"
+    },
+    {
+      "claim_id": "2576efa3-7375-4a97-8651-125500a80a66",
+      "result_id": "e094654e-d266-4899-97b8-ac37dd168820"
+    },
+    {
+      "claim_id": "456f7c5b-1b66-49f4-9ad4-b1cb6bacfbbf",
+      "result_id": "e094654e-d266-4899-97b8-ac37dd168820"
+    },
+    {
+      "claim_id": "f3bd8767-5fb2-45d5-9075-97d5e66226a9",
+      "result_id": "e094654e-d266-4899-97b8-ac37dd168820"
+    },
+    {
+      "claim_id": "ed17c74a-290a-4a8c-be05-76af95229378",
+      "result_id": "e094654e-d266-4899-97b8-ac37dd168820"
+    },
+    {
+      "claim_id": "b7e38798-faa0-4b48-87a6-9725890d10a7",
+      "result_id": "028aa7c1-0ffe-45f8-8a1f-ee6389597c84"
+    },
+    {
+      "claim_id": "b4695b50-1a3c-4a82-b6f4-7877e991c8b4",
+      "result_id": "028aa7c1-0ffe-45f8-8a1f-ee6389597c84"
+    },
+    {
+      "claim_id": "f4823725-cc16-41f4-ad20-b818542a8e85",
+      "result_id": "028aa7c1-0ffe-45f8-8a1f-ee6389597c84"
+    },
+    {
+      "claim_id": "e57b8c13-fd2f-42fd-a5ec-44ce3ad4ccad",
+      "result_id": "d90df3f0-2865-4a93-ae33-cf433da095b2"
+    },
+    {
+      "claim_id": "54848b7f-5db2-4255-8d49-b85778d74bb6",
+      "result_id": "d90df3f0-2865-4a93-ae33-cf433da095b2"
+    },
+    {
+      "claim_id": "13a64d8c-7b73-4049-a226-bff621ba2b49",
+      "result_id": "d90df3f0-2865-4a93-ae33-cf433da095b2"
+    },
+    {
+      "claim_id": "88e2ea36-b4d1-4a22-a68b-e2e4ad73f4c4",
+      "result_id": "918a3e91-84e7-4ad2-8266-2509fa4d7426"
+    },
+    {
+      "claim_id": "f32344b0-ef3e-446b-bfb9-e2e385382fc1",
+      "result_id": "918a3e91-84e7-4ad2-8266-2509fa4d7426"
+    },
+    {
+      "claim_id": "ff2420db-b2f3-4073-962f-5af8ec8758fb",
+      "result_id": "918a3e91-84e7-4ad2-8266-2509fa4d7426"
+    },
+    {
+      "claim_id": "325ec87d-4615-41e2-97ed-fc7bc94365a7",
+      "result_id": "918a3e91-84e7-4ad2-8266-2509fa4d7426"
+    },
+    {
+      "claim_id": "d7660464-6cc1-4f8f-986c-de1c83200462",
+      "result_id": "918a3e91-84e7-4ad2-8266-2509fa4d7426"
+    },
+    {
+      "claim_id": "5ba4182b-470f-4a1a-97cd-8c8fb59997ce",
+      "result_id": "03c0dddf-23d5-4a1e-a13f-82cc5e44f186"
+    },
+    {
+      "claim_id": "494d013e-e5b5-432d-ace2-69ca80d986dd",
+      "result_id": "03c0dddf-23d5-4a1e-a13f-82cc5e44f186"
+    },
+    {
+      "claim_id": "ef9b4578-e27d-466f-b81c-6e832cbf41c6",
+      "result_id": "03c0dddf-23d5-4a1e-a13f-82cc5e44f186"
+    },
+    {
+      "claim_id": "cd941117-9e12-4892-90a2-7a3d6ed456aa",
+      "result_id": "2ca78f89-42ca-4f65-bec8-f978e639df7d"
+    },
+    {
+      "claim_id": "374c91db-719f-427a-bf13-27c1013d9c0c",
+      "result_id": "2ca78f89-42ca-4f65-bec8-f978e639df7d"
+    },
+    {
+      "claim_id": "421922e5-1609-4847-9fa5-1d3032787047",
+      "result_id": "b50e55e0-0010-4bde-b249-a80bd81b1674"
+    },
+    {
+      "claim_id": "4ae2db08-82c3-4c6e-b24e-917945cf50d1",
+      "result_id": "b50e55e0-0010-4bde-b249-a80bd81b1674"
+    },
+    {
+      "claim_id": "b872dea9-3b96-40e7-9c44-a493b8434e24",
+      "result_id": "b50e55e0-0010-4bde-b249-a80bd81b1674"
+    },
+    {
+      "claim_id": "83a42e8a-06ca-4590-82df-70b23c6bdada",
+      "result_id": "b50e55e0-0010-4bde-b249-a80bd81b1674"
+    },
+    {
+      "claim_id": "28e18ca0-3ab5-4ac2-9edb-5f21aa28d94e",
+      "result_id": "b50e55e0-0010-4bde-b249-a80bd81b1674"
+    },
+    {
+      "claim_id": "e154219b-67e0-4671-a6d7-6b4a716b5a91",
+      "result_id": "b50e55e0-0010-4bde-b249-a80bd81b1674"
+    },
+    {
+      "claim_id": "5a18cd88-f378-4058-a11f-e2cd654df1d1",
+      "result_id": "b50e55e0-0010-4bde-b249-a80bd81b1674"
+    },
+    {
+      "claim_id": "017b1b4f-d56d-4054-b028-1cf01c742fa7",
+      "result_id": "b50e55e0-0010-4bde-b249-a80bd81b1674"
+    },
+    {
+      "claim_id": "e772a75c-6705-4672-9018-42815ad9443d",
+      "result_id": "b50e55e0-0010-4bde-b249-a80bd81b1674"
+    },
+    {
+      "claim_id": "03aa0dc3-6076-4365-a72d-9e3672316e97",
+      "result_id": "b50e55e0-0010-4bde-b249-a80bd81b1674"
+    },
+    {
+      "claim_id": "bdb9e071-cc8d-4d6c-8a87-561ac059b26c",
+      "result_id": "b50e55e0-0010-4bde-b249-a80bd81b1674"
+    },
+    {
+      "claim_id": "ffd81248-8325-455e-818e-dd4e9688efd7",
+      "result_id": "b50e55e0-0010-4bde-b249-a80bd81b1674"
+    },
+    {
+      "claim_id": "b9d1e947-bd20-4a71-9fb5-9fa54b9b747a",
+      "result_id": "b50e55e0-0010-4bde-b249-a80bd81b1674"
+    },
+    {
+      "claim_id": "33573bee-bedf-4d4c-b345-d8371b7e0308",
+      "result_id": "3ebb56e5-07f7-4a44-a063-0361bf1b2da7"
+    },
+    {
+      "claim_id": "2c953f30-b546-4ef6-8776-5942f216a07c",
+      "result_id": "3ebb56e5-07f7-4a44-a063-0361bf1b2da7"
+    },
+    {
+      "claim_id": "6b011b7f-984a-471f-9bae-78105cc3da96",
+      "result_id": "9f4d947f-3074-4116-b167-24ae64aef4b3"
+    },
+    {
+      "claim_id": "4522f267-b365-450e-ab44-370850fe29aa",
+      "result_id": "9f4d947f-3074-4116-b167-24ae64aef4b3"
+    },
+    {
+      "claim_id": "e9f0387c-53ab-440b-8638-5b3af60208de",
+      "result_id": "9f4d947f-3074-4116-b167-24ae64aef4b3"
+    },
+    {
+      "claim_id": "aa65aaad-0973-40e7-89ae-2d927d263404",
+      "result_id": "083b37ba-bf26-4a79-b980-d047e1044134"
+    },
+    {
+      "claim_id": "801404d4-9f1b-4699-a1d5-831d41582c86",
+      "result_id": "083b37ba-bf26-4a79-b980-d047e1044134"
+    },
+    {
+      "claim_id": "5dc232b3-511b-4078-9d9f-b9cc775077ca",
+      "result_id": "21eec872-54a5-4bfa-9dc4-b51c8b212023"
+    },
+    {
+      "claim_id": "517abeaf-cde8-4333-850b-8879f69867b2",
+      "result_id": "21eec872-54a5-4bfa-9dc4-b51c8b212023"
+    },
+    {
+      "claim_id": "bac95c99-38e7-4502-93f6-1c8a4db2f25e",
+      "result_id": "21eec872-54a5-4bfa-9dc4-b51c8b212023"
+    },
+    {
+      "claim_id": "bea13595-7a6e-4e10-afe7-6015403fc9e2",
+      "result_id": "21eec872-54a5-4bfa-9dc4-b51c8b212023"
+    },
+    {
+      "claim_id": "ae3dace2-fa7c-4c2c-b843-12addec65a0b",
+      "result_id": "e7375744-5b19-4365-8960-17f025be412d"
+    },
+    {
+      "claim_id": "0341b62c-efec-48d3-8a73-66a8d6945f78",
+      "result_id": "e7375744-5b19-4365-8960-17f025be412d"
+    },
+    {
+      "claim_id": "53926503-6a5a-4f03-be45-f322b4377b37",
+      "result_id": "e81c5312-2cc7-4eb5-9b88-52714e4a23cc"
+    },
+    {
+      "claim_id": "00f7a69a-5175-4be5-8296-61e80f1fc27b",
+      "result_id": "e81c5312-2cc7-4eb5-9b88-52714e4a23cc"
+    },
+    {
+      "claim_id": "ab1a7fb9-e8fd-48d7-bf0f-13fce186b1e9",
+      "result_id": "e81c5312-2cc7-4eb5-9b88-52714e4a23cc"
+    },
+    {
+      "claim_id": "ee8cfcec-9a1c-4b62-9dd6-e0615af30346",
+      "result_id": "e81c5312-2cc7-4eb5-9b88-52714e4a23cc"
+    },
+    {
+      "claim_id": "93026aa8-684a-4a0c-8a8a-24a332389745",
+      "result_id": "e81c5312-2cc7-4eb5-9b88-52714e4a23cc"
+    },
+    {
+      "claim_id": "fb3b1b24-eb4c-4ca2-92f3-41ef62e58d29",
+      "result_id": "4ce5ffe3-3b83-4b4d-8d37-577ca7967a9e"
+    },
+    {
+      "claim_id": "107d392c-867e-4310-8824-03c2125c5020",
+      "result_id": "4ce5ffe3-3b83-4b4d-8d37-577ca7967a9e"
+    },
+    {
+      "claim_id": "283a3fd6-b8ea-4efd-9e00-4c309daed935",
+      "result_id": "4ce5ffe3-3b83-4b4d-8d37-577ca7967a9e"
+    },
+    {
+      "claim_id": "b785fc6b-1c92-4896-a395-b0f5e3065117",
+      "result_id": "4ce5ffe3-3b83-4b4d-8d37-577ca7967a9e"
+    },
+    {
+      "claim_id": "ebf94eb0-6a1e-4974-b071-deee9b6dd090",
+      "result_id": "16d71276-044d-413f-b77b-5b7c9caf025a"
+    },
+    {
+      "claim_id": "e439eca4-fe79-4d7e-aa49-82a876eba665",
+      "result_id": "16d71276-044d-413f-b77b-5b7c9caf025a"
+    },
+    {
+      "claim_id": "91fda8dc-abc4-4b4a-81cf-20ea0fda6c21",
+      "result_id": "16d71276-044d-413f-b77b-5b7c9caf025a"
+    },
+    {
+      "claim_id": "0ed54383-1992-42f4-9239-d0060e2b0dd7",
+      "result_id": "16d71276-044d-413f-b77b-5b7c9caf025a"
+    },
+    {
+      "claim_id": "c27733b3-b775-4b1b-8dd1-43892cb97f04",
+      "result_id": "d7337c87-95cf-44d6-9097-acf16c1bf8f0"
+    },
+    {
+      "claim_id": "d1da9e32-2d44-4846-8a16-9ab6d5f8a1e1",
+      "result_id": "b0654ed0-0c16-424c-9e4f-10b8614e1216"
+    },
+    {
+      "claim_id": "197887a4-e57c-448b-891d-3d62586505e3",
+      "result_id": "bd5c463a-8748-4f2f-8d22-2e75227a089a"
+    }
+  ],
+  "comparisons": []
+}

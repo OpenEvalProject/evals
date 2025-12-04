@@ -1,0 +1,1524 @@
+{
+  "submission": {
+    "id": "e056d4bb-0b48-4625-aa15-bbcef121d2c2",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-04T04:07:13.647957Z",
+    "updated_at": "2025-12-04T04:07:13.647957Z"
+  },
+  "content": [
+    {
+      "id": "a21e7490-d92d-4c06-ac9b-c38ffe3ca587",
+      "submission_id": "e056d4bb-0b48-4625-aa15-bbcef121d2c2",
+      "content_type": "manuscript",
+      "content_text": "# Multi-ancestry meta-analysis of host genetic susceptibility to tuberculosis identifies shared genetic architecture\n\n## Authors\n\n- Haiko Schurz<sup>2</sup> ([ORCID: 0000-0002-0009-3409](https://orcid.org/0000-0002-0009-3409)) \u2020\n- Vivek Naranbhai<sup>3</sup>\n- Tom A Yates<sup>8</sup> ([ORCID: 0000-0002-6081-1767](https://orcid.org/0000-0002-6081-1767))\n- James J Gilchrist<sup>3</sup> ([ORCID: 0000-0003-2045-6788](https://orcid.org/0000-0003-2045-6788))\n- Tom Parks<sup>3</sup>\n- Peter J Dodd<sup>11</sup>\n- Marlo M\u00f6ller<sup>2</sup> ([ORCID: 0000-0002-0805-6741](https://orcid.org/0000-0002-0805-6741))\n- Eileen G Hoal<sup>2</sup>\n- Andrew P Morris<sup>12</sup> ([ORCID: 0000-0002-6805-6014](https://orcid.org/0000-0002-6805-6014))\n- Adrian VS Hill<sup>3</sup>\n- Haiko Schurz\n\n### Affiliations\n\n1. Ningxia Medical University, Ningxia Hui Autonomous Region Ningxia China ([ROR:02h8a1848](https://ror.org/02h8a1848))\n2. DSI-NRF Centre of Excellence for Biomedical Tuberculosis Research, South African Medical Research Council Centre for Tuberculosis Research, Division of Molecular Biology and Human Genetics, Faculty of Medicine and Health Sciences, Stellenbosch University Cape Town South Africa ([ROR:05bk57929](https://ror.org/05bk57929))\n3. Wellcome Centre for Human Genetics, University of Oxford Oxford United Kingdom ([ROR:01rjnta51](https://ror.org/01rjnta51))\n4. Massachusetts General Hospital Boston United States ([ROR:002pd6e78](https://ror.org/002pd6e78))\n5. Dana-Farber Cancer Institute Boston United States ([ROR:02jzgtq86](https://ror.org/02jzgtq86))\n6. Centre for the AIDS Programme of Research in South Africa Durban South Africa ([ROR:04qkg4668](https://ror.org/04qkg4668))\n7. Harvard Medical School Boston United States\n8. Division of Infection and Immunity, Faculty of Medical Sciences, University College London London United Kingdom ([ROR:02jx3x895](https://ror.org/02jx3x895))\n9. Department of Paediatrics, University of Oxford Oxford United Kingdom ([ROR:052gg0110](https://ror.org/052gg0110))\n10. Department of Infectious Diseases Imperial College London London United Kingdom ([ROR:041kmwe10](https://ror.org/041kmwe10))\n11. School of Health and Related Research, University of Sheffield Sheffield United Kingdom ([ROR:05krs5044](https://ror.org/05krs5044))\n12. Centre for Genetics and Genomics Versus Arthritis, Centre for Musculoskeletal Research, The University of Manchester Manchester United Kingdom ([ROR:027m9bs27](https://ror.org/027m9bs27))\n13. Jenner Institute, University of Oxford Oxford United Kingdom ([ROR:052gg0110](https://ror.org/052gg0110))\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe heritability of susceptibility to tuberculosis (TB) disease has been well recognized. Over 100 genes have been studied as candidates for TB susceptibility, and several variants were identified by genome-wide association studies (GWAS), but few replicate. We established the International Tuberculosis Host Genetics Consortium to perform a multi-ancestry meta-analysis of GWAS, including 14,153 cases and 19,536 controls of African, Asian, and European ancestry. Our analyses demonstrate a substantial degree of heritability (pooled polygenic h2 = 26.3%, 95% CI 23.7\u201329.0%) for susceptibility to TB that is shared across ancestries, highlighting an important host genetic influence on disease. We identified one global host genetic correlate for TB at genome-wide significance (p<5 \u00d7 10-8) in the human leukocyte antigen (HLA)-II region (rs28383206, p-value=5.2 \u00d7 10-9) but failed to replicate variants previously associated with TB susceptibility. These data demonstrate the complex shared genetic architecture of susceptibility to TB and the importance of large-scale GWAS analysis across multiple ancestries experiencing different levels of infection pressure.\n\n## Introduction\n\nTuberculosis (TB), caused by Mycobacterium tuberculosis (Mtb) and related species, remains a leading cause of death globally. Around one-quarter of the global population is estimated to show immunological evidence of prior exposure to Mtb (Houben and Dodd, 2016), and in 2019 an estimated 10 million people developed the disease, resulting in 1.4 million deaths (WHO, 2020). This disease burden could be substantially reduced with action to address the social determinants of disease and equitable scale-up of existing interventions. However, tools to prevent, diagnose, and treat TB could be improved if a better understanding of the underpinning pathophysiology could help identify those at greatest risk of the disease.\n\nThe role of host genetic factors in TB susceptibility has long been of significant interest. Over 100 candidate genes have been studied, but few associations have proven reproducible (Naranbhai, 2016). This failure to replicate may be a result of the modest size of many TB genome-wide association studies (GWAS), variability in phenotyping between studies, the impact of population-specific effects, the challenge of complex population structure in some high-burden settings (e.g., admixed individuals), and, possibly, pathogen variation (Correa-Macedo et al., 2019; Daya et al., 2014a; Luo et al., 2019; M\u00f6ller and Kinnear, 2020; M\u00fcller et al., 2021; Omae et al., 2017; Schurz et al., 2018). Seventeen GWAS have been reported but only two loci replicate between studies (Daya et al., 2014a; Schurz et al., 2018; Chimusa et al., 2014; The Wellcome Trust Case Control Consortium, 2007; Curtis et al., 2015; Mahasirimongkol et al., 2012; Qi et al., 2017; Thye et al., 2010; Thye et al., 2012; Quistrebert et al., 2021; Sveinbjornsson et al., 2016; Hong et al., 2017; Li et al., 2021; Luo et al., 2019; Zheng et al., 2018; Grant et al., 2016; Png et al., 2012). The WT1 locus, identified in cohorts from Ghana and Gambia, replicated in South Africa and Russia. The ASAP1 locus identified in Russia was replicated through reanalysis of prior studies (Correa-Macedo et al., 2019; M\u00f6ller and Kinnear, 2020).\n\nTo address these challenges, we established the International Tuberculosis Host Genetics Consortium (ITHGC) to study the host genetics of disease through collaborative and equitable data sharing (Naranbhai, 2016). The ITHGC includes 12 case\u2013control GWAS from nine countries in Europe, Africa, and Asia (total of 14,153 pulmonary TB cases and 19,536 healthy controls). Inclusion of multiple ancestral groups in a multi-ancestry meta-analysis has the advantage of maximizing power and enhancing fine-mapping resolution to identifying true global associated variants that influence TB susceptibility across population groups.\n\nHere we present the first analyses of the ITHGC dataset exploring host genetic correlates of TB susceptibility using a multi-ancestry meta-analysis approach, including fine-mapping of human leukocyte antigen (HLA) loci and estimation of genetic heritability.\n\n## Results\n\n### Study overview\n\nIn total, 12 GWAS from three major ancestral groups (European, African, and Asian) were included in this study (Table 1; a more detailed table outlining the selection of cases and controls is provided in Supplementary file 1a). All individual datasets were imputed and aligned to the same reference allele before association testing, using an additive genetic model, to obtain odds ratios (OR) and p-values to be used in the meta-analysis. For each individual study (for which we had raw genotyping data), the polygenic heritability was estimated, and HLA alleles were imputed for fine-mapping of the HLA regions.\n\n**Table 1.**\n Summary of ITHGC TB-GWAS datasets.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Dataset</th>\n      <th>Population</th>\n      <th>Cases/ controls</th>\n      <th>TB prevalence per 100 ,000 pa</th>\n      <th>Estimated proportion of controls ever exposed to Mtb (\u00b1SD)*</th>\n      <th>#SNPs</th>\n      <th>Genotyping platform</th>\n      <th>Reference</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>China 1\u2020</td>\n      <td>Asian</td>\n      <td>483/587</td>\n      <td>89</td>\n      <td>0.302 (0.101)</td>\n      <td>7,710,153</td>\n      <td>Affymetrix Genome-Wide Human SNP Array 6.0</td>\n      <td>thye@bni-hamburg.de(unpublished)</td>\n    </tr>\n    <tr>\n      <td>China 2\u2020</td>\n      <td>Asian</td>\n      <td>1290/1145</td>\n      <td>89</td>\n      <td>0.302 (0.101)</td>\n      <td>9,769, 029</td>\n      <td>Illumina Human OmniZhonghua-8 chips</td>\n      <td>magdakellis@gmail.com(unpublished)</td>\n    </tr>\n    <tr>\n      <td>China 3</td>\n      <td>Asian</td>\n      <td>972/1537</td>\n      <td>89</td>\n      <td>0.302 (0.101)</td>\n      <td>9,726,450</td>\n      <td>Illumina Human OmniZhonghua-8 chips</td>\n      <td>Qi et al., 2017</td>\n    </tr>\n    <tr>\n      <td>Thailand</td>\n      <td>Asian</td>\n      <td>433/295</td>\n      <td>236</td>\n      <td>0.404 (0.112)</td>\n      <td>6,723,358</td>\n      <td>Illumina Human610-Quad</td>\n      <td>Mahasirimongkol et al., 2012</td>\n    </tr>\n    <tr>\n      <td>Japan</td>\n      <td>Asian</td>\n      <td>751/3199</td>\n      <td>23</td>\n      <td>0.142 (0.125)</td>\n      <td>9,051,051</td>\n      <td>Illumina HumanHap550</td>\n      <td>Mahasirimongkol et al., 2012</td>\n    </tr>\n    <tr>\n      <td>Russia\u2020</td>\n      <td>European</td>\n      <td>5914/6022</td>\n      <td>109</td>\n      <td>0.191 (0.093)</td>\n      <td>10,878,777</td>\n      <td>Affymetrix Genome-Wide Human SNP Array 6.0</td>\n      <td>Curtis et al., 2015</td>\n    </tr>\n    <tr>\n      <td>Estonia</td>\n      <td>European</td>\n      <td>239/7047</td>\n      <td>13</td>\n      <td>0.116 (0.093)</td>\n      <td>10,611,556</td>\n      <td>Illumina 370K</td>\n      <td>andres.metspalu@ut.ee(unpublished)</td>\n    </tr>\n    <tr>\n      <td>Germany\u2020</td>\n      <td>European</td>\n      <td>586/333</td>\n      <td>7.8</td>\n      <td>0.067 (0.081)</td>\n      <td>10,602,193</td>\n      <td>Illumina Omni2.5+exome</td>\n      <td>thye@bni-hamburg.de(unpublished)</td>\n    </tr>\n    <tr>\n      <td>Gambia\u2020</td>\n      <td>African</td>\n      <td>1316/1382</td>\n      <td>126</td>\n      <td>0.280 (0.089)</td>\n      <td>18,634,017</td>\n      <td>Affymetrix GeneChip 500K</td>\n      <td>The Wellcome Trust Case Control Consortium, 2007</td>\n    </tr>\n    <tr>\n      <td>Ghana\u2020</td>\n      <td>African</td>\n      <td>1359/1952</td>\n      <td>282</td>\n      <td>0.539 (0.198)</td>\n      <td>19,029,214</td>\n      <td>Affymetrix Genome-Wide Human SNP Array 6.0</td>\n      <td>Thye et al., 2010</td>\n    </tr>\n    <tr>\n      <td>RSA(A)\u2020 \u2021</td>\n      <td>African</td>\n      <td>19/577</td>\n      <td>717</td>\n      <td>0.436 (0.127)</td>\n      <td>9,227,330</td>\n      <td>Affymetrix 500k</td>\n      <td>Daya et al., 2014b</td>\n    </tr>\n    <tr>\n      <td>RSA(M)\u2020\u2021</td>\n      <td>African</td>\n      <td>410/405</td>\n      <td>717</td>\n      <td>0.436 (0.127)</td>\n      <td>11,371,838</td>\n      <td>Illumina MEGA array</td>\n      <td>Schurz et al., 2018</td>\n    </tr>\n  </tbody>\n</table>\n\n_GWAS, genome-wide association studies; ITHGC, International Tuberculosis Host Genetics Consortium; Mtb, Mycobacterium tuberculosis; TB, tuberculosis.*Estimated proportion of control individuals ever infected with Mtb by age 35\u201344 in 2010, based on data from Houben & Dodd.\u2020Raw genotyping data available.\u2021RSA(A/M): South African admixed population (RSA) Affymetrix (A) and MEGA (M) array data._\n\nThe summary statistics from the individual GWAS of each dataset were used to conduct a combined, multi-ancestry meta-analysis using MR-MEGA and ancestry-specific (European, African, and Asian) fixed effects (FE) meta-analyses using GWAMA. Finally, the impact of infection pressure on the multi-ancestry meta-regression was assessed and the concordance in direction of effect for the reference allele between studies was investigated.\n\n### Polygenic heritability estimates suggest a genetic contribution to TB disease susceptibility\n\nTwin studies estimate the narrow-sense heritability of susceptibility to TB at up to 80% (Diehl and Von, 1936; Kallmann and Reisner, 1943; Comstock, 1978), but there are few modern estimates. Using raw (unimputed) genotyping data, and assuming population prevalence of disease in each study population equivalent to the reported WHO prevalence rates for that country (WHO, 2020), we estimated polygenic heritability of susceptibility to TB in 10 contributing studies which ranged from 5 to 36% (average of 26.3%, Supplementary file 1b). Comparisons of the heritability estimates between studies from different geographical locations do not take into consideration the differences in environmental pressures between the included studies, and as such these estimates of heritability are only interpretable if the distribution of nongenetic determinants of TB is held constant (Pearce, 2011). Furthermore, variations in phenotype definition can have an impact on heritability estimates (Supplementary file 1a). This is supported by previous research by McHenry et al., 2021a, where significant differences in polygenic heritability estimates were identified between subjects with latent TB infection (LTBI), active TB, and subjects classified as resistors. (McHenry et al., 2021a). As this study includes data with varying methods of classifying TB cases and healthy controls (Supplementary file 1a), there is potential for a degree of heterogeneity and misclassification (between cases and controls) that can have an impact on the heritability estimates. Recent history has seen the near elimination of TB in several countries associated with economic development and public health action. However, while improvement of socioeconomic standing and environment has a stronger impact than host genetics, these crude estimates of polygenic heritability do indicate that TB susceptibility is, in part, heritable. These results require future, more rigorous investigations to narrow down the level of heritable risk and pinpoint genomic loci involved by accounting for population stratification to obtain more accurate heritability estimates.\n\n### Multi-ancestry meta-analysis identifies susceptibility loci for TB\n\nFor the primary multi-ancestry meta-analysis, MR-MEGA was used as it allows for differences in allelic effects of variants on disease risk between GWAS. Principal components (PCs), derived from a matrix of similarities in allele frequencies between GWAS, were plotted and revealed distinct separation between the three main ancestral groups included in the study (Figure 4) . To account for this, the first two PCs were included as covariates in MR-MEGA as they sufficiently accounted for the allele frequency differences between the study populations, as assessed via a QQ-plot and associated lambda inflation value (Figure 1\u2014figure supplement 1, lambda = 1.00). In total, 26,620,804 variants with a minor allele frequency (MAF) > 1% and present in at least three studies were included in the analysis, of which 3,184,478 were present in all 12 datasets.\n\nA significant association peak on chromosome 6 was identified in the HLA class II region (Figure 1). One variant (rs28383206, OR = 0.89, CI = 0.84\u20130.94, p-value=8.26 \u00d7 10\u20139) within this peak was associated with susceptibility to TB at genome-wide significance (p<5.0e\u20138, Figures 1\u20143, Table 2). Both the residual heterogeneity (p-value=0.012) and ancestry-correlated heterogeneity (p-value=5.28e\u20136) are significant (p-value<0.05) for the associated variant. However, the evidence of ancestry-correlated heterogeneity is much stronger than for residual heterogeneity, indicating that genetic ancestry contributes more to differences in effects sizes between GWAS than does study design (e.g., phenotyping differences and potential case\u2013control misclassification). The association peak encompasses many HLA-ll genes, including HLA-DRB1/5 (major histocompatibility complex, class II, DR beta 1/5), HLA-DQA1 (major histocompatibility complex, class II, DQ alpha 1), and HLA-DQB3 (major histocompatibility complex, class II, DQ beta 3, Figures 1 and 2). While not reaching genome-wide significance, the HLA class l locus is also indirectly tagged through the association with rs2621322, in the TAP2 (transporter 2, ATP binding cassette subfamily B member) gene, a transporter protein that restores surface expression of MHC class I molecules and has previously been implicated in TB susceptibility (Thu et al., 2016). HLA-A, DQA1, DQB1, DRB1, and TAP2 genes have previously been linked to TB susceptibility through TB candidate gene and GWAS analysis (Thu et al., 2016; Kinnear et al., 2017; Stein et al., 2017; Sveinbjornsson et al., 2016; Zhang et al., 2021). The HLA-II locus encodes several proteins crucial in antigen presentation, including HLA-DR, HLA-DQ, and HLA-DP, which are widely implicated in susceptibility to infection and autoimmunity (Kelly and Trowsdale, 2019; Shiina et al., 2009).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/84394/elife-84394-fig1-v2.jpg)\n\n**Figure 1.:** Image produced using R scripts provided by MR-MEGA (M\u00e4gi et al., 2017), and source data file has been uploaded to https://doi.org/10.5061/dryad.6wwpzgn2s.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/84394/elife-84394-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** The lambda value of 1.00 suggests no significant inflation or deflation of p-values. Lambda values for the input data (right), and source data file has been uploaded to https://doi.org/10.5061/dryad.6wwpzgn2s.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/84394/elife-84394-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** For source data, see Figure 1\u2014figure supplement 2\u2014source data 1.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/84394/elife-84394-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** For source data, see Figure 1\u2014figure supplement 3\u2014source data 1.\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/84394/elife-84394-fig1-figsupp4-v2.jpg)\n\n**Figure 1\u2014figure supplement 4.:** For source data, see Figure 1\u2014figure supplement 4\u2014source data 1.\n\n![Figure 1\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/84394/elife-84394-fig1-figsupp5-v2.jpg)\n\n**Figure 1\u2014figure supplement 5.:** For source data, see Figure 1\u2014figure supplement 5\u2014source data 1.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/84394/elife-84394-fig2-v2.jpg)\n\n**Figure 2.:** Image produced using the online LocusZoom database with linkage disequilibrium (LD) mapping set to \u2018all\u2019 and p-values>0.01 removed (Boughton et al., 2021), and source data file has been uploaded to https://doi.org/10.5061/dryad.6wwpzgn2s.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/84394/elife-84394-fig3-v2.jpg)\n\n**Figure 3.:** (A) Forest plot (odds ratio and 95% confidence interval) of the significant chromosome 6 association (rs28383206) for tuberculosis (TB) susceptibility in the multi-ancestry analysis, implemented using MR-MEGA with genomic control correction (GCC). Of the 12 studies included, 8 contained this variant. Studies that did not contain the variant are included in the plot but do not have results associated with them. (B) Forest plot for HLA DQA1*02:01 for the eight studies included in the HLA association analysis. Other studies included were obtained from literature searches of previous studies where HLA imputation and association studies were performed (Sveinbjornsson et al., 2016; Li et al., 2021; Zheng et al., 2018). For source data, see Figure 3\u2014source data 1.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/84394/elife-84394-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** For source data, see Figure 3\u2014figure supplement 1\u2014source data 1.\n\n**Table 2.**\n Significant and suggestive associations (p-value \u22641e\u20135) for the multi-ancestry analysis including data from all 12 datasets implementing MR-MEGA analysis with GCC.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Marker name</th>\n      <th>Chromosome</th>\n      <th>Position</th>\n      <th>Gene</th>\n      <th>Location</th>\n      <th>CADD score</th>\n      <th>EA</th>\n      <th>NEA</th>\n      <th>EAF</th>\n      <th>Sample size</th>\n      <th>Datasets</th>\n      <th>p-Value</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>rs28383206</td>\n      <td>6</td>\n      <td>32575167</td>\n      <td>HLA-DRB1</td>\n      <td>Intergenic</td>\n      <td>7.6</td>\n      <td>G</td>\n      <td>A</td>\n      <td>0.168</td>\n      <td>25,059</td>\n      <td>8</td>\n      <td>8.26e\u201309</td>\n    </tr>\n  </tbody>\n</table>\n\n_GCC, genomic control correction; EA, effect allele; EAF, effect allele frequency; NEA, noneffect allele._\n\n### HLA-II\n\nGiven the strong association peak in the HLA-ll locus (Figures 1 and 2), we imputed HLA-ll alleles to fine-map this association. HLA alleles were imputed using the HIBAG R package that utilizes both genotyping array and population-specific reference panels to obtain the most accurate imputations for each individual dataset. Association testing was then conducted using an additive genetic model for each individual dataset before meta-analyzing the results (Source data 1, sheets 11\u201315).\n\nNotwithstanding inconsistency across populations, the strongest signal in the combined global analyses is at DQA1*02:01, revealing a protective effect (OR = 0.88, 95% CI = 0.82\u201393, p-value=1.3e\u20135, Figure 3B). The signal remains apparent in the six populations with the lead SNP at MAF > 2.5% and individual-level data available (p-value=0.0003). After conditioning on the lead SNP (rs28383206) in this subset, there is no residual significant association at DQA1*02:01 (p-value=0.44, Figure 3\u2014figure supplement 1), suggesting that the classical allele is tagging the rs28383206 association. This observation is consistent with previous observations of HLA analysis in Icelandic (DQA1*02:01: OR = 0.82, p-value=7.39e\u20134) and Han Chinese populations (DQA1*02:01: OR = 0.82, p-value=7.39e\u20134), but showed opposite direction of effect in another Chinese population (DQA1*02:01: OR = 1.28, p-value=0.0193, Figure 3B; Sveinbjornsson et al., 2016; Li et al., 2021; Zheng et al., 2018).\n\nThe significant HLA associations overlap with the association peak observed in the multi-ancestry meta-analysis (Figure 2) but show more consistency in the direction of effects between the input studies compared to the lead SNPs identified in the association peak. This suggests that the rs28383206 association in the meta-analysis is tagging an HLA allele, where the different linkage disequilibrium (LD) patterns from the included ancestral populations result in the differences in effects sizes between populations at the rs28383206 association.\n\nThis variation in significant associations is, in part, attributable to the observed variation in HLA allele frequencies across all the included studies and may also reflect differential tagging of at least one unknown causal variant across populations (Source data 1, sheets 16\u201322).\n\nThe variable role of classical HLA alleles in different populations could be partially due to unique infectious pressures that each geographical region faces and could also explain why different strains of Mtb are more or less prevalent in different regions as they adapted to the HLA profile of the population within this region. Sequencing efforts of global mycobacterial isolates find hyperconservation of class II epitopes, suggesting pathogen advantage achieved through limiting HLA-II recognition and highlighting the potential complex interplay between pathogen and host evolution in modifying class II presentation in TB infection (Comas et al., 2010). Previous work has shown evidence of interaction between genetic variants of the host and specific strains of Mtb in Ghanaian, Ugandan, South African, and Asian populations (M\u00f6ller and Kinnear, 2020; M\u00fcller et al., 2021; Correa-Macedo et al., 2019; Salie et al., 2014; Luo et al., 2015; Wampande et al., 2019; Micheni et al., 2021; McHenry et al., 2021b; McHenry et al., 2020). These interactions provide further evidence that Mtb may have undergone substantial genetic evolution, in concert with host migration and evolution of different populations (Comas et al., 2013; Coscolla and Gagneux, 2014). Some studies suggest that HLA-II epitopes may have undergone regional mutations that modify HLA-II binding, and we speculate that the heterogeneity observed in HLA-II associations between regions may, at least in part, be accounted for by different pressures exerted by varying stains of Mtb (Copin et al., 2016).\n\n### Impact of infection pressure on meta-regression\n\nTo further understand the heterogeneity across populations, we attempted to account for variation in levels of prior exposure that could serve to mask host effects given that not all controls will have been exposed to Mtb. In low transmission settings, more susceptible but unexposed individuals would be included as controls, who, had they been exposed to Mtb, might have progressed to TB disease. Overall, including each cohort\u2019s estimated prevalence of prior exposure had a significant impact on the residual heterogeneity and association statistics of 5% of the variants included in the meta-analysis (419,460/8,355,367), which at a significance level of p-value<0.05 is what is to be expected purely by chance. Separating the results into bins according to p-values revealed that the bins where the covariate had the biggest impact were for p-values in the range of 1e\u20133 to 1e\u20135 (Figure 1\u2014figure supplement 2), while significant and suggestive associations reported in this study did not show any significant changes in residual heterogeneity. While the proportion of variants significantly impacted when correcting for infection pressures is low and has the biggest impact on variants with larger p-values, there was still an overall reduction in the chi-square value for the residual heterogeneity (mean chi-square value reduced by 10). This suggests that accounting for potential lifetime of infections does account for some of the observed residual heterogeneity; it is most likely not the main driving force for these residuals.\n\nWhen considering the impact of force of infection, it is important to consider not only the proportion of controls ever exposed but also the impact of recurrent exposure. There is some evidence to suggest that genetic barriers to progression to TB may be overcome if the infectious dose is high (Fox et al., 1929). Repeated exposure may be observed where TB prevalence is high, as in South Africa, and could contribute to the overall lower effects sizes observed in the GWAS enrolling RSA people. Inclusion of potential lifetime infections in meta-regression could help adjust for these effects and prove useful for not only TB, but meta-analysis of infectious diseases in general, and should be further explored.\n\n### Other suggestive loci that did not reach significance\n\nThere were four loci with suggestive associations and strong peaks on the Manhattan plot (Figure 1) that did not reach significance but should still be considered as potential variants of interest (Supplementary file 1c). One chr9 peak (rs4576509, p-value=7.40e\u201307) was intergenic (Figure 1\u2014figure supplement 3) while the second (rs6477824, p-value=2.99e\u201307) is located in the 5\u2032-UTR region of the zinc finger protein 483 (ZNF483) gene (Figure 1\u2014figure supplement 3), previously associated with age at menarche (Demerath et al., 2013; Elks et al., 2010). The chromosome 11 peak (rs12362545, p-value=1.24e\u201306) is located in the PPFIA binding protein 2 (PPFIBP2) gene (Figure 1\u2014figure supplement 4), which plays a role in axon guidance and neuronal synapse development and has previously been implicated in cancer development (Colas et al., 2011; Wu et al., 2018). The final peak (rs35787595, p-value=5.41e\u201306), on chromosome 16 (Figure 1\u2014figure supplement 5), is located in the craniofacial development protein 1 (CFDP1) gene region and involved in chromatin organization (Messina et al., 2017). These genes have not been previously linked to TB susceptibility and a potential role is unclear, and as a result further validation of these variants is needed before any conclusions on their impact to TB susceptibility can be drawn.\n\n### Ancestry-specific meta-analysis\n\nConcordance in the direction of effects of the risk allele between the ancestry-specific meta-analyses was examined to determine whether significant enrichment (above the expected 50%) exists at different p-value thresholds. Significant enrichment in the concordance of direction of effect was only observed when using the European ancestry as reference compared to the African meta-analysis results for SNPs with p-values>0.001 and <0.01 (p-value=0.0061, Supplementary file 1d). The lack of enrichment between the ancestries suggests significant ancestry-specific associations, which could be further compounded by the differences in local infection pressures. Due to the lack of concordance and the separation of the ancestral populations in the principal component analysis (PCA) plot (Figure 4), ancestry-specific meta-analysis was done.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/84394/elife-84394-fig4-v2.jpg)\n\n**Figure 4.:** Image produced using the R plot function. For source data, see Figure 4\u2014source data 1.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/84394/elife-84394-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Fixed effects (FE) model with genomic control correction (GCC) implemented in GWAMA, and source data file has been uploaded to https://doi.org/10.5061/dryad6wwpzgn2s.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/84394/elife-84394-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** Fixed effects (FE) model with genomic control correction (GCC) implemented in GWAMA, and source data file has been uploaded to https://doi.org/10.5061/dryad.6wwpzgn2s.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/84394/elife-84394-fig4-figsupp3-v2.jpg)\n\n**Figure 4\u2014figure supplement 3.:** Fixed effects (FE) model with genomic control correction (GCC) implemented in GWAMA, and source data file has been uploaded https://doi.org/10.5061/dryad.6wwpzgn2s.\n\n![Figure 4\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/84394/elife-84394-fig4-figsupp4-v2.jpg)\n\n**Figure 4\u2014figure supplement 4.:** Source data file has been uploaded to https://doi.org/10.5061/dryad.6wwpzgn2s.\n\nThe PCA plot (Figure 4) for the 12 studies (based on mean pairwise genome-wide allele frequency differences calculated by MR-MEGA) illustrates distinct separation between the three major population groups (Asia, Europe, and Africa). The separation observed between the African studies (Gambia/Ghana and RSA) is due to the high level of admixture in the RSA population. The RSA population is a five-way admixed South African population with genetic contributions from Bantu-speaking African, KhoeSan, European, and South and South East Asian populations, which explains the observed shift in the PCA plot (Daya et al., 2013; Figure 4).\n\nQQ-plots for the ancestry-specific analysis show no significant inflation or deflation. After removing associations without any clear peaks on the Manhattan plots (associations driven by a single study), we found no significant associations for the ancestry-specific analysis. However, suggestive peaks that did not reach genome-wide significance were identified in the European and Asian ancestry-specific analyses (Figure 4\u2014figure supplements 1 and 2, Supplementary file 1e). Potential causes for the lack of associations and suggestive peaks in the African analysis (Figure 4\u2014figure supplement 3) are the increased genetic diversity within Africa, the inclusion of admixed samples (RSA), and the smaller sample size compared to the other ancestry-specific meta-analysis. While power can be increased through inclusion of greater genetic diversity, between-subpopulation differences in allele frequency can introduce confounding. Confounding by genetic background can result in both spurious associations and the masking of true associations. Such confounding may explain why the results observed elsewhere may not replicate in admixed samples. Removing the admixed data and analyzing only the Gambian and Ghanaian datasets also did not produce any significant results, although, clearly, the sample size was smaller.\n\nFor the European analysis (Figure 4\u2014figure supplement 1), suggestive peaks were identified on chromosomes 6 (rs28383206, p-value=7.06e\u201308), 8 (rs3935174, p-value=1.00e\u201306), and 11 (rs12362545, p-value=1.06e\u201307, Supplementary file 1e), while the Asian (Figure 4\u2014figure supplement 2) analysis identified suggestive peaks on chromosome 6 (rs146049519, p-value=1.06e\u201306) and 8 (rs62495207, p-value=5.10e\u201306, Supplementary file 1e).\n\nThe suggestive peaks on chromosomes 6 and 11 in the European subgroup analysis overlap with the suggestive peaks of the multi-ancestry meta-analysis (Figure 1, Figure 4\u2014figure supplement 4, Supplementary file 1e), but the suggestive peak on chromosome 8 is unique to this population (Figure 4\u2014figure supplement 1, Supplementary file 1e). The strongest signal for this peak (rs3935174, OR = 0.87, p-value=1.00e\u20136) is located in the ArfGAP with SH3 domain, ankyrin repeat, and PH domain 1 (ASAP1) region, which encodes an ADP-ribosylation factor (ARF) GTPase-activating protein and is potentially involved in the regulation of membrane trafficking and cytoskeleton remodeling (Brown et al., 1998). Variants in ASAP1 (rs4733781 and rs10956514) have previously been linked to TB susceptibility in a TB-GWAS analysis of the same Russian population included here (Curtis et al., 2015). While these ASAP1 variants were present in all 12 studies and had consistent direction of effects, they presented with a strong signal in the European ancestry-specific analysis only (African and Asian p-values all \u2265 0.1). These differences in association were not driven by allele frequency differences as they are similar between the included study populations. A possible explanation for the association being observed only in the European meta-analysis is that the association is driven by the Russian dataset. rs4733781 has a strong signal in the Russian dataset (p-value=2.96e\u20137), but very weak signals in all other populations included in the analysis (p-value>0.01) and is in LD with rs3935174 (r2 = 0.6935 and D\u2019 = 0.8791) identified in our analysis. rs4733781 also did not replicate in a previous GWAS from Iceland (Sveinbjornsson et al., 2016), further suggesting that this association is not specific to European populations, but rather driven by the large Russian dataset included in this study.\n\nThe suggestive peak on chromosome 8 in the Asian subgroup analysis lies in an intergenic region (Figure 4\u2014figure supplement 2, Supplementary file 1e) and the link to TB susceptibility is unclear. Finally, the suggestive region on chromosome 6 overlaps with the significant peak from the multi-ancestry analysis (Figure 1 and Figure 4\u2014figure supplement 2) and is located in the major histocompatibility complex, class II, DR beta 1 (HLA-DRB1), as discussed above (Figure 4\u2014figure supplement 2, Supplementary file 1e).\n\n### Prior associations\n\nTo determine whether associations from previously published TB-GWAS, TB candidate SNPs, and SNPs within candidate gene studies replicate in this meta-analysis, we extracted all significant and suggestive associations from prior analyses and compared these to our multi-ancestry and ancestry-specific meta-analysis results (Luo et al., 2019; Schurz et al., 2018; Chimusa et al., 2014; The Wellcome Trust Case Control Consortium, 2007; Curtis et al., 2015; Mahasirimongkol et al., 2012; Qi et al., 2017; Thye et al., 2010; Thye et al., 2012; Quistrebert et al., 2021; Hong et al., 2017; Zheng et al., 2018; Grant et al., 2016; Png et al., 2012; Daya et al., 2014b). In total, 44 SNPs and 36 genes were identified from the GWAS catalog, of which 33 SNPs and all candidate genes were present in our data (Source data 1, sheet 2). We also extracted the association statistics for a further 90 previously identified candidate genes from our multi-ancestry and population-specific meta-analysis results (Source data 1, sheet 2; Naranbhai, 2016).\n\nUsing a Bonferroni-corrected p-value of 0.0015 for the number of SNPs tested (33) as the significance threshold for replication, two candidate SNPs (rs4733781: p-value=3.22e\u20135; rs10956514: p-value=0.000118; Source data 1, sheets 3 and 4) replicated in the multi-ancestry meta-analysis, both located in the ASAP1 gene region (Curtis et al., 2015; Chen et al., 2019; Wang et al., 2018). However, as discussed in the previous section, these associations are driven by the Russian dataset, which is the same data used by Curtis et al., 2015, where these associations were originally discovered (Curtis et al., 2015). As the Russian population included in our analysis presenting with a strong signal for these variants, there is no independent evidence for these candidate SNPs as they did not replicate in any other population.\n\nFor the Asian ancestry-specific analysis, the replicated variant was rs41553512, located in the HLA-DRB5 gene (p-value=3.53E-05). HLA-DRB5 is located within the HLA-ll region identified in the multi-ancestry meta-analysis (Figure 1) and was previously identified by Qi et al., 2017 in a Han Chinese population. The African ancestry-specific analysis did not replicate previous associations, with the lowest p-value at rs6786408 in the FOXP1 gene (p-value=0.023). While this variant was previously identified in a North African cohort, the fact that it does not replicate here could be because of the genetic diversity within Africa and specifically the variability introduced by the five-way admixed South African population.\n\n## Discussion\n\nThis large-scale, multi-ethnic meta-analysis of genetic susceptibility to TB, involving 14,153 cases and 19,536 controls, identified one risk locus achieving genome-wide significance, and further investigation of this region revealed significant classical HLA allele associations. This association is noteworthy given we show that there is association in other studies for the same allele (Kinnear et al., 2017; Stein et al., 2017).\n\nBased on the significant association, rs28383206, in the HLA region identified in this multi-ancestry analysis (Figure 3A), HLA-specific imputation and association testing were done to fine-map the region and identify potential HLA alleles driving this association. HLA DQA1*02:01 had the strongest signal in the meta-analysis across the eight included studies (Figure 3B), but this signal disappeared when conditioning on the significant SNP (rs28383206). HLA DQA1*02:01 has previously been identified in an Icelandic and two Chinese populations, but the direction of effect was not consistent (Sveinbjornsson et al., 2016; Li et al., 2021; Zheng, 2018). Despite these inconsistencies, the association between Mtb and HLA class II should be explored in more detail in future studies. A study investigating the outcomes of Mtb exposure in individuals of African ancestry identified protective effects of HLA class II alleles for individuals resistant to TB, highlighting the importance of HLA class II and susceptibility to TB (Dawkins et al., 2022). HLA class II is a key determinant of the immune response in TB, and Mtb has the mechanisms to directly interfere with MHC class 2 antigen presentation (Sia and Rengarajan, 2019). This is supported by studies in mice, where mice in which the MHC class ll genes were deleted died quickly when exposed to Mtb and died faster than the mice in which MHC class I genes were deleted (Sia and Rengarajan, 2019).\n\nThe p-values of residual heterogeneity in genetic effects between the studies in the multi-ancestry meta-analysis show no significant inflation between the studies. This suggests that the differences in study characteristics (phenotype definition, infection pressure, Mtb strain) are not the main contributor to the lack of significant associations. However, they certainly have an impact, which is further compounded with ancestry-correlated heterogeneity and other factors (e.g., socioeconomic standing). The ancestry-correlated heterogeneity p-values are generally lower than the residual heterogeneity, suggesting that genetic ancestry has a stronger impact on the differences in effects sizes between the studies. This is supported by the fact that previous TB genetic association studies have identified significant effects of ancestry on TB susceptibility (Chimusa et al., 2014; Daya et al., 2014b). However, the effects of genetic ancestry can be confounded by other factors not accounted for in this analysis, such as the differences in socioeconomic factors (including the differences in housing, employment, poverty, and access to healthcare), phenotype definitions, and differences in infection pressure between the included study populations (Hargreaves et al., 2011; Duarte et al., 2018; L\u00f6nnroth et al., 2009). Specifically, the lack of consistency and specificity in TB diagnosis between the included studies introduces heterogeneity and the potential for misclassification of cases and controls, which can reduce the power to detect significant associations (Supplementary file 1a). While this is a limitation of this study, the fact that the residual heterogeneity is overpowered by the ancestry-specific heterogeneity suggests that the phenotype definitions are not the main driver behind the lack of significant associations. For the ancestry-specific analysis, fewer studies result in there being less input heterogeneity to account for, but the reduced sample size was not sufficient to detect any ancestry-specific genome-wide associations. This is particularly evident for the African ancestry-specific meta-analysis where the large degree of heterogeneity, which could be a result of the high genetic diversity within Africa, in combination with differences in socioeconomic factors compared to other populations included in this study, resulted in no observable suggestive association peaks (Campbell and Tishkoff, 2008; Peprah et al., 2015). Furthermore, the suggestive associations (Supplementary file 1c and e) reported in this study should be interpreted with care, and further validation is required before any conclusions can be drawn on the impact that they could have on TB susceptibility.\n\nPolygenic heritability estimates revealed genetic contributions to TB susceptibility for all studies, but the level of this contribution varied greatly (5\u201336%), suggesting that other factors are contributing to both the lack of significant associations detected in this meta-analysis and the variation observed for the polygenic heritability estimates. These factors likely include environmental, socioeconomic, and varying levels of infection pressures, as well as genetic ancestry-specific effects between the included study populations. An individual from South Africa will face a much higher force of infection than individuals in Europe, and making the assumption that environmental circumstances are equal will significantly skew these crude heritability estimates (Pearce, 2011). This argument is sustained by the fact that increasing disease prevalence (higher infection pressure) increased the level of genetic contribution to TB susceptibility up to a certain point, presumably accounted for by increasingly informative control samples, after which further increasing the infection pressure will not further impact genetic susceptibility.\n\nTo determine the impact that force of infection has on the level of genetic contribution to TB susceptibility, we modeled values for proportion of people ever infected with Mtb to include in the multi-ancestry meta-analysis and correct for the different force of infection faced by individuals in each country. Inclusion of this covariate, however, only resulted in a significant difference for 5% of the analyzed variants, what is to be expected based on chance alone, and as such we cannot conclude that a significant portion of the observed residual heterogeneity is explained by this. Limited metadata forced us to make several assumptions about the ages of study participants and the dates on which they were enrolled. With more precise metadata, or Mtb infection test results in controls, the potential impact of lifetime infection could be better quantified and may contribute to elucidating genetic TB susceptibility. Multi-ancestry meta-analysis of other infectious diseases could also potentially benefit from the inclusion of force of infection covariates. It would also be important to determine whether there is a level of exposure beyond which host genetic barriers to infection are overcome (Simmons et al., 2018).\n\nA single significant association was identified in this multi-ancestry meta-analysis, which is small when compared to other meta-analyses of similar size. Factors contributing to this include the difficulty in analyzing multi-ancestry data, the outdated arrays and lack of suitable reference panels for the included study populations, and heterogeneity in case and control definitions between the studies. The issue of heterogeneity in definitions is especially pronounced for this study as it included unpublished data with limited information, which does not indicate how cases were confirmed and controls were collected. The complexity of TB and generally small genetic effects suggests that larger sample sizes or alternative methods of investigation are needed. Utilizing GWAS arrays that better capture diverse populations in combination with imputation making use of larger and more diverse reference panels would allow for larger and more consistent datasets for future meta-analysis. Remapping specific areas of interest such as the HLA, ASAP1, or TLR using long-read sequencing would be invaluable. Increased amounts of genetic data will also allow for more accurate TB heritability analysis and permit analysis of polygenic risk scores and exploration of host\u2013pathogen interactions.\n\nIn conclusion, this large-scale multi-ancestry TB GWAS meta-analysis revealed significant associations and shared genetic TB susceptibility architecture across multiple populations from different genetic backgrounds. The analysis shows the value of collaboration and data sharing to solve difficult problems and elucidate what determines susceptibility to complex diseases such as TB. We hope that this publication will encourage others to make their data available for future large-scale meta-analyses.\n\n## Methods\n\n### Data\n\nThis analysis includes 12 of the 17 published (and unpublished, Table 1, Supplementary file 1) GWAS of TB (with HIV-negative cohorts) prior to 2022 (Schurz et al., 2018; Chimusa et al., 2014; The Wellcome Trust Case Control Consortium, 2007; Curtis et al., 2015; Mahasirimongkol et al., 2012; Qi et al., 2017; Thye et al., 2010; Thye et al., 2012; Daya et al., 2014b). For unpublished works, we contacted researchers that were funded for genetic TB research and acquired data-sharing agreements to obtain summary statistics (or raw data) along with any metadata that was available. It excludes data from Iceland and Vietnam (Quistrebert et al., 2021) as they declined to share data. It excludes data from China, Korea, Peru, and Japan (Luo et al., 2019; Hong et al., 2017; Li et al., 2021; Zheng, 2018; Sveinbjornsson et al., 2016) as data-sharing agreements could not be finalized in time for this analysis. The Indonesian and Moroccan data were too sparsely genotyped and not suitable for reliable imputation. In addition, the Moroccan data was family-based and thus also not suitable for this meta-analysis as this would introduce confounding effects from the inclusion of related individuals (Grant et al., 2016; Png et al., 2012). Finally, cases and controls are also available within large-scale biobanks, for example, UK Biobank, which could also be leveraged in future iterations of this analysis (Munaf\u00f2 et al., 2018).\n\nIncluded individuals were genotyped on a variety of genotyping arrays (Table 1, Supplementary file 1), and raw genotyping data was available for eight datasets and for the remainder association testing summary statistics were obtained to use in the meta-analysis (Table 1, Supplementary file 1). Quality control (QC) of raw genotyping data (Table 1, Supplementary file 1) was done using Plink (v1.9), followed by pre-phasing using SHAPEIT and imputation with IMPUTE2 with the 1000 genomes phase 3 reference panel (Chang et al., 2015; Delaneau et al., 2013; Howie et al., 2009; Sudmant et al., 2015). QC and imputation were done as described previously (Schurz et al., 2018; Schurz et al., 2019); briefly, we used a MAF filter of 0.025 and an individual and SNP missingness filter of 0.1. Hardy\u2013Weinberg equilibrium threshold was set at a Bonferroni-corrected p-value according to the number of SNPs testes (0.05/number of SNPs) and samples where sex could not be determined from genotyping were also removed. Imputed data was filtered at a quality score of 0.3, prior to individual and genotype filtration steps. Prior to QC and imputation, allele orientation was corrected using Genotype Harmoniser version 1.4.15, and the genome build of all datasets was checked for consistency (GRCh37) and updated if necessary using the liftOver software from the UCSC genome browser (Deelen et al., 2014; Kent et al., 2002). The four datasets with only summary statistics available (Table 1, Supplementary file 1) were imputed and QC\u2019d during the original investigations, but the marker names and allele orientation were checked for concordance between the summary statistics and the rest of the consortium\u2019s imputed data.\n\n### Polygenic heritability analysis\n\nTo assess the level of genetic contribution to TB susceptibility, we estimated polygenic heritability on the individual studies for which raw genotyping data was available (Table 1, Supplementary file 1). Polygenic heritability estimates were calculated using GCTA (v1.93.2), a genomic risk prediction tool (Yang et al., 2011). The genetic relationship matrix was calculated for each autosomal chromosome. Raw genotype data was pruned for SNPs in LD using a 50 SNP window, sliding by 10 SNPs at a time and removing all variants with LD > 0.5. Samples were filtered by removing cryptic relatedness (--grm-cutoff 0.025) and assuming that the causal loci have similar distribution of allele frequencies as the genotyped SNPs (--grm-adj 0). Principal components were then calculated (--pca 20) to include as covariates prior to estimating heritability. Heritability estimations were transformed onto the liability scale using the GCTA software to account for the difference in the proportion of cases in the data compared to the population prevalence (Yang et al., 2011). The average heritability estimate was calculated by taking the mean of all estimates and the confidence intervals were estimated based on the standard error across all studies and the number of studies included.\n\n### Meta-analysis\n\nAll variants with MAF > 1% and polymorphic in at least three studies (from at least two different ancestries) were included in the primary analysis. For the GWAS, summary statistics of each dataset variants with infinite confidence intervals were removed prior to the meta-analysis. A multi-ancestry meta-analysis plus separate ancestry-specific analyses for Africa, Asia, and Europe were performed. MR-MEGA (Meta-Regression of Multi-Ethnic Genetic Association, v0.20), a meta-analysis tool that maximizes power and enhances fine-mapping when combining data across different ethnicities, was used for the multi-ancestry meta-analysis (M\u00e4gi et al., 2017). To account for the expected heterogeneity in allelic effects between populations, MR-MEGA implements a multi-ancestry meta-regression that includes covariates to represent genetic ancestry, obtained from multidimensional scaling of mean pairwise genome-wide allele frequency differences. Genomic control correction (GCC) was implemented during the MR-MEGA analysis for the individual input data (if lambda was >1.05) and output statistics, and the first two PCs, calculated from the genome-wide allele frequency differences, were included as covariates in the regression. QQ-plots of p-values and associated lambda values were used to assess the quality of results prior to downstream investigation.\n\nFor the ancestry-specific analyses, the studies were grouped by the major ancestral groups (Table 1, Supplementary file 1) and all variants with a MAF of > 1% that were observed in at least two studies were included in the meta-analysis. We performed traditional fixed-effects meta-analyses in GWAMA (v2.2.2), implementing GCC and assessed the results using QQ-plots (M\u00e4gi and Morris, 2010). The genome-wide significance threshold for all association testing was set at p-value=5 \u00d7 10-8 (Panagiotou et al., 2012).\n\n### HLA imputation\n\nTo fine-map HLA alleles over the HLA locus we imputed HLA class l and ll variants for all 8 studies for which raw data was available (Table 1 and Supplementary file 1). HLA imputation for the HLA class l regions A, B and C as well as the HLA class ll regions DPB1, DRB1, DQB1 and DQA1 was done using the R package HIBAG (version 1.5), implemented in the R free software environment (version 4.0.5) using the predict() command for imputation (R Development Core Team, 2013; Zheng, 2018; Zheng et al., 2014).\n\nThe reference datasets for HLA imputation are both genotyping panel and population-specific, and HIBAG has a database of reference data for many genotyping arrays. Each reference panel is also available for either Asian, European, or African populations or a mixture of the three (https://hibag.s3.amazonaws.com/hlares_index.html#estimates). For each dataset included for imputation, the reference panel chosen was the same as the genotyping array used for the data and the reference population was chosen to match the data as closely as possible. Asian and European reference panels were used for the Asian and European populations and African references were used for the Gambia and Ghana datasets, while mixed datasets were implemented for the admixed RSA population.\n\nFollowing imputation, the HIBAG package (hlaAssocTest) command was used to implement an additive association test for the HLA alleles across the different regions limited to alleles at MAF > 2.5%. Analyses were adjusted for the first four PCs with and without the rs28383206 genotype in the model. Association testing results for the eight included studies were then combined in a fixed-effects meta-analysis using Metasoft software (Han and Eskin, 2011). Ancestry-specific meta-analysis grouped according to the major population groups (Table 1, Supplementary file 1) was also done using the same method.\n\n### Estimation of infection pressure\n\nTo generate a covariate capturing the likely cumulative exposure to Mtb for included controls, the results of Houben and Dodd, 2016 were adapted to produce a distance matrix to feed into the meta-analysis. The approach in this article fits a Gaussian process model of infection risk history to local data. To represent uncertainty in derived results, a sample of 200 estimated histories of the annual risk of TB infection in each country was used to calculate the expected fraction of control participants ever infected with Mtb, assuming that controls were uniformly aged between 35 and 44 y in 2010, which approximates the period during which controls were recruited for most of the studies. The true age of the controls was not known for all of the datasets, but as quite a substantial skew to the age distribution would be required to have an impact on the results, we believe our choice here is justified. This was done by including estimates for the potential lifetime infections for each source population as a covariate in the MR-MEGA multi-ancestry meta regression. To determine the impact of the covariate, a chi-square difference test was implemented, on an SNP-SNP basis, on the residual and association testing statistics of two meta-analysis output statistics, one including and the other excluding the potential lifetime infections covariate (Satorra and Bentler, 2001). The aim was to determine whether inclusion of potential lifetime infections in the regression explained some of the residual heterogeneity.\n\n### Concordance of direction of effect\n\nTo determine the degree to which direction of effect is shared for SNPs between the ancestry-specific meta-analysis, we followed the methodology of Mahajan et al., 2014. First, we identified all variants present in all 12 included datasets. Among these SNPs, we then identified an independent subset of variants in the European ancestry-specific meta-analysis showing nominal evidence of association (p-value\u22640.001) and separated by at least 500 kb. The identified SNPs were then extracted from the Asian and African ancestry-specific meta-analysis results to calculate the number of SNPs that had the same direction of effect as in the European analysis. To determine whether significant excess in concordance of effect direction was present, a one-sided binomial test was implemented with the expected concordance set at 50%. This analysis was then repeated for other p-value thresholds (0.001<p\u22640.01; 0.01<p\u22640.5; and 0.5<p\u22641), and also using the African and Asian meta-analysis results as reference.\n",
+      "created_at": "2025-12-04T04:07:13.647957Z"
+    },
+    {
+      "id": "531a301b-45c5-4782-a9ff-a03689384c4c",
+      "submission_id": "e056d4bb-0b48-4625-aa15-bbcef121d2c2",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Alexander Young, https://ror.org/046rm7j60 University of California, Los Angeles United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.84394.sa0](https://doi.org/10.7554/eLife.84394.sa0)\n\nThis article describes an important multi-ancestry meta-analysis of genome-wide association studies of susceptibility to tuberculosis. It demonstrates substantial heritability from common genetic variants, although this varies across studies. The main finding of the article is a variant in the HLA region that affects tuberculosis risk, for which the evidence is solid. The results and methods will be of interest to infectious disease researchers and human genetics researchers. The article highlights both the promise and challenges of performing multi-ancestry genetic association studies of infectious disease risk.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Alexander Young, https://ror.org/046rm7j60 University of California, Los Angeles United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.84394.sa1](https://doi.org/10.7554/eLife.84394.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Multi-ancestry meta-analysis of host genetic susceptibility to tuberculosis identifies shared genetic architecture\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, including Alexander Young as Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Bavesh Kana as the Senior Editor.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\nThe reviewers agreed that your paper is an important contribution to the effort to understand the genetics of host susceptibility to tuberculosis infection. However, some points in the paper were not clear and other points need to be expanded upon.\n\n1) Please improve the clarity of the presentation of the results on SNP heritability. Please address reviewer #1's concern that the estimates should be transformed to the liability scale.\n\n2) Please address reviewer #2's comments about what is driving the HLA association\n\n3) Please address reviewers 2 and 3's comments about how your results relate to the existing associations/candidate genes discussed in the literature.\n\n4) A more precise description of inclusion/exclusion criteria for studies in the meta-analysis is needed. It would also be better if study or ancestry specific summary statistics are released on publication as well as the main meta-analysis summary statistics.\n\nReviewer #1 (Recommendations for the authors):\n\nThe heritability estimates (as far as I can tell) are from applying GCTA to the case-control data encoded as a binary outcome. In order to make these estimates comparable across studies with different case-control ratios, the authors should transform their estimates onto the liability scale.\n\nWhy were variants showing within-ancestry heterogeneity removed?\n\nIt is hard to assess whether the test for the effect of prevalence on residual heterogeneity was well-powered enough to draw any conclusions.\n\nThe claim that there should be reduced power from inclusion of admixed samples due to increased allele frequency differences doesn't make sense to me. Greater genetic diversity should increase power (but also potentially increase confounding).\n\nThe link between finding a genome-wide significant locus in the multi-ancestry meta-analysis and the fact that tuberculosis predates the dispersal of modern humans out of Africa seems tenuous to me.\n\nThe justification for leaving UK Biobank data out of the meta-analysis doesn't seem valid. While UKB is a non-representative cohort, the case-control cohorts used in the meta-analysis are likely to be even less representative than the UKB. Why not include UKB since this could increase power substantially?\n\nFigure S2: why is this on a different scale to the main GWAS results? Can it be put on the same scale to aid comparison with the GWAS results.\n\nReviewer #2 (Recommendations for the authors):\n\n1. I think the paper would benefit from having a main text table with all of the nominal associations articulated. They refer to nominal associations \u2013 but no pvalues or effect sizes are provided in the main text. Since these are important findings, this should be done. They refer to Table S3 (which I cannot find).\n\n2. I am unsure how the supplementary tables and the excel worksheets lineup. Authors refer to Figure 5, which I cannot find. Authors should carefully make sure that supplemental tables are clearly labeled and findable, along with other materials.\n\n3. Authors present replication of ASAP1 data. Is this offering independent evidence? Is there any independent evidence of previously reported SNP associations? If not authors should say clearly in the abstract that prior known TB SNP associations failed to replicate.\n\nDisappointing as the message is, perhaps it is one of the most important messages.\n\n4. Authors should repeat heritability analysis with S-LDSC (using in reference LD panel) to insure robustness of GATK results. Also stratified LDSC should be used to see if there are cell-type specific annotations or gene sets that are seen consistently across the data sets. That is \u2013 it may be possible that there are clear pathways that are enriched across populations with respect to heritability captured, even if no individual alleles replicate.\n\n5. Not clear what sort of data sharing will happen? Raw data should be share if possible \u2013 summary statistics for all of the cohorts, and of the meta-analysis.\n\nReviewer #3 (Recommendations for the authors):\n\nFirst, given the heritability focus, it would be appropriate to also cite a recent paper that included heritability estimation of a number of TB phenotypes. This paper is especially relevant because it makes the point about the importance of phenotype definition to the eventual heritability estimate, a weakness that plagues some of the GWAS studies included in this paper: https://pubmed.ncbi.nlm.nih.gov/34871961/\n\nSecond, a recent paper examined HLA in an African population and did not find associations with TB. This might also be important to cite and discuss: https://pubmed.ncbi.nlm.nih.gov/35702824/\n\nThird, a list of papers is cited about interaction between host genetic variants and strains of Mtb. Not only has this work been done in Ghana and South Africa, it has also been done in Uganda and a couple of Asian populations. This list of references really should be expanded.\n\nFourth, a few things in Table S1 need to be clarified. Several cells have identical phrases used for TB diagnosis (\"AFB staining and culturing of Mtb from sputum samples\"). Is it really \"and\" or is it sometimes \"or\" or \"and/or\"? Do all of these studies truly have identical definitions? Was chest x-ray ever used in the definition? This seems quite surprising given previous reviews that have detailed the phenotype definitions in some of these studies. A few cells have \"NA\" listed in the TB diagnosis. This must be spelt out in the footnote of the table. Also, do those papers really have no detail about the phenotype definition? There must be something.\n\nFifth, Table S2 presenting the polygenic heritability analyses really needs to be clarified. The column headers are not explained in the footnote. What is the difference between 0.1x', 1x', and 10x', and what does that have to do with heritability? There is also relatively little discussion of this rather complex table in the Results. It also must be clarified in the Methods whether the SNPs were thinned for LD (this is generally done in these sorts of analyses).\n\nSixth, the supplemental data file really should include some sort of readme to help the reviewer know what they are looking at. While the manuscript includes a list of citations of papers that were used in these candidate gene look-ups, it would be helpful if the Supplementary file included a list of genes looked-up. It also isn't clear if only GWAS hits were looked up, or well-studied candidate genes. If not the latter, they really should be included, given the wealth of research in this area.\n\nSeventh, please clarify the infection pressure analysis. This is potentially a nice addition, but it isn't described very clearly. What are \"a sample of 200 estimated histories\"? There is an assumption that controls were \"uniformly between 25-44 in 2010\" \u2013 do the authors have age distributions for the controls in all these GWAS studies, and if the data were collected before 2010, how does that impact things?\n\n[Editors\u2019 note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Multi-ancestry meta-analysis of host genetic susceptibility to tuberculosis identifies shared genetic architecture\" for further consideration by eLife. Your revised article has been evaluated by Bavesh Kana (Senior Editor) and a Reviewing Editor.\n\nThe manuscript has been improved but there are some remaining issues that need to be addressed, as outlined below:\n\nPlease address the remaining concerns of reviewer 2. Please also include a comment on the limitations that they may have missed including relevant datasets that they were unaware of.\n\nReviewer #3 (Recommendations for the authors):\n\nThe authors addressed most of the prior comments very thoroughly. A couple of issues remain:\n\n1) The paper that I referenced earlier https://pubmed.ncbi.nlm.nih.gov/34871961/ also includes heritability of TB disease (see Table 3).\n\n2) Thank you for including the thorough case and control definitions in Supplemental Table 1a. Please review it carefully \u2013 it seems that some of the case and control definitions are reversed (for example, China 1 and China 2, both have descriptions of healthy individuals under case and TB disease diagnosis under control). There are some important points seen in this table. First, TB was not always excluded from the control populations \u2013 often these are generic controls, and this can introduce misclassification bias. Second, the lack of specificity of TB diagnosis also introduces heterogeneity and potential misclassification as well. Not all studies used the gold standard for TB diagnosis \u2013 how does this affect interpretation?\n",
+      "created_at": "2025-12-04T04:07:13.647957Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T04:07:13.647957Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T04:07:13.647957Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "1fea4981-56b5-4c2d-be69-4baa7943ce0b",
+      "content_id": "a21e7490-d92d-4c06-ac9b-c38ffe3ca587",
+      "claim_id": "C1",
+      "claim": "Around one-quarter of the global population is estimated to show immunological evidence of prior exposure to Mycobacterium tuberculosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Around one-quarter of the global population is estimated to show immunological evidence of prior exposure to Mtb (Houben and Dodd, 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Houben and Dodd, 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:07:13.647957Z"
+    },
+    {
+      "id": "d7fbacb9-b439-4ffb-a0cf-c82dc61e6492",
+      "content_id": "a21e7490-d92d-4c06-ac9b-c38ffe3ca587",
+      "claim_id": "C2",
+      "claim": "In 2019 an estimated 10 million people developed tuberculosis disease.",
+      "claim_type": "EXPLICIT",
+      "source": "in 2019 an estimated 10 million people developed the disease, resulting in 1.4 million deaths (WHO, 2020)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to WHO, 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:07:13.647957Z"
+    },
+    {
+      "id": "fe294475-6597-47b0-ab74-a316f4b6a665",
+      "content_id": "a21e7490-d92d-4c06-ac9b-c38ffe3ca587",
+      "claim_id": "C3",
+      "claim": "In 2019 tuberculosis resulted in 1.4 million deaths.",
+      "claim_type": "EXPLICIT",
+      "source": "in 2019 an estimated 10 million people developed the disease, resulting in 1.4 million deaths (WHO, 2020)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to WHO, 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:07:13.647957Z"
+    },
+    {
+      "id": "a5bfe5b3-a586-42e4-96bf-209077ff7e54",
+      "content_id": "a21e7490-d92d-4c06-ac9b-c38ffe3ca587",
+      "claim_id": "C4",
+      "claim": "Over 100 candidate genes have been studied for tuberculosis susceptibility.",
+      "claim_type": "EXPLICIT",
+      "source": "Over 100 candidate genes have been studied, but few associations have proven reproducible (Naranbhai, 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Naranbhai, 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:07:13.647957Z"
+    },
+    {
+      "id": "e2206ca1-5019-4fb9-b58c-60ba2aad43f8",
+      "content_id": "a21e7490-d92d-4c06-ac9b-c38ffe3ca587",
+      "claim_id": "C5",
+      "claim": "Few tuberculosis candidate gene associations have proven reproducible.",
+      "claim_type": "EXPLICIT",
+      "source": "Over 100 candidate genes have been studied, but few associations have proven reproducible (Naranbhai, 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Naranbhai, 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:07:13.647957Z"
+    },
+    {
+      "id": "e56f562f-ac0c-424d-9818-f94389f35582",
+      "content_id": "a21e7490-d92d-4c06-ac9b-c38ffe3ca587",
+      "claim_id": "C6",
+      "claim": "Seventeen tuberculosis genome-wide association studies have been reported.",
+      "claim_type": "EXPLICIT",
+      "source": "Seventeen GWAS have been reported but only two loci replicate between studies (Daya et al., 2014a; Schurz et al., 2018; Chimusa et al., 2014; The Wellcome Trust Case Control Consortium, 2007; Curtis et al., 2015; Mahasirimongkol et al., 2012; Qi et al., 2017; Thye et al., 2010; Thye et al., 2012; Quistrebert et al., 2021; Sveinbjornsson et al., 2016; Hong et al., 2017; Li et al., 2021; Luo et al., 2019; Zheng et al., 2018; Grant et al., 2016; Png et al., 2012)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to prior GWAS studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:07:13.647957Z"
+    },
+    {
+      "id": "cb6f45a3-61c7-4c67-b865-52fc64365617",
+      "content_id": "a21e7490-d92d-4c06-ac9b-c38ffe3ca587",
+      "claim_id": "C7",
+      "claim": "Only two loci replicate between tuberculosis genome-wide association studies.",
+      "claim_type": "EXPLICIT",
+      "source": "Seventeen GWAS have been reported but only two loci replicate between studies (Daya et al., 2014a; Schurz et al., 2018; Chimusa et al., 2014; The Wellcome Trust Case Control Consortium, 2007; Curtis et al., 2015; Mahasirimongkol et al., 2012; Qi et al., 2017; Thye et al., 2010; Thye et al., 2012; Quistrebert et al., 2021; Sveinbjornsson et al., 2016; Hong et al., 2017; Li et al., 2021; Luo et al., 2019; Zheng et al., 2018; Grant et al., 2016; Png et al., 2012)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to prior GWAS studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:07:13.647957Z"
+    },
+    {
+      "id": "ad2b99c4-f18c-4498-9815-4c53ab8bbcfc",
+      "content_id": "a21e7490-d92d-4c06-ac9b-c38ffe3ca587",
+      "claim_id": "C8",
+      "claim": "The WT1 locus was identified in cohorts from Ghana and Gambia and replicated in South Africa and Russia.",
+      "claim_type": "EXPLICIT",
+      "source": "The WT1 locus, identified in cohorts from Ghana and Gambia, replicated in South Africa and Russia.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement in text without direct citation in this sentence",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:07:13.647957Z"
+    },
+    {
+      "id": "20981eee-6614-495b-b7db-b11bfbe4436b",
+      "content_id": "a21e7490-d92d-4c06-ac9b-c38ffe3ca587",
+      "claim_id": "C9",
+      "claim": "The ASAP1 locus identified in Russia was replicated through reanalysis of prior studies.",
+      "claim_type": "EXPLICIT",
+      "source": "The ASAP1 locus identified in Russia was replicated through reanalysis of prior studies (Correa-Macedo et al., 2019; M\u00f6ller and Kinnear, 2020)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Correa-Macedo et al., 2019 and M\u00f6ller and Kinnear, 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:07:13.647957Z"
+    },
+    {
+      "id": "247691cd-b93d-41b7-9b0d-fa6a181e1b81",
+      "content_id": "a21e7490-d92d-4c06-ac9b-c38ffe3ca587",
+      "claim_id": "C10",
+      "claim": "The ITHGC includes 12 case-control GWAS from nine countries in Europe, Africa, and Asia.",
+      "claim_type": "EXPLICIT",
+      "source": "The ITHGC includes 12 case\u2013control GWAS from nine countries in Europe, Africa, and Asia (total of 14,153 pulmonary TB cases and 19,536 healthy controls)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in the manuscript text",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:07:13.647957Z"
+    },
+    {
+      "id": "dc954160-2aa4-46a3-8154-da30848e5261",
+      "content_id": "a21e7490-d92d-4c06-ac9b-c38ffe3ca587",
+      "claim_id": "C11",
+      "claim": "The ITHGC dataset includes 14,153 pulmonary tuberculosis cases and 19,536 healthy controls.",
+      "claim_type": "EXPLICIT",
+      "source": "The ITHGC includes 12 case\u2013control GWAS from nine countries in Europe, Africa, and Asia (total of 14,153 pulmonary TB cases and 19,536 healthy controls)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in the manuscript text",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:07:13.647957Z"
+    },
+    {
+      "id": "bcbe3147-57de-4731-b00a-16d19611ed81",
+      "content_id": "a21e7490-d92d-4c06-ac9b-c38ffe3ca587",
+      "claim_id": "C12",
+      "claim": "The pooled polygenic heritability for susceptibility to tuberculosis is 26.3% (95% CI 23.7\u201329.0%).",
+      "claim_type": "EXPLICIT",
+      "source": "Our analyses demonstrate a substantial degree of heritability (pooled polygenic h2 = 26.3%, 95% CI 23.7\u201329.0%) for susceptibility to TB that is shared across ancestries",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reported as a result from the study's analyses",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:07:13.647957Z"
+    },
+    {
+      "id": "15729a0d-172d-41cb-9171-901ae18ee5b4",
+      "content_id": "a21e7490-d92d-4c06-ac9b-c38ffe3ca587",
+      "claim_id": "C13",
+      "claim": "One global host genetic correlate for tuberculosis at genome-wide significance was identified in the HLA-II region (rs28383206, p-value=5.2 \u00d7 10-9).",
+      "claim_type": "EXPLICIT",
+      "source": "We identified one global host genetic correlate for TB at genome-wide significance (p<5 \u00d7 10-8) in the human leukocyte antigen (HLA)-II region (rs28383206, p-value=5.2 \u00d7 10-9)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reported as a result from the study's analyses",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:07:13.647957Z"
+    },
+    {
+      "id": "6499ffe1-23e2-452d-bd7a-0a2f46245efd",
+      "content_id": "a21e7490-d92d-4c06-ac9b-c38ffe3ca587",
+      "claim_id": "C14",
+      "claim": "The study failed to replicate variants previously associated with tuberculosis susceptibility.",
+      "claim_type": "EXPLICIT",
+      "source": "but failed to replicate variants previously associated with TB susceptibility",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a finding in the abstract",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:07:13.647957Z"
+    },
+    {
+      "id": "4e16a4e7-03ec-491c-baa2-c082acd9f7b7",
+      "content_id": "a21e7490-d92d-4c06-ac9b-c38ffe3ca587",
+      "claim_id": "C15",
+      "claim": "Twin studies estimate the narrow-sense heritability of susceptibility to tuberculosis at up to 80%.",
+      "claim_type": "EXPLICIT",
+      "source": "Twin studies estimate the narrow-sense heritability of susceptibility to TB at up to 80% (Diehl and Von, 1936; Kallmann and Reisner, 1943; Comstock, 1978)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Diehl and Von, 1936; Kallmann and Reisner, 1943; Comstock, 1978",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:07:13.647957Z"
+    },
+    {
+      "id": "8be8be00-36fc-4138-8853-f929ac491fcd",
+      "content_id": "a21e7490-d92d-4c06-ac9b-c38ffe3ca587",
+      "claim_id": "C16",
+      "claim": "Polygenic heritability of susceptibility to tuberculosis in 10 contributing studies ranged from 5 to 36%.",
+      "claim_type": "EXPLICIT",
+      "source": "we estimated polygenic heritability of susceptibility to TB in 10 contributing studies which ranged from 5 to 36% (average of 26.3%, Supplementary file 1b)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reported as a result from the study's analyses",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:07:13.647957Z"
+    },
+    {
+      "id": "6b53387e-3e4b-494d-9f95-6bf9be212680",
+      "content_id": "a21e7490-d92d-4c06-ac9b-c38ffe3ca587",
+      "claim_id": "C17",
+      "claim": "Significant differences in polygenic heritability estimates were identified between subjects with latent TB infection, active TB, and subjects classified as resistors.",
+      "claim_type": "EXPLICIT",
+      "source": "This is supported by previous research by McHenry et al., 2021a, where significant differences in polygenic heritability estimates were identified between subjects with latent TB infection (LTBI), active TB, and subjects classified as resistors. (McHenry et al., 2021a)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to McHenry et al., 2021a",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:07:13.647957Z"
+    },
+    {
+      "id": "91ce99f2-3694-45a8-bc3f-3fb8edb50b5d",
+      "content_id": "a21e7490-d92d-4c06-ac9b-c38ffe3ca587",
+      "claim_id": "C18",
+      "claim": "The variant rs28383206 is associated with susceptibility to tuberculosis at genome-wide significance (OR = 0.89, CI = 0.84\u20130.94, p-value=8.26 \u00d7 10\u20139).",
+      "claim_type": "EXPLICIT",
+      "source": "One variant (rs28383206, OR = 0.89, CI = 0.84\u20130.94, p-value=8.26 \u00d7 10\u20139) within this peak was associated with susceptibility to TB at genome-wide significance (p<5.0e\u20138, Figures 1\u20143, Table 2)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Reported as a result from the study's analyses and shown in Figures 1-3 and Table 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:07:13.647957Z"
+    },
+    {
+      "id": "59987b0f-100d-4c2a-b359-cce2cf0942a9",
+      "content_id": "a21e7490-d92d-4c06-ac9b-c38ffe3ca587",
+      "claim_id": "C19",
+      "claim": "The residual heterogeneity for rs28383206 is significant (p-value=0.012).",
+      "claim_type": "EXPLICIT",
+      "source": "Both the residual heterogeneity (p-value=0.012) and ancestry-correlated heterogeneity (p-value=5.28e\u20136) are significant (p-value<0.05) for the associated variant",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reported as a result from the study's analyses",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:07:13.647957Z"
+    },
+    {
+      "id": "aedf009f-c83a-43c1-82cd-a286b251c8fd",
+      "content_id": "a21e7490-d92d-4c06-ac9b-c38ffe3ca587",
+      "claim_id": "C20",
+      "claim": "The ancestry-correlated heterogeneity for rs28383206 is significant (p-value=5.28e\u20136).",
+      "claim_type": "EXPLICIT",
+      "source": "Both the residual heterogeneity (p-value=0.012) and ancestry-correlated heterogeneity (p-value=5.28e\u20136) are significant (p-value<0.05) for the associated variant",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reported as a result from the study's analyses",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:07:13.647957Z"
+    },
+    {
+      "id": "bc507b9c-a16a-439d-9da4-bc0df456c4d0",
+      "content_id": "a21e7490-d92d-4c06-ac9b-c38ffe3ca587",
+      "claim_id": "C21",
+      "claim": "Genetic ancestry contributes more to differences in effect sizes between GWAS than does study design for rs28383206.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the evidence of ancestry-correlated heterogeneity is much stronger than for residual heterogeneity, indicating that genetic ancestry contributes more to differences in effects sizes between GWAS than does study design (e.g., phenotyping differences and potential case\u2013control misclassification)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from comparison of heterogeneity p-values",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:07:13.647957Z"
+    },
+    {
+      "id": "cc3bdcde-6a40-46b2-9ed8-a704743062cd",
+      "content_id": "a21e7490-d92d-4c06-ac9b-c38ffe3ca587",
+      "claim_id": "C22",
+      "claim": "The association peak encompasses HLA-DRB1/5, HLA-DQA1, and HLA-DQB3 genes.",
+      "claim_type": "EXPLICIT",
+      "source": "The association peak encompasses many HLA-ll genes, including HLA-DRB1/5 (major histocompatibility complex, class II, DR beta 1/5), HLA-DQA1 (major histocompatibility complex, class II, DQ alpha 1), and HLA-DQB3 (major histocompatibility complex, class II, DQ beta 3, Figures 1 and 2)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in text and shown in Figures 1 and 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:07:13.647957Z"
+    },
+    {
+      "id": "6c3587b9-ab57-4997-9626-35f902544457",
+      "content_id": "a21e7490-d92d-4c06-ac9b-c38ffe3ca587",
+      "claim_id": "C23",
+      "claim": "The HLA class I locus is indirectly tagged through the association with rs2621322 in the TAP2 gene.",
+      "claim_type": "EXPLICIT",
+      "source": "While not reaching genome-wide significance, the HLA class l locus is also indirectly tagged through the association with rs2621322, in the TAP2 (transporter 2, ATP binding cassette subfamily B member) gene",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as an observation from the analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:07:13.647957Z"
+    },
+    {
+      "id": "87b9c3c8-e5e3-4b46-91d4-3ac0d5bb38a1",
+      "content_id": "a21e7490-d92d-4c06-ac9b-c38ffe3ca587",
+      "claim_id": "C24",
+      "claim": "TAP2 has previously been implicated in tuberculosis susceptibility.",
+      "claim_type": "EXPLICIT",
+      "source": "a transporter protein that restores surface expression of MHC class I molecules and has previously been implicated in TB susceptibility (Thu et al., 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Thu et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:07:13.647957Z"
+    },
+    {
+      "id": "02082e0b-d441-49f2-8eb5-5168df6a73c4",
+      "content_id": "a21e7490-d92d-4c06-ac9b-c38ffe3ca587",
+      "claim_id": "C25",
+      "claim": "HLA-A, DQA1, DQB1, DRB1, and TAP2 genes have previously been linked to tuberculosis susceptibility.",
+      "claim_type": "EXPLICIT",
+      "source": "HLA-A, DQA1, DQB1, DRB1, and TAP2 genes have previously been linked to TB susceptibility through TB candidate gene and GWAS analysis (Thu et al., 2016; Kinnear et al., 2017; Stein et al., 2017; Sveinbjornsson et al., 2016; Zhang et al., 2021)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to multiple prior studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:07:13.647957Z"
+    },
+    {
+      "id": "3f9354ec-69dc-4bf7-8daa-fef701d1479f",
+      "content_id": "a21e7490-d92d-4c06-ac9b-c38ffe3ca587",
+      "claim_id": "C26",
+      "claim": "The HLA-II locus encodes proteins crucial in antigen presentation, including HLA-DR, HLA-DQ, and HLA-DP.",
+      "claim_type": "EXPLICIT",
+      "source": "The HLA-II locus encodes several proteins crucial in antigen presentation, including HLA-DR, HLA-DQ, and HLA-DP, which are widely implicated in susceptibility to infection and autoimmunity (Kelly and Trowsdale, 2019; Shiina et al., 2009)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Kelly and Trowsdale, 2019 and Shiina et al., 2009",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:07:13.647957Z"
+    },
+    {
+      "id": "700eb247-5766-4ea1-8acb-4a573909d6e4",
+      "content_id": "a21e7490-d92d-4c06-ac9b-c38ffe3ca587",
+      "claim_id": "C27",
+      "claim": "HLA-DR, HLA-DQ, and HLA-DP are widely implicated in susceptibility to infection and autoimmunity.",
+      "claim_type": "EXPLICIT",
+      "source": "The HLA-II locus encodes several proteins crucial in antigen presentation, including HLA-DR, HLA-DQ, and HLA-DP, which are widely implicated in susceptibility to infection and autoimmunity (Kelly and Trowsdale, 2019; Shiina et al., 2009)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Kelly and Trowsdale, 2019 and Shiina et al., 2009",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:07:13.647957Z"
+    },
+    {
+      "id": "e30d5441-bce9-459b-a1c5-6a5a3e9b0f4f",
+      "content_id": "a21e7490-d92d-4c06-ac9b-c38ffe3ca587",
+      "claim_id": "C28",
+      "claim": "The strongest signal in the combined global HLA analyses is at DQA1*02:01, revealing a protective effect (OR = 0.88, 95% CI = 0.82\u201393, p-value=1.3e\u20135).",
+      "claim_type": "EXPLICIT",
+      "source": "Notwithstanding inconsistency across populations, the strongest signal in the combined global analyses is at DQA1*02:01, revealing a protective effect (OR = 0.88, 95% CI = 0.82\u201393, p-value=1.3e\u20135, Figure 3B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Reported as a result from the study's analyses and shown in Figure 3B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:07:13.647957Z"
+    },
+    {
+      "id": "eec53f7d-533b-4f75-9a6b-72e19a93b70c",
+      "content_id": "a21e7490-d92d-4c06-ac9b-c38ffe3ca587",
+      "claim_id": "C29",
+      "claim": "After conditioning on rs28383206, there is no residual significant association at DQA1*02:01 (p-value=0.44).",
+      "claim_type": "EXPLICIT",
+      "source": "After conditioning on the lead SNP (rs28383206) in this subset, there is no residual significant association at DQA1*02:01 (p-value=0.44, Figure 3\u2014figure supplement 1)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Reported as a result from conditional analysis and shown in Figure 3\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:07:13.647957Z"
+    },
+    {
+      "id": "cf776589-40ad-4285-a8bd-0ffa0d8e40ed",
+      "content_id": "a21e7490-d92d-4c06-ac9b-c38ffe3ca587",
+      "claim_id": "C30",
+      "claim": "The classical HLA allele DQA1*02:01 is tagging the rs28383206 association.",
+      "claim_type": "EXPLICIT",
+      "source": "suggesting that the classical allele is tagging the rs28383206 association",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the conditional analysis results",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:07:13.647957Z"
+    },
+    {
+      "id": "c6efc1ff-443d-4963-a889-2d1f82efd068",
+      "content_id": "a21e7490-d92d-4c06-ac9b-c38ffe3ca587",
+      "claim_id": "C31",
+      "claim": "DQA1*02:01 showed a protective effect in Icelandic populations (OR = 0.82, p-value=7.39e\u20134).",
+      "claim_type": "EXPLICIT",
+      "source": "This observation is consistent with previous observations of HLA analysis in Icelandic (DQA1*02:01: OR = 0.82, p-value=7.39e\u20134)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a comparison to prior findings",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:07:13.647957Z"
+    },
+    {
+      "id": "b90be850-54f0-45f4-a78c-82fe5f9d07f1",
+      "content_id": "a21e7490-d92d-4c06-ac9b-c38ffe3ca587",
+      "claim_id": "C32",
+      "claim": "DQA1*02:01 showed a protective effect in Han Chinese populations (OR = 0.82, p-value=7.39e\u20134).",
+      "claim_type": "EXPLICIT",
+      "source": "and Han Chinese populations (DQA1*02:01: OR = 0.82, p-value=7.39e\u20134)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a comparison to prior findings",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:07:13.647957Z"
+    },
+    {
+      "id": "15d4d61a-cf12-4136-bc50-85ca3983c971",
+      "content_id": "a21e7490-d92d-4c06-ac9b-c38ffe3ca587",
+      "claim_id": "C33",
+      "claim": "DQA1*02:01 showed opposite direction of effect in another Chinese population (OR = 1.28, p-value=0.0193).",
+      "claim_type": "EXPLICIT",
+      "source": "but showed opposite direction of effect in another Chinese population (DQA1*02:01: OR = 1.28, p-value=0.0193, Figure 3B; Sveinbjornsson et al., 2016; Li et al., 2021; Zheng et al., 2018)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated as a comparison to prior findings and shown in Figure 3B",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:07:13.647957Z"
+    },
+    {
+      "id": "20ce010d-7150-4744-b76b-3f6848557935",
+      "content_id": "a21e7490-d92d-4c06-ac9b-c38ffe3ca587",
+      "claim_id": "C34",
+      "claim": "Sequencing efforts of global mycobacterial isolates find hyperconservation of class II epitopes.",
+      "claim_type": "EXPLICIT",
+      "source": "Sequencing efforts of global mycobacterial isolates find hyperconservation of class II epitopes, suggesting pathogen advantage achieved through limiting HLA-II recognition and highlighting the potential complex interplay between pathogen and host evolution in modifying class II presentation in TB infection (Comas et al., 2010)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Comas et al., 2010",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:07:13.647957Z"
+    },
+    {
+      "id": "883ca846-590b-4905-a946-a6b32ce2bed3",
+      "content_id": "a21e7490-d92d-4c06-ac9b-c38ffe3ca587",
+      "claim_id": "C35",
+      "claim": "Previous work has shown evidence of interaction between genetic variants of the host and specific strains of Mycobacterium tuberculosis in Ghanaian, Ugandan, South African, and Asian populations.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous work has shown evidence of interaction between genetic variants of the host and specific strains of Mtb in Ghanaian, Ugandan, South African, and Asian populations (M\u00f6ller and Kinnear, 2020; M\u00fcller et al., 2021; Correa-Macedo et al., 2019; Salie et al., 2014; Luo et al., 2015; Wampande et al., 2019; Micheni et al., 2021; McHenry et al., 2021b; McHenry et al., 2020)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to multiple prior studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:07:13.647957Z"
+    },
+    {
+      "id": "ea1d1821-c234-47ba-99c7-f33be8b2943a",
+      "content_id": "a21e7490-d92d-4c06-ac9b-c38ffe3ca587",
+      "claim_id": "C36",
+      "claim": "Including each cohort's estimated prevalence of prior exposure had a significant impact on the residual heterogeneity and association statistics of 5% of the variants included in the meta-analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, including each cohort's estimated prevalence of prior exposure had a significant impact on the residual heterogeneity and association statistics of 5% of the variants included in the meta-analysis (419,460/8,355,367)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reported as a result from the study's analyses",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:07:13.647957Z"
+    },
+    {
+      "id": "00e1800f-a0b7-4b56-a13c-56d898c741d5",
+      "content_id": "a21e7490-d92d-4c06-ac9b-c38ffe3ca587",
+      "claim_id": "C37",
+      "claim": "The covariate for infection pressure had the biggest impact on variants with p-values in the range of 1e\u20133 to 1e\u20135.",
+      "claim_type": "EXPLICIT",
+      "source": "Separating the results into bins according to p-values revealed that the bins where the covariate had the biggest impact were for p-values in the range of 1e\u20133 to 1e\u20135 (Figure 1\u2014figure supplement 2)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Reported as a result from the study's analyses and shown in Figure 1\u2014figure supplement 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:07:13.647957Z"
+    },
+    {
+      "id": "c84ef07d-02d3-416b-bf72-3b2957cc3fda",
+      "content_id": "a21e7490-d92d-4c06-ac9b-c38ffe3ca587",
+      "claim_id": "C38",
+      "claim": "There was an overall reduction in the chi-square value for the residual heterogeneity (mean chi-square value reduced by 10) when correcting for infection pressures.",
+      "claim_type": "EXPLICIT",
+      "source": "there was still an overall reduction in the chi-square value for the residual heterogeneity (mean chi-square value reduced by 10)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reported as a result from the study's analyses",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:07:13.647957Z"
+    },
+    {
+      "id": "5c873c31-341e-48f2-960c-2c2f35af2d57",
+      "content_id": "a21e7490-d92d-4c06-ac9b-c38ffe3ca587",
+      "claim_id": "C39",
+      "claim": "There is some evidence to suggest that genetic barriers to progression to tuberculosis may be overcome if the infectious dose is high.",
+      "claim_type": "EXPLICIT",
+      "source": "There is some evidence to suggest that genetic barriers to progression to TB may be overcome if the infectious dose is high (Fox et al., 1929)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Fox et al., 1929",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:07:13.647957Z"
+    },
+    {
+      "id": "921644eb-5d3c-45da-9bc6-90fea10da080",
+      "content_id": "a21e7490-d92d-4c06-ac9b-c38ffe3ca587",
+      "claim_id": "C40",
+      "claim": "A suggestive association peak on chromosome 9 (rs4576509, p-value=7.40e\u201307) was intergenic.",
+      "claim_type": "EXPLICIT",
+      "source": "One chr9 peak (rs4576509, p-value=7.40e\u201307) was intergenic (Figure 1\u2014figure supplement 3)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Reported as a result from the study's analyses and shown in Figure 1\u2014figure supplement 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:07:13.647957Z"
+    },
+    {
+      "id": "3be19d8d-f0b5-4f89-93ce-49f70f9bb617",
+      "content_id": "a21e7490-d92d-4c06-ac9b-c38ffe3ca587",
+      "claim_id": "C41",
+      "claim": "A suggestive association (rs6477824, p-value=2.99e\u201307) is located in the 5\u2032-UTR region of the ZNF483 gene.",
+      "claim_type": "EXPLICIT",
+      "source": "while the second (rs6477824, p-value=2.99e\u201307) is located in the 5\u2032-UTR region of the zinc finger protein 483 (ZNF483) gene (Figure 1\u2014figure supplement 3)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Reported as a result from the study's analyses and shown in Figure 1\u2014figure supplement 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:07:13.647957Z"
+    },
+    {
+      "id": "484d0696-5248-4385-a731-d4f7d7255ced",
+      "content_id": "a21e7490-d92d-4c06-ac9b-c38ffe3ca587",
+      "claim_id": "C42",
+      "claim": "ZNF483 has previously been associated with age at menarche.",
+      "claim_type": "EXPLICIT",
+      "source": "previously associated with age at menarche (Demerath et al., 2013; Elks et al., 2010)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Demerath et al., 2013 and Elks et al., 2010",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:07:13.647957Z"
+    },
+    {
+      "id": "117e0a7c-6194-4ed1-aebf-9b5d53acde27",
+      "content_id": "a21e7490-d92d-4c06-ac9b-c38ffe3ca587",
+      "claim_id": "C43",
+      "claim": "A suggestive association on chromosome 11 (rs12362545, p-value=1.24e\u201306) is located in the PPFIBP2 gene.",
+      "claim_type": "EXPLICIT",
+      "source": "The chromosome 11 peak (rs12362545, p-value=1.24e\u201306) is located in the PPFIA binding protein 2 (PPFIBP2) gene (Figure 1\u2014figure supplement 4)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Reported as a result from the study's analyses and shown in Figure 1\u2014figure supplement 4",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:07:13.647957Z"
+    },
+    {
+      "id": "a6302b4a-201b-4c39-83dd-f87eb7a6f3f0",
+      "content_id": "a21e7490-d92d-4c06-ac9b-c38ffe3ca587",
+      "claim_id": "C44",
+      "claim": "PPFIBP2 plays a role in axon guidance and neuronal synapse development.",
+      "claim_type": "EXPLICIT",
+      "source": "which plays a role in axon guidance and neuronal synapse development and has previously been implicated in cancer development (Colas et al., 2011; Wu et al., 2018)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Colas et al., 2011 and Wu et al., 2018",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:07:13.647957Z"
+    },
+    {
+      "id": "c0fb212e-0b9f-4fac-bfdc-2ef29fecdca8",
+      "content_id": "a21e7490-d92d-4c06-ac9b-c38ffe3ca587",
+      "claim_id": "C45",
+      "claim": "PPFIBP2 has previously been implicated in cancer development.",
+      "claim_type": "EXPLICIT",
+      "source": "which plays a role in axon guidance and neuronal synapse development and has previously been implicated in cancer development (Colas et al., 2011; Wu et al., 2018)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Colas et al., 2011 and Wu et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:07:13.647957Z"
+    },
+    {
+      "id": "d8d0a471-d06f-4c2c-9563-eb2796b12e4c",
+      "content_id": "a21e7490-d92d-4c06-ac9b-c38ffe3ca587",
+      "claim_id": "C46",
+      "claim": "A suggestive association on chromosome 16 (rs35787595, p-value=5.41e\u201306) is located in the CFDP1 gene region.",
+      "claim_type": "EXPLICIT",
+      "source": "The final peak (rs35787595, p-value=5.41e\u201306), on chromosome 16 (Figure 1\u2014figure supplement 5), is located in the craniofacial development protein 1 (CFDP1) gene region",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Reported as a result from the study's analyses and shown in Figure 1\u2014figure supplement 5",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:07:13.647957Z"
+    },
+    {
+      "id": "d0d61cae-8692-47ac-a62e-617b652cb58a",
+      "content_id": "a21e7490-d92d-4c06-ac9b-c38ffe3ca587",
+      "claim_id": "C47",
+      "claim": "CFDP1 is involved in chromatin organization.",
+      "claim_type": "EXPLICIT",
+      "source": "and involved in chromatin organization (Messina et al., 2017)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Messina et al., 2017",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:07:13.647957Z"
+    },
+    {
+      "id": "a0cdbc1c-5ecd-475b-a9cc-016013a98b56",
+      "content_id": "a21e7490-d92d-4c06-ac9b-c38ffe3ca587",
+      "claim_id": "C48",
+      "claim": "Significant enrichment in the concordance of direction of effect was only observed when using the European ancestry as reference compared to the African meta-analysis results for SNPs with p-values>0.001 and <0.01 (p-value=0.0061).",
+      "claim_type": "EXPLICIT",
+      "source": "Significant enrichment in the concordance of direction of effect was only observed when using the European ancestry as reference compared to the African meta-analysis results for SNPs with p-values>0.001 and <0.01 (p-value=0.0061, Supplementary file 1d)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reported as a result from the study's analyses",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:07:13.647957Z"
+    },
+    {
+      "id": "cfa32ec1-effc-45df-a8f0-2ab8576948f9",
+      "content_id": "a21e7490-d92d-4c06-ac9b-c38ffe3ca587",
+      "claim_id": "C49",
+      "claim": "The RSA population is a five-way admixed South African population with genetic contributions from Bantu-speaking African, KhoeSan, European, and South and South East Asian populations.",
+      "claim_type": "EXPLICIT",
+      "source": "The RSA population is a five-way admixed South African population with genetic contributions from Bantu-speaking African, KhoeSan, European, and South and South East Asian populations, which explains the observed shift in the PCA plot (Daya et al., 2013; Figure 4)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by citation to Daya et al., 2013 and shown in Figure 4",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:07:13.647957Z"
+    },
+    {
+      "id": "e9383789-a720-4d04-8e78-13ceda0c71a9",
+      "content_id": "a21e7490-d92d-4c06-ac9b-c38ffe3ca587",
+      "claim_id": "C50",
+      "claim": "No significant associations were found for the ancestry-specific analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "After removing associations without any clear peaks on the Manhattan plots (associations driven by a single study), we found no significant associations for the ancestry-specific analysis",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reported as a result from the study's analyses",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:07:13.647957Z"
+    },
+    {
+      "id": "9aaabceb-37a2-4619-aac5-b1e702353382",
+      "content_id": "a21e7490-d92d-4c06-ac9b-c38ffe3ca587",
+      "claim_id": "C51",
+      "claim": "Suggestive peaks that did not reach genome-wide significance were identified in the European and Asian ancestry-specific analyses.",
+      "claim_type": "EXPLICIT",
+      "source": "However, suggestive peaks that did not reach genome-wide significance were identified in the European and Asian ancestry-specific analyses (Figure 4\u2014figure supplements 1 and 2, Supplementary file 1e)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Reported as a result from the study's analyses and shown in Figure 4\u2014figure supplements 1 and 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:07:13.647957Z"
+    },
+    {
+      "id": "48aeed1d-3c30-4445-8fee-78f59b0034de",
+      "content_id": "a21e7490-d92d-4c06-ac9b-c38ffe3ca587",
+      "claim_id": "C52",
+      "claim": "The European analysis identified suggestive peaks on chromosomes 6 (rs28383206, p-value=7.06e\u201308), 8 (rs3935174, p-value=1.00e\u201306), and 11 (rs12362545, p-value=1.06e\u201307).",
+      "claim_type": "EXPLICIT",
+      "source": "For the European analysis (Figure 4\u2014figure supplement 1), suggestive peaks were identified on chromosomes 6 (rs28383206, p-value=7.06e\u201308), 8 (rs3935174, p-value=1.00e\u201306), and 11 (rs12362545, p-value=1.06e\u201307, Supplementary file 1e)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Reported as a result from the study's analyses and shown in Figure 4\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:07:13.647957Z"
+    },
+    {
+      "id": "74f4b412-25a6-4612-bfda-ea60bf136303",
+      "content_id": "a21e7490-d92d-4c06-ac9b-c38ffe3ca587",
+      "claim_id": "C53",
+      "claim": "The Asian analysis identified suggestive peaks on chromosome 6 (rs146049519, p-value=1.06e\u201306) and 8 (rs62495207, p-value=5.10e\u201306).",
+      "claim_type": "EXPLICIT",
+      "source": "while the Asian (Figure 4\u2014figure supplement 2) analysis identified suggestive peaks on chromosome 6 (rs146049519, p-value=1.06e\u201306) and 8 (rs62495207, p-value=5.10e\u201306, Supplementary file 1e)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Reported as a result from the study's analyses and shown in Figure 4\u2014figure supplement 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:07:13.647957Z"
+    },
+    {
+      "id": "6b92a6e4-79e2-47a0-a84f-543d929dafde",
+      "content_id": "a21e7490-d92d-4c06-ac9b-c38ffe3ca587",
+      "claim_id": "C54",
+      "claim": "The strongest signal for the chromosome 8 peak in the European analysis (rs3935174, OR = 0.87, p-value=1.00e\u20136) is located in the ASAP1 region.",
+      "claim_type": "EXPLICIT",
+      "source": "The strongest signal for this peak (rs3935174, OR = 0.87, p-value=1.00e\u20136) is located in the ArfGAP with SH3 domain, ankyrin repeat, and PH domain 1 (ASAP1) region",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reported as a result from the study's analyses",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:07:13.647957Z"
+    },
+    {
+      "id": "cb42772f-fef5-4994-93dc-af5ba4e96ecd",
+      "content_id": "a21e7490-d92d-4c06-ac9b-c38ffe3ca587",
+      "claim_id": "C55",
+      "claim": "ASAP1 encodes an ADP-ribosylation factor GTPase-activating protein and is potentially involved in the regulation of membrane trafficking and cytoskeleton remodeling.",
+      "claim_type": "EXPLICIT",
+      "source": "which encodes an ADP-ribosylation factor (ARF) GTPase-activating protein and is potentially involved in the regulation of membrane trafficking and cytoskeleton remodeling (Brown et al., 1998)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Brown et al., 1998",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:07:13.647957Z"
+    },
+    {
+      "id": "03de41a2-16a8-4755-9989-8ab6b6308871",
+      "content_id": "a21e7490-d92d-4c06-ac9b-c38ffe3ca587",
+      "claim_id": "C56",
+      "claim": "Variants in ASAP1 (rs4733781 and rs10956514) have previously been linked to tuberculosis susceptibility in a Russian population.",
+      "claim_type": "EXPLICIT",
+      "source": "Variants in ASAP1 (rs4733781 and rs10956514) have previously been linked to TB susceptibility in a TB-GWAS analysis of the same Russian population included here (Curtis et al., 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Curtis et al., 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:07:13.647957Z"
+    },
+    {
+      "id": "555465b5-4b90-4e83-9179-26f64b0110a0",
+      "content_id": "a21e7490-d92d-4c06-ac9b-c38ffe3ca587",
+      "claim_id": "C57",
+      "claim": "rs4733781 did not replicate in a previous GWAS from Iceland.",
+      "claim_type": "EXPLICIT",
+      "source": "rs4733781 also did not replicate in a previous GWAS from Iceland (Sveinbjornsson et al., 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Sveinbjornsson et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:07:13.647957Z"
+    },
+    {
+      "id": "d56feb23-4cbc-48cf-9fb6-df28d416bc6f",
+      "content_id": "a21e7490-d92d-4c06-ac9b-c38ffe3ca587",
+      "claim_id": "C58",
+      "claim": "Two candidate SNPs (rs4733781: p-value=3.22e\u20135; rs10956514: p-value=0.000118) replicated in the multi-ancestry meta-analysis, both located in the ASAP1 gene region.",
+      "claim_type": "EXPLICIT",
+      "source": "Using a Bonferroni-corrected p-value of 0.0015 for the number of SNPs tested (33) as the significance threshold for replication, two candidate SNPs (rs4733781: p-value=3.22e\u20135; rs10956514: p-value=0.000118; Source data 1, sheets 3 and 4) replicated in the multi-ancestry meta-analysis, both located in the ASAP1 gene region (Curtis et al., 2015; Chen et al., 2019; Wang et al., 2018)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reported as a result from the study's analyses",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:07:13.647957Z"
+    },
+    {
+      "id": "ebf3b2a6-956b-471e-ae29-fae3884e00b1",
+      "content_id": "a21e7490-d92d-4c06-ac9b-c38ffe3ca587",
+      "claim_id": "C59",
+      "claim": "The ASAP1 associations are driven by the Russian dataset.",
+      "claim_type": "EXPLICIT",
+      "source": "However, as discussed in the previous section, these associations are driven by the Russian dataset, which is the same data used by Curtis et al., 2015, where these associations were originally discovered (Curtis et al., 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from comparison with prior study",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:07:13.647957Z"
+    },
+    {
+      "id": "e38c06a8-052f-4ae0-9069-40b8f6fb1abd",
+      "content_id": "a21e7490-d92d-4c06-ac9b-c38ffe3ca587",
+      "claim_id": "C60",
+      "claim": "For the Asian ancestry-specific analysis, the replicated variant was rs41553512, located in the HLA-DRB5 gene (p-value=3.53E-05).",
+      "claim_type": "EXPLICIT",
+      "source": "For the Asian ancestry-specific analysis, the replicated variant was rs41553512, located in the HLA-DRB5 gene (p-value=3.53E-05)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reported as a result from the study's analyses",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:07:13.647957Z"
+    },
+    {
+      "id": "66c466dd-f2fc-40ae-a9d7-61675188cddb",
+      "content_id": "a21e7490-d92d-4c06-ac9b-c38ffe3ca587",
+      "claim_id": "C61",
+      "claim": "rs41553512 was previously identified by Qi et al., 2017 in a Han Chinese population.",
+      "claim_type": "EXPLICIT",
+      "source": "HLA-DRB5 is located within the HLA-ll region identified in the multi-ancestry meta-analysis (Figure 1) and was previously identified by Qi et al., 2017 in a Han Chinese population",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by citation to Qi et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:07:13.647957Z"
+    },
+    {
+      "id": "38fa7146-18d5-4f6c-b4b0-1580a4e2773a",
+      "content_id": "a21e7490-d92d-4c06-ac9b-c38ffe3ca587",
+      "claim_id": "C62",
+      "claim": "The African ancestry-specific analysis did not replicate previous associations.",
+      "claim_type": "EXPLICIT",
+      "source": "The African ancestry-specific analysis did not replicate previous associations, with the lowest p-value at rs6786408 in the FOXP1 gene (p-value=0.023)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reported as a result from the study's analyses",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:07:13.647957Z"
+    },
+    {
+      "id": "30d117d5-f0f7-43ae-898d-41e48c903731",
+      "content_id": "a21e7490-d92d-4c06-ac9b-c38ffe3ca587",
+      "claim_id": "C63",
+      "claim": "A study investigating the outcomes of Mtb exposure in individuals of African ancestry identified protective effects of HLA class II alleles for individuals resistant to TB.",
+      "claim_type": "EXPLICIT",
+      "source": "A study investigating the outcomes of Mtb exposure in individuals of African ancestry identified protective effects of HLA class II alleles for individuals resistant to TB, highlighting the importance of HLA class II and susceptibility to TB (Dawkins et al., 2022)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Dawkins et al., 2022",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:07:13.647957Z"
+    },
+    {
+      "id": "b3ed62df-1013-4cb1-a2ab-2d01808966d2",
+      "content_id": "a21e7490-d92d-4c06-ac9b-c38ffe3ca587",
+      "claim_id": "C64",
+      "claim": "HLA class II is a key determinant of the immune response in tuberculosis.",
+      "claim_type": "EXPLICIT",
+      "source": "HLA class II is a key determinant of the immune response in TB, and Mtb has the mechanisms to directly interfere with MHC class 2 antigen presentation (Sia and Rengarajan, 2019)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Sia and Rengarajan, 2019",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:07:13.647957Z"
+    },
+    {
+      "id": "a9908f1c-3729-4f26-8424-89251f30f84a",
+      "content_id": "a21e7490-d92d-4c06-ac9b-c38ffe3ca587",
+      "claim_id": "C65",
+      "claim": "Mycobacterium tuberculosis has mechanisms to directly interfere with MHC class 2 antigen presentation.",
+      "claim_type": "EXPLICIT",
+      "source": "HLA class II is a key determinant of the immune response in TB, and Mtb has the mechanisms to directly interfere with MHC class 2 antigen presentation (Sia and Rengarajan, 2019)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Sia and Rengarajan, 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:07:13.647957Z"
+    },
+    {
+      "id": "0bfb8705-4f3f-4ae2-b9c9-1292a9ceaf28",
+      "content_id": "a21e7490-d92d-4c06-ac9b-c38ffe3ca587",
+      "claim_id": "C66",
+      "claim": "Mice in which the MHC class II genes were deleted died quickly when exposed to Mycobacterium tuberculosis.",
+      "claim_type": "EXPLICIT",
+      "source": "This is supported by studies in mice, where mice in which the MHC class ll genes were deleted died quickly when exposed to Mtb and died faster than the mice in which MHC class I genes were deleted (Sia and Rengarajan, 2019)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Sia and Rengarajan, 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:07:13.647957Z"
+    },
+    {
+      "id": "9e4720a0-964a-4c15-8d14-776d7e2bd05c",
+      "content_id": "a21e7490-d92d-4c06-ac9b-c38ffe3ca587",
+      "claim_id": "C67",
+      "claim": "Mice in which MHC class II genes were deleted died faster than mice in which MHC class I genes were deleted when exposed to Mycobacterium tuberculosis.",
+      "claim_type": "EXPLICIT",
+      "source": "This is supported by studies in mice, where mice in which the MHC class ll genes were deleted died quickly when exposed to Mtb and died faster than the mice in which MHC class I genes were deleted (Sia and Rengarajan, 2019)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Sia and Rengarajan, 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:07:13.647957Z"
+    },
+    {
+      "id": "e0f3f87f-4351-48d7-8206-ca2f8a22e0e5",
+      "content_id": "a21e7490-d92d-4c06-ac9b-c38ffe3ca587",
+      "claim_id": "C68",
+      "claim": "The p-values of residual heterogeneity in genetic effects between the studies in the multi-ancestry meta-analysis show no significant inflation between the studies.",
+      "claim_type": "EXPLICIT",
+      "source": "The p-values of residual heterogeneity in genetic effects between the studies in the multi-ancestry meta-analysis show no significant inflation between the studies",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reported as an observation from the analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:07:13.647957Z"
+    },
+    {
+      "id": "24ab1331-d3b0-4898-9c8f-c78731ea2f73",
+      "content_id": "a21e7490-d92d-4c06-ac9b-c38ffe3ca587",
+      "claim_id": "C69",
+      "claim": "The ancestry-correlated heterogeneity p-values are generally lower than the residual heterogeneity.",
+      "claim_type": "EXPLICIT",
+      "source": "The ancestry-correlated heterogeneity p-values are generally lower than the residual heterogeneity, suggesting that genetic ancestry has a stronger impact on the differences in effects sizes between the studies",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reported as an observation from the analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:07:13.647957Z"
+    },
+    {
+      "id": "6233a28b-057a-453c-b9b8-5eaa18440e17",
+      "content_id": "a21e7490-d92d-4c06-ac9b-c38ffe3ca587",
+      "claim_id": "C70",
+      "claim": "Genetic ancestry has a stronger impact on the differences in effect sizes between the studies than study characteristics.",
+      "claim_type": "EXPLICIT",
+      "source": "The ancestry-correlated heterogeneity p-values are generally lower than the residual heterogeneity, suggesting that genetic ancestry has a stronger impact on the differences in effects sizes between the studies",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from comparison of heterogeneity measures",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:07:13.647957Z"
+    },
+    {
+      "id": "851ba44d-76ea-430c-95ec-cf4dcef93abd",
+      "content_id": "a21e7490-d92d-4c06-ac9b-c38ffe3ca587",
+      "claim_id": "C71",
+      "claim": "Previous TB genetic association studies have identified significant effects of ancestry on TB susceptibility.",
+      "claim_type": "EXPLICIT",
+      "source": "This is supported by the fact that previous TB genetic association studies have identified significant effects of ancestry on TB susceptibility (Chimusa et al., 2014; Daya et al., 2014b)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Chimusa et al., 2014 and Daya et al., 2014b",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:07:13.647957Z"
+    },
+    {
+      "id": "fafcc92a-1ffd-46e2-9536-1d026c36f15f",
+      "content_id": "a21e7490-d92d-4c06-ac9b-c38ffe3ca587",
+      "claim_id": "C72",
+      "claim": "This large-scale multi-ancestry TB GWAS meta-analysis revealed significant associations and shared genetic TB susceptibility architecture across multiple populations from different genetic backgrounds.",
+      "claim_type": "EXPLICIT",
+      "source": "In conclusion, this large-scale multi-ancestry TB GWAS meta-analysis revealed significant associations and shared genetic TB susceptibility architecture across multiple populations from different genetic backgrounds",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary statement of the study's findings",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:07:13.647957Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "e084fb30-9240-4d28-b2f0-c92141bfe06e",
+      "content_id": "a21e7490-d92d-4c06-ac9b-c38ffe3ca587",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The manuscript provides epidemiological context for tuberculosis, stating that approximately one-quarter of the global population shows immunological evidence of prior Mtb exposure, and that in 2019, 10 million people developed TB disease resulting in 1.4 million deaths.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3 are background epidemiological facts supported by appropriate citations (Houben and Dodd, 2016; WHO, 2020). These provide context for the study but are not original findings from this research.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:07:13.647957Z"
+    },
+    {
+      "id": "d0f6beae-ae58-43c2-8e86-c57e12e6805d",
+      "content_id": "a21e7490-d92d-4c06-ac9b-c38ffe3ca587",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Prior research on TB genetic susceptibility has been limited by poor replication, with over 100 candidate genes studied but few reproducible associations, and only two loci (WT1 and ASAP1) replicating across the 17 published GWAS.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C9 accurately summarize prior work with appropriate citations. These claims establish the rationale for the current large-scale meta-analysis by highlighting the replication problem in TB genetics research.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:07:13.647957Z"
+    },
+    {
+      "id": "a23424c1-80dd-41ed-afa6-f9b7bc2c0683",
+      "content_id": "a21e7490-d92d-4c06-ac9b-c38ffe3ca587",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The International Tuberculosis Host Genetics Consortium (ITHGC) dataset comprises 12 case-control GWAS from nine countries across Europe, Africa, and Asia, including 14,153 pulmonary TB cases and 19,536 healthy controls.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C11 describe the study cohort with specific numbers that are consistent with Table 1. This represents a substantial dataset for TB genetic analysis and is clearly documented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:07:13.647957Z"
+    },
+    {
+      "id": "6f08ce68-0bb3-41d2-b88b-9bc7418d9ad6",
+      "content_id": "a21e7490-d92d-4c06-ac9b-c38ffe3ca587",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The study estimates pooled polygenic heritability for TB susceptibility at 26.3% (95% CI 23.7-29.0%), with individual study estimates ranging from 5-36%, substantially lower than the up to 80% heritability estimated from twin studies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C12, C16 report heritability estimates, but the manuscript acknowledges significant limitations: varying phenotype definitions, differences in environmental pressures, and potential case-control misclassification (C17). The wide range (5-36%) and acknowledged confounders suggest these estimates should be interpreted cautiously. The comparison to twin studies (C15) highlights the discrepancy but doesn't resolve it.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:07:13.647957Z"
+    },
+    {
+      "id": "92db25e7-9ca0-4059-b1a8-f9fb186226c9",
+      "content_id": "a21e7490-d92d-4c06-ac9b-c38ffe3ca587",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The multi-ancestry meta-analysis identified one genome-wide significant association at rs28383206 in the HLA-II region (OR=0.89, p=8.26\u00d710\u207b\u2079), with significant both residual (p=0.012) and ancestry-correlated heterogeneity (p=5.28\u00d710\u207b\u2076), where genetic ancestry contributes more to effect size differences than study design.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13, C18-C21 describe the primary finding with appropriate statistical support. The identification of significant heterogeneity (both residual and ancestry-correlated) is properly reported, and the inference that ancestry contributes more than study design (C21) is justified by comparing p-values. Figures 1-3 support these findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:07:13.647957Z"
+    },
+    {
+      "id": "cec8292a-6dc4-4f8f-ad40-c0b97073383f",
+      "content_id": "a21e7490-d92d-4c06-ac9b-c38ffe3ca587",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The chromosome 6 association peak encompasses multiple HLA-II genes (HLA-DRB1/5, HLA-DQA1, HLA-DQB3) and indirectly tags HLA class I through TAP2, genes previously implicated in TB susceptibility and known to encode proteins crucial for antigen presentation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C27 describe the genomic context of the significant association with appropriate citations for prior work (C24, C25) and biological function (C26, C27). The association peak is clearly shown in Figures 1-2, supporting the claim about encompassed genes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:07:13.647957Z"
+    },
+    {
+      "id": "cd38f398-c386-45f7-8ac9-843c5f125918",
+      "content_id": "a21e7490-d92d-4c06-ac9b-c38ffe3ca587",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "HLA fine-mapping identified DQA1*02:01 as the strongest signal (OR=0.88, p=1.3\u00d710\u207b\u2075), but this association disappears after conditioning on rs28383206 (p=0.44), suggesting DQA1*02:01 tags the SNP association. The allele shows protective effects in Icelandic and some Chinese populations but opposite effects in another Chinese population.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C33 describe HLA fine-mapping results with conditional analysis (C29) properly demonstrating that the classical HLA allele tags the SNP association (C30). The inconsistency across populations (C31-C33) is acknowledged and supported by citations, highlighting the complexity of HLA associations in TB. Figure 3B supports these findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:07:13.647957Z"
+    },
+    {
+      "id": "3ce79af3-b37b-45da-921c-32c0a83815da",
+      "content_id": "a21e7490-d92d-4c06-ac9b-c38ffe3ca587",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Prior research has documented hyperconservation of class II epitopes in global Mtb isolates and evidence of host-pathogen genetic interactions in multiple populations, suggesting complex evolutionary interplay between pathogen and host.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C35 cite prior work appropriately (Comas et al., 2010; multiple citations for C35) to provide biological context for the observed HLA associations and heterogeneity across populations. These support the interpretation of results but are not original findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:07:13.647957Z"
+    },
+    {
+      "id": "60e81848-0042-41b3-865f-a8bb48d61052",
+      "content_id": "a21e7490-d92d-4c06-ac9b-c38ffe3ca587",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Including estimated prevalence of prior Mtb exposure as a covariate significantly impacted 5% of variants (419,460/8,355,367), with the largest effects on variants with p-values between 1\u00d710\u207b\u00b3 and 1\u00d710\u207b\u2075, and reduced mean chi-square for residual heterogeneity by 10.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C36-C38 report that infection pressure correction affected 5% of variants, which the authors note is consistent with chance alone at p<0.05. While there was an overall reduction in heterogeneity (C38), the manuscript acknowledges this is likely not the main driver. The biological rationale (C39) is cited but the empirical impact appears modest and potentially spurious.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:07:13.647957Z"
+    },
+    {
+      "id": "dfd186c4-f8a9-4c5a-84a2-0727982684ed",
+      "content_id": "a21e7490-d92d-4c06-ac9b-c38ffe3ca587",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Four suggestive associations (p<1\u00d710\u207b\u2076) were identified on chromosomes 9 (rs4576509, rs6477824 in ZNF483), 11 (rs12362545 in PPFIBP2), and 16 (rs35787595 in CFDP1), none reaching genome-wide significance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C40-C47 describe suggestive associations that did not reach genome-wide significance. The manuscript explicitly states these require further validation before conclusions can be drawn about their impact on TB susceptibility. The biological relevance of these genes to TB is unclear, and prior associations are with unrelated phenotypes (C42, C44-C45, C47).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:07:13.647957Z"
+    },
+    {
+      "id": "a36e3a89-3e9e-49c8-a32f-f83d62106ef5",
+      "content_id": "a21e7490-d92d-4c06-ac9b-c38ffe3ca587",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Ancestry-specific meta-analyses found no genome-wide significant associations, with significant concordance in direction of effect only between European and African ancestries for SNPs with 0.001<p<0.01, and suggestive peaks identified only in European and Asian analyses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C51 accurately report the ancestry-specific analysis results. The lack of genome-wide significant findings and limited concordance between ancestries (C48) is properly documented. The explanation for RSA population structure (C49) is supported by citation and Figure 4. The reduced power in ancestry-specific analyses is acknowledged.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:07:13.647957Z"
+    },
+    {
+      "id": "a676de49-6d0c-4c7c-9687-acdd386201b5",
+      "content_id": "a21e7490-d92d-4c06-ac9b-c38ffe3ca587",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "European ancestry-specific analysis identified suggestive peaks including rs3935174 in ASAP1 (p=1.00\u00d710\u207b\u2076), which replicated two previously reported ASAP1 variants (rs4733781, rs10956514) in the multi-ancestry analysis, but these associations are driven by the Russian dataset and did not replicate in Iceland.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C59 describe ancestry-specific findings with appropriate acknowledgment that ASAP1 associations (C54-C59) are driven by the Russian dataset that was also used in the original discovery study (Curtis et al., 2015). The lack of independent replication (C57, C59) is properly noted, indicating these are not truly validated associations despite meeting the Bonferroni threshold.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:07:13.647957Z"
+    },
+    {
+      "id": "93e680fb-0490-4b14-815f-103094d53cac",
+      "content_id": "a21e7490-d92d-4c06-ac9b-c38ffe3ca587",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Asian ancestry-specific analysis replicated rs41553512 in HLA-DRB5 (p=3.53\u00d710\u207b\u2075), previously identified in Han Chinese, while African ancestry-specific analysis did not replicate previous associations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C62 report ancestry-specific replication results. The Asian replication (C60-C61) is within the HLA-II region identified in the main analysis and is supported by prior work. The lack of replication in African populations (C62) is acknowledged and attributed to genetic diversity and admixture.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:07:13.647957Z"
+    },
+    {
+      "id": "917db4e3-be70-40ba-ae7a-e48b3067dc6b",
+      "content_id": "a21e7490-d92d-4c06-ac9b-c38ffe3ca587",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The study failed to independently replicate most variants previously associated with TB susceptibility, with only ASAP1 variants replicating but driven by the same Russian dataset used in the original discovery.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14, C58-C59, C62 collectively demonstrate the replication failure that is a central finding of this study. The ASAP1 'replication' (C58) is not independent (C59), and African analysis failed to replicate prior associations (C62). This supports the abstract claim (C14) of replication failure.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:07:13.647957Z"
+    },
+    {
+      "id": "57a21128-5332-468d-b993-e9d1c0b4c14a",
+      "content_id": "a21e7490-d92d-4c06-ac9b-c38ffe3ca587",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "HLA class II is a key determinant of TB immune response, with Mtb capable of interfering with MHC class II antigen presentation, and mouse studies showing that MHC class II deletion results in faster death upon Mtb exposure compared to MHC class I deletion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C67 provide biological context from prior work with appropriate citations (Dawkins et al., 2022; Sia and Rengarajan, 2019). These support the biological plausibility of the HLA-II associations identified in the study but are not original findings from this research.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:07:13.647957Z"
+    },
+    {
+      "id": "bd600fe9-3feb-42e6-aaef-1b1cde34ced7",
+      "content_id": "a21e7490-d92d-4c06-ac9b-c38ffe3ca587",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Analysis of heterogeneity shows no significant inflation in residual heterogeneity p-values, but ancestry-correlated heterogeneity p-values are generally lower, suggesting genetic ancestry has a stronger impact on effect size differences than study characteristics, consistent with prior TB genetic studies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C71 describe heterogeneity analysis with appropriate interpretation. The comparison between residual and ancestry-correlated heterogeneity (C69) supports the inference about ancestry effects (C70), which is further supported by prior work (C71). This analysis helps explain the limited replication and is methodologically sound.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:07:13.647957Z"
+    },
+    {
+      "id": "268a4efc-7118-4921-b687-21d881bbe484",
+      "content_id": "a21e7490-d92d-4c06-ac9b-c38ffe3ca587",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "This large-scale multi-ancestry TB GWAS meta-analysis revealed significant associations and shared genetic TB susceptibility architecture across multiple populations from different genetic backgrounds.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C72 is a summary statement supported by the identification of the HLA-II association (C13, C18) that shows evidence across multiple ancestries despite heterogeneity, and the heritability estimates (C12) demonstrating shared genetic architecture. However, the 'significant associations' (plural) is somewhat overstated given only one genome-wide significant locus was identified.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:07:13.647957Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "1fea4981-56b5-4c2d-be69-4baa7943ce0b",
+      "result_id": "e084fb30-9240-4d28-b2f0-c92141bfe06e"
+    },
+    {
+      "claim_id": "d7fbacb9-b439-4ffb-a0cf-c82dc61e6492",
+      "result_id": "e084fb30-9240-4d28-b2f0-c92141bfe06e"
+    },
+    {
+      "claim_id": "fe294475-6597-47b0-ab74-a316f4b6a665",
+      "result_id": "e084fb30-9240-4d28-b2f0-c92141bfe06e"
+    },
+    {
+      "claim_id": "a5bfe5b3-a586-42e4-96bf-209077ff7e54",
+      "result_id": "d0f6beae-ae58-43c2-8e86-c57e12e6805d"
+    },
+    {
+      "claim_id": "e2206ca1-5019-4fb9-b58c-60ba2aad43f8",
+      "result_id": "d0f6beae-ae58-43c2-8e86-c57e12e6805d"
+    },
+    {
+      "claim_id": "e56f562f-ac0c-424d-9818-f94389f35582",
+      "result_id": "d0f6beae-ae58-43c2-8e86-c57e12e6805d"
+    },
+    {
+      "claim_id": "cb6f45a3-61c7-4c67-b865-52fc64365617",
+      "result_id": "d0f6beae-ae58-43c2-8e86-c57e12e6805d"
+    },
+    {
+      "claim_id": "ad2b99c4-f18c-4498-9815-4c53ab8bbcfc",
+      "result_id": "d0f6beae-ae58-43c2-8e86-c57e12e6805d"
+    },
+    {
+      "claim_id": "20981eee-6614-495b-b7db-b11bfbe4436b",
+      "result_id": "d0f6beae-ae58-43c2-8e86-c57e12e6805d"
+    },
+    {
+      "claim_id": "247691cd-b93d-41b7-9b0d-fa6a181e1b81",
+      "result_id": "a23424c1-80dd-41ed-afa6-f9b7bc2c0683"
+    },
+    {
+      "claim_id": "dc954160-2aa4-46a3-8154-da30848e5261",
+      "result_id": "a23424c1-80dd-41ed-afa6-f9b7bc2c0683"
+    },
+    {
+      "claim_id": "bcbe3147-57de-4731-b00a-16d19611ed81",
+      "result_id": "6f08ce68-0bb3-41d2-b88b-9bc7418d9ad6"
+    },
+    {
+      "claim_id": "4e16a4e7-03ec-491c-baa2-c082acd9f7b7",
+      "result_id": "6f08ce68-0bb3-41d2-b88b-9bc7418d9ad6"
+    },
+    {
+      "claim_id": "8be8be00-36fc-4138-8853-f929ac491fcd",
+      "result_id": "6f08ce68-0bb3-41d2-b88b-9bc7418d9ad6"
+    },
+    {
+      "claim_id": "6b53387e-3e4b-494d-9f95-6bf9be212680",
+      "result_id": "6f08ce68-0bb3-41d2-b88b-9bc7418d9ad6"
+    },
+    {
+      "claim_id": "15729a0d-172d-41cb-9171-901ae18ee5b4",
+      "result_id": "92db25e7-9ca0-4059-b1a8-f9fb186226c9"
+    },
+    {
+      "claim_id": "91ce99f2-3694-45a8-bc3f-3fb8edb50b5d",
+      "result_id": "92db25e7-9ca0-4059-b1a8-f9fb186226c9"
+    },
+    {
+      "claim_id": "59987b0f-100d-4c2a-b359-cce2cf0942a9",
+      "result_id": "92db25e7-9ca0-4059-b1a8-f9fb186226c9"
+    },
+    {
+      "claim_id": "aedf009f-c83a-43c1-82cd-a286b251c8fd",
+      "result_id": "92db25e7-9ca0-4059-b1a8-f9fb186226c9"
+    },
+    {
+      "claim_id": "bc507b9c-a16a-439d-9da4-bc0df456c4d0",
+      "result_id": "92db25e7-9ca0-4059-b1a8-f9fb186226c9"
+    },
+    {
+      "claim_id": "cc3bdcde-6a40-46b2-9ed8-a704743062cd",
+      "result_id": "cec8292a-6dc4-4f8f-ad40-c0b97073383f"
+    },
+    {
+      "claim_id": "6c3587b9-ab57-4997-9626-35f902544457",
+      "result_id": "cec8292a-6dc4-4f8f-ad40-c0b97073383f"
+    },
+    {
+      "claim_id": "87b9c3c8-e5e3-4b46-91d4-3ac0d5bb38a1",
+      "result_id": "cec8292a-6dc4-4f8f-ad40-c0b97073383f"
+    },
+    {
+      "claim_id": "02082e0b-d441-49f2-8eb5-5168df6a73c4",
+      "result_id": "cec8292a-6dc4-4f8f-ad40-c0b97073383f"
+    },
+    {
+      "claim_id": "3f9354ec-69dc-4bf7-8daa-fef701d1479f",
+      "result_id": "cec8292a-6dc4-4f8f-ad40-c0b97073383f"
+    },
+    {
+      "claim_id": "700eb247-5766-4ea1-8acb-4a573909d6e4",
+      "result_id": "cec8292a-6dc4-4f8f-ad40-c0b97073383f"
+    },
+    {
+      "claim_id": "e30d5441-bce9-459b-a1c5-6a5a3e9b0f4f",
+      "result_id": "cd38f398-c386-45f7-8ac9-843c5f125918"
+    },
+    {
+      "claim_id": "eec53f7d-533b-4f75-9a6b-72e19a93b70c",
+      "result_id": "cd38f398-c386-45f7-8ac9-843c5f125918"
+    },
+    {
+      "claim_id": "cf776589-40ad-4285-a8bd-0ffa0d8e40ed",
+      "result_id": "cd38f398-c386-45f7-8ac9-843c5f125918"
+    },
+    {
+      "claim_id": "c6efc1ff-443d-4963-a889-2d1f82efd068",
+      "result_id": "cd38f398-c386-45f7-8ac9-843c5f125918"
+    },
+    {
+      "claim_id": "b90be850-54f0-45f4-a78c-82fe5f9d07f1",
+      "result_id": "cd38f398-c386-45f7-8ac9-843c5f125918"
+    },
+    {
+      "claim_id": "15d4d61a-cf12-4136-bc50-85ca3983c971",
+      "result_id": "cd38f398-c386-45f7-8ac9-843c5f125918"
+    },
+    {
+      "claim_id": "20ce010d-7150-4744-b76b-3f6848557935",
+      "result_id": "3ce79af3-b37b-45da-921c-32c0a83815da"
+    },
+    {
+      "claim_id": "883ca846-590b-4905-a946-a6b32ce2bed3",
+      "result_id": "3ce79af3-b37b-45da-921c-32c0a83815da"
+    },
+    {
+      "claim_id": "ea1d1821-c234-47ba-99c7-f33be8b2943a",
+      "result_id": "60e81848-0042-41b3-865f-a8bb48d61052"
+    },
+    {
+      "claim_id": "00e1800f-a0b7-4b56-a13c-56d898c741d5",
+      "result_id": "60e81848-0042-41b3-865f-a8bb48d61052"
+    },
+    {
+      "claim_id": "c84ef07d-02d3-416b-bf72-3b2957cc3fda",
+      "result_id": "60e81848-0042-41b3-865f-a8bb48d61052"
+    },
+    {
+      "claim_id": "5c873c31-341e-48f2-960c-2c2f35af2d57",
+      "result_id": "60e81848-0042-41b3-865f-a8bb48d61052"
+    },
+    {
+      "claim_id": "921644eb-5d3c-45da-9bc6-90fea10da080",
+      "result_id": "dfd186c4-f8a9-4c5a-84a2-0727982684ed"
+    },
+    {
+      "claim_id": "3be19d8d-f0b5-4f89-93ce-49f70f9bb617",
+      "result_id": "dfd186c4-f8a9-4c5a-84a2-0727982684ed"
+    },
+    {
+      "claim_id": "484d0696-5248-4385-a731-d4f7d7255ced",
+      "result_id": "dfd186c4-f8a9-4c5a-84a2-0727982684ed"
+    },
+    {
+      "claim_id": "117e0a7c-6194-4ed1-aebf-9b5d53acde27",
+      "result_id": "dfd186c4-f8a9-4c5a-84a2-0727982684ed"
+    },
+    {
+      "claim_id": "a6302b4a-201b-4c39-83dd-f87eb7a6f3f0",
+      "result_id": "dfd186c4-f8a9-4c5a-84a2-0727982684ed"
+    },
+    {
+      "claim_id": "c0fb212e-0b9f-4fac-bfdc-2ef29fecdca8",
+      "result_id": "dfd186c4-f8a9-4c5a-84a2-0727982684ed"
+    },
+    {
+      "claim_id": "d8d0a471-d06f-4c2c-9563-eb2796b12e4c",
+      "result_id": "dfd186c4-f8a9-4c5a-84a2-0727982684ed"
+    },
+    {
+      "claim_id": "d0d61cae-8692-47ac-a62e-617b652cb58a",
+      "result_id": "dfd186c4-f8a9-4c5a-84a2-0727982684ed"
+    },
+    {
+      "claim_id": "a0cdbc1c-5ecd-475b-a9cc-016013a98b56",
+      "result_id": "a36e3a89-3e9e-49c8-a32f-f83d62106ef5"
+    },
+    {
+      "claim_id": "cfa32ec1-effc-45df-a8f0-2ab8576948f9",
+      "result_id": "a36e3a89-3e9e-49c8-a32f-f83d62106ef5"
+    },
+    {
+      "claim_id": "e9383789-a720-4d04-8e78-13ceda0c71a9",
+      "result_id": "a36e3a89-3e9e-49c8-a32f-f83d62106ef5"
+    },
+    {
+      "claim_id": "9aaabceb-37a2-4619-aac5-b1e702353382",
+      "result_id": "a36e3a89-3e9e-49c8-a32f-f83d62106ef5"
+    },
+    {
+      "claim_id": "48aeed1d-3c30-4445-8fee-78f59b0034de",
+      "result_id": "a676de49-6d0c-4c7c-9687-acdd386201b5"
+    },
+    {
+      "claim_id": "74f4b412-25a6-4612-bfda-ea60bf136303",
+      "result_id": "a676de49-6d0c-4c7c-9687-acdd386201b5"
+    },
+    {
+      "claim_id": "6b92a6e4-79e2-47a0-a84f-543d929dafde",
+      "result_id": "a676de49-6d0c-4c7c-9687-acdd386201b5"
+    },
+    {
+      "claim_id": "cb42772f-fef5-4994-93dc-af5ba4e96ecd",
+      "result_id": "a676de49-6d0c-4c7c-9687-acdd386201b5"
+    },
+    {
+      "claim_id": "03de41a2-16a8-4755-9989-8ab6b6308871",
+      "result_id": "a676de49-6d0c-4c7c-9687-acdd386201b5"
+    },
+    {
+      "claim_id": "555465b5-4b90-4e83-9179-26f64b0110a0",
+      "result_id": "a676de49-6d0c-4c7c-9687-acdd386201b5"
+    },
+    {
+      "claim_id": "d56feb23-4cbc-48cf-9fb6-df28d416bc6f",
+      "result_id": "a676de49-6d0c-4c7c-9687-acdd386201b5"
+    },
+    {
+      "claim_id": "ebf3b2a6-956b-471e-ae29-fae3884e00b1",
+      "result_id": "a676de49-6d0c-4c7c-9687-acdd386201b5"
+    },
+    {
+      "claim_id": "e38c06a8-052f-4ae0-9069-40b8f6fb1abd",
+      "result_id": "93e680fb-0490-4b14-815f-103094d53cac"
+    },
+    {
+      "claim_id": "66c466dd-f2fc-40ae-a9d7-61675188cddb",
+      "result_id": "93e680fb-0490-4b14-815f-103094d53cac"
+    },
+    {
+      "claim_id": "38fa7146-18d5-4f6c-b4b0-1580a4e2773a",
+      "result_id": "93e680fb-0490-4b14-815f-103094d53cac"
+    },
+    {
+      "claim_id": "6499ffe1-23e2-452d-bd7a-0a2f46245efd",
+      "result_id": "917db4e3-be70-40ba-ae7a-e48b3067dc6b"
+    },
+    {
+      "claim_id": "d56feb23-4cbc-48cf-9fb6-df28d416bc6f",
+      "result_id": "917db4e3-be70-40ba-ae7a-e48b3067dc6b"
+    },
+    {
+      "claim_id": "ebf3b2a6-956b-471e-ae29-fae3884e00b1",
+      "result_id": "917db4e3-be70-40ba-ae7a-e48b3067dc6b"
+    },
+    {
+      "claim_id": "38fa7146-18d5-4f6c-b4b0-1580a4e2773a",
+      "result_id": "917db4e3-be70-40ba-ae7a-e48b3067dc6b"
+    },
+    {
+      "claim_id": "30d117d5-f0f7-43ae-898d-41e48c903731",
+      "result_id": "57a21128-5332-468d-b993-e9d1c0b4c14a"
+    },
+    {
+      "claim_id": "b3ed62df-1013-4cb1-a2ab-2d01808966d2",
+      "result_id": "57a21128-5332-468d-b993-e9d1c0b4c14a"
+    },
+    {
+      "claim_id": "a9908f1c-3729-4f26-8424-89251f30f84a",
+      "result_id": "57a21128-5332-468d-b993-e9d1c0b4c14a"
+    },
+    {
+      "claim_id": "0bfb8705-4f3f-4ae2-b9c9-1292a9ceaf28",
+      "result_id": "57a21128-5332-468d-b993-e9d1c0b4c14a"
+    },
+    {
+      "claim_id": "9e4720a0-964a-4c15-8d14-776d7e2bd05c",
+      "result_id": "57a21128-5332-468d-b993-e9d1c0b4c14a"
+    },
+    {
+      "claim_id": "e0f3f87f-4351-48d7-8206-ca2f8a22e0e5",
+      "result_id": "bd600fe9-3feb-42e6-aaef-1b1cde34ced7"
+    },
+    {
+      "claim_id": "24ab1331-d3b0-4898-9c8f-c78731ea2f73",
+      "result_id": "bd600fe9-3feb-42e6-aaef-1b1cde34ced7"
+    },
+    {
+      "claim_id": "6233a28b-057a-453c-b9b8-5eaa18440e17",
+      "result_id": "bd600fe9-3feb-42e6-aaef-1b1cde34ced7"
+    },
+    {
+      "claim_id": "851ba44d-76ea-430c-95ec-cf4dcef93abd",
+      "result_id": "bd600fe9-3feb-42e6-aaef-1b1cde34ced7"
+    },
+    {
+      "claim_id": "fafcc92a-1ffd-46e2-9536-1d026c36f15f",
+      "result_id": "268a4efc-7118-4921-b687-21d881bbe484"
+    }
+  ],
+  "comparisons": []
+}

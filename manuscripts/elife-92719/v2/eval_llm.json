@@ -1,0 +1,290 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C1",
+      "C2",
+      "C3"
+    ],
+    "result": "The authors establish fluorescence anisotropy of EGFP (r_EGFP) as a reliable tool for studying cellular macromolecular crowding (MMC). In vitro validation shows r_EGFP increases linearly with protein crowder concentration, is insensitive to pH and small molecule crowders, and avoids homo-FRET artifacts at physiological EGFP concentrations (<10 \u00b5M). The method successfully tracks MMC changes during hypertonic stress and regulatory volume increase (RVI) in live cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C1, C2, and C3 are well-supported by comprehensive in vitro validation (Figure 1A-G) showing linear response to protein crowding, pH independence, and homo-FRET threshold determination. Cellular validation through time-resolved fluorescence anisotropy (Figure 2A) confirms the Perrin equation applies intracellularly. The method successfully tracks physiological MMC changes during hypertonic stress and RVI (Figure 5A), establishing its utility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C70",
+      "C67",
+      "C68",
+      "C69",
+      "C71",
+      "C72",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "The actin cytoskeleton enforces spatially heterogeneous MMC within cells, with lamellar regions showing lower crowding than perinuclear regions. This spatial heterogeneity is validated by multiple orthogonal methods (r_EGFP imaging, FRAP, single-particle tracking, fluorescence lifetime). Cytochalasin D treatment eliminates spatial MMC heterogeneity and increases overall MMC without changing cell volume, while microtubule or vimentin depolymerization has minimal effect on MMC spatial distribution but increases cell volume.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5 and C70-C82 are strongly supported by convergent evidence from multiple independent techniques (Figure 3A-D). The spatial heterogeneity is confirmed by r_EGFP maps, single-particle tracking showing 8-fold higher diffusivity in lamellar vs perinuclear regions, and fluorescence lifetime phasor analysis. The differential effects of cytoskeletal depolymerization provide mechanistic insight, with actin specifically controlling MMC spatial organization. The interpretation that increased actin monomers upon depolymerization elevate MMC is reasonable given actin's high cellular abundance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C56",
+      "C57",
+      "C8",
+      "C60",
+      "C63"
+    ],
+    "result": "Within cell populations, MMC (measured by modal r_EGFP) is uncorrelated with nuclear DNA content but anti-correlated with cell spread area (Pearson's r=-0.42). Different cell lines (NIH/3T3, HeLa, MDA-MB-231) show statistically similar MMC distributions, while RAW 264.7 macrophages exhibit significantly higher MMC. Photobleaching experiments confirm that the majority of cells do not exhibit homo-FRET artifacts, with only ~12% having [EGFP]>10 \u00b5M.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C8 and C56-C63 are supported by population-level measurements (Figure 2C-E) with appropriate statistical analysis (Kruskal-Wallis ANOVA, Mann-Whitney tests). The lack of correlation with DNA content (cell cycle) is clearly demonstrated. The anti-correlation with spread area is validated with Pearson correlation. The homo-FRET control experiments (Figure 2\u2014figure supplement 1C-E) using 2GFP as positive control and FCS concentration measurements provide rigorous validation that observed MMC heterogeneity is genuine rather than artifactual.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Cellular MMC is dynamically linked to cell spreading state. During spreading on fibronectin, MMC decreases gradually as spread area and cell volume increase over 2 hours. Well-spread cells have lower MMC than rounded cells (r=-0.42). Trypsinization-induced detachment rapidly increases MMC through cytoskeletal depolymerization, generating monomeric proteins. F-actin levels are crucial for maintaining the MMC setpoint.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C94 are supported by time-lapse measurements during cell spreading (Figure 4A) and comparison of spreading-arrested vs well-spread cells (Figure 4B-C). FRAP measurements confirm elevated microviscosity in rounded cells. The mechanistic link to cytoskeletal depolymerization is demonstrated by showing trypsinization and cytochalasin D treatment produce similar MMC increases (Figure 4D), with immunofluorescence confirming rapid actin/microtubule depolymerization upon detachment (Figure 4\u2014figure supplement 1C).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C9",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C116",
+      "C118"
+    ],
+    "result": "The intensity of extracellular hypertonicity determines cellular RVI capacity. NIH/3T3 cells recover MMC within 30 min at \u2264150 mM hypertonicity but fail at \u2265200 mM. Different cell lines show varying RVI responses: NIH/3T3 has fastest recovery, HeLa shows partial recovery, MDA-MB-231 recovers only at 50 mM, and RAW 264.7 fails to recover. Flufenamic acid experiments confirm that MMC recovery after 30 min is RVI-mediated through hypertonicity-induced cation channels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9 and C97-C118 are supported by systematic dose-response experiments (Figure 5A-D) tracking both MMC and cell volume across multiple hypertonicity levels and cell lines. The flufenamic acid inhibitor experiments (Figure 5B) provide pharmacological validation that late-phase MMC recovery is RVI-mediated. The cell line-specific responses are well-documented with appropriate replication (n>40 cells, N\u22653 experiments). The osmolyte comparison (mannitol, dextrose, NaCl) provides additional validation, though the mechanistic interpretation of NaCl differences requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143"
+    ],
+    "result": "RVI correlates with NF\u03baB activation, which is mediated by TNFR1. At moderate hypertonicity (150 mM mannitol), p65 translocates to the nucleus, indicating NF\u03baB activation, while severe hypertonicity (600 mM) shows no p65 nuclear shuttling. Pharmacological inhibition with zafirlukast and TNFR1 knockdown both significantly reduce p65 nuclear translocation and impair RVI. TNFR1-inhibited cells show smaller volumes and higher MMC at baseline, suggesting TNFR1 involvement in volume/MMC setpoint regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C11 and C132-C143 are supported by immunofluorescence quantification of p65 nuclear fraction (Figure 6A-B) with appropriate statistical analysis (Kruskal-Wallis ANOVA, Mann-Whitney tests, p<0.00625). The convergence of pharmacological (zafirlukast) and genetic (siRNA knockdown) approaches strengthens the conclusion. The temporal dynamics of p65 shuttling (Figure 6\u2014figure supplement 1A) provide additional mechanistic detail. However, the speculation about TNFR1 regulating volume/MMC setpoints (C143) requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C150",
+      "C151"
+    ],
+    "result": "TNFR1 activity is essential for RVI during hypertonic stress and for cell volume control during isotonic spreading. TNFR1 knockdown, zafirlukast treatment, or NF\u03baB inhibition (CAY10512) drastically hinder RVI at 150 mM hypertonicity in both HeLa and NIH/3T3 cells. Volume recovery indices show control cells recover 11-30% of volume, while TNFR1-inhibited cells show minimal or negative recovery. Zafirlukast also severely decelerates area and volume increase during cell spreading on fibronectin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C144-C151 are supported by time-course volume measurements (Figure 7A) with multiple interventions (TNFR1-KD, zafirlukast, CAY10512) showing convergent effects on RVI. The volume recovery index quantification provides clear metrics. The extension to isotonic spreading conditions (Figure 7C) demonstrates TNFR1's broader role in volume regulation. However, the reduced initial shrinkage upon TNFR1 inhibition (Figure 7\u2014figure supplement 1A) is unexplained and somewhat contradicts the proposed mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C12",
+      "C152",
+      "C153",
+      "C154",
+      "C155"
+    ],
+    "result": "At severe hypertonicities, elevated MMC amplifies cytoplasmic microviscosity and hinders RIPK1 recruitment to the TNFR1 complex, incapacitating TNFR1-NF\u03baB signaling and RVI. Immunoprecipitation shows reduced TNFR1-associated RIPK1 at 600 mM vs 150 mM hypertonicity. FRAP measurements demonstrate 15-fold increased viscosity and near-immobility of EGFP at 600 mM hypertonicity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12 and C152-C155 are supported by immunoprecipitation data (Figure 7D) showing reduced RIPK1 recruitment at severe hypertonicity, combined with FRAP measurements (Figure 5E) demonstrating dramatically reduced protein mobility. The mechanistic link between elevated MMC, increased microviscosity, and impaired RIPK1 recruitment is logical and supported by the data. However, the hypothesis (C154) that MMC-mediated microviscosity is the cause requires more direct testing, as other factors at severe hypertonicity could contribute.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "MMC-mediated elevated microviscosity during hypertonic conditions decreases the mobility of both cytoplasmic and nucleoplasmic proteins. FRAP measurements show EGFP diffusion is faster in nucleus than cytoplasm under isotonic conditions, but mobility becomes similar and decreases with increasing hypertonicity. At 600 mM hypertonicity, EGFP is nearly immobile.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C123 are supported by systematic FRAP measurements (Figure 5E) across multiple hypertonicity levels in both cytoplasm and nucleus. The dose-dependent decrease in mobility correlates with increased MMC (Figure 5\u2014figure supplement 1F). The near-immobility at 600 mM provides dramatic demonstration of the effect. The conclusion that this is MMC-mediated is reasonable given the correlation, though other factors at extreme hypertonicity cannot be completely ruled out.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "Proteostasis disruption alters cellular MMC setpoint. MG132, heclin, and heat shock treatments alter MMC in ways that qualitatively scale with changes in cell volume and protein mass per cell, but cells fail to achieve untreated MMC levels. Cycloheximide causes non-significant changes. The authors conclude cells cannot maintain MMC homeostasis when general proteostasis is disrupted.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124-C127 are supported by measurements of MMC, cell volume, and protein mass per cell (Figure 5F) under multiple proteostasis perturbations. The Bradford assay quantification of protein mass provides validation that total protein content changes. However, the conclusion that cells 'fail' to maintain homeostasis could be reframed\u2014the cells may be establishing new setpoints appropriate to the altered proteostasis state. The interpretation would benefit from longer time-course measurements to determine if these are transient or stable states.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C159",
+      "C161",
+      "C162",
+      "C163",
+      "C168"
+    ],
+    "result": "Intracellular MMC deviates from the concentration-dilution law during hypertonic stress. NIH/3T3 shows ~35% volume shrinkage but only ~10% MMC elevation at 150 mM hypertonicity, while HeLa shows ~35% shrinkage but ~25% MMC elevation. The MMC equilibrates at 10 min post-hypertonicity for all doses tested. Total protein mass per cell does not differ between 150 mM and 600 mM hypertonicities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C159-C163 and C168 are supported by simultaneous measurements of MMC and volume (Figure 5A, Figure 8A) and protein mass quantification (Figure 8A-iv). The deviation from concentration-dilution law is clearly demonstrated by Boyle-van't Hoff analysis (Figure 8A-ii,iii). The observation that protein mass doesn't change between conditions rules out altered crowder numbers as explanation. However, the 10-min equilibration claim (C163) needs more rigorous kinetic analysis to confirm true equilibrium vs apparent plateau.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C170",
+      "C171",
+      "C172",
+      "C173",
+      "C174",
+      "C175",
+      "C176",
+      "C177",
+      "C178",
+      "C179",
+      "C180",
+      "C181",
+      "C182",
+      "C183"
+    ],
+    "result": "At severe hypertonicities, protein condensation through liquid-liquid phase separation (LLPS) creates EGFP-excluded cytoplasmic volumes (EECVs) that enforce deviation from concentration-dilution law. AiryScan imaging shows punctate EGFP distribution and increased EECVs at 600 mM hypertonicity. p65 forms reversible, fluid condensate-like granules that exclude EGFP, appearing in 100% of cells at 600 mM vs ~20% at 50 mM. Photobleaching confirms material exchange between granules and cytosol.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C170-C183 present intriguing observations of protein condensation (Figure 8C-D, Figure 8\u2014figure supplement 1-2), but the evidence is incomplete. The AiryScan imaging shows punctate structures and EECVs, and p65 granule formation is well-documented. However, definitive characterization of these structures as LLPS condensates requires additional experiments (e.g., 1,6-hexanediol sensitivity, fusion events, concentration-dependent phase diagrams). The speculation that multiple proteins (WNK kinases, DCP1A, YAP, ASK3, NF\u03baB) form condensates is based primarily on literature citations rather than direct evidence. The causal link between condensate formation and MMC deviation (C183) is logical but not rigorously tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C156",
+      "C157",
+      "C158"
+    ],
+    "result": "Membrane tension measurements show zafirlukast treatment increases tension dose-dependently while TNFR1 knockdown reduces tension. The authors conclude membrane tension is not causally involved in reducing hypertonic cell shrinkage upon TNFR1 inhibition, as the two interventions have opposite effects on tension but similar effects on shrinkage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C156-C158 are supported by IRM measurements (Figure 7E) showing opposite effects of zafirlukast and TNFR1-KD on membrane tension. The logic that membrane tension cannot explain the reduced shrinkage is sound, as the two interventions produce opposite tension changes but similar shrinkage phenotypes. However, the measurements are at baseline, not during hypertonic stress, which limits the interpretation. The conclusion eliminates one hypothesis but leaves the mechanism unexplained.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "Background claims establishing the biological context and prior knowledge about MMC, cell volume regulation, and NF\u03baB signaling. These include: protein abundance and concentration ranges in cells, effects of MMC on cellular processes, the hypothesis that cells sense volume changes through MMC, the role of cell volume changes in apoptosis/necrosis, variability in RVI/RVD mechanisms, and NF\u03baB's role in osmoprotection and apoptosis prevention.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C30 and C128-C131 are appropriately supported by citations to established literature. These provide necessary context for the experimental work. The citations appear appropriate and the claims accurately represent the cited work. These are standard background claims that establish the scientific rationale for the study.",
+    "result_type": "MINOR"
+  }
+]

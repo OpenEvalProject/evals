@@ -1,0 +1,268 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C33"
+    ],
+    "result": "The authors developed a single-molecule tracking method using HS-AFM to analyze nucleosome dynamics. They obtained 6052 individual nucleosome trajectories from 13 samples, with trajectories lasting 20-120 seconds and a maximum step size of 24 nm, ultimately analyzing 3835 trajectories.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C33 describe the methodological approach and quantitative outcomes of the trajectory analysis. The data acquisition parameters (framerate, duration) and filtering criteria (trajectory length, step size) are clearly stated, and the number of trajectories obtained and analyzed is explicitly reported. These are straightforward methodological and quantitative claims supported by the experimental design.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C97"
+    ],
+    "result": "HS-AFM imaging does not introduce tip-induced artifacts in nucleosome dynamics measurements. Control experiments showed no bias in angle distributions, no difference in diffusion constants between x and y axes, and no effect of video length on step size.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C39 and C97 describe systematic control experiments to test for AFM tip effects. The authors tested for directional bias (angle distributions), axis-dependent effects (x vs y diffusion constants), and time-dependent effects (step size over video length). All controls showed no significant artifacts, supporting the conclusion that HS-AFM does not introduce tip effects. The experimental design is appropriate and the conclusions are well-supported by the data presented in Figure 2.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C69",
+      "C70",
+      "C71",
+      "C99"
+    ],
+    "result": "Salt concentration impacts CENP-A chromatin dynamics in a predictable manner. Low salt (5 mM NaCl) reduced nucleosome mobility with a diffusion constant of 1.2\u00b10.2 nm\u00b2\u00b7s\u207b\u00b9, while high salt (150 mM NaCl) increased mobility with a diffusion constant of 4.1\u00b10.3 nm\u00b2\u00b7s\u207b\u00b9.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C48, C69-C71, and C99 describe salt concentration effects on CENP-A nucleosome dynamics. The results are consistent with established knowledge about salt effects on chromatin (C40-C42) and are supported by quantitative measurements of MSD curves, diffusion constants, step sizes, and R-step ranges (C43-C48). The data show expected trends with appropriate statistical measures (mean \u00b1 standard error), and the findings align with previous literature (C69). The experimental design includes appropriate controls and sufficient sample sizes (124 and 161 trajectories).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C36",
+      "C58",
+      "C100",
+      "C101"
+    ],
+    "result": "APS functionalization of mica surface affects CENP-A nucleosome mobility. No APS resulted in higher diffusion constant (7.5\u00b10.5 nm\u00b2\u00b7s\u207b\u00b9) compared to 2x APS (2.5\u00b10.3 nm\u00b2\u00b7s\u207b\u00b9), with 2x APS increasing immobile nucleosome levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36, C58, C100-C101 describe the effects of APS surface functionalization on nucleosome mobility. The results show a clear dose-dependent effect with quantitative measurements and appropriate error estimates. The findings are consistent with the expected role of APS in binding nucleic acids to mica surfaces. The data are presented in Figure 3 with sufficient replicates.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C155",
+      "C156"
+    ],
+    "result": "CENP-A nucleosome single-step distributions are well-fit by a sum of two Gaussian distributions (D1 and D2), indicating two distinct mobility states. Individual nucleosomes can switch between these states, and the D1 state does not represent nucleosomes stuck to the mica surface.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C57, C155-C156 describe the bimodal nature of nucleosome mobility. The Gaussian fitting analysis is appropriate for step displacement distributions, and the authors provide evidence that nucleosomes switch between states (C54) and that D1 does not represent stuck particles (C55-C56). The F-test comparison between stuck particles and D1 diffusion constants (C55) provides statistical support. However, the physical interpretation of the two states (sliding vs. pausing) remains somewhat speculative, though the data clearly support the existence of two mobility modes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C59",
+      "C60"
+    ],
+    "result": "Tween-20 (0.01%) in imaging buffer causes CENP-A chromatin to behave similarly to high salt and no APS conditions, with increased nucleosome mobility, likely by reducing non-specific hydrophobic interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C60 describe the effect of Tween-20 on CENP-A chromatin dynamics. The data show that Tween-20 produces similar MSD curves, step size distributions, and R-step ranges as high salt and no APS conditions (C59). The interpretation that Tween-20 reduces non-specific hydrophobic interactions (C60) is reasonable given the known properties of this surfactant, though this remains an inference rather than direct measurement.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C102"
+    ],
+    "result": "CENP-A nucleosomes reconstituted on an 8.5 kbp plasmid without known positioning sequences (PCAT2) behave similarly to those on a 3.5 kbp plasmid with positioning sequences (\u03b1-satellite), suggesting nucleosome mobility may be independent of DNA sequence specificity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C61-C62 and C102 suggest that nucleosome mobility is independent of DNA sequence specificity based on comparing two plasmids. However, C102 notes that the diffusion constant for PCAT2 was actually higher than for \u03b1-satellite DNA, which contradicts the claim of similar behavior in C61. Additionally, the plasmids differ substantially in length (8.5 vs 3.5 kbp), which could affect nucleosome density and dynamics independently of sequence specificity. The conclusion about sequence independence is not fully supported by the data presented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C103"
+    ],
+    "result": "H3 chromatin and H3 mononucleosomes show different mobility patterns than CENP-A chromatin. H3 mononucleosomes are well-fit by a single Gaussian distribution and have threefold larger diffusion constants than chromatin arrays, with twofold larger R-step ranges, suggesting unconstrained motion results in single Gaussian distributions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C68 and C103 describe the analysis of H3 chromatin and mononucleosomes. The observation of bias in H3 samples (C63-C64) demonstrates the method can detect artifacts when present. The single Gaussian fitting for H3 mononucleosomes (C65, C103) contrasts with the double Gaussian for CENP-A chromatin arrays, and the quantitative differences in diffusion constants and R-step ranges (C66-C67) support the interpretation that mononucleosomes move in an unconstrained manner (C68). The data provide important controls and context for interpreting CENP-A results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C110"
+    ],
+    "result": "CENP-CCD restricts CENP-A nucleosome mobility in a switch-like manner. Addition of 2x or 4x CENP-CCD reduced the diffusion constant 2.9-fold (to 0.78\u00b10.06 nm\u00b2\u00b7s\u207b\u00b9) and 3.8-fold (to 0.61\u00b10.05 nm\u00b2\u00b7s\u207b\u00b9) respectively, while 1x CENP-CCD had no significant effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C83 and C110 describe the dose-dependent effect of CENP-CCD on CENP-A nucleosome mobility. The data show a clear switch-like behavior with 1x having minimal effect but 2x and 4x showing strong restriction of mobility. The quantitative measurements are well-documented with appropriate error estimates, and the MSD curves show confined motion (plateau after ~25s). The switch-like behavior is supported by the lack of linear dose-response between 1x and 2x. Sample sizes are adequate (498, 368, 310, and 166 trajectories for 0x, 1x, 2x, and 4x respectively).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "The switch-like restriction of CENP-A nucleosome mobility by CENP-CCD could be the mechanism by which CENP-C overexpression in living cells results in CENP-A chromatin clustering and impaired centromeric transcription.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C84-C86 propose a mechanistic link between in vitro mobility restriction and in vivo chromatin clustering/transcription. While the in vitro data on mobility restriction are solid (previous result), and previous work showed clustering and reduced RNAP2 with CENP-C overexpression (C85), the causal connection between reduced mobility and clustering/transcription remains speculative (C84, C86). The authors appropriately frame this as a hypothesis and suggestion rather than a demonstrated mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "CENP-C overexpression (2.8-fold) in HeLa cells reduces RNAP2 levels at centromeres, reduces total CENP-A levels, and causes ~60% reduction in \u03b1-satellite transcripts, indicating impaired centromeric transcription.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C91 describe in vivo effects of CENP-C overexpression using nChIP and qPCR. The level of overexpression is quantified (2.8-fold, C87), and the effects on RNAP2 (C88), CENP-A levels (C89), and transcription (C90) are measured with appropriate controls and statistical tests. The data are presented in Figure 5 with error bars and p-values. The conclusion that centromeric transcription is impaired (C91) is well-supported by the combined evidence. Three independent replicates were performed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "CENP-C overexpression leads to defective de novo CENP-A loading. A 1.3-fold reduction in de novo CENP-A incorporation was observed using SNAP-tagged CENP-A quench-pulse-chase experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C95 describe the effect of CENP-C overexpression on de novo CENP-A loading. The hypothesis (C93) is based on established knowledge that CENP-A loading is transcriptionally regulated (C92). The experimental approach using SNAP-tagged CENP-A is well-established (Bodor et al., 2012), and the 1.3-fold reduction (C94) is quantified with appropriate statistical analysis (p<0.05, one-way ANOVA) from three independent replicates. The conclusion (C95) logically follows from the combined transcription and loading data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C27",
+      "C114",
+      "C141",
+      "C159"
+    ],
+    "result": "The authors propose that factors altering nucleosome mobility in vitro correspondingly alter transcription in vivo, and that variant nucleosomes encode their own diffusion kinetics while binding partners can modulate mobility. This suggests a mechanistic link between nucleosome material properties and chromatin accessibility/transcriptional potential.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C7-C9, C27, C114, C141, and C159 represent the overarching model and speculation of the paper. While the in vitro data on CENP-A mobility and CENP-CCD effects are solid, and the in vivo data on transcription and CENP-A loading are convincing, the causal link between mobility and transcription remains correlative rather than mechanistic. The authors appropriately frame much of this as speculation (C7, C8, C114), but the strength of the mechanistic connection (C159) is overstated. Additional experiments (e.g., rescue experiments, direct manipulation of mobility independent of CENP-C) would be needed to establish causality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153"
+    ],
+    "result": "The authors propose a model where chromatin effector partners modify histone variant nucleosome properties to form functional clutches. CENP-C binding rigidifies and immobilizes CENP-A chromatin for kinetochore assembly, while unbound CENP-A chromatin remains accessible for transcription and new CENP-A loading. The epigenetic fate of a locus may be causally linked to the mechanical state of the chromatin fiber.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C142-C153 present the authors' proposed model integrating their findings. The model is supported by the in vitro mobility data, in vivo transcription/loading data, and previous literature on CENP-C levels being lower than CENP-A levels (C150). However, several aspects remain speculative: the causal link between mechanical state and epigenetic fate (C152), the mechanism for maintaining a pool of free CENP-A nucleosomes (C149), and the resolution of the apparent contradiction between CENP-C's repressive effects and the need for transcription (C148). The model is plausible and integrates the data well, but key predictions remain untested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C16",
+      "C17",
+      "C154"
+    ],
+    "result": "HS-AFM can track chromatin dynamics in real time and determine mean square displacement and diffusion constants for nucleosomes. This technique bridges the gap between optical/magnetic tweezers and single molecule tracking in cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C3, C16-C17, and C154 describe the capabilities and application of HS-AFM. The authors successfully demonstrate real-time tracking of nucleosomes and quantification of MSD and diffusion constants for thousands of trajectories. The claim that HS-AFM bridges the gap between force spectroscopy and live cell imaging (C16) is reasonable given that it allows tracking of individual nucleosomes in the context of chromatin arrays without fluorescent tags or tethering. The technical achievement is well-documented throughout the paper.",
+    "result_type": "MAJOR"
+  }
+]

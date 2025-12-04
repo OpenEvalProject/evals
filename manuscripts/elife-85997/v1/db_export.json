@@ -1,0 +1,2113 @@
+{
+  "submission": {
+    "id": "1e0b05b9-99fc-4d33-a565-8b52f4939498",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-04T03:45:44.932097Z",
+    "updated_at": "2025-12-04T03:45:44.932097Z"
+  },
+  "content": [
+    {
+      "id": "c0fe30ed-8989-4e9c-9f20-bdf980f25cb4",
+      "submission_id": "1e0b05b9-99fc-4d33-a565-8b52f4939498",
+      "content_type": "manuscript",
+      "content_text": "# Modulation of protein-DNA binding reveals mechanisms of spatiotemporal gene control in early Drosophila embryos\n\n## Authors\n\n- Sahla Syed<sup>1</sup> ([ORCID: 0000-0002-9917-0709](https://orcid.org/0000-0002-9917-0709))\n- Yifei Duan<sup>1</sup>\n- Bomyi Lim<sup>1</sup> ([ORCID: 0000-0002-3058-9181](https://orcid.org/0000-0002-3058-9181)) \u2020\n\n### Affiliations\n\n1. Department of Chemical and Biomolecular Engineering, University of Pennsylvania Philadelphia United States ([ROR:00b30xv10](https://ror.org/00b30xv10))\n2. Master of Biotechnology Program, University of Pennsylvania Philadelphia United States ([ROR:00b30xv10](https://ror.org/00b30xv10))\n\n\u2020 Corresponding author\n\n## Abstract\n\nIt is well known that enhancers regulate the spatiotemporal expression of their target genes by recruiting transcription factors (TFs) to the cognate binding sites in the region. However, the role of multiple binding sites for the same TFs and their specific spatial arrangement in determining the overall competency of the enhancer has yet to be fully understood. In this study, we utilized the MS2-MCP live imaging technique to quantitatively analyze the regulatory logic of the snail distal enhancer in early Drosophila embryos. Through systematic modulation of Dorsal and Twist binding motifs in this enhancer, we found that a mutation in any one of these binding sites causes a drastic reduction in transcriptional amplitude, resulting in a reduction in mRNA production of the target gene. We provide evidence of synergy, such that multiple binding sites with moderate affinities cooperatively recruit more TFs to drive stronger transcriptional activity than a single site. Moreover, a Hidden Markov-based stochastic model of transcription reveals that embryos with mutated binding sites have a higher probability of returning to the inactive promoter state. We propose that TF-DNA binding regulates spatial and temporal gene expression and drives robust pattern formation by modulating transcriptional kinetics and tuning bursting rates.\n\n## Introduction\n\nDevelopment of a Drosophila embryo is a highly precise and coordinated process, occurring with little variability despite intrinsic and extrinsic noise and perturbations (Arias and Hayward, 2006; Houchmandzadeh et al., 2002). Proper levels of essential genes and correct positioning of expression patterns are regulated by short non-coding DNA sequences known as enhancers (Banerji et al., 1981). Enhancers tightly control their target gene expression both in space and time via transcription factor (TF) recruitment. Complex patterning and cell fates are established through TFs recognizing and binding to specific short DNA sequences within enhancers with varying degrees of affinity at different developmental stages (Long et al., 2016; Reiter et al., 2017; Ramos and Barolo, 2013). Concerted action of TFs with other transcriptional machinery has been found to reposition nucleosomes, initiate chromatin remodeling, recruit additional activating co-factors, and generate distinct transcriptional outputs (Spitz and Furlong, 2012). However, it remains to be understood how these brief, yet frequent, interactions between TFs and regulatory DNAs facilitate efficient and specific transcription on the timescale of minutes. Although we know that TFs influence various facets of transcription such as timing or probability of activation, we have yet to determine their role in orchestrating an enhancer\u2019s transcriptional competency at a mechanistic level. For example, does the spatial arrangement of the binding sites influence transcriptional capability? How does each TF binding site shape transcriptional dynamics of individual nuclei and contribute to overall pattern formation?\n\nRecently, it was shown that the genomic context of an enhancer provides an optimal environment for driving normal expression patterns and preventing misregulation upon induced perturbations. Mutating a single Giant (Gt) repressor binding site in the minimal even-skipped stripe 2 enhancer region caused misexpression of the target gene, whereas those effects were buffered in an extended enhancer containing more TF binding sites and expression levels were comparable to the wildtype (L\u00f3pez-Rivera et al., 2020). However, the role of multiple TF binding sites with varying affinities within the enhancer in regulating transcription has yet to be established. Recent studies have explored the role of low-affinity binding sites in producing specific expression patterns and found that enhancers containing optimal TF motifs may lead to overexpression and result in developmental defects (Farley et al., 2015; Ramos and Barolo, 2013; Tsai et al., 2017). Previous work has shown that modulating the strength of a single TF binding site was sufficient to disrupt transcriptional activity, such that a mutation of an activator Dorsal (Dl) site in the t48 enhancer delayed activation and almost completely abolished transcriptional activity, while optimization of the site to a consensus motif induced ectopic transcriptional activity with a broader gene expression domain (Keller et al., 2020). However, systematic removal of binding sites of varying affinities for another activator, Bicoid, seems to affect its target gene, hunchback, expression to a similar degree, indicating that each site has a nearly equal contribution to the overall expression pattern (Eck et al., 2020). Yet, since many studies have relied on fixed tissue experiments to derive the role of TFs in transcriptional regulation, the changes in real-time transcription kinetics that drive the observed misexpression are often overlooked. Dynamic interplay among TFs, cofactors, and DNA occurs on the order of seconds, a time resolution that cannot be resolved solely through RNAi and single molecule in situ hybridization experiments (Mir et al., 2017). Since TF binding events affect the expression of regulatory genes both spatially and temporally, incorporation of both live imaging techniques and predictive modeling is crucial to correlate transient TF-DNA binding to downstream transcriptional activity in single-cell resolution.\n\nIn this study, we investigated the effects of perturbing TF-DNA binding strength on the transcriptional dynamics of snail (sna) in early Drosophila embryos. sna is a well-characterized, key patterning gene that encodes a zinc finger protein and is responsible for the differentiation of the mesoderm (Rembold et al., 2014; Leptin, 1991; Ip et al., 1992). Sna represses the expression of genes responsible for neuroectoderm formation and establishes the mesoderm-neuroectoderm boundary (Kosman et al., 1991). Embryos lacking sna fail to undergo gastrulation, resulting in embryonic lethality (Hemavathy et al., 2004). Previous studies have demonstrated that sna expression is controlled by a proximal enhancer and a distal (shadow) enhancer located directly upstream and ~7kb upstream of the promoter, respectively (Perry et al., 2010). The distal enhancer is necessary for proper sna expression and the viability of the developing embryo, especially under genetic and environmental stresses (Perry et al., 2010; Dunipace et al., 2011). sna is a target gene of the Dl morphogen, and the nuclear gradient of maternally deposited Dl protein controls the sharp boundaries of sna expression, such that only nuclei with high concentrations of nuclear Dl express sna (Figure 1B; Hong et al., 2008). Through binding assays like EMSA and ChIP-seq, it was determined that the distal sna enhancer contains multiple, low-affinity binding sites for Dl, Twist (Twi), and the pioneer factor Zelda (Zld) (Figure 1A; Zeitlinger et al., 2007; Ferraro et al., 2016). Indeed, sna expression is completely abolished in embryos lacking Dl or Twi, and Zld null embryos show a delay in sna activation (Dufourt et al., 2018; Liang et al., 2008).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/85997/elife-85997-fig1-v1.jpg)\n\n**Figure 1.:** (A) Schematic of the reporter construct containing the minimal sna distal enhancer, sna core promoter, MS2 stem loops, and the yellow reporter gene. The minimal enhancer contains binding sites for TFs Zld, Twi, and Dl. (B) Embryo expressing maternally deposited Dl-Venus protein (green) and sna distal>PP7-yellow reporter gene (orange). sna is expressed in the region with high nuclear Dl. The inset shows the region within the rectangle. Scale bar = 10 \u03bcm. (C) Snapshots of an embryo expressing minimal sna distal>MS2-yellow. The nuclei are marked with Histone-RFP (blue) and the MS2-yellow reporter gene is observed with MCP-GFP (orange). Each nucleus has one distinct fluorescent punctum, indicating nascent transcription. Scale bar = 10 \u03bcm. The bottom row are magnifications of the embryo within the rectangle. Scale bar = 5 \u03bcm. (D\u2013E) Single nucleus transcriptional trajectories for a wildtype (D) and Dl2 mutant embryo (E). (F) Heatmap showing that mRNA production is higher in a wildtype embryo compared to a Dl2 mutant embryo. The white line indicates the ventral midline. Scale bar = 12 \u03bcm. (G) Average mRNA production of all nuclei in wildtype embryos and Dl1, Dl2, and Dl1/2 mutant embryos across the sna expression domain (Lateral-Ventral-Lateral). (H) Plot indicating the wildtype steepness of snamin expression is significantly higher than the mutants. Steepness was determined by calculating the maximum derivative of the mRNA output curves. (I) Top: Schematic showing the additional TF binding sites present in the full sna distal enhancer. Bottom: Heatmap showing higher mRNA production of MS2-yellow in a wildtype embryo containing the full sna distal enhancer compared to the embryo containing the full enhancer with Dl2 site mutations. Scale bar = 12 \u03bcm. (J) Average mRNA production of all nuclei in wildtype embryos and Dl1, Dl2, and Dl1/2 mutant embryos containing the full sna distal enhancer across the expression domain. (K) Plot indicating the wildtype steepness of sna distal expression is significantly higher than the mutants. Shaded error bars in (G) and (J) indicate the standard error of the mean (SEM). Error bars in (H) and (K) indicate SEM. A total of 1524 nuclei from three replicate wildtype embryos, 1672 nuclei from four replicate Dl1 mutant embryos, 2091 nuclei from four replicate Dl2 mutant embryos, and 1788 nuclei from three replicate Dl1/2 mutant embryos were analyzed. ** denote p<0.001 from the student\u2019s t-test.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/85997/elife-85997-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Average mRNA production of all nuclei in wildtype embryos and Dl3, Twi2, and Dl3Twi2 mutant embryos across the snamin expression domain. (B) Plot showing the width of the expression domain driven by snamin expression. There is no significant difference across the wildtype and mutant embryos. (C) Plot indicating the wildtype sharpness of snamin expression is significantly higher than the mutants. Shaded error bars in indicate standard error of the mean (SEM). Error bars in (B) and (C) indicate SEM. A total of 1524 nuclei from three replicate wildtype embryos, 1407 nuclei from three replicate Dl3 mutant embryos, 1557 nuclei from three replicate Twi2 mutant embryos, and 2058 nuclei from four replicate Dl3Twi2 mutant embryos were analyzed. Transcription of the MS2-yellow reporter gene is driven by the minimal sna distal enhancer. ** denote p<0.001 from the student\u2019s t-test.\n\nHere, we utilize a combination of quantitative live imaging and mathematical modeling to probe the underlying regulatory mechanisms that TFs employ to initiate transcription, regulate gene expression levels, and establish spatial boundaries. Using MS2-MS2 coat protein (MCP)-based live imaging, we visualized transcription dynamics driven by the wildtype minimal sna distal enhancer in the cases of with and without various TF binding site mutations. We find that mutating a single TF (Dl or Twi) binding site in the enhancer significantly reduces mRNA production of the target gene, mainly through lowering transcriptional amplitude by reducing RNA polymerase (Pol) II loading rate, without significantly delaying the timing of initiation or affecting the probability of activation. Surprisingly, modulating the same TF binding site in the context of the full sna distal enhancer results in a similar reduction in expression levels, underscoring that additional TF binding sites in the full enhancer are not sufficient to rescue transcriptional activity. Using a thermodynamic equilibrium binding model, we show that the TF binding sites interact cooperatively to establish the correct spatial pattern of sna. Our model demonstrates that a combination of weak affinity and cooperative interactions among binding sites may be an evolutionary molecular mechanism to ensure the correct pattern and levels of target genes. Moreover, a two-state stochastic model of transcription indicates that TF binding site mutations affect transcriptional bursting, specifically by increasing the probability of the promoter switching out of the ON state, koff, and reducing burst durations. Together, our data highlight the distinct mechanisms by which TF binding sites regulate transcriptional kinetics and spatial patterning during embryonic development.\n\n## Results\n\n### Single TF binding site mutation greatly diminishes the transcriptional capability of the distal sna enhancer\n\nThe 519 bp sna minimal enhancer is located within the full sna distal enhancer (1.6 kb) and has been shown to recapitulate proper sna expression (Figure 1A; Ferraro et al., 2016). We focus on the analysis of the minimal enhancer since it contains fewer TF binding sites than the full distal enhancer, which allows systematic perturbation in a sensitized background to gain a functional understanding of the role of TF binding site arrangements in gene regulation. The minimal enhancer contains binding sites for many TFs, including Dl, Twi, and Zld, and our study focuses on the sites with the strongest binding affinities, three Dl sites and one Twi site (Figure 1A). We note that all Dl and Twi sites still have relatively low binding affinities compared to the consensus motif, because sna is activated only in the domain with high nuclear Dl concentration (Hong et al., 2008). We systematically deleted one site at a time by introducing point mutations in each binding motif. The mutations were created by inducing nucleotide substitutions that cause the sequence to no longer be recognized as a TF motif match (Table 1).\n\n**Table 1.**\n Table of TF motifs and mutated sequences.Table showing the sequences of the TF motifs, p-value, mutated sequences, and Patser score.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Transcription factor</th>\n      <th>p-value</th>\n      <th>Patser score</th>\n      <th>Wildtype</th>\n      <th>Mutation</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Dl1</td>\n      <td>1.43e-4</td>\n      <td>22.8</td>\n      <td>AGGGATTTCCT</td>\n      <td>AGGGATCGCCT</td>\n    </tr>\n    <tr>\n      <td>Dl2</td>\n      <td>2.71e-05</td>\n      <td>19.8</td>\n      <td>GGCGTTTTCCCA</td>\n      <td>GGCGATTGACCA</td>\n    </tr>\n    <tr>\n      <td>Dl3</td>\n      <td>8.52e-05</td>\n      <td>17.8</td>\n      <td>TGGGAAATCGG</td>\n      <td>TGTTAAATCGG</td>\n    </tr>\n    <tr>\n      <td>Twi2</td>\n      <td>4.08e-05</td>\n      <td>7.8</td>\n      <td>GTCCATGTGTTG</td>\n      <td>GTCCATGAATTG</td>\n    </tr>\n  </tbody>\n</table>\n\nWe utilized the MS2-MCP live imaging technique to quantitatively analyze the effects of modulating TF binding sites within the minimal sna distal (snamin) enhancer. Specifically, 10x repeat sequences of MS2 are integrated into the 5\u2019 UTR of the yellow reporter gene (Figure 1A). Upon transcription, each MS2 sequence forms a stem loop which is detected by maternally deposited MCP tagged with fluorescent proteins. To visualize nascent transcription dynamics in nuclear cycle (NC) 14, females carrying His2Av-mRFP (nucleus marker) and MCP-GFP were crossed with males carrying the desired MS2 construct, resulting in progeny expressing distinct fluorescent puncta in active transcription loci (Figure 1C, Video 1). sna distal enhancer drives gene expression in the endogenous sna domain, where the nuclear Dl level is the highest (Figure 1B). The fluorescence intensity trajectory for each nucleus is extracted for subsequent analysis and correlated to its instantaneous transcriptional activity (Figure 1D and E). Integration of the transcription trajectory over a given duration is proportional to the total number of mRNA molecules produced by a single nucleus (Bothma et al., 2014; Garcia et al., 2013). We do note that this does not provide an absolute number of mRNA molecules. However, through this estimation of mRNA production measured under the same laser setting, we can compare the relative mRNA production among constructs with different TF binding site mutations.\n\n![Video 1.](https://cdn.elifesciences.org/articles/85997/elife-85997-video1.mp4.jpg)\n\n**Video 1.:** MS2 signal is shown in yellow. Nuclei are marked with His2Av-mRFP. Histogram was adjusted for visualization purposes. Scale bar = 10 \u03bcm.\n\nWe found that a mutation of any single Dl or Twi binding site within the minimal enhancer resulted in a dramatic reduction in mRNA production (Figure 1F, Videos 1 and 2, Figure 1\u2014figure supplement 1A). Nuclei in the center of the sna expression domain of a mutant embryo produce 65% less mRNA than those in the wildtype counterpart. The reduction occurs uniformly across the sna expression domain without significantly affecting the width (Figure 1G, Figure 1\u2014figure supplement 1B). It is important to note that mutations of different TFs (Dl and Twi) and of binding sites with different affinities (Dl1 and Dl2) all result in a similar degree of decreased mRNA production. These results suggest that each site in the minimal enhancer is necessary to drive normal sna expression, perhaps due to the sensitized background in which the mutations were induced.\n\n![Video 2.](https://cdn.elifesciences.org/articles/85997/elife-85997-video2.mp4.jpg)\n\n**Video 2.:** MS2 signal is shown in yellow. Nuclei are marked with His2Av-mRFP. Scale bar = 10 \u03bcm.\n\nTo further examine the significance of these core TF binding sites in the minimal enhancer, we investigated if the additional TF binding sites in the full distal enhancer would buffer against the drastic changes in mRNA production caused by the mutations. Despite several additional Dl and Twi sites flanking the minimal enhancer, we found that the same mutations on the same TF motifs caused a similar decrease in mRNA production (Figure 1I and J). Furthermore, we found that in both the minimal and full distal sna enhancers, the mutant embryos have shallower gradients and less sharp boundaries, highlighting the importance of proper TF-DNA interactions in regulating the sharpness of the expression domain (Figure 1H and K, Figure 1\u2014figure supplement 1C). Shallower expression of sna may lead to higher uncertainty in germ layer formation between mesoderm and neuroectoderm. It is interesting to note that the introduction of the mutations in the larger genomic context (i.e., full distal enhancer) did not lessen their effect on transcriptional activity and pattern formation. Here, it is evident that additional TF sites are not able to rescue normal sna transcriptional activity and that each site within the minimal enhancer region plays a critical role in ensuring robust expression.\n\n### Mutations cause lower mRNA production, mainly due to reduced transcriptional amplitude and lower Pol II loading\n\nAfter establishing the dramatic reduction in transcriptional activity, we delved into the underlying causes of the low mRNA production in both a single nucleus and across the entire sna expression domain. We hypothesized that the reduced mRNA production may occur through multiple different modes. The mutations may alter the time of transcriptional activation or reduce the transcriptional window, thereby effectively lowering the mRNA production compared to a wildtype embryo. The mutations may reduce the enhancer\u2019s ability to transcribe and effectively load Pol II, resulting in decreased instantaneous transcriptional amplitude. Or, the mutant embryos may have fewer transcriptionally active nuclei within the expression domain (Figure 2A). We found that the differences in the time for half the nuclei to begin transcription as well as the transcription initiation time per nucleus were not sufficient to explain the low mRNA output (Figure 2B and C, Figure 2\u2014figure supplement 1A). Moreover, the total number of nuclei showing active transcription was comparable among wildtypes and binding site mutants (Figure 4\u2014figure supplement 1B). Although the window of active transcription is slightly shortened in embryos containing the induced mutations (Figure 2D, Figure 2\u2014figure supplement 1B), the main cause of the low mRNA output was the average transcriptional amplitude (Figure 2E, Figure 2\u2014figure supplement 1C). Here, we observed a significant decrease in transcriptional intensity, leading us to conclude that the mutations mainly modulate transcription by lowering Pol II loading rate. At single-cell resolution, we find that the mutants with two deleted binding sites have a slightly bigger impact on transcriptional activity than those with one site removed, but the differences are small (Figure 2C\u2013E, Figure 2\u2014figure supplement 1A\u2013C).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/85997/elife-85997-fig2-v1.jpg)\n\n**Figure 2.:** (A) Schematic comparing wildtype and mutants. The mutant embryo may have fewer nuclei transcribing (shaded) and at a lower intensity. Each nucleus in mutant embryos may have late activation or a shorter transcription window, all of which may contribute to the observed low mRNA production. (B) Heatmap of transcription activation times for representative wildtype and Dl2 mutant embryos. The time at which half of the nuclei are activated is indicated by the dotted white line and there is no significant difference. (C\u2013E) Boxplots showing (C) the time to transcriptional activation (D) the duration of active transcription, and (E) the transcriptional amplitude for all actively transcribing nuclei. Decreased transcriptional amplitude contributes the most to the low mRNA production in mutants. (F\u2013H) (F) Average time to transcriptional activation, (G) average duration of transcription for all actively transcribing nuclei, and (H) average transcriptional amplitude for all nuclei across the sna expression domain (Lateral \u2013 Ventral \u2013 Lateral). Nuclei in the middle of the expression domain are affected more, but there is no significant change in the expression width. Shaded error bars in (F\u2013H) indicate SEM. 250 individual data points are overlaid on the respective boxplots. A total of 1124 nuclei from three replicate wildtype embryos, 1011 nuclei from four replicate Dl1 mutant embryos, 1123 nuclei from four replicate Dl2 mutant embryos, and 943 nuclei from three replicate Dl1/2 mutant embryos were analyzed. Transcription of the MS2-yellow reporter gene is driven by the minimal sna distal enhancer. ** denote p<0.001 from the student\u2019s t-test.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/85997/elife-85997-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A\u2013C) Boxplots showing (A) the time to transcriptional activation, (B) the duration of active transcription, and (C) the transcriptional amplitude for all actively transcribing nuclei. Decreased transcriptional amplitude contributes the most to the low mRNA production in mutants. (D\u2013F) (D) Average time to transcription activation, (E) average duration of transcription for all actively transcribing nuclei, and (F) average transcriptional intensity for all nuclei across the sna expression domain (Lateral \u2013 Ventral \u2013 Lateral). Nuclei in the middle of the expression domain are affected more, but there is no significant change in the expression width. Shaded error bars in (D\u2013F) indicate SEM. 250 individual data points are overlaid on the respective boxplots. A total of 1124 nuclei from three replicate wildtype embryos, 828 nuclei from three replicate Dl3 mutant embryos, 754 nuclei from three replicate Twi2 mutant embryos, and 983 nuclei from four replicate Dl3Twi2 mutant embryos were analyzed. Transcription of the MS2-yellow reporter gene is driven by the minimal sna distal enhancer. ** denote p<0.001 from the student\u2019s t-test comparing wildtype and mutant embryos.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/85997/elife-85997-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A\u2013C) Boxplots showing (A) the time to transcriptional activation, (B) the duration of active transcription, and (C) the transcriptional amplitude for all actively transcribing nuclei. Decreased transcriptional amplitude contributes the most to the low mRNA production in mutants. (D\u2013F) (D) Average time to transcriptional activation, (E) average duration of transcription for all actively transcribing nuclei, and (F) average transcriptional intensity for all nuclei across the sna expression domain (Lateral \u2013 Ventral \u2013 Lateral). Nuclei in the middle of the expression domain are affected more, but there is no significant change in the expression width. Shaded error bars in (D\u2013F) indicate SEM. A total of 730 nuclei from two replicate wildtype embryos, 1567 nuclei from four replicate Dl1 mutant embryos, 1030 nuclei from three replicate Dl2 mutant embryos, and 981 nuclei from three replicate Dl1/2 mutant embryos were analyzed. Transcription of the MS2-yellow reporter gene is driven by the full sna distal enhancer. ** denote p<0.001 from the student\u2019s t-test comparing wildtype and mutant embryos.\n\nSince sna is a patterning gene and is responsible for the formation of the ventral furrow and presumptive mesoderm, we wanted to determine how the mutations spatially affect the aforementioned transcription parameters and the spatial boundaries of the expression pattern. The nuclei in the center of the sna expression domain are more substantially affected, exhibiting shorter window of transcription and lower average transcriptional amplitude, confirming the trend we observed for mRNA production (Figure 2F\u2013H, Figure 2\u2014figure supplement 1D\u2013F). Our results agree with previous studies, in which the center nuclei within the eve stripe 2 domain had significantly longer periods of transcription and overall, higher rates of mRNA production (Lammers et al., 2020). Interestingly, we observed that the Dl1 mutation induced earlier transcriptional activation than wildtype (Figure 2C and F). Since the Dl1 and Dl2 binding sites are less than 10 bp apart, mutating the Dl1 site may create a more favorable steric conformation, allowing Dl to bind to the single site more efficiently. However, the earlier activation time is not sufficient to buffer against the severe reduction in transcriptional amplitude and causes the Dl1 mutant to exhibit similarly reduced mRNA production (Figure 1G).\n\nInterestingly, in addition to modulating the average transcriptional intensity, the mutations in the full distal enhancer affect the time to activation and the transcription window as well. Mutant embryos have significantly more delayed transcriptional activation and a substantially shorter period of transcriptional activity (Figure 2\u2014figure supplement 2A\u2013C). As with the case with the minimal enhancer, we do not observe any significant spatial modulation of these parameters and the expression width remains unaffected (although the boundary is less sharp) (Figure 2\u2014figure supplement 2D\u2013F).\n\n### Thermodynamic equilibrium binding model reveals synergistic interactions among TF binding sites\n\nThe mechanistic role that multiple TF binding sites with different affinities play in regulating enhancer activity and capability is still unclear. Is a single binding site sufficient to establish the correct pattern and expression levels? In that case, why does an enhancer contain multiple TF binding sites for the same TF? Our findings seem to indicate a nonadditive behavior between binding sites, such that both a single and double mutation affect transcriptional dynamics to a similar degree. We utilized a thermodynamic Monod-Wyman-Changeux (MWC) model to examine the contributions of each Dl and Twi site to the overall competency of the enhancer (Monod et al., 1965). We assume that the microstates (unbound, bound with activator(s)) are in equilibrium and that the probability of each state can be correlated with its Boltzmann weight (Eck et al., 2020). As described in Eck et al., 2020; Kanodia et al., 2012, the Boltzmann weights can be calculated in terms of activator concentration C, dissociation constant K, and a cooperativity term \u03c9 (Figure 3A). The probability of transcription initiation is represented by the probability of an activator (i.e., Dl) binding to its cognate site divided by the sum of all possible states, which can be written as:\n\n$$\np_{ bound}= \\frac{\\frac{C_{Dl1}}{K_{Dl1}} + \\frac{C_{Dl2}}{K_{Dl2}} + \\omega\\frac{C_{Dl1}C_{Dl2}}{K_{Dl1}K_{Dl2}} }{1+ \\frac{C_{Dl1}}{K_{Dl1}} + \\frac{C_{Dl2}}{K_{Dl2}} + \\omega\\frac{C_{Dl1}C_{Dl2}}{K_{Dl1}K_{Dl2}}  }\n$$\n\n![Figure 3.](https://cdn.elifesciences.org/articles/85997/elife-85997-fig3-v1.jpg)\n\n**Figure 3.:** (A) Promoter states and statistical weights for each microstate. A bound activator will yield transcription. Cooperativity term \u03c9 is included when more than one TF is bound, which will result in higher mRNA production. Dissociation constants are given by Ki, which is correlated with the binding affinity of each site. (B\u2013C) mRNA production curves generated by assuming (B) no cooperativity and (C) cooperativity among TF binding sites. Modeling results support experimental data with the cooperativity term included. (D\u2013F) Summary models noting expression level changes as cooperativity increases (D), as Dl concentration is increased in low binding affinity enhancers (E), and as binding affinity is increased (F).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/85997/elife-85997-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A\u2013B) Sensitivity analysis for \u03c91 (A) and \u03c96 (B) for values of 1 (left), 10 (center), and 1e2 (right). The model is robust against changes in these parameters. (C) Sensitivity analysis for \u03c911 for values of 1e4 (left), 1e5 (center), and 1e6 (right) indicates the model is more sensitive to changes in cooperativity among all 4 TFs.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/85997/elife-85997-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A\u2013B) Model results of low-affinity sites (A) and high affinity sites (B) with cooperativity. Higher cooperativity values are needed for the low-affinity model (see Table 2). (C\u2013D) Modulation of Dl concentration with low-affinity sites (C) and with high-affinity sites (D). Lowering Dl concentration causes a drastic reduction in expression levels in enhancers with low-affinity sites. (E\u2013F) Altering affinity of a single site, Dl1, to low affinity (E) and high affinity (F). Decreasing affinity severely reduces expression while increasing affinity results in wider and ectopic expression.\n\nThis equation can be expanded to include all the combinations of Dl and Twi interactions (See Methods, Equation 1). The equilibrium binding constants were correlated to their binding affinity scores according to the Patser algorithm (Table 1) using the Dl position weight matrix (PWM) (Hertz and Stormo, 1999; Alamos et al., 2023; see Materials and methods).\n\nWe tested our model in the case of completely independent binding, or no cooperativity. In this condition, the model failed to predict the experimental data and we found that the wildtype has only slightly higher expression levels compared to the mutants (Figure 3B). When we modified the model to include the cooperativity terms among all the TFs, we were able to qualitatively recapitulate the experimental mRNA production curve as well as determine which TFs work synergistically to help recruit more TFs to the enhancer region (Figure 3C). Promoter occupancy is significantly higher when TFs interact cooperatively, such that removing cooperativity reduces promoter occupancy by more than 90% (Table 3). We do note that the model predicts that the Dl1/2 double mutant exhibits lower mRNA output than the other single binding site mutants, which is not as prominent in experimental results (Figure 2C\u2013E). We believe this may be due to some degree of buffering from additional TF binding sites present in the sna enhancer that cannot be captured in our four binding site model. We observe the same trend of a lower mRNA output for the double binding site deletion regardless of the changes in binding site affinity (Figure 3\u2014figure supplement 2A\u2013B).\n\nWe found that Dl1/Dl2 (\u03c91), Dl3/Twi2 (\u03c96), and Dl1/Dl2/Dl3/Twi2 (\u03c911) cooperativities were the key parameters with a value above 1 (i.e. positive cooperativity) to reach a stable solution, confirming the role of cooperativity among weak binding sites as a mechanism for precise gene control (Table 2; Table 3). We performed sensitivity analysis on these three cooperativity terms to test the robustness of the model. Transcriptional output was not significantly affected upon modulating a moderate cooperativity \u03c91 and \u03c96 values by an order of magnitude (Figure 3\u2014figure supplement 1A and B). However, the model was more sensitive to changes in the highest cooperativity term \u03c911, which represents the interactions among all TFs (Table 2). Decreasing the cooperativity value of \u03c911 results in a smaller difference between wildtype and mutant transcriptional activities, while increasing cooperativity results in ectopic expression in a wider expression domain (Figure 3\u2014figure supplement 1C). This underscores the importance of the concerted interaction among all the TFs in regulating and maintaining proper gene expression pattern and levels (Figure 3D).\n\n**Table 2.**\n Table of cooperativity values.Table showing the cooperativity values for the optimized model and the cooperativity values when all binding sites are weakened or strengthened. Cooperativity values are much higher when the strength of the binding sites are weakened.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Cooperativity term</th>\n      <th>Transcription factor</th>\n      <th>Optimized value</th>\n      <th>Weak binding value</th>\n      <th>Strong binding value</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>\u03c91</td>\n      <td>Dl1, Dl2</td>\n      <td>28.00</td>\n      <td>69.90</td>\n      <td>2.03</td>\n    </tr>\n    <tr>\n      <td>\u03c92</td>\n      <td>Dl2, Twi2</td>\n      <td>1.00</td>\n      <td>1.00</td>\n      <td>1.00</td>\n    </tr>\n    <tr>\n      <td>\u03c93</td>\n      <td>Dl1, Twi2</td>\n      <td>1.00</td>\n      <td>1.00</td>\n      <td>1.00</td>\n    </tr>\n    <tr>\n      <td>\u03c94</td>\n      <td>Dl1, Dl3</td>\n      <td>1.00</td>\n      <td>1.00</td>\n      <td>1.00</td>\n    </tr>\n    <tr>\n      <td>\u03c95</td>\n      <td>Dl2, Dl3</td>\n      <td>1.01</td>\n      <td>1.00</td>\n      <td>1.00</td>\n    </tr>\n    <tr>\n      <td>\u03c96</td>\n      <td>Dl3, Twi2</td>\n      <td>55.30</td>\n      <td>139.00</td>\n      <td>6.79</td>\n    </tr>\n    <tr>\n      <td>\u03c97</td>\n      <td>Dl1, Dl2, Twi2</td>\n      <td>1.07</td>\n      <td>1.05</td>\n      <td>1.03</td>\n    </tr>\n    <tr>\n      <td>\u03c98</td>\n      <td>Dl1, Dl2, Dl3</td>\n      <td>1.03</td>\n      <td>1.02</td>\n      <td>1.01</td>\n    </tr>\n    <tr>\n      <td>\u03c99</td>\n      <td>Dl2, Twi2, Dl3</td>\n      <td>1.13</td>\n      <td>61.10</td>\n      <td>1.03</td>\n    </tr>\n    <tr>\n      <td>\u03c910</td>\n      <td>Dl1, Twi2, Dl3</td>\n      <td>1.03</td>\n      <td>1.03</td>\n      <td>1.02</td>\n    </tr>\n    <tr>\n      <td>\u03c911</td>\n      <td>Dl1, Dl2, Twi2, Dl3</td>\n      <td>1.59e5</td>\n      <td>5.00e5</td>\n      <td>3.10e4</td>\n    </tr>\n  </tbody>\n</table>\n\n**Table 3.**\n Table of promoter occupancies with and without cooperativity.Table showing the promoter occupancies in the cases of cooperativity and no cooperativity for the three cooperativity terms that were greater than 1 in the optimized model. Cooperativity increases promoter occupancy by 90%.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Promoter state</th>\n      <th>Promoter occupancy with cooperativity</th>\n      <th>Promoter occupancy with no cooperativity</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>\u03c91</td>\n      <td>2.4378</td>\n      <td>0.0870</td>\n    </tr>\n    <tr>\n      <td>\u03c96</td>\n      <td>2.1913</td>\n      <td>0.0397</td>\n    </tr>\n    <tr>\n      <td>\u03c911</td>\n      <td>54.8073</td>\n      <td>3.45e-04</td>\n    </tr>\n  </tbody>\n</table>\n\nWe sought to obtain comprehensive insights into the mechanism of binding site interactions by systematically modulating model parameters. The sna enhancer contains all relatively weak Dl binding sites and activates expression only in the presence of high Dl concentration. To dissect the role of weak versus strong sites in enhancers regulating expression under different morphogen concentrations, we varied nuclear Dl levels. Decreasing Dl concentrations in the presence of low affinity binding sites results in a very low transcriptional activity, perhaps because the TF-DNA interactions are limited both by low TF concentration and low TF-DNA affinity (Figure 3\u2014figure supplement 2C). In order to obtain high transcriptional activity under a low Dl concentration background, the affinity of the TF binding sites must be increased by a factor of 2 (Figure 3\u2014figure supplement 2D). This suggests that enhancers of the genes activated by lower concentration of Dl should contain strong binding sites to maintain transcriptional activity at normal levels (Figure 3E; Hong et al., 2008). It will be of further interest to quantitate how the induced mutations affect sna activity in the presence of reduced maternally deposited Dl levels.\n\nNext, we utilized our model to test the effects of strengthening or weakening one binding site on transcriptional output. Further weakening Dl1 binding affinity renders it an almost non-affinity site and results in overall reduced mRNA production, while strengthening Dl1 affinity leads to an ectopically wider expression (Figure 3\u2014figure supplement 2E\u2013F). Relying on a single strong site may yield \u2018too high\u2019 and ectopic expression, and its removal can drastically disrupt expression, a result that was also observed upon removal of a single Dl site in the t48 enhancer (Figure 3F; Keller et al., 2020).\n\nTaken together, our data provides evidence that TF binding sites should coordinate with one another to some degree to recreate the correct pattern and levels of sna. We propose that cooperativity allows TF binding sites with moderate or weak affinities to recruit more TFs to the enhancer, generate sharp transcriptional responses, and drive strong and robust expression in the narrow sna expression domain (see Discussion).\n\n### A two-state model of transcription reveals differences in koff rates and burst duration\n\nPrevious studies have shown that transcription occurs discontinuously in distinct, stochastic bursts of activity punctuated by quiescence (Corrigan et al., 2016; Senecal et al., 2014; Donovan et al., 2019). Bursting has been proposed as an evolutionary mechanism for driving heterogeneity in gene expression, giving rise to cell-to-cell variability and overall diversity (Rodriguez and Larson, 2020). Bursting parameters, such as burst frequency, burst duration, and promoter switching rates provide a glimpse into the underlying mechanisms of dynamic transcription regulation, such as kinetic rates and promoter states. We find that the wildtype and mutant embryos show comparable numbers of actively transcribing nuclei at the beginning of the NC14. However, at later times, most wildtype nuclei in the sna expression domain are active in a given frame while nuclei from mutant embryos exhibit stochastic activity (Figure 4A, Videos 3 and 4). Indeed, by quantifying the number of nuclei transcribing at every time point, we find that the embryos with mutations have far fewer active nuclei in each frame compared to the wildtype, despite their cumulative number of active nuclei being comparable (Figure 4\u2014figure supplement 1A and B). We use stochastic modeling of transcription to investigate if TF binding site mutations cause changes in transcriptional bursting characteristics of each nucleus. The two-state model, in which a promoter can switch between an active (ON) and inactive (OFF) state, has been widely implemented to gain a functional understanding of bursting control on transcription (Figure 4B; Bothma et al., 2014; Corrigan et al., 2016).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/85997/elife-85997-fig4-v1.jpg)\n\n**Figure 4.:** (A) Actively transcribing nuclei are false-colored for early and late NC14. Mutant embryos show more sporadic transcriptional activity in a given frame. Scale bar = 15 \u03bcm. (B) Schematic depicting a single nucleus that can be in an OFF or ON state and switches between the two with rates kon and koff. The rates of kon and koff can be correlated to burst separation and burst duration, respectively. Scale bar = 5 \u03bcm. (C) Representative transcriptional trajectory of wildtype with the inferred promoter states derived from the Hidden Markov model (HMM). Arrow indicates burst duration. (D\u2013E) Plots showing the rates of (D) kon and (E) koff. kon is not significantly affected, whereas koff rates are higher in the mutant embryos. (F\u2013G) Probability distributions of (F) kon rates and (G) koff rates for wildtype, Dl1, Dl2, and Dl1/2 mutants. The distribution of kon rates follow a tight normal distribution while the koff distributions vary widely. (H) Boxplot showing the Pol II loading rates of all actively transcribing nuclei. The wildtype embryos have a significantly higher rate of Pol II loading than the mutant embryos. Error bars in (D\u2013E) indicate standard deviation (SD). A total of 1124 nuclei from three replicate wildtype embryos, 1011 nuclei from four replicate Dl1 mutant embryos, 1123 nuclei from four replicate Dl2 mutant embryos, and 943 nuclei from three replicate Dl1/2 mutant embryos were analyzed. Transcription of the MS2-yellow reporter gene is driven by the minimal sna distal enhancer. ** denote p<0.001 from the student\u2019s t-test.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/85997/elife-85997-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Plot showing the number of actively transcribing nuclei at every timepoint for wildtype and all mutant embryos. In the wildtype, the number of nuclei steadily increases, while in the mutant, the number of active nuclei at any given timepoint is much lower. (B) Plot showing the cumulative number of actively transcribing nuclei. The number of nuclei is comparable across the wildtype and mutant embryos. (C\u2013E) Plots showing the rates of (C) kon, (D) koff, and (E) burst duration for Dl3, Twi2, and Dl3Twi2 mutants. kon is not significantly affected, whereas koff rates are higher in the mutant embryos. Burst duration is also reduced in all the mutant embryos. (F\u2013G) Probability distributions of (F) kon rates and (G) koff rates for wildtype, Dl3, Twi2, and Dl3Twi2 mutants. The distribution of kon rates follow a tight normal distribution while the koff distributions vary widely. Shaded error bars in (A\u2013B) indicate SEM. Error bars in (C\u2013E) indicate standard deviation (SD). A total of 1124 nuclei from three replicate wildtype embryos, 828 nuclei from three replicate Dl3 mutant embryos, 754 nuclei from three replicate Twi2 mutant embryos, and 983 nuclei from four replicate Dl3Twi2 mutant embryos were analyzed. Transcription of the MS2-yellow reporter gene is driven by the minimal sna distal enhancer. ** denote p<0.001 from the student\u2019s t-test comparing wildtype and mutant embryos.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/85997/elife-85997-fig4-figsupp2-v1.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A) Plot showing the number of actively transcribing nuclei at every timepoint for wildtype and all mutant embryos. In the wildtype, the number of nuclei steadily increases, while in the mutant, the number of active nuclei is much more stochastic at any given timepoint. (B\u2013C) Probability distributions of (B) kon rates and (C) koff rates for wildtype, Dl1, Dl2, and Dl1/2 mutants. The distribution of kon rates follow a tight normal distribution while the koff distributions vary widely. (D\u2013F) Plots showing the rates of (D) kon, (E) koff, and (F) burst duration for Dl1, Dl2, and Dl1/2 mutants. kon is not significantly affected, whereas koff rates are higher in the mutant embryos. Burst duration is also reduced in all the mutant embryos. Shaded error bars in (A) indicate SEM. Error bars in (D\u2013F) indicate SD. A total of 730 nuclei from two replicate wildtype embryos, 1567 nuclei from four replicate Dl1 mutant embryos, 1030 nuclei from three replicate Dl2 mutant embryos, and 981 nuclei from three replicate Dl1/2 mutant embryos were analyzed. Transcription of the MS2-yellow reporter gene is driven by the full sna distal enhancer. ** denote p<0.001 from the student\u2019s t-test comparing wildtype and mutant embryos.\n\n![Video 3.](https://cdn.elifesciences.org/articles/85997/elife-85997-video3.mp4.jpg)\n\n**Video 3.:** Scale bar = 10 \u03bcm.\n\n![Video 4.](https://cdn.elifesciences.org/articles/85997/elife-85997-video4.mp4.jpg)\n\n**Video 4.:** Scale bar = 10 \u03bcm.\n\nHidden Markov models (HMMs) are utilized to reveal hidden states not directly observable based on a sequence of observed events (Bronson et al., 2009). They are extensively used to recover rates of promoter switching and other bursting parameters from transcriptional trajectories (Bothma et al., 2014; Lammers et al., 2020; Hoppe et al., 2020). In this study, we utilize an HMM to infer the promoter state based on the observed fluorescence intensity curves (Figure 4C). Based on previous studies, burst separation and burst duration can be correlated to bursting parameters, kon and koff (Hoppe et al., 2020; Zoller et al., 2018). Using our modeling approach, we extracted the kinetic rates of the promoter returning to an active state from an inactive state (kon) and vice versa (koff). Previously, we demonstrated that the mutations affect mRNA production through transcriptional amplitude (Figure 2E). This could be because either the mutations hinder Pol II loading rate or reduce the time the promoter is in the ON state. Our results reveal that kon is only slightly affected by the induced mutations, while koff is significantly increased in mutants (Figure 4D and E, Figure 4\u2014figure supplement 1C and D). Furthermore, all of the perturbations do not change the normal distribution trend of kon rates (Figure 4F, Figure 4\u2014figure supplement 1F). However, we observe heterogeneity and high variability in the distribution of koff rates as well as shorter burst durations in the mutated embryos, explaining the bursty and noisy transcriptional activity we observed (Figure 4G, Figure 4\u2014figure supplement 1E and G). This leads us to conclude that the mutations affect the ability of the promoter to remain in the active state, causing it to become more unstable and more likely to revert to the inactive state, supporting the observation of lower mRNA production. In addition, we find that the Pol II loading rate is significantly reduced in the mutant embryos compared to the wildtype (Figure 4H). This confirms that the lower transcriptional amplitude mainly results from the promoter\u2019s inability to effectively load Pol II, along with an additional contribution from the reduced time the promoter spends in the ON state. In the full distal enhancer, we observe similar stochastic transcriptional activation, where the number of actively transcribing nuclei is about 50% less in the mutants than in the wildtype at any given time (Figure 4\u2014figure supplement 2A). We also see a similar increase in the rate of koff and burst durations in the full distal enhancer, with minimal effect on kon (Figure 4\u2014figure supplement 2D\u2013F). The trend in the distributions of the promoter switching rates remains the same as well (Figure 4\u2014figure supplement 2B\u2013C). Taken together, our data demonstrate that TF-DNA binding modulates mRNA production by increasing the rate of promoter inactivation (koff), along with the decrease in Pol II loading rate.\n\n## Discussion\n\nOrganisms have evolved to contain enhancers with multiple binding sites for the same TF, not only for robustness under varying biological conditions, but as a molecular regulatory mechanism. Here, we studied transcriptional dynamics driven by different degrees of TF-DNA interactions through inducing mutations in the sna regulatory module. By utilizing quantitative live imaging, we dissected the effects of modulation of TF binding sites and determined that mRNA production of the target gene is drastically reduced when a single binding site is mutated. This reduction is mainly due to the decreased transcriptional amplitude, driven by a lower rate of Pol II loading, but is also slightly affected by shorter window of transcription, delayed transcriptional activation, and lower probability of activation (Figure 2, Figure 4H). Although a previous study demonstrated that an extended enhancer with additional binding sites could buffer against the effects of mutating a single Gt binding site (L\u00f3pez-Rivera et al., 2020), we find that the same effect in the minimal enhancer is also observed in the full distal enhancer. This could be due to Dl and Twi\u2019s roles as activators, whereas the aforementioned study investigated Gt\u2019s role as a repressor. It is interesting to note that despite the presence of additional TF binding sites, modulating a single site can catastrophically reduce gene expression levels. We confirm that the minimal enhancer is the core region that is needed to recapitulate normal sna levels and that TFs in that region employ distinct mechanisms to regulate transcription in response to genetic perturbations.\n\nMoreover, we determined that the TF binding sites in the sna enhancer work synergistically to drive the proper pattern and levels of the target gene expression. Cooperativity is a necessary mechanism by which a hub of weaker sites can coordinate to synergistically generate the correct expression pattern and levels in a developing embryo. In the context of sna, the sna enhancer only contains weak Dl binding sites, repressing short gastrulation (sog) expression in the region and preventing those cells from developing into neuroectoderm (Hong et al., 2008). Our thermodynamic model showed that increasing the binding affinity leads to ectopic expression (Figure 3F). Hence, it is crucial that the sna enhancer contains only weak Dl binding sites to drive expression exclusively in the region with high Dl concentration (i.e. mesoderm). Previous works have shown that other enhancers also utilize weak, sub-optimal binding sites to drive specific target gene expression. It was determined that despite the shavenbaby enhancers containing low-affinity binding sites, a microenvironment of high concentrations of Ubx and other cofactors can mediate efficient and specific transcription of the target locus (Tsai et al., 2017). Similarly, a single optimized Dl binding site in the t48 enhancer resulted in earlier activity and ectopic expression patterns (Keller et al., 2020). Suboptimization of enhancers was shown to be an important characteristic of gene regulation to drive restricted expression, whereas optimizing TF motifs resulted in the loss of specificity and an increase in aberrant transcriptional activity (Farley et al., 2015).\n\nProbing the thermodynamic model further reveals the importance of cooperativity in regulating expression. When all binding affinities in the sna enhancer are weakened, threefold higher cooperativity values are needed to maintain normal expression levels (Table 2). Similarly, in a sna enhancer with increased affinity binding sites, optimal cooperativity values to maintain normal expression levels and domains are ten-fold lower (Figure 3\u2014figure supplement 2A\u2013B and Table 2). Here, it is evident that concerted interaction among weaker affinity binding sites with high levels of cooperativity may be a mechanism to maintain a specific expression domain and level (Figure 3D). Such higher-degree of cooperativity among TFs has also been shown in a recent study, where cooperativity among Runt, Bcd, and Pol II are needed to drive normal gene expression level (Kim et al., 2022). Future experiments involving binding site modulations of enhancers with stronger binding sites, such as those in the sog enhancer, can be performed to confirm the model results.\n\nInterestingly, we found that the TF binding site mutations affect the rate of the promoter switching OFF. The heterogeneity in koff rates confirms that the mutations abolish the ability of the embryo to develop robustly by causing promoter instability and shorter transcription windows, leading to overall lower mRNA production. As a result of higher koff rates, the mutant embryos have fewer actively transcribing nuclei within the domain at any given time point (Figure 4A and G Figure 4\u2014figure supplement 1A, Figure 4\u2014figure supplement 2A, Videos 3 and 4). However, we note that the HMM only provides some explanation for the reduction in transcriptional activity since the changes in kon and koff are less drastic than the changes in transcriptional output. Since the amount of time the promoter spends in the ON state is not affected by the mutations, the lower transcriptional amplitude can be mainly attributed to the promoter\u2019s inability to effectively load Pol II (Figure 2E, Figure 4D and H). Furthermore, the shallower gradient of the expression pattern highlights the role of TFs in controlling the sharpness of the expression gradient, potentially affecting the robustness in germ layer formation (Figure 1H and K). In sum, we believe that multiple TF binding sites are imperative not only for pattern formation but also for eliminating extrinsic and intrinsic variabilities that may occur during development.\n\nWe illustrate that the minimal enhancer is a feasible model system to quantitatively and systematically study transcription kinetics and regulation. We note that although it may not always be possible to generalize the effects of mutations from a reporter construct to the endogenous setting, we can still gain valuable insights and broaden our understanding of transcription regulation. Since sna is responsible for mesoderm formation as well as for the repression of other patterning genes like sog that specify neuroectoderm, it will be interesting to characterize the phenotypic effects of these mutations. Specifically, if the mutation causes 65% reduction in sna activity endogenously, would the developing embryo undergo proper gastrulation and remain viable? However, since sna has at least two well-characterized enhancers (proximal and distal) that compensate for each other, investigating the phenotypic effects of endogenously modulating TF binding sites remains challenging. In order to correlate transcriptional dynamics with downstream development it will be critical to carefully design experiments that will disentangle the contributions of the individual enhancers and the role of specific TF binding sites.\n\nIn this work, we demonstrate that TFs can regulate transcriptional dynamics by tuning bursting parameters and modulating transcriptional activity in response to genetic perturbations. Using quantitative live imaging and thermodynamic modeling, we find that low-affinity TF binding sites can create an environment of increased transcriptional activity to drive localized, specific, and sharp expression patterns. The evidence of a dual modality of regulation and synergy highlights the importance of moving beyond fixed tissue studies and focusing on experiments that can tease apart subtle kinetic changes that occur during development. Collectively, our findings provide novel insights into enhancer-mediated transcriptional dynamics and expand our understanding of enhancer-TF binding through a combination of experimental and modeling approaches.\n\n## Materials and methods\n\n### Motif scanning\n\nTF binding sites were found through the FIMO (Find Individual Motif Occurrences) (Bailey et al., 2015) tool using motifs from Keller et al., 2020 and JASPAR (Castro-Mondragon et al., 2022). The cut-off p-value for motif match was set to p<1e-3. Mutations of the TF binding sites were confirmed by scanning the mutated sequence through FIMO and ensuring that it was no longer recognizable as a motif. The wildtype and mutated sequences are shown in Table 1.\n\n### Plasmid and transgenic fly generation\n\nThe minimal distal sna enhancer was characterized in Ferraro et al., 2016. TF binding sites were mutated using PCR-mediated site-directed mutagenesis and confirmed via Sanger sequencing (Table 1). The mutated enhancers were cloned into a plasmid containing the core 100 bp sna promoter, 10 copies of MS2 stem loops, and the yellow reporter gene. Transgenic reporter lines were created using PhiC31-mediated integration and the transgene was inserted to the VK33 locus (Venken et al., 2006). Injection was performed by the BestGene, Inc.\n\n### Live imaging\n\nWild-type embryos were produced by crossing yw;His2Av-mRFP,nanos >MCP:GFP (Fukaya et al., 2016) virgin females to the desired y,w;MS2 males. The embryos from the cross were laid at 25 \u00b0C, dechorionated, and staged with Halocarbon oil. All images were taken using a Zeiss LSM800 confocal laser scanning microscope. Images were acquired with a Plan-Apochromat 40x1.3 NA oil objective using a 488 nm and 561 nm laser to visualize MCP:GFP and His2Av-mRFP, respectively, with a time resolution of 21 s/frame. Images were created using maximum projection of 14 z-stacks with 0.75 \u00b5m steps. The same exposure and laser settings were used for all minimal sna replicates and a different set of settings were used for all the full distal sna replicates. All images were acquired in 16-bits. Images were taken as the embryo entered the nuclear cycle 14 until the embryo began gastrulation.\n\n### Quantification and statistical analysis\n\nAll the image processing methods and analyses were implemented in MATLAB (R2018b, MathWorks). Histograms of all the snapshots and movies shown in all figures were adjusted for visualization purposes only. Analyses of all data were performed using raw images. To determine statistical significance, the student\u2019s t-tests were performed. ** indicates p<0.001.\n\n### Image analysis\n\nSegmentation, nuclei tracking, and MS2 signal extraction were performed as described in Syed et al., 2021. Actively transcribing nuclei were labeled if they exceeded a predetermined fluorescence intensity threshold. mRNA production was calculated by integrating under the fluorescence intensity trajectories of actively transcribing nuclei. Activation time was defined as the time at which the MS2 signal increased beyond the threshold. Transcription window was calculated to be the time a nucleus was above the given threshold. The mean transcriptional amplitude was determined by averaging the MS2 signal for all transcriptionally active nuclei. The average transcriptional trajectory was obtained by averaging the intensity of all active nuclei at each timepoint. The sharpness of the expression gradient was determined by finding the maximum derivative of the mRNA production curves. The Pol II loading rate of an active nucleus was obtained by measuring the initial slope of the nucleus\u2019s smoothened fluorescence trajectory. The smoothened curve was interpolated by a factor of 10. The loading rate was determined to be the slope of the best-fit line after linear regression on the first 30 points above the threshold. Spatial analysis was performed by dividing the embryo into 16 bins along the dorsoventral axis. All the nuclei data within each bin was averaged to obtain the plots.\n\n### Equilibrium binding model\n\nThe thermodynamic model utilized in this study is built on those described in Eck et al., 2020; Kanodia et al., 2012. Concentrations of nuclear Dl were assumed to follow a normal distribution. Twi concentration was calculated from Lim et al., 2015 and normalized. The dissociation constants were chosen to reflect the relative affinity of each binding site based on their respective Patser scores (Hertz and Stormo, 1999). Assuming that the microstates are in equilibrium, the probability of transcription occurring is given by Equation 1:\n\n$$\np_{bound}=\\frac{\\frac{C_{A}}{K_{A}}\u00a0+\u00a0\\frac{C_{B}}{K_{B}}\u00a0+\u00a0\\frac{C_{C}}{K_{C}}\u00a0+\u00a0\\frac{C_{D}}{K_{D}}\u00a0+\u00a0\\omega_{1}\\frac{C_{A}C_{B}}{K_{A}K_{B}}\u00a0+\u00a0\\omega_{2}\\frac{C_{B}C_{C}}{K_{B}K_{C}}\u00a0+\u00a0\\omega_{3}\\frac{C_{A}C_{C}}{K_{A}K_{C}}\u00a0+\u00a0\\omega_{4}\\frac{C_{A}C_{D}}{K_{A}K_{D}}\u00a0+\u00a0\\omega_{5}\\frac{C_{B}C_{D}}{K_{B}K_{D}}\u00a0+\u00a0\\omega_{6}\\frac{C_{C}C_{D}}{K_{C}K_{D}}\u00a0+\u00a0\\omega_{7}\\frac{C_{A}C_{B}C_{C}}{K_{A}K_{B}K_{C}}\u00a0+\u00a0\\omega_{8}\\frac{C_{A}C_{B}C_{D}}{K_{A}K_{B}K_{D}}\u00a0+\u00a0\\omega_{9}\\frac{C_{B}C_{C}C_{D}}{K_{B}K_{C}K_{D}}\u00a0+\u00a0\\omega_{10}\\frac{C_{A}C_{C}C_{D}}{K_{A}K_{C}K_{D}}\u00a0+\u00a0\\omega_{11}\\frac{C_{A}C_{B\u00a0}C_{C}C_{D}}{K_{A}K_{B}K_{C}K_{D}}}{1+\u00a0\\frac{C_{A}}{K_{A}}\u00a0+\u00a0\\frac{C_{B}}{K_{B}}\u00a0+\u00a0\\frac{C_{C}}{K_{C}}\u00a0+\u00a0\\frac{C_{D}}{K_{D}}\u00a0+\u00a0\\omega_{1}\\frac{C_{A}C_{B}}{K_{A}K_{B}}\u00a0+\u00a0\\omega_{2}\\frac{C_{B}C_{C}}{K_{B}K_{C}}\u00a0+\u00a0\\omega_{3}\\frac{C_{A}C_{C}}{K_{A}K_{C}}\u00a0+\u00a0\\omega_{4}\\frac{C_{A}C_{D}}{K_{A}K_{D}}\u00a0+\u00a0\\omega_{5}\\frac{C_{B}C_{D}}{K_{B}K_{D}}\u00a0+\u00a0\\omega_{6}\\frac{C_{C}C_{D}}{K_{C}K_{D}}\u00a0+\u00a0\\omega_{7}\\frac{C_{A}C_{B}C_{C}}{K_{A}K_{B}K_{C}}\u00a0+\u00a0\\omega_{8}\\frac{C_{A}C_{B}C_{D}}{K_{A}K_{B}K_{D}}\u00a0+\u00a0\\omega_{9}\\frac{C_{B}C_{C}C_{D}}{K_{B}K_{C}K_{D}}\u00a0+\u00a0\\omega_{10}\\frac{C_{A}C_{C}C_{D}}{K_{A}K_{C}K_{D}}\u00a0+\u00a0\\omega_{11}\\frac{C_{A}C_{B\u00a0}C_{C}C_{D}}{K_{A}K_{B}K_{C}K_{D}}}\n$$\n\nwhere Ci is the concentration of a TF, Ki is the dissociation constant, and \u03c9i is the cooperativity factor. To find the minimum of the nonlinear multivariable functions in the previous equation, we utilized a nonlinear programming solver, fmincon (MATLAB). The solver returns a vector of cooperativity values that minimize the objective function. The objective function uses the root mean square error between the wildtype and mutant conditions to determine the cooperativity terms that would satisfy the constraints (i.e., mutant condition must have 65% reduction in expression level compared to the wildtype). A stable solution was defined once the solution converged and the solver returned cooperativities that satisfied the objective function and constraints within a step tolerance of 1e-10. Using these evaluated cooperativities, curves were generated to predict mRNA production. In the case of no cooperativity (Figure 3B), all cooperativity values were set to 1 and the results were plotted.\n\n### Two-state model\n\nTwo-state model fitting is similar to that described in Keller et al., 2020. Transcriptional trajectories were smoothened using local regression (LOESS) method. Each trajectory from a given nucleus was converted into a binary plot indicating promoter ON (1) and promoter OFF (0) states as described below. The slope between two consecutive time-points of active transcription was obtained to define promoter ON and OFF states. Time points with positive slope were considered as ON promoter states (1), while those with a negative slope were assumed as OFF promoter states (0). This binary data was used as the input for the Baum-Welch based HMM. Initial transition probabilities were assumed to be equal (i.e., 0.5). These probabilities were adjusted in each iteration to individual burst traces until they converged. The Viterbi algorithm was used to determine the most likely sequence of (ON/OFF) promoter states (shown in Figure 4C). Burst separation and burst duration were correlated to kon and koff, respectively.\n",
+      "created_at": "2025-12-04T03:45:44.932097Z"
+    },
+    {
+      "id": "3a3bf3f2-38a6-474e-abcc-ae50804fec68",
+      "submission_id": "1e0b05b9-99fc-4d33-a565-8b52f4939498",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Job Dekker, https://ror.org/0464eyp60 University of Massachusetts Medical School United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.85997.sa0](https://doi.org/10.7554/eLife.85997.sa0)\n\nThis valuable work explores how transcription factors regulate transcription through cooperative binding to enhancers. Through experiments and modeling, the authors show convincingly that the cooperativity of transcription factor binding regulates transcriptional bursting and the extent of the amount of time that the target promoter remains in an active state.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Job Dekker, https://ror.org/0464eyp60 University of Massachusetts Medical School United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.85997.sa1](https://doi.org/10.7554/eLife.85997.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Modulation of protein-DNA binding reveals mechanisms of spatiotemporal gene control in early Drosophila embryos\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Michael Eisen as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1) The MWC model should be more extensively explored, including a more complete parameter sweep and better evaluation of what the values of the cooperativity parameters are.\n\n2) The discussion needs to be expanded to include placing the work in a more general context: are the result relevant for other enhancers, in other organisms?\n\nThe reviewers make several suggestions to further strengthen the study.\n\nReviewer #1 (Recommendations for the authors):\n\nIn general, I thought this paper was nicely written with clear figures. I have a few comments to clarify some of the results and place the work in a larger context.\n\n\u2013 I'm a little unclear about how direct the connection is between transcriptional amplitude and PolII loading rate. In theory, one could imagine that, as defined in this paper, the average MS2 signal could be higher in the WT enhancer either because the Pol II loading rate is higher or because the promoter is ON for a longer time, allowing the signal to accumulate. I think it's mostly the former, given the small changes in kon/koff, but it's hard to directly see in the data provided. Others have more directly looked at the initiation rate by measuring the positive slopes of the MS2 traces, which seems like it would be possible here and useful for a more clear insight into the Pol II loading rate.\n\n\u2013 It would be more compelling to share a bit more of the results from the MWC model. It seems that there was a bit of an exploration of the parameter space, especially with regard to cooperativity, but the only thing shown is the final plots. How sensitive are the results to the parameters? How big are the cooperativity parameters? Do you have any sense of why the model predicts a bigger effect for the double binding site deletion, while the experimental results don't show this same effect? Is the impact the same for strong and weak binding sites?\n\n\u2013 I would enjoy reading a discussion that explores just a bit further how general the observations from this work might be. Do you suspect that cooperativity might be more important in enhancers that need to have weak binding sites for specificity reasons (maybe somewhat testable from your MWC model)? Do enhancers that are sensitive to low concentrations of Dl show the same multiplicities of binding sites? Do you think the reason that the extended enhancer shows the same effects as the minimal enhancer has to do with Dl/Twi's roles as activators (in contrast to Gt's role as a repressor in eve stripe 2)?\n\nReviewer #2 (Recommendations for the authors):\n\n\u2013 The equilibrium binding model is an important addition, yet is underdeveloped in the text and figures. The manuscript as written simply compares the \"no cooperativity\" condition with the fully solved \"cooperativity\" condition. What are the values of the cooperativity coefficients for the fitted results in Figure 3C? A sensitivity analysis would also be helpful to demonstrate the robustness of the results: e.g. how output changes by picking several intermediate cooperativity values. It would be nice to get an intuition of how promoter occupancy dynamics differ in the cooperative vs. non-cooperative scenarios. Out of curiosity (but not needed by any means), it might be interesting to compare promoter occupancy kinetics with the predicted bursting dynamics.\n\n\u2013 Throughout the manuscript, the authors refer to \"total mRNA production\", however, this is an extrapolation from MS2 imaging data and not an actual measurement of mRNA molecules. It may bolster the manuscript to include smFISH data using probes against the yellow reporter gene to measure the actual number of mRNA produced.\n\n\u2013 The authors delete many, but not all, TF motifs found in the minimal snail enhancer. Was there any rationale for the motifs chosen?\n\n\u2013 Lines 125 and 382: manuscript reports using 10 MS2 repeats, Figure 1A says 24 repeats. The number of loops used should be clarified.\n\n\u2013 In tracking the continuous MS2 signal, the authors report intensity values before that MS2 spot can be detected. How is this done? Are these intensity values derived from the background fluorescence seen in the nuclei?\n",
+      "created_at": "2025-12-04T03:45:44.932097Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T03:45:44.932097Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T03:45:44.932097Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "7acb68e9-ac63-4fcb-aa8b-1493f8428ed2",
+      "content_id": "c0fe30ed-8989-4e9c-9f20-bdf980f25cb4",
+      "claim_id": "C1",
+      "claim": "Enhancers regulate the spatiotemporal expression of their target genes by recruiting transcription factors (TFs) to the cognate binding sites in the region.",
+      "claim_type": "EXPLICIT",
+      "source": "It is well known that enhancers regulate the spatiotemporal expression of their target genes by recruiting transcription factors (TFs) to the cognate binding sites in the region.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as well-known information in the abstract, representing established scientific consensus.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:44.932097Z"
+    },
+    {
+      "id": "8f06ec1e-9d7f-461c-b142-b0926bb3e952",
+      "content_id": "c0fe30ed-8989-4e9c-9f20-bdf980f25cb4",
+      "claim_id": "C2",
+      "claim": "A mutation in any one of the Dorsal or Twist binding sites in the snail distal enhancer causes a drastic reduction in transcriptional amplitude.",
+      "claim_type": "EXPLICIT",
+      "source": "Through systematic modulation of Dorsal and Twist binding motifs in this enhancer, we found that a mutation in any one of these binding sites causes a drastic reduction in transcriptional amplitude, resulting in a reduction in mRNA production of the target gene.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from MS2-MCP live imaging experiments shown in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:44.932097Z"
+    },
+    {
+      "id": "e10308ae-91c7-4fb1-93c8-d63bb33ddc22",
+      "content_id": "c0fe30ed-8989-4e9c-9f20-bdf980f25cb4",
+      "claim_id": "C3",
+      "claim": "Multiple binding sites with moderate affinities cooperatively recruit more TFs to drive stronger transcriptional activity than a single site.",
+      "claim_type": "EXPLICIT",
+      "source": "We provide evidence of synergy, such that multiple binding sites with moderate affinities cooperatively recruit more TFs to drive stronger transcriptional activity than a single site.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by thermodynamic modeling and experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:44.932097Z"
+    },
+    {
+      "id": "9ac7aaed-a9bf-4aff-98a1-a2edc90f96c2",
+      "content_id": "c0fe30ed-8989-4e9c-9f20-bdf980f25cb4",
+      "claim_id": "C4",
+      "claim": "Embryos with mutated binding sites have a higher probability of returning to the inactive promoter state.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, a Hidden Markov-based stochastic model of transcription reveals that embryos with mutated binding sites have a higher probability of returning to the inactive promoter state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is derived from Hidden Markov Model analysis of transcriptional trajectories.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:44.932097Z"
+    },
+    {
+      "id": "c40d6183-887b-4a2b-8414-19215134a3fe",
+      "content_id": "c0fe30ed-8989-4e9c-9f20-bdf980f25cb4",
+      "claim_id": "C5",
+      "claim": "TF-DNA binding regulates spatial and temporal gene expression by modulating transcriptional kinetics and tuning bursting rates.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose that TF-DNA binding regulates spatial and temporal gene expression and drives robust pattern formation by modulating transcriptional kinetics and tuning bursting rates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed mechanism based on the experimental and modeling results presented in the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:44.932097Z"
+    },
+    {
+      "id": "8c46db92-3520-4bb8-a695-d492860061c0",
+      "content_id": "c0fe30ed-8989-4e9c-9f20-bdf980f25cb4",
+      "claim_id": "C6",
+      "claim": "Development of a Drosophila embryo is a highly precise and coordinated process, occurring with little variability despite intrinsic and extrinsic noise and perturbations.",
+      "claim_type": "EXPLICIT",
+      "source": "Development of a Drosophila embryo is a highly precise and coordinated process, occurring with little variability despite intrinsic and extrinsic noise and perturbations (Arias and Hayward, 2006; Houchmandzadeh et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:44.932097Z"
+    },
+    {
+      "id": "9bf624b8-4350-4f66-a547-f6e069d76741",
+      "content_id": "c0fe30ed-8989-4e9c-9f20-bdf980f25cb4",
+      "claim_id": "C7",
+      "claim": "Enhancers are short non-coding DNA sequences that regulate proper levels of essential genes and correct positioning of expression patterns.",
+      "claim_type": "EXPLICIT",
+      "source": "Proper levels of essential genes and correct positioning of expression patterns are regulated by short non-coding DNA sequences known as enhancers (Banerji et al., 1981).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to foundational work on enhancers.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:44.932097Z"
+    },
+    {
+      "id": "9fe86e0b-c702-4a75-b8be-36691eb1ee20",
+      "content_id": "c0fe30ed-8989-4e9c-9f20-bdf980f25cb4",
+      "claim_id": "C8",
+      "claim": "The genomic context of an enhancer provides an optimal environment for driving normal expression patterns and preventing misregulation upon induced perturbations.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, it was shown that the genomic context of an enhancer provides an optimal environment for driving normal expression patterns and preventing misregulation upon induced perturbations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on recent studies cited in the manuscript.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:44.932097Z"
+    },
+    {
+      "id": "5c6fb904-f8a3-4029-8ee1-1531b7cca557",
+      "content_id": "c0fe30ed-8989-4e9c-9f20-bdf980f25cb4",
+      "claim_id": "C9",
+      "claim": "Mutating a single Giant (Gt) repressor binding site in the minimal even-skipped stripe 2 enhancer region caused misexpression of the target gene, whereas those effects were buffered in an extended enhancer containing more TF binding sites.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutating a single Giant (Gt) repressor binding site in the minimal even-skipped stripe 2 enhancer region caused misexpression of the target gene, whereas those effects were buffered in an extended enhancer containing more TF binding sites and expression levels were comparable to the wildtype (L\u00f3pez-Rivera et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:44.932097Z"
+    },
+    {
+      "id": "e028ed6f-ee11-48f6-879b-fe7d4e1278f3",
+      "content_id": "c0fe30ed-8989-4e9c-9f20-bdf980f25cb4",
+      "claim_id": "C10",
+      "claim": "Enhancers containing optimal TF motifs may lead to overexpression and result in developmental defects.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent studies have explored the role of low-affinity binding sites in producing specific expression patterns and found that enhancers containing optimal TF motifs may lead to overexpression and result in developmental defects (Farley et al., 2015; Ramos and Barolo, 2013; Tsai et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to multiple previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:44.932097Z"
+    },
+    {
+      "id": "90be59b2-bd78-4141-a057-fb94023d94d7",
+      "content_id": "c0fe30ed-8989-4e9c-9f20-bdf980f25cb4",
+      "claim_id": "C11",
+      "claim": "A mutation of an activator Dorsal (Dl) site in the t48 enhancer delayed activation and almost completely abolished transcriptional activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous work has shown that modulating the strength of a single TF binding site was sufficient to disrupt transcriptional activity, such that a mutation of an activator Dorsal (Dl) site in the t48 enhancer delayed activation and almost completely abolished transcriptional activity, while optimization of the site to a consensus motif induced ectopic transcriptional activity with a broader gene expression domain (Keller et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:44.932097Z"
+    },
+    {
+      "id": "582ef45e-4694-4cde-af17-6bb0e83b7c15",
+      "content_id": "c0fe30ed-8989-4e9c-9f20-bdf980f25cb4",
+      "claim_id": "C12",
+      "claim": "Systematic removal of binding sites of varying affinities for Bicoid affects its target gene hunchback expression to a similar degree, indicating that each site has a nearly equal contribution to the overall expression pattern.",
+      "claim_type": "EXPLICIT",
+      "source": "However, systematic removal of binding sites of varying affinities for another activator, Bicoid, seems to affect its target gene, hunchback, expression to a similar degree, indicating that each site has a nearly equal contribution to the overall expression pattern (Eck et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:44.932097Z"
+    },
+    {
+      "id": "518a4454-d2ce-4755-b4c9-4423d97f5ea4",
+      "content_id": "c0fe30ed-8989-4e9c-9f20-bdf980f25cb4",
+      "claim_id": "C13",
+      "claim": "snail (sna) is a well-characterized, key patterning gene that encodes a zinc finger protein and is responsible for the differentiation of the mesoderm.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, we investigated the effects of perturbing TF-DNA binding strength on the transcriptional dynamics of snail (sna) in early Drosophila embryos. sna is a well-characterized, key patterning gene that encodes a zinc finger protein and is responsible for the differentiation of the mesoderm (Rembold et al., 2014; Leptin, 1991; Ip et al., 1992).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:44.932097Z"
+    },
+    {
+      "id": "02297ce6-77fb-4e7e-a4b1-8eec9bd89fb8",
+      "content_id": "c0fe30ed-8989-4e9c-9f20-bdf980f25cb4",
+      "claim_id": "C14",
+      "claim": "Sna represses the expression of genes responsible for neuroectoderm formation and establishes the mesoderm-neuroectoderm boundary.",
+      "claim_type": "EXPLICIT",
+      "source": "Sna represses the expression of genes responsible for neuroectoderm formation and establishes the mesoderm-neuroectoderm boundary (Kosman et al., 1991).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:44.932097Z"
+    },
+    {
+      "id": "fda11652-3eca-4c12-a9c3-3e88db48c2df",
+      "content_id": "c0fe30ed-8989-4e9c-9f20-bdf980f25cb4",
+      "claim_id": "C15",
+      "claim": "Embryos lacking sna fail to undergo gastrulation, resulting in embryonic lethality.",
+      "claim_type": "EXPLICIT",
+      "source": "Embryos lacking sna fail to undergo gastrulation, resulting in embryonic lethality (Hemavathy et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:44.932097Z"
+    },
+    {
+      "id": "79d1e4c9-5357-4b86-a363-45194e95b7d6",
+      "content_id": "c0fe30ed-8989-4e9c-9f20-bdf980f25cb4",
+      "claim_id": "C16",
+      "claim": "sna expression is controlled by a proximal enhancer and a distal (shadow) enhancer located directly upstream and ~7kb upstream of the promoter, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies have demonstrated that sna expression is controlled by a proximal enhancer and a distal (shadow) enhancer located directly upstream and ~7kb upstream of the promoter, respectively (Perry et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:44.932097Z"
+    },
+    {
+      "id": "ee856cd0-51b4-4a28-98bb-36005768e25f",
+      "content_id": "c0fe30ed-8989-4e9c-9f20-bdf980f25cb4",
+      "claim_id": "C17",
+      "claim": "The distal enhancer is necessary for proper sna expression and the viability of the developing embryo, especially under genetic and environmental stresses.",
+      "claim_type": "EXPLICIT",
+      "source": "The distal enhancer is necessary for proper sna expression and the viability of the developing embryo, especially under genetic and environmental stresses (Perry et al., 2010; Dunipace et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:44.932097Z"
+    },
+    {
+      "id": "0424b6be-1dfd-4e1d-9682-d877616e0102",
+      "content_id": "c0fe30ed-8989-4e9c-9f20-bdf980f25cb4",
+      "claim_id": "C18",
+      "claim": "The nuclear gradient of maternally deposited Dl protein controls the sharp boundaries of sna expression, such that only nuclei with high concentrations of nuclear Dl express sna.",
+      "claim_type": "EXPLICIT",
+      "source": "sna is a target gene of the Dl morphogen, and the nuclear gradient of maternally deposited Dl protein controls the sharp boundaries of sna expression, such that only nuclei with high concentrations of nuclear Dl express sna (Figure 1B; Hong et al., 2008).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citation to previous literature and shown in Figure 1B.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:44.932097Z"
+    },
+    {
+      "id": "f5520cd0-00ee-458f-9200-d6555e5231c4",
+      "content_id": "c0fe30ed-8989-4e9c-9f20-bdf980f25cb4",
+      "claim_id": "C19",
+      "claim": "The distal sna enhancer contains multiple, low-affinity binding sites for Dl, Twist (Twi), and the pioneer factor Zelda (Zld).",
+      "claim_type": "EXPLICIT",
+      "source": "Through binding assays like EMSA and ChIP-seq, it was determined that the distal sna enhancer contains multiple, low-affinity binding sites for Dl, Twist (Twi), and the pioneer factor Zelda (Zld) (Figure 1A; Zeitlinger et al., 2007; Ferraro et al., 2016).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citations to previous literature and shown in Figure 1A.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:44.932097Z"
+    },
+    {
+      "id": "891b663b-5107-4d9e-8a88-2d9588970359",
+      "content_id": "c0fe30ed-8989-4e9c-9f20-bdf980f25cb4",
+      "claim_id": "C20",
+      "claim": "sna expression is completely abolished in embryos lacking Dl or Twi.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, sna expression is completely abolished in embryos lacking Dl or Twi, and Zld null embryos show a delay in sna activation (Dufourt et al., 2018; Liang et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:44.932097Z"
+    },
+    {
+      "id": "9c17eef6-432c-4176-8bbf-6b7f3fd86dac",
+      "content_id": "c0fe30ed-8989-4e9c-9f20-bdf980f25cb4",
+      "claim_id": "C21",
+      "claim": "Zld null embryos show a delay in sna activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, sna expression is completely abolished in embryos lacking Dl or Twi, and Zld null embryos show a delay in sna activation (Dufourt et al., 2018; Liang et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:44.932097Z"
+    },
+    {
+      "id": "023a364d-834b-4f6f-ba13-17d9097f93d4",
+      "content_id": "c0fe30ed-8989-4e9c-9f20-bdf980f25cb4",
+      "claim_id": "C22",
+      "claim": "The 519 bp sna minimal enhancer is located within the full sna distal enhancer (1.6 kb) and has been shown to recapitulate proper sna expression.",
+      "claim_type": "EXPLICIT",
+      "source": "The 519 bp sna minimal enhancer is located within the full sna distal enhancer (1.6 kb) and has been shown to recapitulate proper sna expression (Figure 1A; Ferraro et al., 2016).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citation to previous literature and shown in Figure 1A.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:44.932097Z"
+    },
+    {
+      "id": "398c5b24-7d15-4cde-ae86-de3f3fd1979c",
+      "content_id": "c0fe30ed-8989-4e9c-9f20-bdf980f25cb4",
+      "claim_id": "C23",
+      "claim": "Nuclei in the center of the sna expression domain of a mutant embryo produce 65% less mRNA than those in the wildtype counterpart.",
+      "claim_type": "EXPLICIT",
+      "source": "Nuclei in the center of the sna expression domain of a mutant embryo produce 65% less mRNA than those in the wildtype counterpart.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on quantitative analysis of MS2-MCP live imaging data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:44.932097Z"
+    },
+    {
+      "id": "20b97447-a61d-4c94-bca5-b23f2be3acf4",
+      "content_id": "c0fe30ed-8989-4e9c-9f20-bdf980f25cb4",
+      "claim_id": "C24",
+      "claim": "The reduction in mRNA production occurs uniformly across the sna expression domain without significantly affecting the width.",
+      "claim_type": "EXPLICIT",
+      "source": "The reduction occurs uniformly across the sna expression domain without significantly affecting the width (Figure 1G, Figure 1\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the figures referenced.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:44.932097Z"
+    },
+    {
+      "id": "6c98ecf8-6edf-462c-8ee1-8a8ce97f8506",
+      "content_id": "c0fe30ed-8989-4e9c-9f20-bdf980f25cb4",
+      "claim_id": "C25",
+      "claim": "Mutations of different TFs (Dl and Twi) and of binding sites with different affinities (Dl1 and Dl2) all result in a similar degree of decreased mRNA production.",
+      "claim_type": "EXPLICIT",
+      "source": "It is important to note that mutations of different TFs (Dl and Twi) and of binding sites with different affinities (Dl1 and Dl2) all result in a similar degree of decreased mRNA production.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on experimental data comparing different mutations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:44.932097Z"
+    },
+    {
+      "id": "17ea026e-0485-4172-aae9-247199c92379",
+      "content_id": "c0fe30ed-8989-4e9c-9f20-bdf980f25cb4",
+      "claim_id": "C26",
+      "claim": "Each site in the minimal enhancer is necessary to drive normal sna expression, perhaps due to the sensitized background in which the mutations were induced.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that each site in the minimal enhancer is necessary to drive normal sna expression, perhaps due to the sensitized background in which the mutations were induced.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the experimental results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:44.932097Z"
+    },
+    {
+      "id": "88820507-63b0-4398-a78c-db8e651e759e",
+      "content_id": "c0fe30ed-8989-4e9c-9f20-bdf980f25cb4",
+      "claim_id": "C27",
+      "claim": "Additional TF binding sites in the full distal enhancer are not sufficient to rescue transcriptional activity when the same mutations are introduced.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite several additional Dl and Twi sites flanking the minimal enhancer, we found that the same mutations on the same TF motifs caused a similar decrease in mRNA production (Figure 1I and J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on experimental data comparing minimal and full enhancers with mutations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:44.932097Z"
+    },
+    {
+      "id": "24af1d3b-ff41-4b8e-a099-98384271710c",
+      "content_id": "c0fe30ed-8989-4e9c-9f20-bdf980f25cb4",
+      "claim_id": "C28",
+      "claim": "Mutant embryos have shallower gradients and less sharp boundaries in both the minimal and full distal sna enhancers.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we found that in both the minimal and full distal sna enhancers, the mutant embryos have shallower gradients and less sharp boundaries, highlighting the importance of proper TF-DNA interactions in regulating the sharpness of the expression domain (Figure 1H and K, Figure 1\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the figures referenced.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:44.932097Z"
+    },
+    {
+      "id": "ea15660b-de84-4bfa-a82f-164b94bba855",
+      "content_id": "c0fe30ed-8989-4e9c-9f20-bdf980f25cb4",
+      "claim_id": "C29",
+      "claim": "Shallower expression of sna may lead to higher uncertainty in germ layer formation between mesoderm and neuroectoderm.",
+      "claim_type": "EXPLICIT",
+      "source": "Shallower expression of sna may lead to higher uncertainty in germ layer formation between mesoderm and neuroectoderm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative inference based on the observed shallower gradients.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:44.932097Z"
+    },
+    {
+      "id": "fbb0f0dc-9c83-4b6f-b6d8-651273eb0f30",
+      "content_id": "c0fe30ed-8989-4e9c-9f20-bdf980f25cb4",
+      "claim_id": "C30",
+      "claim": "The introduction of the mutations in the larger genomic context (i.e., full distal enhancer) did not lessen their effect on transcriptional activity and pattern formation.",
+      "claim_type": "EXPLICIT",
+      "source": "It is interesting to note that the introduction of the mutations in the larger genomic context (i.e., full distal enhancer) did not lessen their effect on transcriptional activity and pattern formation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on comparison of experimental results between minimal and full enhancers.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:44.932097Z"
+    },
+    {
+      "id": "6322f116-9259-4dba-9ec0-3d1fc089deef",
+      "content_id": "c0fe30ed-8989-4e9c-9f20-bdf980f25cb4",
+      "claim_id": "C31",
+      "claim": "Each site within the minimal enhancer region plays a critical role in ensuring robust expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, it is evident that additional TF sites are not able to rescue normal sna transcriptional activity and that each site within the minimal enhancer region plays a critical role in ensuring robust expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:44.932097Z"
+    },
+    {
+      "id": "5413e8fb-3d54-4884-abfc-2e855b7063a7",
+      "content_id": "c0fe30ed-8989-4e9c-9f20-bdf980f25cb4",
+      "claim_id": "C32",
+      "claim": "The differences in the time for half the nuclei to begin transcription as well as the transcription initiation time per nucleus were not sufficient to explain the low mRNA output in mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the differences in the time for half the nuclei to begin transcription as well as the transcription initiation time per nucleus were not sufficient to explain the low mRNA output (Figure 2B and C, Figure 2\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on quantitative analysis shown in the figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:44.932097Z"
+    },
+    {
+      "id": "428d7cda-b870-439b-bf45-17bcb8bab474",
+      "content_id": "c0fe30ed-8989-4e9c-9f20-bdf980f25cb4",
+      "claim_id": "C33",
+      "claim": "The total number of nuclei showing active transcription was comparable among wildtypes and binding site mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the total number of nuclei showing active transcription was comparable among wildtypes and binding site mutants (Figure 4\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the figure referenced.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:44.932097Z"
+    },
+    {
+      "id": "a1e62a43-5381-46cf-ad87-a831bf15b7c7",
+      "content_id": "c0fe30ed-8989-4e9c-9f20-bdf980f25cb4",
+      "claim_id": "C34",
+      "claim": "The window of active transcription is slightly shortened in embryos containing the induced mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the window of active transcription is slightly shortened in embryos containing the induced mutations (Figure 2D, Figure 2\u2014figure supplement 1B), the main cause of the low mRNA output was the average transcriptional amplitude (Figure 2E, Figure 2\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the figures referenced.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:44.932097Z"
+    },
+    {
+      "id": "c66f5e7d-9696-4754-9b21-9a498647e57c",
+      "content_id": "c0fe30ed-8989-4e9c-9f20-bdf980f25cb4",
+      "claim_id": "C35",
+      "claim": "The main cause of the low mRNA output in mutants was the average transcriptional amplitude.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the window of active transcription is slightly shortened in embryos containing the induced mutations (Figure 2D, Figure 2\u2014figure supplement 1B), the main cause of the low mRNA output was the average transcriptional amplitude (Figure 2E, Figure 2\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on quantitative analysis shown in the figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:44.932097Z"
+    },
+    {
+      "id": "3c4f9082-6dd0-4def-b40e-61ff70bad7a5",
+      "content_id": "c0fe30ed-8989-4e9c-9f20-bdf980f25cb4",
+      "claim_id": "C36",
+      "claim": "The mutations mainly modulate transcription by lowering Pol II loading rate.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we observed a significant decrease in transcriptional intensity, leading us to conclude that the mutations mainly modulate transcription by lowering Pol II loading rate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the observed decrease in transcriptional intensity.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:44.932097Z"
+    },
+    {
+      "id": "98de9628-c58c-4508-a350-18a356c45906",
+      "content_id": "c0fe30ed-8989-4e9c-9f20-bdf980f25cb4",
+      "claim_id": "C37",
+      "claim": "The mutants with two deleted binding sites have a slightly bigger impact on transcriptional activity than those with one site removed, but the differences are small.",
+      "claim_type": "EXPLICIT",
+      "source": "At single-cell resolution, we find that the mutants with two deleted binding sites have a slightly bigger impact on transcriptional activity than those with one site removed, but the differences are small (Figure 2C\u2013E, Figure 2\u2014figure supplement 1A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on single-cell analysis shown in the figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:44.932097Z"
+    },
+    {
+      "id": "f53ff07e-1fc3-4686-a62c-8587d511c2b4",
+      "content_id": "c0fe30ed-8989-4e9c-9f20-bdf980f25cb4",
+      "claim_id": "C38",
+      "claim": "The nuclei in the center of the sna expression domain are more substantially affected by mutations, exhibiting shorter window of transcription and lower average transcriptional amplitude.",
+      "claim_type": "EXPLICIT",
+      "source": "The nuclei in the center of the sna expression domain are more substantially affected, exhibiting shorter window of transcription and lower average transcriptional amplitude, confirming the trend we observed for mRNA production (Figure 2F\u2013H, Figure 2\u2014figure supplement 1D\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the figures referenced.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:44.932097Z"
+    },
+    {
+      "id": "e6b329d7-10fb-41c6-a61e-04a2a3170e83",
+      "content_id": "c0fe30ed-8989-4e9c-9f20-bdf980f25cb4",
+      "claim_id": "C39",
+      "claim": "The center nuclei within the eve stripe 2 domain had significantly longer periods of transcription and overall, higher rates of mRNA production.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results agree with previous studies, in which the center nuclei within the eve stripe 2 domain had significantly longer periods of transcription and overall, higher rates of mRNA production (Lammers et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:44.932097Z"
+    },
+    {
+      "id": "5f0d5e4f-e55a-43a1-9d5b-3726b1687348",
+      "content_id": "c0fe30ed-8989-4e9c-9f20-bdf980f25cb4",
+      "claim_id": "C40",
+      "claim": "The Dl1 mutation induced earlier transcriptional activation than wildtype.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we observed that the Dl1 mutation induced earlier transcriptional activation than wildtype (Figure 2C and F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the figures referenced.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:44.932097Z"
+    },
+    {
+      "id": "9de2ac6a-aaeb-46f4-bc0a-0f6521cb4767",
+      "content_id": "c0fe30ed-8989-4e9c-9f20-bdf980f25cb4",
+      "claim_id": "C41",
+      "claim": "Mutating the Dl1 site may create a more favorable steric conformation, allowing Dl to bind to the single site more efficiently.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the Dl1 and Dl2 binding sites are less than 10 bp apart, mutating the Dl1 site may create a more favorable steric conformation, allowing Dl to bind to the single site more efficiently.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation for the observed earlier activation.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:44.932097Z"
+    },
+    {
+      "id": "b2be51fb-f542-4029-b41b-2702def92bfc",
+      "content_id": "c0fe30ed-8989-4e9c-9f20-bdf980f25cb4",
+      "claim_id": "C42",
+      "claim": "The earlier activation time in Dl1 mutants is not sufficient to buffer against the severe reduction in transcriptional amplitude.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the earlier activation time is not sufficient to buffer against the severe reduction in transcriptional amplitude and causes the Dl1 mutant to exhibit similarly reduced mRNA production (Figure 1G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on the data shown in Figure 1G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:44.932097Z"
+    },
+    {
+      "id": "06a1006f-3cd6-4322-a595-59f3a24c77f5",
+      "content_id": "c0fe30ed-8989-4e9c-9f20-bdf980f25cb4",
+      "claim_id": "C43",
+      "claim": "In the full distal enhancer, mutations affect the time to activation and the transcription window in addition to modulating the average transcriptional intensity.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, in addition to modulating the average transcriptional intensity, the mutations in the full distal enhancer affect the time to activation and the transcription window as well.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on analysis of the full distal enhancer data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:44.932097Z"
+    },
+    {
+      "id": "20c4829e-fbfb-404f-940f-786c80fa9fe0",
+      "content_id": "c0fe30ed-8989-4e9c-9f20-bdf980f25cb4",
+      "claim_id": "C44",
+      "claim": "Mutant embryos with the full distal enhancer have significantly more delayed transcriptional activation and a substantially shorter period of transcriptional activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutant embryos have significantly more delayed transcriptional activation and a substantially shorter period of transcriptional activity (Figure 2\u2014figure supplement 2A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the figure referenced.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:44.932097Z"
+    },
+    {
+      "id": "6fac92b4-7678-4ae8-8044-f4be9ad579a4",
+      "content_id": "c0fe30ed-8989-4e9c-9f20-bdf980f25cb4",
+      "claim_id": "C45",
+      "claim": "In the full distal enhancer, there is no significant spatial modulation of transcription parameters and the expression width remains unaffected (although the boundary is less sharp).",
+      "claim_type": "EXPLICIT",
+      "source": "As with the case with the minimal enhancer, we do not observe any significant spatial modulation of these parameters and the expression width remains unaffected (although the boundary is less sharp) (Figure 2\u2014figure supplement 2D\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the figure referenced.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:44.932097Z"
+    },
+    {
+      "id": "9efd0b2d-2f9e-47e4-97c5-5ffd6675f9d7",
+      "content_id": "c0fe30ed-8989-4e9c-9f20-bdf980f25cb4",
+      "claim_id": "C46",
+      "claim": "The thermodynamic model failed to predict the experimental data in the case of completely independent binding (no cooperativity).",
+      "claim_type": "EXPLICIT",
+      "source": "We tested our model in the case of completely independent binding, or no cooperativity. In this condition, the model failed to predict the experimental data and we found that the wildtype has only slightly higher expression levels compared to the mutants (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on modeling results shown in Figure 3B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:44.932097Z"
+    },
+    {
+      "id": "bd06d33d-cace-4efb-bce0-ecab9974d14c",
+      "content_id": "c0fe30ed-8989-4e9c-9f20-bdf980f25cb4",
+      "claim_id": "C47",
+      "claim": "When the model includes cooperativity terms among all the TFs, it can qualitatively recapitulate the experimental mRNA production curve.",
+      "claim_type": "EXPLICIT",
+      "source": "When we modified the model to include the cooperativity terms among all the TFs, we were able to qualitatively recapitulate the experimental mRNA production curve as well as determine which TFs work synergistically to help recruit more TFs to the enhancer region (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on modeling results shown in Figure 3C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:44.932097Z"
+    },
+    {
+      "id": "5de1673d-73fe-4bd7-ab44-32c489f8308b",
+      "content_id": "c0fe30ed-8989-4e9c-9f20-bdf980f25cb4",
+      "claim_id": "C48",
+      "claim": "Promoter occupancy is significantly higher when TFs interact cooperatively, such that removing cooperativity reduces promoter occupancy by more than 90%.",
+      "claim_type": "EXPLICIT",
+      "source": "Promoter occupancy is significantly higher when TFs interact cooperatively, such that removing cooperativity reduces promoter occupancy by more than 90% (Table 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Table 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:44.932097Z"
+    },
+    {
+      "id": "b69b4711-3ae5-4ea6-a6bb-a33a5152e3d8",
+      "content_id": "c0fe30ed-8989-4e9c-9f20-bdf980f25cb4",
+      "claim_id": "C49",
+      "claim": "Dl1/Dl2 (\u03c91), Dl3/Twi2 (\u03c96), and Dl1/Dl2/Dl3/Twi2 (\u03c911) cooperativities were the key parameters with a value above 1 (i.e. positive cooperativity) to reach a stable solution.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that Dl1/Dl2 (\u03c91), Dl3/Twi2 (\u03c96), and Dl1/Dl2/Dl3/Twi2 (\u03c911) cooperativities were the key parameters with a value above 1 (i.e. positive cooperativity) to reach a stable solution, confirming the role of cooperativity among weak binding sites as a mechanism for precise gene control (Table 2; Table 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on modeling results shown in Tables 2 and 3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:44.932097Z"
+    },
+    {
+      "id": "5a3d71bd-984b-4704-81f4-4b403f9ace56",
+      "content_id": "c0fe30ed-8989-4e9c-9f20-bdf980f25cb4",
+      "claim_id": "C50",
+      "claim": "Transcriptional output was not significantly affected upon modulating moderate cooperativity \u03c91 and \u03c96 values by an order of magnitude.",
+      "claim_type": "EXPLICIT",
+      "source": "Transcriptional output was not significantly affected upon modulating a moderate cooperativity \u03c91 and \u03c96 values by an order of magnitude (Figure 3\u2014figure supplement 1A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on sensitivity analysis shown in the figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:44.932097Z"
+    },
+    {
+      "id": "6c786d97-d61a-4f6e-9183-3b00dc586337",
+      "content_id": "c0fe30ed-8989-4e9c-9f20-bdf980f25cb4",
+      "claim_id": "C51",
+      "claim": "The model was more sensitive to changes in the highest cooperativity term \u03c911, which represents the interactions among all TFs.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the model was more sensitive to changes in the highest cooperativity term \u03c911, which represents the interactions among all TFs (Table 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on sensitivity analysis and shown in Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:44.932097Z"
+    },
+    {
+      "id": "f960cf85-15bf-4f0e-a23b-bd6c289c8114",
+      "content_id": "c0fe30ed-8989-4e9c-9f20-bdf980f25cb4",
+      "claim_id": "C52",
+      "claim": "Decreasing the cooperativity value of \u03c911 results in a smaller difference between wildtype and mutant transcriptional activities, while increasing cooperativity results in ectopic expression in a wider expression domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Decreasing the cooperativity value of \u03c911 results in a smaller difference between wildtype and mutant transcriptional activities, while increasing cooperativity results in ectopic expression in a wider expression domain (Figure 3\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on sensitivity analysis shown in the figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:44.932097Z"
+    },
+    {
+      "id": "d6f8ddb6-97c6-4019-8fdc-2249146ad2c0",
+      "content_id": "c0fe30ed-8989-4e9c-9f20-bdf980f25cb4",
+      "claim_id": "C53",
+      "claim": "Decreasing Dl concentrations in the presence of low affinity binding sites results in a very low transcriptional activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Decreasing Dl concentrations in the presence of low affinity binding sites results in a very low transcriptional activity, perhaps because the TF-DNA interactions are limited both by low TF concentration and low TF-DNA affinity (Figure 3\u2014figure supplement 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on modeling results shown in the figure.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:44.932097Z"
+    },
+    {
+      "id": "13f6f41b-17ee-4421-8dbe-aa3e306a551c",
+      "content_id": "c0fe30ed-8989-4e9c-9f20-bdf980f25cb4",
+      "claim_id": "C54",
+      "claim": "In order to obtain high transcriptional activity under a low Dl concentration background, the affinity of the TF binding sites must be increased by a factor of 2.",
+      "claim_type": "EXPLICIT",
+      "source": "In order to obtain high transcriptional activity under a low Dl concentration background, the affinity of the TF binding sites must be increased by a factor of 2 (Figure 3\u2014figure supplement 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on modeling results shown in the figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:44.932097Z"
+    },
+    {
+      "id": "a3814119-70a8-4925-b514-d1bd56a5ef80",
+      "content_id": "c0fe30ed-8989-4e9c-9f20-bdf980f25cb4",
+      "claim_id": "C55",
+      "claim": "Enhancers of the genes activated by lower concentration of Dl should contain strong binding sites to maintain transcriptional activity at normal levels.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that enhancers of the genes activated by lower concentration of Dl should contain strong binding sites to maintain transcriptional activity at normal levels (Figure 3E; Hong et al., 2008).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference from the modeling results and supported by citation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:44.932097Z"
+    },
+    {
+      "id": "20b7163a-e88d-41a7-883c-ac36363b52de",
+      "content_id": "c0fe30ed-8989-4e9c-9f20-bdf980f25cb4",
+      "claim_id": "C56",
+      "claim": "Further weakening Dl1 binding affinity renders it an almost non-affinity site and results in overall reduced mRNA production.",
+      "claim_type": "EXPLICIT",
+      "source": "Further weakening Dl1 binding affinity renders it an almost non-affinity site and results in overall reduced mRNA production, while strengthening Dl1 affinity leads to an ectopically wider expression (Figure 3\u2014figure supplement 2E\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on modeling results shown in the figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:44.932097Z"
+    },
+    {
+      "id": "dba74c0d-c877-4429-9357-1985caabc8c2",
+      "content_id": "c0fe30ed-8989-4e9c-9f20-bdf980f25cb4",
+      "claim_id": "C57",
+      "claim": "Strengthening Dl1 affinity leads to an ectopically wider expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Further weakening Dl1 binding affinity renders it an almost non-affinity site and results in overall reduced mRNA production, while strengthening Dl1 affinity leads to an ectopically wider expression (Figure 3\u2014figure supplement 2E\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on modeling results shown in the figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:44.932097Z"
+    },
+    {
+      "id": "f1ca8fec-aadf-47a4-8621-3209ac6d21e7",
+      "content_id": "c0fe30ed-8989-4e9c-9f20-bdf980f25cb4",
+      "claim_id": "C58",
+      "claim": "Relying on a single strong site may yield 'too high' and ectopic expression, and its removal can drastically disrupt expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Relying on a single strong site may yield 'too high' and ectopic expression, and its removal can drastically disrupt expression, a result that was also observed upon removal of a single Dl site in the t48 enhancer (Figure 3F; Keller et al., 2020).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on modeling results and supported by citation to a previous study.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:44.932097Z"
+    },
+    {
+      "id": "7a79fc2a-5276-48be-83ce-79ef121eba7d",
+      "content_id": "c0fe30ed-8989-4e9c-9f20-bdf980f25cb4",
+      "claim_id": "C59",
+      "claim": "TF binding sites should coordinate with one another to some degree to recreate the correct pattern and levels of sna.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, our data provides evidence that TF binding sites should coordinate with one another to some degree to recreate the correct pattern and levels of sna.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the modeling and experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:44.932097Z"
+    },
+    {
+      "id": "1012923d-28f0-4412-891d-dd1b57c24e98",
+      "content_id": "c0fe30ed-8989-4e9c-9f20-bdf980f25cb4",
+      "claim_id": "C60",
+      "claim": "Cooperativity allows TF binding sites with moderate or weak affinities to recruit more TFs to the enhancer, generate sharp transcriptional responses, and drive strong and robust expression in the narrow sna expression domain.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose that cooperativity allows TF binding sites with moderate or weak affinities to recruit more TFs to the enhancer, generate sharp transcriptional responses, and drive strong and robust expression in the narrow sna expression domain (see Discussion).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed mechanism based on the data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:44.932097Z"
+    },
+    {
+      "id": "03eeaa1b-5c0b-4acb-9480-38176d610b0b",
+      "content_id": "c0fe30ed-8989-4e9c-9f20-bdf980f25cb4",
+      "claim_id": "C61",
+      "claim": "Transcription occurs discontinuously in distinct, stochastic bursts of activity punctuated by quiescence.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies have shown that transcription occurs discontinuously in distinct, stochastic bursts of activity punctuated by quiescence (Corrigan et al., 2016; Senecal et al., 2014; Donovan et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:44.932097Z"
+    },
+    {
+      "id": "ed30e7cd-39fb-4058-a16e-0eb91fc5b30a",
+      "content_id": "c0fe30ed-8989-4e9c-9f20-bdf980f25cb4",
+      "claim_id": "C62",
+      "claim": "Bursting has been proposed as an evolutionary mechanism for driving heterogeneity in gene expression, giving rise to cell-to-cell variability and overall diversity.",
+      "claim_type": "EXPLICIT",
+      "source": "Bursting has been proposed as an evolutionary mechanism for driving heterogeneity in gene expression, giving rise to cell-to-cell variability and overall diversity (Rodriguez and Larson, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:44.932097Z"
+    },
+    {
+      "id": "f5db294d-7333-4148-a687-c36f5bfef983",
+      "content_id": "c0fe30ed-8989-4e9c-9f20-bdf980f25cb4",
+      "claim_id": "C63",
+      "claim": "The wildtype and mutant embryos show comparable numbers of actively transcribing nuclei at the beginning of the NC14.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that the wildtype and mutant embryos show comparable numbers of actively transcribing nuclei at the beginning of the NC14.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on quantitative analysis of the imaging data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:44.932097Z"
+    },
+    {
+      "id": "32352119-d662-42f4-9643-cc15db23cd64",
+      "content_id": "c0fe30ed-8989-4e9c-9f20-bdf980f25cb4",
+      "claim_id": "C64",
+      "claim": "At later times, most wildtype nuclei in the sna expression domain are active in a given frame while nuclei from mutant embryos exhibit stochastic activity.",
+      "claim_type": "EXPLICIT",
+      "source": "However, at later times, most wildtype nuclei in the sna expression domain are active in a given frame while nuclei from mutant embryos exhibit stochastic activity (Figure 4A, Videos 3 and 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the figure and videos referenced.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:44.932097Z"
+    },
+    {
+      "id": "d0cf2fbb-e38d-49c3-a35c-c9b8d58fa9c4",
+      "content_id": "c0fe30ed-8989-4e9c-9f20-bdf980f25cb4",
+      "claim_id": "C65",
+      "claim": "The embryos with mutations have far fewer active nuclei in each frame compared to the wildtype, despite their cumulative number of active nuclei being comparable.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, by quantifying the number of nuclei transcribing at every time point, we find that the embryos with mutations have far fewer active nuclei in each frame compared to the wildtype, despite their cumulative number of active nuclei being comparable (Figure 4\u2014figure supplement 1A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the figure referenced.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:44.932097Z"
+    },
+    {
+      "id": "fdef8d28-6c18-43b8-a4f0-48e2fbc0ce30",
+      "content_id": "c0fe30ed-8989-4e9c-9f20-bdf980f25cb4",
+      "claim_id": "C66",
+      "claim": "kon is only slightly affected by the induced mutations, while koff is significantly increased in mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results reveal that kon is only slightly affected by the induced mutations, while koff is significantly increased in mutants (Figure 4D and E, Figure 4\u2014figure supplement 1C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on Hidden Markov Model analysis shown in the figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:44.932097Z"
+    },
+    {
+      "id": "2d08630e-a718-4b81-934c-f30ae6b7c458",
+      "content_id": "c0fe30ed-8989-4e9c-9f20-bdf980f25cb4",
+      "claim_id": "C67",
+      "claim": "All of the perturbations do not change the normal distribution trend of kon rates.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, all of the perturbations do not change the normal distribution trend of kon rates (Figure 4F, Figure 4\u2014figure supplement 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the figures referenced.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:44.932097Z"
+    },
+    {
+      "id": "7f364ad7-08fe-46cd-b136-0013f77a9e37",
+      "content_id": "c0fe30ed-8989-4e9c-9f20-bdf980f25cb4",
+      "claim_id": "C68",
+      "claim": "There is heterogeneity and high variability in the distribution of koff rates as well as shorter burst durations in the mutated embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we observe heterogeneity and high variability in the distribution of koff rates as well as shorter burst durations in the mutated embryos, explaining the bursty and noisy transcriptional activity we observed (Figure 4G, Figure 4\u2014figure supplement 1E and G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the figures referenced.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:44.932097Z"
+    },
+    {
+      "id": "ab0fba4e-4a05-412e-82d7-d0f097ee89a3",
+      "content_id": "c0fe30ed-8989-4e9c-9f20-bdf980f25cb4",
+      "claim_id": "C69",
+      "claim": "The mutations affect the ability of the promoter to remain in the active state, causing it to become more unstable and more likely to revert to the inactive state.",
+      "claim_type": "EXPLICIT",
+      "source": "This leads us to conclude that the mutations affect the ability of the promoter to remain in the active state, causing it to become more unstable and more likely to revert to the inactive state, supporting the observation of lower mRNA production.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the HMM analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:44.932097Z"
+    },
+    {
+      "id": "a80a91aa-240b-4048-a99a-a542ff0ef329",
+      "content_id": "c0fe30ed-8989-4e9c-9f20-bdf980f25cb4",
+      "claim_id": "C70",
+      "claim": "The Pol II loading rate is significantly reduced in the mutant embryos compared to the wildtype.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we find that the Pol II loading rate is significantly reduced in the mutant embryos compared to the wildtype (Figure 4H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 4H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:44.932097Z"
+    },
+    {
+      "id": "01cce842-c4a4-4671-9803-899079e14d42",
+      "content_id": "c0fe30ed-8989-4e9c-9f20-bdf980f25cb4",
+      "claim_id": "C71",
+      "claim": "The lower transcriptional amplitude mainly results from the promoter's inability to effectively load Pol II, along with an additional contribution from the reduced time the promoter spends in the ON state.",
+      "claim_type": "EXPLICIT",
+      "source": "This confirms that the lower transcriptional amplitude mainly results from the promoter's inability to effectively load Pol II, along with an additional contribution from the reduced time the promoter spends in the ON state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the combined analysis of Pol II loading rates and burst durations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:44.932097Z"
+    },
+    {
+      "id": "abd51efe-9434-45f1-afe4-34b46bc5dcf0",
+      "content_id": "c0fe30ed-8989-4e9c-9f20-bdf980f25cb4",
+      "claim_id": "C72",
+      "claim": "In the full distal enhancer, the number of actively transcribing nuclei is about 50% less in the mutants than in the wildtype at any given time.",
+      "claim_type": "EXPLICIT",
+      "source": "In the full distal enhancer, we observe similar stochastic transcriptional activation, where the number of actively transcribing nuclei is about 50% less in the mutants than in the wildtype at any given time (Figure 4\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the figure referenced.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:44.932097Z"
+    },
+    {
+      "id": "9e048bf5-a3b2-41f6-ba13-9a933eb43db0",
+      "content_id": "c0fe30ed-8989-4e9c-9f20-bdf980f25cb4",
+      "claim_id": "C73",
+      "claim": "In the full distal enhancer, there is a similar increase in the rate of koff and burst durations, with minimal effect on kon.",
+      "claim_type": "EXPLICIT",
+      "source": "We also see a similar increase in the rate of koff and burst durations in the full distal enhancer, with minimal effect on kon (Figure 4\u2014figure supplement 2D\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the figure referenced.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:44.932097Z"
+    },
+    {
+      "id": "542802eb-be1f-4b01-a860-8f21f2247c79",
+      "content_id": "c0fe30ed-8989-4e9c-9f20-bdf980f25cb4",
+      "claim_id": "C74",
+      "claim": "TF-DNA binding modulates mRNA production by increasing the rate of promoter inactivation (koff), along with the decrease in Pol II loading rate.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, our data demonstrate that TF-DNA binding modulates mRNA production by increasing the rate of promoter inactivation (koff), along with the decrease in Pol II loading rate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the combined analysis of bursting parameters and Pol II loading rates.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:44.932097Z"
+    },
+    {
+      "id": "b70cc455-b0bb-4f92-a690-896043089154",
+      "content_id": "c0fe30ed-8989-4e9c-9f20-bdf980f25cb4",
+      "claim_id": "C75",
+      "claim": "Organisms have evolved to contain enhancers with multiple binding sites for the same TF, not only for robustness under varying biological conditions, but as a molecular regulatory mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "Organisms have evolved to contain enhancers with multiple binding sites for the same TF, not only for robustness under varying biological conditions, but as a molecular regulatory mechanism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about evolutionary mechanisms.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:44.932097Z"
+    },
+    {
+      "id": "f8af7a2a-4c93-41ea-8c3b-6060bce26cb3",
+      "content_id": "c0fe30ed-8989-4e9c-9f20-bdf980f25cb4",
+      "claim_id": "C76",
+      "claim": "mRNA production of the target gene is drastically reduced when a single binding site is mutated.",
+      "claim_type": "EXPLICIT",
+      "source": "By utilizing quantitative live imaging, we dissected the effects of modulation of TF binding sites and determined that mRNA production of the target gene is drastically reduced when a single binding site is mutated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the experimental findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:44.932097Z"
+    },
+    {
+      "id": "4ce4aca5-bf34-4674-823a-d511bac996a5",
+      "content_id": "c0fe30ed-8989-4e9c-9f20-bdf980f25cb4",
+      "claim_id": "C77",
+      "claim": "This reduction is mainly due to the decreased transcriptional amplitude, driven by a lower rate of Pol II loading, but is also slightly affected by shorter window of transcription, delayed transcriptional activation, and lower probability of activation.",
+      "claim_type": "EXPLICIT",
+      "source": "This reduction is mainly due to the decreased transcriptional amplitude, driven by a lower rate of Pol II loading, but is also slightly affected by shorter window of transcription, delayed transcriptional activation, and lower probability of activation (Figure 2, Figure 4H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a summary of the experimental findings shown in the figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:44.932097Z"
+    },
+    {
+      "id": "cd07f9d7-68d2-4612-a970-e43a899849aa",
+      "content_id": "c0fe30ed-8989-4e9c-9f20-bdf980f25cb4",
+      "claim_id": "C78",
+      "claim": "An extended enhancer with additional binding sites could buffer against the effects of mutating a single Gt binding site.",
+      "claim_type": "EXPLICIT",
+      "source": "Although a previous study demonstrated that an extended enhancer with additional binding sites could buffer against the effects of mutating a single Gt binding site (L\u00f3pez-Rivera et al., 2020), we find that the same effect in the minimal enhancer is also observed in the full distal enhancer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a previous study and contrasted with the current findings.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:44.932097Z"
+    },
+    {
+      "id": "d20ce688-7357-4045-bb26-2fb4398e29ca",
+      "content_id": "c0fe30ed-8989-4e9c-9f20-bdf980f25cb4",
+      "claim_id": "C79",
+      "claim": "The lack of buffering in the full distal enhancer could be due to Dl and Twi's roles as activators, whereas the previous study investigated Gt's role as a repressor.",
+      "claim_type": "EXPLICIT",
+      "source": "This could be due to Dl and Twi's roles as activators, whereas the aforementioned study investigated Gt's role as a repressor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation for the difference in results.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:44.932097Z"
+    },
+    {
+      "id": "34c9b73f-73b5-4a55-8f35-dbecf28dfe97",
+      "content_id": "c0fe30ed-8989-4e9c-9f20-bdf980f25cb4",
+      "claim_id": "C80",
+      "claim": "Despite the presence of additional TF binding sites, modulating a single site can catastrophically reduce gene expression levels.",
+      "claim_type": "EXPLICIT",
+      "source": "It is interesting to note that despite the presence of additional TF binding sites, modulating a single site can catastrophically reduce gene expression levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:44.932097Z"
+    },
+    {
+      "id": "b0891602-18c1-48e5-8224-24513727a37d",
+      "content_id": "c0fe30ed-8989-4e9c-9f20-bdf980f25cb4",
+      "claim_id": "C81",
+      "claim": "The minimal enhancer is the core region that is needed to recapitulate normal sna levels.",
+      "claim_type": "EXPLICIT",
+      "source": "We confirm that the minimal enhancer is the core region that is needed to recapitulate normal sna levels and that TFs in that region employ distinct mechanisms to regulate transcription in response to genetic perturbations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:44.932097Z"
+    },
+    {
+      "id": "b99350cd-b53d-4296-b03e-f3bba490da95",
+      "content_id": "c0fe30ed-8989-4e9c-9f20-bdf980f25cb4",
+      "claim_id": "C82",
+      "claim": "The TF binding sites in the sna enhancer work synergistically to drive the proper pattern and levels of the target gene expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, we determined that the TF binding sites in the sna enhancer work synergistically to drive the proper pattern and levels of the target gene expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the thermodynamic modeling.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:44.932097Z"
+    },
+    {
+      "id": "825ee36d-bb7d-489c-b1d7-404e91674aa1",
+      "content_id": "c0fe30ed-8989-4e9c-9f20-bdf980f25cb4",
+      "claim_id": "C83",
+      "claim": "Cooperativity is a necessary mechanism by which a hub of weaker sites can coordinate to synergistically generate the correct expression pattern and levels in a developing embryo.",
+      "claim_type": "EXPLICIT",
+      "source": "Cooperativity is a necessary mechanism by which a hub of weaker sites can coordinate to synergistically generate the correct expression pattern and levels in a developing embryo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the thermodynamic modeling.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:44.932097Z"
+    },
+    {
+      "id": "98a44c65-1460-4d65-82fb-94a2e0ca1f9a",
+      "content_id": "c0fe30ed-8989-4e9c-9f20-bdf980f25cb4",
+      "claim_id": "C84",
+      "claim": "The sna enhancer only contains weak Dl binding sites, repressing short gastrulation (sog) expression in the region and preventing those cells from developing into neuroectoderm.",
+      "claim_type": "EXPLICIT",
+      "source": "In the context of sna, the sna enhancer only contains weak Dl binding sites, repressing short gastrulation (sog) expression in the region and preventing those cells from developing into neuroectoderm (Hong et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:44.932097Z"
+    },
+    {
+      "id": "eb70c2d3-f439-48e6-becc-3ca97443b210",
+      "content_id": "c0fe30ed-8989-4e9c-9f20-bdf980f25cb4",
+      "claim_id": "C85",
+      "claim": "Increasing the binding affinity leads to ectopic expression according to the thermodynamic model.",
+      "claim_type": "EXPLICIT",
+      "source": "Our thermodynamic model showed that increasing the binding affinity leads to ectopic expression (Figure 3F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on modeling results shown in the figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:44.932097Z"
+    },
+    {
+      "id": "cd524bb0-5f18-49c4-93a6-4f39f8978027",
+      "content_id": "c0fe30ed-8989-4e9c-9f20-bdf980f25cb4",
+      "claim_id": "C86",
+      "claim": "It is crucial that the sna enhancer contains only weak Dl binding sites to drive expression exclusively in the region with high Dl concentration (i.e. mesoderm).",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, it is crucial that the sna enhancer contains only weak Dl binding sites to drive expression exclusively in the region with high Dl concentration (i.e. mesoderm).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the modeling results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:44.932097Z"
+    },
+    {
+      "id": "a543fa8c-1e89-4bc1-9e70-4b1cc7a42637",
+      "content_id": "c0fe30ed-8989-4e9c-9f20-bdf980f25cb4",
+      "claim_id": "C87",
+      "claim": "Other enhancers also utilize weak, sub-optimal binding sites to drive specific target gene expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous works have shown that other enhancers also utilize weak, sub-optimal binding sites to drive specific target gene expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about previous findings.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:44.932097Z"
+    },
+    {
+      "id": "68f4ffea-e848-4fc7-b35b-a09281661215",
+      "content_id": "c0fe30ed-8989-4e9c-9f20-bdf980f25cb4",
+      "claim_id": "C88",
+      "claim": "A microenvironment of high concentrations of Ubx and other cofactors can mediate efficient and specific transcription of the target locus despite the shavenbaby enhancers containing low-affinity binding sites.",
+      "claim_type": "EXPLICIT",
+      "source": "It was determined that despite the shavenbaby enhancers containing low-affinity binding sites, a microenvironment of high concentrations of Ubx and other cofactors can mediate efficient and specific transcription of the target locus (Tsai et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:44.932097Z"
+    },
+    {
+      "id": "eb8df26d-606c-40cf-8508-b25430b1248d",
+      "content_id": "c0fe30ed-8989-4e9c-9f20-bdf980f25cb4",
+      "claim_id": "C89",
+      "claim": "A single optimized Dl binding site in the t48 enhancer resulted in earlier activity and ectopic expression patterns.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, a single optimized Dl binding site in the t48 enhancer resulted in earlier activity and ectopic expression patterns (Keller et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:44.932097Z"
+    },
+    {
+      "id": "92911c25-b9d1-4bf2-8037-7b90f3e26144",
+      "content_id": "c0fe30ed-8989-4e9c-9f20-bdf980f25cb4",
+      "claim_id": "C90",
+      "claim": "Suboptimization of enhancers was shown to be an important characteristic of gene regulation to drive restricted expression, whereas optimizing TF motifs resulted in the loss of specificity and an increase in aberrant transcriptional activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Suboptimization of enhancers was shown to be an important characteristic of gene regulation to drive restricted expression, whereas optimizing TF motifs resulted in the loss of specificity and an increase in aberrant transcriptional activity (Farley et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:44.932097Z"
+    },
+    {
+      "id": "9dc2fbd3-3426-46b2-8b4a-df902944d7d8",
+      "content_id": "c0fe30ed-8989-4e9c-9f20-bdf980f25cb4",
+      "claim_id": "C91",
+      "claim": "When all binding affinities in the sna enhancer are weakened, threefold higher cooperativity values are needed to maintain normal expression levels.",
+      "claim_type": "EXPLICIT",
+      "source": "When all binding affinities in the sna enhancer are weakened, threefold higher cooperativity values are needed to maintain normal expression levels (Table 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on modeling results shown in Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:44.932097Z"
+    },
+    {
+      "id": "bb03983e-4e17-434d-8ed0-a8d228c0f3ba",
+      "content_id": "c0fe30ed-8989-4e9c-9f20-bdf980f25cb4",
+      "claim_id": "C92",
+      "claim": "In a sna enhancer with increased affinity binding sites, optimal cooperativity values to maintain normal expression levels and domains are ten-fold lower.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, in a sna enhancer with increased affinity binding sites, optimal cooperativity values to maintain normal expression levels and domains are ten-fold lower (Figure 3\u2014figure supplement 2A\u2013B and Table 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on modeling results shown in the figure and table.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:44.932097Z"
+    },
+    {
+      "id": "dc736317-2d50-41c0-8e19-6bdc2f7a15be",
+      "content_id": "c0fe30ed-8989-4e9c-9f20-bdf980f25cb4",
+      "claim_id": "C93",
+      "claim": "Concerted interaction among weaker affinity binding sites with high levels of cooperativity may be a mechanism to maintain a specific expression domain and level.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, it is evident that concerted interaction among weaker affinity binding sites with high levels of cooperativity may be a mechanism to maintain a specific expression domain and level (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion drawn from the modeling results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:44.932097Z"
+    },
+    {
+      "id": "c5b89783-ec53-41e9-83ed-615b0d0f68f0",
+      "content_id": "c0fe30ed-8989-4e9c-9f20-bdf980f25cb4",
+      "claim_id": "C94",
+      "claim": "Cooperativity among Runt, Bcd, and Pol II are needed to drive normal gene expression level.",
+      "claim_type": "EXPLICIT",
+      "source": "Such higher-degree of cooperativity among TFs has also been shown in a recent study, where cooperativity among Runt, Bcd, and Pol II are needed to drive normal gene expression level (Kim et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a recent study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:44.932097Z"
+    },
+    {
+      "id": "fc61b0d7-a657-4f5f-bb9d-41ed9a2d9599",
+      "content_id": "c0fe30ed-8989-4e9c-9f20-bdf980f25cb4",
+      "claim_id": "C95",
+      "claim": "The TF binding site mutations affect the rate of the promoter switching OFF.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we found that the TF binding site mutations affect the rate of the promoter switching OFF.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on HMM analysis of transcriptional trajectories.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:44.932097Z"
+    },
+    {
+      "id": "9454537a-00bb-4bc8-a7fa-722535e7123f",
+      "content_id": "c0fe30ed-8989-4e9c-9f20-bdf980f25cb4",
+      "claim_id": "C96",
+      "claim": "The heterogeneity in koff rates confirms that the mutations abolish the ability of the embryo to develop robustly by causing promoter instability and shorter transcription windows, leading to overall lower mRNA production.",
+      "claim_type": "EXPLICIT",
+      "source": "The heterogeneity in koff rates confirms that the mutations abolish the ability of the embryo to develop robustly by causing promoter instability and shorter transcription windows, leading to overall lower mRNA production.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the HMM analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:44.932097Z"
+    },
+    {
+      "id": "274f384c-89e8-4c18-9027-68b26d64793d",
+      "content_id": "c0fe30ed-8989-4e9c-9f20-bdf980f25cb4",
+      "claim_id": "C97",
+      "claim": "The HMM only provides some explanation for the reduction in transcriptional activity since the changes in kon and koff are less drastic than the changes in transcriptional output.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we note that the HMM only provides some explanation for the reduction in transcriptional activity since the changes in kon and koff are less drastic than the changes in transcriptional output.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an acknowledgment of the limitations of the HMM analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:44.932097Z"
+    },
+    {
+      "id": "343c8feb-26d7-4e94-834d-8cbf962be813",
+      "content_id": "c0fe30ed-8989-4e9c-9f20-bdf980f25cb4",
+      "claim_id": "C98",
+      "claim": "Since the amount of time the promoter spends in the ON state is not affected by the mutations, the lower transcriptional amplitude can be mainly attributed to the promoter's inability to effectively load Pol II.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the amount of time the promoter spends in the ON state is not affected by the mutations, the lower transcriptional amplitude can be mainly attributed to the promoter's inability to effectively load Pol II (Figure 2E, Figure 4D and H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion drawn from the combined analysis shown in the figures.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:44.932097Z"
+    },
+    {
+      "id": "0781cd65-597b-46a4-889a-c172ad55c843",
+      "content_id": "c0fe30ed-8989-4e9c-9f20-bdf980f25cb4",
+      "claim_id": "C99",
+      "claim": "The shallower gradient of the expression pattern highlights the role of TFs in controlling the sharpness of the expression gradient, potentially affecting the robustness in germ layer formation.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the shallower gradient of the expression pattern highlights the role of TFs in controlling the sharpness of the expression gradient, potentially affecting the robustness in germ layer formation (Figure 1H and K).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion drawn from the data shown in the figures.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:44.932097Z"
+    },
+    {
+      "id": "3cb4e483-c0c2-41df-a9ca-7cbf0a4b6bd8",
+      "content_id": "c0fe30ed-8989-4e9c-9f20-bdf980f25cb4",
+      "claim_id": "C100",
+      "claim": "Multiple TF binding sites are imperative not only for pattern formation but also for eliminating extrinsic and intrinsic variabilities that may occur during development.",
+      "claim_type": "EXPLICIT",
+      "source": "In sum, we believe that multiple TF binding sites are imperative not only for pattern formation but also for eliminating extrinsic and intrinsic variabilities that may occur during development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the overall findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:44.932097Z"
+    },
+    {
+      "id": "8416ba63-b5d6-4a22-b2b8-2cda8142b73f",
+      "content_id": "c0fe30ed-8989-4e9c-9f20-bdf980f25cb4",
+      "claim_id": "C101",
+      "claim": "The minimal enhancer is a feasible model system to quantitatively and systematically study transcription kinetics and regulation.",
+      "claim_type": "EXPLICIT",
+      "source": "We illustrate that the minimal enhancer is a feasible model system to quantitatively and systematically study transcription kinetics and regulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion about the utility of the experimental system.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:44.932097Z"
+    },
+    {
+      "id": "0a64ca65-99aa-43cb-a5ac-c46d47d218bd",
+      "content_id": "c0fe30ed-8989-4e9c-9f20-bdf980f25cb4",
+      "claim_id": "C102",
+      "claim": "Although it may not always be possible to generalize the effects of mutations from a reporter construct to the endogenous setting, we can still gain valuable insights and broaden our understanding of transcription regulation.",
+      "claim_type": "EXPLICIT",
+      "source": "We note that although it may not always be possible to generalize the effects of mutations from a reporter construct to the endogenous setting, we can still gain valuable insights and broaden our understanding of transcription regulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an acknowledgment of the limitations of the experimental approach.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:44.932097Z"
+    },
+    {
+      "id": "4492a59b-afb6-43d8-94d0-999495d0786c",
+      "content_id": "c0fe30ed-8989-4e9c-9f20-bdf980f25cb4",
+      "claim_id": "C103",
+      "claim": "Since sna is responsible for mesoderm formation as well as for the repression of other patterning genes like sog that specify neuroectoderm, it will be interesting to characterize the phenotypic effects of these mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "Since sna is responsible for mesoderm formation as well as for the repression of other patterning genes like sog that specify neuroectoderm, it will be interesting to characterize the phenotypic effects of these mutations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a suggestion for future research.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:44.932097Z"
+    },
+    {
+      "id": "5ed3c574-428f-4e9b-b560-274e0d6bc7b3",
+      "content_id": "c0fe30ed-8989-4e9c-9f20-bdf980f25cb4",
+      "claim_id": "C104",
+      "claim": "Since sna has at least two well-characterized enhancers (proximal and distal) that compensate for each other, investigating the phenotypic effects of endogenously modulating TF binding sites remains challenging.",
+      "claim_type": "EXPLICIT",
+      "source": "However, since sna has at least two well-characterized enhancers (proximal and distal) that compensate for each other, investigating the phenotypic effects of endogenously modulating TF binding sites remains challenging.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an acknowledgment of experimental challenges.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:44.932097Z"
+    },
+    {
+      "id": "f3511bde-928a-4a69-9a7d-cb8b1d7a00fa",
+      "content_id": "c0fe30ed-8989-4e9c-9f20-bdf980f25cb4",
+      "claim_id": "C105",
+      "claim": "TFs can regulate transcriptional dynamics by tuning bursting parameters and modulating transcriptional activity in response to genetic perturbations.",
+      "claim_type": "EXPLICIT",
+      "source": "In this work, we demonstrate that TFs can regulate transcriptional dynamics by tuning bursting parameters and modulating transcriptional activity in response to genetic perturbations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the main findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:44.932097Z"
+    },
+    {
+      "id": "c12f8ffb-5a2b-48fd-85d3-aa3c65f43149",
+      "content_id": "c0fe30ed-8989-4e9c-9f20-bdf980f25cb4",
+      "claim_id": "C106",
+      "claim": "Low-affinity TF binding sites can create an environment of increased transcriptional activity to drive localized, specific, and sharp expression patterns.",
+      "claim_type": "EXPLICIT",
+      "source": "Using quantitative live imaging and thermodynamic modeling, we find that low-affinity TF binding sites can create an environment of increased transcriptional activity to drive localized, specific, and sharp expression patterns.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the main findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:44.932097Z"
+    },
+    {
+      "id": "4034705d-2d6f-4be5-b244-50d9086da38e",
+      "content_id": "c0fe30ed-8989-4e9c-9f20-bdf980f25cb4",
+      "claim_id": "C107",
+      "claim": "The evidence of a dual modality of regulation and synergy highlights the importance of moving beyond fixed tissue studies and focusing on experiments that can tease apart subtle kinetic changes that occur during development.",
+      "claim_type": "EXPLICIT",
+      "source": "The evidence of a dual modality of regulation and synergy highlights the importance of moving beyond fixed tissue studies and focusing on experiments that can tease apart subtle kinetic changes that occur during development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion about the importance of the experimental approach.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:44.932097Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "74020a6a-103a-4014-ba47-020cbf55fd71",
+      "content_id": "c0fe30ed-8989-4e9c-9f20-bdf980f25cb4",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Single TF binding site mutations in the snail distal enhancer cause drastic reduction in mRNA production. Mutations in any single Dl or Twi binding site reduce mRNA production by ~65% uniformly across the expression domain, regardless of which TF or binding affinity is mutated. This effect persists even in the full distal enhancer with additional binding sites.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C23-C27, C30-C31, and C76 collectively demonstrate through MS2-MCP live imaging that single binding site mutations drastically reduce transcriptional output. The quantitative data (65% reduction, Figure 1G) and consistency across different mutations and enhancer contexts provide strong experimental support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:45:44.932097Z"
+    },
+    {
+      "id": "30491106-b96b-4bd7-9061-70a84ff8a319",
+      "content_id": "c0fe30ed-8989-4e9c-9f20-bdf980f25cb4",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The reduction in mRNA production is primarily caused by decreased transcriptional amplitude due to lower Pol II loading rate, with minor contributions from shortened transcription windows. The timing of activation and number of active nuclei are not significantly affected.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C38, C70-C71, C77, and C98 provide comprehensive mechanistic analysis showing that transcriptional amplitude (C35) and Pol II loading rate (C70) are the primary drivers of reduced mRNA output, supported by quantitative data in Figures 2 and 4H. The dissection of multiple parameters strengthens this conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:45:44.932097Z"
+    },
+    {
+      "id": "ef527c69-d4e8-46cd-8b0a-0aa616767568",
+      "content_id": "c0fe30ed-8989-4e9c-9f20-bdf980f25cb4",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Mutant embryos exhibit shallower expression gradients and less sharp boundaries compared to wildtype, potentially affecting robustness of germ layer formation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28 and C99 are supported by quantitative measurements of gradient sharpness shown in Figures 1H and 1K. However, the connection to germ layer formation (C29) remains speculative without direct phenotypic analysis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:45:44.932097Z"
+    },
+    {
+      "id": "975ccc6c-7c83-4b54-8d44-542ed00e96e7",
+      "content_id": "c0fe30ed-8989-4e9c-9f20-bdf980f25cb4",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "TF binding sites work cooperatively to drive proper gene expression. Thermodynamic modeling shows that cooperativity among binding sites is necessary to recapitulate experimental data, with key cooperativity parameters \u03c91, \u03c96, and \u03c911 required for stable solutions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C46-C49, C59-C60, C82-C83 demonstrate through thermodynamic modeling (Figures 3B-C, Tables 2-3) that cooperativity is essential. The model without cooperativity fails to predict experimental data (C46), while inclusion of cooperativity terms qualitatively recapitulates observations (C47). Promoter occupancy calculations (C48) provide quantitative support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:45:44.932097Z"
+    },
+    {
+      "id": "3d9626f8-1b71-4d78-95e6-cf9c2c5b2cff",
+      "content_id": "c0fe30ed-8989-4e9c-9f20-bdf980f25cb4",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Sensitivity analysis reveals the thermodynamic model is robust to moderate changes in cooperativity parameters \u03c91 and \u03c96, but more sensitive to changes in \u03c911, which represents interactions among all TFs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C52 are supported by sensitivity analysis shown in Figure 3\u2014figure supplement 1. The differential sensitivity to \u03c911 versus \u03c91/\u03c96 is clearly demonstrated, providing insight into the relative importance of different cooperative interactions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:45:44.932097Z"
+    },
+    {
+      "id": "d028acc0-a127-4a9a-8f10-5221a1aa80f9",
+      "content_id": "c0fe30ed-8989-4e9c-9f20-bdf980f25cb4",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The thermodynamic model predicts that low-affinity binding sites require high Dl concentrations for activity, while increasing binding affinity leads to ectopic expression. This explains why the sna enhancer contains only weak Dl binding sites.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C57, C85-C86 are supported by modeling results in Figure 3\u2014figure supplement 2. The model predictions are internally consistent and align with biological understanding of sna expression patterns. However, experimental validation of these predictions is not provided.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:45:44.932097Z"
+    },
+    {
+      "id": "c0fba330-af73-45d3-9e39-d8587fc6a1c8",
+      "content_id": "c0fe30ed-8989-4e9c-9f20-bdf980f25cb4",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Modeling shows that weaker binding sites require higher cooperativity values to maintain normal expression, while stronger sites require lower cooperativity. This suggests cooperativity among weak sites is a mechanism to maintain specific expression domains.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C91-C93 are supported by modeling results in Table 2 and Figure 3\u2014figure supplement 2A-B. The inverse relationship between binding affinity and required cooperativity is clearly demonstrated, though experimental validation is lacking.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:45:44.932097Z"
+    },
+    {
+      "id": "0291203a-fba8-4c88-8b3b-f3c9ddedc0d8",
+      "content_id": "c0fe30ed-8989-4e9c-9f20-bdf980f25cb4",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "TF binding site mutations increase the rate of promoter inactivation (koff) and reduce burst durations, while having minimal effect on activation rate (kon). This causes more stochastic transcriptional activity with fewer active nuclei at any given time.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C63-C69, C74, C95-C96 are supported by Hidden Markov Model analysis (Figures 4D-G). The differential effects on koff versus kon are clearly demonstrated, and the connection to stochastic activity is well-supported by imaging data (Figure 4A, Videos 3-4).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:45:44.932097Z"
+    },
+    {
+      "id": "5168baac-0f00-48b9-97c5-3b8dad744924",
+      "content_id": "c0fe30ed-8989-4e9c-9f20-bdf980f25cb4",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The HMM analysis provides only partial explanation for the reduction in transcriptional activity, as changes in kon and koff are less drastic than changes in transcriptional output.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C97 is an honest acknowledgment of the model's limitations, supported by comparison of the magnitude of changes in bursting parameters versus transcriptional output. This demonstrates appropriate scientific caution.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:45:44.932097Z"
+    },
+    {
+      "id": "64aee5c0-e2e0-424d-9ff0-f4e929304e3c",
+      "content_id": "c0fe30ed-8989-4e9c-9f20-bdf980f25cb4",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The Dl1 mutation causes earlier transcriptional activation than wildtype, possibly due to improved steric conformation when Dl1 is mutated, but this earlier activation does not compensate for reduced amplitude.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C40 is supported by data in Figures 2C and 2F. However, the mechanistic explanation in C41 is speculative without structural or binding data. The observation is interesting but the interpretation requires further validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:45:44.932097Z"
+    },
+    {
+      "id": "f50b37d6-299d-4978-9954-efdd71e4368b",
+      "content_id": "c0fe30ed-8989-4e9c-9f20-bdf980f25cb4",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "In the full distal enhancer, mutations affect timing of activation and transcription window in addition to amplitude, showing different regulatory mechanisms compared to the minimal enhancer.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C45, C72-C73 are supported by data in Figure 2\u2014figure supplement 2 and Figure 4\u2014figure supplement 2. The differential effects between minimal and full enhancers are clearly demonstrated, though the mechanistic basis for these differences is not fully explained.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:45:44.932097Z"
+    },
+    {
+      "id": "4513754d-2f8b-474e-9482-1664442653ea",
+      "content_id": "c0fe30ed-8989-4e9c-9f20-bdf980f25cb4",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Unlike previous findings with repressor binding sites, additional TF binding sites in the full distal enhancer do not buffer against mutations in activator sites. The minimal enhancer is the core region needed for normal sna expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C78-C81 are supported by comparison of minimal and full enhancer data (Figures 1I-J). The contrast with previous work (L\u00f3pez-Rivera et al., 2020) is noted, though the explanation in C79 (activator vs. repressor) is speculative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:45:44.932097Z"
+    },
+    {
+      "id": "2ea9a6eb-7c9d-425b-9f4f-13e5d7f38e1e",
+      "content_id": "c0fe30ed-8989-4e9c-9f20-bdf980f25cb4",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "TF-DNA binding regulates spatiotemporal gene expression by modulating transcriptional kinetics and tuning bursting rates. Multiple TF binding sites are imperative for pattern formation and eliminating developmental variability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C100, C105-C106 represent the main conclusions synthesizing experimental and modeling results. These are well-supported by the collective evidence from live imaging, thermodynamic modeling, and HMM analysis presented throughout the manuscript.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:45:44.932097Z"
+    },
+    {
+      "id": "1824fbe7-8c00-4f87-8add-3f2bebee86d3",
+      "content_id": "c0fe30ed-8989-4e9c-9f20-bdf980f25cb4",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Background information on enhancer function, Drosophila development, and snail gene regulation is established through citations to previous literature.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C6-C7, C13-C22 provide established background knowledge supported by appropriate citations. These claims accurately represent prior work and provide necessary context for the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:45:44.932097Z"
+    },
+    {
+      "id": "82656a69-44ec-477e-a3ae-0478528edef1",
+      "content_id": "c0fe30ed-8989-4e9c-9f20-bdf980f25cb4",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Previous studies have shown varied effects of TF binding site mutations, with some enhancers showing buffering and others showing sensitivity. Low-affinity sites are important for specific expression patterns.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C12, C39, C84, C87-C90, C94 accurately summarize relevant prior work through appropriate citations. These provide important context for interpreting the current findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:45:44.932097Z"
+    },
+    {
+      "id": "d19fc8a3-bb30-4311-8118-dff405f51ef7",
+      "content_id": "c0fe30ed-8989-4e9c-9f20-bdf980f25cb4",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Transcriptional bursting is an established phenomenon that drives heterogeneity in gene expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C62 accurately represent established knowledge about transcriptional bursting, supported by appropriate citations to previous literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:45:44.932097Z"
+    },
+    {
+      "id": "121f17e4-3d0a-4ae2-a81f-852623633623",
+      "content_id": "c0fe30ed-8989-4e9c-9f20-bdf980f25cb4",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Shallower sna expression may affect germ layer formation, and it would be interesting to characterize phenotypic effects of these mutations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C29 and C103 are speculative suggestions for future work. While biologically plausible, these remain untested hypotheses without supporting experimental data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:45:44.932097Z"
+    },
+    {
+      "id": "13e735f1-c446-48ee-b445-1cb77853194a",
+      "content_id": "c0fe30ed-8989-4e9c-9f20-bdf980f25cb4",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The minimal enhancer is a useful model system for studying transcription regulation, though generalizing from reporter constructs to endogenous settings has limitations. Live imaging approaches are important for capturing kinetic changes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C101-C102, C104, C107 represent appropriate discussion of the experimental system's strengths and limitations. These demonstrate scientific rigor in acknowledging both the utility and constraints of the approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:45:44.932097Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "8f06ec1e-9d7f-461c-b142-b0926bb3e952",
+      "result_id": "74020a6a-103a-4014-ba47-020cbf55fd71"
+    },
+    {
+      "claim_id": "398c5b24-7d15-4cde-ae86-de3f3fd1979c",
+      "result_id": "74020a6a-103a-4014-ba47-020cbf55fd71"
+    },
+    {
+      "claim_id": "20b97447-a61d-4c94-bca5-b23f2be3acf4",
+      "result_id": "74020a6a-103a-4014-ba47-020cbf55fd71"
+    },
+    {
+      "claim_id": "6c98ecf8-6edf-462c-8ee1-8a8ce97f8506",
+      "result_id": "74020a6a-103a-4014-ba47-020cbf55fd71"
+    },
+    {
+      "claim_id": "17ea026e-0485-4172-aae9-247199c92379",
+      "result_id": "74020a6a-103a-4014-ba47-020cbf55fd71"
+    },
+    {
+      "claim_id": "88820507-63b0-4398-a78c-db8e651e759e",
+      "result_id": "74020a6a-103a-4014-ba47-020cbf55fd71"
+    },
+    {
+      "claim_id": "fbb0f0dc-9c83-4b6f-b6d8-651273eb0f30",
+      "result_id": "74020a6a-103a-4014-ba47-020cbf55fd71"
+    },
+    {
+      "claim_id": "6322f116-9259-4dba-9ec0-3d1fc089deef",
+      "result_id": "74020a6a-103a-4014-ba47-020cbf55fd71"
+    },
+    {
+      "claim_id": "f8af7a2a-4c93-41ea-8c3b-6060bce26cb3",
+      "result_id": "74020a6a-103a-4014-ba47-020cbf55fd71"
+    },
+    {
+      "claim_id": "5413e8fb-3d54-4884-abfc-2e855b7063a7",
+      "result_id": "30491106-b96b-4bd7-9061-70a84ff8a319"
+    },
+    {
+      "claim_id": "428d7cda-b870-439b-bf45-17bcb8bab474",
+      "result_id": "30491106-b96b-4bd7-9061-70a84ff8a319"
+    },
+    {
+      "claim_id": "a1e62a43-5381-46cf-ad87-a831bf15b7c7",
+      "result_id": "30491106-b96b-4bd7-9061-70a84ff8a319"
+    },
+    {
+      "claim_id": "c66f5e7d-9696-4754-9b21-9a498647e57c",
+      "result_id": "30491106-b96b-4bd7-9061-70a84ff8a319"
+    },
+    {
+      "claim_id": "3c4f9082-6dd0-4def-b40e-61ff70bad7a5",
+      "result_id": "30491106-b96b-4bd7-9061-70a84ff8a319"
+    },
+    {
+      "claim_id": "98de9628-c58c-4508-a350-18a356c45906",
+      "result_id": "30491106-b96b-4bd7-9061-70a84ff8a319"
+    },
+    {
+      "claim_id": "f53ff07e-1fc3-4686-a62c-8587d511c2b4",
+      "result_id": "30491106-b96b-4bd7-9061-70a84ff8a319"
+    },
+    {
+      "claim_id": "a80a91aa-240b-4048-a99a-a542ff0ef329",
+      "result_id": "30491106-b96b-4bd7-9061-70a84ff8a319"
+    },
+    {
+      "claim_id": "01cce842-c4a4-4671-9803-899079e14d42",
+      "result_id": "30491106-b96b-4bd7-9061-70a84ff8a319"
+    },
+    {
+      "claim_id": "4ce4aca5-bf34-4674-823a-d511bac996a5",
+      "result_id": "30491106-b96b-4bd7-9061-70a84ff8a319"
+    },
+    {
+      "claim_id": "343c8feb-26d7-4e94-834d-8cbf962be813",
+      "result_id": "30491106-b96b-4bd7-9061-70a84ff8a319"
+    },
+    {
+      "claim_id": "24af1d3b-ff41-4b8e-a099-98384271710c",
+      "result_id": "ef527c69-d4e8-46cd-8b0a-0aa616767568"
+    },
+    {
+      "claim_id": "0781cd65-597b-46a4-889a-c172ad55c843",
+      "result_id": "ef527c69-d4e8-46cd-8b0a-0aa616767568"
+    },
+    {
+      "claim_id": "e10308ae-91c7-4fb1-93c8-d63bb33ddc22",
+      "result_id": "975ccc6c-7c83-4b54-8d44-542ed00e96e7"
+    },
+    {
+      "claim_id": "9efd0b2d-2f9e-47e4-97c5-5ffd6675f9d7",
+      "result_id": "975ccc6c-7c83-4b54-8d44-542ed00e96e7"
+    },
+    {
+      "claim_id": "bd06d33d-cace-4efb-bce0-ecab9974d14c",
+      "result_id": "975ccc6c-7c83-4b54-8d44-542ed00e96e7"
+    },
+    {
+      "claim_id": "5de1673d-73fe-4bd7-ab44-32c489f8308b",
+      "result_id": "975ccc6c-7c83-4b54-8d44-542ed00e96e7"
+    },
+    {
+      "claim_id": "b69b4711-3ae5-4ea6-a6bb-a33a5152e3d8",
+      "result_id": "975ccc6c-7c83-4b54-8d44-542ed00e96e7"
+    },
+    {
+      "claim_id": "7a79fc2a-5276-48be-83ce-79ef121eba7d",
+      "result_id": "975ccc6c-7c83-4b54-8d44-542ed00e96e7"
+    },
+    {
+      "claim_id": "1012923d-28f0-4412-891d-dd1b57c24e98",
+      "result_id": "975ccc6c-7c83-4b54-8d44-542ed00e96e7"
+    },
+    {
+      "claim_id": "b99350cd-b53d-4296-b03e-f3bba490da95",
+      "result_id": "975ccc6c-7c83-4b54-8d44-542ed00e96e7"
+    },
+    {
+      "claim_id": "825ee36d-bb7d-489c-b1d7-404e91674aa1",
+      "result_id": "975ccc6c-7c83-4b54-8d44-542ed00e96e7"
+    },
+    {
+      "claim_id": "5a3d71bd-984b-4704-81f4-4b403f9ace56",
+      "result_id": "3d9626f8-1b71-4d78-95e6-cf9c2c5b2cff"
+    },
+    {
+      "claim_id": "6c786d97-d61a-4f6e-9183-3b00dc586337",
+      "result_id": "3d9626f8-1b71-4d78-95e6-cf9c2c5b2cff"
+    },
+    {
+      "claim_id": "f960cf85-15bf-4f0e-a23b-bd6c289c8114",
+      "result_id": "3d9626f8-1b71-4d78-95e6-cf9c2c5b2cff"
+    },
+    {
+      "claim_id": "d6f8ddb6-97c6-4019-8fdc-2249146ad2c0",
+      "result_id": "d028acc0-a127-4a9a-8f10-5221a1aa80f9"
+    },
+    {
+      "claim_id": "13f6f41b-17ee-4421-8dbe-aa3e306a551c",
+      "result_id": "d028acc0-a127-4a9a-8f10-5221a1aa80f9"
+    },
+    {
+      "claim_id": "a3814119-70a8-4925-b514-d1bd56a5ef80",
+      "result_id": "d028acc0-a127-4a9a-8f10-5221a1aa80f9"
+    },
+    {
+      "claim_id": "20b7163a-e88d-41a7-883c-ac36363b52de",
+      "result_id": "d028acc0-a127-4a9a-8f10-5221a1aa80f9"
+    },
+    {
+      "claim_id": "dba74c0d-c877-4429-9357-1985caabc8c2",
+      "result_id": "d028acc0-a127-4a9a-8f10-5221a1aa80f9"
+    },
+    {
+      "claim_id": "eb70c2d3-f439-48e6-becc-3ca97443b210",
+      "result_id": "d028acc0-a127-4a9a-8f10-5221a1aa80f9"
+    },
+    {
+      "claim_id": "cd524bb0-5f18-49c4-93a6-4f39f8978027",
+      "result_id": "d028acc0-a127-4a9a-8f10-5221a1aa80f9"
+    },
+    {
+      "claim_id": "9dc2fbd3-3426-46b2-8b4a-df902944d7d8",
+      "result_id": "c0fba330-af73-45d3-9e39-d8587fc6a1c8"
+    },
+    {
+      "claim_id": "bb03983e-4e17-434d-8ed0-a8d228c0f3ba",
+      "result_id": "c0fba330-af73-45d3-9e39-d8587fc6a1c8"
+    },
+    {
+      "claim_id": "dc736317-2d50-41c0-8e19-6bdc2f7a15be",
+      "result_id": "c0fba330-af73-45d3-9e39-d8587fc6a1c8"
+    },
+    {
+      "claim_id": "9ac7aaed-a9bf-4aff-98a1-a2edc90f96c2",
+      "result_id": "0291203a-fba8-4c88-8b3b-f3c9ddedc0d8"
+    },
+    {
+      "claim_id": "f5db294d-7333-4148-a687-c36f5bfef983",
+      "result_id": "0291203a-fba8-4c88-8b3b-f3c9ddedc0d8"
+    },
+    {
+      "claim_id": "32352119-d662-42f4-9643-cc15db23cd64",
+      "result_id": "0291203a-fba8-4c88-8b3b-f3c9ddedc0d8"
+    },
+    {
+      "claim_id": "d0cf2fbb-e38d-49c3-a35c-c9b8d58fa9c4",
+      "result_id": "0291203a-fba8-4c88-8b3b-f3c9ddedc0d8"
+    },
+    {
+      "claim_id": "fdef8d28-6c18-43b8-a4f0-48e2fbc0ce30",
+      "result_id": "0291203a-fba8-4c88-8b3b-f3c9ddedc0d8"
+    },
+    {
+      "claim_id": "2d08630e-a718-4b81-934c-f30ae6b7c458",
+      "result_id": "0291203a-fba8-4c88-8b3b-f3c9ddedc0d8"
+    },
+    {
+      "claim_id": "7f364ad7-08fe-46cd-b136-0013f77a9e37",
+      "result_id": "0291203a-fba8-4c88-8b3b-f3c9ddedc0d8"
+    },
+    {
+      "claim_id": "ab0fba4e-4a05-412e-82d7-d0f097ee89a3",
+      "result_id": "0291203a-fba8-4c88-8b3b-f3c9ddedc0d8"
+    },
+    {
+      "claim_id": "542802eb-be1f-4b01-a860-8f21f2247c79",
+      "result_id": "0291203a-fba8-4c88-8b3b-f3c9ddedc0d8"
+    },
+    {
+      "claim_id": "fc61b0d7-a657-4f5f-bb9d-41ed9a2d9599",
+      "result_id": "0291203a-fba8-4c88-8b3b-f3c9ddedc0d8"
+    },
+    {
+      "claim_id": "9454537a-00bb-4bc8-a7fa-722535e7123f",
+      "result_id": "0291203a-fba8-4c88-8b3b-f3c9ddedc0d8"
+    },
+    {
+      "claim_id": "274f384c-89e8-4c18-9027-68b26d64793d",
+      "result_id": "5168baac-0f00-48b9-97c5-3b8dad744924"
+    },
+    {
+      "claim_id": "5f0d5e4f-e55a-43a1-9d5b-3726b1687348",
+      "result_id": "64aee5c0-e2e0-424d-9ff0-f4e929304e3c"
+    },
+    {
+      "claim_id": "9de2ac6a-aaeb-46f4-bc0a-0f6521cb4767",
+      "result_id": "64aee5c0-e2e0-424d-9ff0-f4e929304e3c"
+    },
+    {
+      "claim_id": "b2be51fb-f542-4029-b41b-2702def92bfc",
+      "result_id": "64aee5c0-e2e0-424d-9ff0-f4e929304e3c"
+    },
+    {
+      "claim_id": "06a1006f-3cd6-4322-a595-59f3a24c77f5",
+      "result_id": "f50b37d6-299d-4978-9954-efdd71e4368b"
+    },
+    {
+      "claim_id": "20c4829e-fbfb-404f-940f-786c80fa9fe0",
+      "result_id": "f50b37d6-299d-4978-9954-efdd71e4368b"
+    },
+    {
+      "claim_id": "6fac92b4-7678-4ae8-8044-f4be9ad579a4",
+      "result_id": "f50b37d6-299d-4978-9954-efdd71e4368b"
+    },
+    {
+      "claim_id": "abd51efe-9434-45f1-afe4-34b46bc5dcf0",
+      "result_id": "f50b37d6-299d-4978-9954-efdd71e4368b"
+    },
+    {
+      "claim_id": "9e048bf5-a3b2-41f6-ba13-9a933eb43db0",
+      "result_id": "f50b37d6-299d-4978-9954-efdd71e4368b"
+    },
+    {
+      "claim_id": "cd07f9d7-68d2-4612-a970-e43a899849aa",
+      "result_id": "4513754d-2f8b-474e-9482-1664442653ea"
+    },
+    {
+      "claim_id": "d20ce688-7357-4045-bb26-2fb4398e29ca",
+      "result_id": "4513754d-2f8b-474e-9482-1664442653ea"
+    },
+    {
+      "claim_id": "34c9b73f-73b5-4a55-8f35-dbecf28dfe97",
+      "result_id": "4513754d-2f8b-474e-9482-1664442653ea"
+    },
+    {
+      "claim_id": "b0891602-18c1-48e5-8224-24513727a37d",
+      "result_id": "4513754d-2f8b-474e-9482-1664442653ea"
+    },
+    {
+      "claim_id": "c40d6183-887b-4a2b-8414-19215134a3fe",
+      "result_id": "2ea9a6eb-7c9d-425b-9f4f-13e5d7f38e1e"
+    },
+    {
+      "claim_id": "3cb4e483-c0c2-41df-a9ca-7cbf0a4b6bd8",
+      "result_id": "2ea9a6eb-7c9d-425b-9f4f-13e5d7f38e1e"
+    },
+    {
+      "claim_id": "f3511bde-928a-4a69-9a7d-cb8b1d7a00fa",
+      "result_id": "2ea9a6eb-7c9d-425b-9f4f-13e5d7f38e1e"
+    },
+    {
+      "claim_id": "c12f8ffb-5a2b-48fd-85d3-aa3c65f43149",
+      "result_id": "2ea9a6eb-7c9d-425b-9f4f-13e5d7f38e1e"
+    },
+    {
+      "claim_id": "7acb68e9-ac63-4fcb-aa8b-1493f8428ed2",
+      "result_id": "1824fbe7-8c00-4f87-8add-3f2bebee86d3"
+    },
+    {
+      "claim_id": "8c46db92-3520-4bb8-a695-d492860061c0",
+      "result_id": "1824fbe7-8c00-4f87-8add-3f2bebee86d3"
+    },
+    {
+      "claim_id": "9bf624b8-4350-4f66-a547-f6e069d76741",
+      "result_id": "1824fbe7-8c00-4f87-8add-3f2bebee86d3"
+    },
+    {
+      "claim_id": "518a4454-d2ce-4755-b4c9-4423d97f5ea4",
+      "result_id": "1824fbe7-8c00-4f87-8add-3f2bebee86d3"
+    },
+    {
+      "claim_id": "02297ce6-77fb-4e7e-a4b1-8eec9bd89fb8",
+      "result_id": "1824fbe7-8c00-4f87-8add-3f2bebee86d3"
+    },
+    {
+      "claim_id": "fda11652-3eca-4c12-a9c3-3e88db48c2df",
+      "result_id": "1824fbe7-8c00-4f87-8add-3f2bebee86d3"
+    },
+    {
+      "claim_id": "79d1e4c9-5357-4b86-a363-45194e95b7d6",
+      "result_id": "1824fbe7-8c00-4f87-8add-3f2bebee86d3"
+    },
+    {
+      "claim_id": "ee856cd0-51b4-4a28-98bb-36005768e25f",
+      "result_id": "1824fbe7-8c00-4f87-8add-3f2bebee86d3"
+    },
+    {
+      "claim_id": "0424b6be-1dfd-4e1d-9682-d877616e0102",
+      "result_id": "1824fbe7-8c00-4f87-8add-3f2bebee86d3"
+    },
+    {
+      "claim_id": "f5520cd0-00ee-458f-9200-d6555e5231c4",
+      "result_id": "1824fbe7-8c00-4f87-8add-3f2bebee86d3"
+    },
+    {
+      "claim_id": "891b663b-5107-4d9e-8a88-2d9588970359",
+      "result_id": "1824fbe7-8c00-4f87-8add-3f2bebee86d3"
+    },
+    {
+      "claim_id": "9c17eef6-432c-4176-8bbf-6b7f3fd86dac",
+      "result_id": "1824fbe7-8c00-4f87-8add-3f2bebee86d3"
+    },
+    {
+      "claim_id": "023a364d-834b-4f6f-ba13-17d9097f93d4",
+      "result_id": "1824fbe7-8c00-4f87-8add-3f2bebee86d3"
+    },
+    {
+      "claim_id": "9fe86e0b-c702-4a75-b8be-36691eb1ee20",
+      "result_id": "82656a69-44ec-477e-a3ae-0478528edef1"
+    },
+    {
+      "claim_id": "5c6fb904-f8a3-4029-8ee1-1531b7cca557",
+      "result_id": "82656a69-44ec-477e-a3ae-0478528edef1"
+    },
+    {
+      "claim_id": "e028ed6f-ee11-48f6-879b-fe7d4e1278f3",
+      "result_id": "82656a69-44ec-477e-a3ae-0478528edef1"
+    },
+    {
+      "claim_id": "90be59b2-bd78-4141-a057-fb94023d94d7",
+      "result_id": "82656a69-44ec-477e-a3ae-0478528edef1"
+    },
+    {
+      "claim_id": "582ef45e-4694-4cde-af17-6bb0e83b7c15",
+      "result_id": "82656a69-44ec-477e-a3ae-0478528edef1"
+    },
+    {
+      "claim_id": "e6b329d7-10fb-41c6-a61e-04a2a3170e83",
+      "result_id": "82656a69-44ec-477e-a3ae-0478528edef1"
+    },
+    {
+      "claim_id": "98a44c65-1460-4d65-82fb-94a2e0ca1f9a",
+      "result_id": "82656a69-44ec-477e-a3ae-0478528edef1"
+    },
+    {
+      "claim_id": "a543fa8c-1e89-4bc1-9e70-4b1cc7a42637",
+      "result_id": "82656a69-44ec-477e-a3ae-0478528edef1"
+    },
+    {
+      "claim_id": "68f4ffea-e848-4fc7-b35b-a09281661215",
+      "result_id": "82656a69-44ec-477e-a3ae-0478528edef1"
+    },
+    {
+      "claim_id": "eb8df26d-606c-40cf-8508-b25430b1248d",
+      "result_id": "82656a69-44ec-477e-a3ae-0478528edef1"
+    },
+    {
+      "claim_id": "92911c25-b9d1-4bf2-8037-7b90f3e26144",
+      "result_id": "82656a69-44ec-477e-a3ae-0478528edef1"
+    },
+    {
+      "claim_id": "c5b89783-ec53-41e9-83ed-615b0d0f68f0",
+      "result_id": "82656a69-44ec-477e-a3ae-0478528edef1"
+    },
+    {
+      "claim_id": "03eeaa1b-5c0b-4acb-9480-38176d610b0b",
+      "result_id": "d19fc8a3-bb30-4311-8118-dff405f51ef7"
+    },
+    {
+      "claim_id": "ed30e7cd-39fb-4058-a16e-0eb91fc5b30a",
+      "result_id": "d19fc8a3-bb30-4311-8118-dff405f51ef7"
+    },
+    {
+      "claim_id": "ea15660b-de84-4bfa-a82f-164b94bba855",
+      "result_id": "121f17e4-3d0a-4ae2-a81f-852623633623"
+    },
+    {
+      "claim_id": "4492a59b-afb6-43d8-94d0-999495d0786c",
+      "result_id": "121f17e4-3d0a-4ae2-a81f-852623633623"
+    },
+    {
+      "claim_id": "8416ba63-b5d6-4a22-b2b8-2cda8142b73f",
+      "result_id": "13e735f1-c446-48ee-b445-1cb77853194a"
+    },
+    {
+      "claim_id": "0a64ca65-99aa-43cb-a5ac-c46d47d218bd",
+      "result_id": "13e735f1-c446-48ee-b445-1cb77853194a"
+    },
+    {
+      "claim_id": "5ed3c574-428f-4e9b-b560-274e0d6bc7b3",
+      "result_id": "13e735f1-c446-48ee-b445-1cb77853194a"
+    },
+    {
+      "claim_id": "4034705d-2d6f-4be5-b244-50d9086da38e",
+      "result_id": "13e735f1-c446-48ee-b445-1cb77853194a"
+    }
+  ],
+  "comparisons": []
+}

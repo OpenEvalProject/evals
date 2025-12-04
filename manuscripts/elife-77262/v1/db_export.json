@@ -1,0 +1,1791 @@
+{
+  "submission": {
+    "id": "db530cf9-89ab-4c06-8491-e7da9c0035cd",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-04T01:49:24.648633Z",
+    "updated_at": "2025-12-04T01:49:24.648633Z"
+  },
+  "content": [
+    {
+      "id": "f52743cb-44cf-42bd-b709-1052709812b4",
+      "submission_id": "db530cf9-89ab-4c06-8491-e7da9c0035cd",
+      "content_type": "manuscript",
+      "content_text": "# Self-organization of songbird neural sequences during social isolation\n\n## Authors\n\n- Emily L Mackevicius<sup>1</sup> ([ORCID: 0000-0001-6593-4398](https://orcid.org/0000-0001-6593-4398))\n- Shijie Gu<sup>1</sup> ([ORCID: 0000-0001-6257-5756](https://orcid.org/0000-0001-6257-5756))\n- Natalia I Denisenko<sup>1</sup>\n- Michale S Fee<sup>1</sup> ([ORCID: 0000-0001-7539-1745](https://orcid.org/0000-0001-7539-1745)) \u2020\n\n### Affiliations\n\n1. McGovern Institute for Brain Research, Department of Brain and Cognitive Sciences, MIT Cambridge United States ([ROR:042nb2s44](https://ror.org/042nb2s44))\n\n\u2020 Corresponding author\n\n## Abstract\n\nBehaviors emerge via a combination of experience and innate predispositions. As the brain matures, it undergoes major changes in cellular, network, and functional properties that can be due to sensory experience as well as developmental processes. In normal birdsong learning, neural sequences emerge to control song syllables learned from a tutor. Here, we disambiguate the role of tutor experience and development in neural sequence formation by delaying exposure to a tutor. Using functional calcium imaging, we observe neural sequences in the absence of tutoring, demonstrating that tutor experience is not necessary for the formation of sequences. However, after exposure to a tutor, pre-existing sequences can become tightly associated with new song syllables. Since we delayed tutoring, only half our birds learned new syllables following tutor exposure. The birds that failed to learn were the birds in which pre-tutoring neural sequences were most \u2018crystallized,\u2019 that is, already tightly associated with their (untutored) song.\n\n## Introduction\n\nOn the one hand, sensory experience is known to be essential for the normal development of brain circuits. On the other hand, genetically specified developmental processes are also essential \u2013 we learn too quickly and from too sparse data to rely on sensory experience alone (Chomsky et al., 2002). Thus, it appears that the brain is able to use genetically specified predispositions to fill in gaps in its sensory experience. When typical sensory experience is absent or delayed, certain aspects of brain development proceed anyway, while other aspects are delayed. This is true both in primary sensory systems (Wiesel and Hubel, 1963; Bear and Singer, 1986; Farley et al., 2007; Ye et al., 2021), and for more cognitive behaviors such as social interaction and language (Hildyard and Wolfe, 2002; Moreno-Torres et al., 2016; Kral et al., 2019). Brain circuits acquire structure and organization even in the absence of typical training inputs. Here, we examine this self-organized structure, and what happens when the sensory experience of a conspecific tutor is reintroduced, in the context of songbird vocal learning.\n\nSong learning is influenced by both auditory exposure to a particular tutor song, and by inherited preferences (Tchernichovski and Marcus, 2014). It is well known that songbirds, in the absence of exposure to a tutor bird, develop \u2018isolate\u2019 songs, with highly variable and atypical syllable rhythms (Price, 1979; Williams et al., 1993; Feh\u00e9r et al., 2009). However, when these \u2018isolate\u2019 songs are used as tutor songs, after two generations birds sing normally again, suggesting that an \u2018innate\u2019 preference filters what aspects of a tutor song are actually imitated (Feh\u00e9r et al., 2009). Song imitation requires remarkably little total exposure to a tutor song \u2013 approximately 75 s total on a single day is enough for a bird to remember a song, and subsequently practice and imitate it (Deshpande et al., 2014). Zebra finches, like many songbird species, are able to imitate songs of birds from other species, but when given a choice they prefer zebra finch songs (Eales, 1987). Furthermore, inherited genetic predispositions have a strong effect on both the precise tempo at which a zebra finch sings its song (Mets and Brainard, 2018), as well as the particular learning styles of individual birds (Mets and Brainard, 2019). Thus, within the songbird brain, we expect to see an interplay between developmentally specified and learned structure.\n\nThere are several possibilities for what happens in the brain during isolate song, and how it compares to typical (tutored) brain development. In typical birds, neurons in HVC are initially only weakly coupled to a song, firing only at the onsets of syllables when birds are babbling subsong (Okubo et al., 2015), and HVC is not necessary for subsong production (Aronov et al., 2008). Then, as the song becomes more mature and repeatable, each HVC projection neuron fires at its own precise moment during the song, with neurons firing one after the other, together forming a stable sequence of neural firing that tiles the song (Okubo et al., 2015; Lynch et al., 2016; Picardo et al., 2016), in interplay with inhibitory neurons (Kosche et al., 2015; Vallentin et al., 2016). This maturation process in HVC has been modeled as an initially random network of neurons that, with the right training inputs and plasticity rules, assembles into a chain of sequentially connected neurons (Buonomano, 2005; Jun and Jin, 2007; Fiete et al., 2010; Okubo et al., 2015; Figure 1A). However, what happens in birds isolated from a tutor? Compared to typical adult zebra finch songs, isolate song has a much less stable sequence of syllables and abnormally variable acoustic structure and timing (Feh\u00e9r et al., 2009). In fact, aspects of isolate songs resemble features of early babbling (subsong). Does HVC in isolate birds resemble that of subsong birds? Or does HVC mature to form sequences, even without the experience of a tutor, and without the behavioral stereotypy seen in adult birds? We use functional calcium imaging in singing isolated birds to address these questions.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/77262/elife-77262-fig1-v1.jpg)\n\n**Figure 1.:** (A) Diagram of HVC maturation. In typically tutored birds, HVC sequences appear to grow and differentiate over time. (B) Example neural sequences recorded in a singing isolated bird (older juvenile, 61 dph). Main panel (lower right), functional calcium imaging recordings from 98 neurons. Rows (neurons) are sorted according to sequences (factors) extracted by unsupervised algorithm seqNMF (see Methods). (Above) Song spectrogram (0\u201310kHz). The four sequence factor exemplars and timecourses are shown to the left and above, in corresponding colors. Duration of factor exemplars: 0.5s. (C) Same as B, for another example isolated bird (adult, 117 dph). (D) Same as in B, for a typically tutored bird (adult, 217 dph). (E) Time-lagged cross-correlation between each neuron and each of the three extracted factors recorded in a singing isolated bird (older juvenile, 68 dph). Only significant bins in the cross correlation are shown (p<0.05, Bonferroni corrected, compared to a circularly-shifted control). (F, G, J, K) Sequence properties in isolated birds. For reference, the median for a typically tutored bird in D is shown by a red triangle, and the median for a control dataset where each row was circularly shifted by a random amount is shown by a red line. (F) Percent of neurons participating in at least one extracted sequence. (G) Reliability of participating neurons across sequence renditions. Note that in the control dataset, relatively few neurons participate. (H) Example song spectrograms (0.5s) extracted at moments when neural sequences were detected in an isolated bird (older juvenile, 64 dph) (I) Correlation of these sequences with eight song features (top to bottom: amplitude, entropy, pitch goodness, aperiodicity, mean frequency, pitch, frequency modulation, amplitude modulation). (J) Strength of song locking (see Methods). (K) Percent of the song covered by some sequence. (L) Example of sequence abnormalities in an isolated bird (same as in E). Sequences of inconsistent length (8/8 isolated birds) and ensemble persistent activity (7/8 isolated birds) are annotated in red.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/77262/elife-77262-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Example HVC sequences recorded in a young isolated bird (59 dph) (B\u2013F) Sequence properties as a function of age in seven juvenile isolated birds (five birds recorded prior to the closing of the traditional critical period (<65dph), and two older juvenile birds (65 dph-90 dph)). Line denotes least squares fit, gray area 95% confidence interval. (B) Number of HVC sequences extracted. (C) Percent of neurons participating in at least one sequence. (D) Reliability of neural participation across sequence renditions. (E) Song locking. (F) Percent of the song covered by at least one sequence.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/77262/elife-77262-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) Reconstruction cost (red) and correlation cost (blue) as a function of $\\lambda$ (with K=10, L=0.5s) for eight datasets (pre-tutoring data from eight different birds). The crossover point, $\\lambda_{0}$, is stated and marked by a dashed line. (B) Histogram of the number of significant sequences at $\\lambda_{0}$ and $2\u2062\\lambda_{0}$ for these datasets. (C) For the chosen K, and $\\lambda=0$, consistency across 25 runs of seqNMF from different random initializations. Factorizations are sorted from most to least consistent. (D) Consistency matrix for 25 runs at K above the estimated K.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/77262/elife-77262-fig1-figsupp3-v1.jpg)\n\n**Figure 1\u2014figure supplement 3.:** Enlarged panel showing spectrogram, neural data, and seqNMF factorization for 6 s of pre-tutoring data.\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/77262/elife-77262-fig1-figsupp4-v1.jpg)\n\n**Figure 1\u2014figure supplement 4.:** Enlarged panel showing spectrogram, neural data, and seqNMF factorization for 6 s of pre-tutoring data.\n\n![Figure 1\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/77262/elife-77262-fig1-figsupp5-v1.jpg)\n\n**Figure 1\u2014figure supplement 5.:** Enlarged panel showing spectrogram, neural data, and seqNMF factorization for 6 s of pre-tutoring data.\n\n![Figure 1\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/77262/elife-77262-fig1-figsupp6-v1.jpg)\n\n**Figure 1\u2014figure supplement 6.:** Enlarged panel showing spectrogram, neural data, and seqNMF factorization for 6 s of pre-tutoring data.\n\n![Figure 1\u2014figure supplement 7.](https://cdn.elifesciences.org/articles/77262/elife-77262-fig1-figsupp7-v1.jpg)\n\n**Figure 1\u2014figure supplement 7.:** Enlarged panel showing spectrogram, neural data, and seqNMF factorization for 6 s of pre-tutoring data.\n\n![Figure 1\u2014figure supplement 8.](https://cdn.elifesciences.org/articles/77262/elife-77262-fig1-figsupp8-v1.jpg)\n\n**Figure 1\u2014figure supplement 8.:** Enlarged panel showing spectrogram, neural data, and seqNMF factorization for 6 s of pre-tutoring data.\n\n![Figure 1\u2014figure supplement 9.](https://cdn.elifesciences.org/articles/77262/elife-77262-fig1-figsupp9-v1.jpg)\n\n**Figure 1\u2014figure supplement 9.:** Enlarged panel showing spectrogram, neural data, and seqNMF factorization for 6 s of pre-tutoring data.\n\n![Figure 1\u2014figure supplement 10.](https://cdn.elifesciences.org/articles/77262/elife-77262-fig1-figsupp10-v1.jpg)\n\n**Figure 1\u2014figure supplement 10.:** Enlarged panel showing spectrogram, neural data, and seqNMF factorization for 6 s of pre-tutoring data.\n\nBy observing the neural activity in the HVC of isolated birds, we found that the HVC network activity can mature into long repeatable sequences even without exposure to a tutor. However, there are some key differences between typical adult HVC sequences and those found in isolated birds, suggesting which features of HVC development rely on exposure to a tutor. Next, we observe HVC in isolated birds immediately before and after delayed exposure to a tutor. Birds isolated from a tutor are able to learn a song if exposed to a tutor before the end of a critical period, typically around age 65 days post-hatch (dph), but are increasingly unable to learn at later ages (London, 2019; Gobes et al., 2019; Immelmann, 1969). Although only half of our late tutored birds successfully learned from the tutor, we observed an interesting correlation between HVC activity prior to tutoring and the degree to which birds learned. Namely, birds with highly song-locked HVC activity prior to tutoring typically failed to learn, while birds with less song-locked activity tended to learn. In the birds that did learn, we were able to track sequences throughout the course of learning. Pre-existing self-organized HVC sequences persisted throughout major changes to the song, forming a substrate for newly learned song elements. Together, these results point to how the brain may self-organize, and at the interplay between self-organized structure and the ability to incorporate new information from a tutor.\n\n## Results\n\n### Neural sequences are present in isolated birds, but atypical\n\nWe first asked whether the songs of isolated birds involve the same pre-motor neural pathways and neuronal sequences responsible for generating typical songs. We carried out functional calcium imaging of large populations of neurons in HVC of isolated birds at a range of ages. Sequences of neuronal activity in HVC have previously been analyzed by aligning neuronal activity to repeatable elements of the song (Long et al., 2010), an approach with limited utility in isolated birds due to the high variability of their songs. Instead, we extract neural sequences directly from the calcium signals using an unsupervised algorithm, seqNMF, (Mackevicius et al., 2019) to find the sequences that best fit the neural data.\n\nThe seqNMF algorithm is designed to find patterns in data, and identify the times when each pattern occurs. It is a generalization of non-negative matrix factorization, allowing for non-synchronous patterns of neural activity, for example, sequential firing of neurons in a chain. In the context of seqNMF, a sequence is defined as a pattern of activity in a population of neurons that extends for more than one time step. The algorithm allows for an individual neuron to be active at more than one time in a sequence, but in practice neurons in HVC or the hippocampus are typically active only once in a sequence. Each seqNMF factor is represented as an exemplar sequence $W$, and a vector of times when the sequence occurs, $H$. A sequence in the data is factorized as the convolution of a $W$ with its corresponding $H$. Data often contain multiple sequences, each represented by different $W$s and $H$s, and the full data matrix is represented as a sum across all different extracted sequences. Using gradient descent, the algorithm automatically finds sequences that best fit the data, while avoiding redundancies between sequences. It allows for explicitly selecting between \u2018parts-based\u2019 and \u2018events-based\u2019 factorizations, but here we are agnostic to this distinction, selecting the factorization that best fits the data. SeqNMF has been shown to be robust to several forms of neural variability (Mackevicius et al., 2019). In addition, it includes a measure of \u2018sequenciness,\u2019 which quantifies the extent to which data are better explained by temporally extended sequences than by synchronized activity. This measure ranges from zero (only synchronized activity) to one (only temporally extended sequences, such that shuffling timebins in the data erases all repeatable structure).\n\nThis technique reveals the existence of significant sequential activity in HVC of singing isolated birds (Figure 1B and C, data in C also presented in Mackevicius et al., 2019). In these birds, the seqNMF factorization explained 27 \u00b1 9% of the power in the neural data, with a sequenciness score of 0.55 \u00b1 0.88 (mean \u00b1 standard deviation). SeqNMF also reveals long continuous sequences in data acquired from typical adult HVC (Figure 1D) as expected from previous work (Long et al., 2010; Picardo et al., 2016; Lynch et al., 2016). Here, 46% of the data is explained by the seqNMF factorization, with sequenciness score of 0.74.\n\nThe sequences found in isolated birds are surprisingly typical in some respects, but atypical in others, especially in their correlation to vocal output. As in typical HVC sequences, neurons in isolated birds participate at characteristic moments during the sequence (Figure 1E), and many neurons participate in at least one sequence (Figure 1F). Neurons that participate in a sequence tend to fire at a majority of sequence occurrences (Figure 1G). On average, 45.21 \u00b1 7% of these neurons\u2019 activity was specific to sequences. Neural sequences are correlated with precisely timed song features in isolated birds\u2019 songs (Figure 1H1, song features calculated as in Tchernichovski et al., 2000). The extent of song locking is quantified by computing the cross-correlation between sequences and song features, and summing across significant time lags (see Methods). Song locking in isolated birds was only on average 0.58 times as strong as in a typically tutored adult bird (Figure 1J). Finally, in isolated birds, on average only 61% of each song bout is represented by a detected HVC sequence, substantially less than the complete sequence coverage found in typically tutored birds (Picardo et al., 2016; Lynch et al., 2016; Okubo et al., 2015; Figure 1K, see Methods). By each of these measures, HVC sequences in isolated birds are more strongly present than would be expected from per-neuron circularly shifted data (red lines in Figure 1F\u2013K), but not as robust as sequences observed in typically tutored birds (red triangles in Figure 1F\u2013K). The per-neuron circular shifting controls for the possibility that neurons in isolate HVC may be firing independently. For enlarged panels of pre-tutoring neural and song data from each of the eight isolated birds, see Figure 1\u2014figure supplements 3\u201310.\n\nHVC activity in isolated birds exhibits additional qualitative differences from that in typically tutored birds. While HVC neurons generate only brief bursts of spikes in tutored birds, neurons in isolated birds sometimes generated extended periods of continuous activity, especially during long syllables of variable duration (Figure 1L, 7/8 birds exhibited multiple instances of persistent activity, coordinated across at least three neurons, and lasting at least 500 ms). This contrasts with the long syllables of typical adult songs which are all generated by extended sequences of brief bursts. In addition, HVC sequences in isolated birds exhibit variable durations, often truncating at different points (Figure 1L, 8/8 birds), producing syllables of highly variable duration. Such truncations in the middle of a syllable, as opposed to at stereotyped gaps between syllables, are very unusual in typically tutored birds (Cynx, 1990). These atypical modes of HVC activity suggest several possible mechanisms to understand characteristic features of isolate songs, abnormally long syllables, and those of variable duration (Feh\u00e9r et al., 2009). For example, syllables in isolated birds may exhibit variable duration when their underlying HVC sequences are truncated at different points. We wondered if the existence of sequences in HVC of socially isolated birds occurs only after the closure of the critical period (i.e. a product of an already atypical isolate song) or whether they develop at an even earlier age when birds have not yet heard a tutor song, but can still be tutored. We recorded in 5 birds at ages 57\u201364 dph, prior to tutor exposure, and found strong evidence for HVC sequences (Figure 1\u2014figure supplement 1A). In each bird, HVC data exhibited significantly higher sequenciness scores than time-shuffled control datasets ($p<0.05$). There was not a significant correlation between the age of the bird and any sequence features we measured (Figure 1\u2014figure supplement 1B-F, linear regression model, significance threshold p<0.5, compared to a constant model). The correlations were not significant both when we restricted to birds within the traditional critical period (lt65 dph), and when we included data from three older isolated birds (68\u2013117 dph). Thus, the large (several fold) bird-to-bird variability in sequence properties (Figure 1\u2014figure supplement 1B-F) is not explained by age, and is likely due to inter-individual variability in developmental timecourses.\n\n### Prior to tutoring, birds that will learn exhibit HVC sequences that are relatively immature and decoupled from vocal output\n\nNext, we asked whether the properties of the HVC sequences relate to the ability of birds to learn a new song from a tutor. Many of our young isolated birds were eventually tutored at an age around the critical period and we found that half of them learned elements of their tutor song, while the others developed fully isolated songs. We classified birds as learners if their song had an Imitation Score metric (Mandelblat-Cerf and Fee, 2014) greater than 0.5. The songs of non-learners remained highly variable and isolate-like even after tutoring (Figure 2A). In contrast, learner birds developed a new syllable within a day or two after tutoring, and ultimately sang typical adult songs, consisting of stereotyped motifs (Figure 2B). The new syllables appeared to imitate elements of the tutor song, and persist as part of the learned song (Figure 2\u2014figure supplements 1\u20134).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/77262/elife-77262-fig2-v1.jpg)\n\n**Figure 2.:** (A) Example spectrograms for two non-learner birds, prior to tutoring and several weeks later (at least 77dph). (B) Example spectrograms for two learners, prior to tutoring, shortly after tutoring, and several weeks later. Red dots mark the new syllable. Red bars mark a stereotyped motif. (C\u2013E) Three measures of HVC sequence maturity for learners (pink) and non-learners (gray). Error bars denote standard deviation (*p<0.05, *p<0.01). (C) Number of sequences in HVC. (D) Fraction of neurons that participate in a sequence. (E) Autocorrelation of sequence factor timecourses. (F) Age of first tutoring for learners and non-learners. (G\u2013H) Example pre-tutoring data from two birds that were brothers. (G) A non-learner first tutored at 61 dph. (H) A learner first tutored at 64 dph.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/77262/elife-77262-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Song spectrograms at different stages of development, and comparison to tutor song spectrogram. Colored bars match elements of the imitation to tutor song syllables.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/77262/elife-77262-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Song spectrograms at different stages of development, and comparison to tutor song spectrogram. Colored bars match elements of the imitation to tutor song syllables.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/77262/elife-77262-fig2-figsupp3-v1.jpg)\n\n**Figure 2\u2014figure supplement 3.:** Song spectrograms at different stages of development, and comparison to tutor song spectrogram. Colored bars match elements of the imitation to tutor song syllables.\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/77262/elife-77262-fig2-figsupp4-v1.jpg)\n\n**Figure 2\u2014figure supplement 4.:** Song spectrograms at different stages of development, and comparison to tutor song spectrogram.Colored bars match elements of the imitation to tutor song syllables.\n\nAn analysis of HVC activity revealed that sequences prior to tutoring were systematically less mature/\u2018crystallized\u2019 in birds that learned than in birds that failed to learn. Learner birds had fewer sequences than non-learners (Figure 2C, average two sequences in learners, 3.25 sequences in non-learners, p=0.029, Wilcoxon rank sum test). Sequences in learner birds were more weakly correlated to song features (Figure 2D, average 0.20 s learner, 0.55 s non-learner, p=0.0034, Wilcoxon rank sum test). Sequences in learners had lower autocorrelation, a measure of how repeatably/rhythmically they are produced (Okubo et al., 2015), than non-learners (Figure 2E, average 0.125 s learner, 0.244 s non-learner, p=0.018, Wilcoxon rank sum test). Three additional measures of sequence maturity, all related to intrinsic sequence properties were calculated. While non-learners also trended higher in these measures, the differences were not significant (Wilcoxon rank sum tests, Neural participation: average 45% learner, 70% non-learner, p=0.2; Reliability: average 69% learner, 74% non-learner, p=1; Coverage: average 51% learner, 71% non-learner, p=0.34). In our dataset, the age of tutoring did not significantly influence whether the bird was a learner or non-learner (Figure 2F, average 60.5 dph learner, 78.75 dph non-learner, p=0.11, Wilcoxon rank sum test). For example, one of the younger birds in our dataset (61 dph) was a non-learner, and had particularly clear HVC sequences before tutoring (Figure 2G). This bird\u2019s brother, tutored 3 days later, was a learner, and had sequences that appear far less mature (Figure 2H). Together, these results suggest that the presence, at the time of tutoring, of robust song-locked sequences, may inhibit learning. In other words, learning may be better supported by more immature sequences that are more independent from the vocal output.\n\n### Tracking HVC sequences across rapidly learned song changes\n\nIn late-tutored birds that learned, the speed with which new syllables appeared was striking. These birds developed a new syllable within a day or two after tutoring (Figure 2A and B), as has been previously described (Tchernichovski et al., 2001; Lipkind and Tchernichovski, 2011; Lipkind et al., 2013). These new syllables appeared to emerge de-novo, not by syllable differentiation as is common in tutored birds.\n\nWe wondered if these birds, which learned a new syllable rapidly after tutoring, formed a de-novo HVC sequence for this new syllable, or perhaps used a pre-existing sequence. We were able to track neurons in our calcium imaging data throughout the course of tutoring (Figure 3A, see Methods, Gu et al., 2023), enabling us to see what happens to neural activity during rapid changes in the song. We first extracted neural sequences associated with new post-tutoring syllables, then followed these neurons back in time to find that the sequence existed even prior to tutoring (Figure 3B and C, see Methods). The correlation coefficients between the pre-tutoring and post-tutoring sequences in the four learner birds were $0.20,0.38,0.27$, and 0.45, respectively. In all four learner birds, the correlation between the pre-tutoring and post-tutoring sequences was significantly higher than expected by a time-shuffled control (p=0.014, p=0.018, p=0.0004, p=0.0002, respectively). Additionally, the correlation between pre- and post- tutoring sequences was significantly higher than a neuron-shuffled control in two birds (p=0.0099, p=0.0032), and trended higher in the remaining two birds (p=0.077, p=0.079, likely influenced by an abundance of near-synchronous neurons, Figure 3C). Interestingly, the sequences prior to tutoring were relatively uncoupled to vocal output, without a strong correlation to song syllables. Combining data from the four birds that learned a new syllable rapidly after tutoring, neural sequences extracted two days after tutoring appeared to become more song locked after tutoring (Figure 3D, p=0.0048, Wilcoxon rank sum test). This lack of coupling between HVC sequences and song structure prior to tutoring, and their subsequent incorporation into learned syllables, suggests that, in these late-tutored birds, HVC sequences may exist in a \u2018latent\u2019 state.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/77262/elife-77262-fig3-v1.jpg)\n\n**Figure 3.:** (A) Neurons detected before (left) and after (right) tutoring shown in grayscale (CNMF_E algorithm). Colored contours indicate locations of neurons tracked across five days, from blue to red (B) Sequence in HVC, tracked before and after first tutor exposure, through the development of a new syllable. Each of the five panels shows data from a different day, starting one day before tutoring, through three days after tutoring. (Top) On each recording day, cross-correlation of neurons with the sequence that becomes associated with the new syllable. The sequence was extracted by running seqNMF on neural data recorded two days after tutoring, and selecting the factor associated with the new syllable. Neurons are sorted according to participation in this factor. Significant bins are shown in black, non-significant bins in gray (p=0.05, Bonferroni corrected, compared to circularly-shifted control) (Middle). On each recording day, for example, spectrograms at times when the sequence occurs on each day. Red circles indicate putative newly learned syllables. (Bottom) On each recording day, cross-correlation of sequence with acoustic features (amplitude, entropy, pitch goodness, aperiodicity, mean frequency, pitch, frequency modulation, and amplitude modulation) (C) Same as B for a different example bird. (D) Correlation with song amplitude before (pink) and after (gray) tutoring for all sequences in learner birds extracted data when a new syllable had been learned. (E) Similar to B and C, for a different example bird. Here, sequences are extracted from pre-tutoring data, then tracked forward in time. (F) Song locking (maximum cross-correlation with song amplitude) before and after tutoring for the pre-tutoring sequences that had weaker song locking. (G) Song locking before and after tutoring for the pre-tutoring sequences that started off with stronger song locking.\n\nNext, we aimed to control for the possibility that the appearance of sequences becoming progressively more locked to vocal output after tutoring was due to the fact that sequences were extracted from neural data recorded after tutoring. We directly extracted HVC sequences from exclusively pre-tutoring neuronal data and tracked them forward in time until a new syllable appeared. Sequences that were initially relatively \u2018latent\u2019 persisted, becoming progressively more correlated with vocal output, ultimately appearing to become locked to a new syllable (Figure 3E). Each of the \u2018learner\u2019 birds appeared to have two HVC sequences present prior to tutoring. Of these sequences, the ones that started off less correlated with song amplitude exhibited a significant increase in correlation with song amplitude after tutoring (Figure 3F, p=0.045, Wilcoxon rank sum test). The sequences that started off more correlated with song amplitude did not significantly change their correlation with song amplitude (Figure 3G, p=1, Wilcoxon rank sum test). Together, these results are consistent with the view that the emergence of new syllables after tutoring may co-opt existing HVC sequences, including relatively \u2018latent\u2019 sequences.\n\n## Discussion\n\nWe set out to determine whether the formation of sequences in HVC depends on prior exposure to a tutor song. By observing the neural activity in HVC of isolated birds, we found that HVC network activity can form long repeatable sequences even in birds that had no prior exposure to vocal tutoring. Sequences in isolate HVC exhibit some properties of typical HVC, with many neurons reliably participating in sequences, and sequences being correlated to vocal output. However, sequences in isolated birds were less reliable and less tightly correlated with vocal output than has been described in typical birds, and exhibited abnormal truncations and persistent activity.\n\nWe had previously hypothesized that the experience of hearing a tutor may seed the formation of HVC sequences of the appropriate number and durations (Mackevicius and Fee, 2018), but our new data reveal that HVC sequences exist even prior to tutoring. Thus, there must be a way for sequences to form without the prior storage of a tutor memory. In models of Hebbian learning in HVC, sequences can form in networks driven by random inputs rather than patterned inputs (Fiete et al., 2010). However, in this case, the distribution of sequence durations no longer matches syllable durations found in typical adult birds, but is instead more consistent with the highly variable and atypically long syllables that occur in birds that have never heard a tutor (isolate song) (Feh\u00e9r et al., 2009; Price, 1979). Thus our findings are consistent with the view that sequences can emerge in isolate birds by a combination of simple Hebbian learning mechanisms together with spontaneous activity either within HVC or driven by the inputs to HVC.\n\nOur discovery of latent sequences suggests a separation between neural processes for building a stable representation of states within a task (i.e. sequential moments in time), and neural processes for associating an action with each state. Thus, sequences may gradually emerge in the maturing HVC network via simple Hebbian processes (Buonomano, 2005; Jun and Jin, 2007; Fiete et al., 2010; Okubo et al., 2015), but may remain relatively decoupled from downstream motor neurons until a memory of the tutor song is learned and reinforcement learning processes begin.\n\nFrom a computational perspective, what do latent sequences tell us about how the brain learns? By latent sequences, we mean sequences that are initially only weakly correlated with vocal output, but are subsequently used to produce learned song changes. In reinforcement learning models of song learning, HVC sequences remain relatively stable even as the song changes (Doya and Sejnowski, 1994; Fiete et al., 2007; Fee and Goldberg, 2011; Brainard and Doupe, 2013), consistent with our observation of stable sequences. This is in contrast with other models of song learning, like the \u2018inverse model\u2019 (Giret et al., 2014; Hanuschkin et al., 2013; Hahnloser and Ganguli, 2013). In the inverse model, each motor neuron produces the same vocal output at different times during vocal learning; song changes are caused by pre-motor neurons (e.g. HVC) being activated in a different order. In contrast, we observed relatively stable sequences throughout learned song changes. Our results are consistent with data from the primary motor cortex of macaques operating a brain-computer interface\u2014a fixed repertoire of activity patterns is associated with different movements after learning (Golub et al., 2018). Our results are also consistent with the idea that the brain may use pre-existing sequential patterns to rapidly learn from new experiences, for example, the existence of sequences in the hippocampus prior to exposure to new environments (Villette et al., 2015; Farooq et al., 2019; McKenzie et al., 2021; Dragoi, 2020).\n\nIf the brain is able to build on the latent structure to learn from sparse data, essentially implementing inductive bias, we might expect different forms of latent structure for different tasks. Zebra finches are known to develop typical songs, including typical syllable durations, after being tutored by atypical isolate songs, relying on species-specific \u2018priors\u2019 to achieve species-typical syllable durations. The latent sequences we observed tended to last approximately a couple hundred milliseconds\u2014the same as the duration of typical zebra finch syllables. Might other species that sing faster songs (e.g. grasshopper sparrow) or slower songs (e.g. white-throated sparrow) exhibit latent sequences of shorter or longer durations? One might imagine that the speed of latent sequences could be genetically specified by expression levels of ion channels with different time constants within HVC. Alternatively, the duration of latent sequences could be specified by the amount of time it takes for HVC to get feedback from respiratory and/or auditory centers, which may also have their own intrinsic timing or rhythmicity (Schmidt and Goller, 2016; Hamaguchi et al., 2016; Araki et al., 2016; Mackevicius et al., 2020). Each of these possible sources of latent HVC structure could be tested in further experiments. By whatever mechanism latent sequences arise, they appear to be capable of supporting song learning, at least in the case of delayed tutoring. More generally, the ability of brains to generate complex learned behavior may depend on the intrinsic developmental formation of appropriate latent dynamics in motor and sensory circuits.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>seqNMF</td>\n      <td>Mackevicius et al., 2019</td>\n      <td>github.com/FeeLab/seqNMF</td>\n      <td>Sequence detection</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>CNMF_E</td>\n      <td>Zhou et al., 2018</td>\n      <td>github.com/zhoupc/CNMF_E</td>\n      <td>Cell extraction</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>STAT</td>\n      <td>Gu et al., 2023</td>\n      <td>https://github.com/shijiegu/STAT</td>\n      <td>Tracking neurons across days</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Chronux</td>\n      <td>Mitra and Bokil, 2007</td>\n      <td>chronux.org/</td>\n      <td>Spectrogram computation</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>SAP</td>\n      <td>Tchernichovski et al., 2000</td>\n      <td>soundanalysispro.com</td>\n      <td>Sound analysis</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>SI</td>\n      <td>Mandelblat-Cerf and Fee, 2014</td>\n      <td>https://doi.org/10.1371/journal.pone.0096484</td>\n      <td>Song imitation</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>MATLAB</td>\n      <td>MathWorks</td>\n      <td>mathworks.com/products/matlab</td>\n      <td>Programming language</td>\n    </tr>\n    <tr>\n      <td>Biological sample (Taeniopygia guttata)</td>\n      <td>Zebra finches</td>\n      <td>MIT animal facility</td>\n      <td>Taeniopygia guttata</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background(adeno-associated virus)</td>\n      <td>AAV9.CAG.GCaMP6f.WPRE.SV40</td>\n      <td>Chen et al., 2013</td>\n      <td>Addgene viral prep # 100836-AAV9, http://n2t.net/addgene:100836,RRID:Addgene_100836</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Miniature microscope</td>\n      <td>Inscopix</td>\n      <td>https://www.inscopix.com/nvista</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Animal care and use\n\nFor this study, Imaging data were collected in nine male zebra finches (Taeniopygia guttata) from the MIT zebra finch breeding facility (Cambridge, MA). Animal care and experiments were carried out in accordance with NIH guidelines, and reviewed and approved by the Massachusetts Institute of Technology Committee on Animal Care (Protocol 0721-064-24: Chronic Recording of Neural Activity in Songbirds).\n\nIn order to control exposure to a tutor song, eight birds were foster-raised by female birds, which do not sing, starting on or before post-hatch day 15 (15 dph). Starting between 35 dph and 50 dph, these birds were housed singly in custom-made sound isolation chambers. An additional bird was tutored by his father, as is typical. After a couple of days of acclimation to the lab environment, birds were anesthetized with isoflurane, and were given a surgery to inject the virus to express the functional indicator GCaMP6f and implant a GRIN (gradient index) lens (see below). Analgesic (Buprinex) was administered 30 min prior to the surgery, and for 3 days postoperatively. After at least a week for virus expression, an Inscopix miniscope baseplate was attached to the existing implant. Birds were acclimated to the miniscope, and once birds started singing with the miniscope (2\u20137 days), functional calcium signals were recorded for at least three consecutive days. To avoid photobleaching, short files (approximately 10 s) were obtained, typically fewer than 50 files per day. Once some pre-tutoring singing data had been obtained, birds were tutored briefly (5\u201310 song bouts from a tutor bird) each day for at least 7 days.\n\n### Expression of functional calcium indicator GCaMP6f\n\nThe calcium indicator GCaMP6f was expressed in HVC by intercranial injection of the viral vector AAV9.CAG.GCaMP6f.WPRE.SV40 (Chen et al., 2013) into HVC. In the same surgery, a cranial window was made using a relay GRIN (gradient index) lens (1 mm diameter, 4 mm length, Inscopix) implanted on the surface of the brain, after the dura was removed. After at least one week, in order to allow for sufficient viral expression, recordings were made using the Inscopix nVista miniature fluorescent microscope. It is not known whether this virus is specific to projection neurons in HVC. However, given the dense firing patterns of HVC interneurons, once convolved with the GCaMP6f calcium kernel, HVC interneuron activity would likely look flat, almost indistinguishable from the background. Therefore, in practice, most if not all of the neurons included in our datasets are likely to be projection neurons, not HVC interneurons.\n\n### Extraction of neuronal activity and background subtraction using CNMF_E\n\nNeuronal activity traces were extracted from raw fluorescence movies using a constrained non-negative matrix factorization algorithm, CNMF_E, that is specialized for microendoscope data by including a local background model to remove activity from out-of-focus cells (Zhou et al., 2018). Custom software (Shijie Gu, Emily Mackevicius, Pengcheng Zhou) was used to extend the CNMF_E algorithm to combine batches of short files (BatchVer) and track individual neurons over the course of multiple days (Gu et al., 2023).\n\n### Unsupervised discovery of neural sequences using seqNMF\n\nWe addressed the challenge of needing to detect neural sequences in HVC without relying on aligning neural activity to the song by developing an unsupervised algorithm, seqNMF (Mackevicius et al., 2019). This was necessary because juvenile songs are highly variable and difficult to parse into repeatable syllables, and because we wanted to allow for the possibility that HVC activity might be more stereotyped than the song. Briefly, seqNMF factorizes data into exemplar sequence factors ($W$\u2019s). Each sequence factor has a corresponding timecourse ($H$). Convolving each exemplar with its respective timecourse produces an approximate reconstruction of the original data ($X~=W\u229bH$). SeqNMF returns a factorization that minimizes reconstruction error, subject to a penalty term that encourages simpler factorizations. It is possible for seqNMF to extract non-sequential (purely synchronous) patterns of neural activity. SeqNMF measures the extent to which a dataset contains sequential vs. synchronous patterns using a \u2018sequenciness\u2019 score, which ranges between 0 and 1. A score of zero indicates that all explanatory power of the factorization is due to synchronous activity, while a score of one indicates that none of the explanatory power is due to synchronous activity. Quantitatively this is calculated by shuffling the timebins in the dataset. In these datasets, both \u2018sequenciness\u2019 scores and visual inspection of the factors suggest the presence of temporally extended patterns, which we refer to as sequences.\n\n### Preprocessing calcium traces prior to running seqNMF\n\nWe performed several preprocessing steps before applying seqNMF to functional calcium traces extracted by CNMF_E. First, we estimated burst times from the raw traces by deconvolving the traces using an AR-2 process. The deconvolution parameters (time constants and noise floor) were estimated for each neuron using the CNMF_E code package (Zhou et al., 2018). Some neurons exhibited larger peaks than others, likely due to different expression levels of the calcium indicator. Since seqNMF would prioritize the neurons with the most power, we renormalized by dividing the signal from each neuron by the sum of the maximum value of that row and the $95^{th}$ percentile of the signal across all neurons. In this way, neurons with larger peaks were given some priority, but not much more than that of neurons with weaker signals.\n\n### Estimating the number of significant sequences in each dataset\n\nThe number of sequences present in real neuronal datasets can be slightly ambiguous, so we used several methods to arrive at and validate an estimate for the number of significant neural sequences present in each dataset. It is important to note that, since our datasets are short, there may be additional neural sequences in HVC that do not appear, or do not achieve significance, in our datasets.\n\nOur primary method for estimating the number of sequences in each dataset involves choosing a value for the seqNMF parameter $\\lambda$ that balances reconstruction cost with correlation (redundancy) cost, as described in Mackevicius et al., 2019. We swept $\\lambda$ with $K=10$ and $L=0.5$ s to find $\\lambda_{0}$, the cross-over point that balances these cost terms (Figure 1\u2014figure supplement 2A). Based on analysis of simulated data (Mackevicius et al., 2019), where values of $\\lambda$ at or slightly above $\\lambda_{0}$ yielded the correct number of significant sequences, we looked at the distribution of significant sequences at $\\lambda=\\lambda_{0}$ and $\\lambda=2\u2062\\lambda_{0}$ (Figure 1\u2014figure supplement 2B), and chose as our estimate a number between the peaks of these two distributions. For significance tests, each dataset was split into a training set (75%) and a test set (25%). Sequences were detected in the training dataset, and significance was measured in the test dataset by assessing the overlap of the sequences with the test dataset compared to null (time-shifted) sequences.\n\nWe validated these estimates of the number of significant sequences by testing the consistency of resulting factorizations. Consistency measures the extent to which there is a one-to-one mapping between the factors of two different factorizations. When K matches the number of sequences in a dataset, seqNMF factorizations will be relatively consistent across different random initializations, even at $\\lambda=0$ (Mackevicius et al., 2019). We ran seqNMF on the entire dataset at the estimated K from 25 different random initial conditions, and confirmed that the sequences were consistent across the different initializations. This can be seen by a large block of consistent factorizations in the consistency matrix (Figure 1\u2014figure supplement 2C). When K is too high for the dataset, inconsistency will arise in seqNMF factorizations if $\\lambda=0$. This can be seen by a disruption in the consistency, which we tested by computing consistency matrices for K above the estimated K. (Figure 1\u2014figure supplement 2D).\n\n### Selecting a consistent factorization\n\nFor each dataset, we selected the most consistent factorization on which to perform all further analysis. Once we had selected an appropriate number of sequences for each dataset, using the analyses described above, we ran seqNMF 25 times at this value of $K$ from different random initial conditions, and picked the factorization that was most consistent with the other factorizations (Figure 1\u2014figure supplement 2D). Factorizations at $K$ chosen by the above methods tended to be more consistent than factorizations at higher $K$ (Figure 1\u2014figure supplement 2D).\n\n### Significance testing for cross-correlation analyses\n\nSeveral of our results involve analyzing the temporal relationship between different timecourses (factors and neurons; factors and song acoustic features; factor autocorrelations). These analyses involve testing the significance of the cross-correlation between two time series, compared to null cross-correlation values that could occur if the signals were circularly shifted relative to each other by a random large time lag. Before measuring cross-correlations, we centered each signal to have zero mean. If we are assessing the cross-correlation at lags in the range from \u2212L to L, we want to compare values measured here to null values measured at random lags longer than L. We compute the cross-correlation at each lag $\u2113$ in the range $\u2212T<\u2113<T$, where T is the length of the time series, by circularly shifting one of the time series by $\u2113$ and computing the dot product with the other time series. We then use the cross-correlations at null lags ($\u2212(T\u2212L)<\u2113<\u2212L$ or $L<\u2113<(T\u2212L)$) to determine a Bonferroni-corrected significance threshold. The threshold is the $100\\times(1-p/N\u2062u\u2062m)^{t\u2062h}$ percentile of the absolute value of these null cross-correlations, where $N\u2062u\u2062m$ is the number of comparisons (2 L times the number of tests being run), and $p$ is the $p$-value. Significance is achieved for lags at which the measured cross-correlation exceeds this value.\n\n### Assessing song locking, the cross-correlation between each factor and acoustic song features\n\nSeveral of our results involve quantifying the temporal relationship between sequence timecourses ($H$\u2019s) and the song. To do this, we measured the cross-correlation of sequences with song acoustics using eight acoustic features common in the songbird literature (Tchernichovski et al., 2000): amplitude, entropy, pitch goodness, aperiodicity, mean frequency, pitch, frequency modulation, and amplitude modulation. Each of these acoustic features is measured from the song at 1ms resolution using standard software (Sound Analysis Pro, http://soundanalysispro.com/, Tchernichovski et al., 2000). The seqNMF H\u2019s are upsampled to this resolution, then cross-correlation between each $H$ and each song feature is assessed using the above procedure, with L=1 s, p=0.05, and Bonferroni correction (2000 timebins) \u00d7 (8 features) \u00d7 (K sequences). The overall measure of song locking is computed by integrating the number of seconds that a given sequence has a significant correlation with each of the song features.\n\n### Assessing which neurons participate in each sequence\n\nSeveral of our results involve assessing which neurons participate in each sequence. In order to do this, we measure whether there is a significant cross-correlation between each neuron and each factor (with L=0.5 s, p=0.05, and Bonferroni correction (30 timebins) \u00d7 (N neurons) \u00d7 (K sequences)). Note that, since seqNMF is run on the neural data, it is guaranteed that some neurons will be correlated with the factors \u2014the primary aim of this test is to assess which neurons are in which sequences.\n\n### Tracking HVC projection neurons over the course of major song changes\n\nA core motivation for using calcium imaging methods instead of other methods was the possibility to track HVC projection neurons over the course of major song changes. HVC projection neurons are particularly difficult to record with electrophysiological methods\u2014current methods are unable to record an HVC projection neuron for more than a few hours, and tend to record one, or at most three, projection neurons at a time (Okubo et al., 2014; Okubo et al., 2015). Previous studies of song-locked HVC activity throughout the learning process could only track changes in the neural population that occurred at a timescale slower than a week, because population statistics had to be compiled from single-neuron recordings (Okubo et al., 2015). This technique misses rapid changes that can happen within a day (Tchernichovski et al., 2001), and is unable to assess the stability of HVC sequences.\n\nStability of HVC sequences over time can be assessed using calcium imaging, though some challenges remain due to the potential for errors in tracking neurons across days. Single-photon calcium imaging methods have been used to address the stability of HVC sequences in adult birds with stable songs, observing stable song-locked activity in slightly more than half of HVC projection neurons, and unstable song-locked activity in slightly less than half of HVC projection neurons (Liberti et al., 2016). This measure is likely an underestimate of the stability of HVC activity, since noise in tracking cell locations across days could lead to perceived instability. Thus, HVC sequences appear relatively stable in birds with stable song, but what about birds whose songs are changing? The potential for errors in tracking neurons across days was one factor in our decision to record in birds undergoing very rapid learning. It was necessary for us to expand upon previous methods for tracking neurons recorded by calcium imaging over time (Sheintuch et al., 2017), likely due to the relatively short individual file sizes in our dataset from singing juvenile birds (we recorded many short files each day, when the birds happened to sing, instead of longer continuous files).\n\nWe tracked the activity of populations of HVC neurons over multiple days using Spatial Tracking Across Time (STAT, Gu et al., 2023). This method builds off of previous methods (Sheintuch et al., 2017), where individual cell pairs\u2019 shape spatial correlation and distance are used to determine the correspondences between cells extracted from different sessions. STAT also considers local neighborhood motion consistency (Belongie et al., 2002; Myronenko and Song, 2010; Ma et al., 2016) in computing the optimal tracking of cells across sessions, and requires less manual supervision. Individual cell identity matchings are iteratively updated with respect to the local motion consistency cost function. Cells that have no good match are excluded, as are cells with the abnormal coefficient of variations (the standard deviation divided by the mean). The coefficient of variation exclusion criteria was designed to detect artifacts (blood vessels erroneously detected by the algorithm as a neuron, which has very different spatial and temporal profiles compared to actual neurons), and fewer than 10% of extracted cells were excluded. Finally, the results of the matching algorithm are checked manually.\n\n### Tracking sequences extracted on one subset of a dataset to another subset of the dataset\n\nIn order to track a sequence, $W$, extracted in one subset of a dataset (X1, for example before tutoring) to another subset of the dataset (X2, for example after tutoring), we first mean-subtract $W$ and X2 along the time dimension, then estimate $H~_{2}=W^{\u22a4}\u229bX_{2}$. In order to assess whether a neuron significantly participates in $W$ in dataset X2, we bootstrap using control datasets $X_{2}^{s\u2062h\u2062u\u2062f\u2062f}$, in which data from each neuron is circularly shifted in time by a different random amount. We then ask whether the neuron participates more strongly in the real dataset compared to participation calculated on control datasets (p=0.05 significance threshold, Bonferroni corrected for the number of neurons and the number of time-lags). Specifically, we compare $W~_{2}=X_{2}\u2062H~_{2}^{\u22a4}$ to $W~_{2}^{s\u2062h\u2062u\u2062f\u2062f}=X_{2}^{s\u2062h\u2062u\u2062f\u2062f}\u2062H~_{2}^{s\u2062h\u2062u\u2062f\u2062f\u22a4}$.\n\n### Assessing sequence coverage of song bouts\n\nSequence coverage quantifies the observation that sequences in isolated birds appear to pop on and off at somewhat arbitrary moments in bouts, leaving some sections of some bouts with no clear sequences present. First, the moments when each sequence occurs are estimated by computing when $H~=W^{\u22a4}\u229bX$ is larger than expected by chance (Bonferroni-corrected 95% percentile of $H~^{s\u2062h\u2062u\u2062f\u2062f}=W^{\u22a4}\u229bX^{s\u2062h\u2062u\u2062f\u2062f}$). Next, the sequence is convolved with the corresponding $W$. Finally, the total number of seconds when some sequences was present is divided by the total number of seconds in the bout, and multiplied by 100, to get the percent of the bout covered by some sequence. Note that sequence coverage is distinct from previously described measures of burst coverage within a repeatable adult song motif (Lynch et al., 2016).\n",
+      "created_at": "2025-12-04T01:49:24.648633Z"
+    },
+    {
+      "id": "11dd5ab4-279a-412d-9a01-53faf102a155",
+      "submission_id": "db530cf9-89ab-4c06-8491-e7da9c0035cd",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Jesse H Goldberg, https://ror.org/05bnh6r87 Cornell University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.77262.sa0](https://doi.org/10.7554/eLife.77262.sa0)\n\nThis fundamental work in songbirds shows that stereotyped neural sequences known to drive the correspondingly stereotyped acoustic structures of adult songs can exist very early in development even when songs are variable and before birds have been provided song models by tutors. The evidence is exceptional and includes imaging activity of populations of premotor neurons in singing birds. This paper provides important insights into the mechanistic foundations of how nature and nurture work together to produce learned motor sequences.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Jesse H Goldberg, https://ror.org/05bnh6r87 Cornell University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.77262.sa1](https://doi.org/10.7554/eLife.77262.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Self-organization of songbird neural sequences during social isolation\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Ronald Calabrese as the Senior Editor. The following individual involved in the review of your submission has agreed to reveal their identity: Yarden Cohen (Reviewer #2).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1) In the abstract and elsewhere, the authors write that 'experience is not necessary for the formation of sequences.' This statement is a bit of a reach \u2013 this paper exclusively shows that tutor exposure is not necessary for chain formation. It's conceivable that the experiences of deafening, muting or the absence of singing WOULD block chain formation. It's also possible that cohabitation with females \u2013 who call \u2013 could play some rudimentary auditory experience that helps establish chains. Please edit the language of the manuscript to make sure the conclusions match specific experimental results. Comb the manuscript for use of the work 'experience' and ensure that tutor-experience is what's written.\n\n2) The adequacy of the sequence detection method (seqNMF) and analyses of its outcomes need further explanation and support. This is especially needed when describing results where sequences are truncated, jittery, or otherwise variable (as some of the results indicate). The presentation of results will be strengthened by:\n\n2.1. A clear presentation of seqNMF's outcomes and fit to data:\n\n2.1.1. Explaining in the main text and methods what is meant by 'sequences' that the algorithm extracts. It is not clear if these are cells activating one after the other or any robust spatiotemporal pattern. seqNMF allows seeking 'event based' or 'part based' factorization. Please describe which was used in this manuscript.\n\n2.1.2. How much of the data variability is explained by sequences?\n\n2.1.3. How specific are neurons' activity to sequences (compared to its activity not in sequences).\n\n2.2. Control analyses (or citation if shown elsewhere) can show that the atypical properties of sequences are not confounded by seqNMF.\n\n2.2.1. For example, measures in Figure 1E-K may be compared to sequences extracted from time-shuffled data. (Similar to the 'sequenciness' approach defined by previous work of the authors[3]).\n\n2.2.2. Alternatively, if at all possible (because data is limited), results could be compared to analyses carried out on held-out data. For example, sequences can be discovered in training set data and used to calculate results as in Figure 1E-K on test set data.\n\n2.3. Is it possible to compare sequences (the W's) found before and after training? The claim that they persist needs quantitative support.\n\n3) The tutoring process and its effects need a clearer presentation.\n\n3.1. The methods are vague about the process of tutoring (specifically, how many days of tutoring each bird received).\n\n3.2. When describing (in text and in figure panels) the effect of tutoring it is most helpful to show: (3.2.1) the tutors template, (3.2.2) parts of the template that were copied by the tutee. Currently, the manuscript shows newly adopted syllables but doesn't demonstrate that these syllables were copied from the tutor. (3.2.3) The imitation score. These elaborations on tutor match can be put in a supplemental figure.\n\n4) In all figures the spectrograms are tiny and it is very difficult to see the link between the identified sequences and the acoustic structure of song. Please revise figures so that the reader does not have to simply depend on somewhat abstracted statistical measures of song locking to absorb the result. Please make spectrograms bigger in the figures.\n\nAlso In Figure 1C, the first and second sequences seem to overlap. E.g., for the second sequence (magenta) the units in the upper sequence also participate. I assume that whether the seqNMF algorithm generates these two sequences or merges them is dependent on the parameters? But either way, how do we interpret these sequences: is the conclusion that the same units participate in more than one sequence (in the same order) or that it is the same, but noisy sequence? How often were different there shared sub-sequences between the identified sequences?\n",
+      "created_at": "2025-12-04T01:49:24.648633Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T01:49:24.648633Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T01:49:24.648633Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "b86b01f8-2219-4409-bc95-03191a87cd8a",
+      "content_id": "f52743cb-44cf-42bd-b709-1052709812b4",
+      "claim_id": "C1",
+      "claim": "Behaviors emerge via a combination of experience and innate predispositions.",
+      "claim_type": "EXPLICIT",
+      "source": "Behaviors emerge via a combination of experience and innate predispositions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement in the abstract that draws from established scientific understanding about behavior development.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:49:24.648633Z"
+    },
+    {
+      "id": "f994ecbb-b4c6-42cf-983d-1191a1fa221d",
+      "content_id": "f52743cb-44cf-42bd-b709-1052709812b4",
+      "claim_id": "C2",
+      "claim": "As the brain matures, it undergoes major changes in cellular, network, and functional properties that can be due to sensory experience as well as developmental processes.",
+      "claim_type": "EXPLICIT",
+      "source": "As the brain matures, it undergoes major changes in cellular, network, and functional properties that can be due to sensory experience as well as developmental processes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement reflects established knowledge about brain development.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:49:24.648633Z"
+    },
+    {
+      "id": "707c2792-73b4-4a26-a0eb-f31d8c5acd59",
+      "content_id": "f52743cb-44cf-42bd-b709-1052709812b4",
+      "claim_id": "C3",
+      "claim": "In normal birdsong learning, neural sequences emerge to control song syllables learned from a tutor.",
+      "claim_type": "EXPLICIT",
+      "source": "In normal birdsong learning, neural sequences emerge to control song syllables learned from a tutor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by prior research cited throughout the manuscript and represents established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:49:24.648633Z"
+    },
+    {
+      "id": "f8453aa4-6b38-4471-8866-f024fa42f443",
+      "content_id": "f52743cb-44cf-42bd-b709-1052709812b4",
+      "claim_id": "C4",
+      "claim": "Neural sequences exist in the absence of tutoring, demonstrating that tutor experience is not necessary for the formation of sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "Using functional calcium imaging, we observe neural sequences in the absence of tutoring, demonstrating that tutor experience is not necessary for the formation of sequences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by calcium imaging data presented in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:49:24.648633Z"
+    },
+    {
+      "id": "c4050c5d-4318-42dd-a882-f618f1d620bf",
+      "content_id": "f52743cb-44cf-42bd-b709-1052709812b4",
+      "claim_id": "C5",
+      "claim": "After exposure to a tutor, pre-existing sequences can become tightly associated with new song syllables.",
+      "claim_type": "EXPLICIT",
+      "source": "However, after exposure to a tutor, pre-existing sequences can become tightly associated with new song syllables.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This finding is supported by data in Figure 3 showing tracked sequences before and after tutoring.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:49:24.648633Z"
+    },
+    {
+      "id": "83fd9813-30b5-47d4-818d-88bf180a6a66",
+      "content_id": "f52743cb-44cf-42bd-b709-1052709812b4",
+      "claim_id": "C6",
+      "claim": "Only half of the birds learned new syllables following tutor exposure when tutoring was delayed.",
+      "claim_type": "EXPLICIT",
+      "source": "Since we delayed tutoring, only half our birds learned new syllables following tutor exposure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct observation from the experimental data presented in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:49:24.648633Z"
+    },
+    {
+      "id": "9e0ee3c1-4c7d-4a33-8569-1bfa076e6cc5",
+      "content_id": "f52743cb-44cf-42bd-b709-1052709812b4",
+      "claim_id": "C7",
+      "claim": "Birds that failed to learn were the birds in which pre-tutoring neural sequences were most 'crystallized'.",
+      "claim_type": "EXPLICIT",
+      "source": "The birds that failed to learn were the birds in which pre-tutoring neural sequences were most 'crystallized,' that is, already tightly associated with their (untutored) song.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This finding is supported by quantitative comparisons in Figure 2C-E showing differences in sequence properties between learners and non-learners.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:49:24.648633Z"
+    },
+    {
+      "id": "dc7f4cc3-eab4-46bc-8585-4bc5427dbc50",
+      "content_id": "f52743cb-44cf-42bd-b709-1052709812b4",
+      "claim_id": "C8",
+      "claim": "Sensory experience is essential for the normal development of brain circuits.",
+      "claim_type": "EXPLICIT",
+      "source": "On the one hand, sensory experience is known to be essential for the normal development of brain circuits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:49:24.648633Z"
+    },
+    {
+      "id": "13668b87-1803-4299-bf7b-e467e39dbb90",
+      "content_id": "f52743cb-44cf-42bd-b709-1052709812b4",
+      "claim_id": "C9",
+      "claim": "Genetically specified developmental processes are essential for brain development.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, genetically specified developmental processes are also essential \u2013 we learn too quickly and from too sparse data to rely on sensory experience alone (Chomsky et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Chomsky et al., 2002.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:49:24.648633Z"
+    },
+    {
+      "id": "ee9f682f-58f3-4132-9f01-c904d6221466",
+      "content_id": "f52743cb-44cf-42bd-b709-1052709812b4",
+      "claim_id": "C10",
+      "claim": "The brain is able to use genetically specified predispositions to fill in gaps in its sensory experience.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, it appears that the brain is able to use genetically specified predispositions to fill in gaps in its sensory experience.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the cited literature and general knowledge.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:49:24.648633Z"
+    },
+    {
+      "id": "aa5eef92-28c5-4082-918b-5fd07e93291d",
+      "content_id": "f52743cb-44cf-42bd-b709-1052709812b4",
+      "claim_id": "C11",
+      "claim": "When typical sensory experience is absent or delayed, certain aspects of brain development proceed anyway, while other aspects are delayed.",
+      "claim_type": "EXPLICIT",
+      "source": "When typical sensory experience is absent or delayed, certain aspects of brain development proceed anyway, while other aspects are delayed. This is true both in primary sensory systems (Wiesel and Hubel, 1963; Bear and Singer, 1986; Farley et al., 2007; Ye et al., 2021), and for more cognitive behaviors such as social interaction and language (Hildyard and Wolfe, 2002; Moreno-Torres et al., 2016; Kral et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by multiple citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:49:24.648633Z"
+    },
+    {
+      "id": "32a082c6-13dd-445f-a511-41fa865c75b2",
+      "content_id": "f52743cb-44cf-42bd-b709-1052709812b4",
+      "claim_id": "C12",
+      "claim": "Brain circuits acquire structure and organization even in the absence of typical training inputs.",
+      "claim_type": "EXPLICIT",
+      "source": "Brain circuits acquire structure and organization even in the absence of typical training inputs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the citations provided in the preceding sentence and represents a synthesis of prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:49:24.648633Z"
+    },
+    {
+      "id": "1057df01-05e1-4ae9-9691-d596e6bca38d",
+      "content_id": "f52743cb-44cf-42bd-b709-1052709812b4",
+      "claim_id": "C13",
+      "claim": "Song learning is influenced by both auditory exposure to a particular tutor song, and by inherited preferences.",
+      "claim_type": "EXPLICIT",
+      "source": "Song learning is influenced by both auditory exposure to a particular tutor song, and by inherited preferences (Tchernichovski and Marcus, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Tchernichovski and Marcus, 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:49:24.648633Z"
+    },
+    {
+      "id": "bde22f3e-ca2e-4af1-8b78-ee1a4c5126c1",
+      "content_id": "f52743cb-44cf-42bd-b709-1052709812b4",
+      "claim_id": "C14",
+      "claim": "Songbirds, in the absence of exposure to a tutor bird, develop 'isolate' songs with highly variable and atypical syllable rhythms.",
+      "claim_type": "EXPLICIT",
+      "source": "It is well known that songbirds, in the absence of exposure to a tutor bird, develop 'isolate' songs, with highly variable and atypical syllable rhythms (Price, 1979; Williams et al., 1993; Feh\u00e9r et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by multiple citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:49:24.648633Z"
+    },
+    {
+      "id": "c47ac4e6-bcfd-41a6-a928-f11b70414585",
+      "content_id": "f52743cb-44cf-42bd-b709-1052709812b4",
+      "claim_id": "C15",
+      "claim": "When 'isolate' songs are used as tutor songs, after two generations birds sing normally again.",
+      "claim_type": "EXPLICIT",
+      "source": "However, when these 'isolate' songs are used as tutor songs, after two generations birds sing normally again, suggesting that an 'innate' preference filters what aspects of a tutor song are actually imitated (Feh\u00e9r et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Feh\u00e9r et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:49:24.648633Z"
+    },
+    {
+      "id": "f503a60a-c4a9-4565-a137-897a6367dffd",
+      "content_id": "f52743cb-44cf-42bd-b709-1052709812b4",
+      "claim_id": "C16",
+      "claim": "Song imitation requires approximately 75 s total exposure to a tutor song on a single day.",
+      "claim_type": "EXPLICIT",
+      "source": "Song imitation requires remarkably little total exposure to a tutor song \u2013 approximately 75 s total on a single day is enough for a bird to remember a song, and subsequently practice and imitate it (Deshpande et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Deshpande et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:49:24.648633Z"
+    },
+    {
+      "id": "22961fc6-e111-4c6a-ad45-9a21bee2d2fe",
+      "content_id": "f52743cb-44cf-42bd-b709-1052709812b4",
+      "claim_id": "C17",
+      "claim": "Zebra finches are able to imitate songs of birds from other species, but when given a choice they prefer zebra finch songs.",
+      "claim_type": "EXPLICIT",
+      "source": "Zebra finches, like many songbird species, are able to imitate songs of birds from other species, but when given a choice they prefer zebra finch songs (Eales, 1987).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Eales, 1987.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:49:24.648633Z"
+    },
+    {
+      "id": "8fad2c44-9550-4ede-9400-74c208eda519",
+      "content_id": "f52743cb-44cf-42bd-b709-1052709812b4",
+      "claim_id": "C18",
+      "claim": "Inherited genetic predispositions have a strong effect on the precise tempo at which a zebra finch sings its song.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, inherited genetic predispositions have a strong effect on both the precise tempo at which a zebra finch sings its song (Mets and Brainard, 2018), as well as the particular learning styles of individual birds (Mets and Brainard, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Mets and Brainard, 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:49:24.648633Z"
+    },
+    {
+      "id": "d03dc427-9dfd-439d-8829-8aecf6ede2d6",
+      "content_id": "f52743cb-44cf-42bd-b709-1052709812b4",
+      "claim_id": "C19",
+      "claim": "Inherited genetic predispositions have a strong effect on the particular learning styles of individual birds.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, inherited genetic predispositions have a strong effect on both the precise tempo at which a zebra finch sings its song (Mets and Brainard, 2018), as well as the particular learning styles of individual birds (Mets and Brainard, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Mets and Brainard, 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:49:24.648633Z"
+    },
+    {
+      "id": "493cf3ba-374e-40cc-8bf0-de0b55075c3d",
+      "content_id": "f52743cb-44cf-42bd-b709-1052709812b4",
+      "claim_id": "C20",
+      "claim": "In typical birds, neurons in HVC are initially only weakly coupled to a song, firing only at the onsets of syllables when birds are babbling subsong.",
+      "claim_type": "EXPLICIT",
+      "source": "In typical birds, neurons in HVC are initially only weakly coupled to a song, firing only at the onsets of syllables when birds are babbling subsong (Okubo et al., 2015), and HVC is not necessary for subsong production (Aronov et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to Okubo et al., 2015 and Aronov et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:49:24.648633Z"
+    },
+    {
+      "id": "4b0359b9-8e96-4208-a14b-8eb92635b940",
+      "content_id": "f52743cb-44cf-42bd-b709-1052709812b4",
+      "claim_id": "C21",
+      "claim": "HVC is not necessary for subsong production.",
+      "claim_type": "EXPLICIT",
+      "source": "In typical birds, neurons in HVC are initially only weakly coupled to a song, firing only at the onsets of syllables when birds are babbling subsong (Okubo et al., 2015), and HVC is not necessary for subsong production (Aronov et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Aronov et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:49:24.648633Z"
+    },
+    {
+      "id": "23ba5d30-9ea0-48d8-91da-af91c388efae",
+      "content_id": "f52743cb-44cf-42bd-b709-1052709812b4",
+      "claim_id": "C22",
+      "claim": "As the song becomes more mature and repeatable, each HVC projection neuron fires at its own precise moment during the song.",
+      "claim_type": "EXPLICIT",
+      "source": "Then, as the song becomes more mature and repeatable, each HVC projection neuron fires at its own precise moment during the song, with neurons firing one after the other, together forming a stable sequence of neural firing that tiles the song (Okubo et al., 2015; Lynch et al., 2016; Picardo et al., 2016), in interplay with inhibitory neurons (Kosche et al., 2015; Vallentin et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by multiple citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:49:24.648633Z"
+    },
+    {
+      "id": "3d012634-f77c-4b1e-82e5-55c5acb104de",
+      "content_id": "f52743cb-44cf-42bd-b709-1052709812b4",
+      "claim_id": "C23",
+      "claim": "HVC maturation has been modeled as an initially random network of neurons that, with the right training inputs and plasticity rules, assembles into a chain of sequentially connected neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "This maturation process in HVC has been modeled as an initially random network of neurons that, with the right training inputs and plasticity rules, assembles into a chain of sequentially connected neurons (Buonomano, 2005; Jun and Jin, 2007; Fiete et al., 2010; Okubo et al., 2015; Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This statement is supported by multiple citations and reference to Figure 1A.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:49:24.648633Z"
+    },
+    {
+      "id": "d6ae1780-f8dc-4549-b845-cab64fa9a877",
+      "content_id": "f52743cb-44cf-42bd-b709-1052709812b4",
+      "claim_id": "C24",
+      "claim": "Isolate song has a much less stable sequence of syllables and abnormally variable acoustic structure and timing compared to typical adult zebra finch songs.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to typical adult zebra finch songs, isolate song has a much less stable sequence of syllables and abnormally variable acoustic structure and timing (Feh\u00e9r et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Feh\u00e9r et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:49:24.648633Z"
+    },
+    {
+      "id": "5ff2e7fd-83d7-47cc-bdfd-98b6f15a5fa9",
+      "content_id": "f52743cb-44cf-42bd-b709-1052709812b4",
+      "claim_id": "C25",
+      "claim": "Aspects of isolate songs resemble features of early babbling (subsong).",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, aspects of isolate songs resemble features of early babbling (subsong).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the comparison of isolate song characteristics with known features of subsong.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:49:24.648633Z"
+    },
+    {
+      "id": "8f856cbf-5194-4f81-b435-6bbae41d876d",
+      "content_id": "f52743cb-44cf-42bd-b709-1052709812b4",
+      "claim_id": "C26",
+      "claim": "The seqNMF algorithm reveals the existence of significant sequential activity in HVC of singing isolated birds.",
+      "claim_type": "EXPLICIT",
+      "source": "This technique reveals the existence of significant sequential activity in HVC of singing isolated birds (Figure 1B and C, data in C also presented in Mackevicius et al., 2019).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding supported by data shown in Figure 1B and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:49:24.648633Z"
+    },
+    {
+      "id": "163649c5-f87b-4c38-ab83-3d03354c1957",
+      "content_id": "f52743cb-44cf-42bd-b709-1052709812b4",
+      "claim_id": "C27",
+      "claim": "In isolated birds, the seqNMF factorization explained 27 \u00b1 9% of the power in the neural data, with a sequenciness score of 0.55 \u00b1 0.88.",
+      "claim_type": "EXPLICIT",
+      "source": "In these birds, the seqNMF factorization explained 27 \u00b1 9% of the power in the neural data, with a sequenciness score of 0.55 \u00b1 0.88 (mean \u00b1 standard deviation).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from the seqNMF analysis of the neural data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:49:24.648633Z"
+    },
+    {
+      "id": "fc1a188e-33cb-46f5-aab1-226dcfb15cfb",
+      "content_id": "f52743cb-44cf-42bd-b709-1052709812b4",
+      "claim_id": "C28",
+      "claim": "In typical adult HVC, 46% of the data is explained by the seqNMF factorization, with sequenciness score of 0.74.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, 46% of the data is explained by the seqNMF factorization, with sequenciness score of 0.74.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from the seqNMF analysis of typical adult HVC data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:49:24.648633Z"
+    },
+    {
+      "id": "a029096c-5e4f-4946-b587-18abfda625d8",
+      "content_id": "f52743cb-44cf-42bd-b709-1052709812b4",
+      "claim_id": "C29",
+      "claim": "Neurons in isolated birds participate at characteristic moments during the sequence.",
+      "claim_type": "EXPLICIT",
+      "source": "As in typical HVC sequences, neurons in isolated birds participate at characteristic moments during the sequence (Figure 1E), and many neurons participate in at least one sequence (Figure 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 1E and 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:49:24.648633Z"
+    },
+    {
+      "id": "fa3dea64-fe0d-464d-90bf-41a96fee7a81",
+      "content_id": "f52743cb-44cf-42bd-b709-1052709812b4",
+      "claim_id": "C30",
+      "claim": "Many neurons in isolated birds participate in at least one sequence.",
+      "claim_type": "EXPLICIT",
+      "source": "As in typical HVC sequences, neurons in isolated birds participate at characteristic moments during the sequence (Figure 1E), and many neurons participate in at least one sequence (Figure 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:49:24.648633Z"
+    },
+    {
+      "id": "33a2b2b7-bf07-40a0-afd6-16f48778a4bf",
+      "content_id": "f52743cb-44cf-42bd-b709-1052709812b4",
+      "claim_id": "C31",
+      "claim": "Neurons that participate in a sequence tend to fire at a majority of sequence occurrences.",
+      "claim_type": "EXPLICIT",
+      "source": "Neurons that participate in a sequence tend to fire at a majority of sequence occurrences (Figure 1G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 1G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:49:24.648633Z"
+    },
+    {
+      "id": "d1fdbba5-1d09-4cf3-9140-7763bc4cac7e",
+      "content_id": "f52743cb-44cf-42bd-b709-1052709812b4",
+      "claim_id": "C32",
+      "claim": "On average, 45.21 \u00b1 7% of participating neurons' activity was specific to sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "On average, 45.21 \u00b1 7% of these neurons' activity was specific to sequences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from the analysis of neural data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:49:24.648633Z"
+    },
+    {
+      "id": "8ea811b0-d8f0-474b-9edc-14bccb84d09b",
+      "content_id": "f52743cb-44cf-42bd-b709-1052709812b4",
+      "claim_id": "C33",
+      "claim": "Neural sequences are correlated with precisely timed song features in isolated birds' songs.",
+      "claim_type": "EXPLICIT",
+      "source": "Neural sequences are correlated with precisely timed song features in isolated birds' songs (Figure 1H1, song features calculated as in Tchernichovski et al., 2000).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 1H and analysis using methods from Tchernichovski et al., 2000.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:49:24.648633Z"
+    },
+    {
+      "id": "2bc5a10a-1cd9-4650-9807-28d05b388ffa",
+      "content_id": "f52743cb-44cf-42bd-b709-1052709812b4",
+      "claim_id": "C34",
+      "claim": "Song locking in isolated birds was only on average 0.58 times as strong as in a typically tutored adult bird.",
+      "claim_type": "EXPLICIT",
+      "source": "Song locking in isolated birds was only on average 0.58 times as strong as in a typically tutored adult bird (Figure 1J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative comparison supported by data shown in Figure 1J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:49:24.648633Z"
+    },
+    {
+      "id": "8b537121-74b3-44ae-b269-dcaee952593b",
+      "content_id": "f52743cb-44cf-42bd-b709-1052709812b4",
+      "claim_id": "C35",
+      "claim": "In isolated birds, on average only 61% of each song bout is represented by a detected HVC sequence.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, in isolated birds, on average only 61% of each song bout is represented by a detected HVC sequence, substantially less than the complete sequence coverage found in typically tutored birds (Picardo et al., 2016; Lynch et al., 2016; Okubo et al., 2015; Figure 1K, see Methods).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result supported by data shown in Figure 1K and comparison to prior research.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:49:24.648633Z"
+    },
+    {
+      "id": "c4e76d85-760f-4a5e-b9a1-47a081f4460a",
+      "content_id": "f52743cb-44cf-42bd-b709-1052709812b4",
+      "claim_id": "C36",
+      "claim": "HVC sequences in isolated birds are more strongly present than would be expected from per-neuron circularly shifted data.",
+      "claim_type": "EXPLICIT",
+      "source": "By each of these measures, HVC sequences in isolated birds are more strongly present than would be expected from per-neuron circularly shifted data (red lines in Figure 1F\u2013K), but not as robust as sequences observed in typically tutored birds (red triangles in Figure 1F\u2013K).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a comparison to control data shown in Figure 1F-K.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:49:24.648633Z"
+    },
+    {
+      "id": "e4449f47-c3d0-4ef7-849a-65403ad9fd57",
+      "content_id": "f52743cb-44cf-42bd-b709-1052709812b4",
+      "claim_id": "C37",
+      "claim": "HVC sequences in isolated birds are not as robust as sequences observed in typically tutored birds.",
+      "claim_type": "EXPLICIT",
+      "source": "By each of these measures, HVC sequences in isolated birds are more strongly present than would be expected from per-neuron circularly shifted data (red lines in Figure 1F\u2013K), but not as robust as sequences observed in typically tutored birds (red triangles in Figure 1F\u2013K).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a comparison to typical bird data shown in Figure 1F-K.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:49:24.648633Z"
+    },
+    {
+      "id": "dc288be1-6c94-4e73-85a7-f8e5e0f14b61",
+      "content_id": "f52743cb-44cf-42bd-b709-1052709812b4",
+      "claim_id": "C38",
+      "claim": "Neurons in isolated birds sometimes generated extended periods of continuous activity, especially during long syllables of variable duration.",
+      "claim_type": "EXPLICIT",
+      "source": "While HVC neurons generate only brief bursts of spikes in tutored birds, neurons in isolated birds sometimes generated extended periods of continuous activity, especially during long syllables of variable duration (Figure 1L, 7/8 birds exhibited multiple instances of persistent activity, coordinated across at least three neurons, and lasting at least 500 ms).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the data shown in Figure 1L, with quantification across birds.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:49:24.648633Z"
+    },
+    {
+      "id": "d5892765-87f0-4656-85d5-5731ee8b796f",
+      "content_id": "f52743cb-44cf-42bd-b709-1052709812b4",
+      "claim_id": "C39",
+      "claim": "HVC sequences in isolated birds exhibit variable durations, often truncating at different points.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, HVC sequences in isolated birds exhibit variable durations, often truncating at different points (Figure 1L, 8/8 birds), producing syllables of highly variable duration.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the data shown in Figure 1L, with quantification across all birds.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:49:24.648633Z"
+    },
+    {
+      "id": "2759391c-80e1-43f9-bc24-584333a5624d",
+      "content_id": "f52743cb-44cf-42bd-b709-1052709812b4",
+      "claim_id": "C40",
+      "claim": "Truncations in the middle of a syllable are very unusual in typically tutored birds.",
+      "claim_type": "EXPLICIT",
+      "source": "Such truncations in the middle of a syllable, as opposed to at stereotyped gaps between syllables, are very unusual in typically tutored birds (Cynx, 1990).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Cynx, 1990.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:49:24.648633Z"
+    },
+    {
+      "id": "c989c715-98b9-4f4d-9b69-c0a6e7be41e9",
+      "content_id": "f52743cb-44cf-42bd-b709-1052709812b4",
+      "claim_id": "C41",
+      "claim": "Syllables in isolated birds may exhibit variable duration when their underlying HVC sequences are truncated at different points.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, syllables in isolated birds may exhibit variable duration when their underlying HVC sequences are truncated at different points.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the observed data.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:49:24.648633Z"
+    },
+    {
+      "id": "05f32f6f-9baa-4e05-916b-5b8a695e5d6f",
+      "content_id": "f52743cb-44cf-42bd-b709-1052709812b4",
+      "claim_id": "C42",
+      "claim": "HVC sequences were found in 5 birds at ages 57\u201364 dph, prior to tutor exposure.",
+      "claim_type": "EXPLICIT",
+      "source": "We recorded in 5 birds at ages 57\u201364 dph, prior to tutor exposure, and found strong evidence for HVC sequences (Figure 1\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct observation from the data shown in Figure 1\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:49:24.648633Z"
+    },
+    {
+      "id": "abf5c555-872d-4fc7-8daf-be0c4f0d5ce4",
+      "content_id": "f52743cb-44cf-42bd-b709-1052709812b4",
+      "claim_id": "C44",
+      "claim": "There was not a significant correlation between the age of the bird and any sequence features measured.",
+      "claim_type": "EXPLICIT",
+      "source": "There was not a significant correlation between the age of the bird and any sequence features we measured (Figure 1\u2014figure supplement 1B-F, linear regression model, significance threshold p<0.5, compared to a constant model).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical result from regression analysis shown in Figure 1\u2014figure supplement 1B-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:49:24.648633Z"
+    },
+    {
+      "id": "588a722e-3ef6-4a3b-a0ad-4401e1acefaf",
+      "content_id": "f52743cb-44cf-42bd-b709-1052709812b4",
+      "claim_id": "C45",
+      "claim": "The large bird-to-bird variability in sequence properties is not explained by age, and is likely due to inter-individual variability in developmental timecourses.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the large (several fold) bird-to-bird variability in sequence properties (Figure 1\u2014figure supplement 1B-F) is not explained by age, and is likely due to inter-individual variability in developmental timecourses.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the lack of age correlation and observed variability.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:49:24.648633Z"
+    },
+    {
+      "id": "74fc7796-be8e-4561-9754-32dea1a0e468",
+      "content_id": "f52743cb-44cf-42bd-b709-1052709812b4",
+      "claim_id": "C46",
+      "claim": "Half of the young isolated birds learned elements of their tutor song after tutoring around the critical period.",
+      "claim_type": "EXPLICIT",
+      "source": "Many of our young isolated birds were eventually tutored at an age around the critical period and we found that half of them learned elements of their tutor song, while the others developed fully isolated songs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct observation from the experimental results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:49:24.648633Z"
+    },
+    {
+      "id": "50fcbfb2-e642-4c7b-9e8b-8b0e892a75b6",
+      "content_id": "f52743cb-44cf-42bd-b709-1052709812b4",
+      "claim_id": "C47",
+      "claim": "Birds were classified as learners if their song had an Imitation Score metric greater than 0.5.",
+      "claim_type": "EXPLICIT",
+      "source": "We classified birds as learners if their song had an Imitation Score metric (Mandelblat-Cerf and Fee, 2014) greater than 0.5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological criterion used in the study, referencing a prior method.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:49:24.648633Z"
+    },
+    {
+      "id": "2604e4a5-a533-453b-9b9a-e9b4836021ab",
+      "content_id": "f52743cb-44cf-42bd-b709-1052709812b4",
+      "claim_id": "C48",
+      "claim": "The songs of non-learners remained highly variable and isolate-like even after tutoring.",
+      "claim_type": "EXPLICIT",
+      "source": "The songs of non-learners remained highly variable and isolate-like even after tutoring (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation supported by data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:49:24.648633Z"
+    },
+    {
+      "id": "a4dc460c-0fac-4c3d-9bb3-24cd07e36c58",
+      "content_id": "f52743cb-44cf-42bd-b709-1052709812b4",
+      "claim_id": "C49",
+      "claim": "Learner birds developed a new syllable within a day or two after tutoring.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, learner birds developed a new syllable within a day or two after tutoring, and ultimately sang typical adult songs, consisting of stereotyped motifs (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation supported by data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:49:24.648633Z"
+    },
+    {
+      "id": "22af9b19-04fe-4a2a-9f93-195df2a67e5e",
+      "content_id": "f52743cb-44cf-42bd-b709-1052709812b4",
+      "claim_id": "C50",
+      "claim": "The new syllables in learner birds appeared to imitate elements of the tutor song.",
+      "claim_type": "EXPLICIT",
+      "source": "The new syllables appeared to imitate elements of the tutor song, and persist as part of the learned song (Figure 2\u2014figure supplements 1\u20134).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation supported by data shown in Figure 2\u2014figure supplements 1\u20134.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:49:24.648633Z"
+    },
+    {
+      "id": "e662b504-b20e-4ce9-8efd-18a3c0947c28",
+      "content_id": "f52743cb-44cf-42bd-b709-1052709812b4",
+      "claim_id": "C51",
+      "claim": "Learner birds had fewer sequences than non-learners prior to tutoring.",
+      "claim_type": "EXPLICIT",
+      "source": "Learner birds had fewer sequences than non-learners (Figure 2C, average two sequences in learners, 3.25 sequences in non-learners, p=0.029, Wilcoxon rank sum test).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative comparison with statistical significance, shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:49:24.648633Z"
+    },
+    {
+      "id": "1a1738c2-87db-4f85-ba4e-6e946204f938",
+      "content_id": "f52743cb-44cf-42bd-b709-1052709812b4",
+      "claim_id": "C52",
+      "claim": "Sequences in learner birds were more weakly correlated to song features than in non-learners.",
+      "claim_type": "EXPLICIT",
+      "source": "Sequences in learner birds were more weakly correlated to song features (Figure 2D, average 0.20 s learner, 0.55 s non-learner, p=0.0034, Wilcoxon rank sum test).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative comparison with statistical significance, shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:49:24.648633Z"
+    },
+    {
+      "id": "d6366394-7b80-43bd-8805-1641095af786",
+      "content_id": "f52743cb-44cf-42bd-b709-1052709812b4",
+      "claim_id": "C53",
+      "claim": "Sequences in learners had lower autocorrelation than non-learners.",
+      "claim_type": "EXPLICIT",
+      "source": "Sequences in learners had lower autocorrelation, a measure of how repeatably/rhythmically they are produced (Okubo et al., 2015), than non-learners (Figure 2E, average 0.125 s learner, 0.244 s non-learner, p=0.018, Wilcoxon rank sum test).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative comparison with statistical significance, shown in Figure 2E.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:49:24.648633Z"
+    },
+    {
+      "id": "0b194fbc-0b01-4526-9369-2d4af9739bb6",
+      "content_id": "f52743cb-44cf-42bd-b709-1052709812b4",
+      "claim_id": "C54",
+      "claim": "The age of tutoring did not significantly influence whether the bird was a learner or non-learner.",
+      "claim_type": "EXPLICIT",
+      "source": "In our dataset, the age of tutoring did not significantly influence whether the bird was a learner or non-learner (Figure 2F, average 60.5 dph learner, 78.75 dph non-learner, p=0.11, Wilcoxon rank sum test).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical result shown in Figure 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:49:24.648633Z"
+    },
+    {
+      "id": "6e5c4eae-de33-48ef-bf93-2dd6112e5d40",
+      "content_id": "f52743cb-44cf-42bd-b709-1052709812b4",
+      "claim_id": "C55",
+      "claim": "The presence of robust song-locked sequences at the time of tutoring may inhibit learning.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these results suggest that the presence, at the time of tutoring, of robust song-locked sequences, may inhibit learning.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the comparison of sequence properties between learners and non-learners.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:49:24.648633Z"
+    },
+    {
+      "id": "e7549549-8ac8-49d4-b1b8-981d17905ea7",
+      "content_id": "f52743cb-44cf-42bd-b709-1052709812b4",
+      "claim_id": "C56",
+      "claim": "Learning may be better supported by more immature sequences that are more independent from the vocal output.",
+      "claim_type": "EXPLICIT",
+      "source": "In other words, learning may be better supported by more immature sequences that are more independent from the vocal output.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the observed correlation between sequence maturity and learning ability.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:49:24.648633Z"
+    },
+    {
+      "id": "2d1e6209-2c90-48b5-b40a-699e0853b5ba",
+      "content_id": "f52743cb-44cf-42bd-b709-1052709812b4",
+      "claim_id": "C57",
+      "claim": "Late-tutored birds that learned developed a new syllable within a day or two after tutoring.",
+      "claim_type": "EXPLICIT",
+      "source": "In late-tutored birds that learned, the speed with which new syllables appeared was striking. These birds developed a new syllable within a day or two after tutoring (Figure 2A and B), as has been previously described (Tchernichovski et al., 2001; Lipkind and Tchernichovski, 2011; Lipkind et al., 2013).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation supported by data in Figure 2A and B and citations to prior work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:49:24.648633Z"
+    },
+    {
+      "id": "42ab3a59-52ca-4da0-8fcb-b0f49d796adc",
+      "content_id": "f52743cb-44cf-42bd-b709-1052709812b4",
+      "claim_id": "C58",
+      "claim": "New syllables in late-tutored learners appeared to emerge de-novo, not by syllable differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "These new syllables appeared to emerge de-novo, not by syllable differentiation as is common in tutored birds.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation and interpretation of the data, contrasting with typical development.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:49:24.648633Z"
+    },
+    {
+      "id": "fa73fdbf-ad7a-4f34-b3bd-d6924bd35674",
+      "content_id": "f52743cb-44cf-42bd-b709-1052709812b4",
+      "claim_id": "C59",
+      "claim": "Neural sequences associated with new post-tutoring syllables existed even prior to tutoring.",
+      "claim_type": "EXPLICIT",
+      "source": "We first extracted neural sequences associated with new post-tutoring syllables, then followed these neurons back in time to find that the sequence existed even prior to tutoring (Figure 3B and C, see Methods).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from tracking neurons across time, shown in Figure 3B and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:49:24.648633Z"
+    },
+    {
+      "id": "541ee960-7640-4c93-800e-54e827bb967c",
+      "content_id": "f52743cb-44cf-42bd-b709-1052709812b4",
+      "claim_id": "C61",
+      "claim": "In all four learner birds, the correlation between the pre-tutoring and post-tutoring sequences was significantly higher than expected by a time-shuffled control.",
+      "claim_type": "EXPLICIT",
+      "source": "In all four learner birds, the correlation between the pre-tutoring and post-tutoring sequences was significantly higher than expected by a time-shuffled control (p=0.014, p=0.018, p=0.0004, p=0.0002, respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result comparing to control data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:49:24.648633Z"
+    },
+    {
+      "id": "d540e95b-02f4-423a-ba08-9c9cb6b4b903",
+      "content_id": "f52743cb-44cf-42bd-b709-1052709812b4",
+      "claim_id": "C62",
+      "claim": "The correlation between pre- and post-tutoring sequences was significantly higher than a neuron-shuffled control in two birds.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, the correlation between pre- and post- tutoring sequences was significantly higher than a neuron-shuffled control in two birds (p=0.0099, p=0.0032), and trended higher in the remaining two birds (p=0.077, p=0.079, likely influenced by an abundance of near-synchronous neurons, Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical result comparing to control data, shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:49:24.648633Z"
+    },
+    {
+      "id": "78a31181-28cc-477a-8a3c-c43876965f9a",
+      "content_id": "f52743cb-44cf-42bd-b709-1052709812b4",
+      "claim_id": "C63",
+      "claim": "The sequences prior to tutoring were relatively uncoupled to vocal output, without a strong correlation to song syllables.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the sequences prior to tutoring were relatively uncoupled to vocal output, without a strong correlation to song syllables.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the analysis of pre-tutoring sequences.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:49:24.648633Z"
+    },
+    {
+      "id": "875fb97c-482a-41de-a563-03fe1f3d2575",
+      "content_id": "f52743cb-44cf-42bd-b709-1052709812b4",
+      "claim_id": "C64",
+      "claim": "Neural sequences extracted two days after tutoring appeared to become more song locked after tutoring.",
+      "claim_type": "EXPLICIT",
+      "source": "Combining data from the four birds that learned a new syllable rapidly after tutoring, neural sequences extracted two days after tutoring appeared to become more song locked after tutoring (Figure 3D, p=0.0048, Wilcoxon rank sum test).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical result shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:49:24.648633Z"
+    },
+    {
+      "id": "610db424-9d94-4b9c-848a-ad1ebdef996e",
+      "content_id": "f52743cb-44cf-42bd-b709-1052709812b4",
+      "claim_id": "C65",
+      "claim": "HVC sequences may exist in a 'latent' state in late-tutored birds prior to tutoring.",
+      "claim_type": "EXPLICIT",
+      "source": "This lack of coupling between HVC sequences and song structure prior to tutoring, and their subsequent incorporation into learned syllables, suggests that, in these late-tutored birds, HVC sequences may exist in a 'latent' state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation and inference from the observed data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:49:24.648633Z"
+    },
+    {
+      "id": "859bd947-3344-4e80-be49-6103fea8adf5",
+      "content_id": "f52743cb-44cf-42bd-b709-1052709812b4",
+      "claim_id": "C66",
+      "claim": "Sequences that were initially relatively 'latent' persisted, becoming progressively more correlated with vocal output.",
+      "claim_type": "EXPLICIT",
+      "source": "Sequences that were initially relatively 'latent' persisted, becoming progressively more correlated with vocal output, ultimately appearing to become locked to a new syllable (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from tracking sequences forward in time, shown in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:49:24.648633Z"
+    },
+    {
+      "id": "96bb7d6b-f685-42f8-aeba-a5de76ad9d59",
+      "content_id": "f52743cb-44cf-42bd-b709-1052709812b4",
+      "claim_id": "C67",
+      "claim": "Each of the 'learner' birds appeared to have two HVC sequences present prior to tutoring.",
+      "claim_type": "EXPLICIT",
+      "source": "Each of the 'learner' birds appeared to have two HVC sequences present prior to tutoring.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the analysis of pre-tutoring data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:49:24.648633Z"
+    },
+    {
+      "id": "a0d44329-a1b6-4a49-9cb7-d45778debc03",
+      "content_id": "f52743cb-44cf-42bd-b709-1052709812b4",
+      "claim_id": "C68",
+      "claim": "Pre-tutoring sequences that started off less correlated with song amplitude exhibited a significant increase in correlation with song amplitude after tutoring.",
+      "claim_type": "EXPLICIT",
+      "source": "Of these sequences, the ones that started off less correlated with song amplitude exhibited a significant increase in correlation with song amplitude after tutoring (Figure 3F, p=0.045, Wilcoxon rank sum test).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical result shown in Figure 3F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:49:24.648633Z"
+    },
+    {
+      "id": "5ca42131-0ea3-456c-89f7-20d06fd4a729",
+      "content_id": "f52743cb-44cf-42bd-b709-1052709812b4",
+      "claim_id": "C69",
+      "claim": "Pre-tutoring sequences that started off more correlated with song amplitude did not significantly change their correlation with song amplitude after tutoring.",
+      "claim_type": "EXPLICIT",
+      "source": "The sequences that started off more correlated with song amplitude did not significantly change their correlation with song amplitude (Figure 3G, p=1, Wilcoxon rank sum test).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical result shown in Figure 3G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:49:24.648633Z"
+    },
+    {
+      "id": "99b65b33-57d3-4ea0-b520-dc4bc0669fc4",
+      "content_id": "f52743cb-44cf-42bd-b709-1052709812b4",
+      "claim_id": "C70",
+      "claim": "The emergence of new syllables after tutoring may co-opt existing HVC sequences, including relatively 'latent' sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these results are consistent with the view that the emergence of new syllables after tutoring may co-opt existing HVC sequences, including relatively 'latent' sequences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation and inference from the observed data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:49:24.648633Z"
+    },
+    {
+      "id": "f3c5f0d8-e35e-4207-80f5-a756f067116e",
+      "content_id": "f52743cb-44cf-42bd-b709-1052709812b4",
+      "claim_id": "C71",
+      "claim": "HVC network activity can form long repeatable sequences even in birds that had no prior exposure to vocal tutoring.",
+      "claim_type": "EXPLICIT",
+      "source": "By observing the neural activity in HVC of isolated birds, we found that HVC network activity can form long repeatable sequences even in birds that had no prior exposure to vocal tutoring.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the primary finding from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:49:24.648633Z"
+    },
+    {
+      "id": "4da19518-f6bd-4610-9587-8c997bc85b06",
+      "content_id": "f52743cb-44cf-42bd-b709-1052709812b4",
+      "claim_id": "C72",
+      "claim": "Sequences in isolate HVC exhibit some properties of typical HVC, with many neurons reliably participating in sequences, and sequences being correlated to vocal output.",
+      "claim_type": "EXPLICIT",
+      "source": "Sequences in isolate HVC exhibit some properties of typical HVC, with many neurons reliably participating in sequences, and sequences being correlated to vocal output.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of findings from the comparison of isolate and typical HVC.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:49:24.648633Z"
+    },
+    {
+      "id": "0db1f9d9-edaf-4bb3-9481-5ec5417b9f74",
+      "content_id": "f52743cb-44cf-42bd-b709-1052709812b4",
+      "claim_id": "C73",
+      "claim": "Sequences in isolated birds were less reliable and less tightly correlated with vocal output than has been described in typical birds.",
+      "claim_type": "EXPLICIT",
+      "source": "However, sequences in isolated birds were less reliable and less tightly correlated with vocal output than has been described in typical birds, and exhibited abnormal truncations and persistent activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of findings from the comparison of isolate and typical HVC.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:49:24.648633Z"
+    },
+    {
+      "id": "e6239432-cab5-46f9-9865-c6f3c4838ac5",
+      "content_id": "f52743cb-44cf-42bd-b709-1052709812b4",
+      "claim_id": "C74",
+      "claim": "There must be a way for sequences to form without the prior storage of a tutor memory.",
+      "claim_type": "EXPLICIT",
+      "source": "We had previously hypothesized that the experience of hearing a tutor may seed the formation of HVC sequences of the appropriate number and durations (Mackevicius and Fee, 2018), but our new data reveal that HVC sequences exist even prior to tutoring. Thus, there must be a way for sequences to form without the prior storage of a tutor memory.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the finding that sequences exist prior to tutoring.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:49:24.648633Z"
+    },
+    {
+      "id": "647a7a80-d5b3-4e41-bcfe-8f39cad5d448",
+      "content_id": "f52743cb-44cf-42bd-b709-1052709812b4",
+      "claim_id": "C75",
+      "claim": "In models of Hebbian learning in HVC, sequences can form in networks driven by random inputs rather than patterned inputs.",
+      "claim_type": "EXPLICIT",
+      "source": "In models of Hebbian learning in HVC, sequences can form in networks driven by random inputs rather than patterned inputs (Fiete et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Fiete et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:49:24.648633Z"
+    },
+    {
+      "id": "fe4af299-4306-4564-8acb-8296ecf7ef82",
+      "content_id": "f52743cb-44cf-42bd-b709-1052709812b4",
+      "claim_id": "C76",
+      "claim": "When sequences form from random inputs, the distribution of sequence durations no longer matches syllable durations found in typical adult birds, but is instead more consistent with the highly variable and atypically long syllables that occur in isolate song.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in this case, the distribution of sequence durations no longer matches syllable durations found in typical adult birds, but is instead more consistent with the highly variable and atypically long syllables that occur in birds that have never heard a tutor (isolate song) (Feh\u00e9r et al., 2009; Price, 1979).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from modeling results and comparison to isolate song characteristics, supported by citations.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:49:24.648633Z"
+    },
+    {
+      "id": "4adc12b8-62ac-4c51-be28-9eebc309a49d",
+      "content_id": "f52743cb-44cf-42bd-b709-1052709812b4",
+      "claim_id": "C77",
+      "claim": "Sequences can emerge in isolate birds by a combination of simple Hebbian learning mechanisms together with spontaneous activity either within HVC or driven by the inputs to HVC.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus our findings are consistent with the view that sequences can emerge in isolate birds by a combination of simple Hebbian learning mechanisms together with spontaneous activity either within HVC or driven by the inputs to HVC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation and inference from the findings and modeling considerations.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:49:24.648633Z"
+    },
+    {
+      "id": "6953e427-b4ba-4f71-8803-2e6bbd781ae8",
+      "content_id": "f52743cb-44cf-42bd-b709-1052709812b4",
+      "claim_id": "C78",
+      "claim": "The discovery of latent sequences suggests a separation between neural processes for building a stable representation of states within a task and neural processes for associating an action with each state.",
+      "claim_type": "EXPLICIT",
+      "source": "Our discovery of latent sequences suggests a separation between neural processes for building a stable representation of states within a task (i.e. sequential moments in time), and neural processes for associating an action with each state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation and inference from the discovery of latent sequences.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:49:24.648633Z"
+    },
+    {
+      "id": "4c1e405f-cfcb-4e1f-99a8-c0082420376c",
+      "content_id": "f52743cb-44cf-42bd-b709-1052709812b4",
+      "claim_id": "C79",
+      "claim": "Sequences may gradually emerge in the maturing HVC network via simple Hebbian processes, but may remain relatively decoupled from downstream motor neurons until a memory of the tutor song is learned and reinforcement learning processes begin.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, sequences may gradually emerge in the maturing HVC network via simple Hebbian processes (Buonomano, 2005; Jun and Jin, 2007; Fiete et al., 2010; Okubo et al., 2015), but may remain relatively decoupled from downstream motor neurons until a memory of the tutor song is learned and reinforcement learning processes begin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation and speculation based on the findings and cited models.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:49:24.648633Z"
+    },
+    {
+      "id": "8aafdcbf-dc93-4629-b8f9-d1ec3b9fa321",
+      "content_id": "f52743cb-44cf-42bd-b709-1052709812b4",
+      "claim_id": "C80",
+      "claim": "In reinforcement learning models of song learning, HVC sequences remain relatively stable even as the song changes.",
+      "claim_type": "EXPLICIT",
+      "source": "In reinforcement learning models of song learning, HVC sequences remain relatively stable even as the song changes (Doya and Sejnowski, 1994; Fiete et al., 2007; Fee and Goldberg, 2011; Brainard and Doupe, 2013), consistent with our observation of stable sequences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prior models and is consistent with the observed data.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:49:24.648633Z"
+    },
+    {
+      "id": "49cb89d6-dccc-4c95-8112-f79549a930b1",
+      "content_id": "f52743cb-44cf-42bd-b709-1052709812b4",
+      "claim_id": "C81",
+      "claim": "The results are consistent with data from the primary motor cortex of macaques operating a brain-computer interface\u2014a fixed repertoire of activity patterns is associated with different movements after learning.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results are consistent with data from the primary motor cortex of macaques operating a brain-computer interface\u2014a fixed repertoire of activity patterns is associated with different movements after learning (Golub et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement draws a parallel to findings in another system, supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:49:24.648633Z"
+    },
+    {
+      "id": "2bda100a-5093-46ff-84c2-d0ca10de26fa",
+      "content_id": "f52743cb-44cf-42bd-b709-1052709812b4",
+      "claim_id": "C82",
+      "claim": "The results are consistent with the idea that the brain may use pre-existing sequential patterns to rapidly learn from new experiences.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results are also consistent with the idea that the brain may use pre-existing sequential patterns to rapidly learn from new experiences, for example, the existence of sequences in the hippocampus prior to exposure to new environments (Villette et al., 2015; Farooq et al., 2019; McKenzie et al., 2021; Dragoi, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement draws a parallel to findings in the hippocampus, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:49:24.648633Z"
+    },
+    {
+      "id": "3ec357a6-4d88-468f-891b-60c6441c0e01",
+      "content_id": "f52743cb-44cf-42bd-b709-1052709812b4",
+      "claim_id": "C83",
+      "claim": "Zebra finches develop typical songs, including typical syllable durations, after being tutored by atypical isolate songs, relying on species-specific 'priors'.",
+      "claim_type": "EXPLICIT",
+      "source": "Zebra finches are known to develop typical songs, including typical syllable durations, after being tutored by atypical isolate songs, relying on species-specific 'priors' to achieve species-typical syllable durations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement reflects established knowledge about zebra finch song learning.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:49:24.648633Z"
+    },
+    {
+      "id": "ae185f0c-d8f2-4524-b91c-30413f8bb7ca",
+      "content_id": "f52743cb-44cf-42bd-b709-1052709812b4",
+      "claim_id": "C84",
+      "claim": "The latent sequences observed tended to last approximately a couple hundred milliseconds\u2014the same as the duration of typical zebra finch syllables.",
+      "claim_type": "EXPLICIT",
+      "source": "The latent sequences we observed tended to last approximately a couple hundred milliseconds\u2014the same as the duration of typical zebra finch syllables.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:49:24.648633Z"
+    },
+    {
+      "id": "d2ae28fa-b5b1-463e-89cc-c323a4da4edb",
+      "content_id": "f52743cb-44cf-42bd-b709-1052709812b4",
+      "claim_id": "C85",
+      "claim": "The speed of latent sequences could be genetically specified by expression levels of ion channels with different time constants within HVC.",
+      "claim_type": "EXPLICIT",
+      "source": "One might imagine that the speed of latent sequences could be genetically specified by expression levels of ion channels with different time constants within HVC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative hypothesis about the mechanism underlying latent sequence timing.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:49:24.648633Z"
+    },
+    {
+      "id": "f8af60c3-72a0-468c-9833-19a9335e0788",
+      "content_id": "f52743cb-44cf-42bd-b709-1052709812b4",
+      "claim_id": "C86",
+      "claim": "The duration of latent sequences could be specified by the amount of time it takes for HVC to get feedback from respiratory and/or auditory centers.",
+      "claim_type": "EXPLICIT",
+      "source": "Alternatively, the duration of latent sequences could be specified by the amount of time it takes for HVC to get feedback from respiratory and/or auditory centers, which may also have their own intrinsic timing or rhythmicity (Schmidt and Goller, 2016; Hamaguchi et al., 2016; Araki et al., 2016; Mackevicius et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative hypothesis supported by citations to prior work on feedback mechanisms.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:49:24.648633Z"
+    },
+    {
+      "id": "442cefd0-64b3-4e81-abe6-8873b11d51fa",
+      "content_id": "f52743cb-44cf-42bd-b709-1052709812b4",
+      "claim_id": "C87",
+      "claim": "Latent sequences appear to be capable of supporting song learning, at least in the case of delayed tutoring.",
+      "claim_type": "EXPLICIT",
+      "source": "By whatever mechanism latent sequences arise, they appear to be capable of supporting song learning, at least in the case of delayed tutoring.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the observed data showing that latent sequences become associated with learned syllables.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:49:24.648633Z"
+    },
+    {
+      "id": "0e911923-2a85-4a19-9bd0-794c85591ca3",
+      "content_id": "f52743cb-44cf-42bd-b709-1052709812b4",
+      "claim_id": "C88",
+      "claim": "The ability of brains to generate complex learned behavior may depend on the intrinsic developmental formation of appropriate latent dynamics in motor and sensory circuits.",
+      "claim_type": "EXPLICIT",
+      "source": "More generally, the ability of brains to generate complex learned behavior may depend on the intrinsic developmental formation of appropriate latent dynamics in motor and sensory circuits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative generalization from the findings.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:49:24.648633Z"
+    },
+    {
+      "id": "159c1241-702b-4f5c-a536-913ce9dae161",
+      "content_id": "f52743cb-44cf-42bd-b709-1052709812b4",
+      "claim_id": "C89",
+      "claim": "Eight birds were foster-raised by female birds starting on or before post-hatch day 15.",
+      "claim_type": "EXPLICIT",
+      "source": "In order to control exposure to a tutor song, eight birds were foster-raised by female birds, which do not sing, starting on or before post-hatch day 15 (15 dph).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:49:24.648633Z"
+    },
+    {
+      "id": "ce1cc259-e369-4d90-b7b4-fe78c532c4b5",
+      "content_id": "f52743cb-44cf-42bd-b709-1052709812b4",
+      "claim_id": "C90",
+      "claim": "Starting between 35 dph and 50 dph, birds were housed singly in custom-made sound isolation chambers.",
+      "claim_type": "EXPLICIT",
+      "source": "Starting between 35 dph and 50 dph, these birds were housed singly in custom-made sound isolation chambers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:49:24.648633Z"
+    },
+    {
+      "id": "d01a26ab-afc8-42a6-af2a-e5d399a5f249",
+      "content_id": "f52743cb-44cf-42bd-b709-1052709812b4",
+      "claim_id": "C91",
+      "claim": "The calcium indicator GCaMP6f was expressed in HVC by intercranial injection of the viral vector AAV9.CAG.GCaMP6f.WPRE.SV40.",
+      "claim_type": "EXPLICIT",
+      "source": "The calcium indicator GCaMP6f was expressed in HVC by intercranial injection of the viral vector AAV9.CAG.GCaMP6f.WPRE.SV40 (Chen et al., 2013) into HVC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental methods, with citation to the viral vector source.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:49:24.648633Z"
+    },
+    {
+      "id": "73475d88-0126-4970-b62d-d0895c824e45",
+      "content_id": "f52743cb-44cf-42bd-b709-1052709812b4",
+      "claim_id": "C92",
+      "claim": "Most if not all of the neurons included in the datasets are likely to be projection neurons, not HVC interneurons.",
+      "claim_type": "EXPLICIT",
+      "source": "It is not known whether this virus is specific to projection neurons in HVC. However, given the dense firing patterns of HVC interneurons, once convolved with the GCaMP6f calcium kernel, HVC interneuron activity would likely look flat, almost indistinguishable from the background. Therefore, in practice, most if not all of the neurons included in our datasets are likely to be projection neurons, not HVC interneurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the properties of HVC interneurons and the calcium imaging method.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:49:24.648633Z"
+    },
+    {
+      "id": "97b29fc9-0bb7-4104-ad3b-e7eb0b2bf1a1",
+      "content_id": "f52743cb-44cf-42bd-b709-1052709812b4",
+      "claim_id": "C93",
+      "claim": "Neuronal activity traces were extracted from raw fluorescence movies using CNMF_E algorithm.",
+      "claim_type": "EXPLICIT",
+      "source": "Neuronal activity traces were extracted from raw fluorescence movies using a constrained non-negative matrix factorization algorithm, CNMF_E, that is specialized for microendoscope data by including a local background model to remove activity from out-of-focus cells (Zhou et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the data analysis methods, with citation to the algorithm.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:49:24.648633Z"
+    },
+    {
+      "id": "3aa13fb5-9ec1-4a0c-9fd3-93ee2c76882b",
+      "content_id": "f52743cb-44cf-42bd-b709-1052709812b4",
+      "claim_id": "C95",
+      "claim": "SeqNMF measures the extent to which a dataset contains sequential vs. synchronous patterns using a 'sequenciness' score, which ranges between 0 and 1.",
+      "claim_type": "EXPLICIT",
+      "source": "SeqNMF measures the extent to which a dataset contains sequential vs. synchronous patterns using a 'sequenciness' score, which ranges between 0 and 1. A score of zero indicates that all explanatory power of the factorization is due to synchronous activity, while a score of one indicates that none of the explanatory power is due to synchronous activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of a metric from the seqNMF algorithm.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:49:24.648633Z"
+    },
+    {
+      "id": "8e57a09e-8622-4257-85b0-79ffce0da849",
+      "content_id": "f52743cb-44cf-42bd-b709-1052709812b4",
+      "claim_id": "C96",
+      "claim": "Birds isolated from a tutor are able to learn a song if exposed to a tutor before the end of a critical period, typically around age 65 days post-hatch.",
+      "claim_type": "EXPLICIT",
+      "source": "Birds isolated from a tutor are able to learn a song if exposed to a tutor before the end of a critical period, typically around age 65 days post-hatch (dph), but are increasingly unable to learn at later ages (London, 2019; Gobes et al., 2019; Immelmann, 1969).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:49:24.648633Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "acfd540e-5a7c-4e8e-a738-87a18f826cc8",
+      "content_id": "f52743cb-44cf-42bd-b709-1052709812b4",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "HVC neural sequences exist in isolated birds without tutor exposure, but these sequences are less robust than in typically tutored birds. The seqNMF algorithm revealed sequential activity in isolated birds (27\u00b19% variance explained, sequenciness 0.55\u00b10.88) compared to typical adults (46% variance, sequenciness 0.74). While many neurons participate reliably in sequences and correlate with vocal output, isolated bird sequences show weaker song locking (0.58\u00d7 typical strength), cover only 61% of song bouts, and are less robust than typical sequences but stronger than shuffled controls.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C26-C37, C71-C73 collectively demonstrate that neural sequences form without tutoring using calcium imaging and seqNMF analysis (Figures 1B-K). Quantitative metrics with appropriate controls (circular shift, typical bird comparisons) support the conclusion that sequences exist but are atypical. Statistical comparisons are provided for key measures.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:49:24.648633Z"
+    },
+    {
+      "id": "388fcd29-6c61-4b18-a7dc-dd487f3dc848",
+      "content_id": "f52743cb-44cf-42bd-b709-1052709812b4",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Isolated bird HVC sequences exhibit abnormal features including extended persistent activity (7/8 birds) and variable-duration truncations (8/8 birds), contrasting with the brief bursts typical of tutored birds. These abnormalities may explain characteristic isolate song features like abnormally long and variable-duration syllables.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C41 describe qualitative differences in isolated HVC with quantification across birds (Figure 1L). The persistent activity and truncations are documented observations, though the mechanistic link to syllable variability (C41) is speculative but reasonable given the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:49:24.648633Z"
+    },
+    {
+      "id": "77e3f06e-e26b-4fc6-b1f6-bab7564e150f",
+      "content_id": "f52743cb-44cf-42bd-b709-1052709812b4",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "HVC sequences are present in young isolated birds (57-64 dph) prior to the critical period, with no significant correlation between age and sequence features. The large inter-bird variability in sequence properties is attributed to individual differences in developmental timecourses rather than age.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42, C44-C45 are supported by data from 5 birds showing sequences before tutoring (Figure 1\u2014supplement 1A) and regression analysis finding no age correlation (p>0.5, Figure 1\u2014supplement 1B-F). The inference about individual variability (C45) is reasonable given the lack of age effect.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:49:24.648633Z"
+    },
+    {
+      "id": "5c123199-06cb-4406-bd27-d0be6d52ff9b",
+      "content_id": "f52743cb-44cf-42bd-b709-1052709812b4",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Half of late-tutored isolated birds learned new syllables (Imitation Score >0.5) while others remained isolate-like. Learners had fewer sequences (2 vs 3.25, p=0.029), weaker song correlation (0.20 vs 0.55, p=0.0034), and lower autocorrelation (0.125 vs 0.244, p=0.018) than non-learners prior to tutoring. Age of tutoring did not significantly predict learning outcome (p=0.11).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C46-C54 present a clear pattern with appropriate statistical tests (Wilcoxon rank sum) and visual data (Figure 2). The classification criterion (C47) is methodologically sound. Sample sizes are small (n=4 learners, n=4 non-learners) but statistical significance is achieved for key measures.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:49:24.648633Z"
+    },
+    {
+      "id": "aaa7e187-e5ec-4236-aaba-ffc2e8500642",
+      "content_id": "f52743cb-44cf-42bd-b709-1052709812b4",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The presence of robust, song-locked HVC sequences at the time of tutoring may inhibit learning, while more immature sequences that are decoupled from vocal output may better support learning.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C56 are inferences from the quantitative differences between learners and non-learners (C51-C53). The correlation between sequence maturity and learning failure is well-supported by the data, making this a reasonable mechanistic interpretation, though causality is not definitively established.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:49:24.648633Z"
+    },
+    {
+      "id": "472eef26-a30d-43ec-a90e-8a3406201347",
+      "content_id": "f52743cb-44cf-42bd-b709-1052709812b4",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "In late-tutored learners, new syllables emerged within 1-2 days and appeared de-novo rather than by differentiation. Neural sequences associated with these new syllables existed prior to tutoring but were weakly coupled to vocal output. After tutoring, these pre-existing sequences became significantly more song-locked (p=0.0048) and correlated with the new syllables.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C64 describe tracking sequences across tutoring using neuron tracking methods (Figure 3A-D). Statistical tests with appropriate controls (time-shuffled, neuron-shuffled) support sequence persistence (C61-C62). The observation of increased song locking (C64) is statistically significant. The de-novo appearance claim (C58) is observational but reasonable.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:49:24.648633Z"
+    },
+    {
+      "id": "b34dd9f0-06ba-4816-8e6d-d6fbcf0de2a7",
+      "content_id": "f52743cb-44cf-42bd-b709-1052709812b4",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "HVC sequences may exist in a 'latent' state prior to tutoring\u2014present but weakly coupled to vocal output. Learner birds had two pre-tutoring sequences; those initially less correlated with song amplitude showed significant increases after tutoring (p=0.045), while initially stronger sequences did not change (p=1). This suggests new syllables co-opt existing latent sequences.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C70 extend the tracking analysis (Figure 3E-G) with appropriate statistical tests. The 'latent sequence' concept (C65, C70) is an interpretation well-supported by the differential changes in song locking for weak vs. strong pre-tutoring sequences (C68-C69). The observation of two sequences per bird (C67) is consistent across learners.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:49:24.648633Z"
+    },
+    {
+      "id": "09a17301-8b5c-4250-8b7c-a6bfcde779f8",
+      "content_id": "f52743cb-44cf-42bd-b709-1052709812b4",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Sequences can form without prior tutor memory storage. Modeling work shows Hebbian learning with random inputs can generate sequences, though with durations matching variable isolate syllables rather than typical syllables. The findings are consistent with sequences emerging via Hebbian mechanisms and spontaneous HVC activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C74-C77 integrate the empirical findings with computational models. C74 is a logical inference from C4. C75-C76 appropriately cite modeling work (Fiete et al., 2010) and connect predictions to observed isolate song features. C77 is a reasonable synthesis, though speculative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:49:24.648633Z"
+    },
+    {
+      "id": "a1f404eb-2e0b-48d9-a0f5-712203a7c80a",
+      "content_id": "f52743cb-44cf-42bd-b709-1052709812b4",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The discovery of latent sequences suggests separation between building sequential state representations and associating actions with states. This is consistent with reinforcement learning models where HVC sequences remain stable during song changes, and parallels findings in motor cortex (brain-computer interface) and hippocampus (pre-existing place sequences).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C78-C82 place findings in broader theoretical context. C78-C79 are reasonable interpretations of the latent sequence data. C80-C82 appropriately cite supporting work from other systems, strengthening the generalizability of the findings. The parallels drawn are conceptually sound.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:49:24.648633Z"
+    },
+    {
+      "id": "484e8c98-a8b3-4920-a5b9-2f269c8d28b0",
+      "content_id": "f52743cb-44cf-42bd-b709-1052709812b4",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Latent sequences lasted ~200ms, matching typical zebra finch syllable durations, suggesting species-specific timing may be genetically specified (via ion channel expression or feedback timing). These latent sequences appear capable of supporting delayed-tutoring learning, potentially representing a general mechanism for rapid learning from sparse data.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C83-C88 mix observations (C84) with speculation (C85-C86, C88). While C84 is a data observation and C87 is supported by the learning results, the mechanistic hypotheses (C85-C86) are untested speculations. The generalization (C88) is interesting but highly speculative without additional evidence from other systems or species.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:49:24.648633Z"
+    },
+    {
+      "id": "381d9270-5b47-4289-8c2d-c60dcd5c19d6",
+      "content_id": "f52743cb-44cf-42bd-b709-1052709812b4",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Methods: Birds were foster-raised by females from \u226415 dph, isolated 35-50 dph. GCaMP6f was expressed via AAV9 injection. Neurons were extracted using CNMF_E algorithm. Most recorded neurons are likely projection neurons, not interneurons. SeqNMF algorithm measures sequential vs. synchronous patterns via 'sequenciness' score (0-1).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C89-C93, C95 describe experimental and analytical methods with appropriate citations. The inference about neuron types (C92) is reasonable given interneuron firing properties and calcium imaging limitations. Methods are sufficiently detailed and use established, validated approaches.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:49:24.648633Z"
+    },
+    {
+      "id": "985667b9-96df-4346-9b00-40af60bf0725",
+      "content_id": "f52743cb-44cf-42bd-b709-1052709812b4",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Background context: Behaviors emerge from experience and innate predispositions. Brain development involves both sensory experience and genetic processes. In songbirds, learning is influenced by tutor exposure and inherited preferences. Isolate birds develop atypical songs. HVC neurons mature from weakly coupled (subsong) to forming precise sequences in typical development. Critical period for learning typically ends ~65 dph.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3, C8-C25, C96 provide established background knowledge, all supported by appropriate citations to prior literature. These contextual claims accurately represent the field's understanding and properly frame the current study's questions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:49:24.648633Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "f8453aa4-6b38-4471-8866-f024fa42f443",
+      "result_id": "acfd540e-5a7c-4e8e-a738-87a18f826cc8"
+    },
+    {
+      "claim_id": "8f856cbf-5194-4f81-b435-6bbae41d876d",
+      "result_id": "acfd540e-5a7c-4e8e-a738-87a18f826cc8"
+    },
+    {
+      "claim_id": "163649c5-f87b-4c38-ab83-3d03354c1957",
+      "result_id": "acfd540e-5a7c-4e8e-a738-87a18f826cc8"
+    },
+    {
+      "claim_id": "fc1a188e-33cb-46f5-aab1-226dcfb15cfb",
+      "result_id": "acfd540e-5a7c-4e8e-a738-87a18f826cc8"
+    },
+    {
+      "claim_id": "a029096c-5e4f-4946-b587-18abfda625d8",
+      "result_id": "acfd540e-5a7c-4e8e-a738-87a18f826cc8"
+    },
+    {
+      "claim_id": "fa3dea64-fe0d-464d-90bf-41a96fee7a81",
+      "result_id": "acfd540e-5a7c-4e8e-a738-87a18f826cc8"
+    },
+    {
+      "claim_id": "33a2b2b7-bf07-40a0-afd6-16f48778a4bf",
+      "result_id": "acfd540e-5a7c-4e8e-a738-87a18f826cc8"
+    },
+    {
+      "claim_id": "d1fdbba5-1d09-4cf3-9140-7763bc4cac7e",
+      "result_id": "acfd540e-5a7c-4e8e-a738-87a18f826cc8"
+    },
+    {
+      "claim_id": "8ea811b0-d8f0-474b-9edc-14bccb84d09b",
+      "result_id": "acfd540e-5a7c-4e8e-a738-87a18f826cc8"
+    },
+    {
+      "claim_id": "2bc5a10a-1cd9-4650-9807-28d05b388ffa",
+      "result_id": "acfd540e-5a7c-4e8e-a738-87a18f826cc8"
+    },
+    {
+      "claim_id": "8b537121-74b3-44ae-b269-dcaee952593b",
+      "result_id": "acfd540e-5a7c-4e8e-a738-87a18f826cc8"
+    },
+    {
+      "claim_id": "c4e76d85-760f-4a5e-b9a1-47a081f4460a",
+      "result_id": "acfd540e-5a7c-4e8e-a738-87a18f826cc8"
+    },
+    {
+      "claim_id": "e4449f47-c3d0-4ef7-849a-65403ad9fd57",
+      "result_id": "acfd540e-5a7c-4e8e-a738-87a18f826cc8"
+    },
+    {
+      "claim_id": "f3c5f0d8-e35e-4207-80f5-a756f067116e",
+      "result_id": "acfd540e-5a7c-4e8e-a738-87a18f826cc8"
+    },
+    {
+      "claim_id": "4da19518-f6bd-4610-9587-8c997bc85b06",
+      "result_id": "acfd540e-5a7c-4e8e-a738-87a18f826cc8"
+    },
+    {
+      "claim_id": "0db1f9d9-edaf-4bb3-9481-5ec5417b9f74",
+      "result_id": "acfd540e-5a7c-4e8e-a738-87a18f826cc8"
+    },
+    {
+      "claim_id": "dc288be1-6c94-4e73-85a7-f8e5e0f14b61",
+      "result_id": "388fcd29-6c61-4b18-a7dc-dd487f3dc848"
+    },
+    {
+      "claim_id": "d5892765-87f0-4656-85d5-5731ee8b796f",
+      "result_id": "388fcd29-6c61-4b18-a7dc-dd487f3dc848"
+    },
+    {
+      "claim_id": "2759391c-80e1-43f9-bc24-584333a5624d",
+      "result_id": "388fcd29-6c61-4b18-a7dc-dd487f3dc848"
+    },
+    {
+      "claim_id": "c989c715-98b9-4f4d-9b69-c0a6e7be41e9",
+      "result_id": "388fcd29-6c61-4b18-a7dc-dd487f3dc848"
+    },
+    {
+      "claim_id": "05f32f6f-9baa-4e05-916b-5b8a695e5d6f",
+      "result_id": "77e3f06e-e26b-4fc6-b1f6-bab7564e150f"
+    },
+    {
+      "claim_id": "abf5c555-872d-4fc7-8daf-be0c4f0d5ce4",
+      "result_id": "77e3f06e-e26b-4fc6-b1f6-bab7564e150f"
+    },
+    {
+      "claim_id": "588a722e-3ef6-4a3b-a0ad-4401e1acefaf",
+      "result_id": "77e3f06e-e26b-4fc6-b1f6-bab7564e150f"
+    },
+    {
+      "claim_id": "83fd9813-30b5-47d4-818d-88bf180a6a66",
+      "result_id": "5c123199-06cb-4406-bd27-d0be6d52ff9b"
+    },
+    {
+      "claim_id": "74fc7796-be8e-4561-9754-32dea1a0e468",
+      "result_id": "5c123199-06cb-4406-bd27-d0be6d52ff9b"
+    },
+    {
+      "claim_id": "50fcbfb2-e642-4c7b-9e8b-8b0e892a75b6",
+      "result_id": "5c123199-06cb-4406-bd27-d0be6d52ff9b"
+    },
+    {
+      "claim_id": "2604e4a5-a533-453b-9b9a-e9b4836021ab",
+      "result_id": "5c123199-06cb-4406-bd27-d0be6d52ff9b"
+    },
+    {
+      "claim_id": "a4dc460c-0fac-4c3d-9bb3-24cd07e36c58",
+      "result_id": "5c123199-06cb-4406-bd27-d0be6d52ff9b"
+    },
+    {
+      "claim_id": "22af9b19-04fe-4a2a-9f93-195df2a67e5e",
+      "result_id": "5c123199-06cb-4406-bd27-d0be6d52ff9b"
+    },
+    {
+      "claim_id": "e662b504-b20e-4ce9-8efd-18a3c0947c28",
+      "result_id": "5c123199-06cb-4406-bd27-d0be6d52ff9b"
+    },
+    {
+      "claim_id": "1a1738c2-87db-4f85-ba4e-6e946204f938",
+      "result_id": "5c123199-06cb-4406-bd27-d0be6d52ff9b"
+    },
+    {
+      "claim_id": "d6366394-7b80-43bd-8805-1641095af786",
+      "result_id": "5c123199-06cb-4406-bd27-d0be6d52ff9b"
+    },
+    {
+      "claim_id": "0b194fbc-0b01-4526-9369-2d4af9739bb6",
+      "result_id": "5c123199-06cb-4406-bd27-d0be6d52ff9b"
+    },
+    {
+      "claim_id": "6e5c4eae-de33-48ef-bf93-2dd6112e5d40",
+      "result_id": "aaa7e187-e5ec-4236-aaba-ffc2e8500642"
+    },
+    {
+      "claim_id": "e7549549-8ac8-49d4-b1b8-981d17905ea7",
+      "result_id": "aaa7e187-e5ec-4236-aaba-ffc2e8500642"
+    },
+    {
+      "claim_id": "2d1e6209-2c90-48b5-b40a-699e0853b5ba",
+      "result_id": "472eef26-a30d-43ec-a90e-8a3406201347"
+    },
+    {
+      "claim_id": "42ab3a59-52ca-4da0-8fcb-b0f49d796adc",
+      "result_id": "472eef26-a30d-43ec-a90e-8a3406201347"
+    },
+    {
+      "claim_id": "fa73fdbf-ad7a-4f34-b3bd-d6924bd35674",
+      "result_id": "472eef26-a30d-43ec-a90e-8a3406201347"
+    },
+    {
+      "claim_id": "541ee960-7640-4c93-800e-54e827bb967c",
+      "result_id": "472eef26-a30d-43ec-a90e-8a3406201347"
+    },
+    {
+      "claim_id": "d540e95b-02f4-423a-ba08-9c9cb6b4b903",
+      "result_id": "472eef26-a30d-43ec-a90e-8a3406201347"
+    },
+    {
+      "claim_id": "78a31181-28cc-477a-8a3c-c43876965f9a",
+      "result_id": "472eef26-a30d-43ec-a90e-8a3406201347"
+    },
+    {
+      "claim_id": "875fb97c-482a-41de-a563-03fe1f3d2575",
+      "result_id": "472eef26-a30d-43ec-a90e-8a3406201347"
+    },
+    {
+      "claim_id": "610db424-9d94-4b9c-848a-ad1ebdef996e",
+      "result_id": "b34dd9f0-06ba-4816-8e6d-d6fbcf0de2a7"
+    },
+    {
+      "claim_id": "859bd947-3344-4e80-be49-6103fea8adf5",
+      "result_id": "b34dd9f0-06ba-4816-8e6d-d6fbcf0de2a7"
+    },
+    {
+      "claim_id": "96bb7d6b-f685-42f8-aeba-a5de76ad9d59",
+      "result_id": "b34dd9f0-06ba-4816-8e6d-d6fbcf0de2a7"
+    },
+    {
+      "claim_id": "a0d44329-a1b6-4a49-9cb7-d45778debc03",
+      "result_id": "b34dd9f0-06ba-4816-8e6d-d6fbcf0de2a7"
+    },
+    {
+      "claim_id": "5ca42131-0ea3-456c-89f7-20d06fd4a729",
+      "result_id": "b34dd9f0-06ba-4816-8e6d-d6fbcf0de2a7"
+    },
+    {
+      "claim_id": "99b65b33-57d3-4ea0-b520-dc4bc0669fc4",
+      "result_id": "b34dd9f0-06ba-4816-8e6d-d6fbcf0de2a7"
+    },
+    {
+      "claim_id": "e6239432-cab5-46f9-9865-c6f3c4838ac5",
+      "result_id": "09a17301-8b5c-4250-8b7c-a6bfcde779f8"
+    },
+    {
+      "claim_id": "647a7a80-d5b3-4e41-bcfe-8f39cad5d448",
+      "result_id": "09a17301-8b5c-4250-8b7c-a6bfcde779f8"
+    },
+    {
+      "claim_id": "fe4af299-4306-4564-8acb-8296ecf7ef82",
+      "result_id": "09a17301-8b5c-4250-8b7c-a6bfcde779f8"
+    },
+    {
+      "claim_id": "4adc12b8-62ac-4c51-be28-9eebc309a49d",
+      "result_id": "09a17301-8b5c-4250-8b7c-a6bfcde779f8"
+    },
+    {
+      "claim_id": "6953e427-b4ba-4f71-8803-2e6bbd781ae8",
+      "result_id": "a1f404eb-2e0b-48d9-a0f5-712203a7c80a"
+    },
+    {
+      "claim_id": "4c1e405f-cfcb-4e1f-99a8-c0082420376c",
+      "result_id": "a1f404eb-2e0b-48d9-a0f5-712203a7c80a"
+    },
+    {
+      "claim_id": "8aafdcbf-dc93-4629-b8f9-d1ec3b9fa321",
+      "result_id": "a1f404eb-2e0b-48d9-a0f5-712203a7c80a"
+    },
+    {
+      "claim_id": "49cb89d6-dccc-4c95-8112-f79549a930b1",
+      "result_id": "a1f404eb-2e0b-48d9-a0f5-712203a7c80a"
+    },
+    {
+      "claim_id": "2bda100a-5093-46ff-84c2-d0ca10de26fa",
+      "result_id": "a1f404eb-2e0b-48d9-a0f5-712203a7c80a"
+    },
+    {
+      "claim_id": "3ec357a6-4d88-468f-891b-60c6441c0e01",
+      "result_id": "484e8c98-a8b3-4920-a5b9-2f269c8d28b0"
+    },
+    {
+      "claim_id": "ae185f0c-d8f2-4524-b91c-30413f8bb7ca",
+      "result_id": "484e8c98-a8b3-4920-a5b9-2f269c8d28b0"
+    },
+    {
+      "claim_id": "d2ae28fa-b5b1-463e-89cc-c323a4da4edb",
+      "result_id": "484e8c98-a8b3-4920-a5b9-2f269c8d28b0"
+    },
+    {
+      "claim_id": "f8af60c3-72a0-468c-9833-19a9335e0788",
+      "result_id": "484e8c98-a8b3-4920-a5b9-2f269c8d28b0"
+    },
+    {
+      "claim_id": "442cefd0-64b3-4e81-abe6-8873b11d51fa",
+      "result_id": "484e8c98-a8b3-4920-a5b9-2f269c8d28b0"
+    },
+    {
+      "claim_id": "0e911923-2a85-4a19-9bd0-794c85591ca3",
+      "result_id": "484e8c98-a8b3-4920-a5b9-2f269c8d28b0"
+    },
+    {
+      "claim_id": "159c1241-702b-4f5c-a536-913ce9dae161",
+      "result_id": "381d9270-5b47-4289-8c2d-c60dcd5c19d6"
+    },
+    {
+      "claim_id": "ce1cc259-e369-4d90-b7b4-fe78c532c4b5",
+      "result_id": "381d9270-5b47-4289-8c2d-c60dcd5c19d6"
+    },
+    {
+      "claim_id": "d01a26ab-afc8-42a6-af2a-e5d399a5f249",
+      "result_id": "381d9270-5b47-4289-8c2d-c60dcd5c19d6"
+    },
+    {
+      "claim_id": "73475d88-0126-4970-b62d-d0895c824e45",
+      "result_id": "381d9270-5b47-4289-8c2d-c60dcd5c19d6"
+    },
+    {
+      "claim_id": "97b29fc9-0bb7-4104-ad3b-e7eb0b2bf1a1",
+      "result_id": "381d9270-5b47-4289-8c2d-c60dcd5c19d6"
+    },
+    {
+      "claim_id": "3aa13fb5-9ec1-4a0c-9fd3-93ee2c76882b",
+      "result_id": "381d9270-5b47-4289-8c2d-c60dcd5c19d6"
+    },
+    {
+      "claim_id": "b86b01f8-2219-4409-bc95-03191a87cd8a",
+      "result_id": "985667b9-96df-4346-9b00-40af60bf0725"
+    },
+    {
+      "claim_id": "f994ecbb-b4c6-42cf-983d-1191a1fa221d",
+      "result_id": "985667b9-96df-4346-9b00-40af60bf0725"
+    },
+    {
+      "claim_id": "707c2792-73b4-4a26-a0eb-f31d8c5acd59",
+      "result_id": "985667b9-96df-4346-9b00-40af60bf0725"
+    },
+    {
+      "claim_id": "dc7f4cc3-eab4-46bc-8585-4bc5427dbc50",
+      "result_id": "985667b9-96df-4346-9b00-40af60bf0725"
+    },
+    {
+      "claim_id": "13668b87-1803-4299-bf7b-e467e39dbb90",
+      "result_id": "985667b9-96df-4346-9b00-40af60bf0725"
+    },
+    {
+      "claim_id": "ee9f682f-58f3-4132-9f01-c904d6221466",
+      "result_id": "985667b9-96df-4346-9b00-40af60bf0725"
+    },
+    {
+      "claim_id": "aa5eef92-28c5-4082-918b-5fd07e93291d",
+      "result_id": "985667b9-96df-4346-9b00-40af60bf0725"
+    },
+    {
+      "claim_id": "32a082c6-13dd-445f-a511-41fa865c75b2",
+      "result_id": "985667b9-96df-4346-9b00-40af60bf0725"
+    },
+    {
+      "claim_id": "1057df01-05e1-4ae9-9691-d596e6bca38d",
+      "result_id": "985667b9-96df-4346-9b00-40af60bf0725"
+    },
+    {
+      "claim_id": "bde22f3e-ca2e-4af1-8b78-ee1a4c5126c1",
+      "result_id": "985667b9-96df-4346-9b00-40af60bf0725"
+    },
+    {
+      "claim_id": "c47ac4e6-bcfd-41a6-a928-f11b70414585",
+      "result_id": "985667b9-96df-4346-9b00-40af60bf0725"
+    },
+    {
+      "claim_id": "f503a60a-c4a9-4565-a137-897a6367dffd",
+      "result_id": "985667b9-96df-4346-9b00-40af60bf0725"
+    },
+    {
+      "claim_id": "22961fc6-e111-4c6a-ad45-9a21bee2d2fe",
+      "result_id": "985667b9-96df-4346-9b00-40af60bf0725"
+    },
+    {
+      "claim_id": "8fad2c44-9550-4ede-9400-74c208eda519",
+      "result_id": "985667b9-96df-4346-9b00-40af60bf0725"
+    },
+    {
+      "claim_id": "d03dc427-9dfd-439d-8829-8aecf6ede2d6",
+      "result_id": "985667b9-96df-4346-9b00-40af60bf0725"
+    },
+    {
+      "claim_id": "493cf3ba-374e-40cc-8bf0-de0b55075c3d",
+      "result_id": "985667b9-96df-4346-9b00-40af60bf0725"
+    },
+    {
+      "claim_id": "4b0359b9-8e96-4208-a14b-8eb92635b940",
+      "result_id": "985667b9-96df-4346-9b00-40af60bf0725"
+    },
+    {
+      "claim_id": "23ba5d30-9ea0-48d8-91da-af91c388efae",
+      "result_id": "985667b9-96df-4346-9b00-40af60bf0725"
+    },
+    {
+      "claim_id": "3d012634-f77c-4b1e-82e5-55c5acb104de",
+      "result_id": "985667b9-96df-4346-9b00-40af60bf0725"
+    },
+    {
+      "claim_id": "d6ae1780-f8dc-4549-b845-cab64fa9a877",
+      "result_id": "985667b9-96df-4346-9b00-40af60bf0725"
+    },
+    {
+      "claim_id": "5ff2e7fd-83d7-47cc-bdfd-98b6f15a5fa9",
+      "result_id": "985667b9-96df-4346-9b00-40af60bf0725"
+    },
+    {
+      "claim_id": "8e57a09e-8622-4257-85b0-79ffce0da849",
+      "result_id": "985667b9-96df-4346-9b00-40af60bf0725"
+    }
+  ],
+  "comparisons": []
+}

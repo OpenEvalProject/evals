@@ -1,0 +1,286 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "The authors screened 639 randomly selected cardiovascular research articles from 2019 across three top journals (Circulation, European Heart Journal, JACC), of which 393 were empirical research articles. The study was pre-registered and used a two-round screening process with dual independent review.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The methodology is clearly described with appropriate sampling (C3, C19, C20), dual screening (C22), and pre-registration (C96). The two-round screening approach (C23-C26) is justified and documented. Sample sizes are reported consistently across claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C69",
+      "C70"
+    ],
+    "result": "Resource availability in cardiovascular publications is low: only 14% shared materials, 31.8% shared data, and 10.9% shared analysis scripts. When resources were stated as available, they were most commonly available only upon request, with very few readily downloadable (1 material, 13 data, 1 analysis script).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These quantitative findings (C27-C33) are directly supported by the screening data with clear denominators (n=393). The pattern of availability upon request versus direct access (C30-C32) is consistent and well-documented in Figure 2B. The comparative finding (C69-C70) follows logically from the reported percentages.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C61",
+      "C62"
+    ],
+    "result": "The vast majority of cardiovascular research publications lack sufficient resources for full reproducibility or replicability: only 7 of 393 (2%) were fully reproducible and only 5 were fully replicable. While approximately half were partially reproducible or replicable, nearly half provided insufficient resources for even partial reproduction or replication.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The quantitative findings (C34-C37, C61-C62) are consistent and well-supported by the data. The definitions of reproducibility and replicability are clearly stated in the methods. The conclusion (C38-C39) appropriately distinguishes between the simple majority being partially repeatable versus the vast majority lacking full repeatability, which is supported by Figure 3.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Accessibility scores across all cardiovascular publications were consistently low, with the majority (144/393) scoring 0.20-0.29, only one article scoring \u22650.6, and 18 articles scoring below 0.1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The distribution of accessibility scores (C40-C43) is clearly documented and supported by Figure 4A. The finding that nearly all articles scored below 0.6 demonstrates consistently poor accessibility across the field.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C6",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Accessibility scores varied significantly across study types (ANOVA p=5.500E-5), with clinical trials having the highest average score (0.39) and clinical case studies the lowest (0.08).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The statistical test (C46) is appropriate for comparing means across multiple groups, with adequate sample sizes and a highly significant p-value. The reported scores (C44-C45) are consistent with Figure 4C and the overall finding (C6) is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C7",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Accessibility scores varied significantly across journals (ANOVA p=1.230E-2), with Circulation having the highest average score (0.34), followed by JACC (0.24) and European Heart Journal (0.19). There was no significant interaction between study type and journal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The statistical analysis (C53) is appropriate with adequate sample sizes across journals (C47-C49). The reported scores (C50-C52) are consistent with Figure 4B. The lack of interaction (C54) is appropriately tested and reported. However, the p-value of 0.0123 is only marginally significant and the effect sizes are modest.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C8",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Different study types showed significant differences in which resources they shared (\u03c7\u00b2=55.2, p=6.17e-12). Laboratory animal studies shared materials, data, and analysis code more frequently than clinical studies, while clinical trials shared methods (pre-registrations) more frequently than any other study type.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The overall chi-square test (C55) and individual resource comparisons (C56) are appropriate with Bonferroni correction applied. The specific findings (C57-C60) are supported by Table 2, Table 3, and Figure 5. The pattern makes biological sense given regulatory requirements for clinical trials.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Pre-registration and protocol availability was limited: 286 of 393 empirical articles had no pre-registration statement and 383 had no accessible protocol. Among those with pre-registrations (106/107 accessible), nearly all included methods, but only about half included hypotheses and less than half included analysis plans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The quantitative findings (C83-C91) are clearly reported with appropriate denominators and supported by Figure 2A. The high accessibility rate among stated pre-registrations (C85) versus low overall pre-registration rates (C83) is an important distinction that is well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Clinical trials showed the most consistent resource sharing for methods (pre-registrations), which are mandated by the FDA. This suggests that regulatory requirements effectively change practices, though variable switching remains common even with pre-registration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The observation about clinical trials (C74) is supported by the data. The FDA mandate (C75) is accurate general knowledge. The inference about effectiveness of mandates (C76) is reasonable given the data pattern. The caveat about variable switching (C77-C78) appropriately cites prior work and tempers the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C66",
+      "C82"
+    ],
+    "result": "Over 90% of articles (605/639) were publicly accessible, with only 34 articles (5%) not publicly accessible.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The finding is clearly quantified (C66, C82) and supported by Figure 1F. The percentages are consistent (95% accessible = 5% not accessible). This represents a positive finding regarding publication accessibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "93% of articles included a COI statement, with 57% stating they had a COI, but notably 7% had no COI statement at all.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The quantitative findings (C79-C81) are clearly reported and supported by Figure 1E. The data reveal both high rates of COI statements and concerning gaps in disclosure practices.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C92",
+      "C93"
+    ],
+    "result": "Approximately half (56%) of papers had easily identifiable study types, and 43% (276/639) lacked a funding statement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Both findings (C92-C93) are clearly quantified and supported by Figures 1B and 1D respectively. These represent important metadata about reporting practices.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C67",
+      "C68"
+    ],
+    "result": "Over half of initially screened articles were non-empirical research (reviews, editorials, commentaries), and replication studies were virtually absent (4/393 empirical publications).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Both findings (C67-C68) are clearly quantified and reveal important characteristics of the cardiovascular literature landscape. The near-absence of replication studies is particularly notable for the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C5",
+      "C9",
+      "C63"
+    ],
+    "result": "Fewer than 2% of cardiovascular research publications provide sufficient resources to fully reproduce their studies, and current reports frequently lack sufficient materials, protocols, data, or analysis information for reproduction, though accessibility scores were consistently low across study types and journals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These summary conclusions (C5, C9, C63) are well-supported by the detailed quantitative findings throughout the paper. The <2% figure (C5) is consistent with the 7/393 fully reproducible finding (C36). The overall conclusion appropriately synthesizes the findings while acknowledging variation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Prior work has documented low reproducibility and poor accessibility across scientific fields, but no study had examined cardiovascular science publications specifically. Materials, data, code, and methods are important for reproducibility, though legitimate barriers to sharing exist.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The background claims (C1, C10-C17) are appropriately supported by citations to prior work. The novelty claim (C2, C18) is reasonable given the literature review, though such claims are inherently difficult to verify completely. The acknowledgment of legitimate barriers (C14) appropriately nuances the discussion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C71",
+      "C73"
+    ],
+    "result": "Journals have implemented various practices to incentivize resource sharing (badges, checklists), patients are generally willing to share data, but sharing 'upon request' has been shown to have variable success.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These contextual claims (C64-C65, C71, C73) are appropriately supported by citations to prior work and provide important context for interpreting the findings and recommendations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C98"
+    ],
+    "result": "Higher standards of accessibility mandated by journals or funding bodies will help increase the reproducibility of cardiovascular research.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This recommendation (C98) is a forward-looking speculation based on the study findings. While the data showing higher compliance with mandated pre-registration (C74-C76) provides some support, this claim about future effectiveness cannot be directly evaluated from the current study. It represents a reasonable inference but lacks direct empirical support.",
+    "result_type": "MINOR"
+  }
+]

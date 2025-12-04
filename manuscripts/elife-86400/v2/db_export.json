@@ -1,0 +1,907 @@
+{
+  "submission": {
+    "id": "ddb72ef5-54fa-42de-9121-90838079a433",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-04T04:02:58.368448Z",
+    "updated_at": "2025-12-04T04:02:58.368448Z"
+  },
+  "content": [
+    {
+      "id": "e94a3f3f-9eff-4d18-8c17-ef5f82d6920a",
+      "submission_id": "ddb72ef5-54fa-42de-9121-90838079a433",
+      "content_type": "manuscript",
+      "content_text": "# Hydrodynamics and multiscale order in confluent epithelia\n\n## Authors\n\n- Josep-Maria Armengol-Collado<sup>1</sup> ([ORCID: 0000-0003-0740-3040](https://orcid.org/0000-0003-0740-3040))\n- Livio Nicola Carenza<sup>1</sup> ([ORCID: 0000-0001-5996-331X](https://orcid.org/0000-0001-5996-331X))\n- Luca Giomi<sup>1</sup> ([ORCID: 0000-0001-7740-5960](https://orcid.org/0000-0001-7740-5960)) \u2020\n\n### Affiliations\n\n1. Instituut-Lorentz, Leiden University Leiden Netherlands ([ROR:027bh9e22](https://ror.org/027bh9e22))\n\n\u2020 Corresponding author\n\n## Abstract\n\nWe formulate a hydrodynamic theory of confluent epithelia: i.e. monolayers of epithelial cells adhering to each other without gaps. Taking advantage of recent progresses toward establishing a general hydrodynamic theory of p-atic liquid crystals, we demonstrate that collectively migrating epithelia feature both nematic (i.e. p = 2) and hexatic (i.e. p = 6) orders, with the former being dominant at large and the latter at small length scales. Such a remarkable multiscale liquid crystal order leaves a distinct signature in the system\u2019s structure factor, which exhibits two different power-law scaling regimes, reflecting both the hexagonal geometry of small cells clusters and the uniaxial structure of the global cellular flow. We support these analytical predictions with two different cell-resolved models of epithelia \u2013 i.e. the self-propelled Voronoi model and the multiphase field model \u2013 and highlight how momentum dissipation and noise influence the range of fluctuations at small length scales, thereby affecting the degree of cooperativity between cells. Our construction provides a theoretical framework to conceptualize the recent observation of multiscale order in layers of Madin\u2013Darby canine kidney cells and pave the way for further theoretical developments.\n\n## Introduction\n\nCollective cell migration $\u2212$\u2013 i.e. the ability of multicellular systems to cooperatively flow, even in the absence of a central control mechanism $\u2212$\u2013 has surged, in the past decade, as one of the central questions in cell biology and tissue biophysics (Friedl and Gilmour, 2009). Whether spreading on a synthetic substrate (Serra-Picamal et al., 2012) or invading the extracellular matrix (Haeger et al., 2020), multicellular systems can move coherently within their micro-environment and coordinate the dynamics of their actin cytoskeleton, while retaining cell\u2013cell contacts. This ability lies at the heart of a myriad of processes that are instrumental for life, such as embryonic morphogenesis and wound healing, but also of life-threatening conditions, such as metastatic cancer.\n\nUnderstanding the physical origin of this behavior inevitably demands reliable theoretical models, aimed at providing a conceptual framework for dissecting and deciphering the wealth of biophysical data stemming from in vitro experiments and in vivo observations. Following the pioneering works by Honda, 1978; Nagai and Honda, 2001; Farhadifar et al., 2007; Bi et al., 2015; Bi et al., 2016, and others (Boromand et al., 2018; Mueller et al., 2019; Loewe et al., 2020; Monfared et al., 2021), cell-resolved models have played so far the leading role in this endeavour. Taking inspiration from the physics of foams (Graner et al., 2008; Marmottant et al., 2008), these models portray a confluent tissue as a collection of adjacent or overlapping polygonal cells (Figure 1a, b), whose dynamics is assumed to be governed by a set of overdamped Langevin equations, expressing the interplay between cells\u2019 autonomous motion and remodeling events, which change the local topology of the cellular networks.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/86400/elife-86400-fig1-v2.jpg)\n\n**Figure 1.:** (a) Example of multiscale hexanematic order in an in vitro layer of Madin\u2013Darby canine kidney (MDCK) cells (b) and its computer-constructed segmentation. Both panels are adapted from Figure 3 of Armengol-Collado et al., 2023. The six-legged stars in the shaded region denote the sixfold orientation of the cells obtained using the approach summarized in Methods. The colored stripes mark the configuration of the nematic director at the length scale of the light-blue disk. (c) Schematic representation of the sixfold symmetric force complexion exerted by cells. The red arrows indicate the structure of the contractile forces acting within the cellular junctions.\n\nDespite their conceptual simplicity, cell-resolved models agree remarkably well with experimental data on confluent monolayers (Park et al., 2015; Atia et al., 2018). In particular they account for a solid-to-liquid transition controlled by the cells velocity and their compliance to deformations (Bi et al., 2015; Bi et al., 2016; Loewe et al., 2020). Furthermore, as demonstrated by Pica Ciamarra and coworkers, the solid and isotropic liquid states of these model-epithelia are separated by an intermediate hexatic phase, in which the system exhibits the typical sixfold rotational symmetry of two-dimensional crystals and yet is able to flow (Li and Ciamarra, 2018; Pasupalak et al., 2020). Shortly after discovery, the same property has been recovered within the framework of the cellular Potts model, thereby strengthening the idea that hexatic order may in fact serve as a guiding principle to unravel the collective dynamics of confluent epithelia (Durand and Heu, 2019). Furthermore, recent in vitro studies of Madin\u2013Darby canine kidney (MDCK) cell layers demonstrated that epithelial layers can in fact feature both nematic and hexatic orders, with the former being dominant at large and the latter at short length scales (see Figure 1a, b and Armengol-Collado et al., 2023; Eckert et al., 2023). This remarkable example of physical organization in biological matter, referred to as multiscale hexanematic order in Armengol-Collado et al., 2023, is believed to complement the complex network or regulatory pathways available to individual cells to achieve multicellular organization and select specific scale-dependent collective migration strategies.\n\nMotivated by these recent discoveries, in this article we propose a continuum theory of confluent epithelia rooted in the hydrodynamics of liquid crystals with generic p-atic rotational symmetry (hereafter p-atic liquid crystals). Previous theories of epithelial hydrodynamics can be schematically grouped in two categories: (1) models based on (isotropic/polar/nematic) active gels (Ranft et al., 2010; Popovi\u0107 et al., 2017; P\u00e9rez-Gonz\u00e1lez et al., 2019); (2) models built around the so-called shape tensor (Ishihara et al., 2017; Czajkowski et al., 2018; Hernandez and Marchetti, 2021; Grossman and Joanny, 2022), i.e. a rank-2 tensor, similar to the inertia tensor in kinematics, that embodies the geometrical structure of the polygonal cells. Although both classes of models hold great heuristic value and represent a solid foundation for any future development, they suffer from the same limitation: being based on a tensorial order parameter whose rank is two or less, they can account at most for twofold rotational symmetry (i.e. nematic order), while leaving the small-scale hexatic order unresolved. To overcome this limitation, here we exploit recent advances toward extending the classic hydrodynamic theory of hexatic liquid crystals (Zippelius, 1980; Zippelius et al., 1980) to account for arbitrary p-fold rotational symmetry order (Giomi et al., 2022a; Giomi et al., 2022b), with $p=2$ and $p=6$ being the most relevant cases (but possibly not the only) in the context of epithelial dynamics. We demonstrate that multiscale order is inherent to active liquid crystals with coupled order parameters, because of the indissoluble connection between shape and forces characterizing this class of non-equilibrium systems. Using fluctuating hydrodynamics, we explicitly compute the structure factor of epithelial layers and unveil a fascinating interplay between the nature of momentum dissipation (i.e. viscosity or friction) and noise at short length scales, where hexatic order is dominant. Such a mechanism profoundly affects the range of density fluctuations and could be harnessed to control the degree of collectiveness of cellular motion. Finally, by testing predictions against two different microscopic models of epithelia we demonstrate the robustness of multiscale hexanematic order across the rich landscape of models of epithelia.\n\n## Results and discussion\n\n### The model\n\nTwo-dimensional p-atic liquid crystals are traditionally described in terms of the orientation field $\u03c8_{p}=e^{ip\u03d1}$, with $\u03d1$ the local orientation of the p-fold mesogens. A more general approach, proposed in Giomi et al., 2022a; Giomi et al., 2022b and especially suited for hydrodynamics, revolves instead around the rank-p tensor order parameter, $Q_{p}=Q_{i_{1}i_{2}\u22efi_{p}}e_{i_{1}}\u2297e_{i_{2}}\u2297\u22ef\u2297e_{i_{p}}$ with $i_{n}={x,y}$ and $n=1,2\u2026p$, constructed upon averaging the pth tensorial power of the local orientation $\u03bd=cos\u2061\u03d1e_{x}+sin\u2061\u03d1e_{y}$. That is\n\n$$\nQ_{p}=\\sqrt{2^{p\u22122}}[[\u27e8\u03bd^{\u2297p}\u27e9]]=\\sqrt{2^{p\u22122}}|\u03a8_{p}|[[n^{\u2297p}]],\n$$\n\nwhere $\u27e8\u22ef\u27e9$ denotes the ensemble average and the operator $\u2016...\u2016$ has the effect of rendering an arbitrary tensor traceless and symmetric (Hess, 2015). The vector $n=cos\u2061\\thetae_{x}+sin\u2061\\thetae_{y}$ is the analog of the director field in standard lexicon of nematic liquid crystals and marks the average cellular direction, which in turn is invariant under rotations of $2\\pi/p$. The fields $|\u03a8_{p}|$ and $\\theta$ represent, respectively, the magnitude and phase of the complex p-atic order parameter $\u03a8_{p}=\u27e8\u03c8_{p}\u27e9$, while the normalization factor is chosen so that $|Q_{p}|^{2}=|\u03a8_{p}|^{2}/2$ for all $p$ values. For $p=2$, Equation (1) readily gives the standard nematic order parameter tensor: i.e. $Q_{2}=|\u03a8_{2}|(n\u2297n\u22121/2)$, with 1 the identity tensor. In practice, if a cell\u2019s planar projection consists of a regular p-sided polygon, the microscopic orientation $\u03d1$ equates that of any of the vertices of the polygon. In the more realistic case of an irregular polygon, on the other hand, $\u03d1$ is given by the phase of the complex function $\\gamma_{p}$, arising form the p-fold generalization of the classic shape tensor (Aubouy et al., 2003). This function was introduced in Armengol-Collado et al., 2023 and is reviewed in Methods for sake of completeness.\n\nThe order parameter tensor $Q_{p}$, the mass density $\u03c1$, and the momentum density $\u03c1v$, with $v$ the local velocity field, comprise the set of hydrodynamic variables describing the dynamics of a generic p-atic fluid, which in turn is governed by the following set of partial differential equations (Giomi et al., 2022a; Giomi et al., 2022b):\n\n$$\n\\frac{D\u03c1}{Dt}+\u03c1\u2207\u22c5v=(k_{d}\u2212k_{a})\u03c1,\n$$\n\n\n\n$$\n\u03c1\\frac{Dv}{Dt}=\u2207\u22c5\\sigma+f,\n$$\n\n\n\n$$\n\\frac{DQ_{p}}{Dt}=\u0393_{p}H_{p}+p[[Q_{p}\u22c5\\omega]]+\\lambda\u00af_{p}tr(u)Q_{p}+\\lambda_{p}[[\u2207^{\u2297(p\u22122)}u]]+\u03bd_{p}[[\u2207^{\u2297(pmod2)}u^{\u2297\u230ap/2\u230b}]]\n$$\n\nwhere $D/Dt=\u2202_{t}+v\u22c5\u2207$. Equation (2a) and Equation 2b are the mass and momentum conservation equations, with $k_{d}$ and $k_{a}$ rates of cell division and apoptosis, $\\sigma$ the stress tensor and $f$ an arbitrary external force per unit area. In Equation (2c), $\u0393_{p}^{\u22121}$ is a rotational viscosity and $H_{p}=\u2212\\deltaF/\\deltaQ_{p}$ is the molecular tensor describing the relaxation of the p-atic phase toward the minimum of the free energy $F$ (see Methods). The rank-2 tensors $\\omega=[\u2207v\u2212(\u2207v)^{\u22ba}]/2$ and $u=[\u2207v+(\u2207v)^{\u22ba}]/2$, with $\u22ba$ indicating transposition, are the vorticity and strain rate tensors, respectively, whereas the dot product in the first line of the equation implies a contraction of one index of $Q_{p}$ with one of $\\omega$: i.e. $(Q_{p}\u22c5\\omega)_{i_{1}\u2062i_{2}\u2062\u22ef\u2062i_{p}}=Q_{i_{i}\u2062i_{2}\u2062\u22ef\u2062j}\u2062\\omega_{j\u2062i_{p}}$. On the second line $(\u2207^{\u2297n})_{i_{1}i_{2}\u22efi_{n}}=\u2202_{i_{1}}\u2202_{i_{2}}\u22ef\u2202_{i_{n}}$, while $\u230a\u2026\u230b$ denotes the floor function and $pmod2=p\u22122\u230ap/2\u230b$ is zero for even $p$ values and one for odd $p$ values. Finally, $\\lambda\u00af_{p}$, $\\lambda_{p}$, and $\u03bd_{p}$ are material parameters expressing the strength of the coupling between p-atic order and flow.\n\nNow, in order for Equation 2a to account for the dynamics of epithelial cell layers, we must specify the structure of the external force $f$ in Equation 2b and the stress tensor $\\sigma$. As cells collectively crawl on a substrate, at a speed of order 0.1\u20131 \u00b5m/min (Brugu\u00e9s et al., 2014; Angelini et al., 2011), the former can be model as a Stokesian drag: $f=\u2212\u03c2v$, with $\u03c2$ a drag coefficient. A more realistic treatment of the interplay between the cells and the substrate would account for the traction forces exerted by the cells\u2019 cryptic lamellipodium as well as for the compliance of the substrate (Trepat et al., 2009) and will be considered in the future. The stress tensor, on the other hand, is routinely decomposed into a passive and an active component: i.e. $\\sigma=\\sigma^{(p)}+\\sigma^{(a)}$. The passive stress tensor is in turn expressed as $\\sigma^{(p)}=\u2212P1+\\sigma^{(e)}+\\sigma^{(r)}+\\sigma^{(v)}$, where $P$ is the pressure, $\\sigma^{(e)}$ is the elastic stress, arising in response of a static deformation of a fluid patch, and $\\sigma^{(r)}$ and $\\sigma^{(v)}$ are, respectively, the reactive (i.e. energy preserving) and viscous (i.e. energy dissipating) stresses originating from the reversible and irreversible couplings between p-atic order and flow. The generic expression of $\\sigma^{(p)}$ was derived in Giomi et al., 2022b and is reported in Methods.\n\nThe active stress $\\sigma^{(a)}$, on the other hand, can be constructed phenomenologically for arbitrary $p$ values in the form\n\n$$\n\\sigma^{(a)}=\\sump(\\alpha_{p}\u2207^{\u2297(p\u22122)}\u2299Q_{p}+\\beta_{p}[[\u2207^{\u22972}|Q_{p}|^{2}]]),\n$$\n\nwhere the symbol $\u2299$ denotes a contraction of all matching indices of the two operands and yields a tensor whose rank equates the number of unmatched indices: i.e. letting $A_{p}$ and $B_{q}$ be two generic tensors of rank $p<q$, then $(A_{p}\u2299B_{q})_{i_{1}i_{2}\u22efi_{q\u2212p}}=A_{j_{1}j_{2}\u22efj_{p}}B_{j_{1}j_{2}\u22efj_{p}i_{1}i_{2}\u22efi_{q\u2212p}}$. The sum over $p$, finally, reflects the possibility of having not only one, but multiple types of p-atic order coexisting within the same system, as experiments on in vitro layers of MDCK cells have recently suggested (Armengol-Collado et al., 2023; Eckert et al., 2023).\n\nBefore exploring the consequences of the latter assumption, some comment about the physical interpretation of the terms featured in Equation 3 is in order. The first term on the right-hand side of Equation 3 is the stress resulting from the contractile or extensile forces exerted at the length scale of individual cells. To illustrate this concept one can assume each cell to exert a p-fold symmetric force complexion: i.e. $F_{c}=\\sumk=1pF_{k}\\delta(r\u2212r_{c}\u2212a\u03bd_{k})$ with $F_{k}$ the force exerted by a cell at each vertex and originating from the imbalance of the tensions $T_{kl}$, driven by the active contraction of the cellular junctions, converging at the kth vertex: i.e. $F_{k}=\\sumlT_{kl}$ (see Figure 1c). The quantities $r_{c}$ and $a$ are the cell\u2019s centroid and circumradius, respectively, while $\u03bd_{k}=cos\u2061(\u03d1+2\\pik/p)e_{x}+sin\u2061(\u03d1+2\\pik/p)e_{y}$. We stress that, while the individual tensions acting along the junctions are exclusively contractile, the resulting vertex forces can be either contractile (i.e. $F_{k}\u22c5\u03bd_{k}<0$) or extensile ($F_{k}\u22c5\u03bd_{k}>0$), depending on the overall tension distribution and the geometry of the cellular network. Next, assuming $F_{k}=f\u03bd_{k}$ and expanding the delta function about $a=0$ yields $F_{c}=\\summ=0\u221ef_{m}$, where\n\n$$\nf_{m}=\u2207^{\u2297m}\u2299[\\frac{(\u2212a)^{m}f}{m!}(\\sumk=1p\u03bd_{k}^{\u2297(m+1)})\\delta(r\u2212r_{c})].\n$$\n\nBecause of the p-fold symmetry of the force complexion $f_{m}=0$ for all even $m$ values, unless $m=p\u22121$, whereas odd $m$ values yields, up to symmetrization, $\\sumk=1p\u03bd_{k}^{\u2297(m+1)}\u223c1^{\u2297(m+1)/2}$. Thus, after some algebraic manipulation, one finds $F_{c}\u2248\u2212apf/2\u2207[(1+a^{2}/8\u2207^{2}+\u22ef)\\delta(r\u2212r_{c})]+f_{p\u22121}$. Finally, taking $\u27e8\\sumcF_{c}\u27e9=\u2212P^{(a)}1+\\sigma^{(a)}$ gives the following expression for contributions to the pressure and the deviatoric stress resulting from the active expansion and contraction of the cells. That is\n\n$$\nP^{(a)}=\\frac{apf}{2}(n+\\frac{a^{2}}{8}\u2207^{2}n+\u22ef),\n$$\n\n\n\n$$\n\\sigma^{(a)}=\\frac{(-a)^{p-1}\u2062p\u2062n\u2062f}{\\sqrt{2^{p-2}}\u2062(p-1)!}\u2062\\nabla^{\u2297(p-2)}\u2299Q_{p},\n$$\n\nwhere $n=\u27e8\\sumc\\delta(r\u2212r_{c})\u27e9$ is the cell number density. From Equation 5b, one finds the following expression for the phenomenological parameter $\\alpha_{p}$ in Equation 3: i.e. $\\alpha_{p}=(\u2212a)^{p\u22121}pnf/[\\sqrt{2^{p\u22122}}(p\u22121)!]$. Notice that both constants $a$ and $f$ involved in Equation 5a are, in general, order dependent. We will come back on this aspect in Conclusion.\n\nThe second term in Equation 3, in contrast, expresses the active stress resulting from the spatial variations of the p-atic order parameter and, although similar to other contributions to the passive stress $\\sigma^{(p)}$, cannot be derived from equilibrium considerations. Other terms constructed by contracting $Q_{p}$ with $\u2207^{\u22972}$ can be expressed as linear combinations of this and $\\sigma^{(p)}$, thus lead to a mere renormalization of the material parameters. It must be noted that the stress tensor enters in Equation 2b only via its divergence. Thus, possible second-order active terms such as $Q_{k_{1}k_{2}\u2026k_{p}}\u2202_{i}\u2202_{j}Q_{k_{1}k_{2}\u22efk_{p}}$, $Q_{ijk_{3}\u22efk_{p}}\u2202_{l_{1}}\u2202_{l_{2}}Q_{l_{1}l_{2}k_{3}\u22efk_{p}}$, etc., are mechanically equivalent to the terms $\u2202_{i}Q_{k_{1}k_{2}\u22efk_{p}}\u2202_{j}Q_{k_{1}k_{2}\u22efk_{p}}$ and $Q_{k_{1}k_{2}\u22efi}H_{k_{1}k_{2}\u22efj}\u2212H_{k_{1}k_{2}\u22efi}Q_{k_{1}k_{2}\u22efj}$ arising from the passive stresses, as both sets of terms lead to the same body forces.\n\nWe observe that Equation 3 already entails a multiscale hydrodynamic behavior even when a single $p$ value is considered. Such a crossover is expected at length scales larger than $\u2113=(\\alpha_{p}/\\beta_{p})^{1/(p\u22124)}$, where the second term of the right-hand side of Equation 3 overweights the first term, reflecting the p-fold symmetry of the local active forces. In the presence of multiple types of p-atic order, the p-dependent structure of the active stress renders the multiscale nature of the system enormously more dramatic. To illustrate this crucial point, here we postulate the system to behave as a hexanematic liquid crystal. Formally, such a scenario can be accounted by simultaneously solving two variants of Equation 2c, for $Q_{2}$ and $Q_{6}$. In turn, the interplay between nematic and hexatic order results from a combination of dynamical and energetic effects. The former arise from active flow, which affects the local configuration of both tensor order parameters via the last four terms in Equation 2c. The latter, instead, can be embedded into the free energy $F=\\intdA(f_{2}+f_{6}+f_{2,6})$, where\n\n$$\nf_{p}=\\frac{1}{2}\u2062L_{p}\u2062|\\nabla\u2061Q_{p}|^{2}+\\frac{1}{2}\u2062A_{p}\u2062|Q_{p}|^{2}+\\frac{1}{4}\u2062B_{p}\u2062|Q_{p}|^{4},\n$$\n\n\n\n$$\nf_{2,6}=\u03ba_{2,6}\u2062|Q_{2}|^{2}\u2062|Q_{6}|^{2}+\u03c7_{2,6}\u2062Q_{2}^{\u22973}\u2299Q_{6}.\n$$\n\nHere, $A_{p}$ and $B_{p}$ are constants setting the magnitude of the order parameter at the length scale of the short distance cut-off, here assumed to be of the order of the cell size, and $\u03ba_{2,6}$ determines the extent to which the magnitude of the hexatic order parameter is influenced by that of the nematic order parameter and vice versa. The constant $\u03c7_{2,6}$, on the other hand, is analogous to an inherent susceptibility, expressing the propensity of the nematic and hexatic directors toward mutual alignment. The free energy contribution $f_{2,6}$ can further be augmented with several additional terms of higher differential order: e.g. $(Q_{2}\u2299\\nabla\u2061Q_{2})\u22c5(Q_{6}\u2299\\nabla\u2061Q_{6})$, $|\\nabla\u2061(Q_{2}^{\u22973}\u2299Q_{6})|^{2}$, $\\nabla^{2}\u2061(Q_{2}^{\u22973}\u2299Q_{6})$, etc. For simplicity, here we ignore these and higher-order couplings and focus on the zeroth order terms included in Equation 6b.\n\nCrucially, Equation 3, Equation 6a entail two length scales, reflecting the distance at which the passive torques originating from the entropic elasticity of the nematic and hexatic phases counterbalance those arising from the active stresses:\n\n$$\n\u2113_{2}=\\sqrt{\\frac{L_{2}}{|\\alpha_{2}|}},\u2113_{6}=\\sqrt{\\frac{|\\alpha_{6}|}{L_{6}}}.\n$$\n\nThe former is the well-known active nematic length scale, dictating both the hydrodynamic stability (Voituriez et al., 2005) and the large-scale structure of spatiotemporal chaos in active nematics (Giomi, 2015) and whose signature in multicellular systems has been identified in both eukaryotes (Blanch-Mercader et al., 2018) and prokaryotes (You et al., 2018). The latter, on the other hand, sets the typical size of hexatic domains at the small length scale. Remarkably, $\u2113_{2}$ and $\u2113_{6}$ inversely depend on the magnitude of cellular forces (see Equation 5a). Thus, increasing activity has the effect of collapsing the multiscale structure of the system toward a single length scale, where $\u2113_{2}\u2248\u2113_{6}$. Two additional length scales, of purely passive nature, originate from the competition between rotational diffusion and the ordering dynamics driven by either liquid crystalline structure on the other one. These are given by $\u2113_{\u03c7,2}=\\sqrt{L_{2}/\u03c7_{2,6}}$ and $\u2113_{\u03c7,6}=\\sqrt{L_{6}/\u03c7_{2,6}}$. Their role will be discussed in the following section, in the framework of fluctuating hydrodynamics.\n\nFinally, in the passive limit, when $\\alpha_{2}=0$ and $\\alpha_{6}=0$, Equations 2 and 6, reduce to those of a two-dimensional liquid crystal with coupled nematic and hexatic order parameter. The latter can be found, e.g., in free-standing liquid hexatic films (Dierker and Pindak, 1987; Sprunt and Litster, 1987), where molecules are either orthogonal to the mid-surface of the film or tilted by a fixed angle. In the latter case, the projection of the average molecular direction on the tangent plane of the mid-surface gives rise to in-plane nematic order, which is coupled to the sixfold bond-orientational order associated with the underlying hexatic phase (see e.g. Bruinsma and Aeppli, 1982; Selinger and Nelson, 1989; Selinger, 1991 for a theoretical account and Drouin-Touchette et al., 2022 for recent developments). As we will detail in the following, activity profoundly alters this scenario by acting as a mechanical bandpass filter, which renders hexatic order dominant at length scales $\u2113\u226a\u2113_{6}$ and nematic order at length scales $\u2113\u226b\u2113_{2}$. We stress that by dominant, here we intend able to drive morphological features, dynamical behaviors, and fluctuations reflecting the underlying orientational order. At intermediate length scales, i.e. $\u2113_{6}\u226a\u2113\u226a\u2113_{2}$, there is no dominant order and the system\u2019s collective behavior is determined by the complex interplay of competing active and passive effects. To make progress, here we focus on the most dramatic hexatic- and nematic-dominated behaviors and treat intermediate length scales as simply as possible.\n\n### Multiscale order in epithelia\n\nTo elucidate the multiscale organization of the system, we next compute the structure factor $S(|q|)$, using the classic framework of fluctuating hydrodynamics (see e.g. Ramaswamy et al., 2003). To this end, we assume both the nematic and the hexatic scalar order parameters to be uniform throughout the system and set $k_{d}=k_{a}$ and $\\lambda_{p}=0$ for simplicity. We stress that the validity of this approximation is strictly related with the present comparison between the hydrodynamic theory presented in this article and cell-resolved models. An assessment of the relevance of this and the other material parameters featured in Equation 2a can only be achieved via experimental scrutiny and is likely to depend on the specific cell type and environmental conditions. Furthermore, as the typical Reynolds number of collective epithelial flow is in the range 10\u22127\u201310\u22126, we neglect inertial effects: i.e. $\u03c1Dv/Dt=0$. With these simplifications, whose legitimacy will be assessed a posteriori, one can reduce Equation 2b to three coupled differential equations for the density and the phases of the hexatic and nematic order parameter tensors (see Methods). These equations, in turn, can be linearized about the trivial configuration, where all fields are spatially uniform and $v=0$, and augmented with noise terms to give the following exact asymptotic expansion\n\n$$\nS(|q|)\u223c\\frac{s_{\u22122}}{|q|^{2}}+s_{\\beta}|q|^{\\beta}.\n$$\n\nThe first term entails the typical giant number density fluctuations associated with the active nematic behavior at the large scale, with $s_{\u22122}\u223c\\alpha_{2}^{2}$. This effect is overestimated at the linear order, leading to an inverse quadratic dependence on the wave number $|q|$ (Ramaswamy et al., 2003), but is generally renormalized by nonlinearities, so that $lim|q|\u21920S(|q|)\u223c|q|^{\u2212\\alpha}$, with $1<\\alpha<2$ (Shankar et al., 2018; Chat\u00e9, 2020).\n\nThe second term, on the other hand, reflects the sixfold symmetry characterizing the structure of epithelia at the small length scale, with $s_{\\beta}\u223c\\alpha_{6}^{2}$ and the exponent $\\beta$ determined by the specific energy dissipation mechanism, as well as by the specific structure of the noise. As detailed in Methods, here we consider four alternative scenarios, obtained upon combining two different momentum dissipation mechanisms (i.e. viscosity and friction) with two different types of noise (i.e. rototranslational and purely rotational). In the presence of viscous dissipation, i.e. a regime referred to as \u2018wet\u2018 in the jargon of active matter, $\\beta=4$ irrespective of the nature of noise. Conversely, in the \u2018dry\u2018 limit, when the shear and bulk viscosity vanish and momentum dissipation solely results from the frictional interactions with the substrate, $\\beta$ differs depending on whether noise affects both cells\u2019 orientational and translational dynamics, or only the former. Specifically, when only orientational noise is considered, $\\beta=6$. In contrast, $\\beta=10$ in the presence of conservative rototranslational noise. We again stress that Equation (8) is an exact asymptotic expansion, as one could verify upon comparison with the full analytical solutions plotted in Figure 2, and not a truncated power series.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/86400/elife-86400-fig2-v2.jpg)\n\n**Figure 2.:** Structure factor $S(|q|)$ obtained from the analytical solutions of the linearized hydrodynamic equations in the presence of two different noise fields: purely rotational (blue) and rototranslational (red).The full analytical expression of $S(|q|)$ is given in Methods, together with a derivation of the exact asymptotic expansions of Equation (8). (a) As long as viscous dissipation takes place (i.e. \u2018wet\u2019 regime), $S(|q|)\u223c|q|^{4}$ in the limit $|q|\u2192\u221e$, irrespective of the type of noise. (b) On the other hand, when friction is the sole momentum dissipation mechanism at play (\u2018dry\u2019 regime), $S(|q|)\u223c|q|^{6}$ in case of rotational noise and $S(|q|)\u223c|q|^{10}$ when noise is both rotational and translational. In both panels, the wave number $|q|$ is rescaled by $q\u00af=2\\pi/\u2113\u00af$, with $\u2113\u00af=(\u2113_{2}+\u2113_{6})/2$ and $\u2113_{2}$ and $\u2113_{6}$ as defined in Equation (7).\n\nTo test the significance of these predictions and connect the present hydrodynamic theory with the existing literature, in Figure 3a we compare the structure factor obtained from numerical simulations of two different cell-resolved models of epithelia \u2013 i.e. the self-propelled Voronoi (SPV) model (Bi et al., 2016) and the multiphase field (MPF) model (Loewe et al., 2020) (see the insets Figure 3b for typical configurations of the two models) \u2013 with that resulting from a numerical integration of Equation 2a (Carenza et al., 2019; Carenza et al., 2020), with none of the simplifications behind Equation (8). In both microscopic models, cells are treated as persistent random walkers, self-propelling at constant speed $v_{0}$ and whose direction of motion undergoes rotational diffusion with diffusion coefficient $D_{r}$ (see Methods for details). Noise is therefore expected to affect both the rotational and translational dynamics of the cell monolayer, although in a way that, unlike in our analytical treatment, cannot be trivially decoupled. Consistently with our linear analysis, both data sets exhibit two different power-law scaling regimes at small and large length scales. At small length scales, the structure factor scales like $S(|q|)\u223c|q|^{\\beta}$, with $\\beta$ monotonically decreasing from 6 to 4 upon increasing the P\u00e9clet number $Pe=\u03be_{0}/a$ expressing the ratio between cells\u2019 persistence length $\u03be_{0}=v_{0}/D_{r}$ and their typical size $a$ (see Figure 3b).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/86400/elife-86400-fig3-v2.jpg)\n\n**Figure 3.:** (a) Structure factor of model-epithelia calculated from a numerical integration of Equation 2a (black line) and from simulations of two different cell-resolved models: i.e. the self-propelled Voronoi model (SPV, red) and the multiphase field (MPF) model (blue), for a particular choice of parameters. The dashed diagonal lines mark the scaling regimes obtained analytically at the linear order, Equation (8), and the wave number $|q|$ is rescaled by $q_{cell}=2\\pi/\u0394x_{LB}$, where $\u0394x_{LB}$ is the grid size used by the Lattice Boltzmann integrator (see Methods for details). (b) The exponent $\\beta$, as defined in Equation (8), versus the P\u00e9clet number $Pe$, reflecting the persistence of directed cellular motion in front of diffusion. Error bars calculated as standard error over $n=250$ configurations for both the SPV and the MPF models. Insets: typical configurations of the SPV (bottom left) and MPF (top right) models.\n\nConversely, at large length scales, the structure factor scales like an inverse power law, with exponent consistent with the large-scale behavior of active nematics (Chat\u00e9, 2020). These observations can be rationalized in the light of the previous fluctuating hydrodynamic analysis. In the limit $Pe\u21920$, cells do not self-propel, noise is predominantly orientational and momentum propagates only at distances comparable to the average cell size. Under this circumstances, an in silico cell layer, whether modeled via the SPV or the MPF, behaves therefore as a \u2018dry\u2019 active system subject to purely rotational noise, for which, consistently with our analysis, $\\beta=6$. Increasing $Pe$ has the twofold effect of converting noise from purely rotational to rototranslational and, by stimulating cooperativity in the cellular motion, to increase the range of momentum propagation, thus driving a crossover of the cell layer from \u2018dry\u2019 to \u2018wet\u2019, hence from $\\beta=6$ to $\\beta=4$. The simple linear calculation, summarized in Methods, does not allow us to resolve the full crossover, but does provide a precise estimate of the upper and lower bounds. Finally, along the wet\u2013dry crossover, viscosity must emerge from the cells\u2019 lateral interactions. A precise understanding of this process is outside of the scope of the present work, but recent numerical work on the Vertex model has already highlighted the existence of a rich landscape of exotic rheological phenomena, resulting from the interplay between cellular motion, morphology, and adhesion (Tong et al., 2022; Hertaeg et al., 2022). The latter could possibly explain the non-monotonic behavior at small $Pe$ values, as a crossover from a shear-thinning to the shear-thickening behavior (Hertaeg et al., 2022) for additional numerical evidence of this effect.\n\nA different signature of multiscale hexanematic order can be identified in the structure of the cross-correlation function\n\n$$\nC_{26}(r)=\\frac{\u27e8\u03c8_{2}(r)\u03c8_{6}^{\u2217}(0)+\u03c8_{2}^{\u2217}(r)\u03c8_{6}(0)\u27e9}{2}.\n$$\n\nAt equilibrium, and if deformations are sufficiently gentle to render backflow effects negligible, its behavior can be divided in two regimes, depending on how the distance $|r|$ compares to the length scales $\u2113_{\u03c7,2}$ and $\u2113_{\u03c7,6}$ defined in the previous section and expressing the typical distance at which the mutual alignment rate of the hexatic and nematic orientations overcome that of rotational diffusion. In the simplest possible setting, when $\u2113_{\u03c7,2}=\u2113_{\u03c7,6}=\u2113_{\u03c7}$, fluctuations dominate at short distances and the hexatic and nematic orientations are uncorrelated. Thus, $C_{26}(r)$ is approximatively constant for $|r|\u226a\u2113_{\u03c7}$. The picture is reversed for $|r|\u226b\u2113_{\u03c7}$. In this range, the hexatic and nematic orientations are \u2018locked\u2019 in a parallel configuration, i.e. $Arg\u2061(\u03c8_{2})/2\u2248Arg\u2061(\u03c8_{6})/6$, or tilted by $\\pi/6$ with respect to each other, depending on the sign of the constant $\u03c7_{2,6}$, and the cross-correlation function exhibits the standard power-law decay characterizing two-dimensional liquid crystals with a single-order parameter: i.e. $C_{26}(r)\u223c(|r|/\u2113_{\u03c7})^{\u2212\u03b7_{26}}$, with $\u03b7_{26}$ a specific instance of the generic non-universal exponent $\u03b7_{26}=6k_{B}T/(\\piK)$, with $K$ the orientational stiffness of both phases (proportional to $L_{2}=L_{6}$). An analytical treatment of this simple case is reported in Methods. In the more generic case, in which $\u2113_{\u03c7,2}\\neq\u2113_{\u03c7,6}$ and the relaxation rates of the hexatic and nematic phase differ, the cross-correlation function has a less standard functional form, but still features a slow and fast decay regime at short and large distances, respectively. An example of such a scenario, obtained from a numerical integration of Equation 2a with $\\alpha_{2}=0$ and $\\alpha_{6}=0$, is shown in Figure 4a. The curves in Figure 4b correspond instead to simulated configurations of the cross-correlation function of $C_{26}(r)$ for finite hexatic and nematic activity. In this case, the cross-correlation function exhibits an oscillatory behavior at short distances and vanishes at a length scale that becomes progressively large as the hexatic activity is increased. Consistently with our previous analysis, this latter feature confirms the existence of a hierarchy of orientationally ordered structures nested into each other at different length scales.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/86400/elife-86400-fig4-v2.jpg)\n\n**Figure 4.:** Cross-correlation function $C_{26}(r)$, as defined in Equation 9, obtained from a numerical integration of Equation 2a augmented with rotational noise.(a) In the passive case, when $\\alpha_{2}=0$ and $\\alpha_{6}=0$, the correlation function decays with $|r|$ at a rate i.e. lower at short distances, where the dynamics of the hexatic and nematic orientations is dominated by fluctuations, and larger at long distances, where the orientations are \u2018locked\u2019 in a parallel configuration, or tilted by $\\pi/6$ with respect to each other. (b) In the active case, conversely, the cross-correlation function has a damped oscillatory behavior. Consistently with Equation (7) and the related discussion, the range of the oscillations, corresponding to the distance at which these are fully damped, increases with the hexatic activity $\\alpha_{6}$, indicating an enhancement of hexatic order at larger length scales. Shaded region corresponding to the standard deviation of $n=500$ configurations. Distance is expressed in terms of the grid size $\u0394x_{LB}$ used by the Lattice Boltzmann integrator (see Methods for details).\n\nTaken together, our calculations of the structure factor and the cross-correlation function demonstrate that the hydrodynamic theory embodied in Equations 2 and 6 is able to account for the multiscale hexanematic order observed in experiments (Armengol-Collado et al., 2023; Eckert et al., 2023) and harnesses it into a continuum mechanical framework. Whereas the origin of hexanematic order is still a matter of investigation, the current experimental and numerical evidence suggests that, similarly to granular materials (Majmudar and Behringer, 2005), large-scale nematic order could arise from the self-organization of the microscopic force hexapoles into force chains. The possibility of similarity between these two phenomena has also been in relation to the initial phase of Drosophila gastrulation, where linear arrays of cells simultaneously undergo apical constriction in the ventral furrow region (Jason Gao et al., 2016).\n\n### Conclusions\n\nIn conclusion, we have introduced a continuum model of collectively migrating layers of epithelial cells, built upon a recent generalization of the hydrodynamic theory of p-atic liquid crystals (Giomi et al., 2022a; Giomi et al., 2022b). This approach allows one to account for arbitrary discrete rotational symmetries, thereby going beyond existing hydrodynamic theories of epithelia (Ranft et al., 2010; Popovi\u0107 et al., 2017; P\u00e9rez-Gonz\u00e1lez et al., 2019; Ishihara et al., 2017; Czajkowski et al., 2018; Hernandez and Marchetti, 2021; Grossman and Joanny, 2022), where the algebraic structure of the hydrodynamic variables renders impossible to account for liquid crystal order other than isotropic (i.e. $p=0$), polar (i.e. $p=1$), or nematic (i.e. $p=2$). Upon computing the static structure factor and comparing this with the outcome of two different cell-resolved models \u2013 i.e. the SPV (Bi et al., 2016) and MPF (Loewe et al., 2020) models \u2013 we have shown that, consistently with recent experimental findings (Armengol-Collado et al., 2023; Eckert et al., 2023), epithelial layers may in fact comprise both nematic and hexatic (i.e. $p=6$) order, coexisting at different length scales. Although the consequences of such a remarkable versatility are yet to be explored, we expect hexatic order to be relevant for short-scale remodeling events, where the local nature of hexatic order, combined with the rich dynamics of hexatic defects (Zippelius et al., 1980; Amir and Nelson, 2012), may mediate processes such as cell intercalations and the rearrangement of multicellular rosettes (Blankenship et al., 2006; Rauzi, 2020). Such a local motion, in turn, may be coordianted at the large scale by the underlying nematic order, giving rise to a persistent unidirectional flow, such as that observed during wound healing and cancer progression (Friedl and Gilmour, 2009). Furthermore, the existence of multiscale liquid crystal order echoes the most recent understanding of phenotypic plasticity in tissues, according to which the epithelial (i.e. solid-like) and mesenchymal (i.e. liquid-like) states represent the two ends of a spectrum of intermediate phenotypes (Zhang and Weinberg, 2018). These intermediate states display distinctive cellular characteristics, including adhesion, motility, stemness and, in the case of cancer cells, invasiveness, drug resistance, etc. Can multiscale liquid crystal order help understanding how the biophysical properties of tissues vary along the epithelial\u2013mesenchymal spectrum? This and related questions will be addressed in the near future.\n\n## Methods\n\n### Quantification of p-atic order in epithelial layers\n\nFollowing Armengol-Collado et al., 2023, we use the shape function$\\gamma_{p}$ to quantify the amount of p-fold symmetry of an arbitrary cell. Denoting $r_{v}$ with $v=1,2\u2026V$, the positions of its vertices with respect to the cell\u2019s center of mass, one has\n\n$$\n\\gamma_{p}=\\frac{\\sumv=1V|r_{v}|^{p}e^{ip\u03d5_{v}}}{\\sumv=1V|r_{v}|^{p}},\n$$\n\nwith $\u03d5_{v}=Arg\u2061(r_{v})$ the angle between $r_{v}$ and the x-axis of a Cartesian frame. A schematic representation of these elements in an arbitrary irregular polygon is shown in Figure 5a. Unlike the complex function $\u03c8_{p}=e^{ip\u03d1}$, which has unit magnitude by construction, the magnitude $|\\gamma_{p}|$ quantify the resemblance of a generic polygon with a regular p-sided polygon of the same size, while the phase $\u03d1=Arg\u2061(\\gamma_{p})/p$ marks the orientation of the polygon. For regular V-sided polygons, $|\\gamma_{p}|=1$ provided $p$ is an integer multiple of $V$ and $|\\gamma_{p}|\u22480$ otherwise. Furthermore, from $\\gamma_{p}$ one can readily compute.\n\n$$\n\u03c8_{p}=\\frac{\\gamma_{p}}{|\\gamma_{p}|}.\n$$\n\n![Figure 5.](https://cdn.elifesciences.org/articles/86400/elife-86400-fig5-v2.jpg)\n\n**Figure 5.:** (a) Irregular polygonal cell with a red cross marking its center of mass and $r_{v}$ and $\u03d5_{v}$ the radial vector and the angle to one of the six vertices, respectively. (b) and (c) show the same tessellation of the plane with cells of different shapes and the shape analysis using the function in Equation 10 for the nematic ($p=2$) and hexatic ($p=6$) case. Rods and stars are oriented according to the phase of $\\gamma_{p}$ and the color corresponds to its magnitude.\n\nFigure 5b, c shows examples of the functions $\\gamma_{2}$ and $\\gamma_{6}$ for a typical configuration of the SPV. We emphasize that $\\gamma_{p}$, which, as shown in Armengol-Collado et al., 2023, arises from a p-fold generalization of the classic shape tensor (Aubouy et al., 2003), is solely determined by the positions of the vertices of an individual polygon and, therefore, does not depend on the spatial organization of the neighboring cells. As a consequence, this approach establishes an orientation purely based on cellular shape, thereby eliminating the arbitrariness involved with associating a network of bonds to a planar tessellation, where the latter is not inherent.\n\nThe shape function $\\gamma_{p}$ can then be coarse grained at the length scale $\u2113$ to construct the shape parameter:\n\n$$\n\u0393_{p}(r)=\\frac{1}{N_{\u2113}}\\sumc=1\\gamma_{p}(r_{c})\u0398(\u2113\u2212|r\u2212r_{c}|),\n$$\n\nwhere the $r_{c}$ is the position of the cth cell, $\u0398$ is the Heaviside step function, such that $\u0398(x)=1$ for $x>0$ and 0 otherwise, and $N_{\u2113}=\\sumc\u0398(\u2113\u2212|r\u2212r_{c}|)$ is the number of cells within a distance $\u2113$ from $r_{c}$. As in the case of $\\gamma_{p}$, the magnitude of $\u0393_{p}$ reflects the resemblance between a multicelluar cluster and a regular p-sided polygon, while its phase marks the cluster\u2019s global orientation. The outcome of an application of this method to the Voronoi model is illustrated in Figure 6 for $p=2$. The different patches in panel (a) are regions with uniform $\\theta=Arg\u2061(\u0393_{2})/2$, while in panel (b), there are plotted streamlines showing the orientation of the director $n=cos\u2061\\thetae_{x}+sin\u2061\\thetae_{y}$.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/86400/elife-86400-fig6-v2.jpg)\n\n**Figure 6.:** (a) Coarse-grained nematic orientation $\\theta$ obtained from averaging the local shape of cells over domains of size $30\u2113_{cell}$, with $\u2113_{cell}$ the average size of individual cells. Regions with the same color represent domains of coherent nematic orientation. (b) Part of the system where we use $\u0393_{2}$ to characterize the nematic phase. Solid lines represent the nematic director and the color inditicates the magnitude of the nematic shape function. (c) Voronoi cell structure of a region where the nematic field is uniform. Polygons are colored according to $|\\gamma_{6}|$ and the stars are oriented according to $Arg\u2061(\\gamma_{6})/6$.\n\n### Passive stresses\n\nAs explained in the main text, the passive contribution to the stress tensor is given by $\\sigma^{(p)}=\u2212P1+\\sigma^{(e)}+\\sigma^{(r)}+\\sigma^{(v)}$, where, as demonstrated in Giomi et al., 2022b\n\n$$\n\\sigma_{i\u2062j}^{(e)}=-L_{p}\u2062\\partial_{i}\u2061Q_{p}\u2299\\partial_{j}\u2061Q_{p},\n$$\n\n\n\n$$\n\\sigma_{ij}^{(r)}=\u2212\\lambda\u00af_{p}Q_{p}\u2299H_{p}\\delta_{ij}+(\u22121)^{p\u22121}\\lambda_{p}\u2202_{k_{1}k_{2}\u22efk_{p\u22122}}^{p\u22122}H_{k_{1}k_{2}\u22efij}+\\frac{p}{2}(Q_{k_{1}k_{2}\u22efi}H_{k_{1}k_{2}\u22efj}\u2212H_{k_{1}k_{2}\u22efi}Q_{k_{1}k_{2}\u22efj}),\n$$\n\n\n\n$$\n\\sigma_{ij}^{(v)}=2\u03b7[[u_{ij}]]+\u03b6tr(u)\\delta_{ij},\n$$\n\nwhere $\u03b7$ and $\u03b6$ are, respectively, the shear and bulk viscosity and the other material parameters are defined in the main text. Under the assumptions of uniform order parameter, i.e. $|Q_{p}|^{2}=|\u03a8_{p}|^{2}/2=const$, and taking $\\lambda_{p}=0$, Equation 13a reduces to the expression derived in Zippelius, 1980; Zippelius et al., 1980. That is\n\n$$\n\\sigma^{(e)}+\\sigma^{(r)}=\u2212P1+\\frac{K_{p}}{2}\\epsilon\u2207^{2}\\theta\u2212K_{p}\u2207\\theta\u2297\u2207\\theta,\n$$\n\nwhere the first term in Equation 13b has incorporated into the pressure $P$ and $K_{p}$ denotes the orientational stiffness of the p-atic phase, related to the order parameter stiffness by\n\n$$\nK_{p}=\\frac{p^{2}|\u03a8_{p}|^{2}}{2}L_{p}\n$$\n\nand $varepsilon$ is the two-dimensional antisymmetric tensor, with $\\epsilon_{xy}=\u2212\\epsilon_{yx}=1$ and $\\epsilon_{xx}=\\epsilon_{yy}=0$.\n\n### Linear fluctuating hydrodynamics\n\nTo compute the structure factor, we follow Ramaswamy et al., 2003 and augment Equation 2b, Equation 2c with short-ranged correlated noise field. Then calling $\u03d1$ and $\\phi$ the nematic and hexatic fluctuating orientation fields and linearizing the hydrodynamic equations about the homogeneous and stationary solutions, $\u03d1=\\phi=0$ and $v=0$, gives\n\n$$\n\u2202_{t}\\delta\u03c1=\u2212\u03c1_{0}\u2207\u22c5\\deltav,\n$$\n\n\n\n$$\n\u2202_{t}\\delta\u03d1=D_{2}\u2207^{2}\\delta\u03d1+\\frac{1}{2}e_{z}\u22c5(\u2207\\times\\deltav)+\\frac{9}{4}\u03c7_{2}(\\delta\u03d1\u2212\\delta\\phi)+\u03be^{(\u03d1)},\n$$\n\n\n\n$$\n\u2202_{t}\\delta\\phi=D_{6}\u2207^{2}\\delta\\phi+\\frac{1}{2}e_{z}\u22c5(\u2207\\times\\deltav)+\\frac{1}{4}\u03c7_{6}(\\delta\\phi\u2212\\delta\u03d1)+\u03be^{(\\phi)},\n$$\n\nwhere $\\delta\u03d1$, $\\delta\\phi$, and $\\deltav$ indicate a small departure from the homogeneous and stationary configurations of the fields $\u03d1$, $\\phi$, and $v$, $D_{p}=\u0393_{p}L_{p}$, $\u03c7_{p}=\u0393_{p}\u03c7_{2,6}$, and $\u03be^{(\u03d1)}$ and $\u03be^{(\\phi)}$ are short-ranged correlated noise fields: i.e.\n\n$$\n\u27e8\u03be^{(\\alpha)}(r,t)\u03be^{(\\beta)}(r^{\u2032},t^{\u2032})\u27e9=2(\u039e^{(\u03d1)}\\delta_{\\alpha\u03d1}\\delta_{\\beta\u03d1}+\u039e^{(\\phi)}\\delta_{\\alpha\\phi}\\delta_{\\beta\\phi})\\delta(r\u2212r^{\u2032})\\delta(t\u2212t^{\u2032}).\n$$\n\nThe velocity field $\\deltav$, on the other hand, is found from the Stokes limit of Equation 2b in the main text, which, at the linear order in all fluctuating fields, takes the form\n\n$$\n\u03b7\u2207^{2}\\deltav+\u03b6\u2207(\u2207\u22c5\\deltav)\u2212\u03c2\\deltav+f^{(p)}+f^{(a)}+\u03be^{(v)}=0.\n$$\n\nwhere $f^{(p)}=\u2207\u22c5\\sigma^{(p)}$ and $f^{(a)}=\u2207\u22c5\\sigma^{(a)}$ are the body forces resulting from the passive and active stresses, respectively. The quantity $\u03be^{(v)}$ is a translational noise field. In the absence of external stimuli, it is reasonable to assume that global momentum is neither created nor dissipated by translational fluctuations, but only redistributed across the cell layer. Thus $\u03be^{(v)}$ is either conservative or null, from which\n\n$$\n\u27e8\u03be_{i}^{(v)}(r,t)\u03be_{j}^{(v)}(r^{\u2032},t^{\u2032})\u27e9=2\u039e^{(v)}\\delta_{ij}(\u2212\u2207^{2})\\delta(r\u2212r^{\u2032})\\delta(t\u2212t^{\u2032}),\n$$\n\nwith ${i,j}\\in{x,y}$ and the case of noiseless translational dynamics, corresponding to Figure 3 in the main text, is recovered in the limit $\u039e^{(v)}\u21920$. The pressure $P$, in turn, can be related to the density by a linear equation of state of the form\n\n$$\nP=c_{s}^{2}\u03c1,\n$$\n\nwith $c_{s}$ the speed of sound. Together with the expression for the active stress given in Equation 3 of the main text, this gives\n\n$$\nf^{(p)}=(\u2212c_{s}^{2}\u2202_{x}\\delta\u03c1+\\frac{K_{2}}{2}\u2202_{y}\u2207^{2}\\delta\u03d1+\\frac{K_{6}}{2}\u2202_{y}\u2207^{2}\\delta\\phi)e_{x}\u2212(c_{s}^{2}\u2202_{y}\\delta\u03c1+\\frac{K_{2}}{2}\u2202_{x}\u2207^{2}\\delta\u03d1+\\frac{K_{6}}{2}\u2202_{x}\u2207^{2}\\delta\\phi)e_{y},\n$$\n\n\n\n$$\nf^{(a)}=[\\alpha_{2}\u2202_{y}\\delta\u03d1+\\frac{3}{2}\\alpha_{6}(\u2202_{y}^{4}\u22125\u2202_{x}^{2}\u2202_{y}^{2}+\\frac{5}{2}\u2202_{x}^{4})\u2202_{y}\\delta\\phi]e_{x}+[\\alpha_{2}\u2202_{x}\\delta\u03d1+\\frac{3}{2}\\alpha_{6}(\u2202_{x}^{4}\u22125\u2202_{x}^{2}\u2202_{y}^{2}+\\frac{5}{2}\u2202_{y}^{4})\u2202_{x}\\delta\\phi]e_{y}.\n$$\n\nNow, in Fourier space Equation 18 can be cast in the form of the following linear algebraic equation\n\n$$\n[(\u03b7|q|^{2}+\u03c2)1+\u03b6q\u2297q]\u22c5\\deltav^=f^^{(p)}+f^^{(a)}+\u03be^^{(v)},\n$$\n\nwhere the hat denotes Fourier transformation. Next, using\n\n$$\n[(\u03b7|q|^{2}+\u03c2)1+\u03b6q\u2297q]^{\u22121}=\\frac{[(\u03b7+\u03b6)|q|^{2}+\u03c2]1\u2212\u03b6q\u2297q}{(\u03b7|q|^{2}+\u03c2)[(\u03b7+\u03b6)|q|^{2}+\u03c2]},\n$$\n\nand solving Equation 22 and incorporating the resulting velocity field in Equation 16a gives, after several algebraic manipulation\n\n$$\n\u2212i\\omega[\\delta\u03c1^\\delta\u03d1^\\delta\\phi^]=M^\u22c5[\\delta\u03c1^\\delta\u03d1^\\delta\\phi^]+[\u03b7^^{(\u03c1)}\u03b7^^{(\u03d1)}\u03b7^^{(\\phi)}],\n$$\n\nwhere the matrix $M^$ is given by\n\n$$\nM^=[\u2212\\frac{\u03c1_{0}c_{s}^{2}|q|^{2}}{(\u03b7+\u03b6)|q|^{2}+\u03c2}\\frac{2\u03c1_{0}\\alpha_{2}q_{x}q_{y}}{(\u03b7+\u03b6)|q|^{2}+\u03c2}\\frac{3\u03c1_{0}\\alpha_{6}(3q_{x}^{5}q_{y}\u221210q_{x}^{3}q_{y}^{3}+3q_{x}q_{y}^{5})}{2[(\u03b7+\u03b6)|q|^{2}+\u03c2]}0\u2212D_{2}|q|^{2}\u2212\\frac{K_{2}|q|^{4}}{4(\u03b7|q|^{2})+\u03c2}+\\frac{9}{4}\u03c7_{2}\u2212\\frac{\\alpha_{2}(q_{x}^{2}\u2212q_{y}^{2})}{(\u03b7)|q|^{2}+\u03c2}\u2212\\frac{K_{6}|q|^{4}}{4(\u03b7)|q|^{2}+\u03c2}\u2212\\frac{9}{4}\u03c7_{2}\u2212\\frac{3\\alpha_{6}(q_{x}^{6}\u221215q_{x}^{4}q_{y}^{2}+15q_{x}^{2}q_{y}^{4}\u2212q_{y}^{6})}{8(\u03b7)|q|^{2}+\u03c2)}0\u2212\\frac{K_{2}|q|^{4}}{4(\u03b7)|q|^{2}+\u03c2}\u2212\\frac{1}{4}\u03c7_{6}\u2212\\frac{\\alpha_{2}(q_{x}^{2}\u2212q_{y}^{2})}{2(\u03b7)|q|^{2}+\u03c2)}\u2212D_{6}|q|^{2}\u2212\\frac{K_{6}|q|^{4}}{4(\u03b7|q|^{2})+\u03c2}+\\frac{1}{4}\u03c7_{6}\u2212\\frac{3\\alpha_{6}(q_{x}^{6}\u221215q_{x}^{4}q_{y}^{2}+15q_{x}^{2}q_{y}^{4}\u2212q_{y}^{6})}{8(\u03b7)|q|^{2}+\u03c2}]\n$$\n\nand the functions $\u03b7^{(\\alpha)}$, with $\\alpha\\in{\u03c1,\u03d1,\\phi}$, are effective noise fields whose correlation functions are given by\n\n$$\n\u27e8\u03b7^^{(\\alpha)}(q,\\omega)\u03b7^^{(\\beta)}(q^{\u2032},\\omega^{\u2032})\u27e9=(2\\pi)^{3}2H^^{(\\alpha)}(q)\\delta_{\\alpha\\beta}\\delta(q+q^{\u2032})\\delta(\\omega+\\omega^{\u2032}),\n$$\n\nwhere the functions $H^^{(\\alpha)}=H^^{(\\alpha)}(q)$ are given by\n\n$$\nH^^{(\u03c1)}=\\frac{\u03c1_{0}^{2}|q|^{4}}{[(\u03b7+\u03b6)|q|^{2}+\u03c2]^{2}}\u039e^{(v)},\n$$\n\n\n\n$$\nH^^{(\\alpha)}=\u039e^{(\u03d1)}\\delta_{\\alpha\u03d1}+\u039e^{(\\phi)}\\delta_{\\alpha\\phi}+\\frac{|q|^{4}}{4(\u03b7|q|^{2}+\u03c2)^{2}}\u039e^{(v)}.\n$$\n\nNotice that, while hydrodynamic flow has the effect of coloring the orientational noise embodied in the stochastic fields $\u03be^{(\u03d1)}$ and $\u03be^{(\\phi)}$, via the vorticity field on the right-hand side of Equation 16b, Equation 16c, this effect disappears at the small (i.e. $|q|\u2192\u221e$) and large (i.e. $|q|\u21920$) scale, as long as both viscous and frictional dissipation are present.\n\n### Structure factor\n\nThe static structure factor can be expressed in integral form as\n\n$$\nS(q)=\\int_{\u2212\u221e}^{\u221e}\\frac{d\\omega}{2\\pi}S(q,\\omega).\n$$\n\nwhere the dynamic structure factor $S(q,\\omega)$, can be calculated from the correlation function\n\n$$\n\u27e8\\delta\u03c1^(q,\\omega)\\delta\u03c1^(q^{\u2032},\\omega^{\u2032})\u27e9=(2\\pi)^{3}S(q,\\omega)\\delta(q+q^{\u2032})\\delta(\\omega+\\omega^{\u2032}).\n$$\n\nTo compute the left-hand side of Equation 29 one can solve Equation 24 with respect to $\\delta\u03c1^$, $\\delta\u03d1^$, and $\\delta\\phi^$. This gives\n\n$$\n\\delta\u03c1^=\\frac{i\u03b7^^{(\u03c1)}}{\\omega\u2212iM^_{\u03c1\u03c1}}\u2212\\frac{\u03b7^^{(\u03d1)}[M^_{\u03c1\u03d1}(\\omega\u2212iM^_{\\phi\\phi})+iM^_{\u03c1\\phi}M^_{\\phi\u03d1}]+\u03b7^^{(\\phi)}[M^_{\u03c1\\phi}(\\omega\u2212iM^_{\u03d1\u03d1})+iM^_{\u03c1\u03d1}M^_{\u03d1\\phi}]}{(\\omega\u2212iM^_{\u03c1\u03c1})[\\omega^{2}\u2212i\\omega(M^_{\u03d1\u03d1}+M^_{\\phi\\phi})\u2212M^_{\u03d1\u03d1}M^_{\\phi\\phi}+M^_{\u03d1\\phi}M^_{\\phi\u03d1}]},\n$$\n\n\n\n$$\n\\delta\u03d1^=\\frac{\u03b7^^{(\u03d1)}(i\\omega+M^_{\\phi\\phi})\u2212\u03b7^^{(\\phi)}M^_{\u03d1\\phi}}{[\\omega^{2}\u2212i\\omega(M^_{\u03d1\u03d1}+M^_{\\phi\\phi})\u2212M^_{\u03d1\u03d1}M^_{\\phi\\phi}+M^_{\u03d1\\phi}M^_{\\phi\u03d1}]},\n$$\n\n\n\n$$\n\\delta\\phi^=\\frac{\u03b7^^{(\\phi)}(i\\omega+M^_{\u03d1\u03d1})\u2212\u03b7^^{(\u03d1)}M^_{\\phi\u03d1}}{[\\omega^{2}\u2212i\\omega(M^_{\u03d1\u03d1}+M^_{\\phi\\phi})\u2212M^_{\u03d1\u03d1}M^_{\\phi\\phi}+M^_{\u03d1\\phi}M^_{\\phi\u03d1}]}.\n$$\n\nThe static structure factor can then be expressed as\n\n$$\nS=S^{(\u03c1)}+S^{(\u03d1)}+S^{(\\phi)}.\n$$\n\nThe first term on the right-hand side can be readily calculated in the form\n\n$$\nS^{(\u03c1)}=\\int_{\u2212\u221e}^{\u221e}\\frac{d\\omega}{\\pi}\\frac{H^^{(\u03c1)}}{M^_{\u03c1\u03c1}^{2}+\\omega^{2}}=\\frac{H^^{(\u03c1)}}{|M^_{\u03c1\u03c1}|}=\\frac{\u03c1_{0}|q|^{2}\u039e^{(v)}}{c_{s}^{2}[(\u03b7+\u03b6)|q|^{2}+\u03c2]},\n$$\n\nindicating that, if driven solely by pressure fluctuations, the system would relax toward a structureless homogeneous state with $S\u2192\u03c1_{0}\u039e^{(\u03c1)}/(\u03c2c_{s}^{2})$ when $|q|\u21920$. The effect of the active currents is instead accounted for by the second and third terms on the right-hand side of Equation 31, which can be cast in the general form\n\n$$\nS^{(\\alpha)}=H^{(\\alpha)}\\int_{\u2212\u221e}^{\u221e}\\frac{d\\omega}{\\pi}\\frac{g^{(\\alpha)}(\\omega)}{|h(\\omega)|^{2}},\\alpha={\u03d1,\\phi},\n$$\n\nwhere\n\n$$\ng^{(\u03d1)}(\\omega)=(M^_{\u03c1\u03d1}\\omega)^{2}+(M^_{\u03c1\\phi}M^_{\\phi\u03d1}\u2212M^_{\u03c1\u03d1}M^_{\\phi\\phi})^{2},\n$$\n\n\n\n$$\ng^{(\\phi)}(\\omega)=(M^_{\u03c1\\phi}\\omega)^{2}+(M^_{\u03c1\u03d1}M^_{\u03d1\\phi}\u2212M^_{\u03c1\\phi}M^_{\u03d1\u03d1})^{2},\n$$\n\n\n\n$$\nh(\\omega)=(\\omega\u2212iM^_{\u03c1\u03c1})[\\omega^{2}\u2212i\\omega(M^_{\u03d1\u03d1}+M^_{\\phi\\phi})\u2212M^_{\u03d1\u03d1}M^_{\\phi\\phi}+M^_{\u03d1\\phi}M^_{\\phi\u03d1}].\n$$\n\nThe integral over $\\omega$ can be derived using the residue theorem upon computing the roots of the complex third-order polynomial $h$. To make progress, we express\n\n$$\n|h(\\omega)|^{2}=(\\omega^{2}+\\omega_{1}^{2})(\\omega^{2}+\\omega_{2}^{2})(\\omega^{2}+\\omega_{3}^{2}),\n$$\n\nwhere $\\omega_{1}$, $\\omega_{2}$, and $\\omega_{3}$ are given by\n\n$$\n\\omega_{1}=M^_{\u03c1\u03c1},\n$$\n\n\n\n$$\n\\omega_{2}=\\frac{1}{2}(M^_{\u03d1\u03d1}+M^_{\\phi\\phi}\u2212\\sqrt{(M^_{\u03d1\u03d1}\u2212M^_{\\phi\\phi})^{2}+4M^_{\u03d1\\phi}M^_{\\phi\u03d1}}),\n$$\n\n\n\n$$\n\\omega_{3}=\\frac{1}{2}(M^_{\u03d1\u03d1}+M^_{\\phi\\phi}+\\sqrt{(M^_{\u03d1\u03d1}\u2212M^_{\\phi\\phi})^{2}+4M^_{\u03d1\\phi}M^_{\\phi\u03d1}.}).\n$$\n\nThe integrand on the right-hand side of Equation 33 has, therefore, three pairs of purely imaginary poles: i.e. $\\pmi|\\omega_{1}|$, $\\pmi|\\omega_{2}|$, and $\\pmi|\\omega_{3}|$. Next, turning the integration range to an infinite semicircular contour on the complex upper half-plane and summing the associated residues gives, after lengthy algebraic manipulations\n\n$$\nS^{(\u03d1)}=\\frac{H^{(\u03d1)}[\u03a9_{1}M^_{\u03c1\u03d1}^{2}+\u03a9_{2}(M^_{\u03c1\\phi}M^_{\\phi\u03d1}\u2212M^_{\u03c1\u03d1}M^_{\\phi\\phi})^{2}]}{\u03a9_{1}\u03a9_{2}\u03a9_{3}\u2212\u03a9_{1}^{2}},\n$$\n\n\n\n$$\nS^{(\\phi)}=\\frac{H^{(\\phi)}[\u03a9_{1}M^_{\u03c1\\phi}^{2}+\u03a9_{2}(M^_{\u03c1\u03d1}M^_{\u03d1\\phi}\u2212M^_{\u03c1\\phi}M^_{\u03d1\u03d1})^{2}]}{\u03a9_{1}\u03a9_{2}\u03a9_{3}\u2212\u03a9_{1}^{2}},\n$$\n\nwhere we have set\n\n$$\n\u03a9_{1}=|\\omega_{1}||\\omega_{2}||\\omega_{3}|,\n$$\n\n\n\n$$\n\u03a9_{2}=|\\omega_{1}|+|\\omega_{2}|+|\\omega_{3}|,\n$$\n\n\n\n$$\n\u03a9_{2}=|\\omega_{1}||\\omega_{2}|+|\\omega_{1}||\\omega_{3}|+|\\omega_{2}||\\omega_{3}|.\n$$\n\nNow, although the individual elements of the matrix $M^$ depend on the individual components of the wave vector \u2013 i.e. $q_{x}$ and $q_{y}$ \u2013 this is an artefact of linearizing the hydrodynamic equations about a specific orientation (i.e. $\u03d1=\\phi=0$ in this case). Because of the lack of long-ranged order and of specific directions that could affect the spectrum of density fluctuations, the latter is expected to be isotropic, thus $S=S(|q|)$. To remove the fictitious angular dependence, one can either linearize Equation 2a about a generic pair of angles, $\u03d1_{0}$ and $\\phi_{0}$, and then use these to calculate a circular average \u2013 i.e. $S(|q|)=1/(2\\pi)^{2}\\intd\u03d1_{0}d\\phi_{0}S(q)$ \u2013 or, more simply, by orienting $q$ so to cancel the directional dependence. Thus, taking $q_{x}=q_{y}=|q|/\\sqrt{2}$ gives a simpler expression of the matrix $M^$. That is\n\n$$\nM^=[\u2212\\frac{\u03c1_{0}c_{s}^{2}|q|^{2}}{(\u03b7+\u03b6)|q|^{2}+\u03c2}\\frac{\u03c1_{0}\\alpha_{2}|q|^{2}}{(\u03b7+\u03b6)|q|^{2}+\u03c2}\u2212\\frac{3\u03c1_{0}\\alpha_{6}|q|^{6}}{4[(\u03b7+\u03b6)|q|^{2}+\u03c2]}0\u2212D_{2}|q|^{2}\u2212\\frac{K_{2}|q|^{4}}{4(\u03b7|q|^{2}+\u03c2)}+\\frac{9}{4}\u03c7_{2}\u2212\\frac{K_{6}|q|^{4}}{4(\u03b7|q|^{2}+\u03c2)}\u2212\\frac{9}{4}\u03c7_{2}0\u2212\\frac{K_{2}|q|^{4}}{4(\u03b7|q|^{2}+\u03c2)}\u2212\\frac{1}{4}\u03c7_{6}\u2212D_{6}|q|^{2}\u2212\\frac{K_{6}|q|^{4}}{4(\u03b7|q|^{2}+\u03c2)}+\\frac{1}{4}\u03c7_{6}].\n$$\n\nUsing the elements of this matrix in combination with Equations 31; 33, Equations 36a; 38a yields the curves plotted in Figure 3. Finally, asymptotically expanding Equation 31 allows one, after lengthy algebraic manipulations, to calculate the coefficients $s_{\u22122}$ and $s_{4}$ in Equation 8. That is\n\n$$\ns_{\u22122}=\\frac{\u03c1_{0}\\alpha_{2}^{2}[(9\u03c7_{2})^{2}\u039e_{\\phi}+\u03c7_{6}^{2}\u039e_{\u03d1}]}{c_{s}^{2}(9\u03c7_{2}D_{6}+\u03c7_{6}D_{2})[\u03c1_{0}c_{s}^{2}(9\u03c7_{2}+\u03c7_{6})+\u03c2(9\u03c7_{2}D_{6}+\u03c7_{6}D_{2})]},\n$$\n\n\n\n$$\ns_{4}=\\frac{72\u03c1_{0}\\alpha_{6}^{2}[(K_{2}^{2}+8\u03b7D_{2}K_{2}+8\u03b7^{2}D_{2}^{2})\u039e^{(v)}+K_{2}^{2}\u039e_{\u03d1}+2\u03b7^{2}(K_{2}+4\u03b7D_{2})^{2}\u039e_{\\phi}]}{c_{s}^{2}(\u03b7+\u03b6)[K_{2}+K_{6}+4\u03b7(D_{2}+D_{6})]^{4}}.\n$$\n\nNotice that, while both orientational and translation noise affect the amplitude of density fluctuations at small length scales, where $S(|q|)\u223cs_{4}|q|^{4}$, translational noise becomes unimportant at the large scale, where $S(|q|)\u223cs_{\u22122}/|q|^{2}$. Furthermore, as long as viscous dissipation is at play, switching off translational noise (i.e. $\u039e^{(v)}\u21920$) does not alter the scaling behavior of the structure factor at neither range of length scales. Taking the dry limit (i.e. $\u03b7\u21920$ and $\u03b6\u21920$) leaves the large-scale behavior unaltered, but does affect the scaling of density fluctuations at short length scales, where translational fluctuations are most prominent. Specifically, $S(|q|)\u223cs_{6}|q|^{6}$ in the case of purely rotational noise and $S(|q|)\u223cs_{10}|q|^{10}$ in the presence of rototranslational noise. The coefficients $s_{6}$ and $s_{10}$ can be computed as in the viscous case, to give\n\n$$\ns_{6}=(\\frac{3}{2})^{2}\\frac{\u03c1_{0}^{2}\\alpha_{6}^{2}\u039e^{(\\phi)}}{\u03c2^{2}(D_{2}+D_{6})^{3}},\n$$\n\n\n\n$$\ns_{10}=(\\frac{3}{4})^{2}\\frac{\u03c1_{0}^{2}\\alpha_{6}^{2}\u039e^{(\\phi)}}{\u03c2^{4}(D_{2}+D_{6})^{3}}.\n$$\n\n### Numerical methods\n\n#### The Voronoi model\n\nIn the self-propelled Voronoi model (Bi et al., 2016) a confluent cell layer is approximated as a Voronoi tessellation of the plane. Each cell is characterized by the position $r_{c}$ of its center, with $c=1,2\u2026N$, and a velocity $v_{c}=v_{0}(cos\u2061\\theta_{c}e_{x}+sin\u2061\\theta_{c}e_{y})$, with $v_{0}$ a constant speed and $\\theta_{c}$ an orientation. We stress that, in general, the center of a Voronoi polygon does not correspond to the polygon\u2019s centroid (i.e. center of mass). The dynamics of these variables is governed by the following set of overdamped Langevin equations, expressing the interplay between cells\u2019 autonomous motion and the remodeling events that underlie the tissue\u2019s collective dynamics. That is:\n\n$$\n\\frac{dr_{c}}{dt}=v_{c}\u2212\\mu\u2207_{r_{c}}E,\n$$\n\n\n\n$$\n\\frac{d\\theta_{c}}{dt}=\u03b7_{c},\n$$\n\nwhere \u00b5 is the mobility coefficient and $E=E(r_{1},r_{2}\u2026r_{N})$ is an energy function involving exclusively geometrical quantities, such as the area $A_{c}$ and the perimeter $P_{c}$ of each cell: i.e.\n\n$$\nE=\\sumc[K_{A}(A_{c}\u2212A_{0})^{2}+K_{P}(P_{c}\u2212P_{0})^{2}],\n$$\n\nwith $K_{A}$, $K_{P}$, $A_{0}$, and $P_{0}$ constants. The first term in Equation 43 embodies a combination of cells\u2019 volumetric incompressibility and monolayer resistance to thickness fluctuations. The second term results from the cytoskeletal contractility (quadratic in $P_{c}$) and the effective interfacial tension caused by the cell\u2013cell adhesion and the cortical tension (both linear in $P_{c}$) (Farhadifar et al., 2007). The constants $A_{0}$ and $P_{0}$ represent, respectively, the preferred area and perimeter of each cell. The quantity $\u03b7_{c}$, on the other hand, is a random number with zero mean and correlation function\n\n$$\n\u27e8\u03b7_{c}(t)\u03b7_{c^{\u2032}}(t^{\u2032})\u27e9=2D_{r}\\delta_{cc^{\u2032}}\\delta(t\u2212t^{\u2032}),\n$$\n\nwith $D_{r}$ a rotational diffusion coefficient. To make progress, we next introduce the following dimensionless numbers: the shape index $p_{0}=P_{0}/\\sqrt{A_{0}}$, which accounts for the spontaneous degree of acircularity of individual cells (Bi et al., 2016), and the P\u00e9clet number $Pe=v_{0}/(D_{r}\\sqrt{A_{0}})$, which quantifies the persistence of directed cellular motion in front of their diffusivity.\n\nTo obtain the plots in Figure 3, we numerically integrate Equation 42a in a domain of size $L_{g}$ with periodic boundary conditions. At $t=0$, the centroids $r_{c}$ are placed in a slightly perturbed hexagonal grid with a random initial velocity. After reaching the non-equilibrium steady state, we perform statistical averages of relevant observables.\n\nIn our numerical simulations, we set $p_{0}=3.85$, $\\muK_{A}A_{0}/D_{r}=1$, $\\muK_{P}/D_{r}=1$, and $D_{r}\u0394t=5\\times10^{\u22123}$, where $\u0394t$ is the time-step used for the integration, and the average density of particles $NA_{0}/L_{g}^{2}=1$. We vary the P\u00e9clet number in the range $0.1\\leqPe\\leq2.0$. The results presented in Results are robust to the variation of the system size, as no qualitative difference was observed upon varying the domain size in the range $30\\leqL_{g}\\leq200$ at constant density. The density structure factor (light green circles) in Figure 3a was obtained, in particular, with $Pe=1.5$.\n\n#### The MPF model\n\nThe MPF model is a continuous model where each cell is described by a concentration field $\\phi_{c}=\\phi_{c}(r)$ with $c=1,2\u2026N$ and $N$ the total number of cells. This model has been used to study the dynamics of confluent cell monolayers (Loewe et al., 2020) and the mechanics of cell extrusion (Monfared et al., 2021). Equilibrium configurations are obtained upon relaxing the free energy $F=\\intdAf$, where the free energy density $f$ is given by\n\n$$\nf=\\frac{\\alpha}{4}\\sumc\\phi_{c}^{2}(\\phi_{c}\u2212\\phi_{0})^{2}+\\frac{k_{\\phi}}{2}\\sumc(\u2207\\phi_{c})^{2}+\u03f5\\sumc<c^{\u2032}\\phi_{c}^{2}\\phi_{c^{\u2032}}^{2}+\\sumc\\lambda(1\u2212\\frac{1}{\\pi\u03d5_{0}^{2}R_{\\phi}^{2}}\\intdA\\phi_{c}^{2})^{2}.\n$$\n\nHere, $\\alpha$ and $k_{\u03d5}$ are material parameters which can be used to tune the surface tension $\\gamma=(8k_{\\phi}\\alpha/9)^{1/2}$ and the interfacial thickness $\u03be=(2k_{\\phi}/\\alpha)^{1/2}$ of isolated cells and thermodynamically favor spherical cell shapes. The constant $\u03f5$ captures the repulsion between cells. The concentration field is large (i.e. $\\phi_{c}\u2243\u03d5_{0}$) inside the cells and zero outside. The contribution proportional to $\\lambda$ in the free energy enforces cell incompressibility whose nominal radius is given by $R_{\\phi}$. The relaxational dynamics of the field $\\phi_{c}$ is governed by the Allen\u2013Cahn equation\n\n$$\n\u2202_{t}\\phi_{c}+v_{c}\u22c5\u2207\\phi_{c}=\u2212M\\frac{\\deltaF}{\\delta\\phi_{c}},\n$$\n\nwhere $v_{c}$ has the same meaning as in the SPV model described in the previous section and its dynamics is also governed by Equation 42b. The constant $M$ in Equation 46 is the mobility measuring the relevance of thermodynamic relaxation with respect to non-equlibrium cell migration. The dimensionless parameters of the model are the P\u00e9clet number $Pe=v_{0}/(2D_{r}R_{\\phi})$ and the cell deformability $d=\u03f5/\\alpha$.\n\nThe system of partial differential equations, Equation 46, is solved with a finite-difference approach through a predictor\u2013corrector finite-difference Euler scheme implementing second-order stencil for space derivatives (Carenza et al., 2019). The C-code implemented for numerical integration is parallelized by means of Message Passage Interface (MPI). We consider systems of $N=361$ cells in a square domain of $L_{g}=380$ grid points. Model parameters in simulation units are as follows: $R_{\u03d5}=11$, $\\phi_{0}=2.0$, $M\\alpha=0.006$, $Mk_{\\phi}=0.006$, $M\u03f5=0.01$, $M\\lambda=600$, $M\\gamma=0.008$, $D_{r}\u0394t=10^{\u22124}$, being $\u0394t$ the time-step used to integrate Equation 46. We vary the speed of self-propulsion in the range $0.0\\leqv_{0}\\leq0.005$. In terms of dimensionless parameters this corresponds to having $d=1.66$ and $Pe$ ranging between 0 and 2.30. The timescale of cell motility with respect to the timescale of elastic relaxation driven by surface tension $v_{0}/(M\\gamma)$ ranges between 0 and 0.625. Moreover, the nominal packing fraction is $N(\\piR_{\\phi}^{2})/L_{g}^{2}=0.95$, while the ratio between the interface thickness and the nominal radius $\u03be/R_{\\phi}=0.12$. The density structure factor (dark green triangles) in Figure 3a was obtained with $Pe=1.38$.\n\n#### Numerical method for integration of the hydrodynamic equations\n\nEquation 2a has been integrated by means of a hybrid lattice Boltzmann (LB) method, in which Equation (2b) is solved through a predictor\u2013corrector LB algorithm and the remaining equations via a predictor\u2013corrector finite-difference Euler approach, with a first-order upwind scheme and second-order accurate stencils for the computation of spacial derivatives (Carenza et al., 2019). The code has been parallelized by means of MPI, by dividing the computational domain in slices and by implementing the ghost-cell method to compute derivatives on the boundary of the computational subdomains. Runs have been performed using 64 CPUs in two-dimensional geometries, on a computational box of size 2562 and 5122, for at least $1.5\\times10^{7}$ LB iterations (corresponding to \u223c21 and \u223c84 days of CPU-time, respectively, for the smaller and larger computational boxes). Periodic boundary conditions have been imposed. The director fields (for both $p=2$ and $p=6$) have been randomly initialized. The initial density field is assumed to be uniform with $\u03c1=2.0$ everywhere. The model parameters in simulations units are as follows: $\u03b7=\u03b6=1.66$, $\\lambda_{2}=\\lambda_{6}=1.1$, $\u03bd_{2}=\u03bd_{6}=0.0$, $\u0393_{2}=0.4$, $A_{2}=\u2212B_{2}=\u22120.04$, $L_{2}=0.04$, $\u0393_{6}=0.4$, $A_{6}=\u2212B_{6}=\u22120.004$, $L_{6}=0.004$, $\u03ba_{2,6}=\u03be_{2,6}=\u22120.004$. Nematic activity $\\alpha_{2}$ has been varied in the range $\u22120.02\\leq\\alpha_{2}\\leq\u22120.0005$ and hexatic activity $\\alpha_{6}$ in the range $\u22120.050\\leq\\alpha_{6}\\leq0.050$. We set the active parameters $\\beta_{2}$ and $\\beta_{6}=0$. The density structure factor (continuous black line) in Figure 3a was obtained with $\\alpha_{2}=\u22122\\times10^{\u22123}$ and $\\alpha_{6}=2\\times10^{\u22122}$.\n\nThe coherence length of the nematic and hexatic liquid crystal can be expressed as the $(L_{p}/A_{p})^{1/2}=\u0394x_{LB}$ for both $p=2,6$, where $\u0394x_{LB}$ is the grid spacing of the LB algorithm. The active length scale as defined in the main text is given for the active nematics as $\u2113_{2}$ and ranges between $10\u0394x_{LB}$ for $\\alpha_{2}=\u22120.0005$ and $1.5\u0394x_{LB}$ for $\\alpha_{2}=\u22120.02$. Conversely, for hexatics $\u2113_{6}$ and ranges up to $3.5\u0394x_{LB}$ for $|\\alpha_{6}|=0.05$. To compare the results of the hydrodynamics simulations with the discrete models in Figure 3a, we choose $2\u0394x_{LB}=\\sqrt{A_{0}}$ and $2\u0394x_{LB}=R_{\\phi}\u0394x_{MP}$, with $\u0394x_{MP}$ the grid spacing used to integrate Equation 46.\n\n### Comparison with passive liquid crystals with coupled order parameters\n\nIn this section, we show how multiscale hexanematic order differs from previously reported examples of liquid crystal order with coupled order parameters (Bruinsma and Aeppli, 1982; Selinger and Nelson, 1989; Selinger, 1991). To quantify the interplay between nematic and hexatic order, here we focus on the function $C_{26}(r)$ given in Equation 9, reflecting the amount of cross-correlation in their fluctuations. Here, $\u03c8_{2}=e^{2i\u03d1}$ and $\u03c8_{6}=e^{6i\\phi}$, while the fluctuating fields $\u03d1$ and $\\phi$ represent again the local nematic and hexatic orientations, respectively. Averaging $\u03c8_{2}$ and $\u03c8_{6}$ over the scale of a volume element, yields the order complex parameters $\u03a8_{2}=\u27e8e^{2i\u03d1}\u27e9=|\u03a8_{2}|e^{2i\\theta}$ and $\u03a8_{6}=\u27e8e^{6i\\phi}\u27e9=|\u03a8_{6}|e^{6i\u03d5}$, with $\\theta$ and $\u03d5$ the average orientations. To make progress, we assume that, at the scale of a volume element, both microscopic orientations $\u03d1$ and $\\phi$ are Gaussianly distributed about their mean values, so that, in general\n\n$$\n\u03a8_{p}=\u27e8\u03c8_{p}\u27e9\u2248e^{\u2212\\frac{1}{2}var\u2061[Arg\u2061(\u03c8_{p})]+i\u27e8Arg\u2061(\u03c8_{p})\u27e9},\n$$\n\nfrom which\n\n$$\n|\u03a8_{p}|\u2248e^{\u2212\\frac{1}{2}var\u2061[Arg\u2061(\u03c8_{p})]},Arg\u2061(\u03a8_{p})=\u27e8Arg\u2061(\u03c8_{p})\u27e9.\n$$\n\nThis approximation holds when the relative fluctuation of the p-atic phase $Arg\u2061(\u03c8_{p})$ is sufficiently small, so that\n\n$$\n|\u03a8_{p}|\u22481\u2212\\frac{1}{2}\u27e8[Arg\u2061(\u03c8_{p})\u2212Arg\u2061(\u03a8_{p})]^{2}\u27e9\u2248\u27e8cos\u2061[Arg\u2061(\u03c8_{p})\u2212Arg\u2061(\u03a8_{p})]\u27e9,\n$$\n\nconsistent with the standard definition of p-atic order parameter. Thus, in particular, $\\theta=\u27e8\u03d1\u27e9$ and $|\u03a8_{2}|=\u27e8cos\u20612(\u03d1\u2212\\theta)\u27e9$, whereas $\u03d5=\u27e8\\phi\u27e9$ and $|\u03a8_{6}|=\u27e8cos\u20616(\\phi\u2212\u03d5)\u27e9$. This allows to write $C_{26}(r)$, as given by Equation (9), in the form\n\n$$\nC_{26}(r)=\\frac{\u03a8_{2}(r)\u03a8_{6}^{\u2217}(0)+\u03a8_{2}^{\u2217}(r)\u03a8_{6}(0)}{2}e^{12[\u27e8\u03d1(r)\\phi(0)\u27e9\u2212\u27e8\u03d1(r)\u27e9\u27e8\\phi(0)\u27e9]}.\n$$\n\nAt equilibrium, both nematic and hexatic order can be approximated as uniform, so that\n\n$$\n\\frac{\u03a8_{2}(r)\u03a8_{6}^{\u2217}(0)+\u03a8_{2}^{\u2217}(r)\u03a8_{6}(0)}{2}=|\u03a8_{2}||\u03a8_{6}|cos\u2061(2\\theta\u22126\u03d5)\u2248const,\n$$\n\nand the problem reduces to calculating the connected correlation function\n\n$$\nC_{\u03d1\\phi}(r)=\u27e8\u03d1(r)\\phi(0)\u27e9\u2212\u27e8\u03d1(r)\u27e9\u27e8\\phi(0)\u27e9.\n$$\n\nNotice that Equation (51) is not strictly valid for a quasi long-ranged ordered liquid crystal, where also $\\theta$ and $\u03d5$ are expected to vary in space. These spatial variations, however, occur on length scales comparable with the system size and, as long as this is much larger than any of the intrinsic length scales entailed in Equation 2a, are negligible for the purpose of this calculation. To compute $C_{\u03d1\\phi}(r)$, one can take the passive limit of Equation 2c and linearize the resulting equations about the lowest free energy configuration. This, in turn, is determined by the sign of the constant $\u03c7_{2,6}$ in Equation 6b. For $\u03c7_{2,6}<0$, the hexatic and nematic directors are energetically favored to be parallel, so that $\u03d1\u2248\\phi$. Conversely, when $\u03c7_{2,6}>0$, the hexatic and nematic directors are preferentially tilted by $\\pi/6$, hence $\u03d1=\\phi\\pm\\pi/6$. For presentational clarity, here we focus on the former case and, at the end of this section, we show how the same behavior holds for positive $\u03c7_{2,6}$ values. Thus, assuming $\u03c7_{2,6}<0$ and expanding Equation 2c about $\u03d1\u2248\\phi$, gives\n\n$$\n\u2202_{t}\u03d1=D_{2}\u2207^{2}\u03d1\u2212\\frac{9}{4}|\u03c7_{2}|(\u03d1\u2212\\phi)+\u03be^{(\u03d1)},\n$$\n\n\n\n$$\n\u2202_{t}\\phi=D_{6}\u2207^{2}\\phi\u2212\\frac{1}{4}|\u03c7_{6}|(\\phi\u2212\u03d1)+\u03be^{(\\phi)}\n$$\n\nwhere, as in the previous sections, we have set $D_{p}=\u0393_{p}L_{p}$ and $\u03c7_{p}=\u0393_{p}\u03c7_{2,6}$ and introduced the Gaussian noise fields $\u03be^{(\u03d1)}$ and $\u03be^{(\u03d1)}$, having vanishing mean and finite variance. Unlike the active case, however, at equilibrium the latter is related to the environmental temperature by the fluctuation\u2013dissipation theorem. This implies\n\n$$\n\u27e8\u03be^{(\\alpha)}(r,t)\u03be^{(\\beta)}(r^{\u2032},t^{\u2032})\u27e9=2k_{B}T(\\frac{\\delta_{\\alpha\u03d1}\\delta_{\\beta\u03d1}}{\\gamma_{2}}+\\frac{\\delta_{\\alpha\\phi}\\delta_{\\beta\\phi}}{\\gamma_{6}})\\delta(r\u2212r^{\u2032})\\delta(t\u2212t^{\u2032}),\n$$\n\nwhere $\\gamma_{p}=K_{p}/D_{p}$, with $K_{p}$ the orientational stiffness defined in Equation 15, is the rotational viscosity of the associated p-atic phase. Equation 53a can now be decoupled and used to compute the correlation function $C_{\u03d1\\phi}(r)$. For simplicity, here we set $D_{2}=D_{6}=D$, $\\gamma_{2}=\\gamma_{6}=\\gamma$, and $9\u03c7_{2}=\u03c7_{6}=2\u03c7$. With this choice, taking\n\n$$\n\\phi_{+}=\\frac{1}{2}(\\phi+\u03d1),\n$$\n\n\n\n$$\n\\phi_{\u2212}=\\frac{1}{2}(\\phi\u2212\u03d1),\n$$\n\ngives, after simple algebraic manipulations\n\n$$\n\u2202_{t}\\phi_{+}=D\u2207^{2}\\phi_{+}+\u03be_{+},\n$$\n\n\n\n$$\n\u2202_{t}\\phi_{\u2212}=D\u2207^{2}\\phi_{\u2212}\u2212|\u03c7|\\phi_{\u2212}+\u03be_{\u2212},\n$$\n\nwhere $\u03be_{+}=(\u03be^{(\\phi)}+\u03be^{(\u03d1)})/2$ and $\u03be_{\u2212}=(\u03be^{(\\phi)}\u2212\u03be^{(\u03d1)})/2$. Moreover, using Equation (54), one finds\n\n$$\n\u27e8\u03be_{n}(r,t)\u03be_{m}(r^{\u2032},t^{\u2032})\u27e9=\\frac{2k_{B}T}{\\gamma}\\delta_{nm}\\delta(r\u2212r^{\u2032})\\delta(t\u2212t^{\u2032}),\n$$\n\nwhere ${n,m}={+,\u2212}$. Equation 56a can now be solved in Fourier space and real time to give\n\n$$\n\\phi^_{n}(q,t)=e^{S_{n}(q,t)}[\\phi^_{n}(q,0)+\\int_{0}^{t}dt^{\u2032}e^{\u2212S_{n}(q,t^{\u2032})}\u03be^_{n}(q,t^{\u2032})],\n$$\n\nwhere the hat indicates Fourier transformation and\n\n$$\nS_{n}(q,t)=\u2212Dt(|q|^{2}+m_{n}^{2}),\n$$\n\nwhere $m_{+}=0$ and $m_{\u2212}^{2}=\u2113_{\u03c7}^{\u22122}=D/|\u03c7|$. The calculation of the cross-correlation function $C_{\u03d1\\phi}(r)$ is now reduced to calculating the autocorrelation functions of the fields $\\phi_{+}$ and $\\phi_{\u2212}$. Specifically\n\n$$\nC_{\u03d1\\phi}(r)=C_{++}(r)\u2212C_{\u2212\u2212}(r),\n$$\n\nwhere\n\n$$\nC_{nm}(r)=\u27e8\\phi_{n}(r)\\phi_{m}(0)\u27e9\u2212\u27e8\\phi_{n}(r)\u27e9\u27e8\\phi_{m}(0)\u27e9,\n$$\n\nand we have made use of Equation (54) to demonstrate that $C_{+\u2212}(r)=C_{\u2212+}(r)=0$. The non-vanishing correlation functions, on the other hand, can be expressed as\n\n$$\nC_{nn}(r)=limt\u2192\u221e\\int_{0<|q|<\u039b}\\frac{d^{2}q}{(2\\pi)^{2}}e^{iq\u22c5r}\u27e8|\\phi^_{n}(q,t)|^{2}\u27e9,\n$$\n\nwhere $\u039b=2\\pi/a$ is a short-distance cut-off and $\u27e8|\\phi^_{n}(q,t)|^{2}\u27e9$ is the finite-time orientational structure factor defined from the relation\n\n$$\n\u27e8\\phi^_{n}(q,t)\\phi^_{n}(q,t^{\u2032})\u27e9=(2\\pi)^{2}\u27e8|\\phi^_{n}(q,t)|^{2}\\delta(q+q^{\u2032})\\delta(t\u2212t^{\u2032}).\n$$\n\nAfter standard algebraic manipulations one finds\n\n$$\n\u27e8|\\phi^_{n}(q)|^{2}\u27e9=limt\u2192\u221e\u27e8|\\phi^_{n}(q,t)|^{2}\u27e9=\\frac{k_{B}T}{K}\\frac{1}{|q|^{2}+m_{n}^{2}}.\n$$\n\nfrom which Equation (62) can be calculated in the form\n\n$$\nC_{nn}(r)=\\frac{k_{B}T}{K}\\int_{0<|q|<\u039b}\\frac{d^{2}q}{(2\\pi)^{2}}\\frac{e^{iq\u22c5r}}{|q|^{2}+m_{n}^{2}}.\n$$\n\nEvidently, Equation (65) is equivalent to that obtained in a purely static setting from the Hamiltonian\n\n$$\nH=\\frac{1}{2}\\intd^{2}r[K|\u2207\\phi_{+}|^{2}+K|\u2207\\phi_{\u2212}|^{2}+m_{\u2212}^{2}\\phi_{\u2212}^{2}],\n$$\n\nof the non-interacting scalar fields $\\phi_{+}$ and $\\phi_{\u2212}$. Now, in the case of the \u2018massive\u2019 field $\\phi_{\u2212}$, the Fourier integral in Equation (65) converges to\n\n$$\nC_{\u2212\u2212}(r)=\\frac{k_{B}T}{2\\piK}K_{0}(\\frac{|r|}{\u2113_{\u03c7}}),\n$$\n\nin the range $|r|\u226ba$. Here, $K_{0}$ is a modified Bessel function of the second kind, whose asymptotic expansion at short and long distances is given by\n\n$$\nK_{0}(z)\u2248{\u2212\\gamma_{EM}\u2212log\u2061\\frac{z}{2}0<z\u226a1,\\sqrt{\\frac{\\pi}{2z}}e^{\u2212z}z\u226b1,\n$$\n\nwith $\\gamma_{EM}$ the Euler\u2013Mascheroni constant. In the case of the \u2018massless\u2018 field $\\phi_{+}$, on the other hand, the Fourier integral diverges in the infrared, but the correlation function $C_{++}(r)$ can still be computed as the Laplacian Green function on an infinite domain punctured by a hole of radius $a$ at the origin. Thus\n\n$$\nC_{++}(r)=\u2212\\frac{k_{B}T}{2\\piK}log\u2061\\frac{|r|}{a}.\n$$\n\nCombining this with Equations (67) and (69) yields the following expression for the correlation function\n\n$$\nC_{\u03d1\\phi}(r)=\u2212\\frac{k_{B}T}{2\\piK}[log\u2061\\frac{|r|}{a}+K_{0}(\\frac{|r|}{\u2113_{\u03c7}})],\n$$\n\nwhere $|r|\u226ba$. Finally, using Equation (50) and the asymptotic expansions of Equation (68) gives the following expression for the cross-correlation function\n\n$$\nC_{26}(r)\u223c{const.|r|\u226a\u2113_{\u03c7}(\\frac{|r|}{a})^{\u2212\u03b7_{26}}|r|\u226b\u2113_{\u03c7},\n$$\n\nwhere $\u03b7_{26}$ is an instance of the generic non-universal exponent\n\n$$\n\u03b7_{pp^{\u2032}}=\\frac{pp^{\u2032}k_{B}T}{2\\piK},\n$$\n\nin the specific case $p=2$ and $p^{\u2032}=6$. Lastly, when $\u03c7_{2,6}>0$, the same procedure can be carried out by expanding Equation (2c) about $\u03d1=\\phi\\pm\\pi/6$ and taking $\\phi_{+}=(\\phi+\u03d1)/2$ and $\\phi_{\u2212}=(\\phi\u2212\u03d1\\pm\\pi/6)/2$, from which one finds again Equation 72.\n",
+      "created_at": "2025-12-04T04:02:58.368448Z"
+    },
+    {
+      "id": "be01319f-0ec8-4921-a463-856ec3ba74a7",
+      "submission_id": "ddb72ef5-54fa-42de-9121-90838079a433",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Raymond E Goldstein, https://ror.org/013meh722 University of Cambridge United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.86400.sa0](https://doi.org/10.7554/eLife.86400.sa0)\n\nThis important work presents a hydrodynamic description of confluent epithelial monolayers that captures different forms of orientational order in a scale dependent fashion and couples this order with flows driven by active stresses. Solid evidence for the validity of this approach is provided by detailed numerical simulations of different model tissues. This work should be of interest to a broad range of biophysicists interested in tissue mechanics and active matter.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Raymond E Goldstein, https://ror.org/013meh722 University of Cambridge United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.86400.sa1](https://doi.org/10.7554/eLife.86400.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Hydrodynamics and multiscale order in confluent epithelia\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Aleksandra Walczak as the Senior Editor. We regret the long delay in furnishing this decision letter.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission. As you can see from the reviews, the referees are indeed supportive of your work, but in their very detailed reports, they request clarification on a number of points.\n\nEssential revisions:\n\n1) We find the tensorial notation used by the authors complicated, and would prefer to see tensor terms written with indices for clarity, but I acknowledge that this may be a matter of personal preference.\n\n2) Page 6 \u2013 the manuscript is referring to panel 2d which we think is not in the figure.\n\n3) We are not sure about the statement that the p-dependent structure makes the multi-scale nature of the system \u00ab\u00a0enormously more dramatic\u00a0\u00bb; as in many physical problems, several characteristic length scales are involved; It is unclear what the authors mean with this strong statement.\n\n4) We are unconvinced by the argument that the short wavelength scaling of density fluctuations is necessarily a fingerprint of small-scale hexatic order. The claim is all the more problematic if Eq. 8 is a small q expansion, in which case it is unclear if we should trust the large q-scaling. It is also entirely unclear how and why other non-hydrodynamic modes will not contribute to the scaling at large q. Eventually, at a single-cell level, all orientational modes should become important, not just the nematic and the hexatic ones. One way to point out the distinct imprint of hexatic order is to not simply plot S(q) for fixed qx=qy or angle-averaged, but rather to consider the full 2D plot in q-space. The nematic contribution has a characteristic singularity ~ qx qy/q4 at small q. The hexatic contribution should also give rise to a particular anisotropic structure in S(q) that could serve as a diagnostic and strengthen the point made in the paper.\n\nA useful reference and point of comparison in the equilibrium context is \u2013 Aeppli, G., and R. Bruinsma. \"Hexatic order and liquid density fluctuations.\" Physical Review Letters 53.22 (1984): 2133.\n\n5) The paper can also benefit by making a stronger comparison with existing literature on models for equilibrium liquid crystals with coupled order parameters that offer a null model. Some references are mentioned below.\n\nDynamics, thermodynamics, and optical scattering of tilted hexatics (coupled hexatic+polar tilt order, but much of the physics is very similar)\n\nDierker, S. B., and R. Pindak. \"Dynamics of thin tilted hexatic liquid crystal films.\" Physical review letters 59.9 (1987): 1002.\n\nSprunt, S., and J. D. Litster. \"Light-scattering study of bond orientational order in a tilted hexatic liquid-crystal film.\" Physical review letters 59.23 (1987): 2682.\n\nSelinger, Jonathan V. \"Dynamics of tilted hexatic phases in liquid-crystal films.\" Journal de Physique II 1.11 (1991): 1363-1373\n\nSelinger, Jonathan V., and David R. Nelson. \"Theory of transitions among tilted hexatic phases in liquid crystals.\" Physical Review A 39.6 (1989): 3135.\n\n6) Coupled hexatic-nematic models appear in certain liquid crystals (see e.g., Bruinsma, R., and G. Aeppli. \"Hexatic order and herring-bone packing in liquid crystals.\" Physical Review Letters 48.23 (1982): 1625.) These models can have unusual emergent Potts phases, where both order parameters are disordered with finite correlation lengths, but the relative angles between hexatic-nematic order parameters remain ordered \u2013 see recent work.\n\nDrouin-Touchette, Victor, et al. \"Emergent potts order in a coupled hexatic-nematic xy model.\" Physical Review X 12.1 (2022): 011043.\n\nIt may be interesting to ask if similar phenomena can occur in the active variant studied in this paper and if it may be potentially relevant for tissues.\n\n7) It is extremely unclear how the hexatic order parameter is microscopically defined; there seems to be no description given. Is the hexatic order parameter constructed from cell shape or from the distribution of `bonds' to neighboring cells? Are the two definitions equivalent when confluent? Presumably, the shape and bond angle hexatic order parameters can differ in a dense system of deformable particles that are not close-packed/confluent. The authors should comment on what the origin of the hexatic ordering is and how one may compute such an order parameter in reality.\n\nOn a related point, we fail to see why order parameter correlations are not measured and plotted to demonstrate in a straightforward way the claim of hexatic and nematic order being present on different length scales. Such calculations are presented elsewhere in recent preprints by some of the authors when analyzing experimental data though.\n\n8) Although emphasizing multiscale aspects, the model crucially neglects any mechanism of feedback. Active couplings other than the active stress, e.g., nonreciprocal cross terms aligning the two order parameters, are neglected, though they are likely to be more dominant in a gradient expansion compared to the hexatic contribution to the active stress.\n\nFurthermore, while substrate friction is included, traction forces (polar active forces) that are commonly exerted by cells are also neglected, which could presumably also dominate over hexatic degrees of freedom, even when randomized.\n\n9) Equation 3-5: It would be helpful if the notation could be fixed and either \u03c3a or Pi is used. The relationship between the two is quite confusing at the moment.\n\nAlso, sign conventions should be explained: is \u03b12>0 contractile, and if so then does the relation with f have an extra minus sign? Also, Eq. 5 suggests that \u03b16 should have the same sign as \u03b12, yet in the simulations opposite signs are chosen. What is its meaning and the relation between isotropic/hexatic and nematic extensile or contractile activity?\n\nIt would also help to point out how the ratio of l2 and l6 (Eq. 7) differ by a ratio of the cell size to the conventional active nematic length (l2).\n\nThe sign of \u03be2,6 affects the alignment between Q2 and Q6, how does its sign affect the density and orientational correlations?\n",
+      "created_at": "2025-12-04T04:02:58.368448Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T04:02:58.368448Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T04:02:58.368448Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "053141e2-1ef7-4c6b-93a4-fa2af2ddd177",
+      "content_id": "e94a3f3f-9eff-4d18-8c17-ef5f82d6920a",
+      "claim_id": "C1",
+      "claim": "Collectively migrating epithelia feature both nematic (p = 2) and hexatic (p = 6) orders.",
+      "claim_type": "EXPLICIT",
+      "source": "we demonstrate that collectively migrating epithelia feature both nematic (i.e. p = 2) and hexatic (i.e. p = 6) orders, with the former being dominant at large and the latter at small length scales.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the hydrodynamic theory developed in the manuscript and validated against cell-resolved models.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:02:58.368448Z"
+    },
+    {
+      "id": "184a78cf-55e6-4419-9056-3c8256bfcff3",
+      "content_id": "e94a3f3f-9eff-4d18-8c17-ef5f82d6920a",
+      "claim_id": "C2",
+      "claim": "Nematic order is dominant at large length scales in epithelia.",
+      "claim_type": "EXPLICIT",
+      "source": "we demonstrate that collectively migrating epithelia feature both nematic (i.e. p = 2) and hexatic (i.e. p = 6) orders, with the former being dominant at large and the latter at small length scales.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript presents theoretical predictions and numerical simulations showing nematic dominance at large scales.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:02:58.368448Z"
+    },
+    {
+      "id": "56aa8554-68d3-4733-877f-838186166ae3",
+      "content_id": "e94a3f3f-9eff-4d18-8c17-ef5f82d6920a",
+      "claim_id": "C3",
+      "claim": "Hexatic order is dominant at small length scales in epithelia.",
+      "claim_type": "EXPLICIT",
+      "source": "we demonstrate that collectively migrating epithelia feature both nematic (i.e. p = 2) and hexatic (i.e. p = 6) orders, with the former being dominant at large and the latter at small length scales.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript presents theoretical predictions and numerical simulations showing hexatic dominance at small scales.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:02:58.368448Z"
+    },
+    {
+      "id": "eddc9ec5-eef3-40cf-9f08-c29e853f231f",
+      "content_id": "e94a3f3f-9eff-4d18-8c17-ef5f82d6920a",
+      "claim_id": "C4",
+      "claim": "The structure factor of epithelia exhibits two different power-law scaling regimes.",
+      "claim_type": "EXPLICIT",
+      "source": "Such a remarkable multiscale liquid crystal order leaves a distinct signature in the system's structure factor, which exhibits two different power-law scaling regimes, reflecting both the hexagonal geometry of small cells clusters and the uniaxial structure of the global cellular flow.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through analytical calculations and numerical simulations presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:02:58.368448Z"
+    },
+    {
+      "id": "4e813841-f265-4062-91e7-f4c8e0f7bb47",
+      "content_id": "e94a3f3f-9eff-4d18-8c17-ef5f82d6920a",
+      "claim_id": "C5",
+      "claim": "The two power-law scaling regimes in the structure factor reflect the hexagonal geometry of small cell clusters and the uniaxial structure of global cellular flow.",
+      "claim_type": "EXPLICIT",
+      "source": "Such a remarkable multiscale liquid crystal order leaves a distinct signature in the system's structure factor, which exhibits two different power-law scaling regimes, reflecting both the hexagonal geometry of small cells clusters and the uniaxial structure of the global cellular flow.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides theoretical interpretation linking the structure factor to underlying geometrical and flow properties.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:02:58.368448Z"
+    },
+    {
+      "id": "15065c46-9759-4b06-a0c9-b9a7d0d0c00b",
+      "content_id": "e94a3f3f-9eff-4d18-8c17-ef5f82d6920a",
+      "claim_id": "C8",
+      "claim": "Multiscale order has been observed in layers of Madin-Darby canine kidney cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Our construction provides a theoretical framework to conceptualize the recent observation of multiscale order in layers of Madin\u2013Darby canine kidney cells and pave the way for further theoretical developments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This refers to recent experimental observations cited in the manuscript.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:02:58.368448Z"
+    },
+    {
+      "id": "7d753e04-f057-41d7-83a6-670ce70866e7",
+      "content_id": "e94a3f3f-9eff-4d18-8c17-ef5f82d6920a",
+      "claim_id": "C10",
+      "claim": "Multicellular systems can move coherently within their micro-environment while retaining cell-cell contacts.",
+      "claim_type": "EXPLICIT",
+      "source": "Whether spreading on a synthetic substrate (Serra-Picamal et al., 2012) or invading the extracellular matrix (Haeger et al., 2020), multicellular systems can move coherently within their micro-environment and coordinate the dynamics of their actin cytoskeleton, while retaining cell\u2013cell contacts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cited experimental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:02:58.368448Z"
+    },
+    {
+      "id": "a5291831-2c4a-46e7-ad17-2988bebbf4ee",
+      "content_id": "e94a3f3f-9eff-4d18-8c17-ef5f82d6920a",
+      "claim_id": "C11",
+      "claim": "Collective cell migration is instrumental for embryonic morphogenesis and wound healing.",
+      "claim_type": "EXPLICIT",
+      "source": "This ability lies at the heart of a myriad of processes that are instrumental for life, such as embryonic morphogenesis and wound healing, but also of life-threatening conditions, such as metastatic cancer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established biological knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:02:58.368448Z"
+    },
+    {
+      "id": "2830a8b8-0f55-43b3-a42d-dbc306d0cc9e",
+      "content_id": "e94a3f3f-9eff-4d18-8c17-ef5f82d6920a",
+      "claim_id": "C12",
+      "claim": "Collective cell migration is involved in metastatic cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "This ability lies at the heart of a myriad of processes that are instrumental for life, such as embryonic morphogenesis and wound healing, but also of life-threatening conditions, such as metastatic cancer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established biological knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:02:58.368448Z"
+    },
+    {
+      "id": "dd4e20a2-5231-4bd5-a7ef-557f0adc6cca",
+      "content_id": "e94a3f3f-9eff-4d18-8c17-ef5f82d6920a",
+      "claim_id": "C13",
+      "claim": "Cell-resolved models have played a leading role in understanding collective cell migration.",
+      "claim_type": "EXPLICIT",
+      "source": "Following the pioneering works by Honda, 1978; Nagai and Honda, 2001; Farhadifar et al., 2007; Bi et al., 2015; Bi et al., 2016, and others (Boromand et al., 2018; Mueller et al., 2019; Loewe et al., 2020; Monfared et al., 2021), cell-resolved models have played so far the leading role in this endeavour.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to pioneering works.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:02:58.368448Z"
+    },
+    {
+      "id": "4b548d6b-2633-4ca6-add8-9a504b900ddf",
+      "content_id": "e94a3f3f-9eff-4d18-8c17-ef5f82d6920a",
+      "claim_id": "C14",
+      "claim": "Cell-resolved models portray confluent tissue as a collection of adjacent or overlapping polygonal cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Taking inspiration from the physics of foams (Graner et al., 2008; Marmottant et al., 2008), these models portray a confluent tissue as a collection of adjacent or overlapping polygonal cells (Figure 1a, b), whose dynamics is assumed to be governed by a set of overdamped Langevin equations, expressing the interplay between cells' autonomous motion and remodeling events, which change the local topology of the cellular networks.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is described in the text and illustrated in Figure 1.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:02:58.368448Z"
+    },
+    {
+      "id": "dbe0f7f1-ab6b-4497-865b-8bc0861fd387",
+      "content_id": "e94a3f3f-9eff-4d18-8c17-ef5f82d6920a",
+      "claim_id": "C15",
+      "claim": "Cell-resolved models agree remarkably well with experimental data on confluent monolayers.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite their conceptual simplicity, cell-resolved models agree remarkably well with experimental data on confluent monolayers (Park et al., 2015; Atia et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cited experimental comparisons.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:02:58.368448Z"
+    },
+    {
+      "id": "2312338e-c8ad-4824-9eec-6959d7a832b2",
+      "content_id": "e94a3f3f-9eff-4d18-8c17-ef5f82d6920a",
+      "claim_id": "C16",
+      "claim": "Cell-resolved models account for a solid-to-liquid transition controlled by cell velocity and compliance to deformations.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular they account for a solid-to-liquid transition controlled by the cells velocity and their compliance to deformations (Bi et al., 2015; Bi et al., 2016; Loewe et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cited modeling studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:02:58.368448Z"
+    },
+    {
+      "id": "e053f730-2e17-4eb7-8422-fac59b6a2e91",
+      "content_id": "e94a3f3f-9eff-4d18-8c17-ef5f82d6920a",
+      "claim_id": "C17",
+      "claim": "The solid and isotropic liquid states of model-epithelia are separated by an intermediate hexatic phase.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, as demonstrated by Pica Ciamarra and coworkers, the solid and isotropic liquid states of these model-epithelia are separated by an intermediate hexatic phase, in which the system exhibits the typical sixfold rotational symmetry of two-dimensional crystals and yet is able to flow (Li and Ciamarra, 2018; Pasupalak et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cited computational studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:02:58.368448Z"
+    },
+    {
+      "id": "463b6536-a077-4a9d-84b5-d66b8437cd52",
+      "content_id": "e94a3f3f-9eff-4d18-8c17-ef5f82d6920a",
+      "claim_id": "C18",
+      "claim": "The hexatic phase exhibits sixfold rotational symmetry and is able to flow.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, as demonstrated by Pica Ciamarra and coworkers, the solid and isotropic liquid states of these model-epithelia are separated by an intermediate hexatic phase, in which the system exhibits the typical sixfold rotational symmetry of two-dimensional crystals and yet is able to flow (Li and Ciamarra, 2018; Pasupalak et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cited computational studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:02:58.368448Z"
+    },
+    {
+      "id": "38c345b8-1340-49f5-b55a-69c708fd2f7e",
+      "content_id": "e94a3f3f-9eff-4d18-8c17-ef5f82d6920a",
+      "claim_id": "C19",
+      "claim": "Hexatic order has been recovered within the framework of the cellular Potts model.",
+      "claim_type": "EXPLICIT",
+      "source": "Shortly after discovery, the same property has been recovered within the framework of the cellular Potts model, thereby strengthening the idea that hexatic order may in fact serve as a guiding principle to unravel the collective dynamics of confluent epithelia (Durand and Heu, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a cited study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:02:58.368448Z"
+    },
+    {
+      "id": "f7662128-0ca6-4cad-a6ed-f8a6013178bb",
+      "content_id": "e94a3f3f-9eff-4d18-8c17-ef5f82d6920a",
+      "claim_id": "C20",
+      "claim": "In vitro studies of MDCK cell layers demonstrated that epithelial layers can feature both nematic and hexatic orders.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, recent in vitro studies of Madin\u2013Darby canine kidney (MDCK) cell layers demonstrated that epithelial layers can in fact feature both nematic and hexatic orders, with the former being dominant at large and the latter at short length scales (see Figure 1a, b and Armengol-Collado et al., 2023; Eckert et al., 2023).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by cited experimental studies and illustrated in Figure 1.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:02:58.368448Z"
+    },
+    {
+      "id": "cea45b5b-0948-452a-a209-fa2934c721b9",
+      "content_id": "e94a3f3f-9eff-4d18-8c17-ef5f82d6920a",
+      "claim_id": "C21",
+      "claim": "Multiscale hexanematic order is believed to complement the complex network of regulatory pathways for multicellular organization.",
+      "claim_type": "EXPLICIT",
+      "source": "This remarkable example of physical organization in biological matter, referred to as multiscale hexanematic order in Armengol-Collado et al., 2023, is believed to complement the complex network or regulatory pathways available to individual cells to achieve multicellular organization and select specific scale-dependent collective migration strategies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation based on cited work.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:02:58.368448Z"
+    },
+    {
+      "id": "de60c995-ddd1-4cea-bcf3-3b477fee0713",
+      "content_id": "e94a3f3f-9eff-4d18-8c17-ef5f82d6920a",
+      "claim_id": "C22",
+      "claim": "Previous theories of epithelial hydrodynamics are based on isotropic/polar/nematic active gels.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous theories of epithelial hydrodynamics can be schematically grouped in two categories: (1) models based on (isotropic/polar/nematic) active gels (Ranft et al., 2010; Popovi\u0107 et al., 2017; P\u00e9rez-Gonz\u00e1lez et al., 2019);",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This categorizes existing literature with citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:02:58.368448Z"
+    },
+    {
+      "id": "1e9f3d06-5522-4435-8663-036e13959d61",
+      "content_id": "e94a3f3f-9eff-4d18-8c17-ef5f82d6920a",
+      "claim_id": "C23",
+      "claim": "Previous theories of epithelial hydrodynamics are built around the shape tensor.",
+      "claim_type": "EXPLICIT",
+      "source": "(2) models built around the so-called shape tensor (Ishihara et al., 2017; Czajkowski et al., 2018; Hernandez and Marchetti, 2021; Grossman and Joanny, 2022), i.e. a rank-2 tensor, similar to the inertia tensor in kinematics, that embodies the geometrical structure of the polygonal cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This categorizes existing literature with citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:02:58.368448Z"
+    },
+    {
+      "id": "6930ef91-1a47-44ca-b0b8-563d1814d137",
+      "content_id": "e94a3f3f-9eff-4d18-8c17-ef5f82d6920a",
+      "claim_id": "C24",
+      "claim": "Previous hydrodynamic models can account at most for twofold rotational symmetry (nematic order).",
+      "claim_type": "EXPLICIT",
+      "source": "Although both classes of models hold great heuristic value and represent a solid foundation for any future development, they suffer from the same limitation: being based on a tensorial order parameter whose rank is two or less, they can account at most for twofold rotational symmetry (i.e. nematic order), while leaving the small-scale hexatic order unresolved.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference from the mathematical structure of existing models.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:02:58.368448Z"
+    },
+    {
+      "id": "fc543c59-0c08-4a85-8bea-41ebfecd4e15",
+      "content_id": "e94a3f3f-9eff-4d18-8c17-ef5f82d6920a",
+      "claim_id": "C25",
+      "claim": "Previous hydrodynamic models leave small-scale hexatic order unresolved.",
+      "claim_type": "EXPLICIT",
+      "source": "Although both classes of models hold great heuristic value and represent a solid foundation for any future development, they suffer from the same limitation: being based on a tensorial order parameter whose rank is two or less, they can account at most for twofold rotational symmetry (i.e. nematic order), while leaving the small-scale hexatic order unresolved.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference from the mathematical structure of existing models.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:02:58.368448Z"
+    },
+    {
+      "id": "8c91e9c2-36db-4168-b1f9-dbd1450b5be5",
+      "content_id": "e94a3f3f-9eff-4d18-8c17-ef5f82d6920a",
+      "claim_id": "C26",
+      "claim": "Multiscale order is inherent to active liquid crystals with coupled order parameters.",
+      "claim_type": "EXPLICIT",
+      "source": "We demonstrate that multiscale order is inherent to active liquid crystals with coupled order parameters, because of the indissoluble connection between shape and forces characterizing this class of non-equilibrium systems.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through the theoretical framework developed in the manuscript.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:02:58.368448Z"
+    },
+    {
+      "id": "ca7206c6-0b92-4f2e-b63b-c7e6dd1eefef",
+      "content_id": "e94a3f3f-9eff-4d18-8c17-ef5f82d6920a",
+      "claim_id": "C27",
+      "claim": "The indissoluble connection between shape and forces characterizes active liquid crystals with coupled order parameters.",
+      "claim_type": "EXPLICIT",
+      "source": "We demonstrate that multiscale order is inherent to active liquid crystals with coupled order parameters, because of the indissoluble connection between shape and forces characterizing this class of non-equilibrium systems.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical insight from the hydrodynamic formulation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:02:58.368448Z"
+    },
+    {
+      "id": "6b36ea56-0a2e-4426-abe1-3aafbeeda6a9",
+      "content_id": "e94a3f3f-9eff-4d18-8c17-ef5f82d6920a",
+      "claim_id": "C28",
+      "claim": "The structure factor exhibits two different power-law scaling regimes at small and large length scales.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently with our linear analysis, both data sets exhibit two different power-law scaling regimes at small and large length scales.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through numerical simulations of cell-resolved models.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:02:58.368448Z"
+    },
+    {
+      "id": "5e24a617-abd3-4de3-90c2-3e364d3ed96c",
+      "content_id": "e94a3f3f-9eff-4d18-8c17-ef5f82d6920a",
+      "claim_id": "C30",
+      "claim": "At large length scales, the structure factor scales like an inverse power law with exponent consistent with active nematics.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, at large length scales, the structure factor scales like an inverse power law, with exponent consistent with the large-scale behavior of active nematics (Chat\u00e9, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through numerical simulations and comparison with known active nematic behavior.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:02:58.368448Z"
+    },
+    {
+      "id": "32f0aabc-5971-4916-a2d4-89fb122582ad",
+      "content_id": "e94a3f3f-9eff-4d18-8c17-ef5f82d6920a",
+      "claim_id": "C37",
+      "claim": "The cross-correlation function exhibits an oscillatory behavior at short distances in the active case.",
+      "claim_type": "EXPLICIT",
+      "source": "In this case, the cross-correlation function exhibits an oscillatory behavior at short distances and vanishes at a length scale that becomes progressively large as the hexatic activity is increased.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through numerical integration of the hydrodynamic equations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:02:58.368448Z"
+    },
+    {
+      "id": "a3b1eee1-f58d-4b68-b455-dd14a064a7ba",
+      "content_id": "e94a3f3f-9eff-4d18-8c17-ef5f82d6920a",
+      "claim_id": "C38",
+      "claim": "The cross-correlation function vanishes at a length scale that becomes progressively large as hexatic activity is increased.",
+      "claim_type": "EXPLICIT",
+      "source": "In this case, the cross-correlation function exhibits an oscillatory behavior at short distances and vanishes at a length scale that becomes progressively large as the hexatic activity is increased.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through numerical integration of the hydrodynamic equations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:02:58.368448Z"
+    },
+    {
+      "id": "9d700ed4-e87f-4c11-8926-6230c71dd4e1",
+      "content_id": "e94a3f3f-9eff-4d18-8c17-ef5f82d6920a",
+      "claim_id": "C39",
+      "claim": "There exists a hierarchy of orientationally ordered structures nested into each other at different length scales.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently with our previous analysis, this latter feature confirms the existence of a hierarchy of orientationally ordered structures nested into each other at different length scales.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the behavior of the cross-correlation function.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:02:58.368448Z"
+    },
+    {
+      "id": "bb56ec3b-ed94-426d-87ef-7cd6de90e407",
+      "content_id": "e94a3f3f-9eff-4d18-8c17-ef5f82d6920a",
+      "claim_id": "C40",
+      "claim": "Large-scale nematic order could arise from the self-organization of microscopic force hexapoles into force chains.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas the origin of hexanematic order is still a matter of investigation, the current experimental and numerical evidence suggests that, similarly to granular materials (Majmudar and Behringer, 2005), large-scale nematic order could arise from the self-organization of the microscopic force hexapoles into force chains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation based on analogy with granular materials.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:02:58.368448Z"
+    },
+    {
+      "id": "b2e16b2c-a8df-4672-91f6-254cb46717f6",
+      "content_id": "e94a3f3f-9eff-4d18-8c17-ef5f82d6920a",
+      "claim_id": "C41",
+      "claim": "Linear arrays of cells simultaneously undergo apical constriction in the ventral furrow region during Drosophila gastrulation.",
+      "claim_type": "EXPLICIT",
+      "source": "The possibility of similarity between these two phenomena has also been in relation to the initial phase of Drosophila gastrulation, where linear arrays of cells simultaneously undergo apical constriction in the ventral furrow region (Jason Gao et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a cited study on Drosophila development.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:02:58.368448Z"
+    },
+    {
+      "id": "8847e9ad-a081-4e24-8a35-d51fc591567c",
+      "content_id": "e94a3f3f-9eff-4d18-8c17-ef5f82d6920a",
+      "claim_id": "C42",
+      "claim": "Hexatic order may be relevant for short-scale remodeling events.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the consequences of such a remarkable versatility are yet to be explored, we expect hexatic order to be relevant for short-scale remodeling events, where the local nature of hexatic order, combined with the rich dynamics of hexatic defects (Zippelius et al., 1980; Amir and Nelson, 2012), may mediate processes such as cell intercalations and the rearrangement of multicellular rosettes (Blankenship et al., 2006; Rauzi, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative prediction based on the properties of hexatic order.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:02:58.368448Z"
+    },
+    {
+      "id": "b26e93e3-c586-4dd0-a3e5-7aec26878011",
+      "content_id": "e94a3f3f-9eff-4d18-8c17-ef5f82d6920a",
+      "claim_id": "C43",
+      "claim": "Hexatic order may mediate processes such as cell intercalations and the rearrangement of multicellular rosettes.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the consequences of such a remarkable versatility are yet to be explored, we expect hexatic order to be relevant for short-scale remodeling events, where the local nature of hexatic order, combined with the rich dynamics of hexatic defects (Zippelius et al., 1980; Amir and Nelson, 2012), may mediate processes such as cell intercalations and the rearrangement of multicellular rosettes (Blankenship et al., 2006; Rauzi, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative prediction based on the properties of hexatic order.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:02:58.368448Z"
+    },
+    {
+      "id": "afc2b585-7a65-4e48-8699-f0b932d0cdfd",
+      "content_id": "e94a3f3f-9eff-4d18-8c17-ef5f82d6920a",
+      "claim_id": "C44",
+      "claim": "Local motion may be coordinated at the large scale by underlying nematic order.",
+      "claim_type": "EXPLICIT",
+      "source": "Such a local motion, in turn, may be coordianted at the large scale by the underlying nematic order, giving rise to a persistent unidirectional flow, such as that observed during wound healing and cancer progression (Friedl and Gilmour, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative prediction about how multiscale order coordinates cellular behavior.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:02:58.368448Z"
+    },
+    {
+      "id": "d1946588-23ce-4b3b-a416-698c264469de",
+      "content_id": "e94a3f3f-9eff-4d18-8c17-ef5f82d6920a",
+      "claim_id": "C45",
+      "claim": "The epithelial and mesenchymal states represent the two ends of a spectrum of intermediate phenotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the existence of multiscale liquid crystal order echoes the most recent understanding of phenotypic plasticity in tissues, according to which the epithelial (i.e. solid-like) and mesenchymal (i.e. liquid-like) states represent the two ends of a spectrum of intermediate phenotypes (Zhang and Weinberg, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a cited review on phenotypic plasticity.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:02:58.368448Z"
+    },
+    {
+      "id": "97654389-55b6-497e-97df-b841e729ecb5",
+      "content_id": "e94a3f3f-9eff-4d18-8c17-ef5f82d6920a",
+      "claim_id": "C46",
+      "claim": "Intermediate phenotypes display distinctive cellular characteristics including adhesion, motility, stemness, and invasiveness.",
+      "claim_type": "EXPLICIT",
+      "source": "These intermediate states display distinctive cellular characteristics, including adhesion, motility, stemness and, in the case of cancer cells, invasiveness, drug resistance, etc.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about epithelial-mesenchymal transition states.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:02:58.368448Z"
+    },
+    {
+      "id": "e915d89f-2828-465e-9ffa-5e4d9a3069f8",
+      "content_id": "e94a3f3f-9eff-4d18-8c17-ef5f82d6920a",
+      "claim_id": "C52",
+      "claim": "The first term in the active stress expression results from contractile or extensile forces exerted at the length scale of individual cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The first term on the right-hand side of Equation 3 is the stress resulting from the contractile or extensile forces exerted at the length scale of individual cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explained through a detailed derivation in the manuscript.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:02:58.368448Z"
+    },
+    {
+      "id": "cd30acd9-4a33-4cd3-a884-7888ad16e438",
+      "content_id": "e94a3f3f-9eff-4d18-8c17-ef5f82d6920a",
+      "claim_id": "C55",
+      "claim": "The hydrodynamic theory entails two length scales reflecting the distance at which passive torques counterbalance active stresses.",
+      "claim_type": "EXPLICIT",
+      "source": "Crucially, Equation 3, Equation 6a entail two length scales, reflecting the distance at which the passive torques originating from the entropic elasticity of the nematic and hexatic phases counterbalance those arising from the active stresses:",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is derived from the mathematical structure of the hydrodynamic equations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:02:58.368448Z"
+    },
+    {
+      "id": "5c8d9a14-c10f-41ef-984f-09b20429caa4",
+      "content_id": "e94a3f3f-9eff-4d18-8c17-ef5f82d6920a",
+      "claim_id": "C56",
+      "claim": "\u2113\u2082 is the active nematic length scale.",
+      "claim_type": "EXPLICIT",
+      "source": "The former is the well-known active nematic length scale, dictating both the hydrodynamic stability (Voituriez et al., 2005) and the large-scale structure of spatiotemporal chaos in active nematics (Giomi, 2015) and whose signature in multicellular systems has been identified in both eukaryotes (Blanch-Mercader et al., 2018) and prokaryotes (You et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to studies on active nematics.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:02:58.368448Z"
+    },
+    {
+      "id": "8151b382-b30b-467c-86c5-8faf9636797b",
+      "content_id": "e94a3f3f-9eff-4d18-8c17-ef5f82d6920a",
+      "claim_id": "C57",
+      "claim": "\u2113\u2086 sets the typical size of hexatic domains at small length scales.",
+      "claim_type": "EXPLICIT",
+      "source": "The latter, on the other hand, sets the typical size of hexatic domains at the small length scale.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the mathematical structure of the theory.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:02:58.368448Z"
+    },
+    {
+      "id": "10a37b81-f484-4088-90ff-7ccf24ecb375",
+      "content_id": "e94a3f3f-9eff-4d18-8c17-ef5f82d6920a",
+      "claim_id": "C67",
+      "claim": "The self-propelled Voronoi model approximates a confluent cell layer as a Voronoi tessellation of the plane.",
+      "claim_type": "EXPLICIT",
+      "source": "In the self-propelled Voronoi model (Bi et al., 2016) a confluent cell layer is approximated as a Voronoi tessellation of the plane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the SPV model with citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:02:58.368448Z"
+    },
+    {
+      "id": "def88eb5-e413-4050-896b-2b9cbba1ddde",
+      "content_id": "e94a3f3f-9eff-4d18-8c17-ef5f82d6920a",
+      "claim_id": "C69",
+      "claim": "The dynamics of cells in the SPV model is governed by overdamped Langevin equations.",
+      "claim_type": "EXPLICIT",
+      "source": "The dynamics of these variables is governed by the following set of overdamped Langevin equations, expressing the interplay between cells' autonomous motion and the remodeling events that underlie the tissue's collective dynamics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the SPV model dynamics.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:02:58.368448Z"
+    },
+    {
+      "id": "795eb4e4-199d-4373-8029-1b2fbc7a2dbf",
+      "content_id": "e94a3f3f-9eff-4d18-8c17-ef5f82d6920a",
+      "claim_id": "C71",
+      "claim": "The MPF model has been used to study the dynamics of confluent cell monolayers.",
+      "claim_type": "EXPLICIT",
+      "source": "This model has been used to study the dynamics of confluent cell monolayers (Loewe et al., 2020) and the mechanics of cell extrusion (Monfared et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This cites applications of the MPF model.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:02:58.368448Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "249be6d1-2745-466f-8be0-31af31aa2c05",
+      "content_id": "e94a3f3f-9eff-4d18-8c17-ef5f82d6920a",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors demonstrate that collectively migrating epithelia exhibit multiscale hexanematic order, with nematic (p=2) order dominant at large length scales and hexatic (p=6) order dominant at small length scales. This multiscale organization leaves distinct signatures in the structure factor (two power-law scaling regimes) and cross-correlation functions, arising from the inherent coupling between shape and forces in active liquid crystals with coupled order parameters.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C5, C26-C28, C30, C37-C39 collectively provide strong theoretical and computational evidence for multiscale hexanematic order. The hydrodynamic theory (C26-C27) predicts this behavior, which is validated through analytical calculations of structure factors (C4-C5, C28, C30) and cross-correlation functions (C37-C39), and confirmed by numerical simulations of two independent cell-resolved models (SPV and MPF). The convergence of theoretical predictions with computational results from multiple models provides robust support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:02:58.368448Z"
+    },
+    {
+      "id": "ff7e107c-8013-4f9d-8074-f236cdf13c79",
+      "content_id": "e94a3f3f-9eff-4d18-8c17-ef5f82d6920a",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The hydrodynamic theory entails two characteristic length scales: \u2113\u2082 (active nematic length scale) and \u2113\u2086 (hexatic domain size), which reflect the distances at which passive torques from entropic elasticity counterbalance active stresses. These length scales determine the spatial organization of nematic and hexatic orders.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C57 are well-supported by the mathematical derivation in Equation 7 and the theoretical framework. The existence of these length scales follows logically from the balance between active stresses (\u03b1\u2082, \u03b1\u2086) and elastic constants (L\u2082, L\u2086). The active nematic length scale \u2113\u2082 is well-established in prior literature (C56), and the hexatic length scale \u2113\u2086 follows from analogous reasoning (C57).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:02:58.368448Z"
+    },
+    {
+      "id": "73eff33a-9f29-46f8-8567-9cb27a48f9e5",
+      "content_id": "e94a3f3f-9eff-4d18-8c17-ef5f82d6920a",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The first term in the active stress expression (Equation 3) results from contractile or extensile forces exerted at the length scale of individual cells, arising from p-fold symmetric force complexions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C52 is supported by the detailed theoretical derivation in Equations 4-5, which explicitly connects the microscopic force complexion at cell vertices to the macroscopic active stress tensor. The derivation shows how p-fold symmetric forces at the cellular scale contribute to the phenomenological parameter \u03b1_p, providing a clear physical interpretation grounded in force balance at cell junctions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:02:58.368448Z"
+    },
+    {
+      "id": "49002fa7-6c7f-4367-8942-264aad6d0a1c",
+      "content_id": "e94a3f3f-9eff-4d18-8c17-ef5f82d6920a",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Previous hydrodynamic models of epithelia, based on tensorial order parameters of rank two or less, can account at most for twofold rotational symmetry (nematic order) while leaving small-scale hexatic order unresolved.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C25 are supported by mathematical reasoning about the limitations of rank-2 tensors and citations to prior work (C22-C23). The argument is logically sound: rank-2 tensors can only capture p=2 symmetry, making it mathematically impossible to represent p=6 hexatic order. This limitation is a fundamental consequence of tensor algebra and provides clear motivation for the current work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:02:58.368448Z"
+    },
+    {
+      "id": "c888511a-c151-45a6-8c47-cd06e55406a1",
+      "content_id": "e94a3f3f-9eff-4d18-8c17-ef5f82d6920a",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Recent in vitro experiments on MDCK cell layers have demonstrated that epithelial layers feature both nematic and hexatic orders, with nematic order dominant at large scales and hexatic order at short scales.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20 and C8 are supported by citations to recent experimental studies (Armengol-Collado et al., 2023; Eckert et al., 2023) and illustrated in Figure 1. These experimental observations provide the empirical foundation motivating the theoretical framework developed in this manuscript. The claims accurately represent prior experimental findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:02:58.368448Z"
+    },
+    {
+      "id": "79b36411-c8f3-4c00-a16e-2ef403db7895",
+      "content_id": "e94a3f3f-9eff-4d18-8c17-ef5f82d6920a",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Large-scale nematic order could arise from self-organization of microscopic force hexapoles into force chains, similar to granular materials. This mechanism may be relevant to processes like apical constriction during Drosophila gastrulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C40-C41 are speculative interpretations based on analogy with granular materials and cited developmental biology observations. While the analogy is plausible and supported by citations, the manuscript explicitly states this origin 'is still a matter of investigation' and provides no direct evidence for this mechanism. The claims represent reasonable hypotheses requiring future experimental validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:02:58.368448Z"
+    },
+    {
+      "id": "70b7e388-b04f-45e1-89c2-7409db09945a",
+      "content_id": "e94a3f3f-9eff-4d18-8c17-ef5f82d6920a",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Hexatic order may be relevant for short-scale remodeling events such as cell intercalations and multicellular rosette rearrangements, while nematic order may coordinate large-scale persistent unidirectional flow during wound healing and cancer progression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C42-C44 are explicitly speculative predictions ('we expect', 'may mediate', 'may be coordinated') about biological consequences of multiscale order. While these predictions are plausible given the properties of hexatic and nematic orders, the manuscript provides no experimental or computational evidence demonstrating these specific biological functions. These represent testable hypotheses for future work rather than established results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:02:58.368448Z"
+    },
+    {
+      "id": "f03109ba-f7dd-4913-9b64-9dde76112e10",
+      "content_id": "e94a3f3f-9eff-4d18-8c17-ef5f82d6920a",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Background claims establishing the biological context of collective cell migration, the role of cell-resolved models, properties of hexatic phases in model epithelia, and connections to epithelial-mesenchymal phenotypic plasticity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C23, C45-C46 are well-supported by extensive citations to established literature and represent accepted knowledge in the field. These claims provide essential context for the manuscript's contributions but do not constitute novel findings. The citations are appropriate and the characterizations of prior work appear accurate.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:02:58.368448Z"
+    },
+    {
+      "id": "c27a8981-4476-4da9-a178-205c897549ed",
+      "content_id": "e94a3f3f-9eff-4d18-8c17-ef5f82d6920a",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The self-propelled Voronoi (SPV) model approximates confluent cell layers as Voronoi tessellations with dynamics governed by overdamped Langevin equations, while the multiphase field (MPF) model has been used to study confluent monolayer dynamics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67, C69, C71 accurately describe established computational models with appropriate citations (Bi et al., 2016; Loewe et al., 2020; Monfared et al., 2021). These descriptions are consistent with the cited literature and provide necessary methodological context for the numerical validation presented in the manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:02:58.368448Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "053141e2-1ef7-4c6b-93a4-fa2af2ddd177",
+      "result_id": "249be6d1-2745-466f-8be0-31af31aa2c05"
+    },
+    {
+      "claim_id": "184a78cf-55e6-4419-9056-3c8256bfcff3",
+      "result_id": "249be6d1-2745-466f-8be0-31af31aa2c05"
+    },
+    {
+      "claim_id": "56aa8554-68d3-4733-877f-838186166ae3",
+      "result_id": "249be6d1-2745-466f-8be0-31af31aa2c05"
+    },
+    {
+      "claim_id": "eddc9ec5-eef3-40cf-9f08-c29e853f231f",
+      "result_id": "249be6d1-2745-466f-8be0-31af31aa2c05"
+    },
+    {
+      "claim_id": "4e813841-f265-4062-91e7-f4c8e0f7bb47",
+      "result_id": "249be6d1-2745-466f-8be0-31af31aa2c05"
+    },
+    {
+      "claim_id": "8c91e9c2-36db-4168-b1f9-dbd1450b5be5",
+      "result_id": "249be6d1-2745-466f-8be0-31af31aa2c05"
+    },
+    {
+      "claim_id": "ca7206c6-0b92-4f2e-b63b-c7e6dd1eefef",
+      "result_id": "249be6d1-2745-466f-8be0-31af31aa2c05"
+    },
+    {
+      "claim_id": "6b36ea56-0a2e-4426-abe1-3aafbeeda6a9",
+      "result_id": "249be6d1-2745-466f-8be0-31af31aa2c05"
+    },
+    {
+      "claim_id": "5e24a617-abd3-4de3-90c2-3e364d3ed96c",
+      "result_id": "249be6d1-2745-466f-8be0-31af31aa2c05"
+    },
+    {
+      "claim_id": "32f0aabc-5971-4916-a2d4-89fb122582ad",
+      "result_id": "249be6d1-2745-466f-8be0-31af31aa2c05"
+    },
+    {
+      "claim_id": "a3b1eee1-f58d-4b68-b455-dd14a064a7ba",
+      "result_id": "249be6d1-2745-466f-8be0-31af31aa2c05"
+    },
+    {
+      "claim_id": "9d700ed4-e87f-4c11-8926-6230c71dd4e1",
+      "result_id": "249be6d1-2745-466f-8be0-31af31aa2c05"
+    },
+    {
+      "claim_id": "cd30acd9-4a33-4cd3-a884-7888ad16e438",
+      "result_id": "ff7e107c-8013-4f9d-8074-f236cdf13c79"
+    },
+    {
+      "claim_id": "5c8d9a14-c10f-41ef-984f-09b20429caa4",
+      "result_id": "ff7e107c-8013-4f9d-8074-f236cdf13c79"
+    },
+    {
+      "claim_id": "8151b382-b30b-467c-86c5-8faf9636797b",
+      "result_id": "ff7e107c-8013-4f9d-8074-f236cdf13c79"
+    },
+    {
+      "claim_id": "e915d89f-2828-465e-9ffa-5e4d9a3069f8",
+      "result_id": "73eff33a-9f29-46f8-8567-9cb27a48f9e5"
+    },
+    {
+      "claim_id": "6930ef91-1a47-44ca-b0b8-563d1814d137",
+      "result_id": "49002fa7-6c7f-4367-8942-264aad6d0a1c"
+    },
+    {
+      "claim_id": "fc543c59-0c08-4a85-8bea-41ebfecd4e15",
+      "result_id": "49002fa7-6c7f-4367-8942-264aad6d0a1c"
+    },
+    {
+      "claim_id": "f7662128-0ca6-4cad-a6ed-f8a6013178bb",
+      "result_id": "c888511a-c151-45a6-8c47-cd06e55406a1"
+    },
+    {
+      "claim_id": "15065c46-9759-4b06-a0c9-b9a7d0d0c00b",
+      "result_id": "c888511a-c151-45a6-8c47-cd06e55406a1"
+    },
+    {
+      "claim_id": "bb56ec3b-ed94-426d-87ef-7cd6de90e407",
+      "result_id": "79b36411-c8f3-4c00-a16e-2ef403db7895"
+    },
+    {
+      "claim_id": "b2e16b2c-a8df-4672-91f6-254cb46717f6",
+      "result_id": "79b36411-c8f3-4c00-a16e-2ef403db7895"
+    },
+    {
+      "claim_id": "8847e9ad-a081-4e24-8a35-d51fc591567c",
+      "result_id": "70b7e388-b04f-45e1-89c2-7409db09945a"
+    },
+    {
+      "claim_id": "b26e93e3-c586-4dd0-a3e5-7aec26878011",
+      "result_id": "70b7e388-b04f-45e1-89c2-7409db09945a"
+    },
+    {
+      "claim_id": "afc2b585-7a65-4e48-8699-f0b932d0cdfd",
+      "result_id": "70b7e388-b04f-45e1-89c2-7409db09945a"
+    },
+    {
+      "claim_id": "7d753e04-f057-41d7-83a6-670ce70866e7",
+      "result_id": "f03109ba-f7dd-4913-9b64-9dde76112e10"
+    },
+    {
+      "claim_id": "a5291831-2c4a-46e7-ad17-2988bebbf4ee",
+      "result_id": "f03109ba-f7dd-4913-9b64-9dde76112e10"
+    },
+    {
+      "claim_id": "2830a8b8-0f55-43b3-a42d-dbc306d0cc9e",
+      "result_id": "f03109ba-f7dd-4913-9b64-9dde76112e10"
+    },
+    {
+      "claim_id": "dd4e20a2-5231-4bd5-a7ef-557f0adc6cca",
+      "result_id": "f03109ba-f7dd-4913-9b64-9dde76112e10"
+    },
+    {
+      "claim_id": "4b548d6b-2633-4ca6-add8-9a504b900ddf",
+      "result_id": "f03109ba-f7dd-4913-9b64-9dde76112e10"
+    },
+    {
+      "claim_id": "dbe0f7f1-ab6b-4497-865b-8bc0861fd387",
+      "result_id": "f03109ba-f7dd-4913-9b64-9dde76112e10"
+    },
+    {
+      "claim_id": "2312338e-c8ad-4824-9eec-6959d7a832b2",
+      "result_id": "f03109ba-f7dd-4913-9b64-9dde76112e10"
+    },
+    {
+      "claim_id": "e053f730-2e17-4eb7-8422-fac59b6a2e91",
+      "result_id": "f03109ba-f7dd-4913-9b64-9dde76112e10"
+    },
+    {
+      "claim_id": "463b6536-a077-4a9d-84b5-d66b8437cd52",
+      "result_id": "f03109ba-f7dd-4913-9b64-9dde76112e10"
+    },
+    {
+      "claim_id": "38c345b8-1340-49f5-b55a-69c708fd2f7e",
+      "result_id": "f03109ba-f7dd-4913-9b64-9dde76112e10"
+    },
+    {
+      "claim_id": "cea45b5b-0948-452a-a209-fa2934c721b9",
+      "result_id": "f03109ba-f7dd-4913-9b64-9dde76112e10"
+    },
+    {
+      "claim_id": "de60c995-ddd1-4cea-bcf3-3b477fee0713",
+      "result_id": "f03109ba-f7dd-4913-9b64-9dde76112e10"
+    },
+    {
+      "claim_id": "1e9f3d06-5522-4435-8663-036e13959d61",
+      "result_id": "f03109ba-f7dd-4913-9b64-9dde76112e10"
+    },
+    {
+      "claim_id": "d1946588-23ce-4b3b-a416-698c264469de",
+      "result_id": "f03109ba-f7dd-4913-9b64-9dde76112e10"
+    },
+    {
+      "claim_id": "97654389-55b6-497e-97df-b841e729ecb5",
+      "result_id": "f03109ba-f7dd-4913-9b64-9dde76112e10"
+    },
+    {
+      "claim_id": "10a37b81-f484-4088-90ff-7ccf24ecb375",
+      "result_id": "c27a8981-4476-4da9-a178-205c897549ed"
+    },
+    {
+      "claim_id": "def88eb5-e413-4050-896b-2b9cbba1ddde",
+      "result_id": "c27a8981-4476-4da9-a178-205c897549ed"
+    },
+    {
+      "claim_id": "795eb4e4-199d-4373-8029-1b2fbc7a2dbf",
+      "result_id": "c27a8981-4476-4da9-a178-205c897549ed"
+    }
+  ],
+  "comparisons": []
+}

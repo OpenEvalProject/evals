@@ -1,0 +1,2039 @@
+{
+  "submission": {
+    "id": "a70983ff-a68e-469d-acfd-60d4bc446fcd",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-04T02:09:00.375880Z",
+    "updated_at": "2025-12-04T02:09:00.375880Z"
+  },
+  "content": [
+    {
+      "id": "c97c250e-4677-49e3-951d-94b87ce2870d",
+      "submission_id": "a70983ff-a68e-469d-acfd-60d4bc446fcd",
+      "content_type": "manuscript",
+      "content_text": "# Three-dimensional imaging of vascular development in the mouse epididymis\n\n## Authors\n\n- Christelle Damon-Soubeyrand<sup>1</sup>\n- Antonino Bongiovanni<sup>2</sup> ([ORCID: 0000-0001-9876-2940](https://orcid.org/0000-0001-9876-2940))\n- Areski Chorfa<sup>1</sup>\n- Chantal Goubely<sup>1</sup>\n- Nelly Pirot<sup>3</sup>\n- Luc Pardanaud<sup>4</sup>\n- Laurence Piboin-Fragner<sup>4</sup>\n- Caroline Vachias<sup>1</sup>\n- Stephanie Bravard<sup>1</sup>\n- Rachel Guiton<sup>1</sup>\n- Jean-Leon Thomas<sup>5</sup>\n- Fabrice Saez<sup>1</sup>\n- Ayhan Kocer<sup>1</sup>\n- Meryem Tardivel<sup>2</sup> \u2020\n- Jo\u00ebl R Drevet<sup>1</sup> ([ORCID: 0000-0003-3077-6558](https://orcid.org/0000-0003-3077-6558)) \u2020\n- Joelle Henry-Berger<sup>1</sup> ([ORCID: 0000-0002-5107-8663](https://orcid.org/0000-0002-5107-8663))\n\n### Affiliations\n\n1. Institut \u00ab G\u00e9n\u00e9tique Reproduction & D\u00e9veloppement \u00bb, UMR CNRS 6293 - Inserm U1103 \u2013 Universit\u00e9 Clermont Auvergne, Facult\u00e9 de M\u00e9decine Clermont-Ferrand France ([ROR:01a8ajp46](https://ror.org/01a8ajp46))\n2. Universit\u00e9 Lille, CNRS, Inserm, CHU Lille, US 41 \u2013 UAR 2014-PLBS Lille France ([ROR:02kzqn938](https://ror.org/02kzqn938))\n3. R\u00e9seau d'Histologie Exp\u00e9rimentale de Montpellier, Institut de Recherche en Canc\u00e9rologie de Montpellier, Inserm U1194 - Universit\u00e9 Montpellier \u2013 ICM, Campus Val d\u2019Aurelle Montpellier France ([ROR:03capj968](https://ror.org/03capj968))\n4. Universit\u00e9 de Paris, PARCC, INSERM Paris France ([ROR:02vjkv261](https://ror.org/02vjkv261))\n5. Department of Neurology, Yale University School of Medicine New Haven United States ([ROR:03v76x132](https://ror.org/03v76x132))\n6. Institut du Cerveau et de la Moelle, Inserm, Universit\u00e9 Pierre et Marie Curie Paris France ([ROR:02vjkv261](https://ror.org/02vjkv261))\n\n\u2020 Corresponding author\n\n## Abstract\n\nLong considered an accessory tubule of the male reproductive system, the epididymis is proving to be a key determinant of male fertility. In addition to its secretory role in ensuring functional maturation and survival of spermatozoa, the epididymis has a complex immune function. Indeed, it must manage both peripheral tolerance to sperm antigens foreign to the immune system and the protection of spermatozoa as well as the organ itself against pathogens ascending the epididymal tubule. Although our knowledge of the immunobiology of this organ is beginning to accumulate at the molecular and cellular levels, the organization of blood and lymphatic networks of this tissue, important players in the immune response, remains largely unknown. In the present report, we have taken advantage of a VEGFR3:YFP transgenic mouse model. Using high-resolution three-dimensional (3D) imaging and organ clearing coupled with multiplex immunodetections of lymphatic (LYVE1, PDPN, PROX1) and/or blood (PLVAP/Meca32) markers, we provide a simultaneous deep 3D view of the lymphatic and blood epididymal vasculature in the mature adult mouse as well as during postnatal development.\n\n## Introduction\n\nStudies regarding the etiology of male infertility have revealed that at least 15% of cases have a clear immunological origin, a share that is most likely underestimated if idiopathic infertilities were to be included (Dohle et al., 2005; Jungwirth et al., 2012). In the male, they may be the result of chronic inflammatory situations, acute bacterial and/or viral infections, or autoimmune processes along the genital tract leading to the production of anti-sperm antibodies (for a recent review, see Shibahara et al., 2021). These situations are difficult to diagnose and treat, in part because our knowledge of immune/inflammatory responses in male accessory organs is limited. Among the accessory organs, the epididymis plays an essential role in the maturation, storage, and protection of spermatozoa. A particularity of the mammalian epididymis is its highly segmented anatomical organization with three macroscopic territories (caput, corpus, and cauda as depicted in Figure 2), themselves sectorized into segments (10 for the mouse model, see Figure 2), some of which have distinct functional roles (Turner et al., 2003; Johnston et al., 2005). Unlike the testis, where mammalian evolution has chosen to tightly seal the germline from the immune system\u2014conferring immune privilege to this tissue (Meinhardt and Hedger, 2011)\u2014the epididymis tubule faces multiple immune challenges (Guiton et al., 2013; Hedger, 2011). On the one hand, the epididymis tubule is the testis gatekeeper, preventing ascending pathogens from reaching the immune-privileged seminiferous tubules. To do so, it should be endowed with all the power of a full and efficient immune response toward exogeneous antigens. On the other hand, the epididymis must maintain self-tolerance toward spermatic antigens that are unique to this cell lineage and appear at puberty long after the establishment of the self-immune repertoire (Goodnow, 1996). Understanding how this dual action of peripheral tolerance toward sperm antigens (Mueller, 2010) versus efficient immune survey toward non-self-antigens is performed is of particular interest for infertility issues, but also more largely in other settings where this situation occurs. This has prompted recent research aiming at identifying immune cells and molecules that could participate in the finely orchestrated epididymal immune physiology. This research has led to the characterization of a dense network of peritubular antigen-presenting cells (Da Silva et al., 2011), interstitial and intra-epithelial lymphocytes of distinct sub-families (Voisin et al., 2018), as well as of immunosuppressive players such as transforming growth factor beta (Pierucci-Alves et al., 2018; Voisin et al., 2020) and indoleamine/tryptophane dioxygenase activity (Britan et al., 2006; Jrad-Lamine et al., 2011; Jrad-Lamine et al., 2013).\n\nBecause the immune picture of the mammalian epididymis would not be complete without a clear view of the blood and lymphatic circulating networks\u2014which are crucial in managing immune responses\u2014we choose to explore these in the mouse. Reports describing mammalian epididymal blood and lymphatic vessels are rare and rather old (P\u00e9rez-Clavier et al., 1982; Abe et al., 1984; McDonald and Scothorne, 1988; Itoh et al., 1998). The technology used was not very efficient and consisted mainly of ink or contrast agent injection. It concerned only the peripheral epididymal lymphatic network with the organization of the collectors connecting the PP. More recently, Hirai et al., 2010, performed the first histological study of mouse epididymal blood and lymphatic vasculature using the markers CD31/PECAM1 and LYVE1, respectively. Although PECAM1 is used to visualize blood vessels, it is not an exclusive blood marker because it is also found expressed at button-like junctions of endothelial cells in the initial lymphatics (Privratsky and Newman, 2014). Furthermore, to characterize lymphatics, the use of LYVE1 alone limits the power of the analysis because this marker recognizes only a subpopulation of all lymphatics (Kato et al., 2006). In addition, conventional two-dimensional (2D) light microscopy combined with a horseradish peroxidase (HRP) reporter on paraffin-embedded tissue sections did not allow for a high level of accuracy in providing a holistic view of a structured network.\n\nCharacterization of the lymphatic vasculature in mammals is tricky because on the one hand, it shares common embryonic origins with the blood vessels (Baluk and McDonald, 2008; Srinivasan et al., 2007) and on the second hand, it concerns various different structures. There are blunted-end highly permeable initial lymphatics connected to pre-collector lymphatics and then to collector lymphatics linking to a lymph node (LN), each with specific characteristics (for a very recent review, see: Lampejo et al., 2023). A step forward was made with the identification of lymphangiogenic factors (vascular endothelial growth factors VEGF-C and VEGF-D) and their receptor (VEGFR3), which are now considered the major markers of lymphatics (Kaipainen et al., 1995; M\u00e4kinen et al., 2001). To ensure confidence in the identification of lymphatic structures, one should use a combination of markers, including VEGFR3, the lymphatic vessel endothelial hyaluronan receptor 1 (LYVE1), the prospero-related homeobox 1 (PROX1) transcription factor, and podoplanin (PDPN) (Banerji et al., 1999; Breiteneder-Geleff et al., 1999; Hamrah et al., 2003; Kivel\u00e4 et al., 2016; Mouta Carreira et al., 2001; Partanen et al., 2000; Wigle and Oliver, 1999). We have followed this rationale in the present study, using three lymphatic markers together with plasmalemma vesicle-associated protein (PLVAP/MECA32) to specifically identify fenestrated blood vessels (Stan et al., 2004). In addition, we have taken advantage of a transgenic mouse model that expresses the fluorescent reporter YFP under the control of the VEGFR3 promoter (Calvo et al., 2011). Using the power of three-dimensional (3D) reconstruction of high-resolution imaging with light-sheet microscopy after epididymis 3DISCO clearing (Belle et al., 2014; Ert\u00fcrk et al., 2012), we present here an in-depth analysis of both the blood and lymphatic networks of the epididymis in the adult mouse as well as during postnatal ontogenesis. We hope the data we bring will provide a better view of the systemic compartment that irrigates and drains this segmented organ, a prerequisite for a more precise understanding of its pathophysiology.\n\n## Results\n\n### An abundant lymphatic network drains the epididymis\n\nTo gain insight into the lymphatic network of the mouse epididymis, we used the VEGFR3:YFP mouse model. Figure 1 shows representative in toto views of the lymphatic vascularization of the testis and epididymis of an adult (Figure 1A) and 10 days postnatal (DPN) mouse (Figure 1B, C). There is intense vascularization at the epididymis\u2013testis interface regardless of the level of the epididymis (caput, corpus, or cauda). Figure 1B shows that the lymphatic drainage joins the main testicular lymphatic trunk at the pampiniform plexus (PP) and follows it to a highly fluorescent structure that corresponds to the most proximal LN. Inset 1C and Figure 1D show the connections of the collectors emanating from the caput (upper epididymal lymphatic collector [u-ELC] in Figure 1C, D) and the corpus (median epididymal lymphatic collector [m-ELC] in Figure 1C). A higher magnification micrograph (Figure 1D \u2460) shows the particularly prominent lymphatic vasculature of the efferent duct and its interconnection with that of the epididymal caput. It also points out the departure of the u-ELC to the PP surrounding the upper epididymal artery. It can be noted that the lymphatic collectors coincide well with the segmentation of the organ. A corpus lymphatic collector (Co-LC) follows the body of the epididymis on the side adjacent to the testis connecting the caput with the cauda (Figure 1E). The inset within Figure 1E presents a higher magnification of the Co-LC connections. This collector also connects to the main testicular lymphatic collector at the corpus level (Figure 1E \u2461) as well as at the cauda level (Figure 1F \u2462). Also noticeable in the enlargements provided in Figure 1E and in Figure 1F is the presence of fluorescence under the capsule, faint in the caput (Figure 1E) but clearly more visible in the most distal segment (S10) of the cauda epididymis (Figure 1F and G). Finally, Figure 1G presents a global complex organization of the cauda lymphatic collectors. Overall, our observations revealed a very dense lymphatic network in the mouse epididymis.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/82748/elife-82748-fig1-v1.jpg)\n\n**Figure 1.:** Representative image of the lymphatic vasculature of the adult epididymis and testis observed with a Leica binocular loupe (A). VEGFR3:YFPpos lymphatics are visible in the caput, corpus, and cauda regions. Lymphatics responsible for epididymal and testicular drainage follow the pampiniform plexus (PP) before reaching a lymph node (B). The superior and lateral epididymal lymphatic collectors (upperELC and medianELC, respectively) drain lymph from the caput and corpus, respectively, before joining the main testicular lymphatic collector at the PP. The latter is connected to a main collector that surrounds the testis (arrowhead) and branches into a rich network (A\u2013C). There are numerous lymphatic connections between the lymphatics of the epididymis and the main lymphatic collector of the testis, notably through a lymphatic network at the level of the efferent ducts (\u03c6 in D), corpus (\u03ba in E), and cauda (\u03bb in F). Through the capsule covering the epididymal duct, there is also fluorescence that outlines the tubules, weakly in the caput (D) and more intense in the cauda (F and G). The scale bar corresponds to 1 mm. AT = adipose tissue; Ca = caput; Cd = cauda; Co = corpus; DD = deferent duct; DDA = deferent duct artery; DLC = deferent lymphatic collector; DPN = days postnatal; ED = efferent duct; LELC = lower epididymal lymphatic collector; LN; lymph node; P=pampiniform plexus; SEA = superior epididymal artery; Cd-BV = caudal blood vessel; SELC = superior epididymal lymphatic collector; T = testis; TA = testis artery; TLC = testicular lymphatic collector. \u2460=caput\u2013testis lymphatic connection; \u2461=corpus\u2013testis lymphatic connection; \u2462=cauda\u2013testis lymphatic connections between testis and epididymis.\n\n### Complexity of the blood and lymphatic vascularization of the epididymis\n\nBecause fenestrated blood vessels also express VEGFR3, a marker specific for these vessels (PLVAP/Meca32) was used along with three additional markers for lymphatics, specifically LYVE1, PROX1, and PDPN. As the 3DISCO organ clearing procedures resulted in a loss of the endogenous transgene (VEGFR3:YFP) fluorescence, anti-GFP was used to strengthen the signal. The concordance of the labeling obtained with the anti-GFP and an anti-VEGFR3 antibodies was controlled (see Figure 2\u2014figure supplement 1A). Similarly, Figure 2\u2014figure supplement 1B and C show positive controls of the multiplex labeling as well as controls with the secondary antibody, respectively. Figure 2A and Figure 2\u2014videos 1\u20133 show the immunoreactive vasculature after 3DISCO clearing of an adult mouse epididymis obtained after light-sheet imaging and IMARIS 3D reconstruction. The caput and cauda territories show intense PLVAP reactivity revealing a dense blood network. The corpus of the epididymis is also well vascularized, as can be seen in Figure 2\u2014figure supplement 2A and Figure 2\u2014video 2. The video clearly shows that the lymphatic network is asymmetrical as it is very dense on the epididymal side next to the testis. In agreement with previous reports (Abe et al., 1984; Suzuki, 1982), the initial segment (IS) of the caput shows the highest reactivity (see Figures 2B and 3A as well as Figure 2\u2014figure supplement 2A and B), with each IS tubule strongly reactive at their periphery (Figure 2\u2014figure supplement 3A and B). Outside the IS, PLVAP reactivity is mainly found in the intertubular space as well as along the septum separating each epididymal segment. This is particularly true for the IS/S2\u2013S3 and the S9/S10 septum junctions.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/82748/elife-82748-fig2-v1.jpg)\n\n**Figure 2.:** (A) shows a schematic representation of the caput (red) and cauda (green) regionalization and segmentation commonly used to describe the mouse epididymis. (B) Representative multiplex immunostaining of the caput (left) and cauda (right) of the epididymis using five markers recognizing blood and lymphatic vessels is shown. An anti-MECA32 antibody (red) reveals PLVAPpos blood vessels, particularly fenestrated vessels. An anti-GFP antibody revealing the VEGFR3:YFP transgene (green) and an anti-LYVE1 antibody (cyan). Anti-LYVE1 (cyan), anti-PROX1 (magenta), and anti-PDPN (white) antibodies were used as additional lymphatic markers. After organ clearance, high-resolution 3D imaging was performed with a light-sheet ultramicroscope (LaVision BioTec). The two extreme segments, IS (initial segment or S1) and S10, are delineated by a large dashed line, whereas the caput (left) and cauda (right) regions are delineated by a small dashed line. The scale bar is 500 \u00b5m. The PLVAP image corresponds to the contro-lateral epididymis used for the four lymphatic markers since it is not possible to use all five markers on the same organ.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/82748/elife-82748-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Panel A shows confocal views of multiplex labeling with the anti-GFP antibody (green) and the anti-mouse VEGFR3 antibody (red)on paraffin sections of an adult mouse epididymis, attesting that the two antibodies recognize the same structures. The scale bar is 20 \u00b5m. Panel B shows the compatibility of the four markers/dyes chosen for imaging blood and lymphatic vessels. Multiplex paraffin immunodetection of PLVAP/Alexa A555 (red), VEGFR3:YFP/GFP/Alexa A488 (green), LYVE1/Chromeo 494 (cyan), and PDPN/Alexa A647 (white) at the junction between the initial segment (IS)/S1 and the epididymal capsule. We noted the presence of fenestrated PLVAPpos blood vessels at the periphery of the epididymal tubule of the IS (white arrowheads). These are also positive for VEGFR3:YFP/GFP but negative for LYVE1 and PDPN, demonstrating that there is no cross-detection between the labeling revealed with Chromeo 494 and those revealed by Alexa 488, Alexa 555, and Alexa 647. The peripheral lymphatic vessels of the organ located in the capsule (LV) are negative for PLVAP and positive for the three lymphatic markers (VEGFR3:YFP/GFP, LYVE1, and PDPN). We noted the presence of intertubular blood vessels (*), which present heterogeneous labeling. The upper one is only PLVAPpos while the lower one is PLVAPpos and VEGFR3:YFPpos. In addition, note that the latter shows peripheral labeling for PDPN, while that is not the case for the upper one. A=artery. Panel C shows three-dimensional (3D) imaging obtained with a light-sheet ultramicroscope (LaVision Biotech) of the clarified epididymis caput and cauda after whole-mount incubation with the different dyes used to reveal the blood and lymphatic markers (Alexa 488 [green], Alexa 555 [red] Chromeo 494 [cyan], and Alexa 647 [white]).\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/82748/elife-82748-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Panel A shows representative 3D views of an epididymis of an adult VEGFR3:YFP transgenic mouse obtained by light-sheet ultramicroscopy (LaVision Biotech, 2\u00d7 resolution) after immunodetection using the blood marker Meca32/PLVAP (red, left panel) or the lymphatic VEGFR3:YFP transgene, revealed using an anti-GFP antibody (green, middle panel). The right panel presents a merged view. Panel B presents a comparison of blood and lymphatic vessel density between the caput and cauda as described in Figure 2 legend. The Mann\u2013Whitney test was used to determine statistical significance (**p<0.001, *p<0.01).\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/82748/elife-82748-fig2-figsupp3-v1.jpg)\n\n**Figure 2\u2014figure supplement 3.:** Panel A presents median slices of the caput (left) and cauda (right) shown in Figure 2 for the PLVAP blood marker (red) and the lymphatic markers (VEGFR3:YFP, LYVE1, PROX1, and PDPN in green, cyan, magenta, and white, respectively). The epididymis used for PLVAP detection is the contralateral organ of the one used for lymphatic markers. The white-squared regions in each photograph (left in caput and cauda) are enlarged in the right photographs. PLVAP+ micro-vascularization (red) is visible at the peritubular epithelium level of the initial segment (IS)/S1 and its expression markedly decreases in the other segments. At higher magnification, a network of blood capillaries surrounds each tubule mainly at the level of the IS/S1 while intertubular vessels can be observed in segment 3 (S3). In the cauda (S10), PLVAPpos vasculature is less dense and is mostly located in the intertubular space. The VEGFR3:YFP transgene (green), revealed by an anti-GFP antibody, is abundant in the caput and in particular in the IS/S1. Enlargements show punctiform labeling at the peritubular level and in the intertubular zone. On can note the presence of very large lymphatics at the intertubular level (white star). In the cauda (S10), reactivity is mainly interstitial, stringy, and compatible with flattened lymphatic vessels trapped in the extracellular matrix. We also noted at the S9/S10 boundaries (delimited by the dotted line) the presence of large lymphatic vessels (white asterisk), suggesting that important drainage takes place at this location. The lymphatic marker LYVE1 in the caput is mainly interstitial and clearly stronger in the IS/S1. We also noticed that the lymphatics detected with the transgene (VEGFR3:YFP) and with LYVE1 present differences (white arrows), in agreement with previous studies reporting heterogeneity for these markers at the level of the lymphatics (Pawlak and Caron, 2020; Ulvmar and M\u00e4kinen, 2016). In the cauda, LYVE1 appears less present compared with VEGFR3:YFP. We also noticed differences in localization and intensity between these two lymphatic markers (white arrows). PROX1 (magenta) shows a profile comparable to those obtained for the transgene product and/or LYVE1 in both the caput and cauda. The labeling is punctiform (compatible with a nuclear localization) and filamentous at the level of the IS/S1. The stringy appearance can be explained by the use of a PROX1-biotinylated antibody that generates a fuzzier/coarser signal. PDPN (white) appears abundant in the caput and cauda at the peritubular level of the epididymal epithelium and in the interstitial space. Stereocilia in the initial segment but not in other segments of the caput also show some reactivity with PDPN. Because of the fuzzy PDPN pattern, it is difficult at this resolution to assert that PDPN strictly co-localizes with VEGFR3:YFP, LYVE1, and PROX1. Panel B shows light-sheet confocal (12\u00d7) resolution of the caput/IS-S2 region of a VEGFR3:YFP transgenic epididymis (green) or after PLVAP immunodetection (red). The superposition of the two channels (merge) suggests both co-localization but also specific territories. The far right picture shows the superposition of the surface rendering of the two markers, which allows distinguishing the lymphatic vasculature that expresses only the transgene (in dark green) from the PLVAP+/VEGFR3:YFP+ vessels (in light green).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/82748/elife-82748-fig3-v1.jpg)\n\n**Figure 3.:** Panel A shows the surface rendering performed with IMARIS software of blood vessels (red, left) and lymphatic vessels (green, right) in the caput. The surface rendering of vessels in S1 is in white in both cases. Vessel densities shown in the graphs below correspond to the ratio of the volume occupied by vessels in the S1 or caput (minus S1) normalized to the total volume of the S1 or caput (minus S1), respectively. Panel B shows the surface rendering of blood (red, left) and lymphatic (green, right) vessels in the cauda. Blood or lymphatic vessel densities are measured as described in A for the caput. The Mann\u2013Whitney test was used to determine statistical significance (***p<0.0001, **p<0.001, *p<0.01, NS = not significant).\n\nWith the four lymphatic markers (VEGFR3:YFP, LYVE1, PROX1, and PDPN), there is an intense and complex network (Figure 2B). This appears very similar in its organization to that of the blood vessels, especially in the IS (Figure 2B). However, outside the IS, lymphatic reactivity appears more extensive than that of the blood vessel marker (see Figure 2\u2014figure supplement 3B). As was the case for the blood vessel marker and as expected because fenestrated vessels express VEGFR3 (Partanen et al., 2000), lymphatic marker reactivity is stronger in the IS (Figure 2B). As seen in Figure 1, large external lymphatic collectors follow the septa, particularly at the IS/S2-S3 and S9/S10 boundaries. These collectors can be seen to dip inside the organ and irrigate the intertubular compartments, especially in the cauda region (see Figure 2\u2014video 3). The LYVE1, PROX1, and VEGFR3:YFP profiles are very similar for the caput and cauda (Figure 2B). However, when viewed at higher magnification (Figure 2\u2014figure supplement 3A), they do not merge totally in either the caput or the cauda region, especially for the small lymphatic vessels separating the epididymal segments. The PDPN profile appears different from those of LYVE1, PROX1, and VEGFR3:YFP (Figure 2B). The PDPN reactivity is more homogeneous and is concentrated at the peritubular level (Figure 2B and Figure 2\u2014figure supplement 3A). Figure 2B and Figure 2\u2014figure supplement 3A also show that the lymphatic marker (PROX1) gives very similar results to LYVE1 in the caput and cauda regions. However, the pattern of PROX1 is slightly distinct from that of VEGFR3:YFP and very different from that of PDPN.\n\nWe performed a surface assessment to better evaluate the density of the blood and lymphatic networks in the most proximal and distal epididymal segments (IS and S10) compared with that observed in the rest of the caput or cauda. To measure only the specific density of the lymphatic network, voxels with signal in the 555 nm channel (PLVAP/MECA32) were set to 0 in all other channels. The densities presented in Figure 3A and B are the results of the vessel volume normalized by the total volume of the region of interest (IS, caput, S10, or cauda). As expected, PLVAP/MECA32pos blood vessel density in the IS was approximately 3.5 times greater than in the rest of the caput (p<0.001). Similarly, the VEGFR3pos lymphatic density was twice that of the rest of the organ (Figure 3B). A result of the same magnitude was obtained for LYVE1 and PROX1 (Figure 3B). Because of the expression profile of PDPN, surface rendering could not be used to calculate its density. In the cauda, there was no significant difference in the density of blood and lymphatic vessels. Comparison of vascular density between the caput (IS excluded) and the cauda showed a slight decrease in the cauda for both blood and lymphatic vessels (Figure 2\u2014figure supplement 2B).\n\n### Dynamic development of epididymal vasculature related to organ maturation\n\nTo better understand the postnatal development of both networks, we followed their emergence during postnatal epididymal development from 10 to 40 DPN, when the organ is functionally mature (n=5). We present in Figure 4A (caput) and Figure 4\u2014figure supplement 1A (cauda) representative high-resolution images of the blood and lymphatic systems using three of the five markers presented above (PLVAP/MECA32, VEGFR3:YFP/GFP, and LYVE1) at 10, 20, 30, and 40 DPN. We used IMARIS software to estimate the IS volume relative to the caput volume (Figure 4B) and the S10 volume relative to the cauda volume (Figure 4\u2014figure supplement 1B) at each time point.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/82748/elife-82748-fig4-v1.jpg)\n\n**Figure 4.:** Panel A shows representative three-dimensional (3D) images of blood and lymphatic networks at different postnatal stages during caput ontogenesis. Immunostaining was done with the blood vessel marker MECA32/PLVAP antibody (red) and the lymphatic marker LYVE1 antibody (cyan). The VEGFR3:YFP transgene is revealed by an anti-GFP antibody. Only LYVE1 and VEGFR3 are presented here for better resolution. Immunostaining was also performed with PDPN (not shown in the figure) but PDPN data can be seen in the data sources (figure 4 data sources 1,2 and Figure 4\u2014figure supplement 1 data source 1&2 at https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD618).The dotted line indicates the contours of the initial segment (IS = S1). DPN: days postnatal. The scale bar is 200 \u00b5m for 10 DPN, 300 \u00b5m for 20 and 30 DPN, and 400 \u00b5m for 40 DPN. Panel B shows the evolution of the volume (in log10) of the S1 segment (light blue curve) and the caput region (dark blue) during postnatal development. The superimposed histogram gives the proportion of volume occupied by the S1 relative to the caput region at different stages of postnatal development. Surface rendering of blood vessels and lymphatics was performed using IMARIS software. Blood and lymphatic vessel densities were calculated as described previously (Figures 2 and 3). Quantification was performed on five replicates for the different postnatal developmental stages. Panels C and D are graphs presenting densities (mean and standard error of the mean) of blood and lymphatic vasculature, respectively. The Kruskal\u2013Wallis test with Dunn\u2019s posttest correction was used to determine statistical significance (***p<0.0001, **p<0.001, *p<0.01).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/82748/elife-82748-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Panel A shows representative three-dimensional (3D) views of the blood and lymphatic networks at different postnatal stages of the cauda epididymis ontogenesis from 10 to 40 days postnatal (DPN). Whole-mount immunolabeling of PLVAP+ blood vessels (red) was conducted on the contralateral organ of the one used for the immunolabeling with the lymphatic marker LYVE1 (cyan) and detection of the YFP reporter gene (revealed using an anti-GFP antibody; green). The dotted line indicates the S8\u2013S9/S10 border. The scale bars is 200 \u00b5m for 10 and 20 DPN, 300 \u00b5m for 30 DPN, and 400 \u00b5m for 40 DPN. Panel B shows evolution of the volume (in log10) of the S10 segment (light blue line) and the cauda (S8 to S10; dark blue line) regions during postnatal development. The light gray histogram in the background gives the proportion of volume occupied by the S10 segment within the cauda at different postnatal developmental stages. Panels C and D present surface rendering of blood vessels (C) and lymphatics (D) evaluated using the IMARIS software as described above (see Figures 2 and 3). The curves represent the mean and standard error of the mean of the densities obtained for at least five individuals (for the postnatal development stages) and up to 13 individuals (for the adult stage). The color code in Panel C is orange = S10 and dark red = [S8+S9]. In Panel D, the color code is light green = S10 and dark green = [S8+S9]. The Kruskal\u2013Wallis test with Dunn\u2019s posttest correction was used to determine statistical significance (***p<0.0001).\n\nIS progresses four times faster than the caput between 10 DPN and adulthood (A), representing less than 10% of the caput at 10 DPN whereas it represents 40% of the adult caput (Figure 4A and B). Following the stronger postnatal development of the IS, we observed that the caput vascularization is rather homogeneous at 10 DPN, whereas from 20 DPN onward, the blood vessels seem to concentrate in the IS segment. This is also well illustrated in the densitometric quantification shown in Figure 4C. This figure also shows that the density of PLVAPpos blood vessels in the IS segment is rather stable during postnatal development despite the increase in the segment volume. In contrast, there is a strong decrease between 10 and 20 DPN in the rest of the caput. In the cauda region (Figure 4\u2014figure supplement 1A\u2013C), PLVAPpos blood vessel expansion follows organ growth without a specific segmental pattern. However, as was the case in the caput, between 10 and 20 DPN, there is a decrease in PLVAPpos blood vessel density in the caudal region.\n\nLooking at the two lymphatic markers (VEGFR3:YFP and LYVE1), we observed very similar kinetics of postnatal lymphatic development in the caput (Figure 4A) and cauda (Figure 4\u2014figure supplement 1A). There is a progressive increase in VEGFR3:YFP/LYVE1 lymphatic vessels that follows postnatal organ growth in a fairly linear fashion at least between 10 and 40 DPN (Figure 4D and Figure 4\u2014figure supplement 1D). Beyond 40 DPN, there appears to be a greater expansion of lymphatics in the caput and cauda, in the IS and S10, respectively, compared with the rest of the organ (Figure 4D and Figure 4\u2014figure supplement 1D). This is particularly true in the IS because the size of this territory is increased approximately four times between the 10 and 40 DPN stages.\n\nBecause blood and lymphatic vascular density data suggest neovascularization during postnatal epididymal development, we performed localization and quantification of angiogenic (VEGF-A) and lymphangiogenic (VEGF-C and VEGF-D) factors, whose receptors are VEGFR2 (also known as KDR and FLK1) and VEGFR3, respectively (Figures 5 and 6). Quantification of the VEGFR ligands (VEGF-A, VEGF-C, and VEGF-D) was performed by western blotting as shown in Figure 5A. For the angiogenic ligand (VEGF-A), there was a decrease between 10 and 20 DPN followed by a plateau, and then an increase at 40 DPN; by adulthood, VEGF-A had returned to the initial level (Figure 5B). For the lymphangiogenic ligands (VEGF-C and VEGF-D), we observed a linear increase from 30 DPN for both ligands, consistent with the accumulation of their corresponding receptor VEGFR3 (Figure 5B). An analysis of covariance of the different ligand isoforms of VEGF (see Figure 5\u2014figure supplement 1) with respect to the VEGFR3 receptor (see Figure 5C) shows strong statistical significance for the active ligand isoforms (i.e., the 21 kDa form for VEGF-C and the 24 kDa form for VEGF-D). In addition, the tissue localization of VEGFR2 is very similar to that of VEGFR3 (Figure 6A), being present mainly in a peritubular position at the level of the IS whereas in the more distal part of the organ it seems to be restricted to some interstitial vessels (used with permission from Dr. A. Medvinsky; VEGFR2:GFP mouse strain; Xu et al., 2010). In accordance with previous work (Korpelainen et al., 1998), the tissue localization of its angiogenic ligand (VEGF-A) seems to correspond correctly (Figure 6A), supporting the intense blood vascularization observed in this very proximal segment of the epididymis. Both of the lymphangiogenic ligands\u2014VEGF-C and VEGF-D\u2014show a similar tissue localization, being weakly present in the IS and increasingly present when moving toward the tail of the epididymis, mainly in an interstitial position (Figure 6B). A co-localization (Pearson coefficient = 0.684 \u00b1 0.038) and co-occurrence analysis (Mander\u2019s coefficient VEGF-C=0.934 \u00b1 0.028 and VEGF-D=0.569 \u00b1 0.031) supports the hypothesis of heterodimerization of the two ligands.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/82748/elife-82748-fig5-v1.jpg)\n\n**Figure 5.:** Panel A shows the expression profile obtained in total extracts of epididymal proteins at different stages of development. The profiles obtained are presented in the following order: VEGFR3, VEGF-A, VEGF-C, and VEGF-D. GAPDH was used for normalization. Panel B shows the quantification of epididymal proteins extracted from six mice. Quantification of VEGFR3 is shown in black, and VEGF-A, VEGF-C, and VEGF-D are shown in red, blue, and green, respectively. The Kruskal\u2013Wallis test and Dunn\u2019s posttest correction were used to determine statistical significance (***p<0.0001, **p<0.001, *p<0.01). Panel C shows the comparison of different isoform profiles. Covariance is assessed by a two-way analysis of variance.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/82748/elife-82748-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Different forms of ligands during postnatal development of the epididymis were quantified by optical density measurement with ImageJ software. It was normalized by the level of GAPDH measured in the same organ. The profiles of VEGFR3 (black star) and the active isoforms of VEGF-A (22 kDa, red square), VEGF-C (21 kDa blue square), and VEGF-D (24 kDa, green square) are those presented in Figure 5 and are presented here for comparison with the other isoforms. We noted that both the 55 kDa and 22 kDa VEGF-A profiles behave similarly during postnatal development of the epididymis. There is a drop in these two forms at 20 days postnatal (DPN) followed by a plateau at 30 DPN and then a marked increase from 40 DPN onward VEGF-A could play a different role in the epididymis because the number of PLVAP+ blood vessels do not increase at these stages (see Figure 4\u2014figure supplement 1). Quantification of the different VEGF-C (blue) and VEGF-D (green) isoforms shows a pattern comparable to that observed for lymphatic density during postnatal development (see Figure 4_- and ). However, the present forms are mainly precursors, suggesting progressive lymphangnic activity.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/82748/elife-82748-fig6-v1.jpg)\n\n**Figure 6.:** Panel A (upper row) shows images (Zeiss Axio-Imager) of the expression of the VEGFR2:GFP transgene (green) (used with permission from Prof. A. Medvinsky) and its ligand VEGF-A (red) obtained from paraffin sections of adult epididymis. The lower row shows confocal views (SP8, Leica) of the same VEGF-A labeling. Panel B shows in (1) a mosaic view (AxioVison scanner) of an epididymis after immunolabeling with VEGF-C (green) and VEGF-D (cyan). Photographs 2\u20139 were taken with a confocal (SP8, Leica) at the level of the initial segment (IS)/S1 (2), caput (3), corpus (4), and cauda (5). Notable differences in expression of these two ligands are shown in photographs 6\u20138, which respectively concerns the efferent duct and the IS/S1 boundary, the capsule, and a septum. Photograph 9 is a negative control. Pearson correlation and Mander\u2019s co-occurrence were used to analyze the relation between the two ligands with the IMARIS co-localization module. The values shown represent means with standard error of the mean.\n\nLymphatics expressing all four markers (VEGFR3:YFP, LYVE1, PROX1, and PDPN) are particularly visible at the septa (Figure 7A). We show in Figure 7B (upper panels) a dynamic 3D view of the cauda epididymis lymphangiogenesis as well as our interpretation of what is happening, presented in the lower panels of Figure 7B. LYVE1pos cubblestone cells are observed at 10 DPN while very few VEGFR3-YFPpos cells are visible. Later, cubblestone cells appear to aggregate to form tubular structures. Concomitantly, we record an increase in VEGFR3-YFPpos structures associated with a decrease in PLVAPpos vessels. This kinetics of events is consistent with active lympho-vasculogenesis during postnatal epididymal development. The schematic shown in Figure 8 presents the detailed organization of the epididymis lymphatics with respect to the tubules, septa, and orientation of the organ, with the anterior side of the epididymis tubule in close contact with the testis.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/82748/elife-82748-fig7-v1.jpg)\n\n**Figure 7.:** Panel A shows the intimate connection between the septa and the lymphatic vasculature in a region of interest of the caput shown in Figure 2. Surface rendering of the lymphatics was performed as described previously using IMARIS software. Panel B (top panel) shows a representative three-dimensional (3D) view of the cauda region at the S8\u2013S9/S10 septa during postnatal epididymal development after surface rendering. Images were obtained using the light-sheet ultramicroscope with a 20\u00d7 objective lens. Putative LYVE1+ lymphatic precursors are in cyan and VEGFR3:YFP lymphatics are in green, whereas PLVAP+ blood vessels are in red. The clipping plane is positioned at the septum level and the yellow arrow-cursor is directed to the S10. The lower panel shows our interpretation of the events observed concomitantly with a progression via sprouting lymphangiogenesis (green to yellow arrows) of peripheral lymphatics that progress and radiate into the organ at the level of the septum, from the anterior side (adjacent to the testis) to the posterior side of the epididymis and via lymphangio-vasculogenesis. It develops in four steps: (1) swarming of precursors mainly LYVE+ (cyan) and VEGFR3+ (green); (2) a stage of LECP expansion; (3) grouping or clustering step; (4) then assembly and fusion with the lymphatics located at the septum from lymphangiogenesis (green to yellow arrow). For clarity, PLVAP+ blood vessels have not been represented here (A=anterior side adjacent to the testis, P=posterior side, S=septum, LN = lymph node). Scale bar = 30 \u00b5m.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/82748/elife-82748-fig8-v1.jpg)\n\n**Figure 8.:** The left scheme presents our view of the lymphatic vasculature at the level of a \u2018checkpoint\u2019 septum. The large collectors enter at the septum into the epididymis and radiate within the adjacent segments at the interstitial level, where initial lymphatics are found. The septum where the tubule crosses from one segment to another one would be the most \u2018monitored\u2019 site and therefore the richest in lymphatics. The close association of lymphatics with the septa creates both a physical and immunogenic barrier to preserve the organ from ascending infections and thus limited uncontrolled progression of pathogens protecting the epididymis and ultimately the testis from orchitis deleterious to male fertility. e-CLV=external collector lymphatic vessel; i-CLV=internal collector lymphatic vessel; ILV = initial lymphatic vessel; LN = lymph node; S=segment.\n\n## Discussion\n\nUsing whole-mount multiplex immunolabeling, organ clearing, ultramicroscopy imaging, and 3D reconstruction with a highly adapted lymphatic-YFP transgenic reporter mouse model, the sensitivity and power of our study has allowed us to present for the first time an in-depth analysis of blood and lymphatic networks both in the adult and during postnatal epididymal ontogeny. With the combination of lymphatic markers used in this work, we have shown that a dense network of conventional lymphatics can be observed in the epididymis, with initial lymphatics present in the interstitial compartment and collecting lymphatics present at the septa. We have shown that the lymphatic network is denser on the anterior face of the epididymis (face adjacent to the testis) and progresses in the organ toward the posterior face. We found that the collecting lymphatics are mainly observed on the anterior surface and radiate inward toward the posterior surface following the septa. The initial lymphatics drain the interstitial compartment and join the collectors at the septa, resulting in an asymmetric distribution (anterior/posterior) of lymphatic vascularization. This centrifuge development of the lymphatic network is easily visible (Figure 4A and Figure 2\u2014video 2). This tree structure is logical if we consider that lymphatic vascularization progresses during mouse development following the PP before reaching the rete testis and sprouting laterally, as had been suggested earlier (Svingen et al., 2012). Each epididymal septum has lymphatic drainage, but three septa appear to be more involved, including the S1/S2\u2013S3, S6/S7, and S8\u20139/S10 junctions, with the latter having the largest lymphatic collector. We expected this finding because it corresponds to the position of the arteries and veins that irrigate the epididymis (Suzuki, 1982), and it is known that the large lymphatic collectors usually follow the path of the arteries (Gruffaz, 1984). Previous researchers have hypothesized that this strict epididymal segmentation is involved in the control of ascending pathogens, although they have not provided clues as to how this might be accomplished (Stammler et al., 2015; Turner et al., 2003). Supporting this hypothesis is the observation that large lymphatic collectors that are in direct and rapid connection with LNs and the blood supply that allows for the arrival of leukocytes are present at these sites. These three septa could then be considered important checkpoints (Figure 8). This view corroborates recent data showing that immune responses in autoimmune epididymitis are concentrated in the epididymal cauda and corpus, where we do see the major lymphatic collectors (Wijayarathna et al., 2020). Although we have arbitrarily chosen to focus our discussion on the specific involvement of the epididymal vascular compartment in inflammation and immune responses, it should be mentioned that it could also serve other processes such as tissue metabolism and the stem/progenitor cell niche microenvironment associated with different regions of this organ.\n\nLooking at the postnatal development of the epididymal lymphatic network, our data show a progressive increase that follows the postnatal growth of the organ between 10 and 40 DPN. Beyond this time point, the lymphatic network progresses more in the S1/IS and S10 compartments. This argues for active lymphangiogenesis or/and lymphangio-vasculogenesis, the two modalities by which lymphatics develop, in the caput and cauda territories. Lymphangiogenesis corresponds to the extension of existing vessels, also known as \u2018sprouting,\u2019 while lymphangio-vasculogenesis involves the participation of precursor cells that create clusters later integrating already formed lymphatic vessels (Gutierrez-Miranda and Yaniv, 2020; Jafree et al., 2021). Lymphangio-vasculogenesis has been reported in the development of the mesenteric lymphatic vessels (Stanczuk et al., 2015) and for the heart and kidney lymphatic networks (Jafree et al., 2019; Lioux et al., 2020), two organs with a septal organization. The lymphatic neovascularization we observed during postnatal epididymal development is supported by the observation that lymphangiogenic ligands (VEGF-C and VEGF-D) and their corresponding receptor (VEGFR3) are concordantly present in the developing tissue. Active lymphangio-vasculogenesis is also supported by our observation that foci expressing LYVE1 can be detected between 10 and 20 DPN, and eventually extend and join the initial lymphatics (see Figure 7B).\n\nSuzuki, 1982, reported that a testis-like blood network is present in most of the epididymis (segments 2\u20139) with intertubular vessels connected by perpendicular micro-vessels in a rope ladder organization. Distinctly, in the most proximal (IS/S1) and distal (S10) segments of the epididymis, we found micro-vessels encircling each tubule in a spider web organization with capillaries that penetrate the epithelial sublayer. Because the IS and S10 compartments of the epididymis have distinct embryonic origins and are functionally different (Abe et al., 1984; Johnston et al., 2007), it is difficult to explain this common vascular organization. We hypothesize that the common set-up of these two territories where capillaries penetrate the sub-epithelial layer could be associated with their immune function. The S10 compartment must monitor ascending pathogens and maintain self-tolerance to sperm antigens that accumulate in this storage part of the organ. Similarly, the S1 compartment is the final gatekeeper preventing ascending pathogens from reaching the immune-privileged seminiferous tubules, while at the same time it must be tolerant to sperm-specific antigens entering the epididymal tubule and considered non-self. Therefore, in both compartments, a spider web blood network can be expected to allow immune cells easy access to the epididymal tubule. This should be particularly true for the S1 segment because, independently of infectious situations, it is constantly solicited in the adult animal by the arrival of sperm antigens and by its function of reabsorption of Sertolian fluid requiring very permeable vessels. This hypervascularization of the S1 epididymal compartment is further supported by the fact that it has been shown to be PLVAPpos, a marker of fenestrated vessels allowing high trans-endothelial transport (Guo et al., 2016). In other contexts, PLVAP has been shown to be required for fenestron biogenesis and organization, controlling fenestron permeability, angiogenesis, as well as leukocyte, antigen migration, and immomodulatory processes (Rantakari et al., 2015; Amersfoort et al., 2022). In addition, the presence of VEGFR2, VEGFR3, and VEGF-A in the microvascularization of the epididymis S1 compartment argues for active angiogenesis (Bussolati et al., 2003). This has been corroborated by the recent single-cell data (Rinaldi et al., 2020) showing that expression of angiogenic markers such as those mentioned above occurs in endothelial cells of the caput mouse epididymis. While active angiogenesis during postnatal epididymal development makes sense because it accompanies postnatal growth of the organ, it is more surprising that angiogenesis is still active in the adult IS epididymal compartment. In adult tissues, angiogenesis is most commonly associated with vascular remodeling in tissue repair processes and tumor progression (Komi et al., 2020). To date, self-renewal of the epididymal epithelium is collectively assumed to be rather slow, a situation that should not be associated with high angiogenic activity. However, very recent data could modify this general assumption because it has been reported that the basal cells of the epididymis share common properties with adult stem cells (Dufresne et al., 2022). This could support the idea that the epithelium of the adult epididymis may be in a perpetual process of self-renewal that could be promoted by the quasi-inflammatory situation inherent to immune stimulation mediated by sperm antigens.\n\nIt is interesting to note that during postnatal ontogeny of the epididymis, PLVAP expression increases in the S1 territory but decreases in the other regions of the organ as early as 15 DPN. Whether this is due to blood vessels loss or to PLVAPpos permeable fenestrons becoming PLVAPneg, less permeable vessels will require further study. In the mouse model, it has been shown that the development of the S1 territory occurs between 15 and 20 DPN concomitantly with the arrival of testicular fluid (Jegou et al., 1982), which has been shown to stimulate the Raf/Mek/Erk pathway known to be activated by VEGFs (Xu et al., 2016). Therefore, it is possible to consider that VEGF-A could be one of the lumicrine factors triggering angiogenesis and differentiation of S1/IS. In agreement with this, it has been reported that mice overexpressing VEGF-A showed dilation of the caput and corpus epididymis, with enlarged and more permeable blood vessels (Korpelainen et al., 1998). More recently, Pawlak and Caron, 2020, in their review have suggested that such vessels could be hybrid lymphatics also recently called \u2018mosaic vessels\u2019 (Lampejo et al., 2023) expressing both blood and lymphatic markers. Such hybrid vessels have been found in distinct vascular beds, including high endothelial venules in secondary lymphoid organs, liver sinusoidal endothelial cells, Schlemm\u2019s canal endothelial cells of the eye, the ascending vasa recta (AVR) of the kidney inner medulla region, and the remodeled spiral arteries of the placenta decidua (Gola et al., 2021; Kenig-Kozlovsky et al., 2018; Kim et al., 2017; Pawlak et al., 2019; Russell et al., 2019; Stamataki and Swadling, 2020) where they perform specialized exchange functions. As shown in Figure 9, these structures share many markers, including those tested in the present work, suggesting that some of the assumed blood vessels found in the S1 epididymal territory might be hybrid vessels. Given the close mesonephric origin and similar fluid reabsorption function of the IS/S1 epididymal territory and the AVR, it is possible that the two structures share such hybrid vessels. Tie2 expression, a marker of all currently described hybrid lymphatics (Kenig-Kozlovsky et al., 2018, see Figure 9), supports this hypothesis as it localizes to the S1 peritubular microvascularization together with VEGFR3 and PVLAP (not shown).\n\n![Figure 9.](https://cdn.elifesciences.org/articles/82748/elife-82748-fig9-v1.jpg)\n\n**Figure 9.:** This table compares markers associated with hybrid lymphatic vessels described in the literature (for a review, see Pawlak and Caron, 2020) with (column 2) their expression at different segments of the epididymis (source: Mammalian Reproductive Genetic; https://www.mrgd.org). Multiple results for the same gene correspond to the use of different Oligosets in the microarrays used by the MRG. Column 3 summarizes our present results at the initial segment level. The asterisk refers to the publication by Korpelainen et al., 1998.\n\nIn conclusion, based on our extensive study of the blood and lymphatic vascularization of the epididymis in mice, we propose that the epididymis presents two types of lymphatic vessels. On the one hand, there are peritubular PLVAPpos hybrid vessels, very permeable, particularly well represented in the S1 compartment that, according to our hypothesis, participate both in the reabsorption function and in the immune surveillance of this territory. On the other hand, we have more conventional lymphatics mainly in the interstitial compartment. The various segments of the epididymis are drained by initial and collecting lymphatic vessels, the latter being closely associated with the septa and then connecting via the PP to the most proximal LN. Three checkpoints are represented by the IS/S2\u2013S3, S6/S7, and S8\u20139/S10 septa. It is not yet clear to us that the lymphatic drainage of the S8\u20139/S10 compartment goes to the PP because it could also be drained by the lymphatic circuit monitoring the vas deferens. This detailed knowledge of the blood and lymphatic circuits of the epididymis highlights how open the epididymis is to the systemic compartment and how different its immune/inflammatory regulation is expected to be from that of the testis, where lymphatic collectors are restricted to the conjunctiva and never reach the interstitial compartment (Hirai et al., 2012; Svingen et al., 2012). A detailed schematic of epididymal vascular ontogeny in the mouse is proposed in Figure 10. If these observations in the mouse model are somehow translatable to the human epididymis, they could help to understand the complex inflammatory and immune contexts of posttesticular sperm maturation and their impact on male fertility.\n\n![Figure 10.](https://cdn.elifesciences.org/articles/82748/elife-82748-fig10-v1.jpg)\n\n## Materials and methods\n\n### Mice\n\nIn this study, we have used 3- to 6-month-old male C57BL/6 mice (Janvier Labs, France); the male VEGFR3-YFP mice came from the J.L. Thomas laboratory (UPMC-Inserm, Paris, France). The Vegfr3TYFP construct was generated from a BAC clone (RP23-65D23, Chori BACPAC resources) containing a 238kb geneomic fragment spanning the mouse Vegfr3 locus (Calvo et al., 2011). All animals were housed according to institutional guideline with a 12 hr photoperiod and food and water available ad libitum. Measures were taken to keep animal suffering to a minimum. The Auvergne Animal Experiment Ethics Committee (C2E2A) and the French Ministry approved all the following procedures for research (APAFIS authorization #12376-2017112913113962V3).\n\n### Antibodies\n\nThe primary and secondary antibodies used in clearing methods are indicated in Figure 11B. Additional antibodies used are: rat anti-mouse VEGFR3 (#NB110-61018, Novus Biologicals, LLC, Bio-Techne SAS, France); goat anti-mouse VEGF-A (#AF-493-SP, Novus Biologicals, LLC, Bio-Techne SAS, France), rabbit anti-mouse VEGF-C (#NB110-61022, Novus Biologicals, LLC, Bio-Techne SAS, France), goat anti-VEGF-D (#AF469, R&D Systems, Bio-Techne SAS, France), and rabbit anti-GAPDH (SAB2108668, Sigma-Aldrich Chimie Sarl, France).\n\n![Figure 11.](https://cdn.elifesciences.org/articles/82748/elife-82748-fig11-v1.jpg)\n\n**Figure 11.:** Panel A presents the multiplex labeling schedule for blood and lymphatic immunodetection. Each square corresponds to 24 hr except for the fixation and streptavidin/biotin treatment, where the time is indicated. Panel B provides detailed information regarding the various antibodies used in the course of the study.\n\n### Western blot analysis\n\nSoluble epididymal proteins were prepared, as described previously (Chorfa et al., 2021), separated with sodium dodecyl sulfate\u2013polyacrylamide gel electrophoresis (12% gel), and transferred to polyvinylidene fluoride membranes (Hybond ECL, Amersham Biosciences, Germany). Primary antibodies against the following protein were used: VEGFR3, VEGF-A, VEGF-C, VEGF-D, and GAPDH (served as a loading control). The appropriate HRP-conjugated secondary antibodies, goat anti-rabbit IgG or goat anti-mouse IgG (Abliance, France), were used to visualize the protein bands. Immunoreactive bands were detected by chemiluminescence (Clarity Western ECL Substrate Bio-Rad, France) using the ChemiDoc MP imaging system (Bio-Rad). Protein quantification was performed with ImageJ software. Protein amounts are expressed as relative values to the GAPDH.\n\n### Whole-mount multiplex immunolabeling and clearing procedure\n\nEpididymides were collected from mice after cervical dislocation and fixed in 4% paraformaldehyde for a period of time determined by their size (see Figure 11). Then, they were subjected to saturation/permeabilization for 1\u20135 days depending on their size in PBSGTS solution (1\u00d7 saline buffer phosphate containing 2% gelatin, 0.5% Triton X-100, and saponin 1 \u00b5g/ml) on a rotary shaker (100 rpm) at room temperature. Incubation with primary and secondary antibodies was performed under rotation at 37\u00b0C in the same buffer according to the schedule described in Figure 11A. Concentrations of primary and secondary antibodies used are reported in Figure 11B. The immunolabeled epididymides were then embedded in a 1.5% agarose cube in 0.5\u00d7 Tris\u2013Acetate\u2013EDTA buffer and cleared according to the 3DISCO method (Belle et al., 2014). The samples were stored in a dark place at room temperature until observation.\n\n### Immunofluorescence\n\nParaffin-embedded 5 \u00b5m sections of epididymides were subjected to heat-induced antigen recovery and then permeabilized for 30 min at room temperature with PBS supplemented with 0.3% Tween 20 and saponin (1 mg/mL). The sections were incubated for 1 hr at room temperature in the same solution with 10% serum before overnight incubation with the primary antibody at 4\u00b0C. Their detection was then carried out with appropriate secondary antibodies conjugated to Alexa Fluor 488, Alexa Fluor 555, or Alexa Fluor 647 (Invitrogen, Thermo Fisher Scientific, France). Nuclei were stained with Hoechst solution (1 \u00b5g/\u00b5L). The sections were embedded in Mowiol 4-88 (Sigma-Aldrich Chimie Sarl, France) and stored at 4\u00b0C until observation.\n\n### Image acquisition\n\n#### Macroscopic microscopy\n\nMacroscopic observations of endogenous VEGFR3:YFP transgene expression of the epididymis and testis were performed using a Leica binocular magnifier (with a 1\u00d7 objective).\n\n#### Confocal microscopy\n\nMultiplex immunofluorescence acquisition was performed using a SP8 confocal laser scanning microscope equipped with a Plan Apo \u03bb 40\u00d7 Oil objective (Leica, Germany). The following parameters were used: pinhole size of 1 airy unit (AU); Z-step: 0.5 \u00b5m. Four acquisition sequences were executed: (1) for Alexa 647 detection (638 nm laser 659\u2013698 nm window, using a photomultiplier tubes (PMT) detector at 700 V gain); (2) for Alexa 488 detection (488 nm laser; 493\u2013541 nm window, using a PMT detector at 565 V gain) and for Chromeo 494 detection (488 nm laser; 660\u2013700 nm window, using a PMT detector with a gain of 800 V); (3) for Alexa 555 detection (laser 552 nm; 560\u2013570 nm window, using a PMT detector with a gain of 700 V); and (4) for Hoechst detection (laser 405 nm; 423\u2013518 nm window, using a Hybrid detector with 10% gain).\n\n#### Light-sheet ultramicroscopy\n\n3D imaging was achieved with an ultramicroscope (LaVision BioTec Miltenyi, Germany) using ImspectorPro software. The images were obtained with either an MI PLAN 2\u00d7/NA 0.5, an MI PLAN 4\u00d7/0.35 objectives (MVPLAPO, Olympus), or a 20\u00d7/0.95 objective (Leica). Each sample was placed in a 100% quartz imaging reservoir filled with dibenzyl ether and illuminated from the side by the laser sheet. Images were acquired with a Andor Neo SCMOS CCD camera (2160\u00d72,160 pixels, LaVision BioTec). All 3D acquisitions were performed with a step size between each image was fixed at 1 \u03bcm (1.6 \u00b5m/pixel). Lasers at 488, 561, and 635 nm were used to obtain images using two light sources for the caput, corpus, or cauda epididymis.\n\n### Image processing\n\nUltramicroscopy datasets were uploaded to IMARIS version 9.7 (Bitplane, Oxford Instruments, England). The stacks were converted to IMARIS files (.ims) and 3D visualizations of z-stack images were generated using the volume rendering function. The vessels were transformed into surface rendering and the volume calculated automatically by IMARIS. Vessel densities were estimated as the ratio of the vessel volume to the total volume of the region. The videos were made IMARIS without deconvolution of the image.\n\n### Statistical analysis\n\nAll experiments were repeated at least three times and representative images are shown. All statistical analyses were performed with Prism software (GraphPad, USA). The Mann\u2013Whitney test was used to compare two groups. The Kruskal\u2013Wallis test followed by Dunn\u2019s posttest was used to compare more than two groups. A two-way analysis of variance test with a Bonferroni posttest was used to analyze the covariance of ligands (VEGF-A, VEGF-C, and VEGF-D) with the VEGFR3 receptor. The co-localization of the ligands VEGF-C and VEGF-D was evaluated by Pearson correlation and Mander\u2019s overlap coefficient with IMARIS co-localization modules (Bitplane). The values for co-localization analysis represent the mean \u00b1 standard error of the mean.\n",
+      "created_at": "2025-12-04T02:09:00.375880Z"
+    },
+    {
+      "id": "fead22c0-7420-4e22-8525-e3e0953210c9",
+      "submission_id": "a70983ff-a68e-469d-acfd-60d4bc446fcd",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- T Rajendra Kumar, https://ror.org/03wmf1y16 University of Colorado United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.82748.sa0](https://doi.org/10.7554/eLife.82748.sa0)\n\nThis fundamental work substantially advances our understanding of vessel development in mouse epididymis. The evidence supporting the conclusions is compelling, with rigorous state-of-the-art microscopy involving high-resolution Three-dimensional imaging. The work will be of broad interest to cell biologists and male reproductive biologists.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- T Rajendra Kumar, https://ror.org/03wmf1y16 University of Colorado United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.82748.sa1](https://doi.org/10.7554/eLife.82748.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Three-dimensional imaging of vascular development in the mouse epididymis: a prerequisite to better understand the post-testicular immune context of spermatozoa\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Mone Zaidi as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1) Revise Figure 2, 3, 4, and 7. Reorganization of the panel, higher magnification inserts for clarity.\n\n2) Introduction should include some basics about lymphatic and blood vessels in the context of the epididymis.\n\n3) Examine fetal stages to confirm when exactly vasculature is established.\n\n4) VEGF expression data as presented is not convincing. Revise these data.\n\n5) Revise the Discussion with a focus on major findings.\n\nReviewer #1 (Recommendations for the authors):\n\nI find it misleading that the authors frame this study as a way to understand the immune context of the spermatozoa in the epididymis since there is no data on immune cells or immune responses. I suggest reducing the emphasis on the immune context by revising the title, abstract, and introduction, to reflect the true goal and context of the study, which is to update our current understanding of the circulatory networks of the epididymis by providing a detailed 3D description of vasculature and lymphatics. The fact that this description is an important piece of the immune and inflammatory responses could be reserved for the second half of the introduction and/or the discussion.\n\nGraphical abstract: the differences between the different vessels and between the different stages of development are difficult to appreciate. Maybe the authors could just represent 2-3 stages and have blow-ups of the important differences?\n\nIt would be helpful for non-expert readers if the manuscript had a short introduction to the architecture of the lymphatic system and of the epididymis. For example, if the authors could define differences between collectors, nodes, and vessels, and explain the segmentation of the epididymis and the notion of septa, the manuscript would be more accessible to a broader audience.\n\nFigure 2A: the diagram should be in the same orientation as the microscopy images.\n\nFor figures 2B and C, the surface renderings are difficult to appreciate, it would be helpful to provide blowups on the S1 instead of coloring it white in the low mag image. This will allow the reader to see better details of the density and complexity of the networks.\n\nThe titles for Figures 2 and 3 are almost identical, what more information is presented in figure 3? This should be reflected in the figure title.\n\nIn Figures 2, 3, and 4 it would help to add merged images of all the stains with high mage insets to better appreciate the amount of overlap and comparison between the markers, similar to what is shown in figure 3D.\n\nI was not able to interpret figure 7A. The slicers that are meant to represent the septa are barely visible, and should all be presented in the same orientation/position to better appreciate the differences between the stages. The mix of native data and surface renderings makes it really difficult to view the vessels in these images. The diagram in 7A (second row) does not look enough like the images to help make sense of what is shown and what the authors hypothesize. Vessel types should be colored differently, as it is currently very difficult to tell the difference between LYVE1+ LECP and VEGFR3+ LEC\n\nThe discussion should recapitulate the major findings of the study and would benefit from being much more concise.\n",
+      "created_at": "2025-12-04T02:09:00.375880Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T02:09:00.375880Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T02:09:00.375880Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "90e466f5-cbd4-44cc-ba25-d288c1f1d413",
+      "content_id": "c97c250e-4677-49e3-951d-94b87ce2870d",
+      "claim_id": "C1",
+      "claim": "At least 15% of male infertility cases have a clear immunological origin.",
+      "claim_type": "EXPLICIT",
+      "source": "Studies regarding the etiology of male infertility have revealed that at least 15% of cases have a clear immunological origin, a share that is most likely underestimated if idiopathic infertilities were to be included (Dohle et al., 2005; Jungwirth et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published research (Dohle et al., 2005; Jungwirth et al., 2012).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:09:00.375880Z"
+    },
+    {
+      "id": "3e867427-13d4-45b3-8e7e-325a34afcd27",
+      "content_id": "c97c250e-4677-49e3-951d-94b87ce2870d",
+      "claim_id": "C2",
+      "claim": "The mammalian epididymis has a highly segmented anatomical organization with three macroscopic territories: caput, corpus, and cauda.",
+      "claim_type": "EXPLICIT",
+      "source": "A particularity of the mammalian epididymis is its highly segmented anatomical organization with three macroscopic territories (caput, corpus, and cauda as depicted in Figure 2), themselves sectorized into segments (10 for the mouse model, see Figure 2), some of which have distinct functional roles (Turner et al., 2003; Johnston et al., 2005).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by citations to published research and reference to Figure 2 showing the anatomical organization.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:09:00.375880Z"
+    },
+    {
+      "id": "177f4222-12ae-4d90-a326-cd8ba438d1f2",
+      "content_id": "c97c250e-4677-49e3-951d-94b87ce2870d",
+      "claim_id": "C3",
+      "claim": "The mouse epididymis has 10 segments.",
+      "claim_type": "EXPLICIT",
+      "source": "A particularity of the mammalian epididymis is its highly segmented anatomical organization with three macroscopic territories (caput, corpus, and cauda as depicted in Figure 2), themselves sectorized into segments (10 for the mouse model, see Figure 2), some of which have distinct functional roles (Turner et al., 2003; Johnston et al., 2005).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by citations and reference to Figure 2.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:09:00.375880Z"
+    },
+    {
+      "id": "82abfb09-2a97-413b-904e-d8be91312fae",
+      "content_id": "c97c250e-4677-49e3-951d-94b87ce2870d",
+      "claim_id": "C4",
+      "claim": "The testis has immune privilege.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike the testis, where mammalian evolution has chosen to tightly seal the germline from the immune system\u2014conferring immune privilege to this tissue (Meinhardt and Hedger, 2011)\u2014the epididymis tubule faces multiple immune challenges (Guiton et al., 2013; Hedger, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to published research (Meinhardt and Hedger, 2011).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:09:00.375880Z"
+    },
+    {
+      "id": "808dc328-a9b5-46c9-bd83-28f775cbd9a5",
+      "content_id": "c97c250e-4677-49e3-951d-94b87ce2870d",
+      "claim_id": "C5",
+      "claim": "The epididymis tubule faces multiple immune challenges.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike the testis, where mammalian evolution has chosen to tightly seal the germline from the immune system\u2014conferring immune privilege to this tissue (Meinhardt and Hedger, 2011)\u2014the epididymis tubule faces multiple immune challenges (Guiton et al., 2013; Hedger, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published research (Guiton et al., 2013; Hedger, 2011).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:09:00.375880Z"
+    },
+    {
+      "id": "ab471fe5-2161-475e-b5c7-7c00ae8ad79e",
+      "content_id": "c97c250e-4677-49e3-951d-94b87ce2870d",
+      "claim_id": "C6",
+      "claim": "The epididymis acts as a gatekeeper preventing ascending pathogens from reaching the immune-privileged seminiferous tubules.",
+      "claim_type": "EXPLICIT",
+      "source": "On the one hand, the epididymis tubule is the testis gatekeeper, preventing ascending pathogens from reaching the immune-privileged seminiferous tubules.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on logical inference from the anatomical position and function of the epididymis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:09:00.375880Z"
+    },
+    {
+      "id": "e851c6ba-4606-4a3e-a735-e21313c4bf73",
+      "content_id": "c97c250e-4677-49e3-951d-94b87ce2870d",
+      "claim_id": "C7",
+      "claim": "The epididymis must maintain self-tolerance toward spermatic antigens that appear at puberty.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, the epididymis must maintain self-tolerance toward spermatic antigens that are unique to this cell lineage and appear at puberty long after the establishment of the self-immune repertoire (Goodnow, 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to published research (Goodnow, 1996) and established immunological knowledge.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:09:00.375880Z"
+    },
+    {
+      "id": "15228e93-eb57-4c04-8bf1-9347d79f5745",
+      "content_id": "c97c250e-4677-49e3-951d-94b87ce2870d",
+      "claim_id": "C8",
+      "claim": "The epididymis has a dense network of peritubular antigen-presenting cells.",
+      "claim_type": "EXPLICIT",
+      "source": "This research has led to the characterization of a dense network of peritubular antigen-presenting cells (Da Silva et al., 2011), interstitial and intra-epithelial lymphocytes of distinct sub-families (Voisin et al., 2018), as well as of immunosuppressive players such as transforming growth factor beta (Pierucci-Alves et al., 2018; Voisin et al., 2020) and indoleamine/tryptophane dioxygenase activity (Britan et al., 2006; Jrad-Lamine et al., 2011; Jrad-Lamine et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to published research (Da Silva et al., 2011).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:09:00.375880Z"
+    },
+    {
+      "id": "8e675669-1a19-4126-bb39-11017be44188",
+      "content_id": "c97c250e-4677-49e3-951d-94b87ce2870d",
+      "claim_id": "C9",
+      "claim": "The epididymis contains interstitial and intra-epithelial lymphocytes of distinct sub-families.",
+      "claim_type": "EXPLICIT",
+      "source": "This research has led to the characterization of a dense network of peritubular antigen-presenting cells (Da Silva et al., 2011), interstitial and intra-epithelial lymphocytes of distinct sub-families (Voisin et al., 2018), as well as of immunosuppressive players such as transforming growth factor beta (Pierucci-Alves et al., 2018; Voisin et al., 2020) and indoleamine/tryptophane dioxygenase activity (Britan et al., 2006; Jrad-Lamine et al., 2011; Jrad-Lamine et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to published research (Voisin et al., 2018).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:09:00.375880Z"
+    },
+    {
+      "id": "a63d2b42-6415-48ca-849d-4b36f0c524b4",
+      "content_id": "c97c250e-4677-49e3-951d-94b87ce2870d",
+      "claim_id": "C10",
+      "claim": "Transforming growth factor beta acts as an immunosuppressive player in the epididymis.",
+      "claim_type": "EXPLICIT",
+      "source": "This research has led to the characterization of a dense network of peritubular antigen-presenting cells (Da Silva et al., 2011), interstitial and intra-epithelial lymphocytes of distinct sub-families (Voisin et al., 2018), as well as of immunosuppressive players such as transforming growth factor beta (Pierucci-Alves et al., 2018; Voisin et al., 2020) and indoleamine/tryptophane dioxygenase activity (Britan et al., 2006; Jrad-Lamine et al., 2011; Jrad-Lamine et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published research (Pierucci-Alves et al., 2018; Voisin et al., 2020).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:09:00.375880Z"
+    },
+    {
+      "id": "782aff27-2f9b-421c-b127-d9d359e85a50",
+      "content_id": "c97c250e-4677-49e3-951d-94b87ce2870d",
+      "claim_id": "C11",
+      "claim": "Indoleamine/tryptophane dioxygenase activity acts as an immunosuppressive player in the epididymis.",
+      "claim_type": "EXPLICIT",
+      "source": "This research has led to the characterization of a dense network of peritubular antigen-presenting cells (Da Silva et al., 2011), interstitial and intra-epithelial lymphocytes of distinct sub-families (Voisin et al., 2018), as well as of immunosuppressive players such as transforming growth factor beta (Pierucci-Alves et al., 2018; Voisin et al., 2020) and indoleamine/tryptophane dioxygenase activity (Britan et al., 2006; Jrad-Lamine et al., 2011; Jrad-Lamine et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published research (Britan et al., 2006; Jrad-Lamine et al., 2011; Jrad-Lamine et al., 2013).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:09:00.375880Z"
+    },
+    {
+      "id": "dda244ea-04a7-4124-971e-6d3df7ab4327",
+      "content_id": "c97c250e-4677-49e3-951d-94b87ce2870d",
+      "claim_id": "C12",
+      "claim": "Reports describing mammalian epididymal blood and lymphatic vessels are rare and rather old.",
+      "claim_type": "EXPLICIT",
+      "source": "Reports describing mammalian epididymal blood and lymphatic vessels are rare and rather old (P\u00e9rez-Clavier et al., 1982; Abe et al., 1984; McDonald and Scothorne, 1988; Itoh et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to older published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:09:00.375880Z"
+    },
+    {
+      "id": "b2cd06f9-1666-4df3-8387-186946e93545",
+      "content_id": "c97c250e-4677-49e3-951d-94b87ce2870d",
+      "claim_id": "C13",
+      "claim": "Hirai et al., 2010, performed the first histological study of mouse epididymal blood and lymphatic vasculature using the markers CD31/PECAM1 and LYVE1.",
+      "claim_type": "EXPLICIT",
+      "source": "More recently, Hirai et al., 2010, performed the first histological study of mouse epididymal blood and lymphatic vasculature using the markers CD31/PECAM1 and LYVE1, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to published research (Hirai et al., 2010).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:09:00.375880Z"
+    },
+    {
+      "id": "634e9608-2c99-4690-a18e-01adaf67254c",
+      "content_id": "c97c250e-4677-49e3-951d-94b87ce2870d",
+      "claim_id": "C14",
+      "claim": "PECAM1 is not an exclusive blood marker because it is also expressed at button-like junctions of endothelial cells in the initial lymphatics.",
+      "claim_type": "EXPLICIT",
+      "source": "Although PECAM1 is used to visualize blood vessels, it is not an exclusive blood marker because it is also found expressed at button-like junctions of endothelial cells in the initial lymphatics (Privratsky and Newman, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to published research (Privratsky and Newman, 2014).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:09:00.375880Z"
+    },
+    {
+      "id": "2b4d1cf5-4808-4056-8683-e9ec2c4ac1da",
+      "content_id": "c97c250e-4677-49e3-951d-94b87ce2870d",
+      "claim_id": "C15",
+      "claim": "LYVE1 alone limits the power of lymphatic analysis because this marker recognizes only a subpopulation of all lymphatics.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, to characterize lymphatics, the use of LYVE1 alone limits the power of the analysis because this marker recognizes only a subpopulation of all lymphatics (Kato et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to published research (Kato et al., 2006).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:09:00.375880Z"
+    },
+    {
+      "id": "77a9712f-e7fd-4e8e-992f-800e376969ff",
+      "content_id": "c97c250e-4677-49e3-951d-94b87ce2870d",
+      "claim_id": "C16",
+      "claim": "Lymphatic vasculature shares common embryonic origins with blood vessels.",
+      "claim_type": "EXPLICIT",
+      "source": "Characterization of the lymphatic vasculature in mammals is tricky because on the one hand, it shares common embryonic origins with the blood vessels (Baluk and McDonald, 2008; Srinivasan et al., 2007) and on the second hand, it concerns various different structures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published research (Baluk and McDonald, 2008; Srinivasan et al., 2007).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:09:00.375880Z"
+    },
+    {
+      "id": "b97f4d6c-fc59-454b-89b9-1c42d54328fe",
+      "content_id": "c97c250e-4677-49e3-951d-94b87ce2870d",
+      "claim_id": "C17",
+      "claim": "VEGF-C and VEGF-D are lymphangiogenic factors.",
+      "claim_type": "EXPLICIT",
+      "source": "A step forward was made with the identification of lymphangiogenic factors (vascular endothelial growth factors VEGF-C and VEGF-D) and their receptor (VEGFR3), which are now considered the major markers of lymphatics (Kaipainen et al., 1995; M\u00e4kinen et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published research (Kaipainen et al., 1995; M\u00e4kinen et al., 2001).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:09:00.375880Z"
+    },
+    {
+      "id": "dedefc45-a220-4d57-b379-344a12bba8ef",
+      "content_id": "c97c250e-4677-49e3-951d-94b87ce2870d",
+      "claim_id": "C18",
+      "claim": "VEGFR3 is the receptor for VEGF-C and VEGF-D and is considered a major marker of lymphatics.",
+      "claim_type": "EXPLICIT",
+      "source": "A step forward was made with the identification of lymphangiogenic factors (vascular endothelial growth factors VEGF-C and VEGF-D) and their receptor (VEGFR3), which are now considered the major markers of lymphatics (Kaipainen et al., 1995; M\u00e4kinen et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published research (Kaipainen et al., 1995; M\u00e4kinen et al., 2001).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:09:00.375880Z"
+    },
+    {
+      "id": "75c445b4-0d69-4343-8811-43d8ae013665",
+      "content_id": "c97c250e-4677-49e3-951d-94b87ce2870d",
+      "claim_id": "C19",
+      "claim": "LYVE1, PROX1, and PDPN are lymphatic markers.",
+      "claim_type": "EXPLICIT",
+      "source": "To ensure confidence in the identification of lymphatic structures, one should use a combination of markers, including VEGFR3, the lymphatic vessel endothelial hyaluronan receptor 1 (LYVE1), the prospero-related homeobox 1 (PROX1) transcription factor, and podoplanin (PDPN) (Banerji et al., 1999; Breiteneder-Geleff et al., 1999; Hamrah et al., 2003; Kivel\u00e4 et al., 2016; Mouta Carreira et al., 2001; Partanen et al., 2000; Wigle and Oliver, 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple citations to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:09:00.375880Z"
+    },
+    {
+      "id": "89f2c46d-0b31-4b71-a453-b7252dd703be",
+      "content_id": "c97c250e-4677-49e3-951d-94b87ce2870d",
+      "claim_id": "C20",
+      "claim": "PLVAP/MECA32 specifically identifies fenestrated blood vessels.",
+      "claim_type": "EXPLICIT",
+      "source": "We have followed this rationale in the present study, using three lymphatic markers together with plasmalemma vesicle-associated protein (PLVAP/MECA32) to specifically identify fenestrated blood vessels (Stan et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to published research (Stan et al., 2004).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:09:00.375880Z"
+    },
+    {
+      "id": "2c97524c-aa32-46c4-a371-30929c8888a6",
+      "content_id": "c97c250e-4677-49e3-951d-94b87ce2870d",
+      "claim_id": "C21",
+      "claim": "There is intense lymphatic vascularization at the epididymis\u2013testis interface regardless of the level of the epididymis.",
+      "claim_type": "EXPLICIT",
+      "source": "There is intense vascularization at the epididymis\u2013testis interface regardless of the level of the epididymis (caput, corpus, or cauda).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on observations from the VEGFR3:YFP mouse model presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:09:00.375880Z"
+    },
+    {
+      "id": "4326192d-9a4c-403f-973a-3340f492941e",
+      "content_id": "c97c250e-4677-49e3-951d-94b87ce2870d",
+      "claim_id": "C22",
+      "claim": "The lymphatic drainage joins the main testicular lymphatic trunk at the pampiniform plexus.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 1B shows that the lymphatic drainage joins the main testicular lymphatic trunk at the pampiniform plexus (PP) and follows it to a highly fluorescent structure that corresponds to the most proximal LN.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:09:00.375880Z"
+    },
+    {
+      "id": "0c4d42af-e053-44f1-9cce-90e78033c92a",
+      "content_id": "c97c250e-4677-49e3-951d-94b87ce2870d",
+      "claim_id": "C23",
+      "claim": "The lymphatic collectors coincide with the segmentation of the epididymis.",
+      "claim_type": "EXPLICIT",
+      "source": "It can be noted that the lymphatic collectors coincide well with the segmentation of the organ.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on observations from imaging data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:09:00.375880Z"
+    },
+    {
+      "id": "976909dc-4a0b-4090-b7c1-572959ace993",
+      "content_id": "c97c250e-4677-49e3-951d-94b87ce2870d",
+      "claim_id": "C24",
+      "claim": "A corpus lymphatic collector follows the body of the epididymis on the side adjacent to the testis connecting the caput with the cauda.",
+      "claim_type": "EXPLICIT",
+      "source": "A corpus lymphatic collector (Co-LC) follows the body of the epididymis on the side adjacent to the testis connecting the caput with the cauda (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:09:00.375880Z"
+    },
+    {
+      "id": "95f1b5c4-1393-4d39-ab02-a44ba87df3f6",
+      "content_id": "c97c250e-4677-49e3-951d-94b87ce2870d",
+      "claim_id": "C25",
+      "claim": "There is a very dense lymphatic network in the mouse epididymis.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, our observations revealed a very dense lymphatic network in the mouse epididymis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on observations from imaging data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:09:00.375880Z"
+    },
+    {
+      "id": "6a00614e-f1c0-4d55-a761-738c858becae",
+      "content_id": "c97c250e-4677-49e3-951d-94b87ce2870d",
+      "claim_id": "C26",
+      "claim": "The initial segment shows the highest PLVAP reactivity in the epididymis.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with previous reports (Abe et al., 1984; Suzuki, 1982), the initial segment (IS) of the caput shows the highest reactivity (see Figures 2B and 3A as well as Figure 2\u2014figure supplement 2A and B), with each IS tubule strongly reactive at their periphery (Figure 2\u2014figure supplement 3A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by citations and data shown in multiple figures.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:09:00.375880Z"
+    },
+    {
+      "id": "ba05edbe-9703-414e-a569-1ecd67e8dae3",
+      "content_id": "c97c250e-4677-49e3-951d-94b87ce2870d",
+      "claim_id": "C27",
+      "claim": "PLVAP reactivity is mainly found in the intertubular space outside the initial segment.",
+      "claim_type": "EXPLICIT",
+      "source": "Outside the IS, PLVAP reactivity is mainly found in the intertubular space as well as along the septum separating each epididymal segment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on observations from imaging data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:09:00.375880Z"
+    },
+    {
+      "id": "420fcee9-e42b-4497-bac5-94333d5af7ee",
+      "content_id": "c97c250e-4677-49e3-951d-94b87ce2870d",
+      "claim_id": "C28",
+      "claim": "PLVAP/MECA32pos blood vessel density in the initial segment is approximately 3.5 times greater than in the rest of the caput.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, PLVAP/MECA32pos blood vessel density in the IS was approximately 3.5 times greater than in the rest of the caput (p<0.001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by quantitative data analysis presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:09:00.375880Z"
+    },
+    {
+      "id": "c5aa8d21-9c14-492f-9f5c-d3a451e3b399",
+      "content_id": "c97c250e-4677-49e3-951d-94b87ce2870d",
+      "claim_id": "C29",
+      "claim": "VEGFR3pos lymphatic density in the initial segment is twice that of the rest of the caput.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, the VEGFR3pos lymphatic density was twice that of the rest of the organ (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by quantitative data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:09:00.375880Z"
+    },
+    {
+      "id": "c97a5e1f-0d98-4938-bf68-2e83367bf806",
+      "content_id": "c97c250e-4677-49e3-951d-94b87ce2870d",
+      "claim_id": "C30",
+      "claim": "There is no significant difference in the density of blood and lymphatic vessels between the S10 segment and the rest of the cauda.",
+      "claim_type": "EXPLICIT",
+      "source": "In the cauda, there was no significant difference in the density of blood and lymphatic vessels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by quantitative data analysis presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:09:00.375880Z"
+    },
+    {
+      "id": "3a23faeb-1d67-4176-a538-ba16238d8164",
+      "content_id": "c97c250e-4677-49e3-951d-94b87ce2870d",
+      "claim_id": "C31",
+      "claim": "There is a slight decrease in vascular density in the cauda compared to the caput (IS excluded) for both blood and lymphatic vessels.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparison of vascular density between the caput (IS excluded) and the cauda showed a slight decrease in the cauda for both blood and lymphatic vessels (Figure 2\u2014figure supplement 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by quantitative data shown in Figure 2\u2014figure supplement 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:09:00.375880Z"
+    },
+    {
+      "id": "206ba67c-fe19-41c5-b068-ba937b3ffa00",
+      "content_id": "c97c250e-4677-49e3-951d-94b87ce2870d",
+      "claim_id": "C32",
+      "claim": "The initial segment volume relative to the caput volume increases during postnatal development.",
+      "claim_type": "EXPLICIT",
+      "source": "IS progresses four times faster than the caput between 10 DPN and adulthood (A), representing less than 10% of the caput at 10 DPN whereas it represents 40% of the adult caput (Figure 4A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by quantitative data shown in Figure 4A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:09:00.375880Z"
+    },
+    {
+      "id": "f19b0420-fd76-43cb-a051-6546b0aebeb5",
+      "content_id": "c97c250e-4677-49e3-951d-94b87ce2870d",
+      "claim_id": "C33",
+      "claim": "Blood vessels concentrate in the initial segment from 20 DPN onward during postnatal development.",
+      "claim_type": "EXPLICIT",
+      "source": "Following the stronger postnatal development of the IS, we observed that the caput vascularization is rather homogeneous at 10 DPN, whereas from 20 DPN onward, the blood vessels seem to concentrate in the IS segment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on observations from imaging data during postnatal development.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:09:00.375880Z"
+    },
+    {
+      "id": "10109c67-4067-4878-9945-ad4a50d05620",
+      "content_id": "c97c250e-4677-49e3-951d-94b87ce2870d",
+      "claim_id": "C34",
+      "claim": "The density of PLVAPpos blood vessels in the initial segment is rather stable during postnatal development despite the increase in segment volume.",
+      "claim_type": "EXPLICIT",
+      "source": "This figure also shows that the density of PLVAPpos blood vessels in the IS segment is rather stable during postnatal development despite the increase in the segment volume.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by quantitative data analysis presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:09:00.375880Z"
+    },
+    {
+      "id": "36a5eb4e-2839-41ad-baca-1743929dfaf8",
+      "content_id": "c97c250e-4677-49e3-951d-94b87ce2870d",
+      "claim_id": "C35",
+      "claim": "There is a strong decrease in PLVAPpos blood vessel density in the caput (excluding IS) between 10 and 20 DPN.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, there is a strong decrease between 10 and 20 DPN in the rest of the caput.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by quantitative data analysis presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:09:00.375880Z"
+    },
+    {
+      "id": "01234c5c-8765-49e7-89fc-5bc6f7522be7",
+      "content_id": "c97c250e-4677-49e3-951d-94b87ce2870d",
+      "claim_id": "C36",
+      "claim": "There is a progressive increase in VEGFR3:YFP/LYVE1 lymphatic vessels that follows postnatal organ growth in a fairly linear fashion between 10 and 40 DPN.",
+      "claim_type": "EXPLICIT",
+      "source": "There is a progressive increase in VEGFR3:YFP/LYVE1 lymphatic vessels that follows postnatal organ growth in a fairly linear fashion at least between 10 and 40 DPN (Figure 4D and Figure 4\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by quantitative data shown in Figure 4D and Figure 4\u2014figure supplement 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:09:00.375880Z"
+    },
+    {
+      "id": "33c2e760-bfb7-4e7c-a3f4-6ddf1e06d514",
+      "content_id": "c97c250e-4677-49e3-951d-94b87ce2870d",
+      "claim_id": "C37",
+      "claim": "Beyond 40 DPN, there is a greater expansion of lymphatics in the initial segment and S10 compared with the rest of the organ.",
+      "claim_type": "EXPLICIT",
+      "source": "Beyond 40 DPN, there appears to be a greater expansion of lymphatics in the caput and cauda, in the IS and S10, respectively, compared with the rest of the organ (Figure 4D and Figure 4\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by quantitative data shown in Figure 4D and Figure 4\u2014figure supplement 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:09:00.375880Z"
+    },
+    {
+      "id": "e4c08eeb-0277-4adf-adfb-962a48465bc5",
+      "content_id": "c97c250e-4677-49e3-951d-94b87ce2870d",
+      "claim_id": "C38",
+      "claim": "VEGF-A levels decrease between 10 and 20 DPN, plateau, then increase at 40 DPN, and return to initial levels by adulthood.",
+      "claim_type": "EXPLICIT",
+      "source": "For the angiogenic ligand (VEGF-A), there was a decrease between 10 and 20 DPN followed by a plateau, and then an increase at 40 DPN; by adulthood, VEGF-A had returned to the initial level (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by western blot quantification data shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:09:00.375880Z"
+    },
+    {
+      "id": "2f9624e6-9c2a-4f3b-b551-ba3ac53efa4c",
+      "content_id": "c97c250e-4677-49e3-951d-94b87ce2870d",
+      "claim_id": "C39",
+      "claim": "VEGF-C and VEGF-D show a linear increase from 30 DPN.",
+      "claim_type": "EXPLICIT",
+      "source": "For the lymphangiogenic ligands (VEGF-C and VEGF-D), we observed a linear increase from 30 DPN for both ligands, consistent with the accumulation of their corresponding receptor VEGFR3 (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by western blot quantification data shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:09:00.375880Z"
+    },
+    {
+      "id": "2a5189e9-c93b-43b4-9ed9-0d5d22ff25df",
+      "content_id": "c97c250e-4677-49e3-951d-94b87ce2870d",
+      "claim_id": "C40",
+      "claim": "The active isoforms of VEGF-C (21 kDa) and VEGF-D (24 kDa) show strong statistical covariance with VEGFR3 receptor.",
+      "claim_type": "EXPLICIT",
+      "source": "An analysis of covariance of the different ligand isoforms of VEGF (see Figure 5\u2014figure supplement 1) with respect to the VEGFR3 receptor (see Figure 5C) shows strong statistical significance for the active ligand isoforms (i.e., the 21 kDa form for VEGF-C and the 24 kDa form for VEGF-D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by statistical analysis shown in Figure 5C and Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:09:00.375880Z"
+    },
+    {
+      "id": "9bd2ca6e-fb9b-42c1-844b-bc67c95b0c38",
+      "content_id": "c97c250e-4677-49e3-951d-94b87ce2870d",
+      "claim_id": "C41",
+      "claim": "VEGFR2 tissue localization is very similar to that of VEGFR3.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the tissue localization of VEGFR2 is very similar to that of VEGFR3 (Figure 6A), being present mainly in a peritubular position at the level of the IS whereas in the more distal part of the organ it seems to be restricted to some interstitial vessels (used with permission from Dr. A. Medvinsky; VEGFR2:GFP mouse strain; Xu et al., 2010).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by imaging data shown in Figure 6A and citation to the VEGFR2:GFP mouse strain (Xu et al., 2010).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:09:00.375880Z"
+    },
+    {
+      "id": "81762ca7-043f-4c07-8c02-34f407f9bd6b",
+      "content_id": "c97c250e-4677-49e3-951d-94b87ce2870d",
+      "claim_id": "C42",
+      "claim": "VEGF-A tissue localization corresponds to the intense blood vascularization observed in the initial segment.",
+      "claim_type": "EXPLICIT",
+      "source": "In accordance with previous work (Korpelainen et al., 1998), the tissue localization of its angiogenic ligand (VEGF-A) seems to correspond correctly (Figure 6A), supporting the intense blood vascularization observed in this very proximal segment of the epididymis.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by imaging data shown in Figure 6A and citation to previous work (Korpelainen et al., 1998).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:09:00.375880Z"
+    },
+    {
+      "id": "ed6246d1-43b0-4811-a579-f611ca0b7c40",
+      "content_id": "c97c250e-4677-49e3-951d-94b87ce2870d",
+      "claim_id": "C43",
+      "claim": "VEGF-C and VEGF-D are weakly present in the initial segment and increasingly present toward the tail of the epididymis, mainly in an interstitial position.",
+      "claim_type": "EXPLICIT",
+      "source": "Both of the lymphangiogenic ligands\u2014VEGF-C and VEGF-D\u2014show a similar tissue localization, being weakly present in the IS and increasingly present when moving toward the tail of the epididymis, mainly in an interstitial position (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by imaging data shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:09:00.375880Z"
+    },
+    {
+      "id": "7039e138-43d0-4861-a1d3-6fd9b21e617b",
+      "content_id": "c97c250e-4677-49e3-951d-94b87ce2870d",
+      "claim_id": "C44",
+      "claim": "VEGF-C and VEGF-D show co-localization with a Pearson coefficient of 0.684 \u00b1 0.038.",
+      "claim_type": "EXPLICIT",
+      "source": "A co-localization (Pearson coefficient = 0.684 \u00b1 0.038) and co-occurrence analysis (Mander's coefficient VEGF-C=0.934 \u00b1 0.028 and VEGF-D=0.569 \u00b1 0.031) supports the hypothesis of heterodimerization of the two ligands.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by quantitative co-localization analysis presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:09:00.375880Z"
+    },
+    {
+      "id": "8588aa99-061d-4015-b603-d4aaee640428",
+      "content_id": "c97c250e-4677-49e3-951d-94b87ce2870d",
+      "claim_id": "C45",
+      "claim": "VEGF-C and VEGF-D heterodimerization is supported by co-occurrence analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "A co-localization (Pearson coefficient = 0.684 \u00b1 0.038) and co-occurrence analysis (Mander's coefficient VEGF-C=0.934 \u00b1 0.028 and VEGF-D=0.569 \u00b1 0.031) supports the hypothesis of heterodimerization of the two ligands.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by quantitative co-occurrence analysis presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:09:00.375880Z"
+    },
+    {
+      "id": "40e9b286-1b38-4caa-889c-476d38844db3",
+      "content_id": "c97c250e-4677-49e3-951d-94b87ce2870d",
+      "claim_id": "C46",
+      "claim": "Lymphatics expressing all four markers (VEGFR3:YFP, LYVE1, PROX1, and PDPN) are particularly visible at the septa.",
+      "claim_type": "EXPLICIT",
+      "source": "Lymphatics expressing all four markers (VEGFR3:YFP, LYVE1, PROX1, and PDPN) are particularly visible at the septa (Figure 7A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by imaging data shown in Figure 7A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:09:00.375880Z"
+    },
+    {
+      "id": "479aa068-8e3f-4908-a6f8-9bd1e60f6f5c",
+      "content_id": "c97c250e-4677-49e3-951d-94b87ce2870d",
+      "claim_id": "C47",
+      "claim": "LYVE1pos cubblestone cells are observed at 10 DPN while very few VEGFR3-YFPpos cells are visible.",
+      "claim_type": "EXPLICIT",
+      "source": "LYVE1pos cubblestone cells are observed at 10 DPN while very few VEGFR3-YFPpos cells are visible.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on observations from imaging data during postnatal development.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:09:00.375880Z"
+    },
+    {
+      "id": "0c8be8af-9f46-4a18-ae75-23aca0354bf9",
+      "content_id": "c97c250e-4677-49e3-951d-94b87ce2870d",
+      "claim_id": "C48",
+      "claim": "Cubblestone cells aggregate to form tubular structures during postnatal development.",
+      "claim_type": "EXPLICIT",
+      "source": "Later, cubblestone cells appear to aggregate to form tubular structures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on observations from imaging data during postnatal development.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:09:00.375880Z"
+    },
+    {
+      "id": "c427ecb3-ca5f-4f69-a982-ae973f958a8d",
+      "content_id": "c97c250e-4677-49e3-951d-94b87ce2870d",
+      "claim_id": "C49",
+      "claim": "There is an increase in VEGFR3-YFPpos structures associated with a decrease in PLVAPpos vessels during postnatal development.",
+      "claim_type": "EXPLICIT",
+      "source": "Concomitantly, we record an increase in VEGFR3-YFPpos structures associated with a decrease in PLVAPpos vessels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on observations from imaging data during postnatal development.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:09:00.375880Z"
+    },
+    {
+      "id": "1ee70d6d-977e-4edf-be21-86489649923f",
+      "content_id": "c97c250e-4677-49e3-951d-94b87ce2870d",
+      "claim_id": "C50",
+      "claim": "The kinetics of events is consistent with active lympho-vasculogenesis during postnatal epididymal development.",
+      "claim_type": "EXPLICIT",
+      "source": "This kinetics of events is consistent with active lympho-vasculogenesis during postnatal epididymal development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the observed developmental patterns.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:09:00.375880Z"
+    },
+    {
+      "id": "cfbe8d39-c05f-40b4-ad25-a837040796d3",
+      "content_id": "c97c250e-4677-49e3-951d-94b87ce2870d",
+      "claim_id": "C51",
+      "claim": "The lymphatic network is denser on the anterior face of the epididymis (face adjacent to the testis) and progresses toward the posterior face.",
+      "claim_type": "EXPLICIT",
+      "source": "We have shown that the lymphatic network is denser on the anterior face of the epididymis (face adjacent to the testis) and progresses in the organ toward the posterior face.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on observations from imaging data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:09:00.375880Z"
+    },
+    {
+      "id": "080660a8-92ec-447a-9a02-fd2c1daafd5c",
+      "content_id": "c97c250e-4677-49e3-951d-94b87ce2870d",
+      "claim_id": "C52",
+      "claim": "The collecting lymphatics are mainly observed on the anterior surface and radiate inward toward the posterior surface following the septa.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the collecting lymphatics are mainly observed on the anterior surface and radiate inward toward the posterior surface following the septa.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on observations from imaging data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:09:00.375880Z"
+    },
+    {
+      "id": "89481457-b475-4a19-b586-02673b24bb0b",
+      "content_id": "c97c250e-4677-49e3-951d-94b87ce2870d",
+      "claim_id": "C53",
+      "claim": "Three septa (S1/S2\u2013S3, S6/S7, and S8\u20139/S10 junctions) appear to be more involved in lymphatic drainage.",
+      "claim_type": "EXPLICIT",
+      "source": "Each epididymal septum has lymphatic drainage, but three septa appear to be more involved, including the S1/S2\u2013S3, S6/S7, and S8\u20139/S10 junctions, with the latter having the largest lymphatic collector.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on observations from imaging data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:09:00.375880Z"
+    },
+    {
+      "id": "1414c060-1c81-401a-9411-b45b1d7b3fea",
+      "content_id": "c97c250e-4677-49e3-951d-94b87ce2870d",
+      "claim_id": "C54",
+      "claim": "The S8\u20139/S10 junction has the largest lymphatic collector.",
+      "claim_type": "EXPLICIT",
+      "source": "Each epididymal septum has lymphatic drainage, but three septa appear to be more involved, including the S1/S2\u2013S3, S6/S7, and S8\u20139/S10 junctions, with the latter having the largest lymphatic collector.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on observations from imaging data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:09:00.375880Z"
+    },
+    {
+      "id": "a36584f6-5c50-4b9d-a7c6-4f3de5d058f0",
+      "content_id": "c97c250e-4677-49e3-951d-94b87ce2870d",
+      "claim_id": "C55",
+      "claim": "Large lymphatic collectors usually follow the path of the arteries.",
+      "claim_type": "EXPLICIT",
+      "source": "We expected this finding because it corresponds to the position of the arteries and veins that irrigate the epididymis (Suzuki, 1982), and it is known that the large lymphatic collectors usually follow the path of the arteries (Gruffaz, 1984).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published research (Suzuki, 1982; Gruffaz, 1984).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:09:00.375880Z"
+    },
+    {
+      "id": "9b72d037-a0ff-4028-9a88-ba9c33aa39d7",
+      "content_id": "c97c250e-4677-49e3-951d-94b87ce2870d",
+      "claim_id": "C56",
+      "claim": "The three major septa could be considered important immunological checkpoints.",
+      "claim_type": "EXPLICIT",
+      "source": "These three septa could then be considered important checkpoints (Figure 8).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on inference from the observed lymphatic organization and reference to Figure 8.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:09:00.375880Z"
+    },
+    {
+      "id": "f846421d-db19-4ce8-b07f-2184e1716670",
+      "content_id": "c97c250e-4677-49e3-951d-94b87ce2870d",
+      "claim_id": "C57",
+      "claim": "Immune responses in autoimmune epididymitis are concentrated in the epididymal cauda and corpus.",
+      "claim_type": "EXPLICIT",
+      "source": "This view corroborates recent data showing that immune responses in autoimmune epididymitis are concentrated in the epididymal cauda and corpus, where we do see the major lymphatic collectors (Wijayarathna et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to published research (Wijayarathna et al., 2020).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:09:00.375880Z"
+    },
+    {
+      "id": "3c166645-7a8c-4795-a196-1ee1f086f76a",
+      "content_id": "c97c250e-4677-49e3-951d-94b87ce2870d",
+      "claim_id": "C58",
+      "claim": "Lymphangiogenesis corresponds to the extension of existing vessels, also known as 'sprouting'.",
+      "claim_type": "EXPLICIT",
+      "source": "Lymphangiogenesis corresponds to the extension of existing vessels, also known as 'sprouting,' while lymphangio-vasculogenesis involves the participation of precursor cells that create clusters later integrating already formed lymphatic vessels (Gutierrez-Miranda and Yaniv, 2020; Jafree et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published research (Gutierrez-Miranda and Yaniv, 2020; Jafree et al., 2021).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:09:00.375880Z"
+    },
+    {
+      "id": "af503e1e-9fce-42be-b861-5bf17fbdc011",
+      "content_id": "c97c250e-4677-49e3-951d-94b87ce2870d",
+      "claim_id": "C59",
+      "claim": "Lymphangio-vasculogenesis involves the participation of precursor cells that create clusters later integrating already formed lymphatic vessels.",
+      "claim_type": "EXPLICIT",
+      "source": "Lymphangiogenesis corresponds to the extension of existing vessels, also known as 'sprouting,' while lymphangio-vasculogenesis involves the participation of precursor cells that create clusters later integrating already formed lymphatic vessels (Gutierrez-Miranda and Yaniv, 2020; Jafree et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published research (Gutierrez-Miranda and Yaniv, 2020; Jafree et al., 2021).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:09:00.375880Z"
+    },
+    {
+      "id": "e25f643f-23b1-4d1f-8c84-6ebeea0c852f",
+      "content_id": "c97c250e-4677-49e3-951d-94b87ce2870d",
+      "claim_id": "C60",
+      "claim": "Lymphangio-vasculogenesis has been reported in the development of the mesenteric lymphatic vessels.",
+      "claim_type": "EXPLICIT",
+      "source": "Lymphangio-vasculogenesis has been reported in the development of the mesenteric lymphatic vessels (Stanczuk et al., 2015) and for the heart and kidney lymphatic networks (Jafree et al., 2019; Lioux et al., 2020), two organs with a septal organization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to published research (Stanczuk et al., 2015).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:09:00.375880Z"
+    },
+    {
+      "id": "05db4a65-0b6d-4ae8-9723-9c3f6321bfba",
+      "content_id": "c97c250e-4677-49e3-951d-94b87ce2870d",
+      "claim_id": "C61",
+      "claim": "Lymphangio-vasculogenesis has been reported for the heart and kidney lymphatic networks.",
+      "claim_type": "EXPLICIT",
+      "source": "Lymphangio-vasculogenesis has been reported in the development of the mesenteric lymphatic vessels (Stanczuk et al., 2015) and for the heart and kidney lymphatic networks (Jafree et al., 2019; Lioux et al., 2020), two organs with a septal organization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published research (Jafree et al., 2019; Lioux et al., 2020).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:09:00.375880Z"
+    },
+    {
+      "id": "15aef683-168d-4ec5-be05-f76ca5e0cec9",
+      "content_id": "c97c250e-4677-49e3-951d-94b87ce2870d",
+      "claim_id": "C62",
+      "claim": "The lymphatic neovascularization during postnatal epididymal development is supported by the concordant presence of lymphangiogenic ligands (VEGF-C and VEGF-D) and their receptor (VEGFR3).",
+      "claim_type": "EXPLICIT",
+      "source": "The lymphatic neovascularization we observed during postnatal epididymal development is supported by the observation that lymphangiogenic ligands (VEGF-C and VEGF-D) and their corresponding receptor (VEGFR3) are concordantly present in the developing tissue.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on western blot and immunohistochemistry data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:09:00.375880Z"
+    },
+    {
+      "id": "4c1e6226-c4ea-4578-bdd1-3615d13a3ff0",
+      "content_id": "c97c250e-4677-49e3-951d-94b87ce2870d",
+      "claim_id": "C63",
+      "claim": "Suzuki, 1982, reported that a testis-like blood network is present in most of the epididymis (segments 2\u20139) with intertubular vessels connected by perpendicular micro-vessels in a rope ladder organization.",
+      "claim_type": "EXPLICIT",
+      "source": "Suzuki, 1982, reported that a testis-like blood network is present in most of the epididymis (segments 2\u20139) with intertubular vessels connected by perpendicular micro-vessels in a rope ladder organization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to published research (Suzuki, 1982).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:09:00.375880Z"
+    },
+    {
+      "id": "530a55ac-7fce-438c-adea-09f19913230f",
+      "content_id": "c97c250e-4677-49e3-951d-94b87ce2870d",
+      "claim_id": "C64",
+      "claim": "In the initial segment (IS/S1) and distal segment (S10) of the epididymis, micro-vessels encircle each tubule in a spider web organization with capillaries that penetrate the epithelial sublayer.",
+      "claim_type": "EXPLICIT",
+      "source": "Distinctly, in the most proximal (IS/S1) and distal (S10) segments of the epididymis, we found micro-vessels encircling each tubule in a spider web organization with capillaries that penetrate the epithelial sublayer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on observations from imaging data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:09:00.375880Z"
+    },
+    {
+      "id": "0d1e995a-0b6c-446c-91df-39c70002e119",
+      "content_id": "c97c250e-4677-49e3-951d-94b87ce2870d",
+      "claim_id": "C65",
+      "claim": "The IS and S10 compartments of the epididymis have distinct embryonic origins and are functionally different.",
+      "claim_type": "EXPLICIT",
+      "source": "Because the IS and S10 compartments of the epididymis have distinct embryonic origins and are functionally different (Abe et al., 1984; Johnston et al., 2007), it is difficult to explain this common vascular organization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published research (Abe et al., 1984; Johnston et al., 2007).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:09:00.375880Z"
+    },
+    {
+      "id": "af91e92a-e1bf-4649-b45e-a365415154da",
+      "content_id": "c97c250e-4677-49e3-951d-94b87ce2870d",
+      "claim_id": "C66",
+      "claim": "The S10 compartment must monitor ascending pathogens and maintain self-tolerance to sperm antigens that accumulate in this storage part of the organ.",
+      "claim_type": "EXPLICIT",
+      "source": "The S10 compartment must monitor ascending pathogens and maintain self-tolerance to sperm antigens that accumulate in this storage part of the organ.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the known function of the S10 compartment.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:09:00.375880Z"
+    },
+    {
+      "id": "53e4f28a-1562-42d4-bad9-7deb70c889bb",
+      "content_id": "c97c250e-4677-49e3-951d-94b87ce2870d",
+      "claim_id": "C67",
+      "claim": "The S1 compartment is the final gatekeeper preventing ascending pathogens from reaching the immune-privileged seminiferous tubules.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, the S1 compartment is the final gatekeeper preventing ascending pathogens from reaching the immune-privileged seminiferous tubules, while at the same time it must be tolerant to sperm-specific antigens entering the epididymal tubule and considered non-self.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the anatomical position and function of the S1 compartment.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:09:00.375880Z"
+    },
+    {
+      "id": "0fb80c53-40fd-413a-9310-74818348a075",
+      "content_id": "c97c250e-4677-49e3-951d-94b87ce2870d",
+      "claim_id": "C68",
+      "claim": "The S1 segment is PLVAPpos, a marker of fenestrated vessels allowing high trans-endothelial transport.",
+      "claim_type": "EXPLICIT",
+      "source": "This hypervascularization of the S1 epididymal compartment is further supported by the fact that it has been shown to be PLVAPpos, a marker of fenestrated vessels allowing high trans-endothelial transport (Guo et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to published research (Guo et al., 2016) and data presented in the manuscript.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:09:00.375880Z"
+    },
+    {
+      "id": "aedf6d67-cafc-4c9a-bbf5-d188f1e89d20",
+      "content_id": "c97c250e-4677-49e3-951d-94b87ce2870d",
+      "claim_id": "C69",
+      "claim": "PLVAP is required for fenestron biogenesis and organization, controlling fenestron permeability, angiogenesis, as well as leukocyte, antigen migration, and immunomodulatory processes.",
+      "claim_type": "EXPLICIT",
+      "source": "In other contexts, PLVAP has been shown to be required for fenestron biogenesis and organization, controlling fenestron permeability, angiogenesis, as well as leukocyte, antigen migration, and immomodulatory processes (Rantakari et al., 2015; Amersfoort et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published research (Rantakari et al., 2015; Amersfoort et al., 2022).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:09:00.375880Z"
+    },
+    {
+      "id": "16c61de6-ec0b-4aed-b9cf-3721c97ac293",
+      "content_id": "c97c250e-4677-49e3-951d-94b87ce2870d",
+      "claim_id": "C70",
+      "claim": "The presence of VEGFR2, VEGFR3, and VEGF-A in the microvascularization of the epididymis S1 compartment argues for active angiogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the presence of VEGFR2, VEGFR3, and VEGF-A in the microvascularization of the epididymis S1 compartment argues for active angiogenesis (Bussolati et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to published research (Bussolati et al., 2003) and data presented in the manuscript.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:09:00.375880Z"
+    },
+    {
+      "id": "2b2ccd53-e680-4cde-84d9-8e4c13ae25ba",
+      "content_id": "c97c250e-4677-49e3-951d-94b87ce2870d",
+      "claim_id": "C71",
+      "claim": "Single-cell data shows that expression of angiogenic markers occurs in endothelial cells of the caput mouse epididymis.",
+      "claim_type": "EXPLICIT",
+      "source": "This has been corroborated by the recent single-cell data (Rinaldi et al., 2020) showing that expression of angiogenic markers such as those mentioned above occurs in endothelial cells of the caput mouse epididymis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to published research (Rinaldi et al., 2020).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:09:00.375880Z"
+    },
+    {
+      "id": "7b58b533-da93-4a4e-9e8f-5182041dcd5b",
+      "content_id": "c97c250e-4677-49e3-951d-94b87ce2870d",
+      "claim_id": "C72",
+      "claim": "Self-renewal of the epididymal epithelium is collectively assumed to be rather slow.",
+      "claim_type": "EXPLICIT",
+      "source": "To date, self-renewal of the epididymal epithelium is collectively assumed to be rather slow, a situation that should not be associated with high angiogenic activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:09:00.375880Z"
+    },
+    {
+      "id": "53ae208b-27f5-4af2-9ff4-613cf52a1aff",
+      "content_id": "c97c250e-4677-49e3-951d-94b87ce2870d",
+      "claim_id": "C73",
+      "claim": "The basal cells of the epididymis share common properties with adult stem cells.",
+      "claim_type": "EXPLICIT",
+      "source": "However, very recent data could modify this general assumption because it has been reported that the basal cells of the epididymis share common properties with adult stem cells (Dufresne et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to published research (Dufresne et al., 2022).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:09:00.375880Z"
+    },
+    {
+      "id": "092e3a11-2980-4dc2-895e-e3cc5be4c290",
+      "content_id": "c97c250e-4677-49e3-951d-94b87ce2870d",
+      "claim_id": "C74",
+      "claim": "During postnatal ontogeny of the epididymis, PLVAP expression increases in the S1 territory but decreases in the other regions of the organ as early as 15 DPN.",
+      "claim_type": "EXPLICIT",
+      "source": "It is interesting to note that during postnatal ontogeny of the epididymis, PLVAP expression increases in the S1 territory but decreases in the other regions of the organ as early as 15 DPN.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on observations from imaging data during postnatal development.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:09:00.375880Z"
+    },
+    {
+      "id": "a9f41d9d-5ab4-4270-b90c-ae0b2ca70924",
+      "content_id": "c97c250e-4677-49e3-951d-94b87ce2870d",
+      "claim_id": "C75",
+      "claim": "The development of the S1 territory occurs between 15 and 20 DPN concomitantly with the arrival of testicular fluid.",
+      "claim_type": "EXPLICIT",
+      "source": "In the mouse model, it has been shown that the development of the S1 territory occurs between 15 and 20 DPN concomitantly with the arrival of testicular fluid (Jegou et al., 1982), which has been shown to stimulate the Raf/Mek/Erk pathway known to be activated by VEGFs (Xu et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published research (Jegou et al., 1982; Xu et al., 2016).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:09:00.375880Z"
+    },
+    {
+      "id": "b1b05018-cdf8-46c1-89af-511e626f0212",
+      "content_id": "c97c250e-4677-49e3-951d-94b87ce2870d",
+      "claim_id": "C76",
+      "claim": "Testicular fluid stimulates the Raf/Mek/Erk pathway known to be activated by VEGFs.",
+      "claim_type": "EXPLICIT",
+      "source": "In the mouse model, it has been shown that the development of the S1 territory occurs between 15 and 20 DPN concomitantly with the arrival of testicular fluid (Jegou et al., 1982), which has been shown to stimulate the Raf/Mek/Erk pathway known to be activated by VEGFs (Xu et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to published research (Xu et al., 2016).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:09:00.375880Z"
+    },
+    {
+      "id": "6a9b79f6-492c-45e9-876f-d03ec6202d2d",
+      "content_id": "c97c250e-4677-49e3-951d-94b87ce2870d",
+      "claim_id": "C77",
+      "claim": "VEGF-A could be one of the lumicrine factors triggering angiogenesis and differentiation of S1/IS.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, it is possible to consider that VEGF-A could be one of the lumicrine factors triggering angiogenesis and differentiation of S1/IS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on speculation from the observed data and known pathways.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:09:00.375880Z"
+    },
+    {
+      "id": "28ac16ec-30fb-42a3-a421-8f1e9cfa601d",
+      "content_id": "c97c250e-4677-49e3-951d-94b87ce2870d",
+      "claim_id": "C78",
+      "claim": "Mice overexpressing VEGF-A showed dilation of the caput and corpus epididymis, with enlarged and more permeable blood vessels.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with this, it has been reported that mice overexpressing VEGF-A showed dilation of the caput and corpus epididymis, with enlarged and more permeable blood vessels (Korpelainen et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to published research (Korpelainen et al., 1998).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:09:00.375880Z"
+    },
+    {
+      "id": "804cbc4a-8227-4a22-b6b9-5154cd5f754b",
+      "content_id": "c97c250e-4677-49e3-951d-94b87ce2870d",
+      "claim_id": "C79",
+      "claim": "Hybrid lymphatics are also called 'mosaic vessels'.",
+      "claim_type": "EXPLICIT",
+      "source": "More recently, Pawlak and Caron, 2020, in their review have suggested that such vessels could be hybrid lymphatics also recently called 'mosaic vessels' (Lampejo et al., 2023) expressing both blood and lymphatic markers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published research (Pawlak and Caron, 2020; Lampejo et al., 2023).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:09:00.375880Z"
+    },
+    {
+      "id": "5fb31abf-2845-4b10-9e34-47d7df8448a1",
+      "content_id": "c97c250e-4677-49e3-951d-94b87ce2870d",
+      "claim_id": "C80",
+      "claim": "Hybrid vessels have been found in high endothelial venules in secondary lymphoid organs, liver sinusoidal endothelial cells, Schlemm's canal endothelial cells of the eye, the ascending vasa recta of the kidney inner medulla region, and the remodeled spiral arteries of the placenta decidua.",
+      "claim_type": "EXPLICIT",
+      "source": "Such hybrid vessels have been found in distinct vascular beds, including high endothelial venules in secondary lymphoid organs, liver sinusoidal endothelial cells, Schlemm's canal endothelial cells of the eye, the ascending vasa recta (AVR) of the kidney inner medulla region, and the remodeled spiral arteries of the placenta decidua (Gola et al., 2021; Kenig-Kozlovsky et al., 2018; Kim et al., 2017; Pawlak et al., 2019; Russell et al., 2019; Stamataki and Swadling, 2020) where they perform specialized exchange functions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple citations to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:09:00.375880Z"
+    },
+    {
+      "id": "9397a7ec-7d7d-4fc0-be3e-dc5ad5055847",
+      "content_id": "c97c250e-4677-49e3-951d-94b87ce2870d",
+      "claim_id": "C81",
+      "claim": "Tie2 expression localizes to the S1 peritubular microvascularization together with VEGFR3 and PVLAP.",
+      "claim_type": "EXPLICIT",
+      "source": "Tie2 expression, a marker of all currently described hybrid lymphatics (Kenig-Kozlovsky et al., 2018, see Figure 9), supports this hypothesis as it localizes to the S1 peritubular microvascularization together with VEGFR3 and PVLAP (not shown).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by citation to published research (Kenig-Kozlovsky et al., 2018) and reference to Figure 9, though the data is noted as 'not shown'.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:09:00.375880Z"
+    },
+    {
+      "id": "390be156-e6dc-4b27-af31-14894223f943",
+      "content_id": "c97c250e-4677-49e3-951d-94b87ce2870d",
+      "claim_id": "C82",
+      "claim": "The epididymis presents two types of lymphatic vessels: peritubular PLVAPpos hybrid vessels and more conventional lymphatics mainly in the interstitial compartment.",
+      "claim_type": "EXPLICIT",
+      "source": "In conclusion, based on our extensive study of the blood and lymphatic vascularization of the epididymis in mice, we propose that the epididymis presents two types of lymphatic vessels. On the one hand, there are peritubular PLVAPpos hybrid vessels, very permeable, particularly well represented in the S1 compartment that, according to our hypothesis, participate both in the reabsorption function and in the immune surveillance of this territory. On the other hand, we have more conventional lymphatics mainly in the interstitial compartment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the data presented in the manuscript.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:09:00.375880Z"
+    },
+    {
+      "id": "c43b0ca7-8584-450d-a775-b9b3ec13d6a7",
+      "content_id": "c97c250e-4677-49e3-951d-94b87ce2870d",
+      "claim_id": "C83",
+      "claim": "Three checkpoints are represented by the IS/S2\u2013S3, S6/S7, and S8\u20139/S10 septa.",
+      "claim_type": "EXPLICIT",
+      "source": "Three checkpoints are represented by the IS/S2\u2013S3, S6/S7, and S8\u20139/S10 septa.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the observed lymphatic organization.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:09:00.375880Z"
+    },
+    {
+      "id": "f017eb5b-d82f-4f1b-8b38-4bc297a3f291",
+      "content_id": "c97c250e-4677-49e3-951d-94b87ce2870d",
+      "claim_id": "C84",
+      "claim": "The epididymis is open to the systemic compartment.",
+      "claim_type": "EXPLICIT",
+      "source": "This detailed knowledge of the blood and lymphatic circuits of the epididymis highlights how open the epididymis is to the systemic compartment and how different its immune/inflammatory regulation is expected to be from that of the testis, where lymphatic collectors are restricted to the conjunctiva and never reach the interstitial compartment (Hirai et al., 2012; Svingen et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the observed vascular organization and comparison with the testis.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:09:00.375880Z"
+    },
+    {
+      "id": "a0543a66-3e29-40fd-8aef-9381326ff64e",
+      "content_id": "c97c250e-4677-49e3-951d-94b87ce2870d",
+      "claim_id": "C85",
+      "claim": "In the testis, lymphatic collectors are restricted to the conjunctiva and never reach the interstitial compartment.",
+      "claim_type": "EXPLICIT",
+      "source": "This detailed knowledge of the blood and lymphatic circuits of the epididymis highlights how open the epididymis is to the systemic compartment and how different its immune/inflammatory regulation is expected to be from that of the testis, where lymphatic collectors are restricted to the conjunctiva and never reach the interstitial compartment (Hirai et al., 2012; Svingen et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published research (Hirai et al., 2012; Svingen et al., 2012).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:09:00.375880Z"
+    },
+    {
+      "id": "f109b43b-c614-470e-8b0d-5cddd125be88",
+      "content_id": "c97c250e-4677-49e3-951d-94b87ce2870d",
+      "claim_id": "C86",
+      "claim": "The VEGFR3:YFP transgenic mouse model was used in this study.",
+      "claim_type": "EXPLICIT",
+      "source": "In the present report, we have taken advantage of a VEGFR3:YFP transgenic mouse model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is explicitly stated in the abstract and methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:09:00.375880Z"
+    },
+    {
+      "id": "1a20915c-729e-485f-aec5-93dcc41dfdc3",
+      "content_id": "c97c250e-4677-49e3-951d-94b87ce2870d",
+      "claim_id": "C87",
+      "claim": "3DISCO clearing method was used for organ clearing.",
+      "claim_type": "EXPLICIT",
+      "source": "Using high-resolution three-dimensional (3D) imaging and organ clearing coupled with multiplex immunodetections of lymphatic (LYVE1, PDPN, PROX1) and/or blood (PLVAP/Meca32) markers, we provide a simultaneous deep 3D view of the lymphatic and blood epididymal vasculature in the mature adult mouse as well as during postnatal development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the methods section describing the 3DISCO clearing procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:09:00.375880Z"
+    },
+    {
+      "id": "65ead7b5-6a6d-4ce4-aa77-ec567511d2cb",
+      "content_id": "c97c250e-4677-49e3-951d-94b87ce2870d",
+      "claim_id": "C88",
+      "claim": "Light-sheet microscopy was used for high-resolution 3D imaging.",
+      "claim_type": "EXPLICIT",
+      "source": "Using high-resolution three-dimensional (3D) imaging and organ clearing coupled with multiplex immunodetections of lymphatic (LYVE1, PDPN, PROX1) and/or blood (PLVAP/Meca32) markers, we provide a simultaneous deep 3D view of the lymphatic and blood epididymal vasculature in the mature adult mouse as well as during postnatal development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the methods section describing light-sheet ultramicroscopy.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:09:00.375880Z"
+    },
+    {
+      "id": "948c6d61-086b-4203-b218-d12ece4257f5",
+      "content_id": "c97c250e-4677-49e3-951d-94b87ce2870d",
+      "claim_id": "C89",
+      "claim": "The Vegfr3TYFP construct was generated from a BAC clone (RP23-65D23) containing a 238kb genomic fragment spanning the mouse Vegfr3 locus.",
+      "claim_type": "EXPLICIT",
+      "source": "The Vegfr3TYFP construct was generated from a BAC clone (RP23-65D23, Chori BACPAC resources) containing a 238kb geneomic fragment spanning the mouse Vegfr3 locus (Calvo et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to published research (Calvo et al., 2011) and description in the methods.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:09:00.375880Z"
+    },
+    {
+      "id": "93f39231-d708-487c-b4ec-06eaf4c88240",
+      "content_id": "c97c250e-4677-49e3-951d-94b87ce2870d",
+      "claim_id": "C90",
+      "claim": "The 3DISCO organ clearing procedures resulted in a loss of the endogenous VEGFR3:YFP fluorescence.",
+      "claim_type": "EXPLICIT",
+      "source": "As the 3DISCO organ clearing procedures resulted in a loss of the endogenous transgene (VEGFR3:YFP) fluorescence, anti-GFP was used to strengthen the signal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on observations during the experimental procedures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:09:00.375880Z"
+    },
+    {
+      "id": "23c60ee3-3d94-4ada-851d-6fedf1de5506",
+      "content_id": "c97c250e-4677-49e3-951d-94b87ce2870d",
+      "claim_id": "C91",
+      "claim": "Anti-GFP antibody was used to strengthen the VEGFR3:YFP signal after 3DISCO clearing.",
+      "claim_type": "EXPLICIT",
+      "source": "As the 3DISCO organ clearing procedures resulted in a loss of the endogenous transgene (VEGFR3:YFP) fluorescence, anti-GFP was used to strengthen the signal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the experimental methods described.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:09:00.375880Z"
+    },
+    {
+      "id": "02243aba-fef3-4f40-ab8d-d1ffe569a848",
+      "content_id": "c97c250e-4677-49e3-951d-94b87ce2870d",
+      "claim_id": "C92",
+      "claim": "The lymphatic network is asymmetrical, being very dense on the epididymal side next to the testis.",
+      "claim_type": "EXPLICIT",
+      "source": "The video clearly shows that the lymphatic network is asymmetrical as it is very dense on the epididymal side next to the testis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on observations from video data (Figure 2\u2014video 2).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:09:00.375880Z"
+    },
+    {
+      "id": "320913b8-551b-4982-a8da-7040a2ba7042",
+      "content_id": "c97c250e-4677-49e3-951d-94b87ce2870d",
+      "claim_id": "C93",
+      "claim": "PLVAP reactivity is particularly strong at the IS/S2\u2013S3 and S9/S10 septum junctions.",
+      "claim_type": "EXPLICIT",
+      "source": "Outside the IS, PLVAP reactivity is mainly found in the intertubular space as well as along the septum separating each epididymal segment. This is particularly true for the IS/S2\u2013S3 and the S9/S10 septum junctions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on observations from imaging data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:09:00.375880Z"
+    },
+    {
+      "id": "30dd1c37-8f8f-4662-9e3f-dab62242d40d",
+      "content_id": "c97c250e-4677-49e3-951d-94b87ce2870d",
+      "claim_id": "C94",
+      "claim": "The LYVE1, PROX1, and VEGFR3:YFP profiles are very similar for the caput and cauda.",
+      "claim_type": "EXPLICIT",
+      "source": "The LYVE1, PROX1, and VEGFR3:YFP profiles are very similar for the caput and cauda (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on observations from imaging data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:09:00.375880Z"
+    },
+    {
+      "id": "0fb2b4e0-76ad-4b2d-a806-04b0ec87068f",
+      "content_id": "c97c250e-4677-49e3-951d-94b87ce2870d",
+      "claim_id": "C95",
+      "claim": "The PDPN profile appears different from those of LYVE1, PROX1, and VEGFR3:YFP.",
+      "claim_type": "EXPLICIT",
+      "source": "The PDPN profile appears different from those of LYVE1, PROX1, and VEGFR3:YFP (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on observations from imaging data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:09:00.375880Z"
+    },
+    {
+      "id": "5336b92f-4036-4bff-910b-25d2482874da",
+      "content_id": "c97c250e-4677-49e3-951d-94b87ce2870d",
+      "claim_id": "C96",
+      "claim": "PDPN reactivity is more homogeneous and is concentrated at the peritubular level.",
+      "claim_type": "EXPLICIT",
+      "source": "The PDPN reactivity is more homogeneous and is concentrated at the peritubular level (Figure 2B and Figure 2\u2014figure supplement 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on observations from imaging data shown in Figure 2B and Figure 2\u2014figure supplement 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:09:00.375880Z"
+    },
+    {
+      "id": "492b54cd-1974-4c65-89b3-2717e6ebf4ba",
+      "content_id": "c97c250e-4677-49e3-951d-94b87ce2870d",
+      "claim_id": "C97",
+      "claim": "Large external lymphatic collectors follow the septa, particularly at the IS/S2-S3 and S9/S10 boundaries.",
+      "claim_type": "EXPLICIT",
+      "source": "As seen in Figure 1, large external lymphatic collectors follow the septa, particularly at the IS/S2-S3 and S9/S10 boundaries.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on observations from imaging data shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:09:00.375880Z"
+    },
+    {
+      "id": "7f149f31-2d46-4dd1-974e-dee41022ca0c",
+      "content_id": "c97c250e-4677-49e3-951d-94b87ce2870d",
+      "claim_id": "C98",
+      "claim": "The collectors dip inside the organ and irrigate the intertubular compartments, especially in the cauda region.",
+      "claim_type": "EXPLICIT",
+      "source": "These collectors can be seen to dip inside the organ and irrigate the intertubular compartments, especially in the cauda region (see Figure 2\u2014video 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on observations from video data (Figure 2\u2014video 3).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:09:00.375880Z"
+    },
+    {
+      "id": "08496be7-479b-41d0-9023-44f4f6b725b5",
+      "content_id": "c97c250e-4677-49e3-951d-94b87ce2870d",
+      "claim_id": "C99",
+      "claim": "LYVE1, PROX1, and VEGFR3:YFP do not merge totally in either the caput or the cauda region when viewed at higher magnification.",
+      "claim_type": "EXPLICIT",
+      "source": "However, when viewed at higher magnification (Figure 2\u2014figure supplement 3A), they do not merge totally in either the caput or the cauda region, especially for the small lymphatic vessels separating the epididymal segments.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on observations from imaging data shown in Figure 2\u2014figure supplement 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:09:00.375880Z"
+    },
+    {
+      "id": "cdd9dbf2-0173-4d7f-8d2d-7fcc3721fce2",
+      "content_id": "c97c250e-4677-49e3-951d-94b87ce2870d",
+      "claim_id": "C100",
+      "claim": "PROX1 gives very similar results to LYVE1 in the caput and cauda regions.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 2B and Figure 2\u2014figure supplement 3A also show that the lymphatic marker (PROX1) gives very similar results to LYVE1 in the caput and cauda regions.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on observations from imaging data shown in Figure 2B and Figure 2\u2014figure supplement 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:09:00.375880Z"
+    },
+    {
+      "id": "0eecdd4b-f9f7-4ac9-9b53-626b840619bd",
+      "content_id": "c97c250e-4677-49e3-951d-94b87ce2870d",
+      "claim_id": "C101",
+      "claim": "The pattern of PROX1 is slightly distinct from that of VEGFR3:YFP and very different from that of PDPN.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the pattern of PROX1 is slightly distinct from that of VEGFR3:YFP and very different from that of PDPN.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on observations from imaging data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:09:00.375880Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "1b041322-991d-4ebf-b8d9-585e32fb6397",
+      "content_id": "c97c250e-4677-49e3-951d-94b87ce2870d",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The epididymis faces unique immunological challenges, requiring both protection against pathogens and tolerance to sperm antigens, with at least 15% of male infertility having immunological origins. The epididymis contains immune cells and immunosuppressive factors to manage these dual requirements.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C11 establish the immunological context through citations to prior work. The claims about immune privilege of testis (C4), immune challenges in epididymis (C5-C7), and characterization of immune cells and factors (C8-C11) are all supported by appropriate citations to published research, providing a well-established foundation for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:09:00.375880Z"
+    },
+    {
+      "id": "06ce095f-d177-448f-a359-1f41562c22f1",
+      "content_id": "c97c250e-4677-49e3-951d-94b87ce2870d",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The mammalian epididymis has a highly segmented anatomical organization with three macroscopic territories (caput, corpus, cauda) and 10 segments in the mouse model.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2-C3 describe established anatomical features supported by citations (Turner et al., 2003; Johnston et al., 2005) and visual evidence in Figure 2. This anatomical framework is essential context for interpreting the vascular organization results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:09:00.375880Z"
+    },
+    {
+      "id": "fc78de5a-1509-4b19-9a8a-36c292363ad0",
+      "content_id": "c97c250e-4677-49e3-951d-94b87ce2870d",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Previous studies of epididymal vasculature are limited and used suboptimal markers. Multiple lymphatic markers (VEGFR3, LYVE1, PROX1, PDPN) and blood vessel markers (PLVAP) are needed for accurate characterization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C20 establish the rationale for the current study through citations to prior work, identifying limitations of previous approaches and justifying the multi-marker strategy. The claims about marker specificity and limitations are well-supported by appropriate citations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:09:00.375880Z"
+    },
+    {
+      "id": "ecde41c2-5b52-4fe8-a03c-fdabf17e416e",
+      "content_id": "c97c250e-4677-49e3-951d-94b87ce2870d",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The study employed VEGFR3:YFP transgenic mice, 3DISCO clearing, and light-sheet microscopy for high-resolution 3D imaging of epididymal vasculature. Anti-GFP antibody was used to enhance signal after clearing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C86-C91 describe the methodological approach with appropriate citations and technical details. The loss of endogenous fluorescence after clearing (C90) and use of anti-GFP to strengthen signal (C91) demonstrate methodological rigor and transparency about technical challenges.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:09:00.375880Z"
+    },
+    {
+      "id": "ad75e686-99d7-4e93-9af7-4aab71d2e89a",
+      "content_id": "c97c250e-4677-49e3-951d-94b87ce2870d",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The mouse epididymis has a dense, asymmetric lymphatic network that is denser on the anterior face adjacent to the testis. Lymphatic collectors follow organ segmentation and connect to the testicular lymphatic trunk at the pampiniform plexus, with three major septa (S1/S2-S3, S6/S7, S8-9/S10) showing enhanced lymphatic drainage.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C25, C51-C54, and C92 describe the overall lymphatic organization based on imaging data from the VEGFR3:YFP model. The observations are well-documented with multiple figures and videos. The asymmetric distribution and septal organization are clearly demonstrated in the imaging data, though the functional significance requires further validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:09:00.375880Z"
+    },
+    {
+      "id": "8169b72c-c323-490e-856e-efc7bcebcf54",
+      "content_id": "c97c250e-4677-49e3-951d-94b87ce2870d",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The initial segment (IS/S1) shows the highest blood and lymphatic vessel density in the epididymis. PLVAP+ blood vessel density in IS is ~3.5\u00d7 greater than the rest of caput, and VEGFR3+ lymphatic density is 2\u00d7 greater. No significant density differences exist within the cauda.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C31 and C93 present quantitative density measurements supported by surface rendering analysis (Figure 3). The statistical significance is reported (p<0.001 for C28), and the findings are consistent with prior reports (Abe et al., 1984; Suzuki, 1982). The quantification methodology using IMARIS is described in methods.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:09:00.375880Z"
+    },
+    {
+      "id": "5f8aa535-a719-4039-8ba6-332bd7d2ffb8",
+      "content_id": "c97c250e-4677-49e3-951d-94b87ce2870d",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Different lymphatic markers show distinct but overlapping expression patterns. LYVE1, PROX1, and VEGFR3:YFP profiles are similar but don't completely merge, while PDPN shows a different pattern concentrated at the peritubular level.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C94-C96, C99-C101 describe marker heterogeneity observed in imaging data (Figure 2B, Figure 2-supplement 3A). The observations of incomplete overlap are consistent with known lymphatic marker heterogeneity, though the biological significance of these differences is not fully explored.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:09:00.375880Z"
+    },
+    {
+      "id": "41cc27b1-b607-45ca-abf6-2c7823dc6f51",
+      "content_id": "c97c250e-4677-49e3-951d-94b87ce2870d",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "During postnatal development, the initial segment grows faster than the rest of the caput (4\u00d7 faster between 10 DPN and adulthood), representing <10% at 10 DPN but 40% in adults. Blood vessels concentrate in IS from 20 DPN onward, with stable PLVAPpos density in IS but strong decrease in the rest of caput between 10-20 DPN.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C35 describe developmental changes supported by quantitative volumetric and density measurements (Figure 4A-C). The observations are based on n=5 replicates at each developmental stage. The differential growth and vascularization patterns are clearly demonstrated in the imaging data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:09:00.375880Z"
+    },
+    {
+      "id": "24a4200f-d7bd-45e4-b3c3-086152894e19",
+      "content_id": "c97c250e-4677-49e3-951d-94b87ce2870d",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Lymphatic vessel development follows organ growth linearly between 10-40 DPN, with greater expansion in IS and S10 beyond 40 DPN compared to the rest of the organ.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C37 describe lymphatic development patterns supported by quantitative data (Figure 4D, Figure 4-supplement 1D). The linear growth pattern and subsequent differential expansion are clearly shown in the density measurements across developmental stages.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:09:00.375880Z"
+    },
+    {
+      "id": "501401d0-9381-405a-9a02-993b8e97c558",
+      "content_id": "c97c250e-4677-49e3-951d-94b87ce2870d",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "VEGF-A levels decrease between 10-20 DPN, plateau, increase at 40 DPN, then return to initial levels by adulthood. VEGF-C and VEGF-D show linear increases from 30 DPN, with active isoforms (21 kDa VEGF-C, 24 kDa VEGF-D) showing strong statistical covariance with VEGFR3.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C40 present western blot quantification data (Figure 5B-C) from n=6 mice. Statistical analysis using two-way ANOVA shows significant covariance for active isoforms. The temporal patterns are consistent with the observed vascular development, though the functional significance requires further validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:09:00.375880Z"
+    },
+    {
+      "id": "0a0dec50-9299-4d1e-91f7-80275a13102d",
+      "content_id": "c97c250e-4677-49e3-951d-94b87ce2870d",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "VEGFR2 and VEGFR3 show similar tissue localization, mainly peritubular in IS. VEGF-A localizes to IS supporting blood vascularization. VEGF-C and VEGF-D are weakly present in IS but increasingly present toward the cauda in interstitial positions, with co-localization (Pearson=0.684\u00b10.038) supporting heterodimerization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C45 describe spatial distribution patterns supported by immunohistochemistry (Figure 6). The co-localization analysis uses appropriate quantitative methods (Pearson and Mander's coefficients). However, the heterodimerization hypothesis (C45) is speculative and requires biochemical validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:09:00.375880Z"
+    },
+    {
+      "id": "90f1b0d9-5251-4081-9609-fc078cf1af41",
+      "content_id": "c97c250e-4677-49e3-951d-94b87ce2870d",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "During postnatal development, LYVE1+ cubblestone cells appear at 10 DPN, aggregate to form tubular structures, with increasing VEGFR3-YFP+ structures and decreasing PLVAP+ vessels. This kinetics is consistent with active lympho-vasculogenesis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C47-C49 describe developmental observations (Figure 7B), but C50's interpretation of lympho-vasculogenesis is speculative. While the temporal sequence is documented, definitive proof of vasculogenesis (vs. other mechanisms) would require lineage tracing or additional functional studies. The interpretation is plausible but not conclusively demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:09:00.375880Z"
+    },
+    {
+      "id": "06b2ae05-5ca4-42c0-bd03-2fcb8397d1d4",
+      "content_id": "c97c250e-4677-49e3-951d-94b87ce2870d",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Three major septa (IS/S2-S3, S6/S7, S8-9/S10) could be considered important immunological checkpoints, corroborated by data showing immune responses in autoimmune epididymitis concentrate in cauda and corpus where major lymphatic collectors are located.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C56 and C83 propose the checkpoint hypothesis based on lymphatic organization (inference from C53-C54), supported by citation to Wijayarathna et al., 2020 (C57). While the anatomical correlation is compelling, the functional role as immunological checkpoints requires direct experimental validation. The hypothesis is reasonable but speculative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:09:00.375880Z"
+    },
+    {
+      "id": "e485aad9-98e6-4268-9b5a-872fc70e2335",
+      "content_id": "c97c250e-4677-49e3-951d-94b87ce2870d",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Lymphatic neovascularization during postnatal epididymal development involves both lymphangiogenesis (sprouting) and lymphangio-vasculogenesis (precursor cell participation), supported by concordant presence of VEGF-C, VEGF-D, and VEGFR3.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C61 define the two processes with appropriate citations. C62 connects the observed molecular data (VEGF ligands and receptors) to support neovascularization. The presence of both ligands and receptors is well-documented, though distinguishing between the two developmental mechanisms requires additional evidence beyond marker expression.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:09:00.375880Z"
+    },
+    {
+      "id": "25e01209-467a-4fde-a05f-22da1d12b8cc",
+      "content_id": "c97c250e-4677-49e3-951d-94b87ce2870d",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The IS/S1 and S10 segments show distinct 'spider web' vascular organization with capillaries penetrating the epithelial sublayer, different from the 'rope ladder' organization in segments 2-9. Despite distinct embryonic origins and functions, both compartments share this vascular pattern, potentially related to their immune surveillance functions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C65 describe vascular patterns supported by imaging data and citations. C66-C67 propose functional interpretations based on anatomical position and known functions. The vascular organization is well-documented, though the functional interpretation regarding immune surveillance is speculative but reasonable given the anatomical evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:09:00.375880Z"
+    },
+    {
+      "id": "6c171cdd-0bdd-4797-b2e8-b6f5834b7ed1",
+      "content_id": "c97c250e-4677-49e3-951d-94b87ce2870d",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The S1 segment is PLVAP+, indicating fenestrated vessels with high trans-endothelial transport. PLVAP controls permeability, angiogenesis, and immune processes. The presence of VEGFR2, VEGFR3, and VEGF-A argues for active angiogenesis in S1, supported by single-cell data. PLVAP expression increases in S1 but decreases elsewhere from 15 DPN, coinciding with testicular fluid arrival.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C71 are supported by imaging data and appropriate citations. C72-C73 discuss the unexpected finding of active angiogenesis in adult tissue, with C73 providing recent evidence for stem cell properties. C74 describes developmental timing supported by imaging data. The integration of multiple lines of evidence strengthens the conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:09:00.375880Z"
+    },
+    {
+      "id": "cc22b63c-d8fc-4549-b041-059f1465d6f5",
+      "content_id": "c97c250e-4677-49e3-951d-94b87ce2870d",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "S1 development occurs between 15-20 DPN with testicular fluid arrival, which stimulates the Raf/Mek/Erk pathway activated by VEGFs. VEGF-A could be a lumicrine factor triggering angiogenesis and S1 differentiation, supported by VEGF-A overexpression causing epididymal dilation and vessel permeability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C75-C76 are supported by citations (Jegou et al., 1982; Xu et al., 2016). However, C77 is explicitly speculative ('it is possible to consider'), and while C78 provides supporting evidence from overexpression studies, the lumicrine hypothesis requires direct experimental validation. The hypothesis is plausible but not proven.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:09:00.375880Z"
+    },
+    {
+      "id": "ee74974d-63ea-4d73-b02c-56b36009a735",
+      "content_id": "c97c250e-4677-49e3-951d-94b87ce2870d",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The epididymis may contain hybrid lymphatic vessels (also called 'mosaic vessels') expressing both blood and lymphatic markers, particularly peritubular PLVAP+ vessels in S1. Tie2 expression in S1 peritubular microvascularization supports this hypothesis. The epididymis presents two types of lymphatic vessels: peritubular PLVAP+ hybrid vessels and conventional interstitial lymphatics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C79-C80 establish the hybrid vessel concept with citations. However, C81 notes Tie2 data is 'not shown', weakening the evidence. C82 proposes the two-vessel-type model based on inference from the data. While the hypothesis is supported by marker expression patterns and comparison to other organs, definitive characterization of hybrid vessels requires functional studies and the missing Tie2 data limits confidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:09:00.375880Z"
+    },
+    {
+      "id": "526ed762-96de-438e-b495-5564b5403e12",
+      "content_id": "c97c250e-4677-49e3-951d-94b87ce2870d",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "The epididymis is open to the systemic compartment with lymphatic collectors reaching the interstitial compartment, contrasting with the testis where lymphatic collectors are restricted to the conjunctiva and never reach the interstitial compartment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C84 is an inference from the observed vascular organization, while C85 is supported by citations (Hirai et al., 2012; Svingen et al., 2012). The contrast between epididymis and testis lymphatic organization is well-established and supports the conclusion about differential immune regulation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:09:00.375880Z"
+    },
+    {
+      "id": "5d84ae14-2570-4e2b-9a6b-59ba31ca8d9e",
+      "content_id": "c97c250e-4677-49e3-951d-94b87ce2870d",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Large lymphatic collectors usually follow the path of arteries.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C55 is supported by citations to published research (Suzuki, 1982; Gruffaz, 1984) and is consistent with general anatomical principles. This provides context for interpreting the observed lymphatic organization.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:09:00.375880Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "90e466f5-cbd4-44cc-ba25-d288c1f1d413",
+      "result_id": "1b041322-991d-4ebf-b8d9-585e32fb6397"
+    },
+    {
+      "claim_id": "82abfb09-2a97-413b-904e-d8be91312fae",
+      "result_id": "1b041322-991d-4ebf-b8d9-585e32fb6397"
+    },
+    {
+      "claim_id": "808dc328-a9b5-46c9-bd83-28f775cbd9a5",
+      "result_id": "1b041322-991d-4ebf-b8d9-585e32fb6397"
+    },
+    {
+      "claim_id": "ab471fe5-2161-475e-b5c7-7c00ae8ad79e",
+      "result_id": "1b041322-991d-4ebf-b8d9-585e32fb6397"
+    },
+    {
+      "claim_id": "e851c6ba-4606-4a3e-a735-e21313c4bf73",
+      "result_id": "1b041322-991d-4ebf-b8d9-585e32fb6397"
+    },
+    {
+      "claim_id": "15228e93-eb57-4c04-8bf1-9347d79f5745",
+      "result_id": "1b041322-991d-4ebf-b8d9-585e32fb6397"
+    },
+    {
+      "claim_id": "8e675669-1a19-4126-bb39-11017be44188",
+      "result_id": "1b041322-991d-4ebf-b8d9-585e32fb6397"
+    },
+    {
+      "claim_id": "a63d2b42-6415-48ca-849d-4b36f0c524b4",
+      "result_id": "1b041322-991d-4ebf-b8d9-585e32fb6397"
+    },
+    {
+      "claim_id": "782aff27-2f9b-421c-b127-d9d359e85a50",
+      "result_id": "1b041322-991d-4ebf-b8d9-585e32fb6397"
+    },
+    {
+      "claim_id": "3e867427-13d4-45b3-8e7e-325a34afcd27",
+      "result_id": "06ce095f-d177-448f-a359-1f41562c22f1"
+    },
+    {
+      "claim_id": "177f4222-12ae-4d90-a326-cd8ba438d1f2",
+      "result_id": "06ce095f-d177-448f-a359-1f41562c22f1"
+    },
+    {
+      "claim_id": "dda244ea-04a7-4124-971e-6d3df7ab4327",
+      "result_id": "fc78de5a-1509-4b19-9a8a-36c292363ad0"
+    },
+    {
+      "claim_id": "b2cd06f9-1666-4df3-8387-186946e93545",
+      "result_id": "fc78de5a-1509-4b19-9a8a-36c292363ad0"
+    },
+    {
+      "claim_id": "634e9608-2c99-4690-a18e-01adaf67254c",
+      "result_id": "fc78de5a-1509-4b19-9a8a-36c292363ad0"
+    },
+    {
+      "claim_id": "2b4d1cf5-4808-4056-8683-e9ec2c4ac1da",
+      "result_id": "fc78de5a-1509-4b19-9a8a-36c292363ad0"
+    },
+    {
+      "claim_id": "77a9712f-e7fd-4e8e-992f-800e376969ff",
+      "result_id": "fc78de5a-1509-4b19-9a8a-36c292363ad0"
+    },
+    {
+      "claim_id": "b97f4d6c-fc59-454b-89b9-1c42d54328fe",
+      "result_id": "fc78de5a-1509-4b19-9a8a-36c292363ad0"
+    },
+    {
+      "claim_id": "dedefc45-a220-4d57-b379-344a12bba8ef",
+      "result_id": "fc78de5a-1509-4b19-9a8a-36c292363ad0"
+    },
+    {
+      "claim_id": "75c445b4-0d69-4343-8811-43d8ae013665",
+      "result_id": "fc78de5a-1509-4b19-9a8a-36c292363ad0"
+    },
+    {
+      "claim_id": "89f2c46d-0b31-4b71-a453-b7252dd703be",
+      "result_id": "fc78de5a-1509-4b19-9a8a-36c292363ad0"
+    },
+    {
+      "claim_id": "f109b43b-c614-470e-8b0d-5cddd125be88",
+      "result_id": "ecde41c2-5b52-4fe8-a03c-fdabf17e416e"
+    },
+    {
+      "claim_id": "1a20915c-729e-485f-aec5-93dcc41dfdc3",
+      "result_id": "ecde41c2-5b52-4fe8-a03c-fdabf17e416e"
+    },
+    {
+      "claim_id": "65ead7b5-6a6d-4ce4-aa77-ec567511d2cb",
+      "result_id": "ecde41c2-5b52-4fe8-a03c-fdabf17e416e"
+    },
+    {
+      "claim_id": "948c6d61-086b-4203-b218-d12ece4257f5",
+      "result_id": "ecde41c2-5b52-4fe8-a03c-fdabf17e416e"
+    },
+    {
+      "claim_id": "93f39231-d708-487c-b4ec-06eaf4c88240",
+      "result_id": "ecde41c2-5b52-4fe8-a03c-fdabf17e416e"
+    },
+    {
+      "claim_id": "23c60ee3-3d94-4ada-851d-6fedf1de5506",
+      "result_id": "ecde41c2-5b52-4fe8-a03c-fdabf17e416e"
+    },
+    {
+      "claim_id": "2c97524c-aa32-46c4-a371-30929c8888a6",
+      "result_id": "ad75e686-99d7-4e93-9af7-4aab71d2e89a"
+    },
+    {
+      "claim_id": "4326192d-9a4c-403f-973a-3340f492941e",
+      "result_id": "ad75e686-99d7-4e93-9af7-4aab71d2e89a"
+    },
+    {
+      "claim_id": "0c4d42af-e053-44f1-9cce-90e78033c92a",
+      "result_id": "ad75e686-99d7-4e93-9af7-4aab71d2e89a"
+    },
+    {
+      "claim_id": "976909dc-4a0b-4090-b7c1-572959ace993",
+      "result_id": "ad75e686-99d7-4e93-9af7-4aab71d2e89a"
+    },
+    {
+      "claim_id": "95f1b5c4-1393-4d39-ab02-a44ba87df3f6",
+      "result_id": "ad75e686-99d7-4e93-9af7-4aab71d2e89a"
+    },
+    {
+      "claim_id": "cfbe8d39-c05f-40b4-ad25-a837040796d3",
+      "result_id": "ad75e686-99d7-4e93-9af7-4aab71d2e89a"
+    },
+    {
+      "claim_id": "080660a8-92ec-447a-9a02-fd2c1daafd5c",
+      "result_id": "ad75e686-99d7-4e93-9af7-4aab71d2e89a"
+    },
+    {
+      "claim_id": "89481457-b475-4a19-b586-02673b24bb0b",
+      "result_id": "ad75e686-99d7-4e93-9af7-4aab71d2e89a"
+    },
+    {
+      "claim_id": "1414c060-1c81-401a-9411-b45b1d7b3fea",
+      "result_id": "ad75e686-99d7-4e93-9af7-4aab71d2e89a"
+    },
+    {
+      "claim_id": "02243aba-fef3-4f40-ab8d-d1ffe569a848",
+      "result_id": "ad75e686-99d7-4e93-9af7-4aab71d2e89a"
+    },
+    {
+      "claim_id": "6a00614e-f1c0-4d55-a761-738c858becae",
+      "result_id": "8169b72c-c323-490e-856e-efc7bcebcf54"
+    },
+    {
+      "claim_id": "ba05edbe-9703-414e-a569-1ecd67e8dae3",
+      "result_id": "8169b72c-c323-490e-856e-efc7bcebcf54"
+    },
+    {
+      "claim_id": "420fcee9-e42b-4497-bac5-94333d5af7ee",
+      "result_id": "8169b72c-c323-490e-856e-efc7bcebcf54"
+    },
+    {
+      "claim_id": "c5aa8d21-9c14-492f-9f5c-d3a451e3b399",
+      "result_id": "8169b72c-c323-490e-856e-efc7bcebcf54"
+    },
+    {
+      "claim_id": "c97a5e1f-0d98-4938-bf68-2e83367bf806",
+      "result_id": "8169b72c-c323-490e-856e-efc7bcebcf54"
+    },
+    {
+      "claim_id": "3a23faeb-1d67-4176-a538-ba16238d8164",
+      "result_id": "8169b72c-c323-490e-856e-efc7bcebcf54"
+    },
+    {
+      "claim_id": "320913b8-551b-4982-a8da-7040a2ba7042",
+      "result_id": "8169b72c-c323-490e-856e-efc7bcebcf54"
+    },
+    {
+      "claim_id": "30dd1c37-8f8f-4662-9e3f-dab62242d40d",
+      "result_id": "5f8aa535-a719-4039-8ba6-332bd7d2ffb8"
+    },
+    {
+      "claim_id": "0fb2b4e0-76ad-4b2d-a806-04b0ec87068f",
+      "result_id": "5f8aa535-a719-4039-8ba6-332bd7d2ffb8"
+    },
+    {
+      "claim_id": "5336b92f-4036-4bff-910b-25d2482874da",
+      "result_id": "5f8aa535-a719-4039-8ba6-332bd7d2ffb8"
+    },
+    {
+      "claim_id": "08496be7-479b-41d0-9023-44f4f6b725b5",
+      "result_id": "5f8aa535-a719-4039-8ba6-332bd7d2ffb8"
+    },
+    {
+      "claim_id": "cdd9dbf2-0173-4d7f-8d2d-7fcc3721fce2",
+      "result_id": "5f8aa535-a719-4039-8ba6-332bd7d2ffb8"
+    },
+    {
+      "claim_id": "0eecdd4b-f9f7-4ac9-9b53-626b840619bd",
+      "result_id": "5f8aa535-a719-4039-8ba6-332bd7d2ffb8"
+    },
+    {
+      "claim_id": "206ba67c-fe19-41c5-b068-ba937b3ffa00",
+      "result_id": "41cc27b1-b607-45ca-abf6-2c7823dc6f51"
+    },
+    {
+      "claim_id": "f19b0420-fd76-43cb-a051-6546b0aebeb5",
+      "result_id": "41cc27b1-b607-45ca-abf6-2c7823dc6f51"
+    },
+    {
+      "claim_id": "10109c67-4067-4878-9945-ad4a50d05620",
+      "result_id": "41cc27b1-b607-45ca-abf6-2c7823dc6f51"
+    },
+    {
+      "claim_id": "36a5eb4e-2839-41ad-baca-1743929dfaf8",
+      "result_id": "41cc27b1-b607-45ca-abf6-2c7823dc6f51"
+    },
+    {
+      "claim_id": "01234c5c-8765-49e7-89fc-5bc6f7522be7",
+      "result_id": "24a4200f-d7bd-45e4-b3c3-086152894e19"
+    },
+    {
+      "claim_id": "33c2e760-bfb7-4e7c-a3f4-6ddf1e06d514",
+      "result_id": "24a4200f-d7bd-45e4-b3c3-086152894e19"
+    },
+    {
+      "claim_id": "e4c08eeb-0277-4adf-adfb-962a48465bc5",
+      "result_id": "501401d0-9381-405a-9a02-993b8e97c558"
+    },
+    {
+      "claim_id": "2f9624e6-9c2a-4f3b-b551-ba3ac53efa4c",
+      "result_id": "501401d0-9381-405a-9a02-993b8e97c558"
+    },
+    {
+      "claim_id": "2a5189e9-c93b-43b4-9ed9-0d5d22ff25df",
+      "result_id": "501401d0-9381-405a-9a02-993b8e97c558"
+    },
+    {
+      "claim_id": "9bd2ca6e-fb9b-42c1-844b-bc67c95b0c38",
+      "result_id": "0a0dec50-9299-4d1e-91f7-80275a13102d"
+    },
+    {
+      "claim_id": "81762ca7-043f-4c07-8c02-34f407f9bd6b",
+      "result_id": "0a0dec50-9299-4d1e-91f7-80275a13102d"
+    },
+    {
+      "claim_id": "ed6246d1-43b0-4811-a579-f611ca0b7c40",
+      "result_id": "0a0dec50-9299-4d1e-91f7-80275a13102d"
+    },
+    {
+      "claim_id": "7039e138-43d0-4861-a1d3-6fd9b21e617b",
+      "result_id": "0a0dec50-9299-4d1e-91f7-80275a13102d"
+    },
+    {
+      "claim_id": "8588aa99-061d-4015-b603-d4aaee640428",
+      "result_id": "0a0dec50-9299-4d1e-91f7-80275a13102d"
+    },
+    {
+      "claim_id": "40e9b286-1b38-4caa-889c-476d38844db3",
+      "result_id": "90f1b0d9-5251-4081-9609-fc078cf1af41"
+    },
+    {
+      "claim_id": "479aa068-8e3f-4908-a6f8-9bd1e60f6f5c",
+      "result_id": "90f1b0d9-5251-4081-9609-fc078cf1af41"
+    },
+    {
+      "claim_id": "0c8be8af-9f46-4a18-ae75-23aca0354bf9",
+      "result_id": "90f1b0d9-5251-4081-9609-fc078cf1af41"
+    },
+    {
+      "claim_id": "c427ecb3-ca5f-4f69-a982-ae973f958a8d",
+      "result_id": "90f1b0d9-5251-4081-9609-fc078cf1af41"
+    },
+    {
+      "claim_id": "1ee70d6d-977e-4edf-be21-86489649923f",
+      "result_id": "90f1b0d9-5251-4081-9609-fc078cf1af41"
+    },
+    {
+      "claim_id": "9b72d037-a0ff-4028-9a88-ba9c33aa39d7",
+      "result_id": "06b2ae05-5ca4-42c0-bd03-2fcb8397d1d4"
+    },
+    {
+      "claim_id": "f846421d-db19-4ce8-b07f-2184e1716670",
+      "result_id": "06b2ae05-5ca4-42c0-bd03-2fcb8397d1d4"
+    },
+    {
+      "claim_id": "c43b0ca7-8584-450d-a775-b9b3ec13d6a7",
+      "result_id": "06b2ae05-5ca4-42c0-bd03-2fcb8397d1d4"
+    },
+    {
+      "claim_id": "3c166645-7a8c-4795-a196-1ee1f086f76a",
+      "result_id": "e485aad9-98e6-4268-9b5a-872fc70e2335"
+    },
+    {
+      "claim_id": "af503e1e-9fce-42be-b861-5bf17fbdc011",
+      "result_id": "e485aad9-98e6-4268-9b5a-872fc70e2335"
+    },
+    {
+      "claim_id": "e25f643f-23b1-4d1f-8c84-6ebeea0c852f",
+      "result_id": "e485aad9-98e6-4268-9b5a-872fc70e2335"
+    },
+    {
+      "claim_id": "05db4a65-0b6d-4ae8-9723-9c3f6321bfba",
+      "result_id": "e485aad9-98e6-4268-9b5a-872fc70e2335"
+    },
+    {
+      "claim_id": "15aef683-168d-4ec5-be05-f76ca5e0cec9",
+      "result_id": "e485aad9-98e6-4268-9b5a-872fc70e2335"
+    },
+    {
+      "claim_id": "4c1e6226-c4ea-4578-bdd1-3615d13a3ff0",
+      "result_id": "25e01209-467a-4fde-a05f-22da1d12b8cc"
+    },
+    {
+      "claim_id": "530a55ac-7fce-438c-adea-09f19913230f",
+      "result_id": "25e01209-467a-4fde-a05f-22da1d12b8cc"
+    },
+    {
+      "claim_id": "0d1e995a-0b6c-446c-91df-39c70002e119",
+      "result_id": "25e01209-467a-4fde-a05f-22da1d12b8cc"
+    },
+    {
+      "claim_id": "af91e92a-e1bf-4649-b45e-a365415154da",
+      "result_id": "25e01209-467a-4fde-a05f-22da1d12b8cc"
+    },
+    {
+      "claim_id": "53e4f28a-1562-42d4-bad9-7deb70c889bb",
+      "result_id": "25e01209-467a-4fde-a05f-22da1d12b8cc"
+    },
+    {
+      "claim_id": "0fb80c53-40fd-413a-9310-74818348a075",
+      "result_id": "6c171cdd-0bdd-4797-b2e8-b6f5834b7ed1"
+    },
+    {
+      "claim_id": "aedf6d67-cafc-4c9a-bbf5-d188f1e89d20",
+      "result_id": "6c171cdd-0bdd-4797-b2e8-b6f5834b7ed1"
+    },
+    {
+      "claim_id": "16c61de6-ec0b-4aed-b9cf-3721c97ac293",
+      "result_id": "6c171cdd-0bdd-4797-b2e8-b6f5834b7ed1"
+    },
+    {
+      "claim_id": "2b2ccd53-e680-4cde-84d9-8e4c13ae25ba",
+      "result_id": "6c171cdd-0bdd-4797-b2e8-b6f5834b7ed1"
+    },
+    {
+      "claim_id": "7b58b533-da93-4a4e-9e8f-5182041dcd5b",
+      "result_id": "6c171cdd-0bdd-4797-b2e8-b6f5834b7ed1"
+    },
+    {
+      "claim_id": "53ae208b-27f5-4af2-9ff4-613cf52a1aff",
+      "result_id": "6c171cdd-0bdd-4797-b2e8-b6f5834b7ed1"
+    },
+    {
+      "claim_id": "092e3a11-2980-4dc2-895e-e3cc5be4c290",
+      "result_id": "6c171cdd-0bdd-4797-b2e8-b6f5834b7ed1"
+    },
+    {
+      "claim_id": "a9f41d9d-5ab4-4270-b90c-ae0b2ca70924",
+      "result_id": "cc22b63c-d8fc-4549-b041-059f1465d6f5"
+    },
+    {
+      "claim_id": "b1b05018-cdf8-46c1-89af-511e626f0212",
+      "result_id": "cc22b63c-d8fc-4549-b041-059f1465d6f5"
+    },
+    {
+      "claim_id": "6a9b79f6-492c-45e9-876f-d03ec6202d2d",
+      "result_id": "cc22b63c-d8fc-4549-b041-059f1465d6f5"
+    },
+    {
+      "claim_id": "28ac16ec-30fb-42a3-a421-8f1e9cfa601d",
+      "result_id": "cc22b63c-d8fc-4549-b041-059f1465d6f5"
+    },
+    {
+      "claim_id": "804cbc4a-8227-4a22-b6b9-5154cd5f754b",
+      "result_id": "ee74974d-63ea-4d73-b02c-56b36009a735"
+    },
+    {
+      "claim_id": "5fb31abf-2845-4b10-9e34-47d7df8448a1",
+      "result_id": "ee74974d-63ea-4d73-b02c-56b36009a735"
+    },
+    {
+      "claim_id": "9397a7ec-7d7d-4fc0-be3e-dc5ad5055847",
+      "result_id": "ee74974d-63ea-4d73-b02c-56b36009a735"
+    },
+    {
+      "claim_id": "390be156-e6dc-4b27-af31-14894223f943",
+      "result_id": "ee74974d-63ea-4d73-b02c-56b36009a735"
+    },
+    {
+      "claim_id": "f017eb5b-d82f-4f1b-8b38-4bc297a3f291",
+      "result_id": "526ed762-96de-438e-b495-5564b5403e12"
+    },
+    {
+      "claim_id": "a0543a66-3e29-40fd-8aef-9381326ff64e",
+      "result_id": "526ed762-96de-438e-b495-5564b5403e12"
+    },
+    {
+      "claim_id": "a36584f6-5c50-4b9d-a7c6-4f3de5d058f0",
+      "result_id": "5d84ae14-2570-4e2b-9a6b-59ba31ca8d9e"
+    }
+  ],
+  "comparisons": []
+}

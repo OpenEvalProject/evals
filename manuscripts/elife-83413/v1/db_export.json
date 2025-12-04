@@ -1,0 +1,2377 @@
+{
+  "submission": {
+    "id": "be0bfa43-4be9-4865-996a-15ce9590d492",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-04T02:08:44.666058Z",
+    "updated_at": "2025-12-04T02:08:44.666058Z"
+  },
+  "content": [
+    {
+      "id": "ff95316d-9280-4f3f-aa24-39dc3de5c48d",
+      "submission_id": "be0bfa43-4be9-4865-996a-15ce9590d492",
+      "content_type": "manuscript",
+      "content_text": "# Femora from an exceptionally large population of coeval ornithomimosaurs yield evidence of sexual dimorphism in extinct theropod dinosaurs\n\n## Authors\n\n- Romain Pintore<sup>1</sup> ([ORCID: 0000-0003-2438-614X](https://orcid.org/0000-0003-2438-614X)) \u2020\n- Rapha\u00ebl Cornette<sup>3</sup>\n- Alexandra Houssaye<sup>1</sup> ([ORCID: 0000-0001-8789-5545](https://orcid.org/0000-0001-8789-5545))\n- Ronan Allain<sup>4</sup> ([ORCID: 0000-0002-6357-1586](https://orcid.org/0000-0002-6357-1586))\n\n### Affiliations\n\n1. UMR 7179, M\u00e9canismes Adaptatifs et \u00c9volution (MECADEV), Mus\u00e9um National d\u2019Histoire Naturelle, CNRS Paris France ([ROR:03wkt5x30](https://ror.org/03wkt5x30))\n2. Structure and Motion Laboratory, Department of Comparative Biomedical Sciences, Royal Veterinary College Hatfield United Kingdom ([ROR:01wka8n18](https://ror.org/01wka8n18))\n3. UMR 7205, Institut de Syst\u00e9matique, \u00c9volution, Biodiversit\u00e9 (ISYEB), Mus\u00e9um National d\u2019Histoire Naturelle, CNRS, Sorbonne Universit\u00e9, EPHE, UA, Paris, France Paris France ([ROR:01dadvw90](https://ror.org/01dadvw90))\n4. UMR 7207, Centre de Recherche en Pal\u00e9ontologie - Paris (CR2P), Mus\u00e9um National d\u2019Histoire Naturelle, CNRS, Sorbonne Universit\u00e9 Paris France ([ROR:02en5vm52](https://ror.org/02en5vm52))\n\n\u2020 Corresponding author\n\n## Abstract\n\nSexual dimorphism is challenging to detect among fossils due to a lack of statistical representativeness. The Angeac-Charente Lagerst\u00e4tte (France) represents a remarkable \u2018snapshot\u2019 from a Berriasian (Early Cretaceous) ecosystem and offers a unique opportunity to study intraspecific variation among a herd of at least 61 coeval ornithomimosaurs. Herein, we investigated the hindlimb variation across the best-preserved specimens from the herd through 3D Geometric Morphometrics and Gaussian Mixture Modeling. Our results based on complete and fragmented femora evidenced a dimorphism characterized by variations in the shaft curvature and the distal epiphysis width. Since the same features vary between sexes among modern avian dinosaurs, crocodilians, and more distant amniotes, we attributed this bimodal variation to sexual dimorphism based on the extant phylogenetic bracketing approach. Documenting sexual dimorphism in fossil dinosaurs allows a better characterization and accounting of intraspecific variations, which is particularly relevant to address ongoing taxonomical and ecological questions relative to dinosaur evolution.\n\n## Introduction\n\nDimorphism has been reported in every major dinosaur clade and has often been attributed to sex-specific variation (Dodson, 1975; Chapman et al., 1997; Bunce et al., 2003; Padian and Horner, 2011; Knell and Sampson, 2011; Knell et al., 2013; Mallon, 2017; Saitta et al., 2020). However, recent studies have demonstrated that most of the documented cases of sexual dimorphism in extinct dinosaurs were most likely biased by ontogenetic changes, taphonomic deformations, and small sample sizes, which substantially affect the representativeness of the inter- and intraspecific diversity and undermine statistical analyses (Griffin and Nesbitt, 2016; Hone et al., 2017; Saitta et al., 2020). For example, a discrete and binary variation between gracile and robust morphologies of femoral bone scars, mostly at the level of the lesser trochanter, has frequently been inferred, with more or less confidence, as sexual dimorphism in various ceratosaurian theropods and non-dinosaurian dinosauriforms (Colbert, 1990; Raath, 1990; Benton et al., 2000; Britt and Chure, 2000; Piechowski et al., 2014). More recently, Griffin and Nesbitt, 2016 demonstrated that this feature no longer appeared dimorphic when accounting for ontogenetic series in the silesaurid Asilisaurus. In addition, it has been demonstrated on modern populations that sexual dimorphism could be represented only by very subtle morphological variations, making it even harder to detect in fossils with smaller sample sizes (Hone et al., 2020; Saitta et al., 2020). At a larger scale, Mallon, 2017 performed a statistical investigation on a large set of studies that hypothesized sexual dimorphism based on a wide diversity of anatomical proxies across the major clades of non-avian dinosaurs. However, among the 48 described occurrences, only 9 datasets were suitable for statistical test, among which only 1 was considered to rigorously demonstrate dimorphism. Indeed, the combination of a principal component analysis (PCA) and a mixture modeling analysis highlighted that the shift in posterior inclination between the eighth and ninth dermal plates of Stegosaurus mjosi was best explained by a bimodal distribution. Yet, there is not robust evidence to postulate that the dimorphism shown in dermal plates would be sex specific (Saitta, 2015). As a consequence, it appears that no dataset has yet rigorously demonstrated the presence of sexual dimorphism in non-avian dinosaurs (Hone et al., 2020). According to Mallon, 2017, one should review three issues when demonstrating sexual dimorphism on extinct organisms: (1) sample size in order to ensure population representativeness; (2) methodology in order to use only suitable analyses to study sexual dimorphism, such as mixture modeling; (3) any other intraspecific morphological variation such as ontogeny and pathology, as well as taphonomy.\n\nHere, we studied the intraspecific femoral variation among a remarkably dense and well preserved population of ornithomimosaurs (Allain et al., 2014, Allain et al., 2022) from the Angeac-Charente Lagerst\u00e4tte (Lower Cretaceous of France). Rozada et al., 2014 and Rozada et al., 2021 demonstrated that at least 61 ornithomimosaur individuals belonged to the same herd and were deposited in a mass mortality event relying on several evidences (e.g. very limited transport; quality of bone preservation; abundance of individuals with a high skeletal representation preserved in a restricted spatial distribution; catastrophic age profile of the group; deposition of sediment and bones under coeval, poorly oxygenated burial and diagenesis conditions given by their rare earth elements and Yttrium profiles). Thus, the ornithomimosaur herd of Angeac-Charente represents a unique occasion to study subtle parameters such as intraspecific variation in extinct dinosaurs. Moreover, the exceptionally high minimal number of individuals among the herd, represented by tibiae and femora (Table 1), offers a singular opportunity to test for the presence of dimorphism and characterize its variation. Indeed, and in addition of being the most abundant bones discovered from the Angeac-Charente ornithomimosaur, many hypotheses of sexual dimorphism were formulated based on the hindlimb morphology of non-avian dinosaurs (Colbert, 1990; Raath, 1990; Larson, 1994; Benton et al., 2000; Britt and Chure, 2000; Carrano et al., 2002; Bunce et al., 2003; Piechowski et al., 2014) but also observed in extant archosaurs (Schnell et al., 1985; Farlow et al., 2005; Charuta et al., 2007; Bonnan et al., 2008; Elzanowski and Louchart, 2022).\n\n**Table 1.**\n Number of femora and tibiae from the Angeac-Charente ornithomimosaur discovered between 2010 and 2020.Minimum Number of Elements (MNEs) and Minimum Number of Individuals (MNIs) are given for each fragmented and complete femora.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>Femora</th>\n      <th>Tibiae</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Left proximal (MNE)</td>\n      <td>31</td>\n      <td>31</td>\n    </tr>\n    <tr>\n      <td>Right proximal (MNE)</td>\n      <td>35</td>\n      <td>35</td>\n    </tr>\n    <tr>\n      <td>Left distal (MNE)</td>\n      <td>18</td>\n      <td>48</td>\n    </tr>\n    <tr>\n      <td>Right distal (MNE)</td>\n      <td>22</td>\n      <td>46</td>\n    </tr>\n    <tr>\n      <td>Left complete (MNE)</td>\n      <td>8</td>\n      <td>13</td>\n    </tr>\n    <tr>\n      <td>Right complete (MNE)</td>\n      <td>11</td>\n      <td>12</td>\n    </tr>\n    <tr>\n      <td>MNI</td>\n      <td>46</td>\n      <td>61</td>\n    </tr>\n  </tbody>\n</table>\n\nWe used a 3D geometric morphometric (3D GM) approach that combines anatomical landmarks and sliding semilandmarks along curves and surfaces on both complete and fragmented femora and tibiae (Figure 1\u2014figure supplement 1A\u2013B; Gunz et al., 2005; Gunz and Mitteroecker, 2013). This method is well suited to study biological objects, including limb bones, and to detect subtle intraspecific shape variations (Zelditch et al., 2012; Botton-Divet et al., 2016) such as dimorphism (Fabre et al., 2014). We then investigated the resulting dataset using PCAs and Gaussian mixture modeling (GMM) as clustering analyses. This clustering analysis calculates the number of Gaussian distributions present in a dataset by maximum likelihood estimations and has been demonstrated as a well-suited method for the identification of dimorphism (Godfrey et al., 1993; Dong, 1997; Fabre et al., 2014; Manin et al., 2016; Mallon, 2017; Saitta et al., 2020).\n\n## Results\n\nWe highlight a dimorphic variation in femora from the ornithomimosaur herd of Angeac-Charente (Figure 1A\u2013B). This dimorphic variation is localized along the diaphysis (i.e. lateromedial curvature) and toward the distal epiphysis (i.e. lateromedial width) of the femur (Figure 1C\u2013D). Distributions along the PC1 of complete femora (28.8%) and distal epiphyses (27.9%) are best described by two clusters with a ratio close to 1:1 according to GMM analyses (see Supplementary file 1 for details). PC1 scores from both analyses are not significantly correlated to the log centroid size, indicating that size-related effects have no impact on the observed dimorphism (p-value>0.1 for complete femora and distal epiphyses, Supplementary file 1).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/83413/elife-83413-fig1-v1.jpg)\n\n**Figure 1.:** Minimal (left) and maximal (right) mean shapes per group for (C) complete femora in posterior view and (D) distal epiphyses in posterior (top) and distal (bottom) views. Abbreviations: L, lateral; P, posterior; Pr, proximal.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/83413/elife-83413-fig1-figsupp1-v1.jpg)\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/83413/elife-83413-fig1-figsupp2-v1.jpg)\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/83413/elife-83413-fig1-figsupp3-v1.jpg)\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/83413/elife-83413-fig1-figsupp4-v1.jpg)\n\n![Figure 1\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/83413/elife-83413-fig1-figsupp5-v1.jpg)\n\n![Figure 1\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/83413/elife-83413-fig1-figsupp6-v1.jpg)\n\n![Figure 1\u2014figure supplement 7.](https://cdn.elifesciences.org/articles/83413/elife-83413-fig1-figsupp7-v1.jpg)\n\n**Figure 1\u2014figure supplement 7.:** This figure highlights that the same dimorphism observed in this study is represented along PC2 when taphonomically distorted specimens are included. The taphonomically distorted specimens are located in the most negative area of the PC1 and are spread along the PC2; hence most likely interfering with the biological intraspecific variation.\n\nThe most important morphological variation of complete femora is a medial to lateral curvature of the femur (Figure 1C). The proximal third of the femur appears deviated toward the lateral side in specimens on the negative part of the PC1 axis, whereas specimens located on the positive part have straight to medially curved femora (Figure 1C). Coincidentally, the femoral head is directed medially in the negative cluster while it is inclined ventromedially in the positive one (Figure 1C). Regarding distal epiphyses, we selected 6 (out of 10) epiphyses from complete femora because the other 4 were taphonomically altered or pyrite encrusted only in the distal area, which would appear relatively more important in analyses restricted only to this area rather than on the complete morphology (Supplementary file 2). Nevertheless, for distal epiphyses, the most important morphological variation along PC1 is the expansion of the lateromedial width relative to the anteroposterior length, which is greater in specimens on the positive part of the PC1 axis than on the negative one (Figure 1D). In addition, we highlight that the 6 distal epiphyses from complete femora are consistently attributed to the same clusters between the two analyses (Figure 1A, B; Supplementary file 2). Hence, our study shows that the straighter the shaft is, the more robust the epiphysis is and that this relationship is dimorphic.\n\nHowever, there is no robust bimodal distribution on proximal epiphyses, as shown by the GMM analyses (Figure 1\u2014figure supplement 2; no consistency in the specimen attribution between complete femora and proximal epiphyses). Similarly, there is no dimorphism in the morphological variation of complete tibiae (Figure 1\u2014figure supplement 3) along PC1 (24.1%) and PC2 (20.0%).\n\n## Discussion\n\nThe closest extant relatives of non-avian dinosaurs are known to display sexual dimorphism with more or less visibility: birds display variation in their plumage and skeleton (Schnell et al., 1985; Owens and Hartley, 1998; Dunn et al., 2001; Sz\u00e9kely et al., 2007; Clarke, 2013; Duggan et al., 2015; Manin et al., 2016; Hone et al., 2017; Elzanowski and Louchart, 2022), whereas the variation is restricted to the skeleton in crocodilians (Fitch, 1981; Farlow et al., 2005; Cox et al., 2007; Prieto-Marquez et al., 2007; Bonnan et al., 2008; Hone et al., 2017; Hone et al., 2020). The extant phylogenetic bracket (EPB) of non-avian dinosaurs (Witmer, 1995) thus implies they were sexually dimorphic too (Hone et al., 2017; Hone et al., 2020).\n\nA femoral dimorphism of the same nature was demonstrated to be sex-specific among populations of extant tetrapods such as carnivorans and primates. Dimorphism in the femoral obliquity (also termed \u2018bicondylar angle\u2019) was observed in humans, for which females had higher angles than males (Parsons, 1914; Tardieu et al., 2006; Hunt et al., 2021). Moreover, a higher lateromedial width of the distal epiphysis (also termed \u2018epicondylar width\u2019 or \u2018bicondylar breadth\u2019) was demonstrated to vary between sexes in gray wolves and other carnivorans, as well as in primates (Alunni-Perret et al., 2008; Gaikwad and Nikam, 2014; Morris and Brandt, 2014; Cavaignac et al., 2016; Morris and Carrier, 2016). Whereas no similar sexual dimorphism had been shown \u2013 or studied \u2013 in non-archosaurian sauropsids to our knowledge, many relevant examples are available in extant and sub-fossil archosaurs. A higher distal width in males than females was demonstrated in wild and captive Alligator mississippiensis using linear and geometric morphometrics (Farlow et al., 2005; Bonnan et al., 2008). Handley et al., 2016 demonstrated that femoral distal width of the more recently extinct flightless bird Dromornis stirtoni was also higher in males than females. To do so, they coupled morphometrics and multivariate statistics with the observation of medullary bone, a sex-specific tissue present in bones of egg-laying female in archosaurians (Dacke et al., 1993; Schweitzer et al., 2005; Schweitzer et al., 2007; Canoville et al., 2019). The same kind of sexual dimorphism was observed in modern birds like California gulls (Larus californicus; Schnell et al., 1985) and in the two extant species of ostriches (Struthio c. camelus and S. c. molybdophanes) but with reversed proportions between males and females (Elzanowski and Louchart, 2022). Furthermore, Duggan et al., 2015 demonstrated that young male domestic ducks (Anas platyrhynchos) had more laterally curved femora than females and that this sexually dimorphic feature disappeared along ontogeny. However, to our knowledge and aside from Duggan et al., 2015, data about femoral obliquity is generally unavailable in most studies including sex determination in birds and other sauropsids. Therefore, because the femoral dimorphic features we highlighted in the Angeac-Charente ornithomimosaur herd were also demonstrated to vary between sexes in more or less closely related extant vertebrate clades, we infer it to be sexual.\n\nOntogenetic allometry was often misinterpreted as sexual dimorphism in archosaurs, as demonstrated in the early dinosauriform Asilisaurus kongwe, the crocodylian A. mississippiensis and the bird Rhea americana (Griffin and Nesbitt, 2016; Hone et al., 2017; Hedrick et al., 2022). However, we found no allometry along the first PC axis (Supplementary file 1), which, in addition of rejecting ontogenetic allometry, indicates that the dimorphism is not related to size, as suspected by the homogeneity of femoral lengths highlighted in Supplementary file 3 among complete femora. Therefore, this indicates no sexual size dimorphism (SSD) in the femur of the Angeac-Charente ornithomimosaurs. SSD is one of the most documented sexual dimorphism across all living organisms, whether it is biased toward females or males (Darwin, 1874; Fairbairn et al., 2007). There are many examples of observations and/or inferences of SSD and allometric relationships in extant and extinct dinosaurs (Larson, 1994; Bunce et al., 2003; Clarke, 2004; Sz\u00e9kely et al., 2007; Reme\u0161 and Sz\u00e9kely, 2010; Olson and Turvey, 2013; Handley et al., 2016; Manin et al., 2016; Fajemilehin, 2017). However, Elzanowski and Louchart, 2022 demonstrated that female ostriches had more robust limb bones but smaller average body size than males. This decoupling between size and shape dimorphism is concordant with our results and emphasizes that sexual dimorphism is not necessarily reflected by body size or allometry between limb segments. Thus, size-independent sexual dimorphism should be investigated further extant archosaurs in order to improve inferences about sexual dimorphism in fossils, which are most often represented only by isolated bones.\n\nWe did not identify any other dimorphism in either the proximal part of the femur or in complete tibia of the Angeac-Charente ornithomimosaurs (Figure 1\u2014figure supplements 2 and 3). However, sexual dimorphism was observed in the proximal ends of femora in extant ostriches (Charuta et al., 2007; Elzanowski and Louchart, 2022) and California gulls (Schnell et al., 1985). In addition, the anteroposterior width of the femoral shaft was demonstrated to vary between sexes among savannah sparrows (Passerculus sandwichensis; Rising, 1987) and three species of steamer-ducks (Tachyeres pteneres, Tachyeres leucocephalus, and Tachyeres patachonicus; Livezey and Humphrey, 1984). Yet, and accordingly with our results, size-independent dimorphism in the avian tibiotarsus seems less common across the EPB. Indeed, to our knowledge, occurrences of shape dimorphism in the tibia was demonstrated only in California gulls (e.g. width of the shaft; Schnell et al., 1985) and in ostriches (e.g. anteroposterior width of the distal epiphysis; only in Elzanowski and Louchart, 2022 but not in Charuta et al., 2007). Furthermore, our observation that sexual dimorphism could be restricted to the femur in the Angeac-Charente ornithomimosaurs and modern archosaurs raises the question of the potential co-variation between the femur and the pelvis. Sexual dimorphism was observed in the ilium of several birds mentioned previously, such as ostriches, steamer-ducks, savannah sparrows, and California gulls (in the antitrochanter width, acetabular width, and synsacrum width and length; Livezey and Humphrey, 1984; Schnell et al., 1985; Rising, 1987; Charuta et al., 2007). All measurements were higher in male birds than in female birds except for the width of the ilium, which was higher in female ostriches when measured by Charuta et al., 2007 but not significantly different between sexes in Elzanowski and Louchart, 2022. Additionally, female alligators had a deeper pelvic canal (i.e. distance between the ventral side of the first sacral vertebra and the ventral margin of the ischial symphysis; Prieto-Marquez et al., 2007). The dimorphism was located preferably on the femur rather than on the tibia in the Angeac-Charente ornithomimosaur, which suggests that the pelvic area might as well be dimorphic and that seems to be generally the case in some modern avian dinosaurs too (Livezey and Humphrey, 1984; Schnell et al., 1985; Rising, 1987; Farlow et al., 2005; Charuta et al., 2007; Prieto-Marquez et al., 2007; Bonnan et al., 2008; Duggan et al., 2015; Elzanowski and Louchart, 2022). Could the ability to carry eggs restrict the location of sexual dimorphism closer to the hip region? Sexual dimorphism in the pelvic girdle, the proximal hindlimb and the morphological integration between the two in female extant archosaurs should be investigated further to answer this question. However, one would expect that dimorphism in the pelvic morphology would correlate with dimorphism in the proximal instead of the distal femoral portions. Perhaps the shaft curvature toward the lateral side of the femur could have enabled ornithomimosaurs with a wider pelvis (presumably female individuals) to retain their hindlimbs close to the sagittal midline. Nevertheless, the current dataset does not allow to further speculate without the possibility to sex each morphotype and without the integration of femoral with pelvic data.\n\nOur results did not permit to confidently sex each morphotype. Most modern occurrences of femoral sexual dimorphism indicate a wider distal epiphysis among males than females, but Elzanowski and Louchart, 2022 showed that the opposite was also true for modern and subfossils ostriches. Furthermore, our results indicated that femora with the narrowest distal epiphyses (females in most of modern occurrences) had a laterally deviated shaft. However, Duggan et al., 2015 demonstrated that only juvenile male Pekin ducks had a laterally deviated shaft, which is not congruent with our results that the widest epiphyses were associated with a straighter morphotype. Paleohistological analyses could enable to verify sex assignment by assessing the presence of medullary bone, as some gravid females may have died during their egg-laying cycle at the time of the mass-mortality event recorded at Angeac-Charente. Indeed, medullary bone was recently demonstrated as probably the most reliable indicator of sex with an extensive distribution across the skeleton (Canoville et al., 2019). A paleohistological investigation could also confirm the ontogenetic homogeneity among our femoral sample, as recommended by Griffin and Nesbitt, 2016, Hone et al., 2017 and Mallon, 2017.\n\n### Conclusion\n\nOur results demonstrate that the femoral morphology among a large herd of coeval ornithomimosaurs is dimorphic. We identify bimodal distributions along size-independent features that were already reported to vary between sexes in modern archosaurs and other tetrapods (e.g. the width of the distal epiphyses and the lateral deviation of the shaft). Therefore, we infer these features to indicate sexual dimorphism in the Angeac-Charente ornithomimosaurs according to the EPB approach. Our findings inform about the intraspecific variation in non-avian theropods and emphasize the need for description of size-independent dimorphism in modern and closely related taxa with a priori knowledge of the sex. In the future, our results should be completed by paleohistological studies to (1) sex each morphotype and (2) identify the extent of ontogenetic variations within our sample. Additionally, we show that the sex-ratio of the Angeac-Charente ornithomimosaur is close to 1:1 and thus, likely Fisherian (Fisher, 1930). It was demonstrated that in extant archosaurs, Fisherian populations are only observed among clutches and hatchlings (Mayr, 1939; Clutton-brock, 1986; Liker et al., 2013) and become generally biased toward females in sub-adult and adult populations, as demonstrated on crocodilians (Woodward and Murray, 1993; Gonz\u00e1lez et al., 2019) and ratites (Magige, 2012; Prokopenko et al., 2021). Therefore, paleohistological investigations could help characterize the variation of sex ratio along ontogeny in an extinct dinosaur population and inform if it was truly Fisherian, unlike their extant relatives, or if it also experienced skewness along aging. More broadly, understanding how sex impacted the morphology of an extinct species could shed light on complex evolutionary mechanism such as trade-off between sexually dimorphic features, ecological adaptations, and life-history traits.\n\n## Materials and methods\n\n### Sample and data acquisition\n\nSeveral complete and fragmented femora and complete tibiae from the Angeac-Charente ornithomimosaur were discovered between 2010 and 2020 (Table 1). We removed 158 specimens that were too fragmented and altered by too much oxidized pyrite and trampling (femora: 6 complete, 37 proximal, and 19 distal epiphyses; tibiae: 4 complete, 36 proximal, and 56 distal epiphyses). We selected only fragmented femora that preserved: (1) the most proximal point of the fourth trochanter for proximal epiphyses; (2) the most proximal point of the anteromedial flange for distal epiphyses (Figure 1\u2014figure supplement 4A). In total, we digitized 152 specimens (femora: 13 complete, 29 proximal, and 21 distal epiphyses; tibiae: 21 complete, 30 proximal, and 38 distal epiphyses) using the Artec EVA with Artec Studio Professional v. 12.1.1.12 (Artec 3D, Luxembourg, Luxembourg) and the NextEngine with Scan Studio Pro v. 2.0.2 (Next Engine Inc, Santa Monica, United States) for a few specimens (Supplementary file 3). After re-examination of digitized specimens, we removed 3 complete femora, 14 proximal and 8 distal epiphyses, and 4 complete tibiae that were distorted (Figure 1\u2014figure supplement 7). We thus integrated 10 complete femora, 13 distal and 15 proximal femoral epiphyses, and 17 complete tibiae.\n\n### 3D geometric morphometrics\n\n3D GM is a well-established method for quantifying biological shape variations and has already enabled to identify sexual dimorphism in past studies (Kaliontzopoulou et al., 2007; Cavaignac et al., 2016). We followed a high-density morphometrics approach using a combination of single anatomical landmarks and sliding semilandmarks along curves and surfaces (Bookstein, 1997; Gunz et al., 2005). Indeed, most anatomical landmarks are usually concentrated on both ends of limb bones, hence why the use of sliding semilandmarks on the surface was justified on the shaft (Gunz and Mitteroecker, 2013; Botton-Divet et al., 2016). We digitized 619 landmarks on complete femora (25 anatomical landmarks, 99 sliding semilandmarks on curves, and 495 on surfaces), 479 on proximal (11 anatomical landmarks, 26 sliding semilandmarks on curves, and 442 on surfaces) and distal epiphyses (10 anatomical landmarks, 45 sliding semilandmarks on curves, and 424 on surfaces), and 725 on complete tibiae (23 anatomical landmarks, 219 sliding semilandmarks on curves, and 483 on surfaces; see details in Figure 1\u2014figure supplement 4; Supplementary files 4 and 5) using the IDAV Landmark software v. 3.0.0.6 (Wiley et al., 2005). We digitized anatomical landmarks and sliding semilandmarks along curves on each specimen and sliding semilandmarks along surfaces on one specimen (ANG 10 90), referred to as \u2018the template\u2019 hereafter (Cornette et al., 2013). We then automatically projected the sliding semilandmarks along surfaces of the template onto every other specimen following the spline relaxation of semilandmarks along curves using the function \u2018placePatch\u2019 of the Morpho package v. 2.8 (Schlager, 2017). Then, we performed 5 iterations of another spline relaxation between landmark configurations of the template and the ones from every other specimen using the function \u2018relaxLM\u2019 of Morpho. Finally, we performed a partial Procrustes fitting in order to compute a Procrustes consensus of every configuration and used it as a target for the 2 last iterations of spline relaxation using the function \u2018slideLM\u2019 of Morpho. These 3 steps of spline relaxations (Source code 2) ensured that every semilandmark position was geometrically homogeneous in all specimens (Gunz et al., 2005). Finally, we performed a generalized Procrustes analysis (GPA) using the function \u2018gpagen\u2019 of the R package geomorph v. 3.3.1 (Adams et al., 2013) in order to align each femur in the Cartesian coordinate system by superimposing them based on their landmark configuration and to rule out the effect of size, location, and orientation of the different landmark configurations (Gower, 1975; Rohlf and Slice, 1990; Zelditch et al., 2012).\n\n### Statistical analyses and clustering\n\nWe performed a PCA in order to reduce dimensionalities of the variation and isolate different components of shape variation (Gunz and Mitteroecker, 2013). The quantification of repeatability was performed by digitizing landmarks iteratively (n=10) on three morphologically close specimens for complete femora and tibiae, which resulted in 30 configurations for each bone. We then computed a PCA for the two bones (30 configurations each), which showed that all 10 repetitions for each specimen were grouped together and isolated from those of the other specimens along the first two PC axes (Figure 1\u2014figure supplements 5 and 6 ). This ensured that biological variation was greater than the operator effect, which refers to the ability to reproduce accurately the same landmark configuration multiple times on the same specimen. As recommended by Mallon, 2017, we performed mixture modeling analyses without a priori knowledge about the number of groups in order to estimate how many morphological clusters would stand out in our dataset, if any, along each PC axis. Gaussians functions are well suited to describe a biological population, especially when applied to a morphometric dataset (Baylac et al., 2003). We used the R package Mclust v. 5.4.7, which calculates the most probable number of clusters in a dataset based on the detection of Gaussian distributions by maximum likelihood estimations (Scrucca et al., 2016). Bayesian Information Criteria (BIC; e.g. an approximation of Bayes factors for comparing likelihood) were used to choose which model, among the several ones available, fitted best with our dataset (i.e. the model with the highest BIC), while simultaneously estimating the number of Gaussian distributions (Fraley and Raftery, 2007). We computed 3D visualizations that highlighted which feature varied the most along each axis, and between clusters when dimorphism was identified. To do so, we first computed a 3D consensual mesh of all specimens of the sample by using the function \u2018tps3d\u2019 from the R package Morpho v. 2.8 (Schlager, 2017) which performed a spline relaxation that minimized the bending energy of a thin plate spline (TPS) between the template landmark configuration and a mean landmark configuration (obtained during the GPA). Then, the function used the resulting TPS deformation to warp the 3D mesh of the template onto the mean shape in order to compute a 3D consensual mesh (Bardua et al., 2019). Next, we calculated the mean coordinates of every specimen in each cluster along the PC axis identified as dimorphic by the mixture modeling analysis. Finally, we warped the mean shape, and its associated 3D mesh, onto the mean landmark configurations of each cluster by using the \u2018shape.predictor\u2019 function of geomorph v. 3.3.1 (Adams et al., 2013) in order to visualize the 3D shape variation associated with the dimorphic PC axis. We studied the allometry within our sample (i.e. the size-related morphological variation [Klingenberg, 2016]), using Pearson\u2019s correlation between each PC scores and the log-transformed centroid sizes using the R function \u2018cor.test.\u2019 The code for the totality of these steps is provided in Source code 1.\n",
+      "created_at": "2025-12-04T02:08:44.666058Z"
+    },
+    {
+      "id": "63998030-8e45-4e29-ab51-b5a7381c3c40",
+      "submission_id": "be0bfa43-4be9-4865-996a-15ce9590d492",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Nizar Ibrahim, https://ror.org/03ykbk197 University of Portsmouth United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.83413.sa0](https://doi.org/10.7554/eLife.83413.sa0)\n\nThis important contribution offers a convincing analysis of the challenging topic of sexual dimorphism in dinosaurs. Unlike previously published contributions, which are ambiguous, this paper, based on 61 ornithomimosaur fossils, makes a compelling case for measurable differences between male and female individuals. Of particular note, the use of rigorous statistical approaches, a major strength of this manuscript, sets this study apart from previous attempts to tackle this question. Morphological changes are carefully analysed and put into a broader comparative context: the conclusions of this paper allow for interesting comparisons between non-avian dinosaurs and extant groups (e.g., crocodilians, birds, mammals). As such, this manuscript will be of interest to a diverse audience, including palaeontologists, zoologists, and evolutionary biologists.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Nizar Ibrahim, https://ror.org/03ykbk197 University of Portsmouth United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.83413.sa1](https://doi.org/10.7554/eLife.83413.sa1)\n\nOur editorial process produces two outputs: i) public reviews designed to be posted alongside the preprint for the benefit of readers; ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Femora from an exceptionally large population of coeval ornithomimosaurs yield evidence of sexual dimorphism in extinct theropod dinosaurs\" for consideration by eLife.\n\nYour article has been reviewed by two peer reviewers, and the evaluation has been overseen by Nizar Ibrahim as Reviewing Editor and Christian Rutz as Senior Editor. The following individual involved in the review of your submission has agreed to reveal their identity: Michael Benton (Reviewer #1).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this decision letter to help you prepare a revised submission. Only very minor changes/additions are needed.\n\nEssential revisions:\n\n1) Please add a short text section outlining the rationale for selecting the skeletal elements used in this study (femora and tibiae).\n\n2) Please briefly comment on differences in size (or not) between the two groups.\n\n3) Please provide a little more information on taphonomically distorted specimens.\n",
+      "created_at": "2025-12-04T02:08:44.666058Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T02:08:44.666058Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T02:08:44.666058Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "a4eccf01-8e12-45da-973a-5a97d97eb9b5",
+      "content_id": "ff95316d-9280-4f3f-aa24-39dc3de5c48d",
+      "claim_id": "C1",
+      "claim": "Sexual dimorphism is challenging to detect among fossils due to a lack of statistical representativeness.",
+      "claim_type": "EXPLICIT",
+      "source": "Sexual dimorphism is challenging to detect among fossils due to a lack of statistical representativeness.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about the challenges of detecting sexual dimorphism in fossils, drawing on established knowledge in paleontology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:08:44.666058Z"
+    },
+    {
+      "id": "58e505b6-e17f-4da1-a8e0-e6c201b3cace",
+      "content_id": "ff95316d-9280-4f3f-aa24-39dc3de5c48d",
+      "claim_id": "C2",
+      "claim": "The Angeac-Charente Lagerst\u00e4tte represents a remarkable 'snapshot' from a Berriasian (Early Cretaceous) ecosystem.",
+      "claim_type": "EXPLICIT",
+      "source": "The Angeac-Charente Lagerst\u00e4tte (France) represents a remarkable 'snapshot' from a Berriasian (Early Cretaceous) ecosystem",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous work (Allain et al., 2014, Allain et al., 2022) and geological context.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:08:44.666058Z"
+    },
+    {
+      "id": "89994bdf-3cc7-471a-b857-276f2d743ff3",
+      "content_id": "ff95316d-9280-4f3f-aa24-39dc3de5c48d",
+      "claim_id": "C3",
+      "claim": "The Angeac-Charente site contains a herd of at least 61 coeval ornithomimosaurs.",
+      "claim_type": "EXPLICIT",
+      "source": "offers a unique opportunity to study intraspecific variation among a herd of at least 61 coeval ornithomimosaurs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data presented in the manuscript (Table 1) and citations to previous work (Rozada et al., 2014, Rozada et al., 2021).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:08:44.666058Z"
+    },
+    {
+      "id": "745c8ba5-c9af-4e34-b3ed-55b1451df1b1",
+      "content_id": "ff95316d-9280-4f3f-aa24-39dc3de5c48d",
+      "claim_id": "C4",
+      "claim": "The study investigated hindlimb variation across the best-preserved specimens from the herd through 3D Geometric Morphometrics and Gaussian Mixture Modeling.",
+      "claim_type": "EXPLICIT",
+      "source": "we investigated the hindlimb variation across the best-preserved specimens from the herd through 3D Geometric Morphometrics and Gaussian Mixture Modeling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodology used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:08:44.666058Z"
+    },
+    {
+      "id": "9ed11833-293a-44b0-b20d-866a2922d5e7",
+      "content_id": "ff95316d-9280-4f3f-aa24-39dc3de5c48d",
+      "claim_id": "C5",
+      "claim": "The results based on complete and fragmented femora evidenced a dimorphism characterized by variations in the shaft curvature and the distal epiphysis width.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results based on complete and fragmented femora evidenced a dimorphism characterized by variations in the shaft curvature and the distal epiphysis width.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study, supported by the morphometric analyses presented.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:08:44.666058Z"
+    },
+    {
+      "id": "87a4ab6b-233b-4852-895f-142f5cbb7eb7",
+      "content_id": "ff95316d-9280-4f3f-aa24-39dc3de5c48d",
+      "claim_id": "C6",
+      "claim": "The same features (shaft curvature and distal epiphysis width) vary between sexes among modern avian dinosaurs, crocodilians, and more distant amniotes.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the same features vary between sexes among modern avian dinosaurs, crocodilians, and more distant amniotes",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to studies on extant taxa throughout the manuscript.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:08:44.666058Z"
+    },
+    {
+      "id": "e2536f3a-08fd-4bab-83a2-fc9ade02590a",
+      "content_id": "ff95316d-9280-4f3f-aa24-39dc3de5c48d",
+      "claim_id": "C7",
+      "claim": "The bimodal variation observed in the Angeac-Charente ornithomimosaurs is attributed to sexual dimorphism based on the extant phylogenetic bracketing approach.",
+      "claim_type": "EXPLICIT",
+      "source": "we attributed this bimodal variation to sexual dimorphism based on the extant phylogenetic bracketing approach.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the extant phylogenetic bracketing method and comparison with modern taxa.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:08:44.666058Z"
+    },
+    {
+      "id": "59302ea8-0657-4d1f-ab64-63eef523d50d",
+      "content_id": "ff95316d-9280-4f3f-aa24-39dc3de5c48d",
+      "claim_id": "C8",
+      "claim": "Dimorphism has been reported in every major dinosaur clade and has often been attributed to sex-specific variation.",
+      "claim_type": "EXPLICIT",
+      "source": "Dimorphism has been reported in every major dinosaur clade and has often been attributed to sex-specific variation (Dodson, 1975; Chapman et al., 1997; Bunce et al., 2003; Padian and Horner, 2011; Knell and Sampson, 2011; Knell et al., 2013; Mallon, 2017; Saitta et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:08:44.666058Z"
+    },
+    {
+      "id": "6f5defab-0f50-4214-b78f-eaf720c37dc8",
+      "content_id": "ff95316d-9280-4f3f-aa24-39dc3de5c48d",
+      "claim_id": "C9",
+      "claim": "Most documented cases of sexual dimorphism in extinct dinosaurs were likely biased by ontogenetic changes, taphonomic deformations, and small sample sizes.",
+      "claim_type": "EXPLICIT",
+      "source": "However, recent studies have demonstrated that most of the documented cases of sexual dimorphism in extinct dinosaurs were most likely biased by ontogenetic changes, taphonomic deformations, and small sample sizes, which substantially affect the representativeness of the inter- and intraspecific diversity and undermine statistical analyses (Griffin and Nesbitt, 2016; Hone et al., 2017; Saitta et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to recent critical studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:08:44.666058Z"
+    },
+    {
+      "id": "5956ee5b-1ab1-4d84-b236-35de12220c19",
+      "content_id": "ff95316d-9280-4f3f-aa24-39dc3de5c48d",
+      "claim_id": "C10",
+      "claim": "A discrete and binary variation between gracile and robust morphologies of femoral bone scars has frequently been inferred as sexual dimorphism in various ceratosaurian theropods and non-dinosaurian dinosauriforms.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, a discrete and binary variation between gracile and robust morphologies of femoral bone scars, mostly at the level of the lesser trochanter, has frequently been inferred, with more or less confidence, as sexual dimorphism in various ceratosaurian theropods and non-dinosaurian dinosauriforms (Colbert, 1990; Raath, 1990; Benton et al., 2000; Britt and Chure, 2000; Piechowski et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:08:44.666058Z"
+    },
+    {
+      "id": "45c06b89-ccd4-4f86-913c-9a04e73d63cc",
+      "content_id": "ff95316d-9280-4f3f-aa24-39dc3de5c48d",
+      "claim_id": "C11",
+      "claim": "Griffin and Nesbitt (2016) demonstrated that the feature of gracile vs. robust femoral bone scars no longer appeared dimorphic when accounting for ontogenetic series in the silesaurid Asilisaurus.",
+      "claim_type": "EXPLICIT",
+      "source": "More recently, Griffin and Nesbitt, 2016 demonstrated that this feature no longer appeared dimorphic when accounting for ontogenetic series in the silesaurid Asilisaurus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a specific study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:08:44.666058Z"
+    },
+    {
+      "id": "57791523-95b5-4a32-bf77-4947d3d1dd2a",
+      "content_id": "ff95316d-9280-4f3f-aa24-39dc3de5c48d",
+      "claim_id": "C12",
+      "claim": "Sexual dimorphism in modern populations can be represented only by very subtle morphological variations, making it harder to detect in fossils with smaller sample sizes.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, it has been demonstrated on modern populations that sexual dimorphism could be represented only by very subtle morphological variations, making it even harder to detect in fossils with smaller sample sizes (Hone et al., 2020; Saitta et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to studies on modern populations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:08:44.666058Z"
+    },
+    {
+      "id": "75583598-f59b-4235-9a0e-8d4a79c7608f",
+      "content_id": "ff95316d-9280-4f3f-aa24-39dc3de5c48d",
+      "claim_id": "C13",
+      "claim": "Mallon (2017) performed a statistical investigation on a large set of studies that hypothesized sexual dimorphism across major clades of non-avian dinosaurs.",
+      "claim_type": "EXPLICIT",
+      "source": "At a larger scale, Mallon, 2017 performed a statistical investigation on a large set of studies that hypothesized sexual dimorphism based on a wide diversity of anatomical proxies across the major clades of non-avian dinosaurs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a specific study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:08:44.666058Z"
+    },
+    {
+      "id": "eef3d426-dfe5-4e5a-86bc-e3e859a65370",
+      "content_id": "ff95316d-9280-4f3f-aa24-39dc3de5c48d",
+      "claim_id": "C14",
+      "claim": "Among 48 described occurrences of sexual dimorphism in non-avian dinosaurs, only 9 datasets were suitable for statistical test, and only 1 was considered to rigorously demonstrate dimorphism.",
+      "claim_type": "EXPLICIT",
+      "source": "However, among the 48 described occurrences, only 9 datasets were suitable for statistical test, among which only 1 was considered to rigorously demonstrate dimorphism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Mallon (2017).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:08:44.666058Z"
+    },
+    {
+      "id": "cd46333f-6697-4d8e-9b5b-32a2b4b2e536",
+      "content_id": "ff95316d-9280-4f3f-aa24-39dc3de5c48d",
+      "claim_id": "C15",
+      "claim": "The shift in posterior inclination between the eighth and ninth dermal plates of Stegosaurus mjosi was best explained by a bimodal distribution.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the combination of a principal component analysis (PCA) and a mixture modeling analysis highlighted that the shift in posterior inclination between the eighth and ninth dermal plates of Stegosaurus mjosi was best explained by a bimodal distribution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Mallon (2017).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:08:44.666058Z"
+    },
+    {
+      "id": "6b2b5803-61cd-4316-bf66-225153dfd67a",
+      "content_id": "ff95316d-9280-4f3f-aa24-39dc3de5c48d",
+      "claim_id": "C16",
+      "claim": "There is not robust evidence to postulate that the dimorphism shown in dermal plates of Stegosaurus would be sex specific.",
+      "claim_type": "EXPLICIT",
+      "source": "Yet, there is not robust evidence to postulate that the dimorphism shown in dermal plates would be sex specific (Saitta, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Saitta (2015).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:08:44.666058Z"
+    },
+    {
+      "id": "7c8f96fb-1374-433b-97d2-456b1bd7863a",
+      "content_id": "ff95316d-9280-4f3f-aa24-39dc3de5c48d",
+      "claim_id": "C17",
+      "claim": "No dataset has yet rigorously demonstrated the presence of sexual dimorphism in non-avian dinosaurs.",
+      "claim_type": "EXPLICIT",
+      "source": "As a consequence, it appears that no dataset has yet rigorously demonstrated the presence of sexual dimorphism in non-avian dinosaurs (Hone et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Hone et al. (2020).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:08:44.666058Z"
+    },
+    {
+      "id": "9a4306da-2314-45d2-b9a3-7fa9ef93dccc",
+      "content_id": "ff95316d-9280-4f3f-aa24-39dc3de5c48d",
+      "claim_id": "C18",
+      "claim": "Rozada et al. (2014, 2021) demonstrated that at least 61 ornithomimosaur individuals belonged to the same herd and were deposited in a mass mortality event.",
+      "claim_type": "EXPLICIT",
+      "source": "Rozada et al., 2014 and Rozada et al., 2021 demonstrated that at least 61 ornithomimosaur individuals belonged to the same herd and were deposited in a mass mortality event relying on several evidences (e.g. very limited transport; quality of bone preservation; abundance of individuals with a high skeletal representation preserved in a restricted spatial distribution; catastrophic age profile of the group; deposition of sediment and bones under coeval, poorly oxygenated burial and diagenesis conditions given by their rare earth elements and Yttrium profiles).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Rozada et al. (2014, 2021).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:08:44.666058Z"
+    },
+    {
+      "id": "4c954169-a09b-4c4e-a45f-ab99a974be6e",
+      "content_id": "ff95316d-9280-4f3f-aa24-39dc3de5c48d",
+      "claim_id": "C19",
+      "claim": "Many hypotheses of sexual dimorphism were formulated based on the hindlimb morphology of non-avian dinosaurs.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, and in addition of being the most abundant bones discovered from the Angeac-Charente ornithomimosaur, many hypotheses of sexual dimorphism were formulated based on the hindlimb morphology of non-avian dinosaurs (Colbert, 1990; Raath, 1990; Larson, 1994; Benton et al., 2000; Britt and Chure, 2000; Carrano et al., 2002; Bunce et al., 2003; Piechowski et al., 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:08:44.666058Z"
+    },
+    {
+      "id": "b6f6f376-a0c3-4937-9fef-a456d5c52c97",
+      "content_id": "ff95316d-9280-4f3f-aa24-39dc3de5c48d",
+      "claim_id": "C20",
+      "claim": "Sexual dimorphism in hindlimb morphology has been observed in extant archosaurs.",
+      "claim_type": "EXPLICIT",
+      "source": "but also observed in extant archosaurs (Schnell et al., 1985; Farlow et al., 2005; Charuta et al., 2007; Bonnan et al., 2008; Elzanowski and Louchart, 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to studies on extant taxa.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:08:44.666058Z"
+    },
+    {
+      "id": "33afd051-11c1-45e6-936c-b0517ab63405",
+      "content_id": "ff95316d-9280-4f3f-aa24-39dc3de5c48d",
+      "claim_id": "C21",
+      "claim": "The minimum number of individuals (MNI) for femora from the Angeac-Charente ornithomimosaur is 46.",
+      "claim_type": "EXPLICIT",
+      "source": "Table 1",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This is directly stated in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:08:44.666058Z"
+    },
+    {
+      "id": "179c329c-877d-4c03-8717-628c3248290f",
+      "content_id": "ff95316d-9280-4f3f-aa24-39dc3de5c48d",
+      "claim_id": "C22",
+      "claim": "The minimum number of individuals (MNI) for tibiae from the Angeac-Charente ornithomimosaur is 61.",
+      "claim_type": "EXPLICIT",
+      "source": "Table 1",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This is directly stated in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:08:44.666058Z"
+    },
+    {
+      "id": "8a601ff7-fe69-4d77-9c56-1a869b19120d",
+      "content_id": "ff95316d-9280-4f3f-aa24-39dc3de5c48d",
+      "claim_id": "C23",
+      "claim": "3D geometric morphometric approach is well suited to study biological objects, including limb bones, and to detect subtle intraspecific shape variations.",
+      "claim_type": "EXPLICIT",
+      "source": "This method is well suited to study biological objects, including limb bones, and to detect subtle intraspecific shape variations (Zelditch et al., 2012; Botton-Divet et al., 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to methodological studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:08:44.666058Z"
+    },
+    {
+      "id": "48443ae4-0222-44ac-abc6-63de33ae5f85",
+      "content_id": "ff95316d-9280-4f3f-aa24-39dc3de5c48d",
+      "claim_id": "C24",
+      "claim": "Gaussian mixture modeling has been demonstrated as a well-suited method for the identification of dimorphism.",
+      "claim_type": "EXPLICIT",
+      "source": "This clustering analysis calculates the number of Gaussian distributions present in a dataset by maximum likelihood estimations and has been demonstrated as a well-suited method for the identification of dimorphism (Godfrey et al., 1993; Dong, 1997; Fabre et al., 2014; Manin et al., 2016; Mallon, 2017; Saitta et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to methodological studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:08:44.666058Z"
+    },
+    {
+      "id": "21f75231-bfd2-4795-beee-29c3f203fc84",
+      "content_id": "ff95316d-9280-4f3f-aa24-39dc3de5c48d",
+      "claim_id": "C25",
+      "claim": "A dimorphic variation in femora from the ornithomimosaur herd of Angeac-Charente was highlighted.",
+      "claim_type": "EXPLICIT",
+      "source": "We highlight a dimorphic variation in femora from the ornithomimosaur herd of Angeac-Charente (Figure 1A\u2013B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding supported by the data and analyses presented in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:08:44.666058Z"
+    },
+    {
+      "id": "a14d1be5-ae9e-42b5-a10d-301759c2d457",
+      "content_id": "ff95316d-9280-4f3f-aa24-39dc3de5c48d",
+      "claim_id": "C26",
+      "claim": "The dimorphic variation is localized along the diaphysis (i.e. lateromedial curvature) and toward the distal epiphysis (i.e. lateromedial width) of the femur.",
+      "claim_type": "EXPLICIT",
+      "source": "This dimorphic variation is localized along the diaphysis (i.e. lateromedial curvature) and toward the distal epiphysis (i.e. lateromedial width) of the femur (Figure 1C\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the morphometric analyses and visualizations in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:08:44.666058Z"
+    },
+    {
+      "id": "a694aa41-5b60-43a4-b863-7b57af45013f",
+      "content_id": "ff95316d-9280-4f3f-aa24-39dc3de5c48d",
+      "claim_id": "C27",
+      "claim": "Distributions along the PC1 of complete femora (28.8%) and distal epiphyses (27.9%) are best described by two clusters with a ratio close to 1:1 according to GMM analyses.",
+      "claim_type": "EXPLICIT",
+      "source": "Distributions along the PC1 of complete femora (28.8%) and distal epiphyses (27.9%) are best described by two clusters with a ratio close to 1:1 according to GMM analyses (see Supplementary file 1 for details).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the statistical analyses presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:08:44.666058Z"
+    },
+    {
+      "id": "8ddf772d-d67b-418e-8cc4-92eb8a43874f",
+      "content_id": "ff95316d-9280-4f3f-aa24-39dc3de5c48d",
+      "claim_id": "C28",
+      "claim": "PC1 scores from both analyses (complete femora and distal epiphyses) are not significantly correlated to the log centroid size.",
+      "claim_type": "EXPLICIT",
+      "source": "PC1 scores from both analyses are not significantly correlated to the log centroid size, indicating that size-related effects have no impact on the observed dimorphism (p-value>0.1 for complete femora and distal epiphyses, Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by statistical tests presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:08:44.666058Z"
+    },
+    {
+      "id": "7423927e-8f36-42b5-b0aa-d9b20ea32e7a",
+      "content_id": "ff95316d-9280-4f3f-aa24-39dc3de5c48d",
+      "claim_id": "C29",
+      "claim": "The most important morphological variation of complete femora is a medial to lateral curvature of the femur.",
+      "claim_type": "EXPLICIT",
+      "source": "The most important morphological variation of complete femora is a medial to lateral curvature of the femur (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the PCA results and visualizations in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:08:44.666058Z"
+    },
+    {
+      "id": "5c1ffd9b-6b06-454a-a5b6-0d69e501452d",
+      "content_id": "ff95316d-9280-4f3f-aa24-39dc3de5c48d",
+      "claim_id": "C30",
+      "claim": "The proximal third of the femur appears deviated toward the lateral side in specimens on the negative part of the PC1 axis, whereas specimens located on the positive part have straight to medially curved femora.",
+      "claim_type": "EXPLICIT",
+      "source": "The proximal third of the femur appears deviated toward the lateral side in specimens on the negative part of the PC1 axis, whereas specimens located on the positive part have straight to medially curved femora (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the morphometric analyses and visualizations in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:08:44.666058Z"
+    },
+    {
+      "id": "aa6590a5-c4de-4642-b510-a0a838e83f46",
+      "content_id": "ff95316d-9280-4f3f-aa24-39dc3de5c48d",
+      "claim_id": "C31",
+      "claim": "The femoral head is directed medially in the negative cluster while it is inclined ventromedially in the positive one.",
+      "claim_type": "EXPLICIT",
+      "source": "Coincidentally, the femoral head is directed medially in the negative cluster while it is inclined ventromedially in the positive one (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the morphometric analyses and visualizations in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:08:44.666058Z"
+    },
+    {
+      "id": "0fd1d7b9-4728-4b15-9f97-9c7449501123",
+      "content_id": "ff95316d-9280-4f3f-aa24-39dc3de5c48d",
+      "claim_id": "C32",
+      "claim": "For distal epiphyses, the most important morphological variation along PC1 is the expansion of the lateromedial width relative to the anteroposterior length, which is greater in specimens on the positive part of the PC1 axis than on the negative one.",
+      "claim_type": "EXPLICIT",
+      "source": "Regarding distal epiphyses, we selected 6 (out of 10) epiphyses from complete femora because the other 4 were taphonomically altered or pyrite encrusted only in the distal area, which would appear relatively more important in analyses restricted only to this area rather than on the complete morphology (Supplementary file 2). Nevertheless, for distal epiphyses, the most important morphological variation along PC1 is the expansion of the lateromedial width relative to the anteroposterior length, which is greater in specimens on the positive part of the PC1 axis than on the negative one (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the morphometric analyses and visualizations in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:08:44.666058Z"
+    },
+    {
+      "id": "547f1fe6-1a0e-480c-b9b3-ead5d7f27a2f",
+      "content_id": "ff95316d-9280-4f3f-aa24-39dc3de5c48d",
+      "claim_id": "C33",
+      "claim": "The 6 distal epiphyses from complete femora are consistently attributed to the same clusters between the two analyses (complete femora and distal epiphyses).",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we highlight that the 6 distal epiphyses from complete femora are consistently attributed to the same clusters between the two analyses (Figure 1A, B; Supplementary file 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the data presented in Figure 1 and Supplementary file 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:08:44.666058Z"
+    },
+    {
+      "id": "c077a69f-70d0-4e9c-9ecf-ca449c3086cc",
+      "content_id": "ff95316d-9280-4f3f-aa24-39dc3de5c48d",
+      "claim_id": "C34",
+      "claim": "The straighter the shaft is, the more robust the epiphysis is, and this relationship is dimorphic.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, our study shows that the straighter the shaft is, the more robust the epiphysis is and that this relationship is dimorphic.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the morphometric analyses presented.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:08:44.666058Z"
+    },
+    {
+      "id": "34cbfae8-884d-4fd0-ae99-0085b36c2945",
+      "content_id": "ff95316d-9280-4f3f-aa24-39dc3de5c48d",
+      "claim_id": "C35",
+      "claim": "There is no robust bimodal distribution on proximal epiphyses.",
+      "claim_type": "EXPLICIT",
+      "source": "However, there is no robust bimodal distribution on proximal epiphyses, as shown by the GMM analyses (Figure 1\u2014figure supplement 2; no consistency in the specimen attribution between complete femora and proximal epiphyses).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the GMM analyses presented in Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:08:44.666058Z"
+    },
+    {
+      "id": "ecf7c4c9-c5f3-4b6e-a488-74c5495d969d",
+      "content_id": "ff95316d-9280-4f3f-aa24-39dc3de5c48d",
+      "claim_id": "C36",
+      "claim": "There is no dimorphism in the morphological variation of complete tibiae.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, there is no dimorphism in the morphological variation of complete tibiae (Figure 1\u2014figure supplement 3) along PC1 (24.1%) and PC2 (20.0%).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the analyses presented in Figure 1\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:08:44.666058Z"
+    },
+    {
+      "id": "a3a069bd-852b-4cfc-a048-dad7ef30eaa9",
+      "content_id": "ff95316d-9280-4f3f-aa24-39dc3de5c48d",
+      "claim_id": "C37",
+      "claim": "Birds display variation in their plumage and skeleton.",
+      "claim_type": "EXPLICIT",
+      "source": "birds display variation in their plumage and skeleton (Schnell et al., 1985; Owens and Hartley, 1998; Dunn et al., 2001; Sz\u00e9kely et al., 2007; Clarke, 2013; Duggan et al., 2015; Manin et al., 2016; Hone et al., 2017; Elzanowski and Louchart, 2022)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to studies on birds.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:08:44.666058Z"
+    },
+    {
+      "id": "829e5c65-d11a-4f44-9d26-afe54e36a68b",
+      "content_id": "ff95316d-9280-4f3f-aa24-39dc3de5c48d",
+      "claim_id": "C38",
+      "claim": "The variation in crocodilians is restricted to the skeleton.",
+      "claim_type": "EXPLICIT",
+      "source": "whereas the variation is restricted to the skeleton in crocodilians (Fitch, 1981; Farlow et al., 2005; Cox et al., 2007; Prieto-Marquez et al., 2007; Bonnan et al., 2008; Hone et al., 2017; Hone et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to studies on crocodilians.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:08:44.666058Z"
+    },
+    {
+      "id": "b5a3d339-36eb-438a-bb41-77422d5d0146",
+      "content_id": "ff95316d-9280-4f3f-aa24-39dc3de5c48d",
+      "claim_id": "C39",
+      "claim": "The extant phylogenetic bracket of non-avian dinosaurs implies they were sexually dimorphic.",
+      "claim_type": "EXPLICIT",
+      "source": "The extant phylogenetic bracket (EPB) of non-avian dinosaurs (Witmer, 1995) thus implies they were sexually dimorphic too (Hone et al., 2017; Hone et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the extant phylogenetic bracketing method.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:08:44.666058Z"
+    },
+    {
+      "id": "225bab3e-1cd3-4d68-a7e5-e5e317127a3f",
+      "content_id": "ff95316d-9280-4f3f-aa24-39dc3de5c48d",
+      "claim_id": "C40",
+      "claim": "Dimorphism in the femoral obliquity was observed in humans, for which females had higher angles than males.",
+      "claim_type": "EXPLICIT",
+      "source": "Dimorphism in the femoral obliquity (also termed 'bicondylar angle') was observed in humans, for which females had higher angles than males (Parsons, 1914; Tardieu et al., 2006; Hunt et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to studies on humans.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:08:44.666058Z"
+    },
+    {
+      "id": "9daa9c07-fe3b-4db6-b5cc-929c27d06500",
+      "content_id": "ff95316d-9280-4f3f-aa24-39dc3de5c48d",
+      "claim_id": "C41",
+      "claim": "A higher lateromedial width of the distal epiphysis was demonstrated to vary between sexes in gray wolves and other carnivorans, as well as in primates.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, a higher lateromedial width of the distal epiphysis (also termed 'epicondylar width' or 'bicondylar breadth') was demonstrated to vary between sexes in gray wolves and other carnivorans, as well as in primates (Alunni-Perret et al., 2008; Gaikwad and Nikam, 2014; Morris and Brandt, 2014; Cavaignac et al., 2016; Morris and Carrier, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to studies on carnivorans and primates.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:08:44.666058Z"
+    },
+    {
+      "id": "78f9c886-7d48-466f-a898-b0b791ef8cec",
+      "content_id": "ff95316d-9280-4f3f-aa24-39dc3de5c48d",
+      "claim_id": "C42",
+      "claim": "A higher distal width in males than females was demonstrated in wild and captive Alligator mississippiensis using linear and geometric morphometrics.",
+      "claim_type": "EXPLICIT",
+      "source": "A higher distal width in males than females was demonstrated in wild and captive Alligator mississippiensis using linear and geometric morphometrics (Farlow et al., 2005; Bonnan et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to studies on alligators.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:08:44.666058Z"
+    },
+    {
+      "id": "f4d1b6c0-1a91-4466-9fc0-209f43259060",
+      "content_id": "ff95316d-9280-4f3f-aa24-39dc3de5c48d",
+      "claim_id": "C43",
+      "claim": "Handley et al. (2016) demonstrated that femoral distal width of the more recently extinct flightless bird Dromornis stirtoni was also higher in males than females.",
+      "claim_type": "EXPLICIT",
+      "source": "Handley et al., 2016 demonstrated that femoral distal width of the more recently extinct flightless bird Dromornis stirtoni was also higher in males than females.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a specific study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:08:44.666058Z"
+    },
+    {
+      "id": "e910773c-a94b-4023-8546-ef8184aa7481",
+      "content_id": "ff95316d-9280-4f3f-aa24-39dc3de5c48d",
+      "claim_id": "C44",
+      "claim": "Handley et al. (2016) coupled morphometrics and multivariate statistics with the observation of medullary bone to determine sex in Dromornis stirtoni.",
+      "claim_type": "EXPLICIT",
+      "source": "To do so, they coupled morphometrics and multivariate statistics with the observation of medullary bone, a sex-specific tissue present in bones of egg-laying female in archosaurians (Dacke et al., 1993; Schweitzer et al., 2005; Schweitzer et al., 2007; Canoville et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Handley et al. (2016) and citations about medullary bone.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:08:44.666058Z"
+    },
+    {
+      "id": "93360534-178a-4511-9d14-6fa7698715fa",
+      "content_id": "ff95316d-9280-4f3f-aa24-39dc3de5c48d",
+      "claim_id": "C45",
+      "claim": "The same kind of sexual dimorphism (in distal width) was observed in modern birds like California gulls (Larus californicus).",
+      "claim_type": "EXPLICIT",
+      "source": "The same kind of sexual dimorphism was observed in modern birds like California gulls (Larus californicus; Schnell et al., 1985)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a study on California gulls.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:08:44.666058Z"
+    },
+    {
+      "id": "38a182f4-ac9d-4c45-8ce0-fb5b4672741a",
+      "content_id": "ff95316d-9280-4f3f-aa24-39dc3de5c48d",
+      "claim_id": "C46",
+      "claim": "Sexual dimorphism in distal width was observed in the two extant species of ostriches (Struthio c. camelus and S. c. molybdophanes) but with reversed proportions between males and females.",
+      "claim_type": "EXPLICIT",
+      "source": "and in the two extant species of ostriches (Struthio c. camelus and S. c. molybdophanes) but with reversed proportions between males and females (Elzanowski and Louchart, 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a study on ostriches.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:08:44.666058Z"
+    },
+    {
+      "id": "519c1f32-577b-42d7-938d-b288eb283314",
+      "content_id": "ff95316d-9280-4f3f-aa24-39dc3de5c48d",
+      "claim_id": "C47",
+      "claim": "Duggan et al. (2015) demonstrated that young male domestic ducks (Anas platyrhynchos) had more laterally curved femora than females and that this sexually dimorphic feature disappeared along ontogeny.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, Duggan et al., 2015 demonstrated that young male domestic ducks (Anas platyrhynchos) had more laterally curved femora than females and that this sexually dimorphic feature disappeared along ontogeny.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a study on domestic ducks.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:08:44.666058Z"
+    },
+    {
+      "id": "65e0f75f-94e4-40ca-aa45-7f5b84c324ec",
+      "content_id": "ff95316d-9280-4f3f-aa24-39dc3de5c48d",
+      "claim_id": "C48",
+      "claim": "The femoral dimorphic features highlighted in the Angeac-Charente ornithomimosaur herd were also demonstrated to vary between sexes in more or less closely related extant vertebrate clades.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, because the femoral dimorphic features we highlighted in the Angeac-Charente ornithomimosaur herd were also demonstrated to vary between sexes in more or less closely related extant vertebrate clades, we infer it to be sexual.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on comparison with extant taxa.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:08:44.666058Z"
+    },
+    {
+      "id": "904cbbb4-375a-4571-8fd2-7173fa90bf16",
+      "content_id": "ff95316d-9280-4f3f-aa24-39dc3de5c48d",
+      "claim_id": "C49",
+      "claim": "Ontogenetic allometry was often misinterpreted as sexual dimorphism in archosaurs.",
+      "claim_type": "EXPLICIT",
+      "source": "Ontogenetic allometry was often misinterpreted as sexual dimorphism in archosaurs, as demonstrated in the early dinosauriform Asilisaurus kongwe, the crocodylian A. mississippiensis and the bird Rhea americana (Griffin and Nesbitt, 2016; Hone et al., 2017; Hedrick et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to studies demonstrating this issue.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:08:44.666058Z"
+    },
+    {
+      "id": "46971e7a-1b94-4ebd-bfaf-a0f67ec01f51",
+      "content_id": "ff95316d-9280-4f3f-aa24-39dc3de5c48d",
+      "claim_id": "C50",
+      "claim": "No allometry was found along the first PC axis in the Angeac-Charente ornithomimosaur femora.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we found no allometry along the first PC axis (Supplementary file 1)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the statistical analyses presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:08:44.666058Z"
+    },
+    {
+      "id": "af4e5420-3cdb-40fd-ac1c-a0b16f1ca7a1",
+      "content_id": "ff95316d-9280-4f3f-aa24-39dc3de5c48d",
+      "claim_id": "C51",
+      "claim": "The dimorphism in the Angeac-Charente ornithomimosaurs is not related to size.",
+      "claim_type": "EXPLICIT",
+      "source": "which, in addition of rejecting ontogenetic allometry, indicates that the dimorphism is not related to size, as suspected by the homogeneity of femoral lengths highlighted in Supplementary file 3 among complete femora.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the statistical analyses and data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:08:44.666058Z"
+    },
+    {
+      "id": "d722e1a1-1784-43ec-a301-868b84f3e330",
+      "content_id": "ff95316d-9280-4f3f-aa24-39dc3de5c48d",
+      "claim_id": "C52",
+      "claim": "There is no sexual size dimorphism (SSD) in the femur of the Angeac-Charente ornithomimosaurs.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, this indicates no sexual size dimorphism (SSD) in the femur of the Angeac-Charente ornithomimosaurs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the lack of size-related variation in the dimorphism.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:08:44.666058Z"
+    },
+    {
+      "id": "875b565b-2432-4228-8d7d-5894f466b8c2",
+      "content_id": "ff95316d-9280-4f3f-aa24-39dc3de5c48d",
+      "claim_id": "C53",
+      "claim": "SSD is one of the most documented sexual dimorphism across all living organisms, whether it is biased toward females or males.",
+      "claim_type": "EXPLICIT",
+      "source": "SSD is one of the most documented sexual dimorphism across all living organisms, whether it is biased toward females or males (Darwin, 1874; Fairbairn et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to foundational and review works.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:08:44.666058Z"
+    },
+    {
+      "id": "c7dae7ea-2338-4a19-882a-a7f6e0efb587",
+      "content_id": "ff95316d-9280-4f3f-aa24-39dc3de5c48d",
+      "claim_id": "C54",
+      "claim": "There are many examples of observations and/or inferences of SSD and allometric relationships in extant and extinct dinosaurs.",
+      "claim_type": "EXPLICIT",
+      "source": "There are many examples of observations and/or inferences of SSD and allometric relationships in extant and extinct dinosaurs (Larson, 1994; Bunce et al., 2003; Clarke, 2004; Sz\u00e9kely et al., 2007; Reme\u0161 and Sz\u00e9kely, 2010; Olson and Turvey, 2013; Handley et al., 2016; Manin et al., 2016; Fajemilehin, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to studies on dinosaurs.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:08:44.666058Z"
+    },
+    {
+      "id": "c5ba56c4-afb5-4b39-8d70-123a9759f2ca",
+      "content_id": "ff95316d-9280-4f3f-aa24-39dc3de5c48d",
+      "claim_id": "C55",
+      "claim": "Elzanowski and Louchart (2022) demonstrated that female ostriches had more robust limb bones but smaller average body size than males.",
+      "claim_type": "EXPLICIT",
+      "source": "However, Elzanowski and Louchart, 2022 demonstrated that female ostriches had more robust limb bones but smaller average body size than males.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a specific study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:08:44.666058Z"
+    },
+    {
+      "id": "a4d02953-ace0-4819-aea2-cb3eef882ddc",
+      "content_id": "ff95316d-9280-4f3f-aa24-39dc3de5c48d",
+      "claim_id": "C56",
+      "claim": "The decoupling between size and shape dimorphism in ostriches is concordant with the results from the Angeac-Charente ornithomimosaurs.",
+      "claim_type": "EXPLICIT",
+      "source": "This decoupling between size and shape dimorphism is concordant with our results",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on comparison with the ostrich study.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:08:44.666058Z"
+    },
+    {
+      "id": "988e65ae-ebb4-4214-a5c5-c701b78d32e6",
+      "content_id": "ff95316d-9280-4f3f-aa24-39dc3de5c48d",
+      "claim_id": "C57",
+      "claim": "Sexual dimorphism is not necessarily reflected by body size or allometry between limb segments.",
+      "claim_type": "EXPLICIT",
+      "source": "and emphasizes that sexual dimorphism is not necessarily reflected by body size or allometry between limb segments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the results and comparison with extant taxa.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:08:44.666058Z"
+    },
+    {
+      "id": "ecb4abbe-5ec4-4202-a435-38f1e292d69a",
+      "content_id": "ff95316d-9280-4f3f-aa24-39dc3de5c48d",
+      "claim_id": "C58",
+      "claim": "No dimorphism was identified in the proximal part of the femur of the Angeac-Charente ornithomimosaurs.",
+      "claim_type": "EXPLICIT",
+      "source": "We did not identify any other dimorphism in either the proximal part of the femur or in complete tibia of the Angeac-Charente ornithomimosaurs (Figure 1\u2014figure supplements 2 and 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the analyses presented in Figure 1\u2014figure supplements 2 and 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:08:44.666058Z"
+    },
+    {
+      "id": "be05ef11-dbd4-4a4b-97b3-a917663b3232",
+      "content_id": "ff95316d-9280-4f3f-aa24-39dc3de5c48d",
+      "claim_id": "C59",
+      "claim": "Sexual dimorphism was observed in the proximal ends of femora in extant ostriches.",
+      "claim_type": "EXPLICIT",
+      "source": "However, sexual dimorphism was observed in the proximal ends of femora in extant ostriches (Charuta et al., 2007; Elzanowski and Louchart, 2022)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to studies on ostriches.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:08:44.666058Z"
+    },
+    {
+      "id": "e4d98036-b048-4efa-8f00-94b77565c516",
+      "content_id": "ff95316d-9280-4f3f-aa24-39dc3de5c48d",
+      "claim_id": "C60",
+      "claim": "Sexual dimorphism was observed in the proximal ends of femora in California gulls.",
+      "claim_type": "EXPLICIT",
+      "source": "and California gulls (Schnell et al., 1985).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a study on California gulls.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:08:44.666058Z"
+    },
+    {
+      "id": "a5a6c9a7-2f1e-4bc4-b284-69bd4e2f7260",
+      "content_id": "ff95316d-9280-4f3f-aa24-39dc3de5c48d",
+      "claim_id": "C61",
+      "claim": "The anteroposterior width of the femoral shaft was demonstrated to vary between sexes among savannah sparrows (Passerculus sandwichensis).",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the anteroposterior width of the femoral shaft was demonstrated to vary between sexes among savannah sparrows (Passerculus sandwichensis; Rising, 1987)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a study on savannah sparrows.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:08:44.666058Z"
+    },
+    {
+      "id": "da9856a0-8dca-4921-a007-fe230d67b2fc",
+      "content_id": "ff95316d-9280-4f3f-aa24-39dc3de5c48d",
+      "claim_id": "C62",
+      "claim": "The anteroposterior width of the femoral shaft was demonstrated to vary between sexes among three species of steamer-ducks (Tachyeres pteneres, Tachyeres leucocephalus, and Tachyeres patachonicus).",
+      "claim_type": "EXPLICIT",
+      "source": "and three species of steamer-ducks (Tachyeres pteneres, Tachyeres leucocephalus, and Tachyeres patachonicus; Livezey and Humphrey, 1984).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a study on steamer-ducks.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:08:44.666058Z"
+    },
+    {
+      "id": "5dff0ac4-24d6-455d-976f-904c86a0b566",
+      "content_id": "ff95316d-9280-4f3f-aa24-39dc3de5c48d",
+      "claim_id": "C63",
+      "claim": "Size-independent dimorphism in the avian tibiotarsus seems less common across the extant phylogenetic bracket.",
+      "claim_type": "EXPLICIT",
+      "source": "Yet, and accordingly with our results, size-independent dimorphism in the avian tibiotarsus seems less common across the EPB.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on review of the literature on extant taxa.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:08:44.666058Z"
+    },
+    {
+      "id": "675dde75-4e8a-4583-94a8-270884afe293",
+      "content_id": "ff95316d-9280-4f3f-aa24-39dc3de5c48d",
+      "claim_id": "C64",
+      "claim": "Occurrences of shape dimorphism in the tibia was demonstrated only in California gulls (e.g. width of the shaft).",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, to our knowledge, occurrences of shape dimorphism in the tibia was demonstrated only in California gulls (e.g. width of the shaft; Schnell et al., 1985)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a study on California gulls.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:08:44.666058Z"
+    },
+    {
+      "id": "d8b0629d-bc8b-4b13-b858-2a3f50366d52",
+      "content_id": "ff95316d-9280-4f3f-aa24-39dc3de5c48d",
+      "claim_id": "C65",
+      "claim": "Occurrences of shape dimorphism in the tibia was demonstrated in ostriches (e.g. anteroposterior width of the distal epiphysis; only in Elzanowski and Louchart, 2022 but not in Charuta et al., 2007).",
+      "claim_type": "EXPLICIT",
+      "source": "and in ostriches (e.g. anteroposterior width of the distal epiphysis; only in Elzanowski and Louchart, 2022 but not in Charuta et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to studies on ostriches.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:08:44.666058Z"
+    },
+    {
+      "id": "695826e9-0ee2-457b-b4c5-11d27c84e2af",
+      "content_id": "ff95316d-9280-4f3f-aa24-39dc3de5c48d",
+      "claim_id": "C66",
+      "claim": "Sexual dimorphism could be restricted to the femur in the Angeac-Charente ornithomimosaurs and modern archosaurs.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, our observation that sexual dimorphism could be restricted to the femur in the Angeac-Charente ornithomimosaurs and modern archosaurs",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the results and comparison with extant taxa.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:08:44.666058Z"
+    },
+    {
+      "id": "c81c6bb7-cb62-49bd-9a67-4637c1bc8ab0",
+      "content_id": "ff95316d-9280-4f3f-aa24-39dc3de5c48d",
+      "claim_id": "C67",
+      "claim": "The observation that sexual dimorphism could be restricted to the femur raises the question of the potential co-variation between the femur and the pelvis.",
+      "claim_type": "EXPLICIT",
+      "source": "raises the question of the potential co-variation between the femur and the pelvis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the results.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:08:44.666058Z"
+    },
+    {
+      "id": "65c2adde-b25e-4645-a63d-efc608ad03de",
+      "content_id": "ff95316d-9280-4f3f-aa24-39dc3de5c48d",
+      "claim_id": "C68",
+      "claim": "Sexual dimorphism was observed in the ilium of several birds such as ostriches, steamer-ducks, savannah sparrows, and California gulls.",
+      "claim_type": "EXPLICIT",
+      "source": "Sexual dimorphism was observed in the ilium of several birds mentioned previously, such as ostriches, steamer-ducks, savannah sparrows, and California gulls (in the antitrochanter width, acetabular width, and synsacrum width and length; Livezey and Humphrey, 1984; Schnell et al., 1985; Rising, 1987; Charuta et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to studies on various bird species.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:08:44.666058Z"
+    },
+    {
+      "id": "c396108e-3b41-4aac-b5f0-5da7550702b1",
+      "content_id": "ff95316d-9280-4f3f-aa24-39dc3de5c48d",
+      "claim_id": "C69",
+      "claim": "All measurements of the ilium were higher in male birds than in female birds except for the width of the ilium, which was higher in female ostriches when measured by Charuta et al. (2007) but not significantly different between sexes in Elzanowski and Louchart (2022).",
+      "claim_type": "EXPLICIT",
+      "source": "All measurements were higher in male birds than in female birds except for the width of the ilium, which was higher in female ostriches when measured by Charuta et al., 2007 but not significantly different between sexes in Elzanowski and Louchart, 2022.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to studies on ostriches.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:08:44.666058Z"
+    },
+    {
+      "id": "8f384fbf-41b1-45ec-a277-855811e24713",
+      "content_id": "ff95316d-9280-4f3f-aa24-39dc3de5c48d",
+      "claim_id": "C70",
+      "claim": "Female alligators had a deeper pelvic canal (i.e. distance between the ventral side of the first sacral vertebra and the ventral margin of the ischial symphysis).",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, female alligators had a deeper pelvic canal (i.e. distance between the ventral side of the first sacral vertebra and the ventral margin of the ischial symphysis; Prieto-Marquez et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a study on alligators.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:08:44.666058Z"
+    },
+    {
+      "id": "57ef7757-2648-464c-bcc8-d0757267b707",
+      "content_id": "ff95316d-9280-4f3f-aa24-39dc3de5c48d",
+      "claim_id": "C71",
+      "claim": "The dimorphism was located preferably on the femur rather than on the tibia in the Angeac-Charente ornithomimosaur, which suggests that the pelvic area might as well be dimorphic.",
+      "claim_type": "EXPLICIT",
+      "source": "The dimorphism was located preferably on the femur rather than on the tibia in the Angeac-Charente ornithomimosaur, which suggests that the pelvic area might as well be dimorphic",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the results and comparison with extant taxa.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:08:44.666058Z"
+    },
+    {
+      "id": "948a0573-0e50-435e-ab3b-ea931a576313",
+      "content_id": "ff95316d-9280-4f3f-aa24-39dc3de5c48d",
+      "claim_id": "C72",
+      "claim": "Dimorphism in the pelvic area seems to be generally the case in some modern avian dinosaurs.",
+      "claim_type": "EXPLICIT",
+      "source": "and that seems to be generally the case in some modern avian dinosaurs too (Livezey and Humphrey, 1984; Schnell et al., 1985; Rising, 1987; Farlow et al., 2005; Charuta et al., 2007; Prieto-Marquez et al., 2007; Bonnan et al., 2008; Duggan et al., 2015; Elzanowski and Louchart, 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to studies on extant taxa.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:08:44.666058Z"
+    },
+    {
+      "id": "64f2029f-8bb7-4167-8282-e7d88741b071",
+      "content_id": "ff95316d-9280-4f3f-aa24-39dc3de5c48d",
+      "claim_id": "C73",
+      "claim": "The results did not permit to confidently sex each morphotype.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results did not permit to confidently sex each morphotype.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the limitations of the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:08:44.666058Z"
+    },
+    {
+      "id": "0107b0c3-2e4c-4610-9f49-5d416a529fa3",
+      "content_id": "ff95316d-9280-4f3f-aa24-39dc3de5c48d",
+      "claim_id": "C74",
+      "claim": "Most modern occurrences of femoral sexual dimorphism indicate a wider distal epiphysis among males than females.",
+      "claim_type": "EXPLICIT",
+      "source": "Most modern occurrences of femoral sexual dimorphism indicate a wider distal epiphysis among males than females",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on review of the literature on extant taxa.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:08:44.666058Z"
+    },
+    {
+      "id": "aae53794-b980-48ba-9a91-b8a0badab477",
+      "content_id": "ff95316d-9280-4f3f-aa24-39dc3de5c48d",
+      "claim_id": "C75",
+      "claim": "Elzanowski and Louchart (2022) showed that the opposite was also true for modern and subfossils ostriches (i.e., wider distal epiphysis in females).",
+      "claim_type": "EXPLICIT",
+      "source": "but Elzanowski and Louchart, 2022 showed that the opposite was also true for modern and subfossils ostriches.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a specific study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:08:44.666058Z"
+    },
+    {
+      "id": "389ca8fd-2781-4ab0-9b36-b2f74ae4e175",
+      "content_id": "ff95316d-9280-4f3f-aa24-39dc3de5c48d",
+      "claim_id": "C76",
+      "claim": "Femora with the narrowest distal epiphyses (females in most of modern occurrences) had a laterally deviated shaft in the Angeac-Charente ornithomimosaurs.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, our results indicated that femora with the narrowest distal epiphyses (females in most of modern occurrences) had a laterally deviated shaft.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the morphometric results presented.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:08:44.666058Z"
+    },
+    {
+      "id": "37739bb0-3c0b-4920-8f4a-c162ca12caba",
+      "content_id": "ff95316d-9280-4f3f-aa24-39dc3de5c48d",
+      "claim_id": "C77",
+      "claim": "Duggan et al. (2015) demonstrated that only juvenile male Pekin ducks had a laterally deviated shaft, which is not congruent with the results from the Angeac-Charente ornithomimosaurs.",
+      "claim_type": "EXPLICIT",
+      "source": "However, Duggan et al., 2015 demonstrated that only juvenile male Pekin ducks had a laterally deviated shaft, which is not congruent with our results that the widest epiphyses were associated with a straighter morphotype.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison between the study results and a cited study.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:08:44.666058Z"
+    },
+    {
+      "id": "4007d351-07ae-4ff3-8f76-0f1096b72a71",
+      "content_id": "ff95316d-9280-4f3f-aa24-39dc3de5c48d",
+      "claim_id": "C78",
+      "claim": "Paleohistological analyses could enable to verify sex assignment by assessing the presence of medullary bone.",
+      "claim_type": "EXPLICIT",
+      "source": "Paleohistological analyses could enable to verify sex assignment by assessing the presence of medullary bone, as some gravid females may have died during their egg-laying cycle at the time of the mass-mortality event recorded at Angeac-Charente.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about future research directions.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:08:44.666058Z"
+    },
+    {
+      "id": "6264e25d-5b2b-4c0b-92d4-03ab75ecc3dd",
+      "content_id": "ff95316d-9280-4f3f-aa24-39dc3de5c48d",
+      "claim_id": "C79",
+      "claim": "Medullary bone was recently demonstrated as probably the most reliable indicator of sex with an extensive distribution across the skeleton.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, medullary bone was recently demonstrated as probably the most reliable indicator of sex with an extensive distribution across the skeleton (Canoville et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a specific study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:08:44.666058Z"
+    },
+    {
+      "id": "4b073ab3-98c1-4ff8-8935-ee76cedf4aaa",
+      "content_id": "ff95316d-9280-4f3f-aa24-39dc3de5c48d",
+      "claim_id": "C80",
+      "claim": "A paleohistological investigation could confirm the ontogenetic homogeneity among the femoral sample.",
+      "claim_type": "EXPLICIT",
+      "source": "A paleohistological investigation could also confirm the ontogenetic homogeneity among our femoral sample, as recommended by Griffin and Nesbitt, 2016, Hone et al., 2017 and Mallon, 2017.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about future research directions, supported by citations to methodological recommendations.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:08:44.666058Z"
+    },
+    {
+      "id": "c2ff903e-a0c5-4e02-94da-74ac46cff298",
+      "content_id": "ff95316d-9280-4f3f-aa24-39dc3de5c48d",
+      "claim_id": "C81",
+      "claim": "The femoral morphology among a large herd of coeval ornithomimosaurs is dimorphic.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results demonstrate that the femoral morphology among a large herd of coeval ornithomimosaurs is dimorphic.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary conclusion of the study, supported by the data and analyses presented.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:08:44.666058Z"
+    },
+    {
+      "id": "91ccc083-26df-42f5-8880-77754961d99c",
+      "content_id": "ff95316d-9280-4f3f-aa24-39dc3de5c48d",
+      "claim_id": "C82",
+      "claim": "Bimodal distributions were identified along size-independent features that were already reported to vary between sexes in modern archosaurs and other tetrapods.",
+      "claim_type": "EXPLICIT",
+      "source": "We identify bimodal distributions along size-independent features that were already reported to vary between sexes in modern archosaurs and other tetrapods (e.g. the width of the distal epiphyses and the lateral deviation of the shaft).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary conclusion of the study, supported by the data and comparison with extant taxa.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:08:44.666058Z"
+    },
+    {
+      "id": "4c782b82-8848-4aff-8d14-179e7d69ec3f",
+      "content_id": "ff95316d-9280-4f3f-aa24-39dc3de5c48d",
+      "claim_id": "C83",
+      "claim": "The features of distal epiphysis width and shaft deviation are inferred to indicate sexual dimorphism in the Angeac-Charente ornithomimosaurs according to the EPB approach.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, we infer these features to indicate sexual dimorphism in the Angeac-Charente ornithomimosaurs according to the EPB approach.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary conclusion of the study, based on inference using the EPB method.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:08:44.666058Z"
+    },
+    {
+      "id": "854ee9f2-1019-44dc-988e-2c5f7f44c999",
+      "content_id": "ff95316d-9280-4f3f-aa24-39dc3de5c48d",
+      "claim_id": "C84",
+      "claim": "The findings inform about the intraspecific variation in non-avian theropods.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings inform about the intraspecific variation in non-avian theropods",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the broader implications of the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:08:44.666058Z"
+    },
+    {
+      "id": "feaf9720-908a-419b-93bc-98cef04cfeae",
+      "content_id": "ff95316d-9280-4f3f-aa24-39dc3de5c48d",
+      "claim_id": "C85",
+      "claim": "The findings emphasize the need for description of size-independent dimorphism in modern and closely related taxa with a priori knowledge of the sex.",
+      "claim_type": "EXPLICIT",
+      "source": "and emphasize the need for description of size-independent dimorphism in modern and closely related taxa with a priori knowledge of the sex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation based on the study findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:08:44.666058Z"
+    },
+    {
+      "id": "3e8b4ac5-b0b3-4099-a790-3c18e7b7037a",
+      "content_id": "ff95316d-9280-4f3f-aa24-39dc3de5c48d",
+      "claim_id": "C86",
+      "claim": "The sex-ratio of the Angeac-Charente ornithomimosaur is close to 1:1 and thus, likely Fisherian.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, we show that the sex-ratio of the Angeac-Charente ornithomimosaur is close to 1:1 and thus, likely Fisherian (Fisher, 1930).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the cluster ratios observed in the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:08:44.666058Z"
+    },
+    {
+      "id": "9778de50-a82e-4b0d-8ce0-f6dc54ecf92f",
+      "content_id": "ff95316d-9280-4f3f-aa24-39dc3de5c48d",
+      "claim_id": "C87",
+      "claim": "In extant archosaurs, Fisherian populations are only observed among clutches and hatchlings.",
+      "claim_type": "EXPLICIT",
+      "source": "It was demonstrated that in extant archosaurs, Fisherian populations are only observed among clutches and hatchlings (Mayr, 1939; Clutton-brock, 1986; Liker et al., 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to studies on extant archosaurs.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:08:44.666058Z"
+    },
+    {
+      "id": "1dd5bb70-eb9d-4533-a673-03d5a4f4a5fb",
+      "content_id": "ff95316d-9280-4f3f-aa24-39dc3de5c48d",
+      "claim_id": "C88",
+      "claim": "Sex ratios in extant archosaurs become generally biased toward females in sub-adult and adult populations.",
+      "claim_type": "EXPLICIT",
+      "source": "and become generally biased toward females in sub-adult and adult populations, as demonstrated on crocodilians (Woodward and Murray, 1993; Gonz\u00e1lez et al., 2019) and ratites (Magige, 2012; Prokopenko et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to studies on crocodilians and ratites.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:08:44.666058Z"
+    },
+    {
+      "id": "4553bb47-bd7b-4665-b7bb-2fc7f8d4b33a",
+      "content_id": "ff95316d-9280-4f3f-aa24-39dc3de5c48d",
+      "claim_id": "C89",
+      "claim": "Paleohistological investigations could help characterize the variation of sex ratio along ontogeny in an extinct dinosaur population.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, paleohistological investigations could help characterize the variation of sex ratio along ontogeny in an extinct dinosaur population",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about future research directions.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:08:44.666058Z"
+    },
+    {
+      "id": "f0a6f994-5ad1-4707-8878-ab5c989d74ca",
+      "content_id": "ff95316d-9280-4f3f-aa24-39dc3de5c48d",
+      "claim_id": "C90",
+      "claim": "Paleohistological investigations could inform if the sex ratio in the Angeac-Charente ornithomimosaurs was truly Fisherian, unlike their extant relatives, or if it also experienced skewness along aging.",
+      "claim_type": "EXPLICIT",
+      "source": "and inform if it was truly Fisherian, unlike their extant relatives, or if it also experienced skewness along aging.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about future research directions.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:08:44.666058Z"
+    },
+    {
+      "id": "de014520-089d-4d04-bf9a-f20f3d0f8a4e",
+      "content_id": "ff95316d-9280-4f3f-aa24-39dc3de5c48d",
+      "claim_id": "C91",
+      "claim": "Understanding how sex impacted the morphology of an extinct species could shed light on complex evolutionary mechanism such as trade-off between sexually dimorphic features, ecological adaptations, and life-history traits.",
+      "claim_type": "EXPLICIT",
+      "source": "More broadly, understanding how sex impacted the morphology of an extinct species could shed light on complex evolutionary mechanism such as trade-off between sexually dimorphic features, ecological adaptations, and life-history traits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the broader implications of the study.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:08:44.666058Z"
+    },
+    {
+      "id": "5c023000-24ed-45dc-ac1a-1700aa61cdd6",
+      "content_id": "ff95316d-9280-4f3f-aa24-39dc3de5c48d",
+      "claim_id": "C92",
+      "claim": "158 specimens were removed because they were too fragmented and altered by too much oxidized pyrite and trampling.",
+      "claim_type": "EXPLICIT",
+      "source": "We removed 158 specimens that were too fragmented and altered by too much oxidized pyrite and trampling (femora: 6 complete, 37 proximal, and 19 distal epiphyses; tibiae: 4 complete, 36 proximal, and 56 distal epiphyses).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the sample selection process.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:08:44.666058Z"
+    },
+    {
+      "id": "9a9a8807-1c41-40cb-b464-f1382ab7fa60",
+      "content_id": "ff95316d-9280-4f3f-aa24-39dc3de5c48d",
+      "claim_id": "C93",
+      "claim": "Only fragmented femora that preserved the most proximal point of the fourth trochanter for proximal epiphyses and the most proximal point of the anteromedial flange for distal epiphyses were selected.",
+      "claim_type": "EXPLICIT",
+      "source": "We selected only fragmented femora that preserved: (1) the most proximal point of the fourth trochanter for proximal epiphyses; (2) the most proximal point of the anteromedial flange for distal epiphyses (Figure 1\u2014figure supplement 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the sample selection criteria.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:08:44.666058Z"
+    },
+    {
+      "id": "ef8e0b65-6e2f-4089-96e0-50455c11cf94",
+      "content_id": "ff95316d-9280-4f3f-aa24-39dc3de5c48d",
+      "claim_id": "C94",
+      "claim": "In total, 152 specimens were digitized (femora: 13 complete, 29 proximal, and 21 distal epiphyses; tibiae: 21 complete, 30 proximal, and 38 distal epiphyses).",
+      "claim_type": "EXPLICIT",
+      "source": "In total, we digitized 152 specimens (femora: 13 complete, 29 proximal, and 21 distal epiphyses; tibiae: 21 complete, 30 proximal, and 38 distal epiphyses) using the Artec EVA with Artec Studio Professional v. 12.1.1.12 (Artec 3D, Luxembourg, Luxembourg) and the NextEngine with Scan Studio Pro v. 2.0.2 (Next Engine Inc, Santa Monica, United States) for a few specimens (Supplementary file 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data acquisition process.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:08:44.666058Z"
+    },
+    {
+      "id": "9154840a-329d-420b-8507-9ab8dda8d5c5",
+      "content_id": "ff95316d-9280-4f3f-aa24-39dc3de5c48d",
+      "claim_id": "C95",
+      "claim": "After re-examination of digitized specimens, 3 complete femora, 14 proximal and 8 distal epiphyses, and 4 complete tibiae that were distorted were removed.",
+      "claim_type": "EXPLICIT",
+      "source": "After re-examination of digitized specimens, we removed 3 complete femora, 14 proximal and 8 distal epiphyses, and 4 complete tibiae that were distorted (Figure 1\u2014figure supplement 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the sample refinement process.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:08:44.666058Z"
+    },
+    {
+      "id": "d6042177-96e7-4013-bea9-1ed7e5b2f892",
+      "content_id": "ff95316d-9280-4f3f-aa24-39dc3de5c48d",
+      "claim_id": "C96",
+      "claim": "The final sample integrated 10 complete femora, 13 distal and 15 proximal femoral epiphyses, and 17 complete tibiae.",
+      "claim_type": "EXPLICIT",
+      "source": "We thus integrated 10 complete femora, 13 distal and 15 proximal femoral epiphyses, and 17 complete tibiae.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the final sample size.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:08:44.666058Z"
+    },
+    {
+      "id": "1981dc99-92bc-49a3-a6c1-9c878ab44cbe",
+      "content_id": "ff95316d-9280-4f3f-aa24-39dc3de5c48d",
+      "claim_id": "C97",
+      "claim": "3D GM is a well-established method for quantifying biological shape variations and has already enabled to identify sexual dimorphism in past studies.",
+      "claim_type": "EXPLICIT",
+      "source": "3D GM is a well-established method for quantifying biological shape variations and has already enabled to identify sexual dimorphism in past studies (Kaliontzopoulou et al., 2007; Cavaignac et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to methodological studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:08:44.666058Z"
+    },
+    {
+      "id": "3a545997-19a6-4f82-aa1d-4fef00010a6b",
+      "content_id": "ff95316d-9280-4f3f-aa24-39dc3de5c48d",
+      "claim_id": "C98",
+      "claim": "The study followed a high-density morphometrics approach using a combination of single anatomical landmarks and sliding semilandmarks along curves and surfaces.",
+      "claim_type": "EXPLICIT",
+      "source": "We followed a high-density morphometrics approach using a combination of single anatomical landmarks and sliding semilandmarks along curves and surfaces (Bookstein, 1997; Gunz et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodology used in the study.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:08:44.666058Z"
+    },
+    {
+      "id": "a4e392a5-9cf3-4a58-8ba1-5a8195d882d1",
+      "content_id": "ff95316d-9280-4f3f-aa24-39dc3de5c48d",
+      "claim_id": "C99",
+      "claim": "The use of sliding semilandmarks on the surface was justified on the shaft because most anatomical landmarks are usually concentrated on both ends of limb bones.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, most anatomical landmarks are usually concentrated on both ends of limb bones, hence why the use of sliding semilandmarks on the surface was justified on the shaft (Gunz and Mitteroecker, 2013; Botton-Divet et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a justification for the methodological approach, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:08:44.666058Z"
+    },
+    {
+      "id": "3a299a8d-004b-40bc-9b6c-8c6d1472d505",
+      "content_id": "ff95316d-9280-4f3f-aa24-39dc3de5c48d",
+      "claim_id": "C100",
+      "claim": "619 landmarks were digitized on complete femora (25 anatomical landmarks, 99 sliding semilandmarks on curves, and 495 on surfaces).",
+      "claim_type": "EXPLICIT",
+      "source": "We digitized 619 landmarks on complete femora (25 anatomical landmarks, 99 sliding semilandmarks on curves, and 495 on surfaces)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data collection process.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:08:44.666058Z"
+    },
+    {
+      "id": "8c6b7f99-e6e8-4f3a-a2f4-092bfd442fb1",
+      "content_id": "ff95316d-9280-4f3f-aa24-39dc3de5c48d",
+      "claim_id": "C101",
+      "claim": "479 landmarks were digitized on proximal epiphyses (11 anatomical landmarks, 26 sliding semilandmarks on curves, and 442 on surfaces).",
+      "claim_type": "EXPLICIT",
+      "source": "479 on proximal (11 anatomical landmarks, 26 sliding semilandmarks on curves, and 442 on surfaces)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data collection process.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:08:44.666058Z"
+    },
+    {
+      "id": "a601f633-d8d0-4622-8847-90ec409c8618",
+      "content_id": "ff95316d-9280-4f3f-aa24-39dc3de5c48d",
+      "claim_id": "C102",
+      "claim": "479 landmarks were digitized on distal epiphyses (10 anatomical landmarks, 45 sliding semilandmarks on curves, and 424 on surfaces).",
+      "claim_type": "EXPLICIT",
+      "source": "and distal epiphyses (10 anatomical landmarks, 45 sliding semilandmarks on curves, and 424 on surfaces)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data collection process.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:08:44.666058Z"
+    },
+    {
+      "id": "d5070ee4-208f-4c66-a3ef-bfd820c28cab",
+      "content_id": "ff95316d-9280-4f3f-aa24-39dc3de5c48d",
+      "claim_id": "C103",
+      "claim": "725 landmarks were digitized on complete tibiae (23 anatomical landmarks, 219 sliding semilandmarks on curves, and 483 on surfaces).",
+      "claim_type": "EXPLICIT",
+      "source": "and 725 on complete tibiae (23 anatomical landmarks, 219 sliding semilandmarks on curves, and 483 on surfaces; see details in Figure 1\u2014figure supplement 4; Supplementary files 4 and 5)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the data collection process.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:08:44.666058Z"
+    },
+    {
+      "id": "18439518-08f3-49e0-ad30-dd42e4b8191a",
+      "content_id": "ff95316d-9280-4f3f-aa24-39dc3de5c48d",
+      "claim_id": "C104",
+      "claim": "Anatomical landmarks and sliding semilandmarks along curves were digitized on each specimen.",
+      "claim_type": "EXPLICIT",
+      "source": "We digitized anatomical landmarks and sliding semilandmarks along curves on each specimen",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data collection process.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:08:44.666058Z"
+    },
+    {
+      "id": "6b0ce518-96c2-4609-aed8-aef9267674b0",
+      "content_id": "ff95316d-9280-4f3f-aa24-39dc3de5c48d",
+      "claim_id": "C105",
+      "claim": "Sliding semilandmarks along surfaces were digitized on one specimen (ANG 10 90), referred to as 'the template'.",
+      "claim_type": "EXPLICIT",
+      "source": "and sliding semilandmarks along surfaces on one specimen (ANG 10 90), referred to as 'the template' hereafter (Cornette et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data collection process.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:08:44.666058Z"
+    },
+    {
+      "id": "aaf73ebf-ab47-4760-9487-d4b28df17d89",
+      "content_id": "ff95316d-9280-4f3f-aa24-39dc3de5c48d",
+      "claim_id": "C106",
+      "claim": "The sliding semilandmarks along surfaces of the template were automatically projected onto every other specimen following the spline relaxation of semilandmarks along curves.",
+      "claim_type": "EXPLICIT",
+      "source": "We then automatically projected the sliding semilandmarks along surfaces of the template onto every other specimen following the spline relaxation of semilandmarks along curves using the function 'placePatch' of the Morpho package v. 2.8 (Schlager, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data processing methodology.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:08:44.666058Z"
+    },
+    {
+      "id": "2b5e1361-97a4-4b6e-b911-b79b4b687786",
+      "content_id": "ff95316d-9280-4f3f-aa24-39dc3de5c48d",
+      "claim_id": "C107",
+      "claim": "5 iterations of spline relaxation were performed between landmark configurations of the template and the ones from every other specimen.",
+      "claim_type": "EXPLICIT",
+      "source": "Then, we performed 5 iterations of another spline relaxation between landmark configurations of the template and the ones from every other specimen using the function 'relaxLM' of Morpho.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data processing methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:08:44.666058Z"
+    },
+    {
+      "id": "09fec57b-cb13-4598-8922-682142468449",
+      "content_id": "ff95316d-9280-4f3f-aa24-39dc3de5c48d",
+      "claim_id": "C108",
+      "claim": "A partial Procrustes fitting was performed to compute a Procrustes consensus of every configuration.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we performed a partial Procrustes fitting in order to compute a Procrustes consensus of every configuration",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data processing methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:08:44.666058Z"
+    },
+    {
+      "id": "d7eaafc0-b9e6-4ac2-bf6f-dc3c2f3cb44e",
+      "content_id": "ff95316d-9280-4f3f-aa24-39dc3de5c48d",
+      "claim_id": "C109",
+      "claim": "The Procrustes consensus was used as a target for the 2 last iterations of spline relaxation.",
+      "claim_type": "EXPLICIT",
+      "source": "and used it as a target for the 2 last iterations of spline relaxation using the function 'slideLM' of Morpho.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data processing methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:08:44.666058Z"
+    },
+    {
+      "id": "248bd978-4b90-481a-a7a8-d3d1889e72f1",
+      "content_id": "ff95316d-9280-4f3f-aa24-39dc3de5c48d",
+      "claim_id": "C110",
+      "claim": "The 3 steps of spline relaxations ensured that every semilandmark position was geometrically homogeneous in all specimens.",
+      "claim_type": "EXPLICIT",
+      "source": "These 3 steps of spline relaxations (Source code 2) ensured that every semilandmark position was geometrically homogeneous in all specimens (Gunz et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a justification for the methodological approach, supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:08:44.666058Z"
+    },
+    {
+      "id": "a91dc46a-381c-4c8f-bb8e-3867380068b8",
+      "content_id": "ff95316d-9280-4f3f-aa24-39dc3de5c48d",
+      "claim_id": "C111",
+      "claim": "A generalized Procrustes analysis (GPA) was performed to align each femur in the Cartesian coordinate system.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we performed a generalized Procrustes analysis (GPA) using the function 'gpagen' of the R package geomorph v. 3.3.1 (Adams et al., 2013) in order to align each femur in the Cartesian coordinate system by superimposing them based on their landmark configuration and to rule out the effect of size, location, and orientation of the different landmark configurations (Gower, 1975; Rohlf and Slice, 1990; Zelditch et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data processing methodology, supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:08:44.666058Z"
+    },
+    {
+      "id": "10abc5a4-1697-4848-824d-54467c7b39e5",
+      "content_id": "ff95316d-9280-4f3f-aa24-39dc3de5c48d",
+      "claim_id": "C112",
+      "claim": "A PCA was performed to reduce dimensionalities of the variation and isolate different components of shape variation.",
+      "claim_type": "EXPLICIT",
+      "source": "We performed a PCA in order to reduce dimensionalities of the variation and isolate different components of shape variation (Gunz and Mitteroecker, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the statistical analysis methodology, supported by citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:08:44.666058Z"
+    },
+    {
+      "id": "c2f10a0e-5848-4f97-ac89-77658e66c1ab",
+      "content_id": "ff95316d-9280-4f3f-aa24-39dc3de5c48d",
+      "claim_id": "C113",
+      "claim": "The quantification of repeatability was performed by digitizing landmarks iteratively (n=10) on three morphologically close specimens for complete femora and tibiae.",
+      "claim_type": "EXPLICIT",
+      "source": "The quantification of repeatability was performed by digitizing landmarks iteratively (n=10) on three morphologically close specimens for complete femora and tibiae, which resulted in 30 configurations for each bone.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the repeatability assessment methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:08:44.666058Z"
+    },
+    {
+      "id": "bf807448-4b09-4f8b-a1d7-cf0b8569e418",
+      "content_id": "ff95316d-9280-4f3f-aa24-39dc3de5c48d",
+      "claim_id": "C114",
+      "claim": "A PCA for the two bones (30 configurations each) showed that all 10 repetitions for each specimen were grouped together and isolated from those of the other specimens along the first two PC axes.",
+      "claim_type": "EXPLICIT",
+      "source": "We then computed a PCA for the two bones (30 configurations each), which showed that all 10 repetitions for each specimen were grouped together and isolated from those of the other specimens along the first two PC axes (Figure 1\u2014figure supplements 5 and 6 ).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the repeatability assessment results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:08:44.666058Z"
+    },
+    {
+      "id": "7d5b86ca-cb8a-4e53-8366-14e0ffa6a899",
+      "content_id": "ff95316d-9280-4f3f-aa24-39dc3de5c48d",
+      "claim_id": "C115",
+      "claim": "The repeatability assessment ensured that biological variation was greater than the operator effect.",
+      "claim_type": "EXPLICIT",
+      "source": "This ensured that biological variation was greater than the operator effect, which refers to the ability to reproduce accurately the same landmark configuration multiple times on the same specimen.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the repeatability assessment results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:08:44.666058Z"
+    },
+    {
+      "id": "244cc991-064f-41c0-b100-6ad9bed60885",
+      "content_id": "ff95316d-9280-4f3f-aa24-39dc3de5c48d",
+      "claim_id": "C116",
+      "claim": "Mixture modeling analyses were performed without a priori knowledge about the number of groups to estimate how many morphological clusters would stand out in the dataset.",
+      "claim_type": "EXPLICIT",
+      "source": "As recommended by Mallon, 2017, we performed mixture modeling analyses without a priori knowledge about the number of groups in order to estimate how many morphological clusters would stand out in our dataset, if any, along each PC axis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the statistical analysis methodology, supported by citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:08:44.666058Z"
+    },
+    {
+      "id": "0d30966d-e17a-4e2f-941c-ca2accab0b53",
+      "content_id": "ff95316d-9280-4f3f-aa24-39dc3de5c48d",
+      "claim_id": "C117",
+      "claim": "Gaussian functions are well suited to describe a biological population, especially when applied to a morphometric dataset.",
+      "claim_type": "EXPLICIT",
+      "source": "Gaussians functions are well suited to describe a biological population, especially when applied to a morphometric dataset (Baylac et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a methodological study.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:08:44.666058Z"
+    },
+    {
+      "id": "6fda4ba7-364e-45c2-8348-82f3839d6c87",
+      "content_id": "ff95316d-9280-4f3f-aa24-39dc3de5c48d",
+      "claim_id": "C118",
+      "claim": "The R package Mclust calculates the most probable number of clusters in a dataset based on the detection of Gaussian distributions by maximum likelihood estimations.",
+      "claim_type": "EXPLICIT",
+      "source": "We used the R package Mclust v. 5.4.7, which calculates the most probable number of clusters in a dataset based on the detection of Gaussian distributions by maximum likelihood estimations (Scrucca et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the statistical analysis tool used, supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:08:44.666058Z"
+    },
+    {
+      "id": "0a6fc660-516e-4024-bcf9-75293d0879aa",
+      "content_id": "ff95316d-9280-4f3f-aa24-39dc3de5c48d",
+      "claim_id": "C119",
+      "claim": "Bayesian Information Criteria (BIC) were used to choose which model fitted best with the dataset while simultaneously estimating the number of Gaussian distributions.",
+      "claim_type": "EXPLICIT",
+      "source": "Bayesian Information Criteria (BIC; e.g. an approximation of Bayes factors for comparing likelihood) were used to choose which model, among the several ones available, fitted best with our dataset (i.e. the model with the highest BIC), while simultaneously estimating the number of Gaussian distributions (Fraley and Raftery, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the statistical analysis methodology, supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:08:44.666058Z"
+    },
+    {
+      "id": "96f4c465-9b32-42b9-ab3a-d38bf41c537d",
+      "content_id": "ff95316d-9280-4f3f-aa24-39dc3de5c48d",
+      "claim_id": "C120",
+      "claim": "3D visualizations were computed to highlight which feature varied the most along each axis, and between clusters when dimorphism was identified.",
+      "claim_type": "EXPLICIT",
+      "source": "We computed 3D visualizations that highlighted which feature varied the most along each axis, and between clusters when dimorphism was identified.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the visualization methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:08:44.666058Z"
+    },
+    {
+      "id": "4f68b4af-9b0c-41ba-bc09-2a94a39b3393",
+      "content_id": "ff95316d-9280-4f3f-aa24-39dc3de5c48d",
+      "claim_id": "C121",
+      "claim": "A 3D consensual mesh of all specimens of the sample was computed by using the function 'tps3d' from the R package Morpho.",
+      "claim_type": "EXPLICIT",
+      "source": "To do so, we first computed a 3D consensual mesh of all specimens of the sample by using the function 'tps3d' from the R package Morpho v. 2.8 (Schlager, 2017) which performed a spline relaxation that minimized the bending energy of a thin plate spline (TPS) between the template landmark configuration and a mean landmark configuration (obtained during the GPA).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the visualization methodology, supported by citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:08:44.666058Z"
+    },
+    {
+      "id": "27c3e55f-b78f-4e5e-acdd-58ecdd71779c",
+      "content_id": "ff95316d-9280-4f3f-aa24-39dc3de5c48d",
+      "claim_id": "C122",
+      "claim": "The function 'tps3d' used the resulting TPS deformation to warp the 3D mesh of the template onto the mean shape to compute a 3D consensual mesh.",
+      "claim_type": "EXPLICIT",
+      "source": "Then, the function used the resulting TPS deformation to warp the 3D mesh of the template onto the mean shape in order to compute a 3D consensual mesh (Bardua et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the visualization methodology, supported by citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:08:44.666058Z"
+    },
+    {
+      "id": "73fd7c2a-9ca5-4d97-887e-da008a0b7cdf",
+      "content_id": "ff95316d-9280-4f3f-aa24-39dc3de5c48d",
+      "claim_id": "C123",
+      "claim": "The mean coordinates of every specimen in each cluster along the PC axis identified as dimorphic by the mixture modeling analysis were calculated.",
+      "claim_type": "EXPLICIT",
+      "source": "Next, we calculated the mean coordinates of every specimen in each cluster along the PC axis identified as dimorphic by the mixture modeling analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the visualization methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:08:44.666058Z"
+    },
+    {
+      "id": "79b81ee4-5097-41dc-868a-e42713df3aab",
+      "content_id": "ff95316d-9280-4f3f-aa24-39dc3de5c48d",
+      "claim_id": "C124",
+      "claim": "The mean shape and its associated 3D mesh were warped onto the mean landmark configurations of each cluster to visualize the 3D shape variation associated with the dimorphic PC axis.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we warped the mean shape, and its associated 3D mesh, onto the mean landmark configurations of each cluster by using the 'shape.predictor' function of geomorph v. 3.3.1 (Adams et al., 2013) in order to visualize the 3D shape variation associated with the dimorphic PC axis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the visualization methodology, supported by citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:08:44.666058Z"
+    },
+    {
+      "id": "5c5a7f70-b0d7-456d-8bbf-83dea98ae942",
+      "content_id": "ff95316d-9280-4f3f-aa24-39dc3de5c48d",
+      "claim_id": "C125",
+      "claim": "Allometry within the sample was studied using Pearson's correlation between each PC scores and the log-transformed centroid sizes.",
+      "claim_type": "EXPLICIT",
+      "source": "We studied the allometry within our sample (i.e. the size-related morphological variation [Klingenberg, 2016]), using Pearson's correlation between each PC scores and the log-transformed centroid sizes using the R function 'cor.test.'",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the allometry analysis methodology, supported by citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:08:44.666058Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "be451f4f-f04a-4540-85f0-885650f263d5",
+      "content_id": "ff95316d-9280-4f3f-aa24-39dc3de5c48d",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Prior studies of sexual dimorphism in non-avian dinosaurs have been problematic due to small sample sizes, ontogenetic confounding, and taphonomic biases. Only one of 48 previously described cases of sexual dimorphism in non-avian dinosaurs was considered rigorous (Stegosaurus dermal plates), and even this case lacks robust evidence for sex-specificity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C17 provide a comprehensive review of prior work on dinosaur sexual dimorphism, citing multiple studies (Mallon 2017, Griffin & Nesbitt 2016, Hone et al. 2020) that critically evaluated previous claims. The claims accurately represent the state of the field and establish the need for the current study with appropriate citations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:08:44.666058Z"
+    },
+    {
+      "id": "e19e427a-66b8-41a2-8ed2-207551aaaf7c",
+      "content_id": "ff95316d-9280-4f3f-aa24-39dc3de5c48d",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The Angeac-Charente Lagerst\u00e4tte contains an exceptionally large, coeval herd of at least 61 ornithomimosaur individuals from a mass mortality event, with minimum numbers of 46 femora and 61 tibiae preserved.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C3, C18 are supported by citations to Rozada et al. (2014, 2021) and Allain et al. (2014, 2022), which documented the site characteristics and mass mortality evidence. Claims C21-C22 are directly supported by Table 1 data showing MNI counts. This represents an unusually large sample for paleontological dimorphism studies.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:08:44.666058Z"
+    },
+    {
+      "id": "dfdf9ecf-5c8d-40f8-85b8-1b4ee6fb5528",
+      "content_id": "ff95316d-9280-4f3f-aa24-39dc3de5c48d",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The study employed 3D geometric morphometrics with high-density landmark analysis (619 landmarks on complete femora, 479 on epiphyses, 725 on tibiae) combined with Gaussian mixture modeling to analyze hindlimb variation. The methodology included rigorous quality control, removing 158 poorly preserved specimens and 29 distorted specimens, resulting in a final sample of 10 complete femora, 13 distal and 15 proximal femoral epiphyses, and 17 complete tibiae. Repeatability analysis confirmed biological variation exceeded operator error.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C92-C125 provide detailed methodological documentation with appropriate citations (Gunz et al. 2005, Mallon 2017, Schlager 2017, Adams et al. 2013). The sample selection criteria are explicit, quality control steps are documented, and repeatability was assessed (C113-C115). However, the final sample size (10 complete femora) is substantially reduced from the initial 61 individuals, which may affect statistical power despite being large for paleontology.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:08:44.666058Z"
+    },
+    {
+      "id": "1e77f207-7501-4bfd-8d76-e1c025d9af2f",
+      "content_id": "ff95316d-9280-4f3f-aa24-39dc3de5c48d",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Femora from the Angeac-Charente ornithomimosaurs exhibit bimodal dimorphism in shaft curvature (medial-lateral) and distal epiphysis width. GMM analysis identified two clusters with ~1:1 ratio along PC1 (28.8% variance for complete femora, 27.9% for distal epiphyses). The dimorphism is size-independent (p>0.1 correlation with centroid size). Specimens with straighter shafts have more robust distal epiphyses, and this relationship is dimorphic.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C34 present the core morphometric findings supported by Figure 1 and statistical analyses. The bimodal distribution is demonstrated by GMM (C27), size-independence is statistically tested (C28), and morphological features are visualized (C29-C32). The consistency between complete femora and distal epiphyses analyses (C33) strengthens the finding. Statistical tests are appropriate for the data type.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:08:44.666058Z"
+    },
+    {
+      "id": "5bfad362-b6c0-437e-8210-6d195fb690cc",
+      "content_id": "ff95316d-9280-4f3f-aa24-39dc3de5c48d",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "No dimorphism was detected in proximal femoral epiphyses or complete tibiae. GMM analyses showed no robust bimodal distribution in proximal epiphyses, with inconsistent specimen attribution between analyses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35, C36, C58 report negative results supported by Figure 1 supplements 2 and 3. The lack of consistency in specimen attribution between complete femora and proximal epiphyses (C35) appropriately indicates the absence of robust dimorphism. These negative results are important for characterizing the anatomical distribution of dimorphism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:08:44.666058Z"
+    },
+    {
+      "id": "c8bc239a-485e-464c-805c-5a562c59d6be",
+      "content_id": "ff95316d-9280-4f3f-aa24-39dc3de5c48d",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Sexual dimorphism in femoral shaft curvature and distal epiphysis width has been documented across the extant phylogenetic bracket of dinosaurs, including birds (California gulls, ostriches, ducks) and crocodilians (alligators), as well as in more distant amniotes (carnivorans, primates, humans). The same features observed as dimorphic in the fossil ornithomimosaurs vary between sexes in these extant taxa.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C37-C47, C59-C65, C68-C70, C72 provide extensive comparative data from extant taxa with appropriate citations (Schnell et al. 1985, Farlow et al. 2005, Bonnan et al. 2008, Elzanowski & Louchart 2022, Duggan et al. 2015, etc.). The comparative framework establishes that the observed morphological features are known to be sexually dimorphic in related taxa, supporting the EPB inference.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:08:44.666058Z"
+    },
+    {
+      "id": "788ff769-f126-488d-8ed4-62bf95607ee2",
+      "content_id": "ff95316d-9280-4f3f-aa24-39dc3de5c48d",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The bimodal variation in femoral morphology observed in the Angeac-Charente ornithomimosaurs is attributed to sexual dimorphism based on the extant phylogenetic bracketing (EPB) approach, given that the same features (shaft curvature and distal epiphysis width) vary between sexes in extant archosaurs and other amniotes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C7, C48, C83 make the key inference that the observed dimorphism is sexual. While the EPB approach is methodologically sound and the comparative data are extensive (C6, C37-C47), this remains an inference rather than direct demonstration. The authors acknowledge they cannot confidently sex each morphotype (C73), and there are inconsistencies with some extant taxa (e.g., C77 regarding duck shaft curvature). The inference is reasonable but not definitively proven without independent sex determination (e.g., medullary bone analysis, C78-C80).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:08:44.666058Z"
+    },
+    {
+      "id": "9ae8f192-a101-44fd-ab35-f5be91be400c",
+      "content_id": "ff95316d-9280-4f3f-aa24-39dc3de5c48d",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The observed dimorphism in Angeac-Charente ornithomimosaurs is not due to ontogenetic allometry. No significant correlation was found between PC1 scores and log centroid size (p>0.1), and femoral lengths are homogeneous, indicating no sexual size dimorphism (SSD).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C52 address a critical confounding factor (ontogenetic allometry) that has undermined previous dinosaur dimorphism studies. The statistical test for allometry (C50, C125) is appropriate, and the lack of correlation with size (C28, C50) is explicitly tested. However, the study would be strengthened by histological confirmation of ontogenetic stage (acknowledged in C80).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:08:44.666058Z"
+    },
+    {
+      "id": "2750e2d4-bd32-44ae-ad6f-7dd60ad969db",
+      "content_id": "ff95316d-9280-4f3f-aa24-39dc3de5c48d",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The absence of sexual size dimorphism (SSD) in the Angeac-Charente ornithomimosaurs, despite shape dimorphism, is concordant with observations in ostriches where females have more robust limb bones but smaller body size. This demonstrates that sexual dimorphism is not necessarily reflected by body size or allometry between limb segments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C57 appropriately contextualize the finding of size-independent dimorphism. The comparison with ostriches (C55, Elzanowski & Louchart 2022) provides a relevant extant example of decoupled size and shape dimorphism. This challenges assumptions about SSD being the primary form of sexual dimorphism and is well-supported by citations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:08:44.666058Z"
+    },
+    {
+      "id": "c74b24bd-0d72-4110-b02c-96188625d55b",
+      "content_id": "ff95316d-9280-4f3f-aa24-39dc3de5c48d",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Sexual dimorphism appears restricted to the femur rather than the tibia in the Angeac-Charente ornithomimosaurs, which may suggest dimorphism in the pelvic area and potential co-variation between femur and pelvis morphology.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C66, C67, C71 present speculation about pelvic dimorphism based on the femur-specific pattern. While C68-C72 document pelvic dimorphism in extant taxa, the inference about the fossil specimens is speculative without pelvic data. The authors appropriately frame this as a question (C67) and suggestion (C71) rather than a conclusion.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:08:44.666058Z"
+    },
+    {
+      "id": "89bf686b-ddb2-4ba5-897e-4a478f5a603b",
+      "content_id": "ff95316d-9280-4f3f-aa24-39dc3de5c48d",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The study could not confidently assign sex to each morphotype. While most modern occurrences show wider distal epiphyses in males, ostriches show the opposite pattern. The Angeac-Charente specimens with narrower epiphyses had laterally deviated shafts, but this conflicts with observations in juvenile male ducks.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C73-C77 honestly acknowledge limitations in sex assignment. The conflicting patterns in extant taxa (C74-C75, C77) demonstrate that EPB cannot definitively determine which morphotype is male vs. female. This transparency about limitations is appropriate and scientifically rigorous.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:08:44.666058Z"
+    },
+    {
+      "id": "10c93ba2-bfd8-4752-9317-4293772bba2f",
+      "content_id": "ff95316d-9280-4f3f-aa24-39dc3de5c48d",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Future paleohistological analyses could verify sex assignment through medullary bone detection and confirm ontogenetic homogeneity of the sample, as recommended by previous methodological studies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C78-C80, C89-C90 appropriately identify future work needed to strengthen the conclusions. Medullary bone is cited as the most reliable sex indicator (C79, Canoville et al. 2019), and histological confirmation of ontogenetic stage is recommended by multiple methodological papers (C80). These are reasonable and necessary follow-up studies.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:08:44.666058Z"
+    },
+    {
+      "id": "db8eff4e-409e-4214-a99d-a2fc87f631c5",
+      "content_id": "ff95316d-9280-4f3f-aa24-39dc3de5c48d",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The study demonstrates dimorphic femoral morphology in a large coeval ornithomimosaur herd, identifying bimodal distributions in size-independent features known to vary between sexes in modern archosaurs. The findings inform intraspecific variation in non-avian theropods and emphasize the need for more studies of size-independent dimorphism in extant taxa with known sex.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C81-C85 summarize the main conclusions. The demonstration of dimorphism (C81) is well-supported by the morphometric and statistical analyses (C25-C34). The identification of size-independent features (C82) is supported by allometry tests (C28, C50). The broader implications (C84-C85) are appropriate given the findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:08:44.666058Z"
+    },
+    {
+      "id": "a334ab13-423f-42c1-86cc-713269f2140c",
+      "content_id": "ff95316d-9280-4f3f-aa24-39dc3de5c48d",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The sex ratio of the Angeac-Charente ornithomimosaur is approximately 1:1 (Fisherian), based on the ~1:1 cluster ratio from GMM analysis. In extant archosaurs, Fisherian ratios are typically observed only in clutches and hatchlings, with adult populations showing female bias.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C86 infers a Fisherian sex ratio from the ~1:1 cluster ratio (C27), but this assumes: (1) the dimorphism is sexual (uncertain per C7 evaluation), (2) all individuals are represented equally in the fossil record (taphonomic bias not fully addressed), and (3) the sample represents the living population structure. Claims C87-C88 provide relevant comparative context from extant taxa, but without histological age determination (C89-C90), the ontogenetic stage of the fossil population is unknown, making the Fisherian ratio inference premature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:08:44.666058Z"
+    },
+    {
+      "id": "9a825e3b-3da7-4118-82ad-7c301ac03ca0",
+      "content_id": "ff95316d-9280-4f3f-aa24-39dc3de5c48d",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Understanding sex-related morphological variation in extinct species could illuminate evolutionary mechanisms including trade-offs between sexually dimorphic features, ecological adaptations, and life-history traits.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C91 presents a reasonable statement about the broader significance of sexual dimorphism studies. This is appropriately framed as potential future insight rather than a direct conclusion of the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:08:44.666058Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "a4eccf01-8e12-45da-973a-5a97d97eb9b5",
+      "result_id": "be451f4f-f04a-4540-85f0-885650f263d5"
+    },
+    {
+      "claim_id": "59302ea8-0657-4d1f-ab64-63eef523d50d",
+      "result_id": "be451f4f-f04a-4540-85f0-885650f263d5"
+    },
+    {
+      "claim_id": "6f5defab-0f50-4214-b78f-eaf720c37dc8",
+      "result_id": "be451f4f-f04a-4540-85f0-885650f263d5"
+    },
+    {
+      "claim_id": "5956ee5b-1ab1-4d84-b236-35de12220c19",
+      "result_id": "be451f4f-f04a-4540-85f0-885650f263d5"
+    },
+    {
+      "claim_id": "45c06b89-ccd4-4f86-913c-9a04e73d63cc",
+      "result_id": "be451f4f-f04a-4540-85f0-885650f263d5"
+    },
+    {
+      "claim_id": "57791523-95b5-4a32-bf77-4947d3d1dd2a",
+      "result_id": "be451f4f-f04a-4540-85f0-885650f263d5"
+    },
+    {
+      "claim_id": "75583598-f59b-4235-9a0e-8d4a79c7608f",
+      "result_id": "be451f4f-f04a-4540-85f0-885650f263d5"
+    },
+    {
+      "claim_id": "eef3d426-dfe5-4e5a-86bc-e3e859a65370",
+      "result_id": "be451f4f-f04a-4540-85f0-885650f263d5"
+    },
+    {
+      "claim_id": "cd46333f-6697-4d8e-9b5b-32a2b4b2e536",
+      "result_id": "be451f4f-f04a-4540-85f0-885650f263d5"
+    },
+    {
+      "claim_id": "6b2b5803-61cd-4316-bf66-225153dfd67a",
+      "result_id": "be451f4f-f04a-4540-85f0-885650f263d5"
+    },
+    {
+      "claim_id": "7c8f96fb-1374-433b-97d2-456b1bd7863a",
+      "result_id": "be451f4f-f04a-4540-85f0-885650f263d5"
+    },
+    {
+      "claim_id": "58e505b6-e17f-4da1-a8e0-e6c201b3cace",
+      "result_id": "e19e427a-66b8-41a2-8ed2-207551aaaf7c"
+    },
+    {
+      "claim_id": "89994bdf-3cc7-471a-b857-276f2d743ff3",
+      "result_id": "e19e427a-66b8-41a2-8ed2-207551aaaf7c"
+    },
+    {
+      "claim_id": "9a4306da-2314-45d2-b9a3-7fa9ef93dccc",
+      "result_id": "e19e427a-66b8-41a2-8ed2-207551aaaf7c"
+    },
+    {
+      "claim_id": "33afd051-11c1-45e6-936c-b0517ab63405",
+      "result_id": "e19e427a-66b8-41a2-8ed2-207551aaaf7c"
+    },
+    {
+      "claim_id": "179c329c-877d-4c03-8717-628c3248290f",
+      "result_id": "e19e427a-66b8-41a2-8ed2-207551aaaf7c"
+    },
+    {
+      "claim_id": "745c8ba5-c9af-4e34-b3ed-55b1451df1b1",
+      "result_id": "dfdf9ecf-5c8d-40f8-85b8-1b4ee6fb5528"
+    },
+    {
+      "claim_id": "8a601ff7-fe69-4d77-9c56-1a869b19120d",
+      "result_id": "dfdf9ecf-5c8d-40f8-85b8-1b4ee6fb5528"
+    },
+    {
+      "claim_id": "48443ae4-0222-44ac-abc6-63de33ae5f85",
+      "result_id": "dfdf9ecf-5c8d-40f8-85b8-1b4ee6fb5528"
+    },
+    {
+      "claim_id": "5c023000-24ed-45dc-ac1a-1700aa61cdd6",
+      "result_id": "dfdf9ecf-5c8d-40f8-85b8-1b4ee6fb5528"
+    },
+    {
+      "claim_id": "9a9a8807-1c41-40cb-b464-f1382ab7fa60",
+      "result_id": "dfdf9ecf-5c8d-40f8-85b8-1b4ee6fb5528"
+    },
+    {
+      "claim_id": "ef8e0b65-6e2f-4089-96e0-50455c11cf94",
+      "result_id": "dfdf9ecf-5c8d-40f8-85b8-1b4ee6fb5528"
+    },
+    {
+      "claim_id": "9154840a-329d-420b-8507-9ab8dda8d5c5",
+      "result_id": "dfdf9ecf-5c8d-40f8-85b8-1b4ee6fb5528"
+    },
+    {
+      "claim_id": "d6042177-96e7-4013-bea9-1ed7e5b2f892",
+      "result_id": "dfdf9ecf-5c8d-40f8-85b8-1b4ee6fb5528"
+    },
+    {
+      "claim_id": "1981dc99-92bc-49a3-a6c1-9c878ab44cbe",
+      "result_id": "dfdf9ecf-5c8d-40f8-85b8-1b4ee6fb5528"
+    },
+    {
+      "claim_id": "3a545997-19a6-4f82-aa1d-4fef00010a6b",
+      "result_id": "dfdf9ecf-5c8d-40f8-85b8-1b4ee6fb5528"
+    },
+    {
+      "claim_id": "a4e392a5-9cf3-4a58-8ba1-5a8195d882d1",
+      "result_id": "dfdf9ecf-5c8d-40f8-85b8-1b4ee6fb5528"
+    },
+    {
+      "claim_id": "3a299a8d-004b-40bc-9b6c-8c6d1472d505",
+      "result_id": "dfdf9ecf-5c8d-40f8-85b8-1b4ee6fb5528"
+    },
+    {
+      "claim_id": "8c6b7f99-e6e8-4f3a-a2f4-092bfd442fb1",
+      "result_id": "dfdf9ecf-5c8d-40f8-85b8-1b4ee6fb5528"
+    },
+    {
+      "claim_id": "a601f633-d8d0-4622-8847-90ec409c8618",
+      "result_id": "dfdf9ecf-5c8d-40f8-85b8-1b4ee6fb5528"
+    },
+    {
+      "claim_id": "d5070ee4-208f-4c66-a3ef-bfd820c28cab",
+      "result_id": "dfdf9ecf-5c8d-40f8-85b8-1b4ee6fb5528"
+    },
+    {
+      "claim_id": "18439518-08f3-49e0-ad30-dd42e4b8191a",
+      "result_id": "dfdf9ecf-5c8d-40f8-85b8-1b4ee6fb5528"
+    },
+    {
+      "claim_id": "6b0ce518-96c2-4609-aed8-aef9267674b0",
+      "result_id": "dfdf9ecf-5c8d-40f8-85b8-1b4ee6fb5528"
+    },
+    {
+      "claim_id": "aaf73ebf-ab47-4760-9487-d4b28df17d89",
+      "result_id": "dfdf9ecf-5c8d-40f8-85b8-1b4ee6fb5528"
+    },
+    {
+      "claim_id": "2b5e1361-97a4-4b6e-b911-b79b4b687786",
+      "result_id": "dfdf9ecf-5c8d-40f8-85b8-1b4ee6fb5528"
+    },
+    {
+      "claim_id": "09fec57b-cb13-4598-8922-682142468449",
+      "result_id": "dfdf9ecf-5c8d-40f8-85b8-1b4ee6fb5528"
+    },
+    {
+      "claim_id": "d7eaafc0-b9e6-4ac2-bf6f-dc3c2f3cb44e",
+      "result_id": "dfdf9ecf-5c8d-40f8-85b8-1b4ee6fb5528"
+    },
+    {
+      "claim_id": "248bd978-4b90-481a-a7a8-d3d1889e72f1",
+      "result_id": "dfdf9ecf-5c8d-40f8-85b8-1b4ee6fb5528"
+    },
+    {
+      "claim_id": "a91dc46a-381c-4c8f-bb8e-3867380068b8",
+      "result_id": "dfdf9ecf-5c8d-40f8-85b8-1b4ee6fb5528"
+    },
+    {
+      "claim_id": "10abc5a4-1697-4848-824d-54467c7b39e5",
+      "result_id": "dfdf9ecf-5c8d-40f8-85b8-1b4ee6fb5528"
+    },
+    {
+      "claim_id": "c2f10a0e-5848-4f97-ac89-77658e66c1ab",
+      "result_id": "dfdf9ecf-5c8d-40f8-85b8-1b4ee6fb5528"
+    },
+    {
+      "claim_id": "bf807448-4b09-4f8b-a1d7-cf0b8569e418",
+      "result_id": "dfdf9ecf-5c8d-40f8-85b8-1b4ee6fb5528"
+    },
+    {
+      "claim_id": "7d5b86ca-cb8a-4e53-8366-14e0ffa6a899",
+      "result_id": "dfdf9ecf-5c8d-40f8-85b8-1b4ee6fb5528"
+    },
+    {
+      "claim_id": "244cc991-064f-41c0-b100-6ad9bed60885",
+      "result_id": "dfdf9ecf-5c8d-40f8-85b8-1b4ee6fb5528"
+    },
+    {
+      "claim_id": "0d30966d-e17a-4e2f-941c-ca2accab0b53",
+      "result_id": "dfdf9ecf-5c8d-40f8-85b8-1b4ee6fb5528"
+    },
+    {
+      "claim_id": "6fda4ba7-364e-45c2-8348-82f3839d6c87",
+      "result_id": "dfdf9ecf-5c8d-40f8-85b8-1b4ee6fb5528"
+    },
+    {
+      "claim_id": "0a6fc660-516e-4024-bcf9-75293d0879aa",
+      "result_id": "dfdf9ecf-5c8d-40f8-85b8-1b4ee6fb5528"
+    },
+    {
+      "claim_id": "96f4c465-9b32-42b9-ab3a-d38bf41c537d",
+      "result_id": "dfdf9ecf-5c8d-40f8-85b8-1b4ee6fb5528"
+    },
+    {
+      "claim_id": "4f68b4af-9b0c-41ba-bc09-2a94a39b3393",
+      "result_id": "dfdf9ecf-5c8d-40f8-85b8-1b4ee6fb5528"
+    },
+    {
+      "claim_id": "27c3e55f-b78f-4e5e-acdd-58ecdd71779c",
+      "result_id": "dfdf9ecf-5c8d-40f8-85b8-1b4ee6fb5528"
+    },
+    {
+      "claim_id": "73fd7c2a-9ca5-4d97-887e-da008a0b7cdf",
+      "result_id": "dfdf9ecf-5c8d-40f8-85b8-1b4ee6fb5528"
+    },
+    {
+      "claim_id": "79b81ee4-5097-41dc-868a-e42713df3aab",
+      "result_id": "dfdf9ecf-5c8d-40f8-85b8-1b4ee6fb5528"
+    },
+    {
+      "claim_id": "5c5a7f70-b0d7-456d-8bbf-83dea98ae942",
+      "result_id": "dfdf9ecf-5c8d-40f8-85b8-1b4ee6fb5528"
+    },
+    {
+      "claim_id": "9ed11833-293a-44b0-b20d-866a2922d5e7",
+      "result_id": "1e77f207-7501-4bfd-8d76-e1c025d9af2f"
+    },
+    {
+      "claim_id": "21f75231-bfd2-4795-beee-29c3f203fc84",
+      "result_id": "1e77f207-7501-4bfd-8d76-e1c025d9af2f"
+    },
+    {
+      "claim_id": "a14d1be5-ae9e-42b5-a10d-301759c2d457",
+      "result_id": "1e77f207-7501-4bfd-8d76-e1c025d9af2f"
+    },
+    {
+      "claim_id": "a694aa41-5b60-43a4-b863-7b57af45013f",
+      "result_id": "1e77f207-7501-4bfd-8d76-e1c025d9af2f"
+    },
+    {
+      "claim_id": "8ddf772d-d67b-418e-8cc4-92eb8a43874f",
+      "result_id": "1e77f207-7501-4bfd-8d76-e1c025d9af2f"
+    },
+    {
+      "claim_id": "7423927e-8f36-42b5-b0aa-d9b20ea32e7a",
+      "result_id": "1e77f207-7501-4bfd-8d76-e1c025d9af2f"
+    },
+    {
+      "claim_id": "5c1ffd9b-6b06-454a-a5b6-0d69e501452d",
+      "result_id": "1e77f207-7501-4bfd-8d76-e1c025d9af2f"
+    },
+    {
+      "claim_id": "aa6590a5-c4de-4642-b510-a0a838e83f46",
+      "result_id": "1e77f207-7501-4bfd-8d76-e1c025d9af2f"
+    },
+    {
+      "claim_id": "0fd1d7b9-4728-4b15-9f97-9c7449501123",
+      "result_id": "1e77f207-7501-4bfd-8d76-e1c025d9af2f"
+    },
+    {
+      "claim_id": "547f1fe6-1a0e-480c-b9b3-ead5d7f27a2f",
+      "result_id": "1e77f207-7501-4bfd-8d76-e1c025d9af2f"
+    },
+    {
+      "claim_id": "c077a69f-70d0-4e9c-9ecf-ca449c3086cc",
+      "result_id": "1e77f207-7501-4bfd-8d76-e1c025d9af2f"
+    },
+    {
+      "claim_id": "34cbfae8-884d-4fd0-ae99-0085b36c2945",
+      "result_id": "5bfad362-b6c0-437e-8210-6d195fb690cc"
+    },
+    {
+      "claim_id": "ecf7c4c9-c5f3-4b6e-a488-74c5495d969d",
+      "result_id": "5bfad362-b6c0-437e-8210-6d195fb690cc"
+    },
+    {
+      "claim_id": "ecb4abbe-5ec4-4202-a435-38f1e292d69a",
+      "result_id": "5bfad362-b6c0-437e-8210-6d195fb690cc"
+    },
+    {
+      "claim_id": "87a4ab6b-233b-4852-895f-142f5cbb7eb7",
+      "result_id": "c8bc239a-485e-464c-805c-5a562c59d6be"
+    },
+    {
+      "claim_id": "a3a069bd-852b-4cfc-a048-dad7ef30eaa9",
+      "result_id": "c8bc239a-485e-464c-805c-5a562c59d6be"
+    },
+    {
+      "claim_id": "829e5c65-d11a-4f44-9d26-afe54e36a68b",
+      "result_id": "c8bc239a-485e-464c-805c-5a562c59d6be"
+    },
+    {
+      "claim_id": "b5a3d339-36eb-438a-bb41-77422d5d0146",
+      "result_id": "c8bc239a-485e-464c-805c-5a562c59d6be"
+    },
+    {
+      "claim_id": "225bab3e-1cd3-4d68-a7e5-e5e317127a3f",
+      "result_id": "c8bc239a-485e-464c-805c-5a562c59d6be"
+    },
+    {
+      "claim_id": "9daa9c07-fe3b-4db6-b5cc-929c27d06500",
+      "result_id": "c8bc239a-485e-464c-805c-5a562c59d6be"
+    },
+    {
+      "claim_id": "78f9c886-7d48-466f-a898-b0b791ef8cec",
+      "result_id": "c8bc239a-485e-464c-805c-5a562c59d6be"
+    },
+    {
+      "claim_id": "f4d1b6c0-1a91-4466-9fc0-209f43259060",
+      "result_id": "c8bc239a-485e-464c-805c-5a562c59d6be"
+    },
+    {
+      "claim_id": "e910773c-a94b-4023-8546-ef8184aa7481",
+      "result_id": "c8bc239a-485e-464c-805c-5a562c59d6be"
+    },
+    {
+      "claim_id": "93360534-178a-4511-9d14-6fa7698715fa",
+      "result_id": "c8bc239a-485e-464c-805c-5a562c59d6be"
+    },
+    {
+      "claim_id": "38a182f4-ac9d-4c45-8ce0-fb5b4672741a",
+      "result_id": "c8bc239a-485e-464c-805c-5a562c59d6be"
+    },
+    {
+      "claim_id": "519c1f32-577b-42d7-938d-b288eb283314",
+      "result_id": "c8bc239a-485e-464c-805c-5a562c59d6be"
+    },
+    {
+      "claim_id": "be05ef11-dbd4-4a4b-97b3-a917663b3232",
+      "result_id": "c8bc239a-485e-464c-805c-5a562c59d6be"
+    },
+    {
+      "claim_id": "e4d98036-b048-4efa-8f00-94b77565c516",
+      "result_id": "c8bc239a-485e-464c-805c-5a562c59d6be"
+    },
+    {
+      "claim_id": "a5a6c9a7-2f1e-4bc4-b284-69bd4e2f7260",
+      "result_id": "c8bc239a-485e-464c-805c-5a562c59d6be"
+    },
+    {
+      "claim_id": "da9856a0-8dca-4921-a007-fe230d67b2fc",
+      "result_id": "c8bc239a-485e-464c-805c-5a562c59d6be"
+    },
+    {
+      "claim_id": "5dff0ac4-24d6-455d-976f-904c86a0b566",
+      "result_id": "c8bc239a-485e-464c-805c-5a562c59d6be"
+    },
+    {
+      "claim_id": "675dde75-4e8a-4583-94a8-270884afe293",
+      "result_id": "c8bc239a-485e-464c-805c-5a562c59d6be"
+    },
+    {
+      "claim_id": "d8b0629d-bc8b-4b13-b858-2a3f50366d52",
+      "result_id": "c8bc239a-485e-464c-805c-5a562c59d6be"
+    },
+    {
+      "claim_id": "65c2adde-b25e-4645-a63d-efc608ad03de",
+      "result_id": "c8bc239a-485e-464c-805c-5a562c59d6be"
+    },
+    {
+      "claim_id": "c396108e-3b41-4aac-b5f0-5da7550702b1",
+      "result_id": "c8bc239a-485e-464c-805c-5a562c59d6be"
+    },
+    {
+      "claim_id": "8f384fbf-41b1-45ec-a277-855811e24713",
+      "result_id": "c8bc239a-485e-464c-805c-5a562c59d6be"
+    },
+    {
+      "claim_id": "948a0573-0e50-435e-ab3b-ea931a576313",
+      "result_id": "c8bc239a-485e-464c-805c-5a562c59d6be"
+    },
+    {
+      "claim_id": "e2536f3a-08fd-4bab-83a2-fc9ade02590a",
+      "result_id": "788ff769-f126-488d-8ed4-62bf95607ee2"
+    },
+    {
+      "claim_id": "65e0f75f-94e4-40ca-aa45-7f5b84c324ec",
+      "result_id": "788ff769-f126-488d-8ed4-62bf95607ee2"
+    },
+    {
+      "claim_id": "4c782b82-8848-4aff-8d14-179e7d69ec3f",
+      "result_id": "788ff769-f126-488d-8ed4-62bf95607ee2"
+    },
+    {
+      "claim_id": "904cbbb4-375a-4571-8fd2-7173fa90bf16",
+      "result_id": "9ae8f192-a101-44fd-ab35-f5be91be400c"
+    },
+    {
+      "claim_id": "46971e7a-1b94-4ebd-bfaf-a0f67ec01f51",
+      "result_id": "9ae8f192-a101-44fd-ab35-f5be91be400c"
+    },
+    {
+      "claim_id": "af4e5420-3cdb-40fd-ac1c-a0b16f1ca7a1",
+      "result_id": "9ae8f192-a101-44fd-ab35-f5be91be400c"
+    },
+    {
+      "claim_id": "d722e1a1-1784-43ec-a301-868b84f3e330",
+      "result_id": "9ae8f192-a101-44fd-ab35-f5be91be400c"
+    },
+    {
+      "claim_id": "875b565b-2432-4228-8d7d-5894f466b8c2",
+      "result_id": "2750e2d4-bd32-44ae-ad6f-7dd60ad969db"
+    },
+    {
+      "claim_id": "c7dae7ea-2338-4a19-882a-a7f6e0efb587",
+      "result_id": "2750e2d4-bd32-44ae-ad6f-7dd60ad969db"
+    },
+    {
+      "claim_id": "c5ba56c4-afb5-4b39-8d70-123a9759f2ca",
+      "result_id": "2750e2d4-bd32-44ae-ad6f-7dd60ad969db"
+    },
+    {
+      "claim_id": "a4d02953-ace0-4819-aea2-cb3eef882ddc",
+      "result_id": "2750e2d4-bd32-44ae-ad6f-7dd60ad969db"
+    },
+    {
+      "claim_id": "988e65ae-ebb4-4214-a5c5-c701b78d32e6",
+      "result_id": "2750e2d4-bd32-44ae-ad6f-7dd60ad969db"
+    },
+    {
+      "claim_id": "695826e9-0ee2-457b-b4c5-11d27c84e2af",
+      "result_id": "c74b24bd-0d72-4110-b02c-96188625d55b"
+    },
+    {
+      "claim_id": "c81c6bb7-cb62-49bd-9a67-4637c1bc8ab0",
+      "result_id": "c74b24bd-0d72-4110-b02c-96188625d55b"
+    },
+    {
+      "claim_id": "57ef7757-2648-464c-bcc8-d0757267b707",
+      "result_id": "c74b24bd-0d72-4110-b02c-96188625d55b"
+    },
+    {
+      "claim_id": "64f2029f-8bb7-4167-8282-e7d88741b071",
+      "result_id": "89bf686b-ddb2-4ba5-897e-4a478f5a603b"
+    },
+    {
+      "claim_id": "0107b0c3-2e4c-4610-9f49-5d416a529fa3",
+      "result_id": "89bf686b-ddb2-4ba5-897e-4a478f5a603b"
+    },
+    {
+      "claim_id": "aae53794-b980-48ba-9a91-b8a0badab477",
+      "result_id": "89bf686b-ddb2-4ba5-897e-4a478f5a603b"
+    },
+    {
+      "claim_id": "389ca8fd-2781-4ab0-9b36-b2f74ae4e175",
+      "result_id": "89bf686b-ddb2-4ba5-897e-4a478f5a603b"
+    },
+    {
+      "claim_id": "37739bb0-3c0b-4920-8f4a-c162ca12caba",
+      "result_id": "89bf686b-ddb2-4ba5-897e-4a478f5a603b"
+    },
+    {
+      "claim_id": "4007d351-07ae-4ff3-8f76-0f1096b72a71",
+      "result_id": "10c93ba2-bfd8-4752-9317-4293772bba2f"
+    },
+    {
+      "claim_id": "6264e25d-5b2b-4c0b-92d4-03ab75ecc3dd",
+      "result_id": "10c93ba2-bfd8-4752-9317-4293772bba2f"
+    },
+    {
+      "claim_id": "4b073ab3-98c1-4ff8-8935-ee76cedf4aaa",
+      "result_id": "10c93ba2-bfd8-4752-9317-4293772bba2f"
+    },
+    {
+      "claim_id": "4553bb47-bd7b-4665-b7bb-2fc7f8d4b33a",
+      "result_id": "10c93ba2-bfd8-4752-9317-4293772bba2f"
+    },
+    {
+      "claim_id": "f0a6f994-5ad1-4707-8878-ab5c989d74ca",
+      "result_id": "10c93ba2-bfd8-4752-9317-4293772bba2f"
+    },
+    {
+      "claim_id": "c2ff903e-a0c5-4e02-94da-74ac46cff298",
+      "result_id": "db8eff4e-409e-4214-a99d-a2fc87f631c5"
+    },
+    {
+      "claim_id": "91ccc083-26df-42f5-8880-77754961d99c",
+      "result_id": "db8eff4e-409e-4214-a99d-a2fc87f631c5"
+    },
+    {
+      "claim_id": "854ee9f2-1019-44dc-988e-2c5f7f44c999",
+      "result_id": "db8eff4e-409e-4214-a99d-a2fc87f631c5"
+    },
+    {
+      "claim_id": "feaf9720-908a-419b-93bc-98cef04cfeae",
+      "result_id": "db8eff4e-409e-4214-a99d-a2fc87f631c5"
+    },
+    {
+      "claim_id": "3e8b4ac5-b0b3-4099-a790-3c18e7b7037a",
+      "result_id": "a334ab13-423f-42c1-86cc-713269f2140c"
+    },
+    {
+      "claim_id": "9778de50-a82e-4b0d-8ce0-f6dc54ecf92f",
+      "result_id": "a334ab13-423f-42c1-86cc-713269f2140c"
+    },
+    {
+      "claim_id": "1dd5bb70-eb9d-4533-a673-03d5a4f4a5fb",
+      "result_id": "a334ab13-423f-42c1-86cc-713269f2140c"
+    },
+    {
+      "claim_id": "de014520-089d-4d04-bf9a-f20f3d0f8a4e",
+      "result_id": "9a825e3b-3da7-4118-82ad-7c301ac03ca0"
+    }
+  ],
+  "comparisons": []
+}

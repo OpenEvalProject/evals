@@ -1,0 +1,1735 @@
+{
+  "submission": {
+    "id": "3b547029-3330-4cfd-9083-e7ac4a3f3d11",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-04T01:43:13.728721Z",
+    "updated_at": "2025-12-04T01:43:13.728721Z"
+  },
+  "content": [
+    {
+      "id": "fd166826-7393-4e0c-86be-70e767650d7e",
+      "submission_id": "3b547029-3330-4cfd-9083-e7ac4a3f3d11",
+      "content_type": "manuscript",
+      "content_text": "# Gene and protein expression and metabolic flux analysis reveals metabolic scaling in liver ex vivo and in vivo\n\n## Authors\n\n- Ngozi D Akingbesote<sup>1</sup> ([ORCID: 0000-0001-6390-5729](https://orcid.org/0000-0001-6390-5729))\n- Brooks P Leitner<sup>1</sup> ([ORCID: 0000-0001-8744-412X](https://orcid.org/0000-0001-8744-412X))\n- Daniel G Jovin<sup>1</sup> ([ORCID: 0000-0002-8411-5942](https://orcid.org/0000-0002-8411-5942))\n- Reina Desrouleaux<sup>1</sup>\n- Dennis Owusu<sup>1</sup>\n- Wanling Zhu<sup>1</sup>\n- Zongyu Li<sup>1</sup>\n- Michael N Pollak<sup>4</sup>\n- Rachel J Perry<sup>1</sup> ([ORCID: 0000-0003-0748-8064](https://orcid.org/0000-0003-0748-8064)) \u2020\n\n### Affiliations\n\n1. Department of Cellular & Molecular Physiology, Yale University New Haven United States ([ROR:03v76x132](https://ror.org/03v76x132))\n2. Department of Internal Medicine \u2013 Endocrinology, Yale University New Haven United States ([ROR:03v76x132](https://ror.org/03v76x132))\n3. Department of Comparative Medicine, Yale University New Haven United States ([ROR:03v76x132](https://ror.org/03v76x132))\n4. Lady Davis Institute for Medical Research, Jewish General Hospital Montreal Canada ([ROR:056jjra10](https://ror.org/056jjra10))\n5. Department of Oncology, McGill University Montreal Canada ([ROR:01pxwe438](https://ror.org/01pxwe438))\n\n\u2020 Corresponding author\n\n## Abstract\n\nMetabolic scaling, the inverse correlation of metabolic rates to body mass, has been appreciated for more than 80 years. Studies of metabolic scaling have largely been restricted to mathematical modeling of caloric intake and oxygen consumption, and mostly rely on computational modeling. The possibility that other metabolic processes scale with body size has not been comprehensively studied. To address this gap in knowledge, we employed a systems approach including transcriptomics, proteomics, and measurement of in vitro and in vivo metabolic fluxes. Gene expression in livers of five species spanning a 30,000-fold range in mass revealed differential expression according to body mass of genes related to cytosolic and mitochondrial metabolic processes, and to detoxication of oxidative damage. To determine whether flux through key metabolic pathways is ordered inversely to body size, we applied stable isotope tracer methodology to study multiple cellular compartments, tissues, and species. Comparing C57BL/6 J mice with Sprague-Dawley rats, we demonstrate that while ordering of metabolic fluxes is not observed in in vitro cell-autonomous settings, it is present in liver slices and in vivo. Together, these data reveal that metabolic scaling extends beyond oxygen consumption to other aspects of metabolism, and is regulated at the level of gene and protein expression, enzyme activity, and substrate supply.\n\n## Introduction\n\nIn 1932, Max Kleiber published a seminal study (Kleiber, 1932), integrating prior reports demonstrating a phenomenon that came to be termed \u2018Kleiber\u2019s law,\u2019 or the principle of metabolic scaling. Metabolic scaling refers to the phenomenon that the metabolic processes in many animals, if not all, scale inversely to three-quarters of their body mass (West et al., 1997). In simpler terms, there is a reduction in metabolic rate as body size increases. For example, an elephant is 25 million times larger than a fruit fly, yet its energy expenditure is only 20 thousand times higher; thus, from the fruit fly to elephant, the metabolic rate per gram of body weight scales down 1250 times. While there is experimental evidence for metabolic scaling from bacteria to large mammals, data have been generated almost exclusively from observations of caloric intake and oxygen consumption, with gene and protein expression, and substrate fluxes almost entirely unexplored.\n\nThe concept of hierarchical regulation, whereby gene expression initiates the cascade that allows for the flux of metabolic pathways (Rossell et al., 2005; Suarez and Moyes, 2012), provides a systems framework to begin to understand scaling. Beginning at the transcriptional level, we studied liver gene expression across five species: mice (Mus musculus), rats (Rattus norvegicus), monkeys (Macaca mulatta), humans (Homo sapiens), and cattle (bos taurus), species with a 30,000-fold range of average body weight in adults (from 30 g in mice, to 900 kg in cattle). Numerous metabolic genes related to glycolysis, gluconeogenesis, fatty acid metabolism, oxygen consumption, electron transport, and redox function, and detoxification of oxidative damage, were expressed at levels inverse to body size. Further analysis of liver proteomics revealed that approximately half of the genes in the liver that were expressed inversely proportionally to body size at the transcriptional level, were also expressed at levels inversely proportional to body size at the level of protein expression. To determine if gene and protein expression would correlate with enzyme activity and metabolic flux, we performed a comprehensive assessment of liver metabolism in vivo and in vitro using modified Positional Isotopomer NMR Tracer Analysis (PINTA) (Perry et al., 2017b) and stable isotope-derived turnover (Perry et al., 2015) methods. Our analysis shows that rats exhibit lower metabolic rates when compared to mice in and ex vivo; however, no significant differences were observed when we isolated hepatocytes and cultured them in vitro under identical conditions. Taken together, this study demonstrates the variation of metabolic fluxes according to body size, extending prior studies of metabolic scaling, and provides unique insight into the regulation of metabolic flux across species.\n\n## Results\n\n### Genes within the liver that are expressed inversely proportional to body weight are predominantly metabolic genes\n\nWe examined gene expression in livers from mice (Mus musculus), rats (Rattus norvegicus), monkeys (Macaca mulatta), humans (Homo sapiens), and cattle (Bos taurus). Using recent advances in high throughput mRNA sequencing and bioinformatics tools that allow for intra-species data preprocessing (Bray et al., 2016; Conesa et al., 2016; Ritchie et al., 2015), we searched for a set of genes in the liver, the metabolic hub of mammals, whose expression correlates inversely with body mass. After normalizing for differences in transcript length and abundance across species, we filtered out genes that followed the pattern of mouse >rat > monkey >human > cow. The genes that met these criteria were predominantly related to metabolic pathways, including pyruvate metabolism, amino acid metabolism, and glucose metabolism (Figure 1A). Genes from this list were further restricted to genes involved in amino acid, carbohydrate, energy, lipid, vitamin, and TCA cycle metabolism, and demonstrated a range of degrees of inverse correlation with body mass, with only TCA cycle genes clustering together (Figure 1B).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/78335/elife-78335-fig1-v1.jpg)\n\n**Figure 1.:** (A) KEGG Pathway enrichment of all genes that are expressed with an inverse correlation to body mass, and (B) clustering heatmap of scaled genes that belong to one of six Reactome metabolic superpathways. All samples were obtained from males. For clarity, the human gene (and style of writing human gene names) are shown. RAPGEF, rap guanine nucleotide exchange factor; ELOVL2, Elongation of Very Long Chain Fatty Acids-Like 2; MDH1, malate dehydrogenase 1; LIPE, hormone-sensitive lipase E; PANK1, pantothenate kinase 1; PGK1, phosphoglycerate kinase 1; SDC4, syndecan 4; ALDH7A1, aldehyde dehydrogenase 7 family member A1; GPX1, glutathione peroxidase 1; GLUL, glutamate-ammonia ligase; SORD, sorbitol dehydrogenase; TDO2, tryptophan 2,3-dioxygenase; DLST, dihydrolipoamide S-succinyltransferase; ACACA, acetyl-CoA carboxylase-alpha; ADIPOR1, adiponectin receptor-1; GPT, glutamic-pyruvate transaminase; HS3ST3B1, heparan sulfate-glucosamine 3-sulfotransferase 3B1; PSMD5, proteasome 26 S subunit, non-ATPase-5; COX8A, cytochrome c oxidase subunit 8 A; NDUFA9, NADH:ubiquinone oxidoreductase subunit A9.\n\n### Genes encoding enzymes involved in hepatic metabolism are expressed inversely proportionally to body mass and involve metabolite detoxification, intertissue metabolism, substrate metabolism, electron transport, and NAD metabolism\n\nIn order to further understand the functional aspects of the metabolic genes that are expressed inversely proportionally to body size, the gene list from Figure 1B was categorized into several functional categories, converging on optimizing energy provision, oxidative metabolism, and damage control from oxidative stress and ammonia (Figure 2). Furthermore, to understand whether or not certain genes that are expressed inversely proportionally to body size involved anabolic or catabolic processes, they were further classified by their properties to be energy suppliers or consumers. Eleven of sixteen critical metabolic enzymes that scaled required molecular oxygen, NAD+/NADH, or ATP/ADP for function, possibly indicating exquisite regulation of energy-consuming processes at the individual gene level. Genes involved in the detoxication of lipid peroxidation-derived aldehydes (ALDH7A1), hydrogen peroxide (GPX1), and ammonia (GLUL) suggest scaling of damage control mechanisms that are associated with increased oxidative metabolism across species (Figure 2A). The inverse correlation between body size and expression of genes that are associated with interorgan crosstalk is consistent with scaling in vivo which would not be expected in plated cells. For example, the differentially expressed genes include GPT1, which is involved in recycling skeletal muscle-derived alanine back to liver-derived glucose (Felig and Wahren, 1971; Petersen et al., 2019), and the adiponectin receptor (ADIPOR1), which binds an adipose tissue-derived hormone that regulates gluconeogenesis and fatty acid oxidation (Lin and Accili, 2011; Li et al., 2020 Figure 2B). Genes involved in fatty acid metabolism included the rate-limiting steps of the synthesis of CoA (PANK1), of de novo fatty acid synthesis (ACACA), and of fatty acid elongation (ELOVL2), in addition to the oxidation of diacylglycerols (LIPE) (Figure 2C). NAD and ATP-dependent genes involved in glycolysis (PDK1), fructose/glucose metabolism (SORD1), and DLST of the TCA cycle also correlated inversely with body size (Figure 2D\u2013E). Differentially regulated genes also couple oxygen consumption to NAD provision (MDH1, TDO2), and are involved with the function of the electron transport chain (subunits of complex I, NDUFA9, and complex IV, COX8A, which catalyzes oxygen accepting the final electrons of the electron transport chain) (Figure 2F\u2013G).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/78335/elife-78335-fig2-v1.jpg)\n\n**Figure 2.:** mRNA expression of key regulatory genes related to metabolite detoxication (A), intertissue metabolism (B), fatty acid metabolism (C), glucose metabolism (D), tricarboxylic acid (TCA) cycle, NAD metabolism (F), and the electron transport chain (G) in mice, rats, monkeys, humans, and cattle. Bars denote expression levels by an organism, following the same order shown in the cartoon of organisms. Expression was normalized to counts per million and was then further normalized for sequencing depth and transcript length. All genes met an adjusted p-value threshold of 0.01 using a one-way ANOVA with the Bonferroni correction for multiple comparisons. All samples were obtained from males (n=2 replicates per species). ALDH7A1, aldehyde dehydrogenase 7 family member A1; GPX1, glutathione peroxidase 1; GLUL, glutamate-ammonia ligase; GPT, glutamic-pyruvate transaminase; ADIPOR1, adiponectin receptor-1; LIPE, hormone-sensitive lipase E; PANK1, pantothenate kinase 1; ACACA, acetyl-CoA carboxylase-alpha; ELOVL2, Elongation of Very Long Chain Fatty Acids-Like 2; SORD, sorbitol dehydrogenase; PGK1, phosphoglycerate kinase 1; DLST, dihydrolipoamide S-succinyltransferase; TDO2, tryptophan 2,3-dioxygenase; MDH1, malate dehydrogenase 1; NDUFA9, NADH:ubiquinone oxidoreductase subunit A9; COX8A, cytochrome c oxidase subunit 8 A.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/78335/elife-78335-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** mRNA expression of metabolic genes: (A) Glul, (B) Lipe, (C) Dlst, and structural genes: (D) Mmp3, (E) Larp6, all expressed relative to Actb (\u03b2-actin). *p<0.05, **p<0.01, ***p<0.0001.\n\nTo examine the possibility that the inverse correlation between body mass and gene expression observed in the transcriptomics analysis could be a consequence of global alterations in mRNA (for example, as a consequence of alterations in RNA turnover rates), we performed targeted quantitative polymerase chain reaction (qPCR), measuring in liver tissue abundance of mRNA encoding several enzymes that were found to scale in the five-species transcriptomics analysis, relative to the common housekeeping gene \u03b2-actin (Actb). We found that all three enzymes (Glul, Lipe, and Dlst) scaled relative to Actb (Figure 2\u2014figure supplement 1A\u2013C), whereas structural genes (collagenase 3 [Mmp3] and Larp1) did not (Figure 2\u2014figure supplement 1D\u2013E), indicating that the differences in metabolic gene expression observed across species is likely not a result of global changes in RNA levels.\n\nIn addition to transcriptomics, we assessed proteomics data to evaluate the protein levels corresponding to the genes that were found to be expressed inversely proportionally to body size at the level of mRNA expression. Our proteomics data were limited to mouse, rat, and human, as all the open-source proteomic databases that we identified lacked data from monkey or cow. An important limitation for finding such data is that even with careful post-processing, we cannot combine data from different studies, because differences in methods of tissue preparation may influence results. Therefore, we were limited to a single experiment that had generated proteomics data for mouse, rat, and human using the same experimental procedures. The dataset contained protein expression corresponding to eight of the twenty genes identified to scale in our transcriptomics data analysis. Of these, three (GLUL, GPX1, and MDH1) were found to follow a reverse correlation with body size (Figure 3A\u2013C). Interestingly, one of these proteins (GLUL) was also found to be expressed inversely proportionally to body size in the left ventricle of the heart (Figure 3D). Additionally, we measured liver transaminase concentrations and observed that both alanine aminotransferase (ALT) and aspartate aminotransferase (AST) exhibited lower concentrations in humans as compared to rats and rats as compared to mice (Figure 3E\u2013F), consistent with scaling at the level of protein expression as well as mRNA expression. Finally, we utilized established enzymatic assays to measure the activity of peroxidase and pyruvate carboxylase in the livers of mice and rats. 30\u201340% lower activity of each enzyme per mg tissue was observed in rats as compared to mice (Figure 3\u2014figure supplement 1A\u2013B), suggesting scaling at the level of metabolic enzyme activity.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/78335/elife-78335-fig3-v1.jpg)\n\n**Figure 3.:** Liver (A) glutamate-ammonia ligase (GLUL), (B) glutathione peroxidase 1 (GPX1), and (C) malate dehydrogenase 1 (MDH1) protein expression. (D) GLUL protein expression in the left ventricle of the heart. The proteomics analysis was performed on n=1 per species, so statistical comparisons were not possible. (E) Plasma alanine aminotransferase (ALT) and (F) aspartate aminotransferase (AST) concentrations (for both transaminases, n=5 per species). *p<0.05, ***p<0.001, ****p<0.0001.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/78335/elife-78335-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Pyruvate carboxylase and (B) Peroxidase activity. **p<0.01, ***p<0.001; n=5 per species.\n\n### Metabolic rates of mouse vs. rat hepatocytes in vitro are not significantly different\n\nConsidering prior data reporting higher oxygen consumption per unit body mass in smaller as compared to larger animals (Gilman et al., 2013; Brody, 1945; Urbina and Glover, 2013), we first asked whether these differences were cell-intrinsic, or whether in vivo or hepatocyte-extrinsic signals are required. We incubated plated hepatocytes in [3-13C] lactate and first validated that the data met the assumptions of PINTA, including reaching steady-state in [13C] lactate and glucose enrichment, and producing glucose at a linear rate throughout the 6 hr incubation (Figure 4\u2014figure supplement 1A\u2013C). Consistent with the possibility that hepatocyte-extrinsic signals are primarily responsible for metabolic scaling, when we used PINTA to assess cytosolic and mitochondrial fluxes, we observed no significant differences between species in any of the fluxes measured in plated hepatocytes: glucose production, VPC, VCS, the contribution of glucose or fatty acids to the tricarboxylic acid (TCA) cycle, or lipolysis (Figure 4A\u2013H, Figure 4\u2014figure supplement 1D\u2013F). Similarly, a mitochondrial stress test in plated hepatocytes revealed no difference in any parameter: neither basal mitochondrial and non-mitochondrial respiration, ATP production, maximal (uncoupled) respiration, spare respiratory capacity, nor proton leak differed between plated hepatocytes from mice and rats (Figure 4I). Previous studies have demonstrated scaling in vitro in cell suspensions only when analyzed immediately after hepatocyte isolation (Porter and Brand, 1995), and have suggested that the phenomenon of scaling gradually disappears around 24 hr post removal (Brown et al., 2007), similar to the conditions in which we performed these studies. Most prior in vitro studies have also demonstrated an absence of scaling, in contrast to in vivo (Glazier, 2015), and we extend these results to gluconeogenic and lipolytic fluxes in hepatocytes, glucose production in liver slices, and multimodal flux analysis in vivo.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/78335/elife-78335-fig4-v1.jpg)\n\n**Figure 4.:** (A) Study design. This figure was made using Biorender.com. (B) Tracer labeling strategy. (C) Glucose production. (D) Gluconeogenesis from pyruvate (pyruvate carboxylase flux, VPC). (E) Citrate synthase flux (VCS), i.e., mitochondrial oxidation. (F) Pyruvate dehydrogenase flux (VPDH), i.e., the contribution of glucose via glycolysis to total mitochondrial oxidation. (G) Non-esterified fatty acid (NEFA) production. (H) The contribution of fatty acid oxidation to citrate synthase flux. (I) Oxygen consumption rate (OCR) during a mitochondrial stress test. In all panels, hepatocytes from wild-type males were studied, and groups were compared using the two-tailed unpaired Student\u2019s t-test. No significant differences were observed. In all panels, the mean \u00b1 SEM. of six biological replicates (averaged from three technical replicates per biological replicate) is shown.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/78335/elife-78335-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Media 13C lactate m+1 enrichment. (B) Media 13C glucose m+1 and m+2 enrichment. (C) Media glucose concentration. (D) VPC/VGP. (E) VPC/VCS. ***p<0.001. (F) VPDH/VCS. In all panels, the mean \u00b1 SEM. of six biological replicates (averaged from three technical replicates per biological replicate) is shown.\n\n### Glucose production per gram tissue is higher ex vivo in liver slices from mice than in rats\n\nNext, considering that hepatocytes comprise approximately 70\u201380% of liver mass and that their culture in vitro does not replicate in vivo conditions (Krebs, 1950), we asked whether glucose production would be different between mice and rats in slices of liver. Indeed, we found that liver glucose production per gram liver mass was threefold greater in mouse liver slices as compared to rats (Figure 5A\u2013B), suggesting that hepatocyte-extrinsic signals (for example, from other liver cell types) are involved in liver metabolic scaling.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/78335/elife-78335-fig5-v1.jpg)\n\n**Figure 5.:** (A) Study design. This figure was made using Biorender.com. (B) Glucose production. Groups were compared by the two-tailed unpaired Student\u2019s t-test. Liver slices from male, wild-type animals (n=4 mice and 2 rats, three technical replicates per biological replicate) were studied.\n\n### Metabolic rates in multiple tissue types are higher in vivo in mice relative to rats\n\nWe utilized multimodal stable isotope metabolic flux analysis to compare rats and mice with respect to a panel of metabolic fluxes (Figure 6A). First, we validated tracer assumptions in vivo, including the metabolic and isotopic steady state in plasma and negligible liver glycogen concentrations, although in the recently fed state, hepatic glycogenolysis was higher in mice than that in rats (Figure 6\u2014figure supplement 1A\u2013G). Using PINTA, we found that both endogenous glucose production and gluconeogenesis from pyruvate (VPC) per gram liver were more than twofold higher in mice than rats (Figure 6B\u2013C), although the fractional contribution of pyruvate to gluconeogenesis did not differ between mice and rats (Figure 6\u2014figure supplement 1H). Mitochondrial oxidation scaled similarly, increasing threefold in mice as compared to rats studied under the same conditions, due to increases in both glucose oxidation (pyruvate dehydrogenase flux, VPDH) and fatty acid oxidation (Figure 6D\u2013F), associated with an increase in the ratio of pyruvate carboxylase anaplerosis to citrate synthase flux (VPC/VCS) without any difference in the fraction of VCS flux fueled by glucose through PDH (Figure 6\u2014figure supplement 1I\u2013J). While we did not have the capacity to measure liver fluxes in larger mammals in the current study, endogenous glucose production, VPC, and VCS previously measured using PINTA were 50\u201360% lower in overnight fasted humans than in rats (Petersen et al., 2019), assuming a liver size of 1500 g in humans. These differences in metabolic fluxes according to body size applied not only to rodent liver metabolism but also to adipose tissue metabolism: whole-body fatty acid turnover, reflecting lipolysis, was 2.5-fold higher in mice than in rats (Figure 6G). No sex differences were observed in any of the measured fluxes (Figure 6\u2014figure supplement 1K\u2013P). Taken together, these data emphasize the inadequacy of common in vitro methods as a readout of in vivo metabolism: whereas in vivo mitochondrial oxidation (TCA cycle flux) was threefold higher in mice than in rats, in vitro measurements of oxygen consumption throughout a mitochondrial stress test, TCA cycle flux, and glucose production were not different between the species (Figure 4).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/78335/elife-78335-fig6-v1.jpg)\n\n**Figure 6.:** (A) Study design. (B) Endogenous glucose production. (C) Gluconeogenesis from pyruvate (VPC). (D) VCS, i.e., mitochondrial oxidation. (E) VPDH, i.e., the contribution of glucose via glycolysis to total mitochondrial oxidation. (F) Palmitate (fatty acid) turnover. (G) The contribution of fatty acid oxidation to citrate synthase flux. In all panels, groups were compared using the two-tailed unpaired Student\u2019s t-test. Male rodents (n=4 mice and 6 rats) were studied.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/78335/elife-78335-fig6-figsupp1-v1.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) Plasma 2H7 glucose enrichment. (B) Plasma 13C lactate m+1 enrichment. In panels (A)-(C), n=4 mice and 6 rats. (C) Plasma 13C glucose m+1 and m+2 enrichment. (D) Blood glucose and (E) Plasma lactate concentrations. n=6 per group (panels (D)-(E)). In panels (A)-(E), data are the mean \u00b1 SEM. of n=6 per species. (F) Liver glycogen concentration in fed and overnight fasted rodents, as well as in (G) recently fed (0 and 4 hr fasted) rodents. n=5 mice and 5 rats. (H) /n vivo VPC/VEGP, (I) VPC/VCS, and (J) VPDH/VCS (n=4 mice and 6 rats). (K) Endogenous glucose production, (L) Pyruvate carboxylase flux, and (M) Citrate synthase flux in male and female rodents (in panels (K)-(P), n=4 male mice and 6 for all other groups; the data from males are duplicated from Figure 6B\u2013G). The contributions of (N) Glucose (through pyruvate dehydrogenase) and (O) Fatty acids to total mitochondrial oxidation in male and female rodents. (P) In vivo fatty acid (palmitate) turnover in male and female rodents. In all panels, **p<0.01, ***p<0.001, ****p<0.0001.\n\n### Classical clustering defined species-specific clusters based on in vivo metabolic fluxes but not in vitro fluxes\n\nA clustering dendrogram was applied to our in vitro flux data and showed no distinct clustering between species (Figure 7A\u2013B). However, the in vivo metabolic flux data led to distinct clustering of rats and mice (Figure 7C), providing a classical clustering-based objective analysis of in vitro versus in vivo metabolic flux.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/78335/elife-78335-fig7-v1.jpg)\n\n**Figure 7.:** (A) Study workflow. (B) Clustering heatmap demonstrating the absence of metabolic differences in vitro. (C) Clustering heatmap demonstrating metabolic differences between mice and rats in vivo. In panels (B) and (C), mouse and rat color legends correspond to the species label attached to the dendrogram on the leftmost of each graph. Vpc = pyruvate carboxylase flux, Vcs = citrate synthase flux, Vpdh = pyruvate dehydrogenase flux, Vfao = fatty acid oxidation, NEFA = non-esterified fatty acid concentrations. All data presented in Figures 3 and 5 were utilized in the classical clustering analysis and are included in this figure.\n\n## Discussion\n\nOxygen consumption has been shown to scale inversely with body mass in species ranging in mass across 20 orders of magnitude, from 10\u201314 to 106 grams (Ernest et al., 2003; Gillooly et al., 2001; Kleiber, 1932; Makarieva et al., 2005a; Makarieva et al., 2008; Savage et al., 2004; West et al., 2002). This phenomenon has been most studied in mammals, but is highly conserved, having also been shown to occur in prokaryotes (Fenchel and Finlay, 1983; Makarieva et al., 2005a; Makarieva et al., 2005a; Makarieva et al., 2008; Moses et al., 2008), plants (Makarieva et al., 2005b; Mori et al., 2010; Reich et al., 2006), insects (Chown et al., 2007; Maino and Kearney, 2014; Makarieva et al., 2005a), fish (Clarke and Johnston, 1999; Gjoni et al., 2020; Rubalcaba et al., 2020), and birds (Glazier, 2008; Hudson et al., 2013; Makarieva et al., 2005b). However, a major limitation of prior studies in this field has been that observations have been largely limited to oxygen consumption and caloric intake, leaving other metabolic processes unexplored. This study sought to address this issue by examining the generalizability of the inverse relationship between body mass and metabolic rates, using both experimental measurements and previously assembled databases that have not previously been employed in this context.\n\nIt is important to note that the metabolic processes which we observed to be higher in mice as compared to rats did not necessarily adhere quantitatively to the classic metabolic scaling relationship, with metabolic rates proportional to three-quarters of body mass. This speaks to the idea that the scaling relationship is multidimensional: it is entirely conceivable that whole-body oxygen consumption could be proportional to three-quarters of body mass, while other metabolic processes may exhibit a different scaling relationship. Further studies across species beyond rodents will be required to address this question.\n\nThe possibility that gene expression, as reflected by mRNA abundance, may also scale with body mass has not been previously addressed. We observed that the expression of key genes in glycolysis, gluconeogenesis, fatty acid metabolism, NAD synthesis and transport, mitochondrial oxygen consumption, and protection from oxidative damage scale with body mass. More compelling, however, is the observation that those genes for which an inverse relationship of expression with body mass is observed, are not randomly distributed across the genome. Rather, the collection of genes whose expression is inversely correlated with body mass is enriched for genes related to metabolic processes, and whose corresponding proteins\u2019 enzymatic action are constrained by the supply of substrate, NAD, ATP, or oxygen.\n\nThe notion that body mass is a variable related to the level of expression of certain genes has not previously been considered as an aspect of metabolic scaling. However, it should be noted that metabolic scaling cannot fully be explained at the transcriptional level, because many rate-limiting enzymes in the metabolic processes measured in vivo did not scale at the transcriptional level, and only approximately half of genes that scaled at the level of mRNA scaled at the level of protein. Thus, it is likely that both transcriptional and other mechanisms \u2013 such as enzyme activity \u2013 are responsible for variations in metabolic flux per unit mass, inversely proportionally to body size. Additionally, the currently available data do not allow us to assess whether the expression of certain isoforms of key metabolic enzymes scales differentially across species.\n\nIt is also informative to contrast the lack of an inverse relationship between body size and metabolic fluxes per tissue weight (oxygen consumption, mitochondrial oxidation, lipolysis, and glucose production in hepatocytes) measured in the in vitro setting, to our findings in vivo (where all fluxes proceeded faster in mice than in rats). This emphasizes the need to employ tracer methods in vivo to generate a comprehensive picture of differences in metabolic fluxes between species.\n\nOur findings emphasize that measurement of oxygen consumption in vitro may fail to detect any influence of scaling processes present in vivo. Glucose production was threefold higher in mouse liver slices relative to rat liver slices, but did not significantly differ between plated hepatocytes from mice and rats. Future studies using metabolic flux analysis may have the further capacity to generate new insights as to the scope and mechanism of metabolic scaling (Wiechert, 2001). For example, our data do not allow us to ascertain whether differences in oxygen consumption orchestrate metabolic alterations, as has been suggested in the setting of cancer cells (Nakazawa et al., 2016), or metabolic alterations require changes in oxygen consumption. Additionally, there are limitations to the fact that metabolic flux studies were performed only in the two arguably most related species included in the transcriptomics analysis (with monkey and human perhaps being similarly related). Our laboratory does not have the capacity to perform flux analysis in larger or smaller species, but we fully recognize that widening our scope beyond the 10-fold range in body size between mice and rats may yield different results. For example, it is possible that the mathematical relationship between body size and metabolic flux may reach a threshold of body size, after which this relationship may change. However, experimental and computational data suggest that the metabolic scaling relationship with regard to oxygen consumption holds at least from birds to cattle, and that a similar \u2013 but not identical \u2013 scaling relationship exists in plants (Niklas and Kutschera, 2015), so we posit that it is likely that if such a threshold exists, it occurs at a body size orders of magnitude larger than the rodents included in our study.\n\nTaken together, the findings of this study show that the phenomenon of metabolic scaling extends to processes beyond oxygen consumption and caloric intake, and is bookended by scaling not only of gene and protein expression, but also of enzyme activity and cytosolic and mitochondrial fluxes in vivo. It may be that if one were to alter the activity of an enzyme in a larger species using a mutation to increase it to the level of activity of the same enzyme in a smaller species, that the phenomenon of metabolic scaling might disappear. Future work will be required to examine this possibility. The mechanisms underlying the phenomenon of metabolic scaling remain obscure, and deserve investigation as a fundamental question in biology (Hatton et al., 2019; Kolokotrones et al., 2010; White and Seymour, 2003). Our data support the notion that cell-extrinsic regulatory factors are involved.\n\n### Ideas and speculation\n\nThese data have implications for metabolic regulation during hibernation, in which metabolic rates are reproducibly and markedly but reversibly suppressed (Jansen et al., 2021; Jansen et al., 2019; T\u00f8ien et al., 2011). Metabolic scaling phenomena may also have medical relevance. Recent reports provide data consistent with \u2018Peto\u2019s paradox\u2019 by showing that cancer is not more prevalent in larger, long-lived organisms than smaller ones (Makarieva et al., 2005a; Vincze et al., 2022), despite the fact that more cells are at risk for transformation, and over longer periods of time. Metabolic scaling provides a potential explanation: the slower rates of metabolic processes (including oxygen consumption) and reduced oxidative damage in larger animals imply lower rates of proliferation and carcinogenic DNA damage, so that while more cells are at risk in large animals, carcinogenesis proceeds more rapidly in smaller ones.\n\nMetabolic scaling phenomena that lead to different rates of metabolic fluxes according to organism size deserve consideration in the context of murine models of human diseases. These differences may contribute to the faster rate of aging and shorter life expectancy of rodents as compared to humans. A separate example concerns cancer models, where species-specific different rates of in vivo metabolic fluxes might be relevant to carcinogenesis or efficacy of treatments.\n\n## Materials and methods\n\nAll animal studies were approved by the Yale University Institutional Animal Care and Use Committee (protocol 2019\u201320290). Source data are found in Supplementary file 1.\n\n### Rodents\n\nHealthy male (or, when designated, female), wild-type C57BL/6 J mice (catalog number 000664) and Sprague-Dawley rats (strain code 400) were obtained at 8 weeks of age from Jackson Laboratories and Charles River Laboratories, respectively, and given ad lib access to regular chow and water. Rodents underwent surgery under isoflurane anesthesia to place catheters in the jugular vein (mice) and in both the jugular vein and carotid artery, with the tip of the arterial catheter advanced into the right atrium of the heart (rats). After a week of recovery and confirmation that the animals had regained their pre-surgical body weight and following a 24 hr fast, rodents underwent the in vivo tracer studies described below. Rodents used for hepatocyte studies were fed ad lib until isoflurane euthanasia and liver isolation as described in the in vitro studies below.\n\n### Human participants\n\nPlasma samples were obtained, deidentified, from healthy, lean participants (all male, in order to maintain consistency with the rodent studies; age 26\u00b13, body mass index 24.2 \u00b1 0.8; ethnicity data not collected) in a Yale University IRB-approved (protocol 0108012609, NCT03738852, beginning 11/7/2018) clinical study. Eligibility included age >18 years and body mass index >18.0, without evidence of renal, thyroid, neurologic, or psychiatric dysfunction. Pre-defined outcomes were focused on the counterregulatory response to hypoglycemia, but baseline samples could be used in a deidentified manner for other analyses. All volunteers provided informed consent to participate in the study, and for the data to be published. Data were collected at Yale University. Blood was obtained from a venous catheter in the left forearm, centrifuged, and stored at \u201380 \u00b0C to await further analysis. No harms were observed.\n\n### Gene expression analysis\n\nAll liver raw transcriptomics data were obtained from Array Express (Brazma et al., 2003) (https://doi.org/10.1093/nar/gkg091), and were all preprocessed using the same methods. Cattle, monkey, and rat were obtained from E-MTAB-4550, mouse from E-MTAB-5166, and human from E-MTAB-6814. Two replicates from each species were used. Raw counts from each species were normalized to counts per million (CPM) and were then TMM-normalized to account for differences in sequencing depth as well as transcript length across species and scanners using the R package edgeR (Robinson et al., 2010). All transcript homologs were converted to human gene names using ENSEMBL in the biomaRt R package (Durinck et al., 2009). For the analyses in Figure 5, genes were filtered to those that followed the allometric scaling pattern mouse > rat > monkey > human > cattle. This gene list was put into EnrichR and KEGG pathway enrichment analysis was performed (Kuleshov et al., 2016). Genes in this list that followed the scaling pattern were then filtered based on whether they met one of six Reactome metabolic superpathways related to the metabolism of amino acids, carbohydrates, energy, lipids, tricarboxylic acid cycle, and vitamin cofactors (Jassal et al., 2020). A clustering heatmap was performed on these genes using the Seaborn Python package (Waskom, 2021). Genes were plotted again upon this map using the Seaborn Python package. To assess for differences in gene expression in genes displayed on the metabolic map, a one-way ANOVA with a Bonferroni correction for multiple comparisons (thus we used an adjusted p-value threshold for this test of 0.01, corresponding to an alpha level of 0.05, for significance) using the Python Scipy package (Virtanen et al., 2020).\n\nTargeted gene expression analysis was performed by qPCR in our laboratory. mRNA was prepared using TRIzol (Life Technologies), purified using RNeasy mini-columns (Qiagen), and used to prepare cDNA. Quantitative real-time PCR was performed using SYBR Green (Applied Biosystems). Primers were obtained from IDT with the sequences shown in Supplementary file 1.\n\n### Protein expression analysis\n\nAll liver raw mass spectrometry proteomics data were obtained from the Proteomics Identifications Database (PRIDE). Mouse liver S9 fraction (PXD000733), rat liver S9 fraction (PXD000717), and human liver S9 fraction (PXD00734) raw data from a previously published study (Golizeh et al., 2015) were processed using MaxQuant software (version 2.1.4.0, Max-Planck Institute of Biochemistry, Munich, Germany), and proteins were identified with built-in Andromeda search engine based on Uniprot canonical protein collections for each species. The false discovery rate cut-offs were set to 1% on peptide, protein, and site decoy levels (default), thereby only allowing the high-quality identifications to pass. Raw intensities of all species showed similar distributions; therefore, data were normalized across species by median centering, and we used the EggNOG database to match orthologous proteins between species. Perseus was used to perform data analysis. We looked exclusively at the twenty genes that were identified with the pattern mouse > rat > human in our transcriptomics data analysis. We used iBAQ intensity (intensity Based Absolute Quantification) as a proxy for protein expression because iBAQ intensities are the raw intensities divided by the number of theoretical peptides. Therefore, iBAQ values are proportional to the molar quantities of the proteins. Additionally, the iBAQ algorithm can roughly estimate the relative abundance of proteins within a sample (Krey et al., 2018).\n\nBecause the primary goal of Golizeh et al., 2015 , was to evaluate protein/peptide-level ion exchange fractionation and proteome coverage in liver microsomes versus S9 fractions, the protein data did not include protein abundance. Consequently, the dataset did not have replicates as two livers from each species were digested differently (one with trypsin and the second with pepsin). Since the different digestion methods could alter both protein identification and abundance, we evaluated only the data from the liver S9 fraction digested with trypsin. Since we had no replicates, statistical analysis could not be carried out.\n\n### In vitro tracer analysis\n\nPrimary hepatocytes were isolated by the Yale Liver Center\u2019s Cell Isolation Core, plated in a six-well plate (4.0 \u00d7 105 cells per well), and allowed to recover for 6 hr at 37 \u00b0C in substrate replete media (DMEM high glucose containing 10% FBS, 2% penicillin\u2013streptomycin, 100 nM dexamethasone, 10 mM HEPES, and 1 nM insulin). The attached cells were then washed once in PBS and incubated overnight in low-glucose culture media (DMEM low glucose containing 10% FBS, 2% penicillin\u2013streptomycin and 10 mM HEPES) for glucose production assays, or serum-free low-glucose culture medium (DMEM low glucose supplemented with 0.5% fatty acid free BSA, 2% penicillin\u2013streptomycin, and 10 mM HEPES) for lipolysis assays. Following the overnight incubation, for glucose production assays, cells were washed twice with PBS and the media was replaced with 2 ml of substrate-replete glucose production medium (DMEM no-glucose base media containing 0.5% fatty acid-free BSA, 20 mM sodium lactate (50% 3-13C), 2 mM sodium pyruvate, 2 mM GlutaMAX, MEM non-essential amino acids, and 10 mM HEPES). After a s6 hr incubation at 37 \u00b0C, the media was collected. Glucose concentrations were measured as described in the Biochemical Analysis section, and normalized to total protein measured using the bicinchoninic acid (BCA) assay. For lipolysis assays, cells were washed twice with PBS and the media was replaced with a fresh 2 ml volume of low-glucose culture medium. Cells were incubated at 37 \u00b0C for 6 hr, after which the media was collected and non-esterified fatty acid concentrations measured as described in the Biochemical Analysis section. The lipolysis rate was calculated after normalizing to total protein concentrations determined using the BCA assay. Flux ratios were measured using Equations 5-13 in Supplementary file 2, and back-calculated from net glucose production determined by measuring the glucose concentration in the media using the Sekisui Glucose Assay and assuming a linear rate of net glucose production during the 6 hr incubation.\n\n### Glucose production in liver slices\n\nMice and rats were fasted overnight (16 hr) and sacrificed. Rodent livers were extracted and washed in Krebs-Henseleit buffer (KHB) containing 550 mM sodium chloride, 23 mM potassium chloride, 6.3 mM calcium dichloride, 10 mM magnesium sulfate, and 6.9 mM sodium phosphate monobasic. Rodent livers were cored into smaller bits using the Alabama R&D tissue coring press. Cored livers were sliced to the thickness of 230 microns, the lowest setting on the Alabama R&D tissue slicer. Liver slices were transferred to 24-well plates containing gluconeogenesis media (DMEM without glucose but with 20 mM lactate, 2 mM pyruvate, 10 mM HEPES, and 44 mM sodium bicarbonate) (400 ul for mouse livers and 500 ul for rat livers). The 24-well plates were placed in a tissue culture incubator (5% CO2) and shaken at 80 RPM for 6 hr. At the end of the 6 hr incubation, liver slices and media were collected. Liver slice weights were measured on a scale. Glucose concentrations from liver slice media were measured using the Sekisui Glucose Assay. Glucose concentrations were normalized to liver weights measured in milligrams and microliters of gluconeogenesis media.\n\n### In vitro oxygen consumption analysis\n\nPrimary hepatocytes were isolated from ad lib fed mice and rats by the Yale Liver Center\u2019s Cell Isolation core and plated recovery media as described previously Camporez et al., 2013 in 24-well XF24 V7 cell culture plates coated with type I collagen. After 6\u20138 hr of recovery at 37 \u00b0C in 5% CO2, cells were washed twice with PBS and the media was replaced with low-glucose culture media (DMEM base medium containing 5 mM glucose, 2 mM glutamine, and non-essential amino acids, pH 7.4), in which cells were cultured overnight. The next morning, as we have previously described (Perry et al., 2020), cells were washed twice with PBS and the media was replaced with 500 \u03bcL XF24 assay medium (DMEM base medium containing 5.5 mM glucose, 1 mM pyruvate, and 2 mM glutamine, pH 7.4) and equilibrated at 37 \u00b0C for 60 min. The Seahorse XFe 24 Analyzer was used to perform a mitochondrial stress test: after three baseline measurements of O2 consumption (10 min apart), oligomycin (an inhibitor of ATP synthase) was injected, and three subsequent measures of O2 consumption was performed using a 4 min mix/2 min wait/4 min measure protocol. Next, the uncoupler 2-[2-[4-(trifluoromethoxy)phenyl]hydrazinylidene]-propanedinitrile (FCCP) was injected to dissipate the proton gradient, with three O2 consumption measurements taken as described above. Finally, rotenone (0.5 \u03bcM) and antimycin (10 \u03bcM) were injected to inhibit Complexes I and III, respectively. Oxygen consumption was normalized to total protein measured using the Pierce BCA Protein Assay.\n\n### In vivo tracer analysis\n\nMice and rats received a 3 X (5 min) primed-continuous infusion of [3-13C] sodium lactate (4.5 mg/kg body weight/min), [1, 2, 3, 4, 5, 6, 6-2H7] glucose (1.0 mg/kg/min), and [U-13C16] potassium palmitate (0.8 mg/kg/min) for 120 min. Tracers were infused into the jugular vein (mice) or the right atrium (rats) to ensure systemic delivery. After 100, 110, and 120 min, blood was collected from the tail vein (mice) or from the jugular venous catheter (rats) and centrifuged to obtain plasma, then animals were sacrificed with IV pentobarbital and their livers freeze-clamped in liquid nitrogen.\n\n### Biochemical analysis\n\nIn plated hepatocyte and liver slice studies, glucose concentrations in the cell media were determined using the Sekisui Glucose Assay. Non-esterified fatty acid concentrations in the hepatocyte media were measured using the Sekisui Non-Esterified Fatty Acid kit.\n\nGlucose production in hepatocytes was determined by measuring the glucose concentration in media after 1, 2, 3, 4, 5, and 6 hr of incubation. Glucose enrichment in hepatocytes, plasma, and livers was measured by gas chromatography/mass spectrometry (GC/MS). Samples were deprotonized using 1:1 barium hydroxide:zinc sulfate (100 \u03bcl for cells and 300 \u03bcl for ~100 mg liver samples, which were subsequently homogenized using a TissueLyser) and derivatized with 50 \u03bcl 1:1 acetic anhydride:pyridine. After 20 min heating to 65 \u00b0C, 50 \u03bcl methanol was added, and glucose enrichment ([13C1], [13C2] and, in plasma, [2H7] (all using the Chemical Ionization mode), [4, 5, 6-13C1] and [4, 5, 6-13C2] (both using the electron ionization mode)) were measured by GC/MS.\n\n[13C] alanine enrichment was measured by GC/MS (Perry et al., 2016). We have previously shown that flux through pyruvate kinase and malic enzyme \u2013 which would add [13C] label to carbon 2 of alanine \u2013 is minimal under fasting conditions in normal rats Perry et al., 2016; therefore, the measured [13C] alanine enrichment can be attributed entirely to [3-13C] lactate enrichment. [13C] malate enrichment was also measured by GC/MS (Perry et al., 2017b). Total malate enrichment and C1C2C3 malate enrichment were measured and the C2 \u2009+\u2009C3 malate enrichment was determined according to Supplementary file 2, equations 1 and 2, which relies on the assumption that the C4 enrichment is approximately equal to the C1 enrichment of malate (Perry et al., 2017b). Total and C4C5 glutamate enrichment was measured by LC-MS/MS (Perry et al., 2018). With 13C lactate infusion, no label enters glutamate carbon 5, so all label in the C4C5 fragment was assumed to be labeled in glutamate C4.\n\nPlasma transaminase concentrations were measured by ELISA (Abcam; ALT: ab282882 [mouse]/ab234579 [rat], AST: ab263882 [mouse]/ab263883 [rat]). Liver glycogen concentrations were measured in 0 and 4 hr fasted mice and rats using the phenol-sulfuric acid method reported by Schaubroeck et al., 2022. PC activity (Vatner et al., 2013) and peroxidase activity (Sigma \u2018Enzymatic Assay of Peroxidase (EC 1.11.1.7)\u2019 protocol) were measured enzymatically in the liver.\n\n### In vivo flux analysis\n\nEndogenous palmitate and glucose production were determined using equation 3 in Supplementary file 2; Perry et al., 2017a comparing plasma enrichment to the infused tracer enrichment, measured using gas chromatography/mass spectrometry (GC/MS) as described in the Biochemical Analysis section. In the fasted/substrate-depleted and, therefore, glycogen-depleted state (Perry et al., 2018), endogenous glucose production can be attributed entirely to gluconeogenesis (equation 4). Based on equations previously described (Perry et al., 2017b), and after verifying minimal renal and hepatic bicarbonate enrichment by GC/MS (Perry et al., 2020), we measured the whole-body ratio of phosphoenolpyruvate carboxykinase (PEPCK) flux (i.e. gluconeogenesis from pyruvate) to total gluconeogenesis by mass isotopomer distribution analysis (equations 5 and 6), correcting for any [13C2] glucose synthesized from [13C2] trioses (equation 7). At steady state, VPEPCK is equal to the sum of pyruvate kinase flux and pyruvate carboxylase flux (VPK +VPC); based on our previously published data, under fasting conditions pyruvate kinase flux is minimal, less than 10% of pyruvate carboxylase flux (Perry et al., 2016). Therefore, we can assume that the rate of gluconeogenesis from pyruvate (i.e. VPEPCK) is approximately equal to VPC.\n\nNext, we measured the ratio of pyruvate carboxylase anaplerosis to citrate synthase flux (VPC/VCS) using the enrichment of liver alanine, malate, and glutamate (equation 8). This equation, in which pyruvate cycling is again assumed minimal, is derived in detail in our recent publication (Perry et al., 2017b). We then measured the fractional contribution of glycolytic carbons to the TCA cycle (i.e. pyruvate dehydrogenase flux relative to citrate synthase flux, VPDH/VCS) (equation 9) using the model and assumptions we (Befroy et al., 2014; Perry et al., 2018; Perry et al., 2016; Song et al., 2020) and others Alves et al., 2011; Petersen et al., 2016; Petersen et al., 2015 have described. Finally, absolute turnover rates (equations 10-13) were determined, utilizing the ratios measured with equations 5, 8, and 9, and the absolute gluconeogenesis rate measured using equations 3 and 4.\n\n### Statistical considerations, power calculations, and statistical analysis\n\nThe sample size (n=4\u20136 in vitro replicates, 2\u20134 slices, or 4\u20136 animals in vivo) was calculated to supply 80% power at \u03b1=0.05 to detect the expected twofold difference with 50% variance. Power calculations were performed using the ClinCalc online calculator. Groups in the in vivo and in vitro studies were compared using the two-tailed unpaired Student\u2019s t-test after confirming that the data met the assumptions of the test. The in vivo studies compared 4\u20136 biological replicates (unique animals), the liver slice studies compared 2\u20134 biological replicates, and the in vitro studies compared two biological replicates, with three technical replicates (separate wells) from each. No samples were excluded from analysis in the in vitro or ex vivo studies. Randomization and blinding were not possible during the in vivo studies because of the readily apparent differences between mice and rats, but all analyses were performed by investigators who were blinded as to species. No adverse events occurred. ARRIVE reporting guidelines were followed.\n",
+      "created_at": "2025-12-04T01:43:13.728721Z"
+    },
+    {
+      "id": "1ee4907a-cb74-483e-b24a-db069a07c79c",
+      "submission_id": "3b547029-3330-4cfd-9083-e7ac4a3f3d11",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Malcolm J McConville, https://ror.org/01ej9dk98 The University of Melbourne Australia\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.78335.sa0](https://doi.org/10.7554/eLife.78335.sa0)\n\nKey metabolic processes have been shown to scale inversely with the body mass of different animals. This study provides direct evidence for metabolic scaling of key metabolic fluxes in the livers of mice and rats, as well as species-specific differences in the transcription and expression of enzymes involved in energy metabolism that could contribute to metabolic scaling. The finding suggests that metabolic scaling likely reflects multiple levels of regulation and have broad implications for studying animal metabolism and physiology.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Malcolm J McConville, https://ror.org/01ej9dk98 The University of Melbourne Australia\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.78335.sa1](https://doi.org/10.7554/eLife.78335.sa1)\n\nOur editorial process produces two outputs: i) public reviews designed to be posted alongside the preprint for the benefit of readers; ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Gene Expression and Tracer-Based Metabolic Flux Analysis Reveals Tissue-Specific Metabolic Scaling in vitro, ex vivo, and in vivo\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, including Malcolm J McConville as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by David James as the Senior Editor.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\nThe reviewers appreciated the new insights that the study provides into metabolic scaling with body mass and the use of different approaches to understand the mechanistic basis for scaling. However, a number of key issues were identified which need to be addressed.\n\n1. All of the reviewers noted the need for further experimental data to support the conclusion that the species-specific differences in transcription of identified metabolic genes are reflected at the level of protein expression or enzyme activity. This could be addressed by reference to the author's own data, or to existing proteomics data-sets on the liver of different species and/or mRNA and proteome data within a single species.\n\n2. Are there orthologues of the different liver enzymes that were found to scale with body size and are they also transcriptionally down-regulated as body size increases?\n\n3. Do you see a similar transcriptional signature for other metabolic pathways that are known to inversely scale with body size (e.g. glycogen metabolism).\n\n4. Specific sections in the manuscript (introduction, ideas/speculations) and some of the conclusions need to be changed/toned down in light of the reviewers' comments. Issues with the description of the flux analysis (reviewer 2) also need to be addressed to allow full assessment of the findings.\n\nReviewer #1 (Recommendations for the authors):\n\nThe title should be changed to reflect the lack of metabolic scaling in vitro assays.\n\nCan the authors comment on the overall transcriptional activity of liver cells in different animals? Is it possible that global rates of transcription decrease in liver tissues of large animals and that the selective down-regulation of specific mRNA reflects differences in the rate of mRNA degradation?\n\nCan the authors comment on levels of transcription or fluxes for other interconnected pathways of central carbon metabolism, such as the pentose phosphate pathway, glycogen turnover, (sugar) nucleotide biosynthesis? In particular, glycogen turnover has been shown to be much faster in mice than in humans (with cellular stores being exhausted during diurnal fasting in mice, but not in human tissues). It would be of interest to confirm that key enzymes in glycogen turnover exhibit scaling (at the level of transcription or activity) in the different animals and/or reference this example.\n\nCan the authors comment on whether there are isoforms of the different enzymes that were found to scale with body size and whether the transcription of all isoforms was similarly related to body size?\n\nIt is proposed that enzymes involved in lipid peroxidation, and detoxification of hydrogen peroxide also inversely scale with body size. Is there any evidence for higher levels of oxidized lipids or hydrogen peroxide in mouse versus rat tissues (or tissues from other animals)?\n\nThe introduction is overly long and focused on summarizing the results of the current study.\n\nThe full names for all of the enzymes listed in Figure 1B (and the text) should be provided in the figure legend.\n\nReviewer #2 (Recommendations for the authors):\n\n1. The title does not convey the findings well, since scaling was not observed in vitro.\n\n2. To detect scaling, one needs to establish a linear relationship (in log-transformed variables). What is done in the current manuscript is that the ordering of trait values in terms of mass is identified; these are necessary but not sufficient for scaling. Specifications and clarifications are needed in multiple places in the manuscript.\n\n3. The repetitive statements about correlation between mRNA expression and protein abundance are misleading and must be corroborated by data. The authors of the cited paper concluded \"our data indicates that mRNA and protein levels correlate better than previously thought.\" This does not imply a strong correlation.\n\n4. There is no support for allometric scaling (allometric would require substantially more data, see my point 2, above) claimed in Figure 1. Figure 1 can be supplemented with GO enrichment analysis to inspect how pervasive is the ordering pattern.\n\n5. Broad spectrum of fluxes in line 160 is an overstatement. Identification of fluxes by MFA ala Wichert et al. would allow for estimation of fluxes on the level of a metabolic network. This is not addressed in the current work and should be discussed.\n\n6. The section starting with line 226 is obsolete. Machine learning here refers to classical clustering and should have been named as such.\n\n7. The section on ideas and speculations is far-fetched.\n\n8. The analysis of gene expression should detail the one-way ANOVA, given that only two replicates were used. In addition, the statement about p-value adjustment on line 352 is not understandable as currently written.\n\n9. The statement on line 78 is difficult to follow, some words are out of place.\n\n10. Metabolic flux analysis is by definition tracer-based, so the adjective is not needed.\n\nReviewer #3 (Recommendations for the authors):\n\nThis work explores new parameters to characterize metabolic scaling. Instead of analyzing oxygen consumption, as has been used before, the authors focus on gene expression and metabolic fluxes. Gene expression data sets were analyzed for 5 species with widely varied body masses, whereas the metabolic studies were performed for mouse and rat, the closest phylogenetic species studied and the closest in body mass. A subset including an unspecified number of genes, predominantly related to metabolic pathways, followed the pattern of metabolic scaling across the 5 species. When the authors analyzed metabolic fluxes in vitro using primary hepatocytes, there was an absence of scaling, confirming similar reports. Studies ex vivo using liver slices (with limited replicates) and in vivo showed increased metabolic fluxes in mice compared with rats. Most of the measurements are focused on the liver, with one measurement of fatty acid turnover reflecting adipose tissue. This is at odds with the authors' apparent claim that there were differences in multiple tissues. Additionally, 11 of 16 metabolic enzymes that scaled also required molecular oxygen. Consequently, is not clear whether the gene expression scaling just reflects the differences in oxygen consumption, as has been reported.\n\nSpecific issues:\n\n\u2013 The title implies that multiple tissues were analyzed, when in fact liver was the focus.\n\n\u2013 How many genes from the total number of genes analyzed followed the pattern of metabolic scaling? Is this a pattern or particular for a set of the 20 genes shown in the manuscript? Are those genes expected to change scaling when mutated?\n\n\u2013 Are the genes in Figure 1B. related to TCA cycle or electron transport chain?\n\n\u2013 The authors should discuss the limitations of having performed metabolic flux studies only in the two most closely related species. Can we assume that scaling of metabolic fluxes continues over the very large range of body masses of the species that were not analyzed? Or is it possible that scaling only occurs up to a threshold value of body mass?\n\n\u2013 The ex vivo studies appear to have been conducted using n = 2 for rats. Numbers of animals should be explicitly stated, as well as biological and technical replicates for in vitro and ex vivo experiments.\n\n\u2013 Male animals were used. Is there a basis for not also studying female mice?\n\n\u2013 The writing throughout the manuscript is laden with jargon and difficult to follow. There are sentences that are convoluted and do not make sense. Some of the jargon is not defined. The manuscript should be carefully edited throughout, including figure labeling and legends.\n",
+      "created_at": "2025-12-04T01:43:13.728721Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T01:43:13.728721Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T01:43:13.728721Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "c898a6dd-6ea4-4ed0-99d4-f61a3a04b1ab",
+      "content_id": "fd166826-7393-4e0c-86be-70e767650d7e",
+      "claim_id": "C1",
+      "claim": "Metabolic scaling refers to the inverse correlation of metabolic rates to body mass.",
+      "claim_type": "EXPLICIT",
+      "source": "Metabolic scaling, the inverse correlation of metabolic rates to body mass, has been appreciated for more than 80 years.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the abstract as a definition of metabolic scaling.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:13.728721Z"
+    },
+    {
+      "id": "bd233d8f-1faf-47e2-a81d-0059b517b692",
+      "content_id": "fd166826-7393-4e0c-86be-70e767650d7e",
+      "claim_id": "C2",
+      "claim": "Metabolic scaling has been appreciated for more than 80 years.",
+      "claim_type": "EXPLICIT",
+      "source": "Metabolic scaling, the inverse correlation of metabolic rates to body mass, has been appreciated for more than 80 years.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a historical claim stated in the abstract.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:13.728721Z"
+    },
+    {
+      "id": "9795f607-a8b7-491d-a0b8-057322d4cf3a",
+      "content_id": "fd166826-7393-4e0c-86be-70e767650d7e",
+      "claim_id": "C3",
+      "claim": "Studies of metabolic scaling have largely been restricted to mathematical modeling of caloric intake and oxygen consumption.",
+      "claim_type": "EXPLICIT",
+      "source": "Studies of metabolic scaling have largely been restricted to mathematical modeling of caloric intake and oxygen consumption, and mostly rely on computational modeling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a characterization of prior research stated in the abstract.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:13.728721Z"
+    },
+    {
+      "id": "c14b1efd-6a6f-4ab8-afee-57a1581b559e",
+      "content_id": "fd166826-7393-4e0c-86be-70e767650d7e",
+      "claim_id": "C4",
+      "claim": "The possibility that other metabolic processes scale with body size has not been comprehensively studied.",
+      "claim_type": "EXPLICIT",
+      "source": "The possibility that other metabolic processes scale with body size has not been comprehensively studied.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a gap in knowledge in the abstract.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:13.728721Z"
+    },
+    {
+      "id": "29e49086-90ba-4d32-adea-78a98efd3986",
+      "content_id": "fd166826-7393-4e0c-86be-70e767650d7e",
+      "claim_id": "C5",
+      "claim": "Gene expression in livers of five species spanning a 30,000-fold range in mass revealed differential expression according to body mass of genes related to cytosolic and mitochondrial metabolic processes.",
+      "claim_type": "EXPLICIT",
+      "source": "Gene expression in livers of five species spanning a 30,000-fold range in mass revealed differential expression according to body mass of genes related to cytosolic and mitochondrial metabolic processes, and to detoxication of oxidative damage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by transcriptomics data presented in Figures 1 and 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:13.728721Z"
+    },
+    {
+      "id": "798892de-5592-47d7-8333-bc02bce37450",
+      "content_id": "fd166826-7393-4e0c-86be-70e767650d7e",
+      "claim_id": "C6",
+      "claim": "Gene expression in livers of five species spanning a 30,000-fold range in mass revealed differential expression according to body mass of genes related to detoxication of oxidative damage.",
+      "claim_type": "EXPLICIT",
+      "source": "Gene expression in livers of five species spanning a 30,000-fold range in mass revealed differential expression according to body mass of genes related to cytosolic and mitochondrial metabolic processes, and to detoxication of oxidative damage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by transcriptomics data presented in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:13.728721Z"
+    },
+    {
+      "id": "583ac473-28df-455e-a91d-1ac75966105c",
+      "content_id": "fd166826-7393-4e0c-86be-70e767650d7e",
+      "claim_id": "C7",
+      "claim": "While ordering of metabolic fluxes is not observed in in vitro cell-autonomous settings, it is present in liver slices and in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparing C57BL/6 J mice with Sprague-Dawley rats, we demonstrate that while ordering of metabolic fluxes is not observed in in vitro cell-autonomous settings, it is present in liver slices and in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by data in Figures 4, 5, and 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:13.728721Z"
+    },
+    {
+      "id": "9f05b9c1-7c06-4771-a9f8-5877ead6e2f7",
+      "content_id": "fd166826-7393-4e0c-86be-70e767650d7e",
+      "claim_id": "C8",
+      "claim": "Metabolic scaling is regulated at the level of gene and protein expression, enzyme activity, and substrate supply.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these data reveal that metabolic scaling extends beyond oxygen consumption to other aspects of metabolism, and is regulated at the level of gene and protein expression, enzyme activity, and substrate supply.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion stated in the abstract and supported by multiple lines of evidence throughout the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:13.728721Z"
+    },
+    {
+      "id": "5b1aa872-9e83-40ce-a67e-f263c6d2223e",
+      "content_id": "fd166826-7393-4e0c-86be-70e767650d7e",
+      "claim_id": "C9",
+      "claim": "Max Kleiber published a seminal study on metabolic scaling in 1932.",
+      "claim_type": "EXPLICIT",
+      "source": "In 1932, Max Kleiber published a seminal study (Kleiber, 1932), integrating prior reports demonstrating a phenomenon that came to be termed 'Kleiber's law,' or the principle of metabolic scaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a historical fact supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:13.728721Z"
+    },
+    {
+      "id": "e4056d5e-a5be-47bf-9541-2151d01a323b",
+      "content_id": "fd166826-7393-4e0c-86be-70e767650d7e",
+      "claim_id": "C10",
+      "claim": "Metabolic processes in many animals scale inversely to three-quarters of their body mass.",
+      "claim_type": "EXPLICIT",
+      "source": "Metabolic scaling refers to the phenomenon that the metabolic processes in many animals, if not all, scale inversely to three-quarters of their body mass (West et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:13.728721Z"
+    },
+    {
+      "id": "08962939-4c74-4849-8b78-2f2c89589046",
+      "content_id": "fd166826-7393-4e0c-86be-70e767650d7e",
+      "claim_id": "C11",
+      "claim": "There is a reduction in metabolic rate as body size increases.",
+      "claim_type": "EXPLICIT",
+      "source": "In simpler terms, there is a reduction in metabolic rate as body size increases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a simplified explanation of metabolic scaling stated in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:13.728721Z"
+    },
+    {
+      "id": "8ff3b674-02f3-43b5-b94f-1b718903e860",
+      "content_id": "fd166826-7393-4e0c-86be-70e767650d7e",
+      "claim_id": "C12",
+      "claim": "An elephant is 25 million times larger than a fruit fly, yet its energy expenditure is only 20 thousand times higher.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, an elephant is 25 million times larger than a fruit fly, yet its energy expenditure is only 20 thousand times higher; thus, from the fruit fly to elephant, the metabolic rate per gram of body weight scales down 1250 times.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an illustrative example provided in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:13.728721Z"
+    },
+    {
+      "id": "1cd2abcd-c17e-4eb2-ba97-068446a66b9c",
+      "content_id": "fd166826-7393-4e0c-86be-70e767650d7e",
+      "claim_id": "C13",
+      "claim": "From the fruit fly to elephant, the metabolic rate per gram of body weight scales down 1250 times.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, an elephant is 25 million times larger than a fruit fly, yet its energy expenditure is only 20 thousand times higher; thus, from the fruit fly to elephant, the metabolic rate per gram of body weight scales down 1250 times.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a calculation based on the example provided in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:13.728721Z"
+    },
+    {
+      "id": "7806a4e8-3dae-47c6-8583-2d9b42d1c7f6",
+      "content_id": "fd166826-7393-4e0c-86be-70e767650d7e",
+      "claim_id": "C14",
+      "claim": "There is experimental evidence for metabolic scaling from bacteria to large mammals.",
+      "claim_type": "EXPLICIT",
+      "source": "While there is experimental evidence for metabolic scaling from bacteria to large mammals, data have been generated almost exclusively from observations of caloric intake and oxygen consumption, with gene and protein expression, and substrate fluxes almost entirely unexplored.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the scope of prior research in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:13.728721Z"
+    },
+    {
+      "id": "906327c3-981e-4c73-85fa-cfa367d94313",
+      "content_id": "fd166826-7393-4e0c-86be-70e767650d7e",
+      "claim_id": "C15",
+      "claim": "Prior metabolic scaling data have been generated almost exclusively from observations of caloric intake and oxygen consumption.",
+      "claim_type": "EXPLICIT",
+      "source": "While there is experimental evidence for metabolic scaling from bacteria to large mammals, data have been generated almost exclusively from observations of caloric intake and oxygen consumption, with gene and protein expression, and substrate fluxes almost entirely unexplored.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a characterization of prior research stated in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:13.728721Z"
+    },
+    {
+      "id": "f96c4ec5-e837-409e-a9f2-779f16fdb7d6",
+      "content_id": "fd166826-7393-4e0c-86be-70e767650d7e",
+      "claim_id": "C16",
+      "claim": "Gene and protein expression, and substrate fluxes have been almost entirely unexplored in metabolic scaling studies.",
+      "claim_type": "EXPLICIT",
+      "source": "While there is experimental evidence for metabolic scaling from bacteria to large mammals, data have been generated almost exclusively from observations of caloric intake and oxygen consumption, with gene and protein expression, and substrate fluxes almost entirely unexplored.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about gaps in prior research in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:13.728721Z"
+    },
+    {
+      "id": "9dc21e35-30af-4c49-bd2d-abc89b14c7b3",
+      "content_id": "fd166826-7393-4e0c-86be-70e767650d7e",
+      "claim_id": "C17",
+      "claim": "The study examined liver gene expression across five species: mice, rats, monkeys, humans, and cattle.",
+      "claim_type": "EXPLICIT",
+      "source": "Beginning at the transcriptional level, we studied liver gene expression across five species: mice (Mus musculus), rats (Rattus norvegicus), monkeys (Macaca mulatta), humans (Homo sapiens), and cattle (bos taurus), species with a 30,000-fold range of average body weight in adults (from 30 g in mice, to 900 kg in cattle).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the study design stated in the introduction.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:13.728721Z"
+    },
+    {
+      "id": "996b437e-2412-49ac-92a6-1be21ac23e4a",
+      "content_id": "fd166826-7393-4e0c-86be-70e767650d7e",
+      "claim_id": "C18",
+      "claim": "The five species studied have a 30,000-fold range of average body weight in adults, from 30 g in mice to 900 kg in cattle.",
+      "claim_type": "EXPLICIT",
+      "source": "Beginning at the transcriptional level, we studied liver gene expression across five species: mice (Mus musculus), rats (Rattus norvegicus), monkeys (Macaca mulatta), humans (Homo sapiens), and cattle (bos taurus), species with a 30,000-fold range of average body weight in adults (from 30 g in mice, to 900 kg in cattle).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about the species studied.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:13.728721Z"
+    },
+    {
+      "id": "7f7eaa98-71c2-4be5-8440-27e0763365ef",
+      "content_id": "fd166826-7393-4e0c-86be-70e767650d7e",
+      "claim_id": "C19",
+      "claim": "Numerous metabolic genes related to glycolysis, gluconeogenesis, fatty acid metabolism, oxygen consumption, electron transport, and redox function, and detoxification of oxidative damage, were expressed at levels inverse to body size.",
+      "claim_type": "EXPLICIT",
+      "source": "Numerous metabolic genes related to glycolysis, gluconeogenesis, fatty acid metabolism, oxygen consumption, electron transport, and redox function, and detoxification of oxidative damage, were expressed at levels inverse to body size.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the introduction and supported by data in Figures 1 and 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:13.728721Z"
+    },
+    {
+      "id": "d1fd8b89-d7be-4816-8f25-8f85324087eb",
+      "content_id": "fd166826-7393-4e0c-86be-70e767650d7e",
+      "claim_id": "C20",
+      "claim": "Approximately half of the genes in the liver that were expressed inversely proportionally to body size at the transcriptional level were also expressed at levels inversely proportional to body size at the level of protein expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Further analysis of liver proteomics revealed that approximately half of the genes in the liver that were expressed inversely proportionally to body size at the transcriptional level, were also expressed at levels inversely proportional to body size at the level of protein expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding stated in the introduction and supported by proteomics data in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:13.728721Z"
+    },
+    {
+      "id": "d10bd9b3-06fa-443c-97eb-17f9195ff0f1",
+      "content_id": "fd166826-7393-4e0c-86be-70e767650d7e",
+      "claim_id": "C21",
+      "claim": "Rats exhibit lower metabolic rates when compared to mice in and ex vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Our analysis shows that rats exhibit lower metabolic rates when compared to mice in and ex vivo; however, no significant differences were observed when we isolated hepatocytes and cultured them in vitro under identical conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the introduction and supported by data in Figures 5 and 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:13.728721Z"
+    },
+    {
+      "id": "6ffbe488-43ff-4599-9ba4-aa03435ca203",
+      "content_id": "fd166826-7393-4e0c-86be-70e767650d7e",
+      "claim_id": "C22",
+      "claim": "No significant differences in metabolic rates were observed between mice and rats when hepatocytes were isolated and cultured in vitro under identical conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Our analysis shows that rats exhibit lower metabolic rates when compared to mice in and ex vivo; however, no significant differences were observed when we isolated hepatocytes and cultured them in vitro under identical conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the introduction and supported by data in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:13.728721Z"
+    },
+    {
+      "id": "82509ccb-9772-42e2-b747-5a1b619e846f",
+      "content_id": "fd166826-7393-4e0c-86be-70e767650d7e",
+      "claim_id": "C23",
+      "claim": "Genes that are expressed inversely proportional to body weight in the liver are predominantly metabolic genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Genes within the liver that are expressed inversely proportional to body weight are predominantly metabolic genes",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a section heading and primary finding supported by data in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:13.728721Z"
+    },
+    {
+      "id": "85bf5874-f63f-46e4-9a4c-691d3ba9a206",
+      "content_id": "fd166826-7393-4e0c-86be-70e767650d7e",
+      "claim_id": "C24",
+      "claim": "After normalizing for differences in transcript length and abundance across species, genes that followed the pattern of mouse >rat > monkey >human > cow were predominantly related to metabolic pathways, including pyruvate metabolism, amino acid metabolism, and glucose metabolism.",
+      "claim_type": "EXPLICIT",
+      "source": "After normalizing for differences in transcript length and abundance across species, we filtered out genes that followed the pattern of mouse >rat > monkey >human > cow. The genes that met these criteria were predominantly related to metabolic pathways, including pyruvate metabolism, amino acid metabolism, and glucose metabolism (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding stated in the results and supported by Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:13.728721Z"
+    },
+    {
+      "id": "329e8fbc-be3b-4899-a5af-8c11ca39144d",
+      "content_id": "fd166826-7393-4e0c-86be-70e767650d7e",
+      "claim_id": "C25",
+      "claim": "Genes involved in amino acid, carbohydrate, energy, lipid, vitamin, and TCA cycle metabolism demonstrated a range of degrees of inverse correlation with body mass, with only TCA cycle genes clustering together.",
+      "claim_type": "EXPLICIT",
+      "source": "Genes from this list were further restricted to genes involved in amino acid, carbohydrate, energy, lipid, vitamin, and TCA cycle metabolism, and demonstrated a range of degrees of inverse correlation with body mass, with only TCA cycle genes clustering together (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding stated in the results and supported by Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:13.728721Z"
+    },
+    {
+      "id": "72e7374f-938e-45a7-b511-f65733c8bd8f",
+      "content_id": "fd166826-7393-4e0c-86be-70e767650d7e",
+      "claim_id": "C26",
+      "claim": "Eleven of sixteen critical metabolic enzymes that scaled required molecular oxygen, NAD+/NADH, or ATP/ADP for function.",
+      "claim_type": "EXPLICIT",
+      "source": "Eleven of sixteen critical metabolic enzymes that scaled required molecular oxygen, NAD+/NADH, or ATP/ADP for function, possibly indicating exquisite regulation of energy-consuming processes at the individual gene level.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding stated in the results and supported by data in Figure 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:13.728721Z"
+    },
+    {
+      "id": "2948db4f-cb95-41aa-a4f4-7184ca66c633",
+      "content_id": "fd166826-7393-4e0c-86be-70e767650d7e",
+      "claim_id": "C27",
+      "claim": "Genes involved in the detoxication of lipid peroxidation-derived aldehydes (ALDH7A1), hydrogen peroxide (GPX1), and ammonia (GLUL) suggest scaling of damage control mechanisms that are associated with increased oxidative metabolism across species.",
+      "claim_type": "EXPLICIT",
+      "source": "Genes involved in the detoxication of lipid peroxidation-derived aldehydes (ALDH7A1), hydrogen peroxide (GPX1), and ammonia (GLUL) suggest scaling of damage control mechanisms that are associated with increased oxidative metabolism across species (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an interpretation of findings stated in the results and supported by Figure 2A.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:13.728721Z"
+    },
+    {
+      "id": "bbb0c00b-aaa1-406b-8e7f-ed0e527a1620",
+      "content_id": "fd166826-7393-4e0c-86be-70e767650d7e",
+      "claim_id": "C28",
+      "claim": "The inverse correlation between body size and expression of genes that are associated with interorgan crosstalk is consistent with scaling in vivo which would not be expected in plated cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The inverse correlation between body size and expression of genes that are associated with interorgan crosstalk is consistent with scaling in vivo which would not be expected in plated cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of findings stated in the results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:13.728721Z"
+    },
+    {
+      "id": "4307f275-243e-4a91-a099-094cb79e980f",
+      "content_id": "fd166826-7393-4e0c-86be-70e767650d7e",
+      "claim_id": "C29",
+      "claim": "GPT1 is involved in recycling skeletal muscle-derived alanine back to liver-derived glucose.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the differentially expressed genes include GPT1, which is involved in recycling skeletal muscle-derived alanine back to liver-derived glucose (Felig and Wahren, 1971; Petersen et al., 2019), and the adiponectin receptor (ADIPOR1), which binds an adipose tissue-derived hormone that regulates gluconeogenesis and fatty acid oxidation (Lin and Accili, 2011; Li et al., 2020 Figure 2B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about gene function supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:13.728721Z"
+    },
+    {
+      "id": "722c0569-26e2-4b5c-9a8b-c423899a826d",
+      "content_id": "fd166826-7393-4e0c-86be-70e767650d7e",
+      "claim_id": "C30",
+      "claim": "The adiponectin receptor (ADIPOR1) binds an adipose tissue-derived hormone that regulates gluconeogenesis and fatty acid oxidation.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the differentially expressed genes include GPT1, which is involved in recycling skeletal muscle-derived alanine back to liver-derived glucose (Felig and Wahren, 1971; Petersen et al., 2019), and the adiponectin receptor (ADIPOR1), which binds an adipose tissue-derived hormone that regulates gluconeogenesis and fatty acid oxidation (Lin and Accili, 2011; Li et al., 2020 Figure 2B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about gene function supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:13.728721Z"
+    },
+    {
+      "id": "5ad1a1c2-d2aa-4486-992b-ff230af5ea7b",
+      "content_id": "fd166826-7393-4e0c-86be-70e767650d7e",
+      "claim_id": "C31",
+      "claim": "All three enzymes (Glul, Lipe, and Dlst) scaled relative to Actb.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that all three enzymes (Glul, Lipe, and Dlst) scaled relative to Actb (Figure 2\u2014figure supplement 1A\u2013C), whereas structural genes (collagenase 3 [Mmp3] and Larp1) did not (Figure 2\u2014figure supplement 1D\u2013E), indicating that the differences in metabolic gene expression observed across species is likely not a result of global changes in RNA levels.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from qPCR analysis stated in the results and supported by Figure 2\u2014figure supplement 1A\u2013C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:13.728721Z"
+    },
+    {
+      "id": "c44369cd-8129-4ad9-9ffd-06379c62e5d6",
+      "content_id": "fd166826-7393-4e0c-86be-70e767650d7e",
+      "claim_id": "C32",
+      "claim": "Structural genes (collagenase 3 [Mmp3] and Larp1) did not scale relative to Actb.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that all three enzymes (Glul, Lipe, and Dlst) scaled relative to Actb (Figure 2\u2014figure supplement 1A\u2013C), whereas structural genes (collagenase 3 [Mmp3] and Larp1) did not (Figure 2\u2014figure supplement 1D\u2013E), indicating that the differences in metabolic gene expression observed across species is likely not a result of global changes in RNA levels.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from qPCR analysis stated in the results and supported by Figure 2\u2014figure supplement 1D\u2013E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:13.728721Z"
+    },
+    {
+      "id": "b54993d5-8a59-4969-aef1-12e4291d0790",
+      "content_id": "fd166826-7393-4e0c-86be-70e767650d7e",
+      "claim_id": "C33",
+      "claim": "The differences in metabolic gene expression observed across species is likely not a result of global changes in RNA levels.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that all three enzymes (Glul, Lipe, and Dlst) scaled relative to Actb (Figure 2\u2014figure supplement 1A\u2013C), whereas structural genes (collagenase 3 [Mmp3] and Larp1) did not (Figure 2\u2014figure supplement 1D\u2013E), indicating that the differences in metabolic gene expression observed across species is likely not a result of global changes in RNA levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the qPCR findings stated in the results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:13.728721Z"
+    },
+    {
+      "id": "d9165ff9-92c9-417d-9976-7b26c4c147a9",
+      "content_id": "fd166826-7393-4e0c-86be-70e767650d7e",
+      "claim_id": "C34",
+      "claim": "Three proteins (GLUL, GPX1, and MDH1) were found to follow a reverse correlation with body size.",
+      "claim_type": "EXPLICIT",
+      "source": "The dataset contained protein expression corresponding to eight of the twenty genes identified to scale in our transcriptomics data analysis. Of these, three (GLUL, GPX1, and MDH1) were found to follow a reverse correlation with body size (Figure 3A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from proteomics analysis stated in the results and supported by Figure 3A\u2013C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:13.728721Z"
+    },
+    {
+      "id": "797a0823-0003-46bf-a952-7b1dd8be2e8e",
+      "content_id": "fd166826-7393-4e0c-86be-70e767650d7e",
+      "claim_id": "C35",
+      "claim": "GLUL protein was found to be expressed inversely proportionally to body size in the left ventricle of the heart.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, one of these proteins (GLUL) was also found to be expressed inversely proportionally to body size in the left ventricle of the heart (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from proteomics analysis stated in the results and supported by Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:13.728721Z"
+    },
+    {
+      "id": "a843c818-2082-4d1f-ab4f-b533f05d8dfd",
+      "content_id": "fd166826-7393-4e0c-86be-70e767650d7e",
+      "claim_id": "C36",
+      "claim": "Both alanine aminotransferase (ALT) and aspartate aminotransferase (AST) exhibited lower concentrations in humans as compared to rats and rats as compared to mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, we measured liver transaminase concentrations and observed that both alanine aminotransferase (ALT) and aspartate aminotransferase (AST) exhibited lower concentrations in humans as compared to rats and rats as compared to mice (Figure 3E\u2013F), consistent with scaling at the level of protein expression as well as mRNA expression.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding stated in the results and supported by Figure 3E\u2013F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:13.728721Z"
+    },
+    {
+      "id": "60927a9a-8769-425f-9426-85a5efbfdf5e",
+      "content_id": "fd166826-7393-4e0c-86be-70e767650d7e",
+      "claim_id": "C37",
+      "claim": "30\u201340% lower activity of peroxidase and pyruvate carboxylase per mg tissue was observed in rats as compared to mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we utilized established enzymatic assays to measure the activity of peroxidase and pyruvate carboxylase in the livers of mice and rats. 30\u201340% lower activity of each enzyme per mg tissue was observed in rats as compared to mice (Figure 3\u2014figure supplement 1A\u2013B), suggesting scaling at the level of metabolic enzyme activity.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from enzymatic assays stated in the results and supported by Figure 3\u2014figure supplement 1A\u2013B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:13.728721Z"
+    },
+    {
+      "id": "d17fea0e-a75a-4cc2-98e3-be51b1315a4b",
+      "content_id": "fd166826-7393-4e0c-86be-70e767650d7e",
+      "claim_id": "C38",
+      "claim": "When PINTA was used to assess cytosolic and mitochondrial fluxes in plated hepatocytes, no significant differences were observed between species in any of the fluxes measured.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the possibility that hepatocyte-extrinsic signals are primarily responsible for metabolic scaling, when we used PINTA to assess cytosolic and mitochondrial fluxes, we observed no significant differences between species in any of the fluxes measured in plated hepatocytes: glucose production, VPC, VCS, the contribution of glucose or fatty acids to the tricarboxylic acid (TCA) cycle, or lipolysis (Figure 4A\u2013H, Figure 4\u2014figure supplement 1D\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from in vitro flux analysis stated in the results and supported by Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:13.728721Z"
+    },
+    {
+      "id": "4654e6be-9166-49a5-b11c-a9e51123ec58",
+      "content_id": "fd166826-7393-4e0c-86be-70e767650d7e",
+      "claim_id": "C39",
+      "claim": "A mitochondrial stress test in plated hepatocytes revealed no difference in any parameter between mice and rats.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, a mitochondrial stress test in plated hepatocytes revealed no difference in any parameter: neither basal mitochondrial and non-mitochondrial respiration, ATP production, maximal (uncoupled) respiration, spare respiratory capacity, nor proton leak differed between plated hepatocytes from mice and rats (Figure 4I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from oxygen consumption analysis stated in the results and supported by Figure 4I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:13.728721Z"
+    },
+    {
+      "id": "6406c8e9-3309-4cf6-aec4-f1ba57ae3152",
+      "content_id": "fd166826-7393-4e0c-86be-70e767650d7e",
+      "claim_id": "C40",
+      "claim": "Previous studies have demonstrated scaling in vitro in cell suspensions only when analyzed immediately after hepatocyte isolation.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies have demonstrated scaling in vitro in cell suspensions only when analyzed immediately after hepatocyte isolation (Porter and Brand, 1995), and have suggested that the phenomenon of scaling gradually disappears around 24 hr post removal (Brown et al., 2007), similar to the conditions in which we performed these studies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about prior research supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:13.728721Z"
+    },
+    {
+      "id": "6131e243-75a4-445d-adad-830f4bbed748",
+      "content_id": "fd166826-7393-4e0c-86be-70e767650d7e",
+      "claim_id": "C41",
+      "claim": "The phenomenon of scaling gradually disappears around 24 hr post removal from the organism.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies have demonstrated scaling in vitro in cell suspensions only when analyzed immediately after hepatocyte isolation (Porter and Brand, 1995), and have suggested that the phenomenon of scaling gradually disappears around 24 hr post removal (Brown et al., 2007), similar to the conditions in which we performed these studies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about prior research supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:13.728721Z"
+    },
+    {
+      "id": "2d12cf10-e74f-466a-bdba-8fbdbe7076e1",
+      "content_id": "fd166826-7393-4e0c-86be-70e767650d7e",
+      "claim_id": "C42",
+      "claim": "Most prior in vitro studies have demonstrated an absence of scaling, in contrast to in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Most prior in vitro studies have also demonstrated an absence of scaling, in contrast to in vivo (Glazier, 2015), and we extend these results to gluconeogenic and lipolytic fluxes in hepatocytes, glucose production in liver slices, and multimodal flux analysis in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about prior research supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:13.728721Z"
+    },
+    {
+      "id": "63c39c7c-b277-48c9-9160-b2177105f78f",
+      "content_id": "fd166826-7393-4e0c-86be-70e767650d7e",
+      "claim_id": "C43",
+      "claim": "Liver glucose production per gram liver mass was threefold greater in mouse liver slices as compared to rats.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, we found that liver glucose production per gram liver mass was threefold greater in mouse liver slices as compared to rats (Figure 5A\u2013B), suggesting that hepatocyte-extrinsic signals (for example, from other liver cell types) are involved in liver metabolic scaling.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from ex vivo liver slice studies stated in the results and supported by Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:13.728721Z"
+    },
+    {
+      "id": "f3f7da0c-2ca3-4ac3-9ae7-2d924a405485",
+      "content_id": "fd166826-7393-4e0c-86be-70e767650d7e",
+      "claim_id": "C44",
+      "claim": "Hepatocyte-extrinsic signals (for example, from other liver cell types) are involved in liver metabolic scaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, we found that liver glucose production per gram liver mass was threefold greater in mouse liver slices as compared to rats (Figure 5A\u2013B), suggesting that hepatocyte-extrinsic signals (for example, from other liver cell types) are involved in liver metabolic scaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the liver slice findings stated in the results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:13.728721Z"
+    },
+    {
+      "id": "7838b41e-8d7e-417b-a149-94355fd699c6",
+      "content_id": "fd166826-7393-4e0c-86be-70e767650d7e",
+      "claim_id": "C45",
+      "claim": "Both endogenous glucose production and gluconeogenesis from pyruvate (VPC) per gram liver were more than twofold higher in mice than rats.",
+      "claim_type": "EXPLICIT",
+      "source": "Using PINTA, we found that both endogenous glucose production and gluconeogenesis from pyruvate (VPC) per gram liver were more than twofold higher in mice than rats (Figure 6B\u2013C), although the fractional contribution of pyruvate to gluconeogenesis did not differ between mice and rats (Figure 6\u2014figure supplement 1H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from in vivo flux analysis stated in the results and supported by Figure 6B\u2013C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:13.728721Z"
+    },
+    {
+      "id": "2d56b719-ca30-45c3-bc4b-9910a4ae0eb9",
+      "content_id": "fd166826-7393-4e0c-86be-70e767650d7e",
+      "claim_id": "C46",
+      "claim": "The fractional contribution of pyruvate to gluconeogenesis did not differ between mice and rats.",
+      "claim_type": "EXPLICIT",
+      "source": "Using PINTA, we found that both endogenous glucose production and gluconeogenesis from pyruvate (VPC) per gram liver were more than twofold higher in mice than rats (Figure 6B\u2013C), although the fractional contribution of pyruvate to gluconeogenesis did not differ between mice and rats (Figure 6\u2014figure supplement 1H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from in vivo flux analysis stated in the results and supported by Figure 6\u2014figure supplement 1H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:13.728721Z"
+    },
+    {
+      "id": "7206f746-5b28-475e-9fa9-f30bbcb5f4ab",
+      "content_id": "fd166826-7393-4e0c-86be-70e767650d7e",
+      "claim_id": "C47",
+      "claim": "Mitochondrial oxidation scaled similarly, increasing threefold in mice as compared to rats studied under the same conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Mitochondrial oxidation scaled similarly, increasing threefold in mice as compared to rats studied under the same conditions, due to increases in both glucose oxidation (pyruvate dehydrogenase flux, VPDH) and fatty acid oxidation (Figure 6D\u2013F), associated with an increase in the ratio of pyruvate carboxylase anaplerosis to citrate synthase flux (VPC/VCS) without any difference in the fraction of VCS flux fueled by glucose through PDH (Figure 6\u2014figure supplement 1I\u2013J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from in vivo flux analysis stated in the results and supported by Figure 6D\u2013F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:13.728721Z"
+    },
+    {
+      "id": "6ab35d91-aa63-4968-af52-cfb74ff3b6a9",
+      "content_id": "fd166826-7393-4e0c-86be-70e767650d7e",
+      "claim_id": "C48",
+      "claim": "Whole-body fatty acid turnover, reflecting lipolysis, was 2.5-fold higher in mice than in rats.",
+      "claim_type": "EXPLICIT",
+      "source": "These differences in metabolic fluxes according to body size applied not only to rodent liver metabolism but also to adipose tissue metabolism: whole-body fatty acid turnover, reflecting lipolysis, was 2.5-fold higher in mice than in rats (Figure 6G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from in vivo flux analysis stated in the results and supported by Figure 6G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:13.728721Z"
+    },
+    {
+      "id": "77874087-128a-4b9c-a839-90d17f2cee5a",
+      "content_id": "fd166826-7393-4e0c-86be-70e767650d7e",
+      "claim_id": "C49",
+      "claim": "No sex differences were observed in any of the measured fluxes.",
+      "claim_type": "EXPLICIT",
+      "source": "No sex differences were observed in any of the measured fluxes (Figure 6\u2014figure supplement 1K\u2013P).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding stated in the results and supported by Figure 6\u2014figure supplement 1K\u2013P.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:13.728721Z"
+    },
+    {
+      "id": "966408c1-4ba2-4626-b53a-ef3ea8c2d6e0",
+      "content_id": "fd166826-7393-4e0c-86be-70e767650d7e",
+      "claim_id": "C50",
+      "claim": "In vivo mitochondrial oxidation (TCA cycle flux) was threefold higher in mice than in rats, while in vitro measurements of oxygen consumption throughout a mitochondrial stress test, TCA cycle flux, and glucose production were not different between the species.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these data emphasize the inadequacy of common in vitro methods as a readout of in vivo metabolism: whereas in vivo mitochondrial oxidation (TCA cycle flux) was threefold higher in mice than in rats, in vitro measurements of oxygen consumption throughout a mitochondrial stress test, TCA cycle flux, and glucose production were not different between the species (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a comparison of in vivo and in vitro findings stated in the results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:13.728721Z"
+    },
+    {
+      "id": "dfeb27ac-f1f9-4a4a-b244-12c9d38ce2ff",
+      "content_id": "fd166826-7393-4e0c-86be-70e767650d7e",
+      "claim_id": "C51",
+      "claim": "The in vitro flux data showed no distinct clustering between species.",
+      "claim_type": "EXPLICIT",
+      "source": "A clustering dendrogram was applied to our in vitro flux data and showed no distinct clustering between species (Figure 7A\u2013B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from clustering analysis stated in the results and supported by Figure 7B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:13.728721Z"
+    },
+    {
+      "id": "69d2458b-60af-48b7-9a59-5fa526ff2a7b",
+      "content_id": "fd166826-7393-4e0c-86be-70e767650d7e",
+      "claim_id": "C52",
+      "claim": "The in vivo metabolic flux data led to distinct clustering of rats and mice.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the in vivo metabolic flux data led to distinct clustering of rats and mice (Figure 7C), providing a classical clustering-based objective analysis of in vitro versus in vivo metabolic flux.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from clustering analysis stated in the results and supported by Figure 7C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:13.728721Z"
+    },
+    {
+      "id": "d80d1515-4ab7-4607-9e02-479578d36d41",
+      "content_id": "fd166826-7393-4e0c-86be-70e767650d7e",
+      "claim_id": "C53",
+      "claim": "Oxygen consumption has been shown to scale inversely with body mass in species ranging in mass across 20 orders of magnitude, from 10\u201314 to 106 grams.",
+      "claim_type": "EXPLICIT",
+      "source": "Oxygen consumption has been shown to scale inversely with body mass in species ranging in mass across 20 orders of magnitude, from 10\u201314 to 106 grams (Ernest et al., 2003; Gillooly et al., 2001; Kleiber, 1932; Makarieva et al., 2005a; Makarieva et al., 2008; Savage et al., 2004; West et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about prior research supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:13.728721Z"
+    },
+    {
+      "id": "c66ad22f-7fb4-40e4-8212-8ed559ba49a8",
+      "content_id": "fd166826-7393-4e0c-86be-70e767650d7e",
+      "claim_id": "C54",
+      "claim": "Metabolic scaling has been shown to occur in prokaryotes.",
+      "claim_type": "EXPLICIT",
+      "source": "This phenomenon has been most studied in mammals, but is highly conserved, having also been shown to occur in prokaryotes (Fenchel and Finlay, 1983; Makarieva et al., 2005a; Makarieva et al., 2005a; Makarieva et al., 2008; Moses et al., 2008), plants (Makarieva et al., 2005b; Mori et al., 2010; Reich et al., 2006), insects (Chown et al., 2007; Maino and Kearney, 2014; Makarieva et al., 2005a), fish (Clarke and Johnston, 1999; Gjoni et al., 2020; Rubalcaba et al., 2020), and birds (Glazier, 2008; Hudson et al., 2013; Makarieva et al., 2005b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about prior research supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:13.728721Z"
+    },
+    {
+      "id": "cdb5bfd5-826e-44d1-8602-4ca9fb590164",
+      "content_id": "fd166826-7393-4e0c-86be-70e767650d7e",
+      "claim_id": "C55",
+      "claim": "Metabolic scaling has been shown to occur in plants.",
+      "claim_type": "EXPLICIT",
+      "source": "This phenomenon has been most studied in mammals, but is highly conserved, having also been shown to occur in prokaryotes (Fenchel and Finlay, 1983; Makarieva et al., 2005a; Makarieva et al., 2005a; Makarieva et al., 2008; Moses et al., 2008), plants (Makarieva et al., 2005b; Mori et al., 2010; Reich et al., 2006), insects (Chown et al., 2007; Maino and Kearney, 2014; Makarieva et al., 2005a), fish (Clarke and Johnston, 1999; Gjoni et al., 2020; Rubalcaba et al., 2020), and birds (Glazier, 2008; Hudson et al., 2013; Makarieva et al., 2005b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about prior research supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:13.728721Z"
+    },
+    {
+      "id": "c89fb008-819b-4612-895a-2b794d1c9eac",
+      "content_id": "fd166826-7393-4e0c-86be-70e767650d7e",
+      "claim_id": "C56",
+      "claim": "Metabolic scaling has been shown to occur in insects.",
+      "claim_type": "EXPLICIT",
+      "source": "This phenomenon has been most studied in mammals, but is highly conserved, having also been shown to occur in prokaryotes (Fenchel and Finlay, 1983; Makarieva et al., 2005a; Makarieva et al., 2005a; Makarieva et al., 2008; Moses et al., 2008), plants (Makarieva et al., 2005b; Mori et al., 2010; Reich et al., 2006), insects (Chown et al., 2007; Maino and Kearney, 2014; Makarieva et al., 2005a), fish (Clarke and Johnston, 1999; Gjoni et al., 2020; Rubalcaba et al., 2020), and birds (Glazier, 2008; Hudson et al., 2013; Makarieva et al., 2005b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about prior research supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:13.728721Z"
+    },
+    {
+      "id": "1f30176e-77a1-492d-bace-a7c44d5dca7f",
+      "content_id": "fd166826-7393-4e0c-86be-70e767650d7e",
+      "claim_id": "C57",
+      "claim": "Metabolic scaling has been shown to occur in fish.",
+      "claim_type": "EXPLICIT",
+      "source": "This phenomenon has been most studied in mammals, but is highly conserved, having also been shown to occur in prokaryotes (Fenchel and Finlay, 1983; Makarieva et al., 2005a; Makarieva et al., 2005a; Makarieva et al., 2008; Moses et al., 2008), plants (Makarieva et al., 2005b; Mori et al., 2010; Reich et al., 2006), insects (Chown et al., 2007; Maino and Kearney, 2014; Makarieva et al., 2005a), fish (Clarke and Johnston, 1999; Gjoni et al., 2020; Rubalcaba et al., 2020), and birds (Glazier, 2008; Hudson et al., 2013; Makarieva et al., 2005b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about prior research supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:13.728721Z"
+    },
+    {
+      "id": "ff6c587c-e8cb-4e5f-8d2e-7f018251b9c2",
+      "content_id": "fd166826-7393-4e0c-86be-70e767650d7e",
+      "claim_id": "C58",
+      "claim": "Metabolic scaling has been shown to occur in birds.",
+      "claim_type": "EXPLICIT",
+      "source": "This phenomenon has been most studied in mammals, but is highly conserved, having also been shown to occur in prokaryotes (Fenchel and Finlay, 1983; Makarieva et al., 2005a; Makarieva et al., 2005a; Makarieva et al., 2008; Moses et al., 2008), plants (Makarieva et al., 2005b; Mori et al., 2010; Reich et al., 2006), insects (Chown et al., 2007; Maino and Kearney, 2014; Makarieva et al., 2005a), fish (Clarke and Johnston, 1999; Gjoni et al., 2020; Rubalcaba et al., 2020), and birds (Glazier, 2008; Hudson et al., 2013; Makarieva et al., 2005b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about prior research supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:13.728721Z"
+    },
+    {
+      "id": "e7b0b4a9-a930-4487-9b86-e52fc473a496",
+      "content_id": "fd166826-7393-4e0c-86be-70e767650d7e",
+      "claim_id": "C60",
+      "claim": "The metabolic processes observed to be higher in mice as compared to rats did not necessarily adhere quantitatively to the classic metabolic scaling relationship, with metabolic rates proportional to three-quarters of body mass.",
+      "claim_type": "EXPLICIT",
+      "source": "It is important to note that the metabolic processes which we observed to be higher in mice as compared to rats did not necessarily adhere quantitatively to the classic metabolic scaling relationship, with metabolic rates proportional to three-quarters of body mass.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a caveat about the findings stated in the discussion.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:13.728721Z"
+    },
+    {
+      "id": "39435c08-8732-4863-b543-ca75ea44ab26",
+      "content_id": "fd166826-7393-4e0c-86be-70e767650d7e",
+      "claim_id": "C61",
+      "claim": "The scaling relationship is multidimensional: it is entirely conceivable that whole-body oxygen consumption could be proportional to three-quarters of body mass, while other metabolic processes may exhibit a different scaling relationship.",
+      "claim_type": "EXPLICIT",
+      "source": "This speaks to the idea that the scaling relationship is multidimensional: it is entirely conceivable that whole-body oxygen consumption could be proportional to three-quarters of body mass, while other metabolic processes may exhibit a different scaling relationship.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation stated in the discussion.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:13.728721Z"
+    },
+    {
+      "id": "f466c73a-8d86-45de-90ff-31d20bf2742e",
+      "content_id": "fd166826-7393-4e0c-86be-70e767650d7e",
+      "claim_id": "C62",
+      "claim": "The possibility that gene expression, as reflected by mRNA abundance, may also scale with body mass has not been previously addressed.",
+      "claim_type": "EXPLICIT",
+      "source": "The possibility that gene expression, as reflected by mRNA abundance, may also scale with body mass has not been previously addressed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about novelty of the findings in the discussion.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:13.728721Z"
+    },
+    {
+      "id": "fa4bcde8-d166-4221-806c-1af114d82d1e",
+      "content_id": "fd166826-7393-4e0c-86be-70e767650d7e",
+      "claim_id": "C63",
+      "claim": "The collection of genes whose expression is inversely correlated with body mass is enriched for genes related to metabolic processes, and whose corresponding proteins' enzymatic action are constrained by the supply of substrate, NAD, ATP, or oxygen.",
+      "claim_type": "EXPLICIT",
+      "source": "Rather, the collection of genes whose expression is inversely correlated with body mass is enriched for genes related to metabolic processes, and whose corresponding proteins' enzymatic action are constrained by the supply of substrate, NAD, ATP, or oxygen.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of findings stated in the discussion.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:13.728721Z"
+    },
+    {
+      "id": "49ae5478-cfbe-445a-84bd-b73eb9ac9983",
+      "content_id": "fd166826-7393-4e0c-86be-70e767650d7e",
+      "claim_id": "C64",
+      "claim": "Metabolic scaling cannot fully be explained at the transcriptional level, because many rate-limiting enzymes in the metabolic processes measured in vivo did not scale at the transcriptional level.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it should be noted that metabolic scaling cannot fully be explained at the transcriptional level, because many rate-limiting enzymes in the metabolic processes measured in vivo did not scale at the transcriptional level, and only approximately half of genes that scaled at the level of mRNA scaled at the level of protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of findings stated in the discussion.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:13.728721Z"
+    },
+    {
+      "id": "65b3d4f0-afa2-4b26-be6b-c5fd6ae6d920",
+      "content_id": "fd166826-7393-4e0c-86be-70e767650d7e",
+      "claim_id": "C65",
+      "claim": "It is likely that both transcriptional and other mechanisms \u2013 such as enzyme activity \u2013 are responsible for variations in metabolic flux per unit mass, inversely proportionally to body size.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, it is likely that both transcriptional and other mechanisms \u2013 such as enzyme activity \u2013 are responsible for variations in metabolic flux per unit mass, inversely proportionally to body size.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation stated in the discussion.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:13.728721Z"
+    },
+    {
+      "id": "d8e902b2-3ef8-4fed-a75a-5bd9fce29d4d",
+      "content_id": "fd166826-7393-4e0c-86be-70e767650d7e",
+      "claim_id": "C66",
+      "claim": "The currently available data do not allow us to assess whether the expression of certain isoforms of key metabolic enzymes scales differentially across species.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, the currently available data do not allow us to assess whether the expression of certain isoforms of key metabolic enzymes scales differentially across species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a limitation stated in the discussion.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:13.728721Z"
+    },
+    {
+      "id": "5e2df3f5-3dc3-4462-8745-672c4ea9b80b",
+      "content_id": "fd166826-7393-4e0c-86be-70e767650d7e",
+      "claim_id": "C67",
+      "claim": "Measurement of oxygen consumption in vitro may fail to detect any influence of scaling processes present in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings emphasize that measurement of oxygen consumption in vitro may fail to detect any influence of scaling processes present in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of findings stated in the discussion.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:13.728721Z"
+    },
+    {
+      "id": "bfd25cf0-65ad-4267-8c66-0fff98720eef",
+      "content_id": "fd166826-7393-4e0c-86be-70e767650d7e",
+      "claim_id": "C68",
+      "claim": "Glucose production was threefold higher in mouse liver slices relative to rat liver slices, but did not significantly differ between plated hepatocytes from mice and rats.",
+      "claim_type": "EXPLICIT",
+      "source": "Glucose production was threefold higher in mouse liver slices relative to rat liver slices, but did not significantly differ between plated hepatocytes from mice and rats.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of findings stated in the discussion.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:13.728721Z"
+    },
+    {
+      "id": "1207fb9d-1ad5-4442-96e2-6293899f613f",
+      "content_id": "fd166826-7393-4e0c-86be-70e767650d7e",
+      "claim_id": "C69",
+      "claim": "The data do not allow us to ascertain whether differences in oxygen consumption orchestrate metabolic alterations, or metabolic alterations require changes in oxygen consumption.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, our data do not allow us to ascertain whether differences in oxygen consumption orchestrate metabolic alterations, as has been suggested in the setting of cancer cells (Nakazawa et al., 2016), or metabolic alterations require changes in oxygen consumption.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a limitation stated in the discussion.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:13.728721Z"
+    },
+    {
+      "id": "5850134d-a79c-4ce8-b785-8b0ce1bb471d",
+      "content_id": "fd166826-7393-4e0c-86be-70e767650d7e",
+      "claim_id": "C70",
+      "claim": "There are limitations to the fact that metabolic flux studies were performed only in the two arguably most related species included in the transcriptomics analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, there are limitations to the fact that metabolic flux studies were performed only in the two arguably most related species included in the transcriptomics analysis (with monkey and human perhaps being similarly related).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a limitation stated in the discussion.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:13.728721Z"
+    },
+    {
+      "id": "ee5384ee-d21c-4302-9ba3-c61bb8106c51",
+      "content_id": "fd166826-7393-4e0c-86be-70e767650d7e",
+      "claim_id": "C71",
+      "claim": "Experimental and computational data suggest that the metabolic scaling relationship with regard to oxygen consumption holds at least from birds to cattle.",
+      "claim_type": "EXPLICIT",
+      "source": "However, experimental and computational data suggest that the metabolic scaling relationship with regard to oxygen consumption holds at least from birds to cattle, and that a similar \u2013 but not identical \u2013 scaling relationship exists in plants (Niklas and Kutschera, 2015), so we posit that it is likely that if such a threshold exists, it occurs at a body size orders of magnitude larger than the rodents included in our study.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about prior research supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:13.728721Z"
+    },
+    {
+      "id": "9af9321b-dfd3-4c02-9fbe-d863596574d7",
+      "content_id": "fd166826-7393-4e0c-86be-70e767650d7e",
+      "claim_id": "C72",
+      "claim": "A similar \u2013 but not identical \u2013 scaling relationship exists in plants.",
+      "claim_type": "EXPLICIT",
+      "source": "However, experimental and computational data suggest that the metabolic scaling relationship with regard to oxygen consumption holds at least from birds to cattle, and that a similar \u2013 but not identical \u2013 scaling relationship exists in plants (Niklas and Kutschera, 2015), so we posit that it is likely that if such a threshold exists, it occurs at a body size orders of magnitude larger than the rodents included in our study.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about prior research supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:13.728721Z"
+    },
+    {
+      "id": "3a868ea0-e11f-4699-b089-d917b26d2008",
+      "content_id": "fd166826-7393-4e0c-86be-70e767650d7e",
+      "claim_id": "C73",
+      "claim": "The phenomenon of metabolic scaling extends to processes beyond oxygen consumption and caloric intake, and is bookended by scaling not only of gene and protein expression, but also of enzyme activity and cytosolic and mitochondrial fluxes in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, the findings of this study show that the phenomenon of metabolic scaling extends to processes beyond oxygen consumption and caloric intake, and is bookended by scaling not only of gene and protein expression, but also of enzyme activity and cytosolic and mitochondrial fluxes in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion stated in the discussion.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:13.728721Z"
+    },
+    {
+      "id": "127fd3e8-ab96-4378-8e10-cb261b9ac8d9",
+      "content_id": "fd166826-7393-4e0c-86be-70e767650d7e",
+      "claim_id": "C74",
+      "claim": "If one were to alter the activity of an enzyme in a larger species using a mutation to increase it to the level of activity of the same enzyme in a smaller species, the phenomenon of metabolic scaling might disappear.",
+      "claim_type": "EXPLICIT",
+      "source": "It may be that if one were to alter the activity of an enzyme in a larger species using a mutation to increase it to the level of activity of the same enzyme in a smaller species, that the phenomenon of metabolic scaling might disappear.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement in the discussion.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:13.728721Z"
+    },
+    {
+      "id": "0a4f52ed-a174-4363-aa27-a15427f24da0",
+      "content_id": "fd166826-7393-4e0c-86be-70e767650d7e",
+      "claim_id": "C75",
+      "claim": "The mechanisms underlying the phenomenon of metabolic scaling remain obscure, and deserve investigation as a fundamental question in biology.",
+      "claim_type": "EXPLICIT",
+      "source": "The mechanisms underlying the phenomenon of metabolic scaling remain obscure, and deserve investigation as a fundamental question in biology (Hatton et al., 2019; Kolokotrones et al., 2010; White and Seymour, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the state of knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:13.728721Z"
+    },
+    {
+      "id": "760dfc1d-0ae4-4b94-bf8a-e53ef8318aa5",
+      "content_id": "fd166826-7393-4e0c-86be-70e767650d7e",
+      "claim_id": "C76",
+      "claim": "The data support the notion that cell-extrinsic regulatory factors are involved in metabolic scaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data support the notion that cell-extrinsic regulatory factors are involved.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of findings stated in the discussion.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:13.728721Z"
+    },
+    {
+      "id": "9144eb9c-3071-4418-acad-a8c9cf737e74",
+      "content_id": "fd166826-7393-4e0c-86be-70e767650d7e",
+      "claim_id": "C77",
+      "claim": "Metabolic scaling phenomena may have implications for metabolic regulation during hibernation, in which metabolic rates are reproducibly and markedly but reversibly suppressed.",
+      "claim_type": "EXPLICIT",
+      "source": "These data have implications for metabolic regulation during hibernation, in which metabolic rates are reproducibly and markedly but reversibly suppressed (Jansen et al., 2021; Jansen et al., 2019; T\u00f8ien et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about implications supported by citations.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:13.728721Z"
+    },
+    {
+      "id": "97fb117c-8a8b-43f1-a137-579a6c47ad35",
+      "content_id": "fd166826-7393-4e0c-86be-70e767650d7e",
+      "claim_id": "C78",
+      "claim": "Recent reports provide data consistent with 'Peto's paradox' by showing that cancer is not more prevalent in larger, long-lived organisms than smaller ones.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent reports provide data consistent with 'Peto's paradox' by showing that cancer is not more prevalent in larger, long-lived organisms than smaller ones (Makarieva et al., 2005a; Vincze et al., 2022), despite the fact that more cells are at risk for transformation, and over longer periods of time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about prior research supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:13.728721Z"
+    },
+    {
+      "id": "b1b93e18-9f02-4988-8384-a5193343aa24",
+      "content_id": "fd166826-7393-4e0c-86be-70e767650d7e",
+      "claim_id": "C79",
+      "claim": "Metabolic scaling provides a potential explanation for Peto's paradox: the slower rates of metabolic processes (including oxygen consumption) and reduced oxidative damage in larger animals imply lower rates of proliferation and carcinogenic DNA damage, so that while more cells are at risk in large animals, carcinogenesis proceeds more rapidly in smaller ones.",
+      "claim_type": "EXPLICIT",
+      "source": "Metabolic scaling provides a potential explanation: the slower rates of metabolic processes (including oxygen consumption) and reduced oxidative damage in larger animals imply lower rates of proliferation and carcinogenic DNA damage, so that while more cells are at risk in large animals, carcinogenesis proceeds more rapidly in smaller ones.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation stated in the discussion.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:13.728721Z"
+    },
+    {
+      "id": "d76a2e48-8190-47c4-a49f-da0093966c35",
+      "content_id": "fd166826-7393-4e0c-86be-70e767650d7e",
+      "claim_id": "C80",
+      "claim": "Metabolic scaling phenomena that lead to different rates of metabolic fluxes according to organism size deserve consideration in the context of murine models of human diseases.",
+      "claim_type": "EXPLICIT",
+      "source": "Metabolic scaling phenomena that lead to different rates of metabolic fluxes according to organism size deserve consideration in the context of murine models of human diseases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about implications in the discussion.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:13.728721Z"
+    },
+    {
+      "id": "01931ee2-ac71-494b-a041-c6df987d2121",
+      "content_id": "fd166826-7393-4e0c-86be-70e767650d7e",
+      "claim_id": "C81",
+      "claim": "Differences in metabolic fluxes between species may contribute to the faster rate of aging and shorter life expectancy of rodents as compared to humans.",
+      "claim_type": "EXPLICIT",
+      "source": "These differences may contribute to the faster rate of aging and shorter life expectancy of rodents as compared to humans.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement in the discussion.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:13.728721Z"
+    },
+    {
+      "id": "b945f384-1b90-46a1-875f-5ca9b26340f0",
+      "content_id": "fd166826-7393-4e0c-86be-70e767650d7e",
+      "claim_id": "C82",
+      "claim": "Species-specific different rates of in vivo metabolic fluxes might be relevant to carcinogenesis or efficacy of treatments in cancer models.",
+      "claim_type": "EXPLICIT",
+      "source": "A separate example concerns cancer models, where species-specific different rates of in vivo metabolic fluxes might be relevant to carcinogenesis or efficacy of treatments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement in the discussion.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:13.728721Z"
+    },
+    {
+      "id": "c4c8e56b-b182-4af2-b7df-15e1fde38001",
+      "content_id": "fd166826-7393-4e0c-86be-70e767650d7e",
+      "claim_id": "C83",
+      "claim": "Healthy male, wild-type C57BL/6 J mice and Sprague-Dawley rats were obtained at 8 weeks of age from Jackson Laboratories and Charles River Laboratories, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Healthy male (or, when designated, female), wild-type C57BL/6 J mice (catalog number 000664) and Sprague-Dawley rats (strain code 400) were obtained at 8 weeks of age from Jackson Laboratories and Charles River Laboratories, respectively, and given ad lib access to regular chow and water.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail stated in the materials and methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:13.728721Z"
+    },
+    {
+      "id": "51c263fd-686b-43bd-8668-ec4fff02c2a9",
+      "content_id": "fd166826-7393-4e0c-86be-70e767650d7e",
+      "claim_id": "C84",
+      "claim": "Rodents underwent surgery under isoflurane anesthesia to place catheters in the jugular vein (mice) and in both the jugular vein and carotid artery (rats).",
+      "claim_type": "EXPLICIT",
+      "source": "Rodents underwent surgery under isoflurane anesthesia to place catheters in the jugular vein (mice) and in both the jugular vein and carotid artery, with the tip of the arterial catheter advanced into the right atrium of the heart (rats).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail stated in the materials and methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:13.728721Z"
+    },
+    {
+      "id": "9b86ce4f-3764-4a0a-aa00-457cf869cd09",
+      "content_id": "fd166826-7393-4e0c-86be-70e767650d7e",
+      "claim_id": "C85",
+      "claim": "All liver raw transcriptomics data were obtained from Array Express.",
+      "claim_type": "EXPLICIT",
+      "source": "All liver raw transcriptomics data were obtained from Array Express (Brazma et al., 2003) (https://doi.org/10.1093/nar/gkg091), and were all preprocessed using the same methods.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail stated in the materials and methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:13.728721Z"
+    },
+    {
+      "id": "cf53ddee-c658-4cbd-bb9e-7696c754bc04",
+      "content_id": "fd166826-7393-4e0c-86be-70e767650d7e",
+      "claim_id": "C86",
+      "claim": "Raw counts from each species were normalized to counts per million (CPM) and were then TMM-normalized to account for differences in sequencing depth as well as transcript length across species and scanners using the R package edgeR.",
+      "claim_type": "EXPLICIT",
+      "source": "Raw counts from each species were normalized to counts per million (CPM) and were then TMM-normalized to account for differences in sequencing depth as well as transcript length across species and scanners using the R package edgeR (Robinson et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail stated in the materials and methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:13.728721Z"
+    },
+    {
+      "id": "7dc0c078-99ba-4992-9425-7f26a99d730d",
+      "content_id": "fd166826-7393-4e0c-86be-70e767650d7e",
+      "claim_id": "C87",
+      "claim": "All liver raw mass spectrometry proteomics data were obtained from the Proteomics Identifications Database (PRIDE).",
+      "claim_type": "EXPLICIT",
+      "source": "All liver raw mass spectrometry proteomics data were obtained from the Proteomics Identifications Database (PRIDE).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail stated in the materials and methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:13.728721Z"
+    },
+    {
+      "id": "35b1a97e-4424-446e-b45f-d3ca3bac5acc",
+      "content_id": "fd166826-7393-4e0c-86be-70e767650d7e",
+      "claim_id": "C88",
+      "claim": "Primary hepatocytes were isolated by the Yale Liver Center's Cell Isolation Core, plated in a six-well plate (4.0 \u00d7 105 cells per well), and allowed to recover for 6 hr at 37 \u00b0C in substrate replete media.",
+      "claim_type": "EXPLICIT",
+      "source": "Primary hepatocytes were isolated by the Yale Liver Center's Cell Isolation Core, plated in a six-well plate (4.0 \u00d7 105 cells per well), and allowed to recover for 6 hr at 37 \u00b0C in substrate replete media (DMEM high glucose containing 10% FBS, 2% penicillin\u2013streptomycin, 100 nM dexamethasone, 10 mM HEPES, and 1 nM insulin).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail stated in the materials and methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:13.728721Z"
+    },
+    {
+      "id": "6d54c89b-905e-47df-a500-195563b2b2f8",
+      "content_id": "fd166826-7393-4e0c-86be-70e767650d7e",
+      "claim_id": "C89",
+      "claim": "Mice and rats received a 3 X (5 min) primed-continuous infusion of [3-13C] sodium lactate (4.5 mg/kg body weight/min), [1, 2, 3, 4, 5, 6, 6-2H7] glucose (1.0 mg/kg/min), and [U-13C16] potassium palmitate (0.8 mg/kg/min) for 120 min.",
+      "claim_type": "EXPLICIT",
+      "source": "Mice and rats received a 3 X (5 min) primed-continuous infusion of [3-13C] sodium lactate (4.5 mg/kg body weight/min), [1, 2, 3, 4, 5, 6, 6-2H7] glucose (1.0 mg/kg/min), and [U-13C16] potassium palmitate (0.8 mg/kg/min) for 120 min.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail stated in the materials and methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:13.728721Z"
+    },
+    {
+      "id": "ec8a9b41-8826-4a1b-823b-3a5f50032870",
+      "content_id": "fd166826-7393-4e0c-86be-70e767650d7e",
+      "claim_id": "C90",
+      "claim": "The sample size (n=4\u20136 in vitro replicates, 2\u20134 slices, or 4\u20136 animals in vivo) was calculated to supply 80% power at \u03b1=0.05 to detect the expected twofold difference with 50% variance.",
+      "claim_type": "EXPLICIT",
+      "source": "The sample size (n=4\u20136 in vitro replicates, 2\u20134 slices, or 4\u20136 animals in vivo) was calculated to supply 80% power at \u03b1=0.05 to detect the expected twofold difference with 50% variance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail about statistical power stated in the materials and methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:13.728721Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "a9432569-a5c3-46d7-b417-e60f44ae2cfd",
+      "content_id": "fd166826-7393-4e0c-86be-70e767650d7e",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The manuscript establishes the historical and scientific context of metabolic scaling, noting that it has been studied for over 80 years across diverse organisms, but primarily through measurements of oxygen consumption and caloric intake, with gene expression and metabolic fluxes largely unexplored.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims accurately characterize prior work on metabolic scaling and are well-supported by extensive citations (C9, C10, C53-C58). The gap in knowledge regarding gene expression and metabolic fluxes (C15, C16) provides appropriate justification for the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:43:13.728721Z"
+    },
+    {
+      "id": "770dcf96-214d-4073-bdbd-b1077ade4dc3",
+      "content_id": "fd166826-7393-4e0c-86be-70e767650d7e",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Transcriptomic analysis of liver tissue from five species (mouse, rat, monkey, human, cattle) spanning a 30,000-fold range in body mass revealed that genes expressed inversely proportional to body size are predominantly metabolic genes involved in pyruvate, amino acid, and glucose metabolism.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While the finding is interesting, the analysis has critical limitations: only n=2 biological replicates per species (C17, C85), data from different public repositories with potential batch effects, and no validation that TMM normalization adequately controls for cross-species technical variation. The statistical significance (adjusted p<0.01) may not overcome these fundamental design limitations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:43:13.728721Z"
+    },
+    {
+      "id": "cb042cd0-7a8a-4204-899c-b08c0f802f78",
+      "content_id": "fd166826-7393-4e0c-86be-70e767650d7e",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Genes that scale with body mass encode enzymes requiring oxygen, NAD+/NADH, or ATP/ADP for function, and include genes involved in detoxification of oxidative damage (ALDH7A1, GPX1, GLUL) and interorgan metabolic crosstalk (GPT1, ADIPOR1).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The functional categorization of scaled genes (C26, C27) is well-supported by the data in Figure 2, and the interpretation regarding energy-consuming processes and oxidative damage control is reasonable. The identification of interorgan crosstalk genes (C28-C30) provides mechanistic insight consistent with the later finding that scaling is absent in isolated cells.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:43:13.728721Z"
+    },
+    {
+      "id": "a7cc6d03-c500-466f-bd7f-907579559e53",
+      "content_id": "fd166826-7393-4e0c-86be-70e767650d7e",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "qPCR validation confirmed that metabolic genes (Glul, Lipe, Dlst) scale relative to the housekeeping gene Actb, while structural genes (Mmp3, Larp6) do not, indicating that scaling is specific to metabolic genes rather than reflecting global changes in RNA levels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The qPCR validation (C31, C32) provides important confirmation that the transcriptomic findings are not artifacts of global RNA changes. The use of both metabolic and structural genes as positive and negative controls strengthens this conclusion (C33). However, validation of only 3 metabolic genes out of 20 identified is limited.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:43:13.728721Z"
+    },
+    {
+      "id": "9b5b498b-013a-4195-ae80-21075548db2e",
+      "content_id": "fd166826-7393-4e0c-86be-70e767650d7e",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Proteomics analysis revealed that three proteins (GLUL, GPX1, MDH1) out of eight tested showed inverse correlation with body size, with GLUL also scaling in heart tissue, and approximately half of genes that scaled at the mRNA level also scaled at the protein level.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "The proteomics data (C34, C35) are severely limited by having only n=1 per species, making statistical analysis impossible. While the finding that ~50% of mRNA-scaled genes also scale at the protein level (C20) is interesting, it cannot be rigorously evaluated without replicates. This represents a major limitation acknowledged by the authors.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:43:13.728721Z"
+    },
+    {
+      "id": "0340413b-69d9-4ee2-88b4-2de0e93c68c3",
+      "content_id": "fd166826-7393-4e0c-86be-70e767650d7e",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Liver transaminase concentrations (ALT and AST) and enzyme activities (peroxidase and pyruvate carboxylase) were 30-40% lower in rats compared to mice, consistent with scaling at the protein expression and enzyme activity levels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The transaminase measurements (C36, n=5 per species) and enzyme activity assays (C37, n=5 per species) provide independent validation of scaling at the protein and functional levels. The statistical significance and adequate sample sizes support these findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:43:13.728721Z"
+    },
+    {
+      "id": "d5fe5386-ffb6-460b-9c7b-b84f43f4e00c",
+      "content_id": "fd166826-7393-4e0c-86be-70e767650d7e",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "In vitro studies of isolated hepatocytes showed no significant differences in metabolic fluxes (glucose production, VPC, VCS, lipolysis) or oxygen consumption between mice and rats, consistent with prior literature showing that metabolic scaling disappears in cell-autonomous settings after ~24 hours in culture.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The in vitro findings (C38, C39) are well-controlled with adequate sample sizes (n=6 biological replicates) and are consistent with prior literature (C40-C42). The validation of PINTA assumptions (steady-state enrichment, linear glucose production) strengthens confidence in the flux measurements. This result is critical for establishing that scaling requires tissue/organismal context.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:43:13.728721Z"
+    },
+    {
+      "id": "dc22190c-c0ed-4979-8827-cbc1490a8e50",
+      "content_id": "fd166826-7393-4e0c-86be-70e767650d7e",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Ex vivo liver slice studies showed threefold higher glucose production per gram tissue in mice compared to rats, suggesting that hepatocyte-extrinsic signals from other liver cell types are involved in metabolic scaling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While the finding is statistically significant (C43), the sample size is very small (n=4 mice, n=2 rats), below the calculated requirement for adequate power. The interpretation that hepatocyte-extrinsic signals are involved (C44) is reasonable but speculative, as the experiment doesn't directly test this mechanism. Alternative explanations (e.g., differences in slice viability, oxygenation) are not excluded.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:43:13.728721Z"
+    },
+    {
+      "id": "decdbc96-05b6-4aad-a5a9-41a21be61a26",
+      "content_id": "fd166826-7393-4e0c-86be-70e767650d7e",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "In vivo metabolic flux analysis using stable isotope tracers revealed that mice exhibit 2-3 fold higher rates of glucose production, gluconeogenesis (VPC), mitochondrial oxidation (VCS), and lipolysis compared to rats, demonstrating that metabolic scaling extends to multiple metabolic pathways and tissues.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The in vivo flux measurements (C45-C48) are well-powered (n=4-6 per group), use validated methodology (PINTA), and include appropriate validation of tracer assumptions (steady-state enrichment, minimal glycogen). The finding that scaling occurs across multiple pathways and tissues (liver and adipose) strengthens the conclusion. Statistical significance is clearly demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:43:13.728721Z"
+    },
+    {
+      "id": "b7debfb0-2adc-4e88-a1b0-d3ec98fa9d9a",
+      "content_id": "fd166826-7393-4e0c-86be-70e767650d7e",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "No sex differences were observed in any of the measured metabolic fluxes between male and female mice and rats.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The analysis of sex differences (C49, n=6 per group) is appropriately powered and shows no significant differences, suggesting that metabolic scaling is independent of sex in these species. This is an important control that strengthens the generalizability of the findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:43:13.728721Z"
+    },
+    {
+      "id": "c5e87040-01e2-4082-b0ab-633e6c77606d",
+      "content_id": "fd166826-7393-4e0c-86be-70e767650d7e",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Clustering analysis objectively demonstrated that in vitro metabolic flux data showed no species-specific clustering, while in vivo data led to distinct clustering of mice and rats, emphasizing that in vitro measurements fail to capture metabolic scaling present in vivo.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The clustering analysis (C51, C52) provides an objective, data-driven confirmation of the qualitative differences between in vitro and in vivo findings. This strengthens the conclusion that in vitro methods are inadequate for studying metabolic scaling (C67). The approach is appropriate and the interpretation is well-supported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:43:13.728721Z"
+    },
+    {
+      "id": "17b98ed6-db14-4038-9ea7-16b104835cbf",
+      "content_id": "fd166826-7393-4e0c-86be-70e767650d7e",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The observed metabolic differences between mice and rats did not necessarily adhere quantitatively to the classic 3/4 power law of metabolic scaling, suggesting that the scaling relationship may be multidimensional with different metabolic processes exhibiting different scaling exponents.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This is an important caveat (C60) that acknowledges the study's limitations. The interpretation that scaling may be multidimensional (C61) is reasonable and appropriately speculative. The authors correctly note that their study examined only a 10-fold range in body size (mouse to rat), which limits conclusions about the scaling exponent.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:43:13.728721Z"
+    },
+    {
+      "id": "dff3540c-28eb-47eb-9f67-6ea157498096",
+      "content_id": "fd166826-7393-4e0c-86be-70e767650d7e",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Metabolic scaling cannot be fully explained at the transcriptional level, as many rate-limiting enzymes did not scale at the mRNA level and only ~50% of mRNA-scaled genes scaled at the protein level, suggesting that both transcriptional and post-transcriptional mechanisms (e.g., enzyme activity) regulate metabolic flux scaling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This interpretation (C64, C65) appropriately integrates the transcriptomic, proteomic, and flux data to conclude that multiple regulatory levels contribute to metabolic scaling. The acknowledgment of limitations regarding enzyme isoforms (C66) is appropriate. This represents a nuanced understanding of the complexity of metabolic regulation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:43:13.728721Z"
+    },
+    {
+      "id": "3faa64f1-41a1-42fe-85d5-b4a6719897d6",
+      "content_id": "fd166826-7393-4e0c-86be-70e767650d7e",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The study has important limitations: the data cannot determine whether oxygen consumption drives metabolic changes or vice versa, and metabolic flux studies were performed only in mice and rats, the two most closely related species in the transcriptomics analysis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These are important and appropriately acknowledged limitations (C69, C70). The inability to establish causality between oxygen consumption and metabolic alterations is a fundamental constraint of the observational approach. The limitation to rodents for flux studies is significant, though the authors reasonably argue that the scaling relationship likely extends beyond this range based on prior literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:43:13.728721Z"
+    },
+    {
+      "id": "3a4554bc-8396-4e19-9044-468e0af80b1f",
+      "content_id": "fd166826-7393-4e0c-86be-70e767650d7e",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The phenomenon of metabolic scaling extends beyond oxygen consumption to gene expression, protein expression, enzyme activity, and cytosolic and mitochondrial fluxes in vivo, and is regulated by cell-extrinsic factors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This is the central conclusion of the manuscript (C73, C8) and is well-supported by the convergent evidence from multiple experimental approaches. The conclusion that cell-extrinsic factors are involved (C76) is supported by the contrast between in vitro (no scaling) and ex vivo/in vivo (scaling present) findings, though the specific mechanisms remain to be elucidated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:43:13.728721Z"
+    },
+    {
+      "id": "d5a5ed17-f9e5-475e-906f-a622016c5b65",
+      "content_id": "fd166826-7393-4e0c-86be-70e767650d7e",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The authors speculate on potential implications of metabolic scaling for hibernation, cancer biology (Peto's paradox), aging, and the use of murine disease models, and suggest that genetic manipulation of enzyme activity might abolish metabolic scaling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "These are appropriately labeled as speculative ideas (C74, C77, C79, C81, C82) that extend beyond the data. While interesting hypotheses, they lack direct experimental support in this study. The discussion of Peto's paradox (C78, C79) is particularly speculative, as the manuscript provides no cancer-related data. These represent future directions rather than supported conclusions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:43:13.728721Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "c898a6dd-6ea4-4ed0-99d4-f61a3a04b1ab",
+      "result_id": "a9432569-a5c3-46d7-b417-e60f44ae2cfd"
+    },
+    {
+      "claim_id": "bd233d8f-1faf-47e2-a81d-0059b517b692",
+      "result_id": "a9432569-a5c3-46d7-b417-e60f44ae2cfd"
+    },
+    {
+      "claim_id": "5b1aa872-9e83-40ce-a67e-f263c6d2223e",
+      "result_id": "a9432569-a5c3-46d7-b417-e60f44ae2cfd"
+    },
+    {
+      "claim_id": "e4056d5e-a5be-47bf-9541-2151d01a323b",
+      "result_id": "a9432569-a5c3-46d7-b417-e60f44ae2cfd"
+    },
+    {
+      "claim_id": "08962939-4c74-4849-8b78-2f2c89589046",
+      "result_id": "a9432569-a5c3-46d7-b417-e60f44ae2cfd"
+    },
+    {
+      "claim_id": "8ff3b674-02f3-43b5-b94f-1b718903e860",
+      "result_id": "a9432569-a5c3-46d7-b417-e60f44ae2cfd"
+    },
+    {
+      "claim_id": "1cd2abcd-c17e-4eb2-ba97-068446a66b9c",
+      "result_id": "a9432569-a5c3-46d7-b417-e60f44ae2cfd"
+    },
+    {
+      "claim_id": "7806a4e8-3dae-47c6-8583-2d9b42d1c7f6",
+      "result_id": "a9432569-a5c3-46d7-b417-e60f44ae2cfd"
+    },
+    {
+      "claim_id": "906327c3-981e-4c73-85fa-cfa367d94313",
+      "result_id": "a9432569-a5c3-46d7-b417-e60f44ae2cfd"
+    },
+    {
+      "claim_id": "f96c4ec5-e837-409e-a9f2-779f16fdb7d6",
+      "result_id": "a9432569-a5c3-46d7-b417-e60f44ae2cfd"
+    },
+    {
+      "claim_id": "d80d1515-4ab7-4607-9e02-479578d36d41",
+      "result_id": "a9432569-a5c3-46d7-b417-e60f44ae2cfd"
+    },
+    {
+      "claim_id": "c66ad22f-7fb4-40e4-8212-8ed559ba49a8",
+      "result_id": "a9432569-a5c3-46d7-b417-e60f44ae2cfd"
+    },
+    {
+      "claim_id": "cdb5bfd5-826e-44d1-8602-4ca9fb590164",
+      "result_id": "a9432569-a5c3-46d7-b417-e60f44ae2cfd"
+    },
+    {
+      "claim_id": "c89fb008-819b-4612-895a-2b794d1c9eac",
+      "result_id": "a9432569-a5c3-46d7-b417-e60f44ae2cfd"
+    },
+    {
+      "claim_id": "1f30176e-77a1-492d-bace-a7c44d5dca7f",
+      "result_id": "a9432569-a5c3-46d7-b417-e60f44ae2cfd"
+    },
+    {
+      "claim_id": "ff6c587c-e8cb-4e5f-8d2e-7f018251b9c2",
+      "result_id": "a9432569-a5c3-46d7-b417-e60f44ae2cfd"
+    },
+    {
+      "claim_id": "9dc21e35-30af-4c49-bd2d-abc89b14c7b3",
+      "result_id": "770dcf96-214d-4073-bdbd-b1077ade4dc3"
+    },
+    {
+      "claim_id": "996b437e-2412-49ac-92a6-1be21ac23e4a",
+      "result_id": "770dcf96-214d-4073-bdbd-b1077ade4dc3"
+    },
+    {
+      "claim_id": "82509ccb-9772-42e2-b747-5a1b619e846f",
+      "result_id": "770dcf96-214d-4073-bdbd-b1077ade4dc3"
+    },
+    {
+      "claim_id": "85bf5874-f63f-46e4-9a4c-691d3ba9a206",
+      "result_id": "770dcf96-214d-4073-bdbd-b1077ade4dc3"
+    },
+    {
+      "claim_id": "329e8fbc-be3b-4899-a5af-8c11ca39144d",
+      "result_id": "770dcf96-214d-4073-bdbd-b1077ade4dc3"
+    },
+    {
+      "claim_id": "29e49086-90ba-4d32-adea-78a98efd3986",
+      "result_id": "770dcf96-214d-4073-bdbd-b1077ade4dc3"
+    },
+    {
+      "claim_id": "7f7eaa98-71c2-4be5-8440-27e0763365ef",
+      "result_id": "770dcf96-214d-4073-bdbd-b1077ade4dc3"
+    },
+    {
+      "claim_id": "72e7374f-938e-45a7-b511-f65733c8bd8f",
+      "result_id": "cb042cd0-7a8a-4204-899c-b08c0f802f78"
+    },
+    {
+      "claim_id": "2948db4f-cb95-41aa-a4f4-7184ca66c633",
+      "result_id": "cb042cd0-7a8a-4204-899c-b08c0f802f78"
+    },
+    {
+      "claim_id": "798892de-5592-47d7-8333-bc02bce37450",
+      "result_id": "cb042cd0-7a8a-4204-899c-b08c0f802f78"
+    },
+    {
+      "claim_id": "bbb0c00b-aaa1-406b-8e7f-ed0e527a1620",
+      "result_id": "cb042cd0-7a8a-4204-899c-b08c0f802f78"
+    },
+    {
+      "claim_id": "4307f275-243e-4a91-a099-094cb79e980f",
+      "result_id": "cb042cd0-7a8a-4204-899c-b08c0f802f78"
+    },
+    {
+      "claim_id": "722c0569-26e2-4b5c-9a8b-c423899a826d",
+      "result_id": "cb042cd0-7a8a-4204-899c-b08c0f802f78"
+    },
+    {
+      "claim_id": "fa4bcde8-d166-4221-806c-1af114d82d1e",
+      "result_id": "cb042cd0-7a8a-4204-899c-b08c0f802f78"
+    },
+    {
+      "claim_id": "5ad1a1c2-d2aa-4486-992b-ff230af5ea7b",
+      "result_id": "a7cc6d03-c500-466f-bd7f-907579559e53"
+    },
+    {
+      "claim_id": "c44369cd-8129-4ad9-9ffd-06379c62e5d6",
+      "result_id": "a7cc6d03-c500-466f-bd7f-907579559e53"
+    },
+    {
+      "claim_id": "b54993d5-8a59-4969-aef1-12e4291d0790",
+      "result_id": "a7cc6d03-c500-466f-bd7f-907579559e53"
+    },
+    {
+      "claim_id": "d9165ff9-92c9-417d-9976-7b26c4c147a9",
+      "result_id": "9b5b498b-013a-4195-ae80-21075548db2e"
+    },
+    {
+      "claim_id": "797a0823-0003-46bf-a952-7b1dd8be2e8e",
+      "result_id": "9b5b498b-013a-4195-ae80-21075548db2e"
+    },
+    {
+      "claim_id": "d1fd8b89-d7be-4816-8f25-8f85324087eb",
+      "result_id": "9b5b498b-013a-4195-ae80-21075548db2e"
+    },
+    {
+      "claim_id": "a843c818-2082-4d1f-ab4f-b533f05d8dfd",
+      "result_id": "0340413b-69d9-4ee2-88b4-2de0e93c68c3"
+    },
+    {
+      "claim_id": "60927a9a-8769-425f-9426-85a5efbfdf5e",
+      "result_id": "0340413b-69d9-4ee2-88b4-2de0e93c68c3"
+    },
+    {
+      "claim_id": "d17fea0e-a75a-4cc2-98e3-be51b1315a4b",
+      "result_id": "d5fe5386-ffb6-460b-9c7b-b84f43f4e00c"
+    },
+    {
+      "claim_id": "4654e6be-9166-49a5-b11c-a9e51123ec58",
+      "result_id": "d5fe5386-ffb6-460b-9c7b-b84f43f4e00c"
+    },
+    {
+      "claim_id": "6ffbe488-43ff-4599-9ba4-aa03435ca203",
+      "result_id": "d5fe5386-ffb6-460b-9c7b-b84f43f4e00c"
+    },
+    {
+      "claim_id": "6406c8e9-3309-4cf6-aec4-f1ba57ae3152",
+      "result_id": "d5fe5386-ffb6-460b-9c7b-b84f43f4e00c"
+    },
+    {
+      "claim_id": "6131e243-75a4-445d-adad-830f4bbed748",
+      "result_id": "d5fe5386-ffb6-460b-9c7b-b84f43f4e00c"
+    },
+    {
+      "claim_id": "2d12cf10-e74f-466a-bdba-8fbdbe7076e1",
+      "result_id": "d5fe5386-ffb6-460b-9c7b-b84f43f4e00c"
+    },
+    {
+      "claim_id": "63c39c7c-b277-48c9-9160-b2177105f78f",
+      "result_id": "dc22190c-c0ed-4979-8827-cbc1490a8e50"
+    },
+    {
+      "claim_id": "f3f7da0c-2ca3-4ac3-9ae7-2d924a405485",
+      "result_id": "dc22190c-c0ed-4979-8827-cbc1490a8e50"
+    },
+    {
+      "claim_id": "bfd25cf0-65ad-4267-8c66-0fff98720eef",
+      "result_id": "dc22190c-c0ed-4979-8827-cbc1490a8e50"
+    },
+    {
+      "claim_id": "7838b41e-8d7e-417b-a149-94355fd699c6",
+      "result_id": "decdbc96-05b6-4aad-a5a9-41a21be61a26"
+    },
+    {
+      "claim_id": "2d56b719-ca30-45c3-bc4b-9910a4ae0eb9",
+      "result_id": "decdbc96-05b6-4aad-a5a9-41a21be61a26"
+    },
+    {
+      "claim_id": "7206f746-5b28-475e-9fa9-f30bbcb5f4ab",
+      "result_id": "decdbc96-05b6-4aad-a5a9-41a21be61a26"
+    },
+    {
+      "claim_id": "6ab35d91-aa63-4968-af52-cfb74ff3b6a9",
+      "result_id": "decdbc96-05b6-4aad-a5a9-41a21be61a26"
+    },
+    {
+      "claim_id": "583ac473-28df-455e-a91d-1ac75966105c",
+      "result_id": "decdbc96-05b6-4aad-a5a9-41a21be61a26"
+    },
+    {
+      "claim_id": "d10bd9b3-06fa-443c-97eb-17f9195ff0f1",
+      "result_id": "decdbc96-05b6-4aad-a5a9-41a21be61a26"
+    },
+    {
+      "claim_id": "77874087-128a-4b9c-a839-90d17f2cee5a",
+      "result_id": "b7debfb0-2adc-4e88-a1b0-d3ec98fa9d9a"
+    },
+    {
+      "claim_id": "966408c1-4ba2-4626-b53a-ef3ea8c2d6e0",
+      "result_id": "c5e87040-01e2-4082-b0ab-633e6c77606d"
+    },
+    {
+      "claim_id": "dfeb27ac-f1f9-4a4a-b244-12c9d38ce2ff",
+      "result_id": "c5e87040-01e2-4082-b0ab-633e6c77606d"
+    },
+    {
+      "claim_id": "69d2458b-60af-48b7-9a59-5fa526ff2a7b",
+      "result_id": "c5e87040-01e2-4082-b0ab-633e6c77606d"
+    },
+    {
+      "claim_id": "5e2df3f5-3dc3-4462-8745-672c4ea9b80b",
+      "result_id": "c5e87040-01e2-4082-b0ab-633e6c77606d"
+    },
+    {
+      "claim_id": "e7b0b4a9-a930-4487-9b86-e52fc473a496",
+      "result_id": "17b98ed6-db14-4038-9ea7-16b104835cbf"
+    },
+    {
+      "claim_id": "39435c08-8732-4863-b543-ca75ea44ab26",
+      "result_id": "17b98ed6-db14-4038-9ea7-16b104835cbf"
+    },
+    {
+      "claim_id": "49ae5478-cfbe-445a-84bd-b73eb9ac9983",
+      "result_id": "dff3540c-28eb-47eb-9f67-6ea157498096"
+    },
+    {
+      "claim_id": "65b3d4f0-afa2-4b26-be6b-c5fd6ae6d920",
+      "result_id": "dff3540c-28eb-47eb-9f67-6ea157498096"
+    },
+    {
+      "claim_id": "d8e902b2-3ef8-4fed-a75a-5bd9fce29d4d",
+      "result_id": "dff3540c-28eb-47eb-9f67-6ea157498096"
+    },
+    {
+      "claim_id": "1207fb9d-1ad5-4442-96e2-6293899f613f",
+      "result_id": "3faa64f1-41a1-42fe-85d5-b4a6719897d6"
+    },
+    {
+      "claim_id": "5850134d-a79c-4ce8-b785-8b0ce1bb471d",
+      "result_id": "3faa64f1-41a1-42fe-85d5-b4a6719897d6"
+    },
+    {
+      "claim_id": "3a868ea0-e11f-4699-b089-d917b26d2008",
+      "result_id": "3a4554bc-8396-4e19-9044-468e0af80b1f"
+    },
+    {
+      "claim_id": "9f05b9c1-7c06-4771-a9f8-5877ead6e2f7",
+      "result_id": "3a4554bc-8396-4e19-9044-468e0af80b1f"
+    },
+    {
+      "claim_id": "760dfc1d-0ae4-4b94-bf8a-e53ef8318aa5",
+      "result_id": "3a4554bc-8396-4e19-9044-468e0af80b1f"
+    },
+    {
+      "claim_id": "127fd3e8-ab96-4378-8e10-cb261b9ac8d9",
+      "result_id": "d5a5ed17-f9e5-475e-906f-a622016c5b65"
+    },
+    {
+      "claim_id": "0a4f52ed-a174-4363-aa27-a15427f24da0",
+      "result_id": "d5a5ed17-f9e5-475e-906f-a622016c5b65"
+    },
+    {
+      "claim_id": "9144eb9c-3071-4418-acad-a8c9cf737e74",
+      "result_id": "d5a5ed17-f9e5-475e-906f-a622016c5b65"
+    },
+    {
+      "claim_id": "97fb117c-8a8b-43f1-a137-579a6c47ad35",
+      "result_id": "d5a5ed17-f9e5-475e-906f-a622016c5b65"
+    },
+    {
+      "claim_id": "b1b93e18-9f02-4988-8384-a5193343aa24",
+      "result_id": "d5a5ed17-f9e5-475e-906f-a622016c5b65"
+    },
+    {
+      "claim_id": "d76a2e48-8190-47c4-a49f-da0093966c35",
+      "result_id": "d5a5ed17-f9e5-475e-906f-a622016c5b65"
+    },
+    {
+      "claim_id": "01931ee2-ac71-494b-a041-c6df987d2121",
+      "result_id": "d5a5ed17-f9e5-475e-906f-a622016c5b65"
+    },
+    {
+      "claim_id": "b945f384-1b90-46a1-875f-5ca9b26340f0",
+      "result_id": "d5a5ed17-f9e5-475e-906f-a622016c5b65"
+    }
+  ],
+  "comparisons": []
+}

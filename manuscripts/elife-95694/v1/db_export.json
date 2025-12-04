@@ -1,0 +1,1124 @@
+{
+  "submission": {
+    "id": "4cae7dbd-1694-4737-9b0a-020703889e6b",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-04T04:34:12.933931Z",
+    "updated_at": "2025-12-04T04:34:12.933931Z"
+  },
+  "content": [
+    {
+      "id": "94e83644-97bd-45b8-ab74-96bf4e50e6df",
+      "submission_id": "4cae7dbd-1694-4737-9b0a-020703889e6b",
+      "content_type": "manuscript",
+      "content_text": "# Comment on 'Accumbens cholinergic interneurons dynamically promote dopamine release and enable motivation'\n\n## Authors\n\n- James Taniguchi<sup>1</sup> ([ORCID: 0000-0002-1571-3869](https://orcid.org/0000-0002-1571-3869))\n- Riccardo Melani<sup>1</sup>\n- Lynne Chantranupong<sup>2</sup> ([ORCID: 0000-0001-9814-5264](https://orcid.org/0000-0001-9814-5264))\n- Michelle J Wen<sup>2</sup>\n- Ali Mohebi<sup>3</sup> ([ORCID: 0000-0001-7291-3448](https://orcid.org/0000-0001-7291-3448))\n- Joshua D Berke<sup>3</sup> ([ORCID: 0000-0003-1436-6823](https://orcid.org/0000-0003-1436-6823))\n- Bernardo L Sabatini<sup>2</sup> ([ORCID: 0000-0003-0095-9177](https://orcid.org/0000-0003-0095-9177))\n- Nicolas X Tritsch<sup>1</sup> ([ORCID: 0000-0003-3181-7681](https://orcid.org/0000-0003-3181-7681)) \u2020\n\n### Affiliations\n\n1. Neuroscience Institute and Fresco Institute for Parkinson's and Movement Disorders, University Grossman School of Medicine New York United States\n2. Department of Neurobiology, Howard Hughes Medical Institute, Harvard Medical School Boston United States ([ROR:006w34k90](https://ror.org/006w34k90))\n3. Department of Neurology, University of California, San Francisco San Francisco United States ([ROR:043mz5j54](https://ror.org/043mz5j54))\n\n\u2020 Corresponding author\n\n## Abstract\n\nAcetylcholine is widely believed to modulate the release of dopamine in the striatum of mammals. Experiments in brain slices clearly show that synchronous activation of striatal cholinergic interneurons is sufficient to drive dopamine release via axo-axonal stimulation of nicotinic acetylcholine receptors. However, evidence for this mechanism in vivo has been less forthcoming. Mohebi, Collins and Berke recently reported that, in awake behaving rats, optogenetic activation of striatal cholinergic interneurons with blue light readily evokes dopamine release measured with the red fluorescent sensor RdLight1 (Mohebi et al., 2023). Here, we show that blue light alone alters the fluorescent properties of RdLight1 in a manner that may be misconstrued as phasic dopamine release, and that this artefactual photoactivation can account for the effects attributed to cholinergic interneurons. Our findings indicate that measurements of dopamine using the red-shifted fluorescent sensor RdLight1 should be interpreted with caution when combined with optogenetics. In light of this and other publications that did not observe large acetylcholine-evoked dopamine transients in vivo, the conditions under which such release occurs in behaving animals remain unknown.\n\n## Introduction\n\nPresynaptic modulation is a ubiquitous mechanism through which neural circuits control the amount of chemical transmitter that axons release per incoming action potential (Lovinger et al., 2022). Striatum-projecting midbrain dopamine (DA) neurons are no exception; many transmitters present in the striatum directly act on DA axons to facilitate or depress vesicular release of DA (Sulzer et al., 2016). However, the axons of DA neurons do stand out in their sensitivity to acetylcholine (ACh), whose release from striatal cholinergic interneurons in brain slices is potent enough to trigger axonal action potentials and locally evoke DA release (i.e., independently of somatic spiking activity) via the activation of \u03b22-containing nicotinic ACh receptors on DA axons (Cachope et al., 2012; Threlfell et al., 2012; Wang et al., 2014; Mamaligas et al., 2016; Kramer et al., 2022; Liu et al., 2022; Matityahu et al., 2023). This mechanism was proposed to underlie observations that DA release in ventral striatum (nucleus accumbens, NAc) can increase even when the firing of DA neurons in the midbrain appears unchanged (Berke, 2018; Mohebi et al., 2019). However, direct evidence for ACh-evoked striatal DA release in vivo remains limited.\n\nIn their original report of ACh-evoked DA release, Cachope et al., 2012 presented an example recording whereby strong optogenetic activation of cholinergic interneurons for several seconds is accompanied by DA elevation in the NAc of a urethane-anesthetized mouse. More recently, we and others showed in mice and rats that the patterns of DA and ACh release in various striatal locations in vivo are strongly correlated on sub-second time-scales in a manner that is consistent with ACh-evoked DA release (Howe et al., 2019; Liu et al., 2022; Chantranupong et al., 2023; Krok et al., 2023; Mohebi et al., 2023). Yet, we were unable to observe strong changes in the dynamics of DA in the dorsal and lateral striatum of mice after molecular, pharmacological and optogenetic interference with ACh signaling (Chantranupong et al., 2023; Krok et al., 2023).\n\nA recent paper (Mohebi et al., 2023) provided some of the most compelling evidence to date that optogenetic activation of channelrhodopsin-expressing striatal cholinergic interneurons drives DA release in the NAc of awake behaving rats, as measured with the red-shifted DA sensor RdLight1 (Patriarchi et al., 2020). However, one concern with these experiments is that mApple-based fluorescent sensors \u2013 including RdLight1 and the GRAB-rDA series (Zhuo et al., 2024) \u2013 may exhibit photoactivation (also known as \u2018photoswitching\u2019 or \u2018photoconversion\u2019), a process whereby mApple\u2019s red fluorescence changes in the presence of blue light (Shaner et al., 2008). This phenomenon is one of the main downsides of the R-GECO family of red Ca2+ indicators, which also use mApple and grow brighter independently of Ca2+ for hundreds of milliseconds following brief flashes of blue light, limiting their use with optogenetics (Akerboom et al., 2013; Dana et al., 2016). In the case of RdLight1, it was previously shown that photoactivation effects are negligible when expressed in cultured kidney cells and imaged using light-scanning confocal microscopy (Patriarchi et al., 2020). Whether RdLight1 shows photoactivation in vivo under conditions routinely used in behavioral experiments (i.e., full-field fiber photometry and optogenetic stimulation) has not been investigated.\n\n## Results\n\n### Blue light evokes RdLight1 fluorescence transients in the absence of an opsin\n\nTo determine if blue light modifies the fluorescent properties of RdLight1 in the behaving brain, the laboratory of N.X.T. virally expressed RdLight1 in either the dorsolateral striatum (DLS) or NAc of wild-type mice (Figure 1A and B) and imaged RdLight1 fluorescence in vivo using fiber photometry while mice were head-fixed on a cylindrical treadmill (Figure 1C). Under standard continuous illumination conditions (565 nm excitation light, 30\u201350 \u03bcW at the tip of the fiber), we observed transient increases and decreases in red fluorescence consistent with established patterns of DA release (Howe and Dombeck, 2016; da Silva et al., 2018; Chantranupong et al., 2023; Krok et al., 2023; Markowitz et al., 2023; Mohebi et al., 2024), including spontaneous fluctuations during immobility and large-amplitude reward-evoked responses (Figure 1D\u2013E).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/95694/elife-95694-fig1-v1.jpg)\n\n**Figure 1.:** (A) The red DA sensor RdLight1 was virally expressed in neurons of the nucleus accumbens (NAc) or dorsolateral striatum (DLS) of wild-type mice and imaged in vivo via chronically-implanted fiber optic cannulas. (B) Example fixed coronal sections from two mice stained for the nuclear marker DAPI (blue) and imaged by epifluorescence showing RdLight1 (red) expression in the NAc (left) and DLS (right). Scale bar: 1 mm. (C) Experimental setup for imaging RdLight1 by photometry while delivering blue light (470 nm) via the same fiber optic in awake behaving mice. RdLight1 was excited with continuous yellow-green light (565 nm) and red emitted fluorescence (580\u2013680 nm) was collected via a dual color photometry minicube. (D) Representative RdLight1 transient aligned to water reward delivery in NAc (top) and DLS (bottom). Solid lines are the mean of 15 trials. Shaded area shows SEM. (E) Continuous RdLight1 photometric imaging during immobility in NAc (top) and DLS (bottom). Blue lines highlight 4 ms-long pulses of blue light (9 mW) delivered through the same fiber optic, each followed by a delayed RdLight1 transient. (F) Comparison of mean reward- and blue light-evoked RdLight1 transients recorded in N=4 mice in NAc and DLS. (G) RdLight1 fluorescence (emitted upon continuous excitation with 565 nm light) increases upon exposure to blue light pulses (470 nm; 9 mW at tip of patch cord) of various durations (1\u20136ms; color-coded) in the NAc (top) and DLS (bottom) of a representative mouse. Solid lines are the mean of 15 blue light presentations. Shaded area shows SEM. (H) The magnitude of blue light-evoked RdLight1 fluorescence transients (i.e., photoactivation) grows with the duration of blue light pulses in both NAc (top; N=8 mice) and DLS (bottom; N=8 mice).(I) Magnitude of RdLight1 fluorescence transients evoked by 6 ms-long blue light pulses of various intensities (0.3\u20139 mW, measured at tip of patch cord) in both NAc (top) and DLS (bottom). Data plotted on Log10-Log10 scales. (J) Representative RdLight1 photoactivation transients (red: mean of 10 individual traces shown in gray) imaged in NAc before and after systemic block of vesicular DA release with reserpine. (K) Magnitude of blue light-evoked (9 mW; 6ms pulse width) RdLight1 photoactivation before and after reserpine treatment in NAc (N=4 mice) and DLS (N=4 mice).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/95694/elife-95694-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Injection and fiber implantation scheme for mice expressing RdLight1 in the VLS (left). Images of sensor expression from a representative mouse (right; scale bar: 800 \u00b5m). (B) Mean (\u00b1 SEM) RdLight1 photoactivation signal in the VLS in response to 1, 2, 4, or 6ms single pulses of blue light stimulation (10 mW) coupled with constant 565 nm illumination (30 \u00b5W). Colored vertical bars indicate laser stimulation artifacts which were removed. Mean maximal RdLight1 photoactivation signals recorded under the indicated stimulation widths are displayed. Each dot represents the average signal from a single mouse, and error bars denote the standard deviation (N=3 mice). (C) Mean (\u00b1 SEM) RdLight1 photoactivation signal in the VLS in response to a pair of 4ms blue light pulses (10 mW) separated by the indicated inter-pulse intervals. Mean paired pulse ratios are displayed (magnitude of pulse #2/pulse #1), with each dot representing a single mouse, and the error bars denoting the standard deviation (N=3 mice).\n\nDelivering blue light pulses (4 ms-long) through the same fiber at powers typically used for optogenetic manipulations (9 mW at the tip of the patch cord) evoked distinct transients in RdLight1 fluorescence resembling DA release (Figure 1E\u2013F). In the NAc, these transients averaged 7.0 \u00b1 0.1% \u0394F/F in magnitude, peaked 115\u00b14ms after light onset and decayed back to baseline within 1 s (\u03c4decay: 422\u00b121ms; N=8 mice). In the DLS, blue light-evoked transients were smaller (4.5 \u00b1 0.2% \u0394F/F) but showed similar kinetics (time from light onset to peak: 129\u00b12ms; \u03c4decay: 516\u00b160ms; N=8 mice). In both regions, blue light-evoked transients scaled in magnitude with the duration (Figure 1G\u2013H) and intensity of light pulses (Figure 1I). In parallel experiments taking place in the laboratory of B.L.S., comparable increases in RdLight1 fluorescence were observed in N=3 mice that expressed RdLight1 in the ventrolateral striatum (VLS; Figure 1\u2014figure supplement 1), confirming their occurrence across a range of experimental conditions. These delayed fluorescent signals are specific to RdLight1, as they are not observed in mice expressing the red fluorescent protein tdTomato (not shown).\n\n### Blue light-evoked RdLight1 fluorescence transients do not reflect DA release\n\nDo these blue light-evoked RdLight1 transients reflect a phasic elevation in extracellular DA? Several lines of evidence suggest that this is not the case. First, our wild-type mice do not express blue light-gated opsins to drive DA release and DA neurons are not thought to be intrinsically sensitive to blue light. Second, blue light-evoked transients show little trial-by-trial variability in their amplitudes and kinetics (Figure 1G and J). Third, blue light-evoked transients do not display short-term facilitation or depression under a variety of stimulation conditions (Figure 2 and Figure 1\u2014figure supplement 1C), calling into question their synaptic origin. Fourth, we repeated the above experiments in a subset of mice treated with reserpine, an irreversible antagonist of the transporter required for loading DA into synaptic vesicles (Figure 1J). Under these conditions, spontaneous fluctuations in RdLight1 fluorescence vanished in both the DLS (N=4) and NAc (N=4), confirming the absence of activity-dependent DA release in vivo. By contrast, blue light-evoked RdLight1 transients did not disappear and, if anything, grew in amplitude and duration in both DLS and NAc (Figure 1J and K), demonstrating that they do not reflect synaptic release of DA.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/95694/elife-95694-fig2-v1.jpg)\n\n**Figure 2.:** (A) Experimental setup. (B) Mean (\u00b1 SEM) RdLight1 photoactivation in response to 1, 4, 16, 32, or 64 blue light pulses (9 mW, 4ms width, 16 Hz frequency) in the NAc of a representative mouse. Green bar illustrates constant 565 nm illumination. Blue bars show when blue light is delivered. (C) Same as (B) for pairs of blue light pulses (9 mW, 4ms width) separated by 2.5, 5 and 10 s. (D) Mean paired-pulse ratio (magnitude of pulse #2/pulse #1) across three inter-pulse intervals in each of N=8 mice.\n\n## Discussion\n\nOur results show that RdLight1 displays strong photoactivation following exposure to blue light under wide-field illumination conditions routinely used to monitor and manipulate neural activity in vivo. This photoactivation manifests as a prolonged, DA-independent increase in RdLight1 fluorescence that outlasts the blue light pulse and slowly decays back to baseline over hundreds of milliseconds, giving it the appearance of synaptically-released DA. Under our recording conditions, photoactivation remained detectable with as little as 0.3 mW blue light (Figure 1I), indicating that RdLight1 fluorescence should be interpreted with caution when combined with blue light in a variety of experimental conditions, including dual-color imaging of green and red fluorophores. In this case, the steady or rapidly-modulating (i.e., tens to hundreds of Hz) blue light might lead to constant activation of mApple but, due to its long photoswitching time, is unlikely to contribute to phasic and aperiodic transients in the red channel, which our experiments showed reflect DA release (Chantranupong et al., 2023; Krok et al., 2023). It is possible that the initial characterization of RdLight1 failed to reveal strong blue light-mediated photoactivation as it used laser-scanning microscopy (Patriarchi et al., 2020), which Roger Tsien and colleagues found in their original characterization of mApple produced significantly less photoswitching compared to continuous wide-field illumination (Shaner et al., 2008).\n\nOur findings call into question the nature of the RdLight1 fluorescent transients reported in Figure 1 of the study by Mohebi et al., 2023. Given the similarity of our recordings in terms of response magnitude, timing and dynamics over a variety of stimulation parameters, it is likely that the light-evoked RdLight1 responses reported reflect this photoactivation effect. Although the study used 405 nm illumination to control for changes in fluorophore properties independent of ligand binding (i.e., the so-called isosbestic point), this deep blue wavelength has not been shown to be the isosbestic point for RdLight1. Indeed, the isosbestic point of commonly-used green dopamine sensors is more green-shifted (e.g. 440 nm; Sun et al., 2020), stressing the need for sensors to be published along with their full excitation/emission spectra, and for experimenters to tailor illumination wavelengths to their specific sensor. It also remains to be determined whether illumination at isosbestic wavelengths can contribute to or modify photoactivation.\n\nMoving forward, additional experiments will be needed to determine conditions under which cholinergic interneurons locally evoke DA release in the striatum of behaving animals. If using RdLight1, experiments should include controls to account for the effects of blue light alone, such as expressing RdLight1 only (i.e., no opsin), RdLight1 and a fluorophore [e.g., green fluorescent protein (GFP)] or a mutated sensor that does not bind DA. Blue light illumination power should be kept as low as possible. Alternatively, optogenetic experiments may be designed using GFP-based DA sensors such as dLight1 (Patriarchi et al., 2018) or GRAB-DA3 (Zhuo et al., 2024) in combination with red-shifted optogenetic actuators (Klapoetke et al., 2014; Marshel et al., 2019), although this configuration is not without caveats either, as continuous blue light illumination may cause opsin activation.\n\nImportantly, photoactivation is not unique to RdLight1. Other mApple-based sensors, including the GRAB-rDA and R-GenGAR-DA families of red DA sensors (Sun et al., 2020; Nakamoto et al., 2021; Zhuo et al., 2024), as well as the R-GECO family of Ca2 +indicators (Akerboom et al., 2013; Dana et al., 2016) show photoactivation when presented with blue light, with individual constructs differing in the polarity, magnitude and duration of photoactivation effects. Photoactivation also extends beyond mApple, as many fluorophores can modify their biophysical properties when presented with different wavelengths of light. It is, for instance, the biophysical principle on which some molecular tracking and super-resolution imaging methods are founded (Lippincott-Schwartz and Patterson, 2009; Chozinski et al., 2014). Experiments should therefore be designed carefully to control for these and other potential confounds, particularly when novel sensors are introduced.\n\n## Materials and methods\n\n### Animals\n\nProcedures were performed in accordance with protocols approved by the NYU Grossman School of Medicine (NYUGSM; #IA16-02082) and Harvard Medical School (HMS; #IS0000571) Institutional Animal Care and Use Committees. Wild type mice (C57BL/6 J; Jackson Laboratory strain #000664; 12\u201318 weeks of age) were housed in group before surgery and singly after surgery under a reverse 12 hour light-dark cycle (dark from 6 a.m. to 6 p.m. at NYUGSM and 10 a.m. to 10 p.m. at HMS) with ad libitum access to food and water.\n\n### Stereotaxic surgery\n\nMice were prepared for intracranial infections of adeno-associated viruses (AAVs) as before (Chantranupong et al., 2023; Krok et al., 2023). Briefly, mice were anaesthetized with isoflurane, administered Ketoprofen (10 mg/kg, subcutaneous) or Carprofen (5 mg/kg, subcutaneous) and placed in a stereotaxic apparatus (Kopf Instruments), where a small craniotomy was drilled above the NAc (from Bregma: AP +1.0 mm, ML +0.75 mm), DLS (from Bregma: AP +0.5 mm, ML +2.5 mm), or VLS (from Bregma: AP +0.6 mm, ML +2.3 mm). 300 nL of AAV2/9.Syn.RdLight1 (CNP Viral Vector Core at the CERVO Research Center contribution) was injected (100 nL/min) at a depth of 3.7 mm below dura for NAc, 2.3 mm for DLS or 3.2 mm for VLS using a microsyringe pump (KD Scientific; Legato 111) connected to a pulled glass injection needle (100 \u03bcm tip; Drummond Wiretrol II). Fiber optics (NAc and DLS: 400 \u03bcm diameter core, 0.5 NA; RWD Life Science Inc; VLS: 200 \u03bcm diameter core, 0.48 NA; Doric) were implanted 100 \u03bcm above the injection site and cemented to the skull using C&B metabond (Parkell) along with a custom titanium headpost placed over lambda to allow for head fixation during recordings. Mice were allowed to recover in their home cage for 2\u20134 weeks before head-fixation and treadmill habituation, and recordings.\n\n### Fiber Photometry\n\nRdLight1 photometry recordings were carried out by feeding constant, low-power yellow-green excitation light (565 nm LED, 30\u201350 \u03bcW at the tip of the patch cord; Thorlabs M565F3) to a fluorescence mini cube (FMC5_E1(460\u2013490)_F1(500\u2013540)_E2(555\u2013570)_F2(580\u2013680)_S; Doric) connected to the mouse\u2019s fiber optic implant via a 0.48 NA patch cord (NAc and DLS: MFP_400/460/900\u20130.48_2 m_FCM-MF1.25; VLS: MFP_200/220/900_2 m_FCM-MF1.25; both from Doric). The red light emitted by RdLight1 was collected through the same patch cord and routed via the fluorescence mini cube and a second fiber optic (MFP_600/630/LWMJ-0.48_0.5 m_FCM-FCM; Doric) to a photoreceiver (Newport 2151) to produce a voltage that is proportional to the intensity of the emitted light. Voltages were digitized at 2 kHz with either a National Instruments acquisition board (NI USB-6343) or a Labjack (T7) and saved to disk as \u2018trials/sweeps\u2019 lasting 5\u201320 s in duration each using Wavesurfer software (Janelia). To characterize the photoactivation behavior of RdLight1, we delivered brief pulses (1\u20136ms in duration) of blue light (NAc, DLS: 470 nm LED, Thorlabs M470F3; VLS: 470 nm laser, Optoengine) to the brain via the same fluorescence mini cube and patch cord used for photometry. We tested a range of blue light powers (measured at the tip of the patch cord) frequently used for optogenetic manipulations in vivo. The timing, duration and intensity of blue light pulses were controlled digitally using Wavesurfer, with each stimulation parameter repeated at minimum 10 times per mouse/recording site. RdLight1 photoactivation responses are extremely stable over time and were reliably seen for the duration of 1 h-long recording sessions.\n\n### Fiber Photometry Analysis\n\nPhotometry signals were processed and analyzed offline using custom code (https://github.com/TritschLab/Taniguchi-Melani-2024; copy archived at TritschLab, 2024) in MATLAB (Mathworks) and Igor Pro 6.02 A (Wavemetrics). Raw voltages collected from the photoreceiver were down sampled to 1,000 Hz and converted to \u2018percent changes in fluorescence\u2019 using the equation $\\frac{\\DeltaF}{F}=\\frac{F-F_{0}}{F_{0}}$ , where $F_{0}$ is the mean baseline fluorescence, computed for each trial/sweep during a 1.5\u20132 s baseline window preceding the blue light stimulus (Taniguchi, 2024). Blue excitation light led to an instantaneous artifact in the red channel for the exact duration of the blue light pulse, which was blanked in display panels. For each experiment, 10\u201315 replicates were performed. In figures, gray traces represent single trials, while colored traces represent the mean of 10\u201315 trials, with standard error of the mean (SEM) shown as a shaded area. The properties of RdLight1 photoactivation transients [peak amplitude, latency to peak (i.e., from blue light onset to RdLight1 photoactivation peak) and decay time constant (i.e., time from peak to 37% of peak)] were measured for each mouse using averaged waveforms. Data are reported in the text and figures as mean \u00b1 SEM. N-values represent the number of mice.\n\n### Immunohistochemistry\n\nMice were deeply anesthetized with isoflurane and perfused transcardially with 4% paraformaldehyde in phosphate buffered saline (PBS). Brains were post-fixed for 24 h and sectioned coronally (100 \u03bcm in thickness) using a vibratome (Leica; VT1000S). Brain sections were mounted on superfrost slides and coverslipped with ProLong antifade reagent with DAPI (Molecular Probes). RdLight1 fluorescence was not immuno-enhanced. Whole sections were imaged with an Olympus VS120 slide scanning microscope.\n\n### Reagents\n\nTo inhibit DA vesicular transport and prevent vesicular release of DA, mice were injected intraperitoneally with the irreversible vesicular monoamine transporter inhibitor reserpine (5 mg/kg) for 24 h prior to RdLight1 photometry.\n",
+      "created_at": "2025-12-04T04:34:12.933931Z"
+    },
+    {
+      "id": "16511a23-b926-465c-bd26-b3c3662eff6f",
+      "submission_id": "4cae7dbd-1694-4737-9b0a-020703889e6b",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Joseph F Cheer, https://ror.org/047s2c258 University of Maryland School of Medicine United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.95694.sa1](https://doi.org/10.7554/eLife.95694.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your work entitled \"Comment on 'Accumbens cholinergic interneurons dynamically promote dopamine release and enable motivation'\" for consideration by eLife. Your article has been evaluated by Michael Taffe as Senior Editor, Joseph Cheer as Reviewing Editor, and two reviewers (who have opted to remain anonymous).\n\nPlease consider the comments and suggestions made by the two reviewers (please see below) and respond accordingly. Please also address the editorial issues.\n\nReviewer #1:\n\nThe comment by Taniguchi et al. systematically and convincingly demonstrates that the red dopamine sensor RdLight1 is photoactivated in response to blue light in the absence of blue light-activated opsins. Moreover, the dynamics of RdLight1 responses to blue light closely mimic the classic dynamics of dopamine transients and would be difficult to distinguish without proper controls. The magnitude of the artifact scales with blue light duration and intensity, is reproducible across several regions of striatum (and in separate laboratories), is robust to dopamine depletion with reserpine, and shows no evidence of depression with repeated stimulation. Taken together, these data highlight an important caveat for the use of RdLight1 with blue-light-activated opsins. This issue has implications for both the interpretation of the paper by Mohebi, Collins and Berke and for the wider audience of scientists utilizing fluorescent sensors in their work. While the findings of this comment show definitively that Figure 1 of Mohebi et al. is contaminated by an artifact, the remaining figures of the paper add valuable knowledge to our limited understanding of the role of cholinergic interneurons in modulating dopamine activity in the striatum in vivo. It is important to note that this comment is an example of responsible and transparent work that reflects how science should be conducted. Both the authors of the original paper and of this comment showed commendable scientific integrity in producing this comment. The fact that these studies were done across laboratories shows not only open collaboration, which should be applauded but also adds an extra layer of rigor.\n\n1. It is still unclear if dual-color fiber photometry (as is used in some of the remaining Mohebi et al. figures) would be subject to the same artifact, as the light intensities generally used for fiber photometry are much lower than for optogenetics and lower than were tested in this comment. In the future, all authors making use of fluorescent sensors can use the approaches demonstrated in this comment to conduct proper controls for their own experiments.\n\n2. The authors correctly point out that many mApple-based fluorescent sensors have been shown to have similar photoswitching artifacts (Zhuo et al., 2023), but should be careful about singling out mApple as the sole issue. Doing so could lead researchers to falsely assume non-mApple-based sensors are safe from such artifacts. Researchers should be reminded of the need to run appropriate controls for all new sensors.\n\n3. The authors mention that the 405 nm wavelength has not been shown to be an appropriate isosbestic wavelength for RdLight1. This provides an opportunity to highlight the need for those developing new sensors to carefully test and publish the full excitation and emission spectra of their sensors in the future.\n\nReviewer #2:\n\nIn the present Comment Taniguchi et al. address an important methodological issue concerning the primary data collection in Mohebi et al. (2023) that substantially changes the interpretation and impact of the original article. In Mohebi et al., the authors used a red-shifted fluorescent dopamine sensor, RdLight1, to measure dopamine release in behaving rodents. They then simultaneously activated a population of acetylcholine-releasing interneurons (ChIs) using a blue-light gated channel rhodopsin (ChR2). They found that evoking action potentials in the ChIs with blue light led to transient increases in the RdLight1 signal that were interpreted as dopamine release. This result was the key observation for the principal conclusions of their study.\n\nHowever, the present Comment clearly demonstrates through new data that blue light stimulation also directly 'activates' the RdLight1 sensor to produce a signal that appears as dopamine but is in fact not dopamine. Taniguchi et al. thoroughly tested and verified these findings. These results directly challenge the principal findings from Mohebi et al., including the observation that dopamine release is linearly scaled with intensity and duration of activation of cholinergic interneurons (i.e. no short-term depression).\n\nIt should be noted that Mohebi and Berke collaborated on this Comment and acknowledge the methodological error in their original publication. This Comment should be published with no need for additional data. I have no substantive concerns.\n\nThere are two changes to the text I would ask the authors to make.\n\n1. The language used in a sentence in the Introduction implies that previous work examining the function of nicotinic receptors on dopaminergic fibers implicated these receptors as the sole drivers of all dopamine release in the dorsal and lateral striatum. This is because it is written that \"DA dynamics in the dorsal and lateral striatum were found to persist even after \u2026. interference with ACh signaling\". Likely everyone would agree that the majority of \"DA dynamics\" should persist in these conditions. Please amend this section to use more precise language giving appropriate context to these experiments and results. For example, \"previous results were unable to detect a change in DA dynamics\u2026\"\n\n2. The authors of this Comment are experts in RdLight1, and similar sensors based on mApple. It would be a tremendous benefit to the field if the authors could leverage that expertise here to identify other sensors that could be impacted by the present results.\n\na. Are there other red fluorescent sensors that are based on mApple?\n\nb. If the authors had used mApple instead of tdTomato in the experiment discussed in the Results, do they think they would have seen a signal like the one shown by RdLight1? Or is the problem with RdLight1 due to the molecular alterations necessary to make it respond to dopamine?\n\nPlease also make the following editorial revisions:\n\na) Abstract\n\nReading the article without the cover letter, it is not clear that the author list includes two authors from the paper that is being criticized (Mohebi and Berke): it would be good if this could be made clear by revising the abstract as follows:\n\nIt is widely believed that acetylcholine modulates the release of dopamine in the striatum of mammals. Experiments in brain slices clearly show that synchronous activation of striatal cholinergic interneurons is sufficient to drive dopamine release via axo-axonal stimulation of nicotinic acetylcholine receptors, but there is less evidence for this mechanism in vivo. Mohebi, Collins and Berke recently reported that, in awake behaving rats, optogenetic activation of striatal cholinergic interneurons with blue light readily evokes dopamine release, as measured with the red fluorescent sensor RdLight1 (Mohebi et al., 2023). Here, we show that blue light alone alters the fluorescent properties of RdLight1 in a manner that may be misconstrued as phasic dopamine release and that this artefactual photoactivation can account for the effects attributed to cholinergic interneurons. Measurements of dopamine using RdLight1 should, therefore, be interpreted with caution when combined with optogenetics. In light of these results (which were obtained by a multi-laboratory collaboration that included Mohebi and Berke), and the results of other studies that did not observe large acetylcholine-evoked dopamine transients in vivo, the conditions under which such release occurs in behaving animals remain unknown.\n\nb) Results section\n\nThe statement \"In a separate laboratory...\" will confuse readers: please revise the Results section to make clear where the different experiments were performed.\n",
+      "created_at": "2025-12-04T04:34:12.933931Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T04:34:12.933931Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T04:34:12.933931Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "5d264ac5-5ba0-4b4d-842c-59ca9277c8f6",
+      "content_id": "94e83644-97bd-45b8-ab74-96bf4e50e6df",
+      "claim_id": "C1",
+      "claim": "Synchronous activation of striatal cholinergic interneurons is sufficient to drive dopamine release via axo-axonal stimulation of nicotinic acetylcholine receptors in brain slices.",
+      "claim_type": "EXPLICIT",
+      "source": "Experiments in brain slices clearly show that synchronous activation of striatal cholinergic interneurons is sufficient to drive dopamine release via axo-axonal stimulation of nicotinic acetylcholine receptors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to established literature on the mechanism of acetylcholine-evoked dopamine release in brain slices.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:34:12.933931Z"
+    },
+    {
+      "id": "07a44764-eed8-4797-ae61-77ffb6e614d7",
+      "content_id": "94e83644-97bd-45b8-ab74-96bf4e50e6df",
+      "claim_id": "C2",
+      "claim": "Evidence for acetylcholine-evoked dopamine release in vivo has been less forthcoming.",
+      "claim_type": "EXPLICIT",
+      "source": "However, evidence for this mechanism in vivo has been less forthcoming.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement about the state of the literature, based on inference from available studies.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:34:12.933931Z"
+    },
+    {
+      "id": "24752c15-0ec0-4f3b-9ab5-be0ae1774d9f",
+      "content_id": "94e83644-97bd-45b8-ab74-96bf4e50e6df",
+      "claim_id": "C3",
+      "claim": "Mohebi, Collins and Berke reported that optogenetic activation of striatal cholinergic interneurons with blue light evokes dopamine release measured with RdLight1 in awake behaving rats.",
+      "claim_type": "EXPLICIT",
+      "source": "Mohebi, Collins and Berke recently reported that, in awake behaving rats, optogenetic activation of striatal cholinergic interneurons with blue light readily evokes dopamine release measured with the red fluorescent sensor RdLight1 (Mohebi et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim cites a specific published study (Mohebi et al., 2023).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:34:12.933931Z"
+    },
+    {
+      "id": "b04a1426-6c1b-4a8b-9552-e64aabf60c12",
+      "content_id": "94e83644-97bd-45b8-ab74-96bf4e50e6df",
+      "claim_id": "C4",
+      "claim": "Blue light alone alters the fluorescent properties of RdLight1 in a manner that may be misconstrued as phasic dopamine release.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show that blue light alone alters the fluorescent properties of RdLight1 in a manner that may be misconstrued as phasic dopamine release, and that this artefactual photoactivation can account for the effects attributed to cholinergic interneurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main finding of the current study, supported by experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:34:12.933931Z"
+    },
+    {
+      "id": "5ea7dee4-e6b8-4bac-9ed9-c1c56b5297fe",
+      "content_id": "94e83644-97bd-45b8-ab74-96bf4e50e6df",
+      "claim_id": "C5",
+      "claim": "Artefactual photoactivation of RdLight1 can account for the effects attributed to cholinergic interneurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show that blue light alone alters the fluorescent properties of RdLight1 in a manner that may be misconstrued as phasic dopamine release, and that this artefactual photoactivation can account for the effects attributed to cholinergic interneurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the experimental data showing photoactivation effects.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:34:12.933931Z"
+    },
+    {
+      "id": "e6fbaade-f08e-4819-9e2d-36b42f09a396",
+      "content_id": "94e83644-97bd-45b8-ab74-96bf4e50e6df",
+      "claim_id": "C6",
+      "claim": "Measurements of dopamine using RdLight1 should be interpreted with caution when combined with optogenetics.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings indicate that measurements of dopamine using the red-shifted fluorescent sensor RdLight1 should be interpreted with caution when combined with optogenetics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation based on the experimental findings of photoactivation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:34:12.933931Z"
+    },
+    {
+      "id": "6acee3fc-2397-4cc9-b103-dd7a79c65b69",
+      "content_id": "94e83644-97bd-45b8-ab74-96bf4e50e6df",
+      "claim_id": "C7",
+      "claim": "The conditions under which acetylcholine-evoked dopamine release occurs in behaving animals remain unknown.",
+      "claim_type": "EXPLICIT",
+      "source": "In light of this and other publications that did not observe large acetylcholine-evoked dopamine transients in vivo, the conditions under which such release occurs in behaving animals remain unknown.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the current findings and review of the literature.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:34:12.933931Z"
+    },
+    {
+      "id": "2a4b64b8-f86a-491a-a2f6-cce16d4b018d",
+      "content_id": "94e83644-97bd-45b8-ab74-96bf4e50e6df",
+      "claim_id": "C8",
+      "claim": "Dopamine axons are sensitive to acetylcholine.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the axons of DA neurons do stand out in their sensitivity to acetylcholine (ACh), whose release from striatal cholinergic interneurons in brain slices is potent enough to trigger axonal action potentials and locally evoke DA release (i.e., independently of somatic spiking activity) via the activation of \u03b22-containing nicotinic ACh receptors on DA axons (Cachope et al., 2012; Threlfell et al., 2012; Wang et al., 2014; Mamaligas et al., 2016; Kramer et al., 2022; Liu et al., 2022; Matityahu et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to published literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:34:12.933931Z"
+    },
+    {
+      "id": "f1b39ef5-1f94-479c-80d7-24146b624f3e",
+      "content_id": "94e83644-97bd-45b8-ab74-96bf4e50e6df",
+      "claim_id": "C9",
+      "claim": "Acetylcholine release from striatal cholinergic interneurons can trigger axonal action potentials and locally evoke dopamine release via activation of \u03b22-containing nicotinic ACh receptors on dopamine axons in brain slices.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the axons of DA neurons do stand out in their sensitivity to acetylcholine (ACh), whose release from striatal cholinergic interneurons in brain slices is potent enough to trigger axonal action potentials and locally evoke DA release (i.e., independently of somatic spiking activity) via the activation of \u03b22-containing nicotinic ACh receptors on DA axons (Cachope et al., 2012; Threlfell et al., 2012; Wang et al., 2014; Mamaligas et al., 2016; Kramer et al., 2022; Liu et al., 2022; Matityahu et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to published studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:34:12.933931Z"
+    },
+    {
+      "id": "7c806532-9e69-4fa6-8cde-1160c3beabae",
+      "content_id": "94e83644-97bd-45b8-ab74-96bf4e50e6df",
+      "claim_id": "C10",
+      "claim": "Dopamine release in ventral striatum can increase even when the firing of dopamine neurons in the midbrain appears unchanged.",
+      "claim_type": "EXPLICIT",
+      "source": "This mechanism was proposed to underlie observations that DA release in ventral striatum (nucleus accumbens, NAc) can increase even when the firing of DA neurons in the midbrain appears unchanged (Berke, 2018; Mohebi et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published observations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:34:12.933931Z"
+    },
+    {
+      "id": "01295982-5bc0-4997-9c2c-15271d23a033",
+      "content_id": "94e83644-97bd-45b8-ab74-96bf4e50e6df",
+      "claim_id": "C11",
+      "claim": "Direct evidence for acetylcholine-evoked striatal dopamine release in vivo remains limited.",
+      "claim_type": "EXPLICIT",
+      "source": "However, direct evidence for ACh-evoked striatal DA release in vivo remains limited.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement about the state of the literature.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:34:12.933931Z"
+    },
+    {
+      "id": "e89aaf2c-66a0-4759-9fde-080500ee5cc7",
+      "content_id": "94e83644-97bd-45b8-ab74-96bf4e50e6df",
+      "claim_id": "C12",
+      "claim": "Cachope et al., 2012 presented an example recording showing that strong optogenetic activation of cholinergic interneurons for several seconds is accompanied by dopamine elevation in the NAc of a urethane-anesthetized mouse.",
+      "claim_type": "EXPLICIT",
+      "source": "In their original report of ACh-evoked DA release, Cachope et al., 2012 presented an example recording whereby strong optogenetic activation of cholinergic interneurons for several seconds is accompanied by DA elevation in the NAc of a urethane-anesthetized mouse.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim cites a specific finding from a published study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:34:12.933931Z"
+    },
+    {
+      "id": "7853dbfd-c604-4eff-8bc8-8ad35af85d5a",
+      "content_id": "94e83644-97bd-45b8-ab74-96bf4e50e6df",
+      "claim_id": "C13",
+      "claim": "The patterns of dopamine and acetylcholine release in various striatal locations in vivo are strongly correlated on sub-second time-scales in a manner consistent with acetylcholine-evoked dopamine release.",
+      "claim_type": "EXPLICIT",
+      "source": "More recently, we and others showed in mice and rats that the patterns of DA and ACh release in various striatal locations in vivo are strongly correlated on sub-second time-scales in a manner that is consistent with ACh-evoked DA release (Howe et al., 2019; Liu et al., 2022; Chantranupong et al., 2023; Krok et al., 2023; Mohebi et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations including the authors' own work.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:34:12.933931Z"
+    },
+    {
+      "id": "eacdac8b-f589-40d9-88c4-8a142dbdcebd",
+      "content_id": "94e83644-97bd-45b8-ab74-96bf4e50e6df",
+      "claim_id": "C14",
+      "claim": "Strong changes in dopamine dynamics were not observed in the dorsal and lateral striatum of mice after molecular, pharmacological and optogenetic interference with acetylcholine signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Yet, we were unable to observe strong changes in the dynamics of DA in the dorsal and lateral striatum of mice after molecular, pharmacological and optogenetic interference with ACh signaling (Chantranupong et al., 2023; Krok et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to the authors' own published work.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:34:12.933931Z"
+    },
+    {
+      "id": "f6d8ac32-4f2c-4325-80fa-0f1cc051bf06",
+      "content_id": "94e83644-97bd-45b8-ab74-96bf4e50e6df",
+      "claim_id": "C15",
+      "claim": "mApple-based fluorescent sensors including RdLight1 and the GRAB-rDA series may exhibit photoactivation.",
+      "claim_type": "EXPLICIT",
+      "source": "However, one concern with these experiments is that mApple-based fluorescent sensors \u2013 including RdLight1 and the GRAB-rDA series (Zhuo et al., 2024) \u2013 may exhibit photoactivation (also known as 'photoswitching' or 'photoconversion'), a process whereby mApple's red fluorescence changes in the presence of blue light (Shaner et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to published literature on mApple properties.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:34:12.933931Z"
+    },
+    {
+      "id": "886af892-c116-4dc6-bc5a-885cb29137a7",
+      "content_id": "94e83644-97bd-45b8-ab74-96bf4e50e6df",
+      "claim_id": "C16",
+      "claim": "Photoactivation is a process whereby mApple's red fluorescence changes in the presence of blue light.",
+      "claim_type": "EXPLICIT",
+      "source": "However, one concern with these experiments is that mApple-based fluorescent sensors \u2013 including RdLight1 and the GRAB-rDA series (Zhuo et al., 2024) \u2013 may exhibit photoactivation (also known as 'photoswitching' or 'photoconversion'), a process whereby mApple's red fluorescence changes in the presence of blue light (Shaner et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to published literature on mApple.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:34:12.933931Z"
+    },
+    {
+      "id": "defd6043-6357-489e-81fb-d67289c44af4",
+      "content_id": "94e83644-97bd-45b8-ab74-96bf4e50e6df",
+      "claim_id": "C17",
+      "claim": "R-GECO family red Ca2+ indicators grow brighter independently of Ca2+ for hundreds of milliseconds following brief flashes of blue light.",
+      "claim_type": "EXPLICIT",
+      "source": "This phenomenon is one of the main downsides of the R-GECO family of red Ca2+ indicators, which also use mApple and grow brighter independently of Ca2+ for hundreds of milliseconds following brief flashes of blue light, limiting their use with optogenetics (Akerboom et al., 2013; Dana et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature on R-GECO indicators.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:34:12.933931Z"
+    },
+    {
+      "id": "47e37fe9-3359-4151-9719-c2e2d5064c2e",
+      "content_id": "94e83644-97bd-45b8-ab74-96bf4e50e6df",
+      "claim_id": "C18",
+      "claim": "Photoactivation effects of RdLight1 are negligible when expressed in cultured kidney cells and imaged using light-scanning confocal microscopy.",
+      "claim_type": "EXPLICIT",
+      "source": "In the case of RdLight1, it was previously shown that photoactivation effects are negligible when expressed in cultured kidney cells and imaged using light-scanning confocal microscopy (Patriarchi et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to the original RdLight1 characterization study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:34:12.933931Z"
+    },
+    {
+      "id": "8dfa63e5-9a89-4333-ae28-38066f72f52e",
+      "content_id": "94e83644-97bd-45b8-ab74-96bf4e50e6df",
+      "claim_id": "C19",
+      "claim": "Whether RdLight1 shows photoactivation in vivo under conditions routinely used in behavioral experiments has not been investigated.",
+      "claim_type": "EXPLICIT",
+      "source": "Whether RdLight1 shows photoactivation in vivo under conditions routinely used in behavioral experiments (i.e., full-field fiber photometry and optogenetic stimulation) has not been investigated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the gap in the literature that the current study addresses.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:34:12.933931Z"
+    },
+    {
+      "id": "543f71ff-f067-48c9-8148-d5ae410adf03",
+      "content_id": "94e83644-97bd-45b8-ab74-96bf4e50e6df",
+      "claim_id": "C20",
+      "claim": "Blue light evokes RdLight1 fluorescence transients in the absence of an opsin.",
+      "claim_type": "EXPLICIT",
+      "source": "Blue light evokes RdLight1 fluorescence transients in the absence of an opsin",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a main finding of the study, supported by experimental data in wild-type mice.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:34:12.933931Z"
+    },
+    {
+      "id": "a7f0d091-afbf-451c-99ca-c0add1c5aa82",
+      "content_id": "94e83644-97bd-45b8-ab74-96bf4e50e6df",
+      "claim_id": "C21",
+      "claim": "RdLight1 was virally expressed in the dorsolateral striatum or nucleus accumbens of wild-type mice.",
+      "claim_type": "EXPLICIT",
+      "source": "the laboratory of N.X.T. virally expressed RdLight1 in either the dorsolateral striatum (DLS) or NAc of wild-type mice (Figure 1A and B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the experimental methods and is shown in Figure 1A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:34:12.933931Z"
+    },
+    {
+      "id": "1f0baac0-e793-480c-8acb-a4c5b0c9552c",
+      "content_id": "94e83644-97bd-45b8-ab74-96bf4e50e6df",
+      "claim_id": "C22",
+      "claim": "Under standard continuous illumination conditions, transient increases and decreases in red fluorescence consistent with established patterns of dopamine release were observed.",
+      "claim_type": "EXPLICIT",
+      "source": "Under standard continuous illumination conditions (565 nm excitation light, 30\u201350 \u03bcW at the tip of the fiber), we observed transient increases and decreases in red fluorescence consistent with established patterns of DA release (Howe and Dombeck, 2016; da Silva et al., 2018; Chantranupong et al., 2023; Krok et al., 2023; Markowitz et al., 2023; Mohebi et al., 2024), including spontaneous fluctuations during immobility and large-amplitude reward-evoked responses (Figure 1D\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data and citations to established literature, shown in Figure 1D-E.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:34:12.933931Z"
+    },
+    {
+      "id": "c322874d-d1a5-4f87-ba02-941aac80813f",
+      "content_id": "94e83644-97bd-45b8-ab74-96bf4e50e6df",
+      "claim_id": "C23",
+      "claim": "Delivering blue light pulses through the same fiber at powers typically used for optogenetic manipulations evoked distinct transients in RdLight1 fluorescence resembling dopamine release.",
+      "claim_type": "EXPLICIT",
+      "source": "Delivering blue light pulses (4 ms-long) through the same fiber at powers typically used for optogenetic manipulations (9 mW at the tip of the patch cord) evoked distinct transients in RdLight1 fluorescence resembling DA release (Figure 1E\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a key experimental finding shown in Figure 1E-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:34:12.933931Z"
+    },
+    {
+      "id": "8dc26848-3530-49aa-a156-fb3eaee82b2d",
+      "content_id": "94e83644-97bd-45b8-ab74-96bf4e50e6df",
+      "claim_id": "C24",
+      "claim": "In the NAc, blue light-evoked RdLight1 transients averaged 7.0 \u00b1 0.1% \u0394F/F in magnitude, peaked 115\u00b14ms after light onset and decayed back to baseline within 1 s (\u03c4decay: 422\u00b121ms; N=8 mice).",
+      "claim_type": "EXPLICIT",
+      "source": "In the NAc, these transients averaged 7.0 \u00b1 0.1% \u0394F/F in magnitude, peaked 115\u00b14ms after light onset and decayed back to baseline within 1 s (\u03c4decay: 422\u00b121ms; N=8 mice).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim presents quantitative experimental data from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:34:12.933931Z"
+    },
+    {
+      "id": "4cc91dfd-4e87-448b-8a2f-a210d229d912",
+      "content_id": "94e83644-97bd-45b8-ab74-96bf4e50e6df",
+      "claim_id": "C25",
+      "claim": "In the DLS, blue light-evoked RdLight1 transients were smaller (4.5 \u00b1 0.2% \u0394F/F) but showed similar kinetics (time from light onset to peak: 129\u00b12ms; \u03c4decay: 516\u00b160ms; N=8 mice).",
+      "claim_type": "EXPLICIT",
+      "source": "In the DLS, blue light-evoked transients were smaller (4.5 \u00b1 0.2% \u0394F/F) but showed similar kinetics (time from light onset to peak: 129\u00b12ms; \u03c4decay: 516\u00b160ms; N=8 mice).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim presents quantitative experimental data from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:34:12.933931Z"
+    },
+    {
+      "id": "a56b6916-8890-4723-b022-7e630a657b83",
+      "content_id": "94e83644-97bd-45b8-ab74-96bf4e50e6df",
+      "claim_id": "C26",
+      "claim": "Blue light-evoked RdLight1 transients scaled in magnitude with the duration and intensity of light pulses in both NAc and DLS.",
+      "claim_type": "EXPLICIT",
+      "source": "In both regions, blue light-evoked transients scaled in magnitude with the duration (Figure 1G\u2013H) and intensity of light pulses (Figure 1I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figures 1G-I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:34:12.933931Z"
+    },
+    {
+      "id": "8f0a44ac-d1d2-491b-8038-68d9e5e9e852",
+      "content_id": "94e83644-97bd-45b8-ab74-96bf4e50e6df",
+      "claim_id": "C27",
+      "claim": "Comparable increases in RdLight1 fluorescence were observed in mice that expressed RdLight1 in the ventrolateral striatum.",
+      "claim_type": "EXPLICIT",
+      "source": "In parallel experiments taking place in the laboratory of B.L.S., comparable increases in RdLight1 fluorescence were observed in N=3 mice that expressed RdLight1 in the ventrolateral striatum (VLS; Figure 1\u2014figure supplement 1), confirming their occurrence across a range of experimental conditions.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data from a second laboratory, shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:34:12.933931Z"
+    },
+    {
+      "id": "8b2a0ec2-4651-4e14-b044-cd0ffce991b7",
+      "content_id": "94e83644-97bd-45b8-ab74-96bf4e50e6df",
+      "claim_id": "C28",
+      "claim": "Blue light-evoked delayed fluorescent signals are specific to RdLight1, as they are not observed in mice expressing tdTomato.",
+      "claim_type": "EXPLICIT",
+      "source": "These delayed fluorescent signals are specific to RdLight1, as they are not observed in mice expressing the red fluorescent protein tdTomato (not shown).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data (control experiment with tdTomato).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:34:12.933931Z"
+    },
+    {
+      "id": "8a3fac89-473d-403a-bd5b-29da01f80874",
+      "content_id": "94e83644-97bd-45b8-ab74-96bf4e50e6df",
+      "claim_id": "C29",
+      "claim": "Blue light-evoked RdLight1 fluorescence transients do not reflect dopamine release.",
+      "claim_type": "EXPLICIT",
+      "source": "Blue light-evoked RdLight1 fluorescence transients do not reflect DA release",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a main conclusion of the study, supported by multiple lines of experimental evidence.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:34:12.933931Z"
+    },
+    {
+      "id": "349bde7c-79ec-4033-a742-51b28a3f9cd1",
+      "content_id": "94e83644-97bd-45b8-ab74-96bf4e50e6df",
+      "claim_id": "C30",
+      "claim": "Wild-type mice used in the study do not express blue light-gated opsins to drive dopamine release.",
+      "claim_type": "EXPLICIT",
+      "source": "First, our wild-type mice do not express blue light-gated opsins to drive DA release and DA neurons are not thought to be intrinsically sensitive to blue light.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the experimental design and established knowledge about dopamine neurons.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:34:12.933931Z"
+    },
+    {
+      "id": "911547b8-71ea-4880-951d-7da08a668f79",
+      "content_id": "94e83644-97bd-45b8-ab74-96bf4e50e6df",
+      "claim_id": "C31",
+      "claim": "Dopamine neurons are not thought to be intrinsically sensitive to blue light.",
+      "claim_type": "EXPLICIT",
+      "source": "First, our wild-type mice do not express blue light-gated opsins to drive DA release and DA neurons are not thought to be intrinsically sensitive to blue light.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge about dopamine neuron properties.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:34:12.933931Z"
+    },
+    {
+      "id": "0603afb2-bacb-45aa-b626-0feea19492d4",
+      "content_id": "94e83644-97bd-45b8-ab74-96bf4e50e6df",
+      "claim_id": "C32",
+      "claim": "Blue light-evoked RdLight1 transients show little trial-by-trial variability in their amplitudes and kinetics.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, blue light-evoked transients show little trial-by-trial variability in their amplitudes and kinetics (Figure 1G and J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figures 1G and J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:34:12.933931Z"
+    },
+    {
+      "id": "4d366113-3fde-4b37-a6d9-aa75217414f9",
+      "content_id": "94e83644-97bd-45b8-ab74-96bf4e50e6df",
+      "claim_id": "C33",
+      "claim": "Blue light-evoked RdLight1 transients do not display short-term facilitation or depression under a variety of stimulation conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, blue light-evoked transients do not display short-term facilitation or depression under a variety of stimulation conditions (Figure 2 and Figure 1\u2014figure supplement 1C), calling into question their synaptic origin.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2 and Figure 1\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:34:12.933931Z"
+    },
+    {
+      "id": "7766bcef-c30e-435c-ab61-d79f36e07316",
+      "content_id": "94e83644-97bd-45b8-ab74-96bf4e50e6df",
+      "claim_id": "C34",
+      "claim": "Reserpine is an irreversible antagonist of the transporter required for loading dopamine into synaptic vesicles.",
+      "claim_type": "EXPLICIT",
+      "source": "Fourth, we repeated the above experiments in a subset of mice treated with reserpine, an irreversible antagonist of the transporter required for loading DA into synaptic vesicles (Figure 1J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is established knowledge about the pharmacological action of reserpine.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:34:12.933931Z"
+    },
+    {
+      "id": "b5b2bae8-b1db-4d87-be78-f83098d5da0f",
+      "content_id": "94e83644-97bd-45b8-ab74-96bf4e50e6df",
+      "claim_id": "C35",
+      "claim": "Spontaneous fluctuations in RdLight1 fluorescence vanished in both the DLS and NAc after reserpine treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Under these conditions, spontaneous fluctuations in RdLight1 fluorescence vanished in both the DLS (N=4) and NAc (N=4), confirming the absence of activity-dependent DA release in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from reserpine-treated mice.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:34:12.933931Z"
+    },
+    {
+      "id": "e7bed271-f8ed-4490-89d2-1fd358fd87f4",
+      "content_id": "94e83644-97bd-45b8-ab74-96bf4e50e6df",
+      "claim_id": "C36",
+      "claim": "Blue light-evoked RdLight1 transients did not disappear after reserpine treatment and grew in amplitude and duration in both DLS and NAc.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, blue light-evoked RdLight1 transients did not disappear and, if anything, grew in amplitude and duration in both DLS and NAc (Figure 1J and K), demonstrating that they do not reflect synaptic release of DA.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figures 1J and K.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:34:12.933931Z"
+    },
+    {
+      "id": "a1c5e070-0746-45f3-a3a5-c5be6a74bf68",
+      "content_id": "94e83644-97bd-45b8-ab74-96bf4e50e6df",
+      "claim_id": "C37",
+      "claim": "RdLight1 displays strong photoactivation following exposure to blue light under wide-field illumination conditions routinely used to monitor and manipulate neural activity in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results show that RdLight1 displays strong photoactivation following exposure to blue light under wide-field illumination conditions routinely used to monitor and manipulate neural activity in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a main conclusion of the study, supported by experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:34:12.933931Z"
+    },
+    {
+      "id": "cab8357b-9680-4fb8-a6b4-b3f67c6400d9",
+      "content_id": "94e83644-97bd-45b8-ab74-96bf4e50e6df",
+      "claim_id": "C38",
+      "claim": "RdLight1 photoactivation manifests as a prolonged, dopamine-independent increase in RdLight1 fluorescence that outlasts the blue light pulse and slowly decays back to baseline over hundreds of milliseconds.",
+      "claim_type": "EXPLICIT",
+      "source": "This photoactivation manifests as a prolonged, DA-independent increase in RdLight1 fluorescence that outlasts the blue light pulse and slowly decays back to baseline over hundreds of milliseconds, giving it the appearance of synaptically-released DA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim summarizes the experimental findings about photoactivation characteristics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:34:12.933931Z"
+    },
+    {
+      "id": "b1179c49-46b0-4b6e-9158-bdfbed090067",
+      "content_id": "94e83644-97bd-45b8-ab74-96bf4e50e6df",
+      "claim_id": "C39",
+      "claim": "Under the recording conditions used, RdLight1 photoactivation remained detectable with as little as 0.3 mW blue light.",
+      "claim_type": "EXPLICIT",
+      "source": "Under our recording conditions, photoactivation remained detectable with as little as 0.3 mW blue light (Figure 1I), indicating that RdLight1 fluorescence should be interpreted with caution when combined with blue light in a variety of experimental conditions, including dual-color imaging of green and red fluorophores.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:34:12.933931Z"
+    },
+    {
+      "id": "da386fd5-e1d3-4603-970b-d46f47fbeb3b",
+      "content_id": "94e83644-97bd-45b8-ab74-96bf4e50e6df",
+      "claim_id": "C40",
+      "claim": "The initial characterization of RdLight1 may have failed to reveal strong blue light-mediated photoactivation because it used laser-scanning microscopy.",
+      "claim_type": "EXPLICIT",
+      "source": "It is possible that the initial characterization of RdLight1 failed to reveal strong blue light-mediated photoactivation as it used laser-scanning microscopy (Patriarchi et al., 2020), which Roger Tsien and colleagues found in their original characterization of mApple produced significantly less photoswitching compared to continuous wide-field illumination (Shaner et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on citations to published literature about imaging methods and mApple properties.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:34:12.933931Z"
+    },
+    {
+      "id": "cbf28482-8353-4c26-9716-23dd0bae4472",
+      "content_id": "94e83644-97bd-45b8-ab74-96bf4e50e6df",
+      "claim_id": "C41",
+      "claim": "Laser-scanning microscopy produces significantly less photoswitching of mApple compared to continuous wide-field illumination.",
+      "claim_type": "EXPLICIT",
+      "source": "It is possible that the initial characterization of RdLight1 failed to reveal strong blue light-mediated photoactivation as it used laser-scanning microscopy (Patriarchi et al., 2020), which Roger Tsien and colleagues found in their original characterization of mApple produced significantly less photoswitching compared to continuous wide-field illumination (Shaner et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to published literature on mApple characterization.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:34:12.933931Z"
+    },
+    {
+      "id": "5bfc2657-5825-41ae-b610-22fc92e21550",
+      "content_id": "94e83644-97bd-45b8-ab74-96bf4e50e6df",
+      "claim_id": "C42",
+      "claim": "The light-evoked RdLight1 responses reported in Figure 1 of Mohebi et al., 2023 likely reflect photoactivation effect.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings call into question the nature of the RdLight1 fluorescent transients reported in Figure 1 of the study by Mohebi et al., 2023. Given the similarity of our recordings in terms of response magnitude, timing and dynamics over a variety of stimulation parameters, it is likely that the light-evoked RdLight1 responses reported reflect this photoactivation effect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on comparison of the current experimental data with published results.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:34:12.933931Z"
+    },
+    {
+      "id": "38f5d6a1-90f3-4c34-9d49-c24e34dd98af",
+      "content_id": "94e83644-97bd-45b8-ab74-96bf4e50e6df",
+      "claim_id": "C43",
+      "claim": "405 nm illumination has not been shown to be the isosbestic point for RdLight1.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the study used 405 nm illumination to control for changes in fluorophore properties independent of ligand binding (i.e., the so-called isosbestic point), this deep blue wavelength has not been shown to be the isosbestic point for RdLight1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the lack of published characterization of RdLight1's isosbestic point.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:34:12.933931Z"
+    },
+    {
+      "id": "5a707ec8-65a4-4d87-ba73-190cca612435",
+      "content_id": "94e83644-97bd-45b8-ab74-96bf4e50e6df",
+      "claim_id": "C44",
+      "claim": "The isosbestic point of commonly-used green dopamine sensors is more green-shifted (e.g. 440 nm).",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the isosbestic point of commonly-used green dopamine sensors is more green-shifted (e.g. 440 nm; Sun et al., 2020), stressing the need for sensors to be published along with their full excitation/emission spectra, and for experimenters to tailor illumination wavelengths to their specific sensor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to published literature on green dopamine sensors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:34:12.933931Z"
+    },
+    {
+      "id": "907e0936-53c5-40f0-8c59-f2eacc7dd071",
+      "content_id": "94e83644-97bd-45b8-ab74-96bf4e50e6df",
+      "claim_id": "C45",
+      "claim": "It remains to be determined whether illumination at isosbestic wavelengths can contribute to or modify photoactivation.",
+      "claim_type": "EXPLICIT",
+      "source": "It also remains to be determined whether illumination at isosbestic wavelengths can contribute to or modify photoactivation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about an open question in the field.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:34:12.933931Z"
+    },
+    {
+      "id": "98abccb4-a01f-4f6d-a531-cb8679352a11",
+      "content_id": "94e83644-97bd-45b8-ab74-96bf4e50e6df",
+      "claim_id": "C46",
+      "claim": "Additional experiments will be needed to determine conditions under which cholinergic interneurons locally evoke dopamine release in the striatum of behaving animals.",
+      "claim_type": "EXPLICIT",
+      "source": "Moving forward, additional experiments will be needed to determine conditions under which cholinergic interneurons locally evoke DA release in the striatum of behaving animals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation for future research based on the current findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:34:12.933931Z"
+    },
+    {
+      "id": "079217a8-97da-4789-bfce-80993ecf87d8",
+      "content_id": "94e83644-97bd-45b8-ab74-96bf4e50e6df",
+      "claim_id": "C47",
+      "claim": "Experiments using RdLight1 should include controls to account for the effects of blue light alone.",
+      "claim_type": "EXPLICIT",
+      "source": "If using RdLight1, experiments should include controls to account for the effects of blue light alone, such as expressing RdLight1 only (i.e., no opsin), RdLight1 and a fluorophore [e.g., green fluorescent protein (GFP)] or a mutated sensor that does not bind DA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation based on the experimental findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:34:12.933931Z"
+    },
+    {
+      "id": "4bb395f6-d156-41fa-b313-4fe038a194c1",
+      "content_id": "94e83644-97bd-45b8-ab74-96bf4e50e6df",
+      "claim_id": "C48",
+      "claim": "Blue light illumination power should be kept as low as possible in optogenetic experiments with RdLight1.",
+      "claim_type": "EXPLICIT",
+      "source": "Blue light illumination power should be kept as low as possible.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation based on the experimental findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:34:12.933931Z"
+    },
+    {
+      "id": "9480c18e-517f-4196-abee-18964568a08e",
+      "content_id": "94e83644-97bd-45b8-ab74-96bf4e50e6df",
+      "claim_id": "C49",
+      "claim": "Optogenetic experiments may be designed using GFP-based dopamine sensors in combination with red-shifted optogenetic actuators.",
+      "claim_type": "EXPLICIT",
+      "source": "Alternatively, optogenetic experiments may be designed using GFP-based DA sensors such as dLight1 (Patriarchi et al., 2018) or GRAB-DA3 (Zhuo et al., 2024) in combination with red-shifted optogenetic actuators (Klapoetke et al., 2014; Marshel et al., 2019), although this configuration is not without caveats either, as continuous blue light illumination may cause opsin activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation with citations to relevant tools, along with a caveat.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:34:12.933931Z"
+    },
+    {
+      "id": "7235c996-048e-4dbd-96ed-32734c65fd52",
+      "content_id": "94e83644-97bd-45b8-ab74-96bf4e50e6df",
+      "claim_id": "C50",
+      "claim": "Continuous blue light illumination may cause opsin activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Alternatively, optogenetic experiments may be designed using GFP-based DA sensors such as dLight1 (Patriarchi et al., 2018) or GRAB-DA3 (Zhuo et al., 2024) in combination with red-shifted optogenetic actuators (Klapoetke et al., 2014; Marshel et al., 2019), although this configuration is not without caveats either, as continuous blue light illumination may cause opsin activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on knowledge of optogenetic actuator properties.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:34:12.933931Z"
+    },
+    {
+      "id": "c6344d5a-8508-4072-b08d-7f8e4b350fe6",
+      "content_id": "94e83644-97bd-45b8-ab74-96bf4e50e6df",
+      "claim_id": "C51",
+      "claim": "Photoactivation is not unique to RdLight1.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, photoactivation is not unique to RdLight1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement supported by knowledge of other fluorescent sensors.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:34:12.933931Z"
+    },
+    {
+      "id": "33a121c4-e196-4030-bc56-d5510952b4b7",
+      "content_id": "94e83644-97bd-45b8-ab74-96bf4e50e6df",
+      "claim_id": "C52",
+      "claim": "Other mApple-based sensors, including the GRAB-rDA and R-GenGAR-DA families of red dopamine sensors and the R-GECO family of Ca2+ indicators show photoactivation when presented with blue light.",
+      "claim_type": "EXPLICIT",
+      "source": "Other mApple-based sensors, including the GRAB-rDA and R-GenGAR-DA families of red DA sensors (Sun et al., 2020; Nakamoto et al., 2021; Zhuo et al., 2024), as well as the R-GECO family of Ca2 +indicators (Akerboom et al., 2013; Dana et al., 2016) show photoactivation when presented with blue light, with individual constructs differing in the polarity, magnitude and duration of photoactivation effects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature on these sensors.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:34:12.933931Z"
+    },
+    {
+      "id": "dbcdb2e3-6361-4711-9f30-6a1187b80f90",
+      "content_id": "94e83644-97bd-45b8-ab74-96bf4e50e6df",
+      "claim_id": "C53",
+      "claim": "Individual mApple-based constructs differ in the polarity, magnitude and duration of photoactivation effects.",
+      "claim_type": "EXPLICIT",
+      "source": "Other mApple-based sensors, including the GRAB-rDA and R-GenGAR-DA families of red DA sensors (Sun et al., 2020; Nakamoto et al., 2021; Zhuo et al., 2024), as well as the R-GECO family of Ca2 +indicators (Akerboom et al., 2013; Dana et al., 2016) show photoactivation when presented with blue light, with individual constructs differing in the polarity, magnitude and duration of photoactivation effects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on knowledge from published literature about these sensors.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:34:12.933931Z"
+    },
+    {
+      "id": "ae8a8398-27dc-4f2f-83fb-9f94c43c11e7",
+      "content_id": "94e83644-97bd-45b8-ab74-96bf4e50e6df",
+      "claim_id": "C54",
+      "claim": "Photoactivation extends beyond mApple, as many fluorophores can modify their biophysical properties when presented with different wavelengths of light.",
+      "claim_type": "EXPLICIT",
+      "source": "Photoactivation also extends beyond mApple, as many fluorophores can modify their biophysical properties when presented with different wavelengths of light.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on general knowledge of fluorophore properties.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:34:12.933931Z"
+    },
+    {
+      "id": "e915bee0-4ab7-44c8-8b67-e86e83d8a0b6",
+      "content_id": "94e83644-97bd-45b8-ab74-96bf4e50e6df",
+      "claim_id": "C55",
+      "claim": "Photoactivation is the biophysical principle on which some molecular tracking and super-resolution imaging methods are founded.",
+      "claim_type": "EXPLICIT",
+      "source": "It is, for instance, the biophysical principle on which some molecular tracking and super-resolution imaging methods are founded (Lippincott-Schwartz and Patterson, 2009; Chozinski et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature on imaging methods.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:34:12.933931Z"
+    },
+    {
+      "id": "a93da76c-81d4-4fcc-8b71-bebb7888f255",
+      "content_id": "94e83644-97bd-45b8-ab74-96bf4e50e6df",
+      "claim_id": "C56",
+      "claim": "Experiments should be designed carefully to control for photoactivation and other potential confounds, particularly when novel sensors are introduced.",
+      "claim_type": "EXPLICIT",
+      "source": "Experiments should therefore be designed carefully to control for these and other potential confounds, particularly when novel sensors are introduced.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation based on the findings and general principles of experimental design.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:34:12.933931Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "14805ce4-8daa-40fe-8a82-445ed8678b13",
+      "content_id": "94e83644-97bd-45b8-ab74-96bf4e50e6df",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Blue light pulses (470 nm, 4 ms, 9 mW) delivered through fiber optics evoke RdLight1 fluorescence transients in wild-type mice expressing RdLight1 in striatal regions (NAc, DLS, VLS) but lacking opsins. These transients resemble dopamine release signals, with magnitudes of 7.0\u00b10.1% \u0394F/F in NAc and 4.5\u00b10.2% \u0394F/F in DLS, peaking ~115-129 ms after light onset and decaying with time constants of 422-516 ms. The transients scale with blue light duration and intensity, are reproducible across laboratories and striatal regions, and are specific to RdLight1 (not observed with tdTomato).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C28 provide comprehensive experimental evidence from multiple striatal regions (NAc, DLS, VLS) and two independent laboratories showing that blue light alone evokes RdLight1 fluorescence transients in the absence of opsins. The data include quantitative characterization of magnitude, kinetics, dose-response relationships, and appropriate controls (tdTomato), all supporting the core finding that blue light directly affects RdLight1 fluorescence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:34:12.933931Z"
+    },
+    {
+      "id": "d3049d40-293d-4319-b477-7680a4e4f21b",
+      "content_id": "94e83644-97bd-45b8-ab74-96bf4e50e6df",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Multiple lines of evidence demonstrate that blue light-evoked RdLight1 transients do not reflect dopamine release: (1) wild-type mice lack opsins and dopamine neurons are not intrinsically light-sensitive; (2) transients show minimal trial-to-trial variability; (3) no short-term plasticity is observed; (4) critically, reserpine treatment (which eliminates vesicular dopamine release) abolishes spontaneous RdLight1 fluctuations but does not eliminate\u2014and actually increases\u2014blue light-evoked transients.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C36 provide converging evidence that blue light-evoked RdLight1 transients are artifacts rather than dopamine signals. The reserpine experiment (C34-C36) is particularly compelling: it demonstrates pharmacological dissociation between genuine dopamine-dependent signals (which disappear) and blue light-evoked transients (which persist/increase). The lack of synaptic properties (C32-C33) and absence of biological light sensitivity (C30-C31) further support this conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:34:12.933931Z"
+    },
+    {
+      "id": "0c5b09bd-4309-4bd7-82ea-26becd3f4c68",
+      "content_id": "94e83644-97bd-45b8-ab74-96bf4e50e6df",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "RdLight1 exhibits photoactivation when exposed to blue light under wide-field illumination conditions typical of in vivo optogenetic experiments. This photoactivation manifests as dopamine-independent fluorescence increases lasting hundreds of milliseconds and is detectable at blue light powers as low as 0.3 mW, creating signals that can be mistaken for phasic dopamine release.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C5 and C37-C39 synthesize the experimental findings into the key conclusion about RdLight1 photoactivation. The characterization is well-supported by the experimental data showing the phenomenon occurs at physiologically-relevant light intensities (0.3-9 mW) and has temporal characteristics (hundreds of milliseconds decay) that mimic dopamine transients. This represents the central finding of the manuscript.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:34:12.933931Z"
+    },
+    {
+      "id": "c62eb486-5407-491e-8279-a91fde58edca",
+      "content_id": "94e83644-97bd-45b8-ab74-96bf4e50e6df",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The authors argue that the RdLight1 signals attributed to cholinergic interneuron-evoked dopamine release in Mohebi et al. 2023 likely reflect photoactivation artifacts rather than genuine dopamine release, based on similarities in magnitude, timing, and dynamics. They note that the 405 nm isosbestic control used in that study has not been validated for RdLight1, and that green dopamine sensors have different isosbestic points (e.g., 440 nm).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C42-C44 present a critical reinterpretation of published work. The argument is well-supported by the current experimental data showing photoactivation under similar conditions. However, the critique regarding the 405 nm isosbestic point (C43) is valid but somewhat speculative\u2014while 405 nm has not been validated as RdLight1's isosbestic point, the authors do not provide direct evidence that 405 nm illumination fails to control for photoactivation. The comparison to green sensors (C44) is informative but indirect.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:34:12.933931Z"
+    },
+    {
+      "id": "4aed8b9a-4547-48a3-9e5f-fb1a380a7e91",
+      "content_id": "94e83644-97bd-45b8-ab74-96bf4e50e6df",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "mApple-based sensors including RdLight1 are susceptible to photoactivation (blue light-induced changes in red fluorescence). While this was previously shown to be negligible for RdLight1 in cultured cells using laser-scanning microscopy, the authors suggest that wide-field illumination used in behavioral experiments produces stronger photoactivation, consistent with prior characterization of mApple showing differential photoswitching between imaging modalities.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C18 and C40-C41 provide important context about photoactivation as a known property of mApple-based sensors. The explanation for why photoactivation was not detected in the original RdLight1 characterization (C40-C41) is reasonable and supported by citations to the mApple literature, though it remains somewhat speculative. The distinction between laser-scanning and wide-field illumination is well-established for mApple (C41).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:34:12.933931Z"
+    },
+    {
+      "id": "d7b20797-424e-4c36-902d-bb9363c34f7c",
+      "content_id": "94e83644-97bd-45b8-ab74-96bf4e50e6df",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "While acetylcholine-evoked dopamine release via nicotinic receptor activation on dopamine axons is well-established in brain slices, direct evidence for this mechanism in vivo remains limited and inconsistent. Correlational evidence exists (sub-second correlations between ACh and DA release), but interventional studies manipulating ACh signaling have not consistently demonstrated large effects on dopamine dynamics in behaving animals.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2 and C8-C14 accurately summarize the state of the literature on ACh-evoked DA release. The distinction between in vitro evidence (well-established, C1, C8-C9) and in vivo evidence (limited, C2, C11) is appropriately drawn. The authors cite their own work showing correlations (C13) but also negative results from interventional studies (C14), providing a balanced assessment. This contextualizes why the Mohebi et al. 2023 study was significant and why its reinterpretation matters.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:34:12.933931Z"
+    },
+    {
+      "id": "3c528f38-b278-4a38-a2e6-dc08774f9acd",
+      "content_id": "94e83644-97bd-45b8-ab74-96bf4e50e6df",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The authors recommend that RdLight1 measurements be interpreted with caution when combined with optogenetics, and that future experiments investigating ACh-evoked dopamine release should include appropriate controls (e.g., RdLight1 without opsin, mutant sensors) and minimize blue light power. Alternative approaches include using GFP-based dopamine sensors with red-shifted opsins, though this has its own caveats.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C7 and C46-C50 provide reasonable recommendations based on the experimental findings. The suggested controls (C47) are appropriate and would address the photoactivation artifact. The alternative approach using GFP sensors with red opsins (C49) is sensible, and the caveat about potential opsin activation from continuous blue light (C50) shows appropriate caution. These recommendations follow logically from the demonstrated photoactivation problem.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:34:12.933931Z"
+    },
+    {
+      "id": "50681f2d-fb11-4a4f-9485-6f94c1842ac9",
+      "content_id": "94e83644-97bd-45b8-ab74-96bf4e50e6df",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Photoactivation is not unique to RdLight1 but is a general property of many fluorescent sensors, including other mApple-based sensors (GRAB-rDA, R-GenGAR-DA, R-GECO) and fluorophores more broadly. Different constructs show varying photoactivation characteristics. This phenomenon underlies some super-resolution imaging methods, and experiments should be designed with appropriate controls, especially when introducing novel sensors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C56 appropriately contextualize the photoactivation issue as a general concern in fluorescence imaging rather than a problem specific to RdLight1. The citations to other mApple-based sensors (C52) and to photoactivation-based imaging methods (C55) are well-supported. The recommendation for careful experimental design (C56) is a reasonable general principle. This broader perspective strengthens the manuscript's contribution beyond a single sensor critique.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:34:12.933931Z"
+    },
+    {
+      "id": "54dc516c-ae1f-48c9-90eb-23951d1a030a",
+      "content_id": "94e83644-97bd-45b8-ab74-96bf4e50e6df",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "It remains unknown whether illumination at isosbestic wavelengths can contribute to or modify photoactivation effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C45 identifies an important open question about whether isosbestic illumination affects photoactivation. This is presented as speculation about future work rather than a tested hypothesis. While relevant to the critique of Mohebi et al. 2023's use of 405 nm controls, no experimental data are provided to address this question.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:34:12.933931Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "543f71ff-f067-48c9-8148-d5ae410adf03",
+      "result_id": "14805ce4-8daa-40fe-8a82-445ed8678b13"
+    },
+    {
+      "claim_id": "a7f0d091-afbf-451c-99ca-c0add1c5aa82",
+      "result_id": "14805ce4-8daa-40fe-8a82-445ed8678b13"
+    },
+    {
+      "claim_id": "1f0baac0-e793-480c-8acb-a4c5b0c9552c",
+      "result_id": "14805ce4-8daa-40fe-8a82-445ed8678b13"
+    },
+    {
+      "claim_id": "c322874d-d1a5-4f87-ba02-941aac80813f",
+      "result_id": "14805ce4-8daa-40fe-8a82-445ed8678b13"
+    },
+    {
+      "claim_id": "8dc26848-3530-49aa-a156-fb3eaee82b2d",
+      "result_id": "14805ce4-8daa-40fe-8a82-445ed8678b13"
+    },
+    {
+      "claim_id": "4cc91dfd-4e87-448b-8a2f-a210d229d912",
+      "result_id": "14805ce4-8daa-40fe-8a82-445ed8678b13"
+    },
+    {
+      "claim_id": "a56b6916-8890-4723-b022-7e630a657b83",
+      "result_id": "14805ce4-8daa-40fe-8a82-445ed8678b13"
+    },
+    {
+      "claim_id": "8f0a44ac-d1d2-491b-8038-68d9e5e9e852",
+      "result_id": "14805ce4-8daa-40fe-8a82-445ed8678b13"
+    },
+    {
+      "claim_id": "8b2a0ec2-4651-4e14-b044-cd0ffce991b7",
+      "result_id": "14805ce4-8daa-40fe-8a82-445ed8678b13"
+    },
+    {
+      "claim_id": "8a3fac89-473d-403a-bd5b-29da01f80874",
+      "result_id": "d3049d40-293d-4319-b477-7680a4e4f21b"
+    },
+    {
+      "claim_id": "349bde7c-79ec-4033-a742-51b28a3f9cd1",
+      "result_id": "d3049d40-293d-4319-b477-7680a4e4f21b"
+    },
+    {
+      "claim_id": "911547b8-71ea-4880-951d-7da08a668f79",
+      "result_id": "d3049d40-293d-4319-b477-7680a4e4f21b"
+    },
+    {
+      "claim_id": "0603afb2-bacb-45aa-b626-0feea19492d4",
+      "result_id": "d3049d40-293d-4319-b477-7680a4e4f21b"
+    },
+    {
+      "claim_id": "4d366113-3fde-4b37-a6d9-aa75217414f9",
+      "result_id": "d3049d40-293d-4319-b477-7680a4e4f21b"
+    },
+    {
+      "claim_id": "7766bcef-c30e-435c-ab61-d79f36e07316",
+      "result_id": "d3049d40-293d-4319-b477-7680a4e4f21b"
+    },
+    {
+      "claim_id": "b5b2bae8-b1db-4d87-be78-f83098d5da0f",
+      "result_id": "d3049d40-293d-4319-b477-7680a4e4f21b"
+    },
+    {
+      "claim_id": "e7bed271-f8ed-4490-89d2-1fd358fd87f4",
+      "result_id": "d3049d40-293d-4319-b477-7680a4e4f21b"
+    },
+    {
+      "claim_id": "b04a1426-6c1b-4a8b-9552-e64aabf60c12",
+      "result_id": "0c5b09bd-4309-4bd7-82ea-26becd3f4c68"
+    },
+    {
+      "claim_id": "5ea7dee4-e6b8-4bac-9ed9-c1c56b5297fe",
+      "result_id": "0c5b09bd-4309-4bd7-82ea-26becd3f4c68"
+    },
+    {
+      "claim_id": "a1c5e070-0746-45f3-a3a5-c5be6a74bf68",
+      "result_id": "0c5b09bd-4309-4bd7-82ea-26becd3f4c68"
+    },
+    {
+      "claim_id": "cab8357b-9680-4fb8-a6b4-b3f67c6400d9",
+      "result_id": "0c5b09bd-4309-4bd7-82ea-26becd3f4c68"
+    },
+    {
+      "claim_id": "b1179c49-46b0-4b6e-9158-bdfbed090067",
+      "result_id": "0c5b09bd-4309-4bd7-82ea-26becd3f4c68"
+    },
+    {
+      "claim_id": "24752c15-0ec0-4f3b-9ab5-be0ae1774d9f",
+      "result_id": "c62eb486-5407-491e-8279-a91fde58edca"
+    },
+    {
+      "claim_id": "5bfc2657-5825-41ae-b610-22fc92e21550",
+      "result_id": "c62eb486-5407-491e-8279-a91fde58edca"
+    },
+    {
+      "claim_id": "38f5d6a1-90f3-4c34-9d49-c24e34dd98af",
+      "result_id": "c62eb486-5407-491e-8279-a91fde58edca"
+    },
+    {
+      "claim_id": "5a707ec8-65a4-4d87-ba73-190cca612435",
+      "result_id": "c62eb486-5407-491e-8279-a91fde58edca"
+    },
+    {
+      "claim_id": "f6d8ac32-4f2c-4325-80fa-0f1cc051bf06",
+      "result_id": "4aed8b9a-4547-48a3-9e5f-fb1a380a7e91"
+    },
+    {
+      "claim_id": "886af892-c116-4dc6-bc5a-885cb29137a7",
+      "result_id": "4aed8b9a-4547-48a3-9e5f-fb1a380a7e91"
+    },
+    {
+      "claim_id": "defd6043-6357-489e-81fb-d67289c44af4",
+      "result_id": "4aed8b9a-4547-48a3-9e5f-fb1a380a7e91"
+    },
+    {
+      "claim_id": "47e37fe9-3359-4151-9719-c2e2d5064c2e",
+      "result_id": "4aed8b9a-4547-48a3-9e5f-fb1a380a7e91"
+    },
+    {
+      "claim_id": "da386fd5-e1d3-4603-970b-d46f47fbeb3b",
+      "result_id": "4aed8b9a-4547-48a3-9e5f-fb1a380a7e91"
+    },
+    {
+      "claim_id": "cbf28482-8353-4c26-9716-23dd0bae4472",
+      "result_id": "4aed8b9a-4547-48a3-9e5f-fb1a380a7e91"
+    },
+    {
+      "claim_id": "5d264ac5-5ba0-4b4d-842c-59ca9277c8f6",
+      "result_id": "d7b20797-424e-4c36-902d-bb9363c34f7c"
+    },
+    {
+      "claim_id": "07a44764-eed8-4797-ae61-77ffb6e614d7",
+      "result_id": "d7b20797-424e-4c36-902d-bb9363c34f7c"
+    },
+    {
+      "claim_id": "2a4b64b8-f86a-491a-a2f6-cce16d4b018d",
+      "result_id": "d7b20797-424e-4c36-902d-bb9363c34f7c"
+    },
+    {
+      "claim_id": "f1b39ef5-1f94-479c-80d7-24146b624f3e",
+      "result_id": "d7b20797-424e-4c36-902d-bb9363c34f7c"
+    },
+    {
+      "claim_id": "7c806532-9e69-4fa6-8cde-1160c3beabae",
+      "result_id": "d7b20797-424e-4c36-902d-bb9363c34f7c"
+    },
+    {
+      "claim_id": "01295982-5bc0-4997-9c2c-15271d23a033",
+      "result_id": "d7b20797-424e-4c36-902d-bb9363c34f7c"
+    },
+    {
+      "claim_id": "e89aaf2c-66a0-4759-9fde-080500ee5cc7",
+      "result_id": "d7b20797-424e-4c36-902d-bb9363c34f7c"
+    },
+    {
+      "claim_id": "7853dbfd-c604-4eff-8bc8-8ad35af85d5a",
+      "result_id": "d7b20797-424e-4c36-902d-bb9363c34f7c"
+    },
+    {
+      "claim_id": "eacdac8b-f589-40d9-88c4-8a142dbdcebd",
+      "result_id": "d7b20797-424e-4c36-902d-bb9363c34f7c"
+    },
+    {
+      "claim_id": "e6fbaade-f08e-4819-9e2d-36b42f09a396",
+      "result_id": "3c528f38-b278-4a38-a2e6-dc08774f9acd"
+    },
+    {
+      "claim_id": "6acee3fc-2397-4cc9-b103-dd7a79c65b69",
+      "result_id": "3c528f38-b278-4a38-a2e6-dc08774f9acd"
+    },
+    {
+      "claim_id": "98abccb4-a01f-4f6d-a531-cb8679352a11",
+      "result_id": "3c528f38-b278-4a38-a2e6-dc08774f9acd"
+    },
+    {
+      "claim_id": "079217a8-97da-4789-bfce-80993ecf87d8",
+      "result_id": "3c528f38-b278-4a38-a2e6-dc08774f9acd"
+    },
+    {
+      "claim_id": "4bb395f6-d156-41fa-b313-4fe038a194c1",
+      "result_id": "3c528f38-b278-4a38-a2e6-dc08774f9acd"
+    },
+    {
+      "claim_id": "9480c18e-517f-4196-abee-18964568a08e",
+      "result_id": "3c528f38-b278-4a38-a2e6-dc08774f9acd"
+    },
+    {
+      "claim_id": "7235c996-048e-4dbd-96ed-32734c65fd52",
+      "result_id": "3c528f38-b278-4a38-a2e6-dc08774f9acd"
+    },
+    {
+      "claim_id": "c6344d5a-8508-4072-b08d-7f8e4b350fe6",
+      "result_id": "50681f2d-fb11-4a4f-9485-6f94c1842ac9"
+    },
+    {
+      "claim_id": "33a121c4-e196-4030-bc56-d5510952b4b7",
+      "result_id": "50681f2d-fb11-4a4f-9485-6f94c1842ac9"
+    },
+    {
+      "claim_id": "dbcdb2e3-6361-4711-9f30-6a1187b80f90",
+      "result_id": "50681f2d-fb11-4a4f-9485-6f94c1842ac9"
+    },
+    {
+      "claim_id": "ae8a8398-27dc-4f2f-83fb-9f94c43c11e7",
+      "result_id": "50681f2d-fb11-4a4f-9485-6f94c1842ac9"
+    },
+    {
+      "claim_id": "e915bee0-4ab7-44c8-8b67-e86e83d8a0b6",
+      "result_id": "50681f2d-fb11-4a4f-9485-6f94c1842ac9"
+    },
+    {
+      "claim_id": "a93da76c-81d4-4fcc-8b71-bebb7888f255",
+      "result_id": "50681f2d-fb11-4a4f-9485-6f94c1842ac9"
+    },
+    {
+      "claim_id": "907e0936-53c5-40f0-8c59-f2eacc7dd071",
+      "result_id": "54dc516c-ae1f-48c9-90eb-23951d1a030a"
+    }
+  ],
+  "comparisons": []
+}

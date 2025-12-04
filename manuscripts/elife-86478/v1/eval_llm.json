@@ -1,0 +1,456 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C22",
+      "C23"
+    ],
+    "result": "Both ogt-1 deletion mutation and the enzymatically dead ogt-1 allele equally increase neuronal regeneration following laser axotomy in C. elegans mechanosensory neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22 and C23 are supported by experimental data from laser axotomy experiments shown in Figure 1A-B. The use of both deletion and catalytically dead mutants strengthens the conclusion that loss of OGT-1 enzymatic activity drives enhanced regeneration.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C27"
+    ],
+    "result": "Knocking down gfat-1 or gfat-2 in wild-type worms significantly increases mechanosensory neuron regeneration, similar to ogt-1 loss of function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C27 is supported by RNAi knockdown experimental data shown in Figure 1C. This demonstrates that blocking the hexosamine biosynthesis pathway (HBP) is sufficient to phenocopy the ogt-1 regeneration phenotype.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Neuron-specific knockdown of pyk-1 does not affect enhanced regeneration in ogt-1 mutants but significantly increases regeneration in wild-type animals, and pyk-1 activity is significantly reduced in ogt-1 worms, suggesting the final step of glycolysis is not involved in ogt-1-mediated enhanced regeneration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C34 are supported by RNAi knockdown data (Figure 1D) and pyk-1 activity assays (Figure 1E). The differential effects in WT versus ogt-1 backgrounds and reduced pyk-1 activity in ogt-1 animals provide converging evidence that the final glycolytic step is dispensable for ogt-1 regeneration.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "ATP production is critical for ogt-1-mediated enhanced regeneration as demonstrated by atp-3 knockdown blocking the effect, though whole-animal ATP levels are lower in ogt-1 mutants with no difference in pyrophosphate levels, suggesting neuron-specific metabolic flux modulation is important.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C39 are supported by RNAi data (Figure 1D), FRET-based ATP measurements (Figure 1F), and whole-worm ATP/PPi assays (Figure 1\u2014figure supplement 1C-D). The apparent contradiction between reduced whole-animal ATP and enhanced regeneration is addressed by proposing neuron-specific effects, though this interpretation requires caution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "RNA-seq analysis from whole animals identified substantial differential gene expression in ogt-1 mutants, with enrichment of metabolic processes including carbohydrates, lipids, amino acids, nucleotide metabolism, glutathione, and SAM-dependent pathways, indicating involvement of OCM and related pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C46 are supported by RNA-seq data and pathway analysis shown in Figure 2A-E. The GO and KEGG pathway enrichment analyses provide unbiased evidence for metabolic pathway alterations, though the inference about OCM involvement (C46) is reasonable but requires functional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C56",
+      "C57"
+    ],
+    "result": "Neuron-specific RNA-seq analysis identified significant differential gene expression in ogt-1 mutants with enrichment of metabolic pathways including glycolysis, SSP, OCM, amino acid metabolism, and ATP synthesis pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C49, C56-C57 are supported by neuron-specific RNA-seq data and bioinformatics analysis shown in Figure 2F and Figure 2\u2014figure supplement 2A-B. The neuron-specific analysis strengthens the whole-animal findings and provides tissue-specific evidence for metabolic pathway involvement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "qRT-PCR validation confirmed that OCM genes (folr-1, metr-1, sams-1) are significantly upregulated in ogt-1 mutants, while damt-1 is downregulated and nmad-1 is unchanged.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C55 are supported by qRT-PCR data shown in Figure 2G. This provides independent validation of RNA-seq findings for key OCM pathway genes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C65",
+      "C66",
+      "C72",
+      "C73"
+    ],
+    "result": "Pharmacological inhibition (NCT502) or genetic knockdown of phgdh-1 abrogates ogt-1-mediated enhanced regeneration but increases regeneration in wild-type animals, and L-serine supplementation rescues the NCT502 effect in ogt-1, demonstrating the importance of the serine synthesis pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C60, C65-C66, C72-C73 are supported by experimental data from NCT502 treatment (Figure 3B), RNAi knockdown (Figure 3C), and serine supplementation experiments. The bidirectional effects in WT versus ogt-1 backgrounds and rescue experiments provide strong evidence for SSP involvement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C76",
+      "C78",
+      "C88"
+    ],
+    "result": "Mutations in OCM genes metr-1 and sams-1 abrogate enhanced regeneration in ogt-1 animals without affecting wild-type regeneration, and methionine supplementation increases regeneration in wild-type but not ogt-1 animals, demonstrating that functional OCM mediated by METR-1 and SAMS-1 is essential for ogt-1-mediated enhanced regeneration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76, C78, C88 are supported by genetic mutation data (Figure 3E) and methionine supplementation experiments (Figure 3F). The differential effects in WT versus ogt-1 backgrounds provide strong evidence for OCM pathway involvement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C89"
+    ],
+    "result": "The functional OCM pathway does not act through lipogenesis or transmethylation pathways in ogt-1-mediated regeneration, as demonstrated by failure of choline supplementation to rescue sams-1 mutation effects and lack of effect from knocking down pmt-1 or histone methyltransferases in ogt-1 animals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C86, C89 are supported by experimental data from choline supplementation (Figure 3H) and RNAi knockdown experiments (Figure 3H-I). These negative results effectively rule out lipogenesis and transmethylation as mechanisms for ogt-1 regeneration effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "The transsulfuration pathway is functionally involved in ogt-1-mediated enhanced regeneration but not through glutathione synthesis, as demonstrated by differential effects of gss-1 knockdown and glutathione supplementation, and rescue of NCT502 effects by cystathionine supplementation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C95 are supported by RNAi knockdown data (Figure 4B), metabolite supplementation experiments (Figure 4B-C), and rescue experiments. The pattern of results effectively rules out glutathione synthesis while implicating cystathionine metabolism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Neuron-specific RNA-seq and qRT-PCR analysis revealed that genes in OCM, transsulfuration pathway, and vitamin B12 independent shunt pathway are upregulated in ogt-1 animals, while genes in the vitamin B12 dependent canonical pathway are downregulated or show no clear trend.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C102 are supported by RNA-seq data (Figure 4\u2014figure supplement 1A) and qRT-PCR validation (Figure 4D). The differential expression patterns provide transcriptional evidence supporting the functional pathway analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C114"
+    ],
+    "result": "The acdh-1 mutation selectively eliminates enhanced regeneration in ogt-1 animals without affecting wild-type regeneration, while mce-1 mutation has no effect in either background, demonstrating that the vitamin B12 independent shunt pathway involving acetyl-CoA production from cystathionine is specifically required for ogt-1 regeneration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C105, C114 are supported by genetic mutation data (Figure 4F) and RNAi validation (Figure 4\u2014figure supplement 1B). The selective requirement for acdh-1 but not mce-1 provides strong evidence for the vitamin B12 independent shunt pathway.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C111",
+      "C113"
+    ],
+    "result": "Neuron-specific knockdown of pod-2, acs-2, or cpt-2 had no effect on ogt-1 regeneration, while atp-3 knockdown blocked enhanced regeneration, suggesting that lipid synthesis and beta-oxidation are not fundamental to ogt-1 regeneration but ATP production is critical.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C108, C111, C113 are supported by RNAi knockdown data (Figure 4G, Figure 4\u2014figure supplement 1C). The negative results for lipid metabolism genes and positive result for atp-3 help define the pathway, though the authors appropriately note RNAi variability as a caveat.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C20",
+      "C21"
+    ],
+    "result": "Glycolysis, serine synthesis pathway, one-carbon metabolism, and transsulfuration pathway are all essential for ogt-1 loss of function mediated increased regenerative outgrowth, with metabolic flux through the vitamin B12 independent shunt pathway being critical.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C6, C20-C21 represent the main conclusions of the manuscript and are supported by the comprehensive set of genetic, pharmacological, and metabolite supplementation experiments described throughout the results. The integration of multiple experimental approaches provides strong support for this metabolic pathway model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C11",
+      "C135"
+    ],
+    "result": "The beneficial effects of ogt-1 mutation can be recapitulated by metabolic supplementation with methionine in wild-type animals, and similar effects are observed with NCT502 treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11 and C135 are supported by methionine supplementation data (Figure 3F) and NCT502 treatment data (Figure 3B). This demonstrates that metabolic interventions can phenocopy genetic effects, providing therapeutic potential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C63",
+      "C64"
+    ],
+    "result": "NCT502 blocks enhanced regeneration in ogt-1(-); akt-1(++) double mutants, and serine supplementation rescues regeneration in akt-1(-);ogt-1(-) double mutants, linking the SSP to the previously identified akt-1 pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C64 are supported by experimental data shown in Figure 3\u2014figure supplement 1A. These genetic interaction experiments connect the metabolic pathway findings to the previously established akt-1 signaling pathway.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "NCT502 treatment significantly enhances pyk-1 activity in both wild-type and ogt-1 worms, suggesting increased glycolytic activity upon blocking the SSP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C71 are supported by pyk-1 activity assay data (Figure 3\u2014figure supplement 1C-D). This provides mechanistic insight into metabolic flux redirection when SSP is blocked.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C67",
+      "C68"
+    ],
+    "result": "Systemic RNAi knockdown of phgdh-1, which is ineffective in neurons, does not alter regeneration in ogt-1 animals but increases regeneration in wild-type worms, suggesting a neuron-specific mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C68 are supported by systemic RNAi data (Figure 3\u2014figure supplement 1B). This control experiment helps establish tissue-specificity of the metabolic effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C79"
+    ],
+    "result": "Methionine supplementation does not alter the effects of blocking SSP in either wild-type or ogt-1 animals, possibly due to the requirement of serine for normal OCM progression downstream.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C79 is supported by experimental data (Figure 3F) and mechanistic explanation via citations. This negative result helps define the metabolic pathway relationships.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C87"
+    ],
+    "result": "RNA-seq analysis shows that DNA methylases, demethylases, and genes required for phosphatidyl choline synthesis are downregulated while OCM genes are upregulated in neuronal tissue in ogt-1 animals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C87 is supported by RNA-seq data (Figure 3\u2014figure supplement 1F). This transcriptional evidence supports the functional findings that lipogenesis and transmethylation are not involved in ogt-1 regeneration.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C106"
+    ],
+    "result": "Neuron-specific RNAi against mce-1 in the ogt-1;acdh-1 double mutant has no observable effect on regeneration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C106 is supported by experimental data (Figure 4F). This epistasis experiment confirms that mce-1 and acdh-1 act in separate pathways.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C2",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Previous work by the authors demonstrated that modulation of O-GlcNAc signaling through ogt-1 mutation significantly enhances neuronal regeneration via the AKT-1 branch of insulin signaling and glycolysis, with glucose supplementation being sufficient to increase regeneration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C14-C17 reference prior work (Taub et al., 2018) and are supported by citations. These establish the foundation for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C1",
+      "C12",
+      "C13",
+      "C18",
+      "C19",
+      "C24",
+      "C25",
+      "C26",
+      "C28",
+      "C29",
+      "C30",
+      "C35",
+      "C58",
+      "C74",
+      "C75",
+      "C77",
+      "C80",
+      "C81",
+      "C90",
+      "C96",
+      "C109",
+      "C110",
+      "C112",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C136",
+      "C137",
+      "C138"
+    ],
+    "result": "Background knowledge claims about O-GlcNAc signaling, metabolic pathways, gene functions, and prior research findings that provide context for the study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C1, C12-C13, C18-C19, C24-C26, C28-C30, C35, C58, C74-C75, C77, C80-C81, C90, C96, C109-C110, C112, C115-C130, C136-C138) are supported by citations to established literature or stated as known facts. They provide necessary background but are not novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C40"
+    ],
+    "result": "A complex interaction of metabolic pathways beyond canonical glycolysis may be involved in damaged and regenerating neurons in ogt-1 animals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C40 is speculative and inferred from experimental results. While the data support complexity beyond canonical glycolysis, the specific nature of these interactions remains to be fully elucidated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "GO analysis of neuron-specific RNA-seq data shows expected patterns including upregulation of neuron-specific pathways and downregulation of cell division/reproduction pathways, with top differentially expressed genes including those regulated by daf-2 and daf-16.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C52 are supported by GO analysis (Figure 2\u2014figure supplement 1C-F) and citation to Kaletsky et al., 2016. These findings validate the neuron-specific RNA-seq approach and connect to known regeneration pathways.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C133",
+      "C134"
+    ],
+    "result": "Previous findings showed that akt-1 mutation blocks ogt-1 regeneration while gain-of-function akt-1 phenocopies ogt-1, oga-1 mutation increases regeneration through mitochondrial stress response, and glucose supplementation increases wild-type regeneration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C62, C133-C134 reference prior work (Taub et al., 2018) and are supported by citations. These provide important context for interpreting the current metabolic pathway findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C124",
+      "C131",
+      "C132"
+    ],
+    "result": "Metabolic flux diversion from early glycolysis toward OCM through SSP is crucial for ogt-1 regeneration, consistent with prior reports, and similar effects are seen with HBP blockade or pyk-1 knockdown in wild-type animals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124, C131-C132 integrate current experimental findings with prior literature (citations to Yu et al., 2019a,b). The convergence of genetic and literature evidence supports the metabolic flux model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C139"
+    ],
+    "result": "Functions of O-GlcNAc signaling are conserved throughout the nervous system and across species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C139 is an inference from cited studies but extends beyond the C. elegans data presented. While the authors appropriately note that future work is needed to determine conservation in neuronal regeneration specifically, this claim requires additional validation.",
+    "result_type": "MINOR"
+  }
+]

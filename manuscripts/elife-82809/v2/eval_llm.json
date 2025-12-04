@@ -1,0 +1,234 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C61",
+      "C62",
+      "C63",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Two genetically distinct ASD subtypes (idiopathic and 16p11.2 deletion) show common reductions in neurite outgrowth and cell migration in neural precursor cells (NPCs). All three I-ASD NPCs had 50-60% reduction in neurites and 30-50% reduction in migration compared to siblings. Similarly, 16pDel NPCs showed reduced neurites (7.4% vs 11.3% in Sib, p<0.001) and impaired migration compared to both Sib and NIH controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C3, C16-C20 provide convergent experimental evidence from neurite outgrowth and migration assays across multiple individuals, clones, and neural inductions. Statistical significance is reported (p<0.001) with appropriate controls (sibling and NIH NPCs). The experimental design includes 2-5 clones per individual and 2-5 neural inductions (C85), providing adequate rigor. Migration analysis controlled for initial neurosphere size (C87), addressing a potential confound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C56",
+      "C57",
+      "C86"
+    ],
+    "result": "Whole genome sequencing demonstrates no genetic overlap between idiopathic and 16p11.2 deletion ASD datasets. No I-ASD individual harbored the 16p11.2 deletion, had rare variants in the 28 deleted genes, or shared rare protein-coding variants among all three I-ASD individuals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C56, C57, C86 are supported by WGS analysis with appropriate variant filtering criteria (AF<5%, functional variants only, quality filters). The lack of genetic overlap strengthens the significance of the convergent phenotypes, though the small sample size (n=3 I-ASD) limits generalizability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C64",
+      "C65",
+      "C92",
+      "C93"
+    ],
+    "result": "Phospho-proteome analysis reveals substantial overlap between I-ASD and 16pDel NPCs with convergence on mTOR signaling, despite minimal overlap in total proteome or WGS. I-ASD had 105 differentially phosphorylated proteins with 149 sites, 16pDel had 419 proteins with 916 sites, and 67 p-proteins (64%) were shared. IPA identified mTOR as a top enriched pathway in both subtypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C28-C33, C93 are supported by unbiased phospho-proteomic screening with appropriate statistical thresholds (log p>5) and multiple bioinformatics approaches (IPA, G-profiler). The contrast with total proteome (C26-C27, C64) and WGS (C65) strengthens the finding that dysregulation occurs at the signaling level. However, protein was pooled from all individuals in each group, preventing assessment of individual variability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C6",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C66",
+      "C67",
+      "C68",
+      "C94",
+      "C95"
+    ],
+    "result": "Western blot validation confirms mTOR pathway dysregulation in all six ASD NPCs, revealing two distinct signaling subtypes: low mTOR (I-ASD-1 with 75% reduction, I-ASD-3 with 45% reduction in p-S6) and high mTOR (I-ASD-2 with 260% increase, all three 16pDel with 80-170% increase in p-S6). Total S6 and AKT levels remained unchanged.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C38, C95 provide western blot validation of phospho-proteomic findings with statistical significance (p<0.001-0.0001) and appropriate controls (total protein levels unchanged, C66). The identification of bidirectional dysregulation (both increases and decreases) is well-documented. However, the manuscript does not specify the number of biological or technical replicates for western blots, which is a limitation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C69"
+    ],
+    "result": "Pharmacological modulation of mTOR signaling rescues ASD phenotypes and reproduces them in control NPCs. SC-79 (AKT activator) rescued neurite and migration defects in low-mTOR NPCs (I-ASD-1, I-ASD-3), while MK-2206 (AKT inhibitor) rescued high-mTOR NPCs (I-ASD-2, 16pDel). Conversely, these compounds reproduced ASD phenotypes in control NPCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C8, C39-C51 demonstrate bidirectional rescue and reproduction experiments across multiple families and both ASD subtypes. The gain- and loss-of-function experiments provide strong mechanistic evidence linking mTOR dysregulation to phenotypes. Dose-response studies were conducted to establish appropriate concentrations. However, the use of AKT modulators rather than direct mTOR modulators introduces uncertainty about pathway specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C90",
+      "C91"
+    ],
+    "result": "I-ASD NPCs fail to respond to extracellular factors (PACAP, NGF, 5-HT) that stimulate neurite outgrowth and migration in control NPCs, while 16pDel NPCs respond normally. Sib NPCs showed 45-75% increases in neurites with EF stimulation (p<0.001), but all three I-ASD NPCs showed no response at any physiological dose tested.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C25, C90-C91 demonstrate subtype-specific differences in EF responsiveness with appropriate dose-response controls (C90). The consistent lack of response across three different EFs working through different receptor systems in I-ASD NPCs is striking. However, the mechanism underlying this differential response between I-ASD and 16pDel (both having mTOR dysregulation) remains unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C98",
+      "C99"
+    ],
+    "result": "Subthreshold mTOR modulation restores extracellular factor responsiveness in I-ASD NPCs. Treatment with subthreshold SC-79 (0.1 \u00b5g/mL) enabled I-ASD-1 NPCs to respond to PACAP, NGF, and 5-HT, while subthreshold MK-2206 (1 nM) abolished EF responses in Sib-1 NPCs and restored responses in I-ASD-2 NPCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C55, C98-C99 demonstrate that mTOR modulation affects EF responsiveness using carefully titrated subthreshold doses that don't independently affect neurite outgrowth. This provides additional mechanistic insight linking mTOR to signaling homeostasis. The specificity of the effect to I-ASD NPCs (C98) strengthens the interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C9",
+      "C52",
+      "C69"
+    ],
+    "result": "The authors conclude that genetically distinct ASD subtypes have common defects in neurite outgrowth and migration driven by shared mTOR signaling dysregulation, and that tight regulation of mTOR is essential for normal neural development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C52, C69 represent the main conclusions synthesizing multiple lines of evidence: convergent phenotypes (neurite/migration defects), phospho-proteomic convergence on mTOR, western validation, and bidirectional rescue/reproduction experiments. The conclusion that both over- and under-activation lead to similar phenotypes is well-supported by the experimental data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "About one-third of overlapping p-proteins between I-ASD and 16pDel are common with 102 high-confidence ASD risk genes. Additionally, I-ASD has 38 unique differentially phosphorylated proteins (including tight junction signaling components) while 16pDel has 351 unique proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C79 provide context for the phospho-proteomic findings by comparing to known ASD risk genes and identifying subtype-specific differences. The overlap with established ASD risk genes (C76) validates the approach. However, the interpretation of tight junction signaling differences (C79) is speculative without functional validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "The study utilized iPSCs from three I-ASD families (male probands with sex-matched siblings) from the New Jersey Language and Autism Genetics Study, three 16p11.2 deletion individuals (two males, one female), and three NIH control lines. Extensive rigor was ensured through 2-5 clones per individual and 2-5 independent neural inductions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C85 describe the study design and cohort composition. The use of multiple clones and neural inductions (C85) provides appropriate rigor for iPSC studies. However, the small sample size (n=3 per subtype) and lack of genetically matched controls for 16pDel are limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C58",
+      "C59",
+      "C60",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C80"
+    ],
+    "result": "Background claims establish that ASD is characterized by behavioral deficits with marked heterogeneity, 10-15% of cases have defined genetic causes, ASD risk genes converge on mid-fetal cortical development (8-24 weeks), and mTOR dysregulation has been implicated in various syndromic forms of ASD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C15, C58-C60, C70-C75, C80 provide established background knowledge supported by appropriate citations. These contextual claims are well-established in the field and properly referenced.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C96",
+      "C97"
+    ],
+    "result": "Control experiments demonstrate specificity of mTOR modulation: SC-79 at 2 \u00b5g/mL had no effect on p-S6 levels in Sib-1, and Sib-2 had no significant response to MK-2206 at the dose used for I-ASD-2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C97 provide important negative controls showing that the drug effects are specific to cells with mTOR dysregulation. These controls strengthen the interpretation of the rescue experiments.",
+    "result_type": "MINOR"
+  }
+]

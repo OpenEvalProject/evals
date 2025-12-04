@@ -1,0 +1,337 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "The study generated high-quality single-cell RNA-seq data from 48,111 cells across 6 conditions (2 genotypes \u00d7 3 ages), identifying 96 distinct cell clusters with 59 annotated cell types. The dataset comprises diverse cell types including 49% cholinergic neurons, 20% glutamatergic neurons, 11% GABAergic neurons, and 7% glia, consistent with prior Drosophila brain scRNA-seq studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C37 describe the technical quality and composition of the scRNA-seq dataset. The data generation, quality control, clustering, and cell type annotation are well-documented with appropriate methodological details. The consistency with prior studies (C37) provides external validation. The quantitative findings are directly derived from the data analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C46",
+      "C47"
+    ],
+    "result": "Tau expression causes cell-type-specific changes in cell abundance, with 16 neuronal and 6 glial clusters showing significant changes. Seven excitatory neuronal clusters (including cholinergic Kenyon cells and glutamatergic neurons) showed significant declines, while inhibitory neurons appeared resilient. Several glial cell types, particularly ensheathing glia, appeared increased. These findings were partially replicated (13/22 changes) in an independent dataset and supported by deconvolution analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C47 describe tau-induced changes in cell abundance with appropriate statistical testing (FDR < 0.05). The findings are supported by replication in an independent dataset (C46) and orthogonal validation through deconvolution of bulk RNA-seq (C47). The selective vulnerability of excitatory neurons versus resilience of inhibitory neurons is a key finding with convergent evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "The apparent increase in glial cell abundance from scRNA-seq is likely a consequence of proportional changes due to neuronal loss rather than absolute increases in glial numbers. Immunofluorescence experiments revealed no significant increase in absolute glial numbers but nominally increased glial density after accounting for reduced brain volumes, similar to findings in human AD postmortem tissue.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C52 address a critical technical issue in scRNA-seq interpretation. The authors appropriately recognized the limitation of relative abundance measures and performed orthogonal validation using immunofluorescence (C49-C50). The interpretation that apparent glial increases reflect proportional changes due to neuronal loss (C51) is well-supported by the data and consistent with human pathology studies (C48, C52).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C4",
+      "C98"
+    ],
+    "result": "Aging induces widespread transcriptional changes (5,998 unique genes) affecting most brain cell types, with broad dysregulation of ribosome/protein translation and energy metabolism pathways. Tau induces 5,280 unique differentially expressed genes, with 93% (4,917 genes) overlapping with aging-induced changes, demonstrating strong transcriptional overlap between tau and aging effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C56, C4, and C98 present a major quantitative finding about the overlap between tau and aging transcriptional responses. The 93% overlap is consistently reported and represents a primary discovery. The differential expression analyses appear appropriately conducted with proper statistical thresholds (FDR < 0.05) and the findings are replicated (C65-C66 show 90% overlap in replication dataset).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "Despite strong transcriptional overlap, tau and aging differ fundamentally in their spatial and cell-type-specific impacts. Aging has a global influence affecting most brain cell types, while tau has a focal impact, strongly polarizing transcriptional changes to excitatory neurons and glia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C99-C101 describe a key distinction between tau and aging effects. This is well-supported by the data showing differential distribution of gene expression changes across cell types (Figure 3). The contrast between global aging effects and focal tau effects is clearly demonstrated and represents a major conceptual finding of the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Cholinergic Kenyon cells from the \u03b1'/\u03b2' mushroom body lobes were among the most vulnerable cell types, showing both the greatest cell loss and the highest number of tau-induced gene perturbations (2,289 genes). Notably, 93% of these gene changes (2,139 genes) were unique to tau and not observed in aging. The vulnerability pattern does not correspond to the spatial pattern of MAPT transgene expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C59 integrate cell abundance and gene expression data to identify vulnerable cell types. The quantitative findings are clearly stated and the observation that vulnerability doesn't correlate with MAPT expression levels (C59) is an important control that strengthens the interpretation. This represents a well-supported finding about cell-type-specific vulnerability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Tau transcriptional signatures implicate altered inflammation, oxidative phosphorylation, and ribosomal gene expression, prominently disrupted in excitatory neurons of the visual system and central brain cholinergic/glutamatergic clusters. This pattern is consistent with established susceptibility of mushroom body and optic lobes to tau-mediated neurodegeneration. Among non-neuronal cells, ensheathing glia, cortex glia, astrocyte-like glia, and hemocytes showed the greatest tau-driven changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C64 describe pathway-level findings from functional enrichment analysis. The pathways identified are biologically plausible and the consistency with known anatomical vulnerability (C62) provides validation. The findings are derived from appropriate statistical methods (Gene Ontology enrichment) and are well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C65",
+      "C66"
+    ],
+    "result": "Expression profiles in two-thirds (61/90) of cell-type clusters were replicated at 10 days in an independent dataset, with 90% overlap in total unique tau-triggered differentially expressed genes between discovery and replication datasets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C66 describe replication of the main findings in an independent dataset. The 90% overlap in differentially expressed genes and replication of 61/90 cell-type-specific profiles demonstrates good reproducibility. This is a strength of the study and supports the robustness of the main findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C67",
+      "C68"
+    ],
+    "result": "A minority of tau-induced genes (363/5,280) were tau-specific and not shared with aging. This tau-specific gene set was significantly enriched for mediators of the innate immune response, particularly NF-\u03baB signaling pathway components.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C68 identify a tau-specific transcriptional signature enriched for immune response genes. The enrichment analysis appears appropriately conducted and the finding is biologically plausible. This sets up the subsequent detailed analysis of NF-\u03baB signaling and represents an important discovery about tau-specific mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C6",
+      "C111",
+      "C113"
+    ],
+    "result": "A 236-gene innate immune response module enriched for NF-\u03baB pathway genes is broadly expressed in the adult fly brain (both neurons and glia) and is strongly dysregulated by tau in 50/90 clusters. Tau activated the immune signature in 86% of affected cell types (43/50 clusters), but attenuated expression in seven clusters including excitatory neurons in the lamina and Kenyon cells that were most vulnerable to tau-triggered neuronal loss.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C74, C6, C111, and C113 describe cell-type-specific immune response patterns. The finding that tau can either activate or suppress immune pathways depending on cell type is well-supported by the data and represents a nuanced discovery. The observation that vulnerable neurons show immune suppression while other cell types show activation is particularly interesting and well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "The Relish (Rel) regulon, comprising 442 genes targeted by the Drosophila NF-\u03baB ortholog, shows expression patterns and differential expression consistent with the immune coexpression module. Results were validated using a manually-curated 62-gene NF-\u03baB pathway set and showed age-dependent activation patterns in selected clusters. Rel expression was experimentally confirmed in both neurons and glia using a GFP-tagged strain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C80 describe validation of the immune findings using regulon analysis and experimental confirmation. The consistency across multiple analytical approaches (coexpression module, regulon analysis, curated gene set) strengthens the findings. Experimental confirmation of Rel expression (C80) provides important validation of the computational predictions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C7",
+      "C114"
+    ],
+    "result": "Rel/NF-\u03baB activity was prioritized among the top predictors of vulnerability to tau-induced cell loss using regularized regression analysis of 183 regulons. The Rel regulon remained a robust predictor in expanded analyses including 2,793 additional pathways. The inverse relationship between Rel regulon expression and cell abundance is observed even in control animals, suggesting basal NF-\u03baB signaling may be a predictive marker for neurodegeneration. Among vulnerable cells, Rel regulon expression is associated with severity of decline.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C84, C7, and C114 describe integrative modeling results linking NF-\u03baB activity to cellular vulnerability. The regularized regression approach is appropriate for this type of analysis. The finding that basal Rel activity in controls predicts vulnerability (C83) is particularly interesting and suggests a pre-existing vulnerability signature. The robustness across different model specifications (C82) strengthens confidence in the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Besides Rel, the top predictors of vulnerability include CrebB and CHES-1 regulons. CrebB and its target genes were previously shown to be dysregulated in the Drosophila tauopathy model, consistent with the current finding of CrebB regulon downregulation. In mammals, CREB is linked to synaptic plasticity and long-term memory storage and has been proposed to interact with the NF-\u03baB pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C87 identify additional vulnerability predictors. The consistency with prior published work on CrebB (C86) provides validation. The connection to mammalian CREB function (C87) provides translational context. These findings complement the main NF-\u03baB results and are well-supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C88"
+    ],
+    "result": "Neuron-specific knockdown of Rel using RNA-interference did not alter tau-mediated neurodegeneration in histology experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C88 reports a negative result from genetic manipulation experiments. While the result is clearly stated and appears to be from appropriate experiments, the authors acknowledge this may reflect limitations of the assay or experimental design. The negative result does not invalidate the correlative findings but indicates that causal mechanisms require further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C8",
+      "C104"
+    ],
+    "result": "Inferred neuronal and glial cellular identities correlate well across species between Drosophila and human brain. Cross-species correlations in cell-type-specific signatures were replicated in an independent AD case/control snRNA-seq dataset from human entorhinal cortex, demonstrating that most human brain cell types share transcriptional signatures with counterparts in the Drosophila brain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C90, C8, and C104 describe cross-species validation using human snRNA-seq data. The correlation analysis is appropriately conducted and replication in an independent human dataset (C90) strengthens the findings. This demonstrates translational relevance of the Drosophila model and is an important validation of the approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "A human microglial subcluster (Mic1) associated with high tau neuropathological burden correlated with Drosophila ensheathing glia, showing significantly overlapping gene expression changes (hypergeometric test, p=4.83\u00d710\u207b\u2075). This suggests tau pathology may be an important driver of Mic1 transcriptional changes in disease.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C93 describe a specific cross-species correspondence between human microglia and fly ensheathing glia. The statistical significance of the overlap (p=4.83\u00d710\u207b\u2075) is strong. The interpretation that tau drives Mic1 changes (C93) is reasonable given the data, though appropriately stated as a suggestion rather than definitive proof.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C112"
+    ],
+    "result": "NF-\u03baB pathway genes are expressed across most cell types in human postmortem brain tissue, including both neurons and glia. In AD pathology, NF-\u03baB pathway gene expression appeared strongly downregulated in most neurons from the dorsolateral prefrontal cortex (which are highly susceptible to degeneration), whereas expression was increased among oligodendrocytes, microglia, and astrocytes. A subset of excitatory and inhibitory neuronal subclusters showed AD-associated increases. Human brains with AD pathology are characterized by widespread changes in NF-\u03baB innate immune signaling, including either activation or attenuation in many distinct neuronal and non-neuronal subtypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C97 and C112 demonstrate conservation of NF-\u03baB signaling patterns in human AD. The cell-type-specific patterns of activation/suppression parallel the findings in Drosophila, providing strong translational validation. The analysis of human snRNA-seq data appears appropriately conducted and the findings are clearly presented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C105",
+      "C106"
+    ],
+    "result": "Many cell types with robust aging-induced transcriptional responses in Drosophila are resilient to tau-mediated neurodegeneration based on cell proportion changes. The overlap between tau and aging does not reliably predict those cell types that are most vulnerable to neuronal loss.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C106 make an important negative finding: transcriptional overlap with aging does not predict vulnerability. This is well-supported by the data showing that many cell types with strong aging responses are resilient to tau (examples provided). This finding is important for understanding that vulnerability requires additional factors beyond aging-like transcriptional changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C107",
+      "C108"
+    ],
+    "result": "Differentially expressed genes triggered by tau and aging are enriched for many common biological pathways including synaptic regulation, protein translation, lipid metabolism, and oxidative phosphorylation. Similar pathways have been implicated based on snRNA-seq analyses from human postmortem brain and several mouse AD models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C108 describe shared pathway-level changes between tau and aging. The pathway enrichment analysis appears appropriately conducted and the consistency with human and mouse studies (C108) provides validation. These findings are well-supported and contribute to understanding shared mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C115"
+    ],
+    "result": "Innate immune response pathways may have important, cell-autonomous roles in modulating neuronal vulnerability to tau pathology in AD, besides the well-established requirements in glia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C115 is a speculative interpretation that goes beyond the data. While the correlative evidence for neuronal NF-\u03baB involvement is strong, the negative result from Rel knockdown experiments (C88) indicates that causal cell-autonomous roles are not yet established. The claim is appropriately hedged with 'may' and 'suggest,' but definitive support requires additional functional experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C127"
+    ],
+    "result": "The scRNA-seq analyses highlight a robust, tau-induced transcriptional response among Drosophila glia, consistent with several brain gene expression studies from humans and mouse models that implicate altered transcriptional states and/or increased numbers of AD-associated glial subtypes. Cross-species analysis demonstrates shared transcriptional signatures between corresponding glial subtypes, consistent with conserved responses to tau-mediated neuronal injury.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C122 and C127 describe glial transcriptional responses to tau. The findings are well-supported by the data and consistent with published literature (C122). The cross-species conservation (C127) provides additional validation. These findings are clearly presented and appropriately interpreted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "The elav>tauR406W model shares conserved downstream mechanisms of neurotoxicity with wildtype tau and is well-established to recapitulate aging-dependent neuronal loss and progressive CNS dysfunction. However, potential limitations include the absence of amyloid-\u03b2 peptide and developmental tau expression from the elav-GAL4 driver, which may contribute to some observed changes (e.g., mushroom body malformation). The longitudinal design reveals suggestive age-dependent cell abundance changes and progressive transcriptional changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C128-C133 discuss the model system and its limitations. The authors appropriately acknowledge both the strengths (C128, C132) and limitations (C129-C131) of the model. The discussion of developmental versus degenerative effects is thoughtful and the evidence for progressive changes (C133) supports the validity of the model for studying age-dependent processes. This represents a balanced assessment.",
+    "result_type": "MINOR"
+  }
+]

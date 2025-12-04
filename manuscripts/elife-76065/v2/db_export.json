@@ -1,0 +1,2200 @@
+{
+  "submission": {
+    "id": "e152f74b-3a30-497b-b521-f1258de5e8a4",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-04T02:19:40.410234Z",
+    "updated_at": "2025-12-04T02:19:40.410234Z"
+  },
+  "content": [
+    {
+      "id": "be364c46-19e9-4d13-820a-a22d57dc878f",
+      "submission_id": "e152f74b-3a30-497b-b521-f1258de5e8a4",
+      "content_type": "manuscript",
+      "content_text": "# Broad-scale variation in human genetic diversity levels is predicted by purifying selection on coding and non-coding elements\n\n## Authors\n\n- David A Murphy<sup>1</sup> ([ORCID: 0000-0002-0715-3355](https://orcid.org/0000-0002-0715-3355)) \u2020\n- Eyal Elyashiv<sup>1</sup>\n- Guy Amster<sup>1</sup> ([ORCID: 0000-0002-9108-5200](https://orcid.org/0000-0002-9108-5200))\n- Guy Sella<sup>1</sup> ([ORCID: 0000-0002-5239-7930](https://orcid.org/0000-0002-5239-7930)) \u2020\n\n### Affiliations\n\n1. Department of Biological Sciences, Columbia University New York United States ([ROR:00hj8s172](https://ror.org/00hj8s172))\n2. Genes and Human Disease Research Program, Oklahoma Medical Research Foundation, Oklahoma City Oklahoma City United States ([ROR:035z6xf33](https://ror.org/035z6xf33))\n3. MyHeritage Or Yehuda Israel\n4. Flatiron Health Inc New York United States ([ROR:0508h6p74](https://ror.org/0508h6p74))\n5. Program for Mathematical Genomics, Columbia University New York United States ([ROR:00hj8s172](https://ror.org/00hj8s172))\n\n\u2020 Corresponding author\n\n## Abstract\n\nAnalyses of genetic variation in many taxa have established that neutral genetic diversity is shaped by natural selection at linked sites. Whether the mode of selection is primarily the fixation of strongly beneficial alleles (selective sweeps) or purifying selection on deleterious mutations (background selection) remains unknown, however. We address this question in humans by fitting a model of the joint effects of selective sweeps and background selection to autosomal polymorphism data from the 1000 Genomes Project. After controlling for variation in mutation rates along the genome, a model of background selection alone explains ~60% of the variance in diversity levels at the megabase scale. Adding the effects of selective sweeps driven by adaptive substitutions to the model does not improve the fit, and when both modes of selection are considered jointly, selective sweeps are estimated to have had little or no effect on linked neutral diversity. The regions under purifying selection are best predicted by phylogenetic conservation, with ~80% of the deleterious mutations affecting neutral diversity occurring in non-exonic regions. Thus, background selection is the dominant mode of linked selection in humans, with marked effects on diversity levels throughout autosomes.\n\n## Introduction\n\nSelection at a given locus in the genome affects diversity levels at sites linked to it (Hill and Robertson, 1966; Smith and Haigh, 1974; Kaplan et al., 1989; Begun and Aquadro, 1992; Charlesworth et al., 1993; Hudson and Kaplan, 1995; Nordborg et al., 1996; Charlesworth, 2013; Cutter and Payseur, 2013). When a new, strongly beneficial mutation increases in frequency to fixation in the population, it carries with it the haplotype on which it arose, thus reducing levels of neutral diversity nearby, in what is sometimes called a \u2018hard selective sweep\u2019 (Smith and Haigh, 1974; Kaplan et al., 1989). \u2018Soft sweeps\u2019, particularly those in which an allele segregates at low frequency before becoming beneficial and sweeping to fixation, and \u2018partial sweeps\u2019, in which a beneficial mutation rapidly increases to an intermediate frequency, also reduce neutral diversity levels near the selected sites (Hermisson and Pennings, 2005; Przeworski et al., 2005; Pennings and Hermisson, 2006a; Pennings and Hermisson, 2006b; Coop and Ralph, 2012; Berg and Coop, 2015). Similarly, when deleterious mutations are eliminated from the population by selection, so are the haplotypes on which they lie. This process too reduces diversity levels near selected sites, in a phenomenon known as \u2018background selection\u2019 (Charlesworth et al., 1993; Hudson and Kaplan, 1995; Nordborg et al., 1996; Comeron and Kreitman, 2002; Good et al., 2014; Cvijovi\u0107 et al., 2018). Because the lengths of the haplotypes associated with selected alleles depend on the recombination rate, selection causes a greater reduction in levels of linked neutral genetic diversity in regions with lower rates of recombination or a greater density of selected sites. These predicted relationships have been observed in numerous taxa, including plants, Drosophila, rodents, and primates, establishing that the effects of linked selection are widespread (Begun and Aquadro, 1992; Nachman, 1997; Payseur and Nachman, 2002; Nordborg et al., 2005; Wright et al., 2006; Andolfatto, 2007; Begun et al., 2007; Macpherson et al., 2007; Wright and Andolfatto, 2008; Cai et al., 2009; Sella et al., 2009; Cutter and Payseur, 2013).\n\nMore recently, the advent of large genomic datasets and detailed functional annotations have made it possible to infer the effects of linked selection and build maps that predict levels of diversity along the genome (McVicker et al., 2009; Elyashiv et al., 2016; also see Hudson and Kaplan, 1995; Nordborg et al., 1996; Comeron, 2014). The first effort predated the availability of genome-wide resequencing data, relying instead on information about incomplete lineage sorting among human, chimpanzee and gorilla, which reflects variation in diversity levels along the genome in the common ancestor of humans and chimpanzees (McVicker et al., 2009). This pioneering paper showed that a model of background selection fits variation in human-chimpanzee divergence levels along the genome remarkably well, with only a few parameters.\n\nWhat remained unclear is whether this remarkable fit should be attributed to the effects of background selection alone. Notably, the estimate of the rate of deleterious mutations underlying the effects of background selection was unrealistically high\u2014substantially greater than the upper limit based on estimates of the total mutation rate per site in humans (Kong et al., 2012; Besenbacher et al., 2016; Appendix 1 Section 5). In light of this finding, McVicker et al., 2009 suggested that the model might be soaking up effects of other modes of selection, particularly those of selective sweeps (McVicker et al., 2009). Subsequent work indicated that selective sweeps had little effect on diversity levels in humans (Coop et al., 2009; Hernandez et al., 2011), however, with no more of a reduction in diversity around plausible targets of positive selection (nonsynonymous substitutions) than around sites assumed to be predominantly neutral (synonymous substitutions) (Coop et al., 2009; Hernandez et al., 2011). Yet, the interpretation of these findings was contested: it was suggested that on average, background selection causes more of a reduction in diversity around synonymous than nonsynonymous substitutions, and consequently that the comparison between the two types of sites may obscure the reduction due to sweeps around nonsynonymous substitutions (Enard et al., 2014). The map of predicted background selection effects offered little help in evaluating this hypothesis, because it provided poor quantitative fits of diversity levels around both synonymous and nonsynonymous substitutions (Hernandez et al., 2011). Thus, despite clear evidence for the impact of background selection, we still lack an understanding of its contribution relative to sweeps (Stephan, 2010), as well as maps of their respective effects on human diversity levels.\n\n## Results and disussion\n\n### Model and inference\n\nHere we resolve these issues by considering the effects of background selection and selective sweeps on diversity levels jointly (Figure 1 and Appendix 1 Section 1). We model the effects on the expected neutral heterozygosity (i.e., the probability of observing different alleles in a sample size of two) at a given autosomal position $x$, as\n\n$$\n\\pi(x)=\\frac{2u(x)}{2u(x)+1/(2N_{e}B(x))+S(x)},\n$$\n\nwhere $u(x)$ is the local mutation rate, $N_{e}$ is the effective population size without linked selection, $B(x)$ is the local (multiplicative) reduction in effective population size due to background selection, and $S(x)$ is the local coalescence rate caused by selective sweeps (Wiehe and Stephan, 1993; Elyashiv et al., 2016). This model can be understood by thinking about a pair of lineages backward in time and noting that, considering mutation vs. coalescence events, $\\pi(x)$ is the probability that a mutation occurs (at a rate $2u(x)$ per generation) before the pair coalesces, owing either to genetic drift (at a rate $1/(2N_{e}B(x))$), which includes the effect of background selection, or to selective sweeps (at a rate $S(x)$) (Hudson, 1990).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/76065/elife-76065-fig1-v2.jpg)\n\n**Figure 1.:** Given the putative targets of selection and corresponding selection parameters (A and B), we calculate the expected neutral diversity levels along the genome (C). We infer the selection parameters by maximizing their composite likelihood given observed diversity levels (C). Based on these parameter estimates, we calculate a map of the expected effects of selection on linked diversity levels.\n\nWe model the effects of background selection, $B(x)$, as a function of genetic distance from regions that may be under purifying selection (Figure 1A) following the theory developed by Hudson and Kaplan, 1995 and Nordborg et al., 1996. In this model, the deleterious mutation rate per site and distribution of selection effects in a given type of region (e.g. exons) are parameters to be estimated (see Appendix 1 Section 1.1 for details). In turn, we model the effects of sweeps, $S(x)$, as a function of genetic distance from substitutions on the human lineage that may have been beneficial (Figure 1B), following Barton, 1998 and Gillespie, 2000. Here, the fraction of substitutions of a given type (e.g. nonsynonymous) that were beneficial and their distribution of selection effects are parameters to be estimated (see Appendix 1 Section 1.1 for details). Importantly, our model should capture the effects of any kind of sweeps, be they hard, partial or soft, so long as they eventually resulted in a substitution and affected diversity levels nearby (see Coop and Ralph, 2012 and SOM Section D in Elyashiv et al., 2016).\n\nGiven the positions of different types of putatively selected regions and substitutions, their corresponding selection parameters, and a fine-scale genetic map, the model allows us to calculate the marginal probability that any given neutral site in the genome is polymorphic in a sample (Figure 1C). Provided measurements of polymorphism at neutral positions throughout the genome, we combine information across sites and samples to calculate the composite likelihood of selection parameters, and find the parameter values that maximize this likelihood (Figure 1). In addition to parameter estimation, this approach yields a map of the expected neutral diversity levels along the genome (Figure 1C). The mathematical form of the model and of the algorithms used for inference are detailed in Appendix 1 Section 1.\n\nTo infer the effects of background selection and selective sweeps on human diversity levels, we analyze autosomal polymorphism data from 26 human populations, collected in Phase III of the 1000 Genomes Project (Auton et al., 2015). Here, we focus on data from 108 genomes sampled from the Yoruba population (YRI), but we get similar results for the other populations (Appendix 1 Sections 7 and 9). To estimate diversity levels at neutral sites, we focus on non-genic autosomal sites that are the least conserved in a multiple sequence alignment of 25 supra-primates (see Appendix 1 Section 3.1). To account for variation in mutation rates among neutral sites, we use estimates of the relative mutation rate for contiguous, non-overlapping blocks of 6000 putatively neutral sites, obtained from substitution rates in an eight-primate phylogeny (see Appendix 1 Section 3.3). To minimize the confounding of recombination rate estimates and diversity levels, we use a high-resolution genetic map inferred from ancestry switches in African-Americans (Hinch et al., 2011), which is highly correlated with other maps (Hinch et al., 2011) but is less dependent on diversity levels.\n\n### Background selection\n\nWe first focus on two of our best-fitting models of the effects of background selection (see below and Appendix 1 Section 4). In both cases, we take as putative targets of purifying selection the 6% of autosomal sites estimated as most likely to be under selective constraint. In one, we choose these sites using phastCons conservation scores obtained for a 99-vertebrate phylogeny that excludes humans (Siepel et al., 2005). In the other, we rely on Combined Annotation-Dependent Depletion (CADD) scores, which are based primarily on phylogenetic conservation (excluding humans) but also on information from functional genomic assays (Kircher et al., 2014; Rentzsch et al., 2019); to avoid circularity, we use scores that were generated without the McVicker et al., 2009 B-map as input (see Appendix 1 Section 2.5).\n\nFrom these models, we obtain a map of predicted diversity levels (accounting for variation in mutation rates), which we can then compare to observed data (Figure 2A and Appendix 1\u2014figure 24). We generate these maps using out-of-sample predictions in non-overlapping, contiguous 2 Mb windows (which we note is substantially greater than the scale of linkage disequilibrium in human populations; Wall and Pritchard, 2003). Over-fitting has a negligible effect on our results (also see Appendix 1 Section 6.1 and Appendix 1\u2014figure 48), as expected given that the model has few parameters and the large amount of data (7 fitted parameters in this case and 2580 Mb blocks of ~653M putatively neutral sites spread over ~2600 LD blocks; Berisa and Pickrell, 2016). As a measure of the precision of our predictions, we consider the variance in diversity levels explained in non-overlapping autosomal windows (Figure 2B). Our predictions explain a large proportion of the variance across spatial scales: at the 1 Mb scale, the predictions based on CADD scores account for 60% of the variance in diversity levels compared to 32% explained by previous work (McVicker et al., 2009; see Appendix 1 Section 4.6).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/76065/elife-76065-fig2-v2.jpg)\n\n**Figure 2.:** (A) Predicted and observed diversity levels along chromosome 1 in the YRI sample. Diversity levels are measured in 1 Mb windows, with a 0.5 Mb overlap, with the autosomal mean set to 1. (B) The proportion of variance in YRI diversity levels explained by background selection models at different spatial scales. Shown are the results for four choices of putative targets of selection: all sites with the highest 6% of CADD or phastCons scores (denoted CADD and phastCons, respectively) and the subset of these sites that are exonic (denoted CADDe and phastConse, respectively). The results shown for our best-fitting models (based on the 6% of sites with the highest CADD or phastCons scores) are based on out-of-sample predictions in non-overlapping, contiguous 2 Mb windows. See Appendix 1 Section 4 for similar graphs with other choices, and Appendix 1 Sections 7 and 9 for other populations.\n\n### Selective sweeps\n\nNext, we examine whether incorporating selective sweeps alongside background selection improves our predictions. Our inference should be able to tease apart the effects of selective sweeps, primarily because their effects, unlike those of background selection, should be centered around the locations of substitutions. Moreover, as noted, we expect to capture the effects of selective sweeps, be they hard, partial or soft (Smith and Haigh, 1974; Kaplan et al., 1989; Hermisson and Pennings, 2005; Przeworski et al., 2005; Pennings and Hermisson, 2006a; Pennings and Hermisson, 2006b; Coop and Ralph, 2012; Berg and Coop, 2015), so long as they resulted in substitutions and substantially affected diversity levels (see Coop and Ralph, 2012 and SOM Section D in Elyashiv et al., 2016). Indeed, previous work that applied a similar methodology to data from Drosophila melanogaster was able to identify distinct effects of background selection and sweeps (Elyashiv et al., 2016). To examine whether we can identify such effects in humans, we consider several choices of putatively selected substitutions along the human lineage, including any nonsynonymous substitutions or any nonsynonymous and non-coding substitutions in constrained regions, allowing each type to have its own selection parameters and considering different measures of constraint (see Appendix 1 Section 4.5). Regardless of the types of substitutions considered, incorporating sweeps does not improve our fit. In fact, in all cases, our estimates of the proportion of substitutions resulting in sweeps with discernable effects on neutral diversity is approximately 0.\n\nMoreover, in contrast to previous attempts (McVicker et al., 2009; Hernandez et al., 2011), our model of background selection alone provides good quantitative fits to the diversity levels observed around different genomic features and in particular around nonsynonymous and synonymous substitutions (Figure 3 and Appendix 1\u2014figure 49). Together, these results refute the hypothesis that reduced diversity levels around nonsynonymous substitutions in humans reflect \u2018masked\u2019 effects of selective sweeps (Enard et al., 2014); more generally, they indicate that selective sweeps resulting in substitutions had little effect on diversity levels in contemporary humans.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/76065/elife-76065-fig3-v2.jpg)\n\n**Figure 3.:** Shown are the results for putatively neutral sites as a function of their genetic distance to the nearest nonsynonymous substitution (in 160 bins, each spanning 0.005 cM). For observed values, we average diversity levels within each bin. For predicted values, we average diversity levels predicted by our best-fitting CADD-based model (using the out-of-sample predictions in non-overlapping, contiguous, 2 Mb windows) and correct for relative mutation rate in each bin (using substitution data; see Appendix 1 Section 3.3). Both observed and predicted diversity levels are plotted relative to the autosomal mean. See Appendix 1\u2014figure 49 and Appendix 1\u2014figure 51 for similar graphs for other genomic features and using data from other populations.\n\nThe lack of sweeps does not imply that adaptation was rare in recent human evolution, as instead, much of it may have been driven by selection on genetically complex traits, that is, traits with heritable variation arising from many segregating loci (Coop et al., 2009; Pritchard et al., 2010; Pritchard and Di Rienzo, 2010; Hernandez et al., 2011; Sella and Barton, 2019). Complex traits are often subject to ongoing stabilizing selection, that is, selection that acts to maintain traits near an optimal value (Wright, 1935; Robertson, 1966; Walsh and Lynch, 2018; Sella and Barton, 2019). Changes in selection pressures, that is, in optimal trait values, introduce transient directional selection on such complex traits. Under plausible conditions, we expect the adaptive response to directional selection to be highly polygenic, with phenotypic adaptation to new optima achieved rapidly, via tiny increases to the frequency of many alleles that change the traits in the direction favored by selection (Hayward and Sella, 2019). Over the long run, these tiny frequency changes cause a tiny excess of fixations of the alleles that were initially favored by selection (Hayward and Sella, 2019). Consequently, polygenic adaptation introduces only minor perturbations to allele trajectories compared to the case in which selection pressures on traits remain constant. In particular, the alleles that eventually fix do so extremely slowly, with trajectories that are predominated by weak selection and drift (Hayward and Sella, 2019), implying that their effects on linked diversity levels should be negligible (Barton, 2000; Thornton, 2019).\n\nIn contrast, ongoing stabilizing selection on complex traits could have a substantial effect on linked, neutral diversity levels (Hayward and Sella, 2019). Stabilizing selection induces purifying selection against minor alleles that affect complex traits (Wright, 1931; Robertson, 1966; Simons et al., 2018), and purifying selection on these alleles could be a major source of background selection (Hayward and Sella, 2019). In other words, if much of the selection in humans is driven by ongoing and changing selection pressures on complex traits, we may expect background selection to be the dominant mode of linked selection, as our results indicate.\n\n### The source of background selection\n\nFocusing then on models of background selection alone, we ask which genomic annotations appear to be the sources of purifying selection. Previous work found selection on non-exonic regions to contribute little, to the extent that removing conserved non-exonic sites from a model of background selection had little effect on predicted diversity levels (McVicker et al., 2009). In contrast, when we include only conserved exonic regions in our inference, our predictive ability is considerably diminished (Figure 2B).\n\nMoreover, in models that include separate selection parameters for conserved exonic and non-exonic regions, purifying selection on non-exonic regions accounts for most of the reduction in linked neutral diversity (Appendix 1 Section 4.3). Our estimates suggest that ~80% of deleterious mutations affecting neutral diversity occur in non-exonic regions (e.g. in the model with the top 6% of phastCons scores, ~84% of selected sites and ~76% of deleterious mutations are non-exonic; with the top 6% of CADD scores, ~83% of selected sites and ~85% of deleterious mutations are non-exonic; see Appendix 1 Sections 4.3 and 4.6). Our estimates of the average strength of selection differ between exonic and non-exonic regions, but because the total reduction in diversity levels caused by background selection is fairly insensitive to the strength of selection (with the reduction being more localized for weakly selected mutations than for strong ones), the proportions of deleterious mutations that occur in these regions approximate their relative effects on neutral diversity levels (Hudson, 1994; see Appendix 1 Sections 4.3, 4.4, and 4.6). Thus, our estimates suggest that purifying selection on non-exonic regions accounts for ~80% of the reduction in linked neutral diversity. Moreover, including separate selection parameters for conserved exonic and non-exonic regions does not improve our predictions (Appendix 1 Section 4.3 and Appendix 1\u2014figure 19).\n\nIncorporating additional functional genomic information also does little to improve our predictions (Appendix 1 Sections 4.2 and 4.4). Notably, when we do not incorporate information on phylogenetic conservation, but include separate selection parameters for coding regions and for each of the Encyclopedia of DNA Elements (ENCODE) classes of candidate cis-regulatory elements (cCRE) (Moore et al., 2020), our predictive ability is considerably diminished (Appendix 1 Section 4.4). Moreover, using CADD scores (Kircher et al., 2014; Rentzsch et al., 2019), which augment information on phylogenetic conservation with functional genomic information, offers little improvement over relying on conservation alone (e.g., explaining 59.9% compared to 59.7% of the variance in diversity levels in 1 Mb windows, a difference that is not statistically significant; Appendix 1 Section 6). Thus, at present, functional annotations that do not incorporate phylogenetic conservation appear to provide poorer predictions of the effects of linked selection and those that do, offer little improvement over using conservation alone (see Appendix 1 Sections 4.1\u20134).\n\nIn turn, our predictions based on conservation are fairly insensitive to the phylogenetic depth of the alignments used to infer conservation levels, although we do slightly better using a 99-vertebrate alignment (excluding humans) compared to its monophyletic subsets (e.g. Appendix 1\u2014figure 14 and Appendix 1\u2014figure 33 and Appendix 1 Section 6.2). Our best-fitting models by a variety of metrics, are obtained using 5\u20137% of sites with the top CADD or phastCons scores as selection targets (Appendix 1\u2014figure 16 and Appendix 1\u2014figure 26). This percentage is in good accordance with more direct estimates of the proportion of the human genome subject to functional constraint (Ward and Kellis, 2012; Rands et al., 2014).\n\n### Estimates of the deleterious mutation rate\n\nReassuringly, the deleterious mutation rates that we estimate for our best-fitting models are plausible (Figure 4). Current estimates of the average mutation rate per site per generation in humans, including point mutations (Kong et al., 2012; Besenbacher et al., 2016), indels (Besenbacher et al., 2016), mobile element insertions (Gardner et al., 2019), and structural mutations (Sudmant et al., 2015; Belyeu et al., 2021) lie in the range of $1.29\\times10^{-8}-1.38\\times10^{-8}$ per base pair per generation (Appendix 1 Section 5). Further accounting for the length of deletions (Besenbacher et al., 2016)\u2014whereby a deletion that starts at a neutral site and includes selected sites should contribute to our estimate of the deleterious mutation rate, but deletions that affect one or several selected sites should have the same contribution\u2014suggests that the upper bound on estimates of the deleterious mutations rate at putatively selected sites should fall in the range of $1.29\\times10^{-8}-1.51\\times10^{-8}$ per base pair per generation (Appendix 1 Section 5). The estimates for all of our best-fitting models fall well below this bound (Figure 4). This is expected, because not every mutation at putatively selected sites will be deleterious: some sites are misclassified as constrained and some mutations at selected sites are selectively neutral.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/76065/elife-76065-fig4-v2.jpg)\n\n**Figure 4.:** Shown are the results using 5\u20137% of sites with the highest phastCons scores (A) and CADD scores (B) as selection targets. For estimates based on fitting background selection models, we divide our estimates of the deleterious mutation rate per selected site by the estimate of the total mutation rate per site, where the ranges correspond to the range of estimates of the total rate, that is, $1.29\\times10^{-8}-1.51\\times10^{-8}$ per base pair per generation (Appendix 1 Section 5.1). For estimates based on evolutionary rates (on the human lineage from the common ancestor of humans and chimpanzees), we take the ratio of the estimated rates at putatively selected sites and at matched sets of putatively neutral sites (see text and Appendix 1 Section 5.2 for details).\n\nTo test whether our estimates of the proportion of mutations that are deleterious are plausible, we compare them with independent estimates based on the relative reduction in evolutionary rates at putatively selected vs. neutral sites along the human lineage (these sets of sites were identified from an alignment that excludes humans; Appendix 1 Sections 3.1, 4.1, and 4.4). The relative reduction allows us to estimate the proportion of deleterious mutations because deleterious mutations at selected sites rarely fix in the population whereas neutral mutations fix at a much higher rate, which is the same at selected and neutral sites (Kimura and Crow, 1964). In estimating the reduction at putatively selected sites, we matched the set of putatively neutral sites for the AT/GC ratio, and checked that our estimates were insensitive to the composition of other genomic features associated with mutation rates and with other non-selective processes that affect substitution rates (e.g., triplet context, methylated CpGs and recombination rates, which affect rates of biased gene conversion; Appendix 1 Section 5).\n\nOur estimates based on evolutionary rates are closer to (and even overlap) those obtained from fitting models of background selection based on CADD scores compared to those based on phastCons scores (Figure 4). This is expected given that CADD scores are much better than phastCons scores at identifying constraint on a single site resolution (Kircher et al., 2014; Rentzsch et al., 2019), which markedly influences evolutionary rates at putatively selected sites (but not the predictions of background selection effects). We expect the two estimates to be similar but not identical, both because weak selection has a larger effect on evolutionary rates than on linked diversity levels (McVean and Charlesworth, 2000; Comeron and Kreitman, 2002; Gordo et al., 2002; Charlesworth, 2013; Good et al., 2014) and because estimates based on the effects of background selection may absorb the deleterious mutation rate at selected sites that were not included in our sets but are closely linked to sites in them (Appendix 1 Section 5). In summary, given the fit to data and plausible estimates of the deleterious rates, it is natural to interpret our maps as reflecting the effects of background selection, that is, as maps of $B$ (defined as the ratio of expected diversity levels with background selection, $\\pi$, and in its absence, $\\pi_{0}$; Charlesworth et al., 1993).\n\n### Background selection on autosomes\n\nOur maps are also well calibrated (Figure 5). When we stratify diversity levels at putatively neutral sites by our predictions, predicted and observed diversity levels are similar throughout nearly the entire range of predicted values (e.g. $R^{2}=0.96$ when sites are in predicted percentile bins). One exception is for ~5% of sites in which background selection is predicted to be the strongest (i.e. with the lowest $B$), where our predictions are imprecise. This behavior is due to a technical approximation we employ in fitting the models (see Appendix 1 Section 1.5). The other exception is for ~2% of sites in which background selection is predicted to be the weakest (i.e. with $B$ near 1), where observed diversity levels are markedly greater than expected. We observe similar behavior in all the human populations examined (Appendix 1\u2014figure 52), and we cannot fully explain it by known mutational and recombination effects (e.g. of base composition and biased gene conversion; Appendix 1 Section 8). This behavior could reflect ancient introgression of archaic human DNA into ancestors of contemporary humans (Appendix 1 Section 8.3), indicated also in other population genetic signatures (Wall and Hammer, 2006; Green et al., 2010; Reich et al., 2010; Sankararaman et al., 2014; Racimo et al., 2015; Steinr\u00fccken et al., 2018). Such introgressed regions are expected to increase genetic diversity and persist the longest in regions with low functional density and high recombination, corresponding to weak background selection effects (Sankararaman et al., 2014; Harris and Nielsen, 2016; Juric et al., 2016; Schumer et al., 2018).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/76065/elife-76065-fig5-v2.jpg)\n\n**Figure 5.:** Shown are the results for the best-fitting CADD-based model, using the out-of-sample predictions in non-overlapping, contiguous 2 Mb windows. Light orange scatter plot: we divide putatively neutral sites into 100 equally sized bins based on the predicted $B$. For predicted values (x-axis), we average the predicted $B$ in each bin. For observed values (y-axis), we divide the average diversity level by the estimate of the average relative mutation rate (obtained from substitution data; see Appendix 1 Section 3.3) in each bin, and normalize by the autosomal average of $\\pi_{0}$ (estimated from fitting the model; see Appendix 1 Section 1.1). Owing to a technical approximation (see Appendix 1 Section 1.5), our method forces the predictions for the 5 bins with the lowest predicted $B$ (open, hatched circles on the left) to be similar; we therefore also show the results for these bins grouped together (dark red circle). Dark orange curve: the LOESS fit for a similarly defined scatter plot but with 2000 rather than 100 bins (with span = 0.1). For similar graphs corresponding to other models and using data from other populations, see Appendix 1 Sections 4 and 9, respectively.\n\nSetting these outlier regions aside, we can use the maps to characterize the distribution of background selection effects in human autosomes. We note that background selection effects that are not captured by our models would cause us to underestimate the range and extent of background selection effects (Elyashiv et al., 2016). We find that diversity levels throughout almost all of the autosomes are affected by background selection, with a ~37% reduction in the 10% most affected sites, a non-zero (~2.1%) reduction even in the 10% least affected (after excluding outliers in the top 2% of bins; see Figure 5), and a mean reduction of ~17%. These conclusions are robust across our best-fitting maps and populations (Appendix 1 Section 4 and Appendix 1\u2014figure 35 and Appendix 1\u2014figure 52). An important implication is that our maps of the effects of background selection provide a more accurate null model than currently used for other population genetic inferences that rely on diversity levels, notably inferences about demographic history (Schiffels and Durbin, 2014; Terhorst et al., 2017; Pouyet et al., 2018).\n\n### Conclusion\n\nOur results indicate that background selection is the dominant mode of linked selection in human autosomes and the major determinant of neutral diversity levels on the Mb scale (after accounting for variation in mutation rates). They further reveal that background selection effects arise primarily from purifying selection at non-coding regions of the genome. Non-coding regions are known to exhibit substantial functional turnover on evolutionary timescales (Ward and Kellis, 2012; Rands et al., 2014), and yet we find phylogenetic conservation to be the best predictor of selected regions. Moreover, at present, augmenting measures of conservation with functional genomic information in humans offers little improvement. It therefore remains unclear how much our maps can still be improved. Even without these potential refinements, our findings demonstrate that a simple model of background selection, conceived three decades ago (Charlesworth et al., 1993), provides a reliable quantitative prediction of genetic diversity levels throughout human autosomes.\n",
+      "created_at": "2025-12-04T02:19:40.410234Z"
+    },
+    {
+      "id": "e6e7ed74-4e87-48a6-8a4f-7432949fa4e9",
+      "submission_id": "e152f74b-3a30-497b-b521-f1258de5e8a4",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Magnus Nordborg, Gregor Mendel Institute Austria\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.76065.sa0](https://doi.org/10.7554/eLife.76065.sa0)\n\nThis paper uses state-of-the-art methods and the latest data to answer the question of whether variation in polymorphism levels along the human genome is mostly driven by linked purifying selection or selective sweeps. It makes a very strong case for the former. The paper is exceptionally well written and should be of interest to anyone wishing to understand patterns of polymorphism.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Magnus Nordborg, Gregor Mendel Institute Austria\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.76065.sa1](https://doi.org/10.7554/eLife.76065.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Broad-scale variation in human genetic diversity levels is predicted by purifying selection on coding and non-coding elements\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, including Magnus Nordborg as Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Detlef Weigel as the Senior Editor.\n\nThe reviewers are unanimous in considering this an exceptionally clear and well-written paper. If published as-is, it would be better than most published papers. Respect!\n\nNonetheless, it can be improved, like all papers, and the reviews attached provide lots of suggestions along these lines. In addition, there are two things we would like to see done, and that we believe should not be too onerous.\n\nEssential Revisions (both points are well-described by Reviewer 3 [indeed] and related to model fitting):\n\n1) A simple neutral simulation to check the extent to which the composite likelihood model can over-fit to neutral variation.\n\n2) An out-of-sample prediction, e.g. by leaving chromosomes out.\n\nReviewer #1 (Recommendations for the authors):\n\nThis is an exceptionally well-written paper, and I have no major suggestions for improvement.\n\nReviewer #3 (Recommendations for the authors):\n\nI am reasonably happy with the paper in its current form \u2013 I can see the incredible care the authors took to make this study robust. I would recommend some forward simulations using SLiM, but I will not require them (as I said, mostly since this itself would be a sizable task to do). However, I would like to see some simple neutral simulations with realistic recombination maps as a negative control as mentioned. This may seem like an unnecessary negative control \u2013 however, my main concern here is that I have heard others critique the Eylashiv et al. model, claiming it could be fitting neutral \"noise\" along the chromosome. I do not think this is the case, as I think the functional form doesn't have that many degrees of freedom, but I would still like to see this concern addressed.\n\nMy primary concern is that the out-sample prediction comparison analysis is conducted (beyond the current leave one window out approach) and included in the main text. I think this would strengthen the claim that BGS models alone closely match diversity data (and the present results are not just a consequence of overfitting). I don't think these out-sample models need to include the positive selection model since it has little effect.\n",
+      "created_at": "2025-12-04T02:19:40.410234Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T02:19:40.410234Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T02:19:40.410234Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "528da5fb-9d03-497d-8e45-6e222722076c",
+      "content_id": "be364c46-19e9-4d13-820a-a22d57dc878f",
+      "claim_id": "C1",
+      "claim": "Neutral genetic diversity is shaped by natural selection at linked sites in many taxa.",
+      "claim_type": "EXPLICIT",
+      "source": "Analyses of genetic variation in many taxa have established that neutral genetic diversity is shaped by natural selection at linked sites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an established finding from analyses across multiple taxa.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:40.410234Z"
+    },
+    {
+      "id": "5d385494-e4ce-4d21-8fe9-0cbc361c9b80",
+      "content_id": "be364c46-19e9-4d13-820a-a22d57dc878f",
+      "claim_id": "C2",
+      "claim": "A model of background selection alone explains ~60% of the variance in diversity levels at the megabase scale in humans after controlling for variation in mutation rates.",
+      "claim_type": "EXPLICIT",
+      "source": "After controlling for variation in mutation rates along the genome, a model of background selection alone explains ~60% of the variance in diversity levels at the megabase scale.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the study's analysis of 1000 Genomes Project data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:40.410234Z"
+    },
+    {
+      "id": "863fa836-907c-4f61-935b-7b7289be6d82",
+      "content_id": "be364c46-19e9-4d13-820a-a22d57dc878f",
+      "claim_id": "C3",
+      "claim": "Adding the effects of selective sweeps driven by adaptive substitutions to the model does not improve the fit.",
+      "claim_type": "EXPLICIT",
+      "source": "Adding the effects of selective sweeps driven by adaptive substitutions to the model does not improve the fit, and when both modes of selection are considered jointly, selective sweeps are estimated to have had little or no effect on linked neutral diversity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct result from the study's model fitting analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:40.410234Z"
+    },
+    {
+      "id": "d2062ccd-f787-4f51-901d-3c9dfdf05fbe",
+      "content_id": "be364c46-19e9-4d13-820a-a22d57dc878f",
+      "claim_id": "C4",
+      "claim": "When both modes of selection are considered jointly, selective sweeps are estimated to have had little or no effect on linked neutral diversity.",
+      "claim_type": "EXPLICIT",
+      "source": "Adding the effects of selective sweeps driven by adaptive substitutions to the model does not improve the fit, and when both modes of selection are considered jointly, selective sweeps are estimated to have had little or no effect on linked neutral diversity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the joint model analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:40.410234Z"
+    },
+    {
+      "id": "51b1fb43-35f5-4978-ad67-2c77e3ac2f30",
+      "content_id": "be364c46-19e9-4d13-820a-a22d57dc878f",
+      "claim_id": "C5",
+      "claim": "~80% of the deleterious mutations affecting neutral diversity occur in non-exonic regions.",
+      "claim_type": "EXPLICIT",
+      "source": "The regions under purifying selection are best predicted by phylogenetic conservation, with ~80% of the deleterious mutations affecting neutral diversity occurring in non-exonic regions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative estimate from the study's model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:40.410234Z"
+    },
+    {
+      "id": "295735ae-7a68-4d38-9711-97b844978324",
+      "content_id": "be364c46-19e9-4d13-820a-a22d57dc878f",
+      "claim_id": "C6",
+      "claim": "Background selection is the dominant mode of linked selection in humans.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, background selection is the dominant mode of linked selection in humans, with marked effects on diversity levels throughout autosomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion drawn from the study's findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:40.410234Z"
+    },
+    {
+      "id": "8d888932-51b9-4d5e-8d82-2bcbed176a71",
+      "content_id": "be364c46-19e9-4d13-820a-a22d57dc878f",
+      "claim_id": "C7",
+      "claim": "Background selection has marked effects on diversity levels throughout autosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, background selection is the dominant mode of linked selection in humans, with marked effects on diversity levels throughout autosomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the study's analysis of autosomal diversity.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:40.410234Z"
+    },
+    {
+      "id": "00c19f0c-fcc1-4237-976e-556d6d677df4",
+      "content_id": "be364c46-19e9-4d13-820a-a22d57dc878f",
+      "claim_id": "C8",
+      "claim": "Hard selective sweeps reduce levels of neutral diversity nearby the selected site.",
+      "claim_type": "EXPLICIT",
+      "source": "When a new, strongly beneficial mutation increases in frequency to fixation in the population, it carries with it the haplotype on which it arose, thus reducing levels of neutral diversity nearby, in what is sometimes called a 'hard selective sweep' (Smith and Haigh, 1974; Kaplan et al., 1989).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to theoretical work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:40.410234Z"
+    },
+    {
+      "id": "40866543-fa58-4d00-a8b3-8cfff244e5b2",
+      "content_id": "be364c46-19e9-4d13-820a-a22d57dc878f",
+      "claim_id": "C9",
+      "claim": "Soft sweeps reduce neutral diversity levels near the selected sites.",
+      "claim_type": "EXPLICIT",
+      "source": "'Soft sweeps', particularly those in which an allele segregates at low frequency before becoming beneficial and sweeping to fixation, and 'partial sweeps', in which a beneficial mutation rapidly increases to an intermediate frequency, also reduce neutral diversity levels near the selected sites (Hermisson and Pennings, 2005; Przeworski et al., 2005; Pennings and Hermisson, 2006a; Pennings and Hermisson, 2006b; Coop and Ralph, 2012; Berg and Coop, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to theoretical and empirical work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:40.410234Z"
+    },
+    {
+      "id": "f25e2bad-2bdb-48cb-8d64-f295a5207a43",
+      "content_id": "be364c46-19e9-4d13-820a-a22d57dc878f",
+      "claim_id": "C10",
+      "claim": "Partial sweeps reduce neutral diversity levels near the selected sites.",
+      "claim_type": "EXPLICIT",
+      "source": "'Soft sweeps', particularly those in which an allele segregates at low frequency before becoming beneficial and sweeping to fixation, and 'partial sweeps', in which a beneficial mutation rapidly increases to an intermediate frequency, also reduce neutral diversity levels near the selected sites (Hermisson and Pennings, 2005; Przeworski et al., 2005; Pennings and Hermisson, 2006a; Pennings and Hermisson, 2006b; Coop and Ralph, 2012; Berg and Coop, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to theoretical and empirical work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:40.410234Z"
+    },
+    {
+      "id": "e1d016b8-083b-4492-857a-07a96bf8b1a6",
+      "content_id": "be364c46-19e9-4d13-820a-a22d57dc878f",
+      "claim_id": "C11",
+      "claim": "Background selection reduces diversity levels near selected sites when deleterious mutations are eliminated from the population.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, when deleterious mutations are eliminated from the population by selection, so are the haplotypes on which they lie. This process too reduces diversity levels near selected sites, in a phenomenon known as 'background selection' (Charlesworth et al., 1993; Hudson and Kaplan, 1995; Nordborg et al., 1996; Comeron and Kreitman, 2002; Good et al., 2014; Cvijovi\u0107 et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to theoretical work defining background selection.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:40.410234Z"
+    },
+    {
+      "id": "29ade7f0-a362-4aa0-8de7-5bf351fc2aaf",
+      "content_id": "be364c46-19e9-4d13-820a-a22d57dc878f",
+      "claim_id": "C12",
+      "claim": "Selection causes a greater reduction in levels of linked neutral genetic diversity in regions with lower rates of recombination.",
+      "claim_type": "EXPLICIT",
+      "source": "Because the lengths of the haplotypes associated with selected alleles depend on the recombination rate, selection causes a greater reduction in levels of linked neutral genetic diversity in regions with lower rates of recombination or a greater density of selected sites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on theoretical understanding of how recombination affects haplotype lengths.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:40.410234Z"
+    },
+    {
+      "id": "2e4ea22f-88aa-48fc-ba89-06f4139da5e6",
+      "content_id": "be364c46-19e9-4d13-820a-a22d57dc878f",
+      "claim_id": "C13",
+      "claim": "Selection causes a greater reduction in levels of linked neutral genetic diversity in regions with a greater density of selected sites.",
+      "claim_type": "EXPLICIT",
+      "source": "Because the lengths of the haplotypes associated with selected alleles depend on the recombination rate, selection causes a greater reduction in levels of linked neutral genetic diversity in regions with lower rates of recombination or a greater density of selected sites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on theoretical understanding of linked selection effects.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:40.410234Z"
+    },
+    {
+      "id": "92c17799-8997-48b9-83f1-924a5db0bda2",
+      "content_id": "be364c46-19e9-4d13-820a-a22d57dc878f",
+      "claim_id": "C14",
+      "claim": "The predicted relationships between selection and diversity levels have been observed in numerous taxa, including plants, Drosophila, rodents, and primates.",
+      "claim_type": "EXPLICIT",
+      "source": "These predicted relationships have been observed in numerous taxa, including plants, Drosophila, rodents, and primates, establishing that the effects of linked selection are widespread (Begun and Aquadro, 1992; Nachman, 1997; Payseur and Nachman, 2002; Nordborg et al., 2005; Wright et al., 2006; Andolfatto, 2007; Begun et al., 2007; Macpherson et al., 2007; Wright and Andolfatto, 2008; Cai et al., 2009; Sella et al., 2009; Cutter and Payseur, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to empirical studies across taxa.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:40.410234Z"
+    },
+    {
+      "id": "4f3bf863-1e7b-43ba-9bbc-e36c6a558a1a",
+      "content_id": "be364c46-19e9-4d13-820a-a22d57dc878f",
+      "claim_id": "C15",
+      "claim": "McVicker et al., 2009 showed that a model of background selection fits variation in human-chimpanzee divergence levels along the genome remarkably well.",
+      "claim_type": "EXPLICIT",
+      "source": "This pioneering paper showed that a model of background selection fits variation in human-chimpanzee divergence levels along the genome remarkably well, with only a few parameters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This refers to findings from a cited previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:40.410234Z"
+    },
+    {
+      "id": "e52a578d-c92e-4dca-9749-48eb82c53b40",
+      "content_id": "be364c46-19e9-4d13-820a-a22d57dc878f",
+      "claim_id": "C16",
+      "claim": "The estimate of the rate of deleterious mutations from McVicker et al., 2009 was unrealistically high\u2014substantially greater than the upper limit based on estimates of the total mutation rate per site in humans.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the estimate of the rate of deleterious mutations underlying the effects of background selection was unrealistically high\u2014substantially greater than the upper limit based on estimates of the total mutation rate per site in humans (Kong et al., 2012; Besenbacher et al., 2016; Appendix 1 Section 5).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an evaluation based on comparison with mutation rate estimates from cited studies.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:40.410234Z"
+    },
+    {
+      "id": "3a4004c5-d840-4109-a9b3-a4b08ab4c4da",
+      "content_id": "be364c46-19e9-4d13-820a-a22d57dc878f",
+      "claim_id": "C17",
+      "claim": "McVicker et al., 2009 suggested that their model might be soaking up effects of selective sweeps.",
+      "claim_type": "EXPLICIT",
+      "source": "In light of this finding, McVicker et al., 2009 suggested that the model might be soaking up effects of other modes of selection, particularly those of selective sweeps (McVicker et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis from a cited previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:40.410234Z"
+    },
+    {
+      "id": "7e676131-4f10-4900-9a4a-3d7656783b01",
+      "content_id": "be364c46-19e9-4d13-820a-a22d57dc878f",
+      "claim_id": "C18",
+      "claim": "Subsequent work indicated that selective sweeps had little effect on diversity levels in humans.",
+      "claim_type": "EXPLICIT",
+      "source": "Subsequent work indicated that selective sweeps had little effect on diversity levels in humans (Coop et al., 2009; Hernandez et al., 2011), however, with no more of a reduction in diversity around plausible targets of positive selection (nonsynonymous substitutions) than around sites assumed to be predominantly neutral (synonymous substitutions) (Coop et al., 2009; Hernandez et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on findings from cited previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:40.410234Z"
+    },
+    {
+      "id": "6e2f92c2-0eeb-4032-8a34-ad44465912d4",
+      "content_id": "be364c46-19e9-4d13-820a-a22d57dc878f",
+      "claim_id": "C19",
+      "claim": "There is no more of a reduction in diversity around nonsynonymous substitutions than around synonymous substitutions.",
+      "claim_type": "EXPLICIT",
+      "source": "Subsequent work indicated that selective sweeps had little effect on diversity levels in humans (Coop et al., 2009; Hernandez et al., 2011), however, with no more of a reduction in diversity around plausible targets of positive selection (nonsynonymous substitutions) than around sites assumed to be predominantly neutral (synonymous substitutions) (Coop et al., 2009; Hernandez et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from cited previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:40.410234Z"
+    },
+    {
+      "id": "24a8c7f1-25e3-4ed3-acdf-6d39a78fb71c",
+      "content_id": "be364c46-19e9-4d13-820a-a22d57dc878f",
+      "claim_id": "C20",
+      "claim": "It was suggested that background selection causes more of a reduction in diversity around synonymous than nonsynonymous substitutions on average.",
+      "claim_type": "EXPLICIT",
+      "source": "Yet, the interpretation of these findings was contested: it was suggested that on average, background selection causes more of a reduction in diversity around synonymous than nonsynonymous substitutions, and consequently that the comparison between the two types of sites may obscure the reduction due to sweeps around nonsynonymous substitutions (Enard et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis from a cited study contesting previous interpretations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:40.410234Z"
+    },
+    {
+      "id": "a88d561b-704a-4e2a-85be-c9f6c2d8a832",
+      "content_id": "be364c46-19e9-4d13-820a-a22d57dc878f",
+      "claim_id": "C21",
+      "claim": "The map of predicted background selection effects from McVicker et al., 2009 provided poor quantitative fits of diversity levels around both synonymous and nonsynonymous substitutions.",
+      "claim_type": "EXPLICIT",
+      "source": "The map of predicted background selection effects offered little help in evaluating this hypothesis, because it provided poor quantitative fits of diversity levels around both synonymous and nonsynonymous substitutions (Hernandez et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from a cited previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:40.410234Z"
+    },
+    {
+      "id": "6802213f-2787-40f7-8926-ccdc2a853525",
+      "content_id": "be364c46-19e9-4d13-820a-a22d57dc878f",
+      "claim_id": "C22",
+      "claim": "The study analyzes autosomal polymorphism data from 26 human populations collected in Phase III of the 1000 Genomes Project.",
+      "claim_type": "EXPLICIT",
+      "source": "To infer the effects of background selection and selective sweeps on human diversity levels, we analyze autosomal polymorphism data from 26 human populations, collected in Phase III of the 1000 Genomes Project (Auton et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data source used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:40.410234Z"
+    },
+    {
+      "id": "34fe3d35-9af4-41db-bec7-933397273f81",
+      "content_id": "be364c46-19e9-4d13-820a-a22d57dc878f",
+      "claim_id": "C23",
+      "claim": "The study focuses on data from 108 genomes sampled from the Yoruba population (YRI).",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we focus on data from 108 genomes sampled from the Yoruba population (YRI), but we get similar results for the other populations (Appendix 1 Sections 7 and 9).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the primary sample used in the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:40.410234Z"
+    },
+    {
+      "id": "b42e2e72-c892-4c0b-a4d1-93cbfab5f6d2",
+      "content_id": "be364c46-19e9-4d13-820a-a22d57dc878f",
+      "claim_id": "C24",
+      "claim": "Similar results are obtained for other populations besides YRI.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we focus on data from 108 genomes sampled from the Yoruba population (YRI), but we get similar results for the other populations (Appendix 1 Sections 7 and 9).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from additional analyses in the appendix.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:40.410234Z"
+    },
+    {
+      "id": "69041f5b-2c08-4f27-8e10-6e5228530476",
+      "content_id": "be364c46-19e9-4d13-820a-a22d57dc878f",
+      "claim_id": "C25",
+      "claim": "The study focuses on non-genic autosomal sites that are the least conserved in a multiple sequence alignment of 25 supra-primates to estimate diversity levels at neutral sites.",
+      "claim_type": "EXPLICIT",
+      "source": "To estimate diversity levels at neutral sites, we focus on non-genic autosomal sites that are the least conserved in a multiple sequence alignment of 25 supra-primates (see Appendix 1 Section 3.1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodological approach for identifying neutral sites.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:40.410234Z"
+    },
+    {
+      "id": "84244117-36f5-47f2-98b9-0cebec72a920",
+      "content_id": "be364c46-19e9-4d13-820a-a22d57dc878f",
+      "claim_id": "C26",
+      "claim": "The study uses estimates of the relative mutation rate for contiguous, non-overlapping blocks of 6000 putatively neutral sites, obtained from substitution rates in an eight-primate phylogeny.",
+      "claim_type": "EXPLICIT",
+      "source": "To account for variation in mutation rates among neutral sites, we use estimates of the relative mutation rate for contiguous, non-overlapping blocks of 6000 putatively neutral sites, obtained from substitution rates in an eight-primate phylogeny (see Appendix 1 Section 3.3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodological approach for accounting for mutation rate variation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:40.410234Z"
+    },
+    {
+      "id": "d0ca6b24-648d-4c7c-a046-23c958b06e17",
+      "content_id": "be364c46-19e9-4d13-820a-a22d57dc878f",
+      "claim_id": "C27",
+      "claim": "The study uses a high-resolution genetic map inferred from ancestry switches in African-Americans.",
+      "claim_type": "EXPLICIT",
+      "source": "To minimize the confounding of recombination rate estimates and diversity levels, we use a high-resolution genetic map inferred from ancestry switches in African-Americans (Hinch et al., 2011), which is highly correlated with other maps (Hinch et al., 2011) but is less dependent on diversity levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the recombination map used in the analysis.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:40.410234Z"
+    },
+    {
+      "id": "352fa126-8ca3-413e-a755-0b2fc366f64f",
+      "content_id": "be364c46-19e9-4d13-820a-a22d57dc878f",
+      "claim_id": "C28",
+      "claim": "The genetic map from Hinch et al., 2011 is highly correlated with other maps but is less dependent on diversity levels.",
+      "claim_type": "EXPLICIT",
+      "source": "To minimize the confounding of recombination rate estimates and diversity levels, we use a high-resolution genetic map inferred from ancestry switches in African-Americans (Hinch et al., 2011), which is highly correlated with other maps (Hinch et al., 2011) but is less dependent on diversity levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a property of the genetic map cited from previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:40.410234Z"
+    },
+    {
+      "id": "d1d028c6-359a-48a7-8bff-9cf28dd7e82f",
+      "content_id": "be364c46-19e9-4d13-820a-a22d57dc878f",
+      "claim_id": "C29",
+      "claim": "The study takes as putative targets of purifying selection the 6% of autosomal sites estimated as most likely to be under selective constraint in the best-fitting models.",
+      "claim_type": "EXPLICIT",
+      "source": "In both cases, we take as putative targets of purifying selection the 6% of autosomal sites estimated as most likely to be under selective constraint.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodological choice for identifying selection targets.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:40.410234Z"
+    },
+    {
+      "id": "52e05133-b995-4f55-bb34-a975ccef2395",
+      "content_id": "be364c46-19e9-4d13-820a-a22d57dc878f",
+      "claim_id": "C30",
+      "claim": "One model uses phastCons conservation scores obtained for a 99-vertebrate phylogeny that excludes humans to identify constrained sites.",
+      "claim_type": "EXPLICIT",
+      "source": "In one, we choose these sites using phastCons conservation scores obtained for a 99-vertebrate phylogeny that excludes humans (Siepel et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes one approach for identifying constrained sites.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:40.410234Z"
+    },
+    {
+      "id": "e8324188-73f7-4cda-8104-7b0066dbbbd9",
+      "content_id": "be364c46-19e9-4d13-820a-a22d57dc878f",
+      "claim_id": "C31",
+      "claim": "Another model relies on CADD scores, which are based primarily on phylogenetic conservation but also on information from functional genomic assays.",
+      "claim_type": "EXPLICIT",
+      "source": "In the other, we rely on Combined Annotation-Dependent Depletion (CADD) scores, which are based primarily on phylogenetic conservation (excluding humans) but also on information from functional genomic assays (Kircher et al., 2014; Rentzsch et al., 2019); to avoid circularity, we use scores that were generated without the McVicker et al., 2009 B-map as input (see Appendix 1 Section 2.5).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes another approach for identifying constrained sites.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:40.410234Z"
+    },
+    {
+      "id": "761936e2-1e38-4642-91aa-b034bad65cfd",
+      "content_id": "be364c46-19e9-4d13-820a-a22d57dc878f",
+      "claim_id": "C32",
+      "claim": "The CADD scores used were generated without the McVicker et al., 2009 B-map as input to avoid circularity.",
+      "claim_type": "EXPLICIT",
+      "source": "In the other, we rely on Combined Annotation-Dependent Depletion (CADD) scores, which are based primarily on phylogenetic conservation (excluding humans) but also on information from functional genomic assays (Kircher et al., 2014; Rentzsch et al., 2019); to avoid circularity, we use scores that were generated without the McVicker et al., 2009 B-map as input (see Appendix 1 Section 2.5).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a methodological precaution to avoid circular reasoning.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:40.410234Z"
+    },
+    {
+      "id": "43a78966-ddd5-4265-944b-d4e258acf3df",
+      "content_id": "be364c46-19e9-4d13-820a-a22d57dc878f",
+      "claim_id": "C33",
+      "claim": "Over-fitting has a negligible effect on the results.",
+      "claim_type": "EXPLICIT",
+      "source": "Over-fitting has a negligible effect on our results (also see Appendix 1 Section 6.1 and Appendix 1\u2014figure 48), as expected given that the model has few parameters and the large amount of data (7 fitted parameters in this case and 2580 Mb blocks of ~653M putatively neutral sites spread over ~2600 LD blocks; Berisa and Pickrell, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the study's analysis, supported by the model structure and data size.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:40.410234Z"
+    },
+    {
+      "id": "35932300-3285-4065-8be4-b1e5fa8ce53c",
+      "content_id": "be364c46-19e9-4d13-820a-a22d57dc878f",
+      "claim_id": "C34",
+      "claim": "The model has 7 fitted parameters and uses 2580 Mb blocks of ~653M putatively neutral sites spread over ~2600 LD blocks.",
+      "claim_type": "EXPLICIT",
+      "source": "Over-fitting has a negligible effect on our results (also see Appendix 1 Section 6.1 and Appendix 1\u2014figure 48), as expected given that the model has few parameters and the large amount of data (7 fitted parameters in this case and 2580 Mb blocks of ~653M putatively neutral sites spread over ~2600 LD blocks; Berisa and Pickrell, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the model complexity and data size used in the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:40.410234Z"
+    },
+    {
+      "id": "8509e3d1-5c88-4777-978b-952a74abd1a5",
+      "content_id": "be364c46-19e9-4d13-820a-a22d57dc878f",
+      "claim_id": "C35",
+      "claim": "Predictions based on CADD scores account for 60% of the variance in diversity levels at the 1 Mb scale.",
+      "claim_type": "EXPLICIT",
+      "source": "at the 1 Mb scale, the predictions based on CADD scores account for 60% of the variance in diversity levels compared to 32% explained by previous work (McVicker et al., 2009; see Appendix 1 Section 4.6).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from the study's analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:40.410234Z"
+    },
+    {
+      "id": "2e796f04-b644-47af-b44a-e32ece62870c",
+      "content_id": "be364c46-19e9-4d13-820a-a22d57dc878f",
+      "claim_id": "C36",
+      "claim": "Previous work by McVicker et al., 2009 explained 32% of the variance in diversity levels at the 1 Mb scale.",
+      "claim_type": "EXPLICIT",
+      "source": "at the 1 Mb scale, the predictions based on CADD scores account for 60% of the variance in diversity levels compared to 32% explained by previous work (McVicker et al., 2009; see Appendix 1 Section 4.6).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison with results from a cited previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:40.410234Z"
+    },
+    {
+      "id": "c362168c-b8c3-46de-a0f0-5d8d15bb502b",
+      "content_id": "be364c46-19e9-4d13-820a-a22d57dc878f",
+      "claim_id": "C37",
+      "claim": "The study's inference should be able to tease apart the effects of selective sweeps because their effects, unlike those of background selection, should be centered around the locations of substitutions.",
+      "claim_type": "EXPLICIT",
+      "source": "Our inference should be able to tease apart the effects of selective sweeps, primarily because their effects, unlike those of background selection, should be centered around the locations of substitutions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on theoretical expectations about the spatial patterns of different selection modes.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:40.410234Z"
+    },
+    {
+      "id": "5d6f44eb-9ee7-4805-824e-9cd263cb2c14",
+      "content_id": "be364c46-19e9-4d13-820a-a22d57dc878f",
+      "claim_id": "C38",
+      "claim": "The study expects to capture the effects of selective sweeps, be they hard, partial or soft, so long as they resulted in substitutions and substantially affected diversity levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, as noted, we expect to capture the effects of selective sweeps, be they hard, partial or soft (Smith and Haigh, 1974; Kaplan et al., 1989; Hermisson and Pennings, 2005; Przeworski et al., 2005; Pennings and Hermisson, 2006a; Pennings and Hermisson, 2006b; Coop and Ralph, 2012; Berg and Coop, 2015), so long as they resulted in substitutions and substantially affected diversity levels (see Coop and Ralph, 2012 and SOM Section D in Elyashiv et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on theoretical understanding and previous methodological work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:40.410234Z"
+    },
+    {
+      "id": "6a7a589f-390f-46da-b5a0-839c4bc0602a",
+      "content_id": "be364c46-19e9-4d13-820a-a22d57dc878f",
+      "claim_id": "C39",
+      "claim": "Previous work that applied a similar methodology to data from Drosophila melanogaster was able to identify distinct effects of background selection and sweeps.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, previous work that applied a similar methodology to data from Drosophila melanogaster was able to identify distinct effects of background selection and sweeps (Elyashiv et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from a cited previous study using similar methods.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:40.410234Z"
+    },
+    {
+      "id": "39c427fd-5b31-41fa-8113-db47f84c28a1",
+      "content_id": "be364c46-19e9-4d13-820a-a22d57dc878f",
+      "claim_id": "C40",
+      "claim": "Regardless of the types of substitutions considered, incorporating sweeps does not improve the fit.",
+      "claim_type": "EXPLICIT",
+      "source": "Regardless of the types of substitutions considered, incorporating sweeps does not improve our fit.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the study's model comparison analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:40.410234Z"
+    },
+    {
+      "id": "e0b57c59-a563-40cf-9f14-817267e6fc63",
+      "content_id": "be364c46-19e9-4d13-820a-a22d57dc878f",
+      "claim_id": "C41",
+      "claim": "The estimates of the proportion of substitutions resulting in sweeps with discernable effects on neutral diversity is approximately 0 in all cases.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, in all cases, our estimates of the proportion of substitutions resulting in sweeps with discernable effects on neutral diversity is approximately 0.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from the study's parameter estimation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:40.410234Z"
+    },
+    {
+      "id": "912fd38d-f3b4-4342-938b-5aa73a9d7ebb",
+      "content_id": "be364c46-19e9-4d13-820a-a22d57dc878f",
+      "claim_id": "C42",
+      "claim": "The model of background selection alone provides good quantitative fits to the diversity levels observed around different genomic features.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, in contrast to previous attempts (McVicker et al., 2009; Hernandez et al., 2011), our model of background selection alone provides good quantitative fits to the diversity levels observed around different genomic features and in particular around nonsynonymous and synonymous substitutions (Figure 3 and Appendix 1\u2014figure 49).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the study's analysis, shown in figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:40.410234Z"
+    },
+    {
+      "id": "6325ce99-fbb1-4466-bff7-dbc2fe7f3598",
+      "content_id": "be364c46-19e9-4d13-820a-a22d57dc878f",
+      "claim_id": "C43",
+      "claim": "The model of background selection alone provides good quantitative fits to the diversity levels observed around nonsynonymous and synonymous substitutions.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, in contrast to previous attempts (McVicker et al., 2009; Hernandez et al., 2011), our model of background selection alone provides good quantitative fits to the diversity levels observed around different genomic features and in particular around nonsynonymous and synonymous substitutions (Figure 3 and Appendix 1\u2014figure 49).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the study's analysis, shown in figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:40.410234Z"
+    },
+    {
+      "id": "09dbb1ec-9978-415c-a03c-1510eabaacb2",
+      "content_id": "be364c46-19e9-4d13-820a-a22d57dc878f",
+      "claim_id": "C44",
+      "claim": "The results refute the hypothesis that reduced diversity levels around nonsynonymous substitutions in humans reflect 'masked' effects of selective sweeps.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these results refute the hypothesis that reduced diversity levels around nonsynonymous substitutions in humans reflect 'masked' effects of selective sweeps (Enard et al., 2014); more generally, they indicate that selective sweeps resulting in substitutions had little effect on diversity levels in contemporary humans.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the study's findings, refuting a hypothesis from a cited study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:40.410234Z"
+    },
+    {
+      "id": "28b95728-8e86-42f7-86a1-41841c78145b",
+      "content_id": "be364c46-19e9-4d13-820a-a22d57dc878f",
+      "claim_id": "C45",
+      "claim": "Selective sweeps resulting in substitutions had little effect on diversity levels in contemporary humans.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these results refute the hypothesis that reduced diversity levels around nonsynonymous substitutions in humans reflect 'masked' effects of selective sweeps (Enard et al., 2014); more generally, they indicate that selective sweeps resulting in substitutions had little effect on diversity levels in contemporary humans.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the study's findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:40.410234Z"
+    },
+    {
+      "id": "ab0ec02c-819c-43ca-b836-1e492008e7d4",
+      "content_id": "be364c46-19e9-4d13-820a-a22d57dc878f",
+      "claim_id": "C46",
+      "claim": "The lack of sweeps does not imply that adaptation was rare in recent human evolution.",
+      "claim_type": "EXPLICIT",
+      "source": "The lack of sweeps does not imply that adaptation was rare in recent human evolution, as instead, much of it may have been driven by selection on genetically complex traits, that is, traits with heritable variation arising from many segregating loci (Coop et al., 2009; Pritchard et al., 2010; Pritchard and Di Rienzo, 2010; Hernandez et al., 2011; Sella and Barton, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the findings, supported by citations to theoretical work.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:40.410234Z"
+    },
+    {
+      "id": "74e6652e-f19a-4c1f-ae22-7a7b3153d9da",
+      "content_id": "be364c46-19e9-4d13-820a-a22d57dc878f",
+      "claim_id": "C47",
+      "claim": "Much of adaptation in recent human evolution may have been driven by selection on genetically complex traits.",
+      "claim_type": "EXPLICIT",
+      "source": "The lack of sweeps does not imply that adaptation was rare in recent human evolution, as instead, much of it may have been driven by selection on genetically complex traits, that is, traits with heritable variation arising from many segregating loci (Coop et al., 2009; Pritchard et al., 2010; Pritchard and Di Rienzo, 2010; Hernandez et al., 2011; Sella and Barton, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis supported by citations to previous work.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:40.410234Z"
+    },
+    {
+      "id": "f5b340e0-0e0f-4f89-8222-dfaa439621e8",
+      "content_id": "be364c46-19e9-4d13-820a-a22d57dc878f",
+      "claim_id": "C48",
+      "claim": "Complex traits are often subject to ongoing stabilizing selection.",
+      "claim_type": "EXPLICIT",
+      "source": "Complex traits are often subject to ongoing stabilizing selection, that is, selection that acts to maintain traits near an optimal value (Wright, 1935; Robertson, 1966; Walsh and Lynch, 2018; Sella and Barton, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to theoretical work on quantitative genetics.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:40.410234Z"
+    },
+    {
+      "id": "26d0aae2-6a8f-48c3-b907-d336acf90de7",
+      "content_id": "be364c46-19e9-4d13-820a-a22d57dc878f",
+      "claim_id": "C49",
+      "claim": "Under plausible conditions, the adaptive response to directional selection on complex traits is expected to be highly polygenic.",
+      "claim_type": "EXPLICIT",
+      "source": "Under plausible conditions, we expect the adaptive response to directional selection to be highly polygenic, with phenotypic adaptation to new optima achieved rapidly, via tiny increases to the frequency of many alleles that change the traits in the direction favored by selection (Hayward and Sella, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on theoretical work cited.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:40.410234Z"
+    },
+    {
+      "id": "409cce14-56c9-4d06-8bfb-49c871f4681b",
+      "content_id": "be364c46-19e9-4d13-820a-a22d57dc878f",
+      "claim_id": "C50",
+      "claim": "Over the long run, tiny frequency changes in polygenic adaptation cause a tiny excess of fixations of the alleles that were initially favored by selection.",
+      "claim_type": "EXPLICIT",
+      "source": "Over the long run, these tiny frequency changes cause a tiny excess of fixations of the alleles that were initially favored by selection (Hayward and Sella, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on theoretical work cited.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:40.410234Z"
+    },
+    {
+      "id": "d11ec1e5-3441-45a5-9f6b-2ac6aee5440a",
+      "content_id": "be364c46-19e9-4d13-820a-a22d57dc878f",
+      "claim_id": "C51",
+      "claim": "Polygenic adaptation introduces only minor perturbations to allele trajectories compared to the case in which selection pressures on traits remain constant.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, polygenic adaptation introduces only minor perturbations to allele trajectories compared to the case in which selection pressures on traits remain constant.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the cited theoretical work.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:40.410234Z"
+    },
+    {
+      "id": "621fb409-f195-4158-bf70-6cad588cdf9f",
+      "content_id": "be364c46-19e9-4d13-820a-a22d57dc878f",
+      "claim_id": "C52",
+      "claim": "The alleles that eventually fix in polygenic adaptation do so extremely slowly, with trajectories that are predominated by weak selection and drift.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, the alleles that eventually fix do so extremely slowly, with trajectories that are predominated by weak selection and drift (Hayward and Sella, 2019), implying that their effects on linked diversity levels should be negligible (Barton, 2000; Thornton, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on theoretical work cited.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:40.410234Z"
+    },
+    {
+      "id": "df91cd1d-8978-4b53-be60-cf8963b72d1d",
+      "content_id": "be364c46-19e9-4d13-820a-a22d57dc878f",
+      "claim_id": "C53",
+      "claim": "The effects of alleles fixing via polygenic adaptation on linked diversity levels should be negligible.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, the alleles that eventually fix do so extremely slowly, with trajectories that are predominated by weak selection and drift (Hayward and Sella, 2019), implying that their effects on linked diversity levels should be negligible (Barton, 2000; Thornton, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on theoretical work cited.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:40.410234Z"
+    },
+    {
+      "id": "4a53ac15-3454-4688-b95e-ef59cc9ba527",
+      "content_id": "be364c46-19e9-4d13-820a-a22d57dc878f",
+      "claim_id": "C54",
+      "claim": "Ongoing stabilizing selection on complex traits could have a substantial effect on linked, neutral diversity levels.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, ongoing stabilizing selection on complex traits could have a substantial effect on linked, neutral diversity levels (Hayward and Sella, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on theoretical work cited.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:40.410234Z"
+    },
+    {
+      "id": "f698d45f-bde0-4e7c-adb2-39063208b069",
+      "content_id": "be364c46-19e9-4d13-820a-a22d57dc878f",
+      "claim_id": "C55",
+      "claim": "Stabilizing selection induces purifying selection against minor alleles that affect complex traits.",
+      "claim_type": "EXPLICIT",
+      "source": "Stabilizing selection induces purifying selection against minor alleles that affect complex traits (Wright, 1931; Robertson, 1966; Simons et al., 2018), and purifying selection on these alleles could be a major source of background selection (Hayward and Sella, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on theoretical work cited.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:40.410234Z"
+    },
+    {
+      "id": "feadded9-2119-43c1-b9d1-34b4050ec39a",
+      "content_id": "be364c46-19e9-4d13-820a-a22d57dc878f",
+      "claim_id": "C56",
+      "claim": "Purifying selection on alleles affecting complex traits could be a major source of background selection.",
+      "claim_type": "EXPLICIT",
+      "source": "Stabilizing selection induces purifying selection against minor alleles that affect complex traits (Wright, 1931; Robertson, 1966; Simons et al., 2018), and purifying selection on these alleles could be a major source of background selection (Hayward and Sella, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis based on theoretical work cited.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:40.410234Z"
+    },
+    {
+      "id": "0a9e3789-27f9-4745-9f7a-ed5a7ccdaeaf",
+      "content_id": "be364c46-19e9-4d13-820a-a22d57dc878f",
+      "claim_id": "C57",
+      "claim": "If much of the selection in humans is driven by ongoing and changing selection pressures on complex traits, background selection may be expected to be the dominant mode of linked selection.",
+      "claim_type": "EXPLICIT",
+      "source": "In other words, if much of the selection in humans is driven by ongoing and changing selection pressures on complex traits, we may expect background selection to be the dominant mode of linked selection, as our results indicate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference connecting theoretical expectations to the study's findings.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:40.410234Z"
+    },
+    {
+      "id": "1233af05-fc2c-4d39-8580-5aa9d7617ffc",
+      "content_id": "be364c46-19e9-4d13-820a-a22d57dc878f",
+      "claim_id": "C58",
+      "claim": "Previous work found selection on non-exonic regions to contribute little to background selection effects.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous work found selection on non-exonic regions to contribute little, to the extent that removing conserved non-exonic sites from a model of background selection had little effect on predicted diversity levels (McVicker et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from a cited previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:40.410234Z"
+    },
+    {
+      "id": "345add89-5d41-4297-8edc-c7e86a087133",
+      "content_id": "be364c46-19e9-4d13-820a-a22d57dc878f",
+      "claim_id": "C59",
+      "claim": "When only conserved exonic regions are included in the inference, predictive ability is considerably diminished.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, when we include only conserved exonic regions in our inference, our predictive ability is considerably diminished (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the study's analysis, shown in a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:40.410234Z"
+    },
+    {
+      "id": "987cc860-0a90-4243-974d-8e698a558c2f",
+      "content_id": "be364c46-19e9-4d13-820a-a22d57dc878f",
+      "claim_id": "C60",
+      "claim": "In models that include separate selection parameters for conserved exonic and non-exonic regions, purifying selection on non-exonic regions accounts for most of the reduction in linked neutral diversity.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, in models that include separate selection parameters for conserved exonic and non-exonic regions, purifying selection on non-exonic regions accounts for most of the reduction in linked neutral diversity (Appendix 1 Section 4.3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the study's model comparison analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:40.410234Z"
+    },
+    {
+      "id": "b1842675-d740-46f1-9838-6dbfb4cccb74",
+      "content_id": "be364c46-19e9-4d13-820a-a22d57dc878f",
+      "claim_id": "C61",
+      "claim": "In the model with the top 6% of phastCons scores, ~84% of selected sites and ~76% of deleterious mutations are non-exonic.",
+      "claim_type": "EXPLICIT",
+      "source": "Our estimates suggest that ~80% of deleterious mutations affecting neutral diversity occur in non-exonic regions (e.g. in the model with the top 6% of phastCons scores, ~84% of selected sites and ~76% of deleterious mutations are non-exonic; with the top 6% of CADD scores, ~83% of selected sites and ~85% of deleterious mutations are non-exonic; see Appendix 1 Sections 4.3 and 4.6).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative estimate from the study's model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:40.410234Z"
+    },
+    {
+      "id": "c9f2779f-226b-41c9-a72c-7b359b27ca8b",
+      "content_id": "be364c46-19e9-4d13-820a-a22d57dc878f",
+      "claim_id": "C62",
+      "claim": "In the model with the top 6% of CADD scores, ~83% of selected sites and ~85% of deleterious mutations are non-exonic.",
+      "claim_type": "EXPLICIT",
+      "source": "Our estimates suggest that ~80% of deleterious mutations affecting neutral diversity occur in non-exonic regions (e.g. in the model with the top 6% of phastCons scores, ~84% of selected sites and ~76% of deleterious mutations are non-exonic; with the top 6% of CADD scores, ~83% of selected sites and ~85% of deleterious mutations are non-exonic; see Appendix 1 Sections 4.3 and 4.6).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative estimate from the study's model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:40.410234Z"
+    },
+    {
+      "id": "1afbb4a7-3dc9-4c1c-9e2f-40ce7dbd712e",
+      "content_id": "be364c46-19e9-4d13-820a-a22d57dc878f",
+      "claim_id": "C63",
+      "claim": "The estimates of the average strength of selection differ between exonic and non-exonic regions.",
+      "claim_type": "EXPLICIT",
+      "source": "Our estimates of the average strength of selection differ between exonic and non-exonic regions, but because the total reduction in diversity levels caused by background selection is fairly insensitive to the strength of selection (with the reduction being more localized for weakly selected mutations than for strong ones), the proportions of deleterious mutations that occur in these regions approximate their relative effects on neutral diversity levels (Hudson, 1994; see Appendix 1 Sections 4.3, 4.4, and 4.6).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the study's parameter estimation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:40.410234Z"
+    },
+    {
+      "id": "9f26d939-3970-4ceb-b646-9d81e1037e9b",
+      "content_id": "be364c46-19e9-4d13-820a-a22d57dc878f",
+      "claim_id": "C64",
+      "claim": "The total reduction in diversity levels caused by background selection is fairly insensitive to the strength of selection.",
+      "claim_type": "EXPLICIT",
+      "source": "Our estimates of the average strength of selection differ between exonic and non-exonic regions, but because the total reduction in diversity levels caused by background selection is fairly insensitive to the strength of selection (with the reduction being more localized for weakly selected mutations than for strong ones), the proportions of deleterious mutations that occur in these regions approximate their relative effects on neutral diversity levels (Hudson, 1994; see Appendix 1 Sections 4.3, 4.4, and 4.6).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on theoretical understanding cited.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:40.410234Z"
+    },
+    {
+      "id": "d7b97f42-a0ec-4672-8dd3-09c85916162e",
+      "content_id": "be364c46-19e9-4d13-820a-a22d57dc878f",
+      "claim_id": "C65",
+      "claim": "Purifying selection on non-exonic regions accounts for ~80% of the reduction in linked neutral diversity.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, our estimates suggest that purifying selection on non-exonic regions accounts for ~80% of the reduction in linked neutral diversity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the study's estimates.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:40.410234Z"
+    },
+    {
+      "id": "b3a39e9b-68f4-4382-9a20-bfaa389cbbba",
+      "content_id": "be364c46-19e9-4d13-820a-a22d57dc878f",
+      "claim_id": "C66",
+      "claim": "Including separate selection parameters for conserved exonic and non-exonic regions does not improve predictions.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, including separate selection parameters for conserved exonic and non-exonic regions does not improve our predictions (Appendix 1 Section 4.3 and Appendix 1\u2014figure 19).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the study's model comparison analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:40.410234Z"
+    },
+    {
+      "id": "4348c17e-eeca-479d-a24a-39258d73df62",
+      "content_id": "be364c46-19e9-4d13-820a-a22d57dc878f",
+      "claim_id": "C67",
+      "claim": "Incorporating additional functional genomic information does little to improve predictions.",
+      "claim_type": "EXPLICIT",
+      "source": "Incorporating additional functional genomic information also does little to improve our predictions (Appendix 1 Sections 4.2 and 4.4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the study's model comparison analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:40.410234Z"
+    },
+    {
+      "id": "0a871f3a-ea58-47be-93a8-ad4c01073776",
+      "content_id": "be364c46-19e9-4d13-820a-a22d57dc878f",
+      "claim_id": "C68",
+      "claim": "When phylogenetic conservation is not incorporated but separate selection parameters are included for coding regions and ENCODE cCRE classes, predictive ability is considerably diminished.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, when we do not incorporate information on phylogenetic conservation, but include separate selection parameters for coding regions and for each of the Encyclopedia of DNA Elements (ENCODE) classes of candidate cis-regulatory elements (cCRE) (Moore et al., 2020), our predictive ability is considerably diminished (Appendix 1 Section 4.4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the study's model comparison analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:40.410234Z"
+    },
+    {
+      "id": "4fe0d3b9-6eea-44a1-953c-dbae20bcdd42",
+      "content_id": "be364c46-19e9-4d13-820a-a22d57dc878f",
+      "claim_id": "C69",
+      "claim": "Using CADD scores offers little improvement over relying on conservation alone.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, using CADD scores (Kircher et al., 2014; Rentzsch et al., 2019), which augment information on phylogenetic conservation with functional genomic information, offers little improvement over relying on conservation alone (e.g., explaining 59.9% compared to 59.7% of the variance in diversity levels in 1 Mb windows, a difference that is not statistically significant; Appendix 1 Section 6).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the study's model comparison analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:40.410234Z"
+    },
+    {
+      "id": "e9d120b6-2649-42d1-9adf-3496f430a4a9",
+      "content_id": "be364c46-19e9-4d13-820a-a22d57dc878f",
+      "claim_id": "C70",
+      "claim": "Functional annotations that do not incorporate phylogenetic conservation appear to provide poorer predictions of the effects of linked selection.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, at present, functional annotations that do not incorporate phylogenetic conservation appear to provide poorer predictions of the effects of linked selection and those that do, offer little improvement over using conservation alone (see Appendix 1 Sections 4.1\u20134).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the study's model comparison analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:40.410234Z"
+    },
+    {
+      "id": "7853dad1-d288-489f-b6e6-530947633071",
+      "content_id": "be364c46-19e9-4d13-820a-a22d57dc878f",
+      "claim_id": "C71",
+      "claim": "Functional annotations that incorporate phylogenetic conservation offer little improvement over using conservation alone.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, at present, functional annotations that do not incorporate phylogenetic conservation appear to provide poorer predictions of the effects of linked selection and those that do, offer little improvement over using conservation alone (see Appendix 1 Sections 4.1\u20134).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the study's model comparison analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:40.410234Z"
+    },
+    {
+      "id": "6a783313-0753-49b7-adba-db968b59f725",
+      "content_id": "be364c46-19e9-4d13-820a-a22d57dc878f",
+      "claim_id": "C72",
+      "claim": "Predictions based on conservation are fairly insensitive to the phylogenetic depth of the alignments used to infer conservation levels.",
+      "claim_type": "EXPLICIT",
+      "source": "In turn, our predictions based on conservation are fairly insensitive to the phylogenetic depth of the alignments used to infer conservation levels, although we do slightly better using a 99-vertebrate alignment (excluding humans) compared to its monophyletic subsets (e.g. Appendix 1\u2014figure 14 and Appendix 1\u2014figure 33 and Appendix 1 Section 6.2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the study's sensitivity analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:40.410234Z"
+    },
+    {
+      "id": "4830cc8a-bff0-4265-8fa3-f63cfe1ca9fb",
+      "content_id": "be364c46-19e9-4d13-820a-a22d57dc878f",
+      "claim_id": "C73",
+      "claim": "The study does slightly better using a 99-vertebrate alignment (excluding humans) compared to its monophyletic subsets.",
+      "claim_type": "EXPLICIT",
+      "source": "In turn, our predictions based on conservation are fairly insensitive to the phylogenetic depth of the alignments used to infer conservation levels, although we do slightly better using a 99-vertebrate alignment (excluding humans) compared to its monophyletic subsets (e.g. Appendix 1\u2014figure 14 and Appendix 1\u2014figure 33 and Appendix 1 Section 6.2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the study's sensitivity analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:40.410234Z"
+    },
+    {
+      "id": "d4088f90-aabf-4bd4-a9a6-09e8ae73182c",
+      "content_id": "be364c46-19e9-4d13-820a-a22d57dc878f",
+      "claim_id": "C74",
+      "claim": "The best-fitting models are obtained using 5\u20137% of sites with the top CADD or phastCons scores as selection targets.",
+      "claim_type": "EXPLICIT",
+      "source": "Our best-fitting models by a variety of metrics, are obtained using 5\u20137% of sites with the top CADD or phastCons scores as selection targets (Appendix 1\u2014figure 16 and Appendix 1\u2014figure 26).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the study's model optimization analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:40.410234Z"
+    },
+    {
+      "id": "d4f63599-7fee-4b99-bfd8-51b3540df73f",
+      "content_id": "be364c46-19e9-4d13-820a-a22d57dc878f",
+      "claim_id": "C75",
+      "claim": "The percentage of 5-7% of constrained sites is in good accordance with more direct estimates of the proportion of the human genome subject to functional constraint.",
+      "claim_type": "EXPLICIT",
+      "source": "This percentage is in good accordance with more direct estimates of the proportion of the human genome subject to functional constraint (Ward and Kellis, 2012; Rands et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison with estimates from cited previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:40.410234Z"
+    },
+    {
+      "id": "e1c44f4d-c8e7-4572-9c7e-d4e4268da66b",
+      "content_id": "be364c46-19e9-4d13-820a-a22d57dc878f",
+      "claim_id": "C76",
+      "claim": "The deleterious mutation rates estimated for the best-fitting models are plausible.",
+      "claim_type": "EXPLICIT",
+      "source": "Reassuringly, the deleterious mutation rates that we estimate for our best-fitting models are plausible (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an evaluation of the study's parameter estimates, shown in a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:40.410234Z"
+    },
+    {
+      "id": "ffba7506-06c0-47c5-8f0d-fe092e717d21",
+      "content_id": "be364c46-19e9-4d13-820a-a22d57dc878f",
+      "claim_id": "C79",
+      "claim": "The estimates for all of the best-fitting models fall well below the upper bound on the deleterious mutation rate.",
+      "claim_type": "EXPLICIT",
+      "source": "The estimates for all of our best-fitting models fall well below this bound (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the study's parameter estimation, shown in a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:40.410234Z"
+    },
+    {
+      "id": "b81d0063-9f52-4335-8e75-6ac00bc1ff47",
+      "content_id": "be364c46-19e9-4d13-820a-a22d57dc878f",
+      "claim_id": "C80",
+      "claim": "Not every mutation at putatively selected sites will be deleterious.",
+      "claim_type": "EXPLICIT",
+      "source": "This is expected, because not every mutation at putatively selected sites will be deleterious: some sites are misclassified as constrained and some mutations at selected sites are selectively neutral.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on understanding of site classification and mutation effects.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:40.410234Z"
+    },
+    {
+      "id": "f181064d-d623-432f-b1e3-9ff245de31ae",
+      "content_id": "be364c46-19e9-4d13-820a-a22d57dc878f",
+      "claim_id": "C81",
+      "claim": "Some sites are misclassified as constrained.",
+      "claim_type": "EXPLICIT",
+      "source": "This is expected, because not every mutation at putatively selected sites will be deleterious: some sites are misclassified as constrained and some mutations at selected sites are selectively neutral.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the limitations of site classification methods.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:40.410234Z"
+    },
+    {
+      "id": "46eaa81b-fccc-4c35-a260-9d65b3340fb5",
+      "content_id": "be364c46-19e9-4d13-820a-a22d57dc878f",
+      "claim_id": "C82",
+      "claim": "Some mutations at selected sites are selectively neutral.",
+      "claim_type": "EXPLICIT",
+      "source": "This is expected, because not every mutation at putatively selected sites will be deleterious: some sites are misclassified as constrained and some mutations at selected sites are selectively neutral.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on understanding of mutation effects at constrained sites.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:40.410234Z"
+    },
+    {
+      "id": "21e6ec72-6c93-4a1a-917e-ca2696ea6c0b",
+      "content_id": "be364c46-19e9-4d13-820a-a22d57dc878f",
+      "claim_id": "C83",
+      "claim": "The study compares estimates of the proportion of mutations that are deleterious with independent estimates based on the relative reduction in evolutionary rates at putatively selected vs. neutral sites along the human lineage.",
+      "claim_type": "EXPLICIT",
+      "source": "To test whether our estimates of the proportion of mutations that are deleterious are plausible, we compare them with independent estimates based on the relative reduction in evolutionary rates at putatively selected vs. neutral sites along the human lineage (these sets of sites were identified from an alignment that excludes humans; Appendix 1 Sections 3.1, 4.1, and 4.4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a validation approach used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:40.410234Z"
+    },
+    {
+      "id": "0831fd72-b78d-409a-8f59-33fc3db4306b",
+      "content_id": "be364c46-19e9-4d13-820a-a22d57dc878f",
+      "claim_id": "C84",
+      "claim": "The relative reduction in evolutionary rates allows estimation of the proportion of deleterious mutations because deleterious mutations at selected sites rarely fix in the population whereas neutral mutations fix at a much higher rate.",
+      "claim_type": "EXPLICIT",
+      "source": "The relative reduction allows us to estimate the proportion of deleterious mutations because deleterious mutations at selected sites rarely fix in the population whereas neutral mutations fix at a much higher rate, which is the same at selected and neutral sites (Kimura and Crow, 1964).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on theoretical understanding from cited work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:40.410234Z"
+    },
+    {
+      "id": "cf63ef55-d738-4312-a56a-d08720681d0b",
+      "content_id": "be364c46-19e9-4d13-820a-a22d57dc878f",
+      "claim_id": "C85",
+      "claim": "Neutral mutations fix at the same rate at selected and neutral sites.",
+      "claim_type": "EXPLICIT",
+      "source": "The relative reduction allows us to estimate the proportion of deleterious mutations because deleterious mutations at selected sites rarely fix in the population whereas neutral mutations fix at a much higher rate, which is the same at selected and neutral sites (Kimura and Crow, 1964).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on theoretical understanding from cited work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:40.410234Z"
+    },
+    {
+      "id": "268c4e51-dbe9-4dc3-bece-a2b084f93372",
+      "content_id": "be364c46-19e9-4d13-820a-a22d57dc878f",
+      "claim_id": "C86",
+      "claim": "In estimating the reduction at putatively selected sites, the set of putatively neutral sites was matched for the AT/GC ratio.",
+      "claim_type": "EXPLICIT",
+      "source": "In estimating the reduction at putatively selected sites, we matched the set of putatively neutral sites for the AT/GC ratio, and checked that our estimates were insensitive to the composition of other genomic features associated with mutation rates and with other non-selective processes that affect substitution rates (e.g., triplet context, methylated CpGs and recombination rates, which affect rates of biased gene conversion; Appendix 1 Section 5).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a methodological control used in the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:40.410234Z"
+    },
+    {
+      "id": "d8a57e16-4395-4a10-8baf-8f8f5068d74c",
+      "content_id": "be364c46-19e9-4d13-820a-a22d57dc878f",
+      "claim_id": "C87",
+      "claim": "Estimates based on evolutionary rates are closer to those obtained from fitting models of background selection based on CADD scores compared to those based on phastCons scores.",
+      "claim_type": "EXPLICIT",
+      "source": "Our estimates based on evolutionary rates are closer to (and even overlap) those obtained from fitting models of background selection based on CADD scores compared to those based on phastCons scores (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a comparison of estimates from different methods, shown in a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:40.410234Z"
+    },
+    {
+      "id": "67e990a0-4d67-4849-a2bd-8fb268b1d6b1",
+      "content_id": "be364c46-19e9-4d13-820a-a22d57dc878f",
+      "claim_id": "C88",
+      "claim": "CADD scores are much better than phastCons scores at identifying constraint on a single site resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "This is expected given that CADD scores are much better than phastCons scores at identifying constraint on a single site resolution (Kircher et al., 2014; Rentzsch et al., 2019), which markedly influences evolutionary rates at putatively selected sites (but not the predictions of background selection effects).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on findings from cited previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:40.410234Z"
+    },
+    {
+      "id": "13014f4d-4729-4a6c-ad9c-7e7a3380ef66",
+      "content_id": "be364c46-19e9-4d13-820a-a22d57dc878f",
+      "claim_id": "C89",
+      "claim": "Weak selection has a larger effect on evolutionary rates than on linked diversity levels.",
+      "claim_type": "EXPLICIT",
+      "source": "We expect the two estimates to be similar but not identical, both because weak selection has a larger effect on evolutionary rates than on linked diversity levels (McVean and Charlesworth, 2000; Comeron and Kreitman, 2002; Gordo et al., 2002; Charlesworth, 2013; Good et al., 2014) and because estimates based on the effects of background selection may absorb the deleterious mutation rate at selected sites that were not included in our sets but are closely linked to sites in them (Appendix 1 Section 5).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on theoretical understanding from cited work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:40.410234Z"
+    },
+    {
+      "id": "53cad02b-2262-4fdc-b897-f556947f2bc1",
+      "content_id": "be364c46-19e9-4d13-820a-a22d57dc878f",
+      "claim_id": "C90",
+      "claim": "Estimates based on the effects of background selection may absorb the deleterious mutation rate at selected sites that were not included in the sets but are closely linked to sites in them.",
+      "claim_type": "EXPLICIT",
+      "source": "We expect the two estimates to be similar but not identical, both because weak selection has a larger effect on evolutionary rates than on linked diversity levels (McVean and Charlesworth, 2000; Comeron and Kreitman, 2002; Gordo et al., 2002; Charlesworth, 2013; Good et al., 2014) and because estimates based on the effects of background selection may absorb the deleterious mutation rate at selected sites that were not included in our sets but are closely linked to sites in them (Appendix 1 Section 5).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about potential biases in the estimation method.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:40.410234Z"
+    },
+    {
+      "id": "f40ae867-e8c5-43f0-b2b9-65c2df678f6d",
+      "content_id": "be364c46-19e9-4d13-820a-a22d57dc878f",
+      "claim_id": "C92",
+      "claim": "The maps are well calibrated.",
+      "claim_type": "EXPLICIT",
+      "source": "Our maps are also well calibrated (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the study's validation analysis, shown in a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:40.410234Z"
+    },
+    {
+      "id": "e0c74c1d-318f-4425-8149-1a5f8273989e",
+      "content_id": "be364c46-19e9-4d13-820a-a22d57dc878f",
+      "claim_id": "C95",
+      "claim": "The imprecision in predictions for sites with the strongest background selection is due to a technical approximation employed in fitting the models.",
+      "claim_type": "EXPLICIT",
+      "source": "This behavior is due to a technical approximation we employ in fitting the models (see Appendix 1 Section 1.5).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explanation of a limitation in the methodology.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:40.410234Z"
+    },
+    {
+      "id": "bc5341a1-f9b4-4780-a2e0-bf8f917d27cd",
+      "content_id": "be364c46-19e9-4d13-820a-a22d57dc878f",
+      "claim_id": "C97",
+      "claim": "Similar behavior in regions with weak background selection is observed in all the human populations examined.",
+      "claim_type": "EXPLICIT",
+      "source": "We observe similar behavior in all the human populations examined (Appendix 1\u2014figure 52), and we cannot fully explain it by known mutational and recombination effects (e.g. of base composition and biased gene conversion; Appendix 1 Section 8).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the study's analysis across populations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:40.410234Z"
+    },
+    {
+      "id": "9fb7e462-d31b-4cfe-a93d-69ef282bf522",
+      "content_id": "be364c46-19e9-4d13-820a-a22d57dc878f",
+      "claim_id": "C98",
+      "claim": "The behavior in regions with weak background selection cannot be fully explained by known mutational and recombination effects.",
+      "claim_type": "EXPLICIT",
+      "source": "We observe similar behavior in all the human populations examined (Appendix 1\u2014figure 52), and we cannot fully explain it by known mutational and recombination effects (e.g. of base composition and biased gene conversion; Appendix 1 Section 8).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the study's investigation of potential confounders.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:40.410234Z"
+    },
+    {
+      "id": "be6742e0-04d8-45ac-91ec-c597a87174fe",
+      "content_id": "be364c46-19e9-4d13-820a-a22d57dc878f",
+      "claim_id": "C99",
+      "claim": "The behavior in regions with weak background selection could reflect ancient introgression of archaic human DNA into ancestors of contemporary humans.",
+      "claim_type": "EXPLICIT",
+      "source": "This behavior could reflect ancient introgression of archaic human DNA into ancestors of contemporary humans (Appendix 1 Section 8.3), indicated also in other population genetic signatures (Wall and Hammer, 2006; Green et al., 2010; Reich et al., 2010; Sankararaman et al., 2014; Racimo et al., 2015; Steinr\u00fccken et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis supported by citations to previous work on archaic introgression.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:40.410234Z"
+    },
+    {
+      "id": "d7e9b15a-cc67-4a6e-b095-c7296db9fced",
+      "content_id": "be364c46-19e9-4d13-820a-a22d57dc878f",
+      "claim_id": "C100",
+      "claim": "Introgressed regions are expected to increase genetic diversity and persist the longest in regions with low functional density and high recombination.",
+      "claim_type": "EXPLICIT",
+      "source": "Such introgressed regions are expected to increase genetic diversity and persist the longest in regions with low functional density and high recombination, corresponding to weak background selection effects (Sankararaman et al., 2014; Harris and Nielsen, 2016; Juric et al., 2016; Schumer et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on theoretical expectations and findings from cited studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:40.410234Z"
+    },
+    {
+      "id": "7ea0cc83-f15d-4343-93fc-2d6337776ae8",
+      "content_id": "be364c46-19e9-4d13-820a-a22d57dc878f",
+      "claim_id": "C101",
+      "claim": "Background selection effects that are not captured by the models would cause underestimation of the range and extent of background selection effects.",
+      "claim_type": "EXPLICIT",
+      "source": "We note that background selection effects that are not captured by our models would cause us to underestimate the range and extent of background selection effects (Elyashiv et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about potential biases in the estimates, supported by citation.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:40.410234Z"
+    },
+    {
+      "id": "7b7d319c-e6e9-4571-8a5a-ba6552edf71d",
+      "content_id": "be364c46-19e9-4d13-820a-a22d57dc878f",
+      "claim_id": "C102",
+      "claim": "There is a ~37% reduction in diversity levels in the 10% most affected sites.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that diversity levels throughout almost all of the autosomes are affected by background selection, with a ~37% reduction in the 10% most affected sites, a non-zero (~2.1%) reduction even in the 10% least affected (after excluding outliers in the top 2% of bins; see Figure 5), and a mean reduction of ~17%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from the study's analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:40.410234Z"
+    },
+    {
+      "id": "b1043f78-2611-46cb-b4d6-56d86f082d15",
+      "content_id": "be364c46-19e9-4d13-820a-a22d57dc878f",
+      "claim_id": "C103",
+      "claim": "There is a non-zero (~2.1%) reduction in diversity levels even in the 10% least affected sites after excluding outliers.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that diversity levels throughout almost all of the autosomes are affected by background selection, with a ~37% reduction in the 10% most affected sites, a non-zero (~2.1%) reduction even in the 10% least affected (after excluding outliers in the top 2% of bins; see Figure 5), and a mean reduction of ~17%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from the study's analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:40.410234Z"
+    },
+    {
+      "id": "a5828557-e7b2-43a0-9e77-24703487297d",
+      "content_id": "be364c46-19e9-4d13-820a-a22d57dc878f",
+      "claim_id": "C104",
+      "claim": "There is a mean reduction of ~17% in diversity levels due to background selection.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that diversity levels throughout almost all of the autosomes are affected by background selection, with a ~37% reduction in the 10% most affected sites, a non-zero (~2.1%) reduction even in the 10% least affected (after excluding outliers in the top 2% of bins; see Figure 5), and a mean reduction of ~17%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from the study's analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:40.410234Z"
+    },
+    {
+      "id": "452136ab-cb7c-4bb6-bda0-62c055347aed",
+      "content_id": "be364c46-19e9-4d13-820a-a22d57dc878f",
+      "claim_id": "C105",
+      "claim": "These conclusions about the distribution of background selection effects are robust across the best-fitting maps and populations.",
+      "claim_type": "EXPLICIT",
+      "source": "These conclusions are robust across our best-fitting maps and populations (Appendix 1 Section 4 and Appendix 1\u2014figure 35 and Appendix 1\u2014figure 52).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the study's sensitivity analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:40.410234Z"
+    },
+    {
+      "id": "7299998d-68b9-4d8c-a6bd-aac175da16b4",
+      "content_id": "be364c46-19e9-4d13-820a-a22d57dc878f",
+      "claim_id": "C106",
+      "claim": "The maps of the effects of background selection provide a more accurate null model than currently used for other population genetic inferences that rely on diversity levels.",
+      "claim_type": "EXPLICIT",
+      "source": "An important implication is that our maps of the effects of background selection provide a more accurate null model than currently used for other population genetic inferences that rely on diversity levels, notably inferences about demographic history (Schiffels and Durbin, 2014; Terhorst et al., 2017; Pouyet et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an implication drawn from the study's findings, with citations to relevant applications.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:40.410234Z"
+    },
+    {
+      "id": "00289c9a-34e4-40a2-b7b4-2d866675c6b1",
+      "content_id": "be364c46-19e9-4d13-820a-a22d57dc878f",
+      "claim_id": "C107",
+      "claim": "Background selection effects arise primarily from purifying selection at non-coding regions of the genome.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results indicate that background selection is the dominant mode of linked selection in human autosomes and the major determinant of neutral diversity levels on the Mb scale (after accounting for variation in mutation rates). They further reveal that background selection effects arise primarily from purifying selection at non-coding regions of the genome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a main conclusion from the study's findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:40.410234Z"
+    },
+    {
+      "id": "b77bae18-f28a-469d-8042-e22b4ba6d4b5",
+      "content_id": "be364c46-19e9-4d13-820a-a22d57dc878f",
+      "claim_id": "C108",
+      "claim": "Non-coding regions are known to exhibit substantial functional turnover on evolutionary timescales.",
+      "claim_type": "EXPLICIT",
+      "source": "Non-coding regions are known to exhibit substantial functional turnover on evolutionary timescales (Ward and Kellis, 2012; Rands et al., 2014), and yet we find phylogenetic conservation to be the best predictor of selected regions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on findings from cited previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:40.410234Z"
+    },
+    {
+      "id": "26996a7b-2b42-4cbb-8027-9180001154fc",
+      "content_id": "be364c46-19e9-4d13-820a-a22d57dc878f",
+      "claim_id": "C109",
+      "claim": "Phylogenetic conservation is the best predictor of selected regions.",
+      "claim_type": "EXPLICIT",
+      "source": "Non-coding regions are known to exhibit substantial functional turnover on evolutionary timescales (Ward and Kellis, 2012; Rands et al., 2014), and yet we find phylogenetic conservation to be the best predictor of selected regions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a main finding from the study's model comparison analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:40.410234Z"
+    },
+    {
+      "id": "b8fa179e-d0fa-437d-885b-178751de9516",
+      "content_id": "be364c46-19e9-4d13-820a-a22d57dc878f",
+      "claim_id": "C110",
+      "claim": "At present, augmenting measures of conservation with functional genomic information in humans offers little improvement.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, at present, augmenting measures of conservation with functional genomic information in humans offers little improvement.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the study's model comparison analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:40.410234Z"
+    },
+    {
+      "id": "8ed07461-d110-4f4b-ad77-a129bf2aa7dd",
+      "content_id": "be364c46-19e9-4d13-820a-a22d57dc878f",
+      "claim_id": "C111",
+      "claim": "It remains unclear how much the maps can still be improved.",
+      "claim_type": "EXPLICIT",
+      "source": "It therefore remains unclear how much our maps can still be improved.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the uncertainty regarding future improvements.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:40.410234Z"
+    },
+    {
+      "id": "11d006af-033c-4bad-8701-0b2b3474b21c",
+      "content_id": "be364c46-19e9-4d13-820a-a22d57dc878f",
+      "claim_id": "C112",
+      "claim": "A simple model of background selection, conceived three decades ago, provides a reliable quantitative prediction of genetic diversity levels throughout human autosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Even without these potential refinements, our findings demonstrate that a simple model of background selection, conceived three decades ago (Charlesworth et al., 1993), provides a reliable quantitative prediction of genetic diversity levels throughout human autosomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a main conclusion from the study's findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:40.410234Z"
+    },
+    {
+      "id": "60fa7945-647e-462f-9e54-c40ff246657a",
+      "content_id": "be364c46-19e9-4d13-820a-a22d57dc878f",
+      "claim_id": "C115",
+      "claim": "The model should capture the effects of any kind of sweeps, be they hard, partial or soft, so long as they eventually resulted in a substitution and affected diversity levels nearby.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, our model should capture the effects of any kind of sweeps, be they hard, partial or soft, so long as they eventually resulted in a substitution and affected diversity levels nearby (see Coop and Ralph, 2012 and SOM Section D in Elyashiv et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on theoretical understanding and previous methodological work cited.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:40.410234Z"
+    },
+    {
+      "id": "fdaae249-d335-47da-bf3a-1912d5e69160",
+      "content_id": "be364c46-19e9-4d13-820a-a22d57dc878f",
+      "claim_id": "C116",
+      "claim": "The model allows calculation of the marginal probability that any given neutral site in the genome is polymorphic in a sample.",
+      "claim_type": "EXPLICIT",
+      "source": "Given the positions of different types of putatively selected regions and substitutions, their corresponding selection parameters, and a fine-scale genetic map, the model allows us to calculate the marginal probability that any given neutral site in the genome is polymorphic in a sample (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes a capability of the model.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:40.410234Z"
+    },
+    {
+      "id": "8e9a5b5a-da66-4509-96a1-8f89e5991915",
+      "content_id": "be364c46-19e9-4d13-820a-a22d57dc878f",
+      "claim_id": "C117",
+      "claim": "The approach combines information across sites and samples to calculate the composite likelihood of selection parameters.",
+      "claim_type": "EXPLICIT",
+      "source": "Provided measurements of polymorphism at neutral positions throughout the genome, we combine information across sites and samples to calculate the composite likelihood of selection parameters, and find the parameter values that maximize this likelihood (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the inference methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:40.410234Z"
+    },
+    {
+      "id": "52d3e7ef-5ed8-4fd7-9150-8f661578fa76",
+      "content_id": "be364c46-19e9-4d13-820a-a22d57dc878f",
+      "claim_id": "C118",
+      "claim": "The approach yields a map of the expected neutral diversity levels along the genome in addition to parameter estimation.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to parameter estimation, this approach yields a map of the expected neutral diversity levels along the genome (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes an output of the methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:19:40.410234Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "619cdec1-acbc-4015-bca8-62a6390c2b20",
+      "content_id": "be364c46-19e9-4d13-820a-a22d57dc878f",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Background selection models explain ~60% of variance in human diversity levels at the megabase scale, nearly doubling the explanatory power of previous work (McVicker et al., 2009) which explained only 32%.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2 and C35 provide consistent quantitative results showing 60% variance explained by the CADD-based model at 1 Mb scale. C36 provides the comparison benchmark from prior work. The improvement is substantial and well-documented with out-of-sample predictions (C33-C34), reducing concerns about overfitting.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:19:40.410234Z"
+    },
+    {
+      "id": "a0ddc87d-284f-412f-b936-c45dff6a21a6",
+      "content_id": "be364c46-19e9-4d13-820a-a22d57dc878f",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Selective sweeps have had little or no detectable effect on linked neutral diversity in humans. Adding sweep effects to models does not improve fit, and the estimated proportion of substitutions causing sweeps is approximately zero across all tested substitution types.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Multiple converging lines of evidence support this conclusion: model comparison shows no improvement when sweeps are added (C3, C40), parameter estimates are ~0 (C41), and the background selection model alone provides good quantitative fits around both synonymous and nonsynonymous substitutions (C42-C43), refuting the 'masked sweeps' hypothesis (C44). The spatial signature analysis (C37) and prior Drosophila work (C39) support the method's ability to distinguish these effects.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:19:40.410234Z"
+    },
+    {
+      "id": "bc236bfc-078b-4c48-9ab2-982e16aa2181",
+      "content_id": "be364c46-19e9-4d13-820a-a22d57dc878f",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Approximately 80% of deleterious mutations affecting neutral diversity occur in non-exonic regions, contrasting with previous work that found minimal contribution from non-exonic regions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The quantitative estimates are consistent across different annotation methods (C61-C62 show 76-85% non-exonic). The finding is supported by model comparisons showing diminished predictive ability when only exonic regions are included (C59) and that non-exonic regions account for most reduction in diversity (C60, C65). This directly contradicts prior work (C58), representing a major revision.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:19:40.410234Z"
+    },
+    {
+      "id": "56a5aee2-81cc-421c-ba9a-ff7b1dd6fc6b",
+      "content_id": "be364c46-19e9-4d13-820a-a22d57dc878f",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Background selection is the dominant mode of linked selection in humans, with marked effects throughout autosomes: ~37% reduction in the most affected 10% of sites, ~2.1% reduction even in the least affected 10%, and a mean reduction of ~17%.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The quantitative characterization of background selection effects (C102-C104) is well-supported by the model fits and robustness analyses (C105). The conclusion that background selection is dominant (C6-C7) follows logically from the negligible sweep effects and the widespread impact across the genome. The spatial distribution of effects is documented with appropriate controls.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:19:40.410234Z"
+    },
+    {
+      "id": "6ad3a0a2-8940-4e25-a1f2-d8e2691479ac",
+      "content_id": "be364c46-19e9-4d13-820a-a22d57dc878f",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The estimated deleterious mutation rates from the best-fitting models are plausible, falling well below the upper bound based on total mutation rates, and are validated by independent estimates from evolutionary rates along the human lineage.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The parameter estimates are validated through multiple approaches: comparison with mutation rate bounds (C79), independent validation using evolutionary rates (C83-C87), and appropriate controls for confounding factors (C86). The expectation that estimates should be below the total mutation rate is justified (C80-C82). The closer agreement with CADD-based estimates is explained by better single-site resolution (C88). Potential biases are acknowledged (C89-C90).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:19:40.410234Z"
+    },
+    {
+      "id": "115add12-b8c9-4704-bfa9-ceac60374261",
+      "content_id": "be364c46-19e9-4d13-820a-a22d57dc878f",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Phylogenetic conservation is the best predictor of regions under selection, with functional genomic annotations providing little improvement over conservation alone.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Multiple model comparisons consistently show that conservation-based predictions outperform or match those incorporating additional functional information (C67-C69). The finding is robust across different phylogenetic depths (C72-C73). The result that ENCODE annotations without conservation perform poorly (C68) while CADD scores (which include conservation) offer minimal improvement (C69) strongly supports the primacy of conservation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:19:40.410234Z"
+    },
+    {
+      "id": "80275620-89dc-4bcf-b781-561a9e7c06a4",
+      "content_id": "be364c46-19e9-4d13-820a-a22d57dc878f",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The best-fitting models use 5-7% of sites with the highest conservation scores as selection targets, consistent with independent estimates of the proportion of the human genome under functional constraint.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The optimal percentage (C74) is determined by multiple model fit metrics and agrees well with independent estimates from Ward and Kellis, 2012 and Rands et al., 2014 (C75). This external validation strengthens confidence in the model specification.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:19:40.410234Z"
+    },
+    {
+      "id": "bf026f96-4f77-4fc5-b380-cfaffb44ab91",
+      "content_id": "be364c46-19e9-4d13-820a-a22d57dc878f",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The background selection maps are well-calibrated across most of the range of predicted values, with exceptions at the extremes: imprecision at sites with strongest selection (due to technical approximation) and excess diversity at sites with weakest selection (possibly reflecting archaic introgression).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The calibration is demonstrated quantitatively (C92, R\u00b2=0.96). The limitations are clearly identified: technical approximation affecting strong selection sites (C95) and unexplained excess diversity in weak selection regions (C97-C98). The archaic introgression hypothesis (C99-C100) is plausible and supported by citations, though speculative. The robustness across populations (C97) strengthens the findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:19:40.410234Z"
+    },
+    {
+      "id": "f316f52d-e844-4ebd-bf80-15ab4711b764",
+      "content_id": "be364c46-19e9-4d13-820a-a22d57dc878f",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The study analyzes 1000 Genomes Project Phase III data from 26 populations, focusing on 108 YRI genomes, using carefully selected neutral sites, mutation rate estimates from primate phylogenies, and a recombination map designed to minimize circularity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The data sources and methodological choices are clearly described (C22-C32). Key controls include: using least-conserved non-genic sites as neutral (C25), accounting for mutation rate variation (C26), using a recombination map less dependent on diversity (C27-C28), and avoiding circularity in CADD scores (C32). The robustness across populations (C24) supports generalizability.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:19:40.410234Z"
+    },
+    {
+      "id": "ceb3e769-b248-4942-8fb1-47db7e4654e5",
+      "content_id": "be364c46-19e9-4d13-820a-a22d57dc878f",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Overfitting has negligible effect on the results, as expected given the model has only 7 fitted parameters and uses ~653M putatively neutral sites across ~2600 LD blocks.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The assessment is justified by the favorable ratio of data to parameters (C34) and is verified through out-of-sample predictions in 2 Mb windows (C33). The large amount of data relative to model complexity makes overfitting unlikely.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:19:40.410234Z"
+    },
+    {
+      "id": "455a8773-1a49-4a10-9d43-17132d38b95b",
+      "content_id": "be364c46-19e9-4d13-820a-a22d57dc878f",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Selection strength estimates differ between exonic and non-exonic regions, but including separate parameters for these regions does not improve predictions because background selection effects are fairly insensitive to selection strength.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The finding that separate parameters don't improve predictions (C66) is consistent with theoretical expectations that background selection effects are insensitive to selection strength (C64), with the key difference being spatial extent rather than total magnitude. This justifies the simpler model and the interpretation that proportions of deleterious mutations approximate relative effects (C63-C64).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:19:40.410234Z"
+    },
+    {
+      "id": "7bad728e-7330-4435-95d7-5009681bb2c4",
+      "content_id": "be364c46-19e9-4d13-820a-a22d57dc878f",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The background selection maps provide a more accurate null model than currently used for population genetic inferences that rely on diversity levels, such as demographic history inference.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This implication follows logically from the demonstrated improvement in explaining diversity variation (60% vs 32%) and the good calibration of the maps. The claim is appropriately framed as an implication with citations to relevant applications (Schiffels and Durbin, 2014; Terhorst et al., 2017; Pouyet et al., 2018).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:19:40.410234Z"
+    },
+    {
+      "id": "0a5db712-1b13-46af-a8fd-35efd0800180",
+      "content_id": "be364c46-19e9-4d13-820a-a22d57dc878f",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The lack of detectable sweeps does not imply rare adaptation; instead, adaptation may have been driven by polygenic selection on complex traits, which would produce negligible effects on linked diversity while stabilizing selection on such traits could contribute substantially to background selection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "This is a plausible theoretical interpretation supported by appropriate citations (C46-C57), but it remains speculative. The claims about polygenic adaptation dynamics (C49-C53) and stabilizing selection effects (C54-C56) are based on theoretical work, not direct evidence from this study. The connection to the observed dominance of background selection (C57) is logical but inferential. This represents an important hypothesis for future work rather than a demonstrated result.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:19:40.410234Z"
+    },
+    {
+      "id": "244b221e-9072-4b7b-86c4-8e68ca359c12",
+      "content_id": "be364c46-19e9-4d13-820a-a22d57dc878f",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The inference method should be able to distinguish background selection from selective sweeps based on their different spatial signatures, and should capture effects of hard, partial, and soft sweeps that resulted in substitutions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The methodological capability is supported by theoretical reasoning (C37, C115), previous successful application in Drosophila (C39), and appropriate citations (C38). However, the actual failure to detect sweeps in humans could reflect either their true absence or limitations in detection power. The method's validity is supported but the negative result requires careful interpretation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:19:40.410234Z"
+    },
+    {
+      "id": "4e417d7a-5cf1-4e36-89bf-83b3a579445c",
+      "content_id": "be364c46-19e9-4d13-820a-a22d57dc878f",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Background selection effects not captured by the models would cause underestimation of the range and extent of background selection effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This is a valid acknowledgment of potential bias direction, supported by citation (Elyashiv et al., 2016). It appropriately qualifies the quantitative estimates as potentially conservative.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:19:40.410234Z"
+    },
+    {
+      "id": "2435e360-0400-4978-b1d5-efb57833fe28",
+      "content_id": "be364c46-19e9-4d13-820a-a22d57dc878f",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "A simple model of background selection conceived three decades ago provides reliable quantitative prediction of genetic diversity levels throughout human autosomes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This conclusion is well-supported by the cumulative evidence: high variance explained (60%), good calibration, plausible parameter estimates, and robustness across populations and model specifications. The characterization as 'simple' and 'reliable' is justified by the results.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:19:40.410234Z"
+    },
+    {
+      "id": "a3146541-d56b-4643-a443-08fa9dec287e",
+      "content_id": "be364c46-19e9-4d13-820a-a22d57dc878f",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The model calculates marginal probabilities of polymorphism at neutral sites and uses composite likelihood to infer selection parameters, yielding both parameter estimates and maps of expected diversity levels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims describe the methodological framework accurately. The approach is standard for this type of inference and is appropriately referenced to prior work. The description is consistent with the results presented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:19:40.410234Z"
+    },
+    {
+      "id": "8dfe8b7e-383a-426e-947d-017878b1c147",
+      "content_id": "be364c46-19e9-4d13-820a-a22d57dc878f",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Background knowledge: Linked selection (both selective sweeps and background selection) reduces neutral diversity near selected sites, with effects depending on recombination rate and density of selected sites, as observed across many taxa.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims accurately summarize established theory and empirical findings from the cited literature. They provide appropriate context for the study but are not novel results from this work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:19:40.410234Z"
+    },
+    {
+      "id": "8ca09bba-b2ac-4a02-a634-c0e8706d54b0",
+      "content_id": "be364c46-19e9-4d13-820a-a22d57dc878f",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Prior work context: McVicker et al., 2009 showed good fit of background selection models but with unrealistically high deleterious mutation rates, leading to debate about whether sweeps were being 'soaked up' by the model or truly had minimal effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims accurately characterize the prior literature and the controversy that motivated this study. The assessment of McVicker et al.'s mutation rate estimates as unrealistic (C16) is supported by comparison with total mutation rate bounds.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:19:40.410234Z"
+    },
+    {
+      "id": "c0189adb-cfb7-4398-b8a3-8379683d0e65",
+      "content_id": "be364c46-19e9-4d13-820a-a22d57dc878f",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Despite known functional turnover in non-coding regions on evolutionary timescales, phylogenetic conservation remains the best predictor, and it remains unclear how much the maps can be improved.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The observation about functional turnover (C108) is supported by citations. The finding that conservation is still the best predictor (C109, covered in another result) creates an interesting tension. The uncertainty about future improvements (C111) is an appropriate acknowledgment of current limitations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:19:40.410234Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "5d385494-e4ce-4d21-8fe9-0cbc361c9b80",
+      "result_id": "619cdec1-acbc-4015-bca8-62a6390c2b20"
+    },
+    {
+      "claim_id": "8509e3d1-5c88-4777-978b-952a74abd1a5",
+      "result_id": "619cdec1-acbc-4015-bca8-62a6390c2b20"
+    },
+    {
+      "claim_id": "2e796f04-b644-47af-b44a-e32ece62870c",
+      "result_id": "619cdec1-acbc-4015-bca8-62a6390c2b20"
+    },
+    {
+      "claim_id": "863fa836-907c-4f61-935b-7b7289be6d82",
+      "result_id": "a0ddc87d-284f-412f-b936-c45dff6a21a6"
+    },
+    {
+      "claim_id": "d2062ccd-f787-4f51-901d-3c9dfdf05fbe",
+      "result_id": "a0ddc87d-284f-412f-b936-c45dff6a21a6"
+    },
+    {
+      "claim_id": "39c427fd-5b31-41fa-8113-db47f84c28a1",
+      "result_id": "a0ddc87d-284f-412f-b936-c45dff6a21a6"
+    },
+    {
+      "claim_id": "e0b57c59-a563-40cf-9f14-817267e6fc63",
+      "result_id": "a0ddc87d-284f-412f-b936-c45dff6a21a6"
+    },
+    {
+      "claim_id": "912fd38d-f3b4-4342-938b-5aa73a9d7ebb",
+      "result_id": "a0ddc87d-284f-412f-b936-c45dff6a21a6"
+    },
+    {
+      "claim_id": "6325ce99-fbb1-4466-bff7-dbc2fe7f3598",
+      "result_id": "a0ddc87d-284f-412f-b936-c45dff6a21a6"
+    },
+    {
+      "claim_id": "09dbb1ec-9978-415c-a03c-1510eabaacb2",
+      "result_id": "a0ddc87d-284f-412f-b936-c45dff6a21a6"
+    },
+    {
+      "claim_id": "28b95728-8e86-42f7-86a1-41841c78145b",
+      "result_id": "a0ddc87d-284f-412f-b936-c45dff6a21a6"
+    },
+    {
+      "claim_id": "51b1fb43-35f5-4978-ad67-2c77e3ac2f30",
+      "result_id": "bc236bfc-078b-4c48-9ab2-982e16aa2181"
+    },
+    {
+      "claim_id": "1233af05-fc2c-4d39-8580-5aa9d7617ffc",
+      "result_id": "bc236bfc-078b-4c48-9ab2-982e16aa2181"
+    },
+    {
+      "claim_id": "345add89-5d41-4297-8edc-c7e86a087133",
+      "result_id": "bc236bfc-078b-4c48-9ab2-982e16aa2181"
+    },
+    {
+      "claim_id": "987cc860-0a90-4243-974d-8e698a558c2f",
+      "result_id": "bc236bfc-078b-4c48-9ab2-982e16aa2181"
+    },
+    {
+      "claim_id": "b1842675-d740-46f1-9838-6dbfb4cccb74",
+      "result_id": "bc236bfc-078b-4c48-9ab2-982e16aa2181"
+    },
+    {
+      "claim_id": "c9f2779f-226b-41c9-a72c-7b359b27ca8b",
+      "result_id": "bc236bfc-078b-4c48-9ab2-982e16aa2181"
+    },
+    {
+      "claim_id": "d7b97f42-a0ec-4672-8dd3-09c85916162e",
+      "result_id": "bc236bfc-078b-4c48-9ab2-982e16aa2181"
+    },
+    {
+      "claim_id": "00289c9a-34e4-40a2-b7b4-2d866675c6b1",
+      "result_id": "bc236bfc-078b-4c48-9ab2-982e16aa2181"
+    },
+    {
+      "claim_id": "295735ae-7a68-4d38-9711-97b844978324",
+      "result_id": "56a5aee2-81cc-421c-ba9a-ff7b1dd6fc6b"
+    },
+    {
+      "claim_id": "8d888932-51b9-4d5e-8d82-2bcbed176a71",
+      "result_id": "56a5aee2-81cc-421c-ba9a-ff7b1dd6fc6b"
+    },
+    {
+      "claim_id": "7b7d319c-e6e9-4571-8a5a-ba6552edf71d",
+      "result_id": "56a5aee2-81cc-421c-ba9a-ff7b1dd6fc6b"
+    },
+    {
+      "claim_id": "b1043f78-2611-46cb-b4d6-56d86f082d15",
+      "result_id": "56a5aee2-81cc-421c-ba9a-ff7b1dd6fc6b"
+    },
+    {
+      "claim_id": "a5828557-e7b2-43a0-9e77-24703487297d",
+      "result_id": "56a5aee2-81cc-421c-ba9a-ff7b1dd6fc6b"
+    },
+    {
+      "claim_id": "452136ab-cb7c-4bb6-bda0-62c055347aed",
+      "result_id": "56a5aee2-81cc-421c-ba9a-ff7b1dd6fc6b"
+    },
+    {
+      "claim_id": "e1c44f4d-c8e7-4572-9c7e-d4e4268da66b",
+      "result_id": "6ad3a0a2-8940-4e25-a1f2-d8e2691479ac"
+    },
+    {
+      "claim_id": "ffba7506-06c0-47c5-8f0d-fe092e717d21",
+      "result_id": "6ad3a0a2-8940-4e25-a1f2-d8e2691479ac"
+    },
+    {
+      "claim_id": "b81d0063-9f52-4335-8e75-6ac00bc1ff47",
+      "result_id": "6ad3a0a2-8940-4e25-a1f2-d8e2691479ac"
+    },
+    {
+      "claim_id": "f181064d-d623-432f-b1e3-9ff245de31ae",
+      "result_id": "6ad3a0a2-8940-4e25-a1f2-d8e2691479ac"
+    },
+    {
+      "claim_id": "46eaa81b-fccc-4c35-a260-9d65b3340fb5",
+      "result_id": "6ad3a0a2-8940-4e25-a1f2-d8e2691479ac"
+    },
+    {
+      "claim_id": "21e6ec72-6c93-4a1a-917e-ca2696ea6c0b",
+      "result_id": "6ad3a0a2-8940-4e25-a1f2-d8e2691479ac"
+    },
+    {
+      "claim_id": "0831fd72-b78d-409a-8f59-33fc3db4306b",
+      "result_id": "6ad3a0a2-8940-4e25-a1f2-d8e2691479ac"
+    },
+    {
+      "claim_id": "cf63ef55-d738-4312-a56a-d08720681d0b",
+      "result_id": "6ad3a0a2-8940-4e25-a1f2-d8e2691479ac"
+    },
+    {
+      "claim_id": "268c4e51-dbe9-4dc3-bece-a2b084f93372",
+      "result_id": "6ad3a0a2-8940-4e25-a1f2-d8e2691479ac"
+    },
+    {
+      "claim_id": "d8a57e16-4395-4a10-8baf-8f8f5068d74c",
+      "result_id": "6ad3a0a2-8940-4e25-a1f2-d8e2691479ac"
+    },
+    {
+      "claim_id": "67e990a0-4d67-4849-a2bd-8fb268b1d6b1",
+      "result_id": "6ad3a0a2-8940-4e25-a1f2-d8e2691479ac"
+    },
+    {
+      "claim_id": "13014f4d-4729-4a6c-ad9c-7e7a3380ef66",
+      "result_id": "6ad3a0a2-8940-4e25-a1f2-d8e2691479ac"
+    },
+    {
+      "claim_id": "53cad02b-2262-4fdc-b897-f556947f2bc1",
+      "result_id": "6ad3a0a2-8940-4e25-a1f2-d8e2691479ac"
+    },
+    {
+      "claim_id": "26996a7b-2b42-4cbb-8027-9180001154fc",
+      "result_id": "115add12-b8c9-4704-bfa9-ceac60374261"
+    },
+    {
+      "claim_id": "e9d120b6-2649-42d1-9adf-3496f430a4a9",
+      "result_id": "115add12-b8c9-4704-bfa9-ceac60374261"
+    },
+    {
+      "claim_id": "7853dad1-d288-489f-b6e6-530947633071",
+      "result_id": "115add12-b8c9-4704-bfa9-ceac60374261"
+    },
+    {
+      "claim_id": "4348c17e-eeca-479d-a24a-39258d73df62",
+      "result_id": "115add12-b8c9-4704-bfa9-ceac60374261"
+    },
+    {
+      "claim_id": "0a871f3a-ea58-47be-93a8-ad4c01073776",
+      "result_id": "115add12-b8c9-4704-bfa9-ceac60374261"
+    },
+    {
+      "claim_id": "4fe0d3b9-6eea-44a1-953c-dbae20bcdd42",
+      "result_id": "115add12-b8c9-4704-bfa9-ceac60374261"
+    },
+    {
+      "claim_id": "6a783313-0753-49b7-adba-db968b59f725",
+      "result_id": "115add12-b8c9-4704-bfa9-ceac60374261"
+    },
+    {
+      "claim_id": "4830cc8a-bff0-4265-8fa3-f63cfe1ca9fb",
+      "result_id": "115add12-b8c9-4704-bfa9-ceac60374261"
+    },
+    {
+      "claim_id": "d4088f90-aabf-4bd4-a9a6-09e8ae73182c",
+      "result_id": "80275620-89dc-4bcf-b781-561a9e7c06a4"
+    },
+    {
+      "claim_id": "d4f63599-7fee-4b99-bfd8-51b3540df73f",
+      "result_id": "80275620-89dc-4bcf-b781-561a9e7c06a4"
+    },
+    {
+      "claim_id": "f40ae867-e8c5-43f0-b2b9-65c2df678f6d",
+      "result_id": "bf026f96-4f77-4fc5-b380-cfaffb44ab91"
+    },
+    {
+      "claim_id": "e0c74c1d-318f-4425-8149-1a5f8273989e",
+      "result_id": "bf026f96-4f77-4fc5-b380-cfaffb44ab91"
+    },
+    {
+      "claim_id": "bc5341a1-f9b4-4780-a2e0-bf8f917d27cd",
+      "result_id": "bf026f96-4f77-4fc5-b380-cfaffb44ab91"
+    },
+    {
+      "claim_id": "9fb7e462-d31b-4cfe-a93d-69ef282bf522",
+      "result_id": "bf026f96-4f77-4fc5-b380-cfaffb44ab91"
+    },
+    {
+      "claim_id": "be6742e0-04d8-45ac-91ec-c597a87174fe",
+      "result_id": "bf026f96-4f77-4fc5-b380-cfaffb44ab91"
+    },
+    {
+      "claim_id": "d7e9b15a-cc67-4a6e-b095-c7296db9fced",
+      "result_id": "bf026f96-4f77-4fc5-b380-cfaffb44ab91"
+    },
+    {
+      "claim_id": "6802213f-2787-40f7-8926-ccdc2a853525",
+      "result_id": "f316f52d-e844-4ebd-bf80-15ab4711b764"
+    },
+    {
+      "claim_id": "34fe3d35-9af4-41db-bec7-933397273f81",
+      "result_id": "f316f52d-e844-4ebd-bf80-15ab4711b764"
+    },
+    {
+      "claim_id": "b42e2e72-c892-4c0b-a4d1-93cbfab5f6d2",
+      "result_id": "f316f52d-e844-4ebd-bf80-15ab4711b764"
+    },
+    {
+      "claim_id": "69041f5b-2c08-4f27-8e10-6e5228530476",
+      "result_id": "f316f52d-e844-4ebd-bf80-15ab4711b764"
+    },
+    {
+      "claim_id": "84244117-36f5-47f2-98b9-0cebec72a920",
+      "result_id": "f316f52d-e844-4ebd-bf80-15ab4711b764"
+    },
+    {
+      "claim_id": "d0ca6b24-648d-4c7c-a046-23c958b06e17",
+      "result_id": "f316f52d-e844-4ebd-bf80-15ab4711b764"
+    },
+    {
+      "claim_id": "352fa126-8ca3-413e-a755-0b2fc366f64f",
+      "result_id": "f316f52d-e844-4ebd-bf80-15ab4711b764"
+    },
+    {
+      "claim_id": "d1d028c6-359a-48a7-8bff-9cf28dd7e82f",
+      "result_id": "f316f52d-e844-4ebd-bf80-15ab4711b764"
+    },
+    {
+      "claim_id": "52e05133-b995-4f55-bb34-a975ccef2395",
+      "result_id": "f316f52d-e844-4ebd-bf80-15ab4711b764"
+    },
+    {
+      "claim_id": "e8324188-73f7-4cda-8104-7b0066dbbbd9",
+      "result_id": "f316f52d-e844-4ebd-bf80-15ab4711b764"
+    },
+    {
+      "claim_id": "761936e2-1e38-4642-91aa-b034bad65cfd",
+      "result_id": "f316f52d-e844-4ebd-bf80-15ab4711b764"
+    },
+    {
+      "claim_id": "43a78966-ddd5-4265-944b-d4e258acf3df",
+      "result_id": "ceb3e769-b248-4942-8fb1-47db7e4654e5"
+    },
+    {
+      "claim_id": "35932300-3285-4065-8be4-b1e5fa8ce53c",
+      "result_id": "ceb3e769-b248-4942-8fb1-47db7e4654e5"
+    },
+    {
+      "claim_id": "1afbb4a7-3dc9-4c1c-9e2f-40ce7dbd712e",
+      "result_id": "455a8773-1a49-4a10-9d43-17132d38b95b"
+    },
+    {
+      "claim_id": "9f26d939-3970-4ceb-b646-9d81e1037e9b",
+      "result_id": "455a8773-1a49-4a10-9d43-17132d38b95b"
+    },
+    {
+      "claim_id": "b3a39e9b-68f4-4382-9a20-bfaa389cbbba",
+      "result_id": "455a8773-1a49-4a10-9d43-17132d38b95b"
+    },
+    {
+      "claim_id": "7299998d-68b9-4d8c-a6bd-aac175da16b4",
+      "result_id": "7bad728e-7330-4435-95d7-5009681bb2c4"
+    },
+    {
+      "claim_id": "ab0ec02c-819c-43ca-b836-1e492008e7d4",
+      "result_id": "0a5db712-1b13-46af-a8fd-35efd0800180"
+    },
+    {
+      "claim_id": "74e6652e-f19a-4c1f-ae22-7a7b3153d9da",
+      "result_id": "0a5db712-1b13-46af-a8fd-35efd0800180"
+    },
+    {
+      "claim_id": "f5b340e0-0e0f-4f89-8222-dfaa439621e8",
+      "result_id": "0a5db712-1b13-46af-a8fd-35efd0800180"
+    },
+    {
+      "claim_id": "26d0aae2-6a8f-48c3-b907-d336acf90de7",
+      "result_id": "0a5db712-1b13-46af-a8fd-35efd0800180"
+    },
+    {
+      "claim_id": "409cce14-56c9-4d06-8bfb-49c871f4681b",
+      "result_id": "0a5db712-1b13-46af-a8fd-35efd0800180"
+    },
+    {
+      "claim_id": "d11ec1e5-3441-45a5-9f6b-2ac6aee5440a",
+      "result_id": "0a5db712-1b13-46af-a8fd-35efd0800180"
+    },
+    {
+      "claim_id": "621fb409-f195-4158-bf70-6cad588cdf9f",
+      "result_id": "0a5db712-1b13-46af-a8fd-35efd0800180"
+    },
+    {
+      "claim_id": "df91cd1d-8978-4b53-be60-cf8963b72d1d",
+      "result_id": "0a5db712-1b13-46af-a8fd-35efd0800180"
+    },
+    {
+      "claim_id": "4a53ac15-3454-4688-b95e-ef59cc9ba527",
+      "result_id": "0a5db712-1b13-46af-a8fd-35efd0800180"
+    },
+    {
+      "claim_id": "f698d45f-bde0-4e7c-adb2-39063208b069",
+      "result_id": "0a5db712-1b13-46af-a8fd-35efd0800180"
+    },
+    {
+      "claim_id": "feadded9-2119-43c1-b9d1-34b4050ec39a",
+      "result_id": "0a5db712-1b13-46af-a8fd-35efd0800180"
+    },
+    {
+      "claim_id": "0a9e3789-27f9-4745-9f7a-ed5a7ccdaeaf",
+      "result_id": "0a5db712-1b13-46af-a8fd-35efd0800180"
+    },
+    {
+      "claim_id": "c362168c-b8c3-46de-a0f0-5d8d15bb502b",
+      "result_id": "244b221e-9072-4b7b-86c4-8e68ca359c12"
+    },
+    {
+      "claim_id": "5d6f44eb-9ee7-4805-824e-9cd263cb2c14",
+      "result_id": "244b221e-9072-4b7b-86c4-8e68ca359c12"
+    },
+    {
+      "claim_id": "6a7a589f-390f-46da-b5a0-839c4bc0602a",
+      "result_id": "244b221e-9072-4b7b-86c4-8e68ca359c12"
+    },
+    {
+      "claim_id": "60fa7945-647e-462f-9e54-c40ff246657a",
+      "result_id": "244b221e-9072-4b7b-86c4-8e68ca359c12"
+    },
+    {
+      "claim_id": "7ea0cc83-f15d-4343-93fc-2d6337776ae8",
+      "result_id": "4e417d7a-5cf1-4e36-89bf-83b3a579445c"
+    },
+    {
+      "claim_id": "11d006af-033c-4bad-8701-0b2b3474b21c",
+      "result_id": "2435e360-0400-4978-b1d5-efb57833fe28"
+    },
+    {
+      "claim_id": "fdaae249-d335-47da-bf3a-1912d5e69160",
+      "result_id": "a3146541-d56b-4643-a443-08fa9dec287e"
+    },
+    {
+      "claim_id": "8e9a5b5a-da66-4509-96a1-8f89e5991915",
+      "result_id": "a3146541-d56b-4643-a443-08fa9dec287e"
+    },
+    {
+      "claim_id": "52d3e7ef-5ed8-4fd7-9150-8f661578fa76",
+      "result_id": "a3146541-d56b-4643-a443-08fa9dec287e"
+    },
+    {
+      "claim_id": "528da5fb-9d03-497d-8e45-6e222722076c",
+      "result_id": "8dfe8b7e-383a-426e-947d-017878b1c147"
+    },
+    {
+      "claim_id": "00c19f0c-fcc1-4237-976e-556d6d677df4",
+      "result_id": "8dfe8b7e-383a-426e-947d-017878b1c147"
+    },
+    {
+      "claim_id": "40866543-fa58-4d00-a8b3-8cfff244e5b2",
+      "result_id": "8dfe8b7e-383a-426e-947d-017878b1c147"
+    },
+    {
+      "claim_id": "f25e2bad-2bdb-48cb-8d64-f295a5207a43",
+      "result_id": "8dfe8b7e-383a-426e-947d-017878b1c147"
+    },
+    {
+      "claim_id": "e1d016b8-083b-4492-857a-07a96bf8b1a6",
+      "result_id": "8dfe8b7e-383a-426e-947d-017878b1c147"
+    },
+    {
+      "claim_id": "29ade7f0-a362-4aa0-8de7-5bf351fc2aaf",
+      "result_id": "8dfe8b7e-383a-426e-947d-017878b1c147"
+    },
+    {
+      "claim_id": "2e4ea22f-88aa-48fc-ba89-06f4139da5e6",
+      "result_id": "8dfe8b7e-383a-426e-947d-017878b1c147"
+    },
+    {
+      "claim_id": "92c17799-8997-48b9-83f1-924a5db0bda2",
+      "result_id": "8dfe8b7e-383a-426e-947d-017878b1c147"
+    },
+    {
+      "claim_id": "4f3bf863-1e7b-43ba-9bbc-e36c6a558a1a",
+      "result_id": "8ca09bba-b2ac-4a02-a634-c0e8706d54b0"
+    },
+    {
+      "claim_id": "e52a578d-c92e-4dca-9749-48eb82c53b40",
+      "result_id": "8ca09bba-b2ac-4a02-a634-c0e8706d54b0"
+    },
+    {
+      "claim_id": "3a4004c5-d840-4109-a9b3-a4b08ab4c4da",
+      "result_id": "8ca09bba-b2ac-4a02-a634-c0e8706d54b0"
+    },
+    {
+      "claim_id": "7e676131-4f10-4900-9a4a-3d7656783b01",
+      "result_id": "8ca09bba-b2ac-4a02-a634-c0e8706d54b0"
+    },
+    {
+      "claim_id": "6e2f92c2-0eeb-4032-8a34-ad44465912d4",
+      "result_id": "8ca09bba-b2ac-4a02-a634-c0e8706d54b0"
+    },
+    {
+      "claim_id": "24a8c7f1-25e3-4ed3-acdf-6d39a78fb71c",
+      "result_id": "8ca09bba-b2ac-4a02-a634-c0e8706d54b0"
+    },
+    {
+      "claim_id": "a88d561b-704a-4e2a-85be-c9f6c2d8a832",
+      "result_id": "8ca09bba-b2ac-4a02-a634-c0e8706d54b0"
+    },
+    {
+      "claim_id": "b77bae18-f28a-469d-8042-e22b4ba6d4b5",
+      "result_id": "c0189adb-cfb7-4398-b8a3-8379683d0e65"
+    },
+    {
+      "claim_id": "b8fa179e-d0fa-437d-885b-178751de9516",
+      "result_id": "c0189adb-cfb7-4398-b8a3-8379683d0e65"
+    },
+    {
+      "claim_id": "8ed07461-d110-4f4b-ad77-a129bf2aa7dd",
+      "result_id": "c0189adb-cfb7-4398-b8a3-8379683d0e65"
+    }
+  ],
+  "comparisons": []
+}

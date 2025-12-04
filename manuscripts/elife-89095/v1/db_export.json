@@ -1,0 +1,1540 @@
+{
+  "submission": {
+    "id": "3d4cb05b-67e8-4121-8149-76aff209f4dc",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-04T04:09:15.569460Z",
+    "updated_at": "2025-12-04T04:09:15.569460Z"
+  },
+  "content": [
+    {
+      "id": "776f8cd0-5540-4a71-bac3-1b2e3628579a",
+      "submission_id": "3d4cb05b-67e8-4121-8149-76aff209f4dc",
+      "content_type": "manuscript",
+      "content_text": "# Implications of variable synaptic weights for rate and temporal coding of cerebellar outputs\n\n## Authors\n\n- Shuting Wu<sup>1</sup> ([ORCID: 0000-0003-2264-7393](https://orcid.org/0000-0003-2264-7393))\n- Asem Wardak<sup>1</sup> ([ORCID: 0000-0003-0048-1484](https://orcid.org/0000-0003-0048-1484))\n- Mehak M Khan<sup>1</sup> ([ORCID: 0000-0001-5710-7421](https://orcid.org/0000-0001-5710-7421))\n- Christopher H Chen<sup>1</sup>\n- Wade G Regehr<sup>1</sup> ([ORCID: 0000-0002-3485-8094](https://orcid.org/0000-0002-3485-8094)) \u2020\n\n### Affiliations\n\n1. Department of Neurobiology, Harvard Medical School Boston United States ([ROR:05qwgg493](https://ror.org/05qwgg493))\n2. Department of Neural and Behavioral Sciences, Pennsylvania State University College of Medicine Hershey United States ([ROR:04p491231](https://ror.org/04p491231))\n\n\u2020 Corresponding author\n\n## Abstract\n\nPurkinje cell (PC) synapses onto cerebellar nuclei (CbN) neurons allow signals from the cerebellar cortex to influence the rest of the brain. PCs are inhibitory neurons that spontaneously fire at high rates, and many PC inputs are thought to converge onto each CbN neuron to suppress its firing. It has been proposed that PCs convey information using a rate code, a synchrony and timing code, or both. The influence of PCs on CbN neuron firing was primarily examined for the combined effects of many PC inputs with comparable strengths, and the influence of individual PC inputs has not been extensively studied. Here, we find that single PC to CbN synapses are highly variable in size, and using dynamic clamp and modeling we reveal that this has important implications for PC-CbN transmission. Individual PC inputs regulate both the rate and timing of CbN firing. Large PC inputs strongly influence CbN firing rates and transiently eliminate CbN firing for several milliseconds. Remarkably, the refractory period of PCs leads to a brief elevation of CbN firing prior to suppression. Thus, individual PC-CbN synapses are suited to concurrently convey rate codes and generate precisely timed responses in CbN neurons. Either synchronous firing or synchronous pauses of PCs promote CbN neuron firing on rapid time scales for nonuniform inputs, but less effectively than for uniform inputs. This is a secondary consequence of variable input sizes elevating the baseline firing rates of CbN neurons by increasing the variability of the inhibitory conductance. These findings may generalize to other brain regions with highly variable inhibitory synapse sizes.\n\n## Introduction\n\nThe cerebellum is involved in behaviors ranging from balance, motor control, and motor learning, to social and emotional behaviors (Hull and Regehr, 2022). Cerebellar dysfunction has been linked to severe motor impairment and psychiatric disorders, including autism spectrum disorder, schizophrenia, bipolar disorder, and depression (Argyropoulos et al., 2020; Schmahmann and Sherman, 1998). Within the cerebellar cortex, mossy fiber inputs from many brain regions excite granule cells that in turn activate Purkinje cells (PCs), which are the sole outputs. PCs project primarily to the cerebellar nuclei (CbN, also known as deep cerebellar nuclei [DCN]), which then project to other brain regions. Clarifying how PCs control the firing of CbN neurons is a vital step in understanding cerebellar processing.\n\nPCs are GABAergic and fire spontaneously at frequencies ranging from 10 spikes/s to over 100 spikes/s (Thach, 1968; Zhou et al., 2014). It was estimated that 40 PCs converge onto each CbN glutamatergic projection neuron to strongly suppress their firing (Person and Raman, 2012a). This is offset by the tendency of CbN neurons to fire spontaneously (Raman et al., 2000) and by numerous excitatory inputs from climbing fiber (CF) and mossy fiber collaterals (Najac and Raman, 2017; Wu and Raman, 2017). Excitatory inputs to CbN neurons are small and slow, and their number and firing rates are poorly constrained (Najac and Raman, 2017; Wu and Raman, 2017). Therefore, in this study, we mainly focus on the control of CbN neuron firing by inhibitory inputs from PCs.\n\nIt has been proposed that PCs convey information with a rate code, a temporal code, or a combination of both, but there has been considerable debate regarding whether PC outputs are primarily encoded by firing rate or by a combination of rate and timing (Abbasi et al., 2017; Brown and Raman, 2018; Cao et al., 2012; Gauck and Jaeger, 2000; Heck et al., 2013; Herzfeld et al., 2023a; Hoehne et al., 2020; Hong et al., 2016; Medina and Khodakhah, 2012; Payne et al., 2019; Person and Raman, 2012a; Person and Raman, 2012b; Sedaghat-Nejad et al., 2022; Stahl et al., 2022; Sudhakar et al., 2015; Walter and Khodakhah, 2009; Wu and Raman, 2017). There is compelling evidence that a rate code is used for some behaviors where the firing rates of PCs and CbN neurons are inversely correlated, and the behavior outputs can be readily explained by the changes in the firing rate of PCs and CbN neurons (Abbasi et al., 2017; Herzfeld et al., 2023a; Hong et al., 2016; Medina and Khodakhah, 2012; Payne et al., 2019; Sudhakar et al., 2015; Walter and Khodakhah, 2009). On the other hand, synchronous firing or pauses of PCs allow precise temporal control of CbN neuron firing (De Schutter and Steuber, 2009; Gauck and Jaeger, 2000; Han et al., 2020; Hong et al., 2016; \u00d6zcan et al., 2020; Person and Raman, 2012a; Sedaghat-Nejad et al., 2022; Steuber et al., 2007). Dynamic clamp studies of CbN neurons with uniform-size PC inputs demonstrated the ability of PC synchrony to promote CbN neuron firing and precisely entrain spike timing (Gauck and Jaeger, 2000; Person and Raman, 2012a), but whether PC synchrony is prominent in vivo has been debated (Herzfeld et al., 2023a; Sedaghat-Nejad et al., 2022). Synchronous pauses of PC firing have also been shown to be highly effective at transiently elevating CbN neuron firing (Han et al., 2020). A recent study found that an electrically coupled subtype of molecular layer interneuron (MLI) synchronously fire and inhibit PCs in vivo (Lackey et al., 2023), thereby suggesting the presence and potential importance of synchronous pauses in vivo.\n\nHere we reexamine how PCs control the firing of CbN neurons. We find that unitary PC-CbN inputs have highly variable amplitudes, and some are very large. We used dynamic clamp and simulations to explore the implications of nonuniform input sizes. We find that for a given total inhibitory conductance, nonuniform input sizes led to highly variable inhibitory conductances and high basal CbN firing rates. Inputs of all sizes regulated the rate and timing of CbN neuron firing, but larger inputs had a bigger influence. Although PC synchrony had less influence on the firing rates of CbN neurons for nonuniform-size inputs because of higher basal firing rates, synchronizing the firing of several large inputs effectively regulated the CbN neuron firing. Thus, the nonuniform distribution of PC input sizes allows the information of firing rates, timing, and synchrony to be conveyed from the cerebellar cortex to the CbN in a simultaneous, graded manner.\n\n## Results\n\n### PC to CbN input sizes are highly variable in juvenile mice\n\nTo understand how PCs control the firing of CbN neurons, it is necessary to determine the distribution of the sizes of PC inputs. Previously, PC to CbN inputs were approximated by uniform inputs based on the average of all inputs recorded (Han et al., 2020; Person and Raman, 2012a; Wu and Raman, 2017). We reexamined the issue of input sizes by determining the sizes of many individual inputs in young (P10-20, n = 74) and juvenile (P23-32, n = 83) animals (Figure 1). We cut brain slices, stimulated PC axons with an extracellular electrode placed far from the CbN, and recorded the evoked inhibitory postsynaptic currents (IPSCs) in CbN glutamatergic projection neurons with whole-cell recordings. We used a high Cl- internal solution to determine the distribution of input sizes because it provided superior stability, low-access resistance, and high sensitivity compared to a low Cl- internal. We adjusted the stimulus intensity to stochastically activate an individual PC axon and isolate a unitary input. This approach is shown for three inputs onto the same CbN neuron for a juvenile mouse (P27) (Figure 1a\u2013c). As shown in the individual trials for a small (weak) input, stimulation evoked short-latency IPSCs (720 pA) in some trials but not others (Figure 1a, upper, gray). The average of successes (Figure 1a, upper, black) and failures (Figure 1a, upper, blue) is shown. This is also apparent in a plot of the IPSC amplitudes for each trial (Figure 1a, lower) showing that the IPSCs were evoked in a fraction of the trials. Similar experiments are shown for a medium-size input (Figure 1b, 1690 pA) and a large-size (strong) input (Figure 1c, 6280 pA). To better evaluate the variability in the input sizes, we plotted the distributions of unitary PC to CbN input conductances for young (Figure 1d, P10\u201320) and juvenile (Figure 1e, P23\u201332) mice. Input sizes were somewhat variable in young mice (coefficient of variation [CV] = 0.7; Figure 1d), which is qualitatively similar to previous findings (P13\u201329, n = 30) (Person and Raman, 2012a). In juvenile mice, there was considerably more variability, primarily because of the presence of many medium and large inputs (mean 52.9 \u00b1 6 nS, CV = 1.0; Figure 1e). This is evident in a comparison of the cumulative histograms of IPSC conductances for young and juvenile animals, which showed significantly different distributions (Figure 1f; p<0.0001, Kolmogorov\u2013Smirnov test). These results show that PC to CbN input strength is highly variable in juvenile mice.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/89095/elife-89095-fig1-v1.jpg)\n\n**Figure 1.:** Unitary PC-CbN IPSCs were recorded in brain slices. The data in (a\u2013c) were obtained for this study. The histogram of input sizes in (d\u2013e) were based on new experiments (d, n = 44; e, n = 39), on Turecek et al., 2017 (e, n = 44), and Khan et al., 2022 (d, n = 30). (a) Example of a small PC-CbN input (P27). Top: responses evoked with the same stimulus intensity are superimposed for 40 trials (gray), and the average of successes (black) and failures (blue) is shown. Bottom: IPSCs\u2019 amplitudes are plotted as a function of trial number. (b) As in (a), but for a medium-size input onto the same cell. (c) As in (a), but for a large-size input onto the same cell. (d) Distribution of input sizes for PC-CbN IPSCs in young mice (P10\u2013P20, n = 74). (e) Distribution of input sizes for PC-CbN IPSCs in juvenile mice (P10\u2013P20, n = 83). (f) Normalized cumulative plot of conductances. The distributions of unitary input sizes in P10\u201320 animals and P23\u201332 animals were significantly different (p<0.0001) with a Kolmogorov\u2013Smirnov test.\n\n### Using dynamic clamp and simulations to examine the effects of variable input sizes\n\nThe variability in the amplitudes of PC to CbN inputs in juvenile animals raised the issue of how the wide range of input sizes influences the way PCs control the firing of CbN neurons. We then designed dynamic clamp studies using highly variable PC-CbN input sizes. The PC-CbN unitary conductances we used in dynamic clamp studies were based on our measured input sizes with two corrections (\u2018Methods\u2019). First, we corrected for the effects of a high-chloride internal solution by scaling down the amplitudes by a factor of 2.3, based on the estimates of conductance values determined with high and physiological Cl- internal solutions (Bormann et al., 1987; Gjoni et al., 2018; Sakmann et al., 1983). Second, we corrected the input sizes for the depression (reduced to 40% of initial amplitude) that occurs during physiological activation (Pedroarena and Schwarz, 2003; Telgkamp and Raman, 2002; Turecek et al., 2017; Turecek et al., 2016), as has been done in previous dynamic clamp studies (Han et al., 2020; Person and Raman, 2012b; Wu and Raman, 2017). The excitatory conductances we used in dynamic clamp studies were based on previous studies (Najac and Raman, 2017; Wu and Raman, 2017), with a relatively unconstrained frequency to pair with different inhibitory conductances.\n\nThe corrected distribution of input sizes used to guide our dynamic clamp studies is shown in Figure 2f (red). For simplicity, instead of having a continuous range of input sizes, we approximated the distribution of PC input sizes in juvenile animals (Figure 1e, \u2018Methods\u2019) with 16 small (3 nS), 10 medium (10 nS), and 2 large (30 nS) inputs (Figure 2f, gray; total 200 nS, similar to the total conductances used in Person and Raman, 2012a). The timing and frequency of the inputs were based on PC firing recorded in awake-behaving mice, with each input firing at 83 spikes/s (Figure 2\u2014figure supplement 1, \u2018Methods\u2019). The resulting spike times (Figure 2a, Figure 2\u2014figure supplement 2) were convolved with the corresponding unitary conductance size (Figure 2\u2014figure supplement 2) to generate the small (Figure 2b, green), medium (Figure 2b, blue), and large (Figure 2b, red) conductances, which were then summed to generate the total inhibitory conductance arising from all inputs (Figure 2b, black). The total inhibitory conductance showed large variations that were dominated by the medium and large inputs (Figure 2b), which in turn produced large fluctuations in the membrane potential when injected into a CbN neuron (Figure 2c). Spiking of the CbN neuron occurred mainly when the amplitude of the total inhibitory conductance was small (Figure 2b and c).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/89095/elife-89095-fig2-v1.jpg)\n\n**Figure 2.:** Dynamic clamp experiments and simulations were conducted with variable distribution of PC input sizes. (a) The corrected distributions of PC-CbN input sizes in juvenile animals (f, red) were approximated with 16 small inputs (3 nS, green), 10 medium inputs (10 nS, blue), and 2 large inputs (30 nS, red). Raster plots are shown for the spike times of the 16 small (green), 10 medium (blue), and 2 large (red) inputs used in dynamic clamp experiments. (b) The total conductance waveform is shown (black) along with contributions from small (green), medium (blue), and large (red) inputs. (c) Spikes in a CbN neuron evoked by the total conductance in (b) in dynamic clamp experiments. (d) The normalized cross-correlograms of input spiking and CbN neuron spiking for small, medium, and large inputs for dynamic clamp experiments. Different cells (n = 6, gray) are shown along with the average cross-correlograms (colored traces). (e) Summary of the excitation (e), inhibition (i), and half-decay time (t1/2), as defined in the inset for the data in (d). Inset shows how the parameters are determined. (f) Cumulative histogram of all recorded inputs from Figure 1 for P23\u201332 mice corrected for depression and internal solution (red), the simplified input distribution used in dynamic clamp studies in a (gray), and inputs drawn from that distribution that were used in a simulation (black). (g) Calculated cross-correlograms (normalized) for each of the different inputs used in a simulation. (h) Summary of the excitation (e), inhibition (i), and half-decay time (t1/2), for a simulation as defined in the inset for the simulated cell in (g) (black), and for inputs to nine other simulated cells with different distributions of inputs (gray). The summary data are shown as the mean \u00b1 SEM.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/89095/elife-89095-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (a) Normalized ISI histograms of 10 PCs recorded in vivo from our previous studies (Han et al., 2020), with their average firing rates indicated in the legend. (b) As in (a) but normalized to the peak. (c) Example of a lognormal distribution fitting (red) to the ISI histogram of one PC recorded in vivo (black, 83 Hz). Similar fittings were performed for the other nine PCs. (d) The standard deviation (sd) as a function of the mean of the lognormal distribution fits to the 10 PCs was fitted as a linear function. Fits were performed in IGOR Pro to the function.$exp-lnx/x_{0}/width^{2}$. The values of \u03bc and \u03c3 for standard lognormal distribution are computed from $x_{0}$ and width using equations: \u03bc = ,$lnx_{0}+width^{2}/2$ \u03c3 = $width/\\sqrt{2}$ The values of mean and sd of the lognormal distribution fits were computed from \u03bc and \u03c3 using equations: mean = $exp\\mu+\\sigma^{2}/2$ and sd = $\\sqrt{exp\u20612\\mu+\\sigma^{2}exp\u2061\\sigma^{2}-1}$. This linear function was used to determine the parameters for a PC firing ISI lognormal distribution with a desired firing rate. (e) Four lognormal distributions representing artificial PC firing ISI distributions with different firing rates generated with the mean and sd from the linear function in (d). (f) As in (e) but normalized to the peak.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/89095/elife-89095-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (a) Related to Figure 2a. Raster plots of 16 small inputs (green), 10 medium inputs (blue), and 2 large inputs (red) that fire at 83 Hz. (b) Related to Figure 2b. Unitary Purkinje cell\u2013cerebellar nuclei (PC-CbN) input waveforms with the indicated sizes. The spikes from each different-size inputs in (a) were convolved with the respective waveform to obtain the total inhibitory conductance shown in Figure 2b. (c) Similar as (a) but for a simulation with 19 inputs, with their size distributed indicated in Figure 2f. (d) Unitary PC-CbN input waveforms with the largest size and smallest size from the simulation. The raster plot of each PC input was convolved with the appropriate size conductance waveform to obtain its contribution to the inhibitory conductance, and the total inhibitory conductance was computed by summing the conductances of all inputs.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/89095/elife-89095-fig2-figsupp3-v1.jpg)\n\n**Figure 2\u2014figure supplement 3.:** (a) Similar to the simulation in Figure 2f\u2013h, but with a scaling factor of 0.5. (b) Similar to the simulation in Figure 2f\u2013h, but with a scaling factor of 1.5.\n\nAll inputs had effects on the timing of CbN neuron firing, but larger inputs had much bigger effects. As shown in the cross-correlograms of input timing and CbN neuron spiking, small inputs produced a small transient decrease in CbN neuron spiking (32% decrease; Figure 2d, left), while medium-size inputs strongly reduced CbN neuron spiking (80% decrease; Figure 2d, middle), and large inputs transiently shut down CbN neurons for approximately 2 ms (Figure 2d, right). Intriguingly, the inhibition generated by inhibitory inputs was preceded by an increase in spikes that was particularly prominent for large inputs (61% increase for large, 29% increase for medium, and 8% increase for small; Figure 2d). The magnitude of excitation (Figure 2e, top) and inhibition (Figure 2e, middle), as well as the duration of inhibition (Figure 2e, bottom), were all positively correlated with the size of the PC input. These findings highlight the ability of large PC inputs to control the timing of CbN neuron spiking.\n\nWe then performed simulations to extend these findings to a more realistic distribution of PC input sizes (\u2018Methods\u2019). We determined the sizes of PC input by assigning them values randomly drawn from the distribution of Figure 2f (red) until the total inhibitory conductance reached 200 nS. An example distribution of PC input sizes used in a simulation is shown in Figure 2f. The cross-correlograms of input timing and CbN neuron spiking for each of the PC inputs were determined, and they all showed a similar pattern, with an elevation followed by a suppression of CbN firing (Figure 2g). The magnitudes of the excitation and inhibition of CbN firing had a similar dependence on the size of the PC inputs as shown for the example neuron (Figure 2h, black) and for nine other simulated neurons (Figure 2h, gray). In light of the many types of voltage-gated ion channels present in CbN neurons (Afshari et al., 2004; Aizenman and Linden, 1999; Alvi\u00f1a and Khodakhah, 2008; Raman et al., 2000; Raman and Bean, 1999; Santoro et al., 2000; Steuber et al., 2011), we were somewhat surprised that the simple integrate-and-fire model we used was able to recapitulate our dynamic clamp studies, which indicates that our conclusions are not specific to the properties of the CbN neurons. We also performed simulations with different scaling factors of the distribution of input sizes, while keeping the same total conductances (Figure 2\u2014figure supplement 3). Applying a scaling factor of 0.5 or 1.5 changed the number and size of PC inputs, but the results were qualitatively similar, and in all cases larger inputs had a greater influence on the firing of CbN neurons. These simulations complemented our dynamic clamp studies and showed that the properties of cross-correlograms and their dependence on the size of the PC input can be extended to realistic distributions of input sizes.\n\n### The autocorrelation of PC firing leads to disinhibition prior to inhibition of CbN neurons\n\nThe elevated spiking observed prior to the inhibition by a PC input is intriguing. If such a cross-correlogram was observed in vivo, it might be attributed to excitation of the CbN neuron by other inputs that preceded PC inhibition, but that cannot be the case for our experimental conditions. Another possibility is that the refractory period of PC firing results in reduced inhibition and effective excitation. In that case, the properties of this disinhibition period will be shaped by the firing statistics of PCs. We tested this hypothesis by performing dynamic clamp experiments with the timing based on three different PCs recorded in vivo and on an artificial Poisson distribution (Figure 3a). As shown in the interspike interval (ISI) histograms (Figure 3a), auto-correlograms (Figure 3b), and in raster plots (Figure 3\u2014figure supplement 1a), the three recorded PCs had refractory periods that were correlated with their firing frequency (~3.5 ms for 49 Hz, ~2 ms for 83 Hz, and ~1.5 ms for 122 Hz firing), while the Poisson input did not have a refractory period. We then generated inhibitory conductances by convolving spike times with a 20 nS single-input conductance. To compensate for the differences in input firing frequency, we adjusted the number of the inputs so that the total inhibitory conductances were approximately the same for all cases (12 \u00d7 20 nS at 49 Hz, 9 \u00d7 20 nS at 83 Hz, 6 \u00d7 20 nS at 122 Hz, and 9 \u00d7 20 nS for Poisson inputs). When input spike timing was based on in vivo recordings of PC firing, the average inhibitory conductances decreased prior to the PC spike as a result of the refractory period (Figure 3c). Consequently, the cross-correlograms (Figure 3d) and raster plots (Figure 3\u2014figure supplement 1b) showed elevated spiking in the CbN neuron prior to suppression by the PC spike. This is because a PC that spikes at t = 0 does not spike for several milliseconds before or after that spike. Consistent with our hypothesis, the speed and amplitude of this decrease in inhibitory conductance and the associated elevation in spiking depended on the PC firing statistics, with the faster firing inputs associated with larger, shorter-lived effects (49 Hz: 27% increase, halfwidth 5.3 ms; 83 Hz: 39% increase, halfwidth 3.4 ms; 122 Hz: 65% increase, halfwidth 1.7 ms; Figure 3d). The cross-correlograms of PC inputs and CbN firing transiently showed transient suppression of firing that was followed by briefly elevated firing that was most prominent for rapidly firing PCs (Figure 3d, PCs that fire at 122 spikes/s). This elevated firing was also readily explained by the properties of PC firing and the refractory period of PCs. The Poisson input that lacked a refractory period did not have a decrease in the inhibitory conductance, and therefore CbN firing was not elevated prior to or following inhibition in the cross-correlogram (Figure 3c and d, far right). Thus, the autocorrelations of PC firing led to different extents of elevated CbN firing prior to suppression, and this affects how they control the spike timing of CbN neurons.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/89095/elife-89095-fig3-v1.jpg)\n\n**Figure 3.:** Dynamic clamp experiments were conducted using PCs with different firing statistics. (a) Interspike interval (ISI) histograms for three different PCs recorded in vivo (left), and for an artificial Poisson input lacking a refractory period (right). (b) Autocorrelation functions for the ISI distributions in (a). At 0 ms, all graphs peak at 1 and graphs are truncated to allow better visualization. (c) Calculated spike-triggered average inhibitory conductances for different cases (12 \u00d7 20 nS at 49 Hz, 9 \u00d7 20 nS at 83 Hz, 6 \u00d7 20 nS at 122 Hz, and 9 \u00d7 20 nS for Poisson inputs), with ISIs drawn from the corresponding distributions in (a). (d) Cross-correlograms are shown for PC inputs and CbN spiking for dynamic clamp experiments that used the distributions in (a).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/89095/elife-89095-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (a) Relevant to Figure 3b. Raster plots showing 500 sweeps of autocorrelations of Purkinje cells (PCs) firing at different frequencies and PCs firing in a Poisson fashion. The refractoriness of PC firing reflects their firing statistics. (b) Relevant to Figure 3d. Raster plots showing 500 sweeps of the spike trains of a cerebellar nuclei (CbN) neuron surrounding same-sized PC inputs firing at different frequencies and PCs firing in a Poisson fashion. The elevation of CbN neuron firing prior to the timing of the PC input is most apparent for rapidly firing inputs and is absent from the Poisson input that lacks a refractory period.\n\n### The amplitude and coefficient of variation of PC inhibition regulate the firing rate of CbN neurons\n\nThus far, we have shown the differential effects on CbN spike timing by different-size PC inputs. PCs also control the average firing rate of CbN neurons in addition to spike timing. We used dynamic clamp to determine how the amplitude and the CV of the inhibitory conductance influence CbN firing. We began by examining how changing the amplitude of a constant inhibitory conductance altered the firing of CbN neurons (Figure 4a). The firing rate of CbN neurons was approximately 200 spikes/s for an inhibitory conductance of 30 nS, but as the magnitude of the inhibitory conductance increased the spike rate decreased, and an inhibitory conductance of 65 nS silenced CbN firing (Figure 4a and b). As expected, the CbN firing rate was inversely related to the amplitude of inhibitory conductance (Figure 4b). We then examined how the variability in the inhibitory conductance influenced CbN spiking. We kept the total inhibitory conductance constant while varying the sizes and numbers of PC inputs that contribute to the total inhibitory conductance (Figure 4c). We generated the total inhibitory conductance for the indicated numbers and sizes of PC synaptic inputs with the timing based on PC firing recorded in vivo (Figure 4c, Figure 2\u2014figure supplement 1; \u2018Methods\u2019). While the average of the conductance wave was the same for all combinations of input sizes and numbers, as the size of the inputs increased, the conductance became increasingly variable (Figure 4c) and the CV became larger (Figure 4e). Evoked firing rates in CbN neurons were low for many small inputs, but as the number of inputs decreased and the size increased, the firing rate increased markedly (from 12 spikes/s to 107 spikes/s; Figure 4d and f). The firing rate was strongly dependent on the CV of the inhibitory conductance (Figure 4g). These findings establish that increases in the magnitude of the average inhibitory conductance suppress firing, whereas increases in the variability of the inhibitory conductance promote firing.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/89095/elife-89095-fig4-v1.jpg)\n\n**Figure 4.:** Dynamic clamp experiments and simulations were conducted with varied amplitudes and fluctuations in the total inhibitory conductance. (a) CbN neuron spiking observed for constant inhibitory conductances of the indicated amplitudes. (b) Summary of CbN neuron firing rates (n = 7 cells) during constant inhibitory conductances as in (a). (c) Inhibitory conductances with the same average conductance (56 nS) are shown for a constant conductance (far left) and for different cases with the numbers and sizes of inputs varied. (d) CbN neuron spiking is shown for dynamic clamp experiments with the inhibitory conductances in (c). (e) The coefficient of variation (CV) of the inhibitory conductance is plotted as a function of the input size. (f) CbN firing rate is plotted as a function of input size. (g) CbN firing rate is plotted as a function of the CV of the inhibitory conductance. (h) Normalized cumulative plots of conductances of three different input distributions (solid lines) drawn from the observed distribution (Figure 2f, red) and for the 40 \u00d7 5 nS inputs (dashed line). (I) CbN firing rates in dynamic clamp experiments that used the inhibitory conductances in (h) are plotted as a function of the CV of the inhibitory conductance. (j) Simulated CbN firing rates based on 1000 different input distributions randomly drawn from the observed distribution of input sizes (filled gray) and for 40 \u00d7 5 nS inputs (open circle) are plotted as a function of the CV of the inhibitory conductance. The three distributions used in dynamic clamp experiments in (i) are highlighted. The summary data are shown as the mean \u00b1 SEM.\n\nThe dependence of CbN firing on the variability of the inhibitory conductance prompted us to examine the influence of variable input sizes on the basal firing rate of CbN neurons. Three different distributions of PC input sizes drawn from the observed distribution of input sizes (Figure 2f, red) with different CVs and a total conductance value of 200 nS (Figure 4h, solid lines), together with 40 uniform 5 nS PC inputs (Figure 4h, dashed line), were used to generate inhibitory conductances for dynamic clamp experiments. Even though the average conductance was the same, the firing rates for the three nonuniform input sizes were higher than for uniform inputs (38, 50, and 67 spikes/s vs. 27 spikes/s; Figure 4i). The differences in the firing rates are readily explained by the CV of total conductances generated from different-size inputs (Figure 4i). We also simulated the firing evoked by 1000 different distributions of PC input sizes drawn from the observed input size distribution with a total conductance size of 200 nS and observed a broad range of firing rates that depended on the CV of the total inhibitory conductance (Figure 4j). Both dynamic clamp experiments and simulations showed that for the same total inhibitory conductance, CbN neuron firing rates are always higher for nonuniform inputs than for uniform inputs as a result of the higher CV of the inhibitory conductance (Figure 4i and j).\n\n### Different-size inputs reliably transfer a rate code\n\nThe ability of different-size PC inputs to convey a rate code to CbN neurons was unclear, given that both the magnitude and variability of total inhibition can influence the firing rates of CbN neurons. We first addressed this issue using simulations, in which we varied the firing rates of each PC input individually to determine how faithfully they convey a rate code. Simulations were similar to those of Figure 2g and h, but with the firing rates for each input varied between 0 and 160 spikes/s while maintaining the average firing rates of other inputs at 80 Hz (\u2018Methods\u2019). Varying the firing rate of individual PC inputs led to an approximately linear, negatively correlated change in CbN firing rate (Figure 5a). Single large inputs were surprisingly effective at regulating the firing rates of CbN neurons. In this example, varying a single 37 nS input from 0 to 160 spikes/s decreased the output firing frequency from 126 spikes/s to 35 spikes/s (Figure 5a, red). There was a remarkably consistent relationship between the firing rates of CbN neurons and the total inhibitory conductances (Figure 5b). The slope of the CbN output firing rate/PC input firing rate was negatively correlated with the input size for the example neuron (Figure 5c, color coded) and for nine other neurons (Figure 5c, gray), and when different scaling factors were used (Figure 5\u2014figure supplement 1). We also address this issue using dynamic clamp experiments in which the frequencies of small, medium, or large inputs were varied (Figure 5\u2014figure supplement 2) and found that the ability of individual inputs to suppress CbN neuron firing also depended on input size (Figure 5d). These studies establish that individual PC inputs convey a rate code that depends on input size.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/89095/elife-89095-fig5-v1.jpg)\n\n**Figure 5.:** Simulations and dynamic clamp experiments were conducted with the firing rates of PC inputs varied. (a) Simulations with different-size inputs drawn from the distribution in Figure 2f and the firing rates of each input were varied. The firing rates of cerebellar nuclei (CbN) neurons are plotted as a function of the firing rate of the varied PC input, with the color indicating the input size. (b) The firing rates of CbN neurons in (a) are plotted as a function of the total inhibitory conductance (Gi) resulting from varying the firing rate of each PC input. The color scale is the same as in (a). (c) The slopes of CbN output firing rates vs. PC input firing rates are plotted for different-size inputs for the simulated CbN neuron in (a) and (b) (black), and nine other neurons with different input size distributions (gray). (d) Dynamic clamp experiments were performed with small (16 \u00d7 3 nS, green), medium (10 \u00d7 10 nS, blue), and large (2 \u00d7 30 nS, red) inputs. The firing rates of either all small, all medium, or all large inputs were varied (Figure 5\u2014figure supplement 2). The slope of CbN output firing rate vs. PC input firing rate divided by the number of inputs is plotted for different-size inputs.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/89095/elife-89095-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Similar to the simulation in Figure 5a\u2013c, but with a scaling factor of 0.5 for the input sizes. (a) Simulations with different-size inputs drawn from the distribution in Figure 2f and the firing rates of each input were varied. (b) The firing rates of CbN neurons in (a) are plotted as a function of the total inhibitory conductance (Gi) resulting from varying the firing rate of each PC input. (c) The slope of CbN output firing rate vs. PC input firing rate is plotted for different inputs for the simulated CbN neuron in (a) and (b) (black), and for nine other neurons with different input distributions (gray). (B) As in (A), but with a scaling factor of 1.5 for the input sizes.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/89095/elife-89095-fig5-figsupp2-v1.jpg)\n\n**Figure 5\u2014figure supplement 2.:** The firing rates of either small, medium, or large Purkinje cell (PC) inputs were varied from 0 to 160 spikes/s. (a) The firing rates of either small (green), medium (blue), or large (red) inputs were varied every 2 s while the firing rates of the other inputs were maintained at 80 spikes/s. (b) The resulting average inhibitory conductances for the three different conditions are shown. (c) The resulting average coefficient of variation (CV) of the inhibitory conductances is shown. (d) The firing rates of cerebellar nuclei (CbN) neurons with the conductances in (a\u2013c) are shown as individual cells (n = 9, gray) and their average (black). (e) Quantification plot for (b). Total inhibitory conductance is plotted as a function of the firing rate of the varied PC inputs. Elevating the firing rates of all size inputs increased the amplitude of the total inhibitory conductance. Varying the firing rate of all medium inputs had larger effects because of their larger contribution to the inhibitory conductance. (f) Quantification plot for (c). The CV of the total inhibitory conductance is plotted as a function of the firing rate of the varied PC inputs. Eliminating the firing of either the small or medium inputs increased the CV of the inhibitory conductance, whereas eliminating the firing of the large inputs decreased the CV of the inhibitory conductance. (g) Quantification plot for (d). The firing rates of CbN neurons are plotted as a function of the firing rate of the varied PC inputs. (h) The firing rates of CbN neurons are plotted as a function of the total inhibitory conductance (Gi). (I) The firing rates of CbN neurons are plotted as a function of the CV of total inhibitory conductance (Gi CV). The summary data are shown as the mean \u00b1 SEM.\n\n### Synchronous firing of uniform- or variable-size PC inputs\n\nPrevious dynamic clamp studies based on uniform PC input sizes revealed the potential importance of synchrony in regulating the firing of CbN neurons (Gauck and Jaeger, 2000; Person and Raman, 2012a). We extended this approach to assess the effects of synchrony for different-size PC inputs. We performed dynamic clamp experiments with both uniform-size inputs (Figure 6a) and variable-size inputs (Figure 6b) in each cell. We first looked at the effects of synchrony on the firing rate of CbN neurons. In the absence of synchrony, uniform-size inputs generated a baseline conductance with low variability and CV (Figure 6aii and iii) that resulted in a low baseline firing rate of CbN neurons (25 spikes/s; Figure 6aiv). Synchronizing either 25 or 50% of the uniform inputs (Figure 6ai) increased the variability (Figure 6aii) and the CV (Figure 6aiii) of the total inhibitory conductance, which then resulted in a robust increase in the firing rate of CbN neurons (45 spikes/s with 25% synchrony, 1.8-fold; 88 spikes/s with 50% synchrony, 3.5 fold; Figure 6aiv and v; Figure 6c, black).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/89095/elife-89095-fig6-v1.jpg)\n\n**Figure 6.:** Dynamic clamp experiments were conducted with either uniform (a) or variable inputs (b) in which the conductance was kept constant, but the synchrony of the inputs was varied. (a) (i) The extent of synchrony of uniform-size inputs (40 \u00d7 5 nS) is varied. (ii) The inhibitory conductance in which the synchrony of inputs is varied as in (a). (iii) The coefficient of variation (CV) of the inhibitory conductance. (iv) CbN neuron firing rate with the conductance (average, black; individual cells, n = 14, gray). (v) The normalized firing rate for the cells in (iv). (b) Similar experiments were performed on the same cells as in (a), but for inputs of variable-sizes (small: 16 \u00d7 3 nS, green; medium: 12 \u00d7 8 nS, blue; large: 2 \u00d7 30 nS, red). In some cases, all types of inputs were synchronized (purple), in others only the small inputs (green) or the medium inputs (blue) were synchronized. (c) CbN neuron firing rate as a function of the percentage of synchronous inputs. (d) CbN neuron firing rate as a function of the total amplitude of synchronous inputs. (e) The normalized CbN firing rates as a function of the amplitude of the synchronized inputs. (f) CbN neuron firing rate as a function of the CV of the inhibitory conductances. (g\u2013j) Similar plots to (c\u2013f), but for simulations with different-size inputs (dark purple, based on a single distribution, light purple based on nine other different distributions) and uniform inputs (40 \u00d7 5 nS, black circles). (k) Violin plots showing the simulated CbN neuron firing rate with 100 different distributions of different-size inputs (not syn), and the two largest inputs or the two smallest inputs synchronized. (l) As in (k) but normalized to the nonsynchronized firing rate. The summary data are shown as the mean \u00b1 SEM.\n\nFor nonuniform inputs (small: 16 \u00d7 3 nS; medium: 8 \u00d7 12 nS; large: 2 \u00d7 30 nS), the generated conductance was more variable (Figure 6bii and iii), resulting in a higher baseline firing rate of CbN neurons (43 spikes/s; Figure 6biv), which is similar to Figure 4h\u2013i. Synchronizing 50% of all inputs (small, medium, and large inputs, Figure 6bi, left) increased the variability (Figure 6bii, left) and CV (Figure 6biii, left) of the conductance, which then elevated the firing of CbN neurons from 43 spikes/s to 91 spikes/s (Figure 6biv, left; Figure 6c). The firing rates for 50% synchrony with nonuniform and uniform inputs were comparable (Figure 6aiv and biv), but because baseline firing rates were higher for nonuniform inputs, their relative increase in CbN firing was much lower (2.1-fold for nonuniform inputs compared to 3.5-fold for uniform inputs, p<0.0001; Figure 6av and bv). We also examined the effect of synchronizing 25 or 50% of small or medium inputs (Figure 6bi, right). Synchronizing 25 or 50% of either small or medium inputs barely increased the variability and CV of the conductance and led to minimal increases in the firing of CbN neurons (Figure 6bii\u2013v, right). These observations suggest that the effects of PC synchrony primarily depend on the total amplitude of synchronized inputs (Figure 6d and e). The firing rates of nonsynchronized and synchronized inputs for either uniform or nonuniform input sizes are readily explained by the influence of the CV of the inhibitory conductance on the CbN firing rate (Figure 6f).\n\nSimulations allowed us to explore the effects of a full range of synchrony levels, which would be impractical to test experimentally (Figure 6g\u2013j). We examined uniform inputs (40 \u00d7 5 nS) and determined the effect of synchronizing 1, 2, \u2026 20 inputs (Figure 6g\u2013j, black open circles). We also examined nonuniform-size inputs drawn from the full distribution of sizes (Figure 2f, red), with a total conductance of 200 nS, and determined the firing rates evoked when we synchronized different combinations of inputs (Figure 6g\u2013j, dark purple: for one distribution of input sizes; light purple: for nine other distributions of input sizes). The effects of synchrony on firing rates and the dependence on the CV of the conductance were qualitatively similar for simulations (Figure 6g\u2013j) and dynamic clamp experiments (Figure 6c\u2013f). There was a great deal of scatter in the firing rates plotted as a function of the percentage of synchronized inputs (Figure 6g, dark purple), but much less scatter when the firing rates were plotted as a function of the total amplitude of the synchronized inputs (Figure 6h, dark purple). This is consistent with our observation that synchronizing many small- or medium-size inputs does not have much effect on the firing frequency of CbN neurons (Figure 6bi\u2013v, right; Figure 6c and d). For nonuniform inputs, synchrony has less influence on firing rates because the baseline firing rates are higher (Figure 6e and i). Nonetheless, synchrony of even a small number of large inputs can robustly elevate firing rates. As shown in simulations, synchronizing the two largest inputs can elevate CbN firing rate by approximately 20%, while synchronizing the two smallest inputs barely changed CbN firing rate (Figure 6k and l).\n\nWe also examined the influence of PC synchrony on the spike timing of CbN neurons in dynamic clamp experiments of Figure 6. Synchrony strongly altered the cross-correlograms of PC inputs and CbN firing, especially for the uniform-size inputs (Figure 7a and b). For uniform inputs (5 nS), single unsynchronized inputs weakly influenced the spike timing of CbN neurons (19% increase; 62% decrease; Figure 7a, left). Also, 50% synchrony of uniform inputs silenced CbN neurons for several milliseconds, and this was proceeded by a prominent increase in CbN spiking (89% increase; Figure 7a, right). This preceding increase in CbN spiking is similar to what was observed for medium and large inputs due to the autocorrelation function of PC firing (Figures 2 and 3) and reflects a disinhibitory period due to the synchronous pauses in PC spikes. This indicates that many small, perfectly synchronized uniform inputs function equivalently as a single large input in controlling the spike time of CbN neurons. For asynchronous nonuniform inputs, as in Figure 2, the influence of individual inputs on the timing of CbN firing depended on the size of the input, and single large inputs could have a very large influence on the timing of CbN spiking (47% increase; 100% decrease; Figure 7b, left, red). Synchronizing 50% of all nonuniform inputs generated a cross-correlogram similar to that of synchronizing 50% uniform inputs (Figure 7a and b, right). The strength of excitation (Figure 7c, top), amplitude of inhibition (Figure 7c, bottom), and duration of inhibition (Figure 7d) were dependent on the synchrony amplitude, as was the case for simulations (Figure 7e and f). For both dynamic clamp experiments and simulations, synchronizing the same amplitude of inputs led to larger timing effects for uniform inputs than for nonuniform inputs (Figure 7c\u2013f), likely because the CbN firing rates with PC synchrony are lower for uniform inputs. These findings establish that PC synchrony and single large inputs are functionally equivalent in controlling the spike timing of CbN neurons, and for nonuniform inputs, the effects of synchrony on CbN spike timing depend on the total size of synchronized inputs.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/89095/elife-89095-fig7-v1.jpg)\n\n**Figure 7.:** (a) Top: the cross-correlograms of PC input and CbN neuron spiking for nonsynchronous inputs (left) and 50% synchronous inputs (right) with uniform-size inputs. Individual cells (gray) and averages (black) are shown. Lower: as above, but normalized to the baseline firing rate. (b) As in (a) but for different-size inputs (as in Figure 6). The cross-correlograms of small (green), medium (blue), and large (red) inputs for unsynchronized inputs (left) and 50% synchronous inputs (right, purple) are shown. (c) Summary plots of the excitation (e), inhibition (I) as a function of the amplitude of synchronized inputs. (d) As in (c) but for half-decay time (t1/2). (e, f) As in (c, d), but for simulations. The summary data are shown as the mean \u00b1 SEM.\n\n### Synchronously pausing uniform- or variable-size PC inputs\n\nBrief synchronous pauses of PC firing can also promote CbN neuron firing at rapid time scale (Gauck and Jaeger, 2000; Han et al., 2020). Such pauses in PC firing can arise from inhibition by the synchronous firing of electrically coupled MLIs (Lackey et al., 2023), CF synaptic activation of MLIs (Coddington et al., 2013; Szapiro and Barbour, 2007), and synchronous CF suppression of PC firing through ephaptic signaling (Han et al., 2020). Dynamic clamp studies with uniform-size inputs have shown that pausing a fraction of PC inputs reliably activates CbN neurons (Han et al., 2020). Here we used dynamic clamp studies and simulations to explore the effects of PC pauses on CbN neuron firing with uniform or nonuniform input sizes (Figure 8a). We first performed dynamic clamp experiments in which we paused the firing of 25, 50, and 100% of the PC inputs for 2 ms (Figure 8b). This is illustrated by raster plot showing that inputs from 50% of the PCs were briefly eliminated (Figure 8b, gray box). Pauses in PC firing led to large, short-latency increases in CbN neuron firing for both uniform inputs (Figure 8c; Han et al., 2020) and nonuniform inputs (Figure 8c and d). For nonuniform inputs, we compared the effects of pausing the firing of different-size ranges of PC inputs by pausing the smallest, largest, and middle range of inputs. The larger the size of the paused inputs, the larger the resulting increases in CbN neuron firing (Figure 8c and d), and the magnitude of firing rate increases were determined by the total amplitude of the paused inputs (Figure 8e). Pausing produced larger relative increases in CbN neuron firing for uniform-size PC inputs than that for nonuniform PC inputs (Figure 8c\u2013e), which is likely a secondary consequence of the higher baseline firing frequencies for nonuniform inputs. Simulations where the firing of random combinations of PC inputs was paused for 2 ms produced similar results (Figure 8f). Therefore, brief pauses in PC firing evoke transient increases in CbN neuron firing, and the effects are determined by the total amplitude of paused PC inputs. We also found that CbN firing quickly returned to baseline levels after the transient increase following brief PC pauses (Figure 8c). Consequently, PC pauses only moderately increased the average firing rates of CbN neurons, as shown for a pause interval of 50 ms (Figure 8g). The pause interval did not influence the properties of the transient increases in CbN firing evoked by pauses, but did affect the magnitude of the changes in average firing frequency. For 20 ms, 50 ms, and 100 ms intervals between the 2 ms pauses where all PC spikes were eliminated, the average CbN firing frequency increase was 3.2-, 1.9-, and 1.5-fold for uniform inputs, and 2.1-, 1.5-, and 1.2-fold for nonuniform inputs, respectively. In summary, while the transient increase in CbN firing by PC pauses primarily depends on the total amplitude of paused PC inputs, the overall changes of CbN firing rate at longer time scales depend on both the total amplitude of paused PCs inputs and the pause intervals.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/89095/elife-89095-fig8-v1.jpg)\n\n**Figure 8.:** Dynamic clamp experiments and simulations were conducted with either uniform or variable inputs in which different percentages of PC inputs were paused for 2 ms. (a) Normalized cumulative plots of conductances of PC inputs for a uniform (40 \u00d7 5 nS, dashed line) and a variable distribution (purple). (b) Raster plot shows example spiking for 40 PC inputs with spikes eliminated in a 2-ms period (gray region) in 50% of the PCs. (c) Normalized histograms showing the relative changes in CbN neurons firing for uniform (black) and variable (colored) PC inputs, when PC inputs were paused for 2 ms in 25 and 50% of the inputs. For variable inputs, three different populations of inputs were paused: the smallest, those in the middle of the distribution, and the largest inputs. Average values (bold) and individual cells (faint lines, n = 8) are shown. (d) The normalized CbN firing rates as a function of the percentage of paused inputs for uniform (black symbols fit with solid black line) and variable inputs (colored). (e) The normalized CbN firing rates as a function of the total amplitude of paused inputs for uniform (black) and variable inputs (colored). Fits are shown for uniform inputs (solid black line) and variable inputs (dashed line). (f) As in (e), but for simulations where different subsets of PC inputs were paused for 2 ms. (g) The normalized overall CbN firing rates as a function of the total amplitude of paused inputs for uniform (black) and variable (purple) inputs from a simulation where different subsets of PC inputs were paused for 2 ms every 50 ms. Fits are shown for uniform inputs (solid black line) and variable inputs (dashed purple line). The summary data are shown as the mean \u00b1 SEM.\n\n## Discussion\n\nOur finding that single PC to CbN inputs are highly variable in size has important implications for how PCs control the firing of CbN glutamatergic projection neurons (Figure 9). We find that individual PCs can strongly influence the firing of CbN neurons, and that PC to CbN synapses are well suited to both implement rate codes and precisely regulate the timing of CbN neuron firing (Figure 9a\u2013c).\n\n![Figure 9.](https://cdn.elifesciences.org/articles/89095/elife-89095-fig9-v1.jpg)\n\n**Figure 9.:** (a) Left: schematic showing that CbN neurons are innervated by numerous PCs that have very different input strengths. Right: examples of unitary inhibitory conductances from PCs that range in size from very weak (green), medium-sized (blue), to strong (red) (adapted from Figure 1a\u2013c). (b) CbN neuron firing rate as a function of input PC firing rate showing linear rate code conveyed by a weak (green) and a strong (red) PC input. (c) PC-CbN neuron cross-correlograms show the effects of a weak (green) and a strong (red) PC input. A single strong PC input is highly effective at controlling CbN neuron firing on rapid time scales. As expected, PCs transiently suppress CbN neuron firing, but there is also a preceding increase in CbN firing that arises from the statistics of PC firing and their refractory periods. (d) For the same total inhibition, the variability of the total inhibitory conductance is much larger for variable-size inputs than for uniform input sizes. (e) Compared to uniform-sized inputs, variable PC input sizes increase the baseline firing rate of CbN neurons as a result of elevated variability in the total inhibitory conductance (d). This has important secondary consequences. For variable PC input sizes, elevated basal CbN neuron firing rates reduce the ability of synchronizing or transiently pausing PC firing to promote CbN neuron firing.\n\n### Comparison to previous studies\n\nThe approach we took to examine the influence of PCs on CbN neuron firing is similar to that used in previous studies of the influence of PCs on CbN neuron firing (Gauck and Jaeger, 2000; Pedroarena and Schwarz, 2003; Person and Raman, 2012a), but we build upon those studies in several ways. As in earlier studies, we determined the properties of individual PC inputs and confirmed that they had very rapid kinetics (Person and Raman, 2012a). We provide a much more extensive characterization of input sizes (n = 157) than previous studies and show that the distribution of input sizes is skewed, with the largest inputs almost 100 times larger than the smallest inputs (Figure 1). The high Cl- concentration internal we used in our recordings provides superior stability and sensitivity to detect such variability in input size. We then used dynamic clamp to study how PCs control the firing of CbN neurons as in Person and Raman, 2012a, but instead of assuming uniform PC input sizes, we based the PC input sizes on the measured PC-CbN conductances (Figure 2). We first confirmed that many small desynchronized PC inputs are highly effective at suppressing CbN firing, and that synchrony effectively controls the timing and rate of PC firing for small uniform-size PC inputs (Person and Raman, 2012a). We then revealed that the variable PC input sizes have important implications for PC-CbN transmission. A single large input is functionally equivalent to many small, perfectly synchronized inputs. This allows PC inputs to influence the rate and timing of CbN firing as previously proposed (Person and Raman, 2012a), but without requiring a high degree of PC synchrony. We also extended previous studies by using realistic PC firing patterns in our dynamic clamp experiments. This allowed us to determine cross-correlograms for individual inputs and led to the finding that individual inputs have a surprisingly large effect on CbN firing. Previously it was shown that synchronous PC inputs initially suppress CbN neuron firing, which is followed by a subsequent increase in firing (Person and Raman, 2012a). Here we found that for spontaneously firing PCs, a period of strong disinhibition precedes suppression by a PC input (Figure 3). Lastly, we complemented our dynamic clamp studies with simple simulations that faithfully reproduced our experimental findings, which allowed us to explore the influence of different parameters.\n\n### The variable distribution of PC-CbN input sizes\n\nWe showed that there are developmental differences in the distributions of PC-CbN synapse sizes. In older animals (P23\u201332, Figure 1a\u2013c and e\u2013f, n = 83), the PC input sizes are more variable and there are more large inputs. This developmental transition indicates that PC-CbN synapses are refined during maturation, potentially because of plasticity mechanisms (Aizenman et al., 1998; Broersen et al., 2023; Morishita and Sastry, 1996; Ouardouz and Sastry, 2000). The implications of such variability in the strength of PC-CbN synapses in cerebellar computation can be shown by a recent study describing how the cerebellum encodes vestibular and neck proprioceptive information (Zobeiri and Cullen, 2022). Each PC encodes both vestibular and proprioceptive information, but some CbN neurons exclusively encode body motion and others encode vestibular information (Brooks and Cullen, 2009; Zobeiri and Cullen, 2022). It was proposed that this arises from the linear summation of converging PCs with different weights (Zobeiri and Cullen, 2022). Our observation of the variable distribution of PC-CbN inputs provides evidence for the requisite different weights of PC inputs.\n\nThe developmental changes in synaptic strengths we observe are reminiscent of other synapses. For retinal ganglion cell inputs to lateral geniculate nucleus, in young mice, numerous weak inputs innervate each LGN neuron, but in mature mice, this gives way to highly skewed input sizes that include some very strong inputs (Hooks and Chen, 2020; Jiang et al., 2022; Liang and Chen, 2020; Litvina and Chen, 2017). Excitatory inputs in the superior colliculus are refined in a comparable manner (Lu and Constantine-Paton, 2004). For inhibitory inputs to LSO neurons, in P1\u20135 mice there are many small and no large inputs, but by P9\u201314 the input sizes are highly skewed, and some inputs are very large (Gjoni et al., 2018; Kim and Kandler, 2003). In the cortex, input sizes are highly variable and are often approximated by a lognormal distribution (Buzs\u00e1ki and Mizuseki, 2014; Dorkenwald et al., 2022; Melander et al., 2021). Thus, the distribution of PC to CbN input sizes we observe in P23\u201332 mice is similar in many ways to the distribution of input sizes of other types of synapses. Moreover, network simulations of balanced excitatory and inhibitory circuits have shown that adding variability to the distribution of input sizes disrupts the classical asynchronous irregular state of network activity and leads to rich, nonlinear responses (Brunel, 2000; Wardak and Gong, 2021).\n\n### Nonuniform PC input sizes elevate the basal firing rate of CbN neurons\n\nAn important consequence of having highly variable PC-CbN inputs is that it elevates the basal firing rates of CbN neurons (Figures 4, 6,, 9d and e). With the same total inhibition, uniform small PC inputs are particularly effective at suppressing the firing of CbN neurons. Nonuniform-size PC inputs elevate the CV of inhibition, increasing the fluctuations of membrane potential and elevating the firing of CbN neurons. Simulations based on an integrate-and-fire model with a passive cell and a well-defined firing threshold were able to replicate the findings of dynamic clamp experiments. This suggests that CbN neuron firing is effectively driven by the membrane potential fluctuations generated by PC inputs, despite the presence of many excitatory inputs and intrinsic conductances. The high basal firing rate of CbN neurons generated by nonuniform-size inputs helps explain the relatively high firing rates of CbN neurons in vivo amid strong PC inhibition (10\u201350 Hz) (Eccles et al., 1974; LeDoux et al., 1998; McDevitt et al., 1987; Rowland and Jaeger, 2008; Rowland and Jaeger, 2005; Thach, 1975; Thach, 1970; Thach, 1968). Membrane potential fluctuations have also been shown to be important to spike generation in other cell types (Kuhn et al., 2004; Tiesinga et al., 2000; Yarom and Hounsgaard, 2011).\n\n### Implications of nonuniform input sizes on rate codes\n\nOur findings established that there is an inverse linear relationship between the firing rates of each PC input and the targeted CbN neuron (Figures 5 and 9b; Person and Raman, 2012b; Wu and Raman, 2017). The extent to which the firing rate of an individual PC input regulates the firing rate of a CbN neuron simply depends on the size of the input, and our simulations suggest that single PCs are capable of regulating the firing of a CbN neuron from 35 to 125 spikes/s (Figure 5g; for a 37 nS input varied from 0 to 160 spikes/s). Regardless of the sizes of the input that are varied, the changes in the firing rate of CbN neurons can be readily explained by the alterations in the total inhibitory conductance. It was not obvious prior to these experiments that there would be such a simple relationship between input size, input firing rate, and output firing rate, given that CbN firing rates depend on both the amplitude and CV of inhibition. In practice, fluctuations in the inhibitory conductance are quite large for variable-size inputs, and changing the rate of one input has a relatively small influence on the CV of the inhibition, so the magnitude of the inhibitory conductance dominates the effect. This model allows all different-size PC inputs to reliably convey a simple rate code, with the large PC inputs being particularly effective.\n\n### Implications of nonuniform inputs on temporal codes\n\nPreviously it was also thought that an individual PC input has a small influence on the spike timing of a CbN neuron, and that it is necessary to synchronize the firing of many PCs to precisely entrain CbN firing (Heck et al., 2013; Person and Raman, 2012a). Our cross-correlation analysis shows that this is not the case: large inputs (30 nS) eliminated CbN neuron firing for several milliseconds, and even small inputs (3 nS) transiently reduced CbN neuron firing by almost 40% (Figure 2). The sizes of PC inputs, the rapid kinetics of PC-CbN IPSCs (Person and Raman, 2012a), the high firing rate of PCs (Thach, 1968; Zhou et al., 2014), and the strong tendency of CbN neurons to depolarize (Raman et al., 2000) together shape the pattern of cross-correlograms and contribute to precise control of CbN neuron spike timing (Najac and Raman, 2015; \u00d6zcan et al., 2020). Thus, PC-CbN synapses are well suited to regulating both the rate and precise timing of CbN firing (Figure 9b and c).\n\nSurprisingly, there was an excitatory response in CbN neuron firing preceding the suppression by PCs in the cross-correlogram of PC inputs and CbN neuron firing (Figure 2). This excitation is a consequence of the autocorrelation function in PC firing (Ostojic et al., 2009), and it will be most prominent for rapidly firing cells (Figure 3). When PCs fire at frequencies lower than 50 spikes/s, the excitatory component is small and lasts for several milliseconds, but when PCs fire at over 100 spikes/s, the excitatory component increases in amplitude and decreases in duration. This indicates the firing rates of PCs will affect the way they control the timing of CbN neuron firing. The observation that PCs in zebrin\u2013 regions of the cerebellum tend to fire faster than PCs in zebrin+ regions suggests different timing control of CbN neurons by zebrin+ and zebrin\u2013 PCs (Zhou et al., 2014). The effective excitation might also be present for other inhibitory synapses (Arlt and H\u00e4usser, 2020; Blot et al., 2016).\n\nThe observed distribution of PC to CbN synapse amplitudes, combined with the firing properties of PCs in vivo, allow us to make several predictions about PC-CbN neuron cross-correlograms in vivo. It is expected that PCs to CbN synapses are sufficiently large that prominent suppression should be apparent in cross-correlograms in vivo. The variability of PC-CbN synapses amplitudes suggests that there will be considerable variability in the extent and duration of spike suppression that is comparable to Figure 2. Single large inputs are expected to eliminate CbN neuron firing for several milliseconds, but smaller, weaker connections are expected to be more prevalent. Our findings also predict a disinhibitory component preceding the suppression that will be particularly large for rapidly firing PCs.\n\n### Implications for the influence of synchronous firing and synchronous pauses of PCs\n\nVariable PC input sizes have important implications for how PC synchronous firing and pauses regulate the firing of CbN neurons. First, the relative influence of PC synchrony on the firing rate of CbN neurons is reduced because variable input sizes elevate the basal firing rates of CbN neurons (Figures 4, 6,, 9d and e). Second, the effect of PC synchrony depends upon which inputs are synchronized. Synchronizing 50% of the small inputs (corresponding to 31% of the total inputs) increased CbN firing by just 13%, whereas synchronizing the two largest PC inputs to a CbN neuron increased the CbN firing rate by 21% (Figure 6k and l). These findings suggest that a high degree of synchrony is not prerequisite for an appreciable influence. Therefore, studies that fail to detect a high degree of synchrony in PC simple spike firing in vivo (Herzfeld et al., 2023b) do not exclude the physiological relevance of PC synchrony in regulating CbN neurons. Similarly, we show that the relative influence of PC pauses is also reduced with variable-size inputs as a secondary effect of the high baseline firing rate, and is also determined by the total amplitude of paused inputs. Thus, the influence of PC inputs on their CbN targets depends upon the amplitudes of the different inputs, the firing patterns of the PCs, and the degree to which they are synchronized or paused.\n\n### Overall summary\n\nOur initial findings that PC to CbN synapses are highly variable in size (Figure 9a), and that some are extremely large, have important implications for how PCs regulated the firing of CbN neurons and the output of the cerebellum. We found that individual large PC inputs strongly suppress the average firing rates of CbN neurons (Figure 9b) and also transiently silence them for several milliseconds (Figure 9c), thereby allowing them to convey both rate information and precise temporal information. An important characteristic of the strong temporal control of CbN neuron firing by individual PC inputs and the statistics of PC firing is that in PC-CbN cross-correlograms, inhibition is preceded by an apparent increase in CbN firing that looks like excitation. We also found that nonuniform input sizes elevate baseline firing rates by increasing the variability of the inhibitory conductance (Figure 9d and e). This has the secondary effect of reducing the efficacy of synchronous firing and synchronous pauses in elevating CbN firing.\n\n## Methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Strain, strain background (Mus musculus)</td>\n      <td>C57BL/6</td>\n      <td>Charles River Laboratories</td>\n      <td>N/A</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>NBQX disodium salt</td>\n      <td>Abcam</td>\n      <td>Ab120046</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>(R,S)-CPP</td>\n      <td>Abcam</td>\n      <td>Ab120160</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Strychnine hydrochloride</td>\n      <td>Abcam</td>\n      <td>Ab120416</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>SR95531 (gabazine)</td>\n      <td>Abcam</td>\n      <td>Ab120042</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>CGP 55845 hydrochloride</td>\n      <td>Abcam</td>\n      <td>Ab120337</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>QX-314 chloride</td>\n      <td>Abcam</td>\n      <td>Ab120118</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Igor Pro</td>\n      <td>WaveMetrics (https://www.wavemetrics.com/order/order_igordownloads6.htm)</td>\n      <td>RRID:SCR_000325</td>\n      <td>Version 6.37</td>\n    </tr>\n  </tbody>\n</table>\n\n### Animals\n\nC57BL/6 wild-type mice (Charles River Laboratories) of both sexes aged P10\u2013P32 were used for acute slice experiments (for dynamic clamp experiments, P26\u2013P32). All animal procedures were conducted in accordance with the National Institutes of Health and Animal Care and Use Committee guidelines and protocols approved by the Harvard Medical Area Standing Committee on Animals (animal protocol #1493).\n\n### Slice preparation\n\nMice were anesthetized with ketamine/xylazine/acepromazine and transcardially perfused with warm choline ACSF solution (34\u00b0C) containing in mM 110 choline Cl, 2.5 KCl, 1.25 NaH2PO4, 25 NaHCO3, 25 glucose, 0.5 CaCl2, 7 MgCl2, 3.1 Na pyruvate, 11.6 Na ascorbate, 0.002 (R,S)-CPP, 0.005 NBQX, oxygenated with 95% O2/5% CO2. To prepare sagittal CbN slices, the hindbrain was removed, a cut was made down the midline of the cerebellum and brainstem, and the halves of the cerebellum were glued down to the slicing chamber. Sagittal slices (170 \u03bcm) were cut using a Leica 1200S vibratome in warm choline ACSF (34\u00b0C). Slices were transferred to a holding chamber with warm ACSF solution (34\u00b0C) containing in mM 127 NaCl, 2.5 KCl, 1.25 NaH2PO4, 25 NaHCO3, 25 glucose, 1.5 CaCl2, 1 MgCl2, and were recovered at 34\u00b0C for 10 min before being moved to room temperature for another 20\u201330 min until recordings begin.\n\n### Electrophysiology\n\nWhole-cell voltage/current-clamp recordings were performed on large neurons (>70 pF) in the lateral and interposed DN. These large cells are primarily glutamatergic projection neurons (Baumel et al., 2009; Turecek et al., 2016; Uusisaari et al., 2007).\n\nFor voltage-clamp recordings of unitary PCs inputs to CbN neurons, Borosilicate glass electrodes (1\u20132 M\u03a9) were filled with a high-chloride (ECl = 0 mV) internal containing in mM 110 CsCl, 10 HEPES, 10 TEA-Cl, 1 MgCl2, 4 CaCl2, 5 EGTA, 20 Cs-BAPTA, 2 QX314, and 0.2 D600, adjusted to pH 7.3 with CsOH. BAPTA was included to prevent long-term plasticity (Ouardouz and Sastry, 2000; Pugh and Raman, 2006; Zhang and Linden, 2006). The osmolarity of internal solution was adjusted to 290\u2013300 mOsm. Series resistance was compensated up to 80%, and the calculated liquid junction potentials were around 5 mV and were left unsubtracted. CbN neurons were held at \u201330 to \u201340 mV. All experiments were performed at 34\u201335\u00b0C in the presence of 5 \u03bcM NBQX to block AMPARs, 2.5 \u03bcM (R,S)-CPP to block NMDARs, 1 \u03bcM strychnine to block glycine receptors, and 1 \u03bcM CGP 55845 to block GABABRs, with a flow rate of 3\u20135 ml/min. A glass monopolar stimulus electrode (2\u20133 \u2009M\u03a9) filled with ACSF was placed in the white matter between the CbN and the cerebellar cortex to activate PC axons. Minimal stimulation was used to determine the amplitudes of single PC-CbN inputs. The stimulus intensity was adjusted so that synaptic inputs were activated in approximately half the trials in a stochastic manner. The sample size was achieved by performing as many recordings as possible within a limited period of time.\n\nFor dynamic clamp experiments, Borosilicate glass electrodes (3\u20134 M\u03a9) were filled with an internal containing (in mM) 145 K-gluconate, 3 KCl, 5 HEPES, 5 HEPES-K, 0.5 EGTA, 3 Mg-ATP, 0.5 Na-GTP, 5 phosphocreatine-tris2, and 5 phosphocreatine-Na2, adjusted to pH 7.2 with KOH. The osmolarity of internal solution was adjusted to 290\u2013300 mOsm. Series resistances were less than 15 M\u03a9 and were not compensated. Voltages were corrected for a liquid junction potential of 10 mV. Cells were held at \u201365 to \u201375 mV between trials. All experiments were performed at 34\u201335\u00b0C in the presence of 5 \u03bcM NBQX, 2.5 \u03bcM (R,S)-CPP, 5 \u03bcM SR 95531 (Gabazine), and 1 \u03bcM strychnine to block most synaptic transmission.\n\n### Dynamic clamp experiments\n\nThe total inhibitory conductance (200 nS) from all converging PCs in each CbN neuron was based on previous estimation of 40 PCs with a size of 5 nS (after depression) (Person and Raman, 2012a). Uniform-size inputs are studied in Figures 3, 4c\u2013g,\u20136. For the uniform inputs with different firing frequencies used in Figure 3, the number of the inputs was adjusted so that the total inhibitory conductances were the same for all groups (after depression, 12 \u00d7 20 nS at 49 Hz, 9 \u00d7 20 nS at 83 Hz, 6 \u00d7 20 nS at 122 Hz, and 9 \u00d7 20 nS for Poisson inputs). For the uniform inputs with different sizes used in Figure 4c\u2013g, the input sizes varied from 2.5 nS to 40 nS (after depression), and the number of inputs was varied to maintain a total inhibitory conductance of 200 nS. Forty PC inputs with a size of 5 nS were used in Figure 6.\n\nDynamic clamp experiments with different-size inputs were performed in Figures 2a\u2013e\u20134h\u2013i\u20146,\u20138. To generate different-size inputs reflecting the distribution of the unitary PC-CbN input conductances measured in P23\u201332 animals, the amplitudes of the unitary conductances were corrected for depression (\u00d7 0.4) and the effects of high Cl- internal (scale down by a factor of 2.3) (Bormann et al., 1987; Gjoni et al., 2018; Sakmann et al., 1983). In experiments where the effects on average firing frequency were determined (Figure 4h and i) and in Figure 8, input sizes were randomly drawn from the experimentally determined distributions of input sizes (Figure 2f, red) until the total inhibitory conductance reached 200 nS. In experiments where the spike-triggered averages were to be determined, we used a simplified distribution. We estimated the simplified distribution by computing the ratio and weighted averages for different ranges of input sizes. In Figures 2a\u2013e\u20135, we approximated the distribution with small (16 \u00d7 3 nS), medium (10 \u00d7 10 nS), and large (2 \u00d7 30 nS) inputs. Approximating the small inputs with 16 inputs of the same size made it possible to determine the spike-triggered average with a much better signal to noise than if the inputs were different sizes. We took a similar approach in Figure 6, but we adjusted the number and size of medium-size inputs to make it easier to assess the effects of 50 and 25% synchrony (16 \u00d7 3 nS small, 8 \u00d7 12 nS medium, and 2 \u00d7 30 nS large inputs).\n\nWe based the timing of PC firing (Figure 2\u2014figure supplement 1) on in vivo recordings from our previous study (Han et al., 2020). The average firing frequency ranges from 61 spikes/s to 180 spikes/s (Figure 2\u2014figure supplement 1a and b). The distribution of ISIs of firing in the 10 PCs was well approximated with lognormal functions (Figure 2\u2014figure supplement 1c), and the relationship between the mean and the standard deviation (sd) of lognormal distributions fits was well approximated with a linear function: sd = \u20130.00154 + 0.583 * mean (Figure 2\u2014figure supplement 1d). Therefore, we used this linear function to calculate the \u03c3 of a desired firing frequency (1/mean) and generated an artificial ISI distribution of PC firing based on lognormal function with the designated mean and sd. The ISI distributions of PC firing used in Figures 2 and 6 were artificial lognormal distributions with a firing frequency of 83 Hz (Figure 2\u2014figure supplement 1c) and 80 Hz (Figure 2\u2014figure supplement 1e and f), respectively. The three ISI distributions of PC firing with different firing frequencies used in Figure 3 are from in vivo recordings (Figure 2\u2014figure supplement 1a and b), and the Poisson distribution without a refractory period was generated with an exponential function aiming at a desired frequency (80 Hz). The ISI distribution of PC firing used in Figure 4 is from in vivo recordings with a firing frequency of 100 Hz (Figure 2\u2014figure supplement 1a and b). The ISI distributions of PC firing with different firing frequencies used in Figure 5 are artificial lognormal distributions generated from the \u03bc and \u03c3 of desired frequencies. The approach is shown for artificial lognormal distributions of 40, 80, 120, and 160 spikes/s (Figure 2\u2014figure supplement 1e and f). Individual PC spike trains were generated by randomly drawing ISIs from the designated ISI distribution, and spike trains from each PC were combined as a final spike train with the inputs from all PCs. This spike train was then convolved with a unitary PC input with a rise time of 0.1 ms and a decay time of 2.5 ms (Khan et al., 2022). The reversal potential for inhibitory conductances was set at \u201375 mV (after correcting for junction potential).\n\nExcitatory conductances were based on the AMPA component of mossy fiber (MF) excitatory postsynaptic currents (EPSCs) characterized in previous studies (Wu and Raman, 2017), with a rise time of 0.28 ms, a decay time of 1.06 ms, and an amplitude of 0.4 nS (reflecting depression). They estimated that 20\u2013600 MFs converged on each CbN neuron, with unknown firing frequencies, so the excitatory conductances were relatively unconstrained. We adjusted the frequency of MF EPSCs so that the basal firing rate of CbN neurons was maintained at 20\u201340 Hz in the presence of the inhibitory conductance. The average baseline excitatory conductance was 20\u201330 nS.\n\nTo avoid a drastic increase in spike frequency and the following adaptation of CbN neurons resulting from big changes in the variability of conductances, we ramped up the CV of the inhibitory conductances in the beginning of each trial so that the firing rate of CbN increased gradually from the hyperpolarization state. Each conductance was repeated in the same neuron for 3\u20134 trials as technical replicates. For synchrony experiments, PC inputs were synchronized 100% in their spike times. Therefore, synchronizing 10 5 nS inputs is equivalent to having one big input with a size of 50 nS.\n\n### Analysis\n\nRecordings were obtained using Multiclamp 700B (Molecular Devices), sampled at 50 kHz and filtered at 4 kHz, and collected in Igor Pro (WaveMetrics). Dynamic clamp recordings were performed with an ITC-18 computer interface controlled by mafPC in Igor Pro (WaveMetrics). Data were analyzed using custom-written scripts in MATLAB (MathWorks) and Igor Pro (WaveMetrics). Autocorrelation and cross-correlation analyses were performed by generating accumulative histograms of spikes distribution within a 20 ms time window centering all spikes from the reference file (self-reference for autocorrelation, and PCs spike times for cross-correlation), and normalized by the total spikes number of the reference file and the bin size of the histograms (i.e., the \u0394t). All summary data are shown as the mean \u00b1 SEM unless otherwise indicated. The distributions of unitary PC input sizes in young and juvenile animals in Figure 1f were compared with a Kolmogorov\u2013Smirnov test. The unpaired t-test was performed with Welch\u2019s correction.\n\n### Simulations\n\nSimulations were performed (Figures 2f\u2013h\u20134j\u20148f, g) to complement dynamic clamp experiments. A point-conductance, single-compartment model was generated to model the CbN neuron and its synaptic inputs. The membrane potential (V) of a CbN neuron with a membrane capacitance ($C_{m}$) follows the equation\n\n$$\nC_{m}\\frac{dV}{dt}=g_{E}tV_{E}-V+g_{I}tV_{I}-V+g_{L}V_{L}-V\n$$\n\nwhere $V_{E}=0$ mV and $V_{I}=\u221275$ mV are the excitatory and inhibitory reversal potentials, and $g_{E}t$ and $g_{I}t$ are time-dependent excitatory and inhibitory conductances. The leak was modeled by a constant leak conductance $g_{L}$ with a reversal potential $V_{L}$ . A spike occurs when the membrane potential $V$ of the model neuron reaches the threshold $\\theta$, at which point there is a refractory period of 2 ms during which the model neuron remains inactive, and the neuron is then reset to $V_{r}$ . $g_{E}t$ and $g_{I}t$ were generated as described for dynamic clamp experiments. Simulations were performed using the BRIAN simulation environment in Python. The simulation code is available on GitHub at https://github.com/asemptote/PC-DCN-different-size-inputs (Wardak, 2023).\n\nIn Figure 2f\u2013h, simulations were performed for 10 cells with input distributions drawn randomly from the corrected empirical input sizes (Figure 2f, red) such that the total conductance was 200 nS. Each cell was run for 160,000 s and cross-correlograms were computed for each input. The parameters used were $C_{m}=50$ pF, 20,000 excitatory events per second, $\\theta=-50$ mV, $V_{r}=-60$ mV, $g_{L}=8.8$ nS, and $V_{L}=-40$ mV. Inhibitory spike trains were randomly chosen by drawing ISIs from the empirically fitted lognormal distribution such that the mean rate was 83 Hz. These were repeated for input distributions drawn from a rescaled version of the input sizes with scaling factors of 0.5 (Figure 2\u2014figure supplement 3a) and 1.5 (Figure 2\u2014figure supplement 3b).\n\nIn Figure 4j, simulations were performed for 100 cells with input distributions drawn randomly from the corrected empirical input sizes, along with 200 cells with varying numbers of uniform-size inputs such that the total conductance was 200 nS. Each cell was run for 10 s, and the firing rates and inhibitory conductance CV were recorded. The generated inhibitory conductance waves were saved for use in experiments in Figure 4i. The parameters used were $C_{m}=200$ pF, 23,650 excitatory events per second, $\\theta=-50$ mV, $V_{r}=-60$ mV, $g_{L}=5$ nS, and $V_{L}=-10$ mV. For the cells with varying input sizes, inhibitory spike trains were randomly chosen by drawing ISIs from the empirically fitted lognormal distribution such that the mean rate was 80 Hz, while for the cells with uniform-size inputs, the ISIs were drawn from an in vivo recording with a firing frequency of 100 Hz (Figure 2\u2014figure supplement 1).\n\nIn Figure 5, simulations were performed for 10 cells with input distributions drawn randomly from the corrected empirical input sizes such that the total conductance was 200 nS. For each input to each cell, 16 simulations were run for 100 s where the rate of a given input was varied between 0 and 160 Hz while keeping the other inputs at a fixed rate (80 Hz). The average firing rate and mean inhibitory conductance were recorded. These were then repeated with input scaling factors of 0.5 (Figure 5\u2014figure supplement 1A) and 1.5 (Figure 5\u2014figure supplement 1B). Parameters used were as in Figure 4. Inhibitory spike trains were randomly chosen by drawing ISIs from the empirically fitted lognormal distribution such that the mean rate was 80 Hz.\n\nIn Figures 6g\u2013j and 7e and f, simulations were performed for 10 cells with input distributions drawn randomly from the corrected empirical input sizes such that the total conductance was 200 nS. For each cell, 100 simulations were run for 1600s where a random subset of the input sizes was synchronized, and the firing rate (Figure 6g\u2013j) and cross-correlation statistics (Figure 7e and f) were obtained as in Figure 2. Forty additional simulations were run in this manner for a cell with 40 uniform-size inputs, synchronizing a different number of inputs in each simulation. Parameters used were as in Figure 5.\n\nIn Figure 8 and g, simulations were performed with an input distribution drawn randomly from the corrected empirical input sizes such that the total conductance was 200 nS. Each cell was run for 16,000 s where spiking was eliminated from one of 100 random subsets of inputs for 2 ms in each 20 ms time period. The normalized peak CbN firing rate was determined by the averaged increase in firing relative to the baseline defined as the average rate over the 5 ms periods before the pause. The peak time used for each cell was determined by the histogram corresponding to 100% of the inputs paused. The parameters used were $C_{m}=70$ pF, 23,650 excitatory events per second, $\\theta=-50$ mV, $V_{r}=-60$ mV, $g_{L}=20$ nS, and $V_{L}=-49.9$ mV. A refractory period of 1 ms was used. Inhibitory spike trains were randomly chosen by drawing ISIs from the empirically fitted lognormal distribution such that the mean rate was 80 Hz. These simulations were repeated for a cell with uniform-size inputs where the parameters were kept the same apart from an excitatory rate of 25,000 events per second.\n\n### Code availability\n\nThe simulation code is available on GitHub at https://github.com/asemptote/PC-DCN-different-size-inputs.\n",
+      "created_at": "2025-12-04T04:09:15.569460Z"
+    },
+    {
+      "id": "3c3fc4c3-ad30-4bc7-9db2-d5e298ed3560",
+      "submission_id": "3d4cb05b-67e8-4121-8149-76aff209f4dc",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Sacha B Nelson, https://ror.org/05abbep66 Brandeis University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.89095.sa0](https://doi.org/10.7554/eLife.89095.sa0)\n\nThis important manuscript emphasizes some previously ignored aspects of synaptic communication between Purkinje neurons and their targets in the cerebellar nuclei. The evidence supporting the main conclusions is solid.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Sacha B Nelson, https://ror.org/05abbep66 Brandeis University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.89095.sa1](https://doi.org/10.7554/eLife.89095.sa1)\n\nOur editorial process produces two outputs: i) public reviews designed to be posted alongside the preprint for the benefit of readers; ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Implications of variable synaptic weights for rate and temporal coding of cerebellar outputs\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, and the evaluation has been overseen by Sacha Nelson as the Reviewing and Senior Editor.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\nAs you can see from the comments below, most of the concerns raised by reviewers can be addressed through textual changes. Both reviewers felt that the scholarship of the manuscript could be improved and that additional quantitative summary and statistical testing was warranted (for example the degree of increase of skewness).\n\nThere was less clear cut agreement over the conductance measurements. The concern was raised that the high chloride used distorts this measurement in ways that were not very convincingly controlled or justified. Possible solutions to this issue raised included:\n\n1) Redoing a subset of the measurements with more physiological chloride\n\n2) Providing a more rigorous analysis of the overestimate of the conductance (i.e. a more detailed justification of the correction factor used.\n\nReviewer #1 (Recommendations for the authors):\n\nI detail some of the main problems with this study below. Most of these issues are fixable.\n\n1. Scholarship issues. Many of the claims about background knowledge in the paper lack citations, and many of these \"claims\" are strawmen. A few, but not exhaustive examples:\n\na. \"Previously it was thought that PC-CbN synapses are uniformly small and that single PC inputs have little influence on the firing of CbN neurons.\" This statement is made repeatedly in the abstract, introduction, and results, yet no citation is provided but is essential. Undermining the point of the authors, the Person and Raman 2012 study shows a skewed distribution of unitary synaptic strengths of PCs. It also shows that a 10 nS input, equivalent to one input, is sufficient to suppress firing of a nuclear cell consistently (Figure S2 in that study). Person and Raman 2012 b discuss the potential anatomical underpinnings of skewed synaptic strengths. Here is the relevant text in 2012b: \"Perhaps more importantly, as the authors state explicitly, their \"apparently excessive\" numerical estimate for average convergence is based on the simplifying assumption that each Purkinje cell ramifies to the same extent on all nuclear cells. They point out, however, that Purkinje neurons consistently make non-uniform contacts onto nuclear cells, occasionally \"erupting\" into \"numerous (~50) boutons all in contact with the same cell body.\" Ram\u00f3n y Cajal similarly observed that each Purkinje neuron axon formed six to eight \"nests\" onto as many cells (Chan-Palay, 1977). Such dense terminal perisomatic plexes are also mentioned in other descriptions of Purkinje axonal arbors (Chan-Palay, 1977; Bishop et al., 1979; De Zeeuw et al., 1994; Wylie et al., 1994; Teune et al., 1998; Sugihara et al., 2009), suggesting that they are a common specialization of Purkinje neuron terminals. Palkovits et al. (1977) propose that each Purkinje neuron may have 3-6 primary targets, while providing weak input to many more, and conversely that nuclear cells may only receive strong somatic input from \"several\"-that is, a relatively small number of- Purkinje cells (see also Sugihara et al., 2009).\"\n\nb. The either-or nature of the synchrony vs rate coding hypotheses is not backed up by a citation \"Leading theories\" which ones?\n\nc. \"Individual PCs are thought to have limited influence on CbN firing\" this is another statement that is not backed up by any literature I am familiar with. Indeed Person and Raman show in a supplemental figure that the equivalent of single inputs effectively inhibit CbN cells.\n\nd. Paragraph 2 Introduction: \"a rate code does not apply\" \u2013 this is sloppy language that does not appropriately frame the state of the field. There are many possible explanations for deviations from inverse firing rate relationships, one of which is synchrony, but others include diverse excitatory afferents to the nuclei and cortex, neuromodulatory influence or other mechanisms.\n\n2. Some of the main experimental claims are either not novel, mischaracterize previous literature, or lack rigor themselves:\n\nA. \"The distribution of input sizes we observed in P10-20 animals was similar to previous studies (P13-29, n=30) (Person and Raman, 2012a), and the skewed distribution of input sizes was only apparent when many individual inputs were characterized in P23-32 mice.\" This conclusion is unconvincing. There is skew in both the young and the old populations, and if it's more skewed in the old is it more skewed than the overlapping age population shown before. I find this language borderline disingenuous. Moreover the cited study shows a skewed distribution of synaptic strengths.\n\nB. The estimate of the synaptic conductances is problematic. The use of high Cl- interferes with the measurement, then they engage in some hand-waving arguments to come to an unconstrained estimate of 3-30 nS. This is not well constrained and will introduce unnecessary confusion into the literature.\n\nC. There is too little statistical and quantitative information in the main text. For example, the first full paragraph of page 4 states: \"All inputs had effects on the timing of CbN neuron firing, but larger inputs had much bigger effects. As shown in the cross-correlograms of input timing and CbN neuron spiking, small inputs produced a small transient decrease in CbN neuron spiking, while medium sized inputs strongly reduced CbN neuron spiking, and large inputs transiently shut down CbN neurons for approximately 2 ms. No average or statistics are provided in the subsequent text either. This style makes it difficult to grasp the magnitude of any of these differences, and in any event, it seems obvious that graded inhibition would produce graded effect sizes.\n\nD. The text states that the refractory period is correlated with the amount of CbN firing and refers to Figure 3. I see no evidence that a correlation was computed from this figure, nor are the statistics of any correlation reported in the text. That said, the potential relationship between CbN firing and PC refractoriness is interesting, but poorly explained in the text. A clearer mechanistic insight would be valuable, beyond \"This excitation is a consequence of the autocorrelation function in PC firing\", which does not shed much light on the matter. It might be helpful to show the raster plots of spike-triggered inputs to better decipher relationships here. (Rasters for Figure 2D would also be valuable).\n\nE. For the data in Figure 5, what accounts for the very high firing rates of CbN neurons (200 spikes/s)? The plots in Figure 5 could be more intuitive with some work.\n\nReviewer #1 (Recommendations for the authors - second review):\n\nThe authors have thoroughly addressed my concerns. The revision beter frames the findings, both in terms of novelty and significance than the original submission. It will be of value to the field.\n\nReviewer #2 (Recommendations for the authors):\n\nMain concerns for the authors:\n\nThe manuscript is very dense and constitute an important dataset for the field. The use of dynamic clamp is very interesting and enhances experimental options. I have however important concerns that I think could help clarify the manuscript:\n\n\u2013 My first concern is the choice of the distribution with a different number of small, medium and large input size. I understand that it is necessary to keep the total conductance constant, but it raises a doubt on the relevance of the data in Figures 2 and 4c for example. Indeed, a few large inputs could be considered as many small inputs synchronized. Similarly, few large inputs obviously lead to a high CV by construction, while many small inputs reduce the CV. What is really tested in all these different protocols is a bit confusing.\n\n\u2013 How is played this distribution on PC inputs? In episodes or continuously?\n\n\u2013 A set of in vivo PC discharge is used, but where is it coming from?\n\n\u2013 The correction made to approximate conductance is somehow arbitrary. I would tone down the assumption that this is the first demonstration that PC-DCN inputs are large and variable. Indeed, in preceding studies, authors already suggested that PC-DCN inputs are quite large in the recordings, albeit with different recording conditions.\n\nIn Person and Raman, Nature 2012 \"The high unitary amplitude suggests that individual Purkinje-to-nuclear contacts are quite strong\", referring to an article that should be cited here as well:\n\nPedroarena, C. M. and Schwarz, C. Efficacy and short-term plasticity at GABAergic synapses between Purkinje and cerebellar nuclei neurons. J. Neurophysiol. 89, 704-715 (2003).\n\nActually the interplay between rate coding and temporal coding has been also addressed in:\n\n\u00d6zcan, O. O., Wang, X., Binda, F., Dorgans, K., De Zeeuw, C. I., Gao, Z., Aertsen, A., Kumar, A., and Isope, P. (2020). Differential Coding Strategies in Glutamatergic and GABAergic Neurons in the Medial Cerebellar Nucleus. The Journal of Neuroscience, 40(1), 159-170.\n\n\u2013 I am not a specialist in modeling, but I would imagine that since CbN neurons have active conductances (Ih, Cav3 channels), it is surprising that a simple integrate and fire reproduce fully CbN spiking behavior. The choice of model could be more discussed. In the MS, the discussion around rebound firing is also very limited.\n\n\u2013 The concept of the refractory period accounting for the excitatory effect preceding PC inputs is not well explained, and the simple hypothesis that spikes were elicited at the time of the lowest inhibitory conductance might be enough.\n\n\u2013 Figure 4 The frequency observed in CbN neurons seems much higher than in any other study. Similarly, what is the actual firing rate of neurons recorded in Figure 5 without inhibitory inputs?\n\n[Editors' note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Implications of variable synaptic weights for rate and temporal coding of cerebellar outputs\" for further consideration by eLife. Your revised article has been evaluated by Sacha Nelson (Senior Editor) and a Reviewing Editor.\n\nThe manuscript has been improved but there are some remaining issues that need to be addressed, as outlined below:\n\nSome additional modification of the text is warranted to address the remaining concern of Reviewer #2. In addition, a third reviewer was consulted who raised some of the same concerns raised earlier about statistical analyses of the underlying distribution and the validity of the extrapolation to measurements made in symmetrical chloride. Perhaps some of the points raised to address these issues in the previous reply to reviewers could be included in the manuscript to shore up these points.\n\nReviewer #2 (Recommendations for the authors):\n\nThe authors have definitely improved their manuscript, results are better explained and discussed. Based on my previous review, I would have two remaining requests:\n\n\u2013 Related to Fig2g and my question about rebound firing, the authors answered\n\n\"With regard to the issue of rebound firing, under our experimental conditions, we see no indication of rebound firing\". In Fig2g, it seems that a rebound firing occurs for large inputs. It could be important to mention it as synchronization (e.g. by climbing fiber inputs) would also give the same outcome.\n\n\u2013 Related to the discussion about input size vs synchrony, uniform vs nonuniform inputs, I think that a summary figure would help catch the take-home message.\n\nReviewer #3 (Recommendations for the authors):\n\nIn Wu et al., the authors describe how inputs of variable synaptic weights influence rate and temporal output coding in neurons of the cerebellar nuclei. This is valuable research that advances our understanding of this important question within the field of cerebellar encoding, with experiments that give solid (or mostly solid) evidence for their claims.\n\nIn this manuscript, the authors focus on an important question in the cerebellar field: how do high-firing inhibitory Purkinje cells influence the output of neurons in the cerebellar nuclei (CbN) which are themselves spontaneously active? They use classical techniques: whole-cell electrophysiology combined with extracellular stimulation and dynamic-clamp experiments. They identify that there is a wide range of input strengths made onto CbN neurons from Purkinje cells and explore what this diversity of input strength might mean for CbN neuron output. Using dynamic clamp, they parametrically alter input synchrony, comparing how CbN output is altered when they alter inputs of different sizes. Some of their findings are counterintuitive, as they show that right before a strong inhibition of CbN firing caused by Purkinje cell activation, there is a transient enhancement of firing which is due to Purkinje cell refractory period. Other findings are more straight-forward \u2013 for e.g. they show that large inputs can strongly modulate firing and thus there is an inverse rate code. They look at synchrony and show that the impact on CbN firing depends on input variability, something that has not previously been addressed in detail. These findings are interesting and add to our understanding of how Purkinje cell synapses may influence CbN output.\n\n1. One of the main claims of the paper is that they uncover that there is variable Purkinje cell input to CbN neurons. However, this finding is based on recordings with symmetrical Cl- internal that is not physiological. They use a calculation based on the literature (based on other synapses that may have different channel properties) to adjust their measurements to physiological values, but the appropriateness of this adjustment is not evident. This makes me question how solid this finding is, as there is no experimental validation. In fact, it is not entirely clear how much their finding differs from previous findings \u2013 they say that they show a different distribution, but they do not verify it is different statistically. I think they need to either strengthen their experimental evidence for this finding (which I acknowledge would be a challenging thing to do) or weaken their claims.\n\n2. The authors talk about Purkinje cell autocorrelation as being the cause of the modulation of firing before the Purkinje cell spike reduces firing in CbN neurons. I find this section hard to follow, and given the general readership of eLife, I think the authors could do a better job explaining this in a more accessible way.\n",
+      "created_at": "2025-12-04T04:09:15.569460Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T04:09:15.569460Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T04:09:15.569460Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "062da88f-e669-43a4-91d5-a17c86f328ad",
+      "content_id": "776f8cd0-5540-4a71-bac3-1b2e3628579a",
+      "claim_id": "C1",
+      "claim": "Purkinje cell (PC) synapses onto cerebellar nuclei (CbN) neurons allow signals from the cerebellar cortex to influence the rest of the brain.",
+      "claim_type": "EXPLICIT",
+      "source": "Purkinje cell (PC) synapses onto cerebellar nuclei (CbN) neurons allow signals from the cerebellar cortex to influence the rest of the brain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the anatomical and functional role of PC-CbN synapses in cerebellar output, representing established knowledge in neuroscience.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:09:15.569460Z"
+    },
+    {
+      "id": "e0d23c50-688d-481c-af61-24f66aa73559",
+      "content_id": "776f8cd0-5540-4a71-bac3-1b2e3628579a",
+      "claim_id": "C2",
+      "claim": "PCs are inhibitory neurons that spontaneously fire at high rates.",
+      "claim_type": "EXPLICIT",
+      "source": "PCs are inhibitory neurons that spontaneously fire at high rates",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about Purkinje cell properties.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:09:15.569460Z"
+    },
+    {
+      "id": "e152189d-3ed6-418a-af78-6ce9c73f8bba",
+      "content_id": "776f8cd0-5540-4a71-bac3-1b2e3628579a",
+      "claim_id": "C3",
+      "claim": "Many PC inputs are thought to converge onto each CbN neuron to suppress its firing.",
+      "claim_type": "EXPLICIT",
+      "source": "many PC inputs are thought to converge onto each CbN neuron to suppress its firing",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This represents existing understanding in the field about PC-CbN connectivity.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:09:15.569460Z"
+    },
+    {
+      "id": "8f6957f8-cd50-4899-a47c-40026c4b9ff7",
+      "content_id": "776f8cd0-5540-4a71-bac3-1b2e3628579a",
+      "claim_id": "C4",
+      "claim": "It has been proposed that PCs convey information using a rate code, a synchrony and timing code, or both.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been proposed that PCs convey information using a rate code, a synchrony and timing code, or both.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This references existing proposals in the literature about PC coding mechanisms.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:09:15.569460Z"
+    },
+    {
+      "id": "9614c7c0-f9aa-494f-8be4-ad54420e9cef",
+      "content_id": "776f8cd0-5540-4a71-bac3-1b2e3628579a",
+      "claim_id": "C5",
+      "claim": "Single PC to CbN synapses are highly variable in size.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we find that single PC to CbN synapses are highly variable in size",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study supported by experimental measurements shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:09:15.569460Z"
+    },
+    {
+      "id": "c611c39a-0882-4f0e-a352-6c6269e385a5",
+      "content_id": "776f8cd0-5540-4a71-bac3-1b2e3628579a",
+      "claim_id": "C6",
+      "claim": "Individual PC inputs regulate both the rate and timing of CbN firing.",
+      "claim_type": "EXPLICIT",
+      "source": "Individual PC inputs regulate both the rate and timing of CbN firing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by dynamic clamp experiments and modeling shown in Figures 2-5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:09:15.569460Z"
+    },
+    {
+      "id": "55e03794-3c43-4a1e-a5a1-bf367f36081b",
+      "content_id": "776f8cd0-5540-4a71-bac3-1b2e3628579a",
+      "claim_id": "C7",
+      "claim": "Large PC inputs strongly influence CbN firing rates.",
+      "claim_type": "EXPLICIT",
+      "source": "Large PC inputs strongly influence CbN firing rates",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figures 2 and 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:09:15.569460Z"
+    },
+    {
+      "id": "894891d8-e450-477e-9034-cd33439a16a6",
+      "content_id": "776f8cd0-5540-4a71-bac3-1b2e3628579a",
+      "claim_id": "C8",
+      "claim": "Large PC inputs transiently eliminate CbN firing for several milliseconds.",
+      "claim_type": "EXPLICIT",
+      "source": "Large PC inputs strongly influence CbN firing rates and transiently eliminate CbN firing for several milliseconds.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated in cross-correlation analyses shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:09:15.569460Z"
+    },
+    {
+      "id": "11f73453-52c1-4223-94e9-6271d6c5049b",
+      "content_id": "776f8cd0-5540-4a71-bac3-1b2e3628579a",
+      "claim_id": "C9",
+      "claim": "The refractory period of PCs leads to a brief elevation of CbN firing prior to suppression.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, the refractory period of PCs leads to a brief elevation of CbN firing prior to suppression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated in Figures 2 and 3 through dynamic clamp experiments and analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:09:15.569460Z"
+    },
+    {
+      "id": "73a3b2f5-5f36-415e-abe6-afa39a142caa",
+      "content_id": "776f8cd0-5540-4a71-bac3-1b2e3628579a",
+      "claim_id": "C10",
+      "claim": "Individual PC-CbN synapses are suited to concurrently convey rate codes and generate precisely timed responses in CbN neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, individual PC-CbN synapses are suited to concurrently convey rate codes and generate precisely timed responses in CbN neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental findings shown in Figures 2-5.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:09:15.569460Z"
+    },
+    {
+      "id": "5034f20f-e16e-4246-8d39-2a95cd878101",
+      "content_id": "776f8cd0-5540-4a71-bac3-1b2e3628579a",
+      "claim_id": "C11",
+      "claim": "Synchronous firing or synchronous pauses of PCs promote CbN neuron firing on rapid time scales for nonuniform inputs, but less effectively than for uniform inputs.",
+      "claim_type": "EXPLICIT",
+      "source": "Either synchronous firing or synchronous pauses of PCs promote CbN neuron firing on rapid time scales for nonuniform inputs, but less effectively than for uniform inputs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated in Figures 6-8 through dynamic clamp experiments and simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:09:15.569460Z"
+    },
+    {
+      "id": "a0b87689-9295-4b6f-ab97-523a5f3a0213",
+      "content_id": "776f8cd0-5540-4a71-bac3-1b2e3628579a",
+      "claim_id": "C12",
+      "claim": "Variable input sizes elevate the baseline firing rates of CbN neurons by increasing the variability of the inhibitory conductance.",
+      "claim_type": "EXPLICIT",
+      "source": "This is a secondary consequence of variable input sizes elevating the baseline firing rates of CbN neurons by increasing the variability of the inhibitory conductance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated in Figure 4 through dynamic clamp experiments and simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:09:15.569460Z"
+    },
+    {
+      "id": "100bf0c9-e423-44e5-b7cb-6059c4ea47f2",
+      "content_id": "776f8cd0-5540-4a71-bac3-1b2e3628579a",
+      "claim_id": "C13",
+      "claim": "The cerebellum is involved in behaviors ranging from balance, motor control, and motor learning, to social and emotional behaviors.",
+      "claim_type": "EXPLICIT",
+      "source": "The cerebellum is involved in behaviors ranging from balance, motor control, and motor learning, to social and emotional behaviors (Hull and Regehr, 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Hull and Regehr, 2022.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:09:15.569460Z"
+    },
+    {
+      "id": "50332ee3-24e3-40ae-82b9-189cb1a1af4e",
+      "content_id": "776f8cd0-5540-4a71-bac3-1b2e3628579a",
+      "claim_id": "C14",
+      "claim": "Cerebellar dysfunction has been linked to severe motor impairment and psychiatric disorders, including autism spectrum disorder, schizophrenia, bipolar disorder, and depression.",
+      "claim_type": "EXPLICIT",
+      "source": "Cerebellar dysfunction has been linked to severe motor impairment and psychiatric disorders, including autism spectrum disorder, schizophrenia, bipolar disorder, and depression (Argyropoulos et al., 2020; Schmahmann and Sherman, 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Argyropoulos et al., 2020 and Schmahmann and Sherman, 1998.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:09:15.569460Z"
+    },
+    {
+      "id": "5d7b2875-b948-4cf7-b1f3-7544cf096a8e",
+      "content_id": "776f8cd0-5540-4a71-bac3-1b2e3628579a",
+      "claim_id": "C15",
+      "claim": "PCs are GABAergic and fire spontaneously at frequencies ranging from 10 spikes/s to over 100 spikes/s.",
+      "claim_type": "EXPLICIT",
+      "source": "PCs are GABAergic and fire spontaneously at frequencies ranging from 10 spikes/s to over 100 spikes/s (Thach, 1968; Zhou et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Thach, 1968 and Zhou et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:09:15.569460Z"
+    },
+    {
+      "id": "33fda50a-44c5-4468-b81a-6aecd3959487",
+      "content_id": "776f8cd0-5540-4a71-bac3-1b2e3628579a",
+      "claim_id": "C16",
+      "claim": "It was estimated that 40 PCs converge onto each CbN glutamatergic projection neuron to strongly suppress their firing.",
+      "claim_type": "EXPLICIT",
+      "source": "It was estimated that 40 PCs converge onto each CbN glutamatergic projection neuron to strongly suppress their firing (Person and Raman, 2012a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Person and Raman, 2012a.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:09:15.569460Z"
+    },
+    {
+      "id": "fc561652-de98-498d-ac71-e8c0c38c2262",
+      "content_id": "776f8cd0-5540-4a71-bac3-1b2e3628579a",
+      "claim_id": "C17",
+      "claim": "CbN neurons have a tendency to fire spontaneously.",
+      "claim_type": "EXPLICIT",
+      "source": "This is offset by the tendency of CbN neurons to fire spontaneously (Raman et al., 2000)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Raman et al., 2000.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:09:15.569460Z"
+    },
+    {
+      "id": "b81ef07a-5525-41fb-aa52-120f88e4c756",
+      "content_id": "776f8cd0-5540-4a71-bac3-1b2e3628579a",
+      "claim_id": "C18",
+      "claim": "CbN neurons receive numerous excitatory inputs from climbing fiber (CF) and mossy fiber collaterals.",
+      "claim_type": "EXPLICIT",
+      "source": "This is offset by the tendency of CbN neurons to fire spontaneously (Raman et al., 2000) and by numerous excitatory inputs from climbing fiber (CF) and mossy fiber collaterals (Najac and Raman, 2017; Wu and Raman, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Najac and Raman, 2017 and Wu and Raman, 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:09:15.569460Z"
+    },
+    {
+      "id": "ea9095e0-780c-4100-8b58-bbb5c9781337",
+      "content_id": "776f8cd0-5540-4a71-bac3-1b2e3628579a",
+      "claim_id": "C19",
+      "claim": "Excitatory inputs to CbN neurons are small and slow.",
+      "claim_type": "EXPLICIT",
+      "source": "Excitatory inputs to CbN neurons are small and slow, and their number and firing rates are poorly constrained (Najac and Raman, 2017; Wu and Raman, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Najac and Raman, 2017 and Wu and Raman, 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:09:15.569460Z"
+    },
+    {
+      "id": "c69b494c-a36a-42f7-a668-a945197cface",
+      "content_id": "776f8cd0-5540-4a71-bac3-1b2e3628579a",
+      "claim_id": "C20",
+      "claim": "PC input sizes were somewhat variable in young mice (coefficient of variation [CV] = 0.7).",
+      "claim_type": "EXPLICIT",
+      "source": "Input sizes were somewhat variable in young mice (coefficient of variation [CV] = 0.7; Figure 1d)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:09:15.569460Z"
+    },
+    {
+      "id": "dcb51726-e410-4dd8-9fd5-b1f82c9b1456",
+      "content_id": "776f8cd0-5540-4a71-bac3-1b2e3628579a",
+      "claim_id": "C21",
+      "claim": "In juvenile mice, PC input sizes showed considerably more variability, primarily because of the presence of many medium and large inputs (mean 52.9 \u00b1 6 nS, CV = 1.0).",
+      "claim_type": "EXPLICIT",
+      "source": "In juvenile mice, there was considerably more variability, primarily because of the presence of many medium and large inputs (mean 52.9 \u00b1 6 nS, CV = 1.0; Figure 1e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:09:15.569460Z"
+    },
+    {
+      "id": "1a113660-ed53-45a4-81ff-4e6d37bd9cd7",
+      "content_id": "776f8cd0-5540-4a71-bac3-1b2e3628579a",
+      "claim_id": "C22",
+      "claim": "The distributions of unitary input sizes in P10-20 animals and P23-32 animals were significantly different (p<0.0001).",
+      "claim_type": "EXPLICIT",
+      "source": "This is evident in a comparison of the cumulative histograms of IPSC conductances for young and juvenile animals, which showed significantly different distributions (Figure 1f; p<0.0001, Kolmogorov\u2013Smirnov test).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by statistical analysis of experimental data shown in Figure 1f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:09:15.569460Z"
+    },
+    {
+      "id": "33cc1152-8e9e-46cf-9e42-2e853344c5f7",
+      "content_id": "776f8cd0-5540-4a71-bac3-1b2e3628579a",
+      "claim_id": "C23",
+      "claim": "Small inputs produced a small transient decrease in CbN neuron spiking (32% decrease).",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in the cross-correlograms of input timing and CbN neuron spiking, small inputs produced a small transient decrease in CbN neuron spiking (32% decrease; Figure 2d, left)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by dynamic clamp experimental data shown in Figure 2d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:09:15.569460Z"
+    },
+    {
+      "id": "e4c354bc-e7ee-4553-b323-6e21ecb88c82",
+      "content_id": "776f8cd0-5540-4a71-bac3-1b2e3628579a",
+      "claim_id": "C24",
+      "claim": "Medium-size inputs strongly reduced CbN neuron spiking (80% decrease).",
+      "claim_type": "EXPLICIT",
+      "source": "while medium-size inputs strongly reduced CbN neuron spiking (80% decrease; Figure 2d, middle)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by dynamic clamp experimental data shown in Figure 2d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:09:15.569460Z"
+    },
+    {
+      "id": "1af510c6-b7f0-4d38-a55e-fba54114ea0b",
+      "content_id": "776f8cd0-5540-4a71-bac3-1b2e3628579a",
+      "claim_id": "C25",
+      "claim": "Large inputs transiently shut down CbN neurons for approximately 2 ms.",
+      "claim_type": "EXPLICIT",
+      "source": "and large inputs transiently shut down CbN neurons for approximately 2 ms (Figure 2d, right).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by dynamic clamp experimental data shown in Figure 2d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:09:15.569460Z"
+    },
+    {
+      "id": "05b6005d-cc16-4136-abd1-99cfd5ec4a64",
+      "content_id": "776f8cd0-5540-4a71-bac3-1b2e3628579a",
+      "claim_id": "C26",
+      "claim": "The inhibition generated by inhibitory inputs was preceded by an increase in spikes that was particularly prominent for large inputs (61% increase for large, 29% increase for medium, and 8% increase for small).",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, the inhibition generated by inhibitory inputs was preceded by an increase in spikes that was particularly prominent for large inputs (61% increase for large, 29% increase for medium, and 8% increase for small; Figure 2d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by dynamic clamp experimental data shown in Figure 2d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:09:15.569460Z"
+    },
+    {
+      "id": "a979cde2-0656-40f7-bad2-e6ce6bd429ab",
+      "content_id": "776f8cd0-5540-4a71-bac3-1b2e3628579a",
+      "claim_id": "C27",
+      "claim": "The magnitude of excitation and inhibition, as well as the duration of inhibition, were all positively correlated with the size of the PC input.",
+      "claim_type": "EXPLICIT",
+      "source": "The magnitude of excitation (Figure 2e, top) and inhibition (Figure 2e, middle), as well as the duration of inhibition (Figure 2e, bottom), were all positively correlated with the size of the PC input.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by dynamic clamp experimental data shown in Figure 2e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:09:15.569460Z"
+    },
+    {
+      "id": "bc386818-0cc7-4b07-b5c6-f9a7845cf035",
+      "content_id": "776f8cd0-5540-4a71-bac3-1b2e3628579a",
+      "claim_id": "C28",
+      "claim": "The simple integrate-and-fire model used was able to recapitulate the dynamic clamp studies.",
+      "claim_type": "EXPLICIT",
+      "source": "In light of the many types of voltage-gated ion channels present in CbN neurons (Afshari et al., 2004; Aizenman and Linden, 1999; Alvi\u00f1a and Khodakhah, 2008; Raman et al., 2000; Raman and Bean, 1999; Santoro et al., 2000; Steuber et al., 2011), we were somewhat surprised that the simple integrate-and-fire model we used was able to recapitulate our dynamic clamp studies",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by comparison of simulation results with dynamic clamp experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:09:15.569460Z"
+    },
+    {
+      "id": "fef867b9-fe9f-47f1-a0a3-487aa93e4479",
+      "content_id": "776f8cd0-5540-4a71-bac3-1b2e3628579a",
+      "claim_id": "C29",
+      "claim": "The autocorrelations of PC firing led to different extents of elevated CbN firing prior to suppression.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the autocorrelations of PC firing led to different extents of elevated CbN firing prior to suppression, and this affects how they control the spike timing of CbN neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by dynamic clamp experiments shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:09:15.569460Z"
+    },
+    {
+      "id": "a46acd67-dc78-4dd9-84c3-c6fff044d603",
+      "content_id": "776f8cd0-5540-4a71-bac3-1b2e3628579a",
+      "claim_id": "C30",
+      "claim": "The firing rate of CbN neurons was approximately 200 spikes/s for an inhibitory conductance of 30 nS.",
+      "claim_type": "EXPLICIT",
+      "source": "The firing rate of CbN neurons was approximately 200 spikes/s for an inhibitory conductance of 30 nS, but as the magnitude of the inhibitory conductance increased the spike rate decreased, and an inhibitory conductance of 65 nS silenced CbN firing (Figure 4a and b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by dynamic clamp experimental data shown in Figure 4a and b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:09:15.569460Z"
+    },
+    {
+      "id": "8d552a9a-e9d0-40a3-9a17-814d1afb0d5f",
+      "content_id": "776f8cd0-5540-4a71-bac3-1b2e3628579a",
+      "claim_id": "C31",
+      "claim": "An inhibitory conductance of 65 nS silenced CbN firing.",
+      "claim_type": "EXPLICIT",
+      "source": "The firing rate of CbN neurons was approximately 200 spikes/s for an inhibitory conductance of 30 nS, but as the magnitude of the inhibitory conductance increased the spike rate decreased, and an inhibitory conductance of 65 nS silenced CbN firing (Figure 4a and b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by dynamic clamp experimental data shown in Figure 4a and b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:09:15.569460Z"
+    },
+    {
+      "id": "bd070415-2743-4b86-b6c2-7f82029f3f77",
+      "content_id": "776f8cd0-5540-4a71-bac3-1b2e3628579a",
+      "claim_id": "C32",
+      "claim": "The CbN firing rate was inversely related to the amplitude of inhibitory conductance.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, the CbN firing rate was inversely related to the amplitude of inhibitory conductance (Figure 4b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by dynamic clamp experimental data shown in Figure 4b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:09:15.569460Z"
+    },
+    {
+      "id": "82fa66fb-23d6-4b9e-9ae1-8e754548e00f",
+      "content_id": "776f8cd0-5540-4a71-bac3-1b2e3628579a",
+      "claim_id": "C33",
+      "claim": "Evoked firing rates in CbN neurons increased from 12 spikes/s to 107 spikes/s as the number of inputs decreased and the size increased.",
+      "claim_type": "EXPLICIT",
+      "source": "Evoked firing rates in CbN neurons were low for many small inputs, but as the number of inputs decreased and the size increased, the firing rate increased markedly (from 12 spikes/s to 107 spikes/s; Figure 4d and f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by dynamic clamp experimental data shown in Figure 4d and f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:09:15.569460Z"
+    },
+    {
+      "id": "1d1d8c43-f412-412e-ab02-7985cc1396aa",
+      "content_id": "776f8cd0-5540-4a71-bac3-1b2e3628579a",
+      "claim_id": "C34",
+      "claim": "The firing rate was strongly dependent on the CV of the inhibitory conductance.",
+      "claim_type": "EXPLICIT",
+      "source": "The firing rate was strongly dependent on the CV of the inhibitory conductance (Figure 4g).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by dynamic clamp experimental data shown in Figure 4g.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:09:15.569460Z"
+    },
+    {
+      "id": "b0ed21b1-2d6c-49ae-9ceb-a1c54676dfc6",
+      "content_id": "776f8cd0-5540-4a71-bac3-1b2e3628579a",
+      "claim_id": "C35",
+      "claim": "Increases in the magnitude of the average inhibitory conductance suppress firing, whereas increases in the variability of the inhibitory conductance promote firing.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings establish that increases in the magnitude of the average inhibitory conductance suppress firing, whereas increases in the variability of the inhibitory conductance promote firing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental findings shown in Figure 4.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:09:15.569460Z"
+    },
+    {
+      "id": "dde8b301-f8df-4422-98ad-797294123294",
+      "content_id": "776f8cd0-5540-4a71-bac3-1b2e3628579a",
+      "claim_id": "C36",
+      "claim": "Varying a single 37 nS input from 0 to 160 spikes/s decreased the output firing frequency from 126 spikes/s to 35 spikes/s.",
+      "claim_type": "EXPLICIT",
+      "source": "In this example, varying a single 37 nS input from 0 to 160 spikes/s decreased the output firing frequency from 126 spikes/s to 35 spikes/s (Figure 5a, red).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by simulation data shown in Figure 5a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:09:15.569460Z"
+    },
+    {
+      "id": "d0ceb12d-2c6c-4d75-8a9e-0d242b15c921",
+      "content_id": "776f8cd0-5540-4a71-bac3-1b2e3628579a",
+      "claim_id": "C37",
+      "claim": "There was a remarkably consistent relationship between the firing rates of CbN neurons and the total inhibitory conductances.",
+      "claim_type": "EXPLICIT",
+      "source": "There was a remarkably consistent relationship between the firing rates of CbN neurons and the total inhibitory conductances (Figure 5b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by simulation data shown in Figure 5b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:09:15.569460Z"
+    },
+    {
+      "id": "d184934b-d969-4dac-bd92-9fb41f92f2c3",
+      "content_id": "776f8cd0-5540-4a71-bac3-1b2e3628579a",
+      "claim_id": "C38",
+      "claim": "The slope of the CbN output firing rate/PC input firing rate was negatively correlated with the input size.",
+      "claim_type": "EXPLICIT",
+      "source": "The slope of the CbN output firing rate/PC input firing rate was negatively correlated with the input size for the example neuron (Figure 5c, color coded) and for nine other neurons (Figure 5c, gray)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by simulation data shown in Figure 5c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:09:15.569460Z"
+    },
+    {
+      "id": "6c6a7d93-fce8-440c-abed-c31148c24d28",
+      "content_id": "776f8cd0-5540-4a71-bac3-1b2e3628579a",
+      "claim_id": "C39",
+      "claim": "Individual PC inputs convey a rate code that depends on input size.",
+      "claim_type": "EXPLICIT",
+      "source": "These studies establish that individual PC inputs convey a rate code that depends on input size.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental and simulation findings shown in Figure 5.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:09:15.569460Z"
+    },
+    {
+      "id": "fa8791b2-91e8-441a-9056-7aa6efc5184e",
+      "content_id": "776f8cd0-5540-4a71-bac3-1b2e3628579a",
+      "claim_id": "C40",
+      "claim": "In the absence of synchrony, uniform-size inputs generated a baseline conductance with low variability and CV that resulted in a low baseline firing rate of CbN neurons (25 spikes/s).",
+      "claim_type": "EXPLICIT",
+      "source": "In the absence of synchrony, uniform-size inputs generated a baseline conductance with low variability and CV (Figure 6aii and iii) that resulted in a low baseline firing rate of CbN neurons (25 spikes/s; Figure 6aiv).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by dynamic clamp experimental data shown in Figure 6a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:09:15.569460Z"
+    },
+    {
+      "id": "06f1f1a6-7153-463e-a5dc-8d16b31f9adb",
+      "content_id": "776f8cd0-5540-4a71-bac3-1b2e3628579a",
+      "claim_id": "C41",
+      "claim": "Synchronizing either 25 or 50% of the uniform inputs increased the variability and the CV of the total inhibitory conductance, which resulted in a robust increase in the firing rate of CbN neurons (45 spikes/s with 25% synchrony, 1.8-fold; 88 spikes/s with 50% synchrony, 3.5 fold).",
+      "claim_type": "EXPLICIT",
+      "source": "Synchronizing either 25 or 50% of the uniform inputs (Figure 6ai) increased the variability (Figure 6aii) and the CV (Figure 6aiii) of the total inhibitory conductance, which then resulted in a robust increase in the firing rate of CbN neurons (45 spikes/s with 25% synchrony, 1.8-fold; 88 spikes/s with 50% synchrony, 3.5 fold; Figure 6aiv and v; Figure 6c, black).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by dynamic clamp experimental data shown in Figure 6a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:09:15.569460Z"
+    },
+    {
+      "id": "a8e3a383-451c-4130-8701-d50e05539cd5",
+      "content_id": "776f8cd0-5540-4a71-bac3-1b2e3628579a",
+      "claim_id": "C42",
+      "claim": "For nonuniform inputs, the generated conductance was more variable, resulting in a higher baseline firing rate of CbN neurons (43 spikes/s).",
+      "claim_type": "EXPLICIT",
+      "source": "For nonuniform inputs (small: 16 \u00d7 3 nS; medium: 8 \u00d7 12 nS; large: 2 \u00d7 30 nS), the generated conductance was more variable (Figure 6bii and iii), resulting in a higher baseline firing rate of CbN neurons (43 spikes/s; Figure 6biv)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by dynamic clamp experimental data shown in Figure 6b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:09:15.569460Z"
+    },
+    {
+      "id": "99f2cd87-79e2-45bf-a01d-26d2bd906966",
+      "content_id": "776f8cd0-5540-4a71-bac3-1b2e3628579a",
+      "claim_id": "C43",
+      "claim": "Synchronizing 50% of all nonuniform inputs increased the variability and CV of the conductance, which elevated the firing of CbN neurons from 43 spikes/s to 91 spikes/s.",
+      "claim_type": "EXPLICIT",
+      "source": "Synchronizing 50% of all inputs (small, medium, and large inputs, Figure 6bi, left) increased the variability (Figure 6bii, left) and CV (Figure 6biii, left) of the conductance, which then elevated the firing of CbN neurons from 43 spikes/s to 91 spikes/s (Figure 6biv, left; Figure 6c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by dynamic clamp experimental data shown in Figure 6b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:09:15.569460Z"
+    },
+    {
+      "id": "12ed3067-d698-4a74-90ac-622a7ca157a2",
+      "content_id": "776f8cd0-5540-4a71-bac3-1b2e3628579a",
+      "claim_id": "C44",
+      "claim": "The relative increase in CbN firing was much lower for nonuniform inputs (2.1-fold) compared to uniform inputs (3.5-fold, p<0.0001).",
+      "claim_type": "EXPLICIT",
+      "source": "The firing rates for 50% synchrony with nonuniform and uniform inputs were comparable (Figure 6aiv and biv), but because baseline firing rates were higher for nonuniform inputs, their relative increase in CbN firing was much lower (2.1-fold for nonuniform inputs compared to 3.5-fold for uniform inputs, p<0.0001; Figure 6av and bv).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by dynamic clamp experimental data shown in Figure 6a and b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:09:15.569460Z"
+    },
+    {
+      "id": "65cd5f94-c6f7-4312-9647-b0077863a71a",
+      "content_id": "776f8cd0-5540-4a71-bac3-1b2e3628579a",
+      "claim_id": "C45",
+      "claim": "Synchronizing 25 or 50% of either small or medium inputs barely increased the variability and CV of the conductance and led to minimal increases in the firing of CbN neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Synchronizing 25 or 50% of either small or medium inputs barely increased the variability and CV of the conductance and led to minimal increases in the firing of CbN neurons (Figure 6bii\u2013v, right).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by dynamic clamp experimental data shown in Figure 6b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:09:15.569460Z"
+    },
+    {
+      "id": "69435a0a-564b-4ae4-986a-9317eef6122b",
+      "content_id": "776f8cd0-5540-4a71-bac3-1b2e3628579a",
+      "claim_id": "C46",
+      "claim": "The effects of PC synchrony primarily depend on the total amplitude of synchronized inputs.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations suggest that the effects of PC synchrony primarily depend on the total amplitude of synchronized inputs (Figure 6d and e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion drawn from the experimental findings shown in Figure 6.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:09:15.569460Z"
+    },
+    {
+      "id": "1e544920-c2c9-4c00-9f56-e95834264607",
+      "content_id": "776f8cd0-5540-4a71-bac3-1b2e3628579a",
+      "claim_id": "C47",
+      "claim": "Synchronizing the two largest inputs can elevate CbN firing rate by approximately 20%, while synchronizing the two smallest inputs barely changed CbN firing rate.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in simulations, synchronizing the two largest inputs can elevate CbN firing rate by approximately 20%, while synchronizing the two smallest inputs barely changed CbN firing rate (Figure 6k and l).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by simulation data shown in Figure 6k and l.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:09:15.569460Z"
+    },
+    {
+      "id": "ed2b0477-a42f-419b-8795-df0274483a63",
+      "content_id": "776f8cd0-5540-4a71-bac3-1b2e3628579a",
+      "claim_id": "C48",
+      "claim": "For uniform inputs (5 nS), single unsynchronized inputs weakly influenced the spike timing of CbN neurons (19% increase; 62% decrease).",
+      "claim_type": "EXPLICIT",
+      "source": "For uniform inputs (5 nS), single unsynchronized inputs weakly influenced the spike timing of CbN neurons (19% increase; 62% decrease; Figure 7a, left).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by dynamic clamp experimental data shown in Figure 7a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:09:15.569460Z"
+    },
+    {
+      "id": "a621827e-3c9c-4296-be62-fcb743f905fb",
+      "content_id": "776f8cd0-5540-4a71-bac3-1b2e3628579a",
+      "claim_id": "C49",
+      "claim": "50% synchrony of uniform inputs silenced CbN neurons for several milliseconds, and this was proceeded by a prominent increase in CbN spiking (89% increase).",
+      "claim_type": "EXPLICIT",
+      "source": "Also, 50% synchrony of uniform inputs silenced CbN neurons for several milliseconds, and this was proceeded by a prominent increase in CbN spiking (89% increase; Figure 7a, right).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by dynamic clamp experimental data shown in Figure 7a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:09:15.569460Z"
+    },
+    {
+      "id": "351d3263-0098-413f-9648-fecf49039d33",
+      "content_id": "776f8cd0-5540-4a71-bac3-1b2e3628579a",
+      "claim_id": "C50",
+      "claim": "For asynchronous nonuniform inputs, single large inputs could have a very large influence on the timing of CbN spiking (47% increase; 100% decrease).",
+      "claim_type": "EXPLICIT",
+      "source": "For asynchronous nonuniform inputs, as in Figure 2, the influence of individual inputs on the timing of CbN firing depended on the size of the input, and single large inputs could have a very large influence on the timing of CbN spiking (47% increase; 100% decrease; Figure 7b, left, red).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by dynamic clamp experimental data shown in Figure 7b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:09:15.569460Z"
+    },
+    {
+      "id": "0a11d778-8fcc-4c94-a5a8-2a770cebf31d",
+      "content_id": "776f8cd0-5540-4a71-bac3-1b2e3628579a",
+      "claim_id": "C51",
+      "claim": "PC synchrony and single large inputs are functionally equivalent in controlling the spike timing of CbN neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings establish that PC synchrony and single large inputs are functionally equivalent in controlling the spike timing of CbN neurons",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental findings shown in Figure 7.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:09:15.569460Z"
+    },
+    {
+      "id": "ac15820c-cdd6-4aab-aa13-8aee6cec97a6",
+      "content_id": "776f8cd0-5540-4a71-bac3-1b2e3628579a",
+      "claim_id": "C52",
+      "claim": "For nonuniform inputs, the effects of synchrony on CbN spike timing depend on the total size of synchronized inputs.",
+      "claim_type": "EXPLICIT",
+      "source": "and for nonuniform inputs, the effects of synchrony on CbN spike timing depend on the total size of synchronized inputs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental findings shown in Figure 7.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:09:15.569460Z"
+    },
+    {
+      "id": "c42625cc-4607-4e7c-823f-d9e156edf01f",
+      "content_id": "776f8cd0-5540-4a71-bac3-1b2e3628579a",
+      "claim_id": "C53",
+      "claim": "Pauses in PC firing led to large, short-latency increases in CbN neuron firing for both uniform inputs and nonuniform inputs.",
+      "claim_type": "EXPLICIT",
+      "source": "Pauses in PC firing led to large, short-latency increases in CbN neuron firing for both uniform inputs (Figure 8c; Han et al., 2020) and nonuniform inputs (Figure 8c and d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by dynamic clamp experimental data shown in Figure 8c and d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:09:15.569460Z"
+    },
+    {
+      "id": "cb1e93d3-0191-431e-b022-3af1b35eea63",
+      "content_id": "776f8cd0-5540-4a71-bac3-1b2e3628579a",
+      "claim_id": "C54",
+      "claim": "For nonuniform inputs, the larger the size of the paused inputs, the larger the resulting increases in CbN neuron firing.",
+      "claim_type": "EXPLICIT",
+      "source": "For nonuniform inputs, we compared the effects of pausing the firing of different-size ranges of PC inputs by pausing the smallest, largest, and middle range of inputs. The larger the size of the paused inputs, the larger the resulting increases in CbN neuron firing (Figure 8c and d)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by dynamic clamp experimental data shown in Figure 8c and d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:09:15.569460Z"
+    },
+    {
+      "id": "2fb17a3e-8d05-4419-8c17-e73ac4792d60",
+      "content_id": "776f8cd0-5540-4a71-bac3-1b2e3628579a",
+      "claim_id": "C55",
+      "claim": "The magnitude of firing rate increases were determined by the total amplitude of the paused inputs.",
+      "claim_type": "EXPLICIT",
+      "source": "and the magnitude of firing rate increases were determined by the total amplitude of the paused inputs (Figure 8e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by dynamic clamp experimental data shown in Figure 8e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:09:15.569460Z"
+    },
+    {
+      "id": "774446d1-7cdf-4718-8b52-c70f450258fa",
+      "content_id": "776f8cd0-5540-4a71-bac3-1b2e3628579a",
+      "claim_id": "C56",
+      "claim": "Pausing produced larger relative increases in CbN neuron firing for uniform-size PC inputs than that for nonuniform PC inputs.",
+      "claim_type": "EXPLICIT",
+      "source": "Pausing produced larger relative increases in CbN neuron firing for uniform-size PC inputs than that for nonuniform PC inputs (Figure 8c\u2013e)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by dynamic clamp experimental data shown in Figure 8c-e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:09:15.569460Z"
+    },
+    {
+      "id": "2c1b605d-a932-43b5-8fa8-8892ae307758",
+      "content_id": "776f8cd0-5540-4a71-bac3-1b2e3628579a",
+      "claim_id": "C57",
+      "claim": "Brief pauses in PC firing evoke transient increases in CbN neuron firing, and the effects are determined by the total amplitude of paused PC inputs.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, brief pauses in PC firing evoke transient increases in CbN neuron firing, and the effects are determined by the total amplitude of paused PC inputs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental findings shown in Figure 8.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:09:15.569460Z"
+    },
+    {
+      "id": "aff46df0-4b4a-4e47-a852-e6b2637b3839",
+      "content_id": "776f8cd0-5540-4a71-bac3-1b2e3628579a",
+      "claim_id": "C58",
+      "claim": "The transient increase in CbN firing by PC pauses primarily depends on the total amplitude of paused PC inputs, while the overall changes of CbN firing rate at longer time scales depend on both the total amplitude of paused PCs inputs and the pause intervals.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, while the transient increase in CbN firing by PC pauses primarily depends on the total amplitude of paused PC inputs, the overall changes of CbN firing rate at longer time scales depend on both the total amplitude of paused PCs inputs and the pause intervals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental findings shown in Figure 8.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:09:15.569460Z"
+    },
+    {
+      "id": "c2ab6386-126d-4170-b172-0b27937968c2",
+      "content_id": "776f8cd0-5540-4a71-bac3-1b2e3628579a",
+      "claim_id": "C59",
+      "claim": "PC input sizes are more variable in older animals (P23-32) than in younger animals (P10-20).",
+      "claim_type": "EXPLICIT",
+      "source": "We showed that there are developmental differences in the distributions of PC-CbN synapse sizes. In older animals (P23\u201332, Figure 1a\u2013c and e\u2013f, n = 83), the PC input sizes are more variable and there are more large inputs.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:09:15.569460Z"
+    },
+    {
+      "id": "cd023c46-2a8f-4272-901e-891897c2886d",
+      "content_id": "776f8cd0-5540-4a71-bac3-1b2e3628579a",
+      "claim_id": "C60",
+      "claim": "This developmental transition indicates that PC-CbN synapses are refined during maturation, potentially because of plasticity mechanisms.",
+      "claim_type": "EXPLICIT",
+      "source": "This developmental transition indicates that PC-CbN synapses are refined during maturation, potentially because of plasticity mechanisms (Aizenman et al., 1998; Broersen et al., 2023; Morishita and Sastry, 1996; Ouardouz and Sastry, 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observed developmental changes, supported by citations to plasticity studies.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:09:15.569460Z"
+    },
+    {
+      "id": "5a4ac4ad-69ff-4a9e-8933-66a6bc5d8056",
+      "content_id": "776f8cd0-5540-4a71-bac3-1b2e3628579a",
+      "claim_id": "C61",
+      "claim": "The high basal firing rate of CbN neurons generated by nonuniform-size inputs helps explain the relatively high firing rates of CbN neurons in vivo amid strong PC inhibition (10\u201350 Hz).",
+      "claim_type": "EXPLICIT",
+      "source": "The high basal firing rate of CbN neurons generated by nonuniform-size inputs helps explain the relatively high firing rates of CbN neurons in vivo amid strong PC inhibition (10\u201350 Hz) (Eccles et al., 1974; LeDoux et al., 1998; McDevitt et al., 1987; Rowland and Jaeger, 2008; Rowland and Jaeger, 2005; Thach, 1975; Thach, 1970; Thach, 1968).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the experimental findings, supported by citations to in vivo studies.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:09:15.569460Z"
+    },
+    {
+      "id": "55d25834-1ec5-4374-9e08-e2a5dd0546bb",
+      "content_id": "776f8cd0-5540-4a71-bac3-1b2e3628579a",
+      "claim_id": "C62",
+      "claim": "There is an inverse linear relationship between the firing rates of each PC input and the targeted CbN neuron.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings established that there is an inverse linear relationship between the firing rates of each PC input and the targeted CbN neuron (Figures 5 and 9b; Person and Raman, 2012b; Wu and Raman, 2017).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5 and citations to previous studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:09:15.569460Z"
+    },
+    {
+      "id": "76e0aa7c-45ec-416a-bca8-75a5111f0758",
+      "content_id": "776f8cd0-5540-4a71-bac3-1b2e3628579a",
+      "claim_id": "C63",
+      "claim": "Single PCs are capable of regulating the firing of a CbN neuron from 35 to 125 spikes/s (for a 37 nS input varied from 0 to 160 spikes/s).",
+      "claim_type": "EXPLICIT",
+      "source": "The extent to which the firing rate of an individual PC input regulates the firing rate of a CbN neuron simply depends on the size of the input, and our simulations suggest that single PCs are capable of regulating the firing of a CbN neuron from 35 to 125 spikes/s (Figure 5g; for a 37 nS input varied from 0 to 160 spikes/s).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by simulation data shown in Figure 5g.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:09:15.569460Z"
+    },
+    {
+      "id": "ad64e80a-44f7-4af0-890a-c03637981bcf",
+      "content_id": "776f8cd0-5540-4a71-bac3-1b2e3628579a",
+      "claim_id": "C64",
+      "claim": "Large inputs (30 nS) eliminated CbN neuron firing for several milliseconds.",
+      "claim_type": "EXPLICIT",
+      "source": "large inputs (30 nS) eliminated CbN neuron firing for several milliseconds",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:09:15.569460Z"
+    },
+    {
+      "id": "ed85697c-7a8f-499b-9d88-1ef032a93f6d",
+      "content_id": "776f8cd0-5540-4a71-bac3-1b2e3628579a",
+      "claim_id": "C65",
+      "claim": "Even small inputs (3 nS) transiently reduced CbN neuron firing by almost 40%.",
+      "claim_type": "EXPLICIT",
+      "source": "and even small inputs (3 nS) transiently reduced CbN neuron firing by almost 40% (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:09:15.569460Z"
+    },
+    {
+      "id": "8946ce51-6cdc-485f-a27b-20e84eed43ed",
+      "content_id": "776f8cd0-5540-4a71-bac3-1b2e3628579a",
+      "claim_id": "C66",
+      "claim": "The firing rates of PCs will affect the way they control the timing of CbN neuron firing.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicates the firing rates of PCs will affect the way they control the timing of CbN neuron firing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the experimental findings shown in Figure 3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:09:15.569460Z"
+    },
+    {
+      "id": "6ecad825-8421-490c-9dbc-95ff10f4056b",
+      "content_id": "776f8cd0-5540-4a71-bac3-1b2e3628579a",
+      "claim_id": "C67",
+      "claim": "PCs in zebrin\u2013 regions of the cerebellum tend to fire faster than PCs in zebrin+ regions.",
+      "claim_type": "EXPLICIT",
+      "source": "The observation that PCs in zebrin\u2013 regions of the cerebellum tend to fire faster than PCs in zebrin+ regions suggests different timing control of CbN neurons by zebrin+ and zebrin\u2013 PCs (Zhou et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Zhou et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:09:15.569460Z"
+    },
+    {
+      "id": "d5d9c1e5-95f1-4e9e-aa24-e9f05fe556ed",
+      "content_id": "776f8cd0-5540-4a71-bac3-1b2e3628579a",
+      "claim_id": "C68",
+      "claim": "Variable PC input sizes have important implications for how PC synchronous firing and pauses regulate the firing of CbN neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Variable PC input sizes have important implications for how PC synchronous firing and pauses regulate the firing of CbN neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental findings shown in Figures 6-8.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:09:15.569460Z"
+    },
+    {
+      "id": "5532d22e-bdbe-470d-b583-5078f7642d0a",
+      "content_id": "776f8cd0-5540-4a71-bac3-1b2e3628579a",
+      "claim_id": "C69",
+      "claim": "The relative influence of PC synchrony on the firing rate of CbN neurons is reduced because variable input sizes elevate the basal firing rates of CbN neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "First, the relative influence of PC synchrony on the firing rate of CbN neurons is reduced because variable input sizes elevate the basal firing rates of CbN neurons (Figures 4, 6,, 9d and e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figures 4 and 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:09:15.569460Z"
+    },
+    {
+      "id": "a463a450-e1ce-49ff-8cb2-7ed87215562e",
+      "content_id": "776f8cd0-5540-4a71-bac3-1b2e3628579a",
+      "claim_id": "C70",
+      "claim": "Synchronizing 50% of the small inputs (corresponding to 31% of the total inputs) increased CbN firing by just 13%, whereas synchronizing the two largest PC inputs to a CbN neuron increased the CbN firing rate by 21%.",
+      "claim_type": "EXPLICIT",
+      "source": "Synchronizing 50% of the small inputs (corresponding to 31% of the total inputs) increased CbN firing by just 13%, whereas synchronizing the two largest PC inputs to a CbN neuron increased the CbN firing rate by 21% (Figure 6k and l).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by simulation data shown in Figure 6k and l.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:09:15.569460Z"
+    },
+    {
+      "id": "81338e90-4de9-4e72-b6c9-c48dfb10d187",
+      "content_id": "776f8cd0-5540-4a71-bac3-1b2e3628579a",
+      "claim_id": "C71",
+      "claim": "Studies that fail to detect a high degree of synchrony in PC simple spike firing in vivo do not exclude the physiological relevance of PC synchrony in regulating CbN neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, studies that fail to detect a high degree of synchrony in PC simple spike firing in vivo (Herzfeld et al., 2023b) do not exclude the physiological relevance of PC synchrony in regulating CbN neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the experimental findings, with a citation to Herzfeld et al., 2023b.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:09:15.569460Z"
+    },
+    {
+      "id": "5fc73c25-5b39-43e0-9a4e-d1a4ffc266ef",
+      "content_id": "776f8cd0-5540-4a71-bac3-1b2e3628579a",
+      "claim_id": "C72",
+      "claim": "The relative influence of PC pauses is also reduced with variable-size inputs as a secondary effect of the high baseline firing rate, and is also determined by the total amplitude of paused inputs.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, we show that the relative influence of PC pauses is also reduced with variable-size inputs as a secondary effect of the high baseline firing rate, and is also determined by the total amplitude of paused inputs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 8.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:09:15.569460Z"
+    },
+    {
+      "id": "348a53d6-5da3-41ec-b946-60def88df323",
+      "content_id": "776f8cd0-5540-4a71-bac3-1b2e3628579a",
+      "claim_id": "C73",
+      "claim": "Individual large PC inputs strongly suppress the average firing rates of CbN neurons and also transiently silence them for several milliseconds, thereby allowing them to convey both rate information and precise temporal information.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that individual large PC inputs strongly suppress the average firing rates of CbN neurons (Figure 9b) and also transiently silence them for several milliseconds (Figure 9c), thereby allowing them to convey both rate information and precise temporal information.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion drawn from the experimental findings shown in Figures 2-5.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:09:15.569460Z"
+    },
+    {
+      "id": "996665e9-8432-43e0-b30b-2d6f6a02a96d",
+      "content_id": "776f8cd0-5540-4a71-bac3-1b2e3628579a",
+      "claim_id": "C74",
+      "claim": "In PC-CbN cross-correlograms, inhibition is preceded by an apparent increase in CbN firing that looks like excitation.",
+      "claim_type": "EXPLICIT",
+      "source": "An important characteristic of the strong temporal control of CbN neuron firing by individual PC inputs and the statistics of PC firing is that in PC-CbN cross-correlograms, inhibition is preceded by an apparent increase in CbN firing that looks like excitation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figures 2 and 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:09:15.569460Z"
+    },
+    {
+      "id": "57196d1f-dac8-4780-b354-1f11858f0a9e",
+      "content_id": "776f8cd0-5540-4a71-bac3-1b2e3628579a",
+      "claim_id": "C75",
+      "claim": "Nonuniform input sizes elevate baseline firing rates by increasing the variability of the inhibitory conductance.",
+      "claim_type": "EXPLICIT",
+      "source": "We also found that nonuniform input sizes elevate baseline firing rates by increasing the variability of the inhibitory conductance (Figure 9d and e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:09:15.569460Z"
+    },
+    {
+      "id": "1c151010-2899-4e45-9b7d-b0118c9eb37e",
+      "content_id": "776f8cd0-5540-4a71-bac3-1b2e3628579a",
+      "claim_id": "C76",
+      "claim": "This has the secondary effect of reducing the efficacy of synchronous firing and synchronous pauses in elevating CbN firing.",
+      "claim_type": "EXPLICIT",
+      "source": "This has the secondary effect of reducing the efficacy of synchronous firing and synchronous pauses in elevating CbN firing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figures 6-8.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:09:15.569460Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "8b147969-d42b-4352-b3f3-39b6734ea5a4",
+      "content_id": "776f8cd0-5540-4a71-bac3-1b2e3628579a",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The manuscript provides background on cerebellar anatomy and function, establishing that PCs are inhibitory neurons that converge onto CbN neurons, and that there is ongoing debate about whether PCs use rate codes, timing codes, or both to convey information.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims represent established knowledge in the field and are appropriately supported by citations to prior work (C13-C19). They provide necessary context for the study but do not constitute novel findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:09:15.569460Z"
+    },
+    {
+      "id": "dee481d0-0dd4-4416-8e84-a1c19580bf19",
+      "content_id": "776f8cd0-5540-4a71-bac3-1b2e3628579a",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "PC to CbN synapses are highly variable in size, with greater variability in juvenile mice (P23-32, CV=1.0) compared to young mice (P10-20, CV=0.7), and the distributions are significantly different (p<0.0001).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This result is well-supported by experimental measurements shown in Figure 1, with appropriate statistical testing (Kolmogorov-Smirnov test, C22). The sample sizes are adequate (n=74 for young, n=83 for juvenile mice), and the methodology for isolating unitary inputs is clearly described.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:09:15.569460Z"
+    },
+    {
+      "id": "713a3604-01c8-45fd-8cd7-b33caadf56b6",
+      "content_id": "776f8cd0-5540-4a71-bac3-1b2e3628579a",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The developmental increase in PC-CbN synapse variability indicates synaptic refinement during maturation, potentially due to plasticity mechanisms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While the developmental observation is supported by data (C59), the mechanistic interpretation regarding plasticity is speculative and based only on citations to other studies. No direct evidence for plasticity mechanisms is provided in this manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:09:15.569460Z"
+    },
+    {
+      "id": "fa2768b3-d7ac-4b7f-b79f-501c67643859",
+      "content_id": "776f8cd0-5540-4a71-bac3-1b2e3628579a",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Individual PC inputs regulate both the rate and timing of CbN firing in a size-dependent manner, with large inputs (30 nS) transiently eliminating CbN firing for several milliseconds and small inputs (3 nS) reducing firing by ~40%.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This result is well-supported by dynamic clamp experiments shown in Figure 2. The cross-correlation analyses provide quantitative evidence for the size-dependent effects on CbN firing timing and magnitude. The experimental approach is appropriate and the findings are clearly demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:09:15.569460Z"
+    },
+    {
+      "id": "850fe750-79dc-4e82-b698-0bd6bbf9c80b",
+      "content_id": "776f8cd0-5540-4a71-bac3-1b2e3628579a",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The refractory period of PCs leads to a brief elevation of CbN firing prior to suppression, with the magnitude of this disinhibition positively correlated with PC input size and firing rate.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This counterintuitive finding is well-supported by dynamic clamp experiments (Figures 2-3) and is mechanistically explained by the autocorrelation properties of PC firing. The result is replicated across different PC firing patterns and is consistent between experiments and simulations (C28).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:09:15.569460Z"
+    },
+    {
+      "id": "dacded65-9e99-4c3d-9939-d995ca2860cb",
+      "content_id": "776f8cd0-5540-4a71-bac3-1b2e3628579a",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "A simple integrate-and-fire model successfully recapitulates the dynamic clamp experimental findings.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The comparison between simulation and experimental results shown in Figures 2 and throughout the manuscript demonstrates good agreement. This is notable given the simplicity of the model relative to the known complexity of CbN neuron ion channels.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:09:15.569460Z"
+    },
+    {
+      "id": "192d58c9-13aa-4d55-9cc0-8b4d86f8e3fa",
+      "content_id": "776f8cd0-5540-4a71-bac3-1b2e3628579a",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Individual PC-CbN synapses can concurrently convey rate codes and generate precisely timed responses, with single large PCs capable of regulating CbN firing from 35 to 125 spikes/s.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This conclusion is well-supported by the combined evidence from Figures 2-5, including both dynamic clamp experiments and simulations. The inverse linear relationship between PC and CbN firing rates is clearly demonstrated (C36-C38), and the size-dependence is quantified.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:09:15.569460Z"
+    },
+    {
+      "id": "4ca5e1f3-ba22-4403-a65a-40f0865cab61",
+      "content_id": "776f8cd0-5540-4a71-bac3-1b2e3628579a",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Variable input sizes elevate baseline CbN firing rates by increasing the variability (CV) of the inhibitory conductance, with firing rates strongly dependent on conductance CV rather than just mean conductance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This result is well-supported by systematic dynamic clamp experiments shown in Figure 4, where input size and number were varied while maintaining constant total conductance. The relationship between CV and firing rate is clearly demonstrated (C34, Figure 4g).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:09:15.569460Z"
+    },
+    {
+      "id": "56dbc37d-cb10-4223-b005-8eed0ae2549a",
+      "content_id": "776f8cd0-5540-4a71-bac3-1b2e3628579a",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The elevated basal firing rates of CbN neurons generated by nonuniform inputs help explain the relatively high in vivo firing rates (10-50 Hz) despite strong PC inhibition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While the experimental finding about elevated firing rates with nonuniform inputs is supported (C12, C75), the connection to in vivo firing rates is inferential and relies on citations to other studies. Direct in vivo validation is not provided.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:09:15.569460Z"
+    },
+    {
+      "id": "b2ba2446-4d36-49c3-95d4-6f9f43d718f8",
+      "content_id": "776f8cd0-5540-4a71-bac3-1b2e3628579a",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Synchronous firing of PCs promotes CbN neuron firing on rapid time scales, but is less effective for nonuniform inputs than uniform inputs due to higher baseline firing rates. The effects depend primarily on the total amplitude of synchronized inputs rather than the percentage synchronized.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This result is comprehensively supported by dynamic clamp experiments and simulations shown in Figure 6. The comparison between uniform and nonuniform inputs is systematic, with appropriate statistical testing (p<0.0001, C44). The finding that synchronizing two large inputs is more effective than synchronizing many small inputs is clearly demonstrated (C47, C70).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:09:15.569460Z"
+    },
+    {
+      "id": "a94916ca-72a1-4665-9746-7afc787d726f",
+      "content_id": "776f8cd0-5540-4a71-bac3-1b2e3628579a",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "PC synchrony and single large inputs are functionally equivalent in controlling CbN spike timing, with effects depending on the total size of synchronized inputs for nonuniform input distributions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This result is well-supported by dynamic clamp experiments shown in Figure 7, demonstrating that 50% synchrony of uniform inputs produces similar cross-correlograms to single large inputs. The quantitative analysis of excitation, inhibition magnitude, and duration supports the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:09:15.569460Z"
+    },
+    {
+      "id": "74f3418a-9429-4c0e-b156-93d425f25a15",
+      "content_id": "776f8cd0-5540-4a71-bac3-1b2e3628579a",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Brief pauses in PC firing evoke transient increases in CbN neuron firing, with effects determined by the total amplitude of paused inputs. Pauses are less effective for nonuniform inputs due to higher baseline firing rates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This result is well-supported by dynamic clamp experiments and simulations shown in Figure 8. The systematic comparison of pausing different size ranges of inputs provides clear evidence for the amplitude-dependence. The distinction between transient and sustained effects is appropriately noted (C58).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:09:15.569460Z"
+    },
+    {
+      "id": "cf17458d-11df-43cc-99b7-2df8ff22451c",
+      "content_id": "776f8cd0-5540-4a71-bac3-1b2e3628579a",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Studies that fail to detect high PC synchrony in vivo do not exclude the physiological relevance of PC synchrony in regulating CbN neurons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "This claim is an inference based on the finding that synchronizing a small number of large inputs can be effective (C70). However, it requires knowledge of the actual distribution of input sizes and synchrony patterns in vivo, which is not directly tested in this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:09:15.569460Z"
+    },
+    {
+      "id": "7d37fcbf-1a45-4ec0-846e-be93e3f691bb",
+      "content_id": "776f8cd0-5540-4a71-bac3-1b2e3628579a",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "PCs in zebrin- regions fire faster than those in zebrin+ regions, suggesting different timing control of CbN neurons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This claim is appropriately attributed to prior work (Zhou et al., 2014) and is used to contextualize the findings about how PC firing rates affect CbN timing control (C66). It represents established knowledge rather than a novel finding of this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:09:15.569460Z"
+    },
+    {
+      "id": "a7197711-faa1-4a30-ae3b-0a4efe55783c",
+      "content_id": "776f8cd0-5540-4a71-bac3-1b2e3628579a",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Variable input sizes have the secondary effect of reducing the efficacy of synchronous firing and synchronous pauses in elevating CbN firing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This conclusion is supported by the combined evidence from Figures 6-8, showing that the relative increases in firing are smaller for nonuniform inputs due to elevated baseline rates. This is a logical consequence of the findings in C12 and C69.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:09:15.569460Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "062da88f-e669-43a4-91d5-a17c86f328ad",
+      "result_id": "8b147969-d42b-4352-b3f3-39b6734ea5a4"
+    },
+    {
+      "claim_id": "e0d23c50-688d-481c-af61-24f66aa73559",
+      "result_id": "8b147969-d42b-4352-b3f3-39b6734ea5a4"
+    },
+    {
+      "claim_id": "e152189d-3ed6-418a-af78-6ce9c73f8bba",
+      "result_id": "8b147969-d42b-4352-b3f3-39b6734ea5a4"
+    },
+    {
+      "claim_id": "8f6957f8-cd50-4899-a47c-40026c4b9ff7",
+      "result_id": "8b147969-d42b-4352-b3f3-39b6734ea5a4"
+    },
+    {
+      "claim_id": "100bf0c9-e423-44e5-b7cb-6059c4ea47f2",
+      "result_id": "8b147969-d42b-4352-b3f3-39b6734ea5a4"
+    },
+    {
+      "claim_id": "50332ee3-24e3-40ae-82b9-189cb1a1af4e",
+      "result_id": "8b147969-d42b-4352-b3f3-39b6734ea5a4"
+    },
+    {
+      "claim_id": "5d7b2875-b948-4cf7-b1f3-7544cf096a8e",
+      "result_id": "8b147969-d42b-4352-b3f3-39b6734ea5a4"
+    },
+    {
+      "claim_id": "33fda50a-44c5-4468-b81a-6aecd3959487",
+      "result_id": "8b147969-d42b-4352-b3f3-39b6734ea5a4"
+    },
+    {
+      "claim_id": "fc561652-de98-498d-ac71-e8c0c38c2262",
+      "result_id": "8b147969-d42b-4352-b3f3-39b6734ea5a4"
+    },
+    {
+      "claim_id": "b81ef07a-5525-41fb-aa52-120f88e4c756",
+      "result_id": "8b147969-d42b-4352-b3f3-39b6734ea5a4"
+    },
+    {
+      "claim_id": "ea9095e0-780c-4100-8b58-bbb5c9781337",
+      "result_id": "8b147969-d42b-4352-b3f3-39b6734ea5a4"
+    },
+    {
+      "claim_id": "9614c7c0-f9aa-494f-8be4-ad54420e9cef",
+      "result_id": "dee481d0-0dd4-4416-8e84-a1c19580bf19"
+    },
+    {
+      "claim_id": "c69b494c-a36a-42f7-a668-a945197cface",
+      "result_id": "dee481d0-0dd4-4416-8e84-a1c19580bf19"
+    },
+    {
+      "claim_id": "dcb51726-e410-4dd8-9fd5-b1f82c9b1456",
+      "result_id": "dee481d0-0dd4-4416-8e84-a1c19580bf19"
+    },
+    {
+      "claim_id": "1a113660-ed53-45a4-81ff-4e6d37bd9cd7",
+      "result_id": "dee481d0-0dd4-4416-8e84-a1c19580bf19"
+    },
+    {
+      "claim_id": "c2ab6386-126d-4170-b172-0b27937968c2",
+      "result_id": "dee481d0-0dd4-4416-8e84-a1c19580bf19"
+    },
+    {
+      "claim_id": "cd023c46-2a8f-4272-901e-891897c2886d",
+      "result_id": "713a3604-01c8-45fd-8cd7-b33caadf56b6"
+    },
+    {
+      "claim_id": "c611c39a-0882-4f0e-a352-6c6269e385a5",
+      "result_id": "fa2768b3-d7ac-4b7f-b79f-501c67643859"
+    },
+    {
+      "claim_id": "55e03794-3c43-4a1e-a5a1-bf367f36081b",
+      "result_id": "fa2768b3-d7ac-4b7f-b79f-501c67643859"
+    },
+    {
+      "claim_id": "894891d8-e450-477e-9034-cd33439a16a6",
+      "result_id": "fa2768b3-d7ac-4b7f-b79f-501c67643859"
+    },
+    {
+      "claim_id": "33cc1152-8e9e-46cf-9e42-2e853344c5f7",
+      "result_id": "fa2768b3-d7ac-4b7f-b79f-501c67643859"
+    },
+    {
+      "claim_id": "e4c354bc-e7ee-4553-b323-6e21ecb88c82",
+      "result_id": "fa2768b3-d7ac-4b7f-b79f-501c67643859"
+    },
+    {
+      "claim_id": "1af510c6-b7f0-4d38-a55e-fba54114ea0b",
+      "result_id": "fa2768b3-d7ac-4b7f-b79f-501c67643859"
+    },
+    {
+      "claim_id": "ad64e80a-44f7-4af0-890a-c03637981bcf",
+      "result_id": "fa2768b3-d7ac-4b7f-b79f-501c67643859"
+    },
+    {
+      "claim_id": "ed85697c-7a8f-499b-9d88-1ef032a93f6d",
+      "result_id": "fa2768b3-d7ac-4b7f-b79f-501c67643859"
+    },
+    {
+      "claim_id": "11f73453-52c1-4223-94e9-6271d6c5049b",
+      "result_id": "850fe750-79dc-4e82-b698-0bd6bbf9c80b"
+    },
+    {
+      "claim_id": "05b6005d-cc16-4136-abd1-99cfd5ec4a64",
+      "result_id": "850fe750-79dc-4e82-b698-0bd6bbf9c80b"
+    },
+    {
+      "claim_id": "a979cde2-0656-40f7-bad2-e6ce6bd429ab",
+      "result_id": "850fe750-79dc-4e82-b698-0bd6bbf9c80b"
+    },
+    {
+      "claim_id": "fef867b9-fe9f-47f1-a0a3-487aa93e4479",
+      "result_id": "850fe750-79dc-4e82-b698-0bd6bbf9c80b"
+    },
+    {
+      "claim_id": "8946ce51-6cdc-485f-a27b-20e84eed43ed",
+      "result_id": "850fe750-79dc-4e82-b698-0bd6bbf9c80b"
+    },
+    {
+      "claim_id": "996665e9-8432-43e0-b30b-2d6f6a02a96d",
+      "result_id": "850fe750-79dc-4e82-b698-0bd6bbf9c80b"
+    },
+    {
+      "claim_id": "bc386818-0cc7-4b07-b5c6-f9a7845cf035",
+      "result_id": "dacded65-9e99-4c3d-9939-d995ca2860cb"
+    },
+    {
+      "claim_id": "73a3b2f5-5f36-415e-abe6-afa39a142caa",
+      "result_id": "192d58c9-13aa-4d55-9cc0-8b4d86f8e3fa"
+    },
+    {
+      "claim_id": "6c6a7d93-fce8-440c-abed-c31148c24d28",
+      "result_id": "192d58c9-13aa-4d55-9cc0-8b4d86f8e3fa"
+    },
+    {
+      "claim_id": "55d25834-1ec5-4374-9e08-e2a5dd0546bb",
+      "result_id": "192d58c9-13aa-4d55-9cc0-8b4d86f8e3fa"
+    },
+    {
+      "claim_id": "76e0aa7c-45ec-416a-bca8-75a5111f0758",
+      "result_id": "192d58c9-13aa-4d55-9cc0-8b4d86f8e3fa"
+    },
+    {
+      "claim_id": "348a53d6-5da3-41ec-b946-60def88df323",
+      "result_id": "192d58c9-13aa-4d55-9cc0-8b4d86f8e3fa"
+    },
+    {
+      "claim_id": "a0b87689-9295-4b6f-ab97-523a5f3a0213",
+      "result_id": "4ca5e1f3-ba22-4403-a65a-40f0865cab61"
+    },
+    {
+      "claim_id": "a46acd67-dc78-4dd9-84c3-c6fff044d603",
+      "result_id": "4ca5e1f3-ba22-4403-a65a-40f0865cab61"
+    },
+    {
+      "claim_id": "8d552a9a-e9d0-40a3-9a17-814d1afb0d5f",
+      "result_id": "4ca5e1f3-ba22-4403-a65a-40f0865cab61"
+    },
+    {
+      "claim_id": "bd070415-2743-4b86-b6c2-7f82029f3f77",
+      "result_id": "4ca5e1f3-ba22-4403-a65a-40f0865cab61"
+    },
+    {
+      "claim_id": "82fa66fb-23d6-4b9e-9ae1-8e754548e00f",
+      "result_id": "4ca5e1f3-ba22-4403-a65a-40f0865cab61"
+    },
+    {
+      "claim_id": "1d1d8c43-f412-412e-ab02-7985cc1396aa",
+      "result_id": "4ca5e1f3-ba22-4403-a65a-40f0865cab61"
+    },
+    {
+      "claim_id": "b0ed21b1-2d6c-49ae-9ceb-a1c54676dfc6",
+      "result_id": "4ca5e1f3-ba22-4403-a65a-40f0865cab61"
+    },
+    {
+      "claim_id": "57196d1f-dac8-4780-b354-1f11858f0a9e",
+      "result_id": "4ca5e1f3-ba22-4403-a65a-40f0865cab61"
+    },
+    {
+      "claim_id": "5a4ac4ad-69ff-4a9e-8933-66a6bc5d8056",
+      "result_id": "56dbc37d-cb10-4223-b005-8eed0ae2549a"
+    },
+    {
+      "claim_id": "5034f20f-e16e-4246-8d39-2a95cd878101",
+      "result_id": "b2ba2446-4d36-49c3-95d4-6f9f43d718f8"
+    },
+    {
+      "claim_id": "fa8791b2-91e8-441a-9056-7aa6efc5184e",
+      "result_id": "b2ba2446-4d36-49c3-95d4-6f9f43d718f8"
+    },
+    {
+      "claim_id": "06f1f1a6-7153-463e-a5dc-8d16b31f9adb",
+      "result_id": "b2ba2446-4d36-49c3-95d4-6f9f43d718f8"
+    },
+    {
+      "claim_id": "a8e3a383-451c-4130-8701-d50e05539cd5",
+      "result_id": "b2ba2446-4d36-49c3-95d4-6f9f43d718f8"
+    },
+    {
+      "claim_id": "99f2cd87-79e2-45bf-a01d-26d2bd906966",
+      "result_id": "b2ba2446-4d36-49c3-95d4-6f9f43d718f8"
+    },
+    {
+      "claim_id": "12ed3067-d698-4a74-90ac-622a7ca157a2",
+      "result_id": "b2ba2446-4d36-49c3-95d4-6f9f43d718f8"
+    },
+    {
+      "claim_id": "65cd5f94-c6f7-4312-9647-b0077863a71a",
+      "result_id": "b2ba2446-4d36-49c3-95d4-6f9f43d718f8"
+    },
+    {
+      "claim_id": "69435a0a-564b-4ae4-986a-9317eef6122b",
+      "result_id": "b2ba2446-4d36-49c3-95d4-6f9f43d718f8"
+    },
+    {
+      "claim_id": "1e544920-c2c9-4c00-9f56-e95834264607",
+      "result_id": "b2ba2446-4d36-49c3-95d4-6f9f43d718f8"
+    },
+    {
+      "claim_id": "d5d9c1e5-95f1-4e9e-aa24-e9f05fe556ed",
+      "result_id": "b2ba2446-4d36-49c3-95d4-6f9f43d718f8"
+    },
+    {
+      "claim_id": "5532d22e-bdbe-470d-b583-5078f7642d0a",
+      "result_id": "b2ba2446-4d36-49c3-95d4-6f9f43d718f8"
+    },
+    {
+      "claim_id": "a463a450-e1ce-49ff-8cb2-7ed87215562e",
+      "result_id": "b2ba2446-4d36-49c3-95d4-6f9f43d718f8"
+    },
+    {
+      "claim_id": "ed2b0477-a42f-419b-8795-df0274483a63",
+      "result_id": "a94916ca-72a1-4665-9746-7afc787d726f"
+    },
+    {
+      "claim_id": "a621827e-3c9c-4296-be62-fcb743f905fb",
+      "result_id": "a94916ca-72a1-4665-9746-7afc787d726f"
+    },
+    {
+      "claim_id": "351d3263-0098-413f-9648-fecf49039d33",
+      "result_id": "a94916ca-72a1-4665-9746-7afc787d726f"
+    },
+    {
+      "claim_id": "0a11d778-8fcc-4c94-a5a8-2a770cebf31d",
+      "result_id": "a94916ca-72a1-4665-9746-7afc787d726f"
+    },
+    {
+      "claim_id": "ac15820c-cdd6-4aab-aa13-8aee6cec97a6",
+      "result_id": "a94916ca-72a1-4665-9746-7afc787d726f"
+    },
+    {
+      "claim_id": "c42625cc-4607-4e7c-823f-d9e156edf01f",
+      "result_id": "74f3418a-9429-4c0e-b156-93d425f25a15"
+    },
+    {
+      "claim_id": "cb1e93d3-0191-431e-b022-3af1b35eea63",
+      "result_id": "74f3418a-9429-4c0e-b156-93d425f25a15"
+    },
+    {
+      "claim_id": "2fb17a3e-8d05-4419-8c17-e73ac4792d60",
+      "result_id": "74f3418a-9429-4c0e-b156-93d425f25a15"
+    },
+    {
+      "claim_id": "774446d1-7cdf-4718-8b52-c70f450258fa",
+      "result_id": "74f3418a-9429-4c0e-b156-93d425f25a15"
+    },
+    {
+      "claim_id": "2c1b605d-a932-43b5-8fa8-8892ae307758",
+      "result_id": "74f3418a-9429-4c0e-b156-93d425f25a15"
+    },
+    {
+      "claim_id": "aff46df0-4b4a-4e47-a852-e6b2637b3839",
+      "result_id": "74f3418a-9429-4c0e-b156-93d425f25a15"
+    },
+    {
+      "claim_id": "5fc73c25-5b39-43e0-9a4e-d1a4ffc266ef",
+      "result_id": "74f3418a-9429-4c0e-b156-93d425f25a15"
+    },
+    {
+      "claim_id": "81338e90-4de9-4e72-b6c9-c48dfb10d187",
+      "result_id": "cf17458d-11df-43cc-99b7-2df8ff22451c"
+    },
+    {
+      "claim_id": "6ecad825-8421-490c-9dbc-95ff10f4056b",
+      "result_id": "7d37fcbf-1a45-4ec0-846e-be93e3f691bb"
+    },
+    {
+      "claim_id": "1c151010-2899-4e45-9b7d-b0118c9eb37e",
+      "result_id": "a7197711-faa1-4a30-ae3b-0a4efe55783c"
+    }
+  ],
+  "comparisons": []
+}

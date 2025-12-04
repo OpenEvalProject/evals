@@ -1,0 +1,304 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "AMPL-MS is a novel antibody-based proximity biotinylation method that does not require fusion protein expression. The method uses a recombinant pA-Apex2 fusion protein to tether Apex2 to chromatin domains marked by specific antibodies, enabling efficient biotinylation of proximal proteins only when antibody, biotin-phenol, and hydrogen peroxide are present.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C27-C30 collectively demonstrate the development and validation of AMPL-MS. The immunofluorescence data (C29) with appropriate controls (C30) and the expression/purification of pA-Apex2 (C27) provide strong evidence for the method's specificity and functionality. The approach is clearly distinguished from existing methods by not requiring transgenic fusion proteins (C2).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "AMPL-MS demonstrates high sensitivity and specificity for centromeric chromatin characterization. Using an anti-CID antibody, the method identified 172 proteins including all known centromeric proteins, with 1000-fold improved sensitivity (2\u00d710^7 vs 2\u00d710^10 cells) compared to conventional CID-APEX2 fusion protein approaches. GO analysis revealed enrichment of RNA-related processes among novel CID-proximal proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C36 provide converging evidence for AMPL-MS sensitivity and accuracy. The detection of all known centromeric proteins (C32) validates the method, while the dramatic reduction in required cell numbers (C34) with mechanistic explanation (C35-C36) demonstrates technical advancement. The GO analysis (C33) reveals novel biology, though the RNA-related findings require further validation addressed in later results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "AMPL-MS successfully distinguishes different chromatin domains based on their proteomic composition. Using anti-MSL2 antibody, the method specifically labeled the X chromosome territory, with domain-specific protein enrichment confirmed by PCA clustering and GO analysis showing distinct functional biases (spindle assembly for CID, dosage compensation for MSL2). Both domains contained RNA-related factors with different functional terms, and histones showed domain-specific modification patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C43 demonstrate AMPL-MS versatility across different chromatin domains. The immunofluorescence specificity (C37), bait-dependent protein enrichment (C38-C39), PCA clustering (C40), and GO analysis (C41-C42) provide multiple lines of evidence. The histone modification analysis (C43) adds orthogonal validation, though the differences are described as 'moderate' and 'slightly higher', suggesting modest effect sizes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "AMPL-MS using histone modification-specific antibodies (H3K4me3, H3K9me3, H4K16Ac) reveals distinct proteomic compositions consistent with active and repressive chromatin states. The method identified known heterochromatin proteins (HP1a, HDACs) near H3K9me3 and active chromatin/dosage compensation proteins near H4K16ac, along with novel domain-specific splicing and RNA processing factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C50 demonstrate AMPL-MS applicability to histone modifications. The detection of expected proteins (C45-C46) validates the approach, while identification of novel RNA processing factors (C47-C48) extends known biology. The functional context provided by literature (C49-C50) strengthens interpretation, though the novelty of individual protein associations requires independent validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "The abundance of specific RNA-binding proteins in proximity to various chromatin domains suggests RNA plays a major and specific role in chromosomal domain organization. This interpretation is supported by literature showing RNA serves as architectural components in nuclear condensates and that specific RNAs (Xist, Rox, centromeric transcripts) associate with distinct chromosomal territories.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C54 provide a synthesis of AMPL-MS findings with established literature. While C51 is an inference from the data, it is well-supported by the consistent detection of RNA-binding proteins across multiple domains and extensive literature citations (C52-C54) documenting RNA's architectural roles. However, this result is primarily interpretive rather than presenting new experimental evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C55",
+      "C57",
+      "C25"
+    ],
+    "result": "RNA depletion substantially changes chromatin domain composition and morphology. RNase treatment disrupts centromeric and X chromosome domains while maintaining overall nuclear structure, with many RNA-sensitive proteins containing RNA-binding domains, suggesting direct RNA-protein interactions mediate domain organization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55, C57, and C25 demonstrate RNA's functional importance through loss-of-function experiments. The immunofluorescence showing domain disruption (C55) combined with proteomic changes (C25) and enrichment of RNA-binding domains in sensitive proteins (C57) provide strong evidence. However, RNase treatment is a crude perturbation that may have indirect effects, and the claim that proximity is 'mediated by direct interaction' (C57) is inferential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C23",
+      "C58",
+      "C59",
+      "C60",
+      "C24"
+    ],
+    "result": "AMPL-MS can identify domain-specific RNAs using biotin-anilin as substrate. The method shows localized RNA labeling corresponding to X chromosome and centromeric territories, with RT-qPCR confirming specific enrichment of roxRNAs near MSL2 and centromeric G2 repeat RNAs near CID, while control transcripts show no enrichment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23, C58-C60, and C24 demonstrate AMPL-MS capability for RNA profiling. The immunofluorescence (C58), RT-qPCR validation with appropriate controls (C59-C60), and domain-specific enrichment (C24) provide strong evidence. However, the claim that RNAs are 'most likely transcribed from DNA that is part of the domain' (C24) is inferential and would require genomic localization data for definitive support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "MLE, an RNA helicase, is lost from both centromeric and X chromosome domains upon RNA removal. MLE's vertebrate homolog DHX9 regulates R-loops and plays important roles in centromere function across organisms. Immunofluorescence confirms a minor fraction of MLE localizes to Drosophila centromeres in an RNA-dependent manner.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C65 identify MLE as a key RNA-dependent factor at chromatin domains. The mass spectrometry data (C61), extensive literature support for DHX9/MLE function (C62-C64), and immunofluorescence validation (C65) provide converging evidence. However, the 'minor fraction' of MLE at centromeres (C65) suggests this may not be a major localization site, and the functional significance requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C66",
+      "C71",
+      "C72"
+    ],
+    "result": "AMPL-MS identified novel centromeric RNAs and suggested R-loop formation at Drosophila centromeres. Using a novel HBD probe, R-loops were detected at centromeres, and MLE knockdown substantially reduced centromeric R-loops. The authors speculate MLE promotes R-loop formation by resolving secondary structures in centromeric RNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C5, C66, C71-C72 present a novel finding about centromeric R-loops. The RNA identification (C4), HBD probe validation (C66), and MLE knockdown effects (C72) provide experimental support. However, the mechanistic model (C71) is explicitly speculative, and the 'substantial reduction' upon MLE knockdown (C72) lacks quantification. The result would be strengthened by additional R-loop mapping and mechanistic validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C26",
+      "C69",
+      "C70",
+      "C73",
+      "C74"
+    ],
+    "result": "Centromeric R-loops play an important role in centromere formation and maintenance. This model is supported by literature showing Drosophila centromeres are rich in sequences forming non-canonical secondary structures, R-loop removal causes Cenp-A loss in mammals, and neocentromeres associate with R-loops.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26, C69-C70, C73-C74 synthesize the study's findings with recent literature to propose a model for R-loop function at centromeres. While the AMPL-MS data and R-loop detection (C26) are experimental, the model relies heavily on literature from other systems (C73-C74). The cross-species support strengthens the interpretation, but direct functional tests in Drosophila are needed for definitive validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Drosophila S2DGRC cells were obtained from DGRC, verified by long-read sequencing for identity, and tested negative for Mycoplasma contamination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C78 describe standard cell line authentication procedures. The methods are clearly stated and represent best practices for cell line validation. These quality control measures support the reliability of all experimental results but are routine methodological details rather than novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "The pA-Apex2 fusion protein was constructed by replacing MNase in pk19pAMNase with Apex2-6xHis sequence, expressed in E. coli BL21DE3 Gold with 0.25 mM IPTG induction, and purified using TALON metal affinity resin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C83 describe standard molecular cloning and protein expression procedures. The methods are clearly documented with appropriate citations and reagent details. While essential for reproducibility, these are routine techniques rather than methodological innovations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "The AMPL-MS protocol uses 2\u00d710^7 cells per experiment, involves nuclear isolation, fixation with 3.7% paraformaldehyde, permeabilization with 0.25% Triton X-100, overnight antibody incubation, 3-hour pA-Apex2 incubation, and 2-minute biotinylation with 500 \u00b5M biotin-phenol and 1 mM H2O2, followed by quenching and streptavidin bead isolation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C91 provide detailed protocol specifications essential for reproducibility. The methods are clearly described with specific concentrations, times, and temperatures. These procedural details support the technical rigor of the study but represent methodological documentation rather than novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C92",
+      "C93"
+    ],
+    "result": "For RNA labeling, biotin-aniline was substituted for biotin-phenol, and biotinylated RNA was enriched using C1 streptavidin magnetic beads (10 \u00b5l beads per 25 \u00b5g RNA).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C93 describe the adaptation of AMPL-MS for RNA labeling. The substrate switch from biotin-phenol to biotin-aniline is well-established for Apex2-mediated RNA labeling. While important for the RNA experiments, this represents application of known chemistry rather than methodological innovation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Mass spectrometry data were analyzed using MaxQuant 1.6.1.476 with specific parameters (10 ppm MS tolerance, 0.01 protein FDR). Proteins with LFC >1 and FDR \u22640.05 were considered significant. GO analysis used clusterProfiler v3.12.0 enrichGO function without background set.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C96 document the computational analysis pipeline. The methods are standard and appropriately cited. However, the lack of a background set for GO analysis (C96) may affect specificity, and the statistical threshold (C95) is clearly defined but relatively permissive (FDR \u22640.05 rather than more stringent cutoffs). These are acceptable but not optimal analytical choices.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C97"
+    ],
+    "result": "Proteomics and histone PTM datasets are publicly available in ProteomeXchange/PRIDE with identifiers PXD044295 and PXD044296.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C97 documents data availability in appropriate public repositories with specific accession numbers. This represents best practice for data sharing and reproducibility but is a standard requirement rather than a scientific finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Eukaryotic chromatin is organized into functional domains with distinct proteomic compositions and nuclear positions. Chromatin is classified into euchromatin and heterochromatin, with accessibility mediated by protein-DNA and protein-protein interactions. Systematic studies revealed up to 30 chromatin types, genome compartmentalization, chromosome territories, and dynamic reorganization during the cell cycle, with domain formation mediated by DNA-protein-RNA interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C14 provide background context from established literature with appropriate citations. These claims accurately represent current understanding of chromatin organization but present no new findings. They serve to motivate the study and contextualize results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Existing proximity biotinylation methods have limitations including requirement for fusion protein expression, high background, low sensitivity (BirA/HRP), and large input requirements. While Apex2 enables efficient protein and RNA labeling, previous approaches required transgenic cell lines. A related protein A-Apex2 approach was recently used for histone modification domains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C22 review existing proximity biotinylation methods with appropriate citations, identifying limitations that motivate AMPL-MS development. The assessment is fair and well-supported by literature. However, some limitations (C18, C20) are stated without quantitative support, and the comparison to Li et al. 2022 (C22) could be more detailed regarding methodological differences.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C3"
+    ],
+    "result": "AMPL-MS identified known RNA-binding proteins in proximity of the hyperactive X chromosome and centromere, supporting the method's accuracy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C3 is supported by the detection of expected proteins in domain-specific proteomes (covered in detail by C32, C39, C45-C46). The identification of known factors validates the method, though this is a validation result rather than a novel biological finding.",
+    "result_type": "MINOR"
+  }
+]

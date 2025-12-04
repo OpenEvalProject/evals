@@ -1,0 +1,369 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "DDX39B knockdown significantly alters expression of MS susceptibility genes. 762 transcripts were significantly altered by Sh3-mediated DDX39B knockdown in CD4+ T cells from both donors, and 41 of 421 detected MS susceptibility genes (from 558 total identified by Patsopoulos et al., 2019) were significantly altered, showing significant enrichment (p=0.00013).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C31 provide quantitative RNAseq data with statistical analysis showing significant enrichment of DDX39B-regulated genes among MS susceptibility genes. The p-value of 0.00013 supports the enrichment claim, and the data are consistent across two donors with appropriate controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Sh3 treatment was more effective than Sh5 treatment in depleting DDX39B and causing transcriptional changes. More transcript level changes were detected with Sh3 than Sh5, consistent with Sh3 reducing DDX39B RNA and protein levels more profoundly and consistently.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C26 describe technical validation of the knockdown efficiency. The observation that Sh3 is more effective than Sh5 is supported by RNAseq data, supplementary files, and previous western blot data (C26 cites prior work). This provides important context for interpreting subsequent results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "DDX39B depletion reduces FOXP3 RNA and protein expression across multiple cell types. FOXP3 RNA was reduced in DDX39B-depleted primary CD4+ T cells from six donors (C32), FOXP3 protein decreased in four donors (C33), and similar reductions were observed in MT-2 cells (C36-C37) and primary Tregs (C38-C39).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C40 demonstrate consistent reduction of FOXP3 at both RNA and protein levels across multiple donors and cell types (primary CD4+ T cells, MT-2 cells, and primary Tregs). The data are supported by RT-qPCR and western blots shown in figures, with appropriate replication across donors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "DDX39B knockdown disrupts FOXP3-regulated gene expression networks. GSEA identified enrichment of FOXP3 target gene sets among downregulated genes, ConnectivityMap analysis showed significant overlap between DDX39B and FOXP3 knockdown profiles, and specific FOXP3 targets like IL2RA were downregulated in both CD4+ T cells and Tregs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C46 use multiple independent approaches (GSEA, ConnectivityMap, RT-qPCR validation) to demonstrate that DDX39B knockdown affects FOXP3-regulated gene networks. The convergence of evidence from different analytical methods and the validation of specific targets (C44-C45) support the conclusion, though C46 appropriately notes both FOXP3-dependent and independent pathways.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "DDX39B knockdown alters T cell lineage transcription factor expression, decreasing TBX21 (TH1) and increasing GATA3 (TH2) in MT-2 cells and primary Tregs, suggesting a shift toward TH2-associated gene expression patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C49 show consistent changes in lineage-specific transcription factors across cell types. However, C49 appropriately includes caveats about interpretation given T cell population complexity. The data support the observation but the functional implications require careful interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "DDX39B knockdown affects FOXP3 transcripts early in biogenesis, not during nucleocytoplasmic transport. Subcellular fractionation showed FOXP3 transcripts were disproportionately nuclear compared to EEF1A1, this association increased with DDX39B knockdown, and FOXP3 RNA was reduced in all three fractions (cytoplasm, nucleoplasm, chromatin).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C57 use subcellular fractionation with appropriate compartment markers to demonstrate that DDX39B affects FOXP3 early in biogenesis. The reduction in all fractions (C55) and the logic that dramatic reduction in both nucleoplasm and cytoplasm argues against a transport defect (C56) are sound. The conclusion (C57) follows logically from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "DDX39B is required for efficient splicing of multiple FOXP3 introns. RNAseq and RT-qPCR confirmed increased retention of FOXP3 introns upon DDX39B knockdown in CD4+ T cells, MT-2 cells, and Tregs. Rescue experiments with recombinant DDX39B restored intron splicing, though protein rescue was less complete, likely due to sustained transcriptional downregulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C64 provide strong evidence through multiple approaches (RNAseq, RT-qPCR, rescue experiments) across multiple cell types. The rescue of splicing phenotype (C60) is particularly compelling. The explanation for incomplete protein rescue (C62) is reasonable speculation. The conclusion that DDX39B is required for efficient FOXP3 intron removal (C63-C64) is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "DDX39B depletion affects splicing of a limited subset of genes, primarily through modulation of intron retention. Analysis of RNAseq data showed 784 retained intron events changed (397 increased, 387 decreased), with retained introns being the most common type of splicing change, followed by cassette exon use (488 events).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C73 provide comprehensive analysis of global splicing changes. The quantitative data on splicing event types are clear. The observation that only a limited number of events changed (C65) and the explanation for variability between conditions (C68) are appropriate. The conclusion (C73) that intron retention is the primary effect is supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "FOXP3 introns have distinctive sequence features: 5' splice sites are only modestly weaker than average, but 3' splice sites are considerably weaker, with U-poor and C-rich polypyrimidine tracts that differ from typical X chromosome genes and previously characterized human introns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C78 present sequence analysis comparing FOXP3 introns to other genes. The data are shown in figures and supplementary files. The comparison to other X chromosome genes and to published data (C78 cites Yeo and Burge, 2004) provides appropriate context. The characterization is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "C-rich polypyrimidine tracts in FOXP3 introns are evolutionarily conserved across vertebrates. Conservation is observed in mammals (>200 million years divergence), amphibians (Xenopus), and trends toward C-rich tracts in zebrafish FOXP3a. Within the FOX family, FOXP4 shares C-rich tracts while FOXP1/FOXP2 have U-rich tracts, suggesting C-rich tracts are ancestral.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C87 provide phylogenetic analysis across multiple species with appropriate evolutionary context. The data are shown in figures and supplementary files. The inference that C-rich tracts are ancestral (C86) is supported by the phylogenetic distribution. The conclusion about regulatory importance (C87) is a reasonable inference from the conservation data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "C-rich polypyrimidine tracts are necessary for DDX39B-dependency of FOXP3 introns. Reporter assays showed FOXP3 introns were markedly DDX39B-dependent, conversion of 5' splice sites to consensus only modestly relieved dependency, but replacement of py tracts with U-rich sequences eliminated DDX39B sensitivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C92 use reporter assays with systematic mutagenesis to test the role of different sequence elements. The experimental design directly tests the hypothesis, and the results clearly demonstrate that C-rich py tracts are necessary for DDX39B dependency. The data are shown in multiple figures with appropriate controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "DDX39B-sensitive introns genome-wide are enriched for C-rich polypyrimidine tracts. Comparison of 397 introns with increased retention to 500 unaffected introns showed no difference in 5' splice site scores but modest decrease in 3' splice site scores, with significantly lower U frequency and higher C frequency in py tracts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C98 extend the findings from FOXP3 to genome-wide analysis. The statistical comparisons are appropriate, and the results are consistent with the FOXP3-specific findings. The modest effect size for 3' splice site scores (C94) but clear difference in nucleotide composition (C95-C96) suggests the py tract composition is the key feature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "C-rich polypyrimidine tracts are required but not sufficient for DDX39B-dependency. Ten of twelve tested C-rich introns in various genes showed increased retention with DDX39B knockdown, while U-rich introns did not. However, FOXP1 introns with U-rich tracts were not DDX39B-sensitive, and replacing FOXP1 intron 19 py tract with FOXP3 intron 11 C-rich tract did not confer sensitivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C105 test the generality of the C-rich py tract requirement through targeted analysis of additional genes and domain-swapping experiments. The results clearly demonstrate that C-rich tracts are necessary (C99-C100) but not sufficient (C101-C105). This is an important refinement of the model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "C-rich polypyrimidine tracts are required but not sufficient for DDX39B-dependency, defining a previously unrecognized class of introns. Analysis of introns with decreased retention showed modest C enrichment, supporting the conclusion that C-rich tracts alone are insufficient, and suggesting additional sequence or structural features are required.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C110 synthesize the findings to propose a new class of introns. The analysis of introns with decreased retention (C106) provides additional support. The conclusion that C-rich tracts are necessary but not sufficient (C108-C110) is well-supported by the collective data from multiple experimental approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "Splicing of FOXP3 introns requires DDX39B ATPase activity but not helicase activity. Wildtype DDX39B rescued FOXP3 intron 11 splicing, ATPase-defective mutants (K95A, E197A) did not, but helicase-defective mutant D199A (which retains ATPase activity) rescued splicing, even better than wildtype, consistent with its higher ATPase activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C123 use structure-function analysis with well-characterized DDX39B mutants to dissect the mechanism. The results clearly distinguish ATPase from helicase requirements. The observation that D199A rescues better than wildtype (C120) and the explanation based on higher ATPase activity (C121) are supported by cited literature. The mechanistic conclusion (C122) is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "Nine of eleven FOXP3 introns belong to the C-rich polypyrimidine tract type and likely share the requirement for DDX39B ATPase activity, explaining why overall FOXP3 expression is exquisitely sensitive to DDX39B levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124-C126 integrate sequence analysis with functional data to explain the strong DDX39B-dependency of FOXP3. The quantitative observation (C124) is supported by sequence data. The inference that multiple introns share the requirement (C125) is reasonable given the shared sequence features. The conclusion (C126) logically follows from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C130",
+      "C143"
+    ],
+    "result": "Low levels of DDX39B lead to low levels of FOXP3 and by inference low numbers of functional Tregs, with implications for immune regulation. Given the strong dependence of FOXP3 expression on DDX39B and the dose-dependent effect of FOXP3 on Treg function, humans with low DDX39B levels likely have reduced Treg development, maintenance, and suppressive function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C130 and C143 draw conclusions about the biological implications of the findings. C130 is directly supported by the experimental data showing DDX39B is required for FOXP3 splicing. C143 is a reasonable inference based on the experimental data combined with established knowledge about FOXP3 dose-dependency (cited in the manuscript). However, direct demonstration of effects on Treg function would strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C5",
+      "C145",
+      "C146"
+    ],
+    "result": "DDX39B enhances immune tolerance and controls expression of MS susceptibility genes and immune-related genes. DDX39B knockdown led to loss of immune-regulatory and gain of immune-effector expression signatures, with some genes regulated independently of FOXP3 effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C5, C145-C146 describe the overall hypothesis and major findings. C2 is explicitly stated as a hypothesis/postulate. C3 and C5 are supported by the RNAseq data showing changes in MS susceptibility genes and immune signatures. C145 is supported by the enrichment analysis. C146 is an inference from the differential effects in different cell types. The claims are generally supported but C2 remains a hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C22",
+      "C23"
+    ],
+    "result": "FOXP3 introns belong to a previously unrecognized type of introns with C-rich polypyrimidine tracts, and splicing of these introns is exquisitely sensitive to DDX39B levels, making FOXP3 expression highly sensitive to DDX39B.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C7 and C22-C23 are key findings stated in the abstract. The characterization of C-rich py tracts as 'previously unrecognized' (C6) is supported by the phylogenetic analysis and comparison to published data. The 'exquisite sensitivity' (C7, C22-C23) is supported by the dose-response data, rescue experiments, and the observation that multiple FOXP3 introns are affected. The claims are well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "Post-transcriptional mechanisms in FOXP3 regulation have not been noted before, as CRISPR screens did not discover DDX39B, likely because DDX39B knockout results in lethality.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "C131 claims novelty for post-transcriptional regulation of FOXP3. C132 correctly notes that CRISPR screens did not identify DDX39B (supported by citations). However, C133's explanation that DDX39B knockout causes lethality is presented as speculation ('likely') without direct evidence. The novelty claim (C131) may be overstated without comprehensive literature review, though the CRISPR screen data support that this mechanism was not previously identified by those approaches.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C144"
+    ],
+    "result": "Low levels of DDX39B could promote conversion of Tregs to TH2-like self-reactive effector cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "C144 is explicitly presented as speculation ('it is possible') based on the GATA3 upregulation data and cited literature. While the GATA3 data are solid, the inference about Treg conversion is not directly tested. This represents a hypothesis for future work rather than a demonstrated result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C155",
+      "C156",
+      "C157",
+      "C159",
+      "C161",
+      "C162"
+    ],
+    "result": "DDX39B-driven U2 snRNP binding stabilizes U2AF2 at C-rich polypyrimidine tract sites, potentially making the U2 snRNP complex the first splicing commitment complex for these introns, distinct from conventional introns. This implies multiple pathways to spliceosome assembly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C155-C156 and C159 are explicitly presented as proposals/suggestions based on the data. C157 is supported by the mutant analysis. C161-C162 draw broader conclusions about multiple spliceosome assembly pathways. While the data on ATPase vs helicase requirements are solid, the mechanistic model for how DDX39B stabilizes U2AF2 at C-rich sites is not directly tested. These are reasonable hypotheses but require additional biochemical validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C163",
+      "C164"
+    ],
+    "result": "FOXP3 introns may be prone to intron 'detention' rather than retention, and certain stimuli may free them from DDX39B dependency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C163-C164 are explicitly presented as speculation ('intriguing possibility'). The distinction between detention and retention is not tested experimentally. This represents an interesting hypothesis for future investigation but is not supported by data in the current manuscript.",
+    "result_type": "MINOR"
+  }
+]

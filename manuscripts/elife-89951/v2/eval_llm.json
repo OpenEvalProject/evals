@@ -1,0 +1,435 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "IRF1 is induced by IFN\u03b3 in RKO cells and rapidly degraded by the proteasome with a return to baseline within 4 hours. Lysosomal inhibition does not affect IRF1 stability, while proteasome inhibition increases IRF1 levels, establishing RKO cells as a suitable model for studying IRF1 stability regulators.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C8 provide converging evidence from multiple experimental approaches (western blot, flow cytometry, cycloheximide chase, proteasome and lysosome inhibitors) demonstrating that IRF1 is IFN\u03b3-inducible and proteasomally degraded in RKO cells. The data are internally consistent and support the conclusion that RKO cells are appropriate for screening IRF1 regulators.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "The half-life of endogenous IRF1 is 72 minutes while mCherry-IRF1 has a half-life of 144 minutes. Similarly, endogenous cMYC has a half-life of 19 minutes while mCherry-cMYC has a 24-minute half-life, consistent with published literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C13 present quantitative half-life measurements from exponential decay curve fitting. The mCherry-tagged proteins show longer half-lives than endogenous proteins, which is acknowledged. The cMYC measurements align with cited literature, providing validation. However, the doubling of IRF1 half-life upon mCherry tagging raises questions about whether the reporter fully recapitulates endogenous degradation kinetics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "The mCherry-cMYC screen successfully identified FBXW7 as the top hit, along with other known UPS components including proteasome subunits (PSMC5, PSMD4, PSMD11), AKIRIN2, and VCP/p97, validating the screening approach.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C18 demonstrate that the cMYC screen identified known degradation machinery, with FBXW7 as the strongest hit. This positive control validates the screening methodology and provides confidence in the IRF1 screen results. The identification of multiple known cMYC regulators strengthens the conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "The mCherry-IRF1 screen identified 27 high-confidence factors specific to IRF1, with SPOP as the only candidate strongly enriched at both 3 and 6 days post-Cas9 induction. Seven nuclear transport factors were also identified. Previously reported IRF1 regulators (FBXW7, MDM2, STUB1/CHIP) did not score significantly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C26 present the core screening results identifying SPOP as the primary IRF1 regulator. The specificity is demonstrated by SPOP's absence in the cMYC screen and enrichment at multiple timepoints. The failure to identify previously reported regulators is acknowledged with appropriate caveats about technical limitations and cell-type specificity. The identification of nuclear transport factors provides additional mechanistic insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "SPOP ablation specifically increases IRF1 protein levels by 40-70% without affecting cMYC levels or IRF1 mRNA concentrations. This effect is consistent across seven independent sgRNAs, three monoclonal knockout lines, and is conserved in mouse embryonic fibroblasts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C36 provide extensive validation of the screen hit through multiple orthogonal approaches: individual sgRNAs (n=7), monoclonal knockouts (n=3), flow cytometry, western blot, RT-qPCR, and cross-species validation. The consistency across methods and the demonstration that mRNA is unaffected while protein increases strongly support SPOP's role in post-translational IRF1 regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "IRF1 and SPOP co-localize in the nucleoplasm, with SPOP also present at nuclear speckles. Proteasome inhibition increases diffuse nucleoplasmic IRF1 but IRF1 is not detected in SPOP puncta. Subcellular fractionation confirms SPOP targets IRF1 in the nucleus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C49 use confocal microscopy and subcellular fractionation to establish that IRF1 and SPOP are in the same compartment (nucleoplasm) where degradation occurs. The observation that IRF1 is not in SPOP puncta suggests nucleoplasmic rather than speckle-based degradation. The fractionation data (C47-C49) provide orthogonal support. Some claims (C41, C45, C46) are appropriately marked as speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Four sequences in IRF1 match the SPOP degron consensus [\u03a6]-[\u03a0]-[S]-[S/T]-[S/T]. One degron is located between the DNA-binding domain and IAD2 domain, while three are within the IAD2 transactivation/dimerization domain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C54 identify putative SPOP binding sites through sequence analysis and computational prediction. The identification is supported by multiple sequence alignment across species and is consistent with known SPOP substrate recognition motifs. The location of degrons in functionally important domains provides mechanistic insight.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "SPOP expression decreases wild-type IRF1 protein levels in a dose-dependent manner without affecting a stable EGFP control, while an IRF1 degron mutant (IRF1-SBDmut) is resistant to SPOP-mediated degradation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C58 demonstrate that SPOP-mediated IRF1 degradation requires the identified degrons through comparison of wild-type and mutant IRF1. The dose-dependence and specificity (EGFP unaffected) support the conclusion. This is a critical experiment linking the predicted degrons to functional degradation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "SPOP and wild-type IRF1 physically interact through the SPOP MATH domain and IRF1 degrons, as demonstrated by reciprocal co-immunoprecipitation experiments. IRF1-SBDmut and SPOP-MATHmut show abolished or strongly reduced interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C63 provide direct biochemical evidence of SPOP-IRF1 interaction through reciprocal co-IP experiments. The requirement for both the SPOP MATH domain and IRF1 degrons is demonstrated through mutant analysis. This establishes direct physical interaction as the mechanism of targeting.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "IRF1 ubiquitination is significantly increased by wild-type SPOP but not SPOP-MATHmut, and is significantly decreased when IRF1 degrons are mutated. Residual ubiquitination in the degron mutant suggests additional E3 ligases may also ubiquitinate IRF1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C67 demonstrate that SPOP-mediated ubiquitination requires both functional SPOP MATH domain and IRF1 degrons. The observation of residual ubiquitination (C67) is appropriately noted as speculative and suggests complexity in IRF1 regulation. The data directly link SPOP binding to ubiquitination.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Individual lysine-to-arginine mutations in specific IRF1 domains do not prevent proteasome-mediated degradation, but mutation of all lysines (allKtoR) abolishes stabilization by proteasome inhibition, suggesting SPOP targets lysines in multiple IRF1 domains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C70 systematically map ubiquitination sites through domain-specific lysine mutations. The finding that only complete lysine mutation prevents degradation indicates distributed ubiquitination sites. This is consistent with SPOP targeting multiple lysines across IRF1 domains.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Exogenous wild-type SPOP rescues elevated IRF1 levels in SPOP knockout cells but not in wild-type cells, and rescue requires the SPOP MATH domain. This demonstrates that IRF1 is targeted by SPOP for ubiquitination through MATH domain interaction with S/T-rich degrons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C75 provide genetic rescue experiments demonstrating specificity of the SPOP-IRF1 interaction. The observation that SPOP is not limiting in wild-type cells (C71-C72) but can rescue knockout cells (C73-C74) with MATH domain dependence (C74) provides strong evidence for the proposed mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "SPOP ablation increases mRNA levels of IRF1-dependent genes (GBP2, GBP3, IFIT3, APOL2, PARP14) without affecting IRF1-independent NLRC5. The effect is abolished in IRF1/SPOP double knockout cells, demonstrating that increased ISG expression depends on IRF1-driven transcription.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C84 demonstrate functional consequences of SPOP loss on IRF1 transcriptional activity. The use of IRF1-independent (NLRC5) and IRF1-dependent genes, combined with double knockout experiments, provides strong evidence that SPOP controls IRF1 transcriptional output through protein level regulation. The RT-qPCR data support the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Wild-type IRF1 activates an ISRE reporter 408-fold, and this is reduced 11-fold by SPOP co-expression. IRF1-SBDmut shows 85% higher activity and is resistant to SPOP-mediated repression. SPOP-MATHmut cannot repress IRF1 activity, demonstrating that both IRF1 degrons and SPOP MATH domain are required for controlling IRF1 transcriptional output.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C91 use luciferase reporter assays to demonstrate functional consequences of SPOP-IRF1 interaction on transcriptional activity. The systematic comparison of wild-type and mutant proteins, with appropriate controls for protein levels, provides strong evidence that SPOP controls IRF1 function through degron-dependent degradation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "SPOP loss reduces cell fitness by 15% in wild-type cells and nearly twofold more in mCherry-IRF1-expressing cells over 20 days, demonstrating that SPOP loss disproportionally reduces fitness in the presence of elevated IRF1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C96 demonstrate phenotypic consequences of SPOP loss through competitive fitness assays. The differential effect in IRF1-expressing versus non-expressing cells provides evidence that the fitness defect is IRF1-dependent. The 20-day timecourse and use of mixed populations strengthen the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "In cells expressing mCherry-IRF1 with depleted STAT1 and IRF3, SPOP loss reduces VSV progeny titers by approximately 10-fold compared to control cells. This demonstrates that SPOP limits intracellular IRF1 concentrations and that SPOP loss increases IRF1-dependent antiviral immunity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C104 demonstrate functional antiviral consequences of SPOP-mediated IRF1 regulation. The experimental design appropriately controls for IRF1-independent antiviral responses by depleting STAT1 and IRF3 and using IRF1-overexpressing cells. The 10-fold reduction in virus titer provides strong evidence for biological significance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "The study contextualizes findings within existing literature on IRF1 regulation and cell-type-specific E3 ligase function. FBXW7 did not regulate IRF1 in RKO cells despite being functional for cMYC degradation, while SPOP is dispensable for cMYC degradation in these cells but mediates cMYC turnover in other cancer types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C114 appropriately contextualize the findings within prior literature and demonstrate cell-type-specific regulation. The observation that FBXW7 regulates cMYC but not IRF1 in RKO cells, while literature reports FBXW7-mediated IRF1 degradation in other cells, supports the concept of context-dependent regulation. The citations are appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "SPOP is differentially expressed and mutated in various cancers with context-dependent effects. SPOP is overexpressed in clear-cell renal cell carcinoma where IFN\u03b3 signaling and IRF1 are important biomarkers, suggesting potential relevance of the SPOP-IRF1 axis in this cancer type.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C123 appropriately discuss the cancer relevance of findings through literature citations. The connection to ccRCC is logical given SPOP overexpression and IRF1's role as a biomarker in this cancer. However, C121 is appropriately marked as speculative regarding why IRF1 wasn't previously identified as a SPOP substrate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "SPOP may have opposite effects on IRF1 stability in myeloid versus stromal cells. In myeloid cells, SPOP loss decreases IRF1 through indirect mechanisms involving TLR signaling, while in the stromal RKO cells used here, SPOP directly degrades IRF1 independent of immune signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124-C131 appropriately discuss apparent contradictions with other published work and propose mechanistic explanations based on cell-type differences and signaling context. The distinction between TLR-dependent (myeloid) and TLR-independent (stromal) mechanisms is supported by citations and the authors' data. Claims C128 and C131 are appropriately marked as speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C132",
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "During manuscript revision, Gao et al. independently reported SPOP as an IRF1 degrader in endometrial cancer cells. While mechanistic findings are consistent, there are differences in subcellular localization: IRF1 is diffusely nucleoplasmic in RKO/HeLa cells but associates with SPOP in nuclear speckles in KLE endometrial cancer cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C132-C135 appropriately acknowledge concurrent independent work and discuss similarities and differences. The subcellular localization difference is clearly stated and may reflect cell-type-specific mechanisms or technical differences. This transparent discussion strengthens the manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141"
+    ],
+    "result": "The study's findings are consistent with SPOP's known substrate profile: SPOP recognizes nuclear targets with intrinsically disordered regions through S/T-rich degrons. IRF1 has IDRs, localizes to the nucleoplasm, and is likely targeted through one or more S/T-rich degrons, though individual degron contributions were not determined.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C136-C141 appropriately contextualize findings within SPOP substrate recognition mechanisms. The acknowledgment that individual degron contributions were not determined (C141) is an appropriate limitation. The consistency with known SPOP biology strengthens the mechanistic model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146"
+    ],
+    "result": "SPOP binding to S/T-rich degrons can be phosphorylation-dependent or -independent depending on the substrate. IRF1 phosphorylation at S219/S221 in the fourth degron has been detected in proteomics studies and by IKK\u03b5 in breast cancer cells, where it increased IRF1 degradation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C142-C146 discuss potential regulatory complexity through phosphorylation with appropriate citations. The identification of phosphorylation sites in the degron region and their effect on degradation in other contexts provides mechanistic insight, though the role in SPOP-mediated degradation remains to be determined.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C147",
+      "C148",
+      "C149",
+      "C150"
+    ],
+    "result": "Three S/T-rich degrons are located in the IAD2 transactivation/dimerization domain. The authors speculate that IRF1 heterodimerization through IAD2 could shield these degrons from SPOP recognition, potentially allowing SPOP to preferentially target inactive nucleoplasmic IRF1 not engaged in transcription.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C147-C150 present an interesting mechanistic hypothesis about selective degradation of inactive IRF1. While C147 is supported by sequence data, C149 and C150 are appropriately marked as speculative. This model is plausible but lacks direct experimental evidence. Testing whether dimerization or DNA binding affects SPOP-mediated degradation would be needed to support this hypothesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166",
+      "C167",
+      "C168",
+      "C169",
+      "C170",
+      "C171",
+      "C172"
+    ],
+    "result": "The introduction provides comprehensive background on interferon signaling, IRF family members, IRF1's roles in immunity and tumor suppression, and known mechanisms of IRF1 regulation including transcriptional induction, proteasomal degradation, and regulation by various E3 ligases and chaperones.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C153-C172 provide appropriate background context with extensive literature citations. These claims establish the biological importance of IRF1 regulation and the rationale for identifying novel regulators. The citations appear appropriate and the background is comprehensive.",
+    "result_type": "MINOR"
+  }
+]

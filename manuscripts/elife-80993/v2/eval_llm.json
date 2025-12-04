@@ -1,0 +1,289 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "The experimental design involved domesticating an ancestral C. elegans population (A6140) to low salt for 140 generations, then evolving three replicate populations (GA[1,2,4]) through gradual salt increase for 35 generations followed by 15 generations in constant high salt. Populations were maintained at high census sizes (N=10^4) with effective sizes around 10^3, and hermaphrodite self-fertilization became predominant from generation 35 onwards. Inbred lines were derived from ancestral and evolved populations for phenotypic measurements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5 and C95-C99 provide a comprehensive and internally consistent description of the experimental design, including population derivation, environmental conditions, population sizes, mating system changes, and sampling strategy. The design is well-documented with appropriate citations to prior work and clear specification of sample sizes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C13",
+      "C106"
+    ],
+    "result": "The ancestral population exhibits extensive phenotypic plasticity between low and high salt environments for locomotion behavior traits and body size. Most transition rates are plastic with salt except forward-to-backward transitions, and body size shrinks in high salt as expected. The phenotypic plasticity canonical trait (\u03b4p) shows specific patterns of trait loadings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C9, C13, and C106 describe ancestral phenotypic plasticity with reference to Figure 1 and Table 2, showing statistically significant environmental effects using both univariate and multivariate approaches. The results are robust to modeling approach and consistent with biological expectations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C19",
+      "C20",
+      "C109"
+    ],
+    "result": "The ancestral population contains significant genetic variance for locomotion behavior traits and body size in both environments, with similar G-matrix size between environments. Genetic covariances show specific patterns: SF and SB are negatively correlated with other transition rates but positively with each other, and body size shows positive genetic covariances with SF and SB. The first canonical trait (gmax) contains most genetic variation (75% in high salt), with the next two canonical traits containing 6-20% but exceeding null expectations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C17, C19-C20, and C109 describe the ancestral G-matrix structure with appropriate statistical support from Bayesian MCMC methods (Figure 2). Null hypothesis testing via randomization provides evidence that genetic variances exceed chance expectations. The estimates are robust to prior specification (Figure 2\u2014figure supplement 1).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C21"
+    ],
+    "result": "Ancestral phenotypic plasticity (\u03b4p) is not aligned with the ancestral G-matrix in high salt.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C21 is supported by Figure 3 showing that genetic variance along \u03b4p does not differ from null expectations and the angle between \u03b4p and gmax is larger than expected by chance. This demonstrates a lack of alignment between the direction of environmental response and the direction of most genetic variation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C110"
+    ],
+    "result": "Selection differentials in the ancestral population show genetic variance for self-fertility in high salt, with positive genetic covariances between self-fertility and SF/SB transition rates, and negative covariances with other transition rates. Selection differentials are small or absent for low salt transition rates, while body size shows clear positive selection differentials in both environments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C27 and C110 describe selection differentials estimated from Gqw-matrices (Figure 4), with appropriate statistical support and robustness checks for self-fertility variation (Figure 4\u2014figure supplement 2). The approach correctly applies Robertson's Secondary Theorem of Natural Selection.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C28",
+      "C29"
+    ],
+    "result": "All three replicate populations (GA[1,2,4]50) showed increased mean fitness relative to the ancestral population in high salt by generation 50, demonstrating adaptation to the high salt environment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C29 are supported by competition assay data (Figure 5) showing statistically significant fitness increases in all three replicates. The experimental design appropriately controls for environmental effects and uses a GFP-marked tester strain.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C107"
+    ],
+    "result": "Phenotypic divergence occurred for locomotion traits and body size in high salt concomitant with adaptation. Each transition rate showed divergence in at least one replicate, with three transition rates showing significant divergence across all replicates. Body size diverged in only one replicate. Traits with low ancestral genetic variance (BS and FS) still diverged, indicating genetic variance did not limit phenotypic divergence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C34 and C107 describe phenotypic divergence with statistical support from both MANOVA and univariate analyses (Figure 6, Table 2). The observation that low-variance traits diverged (C34) is an important inference supported by comparing Figure 2 and Figure 6, though the mechanism remains unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C36",
+      "C37"
+    ],
+    "result": "In the low salt environment, there was less phenotypic divergence than in high salt, with only three of six transition rates showing divergence in at least two replicates. Unlike high salt, body size in low salt showed marked increases in all replicate populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C37 describe low salt phenotypic divergence with reference to Figure 6\u2014figure supplement 2. The contrasting pattern of body size evolution between environments is well-documented and represents an important finding about the evolution of plasticity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C44",
+      "C112"
+    ],
+    "result": "The size of the high salt G-matrix was reduced during experimental evolution across all replicates, with about half of genetic variance lost by generation 50. However, most genetic variances still differ from null expectations, with 3-5 canonical traits exceeding null expectations. Evolved populations retained significant genetic variance in the three ancestral canonical traits. Random skewers analysis identified 250 of 1000 random directions showing significant genetic divergence, with the main canonical trait of genetic divergence (emax) showing variance reduction in at least 2 of 3 replicates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C42, C44, and C112 describe G-matrix evolution with appropriate statistical support from Bayesian methods and null hypothesis testing (Figure 7 and supplements). The random skewers approach is properly applied and confirmed by eigentensor analysis. However, the interpretation that selection rather than drift caused variance loss (C102) requires additional support from the genomic data cited.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C61"
+    ],
+    "result": "The direction of adaptive multivariate phenotypic evolution can be predicted from ancestral selection differentials when traits are measured in the new (high salt) environment. For high salt traits, the angle between selection differentials and observed phenotypic divergence is low for all replicates, and observed divergence is on average 3.5 times the selection differentials. In contrast, predictions fail when traits are measured in the low salt environment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C55 and C61 demonstrate successful prediction of evolutionary direction using Lande's equation with genetic selection gradients (Figure 9B-C). The alignment between expected and observed responses in high salt but not low salt is well-documented. However, the magnitude of divergence being 3.5\u00d7 larger than predicted suggests additional factors beyond the ancestral G-matrix and selection differentials.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C111"
+    ],
+    "result": "Genetic selection gradients show evidence of direct selection on SB (positive), BF (negative), and body size (positive). Phenotypic selection gradients are highly heterogeneous across replicates but overlap with genetic selection gradients for at least one replicate per trait. Only SB shows overlapping selection gradients across all three replicates. However, when sampling both G-matrix and selection differentials from posterior distributions, no genetic selection gradient estimates differ significantly from zero.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C49-C52 and C56-C60 describe selection gradient estimates with appropriate uncertainty quantification. The key issue is claim C60: when full uncertainty is propagated through both G-matrix and selection differentials, no gradients are statistically significant (Figure 9\u2014figure supplement 2). This undermines strong conclusions about direct vs. indirect selection, though the point estimates and partial uncertainty analyses (C56-C59) remain informative. Claim C111 shows robustness to low-variance traits.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Individual trait evolution does not always occur in the direction of selection, and trait responses are not always homogeneous among replicate populations. This is explained by partial alignment between the phenotypic dimension with most ancestral genetic variation (gmax) and the phenotypic dimension under directional selection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C64 synthesize multiple results (phenotypic divergence heterogeneity from C31-C33, C63; alignment analysis from Figure 8; selection gradient analysis from Figure 9) to explain why individual trait predictions fail despite successful multivariate prediction. The explanation is logically consistent with quantitative genetic theory.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C65",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "The direction of multivariate adaptive phenotypic evolution is predictable for tens of generations using Lande's equation with genetic selection gradients, validating selection theory. However, the theory does not necessarily predict the direction or magnitude of evolutionary change in all component traits of the multivariate phenotype, especially when traits are not measured in the new environment, due to variable and complex genetic and environmental dependencies between traits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65, C92-C94 represent the main conclusions of the study, synthesizing results from multiple analyses. The conclusions are appropriately nuanced, distinguishing between successful multivariate prediction and limited univariate prediction. The validation of selection theory is supported by the alignment between predicted and observed directions (C53), though the magnitude discrepancy (C55) and uncertainty in selection gradients (C60) suggest limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C90",
+      "C91"
+    ],
+    "result": "Ancestral phenotypic plasticity can be considered 'non-adaptive' because it is not aligned with selection. Body size evolution in low salt supports the hypothesis that phenotypic plasticity facilitated the evolution of novelty.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C91 interpret the misalignment between plasticity and selection (C21) and the evolution of body size in low salt (C37) in the context of plasticity theory. The interpretation is reasonable given the data, though 'non-adaptive' plasticity is defined relative to the specific selective environment and the conclusion about facilitating novelty is somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Under an infinitesimal model, drift would predict loss of only ~5% of genetic variance by generation 50 given Ne~1000, but about half was actually lost. This loss is attributed to selection rather than drift, supported by genomic data showing 5% reduction in neutral allelic diversity by generation 22 and 20% by generation 50. Variation in ancestral g2,3 canonical traits may have been lost by drift during the first 35 generations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C105 provide theoretical predictions and empirical observations about variance loss. The calculation in C101 is straightforward given the assumptions. The attribution to selection (C102) is supported by the genomic data (C103-C104), though the comparison between neutral marker diversity and quantitative genetic variance loss involves assumptions about the genetic architecture of the traits. Claim C105 is appropriately tentative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "The Introduction establishes theoretical background on predicting phenotypic evolution using Lande's equation, limitations due to indirect selection and G-matrix evolution, and biological context for C. elegans locomotion behavior and salt adaptation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C11 and C67-C89 provide background knowledge and context with appropriate citations. These claims establish the theoretical framework (Lande's equation, G-matrix theory, selection theory) and biological context (C. elegans salt response, locomotion behavior, mating system) necessary for interpreting the experimental results. The claims are well-supported by citations to relevant literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C66"
+    ],
+    "result": "Predicting adaptive phenotypic evolution depends on invariable selection gradients and stability of genetic covariances between component traits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C66 states a fundamental premise of quantitative genetic theory that is well-established in the literature and forms the basis for the study's hypotheses. This is a standard theoretical expectation.",
+    "result_type": "MINOR"
+  }
+]

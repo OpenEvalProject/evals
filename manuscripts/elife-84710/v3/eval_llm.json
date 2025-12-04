@@ -1,0 +1,229 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C39",
+      "C40",
+      "C44",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "PARL-deficient mice develop early testicular atrophy with complete arrest of spermatogenesis at meiotic prophase I (pachytene stage), characterized by reduced testis weight, smaller seminiferous tubules with fewer cells, accumulation of SCP-1-positive spermatocytes, absence of spermatids and spermatozoa, and degenerative changes in arrested spermatocytes. This phenotype occurs before neurological symptoms manifest (at 5 weeks of age).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims are well-supported by multiple lines of evidence including quantitative measurements (testis weight p<0.0001, tubule diameter p=0.0002, cell counts p=0.0009), immunohistochemistry (SCP-1, AIF-1, \u03b3H2AX), and histological analysis shown in Figure 1. The temporal relationship is established by comparing 5-week-old mice (no neurological symptoms) with the known onset of neurodegeneration at 6 weeks. Statistical significance is properly reported with appropriate tests.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "The spermatogenesis defect in PARL-deficient mice is independent of neurodegeneration, as demonstrated by conditional knockout experiments where nervous system-specific PARL deletion (Parl L/L::NesCre) results in severe encephalopathy but normal testicular function. The defect is also not secondary to PARL deficiency in Leydig cells despite Nestin expression in these cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The conditional knockout experiment (C60-C62) provides strong evidence for independence from neurodegeneration, showing normal testis histology and sperm production in Parl L/L::NesCre mice despite severe brain pathology (Figure 1B). The normal ultrastructure of Leydig cells in germline Parl-/- mice (C64, Figure 2\u2014figure supplement 1B) supports the conclusion that the defect is not secondary to Leydig cell dysfunction. However, the interpretation regarding Leydig cells is complicated by the inability to formally verify PARL deletion in these cells (acknowledged in the text).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "PARL-deficient spermatocytes exhibit severe ultrastructural abnormalities, with mitochondrial defects being the earliest change detected. These include swollen mitochondria with irregular cristae and loss of matrix density (92% abnormal in Parl-/- vs 1.9% in WT, p=0.0002), progressive vacuolar degeneration from abluminal to adluminal compartments (18.9% degenerating cells vs 0% in WT, p=0.0002), and secondary damage to other organelles. Other testicular cell types show normal ultrastructure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The electron microscopy data (Figure 2) provides compelling visual and quantitative evidence for the ultrastructural abnormalities. The statistical analysis using Fisher's exact test is appropriate for the categorical data. The temporal progression from mitochondrial defects to broader cellular degeneration (C71) is well-documented. The cell-type specificity (C74) is clearly demonstrated by normal ultrastructure in spermatogonia, Leydig cells, and Sertoli cells (Figure 2\u2014figure supplement 1B).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "The spermatogenesis defect in PARL-deficient mice arises from molecular pathways distinct from the known PARL substrates PINK1, PGAM5, and TTC19. While Parl-/- testis shows accumulation of uncleaved PINK1 and PGAM5 and loss of mature TTC19, genetic deletion of these substrates (individually or in combination) does not reproduce the testicular phenotype, and their deletion does not modify the Parl-/- phenotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The genetic epistasis experiments are comprehensive and well-controlled, examining single, double, and triple knockouts (Figure 3B, Figure 3\u2014figure supplement 1). The biochemical confirmation of substrate misprocessing in Parl-/- testis (Figure 3A) establishes that PARL deficiency affects these proteins as expected. The normal fertility and testis morphology in Pink1-/-, Pgam5-/-, and Ttc19-/- mice, combined with the unchanged phenotype in compound mutants, provides strong evidence for distinct pathways. However, the conclusion is limited to these three substrates and does not exclude roles for other PARL substrates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "PARL-deficient testis mitochondria exhibit severe respiratory chain defects without changes in mitochondrial mass. These include assembly defects in complexes I, III, IV, and V (Figure 4C), increased CI LEAK respiration, severely diminished phosphorylating respiration (CI OXPHOS, CI+II OXPHOS) and electron transfer capacity (CII ET, CI+II ET), and decreased complex IV activity specifically in seminiferous tubules but not Leydig cells. COX4 expression is severely decreased in Parl-/- spermatocytes (p=0.0027).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The respiratory chain defects are comprehensively characterized using multiple complementary approaches: blue native gel electrophoresis (Figure 4C), high-resolution respirometry (Figure 4E), cytochrome c oxidase histochemistry (Figure 4F), and immunofluorescence (Figure 5A). The preservation of mitochondrial mass is well-documented by TOMM20 and ATPB expression (Figures 4A, 5B, 6B), mtDNA abundance (Figure 4B, p=0.9146), and TFAM expression (Figure 4\u2014figure supplement 1, p=0.439). The cell-type specificity is clearly demonstrated. Statistical analyses are appropriate with adequate replication (n=6 for respirometry).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C94",
+      "C95"
+    ],
+    "result": "PARL-deficient spermatocytes show dramatic overexpression of the glucose transporter GLUT1, suggesting increased glucose utilization as an adaptive metabolic response to disrupted oxidative phosphorylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The GLUT1 overexpression is clearly demonstrated by immunohistochemistry (Figure 5C). The interpretation as an adaptive response to OXPHOS deficiency (C95) is reasonable given the documented respiratory chain defects, and is consistent with known metabolic responses to mitochondrial dysfunction. However, this remains an inference based on correlation rather than direct demonstration of increased glucose utilization through functional metabolic assays.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "PARL-deficient testis exhibits disrupted CoQ biosynthesis and redox state, with significantly decreased total CoQ levels (p=0.0001) and dramatically increased CoQ red/ox ratio (p<0.0001). This is accompanied by substantial decrease in COQ4 expression across multiple cell types, particularly pronounced in arrested spermatocytes even before overt degeneration, suggesting the CoQ defect occurs upstream of the degenerative process.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The CoQ deficiency is rigorously quantified by HPLC (Figure 6A) with appropriate statistical analysis. The increased CoQ red/ox ratio is mechanistically explained by impaired CoQH2 oxidation due to TTC19 depletion and complex III defects (C103), which is a reasonable inference supported by the data in Figures 3A and 4C. COQ4 deficiency is demonstrated by both Western blotting and immunohistochemistry (Figures 6B, 6C, Figure 6\u2014figure supplement 1, p=0.0047). The temporal relationship (C106-C107) is supported by the observation of COQ4 deficiency in non-degenerating cells, though this inference could be strengthened with more detailed staging analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C108",
+      "C109"
+    ],
+    "result": "Apoptosis is not significantly involved in the germ cell death phenotype of PARL-deficient mice, as evidenced by comparable levels of caspase-3 activation in Parl-/- and WT seminiferous tubules.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The cleaved caspase-3 immunohistochemistry (Figure 7\u2014figure supplement 1) provides direct evidence for the lack of increased apoptosis, with quantification showing no significant difference (p=0.374) between genotypes. This negative result is important for ruling out apoptosis as the primary cell death mechanism and is adequately controlled. However, the conclusion is limited to caspase-dependent apoptosis and does not exclude all forms of apoptotic cell death.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "PARL-deficient testis shows nearly complete absence of GPX4 expression, with dramatic decrease specifically in arrested spermatocytes (p=0.0013) but not in Leydig or Sertoli cells (p=0.5313). This effect is specific to testis and not observed in other organs. GPX4 is not a direct substrate of PARL based on experiments with proteolytically active and inactive PARL in MEFs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The GPX4 deficiency is well-documented by immunoblot (Figure 7A), immunohistochemistry (Figure 7C), and quantitative immunofluorescence (Figure 8A, Figure 8\u2014figure supplement 1). The cell-type specificity is clearly demonstrated. The organ specificity is shown in Figure 7\u2014figure supplement 2A. The conclusion that GPX4 is not a PARL substrate (C114) is supported by the MEF experiments (Figure 7\u2014figure supplement 2B) showing no evidence of proteolytic processing. However, the mechanism of GPX4 loss remains unclear, as acknowledged by the authors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C13",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "Arrested PARL-deficient spermatocytes undergo ferroptosis, as evidenced by multiple markers: significantly increased 4-hydroxynonenal (HNE) adducts in testis (p=0.0199) but not brain, dramatic HNE accumulation in SCP-1-positive spermatocytes (p=0.0002), prominent nuclear p53 expression in degenerating spermatocytes, and persistent TfR1 overexpression in arrested spermatocytes (p=0.0229) suggesting abnormally high iron uptake. This represents a cell-type-specific effect of PARL deficiency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The ferroptosis phenotype is supported by multiple independent markers with appropriate statistical analysis. HNE accumulation is demonstrated by both immunoblot (Figure 7B) and immunofluorescence (Figure 8B). The tissue specificity (testis but not brain, C116) is clearly shown. p53 upregulation (Figure 7\u2014figure supplement 3) and TfR1 overexpression (Figure 7C, Figure 8\u2014figure supplement 2) provide additional supporting evidence. The cell-type specificity is well-established. However, while the markers are consistent with ferroptosis, definitive proof would require rescue experiments with ferroptosis inhibitors, which are not presented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C15",
+      "C152",
+      "C153"
+    ],
+    "result": "Mitochondrial defects induced by PARL depletion act as an initiating trigger for ferroptosis in primary spermatocytes through simultaneous effects on GPX4 and CoQ, two major inhibitors of ferroptosis. While GPX4 loss alone is sufficient to induce ferroptosis, the process appears exacerbated by concomitant CoQ deficiency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This mechanistic conclusion integrates multiple lines of evidence: GPX4 deficiency (Figures 7-8), CoQ deficiency (Figure 6), and ferroptosis markers (Figures 7-8). The interpretation that both defects contribute to ferroptosis is reasonable given the established roles of GPX4 and CoQ as ferroptosis inhibitors (supported by citations C16, C96, C146). However, this remains an inference based on correlation of defects rather than direct demonstration through rescue experiments. The claim that GPX4 loss is sufficient (C152) is supported by literature but not directly tested in this model. The exacerbation by CoQ deficiency (C153) is a reasonable inference but not experimentally validated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C131",
+      "C132"
+    ],
+    "result": "PARL-deficient primary spermatocytes are unable to implement oxidative phosphorylation due to their defective respiratory chain, leading to meiotic arrest despite compensatory increased glucose uptake. The phenotype is mainly driven by a germ cell-autonomous defect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This conclusion integrates the respiratory chain defects (Figure 4), metabolic rewiring (GLUT1 overexpression, Figure 5C), and meiotic arrest (Figure 1). The inference that inability to implement OXPHOS causes meiotic arrest is reasonable given the documented metabolic shift required during spermatogenesis (cited from Wang et al., 2022, C130). The germ cell-autonomous nature is supported by the cell-type specificity of the defects and normal ultrastructure of somatic cells (Figure 2\u2014figure supplement 1B). However, formal proof would require germ cell-specific conditional knockout experiments, which the authors acknowledge as future work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C169"
+    ],
+    "result": "This study provides in vivo evidence that ferroptosis is spontaneously initiated in PARL-deficient spermatocytes unable to upregulate ferroptosis inhibitory pathways in response to OXPHOS deficiency, contrasting with other tissues where GPX4 upregulation prevents ferroptosis during mitochondrial dysfunction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This conclusion is well-supported by the combined data showing OXPHOS deficiency, failure to upregulate GPX4 (instead showing dramatic decrease), CoQ deficiency, and ferroptosis markers in spermatocytes. The contrast with other tissues is supported by citations showing GPX4 upregulation in heart with mitochondrial dysfunction (C163-C166) and the observation that GPX4 is not decreased in Parl-/- brain (Figure 7\u2014figure supplement 2A). This represents a significant conceptual advance in understanding tissue-specific responses to mitochondrial dysfunction. However, the mechanism of GPX4 downregulation remains unclear.",
+    "result_type": "MAJOR"
+  }
+]

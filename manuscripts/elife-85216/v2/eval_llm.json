@@ -1,0 +1,237 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "The manuscript provides background on c-Abl kinase structure, regulation, and biological significance. c-Abl is a multi-domain kinase regulated by SH domains and myristoylation, with established roles in cell signaling and disease.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C1-C28) represent well-established background knowledge about Abl kinase structure, function, and regulation, all supported by appropriate citations to prior literature. They provide necessary context but are not novel findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C33",
+      "C34",
+      "C35",
+      "C42",
+      "C49",
+      "C50",
+      "C53",
+      "C54",
+      "C71",
+      "C93"
+    ],
+    "result": "Myristoyl and SH domains act cooperatively to fully inhibit Abl kinase. MD simulations show that Myr removal leads to a preactivated kinase state with increased dynamics and a loosened SH domain interface, but full activation requires SH domain detachment. Force distribution analysis reveals that Myr binding has long-range allosteric effects on the active site, but the SH domains are required to properly transmit these inhibitory forces.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C33-C35, C42, C49-C50, C53-C54, C71, and C93 are well-supported by extensive MD simulation data (40 \u00b5s cumulative), force distribution analysis (Figures 2-3), and principal component analysis showing shifts toward active-like conformations. The cooperative mechanism is demonstrated through systematic comparison of models with/without Myr and SH domains.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "The \u03b1I helix does not spontaneously straighten upon Myr removal during 40 \u00b5s of simulation. Instead, the kinked helix remains folded but becomes destabilized, while straight helices unfold regardless of Myr presence. This instability is consistent with crystal structure analysis showing limited resolution of the straight helix.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C41 are directly supported by equilibrium MD simulation data (Figure 2B, Figure 2\u2014figure supplement 1-2) showing RMSF increases and helicity measurements. The crystal structure analysis provides independent validation. However, the 40 \u00b5s timescale, while extensive, may still be insufficient to observe rare spontaneous straightening events.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Force distribution analysis reveals the allosteric transmission pathway from the Myr binding site to the active site. Forces are transmitted via the \u03b1F helix to the DFG-motif and catalytic triad, and also reinforce SH2 domain docking. This pathway is interrupted when SH domains are absent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C48 are supported by force distribution analysis data shown in Figure 3A-B. The methodology is appropriate for identifying allosteric pathways. The finding that the pathway requires SH domains is demonstrated by systematic comparison of models with and without these domains.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C51",
+      "C52"
+    ],
+    "result": "\u03b1I helix straightening has profound effects on the kinase C-lobe regardless of Myr presence, and both Myr and SH domains individually impact the A-loop.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C52 are supported by force distribution analysis (Figure 3\u2014figure supplement 2) showing widespread force differences upon helix straightening. The data demonstrate that both regulatory elements affect the activation loop, though their cooperative action is required for full inhibition.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C72",
+      "C73"
+    ],
+    "result": "Metadynamics simulations show that \u03b1I helix straightening and partial unfolding can occur without prior SH domain detachment. The kinase-SH2 interface remains stable during helix rearrangements, with 88.4% of contact pairs conserved, requiring only marginal SH2 repositioning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C63, C72-C73 are supported by Metadynamics simulation data (Figure 4) and contact analysis. The use of enhanced sampling is appropriate for exploring conformational transitions. The contact conservation analysis (Figure 4E) provides quantitative support. However, Metadynamics introduces bias that may affect the observed pathways.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C81",
+      "C82"
+    ],
+    "result": "Umbrella sampling simulations demonstrate that Myr binding to membranes is thermodynamically competitive with binding to Abl. The calculated free energy for Myr unbinding from POPC membranes (36.3 \u00b1 0.5 kJ/mol) agrees well with experimental values (33.5 kJ/mol). For Abl models with flexible \u03b1I helices, the unbinding free energies are similar to or lower than membrane unbinding, supporting thermodynamic competition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C70, C81-C82 are supported by umbrella sampling data (Figure 5, Table 1) with appropriate error analysis via bootstrapping. The agreement with experimental values (Peitzsch and McLaughlin, 1993; Hantschel et al., 2003) validates the computational approach. The consideration of different helix conformations is a strength, though the reconfigurational free energies are approximated rather than explicitly calculated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C36",
+      "C37",
+      "C94",
+      "C95"
+    ],
+    "result": "The manuscript proposes a dual role for myristoylation in Abl: allosteric inhibition and membrane localization. Membrane binding of Myr thermodynamically competes with protein binding, and membrane attachment enhances Abl activation by stabilizing the preactivated state. This coupling of localization and regulation appears unique to Abl.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C9, C36-C37, C94-C95 represent the central novel hypothesis supported by the umbrella sampling data and prior experimental observations (C83-C86). The thermodynamic competition is well-demonstrated. However, the claim of uniqueness (C10) is speculative and not rigorously tested against other kinases.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Prior work established that crystal structures show straight \u03b1I helices without Myr, leading to the view that Myr unbinding causes helix straightening. However, SAXS and NMR data show non-myristoylated Abl remains assembled.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C32 accurately represent prior knowledge and apparent contradictions in the literature that motivate the current study. These are appropriately cited background claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "The manuscript proposes that conformational heterogeneity of the \u03b1I helix and SH2 binding poses explain the failure to crystallize apo-Abl, and that additional factors beyond Myr unbinding contribute to full activation. The non-myristoylated isoform 1a is not deregulated, suggesting compensatory mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C74-C78 are reasonable inferences from the simulation data showing conformational flexibility, but remain speculative. C74 is plausible but not directly tested. C75-C76 are logical inferences from the partial activation observed, but C76 specifically is speculative. C77-C78 cite prior work but the mechanistic explanation is inferential.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "The manuscript discusses the biological context of membrane binding, including prior observations of Abl membrane localization, the role of basic residues in membrane interactions, and activation at focal contacts. Comparisons are made to Src kinase membrane binding mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C92 appropriately cite prior experimental work (Choi et al., 2009; de Oliveira et al., 2013; Lewis et al., 1996; Woodring et al., 2002; Daday et al., 2022) and make reasonable speculative connections (C90, C92) based on sequence analysis and analogy to Src. These provide biological context for the computational findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "The manuscript proposes experimental tests including mutations of the \u03b1F helix transmission pathway (specifically S439, D440, V441) and suggests therapeutic applications targeting the coupling between Abl activity and membrane anchoring.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C98 are appropriate proposals for future work based on the computational findings. C97 is supported by the force distribution analysis identifying these residues. C98 is speculative but reasonable given the findings. These represent testable predictions rather than current results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C10"
+    ],
+    "result": "The coupling between lipidation and kinase localization/regulation appears unique to c-Abl among non-receptor tyrosine kinases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNSUPPORTED",
+    "evaluation": "Claim C10 is speculative and not supported by systematic comparison with other kinases. While the mechanism may be novel, the claim of uniqueness requires comparative analysis across the kinase family that is not provided. The comparison to Src (C91) actually suggests similar mechanisms may exist.",
+    "result_type": "MINOR"
+  }
+]

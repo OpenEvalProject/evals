@@ -1,0 +1,301 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3"
+    ],
+    "result": "Hdac3 is highly expressed in hematopoietic progenitors (HSCs, MMP4, CLP, CDPs) and pDCs, with significantly higher expression in pDCs compared to cDCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 provide converging evidence from multiple independent datasets (ImmGen database, RNA-seq, and qRT-PCR) demonstrating high Hdac3 expression in pDC lineage cells. The use of orthogonal methods strengthens the conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "HDAC3 deficiency in Hdac3fl/fl CreERT2 mice results in substantially reduced pDC numbers (~4-fold decrease) in bone marrow and spleen, with corresponding decreased IFN-\u03b1 production, while cDC populations show modest changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C10 demonstrate efficient HDAC3 deletion and consistent phenotypic consequences across multiple markers and functional assays. The fourfold reduction in pDCs is well-documented with flow cytometry using multiple surface markers (PDCA-1, Ly6C, B220, Ly6D, Siglec H), and functional defects are confirmed by reduced IFN-\u03b1 production.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "HDAC3 regulates pDC development in a cell-intrinsic manner, as demonstrated by competitive disadvantage of HDAC3-deficient cells in bone marrow chimeras and in vitro FLT3L cultures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C15 provide strong evidence for cell-intrinsic function through competitive BM chimera experiments showing reduced CD45.2+ chimerism and decreased pDC frequency among HDAC3-deficient donor cells. In vitro culture experiments (C14) corroborate the in vivo findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C67",
+      "C68"
+    ],
+    "result": "HDAC3 deficiency causes disturbed homeostasis of hematopoietic progenitors, with increased LSK cells (especially MPP2/MPP3), decreased CMPs, CLPs, and CD115+CDPs, but unchanged CD115-CDP numbers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C25, C67-C68 document comprehensive flow cytometry analysis of progenitor populations with consistent patterns across multiple experiments. The differential effects on progenitor subsets are well-characterized, though the mechanistic basis for these changes requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C70"
+    ],
+    "result": "Altered proliferation rates in HDAC3-deficient progenitors, as measured by BrdU incorporation, contribute to disturbed progenitor homeostasis, with increased proliferation in LSKs and decreased proliferation in CLPs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C29, C70 provide BrdU incorporation data showing differential proliferation effects in progenitor populations. The correlation between cell numbers and proliferation rates (C70) supports the mechanistic interpretation, though additional cell cycle analysis would strengthen the conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C39",
+      "C69"
+    ],
+    "result": "HDAC3-deficient LSKs and CD115-CDPs show competitive disadvantage and defective pDC differentiation potential despite increased cell numbers, with specific impairment in pDC but not cDC development from CD115-CDPs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C32, C39, C69 demonstrate through transplantation experiments that HDAC3-deficient progenitors have intrinsic differentiation defects beyond numerical changes. The specificity for pDC versus cDC differentiation from CD115-CDPs is well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "RNA-seq analysis of HDAC3-deficient LMPPs and CD115-CDPs reveals downregulation of pDC-associated genes (Siglech, Ly6c2, Ly6d) and upregulation of myeloid genes (Mpo, Ctsg, Ms4a3), with enrichment of hematopoietic lineage pathway genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C38 present RNA-seq data showing consistent gene expression changes across progenitor populations. The KEGG pathway analysis (C34) and specific gene expression patterns (C35-C37) support altered lineage commitment. However, the RNA-seq appears to use only duplicate samples per genotype, which limits statistical power.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "HDAC3 is required for pDC development from all early progenitors (LMPPs, Flt3+CMPs, CLPs, CD115+CDPs, CD115-CDPs) but is dispensable for later pDC differentiation after the CDP stage, as shown by normal DC development in Hdac3fl/fl Itgax-Cre mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C43 systematically test multiple progenitor populations in vitro and use Itgax-Cre mice to define the developmental stage requirement. The convergent evidence from different progenitors and the stage-specific deletion experiment strongly support the conclusion about temporal requirements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C111"
+    ],
+    "result": "The deacetylase activity of HDAC3 is essential for pDC development, as demonstrated by RGFP966 inhibitor experiments and failure of catalytically inactive HDAC3(Y298F) mutant to rescue pDC development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C50, C111 provide complementary evidence using pharmacological inhibition (RGFP966) and genetic rescue with catalytically inactive mutant. The specificity of RGFP966 for pDCs at low concentrations and the differential rescue by WT versus Y298F mutant strongly support the requirement for deacetylase activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C80"
+    ],
+    "result": "HDAC3-deficient pDCs display a cDC-biased transcriptional profile with downregulated pDC signature genes (Tcf4, Siglech, Ly6c1, Ly6c2, Ly6d) and upregulated cDC1-associated genes (Spi1, Zfp366, Batf3, Id2, Zbtb46, Clec9a).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C54, C80 present RNA-seq and qRT-PCR data from HDAC3-deficient pDCs showing altered lineage identity. The upregulation of multiple cDC1 transcription factors and markers, combined with downregulation of pDC genes, provides strong evidence for altered cell fate determination.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C82",
+      "C83"
+    ],
+    "result": "HDAC3 directly binds to and regulates H3K27 acetylation at cDC1-associated gene loci (Zfp366, Zbtb46, Batf3, CD80, CD83), with enhanced H3K27ac and enrichment of PU.1 motifs in HDAC3-deficient pDCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C59, C82-C83 provide mechanistic evidence through CUT&Tag showing increased H3K27ac at specific loci and ChIP-qPCR confirming HDAC3 binding. The motif analysis identifying PU.1 enrichment connects to known cDC1 regulatory pathways. The convergence of epigenetic and binding data strongly supports direct regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C78",
+      "C79"
+    ],
+    "result": "Long-term analysis of BM chimeric mice shows HDAC3-deficient cells generate decreased pDCs but increased cDC1s, suggesting HDAC3 involvement in pDC versus cDC1 fate determination through repression of cDC1-associated genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C62, C78-C79 demonstrate reciprocal changes in pDC and cDC1 populations in long-term chimeras, supporting a role in lineage choice. The three-week timepoint allows assessment of sustained effects. However, the mechanism linking histone deacetylation to pDC gene activation (rather than just cDC1 gene repression) requires further clarification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C81",
+      "C84",
+      "C85",
+      "C112"
+    ],
+    "result": "HDAC3 is a key epigenetic regulator of pDC development that promotes pDC differentiation by regulating H3K27 acetylation at cDC1-associated gene loci, thereby repressing cDC1 genes and promoting pDC gene expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C66, C81, C84-C85, C112 represent the major conclusions synthesizing multiple lines of evidence. The model is well-supported by genetic, epigenetic, and transcriptional data. However, the mechanism by which repression of cDC1 genes leads to activation of pDC genes (rather than just preventing cDC1 fate) could be more directly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "The maintained CD115-CDP numbers despite decreased CD115+CDP numbers may result from downregulation of Csf1r expression in CD115+CDPs, suggesting HDAC3 regulates different progenitors through distinct mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C71-C73 propose a mechanism for the unexpected maintenance of CD115-CDP numbers based on RNA-seq showing decreased Csf1r expression. However, this interpretation is speculative and would require validation through protein-level analysis of CD115 expression and lineage tracing to confirm the proposed conversion of CD115+ to CD115- cells.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "The PU.1-DC-SCRIPT-IRF8 axis represents an important transcriptional pathway for pDC versus cDC1 fate determination, with PU.1 activating Zfp366 (DC-SCRIPT) to promote cDC1 development while repressing pDC development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C77 summarize prior literature establishing the PU.1-DC-SCRIPT-IRF8 pathway. These are well-supported by the cited references and provide important context for interpreting the HDAC3 results, though they represent prior knowledge rather than new findings from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "HDAC3 inhibitor RGFP966 efficiently blocks pDC generation in vitro and might serve as a potential therapeutic agent for pDC-related diseases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C87 is supported by in vitro data showing RGFP966 blocks pDC development. However, C88's therapeutic potential claim is highly speculative, lacking in vivo efficacy data, toxicity studies, or disease model validation. The leap from in vitro inhibition to therapeutic application requires substantial additional work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "Background information on DC biology, hematopoiesis, transcriptional regulation of pDC development, and HDAC3 function establishes the context and knowledge gaps addressed by this study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C110 represent established knowledge from the literature, appropriately cited and accurately summarized. These provide essential context for the study but do not constitute new findings. The citations appear appropriate and the knowledge claims are consistent with the field.",
+    "result_type": "MINOR"
+  }
+]

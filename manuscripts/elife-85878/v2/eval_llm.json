@@ -1,0 +1,246 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "YBX1 directly and specifically binds miR223 via its cold shock domain (CSD) with high affinity (Kd = 4.2 nM), while binding miR190 ~140-fold less well. The CSD is necessary and sufficient for binding when combined with the C-terminal domain (CTD), which enhances binding affinity without directly contacting RNA. The F85A mutation in the CSD abolishes miR223 binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C28 are well-supported by EMSA data showing direct binding, domain mapping, and mutational analysis (Figures 1a-g). The Kd measurements, domain deletion studies, and F85A mutant data converge to demonstrate that YBX1 specifically recognizes miR223 through its CSD, with the CTD playing a facilitating role. The data are internally consistent and appropriately controlled.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "The UCAGU sequence motif on miR223 is critical for YBX1 binding and exosomal sorting. Mutation of UCAGU to AGACA reduces YBX1 binding ~27-fold and decreases exosomal enrichment ~4-fold. Conversely, introducing UCAGU into miR190 increases YBX1 affinity ~8-fold and exosomal enrichment ~5-fold. This motif is also required for miR223 packaging in cell-free vesicle formation assays.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C34 are supported by multiple complementary approaches: EMSA competition assays identifying the motif (Figure 2\u2014supplement 1), direct binding measurements with mutants showing altered Kd values (Figure 2b-c), cellular exosome enrichment assays (Figure 2e-f), and cell-free packaging assays (Figure 2g-h). The gain-of-function experiment with miR190sort provides strong evidence for the motif's sufficiency.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C4",
+      "C74"
+    ],
+    "result": "Most cytoplasmic miR223 is localized within mitochondria, specifically enriched in the mitochondrial matrix or associated with the inner membrane. This localization is specific to miR223 and not observed for miR190 or nuclear U6 snRNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C37, C4, and C74 are supported by multiple independent fractionation approaches: standard subcellular fractionation (Figure 3a-b), mitoplast purification via Percoll gradient (Figure 3c-d), immunoprecipitation-based mitochondrial isolation followed by osmotic shock (Figure 3e-f), and freeze-thaw fractionation (Figure 3\u2014supplement 1). The convergence of multiple methods strengthens confidence in the mitochondrial localization of miR223.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Mitochondrial depletion by CCCP-induced mitophagy causes miR223 to accumulate in cells (3-fold increase) while decreasing its secretion in exosomes (4-fold decrease), without affecting overall exosome secretion. This suggests mitochondria play a critical role in mobilizing miR223 for exosomal sorting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C42 are supported by RT-qPCR data showing reciprocal changes in cellular and exosomal miR223 after CCCP treatment (Figure 3j), with controls showing no change in exosome secretion (Figure 3\u2014supplement 2a) or miR190 levels. The inverse relationship between mitochondrial depletion and exosomal miR223 provides functional evidence for mitochondria's role, though the mechanism remains inferential (C42).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "YBAP1 is a mitochondrial matrix protein that physically interacts with YBX1. YBAP1 copurifies with YBX1 from mammalian cells and when coexpressed in insect cells. YBAP1 localizes within mitochondria as demonstrated by proteinase K protection assays and immunofluorescence colocalization with mitochondrial markers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C48 are supported by protein purification data (Figure 4a-b), copurification from insect cells (Figure 4\u2014supplement 1b), immunofluorescence (Figure 4c-d), and proteinase K protection assays (Figure 4e). The prior literature citation (C44, C46) provides additional context. The data consistently demonstrate YBAP1's mitochondrial localization and interaction with YBX1.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "YBAP1 directly binds miR223 in mitochondria and in vitro, but not miR190. This interaction is independent of the UCAGU motif required for YBX1 binding, suggesting YBAP1 recognizes miR223 through a different mechanism than YBX1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C52 are supported by immunoprecipitation of mitochondrial miR223 with YBAP1 antibody (Figure 4g) and EMSA showing direct binding to miR223 but not miR190 (Figure 4h-j). The independence from the YBX1-binding motif is demonstrated by EMSA with mutant RNAs (Figure 4\u2014supplement 2). The data are consistent and appropriately controlled.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "YBAP1 acts as a negative regulator of miR223 exosomal sorting. YBAP1 knockout causes a 2-fold decrease in mitochondrial miR223 and an 8-fold increase in exosomal miR223, without affecting overall exosome secretion. This inverse relationship suggests YBAP1 retains miR223 in mitochondria.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6 and C53-C55 are supported by RT-qPCR data from YBAP1 KO cells showing reciprocal changes in mitochondrial and exosomal miR223 (Figure 5c), with controls showing no change in exosome secretion (Figure 5\u2014supplement 1a). The inverse relationship provides strong functional evidence for YBAP1's role in sequestering miR223 in mitochondria, though the molecular mechanism remains inferential (C55).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C7",
+      "C56",
+      "C57"
+    ],
+    "result": "YBX1 puncta colocalize with mitochondria and shuttle between mitochondria and endosomes in live cells. Time-lapse imaging shows YBX1 puncta in close proximity to both organelles with transfer events occurring between them.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C56-C57 are supported by immunofluorescence showing YBX1 puncta colocalizing with mitochondria (Figure 6a-b) and time-lapse imaging demonstrating dynamic shuttling between mitochondria and endosomes (Figure 6c-d). The imaging data directly visualize the proposed trafficking pathway, though the molecular mechanism of transfer is not elucidated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "The authors propose a model where miR223 is stored in mitochondria (possibly sequestered by YBAP1), then captured by YBX1 in P-bodies through the UCAGU motif, and delivered to endosomes for sorting into exosomes. The UCAGU motif may represent either a binding site or a structural feature required for sorting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C58-C59 and C77-C80 represent a proposed mechanistic model that integrates the experimental findings but contains substantial speculation. While the individual components are supported (mitochondrial localization, YBX1 binding, YBAP1 sequestration, YBX1 shuttling), the complete pathway and mechanism remain hypothetical. The uncertainty about whether UCAGU is a binding site or structural feature (C59) and the speculative nature of the P-body intermediate step limit confidence in the complete model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C61",
+      "C62"
+    ],
+    "result": "The cell-free reaction system mimics aspects of exosome biogenesis, as evidenced by GW4869 inhibition of both the cell-free packaging of miR223 and cellular exosome secretion at concentrations that inhibit neutral sphingomyelinase 2 (NS2).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C62 are supported by the observation that GW4869 inhibits the cell-free packaging assay (Figure 2g-h) at concentrations known to inhibit NS2 and exosome secretion (cited from prior work, Shurtleff et al., 2016). The parallel sensitivity to the same inhibitor provides evidence that the cell-free system recapitulates key aspects of the cellular pathway, though it may not capture all regulatory mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "Background on extracellular vesicles: MVB fusion with the plasma membrane releases exosomes (30-150 nm ILVs), while microvesicles (30-1000 nm) bud from the plasma membrane. Many RNAs, especially small RNAs, are selectively sorted into EVs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C9-C11 represent established background knowledge in the EV field, supported by appropriate citations to foundational literature (Cocucci et al., 2009; Harding et al., 1983). These claims provide necessary context but are not novel findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C2",
+      "C8",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Prior work has established that RNA-binding proteins facilitate selective RNA sorting into exosomes, with different cell types using distinct sorting signals and RBPs. YBX1 facilitates miR223 sorting and forms phase-separated condensates in P-bodies. Other examples include La/miR122, hnRNPA2B1/GGAG motif, and FMR1/AAUGC motif.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C8, C12-C15, C63-C68 summarize prior work from the authors' lab and others, appropriately cited. These claims establish the context for the current study and are supported by the cited literature. The inference about cell-type-specific sorting mechanisms (C67) is reasonable given the documented diversity of sorting signals and RBPs.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C20",
+      "C25"
+    ],
+    "result": "YBX1 has three major domains (A/P, CSD, CTD), and the F85A mutation in the CSD blocks YBX1-specific binding of mRNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20 and C25 describe established structural features of YBX1 and cite prior work (Lyons et al., 2016) for the F85A mutation's effect on mRNA binding. These are background claims that provide context for the domain mapping experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C60",
+      "C69",
+      "C70"
+    ],
+    "result": "P-bodies have been observed in association with mitochondria. miR223 is an example of nuclear-encoded small RNAs localized to mitochondria, though the function of mitochondrial miRNAs without obvious mitochondrial genome targets remains unclear.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60, C69-C70 cite prior literature (Huang et al., 2011; Jeandard et al., 2019) to provide context about P-body-mitochondria associations and mitochondrial RNA localization. These background claims are appropriately supported by citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C75",
+      "C76"
+    ],
+    "result": "The highly selective miRNA sorting suggests an important role in intercellular trafficking, though the extremely low copy number per vesicle challenges functional models in recipient cells. The authors speculate that mitochondrial miR223 may play a role in mitochondrial homeostasis, with exosomal secretion serving as a disposal mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C71-C73 and C75-C76 represent speculation about the biological significance of miRNA sorting and mitochondrial localization. While C71-C73 cite literature supporting and challenging functional roles in recipient cells, C75-C76 are purely speculative interpretations not directly tested in this study. The alternative hypothesis about mitochondrial homeostasis is interesting but lacks experimental support.",
+    "result_type": "MINOR"
+  }
+]

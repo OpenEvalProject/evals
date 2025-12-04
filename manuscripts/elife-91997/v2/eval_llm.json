@@ -1,0 +1,264 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C39"
+    ],
+    "result": "METTL16 is ancestral to most eukaryotes and contains a conserved C-terminal VCR/KA-1-like domain that enhances U6 snRNA substrate specificity. This domain was identified across diverse eukaryotic lineages using AlphaFold2 structure predictions and TM-score analysis, suggesting the last eukaryotic common ancestor possessed both the MTD and VCR/KA-1-like domains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C11 and C39 provide converging computational structural evidence using AlphaFold2 predictions, TM-score analysis, and phylogenetic distribution showing the VCR/KA-1 domain is present across eukaryotes. The structural predictions are validated against experimental crystal structures (C8, C10) with strong TM-scores (>0.82), and the widespread distribution across kingdoms supports ancestral origin (C2, C11). The methodology is clearly described (C62, C63) and results are internally consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C47",
+      "C48"
+    ],
+    "result": "Multiple independent evolutionary switches in 5'SS +4 nucleotide preference from A to U occurred in Saccharomycotina families (Saccharomycetaceae, Debaryomycetaceae, Pichiaceae). The +4 U preference in S. cerevisiae and C. albicans arose through convergent evolution rather than shared ancestry, contrasting with previous interpretations. The +4 A preference appears ancestral to eukaryotes while +4 U evolved later in saccharomycetous yeasts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C14, C47-C48 are supported by phylogenetic analysis with ancestral state reconstruction (Figure 2C) across 240 species. The convergent evolution conclusion (C14) is based on phylogenetic placement showing independent switches in different lineages, which is more robust than previous analyses with fewer genomes. The methods for ancestral character estimation using Sankoff parsimony are described (Materials and methods). The inference about ancestral +4 A preference is supported by the phylogenetic distribution pattern.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "The U6 snRNA ACAGA sequence targeted by METTL16 and the U1 snRNA 5'SS-interacting sequence (ACUUACC) are invariant across all 240 analyzed species, indicating that switches in 5'SS +4 preference are not associated with compensatory changes in snRNA sequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C17 are supported by computational prediction and conservation analysis using Infernal covariance models on 240 species (C65). The 100% conservation of these sequences (Figure 3B, Figure 3\u2014figure supplement 1B) across species with varying 5'SS +4 preferences provides strong evidence that snRNA sequence changes do not explain the phenotypic variation. The methodology is appropriate for RNA gene prediction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C38"
+    ],
+    "result": "Inter-species association mapping using PGLS identified METTL16 presence/absence as the strongest correlate of 5'SS +4 A/U preference across Saccharomycotina. When METTL16 is present, +4 A is preferred; when absent, +4 U is preferred. METTL16 has been lost independently in multiple lineages in association with switches to +4 U preference.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C20, C38 are supported by PGLS analysis (C64) controlling for phylogenetic relatedness, shown in Figure 4A-C. The statistical approach is appropriate for comparative analysis across species. The association is the most significant among all tested factors (Figure 4A volcano plot). The phylogenetic mapping (Figure 4C) demonstrates multiple independent loss events correlated with phenotype switches. However, the authors appropriately note that association does not prove causation (C55).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C21"
+    ],
+    "result": "Two independent Saccharomycetaceae subgenera (Zygosaccharomyces and Eremothecium) retain METTL16 orthologs despite having strong +4 U preference, representing exceptions to the general METTL16/+4 preference association.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C21 is supported by the data in Figure 4C and supplementary structural analysis (Figure 4\u2014figure supplement 1) showing these orthologs have intact MTD domains with catalytic motifs and VCR/KA-1-like domains. This exception is important as it suggests the evolutionary relationship may be more complex than simple causation, though the authors acknowledge uncertainty about whether these genes are functional and expressed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "SNRNP27K absence is associated with increased 5'SS +4 U preference, and this association remains significant when controlling for METTL16 presence/absence (P=0.011). In species lacking METTL16, +4 U preference is stronger when SNRNP27K is also absent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C24 are supported by PGLS analysis with appropriate statistical controls (Figure 5A-B). The multivariate analysis controlling for METTL16 (C23) demonstrates SNRNP27K has an independent effect beyond correlation with METTL16. The stratified analysis (C24, Figure 5B) provides additional evidence for the independent contribution. The statistical approach is sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Methionine 141 (M141) in the C-terminal domain of SNRNP27K shows the strongest association with 5'SS +4 A/U preference among individual amino acid positions. In cryo-EM structures, M141 is located near the U6 snRNA ACAGA box in pre-B complexes and close to the space occupied by m6A43 in B complexes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C27 are supported by amino acid-level PGLS analysis (Figure 5C) and structural analysis of cryo-EM structures (C26, Figure 5D-E). The structural positioning is determined by superimposition of PRP8 structures from different spliceosome states, which is a valid approach. The convergence of statistical association and structural proximity provides strong support, though the structural inference involves modeling across different complex states.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C28",
+      "C29"
+    ],
+    "result": "A mutation in C. elegans SNRNP27K ortholog (SNRP-27 M141T) causes a shift in 5'SS selection away from +4 A sites, consistent with the inter-species association mapping results.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C29 are supported by citation to Zahler et al., 2018. This provides orthogonal experimental validation from a different organism that is consistent with the computational association mapping. The convergence of inter-species association mapping and experimental mutant analysis strengthens both findings. However, the result relies entirely on the cited work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C50"
+    ],
+    "result": "In Saccharomycotina species with fewer introns (<500 conserved introns), the anti-correlation between U5 and U6 snRNA interaction potentials (U5/6\u03c1) weakens and becomes positive, indicating loss of the two major 5'SS classes found in intron-rich species. U5/6\u03c1 is strongly negatively correlated with intron number in species with >300 introns but weakly correlated in intron-poor species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C35, C50 are supported by PGLS analysis of the U5/6\u03c1 metric across species (Figure 6B). The U5/6\u03c1 calculation method is clearly described (Figure 6A) and includes bootstrapped confidence intervals. The threshold values (~300-500 introns) are empirically derived from the data. The conclusion that two 5'SS classes are lost in intron-poor species follows logically from the positive U5/6\u03c1 values. The analysis appropriately controls for phylogenetic structure.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C51"
+    ],
+    "result": "A preference for 5'SS +4 U is characteristic of intron-poor species with low splicing complexity, while +4 A preference is found in diverse species with anti-correlated U5/U6 interaction potentials. Major switches in +4 preference occurred almost exclusively in species lacking strong U5/U6 anti-correlation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C37, C51 are supported by the integrated analysis shown in Figure 6B relating intron number, U5/6\u03c1, and +4 preference. The observation that most +4 U species are intron-poor is evident from the data distribution. The inference about splicing complexity is reasonable given the established relationship between intron number and splicing complexity (supported by citations C49). The claim about switches occurring in species lacking anti-correlation is supported by the phylogenetic and phenotypic data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C30"
+    ],
+    "result": "Two major classes of U2-dependent 5'SSs with anti-correlated U5 and U6 snRNA interaction potentials exist in plants and metazoans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C30 is supported by citation to Parker et al., 2022, which is prior work by the authors. This claim provides context for the current analysis but is not a new finding from this manuscript. The citation is appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C40"
+    ],
+    "result": "The primary conserved role of METTL16 is to modify the ACAGA box of U6 snRNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C40 is supported by the combination of METTL16's widespread conservation across eukaryotes (C1-C2), the conservation of its VCR/KA-1 domain that enhances U6 specificity (C39), and the invariance of the U6 ACAGA sequence (C15). This represents a reasonable synthesis of the findings, though it is an inference rather than direct experimental demonstration.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Biophysical and structural data indicate that m6A stabilizes A:A base pairs while destabilizing A:U pairs. Cryo-EM structures show m6A43 forms a trans Hoogsteen interaction with 5'SS +4 A in humans but a Watson-Crick base pair forms between +4 U and unmodified A in S. cerevisiae. Loss of METTL16 causes switches from +4 A to +4 U preference and increases splicing efficiency at +4 U sites, indicating m6A modification is generally incompatible with +4 U selection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C46 synthesize findings from multiple cited studies (Bertram et al., 2017; Kierzek and Kierzek, 2003; Roost et al., 2015; Ishigami et al., 2021; Parker et al., 2022; Wan et al., 2019) to build a mechanistic model. The citations are appropriate and the synthesis is logical. The conclusion about incompatibility (C46) is supported by converging evidence from biophysics, structures, mutant analyses, and the inter-species association mapping from this study. This represents integration of prior work with current findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C49"
+    ],
+    "result": "The switch to 5'SS +4 U is a feature of changes associated with reduced multicellularity, including reductions in intron density and evolution of more invariant 5'SS sequences in Saccharomycotina.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C49 integrates the current findings with prior work (cited: Irimia et al., 2007; Lim et al., 2021; Sales-Lee et al., 2021; Schwartz et al., 2008) showing associations between reduced multicellularity and splicing simplification. The observation that +4 U preference associates with intron-poor species (C36) supports this synthesis. The inference is reasonable though the causal relationships remain unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "U6 snRNA m6A modification may provide plasticity to 5'SS selection through modulation of m6A levels or protein chaperones like SNRNP27K. In species with lost splicing complexity, m6A modification may have become detrimental due to weaker signals prone to mis-splicing. Switches from +4 A to +4 U may represent final stages of splicing simplification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C52-C54 are explicitly presented as hypotheses and speculation by the authors. While these hypotheses are consistent with the data presented (associations between METTL16/SNRNP27K and +4 preference, relationship with intron number), they are not directly tested. The authors appropriately qualify these as speculative interpretations. These represent reasonable hypotheses for future work but are not demonstrated results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Inter-species association mapping is a powerful approach for elucidating molecular interactions controlling splicing, though it reveals correlations rather than proving causation. The 5'SS +4 preference phenotype appears to be a relatively simple trait predominantly associated with presence/absence of METTL16 and SNRNP27K.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C58 represent methodological conclusions and limitations. C55 appropriately acknowledges the limitation that association does not prove causation. C57-C58 are supported by the successful identification of METTL16 and SNRNP27K associations that are consistent with orthogonal experimental evidence (C28-C29, C43, C45). C56 is supported by citation. These represent fair assessments of the approach and findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "Human METTL16 consists of an N-terminal MTD and C-terminal VCR domain, both contributing to U6 snRNA m6A-modification specificity. The VCR has structural and functional equivalence to the TUT1 KA-1 domain, and both bind the U6 internal stem-loop to enhance substrate specificity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C6 are supported by citations to prior structural and functional studies (Aoyama et al., 2020; Yamashita et al., 2017). These claims establish background knowledge that contextualizes the current findings about VCR/KA-1 domain conservation. The citations are appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C59",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "The study employed a comprehensive bioinformatics pipeline including genome annotation with Funannotate, ortholog clustering with Orthofinder, intron filtering using multiple sequence alignments, AlphaFold2 domain segmentation using PAE/pLDDT, TM-score structural comparisons, PGLS for association mapping, and Infernal for snRNA prediction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59, C61-C65 describe the computational methods used in the study. These are clearly documented in the Materials and methods section with appropriate citations to the software tools used. The methods are appropriate for the analyses performed. The intron filtering approach (C61) is particularly important for reducing false positives in the annotations. These methodological claims are well-supported.",
+    "result_type": "MINOR"
+  }
+]

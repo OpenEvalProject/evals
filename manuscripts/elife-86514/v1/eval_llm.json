@@ -1,0 +1,234 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C15",
+      "C16",
+      "C19",
+      "C20",
+      "C21",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "The GWAS meta-analysis identified 14 significant loci for OPLL (8 novel), with appropriate quality control metrics (\u03bbGC=1.11, LD score regression intercept=1.03), high heritability (53.1%), and replication validation showing consistent effect directions (13/14 loci).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C15-C16, C19-C21, C55-C58 collectively demonstrate a well-powered GWAS with appropriate statistical controls. The LD score regression intercept near 1.0 indicates minimal population stratification bias, statistical power analysis confirms adequate detection capability, and replication analysis validates the findings. The heritability estimate is supported by established methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C30"
+    ],
+    "result": "Gene-based association analysis and SMR identified candidate genes (EIF3E, EMC2, TMEM135, PLEC, RSPO2) with potential functional roles in OPLL through bone metabolism and protein synthesis pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C28, C30 are supported by appropriate computational methods (MAGMA, SMR) with genome-wide significance thresholds. The functional annotations from prior literature (C24-C26) provide biological plausibility. However, the causal inference from SMR (C30) requires validation through functional studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Partitioning heritability enrichment analysis revealed significant enrichment in active enhancers of connective/bone cells (especially H3K27ac in chondrogenic differentiation cells) and immune/hematopoietic cells, consistent with endochondral ossification in OPLL.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C31-C33 are supported by stratified LD score regression analysis with appropriate FDR correction. The findings align with prior histological evidence (C9, C33) of endochondral ossification. The cell-type specificity provides mechanistic insight into OPLL pathogenesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Candidate genes identified in GWAS show expression in relevant tissues: 70% expressed in human spinal ligament tissue, with WWP2 showing differential expression between OPLL and control samples and higher expression in chondrogenic differentiated cells; 85.7% expressed in both mesenchymal and immune cells in mouse tendon ossification models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C40 are supported by RNA-seq analysis of deposited datasets. The expression validation strengthens the GWAS findings, though sample sizes are limited (acknowledged by authors). The concordance between human ligament and mouse tendon model data provides cross-species validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Genetic correlation analysis identified positive correlations between OPLL and BMI/T2D, and negative correlation with cerebral aneurysm, with stronger correlation for BMI than T2D.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C41-C43 are supported by bivariate LD score regression with appropriate FDR correction (FDR<0.05). The analysis used 96 complex traits from large Japanese GWAS datasets. The comparative strength of correlations (C43) is directly supported by the correlation estimates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C6",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Mendelian randomization analysis demonstrated significant causal effects of increased BMI and high BMD on OPLL, but no causal effect of T2D on OPLL, suggesting that the association between T2D and OPLL is mediated through obesity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C44-C47, C64-C67 are supported by multiple MR methods (IVW, weighted median) with appropriate sensitivity analyses (MR-Egger intercept near zero, leave-one-out analysis). The lack of T2D causality despite genetic correlation (C46, C65) is well-supported and leads to a reasonable inference about mediation through BMI (C66). However, the authors acknowledge potential bias from sample overlap (up to 3.4% for T2D controls).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C7",
+      "C34",
+      "C48",
+      "C49",
+      "C50",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Subtype-stratified analyses revealed that the causal effect of BMI is particularly strong in thoracic OPLL (T-OPLL) compared to cervical OPLL (C-OPLL), with BMI polygenic risk score showing significantly greater effect in T-OPLL (p=0.016) and larger effect sizes than on T2D.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C34, C48-C50, C52-C54 are supported by subtype-stratified GWAS, MR analyses, and PRS analysis. The differential effects between subtypes are demonstrated through multiple complementary approaches. The statistical comparison between C-OPLL and T-OPLL (C54, p=0.016) provides direct evidence for heterogeneity. However, the authors acknowledge limited sample sizes for subtype analyses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C22",
+      "C62",
+      "C69",
+      "C70"
+    ],
+    "result": "Gene set enrichment analysis found significant enrichment in bone mineral density-related gene sets (heel BMD, pediatric lower limb, pediatric total body less head), supporting the association between OPLL and bone formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22, C62, C69-C70 are supported by FUMA gene set enrichment analysis with appropriate significance thresholds. The enrichment in pediatric BMD gene sets is interpreted as reflecting bone formation (C69-C70), which is a reasonable inference given BMD developmental trajectories, though this interpretation involves some speculation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C35",
+      "C36"
+    ],
+    "result": "Novel candidate genes identified near lead SNPs include TMEM135 (expressed in osteoblastic cells), WWP2 (positive regulator of osteogenesis via RUNX2), and ZBTB40 (regulator of osteoblast activity and bone mass).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C18, C35-C36 are supported by citations to prior functional studies demonstrating roles in bone metabolism. These genes are biologically plausible candidates based on their known functions, though direct functional validation in OPLL context is not provided in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C29",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "The most significant variant rs374810 is located in the RSPO2 promoter region in chondrocytes, where the risk allele causes loss of C/EBP\u03b2 binding, reducing RSPO2 expression and suppressing Wnt-\u03b2-catenin signaling that blocks chondrocyte differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29, C59-C61 are supported by citations to prior functional studies by the same research group (Nakajima et al., 2016). The mechanistic pathway from variant to phenotype has been experimentally validated in previous work, providing strong support for this result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C51"
+    ],
+    "result": "Moderate correlations were found between effect sizes of SNPs for ALL-OPLL and T-OPLL with BMI, especially in SNP sets with low p-values (p<0.0005) in BMI GWAS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C51 is supported by correlation analysis of effect sizes stratified by p-value thresholds. This analysis provides additional evidence for shared polygenic architecture between BMI and OPLL, particularly T-OPLL, complementing the MR and PRS results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Background and contextual claims about OPLL epidemiology, clinical characteristics, prior genetic studies, and relationships with other traits based on literature review and established knowledge.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C8-C14, C71-C89 are primarily supported by citations to prior literature and represent established knowledge about OPLL. These provide appropriate context for the study but do not constitute novel findings. Claim C71 about being the first quantitative heritability estimate is supported by the absence of prior twin studies (C87).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C63",
+      "C68"
+    ],
+    "result": "Clinical observations and prior studies indicate that OPLL patients have increased tendency for whole-body ossification and that monocytes/macrophages influence heterotopic ossification development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63, C68 are supported by citations to prior clinical and experimental studies. These provide biological context for the immune cell enrichment findings but represent prior knowledge rather than novel results from this study.",
+    "result_type": "MINOR"
+  }
+]

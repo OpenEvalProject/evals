@@ -1,0 +1,2159 @@
+{
+  "submission": {
+    "id": "66d6d379-2998-4996-bf22-fa678afdd348",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-04T01:55:10.644504Z",
+    "updated_at": "2025-12-04T01:55:10.644504Z"
+  },
+  "content": [
+    {
+      "id": "b65e8a24-e366-4ea7-9cac-b12db9c2c5bf",
+      "submission_id": "66d6d379-2998-4996-bf22-fa678afdd348",
+      "content_type": "manuscript",
+      "content_text": "# Cell-free DNA as a potential biomarker of differentiation and toxicity in cardiac organoids\n\n## Authors\n\n- Brian Silver<sup>1</sup> ([ORCID: 0000-0002-4480-5009](https://orcid.org/0000-0002-4480-5009))\n- Kevin Gerrish<sup>2</sup> ([ORCID: 0000-0002-4236-5329](https://orcid.org/0000-0002-4236-5329))\n- Erik Tokar<sup>1</sup> ([ORCID: 0000-0002-1668-2830](https://orcid.org/0000-0002-1668-2830)) \u2020\n\n### Affiliations\n\n1. Mechanistic Toxicology Branch, DNTP Research Triangle Park United States ([ROR:03eqttr49](https://ror.org/03eqttr49))\n2. Molecular Genomics Core, DIR NIEHS Research Triangle Park United States ([ROR:03eqttr49](https://ror.org/03eqttr49))\n\n\u2020 Corresponding author\n\n## Abstract\n\nCell-free DNA (cfDNA) present in the bloodstream or other bodily fluids holds potential as a noninvasive diagnostic for early disease detection. However, it remains unclear what cfDNA markers might be produced in response to specific tissue-level events. Organoid systems present a tractable and efficient method for screening cfDNA markers. However, research investigating the release of cfDNA from organoids is limited. Here, we present a scalable method for high-throughput screening of cfDNA from cardiac organoids. We demonstrate that cfDNA is recoverable from cardiac organoids, and that cfDNA release is the highest early in differentiation. Intriguingly, we observed that the fraction of cell-free mitochondrial DNA appeared to decrease as the organoids developed, suggesting a possible signature of cardiac organoid maturation, or other cardiac growth-related tissue-level events. We also observe alterations in the prevalence of specific genomic regions in cardiac organoid-derived cfDNA at different timepoints during growth. In addition, we identify cfDNA markers that were increased upon addition of cardiotoxic drugs, prior to the onset of tissue demise. Together, these results indicate that cardiac organoids may be a useful system towards the identification of candidate predictive cfDNA markers of cardiac tissue development and demise.\n\n## Introduction\n\nBiomarkers in blood or bodily fluids are valued for their potential as noninvasive diagnostics for early disease detection (Zukowski et al., 2020; Leal et al., 2020). Biological fluids contain many forms of information. One such parameter is cell-free DNA (cfDNA), which refers to free-floating DNA in the bloodstream or extracellular media (Grabuschnig et al., 2020). Although cfDNA is believed to be generated largely by apoptotic cells (Grabuschnig et al., 2020), this phenomenon is not limited to cells undergoing a death pathway. Active release of nucleic acids encapsulated in extracellular vesicles (Kustanovich et al., 2019) or through mitochondrial channels (Xian et al., 2022) are additional potential routes that may permit the release of cfDNA. Several measures, including concentration, fragment size, sequence, and epigenetic modifications such as differential methylation, histone modification, and nucleosome spacing, can be used to characterize cfDNA and imply information about the cells from which it originated (Zukowski et al., 2020; Lehmann-Werman et al., 2016; Moss et al., 2018). Currently, cfDNA already has some diagnostic uses, including noninvasive prenatal testing for chromosome abnormalities (Willems et al., 2014), fetal gender determination (Jacobsen et al., 2018), and cfDNA-based tests for the detection of mutations and cancer screening (Cisneros-Villanueva et al., 2022; Bronkhorst et al., 2019). Although the clinical utility and accuracy of these tests in the prediction of cancer is uncertain in some cases (Hackshaw et al., 2022), clinical trials are promising and some FDA-approved tests are already available (Cisneros-Villanueva et al., 2022). Still, we have likely yet to unlock the full spectrum of clinical usage for cfDNA in noninvasive diagnostics. It remains unclear which specific events at the cellular level can be detected in cfDNA and what cfDNA profiles signify tissue-level changes during development and differentiation of specific tissues. Broadening our understanding of how cfDNA changes in response to normal tissue development and maintenance is necessary to strengthen recognition of aberrant cfDNA signatures that could reflect deleterious phenotypes such as teratogenesis or toxicity.\n\nHuman organoids have many advantages as models of both development and disease, including similarity to human tissues, applications in precision medicine, and high-throughput capabilities (Kim et al., 2020). Organoids are more complex than 2D cell cultures or spheroids, yet permit a more isolated view of specific tissues as compared to in vivo settings or human blood samples, which contain cfDNA from numerous tissue sources (Moss et al., 2018). These properties make human organoids an appealing system to study cfDNA in response to cell differentiation or chemical exposure. Although cfDNA has been successfully isolated from pancreatic organoids (Dantes et al., 2020), whether cfDNA can be recovered from additional organoid types is unclear.\n\nIn this study, we used cardiac organoid models to identify properties of cfDNA that were reflective of tissue differentiation and toxicity. Our analyses demonstrate the tractability of cardiac organoid systems to rapidly identify cfDNA markers associated with tissue-level events in a human-relevant setting. Further, we identified specific cfDNA sequences that were elevated prior to major tissue defects initiated by toxicant treatment, suggesting that cardiac organoids have potential value as a tool to explore cfDNA biomarkers of cardiotoxic events.\n\n## Results\n\n### Cardiac organoids derived from H9 embryonic stem cells exhibit characteristic morphological changes and express markers of differentiation\n\nH9 embryonic stem cells were seeded, coalesced into spheroids, and induced to differentiate towards cardiac lineage (Figure 1A). The organoids began contracting rhythmically at approximately 20\u201330 beats per minute (bpm) on day 6 and maintained this beating throughout maturation (Figure 1B). We observed that the organoids expressed increased levels of several markers of cardiac differentiation at both the transcript (Troponin T, Nkx2.5) and protein (MEF2C, GATA-6, \u03b1-actinin, and Nkx2.5) levels, and decreased transcription of the pluripotency marker Oct 3/4 (Figure 1C\u2013F).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/83532/elife-83532-fig1-v2.jpg)\n\n**Figure 1.:** (A) Brightfield images of cardiac organoids during growth and differentiation. Scale bars represent 100 \u00b5m. (B) Quantification of beats per minute across three separate biological replicates for growth day 6 (n = 9 organoids total) and day 9 (n = 7 organoids total). ddPCR of Troponin T (C), Nkx2.5 (D), and Oct3/4 (E) in cardiac organoids at different timepoints during differentiation, normalized to GAPDH. (F) Western blot showing protein expression of MEF2C, GATA-6, \u03b1-actinin, and Nkx2.5 relative to GAPDH in cardiac organoids at different timepoints. Graphs show average concentrations + SD. Samples were compared using an unpaired t-test with Welch\u2019s correction. *p<0.05; **p<0.01; ***p<0.001; ns, nonsignificant.\n\n### Cardiac organoids release cfDNA during their development\n\nConditioned media was collected from cardiac organoids at several time points during their maturation (Figure 2A). We observed that cfDNA could be extracted consistently during development of both organoid models, and total cfDNA concentration increased as the organoids matured (Figure 2B). To account for changes in cell number during organoid growth, we normalized the concentrations of cfDNA to levels of genomic DNA (gDNA) collected on the same growth days. Normalized cfDNA was the highest early in development (Figure 2C), indicating that cfDNA output may be higher in tissues on growth day 1, which are comprised of less differentiated cells. The recovered cfDNA from mature cardiac organoids on day 9 consisted of a broad distribution of fragments ranging from approximately 200\u20136000 base pairs (Figure 2D). Fragment distributions were more difficult to resolve at timepoints prior to day 6, likely due to low DNA concentrations and sensitivity limitations (Figure 2\u2014figure supplement 1).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/83532/elife-83532-fig2-v2.jpg)\n\n**Figure 2.:** (A) Schematic illustrating timepoints of cfDNA collection in cardiac organoids. (B) Shown are cfDNA concentrations taken from n = 3 biological replicates during cardiac organoid differentiation. Data points represent the average of 2\u20133 technical replicates per biological replicate. (C) Cardiac organoid-derived cfDNA concentrations from panel (B), normalized to gDNA concentrations (multiplied by 100 to facilitate axis readability). (D) Electropherogram showing fragment sizes of cfDNA derived from mature cardiac organoids on day 9. Graphs show average + SD. Samples were compared using an unpaired t-test with Welch\u2019s correction. *p<0.05; **p<0.01; ***p<0.001; ns, nonsignificant.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/83532/elife-83532-fig2-figsupp1-v2.jpg)\n\n### Cardiac organoids exhibit a time-dependent decrease in cell-free mitochondrial DNA abundance during growth\n\nTo further characterize the cfDNA recovered from cardiac organoids, we examined abundance of cell-free mitochondrial DNAcell-free mitochondrial DNA by quantifying the levels of markers located at several regions within the mitochondrial genome (Figure 3A). We observed that cardiac cfDNA levels of the mitochondrial genes ND1, mtCOX2, ND6, and ND4 dropped substantially in a time-dependent manner as the organoids differentiated (Figure 3B), and the markers were approximately equally represented in the cfDNA at most time points (Figure 3C). The tissue-level expression of mitochondrial genes slightly decreased midway through differentiation (Figure 3D), but did not fully account for the time-dependent drop in cell-free mitochondrial DNA. As anticipated, an increase in the mitochondrial protein VDAC/Porin was observed in mature cardiac organoids (Figure 3E and F), which is representative of increased mitochondrial size expected in cardiac tissues (Guo and Pu, 2020).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/83532/elife-83532-fig3-v2.jpg)\n\n**Figure 3.:** (A) Schematic showing the location of markers examined on the mitochondrial genome, adapted from Figure 1 of Uhler and Falkenberg, 2015. (B) Relative abundance of mitochondrial markers ND1, ND4, ND6, and mtCOX2 in cardiac organoid-derived cfDNA, obtained using ddPCR. Shown are the average copies/\u03bcl of n = 3 biological replicates, each normalized to the values on day 1, to correct for batch variation. Samples on day 2 were compared to day 1 using a one-sample t-test comparing to a hypothetical value of 1.0. Day 6 samples were compared to day 2 values using an unpaired t-test with Welch\u2019s correction. *p<0.05; **p<0.01; ***p<0.001; ns, nonsignificant. (C) Ratio of the values obtained in panel (B) for each marker to mtCOX2. Significant deviations from a ratio of 1.0 indicating unequal marker abundance were determined using a one-sample t-test comparing to hypothetical value of 1.0. Shown are the averages of n = 3 biological replicates, + SD. (D) Expression of mitochondrial DNA markers at the tissue level in cardiac organoids during differentiation obtained using ddPCR, normalized to \u03b2-actin. (E) Western blot showing protein expression of the mitochondrial protein VDAC/Porin and loading control vinculin in n = 3 biological replicates of cardiac organoids taken at different timepoints during differentiation. (Vinculin loading control is the same for Figure 4D.) (F) Quantification of VDAC protein expression from the western blot in panel (E), normalized to vinculin. Samples were further normalized to day 1 and compared using a one-sample t-test with hypothetical value of 1.0 to test for significant deviation from day 1. (G) Concentration of cfDNA extracted from media conditioned by cardiac organoids on growth days 2 or 6 after ultracentrifugation (100,000 \u00d7 g for 1 hr) compared to control (no ultracentrifugation). Abundance of mitochondrial markers ND1 (H) and mtCOX2 (I) in cfDNA derived from ultracentrifuged media conditioned by cardiac organoids during development, obtained using ddPCR. Graphs show average concentrations + SD. Samples were compared using an unpaired t-test with Welch\u2019s correction. *p<0.05; **p<0.01; ***p<0.001; ns, nonsignificant.\n\nWe hypothesized that mitochondrial fragments within cell debris might be expelled from the organoids as they differentiate, leading to higher cell-free mitochondrial DNA early in the growth process. To investigate this possibility, we examined cell-free mitochondrial DNA abundance in media conditioned by cardiac organoids that had been ultracentrifuged (100,000 \u00d7 g) for 1 hr, to eliminate small fragments of cellular debris and extracellular vesicles. We observed similar cfDNA concentrations and levels of cell-free mitochondrial DNA as in samples that had not been ultracentrifuged (Figure 3G\u2013I). This indicates that the cell-free mitochondrial DNA recovered from cardiac organoids is not due to cell debris or mitochondrial fragments in the media.\n\n### Abundance of specific gDNA sequences is reflective of tissue-level changes in marker expression\n\nDifferentiating cardiac organoids show a switch-like increase in protein expression of the transcription factor Nkx2.5 between growth days 2 and 4 (Figure 4A). Intriguingly, we also observed an increase in cfDNA levels of Nkx2.5 during the same time frame using ddPCR (Figure 4B). We therefore wished to examine the prevalence of additional genomic regions within the cfDNA collected during cardiac organoid differentiation. The transcription factor p53, which is widely recognized for its role in cancer progression, has also been observed to regulate many components of cardiac transcription including Nkx2.5 (Mak et al., 2017). We observed that cfDNA levels of genomic p53 regions were increased later in cardiac differentiation (Figure 4C). However, in contrast to Nkx2.5, tissue-level expression of p53 decreased as cardiac organoids differentiated (Figure 4D and E). Although the endodermal marker Sox17 and stem cell marker Oct3/4 were both detectable by ddPCR in cardiac organoid-derived cfDNA, no significant changes with respect to cardiac differentiation were observed (Figure 4\u2014figure supplement 1). Troponin T was not detectable in cardiac organoid-derived cfDNA. Together, these results suggest that specific regions of genomic DNA may be reflective of cardiac differentiation status.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/83532/elife-83532-fig4-v2.jpg)\n\n**Figure 4.:** (A) Immunofluorescence staining of Nkx2.5 in cardiac organoids during differentiation. Scale bars represent 200 \u03bcm. (B) Nkx2.5 copies/\u03bcl in 1 ng of cardiac organoid-derived cfDNA at different time points during differentiation obtained using ddPCR, taken from n = 3 biological replicates. (C) p53 copies/\u03bcl in 1 ng of cardiac organoid-derived cfDNA at different time points during differentiation obtained using ddPCR, taken from n = 3 biological replicates. (D) Western blot showing p53 protein levels in cardiac organoids during differentiation. (Vinculin loading control is the same for Figure 3E.) (E) Quantification of the western blot in panel (D), normalized to Vinculin (n = 3 biological replicates). Graphs show average concentrations + SD. Samples were compared using an unpaired t-test with Welch\u2019s correction. *p<0.05; **p<0.01; ***p<0.001; ns, nonsignificant.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/83532/elife-83532-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Sox17 (A) or Oct3/4 (B) copies/\u03bcl in 1 ng of cardiac organoid-derived cfDNA at different time points during differentiation obtained using ddPCR, taken from n = 3 biological replicates. Graphs show average concentrations + SD. Samples were compared using an unpaired t-test with Welch\u2019s correction. *p<0.05; **p<0.01; ***p<0.001; ns, nonsignificant.\n\n### Doxorubicin causes severe cardiac organoid malformation in comparison to CPI-203\n\nTo determine how or whether mitochondrial and genomic cfDNA markers change in response to toxicity and chemical exposure, we treated cardiac organoids with the known cardiotoxicant doxorubicin (DOX) or CPI 203 (CPI) \u2013 an epigenetic bromodomain inhibitor with unclear cardiotoxic potential. The drugs were added to the culture medium on day 4 for 48 hr, and cfDNA was collected at two time points post drug addition (Figure 5A). By day 6, organoids treated with either of these drugs exhibited decreased organoid size and an increased ring of diffuse cells and debris compared to control tissues (Figure 5B\u2013D). By day 9, the tissues treated with DOX exhibited severe toxicity and had nearly dissociated; whereas, CPI-treated tissues demonstrated tissue recovery with a nominal size decrease compared to controls (Figure 5E\u2013G). By day 9, detectable bpm were significantly reduced in DOX-treated organoids in contrast to CPI-treated tissues where bpm were comparable to untreated tissues (Figure 5H). Both drugs resulted in decreased size of mature organoids, with DOX having a more severe effect than CPI (Figure 5I).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/83532/elife-83532-fig5-v2.jpg)\n\n**Figure 5.:** (A) Schematic showing drug treatment and collection times of cfDNA during cardiac organoid growth. Representative images of tissues on day 6: control (B), DOX-treated (C), and CPI-treated (D). Representative images of tissues on day 9: control (E), DOX-treated (F), and CPI-treated (G). Scale bars represent 100 \u00b5m. (H) Beats per minute measured on growth day 9 for tissues treated with either DOX or CPI compared to DMSO-treated control. Shown are the average counts for 3\u20135 tissues each across three independent replicates. (I) Average tissue size of mature cardiac organoids treated with DOX or CPI measured on growth day 9. Shown are the average counts across three independent replicates (3\u20135 organoids per replicate). (J) ddPCR showing tissue-level expression of Nkx2.5 normalized to TBP on growth day 6 in cardiac organoids treated with DOX or CPI. Graphs show average concentrations + SD. Samples were compared using an unpaired t-test with Welch\u2019s correction. *p<0.05; **p<0.01; ***p<0.001; ns, nonsignificant. (Tissue morphology in response to treatment with DOX later in organoid growth is shown in Figure 5\u2014figure supplement 1.)\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/83532/elife-83532-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Schematic showing treatment and cfDNA collection times during the growth of cardiac organoids. Representative images of mature cardiac organoids on day 9 treated with doxorubicin (DOX) (B) or CPI (C) on day 7 (late treatment). Scale bars represent 100 \u00b5m. (D) Beats per minute measured on growth day 9 for tissues treated with either DOX or CPI either early (day 4) or late (day 7) in development. Shown are the average counts across three independent replicates (3\u20135 organoids per replicate). (E) Average tissue size of mature cardiac organoids on growth day 9 treated with DOX or CPI either early (day 4) or late (day 7) during development. Shown are the average measurements across three independent replicates (3\u20135 organoids per replicate). (F) Abundance of Nkx2.5 normalized to TBP at the tissue-level in mature cardiac organoids on growth day 9 treated with DOX or CPI on either days 4 (early treatment) or day 7 (late treatment) shown via ddPCR. (The samples treated with DOX on day 4 are not shown because they were severely toxic by day 9 and there was not enough tissue for RNA collection.) Graphs show average concentrations + SD. Samples were compared using an unpaired t-test with Welch\u2019s correction. *p<0.05; **p<0.01; ***p<0.001; ns, nonsignificant.\n\nWe wished next to know how these drug treatments impacted differentiation of the cardiac organoids. On day 6, levels of the cardiac transcription factor Nkx2.5 were substantially increased in samples treated with DOX (Figure 5J), while CPI-treated organoids did not significantly differ in expression compared to control. Together, these results indicate that treatment with DOX dysregulates cardiac gene expression and causes more severe toxicity in cardiac organoids than CPI in this model, at the concentrations used. Notably, the timing of drug addition greatly impacted the degree of toxicity observed. Treating tissues with DOX later in development on day 7 resulted in less dramatic toxicity and no substantial changes in beating rate or tissue size compared to control. DOX still increased Nkx2.5 expression regardless of treatment time, while the impact of CPI on Nkx2.5 expression was less pronounced (Figure 5\u2014figure supplement 1).\n\n### Specific sequences of cfDNA may be predictive of toxicity in cardiac organoids\n\nOur next step in the study investigation was to determine whether specific properties of cfDNA could be predictive of the outcomes we observed in each of these conditions: severe cardiac malformation (DOX), mild effects (CPI), or normal (control). Tissues that had been treated with DOX showed significantly increased levels of the mitochondrial markers ND1 and mtCOX2 on day 6 after 48 hr of drug exposure (Figure 6A and B). Nkx2.5 was also increased at the cfDNA level in DOX-treated samples (Figure 6C), while cfDNA levels of p53 were unchanged by toxicant addition (Figure 6D). The impact of DOX or CPI treatment on the abundance of these markers in cfDNA later in development was more subtle. In addition, the overall concentration of cfDNA was not significantly impacted by these drug treatments either early or late in development (Figure 6\u2014figure supplement 1). Notably, the increases in ND1, mtCOX2, and Nkx2.5 in cfDNA collected from DOX-treated samples on day 6 preceded the detriment of the organoids we observed on day 9. Further, this increase was not observed in CPI-treated samples, which had largely recovered tissue morphology and beating function by day 9. Together, these results suggest that the abundance of specific markers (ND1, mtCOX2, and Nkx2.5) in cfDNA may be predictive of the severity of exposure outcomes in cardiac development.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/83532/elife-83532-fig6-v2.jpg)\n\n**Figure 6.:** Abundance of ND1 (A), mtCOX2 (B), Nkx2.5 (C), or p53 (D) in 0.5 ng cfDNA collected from cardiac organoids on growth day 6 treated with doxorubicin (DOX) or CPI, obtained using ddPCR. Graphs show average concentrations + SD. Samples were compared using an unpaired t-test with Welch\u2019s correction. *p<0.05; **p<0.01; ***p<0.001; ns, nonsignificant. (Concentration of cfDNA and additional analysis of cfDNA sequences upon treatment with DOX later in growth are shown in Figure 6\u2014figure supplement 1.)\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/83532/elife-83532-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) cfDNA concentrations from cardiac organoids on day 6 treated with either doxorubicin (DOX) or CPI. (B) cfDNA concentrations from cardiac organoids on day 9 treated with either DOX or CPI on growth days 4 (early treatment) or 7 (late treatment). (C) The cfDNA concentrations in panel (A) normalized to gDNA (multiplied by 100 to facilitate axis readability). (D) The cfDNA concentrations in panel (B) normalized to gDNA (multiplied by 100 to facilitate axis readability). Abundance of ND1 (E), Nkx2.5 (F), and p53 (G) in cfDNA collected from mature cardiac organoids on day 9, treated with DOX or CPI on either day 4 (early treatment) or day 7 (late treatment), shown via ddPCR. Graphs show average concentrations + SD. Samples were compared using an unpaired t-test with Welch\u2019s correction. *p<0.05; **p<0.01; ***p<0.001; ns, nonsignificant.\n\n## Discussion\n\nPreviously, cfDNA had been extracted successfully from pancreatic organoids derived from cancer patients (Dantes et al., 2020). However, whether cfDNA could be recovered from additional organoid types and the utility of these models for drug screening and predictive biomarker identification has been largely unexplored. Our study designed a method for rapid screening of cfDNA from cardiac organoids. We identified that decreases in cell-free mitochondrial DNA levels occur in response to cardiac differentiation. Further, we observed increases in specific cfDNA sequences corresponding to the genes Nkx2.5 and p53 upon cardiac organoid maturation. Our findings indicate that cfDNA concentration alone is not a reliable marker of toxicity. Rather, the prevalence of cell-free mitochondrial DNA and specific genomic regions may be more predictive of deleterious events. Specifically, cfDNA levels of ND1, mtCOX2, and Nkx2.5 in mature cardiac organoids may be potential predictive biomarkers of DOX-induced cardiotoxicity. We saw increases in the abundance of these markers on day 6 in DOX-treated samples, but not CPI-treated samples. By day 9, the organoids treated with DOX early in growth were severely malformed, while the CPI-treated organoids had mostly recovered.\n\nAlthough our cardiac organoid model does not approach the complexity of cardiac growth in vivo, mapping which combinations of cfDNA markers reflect specific cardiotoxic outcomes would be a valuable step towards implementing cfDNA as a clinical screening tool. In addition, organoid models permit the investigation of cfDNA in response to toxic compounds and chemicals with unclear bioactive potential, which could aid the development of cfDNA as a tool for detection of toxic exposures. Future work is needed to explore the impact of additional compounds and drugs on cardiac cfDNA, and what changes occur in other tissue types. Cell-free mitochondrial DNA output in response to differentiation and toxicity may be an important area of further investigation. The increase in cardiac organoid-derived cell-free mitochondrial DNA observed after treatment with DOX might reflect aberrant cardiomyocyte death. Accordingly, the decrease in cell-free mitochondrial DNA during cardiac organoid differentiation may represent preferential retention of cells with more mature mitochondria. Alternatively, the channels mPTP and VDAC may play a role in increased cfDNA release from stressed mitochondria (Xian et al., 2022). Fittingly, we observed that cell-free mitochondrial DNA markers (ND1, mtCOX2) were increased in organoids exposed to DOX. The exact mechanism of preferential cell-free mitochondrial DNA release by certain cell types is an intriguing area of future study.\n\nIn addition, identification of cfDNA sequences of nuclear origin is also critical for our understanding of the cell-free genome. Differential abundance of cell-free genomic DNA may reflect regions of DNA protected from DNases by transcription factor binding or epigenetic modifications (Ulz et al., 2019). The transcription factor p53, which is widely recognized for its role in cancer progression, also has demonstrated involvement in cardiac tissues and interacts with Nkx2.5 (Kojic et al., 2015). Although both of these markers increased at the cfDNA level as the organoids matured, we observed with interest that the overall expression of Nkx2.5 increased whereas that of p53 decreased at the tissue level during maturation. Analysis and identification of multiple combinations of cfDNA markers may ultimately be necessary to effectively distinguish events at the tissue level. The cfDNA we recovered from cardiac organoids consisted of a heterogeneous distribution of fragment lengths that ranged from approximately 200\u20136000 base pairs. The shorter fragments are potentially indicative of DNA that has been cleaved during apoptosis, while the longer lengths could result from necrotic processes (Aucamp et al., 2018). However, cfDNA can also be expelled actively from healthy cells in the form of extracellular vesicles or nucleoprotein complexes. Further, different DNases may contribute uniquely to patterns of fragmentation (Han et al., 2020). Tracing individual fragments back to the cellular event triggering their release would be a valuable area of future research.\n\nIn the bloodstream, multiple cell types contribute to the cfDNA population, with a large fraction released by white blood cells and erythrocyte progenitor cells (Moss et al., 2018). This complexity highlights the need to identify key cfDNA sequences that can be used as clinical markers for specific conditions. Although media conditioned by organoids in culture does not approach the complexity of human blood or bodily fluids, organoids provide a tractable system for identifying potential cfDNA targets in response to known tissue-level events. These cfDNA markers may be valuable targets for further screening in clinical samples. Although cfDNA concentration is known to be elevated in cardiac disease patients (Polina et al., 2020), we did not observe a significant increase in overall cfDNA concentration in response to phenotypic changes. Although cell death is one route of cfDNA release, alternative mechanisms exist through which cfDNA concentration may increase in the absence of cell death, such as association with extracellular vesicles (Kustanovich et al., 2019; Aucamp et al., 2018). In clinical samples, cfDNA concentration can fluctuate substantially between individuals and increase in response to a number of conditions including cancer (Salvi et al., 2016), exercise (Breitbach et al., 2012), aging, and recent surgery (Aucamp et al., 2018). These observations combined with our results indicate that cfDNA concentration alone may not be an optimal parameter for targeted disease diagnosis. Rather, screening for specific cfDNA sequences may be more indicative of certain conditions.\n\nIn this study, we have demonstrated that cfDNA can be reliably extracted from cardiac organoid models. Further, we present the tractability of organoid systems for screening cfDNA markers in response to tissue-level events, including differentiation and malformation. This workflow has the potential for rapid screening of cfDNA from toxicity and disease models and could likely be extended to additional organoid systems. Our future efforts include the identification of additional cfDNA sequences that are impacted by differentiation and understanding how different chemicals impact the cfDNA profile of mature and developing cardiac tissues. Ultimately, our approach could contribute to establishing a database of cfDNA markers that map to specific disease processes or toxicants, which would hold promise for early, non-invasive detection of disease.\n\n### Study limitations and future directions\n\nHere, cfDNA samples were collected at a small number of timepoints along the development of the organoids. Future research might explore more frequent samplings of cfDNA to obtain a better understanding of how cfDNA changes in time during organoid growth. In addition, it is unclear to what degree cfDNA may be degraded between the time it is released from the tissues to the time of collection. Further, although we attempted to minimize DNA degradation post-collection by limiting freeze\u2013thaw cycles and using good sample storage practices, we cannot rule out that longer fragments of DNA could have broken down into shorter ones over time. In addition, although the Maxwell ccfDNA automated extraction kit is one of the better tools currently available for cfDNA extraction (Sorber et al., 2017), we cannot rule out potential bias towards short fragments. The electropherograms which showed cfDNA size distribution are qualitative and cannot be taken as a definitive statement of fragment profiles, especially since events such as post-collection degradation could be missed through this analysis. Future studies might investigate more closely the molecular dynamics of cfDNA release and the timing of its degradation, and also how degradation rate may vary in culture media versus the bloodstream.\n\nTo account for the growing size of the organoids, we used total tissue-level genomic DNA concentration to normalize cfDNA concentrations as the dense nature of the tissues hindered their dissociation and single-cell counts via enzymatic or mechanical means. However, this is only an approximation and may have introduced errors resulting from multinucleated cells, aneuploidy, or cells undergoing division. Future work might seek to optimize methods of normalizing cfDNA concentration to further improve our knowledge of how cfDNA concentration is impacted by tissue-level events. Unlike tissue-level analyses which examine expression of RNA transcripts converted to complementary DNA (cDNA), cell-free DNA (cfDNA) consists of expelled DNA fragments that are present in the extracellular media. It is currently unclear whether certain fragment sequences might be present more consistently than others, so it is therefore difficult to normalize ddPCR analyses of cfDNA copy number to a housekeeping gene. This is a possible source of error in determining the abundance of specific cfDNA sequences. Future studies of normalization and copy number analyses in free nucleic acids would be valuable towards precise quantitative assessments of cfDNA sequences.\n\nIn this study, only a handful of cfDNA sequences were assessed. In addition, our study only assessed organoids derived from one cell type (H9 ESCs) in a limited number of batches (n = 3). However, we feel this work has demonstrated that cfDNA can be successfully recovered from cardiac organoids in quantities sufficient for characterization and quantification. This lays the groundwork for further studies of cfDNA from additional organoid systems in response to toxicant treatments, as well as broader global analyses such as microarrays or sequencing.\n\n## Materials and methods\n\n### Cell culture\n\nWA09 (H9) human embryonic stem cell line was purchased from WiCell. Authentication of cell lines and mycoplasma was conducted by WiCell. H9 human embryonic stem cells (hESCs) were maintained in mTeSR+ medium (Stemcell Technologies, 100-0276) at 37\u00b0C and 5% CO2. Cells were passaged between 60 and 80% confluence using 0.5 mM EDTA (Gibco, 15575) onto plates pre-coated with growth factor-reduced Matrigel (Corning, 354230) for 30 min at 37\u00b0C in DMEM/F:12 (Gibco, 11330-032) at a concentration of 1.2 \u00b5L/mL cm2. Cultures were passaged a maximum of 10 times provided no morphological changes indicative of differentiation were present.\n\n### Cardiac organoid generation\n\nCardiac organoids were generated using a previously established protocol (Israeli et al., 2020). Briefly, H9 hESCs were detached using TrypLE (Gibco, A12177-01) and resuspended at a density of 100,000 cells/mL in E8 media (Gibco, A15169-01) + 10 \u00b5M Y27632 (Tocris, 129830-38-2). 100 \u00b5L of cell suspension was added per well to a 96-well round-bottom ultra-low attachment plate (Thermo Fisher, 174925) and centrifuged for 5 min at 200 \u00d7 g to coalesce the cells. The day of seeding was defined as day 2 of growth. On day 1, the media was changed by removing 50 \u00b5L media from each well and adding 200 \u00b5L fresh prewarmed E8 media. On day 0, 166 \u00b5L media was removed and replaced with 166 \u00b5L RPMI 1640 (Gibco, 11875-093) supplemented with 1x B27 (no insulin; Gibco, A18956-01), CHIR 99021 (4 \u00b5M; Selleck, S2924), BMP4 (0.36 pM; BioTechne, 314BP-010/CF), and ActA (0.08 pM; BioTechne, 338-AC-010/CF). On day 1, 166 \u00b5L of media was removed and replaced with 166 \u00b5L RPMI 1640 supplemented with B27 (no insulin). On day 2, 166 \u00b5L of media was removed and replaced with 166 \u00b5L RPMI 1640 supplemented with B27 (no insulin) and IWR-1-endo (5 \u00b5M; Selleck, S7086), and incubated at 37\u00b0C for 48 hr. On day 6, 166 \u00b5L of media was removed and replaced with 166 \u00b5L of RPMI 1640 supplemented with 1x B27 (with insulin; Gibco, 17504-044). On day 7, 166 \u00b5L of media was removed and replaced with 166 \u00b5L RPMI 1640 supplemented with B27 (with insulin) and 4 \u00b5M CHIR99021, and incubated for 1 hr at 37\u00b0C, then the media was again replaced as described above using RPMI 1640 supplemented with B27 (with insulin; no CHIR). The plate was incubated at 37\u00b0C for 48 hr, and the cardiac organoids were considered mature on day 9. To examine the effects of chemical addition, doxorubicin (DOX, 1 nM; Sigma, D1515) or CPI-203 (0.5 \u03bcM; Tocris, 5331) were applied for 48 hr on either day 4 or 7 of cardiac organoid development (control, 1:1000 DMSO) in culture media.\n\n### Nucleic acid extraction\n\nRNA and gDNA from organoids (Promega, miRNA Tissue Kit AS1460; Tissue DNA Kit AS1610) and cfDNA from media (Promega, ccfDNA Plasma Kit AS1480) were extracted using the Promega Maxwell RSC instrument. RNA quality and purity were assessed using a NanoDrop 2000 spectrophotometer, and DNA concentrations were measured using the Promega QuantiFluor dsDNA System. A minimum of 3\u20135 organoids were used per biological replicate for RNA and gDNA extractions. RNA was converted to cDNA using the iScript Reverse Transcription Kit (Bio-Rad). CfDNA from cardiac organoids was collected from media conditioned by 10 tissues (2\u20133 technical replicates per batch, 3 independent batches). Prior to cfDNA extraction, all conditioned media was centrifuged for 10 min at 1600 \u00d7 g, the top 800 \u00b5L supernatant centrifuged 10 min at 16,000 \u00d7 g, and the top 400 \u00b5L collected and stored at \u201380\u00b0C until extraction. Prior to extraction, conditioned media was thawed at 4\u00b0C to prevent degradation.\n\n### Quantification of cfDNA concentration, fragment analysis, and gene expression\n\nNucleic acid concentration was measured using the QuantiFluor ONE dsDNA System (Promega, E4871). Fragment analysis of cfDNA size was performed using the 5200 Fragment Analyzer System, Agilent Inc using the HS Large Fragment 50 kb Kit (Agilent, DNF-464-0500). Gene expression and cfDNA copy number were evaluated using droplet digital PCR (ddPCR; HEX/FAM system) using 0.5 ng or 1 ng of cDNA or cfDNA per reaction. Prior to quantification, cfDNA concentrations were diluted to 0.05 ng/\u00b5L and 10 \u00b5L added per reaction. ddPCR was performed using 25 \u00b5L reaction volumes with ddPCR Supermix for Probes (no dUTP; Bio-Rad) and 1 \u00b5L each of the following probes: Troponin T (dHsaCPE5052345, Bio-Rad), Nkx2.5 (dHsaCPE5042098, Bio-Rad), Oct 3/4 (POU5F1, dHsaCPE5191335, Bio-Rad), ND1 (dHsaCPE5029121, Bio-Rad), MT-COX2 (dHsaCPE5192286), p53 (TP53, dHsaCPE5037521, Bio-Rad), SOX17 (dHsaCPE5039713, Bio-Rad), ND6 (dHsaCNS941916401, Bio-Rad), ND4 (dHsaCNS186386931, Bio-Rad), GAPDH (dHsaCPE5031597, Bio-Rad), TPB (dHsaCPE5058363, Bio-Rad), and \u03b2-actin (dHsaCPE5190200, Bio-Rad). Droplets were generated using the Automated Droplet Generator (Bio-Rad, CA) and PCR performed using annealing conditions of 60\u00b0C for 1 min, 40 cycles. Droplets were read using the QX200 Droplet Reader (Bio-Rad). Thresholding was applied equally across all sample conditions under comparison for each probe.\n\n### Protein detection and quantification\n\nA minimum of five organoids per batch were rinsed 1\u00d7 with PBS and homogenized in Pierce RIPA (Thermo Scientific, 89900) supplemented with 25\u00d7 cOmplete Protease Inhibitor, EDTA-free (Roche, 11836170001) and centrifuged for 15 min at 14,000 \u00d7 g at 4 \u00b0C. The supernatant was removed and stored at \u201380\u00b0C until analysis. Protein concentration was calculated using the Pierce BCA Protein Assay (Thermo Scientific, 23225). 3.5 \u00b5g protein was incubated for 10 min at 70\u00b0C with NuPAGE LDS Sample Buffer (Invitrogen, NP0007) and NuPAGE Sample Reducing Agent (Invitrogen, NP 0009), loaded onto a NuPAGE 4 to 12%, Bis-Tris gel (Invitrogen, NP0336BOX), and run for 35 min at 200 V in 1\u00d7 NuPAGE MES Run Buffer (Invitrogen, NP0002) plus NuPAGE Antioxidant (Invitrogen, NP0005). The proteins were transferred to nitrocellulose membranes using the iBlot Gel Transfer Device (Thermo Fisher). Protein transfer was visualized using Ponceau S solution (Sigma, P7170), and the membranes were cut into regions containing the proteins of interest. Membranes were blocked for 15 min in EveryBlot Blocking Reagent (Bio-Rad, 120110020) and incubated with primary antibody overnight at 4\u00b0C diluted 1:1000 in EveryBlot Blocking Reagent unless otherwise specified: rabbit anti-vinculin (Novus, NBP2-20859), rabbit anti-Nkx2.5 (Cell Signaling, 8792T), rabbit anti-VDAC (Abcam, ab15895), mouse anti-p53 (1:500; Novus, NBP2-29453), rabbit anti-MEF2C (Cell Signaling, 5030), rabbit anti-GATA-6 (Cell Signaling, 5851), rabbit anti-\u03b1-actinin (Cell Signaling, 6487), rabbit anti-GAPDH (Bio-Rad, VPA00187). Following primary antibody incubation, membranes were washed 3 \u00d7 5 min in 1\u00d7 Tris-buffered saline (TBS; Bio-Rad, 1706435) plus 0.1% tween-20 (Sigma, P7949) (TBST) and incubated for 45 min at room temperature with secondary antibody diluted 1:5000 in EveryBlot Blocking Reagent (Bio-Rad): goat-anti-rabbit HRP (Novus, NB7160) or goat-anti-mouse HRP (Invitrogen, 32230). Membranes were washed 3 \u00d7 15 min in TBST and HRP visualized using SuperSignal West Pico Plus Chemiluminescent Substrate (Thermo Scientific, 34580). Bands were quantified in ImageJ (Schneider et al., 2012) using a rolling ball background subtraction with r = 50, followed by normalization to vinculin.\n\n### Immunostaining\n\nWe used a previously described protocol (Matsumoto et al., 2019) for immunostaining and clearing of the organoids. Briefly, the organoids were fixed overnight in 4% paraformaldehyde followed by delipidation by successive overnight incubations in CUBIC-L solution (50%, 100%) at 37\u00b0C. The organoids were then blocked in 3% bovine serum albumin and incubated for 2 d in rabbit anti-Nkx2.5 primary antibody diluted 1:200 in blocking solution. Excess primary antibody was removed using PBST (0.2% Triton X-100 diluted in 1\u00d7 PBS). The organoids were then incubated again for 2 d in secondary antibody (1:200, Alexa 647 goat-anti-rabbit; Invitrogen, A21244) and DAPI (1 \u00b5g/mL; Sigma, P9542) diluted in blocking solution. Samples were cleared for imaging in 96-well optical plates (Thermo Fisher, M33089) using CUBIC-R solution as described previously (Matsumoto et al., 2019). Confocal images were obtained on a Zeiss LSM 880 inverted confocal microscope with AiryScan (Jena, Germany).\n\n### Statistical analysis\n\nData were analyzed using GraphPad Prism version 9.0.0 for Windows, GraphPad Software, San Diego, CA (https://www.graphpad.com/). Averages of sample conditions were compared using an unpaired t-test with Welch\u2019s correction. *p<0.05; **p<0.01; ***p<0.001; ns, nonsignificant. In instances where data were normalized to the initial timepoint (day 1) to account for batch variation, or ratios were compared, a one-sample t-test was used to compare the average of each normalized condition to a hypothetical value of 1.0, to detect significant deviation from the day 1 starting point. *p<0.05; **p<0.01; ***p<0.001; ns, nonsignificant. All graphs show average + SD unless otherwise stated. Three independent biological replicates (separate batches of organoids cultured consecutively on different days) were performed for each experiment.\n",
+      "created_at": "2025-12-04T01:55:10.644504Z"
+    },
+    {
+      "id": "7710af81-73d6-4ce7-a31d-d64ffdc1e4f1",
+      "submission_id": "66d6d379-2998-4996-bf22-fa678afdd348",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Abel Bronkhorst, https://ror.org/02kkvpp62 German Heart Centre, Technical University Munich Germany\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.83532.sa0](https://doi.org/10.7554/eLife.83532.sa0)\n\nThis important study presents a comprehensive investigation into cell-free DNA (cfDNA) within the context of 3D cell cultures, offering valuable insights into this emerging research area. Despite being an exploratory study, the findings provide compelling evidence that continued progress holds the potential for the establishment of versatile 3D cell culture cfDNA assays. Such assays could serve as invaluable research and clinical tools, enabling monitoring of organoid growth and development, enhanced characterization of tissue dynamics, and ultimately facilitating the identification of novel biomarkers.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Abel Bronkhorst, https://ror.org/02kkvpp62 German Heart Centre, Technical University Munich Germany\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.83532.sa1](https://doi.org/10.7554/eLife.83532.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Cell-free DNA as a potential biomarker of differentiation and toxicity in cardiac organoids\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, including Abel Bronkhorst as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Didier Stainier as the Senior Editor.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1) Please provide a point-by-point response to all reviewer comments.\n\n2) Note that additional experiments have been requested by the reviewers. Please perform these experiments or provide a convincing rebuttal.\n\nReviewer #1:\n\nCfDNA molecules possess various physicochemical features that correlate with the cellular origin and a wide range of disease indications, making it an ideal biomarker. However, systematic mapping of the information available through cfDNA characterization is complicated by the immense complexity of in vivo systems. While cell culture models represent only a limited view into complex biological systems, they have still proven to be extremely useful in many cases and a growing number of studies indicate their utility in cfDNA analysis.\n\nin vitro research on cfDNA has to date focused mainly on 2D cell cultures. Therefore, this work by Silver et al. is among only a small number of studies that profiled cfDNA in 3D cell cultures and represents one of the most detailed assessments to date. They demonstrated that (i) cfDNA release correlates with differentiation; (ii) cell-free mitochondrial DNA levels correlate with the development of organoids; (iii) the sequence composition of cfDNA fluctuates during growth; and (iv) specific cfDNA features correlates with toxic drug treatment.\n\nBased on these interesting observations the authors conclude that cfDNA profiling may not only serve as a useful tool to monitor the growth and development of organoids but may be leveraged to gain insight into tissue dynamics and potentially identify new biomarkers. The authors acknowledge that their study is only an explorative study and that more research is needed before in vitro data will reveal accurate and practically useful information about the in vivo setting. However, the various issues that may confound the results obtained in their study, and the general limitations of 3D cell models in relation to cfDNA analysis, are not clearly outlined. For example, (i) factors that affect the normalization of cfDNA concentration measurements, (ii) the influence of \"natural\" cell death on the measurement of drug-induced cell death-related cfDNA features, (iii) the effects of DNA degradation over time, (iv) important dynamic changes in cfDNA properties that are missed due to widely spaced measurement time-points.\n\n1. Page 3, lines 53-54: \"Several measures including concentration, fragment size, and sequence can be used to characterize cfDNA, and imply information about the cells from which it originated [1].\"\n\n\u2022 Several epigenetic features of cfDNA (e.g. fragment end-point motifs, nucleosome spacing, topological features, differentially methylated regions, and histone modifications) enable enhanced cell-of-origin identification. These features are increasingly characterized and could be mentioned here.\n\n2. Page 3, lines 55-57: \"Still, the current diagnostic uses of cfDNA are primarily limited to specific applications such as the detection of fetal chromosome abnormalities responsible for Down syndrome [6] and fetal gender determination from maternal blood [7].\"\n\n\u2022 There are a number of FDA-approved cancer cfDNA assays for routine clinical use. Most of these are companion tests but could be mentioned here, as the clinical use of cfDNA assays is not primarily limited to non-invasive prenatal testing (NIPT).\n\n3. Page 5, lines 98-101: \"To account for changes in cell number during organoid growth, we normalized the concentrations of cfDNA to levels of genomic DNA (gDNA) collected on the same growth days. Normalized cfDNA was highest early in development (Figure 2C), indicating that cfDNA output may be higher in tissues comprised of less differentiated cells.\"\n\nPlease expand this section after considering the following points:\n\n\u2022 There is no data linking the timing of specific cellular events with the extracellular occurrence of DNA fragments. For example, cell division, differentiation, apoptosis, necrosis, active release, drug-induced death, etc., may be initiated at one point in time, while DNA may only be released into the growth medium at a much later time point. Similarly, a major portion of specific DNA fragments released due to specific reasons may already be degraded at the time of measurement. How is this factored into cfDNA measurements and normalization of measurements?\n\n\u2022 DNA content does not necessarily reflect cell number, for example during specific cell division phases or aneuploidy\n\n\u2022 Is it possible and would it be better to perform both gDNA analysis and total cell counts?\n\n\u2022 Would it be better to perform more frequent cfDNA assessments, e.g., every couple of hours?\n\n4. Page 5, lines 102-103: \"The recovered cfDNA consisted of a broad distribution of fragments ranging from approximately 200 to 6000 base pairs (Figure 2D).\"\n\n\u2022 Some comments here:\n\n\u2022 The cfDNA size profile is interesting. The short fragments demonstrate an apoptotic laddering pattern, but there is also a population of long cfDNA fragments, which may indicate an origin from apoptosis. Could the authors elaborate on this?\n\n\u2022 A recent publication on the characterization of cfDNA in 2D cell cultures suggested that shorter fragments and longer fragments may originate from the same process and that longer fragments are degraded into shorter fragments over time.\n\no This paper also shows that the apparently high concentration of longer cfDNA fragments as seen in electropherograms may be an artefact of the method. Could the authors comment on this?\n\n\u2022 If it is true that longer fragments also contain important biological information, this information could be missed in some cases, for example:\n\no The use of extraction kits that are biased toward the capture of short fragments\n\no DNA sequencing techniques that are limited to short reads\n\no cfDNA sizing using PCR techniques\n\n\u2022 The method used for cfDNA sizing is not discussed in the methods and materials section.\n\n\u2022 It would have been interesting to not only see the cfDNA size profile on one day but how it changes over the course of incubation. Perhaps the authors can speculate on what insights this may reveal.\n\n5. Another factor that may complicate the characterization of organoid-derived cfDNA:\n\n\u2022 Literature suggests that natural levels of apoptosis /necrosis increase over the course of organoid growth and development. How does one differentiate between cfDNA fragments originating from \"natural\" vs \"induced\" cell death? Is this a confounding factor for analysis?\n\nReviewer #2:\n\nSilver et al. demonstrated that cell-free DNA can be detected from cultures of cardiac organoids. This subject has not been explored and presents a real interest towards the possible use of organoids to detect markers according to the physiological or pathological evolution of the original tissues. So they tried to assess the possibility of cardiotoxicity of a drug from organoid cultures. The writing of the manuscript is of good quality, concise, and the presentation of the results is clear. However, the manuscript has many flaws including many inaccuracies; and authors should address the following major concerns:\n\n1. The analysis of free mitochondrial DNA raises many questions: (i), there is no technical explanation for standardization, calibration, and direct comparison of the quantification of the number of copies of different regions of the mitochondrial genome. The quantification of mitochondrial DNA by the quantitative PCR technique must be determined with caution; (ii) the readers may remain confused regarding the method used to determine DNA concentration; (iii) the reviewers is confused throughout the manuscript in respect to characterize gene expression (RT-PCR) and cfDNA amount (qPCR); (iv), the authors state in the abstract that there is a decrease in the fraction of free mitochondrial DNA during development organoids which is not proven by the results; (v), on what basis can the authors say that this identifies a unique signature of cardiac differentiation if they did not make a comparison with other cell types; (vi), the authors do not comment on why the expression of the four mitochondrial regions is equivalent, which is counterintuitive; (vii), Figure 3C shows standard variations when it looks impossible when showing ratios; and (viii), there is no discussion when comparing amount of cfDNA from both origins while they showed an apparent similar level, especially in regards to the literature comparing for instance cfDNA from mitochondria or nucleus.\n\n2. How is it possible that wild-type DNA, in this case P53, can show a difference in quantity by quantitative PCR analysis during differentiation?\n\n3. No or very few indications specified the number of passages or the number of organoids within the same culture. This is crucial and must be filled in.\n\nReviewer #3:\n\nThe article analyses for the first time the kinetics of different cfDNA species during the development of cardiac organoids generated from H9 human embryogenic stem cells. The stimulation of the cells with Doxorubicin or CPI, as a model of toxic exposure, is a relevant approach to identifying the validity of cfDNA as biomarkers of toxic events. The authors show an increase in cfDNA and a decrease in mtDNA during cardiac organoid differentiation. However, the research relies on a single cell line, and the number of biological replicates with n = 3 is very small. The inclusion of additional two or three replicates is required to validate the finding. Moreover, the inclusion of another selected cell line would strengthen the finding.\n\nThe article is well-written and the authors used various methodological approaches to prove their findings. However, with respect to the main message, namely, the increase of specific cfDNA targets in response to DOX treatment, the reviewer has some concerns. Those are related to statistical aspects as well as methodological as described below.\n\n\u2013 In figures 1-4 the authors compare paired samples over time. However, in their figure legends, the authors indicate that an unpaired test was used. Does this have any rationale like missing samples? The single point of the samples should be included in the figure.\n\n\u2013 In all figure legends it is noted that t-tests with Welch\u00b4s correction were used unless otherwise indicated. The authors could indicate if a t-test (homogenous variances between samples) or a welch\u00b4s t-test (not normal variances) was used.\n\n\u2013 The authors should additionally highlight which of the results are related to cfDNA or cDNA analysis. For example, Figures 4 B and C relate to cfDNA (labelled with cfDNA). Figure 5 J relates to cDNA (not labelled). Figure 6 (not labelled with cfDNA).\n\n\u2013 Figure 3 B, please clarify if the relative abundance of mtDNA relates to total cfDNA or one of the reference genes.\n\n\u2013 Figure 4 should be restructured. Figure 4B, C, F, and G belong together, and D and E belong together. As long as F and G display cfDNA analysis (should be highlighted). Aftewards the legend text could be reduced relevantly.\n\n\u2013 Figure 6: The copy number of the different cfDNA targets relies relatively on the input material (0.5 or 1 ng were included in the ddPCR assay). Especially for Figure 6 and the discussion that ND1 and NKx2.5 increase in response to DOX treatment, but not the total amount of cfDNA and not p53. Can this result be strengthened by the analysis of GAPDH or TBP in the same sample?\n\n\u2013 The reviewer feels that 3 more replicates are needed to validate the finding of different cfDNA release in response to DOX. Moreover, a comparison to another suitable and well-selected cell line would be welcome.\n",
+      "created_at": "2025-12-04T01:55:10.644504Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T01:55:10.644504Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T01:55:10.644504Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "a3444531-3344-4807-8947-09222c7904ff",
+      "content_id": "b65e8a24-e366-4ea7-9cac-b12db9c2c5bf",
+      "claim_id": "C2",
+      "claim": "cfDNA is believed to be generated largely by apoptotic cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Although cfDNA is believed to be generated largely by apoptotic cells (Grabuschnig et al., 2020), this phenomenon is not limited to cells undergoing a death pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Grabuschnig et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:55:10.644504Z"
+    },
+    {
+      "id": "63e0c7de-701f-4a21-82ef-a9689e31b4c1",
+      "content_id": "b65e8a24-e366-4ea7-9cac-b12db9c2c5bf",
+      "claim_id": "C3",
+      "claim": "Active release of nucleic acids encapsulated in extracellular vesicles is a potential route for cfDNA release.",
+      "claim_type": "EXPLICIT",
+      "source": "Active release of nucleic acids encapsulated in extracellular vesicles (Kustanovich et al., 2019) or through mitochondrial channels (Xian et al., 2022) are additional potential routes that may permit the release of cfDNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Kustanovich et al., 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:55:10.644504Z"
+    },
+    {
+      "id": "7037cfd6-2be7-47a1-8613-6ca2253ab5e7",
+      "content_id": "b65e8a24-e366-4ea7-9cac-b12db9c2c5bf",
+      "claim_id": "C4",
+      "claim": "Release through mitochondrial channels is a potential route for cfDNA release.",
+      "claim_type": "EXPLICIT",
+      "source": "Active release of nucleic acids encapsulated in extracellular vesicles (Kustanovich et al., 2019) or through mitochondrial channels (Xian et al., 2022) are additional potential routes that may permit the release of cfDNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Xian et al., 2022",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:55:10.644504Z"
+    },
+    {
+      "id": "d12eaf12-c790-4ade-95ed-2878a6ae6781",
+      "content_id": "b65e8a24-e366-4ea7-9cac-b12db9c2c5bf",
+      "claim_id": "C5",
+      "claim": "Several measures including concentration, fragment size, sequence, and epigenetic modifications can be used to characterize cfDNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Several measures, including concentration, fragment size, sequence, and epigenetic modifications such as differential methylation, histone modification, and nucleosome spacing, can be used to characterize cfDNA and imply information about the cells from which it originated (Zukowski et al., 2020; Lehmann-Werman et al., 2016; Moss et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Zukowski et al., 2020; Lehmann-Werman et al., 2016; Moss et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:55:10.644504Z"
+    },
+    {
+      "id": "31fb862d-a151-4849-bf9d-8b86c7591f93",
+      "content_id": "b65e8a24-e366-4ea7-9cac-b12db9c2c5bf",
+      "claim_id": "C6",
+      "claim": "cfDNA has diagnostic uses including noninvasive prenatal testing for chromosome abnormalities.",
+      "claim_type": "EXPLICIT",
+      "source": "Currently, cfDNA already has some diagnostic uses, including noninvasive prenatal testing for chromosome abnormalities (Willems et al., 2014), fetal gender determination (Jacobsen et al., 2018), and cfDNA-based tests for the detection of mutations and cancer screening (Cisneros-Villanueva et al., 2022; Bronkhorst et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Willems et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:55:10.644504Z"
+    },
+    {
+      "id": "0368a70e-6a41-4451-b0cb-638d946fc784",
+      "content_id": "b65e8a24-e366-4ea7-9cac-b12db9c2c5bf",
+      "claim_id": "C7",
+      "claim": "cfDNA has diagnostic uses including fetal gender determination.",
+      "claim_type": "EXPLICIT",
+      "source": "Currently, cfDNA already has some diagnostic uses, including noninvasive prenatal testing for chromosome abnormalities (Willems et al., 2014), fetal gender determination (Jacobsen et al., 2018), and cfDNA-based tests for the detection of mutations and cancer screening (Cisneros-Villanueva et al., 2022; Bronkhorst et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Jacobsen et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:55:10.644504Z"
+    },
+    {
+      "id": "fbcdb782-7750-4239-aa2e-4122a506d006",
+      "content_id": "b65e8a24-e366-4ea7-9cac-b12db9c2c5bf",
+      "claim_id": "C8",
+      "claim": "cfDNA-based tests are used for the detection of mutations and cancer screening.",
+      "claim_type": "EXPLICIT",
+      "source": "Currently, cfDNA already has some diagnostic uses, including noninvasive prenatal testing for chromosome abnormalities (Willems et al., 2014), fetal gender determination (Jacobsen et al., 2018), and cfDNA-based tests for the detection of mutations and cancer screening (Cisneros-Villanueva et al., 2022; Bronkhorst et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Cisneros-Villanueva et al., 2022; Bronkhorst et al., 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:55:10.644504Z"
+    },
+    {
+      "id": "fa20a790-8a71-403c-8725-d1b420623cb6",
+      "content_id": "b65e8a24-e366-4ea7-9cac-b12db9c2c5bf",
+      "claim_id": "C9",
+      "claim": "The clinical utility and accuracy of cfDNA tests in the prediction of cancer is uncertain in some cases.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the clinical utility and accuracy of these tests in the prediction of cancer is uncertain in some cases (Hackshaw et al., 2022), clinical trials are promising and some FDA-approved tests are already available (Cisneros-Villanueva et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Hackshaw et al., 2022",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:55:10.644504Z"
+    },
+    {
+      "id": "7898c768-9d15-4f66-9cbb-a6a0e144df32",
+      "content_id": "b65e8a24-e366-4ea7-9cac-b12db9c2c5bf",
+      "claim_id": "C10",
+      "claim": "Clinical trials for cfDNA-based cancer tests are promising and some FDA-approved tests are already available.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the clinical utility and accuracy of these tests in the prediction of cancer is uncertain in some cases (Hackshaw et al., 2022), clinical trials are promising and some FDA-approved tests are already available (Cisneros-Villanueva et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Cisneros-Villanueva et al., 2022",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:55:10.644504Z"
+    },
+    {
+      "id": "57fe486d-4526-4477-a426-d519aa841120",
+      "content_id": "b65e8a24-e366-4ea7-9cac-b12db9c2c5bf",
+      "claim_id": "C11",
+      "claim": "Human organoids have advantages as models of both development and disease, including similarity to human tissues, applications in precision medicine, and high-throughput capabilities.",
+      "claim_type": "EXPLICIT",
+      "source": "Human organoids have many advantages as models of both development and disease, including similarity to human tissues, applications in precision medicine, and high-throughput capabilities (Kim et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Kim et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:55:10.644504Z"
+    },
+    {
+      "id": "7984b2eb-cbc6-4732-a737-dc31c22a6184",
+      "content_id": "b65e8a24-e366-4ea7-9cac-b12db9c2c5bf",
+      "claim_id": "C12",
+      "claim": "Organoids are more complex than 2D cell cultures or spheroids.",
+      "claim_type": "EXPLICIT",
+      "source": "Organoids are more complex than 2D cell cultures or spheroids, yet permit a more isolated view of specific tissues as compared to in vivo settings or human blood samples, which contain cfDNA from numerous tissue sources (Moss et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by established scientific knowledge about organoid complexity",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:55:10.644504Z"
+    },
+    {
+      "id": "d0a21ed2-d6f4-4113-b19f-a1165980cef3",
+      "content_id": "b65e8a24-e366-4ea7-9cac-b12db9c2c5bf",
+      "claim_id": "C13",
+      "claim": "Human blood samples contain cfDNA from numerous tissue sources.",
+      "claim_type": "EXPLICIT",
+      "source": "Organoids are more complex than 2D cell cultures or spheroids, yet permit a more isolated view of specific tissues as compared to in vivo settings or human blood samples, which contain cfDNA from numerous tissue sources (Moss et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Moss et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:55:10.644504Z"
+    },
+    {
+      "id": "f5837569-d5fc-4283-8c65-05f6330c2ff6",
+      "content_id": "b65e8a24-e366-4ea7-9cac-b12db9c2c5bf",
+      "claim_id": "C14",
+      "claim": "cfDNA has been successfully isolated from pancreatic organoids.",
+      "claim_type": "EXPLICIT",
+      "source": "Although cfDNA has been successfully isolated from pancreatic organoids (Dantes et al., 2020), whether cfDNA can be recovered from additional organoid types is unclear.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Dantes et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:55:10.644504Z"
+    },
+    {
+      "id": "b545f4de-2d9e-4a91-be6a-4e8ee210da6d",
+      "content_id": "b65e8a24-e366-4ea7-9cac-b12db9c2c5bf",
+      "claim_id": "C15",
+      "claim": "H9 embryonic stem cells were seeded, coalesced into spheroids, and induced to differentiate towards cardiac lineage.",
+      "claim_type": "EXPLICIT",
+      "source": "H9 embryonic stem cells were seeded, coalesced into spheroids, and induced to differentiate towards cardiac lineage (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:55:10.644504Z"
+    },
+    {
+      "id": "a90c9df3-39c1-45b8-8d6e-a1a074f64614",
+      "content_id": "b65e8a24-e366-4ea7-9cac-b12db9c2c5bf",
+      "claim_id": "C16",
+      "claim": "The cardiac organoids began contracting rhythmically at approximately 20\u201330 beats per minute on day 6.",
+      "claim_type": "EXPLICIT",
+      "source": "The organoids began contracting rhythmically at approximately 20\u201330 beats per minute (bpm) on day 6 and maintained this beating throughout maturation (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:55:10.644504Z"
+    },
+    {
+      "id": "1b7265f7-5914-47f4-8ee8-5e5dde4c6bfe",
+      "content_id": "b65e8a24-e366-4ea7-9cac-b12db9c2c5bf",
+      "claim_id": "C17",
+      "claim": "The cardiac organoids maintained beating throughout maturation.",
+      "claim_type": "EXPLICIT",
+      "source": "The organoids began contracting rhythmically at approximately 20\u201330 beats per minute (bpm) on day 6 and maintained this beating throughout maturation (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:55:10.644504Z"
+    },
+    {
+      "id": "9eded44d-07f9-4590-b0f0-67b995e78b84",
+      "content_id": "b65e8a24-e366-4ea7-9cac-b12db9c2c5bf",
+      "claim_id": "C18",
+      "claim": "The cardiac organoids expressed increased levels of Troponin T at the transcript level during differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that the organoids expressed increased levels of several markers of cardiac differentiation at both the transcript (Troponin T, Nkx2.5) and protein (MEF2C, GATA-6, \u03b1-actinin, and Nkx2.5) levels, and decreased transcription of the pluripotency marker Oct 3/4 (Figure 1C\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:55:10.644504Z"
+    },
+    {
+      "id": "4834efed-0015-4561-b682-b12c5ce9af98",
+      "content_id": "b65e8a24-e366-4ea7-9cac-b12db9c2c5bf",
+      "claim_id": "C19",
+      "claim": "The cardiac organoids expressed increased levels of Nkx2.5 at the transcript level during differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that the organoids expressed increased levels of several markers of cardiac differentiation at both the transcript (Troponin T, Nkx2.5) and protein (MEF2C, GATA-6, \u03b1-actinin, and Nkx2.5) levels, and decreased transcription of the pluripotency marker Oct 3/4 (Figure 1C\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:55:10.644504Z"
+    },
+    {
+      "id": "3eb6f476-97fb-4c39-88eb-17f07ed85005",
+      "content_id": "b65e8a24-e366-4ea7-9cac-b12db9c2c5bf",
+      "claim_id": "C20",
+      "claim": "The cardiac organoids expressed increased levels of MEF2C at the protein level during differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that the organoids expressed increased levels of several markers of cardiac differentiation at both the transcript (Troponin T, Nkx2.5) and protein (MEF2C, GATA-6, \u03b1-actinin, and Nkx2.5) levels, and decreased transcription of the pluripotency marker Oct 3/4 (Figure 1C\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:55:10.644504Z"
+    },
+    {
+      "id": "b22121b2-8b43-43aa-9a72-d1c67b8d8bc9",
+      "content_id": "b65e8a24-e366-4ea7-9cac-b12db9c2c5bf",
+      "claim_id": "C21",
+      "claim": "The cardiac organoids expressed increased levels of GATA-6 at the protein level during differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that the organoids expressed increased levels of several markers of cardiac differentiation at both the transcript (Troponin T, Nkx2.5) and protein (MEF2C, GATA-6, \u03b1-actinin, and Nkx2.5) levels, and decreased transcription of the pluripotency marker Oct 3/4 (Figure 1C\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:55:10.644504Z"
+    },
+    {
+      "id": "70e9d87b-be15-4a66-8522-4f204e4c3751",
+      "content_id": "b65e8a24-e366-4ea7-9cac-b12db9c2c5bf",
+      "claim_id": "C22",
+      "claim": "The cardiac organoids expressed increased levels of \u03b1-actinin at the protein level during differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that the organoids expressed increased levels of several markers of cardiac differentiation at both the transcript (Troponin T, Nkx2.5) and protein (MEF2C, GATA-6, \u03b1-actinin, and Nkx2.5) levels, and decreased transcription of the pluripotency marker Oct 3/4 (Figure 1C\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:55:10.644504Z"
+    },
+    {
+      "id": "730f6eab-3858-48c4-b4b7-34917662c68f",
+      "content_id": "b65e8a24-e366-4ea7-9cac-b12db9c2c5bf",
+      "claim_id": "C23",
+      "claim": "The cardiac organoids expressed increased levels of Nkx2.5 at the protein level during differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that the organoids expressed increased levels of several markers of cardiac differentiation at both the transcript (Troponin T, Nkx2.5) and protein (MEF2C, GATA-6, \u03b1-actinin, and Nkx2.5) levels, and decreased transcription of the pluripotency marker Oct 3/4 (Figure 1C\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:55:10.644504Z"
+    },
+    {
+      "id": "3e680ff7-8dff-4ec4-b26c-798f108a595d",
+      "content_id": "b65e8a24-e366-4ea7-9cac-b12db9c2c5bf",
+      "claim_id": "C24",
+      "claim": "The cardiac organoids showed decreased transcription of the pluripotency marker Oct 3/4 during differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that the organoids expressed increased levels of several markers of cardiac differentiation at both the transcript (Troponin T, Nkx2.5) and protein (MEF2C, GATA-6, \u03b1-actinin, and Nkx2.5) levels, and decreased transcription of the pluripotency marker Oct 3/4 (Figure 1C\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:55:10.644504Z"
+    },
+    {
+      "id": "37836179-f0cc-4fd2-b751-ad8dc63abd23",
+      "content_id": "b65e8a24-e366-4ea7-9cac-b12db9c2c5bf",
+      "claim_id": "C25",
+      "claim": "cfDNA could be extracted consistently during development of cardiac organoid models.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that cfDNA could be extracted consistently during development of both organoid models, and total cfDNA concentration increased as the organoids matured (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 2B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:55:10.644504Z"
+    },
+    {
+      "id": "c975de4c-e782-4507-9b24-751b4bb595c8",
+      "content_id": "b65e8a24-e366-4ea7-9cac-b12db9c2c5bf",
+      "claim_id": "C26",
+      "claim": "Total cfDNA concentration increased as the cardiac organoids matured.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that cfDNA could be extracted consistently during development of both organoid models, and total cfDNA concentration increased as the organoids matured (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 2B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:55:10.644504Z"
+    },
+    {
+      "id": "36289aab-7ebd-4344-a613-7c49666371a0",
+      "content_id": "b65e8a24-e366-4ea7-9cac-b12db9c2c5bf",
+      "claim_id": "C27",
+      "claim": "Normalized cfDNA was the highest early in cardiac organoid development.",
+      "claim_type": "EXPLICIT",
+      "source": "Normalized cfDNA was the highest early in development (Figure 2C), indicating that cfDNA output may be higher in tissues on growth day 1, which are comprised of less differentiated cells.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 2C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:55:10.644504Z"
+    },
+    {
+      "id": "81bd49de-e5f6-4776-b477-ea24f24ebd0b",
+      "content_id": "b65e8a24-e366-4ea7-9cac-b12db9c2c5bf",
+      "claim_id": "C28",
+      "claim": "cfDNA output may be higher in tissues on growth day 1, which are comprised of less differentiated cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Normalized cfDNA was the highest early in development (Figure 2C), indicating that cfDNA output may be higher in tissues on growth day 1, which are comprised of less differentiated cells.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inferred from the experimental data showing higher normalized cfDNA early in development",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:55:10.644504Z"
+    },
+    {
+      "id": "43d67142-d512-49b4-8bda-01f7b04cd30a",
+      "content_id": "b65e8a24-e366-4ea7-9cac-b12db9c2c5bf",
+      "claim_id": "C29",
+      "claim": "The recovered cfDNA from mature cardiac organoids on day 9 consisted of a broad distribution of fragments ranging from approximately 200\u20136000 base pairs.",
+      "claim_type": "EXPLICIT",
+      "source": "The recovered cfDNA from mature cardiac organoids on day 9 consisted of a broad distribution of fragments ranging from approximately 200\u20136000 base pairs (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 2D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:55:10.644504Z"
+    },
+    {
+      "id": "71186937-7b6f-41d3-aa7e-835eabff5c3e",
+      "content_id": "b65e8a24-e366-4ea7-9cac-b12db9c2c5bf",
+      "claim_id": "C30",
+      "claim": "Fragment distributions of cfDNA were more difficult to resolve at timepoints prior to day 6, likely due to low DNA concentrations and sensitivity limitations.",
+      "claim_type": "EXPLICIT",
+      "source": "Fragment distributions were more difficult to resolve at timepoints prior to day 6, likely due to low DNA concentrations and sensitivity limitations (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 2\u2014figure supplement 1 and inference about technical limitations",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:55:10.644504Z"
+    },
+    {
+      "id": "46e4bc4b-3ea4-4873-8485-c768e91585a8",
+      "content_id": "b65e8a24-e366-4ea7-9cac-b12db9c2c5bf",
+      "claim_id": "C31",
+      "claim": "Cardiac cfDNA levels of the mitochondrial genes ND1, mtCOX2, ND6, and ND4 dropped substantially in a time-dependent manner as the organoids differentiated.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that cardiac cfDNA levels of the mitochondrial genes ND1, mtCOX2, ND6, and ND4 dropped substantially in a time-dependent manner as the organoids differentiated (Figure 3B), and the markers were approximately equally represented in the cfDNA at most time points (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 3B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:55:10.644504Z"
+    },
+    {
+      "id": "d8da3927-c4f3-4d20-9fdb-0f0518190eb3",
+      "content_id": "b65e8a24-e366-4ea7-9cac-b12db9c2c5bf",
+      "claim_id": "C32",
+      "claim": "The mitochondrial markers ND1, mtCOX2, ND6, and ND4 were approximately equally represented in the cfDNA at most time points.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that cardiac cfDNA levels of the mitochondrial genes ND1, mtCOX2, ND6, and ND4 dropped substantially in a time-dependent manner as the organoids differentiated (Figure 3B), and the markers were approximately equally represented in the cfDNA at most time points (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 3C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:55:10.644504Z"
+    },
+    {
+      "id": "5bbf3f34-f8fa-4ba1-b5f9-a24b247f3e47",
+      "content_id": "b65e8a24-e366-4ea7-9cac-b12db9c2c5bf",
+      "claim_id": "C33",
+      "claim": "The tissue-level expression of mitochondrial genes slightly decreased midway through cardiac organoid differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "The tissue-level expression of mitochondrial genes slightly decreased midway through differentiation (Figure 3D), but did not fully account for the time-dependent drop in cell-free mitochondrial DNA.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 3D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:55:10.644504Z"
+    },
+    {
+      "id": "1f3b793a-98b7-4537-9073-949fdb8b600d",
+      "content_id": "b65e8a24-e366-4ea7-9cac-b12db9c2c5bf",
+      "claim_id": "C34",
+      "claim": "The tissue-level expression of mitochondrial genes did not fully account for the time-dependent drop in cell-free mitochondrial DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "The tissue-level expression of mitochondrial genes slightly decreased midway through differentiation (Figure 3D), but did not fully account for the time-dependent drop in cell-free mitochondrial DNA.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inferred from comparison of tissue-level expression data (Figure 3D) and cfDNA data (Figure 3B)",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:55:10.644504Z"
+    },
+    {
+      "id": "102014c0-aec2-40f6-9b4f-ddd385e72f2b",
+      "content_id": "b65e8a24-e366-4ea7-9cac-b12db9c2c5bf",
+      "claim_id": "C35",
+      "claim": "An increase in the mitochondrial protein VDAC/Porin was observed in mature cardiac organoids.",
+      "claim_type": "EXPLICIT",
+      "source": "As anticipated, an increase in the mitochondrial protein VDAC/Porin was observed in mature cardiac organoids (Figure 3E and F), which is representative of increased mitochondrial size expected in cardiac tissues (Guo and Pu, 2020).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 3E and F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:55:10.644504Z"
+    },
+    {
+      "id": "4e92c207-9403-4f9a-95d2-b99a66749f87",
+      "content_id": "b65e8a24-e366-4ea7-9cac-b12db9c2c5bf",
+      "claim_id": "C36",
+      "claim": "Increased VDAC/Porin is representative of increased mitochondrial size expected in cardiac tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "As anticipated, an increase in the mitochondrial protein VDAC/Porin was observed in mature cardiac organoids (Figure 3E and F), which is representative of increased mitochondrial size expected in cardiac tissues (Guo and Pu, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Guo and Pu, 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:55:10.644504Z"
+    },
+    {
+      "id": "2f39510a-69f3-4965-b823-1a32f4c5b975",
+      "content_id": "b65e8a24-e366-4ea7-9cac-b12db9c2c5bf",
+      "claim_id": "C37",
+      "claim": "Similar cfDNA concentrations were observed in media conditioned by cardiac organoids that had been ultracentrifuged compared to samples that had not been ultracentrifuged.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed similar cfDNA concentrations and levels of cell-free mitochondrial DNA as in samples that had not been ultracentrifuged (Figure 3G\u2013I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 3G",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:55:10.644504Z"
+    },
+    {
+      "id": "01cee1b2-6459-4085-bf31-035ce9371874",
+      "content_id": "b65e8a24-e366-4ea7-9cac-b12db9c2c5bf",
+      "claim_id": "C38",
+      "claim": "Similar levels of cell-free mitochondrial DNA were observed in media conditioned by cardiac organoids that had been ultracentrifuged compared to samples that had not been ultracentrifuged.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed similar cfDNA concentrations and levels of cell-free mitochondrial DNA as in samples that had not been ultracentrifuged (Figure 3G\u2013I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 3H-I",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:55:10.644504Z"
+    },
+    {
+      "id": "344210c5-0b3b-4904-b53d-f15585b46c25",
+      "content_id": "b65e8a24-e366-4ea7-9cac-b12db9c2c5bf",
+      "claim_id": "C39",
+      "claim": "The cell-free mitochondrial DNA recovered from cardiac organoids is not due to cell debris or mitochondrial fragments in the media.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicates that the cell-free mitochondrial DNA recovered from cardiac organoids is not due to cell debris or mitochondrial fragments in the media.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the ultracentrifugation experiment results showing similar cfDNA levels with and without ultracentrifugation",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:55:10.644504Z"
+    },
+    {
+      "id": "316f661a-971a-4a45-88d8-863b5edbcf04",
+      "content_id": "b65e8a24-e366-4ea7-9cac-b12db9c2c5bf",
+      "claim_id": "C40",
+      "claim": "Differentiating cardiac organoids show a switch-like increase in protein expression of the transcription factor Nkx2.5 between growth days 2 and 4.",
+      "claim_type": "EXPLICIT",
+      "source": "Differentiating cardiac organoids show a switch-like increase in protein expression of the transcription factor Nkx2.5 between growth days 2 and 4 (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 4A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:55:10.644504Z"
+    },
+    {
+      "id": "a2bf6684-a30a-4cf7-aea7-ac0c3376fa86",
+      "content_id": "b65e8a24-e366-4ea7-9cac-b12db9c2c5bf",
+      "claim_id": "C41",
+      "claim": "An increase in cfDNA levels of Nkx2.5 was observed during the same time frame (days 2-4) as the protein expression increase.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, we also observed an increase in cfDNA levels of Nkx2.5 during the same time frame using ddPCR (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 4B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:55:10.644504Z"
+    },
+    {
+      "id": "59d77b1c-f899-4f5e-bdb0-6193ea695c6c",
+      "content_id": "b65e8a24-e366-4ea7-9cac-b12db9c2c5bf",
+      "claim_id": "C42",
+      "claim": "cfDNA levels of genomic p53 regions were increased later in cardiac differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that cfDNA levels of genomic p53 regions were increased later in cardiac differentiation (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 4C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:55:10.644504Z"
+    },
+    {
+      "id": "7ce846e6-4010-457b-acf8-11ac0d46488a",
+      "content_id": "b65e8a24-e366-4ea7-9cac-b12db9c2c5bf",
+      "claim_id": "C43",
+      "claim": "Tissue-level expression of p53 decreased as cardiac organoids differentiated.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in contrast to Nkx2.5, tissue-level expression of p53 decreased as cardiac organoids differentiated (Figure 4D and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 4D and E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:55:10.644504Z"
+    },
+    {
+      "id": "8bbb707d-6ea3-47d5-85cd-407fd2e8bfc5",
+      "content_id": "b65e8a24-e366-4ea7-9cac-b12db9c2c5bf",
+      "claim_id": "C44",
+      "claim": "The transcription factor p53 has been observed to regulate many components of cardiac transcription including Nkx2.5.",
+      "claim_type": "EXPLICIT",
+      "source": "The transcription factor p53, which is widely recognized for its role in cancer progression, has also been observed to regulate many components of cardiac transcription including Nkx2.5 (Mak et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Mak et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:55:10.644504Z"
+    },
+    {
+      "id": "01a0384a-afd8-4d24-a147-f702b7112950",
+      "content_id": "b65e8a24-e366-4ea7-9cac-b12db9c2c5bf",
+      "claim_id": "C45",
+      "claim": "Sox17 was detectable by ddPCR in cardiac organoid-derived cfDNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the endodermal marker Sox17 and stem cell marker Oct3/4 were both detectable by ddPCR in cardiac organoid-derived cfDNA, no significant changes with respect to cardiac differentiation were observed (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 4\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:55:10.644504Z"
+    },
+    {
+      "id": "c45145f9-44f8-48fc-974d-2efc15b45d51",
+      "content_id": "b65e8a24-e366-4ea7-9cac-b12db9c2c5bf",
+      "claim_id": "C46",
+      "claim": "Oct3/4 was detectable by ddPCR in cardiac organoid-derived cfDNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the endodermal marker Sox17 and stem cell marker Oct3/4 were both detectable by ddPCR in cardiac organoid-derived cfDNA, no significant changes with respect to cardiac differentiation were observed (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 4\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:55:10.644504Z"
+    },
+    {
+      "id": "8d916547-42de-4c61-aa5f-30763ddc0027",
+      "content_id": "b65e8a24-e366-4ea7-9cac-b12db9c2c5bf",
+      "claim_id": "C47",
+      "claim": "No significant changes in Sox17 or Oct3/4 cfDNA levels were observed with respect to cardiac differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the endodermal marker Sox17 and stem cell marker Oct3/4 were both detectable by ddPCR in cardiac organoid-derived cfDNA, no significant changes with respect to cardiac differentiation were observed (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 4\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:55:10.644504Z"
+    },
+    {
+      "id": "449c7009-5056-4707-b15c-3ecfb0ab27ec",
+      "content_id": "b65e8a24-e366-4ea7-9cac-b12db9c2c5bf",
+      "claim_id": "C48",
+      "claim": "Troponin T was not detectable in cardiac organoid-derived cfDNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Troponin T was not detectable in cardiac organoid-derived cfDNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as an experimental observation",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:55:10.644504Z"
+    },
+    {
+      "id": "382241b2-0b5c-4c1a-b9c7-c71f5ab7b0df",
+      "content_id": "b65e8a24-e366-4ea7-9cac-b12db9c2c5bf",
+      "claim_id": "C49",
+      "claim": "Specific regions of genomic DNA may be reflective of cardiac differentiation status.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these results suggest that specific regions of genomic DNA may be reflective of cardiac differentiation status.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the experimental observations of Nkx2.5 and p53 cfDNA levels during differentiation",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:55:10.644504Z"
+    },
+    {
+      "id": "4b41606e-6344-440c-8f87-b0030c17f1a8",
+      "content_id": "b65e8a24-e366-4ea7-9cac-b12db9c2c5bf",
+      "claim_id": "C50",
+      "claim": "By day 6, organoids treated with either DOX or CPI exhibited decreased organoid size and an increased ring of diffuse cells and debris compared to control tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "By day 6, organoids treated with either of these drugs exhibited decreased organoid size and an increased ring of diffuse cells and debris compared to control tissues (Figure 5B\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 5B-D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:55:10.644504Z"
+    },
+    {
+      "id": "ac8e5291-2add-4375-be62-097736223ca7",
+      "content_id": "b65e8a24-e366-4ea7-9cac-b12db9c2c5bf",
+      "claim_id": "C51",
+      "claim": "By day 9, the tissues treated with DOX exhibited severe toxicity and had nearly dissociated.",
+      "claim_type": "EXPLICIT",
+      "source": "By day 9, the tissues treated with DOX exhibited severe toxicity and had nearly dissociated; whereas, CPI-treated tissues demonstrated tissue recovery with a nominal size decrease compared to controls (Figure 5E\u2013G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 5E-G",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:55:10.644504Z"
+    },
+    {
+      "id": "cba2f6a0-66f3-45b0-afc2-375db3b5a8be",
+      "content_id": "b65e8a24-e366-4ea7-9cac-b12db9c2c5bf",
+      "claim_id": "C52",
+      "claim": "By day 9, CPI-treated tissues demonstrated tissue recovery with a nominal size decrease compared to controls.",
+      "claim_type": "EXPLICIT",
+      "source": "By day 9, the tissues treated with DOX exhibited severe toxicity and had nearly dissociated; whereas, CPI-treated tissues demonstrated tissue recovery with a nominal size decrease compared to controls (Figure 5E\u2013G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 5E-G",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:55:10.644504Z"
+    },
+    {
+      "id": "199d8397-3454-4485-abd2-e13c2e09e400",
+      "content_id": "b65e8a24-e366-4ea7-9cac-b12db9c2c5bf",
+      "claim_id": "C53",
+      "claim": "By day 9, detectable bpm were significantly reduced in DOX-treated organoids.",
+      "claim_type": "EXPLICIT",
+      "source": "By day 9, detectable bpm were significantly reduced in DOX-treated organoids in contrast to CPI-treated tissues where bpm were comparable to untreated tissues (Figure 5H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 5H",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:55:10.644504Z"
+    },
+    {
+      "id": "d90c8437-febf-4420-89e4-9dc79ee0b6f0",
+      "content_id": "b65e8a24-e366-4ea7-9cac-b12db9c2c5bf",
+      "claim_id": "C54",
+      "claim": "By day 9, bpm in CPI-treated tissues were comparable to untreated tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "By day 9, detectable bpm were significantly reduced in DOX-treated organoids in contrast to CPI-treated tissues where bpm were comparable to untreated tissues (Figure 5H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 5H",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:55:10.644504Z"
+    },
+    {
+      "id": "ef6a3795-a092-433f-a035-f553d5b28797",
+      "content_id": "b65e8a24-e366-4ea7-9cac-b12db9c2c5bf",
+      "claim_id": "C55",
+      "claim": "Both DOX and CPI resulted in decreased size of mature organoids, with DOX having a more severe effect than CPI.",
+      "claim_type": "EXPLICIT",
+      "source": "Both drugs resulted in decreased size of mature organoids, with DOX having a more severe effect than CPI (Figure 5I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 5I",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:55:10.644504Z"
+    },
+    {
+      "id": "afd808f2-e0f0-4a1a-8f03-96876a1fe281",
+      "content_id": "b65e8a24-e366-4ea7-9cac-b12db9c2c5bf",
+      "claim_id": "C56",
+      "claim": "On day 6, levels of the cardiac transcription factor Nkx2.5 were substantially increased in samples treated with DOX.",
+      "claim_type": "EXPLICIT",
+      "source": "On day 6, levels of the cardiac transcription factor Nkx2.5 were substantially increased in samples treated with DOX (Figure 5J), while CPI-treated organoids did not significantly differ in expression compared to control.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 5J",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:55:10.644504Z"
+    },
+    {
+      "id": "b825a0d8-f111-4aa3-b5b1-8b1414bcf5e4",
+      "content_id": "b65e8a24-e366-4ea7-9cac-b12db9c2c5bf",
+      "claim_id": "C57",
+      "claim": "CPI-treated organoids did not significantly differ in Nkx2.5 expression compared to control on day 6.",
+      "claim_type": "EXPLICIT",
+      "source": "On day 6, levels of the cardiac transcription factor Nkx2.5 were substantially increased in samples treated with DOX (Figure 5J), while CPI-treated organoids did not significantly differ in expression compared to control.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 5J",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:55:10.644504Z"
+    },
+    {
+      "id": "51c656ca-091d-4664-b18e-d3cb33bd314b",
+      "content_id": "b65e8a24-e366-4ea7-9cac-b12db9c2c5bf",
+      "claim_id": "C58",
+      "claim": "Treatment with DOX dysregulates cardiac gene expression and causes more severe toxicity in cardiac organoids than CPI at the concentrations used.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these results indicate that treatment with DOX dysregulates cardiac gene expression and causes more severe toxicity in cardiac organoids than CPI in this model, at the concentrations used.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the experimental observations of Nkx2.5 expression, tissue morphology, and beating rate",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:55:10.644504Z"
+    },
+    {
+      "id": "fd585cb4-a89a-48a5-bd7d-1e4aff96d383",
+      "content_id": "b65e8a24-e366-4ea7-9cac-b12db9c2c5bf",
+      "claim_id": "C59",
+      "claim": "The timing of drug addition greatly impacted the degree of toxicity observed.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the timing of drug addition greatly impacted the degree of toxicity observed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from comparison of early and late treatment effects shown in Figure 5\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:55:10.644504Z"
+    },
+    {
+      "id": "3f24eb9a-a2c8-4026-b966-dafe11b70f67",
+      "content_id": "b65e8a24-e366-4ea7-9cac-b12db9c2c5bf",
+      "claim_id": "C60",
+      "claim": "Treating tissues with DOX later in development on day 7 resulted in less dramatic toxicity and no substantial changes in beating rate or tissue size compared to control.",
+      "claim_type": "EXPLICIT",
+      "source": "Treating tissues with DOX later in development on day 7 resulted in less dramatic toxicity and no substantial changes in beating rate or tissue size compared to control.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data shown in Figure 5\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:55:10.644504Z"
+    },
+    {
+      "id": "ab7f8434-1dfe-480d-be37-cec01cbdead6",
+      "content_id": "b65e8a24-e366-4ea7-9cac-b12db9c2c5bf",
+      "claim_id": "C61",
+      "claim": "DOX increased Nkx2.5 expression regardless of treatment time.",
+      "claim_type": "EXPLICIT",
+      "source": "DOX still increased Nkx2.5 expression regardless of treatment time, while the impact of CPI on Nkx2.5 expression was less pronounced (Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 5\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:55:10.644504Z"
+    },
+    {
+      "id": "6f20332d-e21e-4607-b6a8-9812f4527884",
+      "content_id": "b65e8a24-e366-4ea7-9cac-b12db9c2c5bf",
+      "claim_id": "C62",
+      "claim": "The impact of CPI on Nkx2.5 expression was less pronounced than DOX.",
+      "claim_type": "EXPLICIT",
+      "source": "DOX still increased Nkx2.5 expression regardless of treatment time, while the impact of CPI on Nkx2.5 expression was less pronounced (Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 5\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:55:10.644504Z"
+    },
+    {
+      "id": "6b031306-7291-4019-93a5-0e15ee6e45ce",
+      "content_id": "b65e8a24-e366-4ea7-9cac-b12db9c2c5bf",
+      "claim_id": "C63",
+      "claim": "Tissues that had been treated with DOX showed significantly increased levels of the mitochondrial marker ND1 on day 6 after 48 hr of drug exposure.",
+      "claim_type": "EXPLICIT",
+      "source": "Tissues that had been treated with DOX showed significantly increased levels of the mitochondrial markers ND1 and mtCOX2 on day 6 after 48 hr of drug exposure (Figure 6A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 6A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:55:10.644504Z"
+    },
+    {
+      "id": "130b09ac-bf9d-4b9a-8fcb-838216ba0ba9",
+      "content_id": "b65e8a24-e366-4ea7-9cac-b12db9c2c5bf",
+      "claim_id": "C64",
+      "claim": "Tissues that had been treated with DOX showed significantly increased levels of the mitochondrial marker mtCOX2 on day 6 after 48 hr of drug exposure.",
+      "claim_type": "EXPLICIT",
+      "source": "Tissues that had been treated with DOX showed significantly increased levels of the mitochondrial markers ND1 and mtCOX2 on day 6 after 48 hr of drug exposure (Figure 6A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 6B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:55:10.644504Z"
+    },
+    {
+      "id": "fbbb5ffb-7647-4ac7-ba20-be7bd044a8cb",
+      "content_id": "b65e8a24-e366-4ea7-9cac-b12db9c2c5bf",
+      "claim_id": "C65",
+      "claim": "Nkx2.5 was increased at the cfDNA level in DOX-treated samples on day 6.",
+      "claim_type": "EXPLICIT",
+      "source": "Nkx2.5 was also increased at the cfDNA level in DOX-treated samples (Figure 6C), while cfDNA levels of p53 were unchanged by toxicant addition (Figure 6D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 6C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:55:10.644504Z"
+    },
+    {
+      "id": "d201341e-4a4e-4410-a97a-93d33e8e9403",
+      "content_id": "b65e8a24-e366-4ea7-9cac-b12db9c2c5bf",
+      "claim_id": "C66",
+      "claim": "cfDNA levels of p53 were unchanged by toxicant addition on day 6.",
+      "claim_type": "EXPLICIT",
+      "source": "Nkx2.5 was also increased at the cfDNA level in DOX-treated samples (Figure 6C), while cfDNA levels of p53 were unchanged by toxicant addition (Figure 6D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 6D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:55:10.644504Z"
+    },
+    {
+      "id": "77178e60-a4cd-4eac-9818-5a85d8a0c116",
+      "content_id": "b65e8a24-e366-4ea7-9cac-b12db9c2c5bf",
+      "claim_id": "C67",
+      "claim": "The impact of DOX or CPI treatment on the abundance of cfDNA markers later in development was more subtle.",
+      "claim_type": "EXPLICIT",
+      "source": "The impact of DOX or CPI treatment on the abundance of these markers in cfDNA later in development was more subtle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from comparison of early and late treatment effects shown in Figure 6\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:55:10.644504Z"
+    },
+    {
+      "id": "a1ae3bd4-4320-447f-bc6f-c42e6cf17dd5",
+      "content_id": "b65e8a24-e366-4ea7-9cac-b12db9c2c5bf",
+      "claim_id": "C68",
+      "claim": "The overall concentration of cfDNA was not significantly impacted by DOX or CPI drug treatments either early or late in development.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the overall concentration of cfDNA was not significantly impacted by these drug treatments either early or late in development (Figure 6\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 6\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:55:10.644504Z"
+    },
+    {
+      "id": "81d2b979-3322-425a-9eb5-17a7818ebb2b",
+      "content_id": "b65e8a24-e366-4ea7-9cac-b12db9c2c5bf",
+      "claim_id": "C69",
+      "claim": "The increases in ND1, mtCOX2, and Nkx2.5 in cfDNA collected from DOX-treated samples on day 6 preceded the detriment of the organoids observed on day 9.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the increases in ND1, mtCOX2, and Nkx2.5 in cfDNA collected from DOX-treated samples on day 6 preceded the detriment of the organoids we observed on day 9.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from temporal comparison of cfDNA marker changes (day 6) and tissue detriment (day 9)",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:55:10.644504Z"
+    },
+    {
+      "id": "74b32d72-7ca4-47a5-b4e1-380fdd6bb1e7",
+      "content_id": "b65e8a24-e366-4ea7-9cac-b12db9c2c5bf",
+      "claim_id": "C70",
+      "claim": "The increase in ND1, mtCOX2, and Nkx2.5 was not observed in CPI-treated samples, which had largely recovered tissue morphology and beating function by day 9.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, this increase was not observed in CPI-treated samples, which had largely recovered tissue morphology and beating function by day 9.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from comparison of DOX and CPI treatment effects on cfDNA markers and tissue outcomes",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:55:10.644504Z"
+    },
+    {
+      "id": "3e627c42-c202-4428-8045-18f5cf39b12d",
+      "content_id": "b65e8a24-e366-4ea7-9cac-b12db9c2c5bf",
+      "claim_id": "C71",
+      "claim": "The abundance of specific markers (ND1, mtCOX2, and Nkx2.5) in cfDNA may be predictive of the severity of exposure outcomes in cardiac development.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these results suggest that the abundance of specific markers (ND1, mtCOX2, and Nkx2.5) in cfDNA may be predictive of the severity of exposure outcomes in cardiac development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the experimental observations showing correlation between cfDNA marker increases and subsequent tissue toxicity",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:55:10.644504Z"
+    },
+    {
+      "id": "3a6b1dc8-112d-4c19-b545-78d9231df36f",
+      "content_id": "b65e8a24-e366-4ea7-9cac-b12db9c2c5bf",
+      "claim_id": "C72",
+      "claim": "Decreases in cell-free mitochondrial DNA levels occur in response to cardiac differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified that decreases in cell-free mitochondrial DNA levels occur in response to cardiac differentiation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data shown in Figure 3B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:55:10.644504Z"
+    },
+    {
+      "id": "ddbbd969-5f10-4b9c-ae4a-3de7d7f76c52",
+      "content_id": "b65e8a24-e366-4ea7-9cac-b12db9c2c5bf",
+      "claim_id": "C73",
+      "claim": "Increases in specific cfDNA sequences corresponding to the genes Nkx2.5 and p53 occur upon cardiac organoid maturation.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, we observed increases in specific cfDNA sequences corresponding to the genes Nkx2.5 and p53 upon cardiac organoid maturation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data shown in Figures 4B and 4C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:55:10.644504Z"
+    },
+    {
+      "id": "1c2fb20d-2f7c-4d60-99e3-d7d0f071ed12",
+      "content_id": "b65e8a24-e366-4ea7-9cac-b12db9c2c5bf",
+      "claim_id": "C74",
+      "claim": "cfDNA concentration alone is not a reliable marker of toxicity.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings indicate that cfDNA concentration alone is not a reliable marker of toxicity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from experimental observations showing no significant changes in cfDNA concentration with toxicant treatment",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:55:10.644504Z"
+    },
+    {
+      "id": "a2ec5c03-fbd4-4587-84f2-f2bc1b41bfa4",
+      "content_id": "b65e8a24-e366-4ea7-9cac-b12db9c2c5bf",
+      "claim_id": "C75",
+      "claim": "The prevalence of cell-free mitochondrial DNA and specific genomic regions may be more predictive of deleterious events than cfDNA concentration.",
+      "claim_type": "EXPLICIT",
+      "source": "Rather, the prevalence of cell-free mitochondrial DNA and specific genomic regions may be more predictive of deleterious events.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from experimental observations showing changes in specific cfDNA markers but not total concentration",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:55:10.644504Z"
+    },
+    {
+      "id": "22c5e392-da49-4eec-863a-0e938c0f75be",
+      "content_id": "b65e8a24-e366-4ea7-9cac-b12db9c2c5bf",
+      "claim_id": "C76",
+      "claim": "cfDNA levels of ND1, mtCOX2, and Nkx2.5 in mature cardiac organoids may be potential predictive biomarkers of DOX-induced cardiotoxicity.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, cfDNA levels of ND1, mtCOX2, and Nkx2.5 in mature cardiac organoids may be potential predictive biomarkers of DOX-induced cardiotoxicity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from experimental observations showing increases in these markers preceding tissue toxicity",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:55:10.644504Z"
+    },
+    {
+      "id": "31842a19-cf44-49ec-ab2d-801b2f5ad4ef",
+      "content_id": "b65e8a24-e366-4ea7-9cac-b12db9c2c5bf",
+      "claim_id": "C77",
+      "claim": "The increase in cardiac organoid-derived cell-free mitochondrial DNA observed after treatment with DOX might reflect aberrant cardiomyocyte death.",
+      "claim_type": "EXPLICIT",
+      "source": "The increase in cardiac organoid-derived cell-free mitochondrial DNA observed after treatment with DOX might reflect aberrant cardiomyocyte death.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative interpretation of the experimental observation of increased cell-free mitochondrial DNA with DOX treatment",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:55:10.644504Z"
+    },
+    {
+      "id": "f2ae7ab9-20f2-48a4-a01e-d3f1e499e9cb",
+      "content_id": "b65e8a24-e366-4ea7-9cac-b12db9c2c5bf",
+      "claim_id": "C78",
+      "claim": "The decrease in cell-free mitochondrial DNA during cardiac organoid differentiation may represent preferential retention of cells with more mature mitochondria.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, the decrease in cell-free mitochondrial DNA during cardiac organoid differentiation may represent preferential retention of cells with more mature mitochondria.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative interpretation of the experimental observation of decreased cell-free mitochondrial DNA during differentiation",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:55:10.644504Z"
+    },
+    {
+      "id": "f073b625-fd24-4b39-9a3f-4aac084815ba",
+      "content_id": "b65e8a24-e366-4ea7-9cac-b12db9c2c5bf",
+      "claim_id": "C79",
+      "claim": "The channels mPTP and VDAC may play a role in increased cfDNA release from stressed mitochondria.",
+      "claim_type": "EXPLICIT",
+      "source": "Alternatively, the channels mPTP and VDAC may play a role in increased cfDNA release from stressed mitochondria (Xian et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Xian et al., 2022",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:55:10.644504Z"
+    },
+    {
+      "id": "f1cf5034-3852-4504-82be-d68c4f9aa10b",
+      "content_id": "b65e8a24-e366-4ea7-9cac-b12db9c2c5bf",
+      "claim_id": "C80",
+      "claim": "Differential abundance of cell-free genomic DNA may reflect regions of DNA protected from DNases by transcription factor binding or epigenetic modifications.",
+      "claim_type": "EXPLICIT",
+      "source": "Differential abundance of cell-free genomic DNA may reflect regions of DNA protected from DNases by transcription factor binding or epigenetic modifications (Ulz et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Ulz et al., 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:55:10.644504Z"
+    },
+    {
+      "id": "54851917-067f-422e-b87c-1545c752caa4",
+      "content_id": "b65e8a24-e366-4ea7-9cac-b12db9c2c5bf",
+      "claim_id": "C81",
+      "claim": "p53 has demonstrated involvement in cardiac tissues and interacts with Nkx2.5.",
+      "claim_type": "EXPLICIT",
+      "source": "The transcription factor p53, which is widely recognized for its role in cancer progression, also has demonstrated involvement in cardiac tissues and interacts with Nkx2.5 (Kojic et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Kojic et al., 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:55:10.644504Z"
+    },
+    {
+      "id": "903ca167-9e67-4680-8c5e-6dca7dfff100",
+      "content_id": "b65e8a24-e366-4ea7-9cac-b12db9c2c5bf",
+      "claim_id": "C82",
+      "claim": "The shorter cfDNA fragments (approximately 200 bp) are potentially indicative of DNA that has been cleaved during apoptosis.",
+      "claim_type": "EXPLICIT",
+      "source": "The shorter fragments are potentially indicative of DNA that has been cleaved during apoptosis, while the longer lengths could result from necrotic processes (Aucamp et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Aucamp et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:55:10.644504Z"
+    },
+    {
+      "id": "77fe8438-f822-4b23-acb8-f7874be704be",
+      "content_id": "b65e8a24-e366-4ea7-9cac-b12db9c2c5bf",
+      "claim_id": "C83",
+      "claim": "The longer cfDNA fragments (up to 6000 bp) could result from necrotic processes.",
+      "claim_type": "EXPLICIT",
+      "source": "The shorter fragments are potentially indicative of DNA that has been cleaved during apoptosis, while the longer lengths could result from necrotic processes (Aucamp et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Aucamp et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:55:10.644504Z"
+    },
+    {
+      "id": "ae73190b-b474-41f1-9b21-d692cc35edff",
+      "content_id": "b65e8a24-e366-4ea7-9cac-b12db9c2c5bf",
+      "claim_id": "C84",
+      "claim": "cfDNA can be expelled actively from healthy cells in the form of extracellular vesicles or nucleoprotein complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "However, cfDNA can also be expelled actively from healthy cells in the form of extracellular vesicles or nucleoprotein complexes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established scientific knowledge about cfDNA release mechanisms",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:55:10.644504Z"
+    },
+    {
+      "id": "8cddaa72-65d0-4048-b407-adc0feffe72e",
+      "content_id": "b65e8a24-e366-4ea7-9cac-b12db9c2c5bf",
+      "claim_id": "C85",
+      "claim": "Different DNases may contribute uniquely to patterns of cfDNA fragmentation.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, different DNases may contribute uniquely to patterns of fragmentation (Han et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Han et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:55:10.644504Z"
+    },
+    {
+      "id": "5ade04dc-f93d-45cc-acee-1db603c15e97",
+      "content_id": "b65e8a24-e366-4ea7-9cac-b12db9c2c5bf",
+      "claim_id": "C86",
+      "claim": "In the bloodstream, multiple cell types contribute to the cfDNA population, with a large fraction released by white blood cells and erythrocyte progenitor cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In the bloodstream, multiple cell types contribute to the cfDNA population, with a large fraction released by white blood cells and erythrocyte progenitor cells (Moss et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Moss et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:55:10.644504Z"
+    },
+    {
+      "id": "5a270b19-193e-485b-a8ad-54bddaa02d15",
+      "content_id": "b65e8a24-e366-4ea7-9cac-b12db9c2c5bf",
+      "claim_id": "C87",
+      "claim": "cfDNA concentration is known to be elevated in cardiac disease patients.",
+      "claim_type": "EXPLICIT",
+      "source": "Although cfDNA concentration is known to be elevated in cardiac disease patients (Polina et al., 2020), we did not observe a significant increase in overall cfDNA concentration in response to phenotypic changes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Polina et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:55:10.644504Z"
+    },
+    {
+      "id": "5ea3dab1-8490-4572-b7b5-b63a59477b58",
+      "content_id": "b65e8a24-e366-4ea7-9cac-b12db9c2c5bf",
+      "claim_id": "C88",
+      "claim": "cfDNA concentration can fluctuate substantially between individuals and increase in response to cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "In clinical samples, cfDNA concentration can fluctuate substantially between individuals and increase in response to a number of conditions including cancer (Salvi et al., 2016), exercise (Breitbach et al., 2012), aging, and recent surgery (Aucamp et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Salvi et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:55:10.644504Z"
+    },
+    {
+      "id": "a5bf4310-fd39-42d9-a615-5b5ab178443a",
+      "content_id": "b65e8a24-e366-4ea7-9cac-b12db9c2c5bf",
+      "claim_id": "C89",
+      "claim": "cfDNA concentration can increase in response to exercise.",
+      "claim_type": "EXPLICIT",
+      "source": "In clinical samples, cfDNA concentration can fluctuate substantially between individuals and increase in response to a number of conditions including cancer (Salvi et al., 2016), exercise (Breitbach et al., 2012), aging, and recent surgery (Aucamp et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Breitbach et al., 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:55:10.644504Z"
+    },
+    {
+      "id": "69af79ad-82a6-4777-8ea9-0022907a0003",
+      "content_id": "b65e8a24-e366-4ea7-9cac-b12db9c2c5bf",
+      "claim_id": "C90",
+      "claim": "cfDNA concentration can increase in response to aging and recent surgery.",
+      "claim_type": "EXPLICIT",
+      "source": "In clinical samples, cfDNA concentration can fluctuate substantially between individuals and increase in response to a number of conditions including cancer (Salvi et al., 2016), exercise (Breitbach et al., 2012), aging, and recent surgery (Aucamp et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Aucamp et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:55:10.644504Z"
+    },
+    {
+      "id": "26a86935-d5b3-4475-be2a-1312e58b6656",
+      "content_id": "b65e8a24-e366-4ea7-9cac-b12db9c2c5bf",
+      "claim_id": "C91",
+      "claim": "cfDNA concentration alone may not be an optimal parameter for targeted disease diagnosis.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations combined with our results indicate that cfDNA concentration alone may not be an optimal parameter for targeted disease diagnosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from experimental observations and cited literature about cfDNA concentration variability",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:55:10.644504Z"
+    },
+    {
+      "id": "40b449a7-645c-48bb-b7b1-832966b0c20e",
+      "content_id": "b65e8a24-e366-4ea7-9cac-b12db9c2c5bf",
+      "claim_id": "C92",
+      "claim": "Screening for specific cfDNA sequences may be more indicative of certain conditions than cfDNA concentration.",
+      "claim_type": "EXPLICIT",
+      "source": "Rather, screening for specific cfDNA sequences may be more indicative of certain conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from experimental observations showing specific marker changes without concentration changes",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:55:10.644504Z"
+    },
+    {
+      "id": "01545299-03c4-4278-9639-bc769104b6d4",
+      "content_id": "b65e8a24-e366-4ea7-9cac-b12db9c2c5bf",
+      "claim_id": "C93",
+      "claim": "cfDNA can be reliably extracted from cardiac organoid models.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, we have demonstrated that cfDNA can be reliably extracted from cardiac organoid models.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data throughout the manuscript",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:55:10.644504Z"
+    },
+    {
+      "id": "2747cc36-6d6b-4478-a61e-59e440517d25",
+      "content_id": "b65e8a24-e366-4ea7-9cac-b12db9c2c5bf",
+      "claim_id": "C94",
+      "claim": "Organoid systems are tractable for screening cfDNA markers in response to tissue-level events, including differentiation and malformation.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, we present the tractability of organoid systems for screening cfDNA markers in response to tissue-level events, including differentiation and malformation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data showing cfDNA changes during differentiation and toxicant treatment",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:55:10.644504Z"
+    },
+    {
+      "id": "133a0898-7b23-42c8-9b0e-e4d0ad1aa705",
+      "content_id": "b65e8a24-e366-4ea7-9cac-b12db9c2c5bf",
+      "claim_id": "C95",
+      "claim": "This workflow has the potential for rapid screening of cfDNA from toxicity and disease models and could likely be extended to additional organoid systems.",
+      "claim_type": "EXPLICIT",
+      "source": "This workflow has the potential for rapid screening of cfDNA from toxicity and disease models and could likely be extended to additional organoid systems.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative statement about future applications based on current results",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:55:10.644504Z"
+    },
+    {
+      "id": "59e55ada-7709-4fa5-88b8-593206669222",
+      "content_id": "b65e8a24-e366-4ea7-9cac-b12db9c2c5bf",
+      "claim_id": "C96",
+      "claim": "The approach could contribute to establishing a database of cfDNA markers that map to specific disease processes or toxicants.",
+      "claim_type": "EXPLICIT",
+      "source": "Ultimately, our approach could contribute to establishing a database of cfDNA markers that map to specific disease processes or toxicants, which would hold promise for early, non-invasive detection of disease.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative statement about future applications",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:55:10.644504Z"
+    },
+    {
+      "id": "a2a9a29c-2886-48bf-a658-0d3e46dfed0e",
+      "content_id": "b65e8a24-e366-4ea7-9cac-b12db9c2c5bf",
+      "claim_id": "C97",
+      "claim": "The Maxwell ccfDNA automated extraction kit is one of the better tools currently available for cfDNA extraction.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, although the Maxwell ccfDNA automated extraction kit is one of the better tools currently available for cfDNA extraction (Sorber et al., 2017), we cannot rule out potential bias towards short fragments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Sorber et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:55:10.644504Z"
+    },
+    {
+      "id": "1cf836c9-1c0d-4c53-8c74-acf3cf2bdde2",
+      "content_id": "b65e8a24-e366-4ea7-9cac-b12db9c2c5bf",
+      "claim_id": "C98",
+      "claim": "Cardiac organoids were generated using a previously established protocol.",
+      "claim_type": "EXPLICIT",
+      "source": "Cardiac organoids were generated using a previously established protocol (Israeli et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Israeli et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:55:10.644504Z"
+    },
+    {
+      "id": "49dcedf4-573c-4b12-bf17-d47426178913",
+      "content_id": "b65e8a24-e366-4ea7-9cac-b12db9c2c5bf",
+      "claim_id": "C99",
+      "claim": "H9 hESCs were detached using TrypLE and resuspended at a density of 100,000 cells/mL.",
+      "claim_type": "EXPLICIT",
+      "source": "Briefly, H9 hESCs were detached using TrypLE (Gibco, A12177-01) and resuspended at a density of 100,000 cells/mL in E8 media (Gibco, A15169-01) + 10 \u00b5M Y27632 (Tocris, 129830-38-2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of experimental methods",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:55:10.644504Z"
+    },
+    {
+      "id": "fb8affb9-0710-4202-9a61-22dfba4a30c3",
+      "content_id": "b65e8a24-e366-4ea7-9cac-b12db9c2c5bf",
+      "claim_id": "C100",
+      "claim": "100 \u00b5L of cell suspension was added per well to a 96-well round-bottom ultra-low attachment plate.",
+      "claim_type": "EXPLICIT",
+      "source": "100 \u00b5L of cell suspension was added per well to a 96-well round-bottom ultra-low attachment plate (Thermo Fisher, 174925) and centrifuged for 5 min at 200 \u00d7 g to coalesce the cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of experimental methods",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:55:10.644504Z"
+    },
+    {
+      "id": "8b8f2e99-3c63-46e3-9601-aba27635bf28",
+      "content_id": "b65e8a24-e366-4ea7-9cac-b12db9c2c5bf",
+      "claim_id": "C101",
+      "claim": "The cardiac organoids were considered mature on day 9.",
+      "claim_type": "EXPLICIT",
+      "source": "The plate was incubated at 37\u00b0C for 48 hr, and the cardiac organoids were considered mature on day 9.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of experimental methods",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:55:10.644504Z"
+    },
+    {
+      "id": "63e661c6-b211-4933-87c2-7c15c801a115",
+      "content_id": "b65e8a24-e366-4ea7-9cac-b12db9c2c5bf",
+      "claim_id": "C102",
+      "claim": "Doxorubicin (DOX, 1 nM) or CPI-203 (0.5 \u03bcM) were applied for 48 hr on either day 4 or 7 of cardiac organoid development.",
+      "claim_type": "EXPLICIT",
+      "source": "To examine the effects of chemical addition, doxorubicin (DOX, 1 nM; Sigma, D1515) or CPI-203 (0.5 \u03bcM; Tocris, 5331) were applied for 48 hr on either day 4 or 7 of cardiac organoid development (control, 1:1000 DMSO) in culture media.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of experimental methods",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:55:10.644504Z"
+    },
+    {
+      "id": "b10959b2-449e-4fb7-a42f-22181e803350",
+      "content_id": "b65e8a24-e366-4ea7-9cac-b12db9c2c5bf",
+      "claim_id": "C103",
+      "claim": "A minimum of 3\u20135 organoids were used per biological replicate for RNA and gDNA extractions.",
+      "claim_type": "EXPLICIT",
+      "source": "A minimum of 3\u20135 organoids were used per biological replicate for RNA and gDNA extractions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of experimental methods",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:55:10.644504Z"
+    },
+    {
+      "id": "4de1b4f0-57ff-4d56-b1ff-128abe839354",
+      "content_id": "b65e8a24-e366-4ea7-9cac-b12db9c2c5bf",
+      "claim_id": "C104",
+      "claim": "CfDNA from cardiac organoids was collected from media conditioned by 10 tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "CfDNA from cardiac organoids was collected from media conditioned by 10 tissues (2\u20133 technical replicates per batch, 3 independent batches).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of experimental methods",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:55:10.644504Z"
+    },
+    {
+      "id": "a8d90549-6907-49e2-9f19-9467519b433a",
+      "content_id": "b65e8a24-e366-4ea7-9cac-b12db9c2c5bf",
+      "claim_id": "C105",
+      "claim": "Three independent biological replicates (separate batches of organoids cultured consecutively on different days) were performed for each experiment.",
+      "claim_type": "EXPLICIT",
+      "source": "Three independent biological replicates (separate batches of organoids cultured consecutively on different days) were performed for each experiment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of experimental methods",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:55:10.644504Z"
+    },
+    {
+      "id": "b02d9ae3-6863-454b-a931-1c5c3e3b75b6",
+      "content_id": "b65e8a24-e366-4ea7-9cac-b12db9c2c5bf",
+      "claim_id": "C106",
+      "claim": "The fraction of cell-free mitochondrial DNA appeared to decrease as the cardiac organoids developed.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, we observed that the fraction of cell-free mitochondrial DNA appeared to decrease as the organoids developed, suggesting a possible signature of cardiac organoid maturation, or other cardiac growth-related tissue-level events.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data shown in Figure 3B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:55:10.644504Z"
+    },
+    {
+      "id": "e43c7bab-d144-4088-b3ad-41813a57c8f2",
+      "content_id": "b65e8a24-e366-4ea7-9cac-b12db9c2c5bf",
+      "claim_id": "C107",
+      "claim": "The decrease in cell-free mitochondrial DNA suggests a possible signature of cardiac organoid maturation, or other cardiac growth-related tissue-level events.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, we observed that the fraction of cell-free mitochondrial DNA appeared to decrease as the organoids developed, suggesting a possible signature of cardiac organoid maturation, or other cardiac growth-related tissue-level events.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative interpretation of the experimental observation",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:55:10.644504Z"
+    },
+    {
+      "id": "ef2efd18-38f5-4493-8788-56e0389f280c",
+      "content_id": "b65e8a24-e366-4ea7-9cac-b12db9c2c5bf",
+      "claim_id": "C108",
+      "claim": "Alterations in the prevalence of specific genomic regions in cardiac organoid-derived cfDNA occur at different timepoints during growth.",
+      "claim_type": "EXPLICIT",
+      "source": "We also observe alterations in the prevalence of specific genomic regions in cardiac organoid-derived cfDNA at different timepoints during growth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data shown in Figures 4B and 4C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:55:10.644504Z"
+    },
+    {
+      "id": "2f78fc72-82ab-4890-a9a7-b99f2b93dc2e",
+      "content_id": "b65e8a24-e366-4ea7-9cac-b12db9c2c5bf",
+      "claim_id": "C109",
+      "claim": "cfDNA markers (ND1, mtCOX2, Nkx2.5) were increased upon addition of cardiotoxic drugs, prior to the onset of tissue demise.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we identify cfDNA markers that were increased upon addition of cardiotoxic drugs, prior to the onset of tissue demise.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data shown in Figure 6A-C showing increases on day 6 before tissue demise on day 9",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:55:10.644504Z"
+    },
+    {
+      "id": "d85ebac4-2cd2-4986-9336-fb9980930ae2",
+      "content_id": "b65e8a24-e366-4ea7-9cac-b12db9c2c5bf",
+      "claim_id": "C110",
+      "claim": "Cardiac organoids may be a useful system towards the identification of candidate predictive cfDNA markers of cardiac tissue development and demise.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these results indicate that cardiac organoids may be a useful system towards the identification of candidate predictive cfDNA markers of cardiac tissue development and demise.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the experimental observations throughout the study",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:55:10.644504Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "91e5035f-f6a1-4f94-913b-3312574f2214",
+      "content_id": "b65e8a24-e366-4ea7-9cac-b12db9c2c5bf",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Cardiac organoids derived from H9 embryonic stem cells successfully differentiate, exhibiting rhythmic contraction (20-30 bpm starting day 6), increased expression of cardiac differentiation markers (Troponin T, Nkx2.5, MEF2C, GATA-6, \u03b1-actinin) at transcript and protein levels, and decreased expression of pluripotency marker Oct 3/4.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C24 collectively demonstrate successful cardiac differentiation with multiple converging lines of evidence including morphological changes (C15), functional beating (C16-C17), and molecular markers at both transcript (C18-C19) and protein (C20-C24) levels. The data from Figure 1 provides consistent support across multiple independent measurements.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:55:10.644504Z"
+    },
+    {
+      "id": "e0df748b-8573-401a-a9b4-ca8f749add97",
+      "content_id": "b65e8a24-e366-4ea7-9cac-b12db9c2c5bf",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "cfDNA can be consistently extracted from cardiac organoids during development, with total concentration increasing during maturation but normalized cfDNA highest early in development. Recovered cfDNA shows broad fragment distribution (200-6000 bp) in mature organoids.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C30 demonstrate successful cfDNA extraction with quantitative measurements (Figure 2B-C) and fragment analysis (Figure 2D). The normalization to genomic DNA (C27-C28) appropriately accounts for organoid growth, though the authors acknowledge limitations in this normalization approach. Technical limitations at early timepoints (C30) are appropriately noted.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:55:10.644504Z"
+    },
+    {
+      "id": "2c6a024e-76e8-44c4-b7de-1a4e59a3ff9c",
+      "content_id": "b65e8a24-e366-4ea7-9cac-b12db9c2c5bf",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Cell-free mitochondrial DNA levels (ND1, mtCOX2, ND6, ND4) decrease substantially during cardiac organoid differentiation in a time-dependent manner, which is not fully explained by tissue-level mitochondrial gene expression changes and may represent a signature of cardiac maturation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C34 and C72 are well-supported by ddPCR data (Figure 3B-D) showing significant decreases in mitochondrial cfDNA markers during differentiation. The observation that tissue-level expression changes don't fully account for cfDNA changes (C34) is appropriately noted. However, C107's interpretation as a maturation signature is somewhat speculative and would benefit from additional validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:55:10.644504Z"
+    },
+    {
+      "id": "b964054e-60c3-4051-99e0-a209c148ccb7",
+      "content_id": "b65e8a24-e366-4ea7-9cac-b12db9c2c5bf",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Mature cardiac organoids show increased expression of mitochondrial protein VDAC/Porin, representative of increased mitochondrial size expected in cardiac tissues.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C36 are supported by Western blot data (Figure 3E-F) showing significant increase in VDAC/Porin at day 9. The interpretation linking this to mitochondrial size is appropriately supported by citation (Guo and Pu, 2020).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:55:10.644504Z"
+    },
+    {
+      "id": "2ce962ac-82a4-4598-b250-c20572673aa1",
+      "content_id": "b65e8a24-e366-4ea7-9cac-b12db9c2c5bf",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Ultracentrifugation of conditioned media does not significantly alter cfDNA concentration or mitochondrial DNA levels, indicating that cell-free mitochondrial DNA is not due to cell debris or mitochondrial fragments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C39 are supported by experimental data (Figure 3G-I) comparing ultracentrifuged and non-ultracentrifuged samples. The control experiment appropriately addresses the alternative hypothesis of debris contamination. Statistical analysis shows no significant differences, supporting the conclusion.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:55:10.644504Z"
+    },
+    {
+      "id": "e65b778e-5b42-493f-b4bd-242c80412155",
+      "content_id": "b65e8a24-e366-4ea7-9cac-b12db9c2c5bf",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Specific genomic DNA regions show altered prevalence in cfDNA during cardiac differentiation: Nkx2.5 cfDNA levels increase during days 2-4 coinciding with protein expression, while p53 cfDNA levels increase later despite decreasing tissue-level expression, suggesting specific genomic regions may reflect differentiation status.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C43 are well-supported by immunofluorescence (Figure 4A), ddPCR (Figure 4B-C), and Western blot (Figure 4D-E) data. The temporal correlation between Nkx2.5 protein and cfDNA (C40-C41) is compelling. The inverse relationship between p53 tissue expression and cfDNA (C42-C43) is intriguing and appropriately noted. The interpretation (C49, C73, C108) is reasonable but somewhat speculative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:55:10.644504Z"
+    },
+    {
+      "id": "18bafe58-d21a-4e80-81ba-36de4c23e864",
+      "content_id": "b65e8a24-e366-4ea7-9cac-b12db9c2c5bf",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Sox17 and Oct3/4 are detectable in cardiac organoid cfDNA but show no significant changes during differentiation, while Troponin T is not detectable in cfDNA.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C48 are supported by ddPCR data (Figure 4\u2014figure supplement 1) and stated observations. The negative results (C47-C48) are appropriately reported and provide important context about which markers are and are not informative in cfDNA.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:55:10.644504Z"
+    },
+    {
+      "id": "3d617b7b-8785-4f7e-9e92-a7b4743a3357",
+      "content_id": "b65e8a24-e366-4ea7-9cac-b12db9c2c5bf",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Doxorubicin (DOX) treatment causes severe cardiac organoid toxicity with tissue dissociation, reduced beating, and increased Nkx2.5 expression by day 9, while CPI-203 treatment shows milder effects with tissue recovery and maintained beating function.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C58 are well-supported by morphological imaging (Figure 5B-G), quantitative measurements of beating rate (Figure 5H) and size (Figure 5I), and gene expression analysis (Figure 5J). The differential toxicity between DOX and CPI is clearly demonstrated with appropriate statistical analysis. The conclusion (C58) is appropriately supported by the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:55:10.644504Z"
+    },
+    {
+      "id": "268f9e3d-15c8-4445-8c44-0bb7ab8c9a64",
+      "content_id": "b65e8a24-e366-4ea7-9cac-b12db9c2c5bf",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The timing of drug treatment significantly impacts toxicity severity: late DOX treatment (day 7) results in less dramatic toxicity compared to early treatment (day 4), though DOX increases Nkx2.5 expression regardless of timing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C62 are supported by data in Figure 5\u2014figure supplement 1 showing differential effects based on treatment timing. The observation that developmental stage affects sensitivity to toxicants is important and well-documented. However, sample sizes and statistical power for these comparisons are not clearly stated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:55:10.644504Z"
+    },
+    {
+      "id": "8158cc75-0a8d-49fe-ba54-9cc78c7d18e7",
+      "content_id": "b65e8a24-e366-4ea7-9cac-b12db9c2c5bf",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "DOX treatment increases cfDNA levels of mitochondrial markers (ND1, mtCOX2) and Nkx2.5 on day 6, preceding tissue detriment observed on day 9, while p53 and total cfDNA concentration remain unchanged. These markers may be predictive biomarkers of DOX-induced cardiotoxicity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C66 and C68 are supported by ddPCR data (Figure 6A-D, Figure 6\u2014figure supplement 1). The temporal relationship (C69) showing marker increases before tissue damage is compelling evidence for predictive value. The differential response between DOX and CPI (C70) strengthens the specificity argument. However, claims C71 and C76 about predictive biomarker potential are somewhat speculative and would require validation in additional models or clinical samples.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:55:10.644504Z"
+    },
+    {
+      "id": "b58cbc6f-609e-4479-9d13-4373106aa130",
+      "content_id": "b65e8a24-e366-4ea7-9cac-b12db9c2c5bf",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The impact of DOX or CPI treatment on cfDNA marker abundance later in development (day 9) is more subtle than early effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C67 is supported by comparison of data in Figure 6 and Figure 6\u2014figure supplement 1, showing less pronounced changes at later timepoints. This observation is consistent with the timing-dependent toxicity effects.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:55:10.644504Z"
+    },
+    {
+      "id": "a3907f46-fad5-4ac0-97a9-3d4df4d0f10d",
+      "content_id": "b65e8a24-e366-4ea7-9cac-b12db9c2c5bf",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "cfDNA concentration alone is not a reliable marker of toxicity or disease; instead, the prevalence of specific cfDNA sequences (mitochondrial DNA and genomic regions) may be more predictive of deleterious events.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C74-C75 and C91-C92 are supported by experimental observations showing no significant changes in total cfDNA concentration with toxicant treatment (C68) despite clear changes in specific markers (C63-C65). The interpretation is further supported by cited literature (C87-C90) about cfDNA concentration variability. This is an important conceptual conclusion of the study.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:55:10.644504Z"
+    },
+    {
+      "id": "5a9776fe-9087-4189-b651-f62af34fd313",
+      "content_id": "b65e8a24-e366-4ea7-9cac-b12db9c2c5bf",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "cfDNA can be reliably extracted from cardiac organoid models, and organoid systems are tractable for screening cfDNA markers in response to differentiation and toxicity, making them useful for identifying candidate predictive cfDNA markers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C93-C94 and C110 represent the overarching conclusions of the study and are well-supported by the collective experimental evidence demonstrating successful cfDNA extraction, characterization during differentiation, and response to toxicants. The tractability claim is validated by the successful execution of the workflow across multiple timepoints and conditions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:55:10.644504Z"
+    },
+    {
+      "id": "a7dfc302-6c93-4ba2-b764-80be35455b15",
+      "content_id": "b65e8a24-e366-4ea7-9cac-b12db9c2c5bf",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Mechanistic interpretations suggest that increased cell-free mitochondrial DNA after DOX treatment may reflect cardiomyocyte death, decreased levels during differentiation may represent retention of cells with mature mitochondria, and channels like mPTP and VDAC may mediate cfDNA release. Differential genomic cfDNA abundance may reflect DNA protection by transcription factors or epigenetic modifications.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C77-C80 are speculative mechanistic interpretations supported by citations but not directly tested in this study. While these hypotheses are reasonable and appropriately cited, they remain unvalidated in the current experimental system. Additional experiments would be needed to test these mechanisms directly.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:55:10.644504Z"
+    },
+    {
+      "id": "eb6464a2-411f-4782-9fe3-d703043a345d",
+      "content_id": "b65e8a24-e366-4ea7-9cac-b12db9c2c5bf",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "cfDNA fragment size distributions may reflect different cellular processes: shorter fragments (~200 bp) potentially indicate apoptotic cleavage, longer fragments (up to 6000 bp) may result from necrosis, though cfDNA can also be actively released from healthy cells via extracellular vesicles, and different DNases may contribute to fragmentation patterns.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C82-C85 are appropriately supported by citations to prior literature. The fragment size data (C29) is consistent with these interpretations, though the authors appropriately acknowledge limitations in definitively assigning fragments to specific cellular processes without additional validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:55:10.644504Z"
+    },
+    {
+      "id": "57c1799e-ec2c-40e0-9139-f888ddd3e5a1",
+      "content_id": "b65e8a24-e366-4ea7-9cac-b12db9c2c5bf",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "This workflow has potential for rapid cfDNA screening from toxicity and disease models, could extend to additional organoid systems, and may contribute to establishing a database of cfDNA markers mapping to specific disease processes or toxicants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C95-C96 are forward-looking statements about potential applications. While the current study provides proof-of-concept for the approach in cardiac organoids, extension to other systems and establishment of comprehensive databases remain to be demonstrated. These are reasonable future directions but not yet validated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:55:10.644504Z"
+    },
+    {
+      "id": "fe4c00ce-9ce1-4092-8d7d-a6ad53afde18",
+      "content_id": "b65e8a24-e366-4ea7-9cac-b12db9c2c5bf",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Background claims about cfDNA biology, current diagnostic applications, organoid advantages, and prior work are appropriately cited and provide context for the study.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims (C2-C14, C36, C44, C81, C86-C90, C97-C98) represent background information and prior work appropriately supported by citations to published literature. The citations appear relevant and accurate based on the claims made.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:55:10.644504Z"
+    },
+    {
+      "id": "72bed150-1ca9-4073-a66e-3d7705c4b2a4",
+      "content_id": "b65e8a24-e366-4ea7-9cac-b12db9c2c5bf",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Methodological details describe the experimental procedures including cell culture conditions, organoid generation protocol, drug treatments, sample collection, and replication strategy.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C99-C105 describe experimental methods with appropriate detail including specific reagents, concentrations, timepoints, and replication (n=3 biological replicates). The methods appear sound and reproducible, though some limitations are acknowledged by the authors in the discussion.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:55:10.644504Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "b545f4de-2d9e-4a91-be6a-4e8ee210da6d",
+      "result_id": "91e5035f-f6a1-4f94-913b-3312574f2214"
+    },
+    {
+      "claim_id": "a90c9df3-39c1-45b8-8d6e-a1a074f64614",
+      "result_id": "91e5035f-f6a1-4f94-913b-3312574f2214"
+    },
+    {
+      "claim_id": "1b7265f7-5914-47f4-8ee8-5e5dde4c6bfe",
+      "result_id": "91e5035f-f6a1-4f94-913b-3312574f2214"
+    },
+    {
+      "claim_id": "9eded44d-07f9-4590-b0f0-67b995e78b84",
+      "result_id": "91e5035f-f6a1-4f94-913b-3312574f2214"
+    },
+    {
+      "claim_id": "4834efed-0015-4561-b682-b12c5ce9af98",
+      "result_id": "91e5035f-f6a1-4f94-913b-3312574f2214"
+    },
+    {
+      "claim_id": "3eb6f476-97fb-4c39-88eb-17f07ed85005",
+      "result_id": "91e5035f-f6a1-4f94-913b-3312574f2214"
+    },
+    {
+      "claim_id": "b22121b2-8b43-43aa-9a72-d1c67b8d8bc9",
+      "result_id": "91e5035f-f6a1-4f94-913b-3312574f2214"
+    },
+    {
+      "claim_id": "70e9d87b-be15-4a66-8522-4f204e4c3751",
+      "result_id": "91e5035f-f6a1-4f94-913b-3312574f2214"
+    },
+    {
+      "claim_id": "730f6eab-3858-48c4-b4b7-34917662c68f",
+      "result_id": "91e5035f-f6a1-4f94-913b-3312574f2214"
+    },
+    {
+      "claim_id": "3e680ff7-8dff-4ec4-b26c-798f108a595d",
+      "result_id": "91e5035f-f6a1-4f94-913b-3312574f2214"
+    },
+    {
+      "claim_id": "37836179-f0cc-4fd2-b751-ad8dc63abd23",
+      "result_id": "e0df748b-8573-401a-a9b4-ca8f749add97"
+    },
+    {
+      "claim_id": "c975de4c-e782-4507-9b24-751b4bb595c8",
+      "result_id": "e0df748b-8573-401a-a9b4-ca8f749add97"
+    },
+    {
+      "claim_id": "36289aab-7ebd-4344-a613-7c49666371a0",
+      "result_id": "e0df748b-8573-401a-a9b4-ca8f749add97"
+    },
+    {
+      "claim_id": "81bd49de-e5f6-4776-b477-ea24f24ebd0b",
+      "result_id": "e0df748b-8573-401a-a9b4-ca8f749add97"
+    },
+    {
+      "claim_id": "43d67142-d512-49b4-8bda-01f7b04cd30a",
+      "result_id": "e0df748b-8573-401a-a9b4-ca8f749add97"
+    },
+    {
+      "claim_id": "71186937-7b6f-41d3-aa7e-835eabff5c3e",
+      "result_id": "e0df748b-8573-401a-a9b4-ca8f749add97"
+    },
+    {
+      "claim_id": "46e4bc4b-3ea4-4873-8485-c768e91585a8",
+      "result_id": "2c6a024e-76e8-44c4-b7de-1a4e59a3ff9c"
+    },
+    {
+      "claim_id": "d8da3927-c4f3-4d20-9fdb-0f0518190eb3",
+      "result_id": "2c6a024e-76e8-44c4-b7de-1a4e59a3ff9c"
+    },
+    {
+      "claim_id": "5bbf3f34-f8fa-4ba1-b5f9-a24b247f3e47",
+      "result_id": "2c6a024e-76e8-44c4-b7de-1a4e59a3ff9c"
+    },
+    {
+      "claim_id": "1f3b793a-98b7-4537-9073-949fdb8b600d",
+      "result_id": "2c6a024e-76e8-44c4-b7de-1a4e59a3ff9c"
+    },
+    {
+      "claim_id": "3a6b1dc8-112d-4c19-b545-78d9231df36f",
+      "result_id": "2c6a024e-76e8-44c4-b7de-1a4e59a3ff9c"
+    },
+    {
+      "claim_id": "b02d9ae3-6863-454b-a931-1c5c3e3b75b6",
+      "result_id": "2c6a024e-76e8-44c4-b7de-1a4e59a3ff9c"
+    },
+    {
+      "claim_id": "e43c7bab-d144-4088-b3ad-41813a57c8f2",
+      "result_id": "2c6a024e-76e8-44c4-b7de-1a4e59a3ff9c"
+    },
+    {
+      "claim_id": "102014c0-aec2-40f6-9b4f-ddd385e72f2b",
+      "result_id": "b964054e-60c3-4051-99e0-a209c148ccb7"
+    },
+    {
+      "claim_id": "4e92c207-9403-4f9a-95d2-b99a66749f87",
+      "result_id": "b964054e-60c3-4051-99e0-a209c148ccb7"
+    },
+    {
+      "claim_id": "2f39510a-69f3-4965-b823-1a32f4c5b975",
+      "result_id": "2ce962ac-82a4-4598-b250-c20572673aa1"
+    },
+    {
+      "claim_id": "01cee1b2-6459-4085-bf31-035ce9371874",
+      "result_id": "2ce962ac-82a4-4598-b250-c20572673aa1"
+    },
+    {
+      "claim_id": "344210c5-0b3b-4904-b53d-f15585b46c25",
+      "result_id": "2ce962ac-82a4-4598-b250-c20572673aa1"
+    },
+    {
+      "claim_id": "316f661a-971a-4a45-88d8-863b5edbcf04",
+      "result_id": "e65b778e-5b42-493f-b4bd-242c80412155"
+    },
+    {
+      "claim_id": "a2bf6684-a30a-4cf7-aea7-ac0c3376fa86",
+      "result_id": "e65b778e-5b42-493f-b4bd-242c80412155"
+    },
+    {
+      "claim_id": "59d77b1c-f899-4f5e-bdb0-6193ea695c6c",
+      "result_id": "e65b778e-5b42-493f-b4bd-242c80412155"
+    },
+    {
+      "claim_id": "7ce846e6-4010-457b-acf8-11ac0d46488a",
+      "result_id": "e65b778e-5b42-493f-b4bd-242c80412155"
+    },
+    {
+      "claim_id": "382241b2-0b5c-4c1a-b9c7-c71f5ab7b0df",
+      "result_id": "e65b778e-5b42-493f-b4bd-242c80412155"
+    },
+    {
+      "claim_id": "ddbbd969-5f10-4b9c-ae4a-3de7d7f76c52",
+      "result_id": "e65b778e-5b42-493f-b4bd-242c80412155"
+    },
+    {
+      "claim_id": "ef2efd18-38f5-4493-8788-56e0389f280c",
+      "result_id": "e65b778e-5b42-493f-b4bd-242c80412155"
+    },
+    {
+      "claim_id": "01a0384a-afd8-4d24-a147-f702b7112950",
+      "result_id": "18bafe58-d21a-4e80-81ba-36de4c23e864"
+    },
+    {
+      "claim_id": "c45145f9-44f8-48fc-974d-2efc15b45d51",
+      "result_id": "18bafe58-d21a-4e80-81ba-36de4c23e864"
+    },
+    {
+      "claim_id": "8d916547-42de-4c61-aa5f-30763ddc0027",
+      "result_id": "18bafe58-d21a-4e80-81ba-36de4c23e864"
+    },
+    {
+      "claim_id": "449c7009-5056-4707-b15c-3ecfb0ab27ec",
+      "result_id": "18bafe58-d21a-4e80-81ba-36de4c23e864"
+    },
+    {
+      "claim_id": "4b41606e-6344-440c-8f87-b0030c17f1a8",
+      "result_id": "3d617b7b-8785-4f7e-9e92-a7b4743a3357"
+    },
+    {
+      "claim_id": "ac8e5291-2add-4375-be62-097736223ca7",
+      "result_id": "3d617b7b-8785-4f7e-9e92-a7b4743a3357"
+    },
+    {
+      "claim_id": "cba2f6a0-66f3-45b0-afc2-375db3b5a8be",
+      "result_id": "3d617b7b-8785-4f7e-9e92-a7b4743a3357"
+    },
+    {
+      "claim_id": "199d8397-3454-4485-abd2-e13c2e09e400",
+      "result_id": "3d617b7b-8785-4f7e-9e92-a7b4743a3357"
+    },
+    {
+      "claim_id": "d90c8437-febf-4420-89e4-9dc79ee0b6f0",
+      "result_id": "3d617b7b-8785-4f7e-9e92-a7b4743a3357"
+    },
+    {
+      "claim_id": "ef6a3795-a092-433f-a035-f553d5b28797",
+      "result_id": "3d617b7b-8785-4f7e-9e92-a7b4743a3357"
+    },
+    {
+      "claim_id": "afd808f2-e0f0-4a1a-8f03-96876a1fe281",
+      "result_id": "3d617b7b-8785-4f7e-9e92-a7b4743a3357"
+    },
+    {
+      "claim_id": "b825a0d8-f111-4aa3-b5b1-8b1414bcf5e4",
+      "result_id": "3d617b7b-8785-4f7e-9e92-a7b4743a3357"
+    },
+    {
+      "claim_id": "51c656ca-091d-4664-b18e-d3cb33bd314b",
+      "result_id": "3d617b7b-8785-4f7e-9e92-a7b4743a3357"
+    },
+    {
+      "claim_id": "fd585cb4-a89a-48a5-bd7d-1e4aff96d383",
+      "result_id": "268f9e3d-15c8-4445-8c44-0bb7ab8c9a64"
+    },
+    {
+      "claim_id": "3f24eb9a-a2c8-4026-b966-dafe11b70f67",
+      "result_id": "268f9e3d-15c8-4445-8c44-0bb7ab8c9a64"
+    },
+    {
+      "claim_id": "ab7f8434-1dfe-480d-be37-cec01cbdead6",
+      "result_id": "268f9e3d-15c8-4445-8c44-0bb7ab8c9a64"
+    },
+    {
+      "claim_id": "6f20332d-e21e-4607-b6a8-9812f4527884",
+      "result_id": "268f9e3d-15c8-4445-8c44-0bb7ab8c9a64"
+    },
+    {
+      "claim_id": "6b031306-7291-4019-93a5-0e15ee6e45ce",
+      "result_id": "8158cc75-0a8d-49fe-ba54-9cc78c7d18e7"
+    },
+    {
+      "claim_id": "130b09ac-bf9d-4b9a-8fcb-838216ba0ba9",
+      "result_id": "8158cc75-0a8d-49fe-ba54-9cc78c7d18e7"
+    },
+    {
+      "claim_id": "fbbb5ffb-7647-4ac7-ba20-be7bd044a8cb",
+      "result_id": "8158cc75-0a8d-49fe-ba54-9cc78c7d18e7"
+    },
+    {
+      "claim_id": "d201341e-4a4e-4410-a97a-93d33e8e9403",
+      "result_id": "8158cc75-0a8d-49fe-ba54-9cc78c7d18e7"
+    },
+    {
+      "claim_id": "a1ae3bd4-4320-447f-bc6f-c42e6cf17dd5",
+      "result_id": "8158cc75-0a8d-49fe-ba54-9cc78c7d18e7"
+    },
+    {
+      "claim_id": "81d2b979-3322-425a-9eb5-17a7818ebb2b",
+      "result_id": "8158cc75-0a8d-49fe-ba54-9cc78c7d18e7"
+    },
+    {
+      "claim_id": "74b32d72-7ca4-47a5-b4e1-380fdd6bb1e7",
+      "result_id": "8158cc75-0a8d-49fe-ba54-9cc78c7d18e7"
+    },
+    {
+      "claim_id": "3e627c42-c202-4428-8045-18f5cf39b12d",
+      "result_id": "8158cc75-0a8d-49fe-ba54-9cc78c7d18e7"
+    },
+    {
+      "claim_id": "22c5e392-da49-4eec-863a-0e938c0f75be",
+      "result_id": "8158cc75-0a8d-49fe-ba54-9cc78c7d18e7"
+    },
+    {
+      "claim_id": "2f78fc72-82ab-4890-a9a7-b99f2b93dc2e",
+      "result_id": "8158cc75-0a8d-49fe-ba54-9cc78c7d18e7"
+    },
+    {
+      "claim_id": "77178e60-a4cd-4eac-9818-5a85d8a0c116",
+      "result_id": "b58cbc6f-609e-4479-9d13-4373106aa130"
+    },
+    {
+      "claim_id": "1c2fb20d-2f7c-4d60-99e3-d7d0f071ed12",
+      "result_id": "a3907f46-fad5-4ac0-97a9-3d4df4d0f10d"
+    },
+    {
+      "claim_id": "a2ec5c03-fbd4-4587-84f2-f2bc1b41bfa4",
+      "result_id": "a3907f46-fad5-4ac0-97a9-3d4df4d0f10d"
+    },
+    {
+      "claim_id": "26a86935-d5b3-4475-be2a-1312e58b6656",
+      "result_id": "a3907f46-fad5-4ac0-97a9-3d4df4d0f10d"
+    },
+    {
+      "claim_id": "40b449a7-645c-48bb-b7b1-832966b0c20e",
+      "result_id": "a3907f46-fad5-4ac0-97a9-3d4df4d0f10d"
+    },
+    {
+      "claim_id": "01545299-03c4-4278-9639-bc769104b6d4",
+      "result_id": "5a9776fe-9087-4189-b651-f62af34fd313"
+    },
+    {
+      "claim_id": "2747cc36-6d6b-4478-a61e-59e440517d25",
+      "result_id": "5a9776fe-9087-4189-b651-f62af34fd313"
+    },
+    {
+      "claim_id": "d85ebac4-2cd2-4986-9336-fb9980930ae2",
+      "result_id": "5a9776fe-9087-4189-b651-f62af34fd313"
+    },
+    {
+      "claim_id": "31842a19-cf44-49ec-ab2d-801b2f5ad4ef",
+      "result_id": "a7dfc302-6c93-4ba2-b764-80be35455b15"
+    },
+    {
+      "claim_id": "f2ae7ab9-20f2-48a4-a01e-d3f1e499e9cb",
+      "result_id": "a7dfc302-6c93-4ba2-b764-80be35455b15"
+    },
+    {
+      "claim_id": "f073b625-fd24-4b39-9a3f-4aac084815ba",
+      "result_id": "a7dfc302-6c93-4ba2-b764-80be35455b15"
+    },
+    {
+      "claim_id": "f1cf5034-3852-4504-82be-d68c4f9aa10b",
+      "result_id": "a7dfc302-6c93-4ba2-b764-80be35455b15"
+    },
+    {
+      "claim_id": "903ca167-9e67-4680-8c5e-6dca7dfff100",
+      "result_id": "eb6464a2-411f-4782-9fe3-d703043a345d"
+    },
+    {
+      "claim_id": "77fe8438-f822-4b23-acb8-f7874be704be",
+      "result_id": "eb6464a2-411f-4782-9fe3-d703043a345d"
+    },
+    {
+      "claim_id": "ae73190b-b474-41f1-9b21-d692cc35edff",
+      "result_id": "eb6464a2-411f-4782-9fe3-d703043a345d"
+    },
+    {
+      "claim_id": "8cddaa72-65d0-4048-b407-adc0feffe72e",
+      "result_id": "eb6464a2-411f-4782-9fe3-d703043a345d"
+    },
+    {
+      "claim_id": "133a0898-7b23-42c8-9b0e-e4d0ad1aa705",
+      "result_id": "57c1799e-ec2c-40e0-9139-f888ddd3e5a1"
+    },
+    {
+      "claim_id": "59e55ada-7709-4fa5-88b8-593206669222",
+      "result_id": "57c1799e-ec2c-40e0-9139-f888ddd3e5a1"
+    },
+    {
+      "claim_id": "a3444531-3344-4807-8947-09222c7904ff",
+      "result_id": "fe4c00ce-9ce1-4092-8d7d-a6ad53afde18"
+    },
+    {
+      "claim_id": "63e0c7de-701f-4a21-82ef-a9689e31b4c1",
+      "result_id": "fe4c00ce-9ce1-4092-8d7d-a6ad53afde18"
+    },
+    {
+      "claim_id": "7037cfd6-2be7-47a1-8613-6ca2253ab5e7",
+      "result_id": "fe4c00ce-9ce1-4092-8d7d-a6ad53afde18"
+    },
+    {
+      "claim_id": "d12eaf12-c790-4ade-95ed-2878a6ae6781",
+      "result_id": "fe4c00ce-9ce1-4092-8d7d-a6ad53afde18"
+    },
+    {
+      "claim_id": "31fb862d-a151-4849-bf9d-8b86c7591f93",
+      "result_id": "fe4c00ce-9ce1-4092-8d7d-a6ad53afde18"
+    },
+    {
+      "claim_id": "0368a70e-6a41-4451-b0cb-638d946fc784",
+      "result_id": "fe4c00ce-9ce1-4092-8d7d-a6ad53afde18"
+    },
+    {
+      "claim_id": "fbcdb782-7750-4239-aa2e-4122a506d006",
+      "result_id": "fe4c00ce-9ce1-4092-8d7d-a6ad53afde18"
+    },
+    {
+      "claim_id": "fa20a790-8a71-403c-8725-d1b420623cb6",
+      "result_id": "fe4c00ce-9ce1-4092-8d7d-a6ad53afde18"
+    },
+    {
+      "claim_id": "7898c768-9d15-4f66-9cbb-a6a0e144df32",
+      "result_id": "fe4c00ce-9ce1-4092-8d7d-a6ad53afde18"
+    },
+    {
+      "claim_id": "57fe486d-4526-4477-a426-d519aa841120",
+      "result_id": "fe4c00ce-9ce1-4092-8d7d-a6ad53afde18"
+    },
+    {
+      "claim_id": "7984b2eb-cbc6-4732-a737-dc31c22a6184",
+      "result_id": "fe4c00ce-9ce1-4092-8d7d-a6ad53afde18"
+    },
+    {
+      "claim_id": "d0a21ed2-d6f4-4113-b19f-a1165980cef3",
+      "result_id": "fe4c00ce-9ce1-4092-8d7d-a6ad53afde18"
+    },
+    {
+      "claim_id": "f5837569-d5fc-4283-8c65-05f6330c2ff6",
+      "result_id": "fe4c00ce-9ce1-4092-8d7d-a6ad53afde18"
+    },
+    {
+      "claim_id": "4e92c207-9403-4f9a-95d2-b99a66749f87",
+      "result_id": "fe4c00ce-9ce1-4092-8d7d-a6ad53afde18"
+    },
+    {
+      "claim_id": "8bbb707d-6ea3-47d5-85cd-407fd2e8bfc5",
+      "result_id": "fe4c00ce-9ce1-4092-8d7d-a6ad53afde18"
+    },
+    {
+      "claim_id": "54851917-067f-422e-b87c-1545c752caa4",
+      "result_id": "fe4c00ce-9ce1-4092-8d7d-a6ad53afde18"
+    },
+    {
+      "claim_id": "5ade04dc-f93d-45cc-acee-1db603c15e97",
+      "result_id": "fe4c00ce-9ce1-4092-8d7d-a6ad53afde18"
+    },
+    {
+      "claim_id": "5a270b19-193e-485b-a8ad-54bddaa02d15",
+      "result_id": "fe4c00ce-9ce1-4092-8d7d-a6ad53afde18"
+    },
+    {
+      "claim_id": "5ea3dab1-8490-4572-b7b5-b63a59477b58",
+      "result_id": "fe4c00ce-9ce1-4092-8d7d-a6ad53afde18"
+    },
+    {
+      "claim_id": "a5bf4310-fd39-42d9-a615-5b5ab178443a",
+      "result_id": "fe4c00ce-9ce1-4092-8d7d-a6ad53afde18"
+    },
+    {
+      "claim_id": "69af79ad-82a6-4777-8ea9-0022907a0003",
+      "result_id": "fe4c00ce-9ce1-4092-8d7d-a6ad53afde18"
+    },
+    {
+      "claim_id": "a2a9a29c-2886-48bf-a658-0d3e46dfed0e",
+      "result_id": "fe4c00ce-9ce1-4092-8d7d-a6ad53afde18"
+    },
+    {
+      "claim_id": "1cf836c9-1c0d-4c53-8c74-acf3cf2bdde2",
+      "result_id": "fe4c00ce-9ce1-4092-8d7d-a6ad53afde18"
+    },
+    {
+      "claim_id": "49dcedf4-573c-4b12-bf17-d47426178913",
+      "result_id": "72bed150-1ca9-4073-a66e-3d7705c4b2a4"
+    },
+    {
+      "claim_id": "fb8affb9-0710-4202-9a61-22dfba4a30c3",
+      "result_id": "72bed150-1ca9-4073-a66e-3d7705c4b2a4"
+    },
+    {
+      "claim_id": "8b8f2e99-3c63-46e3-9601-aba27635bf28",
+      "result_id": "72bed150-1ca9-4073-a66e-3d7705c4b2a4"
+    },
+    {
+      "claim_id": "63e661c6-b211-4933-87c2-7c15c801a115",
+      "result_id": "72bed150-1ca9-4073-a66e-3d7705c4b2a4"
+    },
+    {
+      "claim_id": "b10959b2-449e-4fb7-a42f-22181e803350",
+      "result_id": "72bed150-1ca9-4073-a66e-3d7705c4b2a4"
+    },
+    {
+      "claim_id": "4de1b4f0-57ff-4d56-b1ff-128abe839354",
+      "result_id": "72bed150-1ca9-4073-a66e-3d7705c4b2a4"
+    },
+    {
+      "claim_id": "a8d90549-6907-49e2-9f19-9467519b433a",
+      "result_id": "72bed150-1ca9-4073-a66e-3d7705c4b2a4"
+    }
+  ],
+  "comparisons": []
+}

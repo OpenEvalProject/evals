@@ -1,0 +1,346 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "A coarse-grained resource allocation model was developed and calibrated without parameter fitting using literature data. The model predictions for rate-yield and uptake-secretion phenotypes were compared with a database of hundreds of published E. coli phenotypes, showing very good quantitative agreement. This supports the hypothesis that resource allocation is a major explanatory factor for observed variability in growth rates and yields across bacterial strains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C5 and C20-C23 collectively establish model development, calibration methodology, database compilation, and validation results. The quantitative agreement between predicted and observed phenotypes (C4, C22, C23) across multiple growth conditions (Figures 3-4) provides strong empirical support. The model was calibrated without parameter fitting (C20), reducing concerns about overfitting, and validated against independent data not used in calibration.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C24",
+      "C86",
+      "C87",
+      "C88",
+      "C163",
+      "C164"
+    ],
+    "result": "High growth rates are not necessarily accompanied by low growth yields in E. coli. Many strains in the database grow at both high rate and high yield, and neither the model nor experimental data show a straightforward correlation between growth rate and acetate overflow for batch growth on glucose.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C24, C163-C164 establish the absence of a necessary rate-yield trade-off, supported by model predictions and experimental observations (C86-C88, Figure 3B). This challenges conventional understanding and is well-documented in the compiled database. The highest growth rates from ALE experiments approach predicted maxima (C88), and many high-rate strains maintain high yields.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C25",
+      "C26",
+      "C27",
+      "C141",
+      "C142",
+      "C146",
+      "C147",
+      "C149",
+      "C151",
+      "C152",
+      "C153",
+      "C154"
+    ],
+    "result": "High-rate, high-yield growth strategies require increased metabolite concentrations leading to higher saturation of enzymes and ribosomes, enabling more efficient utilization of proteomic resources. This strategy could only be accurately reconstructed when accounting for enzyme activity regulation in addition to enzyme concentrations, as demonstrated for the NCM3722 strain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C8 and C25-C27 establish the model prediction, which is confirmed by experimental data for NCM3722 (C26, C151-C153, Figure 5). The requirement for enzyme activity regulation (C27, C141-C142, C146-C147, C149) is well-justified by the discrepancy between initial model predictions and observed proteome composition (C140), resolved when catalytic constants were allowed to vary (C144, Figure 5C). The metabolite concentration ratio increases from 1.2 (BW) to 3.0 (NCM) support the saturation mechanism (C152).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "The model predicts bounded rate-yield phenotype space with an upper bound on growth rate (~1.1 hr\u207b\u00b9) and lower bound on yield (~0.3 for most growth rates). A Pareto frontier exists where growth rate and yield trade off, corresponding physiologically to a trade-off between protein and metabolite concentrations. Maximum yield initially increases with rate at low growth rates due to proportionally lower maintenance costs, then decreases at higher rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C64 describe the bounded phenotype space with mechanistic explanations (C59-C60, C63) supported by model structure (Equations 1-2). The Pareto frontier analysis (C82-C85, Figure 2) provides a coherent mechanistic explanation linking resource allocation to the rate-yield trade-off. The explanations are consistent with fundamental constraints (substrate uptake limitation, autocatalytic growth, maintenance costs) and supported by mathematical analysis in Appendix 1.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "The model predicts an overall positive correlation between growth rate and glucose uptake rate, but glucose uptake does not unambiguously determine growth rate. The predicted variability corresponds well with observations, and ALE strains cluster along the predicted upper bound of both rate and yield.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C106 are supported by Figure 4A-B showing model predictions and experimental data. The positive correlation (C102) is mechanistically obvious from carbon balance, while the non-unique mapping (C103) follows from model structure allowing different yields at fixed uptake rates. The clustering of ALE strains along upper bounds (C106) provides additional validation and suggests evolutionary optimization toward efficient glucose utilization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "The model predicts a clear trade-off between maximum growth yield and acetate secretion rate, but no apparent relation between growth rate and acetate secretion. High growth rates can be attained with a continuum of ATP production modes from pure respiration to mixed respiration-fermentation. Experimental data confirm E. coli can grow fast without acetate secretion, and measurements fall within predicted bounds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C124 are well-supported by Figure 4C-E and experimental data. The trade-off between yield and acetate secretion (C113) follows from ATP yield differences between respiration and fermentation (C111-C112). The absence of correlation between rate and acetate secretion (C114) challenges conventional understanding but is supported by both model and data (C164). Examples of fast-growing, non-fermenting strains (C121-C122) provide concrete validation. The few outliers (C124-C125) are acknowledged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C95",
+      "C96"
+    ],
+    "result": "The model predicts similar maximum growth rates on glycerol and glucose, which is confirmed by experimental data. The predicted rate-yield phenotype space for continuous growth at different dilution rates corresponds well with observed rates and yields.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C96 are supported by Figure 3C-D and cited experimental data. The model was recalibrated for different growth conditions (continuous vs. batch, glycerol vs. glucose) as described in Appendix 2, and predictions match observations across multiple conditions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "The BW25113 reference strain has a low growth yield on glucose (0.50), and regulatory gene deletion mutants show modest yield increases but remain below predicted maxima. Other wild-type strains like W achieve higher yields (0.66), and the highest observed yield (0.81) from an evolved strain agrees well with maximum predicted yield and involves elimination of acetate secretion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C94 are supported by cited experimental data and Figure 3B. The progression from low-yield reference strain through mutants to high-yield evolved strains illustrates the range of achievable phenotypes and validates model predictions. The connection between high yield and absence of acetate overflow (C94) is mechanistically consistent with the yield-acetate trade-off.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "The database was restricted to strains with essentially the same metabolic capacities: wild-type strains with shared central carbon and energy metabolism, mutant strains with regulatory gene deletions (not enzyme deletions), and short-term ALE mutants without new metabolic capacities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C101 describe methodological choices for database compilation, supported by citations and justified by the model assumption of constant kinetic parameters across strains. This restriction is appropriate for testing the resource allocation hypothesis while controlling for metabolic capacity differences.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "The model was calibrated using literature data for the E. coli BW25113 reference strain in different growth conditions (batch/continuous, glucose/glycerol). Growth rates, uptake/secretion rates, and protein/metabolite concentrations were collected, and a unique parameter set was fixed for each condition without parameter fitting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C55 describe the calibration methodology, supported by citations and detailed in Appendix 2. The hierarchical calibration procedure without parameter fitting (C55) is a strength that reduces overfitting concerns. The use of multiple data types (rates, concentrations) from the same strain provides internal consistency.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160"
+    ],
+    "result": "The model has several acknowledged limitations: coarse-graining reduces metabolism to macroreactions, resource allocation focuses on protein synthesis capacity while other constraints may exist, observed protein variations are less drastic and coupled through regulatory mechanisms, kinetic parameters have apparent values specific to each condition, and the model cannot predict transitions between growth conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C156-C160 honestly acknowledge model limitations with appropriate citations. These limitations are standard for coarse-grained models and do not invalidate the main results, which focus on steady-state phenotype variability within specific conditions rather than dynamic transitions. The acknowledgment of limitations strengthens rather than weakens the overall work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C65",
+      "C67",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "The BW25113 reference strain invests ~50% of proteome in ribosomal proteins, with biomass consisting of proteins (dominant), other macromolecules (25%), and metabolites (1%). At maximum growth rate (\u03bcmax), higher glucose uptake and protein synthesis occur despite lower total protein concentration (due to growth dilution), with a shift from fermentation to respiration, slightly lower energy charge compensated by higher metabolite concentration enabling higher ribosome saturation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C73 describe physiological characteristics from Figure 2 pictograms, supported by calibration data (Appendix 2) and model predictions. The mechanistic explanations for \u03bcmax physiology (C69-C73) are consistent with kinetic expressions (Equation 3) and provide insight into how high growth rates are achieved through metabolite-mediated enzyme/ribosome saturation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "The maximum yield phenotype (Ymax) has strikingly different physiology from the reference strain, achieved through strong reduction of protein synthesis and enzyme/ribosome concentrations. This reduces ATP consumption (protein synthesis being the principal ATP-consuming process) and carbon loss. The reduced macromolecule concentration implies increased metabolite concentration, possibly corresponding to glycogen accumulation, which occurs in some E. coli mutants (25-30% biomass) and reaches even higher levels in other microorganisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C77 describe Ymax physiology from Figure 2, with mechanistic explanation (C76) consistent with model structure. The glycogen interpretation (C78) is appropriately presented as speculation, supported by cited examples of high glycogen accumulation in mutants (C79) and other organisms (C80). The constant biomass density assumption (Appendix 1) logically implies metabolite increase when macromolecules decrease (C77).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C140"
+    ],
+    "result": "The existence of strains achieving highest growth rates without fermentation suggests proteome constraints can be bypassed. The NCM3722 strain exemplifies this with growth rate approaching maximum (0.97 hr\u207b\u00b9) and significantly higher yield (0.6) than BW25113. However, NCM has slightly lower protein fraction for central metabolism (0.07 vs 0.09) despite much higher glucose uptake rate (66.0 vs 49.6 Cmmol gDW\u207b\u00b9 hr\u207b\u00b9), and multiple resource allocation strategies can predict the same phenotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C131-C135 and C140 establish the puzzle that motivates enzyme activity analysis. The NCM3722 data (C132-C134, C140) are from cited sources and create a clear discrepancy with simple resource allocation models. The non-uniqueness of resource allocation strategies (C135) is a mathematical property of the model (Figure 2\u2014figure supplement 2) that necessitates additional constraints from proteomics data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C143",
+      "C144",
+      "C148"
+    ],
+    "result": "When catalytic constants are allowed to vary (up to twofold), resource allocation strategies can reproduce NCM phenotypes within 5% margin. This requires increased activity of glycolytic enzymes in NCM compared to BW. While no direct experimental test exists, pyruvate kinase activity is known to increase with higher glycolytic flux and growth rate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C143-C144 describe model extension results (Figure 5C, Figure 5\u2014figure supplement 1), showing that enzyme activity regulation resolves the discrepancy. The glycerol ALE example (C143) provides precedent for activity changes. The pyruvate kinase example (C148) offers indirect support, though the authors appropriately note lack of direct experimental validation for the specific NCM prediction (C146).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C150"
+    ],
+    "result": "The resource allocation strategies for high-rate, high-yield growth also reproduce total protein and metabolite concentrations for the NCM strain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C150 is supported by Figure 5D and cited data sources. This provides additional validation beyond rate-yield-uptake-secretion phenotypes, strengthening confidence in the model's ability to capture underlying physiology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C161",
+      "C162"
+    ],
+    "result": "Many studies have documented a trade-off between growth rate and growth yield. A manifestation is the relative increase of acetate overflow when E. coli is grown at increasingly higher growth rates by adjusting dilution rate or modifying glucose uptake rate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C161-C162 summarize established literature with appropriate citations and reference to Figure 4\u2014figure supplement 2. This provides context for the contrasting finding that no such trade-off exists across different strains in the same condition (C163-C164).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C167",
+      "C168",
+      "C169",
+      "C170"
+    ],
+    "result": "A strategy of more efficient enzyme/ribosome utilization cannot be predicted by most existing models. With constant metabolite concentrations and simplifying assumptions, the model reduces to the Basan et al. 2015a model predicting high rates require low yields. The full model is general enough to accommodate different strategies, some decreasing yield and others potentially increasing yield by exploiting degrees of freedom in resource allocation space.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C167-C170 position the work relative to existing models, with the reduction to Basan model (C168) detailed in Appendix 1. This demonstrates that the model generalizes previous work and explains why variable metabolite concentrations are necessary to predict high-rate, high-yield phenotypes. The argument is logically sound and mathematically supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C171",
+      "C172",
+      "C173",
+      "C174"
+    ],
+    "result": "The capability to predict achievable rate-yield ranges and relate them to resource allocation strategies is valuable for fundamental understanding and practical applications. The model can be extended for metabolic engineering by adding production reactions, and the equations are generic enough to apply to other microorganisms with calibration using available proteomics/metabolomics datasets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C171-C174 discuss significance and future applications. The fundamental value (C171) is demonstrated by the work itself. The metabolic engineering application (C172) is appropriately presented as potential with citation to related work. The generalizability claims (C173-C174) are reasonable given the generic model structure, though actual application to other organisms would require validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C177"
+    ],
+    "result": "When sampling initial conditions for a given resource allocation strategy, the system always reached the same steady state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C177 reports a computational observation about model behavior, indicating unique steady states for each resource allocation strategy. This is important for ensuring reproducibility of predictions and is consistent with the model structure having stable balanced growth states.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C28"
+    ],
+    "result": "The model is capable of predicting quantitative bounds on growth rates and yields within a specific environment, which can be exploited for rapidly screening performance limits of strains in synthetic biology and metabolic engineering.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C28 states a capability demonstrated by the work (Figures 2-4 showing predicted bounds that match observed ranges). The rapid screening application is a reasonable inference from the model's ability to predict phenotype ranges without requiring detailed kinetic models or parameter fitting for each strain.",
+    "result_type": "MINOR"
+  }
+]

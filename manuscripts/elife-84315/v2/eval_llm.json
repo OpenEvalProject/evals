@@ -1,0 +1,322 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "Prior asthma GWAS studies have identified multiple genetic loci (most notably 17q12-21), but only explain a small proportion of heritability (~60-70%), partly due to the use of broad 'doctor-diagnosed asthma' definitions that aggregate phenotypically heterogeneous conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C6 accurately summarize the state of asthma genetics research based on appropriate citations to established literature. The claims correctly identify the heritability estimates, key loci discovered, and the limitation that heterogeneous outcome definitions may dilute genetic signals. These are well-established facts in the field supported by multiple cited studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "Five distinct wheezing phenotypes were identified from birth to adolescence in 9,568 European ancestry subjects across five UK birth cohorts (STELAR consortium) using latent class analysis: never/infrequent (52.4%), early-onset pre-school remitting (18.6%), early-onset mid-childhood remitting (9.8%), early-onset persistent (10.4%), and late-onset wheeze (8.8%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C10 describe the study population and phenotype derivation with specific sample sizes and proportions. These are directly supported by the data presented and appropriately cite the prior work (Oksel et al., 2019a) where the phenotyping methodology was established. The cohort descriptions and sample sizes are clearly documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "GWAS meta-analysis of 8,057,852 SNPs across three cohorts identified 134 independent SNPs (p<10\u207b\u2075) with phenotype-specific associations: 44 for early-onset persistent, 25 for pre-school remitting, 33 for mid-childhood remitting, and 32 for late-onset wheeze, with minimal sharing of genetic signals across phenotypes. Genomic inflation factors ranged from 0.94-0.97, indicating minimal population stratification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C16 present the primary GWAS results with specific statistical measures. The genomic inflation factors near 1.0 indicate appropriate control for population stratification. The identification of phenotype-specific associations with limited overlap is supported by the scatter plots (Figure 2) and the clumping analysis. The chr17q21 locus association with early-onset persistent wheeze replicates prior findings, providing internal validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Two genome-wide significant loci were identified for early-onset persistent wheeze: the known 17q21 locus (p<5.5\u00d710\u207b\u2079) and a novel locus on chr9q21.13 near ANXA1 (p<6.7\u00d710\u207b\u2079). ANXA1 had not been previously associated with asthma or atopic traits and is known to be expressed in bronchial mast cells with anti-inflammatory properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C19 and C73-C77 identify the key GWAS findings. The p-values meet genome-wide significance thresholds (p<5\u00d710\u207b\u2078). The novelty of the ANXA1 locus is appropriately qualified by noting one prior association with FEV1/FVC in smokers (Lutz et al., 2015). The biological characterization of ANXA1 is supported by appropriate citations. The phenotype-specific nature of associations is consistent with the study design.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C26"
+    ],
+    "result": "Three SNPs in linkage disequilibrium (rs75260654, rs116849664, rs78320984) were associated with early-onset persistent wheeze at or near genome-wide significance. Promoter Capture Hi-C analysis identified rs75260654 as the most likely causative variant, as it uniquely overlapped a region interacting with the ANXA1 promoter in CD4+ cells and showed transcriptional activity (POLR2A ChIP-seq, ATAC-seq peaks) in relevant cell types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C24, C26 describe the fine-mapping approach using multiple genomic datasets. The PCHi-C data (Figure 3) provides direct evidence for physical interaction between rs75260654 and the ANXA1 promoter. The convergence of ChIP-seq and ATAC-seq data supports transcriptional activity. The LD analysis appropriately identifies the three SNPs as a single signal. The multi-layered functional genomic approach is methodologically sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C25"
+    ],
+    "result": "Two individuals homozygous for the minor T allele of rs75260654 were both classified in the early-onset persistent wheeze phenotype, with documented clinical histories of wheeze, asthma, and respiratory infections.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C25 provides anecdotal support for the genetic association by identifying rare homozygotes with consistent phenotypes. While the sample size (n=2) is too small for statistical inference, the observation is consistent with the GWAS finding and provides face validity. The clinical details add credibility to the phenotype assignments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "The T allele of rs75260654 was associated with reduced ANXA1 expression in na\u00efve B cells (effect size=-2.37, p=0.01) and increased expression in lymphoblastoid cell lines (effect size=0.85, p=0.001). The SNP also affected ALDH1A1 expression and showed eQTL effects across multiple immune cell types. eQTLGene Consortium meta-analysis confirmed highly significant cis-eQTL effects on ANXA1 (p=6.02\u00d710\u207b\u00b2\u00b3) and ALDH1A1 (p=1.11\u00d710\u207b\u00b9\u2079).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C33 present eQTL evidence from multiple sources (GTEx, eQTL catalogue, eQTLGene Consortium). The highly significant p-values from the large consortium meta-analysis (C33) provide strong statistical support. The tissue-specific and context-dependent effects (different directions in different cell types) are biologically plausible. However, the nominal significance levels for some individual cell types (C30-C32) should be interpreted cautiously without multiple testing correction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C34"
+    ],
+    "result": "Protein-protein network analysis demonstrated that ANXA1 directly interacts with genes enriched for asthma (IL4, IL13) and inflammatory regulation (NR3C1/glucocorticoid receptor).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C34 presents protein interaction data supporting biological plausibility. The interaction with IL4, IL13, and the glucocorticoid receptor is consistent with known asthma biology. However, the claim should be interpreted as computational prediction of interactions rather than experimentally validated direct physical interactions, which is not explicitly stated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C70"
+    ],
+    "result": "In a murine HDM-induced allergic airway disease model, anxa1 protein expression increased (immunohistochemistry) and anxa1 mRNA was significantly induced in lung tissue following HDM exposure, suggesting anxa1 may regulate the pulmonary immune response to allergen.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C36, C70 present experimental data from the mouse model (Figure 5B-D). The immunohistochemistry and mRNA expression data provide convergent evidence for anxa1 induction following allergen challenge. The inference about regulatory function (C70) is reasonable but remains speculative without loss-of-function data, which is provided in subsequent claims. Statistical significance is stated for mRNA but not quantified for protein expression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C71",
+      "C78"
+    ],
+    "result": "Anxa1-deficient mice exhibited significantly worse lung function (greater airway resistance), increased airway eosinophilia, elevated Th2 lymphocytes, and higher levels of IL-4, IL-5, and IL-13 compared to wildtype mice following HDM challenge, demonstrating that anxa1 deficiency results in exacerbated type 2 inflammation and airway hyperresponsiveness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C40, C71, C78 present the key functional validation data from anxa1-/- mice (Figure 5E-J). Multiple convergent phenotypes (lung function, eosinophilia, Th2 cells, cytokines) all point in the same direction, providing strong evidence for anxa1's protective role. Statistical significance is indicated in the figure. The experimental design includes appropriate controls (PBS, wildtype). This provides critical in vivo functional support for the GWAS finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C41"
+    ],
+    "result": "The genetic architecture of different wheeze phenotypes comprises limited shared variants across phenotypes, with each phenotype characterized by unique phenotype-specific genetic associations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C41 synthesizes the overall GWAS findings. This interpretation is supported by the scatter plots (Figure 2, Figure 2\u2014figure supplement 1) showing minimal overlap of associations at p<10\u207b\u2075 across phenotypes, with only nominal associations shared. The claim appropriately acknowledges some shared mechanisms while emphasizing phenotype-specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "ANXA1 is a 37 kDa glycoprotein with anti-inflammatory and pro-resolving properties mediated by FPR2 interaction, inhibits phospholipase A2 to reduce eicosanoid production, promotes M2 macrophage phenotype, and its synthesis is increased by corticosteroids. The ANXA1/FPR2 axis is important in chronic inflammatory conditions including rheumatoid arthritis and ulcerative colitis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C46 provide biological context for ANXA1 function based on established literature with appropriate citations. These are well-documented properties of ANXA1 in the immunology literature. The connection to corticosteroid action (C46) is particularly relevant given that corticosteroids are a mainstay of asthma treatment, strengthening the biological plausibility of the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C47",
+      "C48"
+    ],
+    "result": "Plasma ANXA1 levels are significantly lower in asthmatic patients with frequent exacerbations compared to stable disease, and children with wheeze have reduced airway ANXA1 levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C48 cite prior human studies (Lee et al., 2018; Eke Gungor et al., 2014) showing reduced ANXA1 in asthma patients. These observations are consistent with the current findings and support the clinical relevance of the genetic association. However, the directionality (reduced ANXA1 in disease) appears opposite to the mouse model where anxa1 is induced by allergen, which deserves discussion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Previous studies showed anxa1-deficient mice have elevated airway hyperresponsiveness compared to wildtype mice when challenged with ovalbumin, with untreated anxa1-deficient mice showing spontaneous AHR. Anxa1 expression characterizes Hillock cells, which may be involved in squamous barrier function and immunomodulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C51 appropriately cite prior work (Ng et al., 2011; Montoro et al., 2018) that supports the current findings. The consistency with prior ovalbumin studies strengthens confidence in the HDM results. The Hillock cell observation (C51) provides additional biological context, though its relevance to the current findings is speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C52",
+      "C69"
+    ],
+    "result": "The ANXA1/FPR2 signaling axis is an important regulator of allergic disease that could be manipulated for therapeutic benefit, and targeting pathways to promote clearance of chronic inflammation in persistent disease may represent a therapeutic prospect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C52 and C69 make therapeutic implications based on the findings. While the data support ANXA1's role in regulating allergic inflammation, the leap to therapeutic manipulation is speculative. No drug studies or proof-of-concept therapeutic experiments are presented. The claims are appropriately qualified with 'could be' and 'may represent,' but remain speculative conclusions rather than demonstrated results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "A smaller GWAS (1,173 cases) using a specific asthma subtype identified a functional CDHR3 variant not found in a 40-fold larger GWAS using aggregated asthma diagnosis, demonstrating that careful phenotyping with smaller sample sizes can identify larger effect sizes than large GWASs with broader definitions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C55 use the CDHR3 example (B\u00f8nnelykke et al., 2014; Demenais et al., 2018) to justify the study's approach. This is a valid argument supported by appropriate citations. The example effectively illustrates how phenotypic precision can compensate for smaller sample size when effect sizes are larger in homogeneous subgroups. This provides important context for interpreting the current study's relatively modest sample size.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Previous studies in ALSPAC found that 17q21 SNPs are associated with early-onset persistent but not transient or late-onset wheeze, the 46 highest ranked SNPs predicted persistent wheeze more strongly than doctor-diagnosed asthma, and IL33-IL1RL1 pathway polymorphisms showed different associations with different wheeze phenotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C58 cite prior work from the same research group showing phenotype-specific genetic associations. These prior findings are consistent with and support the current results, particularly the 17q21 association with persistent wheeze. The citations are appropriate and the consistency across studies strengthens confidence in the phenotyping approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "LCA-derived wheeze phenotypes show considerable heterogeneity between studies in temporal trajectories, distributions, and risk factor associations, partly due to non-uniformity of time points used. Less distinct phenotypes were identified in PIAMA compared to ALSPAC, and phenotypes homogeneous to this study cannot readily be derived in available populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C62 acknowledge important limitations regarding phenotype heterogeneity across studies, supported by appropriate citations (Oksel et al., 2018, 2019b; Savenije et al., 2011). This honest assessment of the replication challenge is scientifically appropriate. The claims correctly identify methodological factors (time points, sample characteristics) that contribute to heterogeneity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C63"
+    ],
+    "result": "Attempted replication in PIAMA cohort failed because the number of individuals assigned to persistent wheezing was small, phenotype associates differed from STELAR cohorts, and SNP imputation scores were low (<0.60).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C63 describes the failed replication attempt in PIAMA with specific technical reasons (small sample size, phenotype differences, poor imputation quality). This transparent reporting of negative results is commendable. The reasons given are valid technical limitations that would preclude meaningful replication. However, the imputation quality issue (<0.60) is concerning and suggests the SNPs may not be well-captured in some populations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "The study population is of European descent and results cannot be generalized to different ethnicities or environments. There is under-representation of ethnically diverse populations in most GWASs, though large consortia have been formed to combine results from multiple ethnicities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C66 appropriately acknowledge the limitation of European-only ancestry and the broader issue of diversity in GWAS. The citations to large consortia (GABRIEL, EVE, TAGC) are appropriate. This is an honest limitation that affects generalizability. The acknowledgment is important for interpreting the findings' applicability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C67",
+      "C68"
+    ],
+    "result": "The study used data from five birth cohorts with detailed lifelong phenotyping harmonized in a common platform, and three parallel GWASs produced estimates with remarkably consistent directions of effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C68 describe methodological strengths. The harmonization across cohorts and consistency of effect directions are important quality indicators. The consistent directions of effects across three independent GWASs (visible in Table 1) provide confidence in the results despite the modest sample size. These are legitimate strengths that partially offset the sample size limitation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C72"
+    ],
+    "result": "The risk allele (T) of rs75260654 confers a reduction in ANXA1 expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C72 synthesizes the eQTL findings but oversimplifies the results. The T allele reduces ANXA1 expression in na\u00efve B cells (C27) but increases it in lymphoblastoid cell lines (C28), showing tissue/context-specific effects. The claim as stated is incomplete and potentially misleading by not acknowledging the directional heterogeneity across cell types. The overall interpretation requires more nuance about which cell types are most relevant to asthma pathogenesis.",
+    "result_type": "MAJOR"
+  }
+]

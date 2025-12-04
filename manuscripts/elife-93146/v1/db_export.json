@@ -1,0 +1,1017 @@
+{
+  "submission": {
+    "id": "7399a51b-09d4-4280-a6c2-acc2162307f2",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-04T04:52:33.291936Z",
+    "updated_at": "2025-12-04T04:52:33.291936Z"
+  },
+  "content": [
+    {
+      "id": "9d00f866-736e-4e5e-920e-9cd641d12f8e",
+      "submission_id": "7399a51b-09d4-4280-a6c2-acc2162307f2",
+      "content_type": "manuscript",
+      "content_text": "# Reversions mask the contribution of adaptive evolution in microbiomes\n\n## Authors\n\n- Paul A Torrillo<sup>1</sup> ([ORCID: 0000-0002-4618-6061](https://orcid.org/0000-0002-4618-6061))\n- Tami D Lieberman<sup>1</sup> ([ORCID: 0000-0001-5430-3937](https://orcid.org/0000-0001-5430-3937)) \u2020\n\n### Affiliations\n\n1. Institute for Medical Engineering and Sciences, Massachusetts Institute of Technology Cambridge United States ([ROR:042nb2s44](https://ror.org/042nb2s44))\n2. Department of Civil and Environmental Engineering, Massachusetts Institute of Technology Cambridge United States ([ROR:042nb2s44](https://ror.org/042nb2s44))\n3. Broad Institute of MIT and Harvard Cambridge United States ([ROR:05a0ya142](https://ror.org/05a0ya142))\n4. Ragon Institute of MGH, MIT and Harvard Cambridge United States ([ROR:053r20n13](https://ror.org/053r20n13))\n\n\u2020 Corresponding author\n\n## Abstract\n\nWhen examining bacterial genomes for evidence of past selection, the results depend heavily on the mutational distance between chosen genomes. Even within a bacterial species, genomes separated by larger mutational distances exhibit stronger evidence of purifying selection as assessed by dN/dS, the normalized ratio of nonsynonymous to synonymous mutations. Here, we show that the classical interpretation of this scale dependence, weak purifying selection, leads to problematic mutation accumulation when applied to available gut microbiome data. We propose an alternative, adaptive reversion model with opposite implications for dynamical intuition and applications of dN/dS. Reversions that occur and sweep within-host populations are nearly guaranteed in microbiomes due to large population sizes, short generation times, and variable environments. Using analytical and simulation approaches, we show that adaptive reversion can explain the dN/dS decay given only dozens of locally fluctuating selective pressures, which is realistic in the context of Bacteroides genomes. The success of the adaptive reversion model argues for interpreting low values of dN/dS obtained from long timescales with caution as they may emerge even when adaptive sweeps are frequent. Our work thus inverts the interpretation of an old observation in bacterial evolution, illustrates the potential of mutational reversions to shape genomic landscapes over time, and highlights the importance of studying bacterial genomic evolution on short timescales.\n\n## Introduction\n\nUnderstanding evolutionary pressures acting upon bacterial populations is crucial for predicting the emergence and future virulence of pathogens (Culyba and Van Tyne, 2021), modeling strategies to combat antimicrobial resistance (Davies and Davies, 2010), and designing genetically modified organisms (Castle et al., 2021). Bacteria can adapt at rapid rates due to their short generation times and large population sizes. Indeed, the rapid evolutionary potential of the microbiome has been proposed to assist in the dietary transitions of mammals (Kolodny and Schulenburg, 2020). However, the vast majority of possible mutations do not increase bacterial fitness and instead result in a neutral or deleterious effect (Kimura, 1977; Davies et al., 1999; Jolley et al., 2000; Dingle et al., 2001). Metrics that estimate the directionality and intensity of past selection at genomic loci of interest have thus become critical tools in modern microbiology and biology more generally.\n\nThe normalized ratio of nonsynonymous (N) to synonymous (S) substitutions, known as dN/dS or the KA/KS ratio, is a widely used indicator of past selection (Jukes and Cantor, 1969; Kryazhimskiy and Plotkin, 2008; Barber and Elde, 2014). Nonsynonymous substitutions change the encoded amino acid and thus are considered likely to impact a protein\u2019s function, while synonymous substitutions do not affect the encoded amino acid and are therefore considered effectively neutral, with limited exceptions (Nowick et al., 2019). To account for the fact that nonsynonymous mutations are more likely than synonymous mutations based on the genomic code (~3\u00d7 on average; Yang and Nielsen, 2000), the values \u2018dN\u2019 and \u2018dS\u2019 normalize mutation counts to available sites on the genome. The dN/dS ratio therefore summarizes past selection on a genetic sequence, which could be a whole genome, pathway, gene, functional domain, or nucleotide; notably values of dN/dS averaged genome-wide can obscure signatures of adaptive evolution on other portions of the genome (Loo et al., 2020; Ho et al., 2005; Peterson and Masel, 2009). A dN/dS ratio of >1 indicates the dominance of past adaptive evolution (i.e., directional selection) while a ratio of <1 traditionally implies past selection against amino acid change (purifying selection).\n\nEarly sequencing work comparing bacterial genomes of the same species reported relatively low dN/dS values across the whole genome (<0.15) (Jolley et al., 2000; Dingle et al., 2001). These observations, obtained from comparing distant bacteria within each species, indicated a strong predominance of purifying selection. However, as it became economically feasible to sequence organisms separated by fewer mutations and therefore less evolutionary time, a contrasting pattern emerged in which high dN/dS values (~1) were found between closely related strains (Feil et al., 2003; Baker et al., 2004). Recent work in the human microbiome has confirmed such results and furthered the contrast between timescales by finding values of dN/dS > 1 (Garud et al., 2019; Lieberman et al., 2011; Shoemaker et al., 2022). The timescale dependence of dN/dS has been mainly attributed to the ongoing action of purifying selection (Garud et al., 2019), a model first proposed by Rocha et al., 2006. According to this model, weak purifying selection (or locally inactive purifying selection; Loo et al., 2020) allows for an initially inflated dN/dS ratio as deleterious mutations that will eventually be purged remain in the population. As time progresses and purifying selection continuously operates, the dN/dS ratio decreases (Loo et al., 2020; Garud et al., 2019; Rocha et al., 2006). However, multiple studies have observed genome-wide values of dN/dS > 1 in these same microbial systems, with values substantially >1 in key genes, which are simply unaccounted for in the purifying model (Garud et al., 2019; Lieberman et al., 2011; Marvig et al., 2015; Zhao et al., 2019; Zhao et al., 2020).\n\nHere, we demonstrate fundamental flaws in the purifying selection model in the context of the large within-person population sizes typical to the human microbiome and many bacterial infections (>1012 bacteria/person). We use analytical, simulation-based, and genomic approaches to support a contrasting model for the timescale dependence of dN/dS, in which adaptive evolution predominates but is not apparent on long-timescales due to adaptive reversion. The comparative success of the reversion model suggests that the study of closely related bacteria is needed to fully understand evolutionary dynamics.\n\n## Results\n\n### A model of purifying selection that fits the data reveals unrealistic parameters\n\nExplaining the timescale dependence of dN/dS through an exclusively purifying selection model poses several challenges. Firstly, fitting observed data with purifying selection requires a preponderance of mutations with extraordinarily small effects on fitness (selective coefficients, s), which are challenging to eliminate effectively (Haigh, 1978). Secondly, the occurrence of an adaptive event during the extensive time required to purge weakly deleterious mutations interrupts the purification of such mutations. Lastly, neutral bottlenecking processes, such as those observed during host-to-host transmission, exacerbate the accumulation of deleterious mutations. For most of this section, we will disregard these last two complications and focus on the problem of small s. To provide clarity, we first detail the classic purifying selection model.\n\nMutations can be divided into three classes, the first two of which accumulate at a constant rate per unit of time: synonymous mutations ($S$), neutral nonsynonymous mutations ($N_{neut}$), and non-neutral, transient, nonsynonymous mutations ($N_{transient}$). We restate the timescale dependence of dN/dS as the observation that, in a population starting from a single wild type (WT) cell, the average number of non-neutral nonsynonymous mutations per cell in the population ($N\u00af_{transient}$) increases and then asymptotes. Assuming an infinitely large population size and an infinite genome size (to circumvent saturation of mutations), the exclusive purifying selection model (Garud et al., 2019; Rocha et al., 2006) can thus be written as\n\n$$\n\\frac{d_{N}}{d_{S}}=\\frac{N\u00af_{neut}+N\u00af_{transient}}{3S\u00af}\n$$\n\nand\n\n$$\ndN\u00af_{transient}=U_{N}dt\u2212sN\u00af_{transient}dt.\n$$\n\nHere, $U_{N}$ is the non-neutral mutation rate per core genome per generation, $s$ is the selective disadvantage of a non-neutral nonsynonymous mutation (or the harmonic mean of such mutations; see Appendix 1, Section 1.1), and $t$ is the number of generations. The 3 in the denominator of Equation 1 accounts for the discrepancy in the number of potential nonsynonymous and synonymous sites (Yang and Nielsen, 2000). We solve for $N\u00af_{transient}$ by assuming $N\u00af_{transient}(t=0)=0$ to obtain:\n\n$$\nN\u00af_{transient}(t)=\\frac{U_{N}(1\u2212e^{\u2212st})}{s}.\n$$\n\nWe further simplify and combine these equations to create an equation for dN/dS with only two parameters as previously done (Garud et al., 2019). First, since dN/dS plateaus with time (Figure 1a), we have $limt\u2192\u221e\\frac{N\u00af_{neut}+N\u00af_{transient}}{3S\u00af}=\\frac{N\u00af_{neut}}{3S\u00af}=\\alpha$. Conveniently, $\\alpha$ represents both the asymptote of dN/dS and the proportion of nonsynonymous mutations that are neutral. This allows us to leave only $s$ as the other free parameter, obtaining (see Appendix 1, Section 1.1)\n\n$$\n\\frac{d_{N}}{d_{S}}=\\alpha+(1\u2212\\alpha)\\frac{1\u2212e^{\u2212st}}{st}.\n$$\n\n![Figure 1.](https://cdn.elifesciences.org/articles/93146/elife-93146-fig1-v1.jpg)\n\n**Figure 1.:** (a) Time signature of dN/dS as depicted by data points derived from the studies by Garud et al., 2019 and Zhao et al., 2019. Each dot represents a pairwise comparison between the consensus sequence from two gut microbiomes as computed by Garud et al., 2019, using only the top 10 species based on the quality of data points (see \u2018Methods\u2019). Where the high initial value of dN/dS begins to become the low asymptotic value of dN/dS occurs at approximately $d_{S}=\\frac{\\mu_{S}}{s}$. Fit lines were derived from these points using Equation 4 to depict the trend. The median R2 is 0.81 (range 0.54\u20130.94). Corresponding data from Zhao et al., 2019 confirms these observed trends, demonstrating high levels of dN/dS at short timescales and low levels at longer timescales. Adaptive genes are from Zhao et al., 2019 and are defined as those that have high dN/dS values in multiple lineages. Insets: dN vs. dS on a linear scale. Note that the data was fit to minimize variance in the logarithmic scale, not the linear scale, so the fit is not expected to be as good for the inset. See Figure 1\u2014figure supplement 1 for minimizing variance on a linear scale. See Figure 1\u2014figure supplement 2 for all species on separate panels. (b) Values of s from the output of 999 standard bootstrap iterations of curve fitting, conducted with replacement, demonstrate that only small values of the average selective coefficient can fit the data.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/93146/elife-93146-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Equivalent to Figure 1, except the fit is determined by minimizing variance in dN/dS rather than logarithmic dN/dS. In this fit, s values tend to be even smaller, with a median of 2.0 \u00d7 10-5. The median R2 = 0.64 (range 0.07\u20130.88).\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/93146/elife-93146-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Content of Figure 1a, with each species given its own panel. One species of note is B. caccae, which appears to have substantial initial dN/dS values >1, at odds with a purifying selection model. Fits for s, with uncertainty, are given in Figure 1b.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/93146/elife-93146-fig1-figsupp3-v1.jpg)\n\n**Figure 1\u2014figure supplement 3.:** Here, we use Equation 4 to once again fit the data. We still use $\\alpha=0.1$ but use alternate values of s. We see that significantly larger, though still relatively small, levels of purifying selection have essentially no ability to explain the data. $R^{2}$ is for minimizing the logarithmic variance.\n\nAs sequence analysis is not privy to the actual number of generations, we approximate $t$ assuming that synonymous mutations accumulate according to a molecular clock $(t=\\frac{d_{S}}{2(1/4)\\mu})$, where \u03bc is the mutation rate per generation per base pair, \u00bc represents the proportion of random mutations that are synonymous (Yang and Nielsen, 2000), and 2 accounts for the fact that divergence is a measure between a pair of genomes. As selection and mutation are both in units per time, any change in \u03bc results in a corresponding change in s. Both model fits and consequences are largely dependent on the ratio of these two variables (more on this below), and thus are not sensitive to the choice of \u03bc. We use a relatively high mutation rate of 10-9 per base pair per generation (Drake, 1991; Barrick and Lenski, 2013) as lower rate would imply even weaker purifying selection.\n\nFitting the data from Garud et al., 2019, we infer median values of \u03b1 \u2248 0.10 (0.09\u20130.14) and s \u2248 3.5 \u00d7 10-5 (2.6 \u00d7 10-5-6.5 \u00d7 10\u20135) across all species (\u2018Methods\u2019, Figure 1a). Aggregating all of the data at once results in a similar optimal fit of \u03b1 \u2248 0.11 and s \u2248 2.8 \u00d7 10\u20135. The similarity across the 10 species is perhaps not surprising, given that all are human gut residents of the order Bacteroidales; these values are also in line with the values obtained previously from aggregating across all species (Garud et al., 2019). These values indicate a model in which only ~10% of nonsynonymous mutations are neutral and the remaining ~90% are so weakly deleterious that they are beyond the limit of detection of any experimental method to date (s \u2273 10\u20133) (Gallet et al., 2012). Higher values of s that better reflect experimental observations (Kibota and Lynch, 1996; Trindade et al., 2010; Robert et al., 2018) result in poor fits to the data (Figure 1\u2014figure supplement 3). While the implied proportion of deleterious mutations may seem high, deep mutational scanning experiments have revealed that most amino acid-changing mutations in essential genes are deleterious enough to be measured in the lab (Kelsic et al., 2016; Dewachter et al., 2023); complex real-world environments are expected to constrain an even larger fraction of the genome.\n\nIn finite populations, the presence of so many weakly deleterious mutations becomes quickly problematic. When s is smaller than $U_{N}$, organisms without any deleterious mutations (or with the fewest number of deleterious mutations, the \u2018least-loaded class\u2019; Haigh, 1978) can be easily lost from a finite population before they outcompete less fit organisms and fitness decay begins to occur. The likelihood of loss depends on the population size and mutation-selection balance ($U_{N}/s$), a parameter that estimates the average number of deleterious mutations per cell relative to the least-loaded class. Given a core genome of L = 1.5 \u00d7106 bp that can acquire deleterious mutations, we then expect 0.001 new deleterious mutations per genome per generation ($U_{N}=\\frac{3}{4}(1-\\alpha)L\\mu$). Thus, the value of $U_{N}/s$ for the above fits is ~29, indicating that most cells in the population contain dozens of deleterious mutations (see Appendix 1, Section 1.2). With this value of the mutation-selection balance parameter, the frequency of mutation-free organisms in a population is extremely small, even for a population that starts without any deleterious mutations (<10\u201312 after 100,000 generations). If the flexible genome also contains deleterious mutations, the least-loaded class is pushed down even further. Simulations substantiate this prediction of mutation accumulation and decrease in frequency of the wild type (Figure 2a, \u2018Methods\u2019).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/93146/elife-93146-fig2-v1.jpg)\n\n**Figure 2.:** (a) The temporal dynamics of the least-loaded class in a large population under the purifying selection model. The black line represents the predicted frequency of the wild-type (mutation-free) class over time. The simulation curve shows simulation results assuming constant purifying selection in an exceptionally large effective population size (Ne = 1018; see text for a discussion of population size) under a slightly modified Wright\u2013Fisher model (\u2018Methods\u2019). (b) As a consequence of the loss of the least-loaded class, fitness declines in finite populations over time. Colored lines indicate simulations from various effective population sizes with mutations of constant selective effect. The deleterious mutation rate in the simulation is 1.01 \u00d7 10\u22123 per genome per generation. (c) Using the same simulations as in panel (b), we see that realistic global effective population sizes fail to fit the dN/dS curve, with different asymptotes. The black line denotes the infinite population theoretical model, and the colored lines indicate increasing effective population sizes, which change the strength of genetic drift in the simulations. Larger values of s and models in which all mutations are deleterious cannot fit the data (Figure 2\u2014figure supplement 1, Figure 2\u2014figure supplement 2). Generations are assumed to occur once every day.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/93146/elife-93146-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** We first calculate the smallest possible s values (as estimated from Equation 5) that will not lead to mutation accumulation for a given effective population size and the corresponding fits. The core genome size is assumed to be 1,500,000 nucleotides. Once again, we use Equation 4 to fit the data and use $\\alpha=0.1$.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/93146/elife-93146-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** A purifying selection simulation as in Figure 2, except that all mutations are assumed to be weakly deleterious (s = 3.5 \u00d7 10-5) rather than just 90%. In other words, rather than the standard deleterious mutation rate of 1.01 \u00d7 10-3 mutations per genome per generation, the mutation rate is now 1.13 \u00d7 10-3 mutations per genome per generation. With an effective population size of 109, mutations still occur so quickly as to raise the asymptote above the data. Furthermore, all of these mutations contributing to the asymptotic dN/dS are deleterious rather than neutral, furthering the problem of Muller\u2019s ratchet.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/93146/elife-93146-fig2-figsupp3-v1.jpg)\n\n**Figure 2\u2014figure supplement 3.:** A purifying selection simulation with a population of 109 with and without recombination. To simulate the potential for recombination to purge deleterious mutations, we assume a 2.5 \u00d7 10-7 chance per codon per generation of return to the ancestral state (500 times the basal mutation rate, dotted blue line), which brings alongside it a linked synonymous mutation. This would represent recombination bringing in fragments of 100 bp in length from a genome with dS = 0.01. All other assumptions are the same as the continuous selection simulations in Figure 2. While recombination does allow more fit genotypes to arise, their selective advantage is quite small, and time to sweep is still slower than mutation accumulation. Recombination is more effective at purging deleterious alleles when many deleterious mutations are present, but this occurs at a longer timescale than the actual drop off of dN/dS values. We also include a variant where recombination events revert deleterious mutations without linked synonymous mutations. In this model, we have only included recombination events that revert deleterious mutations and chosen not to explicitly model cases of neutral recombination. High levels of neutral recombination with distant organisms would result in closely related organisms having dN/dS significantly less than 1 and would not fit the data without significant adaptation.\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/93146/elife-93146-fig2-figsupp4-v1.jpg)\n\n**Figure 2\u2014figure supplement 4.:** Results of a simulation with purifying selection that takes into account transmission bottlenecks and the possibility of adaptation. The simulation is meant to represent a potential transmission chain from gut to gut. This simulation is a modified version of the simulation used for the reversion model (see \u2018Methods\u2019). Only forward mutations are available when beneficial mutations arrive ($s_{ben}=0.03$) and deleterious mutations arrive at a rate of 1.01 \u00d7 10-3 mutations per genome with a selective disadvantage of s = 3.5 \u00d7 10-5. The census size in an individual gut is 1010. We choose very conservative values for adaptation rate, bottleneck size, and bottleneck frequency to show how even small levels of these dynamics strongly influence results. Transmission bottlenecks happen on average every 100,000 generations. The population is bottlenecked to 1000 members upon transmission. Beneficial selective pressures are released on average every 8400 generations. Multiple beneficial pressures can occur together (the number released at a time is a Poisson random variable of mean 1). This rate of beneficial mutation does not contribute much to dN/dS on its own as seen from the dotted line where adaptations are excluded in the dN/dS calculation. However, both of these scenarios drastically increase the rate of mutation accumulation and the asymptotic dN/dS. The reversion model can prevent this from occurring with 10 times the amount of adaptation and transmission.\n\nThe time until the least-loaded class is completely lost from the population depends on the strength of genetic drift. The strength of genetic drift is inversely proportional to population size in well-mixed populations (Gillespie, 2004), and in less well-mixed or otherwise nonideal populations, is inversely proportional to a smaller parameter, the effective population size, Ne. Ne is often estimated by assessing polymorphisms in a population (Gillespie, 2004) but is hard to estimate from data following a recent bottleneck. Because each individual\u2019s gut microbiome is thought to be well mixed (census size = 1013) (Sender et al., 2016), it has been recently argued that Ne \u2248 1011 reflects drift processes for dominant gut species (Ghosh and Good, 2022; Labavi\u0107 et al., 2022). On the other hand, lower values of Ne \u2248 109 or less have been estimated for global populations of bacteria (Bobay and Ochman, 2018) because of the slow rates of bacterial transmission across people. While this decrease in Ne when increasing scales may seem paradoxical, we note this use of Ne only reflects the magnitude of the force of drift; for other calculations in nonideal populations, census population size or other parameters should be used.\n\nWithout extremely large values of Ne, the least-loaded class will be lost recurrently, rapidly lowering the fitness of the population (i.e., Muller\u2019s ratchet; Haigh, 1978). Assuming $s$ is small and thus approximately additive, this recurrent process of fitness decay occurs roughly when the following inequality is satisfied (see Appendix 1, Section 1.2; Neher and Shraiman, 2012):\n\n$$\n2sN_{e}e^{\u2212\\frac{U_{N}}{s}}<<1.\n$$\n\nGiven  $U_{N}/s$ = 29 as derived above, Ne > 1015 is required to avoid continual deleterious mutation accumulation and fitness decline (Figure 2b). Thus, the purifying model requires levels of drift unrealistic at the within-person or across-globe scales. Simulations confirm that deleterious mutations accumulate and compromise the ability of the purifying model to explain empirical dN/dS decay in reasonably finite populations (Figure 2c). Moreover, continuous accumulation of mutations in such populations decreases fitness so much that the average genome contains a sizable fraction (~10%) of deleterious alleles after 1 million years (Figure 2c), assuming Ne = 109 and one generation a day (Korem et al., 2015). Even if this decreased fitness was biologically maintainable, the accumulation of so many deleterious mutations would lead to many potential adaptive back mutations, complicating the efficiency of purifying selection. Consequently, this value of $U_{N}/s$ is simply incompatible with a model where a vast majority of alleles are already optimal.\n\nLastly, the intolerance of the purifying model to adaptation and transmission is particularly problematic. Within-host adaptive sweeps have been observed in Bacteroides fragilis (Zhao et al., 2019) and other Bacteroides (Garud et al., 2019). Such adaptation interferes with inefficient purifying selection; deleterious mutations are likely to hitchhike (Desai et al., 2013) to fixation on the genomic background of adaptive mutations. Any given weakly deleterious mutation with s = 3.5 \u00d7 10\u20135 cannot be purged from a within-host population on the timescale of human lifetime (assuming ~1 generation per day), and thus if any adaptive sweep occurred within that host, it would either hitchhike to fixation or be completely removed from the population. Similarly, deleterious mutations can also hitchhike to fixation during neutral transmission bottlenecks, thereby raising the average number of deleterious mutations per cell in the population, furthering mutation accumulation, and hampering the efficiency of purifying selection. Simulations confirm that even infrequent adaptive sweeps and bottlenecks have tangible impacts on dN/dS, including raising the asymptote (Figure 2\u2014figure supplement 3).\n\n### Neither recombination nor differential selection at transmission can easily rescue a model of weak purifying selection\n\nHomologous recombination, which occurs at detectable rates within human gut microbiomes and within the Bacteroidales order (Liu and Good, 2024), cannot rescue a population from Muller\u2019s ratchet when such weakly deleterious mutations are so frequent. If we assume a generously high rate of recombination, such that a mutated nucleotide is 500 times more likely to be reverted via recombination than mutation (r/m = 500) (Torrance et al., 2024; Liu and Good, 2024) and brings along a single linked synonymous mutation during each recombination event, the decay of dN/dS still cannot be recreated in a population of size 109 and fitness will still decay (Figure 2\u2014figure supplement 4). The inability of recombination to suppress mutation accumulation in this regime arises because the selective advantages themselves are still too small to sweep faster than the rate at which mutations accumulate. While recombination does allow dN/dS to eventually decay, the rate of decay is much slower than observed, resulting in a poor fit to the data (Figure 2\u2014figure supplement 4). While higher values of Ne or a higher recombination rate could theoretically approximate the absence of linkage and escape of Muller\u2019s ratchet, we note that the maximum r/m across bacteria is estimated to be <50 (Torrance et al., 2024) and our simulations are therefore conservative.\n\nOur presentation so far has implicitly assumed that weak purifying selection has been acting continuously and that values of s are constant for any given allele over time. However, apparently weak purifying selection might theoretically emerge from mutations that spend periods under neutral selection (or even local positive selection) and larger periods under strong negative selection, with the estimated value of s reflecting the harmonic mean (Culyba and Van Tyne, 2021; Loo et al., 2020). However, such models will have a hard time overcoming mutation accumulation. For example, a model in which purifying selection acts only during transmission still cannot prevent mutation accumulation without unrealistic assumptions. In particular, the selection-at-transmission model would still require ~29 non-neutral mutations in the average adult population, which implies a very low frequency of the least-loaded class. Assuming each host\u2019s population gets replaced once every 10,000 bacterial generations (~26 years), such a model would require the least-loaded class to be 6000\u00d7 more likely to colonize them than the average genotype in the population ($(1+10,000s)^{29}$). The presence of rare cells with strong selective advantages would suggest super-spreading across human microbiomes, which has yet to be reported in the human microbiome (Faith et al., 2013). More importantly, Muller\u2019s ratchet would still click because of the low frequency of this least-loaded class.\n\n### Adaptive reversions can explain the decay of dN/dS\n\nIf purifying selection cannot explain the decay in neutral mutations, what can? One particularly attractive process that removes nonsynonymous mutations over time is strong adaptive mutation and subsequent strong adaptive reversion of the same nucleotide when conditions change. Such reversions are likely to sweep in large populations when mutations are adaptive locally but deleterious in other environments (Ascensao et al., 2023). In the gut microbiome, these alternative environments could represent different hosts (Figure 3a) or environmental changes within a single host (e.g., diet, medication, other microbes). As an illustrative example, the presence of a bacteriophage in one gut microbiome might select for a loss-of-function mutation (premature stop codon or otherwise) in a phage receptor, driving this mutation to fixation in its host, but reverting to the wild-type receptor when transmitted to a phage-free host. Reversions are most likely when compensatory mutations that counteract a mutation\u2019s deleterious effects are either scarce or not as beneficial as direct reversion (Levin et al., 2000) (i.e., provided a premature stop codon); we discuss models that include compensatory mutations later in this section.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/93146/elife-93146-fig3-v1.jpg)\n\n**Figure 3.:** (a) Cartoon schematic depicting a potential reversion event within a single transmitted lineage of bacteria. The color of each individual indicates a different local adaptive pressure. Closed arrows represent mutation while open arrows indicate transmission. (b) Reversions become increasingly likely at larger population sizes and are nearly guaranteed to occur and fix within 1\u201310 years when strongly beneficial in gut microbiomes. The probability of revertant arising and fixing (top panel) is calculated as $1\u2212(1\u22122s_{ben}U_{rev})^{N_{e}}$, and the expected time to fixation of reversion (bottom panel) is calculated as $\\frac{1}{2N_{e}s_{ben}U_{rev}}+\\frac{ln(N_{e})}{s_{ben}}$ ($U_{rev}=4.5\\times10^{\u221210}$ per generation). Generation times are assumed to be 1 day. Note that the mutation rate does not affect time to fixation much when Ne is large. Here, we assume no clonal interference or bottlenecks, though simulations do take these processes into account. See Appendix 1, Section 2.2 for derivation. Each line type displays a different selective advantage coefficient. (c) The adaptive reversion model can fit the data. Each colored line shows the fit for a different species. The median R2 = 0.82 (range 0.54\u20130.94). Fit minimizes logarithmic variance. See Figure 3\u2014figure supplement 1 for alternative fitting linear variance. See Figure 3\u2014figure supplement 2 for species individually. Insets: fit parameters for $\\tau_{flip}$, the average number of generations for a given environmental pressure to switch directions and $n_{loci}$, the average number of sites under different fluctuating environmental pressures. The scale of the y-axis is linear. Confidence intervals are from 999 bootstrapped resamples.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/93146/elife-93146-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Results of fitting the reversion model (Equation 8) to minimize dN/dS rather than logarithmic dN/dS. This implies a potential longer time to switch for a given selective pressure (median $\\tau_{flip}=53,340$) and an increased number of loci undergoing fluctuating selection (median $n_{loci}=84$). The median R2 = 0.72 (range 0.11\u20130.88).\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/93146/elife-93146-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Content of Figure 3b, with each species now given its own panel. One species of note is B. caccae, which appears to have initial dN/dS values >1, which can now be fit with the reversion model (see Figure 1\u2014figure supplement 2 for comparison with purifying model).\n\nAdaptive nonsense mutations have been observed to emerge frequently within individual people in both pathogens (Culyba and Van Tyne, 2021; Lieberman et al., 2011; Key et al., 2023; Shopsin et al., 2008) and commensals (Zhao et al., 2019; Barreto et al., 2023). Identifying reversions in vivo requires both high temporal resolution and deep surveillance such that the probability of persistence of ancestral genotype is removed (Snitkin et al., 2013) despite this difficulty, reversions of stop codons have been observed in mouse models (Sousa et al., 2017) and during an outbreak of a pathogen infecting the lungs of people with cystic fibrosis (Poret et al., 2024). While direct reversion has not yet been observed in gut microbiomes, premature stop codons are frequently observed. Among the 325 observed nonsynonymous de novo mutations in a study of within-host B. fragilis adaptation (Zhao et al., 2019), 28 were premature stop codons. This frequency is significantly higher than expected by chance (p=0.015; \u2018Methods\u2019). Moreover, 4 of the 44 mutations in 16 genes shown to be under adaptive evolution on this short timescale were stop codons. These same 16 genes show a signature of purifying selection on long timescales (Figure 1a).\n\nTraditionally, mutational reversions of stop codons and other mutations have been considered exceedingly unlikely and have been ignored in population genetics (Tajima, 1996), with a few exceptions (Charlesworth and Eyre-Walker, 2007). However, for a bacterial population within a human gut microbiome, the likelihood of a mutational reversion is quite high. A single species within the gut microbiome can have a census population size of 1013, with generation rates ranging from 1 to 10 per day (Sender et al., 2016; Korem et al., 2015). Taking a conservative estimate of one generation per day and a within-person Ne of 1010 (e.g., bacteria at the end of the colon may not contribute much to the next generation; Labavi\u0107 et al., 2022), reversions become highly probable (Figure 3b; see Appendix 1, Section 2.2). Given a mutation rate of 10\u20139 per site per generation, we anticipate 10 mutants at any given site each generation. In the large population sizes relevant for the gut microbiome, a beneficial mutation will then take substantially longer to sweep the population than occur, with values of sben > 1% generally sweeping within 10 years (Figure 3b). Consequently, if selection strongly benefits a reverting mutation, a genotype with a beneficial mutation is essentially guaranteed to emerge within days to weeks and replace its ancestors within the host within months to years.\n\nGiven its plausibility, we now consider if the reversion model can explain the observed decay of dN/dS. The dynamics of the reversion model can be given by\n\n$$\n\\frac{dN\u00af_{transient}}{dt}=\\frac{1}{\\tau_{flip}}(n_{loci}\u2212N\u00af_{transient})\u2212\\frac{1}{\\tau_{flip}}N\u00af_{transient}\n$$\n\nWith the corresponding solution for $N\u00af_{transient}$ being (see Appendix 1, Section 3.1)\n\n$$\nN\u00af_{transient}(t)=\\frac{n_{loci}}{2}(1\u2212e^{\u2212\\frac{2t}{\\tau_{flip}}}).\n$$\n\nHere, $n_{loci}$ denotes the number of loci that experience distinct sources of fluctuating selection. The parameter $\\tau_{flip}$ represents the average number of generations required for the sign of selection at a chosen locus to flip and determines the key point in the dN/dS decay curve where $N\u00af_{transient}(t)$ begins to drop. We note that a locus here could be a nucleotide, gene, or gene set \u2013 any contiguous or noncontiguous stretch of DNA in which two knockout mutations would be just as beneficial or harmful as one mutation. We again use \u03b1 to represent the proportion of nonsynonymous mutations that are neutral. Using Equation 7, we obtain a formula for dN/dS that has only three free parameters when a single value for $\\mu_{S}$ is chosen:\n\n$$\n\\frac{d_{N}}{d_{S}}=\\alpha+\\frac{n_{loci}}{6\\mu_{S}t}(1\u2212e^{\u2212\\frac{2t}{\\tau_{flip}}}).\n$$\n\nWhen fitting the dN/dS curve, the values obtained are reasonable in the context of bacterial genomics, with median best-fit values across species of  $\\tau_{flip}=46,000$ bacterial generations (range 25,000\u2013105,000) and  $n_{loci}=55$ (range 34\u201380). Given daily bacterial generations, this value of $\\tau_{flip}$ suggests the sign of selection on a given allele would flip approximately every 110 years. The average time for any pressure to flip would thus be approximately every 2 years, or less frequently if adaptive events occur in bursts (e.g., upon transmission to a new host). While 55 loci under distinct selective pressures may seem high, Bacteroidetes genomes are known to have dozens of invertible promoters (up to 47 in B. fragilis; Jiang et al., 2019). Invertible promoters are restricted out of the genome and re-ligated in the opposite direction to turn gene expression on or off. The number of invertible promoters in a given genome approximates a lower bound on the number of fluctuating selective pressures that these genomes frequently experience. Interestingly, adaptive loss-of-function mutations reported in B. fragilis affect the same genes regulated by invertible promoters (Zhao et al., 2019). The plausibility of these fit parameters lends support to a model in which dN/dS decays solely based on strong and recurrent local adaptations.\n\nTo ensure a reversion model is robust to finite populations, we performed simulations using fit parameters. These simulations capture the dynamics of a single population evolving as it transmits across a series of hosts through random bottlenecks (Figure 4a; \u2018Methods\u2019); these simulations allow for clonal interference between adaptive mutations. We allow new pressures to arise independent of bottlenecks as new selective forces (phage migration [Koskella and Brockhurst, 2014]; immune pressures [Barroso-Batista et al., 2015]; dietary changes [Carmody et al., 2019]) can emerge throughout the lifespan and independent of migration; forcing transmission and bottlenecks to coincide gives similar results (Figure 4\u2014figure supplement 1). As in the purifying selection simulations, the per base pair mutation rate is 10\u20139, and 90% of nonsynonymous substitutions are deleterious, but this time they have a larger s of 0.003 (Robert et al., 2018) and are thus purged more quickly from the population. Notably, while some of these deleterious mutations hitchhike to fixation during bottlenecks and adaptive sweeps, fitness does not decay because these mutations are subsequently reverted with adaptive sweeps (Figure 4\u2014figure supplement 2). If deleterious mutations had significantly smaller s, they would be unable to be reverted due to the long time needed to reach fixation, even if bottlenecks and adaptive events are less frequent (Figure 2\u2014figure supplement 3).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/93146/elife-93146-fig4-v1.jpg)\n\n**Figure 4.:** (a) The reversion model successfully fits the data in simulations. We simulate a population of size 1010 that has a bottleneck to size 10 on average every 10,000 generations (~27 years or a human generation [Wang et al., 2023] given a bacterial generation a day), with one adaptive pressure ($s_{ben}=0.03$) occurring on average every 840 generations independently of bottlenecks (see Figure 4\u2014figure supplement 1 for an alternative where bottlenecks and selection are correlated). New pressures either require forward mutations (which can be acquired at a rate of 1.1 \u00d7 10-8 per available locus per generation) or reversions (which can be acquired at a rate of 4.5 \u00d7 10-10 per available locus per generation), the balance of which depends on the history of pressures on the tracked genome (i.e., more past forward pressures implies more potential future reverse pressures). Based on the best fit to the data, we use $n_{loci}=55$. Deleterious mutations occur at a rate of 1.01 \u00d7 10-3 mutations per genome and have $s=0.003$ and can themselves be reverted. More details on the simulation can be found in \u2018Methods\u2019. Each curve represents the average of 10 runs; the blue line shows the observed pairwise dN/dS while the red line includes adaptive mutations and reversions. The theory line is the result of Equation 8. Observable dN/dS decays because of reversion, while the actual dN/dS of mutations that occurred is >1 when taking into account both forward and reverse mutations. (b) PAML (Yang, 2007) cannot detect true dN/dS in a given gene in the presence of adaptive reversions. Both lines are dN/dS as calculated by PAML on a simulated gene phylogeny. In the permanent adaptations simulation (blue), adaptive mutations are acquired simply and permanently. In the transient adaptations simulation (red), only more recent mutations will be visible while older mutations are obscured (\u2018Methods\u2019). Line is the average of 10 simulated phylogenies and shaded regions show the range. (c) Categories of genes in the Bacteroides fragilis genome (NCTC_9343) enriched for stop-codon adjacent codons (TTA and TCA) relative to the expectation from the rest of the genome (\u2018Methods\u2019). The use of these codons suggests these sequences may have recently had premature stop codon mutations. p-Values are displayed above bars and were calculated using a one-proportion Z-test with Bonferroni correction. See \u2018Methods\u2019, Supplementary file 1, and Supplementary file 2 for more details.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/93146/elife-93146-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Same parameters as simulation from Figure 4a but rather than have new pressures occur independently of bottlenecks, they occur concurrently. To have an overall average of one beneficial mutation every 840 generations, an average of 11.9 mutations (Poisson with mean 11.9) occur every bottleneck, which occurs on average every 10,000 generations. The most noticeable difference is greater variability at low synonymous divergence values. The first 100,000 generations is the average of 50 simulations while subsequent parts of the curve consist of only 5 simulations to save on computing time (hence the slight spike).\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/93146/elife-93146-fig4-figsupp2-v1.jpg)\n\n**Figure 4\u2014figure supplement 2.:** Besides for reversions potentially occurring due to strong environmental pressures, reversions can also occur because of the fixation of deleterious hitchhikers. These results are from the simulations of Figure 4a, where deleterious mutations occur at a rate of 1.01 \u00d7 10-3 per genome per generation and with a selective disadvantage of s = 0.003. Deleterious mutations are allowed to hitchhike, and reversions of these deleterious mutations are also permitted. Adaptive mutations and reversions are not counted in relative fitness. The curve is the average of 10 simulations.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/93146/elife-93146-fig4-figsupp3-v1.jpg)\n\n**Figure 4\u2014figure supplement 3.:** (a) Using a Markov chain (see Appendix 1, Section 3.2), we calculate the theoretical values of $N\u00af_{transient}$, and thus dN/dS decay, under varying assumptions about the rate at which compensatory mutations win over true reversions. While compensatory mutations do slow the rate at which dN/dS decays (relative to no compensatory mutations) if reversions are more likely than compensatory mutations, a decay will be observed. Reducing the number of loci can correct for delayed decay from compensatory mutations. (b) The likelihood of true reversion vs. compensatory mutations (treated as mutually exclusive) under different parameter regimes as determined from simulations. Simulations are performed the same as those displayed in Figure 4 and described in the \u2018Methods\u2019 section for the reversion model (same population size, bottlenecks, loci, arrival of pressures, mutation rates), except now there is an additional compensatory category that can be used to satisfy an adaptation to a reverse pressure and has a separate rate and selective advantage. Results are obtained by comparing accumulated true reversions to compensatory mutations after 500,000 generations.\n\nWe note that other complex models that include reversion and other processes are also possible. For example, a model with a very large number of loci with selective tradeoffs and pressures that act only transiently (nonfluctuating) could potentially fit the data. However, the agreement between $n_{loci}$ and the number of invertible promoters, and the finding of parallel evolution in vivo, suggests the fluctuating selection model is more realistic than a very many-sites model.\n\nSo far, we have assumed that only exact reversions are selected upon when the sign of selection returns to its original state. However, the reversion model can also accommodate compensatory mutations that exclude any selective advantage for reversion; these compensatory mutations can also be subject to reversion themselves. We conceptualize this as a random walk, in which a locus at a nonancestral state acquires a compensatory mutation with probability p or obtains a true reversion with probability 1 \u2013 p (see Appendix 1, Section 3.2). As long as $p\\leq0.5$, dN/dS will decay to the same asymptote despite adaptive dynamics occurring. While compensatory mutations shift the timing of dN/dS decay to the right, it can be shifted backward by decreasing $n_{loci}$ (Figure 4\u2014figure supplement 3a). The condition $p\\leq0.5$ is easily met when  $s_{ben}$ = 0.03, until excluding compensatory mutations are 10 times more likely than true reversion and provide 95% of the selective advantage of the true reversion (Figure 4\u2014figure supplement 3b). If selective pressures are stronger (as they might be in the presence of phage), true reversions will outcompete compensatory mutations even if the supply of compensatory mutations is greater or such mutations provide better relative compensation.\n\nA critical consequence of the reversion model is that apparent and actual dN/dS values diverge quickly. Even when the true genome-wide dN/dS exceeds 1 \u2013 meaning that adaptive sweeps have been a dominant force in shaping genomes \u2013 the observed value can be close to 0.1 on long timescales. This disparity complicates the interpretation of dN/dS as it becomes challenging to determine whether a genome or gene lacks nonsynonymous mutations due to reversions or negative selection. We confirmed the inability to detect adaptive selection on a gene when reversion is rampant by simulating protein phylogenies; even the advanced software PAML (Phylogenetic Analysis by Maximum Likelihood) (Yang, 2007) significantly underestimates actual dN/dS (Figure 4b; \u2018Methods\u2019). Without sufficient temporal sampling, no software can realistically estimate these hidden, adaptively driven nonsynonymous mutations.\n\nLastly, we sought to find evidence of past reversions of stop codons in certain genes by analyzing codon usage. Both leucine and serine have the property that they can be encoded by six codons, only one of which is highly stop codon adjacent (TTA for leucine and TCA for serine). Across the B. fragilis genome, these codons are depleted overall (13.48% usage rather than the neutral expectation of 16.67%). However, specific Clusters of Orthologous Genes (COG) categories are enriched in TTA and TCA codons relative to this baseline, including genes associated with transcription and cell envelope biogenesis (Figure 4c, \u2018Methods\u2019, Supplementary file 1). Further, when functionally annotated genes are further categorized by cellular localization, more gene categories exhibit enrichment (Figure 4c, \u2018Methods\u2019, Supplementary file 1), most notably genes involved in inorganic ion transport and metabolism that are localized to the outer membrane. Genes implicated in within-host B. fragilis adaptation (Zhao et al., 2019) are also found disproportionately in this category of outer membrane transporters (p=1.22 \u00d7 10\u20134; \u2018Methods\u2019, Supplementary file 1). Both the cell envelope and membrane-bound transporters are known to mediate interactions with the immune system and phage (Sukhithasri et al., 2013; Ongenae et al., 2022), and are therefore expected to experience fluctuating selective pressures. The enrichment of stop-codon adjacent codons in pathways associated with environment-dependent costs further supports a model in which adaptive mutational reversions are frequent.\n\n## Discussion\n\nIn this study, we present a new interpretation of the time-dependent changes in dN/dS for bacterial populations. We show that the traditional weak purifying selection model struggles to replicate theoretical results in realistic population sizes and propose an alternative model with opposite implications that are supported by analytical, simulation, and genomic results. Together, these results challenge the conventional view that high dN/dS values on short timescales are an artifact and should not be trusted. Instead, the success of the reversion model suggests that adaptive dynamics are underestimated on long timescales because of the saturation of dN.\n\nIt is perhaps not surprising that reversions have been relatively overlooked in previous literature. First, most population genetics theory focuses on eukaryotic organisms with smaller population sizes and longer generation times, for which reversion is less likely. The low likelihood of reversion in these populations has inspired the use of the convenient infinite-site model (Tajima, 1996), which assumes that reversions never occur and simplifies derivations. While smaller values of Ne can be appropriate for modeling global bacterial dynamics \u2013 because bottlenecks and geography limit how many organisms effectively compete \u2013 they are inappropriate for within-gut populations, which are less structured. While gut microbiomes do have a spatial structure that reduces competition, theoretical work modeling this biogeography suggests that the census and active population sizes differ only approximately tenfold (Ghosh and Good, 2022; Labavi\u0107 et al., 2022). This brings the within-gut microbiome Ne to substantially larger than the per-nucleotide mutation rate, invalidating the infinite sites model. Secondly, while bacterial geneticists have long observed adaptive loss-of-function mutations, two common misinterpretations of population genetic parameters can underestimate the probability of reversion: molecular clock rates (\u03bc), which are generally low, can easily be confused with the supply of potential mutations (\u03bcNe) (Lieberman, 2022); and classical approaches that assess Ne from genetic diversity vastly underestimate the currently active population size, particularly if a bottleneck recently occurred (e.g., during transmission). Lastly, simulating large populations, even when appropriate, is computationally difficult. As a consequence, population genetics simulations, including those of bacteria, have used relatively small population sizes (\u2264106 organisms). We overcome computational limitations by tracking genetic classes rather than individual genotypes (\u2018Methods\u2019). While our approach does not allow explicit comparison between individuals within a population, we believe this framework represents a powerful method to simulate large population sizes when applicable.\n\nWhether or not a reversion model can be applied beyond host-associated microbial populations remains to be explored. We only analyze microbiome data here, but we anticipate that analyses of highly curated dN/dS decay curves from microbial pathogens could yield similarly plausible parameter fits for the reversion model given past observations of dN/dS decay (Rocha et al., 2006). When effective population sizes are smaller than 109, reversions are relatively unlikely. For example, while adaptive reversions can sweep individual gut microbiomes, we do not propose that reversions sweep the global bacterial population. Regardless, theoretical work on animal populations has shown that adaptive reversions are possible after local population bottlenecks (Charlesworth and Eyre-Walker, 2007). Similarly, environmental variations that change more rapidly than the timescale required for a local selective sweep (e.g., those imposed by daily dietary changes in the gut; or imposed by light-dark cycles in the environment) would be less likely to drive fixation and subsequent reversion than the less rapid changes considered here (e.g., phage migration) (Cvijovi\u0107 et al., 2015). On the other hand, adaptive reversions may be particularly relevant for viral populations, which are known to undergo within-host adaptation, have very large population sizes, and experience frequent bottlenecks (Feder et al., 2017). Reversions have commonly been observed in certain regions of the HIV genome and have been postulated to diminish measured substitution rates in those regions (Druelle and Neher, 2023).\n\nDespite the success of a model of reversion alone in explaining dN/dS decay, it remains possible that other forces could additionally contribute. While we have shown that purifying selection alone, either continuously or during transmission, cannot explain dN/dS decay alone, it is possible that some degree of purifying selection could act alongside a reversion model. Similarly, directional selection could be incorporated into the reversion model by adjusting the parameter $\\alpha$. While the true contribution of adaptive evolution to $\\alpha$ is likely nonzero, it is difficult to fit with available data and it is therefore left for future work.\n\nWhile we have presented evidence that recombination alone is unlikely to rescue a model of weak purifying selection, it remains possible that recombination could be included in a model that includes adaptation and, notably, could drive adaptive reversions. Microbial geneticists have frequently observed that recombined regions exhibit lower dN/dS values compared to non-recombined regions (Castillo-Ram\u00edrez et al., 2011), a signature consistent with having already experienced reversion or purifying selection. Recombination could potentially revert multiple mutations at specific loci simultaneously, which might be particularly beneficial in the presence of genomic epistasis. Thus, despite the success of the mutation-driven model, it is likely that recombination plays some role in the decay of dN/dS.\n\nWhile more direct observation of adaptive reversions is currently lacking, we propose that this paucity is simply an artifact of lacking samples along a line of descent with sufficient genomic resolution. Despite this challenge in observation, a recent study tracking de novo mutations between mothers and infants revealed several cases of apparent reversion, with elevated values of dN/dS > 1, though not significantly so (Chen and Garud, 2022). Moreover, many short-term studies in the gut microbiome and beyond have revealed strong evidence of within-person adaptation, including parallel evolution (Lieberman et al., 2011; Marvig et al., 2015; Zhao et al., 2019; Cooper and Lenski, 2000) and loss-of-function changes like premature stop codons (Key et al., 2023) \u2013 with low long-term dN/dS values in these same short-term genes (Vigu\u00e9 and Tenaillon, 2023). We note that adaptation and reversion do not result in parallel evolution in the genomic record if various initial mutations result in the same phenotype (i.e., loss-of-function mutations); however, it would result in changes in codon usage bias we have shown (Figure 4c).\n\nThe shortcomings of the purifying model and the success of the reversion model under realistic assumptions highlight the importance of studying evolution in real time for understanding evolutionary dynamics. In addition, our results emphasize the importance of simulating large population sizes for explaining observations in bacterial population genomics, spotlight the potential for strong adaptation in bacterial populations, and underscore the need for continued development of population genetics theory for microbial populations.\n\n## Methods\n\n### Data and parameter estimation\n\nData was obtained from Shoemaker et al., 2022 and was initially generated by Garud et al., 2019. Pairwise dN/dS values can be found in the GitHub repository. The parameters are estimated using scipy.optimize.curve_fit. The fit minimizes the RMSD of the logarithmic dN/dS. If we fit the data by minimizing just dN/dS on a linear scale, we get s \u2248 2.0 \u00d7 10\u20135, which suggests an even weaker purifying selection (Figure 1\u2014figure supplement 1). We analyzed the 10 species with the most data points reflecting short divergence times (dS < 0.0005), which is critical for data fit.\n\n### Population simulations overview\n\nThe majority of the computational simulations performed are built upon the idea of the Wright\u2013Fisher model with selection (Tataru et al., 2017) that population generations can be determined from a multinomial distribution. However, we have made some changes to generalize this model for our purposes.\n\nFirst, the simulations do not necessarily assume a constant population size but rather assume the population grows via a logistic growth model with a capacity to allow for the implementation of bottlenecks. Specifically, if $P[t]$ is the population on generation $t$ and $K$ is the population capacity, then\n\n$$\nP[t+1]\u00af=P[t]+P[t](1\u2212\\frac{P[t]}{K})\n$$\n\nAnd\n\n$$\nP[t+1]=Poiss(P[t+1]\u00af).\n$$\n\nThe population size is a Poisson random variable as we choose to determine the offspring of individual genetic classes as a Poisson random variable. We note that except for the very first few generations and after bottlenecks, the population size only has small fluctuations around a fixed capacity.\n\nTo speed the simulation up and enable the simulation of very large population sizes, we implemented a variety of genotype classes, rather than tracking each genotype individually. Genotype classes are similar to the practice of simulating fitness classes (Desai and Fisher, 2007), though we manage the number of unique classes via Poisson merging and splitting.\n\nFor all simulations, we start from a single organism that begins with 500,000 neutral alleles, representing a core genome size of this many codons that has yet to receive any mutations. When a mutation occurs, one allele may change types or stay the same, depending on the mutation received and the state of the randomly chosen codon. For example, a deleterious mutation occurring at a codon already in a deleterious state does not change the genotype class of the organism.\n\nThe specific implementations and additional parameters used for this model are provided in the following sections. Here, we outline the theory that ensures that genotype classes accurately represent such a population and enable the calculation of fitness. Consider the total population of size, $P[t]$, at generation $t$, as a composite of multiple different classes. The number of individuals in class $j$ on generation $t$ will be $A_{j}[t]$. We have\n\n$$\nP[t]=\\sumj\\geq0A_{j}[t].\n$$\n\nWithin class $j$, we store several variables that provide information about the genotype of members of $A_{j}[t]$. Specifically, we store a number $j_{k}$ that specifies the number of alleles of type $k$ in the class $j$. Examples of potential types that are used in our work include deleterious alleles, adaptive alleles, and alleles that result from reversion. Each type of allele is associated with a specific selective advantage $s_{k}$. We can now write a formula to calculate the absolute fitness $F_{j}$ of class $j$:\n\n$$\nF_{j}=\\prodk\\geq0(1+s_{k})^{j_{k}}.\n$$\n\nFrom the absolute fitness $F_{j}$, we calculate the average absolute fitness of the population on generation $t$ via\n\n$$\nE[F]=\\frac{\\sumj\\geq0F_{j}A_{j}[t]}{P[t]}.\n$$\n\nWe now calculate the relative fitness of class $j$ on generation $t$ as\n\n$$\nf_{j}=\\frac{F_{j}}{E[F]}.\n$$\n\nNext, we calculate the expected size of class $j$ in the next generation with\n\n$$\nA_{j}[t+1]=f_{j}(A_{j}[t]+A_{j}[t](1\u2212\\frac{P[t]}{K})).\n$$\n\nNote that\n\n$$\nP[t+1]=\\sumj\\geq0A_{j}[t+1]=\\sumj\\geq0f_{j}(A_{j}[t]+A_{j}[t](1-\\frac{P[t]}{K}))=\n$$\n\n\n\n$$\n\\sumj\\geq0\\frac{F_{j}}{E[F]}(A_{j}[t]+A_{j}[t](1\u2212\\frac{P[t]}{K}))=P[t]+P[t](1\u2212\\frac{P[t]}{K}).\n$$\n\nThis allows us to use a logistic model of growth to represent population size rather than being constrained to fixing it, which is useful for simulating bottlenecks.\n\nTo account for genetic drift through random fluctuations, we rewrite the above equations to be\n\n$$\nA_{j}[t+1]=Poiss(f_{j}(A_{j}[t]+A_{j}[t](1\u2212\\frac{P[t]}{K}))).\n$$\n\nwhich also implies\n\n$$\nP[t+1]=Poiss(P[t]+P[t](1\u2212\\frac{P[t]}{K})).\n$$\n\nNote that this simulation still has equivalent dynamics of the frequencies of classes as a Wright\u2013Fisher model with selection in the case of a fixed population size due to the ability to split Poisson processes, that is,\n\n$$\nPr(A_{j}[t+1]=X|P[t+1])=Pr(Bin(P[t+1],\\frac{f_{j}A_{j}[t+1]}{P[t]})=X).\n$$\n\nMutations are added in every generation depending on the mutation rate. Only single mutants are generated per generation, and an organism cannot get more than one mutation per generation. The number of new mutants is determined by the binomial distribution. New mutants are added then to their appropriate class $j$. For example, if a deleterious mutation is gained in a class with 10 deleterious alleles (and nothing else), this new mutant will increase the population size of the class with 11 deleterious alleles (and nothing else) while decreasing the population size of the class with 10 deleterious alleles (and nothing else).\n\nBy grouping individuals in classes rather than by genotype, computational costs can be greatly cut down. Grouping individuals does not affect the dynamics of the simulation because the merging of Poisson processes is still Poisson. The downside to this approach is information loss, though by designing custom alleles, we can track specific mutational histories like reversions.\n\n### Purifying selection simulations\n\nThe purifying selection simulations (Figure 2) utilized the base framework as mentioned above. Effective population sizes (Ne) varied from 106 to 1018 depending on the simulation. The simulation begins with an initial organism with 500,000 neutral alleles (representing a WT core genome). The population quickly grows to the carrying capacity (Ne) and follows logistic growth (see \u2018Population simulations overview\u2019). The deleterious nonsynonymous mutation rate per genome per generation is 1.01 \u00d7 10\u20133. These deleterious mutations have a selective disadvantage of s \u2248 3.5 \u00d7 10\u20135. Synonymous and neutral nonsynonymous mutations are not simulated directly as they are neutral and are instead assumed to accumulate in the population with an average rate of 3.75 \u00d7 10\u20134 and 1.12 \u00d7 10\u20134 per genome per generation, respectively.\n\nWe estimate the average dN/dS of the population by taking the average number of codon differences between two individuals in the population to be twice the average number of mutations in the population. This approximation is valid due to the lack of selective sweeps, bottlenecks, and large effective population size, which results in expected coalescent time between random individuals being 106\u20131018 generations (far longer than our simulations).\n\nVariations of this basic purifying selection model are performed as described in the article, including increasing the mutation rate to 1.13 \u00d7 10\u20133 mutations per genome per generation (Figure 2\u2014figure supplement 2) and the simulation of recombination (Figure 2\u2014figure supplement 3). For simulations of recombination, we assume that transitions to the ancestral state (purging the deleterious allele) occur at a rate of 2.5 \u00d7 10\u20137 per codon per genome per generation and bring along a synonymous mutation (tracked via the number of recombinations to the ancestral state). This procedure does not allow for recombination to purge multiple deleterious alleles at a time; such events are unlikely given that deleterious alleles are rare and randomly distributed. We also include a model in which synonymous mutations are not included in this reversion event.\n\nThe simulation of purifying selection through bottlenecks and infrequent adaptive sweeps was performed as in the modified version of the reversion model (see \u2018Reversion simulations\u2019), though with less frequent adaptation and larger and less frequent bottlenecks.\n\n### Stop codon enrichment in the Zhao and Lieberman et al. dataset\n\nTable S7 in Zhao et al., 2019 provides an Excel sheet detailing all observed mutations. There were 325 observed nonsynonymous mutations of which 28 were stop codons. Under a null model, there are 415 possible permutations of initial codon and codon one mutation (see \u2018Code availability\u2019) away that result in a nonsynonymous substitution of which 23 lead to a stop codon. Assuming no preference for specific mutation or initial codon, we would expect roughly 18 stop codons in this data. Under a null binomial distribution, the p-value for obtaining 28 or more is 0.015.\n\n### Reversion simulations\n\nWe simulated gut bacterial populations using a modified Wright\u2013Fisher model (see \u2018Population simulations overview\u2019) to monitor mutation acquisition over time compared to an ancestor. Like all simulations, we begin with a single organism with 500,000 neutral alleles to represent the WT core genome. The population can grow to a capacity of 1010 via a logistic growth model. Environmental changes occur with a probability of $\\frac{n_{loci}}{\\tau_{flip}}$ per generation, triggering an average of one selective pressure per environmental change, modeled by a Poisson distribution. Population bottlenecks to 10 individuals occur independently of environmental changes with a probability of 10\u20134 per generation (see Figure 4\u2014figure supplement 1 for an alternative in which bottlenecks and environmental change are correlated).\n\nBoth adaptive selective pressures and adaptive mutations are categorized into two allele types: forward and reverse. These classes are designed to enable tracking of complete mutational history and therefore recorded relative to the ancestral state rather than the current state. Thus, actual dN/dS is calculated as the sum of these mutations and observed dN/dS using their difference (plus asymptomatic dN/dS). When releasing beneficial selective pressures, their classification as forward or reverse is based on the balance of previously released selective pressures: the probability of an adaptive pressure being classified as a reverse adaptation increases as the number of forward pressures increases and is equal to the difference between the forward pressures previously released ($q_{F}$) and reverse pressures previously released ($q_{R}$) divided by the number of loci (i.e., $\\frac{q_{F}\u2212q_{R}}{n_{loci}}$). All beneficial mutations have a selective advantage of sben = 0.03 (for forward or reverse). The rate at which mutations occur given an available pressure depends on whether the mutation is adapting to a forward or reverse pressure: the reversion rate is set at one-fifth the rate of the nonsynonymous per codon mutation rate (4.5 \u00d7 10\u201310 per generation per cell), while forward mutations are set at a rate five times higher than the nonsynonymous mutation rate because they can happen at multiple sites (25\u00d7 the reversion rate; 1.1 \u00d7 10\u20138 per generation per cell).\n\nThis simulation treats each adaptive mutation as occupying a unique codon in the core genome for simplicity. This assumes that the ancestral allele at a given locus has been purged before the next environmental change affecting that locus (or selective pressure); as theory suggests that a beneficial mutation takes 768 generations to fix (see Appendix 1, Section 2.2), compared to 46,200 generations for pressure shifts at any locus we believe this assumption is reasonable. To confirm this theory still holds in the presence of bottlenecks and clonal interference, we tracked the average number of beneficial mutations in the population relative to the number of selective pressures released at any generation in simulations; we found only a 2% deviation between the average and expected total beneficial mutations over 2 \u00d7 106 generations.\n\nThroughout the simulation, deleterious mutations occur at a rate of 1.01 \u00d7 10\u20133 mutations per genome per generation, with a selective disadvantage of s = 0.003, and can be reverted to a deleterious reversion allele class (separate from the adaptive reversion allele class).\n\nTo calculate dN/dS, we assume the simulated population could be compared to an equivalent population but with distinct mutations, allowing us to calculate the dN/dS as using double the current observed substitutions.\n\nWe assume during the reversion simulations that the ancestor has no initial transient mutations. We make this assumption for computational simplicity but the theoretical curve is equivalent whether starting from no revertible mutations or the equilibrium where half of the loci currently have forward mutations (assuming forward and reverse mutations occur at equal rates; see Appendix 1, Section 3.3).\n\n### Testing standard dN/dS software\n\nWe simulated gene sequences with selective pressures acting at specific sites for Figure 4b. For each genomic distance investigated (every 500,000 bacterial generations), we ran 10 simulations as described below, with each simulation resulting in 10 sequences derived from a branching process. In the permanent adaptations simulation (blue), adaptive mutations in the phylogeny are acquired simply and permanently. In the transient adaptations simulation (red), only more recent mutations in the same phylogeny will be visible while older mutations are obscured by reversion. Both sets of sequences were then fed to PAML v4.8 (Yang, 2007) for the estimation of dN/dS values. PAML uses maximum likelihood analysis to estimate the rate of substitution that best explains a given phylogenetic tree.\n\nFor each simulation, we generated a random 1500 bp open-reading frame and designated 10% of codons as neutral, 10% under positive selection, and 80% under purifying selection. We introduced mutations and branches across several cycles, with each cycle representing 100,000 generations. For each cycle, we assigned mutations at random according to the following probabilities: 67.5% that a nonsynonymous mutation occurred at a codon under positive selection, 12.5% for synonymous mutation at any codon, 3.75% for nonsynonymous mutation at a nonselected site (neutral), and 16.25% for no mutation. These values were selected to give a dN/dS of around 2 and to match the general ratios in the reversion model.\n\nTwo phylogenies were constructed from each simulation: both received identical mutations, but they differed in how nonsynonymous mutations at selective codon sites were visible at the end of the simulation. In the transient adaptations version of the phylogeny, nonsynonymous mutations at selective codon sites were reverted at the end of the simulation, except those that occurred within the last 500,000 generations. Reverted sites were converted to a synonymous substitution at a frequency based on the codon table (assuming an equal probability of all nucleotide mutations). Both versions of the sequences underwent multiple sequence alignment and neighbor-joining tree construction (Biopython; Cock et al., 2009). We calculated treewide dN/dS ratios using PAML v4.8\u2019s codeML feature (\u00c1lvarez-Carretero et al., 2023), employing the M2a model to analyze site-specific selection.\n\n### Closeness to stop codons\n\nTo evaluate possible enrichment for stop codon adjacency, we focused on TTA and TCA codons. TTA and TCA are ideal for measuring the likelihood of nonsense mutations because each has two point mutations that yield a stop codon, unlike the five other redundant codons encoding for the same amino acids (for both leucine and serine, one codon is singly stop codon adjacent and the last four are not stop codon adjacent). In B. fragilis, these codons have a codon usage rate of 13% for leucine and 14% for serine.\n\nWe annotated the reference genome NCTC_9343 with Bakta v1.9 (Schwengers et al., 2021) and obtained COG categories for each gene using eggNOG v5.0 (Cantalapiedra et al., 2021). Genes that did not have a functional COG category (35%) were removed. To control for unusual outlier genes skewing results, only the 15 COG groups that had at least 50 genes were considered for enrichment analyses. For each COG category, we calculated a null codon usage proportion based on the proportion of leucine and serine codons and compared this to the actual proportion using a one-proportion Z test. To address the fact that genes in the same functional category but localized to different parts of the cell may be under different selective pressures, we analyzed cellular location classifications from PSORTb v3.02 (Yu et al., 2010) and categorized genes by the combination of function and localization. We analyzed the 15 function-location combinations with more than 50 genes. After identifying those categories that were significantly enriched, we cross-referenced which categories of genes shown to be under adaptive within-person evolution in a previous study of B. fragilis within-person evolution were in Zhao et al., 2019. Of the 16 genes reported in that paper, 8 were assigned a functional COG category/cellular location and in the reference genome (NCTC_9343). Four of these were in outer membrane inorganic ion transport and metabolism, a significant enrichment ($p=1.22\\times10^{\u22124}$; binomial test) (Supplementary file 1, Supplementary file 2).\n\n### Code availability\n\nCode and simulation results are available at https://github.com/PaulTorrillo/Microbiome_Reversions (copy archived at Torrillo, 2023).\n",
+      "created_at": "2025-12-04T04:52:33.291936Z"
+    },
+    {
+      "id": "d6f4c766-a979-4539-9dd8-1303e2810a9a",
+      "submission_id": "7399a51b-09d4-4280-a6c2-acc2162307f2",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Vaughn S Cooper, https://ror.org/01an3r305 University of Pittsburgh United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.93146.sa0](https://doi.org/10.7554/eLife.93146.sa0)\n\nThis valuable study addresses the interpretation of patterns of synonymous and nonsynonymous diversity in microbial genomes. The authors present solid theoretical and computational evidence that adaptive mutations that revert the amino acids to an earlier state can significantly impact the observed ratios of synonymous and nonsynonymous mutations in human commensal bacteria. This article will be of interest to microbiologists with a background in evolution and to researchers studying the human microbiome.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Vaughn S Cooper, https://ror.org/01an3r305 University of Pittsburgh United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.93146.sa1](https://doi.org/10.7554/eLife.93146.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Reversions mask the contribution of adaptive evolution in microbiomes\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Detlef Weigel as the Senior Editor.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions (for the authors):\n\n1) Address how recombination affects assumptions of your model, which invokes Muller's Ratchet to necessitate back\u2013mutation. In effect, recombination of the wild\u2013type allele is equivalent to back\u2013mutation, but recombination can also revert or incorporate multiple linked variants at once and alter the assumptions of your model and analyses. As recombination tends to bring in many more mutations overall than occur in regions of a pair of genomes with asexual ancestry, the effects cannot be neglected. To what extent can this give rise to a similar dependence of dN/dS on dS as seen in the data?\n\n2) Clarify the underlying assumptions of the model (e.g., the fitting parameters nloci and Tadapt), its theoretical results, and experimental applications. In addition, it clarifies the environmental conditions used for simulations, which could involve colonization of new hosts or environments, affect selection at many sites at once, and lead to clonal interference.\n\n3) Evaluate the alternative that many compensatory mutations that could phenotypically revert an earlier mutation might overcome the exact specific reversion mutation in greater detail, including whether clonal interference between compensatory and reversion mutations would result in the mutations with the largest s \u2013 eg, as mentioned, reversion of a stop codon \u2013 being much more likely to sweep. Additional discussion of this important issue would be valuable.\n\nReviewer #1 (Recommendations for the authors):\n\nThis study makes a substantial contribution to our understanding of the molecular evolutionary dynamics of microbial genomes by proposing a model that incorporates relatively frequent adaptive reversion mutations. In many ways, this makes sense from my own experience with evolutionary genomic data of microbes, where reversions are surprisingly familiar as evidence of the immense power of selection in large populations.\n\nOne criticism is the reliance on one major data set of B. fragilis to test fits of these models, but this is relatively minor in my opinion and can be caveated by discussion of other relevant datasets for parallel investigation.\n\nAnother point is that this problem isn't as new as the manuscript indicates, see for example https://journals.asm.org/doi/10.1128/aem.02002\u201320.\n\nNonetheless, the paper succeeds by both developing theory and offering concrete parameters to illustrate the magnitudes of the problems that distinguish competing ideas, for example, the risk of mutational load posed in the absence of frequent back mutation.\n\nPlease expand the discussion of the novelty of incorporating (or overlooking) reversion mutations as well as the broader problems of dN/dS metrics for population\u2013wide data where fixation is rare.\n\nI'm otherwise enthusiastic about this study.\n\nReviewer #2 (Recommendations for the authors):\n\nThis manuscript asks how different forms of selection affect the patterns of genetic diversity in microbial populations. One popular metric used to infer signatures of selection is dN/dS, the ratio of nonsynonymous to synonymous distances between two genomes. Previous observations across many bacterial species have found dN/dS decreases with dS, which is a proxy for the divergence time. The most common interpretation of this pattern was proposed by Rocha et al. (2006), who suggested the excess in nonsynonymous mutations on short divergence times represent transient deleterious mutations that have not yet been purged by selection.\n\nIn this study, the authors propose an alternative model based on the population structure of human gut bacteria, in which dN is dominated by selective sweeps of SNPs that revert previous mutations within local populations. The authors argue that contrary to standard population genetics models, which are based on the population dynamics of large eukaryotes, the large populations in the human gut mean that reversions may be quite common and may have a large impact on evolutionary dynamics. They show that such a model can fit the decrease of dN/dS in time at least as well as the purifying selection model.\n\nStrengths\n\nThe main strength of the manuscript is to show that adaptive sweeps in gut microbial populations can lead to small dN/dS. While previous work has shown that using dN/dS to infer the strength of selection within a population is problematic (see Kryazhimskiy and Plotkin, 2008, cited in the paper) the particular mechanism proposed by the authors is new to my knowledge. In addition, despite the known caveats, dN/dS values are still routinely reported in studies of microbial evolution, and so their interpretation should be of considerable interest to the community.\n\nThe authors provide compelling justification for the importance of adaptive reversions and make a good case that these need to be carefully considered by future studies of microbial evolution. The authors show that their model can fit the data as well as the standard model based on purifying selection and the parameters they infer appear to be plausible given known data. More generally, I found the discussion on the implications of traditional population genetics models in the context of human gut bacteria to be a valuable contribution of the paper.\n\nWeaknesses\n\nThe authors argue that the purifying selection model would predict a gradual loss in fitness via Muller's ratchet. This is true if recombination is ignored, but this assumption is inconsistent with the data from Garud, et al. (2019) cited in the manuscript, who showed a significant linkage decrease in the bacteria also used in this study.\n\nI also found that the data analysis part of the paper added little new to what was previously known. Most of the data comes directly from the Garud et al. study and the analysis is very similar as well. Even if other appropriate data may not currently be available, I feel that more could be done to test specific predictions of the model with more careful analysis.\n\nFinally, I found the description of the underlying assumptions of the model and the theoretical results difficult to understand. I could not, for example, relate the fitting parameters nloci and Tadapt to the simulations after reading the main text and the supplement. In addition, it was not clear to me if simulations involved actual hosts or how the changes in selection coefficients for different sites was implemented. Note that these are not simply issues of exposition since the specific implementation of the model could conceivably lead to different results. For example, if the environmental change is due to the colonization of a different host, it would presumably affect the selection coefficients at many sites at once and lead to clonal interference. Related to this point, it was also not clear that the weak mutation strong selection assumption is consistent with the microscopic parameters of the model. The authors also mention that \"superspreading\" may somehow make a difference to the probability of maintaining the least loaded class in the purifying selection model, but what they mean by this was not adequately explained.\n\nI see three main issues that would significantly improve the manuscript if addressed. The first is the issue of recombination, which undermines using Muller's ratchet to motivate the proposed model. Including the effects of recombination in the model would be a significant project in itself so I do not expect the authors to do that, but I do believe it is important that the issue be seriously addressed. In any case, I think the fact that the values of s implied by the purifying selection model are so small is already problematic, for many of the reasons discussed in the paper, so I would suggest focusing more on that. It might be more useful perhaps to demonstrate in simulations how even rare adaptive sweeps would affect the purging of deleterious mutations with small s, which is mentioned in the manuscript but not developed.\n\nThe second issue I found is the data analysis. It would be useful to check some of the hypotheses raised in the text directly from the data. For example, the authors mention that premature stop codons may preferentially be subject to reversions, which could be verified. Even if these analyses do not directly support the model, the authors can still comment on them and I believe it would significantly add to the paper.\n\nFinally, I found the presentation of the model and simulations to be confusing and feel that it needs to be made significantly clearer for readers to be able to understand. In general, the supplement had considerable detail on standard results (Sec. 2.1 and 2.2 for example), but was very vague on the actual model itself (Sec. 3.1 and 3.2). If anything, this emphasis should be reversed. I've added some more specific comments below which might help with this issue. It should also be noted that the inferred values of s from any simple model will be effective parameters that may not be directly related to measurable parameters from experiments or observations. To give a very simple example, if selection coefficients are varying quickly in time, the relevant s for the accumulation of mutations would be the time average s, which may be considerably smaller than the typical value.\n\nReviewer #3 (Recommendations for the authors):\n\nThe diversity of bacterial species in the human gut microbiome is widely known, but the extensive diversity within each species is far less appreciated. Strains found in individuals on opposite sides of the globe can differ by as little as handfuls of mutations, while strains found in an individual's gut, or in the same household, might have a common ancestor tens of thousands of years ago. What are the evolutionary, ecological, and transmission dynamics that established and maintain this diversity?\n\nThe time, T, since the common ancestor of two strains, can be directly inferred by comparing their core genomes and finding the fraction of synonymous (non\u2013amino acid changing) sites at which they differ: dS. With the per\u2013site per\u2013generation mutation rate, \u03bc, and the mean generation times roughly known, this directly yields T (albeit with substantial uncertainty of the generation time.) A traditional way to probe the extent to which selection plays a role is to study pairs of strains and compare the fraction of non\u2013synonymous (amino acid or stop\u2013codon changing) sites, dN, at which the strains differ with their dS. Small dN/dS, as found between distantly related strains, is attributed to purifying selection against deleterious mutations dominating over mutations that have driven adaptive evolution. Large dN/dS as found in laboratory evolution experiments, is caused by beneficial mutations that quickly arise in large bacterial populations, and, with substantial selective advantages, per generation, can rise to high abundance fast enough that very few synonymous mutations arise in the lineages that take over the population.\n\nA number of studies (including by Lieberman's group) have analyzed large numbers of strains of various dominant human gut species and studied how dN/dS varies. Although between closely related strains the variations are large \u2013 often much larger than attributable to just statistical variations \u2013 a systematic trend from dN/dS around unity or larger for close relatives to dN/dS ~ 0.1 for more distant relatives has been found in enough species that it is natural to conjecture a general explanation.\n\nThe conventional explanation is that, for close relatives, the effects of selection over the time since they diverged has not yet purged weakly deleterious mutations that arose by chance \u2013 roughly mutations with sT<1 \u2013 while since the common ancestor of more distantly related strains, there is plenty of time for most of those that arose to have been purged.\n\nTorrillo and Lieberman have carried out an in\u2013depth \u2013 sophisticated and quantitative \u2013 analysis of models of some of the evolutionary processes that shape the dependence of dN/dS on dS \u2013 and hence on their divergence time, T. They first review the purifying selection model and show that \u2013 even ignoring its inability to explain dN/dS > 1 for many closely related pairs \u2013 the model has major problems explaining the crossover from dN/dS somewhat less than unity to much smaller values as dS goes through \u2013 on a logarithmic scale \u2013 the 10^\u20134 range. The first problem, already seen in the infinite\u2013population\u2013size deterministic model, is that a very large fraction of non\u2013synonymous mutations would have to have deleterious s's in the 10^\u20135 per generation range to fit the data (and a small fraction effectively neutral). As the s's are naturally expected (at least in the absence of quantitative analysis to the contrary) to be spread out over a wide range on a logarithmic scale of s, this seems implausible. But the authors go further and analyze the effects of fluctuations that occur even in the very large populations: ~ >10^12 bacteria per species in one gut, and 10^10 human guts globally. They show that Muller's ratchet \u2013 the gradual accumulation of weakly deleterious mutations that are not purged by selection \u2013 leads to a mutational meltdown with the parameters needed to fit the purifying selection model. In particular, with N_e the \"effective population size\" that roughly parametrizes the magnitude of stochastic birth\u2013death and transition fluctuations, and U the total mutation rate to such deleterious mutations this occurs for U/s > log(sN_e) which they show would obtain with the fitted parameters.\n\nTorrillo and Lieberman promise an alternate model: that there are a modest number of \"loci\" at which conditionally beneficial mutations can occur that are beneficial in some individual guts (or other environmental conditions) at some times, but deleterious in other (or the same) gut at other times. With the ancestors of a pair of strains having passed through one too many individuals and transmissions, it is possible for a beneficial mutation to occur and rise in the population, only later to be reverted by the beneficial inverse mutation. With tens of loci at which this can occur, they show that this process could explain the drop of dN/dS from short times \u2013 in which very few such mutations have occurred \u2013 to very long times by which most have flipped back and forth so that a random pair of strains will have the same nucleotide at such sites with 50% probability. Their qualitative analysis of a minimally simple model of this process shows that the bacterial populations are plenty big enough for such specific mutations to occur many times in each individual's gut, and with modest beneficials, to takeover. With a few of these conditionally beneficial mutations or reversions occurring during an individuals lifetime, they get a reasonably quantitative agreement with the dN/dS vs dS data with very few parameters. A key assumption of their model is that genetically exact reversion mutations are far more likely to takeover a gut population \u2013 and spread \u2013 than compensatory mutations which have a similar phenotypic\u2013reversion effect: a mutation that is reverted does not show up in dN, while one that is compensated by another shows up as a two\u2013mutation difference after the environment has changed twice.\n\nStrengths:\n\nThe quantitative arguments made against the conventional purifying selection model are highly compelling, especially the consideration of multiple aspects that are usually ignored, including \u2013 crucially \u2013 how Muller's ratchet arises and depends on the realistic and needed\u2013to\u2013fit parameters; the effects of bottlenecks in transmission and the possibility that purifying selection mainly occurs then; and complications of the model of a single deleterious s, to include a distribution of selective disadvantages. Generally, the author's approach of focusing on the simplest models with as few as possible parameters (some roughly known), and then adding in various effects one\u2013by\u2013one, is outstanding and, in being used to analyze environmental microbial data, exceptional.\n\nThe reversion model the authors propose and study is a simple general one and they again explore carefully various aspects of it \u2013 including dynamics within and between hosts \u2013 and the consequent qualitative and quantitative effects. Again, the quantitive analysis of almost all aspects is exemplary. Although it is hard to make a compelling guess of the number of loci that are subject to alternating selection on the needed time\u2013scales (years to centuries) they make a reasonable argument for a lower bound in terms of the number of known invertible promoters (that can genetically switch gene expression on and off).\n\nWeaknesses:\n\nThe primary weakness of this paper is one that the author's are completely open about: the assumption that, collectively, any of possibly\u2013many compensatory mutations that could phenotypically revert an earlier mutation, are less likely to arise and takeover local populations than the exact specific reversion mutation. While detailed analysis of this is, reasonably enough, beyond the scope of the present paper, more discussion of this issue would add substantially to this work. Quantitatively, the problem is that even a modest number of compensatory mutations occurring as the environmental pressures change could lead to enough accumulation of non\u2013synonymous mutations that they could cause dN/dS to stay large \u2013 easily >1 \u2013 to much larger dS than is observed. If, say, the appropriate locus is a gene, the number of combinations of mutations that are better in each environment would play a role in how large dN would saturate to in the steady state (1/2 of n_loci in the author's model). It is possible that clonal interference between compensatory and reversion mutations would result in the mutations with the largest s \u2013 eg, as mentioned, reversion of a stop codon \u2013 being much more likely to take over, and this could limit the typical number of differences between quite well\u2013diverged strains. However, the reversion and subsequent re\u2013reversion would have to both beat out other possible compensatory mutations \u2013 naively less likely. I recommend that a few sentences in the Discussion be added on this important issue along with comments on the more general puzzle \u2013 at least to this reader! \u2013 as to why there appear to be so little adaptive genetic changes in core genomes on time scales of human lifetimes and civilization.\n\nAn important feature of gut bacterial evolution that is now being intensely studied is only mentioned in passing at the end of this paper: horizontal transfer and recombination of core genetic material. As this tends to bring in many more mutations overall than occur in regions of a pair of genomes with asexual ancestry, the effects cannot be neglected. To what extent can this give rise to a similar dependence of dN/dS on dS as seen in the data? Of course, such a picture begs the question as to what sets the low dN/dS of segments that are recombined \u2013\u2013 often from genetic distances comparable to the diameter of the species.\n\nThe main substantive criticisms are summarized in \"Weaknesses\" section. Here are a few more minor points, and then presentational and pedagogical comments.\n\n1) The analysis of the effects of a distribution of values of s is not convincing. A simple argument that for each s there is a crossover dS ~ mu/s, and approximating the corresponding portion of dN/dS vs dS as a step function at that crossover, gives a better approximation that using the harmonic mean: the rough distribution of s needed to fit, can then be eyeballed from the data \u2013 roughly by derivative d[dN/dS]/dS. (This point is roughly made \u2013 although hard to parse and confounded by uninformative details \u2013 in the Supplement).\n\n2) For Muller's ratchet and deleterious loading: The time dependence computed from the deterministic analysis is rather misleading as it assumes \u2013 unreasonably \u2013 that the common ancestor had no deleterious mutations. The main point is the small fraction of the least\u2013loaded subpopulation, W(t=infinity), being very small. The comparison of this with the appropriate N_e \u2013 whether N_e s exp(\u2013U/s) is small or large \u2013 determining whether Muller's ratchet operates is the important point which needs emphasizing more: and this should be in the main text. [Note that for Muller's ratchet, using the harmonic mean s is roughly correct.] I would replace existing Eq(5) with an equation with this comparison in it (now just loosely in words around L 163) and refer to Ref(29) for analyses. Explain that if N is large enough or U small enough, reversions of the deleterious mutations will prevent Muller's ratchet.\n\nAdditionally, make clear that the model assumes additive effects of the deleterious mutations, and note that the average burden is small \u2013 and thus additive probably reasonable \u2013 even when large enough that Muller's ratchet is effective.\n\n3) Some more discussion of \"effective population size\" is needed when introduced, in addition to that in the Discussion. This is especially true here, since \u2013 as noted in Discussion \u2013 it is often taken from the dS of a species via N_e = /mu: simply the overall T_MRCA in units of generations. The way the present paper uses N_e, is how it appears in modeling and thus controls several actual biological quantities: how much mutations can change abundance by drift, and how often beneficial mutations occur. This is thus a \"real\" effective population size. It is important to note, however, that with clonal interference (both in individuals and across human populations) different \"N_e\"'s are involved for different processes. A detailed discussion is not needed, but a couple of sentences (and a reference) in the main text is \u2013 around L165 \u2013 and a note in caption of Figure 2.\n\n4) What is being assumed in various places (eg Figure 2) for the generation time is unclear.\n\n5) The heuristic explanation for the time dependence of the reversion model is missing. T_adapt is rather confusing. A basic quantity \u2013 call it eg tau_change \u2013 is how often the conditions for a particular transient mutation change from beneficial to deleterious. This is the time that corresponds to the dS at which the crossover in the dN/dS data occurs \u2013 and indeed what is in the equations. T_adapt = tau_change/n_loci is the typical time between when any of these mutations switch. This determines dN. The distinction needs explaining.\n\n6) The meaning of \"loci\" in counting the number of possible reverting mutations is unclear. Presumably what is meant is that at each locus there may be a number of roughly equivalent mutations \u2013 with each changing the phenotype so the others would no longer be beneficial \u2013 but to revert the phenotype needs to revert the specific one that occurred. This needs to be made clearer. Also, note that this would change the numbers somewhat as the beneficial mutation rate would be higher, but it has shown that analysis is not sensitive to that factor because of the large populations. Generally, a clearer statement that the beneficial s is the important quantity setting the time scales \u2013 log(Ns)/s \u2013 rather than the time for mutation to arise, is needed in the main text.\n\n7) Effects of recombination: It would be good to add some more discussion on whether the effects of recombination alone (with an assumption about the effects of purifying selection on long time scales) could fit the data \u2013 as pointed out in \"Weaknesses\" section.\n\nIs reversion by recombination likely to have a substantial role in dN/dS? I do not find the suggestion that multiple mutations could be simultaneously reverted by recombination at all believable. The further away the segment is, the more implausible is the scenario that compensatory mutations \u2013 let all other beneficial mutations with epistasis between them \u2013 have not occurred.\n\n8) Generally, for each of the models and extensions used, make clear the number and set of parameters, and the assumptions. (Eg Figure 3)\n\nPresentation:\n\nAlthough the overall scenario, points made, and many of the explanations are quite clear, aspects of the presentation, figures, and captions are unclear or sloppy and detract from the paper's readability and potential impact. More specific and clear statements of the assumptions and model features are needed. And which of the mathematics to include or not in the main text, the supplement, or not at all, could be improved.\n\nNotation:\n\n\u2013 Mutation rates: mu_S etc are more often used per site: Here they are used for genome\u2013wide instead of the more conventional \u2013 and better \u2013 U_S etc\n\n\u2013 Use some notation for s of beneficial mutants \u2013 eg s_adapt.\n\n\u2013 T_adapt see above\n\n\u2013 N is used both for population size and numbers. With the use of n_loci, might be better to use n(t)'s \u2013 perhaps best with an overbar \u2013 for the average number of mutations that accumulate with time.\n\nIn many figures, notations such as \"1.8e+01\" or, in one, \"quadrillion\" are used: Use standard notation and, eg 10^1 mark instead of 1.8 times this.\n\nFigure 1:\n\nIt is not clear what is meant by \"adaptive genes\" in the Zhao et al. data shown.\n\nIn the caption, say that crossover occurs at roughly dS ~ mu/s : this makes the role of s clear. In general, this kind of heuristic note is useful \u2013 independently of whether or not a reader is mathematically inclined!\n\nL98: Make clear N_transient etc are averages. Spell out that for dS << 1, dS ~ 2 U_S T_MRCA, and this regime obtains for all the data.\n\nL127: Spell out mu_S (or better U_S) in terms of the number of sites and generation time.\n\nL150: the minus sign in the exponent is not visible (similarly in some other equations)\n\nL187\u2013194: It is unclear what is meant by \"superspreaders\" and what the 30,000X factor means. Is it that strains from one individual would have to spread to 30,000 others before reversions etc? The argument against superspreaders could be expanded beyond \"seems unlikely\".\n\nL204\u2013213: Equation (6) and surrounding text on general process, is not needed and confusing. Instead, the left side and last equality in Eq S23 should be pulled into the main text. Then can go directly to Eq(7) with an explanation that the n_loci/2 factor is simply the average number of differences between distantly related bacteria.\n\nL259: Is the fitted T_adapt in generations? Also, give in years. And don't pretend to precision as \"840\", and later \"110 years\": give ranges.\n\nFigure 4: (a): note in the caption that actual dN/dS > 1 and why.\n\nSpecify n_loci used.\n\n(b) \"discounting beneficial mutations\" is unclear: are or aren't the reversions included in this statement?\n\nL287: Explain what PAML is/assumes.\n\nL321: Note that in the simulations with genetic classes, the dN, etc between two individuals cannot be directly kept track of. Correct?\n\nL348: Meaning of \"negative feedback\" is unclear.\n\nL353: As per main comments: more is needed on how tiny the rate of compensatory or other beneficial mutations would have to be to not raise \u03b1 hugely.\n\nL365: Explain \"pseudogenized\".\n\nMethods and Theory:\n\nGenerally, much more than needed deriving standard results.\n\nWright\u2013Fisher simulations: The notation here is very bad, with nearby letters being used for very different things \u2013 eg why not t instead of i which is in any case elsewhere used to mean something different? \u2013 and j_k used as it is but with j being an index. And generally, it is overly long and unclear.\n\nL 673: what is RMSD?\n\nL678: Explain PAML\n\ndN/dS Theory: Much too much detail as most very standard Eg: certainly don't need all the derivation leading up to L742 equation.\n\nL777: Make clear that \u03b1 used in the main text is that with 0 subscript here.\n\nL791\u2013815 is confusing, not needed, and probably not valid. The point made in L817 is all that is needed \u2013 see comment (1) above.\n\nL860: Say that sNW factor is mean fitness.\n\nL895 is a classic result and not all derivation is needed.\n\nL912: \"has 2s probability of extinction\" is unclear what it means: I presume something about the rate of ratchet. L915 equations, as noted in (2) should be in the main text.\n\nExtinction and Fixation Probability:\n\nThis is all standard and not needed beyond quoting results.\n\nL980: \"Mutation is accessible if\u2026 \" is very misleading. If L982 is satisfied, then there will be clonal interference between multiple mutations, and much of the analysis changes. But whether satisfied or not, the mutations can arise and fix: what changes is which will dominate the time to fixation as in L989\n\nL1005: As noted, should pull part of this into the main text.\n\nImplied Amount of Superspreading: extremely unclear. (and S26 is not even an equation)\n\nSI Figures: There are probably more than needed and captions are often insufficient. Would be better to have a few paragraphs of text explaining them collectively, and the figures interspersed in the text.\n\nFigure S4: What is \"theory\" curve?\n\nFigure S5: Very unclear what was done or what modeled. Why is every 100,000 generations underestimated of bottleneck? What does \"beneficial mutations are released\" mean.\n",
+      "created_at": "2025-12-04T04:52:33.291936Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T04:52:33.291936Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T04:52:33.291936Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "4f86fd17-92ea-49d6-b621-08aeded81a2b",
+      "content_id": "9d00f866-736e-4e5e-920e-9cd641d12f8e",
+      "claim_id": "C1",
+      "claim": "Within a bacterial species, genomes separated by larger mutational distances exhibit stronger evidence of purifying selection as assessed by dN/dS.",
+      "claim_type": "EXPLICIT",
+      "source": "Even within a bacterial species, genomes separated by larger mutational distances exhibit stronger evidence of purifying selection as assessed by dN/dS, the normalized ratio of nonsynonymous to synonymous mutations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general observation stated in the abstract that sets up the main research question.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:52:33.291936Z"
+    },
+    {
+      "id": "ba7eecb8-99ab-494c-a536-e081a24797a3",
+      "content_id": "9d00f866-736e-4e5e-920e-9cd641d12f8e",
+      "claim_id": "C2",
+      "claim": "The classical interpretation of dN/dS scale dependence is weak purifying selection.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show that the classical interpretation of this scale dependence, weak purifying selection, leads to problematic mutation accumulation when applied to available gut microbiome data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states this as the classical interpretation that they are challenging.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:52:33.291936Z"
+    },
+    {
+      "id": "33c81636-bf45-438c-ba4a-e5601e38ab1e",
+      "content_id": "9d00f866-736e-4e5e-920e-9cd641d12f8e",
+      "claim_id": "C3",
+      "claim": "The classical weak purifying selection model leads to problematic mutation accumulation when applied to gut microbiome data.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show that the classical interpretation of this scale dependence, weak purifying selection, leads to problematic mutation accumulation when applied to available gut microbiome data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study demonstrated through analytical and simulation approaches.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:52:33.291936Z"
+    },
+    {
+      "id": "7835fc3d-6153-4ee5-8947-5560d41784d4",
+      "content_id": "9d00f866-736e-4e5e-920e-9cd641d12f8e",
+      "claim_id": "C4",
+      "claim": "Reversions that occur and sweep within-host populations are nearly guaranteed in microbiomes due to large population sizes, short generation times, and variable environments.",
+      "claim_type": "EXPLICIT",
+      "source": "Reversions that occur and sweep within-host populations are nearly guaranteed in microbiomes due to large population sizes, short generation times, and variable environments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by theoretical calculations and simulations presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:52:33.291936Z"
+    },
+    {
+      "id": "0ec068ed-d245-4bda-bd5e-5292694c4784",
+      "content_id": "9d00f866-736e-4e5e-920e-9cd641d12f8e",
+      "claim_id": "C5",
+      "claim": "Adaptive reversion can explain the dN/dS decay given only dozens of locally fluctuating selective pressures.",
+      "claim_type": "EXPLICIT",
+      "source": "Using analytical and simulation approaches, we show that adaptive reversion can explain the dN/dS decay given only dozens of locally fluctuating selective pressures, which is realistic in the context of Bacteroides genomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through model fitting and simulations in the Results section.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:52:33.291936Z"
+    },
+    {
+      "id": "7ff5e72b-87f9-42aa-85e9-75491c78c92e",
+      "content_id": "9d00f866-736e-4e5e-920e-9cd641d12f8e",
+      "claim_id": "C6",
+      "claim": "Low values of dN/dS obtained from long timescales may emerge even when adaptive sweeps are frequent.",
+      "claim_type": "EXPLICIT",
+      "source": "The success of the adaptive reversion model argues for interpreting low values of dN/dS obtained from long timescales with caution as they may emerge even when adaptive sweeps are frequent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a key conclusion from the reversion model presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:52:33.291936Z"
+    },
+    {
+      "id": "760645b3-2059-495b-afbf-4d0558c8c017",
+      "content_id": "9d00f866-736e-4e5e-920e-9cd641d12f8e",
+      "claim_id": "C7",
+      "claim": "The vast majority of possible mutations do not increase bacterial fitness and instead result in a neutral or deleterious effect.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the vast majority of possible mutations do not increase bacterial fitness and instead result in a neutral or deleterious effect (Kimura, 1977; Davies et al., 1999; Jolley et al., 2000; Dingle et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to established literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:52:33.291936Z"
+    },
+    {
+      "id": "52aa0338-c792-424f-869e-cbe30028a3ac",
+      "content_id": "9d00f866-736e-4e5e-920e-9cd641d12f8e",
+      "claim_id": "C8",
+      "claim": "A dN/dS ratio of >1 indicates the dominance of past adaptive evolution.",
+      "claim_type": "EXPLICIT",
+      "source": "A dN/dS ratio of >1 indicates the dominance of past adaptive evolution (i.e., directional selection) while a ratio of <1 traditionally implies past selection against amino acid change (purifying selection).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a standard interpretation in population genetics.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:52:33.291936Z"
+    },
+    {
+      "id": "799ec5d1-9968-4c57-9bdc-a77631a761ff",
+      "content_id": "9d00f866-736e-4e5e-920e-9cd641d12f8e",
+      "claim_id": "C9",
+      "claim": "A dN/dS ratio of <1 traditionally implies past selection against amino acid change (purifying selection).",
+      "claim_type": "EXPLICIT",
+      "source": "A dN/dS ratio of >1 indicates the dominance of past adaptive evolution (i.e., directional selection) while a ratio of <1 traditionally implies past selection against amino acid change (purifying selection).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a standard interpretation in population genetics.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:52:33.291936Z"
+    },
+    {
+      "id": "cee37726-88f5-4f9d-9ad0-314653a92d80",
+      "content_id": "9d00f866-736e-4e5e-920e-9cd641d12f8e",
+      "claim_id": "C10",
+      "claim": "Early sequencing work comparing bacterial genomes of the same species reported relatively low dN/dS values across the whole genome (<0.15).",
+      "claim_type": "EXPLICIT",
+      "source": "Early sequencing work comparing bacterial genomes of the same species reported relatively low dN/dS values across the whole genome (<0.15) (Jolley et al., 2000; Dingle et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:52:33.291936Z"
+    },
+    {
+      "id": "5b406d10-da36-4ac1-ab74-00c79913afaa",
+      "content_id": "9d00f866-736e-4e5e-920e-9cd641d12f8e",
+      "claim_id": "C11",
+      "claim": "High dN/dS values (~1) were found between closely related strains as sequencing of organisms separated by fewer mutations became feasible.",
+      "claim_type": "EXPLICIT",
+      "source": "However, as it became economically feasible to sequence organisms separated by fewer mutations and therefore less evolutionary time, a contrasting pattern emerged in which high dN/dS values (~1) were found between closely related strains (Feil et al., 2003; Baker et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:52:33.291936Z"
+    },
+    {
+      "id": "361a24d4-af48-4849-9805-740830ed4e50",
+      "content_id": "9d00f866-736e-4e5e-920e-9cd641d12f8e",
+      "claim_id": "C12",
+      "claim": "Recent work in the human microbiome has found values of dN/dS > 1.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent work in the human microbiome has confirmed such results and furthered the contrast between timescales by finding values of dN/dS > 1 (Garud et al., 2019; Lieberman et al., 2011; Shoemaker et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to recent published studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:52:33.291936Z"
+    },
+    {
+      "id": "6b50aa65-c8eb-4568-b3ca-7af37cf7c1ae",
+      "content_id": "9d00f866-736e-4e5e-920e-9cd641d12f8e",
+      "claim_id": "C13",
+      "claim": "The timescale dependence of dN/dS has been mainly attributed to the ongoing action of purifying selection.",
+      "claim_type": "EXPLICIT",
+      "source": "The timescale dependence of dN/dS has been mainly attributed to the ongoing action of purifying selection (Garud et al., 2019), a model first proposed by Rocha et al., 2006.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:52:33.291936Z"
+    },
+    {
+      "id": "102ee0da-5ad8-439d-9b8b-db107d27631c",
+      "content_id": "9d00f866-736e-4e5e-920e-9cd641d12f8e",
+      "claim_id": "C14",
+      "claim": "Fitting observed data from Garud et al., 2019 with purifying selection yields median values of \u03b1 \u2248 0.10 (0.09\u20130.14) and s \u2248 3.5 \u00d7 10-5 (2.6 \u00d7 10-5-6.5 \u00d7 10\u20135) across all species.",
+      "claim_type": "EXPLICIT",
+      "source": "Fitting the data from Garud et al., 2019, we infer median values of \u03b1 \u2248 0.10 (0.09\u20130.14) and s \u2248 3.5 \u00d7 10-5 (2.6 \u00d7 10-5-6.5 \u00d7 10\u20135) across all species ('Methods', Figure 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct result from fitting the purifying selection model to empirical data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:52:33.291936Z"
+    },
+    {
+      "id": "49e23edd-7365-4eaa-8f65-58ac207a8186",
+      "content_id": "9d00f866-736e-4e5e-920e-9cd641d12f8e",
+      "claim_id": "C15",
+      "claim": "The purifying selection model indicates that only ~10% of nonsynonymous mutations are neutral and the remaining ~90% are weakly deleterious.",
+      "claim_type": "EXPLICIT",
+      "source": "These values indicate a model in which only ~10% of nonsynonymous mutations are neutral and the remaining ~90% are so weakly deleterious that they are beyond the limit of detection of any experimental method to date (s \u2273 10\u20133) (Gallet et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the fitted parameter values from the purifying selection model.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:52:33.291936Z"
+    },
+    {
+      "id": "00a12423-6e40-430b-a1ee-ef715601cb5a",
+      "content_id": "9d00f866-736e-4e5e-920e-9cd641d12f8e",
+      "claim_id": "C16",
+      "claim": "Deep mutational scanning experiments have revealed that most amino acid-changing mutations in essential genes are deleterious enough to be measured in the lab.",
+      "claim_type": "EXPLICIT",
+      "source": "While the implied proportion of deleterious mutations may seem high, deep mutational scanning experiments have revealed that most amino acid-changing mutations in essential genes are deleterious enough to be measured in the lab (Kelsic et al., 2016; Dewachter et al., 2023); complex real-world environments are expected to constrain an even larger fraction of the genome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to experimental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:52:33.291936Z"
+    },
+    {
+      "id": "ee650de6-bef3-4f8a-a079-35e74d506c10",
+      "content_id": "9d00f866-736e-4e5e-920e-9cd641d12f8e",
+      "claim_id": "C20",
+      "claim": "With UN/s = 29, the frequency of mutation-free organisms in a population is extremely small (<10\u201312 after 100,000 generations).",
+      "claim_type": "EXPLICIT",
+      "source": "With this value of the mutation-selection balance parameter, the frequency of mutation-free organisms in a population is extremely small, even for a population that starts without any deleterious mutations (<10\u201312 after 100,000 generations).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical prediction from the mutation-selection balance parameter.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:52:33.291936Z"
+    },
+    {
+      "id": "7d9ce3fa-8862-4198-acb9-3d12e36ea2d2",
+      "content_id": "9d00f866-736e-4e5e-920e-9cd641d12f8e",
+      "claim_id": "C21",
+      "claim": "Simulations substantiate the prediction of mutation accumulation and decrease in frequency of the wild type under the purifying selection model.",
+      "claim_type": "EXPLICIT",
+      "source": "Simulations substantiate this prediction of mutation accumulation and decrease in frequency of the wild type (Figure 2a, 'Methods').",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through computational simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:52:33.291936Z"
+    },
+    {
+      "id": "7a422025-60c2-42b0-b81a-9ebb380f1561",
+      "content_id": "9d00f866-736e-4e5e-920e-9cd641d12f8e",
+      "claim_id": "C23",
+      "claim": "The purifying model requires levels of drift unrealistic at the within-person or across-globe scales.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the purifying model requires levels of drift unrealistic at the within-person or across-globe scales.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the Ne requirements compared to realistic population sizes.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:52:33.291936Z"
+    },
+    {
+      "id": "b6a80a99-257f-473d-97e7-5c8e02d2cf27",
+      "content_id": "9d00f866-736e-4e5e-920e-9cd641d12f8e",
+      "claim_id": "C24",
+      "claim": "Within-host adaptive sweeps have been observed in Bacteroides fragilis.",
+      "claim_type": "EXPLICIT",
+      "source": "Lastly, the intolerance of the purifying model to adaptation and transmission is particularly problematic. Within-host adaptive sweeps have been observed in Bacteroides fragilis (Zhao et al., 2019) and other Bacteroides (Garud et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:52:33.291936Z"
+    },
+    {
+      "id": "b8a65496-8035-465d-ab77-5aa2ebb85b5d",
+      "content_id": "9d00f866-736e-4e5e-920e-9cd641d12f8e",
+      "claim_id": "C25",
+      "claim": "Homologous recombination occurs at detectable rates within human gut microbiomes and within the Bacteroidales order.",
+      "claim_type": "EXPLICIT",
+      "source": "Homologous recombination, which occurs at detectable rates within human gut microbiomes and within the Bacteroidales order (Liu and Good, 2024), cannot rescue a population from Muller's ratchet when such weakly deleterious mutations are so frequent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:52:33.291936Z"
+    },
+    {
+      "id": "d5f5fde1-e8f2-4781-a1b6-52ae16063d0d",
+      "content_id": "9d00f866-736e-4e5e-920e-9cd641d12f8e",
+      "claim_id": "C26",
+      "claim": "Recombination cannot rescue a population from Muller's ratchet when weakly deleterious mutations are frequent.",
+      "claim_type": "EXPLICIT",
+      "source": "Homologous recombination, which occurs at detectable rates within human gut microbiomes and within the Bacteroidales order (Liu and Good, 2024), cannot rescue a population from Muller's ratchet when such weakly deleterious mutations are so frequent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through simulations in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:52:33.291936Z"
+    },
+    {
+      "id": "fb9753da-24d0-42d5-82af-9aaf8fb3bddc",
+      "content_id": "9d00f866-736e-4e5e-920e-9cd641d12f8e",
+      "claim_id": "C27",
+      "claim": "Adaptive nonsense mutations have been observed to emerge frequently within individual people in both pathogens and commensals.",
+      "claim_type": "EXPLICIT",
+      "source": "Adaptive nonsense mutations have been observed to emerge frequently within individual people in both pathogens (Culyba and Van Tyne, 2021; Lieberman et al., 2011; Key et al., 2023; Shopsin et al., 2008) and commensals (Zhao et al., 2019; Barreto et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to published studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:52:33.291936Z"
+    },
+    {
+      "id": "9a9a6a69-aa2d-49af-a5eb-3c1ddcc0ec2e",
+      "content_id": "9d00f866-736e-4e5e-920e-9cd641d12f8e",
+      "claim_id": "C28",
+      "claim": "Reversions of stop codons have been observed in mouse models.",
+      "claim_type": "EXPLICIT",
+      "source": "despite this difficulty, reversions of stop codons have been observed in mouse models (Sousa et al., 2017) and during an outbreak of a pathogen infecting the lungs of people with cystic fibrosis (Poret et al., 2024).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:52:33.291936Z"
+    },
+    {
+      "id": "13fa5502-d2bb-4fdd-bac8-d7c17b7a9c1d",
+      "content_id": "9d00f866-736e-4e5e-920e-9cd641d12f8e",
+      "claim_id": "C29",
+      "claim": "Among the 325 observed nonsynonymous de novo mutations in a study of within-host B. fragilis adaptation, 28 were premature stop codons.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the 325 observed nonsynonymous de novo mutations in a study of within-host B. fragilis adaptation (Zhao et al., 2019), 28 were premature stop codons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is data extracted from a published study.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:52:33.291936Z"
+    },
+    {
+      "id": "53e44034-567a-44d9-8a59-07be46a391e4",
+      "content_id": "9d00f866-736e-4e5e-920e-9cd641d12f8e",
+      "claim_id": "C30",
+      "claim": "The frequency of premature stop codons in B. fragilis de novo mutations is significantly higher than expected by chance (p=0.015).",
+      "claim_type": "EXPLICIT",
+      "source": "This frequency is significantly higher than expected by chance (p=0.015; 'Methods').",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical analysis of the observed data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:52:33.291936Z"
+    },
+    {
+      "id": "909f9091-417c-4ed6-9ca6-7edd1078b94e",
+      "content_id": "9d00f866-736e-4e5e-920e-9cd641d12f8e",
+      "claim_id": "C31",
+      "claim": "A single species within the gut microbiome can have a census population size of 1013.",
+      "claim_type": "EXPLICIT",
+      "source": "A single species within the gut microbiome can have a census population size of 1013, with generation rates ranging from 1 to 10 per day (Sender et al., 2016; Korem et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:52:33.291936Z"
+    },
+    {
+      "id": "935edc58-f4dc-4df1-960c-48b2b00d93c3",
+      "content_id": "9d00f866-736e-4e5e-920e-9cd641d12f8e",
+      "claim_id": "C32",
+      "claim": "Gut microbiome bacteria have generation rates ranging from 1 to 10 per day.",
+      "claim_type": "EXPLICIT",
+      "source": "A single species within the gut microbiome can have a census population size of 1013, with generation rates ranging from 1 to 10 per day (Sender et al., 2016; Korem et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:52:33.291936Z"
+    },
+    {
+      "id": "6025ed44-9a17-4a0a-888f-96e798db8d45",
+      "content_id": "9d00f866-736e-4e5e-920e-9cd641d12f8e",
+      "claim_id": "C33",
+      "claim": "Given a mutation rate of 10\u20139 per site per generation, we anticipate 10 mutants at any given site each generation in gut microbiome populations.",
+      "claim_type": "EXPLICIT",
+      "source": "Given a mutation rate of 10\u20139 per site per generation, we anticipate 10 mutants at any given site each generation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from the mutation rate and population size.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:52:33.291936Z"
+    },
+    {
+      "id": "d95431ed-d4ed-414c-b137-f157e21cbd50",
+      "content_id": "9d00f866-736e-4e5e-920e-9cd641d12f8e",
+      "claim_id": "C34",
+      "claim": "Beneficial mutations with sben > 1% generally sweep within 10 years in gut microbiome populations.",
+      "claim_type": "EXPLICIT",
+      "source": "In the large population sizes relevant for the gut microbiome, a beneficial mutation will then take substantially longer to sweep the population than occur, with values of sben > 1% generally sweeping within 10 years (Figure 3b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is calculated from theoretical models and shown in the figure.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:52:33.291936Z"
+    },
+    {
+      "id": "9a5a20f5-16fc-44e3-b0fc-4870dc1dfd01",
+      "content_id": "9d00f866-736e-4e5e-920e-9cd641d12f8e",
+      "claim_id": "C37",
+      "claim": "Bacteroidetes genomes are known to have dozens of invertible promoters (up to 47 in B. fragilis).",
+      "claim_type": "EXPLICIT",
+      "source": "While 55 loci under distinct selective pressures may seem high, Bacteroidetes genomes are known to have dozens of invertible promoters (up to 47 in B. fragilis; Jiang et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:52:33.291936Z"
+    },
+    {
+      "id": "ede4109c-4471-449d-a5ba-75c0d6231d52",
+      "content_id": "9d00f866-736e-4e5e-920e-9cd641d12f8e",
+      "claim_id": "C38",
+      "claim": "Adaptive loss-of-function mutations reported in B. fragilis affect the same genes regulated by invertible promoters.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, adaptive loss-of-function mutations reported in B. fragilis affect the same genes regulated by invertible promoters (Zhao et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:52:33.291936Z"
+    },
+    {
+      "id": "3f556cec-8af0-4089-b5bb-d7a3ee92cc57",
+      "content_id": "9d00f866-736e-4e5e-920e-9cd641d12f8e",
+      "claim_id": "C39",
+      "claim": "Even when the true genome-wide dN/dS exceeds 1, the observed value can be close to 0.1 on long timescales due to reversions.",
+      "claim_type": "EXPLICIT",
+      "source": "A critical consequence of the reversion model is that apparent and actual dN/dS values diverge quickly. Even when the true genome-wide dN/dS exceeds 1 \u2013 meaning that adaptive sweeps have been a dominant force in shaping genomes \u2013 the observed value can be close to 0.1 on long timescales.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through simulations in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:52:33.291936Z"
+    },
+    {
+      "id": "1ce46b62-ea57-4142-9f38-889b9b985ede",
+      "content_id": "9d00f866-736e-4e5e-920e-9cd641d12f8e",
+      "claim_id": "C40",
+      "claim": "PAML significantly underestimates actual dN/dS when reversion is rampant.",
+      "claim_type": "EXPLICIT",
+      "source": "We confirmed the inability to detect adaptive selection on a gene when reversion is rampant by simulating protein phylogenies; even the advanced software PAML (Phylogenetic Analysis by Maximum Likelihood) (Yang, 2007) significantly underestimates actual dN/dS (Figure 4b; 'Methods').",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through simulations testing PAML software.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:52:33.291936Z"
+    },
+    {
+      "id": "e1a30eb5-8525-4111-934f-f3475e3c810b",
+      "content_id": "9d00f866-736e-4e5e-920e-9cd641d12f8e",
+      "claim_id": "C41",
+      "claim": "Specific COG categories in B. fragilis are enriched in TTA and TCA codons relative to baseline, including genes associated with transcription and cell envelope biogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "However, specific Clusters of Orthologous Genes (COG) categories are enriched in TTA and TCA codons relative to this baseline, including genes associated with transcription and cell envelope biogenesis (Figure 4c, 'Methods', Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from genomic analysis of codon usage.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:52:33.291936Z"
+    },
+    {
+      "id": "693fab6b-80e2-4f90-8261-9f635da6525b",
+      "content_id": "9d00f866-736e-4e5e-920e-9cd641d12f8e",
+      "claim_id": "C42",
+      "claim": "Genes involved in inorganic ion transport and metabolism that are localized to the outer membrane show enrichment in stop-codon adjacent codons.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, when functionally annotated genes are further categorized by cellular localization, more gene categories exhibit enrichment (Figure 4c, 'Methods', Supplementary file 1), most notably genes involved in inorganic ion transport and metabolism that are localized to the outer membrane.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from genomic analysis of codon usage.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:52:33.291936Z"
+    },
+    {
+      "id": "346a7979-1f6a-4280-a84f-2bddd2cc7cd6",
+      "content_id": "9d00f866-736e-4e5e-920e-9cd641d12f8e",
+      "claim_id": "C43",
+      "claim": "Genes implicated in within-host B. fragilis adaptation are found disproportionately in the category of outer membrane transporters (p=1.22 \u00d7 10\u20134).",
+      "claim_type": "EXPLICIT",
+      "source": "Genes implicated in within-host B. fragilis adaptation (Zhao et al., 2019) are also found disproportionately in this category of outer membrane transporters (p=1.22 \u00d7 10\u20134; 'Methods', Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical analysis of genomic data.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:52:33.291936Z"
+    },
+    {
+      "id": "b2ccb76e-6f51-481f-913d-f97abb1c3233",
+      "content_id": "9d00f866-736e-4e5e-920e-9cd641d12f8e",
+      "claim_id": "C44",
+      "claim": "The cell envelope and membrane-bound transporters are known to mediate interactions with the immune system and phage.",
+      "claim_type": "EXPLICIT",
+      "source": "Both the cell envelope and membrane-bound transporters are known to mediate interactions with the immune system and phage (Sukhithasri et al., 2013; Ongenae et al., 2022), and are therefore expected to experience fluctuating selective pressures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:52:33.291936Z"
+    },
+    {
+      "id": "31931750-074a-4bc4-87f6-8258a9521ad6",
+      "content_id": "9d00f866-736e-4e5e-920e-9cd641d12f8e",
+      "claim_id": "C45",
+      "claim": "Reversions have been relatively overlooked in previous literature because most population genetics theory focuses on eukaryotic organisms with smaller population sizes and longer generation times.",
+      "claim_type": "EXPLICIT",
+      "source": "It is perhaps not surprising that reversions have been relatively overlooked in previous literature. First, most population genetics theory focuses on eukaryotic organisms with smaller population sizes and longer generation times, for which reversion is less likely.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explanation for why reversions have not been widely considered.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:52:33.291936Z"
+    },
+    {
+      "id": "e8ad392e-1d15-44da-883e-de0e666ea9ed",
+      "content_id": "9d00f866-736e-4e5e-920e-9cd641d12f8e",
+      "claim_id": "C46",
+      "claim": "The infinite-site model assumes that reversions never occur.",
+      "claim_type": "EXPLICIT",
+      "source": "The low likelihood of reversion in these populations has inspired the use of the convenient infinite-site model (Tajima, 1996), which assumes that reversions never occur and simplifies derivations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of a standard population genetics model.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:52:33.291936Z"
+    },
+    {
+      "id": "7c48e1ba-5f89-40ee-afee-4f304daf25ad",
+      "content_id": "9d00f866-736e-4e5e-920e-9cd641d12f8e",
+      "claim_id": "C47",
+      "claim": "Theoretical work modeling gut microbiome biogeography suggests that the census and active population sizes differ only approximately tenfold.",
+      "claim_type": "EXPLICIT",
+      "source": "While gut microbiomes do have a spatial structure that reduces competition, theoretical work modeling this biogeography suggests that the census and active population sizes differ only approximately tenfold (Ghosh and Good, 2022; Labavi\u0107 et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published theoretical studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:52:33.291936Z"
+    },
+    {
+      "id": "6779a511-72e3-465c-859b-749e5726cb38",
+      "content_id": "9d00f866-736e-4e5e-920e-9cd641d12f8e",
+      "claim_id": "C48",
+      "claim": "A recent study tracking de novo mutations between mothers and infants revealed several cases of apparent reversion, with elevated values of dN/dS > 1.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite this challenge in observation, a recent study tracking de novo mutations between mothers and infants revealed several cases of apparent reversion, with elevated values of dN/dS > 1, though not significantly so (Chen and Garud, 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a published study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:52:33.291936Z"
+    },
+    {
+      "id": "66191e53-fdad-4547-9329-98ae869b1c4b",
+      "content_id": "9d00f866-736e-4e5e-920e-9cd641d12f8e",
+      "claim_id": "C49",
+      "claim": "Many short-term studies in the gut microbiome have revealed strong evidence of within-person adaptation, including parallel evolution.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, many short-term studies in the gut microbiome and beyond have revealed strong evidence of within-person adaptation, including parallel evolution (Lieberman et al., 2011; Marvig et al., 2015; Zhao et al., 2019; Cooper and Lenski, 2000) and loss-of-function changes like premature stop codons (Key et al., 2023) \u2013 with low long-term dN/dS values in these same short-term genes (Vigu\u00e9 and Tenaillon, 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to published studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:52:33.291936Z"
+    },
+    {
+      "id": "83a34fa5-9e79-4643-9d64-854a716c7962",
+      "content_id": "9d00f866-736e-4e5e-920e-9cd641d12f8e",
+      "claim_id": "C50",
+      "claim": "Data was obtained from Shoemaker et al., 2022 and was initially generated by Garud et al., 2019.",
+      "claim_type": "EXPLICIT",
+      "source": "Data was obtained from Shoemaker et al., 2022 and was initially generated by Garud et al., 2019.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the source of the empirical data used in the study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:52:33.291936Z"
+    },
+    {
+      "id": "1928e9e2-dc22-406b-94f9-c19bd9594938",
+      "content_id": "9d00f866-736e-4e5e-920e-9cd641d12f8e",
+      "claim_id": "C51",
+      "claim": "The parameters for the purifying selection model are estimated using scipy.optimize.curve_fit.",
+      "claim_type": "EXPLICIT",
+      "source": "The parameters are estimated using scipy.optimize.curve_fit.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the computational method used for parameter estimation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:52:33.291936Z"
+    },
+    {
+      "id": "83be1ec6-af83-4c34-96aa-b2ca000a6279",
+      "content_id": "9d00f866-736e-4e5e-920e-9cd641d12f8e",
+      "claim_id": "C52",
+      "claim": "The fit minimizes the RMSD of the logarithmic dN/dS.",
+      "claim_type": "EXPLICIT",
+      "source": "The fit minimizes the RMSD of the logarithmic dN/dS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the fitting procedure used in the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:52:33.291936Z"
+    },
+    {
+      "id": "6d0546cc-d3ec-4322-9b97-8e81a88af6b9",
+      "content_id": "9d00f866-736e-4e5e-920e-9cd641d12f8e",
+      "claim_id": "C53",
+      "claim": "The 10 species analyzed were chosen based on having the most data points reflecting short divergence times (dS < 0.0005).",
+      "claim_type": "EXPLICIT",
+      "source": "We analyzed the 10 species with the most data points reflecting short divergence times (dS < 0.0005), which is critical for data fit.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data selection criteria for the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:52:33.291936Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "09f27c95-fbd5-4300-be14-ec7c019dab4a",
+      "content_id": "9d00f866-736e-4e5e-920e-9cd641d12f8e",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The manuscript establishes that dN/dS exhibits timescale dependence in bacterial populations, with high values (~1 or >1) at short timescales and low values (<0.15) at long timescales. This pattern has been attributed to weak purifying selection in prior literature.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C10-C13 collectively document a well-established empirical pattern supported by multiple independent studies (Jolley et al., 2000; Dingle et al., 2001; Feil et al., 2003; Baker et al., 2004; Garud et al., 2019; Lieberman et al., 2011; Shoemaker et al., 2022). The timescale dependence of dN/dS is an observational fact that forms the foundation for the manuscript's investigation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:52:33.291936Z"
+    },
+    {
+      "id": "4d06a302-d118-47d2-b97f-066f12c20bf0",
+      "content_id": "9d00f866-736e-4e5e-920e-9cd641d12f8e",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The classical weak purifying selection model, when fitted to gut microbiome data, yields parameter values (\u03b1 \u2248 0.10, s \u2248 3.5 \u00d7 10\u207b\u2075) that lead to problematic mutation accumulation requiring unrealistically large effective population sizes (Ne > 10\u00b9\u2075) to avoid Muller's ratchet.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C15 provide fitted parameter values from empirical data, while C20-C21 demonstrate through theory and simulation that these parameters lead to mutation accumulation. Claim C23 correctly concludes that the required Ne values exceed realistic estimates for both within-host (Ne \u2248 10\u00b9\u00b9) and global (Ne \u2248 10\u2079) bacterial populations. The mathematical framework (Equations 1-5) and simulations (Figure 2) provide converging evidence for this fundamental problem with the purifying selection model.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:52:33.291936Z"
+    },
+    {
+      "id": "0d371312-0d97-429d-ad15-aac3ff428cd4",
+      "content_id": "9d00f866-736e-4e5e-920e-9cd641d12f8e",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The purifying selection model is incompatible with observed adaptive sweeps and cannot be rescued by recombination at realistic rates in gut microbiome populations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C24 documents observed adaptive sweeps in Bacteroides species from published studies. Claims C25-C26 demonstrate through simulation (Figure 2\u2014figure supplement 3) that even with generous recombination rates (r/m = 500), the purifying selection model still fails to prevent mutation accumulation in populations of size 10\u2079. The analysis correctly identifies that weak selection coefficients (s = 3.5 \u00d7 10\u207b\u2075) result in selective advantages too small to sweep faster than mutations accumulate.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:52:33.291936Z"
+    },
+    {
+      "id": "5dfdfedd-a7d8-493f-b0dd-bd242bd8ddf6",
+      "content_id": "9d00f866-736e-4e5e-920e-9cd641d12f8e",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Adaptive nonsense mutations occur frequently in gut microbiome bacteria, with premature stop codons significantly enriched (p=0.015) among observed de novo mutations in B. fragilis, and reversions of stop codons have been documented in experimental systems.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C28 are supported by multiple citations to published observations. Claims C29-C30 provide a statistical analysis of data from Zhao et al., 2019, showing 28 of 325 nonsynonymous mutations were premature stop codons, significantly higher than expected by chance. The statistical test is appropriate and the p-value is clearly stated. This provides empirical support for the biological plausibility of the reversion model.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:52:33.291936Z"
+    },
+    {
+      "id": "eaee85d3-a980-4b66-a280-14d8a5faa415",
+      "content_id": "9d00f866-736e-4e5e-920e-9cd641d12f8e",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "In gut microbiome populations with census sizes of 10\u00b9\u00b3 and generation times of 1-10 days, reversions are nearly guaranteed to occur and sweep within years due to high mutation supply (10 mutants per site per generation) and rapid fixation times for beneficial mutations (sben > 1% sweep within 10 years).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C32 cite published estimates of population parameters. Claims C33-C34 provide calculations based on these parameters showing high probability of reversion occurrence and fixation (Figure 3b). The theoretical framework (Appendix 1, Section 2.2) correctly applies population genetics principles. However, the analysis assumes well-mixed populations and may underestimate spatial structure effects, though C47 addresses this concern by citing theoretical work suggesting only ~10-fold difference between census and effective sizes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:52:33.291936Z"
+    },
+    {
+      "id": "b4b83aa1-b9df-4b4a-b731-041a3165ed90",
+      "content_id": "9d00f866-736e-4e5e-920e-9cd641d12f8e",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The adaptive reversion model can explain dN/dS decay with biologically plausible parameters: median \u03c4_flip \u2248 46,000 generations and n_loci \u2248 55, consistent with the known presence of dozens of invertible promoters in Bacteroidetes genomes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C5 is supported by model fitting (Figure 3c, Equation 8) showing good fits to empirical data (median R\u00b2 = 0.82). Claims C37-C38 provide biological context showing that the fitted parameter n_loci \u2248 55 is consistent with up to 47 invertible promoters in B. fragilis and that adaptive loss-of-function mutations affect genes regulated by these promoters. The convergence between fitted parameters and independent biological observations strengthens the model's plausibility.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:52:33.291936Z"
+    },
+    {
+      "id": "9e98f521-169a-4d48-a48e-44dceff859c3",
+      "content_id": "9d00f866-736e-4e5e-920e-9cd641d12f8e",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The reversion model demonstrates that low dN/dS values on long timescales can emerge even when adaptive sweeps are frequent, with observed dN/dS \u2248 0.1 when true dN/dS > 1, and standard phylogenetic software (PAML) significantly underestimates actual dN/dS in the presence of reversions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C40 are supported by simulations (Figure 4a-b) showing divergence between observed and actual dN/dS values. The PAML analysis (Figure 4b) appropriately tests whether standard methods can detect adaptive selection under the reversion model. The simulations include realistic parameters (population size 10\u00b9\u2070, bottlenecks, clonal interference) and demonstrate that the reversion model can produce the observed dN/dS decay pattern while maintaining high actual adaptive evolution rates.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:52:33.291936Z"
+    },
+    {
+      "id": "3609a207-952d-4b40-9b74-758b39a4006f",
+      "content_id": "9d00f866-736e-4e5e-920e-9cd641d12f8e",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Genomic analysis reveals enrichment of stop-codon adjacent codons (TTA/TCA) in specific functional categories of B. fragilis genes, particularly outer membrane transporters involved in inorganic ion transport and metabolism (p=1.22 \u00d7 10\u207b\u2074), which are known to interact with immune systems and phage.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C43 present genomic analyses with appropriate statistical tests (one-proportion Z-test with Bonferroni correction) showing enrichment of stop-codon adjacent codons in functionally relevant gene categories. The analysis controls for baseline codon usage (13.48% vs. 16.67% neutral expectation) and identifies biologically meaningful patterns. Claim C44 provides mechanistic context from published literature. This provides indirect evidence for past reversions, though the analysis cannot definitively distinguish between reversions and other evolutionary processes affecting codon usage.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:52:33.291936Z"
+    },
+    {
+      "id": "4f827799-c5c4-43bd-9550-dc4848a297c4",
+      "content_id": "9d00f866-736e-4e5e-920e-9cd641d12f8e",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Reversions have been overlooked in population genetics literature because theory has focused on eukaryotic organisms with smaller populations where the infinite-site model (which assumes no reversions) is appropriate, and because spatial structure in gut microbiomes reduces effective population size by only ~10-fold.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C46 provide reasonable explanations for why reversions have not been widely considered, supported by citations to standard population genetics models. Claim C47 addresses a potential concern about spatial structure by citing theoretical work (Ghosh and Good, 2022; Labavi\u0107 et al., 2022) suggesting modest reductions in effective population size. However, these theoretical estimates of spatial effects may have uncertainties that could affect the quantitative predictions of the reversion model.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:52:33.291936Z"
+    },
+    {
+      "id": "f1929d70-8e0a-460d-b906-908a7d5ec5d8",
+      "content_id": "9d00f866-736e-4e5e-920e-9cd641d12f8e",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Recent empirical studies provide preliminary evidence for reversions in gut microbiomes and document frequent within-person adaptation including parallel evolution and loss-of-function mutations in genes showing low long-term dN/dS.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C49 cite published studies documenting apparent reversions (Chen and Garud, 2022) and within-person adaptation (Lieberman et al., 2011; Marvig et al., 2015; Zhao et al., 2019; Cooper and Lenski, 2000; Key et al., 2023). While the evidence for reversions is described as preliminary (elevated but not significantly so), the documentation of frequent adaptive evolution on short timescales combined with low long-term dN/dS in the same genes supports the manuscript's central thesis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:52:33.291936Z"
+    },
+    {
+      "id": "483f16f0-1342-470c-a86c-c1d224c167a5",
+      "content_id": "9d00f866-736e-4e5e-920e-9cd641d12f8e",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The analysis uses dN/dS data from Garud et al., 2019 (via Shoemaker et al., 2022), fitting parameters using scipy.optimize.curve_fit to minimize RMSD of logarithmic dN/dS, focusing on 10 species with the most short-divergence-time data points.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C53 describe the data sources and methodological choices. The use of logarithmic fitting (C52) is appropriate given the log-scale nature of dN/dS decay, though Figure 1\u2014figure supplement 1 shows that linear fitting yields even smaller s values, strengthening the manuscript's argument. The selection of species based on short-divergence data (C53) is justified as critical for capturing the transition region of dN/dS decay. The methods are clearly described and reproducible.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:52:33.291936Z"
+    },
+    {
+      "id": "b07195cd-5aa0-437d-b96b-c0f9efcba5be",
+      "content_id": "9d00f866-736e-4e5e-920e-9cd641d12f8e",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The manuscript correctly describes established principles of molecular evolution: most mutations are neutral or deleterious, dN/dS > 1 indicates adaptive evolution, dN/dS < 1 indicates purifying selection, and deep mutational scanning shows most amino acid changes in essential genes are measurably deleterious.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C9 accurately describe standard interpretations in population genetics supported by foundational literature (Kimura, 1977; Davies et al., 1999; Jolley et al., 2000; Dingle et al., 2001). Claim C16 correctly cites experimental evidence (Kelsic et al., 2016; Dewachter et al., 2023) showing that most amino acid changes in essential genes have measurable fitness effects. These claims establish the appropriate theoretical and empirical context for the manuscript's analysis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:52:33.291936Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "4f86fd17-92ea-49d6-b621-08aeded81a2b",
+      "result_id": "09f27c95-fbd5-4300-be14-ec7c019dab4a"
+    },
+    {
+      "claim_id": "cee37726-88f5-4f9d-9ad0-314653a92d80",
+      "result_id": "09f27c95-fbd5-4300-be14-ec7c019dab4a"
+    },
+    {
+      "claim_id": "5b406d10-da36-4ac1-ab74-00c79913afaa",
+      "result_id": "09f27c95-fbd5-4300-be14-ec7c019dab4a"
+    },
+    {
+      "claim_id": "361a24d4-af48-4849-9805-740830ed4e50",
+      "result_id": "09f27c95-fbd5-4300-be14-ec7c019dab4a"
+    },
+    {
+      "claim_id": "6b50aa65-c8eb-4568-b3ca-7af37cf7c1ae",
+      "result_id": "09f27c95-fbd5-4300-be14-ec7c019dab4a"
+    },
+    {
+      "claim_id": "ba7eecb8-99ab-494c-a536-e081a24797a3",
+      "result_id": "4d06a302-d118-47d2-b97f-066f12c20bf0"
+    },
+    {
+      "claim_id": "33c81636-bf45-438c-ba4a-e5601e38ab1e",
+      "result_id": "4d06a302-d118-47d2-b97f-066f12c20bf0"
+    },
+    {
+      "claim_id": "102ee0da-5ad8-439d-9b8b-db107d27631c",
+      "result_id": "4d06a302-d118-47d2-b97f-066f12c20bf0"
+    },
+    {
+      "claim_id": "49e23edd-7365-4eaa-8f65-58ac207a8186",
+      "result_id": "4d06a302-d118-47d2-b97f-066f12c20bf0"
+    },
+    {
+      "claim_id": "ee650de6-bef3-4f8a-a079-35e74d506c10",
+      "result_id": "4d06a302-d118-47d2-b97f-066f12c20bf0"
+    },
+    {
+      "claim_id": "7d9ce3fa-8862-4198-acb9-3d12e36ea2d2",
+      "result_id": "4d06a302-d118-47d2-b97f-066f12c20bf0"
+    },
+    {
+      "claim_id": "7a422025-60c2-42b0-b81a-9ebb380f1561",
+      "result_id": "4d06a302-d118-47d2-b97f-066f12c20bf0"
+    },
+    {
+      "claim_id": "b6a80a99-257f-473d-97e7-5c8e02d2cf27",
+      "result_id": "0d371312-0d97-429d-ad15-aac3ff428cd4"
+    },
+    {
+      "claim_id": "b8a65496-8035-465d-ab77-5aa2ebb85b5d",
+      "result_id": "0d371312-0d97-429d-ad15-aac3ff428cd4"
+    },
+    {
+      "claim_id": "d5f5fde1-e8f2-4781-a1b6-52ae16063d0d",
+      "result_id": "0d371312-0d97-429d-ad15-aac3ff428cd4"
+    },
+    {
+      "claim_id": "fb9753da-24d0-42d5-82af-9aaf8fb3bddc",
+      "result_id": "5dfdfedd-a7d8-493f-b0dd-bd242bd8ddf6"
+    },
+    {
+      "claim_id": "9a9a6a69-aa2d-49af-a5eb-3c1ddcc0ec2e",
+      "result_id": "5dfdfedd-a7d8-493f-b0dd-bd242bd8ddf6"
+    },
+    {
+      "claim_id": "13fa5502-d2bb-4fdd-bac8-d7c17b7a9c1d",
+      "result_id": "5dfdfedd-a7d8-493f-b0dd-bd242bd8ddf6"
+    },
+    {
+      "claim_id": "53e44034-567a-44d9-8a59-07be46a391e4",
+      "result_id": "5dfdfedd-a7d8-493f-b0dd-bd242bd8ddf6"
+    },
+    {
+      "claim_id": "909f9091-417c-4ed6-9ca6-7edd1078b94e",
+      "result_id": "eaee85d3-a980-4b66-a280-14d8a5faa415"
+    },
+    {
+      "claim_id": "935edc58-f4dc-4df1-960c-48b2b00d93c3",
+      "result_id": "eaee85d3-a980-4b66-a280-14d8a5faa415"
+    },
+    {
+      "claim_id": "6025ed44-9a17-4a0a-888f-96e798db8d45",
+      "result_id": "eaee85d3-a980-4b66-a280-14d8a5faa415"
+    },
+    {
+      "claim_id": "d95431ed-d4ed-414c-b137-f157e21cbd50",
+      "result_id": "eaee85d3-a980-4b66-a280-14d8a5faa415"
+    },
+    {
+      "claim_id": "7835fc3d-6153-4ee5-8947-5560d41784d4",
+      "result_id": "eaee85d3-a980-4b66-a280-14d8a5faa415"
+    },
+    {
+      "claim_id": "0ec068ed-d245-4bda-bd5e-5292694c4784",
+      "result_id": "b4b83aa1-b9df-4b4a-b731-041a3165ed90"
+    },
+    {
+      "claim_id": "9a5a20f5-16fc-44e3-b0fc-4870dc1dfd01",
+      "result_id": "b4b83aa1-b9df-4b4a-b731-041a3165ed90"
+    },
+    {
+      "claim_id": "ede4109c-4471-449d-a5ba-75c0d6231d52",
+      "result_id": "b4b83aa1-b9df-4b4a-b731-041a3165ed90"
+    },
+    {
+      "claim_id": "7ff5e72b-87f9-42aa-85e9-75491c78c92e",
+      "result_id": "9e98f521-169a-4d48-a48e-44dceff859c3"
+    },
+    {
+      "claim_id": "3f556cec-8af0-4089-b5bb-d7a3ee92cc57",
+      "result_id": "9e98f521-169a-4d48-a48e-44dceff859c3"
+    },
+    {
+      "claim_id": "1ce46b62-ea57-4142-9f38-889b9b985ede",
+      "result_id": "9e98f521-169a-4d48-a48e-44dceff859c3"
+    },
+    {
+      "claim_id": "e1a30eb5-8525-4111-934f-f3475e3c810b",
+      "result_id": "3609a207-952d-4b40-9b74-758b39a4006f"
+    },
+    {
+      "claim_id": "693fab6b-80e2-4f90-8261-9f635da6525b",
+      "result_id": "3609a207-952d-4b40-9b74-758b39a4006f"
+    },
+    {
+      "claim_id": "346a7979-1f6a-4280-a84f-2bddd2cc7cd6",
+      "result_id": "3609a207-952d-4b40-9b74-758b39a4006f"
+    },
+    {
+      "claim_id": "b2ccb76e-6f51-481f-913d-f97abb1c3233",
+      "result_id": "3609a207-952d-4b40-9b74-758b39a4006f"
+    },
+    {
+      "claim_id": "31931750-074a-4bc4-87f6-8258a9521ad6",
+      "result_id": "4f827799-c5c4-43bd-9550-dc4848a297c4"
+    },
+    {
+      "claim_id": "e8ad392e-1d15-44da-883e-de0e666ea9ed",
+      "result_id": "4f827799-c5c4-43bd-9550-dc4848a297c4"
+    },
+    {
+      "claim_id": "7c48e1ba-5f89-40ee-afee-4f304daf25ad",
+      "result_id": "4f827799-c5c4-43bd-9550-dc4848a297c4"
+    },
+    {
+      "claim_id": "6779a511-72e3-465c-859b-749e5726cb38",
+      "result_id": "f1929d70-8e0a-460d-b906-908a7d5ec5d8"
+    },
+    {
+      "claim_id": "66191e53-fdad-4547-9329-98ae869b1c4b",
+      "result_id": "f1929d70-8e0a-460d-b906-908a7d5ec5d8"
+    },
+    {
+      "claim_id": "83a34fa5-9e79-4643-9d64-854a716c7962",
+      "result_id": "483f16f0-1342-470c-a86c-c1d224c167a5"
+    },
+    {
+      "claim_id": "1928e9e2-dc22-406b-94f9-c19bd9594938",
+      "result_id": "483f16f0-1342-470c-a86c-c1d224c167a5"
+    },
+    {
+      "claim_id": "83be1ec6-af83-4c34-96aa-b2ca000a6279",
+      "result_id": "483f16f0-1342-470c-a86c-c1d224c167a5"
+    },
+    {
+      "claim_id": "6d0546cc-d3ec-4322-9b97-8e81a88af6b9",
+      "result_id": "483f16f0-1342-470c-a86c-c1d224c167a5"
+    },
+    {
+      "claim_id": "760645b3-2059-495b-afbf-4d0558c8c017",
+      "result_id": "b07195cd-5aa0-437d-b96b-c0f9efcba5be"
+    },
+    {
+      "claim_id": "52aa0338-c792-424f-869e-cbe30028a3ac",
+      "result_id": "b07195cd-5aa0-437d-b96b-c0f9efcba5be"
+    },
+    {
+      "claim_id": "799ec5d1-9968-4c57-9bdc-a77631a761ff",
+      "result_id": "b07195cd-5aa0-437d-b96b-c0f9efcba5be"
+    },
+    {
+      "claim_id": "00a12423-6e40-430b-a1ee-ef715601cb5a",
+      "result_id": "b07195cd-5aa0-437d-b96b-c0f9efcba5be"
+    }
+  ],
+  "comparisons": []
+}

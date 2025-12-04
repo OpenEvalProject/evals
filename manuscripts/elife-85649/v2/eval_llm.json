@@ -1,0 +1,301 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C21",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "The authors identified biallelic MAD2L1BP variants in three families with female patients diagnosed with primary infertility due to oocyte MI arrest. Two families had homozygous nonsense mutations (p.R285* and p.R181*), and one family had compound heterozygous variants (frameshift p.F173Sfs4* and intronic c.21-94G>A). These variants are rare in population databases and segregate with the disease phenotype in the families.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21, C28-C42 provide converging genetic evidence from WES, Sanger sequencing, and population frequency data. The variants segregate appropriately in families (C30-C39), are rare in gnomAD (C40-C42), and are predicted to be deleterious (C43-C44). The clinical phenotype is consistent across all three families with MI arrest (C30, C34, C37). This represents strong genetic evidence linking MAD2L1BP variants to the disease.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C50",
+      "C53"
+    ],
+    "result": "The identified MAD2L1BP variants are predicted to result in premature termination codons (PTCs) leading to C-terminally truncated proteins. The p.R285* variant would result in loss of 22 amino acids, while p.R181* would result in loss of 126 amino acids. The intronic variant c.21-94G>A is predicted to cause aberrant splicing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43, C50, and C53 are logical inferences based on the nature of nonsense mutations and their positions in the gene. Claim C44 is supported by bioinformatic predictions from NNsplice and ASSP, and experimentally validated by in vitro splicing assays (C51). The predictions are consistent with established molecular biology principles.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C49",
+      "C51",
+      "C52"
+    ],
+    "result": "The p.R285* mutation did not affect MAD2L1BP mRNA levels in patient F1:II-1, while the compound heterozygous variants in patient F2:II-1 resulted in significantly reduced MAD2L1BP mRNA levels. The intronic variant c.21-94G>A caused aberrant splicing in vitro.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49 and C52 are supported by qPCR data (Figure 2A, 2B). Claim C51 is supported by in vitro splicing assay data (Figure 2\u2014figure supplement 2). The results are consistent with the expected effects of nonsense-mediated decay for the compound heterozygous variants versus escape from NMD for the p.R285* variant near the 3' end of the gene.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C22",
+      "C54",
+      "C55"
+    ],
+    "result": "The C-terminal truncation of MAD2L1BP (p.R285*) abolished its binding to MAD2 in co-immunoprecipitation assays. The C-terminal 22 residues fold into \u03b29 and \u03b210 strands that are essential for MAD2L1BP-MAD2 interaction based on crystal structure analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C22 and C54 are directly supported by Co-IP experimental data (Figure 2E). Claim C55 is supported by crystal structure analysis (PDB: 2QYF) and citation to Yang et al., 2007. The functional data are consistent with the structural predictions, providing strong evidence that the C-terminal truncation disrupts MAD2 binding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C23",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Microinjection experiments in mouse oocytes showed that wild-type MAD2L1BP accelerated polar body extrusion by ~3 hours compared to controls, while the p.R285* mutant significantly delayed and reduced polar body extrusion (~40% vs ~80% in controls). In rescue experiments with Mad2 overexpression, wild-type MAD2L1BP rescued MI arrest while the mutant did not.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C60 are supported by time-lapse imaging and microinjection experiments in mouse oocytes (Figure 3B-F). The experiments include appropriate controls (non-injected, GFP) and show consistent, quantified phenotypic differences between WT and mutant MAD2L1BP. The rescue experiments (C59-C60) provide additional functional validation. Sample sizes are adequate (n=68-158 oocytes) and experiments were performed in biological triplicates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C61",
+      "C62"
+    ],
+    "result": "Oocytes injected with mutant p.R285* MAD2L1BP showed persistent BUB3-positive staining on bivalent chromosomes, indicating sustained SAC activation. In contrast, oocytes injected with wild-type MAD2L1BP predominantly had univalent chromosomes (~85%) with low BUB3 staining, indicating SAC silencing and completion of meiosis I.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C62 are supported by immunofluorescence data on chromosome spreads (Figure 3\u2014figure supplement 1). The data show clear differences in BUB3 localization and chromosome configuration between WT and mutant conditions, consistent with the proposed mechanism of SAC dysregulation. The results align with established knowledge about SAC markers and meiotic progression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C24",
+      "C63",
+      "C64"
+    ],
+    "result": "Microinjection of full-length MAD2L1BP cRNA into patient oocytes carrying mutated MAD2L1BP rescued polar body extrusion in 4 out of 6 oocytes, while control oocytes with sham injection failed to extrude polar bodies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C64 are supported by rescue experiments in human patient oocytes (Figure 4A). The rescue of 4/6 oocytes (67%) with WT MAD2L1BP versus 0/2 controls provides strong functional evidence that MAD2L1BP variants are causative. However, the small sample size (n=6 total oocytes) limits statistical power. The result is nonetheless compelling as proof-of-principle for therapeutic intervention.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "RNA-seq analysis of patient oocytes with MAD2L1BP p.R285* mutation showed 1811 down-regulated and 1705 up-regulated transcripts. Down-regulated transcripts were enriched in cell division and cell cycle pathways, while up-regulated transcripts were enriched in mitochondrial metabolism pathways. Expression of MCC components (MAD2, BUBR1, CDC20) and TRIP13 were comparable between mutant and control oocytes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C67-C71 are based on RNA-seq data from only n=2 oocytes per group (Figure 4\u2014figure supplement 1), which is insufficient for robust differential expression analysis. While the GO enrichment patterns are biologically plausible and consistent with the phenotype, the extremely small sample size raises concerns about reproducibility and statistical validity. The claim about comparable MCC component expression (C69) is particularly uncertain given the lack of statistical power. Additional biological replicates are needed to validate these findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C25",
+      "C82",
+      "C85",
+      "C89"
+    ],
+    "result": "The authors conclude that biallelic variants in MAD2L1BP are responsible for human oocyte maturation arrest at MI by disrupting the MAD2\u2022MAD2L1BP\u2022TRIP13 axis, leading to sustained SAC activation. This represents the first report of MAD2L1BP variants causing human oocyte maturation arrest and adds to the genetic mutational spectrum underlying this condition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25, C82, C85, and C89 represent the main conclusions of the study. These are well-supported by the convergence of genetic evidence (C21, C28-C42), biochemical data showing loss of MAD2 binding (C22, C54), functional studies in mouse oocytes (C56-C62), and rescue experiments in human patient oocytes (C63-C64). The mechanistic model (C82) is consistent with established knowledge about SAC function (C72-C81) and prior findings with TRIP13 mutations (C83). The novelty claim (C85) appears justified based on the literature review provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C65",
+      "C66"
+    ],
+    "result": "The brother of the female patient from Family 1, who also carried the homozygous MAD2L1BP p.R285* mutation, was infertile with markedly reduced sperm count and aberrant sperm head morphology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C65-C66 are based on clinical observation and semen analysis (Figure 1\u2014figure supplement 2, Supplementary file 1A). While the observation is interesting and suggests a potential role for MAD2L1BP in spermatogenesis, the evidence is limited to a single individual. Without additional affected males or functional studies in male germ cells, it is uncertain whether the male infertility phenotype is directly caused by the MAD2L1BP mutation or due to other factors. The authors appropriately present this as suggestive rather than conclusive.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "Background claims about infertility prevalence, oocyte maturation processes, and meiotic progression in female germ cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C8 provide background context and are supported by appropriate citations to established literature. These are standard definitions and well-established facts in the field of reproductive biology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Background claims about genetic mouse models of oocyte maturation arrest and known human genetic causes of oocyte maturation arrest.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C14 provide literature context and are supported by appropriate citations. These establish the rationale for the study by showing that most cases of human oocyte maturation arrest remain genetically unexplained.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Background claims about MAD2L1BP (p31comet) function in mitosis, its interaction with MAD2 and TRIP13, and phenotypes in knockout mice and rice mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C20 provide background on MAD2L1BP function and are supported by appropriate citations to prior work. These establish the biological plausibility of MAD2L1BP involvement in oocyte meiosis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C26",
+      "C27"
+    ],
+    "result": "A cohort of 50 female patients with primary infertility displaying oocyte maturation arrest at MI stage was recruited. All patients had normal karyotypes (46, XX).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C27 describe the patient cohort and are straightforward methodological details. The cohort size is appropriate for a genetic screening study of a rare condition.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "MAD2L1BP is a small protein (306 amino acids) that is highly conserved across metazoan species and has high mRNA expression in human and mouse oocytes, especially at advanced stages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C48 are supported by sequence analysis (C45-C46), isoform data (C47), and RNA-seq database analysis (C48, Figure 2\u2014figure supplement 1). These provide additional context supporting the biological relevance of MAD2L1BP in oocyte function.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Background claims about SAC function, MCC composition, MAD2 conformational changes, and the role of MAD2L1BP and TRIP13 in SAC silencing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C81 provide mechanistic background on SAC function and are supported by appropriate citations to established literature. These provide the conceptual framework for interpreting the study's findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C83",
+      "C84"
+    ],
+    "result": "Prior studies have identified pathogenic variants in TRIP13 and CDC20 causing human oocyte maturation arrest and early embryonic failure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C84 cite recent literature on related genes in the SAC pathway, providing context for the novelty and significance of the MAD2L1BP findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "MAD2L1BP KO cells show mitotic delay and lagging chromosomes but can reinitiate cell cycle, unlike the complete arrest in mutant oocytes. Mad2l1bp-deficient mice die perinatally due to neonatal hypoglycemia from liver glycogen shortage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C88 are supported by citations to prior work (Ma and Poon, 2016; Choi et al., 2016). These provide context for understanding the cell-type-specific effects of MAD2L1BP deficiency and explain why the authors could not generate a mouse model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C90"
+    ],
+    "result": "The study likely provides novel diagnostic and therapeutic avenues for primary female infertility in the future.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C90 is speculative about future applications. While the rescue experiment (C63-C64) provides proof-of-principle for therapeutic intervention, translation to clinical practice would require extensive additional development and validation. The claim is appropriately hedged with 'likely' but remains uncertain.",
+    "result_type": "MINOR"
+  }
+]

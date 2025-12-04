@@ -1,0 +1,326 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C38",
+      "C39",
+      "C40",
+      "C43",
+      "C44",
+      "C46",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "HXMS identifies specific regions within the ISB heterotrimer that undergo changes in hydrogen exchange dynamics upon phase separation. The most prominent changes occur in the \u03b1-helices of INCENP and Borealin, with the C-terminal portion of INCENP's \u03b1-helix showing the strongest protection (taking ~3\u00d7 longer to exchange in droplets vs. free state) and Borealin's interacting \u03b1-helix showing ~2\u00d7 slower exchange. A previously uncharacterized region of Borealin (aa 140-150) also shows protection, suggesting secondary structure formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C38-C63 collectively demonstrate successful HXMS methodology with robust droplet formation (90%\u00b15% in droplets, C39), time-course analysis (C40), and quantitative measurements showing region-specific protection (C57-C60). Control regions showing no HX differences (C61-C62) validate that observed changes reflect specific inter-heterotrimer interactions rather than general droplet properties. The data are internally consistent across multiple peptides and timepoints.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Mutagenesis of acidic residues in INCENP (E35, E36, E39, E40, E42) progressively disrupts phase separation. Mutation to alanine (IMut1SB) causes visible reduction in droplets, while charge reversal to arginine (IMut2SB) has a more pronounced effect. Systematic mutagenesis identifies that residues D27, E36, and E42 contribute additively to phase separation, with these residues positioned within salt-bridge distance of basic residues on Borealin in the crystal structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C83 present a logical progression of mutagenesis experiments with consistent results across microscopy and turbidity measurements (C65-C66, C71-C73, C79-C80). The systematic approach\u2014testing different combinations of mutations\u2014strengthens the conclusion that specific residues (D27, E36, E42) are critical. The correlation with crystal structure distances (C70, C77-C78) provides structural context, though the inference about shared interaction sites between crystal and droplet states (C74) requires the assumption that crystal packing reflects physiological interactions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Crystal structure-guided mutagenesis distinguishes between productive and non-productive salt bridges. IMut6SB, which mutates three residues (D27, E36, E42) that are within salt-bridge distance of Borealin lysines in the crystal structure, profoundly reduces phase separation. In contrast, IMut7SB, which includes E40 (too distant from K63 to form a salt bridge), has only minor effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C80 demonstrate structure-function correlation by showing that mutations targeting residues within salt-bridge distance (C77, ~2.9 \u00c5) have strong effects (C79), while mutations of residues too distant to form salt bridges (C78) have minimal effects (C80). This provides strong evidence for the specificity of the identified interactions. The experimental design directly tests the hypothesis that crystal contacts reflect droplet interactions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Compensatory mutagenesis demonstrates that specific salt bridges drive ISB phase separation. ISBMut (K\u2192E substitutions in Borealin at positions 26, 37, 63) severely impairs phase separation. Strikingly, combining these Borealin mutations with compensatory INCENP mutations (IMut6SBMut) completely restores droplet formation by microscopy/spectroscopy and almost entirely restores wild-type saturation concentration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C87 provide the strongest evidence for specific salt-bridge-mediated phase separation through elegant compensatory mutagenesis. The complete restoration of droplet formation (C85) and near-complete restoration of saturation concentration (C86) when charge-swapped surfaces are paired demonstrates that these specific electrostatic interactions are both necessary and sufficient for phase separation. Multiple independent measurements (turbidity, microscopy, sedimentation) strengthen the conclusion (C87).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Mutations disrupting the identified salt bridges reduce CPC phase separation in cells. Using an optoDroplet assay, BorealinMut (containing K\u2192E substitutions at positions 26, 37, 63) forms droplets with significantly lower mCherry intensity compared to BorealinWT, indicating reduced phase separation capacity in the cellular environment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C95 extend the in vitro findings to a cellular context using the established Cry2 optoDroplet system (C88-C91). The observation that BorealinMut still forms droplets but with reduced intensity (C94) is consistent with the in vitro data and suggests the identified salt bridges contribute to, but may not be solely responsible for, cellular phase separation. The recruitment of endogenous Aurora B (C91, C93) suggests physiological relevance, though the optoDroplet system is artificial and may not fully recapitulate endogenous CPC behavior.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C8",
+      "C96",
+      "C97",
+      "C98",
+      "C100",
+      "C102",
+      "C130"
+    ],
+    "result": "HXMS is established as a feasible approach to map protein-protein interactions driving liquid-liquid phase separation. The method provides moderately high-resolution localization information (within small numbers of amino acids) and is most powerful when combined with structural information such as crystal contacts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C96-C97, C100, C102, C130 present a methodological conclusion supported by the successful application of HXMS in this study. The approach identified specific regions involved in phase separation (demonstrated in Result 1), which were then validated through mutagenesis (Results 2-4). The moderate resolution achieved (peptide-level) and the successful integration with crystal structure data support the conclusion. However, C98 and C102 are speculative about future applications rather than demonstrated capabilities.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "The CPC phase separation mechanism integrates into the 'stickers and spacers' model, where specific salt bridges between structured \u03b1-helices serve as stickers, and intrinsically disordered regions serve as spacers. Two structured regions (INCENP/Borealin \u03b1-helices and Borealin aa 140-150) separated by disordered regions drive phase separation through salt bridges that explain the low affinity, salt sensitivity, and transient nature of the liquid-demixed state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C117 synthesize the experimental findings into a coherent mechanistic model. The identification of structured regions as drivers (C106-C107) is supported by HXMS data, the salt-bridge mechanism (C108) is validated by mutagenesis, and the properties of salt bridges (C109) logically explain observed phase separation characteristics. The integration with the 'stickers and spacers' framework (C113-C117) is well-supported by data showing structured regions with slow HX (stickers) and regions with fast HX (spacers). However, some aspects remain speculative, particularly regarding the Borealin 140-150 region's interaction partner (C111).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "The ISB heterotrimer used in this study comprises INCENP1-58, full-length Survivin, and full-length Borealin, forming a three-helix bundle with a histone-binding module. The experimental design required developing polymer-free phase separation conditions because polymeric crowding agents are incompatible with mass spectrometry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C37 describe the experimental system and methodological constraints. The composition of ISB (C32-C34) is based on prior structural work (C33-C35, citing Jeyaprakash et al., 2007) and prior phase separation studies (C36, citing Trivedi et al., 2019). The incompatibility of polymers with MS (C37) is a well-established technical limitation that justifies the methodological approach. These are straightforward descriptive claims supported by citations and technical knowledge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C41",
+      "C42"
+    ],
+    "result": "At the 3000 s timepoint, there was diminution in droplet number, which may indicate transition to a more solid gel-like state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C41 reports an observation (diminution in droplet number), but C42 presents this as speculation ('may indicate') without supporting evidence for gel formation. No measurements of material properties, FRAP, or other assays to distinguish liquid vs. gel states are provided. The interpretation remains speculative and would require additional experiments to confirm.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "At 300 s, HXMS shows similar patterns for INCENP and Borealin as at 100 s, with additional extensive HX protection in Survivin's three-helix bundle helix and deprotection in its BIR domain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C55 describe time-dependent changes in HX patterns supported by data in Figure 2\u2014figure supplement 3. The observation of deprotection in the BIR domain (C55) is interesting as it suggests conformational changes or reduced interactions in this region upon droplet formation. The data are clearly presented and internally consistent.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C99",
+      "C101"
+    ],
+    "result": "There is a long-studied relationship between liquid-liquid phase separation and crystal formation. Crystal contacts may help identify sites involved in phase separation but are unlikely to be sufficient on their own.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99 and C101 reflect established knowledge in the field (C99 is general knowledge) and a reasonable inference from this study's results (C101). The successful use of crystal structure to guide mutagenesis in this study supports C101, though it's presented as speculation about future applications. The caveat that crystal contacts alone are insufficient is appropriate given that not all crystal contacts corresponded to phase separation-relevant interactions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C111",
+      "C112"
+    ],
+    "result": "The Borealin region around aa 140-150, enriched in basic residues, is presumed to interact with a negatively charged region in an adjacent heterotrimer. A region of strong negative charge exists within the intrinsically disordered region between the two regions of HX protection on Borealin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C111 is explicitly speculative ('presumed') and lacks experimental validation. While C112 reports an observation (presence of negatively charged region), the connection between these claims and the proposed interaction mechanism is not experimentally tested. This represents a reasonable hypothesis for future work but is not demonstrated in the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "The inner centromere and CPC localization involve multiple mechanisms including histone modifications, chromatin binding, and phase separation. Perturbing CPC phase separation leads to mitotic defects, suggesting roles in tuning centromere levels and maintaining CPC pools for cytokinesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C126 provide biological context for the study, drawing primarily on prior work (C118-C125 are supported by citations). The inference about phase separation's role (C126) is based on prior studies showing that disrupting phase separation causes mitotic defects (C125). These claims appropriately contextualize the current findings but represent background knowledge rather than new results from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Phase separation involves bonds similar to conventional macromolecular interactions, but mechanistic understanding is limited. Current structural biology approaches are inadequate for studying low-affinity/low-specificity interactions and multivalent interactions with flexible surfaces.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C9-C18 establish the scientific context and motivation for the study. These are statements about the current state of the field, supported by appropriate citations (C9-C11, C15-C17) and reflecting accurate assessments of methodological limitations (C12-C14, C18). These claims justify the need for the HXMS approach developed in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "The CPC is a key regulator of cell division comprising four subunits (Aurora B, INCENP, Survivin, Borealin) that localizes to the inner centromere during prometaphase. The three non-catalytic subunits form heterotrimers with propensity for phase separation, and mutations in Borealin aa 139-160 disrupt phase separation and CPC function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C3, C19-C31 provide essential background on the CPC system under study. These are well-established facts supported by appropriate citations (C2, C19-C21, C23-C31) or general knowledge (C22). The claims about prior findings on Borealin mutations (C27-C31) establish the foundation for the current investigation and are properly attributed to prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C45",
+      "C47"
+    ],
+    "result": "The Borealin region around aa 140-150 was originally interpreted as largely unstructured with high intrinsic disorder, and overlaps with a deletion mutant (Borealin\u0394139-160) that causes loss of phase separation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45 and C47 accurately describe prior interpretations (C45) and prior experimental findings (C47, citing Trivedi et al., 2019). These provide important context for the new HXMS findings (C46) that suggest this region has more structure than previously thought. The claims are appropriately attributed to prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "This study defines the impact of phase separation on structural dynamics of CPC regions and identifies key structural determinants driving inter-heterotrimer interactions, providing a framework for understanding the inner centromere.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C127-C129 are summary statements about the study's contributions. They accurately reflect the major findings (structural dynamics from HXMS, identification of salt bridges) and appropriately characterize the significance of the work. These are supported by the collective evidence from the experimental results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Multivalency involving weak interactions separated by intrinsically disordered domains has emerged as a key driver of protein phase separation, but detailed insight into specific self-self interactions remains rare.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C105 accurately describe the current state of knowledge in the phase separation field. These are well-established concepts (C103-C104) and an accurate assessment of knowledge gaps (C105, supported by citation to Banani et al., 2017). These claims provide appropriate context for the study's contributions.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,402 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "The systematic review identified 2018 studies, screened 78 by title/abstract, reviewed 43 in detail, excluded 18 for insufficient information, and included 25 studies in the final analysis. The review followed PRISMA guidelines and used the Newcastle-Ottawa Scale for quality assessment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C46 and C129-C131 describe the systematic review methodology and study selection process. The numbers are internally consistent (2018\u219278\u219243\u219225 after exclusions), the PRISMA guidelines were followed, and quality assessment was performed using a validated tool. The process is well-documented and methodologically sound.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C4",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Women with PCOS have a 1.42-fold increased prevalence of anxiety compared to controls (95% CI: 1.32-1.52, I\u00b2=43.82%), based on meta-analysis of 10 high-quality studies. This translates to an excess prevalence of 3.84% and 216,248 excess anxiety cases in the U.S. PCOS population.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C53 present a coherent meta-analysis result for anxiety. The pooled PR of 1.42 is statistically significant with a narrow confidence interval. The calculation chain (baseline 9.15% \u00d7 1.42 = 12.99%, excess = 3.84%, cases = 216,248) is mathematically correct. Moderate heterogeneity (I\u00b2=43.82%) is acceptable. The result is robust to sensitivity analyses (C79) and publication bias assessment (C81-C82, C88).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C5",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Women with PCOS have a 1.65-fold increased prevalence of depression compared to controls (95% CI: 1.44-1.89, I\u00b2=63.0%), based on meta-analysis of 10 high-quality studies. This translates to an excess prevalence of 5.79% and 262,176 excess depression cases in the U.S. PCOS population.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C60 present a coherent meta-analysis result for depression. The pooled PR of 1.65 is statistically significant with a confidence interval excluding 1.0. The calculation chain (baseline 8.9% \u00d7 1.65 = 14.69%, excess = 5.79%, cases = 262,176) is mathematically correct. Higher heterogeneity (I\u00b2=63.0%) is noted but addressed through sensitivity analyses. The result is robust to publication bias (C83-C84, C88).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C6",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Women with PCOS have a 1.48-fold increased prevalence of eating disorders compared to controls (95% CI: 1.06-2.05, I\u00b2=74.41%), based on meta-analysis of 6 high-quality studies. This translates to an excess prevalence of 1.15% and 48,764 excess eating disorder cases in the U.S. PCOS population.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C61-C66 present a meta-analysis result for eating disorders with a marginally significant confidence interval (lower bound 1.06). High heterogeneity (I\u00b2=74.41%) raises concerns. Critically, the trim-and-fill analysis (C85-C87, C89) shows the result becomes non-significant after adjusting for publication bias (PR=1.30, 95% CI: 0.92-1.85, p=0.1371), indicating sensitivity to small study effects. The result is less robust than for anxiety and depression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C7",
+      "C69"
+    ],
+    "result": "Women with PCOS showed a non-significant trend toward increased postpartum depression (PR: 1.20, 95% CI: 0.96-1.50) based on 6 high-quality studies. This outcome was excluded from economic burden calculations due to lack of statistical significance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C69 correctly report a non-significant association (confidence interval crosses 1.0) and appropriately exclude this outcome from cost calculations. The methodological decision to exclude non-significant results from economic burden estimates is scientifically sound and conservative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C8"
+    ],
+    "result": "The excess direct healthcare cost of anxiety in PCOS is estimated at $1.939 billion/year in 2021 USD, calculated from 216,248 excess cases at $8,966 per case (inflation-adjusted from $2,694 in 1990).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C70-C72 present cost calculations that are mathematically correct (216,248 \u00d7 $8,966 = $1,938,879,568 \u2248 $1.939 billion). However, the use of 1990 cost data (C70, C127) adjusted only for medical inflation is problematic. The authors acknowledge this limitation but do not account for changes in treatment practices, healthcare policies, or cost structures over 31 years. The baseline prevalence (C50) and PCOS population size are not explicitly sourced, creating uncertainty in the denominator.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C9"
+    ],
+    "result": "The excess direct healthcare cost of depression in PCOS is estimated at $1.678 billion/year in 2021 USD, calculated from 262,176 excess cases at $6,401 per case (inflation-adjusted from $5,726 in 2018).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C73-C75 present cost calculations that are mathematically correct (262,176 \u00d7 $6,401 = $1,678,188,576 \u2248 $1.678 billion). The 2018 cost data (C73, C126) is more recent than for anxiety, but the same methodological concerns apply regarding inflation adjustment without accounting for changes in treatment practices. The calculation depends on the PCOS population estimate and baseline depression prevalence (C57), which lack explicit sourcing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C10"
+    ],
+    "result": "The excess direct healthcare cost of eating disorders in PCOS is estimated at $0.644 billion/year in 2021 USD, calculated from 48,764 excess cases at $13,200 per case (inflation-adjusted from $11,808 in 2018).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNSUPPORTED",
+    "evaluation": "Claims C76-C78 present cost calculations that are mathematically correct (48,764 \u00d7 $13,200 = $643,684,800 \u2248 $0.644 billion). However, this cost estimate is based on a prevalence ratio that becomes non-significant after publication bias adjustment (C85-C87). Including this in the economic burden estimate is inappropriate given the uncertain association. The authors should have excluded eating disorders from cost calculations, as they did for postpartum depression (C69).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C11",
+      "C91"
+    ],
+    "result": "The combined excess direct healthcare costs for anxiety, depression, and eating disorders in PCOS total $4.261 billion/year in 2021 USD, with anxiety accounting for 45%, depression 40%, and eating disorders 15%.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNSUPPORTED",
+    "evaluation": "Claims C11 and C91 sum the individual cost estimates ($1.939 + $1.678 + $0.644 = $4.261 billion), which is mathematically correct. However, this total inappropriately includes eating disorder costs (C78), which are based on an association that is not robust to publication bias (C85-C87, C89). The total should be recalculated excluding eating disorders, yielding approximately $3.6 billion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C12"
+    ],
+    "result": "The total excess economic burden of PCOS exceeds $15 billion annually in 2021 USD, combining current mental health cost estimates with prior estimates for diagnosis, reproductive morbidities, obstetrical complications, T2DM, and stroke. Mental health disorders account for approximately 28% of this total burden.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C92-C97 integrate current findings with prior work (C36-C41) to estimate total PCOS burden. The $15 billion figure depends on: (1) the questionable $4.261 billion mental health total that includes eating disorders; (2) prior estimates from 2004-2020 adjusted only for inflation; and (3) assumptions about PCOS prevalence (C125). The percentage breakdowns (C93-C97) are mathematically consistent with Table 2, but the underlying total is uncertain due to compounded methodological limitations across multiple studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "The cost of initial PCOS diagnostic evaluation is $166 million annually (1.1% of total burden), suggesting that quality diagnosis and evaluation is cost-effective for ameliorating PCOS complications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C99 present an inflation-adjusted cost from prior work that is mathematically consistent with the total burden estimate. Claim C100 makes a reasonable inference that the low diagnostic cost (1.1%) relative to complication costs (98.9%) supports investment in diagnosis. However, this is a logical inference rather than a formal cost-effectiveness analysis with quality-adjusted life years or incremental cost-effectiveness ratios.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C79",
+      "C80"
+    ],
+    "result": "Sensitivity analyses excluding studies with self-reported PCOS showed consistent results for anxiety, with slightly increased point estimates for depression and eating disorders, all within the range of random variation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C80 report sensitivity analysis results that support the robustness of the primary findings. The consistency for anxiety and slight increases for depression/eating disorders suggest that self-reporting bias is not a major confounder. This strengthens confidence in the meta-analysis results, particularly for anxiety and depression.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Publication bias assessment using trim-and-fill method and Egger's test showed that anxiety and depression results were robust to publication bias, while eating disorder results became non-significant after adjustment (PR=1.30, 95% CI: 0.92-1.85, p=0.1371), indicating sensitivity to small study effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C90 present comprehensive publication bias assessment. The trim-and-fill analysis appropriately adjusts for potential missing studies, showing robust results for anxiety (PR 1.42\u21921.40) and depression (PR 1.65\u21921.50) but loss of significance for eating disorders. Egger's test (C90) confirms potential small study effects for all outcomes. The interpretation (C87-C89) correctly identifies eating disorders as less robust. This is rigorous bias assessment that appropriately qualifies the eating disorder findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "The meta-analysis used appropriate statistical methods including the DerSimonian-Laird random effects model, prevalence ratios instead of odds ratios (due to outcome prevalence >10%), I\u00b2 statistic for heterogeneity assessment, and multiple approaches to assess publication bias.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C136 describe sound meta-analysis methodology. The choice of random effects model is appropriate for heterogeneous studies. The decision to use PRs instead of ORs (C122-C123) is justified given outcome prevalences >10%. The acknowledgment that most studies matched by age/BMI (C124) addresses potential confounding. Heterogeneity assessment (C132-C133) and publication bias methods (C134-C136) are standard and appropriate. The methodology is rigorous and well-justified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "The economic burden calculations used a PCOS prevalence of 6.6% based on NIH criteria and cost data from published studies: anxiety costs from Greenberg et al. 1999, depression costs from Greenberg et al. 2021, and eating disorder costs from Streatfeild et al. 2021.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C125-C128 describe the data sources for economic calculations. The 6.6% PCOS prevalence (C125) is conservative and based on NIH criteria, which is reasonable but may underestimate true prevalence. The cost data sources span 1999-2021, with anxiety costs from 1999 (C127) being particularly dated. While the authors justify these choices and adjust for inflation, they acknowledge limitations regarding changes in treatment practices and healthcare costs over time. The heterogeneity in data sources and time periods introduces uncertainty.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "For comparison, the direct healthcare costs of ovarian cancer ($7.8B), lung cancer ($16.8B), prostate cancer ($26.7B), and breast cancer ($20.5B) in the U.S. are provided, with PCOS costs ($15.2B) falling in the middle of this range.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C104 provide comparative context from Waters and Graf 2018. These comparisons are appropriately cited and help contextualize the PCOS burden. However, the comparison assumes the PCOS estimate ($15.2B) is accurate, which is uncertain given the methodological limitations identified in other results. The comparison is valid as stated but should be interpreted cautiously given uncertainties in the PCOS estimate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "Prior global burden studies by Liu et al. and Safiri et al. using GBD 2017 data estimated PCOS prevalence at 1.7% and DALYs at 0.43 million, but did not estimate economic costs. The authors note this prevalence is significantly lower than direct population assessments (6.6%), likely reflecting chronic underdiagnosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C113 accurately summarize prior work and make a reasonable inference about underdiagnosis (C112-C113). The observation that GBD-based prevalence estimates (1.7%) are lower than direct assessments (6.6%) is important context. The inference about underdiagnosis is plausible given PCOS is known to be underdiagnosed. This discussion appropriately contextualizes the current study's prevalence assumptions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C114",
+      "C115"
+    ],
+    "result": "Ding et al. estimated PCOS-associated T2DM costs at \u00a3237 million in the UK (2014), equivalent to $2.04 billion in 2021 USD after adjusting for population size, inflation, and currency conversion, somewhat higher than the authors' prior estimate of $1.527 billion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C115 appropriately compare the current study's prior T2DM cost estimate with Ding et al.'s UK-based estimate. The conversion methodology (adjusting for population ratio 14.7M/76.5M, 19.2% inflation, and currency conversion) is transparent and reasonable. The modest discrepancy ($2.04B vs $1.527B) is acknowledged. This comparison provides external validation for the cost estimation approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "With 1.9 billion reproductive-aged women worldwide and a minimum PCOS prevalence of 6.6%, at least 125.4 million women are affected globally, suggesting an enormous worldwide economic burden.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C118 make a straightforward calculation (1.9 billion \u00d7 6.6% = 125.4 million) using UN population data. The inference that global burden is \"enormous\" (C118) is reasonable given the U.S. burden estimate, though the exact magnitude is not quantified. This appropriately contextualizes PCOS as a major global health issue.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "PCOS is characterized as the most common hormone disorder affecting about 1 in 7 reproductive-aged women worldwide (~6 million in the U.S.), representing 5-15% of reproductive-aged women by NIH criteria, and is a highly inherited complex polygenic disorder.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 and C13-C15 provide background on PCOS prevalence and characteristics. The \"1 in 7\" (C1) is consistent with the upper end of the 5-15% range (C15). The 6 million U.S. estimate (C2) is reasonable given ~76.5 million reproductive-aged women and 6-15% prevalence. The characterization as polygenic and highly inherited (C13) is well-established and cited. These background claims are appropriately supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "PCOS is associated with increased risk for numerous comorbidities including metabolic (T2DM, metabolic syndrome), cardiovascular (hypertension, dyslipidemia, thrombosis, stroke, possibly cardiovascular events), reproductive (subfertility, obstetric complications), oncologic (endometrial carcinoma), and mental health disorders (depression, anxiety, bipolar disorder, OCD, worse symptoms and somatization), though psychological correlates have received less clinical attention.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C35 summarize well-established PCOS comorbidities supported by citation to Azziz et al. 2016 and other sources. The qualifier \"possibly\" for cardiovascular events (C22) appropriately indicates uncertainty. The observation about limited attention to psychological correlates (C27) is supported by citations and provides rationale for the current study. These background claims appropriately contextualize the study's focus on mental health burden.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Prior work by the authors estimated annual costs of PCOS evaluation ($93M), menstrual dysfunction treatment ($1.35B), infertility care ($533M), and hirsutism treatment ($622M) in 2014 USD, plus T2DM ($1.5B) and stroke ($2.4B) costs in 2020 USD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C41 accurately cite the authors' prior work (Azziz et al. 2005, Riestenberg et al. 2022). These estimates provide the foundation for the total burden calculation in the current study. The citations are appropriate and the estimates are clearly attributed to prior work. This establishes the context for adding mental health costs to the total PCOS burden.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C119",
+      "C120"
+    ],
+    "result": "The authors conclude that improved PCOS detection, clinical awareness, and interventions represent a cost-effective approach to ameliorating PCOS impact, and that PCOS research is severely underfunded relative to its economic burden.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C120 present reasonable conclusions based on the study findings. The cost-effectiveness inference (C119) follows logically from the low diagnostic cost (1.1%) relative to complication costs. The underfunding claim (C120) is supported by citation to Brakta et al. 2017. These are appropriate policy implications, though C119 would be strengthened by formal cost-effectiveness analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C105"
+    ],
+    "result": "The authors speculate that the economic burden of PCOS will likely continue to rise as further studies assess additional morbidities not yet included in the total estimate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C105 is a reasonable speculation given that the current estimate only includes confirmed associations for specific morbidities. Many potential PCOS-related costs (e.g., other mental health conditions, quality of life impacts, indirect costs) are not yet quantified. This appropriately qualifies the $15 billion estimate as a lower bound.",
+    "result_type": "MINOR"
+  }
+]

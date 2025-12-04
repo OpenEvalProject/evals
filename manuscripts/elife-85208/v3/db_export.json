@@ -1,0 +1,1348 @@
+{
+  "submission": {
+    "id": "72c54c65-c885-44e7-8837-fce029be6e17",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-04T02:22:38.079343Z",
+    "updated_at": "2025-12-04T02:22:38.079343Z"
+  },
+  "content": [
+    {
+      "id": "915fa433-6686-4ac0-8ed8-acf9922e7159",
+      "submission_id": "72c54c65-c885-44e7-8837-fce029be6e17",
+      "content_type": "manuscript",
+      "content_text": "# Kinetochore-fiber lengths are maintained locally but coordinated globally by poles in the mammalian spindle\n\n## Authors\n\n- Manuela Richter<sup>1</sup> ([ORCID: 0000-0002-9366-4038](https://orcid.org/0000-0002-9366-4038)) \u2020\n- Lila Neahring<sup>2</sup> ([ORCID: 0000-0003-2272-8732](https://orcid.org/0000-0003-2272-8732))\n- Jinghui Tao<sup>2</sup>\n- Renaldo Sutanto<sup>2</sup> ([ORCID: 0000-0002-1252-1482](https://orcid.org/0000-0002-1252-1482))\n- Nathan H Cho<sup>1</sup> ([ORCID: 0000-0002-0110-1343](https://orcid.org/0000-0002-0110-1343))\n- Sophie Dumont<sup>1</sup> ([ORCID: 0000-0002-8283-1523](https://orcid.org/0000-0002-8283-1523)) \u2020\n\n### Affiliations\n\n1. Tetrad Graduate Program, University of California, San Francisco San Francisco United States ([ROR:043mz5j54](https://ror.org/043mz5j54))\n2. Department of Bioengineering & Therapeutic Sciences, University of California, San Francisco San Francisco United States ([ROR:043mz5j54](https://ror.org/043mz5j54))\n3. Developmental & Stem Cell Biology Graduate Program, University of California, San Francisco San Francisco United States ([ROR:043mz5j54](https://ror.org/043mz5j54))\n4. Biochemistry & Biophysics Deptartment, University of California, San Francisco San Francisco United States ([ROR:043mz5j54](https://ror.org/043mz5j54))\n5. Chan Zuckerberg Biohub San Francisco United States ([ROR:00knt4f32](https://ror.org/00knt4f32))\n\n\u2020 Corresponding author\n\n## Abstract\n\nAt each cell division, nanometer-scale components self-organize to build a micron-scale spindle. In mammalian spindles, microtubule bundles called kinetochore-fibers attach to chromosomes and focus into spindle poles. Despite evidence suggesting that poles can set spindle length, their role remains poorly understood. In fact, many species do not have spindle poles. Here, we probe the pole\u2019s contribution to mammalian spindle length, dynamics, and function by inhibiting dynein to generate spindles whose kinetochore-fibers do not focus into poles, yet maintain a metaphase steady-state length. We find that unfocused kinetochore-fibers have a mean length indistinguishable from control, but a broader length distribution, and reduced length coordination between sisters and neighbors. Further, we show that unfocused kinetochore-fibers, like control, can grow back to their steady-state length if acutely shortened by drug treatment or laser ablation: they recover their length by tuning their end dynamics, albeit slower due to their reduced baseline dynamics. Thus, kinetochore-fiber dynamics are regulated by their length, not just pole-focusing forces. Finally, we show that spindles with unfocused kinetochore-fibers can segregate chromosomes but fail to correctly do so. We propose that mammalian spindle length emerges locally from individual k-fibers while spindle poles globally coordinate k-fibers across space and time.\n\n## Introduction\n\nLiving systems use simple, small-scale components to build larger and more complex structures. One such structure is the micron-scale spindle, built from nanometer-scale tubulin molecules. The length of the spindle dictates the distance over which chromosomes segregate in dividing cells, and spindle length is known to scale with cell size during development (Good et al., 2013; Hazel et al., 2013; Lacroix et al., 2018; Rieckhoff et al., 2020; W\u00fchr et al., 2008). Defects in spindle length are linked to impaired chromosome segregation (Goshima et al., 1999), cytokinesis errors (Dechant and Glotzer, 2003), and asymmetric division defects (Dudka et al., 2019; Dumont et al., 2007), and long spindles have been hypothesized to come at an energetic cost (Dumont and Mitchison, 2009a). While we know many proteins that can modulate the spindle\u2019s length (Goshima and Scholey, 2010), how they work together to set spindle length and ensure robust chromosome segregation remains poorly understood. We do not know which aspects of spindle length and dynamics are regulated by global cues at the level of the whole spindle, and which are more locally regulated at the level of its components.\n\nMammalian spindles are built from a network of microtubules, including discrete bundles of microtubules connecting chromosomes to poles. These bundles, called kinetochore-fibers (k-fibers), are made of many microtubules, some of which directly extend from kinetochores to poles (Kiewisz et al., 2022; McDonald et al., 1992; O\u2019Toole et al., 2020). Poles are the convergence points of k-fiber microtubules and other microtubule minus-ends, and they can also serve as an anchor point for centrosomes, if present, and astral microtubules. In many systems, dynein and other motors work together to focus microtubules into asters and poles (Compton, 1998; Goshima et al., 2005a; Heald et al., 1996; Merdes et al., 1996; Roostalu et al., 2018; So et al., 2022). In mammals, k-fiber microtubules turn over on the order of minutes (Gorbsky and Borisy, 1989), detaching from kinetochores and getting replaced. They also exhibit poleward flux, where k-fiber tubulin moves toward poles, with k-fiber plus-ends on average polymerizing and minus-ends appearing to depolymerize at poles (Mitchison, 1989). Both biochemical factors (Goshima and Scholey, 2010) and mechanical force (Akiyoshi et al., 2010; Dumont and Mitchison, 2009b; Nicklas and Staehly, 1967) are thought to tune k-fiber dynamics at both microtubule ends and thereby tune k-fiber length. Microtubule dynamics regulators with length-dependent activities (Dudka et al., 2019; Mayr et al., 2007; Stumpff et al., 2008; Varga et al., 2006) could in principle give rise to the k-fiber\u2019s length scale, beyond simply tuning length. However, k-fiber architecture and organization vary across species, adding complexity to our understanding of how k-fibers set their length. Some spindles, such as in land plants, do not have focused poles (Yamada and Goshima, 2017), and in many species, spindles are composed of short, tiled microtubules indirectly connecting chromosomes to poles (Brugu\u00e9s et al., 2012; Yang et al., 2007), unlike mammalian k-fibers. Broadly, it remains poorly understood which of the mammalian spindle\u2019s emergent properties\u2014such as length, dynamics, and function\u2014emerge globally from the whole spindle, or locally from individual k-fibers themselves.\n\nWhile we know that perturbations that affect spindle pole-to-pole distance also affect k-fiber length, and vice versa (Waters et al., 1996), it is still unclear which sets the other. For example, global forces such as cell confinement pulls on poles, leading to k-fiber elongation by transiently suppressing apparent minus-end depolymerization (Dumont and Mitchison, 2009b), but pole-less k-fibers do not elongate under these forces (Guild et al., 2017). Similarly, locally pulling on a k-fiber with a microneedle causes it to stop depolymerizing at its pole and thus elongate (Long et al., 2020). Since poles serve as a connection point for spindle body microtubules, centrosomes, and astral microtubules, they can in principle help integrate physical and molecular information from within and outside the spindle. Indeed, one proposed model is that force integration at spindle poles sets mammalian k-fiber length and dynamics (Dumont and Mitchison, 2009a).However, focused poles may not be essential for setting spindle length, as species without focused poles (Yamada and Goshima, 2017) can still build spindles and set their length. Similarly, inhibiting dynein unfocuses poles but spindles still form albeit with altered lengths in Drosophila (Goshima et al., 2005b) and Xenopus (Gaetz and Kapoor, 2004; Heald et al., 1996; Merdes et al., 1996), and without a clear effect on mammalian spindle length (Guild et al., 2017; Howell et al., 2001). Further, it is possible to alter kinetochores and microtubule dynamics to shorten k-fibers without a corresponding decrease in the spindle\u2019s apparent length (DeLuca et al., 2006). The role of the mammalian spindle pole on k-fiber structure, dynamics, and function remains an open question.\n\nHere, we ask which emergent properties of mammalian k-fibers require a focused spindle pole. We inhibit pole-focusing forces and ask how k-fiber length, dynamics, and function change when the spindle reaches an unfocused steady state. Using live imaging, we find that k-fibers can set their mean length without poles but need poles to homogenize and coordinate their lengths between k-fibers. To test whether unfocused k-fibers can recover their lengths, as control ones do, we acutely shorten them using laser ablation or a microtubule-destabilizing drug and show that they recover their length. They do so by tuning their end dynamics and recover more slowly due to reduced baseline dynamics. Thus, k-fiber length is not simply regulated by global pole-focusing forces, but by local length-based mechanisms. Lastly, we show that while the mammalian spindle can move chromosomes without focused poles, it does so with severe segregation and cytokinesis defects. Together, this work indicates that mammalian spindle poles and pole-focusing forces are not required for k-fiber length establishment and maintenance, but for coordinating spindle structure, dynamics, and function across space and time. We propose that the spindle length scale emerges locally at the level of an individual k-fiber, and that robust, coordinated spindle architecture and function arise globally through spindle poles.\n\n## Results\n\n### Spindle poles coordinate but do not maintain kinetochore-fiber lengths\n\nTo test whether k-fiber length is set locally or globally, we generated metaphase spindles without focused poles, but with a steady-state length at metaphase. To do so, we overexpressed the dynactin subunit p50 (dynamitin) in PtK2 mammalian rat kangaroo cells, a system with few chromosomes and clearly resolved individual k-fibers. p50 overexpression dissociates the dynactin complex and inhibits the pole-focusing forces of its binding partner, dynein (Echeverri et al., 1996; Howell et al., 2001; Quintyne et al., 1999), unfocusing poles in species such as Xenopus and Drosophila (Gaetz and Kapoor, 2004; Sharp et al., 2000). Indeed, we found that unfocused spindles correlated with higher mean intensity levels of p50 expression (Figure 1\u2014figure supplement 1), consistent with prior work showing mild pole disruption vs. severe unfocusing depending on the severity of dynein inhibition (Elting et al., 2017; Gaglio et al., 1997, p. 199; Hueschen et al., 2019; Hueschen et al., 2017; Sharp et al., 2000, p. 200; van Toorn et al., 2022). To probe the role of poles on global and local spindle architecture, here we selected unfocused spindles that maintained a steady-state structure on the minutes timescale, holding their shape over time (Figure 1\u2014video 3).\n\nWe first imaged unfocused spindle assembly in cells overexpressing p50 using long-term confocal fluorescence live imaging with a wide field of view to capture these rare events. While k-fibers seemed initially focused in these cells, these k-fibers eventually lost their connection to centrosomes and became unfocused, exhibiting a similar phenotype to spindle assembly in some NuMA-disrupted cells (Figure 1A, Figure 1\u2014videos 1 and 2, Silk et al., 2009). We observed disconnected centrosomes seemingly move around freely in cells with unfocused spindles (Figure 1\u2014videos 2 and 3). The resulting metaphase spindles were barrel-shaped with bi-oriented chromosomes, and they underwent anaphase after several hours instead of about 30 min in control, consistent with dynein inhibition at kinetochores causing an anaphase delay (Howell et al., 2001; Figure 1A, Figure 1\u2014videos 1 and 2). While these spindles had no clear poles, we sometimes observed transient clustering of neighboring k-fibers, likely due to residual pole-focusing forces from other minus-end motors or incomplete dynein inhibition. Their interkinetochore distance was indistinguishable from control (Figure 1\u2014figure supplement 2), suggesting that k-fibers are still under some tension from other forces (Elting et al., 2017; Kajtez et al., 2016; Maiato et al., 2004; Milas and Toli\u0107, 2016), despite not being connected to poles. p50 overexpression in human RPE1 cells led to similar unfocusing phenotypes (Figure 1\u2014figure supplement 3), but k-fibers were not individually resolvable. Thus, we chose to work with p50 overexpression in PtK2 spindles and hereafter refer to these spindles and k-fibers without distinct poles and with reduced pole-focusing forces as \u2018unfocused\u2019.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/85208/elife-85208-fig1-v3.jpg)\n\n**Figure 1.:** See also Figure 1\u2014videos 1\u20133. (A) Representative confocal timelapse images of spindle assembly showing max-intensity z-projections of HaloTag-\u03b2-tubulin PtK2 spindles labeled with JF 646, from nuclear envelope breakdown at t = 0 through cytokinesis. mCherry-p50 was infected into unfocused but not control cells. Arrowheads mark where both centrosomes were observed to be disconnected from the spindle. (B) Max-intensity z-projections of representative confocal images of PtK2 spindles with GFP-\u03b1-tubulin (control and unfocused) and mCherry-p50 (unfocused only). (C) Cartoon model of a mammalian spindle with chromosomes (gray) and microtubules (green), with predictions for k-fiber lengths after disrupting poles. Figures D\u2013G are from the same dataset (Control: N = 16 cells; Unfocused: N = 16 cells). (D) Spindle major and minor axis lengths in control and unfocused spindles (major axis: Control = 20.24 \u00b1 2.65 \u00b5m, Unfocused = 31.87 \u00b1 7.85 \u00b5m, p = 6.3e\u22125; minor axis: Control = 8.96 \u00b1 2.12 \u00b5m, Unfocused = 21.23 \u00b1 7.61 \u00b5m; p = 2.5e\u22125; Control N = 16, Unfocused N = 15). (E) Lengths of control and unfocused k-fibers from z-stacks by live-cell imaging (Control: n = 144 k-fibers, 8.01 \u00b1 1.76 \u00b5m; Unfocused: n = 222 k-fibers, 7.81 \u00b1 2.52 \u00b5m; p = 0.38). (F) Mean lengths of control and unfocused k-fibers averaged by cell (Control: 7.97 \u00b1 1.30 \u00b5m; Unfocused: 7.84 \u00b1 1.31 \u00b5m; p = 0.79). (G) Length standard deviation of control and unfocused k-fibers per cell (Control: 1.12 \u00b1 0.44 \u00b5m; Unfocused: 2.05 \u00b1 0.58 \u00b5m; p = 2.9e\u22125). Figures H\u2013N are from the same dataset (Control: N = 9 cells, n = 52 k-fibers; Unfocused: N = 9 cells, n = 46 k-fibers). (H) Lengths of k-fibers measured over time in control and unfocused spindles. Each trace represents one k-fiber; each color represents a cell. (I) K-fiber length averaged over time in control and unfocused spindles. Each point represents one k-fiber (Control: 7.64 \u00b1 1.23 \u00b5m; Unfocused: 7.09 \u00b1 2.19 \u00b5m; p = 0.14). (J) Coefficients of variation for k-fiber lengths over time in control and unfocused spindles. Each point represents one k-fiber (Control: 12.60 \u00b1 5.62 a.u.; Unfocused: 17.23 \u00b1 5.98 a.u.; p = 1.8e\u22124). Figures K\u2013N were analyzed by sister k-fiber pairs (Control: N = 9 cells, n = 26 k-fiber pairs; Unfocused: N = 9 cells, n = 23 k-fiber pairs). (K) Lengths of sister k-fibers were measured over time in control and unfocused spindles. One representative k-fiber for each condition is shown in orange, its sister in blue, and their sum in black. (L) The sum of sister k-fiber lengths over time in control and unfocused spindles. Each trace is one sister k-fiber pair. (M) Summed sister k-fiber lengths averaged over time (from L). Each dot represents one sister k-fiber pair (Control: 15.27 \u00b1 2.19 a.u.; Unfocused: 14.18 \u00b1 3.54 a.u.; p = 0.22). (N) Coefficient of variation of summed sister k-fiber lengths over time (from L). Each dot represents one sister k-fiber pair (Control: 5.90 \u00b1 2.14 \u00b5m; Unfocused: 11.77 \u00b1 4.34 \u00b5m; p = 2.4e\u22126). Numbers are mean \u00b1 standard deviation. Significance values determined by Welch\u2019s two-tailed t-test denoted by n.s. for p \u2265 0.05, * for p < 0.05, ** for p < 0.005, and *** for p < 0.0005.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/85208/elife-85208-fig1-figsupp1-v3.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Max-intensity z-projections of confocal images of PtK2 spindles transfected with GFP-\u03b1-tubulin and mCherry-p50 representing the two main phenotypes of p50 expression. p50 images show one central z-plane at equal brightness/contrast levels. (B) Mean p50 intensity per cell was compared between p50-expressing focused spindles and p50-expressing unfocused spindles across 1 day of imaging. Results were not pooled across multiple days due to laser instability (Focused p50: n = 18; Unfocused p50: n = 5).\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/85208/elife-85208-fig1-figsupp2-v3.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Interkinetochore distance between sister k-fibers as measured in confocal live-cell imaging of PtK2 spindles expressing GFP-\u03b1-tubulin (control and unfocused) and mCherry-p50 (unfocused only) (Control: N = 13 cells, n = 40 kinetochore pairs, 2.22 \u00b1 0.54 \u00b5m; Unfocused: N = 16 cells, n = 123 kinetochore pairs, 2.32 \u00b1 0.86 \u00b5m; p = 0.38). Numbers are mean \u00b1 standard deviation. Significance values determined by Welch\u2019s two-tailed t-test denoted by n.s. for p \u2265 0.05.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/85208/elife-85208-fig1-figsupp3-v3.jpg)\n\n**Figure 1\u2014figure supplement 3.:** Representative confocal images showing max-intensity z-projections of RPE1 metaphase spindles labeled with SiR-tubulin. mCherry-p50 was expressed in unfocused but not control cells. Arrowheads mark centrosomes that appeared disconnected from spindles.\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/85208/elife-85208-fig1-figsupp4-v3.jpg)\n\n**Figure 1\u2014figure supplement 4.:** (A) Spindle major and minor axis length measurement. Example maximum intensity projection images of control and unfocused spindles from Figure 1B (left). Images were rotated, cropped, thresholded using the Otsu filter, and fitted with ellipses with major and minor axes calculated using SciKit\u2019s region property measurements (right). (B) Individual k-fiber length measurement. Example maximum intensity projections of control and unfocused spindles in A including only the subset of z-slices where the k-fiber of interest was in focus (left). An example region of interest (ROI) drawn in FIJI is shown to the right. (C) Cartoon depicting 3D length calculation. Lengths of ROIs as drawn in B were measured to calculate the XY length of k-fibers (blue). Z-height of k-fibers was calculated based on the number of z-slices the k-fiber spanned and the size of the z-step (orange). The Pythagorean theorem was used to approximate the 3D length of k-fibers in XYZ (black). In focused control k-fibers, centrosome radius was then subtracted (as calculated in Figure 1\u2014figure supplement 5).\n\n![Figure 1\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/85208/elife-85208-fig1-figsupp5-v3.jpg)\n\n**Figure 1\u2014figure supplement 5.:** (A) Example line ROI drawn on a representative centrosome in a max-intensity z-projection of a confocal image of a PtK2 spindle expressing GFP-\u03b1-tubulin. (B) Line profile of the example centrosome in A. Raw intensity values along the line ROI are plotted in black. These data were smoothed by applying a Gaussian fit and plotted in gray. (C) Normalized Gaussian-fitted line profiles of centrosomes. Each color refers to one Gaussian-fitted and normalized centrosome line profile. Traces were normalized by max intensity. (D) Centrosome radius was approximated by calculating the half width at half maximum from traces in C (N = 16 cells, n = 32 centrosomes, 0.97 \u00b1 0.10 \u00b5m). Numbers are mean \u00b1 standard deviation.\n\n![Figure 1\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/85208/elife-85208-fig1-figsupp6-v3.jpg)\n\n**Figure 1\u2014figure supplement 6.:** (A) Comparison of innermost and outermost k-fiber lengths in control and unfocused spindles. Inner k-fibers were defined to be within 2 \u00b5m of the long spindle axis; outer k-fibers were 3 or more \u00b5m away (Control: N = 16 cells, inner n k-fibers = 68, inner mean length = 7.67 \u00b1 1.72 \u00b5m, outer n k-fibers = 41, outer mean length 8.64 \u00b1 1.86 \u00b5m, p = 0.0070; Unfocused: N = 16 cells, inner n k-fibers = 61, inner mean length = 7.92 \u00b1 2.46 \u00b5m, outer n k-fibers = 131, outer mean length 7.59 \u00b1 2.57 \u00b5m, p = 0.40). (B) Correlation of k-fiber length and kinetochore alignment along the metaphase plate in control and unfocused spindles. Alignment was measured based on kinetochore distance to the approximated metaphase plate line and direction of misalignment. More negative values correspond to over-aligned kinetochores whose attached k-fibers are expected to be longer (yellow). More positive values correspond to under-aligned kinetochores (blue). Alignment scores around 1 \u00b5m correspond to kinetochore pairs aligned at the metaphase plate (green). Line of best fit is shown (Control: N = 16 cells, n = 139 k-fibers, correlation coefficient \u03c1 = \u22120.33; Unfocused: N = 16 cells, n = 205 k-fibers, correlation coefficient \u03c1 = \u22120.18). Numbers are mean \u00b1 standard deviation. Significance values determined by Welch\u2019s two-tailed t-test denoted by n.s. for p \u2265 0.05 and * for p < 0.05. Pearson\u2019s correlation coefficients are reported.\n\nTo measure k-fiber lengths more accurately, we imaged control and unfocused spindles at metaphase using short-term confocal fluorescence live imaging at higher spatial resolution (Figure 1B). If poles do not contribute to k-fiber length, we expect no change in k-fiber length distributions in unfocused spindles (Figure 1Ci). If poles are required to set spindle length, we expect k-fibers with a different mean length in unfocused spindles (Figure 1Cii). If poles merely coordinate lengths, we expect k-fibers with a greater variability of lengths in p50 spindles, but the same mean length (Figure 1Ciii). We first observed that in unfocused spindles, k-fibers were more spread out in the cell, with spindles covering a larger area compared to control along both its major and minor axes (Figure 1D, Figure 1\u2014figure supplement 4A). This is consistent with pole-focusing forces providing contractile forces to compact the spindle (Hueschen et al., 2019). Next, we measured k-fiber lengths in 3D (Figure 1\u2014figure supplement 4B, C). For control spindles whose k-fibers end at centrosomes at this resolution, we subtracted the radius of the centrosome (0.97 \u00b1 0.10 \u00b5m) from the region of measured tubulin intensity (Figure 1\u2014figure supplement 5). Mean k-fiber length in an unfocused spindle (7.81 \u00b1 2.52 \u00b5m) was not significantly different than control (8.01 \u00b1 1.76 \u00b5m) (Figure 1E). Thus, k-fibers do not require a pole connection to keep their mean length. However, these unfocused spindles showed a greater standard deviation in lengths, so we compared average k-fiber lengths per cell to account for cell-to-cell variability: the mean k-fiber length within each cell was indistinguishable between control and unfocused cells (Figure 1F), but the standard deviation was significantly greater in unfocused cells (Figure 1G). This indicates that spindle poles act to synchronize lengths between neighbors within a spindle, rather than to set and keep length. K-fibers can maintain their average length without poles, but they do so with a greater length variability.\n\nIn principle, this greater k-fiber length variability in unfocused spindles could not only come from greater length variability between k-fibers in a given cell (Figure 1G), but also from greater variability over time for each k-fiber. To test this idea, we measured k-fiber lengths over time (Figure 1H, Figure 1\u2014video 3). We observed indistinguishable mean lengths averaged over time in unfocused and control k-fibers and a greater coefficient of variation in unfocused k-fiber lengths over time compared to control (Figure 1I, J). Thus, while unfocused k-fibers still establish and maintain their mean lengths at a similar length scale (Figure 1F, I), their lengths are more variable within a cell (Figure 1G) and over time (Figure 1J) compared to control.\n\nTo test the role of poles in coordinating lengths within the spindle across space, we tested whether k-fiber length correlated with k-fiber spatial positioning within the spindle. Based on geometry and previous observations, we expected outer k-fibers to be longer than inner k-fibers in focused spindles (Kiewisz et al., 2022). This was indeed the case in control spindles, but this difference was lost in unfocused spindles (Figure 1\u2014figure supplement 6A). Furthermore, we expected k-fiber length to correlate with distance to the metaphase plate \u2013 k-fibers are shorter if attached to under-aligned chromosomes and longer if attached to over-aligned chromosomes (Wan et al., 2012). Here too, a correlation between k-fiber length and alignment was observed in control but it was negligible in unfocused spindles (Figure 1\u2014figure supplement 6B). Thus, poles coordinate k-fiber lengths spatially in the spindle to maintain its shape despite geometric constraints.\n\nFinally, to test the role of poles in coordinating lengths within the spindle across time, we compared sister k-fiber lengths over several minutes. During chromosome oscillations, sister k-fiber lengths are normally anti-correlated (Wan et al., 2012). Indeed, in control cells we observed that as one sister k-fiber shortened, the other elongated to maintain a constant sum of their lengths. However, this was not observed in unfocused spindles (Figure 1K). In unfocused spindles, the sum of sister k-fiber lengths was indistinguishable from control when averaged over time, but their sum was less conserved over time, yielding higher coefficients of variation (Figure 1K\u2013N). Thus, poles help coordinate lengths across sister k-fibers such that chromosomes can move within the metaphase spindle while maintaining spindle length.\n\nTogether, our findings indicate that spindle poles are not required to globally maintain k-fiber length. Instead, individual k-fibers can locally maintain their length scale over time, and poles and global pole-focusing forces are needed to coordinate k-fiber lengths within the cell and across sister k-fibers, organizing the spindle\u2019s structure in space and time.\n\n### Kinetochore-fibers recover their lengths without focused poles\n\nWe have shown that k-fibers can establish and maintain their length independently of poles and pole-focusing forces, but cannot properly organize their lengths within the spindle across space and time. While unfocused k-fibers within a cell maintain their average length over time, we sought to determine whether they can recover their length without focused poles, that is, whether they actively adjust and recover their length if shortened below their steady-state length. First, we used laser ablation to acutely cut and shorten k-fibers and then imaged their regrowth compared to unablated k-fibers (Figure 2A\u2013D, Figure 2\u2014video 1). Mean k-fiber lengths in unfocused spindles before ablation appeared to be shorter (Figure 2D); however, this was due to not capturing the full length of k-fibers in a single z-plane while imaging ablated k-fibers. Indeed, length analysis of full z-stacks from unfocused spindles before ablation yielded an indistinguishable mean k-fiber length compared to control k-fibers in Figure 1E (Figure 2\u2014figure supplement 1). Thus, ablated k-fibers were compared to their unablated neighbors as internal controls. Ablation generates new microtubule minus-ends on the shortened k-fiber stub, which recruit NuMA and dynein to reincorporate them back into the pole in control cells (Elting et al., 2014; Sikirzhytski et al., 2014). As expected, control ablated k-fibers were transported toward poles and did so while growing back rapidly following ablation, at 0.85 \u00b1 0.09 \u00b5m/min on average in the first 5 min (Figure 2E). Unfocused k-fibers also grew back, though more slowly at 0.38 \u00b1 0.42 \u00b5m/min on average (Figure 2E). They took longer to grow back to the mean length of unablated neighbor k-fibers neighbor k-fibers (Figure 2F). Thus, focused poles and pole-focusing forces are not required for k-fibers to recover their lengths, but are required for rapid length recovery. The latter is consistent with the idea that force on k-fiber ends favors k-fiber growth (Dumont and Mitchison, 2009b; Long et al., 2020; Nicklas and Staehly, 1967). Ultimately, k-fibers can adapt to length changes and maintain a steady-state length locally, without poles.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/85208/elife-85208-fig2-v3.jpg)\n\n**Figure 2.:** See also Figure 2\u2014videos 1 and 2. (A) Schematic of a k-fiber after ablation at position X. The k-fiber stub still attached to the chromosome persists with a new minus-end (dark green). The k-fiber segment closer to the pole with a new plus-end depolymerizes away (light green, *). (B) Representative confocal timelapse images of PtK2 k-fibers with GFP-\u03b1-tubulin and mCherry-p50 (in unfocused only). K-fibers were laser ablated at t = 0 (X) and followed over time. Empty arrowheads mark newly created minus-ends. (C) K-fiber lengths over time in a representative control and unfocused spindle. Gray traces represent unablated k-fibers. The ablated k-fiber is plotted in black. (D) Binned and averaged k-fiber lengths over time for ablated control and unfocused spindles. The average length of non-ablated k-fibers is plotted in gray, the average of ablated k-fibers in red for control and blue for unfocused. Shaded colors indicate \u00b11 standard deviation for their respective condition (Control: N = 7 cells, n = 8 ablated k-fibers, m = 26 non-ablated k-fibers; Unfocused: N = 6 cells, n = 8 ablated k-fibers, m = 31 non-ablated k-fibers). (E) Average growth rates of k-fibers immediately following ablation. Linear regression was performed on binned k-fiber lengths during the first 5 min following ablation (Control: 0.85 \u00b1 0.09 \u00b5m/min, Unfocused: 0.38 \u00b1 0.42 \u00b5m/min, p = 0.023). (F) Fraction of length recovered following ablation relative to the mean of unablated k-fibers in control and unfocused k-fibers. The average trace for unablated k-fibers in D was averaged over time and ablated lengths were normalized to this value. Times with statistically significant differences in length recovery are denoted by *. (G) Representative confocal timelapse images of PtK2 spindles with GFP-\u03b1-tubulin (in control and unfocused) and mCherry-p50 (in unfocused only), with 2 \u00b5M nocodazole added at \u221210 min and washed out at t = 0. (H) Lengths of k-fibers over time during nocodazole washout. All k-fibers are shown with the average trace plotted with \u00b11 standard deviation shaded in light gray (Control: N = 3 cells, n = 28 k-fibers; Unfocused: N = 4 cells, n = 23 k-fibers). (I) Mean k-fiber lengths before nocodazole and after washout in control and unfocused spindles (Control before: 6.58 \u00b1 1.15 \u00b5m, n = 17; Control after: 5.76 \u00b1 0.57 \u00b5m, n = 12, p = 0.02; Unfocused before: 6.03 \u00b1 1.73 \u00b5m, n = 17; Unfocused after: 5.63 \u00b1 1.80 \u00b5m, n = 14, p = 0.55). Numbers are mean \u00b1 standard deviation. Significance values determined by Welch\u2019s two-tailed t-test denoted by * for p < 0.05, ** for p < 0.005, and *** for p < 0.0005.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/85208/elife-85208-fig2-figsupp1-v3.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Lengths of k-fibers in unfocused cells prior to ablation. Lengths were measured in 3D from z-stacks of PtK2 cells expressing GFP-\u03b1-tubulin and mCherry-p50 taken by confocal live-imaging, as in Figure 1E. The dotted line represents the mean control k-fiber length as calculated in Figure 1E (N = 4 cells, n = 79 k-fibers, 7.60 \u00b1 2.07 \u00b5m).\n\nTo test whether neighboring k-fibers or existing microtubule networks provide information for length maintenance, we treated spindles with nocodazole to depolymerize all microtubules, then washed it out and imaged spindle reassembly (Figure 2G, Figure 2\u2014video 2). After 10 min, control spindle k-fibers had regrown to within 1 \u00b5m of their original length, albeit shorter on average, and unfocused spindle k-fibers fully recovered their average length and grew back into an unfocused state (Figure 2G\u2013I, Figure 2\u2014video 2). Both control and unfocused spindles could enter anaphase after nocodazole washout (Figure 2G, Figure 2\u2014video 2). Thus, cells lacking pole-focusing forces in metaphase can self-assemble unfocused spindles with k-fibers of about the same length as control k-fibers. This supports a model of k-fibers regulating their own lengths without cues from pre-existing microtubule networks or neighboring k-fibers to build a bi-oriented spindle of the correct length scale.\n\n### Kinetochore-fibers exhibit reduced end dynamics in the absence of poles and pole-focusing forces\n\nGiven that k-fibers can maintain (Figure 1) and recover (Figure 2) their mean length without poles and pole focusing-forces\u2014albeit regrowing more slowly\u2014we asked whether unfocused k-fibers are dynamic and whether they have reduced dynamics. If dynamics are locally set for each individual k-fiber, dynamics should not change without poles or pole-focusing forces; if dynamics are set by global pole-focusing forces, we expect different dynamics without poles. In principle, dynamics can be probed using autocorrelation analysis, which reveals the timescale over which k-fibers \u2018remember\u2019 their length. If k-fibers were less dynamic and their lengths changed more slowly, this would result in stronger autocorrelation and autocorrelation for a longer period. Indeed, this is what we observed in unfocused k-fibers compared to control, consistent with unfocused k-fibers having reduced dynamics (Figure 3A). We thus sought to directly measure k-fiber end dynamics and flux.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/85208/elife-85208-fig3-v3.jpg)\n\n**Figure 3.:** See also Figure 3\u2014video 1. (A) Autocorrelation of k-fiber lengths over time from Figure 1H for control and unfocused k-fibers. Calculations and statistical analysis were performed using built-in Mathematica functions, where * indicates p < 0.05. (B) Schematic of a photomark (light green) on a k-fiber (dark green). The dotted arrow shows the direction the photomark moves with flux in control, where displacement of the mark toward the minus-end increases over time. Net end dynamics are shown by curved arrows (equal at steady state). (C) Representative confocal timelapse images of PtK2 k-fibers with GFP-\u03b1-tubulin (in control and unfocused) and mCherry-p50 (in unfocused only). A bleach mark was made at time = 0 and followed over time (filled arrowhead). Empty arrowheads indicate minus-ends. Below: Kymographs of the above images. Each row of pixels represents a max-intensity projection of a 5-pixel high stationary box drawn around the k-fiber at one time point (yellow box). (D) Minus-end dynamics, where photomark position over time describes how the mark approaches the k-fiber\u2019s minus-end over time in control and unfocused k-fibers. Each trace represents one mark on one k-fiber. To measure flux as defined by minus-end depolymerization, the movement of the photomark toward the minus-end was plotted over time. Line with the average slope is drawn in black (Control: N = 8 cells, n = 12 k-fibers; Unfocused: N = 8 cells, n = 11 k-fibers). Numbers are mean \u00b1 standard deviation. Significance values determined by Welch\u2019s two-tailed t-test denoted by n.s. for p \u2265 0.05, * for p < 0.05, ** for p < 0.005, and *** for p < 0.0005.\n\nAt metaphase, k-fiber ends are dynamic, with poleward flux associating with net polymerization at plus-ends and apparent depolymerization at minus-ends (Mitchison, 1989). Spindle poles have been proposed to regulate minus-end dynamics (Dumont and Mitchison, 2009b; Gaetz and Kapoor, 2004; Ganem and Compton, 2004). To measure k-fiber dynamics, we introduced a bleach mark on a k-fiber and tracked its position over time relative to k-fiber minus-ends (Figure 3B\u2013D, Figure 3\u2014video 1). In control spindles, the mark approached minus-ends at a rate of 0.55 \u00b1 0.29 \u00b5m/min, consistent with previous reports (Figures 3D and 4D, Cameron et al., 2006; Mitchison, 1989). In unfocused spindles, the mark approached minus-ends much slower at a rate of 0.13\u00b10.15 \u00b5m/min (Figures 3D and 4D). These findings are in contrast to work in Xenopus showing that dynein inhibition through p50 overexpression does not impact the flux rate in the central spindle (Yang et al., 2008), but are supported by work in Xenopus and in mammals showing that dynein contributes to poleward transport (Burbank et al., 2007; Lecland and L\u00fcders, 2014; Steblyanko et al., 2020). Thus, spindle poles or pole-focusing forces are required for fast k-fiber end dynamics, likely contributing to less efficient k-fiber length maintenance in unfocused spindles.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/85208/elife-85208-fig4-v3.jpg)\n\n**Figure 4.:** See also Figure 4\u2014video 1. (A) Models describing k-fiber length recovery mechanisms. K-fibers shortened by ablation (X) with a photomark (light green) can potentially grow back in different ways: suppression of minus-end depolymerization (top), increased plus-end polymerization induced by forces such as dynein (middle), or increased polymerization in a length-dependent manner (bottom). (B) Representative confocal timelapse images of PtK2 k-fibers with GFP-\u03b1-tubulin (in control and unfocused) and mCherry-p50 (in unfocused only). Filled arrowhead follows a bleach mark. At t = 0, k-fibers were cut with a pulsed laser at higher power (X). Empty arrowhead follows the new k-fiber minus-end. Below: Kymographs of the above images as prepared in Figure 3C. (C) Minus-end dynamics were probed by tracking movement of the mark toward the k-fiber\u2019s minus-end over time in control and unfocused k-fibers after ablation at t = 0. Line with the average slope is drawn in black (Control: N = 5 cells, n = 6 k-fibers; Unfocused: N = 7 cells, n = 7 k-fibers). (D) Minus-end dynamics of k-fibers. Flux as measured by rate of photomark movement toward the minus-end with or without ablation in control and unfocused k-fibers. Each point represents the slope of one trace in Figure 3D or (C) measured by linear regression (Control: mean flux = 0.55 \u00b1 0.29 \u00b5m/min, mean flux after ablation = \u22120.07 \u00b1 0.20 \u00b5m/min; Unfocused: mean flux = 0.13 \u00b1 0.15 \u00b5m/min, mean flux after ablation = \u22120.03 \u00b1 0.23 \u00b5m/min; p non-ablated control vs. ablated control = 2.7e\u22124, p non-ablated control vs. non-ablated unfocused = 5.3e\u22124, p non-ablated unfocused vs. ablated unfocused = 0.19, p ablated control vs. ablated unfocused = 0.75). Numbers are mean \u00b1 standard deviation. Significance values determined by Welch\u2019s two-tailed t-test denoted by n.s. for p \u2265 0.05, * for p < 0.05, ** for p < 0.005, and *** for p < 0.0005.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/85208/elife-85208-fig4-figsupp1-v3.jpg)\n\n**Figure 4\u2014figure supplement 1.:** See also Figure 4\u2014video 2. (A) Representative confocal timelapse images of PtK2 k-fibers with GFP-\u03b1-tubulin. At t = 0, k-fibers were cut with a pulsed laser at a high power (X). Empty arrowhead follows the new k-fiber minus-end. Filled arrowhead follows a bleach mark made several minutes later with the laser at a lower power. Below: Kymographs of the above images as prepared in Figure 3C. (B) Minus-end dynamics were probed by tracking movement of the mark relative to the k-fiber\u2019s minus-end over time in control k-fibers several minutes after ablation (t = 0) once k-fiber repair and length recovery were complete. (C) Minus-end dynamics of k-fibers. Flux as measured by rate of photomark movement toward the minus-end after ablation and length recovery in control k-fibers. Each point represents the slope of one trace in (B) measured by linear regression (n = 3 cells, mean = 0.46 \u00b1 0.16 \u00b5m/min).\n\n### Kinetochore-fibers tune their end dynamics to recover length, without pole-focusing forces\n\nThe fact that unfocused k-fibers grow back to a steady-state length after being acutely shortened (Figure 2) suggests that they can tune their dynamics after shortening. We thus sought to determine the physical mechanism for length recovery (Figure 4A). One model is that minus-end depolymerization stops or slows\u2014for example, pole-based depolymerization dynamics are lost while k-fiber minus-ends appear separated from the pole (Dumont and Mitchison, 2009b; Long et al., 2020). Another model is that plus-end polymerization increases, which could occur in either a force-dependent manner (Akiyoshi et al., 2010; Dumont and Mitchison, 2009b; Long et al., 2020; Nicklas and Staehly, 1967) or a length-dependent manner (Dudka et al., 2019; Mayr et al., 2007; Stumpff et al., 2008; Varga et al., 2006). Notably, we find that k-fibers can grow back after ablation (Figure 2E) at a rate faster than poleward flux and associated minus-end dynamics in both control and unfocused spindles (0.85 \u00b1 0.09 vs. 0.55 \u00b1 0.29 \u00b5m/min in control, 0.38 \u00b1 0.42 vs. 0.13 \u00b1 0.15 \u00b5m/min in unfocused) (Figures 2E and 4D). Thus, even if minus-end dynamics were suppressed, this would not be sufficient to account for the k-fiber regrowth we observe after ablation, with or without pole-focusing forces.\n\nTo directly test how changes in k-fiber length regulate end dynamics, and if this mechanism depends on pole-focusing forces, we ablated a k-fiber and introduced a photobleach mark on it in control and unfocused spindles (Figure 4A, B). In control spindles, the photomark did not detectably approach the minus-end of the k-fiber during its regrowth (Figure 4B, C), indicating that suppression of minus-end dynamics contributes to k-fiber regrowth, as in Drosophila cells (Maiato et al., 2004; Matos et al., 2009). Consistent with k-fiber minus-end dynamics being transiently suppressed during regrowth, rather than frozen due to ablation damage, k-fiber minus-ends resumed depolymerization in control spindles after ablation and length recovery (Figure 4\u2014figure supplement 1, Figure 4\u2014video 2). However, while Drosophila k-fibers regrow at the rate of poleward flux, these control mammalian k-fibers regrew faster than the rate of flux, indicating that mammalian k-fibers must additionally increase their plus-end dynamics when shortened to reestablish their steady-state length. In unfocused spindles, the photomark also did not detectably approach the minus-end of the k-fiber during its regrowth (Figure 4C), consistent with suppression of any minus-end dynamics, though it was not significantly different from the already slow dynamics and insufficient to account for growth (Figure 4D). Thus, k-fibers can tune their plus-end dynamics to recover their length in the absence of dynein-based pole-focusing forces. This supports a model where k-fiber length is not simply regulated by global pole-focusing forces, but by local length-based mechanisms.\n\n### Spindle poles coordinate chromosome segregation and cytokinesis\n\nSo far, we have shown that while a focused pole is not required for setting or maintaining k-fiber lengths (Figures 1 and 2), it is required for global spindle coordination (Figure 1) and robust k-fiber dynamics (Figures 3 and 4). To test the functional output of focused spindle poles in mammalian cells, we treated control and unfocused spindles with reversine, an MPS1 inhibitor that forces mitotic cells to enter anaphase, even in the absence of dynein activity required for spindle assembly checkpoint satisfaction (Santaguida et al., 2010). Control and unfocused spindles were imaged through anaphase after reversine addition using a single z-plane (Figure 5A, Figure 5\u2014video 1) and also imaged with z-stacks encompassing the whole spindle once before adding reversine, and 20 min after anaphase onset (Figure 5B). In spindles without focused poles, chromatids separated\u2014albeit at twofold reduced velocities compared to control\u2014in the separating chromatid pairs that could be identified (Figure 5C). In the absence of poles or dynein activity, such chromatid separation likely comes from pushing from the spindle center rather than from pulling from the cell cortex (Vuku\u0161i\u0107 et al., 2017; Yu et al., 2019).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/85208/elife-85208-fig5-v3.jpg)\n\n**Figure 5.:** See also Figure 4\u2014video 1. (A) Representative confocal timelapse images of PtK2 spindles with GFP-\u03b1-tubulin (in control and unfocused) and mCherry-p50 (in unfocused only) treated with 0.1 or 0.5 \u00b5M SiR-DNA with 1 \u00b5M reversine added at t = 0. Arrowheads depict an example of sister chromatids separating, later measured in C. (B) Max-intensity z-projections before adding reversine and 20 min after anaphase onset for the control and unfocused spindle in A. Figures C\u2013E are from the same dataset (Control: N = 8 dividing cells; Unfocused: N = 10 dividing cells). (C) Sister chromatid separation velocity. For the chromatid pairs that were observed to separate, sister chromatid distance over time was measured for focused and unfocused spindles starting at anaphase onset. Control is plotted in gray, unfocused in blue. Light-colored traces represent one separating chromatid pair, with their average plotted as a dark line with shading representing \u00b11 standard deviation. The line of best fit for each condition averaged is shown as a dotted line, with their slopes shown (Control: N = 4 dividing cells, n = 5 chromosome pairs, separation velocity = 1.20 \u00b5m/min; Unfocused: N = 3 dividing cells, n = 9 chromatid pairs, separation velocity = 0.55 \u00b5m/min). (D) Number of \u2018cells\u2019 formed after cytokinesis in reversine-treated control and unfocused spindles (Control: 2 \u00b1 0 cells; Unfocused: 2.20 \u00b1 0.87 \u2018cells\u2019). (E) Fraction of chromosome mass per \u2018cell\u2019 after reversine treatment. Summed z-projections of chromosome masses were used to calculate the fraction of chromosome mass per cell (Control: 0.50 \u00b1 0.08 a.u.; Unfocused: 0.45 \u00b1 0.26 a.u.). Numbers are mean \u00b1 standard deviation.\n\nHowever, major segregation and cytokinetic defects were observed in these cells compared to control, consistent with segregation defects observed in k-fibers disconnected from poles (van Toorn et al., 2022; Sivaram et al., 2009). Cytokinetic defects and the presence of multiple cytokinetic furrows frequently resulted in the formation of more than two daughter cells in unfocused spindles (Figure 5D). Furthermore, chromosome masses were scattered and unequally distributed in these cells, whereby control daughter cells inherited approximately half of the chromosome mass as measured by DNA intensity, but not daughter cells of unfocused spindles (Figure 5E). Given that focused mammalian spindles lacking dynein pole-focusing forces and lacking Eg5 proceed through anaphase with much milder defects than we observe here (Neahring et al., 2021), we conclude that poles, rather than dynein-based pole-focusing forces, are primarily responsible for these defects. Thus, while many species lack spindle poles, and while unfocused mammalian spindles can still maintain k-fiber length and separate chromatids, spindle poles are essential to coordinate chromosome segregation and cytokinesis in mammalian cells.\n\n## Discussion\n\nHere, we show that in the mammalian spindle, individual k-fibers set and maintain their lengths locally but require the global cue of a focused pole to coordinate their lengths across space and time (Figure 6). Our work reveals that pole-less spindles can set and maintain k-fibers at the same mean length as in control, recovering their steady-state lengths if acutely shortened, but they have impaired dynamics and coordination and are unable to properly segregate chromosomes. We propose a model whereby length is an emergent property of individual k-fibers in the spindle, and where spindle poles ensure that this network of k-fibers is highly dynamic and coordinated across space and time to ultimately cluster chromatids into two future daughter cells.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/85208/elife-85208-fig6-v3.jpg)\n\n**Figure 6.:** Cartoon summary of spindle properties set locally vs. globally. Setting, maintaining, and recovering length is regulated by individual k-fibers locally, independently of poles and pole-focusing forces. In turn, coordinating lengths across space and time requires global cues from focused poles. In sum, spindle length emerges locally, but spindle coordination emerges globally.\n\nWhile this work provides insight into k-fiber length establishment and maintenance, what local mechanisms set the k-fiber\u2019s length scale remains an open question. We discuss three models. First, concentration gradients centered on chromosomes (Kalab and Heald, 2008; Wang et al., 2011) could in principle set a distance-dependent activity threshold for spindle proteins that regulate k-fiber dynamics and length. However, it is unclear whether such a gradient with correct length scale and function exists in mammalian spindles. Also, while the globally disorganized structure of unfocused spindles (Figure 1B, D) could lead to modified gradients, the mean length of k-fibers is unchanged and length does not correlate with spatial position along both spindle axes (Figure 1E, Figure 1\u2014figure supplement 6). Second, a lifetime model (Burbank et al., 2007; Conway et al., 2022) stipulates that length is proportional to microtubule lifetime and the velocity of poleward transport, and is sufficient to predict spindle length in spindles with a tiled array of short microtubules. While the length distribution of individual microtubules in unfocused k-fibers is unknown, this model would predict an exponential distribution of microtubule lengths within a k-fiber (Brugu\u00e9s et al., 2012), inconsistent with electron microscopy in control PtK cells (McDonald et al., 1992). Moreover, we observed a more than fourfold reduced (and near zero) flux velocity in unfocused spindles (Figure 3D), which only a dramatic increase in lifetime could compensate for in this lifetime model. Finally, an \u2018antenna\u2019 model (Varga et al., 2006) stipulates that longer k-fibers recruit more microtubule dynamics regulators since they have a longer microtubule antenna to land on. For example, in mammalian spindles, the microtubule depolymerase Kif18A binds k-fibers in a length dependent way and exhibits length-dependent depolymerase activity, being more active on long k-fibers and thereby shortening them (Mayr et al., 2007; Stumpff et al., 2008). Given that this local antenna model is consistent with our current observations, testing in unfocused spindles whether k-fiber growth rate indeed changes with k-fiber length and testing the role of dynamics regulators in length establishment and maintenance represent important future directions.\n\nOur findings suggest that in response to length changes, k-fibers regulate their plus-end dynamics in an analog manner and their minus-end dynamics in a digital manner. In unfocused spindles, we have shown that the regrowth of shortened k-fibers is driven by an increase in plus-end polymerization, and that this occurs in response to length changes, not simply dynein-based force changes (Figure 4). Consistently, longer k-fibers grow more slowly than shorter ones in a titratable manner in human spindles (Conway et al., 2022). The regulation mechanisms above are all analog in nature. In turn, after ablation, we always observed a near-absence of minus-end dynamics. This reduction in flux was only large enough in control k-fibers to observe statistical significance, though unfocused k-fibers appeared to follow the same trend (Figure 4C and D). This is consistent with a switchlike mechanism turning depolymerization on or off, proposed on the basis that tension on k-fibers turns off apparent minus-end depolymerization (Dumont and Mitchison, 2009b; Long et al., 2020). The mechanism behind such digital regulation is not known. One possibility is that a proximal pole structure is required to recruit active microtubule depolymerases, such as Kif2a (Gaetz and Kapoor, 2004; Ganem et al., 2005), to k-fiber minus-ends. In unfocused spindles without a pole, k-fibers would be less dynamic (Figure 3D) based on having fewer depolymerases at their minus-ends. In physical perturbation experiments where k-fibers are separated from the pole center, their apparent minus-end depolymerization would stop (Dumont and Mitchison, 2009b; Long et al., 2020) based on a too-distant depolymerase pool and thus fewer depolymerases at minus-ends. Interestingly, Kif2a can drive spindle scaling in Xenopus meiotic spindles (Wilbur and Heald, 2013).\n\nIn principle, the concomitant loss of dynein-mediated pole-focusing forces and spindle poles makes it difficult to disentangle the role of each in regulating spindle coordination, maintenance, and function in our findings. However, recent work has revealed that mammalian spindles can achieve similar architecture whether or not dynein (or its recruiter NuMA) is knocked out (Neahring et al., 2021). This suggests that the severe defects in spindle coordination (Figures 1 and 5) and maintenance (Figure 2) observed in p50-unfocused spindles are more likely due to the loss of spindle poles than due to the loss of dynein activity per se. Though we cannot exclude it, this also suggests that the findings we make in unfocused spindles are not due changes in activity of the dynein population at kinetochores. Additionally, centrosomes are disconnected from the spindle (Figure 1\u2014videos 2 and 3), ruling out contributions from centrosomes (Khodjakov et al., 2000) or astral microtubules on k-fiber length regulation at metaphase. Mammalian spindle poles are also required for spindle positioning (Kiyomitsu and Cheeseman, 2012) and have been proposed to help segregate centrosomes (Friedl\u00e4nder and Wahrman, 1970). More work is needed to understand the evolution and function of spindle poles across species and, more broadly, the diversity of spindle architectures across evolution.\n\nWe propose that this biological blueprint, where k-fibers locally set and maintain their individual length and poles coordinate them globally, robustly builds a complex yet dynamic spindle. For example, we have shown that while k-fibers establish their mean lengths locally, global cues homogenize them (Figure 1E, G). We put forward the idea that the structural integrity and flexible remodeling of other higher-order structures may also rely on individual parts having all the necessary intrinsic information and self-organization to get the correct linear architecture, with global cues organizing these parts in space and time. More broadly, our work highlights how self-organization at local scales and coordination at global scales can work together to build emergent complex biological structures.\n\nVideos are displayed with optimal brightness and contrast for viewing.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Cell line (P. tridactylus, male)</td>\n      <td>PtK2</td>\n      <td>Gift from T. Mitchison, Harvard University</td>\n      <td>PMID:1633624</td>\n      <td>Kidney epithelial</td>\n    </tr>\n    <tr>\n      <td>Cell line (P. tridactylus, male)</td>\n      <td>HaloTag-tubulin PtK2</td>\n      <td>This paper</td>\n      <td></td>\n      <td>Kidney epithelial</td>\n    </tr>\n    <tr>\n      <td>Cell line (H. sapiens, female)</td>\n      <td>RPE1</td>\n      <td>ATCC</td>\n      <td>ATCC Cat#CRL-4000; RRID: CVCL_4388</td>\n      <td>Retina, epithelial</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Nocodazole</td>\n      <td>Sigma</td>\n      <td>M1404</td>\n      <td>Final concentration 2 \u00b5M</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Reversine</td>\n      <td>Sigma</td>\n      <td>R3904</td>\n      <td>Final concentration 1 \u00b5M</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Viafect</td>\n      <td>ProMega</td>\n      <td>E4981</td>\n      <td>1:6 ratio of Viafect:DNA used</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Janelia Fluor 646</td>\n      <td>Janelia</td>\n      <td>6148</td>\n      <td>Final concentration 100 nM</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>SiR-DNA</td>\n      <td>Spirochrome</td>\n      <td>SC007</td>\n      <td>Final concentration 0.1\u20130.5 \u00b5M with 1 \u00b5M verapamil</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>SiR-tubulin</td>\n      <td>Spirochrome</td>\n      <td>SC002</td>\n      <td>Final concentration 0.1 \u00b5M with 1 \u00b5M verapamil</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pLV-\u03b2-tubulin-HaloTag (plasmid)</td>\n      <td>This paper</td>\n      <td></td>\n      <td>Lentiviral plasmid. Progenitors: Addgene #114021 (Geert Kops) and Addgene #64691 (Yasushi Okada)</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pLV-mCherry-p50 (plasmid)</td>\n      <td>This paper</td>\n      <td></td>\n      <td>Lentiviral plasmid. Progenitors: Addgene #114021 (Geert Kops) and mCherry-p50 (PMID:19196984)</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>eGFP-\u03b1-tubulin (plasmid)</td>\n      <td>Michael Davidson collection given to UCSF; Rizzo et al., 2009</td>\n      <td>Addgene Plasmid #56450</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>mCherry-p50 (plasmid)</td>\n      <td>Gift from M. Meffert, Johns Hopkins University;</td>\n      <td>PMID:19196984</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>\u03b2-Tubulin HaloTag (plasmid)</td>\n      <td>Addgene; Uno et al., 2014</td>\n      <td>Addgene Plasmid #64691</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>FIJI</td>\n      <td>FIJI; Schindelin et al., 2012</td>\n      <td>ImageJ version 2.1.0</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Wolfram Mathematica</td>\n      <td>Wolfram Mathematica</td>\n      <td>Version 13.0</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>MetaMorph</td>\n      <td>MDS Analytical Technologies</td>\n      <td>Version 7.8</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Micro-Manager</td>\n      <td>Micro-Manager; Edelstein et al., 2010</td>\n      <td>Version 2.0.0</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Python</td>\n      <td>Python</td>\n      <td>Version 3.8.1</td>\n      <td>Spyder IDE version 4.1.5</td>\n    </tr>\n  </tbody>\n</table>\n\n### Cell culture\n\nAll work herein was performed using wild-type PtK2 cells (P. tridactylus, male, PMID:1633624, kidney epithelial, gift from Tim Mitchison, Harvard University) unless otherwise stated. PtK2 cells were cultured in MEM (11095; Thermo Fisher, Waltham, MA) supplemented with sodium pyruvate (11360; Thermo Fisher), non-essential amino acids (11140; Thermo Fisher), penicillin/streptomycin, and 10% heat-inactivated fetal bovine serum (10438; Thermo Fisher). The cell line tested negative for mycoplasma, and while we did not authenticate it, its cell behavior and growth characteristics were similar to those reported for the parental PtK2 cell line, whose transcriptome we sequenced (Udy et al., 2015). Cells were maintained at 37\u00b0C and 5% CO2. hTERT-RPE1 cells (H. sapiens, female, ATCC Cat#CRL-4000, RRID: CVCL_4388, retinal epithelial) were cultured in Dulbecco's Modified Eagle Medium/Nutrient Mixture F-12 with GlutaMAX (11320; Thermo Fisher) supplemented with penicillin/streptomycin and 10% fetal bovine serum. This cell line was not authenticated by short tandem repeat (STR) profiling but tested negative for mycoplasma.\n\nTo visualize microtubules, PtK2 cells were transfected with eGFP-\u03b1-tubulin (Clontech) using Viafect (Promega) unless otherwise noted. To inhibit dynein, PtK2 or RPE1 cells were additionally transfected or lentivirally infected with mCherry-p50 (a gift from Mollie Meffert, Johns Hopkins University; Shrum et al., 2009). Transient transfections were prepared in a 100-\u00b5l reaction mix per 35 mm dish, including a 1:6 ratio of DNA to Viafect, OptiMEM media up to 100 \u00b5l, and eGFP-\u03b1-tubulin (0.7 \u00b5g) or both eGFP-\u03b1-tubulin (0.4 \u00b5g) and mCherry-p50 (0.5 \u00b5g), and added 3\u20134 days prior to imaging.\n\n### Lentiviral plasmids and cell line construction\n\nThe coding sequences of \u03b2-tubulin-HaloTag (Addgene #64691) and mCherry-p50 were cloned into a puromycin-resistant lentiviral vector (Addgene #114021) using Gibson assembly. Lentivirus for each construct was produced in HEK293T cells. To generate the stable polyclonal \u03b2-tubulin-HaloTag PtK2 cell line (Figure 1A), wild-type PtK2 cells were infected with \u03b2-tubulin-HaloTag virus and selected using 5 \u00b5g/ml puromycin. Because p50 overexpression disrupts cell division, mCherry-p50 lentivirus was used to transiently infect each 35 mm dish 3\u20134 days prior to imaging (Figure 1A).\n\n### Imaging\n\nPtK2 or RPE1 cells were plated on 35 mm #1.5 coverslip glass-bottom dishes coated with poly-D-lysine (MatTek, Ashland, MA) and imaged. The cells were maintained at 30\u201337\u00b0C in a stage top incubator (Tokai Hit, Fujinomiya-shi, Japan). Two similar inverted spinning-disk confocal (CSU-X1; Yokogawa Electric Corporation) microscopes (Eclipse TI-E; Nikon) with the following components were used for live-cell imaging: head dichroic Semrock Di01-T405/488/561/647, head dichroic Semrock Di01-T405/488/561, \u00d7100 1.45 Ph3 oil objective, a \u00d760 1.4 Ph3 oil objective, 488 nm (100, 120, or 150 mW), 561 nm (100 or 150 mW), and 642 (100 mW) nm diode lasers, emission filters ET525/36M (Chroma Technology) for GFP fluorophore imaging, ET630/75 M for mCherry, and ET690/50M for JF 646 (Chroma Technology), a perfect focus system (Nikon, Tokyo, Japan), an iXon3 camera (Andor Technology, 105 nm/pixel using \u00d7100 objective at bin = 1), and a Zyla 4.2 sCMOS camera (Andor Technology, 65.7 nm/pixel using \u00d7100 objective at bin = 1). For imaging, 400 ms exposures were used for phase contrast and 50\u2013100 ms exposures were used for fluorescence. Cells were imaged at 30\u00b0C (by default) or 37\u00b0C to speed up slower processes (Figures 1A, 2G, H,, 5), 5% CO2 in a closed, humidity-controlled Tokai Hit PLAM chamber. Cells were imaged via MetaMorph (7.8, MDS Analytical Technologies) or Micro-Manager (2.0.0).\n\nSpindle assembly videos (Figure 1A, Figure 1\u2014videos 1 and 2) were captured using a \u00d760 objective for a wider field of view, selecting approximately 20 stage positions and imaging overnight at 37\u00b0C for 8\u201310 hr. To capture unfocused spindle assembly, positions containing cells expressing moderate-to-high levels of mCherry-p50 relative to other cells on the dish were selected. Spindles over time were imaged with 1 \u00b5m z-slices every minute to avoid photodamage (Figure 1A, H). Volumetric spindle images were taken using a \u00d7100 objective, with z-slices 0.3 \u00b5m apart encompassing the whole spindle (Figures 1B and 5B, Figure 5B, Figure 2\u2014figure supplement 1). To visualize DNA, 0.1\u20130.5 \u00b5M SiR-DNA (Spirochrome) with 1 \u00b5M verapamil were added at least 30 min prior to imaging (Figure 5). To visualize microtubules, 100 nM JF 646 was added to HaloTag-tub PtK2 cells at least 30 min prior to imaging (Figure 1A).\n\n### Photobleaching and laser ablation (Figures 2\u20144)\n\nPhotobleaching and laser ablations were performed using 514 or 551 nm ns-pulsed laser light and a galvo-controlled MicroPoint Laser System (Andor, Oxford Instruments) operated through MetaMorph or Micro-Manager. Single z-planes were chosen to pick the clearest k-fiber visible from plus- to minus-end, parallel to the coverslip, that was long enough to ablate. Non-ablated unfocused k-fibers in the same imaging plane were not necessarily parallel to the coverslip, so their full length was not always captured in the single z-plane due to tilt. Photobleaching was performed by firing the laser at the lowest possible power to make a visible bleach mark (~20% of total power), whereas ablations were performed at the lowest possible power to fully cut a k-fiber (~60% of total power). K-fiber ablations were verified by observing complete depolymerization of newly created plus-ends, relaxation of interkinetochore distance, or poleward transport of k-fiber stubs (control only). When firing the laser, 1\u20133 areas around the region of interest were targeted and hit with 5\u201320 pulses each. Ablations were imaged using one z-plane every 12 s to assay short-term dynamics, then switching to every 1 min after approximately 10 min following ablation to avoid phototoxicity.\n\n### Nocodazole washout (Figure 2)\n\nZ-planes containing the highest number of clearly distinguishable k-fibers, that were parallel to the coverslip, were chosen for imaging. 2 \u00b5M nocodazole was swapped into dishes using a transfer pipet while imaging. After 10 min to depolymerize microtubules, dishes were washed 10\u00d7 in prewarmed media to remove nocodazole and allow spindle reassembly. Spindles were imaged at one z-plane every min to avoid phototoxicity during spindle recovery. To measure k-fiber lengths before nocodazole addition, individual k-fiber traces were averaged over time before drug addition (\u2264\u221210 min). K-fiber lengths after drug washout were averaged over time after spindles reached a steady-state length (\u226510 min), subtracting centrosome radius for control k-fibers during these times.\n\n### Reversine treatment (Figure 5)\n\nMetaphase spindles were volumetrically imaged with a z-step of 0.3 \u00b5m across whole live spindles before reversine addition. The media was then swapped to similar media containing 1 \u00b5M reversine and imaged at a single z-plane. 20 min after anaphase onset, cells were again imaged volumetrically as previously described.\n\n### Image analysis\n\nFeature tracking, spindle architecture measurements, and statistical analyses were done in FIJI and Python unless otherwise stated. Videos and images are displayed with optimal brightness and contrast for viewing.\n\n### Spindle major and minor axes length (Figure 1D, Figure 1\u2014figure supplement 4A)\n\nSpindle minor and major axes lengths were determined by cropping, rotating, then thresholding spindle images with the Otsu filter using SciKit. Ellipses were fitted to thresholded spindles to approximate the length of their major and minor axes using SciKit\u2019s region properties measurement (Figure 1\u2014figure supplement 4A). In control spindles, the major axis corresponded to spindle length along the pole-to-pole axis, and the minor axis corresponded to spindle width along the metaphase plate axis. However, unfocused spindles were disorganized along both axes to the extent where the minor axis did not always correspond to the metaphase plate axis. Thus, Figure 1D reports \u2018spindle minor axis length\u2019 and \u2018spindle major axis length\u2019 rather than \u2018spindle width\u2019 and \u2018spindle length\u2019. Furthermore, it is worth noting that in unfocused spindles, spindle length is decoupled from k-fiber length because of k-fiber disorganization along both axes. Thus, spindle length was not measured in unfocused spindles, but individual k-fiber length was measured as described below.\n\n### K-fiber length (Figures 1 and 2, Figure 1\u2014figure supplement 4B, C)\n\nFor k-fiber length measurements at a single time point, z-stacks of live spindles were taken with a step size of 0.3 \u00b5m across the entire spindle (Figure 1B). Individual k-fibers were measured using a maximum intensity z-projection of only the slices where that k-fiber was in focus ( Figure 1\u2014figure supplement 4B). Line profiles were then measured by drawing ROIs in FIJI with a spline fit line of width 15 pixels, spanning from plus-ends at the start of tubulin intensity next to the chromosome toward minus-ends, using the minimum number of points to recapitulate the curve of the k-fiber (Figure 1\u2014figure supplement 4B). The 3D length was then estimated with the Pythagorean theorem, using the length of the k-fiber\u2019s ROI and the z-height of the slices it spanned (Figure 1E\u2013G, Figure 1\u2014figure supplement 4C). For control k-fibers, the end of the ROI spanning the k-fiber was defined as the center of the pole, and centrosome radius was subtracted to estimate true k-fiber length (Figures 1E\u2013G, I\u2013N\u20132C\u2013F, H, I). Since minus-ends of focused k-fibers are not distinguishable in a pole and typically terminate within 2 \u00b5m of centrosomes (McDonald et al., 1992), centrosome radius was approximated by drawing line scans through focused poles and measuring the half width at half max intensity (Figure 1\u2014figure supplement 5). This approximation was used for all subsequent length measurements. For unfocused and ablated k-fibers, minus-ends were defined as the farthest point of visible tubulin intensity corresponding to that k-fiber. Lengths of ROIs were calculated and plotted in Python. K-fiber lengths over time were measured as described above, but from videos with single imaging planes or from max-intensity projections based on a step size of 1 \u00b5m across the volume of the spindle. K-fiber lengths were then measured using ROIs of width 5 pixels for k-fibers whose plus- and minus-ends were visible across at least 5 frames (k-fiber lengths over time, Figure 1H\u2013N and ablated k-fibers, Figure 2C\u2013F). K-fiber lengths were binned by minute for aggregate analyses.\n\nIn k-fibers following ablation, centrosome size was subtracted only when control k-fibers were reincorporated into the pole and the ablated minus-end was no longer visible. To calculate growth rates for k-fiber lengths over time, linear regression was performed using SciPy on binned k-fiber lengths for those with data at time points 0\u20136 min. One control k-fiber was excluded from growth rate analysis based on these criteria.\n\n### Spatial correlation analysis (Figure 1\u2014figure supplement 6)\n\nK-fiber positions in spindles were quantified latitudinally and longitudinally, then correlated to length. To approximate the metaphase plate axis, a line of best fit was drawn through kinetochore positions in a cell as approximated by the positions of k-fiber plus-ends. Only the positions of k-fiber plus-ends whose sister k-fibers were also measured were used to calculate spindle axes. In control spindles, the metaphase plate axis corresponded to the spindle width axis. The long spindle axis was determined by drawing a line perpendicular to the metaphase plate axis through the average kinetochore position. In control spindles, this long spindle axis corresponded to the pole-to-pole axis. Distance from each k-fiber\u2019s plus-end to the long axis was measured, and then binned into \u2018inner\u2019 k-fibers if \u22642 \u00b5m and \u2018outer\u2019 if \u22653 \u00b5m.\n\nAlignment scores were calculated based on the distance from each k-fiber\u2019s plus-end to the metaphase plate axis, and then given either a negative or positive sign depending on whether the k-fiber was \u2018over-aligned\u2019 (see yellow control example in Figure 1\u2014figure supplement 6B) with longer expected lengths or \u2018under-aligned\u2019 (see blue control example in Figure 1\u2014figure supplement 6B). K-fibers were categorized as either over- or under-aligned based on the relative positions of their plus- and minus-ends. If both ends were on the same side of the metaphase plate, that is the k-fiber was under-aligned and fully on one side of the metaphase plate, the distance from the plus-end to the metaphase plate was recorded as positive. If the plus- and minus-ends were on opposite sides of the metaphase plate axis, that is the k-fiber was over-aligned and crossing the metaphase plate axis, the distance from the plus-end to the metaphase plate was recorded as negative. A perfectly aligned pair of kinetochores would each have an alignment score of approximately +1. This method of assigning alignment scores was sufficient to accurately categorize all control k-fibers as over- or under-aligned. However, there were rare extreme cases of disorganization in unfocused spindles that miscategorized them 3.77% of the time, for example where a k-fiber was \u2018over-aligned\u2019 but both of its ends were on the far side of the metaphase plate. Manually correcting these rare cases yielded correlation coefficients \u22120.33 for control (unchanged) and \u22120.17 for unfocused (compared to \u22120.18 reported in the figure).\n\n### Tracking photobleach marks along k-fibers (Figures 3 and 4)\n\nSpindles of k-fibers with photobleach marks were registered by the tub-GFP channel to account for global spindle translations and rotations. Videos of ablated k-fibers were not registered due to expected translocation of k-fibers stubs after ablation. All videos were trimmed to be isochronous, then flipped, rotated, and cropped so that individual k-fibers with photomarks were latitudinal, with chromosomes on the left and minus-ends on the right. A line with width 5 pixels was drawn along individual k-fibers, and the max-intensity projection along the height at each time point was plotted to generate kymographs. Segmented lines were drawn along the kymographs corresponding to the positions of the kinetochore, photomark, and minus-end or pole over time. The distance between the mark and the minus-end over time was calculated and plotted in Python.\n\n### Cell division analysis (Figure 5)\n\nQuantifications of cell division were performed in FIJI. Chromatid separation was quantified by tracking distance between sister chromatids, specifically between the plus-ends of their attached k-fibers, starting the frame before chromatid separation was first observed and ending at the onset of cytokinesis marked by the appearance of a cleavage furrow. To quantify the fraction of chromosome mass per daughter \u2018cell\u2019, \u2018cell\u2019 outlines were drawn based on phase contrast images, and the overlap of each cell outline with the summed intensity z-projection of chromosome masses was measured.\n\n### Statistical analysis\n\nStatistical analyses were performed in Python using NumPy and SciPy unless otherwise stated. Linear regression and Pearson\u2019s correlation coefficient calculations were performed using SciPy. In the text, whenever we state a significant change or difference, the p-value for those comparisons was less than 0.05. In figures, *p < 0.05, **p < 0.005, and ***p < 0.0005. In the figure legends, we display the exact p-value from every statistical test made. We used a two-tailed Welch\u2019s t-test everywhere unless otherwise stated, since this compares two independent datasets with different standard deviations. Legends include n, the number of individual measurements made, and N, the number of unique cells assayed for each condition.\n\n### Autocorrelation (Figure 3A)\n\nAutocorrelation analysis was performed using Wolfram Mathematica 13.0. The autocorrelation is calculated by the built-in function \u2018CorrelationFunction\u2019. By this definition, the autocorrelation of a k-fiber at lag $h$ is $\\sumi=1n\u2212h(x_{i}\u2212x\u00af)(x_{i+h}\u2212x\u00af)/\\sumi=1n(x_{i}\u2212x\u00af)^{2}$ where $x_{i}$ is k-fiber length at time $i$ and $x\u00af$ is the mean of $x_{i}$ . The standard deviation is calculated by the built-in function \u2018StandardDeviation\u2019. Statistical significance was performed using the built-in function \u2018LocationTest\u2019 at each $h$.\n\n### Script packages\n\nAll scripts were written in Python using Spyder through Anaconda unless otherwise stated. Pandas was used for data organization, SciPy for statistical analyses, Matplotlib and seaborn for plotting and data visualization, SciKit for image analysis, and NumPy for general use. FIJI was used for video formatting, intensity quantification, kymograph generation, and tracking k-fibers.\n\n### Video preparation\n\nVideos show a single spinning disk confocal z-slice imaged over time (Figure 2\u2014video 1, Figure 2\u2014video 2, Figure 3\u2014video 1, Figure 4\u2014video 1, Figure 4\u2014video 2, Figure 5\u2014video 1) or a maximum intensity projection (Figure 1\u2014video 1, Figure 1\u2014video 2, Figure 1\u2014video 3) and were formatted for publication using FIJI and set to play at 10 fps.\n",
+      "created_at": "2025-12-04T02:22:38.079343Z"
+    },
+    {
+      "id": "ac0f2fbb-ef70-44f5-8c1a-0dc40c2ee335",
+      "submission_id": "72c54c65-c885-44e7-8837-fce029be6e17",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Thomas Surrey, https://ror.org/03wyzt892 Centre for Genomic Regulation (CRG), Barcelona, Spain Spain\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.85208.sa0](https://doi.org/10.7554/eLife.85208.sa0)\n\nThe authors find that the control of overall kinetochore fiber length in mitotic spindles of cultured mammalian cells does not require spindle pole focusing. Pole focusing is however required for fine-tuning their length and for correct chromosome segregation. Technically sophisticated experiments and careful quantitative data analysis provide compelling evidence for the drawn conclusions that provide valuable insight into spindle morphogenesis. This work is of particular interest to cell biologists and biophysicists interested in cytoskeleton organization.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Thomas Surrey, https://ror.org/03wyzt892 Centre for Genomic Regulation (CRG), Barcelona, Spain Spain\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.85208.sa1](https://doi.org/10.7554/eLife.85208.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Kinetochore-fiber lengths are maintained locally but coordinated globally by poles in the mammalian spindle\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Anna Akhmanova as the Senior Editor. The following individual involved in the review of your submission has agreed to reveal their identity: Jesse C Gatlin (Reviewer #2).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1) Please clarify to which extent dynein is inhibited and put the observed phenotype studied here into context with prior work (points 1-3 of reviewer 1).\n\n2) Please clarify to which extent the position and the length of severed k-fibers may affect the observed response in order to disentangle a possible influence of these parameters from the effect of pole focusing versus no pole focusing (points 1-2 of reviewer 2).\n\n3) Please consider improving the quality of some of the data presented in Fig. 4 (point 5 of reviewer 1 and point 3 of reviewer 2).\n",
+      "created_at": "2025-12-04T02:22:38.079343Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T02:22:38.079343Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T02:22:38.079343Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "1dd00901-15b3-4de1-9d47-12e26b76449c",
+      "content_id": "915fa433-6686-4ac0-8ed8-acf9922e7159",
+      "claim_id": "C1",
+      "claim": "Mammalian spindles are built from microtubule bundles called kinetochore-fibers (k-fibers) that attach to chromosomes and focus into spindle poles.",
+      "claim_type": "EXPLICIT",
+      "source": "Mammalian spindles are built from a network of microtubules, including discrete bundles of microtubules connecting chromosomes to poles. These bundles, called kinetochore-fibers (k-fibers), are made of many microtubules, some of which directly extend from kinetochores to poles (Kiewisz et al., 2022; McDonald et al., 1992; O'Toole et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior work (Kiewisz et al., 2022; McDonald et al., 1992; O'Toole et al., 2020) describing k-fiber structure.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:22:38.079343Z"
+    },
+    {
+      "id": "fe17aa5e-1be5-4117-a13d-d25bed1e0fc8",
+      "content_id": "915fa433-6686-4ac0-8ed8-acf9922e7159",
+      "claim_id": "C2",
+      "claim": "Dynein and other motors work together to focus microtubules into asters and poles in many systems.",
+      "claim_type": "EXPLICIT",
+      "source": "In many systems, dynein and other motors work together to focus microtubules into asters and poles (Compton, 1998; Goshima et al., 2005a; Heald et al., 1996; Merdes et al., 1996; Roostalu et al., 2018; So et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple citations to prior studies (Compton, 1998; Goshima et al., 2005a; Heald et al., 1996; Merdes et al., 1996; Roostalu et al., 2018; So et al., 2022).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:22:38.079343Z"
+    },
+    {
+      "id": "18a99d26-2b0a-45fd-a8eb-64ed9c36c20c",
+      "content_id": "915fa433-6686-4ac0-8ed8-acf9922e7159",
+      "claim_id": "C3",
+      "claim": "K-fiber microtubules turn over on the order of minutes in mammals.",
+      "claim_type": "EXPLICIT",
+      "source": "In mammals, k-fiber microtubules turn over on the order of minutes (Gorbsky and Borisy, 1989), detaching from kinetochores and getting replaced.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Gorbsky and Borisy, 1989.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:22:38.079343Z"
+    },
+    {
+      "id": "1ea04963-2c4a-4f4a-b921-4f9db88038cb",
+      "content_id": "915fa433-6686-4ac0-8ed8-acf9922e7159",
+      "claim_id": "C4",
+      "claim": "K-fiber microtubules exhibit poleward flux, where k-fiber tubulin moves toward poles, with k-fiber plus-ends on average polymerizing and minus-ends appearing to depolymerize at poles.",
+      "claim_type": "EXPLICIT",
+      "source": "They also exhibit poleward flux, where k-fiber tubulin moves toward poles, with k-fiber plus-ends on average polymerizing and minus-ends appearing to depolymerize at poles (Mitchison, 1989).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Mitchison, 1989.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:22:38.079343Z"
+    },
+    {
+      "id": "d85ad970-ce08-4304-a9eb-5b61f3d04fe1",
+      "content_id": "915fa433-6686-4ac0-8ed8-acf9922e7159",
+      "claim_id": "C5",
+      "claim": "Biochemical factors and mechanical force are thought to tune k-fiber dynamics at both microtubule ends and thereby tune k-fiber length.",
+      "claim_type": "EXPLICIT",
+      "source": "Both biochemical factors (Goshima and Scholey, 2010) and mechanical force (Akiyoshi et al., 2010; Dumont and Mitchison, 2009b; Nicklas and Staehly, 1967) are thought to tune k-fiber dynamics at both microtubule ends and thereby tune k-fiber length.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior work on biochemical factors (Goshima and Scholey, 2010) and mechanical force (Akiyoshi et al., 2010; Dumont and Mitchison, 2009b; Nicklas and Staehly, 1967).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:22:38.079343Z"
+    },
+    {
+      "id": "65809a02-52c9-4c1c-b326-bf008ff2747a",
+      "content_id": "915fa433-6686-4ac0-8ed8-acf9922e7159",
+      "claim_id": "C6",
+      "claim": "Some spindles, such as in land plants, do not have focused poles.",
+      "claim_type": "EXPLICIT",
+      "source": "Some spindles, such as in land plants, do not have focused poles (Yamada and Goshima, 2017), and in many species, spindles are composed of short, tiled microtubules indirectly connecting chromosomes to poles (Brugu\u00e9s et al., 2012; Yang et al., 2007), unlike mammalian k-fibers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Yamada and Goshima, 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:22:38.079343Z"
+    },
+    {
+      "id": "22fcf32e-eade-4ba1-bba5-93d110bf72f7",
+      "content_id": "915fa433-6686-4ac0-8ed8-acf9922e7159",
+      "claim_id": "C7",
+      "claim": "Overexpression of the dynactin subunit p50 (dynamitin) dissociates the dynactin complex and inhibits the pole-focusing forces of dynein.",
+      "claim_type": "EXPLICIT",
+      "source": "p50 overexpression dissociates the dynactin complex and inhibits the pole-focusing forces of its binding partner, dynein (Echeverri et al., 1996; Howell et al., 2001; Quintyne et al., 1999), unfocusing poles in species such as Xenopus and Drosophila (Gaetz and Kapoor, 2004; Sharp et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior work (Echeverri et al., 1996; Howell et al., 2001; Quintyne et al., 1999; Gaetz and Kapoor, 2004; Sharp et al., 2000).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:22:38.079343Z"
+    },
+    {
+      "id": "461e23c0-eef6-4a1f-876f-48414d18a04b",
+      "content_id": "915fa433-6686-4ac0-8ed8-acf9922e7159",
+      "claim_id": "C8",
+      "claim": "Unfocused spindles correlated with higher mean intensity levels of p50 expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, we found that unfocused spindles correlated with higher mean intensity levels of p50 expression (Figure 1\u2014figure supplement 1), consistent with prior work showing mild pole disruption vs. severe unfocusing depending on the severity of dynein inhibition (Elting et al., 2017; Gaglio et al., 1997, p. 199; Hueschen et al., 2019; Hueschen et al., 2017; Sharp et al., 2000, p. 200; van Toorn et al., 2022).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 1\u2014figure supplement 1 and citations to prior work (Elting et al., 2017; Gaglio et al., 1997, p. 199; Hueschen et al., 2019; Hueschen et al., 2017; Sharp et al., 2000, p. 200; van Toorn et al., 2022).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:22:38.079343Z"
+    },
+    {
+      "id": "cf35416c-54cd-4768-bc9d-e644019a8adf",
+      "content_id": "915fa433-6686-4ac0-8ed8-acf9922e7159",
+      "claim_id": "C9",
+      "claim": "K-fibers in p50-overexpressing cells eventually lost their connection to centrosomes and became unfocused.",
+      "claim_type": "EXPLICIT",
+      "source": "While k-fibers seemed initially focused in these cells, these k-fibers eventually lost their connection to centrosomes and became unfocused, exhibiting a similar phenotype to spindle assembly in some NuMA-disrupted cells (Figure 1A, Figure 1\u2014videos 1 and 2, Silk et al., 2009).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by observations shown in Figure 1A and Figure 1\u2014videos 1 and 2, and a citation to Silk et al., 2009.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:22:38.079343Z"
+    },
+    {
+      "id": "4b8b02e7-b230-49d2-998b-e51aafe73db0",
+      "content_id": "915fa433-6686-4ac0-8ed8-acf9922e7159",
+      "claim_id": "C10",
+      "claim": "Disconnected centrosomes seemingly move around freely in cells with unfocused spindles.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed disconnected centrosomes seemingly move around freely in cells with unfocused spindles (Figure 1\u2014videos 2 and 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by observations shown in Figure 1\u2014videos 2 and 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:22:38.079343Z"
+    },
+    {
+      "id": "aac8c4fe-23b6-45f6-943f-c9843026c99a",
+      "content_id": "915fa433-6686-4ac0-8ed8-acf9922e7159",
+      "claim_id": "C11",
+      "claim": "Unfocused metaphase spindles were barrel-shaped with bi-oriented chromosomes and underwent anaphase after several hours instead of about 30 min in control.",
+      "claim_type": "EXPLICIT",
+      "source": "The resulting metaphase spindles were barrel-shaped with bi-oriented chromosomes, and they underwent anaphase after several hours instead of about 30 min in control, consistent with dynein inhibition at kinetochores causing an anaphase delay (Howell et al., 2001; Figure 1A, Figure 1\u2014videos 1 and 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by observations shown in Figure 1A and Figure 1\u2014videos 1 and 2, and a citation to Howell et al., 2001.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:22:38.079343Z"
+    },
+    {
+      "id": "9f1829de-cff8-40f2-a5a3-8e1acf1c7cd2",
+      "content_id": "915fa433-6686-4ac0-8ed8-acf9922e7159",
+      "claim_id": "C12",
+      "claim": "The interkinetochore distance in unfocused spindles was indistinguishable from control.",
+      "claim_type": "EXPLICIT",
+      "source": "Their interkinetochore distance was indistinguishable from control (Figure 1\u2014figure supplement 2), suggesting that k-fibers are still under some tension from other forces (Elting et al., 2017; Kajtez et al., 2016; Maiato et al., 2004; Milas and Toli\u0107, 2016), despite not being connected to poles.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 1\u2014figure supplement 2 and citations to prior work (Elting et al., 2017; Kajtez et al., 2016; Maiato et al., 2004; Milas and Toli\u0107, 2016).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:22:38.079343Z"
+    },
+    {
+      "id": "3b5965c8-dccf-45a1-832e-bf7961881511",
+      "content_id": "915fa433-6686-4ac0-8ed8-acf9922e7159",
+      "claim_id": "C13",
+      "claim": "p50 overexpression in human RPE1 cells led to similar unfocusing phenotypes as in PtK2 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "p50 overexpression in human RPE1 cells led to similar unfocusing phenotypes (Figure 1\u2014figure supplement 3), but k-fibers were not individually resolvable.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by observations shown in Figure 1\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:22:38.079343Z"
+    },
+    {
+      "id": "d846e762-ffcc-4d11-96ce-748de819a115",
+      "content_id": "915fa433-6686-4ac0-8ed8-acf9922e7159",
+      "claim_id": "C14",
+      "claim": "Unfocused spindles had k-fibers that were more spread out in the cell, with spindles covering a larger area compared to control along both its major and minor axes.",
+      "claim_type": "EXPLICIT",
+      "source": "We first observed that in unfocused spindles, k-fibers were more spread out in the cell, with spindles covering a larger area compared to control along both its major and minor axes (Figure 1D, Figure 1\u2014figure supplement 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 1D and Figure 1\u2014figure supplement 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:22:38.079343Z"
+    },
+    {
+      "id": "1ef1f67e-c8f3-44a2-b6c3-f6a6d1e53955",
+      "content_id": "915fa433-6686-4ac0-8ed8-acf9922e7159",
+      "claim_id": "C15",
+      "claim": "Mean k-fiber length in an unfocused spindle (7.81 \u00b1 2.52 \u00b5m) was not significantly different than control (8.01 \u00b1 1.76 \u00b5m).",
+      "claim_type": "EXPLICIT",
+      "source": "Mean k-fiber length in an unfocused spindle (7.81 \u00b1 2.52 \u00b5m) was not significantly different than control (8.01 \u00b1 1.76 \u00b5m) (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by quantitative measurements shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:22:38.079343Z"
+    },
+    {
+      "id": "1131a944-0900-4d1f-90b6-67e176b4c363",
+      "content_id": "915fa433-6686-4ac0-8ed8-acf9922e7159",
+      "claim_id": "C16",
+      "claim": "K-fibers do not require a pole connection to keep their mean length.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, k-fibers do not require a pole connection to keep their mean length.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the observation that mean k-fiber length is indistinguishable between control and unfocused spindles.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:22:38.079343Z"
+    },
+    {
+      "id": "5971d3c5-9aaa-4dc8-b6f8-0e7d990685f0",
+      "content_id": "915fa433-6686-4ac0-8ed8-acf9922e7159",
+      "claim_id": "C17",
+      "claim": "Unfocused spindles showed a greater standard deviation in k-fiber lengths compared to control.",
+      "claim_type": "EXPLICIT",
+      "source": "However, these unfocused spindles showed a greater standard deviation in lengths, so we compared average k-fiber lengths per cell to account for cell-to-cell variability: the mean k-fiber length within each cell was indistinguishable between control and unfocused cells (Figure 1F), but the standard deviation was significantly greater in unfocused cells (Figure 1G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 1F and Figure 1G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:22:38.079343Z"
+    },
+    {
+      "id": "a454a4cb-f14a-4199-84f2-6f78c5ff54f2",
+      "content_id": "915fa433-6686-4ac0-8ed8-acf9922e7159",
+      "claim_id": "C18",
+      "claim": "Spindle poles act to synchronize lengths between neighbors within a spindle, rather than to set and keep length.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicates that spindle poles act to synchronize lengths between neighbors within a spindle, rather than to set and keep length.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the observation that mean k-fiber length is similar but standard deviation is greater in unfocused spindles.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:22:38.079343Z"
+    },
+    {
+      "id": "f858e705-99d9-4647-b212-a2b97a860e00",
+      "content_id": "915fa433-6686-4ac0-8ed8-acf9922e7159",
+      "claim_id": "C19",
+      "claim": "Unfocused k-fibers have indistinguishable mean lengths averaged over time compared to control but a greater coefficient of variation in lengths over time.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed indistinguishable mean lengths averaged over time in unfocused and control k-fibers and a greater coefficient of variation in unfocused k-fiber lengths over time compared to control (Figure 1I, J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 1I and Figure 1J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:22:38.079343Z"
+    },
+    {
+      "id": "9411eff6-8c0e-4a81-b21d-53296d3b233c",
+      "content_id": "915fa433-6686-4ac0-8ed8-acf9922e7159",
+      "claim_id": "C20",
+      "claim": "Outer k-fibers are longer than inner k-fibers in control spindles, but this difference was lost in unfocused spindles.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on geometry and previous observations, we expected outer k-fibers to be longer than inner k-fibers in focused spindles (Kiewisz et al., 2022). This was indeed the case in control spindles, but this difference was lost in unfocused spindles (Figure 1\u2014figure supplement 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 1\u2014figure supplement 6A and a citation to Kiewisz et al., 2022.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:22:38.079343Z"
+    },
+    {
+      "id": "2f06b62b-97a9-461c-9e67-db6260c439de",
+      "content_id": "915fa433-6686-4ac0-8ed8-acf9922e7159",
+      "claim_id": "C21",
+      "claim": "K-fiber length correlates with distance to the metaphase plate in control spindles but not in unfocused spindles.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we expected k-fiber length to correlate with distance to the metaphase plate \u2013 k-fibers are shorter if attached to under-aligned chromosomes and longer if attached to over-aligned chromosomes (Wan et al., 2012). Here too, a correlation between k-fiber length and alignment was observed in control but it was negligible in unfocused spindles (Figure 1\u2014figure supplement 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 1\u2014figure supplement 6B and a citation to Wan et al., 2012.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:22:38.079343Z"
+    },
+    {
+      "id": "922d287d-1a1f-489a-a2d3-e80dbea149e4",
+      "content_id": "915fa433-6686-4ac0-8ed8-acf9922e7159",
+      "claim_id": "C22",
+      "claim": "In control cells, as one sister k-fiber shortened, the other elongated to maintain a constant sum of their lengths, but this was not observed in unfocused spindles.",
+      "claim_type": "EXPLICIT",
+      "source": "During chromosome oscillations, sister k-fiber lengths are normally anti-correlated (Wan et al., 2012). Indeed, in control cells we observed that as one sister k-fiber shortened, the other elongated to maintain a constant sum of their lengths. However, this was not observed in unfocused spindles (Figure 1K).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 1K and a citation to Wan et al., 2012.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:22:38.079343Z"
+    },
+    {
+      "id": "aae3254f-db6b-4f96-bb93-8c42019adfd8",
+      "content_id": "915fa433-6686-4ac0-8ed8-acf9922e7159",
+      "claim_id": "C23",
+      "claim": "The sum of sister k-fiber lengths was indistinguishable from control when averaged over time, but their sum was less conserved over time in unfocused spindles, yielding higher coefficients of variation.",
+      "claim_type": "EXPLICIT",
+      "source": "In unfocused spindles, the sum of sister k-fiber lengths was indistinguishable from control when averaged over time, but their sum was less conserved over time, yielding higher coefficients of variation (Figure 1K\u2013N).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 1K\u2013N.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:22:38.079343Z"
+    },
+    {
+      "id": "69e10432-6430-4e9b-b9df-8c236c26c6c8",
+      "content_id": "915fa433-6686-4ac0-8ed8-acf9922e7159",
+      "claim_id": "C24",
+      "claim": "Spindle poles are not required to globally maintain k-fiber length.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, our findings indicate that spindle poles are not required to globally maintain k-fiber length.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the observation that mean k-fiber length is maintained in unfocused spindles.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:22:38.079343Z"
+    },
+    {
+      "id": "79c08f72-314a-463a-b339-5fb97b79ad56",
+      "content_id": "915fa433-6686-4ac0-8ed8-acf9922e7159",
+      "claim_id": "C25",
+      "claim": "Individual k-fibers can locally maintain their length scale over time, and poles and global pole-focusing forces are needed to coordinate k-fiber lengths within the cell and across sister k-fibers.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, individual k-fibers can locally maintain their length scale over time, and poles and global pole-focusing forces are needed to coordinate k-fiber lengths within the cell and across sister k-fibers, organizing the spindle's structure in space and time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the combined observations that mean k-fiber length is maintained but coordination is lost in unfocused spindles.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:22:38.079343Z"
+    },
+    {
+      "id": "5ffab3b2-1db8-4b64-b4c6-c89af50073d6",
+      "content_id": "915fa433-6686-4ac0-8ed8-acf9922e7159",
+      "claim_id": "C26",
+      "claim": "Control ablated k-fibers were transported toward poles and grew back rapidly following ablation, at 0.85 \u00b1 0.09 \u00b5m/min on average in the first 5 min.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, control ablated k-fibers were transported toward poles and did so while growing back rapidly following ablation, at 0.85 \u00b1 0.09 \u00b5m/min on average in the first 5 min (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by quantitative measurements shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:22:38.079343Z"
+    },
+    {
+      "id": "c2a6e0cc-01e8-499c-841e-074a6b679016",
+      "content_id": "915fa433-6686-4ac0-8ed8-acf9922e7159",
+      "claim_id": "C27",
+      "claim": "Unfocused k-fibers grew back after ablation, though more slowly at 0.38 \u00b1 0.42 \u00b5m/min on average.",
+      "claim_type": "EXPLICIT",
+      "source": "Unfocused k-fibers also grew back, though more slowly at 0.38 \u00b1 0.42 \u00b5m/min on average (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by quantitative measurements shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:22:38.079343Z"
+    },
+    {
+      "id": "12168a26-20ef-4c79-b76f-adab1c5dfc63",
+      "content_id": "915fa433-6686-4ac0-8ed8-acf9922e7159",
+      "claim_id": "C28",
+      "claim": "Focused poles and pole-focusing forces are not required for k-fibers to recover their lengths, but are required for rapid length recovery.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, focused poles and pole-focusing forces are not required for k-fibers to recover their lengths, but are required for rapid length recovery.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the observation that unfocused k-fibers can regrow but do so more slowly than control.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:22:38.079343Z"
+    },
+    {
+      "id": "094e0385-43b6-4df9-9207-705a87f2be08",
+      "content_id": "915fa433-6686-4ac0-8ed8-acf9922e7159",
+      "claim_id": "C29",
+      "claim": "After 10 min of nocodazole washout, control spindle k-fibers had regrown to within 1 \u00b5m of their original length, albeit shorter on average, and unfocused spindle k-fibers fully recovered their average length.",
+      "claim_type": "EXPLICIT",
+      "source": "After 10 min, control spindle k-fibers had regrown to within 1 \u00b5m of their original length, albeit shorter on average, and unfocused spindle k-fibers fully recovered their average length and grew back into an unfocused state (Figure 2G\u2013I, Figure 2\u2014video 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 2G\u2013I and Figure 2\u2014video 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:22:38.079343Z"
+    },
+    {
+      "id": "112d1ff7-474c-4724-806e-46a01ee9ad59",
+      "content_id": "915fa433-6686-4ac0-8ed8-acf9922e7159",
+      "claim_id": "C30",
+      "claim": "Both control and unfocused spindles could enter anaphase after nocodazole washout.",
+      "claim_type": "EXPLICIT",
+      "source": "Both control and unfocused spindles could enter anaphase after nocodazole washout (Figure 2G, Figure 2\u2014video 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by observations shown in Figure 2G and Figure 2\u2014video 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:22:38.079343Z"
+    },
+    {
+      "id": "c1485b7c-e97c-43ca-9aa5-7375dc44a712",
+      "content_id": "915fa433-6686-4ac0-8ed8-acf9922e7159",
+      "claim_id": "C31",
+      "claim": "Cells lacking pole-focusing forces in metaphase can self-assemble unfocused spindles with k-fibers of about the same length as control k-fibers.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, cells lacking pole-focusing forces in metaphase can self-assemble unfocused spindles with k-fibers of about the same length as control k-fibers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the observation that unfocused spindles can reassemble after nocodazole washout with similar k-fiber lengths.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:22:38.079343Z"
+    },
+    {
+      "id": "3f99f5ee-3005-44c1-afe4-cc941f9662c1",
+      "content_id": "915fa433-6686-4ac0-8ed8-acf9922e7159",
+      "claim_id": "C32",
+      "claim": "Unfocused k-fibers have stronger autocorrelation and autocorrelation for a longer period compared to control, consistent with reduced dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "If k-fibers were less dynamic and their lengths changed more slowly, this would result in stronger autocorrelation and autocorrelation for a longer period. Indeed, this is what we observed in unfocused k-fibers compared to control, consistent with unfocused k-fibers having reduced dynamics (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by autocorrelation analysis shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:22:38.079343Z"
+    },
+    {
+      "id": "6c306e9e-063e-4ed0-9d32-3109d051c427",
+      "content_id": "915fa433-6686-4ac0-8ed8-acf9922e7159",
+      "claim_id": "C33",
+      "claim": "In control spindles, the photomark approached minus-ends at a rate of 0.55 \u00b1 0.29 \u00b5m/min.",
+      "claim_type": "EXPLICIT",
+      "source": "In control spindles, the mark approached minus-ends at a rate of 0.55 \u00b1 0.29 \u00b5m/min, consistent with previous reports (Figures 3D and 4D, Cameron et al., 2006; Mitchison, 1989).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by quantitative measurements shown in Figures 3D and 4D, and citations to Cameron et al., 2006 and Mitchison, 1989.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:22:38.079343Z"
+    },
+    {
+      "id": "06ab3d8b-dc2e-4d45-ab2a-d1cfefb7ec0a",
+      "content_id": "915fa433-6686-4ac0-8ed8-acf9922e7159",
+      "claim_id": "C34",
+      "claim": "In unfocused spindles, the photomark approached minus-ends much slower at a rate of 0.13\u00b10.15 \u00b5m/min.",
+      "claim_type": "EXPLICIT",
+      "source": "In unfocused spindles, the mark approached minus-ends much slower at a rate of 0.13\u00b10.15 \u00b5m/min (Figures 3D and 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by quantitative measurements shown in Figures 3D and 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:22:38.079343Z"
+    },
+    {
+      "id": "4b272a3f-ecf3-4bbb-a5b8-3c9d7cfc61ed",
+      "content_id": "915fa433-6686-4ac0-8ed8-acf9922e7159",
+      "claim_id": "C35",
+      "claim": "Spindle poles or pole-focusing forces are required for fast k-fiber end dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, spindle poles or pole-focusing forces are required for fast k-fiber end dynamics, likely contributing to less efficient k-fiber length maintenance in unfocused spindles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the observation that unfocused k-fibers have slower flux rates.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:22:38.079343Z"
+    },
+    {
+      "id": "9b260384-f9b1-4994-99ac-2bcb94085ce9",
+      "content_id": "915fa433-6686-4ac0-8ed8-acf9922e7159",
+      "claim_id": "C36",
+      "claim": "K-fibers can grow back after ablation at a rate faster than poleward flux in both control and unfocused spindles.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, we find that k-fibers can grow back after ablation (Figure 2E) at a rate faster than poleward flux and associated minus-end dynamics in both control and unfocused spindles (0.85 \u00b1 0.09 vs. 0.55 \u00b1 0.29 \u00b5m/min in control, 0.38 \u00b1 0.42 vs. 0.13 \u00b1 0.15 \u00b5m/min in unfocused) (Figures 2E and 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by quantitative measurements shown in Figures 2E and 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:22:38.079343Z"
+    },
+    {
+      "id": "8b881dbb-544a-4e12-8e43-70023425b56a",
+      "content_id": "915fa433-6686-4ac0-8ed8-acf9922e7159",
+      "claim_id": "C37",
+      "claim": "In control spindles, the photomark did not detectably approach the minus-end of the k-fiber during its regrowth after ablation.",
+      "claim_type": "EXPLICIT",
+      "source": "In control spindles, the photomark did not detectably approach the minus-end of the k-fiber during its regrowth (Figure 4B, C), indicating that suppression of minus-end dynamics contributes to k-fiber regrowth, as in Drosophila cells (Maiato et al., 2004; Matos et al., 2009).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 4B and C, and citations to Maiato et al., 2004 and Matos et al., 2009.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:22:38.079343Z"
+    },
+    {
+      "id": "927a239d-15ae-4a31-97bb-071e0f640521",
+      "content_id": "915fa433-6686-4ac0-8ed8-acf9922e7159",
+      "claim_id": "C38",
+      "claim": "K-fiber minus-ends resumed depolymerization in control spindles after ablation and length recovery.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with k-fiber minus-end dynamics being transiently suppressed during regrowth, rather than frozen due to ablation damage, k-fiber minus-ends resumed depolymerization in control spindles after ablation and length recovery (Figure 4\u2014figure supplement 1, Figure 4\u2014video 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 4\u2014figure supplement 1 and Figure 4\u2014video 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:22:38.079343Z"
+    },
+    {
+      "id": "344fe30e-cbec-4122-87b3-dfbf5353bd9d",
+      "content_id": "915fa433-6686-4ac0-8ed8-acf9922e7159",
+      "claim_id": "C39",
+      "claim": "Mammalian k-fibers must additionally increase their plus-end dynamics when shortened to reestablish their steady-state length.",
+      "claim_type": "EXPLICIT",
+      "source": "However, while Drosophila k-fibers regrow at the rate of poleward flux, these control mammalian k-fibers regrew faster than the rate of flux, indicating that mammalian k-fibers must additionally increase their plus-end dynamics when shortened to reestablish their steady-state length.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the observation that k-fibers regrow faster than the flux rate.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:22:38.079343Z"
+    },
+    {
+      "id": "eb7c6fc5-1e43-4c3b-bc60-f1a6adc96dd2",
+      "content_id": "915fa433-6686-4ac0-8ed8-acf9922e7159",
+      "claim_id": "C40",
+      "claim": "In unfocused spindles, the photomark did not detectably approach the minus-end of the k-fiber during its regrowth after ablation.",
+      "claim_type": "EXPLICIT",
+      "source": "In unfocused spindles, the photomark also did not detectably approach the minus-end of the k-fiber during its regrowth (Figure 4C), consistent with suppression of any minus-end dynamics, though it was not significantly different from the already slow dynamics and insufficient to account for growth (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 4C and Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:22:38.079343Z"
+    },
+    {
+      "id": "2c3ac0a7-8a3d-4e90-a8fb-3f1182eb61b0",
+      "content_id": "915fa433-6686-4ac0-8ed8-acf9922e7159",
+      "claim_id": "C41",
+      "claim": "K-fibers can tune their plus-end dynamics to recover their length in the absence of dynein-based pole-focusing forces.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, k-fibers can tune their plus-end dynamics to recover their length in the absence of dynein-based pole-focusing forces.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the observation that unfocused k-fibers can regrow after ablation despite suppressed minus-end dynamics.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:22:38.079343Z"
+    },
+    {
+      "id": "17723b31-3bc2-4d9e-b8e0-de4ae071d803",
+      "content_id": "915fa433-6686-4ac0-8ed8-acf9922e7159",
+      "claim_id": "C42",
+      "claim": "K-fiber length is not simply regulated by global pole-focusing forces, but by local length-based mechanisms.",
+      "claim_type": "EXPLICIT",
+      "source": "This supports a model where k-fiber length is not simply regulated by global pole-focusing forces, but by local length-based mechanisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the observation that k-fibers can tune their dynamics to recover length without pole-focusing forces.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:22:38.079343Z"
+    },
+    {
+      "id": "37351502-8643-40dd-aaa6-3b1197806623",
+      "content_id": "915fa433-6686-4ac0-8ed8-acf9922e7159",
+      "claim_id": "C43",
+      "claim": "In spindles without focused poles, chromatids separated at twofold reduced velocities compared to control.",
+      "claim_type": "EXPLICIT",
+      "source": "In spindles without focused poles, chromatids separated\u2014albeit at twofold reduced velocities compared to control\u2014in the separating chromatid pairs that could be identified (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by quantitative measurements shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:22:38.079343Z"
+    },
+    {
+      "id": "99696064-d7c6-4034-a46a-d8795e921fd4",
+      "content_id": "915fa433-6686-4ac0-8ed8-acf9922e7159",
+      "claim_id": "C44",
+      "claim": "In the absence of poles or dynein activity, chromatid separation likely comes from pushing from the spindle center rather than from pulling from the cell cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "In the absence of poles or dynein activity, such chromatid separation likely comes from pushing from the spindle center rather than from pulling from the cell cortex (Vuku\u0161i\u0107 et al., 2017; Yu et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Vuku\u0161i\u0107 et al., 2017 and Yu et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:22:38.079343Z"
+    },
+    {
+      "id": "d9b8fef0-e18f-404e-9337-fc8c38a2c84b",
+      "content_id": "915fa433-6686-4ac0-8ed8-acf9922e7159",
+      "claim_id": "C45",
+      "claim": "Major segregation and cytokinetic defects were observed in unfocused spindles compared to control.",
+      "claim_type": "EXPLICIT",
+      "source": "However, major segregation and cytokinetic defects were observed in these cells compared to control, consistent with segregation defects observed in k-fibers disconnected from poles (van Toorn et al., 2022; Sivaram et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by observations and citations to van Toorn et al., 2022 and Sivaram et al., 2009.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:22:38.079343Z"
+    },
+    {
+      "id": "b2ee6689-6250-4f42-a4e3-464197a6712e",
+      "content_id": "915fa433-6686-4ac0-8ed8-acf9922e7159",
+      "claim_id": "C46",
+      "claim": "Cytokinetic defects and the presence of multiple cytokinetic furrows frequently resulted in the formation of more than two daughter cells in unfocused spindles.",
+      "claim_type": "EXPLICIT",
+      "source": "Cytokinetic defects and the presence of multiple cytokinetic furrows frequently resulted in the formation of more than two daughter cells in unfocused spindles (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:22:38.079343Z"
+    },
+    {
+      "id": "1ad320c7-ecb6-40d2-b3da-d2ad43aa0694",
+      "content_id": "915fa433-6686-4ac0-8ed8-acf9922e7159",
+      "claim_id": "C47",
+      "claim": "Chromosome masses were scattered and unequally distributed in unfocused spindles, whereby control daughter cells inherited approximately half of the chromosome mass but not daughter cells of unfocused spindles.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, chromosome masses were scattered and unequally distributed in these cells, whereby control daughter cells inherited approximately half of the chromosome mass as measured by DNA intensity, but not daughter cells of unfocused spindles (Figure 5E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by quantitative measurements shown in Figure 5E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:22:38.079343Z"
+    },
+    {
+      "id": "c57b3b3d-ed62-4973-bd73-530c9df5dcfd",
+      "content_id": "915fa433-6686-4ac0-8ed8-acf9922e7159",
+      "claim_id": "C48",
+      "claim": "Spindle poles are essential to coordinate chromosome segregation and cytokinesis in mammalian cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, while many species lack spindle poles, and while unfocused mammalian spindles can still maintain k-fiber length and separate chromatids, spindle poles are essential to coordinate chromosome segregation and cytokinesis in mammalian cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the observation that unfocused spindles have severe segregation and cytokinesis defects.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:22:38.079343Z"
+    },
+    {
+      "id": "e2ec6926-c60b-433d-858c-fc579cca1b69",
+      "content_id": "915fa433-6686-4ac0-8ed8-acf9922e7159",
+      "claim_id": "C49",
+      "claim": "In the mammalian spindle, individual k-fibers set and maintain their lengths locally but require the global cue of a focused pole to coordinate their lengths across space and time.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show that in the mammalian spindle, individual k-fibers set and maintain their lengths locally but require the global cue of a focused pole to coordinate their lengths across space and time (Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim summarizes the main findings of the study, supported by data throughout the manuscript and illustrated in Figure 6.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:22:38.079343Z"
+    },
+    {
+      "id": "870a5cfc-c423-4aae-9203-3d7f640f00b3",
+      "content_id": "915fa433-6686-4ac0-8ed8-acf9922e7159",
+      "claim_id": "C50",
+      "claim": "Pole-less spindles can set and maintain k-fibers at the same mean length as in control, recovering their steady-state lengths if acutely shortened, but they have impaired dynamics and coordination and are unable to properly segregate chromosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Our work reveals that pole-less spindles can set and maintain k-fibers at the same mean length as in control, recovering their steady-state lengths if acutely shortened, but they have impaired dynamics and coordination and are unable to properly segregate chromosomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim summarizes the main findings of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:22:38.079343Z"
+    },
+    {
+      "id": "8cdb378c-2792-437a-9be2-b8ef0d23f9f9",
+      "content_id": "915fa433-6686-4ac0-8ed8-acf9922e7159",
+      "claim_id": "C51",
+      "claim": "Length is an emergent property of individual k-fibers in the spindle, and spindle poles ensure that this network of k-fibers is highly dynamic and coordinated across space and time to ultimately cluster chromatids into two future daughter cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose a model whereby length is an emergent property of individual k-fibers in the spindle, and where spindle poles ensure that this network of k-fibers is highly dynamic and coordinated across space and time to ultimately cluster chromatids into two future daughter cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a proposed model based on the findings of the study.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:22:38.079343Z"
+    },
+    {
+      "id": "b81a4e62-a0de-4b16-be54-3e54e12ec9e1",
+      "content_id": "915fa433-6686-4ac0-8ed8-acf9922e7159",
+      "claim_id": "C52",
+      "claim": "Spindle length scales with cell size during development.",
+      "claim_type": "EXPLICIT",
+      "source": "The length of the spindle dictates the distance over which chromosomes segregate in dividing cells, and spindle length is known to scale with cell size during development (Good et al., 2013; Hazel et al., 2013; Lacroix et al., 2018; Rieckhoff et al., 2020; W\u00fchr et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior work (Good et al., 2013; Hazel et al., 2013; Lacroix et al., 2018; Rieckhoff et al., 2020; W\u00fchr et al., 2008).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:22:38.079343Z"
+    },
+    {
+      "id": "463be2e6-fa1d-4e78-ac79-0bd18111bf16",
+      "content_id": "915fa433-6686-4ac0-8ed8-acf9922e7159",
+      "claim_id": "C53",
+      "claim": "Defects in spindle length are linked to impaired chromosome segregation, cytokinesis errors, and asymmetric division defects.",
+      "claim_type": "EXPLICIT",
+      "source": "Defects in spindle length are linked to impaired chromosome segregation (Goshima et al., 1999), cytokinesis errors (Dechant and Glotzer, 2003), and asymmetric division defects (Dudka et al., 2019; Dumont et al., 2007), and long spindles have been hypothesized to come at an energetic cost (Dumont and Mitchison, 2009a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior work (Goshima et al., 1999; Dechant and Glotzer, 2003; Dudka et al., 2019; Dumont et al., 2007; Dumont and Mitchison, 2009a).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:22:38.079343Z"
+    },
+    {
+      "id": "f7ca73c2-3361-4cb8-a15c-40ed09bb4df4",
+      "content_id": "915fa433-6686-4ac0-8ed8-acf9922e7159",
+      "claim_id": "C54",
+      "claim": "Microtubule dynamics regulators with length-dependent activities could in principle give rise to the k-fiber's length scale.",
+      "claim_type": "EXPLICIT",
+      "source": "Microtubule dynamics regulators with length-dependent activities (Dudka et al., 2019; Mayr et al., 2007; Stumpff et al., 2008; Varga et al., 2006) could in principle give rise to the k-fiber's length scale, beyond simply tuning length.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior work (Dudka et al., 2019; Mayr et al., 2007; Stumpff et al., 2008; Varga et al., 2006).",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:22:38.079343Z"
+    },
+    {
+      "id": "14f5f680-b8ca-4d37-9aab-d730fdcfcc2b",
+      "content_id": "915fa433-6686-4ac0-8ed8-acf9922e7159",
+      "claim_id": "C55",
+      "claim": "Global forces such as cell confinement pulls on poles, leading to k-fiber elongation by transiently suppressing apparent minus-end depolymerization.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, global forces such as cell confinement pulls on poles, leading to k-fiber elongation by transiently suppressing apparent minus-end depolymerization (Dumont and Mitchison, 2009b), but pole-less k-fibers do not elongate under these forces (Guild et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Dumont and Mitchison, 2009b and Guild et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:22:38.079343Z"
+    },
+    {
+      "id": "2d830a65-225b-4db4-b624-93d65f95dc8c",
+      "content_id": "915fa433-6686-4ac0-8ed8-acf9922e7159",
+      "claim_id": "C56",
+      "claim": "Locally pulling on a k-fiber with a microneedle causes it to stop depolymerizing at its pole and thus elongate.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, locally pulling on a k-fiber with a microneedle causes it to stop depolymerizing at its pole and thus elongate (Long et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Long et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:22:38.079343Z"
+    },
+    {
+      "id": "8bd9a401-2e99-4d5c-b203-70539e23f567",
+      "content_id": "915fa433-6686-4ac0-8ed8-acf9922e7159",
+      "claim_id": "C57",
+      "claim": "Inhibiting dynein unfocuses poles but spindles still form albeit with altered lengths in Drosophila and Xenopus.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, inhibiting dynein unfocuses poles but spindles still form albeit with altered lengths in Drosophila (Goshima et al., 2005b) and Xenopus (Gaetz and Kapoor, 2004; Heald et al., 1996; Merdes et al., 1996), and without a clear effect on mammalian spindle length (Guild et al., 2017; Howell et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior work (Goshima et al., 2005b; Gaetz and Kapoor, 2004; Heald et al., 1996; Merdes et al., 1996; Guild et al., 2017; Howell et al., 2001).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:22:38.079343Z"
+    },
+    {
+      "id": "a1717e66-d8e7-4af0-b0a1-e97dfb19732f",
+      "content_id": "915fa433-6686-4ac0-8ed8-acf9922e7159",
+      "claim_id": "C58",
+      "claim": "It is possible to alter kinetochores and microtubule dynamics to shorten k-fibers without a corresponding decrease in the spindle's apparent length.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, it is possible to alter kinetochores and microtubule dynamics to shorten k-fibers without a corresponding decrease in the spindle's apparent length (DeLuca et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to DeLuca et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:22:38.079343Z"
+    },
+    {
+      "id": "d20b1f83-dcf2-49b7-8ea9-91481259efae",
+      "content_id": "915fa433-6686-4ac0-8ed8-acf9922e7159",
+      "claim_id": "C59",
+      "claim": "Mammalian spindles can achieve similar architecture whether or not dynein (or its recruiter NuMA) is knocked out.",
+      "claim_type": "EXPLICIT",
+      "source": "However, recent work has revealed that mammalian spindles can achieve similar architecture whether or not dynein (or its recruiter NuMA) is knocked out (Neahring et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Neahring et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:22:38.079343Z"
+    },
+    {
+      "id": "f0f7c1f6-b5b5-4ead-ab97-aea3638ec48e",
+      "content_id": "915fa433-6686-4ac0-8ed8-acf9922e7159",
+      "claim_id": "C60",
+      "claim": "The severe defects in spindle coordination and maintenance observed in p50-unfocused spindles are more likely due to the loss of spindle poles than due to the loss of dynein activity per se.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that the severe defects in spindle coordination (Figures 1 and 5) and maintenance (Figure 2) observed in p50-unfocused spindles are more likely due to the loss of spindle poles than due to the loss of dynein activity per se.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the observation that dynein knockout does not produce similar defects as p50 overexpression.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:22:38.079343Z"
+    },
+    {
+      "id": "b17b3581-11d4-4bf4-be64-302227bbd283",
+      "content_id": "915fa433-6686-4ac0-8ed8-acf9922e7159",
+      "claim_id": "C61",
+      "claim": "Centrosomes are disconnected from the spindle in unfocused spindles.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, centrosomes are disconnected from the spindle (Figure 1\u2014videos 2 and 3), ruling out contributions from centrosomes (Khodjakov et al., 2000) or astral microtubules on k-fiber length regulation at metaphase.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by observations shown in Figure 1\u2014videos 2 and 3, and a citation to Khodjakov et al., 2000.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:22:38.079343Z"
+    },
+    {
+      "id": "ef969bbd-8a30-4eda-8419-77a03129920a",
+      "content_id": "915fa433-6686-4ac0-8ed8-acf9922e7159",
+      "claim_id": "C62",
+      "claim": "Mammalian spindle poles are required for spindle positioning.",
+      "claim_type": "EXPLICIT",
+      "source": "Mammalian spindle poles are also required for spindle positioning (Kiyomitsu and Cheeseman, 2012) and have been proposed to help segregate centrosomes (Friedl\u00e4nder and Wahrman, 1970).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Kiyomitsu and Cheeseman, 2012 and Friedl\u00e4nder and Wahrman, 1970.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:22:38.079343Z"
+    },
+    {
+      "id": "f73c7d60-7564-4336-87bc-cade86970855",
+      "content_id": "915fa433-6686-4ac0-8ed8-acf9922e7159",
+      "claim_id": "C63",
+      "claim": "While k-fibers establish their mean lengths locally, global cues homogenize them.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, we have shown that while k-fibers establish their mean lengths locally, global cues homogenize them (Figure 1E, G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 1E and G.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:22:38.079343Z"
+    },
+    {
+      "id": "f3cb4315-9a04-460d-bb6c-d0ac17fd3c16",
+      "content_id": "915fa433-6686-4ac0-8ed8-acf9922e7159",
+      "claim_id": "C64",
+      "claim": "The structural integrity and flexible remodeling of other higher-order structures may also rely on individual parts having all the necessary intrinsic information and self-organization to get the correct linear architecture, with global cues organizing these parts in space and time.",
+      "claim_type": "EXPLICIT",
+      "source": "We put forward the idea that the structural integrity and flexible remodeling of other higher-order structures may also rely on individual parts having all the necessary intrinsic information and self-organization to get the correct linear architecture, with global cues organizing these parts in space and time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a speculative proposal based on the findings of the study.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:22:38.079343Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "41829324-e55d-409f-b633-77a7851cad89",
+      "content_id": "915fa433-6686-4ac0-8ed8-acf9922e7159",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Overexpression of p50 in PtK2 and RPE1 cells generates unfocused metaphase spindles with disconnected centrosomes, barrel-shaped morphology, bi-oriented chromosomes, delayed anaphase entry, and interkinetochore distances indistinguishable from control.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8\u2013C13 collectively demonstrate that p50 overexpression produces a consistent unfocused spindle phenotype across cell types. The data include quantitative measurements (C8, C12), imaging evidence (C9, C10, C11, C13), and citations to prior work supporting the interpretation. The phenotype is well-characterized and reproducible.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:22:38.079343Z"
+    },
+    {
+      "id": "cec52a9b-9f70-43d0-822b-f8cbfee4eafb",
+      "content_id": "915fa433-6686-4ac0-8ed8-acf9922e7159",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Unfocused spindles have k-fibers with mean lengths indistinguishable from control but with significantly greater variability (standard deviation) in lengths, indicating that poles coordinate but do not set k-fiber length.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14\u2013C18 provide quantitative evidence (C15, C17) showing that mean k-fiber length is maintained while variability increases in unfocused spindles. The interpretation (C16, C18) logically follows from the data. Statistical tests support the conclusions (p=0.38 for mean, p=2.9e-5 for SD).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:22:38.079343Z"
+    },
+    {
+      "id": "4abe99e2-3f46-4c12-aa27-f05cc671e599",
+      "content_id": "915fa433-6686-4ac0-8ed8-acf9922e7159",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Unfocused k-fibers show increased temporal variability in length, loss of spatial length correlations (inner vs. outer, alignment), and loss of sister k-fiber length coordination, while maintaining mean length over time.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19\u2013C23 demonstrate multiple aspects of coordination loss through quantitative measurements (C19, C20, C21, C22, C23). The data show consistent patterns: mean lengths are preserved but coordination is lost across space and time. Statistical significance is reported for key comparisons.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:22:38.079343Z"
+    },
+    {
+      "id": "ca434752-0524-4a45-a7c7-cf949af5ea78",
+      "content_id": "915fa433-6686-4ac0-8ed8-acf9922e7159",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Spindle poles are not required to globally maintain k-fiber length but are needed to coordinate k-fiber lengths within the cell and across sister k-fibers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24\u2013C25 synthesize the findings from the length measurements and coordination analyses. The conclusion is well-supported by the data showing maintained mean lengths but lost coordination in unfocused spindles. This represents the primary conceptual advance of the study.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:22:38.079343Z"
+    },
+    {
+      "id": "0070fbda-4aeb-4c48-942e-5832947ea1f1",
+      "content_id": "915fa433-6686-4ac0-8ed8-acf9922e7159",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "After laser ablation, control k-fibers regrow rapidly (0.85\u00b10.09 \u00b5m/min) while unfocused k-fibers regrow more slowly (0.38\u00b10.42 \u00b5m/min), indicating that poles are not required for length recovery but are required for rapid recovery.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26\u2013C28 provide quantitative measurements of regrowth rates with appropriate statistical analysis (p=0.023). The interpretation (C28) follows logically from the data. However, the large standard deviation for unfocused k-fibers (\u00b10.42 \u00b5m/min) suggests high variability, which is consistent with the coordination defects but warrants noting.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:22:38.079343Z"
+    },
+    {
+      "id": "0fb61908-b65d-4f59-bbf1-9e37b9e287f2",
+      "content_id": "915fa433-6686-4ac0-8ed8-acf9922e7159",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "After nocodazole washout, both control and unfocused spindles can reassemble with k-fibers recovering to approximately their original mean lengths and can enter anaphase.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29\u2013C31 demonstrate that unfocused spindles can self-assemble after complete microtubule depolymerization. The data (C29, C30) support the interpretation (C31). This provides strong evidence for local length regulation. Sample sizes are modest (N=3-4 cells) but the effect is clear.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:22:38.079343Z"
+    },
+    {
+      "id": "fec16d85-2c71-49da-b910-92420d539d64",
+      "content_id": "915fa433-6686-4ac0-8ed8-acf9922e7159",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Unfocused k-fibers exhibit reduced dynamics compared to control, with slower poleward flux (0.13\u00b10.15 vs. 0.55\u00b10.29 \u00b5m/min) and stronger autocorrelation over longer periods.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32\u2013C35 provide both autocorrelation analysis (C32) and direct flux measurements (C33, C34) showing reduced dynamics in unfocused spindles. The measurements are consistent with prior work (citations provided) and statistically significant (p=5.3e-4). The interpretation (C35) is well-supported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:22:38.079343Z"
+    },
+    {
+      "id": "3cd5dd5c-4c79-40e6-99f2-9ddf21866bdf",
+      "content_id": "915fa433-6686-4ac0-8ed8-acf9922e7159",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "In control spindles, k-fibers regrow after ablation faster than the flux rate by suppressing minus-end depolymerization and increasing plus-end polymerization, with minus-end dynamics resuming after recovery.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36\u2013C39 provide evidence for the mechanism of length recovery in control cells. The comparison of regrowth rate to flux rate (C36) and photomark tracking (C37, C38) support the interpretation (C39). The data are consistent with prior work in Drosophila but show mammalian-specific differences.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:22:38.079343Z"
+    },
+    {
+      "id": "88ec3acb-ef14-478e-8829-1bf24a328686",
+      "content_id": "915fa433-6686-4ac0-8ed8-acf9922e7159",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "In unfocused spindles, k-fibers can regrow after ablation by tuning plus-end dynamics despite suppressed minus-end dynamics, supporting local length-based regulation rather than global pole-focusing forces.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40\u2013C42 demonstrate that length recovery occurs in unfocused spindles through plus-end regulation. The photomark tracking data (C40) support the interpretation (C41, C42). This is a key mechanistic finding showing local length regulation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:22:38.079343Z"
+    },
+    {
+      "id": "091d570c-ca7f-48bd-b1c5-f99bd5c71bca",
+      "content_id": "915fa433-6686-4ac0-8ed8-acf9922e7159",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Unfocused spindles can separate chromatids at reduced velocity but exhibit major segregation and cytokinesis defects, including unequal chromosome distribution and formation of more than two daughter cells, demonstrating that poles are essential for coordinating chromosome segregation and cytokinesis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43\u2013C48 document functional defects in unfocused spindles through quantitative measurements (C43, C46, C47) and observations (C45). The interpretation (C48) is well-supported by the data. The use of reversine to force anaphase entry is appropriate for testing segregation capacity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:22:38.079343Z"
+    },
+    {
+      "id": "1596dfee-e91e-43cf-8f40-f3845bbbf17e",
+      "content_id": "915fa433-6686-4ac0-8ed8-acf9922e7159",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The authors propose that k-fiber length is an emergent property of individual k-fibers that is set and maintained locally, while spindle poles ensure global coordination of k-fiber dynamics and organization to enable proper chromosome segregation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49\u2013C51 synthesize the major findings into a coherent model. The model (C51) is explicitly labeled as a proposal/speculation, which is appropriate. The supporting data throughout the manuscript (C49, C50) justify this interpretive framework. This represents the conceptual contribution of the work.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:22:38.079343Z"
+    },
+    {
+      "id": "ae9642cc-e55c-4c3c-94b7-31819e8d00f9",
+      "content_id": "915fa433-6686-4ac0-8ed8-acf9922e7159",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Background claims establish that mammalian spindles contain k-fibers that focus into poles through dynein and other motors, exhibit poleward flux and turnover, and can be unfocused by p50 overexpression, while some species naturally lack focused poles.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1\u2013C7 are background claims supported by citations to prior work. These establish the context for the current study. The citations are appropriate and the claims accurately represent the cited literature. These are not novel findings but necessary context.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:22:38.079343Z"
+    },
+    {
+      "id": "6c296803-68a1-49ab-93cc-16b877357fe0",
+      "content_id": "915fa433-6686-4ac0-8ed8-acf9922e7159",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Background claims establish that spindle length scales with cell size, defects in spindle length affect cell division, length-dependent regulators exist, and prior work shows variable effects of dynein inhibition on spindle length across species.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52\u2013C59 provide additional background context supported by citations. These establish the biological importance of spindle length regulation and prior observations about dynein's role. The citations are appropriate and accurately represented. These contextualize but do not constitute novel findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:22:38.079343Z"
+    },
+    {
+      "id": "f8dc5357-aa3b-40bc-8656-c2fa976cfdc1",
+      "content_id": "915fa433-6686-4ac0-8ed8-acf9922e7159",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The authors argue that defects in p50-unfocused spindles are more likely due to loss of poles than loss of dynein activity per se, noting that centrosomes are disconnected and that poles are required for spindle positioning.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60\u2013C62 provide important interpretation distinguishing pole loss from dynein loss. The reasoning (C60) is supported by citation to recent work (Neahring et al., 2021) and observations (C61). This interpretation is critical for the paper's conclusions but relies partly on inference and comparison to other studies.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:22:38.079343Z"
+    },
+    {
+      "id": "bc36c1b8-28be-4ec7-8afd-fe27edc10e1e",
+      "content_id": "915fa433-6686-4ac0-8ed8-acf9922e7159",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The authors propose that the principle of local length establishment with global coordination may apply to other higher-order biological structures beyond spindles.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C63\u2013C64 extend the findings to a broader principle. While C63 is supported by the data, C64 is explicitly speculative and lacks direct evidence. This represents an interesting hypothesis for future work but is not tested in the current study. The speculation is appropriately framed but unsupported.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:22:38.079343Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "461e23c0-eef6-4a1f-876f-48414d18a04b",
+      "result_id": "41829324-e55d-409f-b633-77a7851cad89"
+    },
+    {
+      "claim_id": "cf35416c-54cd-4768-bc9d-e644019a8adf",
+      "result_id": "41829324-e55d-409f-b633-77a7851cad89"
+    },
+    {
+      "claim_id": "4b8b02e7-b230-49d2-998b-e51aafe73db0",
+      "result_id": "41829324-e55d-409f-b633-77a7851cad89"
+    },
+    {
+      "claim_id": "aac8c4fe-23b6-45f6-943f-c9843026c99a",
+      "result_id": "41829324-e55d-409f-b633-77a7851cad89"
+    },
+    {
+      "claim_id": "9f1829de-cff8-40f2-a5a3-8e1acf1c7cd2",
+      "result_id": "41829324-e55d-409f-b633-77a7851cad89"
+    },
+    {
+      "claim_id": "3b5965c8-dccf-45a1-832e-bf7961881511",
+      "result_id": "41829324-e55d-409f-b633-77a7851cad89"
+    },
+    {
+      "claim_id": "d846e762-ffcc-4d11-96ce-748de819a115",
+      "result_id": "cec52a9b-9f70-43d0-822b-f8cbfee4eafb"
+    },
+    {
+      "claim_id": "1ef1f67e-c8f3-44a2-b6c3-f6a6d1e53955",
+      "result_id": "cec52a9b-9f70-43d0-822b-f8cbfee4eafb"
+    },
+    {
+      "claim_id": "1131a944-0900-4d1f-90b6-67e176b4c363",
+      "result_id": "cec52a9b-9f70-43d0-822b-f8cbfee4eafb"
+    },
+    {
+      "claim_id": "5971d3c5-9aaa-4dc8-b6f8-0e7d990685f0",
+      "result_id": "cec52a9b-9f70-43d0-822b-f8cbfee4eafb"
+    },
+    {
+      "claim_id": "a454a4cb-f14a-4199-84f2-6f78c5ff54f2",
+      "result_id": "cec52a9b-9f70-43d0-822b-f8cbfee4eafb"
+    },
+    {
+      "claim_id": "f858e705-99d9-4647-b212-a2b97a860e00",
+      "result_id": "4abe99e2-3f46-4c12-aa27-f05cc671e599"
+    },
+    {
+      "claim_id": "9411eff6-8c0e-4a81-b21d-53296d3b233c",
+      "result_id": "4abe99e2-3f46-4c12-aa27-f05cc671e599"
+    },
+    {
+      "claim_id": "2f06b62b-97a9-461c-9e67-db6260c439de",
+      "result_id": "4abe99e2-3f46-4c12-aa27-f05cc671e599"
+    },
+    {
+      "claim_id": "922d287d-1a1f-489a-a2d3-e80dbea149e4",
+      "result_id": "4abe99e2-3f46-4c12-aa27-f05cc671e599"
+    },
+    {
+      "claim_id": "aae3254f-db6b-4f96-bb93-8c42019adfd8",
+      "result_id": "4abe99e2-3f46-4c12-aa27-f05cc671e599"
+    },
+    {
+      "claim_id": "69e10432-6430-4e9b-b9df-8c236c26c6c8",
+      "result_id": "ca434752-0524-4a45-a7c7-cf949af5ea78"
+    },
+    {
+      "claim_id": "79c08f72-314a-463a-b339-5fb97b79ad56",
+      "result_id": "ca434752-0524-4a45-a7c7-cf949af5ea78"
+    },
+    {
+      "claim_id": "5ffab3b2-1db8-4b64-b4c6-c89af50073d6",
+      "result_id": "0070fbda-4aeb-4c48-942e-5832947ea1f1"
+    },
+    {
+      "claim_id": "c2a6e0cc-01e8-499c-841e-074a6b679016",
+      "result_id": "0070fbda-4aeb-4c48-942e-5832947ea1f1"
+    },
+    {
+      "claim_id": "12168a26-20ef-4c79-b76f-adab1c5dfc63",
+      "result_id": "0070fbda-4aeb-4c48-942e-5832947ea1f1"
+    },
+    {
+      "claim_id": "094e0385-43b6-4df9-9207-705a87f2be08",
+      "result_id": "0fb61908-b65d-4f59-bbf1-9e37b9e287f2"
+    },
+    {
+      "claim_id": "112d1ff7-474c-4724-806e-46a01ee9ad59",
+      "result_id": "0fb61908-b65d-4f59-bbf1-9e37b9e287f2"
+    },
+    {
+      "claim_id": "c1485b7c-e97c-43ca-9aa5-7375dc44a712",
+      "result_id": "0fb61908-b65d-4f59-bbf1-9e37b9e287f2"
+    },
+    {
+      "claim_id": "3f99f5ee-3005-44c1-afe4-cc941f9662c1",
+      "result_id": "fec16d85-2c71-49da-b910-92420d539d64"
+    },
+    {
+      "claim_id": "6c306e9e-063e-4ed0-9d32-3109d051c427",
+      "result_id": "fec16d85-2c71-49da-b910-92420d539d64"
+    },
+    {
+      "claim_id": "06ab3d8b-dc2e-4d45-ab2a-d1cfefb7ec0a",
+      "result_id": "fec16d85-2c71-49da-b910-92420d539d64"
+    },
+    {
+      "claim_id": "4b272a3f-ecf3-4bbb-a5b8-3c9d7cfc61ed",
+      "result_id": "fec16d85-2c71-49da-b910-92420d539d64"
+    },
+    {
+      "claim_id": "9b260384-f9b1-4994-99ac-2bcb94085ce9",
+      "result_id": "3cd5dd5c-4c79-40e6-99f2-9ddf21866bdf"
+    },
+    {
+      "claim_id": "8b881dbb-544a-4e12-8e43-70023425b56a",
+      "result_id": "3cd5dd5c-4c79-40e6-99f2-9ddf21866bdf"
+    },
+    {
+      "claim_id": "927a239d-15ae-4a31-97bb-071e0f640521",
+      "result_id": "3cd5dd5c-4c79-40e6-99f2-9ddf21866bdf"
+    },
+    {
+      "claim_id": "344fe30e-cbec-4122-87b3-dfbf5353bd9d",
+      "result_id": "3cd5dd5c-4c79-40e6-99f2-9ddf21866bdf"
+    },
+    {
+      "claim_id": "eb7c6fc5-1e43-4c3b-bc60-f1a6adc96dd2",
+      "result_id": "88ec3acb-ef14-478e-8829-1bf24a328686"
+    },
+    {
+      "claim_id": "2c3ac0a7-8a3d-4e90-a8fb-3f1182eb61b0",
+      "result_id": "88ec3acb-ef14-478e-8829-1bf24a328686"
+    },
+    {
+      "claim_id": "17723b31-3bc2-4d9e-b8e0-de4ae071d803",
+      "result_id": "88ec3acb-ef14-478e-8829-1bf24a328686"
+    },
+    {
+      "claim_id": "37351502-8643-40dd-aaa6-3b1197806623",
+      "result_id": "091d570c-ca7f-48bd-b1c5-f99bd5c71bca"
+    },
+    {
+      "claim_id": "99696064-d7c6-4034-a46a-d8795e921fd4",
+      "result_id": "091d570c-ca7f-48bd-b1c5-f99bd5c71bca"
+    },
+    {
+      "claim_id": "d9b8fef0-e18f-404e-9337-fc8c38a2c84b",
+      "result_id": "091d570c-ca7f-48bd-b1c5-f99bd5c71bca"
+    },
+    {
+      "claim_id": "b2ee6689-6250-4f42-a4e3-464197a6712e",
+      "result_id": "091d570c-ca7f-48bd-b1c5-f99bd5c71bca"
+    },
+    {
+      "claim_id": "1ad320c7-ecb6-40d2-b3da-d2ad43aa0694",
+      "result_id": "091d570c-ca7f-48bd-b1c5-f99bd5c71bca"
+    },
+    {
+      "claim_id": "c57b3b3d-ed62-4973-bd73-530c9df5dcfd",
+      "result_id": "091d570c-ca7f-48bd-b1c5-f99bd5c71bca"
+    },
+    {
+      "claim_id": "e2ec6926-c60b-433d-858c-fc579cca1b69",
+      "result_id": "1596dfee-e91e-43cf-8f40-f3845bbbf17e"
+    },
+    {
+      "claim_id": "870a5cfc-c423-4aae-9203-3d7f640f00b3",
+      "result_id": "1596dfee-e91e-43cf-8f40-f3845bbbf17e"
+    },
+    {
+      "claim_id": "8cdb378c-2792-437a-9be2-b8ef0d23f9f9",
+      "result_id": "1596dfee-e91e-43cf-8f40-f3845bbbf17e"
+    },
+    {
+      "claim_id": "1dd00901-15b3-4de1-9d47-12e26b76449c",
+      "result_id": "ae9642cc-e55c-4c3c-94b7-31819e8d00f9"
+    },
+    {
+      "claim_id": "fe17aa5e-1be5-4117-a13d-d25bed1e0fc8",
+      "result_id": "ae9642cc-e55c-4c3c-94b7-31819e8d00f9"
+    },
+    {
+      "claim_id": "18a99d26-2b0a-45fd-a8eb-64ed9c36c20c",
+      "result_id": "ae9642cc-e55c-4c3c-94b7-31819e8d00f9"
+    },
+    {
+      "claim_id": "1ea04963-2c4a-4f4a-b921-4f9db88038cb",
+      "result_id": "ae9642cc-e55c-4c3c-94b7-31819e8d00f9"
+    },
+    {
+      "claim_id": "d85ad970-ce08-4304-a9eb-5b61f3d04fe1",
+      "result_id": "ae9642cc-e55c-4c3c-94b7-31819e8d00f9"
+    },
+    {
+      "claim_id": "65809a02-52c9-4c1c-b326-bf008ff2747a",
+      "result_id": "ae9642cc-e55c-4c3c-94b7-31819e8d00f9"
+    },
+    {
+      "claim_id": "22fcf32e-eade-4ba1-bba5-93d110bf72f7",
+      "result_id": "ae9642cc-e55c-4c3c-94b7-31819e8d00f9"
+    },
+    {
+      "claim_id": "b81a4e62-a0de-4b16-be54-3e54e12ec9e1",
+      "result_id": "6c296803-68a1-49ab-93cc-16b877357fe0"
+    },
+    {
+      "claim_id": "463be2e6-fa1d-4e78-ac79-0bd18111bf16",
+      "result_id": "6c296803-68a1-49ab-93cc-16b877357fe0"
+    },
+    {
+      "claim_id": "f7ca73c2-3361-4cb8-a15c-40ed09bb4df4",
+      "result_id": "6c296803-68a1-49ab-93cc-16b877357fe0"
+    },
+    {
+      "claim_id": "14f5f680-b8ca-4d37-9aab-d730fdcfcc2b",
+      "result_id": "6c296803-68a1-49ab-93cc-16b877357fe0"
+    },
+    {
+      "claim_id": "2d830a65-225b-4db4-b624-93d65f95dc8c",
+      "result_id": "6c296803-68a1-49ab-93cc-16b877357fe0"
+    },
+    {
+      "claim_id": "8bd9a401-2e99-4d5c-b203-70539e23f567",
+      "result_id": "6c296803-68a1-49ab-93cc-16b877357fe0"
+    },
+    {
+      "claim_id": "a1717e66-d8e7-4af0-b0a1-e97dfb19732f",
+      "result_id": "6c296803-68a1-49ab-93cc-16b877357fe0"
+    },
+    {
+      "claim_id": "d20b1f83-dcf2-49b7-8ea9-91481259efae",
+      "result_id": "6c296803-68a1-49ab-93cc-16b877357fe0"
+    },
+    {
+      "claim_id": "f0f7c1f6-b5b5-4ead-ab97-aea3638ec48e",
+      "result_id": "f8dc5357-aa3b-40bc-8656-c2fa976cfdc1"
+    },
+    {
+      "claim_id": "b17b3581-11d4-4bf4-be64-302227bbd283",
+      "result_id": "f8dc5357-aa3b-40bc-8656-c2fa976cfdc1"
+    },
+    {
+      "claim_id": "ef969bbd-8a30-4eda-8419-77a03129920a",
+      "result_id": "f8dc5357-aa3b-40bc-8656-c2fa976cfdc1"
+    },
+    {
+      "claim_id": "f73c7d60-7564-4336-87bc-cade86970855",
+      "result_id": "bc36c1b8-28be-4ec7-8afd-fe27edc10e1e"
+    },
+    {
+      "claim_id": "f3cb4315-9a04-460d-bb6c-d0ac17fd3c16",
+      "result_id": "bc36c1b8-28be-4ec7-8afd-fe27edc10e1e"
+    }
+  ],
+  "comparisons": []
+}

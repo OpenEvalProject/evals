@@ -1,0 +1,287 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "The SONG dataset was collected from 27 participants who performed seven fMRI runs over 2 days, including resting-state, gradCPT attention tasks, sitcom watching, and documentary watching. Participants met inclusion criteria and the study received ethical approval.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C8 provide comprehensive methodological details about participant demographics, inclusion criteria, ethical approval, and experimental design. These are standard reporting elements that are internally consistent and adequately documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "A Hidden Markov Model (HMM) was applied to 25-parcel whole-brain fMRI time series to identify four latent brain states: DMN, DAN, SM, and base states. These states showed distinct activity and covariance patterns that were significantly different from null models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C14 describe the HMM methodology and the identification of four brain states with validation against null models. The approach is well-established, the parcellation scheme is cited, and null model comparisons provide appropriate statistical validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C17",
+      "C18"
+    ],
+    "result": "The four latent states identified in the SONG dataset (DMN, DAN, SM, base) were replicated in the independent HCP dataset with high correlation between corresponding states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C18 demonstrate replication across independent datasets with quantitative similarity metrics (Pearson correlations ranging from 0.399 to 0.865). This provides strong evidence for the reliability and generalizability of the identified states.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "The study hypothesizes that the functional connectivity gradients identified by Margulies et al. (2016) serve as a low-dimensional manifold over which large-scale neural dynamics operate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C23 accurately cite prior work on functional connectivity gradients and propose a testable hypothesis linking static gradients to dynamic brain states. The hypothesis is clearly stated and appropriately grounded in prior literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "The four brain states tile a two-dimensional gradient space with maximal separation, with DMN and SM states (SONG) or DMN and DAN states (HCP) occupying extreme positions on the primary gradient.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C28 provide statistical evidence (p<0.001 for maximal separation, FDR-corrected p-values for extreme positions) that brain states occupy distinct positions in gradient space. The findings are replicated across two datasets with appropriate null model comparisons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C33",
+      "C34"
+    ],
+    "result": "Data-specific gradients from SONG and HCP datasets closely resemble the predefined Margulies et al. (2016) gradients, with the first two gradients explaining approximately 50% of connectome variance and comparable amounts of variance in fMRI time series.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C34 demonstrate high correlations (r>0.87) between data-specific and predefined gradients, with quantitative variance explained metrics. The analysis appropriately justifies focusing on the first two gradients and supports the generalizability of the gradient framework.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Global desynchronization, measured as decreased cofluctuation between brain regions, precedes neural state transitions. This effect was observed across cortico-cortical, cortico-subcortical, and subcortico-subcortical connections, replicated across parcellation schemes and datasets, and validated against null models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C39 provide comprehensive statistical evidence (z-statistics, FDR-corrected p-values) for decreased cofluctuation before state transitions, with replication across multiple parcellations, datasets, and appropriate null model controls. The findings are consistent with prior theoretical work on desynchronization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "The base state functions as a transitional hub in neural state dynamics, with DMN, DAN, and SM states preferentially transitioning through the base state rather than directly between each other. The base state exhibits the lowest global cofluctuation, suggesting it is the most desynchronized state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C46 provide convergent evidence from transition probability matrices (>85% self-transition, <8% other transitions), preferential base state transitions (FDR-p<0.05), and global cofluctuation measures (t>61 for SONG, t>170 for HCP) with appropriate controls for head motion. The interpretation is consistent with prior work (Chen et al., 2016).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "All four brain states occur across all contexts (rest, task, naturalistic), with no state dominating (>50% occupancy), but fractional occupancy patterns differ systematically across contexts, with notable differences between sitcom and documentary watching.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C50 describe fractional occupancy patterns with clear quantitative criteria (<50% maximum occupancy) and systematic differences across contexts. The findings support the interpretation that states are context-general but with context-specific occupancy patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Neural state dynamics are synchronized across participants during naturalistic stimuli (sitcom: ~41%, documentary: ~30%, both p<0.001) but not during rest (~26%, p>0.18). This pattern generalizes to independent datasets including movie watching and story listening.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C56 provide quantitative intersubject synchrony measures with statistical significance testing and replication across multiple independent datasets. The contrast between naturalistic stimuli and rest is clear and statistically supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Intersubject synchrony of neural states during naturalistic stimuli extends prior findings of regional and pairwise synchrony to the whole-brain systems level. Synchrony is modulated by attentional engagement, with participant pairs showing similar engagement dynamics also showing similar neural state dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C60 appropriately cite prior work, extend findings to a new scale of analysis, and provide correlational evidence (Spearman's r=0.225-0.274, FDR-p<0.01) linking behavioral and neural synchrony. The engagement ratings provide convergent behavioral evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "The DMN state occurs more frequently after narrative event boundaries (~50% probability, FDR-p<0.01) while the base state occurs less frequently (~10%). This pattern replicates across sitcom episodes and an independent story-listening dataset, with concurrent hippocampal activation increases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C69 provide clear experimental design details, statistical evidence for DMN state modulation at event boundaries, replication in an independent dataset, and convergent evidence from hippocampal activity. The findings are consistent with prior work on event boundaries and appropriately cited.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "At event boundaries, the typical transition pattern changes: base-to-DMN transitions decrease while DAN-to-DMN and SM-to-DMN transitions increase (interaction F>10, p<0.001 across datasets). This demonstrates adaptive reconfiguration of neural dynamics in response to narrative structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C73 provide detailed transition probability analyses with repeated-measures ANOVA showing significant interactions across multiple datasets. Claim C74's interpretation of adaptive reconfiguration is reasonable given the context-dependent changes in transition patterns, though somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "The study uses RT variability during gradCPT as a proxy for attention fluctuations and continuous engagement ratings during naturalistic stimuli to measure attentional dynamics. These measures are grounded in prior work and account for differences between task and naturalistic attention.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C79 describe behavioral measures with appropriate citations to prior work. The distinction between task-based and naturalistic attention is conceptually sound and well-grounded in the literature. The methods are clearly described.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Different neural states indicate engaged attention in different contexts: DMN state during gradCPT, base state during sitcom watching, and DAN state during documentary watching. These findings replicate across independent datasets and are consistent with prior work on attention networks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C88 provide statistical evidence (FDR-p<0.01) for context-specific attention-state relationships with replication in independent datasets. The findings are appropriately related to prior literature. However, the novelty claim for the base state (C85) should be interpreted cautiously as absence of prior reports doesn't prove novelty.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "The SM state consistently indicates inattention or disengagement across both task and naturalistic contexts, occurring during poor task performance, low engagement, and rest breaks. This relationship persists when controlling for head motion (F>3, p<0.05).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C94 provide convergent evidence across multiple contexts and datasets for the SM state's association with inattention. The control for head motion (C91-C92) is critical and appropriately conducted, though the correlation between SM state and motion raises questions about complete independence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "The study's main conclusion is that human cognition and attention arise from neural dynamics that traverse latent states in a shared low-dimensional gradient space, with global desynchronization marking state transitions and context-specific patterns of state occupancy and function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C102 summarize the main findings of the study. These summary claims are supported by the convergent evidence from multiple analyses across independent datasets. However, the causal language in C102 ('arise from') is stronger than warranted by the correlational nature of the fMRI data.",
+    "result_type": "MAJOR"
+  }
+]

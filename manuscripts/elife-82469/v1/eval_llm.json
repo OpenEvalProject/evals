@@ -1,0 +1,295 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "The manuscript establishes the epidemiological context for TB, noting that 1.5 million people died from TB in 2020, incidence is declining slowly at 1-2% per annum, most transmission remains unaccounted for, and passive case-finding has prevented deaths but not reduced incidence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5 are all supported by appropriate citations to WHO reports and peer-reviewed literature. These claims establish the epidemiological background and policy context for the study, providing well-documented justification for investigating subclinical TB transmission.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "The manuscript reviews prior evidence that not all bacteriologically confirmed TB cases report symptoms, that subclinical TB represents about half of prevalent cases, can persist without progressing to clinical disease, and that aerosol exhalation occurs independently of symptoms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C13 are well-supported by citations to recent literature and represent an accurate synthesis of current knowledge about subclinical TB. The logical inference in C13 that passive case-finding will miss subclinical cases follows directly from the definitions provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C14",
+      "C15"
+    ],
+    "result": "The manuscript identifies a methodological issue in prior TB research: data on transmission potential from smear-negative individuals have been incorrectly interpreted as relative infectiousness rather than cumulative exposure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C15 are supported by citation to Kendall 2021 and acknowledgments from the original study authors. This represents an important conceptual clarification that motivates the current study's methodological approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C16",
+      "C70"
+    ],
+    "result": "The study analyzed data from four studies including 414 index cases and 789 household contacts from three prevalence surveys and one case-finding trial.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16 and C70 are supported by appropriate citations and describe the data sources used. The sample sizes are substantial and the studies are appropriately referenced.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C17",
+      "C71"
+    ],
+    "result": "The odds ratio for infection in households with clinical versus subclinical index cases was 1.2 (0.6-2.3, 95% CI), showing no significant difference in cumulative infection by symptom status.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17 and C71 present the same finding from meta-analysis of the collected data. The wide confidence interval crossing 1.0 appropriately indicates no statistically significant difference, which is a key finding supporting the hypothesis that subclinical TB contributes to transmission.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C18"
+    ],
+    "result": "The odds ratio for infection in households with smear-positive versus smear-negative index cases was 2.3 (1.3-3.9, 95% CI), consistent with prior estimates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C18 is supported by the data analysis and citation to Grzybowski et al. 1975. The confidence interval excludes 1.0, indicating a statistically significant difference by smear status, which serves as a positive control validating the analytical approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C19",
+      "C72",
+      "C37",
+      "C38"
+    ],
+    "result": "Using a cumulative hazard model adjusted for disease duration (0.8, 0.4-1.7 relative duration from Ku et al. 2021), the per-unit-time infectiousness of subclinical TB relative to clinical TB was estimated at 1.93 (0.62-6.18, 95% PrI).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C19, C72, C37, and C38 describe the primary analytical result. While the methodology is sound and the duration adjustment is appropriately sourced, the very wide prediction interval (0.62-6.18) indicates substantial uncertainty. The model assumes constant hazards and fixed disease states (C49 acknowledges individuals likely fluctuate), which may not reflect reality. The result cannot exclude subclinical TB being less infectious (lower bound 0.62) or substantially more infectious (upper bound 6.18) than clinical TB.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C20"
+    ],
+    "result": "The infectiousness per unit time of smear-negative versus smear-positive TB was estimated at 0.26 (0.03-2.47, 95% PrI).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C20 presents an estimate with extremely wide uncertainty (0.03-2.47), spanning nearly two orders of magnitude. While the point estimate suggests smear-negative TB is less infectious, the interval includes the possibility of no difference (includes 1.0) or even higher infectiousness. This level of uncertainty limits the utility of this specific estimate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C73"
+    ],
+    "result": "Meta-analysis of 15 prevalence surveys from 14 countries showed that 58% (29-82%) of prevalent TB is subclinical, with 33% (18-52%) of subclinical cases being smear-positive and 53% (25-80%) of clinical cases being smear-positive.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C24 and C73 present meta-analyzed prevalence data from multiple surveys. The high heterogeneity noted in C54 (I\u00b2=95%, 81%, 89%) is appropriately addressed by using prediction intervals rather than confidence intervals. The data sources are documented in Appendix 1-table 2.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Combining relative infectiousness and prevalence estimates, the study estimates that 68% (27-92%, 95% PrI) of global Mtb transmission comes from subclinical TB, ranging from 45% in Nigeria to 84% in Mongolia, with the 14 countries representing ~85% of global TB incidence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C25-C27 present the study's main conclusion. While the calculation methodology is appropriate (combining infectiousness and prevalence estimates), the result inherits substantial uncertainty from both components. The very wide prediction interval (27-92%) means the true contribution could range from about one-quarter to nearly all transmission. The claim that included countries represent 85% of global incidence (C27) supports generalizability but doesn't address whether the relative infectiousness estimates from 4 studies generalize globally.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "The findings are consistent with other recent evidence including whole-genome sequencing showing 36% of transmission before symptom onset, similar TST positivity risks for children living with clinical or subclinical smear-positive TB, and asymptomatic transmission in other pathogens.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C31 appropriately contextualize the findings within related literature. Each claim is supported by appropriate citations. These comparisons strengthen the plausibility of the main findings, though they do not independently validate them.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C32",
+      "C43",
+      "C44"
+    ],
+    "result": "Despite screening over 252,000 individuals for TB and 63,000 for infection, the data do not suggest subclinical TB is substantially less infectious than clinical TB, and given high prevalence, subclinical TB likely contributes substantially to transmission.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32, C43, and C44 appropriately characterize the findings and their implications. The statement that data \"do not suggest subclinical TB is substantially less infectious\" is justified by the point estimate near 2.0 and lower confidence bound of 0.62. The inference about substantial contribution to transmission (C44) follows logically from combining non-inferior infectiousness with high prevalence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C53"
+    ],
+    "result": "Sensitivity analyses showed results were relatively robust, with qualitative conclusions unchanged, and heterogeneity for relative infectiousness estimates was low (I\u00b2=0% for subclinical, I\u00b2=36% for smear-negative).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45, C46, and C53 accurately describe the sensitivity analyses and heterogeneity measures. The low heterogeneity for infectiousness estimates (I\u00b2=0% and 36%) contrasts with high heterogeneity for prevalence estimates (C54), appropriately justifying the use of prediction intervals for the final transmission contribution estimates.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "The study acknowledges important limitations: inability to establish molecular transmission links, inherent biases in household contact studies, the assumption that index cases maintain fixed disease states rather than fluctuating between subclinical and clinical, and potential differences in contact rates outside households.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C52 appropriately acknowledge methodological limitations. C47 and C48 are supported by citation to Kendall 2021 and general epidemiological knowledge. C49 is supported by Richards et al. 2021. C50-C51 represent reasonable speculation about contact patterns supported by Glynn et al. 2020. These limitations are important for interpreting the results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C55",
+      "C56"
+    ],
+    "result": "The data come from populations with low HIV prevalence, and while subclinical TB presentation is likely affected by HIV, it's unknown whether relative differences between subclinical and clinical TB change with HIV co-infection, though two-thirds of people with HIV have achieved viral suppression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39, C40, C55, and C56 appropriately acknowledge the limitation regarding HIV co-infection. C39 describes the data characteristics, C40 is supported by UNAIDS 2021, and C55-C56 are supported by appropriate citations. The discussion appropriately notes this as a limitation while arguing the findings may still be broadly applicable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C54"
+    ],
+    "result": "Heterogeneity for prevalence-related estimates was high (I\u00b2=95% for proportion subclinical, I\u00b2=81% and 89% for smear-positive proportions).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C54 reports heterogeneity statistics from the meta-analyses. High heterogeneity is expected given different populations, time periods, and diagnostic algorithms across surveys. The authors appropriately use prediction intervals rather than confidence intervals to account for this heterogeneity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C57"
+    ],
+    "result": "Symptom-independent screening policies have been observed to reduce TB burden at higher rates than DOTS, and symptoms (particularly cough) are not closely correlated with Mtb exhalation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33, C34, and C57 are supported by appropriate citations to historical and contemporary evidence. These claims provide important context supporting the biological plausibility of the main findings and the policy relevance of the research question.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Earlier diagnosis before symptom onset likely brings individual benefits, but current diagnostic approaches face obstacles: symptom-independent tools exist but face specificity/cost/logistics challenges, and about half of adults cannot produce sputum for confirmatory testing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35, C36, C61, C62, and C63 are supported by appropriate citations and describe current diagnostic challenges. These claims establish the practical context for why identifying subclinical TB transmission is important for policy development.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Bio-aerosol measurements may uncover additional infectious individuals who are sputum-negative, though these tools require validation. Such individuals would more likely be subclinical, meaning the study may have underestimated subclinical TB's contribution to transmission.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C67 appropriately discuss emerging diagnostic technologies and their implications. C64-C65 are supported by appropriate citations noting the need for validation. C66-C67 represent reasonable inference about the characteristics and implications of bio-aerosol-positive, sputum-negative individuals.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C58",
+      "C59",
+      "C60",
+      "C68",
+      "C69"
+    ],
+    "result": "The study concludes that subclinical TB likely contributes substantially to transmission and needs to be diagnosed and treated for TB elimination, requiring development of technologies and strategies beyond passive case-finding, including symptom-agnostic screening, updated WHO case definitions, and tailored treatment approaches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C41-C42 and C58-C60, C68-C69 present the study's main conclusions and policy recommendations. While these follow logically from the findings, the very wide uncertainty in the transmission contribution estimate (27-92%) means the strength of evidence supporting these recommendations is limited. The recommendations are reasonable given the point estimates and lower bounds that don't exclude substantial contribution, but the uncertainty means definitive policy conclusions require additional evidence.",
+    "result_type": "MAJOR"
+  }
+]

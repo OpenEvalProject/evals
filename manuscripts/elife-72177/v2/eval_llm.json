@@ -1,0 +1,251 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C26",
+      "C27",
+      "C28",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "The authors developed a method that uses genome-wide genealogies (thousands of trees inferred via Relate) to estimate per-generation dispersal rates and locate genetic ancestors in continuous two-dimensional space. The method employs a likelihood approach with branching Brownian motion as a prior, uses importance sampling to correct for bias from Relate's panmictic prior, and focuses on recent evolutionary history by applying time cutoffs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C6, C26-C28, and C36-C41 collectively describe a coherent methodological framework. The use of Relate for tree inference (C36-C37), the likelihood approach with Brownian motion (C6, C26), importance sampling to correct bias (C39-C40), and focus on recent history (C41) are all well-justified methodological choices that form a complete analytical pipeline.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "The authors justify their use of branching Brownian motion as a spatial genealogy model despite its limitations. While this model lacks local density dependence and assumes unbounded space (leading to known biases), it remains analytically tractable and a reasonable approximation over short time scales, unlike more complex but computationally expensive alternatives.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C50 provide a balanced assessment of the model choice, acknowledging both limitations (C47-C48) and justifications (C50) with appropriate citations. The authors transparently discuss trade-offs between model realism and computational feasibility, which is critical for evaluating the validity of downstream results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C51",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Simulation tests show that the method systematically underestimates true dispersal rates due to the unbounded Brownian motion model, but estimates from true trees are highly correlated with simulated values and can be interpreted as effective dispersal rates. Dispersal estimates from inferred trees show a slight upward bias due to topological errors and Relate's tendency to underestimate coalescence times, but importance sampling reduces this bias.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C58 present simulation validation results with clear acknowledgment of systematic biases and their sources. The interpretation of estimates as 'effective' dispersal rates (C53) is reasonable given the model limitations. The upward bias from inferred trees (C54-C56) and the benefit of importance sampling (C57) are empirically demonstrated in Figure 2 and supplementary figures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Simulation tests demonstrate that the method can locate genetic ancestors, with 95% confidence ellipses generally capturing true locations at individual loci, though uncertainty grows rapidly back in time. The method outperforms simple baseline estimates, and genome-wide averaging of ancestor locations across loci successfully traces major geographic trends deeper into the past. Ancestral location estimates are robust to the number of trees sampled and sample size.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C63 describe validation of ancestral location inference with appropriate acknowledgment of limitations. The growing uncertainty with time (C60) is expected under Brownian motion. The comparison with baseline methods (C61) and demonstration that genome-wide averaging improves accuracy (C62) provide strong support. Robustness analyses (C63) strengthen confidence in the approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Initial application to large A. thaliana datasets (1135 and ~1500 individuals) yielded unreasonably high dispersal estimates (~10^4 km\u00b2/generation) due to long runs of identity between geographically separated sequences, attributed to incorrect imputation of missing genotypes. This issue was resolved by analyzing a smaller dataset of 66 long-read genomes where imputation could be avoided.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C69 transparently document a significant data quality issue and its resolution. The explanation that imputation obscures rare alleles, artificially lowering divergence and biasing dispersal estimates upward (C68), is mechanistically sound. The solution using long-read genomes (C69) is appropriate and well-justified with citations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C76",
+      "C78",
+      "C79",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "Using 66 long-read A. thaliana genomes, the authors estimate dispersal rates of ~30 km\u00b2/generation using full trees, ~40 km\u00b2/generation using harmonic mean coalescent times, and ~60 km\u00b2/generation with a 10^4 generation cutoff. Dispersal is estimated to be slightly higher across latitude than longitude, potentially reflecting northward post-glacial expansion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C79, C7-C9 present consistent dispersal estimates from multiple approaches, with the variation across time cutoffs (C79) interpreted as reflecting different temporal scales of dispersal. The latitudinal bias (C8) is confirmed by independent analyses (mentioned in methods) and interpreted in the context of known biogeographic history (C9, C85). The estimates are within reasonable bounds given the species' history (C82-C83).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "The dispersal rate estimates (~60 km\u00b2/generation with 10^4 cutoff) are considerably higher than a recent machine learning estimate (~1 km\u00b2/generation), but this difference is attributed to the current study capturing a balance between slower local dispersal and faster long-distance movements over deeper time, while the previous study focused on more closely related individuals over a narrower geographic range.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C83 provide a reasonable reconciliation of discrepant estimates by considering differences in spatial and temporal scales captured by different methods. The interpretation is supported by reference to known dispersal events (C82) and is consistent with the method's focus on longer timescales.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Dispersal in A. thaliana is estimated to be slightly faster along latitude than longitude, especially in the past 10^4 generations, consistent with rapid post-glacial northward expansion. This contrasts with previous emphasis on westward expansion, though the longitudinal estimate may be affected by limited sampling of non-relict lineages from further east.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C87 present a novel finding about anisotropic dispersal with appropriate caveats about sampling limitations (C87). The interpretation in terms of post-glacial expansion (C85) is consistent with known biogeographic history, and the acknowledgment of potential sampling bias demonstrates appropriate caution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Visualization of mean ancestral locations reveals distinct geographic histories for different A. thaliana lineage groups: non-relict lineages show rapid coalescence and northward expansion, Iberian relicts show limited movement with two admixed exceptions (Met-6 and Evs-12), and non-Iberian relicts show slow movement reflecting deep divergence. The method reveals limitations of contemporary sampling, as non-relict ancestors are pulled toward southern France rather than the hypothesized eastern refugium.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C96 describe patterns in ancestral location data (Figure 3) that are consistent with known population structure and history (supported by multiple citations). The identification of admixed individuals (C94, C100-C101) is corroborated by genealogical nearest neighbor analysis. The acknowledgment of sampling limitations (C90-C91) demonstrates appropriate interpretation of results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "Detailed analysis of individual samples reveals geographic sources of ancestry: a typical non-relict (9883) has ancestors to the northeast, a typical Iberian relict (Hum-2) has ancestors to the south with some northeastern admixture, and outlier Iberian relicts (Met-6 and Evs-12) show extensive admixture with non-relicts, confirmed by genealogical nearest neighbor proportions of ~75-83% non-relict ancestry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C101 present detailed case studies (Figure 4) with interpretations supported by independent genetic evidence (genealogical nearest neighbor analysis). The patterns are consistent with known admixture between lineage groups and provide validation of the ancestral location method.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Analysis of ancestral location distributions over time shows rapid northward expansion for the northernmost non-relict sample (9336) and minimal movement for the diverged Madeira sample (22005), consistent with colonization ~70,000 years ago. A slight bimodality in Swedish sample ancestries could not be explained by nearest neighbor proportions, leaving open the possibility of multiple colonization pulses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C106 describe temporal patterns in ancestral locations (Figure 5) with interpretations consistent with known colonization history (C103). The authors appropriately investigate potential explanations for bimodality (C106) and acknowledge uncertainty about multiple colonization events, demonstrating careful interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "Comparison of ancestral location distributions between non-relict and Iberian relict groups shows geographic overlap in the past 10^3 generations followed by divergence due to northeastern movement of non-relict ancestors. Considerable variation in both ancestries indicates substantial admixture, and the authors note that North African samples would likely pull Iberian relict ancestors southward.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C109 describe group-level patterns (Figure 6) that synthesize individual-level findings. The interpretation of variation as evidence of admixture (C108) is consistent with earlier findings. The speculation about North African sampling (C109) is appropriately framed as a limitation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C70",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "The authors address the impact of selfing in A. thaliana on their inferences, noting that while selfing reduces effective recombination and the number of genetic ancestors, linkage disequilibrium breaks down rapidly (~tens of kb), the number of ancestors still grows rapidly even with low outcrossing, and Relate's use of a mutational clock should provide well-calibrated branch lengths.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C75 provide a thoughtful discussion of how the species' mating system affects the analysis, with appropriate citations supporting each point. The arguments that many trees should have relatively independent genealogies (C72, C74) and that branch lengths should be well-calibrated (C75) justify the application of the method to this selfing species.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "The authors compare their method to Wohns et al. (2021), noting key differences: Wohns et al. efficiently locate each ancestor once by iterating up the entire tree sequence simultaneously, while the current method locates ancestors independently at sparsely sampled trees but uses information both above and below ancestors. The current method's advantages include estimating dispersal rates, quantifying uncertainty, and accounting for branch length uncertainty via importance sampling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C118 provide a clear and fair comparison with related work, accurately describing methodological differences and trade-offs. The claimed advantages (C118) are substantiated by the method's design and validation results. This demonstrates appropriate positioning within the literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "Two recent approaches (Grundler et al. 2024 and Deraje et al. 2024) have developed related methods for inferring dispersal and ancestral locations from tree sequences, but neither yet accounts for uncertainty in tree inference.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C121 accurately describe recent related work with appropriate citations. The statement about limitations (C121) highlights a key advantage of the current method (which uses importance sampling to account for branch length uncertainty).",
+    "result_type": "MINOR"
+  }
+]

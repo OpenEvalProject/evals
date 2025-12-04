@@ -1,0 +1,1855 @@
+{
+  "submission": {
+    "id": "13c6d71f-4430-4936-938c-6cd7d26ea6fd",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-04T03:49:49.478392Z",
+    "updated_at": "2025-12-04T03:49:49.478392Z"
+  },
+  "content": [
+    {
+      "id": "6516612d-f41d-47e9-995d-f11aae965104",
+      "submission_id": "13c6d71f-4430-4936-938c-6cd7d26ea6fd",
+      "content_type": "manuscript",
+      "content_text": "# Lys417 acts as a molecular switch that regulates the conformation of SARS-CoV-2 spike protein\n\n## Authors\n\n- Qibin Geng<sup>1</sup>\n- Yushun Wan<sup>1</sup>\n- Fu-Chun Hsueh<sup>1</sup>\n- Jian Shang<sup>1</sup>\n- Gang Ye<sup>1</sup> ([ORCID: 0000-0001-6034-2174](https://orcid.org/0000-0001-6034-2174))\n- Fan Bu<sup>1</sup>\n- Morgan Herbst<sup>1</sup>\n- Rowan Wilkens<sup>1</sup>\n- Bin Liu<sup>3</sup> ([ORCID: 0000-0002-6581-780X](https://orcid.org/0000-0002-6581-780X)) \u2020\n- Fang Li<sup>1</sup> ([ORCID: 0000-0002-1958-366X](https://orcid.org/0000-0002-1958-366X)) \u2020\n\n### Affiliations\n\n1. Department of Pharmacology, University of Minnesota Medical School Minneapolis United States ([ROR:017zqws13](https://ror.org/017zqws13))\n2. Center for Coronavirus Research, University of Minnesota Minneapolis United States ([ROR:017zqws13](https://ror.org/017zqws13))\n3. Hormel Institute, University of Minnesota Austin United States ([ROR:017zqws13](https://ror.org/017zqws13))\n\n\u2020 Corresponding author\n\n## Abstract\n\nSARS-CoV-2 spike protein plays a key role in mediating viral entry and inducing host immune responses. It can adopt either an open or closed conformation based on the position of its receptor-binding domain (RBD). It is yet unclear what causes these conformational changes or how they influence the spike\u2019s functions. Here, we show that Lys417 in the RBD plays dual roles in the spike\u2019s structure: it stabilizes the closed conformation of the trimeric spike by mediating inter-spike\u2013subunit interactions; it also directly interacts with ACE2 receptor. Hence, a K417V mutation has opposing effects on the spike\u2019s function: it opens up the spike for better ACE2 binding while weakening the RBD\u2019s direct binding to ACE2. The net outcomes of this mutation are to allow the spike to bind ACE2 with higher probability and mediate viral entry more efficiently, but become more exposed to neutralizing antibodies. Given that residue 417 has been a viral mutational hotspot, SARS-CoV-2 may have been evolving to strike a balance between infection potency and immune evasion, contributing to its pandemic spread.\n\n## Introduction\n\nCoronaviruses have long infected humans, yet none caused the same devastation as SARS-CoV-2 has (Li et al., 2020; Huang et al., 2020). For instance, a virulent and lethal coronavirus, SARS-CoV-1, caused a much smaller outbreak in 2002\u20132003 (Lee et al., 2003; Peiris et al., 2003). Numerous human coronaviruses such as NL63-CoV cause common colds annually (Fouchier et al., 2004; van der Hoek et al., 2004). With an intermediate virulence, SARS-CoV-2 causes a fatality rate that is significantly lower than that of SARS-CoV-1, but much higher than that of NL63-CoV. Because of its intermediate virulence, SARS-CoV-2 carriers show clinical signs that facilitate the spread of the virus: they may develop mild or no symptoms, experience delayed onset of symptoms, develop low levels of neutralizing antibodies, or endure prolonged virus shedding period (Wu et al., 2020; Zhou et al., 2020; W\u00f6lfel et al., 2020; Gao et al., 2020; Kronbichler et al., 2020). These features contribute to the wide spread of SARS-CoV-2 and severe health outcomes, triggering a global COVID-19 pandemic that was unprecedented in the era of modern medicine. Understanding the molecular determinants of COVID-19 is crucial for comprehending the recent pandemic and preventing future ones.\n\nSARS-CoV-2 spike protein played a central role in the COVID-19 pandemic. It guides viral entry into host cells and is also a major target for the host immune responses (Du et al., 2009; Li, 2016). On newly packaged virus particles, the trimeric spike protein has a pre-fusion structure in which three receptor-binding S1 subunits sit on top of a trimeric membrane-fusion S2 stalk (Figure 1A). During viral entry, a receptor-binding domain (RBD) in S1 binds to a receptor on host cell surface for viral attachment and S2 switches to a post-fusion structure for the fusion of viral and host membranes (Li, 2016; Li, 2015). SARS-CoV-2, SARS-CoV-1, and NL63-CoV can all use ACE2 as their receptor (Li et al., 2003; Li et al., 2005; Shang et al., 2020c; Wan et al., 2020a; Wu et al., 2009). Early in the pandemic, we described three distinct characteristics of SARS-CoV-2 spike: its exceptional binding affinity for human ACE2, its proteolytic activation by human protease furin, and its existence as a mixture of two conformations: an open conformation in which the RBD is exposed and accessible to ACE2 and a closed conformation in which the RBD is buried and inaccessible to ACE2 (Shang et al., 2020b). While much has been learned about the first two characteristics (Shang et al., 2020c; Lan et al., 2020; Essalmani et al., 2022; Peacock et al., 2021; Geng et al., 2022; Zhang et al., 2023), the third still remains poorly understood. Interestingly, SARS-CoV-1 spike is predominantly in the open conformation, whereas NL63-CoV spike remains closed (Walls et al., 2016; Wrobel et al., 2020; Gui et al., 2017). Thus, two key questions arise: what molecular switches regulate the conformation of coronavirus spikes and how do the conformational changes influence coronaviruses\u2019 infectivity and host immune responses?\n\n![Figure 1.](https://cdn.elifesciences.org/articles/74060/elife-74060-fig1-v3.jpg)\n\n**Figure 1.:** (A) Structure of trimeric SARS-CoV-2 spike ectodomain in the closed conformation with three receptor-binding domains (RBDs) down (PDB 6VXX). Each monomeric subunit of the spike trimer is colored differently. The RBD contains a core structure (in cyan) and a receptor-binding motif (RBM; in magenta). Lys417 in the RBD is shown as blue sticks. (B) A hydrogen bond is formed between the side chain of Lys417 from one spike subunit and the main chain of Asn370 from another spike subunit, stabilizing the trimeric spike in the closed conformation. (C) Residue 417 is a valine in SARS-CoV-1 spike and has been a mutational hotspot in later SARS-CoV-2 variants.\n\nIn this study, we used cryo-EM and biochemical approaches to identify spike residue 417 as a molecular switch that regulates the conformation of SARS-CoV-2 spike. We delved deeper into how this molecular switch affects receptor binding, viral entry, and immune evasion by SARS-CoV-2. Through regulation of its spike\u2019s conformations, SARS-CoV-2 may have struck a balance between infection potency and immune evasiveness.\n\n## Results\n\nTo understand the molecular mechanism that controls the spike\u2019s switching between open and closed conformations, we compared the sequences of SARS-CoV-2 and SARS-CoV-1 spikes in the context of their tertiary structures. We identified residue 417 as potentially a key difference between the two spikes: in the closed SARS-CoV-2 trimeric spike, Lys417 in the RBD from one spike subunit forms a hydrogen bond with the main chain of Asn370 in the RBD from another spike subunit, stabilizing the RBDs in the closed conformation (Walls et al., 2020; Figure 1B). In SARS-CoV-1 spike, however, this residue becomes a valine (Li et al., 2005; Shang et al., 2020a; Figure 1C), losing its capability to form the hydrogen bond with another spike subunit and potentially destabilizing the closed conformation of the spike. Thus, we hypothesized that a K417V mutation causes more SARS-CoV-2 spike molecules to take the open conformation. To test this hypothesis, we investigated the impact of the K417V mutation on the structure and function of SARS-CoV-2 spike using a combination of cryo-EM and biochemical approaches.\n\nTo examine how the K417V mutation affects the conformation of SARS-CoV-2 spike, we performed cryo-EM analysis of the RBD conformation of SARS-CoV-2 spike ectodomain containing either Lys417 or Val417. To this end, we introduced the K417V mutation into SARS-CoV-2 spike ectodomain and purified both versions of the protein: K417-spike containing Lys417 and V417-spike containing Val417. Due to the lack of the transmembrane anchor, the recombinant spike ectodomain was intrinsically unstable. To stabilize the recombinant spike ectodomain, we introduced six proline mutations into its S2 subunit to lock up its pre-fusion structure, introduced mutations to its furin motif to prevent it from being cleaved during molecular maturation, and added a C-terminal foldon tag to facilitate its trimerization (Shang et al., 2020b; Hsieh et al., 2020; Ye et al., 2022). We successfully obtained the stabilized K417-spike and V417-spike and collected cryo-EM data on both proteins (Figure 2\u2014figure supplements 1 and 2; Supplementary file 1). For the K417-spike, 55% of the molecules were in the closed conformation with all three RBDs down, whereas the rest of the molecules (45%) were in the open conformation with one RBD up and two RBDs down (Figure 2A and B). In contrast, for the V417-spike, these numbers became 32 and 68% for the closed and open conformations, respectively (Figure 2C and D). Therefore, the K417V mutation allowed more SARS-CoV-2 spike molecules to take the open conformation, confirming our hypothesis.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/74060/elife-74060-fig2-v3.jpg)\n\n**Figure 2.:** Prototypic SARS-CoV-2 spike ectodomains containing either Lys417 (as in prototypic SARS-CoV-2) or Val417 (as in SARS-CoV-1) were subjected to cryo-EM analyses and the particle distributions for open and closed conformations were calculated. Cryo-EM densities (top), atomic models (middle), and schematic presentations (bottom) for each of the protein classes are shown. (A) K417-spike in the closed conformation. (B) K417-spike in the open conformation. (C) V417-spike in the closed conformation. (D) V417-spike in the open conformation.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/74060/elife-74060-fig2-figsupp1-v3.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Representative raw cryo-EM image and 2D classes are presented. Further 3D refinements using the good particles generated a 3.2 \u00c5 map for the closed spike and a 3.9 \u00c5 map for the open spike. Angular distribution plots, the final maps, half-map Fourier shell correlation (FSC) curves, and accompanying local resolution illustrations are displayed.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/74060/elife-74060-fig2-figsupp2-v3.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Representative raw cryo-EM image and 2D classes are presented. Further 3D refinements using the good particles generated a 3.8 \u00c5 map for the closed spike and a 3.9 \u00c5 map for the open spike. Angular distribution plots, the final maps, half-map Fourier shell correlation (FSC) curves, and accompanying local resolution illustrations are displayed.\n\nWhile the above cryo-EM approach examined the conformation of recombinant spike ectodomain, we further examined the impact of the K417V mutation on the membrane-anchored and full-length SARS-CoV-2 spike that do not contain S2 or furin motif mutations. It has been shown that ACE2 only binds to the standing-up RBD in the open spike (Gui et al., 2017; Ye et al., 2021), suggesting that the open spike conformation is necessary for ACE2 binding. Hence, we characterized the capabilities of K417-spike and V417-spike in binding ACE2. First, we expressed the K417-spike and V417-spike on human cell surface and performed a protein pull-down assay using recombinant human ACE2 as the bait and the cell-surface-anchored spikes as the target (Figure 3A). For cross-validation, both His-tagged ACE2 and Fc-tagged ACE2 were used. We previously showed that this pull-down assay is a reliable method to probe the RBD conformation of cell-surface-anchored spikes, with higher pull-down levels of spikes associated with more spike molecules in the open conformation (Shang et al., 2020b). Western blot analysis showed that some of the spike molecules had been cleaved at the S1/S2 boundary, confirming the intact furin motif (Figure 3A). The pull-down result showed that, compared to K417-spike, more V417-spike molecules had been pulled down by ACE2, suggesting that V417-spike had an increased probability of binding to ACE2 (Figure 3A). Second, we conducted a flow cytometry assay to detect the interactions between recombinant human ACE2 and cell-surface-anchored spikes (Figure 3B, Figure 3\u2014figure supplement 1). Here, two versions of both K417-spike and V417-spike were used: one containing the intact furin motif and the other the inactivated furin motif. The result showed that V417-spike binds to ACE2 better than does K417-spike, no matter whether the furin motif was intact or inactivated (Figure 3B, Figure 3\u2014figure supplement 1). Taken together, both protein pull-down and flow cytometry results reveal that the K417V mutation allowed more SARS-CoV-2 spike molecules to take the open conformation, confirming the cryo-EM data and our hypothesis.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/74060/elife-74060-fig3-v3.jpg)\n\n**Figure 3.:** (A) Protein pull-down assay using recombinant human ACE2 as the bait and cell-surface-anchored full-length SARS-CoV-2 spike as the target. The spike contains either Lys417 (wild-type residue) or Val417 (mutant residue). Top: cell-surface-expressed SARS-CoV-2 spike. Middle: pull-down results using His6-tagged ACE2. Bottom: pull-down results using Fc-tagged ACE2 (Figure 3\u2014source data 1). The expected molecular weights of SARS-CoV-2 spike monomer and S2 monomer are ~180 kDa and ~80 kDa, respectively. (B) Flow cytometry assay to detect the interactions between recombinant human ACE2 and cell-surface-anchored full-length SARS-CoV-2 spike (Figure 3\u2014source data 2). The spike contains either Lys417 (wild-type residue) or Val417 (mutant residue) and contains either intact furin motif or inactivated furin motif. See Figure 3\u2014figure supplement 1 for details of this experiment. Data are mean + SEM. A comparison (two-tailed Student\u2019s t-test) was performed on data between indicated groups (n = 3). ***p<0.001. (C) SARS-CoV-2 pseudovirus entry into human-ACE2-expressing cells. The virus-surface-anchored spike contains either Lys417 (wild-type residue) or Val417 (mutant residue). Top: pseudovirus entry efficiency normalized against the expression level of the spike (see bottom) (Figure 3\u2014source data 3). Bottom: SARS-CoV-2 spike in packaged pseudoviruses (Figure 3\u2014source data 4). Data are mean + SEM. A comparison (two-tailed Student\u2019s t-test) was performed on data between indicated groups (n = 8). ***p<0.001. All experiments in this figure were repeated independently three times with similar results.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/74060/elife-74060-fig3-figsupp1-v3.jpg)\n\n**Figure 3\u2014figure supplement 1.:** HEK293T cells expressing full-length C9-tagged prototypic SARS-CoV-2 spike (containing either Lys417 or Val417 and containing either intact furin motif or inactivated furin motif) were incubated with recombinant Fc-tagged human ACE2. A fluorescence-labeled anti-Fc-tag antibody and a fluorescence-labeled anti-C9-tag antibody were used to label cell-bound ACE2 and cell-surface-expressed spike, respectively. The dot plots display fluorescence intensities indicative of the interactions between one of the spikes and ACE2. The accompanying table shows the percentage of labeled cells in quadrants Q1, Q2, Q3, and Q4 for each of the conditions. (A) (-) control - cells transfected with the vector only. (B) K417-spike. (C) V417-spike. (D) V417-spike containing an inactivated furin motif. (E) K417-spike containing an inactivated furin motif.\n\nTo understand the role of the spike\u2019s conformations in viral entry, we conducted a pseudovirus entry assay. Specifically, retroviruses pseudotyped with SARS-CoV-2 spike (i.e., SARS-CoV-2 pseudoviruses) were evaluated for their capability to enter ACE2-expressing human cells. Two types of SARS-CoV-2 pseudoviruses were used: the K417-spike-charged pseudoviruses (i.e., K417-pseudoviruses) and V417-spike-charged pseudoviruses (V417-pseudoviruses). Both types of pseudoviruses contain the furin motif in their spike. Western blot analysis showed that some of the spike molecules had been cleaved at the S1/S2 boundary when expressed on pseudovirus surface, confirming the intact furin motif (Figure 3C). The pseudovirus entry result showed that V417-pseudoviruses entered cells more efficiently than did K417-pseudoviruses (Figure 3C). Thus, the open spike enhances not only ACE2 binding, but also viral entry.\n\nTo understand the role of the spike\u2019s conformation in immune evasion, we analyzed how neutralizing antibodies recognize the RBD in the context of the trimeric spike protein. To this end, we summarized the binding sites of known neutralizing antibodies on the RBD (Figure 4A). These neutralizing antibodies were discovered individually from COVID-19 patients. They generally recognize five groups of neutralizing epitopes on the RBD (Starr et al., 2021; Dussupt et al., 2021; Scheid et al., 2021; Fedry et al., 2021). Three groups of these RBD epitopes are only accessible to neutralizing antibodies when the spike adopts the open conformation (Starr et al., 2021; Dussupt et al., 2021). In comparison, the other two groups of RBD epitopes are accessible to neutralizing antibodies when the spike adopts either open or closed conformation (Scheid et al., 2021; Fedry et al., 2021). In addition to the above conventional antibodies, neutralizing nanobodies (which are single-domain antibodies derived from camelid animals) have also been discovered to target the RBD. Because of their single-domain structure, nanobodies are known to bind to cryptic epitopes on viral targets. We recently discovered four RBD-targeting nanobodies, named Nanosota-1, -2, -3, and -4 (Ye et al., 2021; Ye et al., 2023; Figure 4B). Among them, Nanosota-2 binds to an epitope on the RBD that almost completely overlaps with the ACE2-binding site. Interestingly, the Nanosota-2 epitope is only accessible to Nanosota-2 when the RBD is in the open conformation (Ye et al., 2023). This result suggests that even with the small size of nanobodies, SARS-CoV-2 may be able to evade some of them when its spike is in the closed conformation. Overall, these epitope-based analyses reveal that SARS-CoV-2 spike in the closed conformation can evade significant amounts of neutralizing antibodies, confirming our previous hypothesis that the closed conformation of the spike is a viral strategy for immune evasion (Shang et al., 2020b).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/74060/elife-74060-fig4-v3.jpg)\n\n**Figure 4.:** (A) Epitopes targeted by neutralizing conventional antibodies. Numerous RBD-targeting human antibodies have been discovered individually from COVID-19 patients. They bind to five groups of epitopes. Only one representative antibody for each group is shown. The PDB codes are 7N4L for group 1, 7M7W for group 2, 7M6G for group 3, 7AKD for group 4, and 7M7W for group 5. Three epitopes out of the five groups are accessible to conventional antibodies only when the spike adopts the open conformation. (B) Epitopes targeted by neutralizing nanobodies (single-domain antibodies). We previously discovered four RBD-targeting nanobodies from camelid animals. They bind to three groups of epitopes. The PBD codes are 7KM5 for Nanosota-1, 8G72 for Nanosota-2, 8G74 for Nanosota-3, and 8G75 for Nanosota-4. The Nanosota-2 epitope is accessible to the nanobody only when the spike adopts the open conformation.\n\nTo further understand the role of the K417 mutation in ACE2 binding and viral entry, we examined how the K417 mutation directly affects the RBD\u2019s binding affinity for ACE2 instead of the trimeric spike\u2019s. The structure of SARS-CoV-2 RBD complexed with human ACE2 showed that Lys417 in SARS-CoV-2 RBD is directly involved in ACE2 binding by forming a salt bridge with Asp30 in human ACE2 (Lan et al., 2020; Figure 5A). In contrast, the corresponding residue in SARS-CoV-1 RBD is a valine that does not form any direct interactions with human ACE2 (Li et al., 2005; Figure 5B). Here, we introduced the K417V mutation to SARS-CoV-2 RBD and investigated the binding interactions between the recombinant SARS-CoV-2 RBD (containing either Lys417 or Val417) and cell-surface-anchored human ACE2 using flow cytometry. The result showed that the K417V mutation reduced the RBD\u2019s binding affinity for ACE2 (Figure 5C, Figure 5\u2014figure supplement 1). Thus, the K417V mutation has contrasting effects on the RBD and the trimeric spike in terms of ACE2 binding: it weakens the RBD\u2019s ability to bind to ACE2 by eliminating a favorable interaction at the RBD/ACE2 interface, but it increases the trimeric spike\u2019s probability of binding to ACE2 by enabling more spike molecules to assume the open conformation.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/74060/elife-74060-fig5-v3.jpg)\n\n**Figure 5.:** (A) Lys417 in SARS-CoV-2 receptor-binding domain (RBD) forms a favorable salt bridge with Asp30 in human ACE2. PDB code: 6M0J. (B) Val404 in SARS-CoV-1 RBD (whose position is equivalent to residue 417 in SARS-CoV-2 RBD) does not form any direct interaction with human ACE2. PDB code: 2AJF. (C) Flow cytometry assay to detect the interactions between recombinant SARS-CoV-2 RBD and cell-surface-anchored human ACE2 (Figure 5\u2014source data 1). The RBD contains either Lys417 (wild-type residue) or Val417 (mutant residue). MFI: median fluorescence intensity. See Figure 5\u2014figure supplement 1 for details of this experiment. Data are mean + SEM. A comparison (two-tailed Student\u2019s t-test) was performed on data between indicated groups (n = 3). ***p<0.001. This experiment was repeated independently three times with similar results.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/74060/elife-74060-fig5-figsupp1-v3.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Human-ACE2-expressing HEK293T cells were incubated with recombinant His-tagged SARS-CoV-2 RBD (containing either Lys417 or Val417) or buffer only. A fluorescence-labeled anti-His-tag antibody was used to detect cell-bound RBD. The histogram displays the differential fluorescence intensity, indicating the interactions between one of the RBDs and cell-surface ACE2. The (-) control represents cells treated with buffer only.\n\nTo summarize, we identified and investigated a molecular switch regulating the conformation of SARS-CoV-2 spike protein. We used multiple approaches: cryo-EM study of recombinant spike ectodomains, biochemical investigation of cell-surface-anchored full-length and wild-type spikes, spike-mediated pseudovirus entry, and structural analysis of neutralizing antibody/nanobody epitopes. To date, several other studies also investigated the conformation of SARS-CoV-2 spike using cryo-EM (Wrobel et al., 2020; Walls et al., 2020; Ke et al., 2020; Xiong et al., 2020; Cai et al., 2020; Benton et al., 2021), some of which gave different ratios of open and closed spikes probably due to differences in sample preparations and/or protein constructions. In this study, the two spike constructs only differ at residue 417 and the two spike samples were prepared using the same procedure. Importantly, our cryo-EM analysis is consistent with our extensive biochemical and functional approaches. These varied experimental methods complement one another, making this study one of the most thorough in examining the conformation of SARS-CoV-2 spike.\n\n## Discussion\n\nWe previously described a unique feature of the prototypic SARS-CoV-2 spike protein: it is present as a mixture of open and closed conformations (Shang et al., 2020b). Building on this discovery, this study demonstrates that the conformation of SARS-CoV-2 spike is regulated, at least in part, by a structural switch. Additionally, this research sheds light on the roles of the conformational changes in the spike\u2019s functions. These findings have implications for the structure, function, and evolution of coronavirus spikes, as well as for the present and potential future coronavirus infections.\n\nHow has SARS-CoV-2 spike evolved to reach a balance of open and closed conformations? Through comparative studies of SARS-CoV-2 and SARS-CoV-1 spikes, we identified a molecular switch, RBD residue 417, that regulates the conformational changes of SARS-CoV-2 spike. Lys417 in the closed SARS-CoV-2 spike forms a hydrogen bond with another spike subunit, stabilizing the closed spike. In contrast, Val417 in SARS-CoV-1 spike cannot form such a hydrogen bond with another spike subunit, unable to stabilize the closed spike. When we introduced the K417V mutation to SARS-CoV-2 spike, more spike molecules turned open. Interestingly, Lys417 in the RBD of SARS-CoV-2 spike also directly interacts with ACE2, and we showed that the K417V mutation reduced the RBD\u2019s binding affinity for ACE2. Hence, the K417V mutation has opposing effects on the RBD and the spike for their binding to ACE2. The net outcomes of the K417 mutation are to enhance the spike\u2019s overall binding to ACE2 and the spike\u2019s capability to mediate viral entry.\n\nBesides residue 417, there are likely other molecular factors that influence the opening and closing of SARS-CoV-2 spike. Studies have shown that N-linked glycans on the spike and fatty acids bound to the spike both play a role in regulating its conformation (Toelzer et al., 2020; Sztain et al., 2021). As for protein-based factors, a D614G mutation that emerged later in the pandemic caused SARS-CoV-2 spike to favor the open conformation (Yurkovetskiy et al., 2020; Ozono et al., 2021). Furthermore, our earlier research indicated that three lysine residues kept SARS-CoV-2 Omicron spike in the open conformation (Ye et al., 2022). It is worth noting that residue 417 itself has been a mutational hotspot in SARS-CoV-2 spike; in some pre-Omicron variants, it changed to either asparagine or threonine, and in most Omicron subvariants, it became asparagine (Figure 1C). Given that the side chains of Asn417 and Thr417 might be too short to form a direct interaction with another spike subunit, the mutations at residue 417 could have influenced the conformation of the spike in subsequent SARS-CoV-2 variants. Nevertheless, this study focuses on prototypic SARS-CoV-2, offering comprehensive structural, biochemical, and functional data that pinpoint residue 417 as a key determinant in regulating the conformation of the prototypic spike. The molecular switch at residue 417 could have been a factor in the onset of the COVID-19 pandemic, as discussed below.\n\nHow does the conformation of SARS-CoV-2 spike influence both viral entry and immune evasiveness? Our study shows that, compared to its closed form, the open spike is more effective at binding to ACE2 and facilitating viral entry. This could enhance SARS-CoV-2\u2019s ability to infect and spread among humans. We also found that certain epitopes on the RBD are accessible only in the open spike, allowing them to be targeted by neutralizing conventional antibodies and even compact single-domain nanobodies. This suggests the virus can efficiently evade hosts' immune defenses. The virus' ability to switch between open and closed spike conformations may be key to its balance of infectiousness and evasion of immunity. This delicate balance might explain the often mild symptoms and subdued, delayed immune reactions observed in SARS-CoV-2 carriers. In comparison, SARS-CoV-1 spike predominantly assumes the open conformation (89% open and 11% closed) (Gui et al., 2017), potentially leading to more pronounced symptoms and quicker, stronger immune reactions in those infected. Conversely, NL63-CoV spike remains closed (100% closed) (Walls et al., 2016), possibly resulting in even milder symptoms and more muted immune responses. Therefore, SARS-CoV-2\u2019s blend of infectiousness and evasive abilities, differing from both the highly pathogenic SARS-CoV-1 and the milder NL63-CoV, might be a factor in its widespread transmission.\n\nTo summarize, Lys417 in SARS-CoV-2 spike aids in keeping the spike closed, potentially hindering ACE2 binding and viral entry, but providing an edge in immune evasion. Simultaneously, Lys417\u2019s direct interaction with human ACE2 boosts ACE2 binding and viral entry, counteracting the limitations of the closed spike. This interesting mechanism helps SARS-CoV-2 maintain a delicate balance between infectiousness and evading host immune response.\n\n## Materials and methods\n\n### Cell lines and plasmids\n\nHEK293T cells (American Type Culture Collection [ATCC]) were grown in Dulbecco\u2019s modified Eagle medium (containing 10% fetal bovine serum, 2 mM l-glutamine, 100 units/mL penicillin, and 100 \u00b5g/mL streptomycin). 293F cells (Thermo Fisher) were grown in FreeStyle 293 Expression Medium (Thermo Fisher). Both mammalian cells were authenticated by ATCC using STR profiling and were also tested for mycoplasma contamination. No commonly misidentified cell lines were used.\n\nAll of the protein constructs in this study were cloned into pcDNA 3.1(+) vector (Life Technologies). Prototypic SARS-CoV-2 spike (GenBank accession number QHD43416.1) and human ACE2 (GenBank accession number NM_021804) were synthesized (GenScript Biotech) and cloned into the vector containing a C-terminal C9 tag. Prototypic SARS-CoV-2 spike ectodomain (residues 1\u20131211) was cloned into the vector containing either Lys417 or Val417, in addition to six mutations in S2 (F817P, A892P, A899P, A942P, K986P, V987P) (Hsieh et al., 2020; Ye et al., 2022), furin motif mutations (R682A, R683G, R685G) (Shang et al., 2020b), a C-terminal foldon trimerization tag, and a C-terminal His6-tag. SARS-CoV-2 spike RBD (residues 319\u2013535) was cloned into the vector containing either Lys417 or Val417, an N-terminal tPA signal peptide, and a C-terminal His6-tag. Human ACE2 ectodomain (residues 1\u2013615) was cloned into the vector containing either a C-terminal His6-tag or Fc-tag.\n\n### Comparison of residue 417 from representative SARS-CoV-2 variants\n\nThe spike sequences of representative SARS-CoV-2 variants were retrieved from https://www.who.int/activities/tracking-SARS-CoV-2-variants.\n\n### Protein expression and purification\n\nAll of the recombinant proteins were expressed in 293F cells (Thermo Fisher) using a FreeStyle 293 mammalian cell expression system (Life Technologies) as previously described (Wan et al., 2020b). In brief, the His-tagged proteins were collected from cell culture medium, purified using a Ni-NTA column (Cytiva Healthcare), and purified further using a Superdex gel filtration column (Cytiva Healthcare). The Fc-tagged protein was purified in the same way as the His-tagged proteins, except that a protein A column replaced the Ni-NTA column in the procedure.\n\n### Protein pull-down assay\n\nProtein pull-down assay was performed using a Dynabeads immunoprecipitation kit (Invitrogen) as previously described (Shang et al., 2020b). Briefly, 10 \u03bcL of Dynabeads, either for His6-tagged proteins or for Fc-tagged proteins, were washed with PBS buffer and then were incubated with either 8 \u03bcg ACE2-His (human ACE2 with a C-terminal His6 tag) or 10 \u03bcg ACE2-Fc (human ACE2 with a C-terminal Fc tag). Subsequently, ACE2-bound beads were washed with PBS buffer plus 0.05% Tween-20 (PBST) and then were aliquoted into different tubes for later use. To prepare cell-associated SARS-CoV-2 spike (containing either Lys417 or Val417), HEK293T cells were transfected with pcDNA3.1(+) plasmid encoding the full-length spike (containing a C-terminal C9 tag). 48 hr after transfection, the spike-expressing cells were lysed in immunoprecipitation assay buffer using a sonicator and then centrifuged. The supernatants containing the solubilized cell-membrane-associated spike were incubated with the ACE2-bound beads (ACE2 was in excess of spike). The beads were then washed with PBST buffer, and the bound spike was eluted using elution buffer. The samples were then subjected to western blot analysis and detected using anti-C9-tag antibody (Thermo Fisher).\n\n### Flow cytometry\n\nFlow cytometry was performed to detect the interactions between recombinant human ACE2 and cell-surface-expressed full-length SARS-CoV-2 spike (containing either Lys417 or Val417 and containing either intact furin motif or inactivated furin motif). The procedure was carried out as previously described (Maeda et al., 2022; Zhang et al., 2020). Briefly, the plasmids encoding one of the C9-tagged SARS-CoV-2 spikes or vector (pcDNA3.1(+)) itself were transfected into HEK293T cells. After 36 hr, the cells were harvested and incubated with recombinant Fc-tagged human ACE2 (25 \u00b5g/mL) on ice for 1 hr. After three washes with PBS (containing 1% BSA), the cells were incubated with Alexa Fluor 488 anti-human-IgG-Fc antibody (1:500) (BioLegend Inc) and PE-labeled anti-C9-tag antibody (1:500) (Santa Cruz Biotechnology) on ice for another hour. After more washes, the cells were fixed with 4% formaldehyde. The fluorescence intensities of the cells were measured using flow cytometry (BD FACSymphony A3 cell analyzer).\n\nFlow cytometry was also performed to detect the interactions between SARS-CoV-2 RBD (containing either Lys417 or Val417) and cell-surface-expressed human ACE2. Briefly, HEK293T cells stably expressing human ACE2 were constructed as previously described (Shang et al., 2018; Geng et al., 2021). These cells were incubated with one of the recombinant His-tagged SARS-CoV-2 RBDs (10 \u00b5g/mL) or buffer only on ice for 1 hr. After three washes with PBS (containing 1% BSA), the cells were incubated with PE-labeled anti-His-tag antibody (1:500) (Santa Cruz Biotechnology) on ice for another hour. After more washes, the cells were fixed with 4% formaldehyde, and the fluorescence intensity of the cells was measured using flow cytometry.\n\n### Pseudovirus entry\n\nPseudoviruses were packaged as previously described (Peng et al., 2017). Briefly, pcDNA3.1(+) plasmid encoding the full-length SARS-CoV-2 spike (containing either Lys417 or Val417) was co-transfected into HEK293T cells with helper plasmid psPAX2 and reporter plasmid plenti-CMV-luc at a molar ratio of 1:1:1 using Lipofectamine 3000 (Life Technologies). The produced pseudoviruses were harvested 72 hr post transfection and then were used to enter HEK293T cells stably expressing human ACE2. After incubation at 37\u00b0C for 5 hr, medium was replaced and cells were incubated for an additional 48 hr. Cells were then washed with PBS and lysed. Aliquots of cell lysates were transferred to Optiplate-96 (PerkinElmer), followed by addition of luciferase substrate. Relative light units (RLUs) were measured using EnSpire plate reader (PerkinElmer). Meanwhile, the amounts of pseudovirus-packaged spikes were measured by western blot using anti-C9-tag antibody and then quantified using Fiji (https://imagej.net/). The RLUs were then normalized against the amounts of pseudovirus-packaged spikes.\n\n### Western blot\n\nCells or pseudoviruses were mixed with SDS loading buffer and then were incubated at 95\u00b0C for 10 min. Samples were run in a 10% SDS Tris-Glycine Gel and transferred to a PVDF membrane. Anti-C9-tag or anti-His-tag monoclonal primary antibody (1:1000) (Santa Cruz Biotech) and horseradish peroxidase-conjugated mouse secondary antibody (1:10,000) (Jackson Laboratory) were used for western blotting. LAS-4000 imager (Cytiva Healthcare) was used to develop images.\n\n### Cryo-EM grid preparation and data acquisition\n\nThe recombinant spike ectodomain (containing either Lys417 or Val417) (4 \u00b5L at 10.3\u201311.5 \u03bcM) was applied to freshly glow-discharged Quantifoil R1.2/1.3 300-mesh copper grids (EM Sciences), and then blotted for 4 s at 22\u00b0C under 100% chamber humidity and plunge-frozen in liquid ethane using a Vitrobot Mark IV (FEI). Cryo-EM data were collected using Latitude-S (Gatan) on a Titan Krios electron microscope (Thermo Fisher) equipped with a K3 direct electron detector with a Biocontinuum energy filter (Gatan) in counting mode at the Hormel Institute, University of Minnesota. The movies were collected at a nominal magnification of 130,000\u00d7 (corresponding to 0.664 \u00c5 per pixel), a 20 eV slit width, a dose rate of 20 e- per \u00c52 per second, and a total dose of 40 e-/\u00c52. The statistics of cryo-EM data collection are summarized in Supplementary file 1.\n\n### Image processing\n\nCryo-EM data were processed using cryoSPARC v4.0.3 (Punjani et al., 2017), and the data processing procedures are outlined in Figure 2\u2014figure supplements 1 and 2. Dose-fractionated movies were first subjected to patch motion correction with data downsampled by 4/3 (0.885333 \u00c5/pixel after downsampling) and patch CTF estimation with MotionCor2 (Rubinstein and Brubaker, 2015) and CTFFIND-4.1.13 (Rohou and Grigorieff, 2015), respectively. Images with the defocus values outside of \u20130.8 to \u20132.4 \u03bcm or the CTF fit resolutions worse than 6 \u00c5 were excluded from further steps. Particles were picked using both Blob picker and Template picker accompanied by removing duplicate particles. Three rounds of 2D classifications were applied to remove junk particles, and good particles (57,795 or 45,999) extracted from the good 2D classes were used for ab initio reconstruction of three maps and then for the heterogeneous refinements. The good 3D class (42,970 or 29,596 particles) was finally subjected to further homogeneous, non-uniform, and CTF refinements to generate a 3.4 \u00c5 or 3.7 \u00c5 resolution map.\n\nParticles in the good 3D classes were then imported into RELION-4.0 (Zivanov et al., 2020) using the csparc2star.py module (UCSF pyem v0.5. Zenodo) and subjected to signal subtraction to keep only the mixed-state receptor-binding subunit of the spike, followed by masked 3D classification. Particles in the two different classes from the masked 3D classification were then reverted to the original particles and subjected to non-uniform refinements in cryoSPARC v3.3.2. The C3 symmetry was applied for the maps with the closed state RBD. Map resolution was determined by gold-standard Fourier shell correlation (FSC) at 0.143 between the two half-maps. Local resolution variation was estimated from the two half-maps in cryoSPARC v4.0.3.\n\n### Model building and refinement\n\nInitial model building of the prototypic SARS-CoV-2 spike was performed in Coot-0.8.9 (Emsley and Cowtan, 2004) using PDBs 7TGX and 7TGY as the starting models. Several rounds of refinement in Phenix-1.16 (Adams et al., 2010) and manually building in Coot-0.8.9 were performed until the final reliable models were obtained. The final model has good stereochemistry as evaluated by MolProbity (Chen et al., 2010). The statistics of 3D reconstruction and model refinement are shown in Supplementary file 1. Figures were generated using UCSF Chimera X v0.93 (Goddard et al., 2018).\n\nIn this study, both open spikes have only one RBD standing up and two RBDs lying down. This finding aligns with the results of several other structural studies on SARS-CoV-2 spike (Walls et al., 2020; Xiong et al., 2020; Cai et al., 2020). However, some other studies have reported instances of open SARS-CoV-2 spike with either two or three RBDs standing up (Benton et al., 2021; Yurkovetskiy et al., 2020). The cause for this discrepancy is unclear, but could be due to different sample preparations and/or protein constructions.\n",
+      "created_at": "2025-12-04T03:49:49.478392Z"
+    },
+    {
+      "id": "c5a58c5e-0bbe-4f7f-bcce-0721d2ca1178",
+      "submission_id": "13c6d71f-4430-4936-938c-6cd7d26ea6fd",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Lejla Zubcevic, https://ror.org/001tmjg57 University of Kansas Medical Center United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.74060.sa0](https://doi.org/10.7554/eLife.74060.sa0)\n\nIn this valuable study, Li et al. identify a molecular switch within the SARS-CoV-1/2 spike proteins, in position 417. Based on comparisons between CoV-1 and CoV-2 sequences, the authors propose that the nature of the residue of this position determines whether the spike favors a closed or an open conformation. The authors present solid cryo-EM and biochemical data in support of their hypothesis. The paper will be of general interest to those interested in molecular mechanisms of viral infection by SARS-CoV-2 and other coronaviruses.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Lejla Zubcevic, https://ror.org/001tmjg57 University of Kansas Medical Center United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.74060.sa1](https://doi.org/10.7554/eLife.74060.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Molecular switches regulating the potency and immune evasiveness of SARS-CoV-2 spike protein\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, including Lejla Zubcevic as Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Jos\u00e9 Faraldo-G\u00f3mez as Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Yi Ren (Reviewer #3).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\nAll reviewers agreed that this is a well-executed study with significant findings. However, we agreed that a few revisions should be made prior to publication. We have compiled the list of requests, comments, and questions below.\n\n1. In order to be able to comment on the molecular mechanism of close-to-open transition, the authors need to look at atomic models of the RBD captured in both closed and open states. The reviewers would like the authors to submit an open RBD structure. The data for this should already exist (4.6A K417V/furin motif deletion mutant 3D reconstruction presented in figure 2C). To get an idea of the general mechanism of the closed-to-open transition, the authors could build a (where appropriate, side chain-less model) of the 4.6A K417V/furin motif deletion mutant, for which the data already exists.\n\n2. We would encourage both a comparison with the FnM-deletion (100% closed) structure and an internal comparison between the open and closed protomers in the \"open\" structure to gain an insight into the mechanism.\n\n3. The way it is explained in the methods, it would appear that only the highest resolution class is taken into consideration when the percentage occupancies are calculated for the open and closed states. We are not convinced that this is the most appropriate way to analyze the data because it is inherently biased towards more structurally stable classes. Other open conformations might exist at lower resolutions. Ideally, the state occupancy percentages should be based on the total particle count. For example, assuming that the open conformation is more unstable than the closed one, the real distribution could be 90% open and 10% closed, where only the 10% are selected and contribute to the high resolution reconstruction. In this case, it'd be wrong to say that 100% of the particles are in the closed conformation when the data actually says that 100% of the high resolution particles (and 10% of the total) are in the closed conformation. At the very least, the authors should discuss this aspect of data analysis and explain the implications for their hypothesis.\n\n4. The authors should create a figure that explains their cryo-EM workflow for analysis in detail (representative micrograph, 2D classification, 3D classifications, etc). This figure should also contain local resolution plots and Euler angle distribution plots.\n\n5. The PDB validation and visual inspection of maps indicates that lots of residues/regions do not fit the map very well. Lots of side chains were built with no density supporting them. We encourage the authors to go back to these models and a. remove segments of the model that are not supported by experimental density and b. re-build the backbone of the protein in parts of the protein where it does not fit the density well. This is particularly an issue because the authors discuss interaction networks in regions with poor density (Lys417 and it's interaction partner are part of this region too). As requested in point 4, a local resolution plot of the 3D model will also come in handy for the readers here to easily estimate the accuracy of the map in different regions of the protein.\n\n6. The authors do not show a WT control in their mouse immunization experiments (figure 5). This control should be included.\n\n7. The authors should comment on why we only observe one RBD in the up conformation, despite point mutations, especially Lys417Ala, being introduced to all 3 protomers? Are there factors that might be missing from the experimental system that might play a role in stabilizing the \"fully open\" i.e. all 3 RBDs in the up conformation.\n\n8. Is there co-operativity in the trimer? E.g., does releasing one RBD change the open-to-closed equilibrium for the other two? And do the furin motif and the salt bridge act independently of each other?\n\n9. The WT SARS-CoV-2 (containing the FnM) still performs better than the point mutant (FnM-point) in virus entry assays, suggesting that the charges within the FnM might play an important role. Have the authors created a SARS-CoV-2 with a GSGS-linker for comparison? And SARS-CoV-2 with the Arg replaced with Lys (which wouldn't be cleaved by furin)?\n\n10. Is it accurate that the structure of RaTG13-CoV is always in the closed conformation or is this an artefact of experimental conditions? This structure was crosslinked, which could have led to a 100% closed population.\n\n11. Is it known what allows the RaTG13 spike molecule to switch into an open conformation? Are charged residues expected at play in this scenario as well (i.e., does RaTG13 have a lysine residue in the same position as SARS-CoV-2)? For comparison purposes, it would be helpful to know what residue is at the Lys417-equivalent position in RaTG13.\n\n12. How well does the WT SARS-CoV-1 spike construct (controlled for pre-fusion) bind ACE2 and behave in the pseudovirus entry experiment? Is it comparable to the SARS-CoV-2 K417V mutant? If it is, this would suggest that the two major switches for dictating the open/closed confirmations are predominantly due to the presence of the furin motif loop and the salt bridge. If not, this could point to other factors involved in contributing to the conformational differences between SARS-CoV-1 and -2.\n\n13. Lys417 has been identified as important for ACE2 binding. Can the authors comment on this, in the light of this new data.\n\n14. Glycans and fatty acids have also been suggested to play a role in the open-to-closed transition. Can the authors comment on their potential roles in the light of this new data.\n\n15. The illustration of the mechanism of the closed-to-open transition Figure S3A was difficult to interpret. Similarly, the interfaces between S1 and NTD were also difficult to glean from the figure. We would encourage the authors to make two separate figures (or at least, two panels in one figure) to illustrate this better. Also, a surface representation might work better to show the interface between S1 and NTD.\n\n16. Could the authors include more spike structures (i.e. closed form of D614G) for comparing the interfaces in Figure S3? Spike proteins features extensive conformational heterogeneity. Even within the same category of open or closed spike, further classification generates slightly different structures. It is not entirely clear what level of changes is significant.\n\n17. Line 99-101: The authors should quote A. C. Walls et al., Structure, Function, and Antigenicity of the SARS-CoV-2 Spike Glycoprotein. Cell, (2020).\n\n18. Line 136-137: Reference for the double proline/C-term foldon.\n\n19. It would be helpful to include expected molecular masses in the legends of Figures 1C, 3B and 4B where expected bands should appear.\n\n20. It would be very helpful to include a table of experimental outcomes that includes the protein conformations of all WT proteins (CoV-1, CoV-2, and RaTG13) and mutants, a summary of ACE2 binding and pseudovirus entry.\n\n21. In line 441, is \"26,126 particles\" correct? This number seems to refer to particles selected from 2D for the entire dataset.\n\nReviewer #1 (Recommendations for the authors):\n\nThe conformation of the SARS-CoV-2 spike protein receptor binding domain (RBD) has implications for binding to the host cell surface receptor: the open conformation is required for binding, but it also makes the virus more likely to be detected by the host's immune system. SARS-CoV-2 spike protein RBD has been observed with equal probability in both open and closed conformations but the mechanism of the transition from the closed to the open state is not known.\n\nHere, Wan et al. present data that suggests that the flexible linker between S1 and S2, which contains a furin binding motif, is an important factor in facilitating this transition.\n\nImportantly, the authors' findings suggest that it is not the furin motif itself but the flexible linker that facilitates the transition to the open conformation.\n\nThe study stretches from basic biochemistry to structural biology to in vivo experiments. However, the work can be strengthened by some additional data, data analysis and improved presentation of the structural biology section. In addition, some clarification regarding the in vivo data is required.\n\nThe authors present an interesting hypothesis that by being equally able to occupy the open and closed RBD conformations, SARS-Cov-2 has evolved to have high viral potency as well as successfully evade the host immune response. This is an interesting insight into viral evolution which may lead to novel avenues for future research.\n\nI have the following comments:\n\n1. To be able to comment on the molecular mechanism of close-to-open transition, the authors need to look at atomic models of the RBD captured in both closed and open states. The reviewers would like the authors to submit an open RBD structure. The data for this should already exist (4.6A K417V/furin motif deletion mutant 3D reconstruction presented in figure 2C). To get an idea of the general mechanism of the closed-to-open transition, the authors could build a (where appropriate, side chain-less model) of the 4.6A K417V/furin motif deletion mutant, for which the data already exists.\n\n2. The authors should compare the open RBD structure with the FnM-deletion (100% closed) structure. In addition, they should make an internal comparison between the open and closed protomers in the \"open\" structure to gain an insight into the mechanism.\n\n3. The way it is explained in the methods, only the highest resolution class is taken into consideration when the percentage occupancies are calculated for the open and closed states. This approach is inherently biased towards more structurally stable classes. Other open conformations might exist at lower resolutions. Ideally, the state occupancy percentages should be based on the total particle count.\n\nFor example, assuming that the open conformation is more unstable than the closed one, the real distribution could be 90% open and 10% closed, where only the 10% are selected and contribute to the high-resolution reconstruction. In this case, it'd be wrong to say that 100% of the particles are in the closed conformation when the data actually says that 100% of the high-resolution particles (and 10% of the total) are in the closed conformation. At the very least, the authors should discuss this aspect of data analysis and explain the implications for their hypothesis.\n\n4. The authors should create a figure that explains their cryo-EM workflow for analysis in detail (representative micrograph, 2D classification, 3D classifications, etc). This figure should also contain local resolution plots and Euler angle distribution plots.\n\n5. The PDB validation and visual inspection of maps indicates that lots of residues/regions do not fit the map very well. Lots of side chains were built with no density supporting them. The authors should: a. remove segments of the model that are not supported by experimental density and b. re-build the backbone of the protein in parts of the protein where it does not fit the density well. This is particularly an issue because the authors discuss interaction networks in regions with poor density (Lys417 and its interaction partner are part of this region too).\n\n6. The authors do not show a WT control in their mouse immunization experiments (figure 5). This control should be included.\n\n7. The authors should discuss the Lys417 residue and its involvement in ACE2 binding.Reviewer #2 (Recommendations for the authors):\n\nWan et al., investigate some of the major structural differences between the SARS-CoV-1, SARS-CoV-2, and RaTG13-CoV spike proteins to better understand why SARS-CoV-2 led to a global pandemic in humans. In particular, the study focuses on the SARS-CoV-2 spike (S) protein in the pre-fusion conformation, used by the virus to bind and enter host cells. The pre-fusion conformation of the S protein is known to have either open, closed or a mixture of open/closed conformations within the receptor-binding domain (RBD), depending on the type of coronavirus. The SARS-CoV-2 RBD is found in both the open and closed conformations while SARS-CoV-1 and RaTG13-CoV are found in the open and closed, respectively. The authors investigate the contributions of two unique structural features of the SARS-CoV-2 S protein, a furin binding motif within a loop as well as a lysine residue (position 417), to understand the observed mixture of conformations. Using a combination of mutational analyses, biochemical assays, structural studies, and mouse models, the authors show that both structural motifs (the furin loop and lysine residue) contribute to the ability of the protein to switch between the open and closed conformations. Furthermore, this switching between conformations most likely contributes to the effectiveness of SARS-CoV-2 establishing widespread infections in humans. Overall, this very interesting study is well conducted and will aid in the development of additional SARS-CoV-2 studies, as well as inform how other coronaviruses may employ the same strategies.\n\nComments:\n\n1) It would be important to know how well the WT SARS-CoV-1 spike construct (controlled for pre-fusion) binds ACE2 and behaves in the pseudovirus entry experiment. Is it comparable to the SARS-CoV-2 K417V mutant? If it is, this would suggest that the two major switches for dictating the open/closed confirmations are predominantly due to the presence of the furin motif loop and the salt bridge. If not, this could point to other factors involved in contributing to the conformational differences between SARS-CoV-1 and -2.Reviewer #3 (Recommendations for the authors):\n\nIn this work, the authors have aimed to identify molecular switches regulating the conformations of SARS-CoV-2 spike protein and to investigate their effects on the potency and immune evasiveness of SARS-CoV-2. The authors have identified two such molecular switches, the furin motif and the K417 residue at the interface of the RBD domains in closed spike. The strength of the work is the comprehensive approach (SARS-CoV-2/RaTG13-CoV engineering, ACE2 binding, cryo-EM, pseudovius entry assays, etc). The authors clearly demonstrate the effects of furin motif and K417 on the ratios of open and closed spikes, and consistently, on ACE2 binding and pseudovirus entry. The correlation between spike conformations and immune evasiveness is an intriguing observation, although it remains to be more vigorously tested in future studies.\n\n[Editors\u2019 note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Lys417 acts as a molecular switch that regulates the conformation of SARS-CoV-2 spike protein\" for further consideration by eLife. Your revised article has been evaluated by Diane Harper (Senior Editor) and a Reviewing Editor.\n\nThe manuscript has been improved but there are some remaining issues that need to be addressed, as outlined below:\n\nReviewer #1 (Recommendations for the authors):\n\nHere, Li et al. identify a molecular switch within the SARS-CoV-1/2 spike proteins, in position 417. Based on comparisons between CoV-1 and CoV-2 sequences, the authors propose that the nature of the residue of this position determines whether the spike favors a closed or an open conformation. The authors present cryo-EM and biochemical data in support of their hypothesis. The paper will be of general interest to those interested in molecular mechanisms of viral infection by SARS-CoV-2 and other coronaviruses.\n\nThe authors have submitted a streamlined and improved manuscript. I only have a few comments to add.\n\n\u2013 My main concern is that the word \"affinity\" is not used properly in some parts of the paper. For example, in the abstract, the authors state \"The net outcomes of this (K417V) mutation are to allow the spike to bind ACE2 more tightly\u2026\". This is not really what the data says- the mutation seems to increase the probability of \"open\" spike and therefore increases the probability of spike binding. In fact, the data shows that K417V binds less tightly to ACE2 than K417.\n\nIn lines 116-118 the authors write \"It has been shown that ACE2 only binds to the standing-up RBD in the open spike (28, 33), suggesting that open spike binds to ACE2 with higher affinity than the closed spike.\" A more accurate statement would be that the open spike conformation is necessary for ACE2 binding.\n\nThis continues in lines 127-129 \"The pull-down result showed that compared to K417-spike, more V417-spike molecules had been pulled down by ACE2, suggesting that V417-spike has a higher affinity for ACE2 (Figure 3A).\" This experiment does not say anything about binding affinity, but it does suggest that the binding probability between the spike protein and ACE2 is increased in V417.\n\nIn the summary of findings in lines 184-187: \"it weakens the RBD's ability to bind to ACE2 by eliminating a favorable interaction at the RBD/ACE2 interface, but it strengthens the trimeric spike's binding affinity for ACE2 by enabling more spike molecules to assume the open conformation.\" A more accurate statement would be that the V417 increases the probability of binding to ACE2 because it increases the probability of the open spike conformation.\n",
+      "created_at": "2025-12-04T03:49:49.478392Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T03:49:49.478392Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T03:49:49.478392Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "a238ac85-cb91-4226-9fa2-ded56e66b213",
+      "content_id": "6516612d-f41d-47e9-995d-f11aae965104",
+      "claim_id": "C1",
+      "claim": "SARS-CoV-2 spike protein plays a key role in mediating viral entry and inducing host immune responses.",
+      "claim_type": "EXPLICIT",
+      "source": "SARS-CoV-2 spike protein plays a key role in mediating viral entry and inducing host immune responses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about spike protein function supported by established scientific knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:49:49.478392Z"
+    },
+    {
+      "id": "aa8a2185-45d9-4b1f-9c25-0c0fe56a397b",
+      "content_id": "6516612d-f41d-47e9-995d-f11aae965104",
+      "claim_id": "C2",
+      "claim": "SARS-CoV-2 spike protein can adopt either an open or closed conformation based on the position of its receptor-binding domain (RBD).",
+      "claim_type": "EXPLICIT",
+      "source": "It can adopt either an open or closed conformation based on the position of its receptor-binding domain (RBD).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by structural data and cryo-EM analysis presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:49:49.478392Z"
+    },
+    {
+      "id": "c39822e3-a6e7-4745-a201-607766b5dceb",
+      "content_id": "6516612d-f41d-47e9-995d-f11aae965104",
+      "claim_id": "C3",
+      "claim": "Lys417 in the RBD stabilizes the closed conformation of the trimeric spike by mediating inter-spike\u2013subunit interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "it stabilizes the closed conformation of the trimeric spike by mediating inter-spike\u2013subunit interactions",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by structural analysis and cryo-EM data showing hydrogen bonding interactions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:49:49.478392Z"
+    },
+    {
+      "id": "5f11219b-83aa-46a8-a9ec-38a2f6d55d40",
+      "content_id": "6516612d-f41d-47e9-995d-f11aae965104",
+      "claim_id": "C4",
+      "claim": "Lys417 directly interacts with ACE2 receptor.",
+      "claim_type": "EXPLICIT",
+      "source": "it also directly interacts with ACE2 receptor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by structural data showing salt bridge formation between Lys417 and Asp30 in ACE2.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:49:49.478392Z"
+    },
+    {
+      "id": "f08fce75-4f05-44ed-a0e7-9d9b01215da4",
+      "content_id": "6516612d-f41d-47e9-995d-f11aae965104",
+      "claim_id": "C5",
+      "claim": "A K417V mutation opens up the spike for better ACE2 binding.",
+      "claim_type": "EXPLICIT",
+      "source": "a K417V mutation has opposing effects on the spike's function: it opens up the spike for better ACE2 binding while weakening the RBD's direct binding to ACE2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cryo-EM data showing increased proportion of open conformation and flow cytometry data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:49:49.478392Z"
+    },
+    {
+      "id": "921705bf-3551-441c-aa77-8a9dc4b118ef",
+      "content_id": "6516612d-f41d-47e9-995d-f11aae965104",
+      "claim_id": "C6",
+      "claim": "A K417V mutation weakens the RBD's direct binding to ACE2.",
+      "claim_type": "EXPLICIT",
+      "source": "a K417V mutation has opposing effects on the spike's function: it opens up the spike for better ACE2 binding while weakening the RBD's direct binding to ACE2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by flow cytometry data showing reduced binding affinity of V417-RBD to ACE2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:49:49.478392Z"
+    },
+    {
+      "id": "4133b709-42b6-4d27-9667-a32d826cdb7e",
+      "content_id": "6516612d-f41d-47e9-995d-f11aae965104",
+      "claim_id": "C7",
+      "claim": "The K417V mutation allows the spike to bind ACE2 with higher probability.",
+      "claim_type": "EXPLICIT",
+      "source": "The net outcomes of this mutation are to allow the spike to bind ACE2 with higher probability and mediate viral entry more efficiently, but become more exposed to neutralizing antibodies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by pull-down assays and flow cytometry showing increased ACE2 binding by V417-spike.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:49:49.478392Z"
+    },
+    {
+      "id": "37c99573-fcf6-463a-9171-95c68c9bf23d",
+      "content_id": "6516612d-f41d-47e9-995d-f11aae965104",
+      "claim_id": "C8",
+      "claim": "The K417V mutation allows the spike to mediate viral entry more efficiently.",
+      "claim_type": "EXPLICIT",
+      "source": "The net outcomes of this mutation are to allow the spike to bind ACE2 with higher probability and mediate viral entry more efficiently, but become more exposed to neutralizing antibodies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by pseudovirus entry assays showing enhanced entry efficiency.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:49:49.478392Z"
+    },
+    {
+      "id": "2bb0b55c-3503-4ea8-a9d5-84b29caed073",
+      "content_id": "6516612d-f41d-47e9-995d-f11aae965104",
+      "claim_id": "C9",
+      "claim": "The K417V mutation makes the spike become more exposed to neutralizing antibodies.",
+      "claim_type": "EXPLICIT",
+      "source": "The net outcomes of this mutation are to allow the spike to bind ACE2 with higher probability and mediate viral entry more efficiently, but become more exposed to neutralizing antibodies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from structural analysis showing that open conformation exposes more neutralizing epitopes.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:49:49.478392Z"
+    },
+    {
+      "id": "ea2a95e4-603f-4cc9-ae18-eeda2aed2beb",
+      "content_id": "6516612d-f41d-47e9-995d-f11aae965104",
+      "claim_id": "C10",
+      "claim": "Residue 417 has been a viral mutational hotspot.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that residue 417 has been a viral mutational hotspot, SARS-CoV-2 may have been evolving to strike a balance between infection potency and immune evasion, contributing to its pandemic spread.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by comparison of SARS-CoV-2 variants showing mutations at position 417.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:49:49.478392Z"
+    },
+    {
+      "id": "866555a9-937d-4971-b038-a461ac78bdaf",
+      "content_id": "6516612d-f41d-47e9-995d-f11aae965104",
+      "claim_id": "C11",
+      "claim": "SARS-CoV-2 may have been evolving to strike a balance between infection potency and immune evasion.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that residue 417 has been a viral mutational hotspot, SARS-CoV-2 may have been evolving to strike a balance between infection potency and immune evasion, contributing to its pandemic spread.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation based on the functional data regarding K417V mutation effects.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:49:49.478392Z"
+    },
+    {
+      "id": "3f1e275c-9bcd-4f36-b110-67138d1a69e7",
+      "content_id": "6516612d-f41d-47e9-995d-f11aae965104",
+      "claim_id": "C12",
+      "claim": "SARS-CoV-1 caused a much smaller outbreak in 2002\u20132003 than SARS-CoV-2.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, a virulent and lethal coronavirus, SARS-CoV-1, caused a much smaller outbreak in 2002\u20132003 (Lee et al., 2003; Peiris et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published literature on SARS-CoV-1 outbreak.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:49:49.478392Z"
+    },
+    {
+      "id": "8dea4533-600f-4ef2-8822-9891cd7020cf",
+      "content_id": "6516612d-f41d-47e9-995d-f11aae965104",
+      "claim_id": "C13",
+      "claim": "NL63-CoV causes common colds annually.",
+      "claim_type": "EXPLICIT",
+      "source": "Numerous human coronaviruses such as NL63-CoV cause common colds annually (Fouchier et al., 2004; van der Hoek et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published literature on NL63-CoV.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:49:49.478392Z"
+    },
+    {
+      "id": "d332fd8f-0230-419a-9c62-5e6c33ed752e",
+      "content_id": "6516612d-f41d-47e9-995d-f11aae965104",
+      "claim_id": "C14",
+      "claim": "SARS-CoV-2 has an intermediate virulence compared to SARS-CoV-1 and NL63-CoV.",
+      "claim_type": "EXPLICIT",
+      "source": "With an intermediate virulence, SARS-CoV-2 causes a fatality rate that is significantly lower than that of SARS-CoV-1, but much higher than that of NL63-CoV.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge about the relative pathogenicity of these viruses.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:49:49.478392Z"
+    },
+    {
+      "id": "c391eb61-5bd8-4783-b537-b6a77e866718",
+      "content_id": "6516612d-f41d-47e9-995d-f11aae965104",
+      "claim_id": "C15",
+      "claim": "SARS-CoV-2 carriers may develop mild or no symptoms.",
+      "claim_type": "EXPLICIT",
+      "source": "Because of its intermediate virulence, SARS-CoV-2 carriers show clinical signs that facilitate the spread of the virus: they may develop mild or no symptoms, experience delayed onset of symptoms, develop low levels of neutralizing antibodies, or endure prolonged virus shedding period (Wu et al., 2020; Zhou et al., 2020; W\u00f6lfel et al., 2020; Gao et al., 2020; Kronbichler et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published clinical studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:49:49.478392Z"
+    },
+    {
+      "id": "31414210-dc6c-4614-9051-a1b668b19984",
+      "content_id": "6516612d-f41d-47e9-995d-f11aae965104",
+      "claim_id": "C16",
+      "claim": "SARS-CoV-2 carriers may experience delayed onset of symptoms.",
+      "claim_type": "EXPLICIT",
+      "source": "Because of its intermediate virulence, SARS-CoV-2 carriers show clinical signs that facilitate the spread of the virus: they may develop mild or no symptoms, experience delayed onset of symptoms, develop low levels of neutralizing antibodies, or endure prolonged virus shedding period (Wu et al., 2020; Zhou et al., 2020; W\u00f6lfel et al., 2020; Gao et al., 2020; Kronbichler et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published clinical studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:49:49.478392Z"
+    },
+    {
+      "id": "0e1fb8da-e29d-4ad0-9c2b-a77e629906d8",
+      "content_id": "6516612d-f41d-47e9-995d-f11aae965104",
+      "claim_id": "C17",
+      "claim": "SARS-CoV-2 carriers may develop low levels of neutralizing antibodies.",
+      "claim_type": "EXPLICIT",
+      "source": "Because of its intermediate virulence, SARS-CoV-2 carriers show clinical signs that facilitate the spread of the virus: they may develop mild or no symptoms, experience delayed onset of symptoms, develop low levels of neutralizing antibodies, or endure prolonged virus shedding period (Wu et al., 2020; Zhou et al., 2020; W\u00f6lfel et al., 2020; Gao et al., 2020; Kronbichler et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published clinical studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:49:49.478392Z"
+    },
+    {
+      "id": "2a3b5527-58d9-45a4-9467-6ce19108113f",
+      "content_id": "6516612d-f41d-47e9-995d-f11aae965104",
+      "claim_id": "C18",
+      "claim": "SARS-CoV-2 carriers may endure prolonged virus shedding period.",
+      "claim_type": "EXPLICIT",
+      "source": "Because of its intermediate virulence, SARS-CoV-2 carriers show clinical signs that facilitate the spread of the virus: they may develop mild or no symptoms, experience delayed onset of symptoms, develop low levels of neutralizing antibodies, or endure prolonged virus shedding period (Wu et al., 2020; Zhou et al., 2020; W\u00f6lfel et al., 2020; Gao et al., 2020; Kronbichler et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published clinical studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:49:49.478392Z"
+    },
+    {
+      "id": "0bd4fd3c-a553-4bea-a1a0-eb310784f1fe",
+      "content_id": "6516612d-f41d-47e9-995d-f11aae965104",
+      "claim_id": "C19",
+      "claim": "SARS-CoV-2 spike protein guides viral entry into host cells.",
+      "claim_type": "EXPLICIT",
+      "source": "It guides viral entry into host cells and is also a major target for the host immune responses (Du et al., 2009; Li, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published literature on spike protein function.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:49:49.478392Z"
+    },
+    {
+      "id": "e4d8200d-b349-4d42-8409-61ee51859a89",
+      "content_id": "6516612d-f41d-47e9-995d-f11aae965104",
+      "claim_id": "C20",
+      "claim": "SARS-CoV-2 spike protein is a major target for the host immune responses.",
+      "claim_type": "EXPLICIT",
+      "source": "It guides viral entry into host cells and is also a major target for the host immune responses (Du et al., 2009; Li, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published literature on spike protein immunogenicity.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:49:49.478392Z"
+    },
+    {
+      "id": "6620215b-65ba-4cc4-badf-45a7fb92b03b",
+      "content_id": "6516612d-f41d-47e9-995d-f11aae965104",
+      "claim_id": "C21",
+      "claim": "The trimeric spike protein has a pre-fusion structure in which three receptor-binding S1 subunits sit on top of a trimeric membrane-fusion S2 stalk.",
+      "claim_type": "EXPLICIT",
+      "source": "On newly packaged virus particles, the trimeric spike protein has a pre-fusion structure in which three receptor-binding S1 subunits sit on top of a trimeric membrane-fusion S2 stalk (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by structural data shown in Figure 1A and established knowledge of spike architecture.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:49:49.478392Z"
+    },
+    {
+      "id": "04bfe363-55e4-464b-abcc-a31dc3d76c8f",
+      "content_id": "6516612d-f41d-47e9-995d-f11aae965104",
+      "claim_id": "C22",
+      "claim": "During viral entry, a receptor-binding domain (RBD) in S1 binds to a receptor on host cell surface for viral attachment.",
+      "claim_type": "EXPLICIT",
+      "source": "During viral entry, a receptor-binding domain (RBD) in S1 binds to a receptor on host cell surface for viral attachment and S2 switches to a post-fusion structure for the fusion of viral and host membranes (Li, 2016; Li, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published literature on viral entry mechanisms.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:49:49.478392Z"
+    },
+    {
+      "id": "a08ae779-9464-497d-8b28-dc598ce2d752",
+      "content_id": "6516612d-f41d-47e9-995d-f11aae965104",
+      "claim_id": "C23",
+      "claim": "S2 switches to a post-fusion structure for the fusion of viral and host membranes during viral entry.",
+      "claim_type": "EXPLICIT",
+      "source": "During viral entry, a receptor-binding domain (RBD) in S1 binds to a receptor on host cell surface for viral attachment and S2 switches to a post-fusion structure for the fusion of viral and host membranes (Li, 2016; Li, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published literature on membrane fusion mechanisms.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:49:49.478392Z"
+    },
+    {
+      "id": "59fbe857-75f9-4a1f-928a-ac87ed1c9997",
+      "content_id": "6516612d-f41d-47e9-995d-f11aae965104",
+      "claim_id": "C24",
+      "claim": "SARS-CoV-2, SARS-CoV-1, and NL63-CoV can all use ACE2 as their receptor.",
+      "claim_type": "EXPLICIT",
+      "source": "SARS-CoV-2, SARS-CoV-1, and NL63-CoV can all use ACE2 as their receptor (Li et al., 2003; Li et al., 2005; Shang et al., 2020c; Wan et al., 2020a; Wu et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to published literature on receptor usage.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:49:49.478392Z"
+    },
+    {
+      "id": "f0f8bad6-ca1a-469f-80af-4a958b4ebd3e",
+      "content_id": "6516612d-f41d-47e9-995d-f11aae965104",
+      "claim_id": "C25",
+      "claim": "SARS-CoV-2 spike has exceptional binding affinity for human ACE2.",
+      "claim_type": "EXPLICIT",
+      "source": "Early in the pandemic, we described three distinct characteristics of SARS-CoV-2 spike: its exceptional binding affinity for human ACE2, its proteolytic activation by human protease furin, and its existence as a mixture of two conformations: an open conformation in which the RBD is exposed and accessible to ACE2 and a closed conformation in which the RBD is buried and inaccessible to ACE2 (Shang et al., 2020b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work by the authors.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:49:49.478392Z"
+    },
+    {
+      "id": "ffd05fbf-2df2-438c-b43c-55fddf841916",
+      "content_id": "6516612d-f41d-47e9-995d-f11aae965104",
+      "claim_id": "C26",
+      "claim": "SARS-CoV-2 spike undergoes proteolytic activation by human protease furin.",
+      "claim_type": "EXPLICIT",
+      "source": "Early in the pandemic, we described three distinct characteristics of SARS-CoV-2 spike: its exceptional binding affinity for human ACE2, its proteolytic activation by human protease furin, and its existence as a mixture of two conformations: an open conformation in which the RBD is exposed and accessible to ACE2 and a closed conformation in which the RBD is buried and inaccessible to ACE2 (Shang et al., 2020b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work and established knowledge.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:49:49.478392Z"
+    },
+    {
+      "id": "b80d4f7b-041e-49a5-8b17-bece0dd87465",
+      "content_id": "6516612d-f41d-47e9-995d-f11aae965104",
+      "claim_id": "C27",
+      "claim": "SARS-CoV-2 spike exists as a mixture of two conformations: an open conformation in which the RBD is exposed and accessible to ACE2 and a closed conformation in which the RBD is buried and inaccessible to ACE2.",
+      "claim_type": "EXPLICIT",
+      "source": "Early in the pandemic, we described three distinct characteristics of SARS-CoV-2 spike: its exceptional binding affinity for human ACE2, its proteolytic activation by human protease furin, and its existence as a mixture of two conformations: an open conformation in which the RBD is exposed and accessible to ACE2 and a closed conformation in which the RBD is buried and inaccessible to ACE2 (Shang et al., 2020b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work and cryo-EM data in this study.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:49:49.478392Z"
+    },
+    {
+      "id": "788efdeb-7203-48d4-ac2b-ffa5c4972ae8",
+      "content_id": "6516612d-f41d-47e9-995d-f11aae965104",
+      "claim_id": "C28",
+      "claim": "SARS-CoV-1 spike is predominantly in the open conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, SARS-CoV-1 spike is predominantly in the open conformation, whereas NL63-CoV spike remains closed (Walls et al., 2016; Wrobel et al., 2020; Gui et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published structural studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:49:49.478392Z"
+    },
+    {
+      "id": "2819acc4-5d7d-4473-8c42-6115c5af6244",
+      "content_id": "6516612d-f41d-47e9-995d-f11aae965104",
+      "claim_id": "C29",
+      "claim": "NL63-CoV spike remains closed.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, SARS-CoV-1 spike is predominantly in the open conformation, whereas NL63-CoV spike remains closed (Walls et al., 2016; Wrobel et al., 2020; Gui et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published structural studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:49:49.478392Z"
+    },
+    {
+      "id": "1381d9fd-9a63-47c6-aed8-d3322ec8a6d5",
+      "content_id": "6516612d-f41d-47e9-995d-f11aae965104",
+      "claim_id": "C30",
+      "claim": "In the closed SARS-CoV-2 trimeric spike, Lys417 in the RBD from one spike subunit forms a hydrogen bond with the main chain of Asn370 in the RBD from another spike subunit.",
+      "claim_type": "EXPLICIT",
+      "source": "in the closed SARS-CoV-2 trimeric spike, Lys417 in the RBD from one spike subunit forms a hydrogen bond with the main chain of Asn370 in the RBD from another spike subunit, stabilizing the RBDs in the closed conformation (Walls et al., 2020; Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by structural data shown in Figure 1B and citation to published structure.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:49:49.478392Z"
+    },
+    {
+      "id": "9e94bb8f-b6af-4b4a-9a05-724d2e633e37",
+      "content_id": "6516612d-f41d-47e9-995d-f11aae965104",
+      "claim_id": "C31",
+      "claim": "The hydrogen bond between Lys417 and Asn370 stabilizes the RBDs in the closed conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "in the closed SARS-CoV-2 trimeric spike, Lys417 in the RBD from one spike subunit forms a hydrogen bond with the main chain of Asn370 in the RBD from another spike subunit, stabilizing the RBDs in the closed conformation (Walls et al., 2020; Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on structural analysis and functional data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:49:49.478392Z"
+    },
+    {
+      "id": "1015b09d-a708-4e34-8642-cb6f0aaea6ea",
+      "content_id": "6516612d-f41d-47e9-995d-f11aae965104",
+      "claim_id": "C32",
+      "claim": "In SARS-CoV-1 spike, residue 417 is a valine.",
+      "claim_type": "EXPLICIT",
+      "source": "In SARS-CoV-1 spike, however, this residue becomes a valine (Li et al., 2005; Shang et al., 2020a; Figure 1C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citations to published sequences and shown in Figure 1C.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:49:49.478392Z"
+    },
+    {
+      "id": "1bd24559-5808-4d53-ba56-0af7c893173c",
+      "content_id": "6516612d-f41d-47e9-995d-f11aae965104",
+      "claim_id": "C33",
+      "claim": "Val417 in SARS-CoV-1 spike loses its capability to form the hydrogen bond with another spike subunit.",
+      "claim_type": "EXPLICIT",
+      "source": "In SARS-CoV-1 spike, however, this residue becomes a valine (Li et al., 2005; Shang et al., 2020a; Figure 1C), losing its capability to form the hydrogen bond with another spike subunit and potentially destabilizing the closed conformation of the spike.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on structural analysis and chemical properties of valine.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:49:49.478392Z"
+    },
+    {
+      "id": "8fb671c8-f7d4-43d0-bc8d-6096f8b430ed",
+      "content_id": "6516612d-f41d-47e9-995d-f11aae965104",
+      "claim_id": "C34",
+      "claim": "Val417 in SARS-CoV-1 spike potentially destabilizes the closed conformation of the spike.",
+      "claim_type": "EXPLICIT",
+      "source": "In SARS-CoV-1 spike, however, this residue becomes a valine (Li et al., 2005; Shang et al., 2020a; Figure 1C), losing its capability to form the hydrogen bond with another spike subunit and potentially destabilizing the closed conformation of the spike.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative inference based on structural analysis.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:49:49.478392Z"
+    },
+    {
+      "id": "4fe532c7-2019-4414-a454-fae274e49cb0",
+      "content_id": "6516612d-f41d-47e9-995d-f11aae965104",
+      "claim_id": "C35",
+      "claim": "For the K417-spike, 55% of the molecules were in the closed conformation with all three RBDs down.",
+      "claim_type": "EXPLICIT",
+      "source": "For the K417-spike, 55% of the molecules were in the closed conformation with all three RBDs down, whereas the rest of the molecules (45%) were in the open conformation with one RBD up and two RBDs down (Figure 2A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by cryo-EM data analysis shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:49:49.478392Z"
+    },
+    {
+      "id": "65fa0565-363b-4d01-b943-535540848b2c",
+      "content_id": "6516612d-f41d-47e9-995d-f11aae965104",
+      "claim_id": "C36",
+      "claim": "For the K417-spike, 45% of the molecules were in the open conformation with one RBD up and two RBDs down.",
+      "claim_type": "EXPLICIT",
+      "source": "For the K417-spike, 55% of the molecules were in the closed conformation with all three RBDs down, whereas the rest of the molecules (45%) were in the open conformation with one RBD up and two RBDs down (Figure 2A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by cryo-EM data analysis shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:49:49.478392Z"
+    },
+    {
+      "id": "fd37000f-17c5-4978-8b92-3f4787574c46",
+      "content_id": "6516612d-f41d-47e9-995d-f11aae965104",
+      "claim_id": "C37",
+      "claim": "For the V417-spike, 32% of the molecules were in the closed conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, for the V417-spike, these numbers became 32 and 68% for the closed and open conformations, respectively (Figure 2C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by cryo-EM data analysis shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:49:49.478392Z"
+    },
+    {
+      "id": "388a4fec-5c6f-46b4-b656-351e456357fd",
+      "content_id": "6516612d-f41d-47e9-995d-f11aae965104",
+      "claim_id": "C38",
+      "claim": "For the V417-spike, 68% of the molecules were in the open conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, for the V417-spike, these numbers became 32 and 68% for the closed and open conformations, respectively (Figure 2C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by cryo-EM data analysis shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:49:49.478392Z"
+    },
+    {
+      "id": "19f89a88-c86e-4180-a999-b23e109cc797",
+      "content_id": "6516612d-f41d-47e9-995d-f11aae965104",
+      "claim_id": "C39",
+      "claim": "The K417V mutation allowed more SARS-CoV-2 spike molecules to take the open conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the K417V mutation allowed more SARS-CoV-2 spike molecules to take the open conformation, confirming our hypothesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cryo-EM data comparing K417-spike and V417-spike conformations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:49:49.478392Z"
+    },
+    {
+      "id": "b55dff7f-ecd7-4bc3-a1ab-9300dd84dc58",
+      "content_id": "6516612d-f41d-47e9-995d-f11aae965104",
+      "claim_id": "C40",
+      "claim": "ACE2 only binds to the standing-up RBD in the open spike.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been shown that ACE2 only binds to the standing-up RBD in the open spike (Gui et al., 2017; Ye et al., 2021)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published structural studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:49:49.478392Z"
+    },
+    {
+      "id": "84add3d6-009e-41b1-8c97-540418632a29",
+      "content_id": "6516612d-f41d-47e9-995d-f11aae965104",
+      "claim_id": "C41",
+      "claim": "The open spike conformation is necessary for ACE2 binding.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been shown that ACE2 only binds to the standing-up RBD in the open spike (Gui et al., 2017; Ye et al., 2021), suggesting that the open spike conformation is necessary for ACE2 binding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on cited structural studies.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:49:49.478392Z"
+    },
+    {
+      "id": "255c6fec-2306-42e7-852a-dbf877372dd8",
+      "content_id": "6516612d-f41d-47e9-995d-f11aae965104",
+      "claim_id": "C42",
+      "claim": "More V417-spike molecules were pulled down by ACE2 compared to K417-spike.",
+      "claim_type": "EXPLICIT",
+      "source": "The pull-down result showed that, compared to K417-spike, more V417-spike molecules had been pulled down by ACE2, suggesting that V417-spike had an increased probability of binding to ACE2 (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by western blot data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:49:49.478392Z"
+    },
+    {
+      "id": "ab0b3ec6-c2a9-4bd7-836c-caa9fd948107",
+      "content_id": "6516612d-f41d-47e9-995d-f11aae965104",
+      "claim_id": "C43",
+      "claim": "V417-spike has an increased probability of binding to ACE2 compared to K417-spike.",
+      "claim_type": "EXPLICIT",
+      "source": "The pull-down result showed that, compared to K417-spike, more V417-spike molecules had been pulled down by ACE2, suggesting that V417-spike had an increased probability of binding to ACE2 (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on pull-down assay data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:49:49.478392Z"
+    },
+    {
+      "id": "52d554c9-6dc9-4eaa-836c-6b50c32e71f6",
+      "content_id": "6516612d-f41d-47e9-995d-f11aae965104",
+      "claim_id": "C44",
+      "claim": "V417-spike binds to ACE2 better than K417-spike, regardless of whether the furin motif was intact or inactivated.",
+      "claim_type": "EXPLICIT",
+      "source": "The result showed that V417-spike binds to ACE2 better than does K417-spike, no matter whether the furin motif was intact or inactivated (Figure 3B, Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by flow cytometry data shown in Figure 3B and Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:49:49.478392Z"
+    },
+    {
+      "id": "b68d1954-30c8-4c86-a2e1-640f45be24e0",
+      "content_id": "6516612d-f41d-47e9-995d-f11aae965104",
+      "claim_id": "C45",
+      "claim": "V417-pseudoviruses entered cells more efficiently than K417-pseudoviruses.",
+      "claim_type": "EXPLICIT",
+      "source": "The pseudovirus entry result showed that V417-pseudoviruses entered cells more efficiently than did K417-pseudoviruses (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by pseudovirus entry assay data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:49:49.478392Z"
+    },
+    {
+      "id": "0001fe72-1b46-4950-ae63-85634caa62ac",
+      "content_id": "6516612d-f41d-47e9-995d-f11aae965104",
+      "claim_id": "C46",
+      "claim": "The open spike enhances ACE2 binding.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the open spike enhances not only ACE2 binding, but also viral entry.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the correlation between open conformation and increased ACE2 binding.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:49:49.478392Z"
+    },
+    {
+      "id": "60a72598-49be-4b3a-8853-c12ad0303408",
+      "content_id": "6516612d-f41d-47e9-995d-f11aae965104",
+      "claim_id": "C47",
+      "claim": "The open spike enhances viral entry.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the open spike enhances not only ACE2 binding, but also viral entry.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on pseudovirus entry data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:49:49.478392Z"
+    },
+    {
+      "id": "ec2b2580-b456-4022-8a06-e585342d8b75",
+      "content_id": "6516612d-f41d-47e9-995d-f11aae965104",
+      "claim_id": "C48",
+      "claim": "Neutralizing antibodies generally recognize five groups of neutralizing epitopes on the RBD.",
+      "claim_type": "EXPLICIT",
+      "source": "They generally recognize five groups of neutralizing epitopes on the RBD (Starr et al., 2021; Dussupt et al., 2021; Scheid et al., 2021; Fedry et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published antibody studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:49:49.478392Z"
+    },
+    {
+      "id": "be95c865-646e-4b26-aaea-7221aa492621",
+      "content_id": "6516612d-f41d-47e9-995d-f11aae965104",
+      "claim_id": "C49",
+      "claim": "Three groups of RBD epitopes are only accessible to neutralizing antibodies when the spike adopts the open conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "Three groups of these RBD epitopes are only accessible to neutralizing antibodies when the spike adopts the open conformation (Starr et al., 2021; Dussupt et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published antibody studies and structural analysis.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:49:49.478392Z"
+    },
+    {
+      "id": "61002fd1-bad9-4c94-b940-650d237048a8",
+      "content_id": "6516612d-f41d-47e9-995d-f11aae965104",
+      "claim_id": "C50",
+      "claim": "Two groups of RBD epitopes are accessible to neutralizing antibodies when the spike adopts either open or closed conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "In comparison, the other two groups of RBD epitopes are accessible to neutralizing antibodies when the spike adopts either open or closed conformation (Scheid et al., 2021; Fedry et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published antibody studies and structural analysis.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:49:49.478392Z"
+    },
+    {
+      "id": "af2a98f0-88a1-4920-9f9a-6c2cdaf43b0b",
+      "content_id": "6516612d-f41d-47e9-995d-f11aae965104",
+      "claim_id": "C51",
+      "claim": "Nanobodies are single-domain antibodies derived from camelid animals.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to the above conventional antibodies, neutralizing nanobodies (which are single-domain antibodies derived from camelid animals) have also been discovered to target the RBD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about nanobodies.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:49:49.478392Z"
+    },
+    {
+      "id": "703b1659-0bb4-4f8b-96bc-5e339ff11e8f",
+      "content_id": "6516612d-f41d-47e9-995d-f11aae965104",
+      "claim_id": "C52",
+      "claim": "Nanobodies are known to bind to cryptic epitopes on viral targets.",
+      "claim_type": "EXPLICIT",
+      "source": "Because of their single-domain structure, nanobodies are known to bind to cryptic epitopes on viral targets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about nanobody properties.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:49:49.478392Z"
+    },
+    {
+      "id": "3db1d2f2-28ad-44a7-a8fc-e9234dfb1481",
+      "content_id": "6516612d-f41d-47e9-995d-f11aae965104",
+      "claim_id": "C53",
+      "claim": "Nanosota-2 binds to an epitope on the RBD that almost completely overlaps with the ACE2-binding site.",
+      "claim_type": "EXPLICIT",
+      "source": "Among them, Nanosota-2 binds to an epitope on the RBD that almost completely overlaps with the ACE2-binding site.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by structural data from previous work by the authors.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:49:49.478392Z"
+    },
+    {
+      "id": "5b01d2ba-2ba6-4a3d-9cf1-6688808f4cdd",
+      "content_id": "6516612d-f41d-47e9-995d-f11aae965104",
+      "claim_id": "C54",
+      "claim": "The Nanosota-2 epitope is only accessible to Nanosota-2 when the RBD is in the open conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the Nanosota-2 epitope is only accessible to Nanosota-2 when the RBD is in the open conformation (Ye et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to published work by the authors.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:49:49.478392Z"
+    },
+    {
+      "id": "5c577c7b-84bb-427f-be59-01db72b2b363",
+      "content_id": "6516612d-f41d-47e9-995d-f11aae965104",
+      "claim_id": "C55",
+      "claim": "SARS-CoV-2 may be able to evade some nanobodies when its spike is in the closed conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "This result suggests that even with the small size of nanobodies, SARS-CoV-2 may be able to evade some of them when its spike is in the closed conformation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the accessibility of Nanosota-2 epitope.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:49:49.478392Z"
+    },
+    {
+      "id": "bf02ab1c-e536-44ff-8360-890319ac3127",
+      "content_id": "6516612d-f41d-47e9-995d-f11aae965104",
+      "claim_id": "C56",
+      "claim": "SARS-CoV-2 spike in the closed conformation can evade significant amounts of neutralizing antibodies.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, these epitope-based analyses reveal that SARS-CoV-2 spike in the closed conformation can evade significant amounts of neutralizing antibodies, confirming our previous hypothesis that the closed conformation of the spike is a viral strategy for immune evasion (Shang et al., 2020b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on epitope accessibility analysis.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:49:49.478392Z"
+    },
+    {
+      "id": "10323e8d-11ea-491b-8abd-8474f2b29d01",
+      "content_id": "6516612d-f41d-47e9-995d-f11aae965104",
+      "claim_id": "C57",
+      "claim": "The closed conformation of the spike is a viral strategy for immune evasion.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, these epitope-based analyses reveal that SARS-CoV-2 spike in the closed conformation can evade significant amounts of neutralizing antibodies, confirming our previous hypothesis that the closed conformation of the spike is a viral strategy for immune evasion (Shang et al., 2020b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis supported by epitope analysis and cited previous work.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:49:49.478392Z"
+    },
+    {
+      "id": "d932ba1e-90cf-48cd-a202-863f22867f62",
+      "content_id": "6516612d-f41d-47e9-995d-f11aae965104",
+      "claim_id": "C58",
+      "claim": "Lys417 in SARS-CoV-2 RBD is directly involved in ACE2 binding by forming a salt bridge with Asp30 in human ACE2.",
+      "claim_type": "EXPLICIT",
+      "source": "The structure of SARS-CoV-2 RBD complexed with human ACE2 showed that Lys417 in SARS-CoV-2 RBD is directly involved in ACE2 binding by forming a salt bridge with Asp30 in human ACE2 (Lan et al., 2020; Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by structural data shown in Figure 5A and citation to published structure.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:49:49.478392Z"
+    },
+    {
+      "id": "c199dfa8-d460-4f87-859c-6a7c0740164c",
+      "content_id": "6516612d-f41d-47e9-995d-f11aae965104",
+      "claim_id": "C59",
+      "claim": "Val404 in SARS-CoV-1 RBD does not form any direct interactions with human ACE2.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the corresponding residue in SARS-CoV-1 RBD is a valine that does not form any direct interactions with human ACE2 (Li et al., 2005; Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by structural data shown in Figure 5B and citation to published structure.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:49:49.478392Z"
+    },
+    {
+      "id": "63329acc-1dc9-4ccb-840d-5d7705f828a0",
+      "content_id": "6516612d-f41d-47e9-995d-f11aae965104",
+      "claim_id": "C60",
+      "claim": "The K417V mutation reduced the RBD's binding affinity for ACE2.",
+      "claim_type": "EXPLICIT",
+      "source": "The result showed that the K417V mutation reduced the RBD's binding affinity for ACE2 (Figure 5C, Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by flow cytometry data shown in Figure 5C and Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:49:49.478392Z"
+    },
+    {
+      "id": "c8f58782-b854-4550-aa02-e8b511d8be00",
+      "content_id": "6516612d-f41d-47e9-995d-f11aae965104",
+      "claim_id": "C61",
+      "claim": "The K417V mutation weakens the RBD's ability to bind to ACE2 by eliminating a favorable interaction at the RBD/ACE2 interface.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the K417V mutation has contrasting effects on the RBD and the trimeric spike in terms of ACE2 binding: it weakens the RBD's ability to bind to ACE2 by eliminating a favorable interaction at the RBD/ACE2 interface, but it increases the trimeric spike's probability of binding to ACE2 by enabling more spike molecules to assume the open conformation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on structural analysis and binding data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:49:49.478392Z"
+    },
+    {
+      "id": "aed65af4-2857-4bdd-9e8d-9d6ab4ab7cb2",
+      "content_id": "6516612d-f41d-47e9-995d-f11aae965104",
+      "claim_id": "C62",
+      "claim": "The K417V mutation increases the trimeric spike's probability of binding to ACE2 by enabling more spike molecules to assume the open conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the K417V mutation has contrasting effects on the RBD and the trimeric spike in terms of ACE2 binding: it weakens the RBD's ability to bind to ACE2 by eliminating a favorable interaction at the RBD/ACE2 interface, but it increases the trimeric spike's probability of binding to ACE2 by enabling more spike molecules to assume the open conformation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on cryo-EM and binding data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:49:49.478392Z"
+    },
+    {
+      "id": "75f8038b-e916-4e83-a6d5-318336d7d650",
+      "content_id": "6516612d-f41d-47e9-995d-f11aae965104",
+      "claim_id": "C63",
+      "claim": "N-linked glycans on the spike play a role in regulating its conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "Studies have shown that N-linked glycans on the spike and fatty acids bound to the spike both play a role in regulating its conformation (Toelzer et al., 2020; Sztain et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:49:49.478392Z"
+    },
+    {
+      "id": "bc4a1767-72b3-452c-b2a7-8addf5aa078d",
+      "content_id": "6516612d-f41d-47e9-995d-f11aae965104",
+      "claim_id": "C64",
+      "claim": "Fatty acids bound to the spike play a role in regulating its conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "Studies have shown that N-linked glycans on the spike and fatty acids bound to the spike both play a role in regulating its conformation (Toelzer et al., 2020; Sztain et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:49:49.478392Z"
+    },
+    {
+      "id": "437aa7e3-49e9-4134-9263-cad4a296ce7a",
+      "content_id": "6516612d-f41d-47e9-995d-f11aae965104",
+      "claim_id": "C65",
+      "claim": "A D614G mutation that emerged later in the pandemic caused SARS-CoV-2 spike to favor the open conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "As for protein-based factors, a D614G mutation that emerged later in the pandemic caused SARS-CoV-2 spike to favor the open conformation (Yurkovetskiy et al., 2020; Ozono et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published studies on D614G mutation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:49:49.478392Z"
+    },
+    {
+      "id": "04075ff5-31f0-4296-af4d-74b991e72cf9",
+      "content_id": "6516612d-f41d-47e9-995d-f11aae965104",
+      "claim_id": "C66",
+      "claim": "Three lysine residues kept SARS-CoV-2 Omicron spike in the open conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, our earlier research indicated that three lysine residues kept SARS-CoV-2 Omicron spike in the open conformation (Ye et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work by the authors.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:49:49.478392Z"
+    },
+    {
+      "id": "8891fa7c-97d7-4239-a324-10d9f463f129",
+      "content_id": "6516612d-f41d-47e9-995d-f11aae965104",
+      "claim_id": "C67",
+      "claim": "In some pre-Omicron variants, residue 417 changed to either asparagine or threonine.",
+      "claim_type": "EXPLICIT",
+      "source": "It is worth noting that residue 417 itself has been a mutational hotspot in SARS-CoV-2 spike; in some pre-Omicron variants, it changed to either asparagine or threonine, and in most Omicron subvariants, it became asparagine (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by variant sequence data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:49:49.478392Z"
+    },
+    {
+      "id": "9af9b06f-454b-4d1b-9e1f-313d671bec4b",
+      "content_id": "6516612d-f41d-47e9-995d-f11aae965104",
+      "claim_id": "C68",
+      "claim": "In most Omicron subvariants, residue 417 became asparagine.",
+      "claim_type": "EXPLICIT",
+      "source": "It is worth noting that residue 417 itself has been a mutational hotspot in SARS-CoV-2 spike; in some pre-Omicron variants, it changed to either asparagine or threonine, and in most Omicron subvariants, it became asparagine (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by variant sequence data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:49:49.478392Z"
+    },
+    {
+      "id": "54099a10-e5ec-4261-88ba-c9095636089d",
+      "content_id": "6516612d-f41d-47e9-995d-f11aae965104",
+      "claim_id": "C69",
+      "claim": "The side chains of Asn417 and Thr417 might be too short to form a direct interaction with another spike subunit.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that the side chains of Asn417 and Thr417 might be too short to form a direct interaction with another spike subunit, the mutations at residue 417 could have influenced the conformation of the spike in subsequent SARS-CoV-2 variants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation based on structural considerations and chemical properties.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:49:49.478392Z"
+    },
+    {
+      "id": "e00b7584-b952-4585-96cd-b9d1fef1a2bb",
+      "content_id": "6516612d-f41d-47e9-995d-f11aae965104",
+      "claim_id": "C70",
+      "claim": "The mutations at residue 417 could have influenced the conformation of the spike in subsequent SARS-CoV-2 variants.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that the side chains of Asn417 and Thr417 might be too short to form a direct interaction with another spike subunit, the mutations at residue 417 could have influenced the conformation of the spike in subsequent SARS-CoV-2 variants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation based on structural analysis and functional data from prototypic spike.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:49:49.478392Z"
+    },
+    {
+      "id": "5eddc8f7-323a-492a-b3f9-d7ef22c848fc",
+      "content_id": "6516612d-f41d-47e9-995d-f11aae965104",
+      "claim_id": "C71",
+      "claim": "The open spike is more effective at binding to ACE2 than the closed spike.",
+      "claim_type": "EXPLICIT",
+      "source": "Our study shows that, compared to its closed form, the open spike is more effective at binding to ACE2 and facilitating viral entry.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by pull-down and flow cytometry data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:49:49.478392Z"
+    },
+    {
+      "id": "7dd60b5a-6bcb-480a-86d5-46f0944e7228",
+      "content_id": "6516612d-f41d-47e9-995d-f11aae965104",
+      "claim_id": "C72",
+      "claim": "The open spike is more effective at facilitating viral entry than the closed spike.",
+      "claim_type": "EXPLICIT",
+      "source": "Our study shows that, compared to its closed form, the open spike is more effective at binding to ACE2 and facilitating viral entry.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by pseudovirus entry data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:49:49.478392Z"
+    },
+    {
+      "id": "c6c23164-dcbd-4fba-ba77-85da2dbee27d",
+      "content_id": "6516612d-f41d-47e9-995d-f11aae965104",
+      "claim_id": "C73",
+      "claim": "The virus' ability to switch between open and closed spike conformations may be key to its balance of infectiousness and evasion of immunity.",
+      "claim_type": "EXPLICIT",
+      "source": "The virus' ability to switch between open and closed spike conformations may be key to its balance of infectiousness and evasion of immunity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation based on functional data and epitope analysis.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:49:49.478392Z"
+    },
+    {
+      "id": "442287fb-1cd7-488e-b02f-c81bc5f72edb",
+      "content_id": "6516612d-f41d-47e9-995d-f11aae965104",
+      "claim_id": "C74",
+      "claim": "SARS-CoV-1 spike predominantly assumes the open conformation (89% open and 11% closed).",
+      "claim_type": "EXPLICIT",
+      "source": "In comparison, SARS-CoV-1 spike predominantly assumes the open conformation (89% open and 11% closed) (Gui et al., 2017)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to published structural study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:49:49.478392Z"
+    },
+    {
+      "id": "15161897-da59-4b68-828f-da1aef99b0df",
+      "content_id": "6516612d-f41d-47e9-995d-f11aae965104",
+      "claim_id": "C75",
+      "claim": "NL63-CoV spike remains closed (100% closed).",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, NL63-CoV spike remains closed (100% closed) (Walls et al., 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to published structural study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:49:49.478392Z"
+    },
+    {
+      "id": "545f2883-acc5-41d9-8d9c-05f677521a8c",
+      "content_id": "6516612d-f41d-47e9-995d-f11aae965104",
+      "claim_id": "C76",
+      "claim": "SARS-CoV-2's blend of infectiousness and evasive abilities might be a factor in its widespread transmission.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, SARS-CoV-2's blend of infectiousness and evasive abilities, differing from both the highly pathogenic SARS-CoV-1 and the milder NL63-CoV, might be a factor in its widespread transmission.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation based on comparative analysis of spike conformations and clinical outcomes.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:49:49.478392Z"
+    },
+    {
+      "id": "f0ff9d2b-edcb-460b-b7a2-82898b65dbc8",
+      "content_id": "6516612d-f41d-47e9-995d-f11aae965104",
+      "claim_id": "C77",
+      "claim": "Lys417 in SARS-CoV-2 spike aids in keeping the spike closed.",
+      "claim_type": "EXPLICIT",
+      "source": "To summarize, Lys417 in SARS-CoV-2 spike aids in keeping the spike closed, potentially hindering ACE2 binding and viral entry, but providing an edge in immune evasion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cryo-EM data showing stabilization of closed conformation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:49:49.478392Z"
+    },
+    {
+      "id": "e731facb-5cad-4cb6-ab46-c3f4c2a12c70",
+      "content_id": "6516612d-f41d-47e9-995d-f11aae965104",
+      "claim_id": "C78",
+      "claim": "Lys417 keeping the spike closed potentially hinders ACE2 binding and viral entry.",
+      "claim_type": "EXPLICIT",
+      "source": "To summarize, Lys417 in SARS-CoV-2 spike aids in keeping the spike closed, potentially hindering ACE2 binding and viral entry, but providing an edge in immune evasion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the relationship between closed conformation and reduced ACE2 accessibility.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:49:49.478392Z"
+    },
+    {
+      "id": "db08f715-b2a3-4f4c-9f61-05487269644f",
+      "content_id": "6516612d-f41d-47e9-995d-f11aae965104",
+      "claim_id": "C79",
+      "claim": "Lys417 keeping the spike closed provides an edge in immune evasion.",
+      "claim_type": "EXPLICIT",
+      "source": "To summarize, Lys417 in SARS-CoV-2 spike aids in keeping the spike closed, potentially hindering ACE2 binding and viral entry, but providing an edge in immune evasion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on epitope accessibility analysis.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:49:49.478392Z"
+    },
+    {
+      "id": "eae4c642-b0e4-4bfa-a47a-cee0e1bf14d0",
+      "content_id": "6516612d-f41d-47e9-995d-f11aae965104",
+      "claim_id": "C80",
+      "claim": "Lys417's direct interaction with human ACE2 boosts ACE2 binding and viral entry.",
+      "claim_type": "EXPLICIT",
+      "source": "Simultaneously, Lys417's direct interaction with human ACE2 boosts ACE2 binding and viral entry, counteracting the limitations of the closed spike.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by structural data showing salt bridge formation and binding assays.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:49:49.478392Z"
+    },
+    {
+      "id": "b8636da5-c86e-41df-bd15-19775680fe6f",
+      "content_id": "6516612d-f41d-47e9-995d-f11aae965104",
+      "claim_id": "C81",
+      "claim": "Lys417's direct interaction with ACE2 counteracts the limitations of the closed spike.",
+      "claim_type": "EXPLICIT",
+      "source": "Simultaneously, Lys417's direct interaction with human ACE2 boosts ACE2 binding and viral entry, counteracting the limitations of the closed spike.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the dual roles of Lys417.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:49:49.478392Z"
+    },
+    {
+      "id": "7f8c9ce5-1a2b-456e-94cc-0a5747747918",
+      "content_id": "6516612d-f41d-47e9-995d-f11aae965104",
+      "claim_id": "C82",
+      "claim": "The mechanism of Lys417 helps SARS-CoV-2 maintain a delicate balance between infectiousness and evading host immune response.",
+      "claim_type": "EXPLICIT",
+      "source": "This interesting mechanism helps SARS-CoV-2 maintain a delicate balance between infectiousness and evading host immune response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation based on the dual roles of Lys417.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:49:49.478392Z"
+    },
+    {
+      "id": "1fb092ac-61bb-4eac-b1f4-ce58887b12bd",
+      "content_id": "6516612d-f41d-47e9-995d-f11aae965104",
+      "claim_id": "C83",
+      "claim": "The RBD contains a core structure and a receptor-binding motif (RBM).",
+      "claim_type": "EXPLICIT",
+      "source": "The RBD contains a core structure (in cyan) and a receptor-binding motif (RBM; in magenta).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1A and is established knowledge of RBD structure.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:49:49.478392Z"
+    },
+    {
+      "id": "ac21e8ba-349f-45b7-94ec-9668a08c71eb",
+      "content_id": "6516612d-f41d-47e9-995d-f11aae965104",
+      "claim_id": "C84",
+      "claim": "A 3.2 \u00c5 resolution map was generated for the closed K417-spike.",
+      "claim_type": "EXPLICIT",
+      "source": "Further 3D refinements using the good particles generated a 3.2 \u00c5 map for the closed spike and a 3.9 \u00c5 map for the open spike.",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This is shown in Figure 2\u2014figure supplement 1 and represents cryo-EM data quality.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:49:49.478392Z"
+    },
+    {
+      "id": "e5e7ba02-6cd0-402d-bb4f-6eeb7cf8cf3b",
+      "content_id": "6516612d-f41d-47e9-995d-f11aae965104",
+      "claim_id": "C85",
+      "claim": "A 3.9 \u00c5 resolution map was generated for the open K417-spike.",
+      "claim_type": "EXPLICIT",
+      "source": "Further 3D refinements using the good particles generated a 3.2 \u00c5 map for the closed spike and a 3.9 \u00c5 map for the open spike.",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This is shown in Figure 2\u2014figure supplement 1 and represents cryo-EM data quality.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:49:49.478392Z"
+    },
+    {
+      "id": "037ec4ac-0532-41da-a985-e487c306d985",
+      "content_id": "6516612d-f41d-47e9-995d-f11aae965104",
+      "claim_id": "C86",
+      "claim": "A 3.8 \u00c5 resolution map was generated for the closed V417-spike.",
+      "claim_type": "EXPLICIT",
+      "source": "Further 3D refinements using the good particles generated a 3.8 \u00c5 map for the closed spike and a 3.9 \u00c5 map for the open spike.",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This is shown in Figure 2\u2014figure supplement 2 and represents cryo-EM data quality.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:49:49.478392Z"
+    },
+    {
+      "id": "56e30254-bd33-4262-aa06-2ba6832666b5",
+      "content_id": "6516612d-f41d-47e9-995d-f11aae965104",
+      "claim_id": "C87",
+      "claim": "A 3.9 \u00c5 resolution map was generated for the open V417-spike.",
+      "claim_type": "EXPLICIT",
+      "source": "Further 3D refinements using the good particles generated a 3.8 \u00c5 map for the closed spike and a 3.9 \u00c5 map for the open spike.",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This is shown in Figure 2\u2014figure supplement 2 and represents cryo-EM data quality.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:49:49.478392Z"
+    },
+    {
+      "id": "1741c52b-3646-4101-8ec4-53234f1705c5",
+      "content_id": "6516612d-f41d-47e9-995d-f11aae965104",
+      "claim_id": "C88",
+      "claim": "Some of the spike molecules had been cleaved at the S1/S2 boundary in the pull-down assay, confirming the intact furin motif.",
+      "claim_type": "EXPLICIT",
+      "source": "Western blot analysis showed that some of the spike molecules had been cleaved at the S1/S2 boundary, confirming the intact furin motif (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by western blot data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:49:49.478392Z"
+    },
+    {
+      "id": "ff407b2f-c7e3-4bec-81ed-ffb50b4f0832",
+      "content_id": "6516612d-f41d-47e9-995d-f11aae965104",
+      "claim_id": "C89",
+      "claim": "Some of the spike molecules had been cleaved at the S1/S2 boundary in pseudoviruses, confirming the intact furin motif.",
+      "claim_type": "EXPLICIT",
+      "source": "Western blot analysis showed that some of the spike molecules had been cleaved at the S1/S2 boundary when expressed on pseudovirus surface, confirming the intact furin motif (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by western blot data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:49:49.478392Z"
+    },
+    {
+      "id": "5d40adea-f9f9-4c73-a99c-f0c43d0cb0a3",
+      "content_id": "6516612d-f41d-47e9-995d-f11aae965104",
+      "claim_id": "C90",
+      "claim": "Both open spikes in this study have only one RBD standing up and two RBDs lying down.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, both open spikes have only one RBD standing up and two RBDs lying down.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cryo-EM data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:49:49.478392Z"
+    },
+    {
+      "id": "b5f97cb7-9443-4d3c-9b56-8e1686043f79",
+      "content_id": "6516612d-f41d-47e9-995d-f11aae965104",
+      "claim_id": "C91",
+      "claim": "This finding aligns with the results of several other structural studies on SARS-CoV-2 spike.",
+      "claim_type": "EXPLICIT",
+      "source": "This finding aligns with the results of several other structural studies on SARS-CoV-2 spike (Walls et al., 2020; Xiong et al., 2020; Cai et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published structural studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:49:49.478392Z"
+    },
+    {
+      "id": "6370a32d-f5b3-434c-be10-f934d0e6a405",
+      "content_id": "6516612d-f41d-47e9-995d-f11aae965104",
+      "claim_id": "C92",
+      "claim": "Some other studies have reported instances of open SARS-CoV-2 spike with either two or three RBDs standing up.",
+      "claim_type": "EXPLICIT",
+      "source": "However, some other studies have reported instances of open SARS-CoV-2 spike with either two or three RBDs standing up (Benton et al., 2021; Yurkovetskiy et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published structural studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:49:49.478392Z"
+    },
+    {
+      "id": "98d45b65-52a7-4122-83aa-6891c563ee12",
+      "content_id": "6516612d-f41d-47e9-995d-f11aae965104",
+      "claim_id": "C93",
+      "claim": "The discrepancy in number of standing RBDs could be due to different sample preparations and/or protein constructions.",
+      "claim_type": "EXPLICIT",
+      "source": "The cause for this discrepancy is unclear, but could be due to different sample preparations and/or protein constructions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about methodological differences.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:49:49.478392Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "bf22905f-f336-43e4-bcf4-612809823492",
+      "content_id": "6516612d-f41d-47e9-995d-f11aae965104",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The K417V mutation shifts SARS-CoV-2 spike from a predominantly closed conformation (55% closed, 45% open for K417-spike) to a predominantly open conformation (32% closed, 68% open for V417-spike). This is attributed to the loss of a hydrogen bond between Lys417 and Asn370 from adjacent spike subunits that stabilizes the closed conformation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C39 are well-supported by cryo-EM structural data (Figure 2) showing quantitative differences in conformational distributions between K417-spike and V417-spike. The structural basis (hydrogen bonding) is supported by both cited literature and structural analysis (Figure 1B). The cryo-EM resolutions (3.2-3.9 \u00c5) are adequate for this analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:49:49.478392Z"
+    },
+    {
+      "id": "73c60177-52eb-40fa-9853-96bad8ebbb89",
+      "content_id": "6516612d-f41d-47e9-995d-f11aae965104",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The V417-spike binds ACE2 with higher probability than K417-spike, as demonstrated by pull-down assays and flow cytometry. This enhanced binding is attributed to the increased proportion of V417-spike molecules in the open conformation, which is necessary for ACE2 binding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C44, C7, and C46 are supported by multiple independent biochemical assays (pull-down in Figure 3A, flow cytometry in Figure 3B). The data consistently show enhanced ACE2 binding for V417-spike across different experimental conditions (intact and inactivated furin motif). Statistical significance is reported (p<0.001, n=3).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:49:49.478392Z"
+    },
+    {
+      "id": "93082a42-3017-4e17-b6ce-a091ff3b05d7",
+      "content_id": "6516612d-f41d-47e9-995d-f11aae965104",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "V417-pseudoviruses enter cells more efficiently than K417-pseudoviruses, demonstrating that the open spike conformation enhances viral entry. Entry efficiency was normalized against spike expression levels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45, C8, C47, and C72 are supported by pseudovirus entry assays (Figure 3C) with appropriate normalization for spike expression levels. Statistical significance is reported (p<0.001, n=8). The functional consequence of increased open conformation is directly demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:49:49.478392Z"
+    },
+    {
+      "id": "1933c930-6514-4737-baf8-03d47ef8d076",
+      "content_id": "6516612d-f41d-47e9-995d-f11aae965104",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The K417V mutation reduces the RBD's direct binding affinity for ACE2 by eliminating a salt bridge between Lys417 in the RBD and Asp30 in ACE2. This contrasts with the mutation's effect on the trimeric spike, where it increases ACE2 binding probability by promoting the open conformation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C61 and C6 are supported by structural data (Figure 5A-B) showing the salt bridge interaction and flow cytometry data (Figure 5C) demonstrating reduced RBD binding affinity. The dual opposing effects of the K417V mutation are clearly demonstrated with appropriate controls and statistical analysis (p<0.001, n=3).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:49:49.478392Z"
+    },
+    {
+      "id": "c0351b5e-941b-4e3c-8898-074b2a9589fe",
+      "content_id": "6516612d-f41d-47e9-995d-f11aae965104",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The closed spike conformation provides immune evasion by limiting accessibility of neutralizing epitopes. Three of five groups of RBD epitopes recognized by conventional antibodies are only accessible in the open conformation, and even the compact nanobody Nanosota-2 can only bind the open conformation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C57, C9, and C79 are supported by structural analysis of antibody/nanobody epitopes (Figure 4) and cited literature. The epitope accessibility analysis is based on established structural data. However, the claim that the closed conformation 'is a viral strategy' (C57) is somewhat speculative, though the functional consequence is well-demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:49:49.478392Z"
+    },
+    {
+      "id": "bd7e75ee-0822-4c30-a02f-e1da7958353c",
+      "content_id": "6516612d-f41d-47e9-995d-f11aae965104",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Lys417 plays a dual role: it stabilizes the closed conformation through inter-subunit interactions (limiting ACE2 binding and viral entry but enhancing immune evasion) while also directly interacting with ACE2 (enhancing binding and entry). This mechanism helps SARS-CoV-2 balance infectiousness and immune evasion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C4 and C77-C82 synthesize the structural and functional data into a coherent model. The dual role is well-supported by the combination of cryo-EM, binding assays, and structural analysis. However, the claim that this 'helps SARS-CoV-2 maintain a delicate balance' (C82) is somewhat speculative and represents an evolutionary interpretation rather than direct experimental evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:49:49.478392Z"
+    },
+    {
+      "id": "bd1dc0a9-f631-4443-a630-a811e115fe2b",
+      "content_id": "6516612d-f41d-47e9-995d-f11aae965104",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Residue 417 has been a mutational hotspot in SARS-CoV-2 variants, changing to asparagine or threonine in pre-Omicron variants and to asparagine in most Omicron subvariants. These mutations could have influenced spike conformation in subsequent variants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C10 and C67-C68 are supported by variant sequence data (Figure 1C). However, claims C69-C70 about the effects of Asn417 and Thr417 mutations are speculative ('might be too short', 'could have influenced') and lack direct experimental validation in this study. The study only experimentally tested the K417V mutation in prototypic SARS-CoV-2.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:49:49.478392Z"
+    },
+    {
+      "id": "dd327ccd-5a7a-4376-ba7d-10bfd536f9b5",
+      "content_id": "6516612d-f41d-47e9-995d-f11aae965104",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "SARS-CoV-2 may have evolved to strike a balance between infection potency and immune evasion through conformational switching, contributing to its pandemic spread. This balance differs from SARS-CoV-1 (predominantly open) and NL63-CoV (completely closed).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C11, C73, C76, and C82 represent evolutionary and epidemiological interpretations that extend beyond the experimental data. While the functional data support the concept of a trade-off between infectiousness and immune evasion, the causal link to pandemic spread is speculative and would require additional epidemiological and evolutionary analyses.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:49:49.478392Z"
+    },
+    {
+      "id": "3cb9f8d5-4bc0-4ee7-abf2-981389dfe410",
+      "content_id": "6516612d-f41d-47e9-995d-f11aae965104",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "SARS-CoV-1 spike is predominantly in the open conformation (89% open, 11% closed) while NL63-CoV spike remains completely closed (100% closed), contrasting with SARS-CoV-2's mixed conformation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C29 and C74-C75 are supported by citations to published structural studies. These are established findings from prior work that provide important context for the current study's findings on SARS-CoV-2.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:49:49.478392Z"
+    },
+    {
+      "id": "2386e114-54d7-4b6b-82b1-6dcbc1c47b5a",
+      "content_id": "6516612d-f41d-47e9-995d-f11aae965104",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "SARS-CoV-2 spike protein mediates viral entry and is a target for immune responses. It exists as a trimeric pre-fusion structure with S1 subunits containing the RBD on top of an S2 stalk, and can adopt open or closed conformations. The spike has exceptional ACE2 binding affinity and undergoes furin cleavage.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2 and C19-C27 describe established background knowledge about coronavirus spike proteins, supported by citations and the authors' previous work. These are well-established facts in the field that provide necessary context.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:49:49.478392Z"
+    },
+    {
+      "id": "5b06e0fe-fef3-4ce6-b5c7-9073593d433b",
+      "content_id": "6516612d-f41d-47e9-995d-f11aae965104",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "SARS-CoV-2 has intermediate virulence compared to SARS-CoV-1 (more lethal, smaller outbreak) and NL63-CoV (causes common colds). SARS-CoV-2 carriers may develop mild/no symptoms, delayed symptom onset, low neutralizing antibody levels, or prolonged virus shedding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C18 describe established epidemiological and clinical characteristics of these coronaviruses, supported by multiple citations to published clinical studies. These are well-documented facts that provide important context for understanding SARS-CoV-2's pandemic potential.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:49:49.478392Z"
+    },
+    {
+      "id": "a6f41a43-abbc-46f9-9faf-b3f3d8bedc0e",
+      "content_id": "6516612d-f41d-47e9-995d-f11aae965104",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "ACE2 only binds to the standing-up RBD in the open spike conformation, making the open conformation necessary for ACE2 binding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C41 are supported by citations to published structural studies and provide important mechanistic context for interpreting the binding assays. This is established knowledge in the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:49:49.478392Z"
+    },
+    {
+      "id": "802d2d65-4663-4a10-ac24-7957714ef300",
+      "content_id": "6516612d-f41d-47e9-995d-f11aae965104",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Nanobodies are single-domain antibodies from camelid animals that can bind cryptic epitopes. The RBD contains a core structure and receptor-binding motif (RBM).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C52 and C83 describe established structural and immunological knowledge that provides context for the antibody epitope analysis. These are well-known facts in the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:49:49.478392Z"
+    },
+    {
+      "id": "bd778581-0322-4fee-9ac4-e9158b1f3f00",
+      "content_id": "6516612d-f41d-47e9-995d-f11aae965104",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Other factors besides residue 417 can regulate spike conformation, including N-linked glycans, bound fatty acids, the D614G mutation, and three lysine residues in Omicron spike.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C66 are supported by citations to published studies, including the authors' previous work on Omicron. These provide important context showing that residue 417 is one of multiple conformational regulators.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:49:49.478392Z"
+    },
+    {
+      "id": "90acfaf4-862e-4fbd-8626-6dad7381cfd8",
+      "content_id": "6516612d-f41d-47e9-995d-f11aae965104",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Cryo-EM maps were generated at 3.2-3.9 \u00c5 resolution for both K417-spike and V417-spike in open and closed conformations. Both open spikes have one RBD up and two down, consistent with some but not all published studies. Western blots confirmed furin cleavage.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C84-C93 describe methodological details and quality metrics for the cryo-EM analysis. The resolutions are appropriate for the structural analysis performed. The acknowledgment of discrepancies with other studies (C92-C93) and speculation about causes demonstrates appropriate scientific caution.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:49:49.478392Z"
+    },
+    {
+      "id": "dddb2cf1-4bb3-4e88-b912-ccfb7a7368c3",
+      "content_id": "6516612d-f41d-47e9-995d-f11aae965104",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The K417V mutation increases the trimeric spike's probability of binding ACE2 by enabling more molecules to assume the open conformation. The open spike is more effective at binding ACE2 than the closed spike.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62 and C71 synthesize the cryo-EM and binding data to explain the mechanism. These are well-supported inferences based on the combination of structural and functional data presented in the manuscript.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:49:49.478392Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "1381d9fd-9a63-47c6-aed8-d3322ec8a6d5",
+      "result_id": "bf22905f-f336-43e4-bcf4-612809823492"
+    },
+    {
+      "claim_id": "9e94bb8f-b6af-4b4a-9a05-724d2e633e37",
+      "result_id": "bf22905f-f336-43e4-bcf4-612809823492"
+    },
+    {
+      "claim_id": "1015b09d-a708-4e34-8642-cb6f0aaea6ea",
+      "result_id": "bf22905f-f336-43e4-bcf4-612809823492"
+    },
+    {
+      "claim_id": "1bd24559-5808-4d53-ba56-0af7c893173c",
+      "result_id": "bf22905f-f336-43e4-bcf4-612809823492"
+    },
+    {
+      "claim_id": "8fb671c8-f7d4-43d0-bc8d-6096f8b430ed",
+      "result_id": "bf22905f-f336-43e4-bcf4-612809823492"
+    },
+    {
+      "claim_id": "4fe532c7-2019-4414-a454-fae274e49cb0",
+      "result_id": "bf22905f-f336-43e4-bcf4-612809823492"
+    },
+    {
+      "claim_id": "65fa0565-363b-4d01-b943-535540848b2c",
+      "result_id": "bf22905f-f336-43e4-bcf4-612809823492"
+    },
+    {
+      "claim_id": "fd37000f-17c5-4978-8b92-3f4787574c46",
+      "result_id": "bf22905f-f336-43e4-bcf4-612809823492"
+    },
+    {
+      "claim_id": "388a4fec-5c6f-46b4-b656-351e456357fd",
+      "result_id": "bf22905f-f336-43e4-bcf4-612809823492"
+    },
+    {
+      "claim_id": "19f89a88-c86e-4180-a999-b23e109cc797",
+      "result_id": "bf22905f-f336-43e4-bcf4-612809823492"
+    },
+    {
+      "claim_id": "255c6fec-2306-42e7-852a-dbf877372dd8",
+      "result_id": "73c60177-52eb-40fa-9853-96bad8ebbb89"
+    },
+    {
+      "claim_id": "ab0b3ec6-c2a9-4bd7-836c-caa9fd948107",
+      "result_id": "73c60177-52eb-40fa-9853-96bad8ebbb89"
+    },
+    {
+      "claim_id": "52d554c9-6dc9-4eaa-836c-6b50c32e71f6",
+      "result_id": "73c60177-52eb-40fa-9853-96bad8ebbb89"
+    },
+    {
+      "claim_id": "4133b709-42b6-4d27-9667-a32d826cdb7e",
+      "result_id": "73c60177-52eb-40fa-9853-96bad8ebbb89"
+    },
+    {
+      "claim_id": "0001fe72-1b46-4950-ae63-85634caa62ac",
+      "result_id": "73c60177-52eb-40fa-9853-96bad8ebbb89"
+    },
+    {
+      "claim_id": "b68d1954-30c8-4c86-a2e1-640f45be24e0",
+      "result_id": "93082a42-3017-4e17-b6ce-a091ff3b05d7"
+    },
+    {
+      "claim_id": "37c99573-fcf6-463a-9171-95c68c9bf23d",
+      "result_id": "93082a42-3017-4e17-b6ce-a091ff3b05d7"
+    },
+    {
+      "claim_id": "60a72598-49be-4b3a-8853-c12ad0303408",
+      "result_id": "93082a42-3017-4e17-b6ce-a091ff3b05d7"
+    },
+    {
+      "claim_id": "7dd60b5a-6bcb-480a-86d5-46f0944e7228",
+      "result_id": "93082a42-3017-4e17-b6ce-a091ff3b05d7"
+    },
+    {
+      "claim_id": "d932ba1e-90cf-48cd-a202-863f22867f62",
+      "result_id": "1933c930-6514-4737-baf8-03d47ef8d076"
+    },
+    {
+      "claim_id": "c199dfa8-d460-4f87-859c-6a7c0740164c",
+      "result_id": "1933c930-6514-4737-baf8-03d47ef8d076"
+    },
+    {
+      "claim_id": "63329acc-1dc9-4ccb-840d-5d7705f828a0",
+      "result_id": "1933c930-6514-4737-baf8-03d47ef8d076"
+    },
+    {
+      "claim_id": "c8f58782-b854-4550-aa02-e8b511d8be00",
+      "result_id": "1933c930-6514-4737-baf8-03d47ef8d076"
+    },
+    {
+      "claim_id": "921705bf-3551-441c-aa77-8a9dc4b118ef",
+      "result_id": "1933c930-6514-4737-baf8-03d47ef8d076"
+    },
+    {
+      "claim_id": "ec2b2580-b456-4022-8a06-e585342d8b75",
+      "result_id": "c0351b5e-941b-4e3c-8898-074b2a9589fe"
+    },
+    {
+      "claim_id": "be95c865-646e-4b26-aaea-7221aa492621",
+      "result_id": "c0351b5e-941b-4e3c-8898-074b2a9589fe"
+    },
+    {
+      "claim_id": "61002fd1-bad9-4c94-b940-650d237048a8",
+      "result_id": "c0351b5e-941b-4e3c-8898-074b2a9589fe"
+    },
+    {
+      "claim_id": "3db1d2f2-28ad-44a7-a8fc-e9234dfb1481",
+      "result_id": "c0351b5e-941b-4e3c-8898-074b2a9589fe"
+    },
+    {
+      "claim_id": "5b01d2ba-2ba6-4a3d-9cf1-6688808f4cdd",
+      "result_id": "c0351b5e-941b-4e3c-8898-074b2a9589fe"
+    },
+    {
+      "claim_id": "5c577c7b-84bb-427f-be59-01db72b2b363",
+      "result_id": "c0351b5e-941b-4e3c-8898-074b2a9589fe"
+    },
+    {
+      "claim_id": "bf02ab1c-e536-44ff-8360-890319ac3127",
+      "result_id": "c0351b5e-941b-4e3c-8898-074b2a9589fe"
+    },
+    {
+      "claim_id": "10323e8d-11ea-491b-8abd-8474f2b29d01",
+      "result_id": "c0351b5e-941b-4e3c-8898-074b2a9589fe"
+    },
+    {
+      "claim_id": "2bb0b55c-3503-4ea8-a9d5-84b29caed073",
+      "result_id": "c0351b5e-941b-4e3c-8898-074b2a9589fe"
+    },
+    {
+      "claim_id": "db08f715-b2a3-4f4c-9f61-05487269644f",
+      "result_id": "c0351b5e-941b-4e3c-8898-074b2a9589fe"
+    },
+    {
+      "claim_id": "c39822e3-a6e7-4745-a201-607766b5dceb",
+      "result_id": "bd7e75ee-0822-4c30-a02f-e1da7958353c"
+    },
+    {
+      "claim_id": "5f11219b-83aa-46a8-a9ec-38a2f6d55d40",
+      "result_id": "bd7e75ee-0822-4c30-a02f-e1da7958353c"
+    },
+    {
+      "claim_id": "f0ff9d2b-edcb-460b-b7a2-82898b65dbc8",
+      "result_id": "bd7e75ee-0822-4c30-a02f-e1da7958353c"
+    },
+    {
+      "claim_id": "e731facb-5cad-4cb6-ab46-c3f4c2a12c70",
+      "result_id": "bd7e75ee-0822-4c30-a02f-e1da7958353c"
+    },
+    {
+      "claim_id": "eae4c642-b0e4-4bfa-a47a-cee0e1bf14d0",
+      "result_id": "bd7e75ee-0822-4c30-a02f-e1da7958353c"
+    },
+    {
+      "claim_id": "b8636da5-c86e-41df-bd15-19775680fe6f",
+      "result_id": "bd7e75ee-0822-4c30-a02f-e1da7958353c"
+    },
+    {
+      "claim_id": "7f8c9ce5-1a2b-456e-94cc-0a5747747918",
+      "result_id": "bd7e75ee-0822-4c30-a02f-e1da7958353c"
+    },
+    {
+      "claim_id": "ea2a95e4-603f-4cc9-ae18-eeda2aed2beb",
+      "result_id": "bd1dc0a9-f631-4443-a630-a811e115fe2b"
+    },
+    {
+      "claim_id": "8891fa7c-97d7-4239-a324-10d9f463f129",
+      "result_id": "bd1dc0a9-f631-4443-a630-a811e115fe2b"
+    },
+    {
+      "claim_id": "9af9b06f-454b-4d1b-9e1f-313d671bec4b",
+      "result_id": "bd1dc0a9-f631-4443-a630-a811e115fe2b"
+    },
+    {
+      "claim_id": "54099a10-e5ec-4261-88ba-c9095636089d",
+      "result_id": "bd1dc0a9-f631-4443-a630-a811e115fe2b"
+    },
+    {
+      "claim_id": "e00b7584-b952-4585-96cd-b9d1fef1a2bb",
+      "result_id": "bd1dc0a9-f631-4443-a630-a811e115fe2b"
+    },
+    {
+      "claim_id": "866555a9-937d-4971-b038-a461ac78bdaf",
+      "result_id": "dd327ccd-5a7a-4376-ba7d-10bfd536f9b5"
+    },
+    {
+      "claim_id": "c6c23164-dcbd-4fba-ba77-85da2dbee27d",
+      "result_id": "dd327ccd-5a7a-4376-ba7d-10bfd536f9b5"
+    },
+    {
+      "claim_id": "545f2883-acc5-41d9-8d9c-05f677521a8c",
+      "result_id": "dd327ccd-5a7a-4376-ba7d-10bfd536f9b5"
+    },
+    {
+      "claim_id": "7f8c9ce5-1a2b-456e-94cc-0a5747747918",
+      "result_id": "dd327ccd-5a7a-4376-ba7d-10bfd536f9b5"
+    },
+    {
+      "claim_id": "788efdeb-7203-48d4-ac2b-ffa5c4972ae8",
+      "result_id": "3cb9f8d5-4bc0-4ee7-abf2-981389dfe410"
+    },
+    {
+      "claim_id": "2819acc4-5d7d-4473-8c42-6115c5af6244",
+      "result_id": "3cb9f8d5-4bc0-4ee7-abf2-981389dfe410"
+    },
+    {
+      "claim_id": "442287fb-1cd7-488e-b02f-c81bc5f72edb",
+      "result_id": "3cb9f8d5-4bc0-4ee7-abf2-981389dfe410"
+    },
+    {
+      "claim_id": "15161897-da59-4b68-828f-da1aef99b0df",
+      "result_id": "3cb9f8d5-4bc0-4ee7-abf2-981389dfe410"
+    },
+    {
+      "claim_id": "a238ac85-cb91-4226-9fa2-ded56e66b213",
+      "result_id": "2386e114-54d7-4b6b-82b1-6dcbc1c47b5a"
+    },
+    {
+      "claim_id": "aa8a2185-45d9-4b1f-9c25-0c0fe56a397b",
+      "result_id": "2386e114-54d7-4b6b-82b1-6dcbc1c47b5a"
+    },
+    {
+      "claim_id": "0bd4fd3c-a553-4bea-a1a0-eb310784f1fe",
+      "result_id": "2386e114-54d7-4b6b-82b1-6dcbc1c47b5a"
+    },
+    {
+      "claim_id": "e4d8200d-b349-4d42-8409-61ee51859a89",
+      "result_id": "2386e114-54d7-4b6b-82b1-6dcbc1c47b5a"
+    },
+    {
+      "claim_id": "6620215b-65ba-4cc4-badf-45a7fb92b03b",
+      "result_id": "2386e114-54d7-4b6b-82b1-6dcbc1c47b5a"
+    },
+    {
+      "claim_id": "04bfe363-55e4-464b-abcc-a31dc3d76c8f",
+      "result_id": "2386e114-54d7-4b6b-82b1-6dcbc1c47b5a"
+    },
+    {
+      "claim_id": "a08ae779-9464-497d-8b28-dc598ce2d752",
+      "result_id": "2386e114-54d7-4b6b-82b1-6dcbc1c47b5a"
+    },
+    {
+      "claim_id": "59fbe857-75f9-4a1f-928a-ac87ed1c9997",
+      "result_id": "2386e114-54d7-4b6b-82b1-6dcbc1c47b5a"
+    },
+    {
+      "claim_id": "f0f8bad6-ca1a-469f-80af-4a958b4ebd3e",
+      "result_id": "2386e114-54d7-4b6b-82b1-6dcbc1c47b5a"
+    },
+    {
+      "claim_id": "ffd05fbf-2df2-438c-b43c-55fddf841916",
+      "result_id": "2386e114-54d7-4b6b-82b1-6dcbc1c47b5a"
+    },
+    {
+      "claim_id": "b80d4f7b-041e-49a5-8b17-bece0dd87465",
+      "result_id": "2386e114-54d7-4b6b-82b1-6dcbc1c47b5a"
+    },
+    {
+      "claim_id": "3f1e275c-9bcd-4f36-b110-67138d1a69e7",
+      "result_id": "5b06e0fe-fef3-4ce6-b5c7-9073593d433b"
+    },
+    {
+      "claim_id": "8dea4533-600f-4ef2-8822-9891cd7020cf",
+      "result_id": "5b06e0fe-fef3-4ce6-b5c7-9073593d433b"
+    },
+    {
+      "claim_id": "d332fd8f-0230-419a-9c62-5e6c33ed752e",
+      "result_id": "5b06e0fe-fef3-4ce6-b5c7-9073593d433b"
+    },
+    {
+      "claim_id": "c391eb61-5bd8-4783-b537-b6a77e866718",
+      "result_id": "5b06e0fe-fef3-4ce6-b5c7-9073593d433b"
+    },
+    {
+      "claim_id": "31414210-dc6c-4614-9051-a1b668b19984",
+      "result_id": "5b06e0fe-fef3-4ce6-b5c7-9073593d433b"
+    },
+    {
+      "claim_id": "0e1fb8da-e29d-4ad0-9c2b-a77e629906d8",
+      "result_id": "5b06e0fe-fef3-4ce6-b5c7-9073593d433b"
+    },
+    {
+      "claim_id": "2a3b5527-58d9-45a4-9467-6ce19108113f",
+      "result_id": "5b06e0fe-fef3-4ce6-b5c7-9073593d433b"
+    },
+    {
+      "claim_id": "b55dff7f-ecd7-4bc3-a1ab-9300dd84dc58",
+      "result_id": "a6f41a43-abbc-46f9-9faf-b3f3d8bedc0e"
+    },
+    {
+      "claim_id": "84add3d6-009e-41b1-8c97-540418632a29",
+      "result_id": "a6f41a43-abbc-46f9-9faf-b3f3d8bedc0e"
+    },
+    {
+      "claim_id": "af2a98f0-88a1-4920-9f9a-6c2cdaf43b0b",
+      "result_id": "802d2d65-4663-4a10-ac24-7957714ef300"
+    },
+    {
+      "claim_id": "703b1659-0bb4-4f8b-96bc-5e339ff11e8f",
+      "result_id": "802d2d65-4663-4a10-ac24-7957714ef300"
+    },
+    {
+      "claim_id": "1fb092ac-61bb-4eac-b1f4-ce58887b12bd",
+      "result_id": "802d2d65-4663-4a10-ac24-7957714ef300"
+    },
+    {
+      "claim_id": "75f8038b-e916-4e83-a6d5-318336d7d650",
+      "result_id": "bd778581-0322-4fee-9ac4-e9158b1f3f00"
+    },
+    {
+      "claim_id": "bc4a1767-72b3-452c-b2a7-8addf5aa078d",
+      "result_id": "bd778581-0322-4fee-9ac4-e9158b1f3f00"
+    },
+    {
+      "claim_id": "437aa7e3-49e9-4134-9263-cad4a296ce7a",
+      "result_id": "bd778581-0322-4fee-9ac4-e9158b1f3f00"
+    },
+    {
+      "claim_id": "04075ff5-31f0-4296-af4d-74b991e72cf9",
+      "result_id": "bd778581-0322-4fee-9ac4-e9158b1f3f00"
+    },
+    {
+      "claim_id": "ac21e8ba-349f-45b7-94ec-9668a08c71eb",
+      "result_id": "90acfaf4-862e-4fbd-8626-6dad7381cfd8"
+    },
+    {
+      "claim_id": "e5e7ba02-6cd0-402d-bb4f-6eeb7cf8cf3b",
+      "result_id": "90acfaf4-862e-4fbd-8626-6dad7381cfd8"
+    },
+    {
+      "claim_id": "037ec4ac-0532-41da-a985-e487c306d985",
+      "result_id": "90acfaf4-862e-4fbd-8626-6dad7381cfd8"
+    },
+    {
+      "claim_id": "56e30254-bd33-4262-aa06-2ba6832666b5",
+      "result_id": "90acfaf4-862e-4fbd-8626-6dad7381cfd8"
+    },
+    {
+      "claim_id": "1741c52b-3646-4101-8ec4-53234f1705c5",
+      "result_id": "90acfaf4-862e-4fbd-8626-6dad7381cfd8"
+    },
+    {
+      "claim_id": "ff407b2f-c7e3-4bec-81ed-ffb50b4f0832",
+      "result_id": "90acfaf4-862e-4fbd-8626-6dad7381cfd8"
+    },
+    {
+      "claim_id": "5d40adea-f9f9-4c73-a99c-f0c43d0cb0a3",
+      "result_id": "90acfaf4-862e-4fbd-8626-6dad7381cfd8"
+    },
+    {
+      "claim_id": "b5f97cb7-9443-4d3c-9b56-8e1686043f79",
+      "result_id": "90acfaf4-862e-4fbd-8626-6dad7381cfd8"
+    },
+    {
+      "claim_id": "6370a32d-f5b3-434c-be10-f934d0e6a405",
+      "result_id": "90acfaf4-862e-4fbd-8626-6dad7381cfd8"
+    },
+    {
+      "claim_id": "98d45b65-52a7-4122-83aa-6891c563ee12",
+      "result_id": "90acfaf4-862e-4fbd-8626-6dad7381cfd8"
+    },
+    {
+      "claim_id": "aed65af4-2857-4bdd-9e8d-9d6ab4ab7cb2",
+      "result_id": "dddb2cf1-4bb3-4e88-b912-ccfb7a7368c3"
+    },
+    {
+      "claim_id": "5eddc8f7-323a-492a-b3f9-d7ef22c848fc",
+      "result_id": "dddb2cf1-4bb3-4e88-b912-ccfb7a7368c3"
+    }
+  ],
+  "comparisons": []
+}

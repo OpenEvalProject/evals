@@ -1,0 +1,2109 @@
+{
+  "submission": {
+    "id": "42d36f4c-a5ec-4c44-9a41-b0a8285ae203",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-04T04:58:58.621968Z",
+    "updated_at": "2025-12-04T04:58:58.621968Z"
+  },
+  "content": [
+    {
+      "id": "548e4b65-181f-4e3b-8f6b-ad8b66675fd2",
+      "submission_id": "42d36f4c-a5ec-4c44-9a41-b0a8285ae203",
+      "content_type": "manuscript",
+      "content_text": "# The zinc transporter Slc30a1 (ZnT1) in macrophages plays a protective role against attenuated Salmonella\n\n## Authors\n\n- Pinanong Na-Phatthalung<sup>1</sup> ([ORCID: 0000-0002-8162-4645](https://orcid.org/0000-0002-8162-4645))\n- Shumin Sun<sup>1</sup>\n- Enjun Xie<sup>1</sup>\n- Jia Wang<sup>3</sup>\n- Junxia Min<sup>1</sup> \u2020\n- Fudi Wang<sup>1</sup> ([ORCID: 0000-0001-8730-0003](https://orcid.org/0000-0001-8730-0003)) \u2020\n\n### Affiliations\n\n1. The Second Affiliated Hospital, School of Public Health, State Key Laboratory of Experimental Hematology, Zhejiang University School of Medicine Hangzhou China ([ROR:059cjpv64](https://ror.org/059cjpv64))\n2. The First Affiliated Hospital, Institute of Translational Medicine, Zhejiang University School of Medicine Hangzhou China ([ROR:05m1p5x56](https://ror.org/05m1p5x56))\n3. School of Public Health, Zhengzhou University Zhengzhou China ([ROR:04ypx8c21](https://ror.org/04ypx8c21))\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe zinc transporter Slc30a1 plays an essential role in maintaining cellular zinc homeostasis. Despite this, its functional role in macrophages remains largely unknown. Here, we examine the function of Slc30a1 in host defense using mice models infected with an attenuated stain of Salmonella enterica Typhimurium and primary macrophages infected with the attenuated Salmonella. Bulk transcriptome sequencing in primary macrophages identifies Slc30a1 as a candidate in response to Salmonella infection. Whole-mount immunofluorescence and confocal microscopy imaging of primary macrophage and spleen from Salmonella-infected Slc30a1flag-EGFP mice demonstrate Slc30a1 expression is increased in infected macrophages with localization at the plasma membrane and in the cytosol. Lyz2-Cre-driven Slc30a1 conditional knockout mice (Slc30a1fl/fl;Lyz2-Cre) exhibit increased susceptibility to Salmonella infection compared to control littermates. We demonstrate that Slc30a1-deficient macrophages are defective in intracellular killing, which correlated with reduced activation of nuclear factor kappa B and reduction in nitric oxide (NO) production. Notably, the model exhibits intracellular zinc accumulation, demonstrating that Slc30a1 is required for zinc export. We thus conclude that zinc export enables the efficient NO-mediated antibacterial activity of macrophages to control invading Salmonella.\n\n## Introduction\n\nSalmonella, the gram-negative bacterium that causes Salmonellosis, is a well-characterized and relatively common foodborne disease. According to the 2015 Global Burden of Disease Study, Salmonella infection is one of the leading causes of diarrhea-related death, particularly among children under 5 years of age (Troeger et al., 2017). Severe cases of Salmonella septicemia are associated with a 25% mortality rate (Feasey et al., 2012). Based on epidemiological reports, zinc deficiency has been linked to the incidence of Salmonella infection (Troeger et al., 2017). As an essential micronutrient, zinc is involved in a wide range of fundamental biological processes, including modulating the immune system\u2019s response to invading pathogens (Wessels et al., 2021). However, whether zinc plays a protective role in response to Salmonella infection remains unclear.\n\nIn mammalian cells, zinc homeostasis is tightly regulated by two families of zinc transporters, namely solute carrier family 30 (Slc30a, also known as ZnTs) and solute carrier family 39 (Slc39a, also known as ZIPs), which export and import cellular zinc, respectively. Zinc imbalance caused by the dysfunction of zinc transporters contributes to impaired hematopoiesis and macrophage survival (He et al., 2023; Gao et al., 2017). Slc30a1 (ZnT1) is ubiquitously expressed in mammalian cells and is localized primarily at the plasma membrane (Nishito and Kambe, 2019; Golan et al., 2015; Guo et al., 2010), where it enables the export of cytoplasmic zinc to the extracellular space (Shusterman et al., 2017; Kambe et al., 2015; Kimura and Kambe, 2016). In mice, loss of Slc30a1 causes early embryonic death (Andrews et al., 2004), suggesting that Slc30a1 is essential for early development and survival. Recent data provide evidence that Slc30a1 expression is induced by a wide range of pathogens, including bacteria (Botella et al., 2011; Stocks et al., 2021), fungi (Rossi et al., 2021), and viruses (Moskovskich et al., 2019).\n\nMacrophages serve as the front line in the innate immune system by detecting and eliminating foreign pathogens. When Salmonella invades tissues, the bacteria are rapidly engulfed and killed by resident macrophages. This rapid engulfment and killing of Salmonella by macrophages result in bacterial clearance, cytokine production, and the recruitment of polymorphonuclear phagocytes (Mastroeni et al., 2009). Despite evidence suggesting a link between zinc regulators and macrophage function (Gao et al., 2018), whether and how Slc30a1 regulates macrophage function during infection remains poorly understood.\n\nHere, we perform transcriptome sequencing analysis to identify Slc30a1 as an important host factor in Salmonella-infected primary macrophages. We then used Slc30a1flag-EGFP reporter mice to assess subcellular localization and cell-specific expression of Slc30a1 at the protein level. To study the role of Slc30a1 in macrophages, we generate Slc30a1fl/fl;Lyz2-Cre (Slc30a1 cKO) mice and induce Salmonella infection. Lastly, we used primary macrophages differentiated from the bone marrow of Slc30a1 cKO mice to directly investigate the killing capacity and the antimicrobial response of macrophages to Salmonella infection. Our findings provide interesting new insights into the role of Slc30a1 in manipulating cellular zinc homeostasis to support an antimicrobial response in macrophages in response to infectious diseases.\n\n## Results\n\n### Slc30a1 expression is induced in mouse macrophages upon Salmonella infection\n\nWe performed RNA sequencing (RNA-seq) on bone marrow-derived macrophages (BMDMs) that were isolated from wild-type C57BL/6 mice and then exposed to an attenuated stain of Salmonella enterica Typhimurium with a multiplicity of infection (MOI) of 1 for 2 hr, the approximate time that has been closely correlated with the initial replication of Salmonella in macrophages (Helaine et al., 2010). Our analysis revealed a total of 1074 differentially expressed genes (DEGs), defined as an absolute log2 fold change >1 and an adjusted p value of <0.05 compared to control-treated BMDMs (Figure 1A, B). Among these 1074 genes, significantly downregulated genes were enriched in anti-inflammatory pathways, including Gpx1, Smad7, and Tgfb3, and significantly upregulated genes were enriched in infectious and inflammatory pathways, including Tnf, Il6, Il1\u03b2, Ptgs2, and Nos2, suggesting a potent antimicrobial response in infected macrophages (Figure 1C); as shown in a heatmap, many genes were upregulated following Salmonella infection (Figure 1D). Gene ontology (GO) analysis of the DEGs revealed that the top 50 GO terms generally contributed to proinflammatory signaling, inflammatory cytokines, and responses to molecules of bacterial origin (Figure 1\u2014figure supplement 1 and Supplementary file 1), while Kyoto Encyclopedia of Genes and Genomes (KEGG) pathway enrichment analysis of these DEGs yielded 54 pathways (p < 0.05) involved largely in infectious diseases (Figure 1E and Supplementary file 2).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/89509/elife-89509-fig1-v1.jpg)\n\n**Figure 1.:** (A) Pie chart summarizing the percentage of unchanged genes and differentially expressed genes (DEGs) in wild-type (WT) bone marrow-derived macrophages (BMDMs) 2 h after Salmonella infection (multiplicity of infection [MOI] = 1) (n = 3) using RNA sequencing (RNA-seq) analysis. (B) Bar graph displaying the number of DEGs including up- and downregulated genes identified by p < 0.05 and an absolute log2 fold change >1; shown at the right is the total number of down- and upregulated genes. (C) Volcano plot displaying the fold change in gene expression and corresponding p values for Salmonella-infected cells versus control (uninfected) cells. (D) Heatmap showing the pattern of DEGs in BMDMs measured between Salmonella-infected cells and control cells. (E) Kyoto Encyclopedia of Genes and Genomes (KEGG) enrichment pathways (p < 0.05) of DEGs between Salmonella-infected cells and control cells. (F) Schematic diagram (left) illustrating the use of RNA-seq analysis on human monocyte-derived macrophages (MDMs) infected with Salmonella for 4 hr and volcano plot (right) of DEGs in Salmonella-infected MDMs based on a previously published dataset (GSE67427); the Atp2b1, Atp7a, Mt2, Slc30a1, and Trpm7 genes are indicated.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/89509/elife-89509-fig1-figsupp1-v1.jpg)\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/89509/elife-89509-fig1-figsupp2-v1.jpg)\n\nUsing KEGG pathway analysis, we identified mineral absorption as a predominant pathway, with upregulation of the Atp2b1, Atp7a, Mt2, Slc30a1, and Trpm7 genes. To narrow down the list of genes, we analyzed publicly available bulk RNA-seq data (GSE67427) obtained from human monocyte-derived macrophages that were infected for 4 hr with Salmonella typhimurium and found that the DEGs in our mouse RNA-seq dataset were also differentially regulated in human macrophages (Figure 1F). Importantly, Slc30a1 was ranked as the most significantly upregulated gene and was therefore selected for further study. To validate the RNA-seq data, we then used RT-qPCR(Real-time quantitative polymerase chain reaction) to measure Slc30a1 mRNA levels in BMDMs at various time points following exposure to attenuated Salmonella, lipopolysaccharide (LPS), or heat-killed Salmonella typhimurium (HK-ST). We found that Slc30a1 expression peaked at 2 and 4 hr in the Salmonella- and LPS-treated cells, respectively, while HK-ST produced a significantly smaller response that also peaked at 2 hr (Figure 1\u2014figure supplement 2A). To validate this in vitro finding in vivo, we gave C57BL/6 mice an intraperitoneal (i.p.) injection of a sublethal dose of attenuated Salmonella (1 \u00d7 105 CFU per mouse); at 4 hr post-infection (4 hpi), Slc30a1 expression was significantly higher in peritoneal macrophages compared to uninfected mice (Figure 1\u2014figure supplement 2B). Together, these data show that Slc30a1 is upregulated in macrophages during Salmonella infection.\n\n### Macrophages in Salmonella-infected Slc30a1 reporter mice have increased levels of Slc30a1 protein\n\nTo detect the levels of Slc30a1 protein in macrophages following Salmonella infection, we generated a Slc30a1 reporter mouse line expressing 3xFlag-2A-EGFP-2A-CreERT2-Wpre-pA under the control of the Slc30a1 promoter (Figure 2A) and studied heterozygous offspring mice (Slc30a1flag-EGFP/+). BMDMs were then isolated from Slc30a1flag-EGFP/+ mice and either infected with attenuated Salmonella (MOI = 1) or treated with ZnSO4 (40 \u00b5M) for 4 hr, followed by western blot analysis using an anti-flag antibody. Compared to untreated WT and untreated Slc30a1flag-EGFP/+ BMDMs, both the Salmonella-infected and ZnSO4-treated Slc30a1flag-EGFP/+ BMDMs had significantly higher levels of the reporter protein (Figure 2\u2014source data 1). Given that Slc30a1 localizes primarily to the plasma membrane (Nishito and Kambe, 2019; Golan et al., 2015; Guo et al., 2010), we examined the localization of Slc30a1 in Salmonella-infected and ZnSO4-treated cells using confocal microscopy. As expected, we found that ZnSO4 increased the levels of the Slc30a1-flag reporter, primarily in the plasma membrane (Figure 2C). Interestingly, however, the Slc30a1-flag reporter was present both in the cytosol and in the plasma membrane in Salmonella-infected cells, suggesting that Slc30a1 may contribute to both zinc efflux and intracellular zinc movement in response to Salmonella infection.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/89509/elife-89509-fig2-v1.jpg)\n\n**Figure 2.:** (A) Strategy for generating an Slc30a1 reporter mouse line expressing 3xFlag-EGFP under the control of the endogenous Slc30a1 promotor (Slc30a1flag-EGFP/+). (B) Western blot analysis of Slc30a1-flag in bone marrow-derived macrophages (BMDMs) isolated from Slc30a1flag-EGFP/+mice and exposed to ZnSO4 treatment (40 \u00b5M) or Salmonella (multiplicity of infection [MOI] = 1) for 4 hr. (C) Confocal fluorescence images of BMDMs treated as shown in B and immunostained using an anti-flag antibody (magenta); the nuclei were counterstained with DAPI(4\u2032,6-diamidino-2-phenylindole) (blue), and GFP(Green fluorescent protein) was visualized directly based on green fluorescence. Scale bars, 20 \u00b5m. Shown at the right is the summary of the normalized pixel intensity of Slc30a1-flag expression in BMDMs in each group. (D) Confocal fluorescence images of spleen samples obtained from a Salmonella-infected mouse at 4 hpi; also shown are samples of uninfected WT and Slc30a1flag-EGFP/+ mice. The samples were stained with anti-flag (magenta) and anti-F4/80 (cyan), and the nuclei were counterstained with DAPI (blue). Scale bars, 50 \u00b5m. Shown at the right is the summary of the normalized pixel intensity of Slc30a1-flag expression in the spleen in each group. Data are presented as mean \u00b1 SEM(Standard Error of the Mean). p values were determined using two-tailed unpaired Student\u2019s t-test. *p < 0.05, **p < 0.01, ***p < 0.001, and ns, not significant.\n\nTo examine the in vivo expression of Slc30a1, we infected Slc30a1flag-EGFP/+ mice with an i.p. injection of attenuated Salmonella (1 \u00d7 105 CFU per mouse). Given that the spleen is the largest secondary lymphoid organ (Lewis et al., 2019) and is a major source of bacterial burden during systemic infection (Carreno et al., 2021), we dissected the spleen 4 hr after infection and examined Slc30a1-flag expression in splenic macrophages. Immunostaining for Slc30a1-flag and the macrophage biomarker F4/80 revealed that Slc30a1 is expressed at high levels, specifically in splenic F4/80\u2012positive cells at the area of red pulp in infected mice, but not in uninfected mice (Figure 2D). Moreover, Salmonella-induced expression of Slc30a1 was confirmed by measuring high GFP expression in CD11b+F4/80+ peritoneal macrophages (Figure 3A) and splenic macrophages (Figure 3B, C), while there was no GFP expression in other splenic immune cells (Figure 3\u2014figure supplement 1).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/89509/elife-89509-fig3-v1.jpg)\n\n**Figure 3.:** (A) FACS(Fluorescence-activated cell sorting) plots of GFP expression in CD11b+F4/80+ macrophages isolated from the peritoneal cavity of Salmonella-infected WT mice and Salmonella-infected Slc30a1flag-EGFP/+ mice at 4 hpi (n = 3\u20135 mice/group). (B) Fluorescence microscopy images of spleen samples obtained from a Salmonella-infected mouse at 4 hpi; also shown are samples of uninfected WT and Slc30a1flag-EGFP/+ mice. The green region indicated the Slc30a1-GFP expression, and the blue region indicated the nuclei staining by DAPI. Scale bar, 500 \u03bcm. FACS plots of GFP expression in CD11b+F4/80+ splenic macrophages (C) and CD11b+Gr-1+ splenic PMN/monocyte (D) isolated from the spleens of uninfected WT mice, uninfected Slc30a1flag-EGFP/+ mice, and Salmonella-infected Slc30a1flag-EGFP/+ mice at 4 hpi (n = 3\u20135 mice/group). Shown at the right is the summary of the percentage of CD11b+F4/80+ splenic macrophages and CD11b+Gr-1+ splenic PMN/monocyte in each group. Data in this figure are represented as mean \u00b1 SEM. p values were determined using two-tailed unpaired Student\u2019s t-test. *p < 0.05, **p < 0.01, ***p < 0.001, and ns, not significant.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/89509/elife-89509-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** FACS plots of GFP expression in CD45+B220+ splenic B cells (A) and CD45+CD3+ splenic T cells (B) isolated from the spleens of uninfected WT mice, uninfected Slc30a1flag-EGFP/+ mice, and Salmonella-infected Slc30a1flag-EGFP/+ mice at 4 hpi (n = 3-5 mice/group). Shown at the right is the summary of the percentage of CD45+B220+ splenic B cells and CD45+CD3+ splenic T cells in each group. Data in this figure are represented as mean \u00b1 SEM. P values were determined using 2-tailed unpaired Student\u2019s t-test. **P<0.01 and ns, not significant.\n\n### Lyz2-Cre-driven Slc30a1 conditional knockout mice have increased susceptibility to Salmonella infection\n\nTo examine the role of Slc30a1 in macrophages with respect to protecting against Salmonella infection, we generated the conditional knockout mice with a loss-of-function allele of Slc30a1 in myeloid cells including macrophages by crossing mice carrying a floxed Slc30a1 allele (Slc30a1fl/fl) with Lyz2-Cre recombinase mice (Figure 4A); we then used the homozygous floxed mice with heterozygous Cre (Slc30a1fl/fl;Lyz2-Cre or Slc30a1 cKO(Conditional knockout)), with homozygous floxed littermates lacking Cre (Slc30a1fl/fl) serving as a control group. Loss of Slc30a1 expression was confirmed in Slc30a1 cKO BMDMs, with a more than 95% reduction in Slc30a1 mRNA levels compared to Slc30a1fl/fl cells (Figure 4B). Next, we injected attenuated Salmonella (1 \u00d7 105 CFU per mouse) into male Slc30a1 cKO and Slc30a1fl/fl littermates; we then monitored survival for 2 weeks and sacrificed a subgroup of mice 4\u201348 hpi. We found that the Salmonella-infected Slc30a1 cKO mice had significantly lower survival compared to Salmonella-infected Slc30a1fl/fl mice (Figure 4C). At 24 hpi, we observed severe tissue damage in the spleen (i.e., deformation of white pulp tissue) and liver (i.e., necrotic tissue) of Slc30a1 cKO mice when compared with Slc30a1fl/fl mice (Figure 4D, E), as well as higher levels of serum TNF\u03b1, alanine aminotransferase (ALT), and aspartate aminotransferase (AST) compared to Slc30a1fl/fl mice (Figure 4\u2014figure supplement 1). Interestingly, we also found that the Salmonella-infected Slc30a1 cKO mice contained a smaller proportion of CD11b+F4/80+ peritoneal macrophages compared to Salmonella-infected Slc30a1fl/fl mice (Figure 4F). In addition, we found significantly fewer neutrophils and monocytes in blood samples obtained at 24 hpi from infected Slc30a1 cKO mice compared to controls without interruption of other blood parameters (Supplementary file 3), possibly due to the reported expression of Lyz2-Cre in neutrophils (Clausen et al., 1999).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/89509/elife-89509-fig4-v1.jpg)\n\n**Figure 4.:** (A) Strategy for generating floxed Slc30a1 mice. Crossing this mouse with a heterozygous Lyz2-Cre mouse produces Slc30a1fl/fl;Lyz2-Cre and Slc30a1fl/fl littermates. (B) RT-qPCR analysis of relative Slc30a1 mRNA levels in bone marrow-derived macrophages (BMDMs) isolated from Slc30a1fl/fl;Lyz2-Cre and Slc30a1fl/fl mice (n = 5). (C) Kaplan\u2013Meier survival curve of Salmonella-infected mice (n = 14\u201315 mice/group). (D, E) Gross and hematoxylin and eosin (H&E)-stained images of spleen and liver obtained from Salmonella-infected mice at 24 hpi. Scale bars, 1 cm, 5 mm and 10 mm, respectively. (F) FACS plots (left) and summary (right) of CD11b+F4/80+ peritoneal macrophages obtained from Salmonella-infected mice at 4, 24, and 48 hpi (n = 5\u201310 mice/group). (G) Summary of Salmonella CFUs measured in the peritoneal fluid, blood, spleen, and liver of Salmonella-infected mice at 4, 24, and 48 hpi (n = 3\u20135 mice/group). Data in this figure are represented as mean \u00b1 SEM. p values of survival in D were determined using Log-rank test, in B and F\u2013K using two-tailed unpaired Student\u2019s t-test. *p < 0.05, **p < 0.01, ***p < 0.001, and ns, not significant.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/89509/elife-89509-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Serum TNF\u03b1, (B) ALT, and (C) AST were measured in uninfected (UN) and Salmonella-infected mice at 24 hpi (n = 4-10 mice/group). Data are represented as mean \u00b1 SEM. P values were determined using 2-tailed unpaired Student\u2019s t-test. *P<0.05 and ns, not significant.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/89509/elife-89509-fig4-figsupp2-v1.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A) Gross image of spleen and liver of mice after infection with a non-lethal dose of Salmonella (1x104 CFU/mouse) 4, 24, and 48 hpi. Scale bars, 1 cm. (B) FACS plots of CD11b+F4/80+ peritoneal macrophages obtained from Salmonella-infected Slc30a1fl/fl and Slc30a1fl/fl;Lyz2-Cre mice (n = 3-5 mice/group). (C) Bacterial burden (in CFU/ml) measured in the peritoneal fluid, blood, spleen, and liver of Salmonellainfected Slc30a1fl/fl and Slc30a1fl/fl;Lyz2-Cre mice (n = 3-5 mice/group). Data are represented as mean \u00b1 SEM. P values were determined using 2-tailed unpaired Student\u2019s t-test. *P<0.05, ***P<0.001, and ns, not significant.\n\nWe also quantified Salmonella burden at 4, 24, and 48 hpi and found significantly higher numbers of bacterial cells in the peritoneal cavity, blood, spleen, and liver of infected Slc30a1 cKO mice compared to control mice, particularly at 24 hpi (Figure 4G), indicating severe systemic infection. Furthermore, we performed in vivo infection studies in a separate group of mice using a non-lethal dose of attenuated Salmonella (1 \u00d7 104 CFU per mouse) and found the same pattern of tissue damage (Figure 4\u2014figure supplement 2A), peritoneal macrophage recruitment (Figure 4\u2014figure supplement 2B), and bacterial burden (Figure 4\u2014figure supplement 2C). Together, these in vivo data provide compelling evidence that Slc30a1 in macrophages may play an important protective role against Salmonella infection.\n\n### Loss of Slc30a1 in macrophages reduces bactericidal capacity by reducing iNOS(Inducible nitric oxide synthase) and nitric oxide production\n\nKilling intracellular microbes is a key biological function of macrophages (Flannagan et al., 2009). To study whether Slc30a1 mediates this function in macrophages, we isolated BMDMs from Slc30a1 cKO and Slc30a1fl/fl mice and exposed the cells to attenuated Salmonella (MOI = 10) in vitro for 24 hr. We found that Slc30a1 cKO BMDMs contained a significantly higher intracellular bacterial load compared to control cells at both 8 and 24 hr (Figure 5A). Moreover, examining the cells at high magnification using transmission electron microscopy revealed increased numbers of bacterial cells in the phagosomes of Slc30a1 cKO BMDMs at 24 hr compared to control cells (Figure 5B).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/89509/elife-89509-fig5-v1.jpg)\n\n**Figure 5.:** (A) Time course of the intracellular pathogen-killing capacity of Salmonella-infected Slc30a1fl/fl;Lyz2-Cre and Slc30a1fl/fl bone marrow-derived macrophages (BMDMs) measured in colony-forming units per ml (n = 5). (B) Transmission electron microscopy images of Salmonella-infected BMDMs at 24 hpi. Red arrows indicate bacterial-containing phagosomes, and the insets show magnified images of bacterial engulfment. Scale bars, 5 \u00b5m. (C\u2013E) RT-qPCR analysis of mRNAs encoding inflammatory cytokines (Tnf\u03b1, Il1\u03b2, and Il6), chemokines (Ccr2, Ccl2, Cxcl1, and Cxcl10) and macrophage biomarkers (Nos2 and Arg1) in BMDMs measured at the indicated times after Salmonella infection (multiplicity of infection [MOI] = 1) (n = 5). (F) Western blot analysis and summary of iNOS protein in Slc30a1fl/fl;Lyz2-Cre and Slc30a1fl/fl BMDMs either untreated or stimulated with Salmonella for 24 hr (n = 3). (G) Summary of nitrite concentration measured in the cell culture supernatant of BMDMs either untreated or stimulated with Salmonella for 24 hr (n = 5). (H) Western blot analysis and summary of p-p65 and p65 measured at the indicated times in Salmonella-infected BMDMs (n = 3). (I) RT-qPCR analysis of mRNA levels of genes involved in nuclear factor kappa B (NF-\u03baB) signaling (p65, MyD88, Ikk\u03b1, and Ikk\u03b2) measured in BMDMs 60 min after Salmonella infection (n = 5). (J) Western blot analysis and summary of p-p65 and p65 measured in uninfected and Salmonella-infected BMDMs either with or without N,N,N\u2032,N\u2032-tetrakis-(2-pyridyl-methyl)-ethylenediamine (TPEN) (4 \u00b5M) for 60 min (n = 4). (K) RT-qPCR analysis of p65, MyD88, Ikk\u03b1, and Ikk\u03b2 mRNA in uninfected and Salmonella-infected BMDMs either with or without TPEN for 60 min (n = 6). Data in this figure are represented as mean \u00b1 SEM. p values were determined using two-tailed unpaired Student\u2019s t-test. *p < 0.05, **p < 0.01, ***p < 0.001, and ns, not significant.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/89509/elife-89509-fig5-figsupp1-v1.jpg)\n\nInfected macrophages typically exhibit a classically activated (i.e., M1-like) phenotype. During Salmonella infection, these activated macrophages produce several proinflammatory cytokines and chemokines such as IL-1\u03b2(Interleukin-1 beta), TNF, and CCL2(C-C motif chemokine ligand 2) in order to clear the pathogen via mechanisms that include cell death, the recruitment of polymorphonuclear phagocytes, and oxidative processes (Brennan and Cookson, 2000; Pham et al., 2020; Depaolo et al., 2005). We therefore infected BMDMs with attenuated Salmonella (MOI = 1) and measured the mRNA levels of genes expressing key proinflammatory cytokines (Tnf\u03b1, Il1\u03b2, and Il6; Figure 5C), chemokines (Ccl2, Cxcl1, and Cxcl10; Figure 5D), and macrophage polarization\u2012related factors (Arg1 and Nos2; Figure 5E). We found significantly reduced expression of proinflammatory cytokine- and chemokine-related genes in infected Slc30a1 cKO BMDMs compared to control cells. In particular, we found extremely low levels of Nos2 mRNA in infected Slc30a1 cKO BMDMs; Nos2 encodes iNOS, a hallmark of classically activated macrophages that contributes to the host defense system by producing NO. Downregulation of the Nos2 gene was supported by the low levels of iNOS (Figure 5F\u2014source data 1) and nitrite concentrations (Figure 5G) in Salmonella-infected BMDMs. In addition, we found reduced expression of Nos2 and a number of proinflammatory cytokine-related genes in Slc30a1 cKO BMDMs exposed to either HK-ST or LPS compared to control cells (Figure 5\u2014figure supplement 1A, B). Western blot analysis of iNOS protein levels confirmed that both HK-ST and LPS (Figure 5\u2014figure supplement 1C, D, Figure 5\u2014source data 2) downregulate Nos2 in Slc30a1 cKO BMDMs compared to control cells. Moreover, we measured significantly lower levels of nitrite (NO2\u2212), a product of NO metabolism, in the cell culture supernatant of Slc30a1 cKO BMDMs 24 hr after HK-ST and LPS (Figure 5\u2014figure supplement 1E) compared to control cells.\n\nA variety of cellular signaling pathways have been reported to regulate Nos2 expression in macrophages in response to pathogens, particularly the NF-\u03baB (nuclear factor kappa B) pathway (Xie et al., 1994), the MAPK (mitogen-activated protein kinase) pathway (Chan and Riches, 2001), and the transcription factor STAT3 (signal transducer and activator of transcription 3) (Ahuja et al., 2020). We therefore measured the phosphorylated (i.e., activated) state of the principal proteins in these pathways\u2014namely, phosphorylated p65 (in the NF-\u03baB pathway), Erk and p38 (in the MAPK pathway), and Stat3\u2014in Slc30a1 cKO and Slc30a1fl/fl BMDMs 30 and 60 min after LPS stimulation. Western blot analysis revealed that p-p65, p-Erk, p-p38, and p-Stat3 levels were raised within 30 min in both Slc30a1 cKO and Slc30a1fl/fl BMDMs; however, p-p65 levels were significantly lower in Slc30a1 cKO BMDMs at 60 min (Figure 5\u2014figure supplement 1F, Figure 5\u2014source data 2). Similarly, Salmonella infection (MOI = 1) caused lower levels of p-p65 protein in Slc30a1 cKO BMDMs at 60 min compared to infected Slc30a1fl/fl cells (Figure 5H\u2014source data 1), as well as reduced mRNA levels of several genes upstream of the NF-\u03baB pathway, including p65, MyD88, Ikk\u03b1, and Ikk\u03b2 (Figure 5I). Notably, these Salmonella-induced changes in the expression of these key NF-\u03baB signaling molecules were prevented by treating cells with the membrane-permeable zinc chelator TPEN (N, N,N\u2032,N\u2032-tetrakis-(2-pyridyl-methyl)-ethylenediamine (TPEN)) (Figure 5J\u2014source data 1, Figure 5K). These results suggest that Slc30a1 in macrophages protects against Salmonella infection by regulating intracellular zinc.\n\n### Altered zinc distribution in Salmonella-infected Lyz2-Cre-driven Slc30a1 knockout mice\n\nNext, we examined whether Slc30a1 in macrophages regulates systemic zinc homeostasis by measuring zinc concentration in the serum, spleen, and liver of Slc30a1 cKO and Slc30a1fl/fl mice infected with attenuated Salmonella (1 \u00d7 105 CFU per mouse) for 24 hr using inductively coupled plasma mass spectrometry (ICP-MS); we also measured other minerals, including iron, copper, magnesium, calcium, and manganese (Figure 6\u2014figure supplement 1A\u2013C). We found that compared to Salmonella-infected control mice, Salmonella-infected Slc30a1 cKO mice had significantly higher levels of zinc in the serum and spleen but no difference in the liver (Figure 6A), consistent with the previous finding that during systemic infection serum zinc is redistributed to the liver in order to increase monocyte maturation, boost the immune system, and restrict the delivery of nutrient metals to pathogens (Alker and Haase, 2018). In addition, elevated serum zinc may impair the function of immune cells, leading to increased susceptibility to Salmonella infection. Moreover, the spleen serves to filter the blood filter and is a hub for monocytes (Swirski et al., 2009); thus, the high zinc content in the spleen may be due to circulating high zinc\u2012containing macrophages, a notion supported by our finding of increased mRNA levels of Mt1, which encodes the principal splenic zinc reservoir protein metallothionein 1, in the spleen of Salmonella-infected Slc30a1 cKO mice, but not in the liver (Figure 6B).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/89509/elife-89509-fig6-v1.jpg)\n\n**Figure 6.:** (A) Summary of zinc (Zn) content measured in the serum, spleen, and liver of uninfected (UN) and Salmonella-infected mice at 24 hpi (n = 4\u20135 mice/group). (B) RT-qPCR analysis of Mt1 mRNA in the spleen and liver of the indicated mice. (C) Time course of normalized FluoZin-3 mean fluorescence intensity (MFI) measured in bone marrow-derived macrophages (BMDMs); where indicated, ZnSO4 (100 \u00b5M) and N, N,N\u2032,N\u2032-tetrakis-(2-pyridyl-methyl)-ethylenediamine (TPEN) (4 \u00b5M) were applied to the cells. (D) Confocal fluorescence images of BMDMs stained with FluoZin-3 (green) after treatment with ZnSO4 for 15 min; the nuclei were counterstained with DAPI (blue). Scale bars, 50 \u00b5m. (E) Summary of normalized FluoZin-3 MFI measured in BMDMs 30 min after application of H2O2 (1 mM), lipopolysaccharide (LPS; 1 \u00b5g/ml), heat-killed Salmonella typhimurium (HK-ST) (multiplicity of infection [MOI] = 100), or Salmonella (MOI = 10) (n = 3). (F) RT-qPCR analysis of Mt1 mRNA in uninfected and Salmonella-infected BMDMs (n = 5). (G) Model showing the predicted effects of the loss of Slc30a1 on cellular zinc trafficking and intracellular zinc accumulation in BMDMs in response to Salmonella infection. Data in this figure are represented as mean \u00b1 SEM. p values were determined using two-tailed unpaired Student\u2019s t-test. *p < 0.05, **p < 0.01, ***p < 0.001, and ns, not significant.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/89509/elife-89509-fig6-figsupp1-v1.jpg)\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/89509/elife-89509-fig6-figsupp2-v1.jpg)\n\nNext, we used the fluorescent zinc probe FluoZin-3 to quantify the accumulation of intracellular zinc in BMDMs isolated from Slc30a1 cKO and control mice following ZnSO4 treatment. Consistent with the well-documented role of Slc30a1 in zinc resistance (Palmiter, 2004), we found that Slc30a1 cKO BMDMs were significantly more sensitive to ZnSO4-induced toxicity compared to control cells (Figure 6\u2014figure supplement 2), and ZnSO4 treatment (100 \u00b5M) caused a significantly higher FluoZin-3 signal in Slc30a1 cKO BMDMs compared to control cells (Figure 6C, D).\n\nPrevious studies showed that cytosolic-free zinc increases in macrophages following exposure to LPS, Escherichia coli, and Salmonella (Haase et al., 2008; Brieger et al., 2013, Wu et al., 2017). We, therefore, measured intracellular free zinc in Salmonella-infected Slc30a1 cKO and control BMDMs. We found that 30 min after Salmonella infection (MOI = 1), FluoZin-3 fluorescence was significantly higher in Slc30a1 cKO cells; similar results were obtained when the cells were exposed to H2O2 (1 mM), LPS (1 \u00b5g/ml), or HK-ST (MOI = 100) (Figure 6E). In addition, we measured higher levels of Mt1 mRNA in Slc30a1 cKO BMDMs compared to Slc30a1fl/fl cells, even in uninfected cells (Figure 6F). Based on these results, we hypothesize that the loss of Slc30a1 leads to an abnormal increase in intracellular zinc during Salmonella infection and increases the expression of Mt1, possibly to compensate for the excessive intracellular zinc by increasing Mt1-mediated zinc storage (Figure 6G).\n\n## Discussion\n\nHere, we provide evidence that Slc30a1 expression in macrophages is required for host resistance against pathogens, as illustrated schematically in Figure 7. Based on this model, Slc30a1-deficient macrophages have increased Salmonella burden due to reduced iNOS and NO formation via reduced NF-\u03baB signaling. This effect is due primarily to the inhibitory effects of high intracellular zinc, reflected by the compensatory upregulation of the zinc-binding protein Mt1.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/89509/elife-89509-fig7-v1.jpg)\n\n**Figure 7.:** Under normal conditions, Slc30a1 is upregulated in response to Salmonella infection, generating a short-term decrease in cytosolic zinc concentration and increasing zinc toxicity in Salmonella-containing phagosomes. Loss of Slc30a1 leads to an accumulation of intracellular zinc, thereby upregulating Mt1 overexpression and reducing iNOS and nitric oxide (NO) production via reduced nuclear factor kappa B (NF-\u03baB) signaling, reducing the cell\u2019s bacterial clearance capacity.\n\nThe cellular zinc exporter Slc30a1 is a key regulator of cellular zinc homeostasis (Kambe et al., 2015; Liuzzi and Cousins, 2004; Lichten and Cousins, 2009). Previous in vitro studies have shown that Slc30a1 in macrophages mediates the intracellular killing of invading Mycobacterium tuberculosis and E. coli by increasing zinc levels within phagosomes, thereby promoting bacterial clearance (Botella et al., 2011; Stocks et al., 2021). Here, we provide the first in vivo evidence that Slc30a1 in macrophages plays a key role in host protection against Salmonella infection. We show that mice lacking Slc30a1 in macrophages are highly susceptible to Salmonella infection.\n\nThe killing capacity of macrophages has been studied extensively, and it mediates the host defense by ingesting and then destroying invading microbes (Flannagan et al., 2009). Using BMDMs isolated from our Lyz2-Cre-driven Slc30a1 conditional knockout mice, we show that these macrophages have reduced pathogen-killing capacity via reduced NF-\u03baB signaling, decreasing iNOS and NO production. Interestingly, we found that treating these cells with the zinc chelator TPEN improves NF-\u03baB signaling, suggesting that changes in cellular zinc levels likely contribute to their reduced antimicrobial function. Wu et al. previously reported that zinc can suppress iNOS/NO production by inhibiting NF-\u03baB in Salmonella-infected macrophages (Wu et al., 2017). Moreover, recent studies have shown that zinc can reduce NF-\u03baB activation in macrophages (Haase et al., 2008; Brieger et al., 2013; Wu et al., 2017; Jeon et al., 2000). With respect to the underlying mechanism, studies have shown that zinc inhibits the NF-\u03baB pathway by reducing the activity of recombinant IKK\u03b1 and IKK\u03b2 by blocking I\u03baB\u03b1 phosphorylation and degradation (Jeon et al., 2000; Zhou et al., 2004; Liu et al., 2013). Consistent with this notion, our finding of the role of Slc30a1 in regulating the macrophage response to Salmonella may help explain how the genetic deletion of Slc30a1, specifically in this professional phagocyte leads to the observed disease outcome in our mouse model.\n\nAn interesting finding from our in vivo experiments is that our Lyz2-Cre-driven Slc30a1 conditional knockout mice fail to redistribute zinc levels in the serum and spleen following Salmonella infection. In general, serum zinc is rapidly taken up by the liver as part of the host defense process during systemic infection (Alker and Haase, 2018). In mice, defects in this process\u2014for example, due to high zinc supplementation\u2014have negative consequences for neutrophil extracellular traps (Ku\u017amicka et al., 2020). In infants, consuming a full-fat diet of powdered cow\u2019s milk containing excessive zinc content can lead to a decreased phagocytic capacity of monocytes (Schlesinger et al., 1993). In adults, excessive consumption of zinc supplements can impair both the migration and bactericidal capacity of polymorphonuclear leukocytes (Chandra, 1984). This is consistent with our finding that a high zinc serum level in our Lyz2-Cre-driven Slc30a1 conditional knockout mice affects the percentage of neutrophils and monocytes and the migration of macrophages, thereby reducing bacterial clearance and increasing their susceptibility to Salmonella infection. Furthermore, nutrient-dense conditions such as excessive serum zinc can be beneficial to the growth of Salmonella. Previous studies reported that a high-affinity Zn2+ uptake system ZnuABC of Salmonella protects the bacterial cells from nitrosative stress in macrophages (Fitzsimmons et al., 2018). Zinc rich also induces peptide deformylase, an essential protein contributing to Salmonella maturation that can be inhibited by NO (Singhal and Fang, 2020).\n\nOur measurements of intracellular zinc levels revealed high zinc concentrations in Slc30a1-deficient macrophages. We also detected an upregulation of Mt1, possibly indicating a cellular response to intracellular zinc saturation. Mt1 is a low molecular weight cysteine-rich protein with a high affinity for divalent metals that is essential for buffering surplus zinc to maintain zinc homeostasis (Kr\u0119\u017cel and Maret, 2017). Smith et al. showed that the level of Mt1 expression was positively correlated with intracellular free zinc concentration (Smith et al., 2008). In this respect, Mt1 overexpression may serve as zinc storage for reducing the side effects of excessive cytosolic-free zinc due to Slc30a1 deletion.\n\nAlthough we found that genetically deleting Slc30a1 in macrophages reduces the killing capacity by suppressing iNOS and nitrite production through zinc-medicated NF-\u03baB activation, the underlying mechanism that connects NO inactivation and excessive intracellular zinc remains uncertain. In this regard, additional experiments will be needed to investigate whether the antimicrobial function of Slc30a1-deficient macrophages is restricted to the defect of NO using selective inhibitors of iNOS. Furthermore, although we focused our study on BMDMs, macrophages may respond differently to infection in the context of the full immune system in vivo. Thus, generating a mouse line in which both Slc30a1 and Nos2 are knocked out in macrophages (Slc30a1fl/flNos2fl/fl;Lyz2-Cre) may provide insight into underlying mechanisms behind failed bacterial clearance that affects disease outcome.\n\nIn conclusion, we report that Slc30a1 of macrophages plays a protective role against Salmonella infection by regulating iNOS and NO activities, which are essential for bacterial clearance through NF-\u03baB signaling. These findings underscore the notion that cellular zinc regulated by zinc transporter Slc30a1 is important for host defenses by maintaining an intracellular killing capacity of macrophages. However, the precise mechanism of how Slc30a1 drives NO-mediated antibacterial activity remains misty, and further studies are needed to explore this aspect.\n\n## Materials and methods\n\n### Mouse strains\n\nSlc30a1flag-EGFP/+ mice were generated by Shanghai Biomodel Organism Science & Technology Development Co Ltd. The donor vector contains the 5\u2032 homologous arm, 3xFlag-2A-EGFP-2A-CreERT2-Wpre-pA, and the 3\u2032 homologous arm. In the 3\u2032 UTR of the Slc30a1 locus, the 3xFlag-2A-EGFP-2A-CreERT2-Wpre-pA cassette was inserted downstream of exon 2. Slc30a1 floxed mice were generated by Shanghai Biomodel Organism Science & Technology Development Co Ltd. The floxed Slc30a1 allele contains a single loxP site upstream of exon 2 and a single loxP site neo cassette downstream of exon 2. Heterozygous Slc30a1 floxed mice (Slc30a1fl/+) were backcrossed to the C57BL/6 background for more than 5 generations and then crossed with Lyz2-Cre-expressing mice (The Jackson Laboratory, 004781) to generate Lyz2-Cre-driven Slc30a1 conditional knockout (Slc30a1 cKO) mice. All mice were genotyped using genomic PCR. Cre-negative floxed mice (Slc30a1fl/fl) were used as the control group. Under standard conditions, an 8-week-old male Slc30a1 cKO presents with no obvious phenotype (data not shown). Wild-type C75BL/6 mice were purchased from Shanghai SLRC Laboratory Animal Co, Ltd. Eight-week-old male mice were used in this study. All animals were fed a standard chow diet with access to drinking water and were housed at constant temperature (23\u00b0C) under a 12:12 hr light/dark cycle in specific pathogen-free conditions. All in vivo experiments were conducted in accordance with the National Institutes of Health guidelines and were approved by the Institutional Animal Care and Use Committee at Zhejiang University.\n\n### DNA isolation and genotyping\n\nGenomic DNA of mouse tissue biopsies was extracted using the Tissue & Blood DNA Extraction kit-250prep (Zhejiang Easy-Do Biotech Co, Ltd, #DR0301250) in accordance with the manufacturer\u2019s instructions. DNA samples were quantified using a Nanodrop 2000 spectrophotometer (Thermo Fisher Scientific). PCR amplification was conducted using 50 ng DNA per reaction, 2xTaq PCR StarMix (GenStar, #A012-101), and specific primers (Figure 8A) in a T100 Thermal Cycler (Bio-Rad, #10878655). Finally, the PCR products were separated by agarose gel electrophoresis to determine the genotypes (Figure 8B, C, Figure 8\u2014source data 1).\n\n![Figure 8.](https://cdn.elifesciences.org/articles/89509/elife-89509-fig8-v1.jpg)\n\n**Figure 8.:** (A) List of primers used for routine genotyping. PCR was performed using genomic DNA from mouse tail biopsies. (B) Genotyping of Slc30a1-3xflag-EGFP (Slc30a1flag-EGFP/+) mouse line. The PCR fragment length for the wild-type (WT) Slc30a1 allele is 612 and 469 bp for the mutant allele, respectively. (C) The conditional knockout (Slc30a1fl/fl;Lyz2-Cre) mice were recognized by genomic PCR rendering one band of flox/flox allele (512 bp) with two bands of Lyz2-Cre heterozygous (410 and 340 bp). Each lane represents one individual mice.\n\n### Bacterial preparation\n\nThe experiments were performed with attenuated S. enterica subsp. enterica serovar Typhimurium strain MeganVac1 (Accession: CP112994.1). The bacterial stain was grown in tryptic soy broth medium (Solarbio Life Science, #T8880) overnight at 37\u00b0C under sterile conditions. Bacterial inoculum was compared to a 0.5 McFarland turbidity standard (approximately 1 \u00d7 108 CFU/ml) and adjusted to 105 colony-forming units per ml (CFU/ml) with sterile phosphate-buffered saline (PBS). The bacterial count in the original suspension was verified using a plate counting method. HK-ST was prepared by incubating the bacterial inoculum in a 60\u00b0C water bath for 2 hr, and a bacterial viable count was performed to confirm \u226599.99% reduction in viability.\n\n### Primary cell culture\n\nBMDMs were differentiated from bone marrow cells obtained from 8-week-old male mice (Figure 9). In brief, bone marrow cells from the femur and tibia were isolated by flushing with sterile PBS (Corning, #21-040-CV) and filtered through a 40-\u03bcm nylon membrane filter (Falcon, #350). The resulting cell suspension was centrifuged at 300 \u00d7 g for 5 min, and the cell pellet was resuspended in RPMI 1640 (Corning, #21-040-CVR) containing 1% (vol/vol) penicillin\u2013streptomycin (HyClone, #SV30010), 20% (vol/vol) fetal bovine serum (FBS) (Gibco, #10270-106), and 30% L929 conditioned medium. BMDMs were then differentiated for 7 days under 37\u00b0C in humidified air containing 5% CO2, refreshing the differentiation medium every 2 days. These BMDMs were then transferred to RPMI 1640 supplemented with 1% penicillin\u2013streptomycin and 10% FBS at 37\u00b0C and used the next day. We found no difference in BDMD differentiation between the genotypes used in this study.\n\n![Figure 9.](https://cdn.elifesciences.org/articles/89509/elife-89509-fig9-v1.jpg)\n\n**Figure 9.:** (A) Schematic illustration depicting the strategy used to measure the BMDM differentiation procedure. Bone marrow (BM) cells were harvested from the femur and tibia and cultured in L929 cell-conditioned medium (LCM) for 7 days. (B) Flow cytometry analysis and summary of the percent BMDM differentiation (CD11b+F4/80+) from BM samples obtained from the indicated mice measured at day 7 (n = 3). (C) Percent BMDM purification and absolute number of BMDMs measured after removing floating cells and measuring cell concentration. Data in this figure are represented as mean \u00b1 SEM. p values were determined using two-tailed unpaired Student\u2019s t-test. ns, not significant.\n\n### RNA-seq and data analysis\n\nBMDMs from biological triplicates of C75BL/6 mice were infected with Salmonella for 2 hr, and total RNA was extracted for RNA-seq. RNA-seq analysis was performed by LC Sciences (Hangzhou, China). GO and KEGG enrichment analyses were performed using the DAVID database. Heatmaps were generated using the OmicStudio tool (https://www.omicstudio.cn/tool). Volcano plots and bar plots of the GO and KEGG pathways were generated using the Tableau (2019.3. Ink) software desktop system.\n\n### Immunofluorescence\n\nBMDMs grown on glass coverslips in 6-well plates were exposed to ZnSO4 (40 \u00b5M) or infected with Salmonella (MOI = 1) for 4 hr. The cells were then fixed in 4% paraformaldehyde (PFA) for 15 min, permeabilized in 0.2% Triton X-100 (Sigma, #T9284) for 10 min, and then blocked in 5% (wt/vol) BSA(Bovine serum albumin) (Sigma, #A6003) for 30 min at room temperature. The fixed cells were then incubated in monoclonal anti-FLAG M2-Peroxidase (HRP) antibody (Sigma, #A8592) overnight at 4\u00b0C, followed by fluorophore-conjugated secondary antibody, Alexa Fluor 647 secondary antibody (Thermo Fisher Scientific, #A32728) for 1 hr at room temperature in the dark. The nuclei were stained with 3 \u00b5M DAPI (4\u2032,6-diamidino-2-phenylindole; BioLegend, #422801) for 5 min; after gently rinsing three times with PBS, the glass coverslips were mounted cell-side down on clean plain glass slides with 80% glycerol (Sigma, #G5516) and imaged using a CSU-W1 confocal microscope (Olympus).\n\n### Salmonella infection in vivo\n\nEight-week-old male mice were injected intraperitoneally (i.p.) with 200 \u03bcl PBS containing Salmonella at a final dose of 1 \u00d7 105 CFU per mouse or sterile PBS as uninfected groups. At the indicated time points, the mice were euthanized, and peritoneal cavity cells were subsequently collected to determine the peritoneal macrophage population. Blood samples were obtained via cardiac puncture, and the spleen and liver were dissected. The organs were either immediately placed on ice in sterile PBS to count bacterial burden or immersed in 4% PFA for later histological analysis. A portion of the blood was kept in serum collection tubes and allowed to be clotted for 2 hr at room temperature; clear serum was then obtained by centrifugation at 1000 rpm for 10 min. For survival experiments, after infection with Salmonella, the mice were monitored daily for 2 weeks.\n\n### Bacterial burden in tissues\n\nApproximately 100\u2013200 mg of liver and spleen samples were homogenized in sterile PBS. A 100 \u00b5l of tissue homogenate, peritoneal cavity fluid, and blood were serially diluted 10-fold in PBS and plated on TSA(Tryptic soy agar) agar (Solarbio life science, #T8650). The plates were incubated at 37\u00b0C overnight, and viable bacteria colonies were counted as CFU/ml or CFU per gram of tissue (CFU/g).\n\n### Serum ALT and AST measurements\n\nThe levels of serum AST and ALT from mice infected with or without Salmonella for 24 hr were measured using an alanine aminotransferase assay kit and aspartate aminotransferase assay kit (ShenSuoYouFu) according to the manufacturer\u2019s protocol.\n\n### ELISA\n\nCytokine levels of TNF\u03b1 were quantified in serum obtained from mice infected with and without Salmonella for 24 hr by the mouse/rat TNF-A Valukine ELISA kit (R&D Systems, #VAL609) following the product protocol.\n\n### Histopathology\n\nSpleen and liver samples were immersed in 4% PFA solution for 24 hr and then embedded in paraffin. The tissue samples were then sectioned and stained with hematoxylin and eosin using standard protocols. The sections were examined using bright-field microscopy (Nikon Eclipse Ni-U). Three adjacent sections of each sample were quantified using ImageJ software (National Institutes of Health).\n\n### Flow cytometry\n\nCell suspensions (1 \u00d7 105 cells/ml) were immunostained using specific anti-mouse antibodies in the dark at 4\u00b0C for 30 min. The following fluorochrome-conjugated antibodies were used in this study (all from BioLegend): CD11b-Pacific Blue (clone M1/70, #101224), CD11b-PE (clone M1/70, #1101208), F4/80-APC (clone BM8, #123116), Gr-1-APC (clone RB6-8C5, #108412), CD45-APC/Cyanine7 (clone 30-F11, #103116), CD45R/B220-Pacific Blue (clone RA3-6B2, #103227), and CD3-PerCP/Cyanine 5.5 (clone 17A2, #100218). All antibodies were used at a dilution of 1:200. Live versus dead cells were identified based on DAPI staining. Cell sorting was performed using the NovoCyte flow cytometer (ACEA Biosciences Inc).\n\n### Trace mineral analysis using ICP-MS\n\nMetal content was measured using ICP-MS. Tissue samples (200 mg) were digested in 4 ml of EMSURE ISO nitric acid 65% solution (Merck, #1.00456.2508) using a MARS 6 microwave extraction system. In brief, the samples were heated from room temperature to 200\u00b0C in a microwave oven (1000 W, 2,450 MHz) for up to 20 min. The microwave power was maintained for an additional 30 min, followed by a cooling-down period of 15 min. The samples were then completely dried at 110\u00b0C for 3 hr. The digested samples were diluted to a final volume of 5 ml in high-purity deionized water obtained using a Milli-Q Integral 10 purification system (EMD Millipore, #C205110). The resulting samples were subjected to metal analysis using an Agilent 7700x ICP-MS equipped with an Agilent ASX 520 auto-sampler.\n\n### Gene expression analysis using RT-qPCR\n\nTotal RNA was extracted from the samples using TransZol Up (TransGen Biotech, #ET111-01), and 1 \u03bcg of total RNA was used as a template to synthesize cDNA using the HiScript II 1st Strand cDNA Synthesis Kit (Yeasen Biotech, #11123ES60) in a ProFlex PCR System (Life technologies). Each RT-qPCR reaction consisted of 5 \u03bcl of SYBR Green PCR Master Mix (Bimake, #B21202), 2 \u03bcl of forward and reverse primers (1 \u00b5M), 0.2 \u00b5l of cDNA, and su\ufb03cient RNase-free water to yield a \ufb01nal volume of 10 \u03bcl. RT-qPCR was performed in duplicate for each sample using the LightCycler 480 Real-Time PCR System (F. Hoffmann-La Roche, Ltd) with the following conditions: initial denaturation at 95\u00b0C for 3 min, 40 cycles of amplification at 95\u00b0C for 15 s, 60\u00b0C for 30 s, and 72\u00b0C for 30 s, followed by denaturation at 95\u00b0C for 30 s, and annealing-extension at 40\u00b0C for 30 s. Data were analyzed using the 2\u2212\u0394Ct method (Pfaffl, 2001) to calculate the relative target gene expression normalized to the endogenous housekeeping gene Gapdh (glyceraldehyde-3-phosphate dehydrogenase). The oligonucleotides used in this study are provided in Supplementary file 4.\n\n### Bacterial killing assay\n\nBMDMs were plated at 2.5 \u00d7 105 cells/well in a 12-well plate and allowed to adhere overnight. The cells were then infected with Salmonella (MOI = 10) for 30 min by centrifuging the plate at 1000 rpm for 10 min and incubating for an additional 20 min. The plate was then rinsed twice with PBS containing 100 \u03bcg/ml gentamicin (Sigma, #345814) to remove the remaining extracellular bacteria. The cells were then incubated in a fresh medium containing 10 \u03bcg/ml gentamicin to prevent the growth of extracellular bacteria. Where indicated, infected cells were lysed with 0.1% Triton X-100, and serial dilutions of the cell lysates were plated on TSA agar, followed by incubation at 37\u00b0C overnight. The number of colonies appearing on the agar plate was counted in order to quantify the surviving bacteria. Intracellular killing of macrophages was verified after 24 hr infection using transmission electron microscopy. BMDMs were harvested and subjected to routine processing, post-fixed, embedded, sectioned, and mounted at the Center for Cryo-Electron Microscopy (CCEM), Zhejiang University. Finally, thin sections (~70 nm) were examined in an FEI Tecnai 10 (100 kV) transmission electron microscope.\n\n### NO measurement\n\nNitric oxide (NO) was determined through the formation of nitrite (NO2\u2212), the primary, stable metabolite of NO. Extracellular nitrite released from BMDMs (1 \u00d7 105 cells/well) stimulated with either HK-ST (MOI = 10) or 100 ng/ml LPS (Sigma, #L7895) was measured using a colorimetric assay based on the Griess reaction (Green et al., 1982). At the indicated time points, cell culture supernatants were collected and placed into a fresh 96-well plate. The supernatants were then mixed with freshly prepared Griess solution consisting of 0.1% N-1-naphthyl ethylenediamine dihydrochloride (Sigma, #N9125) and 1% sulfanilamide (Sigma, #V900220) in 5% phosphoric acid (Sigma, #P5811) at a ratio of 1:1. The plate was incubated at room temperature for 10 min in the dark. Absorbance at 540 nm was then measured using a microplate reader (Biotek Eon, Gen5), and nitrite production was calculated using a NaNO2 calibration curve.\n\n### Cell viability\n\nCell viability of BMDMs under high zinc conditions was measured using the plate-based colorimetric tetrazolium salt assay. First, BMDMs were plated in 96-well plates at 2 \u00d7 104 cells/well. The next day, twofold serial dilutions of ZnSO4 (Sigma, #Z0251) were added to the culture media, and the cells were incubated at 37\u00b0C for 24 hr. Next, the cell culture medium was carefully removed and replaced with 100 \u00b5l of fresh medium containing 5 mg/ml thiazolyl blue tetrazolium blue (Sigma, #M2128). The cells were incubated for an additional 4 hr, and then the cell culture media was discarded. Blue crystals catalyzed by the mitochondrial enzyme succinate dehydrogenase were solubilized in 100% DMSO(Dimethyl sulfoxide), and the intensity was measured colorimetrically at 570 nm.\n\n### Intracellular zinc measurement\n\nA cell-based microplate assay was used to measure intracellular free zinc ions (Zn2+) using the cell-permeable fluorescent probe FluoZin-3 AM (Invitrogen, #F24195). BMDMs were plated into 96-well clear-bottom black polystyrene microplates (Corning, #3603) at 1 \u00d7 105 cells/well and allowed to attach onto the bottom surface overnight. The cells were then incubated in culture media containing 2 \u03bcM FluoZin-3 AM for 30 min in the dark. After washing twice with PBS, the cells were incubated in fresh PBS for an additional 10 min to allow de-esterification. To detect cellular zinc accumulation, 100 \u03bcM ZnSO4 (Sigma, #Z0251) and/or 4 \u03bcM TPEN (Sigma, #P4413) was added to the cells, and FluoZin-3 fluorescence was measured at 1-min intervals for 30 min at 37\u00b0C using a SynergyMx M5 fluorescence microplate reader (Molecular Devices) with 485 nm excitation and 535 nm emission (Brieger et al., 2013). The levels of intracellular zinc in response to pathogens and H2O2 were measured after 30 min stimulation. Images of FluoZin-3 fluorescence were acquired using a Nikon A1R confocal microscopy and analyzed using NIS-Elements Viewer imaging software, version 4.50.\n\n### Protein quantification using western blot analysis\n\nProteins from BMDMs were extracted using RIPA buffer (Solarbio, #R0020) containing Pierce protease inhibitor (Thermo Fisher Scientific, #A32965) and phosphatase inhibitor (Roche, #04906845001). Total protein content was quantified using the Bradford dye-binding method (Sigma, #B6916). A total of 50 \u03bcg of cellular proteins were mixed with 5\u00d7 loading buffer and boiled for 5 min. Equal amounts of prepared proteins were electrophoresed in 10% SDS\u2013PAGE(sodium dodecyl sulfate-polyacrylamide gel electrophoresis) gel at 100 V. After gel electrophoresis, separated proteins were transferred onto polyvinylidene difluoride membrane (Bio-Rad, #1620177) at 300 mA for 90 min using transfer buffer containing 25 mM Tris, 192 mM glycine, and 20% methanol. The membranes were then blocked in 5% (wt/vol) skim milk in Tris-buffered saline containing 0.05% Tween-20 (TBST) for 90 min at room temperature. The membranes were then washed three times with TBST for 10 min each and then probed using the following primary antibodies overnight at 4\u00b0C (1:1000 dilution): iNOS antibody (#39898S), NF-\u03baB p65 (D14E12) XP rabbit mAb (#8242S), or phosphor-NF-\u03baB p65 (Ser536) (93H1) rabbit mAb (#3033) (all from Cell Signaling Technology). A monoclonal anti-FLAG M2-Peroxidase (HRP) antibody was used to detect the flag-tagged fusion protein. The following day, the membranes were washed with TBST and incubated with a secondary antibody, HRP-conjugated goat anti-rabbit IgG (H+L) (ABclonal, #AS014) diluted in 5% milk/TBST (1:2000) at room temperature for 2 hr. The membranes were then washed in TBST three times for 10 min each to remove excessive antibodies and developed using Pierce ECL Western Blotting Substrate (Thermo Fisher Scientific, #32106). The bands were quantified using the ChemiDoc Touch Imaging System (Bio-Rad).\n\n### Statistical analysis\n\nStatistical significance between the two groups was determined using a two-tailed, unpaired Student t-test (for comparing two groups). Data are presented as mean \u00b1 SEM. For comparison of survival curves, a Log-rank (Mantel\u2013Cox) test was performed. The sample size for each statistical analysis is provided in the figure legends. Data were analyzed and generated using GraphPad Prism version 7.04 (GraphPad Software Inc, La Jolla, CA, USA). For all studies, p values below 0.05 were considered to be statistically significant. *p < 0.05; **p < 0.01; ***p < 0.001; ns, not significant.\n",
+      "created_at": "2025-12-04T04:58:58.621968Z"
+    },
+    {
+      "id": "873b4b1d-81da-488d-b316-2a4ffe26e24e",
+      "submission_id": "42d36f4c-a5ec-4c44-9a41-b0a8285ae203",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Sophie Helaine, Harvard Medical School United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.89509.sa0](https://doi.org/10.7554/eLife.89509.sa0)\n\nThe important work described in this manuscript reveals a new pathway in nutritional immunity: the zinc transporter SLC30A1 in the antimicrobial function of macrophages. Authors provide convincing evidence that zinc homeostasis promotes macrophage cell function that is not conducive to the intracellular proliferation of Salmonella, specifically attenuated Salmonella. This will be of interest to readers involved in pathogenesis, immunity, and bacteriology.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Sophie Helaine, Harvard Medical School United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.89509.sa1](https://doi.org/10.7554/eLife.89509.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"The zinc transporter Slc30a1 in macrophages plays a protective role against Salmonella infection\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Dominique Soldati-Favre as the Senior Editor.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions (for the authors):\n\n1) Check if there is an effect of Slc30A1 deletion on bacterial phagocytosis (evaluation of bacterial numbers after 30 min of infection).\n\n2) How does Zinc or TPEN supplementation to bacteria in LB medium affect the log growth of Salmonella?\n\n3) revisit the histopathology results: check the scale bars, quantify lesions and carry out statistical analyses. The current magnification is not informative.\n\n4) Seeing the minor differences in burden presented on Figure 5A with 3 mice, please repeat.\n\n5) revisit the NO involvement in bactericidal activities as per the three reviewer's recommendation.\n\n6) Remove Figure 7.\n\n7) clarify the experimental setup that allow mice to survive such inoculum as per the three reviewers' comments.\n\nReviewer #2 (Recommendations for the authors):\n\nThe histopathology needs to be reanalyzed by a pathologist. I don't think the scale bars can be right. 5-10 mm? Quantification of lesions and statistical analyses are needed. The current magnification is not informative.\n\nMany of the experiments include very few numbers. For example, 3 mice were used for data in Figure 4K. This is a very low number of mice.\n\nFigure 5A, the differences in burden at 24 are very minor, and represent an N of 3. This experiment needs to be repeated.\n\nFigure 5B, it is not clear whether the bacteria in the Slec30a1-flox group (right panel) are actually in the vacuole. In this panel, not clear that the top arrow is actually pointing to a bacterial cell as the electrodensity is the particle is quite different from all other bacteria shown.\n\nFigure 5 shows expression of nos2 in response to Salmonella. However, panel F and G refer to responses to HK bacteria. The analysis should be done in response to life Salmonella cells. Given the MOI of 1 used, I'd be surprised if the macrophages produce much nitrite. Moreover, at the concentrations of nos2 expressed in the experimental conditions used, involvement of NO in the antimicrobial activity of BMDM is limited or inexistent. Killing assays in the presence of a NOS2 inhibitor should be used in order to draw the conclusions made in the paper. The burden isolated from peritoneal macrophages differs at 4 h but not at later times when wild-type and mutant littermates are compared (Figure 4K). The kinetics in Figure 4K are also inconsistent with the idea NO is mediating the resistance associated with Slc30a1. It is quite possible the zinc transport system contributes to NO-mediated host defense, but not under the experimental conditions tested.\n\nAs mentioned earlier, the data in Figure 7 is premature, detracting from the main body of work. I suggest data in Figure 7 is deleted from this manuscript.\n\nPublished data is not properly discussed, and the present findings are not presented in context of what we know about the role zinc plays in Salmonella pathogenesis.\n\nSalmonella uses a zinc transport and export systems to gain a hold in mice. Papers on bacterial znuABC and znt transport systems should be considered in the discussion (PMID: 30365536 and PMID: 33203749).\n\nI find it surprising that wild-type mice live so long after infection with 100,000 CFU of Salmonella. What is the strain of Salmonella used? Does it harbor any attenuating mutations?\n\nReviewer #3 (Recommendations for the authors):\n\nThe authors have done a lot of work and the information that Slc30a1 expression in macrophages contributes to control of Salmonella infection in mice is a new finding that will be of interest to the field. While the findings that SLC30A1 plays a role in macrophage mediated killing of Salmonella appears. The major conclusions of this study are not fully supported by the data and additional experiments are needed to define the mechanism by which Slc30a1 confers protection against bacterial pathogens like Salmonella Typhimurium.\n\nPrimarily, the stark difference in the survival of control animals compared to Slc30a1fl/flLysMCre mice (Figure 4D) does not appear to be consistent with the modest differences in the bacterial burden in Salmonella infected mice (Figure 4K) and macrophages (Figure 5A). The authors should consider reporting additional time points of these experiments or should explain how small differences in the bacterial burden result in the high susceptibility of the Slc30a1 conditional KO animal.\n\nConventional C57BL/6 mice are already highly susceptible to Salmonella infection, however considering the dose administered (1 x 10^5 via IP route), the mice should all die by 5-7 days, yet most of the mice survive for two weeks. The authors should include additional details as to how the animals were derived and the source of the Salmonella typhimurium strain used for the study.\n\nSalmonella express and secrete various effectors that alter the cellular environment of infected macrophages. As such, it is important that the authors perform additional experiments to show that iNOS and nitrite levels are down in Salmonella infected macrophages lacking Slc30a1, as the data shown are with dead Salmonella and LPS, and the result with live Salmonella may be different. Currently, the data show only a correlation between an increase in Salmonella numbers and a decrease in iNOS activity in Slc30a1 deficient macrophages. To infer a mechanistic link between Slc30a1 activity and NO-mediated microbicidal activity additional experiments are required, for example using inhibitors of iNOS.\n\nOverall, there are too many data in the paper, and not all of them are needed to support the main conclusions of the paper. The authors should consider paring down the data shown so that only the key experiments needed to support their conclusions are shown in the main figures and the remaining data are shown in the supplement. A published paper should communicate a scientific advance in a way that is accessible to the reader, and while the authors have clearly done a lot of work, it should not be necessary for the reader to wade through results that are not needed to support the major conclusions of the paper.\n\n[Editors' note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"The zinc transporter Slc30a1 in macrophages plays a protective role against Salmonella infection\" for further consideration by eLife. Your revised article has been evaluated by Dominique Soldati-Favre (Senior Editor) and a Reviewing Editor.\n\nThe manuscript has been improved but there are some remaining minor issues that need to be addressed, as outlined below:\n\nReviewer #2 (Recommendations for the authors):\n\nThis much improved manuscript has addressed my previous criticisms. There are two remaining issues that still need addressing. The conditional mice target macrophages but also other cells of the myelocytic cell lineage. Throughout the manuscript, please, soften your claim that the conditional mice used bear a macrophage-specific defect. Second, the fact that the strain of Salmonella used is a vaccine explains the high doses tolerated by the mice. The attenuated strain might have been important for the elicitation of NOS2-dependent immunity, a phenotype that may not have been exposed with wild-type Salmonella. To be fair with the scientific community, it should be very clear that the studies used an attenuated Salmonella strain. Therefore, I recommend the title is changed to \"The zinc transporter Slc30a1 in macrophages plays a protective role against attenuated Salmonella.\"\n\nReviewer #3 (Recommendations for the authors):\n\nWe appreciate the significant amount of effort made by the authors to carefully address our comments and find the revised manuscript to be much improved. A few editorial changes to the manuscript are needed before publication.\n\n(1) The information on the identity of the attenuated Salmonella strain that is provided in the response to reviewers helps to explain why the mice survived for so long after the bacterial challenge. This information still needs to be added to the revised manuscript, in both the Materials and methods and the Results section describing the experiments, to clarify to readers that the experiments were performed with attenuated Salmonella enterica subsp. enterica serovar Typhimurium strain MeganVac1 (Accession: CP112994.1).\n\n(2) While the caveat that a mechanistic link between SLC30A1 deficiency and NO production has not been shown in this study is now acknowledged in the discussion, in the abstract the sentence \"We demonstrate that Slc30a1 deficient macrophages are defective in intracellular killing due to loss of iNOS and NO activities with consequent inhibition of NF-\u03baB.\" needs to be modified to say \"We demonstrate that Slc30a1 deficient macrophages are defective in intracellular killing, which correlated with reduced activation of NF-\u03baB and reduction in NO production.\"\n",
+      "created_at": "2025-12-04T04:58:58.621968Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T04:58:58.621968Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T04:58:58.621968Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "c6c863d7-ada7-461e-a0f6-177bddd9645c",
+      "content_id": "548e4b65-181f-4e3b-8f6b-ad8b66675fd2",
+      "claim_id": "C1",
+      "claim": "Slc30a1 plays an essential role in maintaining cellular zinc homeostasis.",
+      "claim_type": "EXPLICIT",
+      "source": "The zinc transporter Slc30a1 plays an essential role in maintaining cellular zinc homeostasis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as an established fact about Slc30a1's function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:58:58.621968Z"
+    },
+    {
+      "id": "a37e0c86-7df9-4c34-8c7d-ac07a996cbb7",
+      "content_id": "548e4b65-181f-4e3b-8f6b-ad8b66675fd2",
+      "claim_id": "C2",
+      "claim": "The functional role of Slc30a1 in macrophages remains largely unknown.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite this, its functional role in macrophages remains largely unknown.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated in the abstract as a knowledge gap.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:58:58.621968Z"
+    },
+    {
+      "id": "12ca9243-6bbb-4a06-a652-29490e32ad09",
+      "content_id": "548e4b65-181f-4e3b-8f6b-ad8b66675fd2",
+      "claim_id": "C3",
+      "claim": "Bulk transcriptome sequencing in primary macrophages identifies Slc30a1 as a candidate in response to Salmonella infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Bulk transcriptome sequencing in primary macrophages identifies Slc30a1 as a candidate in response to Salmonella infection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by RNA-seq data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:58:58.621968Z"
+    },
+    {
+      "id": "370a554b-7b3b-41d3-93fe-108f4be351f7",
+      "content_id": "548e4b65-181f-4e3b-8f6b-ad8b66675fd2",
+      "claim_id": "C4",
+      "claim": "Slc30a1 expression is increased in infected macrophages with localization at the plasma membrane and in the cytosol.",
+      "claim_type": "EXPLICIT",
+      "source": "Whole-mount immunofluorescence and confocal microscopy imaging of primary macrophage and spleen from Salmonella-infected Slc30a1flag-EGFP mice demonstrate Slc30a1 expression is increased in infected macrophages with localization at the plasma membrane and in the cytosol.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by immunofluorescence and microscopy data from the reporter mice.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:58:58.621968Z"
+    },
+    {
+      "id": "0e873e28-62e8-48ca-bc92-67492c44d9ac",
+      "content_id": "548e4b65-181f-4e3b-8f6b-ad8b66675fd2",
+      "claim_id": "C5",
+      "claim": "Lyz2-Cre-driven Slc30a1 conditional knockout mice exhibit increased susceptibility to Salmonella infection compared to control littermates.",
+      "claim_type": "EXPLICIT",
+      "source": "Lyz2-Cre-driven Slc30a1 conditional knockout mice (Slc30a1fl/fl;Lyz2-Cre) exhibit increased susceptibility to Salmonella infection compared to control littermates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by survival data and bacterial burden measurements in the conditional knockout mice.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:58:58.621968Z"
+    },
+    {
+      "id": "dc3e927d-7ffa-4f92-842c-e6559904a4ac",
+      "content_id": "548e4b65-181f-4e3b-8f6b-ad8b66675fd2",
+      "claim_id": "C6",
+      "claim": "Slc30a1-deficient macrophages are defective in intracellular killing.",
+      "claim_type": "EXPLICIT",
+      "source": "We demonstrate that Slc30a1-deficient macrophages are defective in intracellular killing, which correlated with reduced activation of nuclear factor kappa B and reduction in nitric oxide (NO) production.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by bacterial killing assays and measurements of NF-\u03baB activation and NO production.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:58:58.621968Z"
+    },
+    {
+      "id": "27102611-537e-4da5-a5b4-6a5967885174",
+      "content_id": "548e4b65-181f-4e3b-8f6b-ad8b66675fd2",
+      "claim_id": "C7",
+      "claim": "Slc30a1-deficient macrophages show reduced activation of nuclear factor kappa B.",
+      "claim_type": "EXPLICIT",
+      "source": "We demonstrate that Slc30a1-deficient macrophages are defective in intracellular killing, which correlated with reduced activation of nuclear factor kappa B and reduction in nitric oxide (NO) production.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by western blot analysis of p-p65 and related signaling molecules.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:58:58.621968Z"
+    },
+    {
+      "id": "1827fc78-74a1-4582-b15f-47ded5a7e892",
+      "content_id": "548e4b65-181f-4e3b-8f6b-ad8b66675fd2",
+      "claim_id": "C8",
+      "claim": "Slc30a1-deficient macrophages show reduction in nitric oxide (NO) production.",
+      "claim_type": "EXPLICIT",
+      "source": "We demonstrate that Slc30a1-deficient macrophages are defective in intracellular killing, which correlated with reduced activation of nuclear factor kappa B and reduction in nitric oxide (NO) production.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by nitrite concentration measurements and iNOS protein levels.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:58:58.621968Z"
+    },
+    {
+      "id": "05dd87b8-ee11-45d4-8087-f8b39b0aea9a",
+      "content_id": "548e4b65-181f-4e3b-8f6b-ad8b66675fd2",
+      "claim_id": "C9",
+      "claim": "Slc30a1-deficient macrophages exhibit intracellular zinc accumulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the model exhibits intracellular zinc accumulation, demonstrating that Slc30a1 is required for zinc export.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by FluoZin-3 fluorescence measurements showing higher intracellular zinc in Slc30a1 cKO cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:58:58.621968Z"
+    },
+    {
+      "id": "09c17f9b-f4e6-4ed6-8e62-6567af0d753b",
+      "content_id": "548e4b65-181f-4e3b-8f6b-ad8b66675fd2",
+      "claim_id": "C10",
+      "claim": "Slc30a1 is required for zinc export.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the model exhibits intracellular zinc accumulation, demonstrating that Slc30a1 is required for zinc export.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that loss of Slc30a1 leads to intracellular zinc accumulation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:58:58.621968Z"
+    },
+    {
+      "id": "22d23988-f599-4549-a71c-194b092b80dc",
+      "content_id": "548e4b65-181f-4e3b-8f6b-ad8b66675fd2",
+      "claim_id": "C11",
+      "claim": "Zinc export enables the efficient NO-mediated antibacterial activity of macrophages to control invading Salmonella.",
+      "claim_type": "EXPLICIT",
+      "source": "We thus conclude that zinc export enables the efficient NO-mediated antibacterial activity of macrophages to control invading Salmonella.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the combined observations of zinc accumulation, reduced NO production, and impaired bacterial killing in Slc30a1-deficient macrophages.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:58:58.621968Z"
+    },
+    {
+      "id": "cceee3d2-54de-4913-902b-d47522b0f4ab",
+      "content_id": "548e4b65-181f-4e3b-8f6b-ad8b66675fd2",
+      "claim_id": "C12",
+      "claim": "Salmonella infection is one of the leading causes of diarrhea-related death, particularly among children under 5 years of age.",
+      "claim_type": "EXPLICIT",
+      "source": "According to the 2015 Global Burden of Disease Study, Salmonella infection is one of the leading causes of diarrhea-related death, particularly among children under 5 years of age (Troeger et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to the 2015 Global Burden of Disease Study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:58:58.621968Z"
+    },
+    {
+      "id": "662b124a-d5ee-4555-b5ca-1dc48fecfbce",
+      "content_id": "548e4b65-181f-4e3b-8f6b-ad8b66675fd2",
+      "claim_id": "C13",
+      "claim": "Severe cases of Salmonella septicemia are associated with a 25% mortality rate.",
+      "claim_type": "EXPLICIT",
+      "source": "Severe cases of Salmonella septicemia are associated with a 25% mortality rate (Feasey et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Feasey et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:58:58.621968Z"
+    },
+    {
+      "id": "41d71d8d-7ff4-4fd0-9b7f-97a772c4f39f",
+      "content_id": "548e4b65-181f-4e3b-8f6b-ad8b66675fd2",
+      "claim_id": "C14",
+      "claim": "Zinc deficiency has been linked to the incidence of Salmonella infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on epidemiological reports, zinc deficiency has been linked to the incidence of Salmonella infection (Troeger et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to epidemiological reports.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:58:58.621968Z"
+    },
+    {
+      "id": "4372f5c1-948c-432a-be67-be1912895159",
+      "content_id": "548e4b65-181f-4e3b-8f6b-ad8b66675fd2",
+      "claim_id": "C15",
+      "claim": "Zinc is involved in a wide range of fundamental biological processes, including modulating the immune system's response to invading pathogens.",
+      "claim_type": "EXPLICIT",
+      "source": "As an essential micronutrient, zinc is involved in a wide range of fundamental biological processes, including modulating the immune system's response to invading pathogens (Wessels et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Wessels et al., 2021.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:58:58.621968Z"
+    },
+    {
+      "id": "d2f4b764-1fb6-4981-a71c-6fa5b351b68d",
+      "content_id": "548e4b65-181f-4e3b-8f6b-ad8b66675fd2",
+      "claim_id": "C16",
+      "claim": "Zinc homeostasis is tightly regulated by two families of zinc transporters: Slc30a (ZnTs) and Slc39a (ZIPs).",
+      "claim_type": "EXPLICIT",
+      "source": "In mammalian cells, zinc homeostasis is tightly regulated by two families of zinc transporters, namely solute carrier family 30 (Slc30a, also known as ZnTs) and solute carrier family 39 (Slc39a, also known as ZIPs), which export and import cellular zinc, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about zinc transporter families.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:58:58.621968Z"
+    },
+    {
+      "id": "b17a24a1-6629-4dc4-ac78-184e7fd62d8a",
+      "content_id": "548e4b65-181f-4e3b-8f6b-ad8b66675fd2",
+      "claim_id": "C17",
+      "claim": "Slc30a family transporters export cellular zinc.",
+      "claim_type": "EXPLICIT",
+      "source": "In mammalian cells, zinc homeostasis is tightly regulated by two families of zinc transporters, namely solute carrier family 30 (Slc30a, also known as ZnTs) and solute carrier family 39 (Slc39a, also known as ZIPs), which export and import cellular zinc, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the function of Slc30a transporters.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:58:58.621968Z"
+    },
+    {
+      "id": "9fe0da16-5701-4c52-a537-527b4492138f",
+      "content_id": "548e4b65-181f-4e3b-8f6b-ad8b66675fd2",
+      "claim_id": "C18",
+      "claim": "Slc39a family transporters import cellular zinc.",
+      "claim_type": "EXPLICIT",
+      "source": "In mammalian cells, zinc homeostasis is tightly regulated by two families of zinc transporters, namely solute carrier family 30 (Slc30a, also known as ZnTs) and solute carrier family 39 (Slc39a, also known as ZIPs), which export and import cellular zinc, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the function of Slc39a transporters.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:58:58.621968Z"
+    },
+    {
+      "id": "bf9ffee5-06ab-4b65-b04a-6c628c0b3b7b",
+      "content_id": "548e4b65-181f-4e3b-8f6b-ad8b66675fd2",
+      "claim_id": "C19",
+      "claim": "Zinc imbalance caused by the dysfunction of zinc transporters contributes to impaired hematopoiesis and macrophage survival.",
+      "claim_type": "EXPLICIT",
+      "source": "Zinc imbalance caused by the dysfunction of zinc transporters contributes to impaired hematopoiesis and macrophage survival (He et al., 2023; Gao et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to He et al., 2023 and Gao et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:58:58.621968Z"
+    },
+    {
+      "id": "14784cb0-4256-490e-accf-3fbe6db83fc1",
+      "content_id": "548e4b65-181f-4e3b-8f6b-ad8b66675fd2",
+      "claim_id": "C20",
+      "claim": "Slc30a1 (ZnT1) is ubiquitously expressed in mammalian cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Slc30a1 (ZnT1) is ubiquitously expressed in mammalian cells and is localized primarily at the plasma membrane (Nishito and Kambe, 2019; Golan et al., 2015; Guo et al., 2010), where it enables the export of cytoplasmic zinc to the extracellular space (Shusterman et al., 2017; Kambe et al., 2015; Kimura and Kambe, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Nishito and Kambe, 2019; Golan et al., 2015; Guo et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:58:58.621968Z"
+    },
+    {
+      "id": "07305c29-f869-4ab1-9258-2d7a83709a37",
+      "content_id": "548e4b65-181f-4e3b-8f6b-ad8b66675fd2",
+      "claim_id": "C21",
+      "claim": "Slc30a1 is localized primarily at the plasma membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "Slc30a1 (ZnT1) is ubiquitously expressed in mammalian cells and is localized primarily at the plasma membrane (Nishito and Kambe, 2019; Golan et al., 2015; Guo et al., 2010), where it enables the export of cytoplasmic zinc to the extracellular space (Shusterman et al., 2017; Kambe et al., 2015; Kimura and Kambe, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Nishito and Kambe, 2019; Golan et al., 2015; Guo et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:58:58.621968Z"
+    },
+    {
+      "id": "f866a818-e30c-490d-8a90-f5c75f79da0d",
+      "content_id": "548e4b65-181f-4e3b-8f6b-ad8b66675fd2",
+      "claim_id": "C22",
+      "claim": "Slc30a1 enables the export of cytoplasmic zinc to the extracellular space.",
+      "claim_type": "EXPLICIT",
+      "source": "Slc30a1 (ZnT1) is ubiquitously expressed in mammalian cells and is localized primarily at the plasma membrane (Nishito and Kambe, 2019; Golan et al., 2015; Guo et al., 2010), where it enables the export of cytoplasmic zinc to the extracellular space (Shusterman et al., 2017; Kambe et al., 2015; Kimura and Kambe, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Shusterman et al., 2017; Kambe et al., 2015; Kimura and Kambe, 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:58:58.621968Z"
+    },
+    {
+      "id": "f5b56903-122a-40ae-a32b-6eb3b7139d11",
+      "content_id": "548e4b65-181f-4e3b-8f6b-ad8b66675fd2",
+      "claim_id": "C23",
+      "claim": "Loss of Slc30a1 causes early embryonic death in mice.",
+      "claim_type": "EXPLICIT",
+      "source": "In mice, loss of Slc30a1 causes early embryonic death (Andrews et al., 2004), suggesting that Slc30a1 is essential for early development and survival.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Andrews et al., 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:58:58.621968Z"
+    },
+    {
+      "id": "bd3f45ea-e67d-4854-8d5d-c6a175d8a688",
+      "content_id": "548e4b65-181f-4e3b-8f6b-ad8b66675fd2",
+      "claim_id": "C24",
+      "claim": "Slc30a1 is essential for early development and survival.",
+      "claim_type": "EXPLICIT",
+      "source": "In mice, loss of Slc30a1 causes early embryonic death (Andrews et al., 2004), suggesting that Slc30a1 is essential for early development and survival.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that loss of Slc30a1 causes early embryonic death.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:58:58.621968Z"
+    },
+    {
+      "id": "78a0a713-85cd-46dd-ac3e-50fc0c3c017b",
+      "content_id": "548e4b65-181f-4e3b-8f6b-ad8b66675fd2",
+      "claim_id": "C25",
+      "claim": "Slc30a1 expression is induced by a wide range of pathogens, including bacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent data provide evidence that Slc30a1 expression is induced by a wide range of pathogens, including bacteria (Botella et al., 2011; Stocks et al., 2021), fungi (Rossi et al., 2021), and viruses (Moskovskich et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Botella et al., 2011 and Stocks et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:58:58.621968Z"
+    },
+    {
+      "id": "0bbaf31e-5a63-48da-81ab-440fb3b6fdf5",
+      "content_id": "548e4b65-181f-4e3b-8f6b-ad8b66675fd2",
+      "claim_id": "C26",
+      "claim": "Slc30a1 expression is induced by fungi.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent data provide evidence that Slc30a1 expression is induced by a wide range of pathogens, including bacteria (Botella et al., 2011; Stocks et al., 2021), fungi (Rossi et al., 2021), and viruses (Moskovskich et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Rossi et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:58:58.621968Z"
+    },
+    {
+      "id": "fb4feea8-921a-4be1-9733-4abfe3a6221d",
+      "content_id": "548e4b65-181f-4e3b-8f6b-ad8b66675fd2",
+      "claim_id": "C27",
+      "claim": "Slc30a1 expression is induced by viruses.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent data provide evidence that Slc30a1 expression is induced by a wide range of pathogens, including bacteria (Botella et al., 2011; Stocks et al., 2021), fungi (Rossi et al., 2021), and viruses (Moskovskich et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Moskovskich et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:58:58.621968Z"
+    },
+    {
+      "id": "a66a1854-bad3-434c-9410-25965481e470",
+      "content_id": "548e4b65-181f-4e3b-8f6b-ad8b66675fd2",
+      "claim_id": "C28",
+      "claim": "Macrophages serve as the front line in the innate immune system by detecting and eliminating foreign pathogens.",
+      "claim_type": "EXPLICIT",
+      "source": "Macrophages serve as the front line in the innate immune system by detecting and eliminating foreign pathogens.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the role of macrophages in immunity.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:58:58.621968Z"
+    },
+    {
+      "id": "fb94c27f-0ddd-41aa-84c7-1f16ba4ead6f",
+      "content_id": "548e4b65-181f-4e3b-8f6b-ad8b66675fd2",
+      "claim_id": "C29",
+      "claim": "When Salmonella invades tissues, the bacteria are rapidly engulfed and killed by resident macrophages.",
+      "claim_type": "EXPLICIT",
+      "source": "When Salmonella invades tissues, the bacteria are rapidly engulfed and killed by resident macrophages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the macrophage response to Salmonella.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:58:58.621968Z"
+    },
+    {
+      "id": "3758a664-e5d6-4aa9-9ae9-577bc5652b73",
+      "content_id": "548e4b65-181f-4e3b-8f6b-ad8b66675fd2",
+      "claim_id": "C30",
+      "claim": "Rapid engulfment and killing of Salmonella by macrophages result in bacterial clearance, cytokine production, and the recruitment of polymorphonuclear phagocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "This rapid engulfment and killing of Salmonella by macrophages result in bacterial clearance, cytokine production, and the recruitment of polymorphonuclear phagocytes (Mastroeni et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Mastroeni et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:58:58.621968Z"
+    },
+    {
+      "id": "2bf6c32a-0bbf-40ce-8cbd-9facc84708f6",
+      "content_id": "548e4b65-181f-4e3b-8f6b-ad8b66675fd2",
+      "claim_id": "C31",
+      "claim": "RNA sequencing revealed a total of 1074 differentially expressed genes in Salmonella-infected BMDMs compared to control-treated BMDMs.",
+      "claim_type": "EXPLICIT",
+      "source": "Our analysis revealed a total of 1074 differentially expressed genes (DEGs), defined as an absolute log2 fold change >1 and an adjusted p value of <0.05 compared to control-treated BMDMs (Figure 1A, B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RNA-seq data presented in Figure 1A and 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:58:58.621968Z"
+    },
+    {
+      "id": "8067211c-3b68-4d80-97c3-2f22802bd3b0",
+      "content_id": "548e4b65-181f-4e3b-8f6b-ad8b66675fd2",
+      "claim_id": "C32",
+      "claim": "Significantly downregulated genes in Salmonella-infected BMDMs were enriched in anti-inflammatory pathways, including Gpx1, Smad7, and Tgfb3.",
+      "claim_type": "EXPLICIT",
+      "source": "Among these 1074 genes, significantly downregulated genes were enriched in anti-inflammatory pathways, including Gpx1, Smad7, and Tgfb3, and significantly upregulated genes were enriched in infectious and inflammatory pathways, including Tnf, Il6, Il1\u03b2, Ptgs2, and Nos2, suggesting a potent antimicrobial response in infected macrophages (Figure 1C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RNA-seq data and pathway analysis presented in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:58:58.621968Z"
+    },
+    {
+      "id": "e11369f9-da7b-4bfe-a61c-755266afa933",
+      "content_id": "548e4b65-181f-4e3b-8f6b-ad8b66675fd2",
+      "claim_id": "C33",
+      "claim": "Significantly upregulated genes in Salmonella-infected BMDMs were enriched in infectious and inflammatory pathways, including Tnf, Il6, Il1\u03b2, Ptgs2, and Nos2.",
+      "claim_type": "EXPLICIT",
+      "source": "Among these 1074 genes, significantly downregulated genes were enriched in anti-inflammatory pathways, including Gpx1, Smad7, and Tgfb3, and significantly upregulated genes were enriched in infectious and inflammatory pathways, including Tnf, Il6, Il1\u03b2, Ptgs2, and Nos2, suggesting a potent antimicrobial response in infected macrophages (Figure 1C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RNA-seq data and pathway analysis presented in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:58:58.621968Z"
+    },
+    {
+      "id": "daeb6b29-d68d-4cdd-81a4-2c18a790da0a",
+      "content_id": "548e4b65-181f-4e3b-8f6b-ad8b66675fd2",
+      "claim_id": "C34",
+      "claim": "Gene expression patterns in Salmonella-infected BMDMs suggest a potent antimicrobial response.",
+      "claim_type": "EXPLICIT",
+      "source": "Among these 1074 genes, significantly downregulated genes were enriched in anti-inflammatory pathways, including Gpx1, Smad7, and Tgfb3, and significantly upregulated genes were enriched in infectious and inflammatory pathways, including Tnf, Il6, Il1\u03b2, Ptgs2, and Nos2, suggesting a potent antimicrobial response in infected macrophages (Figure 1C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the pattern of gene expression changes observed in the RNA-seq data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:58:58.621968Z"
+    },
+    {
+      "id": "5969ce03-e41b-4ba4-9f10-c64305186f04",
+      "content_id": "548e4b65-181f-4e3b-8f6b-ad8b66675fd2",
+      "claim_id": "C35",
+      "claim": "KEGG pathway enrichment analysis of DEGs yielded 54 pathways (p < 0.05) involved largely in infectious diseases.",
+      "claim_type": "EXPLICIT",
+      "source": "while Kyoto Encyclopedia of Genes and Genomes (KEGG) pathway enrichment analysis of these DEGs yielded 54 pathways (p < 0.05) involved largely in infectious diseases (Figure 1E and Supplementary file 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by KEGG pathway analysis presented in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:58:58.621968Z"
+    },
+    {
+      "id": "b47b5440-b21b-46ae-973d-482f34fb8d10",
+      "content_id": "548e4b65-181f-4e3b-8f6b-ad8b66675fd2",
+      "claim_id": "C36",
+      "claim": "Mineral absorption was identified as a predominant pathway in KEGG analysis, with upregulation of Atp2b1, Atp7a, Mt2, Slc30a1, and Trpm7 genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Using KEGG pathway analysis, we identified mineral absorption as a predominant pathway, with upregulation of the Atp2b1, Atp7a, Mt2, Slc30a1, and Trpm7 genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by KEGG pathway analysis of the RNA-seq data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:58:58.621968Z"
+    },
+    {
+      "id": "d0b76e1e-4e88-4c22-a3ac-6a75b84a01d5",
+      "content_id": "548e4b65-181f-4e3b-8f6b-ad8b66675fd2",
+      "claim_id": "C37",
+      "claim": "Slc30a1 was ranked as the most significantly upregulated gene in human monocyte-derived macrophages infected with Salmonella.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, Slc30a1 was ranked as the most significantly upregulated gene and was therefore selected for further study.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by analysis of publicly available RNA-seq data (GSE67427) from human macrophages.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:58:58.621968Z"
+    },
+    {
+      "id": "bd087edd-c3dd-413b-86c5-3aa926747c90",
+      "content_id": "548e4b65-181f-4e3b-8f6b-ad8b66675fd2",
+      "claim_id": "C38",
+      "claim": "Slc30a1 expression peaked at 2 hr in Salmonella-treated BMDMs.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that Slc30a1 expression peaked at 2 and 4 hr in the Salmonella- and LPS-treated cells, respectively, while HK-ST produced a significantly smaller response that also peaked at 2 hr (Figure 1\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RT-qPCR data presented in Figure 1\u2014figure supplement 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:58:58.621968Z"
+    },
+    {
+      "id": "4a510387-8348-40cd-9905-10ce7f48b9f8",
+      "content_id": "548e4b65-181f-4e3b-8f6b-ad8b66675fd2",
+      "claim_id": "C39",
+      "claim": "Slc30a1 expression peaked at 4 hr in LPS-treated BMDMs.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that Slc30a1 expression peaked at 2 and 4 hr in the Salmonella- and LPS-treated cells, respectively, while HK-ST produced a significantly smaller response that also peaked at 2 hr (Figure 1\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RT-qPCR data presented in Figure 1\u2014figure supplement 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:58:58.621968Z"
+    },
+    {
+      "id": "50c7d764-1793-4649-b7a2-c678d9ac167a",
+      "content_id": "548e4b65-181f-4e3b-8f6b-ad8b66675fd2",
+      "claim_id": "C40",
+      "claim": "Heat-killed Salmonella typhimurium produced a significantly smaller Slc30a1 expression response that peaked at 2 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that Slc30a1 expression peaked at 2 and 4 hr in the Salmonella- and LPS-treated cells, respectively, while HK-ST produced a significantly smaller response that also peaked at 2 hr (Figure 1\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RT-qPCR data presented in Figure 1\u2014figure supplement 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:58:58.621968Z"
+    },
+    {
+      "id": "8cb34888-963e-4987-a382-d703544449c2",
+      "content_id": "548e4b65-181f-4e3b-8f6b-ad8b66675fd2",
+      "claim_id": "C41",
+      "claim": "Slc30a1 expression was significantly higher in peritoneal macrophages at 4 hr post-infection compared to uninfected mice.",
+      "claim_type": "EXPLICIT",
+      "source": "To validate this in vitro finding in vivo, we gave C57BL/6 mice an intraperitoneal (i.p.) injection of a sublethal dose of attenuated Salmonella (1 \u00d7 105 CFU per mouse); at 4 hr post-infection (4 hpi), Slc30a1 expression was significantly higher in peritoneal macrophages compared to uninfected mice (Figure 1\u2014figure supplement 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by in vivo RT-qPCR data presented in Figure 1\u2014figure supplement 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:58:58.621968Z"
+    },
+    {
+      "id": "9cb41040-fb98-4d4c-8fa8-03e0594b4c96",
+      "content_id": "548e4b65-181f-4e3b-8f6b-ad8b66675fd2",
+      "claim_id": "C42",
+      "claim": "Salmonella-infected and ZnSO4-treated Slc30a1flag-EGFP/+ BMDMs had significantly higher levels of the reporter protein compared to untreated cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to untreated WT and untreated Slc30a1flag-EGFP/+ BMDMs, both the Salmonella-infected and ZnSO4-treated Slc30a1flag-EGFP/+ BMDMs had significantly higher levels of the reporter protein (Figure 2\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by western blot analysis shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:58:58.621968Z"
+    },
+    {
+      "id": "07ea039e-c545-4610-9033-d7d3d7aa3ef1",
+      "content_id": "548e4b65-181f-4e3b-8f6b-ad8b66675fd2",
+      "claim_id": "C43",
+      "claim": "ZnSO4 increased the levels of the Slc30a1-flag reporter, primarily in the plasma membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, we found that ZnSO4 increased the levels of the Slc30a1-flag reporter, primarily in the plasma membrane (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by confocal microscopy data presented in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:58:58.621968Z"
+    },
+    {
+      "id": "f477bc89-5d14-4418-81db-ed22ba1e7d8e",
+      "content_id": "548e4b65-181f-4e3b-8f6b-ad8b66675fd2",
+      "claim_id": "C44",
+      "claim": "The Slc30a1-flag reporter was present both in the cytosol and in the plasma membrane in Salmonella-infected cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, however, the Slc30a1-flag reporter was present both in the cytosol and in the plasma membrane in Salmonella-infected cells, suggesting that Slc30a1 may contribute to both zinc efflux and intracellular zinc movement in response to Salmonella infection.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by confocal microscopy data presented in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:58:58.621968Z"
+    },
+    {
+      "id": "d358160e-5867-4b41-b4fd-8c76a5a9434b",
+      "content_id": "548e4b65-181f-4e3b-8f6b-ad8b66675fd2",
+      "claim_id": "C45",
+      "claim": "Slc30a1 may contribute to both zinc efflux and intracellular zinc movement in response to Salmonella infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, however, the Slc30a1-flag reporter was present both in the cytosol and in the plasma membrane in Salmonella-infected cells, suggesting that Slc30a1 may contribute to both zinc efflux and intracellular zinc movement in response to Salmonella infection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation of Slc30a1 localization in both cytosol and plasma membrane.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:58:58.621968Z"
+    },
+    {
+      "id": "f03c917a-ea26-45d6-9371-dca84506dcc2",
+      "content_id": "548e4b65-181f-4e3b-8f6b-ad8b66675fd2",
+      "claim_id": "C46",
+      "claim": "Slc30a1 is expressed at high levels specifically in splenic F4/80-positive cells at the area of red pulp in infected mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Immunostaining for Slc30a1-flag and the macrophage biomarker F4/80 revealed that Slc30a1 is expressed at high levels, specifically in splenic F4/80\u2012positive cells at the area of red pulp in infected mice, but not in uninfected mice (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunostaining data presented in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:58:58.621968Z"
+    },
+    {
+      "id": "8bc362b4-849e-403a-8cff-0e7bd5989c66",
+      "content_id": "548e4b65-181f-4e3b-8f6b-ad8b66675fd2",
+      "claim_id": "C47",
+      "claim": "Slc30a1 is not expressed at high levels in splenic F4/80-positive cells in uninfected mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Immunostaining for Slc30a1-flag and the macrophage biomarker F4/80 revealed that Slc30a1 is expressed at high levels, specifically in splenic F4/80\u2012positive cells at the area of red pulp in infected mice, but not in uninfected mice (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunostaining data presented in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:58:58.621968Z"
+    },
+    {
+      "id": "4cddc73e-77e7-450e-825c-ea6fa6c40003",
+      "content_id": "548e4b65-181f-4e3b-8f6b-ad8b66675fd2",
+      "claim_id": "C48",
+      "claim": "Salmonella-induced expression of Slc30a1 was confirmed by high GFP expression in CD11b+F4/80+ peritoneal macrophages.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, Salmonella-induced expression of Slc30a1 was confirmed by measuring high GFP expression in CD11b+F4/80+ peritoneal macrophages (Figure 3A) and splenic macrophages (Figure 3B, C), while there was no GFP expression in other splenic immune cells (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by FACS data presented in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:58:58.621968Z"
+    },
+    {
+      "id": "a32ff0f0-87cd-45ea-8cbd-b50e1920d637",
+      "content_id": "548e4b65-181f-4e3b-8f6b-ad8b66675fd2",
+      "claim_id": "C49",
+      "claim": "Salmonella-induced expression of Slc30a1 was confirmed by high GFP expression in splenic macrophages.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, Salmonella-induced expression of Slc30a1 was confirmed by measuring high GFP expression in CD11b+F4/80+ peritoneal macrophages (Figure 3A) and splenic macrophages (Figure 3B, C), while there was no GFP expression in other splenic immune cells (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by FACS data presented in Figure 3B and 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:58:58.621968Z"
+    },
+    {
+      "id": "54651736-dd93-4df5-868f-70d57b6551ba",
+      "content_id": "548e4b65-181f-4e3b-8f6b-ad8b66675fd2",
+      "claim_id": "C50",
+      "claim": "There was no GFP expression in other splenic immune cells following Salmonella infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, Salmonella-induced expression of Slc30a1 was confirmed by measuring high GFP expression in CD11b+F4/80+ peritoneal macrophages (Figure 3A) and splenic macrophages (Figure 3B, C), while there was no GFP expression in other splenic immune cells (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by FACS data presented in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:58:58.621968Z"
+    },
+    {
+      "id": "8dd0b4b4-b805-475b-9a7e-81fa53f23b06",
+      "content_id": "548e4b65-181f-4e3b-8f6b-ad8b66675fd2",
+      "claim_id": "C51",
+      "claim": "Loss of Slc30a1 expression was confirmed in Slc30a1 cKO BMDMs, with a more than 95% reduction in Slc30a1 mRNA levels compared to Slc30a1fl/fl cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Loss of Slc30a1 expression was confirmed in Slc30a1 cKO BMDMs, with a more than 95% reduction in Slc30a1 mRNA levels compared to Slc30a1fl/fl cells (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RT-qPCR data presented in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:58:58.621968Z"
+    },
+    {
+      "id": "c3541e24-1553-4d0c-844e-6742f6c45f62",
+      "content_id": "548e4b65-181f-4e3b-8f6b-ad8b66675fd2",
+      "claim_id": "C52",
+      "claim": "Salmonella-infected Slc30a1 cKO mice had significantly lower survival compared to Salmonella-infected Slc30a1fl/fl mice.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the Salmonella-infected Slc30a1 cKO mice had significantly lower survival compared to Salmonella-infected Slc30a1fl/fl mice (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by survival curve data presented in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:58:58.621968Z"
+    },
+    {
+      "id": "fc67a23a-b969-4822-8179-c382183cc4ca",
+      "content_id": "548e4b65-181f-4e3b-8f6b-ad8b66675fd2",
+      "claim_id": "C53",
+      "claim": "At 24 hpi, severe tissue damage was observed in the spleen (deformation of white pulp tissue) and liver (necrotic tissue) of Slc30a1 cKO mice compared with Slc30a1fl/fl mice.",
+      "claim_type": "EXPLICIT",
+      "source": "At 24 hpi, we observed severe tissue damage in the spleen (i.e., deformation of white pulp tissue) and liver (i.e., necrotic tissue) of Slc30a1 cKO mice when compared with Slc30a1fl/fl mice (Figure 4D, E)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by histological analysis presented in Figure 4D and 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:58:58.621968Z"
+    },
+    {
+      "id": "c261d6de-fac3-4890-b226-b52f3554250d",
+      "content_id": "548e4b65-181f-4e3b-8f6b-ad8b66675fd2",
+      "claim_id": "C54",
+      "claim": "Salmonella-infected Slc30a1 cKO mice had higher levels of serum TNF\u03b1, ALT, and AST compared to Slc30a1fl/fl mice at 24 hpi.",
+      "claim_type": "EXPLICIT",
+      "source": "as well as higher levels of serum TNF\u03b1, alanine aminotransferase (ALT), and aspartate aminotransferase (AST) compared to Slc30a1fl/fl mice (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by serum measurements presented in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:58:58.621968Z"
+    },
+    {
+      "id": "157e32e9-8a61-4dd0-a999-3c014359e07a",
+      "content_id": "548e4b65-181f-4e3b-8f6b-ad8b66675fd2",
+      "claim_id": "C55",
+      "claim": "Salmonella-infected Slc30a1 cKO mice contained a smaller proportion of CD11b+F4/80+ peritoneal macrophages compared to Salmonella-infected Slc30a1fl/fl mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we also found that the Salmonella-infected Slc30a1 cKO mice contained a smaller proportion of CD11b+F4/80+ peritoneal macrophages compared to Salmonella-infected Slc30a1fl/fl mice (Figure 4F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by FACS data presented in Figure 4F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:58:58.621968Z"
+    },
+    {
+      "id": "9fe209a6-8251-47bf-827b-e03f1d222bf3",
+      "content_id": "548e4b65-181f-4e3b-8f6b-ad8b66675fd2",
+      "claim_id": "C56",
+      "claim": "Significantly fewer neutrophils and monocytes were found in blood samples obtained at 24 hpi from infected Slc30a1 cKO mice compared to controls.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we found significantly fewer neutrophils and monocytes in blood samples obtained at 24 hpi from infected Slc30a1 cKO mice compared to controls without interruption of other blood parameters (Supplementary file 3), possibly due to the reported expression of Lyz2-Cre in neutrophils (Clausen et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by blood cell count data in Supplementary file 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:58:58.621968Z"
+    },
+    {
+      "id": "77b9cbe2-81c0-49f8-83f5-3322c0269894",
+      "content_id": "548e4b65-181f-4e3b-8f6b-ad8b66675fd2",
+      "claim_id": "C57",
+      "claim": "The reduction in neutrophils and monocytes in Slc30a1 cKO mice is possibly due to the reported expression of Lyz2-Cre in neutrophils.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we found significantly fewer neutrophils and monocytes in blood samples obtained at 24 hpi from infected Slc30a1 cKO mice compared to controls without interruption of other blood parameters (Supplementary file 3), possibly due to the reported expression of Lyz2-Cre in neutrophils (Clausen et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the known expression pattern of Lyz2-Cre and supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:58:58.621968Z"
+    },
+    {
+      "id": "c42f5fc9-cc1a-4033-a1ab-18de1bb465c3",
+      "content_id": "548e4b65-181f-4e3b-8f6b-ad8b66675fd2",
+      "claim_id": "C58",
+      "claim": "Salmonella-infected Slc30a1 cKO mice had significantly higher numbers of bacterial cells in the peritoneal cavity, blood, spleen, and liver compared to control mice, particularly at 24 hpi.",
+      "claim_type": "EXPLICIT",
+      "source": "We also quantified Salmonella burden at 4, 24, and 48 hpi and found significantly higher numbers of bacterial cells in the peritoneal cavity, blood, spleen, and liver of infected Slc30a1 cKO mice compared to control mice, particularly at 24 hpi (Figure 4G), indicating severe systemic infection.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by bacterial burden measurements presented in Figure 4G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:58:58.621968Z"
+    },
+    {
+      "id": "228fe853-a330-4ae6-aee3-1157a8f3489d",
+      "content_id": "548e4b65-181f-4e3b-8f6b-ad8b66675fd2",
+      "claim_id": "C59",
+      "claim": "The higher bacterial burden in Slc30a1 cKO mice indicates severe systemic infection.",
+      "claim_type": "EXPLICIT",
+      "source": "We also quantified Salmonella burden at 4, 24, and 48 hpi and found significantly higher numbers of bacterial cells in the peritoneal cavity, blood, spleen, and liver of infected Slc30a1 cKO mice compared to control mice, particularly at 24 hpi (Figure 4G), indicating severe systemic infection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation of high bacterial burden across multiple organs.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:58:58.621968Z"
+    },
+    {
+      "id": "a15edffb-9bd6-4c67-ad26-6ecf7fc3fc8a",
+      "content_id": "548e4b65-181f-4e3b-8f6b-ad8b66675fd2",
+      "claim_id": "C60",
+      "claim": "Slc30a1 cKO BMDMs contained a significantly higher intracellular bacterial load compared to control cells at both 8 and 24 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that Slc30a1 cKO BMDMs contained a significantly higher intracellular bacterial load compared to control cells at both 8 and 24 hr (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by bacterial killing assay data presented in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:58:58.621968Z"
+    },
+    {
+      "id": "bf1e1059-ff8d-4c2a-a3af-a07cd65fd9f3",
+      "content_id": "548e4b65-181f-4e3b-8f6b-ad8b66675fd2",
+      "claim_id": "C61",
+      "claim": "Transmission electron microscopy revealed increased numbers of bacterial cells in the phagosomes of Slc30a1 cKO BMDMs at 24 hr compared to control cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, examining the cells at high magnification using transmission electron microscopy revealed increased numbers of bacterial cells in the phagosomes of Slc30a1 cKO BMDMs at 24 hr compared to control cells (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by transmission electron microscopy images presented in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:58:58.621968Z"
+    },
+    {
+      "id": "46b80fcb-e81f-4609-9a3e-21cb8c24f3a2",
+      "content_id": "548e4b65-181f-4e3b-8f6b-ad8b66675fd2",
+      "claim_id": "C62",
+      "claim": "Infected Slc30a1 cKO BMDMs showed significantly reduced expression of proinflammatory cytokine- and chemokine-related genes compared to control cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We found significantly reduced expression of proinflammatory cytokine- and chemokine-related genes in infected Slc30a1 cKO BMDMs compared to control cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by RT-qPCR data for cytokines and chemokines presented in Figure 5C and 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:58:58.621968Z"
+    },
+    {
+      "id": "62359c6b-7238-48d9-8473-3a7ee797595d",
+      "content_id": "548e4b65-181f-4e3b-8f6b-ad8b66675fd2",
+      "claim_id": "C63",
+      "claim": "Extremely low levels of Nos2 mRNA were found in infected Slc30a1 cKO BMDMs.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, we found extremely low levels of Nos2 mRNA in infected Slc30a1 cKO BMDMs; Nos2 encodes iNOS, a hallmark of classically activated macrophages that contributes to the host defense system by producing NO.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by RT-qPCR data presented in Figure 5E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:58:58.621968Z"
+    },
+    {
+      "id": "b7a5a14f-6c4a-42f9-9670-c956e8439b6b",
+      "content_id": "548e4b65-181f-4e3b-8f6b-ad8b66675fd2",
+      "claim_id": "C64",
+      "claim": "Nos2 encodes iNOS, a hallmark of classically activated macrophages that contributes to the host defense system by producing NO.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, we found extremely low levels of Nos2 mRNA in infected Slc30a1 cKO BMDMs; Nos2 encodes iNOS, a hallmark of classically activated macrophages that contributes to the host defense system by producing NO.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the function of Nos2/iNOS.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:58:58.621968Z"
+    },
+    {
+      "id": "8386d0c1-7731-4399-b914-29c067f7d372",
+      "content_id": "548e4b65-181f-4e3b-8f6b-ad8b66675fd2",
+      "claim_id": "C65",
+      "claim": "Downregulation of the Nos2 gene was supported by low levels of iNOS protein in Salmonella-infected BMDMs.",
+      "claim_type": "EXPLICIT",
+      "source": "Downregulation of the Nos2 gene was supported by the low levels of iNOS (Figure 5F\u2014source data 1) and nitrite concentrations (Figure 5G) in Salmonella-infected BMDMs.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by western blot data presented in Figure 5F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:58:58.621968Z"
+    },
+    {
+      "id": "71ec300d-e07c-4269-99ad-c3ea0458b957",
+      "content_id": "548e4b65-181f-4e3b-8f6b-ad8b66675fd2",
+      "claim_id": "C66",
+      "claim": "Downregulation of the Nos2 gene was supported by low nitrite concentrations in Salmonella-infected BMDMs.",
+      "claim_type": "EXPLICIT",
+      "source": "Downregulation of the Nos2 gene was supported by the low levels of iNOS (Figure 5F\u2014source data 1) and nitrite concentrations (Figure 5G) in Salmonella-infected BMDMs.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by nitrite concentration measurements presented in Figure 5G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:58:58.621968Z"
+    },
+    {
+      "id": "34493044-c453-4fc4-a93a-da7709f10a47",
+      "content_id": "548e4b65-181f-4e3b-8f6b-ad8b66675fd2",
+      "claim_id": "C67",
+      "claim": "Reduced expression of Nos2 and proinflammatory cytokine-related genes was found in Slc30a1 cKO BMDMs exposed to HK-ST or LPS compared to control cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we found reduced expression of Nos2 and a number of proinflammatory cytokine-related genes in Slc30a1 cKO BMDMs exposed to either HK-ST or LPS compared to control cells (Figure 5\u2014figure supplement 1A, B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RT-qPCR data presented in Figure 5\u2014figure supplement 1A and 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:58:58.621968Z"
+    },
+    {
+      "id": "71d7871e-83de-4b6a-b633-8d5008b90882",
+      "content_id": "548e4b65-181f-4e3b-8f6b-ad8b66675fd2",
+      "claim_id": "C68",
+      "claim": "Western blot analysis confirmed that both HK-ST and LPS downregulate Nos2 in Slc30a1 cKO BMDMs compared to control cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Western blot analysis of iNOS protein levels confirmed that both HK-ST and LPS (Figure 5\u2014figure supplement 1C, D, Figure 5\u2014source data 2) downregulate Nos2 in Slc30a1 cKO BMDMs compared to control cells.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by western blot data presented in Figure 5\u2014figure supplement 1C and 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:58:58.621968Z"
+    },
+    {
+      "id": "46326752-b0e0-4a8d-8f5d-3f05b8a64ccb",
+      "content_id": "548e4b65-181f-4e3b-8f6b-ad8b66675fd2",
+      "claim_id": "C69",
+      "claim": "Significantly lower levels of nitrite were measured in the cell culture supernatant of Slc30a1 cKO BMDMs 24 hr after HK-ST and LPS compared to control cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, we measured significantly lower levels of nitrite (NO2\u2212), a product of NO metabolism, in the cell culture supernatant of Slc30a1 cKO BMDMs 24 hr after HK-ST and LPS (Figure 5\u2014figure supplement 1E) compared to control cells.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by nitrite measurements presented in Figure 5\u2014figure supplement 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:58:58.621968Z"
+    },
+    {
+      "id": "d5b284fc-3483-423b-a47f-ac262f2a4d95",
+      "content_id": "548e4b65-181f-4e3b-8f6b-ad8b66675fd2",
+      "claim_id": "C70",
+      "claim": "p-p65 levels were significantly lower in Slc30a1 cKO BMDMs at 60 min after LPS stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Western blot analysis revealed that p-p65, p-Erk, p-p38, and p-Stat3 levels were raised within 30 min in both Slc30a1 cKO and Slc30a1fl/fl BMDMs; however, p-p65 levels were significantly lower in Slc30a1 cKO BMDMs at 60 min (Figure 5\u2014figure supplement 1F, Figure 5\u2014source data 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by western blot data presented in Figure 5\u2014figure supplement 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:58:58.621968Z"
+    },
+    {
+      "id": "ec4fba0e-8dbf-490a-bfa0-78d1a0644f43",
+      "content_id": "548e4b65-181f-4e3b-8f6b-ad8b66675fd2",
+      "claim_id": "C71",
+      "claim": "Salmonella infection caused lower levels of p-p65 protein in Slc30a1 cKO BMDMs at 60 min compared to infected Slc30a1fl/fl cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, Salmonella infection (MOI = 1) caused lower levels of p-p65 protein in Slc30a1 cKO BMDMs at 60 min compared to infected Slc30a1fl/fl cells (Figure 5H\u2014source data 1)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by western blot data presented in Figure 5H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:58:58.621968Z"
+    },
+    {
+      "id": "1a7e13d2-820c-4c76-a4cc-b1733343a141",
+      "content_id": "548e4b65-181f-4e3b-8f6b-ad8b66675fd2",
+      "claim_id": "C72",
+      "claim": "Salmonella infection caused reduced mRNA levels of p65, MyD88, Ikk\u03b1, and Ikk\u03b2 in Slc30a1 cKO BMDMs.",
+      "claim_type": "EXPLICIT",
+      "source": "as well as reduced mRNA levels of several genes upstream of the NF-\u03baB pathway, including p65, MyD88, Ikk\u03b1, and Ikk\u03b2 (Figure 5I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RT-qPCR data presented in Figure 5I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:58:58.621968Z"
+    },
+    {
+      "id": "6a159813-537c-4c8d-9717-b52781bca3d5",
+      "content_id": "548e4b65-181f-4e3b-8f6b-ad8b66675fd2",
+      "claim_id": "C73",
+      "claim": "Salmonella-induced changes in the expression of key NF-\u03baB signaling molecules were prevented by treating cells with TPEN.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, these Salmonella-induced changes in the expression of these key NF-\u03baB signaling molecules were prevented by treating cells with the membrane-permeable zinc chelator TPEN (N, N,N\u2032,N\u2032-tetrakis-(2-pyridyl-methyl)-ethylenediamine (TPEN)) (Figure 5J\u2014source data 1, Figure 5K).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by western blot and RT-qPCR data presented in Figure 5J and 5K.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:58:58.621968Z"
+    },
+    {
+      "id": "c72a7228-5a87-43cc-8780-2dd653925f1b",
+      "content_id": "548e4b65-181f-4e3b-8f6b-ad8b66675fd2",
+      "claim_id": "C74",
+      "claim": "Slc30a1 in macrophages protects against Salmonella infection by regulating intracellular zinc.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that Slc30a1 in macrophages protects against Salmonella infection by regulating intracellular zinc.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that TPEN treatment rescues NF-\u03baB signaling defects in Slc30a1-deficient cells.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:58:58.621968Z"
+    },
+    {
+      "id": "a69e9ce2-29cb-4c93-8a5d-f0336ac94cbe",
+      "content_id": "548e4b65-181f-4e3b-8f6b-ad8b66675fd2",
+      "claim_id": "C75",
+      "claim": "Salmonella-infected Slc30a1 cKO mice had significantly higher levels of zinc in the serum and spleen but no difference in the liver compared to control mice.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that compared to Salmonella-infected control mice, Salmonella-infected Slc30a1 cKO mice had significantly higher levels of zinc in the serum and spleen but no difference in the liver (Figure 6A)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by ICP-MS measurements presented in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:58:58.621968Z"
+    },
+    {
+      "id": "b2a01447-7c0d-4c93-a71f-9d902b14a018",
+      "content_id": "548e4b65-181f-4e3b-8f6b-ad8b66675fd2",
+      "claim_id": "C76",
+      "claim": "During systemic infection, serum zinc is redistributed to the liver to increase monocyte maturation, boost the immune system, and restrict the delivery of nutrient metals to pathogens.",
+      "claim_type": "EXPLICIT",
+      "source": "consistent with the previous finding that during systemic infection serum zinc is redistributed to the liver in order to increase monocyte maturation, boost the immune system, and restrict the delivery of nutrient metals to pathogens (Alker and Haase, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Alker and Haase, 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:58:58.621968Z"
+    },
+    {
+      "id": "b83c1693-232d-429b-8d99-cd08c7ece0e5",
+      "content_id": "548e4b65-181f-4e3b-8f6b-ad8b66675fd2",
+      "claim_id": "C77",
+      "claim": "Elevated serum zinc may impair the function of immune cells, leading to increased susceptibility to Salmonella infection.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, elevated serum zinc may impair the function of immune cells, leading to increased susceptibility to Salmonella infection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation of elevated serum zinc in susceptible Slc30a1 cKO mice.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:58:58.621968Z"
+    },
+    {
+      "id": "054dd458-e72c-4237-a825-759571192349",
+      "content_id": "548e4b65-181f-4e3b-8f6b-ad8b66675fd2",
+      "claim_id": "C78",
+      "claim": "The spleen serves to filter the blood and is a hub for monocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the spleen serves to filter the blood filter and is a hub for monocytes (Swirski et al., 2009)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Swirski et al., 2009.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:58:58.621968Z"
+    },
+    {
+      "id": "b25f105c-4d38-4fcf-8da8-b652e9bad645",
+      "content_id": "548e4b65-181f-4e3b-8f6b-ad8b66675fd2",
+      "claim_id": "C79",
+      "claim": "The high zinc content in the spleen may be due to circulating high zinc-containing macrophages.",
+      "claim_type": "EXPLICIT",
+      "source": "thus, the high zinc content in the spleen may be due to circulating high zinc\u2012containing macrophages, a notion supported by our finding of increased mRNA levels of Mt1, which encodes the principal splenic zinc reservoir protein metallothionein 1, in the spleen of Salmonella-infected Slc30a1 cKO mice, but not in the liver (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the observation of high splenic zinc and increased Mt1 expression.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:58:58.621968Z"
+    },
+    {
+      "id": "a8a9c2fe-98ea-4d2b-8b4a-52c6dfae9214",
+      "content_id": "548e4b65-181f-4e3b-8f6b-ad8b66675fd2",
+      "claim_id": "C80",
+      "claim": "Increased mRNA levels of Mt1 were found in the spleen of Salmonella-infected Slc30a1 cKO mice, but not in the liver.",
+      "claim_type": "EXPLICIT",
+      "source": "thus, the high zinc content in the spleen may be due to circulating high zinc\u2012containing macrophages, a notion supported by our finding of increased mRNA levels of Mt1, which encodes the principal splenic zinc reservoir protein metallothionein 1, in the spleen of Salmonella-infected Slc30a1 cKO mice, but not in the liver (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RT-qPCR data presented in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:58:58.621968Z"
+    },
+    {
+      "id": "0814374b-43b6-48e1-8dfb-aae0789a892c",
+      "content_id": "548e4b65-181f-4e3b-8f6b-ad8b66675fd2",
+      "claim_id": "C81",
+      "claim": "Mt1 encodes the principal splenic zinc reservoir protein metallothionein 1.",
+      "claim_type": "EXPLICIT",
+      "source": "thus, the high zinc content in the spleen may be due to circulating high zinc\u2012containing macrophages, a notion supported by our finding of increased mRNA levels of Mt1, which encodes the principal splenic zinc reservoir protein metallothionein 1, in the spleen of Salmonella-infected Slc30a1 cKO mice, but not in the liver (Figure 6B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the function of Mt1.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:58:58.621968Z"
+    },
+    {
+      "id": "f6aa6139-f925-49a1-a611-be5a2e874b95",
+      "content_id": "548e4b65-181f-4e3b-8f6b-ad8b66675fd2",
+      "claim_id": "C82",
+      "claim": "Slc30a1 cKO BMDMs were significantly more sensitive to ZnSO4-induced toxicity compared to control cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the well-documented role of Slc30a1 in zinc resistance (Palmiter, 2004), we found that Slc30a1 cKO BMDMs were significantly more sensitive to ZnSO4-induced toxicity compared to control cells (Figure 6\u2014figure supplement 2)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by cell viability assay data presented in Figure 6\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:58:58.621968Z"
+    },
+    {
+      "id": "185e5ef3-0803-4e1a-97f8-bb41703f2027",
+      "content_id": "548e4b65-181f-4e3b-8f6b-ad8b66675fd2",
+      "claim_id": "C83",
+      "claim": "ZnSO4 treatment caused a significantly higher FluoZin-3 signal in Slc30a1 cKO BMDMs compared to control cells.",
+      "claim_type": "EXPLICIT",
+      "source": "and ZnSO4 treatment (100 \u00b5M) caused a significantly higher FluoZin-3 signal in Slc30a1 cKO BMDMs compared to control cells (Figure 6C, D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by FluoZin-3 fluorescence measurements presented in Figure 6C and 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:58:58.621968Z"
+    },
+    {
+      "id": "ab554e4b-b8b2-4f29-a5ce-be7e1e3d6c9e",
+      "content_id": "548e4b65-181f-4e3b-8f6b-ad8b66675fd2",
+      "claim_id": "C84",
+      "claim": "Cytosolic-free zinc increases in macrophages following exposure to LPS, Escherichia coli, and Salmonella.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies showed that cytosolic-free zinc increases in macrophages following exposure to LPS, Escherichia coli, and Salmonella (Haase et al., 2008; Brieger et al., 2013, Wu et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Haase et al., 2008; Brieger et al., 2013; Wu et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:58:58.621968Z"
+    },
+    {
+      "id": "94d33833-b1a9-42e8-a984-b178f198fba2",
+      "content_id": "548e4b65-181f-4e3b-8f6b-ad8b66675fd2",
+      "claim_id": "C85",
+      "claim": "30 min after Salmonella infection, FluoZin-3 fluorescence was significantly higher in Slc30a1 cKO cells compared to control cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We, therefore, measured intracellular free zinc in Salmonella-infected Slc30a1 cKO and control BMDMs. We found that 30 min after Salmonella infection (MOI = 1), FluoZin-3 fluorescence was significantly higher in Slc30a1 cKO cells; similar results were obtained when the cells were exposed to H2O2 (1 mM), LPS (1 \u00b5g/ml), or HK-ST (MOI = 100) (Figure 6E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by FluoZin-3 fluorescence measurements presented in Figure 6E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:58:58.621968Z"
+    },
+    {
+      "id": "a8274227-26c5-491f-9ed6-9abafdb254f8",
+      "content_id": "548e4b65-181f-4e3b-8f6b-ad8b66675fd2",
+      "claim_id": "C86",
+      "claim": "Higher levels of Mt1 mRNA were measured in Slc30a1 cKO BMDMs compared to Slc30a1fl/fl cells, even in uninfected cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we measured higher levels of Mt1 mRNA in Slc30a1 cKO BMDMs compared to Slc30a1fl/fl cells, even in uninfected cells (Figure 6F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RT-qPCR data presented in Figure 6F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:58:58.621968Z"
+    },
+    {
+      "id": "55b09b56-ff32-4dd2-abf4-866fef498333",
+      "content_id": "548e4b65-181f-4e3b-8f6b-ad8b66675fd2",
+      "claim_id": "C87",
+      "claim": "The loss of Slc30a1 leads to an abnormal increase in intracellular zinc during Salmonella infection and increases the expression of Mt1, possibly to compensate for the excessive intracellular zinc by increasing Mt1-mediated zinc storage.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on these results, we hypothesize that the loss of Slc30a1 leads to an abnormal increase in intracellular zinc during Salmonella infection and increases the expression of Mt1, possibly to compensate for the excessive intracellular zinc by increasing Mt1-mediated zinc storage (Figure 6G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a hypothesis based on the combined observations of zinc accumulation and Mt1 upregulation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:58:58.621968Z"
+    },
+    {
+      "id": "1797491e-23ce-439d-8780-f3d7a156df49",
+      "content_id": "548e4b65-181f-4e3b-8f6b-ad8b66675fd2",
+      "claim_id": "C88",
+      "claim": "Slc30a1-deficient macrophages have increased Salmonella burden due to reduced iNOS and NO formation via reduced NF-\u03baB signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on this model, Slc30a1-deficient macrophages have increased Salmonella burden due to reduced iNOS and NO formation via reduced NF-\u03baB signaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the main findings presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:58:58.621968Z"
+    },
+    {
+      "id": "2c5115a4-04cf-40f5-8f46-8286b85b1bcd",
+      "content_id": "548e4b65-181f-4e3b-8f6b-ad8b66675fd2",
+      "claim_id": "C89",
+      "claim": "The effect of Slc30a1 deficiency on bacterial burden is due primarily to the inhibitory effects of high intracellular zinc, reflected by the compensatory upregulation of the zinc-binding protein Mt1.",
+      "claim_type": "EXPLICIT",
+      "source": "This effect is due primarily to the inhibitory effects of high intracellular zinc, reflected by the compensatory upregulation of the zinc-binding protein Mt1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the combined observations of zinc accumulation, Mt1 upregulation, and impaired bacterial killing.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:58:58.621968Z"
+    },
+    {
+      "id": "f0c82cb3-e554-4d66-82bf-1164b9982537",
+      "content_id": "548e4b65-181f-4e3b-8f6b-ad8b66675fd2",
+      "claim_id": "C90",
+      "claim": "Slc30a1 in macrophages mediates the intracellular killing of invading Mycobacterium tuberculosis and E. coli by increasing zinc levels within phagosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous in vitro studies have shown that Slc30a1 in macrophages mediates the intracellular killing of invading Mycobacterium tuberculosis and E. coli by increasing zinc levels within phagosomes, thereby promoting bacterial clearance (Botella et al., 2011; Stocks et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Botella et al., 2011 and Stocks et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:58:58.621968Z"
+    },
+    {
+      "id": "60647fb0-415c-44e8-b867-a6db6f9a5b62",
+      "content_id": "548e4b65-181f-4e3b-8f6b-ad8b66675fd2",
+      "claim_id": "C91",
+      "claim": "This study provides the first in vivo evidence that Slc30a1 in macrophages plays a key role in host protection against Salmonella infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we provide the first in vivo evidence that Slc30a1 in macrophages plays a key role in host protection against Salmonella infection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the novelty of the findings presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:58:58.621968Z"
+    },
+    {
+      "id": "d98abc48-041f-4215-8fdb-bd1ebf1ab3da",
+      "content_id": "548e4b65-181f-4e3b-8f6b-ad8b66675fd2",
+      "claim_id": "C92",
+      "claim": "Mice lacking Slc30a1 in macrophages are highly susceptible to Salmonella infection.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that mice lacking Slc30a1 in macrophages are highly susceptible to Salmonella infection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by survival and bacterial burden data from the conditional knockout mice.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:58:58.621968Z"
+    },
+    {
+      "id": "1627b09f-fbbf-4a3c-9700-b798777f13ad",
+      "content_id": "548e4b65-181f-4e3b-8f6b-ad8b66675fd2",
+      "claim_id": "C93",
+      "claim": "Macrophages isolated from Lyz2-Cre-driven Slc30a1 conditional knockout mice have reduced pathogen-killing capacity via reduced NF-\u03baB signaling, decreasing iNOS and NO production.",
+      "claim_type": "EXPLICIT",
+      "source": "Using BMDMs isolated from our Lyz2-Cre-driven Slc30a1 conditional knockout mice, we show that these macrophages have reduced pathogen-killing capacity via reduced NF-\u03baB signaling, decreasing iNOS and NO production.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by bacterial killing assays and measurements of NF-\u03baB signaling and NO production.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:58:58.621968Z"
+    },
+    {
+      "id": "ec003c3d-fb2b-4ee4-b41d-986332e7c4f6",
+      "content_id": "548e4b65-181f-4e3b-8f6b-ad8b66675fd2",
+      "claim_id": "C94",
+      "claim": "Treating Slc30a1-deficient macrophages with the zinc chelator TPEN improves NF-\u03baB signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we found that treating these cells with the zinc chelator TPEN improves NF-\u03baB signaling, suggesting that changes in cellular zinc levels likely contribute to their reduced antimicrobial function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by western blot and RT-qPCR data showing rescue of NF-\u03baB signaling with TPEN treatment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:58:58.621968Z"
+    },
+    {
+      "id": "01188d98-de13-4ac8-b86b-0300d6021f99",
+      "content_id": "548e4b65-181f-4e3b-8f6b-ad8b66675fd2",
+      "claim_id": "C95",
+      "claim": "Changes in cellular zinc levels likely contribute to the reduced antimicrobial function of Slc30a1-deficient macrophages.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we found that treating these cells with the zinc chelator TPEN improves NF-\u03baB signaling, suggesting that changes in cellular zinc levels likely contribute to their reduced antimicrobial function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that TPEN treatment rescues NF-\u03baB signaling defects.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:58:58.621968Z"
+    },
+    {
+      "id": "338c5d30-861a-492e-97a0-ecd422542edb",
+      "content_id": "548e4b65-181f-4e3b-8f6b-ad8b66675fd2",
+      "claim_id": "C96",
+      "claim": "Zinc can suppress iNOS/NO production by inhibiting NF-\u03baB in Salmonella-infected macrophages.",
+      "claim_type": "EXPLICIT",
+      "source": "Wu et al. previously reported that zinc can suppress iNOS/NO production by inhibiting NF-\u03baB in Salmonella-infected macrophages (Wu et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Wu et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:58:58.621968Z"
+    },
+    {
+      "id": "480a4552-f4a8-457f-8f9c-251dd70d3340",
+      "content_id": "548e4b65-181f-4e3b-8f6b-ad8b66675fd2",
+      "claim_id": "C97",
+      "claim": "Zinc can reduce NF-\u03baB activation in macrophages.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, recent studies have shown that zinc can reduce NF-\u03baB activation in macrophages (Haase et al., 2008; Brieger et al., 2013; Wu et al., 2017; Jeon et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Haase et al., 2008; Brieger et al., 2013; Wu et al., 2017; Jeon et al., 2000.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:58:58.621968Z"
+    },
+    {
+      "id": "7320f7ef-c032-4407-8d44-b4407d6b25ef",
+      "content_id": "548e4b65-181f-4e3b-8f6b-ad8b66675fd2",
+      "claim_id": "C98",
+      "claim": "Zinc inhibits the NF-\u03baB pathway by reducing the activity of recombinant IKK\u03b1 and IKK\u03b2 by blocking I\u03baB\u03b1 phosphorylation and degradation.",
+      "claim_type": "EXPLICIT",
+      "source": "With respect to the underlying mechanism, studies have shown that zinc inhibits the NF-\u03baB pathway by reducing the activity of recombinant IKK\u03b1 and IKK\u03b2 by blocking I\u03baB\u03b1 phosphorylation and degradation (Jeon et al., 2000; Zhou et al., 2004; Liu et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Jeon et al., 2000; Zhou et al., 2004; Liu et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:58:58.621968Z"
+    },
+    {
+      "id": "37575ac0-f6ea-4eef-a2b9-8bbe483963e2",
+      "content_id": "548e4b65-181f-4e3b-8f6b-ad8b66675fd2",
+      "claim_id": "C99",
+      "claim": "Lyz2-Cre-driven Slc30a1 conditional knockout mice fail to redistribute zinc levels in the serum and spleen following Salmonella infection.",
+      "claim_type": "EXPLICIT",
+      "source": "An interesting finding from our in vivo experiments is that our Lyz2-Cre-driven Slc30a1 conditional knockout mice fail to redistribute zinc levels in the serum and spleen following Salmonella infection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by ICP-MS measurements of zinc in serum and spleen.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:58:58.621968Z"
+    },
+    {
+      "id": "90f6dffc-67e2-4f7d-b4b7-18d9120f2542",
+      "content_id": "548e4b65-181f-4e3b-8f6b-ad8b66675fd2",
+      "claim_id": "C100",
+      "claim": "Defects in zinc redistribution to the liver during systemic infection have negative consequences for neutrophil extracellular traps in mice.",
+      "claim_type": "EXPLICIT",
+      "source": "In mice, defects in this process\u2014for example, due to high zinc supplementation\u2014have negative consequences for neutrophil extracellular traps (Ku\u017amicka et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Ku\u017amicka et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:58:58.621968Z"
+    },
+    {
+      "id": "73998c00-95c6-4b3d-8147-c990c2a83af2",
+      "content_id": "548e4b65-181f-4e3b-8f6b-ad8b66675fd2",
+      "claim_id": "C101",
+      "claim": "In infants, consuming a full-fat diet of powdered cow's milk containing excessive zinc content can lead to a decreased phagocytic capacity of monocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "In infants, consuming a full-fat diet of powdered cow's milk containing excessive zinc content can lead to a decreased phagocytic capacity of monocytes (Schlesinger et al., 1993).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Schlesinger et al., 1993.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:58:58.621968Z"
+    },
+    {
+      "id": "2b277cf7-deb1-4379-8fb7-e07dc816e01e",
+      "content_id": "548e4b65-181f-4e3b-8f6b-ad8b66675fd2",
+      "claim_id": "C102",
+      "claim": "In adults, excessive consumption of zinc supplements can impair both the migration and bactericidal capacity of polymorphonuclear leukocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "In adults, excessive consumption of zinc supplements can impair both the migration and bactericidal capacity of polymorphonuclear leukocytes (Chandra, 1984).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Chandra, 1984.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:58:58.621968Z"
+    },
+    {
+      "id": "1746e9ab-8f83-4d97-803d-83844bd54aa4",
+      "content_id": "548e4b65-181f-4e3b-8f6b-ad8b66675fd2",
+      "claim_id": "C103",
+      "claim": "High zinc serum level in Lyz2-Cre-driven Slc30a1 conditional knockout mice affects the percentage of neutrophils and monocytes and the migration of macrophages, thereby reducing bacterial clearance and increasing susceptibility to Salmonella infection.",
+      "claim_type": "EXPLICIT",
+      "source": "This is consistent with our finding that a high zinc serum level in our Lyz2-Cre-driven Slc30a1 conditional knockout mice affects the percentage of neutrophils and monocytes and the migration of macrophages, thereby reducing bacterial clearance and increasing their susceptibility to Salmonella infection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the combined observations of high serum zinc, reduced immune cell numbers, and increased susceptibility to infection.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:58:58.621968Z"
+    },
+    {
+      "id": "f1711f38-c9c1-4fad-b479-393afdc8bf94",
+      "content_id": "548e4b65-181f-4e3b-8f6b-ad8b66675fd2",
+      "claim_id": "C104",
+      "claim": "Nutrient-dense conditions such as excessive serum zinc can be beneficial to the growth of Salmonella.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, nutrient-dense conditions such as excessive serum zinc can be beneficial to the growth of Salmonella.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about bacterial growth under nutrient-rich conditions.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:58:58.621968Z"
+    },
+    {
+      "id": "e148f725-999b-4d18-a763-33aa47e9fd7d",
+      "content_id": "548e4b65-181f-4e3b-8f6b-ad8b66675fd2",
+      "claim_id": "C105",
+      "claim": "A high-affinity Zn2+ uptake system ZnuABC of Salmonella protects the bacterial cells from nitrosative stress in macrophages.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies reported that a high-affinity Zn2+ uptake system ZnuABC of Salmonella protects the bacterial cells from nitrosative stress in macrophages (Fitzsimmons et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Fitzsimmons et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:58:58.621968Z"
+    },
+    {
+      "id": "c5f97c65-7e81-4193-9fee-06a57ec8aed4",
+      "content_id": "548e4b65-181f-4e3b-8f6b-ad8b66675fd2",
+      "claim_id": "C106",
+      "claim": "Zinc rich conditions induce peptide deformylase, an essential protein contributing to Salmonella maturation that can be inhibited by NO.",
+      "claim_type": "EXPLICIT",
+      "source": "Zinc rich also induces peptide deformylase, an essential protein contributing to Salmonella maturation that can be inhibited by NO (Singhal and Fang, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Singhal and Fang, 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:58:58.621968Z"
+    },
+    {
+      "id": "2f9789f0-4032-475f-a022-7a94f2b334fe",
+      "content_id": "548e4b65-181f-4e3b-8f6b-ad8b66675fd2",
+      "claim_id": "C107",
+      "claim": "High zinc concentrations were measured in Slc30a1-deficient macrophages.",
+      "claim_type": "EXPLICIT",
+      "source": "Our measurements of intracellular zinc levels revealed high zinc concentrations in Slc30a1-deficient macrophages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by FluoZin-3 fluorescence measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:58:58.621968Z"
+    },
+    {
+      "id": "ec50cda1-28e9-41b2-9c11-027dc214b499",
+      "content_id": "548e4b65-181f-4e3b-8f6b-ad8b66675fd2",
+      "claim_id": "C108",
+      "claim": "An upregulation of Mt1 was detected in Slc30a1-deficient macrophages, possibly indicating a cellular response to intracellular zinc saturation.",
+      "claim_type": "EXPLICIT",
+      "source": "We also detected an upregulation of Mt1, possibly indicating a cellular response to intracellular zinc saturation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation of Mt1 upregulation in cells with high intracellular zinc.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:58:58.621968Z"
+    },
+    {
+      "id": "da6c8437-bdc6-403c-88f3-035183ee3065",
+      "content_id": "548e4b65-181f-4e3b-8f6b-ad8b66675fd2",
+      "claim_id": "C109",
+      "claim": "Mt1 is a low molecular weight cysteine-rich protein with a high affinity for divalent metals that is essential for buffering surplus zinc to maintain zinc homeostasis.",
+      "claim_type": "EXPLICIT",
+      "source": "Mt1 is a low molecular weight cysteine-rich protein with a high affinity for divalent metals that is essential for buffering surplus zinc to maintain zinc homeostasis (Kr\u0119\u017cel and Maret, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Kr\u0119\u017cel and Maret, 2017.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:58:58.621968Z"
+    },
+    {
+      "id": "237e99c8-d38c-4045-ad66-b189d22ed57c",
+      "content_id": "548e4b65-181f-4e3b-8f6b-ad8b66675fd2",
+      "claim_id": "C110",
+      "claim": "The level of Mt1 expression was positively correlated with intracellular free zinc concentration.",
+      "claim_type": "EXPLICIT",
+      "source": "Smith et al. showed that the level of Mt1 expression was positively correlated with intracellular free zinc concentration (Smith et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Smith et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:58:58.621968Z"
+    },
+    {
+      "id": "76c1c906-1ad9-4eaf-aa4b-d3e5e376163a",
+      "content_id": "548e4b65-181f-4e3b-8f6b-ad8b66675fd2",
+      "claim_id": "C111",
+      "claim": "Mt1 overexpression may serve as zinc storage for reducing the side effects of excessive cytosolic-free zinc due to Slc30a1 deletion.",
+      "claim_type": "EXPLICIT",
+      "source": "In this respect, Mt1 overexpression may serve as zinc storage for reducing the side effects of excessive cytosolic-free zinc due to Slc30a1 deletion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation of Mt1 upregulation in Slc30a1-deficient cells with high intracellular zinc.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:58:58.621968Z"
+    },
+    {
+      "id": "aca2bb6d-81ad-4b06-af54-a046ed03c5ea",
+      "content_id": "548e4b65-181f-4e3b-8f6b-ad8b66675fd2",
+      "claim_id": "C112",
+      "claim": "Slc30a1 in macrophages plays a protective role against Salmonella infection by regulating iNOS and NO activities, which are essential for bacterial clearance through NF-\u03baB signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "In conclusion, we report that Slc30a1 of macrophages plays a protective role against Salmonella infection by regulating iNOS and NO activities, which are essential for bacterial clearance through NF-\u03baB signaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the main conclusions of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:58:58.621968Z"
+    },
+    {
+      "id": "486a5d6f-c42a-4a09-9ca5-6d2d902cbd7c",
+      "content_id": "548e4b65-181f-4e3b-8f6b-ad8b66675fd2",
+      "claim_id": "C113",
+      "claim": "Cellular zinc regulated by zinc transporter Slc30a1 is important for host defenses by maintaining an intracellular killing capacity of macrophages.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings underscore the notion that cellular zinc regulated by zinc transporter Slc30a1 is important for host defenses by maintaining an intracellular killing capacity of macrophages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the combined findings of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:58:58.621968Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "0e0bcb20-8008-4e80-9b66-908e1b6d4c97",
+      "content_id": "548e4b65-181f-4e3b-8f6b-ad8b66675fd2",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "RNA-seq analysis of Salmonella-infected BMDMs identifies Slc30a1 as a significantly upregulated gene. The analysis revealed 1074 differentially expressed genes with enrichment in inflammatory pathways and mineral absorption. Slc30a1 was the most significantly upregulated gene in both mouse and human macrophages infected with Salmonella, with peak expression at 2 hours post-infection in BMDMs and elevated expression in peritoneal macrophages at 4 hours post-infection in vivo.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C31-C41 provide converging evidence from RNA-seq, RT-qPCR, and cross-species validation (mouse and human) that Slc30a1 is significantly upregulated during Salmonella infection. The data include appropriate statistical thresholds (log2 fold change >1, adjusted p<0.05), pathway enrichment analysis, and temporal expression patterns. The identification is well-supported by multiple independent datasets and validation methods.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:58:58.621968Z"
+    },
+    {
+      "id": "6b179021-6fde-46b2-83fb-ec96e71e635b",
+      "content_id": "548e4b65-181f-4e3b-8f6b-ad8b66675fd2",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Slc30a1 protein expression is increased in infected macrophages with localization at both the plasma membrane and cytosol. Using Slc30a1flag-EGFP reporter mice, the authors demonstrate increased Slc30a1 protein levels in Salmonella-infected BMDMs and splenic F4/80+ macrophages, with dual localization in plasma membrane and cytosol during infection, contrasting with predominantly plasma membrane localization under zinc treatment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C42-C50 are supported by multiple complementary approaches including western blot, confocal microscopy, immunostaining, and FACS analysis using the Slc30a1flag-EGFP reporter mice. The data consistently show infection-induced upregulation and provide clear evidence of subcellular localization patterns. The specificity to macrophages is demonstrated by F4/80 co-staining and absence of signal in other immune cell types.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:58:58.621968Z"
+    },
+    {
+      "id": "73c79422-79ae-47da-9067-b12c03902fed",
+      "content_id": "548e4b65-181f-4e3b-8f6b-ad8b66675fd2",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Lyz2-Cre-driven Slc30a1 conditional knockout mice exhibit increased susceptibility to Salmonella infection. Slc30a1 cKO mice showed significantly reduced survival, severe tissue damage in spleen and liver, elevated serum inflammatory markers, reduced peritoneal macrophages and blood neutrophils/monocytes, and higher bacterial burden across multiple organs compared to control littermates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C51-C59, C92 provide comprehensive in vivo evidence of increased susceptibility using appropriate conditional knockout strategy with >95% knockdown efficiency (C51). The phenotype is supported by multiple independent measures: survival curves (C52), histopathology (C53), serum markers (C54), immune cell populations (C55-C56), and bacterial burden quantification (C58). The data are internally consistent and demonstrate a clear disease phenotype at multiple time points and in multiple organs.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:58:58.621968Z"
+    },
+    {
+      "id": "f3e1e7f4-1696-4aac-b7aa-f47376e6884e",
+      "content_id": "548e4b65-181f-4e3b-8f6b-ad8b66675fd2",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Slc30a1-deficient macrophages are defective in intracellular bacterial killing. Slc30a1 cKO BMDMs contained significantly higher intracellular bacterial loads at both 8 and 24 hours post-infection, confirmed by both CFU quantification and transmission electron microscopy showing increased bacterial numbers in phagosomes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C60-C61, C93 are supported by complementary quantitative (bacterial killing assay) and qualitative (TEM) approaches demonstrating impaired bacterial clearance. The time-course data (8 and 24 hr) show persistent defects. However, the mechanism linking this defect to the observed in vivo phenotype requires additional supporting evidence from the signaling and zinc homeostasis results.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:58:58.621968Z"
+    },
+    {
+      "id": "b34e8e2c-1996-4d01-8051-36bebad2207d",
+      "content_id": "548e4b65-181f-4e3b-8f6b-ad8b66675fd2",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Slc30a1-deficient macrophages show reduced NF-\u03baB activation and decreased iNOS/NO production. Infected Slc30a1 cKO BMDMs exhibited significantly reduced expression of proinflammatory cytokines and chemokines, extremely low Nos2/iNOS expression, reduced nitrite production, and decreased p-p65 levels along with reduced expression of upstream NF-\u03baB pathway genes (p65, MyD88, Ikk\u03b1, Ikk\u03b2).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C62-C72, C88, C93 provide multi-level evidence linking Slc30a1 deficiency to impaired NF-\u03baB signaling and NO production through RT-qPCR (mRNA), western blot (protein), and functional assays (nitrite measurement). The data span multiple stimuli (Salmonella, LPS, HK-ST) and time points, showing consistent defects. The mechanistic connection between NF-\u03baB and iNOS/NO is well-established in the literature (C64), supporting the interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:58:58.621968Z"
+    },
+    {
+      "id": "1ba6ab95-7590-4333-8c5b-a48b62769fbe",
+      "content_id": "548e4b65-181f-4e3b-8f6b-ad8b66675fd2",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Slc30a1-deficient macrophages exhibit intracellular zinc accumulation, and zinc chelation rescues NF-\u03baB signaling defects. Slc30a1 cKO BMDMs showed significantly higher intracellular free zinc measured by FluoZin-3 fluorescence, increased sensitivity to zinc toxicity, and elevated Mt1 expression. Treatment with the zinc chelator TPEN prevented Salmonella-induced changes in NF-\u03baB signaling molecules. In vivo, Slc30a1 cKO mice showed elevated serum and splenic zinc levels with failure to redistribute zinc to the liver during infection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9, C73-C75, C82-C83, C85-C87, C94-C95, C99, C107 provide strong evidence linking Slc30a1 deficiency to zinc accumulation and demonstrating that this drives the observed phenotypes. The TPEN rescue experiment (C73, C94) is particularly important as it establishes causality between zinc accumulation and NF-\u03baB defects. The data include multiple complementary approaches: fluorescent zinc probe measurements, ICP-MS for tissue zinc content, cell viability assays, and Mt1 expression as a marker of zinc stress. The in vivo zinc redistribution defect (C75, C99) provides additional mechanistic insight.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:58:58.621968Z"
+    },
+    {
+      "id": "e9e53eef-89e3-42b0-a99b-dbacc97f88a9",
+      "content_id": "548e4b65-181f-4e3b-8f6b-ad8b66675fd2",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Slc30a1 is required for zinc export, and zinc export enables efficient NO-mediated antibacterial activity of macrophages. The authors conclude that Slc30a1-deficient macrophages have increased Salmonella burden due to reduced iNOS and NO formation via reduced NF-\u03baB signaling, with this effect due primarily to inhibitory effects of high intracellular zinc.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C11, C88-C89, C112-C113 represent the main conclusions integrating the experimental findings. The conclusion that Slc30a1 is required for zinc export (C10) is well-supported by the zinc accumulation data (C9, C75, C83, C85-C87, C107). The mechanistic model linking zinc export \u2192 controlled intracellular zinc \u2192 NF-\u03baB activation \u2192 iNOS/NO production \u2192 bacterial killing is supported by the combined evidence from bacterial killing assays (C6, C60-C61), NF-\u03baB/iNOS/NO measurements (C7, C62-C72), zinc accumulation data (C9, C73-C75, C82-C87), and TPEN rescue experiments (C73, C94). The integration of these findings into a coherent model is justified by the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:58:58.621968Z"
+    },
+    {
+      "id": "9b73d0b2-5cf7-4fe5-a9a2-c2a9c6656984",
+      "content_id": "548e4b65-181f-4e3b-8f6b-ad8b66675fd2",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The authors propose several speculative mechanisms including: Slc30a1 may contribute to both zinc efflux and intracellular zinc movement; elevated serum zinc may impair immune cell function; high splenic zinc may be due to circulating zinc-containing macrophages; Mt1 upregulation may compensate for excessive intracellular zinc; and high serum zinc affects immune cell percentages and migration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C45, C77, C79, C87, C103, C108, C111 are explicitly speculative (marked as SPECULATION in evidence_type) or use tentative language ('may', 'possibly'). While these hypotheses are reasonable interpretations of the data, they lack direct experimental validation. For example, C45 (dual function of Slc30a1) is inferred from localization data but not functionally tested; C77 (elevated serum zinc impairing immune function) is correlation without causation; C79 (circulating zinc-containing macrophages) is inferred but not directly demonstrated; C87 and C111 (Mt1 compensation) are plausible but not experimentally validated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:58:58.621968Z"
+    },
+    {
+      "id": "c156f08e-cf72-4ebc-87dd-48049e5af7a8",
+      "content_id": "548e4b65-181f-4e3b-8f6b-ad8b66675fd2",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The manuscript includes extensive background information and citations to prior work establishing: the role of Slc30a1 in zinc homeostasis; the clinical significance of Salmonella infection; zinc transporter families; macrophage function; the link between zinc and infection; mechanisms of zinc-mediated NF-\u03baB inhibition; and the role of Mt1 in zinc buffering.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2, C12-C30, C64, C76, C78, C81, C84, C90-C91, C96-C98, C100-C102, C104-C106, C109-C110 represent background knowledge and literature citations that provide context for the study. These are appropriately cited and represent established knowledge in the field. C91 claims novelty ('first in vivo evidence') which appears justified given the prior work cited (C90) was in vitro. The background claims are well-supported by appropriate citations and provide necessary context for interpreting the experimental results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:58:58.621968Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "12ca9243-6bbb-4a06-a652-29490e32ad09",
+      "result_id": "0e0bcb20-8008-4e80-9b66-908e1b6d4c97"
+    },
+    {
+      "claim_id": "2bf6c32a-0bbf-40ce-8cbd-9facc84708f6",
+      "result_id": "0e0bcb20-8008-4e80-9b66-908e1b6d4c97"
+    },
+    {
+      "claim_id": "8067211c-3b68-4d80-97c3-2f22802bd3b0",
+      "result_id": "0e0bcb20-8008-4e80-9b66-908e1b6d4c97"
+    },
+    {
+      "claim_id": "e11369f9-da7b-4bfe-a61c-755266afa933",
+      "result_id": "0e0bcb20-8008-4e80-9b66-908e1b6d4c97"
+    },
+    {
+      "claim_id": "daeb6b29-d68d-4cdd-81a4-2c18a790da0a",
+      "result_id": "0e0bcb20-8008-4e80-9b66-908e1b6d4c97"
+    },
+    {
+      "claim_id": "5969ce03-e41b-4ba4-9f10-c64305186f04",
+      "result_id": "0e0bcb20-8008-4e80-9b66-908e1b6d4c97"
+    },
+    {
+      "claim_id": "b47b5440-b21b-46ae-973d-482f34fb8d10",
+      "result_id": "0e0bcb20-8008-4e80-9b66-908e1b6d4c97"
+    },
+    {
+      "claim_id": "d0b76e1e-4e88-4c22-a3ac-6a75b84a01d5",
+      "result_id": "0e0bcb20-8008-4e80-9b66-908e1b6d4c97"
+    },
+    {
+      "claim_id": "bd087edd-c3dd-413b-86c5-3aa926747c90",
+      "result_id": "0e0bcb20-8008-4e80-9b66-908e1b6d4c97"
+    },
+    {
+      "claim_id": "4a510387-8348-40cd-9905-10ce7f48b9f8",
+      "result_id": "0e0bcb20-8008-4e80-9b66-908e1b6d4c97"
+    },
+    {
+      "claim_id": "50c7d764-1793-4649-b7a2-c678d9ac167a",
+      "result_id": "0e0bcb20-8008-4e80-9b66-908e1b6d4c97"
+    },
+    {
+      "claim_id": "8cb34888-963e-4987-a382-d703544449c2",
+      "result_id": "0e0bcb20-8008-4e80-9b66-908e1b6d4c97"
+    },
+    {
+      "claim_id": "370a554b-7b3b-41d3-93fe-108f4be351f7",
+      "result_id": "6b179021-6fde-46b2-83fb-ec96e71e635b"
+    },
+    {
+      "claim_id": "9cb41040-fb98-4d4c-8fa8-03e0594b4c96",
+      "result_id": "6b179021-6fde-46b2-83fb-ec96e71e635b"
+    },
+    {
+      "claim_id": "07ea039e-c545-4610-9033-d7d3d7aa3ef1",
+      "result_id": "6b179021-6fde-46b2-83fb-ec96e71e635b"
+    },
+    {
+      "claim_id": "f477bc89-5d14-4418-81db-ed22ba1e7d8e",
+      "result_id": "6b179021-6fde-46b2-83fb-ec96e71e635b"
+    },
+    {
+      "claim_id": "d358160e-5867-4b41-b4fd-8c76a5a9434b",
+      "result_id": "6b179021-6fde-46b2-83fb-ec96e71e635b"
+    },
+    {
+      "claim_id": "f03c917a-ea26-45d6-9371-dca84506dcc2",
+      "result_id": "6b179021-6fde-46b2-83fb-ec96e71e635b"
+    },
+    {
+      "claim_id": "8bc362b4-849e-403a-8cff-0e7bd5989c66",
+      "result_id": "6b179021-6fde-46b2-83fb-ec96e71e635b"
+    },
+    {
+      "claim_id": "4cddc73e-77e7-450e-825c-ea6fa6c40003",
+      "result_id": "6b179021-6fde-46b2-83fb-ec96e71e635b"
+    },
+    {
+      "claim_id": "a32ff0f0-87cd-45ea-8cbd-b50e1920d637",
+      "result_id": "6b179021-6fde-46b2-83fb-ec96e71e635b"
+    },
+    {
+      "claim_id": "54651736-dd93-4df5-868f-70d57b6551ba",
+      "result_id": "6b179021-6fde-46b2-83fb-ec96e71e635b"
+    },
+    {
+      "claim_id": "0e873e28-62e8-48ca-bc92-67492c44d9ac",
+      "result_id": "73c79422-79ae-47da-9067-b12c03902fed"
+    },
+    {
+      "claim_id": "8dd0b4b4-b805-475b-9a7e-81fa53f23b06",
+      "result_id": "73c79422-79ae-47da-9067-b12c03902fed"
+    },
+    {
+      "claim_id": "c3541e24-1553-4d0c-844e-6742f6c45f62",
+      "result_id": "73c79422-79ae-47da-9067-b12c03902fed"
+    },
+    {
+      "claim_id": "fc67a23a-b969-4822-8179-c382183cc4ca",
+      "result_id": "73c79422-79ae-47da-9067-b12c03902fed"
+    },
+    {
+      "claim_id": "c261d6de-fac3-4890-b226-b52f3554250d",
+      "result_id": "73c79422-79ae-47da-9067-b12c03902fed"
+    },
+    {
+      "claim_id": "157e32e9-8a61-4dd0-a999-3c014359e07a",
+      "result_id": "73c79422-79ae-47da-9067-b12c03902fed"
+    },
+    {
+      "claim_id": "9fe209a6-8251-47bf-827b-e03f1d222bf3",
+      "result_id": "73c79422-79ae-47da-9067-b12c03902fed"
+    },
+    {
+      "claim_id": "77b9cbe2-81c0-49f8-83f5-3322c0269894",
+      "result_id": "73c79422-79ae-47da-9067-b12c03902fed"
+    },
+    {
+      "claim_id": "c42f5fc9-cc1a-4033-a1ab-18de1bb465c3",
+      "result_id": "73c79422-79ae-47da-9067-b12c03902fed"
+    },
+    {
+      "claim_id": "228fe853-a330-4ae6-aee3-1157a8f3489d",
+      "result_id": "73c79422-79ae-47da-9067-b12c03902fed"
+    },
+    {
+      "claim_id": "d98abc48-041f-4215-8fdb-bd1ebf1ab3da",
+      "result_id": "73c79422-79ae-47da-9067-b12c03902fed"
+    },
+    {
+      "claim_id": "dc3e927d-7ffa-4f92-842c-e6559904a4ac",
+      "result_id": "f3e1e7f4-1696-4aac-b7aa-f47376e6884e"
+    },
+    {
+      "claim_id": "a15edffb-9bd6-4c67-ad26-6ecf7fc3fc8a",
+      "result_id": "f3e1e7f4-1696-4aac-b7aa-f47376e6884e"
+    },
+    {
+      "claim_id": "bf1e1059-ff8d-4c2a-a3af-a07cd65fd9f3",
+      "result_id": "f3e1e7f4-1696-4aac-b7aa-f47376e6884e"
+    },
+    {
+      "claim_id": "1627b09f-fbbf-4a3c-9700-b798777f13ad",
+      "result_id": "f3e1e7f4-1696-4aac-b7aa-f47376e6884e"
+    },
+    {
+      "claim_id": "27102611-537e-4da5-a5b4-6a5967885174",
+      "result_id": "b34e8e2c-1996-4d01-8051-36bebad2207d"
+    },
+    {
+      "claim_id": "46b80fcb-e81f-4609-9a3e-21cb8c24f3a2",
+      "result_id": "b34e8e2c-1996-4d01-8051-36bebad2207d"
+    },
+    {
+      "claim_id": "62359c6b-7238-48d9-8473-3a7ee797595d",
+      "result_id": "b34e8e2c-1996-4d01-8051-36bebad2207d"
+    },
+    {
+      "claim_id": "b7a5a14f-6c4a-42f9-9670-c956e8439b6b",
+      "result_id": "b34e8e2c-1996-4d01-8051-36bebad2207d"
+    },
+    {
+      "claim_id": "8386d0c1-7731-4399-b914-29c067f7d372",
+      "result_id": "b34e8e2c-1996-4d01-8051-36bebad2207d"
+    },
+    {
+      "claim_id": "71ec300d-e07c-4269-99ad-c3ea0458b957",
+      "result_id": "b34e8e2c-1996-4d01-8051-36bebad2207d"
+    },
+    {
+      "claim_id": "34493044-c453-4fc4-a93a-da7709f10a47",
+      "result_id": "b34e8e2c-1996-4d01-8051-36bebad2207d"
+    },
+    {
+      "claim_id": "71d7871e-83de-4b6a-b633-8d5008b90882",
+      "result_id": "b34e8e2c-1996-4d01-8051-36bebad2207d"
+    },
+    {
+      "claim_id": "46326752-b0e0-4a8d-8f5d-3f05b8a64ccb",
+      "result_id": "b34e8e2c-1996-4d01-8051-36bebad2207d"
+    },
+    {
+      "claim_id": "d5b284fc-3483-423b-a47f-ac262f2a4d95",
+      "result_id": "b34e8e2c-1996-4d01-8051-36bebad2207d"
+    },
+    {
+      "claim_id": "ec4fba0e-8dbf-490a-bfa0-78d1a0644f43",
+      "result_id": "b34e8e2c-1996-4d01-8051-36bebad2207d"
+    },
+    {
+      "claim_id": "1a7e13d2-820c-4c76-a4cc-b1733343a141",
+      "result_id": "b34e8e2c-1996-4d01-8051-36bebad2207d"
+    },
+    {
+      "claim_id": "1797491e-23ce-439d-8780-f3d7a156df49",
+      "result_id": "b34e8e2c-1996-4d01-8051-36bebad2207d"
+    },
+    {
+      "claim_id": "1627b09f-fbbf-4a3c-9700-b798777f13ad",
+      "result_id": "b34e8e2c-1996-4d01-8051-36bebad2207d"
+    },
+    {
+      "claim_id": "05dd87b8-ee11-45d4-8087-f8b39b0aea9a",
+      "result_id": "1ba6ab95-7590-4333-8c5b-a48b62769fbe"
+    },
+    {
+      "claim_id": "6a159813-537c-4c8d-9717-b52781bca3d5",
+      "result_id": "1ba6ab95-7590-4333-8c5b-a48b62769fbe"
+    },
+    {
+      "claim_id": "c72a7228-5a87-43cc-8780-2dd653925f1b",
+      "result_id": "1ba6ab95-7590-4333-8c5b-a48b62769fbe"
+    },
+    {
+      "claim_id": "a69e9ce2-29cb-4c93-8a5d-f0336ac94cbe",
+      "result_id": "1ba6ab95-7590-4333-8c5b-a48b62769fbe"
+    },
+    {
+      "claim_id": "f6aa6139-f925-49a1-a611-be5a2e874b95",
+      "result_id": "1ba6ab95-7590-4333-8c5b-a48b62769fbe"
+    },
+    {
+      "claim_id": "185e5ef3-0803-4e1a-97f8-bb41703f2027",
+      "result_id": "1ba6ab95-7590-4333-8c5b-a48b62769fbe"
+    },
+    {
+      "claim_id": "94d33833-b1a9-42e8-a984-b178f198fba2",
+      "result_id": "1ba6ab95-7590-4333-8c5b-a48b62769fbe"
+    },
+    {
+      "claim_id": "a8274227-26c5-491f-9ed6-9abafdb254f8",
+      "result_id": "1ba6ab95-7590-4333-8c5b-a48b62769fbe"
+    },
+    {
+      "claim_id": "55b09b56-ff32-4dd2-abf4-866fef498333",
+      "result_id": "1ba6ab95-7590-4333-8c5b-a48b62769fbe"
+    },
+    {
+      "claim_id": "ec003c3d-fb2b-4ee4-b41d-986332e7c4f6",
+      "result_id": "1ba6ab95-7590-4333-8c5b-a48b62769fbe"
+    },
+    {
+      "claim_id": "01188d98-de13-4ac8-b86b-0300d6021f99",
+      "result_id": "1ba6ab95-7590-4333-8c5b-a48b62769fbe"
+    },
+    {
+      "claim_id": "37575ac0-f6ea-4eef-a2b9-8bbe483963e2",
+      "result_id": "1ba6ab95-7590-4333-8c5b-a48b62769fbe"
+    },
+    {
+      "claim_id": "2f9789f0-4032-475f-a022-7a94f2b334fe",
+      "result_id": "1ba6ab95-7590-4333-8c5b-a48b62769fbe"
+    },
+    {
+      "claim_id": "09c17f9b-f4e6-4ed6-8e62-6567af0d753b",
+      "result_id": "e9e53eef-89e3-42b0-a99b-dbacc97f88a9"
+    },
+    {
+      "claim_id": "22d23988-f599-4549-a71c-194b092b80dc",
+      "result_id": "e9e53eef-89e3-42b0-a99b-dbacc97f88a9"
+    },
+    {
+      "claim_id": "1797491e-23ce-439d-8780-f3d7a156df49",
+      "result_id": "e9e53eef-89e3-42b0-a99b-dbacc97f88a9"
+    },
+    {
+      "claim_id": "2c5115a4-04cf-40f5-8f46-8286b85b1bcd",
+      "result_id": "e9e53eef-89e3-42b0-a99b-dbacc97f88a9"
+    },
+    {
+      "claim_id": "aca2bb6d-81ad-4b06-af54-a046ed03c5ea",
+      "result_id": "e9e53eef-89e3-42b0-a99b-dbacc97f88a9"
+    },
+    {
+      "claim_id": "486a5d6f-c42a-4a09-9ca5-6d2d902cbd7c",
+      "result_id": "e9e53eef-89e3-42b0-a99b-dbacc97f88a9"
+    },
+    {
+      "claim_id": "d358160e-5867-4b41-b4fd-8c76a5a9434b",
+      "result_id": "9b73d0b2-5cf7-4fe5-a9a2-c2a9c6656984"
+    },
+    {
+      "claim_id": "b83c1693-232d-429b-8d99-cd08c7ece0e5",
+      "result_id": "9b73d0b2-5cf7-4fe5-a9a2-c2a9c6656984"
+    },
+    {
+      "claim_id": "b25f105c-4d38-4fcf-8da8-b652e9bad645",
+      "result_id": "9b73d0b2-5cf7-4fe5-a9a2-c2a9c6656984"
+    },
+    {
+      "claim_id": "55b09b56-ff32-4dd2-abf4-866fef498333",
+      "result_id": "9b73d0b2-5cf7-4fe5-a9a2-c2a9c6656984"
+    },
+    {
+      "claim_id": "1746e9ab-8f83-4d97-803d-83844bd54aa4",
+      "result_id": "9b73d0b2-5cf7-4fe5-a9a2-c2a9c6656984"
+    },
+    {
+      "claim_id": "ec50cda1-28e9-41b2-9c11-027dc214b499",
+      "result_id": "9b73d0b2-5cf7-4fe5-a9a2-c2a9c6656984"
+    },
+    {
+      "claim_id": "76c1c906-1ad9-4eaf-aa4b-d3e5e376163a",
+      "result_id": "9b73d0b2-5cf7-4fe5-a9a2-c2a9c6656984"
+    },
+    {
+      "claim_id": "c6c863d7-ada7-461e-a0f6-177bddd9645c",
+      "result_id": "c156f08e-cf72-4ebc-87dd-48049e5af7a8"
+    },
+    {
+      "claim_id": "a37e0c86-7df9-4c34-8c7d-ac07a996cbb7",
+      "result_id": "c156f08e-cf72-4ebc-87dd-48049e5af7a8"
+    },
+    {
+      "claim_id": "cceee3d2-54de-4913-902b-d47522b0f4ab",
+      "result_id": "c156f08e-cf72-4ebc-87dd-48049e5af7a8"
+    },
+    {
+      "claim_id": "662b124a-d5ee-4555-b5ca-1dc48fecfbce",
+      "result_id": "c156f08e-cf72-4ebc-87dd-48049e5af7a8"
+    },
+    {
+      "claim_id": "41d71d8d-7ff4-4fd0-9b7f-97a772c4f39f",
+      "result_id": "c156f08e-cf72-4ebc-87dd-48049e5af7a8"
+    },
+    {
+      "claim_id": "4372f5c1-948c-432a-be67-be1912895159",
+      "result_id": "c156f08e-cf72-4ebc-87dd-48049e5af7a8"
+    },
+    {
+      "claim_id": "d2f4b764-1fb6-4981-a71c-6fa5b351b68d",
+      "result_id": "c156f08e-cf72-4ebc-87dd-48049e5af7a8"
+    },
+    {
+      "claim_id": "b17a24a1-6629-4dc4-ac78-184e7fd62d8a",
+      "result_id": "c156f08e-cf72-4ebc-87dd-48049e5af7a8"
+    },
+    {
+      "claim_id": "9fe0da16-5701-4c52-a537-527b4492138f",
+      "result_id": "c156f08e-cf72-4ebc-87dd-48049e5af7a8"
+    },
+    {
+      "claim_id": "bf9ffee5-06ab-4b65-b04a-6c628c0b3b7b",
+      "result_id": "c156f08e-cf72-4ebc-87dd-48049e5af7a8"
+    },
+    {
+      "claim_id": "14784cb0-4256-490e-accf-3fbe6db83fc1",
+      "result_id": "c156f08e-cf72-4ebc-87dd-48049e5af7a8"
+    },
+    {
+      "claim_id": "07305c29-f869-4ab1-9258-2d7a83709a37",
+      "result_id": "c156f08e-cf72-4ebc-87dd-48049e5af7a8"
+    },
+    {
+      "claim_id": "f866a818-e30c-490d-8a90-f5c75f79da0d",
+      "result_id": "c156f08e-cf72-4ebc-87dd-48049e5af7a8"
+    },
+    {
+      "claim_id": "f5b56903-122a-40ae-a32b-6eb3b7139d11",
+      "result_id": "c156f08e-cf72-4ebc-87dd-48049e5af7a8"
+    },
+    {
+      "claim_id": "bd3f45ea-e67d-4854-8d5d-c6a175d8a688",
+      "result_id": "c156f08e-cf72-4ebc-87dd-48049e5af7a8"
+    },
+    {
+      "claim_id": "78a0a713-85cd-46dd-ac3e-50fc0c3c017b",
+      "result_id": "c156f08e-cf72-4ebc-87dd-48049e5af7a8"
+    },
+    {
+      "claim_id": "0bbaf31e-5a63-48da-81ab-440fb3b6fdf5",
+      "result_id": "c156f08e-cf72-4ebc-87dd-48049e5af7a8"
+    },
+    {
+      "claim_id": "fb4feea8-921a-4be1-9733-4abfe3a6221d",
+      "result_id": "c156f08e-cf72-4ebc-87dd-48049e5af7a8"
+    },
+    {
+      "claim_id": "a66a1854-bad3-434c-9410-25965481e470",
+      "result_id": "c156f08e-cf72-4ebc-87dd-48049e5af7a8"
+    },
+    {
+      "claim_id": "fb94c27f-0ddd-41aa-84c7-1f16ba4ead6f",
+      "result_id": "c156f08e-cf72-4ebc-87dd-48049e5af7a8"
+    },
+    {
+      "claim_id": "3758a664-e5d6-4aa9-9ae9-577bc5652b73",
+      "result_id": "c156f08e-cf72-4ebc-87dd-48049e5af7a8"
+    },
+    {
+      "claim_id": "b7a5a14f-6c4a-42f9-9670-c956e8439b6b",
+      "result_id": "c156f08e-cf72-4ebc-87dd-48049e5af7a8"
+    },
+    {
+      "claim_id": "b2a01447-7c0d-4c93-a71f-9d902b14a018",
+      "result_id": "c156f08e-cf72-4ebc-87dd-48049e5af7a8"
+    },
+    {
+      "claim_id": "054dd458-e72c-4237-a825-759571192349",
+      "result_id": "c156f08e-cf72-4ebc-87dd-48049e5af7a8"
+    },
+    {
+      "claim_id": "0814374b-43b6-48e1-8dfb-aae0789a892c",
+      "result_id": "c156f08e-cf72-4ebc-87dd-48049e5af7a8"
+    },
+    {
+      "claim_id": "ab554e4b-b8b2-4f29-a5ce-be7e1e3d6c9e",
+      "result_id": "c156f08e-cf72-4ebc-87dd-48049e5af7a8"
+    },
+    {
+      "claim_id": "f0c82cb3-e554-4d66-82bf-1164b9982537",
+      "result_id": "c156f08e-cf72-4ebc-87dd-48049e5af7a8"
+    },
+    {
+      "claim_id": "60647fb0-415c-44e8-b867-a6db6f9a5b62",
+      "result_id": "c156f08e-cf72-4ebc-87dd-48049e5af7a8"
+    },
+    {
+      "claim_id": "338c5d30-861a-492e-97a0-ecd422542edb",
+      "result_id": "c156f08e-cf72-4ebc-87dd-48049e5af7a8"
+    },
+    {
+      "claim_id": "480a4552-f4a8-457f-8f9c-251dd70d3340",
+      "result_id": "c156f08e-cf72-4ebc-87dd-48049e5af7a8"
+    },
+    {
+      "claim_id": "7320f7ef-c032-4407-8d44-b4407d6b25ef",
+      "result_id": "c156f08e-cf72-4ebc-87dd-48049e5af7a8"
+    },
+    {
+      "claim_id": "90f6dffc-67e2-4f7d-b4b7-18d9120f2542",
+      "result_id": "c156f08e-cf72-4ebc-87dd-48049e5af7a8"
+    },
+    {
+      "claim_id": "73998c00-95c6-4b3d-8147-c990c2a83af2",
+      "result_id": "c156f08e-cf72-4ebc-87dd-48049e5af7a8"
+    },
+    {
+      "claim_id": "2b277cf7-deb1-4379-8fb7-e07dc816e01e",
+      "result_id": "c156f08e-cf72-4ebc-87dd-48049e5af7a8"
+    },
+    {
+      "claim_id": "f1711f38-c9c1-4fad-b479-393afdc8bf94",
+      "result_id": "c156f08e-cf72-4ebc-87dd-48049e5af7a8"
+    },
+    {
+      "claim_id": "e148f725-999b-4d18-a763-33aa47e9fd7d",
+      "result_id": "c156f08e-cf72-4ebc-87dd-48049e5af7a8"
+    },
+    {
+      "claim_id": "c5f97c65-7e81-4193-9fee-06a57ec8aed4",
+      "result_id": "c156f08e-cf72-4ebc-87dd-48049e5af7a8"
+    },
+    {
+      "claim_id": "da6c8437-bdc6-403c-88f3-035183ee3065",
+      "result_id": "c156f08e-cf72-4ebc-87dd-48049e5af7a8"
+    },
+    {
+      "claim_id": "237e99c8-d38c-4045-ad66-b189d22ed57c",
+      "result_id": "c156f08e-cf72-4ebc-87dd-48049e5af7a8"
+    }
+  ],
+  "comparisons": []
+}

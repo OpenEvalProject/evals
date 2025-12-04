@@ -1,0 +1,347 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C11",
+      "C12"
+    ],
+    "result": "Prior work established that RasV12 expression using the Gal4-UAS system provides a proliferation and survival advantage to Drosophila cells, enabling rapid and reproducible generation of continuous cell lines from primary embryonic cultures, and has been used to develop mutant cell lines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C11, and C12 are all supported by citations to prior published work (Simcox et al., 2008a, 2008b; Lee et al., 2015; Kahn et al., 2014; Lim et al., 2016; Nakato et al., 2019). These claims establish the foundational knowledge upon which the current work builds and are appropriately attributed to previous studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C13",
+      "C69",
+      "C70"
+    ],
+    "result": "Lineage-restricted RasV12 expression using tissue-specific Gal4 drivers (repo-Gal4, btl-Gal4, and 24B/how-Gal4) successfully generated continuous cell lines with glial, epithelial, and muscle characteristics, demonstrating that restricting RasV12 expression gives targeted cells a competitive advantage and produces lines with expected cell-type-specific phenotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C13, C69, and C70 are supported by experimental data showing successful generation of cell lines using lineage-specific drivers (Table 1, Supplementary file 1), morphological characterization (Figures 1, 3, 4, 5), marker expression (Figures 3-5), and transcriptomic analysis (Table 2, Figure 2). The approach is well-documented with appropriate controls and multiple lines of evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C46",
+      "C47",
+      "C54"
+    ],
+    "result": "Cell lines with neuronal and hemocyte characteristics were isolated by cloning from cultures established with broad Act5C-GeneSwitch-Gal4-driven RasV12 expression, after attempts with pan-neural drivers (scratch-Gal4 and elav-Gal4) failed to produce continuous lines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C46, C47, and C54 are supported by experimental data showing failed attempts with pan-neural drivers (Supplementary file 1, Figure 6\u2014figure supplement 1) and successful isolation of neuronal-like (ActGSB-6, ActGSI-2) and hemocyte-like (ActGSI-3) clones from Act5C-GeneSwitch cultures, with characterization by marker expression (Figures 6, 7) and RNAseq (Table 2).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Glial-lineage cell lines were generated using repo-Gal4 to drive RasV12 expression (with UAS-bratdsRNA co-expression), producing the Rbr6 parental line and three clonal derivatives that express the glial marker Repo, have elongated morphology, survive ecdysone treatment, and show transcriptomic signatures matching glial cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C27 are well-supported by multiple lines of evidence: morphological characterization (Figures 1, 3), marker expression (Repo positivity in Figures 3, Figure 3\u2014figure supplement 1), ecdysone response (Figure 3, Figure 3\u2014figure supplement 2), RNAseq clustering (Figure 2\u2014figure supplement 2), and enrichment analysis matching glial cell signatures (Table 2). The expression of glial-associated genes like zydeco and gcm2 (C26, C27) is supported by Figure 2\u2014figure supplement 3.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Tracheal epithelium-lineage cell lines were generated using btl-Gal4 to drive RasV12 expression, producing three parental lines (Btl3, Btl7, Btl8) that express the epithelial marker E-Cadherin, with two lines forming squamous epithelial sheets, and all showing transcriptomic signatures matching adult tracheal cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C34 are supported by morphological characterization (Figures 1, 4), E-Cadherin expression with peripheral localization in Btl3 and Btl7 (Figure 4), comparison with S2 cells showing diffuse E-Cadherin (C31), ecdysone-induced aggregation (Figure 4, Figure 4\u2014figure supplement 2), and RNAseq enrichment analysis matching adult tracheal signatures (Table 2). Expression of trachealess in Btl3 (C34) is supported by Figure 2\u2014figure supplement 3.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Mesodermal-lineage cell lines were generated using 24B/how-Gal4 to drive RasV12 expression, producing cells with bipolar morphology expressing mesoderm markers (Twist, Mef2) that differentiate with ecdysone treatment into active, contracting muscle expressing Myosin heavy chain, with transcriptomic signatures matching muscle cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C45 are strongly supported by morphological characterization (Figures 1, 5), marker expression (Twist, Mef2, Mhc in Figure 5, Figure 5\u2014figure supplement 1), ecdysone-induced differentiation with cell fusion and multinucleation (Figure 5), spontaneous contraction documented by video (Videos 1-4, C38-C40), RNAseq identification as muscle (Table 2, C43), and expression of muscle-specific transcription factors and myoblast city (Figure 2\u2014figure supplement 3, C44-C45). The loss of differentiation capacity in later passages (C42) is documented in Figure 5\u2014figure supplement 2.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Neuronal-like cell lines (ActGSB-6 and ActGSI-2) express the neuronal marker HRP and, after ecdysone differentiation, show enhanced expression of Futsch/MAPB1, Fas2, and Elav with axonal-like outgrowths, are negative for the glial marker Repo, and have transcriptomic signatures matching neuronal cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C53 are supported by HRP positivity (Figure 6, C47), ecdysone-enhanced expression of neuronal markers revealing axonal-like outgrowths (Figure 6, Figure 6\u2014figure supplement 3), negative Repo staining (Supplementary file 2, C51), upregulation of neuronal genes by RNAseq (C52), and enrichment analysis matching neuronal cell types (Table 2, C53). The caveat about Elav expression in glial cells and neuroblasts (C50) is appropriately noted with citation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "The hemocyte-like cell line ActGSI-3 expresses the hemocyte marker Hemese, is positive for HRP but not other neuronal markers, grows as floating clusters (unlike S2 cells which grow as single cells), and shows transcriptomic signatures strongly matching hemocytes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C58 are supported by Hemese expression (Figure 7), HRP positivity without other neuronal markers (Figure 7\u2014figure supplement 1), distinctive floating cluster morphology compared to S2 cells (Figures 1, 7), upregulation of hemocyte genes by RNAseq (C57), and very strong enrichment for hemocyte markers (p=1.00E-25, Table 2, C58).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C4",
+      "C5"
+    ],
+    "result": "Ecdysone treatment caused differentiation of mesodermal cells into active muscle tissue and enhanced dendritic features in neuronal-like lines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4 and C5 are supported by experimental data showing muscle contraction and Myosin heavy chain expression after ecdysone treatment (Figure 5, Videos 1-4) and enhanced expression of Futsch/MAPB1 and Fas2 revealing axonal-like outgrowths in neuronal-like cells (Figure 6, Figure 6\u2014figure supplement 3). These are key functional results demonstrating differentiation capacity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C14",
+      "C15",
+      "C16",
+      "C80"
+    ],
+    "result": "Transcriptome analysis showed that the new cell lines express key cell-type-specific genes, have distinct transcriptomes from existing cell lines, cluster by Gal4 driver, and show expected alignment with single-cell sequencing and in situ data, with significant enrichment for marker genes from expected cell types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C7, C14-C16, and C80 are supported by comprehensive RNAseq analysis including expression of cell-type-specific genes (Figure 2, Table 2), clustering analysis showing distinction from existing lines (Figure 2\u2014figure supplement 1), PCA showing clustering by driver (Figure 2\u2014figure supplement 2), comparison with single-cell RNAseq data (Table 2), and enrichment analysis (Table 2). The data are deposited in GEO (C102) and available through DGET (C101).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Most cell lines had doubling times of 20-40 hours, with the hemocyte-like clone ActGSI-3 showing a longer doubling time of 70 hours; GeneSwitch-dependent lines (ActGSB-6, ActGSI-2, ActGSI-3) become quiescent without mifepristone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C62 are supported by growth curve data (Table 3, Figure 8\u2014figure supplement 1) showing doubling times for 13 cell lines and demonstrating mifepristone-dependent growth for GeneSwitch lines. The data are quantitative and include appropriate replicates (triplicate wells).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Most cell lines (8) were diploid or near diploid, consistent with previous findings for RasV12-expressing lines; related clones had similar karyotypes suggesting parental lines may be clonal; some lines were polyploid with common aneuploid conditions including loss of an X chromosome and varying numbers of chromosome 4.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C65 are supported by karyotype analysis of 13 cell lines (Table 3, Figure 3\u2014figure supplement 3, Figure 4\u2014figure supplement 3, Figure 5\u2014figure supplement 5, Figure 6\u2014figure supplement 4, Figure 7\u2014figure supplement 2) with citation to prior work (Simcox et al., 2008b). The inference about parental lines being clonal (C64) is reasonable based on similar karyotypes among related clones.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "All nine tested cell lines could be transfected with an Act5C-EGFP plasmid, with transfection efficiency ranging from 16% to 34% (most around 25%), compared to 53% for S2 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C68 are supported by transfection experiments with quantitative data (Table 3) showing transfection efficiency for nine lines compared to S2 cells as a control. The data demonstrate that the new lines are amenable to transfection, though less efficiently than S2 cells.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "RasV12 expression with Mef2-Gal4 appeared to disrupt growth of the targeted muscle cell type and did not produce continuous lines, while 24B/how-Gal4 was efficient at producing muscle cell lines, demonstrating that multiple Gal4 lines may need to be tested for a given lineage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C73 are supported by data showing failed attempts with Mef2-Gal4 (Supplementary file 1, Figure 5\u2014figure supplement 4) and evidence of disrupted muscle development in larvae (Figure 5\u2014figure supplement 4), contrasted with successful generation using 24B/how-Gal4. The recommendation to test multiple drivers (C73) is a reasonable inference from these results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C74"
+    ],
+    "result": "Characterizing cell lines after generation for morphological, physiological, and molecular features is essential to assess whether cells represent the tissue of origin expected for a given Gal4 driver, as in vitro conditions may select for cells that lose lineage identities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C74 is supported by the comprehensive characterization performed in this study (morphology, marker expression, RNAseq, functional assays) and by the observation that some lines lost differentiation capacity with extended passaging (C42, Figure 5\u2014figure supplement 2). This is a well-justified methodological recommendation based on the authors' experience.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "The new cell lines have potential applications including investigation of muscle fusion (mesodermal cells are multinucleate), epithelial polarization and 3D interactions (tracheal cells show clumping with ecdysone), and immunity (ActGSI-3 cells match hemocytes, lyse after ecdysone suggesting embryonic origin, and grow as floating clumps that may recapitulate sessile hemocyte clusters).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C75-C79 are largely speculative about future applications, though they are grounded in observed characteristics (multinucleation in Figure 5, cell clumping in Figure 4\u2014figure supplement 2, ecdysone-induced lysis in Figure 7, floating cluster morphology in Figures 1 and 7). While the observations are supported, the proposed applications and interpretations (e.g., recapitulating sessile hemocyte clusters) require experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Some cell lines show anomalous gene expression (e.g., mesodermal clone 24B5-B8 positive for HRP, neuronal-like lines express Twist), likely due to Ras activation affecting downstream pathways and genes, as Ras/MAPK has a key role in muscle cell determination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C84 are supported by immunohistochemistry data (Figure 5\u2014figure supplement 1, Figure 6\u2014figure supplement 2, Supplementary file 2) showing unexpected marker expression. The interpretation that this is due to Ras activation (C83) is reasonable and supported by citation to the known role of Ras/MAPK in muscle determination (C84, with citations to Buff et al., 1998; Carmena et al., 2002; Halfon et al., 2000).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Key lineage-specific transcription factors show variable expression patterns: gcm is not differentially expressed in glial clones, gcm2 is expressed in only two of three glial clones, trachealess is expressed in only one of three tracheal lines, and muscle-specific transcription factors (twist, nautilus, snail, Mef2) show variable expression in muscle clones.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C88 are supported by RNAseq data and are explicitly stated in the Discussion as observations about gene expression patterns. This variability is important for understanding the limitations and heterogeneity of the cell lines, and the authors appropriately note that expression patterns were determined for undifferentiated cells.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "The new cell lines will have value for low- and high-throughput approaches including genetic and compound screens; most have attP-flanked cassettes enabling RMCE for transgene insertion and potential use in genome-wide CRISPR pooled screening, which to date has only been performed in S2 cells in Drosophila.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C89-C93 are largely speculative about future applications. While the presence of attP sites is documented (Table 1, C90) and the technical feasibility of RMCE and CRISPR screening is supported by citations (Bateman et al., 2006; Manivannan et al., 2015), the actual utility for these applications has not been demonstrated. The statement about S2 cells (C92) is presented as general knowledge without specific citation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "The number of Drosophila cell lines corresponding to known cell types is low due in part to lack of methods for generating lines from specific tissues; the method using restricted RasV12 expression is expected to be tractable for investigators, and single-cell cloning with characterization proved useful for identifying cell-type-specific lines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C98 are supported by the successful generation and characterization of multiple cell types in this study. The statement about low numbers of characterized lines (C94) is consistent with the introduction (C9-C10). The utility of the method (C96) and cloning approach (C97) is demonstrated by the results presented. However, C96 is somewhat speculative about future use by other investigators.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C8",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "The cell lines and associated data are available from the Drosophila Genomics Resource Center (DGRC) for distribution to the research community, and RNAseq data have been deposited in the DGET database and NCBI GEO (accession GSE219105).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C99-C102 are supported by explicit statements in the abstract, Materials availability section, and Methods. The data deposition is verifiable through the provided accession numbers and URLs. This ensures reproducibility and community access to the resources.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C9",
+      "C10"
+    ],
+    "result": "There are approximately 250 distinct Drosophila cell lines housed by the DGRC, and a subset of 25 lines showed that approximately half of transcripts expressed by each line were unique, with distinct transcriptomic profiles even for lines from the same tissue.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9 and C10 are supported by citations to prior work (Luhur et al., 2019; Cherbas et al., 2011) and provide important context for the current study. These are accurate representations of prior work that establish the need for additional characterized cell lines.",
+    "result_type": "MINOR"
+  }
+]

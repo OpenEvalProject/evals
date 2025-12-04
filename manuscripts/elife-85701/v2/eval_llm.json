@@ -1,0 +1,387 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C12",
+      "C13",
+      "C14",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C150",
+      "C151"
+    ],
+    "result": "Most European countries, including France, reported an increase in antibiotic resistance among invasive S. pneumoniae isolates from 2019 to 2020, while the total number of invasive isolates decreased substantially. In France specifically, penicillin resistance increased from 26.2% to 35.5% and macrolide resistance from 20.9% to 23.0%, while total isolates decreased by 45.1%. In the EU/EEA, penicillin resistance rose from 12.2% to 15.6% and macrolide resistance from 14.5% to 16.9%, while total isolates decreased by 44.3%.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C12-C14, C37-C41, C150-C151 are well-supported by surveillance data from EARS-Net and the French National Reference Center for Pneumococci. The data show consistent increases in resistance proportions alongside decreases in total isolate numbers across multiple countries and age groups, with specific quantitative values provided and visualized in Figures 1A and 1B.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C1",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C82",
+      "C83"
+    ],
+    "result": "Non-pharmaceutical interventions implemented during early 2020 led to global reductions in invasive pneumococcal disease (IPD) incidence, with similar declines observed across multiple countries including New Zealand, Taiwan, Hong Kong, and China. A significant reduction in the risk of invasive disease caused by S. pneumoniae was reported (risk ratio 0.47; 95% CI 0.40-0.55).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C15-C19, C82-C83 are supported by multiple citations to epidemiological studies from different geographic regions showing consistent reductions in IPD incidence during the pandemic. The quantitative risk ratio with confidence interval (C83) provides strong statistical evidence for the reduction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "A growing number of studies reported mostly stable pneumococcal carriage prevalence throughout COVID-19 pandemic containment measures across multiple countries and populations, including children in Belgium, Vietnam, Serbia, France, South Africa, and Israel, adults in Connecticut, and households in Seattle. One contrasting study in Denmark reported decreased carriage among older adults.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C20-C28 are supported by citations to multiple independent studies across diverse geographic locations and age groups. The consistency of findings across different populations strengthens the evidence, though C28 notes an exception in Denmark, which is appropriately acknowledged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Among 31 pandemic scenarios testing five mechanisms, model simulations identified only two scenarios (S19 and S29) that reproduced all three reported trends: a nearly 50% reduction in annual IPD, an increase in antibiotic resistance from 20% to 22%, and stable pneumococcal carriage. These scenarios required combining reduced community antibiotic prescribing, reduced IPD risk due to absence of respiratory viruses, and community azithromycin use in COVID-19 infected individuals. Reduced antibiotic consumption alone or longer carriage duration alone could not explain the observed trends.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C7, C47-C62 are supported by detailed model simulation results presented in Table 1. The systematic testing of 31 scenarios with clear quantitative outcomes provides strong evidence. The identification of only two scenarios matching all three trends is a specific, testable finding that is well-documented in the results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Using scenario S19 across different age groups (children, elderly, general population), simulations showed IPD incidence decreased 43-51% compared to pre-pandemic levels. Despite overall antibiotic prescribing reductions of 13-39%, antibiotic resistance increased in all age groups where azithromycin was used in COVID-19 infected individuals (20.1% to 23.6% in elderly, 32.8% to 36.0% in children). Total pneumococcal carriage remained relatively stable while resistant carriage increased due to competitive dynamics favoring resistant strains after azithromycin clearance of sensitive strains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C71 are supported by model simulations shown in Figure 3 with specific quantitative results for different age groups. The mechanistic explanation for increased resistant carriage (C66) is logically consistent with the model structure. The age-specific patterns are well-documented and internally consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C79",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "Model simulations reproduced the ~2% absolute increase in macrolide resistance observed in France but did not reproduce the larger 9% increase in penicillin resistance. Higher SARS-CoV-2 R0 values (ranging from 2-4 in European estimates) combined with greater azithromycin use led to increased antibiotic-resistant IPD incidence and elevated resistance. For example, R0=3.8 instead of 3.2 predicted a 3.5% increase in resistance instead of 2%.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C76, C79, C127-C129 are supported by model simulations shown in Figure 4A and comparison to reported data. The acknowledgment that the model did not fully reproduce penicillin resistance trends (C73) demonstrates appropriate critical assessment. The R0 sensitivity analysis is well-documented with specific quantitative predictions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C34",
+      "C35",
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "Higher SARS-CoV-2 R0 values and synergistic within-host virus-bacteria interactions could have additionally contributed to observed antibiotic resistance increases. Model simulations suggest within-host interactions could have important consequences for resistant IPD incidence during COVID-19 waves, especially in elderly and high-risk groups. However, the model does not explicitly incorporate these interactions since strong evidence for such interactions remains limited.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C8-C9, C34-C35, C134-C136 present hypothetical mechanisms that are explored in simulations (Figure 4B) but are acknowledged as speculative due to limited empirical evidence (C35, C134). While the model can simulate potential effects, the biological basis for these interactions is not well-established, making the contribution uncertain despite computational support.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C123"
+    ],
+    "result": "The model assessed different hypotheses to explain observed trends and identified the most plausible mechanisms: lockdowns indirectly reduced IPD incidence through reduced risk of progression from carriage (due to absence of respiratory viruses) rather than through reduced pneumococcal transmission, while surges in COVID-19 cases with azithromycin prescribing increased antibiotic resistance. The model successfully captured main trends of antibiotic resistance and IPD incidence observed in Europe in 2020.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C81, C84-C87, C123 are supported by comprehensive model simulations and comparison to empirical data. The distinction between reduced transmission versus reduced progression to disease (C86-C87) is well-supported by comparing scenarios and reconciling with stable carriage observations. The model's ability to reproduce observed trends provides validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C43"
+    ],
+    "result": "Globally, community antibiotic consumption dropped during the first year of the COVID-19 pandemic, with decreasing trends observed in England, Canada, United States, China, South Korea, New Zealand, and across European countries. In France, prescriptions decreased 18.2% overall, ranging from 13% to 39% across age groups. In Europe, 26 countries reported an average 18.3% decrease. These trends may be explained by reduced respiratory infections and primary care consultations, though telemedicine and pandemic stress may have partly offset reductions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C102, C43 are well-supported by multiple citations to studies from diverse geographic regions showing consistent patterns of reduced antibiotic prescribing. The quantitative data for France and Europe (C98-C99, C43) are specific and cited. The proposed explanations (C100-C101) are appropriately qualified as hypotheses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C44"
+    ],
+    "result": "While overall antibiotic prescribing decreased, prescription of specific antibiotics increased, particularly azithromycin associated with COVID-19 management. Community azithromycin consumption increased during the first pandemic year in multiple countries, with greatest prescribing among older patients. Specific examples include: 42.1% of COVID-19 drug prescriptions in southern Italy, 31.5% of COVID-19 patients in London, 30% of Medicare beneficiaries' COVID-19 visits in the US (50.7% azithromycin), and 10.1% increase in France overall with 25.9% increase during first lockdown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C112, C44 are supported by multiple citations to studies from different countries providing specific quantitative data on azithromycin prescribing patterns. The consistency across diverse settings and the detailed quantitative evidence strengthen support. The concern about AMR exacerbation (C44) is appropriately qualified as speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "Azithromycin has a long half-life (>60 hr) and stays in the system for ~15.5 days after the last dose, compared to penicillin which leaves in 7.7 hr. This suggests increased azithromycin consumption led to increased antibiotic exposure time despite reduced prescription numbers. Azithromycin use has been associated with selection of both macrolide and non-macrolide resistance, with studies showing significantly increased macrolide-resistant streptococci in healthy volunteers that persisted for 180 days, and increased resistant S. pneumoniae in mass distribution trials.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C119 are supported by citations to pharmacokinetic studies (C113-C114) and clinical studies demonstrating resistance selection (C116-C119). The inference about increased exposure time (C115) logically follows from the pharmacokinetic data. The empirical evidence for resistance selection is strong with specific quantitative results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "Model simulations show antibiotic resistance increases with surges in SARS-CoV-2 infections when there is corresponding azithromycin use, but lockdowns can moderate this trend by limiting SARS-CoV-2 transmission. Conversely, surges in azithromycin prescribing during SARS-CoV-2 outbreaks without effective transmission prevention measures may cause substantial increases in antibiotic resistance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C122 are supported by model simulations showing the interaction between SARS-CoV-2 transmission dynamics, azithromycin use, and resistance outcomes. The findings are internally consistent with the model structure and provide mechanistic insights, though C122 is appropriately qualified as speculative regarding real-world scenarios.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C42",
+      "C45",
+      "C46"
+    ],
+    "result": "Several mechanisms were proposed to explain observed trends: NPIs may have reduced bacterial transmission; containment measures reduced circulation of respiratory viruses known to be associated with IBD; lockdown reduced primary care consultations leading to decreased antibiotic prescriptions; frequent antibiotic prescribing to COVID-19 outpatients may have exacerbated AMR; and differences in pneumococcal carriage duration may have played a role, with longer carriage of resistant strains potentially providing an advantage during lockdown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C33, C42, C45-C46 present hypotheses that are appropriately qualified as speculative (C29, C32-C33, C42, C46) or supported by citations (C30-C31, C45). These hypotheses form the basis for the modeling work and are reasonable given the biological and epidemiological context, though their individual contributions required model testing to evaluate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C88",
+      "C89"
+    ],
+    "result": "A study in Vietnam found that reductions in IPD associated with NPIs may be due to reductions in overall pneumococcal carriage density rather than carriage prevalence, driven by reductions in capsular pneumococcal carriage density. Common respiratory viruses such as influenza increase pneumococcal carriage density, which contributes to transmission and disease.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C89 are supported by citations to relevant studies. C88 provides an alternative mechanistic explanation for IPD reduction that is consistent with stable carriage prevalence observations. C89 provides biological plausibility for the mechanism through established virus-bacteria interactions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126",
+      "C130"
+    ],
+    "result": "Not all European countries reported increased antibiotic resistance. Inter-country heterogeneity may be attributed to heterogeneity in antibiotic use, different adherence to COVID-19 control measures, and impacts on surveillance and reporting. Real-life scenarios are significantly more complicated than models, involving multiple alterations of pandemic factors at different times and heterogeneity across populations. Overall impacts of COVID-19 on AMR are difficult to predict and likely vary over short, medium, and long term depending on organism, setting, and subpopulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124-C126, C130 appropriately acknowledge limitations and complexity. C124 is supported by surveillance data showing heterogeneity. C125-C126, C130 provide reasonable explanations for observed heterogeneity and appropriately qualify the difficulty of prediction, demonstrating critical assessment of the work's scope and limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "SARS-CoV-2 bacterial coinfection has been reported relatively rarely, suggesting most COVID-19 patients probably do not require antibiotic therapy, though prophylactic use may have limited observed coinfection incidence. The inflammatory immune response from COVID-19 likely predisposes patients to some extent to progression to IBD, but antibiotic use may also favor progression for patients colonized with drug-resistant strains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C131-C133 are supported by citations but involve speculative interpretations (C131-C133 all marked as speculation). The low coinfection rates (C131) are empirically supported, but the implications for antibiotic necessity and the mechanisms of progression to IBD (C132-C133) remain uncertain and require further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142"
+    ],
+    "result": "The study focused on the general community, but COVID-19 distinctly influenced AMR in hospitals and long-term care facilities. Extensive antibiotic use in COVID-19 patients (68-81% hospitalized, 74-94% in ICU) and disruptions to stewardship programs may have increased resistant carriage in these settings. Hospital disorganization might have reduced surveillance, allowing resistant organisms to spread. However, early implementation of stewardship programs, patient isolation, and PPE use mitigated increases to some degree.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C137-C142 appropriately discuss the scope and limitations of the study. C139 is well-supported by meta-analysis data. C138, C140 are appropriately qualified as hypotheses. C141-C142 are supported by citations. This discussion provides important context for interpreting the community-focused findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C143",
+      "C144",
+      "C145"
+    ],
+    "result": "A limitation of the model is the lack of age structure and contact patterns between age groups, as SARS-CoV-2 infection risk, pneumococcal disease risk, disease severity, bacterial carriage prevalence, and antibiotic prescribing are all highly heterogeneous across age groups. While the model was kept simple, it was tested using different parameter combinations to mimic different subpopulations (children and \u226565 years-old), and simulations of different age groups individually reproduced realistic trends by age.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C143-C145 appropriately acknowledge a model limitation (C143) while demonstrating that the simplified approach still produced realistic age-specific trends (C144-C145). This represents good scientific practice in acknowledging limitations while showing the model's robustness.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C36",
+      "C146",
+      "C148",
+      "C149"
+    ],
+    "result": "In a systematic PubMed search conducted on 4 December 2023, no epidemiological models describing simultaneous transmission of SARS-CoV-2 and antibiotic-resistant bacteria in community settings were identified. This is the first epidemiological model outlining the impact of the COVID-19 pandemic on AMR dynamics in the community. While structured and parameterized for S. pneumoniae, the model's adaptability allows application to various bacteria and epidemiological scenarios. Future research would benefit from fitting the model to real-world data for different bacterial species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36, C146, C148-C149 are supported by the systematic literature search (C36) and represent reasonable assessments of the work's novelty and potential applications. C146 is a strong claim about being 'first' that is supported by the systematic search. C148-C149 appropriately discuss future directions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C10",
+      "C11"
+    ],
+    "result": "In 2019, estimates showed that AMR in clinically relevant bacteria was associated with 4.95 million deaths, of which 1.27 million were described as directly attributable to resistance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C11 are supported by citation to Murray et al., 2022, providing important context for the significance of AMR. These are background claims establishing the importance of the research question.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C158"
+    ],
+    "result": "The model simulation approach involved first simulating bacterial dynamics until endemic equilibrium was achieved, assuming S. pneumoniae was at equilibrium upon COVID-19 emergence. Then, using equilibrium states as initial conditions, a single SARS-CoV-2 infected individual was introduced and ODEs were integrated for 365 days. Simulations were conducted in an 'early pandemic scenario' with two 60-day lockdown periods starting on days 75 and 305. Lockdowns were assumed to have three major impacts on population behavior and transmission dynamics, including population-wide changes in antibiotic initiation rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C152-C156, C158 describe the methodological approach and are internally consistent with the model structure described. These are straightforward methodological descriptions that are well-documented in the Methods section.",
+    "result_type": "MINOR"
+  }
+]

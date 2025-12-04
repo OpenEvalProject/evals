@@ -1,0 +1,428 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "SNI induces a time-dependent increase in macrophage markers (Aif1, Csf1r) and macrophage numbers (Iba1+, CD11b+Ly6G\u2212) in DRGs, peaking at 7-10 days post-injury, while neutrophil numbers remain unchanged.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5 are supported by converging evidence from RT-qPCR (gene expression), immunofluorescence (Iba1+ cell counts), and flow cytometry (CD11b+Ly6G\u2212 cells). The data consistently show macrophage expansion without neutrophil infiltration, providing strong validation across multiple methodologies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "CX3CR1+ resident macrophages predominate in naive DRGs and expand after SNI, while CCR2+ monocytes do not infiltrate, indicating that macrophage expansion occurs without peripheral monocyte recruitment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C11 are well-supported by reporter mouse data (Cx3cr1GFP/+/Ccr2RFP/+) showing CX3CR1+ cell expansion without CCR2+ cell increase. The ~97% co-localization of CX3CR1 and Iba1 (C7) provides strong evidence for resident macrophage identity. The inference that monocytes do not infiltrate (C11) is appropriately drawn from the lack of CCR2+ cell increase.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C12"
+    ],
+    "result": "HSV-1 infection serves as a positive control demonstrating that CCR2+ monocytes can infiltrate DRGs under appropriate inflammatory conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C12 is supported by immunofluorescence data showing significant CCR2+ infiltration in HSV-1 infected mice. This control validates the experimental system's ability to detect monocyte infiltration when it occurs, strengthening the conclusion that SNI does not induce such infiltration.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Flow cytometry confirms that peripheral monocytes (CD11b+Ly6C+Ly6G\u2212) do not increase after SNI, while Cx3cr1 expression and CX3CR1+CD11b+ cell numbers increase significantly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C15 are supported by flow cytometry and RT-qPCR data. The use of Ly6C as a monocyte marker (C13) complements the CCR2 reporter data, providing orthogonal validation. The increase in Cx3cr1 expression and CX3CR1+CD11b+ cells further confirms resident macrophage expansion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Macrophage expansion in DRGs after SNI occurs similarly in Ccr2\u2212/\u2212 and wild-type mice, demonstrating that CCR2+ monocyte infiltration is not required for this process.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C19 are strongly supported by genetic evidence using Ccr2\u2212/\u2212 mice. The similar macrophage expansion in both genotypes (C17-C18) provides compelling evidence that CCR2-dependent monocyte recruitment is dispensable. This genetic approach effectively addresses potential limitations of reporter mice.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Parabiosis experiments demonstrate that blood-derived cells (GFP+ or CCR2+/CX3CR1+ from parabiotic partner) do not significantly infiltrate DRGs after SNI, despite macrophage expansion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C22 are supported by parabiosis data showing constant GFP+ cell numbers despite Iba1+ cell expansion. This approach provides strong evidence against monocyte infiltration by directly tracking circulating cells. The use of both eGFP and Cx3cr1GFP/+/Ccr2RFP/+ parabiosis models strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Fate-mapping with Ms4a3Cre-tdTomato mice shows minimal contribution of hematopoietic-derived monocytes (~17%) to resident DRG macrophages at baseline, with no significant increase after SNI, confirming lack of monocyte and neutrophil infiltration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C27 are supported by fate-mapping data. The low baseline percentage (C23) and lack of increase post-SNI (C25) provide strong evidence against monocyte infiltration. The inference about neutrophils (C27) is appropriately drawn given that Ms4a3Cre also labels granulocytes. This approach complements the parabiosis and genetic studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C28"
+    ],
+    "result": "Multiple experimental approaches converge to support that macrophage expansion in DRGs after SNI results from proliferation of resident CX3CR1+ macrophages rather than monocyte infiltration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C28 represents an integrative conclusion supported by reporter mice (C6-C11), Ccr2\u2212/\u2212 mice (C16-C19), parabiosis (C20-C22), and fate-mapping (C23-C27). The convergence of multiple independent approaches provides exceptionally strong evidence for this central conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "CX3CR1+ macrophages show increased Ki67 staining at 3 days post-SNI, indicating proliferation, while at 7 days other cell types (satellite glial cells, Schwann cells, mesenchymal cells) also proliferate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C31 are supported by Ki67 immunofluorescence showing temporal dynamics of proliferation. The observation that CX3CR1+Ki67+ cells peak at day 3 (C29) while total Ki67+ cells remain high at day 7 (C30) logically supports the inference about other proliferating cell types (C31). This temporal analysis strengthens the proliferation mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C32"
+    ],
+    "result": "Macrophage proliferation (Ki67+ cells) in DRGs after SNI is similar in Ccr2\u2212/\u2212 and wild-type mice, further confirming CCR2-independent proliferation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C32 is supported by Ki67 quantification in Ccr2\u2212/\u2212 mice. This extends the earlier finding (C16-C19) by specifically demonstrating that proliferation, not just total numbers, is CCR2-independent. This provides mechanistic insight into the expansion process.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Intrathecal AraC treatment inhibits cell proliferation, reduces CX3CR1+ cell numbers in DRGs, and attenuates SNI-induced mechanical allodynia, linking macrophage proliferation to neuropathic pain development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C33-C36 are supported by behavioral and immunofluorescence data, but the interpretation is complicated by potential off-target effects. The authors acknowledge (in methods) that intrathecal AraC may also affect spinal cord microgliosis, which could contribute to pain reduction. While the correlation between reduced CX3CR1+ cells and reduced pain is clear, causality cannot be definitively established without more selective targeting of DRG macrophages. The citation supporting baseline threshold maintenance (C35) provides some validation of specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "CX3CR1 is expressed in sNAMs and mediates microglia proliferation in spinal cord after nerve injury; CX3CL1 expression increases in DRGs after SNI.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C38 are supported by citations to prior literature, while C39 is supported by RT-qPCR data. The increase in ligand expression (C39) provides mechanistic context for investigating CX3CR1 signaling. These claims appropriately set up the mechanistic investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "CX3CR1 deficiency (Cx3cr1GFP/GFP mice) does not affect baseline macrophage numbers but reduces SNI-induced macrophage expansion and proliferation in DRGs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C44 are well-supported by flow cytometry and immunofluorescence data comparing Cx3cr1GFP/GFP and Cx3cr1GFP/+ mice. The normal baseline (C40, C42) but reduced expansion (C41, C43) and proliferation (C44) demonstrate that CX3CR1 signaling specifically regulates injury-induced proliferation rather than homeostatic maintenance. This genetic approach provides strong mechanistic evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C45"
+    ],
+    "result": "SNI-induced mechanical pain hypersensitivity is reduced in Cx3cr1GFP/GFP mice compared to heterozygous controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C45 is supported by behavioral testing data. Combined with the reduced macrophage proliferation (C44), this links CX3CR1 signaling to both macrophage expansion and pain development. However, the behavioral effect could involve CX3CR1 signaling in other cell types (neurons, spinal cord microglia), limiting the specificity of the conclusion about DRG macrophages.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "CX3CR1 signaling is important for sNAMs proliferation and neuropathic pain development after nerve injury, but does not control baseline survival/seeding of sNAMs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C48 represent appropriate inferences from the Cx3cr1GFP/GFP data (C40-C45). The normal baseline (C46) but impaired injury response (C47-C48) suggests a specific role in injury-induced proliferation. However, the pain phenotype (C48) may involve CX3CR1 in multiple cell types, not just DRG macrophages, which should be acknowledged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C49",
+      "C50"
+    ],
+    "result": "TNF, IL-1\u03b2, and IL-6 are important cytokines in sensory ganglia after nerve injury, with confirmed upregulation of Tnf, Il1b, and Il6 transcripts at 7 days post-SNI.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C49 is supported by citations to prior literature, while C50 is supported by RT-qPCR data. These claims establish the inflammatory context and set up investigation of cellular sources. The data confirm expected cytokine responses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Single-cell RNAseq re-analysis and cell sorting demonstrate that Tnf and Il1b expression is confined to sNAMs (CX3CR1+CD11b+ cells) and increases specifically in this population after SNI, while Il6 is expressed mainly in CD45\u2212 non-immune cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C55 are supported by scRNAseq re-analysis and cell sorting with RT-qPCR. The convergence of computational analysis (C51) and experimental validation (C53-C55) provides strong evidence for cellular sources. The ambiguity about Il6 in scRNAseq (C52) is appropriately acknowledged and resolved by cell sorting (C55). This multi-modal approach effectively identifies cytokine sources.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C56",
+      "C57"
+    ],
+    "result": "Tnf and Il1b expression is reduced in DRGs from Cx3cr1GFP/GFP mice after SNI, while Il6 expression increases similarly in both genotypes, demonstrating CX3CR1-dependent and -independent cytokine production.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C57 are supported by RT-qPCR comparing genotypes. The differential effects on Tnf/Il1b (reduced) versus Il6 (unchanged) in Cx3cr1GFP/GFP mice align with the cellular source data (C53-C55) and demonstrate that CX3CR1 signaling specifically regulates macrophage-derived cytokines. This provides mechanistic insight into how CX3CR1 contributes to inflammation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C58",
+      "C59"
+    ],
+    "result": "sNAMs are the main source of CX3CR1-dependent pro-inflammatory cytokines (TNF, IL-1\u03b2) after nerve injury, while IL-6 is induced mainly in non-immune cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C59 represent integrative conclusions from cell sorting (C53-C55) and CX3CR1 deficiency (C56-C57) experiments. The convergence of cellular localization and genetic manipulation provides strong evidence for these conclusions. This clarifies the inflammatory mechanisms in nerve injury.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Background context: Tissue-resident macrophages are heterogeneous; sNAMs contact sensory neurons and are implicated in neuropathic pain; the mechanism of macrophage accumulation (proliferation vs. infiltration) after nerve injury remains debated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C64 represent established knowledge and the scientific controversy addressed by this study. These are appropriately cited and accurately represent the field's understanding and open questions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Main findings summary: Macrophage expansion in DRGs after SNI results from resident CX3CR1+ macrophage proliferation, not monocyte infiltration; these proliferating macrophages produce TNF and IL-1\u03b2 and participate in neuropathic pain development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C68 represent the study's main conclusions, supported by the comprehensive experimental evidence detailed in earlier results. The integration of multiple approaches (reporter mice, genetics, parabiosis, fate-mapping, proliferation markers, behavioral testing, cytokine analysis) provides exceptionally strong support for these conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "CX3CR1 signaling is involved in sNAMs proliferation and neuropathic pain development, with nerve injury leading to CX3CR1-dependent sNAMs proliferation that accounts for pain development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C71 are supported by Cx3cr1GFP/GFP mouse data showing reduced proliferation (C44) and pain (C45). However, the causal link between macrophage proliferation and pain (C71) is somewhat indirect, as CX3CR1 signaling could affect pain through multiple mechanisms (neuronal signaling, spinal cord effects). The conclusion is reasonable but should acknowledge these alternative mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C72"
+    ],
+    "result": "Therapeutic speculation: sNAMs proliferation could be modulated to treat chronic neuropathic pain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C72 is a reasonable therapeutic speculation based on the AraC (C33) and CX3CR1 deficiency (C45) data showing that reducing macrophage proliferation reduces pain. However, this remains speculative as no therapeutic intervention was tested, and the specificity of targeting DRG macrophages versus other effects needs further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Literature context: Tissue-resident macrophages have diverse functions; sNAMs in PNS are involved in tissue repair and neuropathic pain; previous studies attributed macrophage increases to monocyte infiltration, but recent studies suggest resident macrophage proliferation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C83 represent established knowledge and recent developments in the field, appropriately cited. These claims accurately frame the study's context and the evolution of understanding about macrophage dynamics in nerve injury.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Discussion of blood-DRG barrier: The barrier structure (perineurium, endoneurial vessels) may explain limited leukocyte infiltration; barrier integrity may be affected by injury type and aging; leukocytes may accumulate in leptomeninges rather than DRG parenchyma.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C93 represent cited knowledge about the blood-DRG barrier and recent findings about age-dependent infiltration and leptomeningeal accumulation. These appropriately contextualize why monocyte infiltration may not occur after SNI in young adult mice and acknowledge limitations of the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Mechanistic context: Neuronal activation after nerve injury produces CX3CL1, which induces microglia proliferation in spinal cord; DRG macrophages contact neurons expressing membrane-bound CX3CL1, which is released after injury.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C97 represent cited knowledge about CX3CL1/CX3CR1 signaling in the nervous system. These appropriately provide mechanistic context for the study's investigation of CX3CR1 in DRG macrophage proliferation, drawing parallels to spinal cord mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Alternative mechanisms: Other signaling pathways (e.g., CSF1-CSF1R) may contribute to sNAMs proliferation, as CX3CR1 deficiency only partially reduces macrophage expansion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C100 represent appropriate acknowledgment of study limitations and alternative mechanisms. The partial reduction in Cx3cr1GFP/GFP mice (C41) supports the inference that other pathways contribute (C98). The discussion of CSF1-CSF1R (C99-C100) is appropriately cited and provides context for future studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Pattern recognition receptors: sNAMs express TLRs and NLRs; TLR2/4/9 and NOD2 signaling contribute to sNAMs activation/proliferation after nerve injury.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C103 represent established knowledge (C101-C102) and prior findings from the authors' group (C103). These appropriately contextualize the multiple signaling pathways that may regulate sNAMs responses to nerve injury.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Cytokine source discussion: Literature shows discrepancies about cytokine sources; TNF and IL-1\u03b2 from sNAMs are implicated in neuropathic pain; sensory neurons produce IL-6; CX3CR1 signaling is not involved in IL-6 production.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C107 appropriately discuss prior literature (C104-C106) and integrate current findings (C107). The discussion acknowledges field controversies and positions the current findings within this context. Claim C107 is supported by the genotype comparison data (C57).",
+    "result_type": "MINOR"
+  }
+]

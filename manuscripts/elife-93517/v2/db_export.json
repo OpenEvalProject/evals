@@ -1,0 +1,2023 @@
+{
+  "submission": {
+    "id": "ffbc093f-3ffb-4c21-ab89-ed3319546f9d",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-04T04:13:43.987446Z",
+    "updated_at": "2025-12-04T04:13:43.987446Z"
+  },
+  "content": [
+    {
+      "id": "d45ecb4a-3ed4-410f-b18d-a6012597d736",
+      "submission_id": "ffbc093f-3ffb-4c21-ab89-ed3319546f9d",
+      "content_type": "manuscript",
+      "content_text": "# The tRNA thiolation-mediated translational control is essential for plant immunity\n\n## Authors\n\n- Xueao Zheng<sup>1</sup> ([ORCID: 0000-0001-6204-7611](https://orcid.org/0000-0001-6204-7611))\n- Hanchen Chen<sup>1</sup> ([ORCID: 0009-0004-5323-6989](https://orcid.org/0009-0004-5323-6989))\n- Zhiping Deng<sup>7</sup> ([ORCID: 0000-0001-9663-3088](https://orcid.org/0000-0001-9663-3088))\n- Yujing Wu<sup>1</sup>\n- Linlin Zhong<sup>8</sup> ([ORCID: 0000-0003-1908-1413](https://orcid.org/0000-0003-1908-1413))\n- Chong Wu<sup>1</sup>\n- Xiaodan Yu<sup>1</sup>\n- Qiansi Chen<sup>2</sup> ([ORCID: 0000-0003-2800-5703](https://orcid.org/0000-0003-2800-5703))\n- Shunping Yan<sup>1</sup> ([ORCID: 0000-0002-3665-1310](https://orcid.org/0000-0002-3665-1310)) \u2020\n\n### Affiliations\n\n1. Hubei Hongshan Laboratory Wuhan China\n2. Zhengzhou Tobacco Research Institute of CNTC Zhengzhou China\n3. College of Life Science and Technology, Huazhong Agricultural University Wuhan China ([ROR:023b72294](https://ror.org/023b72294))\n4. Shenzhen Branch, Guangdong Laboratory for Lingnan Modern Agriculture Shenzhen China\n5. Agricultural Genomics Institute at Shenzhen, Chinese Academy of Agricultural Sciences Shenzhen China ([ROR:0313jb750](https://ror.org/0313jb750))\n6. Shenzhen Institute of Nutrition and Health, Huazhong Agricultural University Shenzhen China ([ROR:023b72294](https://ror.org/023b72294))\n7. State Key Laboratory for Managing Biotic and Chemical Threats to the Quality and Safety of Agro-products, Institute of Virology and Biotechnology, Zhejiang Academy of Agricultural Sciences Hangzhou China ([ROR:02qbc3192](https://ror.org/02qbc3192))\n8. Key Laboratory of Horticultural Plant Biology, Ministry of Education, College of Horticulture and Forestry Sciences, Huazhong Agricultural University Wuhan China ([ROR:023b72294](https://ror.org/023b72294))\n\n\u2020 Corresponding author\n\n## Abstract\n\nPlants have evolved sophisticated mechanisms to regulate gene expression to activate immune responses against pathogen infections. However, how the translation system contributes to plant immunity is largely unknown. The evolutionarily conserved thiolation modification of transfer RNA (tRNA) ensures efficient decoding during translation. Here, we show that tRNA thiolation is required for plant immunity in Arabidopsis. We identify a cgb mutant that is hyper-susceptible to the pathogen Pseudomonas syringae. CGB encodes ROL5, a homolog of yeast NCS6 required for tRNA thiolation. ROL5 physically interacts with CTU2, a homolog of yeast NCS2. Mutations in either ROL5 or CTU2 result in loss of tRNA thiolation. Further analyses reveal that both transcriptome and proteome reprogramming during immune responses are compromised in cgb. Notably, the translation of salicylic acid receptor NPR1 is reduced in cgb, resulting in compromised salicylic acid signaling. Our study not only reveals a regulatory mechanism for plant immunity but also uncovers an additional biological function of tRNA thiolation.\n\n## Introduction\n\nAs sessile organisms, plants are frequently infected by different pathogens, which greatly affect plant growth and development, and cause a tremendous loss in agriculture (Jones and Dangl, 2006; Spoel and Dong, 2012; Yan et al., 2013). To defend against pathogens, plants have evolved sophisticated immune mechanisms. One essential immune regulator is the phytohormone salicylic acid (SA), which plays a central role in immune responses (Vlot et al., 2009; Peng et al., 2021; Yan and Dong, 2014; Zhou and Zhang, 2020). Upon pathogen infection, the biosynthesis of SA is dramatically induced. Plants defective in SA biosynthesis or SA signaling are hyper-susceptible to pathogens (Cao et al., 1997; Rekhter et al., 2019). Several independent forward genetic screens revealed that NONEXPRESSER OF PR GENES 1 (NPR1) is a master regulator of SA signaling (Canet et al., 2010; Cao et al., 1997; Ryals et al., 1997; Shah et al., 1997). In the Arabidopsis npr1 mutant, the SA-mediated immune responses are dramatically reduced. Biochemical and structural studies suggested that NPR1 and its homologs NPR3 and NPR4 are SA receptors (Ding et al., 2018; Fu et al., 2012; Kumar et al., 2022; Wang et al., 2020; Wu et al., 2012; Zhou et al., 2023).\n\nImmune responses involve massive changes in gene expression at transcription, post-transcription, translation, and post-translation levels. Compared with other regulatory mechanisms, the translation regulation mechanism is less well studied. Notably, it is reported that both the pattern-triggered immunity (PTI) and effector-triggered immunity (ETI) involve translational reprogramming (Xu et al., 2017; Yoo et al., 2020). And PABP/purine-rich motif was described as an initiation module for PTI-associated translation (Wang et al., 2022) and CDC123, an ATP-grasp protein, is a key activator of ETI-associated translation (Chen et al., 2023b).\n\nDuring translation, the code information of mRNA is decoded by transfer RNA (tRNA) molecules, which carry different amino acids. In this sense, the tRNA molecules function as deliverers of the building blocks for translation. The decoding efficiency of tRNAs is affected by their abundance and modifications as well as aminoacyl-tRNA synthetases, amino acid abundance, and elongation factors. Interestingly, an emerging regulatory role for tRNA modifications during elongation has been reported (Delaunay et al., 2016; Schaffrath and Leidel, 2017; Torres et al., 2014).\n\nCurrently, more than 150 different tRNA modifications have been identified (Agris et al., 2018). Among them, the 5-methoxycarbonylmethyl-2-thiouridine of uridine at wobble nucleotide (mcm5s2U) is highly conserved in all eukaryotes. The mcm5s2U modification is present in the wobble position of tRNA-Lys(UUU), tRNA-Gln(UUG), and tRNA-Glu(UUC) (Huang et al., 2005; Lu et al., 2005; Sen and Ghosh, 1976). In budding yeast (Saccharomyces cerevisiae), the 5-methoxycarbonylmethyl of uridine (mcm5U) is catalyzed by the Elongator protein (ELP) complex and the Trm9/112 complex, whereas thiolation (s2U) is mediated by the ubiquitin-related modifier 1 (URM1) pathway involving URM1, UBA4, NCS2, and NCS6 (Leidel et al., 2009; Nakai et al., 2004; Noma et al., 2009; Zabel et al., 2008). Loss of the mcm5s2U modification causes ribosome pausing at AAA and CAA codons, which results in defective co-translational folding of nascent peptides and protein aggregation, thereby disrupting proteome homeostasis (Nedialkova and Leidel, 2015; Ranjan and Rodnina, 2017; Rezgui et al., 2013). In yeasts, the mcm5s2U modification was reported to regulate cell cycle, DNA damage repair, and abiotic stress responses (Dewez et al., 2008; Jablonowski et al., 2006; Klassen et al., 2017; Leidel et al., 2009; Nedialkova and Leidel, 2015; Zinshteyn and Gilbert, 2013). In humans, loss of the mcm5s2U modification causes numerous disorders including severe developmental defects, neurological diseases, tumorigenesis, and cancer metastasis (Pan, 2018; Shaheen et al., 2019; Simpson et al., 2009; Torres et al., 2014; Waszak et al., 2020). In plants, loss of the mcm5s2U modification was associated with developmental defects and hypersensitivity to heat stress (Leiber et al., 2010; Nakai et al., 2019; Xu et al., 2020). However, it remains unknown whether the mcm5s2U modification is involved in plant immune responses.\n\nIn this study, we found that the mcm5s2U modification is required for plant immunity. Transcriptome and proteome analyses revealed that the mcm5s2U modification is essential for the reprogramming of immune-related genes. Especially, the translation of the master immune regulator NPR1 is compromised in the mcm5s2U mutant. Our study not only expands the biological function of tRNA thiolation but also highlights the importance of translation control in plant immunity.\n\n## Results\n\n### ROL5 is required for plant immunity\n\nIn a study to test the disease phenotypes of some transgenic Arabidopsis, we found that one transgenic line was hyper-susceptible to the bacterial pathogen Pseudomonas syringae pv. Maculicola (Psm) ES4326. The disease symptom resembled that of npr1, in which the master immune regulator NPR1 was mutated (Figure 1A and B). We named this line cgb (for Chao Gan Bing; \u2018hyper-susceptible to pathogens\u2019 in Chinese). To identify the causal gene of cgb, we sequenced its genome using the next-generation sequencing technology, which revealed that there was a T-DNA insertion in the fourth exon of ROL5 (AT2G44270; Figure 1C). The insertion was confirmed by genotyping analysis (Figure 1D). In the cgb mutant, the transcript of ROL5 was undetectable (Figure 1E), indicating that cgb was a knock-out mutant. To confirm that ROL5 was the CGB gene, we carried out a complementation experiment by transforming ROL5 into the cgb mutant. As shown in Figure 1A and B, the disease phenotype of the complementation line (COM) was similar to that of wild-type (WT). Moreover, we generated another allele of ROL5 mutant, rol5-c, using the CRISPR-Cas9 gene-editing approach (Wang et al., 2015). In rol5-c, a 2 bp deletion in the first exon of ROL5 causes a frameshift (Figure 1C). As expected, the rol5-c mutant was hyper-susceptible to Psm as cgb (Figure 1A and B). These data strongly suggested that ROL5 is required for plant immunity.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/93517/elife-93517-fig1-v2.jpg)\n\n**Figure 1.:** (A) Pictures of Arabidopsis 3 days after infection. The arrows indicate the leaves inoculated with Psm ES4326 (OD600=0.0002). cgb and rol5-c are mutants defective in ROL5. COM, the complementation line of cgb. npr1-1 serves as a positive control. Bar = 1 cm. (B) The growth of Psm ES4326. CFU, colony-forming unit. Error bars represent 95% confidence intervals (n=7). Statistical significance was determined by two-tailed Student\u2019s t-test. ***, p<0.001; ns, not significant. (C) A schematic diagram showing the site of the T-DNA insertion in cgb and the deleted nucleotides in rol5-c. (D) The genotyping results using the primers indicated in C. (E) The transcript of ROL5 is not detectable in cgb. UBQ5 serves as an internal reference gene.\n\n### ROL5 interacts with CTU2 in Arabidopsis\n\nROL5 is a homolog of yeast NCS6 (Leiber et al., 2010), which forms a protein complex with NCS2 to catalyze mcm5s2U34 (Figure 2A). The NCS2 homolog in Arabidopsis is CTU2 (Philipp et al., 2014). To test whether ROL5 interacts with CTU2, we first performed yeast two-hybrid assays. Consistent with the previous finding (Philipp et al., 2014), only when ROL5 and CTU2 were co-expressed, the yeasts could grow on the selective medium (Figure 2B), indicating that ROL5 interacts with CTU2 in yeast. To test whether they can interact in vivo, we carried out split luciferase assays in Nicotiana benthamiana. ROL5 was fused with the N-terminal half of luciferase (nLUC) and CTU2 was fused with the C-terminal half of luciferase (cLUC). An interaction between two proteins brings the two halves of luciferase in close proximity, leading to enzymatic activity and production of luminescence that is detectable using a hypersensitive CCD camera. As shown in Figure 2C, the luminescence signal could be detected only when ROL5-nLUC and cLUC-CTU2 were co-expressed. We also performed co-immunoprecipitation (CoIP) assays in N. benthamiana. When ROL5-FLAG was co-expressed with CTU2-GFP, ROL5-FLAG could be immunoprecipitated by the GFP-Trap beads (Figure 2D). To test whether the interaction is direct, we conducted GST pull-down assays. GST-CTU2 and ROL5-His proteins were expressed in Escherichia coli and were purified using affinity resins. As shown in Figure 2E, ROL5-His could be specifically pulled down by GST-CTU2, but not by GST alone, suggesting that ROL5 directly interacts with CTU2.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/93517/elife-93517-fig2-v2.jpg)\n\n**Figure 2.:** (A) A schematic diagram showing the function of ROL5 and CTU2. The ROL5 homolog NCS6 and the CTU2 homolog NCS2 form a complex to catalyze the mcm5s2U modification at wobble nucleotide of tRNA-Lys (UUU), tRNA-Gln (UUC), and tRNA-Glu (UUG), which pair with the AAA, GAA, and CAA codons in mRNA, respectively. (B) Yeast two-hybrid assays. The growth of yeast cells on the SD-Trp/Leu/His medium indicates interaction. BD, binding domain. AD, activation domain. (C) Split luciferase assays. The indicated proteins were fused to either the C- or N-terminal half of luciferase (cLUC or nLUC) and were transiently expressed in N. benthamiana. The luminesce detected by a CCD camera reports interaction. (D) Co-immunoprecipitation (CoIP) assays. CTU2-GFP and/or ROL5-FLAG fusion proteins were expressed in N. benthamiana. The protein samples were precipitated by GFP-Trap, followed by western blotting using anti-GFP or anti-FLAG antibodies. (E) GST pull\u2010down assays. The recombinant GST or GST-CTU2 proteins coupled with glutathione beads were used to pull down His-ROL5, followed by western blotting using anti-His or anti-GST antibodies.\n\n### The tRNA thiolation is required for plant immunity\n\nGiven that CTU2 interacts with ROL5, we reasoned that the ctu2 mutant should have similar phenotypes to rol5 in response to pathogens. To test this, we infected the T-DNA insertion mutant ctu2-1 with Psm ES4326. As expected, the ctu2-1 mutant is hyper-susceptible to the pathogen (Figure 3A and B).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/93517/elife-93517-fig3-v2.jpg)\n\n**Figure 3.:** (A and B) The rol5-c and ctu2-1 mutants are more susceptible to the bacterial pathogen Psm ES4326 than wild-type (WT). (A) Pictures of Arabidopsis plants 3 days after infection. Arrows indicate the leaves inoculated with Psm ES4326. Bar = 1 cm. (B) The growth of Psm ES4326. CFU, colony-forming unit. Error bars represent 95% confidence intervals (n=6). Statistical significance was determined by two-tailed Student\u2019s t-test. ***, p<0.001. (C) The rol5-c and ctu2-1 mutants lack the mcm5s2U modification. The levels of U, cm5U, mcm5U, and mcm5s2U were quantified through high-performance liquid chromatography coupled with mass spectrometry (HPLC-MS) analyses. The intensity and the retention time of each nucleotide are shown. The structure of each nucleotide and the catalyzing enzymes are shown on the right.\n\nBy using N-acryloylamino phenyl mercuric chloride, which binds thiolated tRNAs, previous studies revealed that tRNA thiolation was defective in the rol5 and ctu2 mutant (Leiber et al., 2010; Philipp et al., 2014). To confirm this result, we measured the mcm5U and mcm5s2U levels in WT, rol5-c, and ctu2-1 using high-performance liquid chromatography coupled with mass spectrometry (HPLC-MS). In WT, mcm5U was almost undetectable (Figure 3C), indicating that it is efficiently transformed into mcm5s2U in Arabidopsis. However, in the rol5-c and ctu2-1 mutants, the mcm5s2U level was undetectable while the mcm5U level was very high, suggesting that both ROL5 and CTU2 are required for mcm5s2U. These data revealed that ROL5 and CTU2 form a complex to catalyze the mcm5s2U modification, which is essential for plant immunity.\n\n### Transcriptome and proteome reprogramming are compromised in cgb\n\nTo understand why the cgb mutant was hyper-susceptible to pathogens, we performed transcriptome and proteome analyses of the cgb mutant and the COM line. Each sample was divided into two parts, one for transcriptome analysis using RNA sequencing (RNA-seq) approach, and the other for proteome analysis using a tandem mass tag (TMT)-based approach. Principal component analysis showed that the reproducibility between biological replicates was good (Figure 4\u2014figure supplement 1). The differentially expressed genes (DEGs) and the differentially expressed proteins (DEPs) between different samples were identified and quantified through data analysis. Regarding the transcriptome, in COM, 22% (4819) and 27% (5767) of genes were respectively up-regulated or down-regulated after Psm infection (Figure 4A). However, only 18% (3986) and 23% (4913) of genes were respectively up-regulated or down-regulated in cgb. Regarding the proteome, in COM, 16% (1193) and 13% (1021) of proteins were respectively up-regulated or down-regulated after Psm infection (Figure 4B). In contrast, only 12% (909) and 10% (787) of proteins were respectively up-regulated or down-regulated in cgb. Therefore, the numbers of both DEGs and DEPs were reduced in cgb compared to those in COM.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/93517/elife-93517-fig4-v2.jpg)\n\n**Figure 4.:** (A and B) The percentage and the number of the differentially expressed genes (DEGs, p-value <0.05, |Log2Foldchange|>Log21.5, (A)) and the differentially expressed proteins (DEPs, p-value <0.05, |Log2Foldchange|>Log21.2, (B)) after Psm infection in the cgb mutant and the complementation line (COM). Down, down-regulated. Up, up-regulated. Nc, no change. (C and D) The percentage and the number of the attenuated genes (C) and proteins (D) in cgb among the up-regulated DEGs and DEPs in COM. (E and F) Gene Ontology (GO) analysis of the attenuated genes (E) or proteins (E) in cgb. The top 15 significantly enriched GO terms are shown.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/93517/elife-93517-fig4-figsupp1-v2.jpg)\n\nTo further examine the gene expression defects in cgb, we compared the expression changes after Psm infection between cgb and COM. Among 4819 up-regulated DEGs in COM, the expression changes of 1113 genes were less prominent in cgb than in COM (Figure 4C). These genes were referred to as attenuated genes. Among 1193 up-regulated DEPs in COM, the expression changes of 366 proteins were less prominent in cgb than in COM (Figure 4D). These proteins were named attenuated proteins. Gene Ontology (GO) analysis of the attenuated genes and attenuated proteins revealed that many important biological processes were significantly enriched (Figure 4E and F). These data suggested that both transcriptome and proteome reprogramming were compromised in cgb.\n\n### The translation efficiency of immune-related proteins is compromised in cgb\n\nSince the mcm5s2U modification directly regulates translation process (Nedialkova and Leidel, 2015; Schaffrath and Leidel, 2017), we sought to identify the proteins with compromised translation efficiency. The 366 attenuated proteins in cgb may be due to reduced transcription or reduced translation. To distinguish between these two possibilities, we performed Venn diagram analysis between attenuated genes and attenuated proteins, revealing that 261 attenuated proteins were not attenuated at the transcript level, suggesting that the attenuated expression of these proteins is due to reduced translation (Figure 5A). GO analysis of these 261 proteins revealed that some immune-related processes (i.e. response to salicylic acid, defense response to bacterium, and immune system process) were significantly enriched (Figure 5B). Notably, NPR1 is one of these proteins.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/93517/elife-93517-fig5-v2.jpg)\n\n**Figure 5.:** (A) Venn diagram analysis of attenuated genes and proteins. (B) Gene Ontology (GO) analysis of the 261 attenuated proteins. The top 6 significantly enriched GO terms are shown. (C) Western blot analysis of NPR1 protein levels. The 7-day-old seedlings grown on 1/2 MS medium were treated with buffer (10 mM MgCl2, pH 7.5, Mock) or Psm ES4326 (OD600=0.2) for 48 hr. (D) Polysome profiling results. Abs, the absorbance of sucrose gradient at 254 nm. The numbers on the X-axis indicate the polysomal fractions subjected to qPCR analyses. (E) The qPCR analyses. The relative mRNA level of NPR1 in different fractions or in total mRNA was normalized against UBQ5. The ratio between the relative mRNA levels in each fraction and in total mRNA was shown (n=3). Statistical significance was determined by two-tailed Student\u2019s t-test. **, p<0.01; ***, p<0.001; ns, not significant. (F) The heatmap showing the expression changes of salicylic acid (SA)-responsive genes after pathogen infection.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/93517/elife-93517-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** The 7-day-old seedlings grown on 1/2 MS medium were treated with buffer (10 mM MgCl2, pH 7.5, Mock) or Psm ES4326 (OD600=0.2) for 48 hr. The relative mRNA level of NPR1 was normalized against UBQ5. Error bars represent 95% confidence intervals (n=3). Statistical significance was determined by two-tailed Student\u2019s t-test. ns, not significant.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/93517/elife-93517-fig5-figsupp2-v2.jpg)\n\n**Figure 5\u2014figure supplement 2.:** The Arabidopsis plants were treated with (+) or without (-) 600 \u03bcM benzothiadiazole (BTH) for 24 hr before infection. The growth of Psm ES4326 was shown. CFU, colony-forming unit. Error bars represent 95% confidence intervals (n=7). Statistical significance was determined by two-tailed Student\u2019s t-test. ***, p<0.001; ns, not significant.\n\n![Figure 5\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/93517/elife-93517-fig5-figsupp3-v2.jpg)\n\n**Figure 5\u2014figure supplement 3.:** The Arabidopsis plants were infected with Psm ES4326 and the growth of Psm ES4326 was shown. CFU, colony-forming unit. Error bars represent 95% confidence intervals (n=7). Statistical significance was determined by two-tailed Student\u2019s t-test. **, p<0.01.\n\nTo verify the expression of NPR1, we performed RT-qPCR and western blot analysis. Consistent with transcriptome and proteome data, the transcription levels of NPR1 were similar between COM and cgb both before and after Psm ES4326 infection (Figure 5\u2014figure supplement 1), whereas the NPR1 protein level was much higher in COM than that in cgb after Psm ES4326 infection (Figure 5C). To further confirm that the translation of NPR1 was reduced in cgb, we carried out ribosome profiling experiment. Compared with COM, the polysome fractions in cgb were reduced (Figure 5D), suggesting that the overall translation efficiency is lower in cgb. As expected, the relative mRNA levels of NPR1 in multiple polysome fractions were significantly lower in cgb than in COM (Figure 5E).\n\nThe reduced NPR1 protein level in cgb suggested that SA signaling is compromised. To test this possibility, we examined the expression of all the genes (118) belonging to the GO term \u2018response to salicylic acid\u2019. In our transcriptome data, we could detect the expression of 73 genes, among which 59 genes (80.8%) were reduced in cgb compared with COM (Figure 5F). To further examine the defects of SA signaling in cgb, we performed SA-mediated protection assay. The Arabidopsis plants were treated with benzothiadiazole (BTH), a functional analog of SA, for 24 hr before infection. As expected, the growth of Psm ES4326 was reduced in BTH-treated COM, but not cgb and npr1 (Figure 5\u2014figure supplement 2). These results suggested that SA signaling is indeed compromised in the cgb mutant.\n\nTo investigate the genetic relationship between CGB and NPR1, we generated the cgb npr1 double mutant and examined its disease phenotypes. We found that cgb npr1 was significantly more susceptible than either npr1 or cgb (Figure 5\u2014figure supplement 3). There are two possible reasons for the observed additive effects of cgb and npr1. First, the translation of NPR1 was reduced rather than completely blocked in cgb (Figure 5C). In other words, NPR1 still has some function in cgb. But in the cgb npr1 double mutant, the function of NPR1 is completely abolished, which explains why cgb npr1 was more susceptible than cgb. Second, in addition to NPR1, some other immune regulators (such as PAD4, EDS5, and SAG101) were also compromised in cgb (Figure 5B), which explains why cgb npr1 was more susceptible than npr1.\n\n## Discussion\n\nUpon pathogen infections, plants need to efficiently reprogram their gene expression, allowing the transition from growth to defense. However, how translation contributes to the immune response is not well studied. It is known that tRNA thiolation is required for efficient protein expression (Nedialkova and Leidel, 2015; Schaffrath and Leidel, 2017). Here, we show that tRNA thiolation is abolished in the cgb mutant (Figure 3), leading to disease hyper-susceptibility (Figure 1). We found that the translation of many immune-related proteins was reduced in cgb (Figure 5). Therefore, our study strongly suggested that tRNA thiolation is required for plant immunity, revealing an additional mechanism underlying plant immune responses. It is possible that tRNA thiolation is a regulatory step during immune responses. However, since many defense-related proteins are up-regulated after pathogen infection (Figure 4B), we cannot rule out the possibility that tRNA thiolation just becomes a limiting factor due to the high demand of translation resource during immune responses. More studies are required to distinguish these two possibilities.\n\nThe SA receptor NPR1 is the master regulator of SA signaling. NPR1 can function as a transcription coactivator to regulate gene expression and an adaptor of ubiquitin E3 ligase to mediate protein degradation (Yu et al., 2022; Yu et al., 2021; Zavaliev et al., 2020). It has been shown that the activity of NPR1 is regulated at multiple levels including post-translational modifications such as phosphorylation, ubiquitination, S-nitrosylation, and sumoylation (Saleh et al., 2015; Spoel et al., 2009; Tada et al., 2008). However, how NPR1 is regulated at the translational level is unknown. Here, we show that the tRNA thiolation-mediated translation control is required for the optimal expression of NPR1 (Figure 5B and D), revealing an additional layer of regulation for NPR1.\n\nThe tRNA thiolation modification is highly conserved in eukaryotes. However, its biological functions in plants are less well understood. Previously, it was reported that tRNA thiolation regulates the development of root hairs, chloroplasts, and leaf cells (Leiber et al., 2010; Philipp et al., 2014). Recently, it was found that tRNA thiolation is required for heat stress tolerance (Xu et al., 2020). Our study revealed an additional biological function of tRNA thiolation in plant immunity. It will also be interesting to test whether tRNA thiolation is required for responses to other stresses such as drought, salinity, and cold.\n\nThe ELP complex is composed of six proteins, with ELP1, ELP2, and ELP3 forming a core sub-complex, and ELP4, ELP5, and ELP6 forming an accessory sub-complex. The ELP complex catalyzes the cm5U modification, which is the precursor of mcm5s2U catalyzed by ROL5 and CTU2. As expected, the mcm5s2U modification was undetectable in the elp mutants such as elp3 and elp6 mutants (Leitner et al., 2015; Mehlgarten et al., 2010). Interestingly, similar to the rol5 and ctu2 mutants, the elp2 and elp3 mutants were hyper-susceptible to pathogens (DeFraia et al., 2010; Defraia et al., 2013; Wang et al., 2013). In addition to tRNA modification, the ELP complex has several other distinct activities including histone acetylation, \u03b1-tubulin acetylation, and DNA demethylation (Wang et al., 2013). Therefore, it is difficult to dissect which activity of the ELP complex contributes to plant immunity. However, the only known activity of ROL5 and CTU2 is to catalyze tRNA thiolation. Considering that the elp, rol5, and ctu2 mutants are all defective in tRNA thiolation, it is likely the tRNA modification activity of the ELP complex underlies its function in plant immunity.\n\nPrevious studies have identified numerous pathogen-responsive genes through transcriptome analysis (Zhang et al., 2020). However, the correlation between mRNAs and proteins is not always that strong (Lahtvee et al., 2017; Schwanh\u00e4usser et al., 2011). Given that proteins are major players in cellular functions, it is necessary to study immune responses at the protein level. Through high-throughput proteome analysis, we found 2215 proteins differentially accumulated after Psm infection in Arabidopsis (Figure 4). To our knowledge, this is the largest dataset of pathogen-responsive proteins in Arabidopsis. We believe that this dataset will provide a good research resource for future studies on plant immunity.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Gene (Arabidopsis thaliana)</td>\n      <td>ROL5</td>\n      <td>TAIR</td>\n      <td>AT2G44270</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (Arabidopsis thaliana)</td>\n      <td>CTU2</td>\n      <td>TAIR</td>\n      <td>AT4G35910</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (Arabidopsis thaliana)</td>\n      <td>cgb</td>\n      <td>This paper</td>\n      <td></td>\n      <td>It contains a T-DNA insertion in the fourth exon of ROL5 and is hypersusceptible to pathogen.</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (Arabidopsis thaliana)</td>\n      <td>COM</td>\n      <td>This paper</td>\n      <td></td>\n      <td>It contains the coding sequence of ROL5 driven by 35S promoter in cgb.</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (Arabidopsis thaliana)</td>\n      <td>rol5-c</td>\n      <td>This paper</td>\n      <td></td>\n      <td>The mutant was generated using CRISPR-Cas9 system. It contains a 2-bp deletion in the first exon of ROL5.</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (Arabidopsis thaliana)</td>\n      <td>ctu2-1</td>\n      <td>ABRC</td>\n      <td>SALK_032692</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (Arabidopsis thaliana)</td>\n      <td>npr1-1</td>\n      <td>Cao et al., 1997</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain Background (Escherichia coli)</td>\n      <td>BL21</td>\n      <td>TransGen</td>\n      <td>Cat # CD901-02</td>\n      <td>Electrocompetent cells</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Escherichia coli)</td>\n      <td>DH5\u03b1</td>\n      <td>TransGen</td>\n      <td>Cat # CD201-01</td>\n      <td>Electrocompetent cells</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Agrobacterium tumefaciens)</td>\n      <td>GV3101</td>\n      <td>Sangon</td>\n      <td>Cat # B528430</td>\n      <td>Electrocompetent cells</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Saccharomyces cerevisiae)</td>\n      <td>AH109</td>\n      <td>Clontech</td>\n      <td>Cat # 630489</td>\n      <td>Electrocompetent cells</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Pseudomonas syringae pv. Maculicola)</td>\n      <td>Psm 4326</td>\n      <td>Durrant et al., 2007</td>\n      <td>ES4326</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-NPR1 (Rabbit polyclonal)</td>\n      <td>From Dr. Li Yang</td>\n      <td></td>\n      <td>WB(1:3000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-His (Mouse monoclonal)</td>\n      <td>Abclonal</td>\n      <td>Cat # AE003</td>\n      <td>WB(1:5000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-GST (Mouse monoclonal)</td>\n      <td>Abclonal</td>\n      <td>Cat # AE001</td>\n      <td>WB(1:5000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-FLAG (Mouse monoclonal)</td>\n      <td>Promoter</td>\n      <td></td>\n      <td>WB(1:5000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-GFP (Mouse monoclonal)</td>\n      <td>Promoter</td>\n      <td></td>\n      <td>WB(1:5000)</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>GFP-Trap</td>\n      <td>chromotek</td>\n      <td>Cat # gtma</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Hypersil GOLD</td>\n      <td>Thermo Fisher</td>\n      <td>Cat # 25005-254630</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Plant material and growth conditions\n\nAll Arabidopsis seeds used in this study are in Columbia-0 background. The npr1-1 mutant was described previously (Cao et al., 1997). The cgb mutant and the complementation line were generated in this study. The mutant of ctu2-1 (SALK_032692) was purchased from ABRC. The rol5-c mutant was generated using EC1-based CRISPR-Cas9 system (Wang et al., 2015). All seeds were sterilized with 2% Plant Preservative Mixture-100 (Plant Cell Technology) at 4\u00b0C in the dark for 2 days and then were plated on Murashige and Skoog (MS) medium with 1% sucrose and 0.3% phytagel. The plants were grown under long-day conditions at 22\u00b0C (16 hr of light/8 hr of dark; supplied by white-light tubes).\n\n### Strains and growth conditions\n\nE. coli strain DH5\u03b1 for molecular cloning was cultured in LB medium at 37\u00b0C. E. coli strain BL21 (DE3) for recombinant protein expression was cultured in LB medium at 16\u00b0C. Agrobacterium tumefaciens strain GV3101 for transformation was cultured in Yeast Extract Beef (YEB) medium at 28\u00b0C. Psm ES4326 for infection assay was cultured in King\u2019s B (KB) medium at 28\u00b0C. Yeast strain AH109 for yeast two-hybrid assay was cultured in Yeast Peptone Dextrose (YPD) medium or SD medium at 28\u00b0C.\n\n### Vector constructions\n\nThe vectors were constructed using the digestion-ligation method or a lighting cloning system (Biodragon Immunotechnology). For complementation experiment, ROL5 was inserted into Nco I/Xba I-digested pFGC5941. For pull-down assays, CTU2 was inserted into BamH I/Xho I-digested pGEX-6P-1; ROL5 was inserted into Nco I/Hind III-digested pET28a. For split luciferase assays, ROL5 and CTU2 were cloned into the Kpn I/Sal I-digested pJW771 and pJW772, respectively. For yeast two-hybrid assays, ROL5 and CTU2 were cloned into EcoR I/BamH I-digested pGBKT7 and pGADT7. For CoIP assays, ROL5-FLAG and CTU2-GFP were cloned into Nco I/Xba I-digested pFGC5941. To generate rol5-c, the target sequence was designed and cloned into pHEE401 as described previously (Wang et al., 2015). The primer sequences used for cloning are listed in Appendix 1\u2014table 1.\n\n### Reverse transcription and qPCR\n\nThe total RNA or the RNA in ribosome fractions was extracted using TRIzol Reagent (Invitrogen). The cDNA was synthesized using HiScript II Q RT SuperMix (Vazyme). The qPCR analyses were performed using the AceQ qPCR SYBR Green Master Mix (Vazyme). UBQ5 was used as the internal reference gene. Primers used for qPCR are listed in Appendix 1\u2014table 1.\n\n### Pathogen infection\n\nThe third and fourth leaves of 3-week-old Arabidopsis plants were infiltrated with Psm ES4326 (OD600=0.0002) using a needleless syringe. Three days after infection, the leaves were sampled to measure the growth of Psm ES4326 as described previously (Durrant et al., 2007). For SA-mediated protection assay, the 3-week-old Arabidopsis plants were treated with 600 \u03bcM BTH (Syngenta) for 24 hr before infection.\n\n### Yeast two-hybrid assays\n\nMatchmaker GAL4 Two-Hybrid System (Clontech) was used and the assays were performed according to the user manual. Briefly, the bait (in pGBKT7) and prey (in pGADT7) vectors were co-transformed into the yeast strain AH109. The protein interactions were determined by yeast growth on SD/-Leu/-Trp/-His/ medium. The empty vectors were used as negative controls.\n\n### In vitro pull-down assays\n\nThe GST pull-down assays were performed as previously described (Chen et al., 2023a , Chen et al., 2023b). Briefly, ROL5-His, GST, and GST-CTU2 proteins were expressed in E. coli BL21 (DE3). GST (5 \u03bcg) and GST-CTU2 (5 \u03bcg) were coupled to glutathione beads (GE Healthcare Life Sciences) and then were incubated with ROL5-His (10 \u03bcg) in 0.5 mL binding buffer (50 mM Tris-HCl pH 7.5, 150 mM NaCl, 1 mM EDTA, and 2 mM DTT) at 4\u00b0C for 2 hr. The beads were washed three times with washing buffer (binding buffer plus 2% NP-40), boiled in 1\u00d7 SDS loading buffer, and analyzed by western blot using anti-GST (Abclonal) or anti-His (Abclonal) antibodies.\n\n### CoIP assays\n\nThe CoIP assays were performed as previously described (Chen et al., 2021). 35S:ROL5-FLAG and 35S:CTU2-GFP were transformed into A. tumefaciens GV3101. 35S:ROL5-FLAG strain (OD600=1) was mixed with the same volume of buffer or 35S:CTU2-GFP strain (OD600=1) and was infiltrated into N. benthamiana leaves. After 48 hr, the infiltrated leaves were ground in liquid nitrogen and were resuspended in IP buffer (20 mM Tris-HCl pH 7.5, 50 mM NaCl, 1 mM EDTA, 0.1% SDS, 1% Triton X-100, 1 mM PMSF, 100 \u03bcM MG132, 1\u00d7 protease inhibitor cocktail) for total protein extraction. The lysates were incubated with GFP-Trap magnetic beads (Chromotek) at 4\u00b0C for 2 hr. The beads were washed using washing buffer (20 mM Tris-HCl pH 7.5, 150\u2013500 mM NaCl, 1 mM EDTA, 1 mM PMSF, 1\u00d7 Protease Inhibitor Cocktail) and then boiled in 1\u00d7 SDS loading buffer. The western blotting was performed using anti-FLAG (Promoter) and anti-GFP (Promoter) antibodies.\n\n### Split luciferase assays\n\nSplit luciferase assay was performed as described previously (Chen et al., 2008). The constructs were transformed into A. tumefaciens strain GV3101 (OD600=1). The resultant strains were then infiltrated into leaves of N. benthamiana. After 48 hr, 1 mM luciferin (GOLDBIO) was applied onto leaves and the images were captured using Lumazone imaging system equipped with 2048B CCD camera (Roper).\n\n### Quantification of tRNA modifications\n\nQuantification of tRNA modifications was performed using liquid chromatography coupled with mass spectrometry according to a previous study (Su et al., 2014). Total tRNA was extracted using a microRNA kit (Omega Bio-Tek). Five micrograms of tRNA were hydrolyzed in 10 \u03bcL enzymic buffer (1 U benzonase, 0.02 U phosphodiesterase I, and 0.02 U alkaline phosphatase) at 37\u00b0C for 3 hr. The UHPLC system (Thermo Fisher Scientific) coupled with TSQ Altis Triple Quadrupole Mass Spectrometer (Thermo Fisher Scientific) was used for quantification of tRNA modification. For the liquid chromatography, the Hypersil GOLD HPLC column (3 \u00b5m, 150\u00d72.1 mm2; Thermo Fisher Scientific) was used. The solvent gradient was set as the protocol (Su et al., 2014). The Tracefinder software (Thermo Fisher Scientific) was further used for peak assignment, area calculation, and normalization. Corresponding structures and molecular masses were obtained from the Modomics database (https://iimcb.genesilico.pl/modomics/modifications).\n\n### RNA and protein extraction for transcriptome and proteome analysis\n\nThe samples were ground in liquid nitrogen and divided into two parts, one for transcriptome analysis and the other for proteome analysis. Total RNA was extracted using TRIzol Reagent (Invitrogen). Library preparation and RNA-sequencing were performed by Novogene Cooperation. Total proteins were extracted using phenol-methanol method (Deng et al., 2007). The protein concentration was determined with 2D Quant Kit (GE Healthcare Life Sciences) using bovine serum albumin as a standard.\n\n### Proteome analysis\n\nFor trypsin digestion, 60 \u03bcg proteins of each sample were reduced with 20 mM Tris-phosphine for 60 min at 30\u00b0C. Cysteines were alkylated with 30 mM iodoacetamide for 30 min at room temperature in the dark. Proteins were precipitated with 6 volumes of cold acetone overnight and then dissolved in 50 mM triethylammonium bicarbonate (TEAB). Proteins were digested with trypsin (protease/protein = 1/25, wt/wt) overnight at 37\u00b0C.\n\nFor TMT labeling, each sample containing 25 \u03bcg of peptide in 50 mM TEAB buffer was combined with its respective 10-plex TMT reagent (Thermo Fisher Scientific) and incubated for 1 hr at room temperature. Three biological replicates were labeled respectively for each sample, in which COM was labeled with 126-, 127N-, and 128C- of the 10-plex TMT reagent, while cgb was labeled with 129N-, 130C-, and 131- of the 10-plex TMT reagents. The labeling reactions were stopped by the addition of 2 \u03bcL of 5% hydroxylamine.\n\nFor LC-MS/MS analysis, multiplexed TMT-labeled samples were combined, vacuum dried, reconstituted in 2% acetonitrile and 5 mM ammonium hydroxide (pH 9.5), and separated with the Waters Acquity BEH column (C18, 1.7 \u03bcm, 100 mm, Waters) using UPLC system (Waters) at a flow rate of 300 \u03bcL/min. Total of 24 fractions were collected, combined into 12 fractions, and vacuum dried for LC-MS/MS analysis. The solvent gradient was set as previously described (Deng et al., 2007). Samples were then analyzed on an Ultimate 3000 nano UHPLC system (Thermo Fisher Scientific) coupled online to a Q Exactive HF mass spectrometer (Thermo Fisher Scientific). The trapping column (PepMap C18, 100 \u00c5, 100 \u03bcm\u00d72 cm, 5 \u03bcm) and an analytical column (PepMap C18, 100 \u00c5, 75 \u03bcm i.d.\u00d750 cm long, 2 \u03bcm) were used for separation of the samples. The solvent gradient and MASS parameters were set as previously described (Deng et al., 2007).\n\n### Transcriptome data analysis\n\nRaw reads were processed and aligned to the Arabidopsis genome (https://www.arabidopsis.org) using STAR (v.2.6.1a). Genes with over 10 reads were filtered and processed using DESeq2 (v.1.22.2) to identify the DEGs (p-value <0.05, |Log2FoldChange|>Log21.5) (Love et al., 2014).\n\n### Proteome data analysis\n\nRaw data were processed using Proteome Discoverer (v.2.2.0.388) and aligned to Arabidopsis genome (https://www.arabidopsis.org) with the SEQUEST HT search engine. Searches were configured with static modifications for the TMT reagents (+229.163 Da). The precursor mass tolerance was set as 10 ppm; the fragment mass tolerance was set as 0.02 Da; the trypsin missed cleavage was set as 2. The reversed sequence decoy strategy was used to control peptide false discovery. The peptides with q scores <0.01 were accepted, and at least one unique peptide was required for matching a protein entry for its identification. PSMs (peptide spectrum matches) results were processed with DESeq2 (v.1.22.2) to identify the DEPs (p-value <0.05, |Log2FoldChange|>Log21.2).\n\n### GO and heatmap analysis\n\nThe DEGs or proteins were analyzed by using Clusterprofile (v.3.18.1) (Yu et al., 2012). The heatmap analysis was processed by using pheatmap2 (v.1.0.12).\n\n### Analysis of NPR1 protein level\n\nThe seedlings were ground in liquid nitrogen and were resuspended in lysis buffer (50 mM Tris-HCl, pH 7.4, 150 mM NaCl, 1% Triton X-100, 1% sodium deoxycholate, 0.1% SDS, 200 mM DTT, 1 mM PSMF, 50 \u00b5M MG132, 1\u00d7 protease inhibitor cocktail). After centrifuging, the supernatants were mixed with the same volume of 2\u00d7 SDS loading buffer and were incubated at 75\u00b0C for 15 min. The western blotting was performed using an anti-NPR1 antibody (provided by Li Yang from China Agricultural University).\n\n### Ribosome profiling\n\nThe ribosome profiling was performed as previously described with some modifications (Hsu et al., 2016; Xu et al., 2017). The plant sample (0.05\u20130.1 g) was ground in liquid nitrogen and extracted with 1 mL ribosome lysis buffer (200 mM Tris-HCl pH 8.0, 200 mM KCl, 35 mM MgCl2, 1% Triton X-100, 100 \u03bcM MG132, 1 mM DTT, and 100 \u03bcg/mL cycloheximide), followed by ultracentrifugation at 4\u00b0C for 2 hr (38,000 rpm, Beckman, SW41 rotor) through a 20\u201360% sucrose gradient (40 mM Tris-HCl, pH 8.4, 20 mM KCl, 10 mM MgCl2, and 50 \u03bcg/mL cycloheximide) prepared by Gradient Master (Biocomp Instruments). The profiling signals were recorded by Piston Gradient Fractionator (Biocomp Instruments).\n",
+      "created_at": "2025-12-04T04:13:43.987446Z"
+    },
+    {
+      "id": "9aa2c16b-a783-4afd-815d-07c379aece19",
+      "submission_id": "ffbc093f-3ffb-4c21-ab89-ed3319546f9d",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Detlef Weigel, https://ror.org/0243gzr89 Max Planck Institute for Biology T\u00fcbingen Germany\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.93517.sa0](https://doi.org/10.7554/eLife.93517.sa0)\n\nThis valuable study provides solid evidence for a role of tRNA thiolation in Arabidopsis immunity through genetic, transcriptomic, and proteomic approaches, specifically that the tRNA mcm5s2U modification affects SA signaling through NPR1 translation.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Detlef Weigel, https://ror.org/0243gzr89 Max Planck Institute for Biology T\u00fcbingen Germany\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.93517.sa1](https://doi.org/10.7554/eLife.93517.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\n[Editors' note: this paper was reviewed by Review Commons.]\n",
+      "created_at": "2025-12-04T04:13:43.987446Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T04:13:43.987446Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T04:13:43.987446Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "9d101f41-22b2-464b-ab82-9ea04beebf77",
+      "content_id": "d45ecb4a-3ed4-410f-b18d-a6012597d736",
+      "claim_id": "C1",
+      "claim": "Plants have evolved sophisticated mechanisms to regulate gene expression to activate immune responses against pathogen infections.",
+      "claim_type": "EXPLICIT",
+      "source": "Plants have evolved sophisticated mechanisms to regulate gene expression to activate immune responses against pathogen infections.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about plant biology supported by established scientific consensus.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:43.987446Z"
+    },
+    {
+      "id": "7f35e7fb-7163-4622-9124-a2f5c4d51062",
+      "content_id": "d45ecb4a-3ed4-410f-b18d-a6012597d736",
+      "claim_id": "C2",
+      "claim": "How the translation system contributes to plant immunity is largely unknown.",
+      "claim_type": "EXPLICIT",
+      "source": "However, how the translation system contributes to plant immunity is largely unknown.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement reflects the current state of knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:43.987446Z"
+    },
+    {
+      "id": "b6c5bf2c-b740-4a4d-ae06-10c349f10448",
+      "content_id": "d45ecb4a-3ed4-410f-b18d-a6012597d736",
+      "claim_id": "C3",
+      "claim": "The evolutionarily conserved thiolation modification of transfer RNA (tRNA) ensures efficient decoding during translation.",
+      "claim_type": "EXPLICIT",
+      "source": "The evolutionarily conserved thiolation modification of transfer RNA (tRNA) ensures efficient decoding during translation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about tRNA modification function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:43.987446Z"
+    },
+    {
+      "id": "755a0918-68e7-4f82-8c1e-4ac8c420f285",
+      "content_id": "d45ecb4a-3ed4-410f-b18d-a6012597d736",
+      "claim_id": "C4",
+      "claim": "tRNA thiolation is required for plant immunity in Arabidopsis.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show that tRNA thiolation is required for plant immunity in Arabidopsis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:43.987446Z"
+    },
+    {
+      "id": "fb2f7711-3b90-4db6-a5fa-153ca85cc3d2",
+      "content_id": "d45ecb4a-3ed4-410f-b18d-a6012597d736",
+      "claim_id": "C5",
+      "claim": "A cgb mutant is hyper-susceptible to the pathogen Pseudomonas syringae.",
+      "claim_type": "EXPLICIT",
+      "source": "We identify a cgb mutant that is hyper-susceptible to the pathogen Pseudomonas syringae.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:43.987446Z"
+    },
+    {
+      "id": "bd9fe908-345c-4314-af45-e0edef8d2b1d",
+      "content_id": "d45ecb4a-3ed4-410f-b18d-a6012597d736",
+      "claim_id": "C6",
+      "claim": "CGB encodes ROL5, a homolog of yeast NCS6 required for tRNA thiolation.",
+      "claim_type": "EXPLICIT",
+      "source": "CGB encodes ROL5, a homolog of yeast NCS6 required for tRNA thiolation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by genome sequencing data and homology analysis.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:43.987446Z"
+    },
+    {
+      "id": "c2686cab-fe19-43cb-b7c0-8c75ae08430d",
+      "content_id": "d45ecb4a-3ed4-410f-b18d-a6012597d736",
+      "claim_id": "C7",
+      "claim": "ROL5 physically interacts with CTU2, a homolog of yeast NCS2.",
+      "claim_type": "EXPLICIT",
+      "source": "ROL5 physically interacts with CTU2, a homolog of yeast NCS2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from yeast two-hybrid, split luciferase, CoIP, and GST pull-down assays shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:43.987446Z"
+    },
+    {
+      "id": "24f30c17-3331-4719-b16c-c49a6b0768f1",
+      "content_id": "d45ecb4a-3ed4-410f-b18d-a6012597d736",
+      "claim_id": "C8",
+      "claim": "Mutations in either ROL5 or CTU2 result in loss of tRNA thiolation.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutations in either ROL5 or CTU2 result in loss of tRNA thiolation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by HPLC-MS data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:43.987446Z"
+    },
+    {
+      "id": "e945bb31-6640-469d-9bea-5981960102b7",
+      "content_id": "d45ecb4a-3ed4-410f-b18d-a6012597d736",
+      "claim_id": "C9",
+      "claim": "Both transcriptome and proteome reprogramming during immune responses are compromised in cgb.",
+      "claim_type": "EXPLICIT",
+      "source": "Further analyses reveal that both transcriptome and proteome reprogramming during immune responses are compromised in cgb.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by RNA-seq and proteome data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:43.987446Z"
+    },
+    {
+      "id": "940b0cf1-7e87-4c34-a71b-a7377da45a0b",
+      "content_id": "d45ecb4a-3ed4-410f-b18d-a6012597d736",
+      "claim_id": "C10",
+      "claim": "The translation of salicylic acid receptor NPR1 is reduced in cgb, resulting in compromised salicylic acid signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the translation of salicylic acid receptor NPR1 is reduced in cgb, resulting in compromised salicylic acid signaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by western blot and ribosome profiling data shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:43.987446Z"
+    },
+    {
+      "id": "748d9099-b469-439b-9696-b34f78afe2da",
+      "content_id": "d45ecb4a-3ed4-410f-b18d-a6012597d736",
+      "claim_id": "C11",
+      "claim": "Salicylic acid (SA) plays a central role in immune responses.",
+      "claim_type": "EXPLICIT",
+      "source": "One essential immune regulator is the phytohormone salicylic acid (SA), which plays a central role in immune responses (Vlot et al., 2009; Peng et al., 2021; Yan and Dong, 2014; Zhou and Zhang, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:43.987446Z"
+    },
+    {
+      "id": "8903ba50-f143-4ab9-9169-0b3c0700e402",
+      "content_id": "d45ecb4a-3ed4-410f-b18d-a6012597d736",
+      "claim_id": "C12",
+      "claim": "Upon pathogen infection, the biosynthesis of SA is dramatically induced.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon pathogen infection, the biosynthesis of SA is dramatically induced.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in plant immunity.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:43.987446Z"
+    },
+    {
+      "id": "f909dba0-f983-476e-a202-8a6ef84152d5",
+      "content_id": "d45ecb4a-3ed4-410f-b18d-a6012597d736",
+      "claim_id": "C13",
+      "claim": "Plants defective in SA biosynthesis or SA signaling are hyper-susceptible to pathogens.",
+      "claim_type": "EXPLICIT",
+      "source": "Plants defective in SA biosynthesis or SA signaling are hyper-susceptible to pathogens (Cao et al., 1997; Rekhter et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:43.987446Z"
+    },
+    {
+      "id": "98a317e2-0894-4674-908b-a4bc045bbb99",
+      "content_id": "d45ecb4a-3ed4-410f-b18d-a6012597d736",
+      "claim_id": "C14",
+      "claim": "NONEXPRESSER OF PR GENES 1 (NPR1) is a master regulator of SA signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Several independent forward genetic screens revealed that NONEXPRESSER OF PR GENES 1 (NPR1) is a master regulator of SA signaling (Canet et al., 2010; Cao et al., 1997; Ryals et al., 1997; Shah et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to multiple genetic screens.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:43.987446Z"
+    },
+    {
+      "id": "9af7b6fd-a540-49c3-9660-0c61eda5a949",
+      "content_id": "d45ecb4a-3ed4-410f-b18d-a6012597d736",
+      "claim_id": "C15",
+      "claim": "In the Arabidopsis npr1 mutant, the SA-mediated immune responses are dramatically reduced.",
+      "claim_type": "EXPLICIT",
+      "source": "In the Arabidopsis npr1 mutant, the SA-mediated immune responses are dramatically reduced.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the npr1 mutant phenotype.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:43.987446Z"
+    },
+    {
+      "id": "c2e1d471-0f28-49ab-8bf5-d34f90fc0b37",
+      "content_id": "d45ecb4a-3ed4-410f-b18d-a6012597d736",
+      "claim_id": "C16",
+      "claim": "NPR1 and its homologs NPR3 and NPR4 are SA receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "Biochemical and structural studies suggested that NPR1 and its homologs NPR3 and NPR4 are SA receptors (Ding et al., 2018; Fu et al., 2012; Kumar et al., 2022; Wang et al., 2020; Wu et al., 2012; Zhou et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to biochemical and structural studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:43.987446Z"
+    },
+    {
+      "id": "b67f5e63-49f3-4cfa-ae45-e5884f161bdb",
+      "content_id": "d45ecb4a-3ed4-410f-b18d-a6012597d736",
+      "claim_id": "C17",
+      "claim": "Both the pattern-triggered immunity (PTI) and effector-triggered immunity (ETI) involve translational reprogramming.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, it is reported that both the pattern-triggered immunity (PTI) and effector-triggered immunity (ETI) involve translational reprogramming (Xu et al., 2017; Yoo et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:43.987446Z"
+    },
+    {
+      "id": "793a2048-6df0-4766-890b-6334a85dc0b5",
+      "content_id": "d45ecb4a-3ed4-410f-b18d-a6012597d736",
+      "claim_id": "C18",
+      "claim": "PABP/purine-rich motif was described as an initiation module for PTI-associated translation.",
+      "claim_type": "EXPLICIT",
+      "source": "And PABP/purine-rich motif was described as an initiation module for PTI-associated translation (Wang et al., 2022)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:43.987446Z"
+    },
+    {
+      "id": "4df973f7-634b-4ed1-9d2e-984110ed333b",
+      "content_id": "d45ecb4a-3ed4-410f-b18d-a6012597d736",
+      "claim_id": "C19",
+      "claim": "CDC123, an ATP-grasp protein, is a key activator of ETI-associated translation.",
+      "claim_type": "EXPLICIT",
+      "source": "and CDC123, an ATP-grasp protein, is a key activator of ETI-associated translation (Chen et al., 2023b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:43.987446Z"
+    },
+    {
+      "id": "402d8c50-4740-4a2e-ab1a-4ac26db33d14",
+      "content_id": "d45ecb4a-3ed4-410f-b18d-a6012597d736",
+      "claim_id": "C20",
+      "claim": "More than 150 different tRNA modifications have been identified.",
+      "claim_type": "EXPLICIT",
+      "source": "Currently, more than 150 different tRNA modifications have been identified (Agris et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:43.987446Z"
+    },
+    {
+      "id": "d06476a9-ce10-4037-896a-1cdc30d58daa",
+      "content_id": "d45ecb4a-3ed4-410f-b18d-a6012597d736",
+      "claim_id": "C21",
+      "claim": "The 5-methoxycarbonylmethyl-2-thiouridine of uridine at wobble nucleotide (mcm5s2U) is highly conserved in all eukaryotes.",
+      "claim_type": "EXPLICIT",
+      "source": "Among them, the 5-methoxycarbonylmethyl-2-thiouridine of uridine at wobble nucleotide (mcm5s2U) is highly conserved in all eukaryotes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about tRNA modifications.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:43.987446Z"
+    },
+    {
+      "id": "ec4c79a5-abf0-42e8-a1b3-7d1ca5ebd1ff",
+      "content_id": "d45ecb4a-3ed4-410f-b18d-a6012597d736",
+      "claim_id": "C22",
+      "claim": "The mcm5s2U modification is present in the wobble position of tRNA-Lys(UUU), tRNA-Gln(UUG), and tRNA-Glu(UUC).",
+      "claim_type": "EXPLICIT",
+      "source": "The mcm5s2U modification is present in the wobble position of tRNA-Lys(UUU), tRNA-Gln(UUG), and tRNA-Glu(UUC) (Huang et al., 2005; Lu et al., 2005; Sen and Ghosh, 1976).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:43.987446Z"
+    },
+    {
+      "id": "4f4f5c55-1bb4-44f7-89f8-14b8d8647252",
+      "content_id": "d45ecb4a-3ed4-410f-b18d-a6012597d736",
+      "claim_id": "C23",
+      "claim": "In budding yeast, the 5-methoxycarbonylmethyl of uridine (mcm5U) is catalyzed by the Elongator protein (ELP) complex and the Trm9/112 complex.",
+      "claim_type": "EXPLICIT",
+      "source": "In budding yeast (Saccharomyces cerevisiae), the 5-methoxycarbonylmethyl of uridine (mcm5U) is catalyzed by the Elongator protein (ELP) complex and the Trm9/112 complex",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about yeast tRNA modification pathways.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:43.987446Z"
+    },
+    {
+      "id": "9cc0efe1-4f6e-4700-90fa-38daff062ffd",
+      "content_id": "d45ecb4a-3ed4-410f-b18d-a6012597d736",
+      "claim_id": "C24",
+      "claim": "In budding yeast, thiolation (s2U) is mediated by the ubiquitin-related modifier 1 (URM1) pathway involving URM1, UBA4, NCS2, and NCS6.",
+      "claim_type": "EXPLICIT",
+      "source": "whereas thiolation (s2U) is mediated by the ubiquitin-related modifier 1 (URM1) pathway involving URM1, UBA4, NCS2, and NCS6 (Leidel et al., 2009; Nakai et al., 2004; Noma et al., 2009; Zabel et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies on yeast.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:43.987446Z"
+    },
+    {
+      "id": "500eeab0-62bd-4af1-9146-7207f690d690",
+      "content_id": "d45ecb4a-3ed4-410f-b18d-a6012597d736",
+      "claim_id": "C25",
+      "claim": "Loss of the mcm5s2U modification causes ribosome pausing at AAA and CAA codons.",
+      "claim_type": "EXPLICIT",
+      "source": "Loss of the mcm5s2U modification causes ribosome pausing at AAA and CAA codons, which results in defective co-translational folding of nascent peptides and protein aggregation, thereby disrupting proteome homeostasis (Nedialkova and Leidel, 2015; Ranjan and Rodnina, 2017; Rezgui et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:43.987446Z"
+    },
+    {
+      "id": "0641da14-cb10-44e7-886d-e422a2aaf4cd",
+      "content_id": "d45ecb4a-3ed4-410f-b18d-a6012597d736",
+      "claim_id": "C26",
+      "claim": "Loss of the mcm5s2U modification results in defective co-translational folding of nascent peptides and protein aggregation.",
+      "claim_type": "EXPLICIT",
+      "source": "Loss of the mcm5s2U modification causes ribosome pausing at AAA and CAA codons, which results in defective co-translational folding of nascent peptides and protein aggregation, thereby disrupting proteome homeostasis (Nedialkova and Leidel, 2015; Ranjan and Rodnina, 2017; Rezgui et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:43.987446Z"
+    },
+    {
+      "id": "db7cf986-bf2b-40c2-9b10-a8e9e104fdd0",
+      "content_id": "d45ecb4a-3ed4-410f-b18d-a6012597d736",
+      "claim_id": "C27",
+      "claim": "In yeasts, the mcm5s2U modification regulates cell cycle, DNA damage repair, and abiotic stress responses.",
+      "claim_type": "EXPLICIT",
+      "source": "In yeasts, the mcm5s2U modification was reported to regulate cell cycle, DNA damage repair, and abiotic stress responses (Dewez et al., 2008; Jablonowski et al., 2006; Klassen et al., 2017; Leidel et al., 2009; Nedialkova and Leidel, 2015; Zinshteyn and Gilbert, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies on yeast.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:43.987446Z"
+    },
+    {
+      "id": "7145a555-1fc2-47ee-831e-2f9719c9d65b",
+      "content_id": "d45ecb4a-3ed4-410f-b18d-a6012597d736",
+      "claim_id": "C28",
+      "claim": "In humans, loss of the mcm5s2U modification causes numerous disorders including severe developmental defects, neurological diseases, tumorigenesis, and cancer metastasis.",
+      "claim_type": "EXPLICIT",
+      "source": "In humans, loss of the mcm5s2U modification causes numerous disorders including severe developmental defects, neurological diseases, tumorigenesis, and cancer metastasis (Pan, 2018; Shaheen et al., 2019; Simpson et al., 2009; Torres et al., 2014; Waszak et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies on humans.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:43.987446Z"
+    },
+    {
+      "id": "a3705bef-eb47-45c9-8351-4be58bd1c47c",
+      "content_id": "d45ecb4a-3ed4-410f-b18d-a6012597d736",
+      "claim_id": "C29",
+      "claim": "In plants, loss of the mcm5s2U modification was associated with developmental defects and hypersensitivity to heat stress.",
+      "claim_type": "EXPLICIT",
+      "source": "In plants, loss of the mcm5s2U modification was associated with developmental defects and hypersensitivity to heat stress (Leiber et al., 2010; Nakai et al., 2019; Xu et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies on plants.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:43.987446Z"
+    },
+    {
+      "id": "944d6113-883f-4bae-82d8-306d6dff2ae7",
+      "content_id": "d45ecb4a-3ed4-410f-b18d-a6012597d736",
+      "claim_id": "C30",
+      "claim": "It remains unknown whether the mcm5s2U modification is involved in plant immune responses.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it remains unknown whether the mcm5s2U modification is involved in plant immune responses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement reflects the knowledge gap that the study addresses.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:43.987446Z"
+    },
+    {
+      "id": "dac802b7-c237-4bee-a068-009c16870d97",
+      "content_id": "d45ecb4a-3ed4-410f-b18d-a6012597d736",
+      "claim_id": "C31",
+      "claim": "The cgb mutant contains a T-DNA insertion in the fourth exon of ROL5.",
+      "claim_type": "EXPLICIT",
+      "source": "To identify the causal gene of cgb, we sequenced its genome using the next-generation sequencing technology, which revealed that there was a T-DNA insertion in the fourth exon of ROL5 (AT2G44270; Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by genome sequencing data and shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:43.987446Z"
+    },
+    {
+      "id": "ab2670f1-dc22-4851-b578-c3d564894d5f",
+      "content_id": "d45ecb4a-3ed4-410f-b18d-a6012597d736",
+      "claim_id": "C32",
+      "claim": "In the cgb mutant, the transcript of ROL5 was undetectable.",
+      "claim_type": "EXPLICIT",
+      "source": "In the cgb mutant, the transcript of ROL5 was undetectable (Figure 1E), indicating that cgb was a knock-out mutant.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RT-PCR data shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:43.987446Z"
+    },
+    {
+      "id": "5c7dcf2c-489e-49a4-bab7-171b75e0b58b",
+      "content_id": "d45ecb4a-3ed4-410f-b18d-a6012597d736",
+      "claim_id": "C33",
+      "claim": "cgb is a knock-out mutant of ROL5.",
+      "claim_type": "EXPLICIT",
+      "source": "In the cgb mutant, the transcript of ROL5 was undetectable (Figure 1E), indicating that cgb was a knock-out mutant.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the absence of ROL5 transcript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:43.987446Z"
+    },
+    {
+      "id": "b9331bca-ab9f-441c-9af4-2177414954ed",
+      "content_id": "d45ecb4a-3ed4-410f-b18d-a6012597d736",
+      "claim_id": "C34",
+      "claim": "The disease phenotype of the complementation line (COM) was similar to that of wild-type.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 1A and B, the disease phenotype of the complementation line (COM) was similar to that of wild-type (WT).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 1A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:43.987446Z"
+    },
+    {
+      "id": "ee6d753e-3914-421f-9b23-e70b82462f7c",
+      "content_id": "d45ecb4a-3ed4-410f-b18d-a6012597d736",
+      "claim_id": "C35",
+      "claim": "In rol5-c, a 2 bp deletion in the first exon of ROL5 causes a frameshift.",
+      "claim_type": "EXPLICIT",
+      "source": "In rol5-c, a 2 bp deletion in the first exon of ROL5 causes a frameshift (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by sequencing data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:43.987446Z"
+    },
+    {
+      "id": "4b5ed677-3035-4685-a1c9-e9e29989bbe8",
+      "content_id": "d45ecb4a-3ed4-410f-b18d-a6012597d736",
+      "claim_id": "C36",
+      "claim": "The rol5-c mutant was hyper-susceptible to Psm.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, the rol5-c mutant was hyper-susceptible to Psm as cgb (Figure 1A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by infection assay data shown in Figure 1A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:43.987446Z"
+    },
+    {
+      "id": "7623e36c-83f7-45fa-af05-2cebd6ed2525",
+      "content_id": "d45ecb4a-3ed4-410f-b18d-a6012597d736",
+      "claim_id": "C37",
+      "claim": "ROL5 is required for plant immunity.",
+      "claim_type": "EXPLICIT",
+      "source": "These data strongly suggested that ROL5 is required for plant immunity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the complementation and CRISPR mutant data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:43.987446Z"
+    },
+    {
+      "id": "bdab514e-1805-4c62-880d-244699550208",
+      "content_id": "d45ecb4a-3ed4-410f-b18d-a6012597d736",
+      "claim_id": "C38",
+      "claim": "ROL5 is a homolog of yeast NCS6.",
+      "claim_type": "EXPLICIT",
+      "source": "ROL5 is a homolog of yeast NCS6 (Leiber et al., 2010)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:43.987446Z"
+    },
+    {
+      "id": "1a319957-e2d5-4c01-b23c-0f850bd8915b",
+      "content_id": "d45ecb4a-3ed4-410f-b18d-a6012597d736",
+      "claim_id": "C39",
+      "claim": "Yeast NCS6 forms a protein complex with NCS2 to catalyze mcm5s2U34.",
+      "claim_type": "EXPLICIT",
+      "source": "ROL5 is a homolog of yeast NCS6 (Leiber et al., 2010), which forms a protein complex with NCS2 to catalyze mcm5s2U34 (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is established knowledge about yeast proteins shown in Figure 2A.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:43.987446Z"
+    },
+    {
+      "id": "633d867b-b8f7-42db-b396-eee7abf99424",
+      "content_id": "d45ecb4a-3ed4-410f-b18d-a6012597d736",
+      "claim_id": "C40",
+      "claim": "The NCS2 homolog in Arabidopsis is CTU2.",
+      "claim_type": "EXPLICIT",
+      "source": "The NCS2 homolog in Arabidopsis is CTU2 (Philipp et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:43.987446Z"
+    },
+    {
+      "id": "c91b3339-52db-413f-bce8-4477b64b2c1c",
+      "content_id": "d45ecb4a-3ed4-410f-b18d-a6012597d736",
+      "claim_id": "C41",
+      "claim": "ROL5 interacts with CTU2 in yeast two-hybrid assays.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the previous finding (Philipp et al., 2014), only when ROL5 and CTU2 were co-expressed, the yeasts could grow on the selective medium (Figure 2B), indicating that ROL5 interacts with CTU2 in yeast.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by yeast two-hybrid data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:43.987446Z"
+    },
+    {
+      "id": "1c8b738b-3aff-4afe-a2e6-ba1a5c7f2a81",
+      "content_id": "d45ecb4a-3ed4-410f-b18d-a6012597d736",
+      "claim_id": "C42",
+      "claim": "ROL5 interacts with CTU2 in vivo in Nicotiana benthamiana.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 2C, the luminescence signal could be detected only when ROL5-nLUC and cLUC-CTU2 were co-expressed.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by split luciferase assay data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:43.987446Z"
+    },
+    {
+      "id": "3e548e89-11b2-4c36-8841-4b8fceb30e03",
+      "content_id": "d45ecb4a-3ed4-410f-b18d-a6012597d736",
+      "claim_id": "C43",
+      "claim": "ROL5-FLAG could be immunoprecipitated by GFP-Trap beads when co-expressed with CTU2-GFP.",
+      "claim_type": "EXPLICIT",
+      "source": "When ROL5-FLAG was co-expressed with CTU2-GFP, ROL5-FLAG could be immunoprecipitated by the GFP-Trap beads (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by CoIP data shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:43.987446Z"
+    },
+    {
+      "id": "f2f69678-e60b-4452-a0e4-1b91b5141258",
+      "content_id": "d45ecb4a-3ed4-410f-b18d-a6012597d736",
+      "claim_id": "C44",
+      "claim": "ROL5 directly interacts with CTU2.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 2E, ROL5-His could be specifically pulled down by GST-CTU2, but not by GST alone, suggesting that ROL5 directly interacts with CTU2.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by GST pull-down assay data shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:43.987446Z"
+    },
+    {
+      "id": "b644de32-4041-421e-bf2f-b537799efab1",
+      "content_id": "d45ecb4a-3ed4-410f-b18d-a6012597d736",
+      "claim_id": "C45",
+      "claim": "The ctu2-1 mutant is hyper-susceptible to Psm ES4326.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, the ctu2-1 mutant is hyper-susceptible to the pathogen (Figure 3A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by infection assay data shown in Figure 3A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:43.987446Z"
+    },
+    {
+      "id": "1de4cbe6-6bb1-409a-a148-8ecc8b576ba6",
+      "content_id": "d45ecb4a-3ed4-410f-b18d-a6012597d736",
+      "claim_id": "C46",
+      "claim": "In wild-type Arabidopsis, mcm5U is almost undetectable.",
+      "claim_type": "EXPLICIT",
+      "source": "In WT, mcm5U was almost undetectable (Figure 3C), indicating that it is efficiently transformed into mcm5s2U in Arabidopsis.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by HPLC-MS data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:43.987446Z"
+    },
+    {
+      "id": "7a60a07e-b8be-49d7-8066-bfaf5419a45f",
+      "content_id": "d45ecb4a-3ed4-410f-b18d-a6012597d736",
+      "claim_id": "C47",
+      "claim": "mcm5U is efficiently transformed into mcm5s2U in Arabidopsis.",
+      "claim_type": "EXPLICIT",
+      "source": "In WT, mcm5U was almost undetectable (Figure 3C), indicating that it is efficiently transformed into mcm5s2U in Arabidopsis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the low levels of mcm5U and high levels of mcm5s2U in wild-type.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:43.987446Z"
+    },
+    {
+      "id": "4f3ba27c-3d7f-411d-a179-c2de761a4119",
+      "content_id": "d45ecb4a-3ed4-410f-b18d-a6012597d736",
+      "claim_id": "C48",
+      "claim": "In the rol5-c and ctu2-1 mutants, the mcm5s2U level was undetectable while the mcm5U level was very high.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in the rol5-c and ctu2-1 mutants, the mcm5s2U level was undetectable while the mcm5U level was very high",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by HPLC-MS data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:43.987446Z"
+    },
+    {
+      "id": "e9d7a849-9c61-4db5-84aa-3750ace5e68e",
+      "content_id": "d45ecb4a-3ed4-410f-b18d-a6012597d736",
+      "claim_id": "C49",
+      "claim": "Both ROL5 and CTU2 are required for mcm5s2U.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in the rol5-c and ctu2-1 mutants, the mcm5s2U level was undetectable while the mcm5U level was very high, suggesting that both ROL5 and CTU2 are required for mcm5s2U.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the loss of mcm5s2U in both mutants.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:43.987446Z"
+    },
+    {
+      "id": "4d16517f-4a93-42b5-8a0a-dd18bf07e950",
+      "content_id": "d45ecb4a-3ed4-410f-b18d-a6012597d736",
+      "claim_id": "C50",
+      "claim": "ROL5 and CTU2 form a complex to catalyze the mcm5s2U modification.",
+      "claim_type": "EXPLICIT",
+      "source": "These data revealed that ROL5 and CTU2 form a complex to catalyze the mcm5s2U modification, which is essential for plant immunity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the interaction data and the loss of mcm5s2U in both mutants.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:43.987446Z"
+    },
+    {
+      "id": "807fbe4d-1c3c-4c07-ad18-d5dc3faf58ae",
+      "content_id": "d45ecb4a-3ed4-410f-b18d-a6012597d736",
+      "claim_id": "C51",
+      "claim": "The mcm5s2U modification is essential for plant immunity.",
+      "claim_type": "EXPLICIT",
+      "source": "These data revealed that ROL5 and CTU2 form a complex to catalyze the mcm5s2U modification, which is essential for plant immunity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the hyper-susceptibility of rol5 and ctu2 mutants.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:43.987446Z"
+    },
+    {
+      "id": "b0343a99-49da-4b09-bb8c-60203c56b0e3",
+      "content_id": "d45ecb4a-3ed4-410f-b18d-a6012597d736",
+      "claim_id": "C52",
+      "claim": "In COM, 22% (4819) of genes were up-regulated after Psm infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Regarding the transcriptome, in COM, 22% (4819) and 27% (5767) of genes were respectively up-regulated or down-regulated after Psm infection (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RNA-seq data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:43.987446Z"
+    },
+    {
+      "id": "06a2cfb4-865a-4955-b958-392d6080385c",
+      "content_id": "d45ecb4a-3ed4-410f-b18d-a6012597d736",
+      "claim_id": "C53",
+      "claim": "In COM, 27% (5767) of genes were down-regulated after Psm infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Regarding the transcriptome, in COM, 22% (4819) and 27% (5767) of genes were respectively up-regulated or down-regulated after Psm infection (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RNA-seq data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:43.987446Z"
+    },
+    {
+      "id": "cfe07dc4-044d-4880-b343-e6523e920a1d",
+      "content_id": "d45ecb4a-3ed4-410f-b18d-a6012597d736",
+      "claim_id": "C54",
+      "claim": "In cgb, only 18% (3986) of genes were up-regulated after Psm infection.",
+      "claim_type": "EXPLICIT",
+      "source": "However, only 18% (3986) and 23% (4913) of genes were respectively up-regulated or down-regulated in cgb.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by RNA-seq data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:43.987446Z"
+    },
+    {
+      "id": "084b91ba-638b-4e0e-bc8e-642eb2a5b103",
+      "content_id": "d45ecb4a-3ed4-410f-b18d-a6012597d736",
+      "claim_id": "C55",
+      "claim": "In cgb, only 23% (4913) of genes were down-regulated after Psm infection.",
+      "claim_type": "EXPLICIT",
+      "source": "However, only 18% (3986) and 23% (4913) of genes were respectively up-regulated or down-regulated in cgb.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by RNA-seq data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:43.987446Z"
+    },
+    {
+      "id": "a55a8a75-9a9d-471c-a0e3-d8da9d26f0e7",
+      "content_id": "d45ecb4a-3ed4-410f-b18d-a6012597d736",
+      "claim_id": "C56",
+      "claim": "In COM, 16% (1193) of proteins were up-regulated after Psm infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Regarding the proteome, in COM, 16% (1193) and 13% (1021) of proteins were respectively up-regulated or down-regulated after Psm infection (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by proteome data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:43.987446Z"
+    },
+    {
+      "id": "cfa2210d-e8af-4d1a-b85c-c2951790aefd",
+      "content_id": "d45ecb4a-3ed4-410f-b18d-a6012597d736",
+      "claim_id": "C57",
+      "claim": "In COM, 13% (1021) of proteins were down-regulated after Psm infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Regarding the proteome, in COM, 16% (1193) and 13% (1021) of proteins were respectively up-regulated or down-regulated after Psm infection (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by proteome data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:43.987446Z"
+    },
+    {
+      "id": "b9d00234-9dde-4282-87a0-47740b38118e",
+      "content_id": "d45ecb4a-3ed4-410f-b18d-a6012597d736",
+      "claim_id": "C58",
+      "claim": "In cgb, only 12% (909) of proteins were up-regulated after Psm infection.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, only 12% (909) and 10% (787) of proteins were respectively up-regulated or down-regulated in cgb.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by proteome data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:43.987446Z"
+    },
+    {
+      "id": "71ea165d-9ac4-43b8-95b3-82e4608b77b6",
+      "content_id": "d45ecb4a-3ed4-410f-b18d-a6012597d736",
+      "claim_id": "C59",
+      "claim": "In cgb, only 10% (787) of proteins were down-regulated after Psm infection.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, only 12% (909) and 10% (787) of proteins were respectively up-regulated or down-regulated in cgb.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by proteome data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:43.987446Z"
+    },
+    {
+      "id": "1ce53ce2-956e-4ff2-a29d-d769c5aac78c",
+      "content_id": "d45ecb4a-3ed4-410f-b18d-a6012597d736",
+      "claim_id": "C60",
+      "claim": "The numbers of both DEGs and DEPs were reduced in cgb compared to those in COM.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the numbers of both DEGs and DEPs were reduced in cgb compared to those in COM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the comparison of percentages between cgb and COM.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:43.987446Z"
+    },
+    {
+      "id": "74336398-2699-46f9-8da0-95655e66c922",
+      "content_id": "d45ecb4a-3ed4-410f-b18d-a6012597d736",
+      "claim_id": "C61",
+      "claim": "Among 4819 up-regulated DEGs in COM, the expression changes of 1113 genes were less prominent in cgb than in COM.",
+      "claim_type": "EXPLICIT",
+      "source": "Among 4819 up-regulated DEGs in COM, the expression changes of 1113 genes were less prominent in cgb than in COM (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by transcriptome data analysis shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:43.987446Z"
+    },
+    {
+      "id": "80be6ec1-c5d9-4947-9eae-2c95d28c6e4d",
+      "content_id": "d45ecb4a-3ed4-410f-b18d-a6012597d736",
+      "claim_id": "C62",
+      "claim": "Among 1193 up-regulated DEPs in COM, the expression changes of 366 proteins were less prominent in cgb than in COM.",
+      "claim_type": "EXPLICIT",
+      "source": "Among 1193 up-regulated DEPs in COM, the expression changes of 366 proteins were less prominent in cgb than in COM (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by proteome data analysis shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:43.987446Z"
+    },
+    {
+      "id": "1c82fab7-c59d-44be-a4bc-74c9be727614",
+      "content_id": "d45ecb4a-3ed4-410f-b18d-a6012597d736",
+      "claim_id": "C63",
+      "claim": "Many important biological processes were significantly enriched in the attenuated genes and attenuated proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Gene Ontology (GO) analysis of the attenuated genes and attenuated proteins revealed that many important biological processes were significantly enriched (Figure 4E and F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by GO analysis shown in Figure 4E and F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:43.987446Z"
+    },
+    {
+      "id": "511df49b-5ddd-4e2c-98f4-963d2a7e567d",
+      "content_id": "d45ecb4a-3ed4-410f-b18d-a6012597d736",
+      "claim_id": "C64",
+      "claim": "Both transcriptome and proteome reprogramming were compromised in cgb.",
+      "claim_type": "EXPLICIT",
+      "source": "These data suggested that both transcriptome and proteome reprogramming were compromised in cgb.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the reduced numbers of DEGs and DEPs in cgb.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:43.987446Z"
+    },
+    {
+      "id": "a09e2506-e392-43db-9ad6-5a8cde84b4bb",
+      "content_id": "d45ecb4a-3ed4-410f-b18d-a6012597d736",
+      "claim_id": "C65",
+      "claim": "261 attenuated proteins were not attenuated at the transcript level.",
+      "claim_type": "EXPLICIT",
+      "source": "To distinguish between these two possibilities, we performed Venn diagram analysis between attenuated genes and attenuated proteins, revealing that 261 attenuated proteins were not attenuated at the transcript level, suggesting that the attenuated expression of these proteins is due to reduced translation (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by Venn diagram analysis shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:43.987446Z"
+    },
+    {
+      "id": "111c1d73-4377-4399-b2a8-c196c37e09c0",
+      "content_id": "d45ecb4a-3ed4-410f-b18d-a6012597d736",
+      "claim_id": "C66",
+      "claim": "The attenuated expression of 261 proteins is due to reduced translation.",
+      "claim_type": "EXPLICIT",
+      "source": "To distinguish between these two possibilities, we performed Venn diagram analysis between attenuated genes and attenuated proteins, revealing that 261 attenuated proteins were not attenuated at the transcript level, suggesting that the attenuated expression of these proteins is due to reduced translation (Figure 5A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the fact that these proteins are attenuated but their transcripts are not.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:43.987446Z"
+    },
+    {
+      "id": "37f0e55e-120f-4b70-8870-50c15faf2c42",
+      "content_id": "d45ecb4a-3ed4-410f-b18d-a6012597d736",
+      "claim_id": "C67",
+      "claim": "Some immune-related processes are significantly enriched among the 261 proteins with reduced translation.",
+      "claim_type": "EXPLICIT",
+      "source": "GO analysis of these 261 proteins revealed that some immune-related processes (i.e. response to salicylic acid, defense response to bacterium, and immune system process) were significantly enriched (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by GO analysis shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:43.987446Z"
+    },
+    {
+      "id": "f8ac8faf-cd7e-4675-915e-309d150ea3a5",
+      "content_id": "d45ecb4a-3ed4-410f-b18d-a6012597d736",
+      "claim_id": "C68",
+      "claim": "NPR1 is one of the 261 proteins with reduced translation in cgb.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, NPR1 is one of these proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text and supported by the proteome data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:43.987446Z"
+    },
+    {
+      "id": "86429446-59ae-4f1e-a07b-e8a5231549eb",
+      "content_id": "d45ecb4a-3ed4-410f-b18d-a6012597d736",
+      "claim_id": "C69",
+      "claim": "The transcription levels of NPR1 were similar between COM and cgb both before and after Psm ES4326 infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with transcriptome and proteome data, the transcription levels of NPR1 were similar between COM and cgb both before and after Psm ES4326 infection (Figure 5\u2014figure supplement 1)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RT-qPCR data shown in Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:43.987446Z"
+    },
+    {
+      "id": "616ab0e9-8efa-4c93-a818-d8017d26c5c2",
+      "content_id": "d45ecb4a-3ed4-410f-b18d-a6012597d736",
+      "claim_id": "C70",
+      "claim": "The NPR1 protein level was much higher in COM than that in cgb after Psm ES4326 infection.",
+      "claim_type": "EXPLICIT",
+      "source": "whereas the NPR1 protein level was much higher in COM than that in cgb after Psm ES4326 infection (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by western blot data shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:43.987446Z"
+    },
+    {
+      "id": "1aa02aa7-efa3-44ba-a4ad-abc63aa792c7",
+      "content_id": "d45ecb4a-3ed4-410f-b18d-a6012597d736",
+      "claim_id": "C71",
+      "claim": "The polysome fractions in cgb were reduced compared with COM.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared with COM, the polysome fractions in cgb were reduced (Figure 5D), suggesting that the overall translation efficiency is lower in cgb.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by ribosome profiling data shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:43.987446Z"
+    },
+    {
+      "id": "82d651b8-78f8-4867-955a-1f1763032ce1",
+      "content_id": "d45ecb4a-3ed4-410f-b18d-a6012597d736",
+      "claim_id": "C72",
+      "claim": "The overall translation efficiency is lower in cgb.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared with COM, the polysome fractions in cgb were reduced (Figure 5D), suggesting that the overall translation efficiency is lower in cgb.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the reduced polysome fractions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:43.987446Z"
+    },
+    {
+      "id": "daa37acd-20fe-44cc-a7f4-03c83b69ff34",
+      "content_id": "d45ecb4a-3ed4-410f-b18d-a6012597d736",
+      "claim_id": "C73",
+      "claim": "The relative mRNA levels of NPR1 in multiple polysome fractions were significantly lower in cgb than in COM.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, the relative mRNA levels of NPR1 in multiple polysome fractions were significantly lower in cgb than in COM (Figure 5E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by qPCR analysis of polysome fractions shown in Figure 5E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:43.987446Z"
+    },
+    {
+      "id": "cdfcf056-88f1-48e4-846c-7b22d4746643",
+      "content_id": "d45ecb4a-3ed4-410f-b18d-a6012597d736",
+      "claim_id": "C74",
+      "claim": "SA signaling is compromised in the cgb mutant.",
+      "claim_type": "EXPLICIT",
+      "source": "The reduced NPR1 protein level in cgb suggested that SA signaling is compromised.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the reduced NPR1 protein level.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:43.987446Z"
+    },
+    {
+      "id": "59b9ddf4-b17b-4cbf-a6c2-77ed815bc4b7",
+      "content_id": "d45ecb4a-3ed4-410f-b18d-a6012597d736",
+      "claim_id": "C75",
+      "claim": "Among 73 detectable genes belonging to the GO term 'response to salicylic acid', 59 genes (80.8%) were reduced in cgb compared with COM.",
+      "claim_type": "EXPLICIT",
+      "source": "In our transcriptome data, we could detect the expression of 73 genes, among which 59 genes (80.8%) were reduced in cgb compared with COM (Figure 5F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by transcriptome data shown in Figure 5F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:43.987446Z"
+    },
+    {
+      "id": "526b11de-3ae0-48bb-a1fe-613b615a38ee",
+      "content_id": "d45ecb4a-3ed4-410f-b18d-a6012597d736",
+      "claim_id": "C76",
+      "claim": "The growth of Psm ES4326 was reduced in BTH-treated COM, but not cgb and npr1.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, the growth of Psm ES4326 was reduced in BTH-treated COM, but not cgb and npr1 (Figure 5\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by SA-mediated protection assay data shown in Figure 5\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:43.987446Z"
+    },
+    {
+      "id": "61239ca2-e08b-4ff7-977d-6893aad430ce",
+      "content_id": "d45ecb4a-3ed4-410f-b18d-a6012597d736",
+      "claim_id": "C77",
+      "claim": "cgb npr1 double mutant was significantly more susceptible than either npr1 or cgb.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that cgb npr1 was significantly more susceptible than either npr1 or cgb (Figure 5\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by infection assay data shown in Figure 5\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:43.987446Z"
+    },
+    {
+      "id": "e6f468a4-01c3-4cdd-800b-a96d39eaabe1",
+      "content_id": "d45ecb4a-3ed4-410f-b18d-a6012597d736",
+      "claim_id": "C78",
+      "claim": "The translation of NPR1 was reduced rather than completely blocked in cgb.",
+      "claim_type": "EXPLICIT",
+      "source": "First, the translation of NPR1 was reduced rather than completely blocked in cgb (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by western blot data showing some NPR1 protein still present in cgb.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:43.987446Z"
+    },
+    {
+      "id": "4dc4d6b8-7112-4f3b-bde8-8c0fb9842a4f",
+      "content_id": "d45ecb4a-3ed4-410f-b18d-a6012597d736",
+      "claim_id": "C79",
+      "claim": "NPR1 still has some function in cgb.",
+      "claim_type": "EXPLICIT",
+      "source": "In other words, NPR1 still has some function in cgb.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the fact that NPR1 translation is reduced but not completely blocked.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:43.987446Z"
+    },
+    {
+      "id": "02f0ea35-38bf-4021-b521-0d5bc3d81974",
+      "content_id": "d45ecb4a-3ed4-410f-b18d-a6012597d736",
+      "claim_id": "C80",
+      "claim": "In the cgb npr1 double mutant, the function of NPR1 is completely abolished.",
+      "claim_type": "EXPLICIT",
+      "source": "But in the cgb npr1 double mutant, the function of NPR1 is completely abolished, which explains why cgb npr1 was more susceptible than cgb.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the genetic nature of the double mutant.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:43.987446Z"
+    },
+    {
+      "id": "b19bc430-1f8e-445a-a322-164599ca2758",
+      "content_id": "d45ecb4a-3ed4-410f-b18d-a6012597d736",
+      "claim_id": "C81",
+      "claim": "In addition to NPR1, some other immune regulators (such as PAD4, EDS5, and SAG101) were also compromised in cgb.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, in addition to NPR1, some other immune regulators (such as PAD4, EDS5, and SAG101) were also compromised in cgb (Figure 5B), which explains why cgb npr1 was more susceptible than npr1.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by GO analysis shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:43.987446Z"
+    },
+    {
+      "id": "216854cd-c029-4d31-b7ed-2ef746b4da6f",
+      "content_id": "d45ecb4a-3ed4-410f-b18d-a6012597d736",
+      "claim_id": "C82",
+      "claim": "tRNA thiolation is required for efficient protein expression.",
+      "claim_type": "EXPLICIT",
+      "source": "It is known that tRNA thiolation is required for efficient protein expression (Nedialkova and Leidel, 2015; Schaffrath and Leidel, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:43.987446Z"
+    },
+    {
+      "id": "32456285-afc4-4794-b289-102dc6877f61",
+      "content_id": "d45ecb4a-3ed4-410f-b18d-a6012597d736",
+      "claim_id": "C83",
+      "claim": "tRNA thiolation is abolished in the cgb mutant.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show that tRNA thiolation is abolished in the cgb mutant (Figure 3), leading to disease hyper-susceptibility (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by HPLC-MS data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:43.987446Z"
+    },
+    {
+      "id": "b931bc88-f10a-4bc0-9d0b-9c9778f1dc48",
+      "content_id": "d45ecb4a-3ed4-410f-b18d-a6012597d736",
+      "claim_id": "C84",
+      "claim": "The translation of many immune-related proteins was reduced in cgb.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the translation of many immune-related proteins was reduced in cgb (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by proteome and ribosome profiling data shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:43.987446Z"
+    },
+    {
+      "id": "5b606b59-7172-47cd-b061-ff2fdc95248f",
+      "content_id": "d45ecb4a-3ed4-410f-b18d-a6012597d736",
+      "claim_id": "C85",
+      "claim": "tRNA thiolation is required for plant immunity.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, our study strongly suggested that tRNA thiolation is required for plant immunity, revealing an additional mechanism underlying plant immune responses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the combined data showing loss of tRNA thiolation leads to compromised immunity.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:43.987446Z"
+    },
+    {
+      "id": "72144b5a-72c4-41c6-ac91-429e4e9a38d7",
+      "content_id": "d45ecb4a-3ed4-410f-b18d-a6012597d736",
+      "claim_id": "C86",
+      "claim": "tRNA thiolation may be a regulatory step during immune responses.",
+      "claim_type": "EXPLICIT",
+      "source": "It is possible that tRNA thiolation is a regulatory step during immune responses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning about the role of tRNA thiolation.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:43.987446Z"
+    },
+    {
+      "id": "fe9fc0f6-c722-4efd-87dc-4ba3f7190543",
+      "content_id": "d45ecb4a-3ed4-410f-b18d-a6012597d736",
+      "claim_id": "C87",
+      "claim": "tRNA thiolation may become a limiting factor due to the high demand of translation resource during immune responses.",
+      "claim_type": "EXPLICIT",
+      "source": "However, since many defense-related proteins are up-regulated after pathogen infection (Figure 4B), we cannot rule out the possibility that tRNA thiolation just becomes a limiting factor due to the high demand of translation resource during immune responses.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is speculative reasoning about an alternative explanation.",
+      "evidence_type": "[\"SPECULATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:43.987446Z"
+    },
+    {
+      "id": "7fc64819-93b1-4f82-9ac4-a442003931e0",
+      "content_id": "d45ecb4a-3ed4-410f-b18d-a6012597d736",
+      "claim_id": "C88",
+      "claim": "NPR1 can function as a transcription coactivator to regulate gene expression.",
+      "claim_type": "EXPLICIT",
+      "source": "NPR1 can function as a transcription coactivator to regulate gene expression and an adaptor of ubiquitin E3 ligase to mediate protein degradation (Yu et al., 2022; Yu et al., 2021; Zavaliev et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:43.987446Z"
+    },
+    {
+      "id": "bb77142f-4d5f-4b41-95e9-796b85d01c7f",
+      "content_id": "d45ecb4a-3ed4-410f-b18d-a6012597d736",
+      "claim_id": "C89",
+      "claim": "NPR1 can function as an adaptor of ubiquitin E3 ligase to mediate protein degradation.",
+      "claim_type": "EXPLICIT",
+      "source": "NPR1 can function as a transcription coactivator to regulate gene expression and an adaptor of ubiquitin E3 ligase to mediate protein degradation (Yu et al., 2022; Yu et al., 2021; Zavaliev et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:43.987446Z"
+    },
+    {
+      "id": "6d38cc08-a2ee-45da-9bea-4dd823b59382",
+      "content_id": "d45ecb4a-3ed4-410f-b18d-a6012597d736",
+      "claim_id": "C90",
+      "claim": "The activity of NPR1 is regulated at multiple levels including post-translational modifications such as phosphorylation, ubiquitination, S-nitrosylation, and sumoylation.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been shown that the activity of NPR1 is regulated at multiple levels including post-translational modifications such as phosphorylation, ubiquitination, S-nitrosylation, and sumoylation (Saleh et al., 2015; Spoel et al., 2009; Tada et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:43.987446Z"
+    },
+    {
+      "id": "76b36a1a-cea7-4860-be18-316e9bf90920",
+      "content_id": "d45ecb4a-3ed4-410f-b18d-a6012597d736",
+      "claim_id": "C91",
+      "claim": "How NPR1 is regulated at the translational level was previously unknown.",
+      "claim_type": "EXPLICIT",
+      "source": "However, how NPR1 is regulated at the translational level is unknown.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement reflects the knowledge gap before this study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:43.987446Z"
+    },
+    {
+      "id": "206426b8-a01e-4b1b-8b0d-4c142131862b",
+      "content_id": "d45ecb4a-3ed4-410f-b18d-a6012597d736",
+      "claim_id": "C92",
+      "claim": "The tRNA thiolation-mediated translation control is required for the optimal expression of NPR1.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show that the tRNA thiolation-mediated translation control is required for the optimal expression of NPR1 (Figure 5B and D), revealing an additional layer of regulation for NPR1.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 5B and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:43.987446Z"
+    },
+    {
+      "id": "800a6d81-2a16-4eae-8a3f-f40045b1f4a4",
+      "content_id": "d45ecb4a-3ed4-410f-b18d-a6012597d736",
+      "claim_id": "C93",
+      "claim": "tRNA thiolation regulates the development of root hairs, chloroplasts, and leaf cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Previously, it was reported that tRNA thiolation regulates the development of root hairs, chloroplasts, and leaf cells (Leiber et al., 2010; Philipp et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:43.987446Z"
+    },
+    {
+      "id": "efedb4ad-a80a-48f0-bd04-ea110d9bd8c7",
+      "content_id": "d45ecb4a-3ed4-410f-b18d-a6012597d736",
+      "claim_id": "C94",
+      "claim": "tRNA thiolation is required for heat stress tolerance.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, it was found that tRNA thiolation is required for heat stress tolerance (Xu et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:43.987446Z"
+    },
+    {
+      "id": "7f440f1d-ed17-4682-bbe0-9a831829c420",
+      "content_id": "d45ecb4a-3ed4-410f-b18d-a6012597d736",
+      "claim_id": "C95",
+      "claim": "The ELP complex is composed of six proteins, with ELP1, ELP2, and ELP3 forming a core sub-complex, and ELP4, ELP5, and ELP6 forming an accessory sub-complex.",
+      "claim_type": "EXPLICIT",
+      "source": "The ELP complex is composed of six proteins, with ELP1, ELP2, and ELP3 forming a core sub-complex, and ELP4, ELP5, and ELP6 forming an accessory sub-complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the ELP complex structure.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:43.987446Z"
+    },
+    {
+      "id": "a69343dd-3025-4402-bb5b-c0987201c0e4",
+      "content_id": "d45ecb4a-3ed4-410f-b18d-a6012597d736",
+      "claim_id": "C96",
+      "claim": "The ELP complex catalyzes the cm5U modification, which is the precursor of mcm5s2U catalyzed by ROL5 and CTU2.",
+      "claim_type": "EXPLICIT",
+      "source": "The ELP complex catalyzes the cm5U modification, which is the precursor of mcm5s2U catalyzed by ROL5 and CTU2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the tRNA modification pathway.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:43.987446Z"
+    },
+    {
+      "id": "84595c7d-3e0d-4e24-8881-f8a586ddbdd0",
+      "content_id": "d45ecb4a-3ed4-410f-b18d-a6012597d736",
+      "claim_id": "C97",
+      "claim": "The mcm5s2U modification was undetectable in the elp mutants such as elp3 and elp6 mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, the mcm5s2U modification was undetectable in the elp mutants such as elp3 and elp6 mutants (Leitner et al., 2015; Mehlgarten et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:43.987446Z"
+    },
+    {
+      "id": "baae24ff-73d1-426d-b6ad-361c0e1effe0",
+      "content_id": "d45ecb4a-3ed4-410f-b18d-a6012597d736",
+      "claim_id": "C98",
+      "claim": "The elp2 and elp3 mutants were hyper-susceptible to pathogens.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, similar to the rol5 and ctu2 mutants, the elp2 and elp3 mutants were hyper-susceptible to pathogens (DeFraia et al., 2010; Defraia et al., 2013; Wang et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:43.987446Z"
+    },
+    {
+      "id": "aa5762aa-b92d-4ac9-ba25-df624181486d",
+      "content_id": "d45ecb4a-3ed4-410f-b18d-a6012597d736",
+      "claim_id": "C99",
+      "claim": "The ELP complex has several activities including histone acetylation, \u03b1-tubulin acetylation, and DNA demethylation.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to tRNA modification, the ELP complex has several other distinct activities including histone acetylation, \u03b1-tubulin acetylation, and DNA demethylation (Wang et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:43.987446Z"
+    },
+    {
+      "id": "9e92d279-4104-436a-9875-809f1d9982fc",
+      "content_id": "d45ecb4a-3ed4-410f-b18d-a6012597d736",
+      "claim_id": "C100",
+      "claim": "The only known activity of ROL5 and CTU2 is to catalyze tRNA thiolation.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the only known activity of ROL5 and CTU2 is to catalyze tRNA thiolation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about ROL5 and CTU2 function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:43.987446Z"
+    },
+    {
+      "id": "6171e546-9443-438a-8218-3460c3359207",
+      "content_id": "d45ecb4a-3ed4-410f-b18d-a6012597d736",
+      "claim_id": "C101",
+      "claim": "It is likely the tRNA modification activity of the ELP complex underlies its function in plant immunity.",
+      "claim_type": "EXPLICIT",
+      "source": "Considering that the elp, rol5, and ctu2 mutants are all defective in tRNA thiolation, it is likely the tRNA modification activity of the ELP complex underlies its function in plant immunity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the common defect in tRNA thiolation among these mutants.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:43.987446Z"
+    },
+    {
+      "id": "5ca0e61d-f870-4cac-8cc5-f29db008b9d2",
+      "content_id": "d45ecb4a-3ed4-410f-b18d-a6012597d736",
+      "claim_id": "C102",
+      "claim": "The correlation between mRNAs and proteins is not always that strong.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the correlation between mRNAs and proteins is not always that strong (Lahtvee et al., 2017; Schwanh\u00e4usser et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:43.987446Z"
+    },
+    {
+      "id": "4d49758a-0d87-42e6-b663-72b1e7985e23",
+      "content_id": "d45ecb4a-3ed4-410f-b18d-a6012597d736",
+      "claim_id": "C103",
+      "claim": "2215 proteins differentially accumulated after Psm infection in Arabidopsis.",
+      "claim_type": "EXPLICIT",
+      "source": "Through high-throughput proteome analysis, we found 2215 proteins differentially accumulated after Psm infection in Arabidopsis (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by proteome data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:43.987446Z"
+    },
+    {
+      "id": "6ffa988a-9e55-4db7-8d34-8a311908a038",
+      "content_id": "d45ecb4a-3ed4-410f-b18d-a6012597d736",
+      "claim_id": "C104",
+      "claim": "This is the largest dataset of pathogen-responsive proteins in Arabidopsis.",
+      "claim_type": "EXPLICIT",
+      "source": "To our knowledge, this is the largest dataset of pathogen-responsive proteins in Arabidopsis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the significance of the dataset based on the authors' knowledge of the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:43.987446Z"
+    },
+    {
+      "id": "4dbd9b2d-c51a-4ec1-8b20-5e271d84b97c",
+      "content_id": "d45ecb4a-3ed4-410f-b18d-a6012597d736",
+      "claim_id": "C105",
+      "claim": "The cgb mutant disease symptom resembled that of npr1.",
+      "claim_type": "EXPLICIT",
+      "source": "In a study to test the disease phenotypes of some transgenic Arabidopsis, we found that one transgenic line was hyper-susceptible to the bacterial pathogen Pseudomonas syringae pv. Maculicola (Psm) ES4326. The disease symptom resembled that of npr1, in which the master immune regulator NPR1 was mutated (Figure 1A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by visual comparison shown in Figure 1A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:43.987446Z"
+    },
+    {
+      "id": "ffa4f19a-1a60-4154-bd17-83831547ddae",
+      "content_id": "d45ecb4a-3ed4-410f-b18d-a6012597d736",
+      "claim_id": "C106",
+      "claim": "tRNA thiolation was defective in the rol5 and ctu2 mutant.",
+      "claim_type": "EXPLICIT",
+      "source": "By using N-acryloylamino phenyl mercuric chloride, which binds thiolated tRNAs, previous studies revealed that tRNA thiolation was defective in the rol5 and ctu2 mutant (Leiber et al., 2010; Philipp et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:43.987446Z"
+    },
+    {
+      "id": "2c0d1eb9-1f84-4fd8-a943-2d43e7f02bb7",
+      "content_id": "d45ecb4a-3ed4-410f-b18d-a6012597d736",
+      "claim_id": "C107",
+      "claim": "The reproducibility between biological replicates was good in the transcriptome and proteome analyses.",
+      "claim_type": "EXPLICIT",
+      "source": "Principal component analysis showed that the reproducibility between biological replicates was good (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by PCA analysis shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:43.987446Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "9ebc4381-bbab-46c5-9837-88421ced9ac4",
+      "content_id": "d45ecb4a-3ed4-410f-b18d-a6012597d736",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The cgb mutant is hyper-susceptible to Pseudomonas syringae and contains a T-DNA insertion in ROL5. Complementation with ROL5 rescues the phenotype, and an independent CRISPR-generated allele (rol5-c) shows the same hyper-susceptibility, confirming that ROL5 is required for plant immunity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C31-C37, and C105 provide converging genetic evidence through multiple independent approaches (T-DNA insertion, complementation, CRISPR knockout) that ROL5 is required for immunity. The complementation experiment (C34) and independent allele (C36) provide strong validation of the causal relationship.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:13:43.987446Z"
+    },
+    {
+      "id": "71175d80-1b84-449c-bf63-7dd38fec8cab",
+      "content_id": "d45ecb4a-3ed4-410f-b18d-a6012597d736",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "ROL5 is a homolog of yeast NCS6 and physically interacts with CTU2 (the Arabidopsis homolog of yeast NCS2). The interaction is demonstrated through yeast two-hybrid, split luciferase, co-immunoprecipitation, and GST pull-down assays.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C7 and C38-C44 demonstrate the ROL5-CTU2 interaction through multiple complementary biochemical approaches (Y2H, split-LUC, CoIP, GST pull-down). The convergence of in vitro and in vivo methods provides strong evidence for direct physical interaction, consistent with the yeast NCS6-NCS2 complex.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:13:43.987446Z"
+    },
+    {
+      "id": "1877b083-b4b5-479e-a9a8-0f7b1f9f006e",
+      "content_id": "d45ecb4a-3ed4-410f-b18d-a6012597d736",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Mutations in either ROL5 or CTU2 result in complete loss of tRNA thiolation (mcm5s2U modification) as measured by HPLC-MS, and both mutants are hyper-susceptible to pathogens. This demonstrates that the ROL5-CTU2 complex catalyzes mcm5s2U modification, which is essential for plant immunity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8, C45-C51, C83, and C106 provide direct biochemical evidence (HPLC-MS) showing loss of mcm5s2U in both rol5 and ctu2 mutants, coupled with consistent pathogen susceptibility phenotypes. The accumulation of the precursor mcm5U in mutants (C48) confirms the specific enzymatic defect. The convergence of biochemical and phenotypic data strongly supports the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:13:43.987446Z"
+    },
+    {
+      "id": "3cd8dc25-7d0b-4b09-b731-8ee598186048",
+      "content_id": "d45ecb4a-3ed4-410f-b18d-a6012597d736",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Both transcriptome and proteome reprogramming during immune responses are compromised in cgb. RNA-seq and proteome analyses show reduced numbers of differentially expressed genes (DEGs) and proteins (DEPs) in cgb compared to the complementation line after pathogen infection, with many immune-related biological processes significantly enriched among attenuated genes and proteins.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9, C52-C64, and C107 present comprehensive transcriptome and proteome data with good reproducibility (C107). The quantitative differences in DEGs and DEPs between cgb and COM are clearly documented (C52-C60), and GO analysis (C63) provides biological context. The multi-omics approach with appropriate controls supports the conclusion of compromised immune reprogramming.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:13:43.987446Z"
+    },
+    {
+      "id": "afd3e788-f90d-42bb-a975-4f06348dec8a",
+      "content_id": "d45ecb4a-3ed4-410f-b18d-a6012597d736",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The translation of NPR1 is specifically reduced in cgb without changes in transcript levels, resulting in compromised salicylic acid signaling. This is demonstrated through western blot, ribosome profiling, and functional assays showing reduced NPR1 protein, decreased polysome association of NPR1 mRNA, and impaired SA-responsive gene expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10, C65-C76, C78, C84, and C92 provide multiple lines of evidence for translational control of NPR1: unchanged mRNA (C69) but reduced protein (C70), reduced polysome association (C71-C73), and functional consequences (C74-C76). The Venn diagram analysis (C65-C66) distinguishes translational from transcriptional effects. The convergence of molecular and functional data strongly supports this mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:13:43.987446Z"
+    },
+    {
+      "id": "6eba13ab-ecfd-400d-b385-dbc063815ba8",
+      "content_id": "d45ecb4a-3ed4-410f-b18d-a6012597d736",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The cgb npr1 double mutant is more susceptible to pathogens than either single mutant, showing additive effects. This is explained by residual NPR1 function in cgb and the compromise of additional immune regulators (PAD4, EDS5, SAG101) beyond NPR1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C77-C81 provide genetic epistasis data showing additive effects of cgb and npr1 mutations. The interpretation is logically consistent with partial loss of NPR1 translation in cgb (C78) and the identification of other affected immune regulators (C81). However, the quantitative contribution of each factor could be better defined.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:13:43.987446Z"
+    },
+    {
+      "id": "edee78f5-3cc1-43f1-97da-40406ed0c09f",
+      "content_id": "d45ecb4a-3ed4-410f-b18d-a6012597d736",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "tRNA thiolation is required for plant immunity in Arabidopsis, revealing an additional mechanism underlying plant immune responses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4 and C85 represent the main conclusion synthesized from multiple supporting results (genetic, biochemical, transcriptomic, proteomic evidence). The conclusion is well-supported by the convergence of data showing that loss of tRNA thiolation leads to compromised immunity through effects on translation of immune-related proteins.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:13:43.987446Z"
+    },
+    {
+      "id": "bee82289-8cd2-4043-b378-189a01b9d1b1",
+      "content_id": "d45ecb4a-3ed4-410f-b18d-a6012597d736",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The authors speculate that tRNA thiolation may be a regulatory step during immune responses, though they acknowledge an alternative possibility that it becomes a limiting factor due to high translational demand during infection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C86-C87 are explicitly speculative and the authors acknowledge they cannot distinguish between active regulation versus passive limitation. No experimental data is provided to test these alternative hypotheses. This represents an important open question for future work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:13:43.987446Z"
+    },
+    {
+      "id": "403c740c-5b15-44fc-87c6-21dfcb18bf6f",
+      "content_id": "d45ecb4a-3ed4-410f-b18d-a6012597d736",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The tRNA modification activity of the ELP complex likely underlies its function in plant immunity. While the ELP complex has multiple activities (histone acetylation, \u03b1-tubulin acetylation, DNA demethylation), ROL5 and CTU2 specifically catalyze tRNA thiolation, and all three types of mutants (elp, rol5, ctu2) show similar immune defects and lack mcm5s2U.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C95-C101 provide a logical argument based on the specificity of ROL5/CTU2 function (C100) and the common phenotypes of elp, rol5, and ctu2 mutants (C97-C98). The inference that tRNA modification underlies ELP function in immunity (C101) is reasonable given the convergent evidence, though direct experimental proof is not provided.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:13:43.987446Z"
+    },
+    {
+      "id": "641f8b0a-a560-446b-b1df-e31ba131ca65",
+      "content_id": "d45ecb4a-3ed4-410f-b18d-a6012597d736",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The study identified 2215 differentially expressed proteins after Psm infection in Arabidopsis, which the authors claim is the largest dataset of pathogen-responsive proteins in Arabidopsis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C103 is supported by the proteome data presented. However, claim C104 about this being the largest dataset is based on the authors' knowledge and is not verifiable without a systematic comparison to all published datasets. The claim may be accurate but lacks supporting evidence in the manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:13:43.987446Z"
+    },
+    {
+      "id": "5066d021-ce26-4ede-9910-6f0f0564603e",
+      "content_id": "d45ecb4a-3ed4-410f-b18d-a6012597d736",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The manuscript provides extensive background on plant immunity, SA signaling, NPR1 function, tRNA modifications, and the mcm5s2U pathway, establishing the context and knowledge gaps that motivate the study.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3, C11-C30, C82, C88-C94, and C102 represent background knowledge supported by appropriate citations to the literature. These claims establish the scientific context and identify the knowledge gap (C2, C30, C91) that the study addresses. The background is well-documented and accurate.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:13:43.987446Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "fb2f7711-3b90-4db6-a5fa-153ca85cc3d2",
+      "result_id": "9ebc4381-bbab-46c5-9837-88421ced9ac4"
+    },
+    {
+      "claim_id": "dac802b7-c237-4bee-a068-009c16870d97",
+      "result_id": "9ebc4381-bbab-46c5-9837-88421ced9ac4"
+    },
+    {
+      "claim_id": "ab2670f1-dc22-4851-b578-c3d564894d5f",
+      "result_id": "9ebc4381-bbab-46c5-9837-88421ced9ac4"
+    },
+    {
+      "claim_id": "5c7dcf2c-489e-49a4-bab7-171b75e0b58b",
+      "result_id": "9ebc4381-bbab-46c5-9837-88421ced9ac4"
+    },
+    {
+      "claim_id": "b9331bca-ab9f-441c-9af4-2177414954ed",
+      "result_id": "9ebc4381-bbab-46c5-9837-88421ced9ac4"
+    },
+    {
+      "claim_id": "ee6d753e-3914-421f-9b23-e70b82462f7c",
+      "result_id": "9ebc4381-bbab-46c5-9837-88421ced9ac4"
+    },
+    {
+      "claim_id": "4b5ed677-3035-4685-a1c9-e9e29989bbe8",
+      "result_id": "9ebc4381-bbab-46c5-9837-88421ced9ac4"
+    },
+    {
+      "claim_id": "7623e36c-83f7-45fa-af05-2cebd6ed2525",
+      "result_id": "9ebc4381-bbab-46c5-9837-88421ced9ac4"
+    },
+    {
+      "claim_id": "4dbd9b2d-c51a-4ec1-8b20-5e271d84b97c",
+      "result_id": "9ebc4381-bbab-46c5-9837-88421ced9ac4"
+    },
+    {
+      "claim_id": "bd9fe908-345c-4314-af45-e0edef8d2b1d",
+      "result_id": "71175d80-1b84-449c-bf63-7dd38fec8cab"
+    },
+    {
+      "claim_id": "c2686cab-fe19-43cb-b7c0-8c75ae08430d",
+      "result_id": "71175d80-1b84-449c-bf63-7dd38fec8cab"
+    },
+    {
+      "claim_id": "bdab514e-1805-4c62-880d-244699550208",
+      "result_id": "71175d80-1b84-449c-bf63-7dd38fec8cab"
+    },
+    {
+      "claim_id": "1a319957-e2d5-4c01-b23c-0f850bd8915b",
+      "result_id": "71175d80-1b84-449c-bf63-7dd38fec8cab"
+    },
+    {
+      "claim_id": "633d867b-b8f7-42db-b396-eee7abf99424",
+      "result_id": "71175d80-1b84-449c-bf63-7dd38fec8cab"
+    },
+    {
+      "claim_id": "c91b3339-52db-413f-bce8-4477b64b2c1c",
+      "result_id": "71175d80-1b84-449c-bf63-7dd38fec8cab"
+    },
+    {
+      "claim_id": "1c8b738b-3aff-4afe-a2e6-ba1a5c7f2a81",
+      "result_id": "71175d80-1b84-449c-bf63-7dd38fec8cab"
+    },
+    {
+      "claim_id": "3e548e89-11b2-4c36-8841-4b8fceb30e03",
+      "result_id": "71175d80-1b84-449c-bf63-7dd38fec8cab"
+    },
+    {
+      "claim_id": "f2f69678-e60b-4452-a0e4-1b91b5141258",
+      "result_id": "71175d80-1b84-449c-bf63-7dd38fec8cab"
+    },
+    {
+      "claim_id": "24f30c17-3331-4719-b16c-c49a6b0768f1",
+      "result_id": "1877b083-b4b5-479e-a9a8-0f7b1f9f006e"
+    },
+    {
+      "claim_id": "b644de32-4041-421e-bf2f-b537799efab1",
+      "result_id": "1877b083-b4b5-479e-a9a8-0f7b1f9f006e"
+    },
+    {
+      "claim_id": "1de4cbe6-6bb1-409a-a148-8ecc8b576ba6",
+      "result_id": "1877b083-b4b5-479e-a9a8-0f7b1f9f006e"
+    },
+    {
+      "claim_id": "7a60a07e-b8be-49d7-8066-bfaf5419a45f",
+      "result_id": "1877b083-b4b5-479e-a9a8-0f7b1f9f006e"
+    },
+    {
+      "claim_id": "4f3ba27c-3d7f-411d-a179-c2de761a4119",
+      "result_id": "1877b083-b4b5-479e-a9a8-0f7b1f9f006e"
+    },
+    {
+      "claim_id": "e9d7a849-9c61-4db5-84aa-3750ace5e68e",
+      "result_id": "1877b083-b4b5-479e-a9a8-0f7b1f9f006e"
+    },
+    {
+      "claim_id": "4d16517f-4a93-42b5-8a0a-dd18bf07e950",
+      "result_id": "1877b083-b4b5-479e-a9a8-0f7b1f9f006e"
+    },
+    {
+      "claim_id": "807fbe4d-1c3c-4c07-ad18-d5dc3faf58ae",
+      "result_id": "1877b083-b4b5-479e-a9a8-0f7b1f9f006e"
+    },
+    {
+      "claim_id": "32456285-afc4-4794-b289-102dc6877f61",
+      "result_id": "1877b083-b4b5-479e-a9a8-0f7b1f9f006e"
+    },
+    {
+      "claim_id": "ffa4f19a-1a60-4154-bd17-83831547ddae",
+      "result_id": "1877b083-b4b5-479e-a9a8-0f7b1f9f006e"
+    },
+    {
+      "claim_id": "e945bb31-6640-469d-9bea-5981960102b7",
+      "result_id": "3cd8dc25-7d0b-4b09-b731-8ee598186048"
+    },
+    {
+      "claim_id": "b0343a99-49da-4b09-bb8c-60203c56b0e3",
+      "result_id": "3cd8dc25-7d0b-4b09-b731-8ee598186048"
+    },
+    {
+      "claim_id": "06a2cfb4-865a-4955-b958-392d6080385c",
+      "result_id": "3cd8dc25-7d0b-4b09-b731-8ee598186048"
+    },
+    {
+      "claim_id": "cfe07dc4-044d-4880-b343-e6523e920a1d",
+      "result_id": "3cd8dc25-7d0b-4b09-b731-8ee598186048"
+    },
+    {
+      "claim_id": "084b91ba-638b-4e0e-bc8e-642eb2a5b103",
+      "result_id": "3cd8dc25-7d0b-4b09-b731-8ee598186048"
+    },
+    {
+      "claim_id": "a55a8a75-9a9d-471c-a0e3-d8da9d26f0e7",
+      "result_id": "3cd8dc25-7d0b-4b09-b731-8ee598186048"
+    },
+    {
+      "claim_id": "cfa2210d-e8af-4d1a-b85c-c2951790aefd",
+      "result_id": "3cd8dc25-7d0b-4b09-b731-8ee598186048"
+    },
+    {
+      "claim_id": "b9d00234-9dde-4282-87a0-47740b38118e",
+      "result_id": "3cd8dc25-7d0b-4b09-b731-8ee598186048"
+    },
+    {
+      "claim_id": "71ea165d-9ac4-43b8-95b3-82e4608b77b6",
+      "result_id": "3cd8dc25-7d0b-4b09-b731-8ee598186048"
+    },
+    {
+      "claim_id": "1ce53ce2-956e-4ff2-a29d-d769c5aac78c",
+      "result_id": "3cd8dc25-7d0b-4b09-b731-8ee598186048"
+    },
+    {
+      "claim_id": "74336398-2699-46f9-8da0-95655e66c922",
+      "result_id": "3cd8dc25-7d0b-4b09-b731-8ee598186048"
+    },
+    {
+      "claim_id": "80be6ec1-c5d9-4947-9eae-2c95d28c6e4d",
+      "result_id": "3cd8dc25-7d0b-4b09-b731-8ee598186048"
+    },
+    {
+      "claim_id": "1c82fab7-c59d-44be-a4bc-74c9be727614",
+      "result_id": "3cd8dc25-7d0b-4b09-b731-8ee598186048"
+    },
+    {
+      "claim_id": "511df49b-5ddd-4e2c-98f4-963d2a7e567d",
+      "result_id": "3cd8dc25-7d0b-4b09-b731-8ee598186048"
+    },
+    {
+      "claim_id": "2c0d1eb9-1f84-4fd8-a943-2d43e7f02bb7",
+      "result_id": "3cd8dc25-7d0b-4b09-b731-8ee598186048"
+    },
+    {
+      "claim_id": "940b0cf1-7e87-4c34-a71b-a7377da45a0b",
+      "result_id": "afd3e788-f90d-42bb-a975-4f06348dec8a"
+    },
+    {
+      "claim_id": "a09e2506-e392-43db-9ad6-5a8cde84b4bb",
+      "result_id": "afd3e788-f90d-42bb-a975-4f06348dec8a"
+    },
+    {
+      "claim_id": "111c1d73-4377-4399-b2a8-c196c37e09c0",
+      "result_id": "afd3e788-f90d-42bb-a975-4f06348dec8a"
+    },
+    {
+      "claim_id": "37f0e55e-120f-4b70-8870-50c15faf2c42",
+      "result_id": "afd3e788-f90d-42bb-a975-4f06348dec8a"
+    },
+    {
+      "claim_id": "f8ac8faf-cd7e-4675-915e-309d150ea3a5",
+      "result_id": "afd3e788-f90d-42bb-a975-4f06348dec8a"
+    },
+    {
+      "claim_id": "86429446-59ae-4f1e-a07b-e8a5231549eb",
+      "result_id": "afd3e788-f90d-42bb-a975-4f06348dec8a"
+    },
+    {
+      "claim_id": "616ab0e9-8efa-4c93-a818-d8017d26c5c2",
+      "result_id": "afd3e788-f90d-42bb-a975-4f06348dec8a"
+    },
+    {
+      "claim_id": "1aa02aa7-efa3-44ba-a4ad-abc63aa792c7",
+      "result_id": "afd3e788-f90d-42bb-a975-4f06348dec8a"
+    },
+    {
+      "claim_id": "82d651b8-78f8-4867-955a-1f1763032ce1",
+      "result_id": "afd3e788-f90d-42bb-a975-4f06348dec8a"
+    },
+    {
+      "claim_id": "daa37acd-20fe-44cc-a7f4-03c83b69ff34",
+      "result_id": "afd3e788-f90d-42bb-a975-4f06348dec8a"
+    },
+    {
+      "claim_id": "cdfcf056-88f1-48e4-846c-7b22d4746643",
+      "result_id": "afd3e788-f90d-42bb-a975-4f06348dec8a"
+    },
+    {
+      "claim_id": "59b9ddf4-b17b-4cbf-a6c2-77ed815bc4b7",
+      "result_id": "afd3e788-f90d-42bb-a975-4f06348dec8a"
+    },
+    {
+      "claim_id": "526b11de-3ae0-48bb-a1fe-613b615a38ee",
+      "result_id": "afd3e788-f90d-42bb-a975-4f06348dec8a"
+    },
+    {
+      "claim_id": "e6f468a4-01c3-4cdd-800b-a96d39eaabe1",
+      "result_id": "afd3e788-f90d-42bb-a975-4f06348dec8a"
+    },
+    {
+      "claim_id": "b931bc88-f10a-4bc0-9d0b-9c9778f1dc48",
+      "result_id": "afd3e788-f90d-42bb-a975-4f06348dec8a"
+    },
+    {
+      "claim_id": "206426b8-a01e-4b1b-8b0d-4c142131862b",
+      "result_id": "afd3e788-f90d-42bb-a975-4f06348dec8a"
+    },
+    {
+      "claim_id": "61239ca2-e08b-4ff7-977d-6893aad430ce",
+      "result_id": "6eba13ab-ecfd-400d-b385-dbc063815ba8"
+    },
+    {
+      "claim_id": "4dc4d6b8-7112-4f3b-bde8-8c0fb9842a4f",
+      "result_id": "6eba13ab-ecfd-400d-b385-dbc063815ba8"
+    },
+    {
+      "claim_id": "02f0ea35-38bf-4021-b521-0d5bc3d81974",
+      "result_id": "6eba13ab-ecfd-400d-b385-dbc063815ba8"
+    },
+    {
+      "claim_id": "b19bc430-1f8e-445a-a322-164599ca2758",
+      "result_id": "6eba13ab-ecfd-400d-b385-dbc063815ba8"
+    },
+    {
+      "claim_id": "755a0918-68e7-4f82-8c1e-4ac8c420f285",
+      "result_id": "edee78f5-3cc1-43f1-97da-40406ed0c09f"
+    },
+    {
+      "claim_id": "5b606b59-7172-47cd-b061-ff2fdc95248f",
+      "result_id": "edee78f5-3cc1-43f1-97da-40406ed0c09f"
+    },
+    {
+      "claim_id": "72144b5a-72c4-41c6-ac91-429e4e9a38d7",
+      "result_id": "bee82289-8cd2-4043-b378-189a01b9d1b1"
+    },
+    {
+      "claim_id": "fe9fc0f6-c722-4efd-87dc-4ba3f7190543",
+      "result_id": "bee82289-8cd2-4043-b378-189a01b9d1b1"
+    },
+    {
+      "claim_id": "7f440f1d-ed17-4682-bbe0-9a831829c420",
+      "result_id": "403c740c-5b15-44fc-87c6-21dfcb18bf6f"
+    },
+    {
+      "claim_id": "a69343dd-3025-4402-bb5b-c0987201c0e4",
+      "result_id": "403c740c-5b15-44fc-87c6-21dfcb18bf6f"
+    },
+    {
+      "claim_id": "84595c7d-3e0d-4e24-8881-f8a586ddbdd0",
+      "result_id": "403c740c-5b15-44fc-87c6-21dfcb18bf6f"
+    },
+    {
+      "claim_id": "baae24ff-73d1-426d-b6ad-361c0e1effe0",
+      "result_id": "403c740c-5b15-44fc-87c6-21dfcb18bf6f"
+    },
+    {
+      "claim_id": "aa5762aa-b92d-4ac9-ba25-df624181486d",
+      "result_id": "403c740c-5b15-44fc-87c6-21dfcb18bf6f"
+    },
+    {
+      "claim_id": "9e92d279-4104-436a-9875-809f1d9982fc",
+      "result_id": "403c740c-5b15-44fc-87c6-21dfcb18bf6f"
+    },
+    {
+      "claim_id": "6171e546-9443-438a-8218-3460c3359207",
+      "result_id": "403c740c-5b15-44fc-87c6-21dfcb18bf6f"
+    },
+    {
+      "claim_id": "4d49758a-0d87-42e6-b663-72b1e7985e23",
+      "result_id": "641f8b0a-a560-446b-b1df-e31ba131ca65"
+    },
+    {
+      "claim_id": "6ffa988a-9e55-4db7-8d34-8a311908a038",
+      "result_id": "641f8b0a-a560-446b-b1df-e31ba131ca65"
+    },
+    {
+      "claim_id": "9d101f41-22b2-464b-ab82-9ea04beebf77",
+      "result_id": "5066d021-ce26-4ede-9910-6f0f0564603e"
+    },
+    {
+      "claim_id": "7f35e7fb-7163-4622-9124-a2f5c4d51062",
+      "result_id": "5066d021-ce26-4ede-9910-6f0f0564603e"
+    },
+    {
+      "claim_id": "b6c5bf2c-b740-4a4d-ae06-10c349f10448",
+      "result_id": "5066d021-ce26-4ede-9910-6f0f0564603e"
+    },
+    {
+      "claim_id": "748d9099-b469-439b-9696-b34f78afe2da",
+      "result_id": "5066d021-ce26-4ede-9910-6f0f0564603e"
+    },
+    {
+      "claim_id": "8903ba50-f143-4ab9-9169-0b3c0700e402",
+      "result_id": "5066d021-ce26-4ede-9910-6f0f0564603e"
+    },
+    {
+      "claim_id": "f909dba0-f983-476e-a202-8a6ef84152d5",
+      "result_id": "5066d021-ce26-4ede-9910-6f0f0564603e"
+    },
+    {
+      "claim_id": "98a317e2-0894-4674-908b-a4bc045bbb99",
+      "result_id": "5066d021-ce26-4ede-9910-6f0f0564603e"
+    },
+    {
+      "claim_id": "9af7b6fd-a540-49c3-9660-0c61eda5a949",
+      "result_id": "5066d021-ce26-4ede-9910-6f0f0564603e"
+    },
+    {
+      "claim_id": "c2e1d471-0f28-49ab-8bf5-d34f90fc0b37",
+      "result_id": "5066d021-ce26-4ede-9910-6f0f0564603e"
+    },
+    {
+      "claim_id": "b67f5e63-49f3-4cfa-ae45-e5884f161bdb",
+      "result_id": "5066d021-ce26-4ede-9910-6f0f0564603e"
+    },
+    {
+      "claim_id": "793a2048-6df0-4766-890b-6334a85dc0b5",
+      "result_id": "5066d021-ce26-4ede-9910-6f0f0564603e"
+    },
+    {
+      "claim_id": "4df973f7-634b-4ed1-9d2e-984110ed333b",
+      "result_id": "5066d021-ce26-4ede-9910-6f0f0564603e"
+    },
+    {
+      "claim_id": "402d8c50-4740-4a2e-ab1a-4ac26db33d14",
+      "result_id": "5066d021-ce26-4ede-9910-6f0f0564603e"
+    },
+    {
+      "claim_id": "d06476a9-ce10-4037-896a-1cdc30d58daa",
+      "result_id": "5066d021-ce26-4ede-9910-6f0f0564603e"
+    },
+    {
+      "claim_id": "ec4c79a5-abf0-42e8-a1b3-7d1ca5ebd1ff",
+      "result_id": "5066d021-ce26-4ede-9910-6f0f0564603e"
+    },
+    {
+      "claim_id": "4f4f5c55-1bb4-44f7-89f8-14b8d8647252",
+      "result_id": "5066d021-ce26-4ede-9910-6f0f0564603e"
+    },
+    {
+      "claim_id": "9cc0efe1-4f6e-4700-90fa-38daff062ffd",
+      "result_id": "5066d021-ce26-4ede-9910-6f0f0564603e"
+    },
+    {
+      "claim_id": "500eeab0-62bd-4af1-9146-7207f690d690",
+      "result_id": "5066d021-ce26-4ede-9910-6f0f0564603e"
+    },
+    {
+      "claim_id": "0641da14-cb10-44e7-886d-e422a2aaf4cd",
+      "result_id": "5066d021-ce26-4ede-9910-6f0f0564603e"
+    },
+    {
+      "claim_id": "db7cf986-bf2b-40c2-9b10-a8e9e104fdd0",
+      "result_id": "5066d021-ce26-4ede-9910-6f0f0564603e"
+    },
+    {
+      "claim_id": "7145a555-1fc2-47ee-831e-2f9719c9d65b",
+      "result_id": "5066d021-ce26-4ede-9910-6f0f0564603e"
+    },
+    {
+      "claim_id": "a3705bef-eb47-45c9-8351-4be58bd1c47c",
+      "result_id": "5066d021-ce26-4ede-9910-6f0f0564603e"
+    },
+    {
+      "claim_id": "944d6113-883f-4bae-82d8-306d6dff2ae7",
+      "result_id": "5066d021-ce26-4ede-9910-6f0f0564603e"
+    },
+    {
+      "claim_id": "216854cd-c029-4d31-b7ed-2ef746b4da6f",
+      "result_id": "5066d021-ce26-4ede-9910-6f0f0564603e"
+    },
+    {
+      "claim_id": "7fc64819-93b1-4f82-9ac4-a442003931e0",
+      "result_id": "5066d021-ce26-4ede-9910-6f0f0564603e"
+    },
+    {
+      "claim_id": "bb77142f-4d5f-4b41-95e9-796b85d01c7f",
+      "result_id": "5066d021-ce26-4ede-9910-6f0f0564603e"
+    },
+    {
+      "claim_id": "6d38cc08-a2ee-45da-9bea-4dd823b59382",
+      "result_id": "5066d021-ce26-4ede-9910-6f0f0564603e"
+    },
+    {
+      "claim_id": "76b36a1a-cea7-4860-be18-316e9bf90920",
+      "result_id": "5066d021-ce26-4ede-9910-6f0f0564603e"
+    },
+    {
+      "claim_id": "800a6d81-2a16-4eae-8a3f-f40045b1f4a4",
+      "result_id": "5066d021-ce26-4ede-9910-6f0f0564603e"
+    },
+    {
+      "claim_id": "efedb4ad-a80a-48f0-bd04-ea110d9bd8c7",
+      "result_id": "5066d021-ce26-4ede-9910-6f0f0564603e"
+    },
+    {
+      "claim_id": "5ca0e61d-f870-4cac-8cc5-f29db008b9d2",
+      "result_id": "5066d021-ce26-4ede-9910-6f0f0564603e"
+    }
+  ],
+  "comparisons": []
+}

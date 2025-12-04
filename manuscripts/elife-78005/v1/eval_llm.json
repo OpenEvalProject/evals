@@ -1,0 +1,438 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "The vertebrate retina contains approximately 100 cell types, including ~30 types of RGCs that transmit visual information to the brain via the optic nerve, forming distinct neural circuits for parallel processing of visual features.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5 represent well-established background knowledge about retinal anatomy and function, supported by multiple citations to authoritative published research. These claims provide foundational context for the study rather than novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "Ex vivo retinal preparations have limitations including inability to perform long-term recordings, unavoidable dissection artifacts, and difficulty studying neuromodulatory pathways, necessitating in vivo studies to understand retinal function under fully physiological conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C11 establish the rationale for in vivo studies through citations to published research documenting limitations of ex vivo approaches. The logical inference that in vivo studies are necessary (C11) follows directly from the documented limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Previous in vivo retinal studies were conducted primarily under anesthesia, with only a handful of awake recordings reported, leaving unclear what information the eye transmits to the brain in awake animals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C15 accurately characterize the state of the field through citations and represent a valid knowledge gap. The inference that retinal function in awake animals remains unclear (C15) is justified by the limited number of awake studies documented in C14.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Studies of downstream visual areas (dLGN and SC) show higher firing activity and faster dynamics in awake versus anesthetized animals, and optic tract recordings offer methodological advantages over direct retinal or downstream recordings by preserving retinal circuits while avoiding signal disambiguation issues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C17 are supported by citations to systematic studies. Claims C19-C20 present logical inferences about methodological advantages that are reasonable given the anatomical considerations, though these advantages have not been empirically validated in the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "The study recorded from 710 cells total (75 chronic awake, 635 acute including 207 awake, 325 isoflurane, 103 FMM), with isolated units showing triphasic waveforms consistent with axonal signals and appropriate refractory periods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C23 report basic experimental data with appropriate quality control metrics. The triphasic waveforms and interspike intervals are consistent with axonal recordings as cited (Barry, 2015), validating the recording approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Response polarity distributions were similar across conditions (20-50% ON, 10-40% ON/OFF, 20% OFF), but DS/OS cells were more prevalent under anesthesia (42-54%) than awake (17%), likely due to higher baseline firing in awake conditions affecting the normalized DS/OS index calculation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C27 present experimental observations. The explanation for the DS/OS discrepancy (C28-C29) is a reasonable inference based on the mathematical definition of the index, though alternative explanations (e.g., genuine differences in selectivity) are not fully excluded.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Baseline firing rates were significantly higher in awake mice (20\u00b127 Hz) than under anesthesia (isoflurane 2\u00b16 Hz, FMM 2\u00b14 Hz, both p<0.001), with awake ON cells showing particularly high baseline activity (up to ~100 Hz) and many exhibiting OFF-suppressive responses (36/84 cells) that encode light decrements by decreasing firing rather than light increments by increasing firing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C34 present well-documented experimental findings with appropriate statistical tests. The identification of OFF-suppressive ON cells as an emerging property of high baseline firing is supported by the data showing these responses were rare under anesthesia (3/428 cells).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Awake responses showed larger dynamic range than anesthetized responses, with greater absolute amplitude (45\u00b155 Hz vs 30\u00b131 Hz isoflurane, p<0.001) and higher sensitivity at low contrast (7\u00b113 Hz vs 4\u00b112 Hz, p<0.001), though maximum contrast sensitivity was comparable across conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C38 present experimental findings with appropriate statistical comparisons. The data consistently show enhanced dynamic range in awake conditions while revealing that the fundamental contrast sensitivity mechanism remains similar.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Significant phase shifts in responses were observed between conditions, with the smallest phase for awake (-1.9\u00b10.6 and 1.7\u00b10.6 rad) compared to isoflurane and FMM, indicating faster response dynamics in awake mice, especially compared to FMM anesthesia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C40 present experimental data with statistical analysis. The inference about faster dynamics (C41) is reasonable given that phase shifts in periodic responses directly reflect temporal delays, though the interpretation could be strengthened with additional kinetic measures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Awake cells responded faithfully to temporal frequencies from 1.875-15 Hz (47% responsive at 15 Hz), while anesthetized cells typically followed frequencies only up to 7.5 Hz with few responding at 15 Hz (isoflurane 13%, FMM 3%), indicating faster retinal output dynamics in awake animals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C48 present experimental observations with clear quantitative differences. The inference about faster dynamics (C49) is well-supported by the temporal frequency response data and consistent with the phase shift analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Ex vivo response kinetics fell between awake and anesthetized conditions, with ex vivo STAs showing longer peak latencies (64\u00b128 ms) and lower peak frequencies (4.3\u00b11.8 Hz) than awake responses but shorter latencies than anesthetized responses, and awake responses showing more uniform kinetics across cell classes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C52 present experimental comparisons with appropriate statistics. The inference about more uniform kinetics in awake conditions (C53) is supported by the reduced differences between cell classes in peak latency measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Mean firing rates during white-noise stimulation were significantly higher in awake (34.9\u00b124.6 Hz) than all other conditions (isoflurane 13.0\u00b113.1 Hz, FMM 10.9\u00b110.7 Hz, ex vivo 6.9\u00b16.6 Hz, all p<0.001), despite comparable projected light intensity between in vivo and ex vivo setups and estimated ~10-fold lower photon flux at the retina in vivo due to eye optics absorption.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C56 present experimental data with appropriate controls for stimulus conditions. The photon flux calculations (C56) are based on reasonable assumptions about eye optics, strengthening the conclusion that higher awake firing is not due to stimulus differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C57",
+      "C58"
+    ],
+    "result": "Neutral firing rates (firing at zero filter output) were significantly higher in awake (29.3\u00b122.5 Hz) than anesthetized conditions (isoflurane 9.5\u00b111.9 Hz, FMM 7.5\u00b19.3 Hz, both p<0.001), with ex vivo rates (5.5\u00b17.1 Hz) as low as anesthetized and significantly lower than awake (p<0.001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C58 present experimental findings from nonlinear gain function analysis with appropriate statistical tests. The neutral firing rate provides an important measure of baseline activity independent of stimulus-driven responses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "The sigmoid midpoint for ex vivo responses (1.6\u00b11.4) was significantly higher than in vivo responses (awake 0.8\u00b11.0, all p<0.001), suggesting more linearized in vivo responses with larger dynamic range, particularly in awake conditions (56\u00b154 Hz) compared to anesthetized (26-29 Hz) or ex vivo (12\u00b112 Hz, all p<0.001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C61 present experimental findings with appropriate statistical analysis. The inference about linearization (C60) is supported by the sigmoid midpoint data, and the dynamic range measurements provide quantitative support for enhanced response range in awake conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "In vivo responses had slightly higher information rates in bits/second (awake 7.5\u00b12.2, isoflurane 8.6\u00b15.9, FMM 7.6\u00b13.6) than ex vivo (6.2\u00b11.9, p<0.001-0.004), but lower information per spike (awake 0.3\u00b10.3 vs ex vivo 2.3\u00b11.9 bits/spike, p<0.001), indicating less efficient retinal coding in vivo than ex vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C65 present information-theoretic analysis with appropriate statistical tests. The conclusion about reduced efficiency (C65) is well-supported by the bits/spike measurements, though the interpretation depends on the specific assumptions made in the information calculation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Modeling analysis showed rate coding favored awake responses (3.4\u00b11.2 bits) over anesthetized (3.0\u00b10.8 bits, p<0.001-0.011) or ex vivo (2.4\u00b11.3 bits, p<0.001), while latency-based temporal coding for awake responses (1.9\u00b11.1 bits) was comparable to ex vivo (1.7\u00b11.3 bits, p=0.6) but lower than anesthetized (2.3-2.4 bits, p<0.001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C68 present modeling results with appropriate statistical comparisons. The analysis provides insight into coding strategies, though the conclusions depend on specific assumptions about detection thresholds and noise distributions that may not fully capture biological reality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Single-cell linear decoding performance was comparable across conditions (R=0.20-0.24), but at the population level, awake responses achieved R=0.6 with <10 cells in one-third of cases versus none for anesthetized with <20 cells, with smaller saturation constant for awake (b=8\u00b14) than anesthetized (21-23) or ex vivo (72\u00b136), indicating more linearly decodable awake population responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C72 present linear decoding analysis with appropriate quantification. The population-level differences are substantial and well-characterized by the saturation constant, though the biological relevance of linear decodability for retinal function remains unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Awake retinal responses showed three distinct features compared to anesthetized or ex vivo conditions\u2014higher firing rates, larger dynamic range, and faster response dynamics\u2014making them less efficient information-theoretically but more linearly decodable at the population level, demonstrating that retinal physiology knowledge cannot be simply translated from ex vivo to in vivo and that in vivo studies are indispensable.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C75 appropriately synthesize the experimental findings. The conclusions about the necessity of in vivo studies (C76-C77) are well-justified by the substantial differences documented across multiple measures, though some caution is warranted about generalizing from mesopic/photopic conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Baseline and evoked firing rates in awake animals were ~20 Hz higher than under anesthesia or ex vivo, consistent with high firing activity widely observed across brain areas and species in awake states, suggesting this could be a general feature of the awake brain including the retina.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C79 are supported by experimental data and multiple citations. The generalization to a brain-wide phenomenon (C80) is a reasonable inference given the cross-species and cross-area evidence, though direct mechanistic links remain to be established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "High baseline firing in awake conditions had three consequences: lower DS/OS index values by definition, faster response kinetics due to higher conductance, and altered dynamic range with emergence of OFF-suppressive ON cells (observed only at ~60 Hz baseline), which likely represent known cell types with altered properties rather than a distinct cell type.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C85 present experimental observations and mechanistic explanations supported by citations. The speculation about cell type identity (C86) is reasonable but remains unproven without additional characterization or comparison to known cell types.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Differences between in vivo and ex vivo responses may arise from physiological state differences, particularly removal of retinal pigment epithelium in ex vivo preparations affecting retinal supply, rather than from stimulus property differences which cannot explain the higher firing and faster kinetics observed in awake animals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C87-C89 present reasonable speculation about mechanisms but lack direct experimental evidence. Claim C90 provides an important control argument, but the actual mechanisms underlying in vivo/ex vivo differences remain unresolved and would require additional experiments to determine.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "The efficient coding hypothesis, supported by ex vivo data and theory, posits that the retina optimizes information transmission by using sparse coding with low spontaneous activity, achieving high efficiency and low redundancy, and explaining various retinal properties including separation into multiple cell types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C95 accurately summarize the efficient coding hypothesis and its support in the literature through appropriate citations. These claims provide important theoretical context for interpreting the study's findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "In vivo retinal characteristics challenge the efficient coding hypothesis: awake RGCs showed high baseline activity with linearized responses, many ON cells encoded decrements by suppression using more spikes for the same information, less variability in dynamics across cell classes suggests temporal coding may not be readily applicable in vivo, and linear decoders worked better with awake responses, necessitating reconsideration of retinal function in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C102 synthesize experimental findings to challenge prevailing theory. The argument is well-constructed and supported by multiple lines of evidence, though the conclusion about temporal coding (C101) may be overstated given that only one form of temporal code was tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "Energy-inefficient dense coding in the retina provides advantages including faster kinetics, wider bandwidths, and accurate signal transmission despite noisy spike trains, features beneficial for survival (e.g., predator detection); dense coding may be a general feature of early sensory processing as suggested by high baseline firing in other sensory systems, with energy costs potentially manageable given the relatively small number of retinal neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C104-C105 draw reasonable inferences from the data. However, claims C106-C108 involve substantial speculation about behavioral advantages and evolutionary trade-offs without direct evidence. The generalization to other sensory systems (C107) is supported by citations but the mechanistic connections remain unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "The retina may employ different coding principles under different light levels; while this study used high-mesopic/low-photopic conditions (~10\u00b3 R*/photoreceptor/s), ex vivo scotopic studies show high tonic firing for OFF cells (~20-50 Hz) but low firing for ON cells (<1 Hz), with ON cells responsible for light detection, suggesting sparse feature detection strategy in scotopic conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C112 are supported by appropriate citations. The inference about sparse coding in scotopic conditions (C113) is reasonable given the cited evidence, though direct in vivo scotopic measurements would strengthen this conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "Anesthetics generally lower nerve cell excitability (e.g., isoflurane acts on GABA-A receptors), making it sensible that retinal outputs were reduced and slower under anesthesia, though effects are difficult to generalize due to multiple mechanisms and complex, anesthetic- and dose-dependent effects on sensory systems (e.g., visual cortex reduced, auditory enhanced, auditory latency shortened).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C119 are supported by appropriate citations and provide important context for interpreting anesthesia effects. The acknowledgment of complexity (C116) is appropriate given the diverse and sometimes contradictory effects across sensory modalities.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "The study's findings are consistent with previous work showing anesthesia reduces activity and alters temporal processing (reduced high-frequency sensitivity, longer latencies) in SC and dLGN, with consistent findings across different anesthetics suggesting changes arise largely from the retina rather than downstream processing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C121 are supported by appropriate citations. The inference that changes originate in the retina (C122) is reasonable given the consistency across studies, though definitive proof would require simultaneous recordings at multiple levels of the visual pathway.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "Anesthesia effects on spatial properties are more complex than temporal effects: spatial processing remains intact in dLGN but SC shows lower contrast sensitivity and larger receptive fields under urethane, increased orientation selectivity under isoflurane; this study found more DS/OS cells under anesthesia than awake, potentially due to baseline firing rate differences affecting the normalized DS/OS index rather than genuine selectivity changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C123-C126 are supported by citations. The explanation for DS/OS differences (C127-C128) is plausible given the index definition, but alternative explanations (genuine changes in selectivity) cannot be fully excluded without additional analysis of raw response magnitudes.",
+    "result_type": "MINOR"
+  }
+]

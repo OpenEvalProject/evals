@@ -1,0 +1,289 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "Prior research establishes that subjective beliefs about uncertainty have idiosyncratic computational and neural substrates across individuals, yet humans successfully cooperate and share these beliefs. This creates a fundamental puzzle about how diverse internal representations of uncertainty enable successful social coordination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C7, and C8 are well-supported by multiple citations to established literature documenting inter-individual diversity in confidence representations at both behavioral and neural levels. Claims C2 and C9 regarding successful cooperation are also supported by citations. These claims establish the motivating paradox for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C20"
+    ],
+    "result": "While brain-to-brain coupling has been observed and could underlie adaptive communication of shared beliefs, existing studies remain mostly observational and lack plausible neuro-computational mechanisms explaining how interpersonal alignment arises from neural population activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C12 and C20 accurately characterize the state of the literature with appropriate citations. The authors correctly identify a gap between observational findings of brain-to-brain coupling and mechanistic understanding, which motivates their computational modeling approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "The study employed a discovery-replication design with 12 participants in study 1 and 15 in study 2 (pre-registered), using a random-dot motion task with simultaneous EEG and eye tracking, comparing isolated and social decision-making contexts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The experimental design is clearly described with appropriate sample sizes, pre-registration of study 2, and ethical approval. The use of a discovery-replication design strengthens the findings, though sample sizes are modest by social neuroscience standards (as the authors acknowledge in C86-C89).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C28",
+      "C70",
+      "C104",
+      "C105"
+    ],
+    "result": "Participants' confidence showed significant alignment with their partner's confidence (confidence matching) in both studies, and this effect was not due to random pairing as confirmed by permutation analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C28 reports significant linear regression (p<0.001 for both studies), and C104-C105 provide permutation analysis confirming the effect is specific to actual pairing. The replication across both studies strengthens this finding. The statistical approach is appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "When paired with high versus low confidence partners, participants showed no change in accuracy but exhibited significantly higher confidence and faster reaction times in the high confidence condition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C34 provide specific GLMM statistics showing no accuracy difference (p=0.92, p=0.75) but significant effects on confidence and RT (p<0.001 for both). This dissociation is replicated across both studies and represents a key behavioral finding. The statistical methods are appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C35"
+    ],
+    "result": "The observed dissociation of speed and confidence from accuracy is theoretically non-trivial because standard sequential sampling models predict that changes in confidence should be reflected in accuracy changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C35 correctly identifies the theoretical significance of the behavioral findings based on established models (Pouget et al., 2016; Sanders et al., 2016). This motivates the need for an alternative computational account.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C41",
+      "C71"
+    ],
+    "result": "Pupil size during inter-trial intervals was larger when paired with low versus high confidence partners, suggesting that participants' subjective beliefs about uncertainty were shaped by social context.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C37 reports significant pupillometry effects (p<0.01, p<0.001), but the authors acknowledge in C38-C40 that pupil dilation can reflect multiple factors (effort, surprise, arousal). While C41 states the pattern is 'consistent with' the hypothesis, the evidence is correlational and alternative explanations are not ruled out. The inference from pupil size to subjective belief (C71) requires additional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "An attractor neural network model with top-down additive input (Wx) to both accumulators captures the behavioral pattern: positive top-down drive increases both winner and loser accumulator activity, leading to faster RTs and higher confidence without changing accuracy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The model is well-grounded in established work (C42, C45) with appropriate citations. Claims C48-C51 describe the model's key mechanism and predictions, which are demonstrated through simulations (Figure 3b). The counterintuitive feature that surface area increases with positive top-down input is clearly explained.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C52"
+    ],
+    "result": "The top-down additive current model was superior to three alternative models (bound, non-decision time, and gain models) in formal model comparison.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C52 is supported by formal model comparison shown in Figure 3\u2014figure supplement 4. The authors tested plausible alternatives and used appropriate model comparison methods. However, the winning model accounts for only 30% of the data according to the pie chart, suggesting substantial variability across participants.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C53"
+    ],
+    "result": "Confidence matching emerged spontaneously in virtual dyadic simulations when two model instances with different confidence levels were coupled, with each model's confidence serving as top-down input to the other.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C53 describes a key emergent property of the model demonstrated in Figure 3d. The spontaneous emergence without parameter tuning is a strong result. However, the model assumes linear coupling (Equation 18), and while Figure 3\u2014figure supplement 8 shows robustness to quadratic coupling, other coupling functions are not explored.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "The study replicated previous findings showing centroparietal positivity (CPP) in the isolated condition, with CPP slope modulated by motion coherence and response-locked CPP waveforms converging at response time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C57 report successful replication of established CPP findings with appropriate statistics (p<0.001, p=0.01). The response-locked analysis (C57) provides additional validation. This establishes the validity of the EEG measurements before examining social effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C6"
+    ],
+    "result": "CPP slope was larger when paired with high versus low confidence partners, demonstrating that social exchange of confidence modulates neural evidence accumulation in the parietal cortex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C58 shows the effect was not significant in study 1 (p=0.15) but significant in study 2 (p<0.01). The inconsistent replication weakens the conclusion. Claim C59 interprets this as evidence for modulation of neural evidence accumulation, but the causal link is not established\u2014both CPP and confidence differ between conditions, but their relationship is correlational. The authors acknowledge this caveat in the discussion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Participants believed they were paired with human partners but were actually interacting with computer-generated partners (CGPs) tuned to their own behavior, and questionnaire results confirmed the deception was successful.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C103 describe the experimental deception and its validation. Claim C103 reports questionnaire confirmation that participants did not suspect artificial partners. This is important for interpreting the social effects, though it raises questions about ecological validity (as authors acknowledge in C90-C92).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "The study bridges decision science and communication science by providing a neural mechanism linking individual uncertainty representations to socially shared confidence expressions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C63 accurately characterize the study's contributions. The integration of computational modeling, behavioral data, pupillometry, and EEG provides converging evidence for the proposed mechanism. However, the strength of evidence varies across modalities (behavioral > modeling > pupillometry > EEG).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Different coherence levels were deliberately chosen for the two studies: study 1 included very high coherence to optimize CPP demonstration, while study 2 used peri-threshold levels to strengthen model fitting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C79 explain the rationale for different stimulus sets across studies. This is a reasonable design choice given different priorities (neural vs. computational), though it creates some inconsistency in effect sizes across studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "The study did not directly examine neural alignment between interaction partners using hyper-scanning, as participants interacted with experimenter-controlled partners and the hypotheses did not require simultaneous recording from dyads.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C82 acknowledge a limitation while justifying the design choice. This is appropriate transparency. The lack of true dyadic interaction and hyper-scanning limits conclusions about brain-to-brain coupling, though the experimental control gained is valuable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "The study balanced competing conventions from perceptual decision-making (small N, extensive training) and social neuroscience (large N, minimal training), with each participant undergoing ~4000 training trials and study 1 (N=12) showing robust effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C89 transparently discuss the sample size rationale. The extensive training (C88) and robust initial results (C89) support the adequacy of N=12 for study 1, with N=15 for replication being reasonable. However, some effects (e.g., EEG in study 1) were not significant, suggesting power limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Joint decisions were automatically assigned to the most confident choice rather than negotiated, and partner behavior was drawn from pre-specified distributions (though matched to participant's own behavior from the isolated session).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C92 describe important design features that limit ecological validity. The lack of true interactive negotiation and the algorithmic nature of partner responses are significant limitations for generalizing to natural social decision-making, as the authors acknowledge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C72"
+    ],
+    "result": "Shared and subjective uncertainty dynamically followed social information, an attractor model with social top-down input captured this behavior and demonstrated emergent social alignment in simulations, with predictions confirmed by neural data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While behavioral findings (C3) are well-supported and model simulations (C4-C5) are convincing, claim C72 that neural predictions were 'born out by the data' overstates the evidence. The EEG effect was inconsistent across studies (C58: p=0.15 in study 1, p<0.01 in study 2), and the pupillometry evidence is correlational with acknowledged confounds. The overall pattern is suggestive but not definitively confirmed.",
+    "result_type": "MAJOR"
+  }
+]

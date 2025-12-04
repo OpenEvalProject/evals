@@ -1,0 +1,249 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "A novel real-time NBD fluorescence assay was developed to monitor ATG8 lipidation dynamics. The assay demonstrates that N-termini of LC3B and GABARAP are incorporated into hydrophobic environments during conjugation with ATG7/ATG3 and subsequent lipidation, with NBD fluorescence increasing in a stepwise manner as intermediates form and lipidation occurs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C48 provide converging evidence from the NBD assay showing fluorescence increases with all components present, partial increases with intermediates, and biochemical confirmation of conjugation (C42-C43). The stepwise kinetics (C45-C47) and interpretation of hydrophobic environment incorporation (C44, C48) are well-supported by the experimental design and controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "ATG8 lipidation efficiency depends on PE concentration in liposomes, with higher efficiency in lipidation-prone conditions (50% DOPE) versus ER-like conditions (25% DOPE). The N-termini are dispensable for lipidation in both conditions, though LC3B N-terminus is required for full lipidation activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C52 are directly supported by data in Figure 1\u2014figure supplement 2 showing differential lipidation efficiency across liposome compositions and with N-terminal deletion mutants. The results are internally consistent.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C53",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Atomistic MD simulations reveal that lipidated LC3B and GABARAP adopt a cis-membrane association conformation with N-termini inserted into the membrane. Four membrane-interacting interfaces were identified: N-termini, loop 3, loop 6, and C-termini. Unlike previous coarse-grained simulations, basic residues (RRR/RKR) face the cytosol rather than associating with the membrane.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C67 describe MD simulation results showing convergence to a unique conformation (C57) with specific membrane-interacting regions (C58-C60, C63-C64). The cis-membrane association model (C65-C67) is consistently supported across multiple 1 \u03bcs trajectories. However, the simulations model single proteins on POPC membranes, which may not fully represent cellular conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Fluorescence-based liposome binding assays and FRET experiments validate that N-termini and loop 3 regions of LC3B and GABARAP associate with membranes in cis. Lipid-packing defects facilitate membrane association. Results largely agree with MD simulations except for GABARAP RKR region, which showed unexpected membrane association.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C76 provide experimental validation through NBD fluorescence increases (C68-C74) and FRET detection (C75-C76) with appropriate controls (imidazole release). The discrepancy with MD simulations for GABARAP RKR (C74, C77) is acknowledged and reasonably explained by potential conformational rearrangements with multiple proteins per liposome (C78).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "GABARAP N-terminal mutations (Nmut: M1E/K2E/E7A) reduce cis-membrane association activity as measured by NBD and FRET assays, while maintaining membrane tethering activity at levels similar to wild-type GABARAP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C81 are supported by data in Figure 4 showing reduced NBD/FRET signals for Nmut (C79-C80) but preserved tethering activity (C81). This demonstrates functional separation of cis-membrane association from trans-membrane tethering.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Mutations in loop 3 and RRR/RKR regions differentially affect LC3B and GABARAP lipidation. LC3B loop 3 and RRR mutants show impaired lipidation and conjugation. GABARAP loop 3 mutant is lipidated but shows altered N-terminal conformation, while GABARAP RKR mutant accumulates ATG3~GABARAP intermediates, indicating impaired discharge from ATG3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C89 are supported by real-time lipidation assay data in Figure 5 showing distinct phenotypes for different mutants. The interpretations (C82, C86, C88-C89) logically follow from the observed NBD fluorescence patterns and known biochemistry of the lipidation cascade.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "In Hexa KO cells, non-tagged GABARAP WT and cis-membrane association mutants (Nmut, \u03949, ARI-3E) are efficiently lipidated and fully restore degradation of p62 bodies and phospho-p62 upon starvation. In contrast, the LIR-docking mutant (YL-AA) fails to rescue p62 degradation, indicating that GABARAP N-terminus and cis-membrane insertion are dispensable for p62 body degradation but LIR-dependent cargo interaction is essential.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C99 are supported by western blot data (Figure 6A-C) and immunofluorescence (Figure 6D-E) showing efficient lipidation of all mutants except functional rescue only with WT and cis-membrane mutants but not YL-AA. This clearly separates N-terminal cis-membrane function from cargo recognition function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "3D-CLEM analysis reveals that GABARAP N-terminus and cis-membrane insertion are critical for autophagosome size regulation. GABARAP WT rescues autophagosome diameter from 290 nm (Hexa KO) to 550 nm, while cis-membrane insertion mutants (Nmut, ARI-3E) only partially rescue to 380-410 nm with <42% of WT volume. The LIR-docking mutant (YL-AA) fully rescues size, demonstrating that membrane expansion occurs independently of ATG8-cargo interaction under starvation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C109 are strongly supported by quantitative 3D-CLEM data in Figure 7 showing statistically significant differences in autophagosome diameter and volume across conditions. The double-blind randomized analysis strengthens confidence. The conclusion that membrane expansion is independent of cargo interaction (C108) is well-supported by YL-AA rescue data (C107, C142).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "The study establishes that cis-membrane association of ATG8 proteins requires lipidation and is critical for autophagosome size regulation but not cargo degradation. The N-terminal regions play critical roles in autophagic membrane expansion by associating with and inserting into the lipid bilayer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C113 represent integrative conclusions supported by the combined evidence from NBD assays (Result 1), MD simulations (Result 3), validation experiments (Result 4), and cellular rescue experiments (Results 7-8). The separation of size regulation from cargo degradation functions is particularly well-demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "The authors propose that their cis-membrane association model can be reconciled with previous trans-membrane models if ATG8 adopts distinct conformational states depending on localization and stage of phagophore growth. Membrane curvature and lipid environment may influence ATG8 conformation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C118-C122 are speculative proposals to reconcile conflicting models in the literature. While the speculation is reasonable and supported by citations showing conformational flexibility (C119), there is no direct experimental evidence in this manuscript demonstrating conformational switching or its dependence on membrane curvature/stage. This represents a hypothesis for future testing rather than a demonstrated result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "The authors speculate that membrane lipids, particularly PE and lipid-packing defects, may determine ATG8 conformation. Membrane expansion could occur through space occupation/membrane deformation or regulation of local membrane elasticity by ATG8 N-termini.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While C125 is supported by data (Figure 3D showing lipid-packing defects increase membrane association), claims C126-C129 are speculative mechanisms for how N-terminal insertion drives membrane expansion. No direct evidence is provided for membrane deformation, area increase, or elasticity changes. These represent reasonable hypotheses requiring future experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139"
+    ],
+    "result": "The study demonstrates that N-terminal cis-membrane association function is distinct from p62 recruitment function. Previous reports suggested N-termini are crucial for p62 degradation, but rescue experiments with non-tagged GABARAPs show N-terminus deletion or cis-membrane mutants fully restore p62 body degradation while LIR-docking mutants do not, revealing a distinct function solely in membrane expansion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C134-C139 are well-supported by the cellular data in Figure 6, which clearly separates N-terminal membrane function from cargo interaction. The use of non-tagged proteins (C138) is an important technical advance avoiding potential artifacts from fluorescent tags (C90-C91). The conclusion of distinct functions (C139, C144) is strongly supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145"
+    ],
+    "result": "The study addresses the debate about whether phagophore growth depends on cargo templates in bulk autophagy. Results show that the LIR-docking mutant (YL-AA) produces morphologically normal autophagosomes while cis-membrane association mutants produce smaller ones, supporting the hypothesis that autophagosome formation can be independent of cargo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C142-C145 are supported by 3D-CLEM data (Figure 7) showing YL-AA rescues size despite lacking cargo interaction capability, while cis-membrane mutants fail to rescue size. This provides strong evidence for cargo-independent autophagosome formation under starvation conditions, addressing a significant question in the field (C141).",
+    "result_type": "MAJOR"
+  }
+]

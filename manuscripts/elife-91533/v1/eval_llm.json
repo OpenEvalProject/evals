@@ -1,0 +1,135 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C19",
+      "C20",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "The authors derive that sinusoidal encoding with sinusoidal connectivity is the most noise-resilient pattern for heading integration circuits. This is established through mathematical analysis showing that (1) circuits must have circular topology and rotational symmetry, (2) noise propagation is minimized when non-encoding harmonics are set to zero, (3) using multiple harmonics decreases signal-to-noise ratio under activity constraints, and (4) simulations confirm noise variance increases linearly with active harmonics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The theoretical derivation is mathematically rigorous, proceeding logically from first principles (C11-C13) through Fourier analysis to the noise minimization result (C2, C19, C20, C52). The simulation results (C53, C54, Figure 2) provide empirical validation of the mathematical predictions. The constraint that multiple harmonics perform worse (C19, C20) is well-justified both theoretically and through analysis of decoding ambiguities.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C27",
+      "C28",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "The predicted sinusoidal connectivity pattern matches anatomical data from locust and fruit fly head direction circuits. Path counting analysis of EPG neuron connectivity shows very close agreement with sinusoidal profiles in the locust, and reasonable agreement in the fruit fly despite high variability in synapse counts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The locust data (C27, Figure 4A) shows strong agreement with the theoretical prediction. The fruit fly data (C28, Figure 4B) is noisier but still consistent with a sinusoidal pattern, though the authors acknowledge that Gaussian and von Mises distributions also fit well (Table 6). The methodological approach of using path counting (C44) and synapse counts as proxies for connectivity strength is validated by citations. The limitation regarding locust data resolution (C45) is appropriately disclosed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C46",
+      "C47"
+    ],
+    "result": "The optimal sinusoidal circuit can emerge through Hebbian plasticity without requiring precise initial connectivity. A modified Oja's rule causes weights to converge to sinusoidal values through self-consistency when sinusoidal activity is present, and this convergence occurs even from coarse initial weights and allows recovery from perturbations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The mathematical derivation (C30, Equation 20) rigorously shows convergence to sinusoidal weights under the modified Oja's rule. Simulations (C32, C33, Figure 5) demonstrate emergence from zero weights and recovery from perturbations. The analysis of harmonic competition in linear (C46) and nonlinear (C47) networks is thorough. However, the authors appropriately acknowledge (C48) that this only applies to self-sustaining activity, not to the full velocity integration circuit.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C34",
+      "C37",
+      "C40"
+    ],
+    "result": "The eight-column architecture observed across insect species can be explained by evolutionary principles favoring genetic simplicity. Powers of two are easier to generate through replication dynamics, and N=8 is the smallest power of two that produces a non-degenerate heading integration circuit.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the reasoning about replication dynamics (C34) and the mathematical analysis showing N=2 and N=4 are degenerate is sound, the evolutionary argument (C5, C37) remains speculative. The claim relies on the assumption that evolution favors genetic simplicity (C40, supported by citations), but lacks direct empirical evidence that the eight-column structure arose through this mechanism rather than other evolutionary pressures. The authors appropriately use cautious language ('hints at the possibility').",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C1",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C25",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Prior work has established that insects use sinusoidal activity patterns for head direction encoding in eight-column circuits, and that these patterns enable vector addition for navigation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims accurately summarize established knowledge from the field, supported by extensive citations to experimental (C1, C6, C7, C8) and theoretical (C9, C25, C51) work. The claims serve as appropriate background context for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C26",
+      "C55",
+      "C56"
+    ],
+    "result": "The sinusoidal activity model is an approximation of biological reality, as fruit fly data shows more concentrated activity bumps than perfect sinusoids, potentially due to calcium imaging biases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The authors appropriately acknowledge limitations in their model's correspondence to biological data (C26, C55), supported by citations to experimental studies. The recognition of potential measurement artifacts from calcium imaging (C56) demonstrates appropriate scientific caution. This transparency strengthens rather than weakens the overall work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C38",
+      "C39"
+    ],
+    "result": "The study derives an optimal noise-minimizing circuit for heading integration that matches experimental data and can be developed through biological learning rules.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These summary claims (C38, C39) accurately reflect the major findings of the manuscript, which are well-supported by the theoretical derivations, simulations, and comparison with biological data discussed in other result groups.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C41",
+      "C48"
+    ],
+    "result": "The authors acknowledge limitations: the circular topology assumption is valid only in 2D environments, and the Hebbian learning rule only applies to self-sustaining activity, not the full velocity integration circuit.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These limitations (C41, C48) are appropriately acknowledged by the authors with clear reasoning. The recognition that the theory doesn't address 3D navigation or the complete circuit for velocity integration demonstrates scientific rigor and sets appropriate boundaries for the claims.",
+    "result_type": "MINOR"
+  }
+]

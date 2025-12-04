@@ -1,0 +1,521 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Single-cell RNA-seq analysis of fate-mapped B cells from autoimmune and immunized chimeras identified four major B cell compartments (GC dark zone, GC light zone, ASCs, and MemBs) with 12,839 cells retained after quality control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C36 describe the basic single-cell RNA-seq dataset and initial clustering results. The data processing steps are clearly documented, cell numbers are specified, and the four major clusters are validated by established marker genes (Figure 1B-C). This represents standard quality control and initial analysis for single-cell studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "BCR repertoire analysis revealed clonal expansion in both conditions with clones spanning all four B cell compartments, similar GC mutational levels between conditions, though autoimmune chimeras had more DZ/LZ mutations while immunized chimeras had more ASC mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C43 are supported by paired single-cell BCR sequencing data shown in Figure 1E-F. The phylogenetic analysis demonstrates clones across compartments, and mutation analysis shows quantitative differences between conditions with appropriate statistical testing. The maximum mutation levels are comparable between conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "V gene usage analysis revealed both shared and differential patterns between autoimmune and immunized chimeras, with seven V genes shared in top 10, NP-associated genes more expanded in immunized mice, and certain V genes preferentially used in autoimmune chimeras.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C50 are supported by comprehensive V gene usage analysis (Figure 1G-H, Figure 1\u2014supplement 1C-F). The data show clear patterns of isotype diversification and V gene preferences with appropriate comparisons to naive mice. The phylogenetic relationship to the 564Igi autoantibody provides additional context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Monoclonal antibodies produced from autoimmune chimera VDJ sequences showed reactivity to multiple targets including housekeeping genes, known autoantigens (SCL-70, Sm/RNP), and single-stranded binding protein SSBP1 on HuProt arrays.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C58 describe antibody production and HuProt array screening results shown in Figure 1I. The experimental approach is clearly described and the array results identify multiple potential targets. However, these are screening results that would require validation, which is appropriately presented as 'potential binders.'",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "In the 564Igi mixed BM chimeric autoimmune model, WT B cells break tolerance, expand in spontaneous GCs, and develop into MemBs and ASCs similarly to responses to foreign antigens.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C62 represent the main conclusion from the initial characterization. This is well-supported by the comprehensive single-cell RNA-seq data showing all major B cell compartments present in both autoimmune and immunized conditions (Figure 1B-D), with similar clonal expansion patterns and developmental trajectories.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "ASCs were subdivided into seven subclusters based on Cd19 and Sdc1 expression patterns, with pseudotime analysis revealing two developmental lineages terminating in ASC_Late_1 and ASC_Late_2 clusters, observed in both conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C69 describe the ASC subclustering and pseudotime analysis supported by Figure 2A-B and Figure 2\u2014supplement 1C. The use of established ASC maturation markers (Cd19, Sdc1) to define pseudotime starting point is appropriate, and the Slingshot analysis clearly shows two terminal lineages.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "The two terminal ASC clusters show differential expression of ER stress response genes, with ASC_Late_2 having higher Xbp1 and ASC_Late_1 having higher Atf6 and Hspa5, suggesting different mechanisms for handling ER stress.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C74 are supported by gene expression data in Figure 2C. The differential expression of ER stress pathway components is clearly shown, and the inference about different mechanisms is reasonable given the established roles of these genes. Similar observations in LPS-stimulated cells (C76) provide additional support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C75",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "ASC_Late_2 had more Ig transcript reads than ASC_Late_1, and the two clusters showed differential expression of surface markers including Ptprc, Itga4, Itgb2 (higher in ASC_Late_1) and Cd28 (higher in ASC_Late_2).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75, C77-C80 are supported by quantitative data in Figure 2D-E. The Ig transcript counts show clear differences between terminal clusters, and surface marker expression patterns are documented. These differences suggest functional distinctions between the two ASC terminal states.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Gene set activity analysis revealed ASC_early_2 was characterized by proliferation markers, while ASC_Late_2 showed higher OXPHOS signature than ASC_Late_1, suggesting specific metabolic requirements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C83 are supported by AUCell analysis in Figure 2F with appropriate statistical testing (ANOVA with Tukey correction). The OXPHOS signature difference is statistically significant and the inference about metabolic requirements is reasonable given the established link between OXPHOS and antibody secretion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "ASC_Late_2 consisted mainly of IgM cells regardless of immune status, while ASC_Late_1 showed diverse isotype usage with IgG2c predominant in autoimmune mice. ASC_Late_1 accumulated more mutations than ASC_Late_2, with more mutations in immunized than autoimmune chimeras.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C88 are supported by isotype and mutation analysis in Figure 3A-B. The isotype composition differences are clear, and mutation accumulation patterns are quantified with appropriate statistical testing (Mann-Whitney). These repertoire differences complement the transcriptomic distinctions between terminal ASC states.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Extensive clonal overlap was observed across all ASC subclusters in both conditions, indicating that despite transcriptomic and repertoire differences, clones have members with potential for expansion in any cluster, with redundant V gene usage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C91 are supported by clonal intersection analysis in Figure 3C-D. The chord diagrams clearly show extensive clonal sharing across ASC subclusters, and V gene usage analysis demonstrates redundancy. This is a key finding showing that transcriptomic states don't strictly correlate with clonal identity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Four MemB subclusters were identified in both autoimmune and immunized mice, with MemB_1 and MemB_3 accumulating more mutations than MemB_2 and MemB_4, though all clusters contained some highly mutated cells. MemB_2 was predominantly IgM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C96 are supported by reclustering analysis and repertoire characterization in Figure 4A-D. The four subclusters are clearly defined, mutation patterns are quantified with statistical testing, and isotype composition is documented. The observation that less-mutated clusters still contain some highly mutated cells is important for understanding MemB heterogeneity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "IgG2c, a hallmark of inflammatory interferon-driven responses, was nearly absent in immunized mice MemBs but present in all four MemB subclusters in autoimmune chimeras.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C99 are supported by isotype analysis in Figure 4D. The differential IgG2c usage between conditions is striking and biologically meaningful, reflecting the inflammatory nature of the autoimmune response. This is an important distinction between autoimmune and foreign antigen responses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Each MemB subcluster showed distinct marker gene expression patterns: MemB_1 (Cd83, Il4i1), MemB_2 (Fcrl5, Cd72, similar to DN2/atypical MemBs), MemB_3 (S100a10, Vim, Lgals1), and MemB_4 (Fcer2a/CD23, Icosl).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C107 are supported by comprehensive marker gene analysis in Figure 4E and Figure 4\u2014supplement 1B. The marker genes are clearly documented and the comparison to published DN2 and atypical MemB signatures (C103-C104) is supported by citations. The functional implications of markers like Vim are appropriately noted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "The authors interpret MemB_1 as recent GC-derived cells (high MYC), MemB_2 as AtMemBs analogous to DN2 cells, MemB_3 as activated MemBs (high Pten-downregulated signature), and MemB_4 as T-dependent long-lived MemBs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C111 represent interpretations based on gene expression signatures shown in Figure 4\u2014supplement 1C-D. The MYC and Pten signature analyses support these interpretations, though these remain functional inferences rather than direct demonstrations. The interpretations are reasonable given the marker expression patterns and are appropriately presented as interpretations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "All MemB clusters share clones with one another in both conditions, suggesting MemBs can acquire different cluster characteristics regardless of repertoire origin, with possible circulation among clusters and similar V gene usage across subclusters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C115 are supported by clonal intersection analysis in Figure 5A-B. The extensive clonal sharing across MemB subclusters is clearly demonstrated. However, C113-C114 about 'circulation' are speculative inferences from the clonal overlap data - the data show clonal relationships but don't directly demonstrate cellular transitions or circulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "Clones across all MemB clusters can seed all ASC clusters in both conditions, with MemB_4 showing higher clonal contribution in immunized chimeras and most clones shared between MemB_3 and all ASC subclusters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C118 are supported by comprehensive clonal intersection analysis between MemB and ASC compartments in Figure 5C. The chord diagrams clearly show extensive clonal relationships across compartments, with quantitative differences between conditions. This is a key finding about the relationship between memory and effector compartments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C119",
+      "C123",
+      "C124"
+    ],
+    "result": "Flow cytometry validation using both Aicda-CreERT2-EYFP and S1pr2-CreERT2-tdTomato fate mapping confirmed the presence of FCRL5+ (MemB_2) and CD23+ (MemB_4) MemB populations in similar proportions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119, C123-C124 are supported by flow cytometry data in Figure 6B, D with appropriate FMO controls (Figure 6\u2014supplement 1A-B). The use of two independent fate-mapping systems (Aicda and S1pr2) strengthens the validation. The S1pr2 system specifically addresses concerns about non-GC-derived cells in the Aicda system.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "The authors note that Aicda expression can precede GC commitment and extrafollicular MemB formation cannot be ruled out, leading them to use S1pr2 as an alternative GC fate marker.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C122 appropriately acknowledge limitations of the Aicda fate-mapping system based on published literature (Roco et al., 2019; Lee et al., 2011; Toyama et al., 2002). The use of S1pr2 as an established GC marker (Shinnakasu et al., 2016) addresses these concerns. This represents good scientific practice in validating findings with orthogonal approaches.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "Confocal microscopy and in vivo CD45 labeling demonstrated that GC-derived FCRL5+ MemBs localize to the marginal zone and bridging channels, with significantly more i.v. labeling than CD23+ MemBs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125-C127 are supported by confocal microscopy (Figure 6E) and in vivo labeling experiments (Figure 6G) with appropriate statistical testing (t-test, p=0.0046). The validation using conventional FoB/MZB gating (Figure 6\u2014supplement 1D) confirms the efficiency of the labeling approach. This provides strong evidence for differential anatomical localization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C132"
+    ],
+    "result": "The authors speculate that MZ localization would allow FCRL5+ MemBs to quickly reactivate upon antigen exposure but also perpetuate detrimental responses to self-antigens, with capacity to contribute to pathology through preservation of self-reactive specificities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C128-C129, C132 are speculative inferences about functional consequences of the observed MZ localization. While the speculation is reasonable given the known function of the MZ in rapid antigen response, there is no direct experimental evidence in this study demonstrating reactivation kinetics or pathological contributions. These remain hypotheses requiring future testing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C130",
+      "C131"
+    ],
+    "result": "MemB_2 cells provide evidence of memory contribution to the MZ and that the GC-derived MemB compartment can contain DN2-like cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C130-C131 are supported by the combination of S1pr2 fate mapping (demonstrating GC origin), marker expression analysis (showing DN2-like phenotype), and localization data (showing MZ distribution). This represents a novel finding linking GC-derived memory cells to the MZ compartment with an atypical phenotype.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C14",
+      "C89",
+      "C112",
+      "C166"
+    ],
+    "result": "Despite transcriptomic diversity, ASC and MemB subsets maintained underlying clonal redundancy, with all subclusters sharing clonal members to varying degrees.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14, C89, C112, C166 summarize the key finding of clonal redundancy across transcriptomically distinct subsets, supported by extensive clonal intersection analyses (Figures 3C, 5A, 5C). This is a central finding of the paper with important implications for understanding B cell subset relationships and therapeutic targeting.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C15",
+      "C171"
+    ],
+    "result": "Self-reactive clones could escape subset-targeting therapy by perpetuation of self-reactivity in distinct subsets, as efforts to target any one cellular compartment may overlook shared self-antigen specificity across different niches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15, C171 represent therapeutic implications inferred from the clonal redundancy findings. While speculative regarding actual therapeutic outcomes, the inference is well-supported by the demonstrated clonal overlap across functionally and transcriptomically distinct subsets. This is an important translational insight from the basic findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158"
+    ],
+    "result": "ASC_Late_1 had lower Ig counts and OXPHOS signature than ASC_Late_2, suggesting reduced antibody secretion rate, and given the timing of analysis (~5 weeks post-tamoxifen vs ~2 week ASC lifespan), reactivated MemBs are likely the origin of most ASC_Late_1 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C154-C158 combine quantitative data (Figures 2D, 2F) with temporal reasoning about cell origins. The lower Ig counts and OXPHOS in ASC_Late_1 are well-documented. The inference about MemB origin (C158) is reasonable given the timing and mutation accumulation data, though it remains an inference rather than direct lineage tracing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C159",
+      "C160",
+      "C161"
+    ],
+    "result": "ASC_Mid_2 possesses characteristics of mature ASCs including Cxcr4 and Slpi (a marker for BM and long-lived ASCs), suggesting it could represent another terminal state beyond the two identified by pseudotime analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C159-C161 are based on marker expression data, with Slpi being an established marker for long-lived ASCs (Lam and Bhattacharya, 2018b). However, C161 is speculative - the pseudotime analysis classified this as an intermediate state, and additional evidence would be needed to definitively establish it as a terminal state. The suggestion is reasonable but requires further validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C167",
+      "C168"
+    ],
+    "result": "MemB_3 showed striking predominance in clonal overlap with ASCs of all subclusters, indicating this cluster is an activated version of all other MemB subpopulations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C167-C168 are supported by clonal intersection data (Figure 5C) and gene expression analysis showing high Pten-downregulated signature (Figure 4\u2014supplement 1D). The extensive clonal overlap with ASCs and activation signature support the interpretation that MemB_3 represents activated memory cells, though the causal relationship (activated version 'of' other MemBs) is an inference.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C139",
+      "C140"
+    ],
+    "result": "Self-reactive WT B cells mature and reach pauci-clonality through GC selection and enter all major mature B cell compartments, similar to immunized controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C139-C140 represent a major conclusion supported by the comprehensive single-cell and repertoire data showing clonal expansion, mutation accumulation, and distribution across all B cell compartments in both autoimmune and immunized conditions. This demonstrates that self-reactive responses can follow similar developmental programs as foreign antigen responses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146"
+    ],
+    "result": "IGHV 1-53 appears in multiple contexts (HIV response, FcgRIIB-deficient mice, NP response) and can be considered part of the baseline polyreactive repertoire that may be detrimental in autoimmunity but retained for rapid foreign antigen responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C141-C146 synthesize observations about IGHV 1-53 usage with published literature. The usage patterns are documented in the data, and the citations support its appearance in various contexts. The interpretation about polyreactivity and evolutionary retention (C145-C146) is reasonable speculation based on established immunological principles.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151"
+    ],
+    "result": "Mouse IGHV 1-53 is orthologous to human IGHV 1-69, and mouse IGHV 3-6 is orthologous to human IGHV 4-34, both of which are features of antibodies in autoimmune disease, with IGHV 3-6 being the most clonally used gene in autoimmune chimeras.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C147-C151 connect mouse and human V gene usage patterns through orthology relationships (supported by citations) and document IGHV 3-6 as the most used gene in autoimmune chimeras (supported by data). This provides translational relevance by linking mouse findings to human autoimmune disease.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C152",
+      "C153"
+    ],
+    "result": "Self-reactivity can be driven by predominant V genes that might initially be polyreactive but are further tailored in GCs, suggesting different ways to generate self-reactive pathogenic clones starting with common V genes but leading to more specific ones.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C152-C153 represent interpretive synthesis of the V gene usage and mutation data. The inference is supported by the observation of common V gene usage combined with mutation accumulation in GCs. However, this remains a hypothesis about pathogenic clone generation that would require additional functional studies to fully validate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R32",
+    "claim_ids": [
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138"
+    ],
+    "result": "The mixed BM chimera model addresses limitations of monogenic BCR mice by allowing pre-defined self-reactive cells to initiate autoimmunity while WT B cells compete for antigen and T cell help, providing a model to study WT B cell development in an autoimmune environment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C133-C138 describe the rationale and advantages of the experimental model. The limitations of monogenic BCR models are well-established, and the mixed chimera approach is appropriately described as addressing these limitations while acknowledging it still depends on a BCR transgene (C138). This represents appropriate contextualization of the model system.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R33",
+    "claim_ids": [
+      "C162",
+      "C163",
+      "C164",
+      "C165"
+    ],
+    "result": "The authors speculate that different MemB properties exist to allow diverse responses, with MemB_2 distributed in MZ/bridging channels for immediate surveillance and MemB_4 representing T-dependent long-lived memory requiring T cell retriggering.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C162, C165 are speculative about functional purposes, while C163-C164 are supported by localization data. The speculation about functional diversity (C162) and T-dependence (C165) are reasonable hypotheses based on marker expression and localization, but lack direct functional evidence. These represent testable hypotheses for future work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R34",
+    "claim_ids": [
+      "C169",
+      "C170"
+    ],
+    "result": "The clonal overlap between subclusters was surprising but likely provides a wider safety-net, insurance of long-lived memory, and readiness to reactivate for prospective pathogens.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C169 is a subjective statement about the authors' expectations, while C170 is speculation about the functional significance of clonal overlap. While the speculation is reasonable from an evolutionary/immunological perspective, there is no direct evidence in this study demonstrating these proposed benefits. This represents interpretation rather than demonstrated findings.",
+    "result_type": "MINOR"
+  }
+]

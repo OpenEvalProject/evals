@@ -1,0 +1,201 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C29",
+      "C30",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "The authors developed and validated a cryopreservation protocol using 10% glycerol for T. brucei that maintains high viability (>90% motility after 28 days) and causes minimal transcriptomic changes. Cryopreserved samples showed high correlation with fresh samples (Pearson's R = 0.977-0.985), with few differentially expressed genes (17 in BSF, 19 in PCF), and could be successfully integrated with fresh samples for scRNA-seq analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C54 provide comprehensive experimental validation including viability assays, correlation analyses, PCA, and differential expression analysis. The data consistently shows minimal impact of cryopreservation across multiple metrics. The recommendation to process samples immediately after thawing (C38) is appropriately based on observed delayed growth recovery (C37). Only isolated genes showed differential expression (C51-C54), supporting the conclusion of limited transcriptomic changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C5",
+      "C31",
+      "C32",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Using scRNA-seq and periodic pseudotime inference on unsynchronized PCF populations, the authors identified 1550 cell cycle regulated (CCR) genes, including 75.28% of genes previously detected by bulk RNA-seq. CCR genes were distributed across cell cycle phases: 4.53% in early G1, 29.31% in late G1, 35.20% in S phase, and 31.00% in G2/M.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C60 provide specific quantitative results supported by Figure 2F and Supplementary file 4. The high recovery rate of previously identified CCR genes (C56, 75.28%) validates the approach. The use of Cyclum for pseudotime inference and PseudotimeDE for differential expression analysis is methodologically sound. Thresholds (FDR p-value <0.01, FC >1.5) were appropriately selected based on detection of known markers (Figure 2\u2014figure supplement 2).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C5",
+      "C31",
+      "C32",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "The authors identified 1864 CCR genes in BSFs using the same scRNA-seq approach, with similar phase distribution: 4.08% in early G1, 31.55% in late G1, 36.37% in S phase, and 28.00% in G2M. This represents the first comprehensive characterization of the BSF cell cycle transcriptome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C78 provide quantitative results supported by Figure 3F and Supplementary file 5. The remarkably similar proportions of genes peaking in each phase between BSF and PCF (noted in text) adds internal consistency. The same analytical pipeline and thresholds were applied to both forms, ensuring comparability. This is the first such analysis for BSFs, making it a significant contribution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Protein validation experiments using mNeonGreen tagging of three top CCR genes (PRI1, Tb427_060036900, Tb427_110169500) confirmed cell cycle-dependent expression patterns in BSFs. Flow cytometry showed increased protein expression in S and G2M phases compared to G1, with PRI1 showing a delay between transcript peak (late G1) and protein peak (S phase).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C84 are supported by microscopy (Figure 3I) and flow cytometry data (Figure 3J). The experiments provide direct protein-level validation of transcript predictions. The observation of transcript-protein delay for PRI1 (C81) is consistent with the broader finding about transcript-protein relationships. Multiple independent clones were analyzed (Figure 3\u2014figure supplement 1), strengthening the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C34",
+      "C35",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Comparative analysis identified 1013 genes with CCR transcripts in both BSF and PCF forms, with 83.12% showing peak expression in the same cell cycle phase. These conserved CCR genes were significantly more conserved across 44 kinetoplastid proteomes (mean 41.66/44) compared to all genes (mean 18.44, p<0.0001), and 25.67% showed cell cycle defects when depleted in RIT-seq screens.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C89 are supported by Figure 4 and Supplementary file 6. The high concordance in phase timing (C86, 83.12%) indicates genuine conservation. The ortholog conservation analysis (C89) provides independent validation that these are functionally important genes. The enrichment for cell cycle defects in RIT-seq (C88) further validates functional relevance. Statistical significance is properly reported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C8",
+      "C33",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Comparison with published proteomic datasets revealed that the majority of CCR transcripts do not result in CCR protein levels, and for genes showing both CCR transcripts and proteins, 66.67% (Crozier) and 47.22% (Benz) showed transcript peaks in the phase preceding protein peaks, indicating a temporal delay between transcript and protein expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C73 integrate scRNA-seq data with two independent proteomic studies. The low overlap between CCR transcripts and proteins (C67-C69, only 14-18%) is clearly documented. The temporal delay pattern (C70-C71) is supported by Figure 2H-I. The identification of 24 genes CCR across all studies (C72-C73) provides high-confidence examples. The analysis appropriately acknowledges lower sensitivity of proteomics (C65-C66).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "BSF and PCF forms show apparent differences in the S-G2 transition, with less distinct separation of S and G2M phases in BSFs compared to PCFs in UMAP plots. This correlates with differential roles of ATR kinase between forms: ATR depletion is lethal in BSFs causing premature mitosis, while PCFs complete the S-G2 transition correctly without ATR activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C97 is directly supported by comparison of Figure 3B and Figure 2B showing less UMAP separation for BSFs. The interpretation (C98) is reasonable given the data. Claims C99-C102 cite published studies (Marin et al., 2020; Black et al., 2020; Glover et al., 2019) to provide mechanistic context. The connection between transcriptomic patterns and known ATR biology strengthens the interpretation, though the mechanistic link is correlative rather than directly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "540 genes were CCR only in PCFs and 851 only in BSFs. Form-specific BSF CCR genes included 24 glycolysis/gluconeogenesis pathway components, cyclin CYC4 (peaking in G2/M), and differentiation regulators ZC3H20 and ZFP1 (both peaking in G2/M). CYC9 was significant only in PCFs with slight G2/M increase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C96 are supported by Figure 5 and Supplementary file 7. The identification of form-specific CCR genes is based on the same statistical thresholds used for common genes. The enrichment of glycolysis genes in BSFs (C92) makes biological sense given BSF metabolism. The form-specific expression of differentiation regulators (C95-C96) is supported by citations to functional studies. The text acknowledges that threshold choices affect classification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Among cyclins, CYC6 and CYC8 show strong CCR in both forms, with CYC6 peaking at S-G2M transition (consistent with its essential role in mitosis) and CYC8 peaking in late G1. Both cyclins' transcripts are bound by RBP10, though RBP10 is not expressed in PCFs, indicating form-specific regulation mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C106 integrate scRNA-seq data with published functional studies. CYC6's expression pattern (C103) correlates with its known mitotic function (supported by multiple citations). The RBP10 binding data (C105) is from published work (Mugo and Clayton, 2017), and the absence in PCFs (C106) is from Wurst et al., 2012 and Dejung et al., 2016. The observation that matching expression patterns occur despite RBP10 absence in PCFs appropriately highlights a gap in understanding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "Similar to human cells where only 15% of CCR proteins have CCR transcripts and temporal delays occur between transcript and protein peaks, T. brucei shows analogous patterns. Stumpy BSFs upregulate hundreds of PCF-related transcripts before differentiation, but not all are detectable as proteins until after differentiation triggers are received.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C109 provide comparative context from human cells (Mahdessian et al., 2021) and trypanosome differentiation studies (multiple citations). These claims appropriately contextualize the findings within broader eukaryotic biology and trypanosome life cycle progression. The parallel between cell cycle and differentiation transcript-protein dynamics (C109) is well-supported by citations.",
+    "result_type": "MINOR"
+  }
+]

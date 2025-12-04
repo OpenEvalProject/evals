@@ -1,0 +1,2028 @@
+{
+  "submission": {
+    "id": "57cae786-18b3-4365-aa7f-7f81a5e1b3bb",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-04T03:33:24.788698Z",
+    "updated_at": "2025-12-04T03:33:24.788698Z"
+  },
+  "content": [
+    {
+      "id": "8e4dc244-eb01-4208-9262-ae6ba25d3380",
+      "submission_id": "57cae786-18b3-4365-aa7f-7f81a5e1b3bb",
+      "content_type": "manuscript",
+      "content_text": "# Mutant SF3B1 promotes malignancy in PDAC\n\n## Authors\n\n- Patrik Simmler<sup>1</sup> ([ORCID: 0000-0003-2883-275X](https://orcid.org/0000-0003-2883-275X))\n- Eleonora I Ioannidi<sup>2</sup>\n- Tamara Mengis<sup>2</sup>\n- Kim Fabiano Marquart<sup>1</sup>\n- Simran Asawa<sup>1</sup>\n- Kjong Van-Lehmann<sup>3</sup>\n- Andre Kahles<sup>3</sup>\n- Tinu Thomas<sup>3</sup>\n- Cornelia Schwerdel<sup>2</sup>\n- Nicola Aceto<sup>1</sup>\n- Gunnar R\u00e4tsch<sup>3</sup>\n- Markus Stoffel<sup>1</sup> ([ORCID: 0000-0003-1304-5817](https://orcid.org/0000-0003-1304-5817))\n- Gerald Schwank<sup>2</sup> ([ORCID: 0000-0003-0767-2953](https://orcid.org/0000-0003-0767-2953)) \u2020\n\n### Affiliations\n\n1. Department of Biology, Institute of Molecular Health Sciences, ETH Zurich Zurich Switzerland ([ROR:05a28rw58](https://ror.org/05a28rw58))\n2. Institute of Pharmacology and Toxicology, University of Zurich Zurich Switzerland ([ROR:02crff812](https://ror.org/02crff812))\n3. Department of Computer Science, Biomedical Informatics Group, ETH Zurich Zurich Switzerland ([ROR:05a28rw58](https://ror.org/05a28rw58))\n4. Swiss Institute of Bioinformatics Lausanne Switzerland ([ROR:002n09z45](https://ror.org/002n09z45))\n5. Department of Biology, ETH Zurich Zurich Switzerland ([ROR:05a28rw58](https://ror.org/05a28rw58))\n6. Biomedical Informatics Research, University Hospital Zurich Zurich Switzerland ([ROR:01462r250](https://ror.org/01462r250))\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe splicing factor SF3B1 is recurrently mutated in various tumors, including pancreatic ductal adenocarcinoma (PDAC). The impact of the hotspot mutation SF3B1K700E on the PDAC pathogenesis, however, remains elusive. Here, we demonstrate that Sf3b1K700E alone is insufficient to induce malignant transformation of the murine pancreas, but that it increases aggressiveness of PDAC if it co-occurs with mutated KRAS and p53. We further show that Sf3b1K700E already plays a role during early stages of pancreatic tumor progression and reduces the expression of TGF-\u03b21-responsive epithelial\u2013mesenchymal transition (EMT) genes. Moreover, we found that SF3B1K700E confers resistance to TGF-\u03b21-induced cell death in pancreatic organoids and cell lines, partly mediated through aberrant splicing of Map3k7. Overall, our findings demonstrate that SF3B1K700E acts as an oncogenic driver in PDAC, and suggest that it promotes the progression of early stage tumors by impeding the cellular response to tumor suppressive effects of TGF-\u03b2.\n\n## Introduction\n\nGenes involved in RNA splicing are frequently mutated in various cancer types (Yoshida et al., 2011). The splicing factor subunit 3b 1 (SF3B1) is amongst the most commonly mutated components of the splicing machinery, with high incidence in myelodysplastic syndromes (MDS; Je et al., 2013) and chronic lymphocytic leukemia (CLL; Miao et al., 2019). However, also in various solid tumors, SF3B1 is recurrently mutated, including uveal melanoma (UVM; Furney et al., 2013), breast cancer (BRCA; Fu et al., 2017; Maguire et al., 2015; Sun et al., 2020), prolactinomas (Li et al., 2020), hepatocellular carcinoma (HCC; Zhao et al., 2021), and pancreatic adenocarcinoma (PDAC; Bailey et al., 2016; Yang et al., 2021). As part of the U2 small nuclear ribonucleoprotein (U2 snRNP) SF3B1 exerts an essential function in RNA splicing by recognizing the branchpoint sequence (BPS) of nascent RNA transcripts (Wahl et al., 2009; Zhang et al., 2020). This process is crucial for the definition of the 3\u2019 splice site (3\u2019 ss) of the upstream exon-intron boundary, a prerequisite for the accurate removal of introns (Wahl et al., 2009). It is well understood that hotspot mutations in SF3B1 at HEAT repeats 5\u20139 allow the recognition of an alternative BPS, resulting in the inclusion of a short intronic region into the mature messenger RNA (mRNA; Alsafadi et al., 2016; Canbezdi et al., 2021; Darman et al., 2015; DeBoever et al., 2015; Kesarwani et al., 2017). These alternatively spliced transcripts are prone to degradation through nonsense-mediated RNA decay (NMD) (Darman et al., 2015). Several recent studies have evaluated the mechanistic contribution of genes misspliced by oncogenic SF3B1 to tumor progression. So far, missplicing of PPP2R5A was found to increase malignancy through stabilizing c-Myc (Liu et al., 2020a; Yang et al., 2021), and aberrant MAP3K7 splicing was reported to promote NF-\u03baB-driven tumorigenesis (Liu et al., 2021).\n\nDespite compelling evidence on the oncogenic role of mutated SF3B1 in hematologic malignancies, its contribution to the formation or progression of solid tumors is less understood. Since splicing deregulation has been reported as a hallmark of PDAC, with SF3B1 being recurrently mutated (Bailey et al., 2016), we aimed at elucidating the impact of the frequently occurring SF3B1K700E mutation to the pathogenesis of this tumor type. We demonstrate that Sf3b1K700E increases malignancy in a mouse model for PDAC and decreases the sensitivity to TGF-\u03b2-responsive EMT genes. Experiments in pancreatic organoids and cell lines further provide evidence that SF3B1K700E protects from TGF-\u03b2-induced cell death and that TGF-\u03b2-resistance is partly mediated through missplicing of Map3k7. Together, our work suggests that SF3B1K700E exerts its oncogenic role in PDAC by dampening the tumor-suppressive effect of TGF-\u03b2.\n\n## Results\n\n### SF3B1K700E is a tumor driver during early stages of PDAC formation\n\nRNA processing has been previously identified as a hallmark of pancreatic cancer in the published Pancreatic Cancer Australian (PACA-AU) cohort (Bailey et al., 2016). Validating these findings, we found that genes encoding for the splice factors RBM10, SF3B1, and U2AF1 are also frequently mutated in the Pancreatic Cancer Canadian (PACA-CA) cohort (Figure 1\u2014figure supplement 1A). In accordance with its described function as a tumor suppressor (Hern\u00e1ndez et al., 2016), 56% of the mutations found in RBM10 lead to a truncated protein. Conversely, in SF3B1 and U2AF1 the majority of mutations were missense mutations that occurred at hotspot sites, indicating a neomorphic function of the mutated proteins. Like in other cancer types, also in PDAC the most frequently found mutation in SF3B1 led to a lysine (K) to glutamic acid (E) change at position 700 (SF3B1K700E; Figure 1\u2014figure supplement 1B). Therefore, we experimentally tested if the SF3B1K700E mutation contributes to PDAC malignancy by generating a mouse model where the Sf3b1K700E mutation is specifically activated in the pancreas using Ptf1a-Cre (Figure 1A, Figure 1\u2014figure supplement 1C). First, we tested if Sf3b1K700E/+ alone is sufficient to induce PDAC formation. However, heterozygous activation of the Sf3b1K700E allele did not have any effect on survival of mice or weight of the pancreas after 300 days (Figure 1B and C). Furthermore, assessing the pancreata histologically for two prognostic markers for PDAC, Cytokeratine-19 (CK19) and Mucin 5AC (MUC5AC), revealed no difference to wild type control mice (CK19 was restricted to pancreatic ducts and MUC5AC was not expressed; Figure 1\u2014figure supplement 1D, E). Next, we assessed if the K700E mutation increases aggressiveness of PDAC, and crossed the Sf3b1K700E allele into the Ptf1a-Cre; KrasG12D/+; Trp53fl/fl (KPC) mouse model, which is known to induce PDAC within 2\u20133 months (Bardeesy et al., 2006a; Hingorani et al., 2005; Marino et al., 2000). Importantly, KPC-Sf3b1K700E/+ animals displayed a significantly shorter survival (mean survival 57 days vs. 64 days), and an increased tumor size compared to KPC mice at the age of 9 weeks (Figure 1D\u2013F). However, since at this timepoint similar amounts of tissue fibrosis and CK19 positive cells were observed in Sf3b1K700E/+ mutant vs. Sf3b1+/+ KPC tumors (Figure 1\u2014figure supplement 1F\u2013I), we next assessed if SF3B1K700E already promotes malignancy at early stages of tumorigenesis. Indeed, when we analyzed pancreata of 5-week-old mice, already 67% of KPC-Sf3b1K700E/+ mice vs. 25% of KPC mice developed PDAC. Moreover, we observed an increase in acinar-to-ductal metaplasia (ADM) formation and in the number of CK19 and MUC5AC positive cells, and a reduction in \u00df-amylase staining (Figure 1G\u2013J, Figure 1\u2014figure supplement 1J, K). Further supporting that SF3B1K700E already plays a role in early stages of carcinogenesis, Sf3b1K700E/+ also had an effect on tumor malignancy when introduced into KrasG12D/+ (KC) mice, which is a model for pre-cancerous pancreatic neoplasms with sporadic PDAC formation after a prolonged latency period (Hingorani et al., 2005). At 43 weeks of age, the area of neoplastic pancreas tissue was increased, and in 64% of KC-Sf3b1K700E/+ mice vs. 10% of KC mice the lesions had already progressed to PDAC (Figure 1L; Figure 1\u2014figure supplement 1L). In addition, the time of disease-free survival was significantly shortened in KC-Sf3b1K700E/+ mice vs. KC mice (Figure 1K). Finally, in a model for advanced cancer, where KPC and KPC-Sf3b1K700E cells were harvested from fully developed PDAC tumors and expanded in vitro before being orthotopically transplanted, we did not observe differences in tumor growth (Figure 1\u2014figure supplement 1M, N). Together, our data demonstrate that the SF3B1K700E contributes to PDAC malignancy by accelerating the formation of precursor lesions.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/80683/elife-80683-fig1-v3.jpg)\n\n**Figure 1.:** (A) Schematic overview of the Sf3b1K700E/+ knockin model. Arrows indicate direction of the translatable code of the gene. An A to G conversion at base position 2098, induced by Cre-recombination, results in a lysine to glutamic acid mutation at amino acid position 700 of the protein. (B) Survival of WT and Sf3b1K700E/+ mice followed over 300 days (n=8). (C) Pancreas weight of WT and Sf3b1K700E/+ mice at 300 days of age (3 males and 3 females for each genotype). Two-tailed unpaired t-test was used to compute the indicated p-value. (D) Representative photographs of WT, KPC, and KPC-Sf3b1K700E/+ pancreata of mice 9 weeks old mice. (E) Survival of KPC and KPC-Sf3b1K700E/+ mice, p-value was determined by Log-rank (Mantel-Cox) testing. (F) Pancreatic weight of KPC and KPC-Sf3b1K700E/+ mice at 9 weeks of age. Two-tailed unpaired t-test was used to compute the indicated p-value. (G) Representative micrograph images of H&E, MUC5AC, \u03b2-amylase and CK19 staining of KPC and KPC-Sf3b1K700E/+ pancreata of 5-week-old mice. Scale bar is 50 \u03bcM (H&E) or 100 \u03bcM (IF). (H) Quantification of \u03b2-amylase (H), MUC5AC (I) and CK19 (J) staining shown in (G). Per specimen, the average value of 5 random microscopy fields is displayed, a two-tailed unpaired t-test was used to compute the indicated p-value. Error bar represents standard error of the mean (SEM). (K) Survival of KrasG12D/+ and KrasG12D/+; Sf3b1K700E/+ mice. p-Value was determined by Log-rank (Mantel-Cox) testing. (L) Percentage of mice at 43 weeks of the indicated genotypes showing PanINs (blue) or PanINs and PDAC formation (red). p-Value indicates significance of the difference in PDAC formation, computed by Chi-square test.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/80683/elife-80683-fig1-figsupp1-v3.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Incidence of mutations in splicing factors in PDAC patients derived from the ICGC database (PACA-AU, n=391 and PACA-CA, n=268). (B) Incidence of SF3B1 missense mutations in PDAC patients derived from PACA-AU and PACA-CA. (C) Representative Sanger-sequencing results of the Sf3b1K700E/+ mutation (T>C) of cDNA isolated from pancreata at 43 weeks of age of Ptf1a-Cre (WT) or Ptf1a-Cre; Sf3b1K700E/+ (Sf3b1K700E/+) mice. (D) Representative micrograph images of CK19 staining of WT and Sf3b1K700E/+ pancreata of 43-week-old mice. Scale bar is 100 \u03bcM. (E) Quantification of \u03b2-amylase staining. Per specimen, the average value of 5 random microscopy fields is displayed, a two-tailed unpaired t-test was used to compute the indicated p-value. (F) Representative micrograph images of CK19 staining of KPC and KPC-Sf3b1K700E/+ pancreata of 9-week-old mice. Scale bar is 100 \u03bcM. (G) Quantification of CK19 staining of KPC and KPC-Sf3b1K700E/+ pancreata of 9-week-old mice. Per specimen, the average value of 5 random microscopy fields is displayed, a two-tailed unpaired t-test was used to compute the indicated p-value. (H) Representative micrograph images of Masson Goldner staining of KPC and KPC-Sf3b1K700E/+ pancreata of 9-week-old mice. Scale bar is 100 \u03bcM. (I) Quantification of collagen positive area (Masson Goldner staining) of KPC and KPC-Sf3b1K700E/+ pancreata of 9-week-old mice. Per specimen, the average value of 5 random microscopy fields is displayed, a two-tailed unpaired t-test was used to compute the indicated p-value. (J) Representative micrograph images of H&E staining of KPC and KPC-Sf3b1K700E/+ pancreata of 5-week-old mice. Scale bar is 50 \u03bcM. (K) Quantification of ADM structures of KPC and KPC-Sf3b1K700E/+ pancreata of 5-week-old mice. Per specimen, the average value of 5 microscopy fields of areas without or with minimal PanIN formation is displayed, a two-tailed unpaired t-test was used to compute the indicated p-value. Error bar represents SEM. (L) Affected area (including PanINs and PDAC) of WT, KrasG12D/+ and KrasG12D/+; Sf3b1K700E/+ pancreata at 43 weeks of age. Mann-Whitney test was used to compute the indicated p-value. (M\u2013N) Photographs (M) and weight (N) of pancreata 2 weeks after orthotopic transplantation of KPC and KPC-Sf3b1K700E/+ cells. Scale bar is 1 cm.\n\n### SF3B1K700E reduces expression of EMT genes in pancreatic tumors\n\nIn order to elucidate the functional impact of SF3B1K700E on the transcriptome, we isolated cancer cells of mouse tumors by fluorescence-activated cell sorting (FACS) of Epithelial cell adhesion molecule (EpCAM) positive cells and performed RNA-sequencing (RNA-seq) (Supplementary file 1). High purity of isolated tumor cells was confirmed by the absence of sequencing reads for Trp53 exons 2\u201310, which are excised via Cre-recombination specifically in tumor cells (Figure 2\u2014figure supplement 1A), and by the presence of the Sf3b1K700E mutation in 38% of the transcripts (Figure 1D). Principal component analysis separated the sequenced replicates (3 KPC and 4 KPC-Sf3b1K700E/+ tumors) according to the genotype, indicating a major impact of the K700E mutation on the transcriptome (Figure 2\u2014figure supplement 1B).\n\nWe next performed gene set enrichment analysis (GSEA), which revealed IFN-\u03b1-response as the most significantly enriched pathway in KPC-Sf3b1K700E/+ tumor cells (Figure 2\u2014figure supplement 1C). This result is in line with a previous study, which found that aberrant splicing caused by SF3B1 inhibition or oncogenic SF3B1 mutations induces an IFN-\u03b1-response through retinoic acid-inducible gene I (RIG-I) mediated recognition of cytosolic aberrant RNA-species (Chang et al., 2021). Interestingly, epithelial-mesenchymal transition (EMT) emerged as the most significantly attenuated gene set in KPC-Sf3b1K700E/+ cells (Figure 2A and B, Figure 2\u2014figure supplement 1C). We first confirmed downregulation of the most significantly depleted gene of the EMT gene set, the glycoprotein Tenascin-C (Tnc), by qPCR on additional KPC-Sf3b1K700E/+ tumor samples (Figure 2C) and by histology in KPC-Sf3b1K700E/+ PDAC sections (Figure 2D and E). Next, we assessed if the reduction of EMT genes was induced cell-autonomously by the Sf3b1K700E/+ mutation, or if it was an indirect consequence of the altered micro-environment in Sf3b1K700E KPC tumors. We therefore compared the expression of the 15 most significantly depleted EMT genes (Figure 2B) in vitro in Sf3b1K700E vs. Sf3b1 WT KPC pancreatic organoids. Importantly, 71% of the analysed genes were significantly reduced in KPC-Sf3b1K700E/+ vs. KPC organoids, with none of the genes showing a trend towards elevated expression (Figure 2F). To rule out that differences in EMT gene expression could be a consequence of differences in the tumor stage between Sf3b1K700E versus Sf3b1 WT KPC tumors, we next established non-cancerous pancreatic organoids from LSL-KrasG12D/+; Trp53fl/fl; Sf3b1flK700E/+ or Sf3b1+/+ and LSL-KrasG12D/+; Trp53fl/fl mice and induced recombination in vitro through lentiviral Cre transduction. Importantly, also in this experimental setup 55% of the analysed EMT genes were significantly downregulated in Sf3b1K700E vs. Sf3b1 WT organoids, with only one of the analysed genes showing a minor trend for elevated expression (Figure 2\u2014figure supplement 1D). Together, these data indicate that Sf3b1K700E mediates downregulation of EMT-related genes in PDAC a cell autonomous manner.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/80683/elife-80683-fig2-v3.jpg)\n\n**Figure 2.:** (A) Gene-set enrichment analysis (GSEA) enrichment plot of epithelial-mesenchymal transition (EMT), representing the most deregulated pathway of the GSEA-Hallmark pathways when comparing KPC (n=3) and KPC-Sf3b1K700E/+ (n=4) sorted tumor cells. (B) Top 15 of downregulated genes of the GSEA-EMT gene list in sorted KPC-Sf3b1K700E/+ cells (FDR < 0.05, logCPM >1). (C) Tnc expression in KPC (n=7) and KPC-Sf3b1K700E/+ (n=7) tumors, assessed by RT-qPCR. Error bar represent SEM. Two-tailed unpaired t-test was used to compute the indicated p-value. (D) Representative Immunofluorescence staining of CK19 (red) and TNC (green) in murine PDAC samples, counterstained with DAPI (blue). Scale bar is 50 \u03bcm. (E) Quantification of TNC staining in KPC (n=6) and KPC-Sf3b1K700E/+ (n=6) tumors. The averaged area of TNC staining in three randomly chosen fields per tumor specimen was compared by a two-tailed unpaired t-test. (F) The expression of the EMT genes displayed in (B) was assessed by RT-qPCR in tumor cells (KPC, n=11 and KPC-Sf3b1K700E/+ n=11) after one passage of ex-vivo culture. For analysis, Ct-values of the indicated genes were normalized to Actb and a two-tailed unpaired t-test was used to compute the indicated p-values. (G) Representative micrographs of KPC (n=3) and KPC-Sf3b1K700E/+ (n=3) cancer organoid lines treated with TGF-\u03b21 (10 ng/ml) for 48 hr. Matrigel was detached prior to staining with crystal violet, allowing quantification of cells migrated through the matrigel matrix and attached at the cell culture plate. Scale bar is 1 mm (panel above) or 100 \u03bcm (panel below). (H) Quantification of micrographs shown in (G). The fraction of attached organoids was calculated by dividing the number of attached organoids by the number of total organoids contained in the matrigel dome. The experiment was performed independently three times for every cell line, the average of all replicates is shown. Error bar represents SEM. Two-tailed unpaired t-test was used to compute the indicated p-value. (I) Representative micrographs of wound healing assay of PANC-1 WT and PANC-1 SF3B1K700E/+ cells pre-treated with TGF-\u03b21 (10 ng/ml) for 24 hours at the indicated time points after performing the scratch. Scale bar is 100 \u03bcm. (J) Quantification of wound healing assay of PANC-1 WT and PANC-1 SF3B1K700E/+ cells, displaying the ratio of wound-closure of cells treated with TGF-\u03b21 or without (Ctrl). The experiment was independently performed three times. Error bar represents standard deviation (SD). A two-tailed unpaired t-test was used to compute the indicated p-values.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/80683/elife-80683-fig2-figsupp1-v3.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Integrated genome viewer (IGV) displaying RNA-seq reads of Trp53 of sorted KPC and KPC-Sf3b1K700E/+ cells. (B) Principal component analysis showing the variance in two dimensions in relation to the genotypes of the sorted tumor cells (Wildtype = KPC, K700E=KPC-Sf3b1K700E/+). (C) Results of GSEA analysis, displaying most enriched (top) and depleted (bottom) GSEA-Hallmark pathways in KPC-Sf3b1K700E/+ animals. (D) RT-qPCR analysis of EMT genes of KPC (n=3) and KPC-Sf3b1K700E/+ (n=3) in vitro activated cancer cell lines. The experiment was performed independently four times for every cell line, the average of all replicates is shown. Error bar represent SEM. Col3a1, Sfrp1, Igfbp4, Col1a2, Mmp2, and Lama1 were not detected and therefore excluded from analysis (see methods for details). Two-tailed unpaired t-test was used to compute the indicated p-values. (E, F) RT-qPCR analysis of EMT genes displayed in Figure 2B in three different KPC cell lines treated with TGF-\u03b21 (10 ng/ml) (E) or TNF-\u03b1 (100 ng/ml) (F) for 24 hr. The experiment was performed independently three times for every cell line. Error bar represent SEM. Col3a1, Sfrp1, Igfbp4, Col1a2, Mmp2, and Lama1 were not detected and therefore excluded from analysis (see methods for details). (G) RT-qPCR analysis of EMT genes of KPC (n=3) and KPC-Sf3b1K700E/+ (n=3) in vitro activated cancer cell lines treated with TGF-\u03b21 (10 ng/ml) for 24 hr. The experiment was performed independently four times for every cell line, the average of all replicates and SEM is shown.\n\n### SF3B1K700E confers resistance to TGF-\u03b21-induced apoptosis in organoids and cell lines\n\nThe two major EMT-promoting cytokines are TNF-\u03b1 and TGF-\u03b2 (Bulle and Lim, 2020). We therefore determined if the EMT genes that are most significantly downregulated by Sf3b1K700E in KPC tumours are induced by TNF-\u03b1 or TGF-\u03b2. Importantly, we found that 80% of the analysed genes were strongly induced by TGF-\u03b2 in tumour derived KPC cells (Figure 2\u2014figure supplement 1E), whereas TNF-\u03b1 significantly upregulated only 20% of these genes (Figure 2\u2014figure supplement 1F). Furthermore, we observed that in vitro induced Sf3b1K700E KPC cells fail or only partially induce 6 of the 9 assessed EMT genes when stimulated with TGF-\u03b2 (Figure 2\u2014figure supplement 1G). In line with these results, in vitro induced Sf3b1K700E KPC organoids exhibit a sixfold decrease in matrigel invasion compared to KPC control organoids when stimulated with TGF-\u03b2 (Figure 2G and H). Moreover, human PANC-1 cells expressing SF3B1K700E display a reduced migratory rate compared to control PANC-1 cells expressing wildtype SF3B1 in a wound healing assay upon TGF-\u03b2 stimulation (Figure 2I and J).\n\nIn pancreatic lesions TGF-\u03b2 induces EMT, followed by apoptosis of the affected cells in a process termed lethal EMT (David et al., 2016). This prompted us to speculate that SF3B1K700E could drive PDAC progression by reducing sensitivity of epithelial cells to TGF-\u03b2-mediated apoptosis. Performing immunofluorescence staining for cleaved caspase 3 in KPC tumors, we first confirmed that the majority of apoptotic cells reside in the lumen of PanINs (Figure 3\u2014figure supplement 1A, B), and that these cells are negative for the epithelial marker E-cadherin and positive for the mesenchymal marker Fibronectin-1 (Figure 3\u2014figure supplement 1C; Hruban et al., 2006). We then analysed Sf3b1K700E tumors by immunofluorescence staining. In line with our hypothesis, we observed a reduction in luminally extruded cells and a reduction in cleaved caspase 3-positive cells (CC3, Figure 3A and B, Figure 3\u2014figure supplement 1D). To further analyse the impact of Sf3b1K700E on the tumor suppressive effect of TGF-\u03b2, we exposed Sf3b1 WT and Sf3b1K700E KPC tumor organoids to TGF-\u03b21. We again observed reduced cleaved caspase 3 and 7 activity in Sf3b1 mutant organoids, and a greatly increased survival rate (72% vs 17% surviving organoids, Figure 3C\u2013E). Since results from our mouse models indicate that the Sf3b1K700E mutation already plays a role during early stages of carcinogenesis (Figure 1G\u2013L, Figure 1\u2014figure supplement 1G), and the tumor-suppressing effect of TGF-\u03b2 is most prominent on pre-cancerous epithelial cells (Massagu\u00e9, 2008), we additionally established organoid lines with- and without Sf3b1K700E from non-cancerous mouse pancreata. While Sf3b1K700E led to slightly reduced proliferation without supplementation of TGF-\u03b21 (Figure 3\u2014figure supplement 1E), treatment with TGF-\u03b21 led to significantly lower caspase 3 and 7 activity in Sf3b1K700E/+ vs. wildtype organoids and to significantly enhanced survival (77% vs 3%) (Figure 3F\u2013H). Likewise, also in KrasG12D/+ organoids, SF3B1K700E led to increased survival in the presence of TGF-\u03b21 (Figure 3\u2014figure supplement 1F). Finally, exposure to low levels (1 ng/ml and 2 ng/ml) of TGF-\u03b21 also allowed long-term expansion of Sf3b1K700E/+ organoids (analysed for over 120 days), while the number of Sf3b1 WT organoids rapidly declined within the first 15 days (Figure 3I, Figure 3\u2014figure supplement 1G, H).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/80683/elife-80683-fig3-v3.jpg)\n\n**Figure 3.:** (A) Representative microscopy images of E-Cadherin (green) and CC3 (red) in murine PDAC samples. Scale bar is 50 \u03bcm. (B) Quantification of CC3 positive cells in KPC (n=8) and KPC-Sf3b1K700E/+ (n=7) tumor samples. The average number of CC3 positive cells of 5 microscopic fields is plotted, a two-tailed unpaired t-test was used to compute the indicated p-value. (C) Immunofluorescence staining of E-Cadherin (green) and Cleaved Caspase 3 (CC3, red) in WT and Sf3b1K700E/+ organoids exposed to TGF-\u03b21 (10 ng/ml) for 12 hr. CC3-positive cells are highlighted by white dashed lines. Scale bar is 100 \u03bcm. (D) Quantification of Cleaved Caspase 3 and 7 (CC3/7) activity measured by Caspase-Glo assay of KPC (n=3) and KPC-Sf3b1K700E/+ (n=4) in vitro activated cancer cell lines treated with TGF-\u03b21 (10 ng/ml) for 24 hr. The experiment was repeated independently twice for every cell line, the average of the replicates is shown, error bar represents SEM. Two-tailed unpaired t-test was used to compute the indicated p-value. (E) Quantification of viable organoids of the indicated genotype exposed to 10 ng/ml TGF-\u03b21 for 48 hr, normalized to organoid numbers of untreated control samples. Each data point shows a different organoid line. For each organoid line, the experiment was independently performed three times, the average of replicates and SEM is plotted. Two-tailed unpaired t-test was used to compute the indicated p-value. (F) Representative microscopy images of WT and Sf3b1K700E/+ organoids exposed to 10 ng/ml TGF-\u03b21 for 48 hr. Scale bar is 500 \u03bcM. (G) Quantification of CC3/7 in WT and Sf3b1K700E/+ organoids exposed to 10 ng/ml TGF-\u03b21 for 48 hr. The experiment was repeated independently four times, error bar represents SEM. Two-tailed unpaired t-test was used to compute the indicated p-values. (H) Quantification of viable organoids of the indicated genotype exposed to 10 ng/ml TGF-\u03b21 for 48 hr, normalized to organoid numbers of untreated control samples. Each data point shows a different organoid line. For each organoid line, the experiment was independently performed three times, the average of replicates and SEM is plotted. Two-tailed unpaired t-test was used to compute the indicated p-values. (I) Organoid count of organoids cultured in medium containing 1 ng/ml TGF-\u03b21 for up to 120 days. One organoid line per genotype was used, the experiment was repeated three times independently. (J) Viability of the human pancreatic duct cell line H6c7 overexpressing wildtype or mutated SF3B1 after 72 hr of exposure to 10 ng/ml TGF-\u03b21 assessed by crystal violet staining. The optical density of TGF-\u03b21-treated cells was normalized to untreated control cells. The experiment was independently performed three times, error bar represents SD. A two-tailed unpaired t-test was used to compute the indicated p-value.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/80683/elife-80683-fig3-figsupp1-v3.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Representative microscopy images of CC3 (red) in KPC tumor samples. Scale bar is 50 \u03bcm. (B) Quantification of CC3 positive cells according to location (inside of PanIN lumen or outside of lumen) in 6 KPC tumor samples. (C) Representative microscopy images of FN1 (green) in murine PDAC. Scale bar is 50 \u03bcm. (D) Blinded quantification of luminal necrosis in KPC (n=5) and KPC-Sf3b1K700E/+ (n=6) tumor samples. The average number of necrotic cells per PanIN lesion is plotted, two-tailed unpaired t-test was used to compute the indicated p-value. (E) Proliferation of pancreatic ductal organoids derived from WT and Sf3b1K700E/+ mice without TGF-\u03b21 supplementation. Error bar represent SEM. Two-tailed unpaired t-test was used to compute the indicated p-value. (F) Organoid count of organoids of the indicated genotypes exposed to 10 ng/ml TGF-\u03b21 for 48 hr. Error bar represent SEM. Two-tailed unpaired t-test was used to compute the indicated p-value. (G) Organoid count of organoids cultured in medium containing 2 ng/ml TGF-\u03b21 for the indicated period of time. One organoid line for each genotype was used, the experiment was independently performed twice. Error bar represent SEM. (H) Representative microscopy images of WT and Sf3b1K700E/+ organoids exposed to 1, 2, or 5 ng/ml TGF-\u03b21 at the indicated number of passages. Scale bar is 500 \u03bcM. (I) Viability of indicated cell lines overexpressing wildtype or mutated SF3B1 after 72 hr of exposure to 10 ng/ml TGF-\u03b21. The experiment was independently performed twice, error bar shows SD. A two-tailed unpaired t-test was used to compute indicated p-values (J) Normalized growth of the pancreatic duct cell line H6c7 overexpressing SF3B1-WT or SF3B1-K700E after 4 days of culture in normal growth medium. The experiment was independently performed twice, error bar shows SD. A two-tailed unpaired t-test was used to compute indicated p-value.\n\nTo assess if reduced sensitivity to TGF-\u03b2 is also observed in human pancreas cells containing the SF3B1K700E mutation, we stably overexpressed either wildtype or mutated SF3B1 in the human pancreatic duct cell line H6c7. This cell line is derived from healthy pancreatic tissue, which unlike all tested human PDAC-derived cell lines (BxPC-3, Mia PaCa-2, PANC-1, and PSN-1) is still partially responsive to the growth-suppressive effect of TGF-\u03b2 signalling (Figure 3J, Figure 3\u2014figure supplement 1I). In line with our results from murine PDAC, overexpression of mutant SF3B1K700E resulted in an increased viability upon TGF-\u03b21 exposure compared to overexpression of wildtype SF3B1 (Figure 3J), while no effect of SF3B1K700E on proliferation was observed in absence of TGF-\u03b21 treatment in human pancreatic duct cells and PDAC cell lines (Figure 3\u2014figure supplement 1J).\n\n### SF3B1K700E reduces TGF-\u03b2 sensitivity through Map3k7 missplicing in organoids and cell lines\n\nTo identify how SF3B1K700E could mediate the observed TGF-\u03b2 resistance in pancreatic cells, we next assessed the impact of the mutation on RNA-splicing. By analysing RNA-seq data from sorted KPC vs. KPC-Sf3b1K700E/+ tumor cells we predominantly identified alternative 3\u2019 splice events (Figure 4A, Supplementary file 2), with cryptic 3\u2019 ss showing an upstream adenosine enrichment and a less pronounced polypyrimidine tract most frequently located 8\u201314 bases upstream of the canonical 3\u2019 ss (Figure 4B and C). These findings are in accordance with previous splice-analyses performed in various murine SF3B1 mutant tissues (Liu et al., 2021; Mupo et al., 2017; Obeng et al., 2016; Yin et al., 2019). Next, we sought to determine which of the identified SF3B1K700E-dependent alternative splice events are conserved between mice and humans. Due to limited publicly available RNA-seq datasets in human PDAC, we analysed a pan-cancer dataset containing samples of 32 different cancer types. In agreement with previous studies, we found that also in human cancers the SF3B1K700E hotspot mutation leads to a predominant use of cryptic 3\u2019 ss (Figure 4\u2014figure supplement 1A, B, Supplementary file 2; Alsafadi et al., 2016; DeBoever et al., 2015; Kesarwani et al., 2017; Tang et al., 2020; Wang et al., 2016). Importantly, we further identified 11 genes that contained an alternative 3\u2019 splice-event linked to SF3B1K700E in human tumors as well as in KPC mice (Figure 4D). Of those genes, MAP3K7 (formerly known as TGF-\u03b2 activated kinase 1/TAK1) in particular raised our attention. It is a well-described effector of cytokine-signalling that mediates non-canonical TGF-\u03b2 signalling (Kim and Choi, 2012), and it was recently shown to induce EMT and apoptosis in TGF-\u03b2-stimulated human mammary cells (Tripathi et al., 2019). Using targeted RNA-seq, we discovered that one third of Map3k7 transcripts were misspliced in pancreata of Sf3b1K700E/+ and KPC-Sf3b1K700E/+ mice (Figure 4E and F, Figure 4\u2014figure supplement 1C). Confirming inter-species conservation of this alternative splice-event, MAP3K7 was also misspliced in H6c7 cells and human PDAC cell lines overexpressing SF3B1K700E (Figure 4F, Figure 4\u2014figure supplement 1D). Notably, when we further assessed SF3B1K700E dependent alternative splicing of Ppp2r5a, which was reported to impair apoptosis via post-translational modification of BCL2 in leukaemia (Liu et al., 2020a), we did not observe significant alternative 3\u2019ss usage or mRNA expression of Ppp2r5a in KPC-Sf3b1K700E tumor cells (Figure 4\u2014figure supplement 1E, F). This observation indicates tissue-specificity of Ppp2r5a missplicing.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/80683/elife-80683-fig4-v3.jpg)\n\n**Figure 4.:** (A) Summary of alternative splice events detected in KPC-Sf3b1K700E/+ sorted tumor cells (PSI > 0.1, p<0.01). (B) Histogram displaying the distance of cryptic 3\u2019splice-site (ss) from the adjacent canonical 3\u2019ss in sorted KPC-Sf3b1K700E/+ tumor cells on a logarithmic scale. (C) Consensus 3\u2019 ss motif in proximity of the canonical (top) and the cryptic (bottom) 3\u2019 ss for 7 alternative 3\u2019 splicing events identified in sorted KPC-Sf3b1K700E/+ tumor cells. (D) Venn-diagram depicting alternative 3\u2019 splice events in the pan-cancer data-set (PSI > 0.05 and p<1\u201310) and sorted KPC-Sf3b1K700E/+ tumor cells (PSI > 0.1, p<0.01). (E) Representative gel image (top) and NGS-results (bottom) of Map3k7 cDNA isolated from sorted KPC (n=3) and KPC-Sf3b1K700E/+ tumor cells (n=4). The amplicon includes the 3\u2019 splice site of exon 4 and 5, the upper band (114 bp) of the gel image represents the non-canonical transcript variant, the lower band (94 bp) represents the canonical isoform. Dashed line indicates cropping of gel image. (F) Representative gel image of RT-PCR amplicon of Map3k7 cDNA isolated from WT and Sf3b1K700E/+ pancreata and from the indicated human cell lines. The upper band of the gel image represents the non-canonical transcript variant, the lower band represents the canonical isoform. The length of the amplicon derived from murine pancreas cells is 114 bp (canonical) and 137 bp (non-canonical) and from human cell lines 94 bp (canonical) and 114 bp (non-canonical).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/80683/elife-80683-fig4-figsupp1-v3.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Pan-cancer analysis of alternative splice-events identified in solid tumors carrying the SF3B1K700E mutation (PSI >0.05, FDR <1\u201310). (B) Histogram displaying the distance of cryptic 3\u2019ss from the adjacent canonical 3\u2019ss on a logarithmic scale in solid tumors carrying the SF3B1K700E mutation. (C) NGS-results of Map3k7 cDNA isolated from WT and Sf3b1K700E/+ pancreas organoids (n=1). (D) RT-PCR amplicon of MAP3K7 cDNA isolated from four human PDAC cell lines overexpressing wildtype SF3B1 (OE WT) or K700E-mutated SF3B1 (OE K700E). The amplicon includes the 3\u2019 splice site of exon 4 and 5, the upper band (114 bp) of the gel image represents the non-canonical isoform, the lower band (94 bp) the canonical isoform. (E) RT-qPCR of Ppp2r5a expression in KPC (n=13) and KPC-Sf3b1K700E/+ (n=12) cancer-derived organoid lines. Two-tailed unpaired t-test was used to compute the indicated p-value. (F) RT-PCR amplicon of Ppp2r5a cDNA isolated from sorted KPC (n=3) and KPC-Sf3b1K700E/+ (n=4), as well as WT and Sf3b1K700E/+ pancreas organoids. The amplicon includes the 3\u2019 splice site of exon 4 and 5, whereby the length of the canonical isoform is 250 bp and the upper arrowhead represents the predicted size (265 bp) of the non-canonical isoform.\n\nSince Sf3b1K700E dependent missplicing in MAP3K7 was shown to result in reduced RNA and protein levels of MAP3K7 in leukaemia (North et al., 2022), we hypothesized that the reduced responsiveness to TGF-\u03b2 signalling in SF3B1K700E mutant pancreas cells is caused by lower MAP3K7 levels. Indeed, RT-qPCR and western blotting confirmed a reduction in MAP3K7 levels in vitro and in vivo in Sf3b1K700E mutant pancreatic cells (Figure 5A\u2013D). Next, we tested whether this reduction could explain the observed resistance to TGF-\u03b2 in Sf3b1-mutant PDAC, and assessed the expression of EMT genes in TGF-\u03b2-treated KPC cells with a stable knock-down of MAP3K7 (Figure 5E, Figure 5\u2014figure supplement 1A). Indeed, a decrease of Map3k7 mRNA levels to 35% (SD \u00b1 10%) led to a reduced expression in 7 out of 10 EMT genes (Figure 5\u2014figure supplement 1B). Moreover, knocking down Map3k7 in pre-cancerous pancreas organoids led to increased viability upon TGF-\u03b21-treatment (Figure 5F, Figure 5\u2014figure supplement 1C), and chemical inhibition of p38, one of the major effectors of MAP3K7, partially protected organoids against TGF-\u03b21-induced cell death (Figure 5G). Further supporting our hypothesis that Sf3b1K700E mediates resistance to TGF-\u03b21 via MAP3K7, overexpression of the full-length isoform of MAP3K7 in TGF-\u03b21-treated Sf3b1K700E mutant organoids significantly decreased their viability (Figure 5H1).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/80683/elife-80683-fig5-v3.jpg)\n\n**Figure 5.:** (A\u2013C) RT-qPCR data showing Map3k7 expression in KPC (n=13) and KPC-Sf3b1K700E/+ (n=12) ex vivo tumor cultures (A), as well as WT (n=3) and Sf3b1K700E/+ (n=4) pancreata (B) and organoid lines (C). For analysis, Ct-values of Map3k7 were normalized to Actb and a two-tailed unpaired t-test was used to compute the indicated p-values. Data show mean and standard error of the mean in A, B and C. (D) Representative Western blot gel-image of MAP3K7 (molecular weight 78 kDa) and GAPDH (molecular weight 37 kDa) in WT and Sf3b1K700E/+ organoids. (E) RT-qPCR analysis of Map3k7 in cells transduced with a shMap3k7 compared to a control shRNA. Error bar represents SD, a two-tailed unpaired t-test was used to compute the indicated p-values. (F) Quantification of viable WT and Sf3b1K700E/+ murine pancreatic duct organoids or WT transduced with control shRNA (shCtrl) or shRNA targeting Map3k7 (shMap3k7). The organoids were exposed to 10 ng/ml TGF-\u03b21 for 24 hr prior to analysis. The experiment was independently performed three times. Error bar represents SD, a two-tailed unpaired t-test was used to compute the indicated p-value. (G) Viability of wildtype (WT) organoids cultured in medium containing 10 ng/ml TGF-\u03b21, supplemented with chemical inhibitors targeting the indicated effectors of TGF-\u03b21-signalling. Two independent experiments are summarized. Further details are provided in the methods section. (H) RT-qPCR analysis of Map3k7 in cells transduced by lentivirus with an overexpression construct of Map3k7, compared to overexpression of GFP. Error bar represents SD, a two-tailed unpaired t-test was used to compute the indicated p-values. (I) Quantification of viable murine pancreatic duct organoids with stable overexpression of Map3k7, exposed to 10 ng/ml TGF-\u03b21 for 96 hr. Data represents one organoid line per condition, the experiment was independently performed three times. Error bar represents SD, a two-tailed unpaired t-test was used to compute the indicated p-value. (J\u2013K) Viability of human pancreatic duct H6c7 cells (J) or human pancreatic duct organoids (K) exposed to 10 ng/ml TGF-\u03b21 with addition of the MAP3K7 inhibitor Takinib (TAKi, 5 \u03bcM) or DMSO. The viability was assessed after 48 hr of TGF-\u03b21 treatment and normalized to cells grown in absence of TGF-\u03b21. The experiment was independently performed four (J) or three (K) times. (L) Representative micrographs of wound healing assay of PANC-1 cells pre-treated with TGF-\u03b21 (10 ng/ml) for 24 hr, with or without addition of 5 \u03bcM TAKi, at the indicated time points after performing the scratch. Scale bar is 50 \u03bcM. (M) Quantification of wound healing assay shown in (L). The experiment was independently performed three times. Error bar represents SD, a two-tailed unpaired t-test was used to compute the indicated p-values.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/80683/elife-80683-fig5-figsupp1-v3.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Western blot gel-image of MAP3K7 (molecular weight 78 kDa) and GAPDH (molecular weight 37 kDa) in a KPC cell line transduced with a control shRNA (shCtrl) or a shRNA targeting Map3k7 (shMap3k7). (B) RT-qPCR analysis of EMT genes displayed in Figure 2F in a KPC cell line transduced with a control shRNA (shCtrl) or a shRNA targeting Map3k7 (shMap3k7) treated with TGF-\u03b21 (10 ng/ml) for 24 hr. The experiment was performed independently three times, error bar represents SD. (C) Organoid count normalized to untreated organoids of respective genotypes at passage 0. Duct organoids of indicated genotypes / treated with shRNA were exposed to 1 ng/ml TGF-\u03b21 for 25 days. Data represents one organoid line per condition, the experiment was independently performed three times. Error bar represents SD, a one-way ANOVA was used to compute the indicated p-values.\n\nTo further assess conservation of this mechanism between mice and humans, we next treated human pancreatic H6c7 cells as well as human pancreatic organoids before TGF-\u03b21 exposure with Takinib (TAKi), a chemical inhibitor for MAP3K7. In line with our results in murine cells, also in human pancreatic cells inhibition of MAP3K7 led to a significant increase in survival (Figure 5J and K). Moreover, conditioning human PANC-1 PDAC cells with TAKi prior to TGF-\u03b21 exposure resulted in a significant decrease in migratory capacity in wound healing assays (Figure 5L and M). Taken together, our results suggest that Sf3b1K700E mediates resistance of pancreatic epithelial cells to TGF-\u03b21 via MAP3K7, providing a potential mechanism for its role of in PDAC progression.\n\n## Discussion\n\nWhile the roles of the most frequently mutated tumor driver genes in PDAC are well understood, oncogenes occurring at lower rates are less well studied (International Cancer Genome Consortium et al., 2010). One of these genes is SF3B1, for which hotspot mutations occur in various tumor types, including PDAC. While the molecular function of oncogenic SF3B1 on RNA-splicing is well described, how deregulation of misspliced genes contribute to malignancy in different cancer entities is only partially understood. Previous studies have shown that in chronic lymphocytic leukaemia (CLL) SF3B1K700E leads to missplicing of PPP2R5A, which in turn stabilizes c-Myc and thereby promotes aggressiveness of tumor cells (Liu et al., 2020a; Yang et al., 2021). Furthermore, in breast cancer SF3B1K700E causes a tumor-promoting effect through missplicing in MAP3K7 and downstream activation of NF-\u03baB-signalling (Liu et al., 2021).\n\nIn our study we analysed the oncogenic function of SF3B1K700E in the context of PDAC. Using a conditional mouse model, we provide the first experimental evidence that Sf3b1K700E indeed promotes PDAC progression. While the Sf3b1K700E mutation alone did not induce malignant transformation in the mouse pancreas, co-occurrence with KRAS and p53 mutations increased the severity of PDAC. Effects of SF3B1K700E were already observed during early stages of tumor progression and resulted in reduced expression of TGF-\u03b2-responsive EMT genes. Our experiments further revealed that SF3B1K700E reduces TGF-\u03b2-induced cell-death in pancreatic duct cell lines and organoids, providing a potential mechanism for the oncogenicity of SF3B1K700E in PDAC. In line with this hypothesis, pancreatic epithelial cells have previously been found to undergo lethal EMT when stimulated with TGF-\u03b2 (David et al., 2016), and acquiring TGF-\u03b2 resistance is considered to be essential in early stages of PDAC tumorigenesis (Hezel et al., 2012). Interestingly, akin to Sf3b1K700E, deletion of the vital TGF-\u03b2 signalling component Smad4 only triggered malignant transformation of the pancreas in combination with oncogenic Kras mutations (Bardeesy et al., 2006b).\n\nSplicing analysis of RNA-seq datasets from both murine and human cancers identified several genes that are misspliced in the SF3B1K700E background. Among the identified genes was Map3k7, which is known to mediate non-canonical TGF-\u03b2 signaling (Kim and Choi, 2012) and to induce EMT and apoptosis in TGF-\u03b2 stimulated human mammary cells (Tripathi et al., 2019). In this study, we show that reducing Map3k7 levels by shRNA mediated knockdown in pancreatic cell lines and organoids also impairs TGF-\u03b2-mediated EMT and cell death, although not to the same extend as Sf3b1K700E. Thus, while aberrant splicing of other genes is likely also contributing to the observed resistance to TGF-\u03b2, our experiments indicate that TGF-\u03b2 resistance in SF3B1K700E mutant pancreatic ducts is at least partly mediated via MAP3K7. Importantly, this hypothesis is also supported by previous studies, which demonstrated that SF3B1 mutations induce 3\u2019 missplicing of MAP3K7 in various tumor entities (Bondu et al., 2019; Li et al., 2021; Lieu et al., 2022; Liu et al., 2020b; Wang et al., 2016; Zhang et al., 2019), that aberrant splicing by SF3B1K700E reduces MAP3K7 protein levels (North et al., 2022), and that MAP3K7 mediates TGF-\u03b2-induced EMT and apoptosis in mammary epithelial cells (Tripathi et al., 2019). Notably, depending on the cellular context, MAP3K7 has been shown to exert pro-apoptotic stimuli through activation of MAPK p38 and Jun N-terminal kinase (JNK; Mihaly et al., 2014), or anti-apoptotic stimuli through activation of the NF-\u03baB pathway (Mukhopadhyay and Lee, 2020). Thus, while our results show that SF3B1K700E mediated missplicing and inactivation of MAP3K7 protects pancreatic duct cells from TGF-\u03b2 induced cell death, in other tissues or in combination with other mutations, the reduction of MAP3K7 levels by SF3B1K700E could trigger different phenotypic responses.\n\nOne limitation of our study is the lack of in vivo evidence supporting our hypothesis that SF3B1K700E promotes PDAC progression through MAP3K7 missplicing. We attempted to study the effect of altered MAP3K7 levels in an orthotopic PDAC transplantation model. However, we found that the model was not suitable for adressing this question, since introducing SF3B1K700E in KPC cells had no significant impact on tumor growth after transplantation. This outcome aligned with our expectations, given that KPC cells were isolated from fully established PDAC, where SF3B1K700E does not play the same role as in early-stage PDAC. Additional studies using autochthonous PDAC models, where Map3k7 levels are modulated in early stage KPC or KPC-Sf3b1K700E/+ tumors, would be required to foster in vivo evidence for the functional role of Map3k7 in SF3B1K700E mutant PDAC.\n\nTaken together, this study provides a first demonstration that oncogenic SF3B1K700E promotes tumor progression in vivo in a mouse model for PDAC. Based on data from pancreatic organoids and cell lines, we further suggest that SF3B1K700E promotes PDAC progression by reducing tumor-suppressive TGF-\u03b2 signalling through missplicing of MAP3K7.\n\n## Methods\n\n### Animal models\n\nSf3b1K700E/+ mice were a gift from E. A. Obeng (Dana-Farber Cancer Institute, Boston, USA) and B. L. Ebert (Brigham and Women\u2019s Hospital, Harvard Medical School, Boston, USA). LSL-KrasG12D/+, LSL-Trp53R172H/+ and Ptf1a-Cre mice were purchased from the Jackson Laboratory (Bar Harbor, Maine, USA). All Sf3b1K700E/+ and KPC- Sf3b1K700E/+ mice were bred in a C57BL/6 J background, Sf3b1K700E/+; KrasG12D/+ mice were a C57BL/6J-BALB/c strain. Female and male mice were used for all experiments. Animals displaying dwarfism were excluded from analysis. The minimum of animals needed for the study was estimated by Fisher-Yates analysis. Due to the observed variance of the mouse model, more mice than initially estimated were used for the study. For the orthotopic transplantation models, KPC cells were derived from the autochthonous model described above by digestion of fully grown tumors and plating the digest in cell culture dishes. After multiple passages, KPC cells were grown to 80% confluency, and 105 cells were injected into the pancreas of BALB/cJ mice in matrigel, diluted in a 1:1 ratio with DMEM. 2Two weeks upon transplantation, mice were sacrificed. Mice were held in a specific-pathogen-free (SPF) animal facility at the ETH Phenomics Center EPIC (ETH Zurich, Switzerland). All animal experiments were conducted in accordance with the Swiss Federal Veterinary Office (BVET) guidelines (license no. ZH055/17).\n\n### Cell lines\n\nThe human cell lines AsPC-1 (CRL-1682), BxPC-3 (CRL-1687), MIA-PaCa-2 (CRM-CRL-1420), PANC-1 (CRL-1469), PSN-1 (CRL-3211) and HEK293T (CRL-1573) cells were purchased from ATCC. H6c7 cells (ECA001-FP) were purchased from Kerafast. MIA-PaCa-2, PANC-1 and HEK293T cells were maintained in DMEM with 4.5 g/l D-Glucose and GlutaMAX (Gibco), supplemented with 10% fetal calf serum (FCS, Sigma-Aldrich) and 1% Penicillin- streptomycin (P/S, Invitrogen). AsPC-1, BxPC-3, and PSN-1 were cultured in RPMI1640 (Thermo Fisher), supplemented with 10% FCS and 1% P/S. H6c7 cells were cultured in Keratinocyte serum-free medium (Thermo Fisher), supplemented with recombinant EGF and bovine pituitary extract according to the manufacturer\u2019s instructions (Thermo Fisher), as well as 100 \u03bcg/ml Primocin (Invivogen). Cell lines were regularly checked for mycoplasma-infections by Mycoplasma PCR-detection test (Thermo-Fisher).\n\n### Murine organoids\n\nMurine organoid lines from WT and Sf3b1K700E/+ animals (B6.129S4) were established as previously described (Boj et al., 2015). Briefly, 43-week-old animals of both sexes were euthanized and their pancreata excised. The organs were dissected to thin pieces and digested in 4 mg/ml collagenase IV for 7 min at 37\u00b0C. Then, pancreatic ducts were manually picked under a light microscope and seeded in drops of growth factor reduced matrigel. In vitro activated (pre-) cancer organoid lines (KrasG12D/+, KrasG12D/+; Sf3b1K700E/+, KrasG12D/+; Trp53R172H/+ and KrasG12D/+; Trp53R172H/+; Sf3b1K700E/+) were established from 8-week-old animals using the same protocol, except that recombination was achieved by delivering Cre-GFP by lentiviral transduction, followed by FACS sorting for GFP positive cells. Tumor-derived KPC and KPC-Sf3b1K700E/+ organoid lines were established from solid tumors of KPC or KPC-Sf3b1K700E/+ mice. Tumor tissue was digested for 2\u20133 hr in 4 mg/ml collagenase IV at 37\u00b0C, pelleted and seeded in drops of matrigel. The presence of the K700E mutation was validated with Sanger-sequencing on RNA level for each organoid line. Each organoid line was isolated from an individual mouse. Tumor-derived KPC and KPC-Sf3b1K700E/+ organoid lines were additionally plated in regular cell culture dishes and grown as monolayer cell culture. Organoids were cultured in organoid medium (OM) composed of AdDMEM/F12 (Gibco) supplemented with GlutaMAX (Gibco), HEPES (Gibco), Penicillin-Streptomycin (Invitrogen), B27 (Gibco), 1.25 mM N-Acetyl-L-cysteine (Sigma), 10 nM Gastrin I (Sigma) and the growth factors: 100 ng/ml FGF10 (Peprotech), 50 ng/ml EGF (Peprotech), 100 ng/ml Noggin, 100 ng/ml RSPO-1 (Peprotech), and 10 mM Nicotinamide (Sigma). For the first week after duct isolation the culture medium was supplemented with 100 \u03bcg/ml Primocin (InvivoGen).\n\n### Immunohistochemistry\n\nMurine tissue specimens were dissected and fixed in 10% neutral buffered formalin for 48\u201372 hr. Thereafter, formalin was replaced with 70% ethanol before paraffin-embedding and sectioning at a thickness of 4 \u2009\u03bcm. Hematoxylin and eosin stainings were performed according to the manufacturer\u2019s instructions. Anti-Cleaved Caspase 3 (Asp175) antibody (Cell Signaling Technology), anti-Amylase (100\u20134147) antibody (ThermoFisher), anti-Cytokeratin 19 (ab15463) antibody (ThermoFisher), anti-E-Cadherin (Clone 36) antibody (BD Biosciences), anti-FN-1 antibody (Chemicon), anti-MUC5AC (45M1) antibody (Novus Biologicals) and anti-TNC (Clone 578) antibody was used according to the manufacturer\u2019s recommendations. TNC and amylase staining was quantified by calculating the average of Raw Int Density of 3\u20135 randomly chosen microscopy fields per specimen using ImageJ. CK19 and MUC5AC staining was quantified by counting stained cells of 3\u20135 randomly chosen microscopy fields per specimen. ADM structures were quantified by counting ADM structures of 5 microscopy fields per specimen of tissue not yet (or only minorly) progressed to PanINs. Luminal necrotic cells were defined as shed cells residing within the lumen of PanIN-lesions.\n\n### Organoid growth assay\n\nGrowth of organoids was assessed with CellTiter-Glo 3D (Promega). For absolute quantification of ATP levels, standard curves with defined concentrations of ATP were used for every measurement according to the manufacturer\u2019s instructions. As approximation of proliferation rate, the ratio of ATP concentrations at the indicated time points was calculated.\n\n### Crystal violet assay\n\nTo measure proliferation of cell lines, 5000 cells were seeded per 96 wells. At the indicated time points, cells were stained with 0.5% (w/v) crystal violet (Sigma-Aldrich) dissolved in an aqueous solution with 20% Methanol (v/v). After washing, plates were allowed to air-dry and the crystal violet was dissolved in 10% acetic acid. Optical density was measured at 595 nM in an Infinite 200 plate reader (Tecan).\n\n### Organoid viability assay\n\nFor short-term treatment, organoids were seeded as fragments in 10 \u03bcl of Matrigel and allowed to form spheres for 24 hr in regular organoid medium. Organoids were thereafter exposed to the indicated concentration of TGF-\u03b21 (Thermo Fisher). To assess viability of the organoids, intact organoids were counted and compared to untreated organoids after 48 hr of TGF-\u03b21-exposure. This method of quantification was validated by correlating counts of intact organoids with ATP levels as described above (data not shown). For long-term treatment, organoids were seeded as fragments in 40 \u03bcl of Matrigel. After allowing to form spheres for 24 hr, the indicated concentration of TGF-\u03b21 was added. After 4 days of TGF-\u03b21-treatment, matrigel-drops were imaged and the number of intact organoids was counted. Then, organoids were reseeded as fragments in normal organoid medium and TGF-\u03b21 was added after 24 hr. Every 4th passage, organoids were split in a 1:1 ratio in the 1 ng/ml TGF-\u03b21 condition.\n\nCommercial cell lines were seeded and TGF-\u03b21 was added at the indicated concentrations 12 hr after plating.\n\n### Organoid invasion assay\n\nOrganoids were seeded at equal density in 40 \u03bcl of matrigel in 24-well plates. Twenty-four hr after seeding, organoid growth medium was supplemented with 10 ng/ml TGF-\u03b21 (Thermo Fisher). Nienty-six hr after seeding, matrigel domes were detached by rinsing and the migrated organoids (i.e. cells attached to the cell culture dish) were stained by crystal violet. The fraction of attached organoids was calculated by dividing the number of attached organoids by the number of attached organoids plus the number of non-attached organoids (i.e. organoids residing in the matrigel dome).\n\n### Cleaved-caspase 3/7 assay\n\nOrganoids were seeded 10 \u03bcl of Matrigel and allowed to form spheres for 24 hr in regular organoid medium. Organoids were thereafter exposed to 10 ng/ml TGF-\u03b21 (Thermo Fisher) overnight. Cleavage of Caspase 3 and 7 was quantified by using Caspase-Glo 3/7 Assay System (Promega) according to the manufacturer\u2019s instructions.\n\n### Wound healing assay\n\n8x105 human PANC-1 cells, overexpressing SF3B1-WT or SF3B1K700E, were seeded in six-well plates. Ten ng/ml TGF-\u03b21 (and TAKi [5 \u03bcM] or DMSO [1:1000] in the respective experiments) was added overnight prior scratch formation with a 10 \u03bcl pipette tip. After scratch formation, fresh medium including TGF-\u03b21 (and TAKi or DMSO) was added. 0 hr, 4 hr, and 7 hr after scratch formation, images were taken and the width of the scratch was analysed, performing four measures at standardized positions for each image using ImageJ / Fiji (NIH). To calculate the effect of TGF-\u03b2 on gap closure in Figure 2J, distance of migration (gap width 0 hr after scratch formation \u2013 gap width 4 hr after scratch formation) of cells cultured with TGF-\u03b2 was divided by distance of migration of cells cultured with control medium.\n\n### Chemical inhibitors\n\nThe following chemical inhibitors targeting different effectors of the TGF-\u03b2-pathway were used: TGFbR-inhibitor A83-01 [50 nM] (Tocris Bioscience), p38-inhibitors SB202190 [10 \u03bcM] (Sigma-Aldrich) and SB203580 [10 \u03bcM] (Selleckchem), JNK-inhibitor SP600125 [25 \u03bcM] (Sigma-Aldrich), SMAD3-inhibitor SIS3 [10 \u03bcM] (Sigma-Aldrich) and MAP3K7-inhbitor Takinib [5 \u03bcM] (Sigma-Aldrich). The inhibitors were added to the organoid medium directly after seeding.\n\n### shRNA-mediated Map3k7 knockdown\n\nshRNA targeting murine Map3k7 was purchased from Sigma-Aldrich (TRCN0000022563). A pLKO.1-puro Non-Target shRNA was used as control. Lentivirus was produced by PEI-based transfection of HEK293T cells. Briefly, HEK293T cells were seeded at 70% confluency in 6-well plates, and the following plasmids were transfected: PAX2 plasmid (1100 ng), VSV-G plasmid (400 ng), cargo plasmid (1500 ng). Medium was changed 12 hr after transfection and the virus-containing supernatant collected after 36 hr. Organoids were dissociated into single cells by Tryp-LE treatment for 5 min at 37\u00b0C and consecutive mechanical disruption. After centrifugation, 10% Lentivirus-containing supernatant in organoid medium (v/v) was added to the cell suspension. After a 4\u20136 hr incubation at 37\u00b0C, cells were seeded in matrigel as described above. Organoids were selected in 2 ng/ml Puromycin after the first passage for at least 5 days.\n\n### Overexpression of Map3k7\n\nMurine Map3k7 (full-length isoform) was amplified from cDNA of murine WT duct organoids and cloned into a Lenti-backbone (addgene #73582). Production of lentivirus and transduction of organoids was performed as described above. Organoids stably overexpressing GFP (addgene #17488) were used as experimental control.\n\n### Overexpression of SF3B1-K700E\n\nCodon-optimized human SF3B1-WT and SF3B1-K700E was derived from the plasmids pCDNA3.1-FLAG-SF3B1-WT (addgene #82576) and pCDNA3.1-FLAG-hSF3B1-K700E (addgene #82577) and cloned into a Lenti-backbone. The lentiviruses were produced as described above and used to transduce various cell lines. Puromycin-selection was used to select for transduced cells for at least two passages.\n\n### RNA sequencing\n\n#### Cell sorting and RNA extraction\n\nMurine tumors were excised and digested for 2\u20133 hr in collagenase (4 mg/ml) at 37\u00b0C. After addition of fetal calf serum (FCS) to stop the digestion, cells were strained trough a 100 \u03bcm and a 70 \u03bcm cell strainer. Then, cells were washed twice in PBS + 2% FCS+2 mM EDTA and incubated with mouse FcBlock (BD Biosciences), Epcam-APC (CD326 Monoclonal Antibody (G8.8), APC, eBioscience, Thermo Fisher) and CD45-BV785 (Clone 30-F11, Biologened) antibodies for 30 min at 4\u00b0C. After washing, Epcam-positive-CD45-negative cells were sorted into lysis buffer with a BD FACSAriaIII Cell Sorter (BD Biosciences). Finally, RNA was extracted using NucleoSpin RNA XS kit (Macherey Nagel) according to the manufacturer\u2019s instructions.\n\n#### Library preparation\n\nThe quantity and quality of the isolated RNA was determined with a Qubit (1.0) Fluorometer (Life Technologies, California, USA) and a Tapestion (Agilent, Waldbronn, Germany). The SMARTer Stranded Total RNA-Seq Kit - Pico Input Mammalian (Clontech Laboratories, Inc, A Takara Bio Company,California, USA) was used in the succeeding steps. Briefly, total RNA samples (0.25\u201310 ng) were reverse-transcribed using random priming into double-stranded cDNA in the presence of a template switch oligo (TSO). When the reverse transcriptase reaches the 5\u2019 end of the RNA fragment, the enzyme\u2019s terminal transferase activity adds non-templated nucleotides to the 3\u2019 end of the cDNA. The TSO pairs with the added non-templated nucleotide, enabling the reverse transcriptase to continue replicating to the end of the oligonucleotide. This results in a cDNA fragment that contains sequences derived from the random priming oligo and the TSO. PCR amplification using primers binding to these sequences can now be performed. The PCR adds full-length Illumina adapters, including the index for multiplexing. Ribosomal cDNA is cleaved by ZapR in the presence of the mammalian-specific R-Probes. Remaining fragments are enriched with a second round of PCR amplification using primers designed to match Illumina adapters.The quality and quantity of the enriched libraries were validated using Qubit (1.0) Fluorometer and the Tapestation (Agilent, Waldbronn, Germany). The product is a smear with an average fragment size of approximately 360 bp. The libraries were normalized to 10 nM in Tris-Cl 10 mM, pH8.5 with 0.1% Tween 20.\n\n#### Cluster generation and sequencing\n\nThe TruSeq SR Cluster Kit HS4000 or TruSeq PE Cluster Kit HS4000 (Illumina, Inc, California, USA) was used for cluster generation using 8 pM of pooled normalized libraries on the cBOT. Sequencing was performed on the Illumina HiSeq 4000 paired end at 2X126 bp or single end 126 bp using the TruSeq SBS Kit v4-HS (Illumina, Inc, California, USA).\n\n#### RNAseq data analysis\n\nAdapters have been trimmed with trimmomatic (v0.35). Pairs for which both reads passed the trimming have been mapped to the murine genome using STAR (v2.7.0a) and indexed BAM files obtained with samtools (v1.9). Reads were counted with featureCounts from subread package (v1.5.0). The read counts have been processed in a statistical analysis using edgeR (v3.24.3), obtaining a list of genes ranked for differential expression by p-value and Benjamini-Hochberg adjusted p-value as the estimate of the false discovery rate. All data is summarized in Supplementary file 1.\n\n#### Gene set enrichment analysis\n\nGene set enrichment analysis (v.4.1.0, Broad Institute, MIT) was used to determine enriched gene sets in KPC or KPC-Sf3b1K700E/+ tumor cells. Standard parameters of the software were used to perform the analysis. Molecular Signatures Database v7.4, Hallmark Gene Sets (H) was used to query enriched gene sets. The input gene expression matrix contained read-count information (count per million) of 21,633 genes.\n\n#### Alternative splicing analysis\n\nWe ran a 2-pass alignment of the fastq files using STAR v2.7 (Dobin et al., 2013) using the GRCm38.p6 genome as reference. The gene annotation used was GENCODE v.m25. For gene expression quantification, we used a custom script, available at GitHub (copy archived at Kahles, 2021); commit hash d074114f1d0a9f518c9cd039f68de0cdf8d583ff. SplAdder v.2.2 (Kahles et al., 2016) was run to build splicing graphs and determine splice events. Differential splicing events were determined by calculating a log(psi +x) transformation of the percent spliced in (calculated as ratio of reads supporting the splice event over the number of reads supporting the alternate event). Splice events that did not show any variability over the samples were removed and missing values were mean imputed. After standardization, a two-sided t-test was used to calculate p-values of splice events differences between KPC and KPC-Sf3b1K700E mice. All data is summarized in Supplementary file 2.\n\n#### Motif analysis\n\nConsensus 3\u2019 ss motif in proximity of the canonical and the cryptic 3\u2019 ss in sorted KPC-Sf3b1K700E/+ tumor cells was assessed by query 30\u201340 bases spanning the respective 3\u2019ss of the 7 main splice events for a motif using weblogo-sequence creator (https://weblogo.berkeley.edu/logo.cgi).\n\n#### RT-PCR and quantitative RT-PCR (qPCR)\n\nRNA-extraction was performed with QIAGEN RNeasy Mini Kit, and cDNA was generated with GoScript Reverse Transcriptase kit (Promega) according to the manufacturers\u2019 instructions. RT-PCR was performed with GoTaq G2 Green Master Mix (Promega) and gene-specific primers. Amplicons were fractionated on 2% TBE gel (Life Technologies) supplemented with 0.01% GelRed (Biotium). For qPCR, 2 \u03bcL of 1:10-diluted cDNA was added to 8 \u03bcl of 5 x HOT FIREPol Evagreen qPCR Supermix (SolisBiodyne). Raw gel images can be found in Source data 1. RT-qPCR was performed with a LightCycler480 II (Roche). Relative gene expression was determined with the comparative CT method. Genes with a median CT value of more than 33 cycles and a difference of less than 3.3 cycles to the template control (H2O) were defined as not detectable. Sequences of all primers used in this study are listed in Supplementary file 3.\n\n#### NGS-based isoform quantification of Map3k7\n\nPrimers generating an amplicon including the exon 4 and exon 5 junction of Map3k7 cDNA were used. Briefly, a gene-specific amplicon was generated in a 20 \u03bcL reaction for 35 cycles with GoTaq G2 Green Master Mix (Promega). The PCR product was purified using the NucleoSpin Gel and PCR Clean-up kit (Macherey-Nagel). Thereafter, the isolated product was amplified for eight cycles using primers with sequencing adapters. After column-based isolation of the amplicon and quantification of DNA-yield using a Qubit 3.0 fluorometer and the dsDNA HS assay kit 392 (Thermo Fisher), paired-end sequencing was performed on an Illumina Miseq. The sequencing data was subsequently analyzed with CRISPResso2 (Clement et al., 2019).\n\n#### Western blotting\n\nCells were lysed in RIPA buffer, supplemented with Protease Inhibitor (Cell Signaling Technologies) and PhosStop (Sigma-Aldrich) and centrifuged for 10 min at 21,000 g. The protein concentration of the supernatant was determined using Pierce BCA assay (ThermoFisher) and a standard curve of albumin. Then, samples were heated for 5\u2019 at 95\u00b0C in L\u00e4mmli buffer and protein lysates were resolved on polyacrylamide Mini-PROTEAN TGX gels (Bio-Rad) and transferred onto nitrocellulose membrane by wet-transfer. The following antibodies were used for immunoblotting: Recombinant anti-GADPH (EPR16891, Abcam) and rabbit monoclonal anti-MAP3K7 (anti-TAK1, D94D7, Cell Signaling Technology) IRDye-conjugated secondary antibodies (donkey anti-goat: LI-COR cat. no. 926\u201332214; anti-rabbit: LI-COR cat. no. 926\u201368073) were used for signal detection by an Odyssey Imager (LI-COR) imaging system. Raw gel images can be found in Source data 1.\n",
+      "created_at": "2025-12-04T03:33:24.788698Z"
+    },
+    {
+      "id": "72526764-5d8b-4763-bb58-4808f9f5f9ad",
+      "submission_id": "57cae786-18b3-4365-aa7f-7f81a5e1b3bb",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Erica A Golemis, https://ror.org/0567t7073 Fox Chase Cancer Center United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.80683.sa0](https://doi.org/10.7554/eLife.80683.sa0)\n\nThis important study investigates the oncogenic and disease promoting potential of the K700E mutation in the splicing factor SF3B1 in a mouse model for pancreatic ductal adenocarcinoma (PDAC), finding that this mutation can promote disease progression both in the presence or absence of Trp53. They further identify SF3B1K700E-induced missplicing of Map3k7 as a critical mechanism that enables isolated pancreas cancer cells to survive TGF\u03b2-induced EMT, senescence and cell death. Together with experiments based on convincing methods that suggest a conserved function in human PDAC, and indicating a specific role for the SF3B1 K700E mutation in early stage tumors, this study makes a valuable contribution to understanding of mechanisms regulating PDAC transformation, and will be interesting to researchers investigating pancreatic cancer.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Erica A Golemis, https://ror.org/0567t7073 Fox Chase Cancer Center United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.80683.sa1](https://doi.org/10.7554/eLife.80683.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Mutant SF3B1 promotes PDAC malignancy through TGF-\u03b2 resistance\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Erica Golemis as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1) Additional experimentation testing the validity of findings in vivo is required. All three reviewers requested that data beyond organoids and cell lines be added. For example, orthotopic implantation of the organoids or cells used to examine how the Sf3B1-K700E mutant or Map3k7 expression affects tumor growth and metastasis in vivo is highly recommended as suggested by the reviewers.\n\n2) Increase the human relevance through use of human PDAC lines that have the K700E mutation.\n\n3) Articulate more clearly how the work is novel and distinguishes itself from previous work highlighting Map3k7 as downstream of the Sf3b1-K700E mutation in other cancers.\n\nReviewer #1 (Recommendations for the authors):\n\nAdditional analysis of the invasion properties following both expression of Sf3B1-K700E and also following Map3k7 expression, enhanced analysis of the PanINs and PDACs formed in KC and KPC +/- the Sf3b1-K700E mutation, examining effects of Map3k7 on tumors in vivo expressing Sf3b1-K700E would all add to the work significantly.\n\nReviewer #2 (Recommendations for the authors):\n\nIncreasing the human relevance of the study would greatly broaden the impact. Some suggestions are listed above. Another possibility would be to seek out cell lines with the SF3BP1 mutation if they are available.\n\nComment on figures and writing:\n\nA scheme depicting the genotype of the mouse models, specifically of the SF3B1K700E allele would help the reader quickly determine whether the model is a knock-in, a transgenic mouse and so on.\n\nReviewer #3 (Recommendations for the authors):\n\n\u2013 The authors propose that SF3B1K700E functions much like SMAD4 mutations in blocking TGFb signaling. But the authors nevertheless propose that SF3B1K700E mutant tumors would nevertheless still benefit from further SMAD4 mutation, even though normally mutations that target the same pathway tend to be mutually exclusive, as SMAD4 may be a more potent block to TGFb signaling. From analysis of patient genomic data, can the authors determine if SF3B1K700E and SMAD4 mutations co-occur or if they are mutually exclusive? If they are mutually exclusive, would this not provide additional compelling patient in vivo evidence that the critical function of SF3B1K700E mutation is to tune TGFb signaling as SMAD4 mutations are no longer occurring in these samples?\n\n\u2013 The authors show in figure 2F that KPC-SF3B1K700E cancer cells have a lower expression of EMT genes relative to KPC cell lines and further show in figure 3A that treatment with TGF\u03b2 is able to induce upregulation of some of these genes in KPC cells relative to control. As the main premise of the paper in the following figures becomes how the SF3B1K700E mutation can suppress and EMT lethal cell state promoted by TGF\u03b2, it would be useful to see whether TGF\u03b2 treatment fails to induce upregulation of these genes in KPC-SF3B1K700E cancer cells relative to untreated control.\n\n\u2013 While the authors show that lower expression of MAP3K7 can impair TGFB mediated cell death, a more nuanced discussion of the role MAP3K7 in programmed cell death is warranted, as there is ample literature on this subject, including how MAP3K7 inhibitor Takinib has been used in clinical trials against PDAC (PMID: 31695153, 25146924, 21743023).\n\n\u2013 In figure 3B the authors show functional data that suggests SF3B1K700E pancreatic cancer cells have altered cell migration in a TGF\u03b2-dependent context, likely related to the downregulation of EMT related genes observed before. If at all possible, whether these cells also exhibit an altered ability to metastasize in vivo (maybe by gross analysis of metastatic nodules or IHC of micro metastasis in other tissues) should also be commented on when describing the pathology of the mouse model.\n\n\u2013 Figure 4 title should be modified to reflect the second main premise of the figure (4D-F), regarding regulation of MAP3K7.\n",
+      "created_at": "2025-12-04T03:33:24.788698Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T03:33:24.788698Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T03:33:24.788698Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "ae807890-7943-4e53-93a0-2299ef613f29",
+      "content_id": "8e4dc244-eb01-4208-9262-ae6ba25d3380",
+      "claim_id": "C1",
+      "claim": "SF3B1 is recurrently mutated in pancreatic ductal adenocarcinoma (PDAC)",
+      "claim_type": "EXPLICIT",
+      "source": "The splicing factor SF3B1 is recurrently mutated in various tumors, including pancreatic ductal adenocarcinoma (PDAC).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Bailey et al., 2016 and Yang et al., 2021 in the introduction",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:33:24.788698Z"
+    },
+    {
+      "id": "aa4ce47d-43eb-4a85-8144-2532785b2478",
+      "content_id": "8e4dc244-eb01-4208-9262-ae6ba25d3380",
+      "claim_id": "C2",
+      "claim": "Sf3b1K700E alone is insufficient to induce malignant transformation of the murine pancreas",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we demonstrate that Sf3b1K700E alone is insufficient to induce malignant transformation of the murine pancreas",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data showing no effect on survival or pancreas weight after 300 days in Sf3b1K700E/+ mice",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:33:24.788698Z"
+    },
+    {
+      "id": "a0830f47-638b-4fb5-b3e3-ec88f0605b94",
+      "content_id": "8e4dc244-eb01-4208-9262-ae6ba25d3380",
+      "claim_id": "C3",
+      "claim": "Sf3b1K700E increases aggressiveness of PDAC when it co-occurs with mutated KRAS and p53",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we demonstrate that Sf3b1K700E alone is insufficient to induce malignant transformation of the murine pancreas, but that it increases aggressiveness of PDAC if it co-occurs with mutated KRAS and p53.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by survival and tumor size data from KPC-Sf3b1K700E/+ mice compared to KPC mice",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:33:24.788698Z"
+    },
+    {
+      "id": "908a93d0-4025-4c77-98e0-ed9876a878d3",
+      "content_id": "8e4dc244-eb01-4208-9262-ae6ba25d3380",
+      "claim_id": "C4",
+      "claim": "Sf3b1K700E plays a role during early stages of pancreatic tumor progression",
+      "claim_type": "EXPLICIT",
+      "source": "We further show that Sf3b1K700E already plays a role during early stages of pancreatic tumor progression",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data showing increased ADM formation and PDAC development in 5-week-old KPC-Sf3b1K700E/+ mice and in KC-Sf3b1K700E/+ mice",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:33:24.788698Z"
+    },
+    {
+      "id": "2b0301fb-c3e8-47b5-be0d-88702fc09e0f",
+      "content_id": "8e4dc244-eb01-4208-9262-ae6ba25d3380",
+      "claim_id": "C5",
+      "claim": "Sf3b1K700E reduces the expression of TGF-\u03b21-responsive epithelial\u2013mesenchymal transition (EMT) genes",
+      "claim_type": "EXPLICIT",
+      "source": "We further show that Sf3b1K700E already plays a role during early stages of pancreatic tumor progression and reduces the expression of TGF-\u03b21-responsive epithelial\u2013mesenchymal transition (EMT) genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by RNA-seq data showing EMT as the most significantly attenuated gene set in KPC-Sf3b1K700E/+ cells",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:33:24.788698Z"
+    },
+    {
+      "id": "26bb5e44-75a0-4260-809f-3184f64cf33c",
+      "content_id": "8e4dc244-eb01-4208-9262-ae6ba25d3380",
+      "claim_id": "C6",
+      "claim": "SF3B1K700E confers resistance to TGF-\u03b21-induced cell death in pancreatic organoids and cell lines",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, we found that SF3B1K700E confers resistance to TGF-\u03b21-induced cell death in pancreatic organoids and cell lines",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by caspase activity assays and viability measurements in organoids and cell lines",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:33:24.788698Z"
+    },
+    {
+      "id": "920926a1-7985-4aa0-805d-8c91d25b33d0",
+      "content_id": "8e4dc244-eb01-4208-9262-ae6ba25d3380",
+      "claim_id": "C7",
+      "claim": "SF3B1K700E-mediated resistance to TGF-\u03b21 is partly mediated through aberrant splicing of Map3k7",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, we found that SF3B1K700E confers resistance to TGF-\u03b21-induced cell death in pancreatic organoids and cell lines, partly mediated through aberrant splicing of Map3k7.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by Map3k7 splicing analysis, knockdown experiments, and overexpression experiments",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:33:24.788698Z"
+    },
+    {
+      "id": "5670d7dd-55f6-404e-a95a-d234be7ba96b",
+      "content_id": "8e4dc244-eb01-4208-9262-ae6ba25d3380",
+      "claim_id": "C8",
+      "claim": "SF3B1K700E acts as an oncogenic driver in PDAC",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, our findings demonstrate that SF3B1K700E acts as an oncogenic driver in PDAC",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple lines of experimental evidence including mouse models, organoid studies, and molecular analyses",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:33:24.788698Z"
+    },
+    {
+      "id": "f95d8b15-3a33-474c-b30a-5c42b8783397",
+      "content_id": "8e4dc244-eb01-4208-9262-ae6ba25d3380",
+      "claim_id": "C9",
+      "claim": "SF3B1K700E promotes the progression of early stage tumors by impeding the cellular response to tumor suppressive effects of TGF-\u03b2",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, our findings demonstrate that SF3B1K700E acts as an oncogenic driver in PDAC, and suggest that it promotes the progression of early stage tumors by impeding the cellular response to tumor suppressive effects of TGF-\u03b2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data showing reduced TGF-\u03b2-induced apoptosis and EMT in SF3B1K700E mutant cells",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:33:24.788698Z"
+    },
+    {
+      "id": "22287976-e4bb-430a-92a9-84bb97a3e1f8",
+      "content_id": "8e4dc244-eb01-4208-9262-ae6ba25d3380",
+      "claim_id": "C10",
+      "claim": "SF3B1 is amongst the most commonly mutated components of the splicing machinery in cancer",
+      "claim_type": "EXPLICIT",
+      "source": "The splicing factor subunit 3b 1 (SF3B1) is amongst the most commonly mutated components of the splicing machinery, with high incidence in myelodysplastic syndromes (MDS; Je et al., 2013) and chronic lymphocytic leukemia (CLL; Miao et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to studies in MDS and CLL",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:33:24.788698Z"
+    },
+    {
+      "id": "6828e4a5-9375-4b08-9b23-a30dcefed4f2",
+      "content_id": "8e4dc244-eb01-4208-9262-ae6ba25d3380",
+      "claim_id": "C11",
+      "claim": "SF3B1 is recurrently mutated in uveal melanoma",
+      "claim_type": "EXPLICIT",
+      "source": "However, also in various solid tumors, SF3B1 is recurrently mutated, including uveal melanoma (UVM; Furney et al., 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Furney et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:33:24.788698Z"
+    },
+    {
+      "id": "71de63d9-8728-417a-b065-f7b3c9d71555",
+      "content_id": "8e4dc244-eb01-4208-9262-ae6ba25d3380",
+      "claim_id": "C12",
+      "claim": "SF3B1 is recurrently mutated in breast cancer",
+      "claim_type": "EXPLICIT",
+      "source": "However, also in various solid tumors, SF3B1 is recurrently mutated, including uveal melanoma (UVM; Furney et al., 2013), breast cancer (BRCA; Fu et al., 2017; Maguire et al., 2015; Sun et al., 2020)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Fu et al., 2017; Maguire et al., 2015; Sun et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:33:24.788698Z"
+    },
+    {
+      "id": "e3b6916f-c2b5-4526-8132-f0dc239622d1",
+      "content_id": "8e4dc244-eb01-4208-9262-ae6ba25d3380",
+      "claim_id": "C13",
+      "claim": "SF3B1 is recurrently mutated in prolactinomas",
+      "claim_type": "EXPLICIT",
+      "source": "However, also in various solid tumors, SF3B1 is recurrently mutated, including uveal melanoma (UVM; Furney et al., 2013), breast cancer (BRCA; Fu et al., 2017; Maguire et al., 2015; Sun et al., 2020), prolactinomas (Li et al., 2020)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Li et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:33:24.788698Z"
+    },
+    {
+      "id": "de1cc84a-1421-4556-85f6-8564a48be053",
+      "content_id": "8e4dc244-eb01-4208-9262-ae6ba25d3380",
+      "claim_id": "C14",
+      "claim": "SF3B1 is recurrently mutated in hepatocellular carcinoma",
+      "claim_type": "EXPLICIT",
+      "source": "However, also in various solid tumors, SF3B1 is recurrently mutated, including uveal melanoma (UVM; Furney et al., 2013), breast cancer (BRCA; Fu et al., 2017; Maguire et al., 2015; Sun et al., 2020), prolactinomas (Li et al., 2020), hepatocellular carcinoma (HCC; Zhao et al., 2021)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Zhao et al., 2021",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:33:24.788698Z"
+    },
+    {
+      "id": "e32d0399-a498-4229-8772-216088bc09bc",
+      "content_id": "8e4dc244-eb01-4208-9262-ae6ba25d3380",
+      "claim_id": "C15",
+      "claim": "SF3B1 is recurrently mutated in pancreatic adenocarcinoma",
+      "claim_type": "EXPLICIT",
+      "source": "However, also in various solid tumors, SF3B1 is recurrently mutated, including uveal melanoma (UVM; Furney et al., 2013), breast cancer (BRCA; Fu et al., 2017; Maguire et al., 2015; Sun et al., 2020), prolactinomas (Li et al., 2020), hepatocellular carcinoma (HCC; Zhao et al., 2021), and pancreatic adenocarcinoma (PDAC; Bailey et al., 2016; Yang et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Bailey et al., 2016; Yang et al., 2021",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:33:24.788698Z"
+    },
+    {
+      "id": "1d0839e6-0869-4815-983f-c6cd591f9e55",
+      "content_id": "8e4dc244-eb01-4208-9262-ae6ba25d3380",
+      "claim_id": "C16",
+      "claim": "SF3B1 is part of the U2 small nuclear ribonucleoprotein (U2 snRNP)",
+      "claim_type": "EXPLICIT",
+      "source": "As part of the U2 small nuclear ribonucleoprotein (U2 snRNP) SF3B1 exerts an essential function in RNA splicing by recognizing the branchpoint sequence (BPS) of nascent RNA transcripts (Wahl et al., 2009; Zhang et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Wahl et al., 2009; Zhang et al., 2020",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:33:24.788698Z"
+    },
+    {
+      "id": "945e8cde-8bec-4224-b190-f13b088e9a02",
+      "content_id": "8e4dc244-eb01-4208-9262-ae6ba25d3380",
+      "claim_id": "C17",
+      "claim": "SF3B1 recognizes the branchpoint sequence (BPS) of nascent RNA transcripts",
+      "claim_type": "EXPLICIT",
+      "source": "As part of the U2 small nuclear ribonucleoprotein (U2 snRNP) SF3B1 exerts an essential function in RNA splicing by recognizing the branchpoint sequence (BPS) of nascent RNA transcripts (Wahl et al., 2009; Zhang et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Wahl et al., 2009; Zhang et al., 2020",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:33:24.788698Z"
+    },
+    {
+      "id": "139540b6-ee1a-4da7-a391-50b78ce57605",
+      "content_id": "8e4dc244-eb01-4208-9262-ae6ba25d3380",
+      "claim_id": "C18",
+      "claim": "SF3B1 recognition of BPS is crucial for the definition of the 3' splice site of the upstream exon-intron boundary",
+      "claim_type": "EXPLICIT",
+      "source": "This process is crucial for the definition of the 3' splice site (3' ss) of the upstream exon-intron boundary, a prerequisite for the accurate removal of introns (Wahl et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Wahl et al., 2009",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:33:24.788698Z"
+    },
+    {
+      "id": "803c5afd-2705-4ee9-b2fb-235ac8a8c659",
+      "content_id": "8e4dc244-eb01-4208-9262-ae6ba25d3380",
+      "claim_id": "C19",
+      "claim": "Hotspot mutations in SF3B1 at HEAT repeats 5\u20139 allow the recognition of an alternative BPS",
+      "claim_type": "EXPLICIT",
+      "source": "It is well understood that hotspot mutations in SF3B1 at HEAT repeats 5\u20139 allow the recognition of an alternative BPS, resulting in the inclusion of a short intronic region into the mature messenger RNA (mRNA; Alsafadi et al., 2016; Canbezdi et al., 2021; Darman et al., 2015; DeBoever et al., 2015; Kesarwani et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Alsafadi et al., 2016; Canbezdi et al., 2021; Darman et al., 2015; DeBoever et al., 2015; Kesarwani et al., 2017",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:33:24.788698Z"
+    },
+    {
+      "id": "8bb642e6-f221-46c4-8202-a5f0a7a4d747",
+      "content_id": "8e4dc244-eb01-4208-9262-ae6ba25d3380",
+      "claim_id": "C20",
+      "claim": "Alternatively spliced transcripts caused by SF3B1 mutations are prone to degradation through nonsense-mediated RNA decay (NMD)",
+      "claim_type": "EXPLICIT",
+      "source": "These alternatively spliced transcripts are prone to degradation through nonsense-mediated RNA decay (NMD) (Darman et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Darman et al., 2015",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:33:24.788698Z"
+    },
+    {
+      "id": "dae170fc-24f7-4a02-9838-a691fc13f468",
+      "content_id": "8e4dc244-eb01-4208-9262-ae6ba25d3380",
+      "claim_id": "C21",
+      "claim": "Missplicing of PPP2R5A by oncogenic SF3B1 increases malignancy through stabilizing c-Myc",
+      "claim_type": "EXPLICIT",
+      "source": "So far, missplicing of PPP2R5A was found to increase malignancy through stabilizing c-Myc (Liu et al., 2020a; Yang et al., 2021)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Liu et al., 2020a; Yang et al., 2021",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:33:24.788698Z"
+    },
+    {
+      "id": "05c16ecf-20dc-41e0-95b7-f955b9aa0635",
+      "content_id": "8e4dc244-eb01-4208-9262-ae6ba25d3380",
+      "claim_id": "C22",
+      "claim": "Aberrant MAP3K7 splicing by oncogenic SF3B1 promotes NF-\u03baB-driven tumorigenesis",
+      "claim_type": "EXPLICIT",
+      "source": "and aberrant MAP3K7 splicing was reported to promote NF-\u03baB-driven tumorigenesis (Liu et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Liu et al., 2021",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:33:24.788698Z"
+    },
+    {
+      "id": "3ec16076-fec6-4f91-92d7-871da31b7e9a",
+      "content_id": "8e4dc244-eb01-4208-9262-ae6ba25d3380",
+      "claim_id": "C23",
+      "claim": "Splicing deregulation has been reported as a hallmark of PDAC",
+      "claim_type": "EXPLICIT",
+      "source": "Since splicing deregulation has been reported as a hallmark of PDAC, with SF3B1 being recurrently mutated (Bailey et al., 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Bailey et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:33:24.788698Z"
+    },
+    {
+      "id": "8c4f81a3-550f-4be6-ace6-4d50732da78b",
+      "content_id": "8e4dc244-eb01-4208-9262-ae6ba25d3380",
+      "claim_id": "C24",
+      "claim": "Genes encoding for the splice factors RBM10, SF3B1, and U2AF1 are frequently mutated in the Pancreatic Cancer Canadian (PACA-CA) cohort",
+      "claim_type": "EXPLICIT",
+      "source": "Validating these findings, we found that genes encoding for the splice factors RBM10, SF3B1, and U2AF1 are also frequently mutated in the Pancreatic Cancer Canadian (PACA-CA) cohort (Figure 1\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 1\u2014figure supplement 1A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:33:24.788698Z"
+    },
+    {
+      "id": "a0a150b8-12a9-453a-a9e2-dfe5ca02abe0",
+      "content_id": "8e4dc244-eb01-4208-9262-ae6ba25d3380",
+      "claim_id": "C25",
+      "claim": "56% of the mutations found in RBM10 lead to a truncated protein",
+      "claim_type": "EXPLICIT",
+      "source": "In accordance with its described function as a tumor suppressor (Hern\u00e1ndez et al., 2016), 56% of the mutations found in RBM10 lead to a truncated protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data analysis and citation to Hern\u00e1ndez et al., 2016",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:33:24.788698Z"
+    },
+    {
+      "id": "1c099740-4038-452b-bae4-2125a1c43935",
+      "content_id": "8e4dc244-eb01-4208-9262-ae6ba25d3380",
+      "claim_id": "C26",
+      "claim": "RBM10 functions as a tumor suppressor",
+      "claim_type": "EXPLICIT",
+      "source": "In accordance with its described function as a tumor suppressor (Hern\u00e1ndez et al., 2016), 56% of the mutations found in RBM10 lead to a truncated protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Hern\u00e1ndez et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:33:24.788698Z"
+    },
+    {
+      "id": "4219845e-0385-4891-808f-76c876d0e122",
+      "content_id": "8e4dc244-eb01-4208-9262-ae6ba25d3380",
+      "claim_id": "C27",
+      "claim": "The majority of mutations in SF3B1 and U2AF1 were missense mutations that occurred at hotspot sites",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, in SF3B1 and U2AF1 the majority of mutations were missense mutations that occurred at hotspot sites, indicating a neomorphic function of the mutated proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data analysis from PACA-CA cohort",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:33:24.788698Z"
+    },
+    {
+      "id": "746d311d-a3e9-48b7-a791-6447756f1a47",
+      "content_id": "8e4dc244-eb01-4208-9262-ae6ba25d3380",
+      "claim_id": "C28",
+      "claim": "Missense mutations at hotspot sites in SF3B1 and U2AF1 indicate a neomorphic function of the mutated proteins",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, in SF3B1 and U2AF1 the majority of mutations were missense mutations that occurred at hotspot sites, indicating a neomorphic function of the mutated proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the pattern of mutations observed",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:33:24.788698Z"
+    },
+    {
+      "id": "a32b404c-8d0c-4e51-86e4-7637d1850550",
+      "content_id": "8e4dc244-eb01-4208-9262-ae6ba25d3380",
+      "claim_id": "C29",
+      "claim": "The most frequently found mutation in SF3B1 in PDAC leads to a lysine (K) to glutamic acid (E) change at position 700",
+      "claim_type": "EXPLICIT",
+      "source": "Like in other cancer types, also in PDAC the most frequently found mutation in SF3B1 led to a lysine (K) to glutamic acid (E) change at position 700 (SF3B1K700E; Figure 1\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 1\u2014figure supplement 1B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:33:24.788698Z"
+    },
+    {
+      "id": "108448dc-57dc-4e01-abd8-0b6ab80bf976",
+      "content_id": "8e4dc244-eb01-4208-9262-ae6ba25d3380",
+      "claim_id": "C30",
+      "claim": "Heterozygous activation of the Sf3b1K700E allele did not have any effect on survival of mice after 300 days",
+      "claim_type": "EXPLICIT",
+      "source": "However, heterozygous activation of the Sf3b1K700E allele did not have any effect on survival of mice or weight of the pancreas after 300 days (Figure 1B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by survival data shown in Figure 1B and C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:33:24.788698Z"
+    },
+    {
+      "id": "0c79df32-c3d4-4e77-9915-cff5684c1254",
+      "content_id": "8e4dc244-eb01-4208-9262-ae6ba25d3380",
+      "claim_id": "C31",
+      "claim": "Heterozygous activation of the Sf3b1K700E allele did not have any effect on weight of the pancreas after 300 days",
+      "claim_type": "EXPLICIT",
+      "source": "However, heterozygous activation of the Sf3b1K700E allele did not have any effect on survival of mice or weight of the pancreas after 300 days (Figure 1B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by pancreas weight data shown in Figure 1B and C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:33:24.788698Z"
+    },
+    {
+      "id": "31e81c15-b86e-42ae-9ad7-cc59379a540e",
+      "content_id": "8e4dc244-eb01-4208-9262-ae6ba25d3380",
+      "claim_id": "C32",
+      "claim": "KPC-Sf3b1K700E/+ animals displayed a significantly shorter survival compared to KPC mice",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, KPC-Sf3b1K700E/+ animals displayed a significantly shorter survival (mean survival 57 days vs. 64 days), and an increased tumor size compared to KPC mice at the age of 9 weeks (Figure 1D\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by survival data shown in Figure 1E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:33:24.788698Z"
+    },
+    {
+      "id": "c70ded41-9c92-4693-a884-086bb93f1b7d",
+      "content_id": "8e4dc244-eb01-4208-9262-ae6ba25d3380",
+      "claim_id": "C33",
+      "claim": "KPC-Sf3b1K700E/+ animals displayed an increased tumor size compared to KPC mice at the age of 9 weeks",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, KPC-Sf3b1K700E/+ animals displayed a significantly shorter survival (mean survival 57 days vs. 64 days), and an increased tumor size compared to KPC mice at the age of 9 weeks (Figure 1D\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by tumor size data shown in Figure 1F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:33:24.788698Z"
+    },
+    {
+      "id": "b3cda6fe-74c1-4d88-a0c0-f71c97d990c5",
+      "content_id": "8e4dc244-eb01-4208-9262-ae6ba25d3380",
+      "claim_id": "C34",
+      "claim": "67% of KPC-Sf3b1K700E/+ mice vs. 25% of KPC mice developed PDAC at 5 weeks of age",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, when we analyzed pancreata of 5-week-old mice, already 67% of KPC-Sf3b1K700E/+ mice vs. 25% of KPC mice developed PDAC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by histological analysis of 5-week-old mice",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:33:24.788698Z"
+    },
+    {
+      "id": "4f31945e-b066-445a-b47a-d5c1080826b8",
+      "content_id": "8e4dc244-eb01-4208-9262-ae6ba25d3380",
+      "claim_id": "C35",
+      "claim": "KPC-Sf3b1K700E/+ mice showed an increase in acinar-to-ductal metaplasia (ADM) formation at 5 weeks of age",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, we observed an increase in acinar-to-ductal metaplasia (ADM) formation and in the number of CK19 and MUC5AC positive cells, and a reduction in \u00df-amylase staining (Figure 1G\u2013J, Figure 1\u2014figure supplement 1J, K).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by histological data shown in Figure 1G-J and Figure 1\u2014figure supplement 1J, K",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:33:24.788698Z"
+    },
+    {
+      "id": "fdc779c1-da17-42c7-8e8c-ac68045fab32",
+      "content_id": "8e4dc244-eb01-4208-9262-ae6ba25d3380",
+      "claim_id": "C36",
+      "claim": "KPC-Sf3b1K700E/+ mice showed an increase in the number of CK19 positive cells at 5 weeks of age",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, we observed an increase in acinar-to-ductal metaplasia (ADM) formation and in the number of CK19 and MUC5AC positive cells, and a reduction in \u00df-amylase staining (Figure 1G\u2013J, Figure 1\u2014figure supplement 1J, K).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunofluorescence data shown in Figure 1G-J",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:33:24.788698Z"
+    },
+    {
+      "id": "37aa3e60-a402-45ce-9844-b74f2ba1cd33",
+      "content_id": "8e4dc244-eb01-4208-9262-ae6ba25d3380",
+      "claim_id": "C37",
+      "claim": "KPC-Sf3b1K700E/+ mice showed an increase in the number of MUC5AC positive cells at 5 weeks of age",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, we observed an increase in acinar-to-ductal metaplasia (ADM) formation and in the number of CK19 and MUC5AC positive cells, and a reduction in \u00df-amylase staining (Figure 1G\u2013J, Figure 1\u2014figure supplement 1J, K).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunofluorescence data shown in Figure 1G-J",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:33:24.788698Z"
+    },
+    {
+      "id": "5b78e85e-ba36-494b-ad83-bfacde7f5c26",
+      "content_id": "8e4dc244-eb01-4208-9262-ae6ba25d3380",
+      "claim_id": "C38",
+      "claim": "KPC-Sf3b1K700E/+ mice showed a reduction in \u00df-amylase staining at 5 weeks of age",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, we observed an increase in acinar-to-ductal metaplasia (ADM) formation and in the number of CK19 and MUC5AC positive cells, and a reduction in \u00df-amylase staining (Figure 1G\u2013J, Figure 1\u2014figure supplement 1J, K).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunofluorescence data shown in Figure 1G-J and Figure 1\u2014figure supplement 1J, K",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:33:24.788698Z"
+    },
+    {
+      "id": "7631846d-7443-4be5-b9bd-6cf0991370ee",
+      "content_id": "8e4dc244-eb01-4208-9262-ae6ba25d3380",
+      "claim_id": "C39",
+      "claim": "At 43 weeks of age, the area of neoplastic pancreas tissue was increased in KC-Sf3b1K700E/+ mice compared to KC mice",
+      "claim_type": "EXPLICIT",
+      "source": "At 43 weeks of age, the area of neoplastic pancreas tissue was increased, and in 64% of KC-Sf3b1K700E/+ mice vs. 10% of KC mice the lesions had already progressed to PDAC (Figure 1L; Figure 1\u2014figure supplement 1L).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by histological data shown in Figure 1L and Figure 1\u2014figure supplement 1L",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:33:24.788698Z"
+    },
+    {
+      "id": "9bff8d25-246c-432e-bf8e-ac7865f839b3",
+      "content_id": "8e4dc244-eb01-4208-9262-ae6ba25d3380",
+      "claim_id": "C40",
+      "claim": "64% of KC-Sf3b1K700E/+ mice vs. 10% of KC mice had lesions that progressed to PDAC at 43 weeks of age",
+      "claim_type": "EXPLICIT",
+      "source": "At 43 weeks of age, the area of neoplastic pancreas tissue was increased, and in 64% of KC-Sf3b1K700E/+ mice vs. 10% of KC mice the lesions had already progressed to PDAC (Figure 1L; Figure 1\u2014figure supplement 1L).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by histological data shown in Figure 1L",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:33:24.788698Z"
+    },
+    {
+      "id": "dc5b33fc-179c-40fc-8e44-b59dabd99b4a",
+      "content_id": "8e4dc244-eb01-4208-9262-ae6ba25d3380",
+      "claim_id": "C41",
+      "claim": "The time of disease-free survival was significantly shortened in KC-Sf3b1K700E/+ mice vs. KC mice",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the time of disease-free survival was significantly shortened in KC-Sf3b1K700E/+ mice vs. KC mice (Figure 1K).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by survival data shown in Figure 1K",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:33:24.788698Z"
+    },
+    {
+      "id": "7afe807f-2f7b-49fa-b8f6-1cffef0caa72",
+      "content_id": "8e4dc244-eb01-4208-9262-ae6ba25d3380",
+      "claim_id": "C42",
+      "claim": "In orthotopically transplanted KPC and KPC-Sf3b1K700E cells from fully developed PDAC tumors, no differences in tumor growth were observed",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, in a model for advanced cancer, where KPC and KPC-Sf3b1K700E cells were harvested from fully developed PDAC tumors and expanded in vitro before being orthotopically transplanted, we did not observe differences in tumor growth (Figure 1\u2014figure supplement 1M, N).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by tumor growth data shown in Figure 1\u2014figure supplement 1M, N",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:33:24.788698Z"
+    },
+    {
+      "id": "b56ebe18-c9fc-4229-8d82-9f43194449b8",
+      "content_id": "8e4dc244-eb01-4208-9262-ae6ba25d3380",
+      "claim_id": "C43",
+      "claim": "SF3B1K700E contributes to PDAC malignancy by accelerating the formation of precursor lesions",
+      "claim_type": "EXPLICIT",
+      "source": "Together, our data demonstrate that the SF3B1K700E contributes to PDAC malignancy by accelerating the formation of precursor lesions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from data showing effects in early stage tumors but not in advanced transplanted tumors",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:33:24.788698Z"
+    },
+    {
+      "id": "999e1dd6-52eb-4379-8bd4-a823bf2bc538",
+      "content_id": "8e4dc244-eb01-4208-9262-ae6ba25d3380",
+      "claim_id": "C44",
+      "claim": "Principal component analysis separated KPC and KPC-Sf3b1K700E/+ sequenced replicates according to genotype",
+      "claim_type": "EXPLICIT",
+      "source": "Principal component analysis separated the sequenced replicates (3 KPC and 4 KPC-Sf3b1K700E/+ tumors) according to the genotype, indicating a major impact of the K700E mutation on the transcriptome (Figure 2\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by PCA data shown in Figure 2\u2014figure supplement 1B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:33:24.788698Z"
+    },
+    {
+      "id": "fc3e5450-905c-48f1-b19d-064675cbdd40",
+      "content_id": "8e4dc244-eb01-4208-9262-ae6ba25d3380",
+      "claim_id": "C45",
+      "claim": "IFN-\u03b1-response was the most significantly enriched pathway in KPC-Sf3b1K700E/+ tumor cells",
+      "claim_type": "EXPLICIT",
+      "source": "We next performed gene set enrichment analysis (GSEA), which revealed IFN-\u03b1-response as the most significantly enriched pathway in KPC-Sf3b1K700E/+ tumor cells (Figure 2\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by GSEA data shown in Figure 2\u2014figure supplement 1C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:33:24.788698Z"
+    },
+    {
+      "id": "a60bacf0-f2ef-4bd2-8d43-5974f4a56b5e",
+      "content_id": "8e4dc244-eb01-4208-9262-ae6ba25d3380",
+      "claim_id": "C46",
+      "claim": "Aberrant splicing caused by SF3B1 inhibition or oncogenic SF3B1 mutations induces an IFN-\u03b1-response through retinoic acid-inducible gene I (RIG-I) mediated recognition of cytosolic aberrant RNA-species",
+      "claim_type": "EXPLICIT",
+      "source": "This result is in line with a previous study, which found that aberrant splicing caused by SF3B1 inhibition or oncogenic SF3B1 mutations induces an IFN-\u03b1-response through retinoic acid-inducible gene I (RIG-I) mediated recognition of cytosolic aberrant RNA-species (Chang et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Chang et al., 2021",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:33:24.788698Z"
+    },
+    {
+      "id": "b167073f-0d01-43db-8711-43b603cd40ff",
+      "content_id": "8e4dc244-eb01-4208-9262-ae6ba25d3380",
+      "claim_id": "C47",
+      "claim": "Epithelial-mesenchymal transition (EMT) emerged as the most significantly attenuated gene set in KPC-Sf3b1K700E/+ cells",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, epithelial-mesenchymal transition (EMT) emerged as the most significantly attenuated gene set in KPC-Sf3b1K700E/+ cells (Figure 2A and B, Figure 2\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by GSEA data shown in Figure 2A, B and Figure 2\u2014figure supplement 1C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:33:24.788698Z"
+    },
+    {
+      "id": "59859930-b801-472f-aacf-844a4302f453",
+      "content_id": "8e4dc244-eb01-4208-9262-ae6ba25d3380",
+      "claim_id": "C48",
+      "claim": "Tenascin-C (Tnc) is downregulated in KPC-Sf3b1K700E/+ tumors",
+      "claim_type": "EXPLICIT",
+      "source": "We first confirmed downregulation of the most significantly depleted gene of the EMT gene set, the glycoprotein Tenascin-C (Tnc), by qPCR on additional KPC-Sf3b1K700E/+ tumor samples (Figure 2C) and by histology in KPC-Sf3b1K700E/+ PDAC sections (Figure 2D and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by qPCR and histology data shown in Figure 2C, D, and E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:33:24.788698Z"
+    },
+    {
+      "id": "b930a045-6a84-4535-be5d-6f03b4aff320",
+      "content_id": "8e4dc244-eb01-4208-9262-ae6ba25d3380",
+      "claim_id": "C49",
+      "claim": "71% of the analysed EMT genes were significantly reduced in KPC-Sf3b1K700E/+ vs. KPC organoids",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, 71% of the analysed genes were significantly reduced in KPC-Sf3b1K700E/+ vs. KPC organoids, with none of the genes showing a trend towards elevated expression (Figure 2F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by qPCR data shown in Figure 2F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:33:24.788698Z"
+    },
+    {
+      "id": "e9a6ccce-6a44-4579-b23c-414cc19cda27",
+      "content_id": "8e4dc244-eb01-4208-9262-ae6ba25d3380",
+      "claim_id": "C50",
+      "claim": "55% of the analysed EMT genes were significantly downregulated in Sf3b1K700E vs. Sf3b1 WT organoids established from non-cancerous pancreata",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, also in this experimental setup 55% of the analysed EMT genes were significantly downregulated in Sf3b1K700E vs. Sf3b1 WT organoids, with only one of the analysed genes showing a minor trend for elevated expression (Figure 2\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by qPCR data shown in Figure 2\u2014figure supplement 1D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:33:24.788698Z"
+    },
+    {
+      "id": "02f67e57-8da7-45cf-88e0-d86b171922b7",
+      "content_id": "8e4dc244-eb01-4208-9262-ae6ba25d3380",
+      "claim_id": "C51",
+      "claim": "Sf3b1K700E mediates downregulation of EMT-related genes in PDAC in a cell autonomous manner",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these data indicate that Sf3b1K700E mediates downregulation of EMT-related genes in PDAC a cell autonomous manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from organoid experiments showing EMT gene downregulation independent of tumor microenvironment",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:33:24.788698Z"
+    },
+    {
+      "id": "d9100475-552a-4a64-846f-ccdb6f724a29",
+      "content_id": "8e4dc244-eb01-4208-9262-ae6ba25d3380",
+      "claim_id": "C52",
+      "claim": "80% of the analysed EMT genes were strongly induced by TGF-\u03b2 in tumour derived KPC cells",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, we found that 80% of the analysed genes were strongly induced by TGF-\u03b2 in tumour derived KPC cells (Figure 2\u2014figure supplement 1E)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by qPCR data shown in Figure 2\u2014figure supplement 1E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:33:24.788698Z"
+    },
+    {
+      "id": "db1182c0-41d4-4d1f-8c9b-9e6ae3ae2443",
+      "content_id": "8e4dc244-eb01-4208-9262-ae6ba25d3380",
+      "claim_id": "C53",
+      "claim": "TNF-\u03b1 significantly upregulated only 20% of the analysed EMT genes in KPC cells",
+      "claim_type": "EXPLICIT",
+      "source": "whereas TNF-\u03b1 significantly upregulated only 20% of these genes (Figure 2\u2014figure supplement 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by qPCR data shown in Figure 2\u2014figure supplement 1F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:33:24.788698Z"
+    },
+    {
+      "id": "e8d6ce92-f965-4603-9cd3-6d59bb4b002d",
+      "content_id": "8e4dc244-eb01-4208-9262-ae6ba25d3380",
+      "claim_id": "C54",
+      "claim": "In vitro induced Sf3b1K700E KPC cells fail or only partially induce 6 of the 9 assessed EMT genes when stimulated with TGF-\u03b2",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we observed that in vitro induced Sf3b1K700E KPC cells fail or only partially induce 6 of the 9 assessed EMT genes when stimulated with TGF-\u03b2 (Figure 2\u2014figure supplement 1G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by qPCR data shown in Figure 2\u2014figure supplement 1G",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:33:24.788698Z"
+    },
+    {
+      "id": "cc04f0ea-d813-42af-88eb-656e8accacc4",
+      "content_id": "8e4dc244-eb01-4208-9262-ae6ba25d3380",
+      "claim_id": "C55",
+      "claim": "In vitro induced Sf3b1K700E KPC organoids exhibit a sixfold decrease in matrigel invasion compared to KPC control organoids when stimulated with TGF-\u03b2",
+      "claim_type": "EXPLICIT",
+      "source": "In line with these results, in vitro induced Sf3b1K700E KPC organoids exhibit a sixfold decrease in matrigel invasion compared to KPC control organoids when stimulated with TGF-\u03b2 (Figure 2G and H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by invasion assay data shown in Figure 2G and H",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:33:24.788698Z"
+    },
+    {
+      "id": "b634aa69-2a96-4dc2-90ba-7ad25dd2319c",
+      "content_id": "8e4dc244-eb01-4208-9262-ae6ba25d3380",
+      "claim_id": "C56",
+      "claim": "Human PANC-1 cells expressing SF3B1K700E display a reduced migratory rate compared to control PANC-1 cells expressing wildtype SF3B1 in a wound healing assay upon TGF-\u03b2 stimulation",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, human PANC-1 cells expressing SF3B1K700E display a reduced migratory rate compared to control PANC-1 cells expressing wildtype SF3B1 in a wound healing assay upon TGF-\u03b2 stimulation (Figure 2I and J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by wound healing assay data shown in Figure 2I and J",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:33:24.788698Z"
+    },
+    {
+      "id": "d348e989-cf96-4467-bf34-2d87f52cef0b",
+      "content_id": "8e4dc244-eb01-4208-9262-ae6ba25d3380",
+      "claim_id": "C57",
+      "claim": "In pancreatic lesions TGF-\u03b2 induces EMT, followed by apoptosis of the affected cells in a process termed lethal EMT",
+      "claim_type": "EXPLICIT",
+      "source": "In pancreatic lesions TGF-\u03b2 induces EMT, followed by apoptosis of the affected cells in a process termed lethal EMT (David et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to David et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:33:24.788698Z"
+    },
+    {
+      "id": "6626de45-91b9-4e1f-b9da-93528be1090b",
+      "content_id": "8e4dc244-eb01-4208-9262-ae6ba25d3380",
+      "claim_id": "C58",
+      "claim": "The majority of apoptotic cells in KPC tumors reside in the lumen of PanINs",
+      "claim_type": "EXPLICIT",
+      "source": "Performing immunofluorescence staining for cleaved caspase 3 in KPC tumors, we first confirmed that the majority of apoptotic cells reside in the lumen of PanINs (Figure 3\u2014figure supplement 1A, B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunofluorescence data shown in Figure 3\u2014figure supplement 1A, B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:33:24.788698Z"
+    },
+    {
+      "id": "1fe5e0dc-b5a8-487e-a740-7c78e1a4b971",
+      "content_id": "8e4dc244-eb01-4208-9262-ae6ba25d3380",
+      "claim_id": "C59",
+      "claim": "Apoptotic cells in the lumen of PanINs are negative for the epithelial marker E-cadherin and positive for the mesenchymal marker Fibronectin-1",
+      "claim_type": "EXPLICIT",
+      "source": "and that these cells are negative for the epithelial marker E-cadherin and positive for the mesenchymal marker Fibronectin-1 (Figure 3\u2014figure supplement 1C; Hruban et al., 2006).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunofluorescence data shown in Figure 3\u2014figure supplement 1C and citation to Hruban et al., 2006",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:33:24.788698Z"
+    },
+    {
+      "id": "e737ed78-aeaa-40d2-83df-475d8a903729",
+      "content_id": "8e4dc244-eb01-4208-9262-ae6ba25d3380",
+      "claim_id": "C60",
+      "claim": "Sf3b1K700E tumors showed a reduction in luminally extruded cells",
+      "claim_type": "EXPLICIT",
+      "source": "In line with our hypothesis, we observed a reduction in luminally extruded cells and a reduction in cleaved caspase 3-positive cells (CC3, Figure 3A and B, Figure 3\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by histological data shown in Figure 3A, B and Figure 3\u2014figure supplement 1D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:33:24.788698Z"
+    },
+    {
+      "id": "d4bf8970-019b-4e50-b30d-e8d757890d8c",
+      "content_id": "8e4dc244-eb01-4208-9262-ae6ba25d3380",
+      "claim_id": "C61",
+      "claim": "Sf3b1K700E tumors showed a reduction in cleaved caspase 3-positive cells",
+      "claim_type": "EXPLICIT",
+      "source": "In line with our hypothesis, we observed a reduction in luminally extruded cells and a reduction in cleaved caspase 3-positive cells (CC3, Figure 3A and B, Figure 3\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunofluorescence data shown in Figure 3A, B and Figure 3\u2014figure supplement 1D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:33:24.788698Z"
+    },
+    {
+      "id": "74e84525-6780-47a5-971d-5de5ed64afdd",
+      "content_id": "8e4dc244-eb01-4208-9262-ae6ba25d3380",
+      "claim_id": "C62",
+      "claim": "Sf3b1 mutant KPC tumor organoids showed reduced cleaved caspase 3 and 7 activity when exposed to TGF-\u03b21",
+      "claim_type": "EXPLICIT",
+      "source": "To further analyse the impact of Sf3b1K700E on the tumor suppressive effect of TGF-\u03b2, we exposed Sf3b1 WT and Sf3b1K700E KPC tumor organoids to TGF-\u03b21. We again observed reduced cleaved caspase 3 and 7 activity in Sf3b1 mutant organoids, and a greatly increased survival rate (72% vs 17% surviving organoids, Figure 3C\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by caspase activity assay data shown in Figure 3C-E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:33:24.788698Z"
+    },
+    {
+      "id": "83cd68da-ced5-4afc-b57e-7a5233f54999",
+      "content_id": "8e4dc244-eb01-4208-9262-ae6ba25d3380",
+      "claim_id": "C63",
+      "claim": "72% of Sf3b1K700E KPC tumor organoids vs 17% of WT KPC tumor organoids survived TGF-\u03b21 treatment",
+      "claim_type": "EXPLICIT",
+      "source": "We again observed reduced cleaved caspase 3 and 7 activity in Sf3b1 mutant organoids, and a greatly increased survival rate (72% vs 17% surviving organoids, Figure 3C\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by organoid viability data shown in Figure 3C-E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:33:24.788698Z"
+    },
+    {
+      "id": "a98859b8-4dbb-4a5d-b815-3c7b1d4e655f",
+      "content_id": "8e4dc244-eb01-4208-9262-ae6ba25d3380",
+      "claim_id": "C64",
+      "claim": "Treatment with TGF-\u03b21 led to significantly lower caspase 3 and 7 activity in Sf3b1K700E/+ vs. wildtype non-cancerous pancreatic organoids",
+      "claim_type": "EXPLICIT",
+      "source": "While Sf3b1K700E led to slightly reduced proliferation without supplementation of TGF-\u03b21 (Figure 3\u2014figure supplement 1E), treatment with TGF-\u03b21 led to significantly lower caspase 3 and 7 activity in Sf3b1K700E/+ vs. wildtype organoids and to significantly enhanced survival (77% vs 3%) (Figure 3F\u2013H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by caspase activity assay data shown in Figure 3F-H",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:33:24.788698Z"
+    },
+    {
+      "id": "95d5ad60-c2c7-4f8c-b1fa-7e263090e071",
+      "content_id": "8e4dc244-eb01-4208-9262-ae6ba25d3380",
+      "claim_id": "C65",
+      "claim": "77% of Sf3b1K700E/+ non-cancerous organoids vs 3% of WT non-cancerous organoids survived TGF-\u03b21 treatment",
+      "claim_type": "EXPLICIT",
+      "source": "While Sf3b1K700E led to slightly reduced proliferation without supplementation of TGF-\u03b21 (Figure 3\u2014figure supplement 1E), treatment with TGF-\u03b21 led to significantly lower caspase 3 and 7 activity in Sf3b1K700E/+ vs. wildtype organoids and to significantly enhanced survival (77% vs 3%) (Figure 3F\u2013H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by organoid viability data shown in Figure 3F-H",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:33:24.788698Z"
+    },
+    {
+      "id": "231a4f36-2eac-445f-8761-1037ec101759",
+      "content_id": "8e4dc244-eb01-4208-9262-ae6ba25d3380",
+      "claim_id": "C66",
+      "claim": "Exposure to low levels of TGF-\u03b21 allowed long-term expansion of Sf3b1K700E/+ organoids for over 120 days, while the number of Sf3b1 WT organoids rapidly declined within the first 15 days",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, exposure to low levels (1 ng/ml and 2 ng/ml) of TGF-\u03b21 also allowed long-term expansion of Sf3b1K700E/+ organoids (analysed for over 120 days), while the number of Sf3b1 WT organoids rapidly declined within the first 15 days (Figure 3I, Figure 3\u2014figure supplement 1G, H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by long-term organoid culture data shown in Figure 3I and Figure 3\u2014figure supplement 1G, H",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:33:24.788698Z"
+    },
+    {
+      "id": "f9548298-36dc-449b-b9b5-881c00ea9c71",
+      "content_id": "8e4dc244-eb01-4208-9262-ae6ba25d3380",
+      "claim_id": "C67",
+      "claim": "Overexpression of mutant SF3B1K700E resulted in increased viability upon TGF-\u03b21 exposure compared to overexpression of wildtype SF3B1 in human H6c7 pancreatic duct cells",
+      "claim_type": "EXPLICIT",
+      "source": "In line with our results from murine PDAC, overexpression of mutant SF3B1K700E resulted in an increased viability upon TGF-\u03b21 exposure compared to overexpression of wildtype SF3B1 (Figure 3J)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by viability assay data shown in Figure 3J",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:33:24.788698Z"
+    },
+    {
+      "id": "ca99acdf-0a3c-47fd-a8ab-0929834d4366",
+      "content_id": "8e4dc244-eb01-4208-9262-ae6ba25d3380",
+      "claim_id": "C68",
+      "claim": "SF3B1K700E had no effect on proliferation in absence of TGF-\u03b21 treatment in human pancreatic duct cells and PDAC cell lines",
+      "claim_type": "EXPLICIT",
+      "source": "while no effect of SF3B1K700E on proliferation was observed in absence of TGF-\u03b21 treatment in human pancreatic duct cells and PDAC cell lines (Figure 3\u2014figure supplement 1J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by proliferation data shown in Figure 3\u2014figure supplement 1J",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:33:24.788698Z"
+    },
+    {
+      "id": "da094290-a922-4d8b-9849-4e34693efd96",
+      "content_id": "8e4dc244-eb01-4208-9262-ae6ba25d3380",
+      "claim_id": "C69",
+      "claim": "SF3B1K700E predominantly causes alternative 3' splice events in KPC tumor cells",
+      "claim_type": "EXPLICIT",
+      "source": "By analysing RNA-seq data from sorted KPC vs. KPC-Sf3b1K700E/+ tumor cells we predominantly identified alternative 3' splice events (Figure 4A, Supplementary file 2)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by RNA-seq splicing analysis shown in Figure 4A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:33:24.788698Z"
+    },
+    {
+      "id": "c11e31c8-876f-452b-89f7-5c0b89709278",
+      "content_id": "8e4dc244-eb01-4208-9262-ae6ba25d3380",
+      "claim_id": "C70",
+      "claim": "Cryptic 3' splice sites in SF3B1K700E mutant cells show an upstream adenosine enrichment",
+      "claim_type": "EXPLICIT",
+      "source": "with cryptic 3' ss showing an upstream adenosine enrichment and a less pronounced polypyrimidine tract most frequently located 8\u201314 bases upstream of the canonical 3' ss (Figure 4B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by motif analysis shown in Figure 4B and C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:33:24.788698Z"
+    },
+    {
+      "id": "6224de70-3985-4864-844e-0b290e06f11d",
+      "content_id": "8e4dc244-eb01-4208-9262-ae6ba25d3380",
+      "claim_id": "C71",
+      "claim": "Cryptic 3' splice sites in SF3B1K700E mutant cells show a less pronounced polypyrimidine tract",
+      "claim_type": "EXPLICIT",
+      "source": "with cryptic 3' ss showing an upstream adenosine enrichment and a less pronounced polypyrimidine tract most frequently located 8\u201314 bases upstream of the canonical 3' ss (Figure 4B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by motif analysis shown in Figure 4B and C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:33:24.788698Z"
+    },
+    {
+      "id": "57d5f617-5f73-47a2-9606-9fbc1cb02dc8",
+      "content_id": "8e4dc244-eb01-4208-9262-ae6ba25d3380",
+      "claim_id": "C72",
+      "claim": "Cryptic 3' splice sites in SF3B1K700E mutant cells are most frequently located 8\u201314 bases upstream of the canonical 3' ss",
+      "claim_type": "EXPLICIT",
+      "source": "with cryptic 3' ss showing an upstream adenosine enrichment and a less pronounced polypyrimidine tract most frequently located 8\u201314 bases upstream of the canonical 3' ss (Figure 4B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by distance analysis shown in Figure 4B and C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:33:24.788698Z"
+    },
+    {
+      "id": "52e70cd3-e3fb-4ba5-ada5-5a3e3c6bacf5",
+      "content_id": "8e4dc244-eb01-4208-9262-ae6ba25d3380",
+      "claim_id": "C73",
+      "claim": "SF3B1K700E-dependent alternative splice events in mice are consistent with previous splice-analyses performed in various murine SF3B1 mutant tissues",
+      "claim_type": "EXPLICIT",
+      "source": "These findings are in accordance with previous splice-analyses performed in various murine SF3B1 mutant tissues (Liu et al., 2021; Mupo et al., 2017; Obeng et al., 2016; Yin et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Liu et al., 2021; Mupo et al., 2017; Obeng et al., 2016; Yin et al., 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:33:24.788698Z"
+    },
+    {
+      "id": "3094c504-e058-421f-84a8-acd9b611c2cf",
+      "content_id": "8e4dc244-eb01-4208-9262-ae6ba25d3380",
+      "claim_id": "C74",
+      "claim": "In human cancers the SF3B1K700E hotspot mutation leads to a predominant use of cryptic 3' ss",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with previous studies, we found that also in human cancers the SF3B1K700E hotspot mutation leads to a predominant use of cryptic 3' ss (Figure 4\u2014figure supplement 1A, B, Supplementary file 2; Alsafadi et al., 2016; DeBoever et al., 2015; Kesarwani et al., 2017; Tang et al., 2020; Wang et al., 2016).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by pan-cancer analysis shown in Figure 4\u2014figure supplement 1A, B and citations",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:33:24.788698Z"
+    },
+    {
+      "id": "f21c7ec5-3ec1-465b-9e05-14b90c6b493b",
+      "content_id": "8e4dc244-eb01-4208-9262-ae6ba25d3380",
+      "claim_id": "C75",
+      "claim": "11 genes contained an alternative 3' splice-event linked to SF3B1K700E in both human tumors and KPC mice",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, we further identified 11 genes that contained an alternative 3' splice-event linked to SF3B1K700E in human tumors as well as in KPC mice (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by comparative analysis shown in Figure 4D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:33:24.788698Z"
+    },
+    {
+      "id": "529fbc40-0263-4220-b9a0-e9674931412f",
+      "content_id": "8e4dc244-eb01-4208-9262-ae6ba25d3380",
+      "claim_id": "C76",
+      "claim": "One third of Map3k7 transcripts were misspliced in pancreata of Sf3b1K700E/+ and KPC-Sf3b1K700E/+ mice",
+      "claim_type": "EXPLICIT",
+      "source": "Using targeted RNA-seq, we discovered that one third of Map3k7 transcripts were misspliced in pancreata of Sf3b1K700E/+ and KPC-Sf3b1K700E/+ mice (Figure 4E and F, Figure 4\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by targeted RNA-seq data shown in Figure 4E, F and Figure 4\u2014figure supplement 1C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:33:24.788698Z"
+    },
+    {
+      "id": "c2cc0ddf-086f-433e-9818-66d5d1a88e92",
+      "content_id": "8e4dc244-eb01-4208-9262-ae6ba25d3380",
+      "claim_id": "C77",
+      "claim": "MAP3K7 was misspliced in H6c7 cells and human PDAC cell lines overexpressing SF3B1K700E",
+      "claim_type": "EXPLICIT",
+      "source": "Confirming inter-species conservation of this alternative splice-event, MAP3K7 was also misspliced in H6c7 cells and human PDAC cell lines overexpressing SF3B1K700E (Figure 4F, Figure 4\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by RT-PCR data shown in Figure 4F and Figure 4\u2014figure supplement 1D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:33:24.788698Z"
+    },
+    {
+      "id": "cf2f4715-a0f8-4543-89af-5bbd73981ad8",
+      "content_id": "8e4dc244-eb01-4208-9262-ae6ba25d3380",
+      "claim_id": "C78",
+      "claim": "No significant alternative 3'ss usage or mRNA expression of Ppp2r5a was observed in KPC-Sf3b1K700E tumor cells",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, when we further assessed SF3B1K700E dependent alternative splicing of Ppp2r5a, which was reported to impair apoptosis via post-translational modification of BCL2 in leukaemia (Liu et al., 2020a), we did not observe significant alternative 3'ss usage or mRNA expression of Ppp2r5a in KPC-Sf3b1K700E tumor cells (Figure 4\u2014figure supplement 1E, F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by RT-qPCR and RT-PCR data shown in Figure 4\u2014figure supplement 1E, F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:33:24.788698Z"
+    },
+    {
+      "id": "04f69b40-acd6-4565-884e-0563e0e63e14",
+      "content_id": "8e4dc244-eb01-4208-9262-ae6ba25d3380",
+      "claim_id": "C79",
+      "claim": "Ppp2r5a missplicing shows tissue-specificity",
+      "claim_type": "EXPLICIT",
+      "source": "This observation indicates tissue-specificity of Ppp2r5a missplicing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the absence of Ppp2r5a missplicing in PDAC despite its presence in leukemia",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:33:24.788698Z"
+    },
+    {
+      "id": "8bd91394-ff02-40e7-8872-16f3fec4a89e",
+      "content_id": "8e4dc244-eb01-4208-9262-ae6ba25d3380",
+      "claim_id": "C80",
+      "claim": "MAP3K7 mediates non-canonical TGF-\u03b2 signaling",
+      "claim_type": "EXPLICIT",
+      "source": "Among the identified genes was Map3k7, which is known to mediate non-canonical TGF-\u03b2 signaling (Kim and Choi, 2012)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Kim and Choi, 2012",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:33:24.788698Z"
+    },
+    {
+      "id": "17485356-7419-4ed9-9bb5-3a2350c92c05",
+      "content_id": "8e4dc244-eb01-4208-9262-ae6ba25d3380",
+      "claim_id": "C82",
+      "claim": "Sf3b1K700E dependent missplicing in MAP3K7 results in reduced RNA and protein levels of MAP3K7",
+      "claim_type": "EXPLICIT",
+      "source": "Since Sf3b1K700E dependent missplicing in MAP3K7 was shown to result in reduced RNA and protein levels of MAP3K7 in leukaemia (North et al., 2022)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to North et al., 2022",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:33:24.788698Z"
+    },
+    {
+      "id": "b6db2ddd-5d9c-4885-bc2d-83464c12cc69",
+      "content_id": "8e4dc244-eb01-4208-9262-ae6ba25d3380",
+      "claim_id": "C84",
+      "claim": "A decrease of Map3k7 mRNA levels to 35% led to a reduced expression in 7 out of 10 EMT genes in KPC cells",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, a decrease of Map3k7 mRNA levels to 35% (SD \u00b1 10%) led to a reduced expression in 7 out of 10 EMT genes (Figure 5\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by RT-qPCR data shown in Figure 5\u2014figure supplement 1B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:33:24.788698Z"
+    },
+    {
+      "id": "263e1ec7-1e20-4b40-aee7-c9eab8df73d0",
+      "content_id": "8e4dc244-eb01-4208-9262-ae6ba25d3380",
+      "claim_id": "C85",
+      "claim": "Knocking down Map3k7 in pre-cancerous pancreas organoids led to increased viability upon TGF-\u03b21-treatment",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, knocking down Map3k7 in pre-cancerous pancreas organoids led to increased viability upon TGF-\u03b21-treatment (Figure 5F, Figure 5\u2014figure supplement 1C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by organoid viability data shown in Figure 5F and Figure 5\u2014figure supplement 1C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:33:24.788698Z"
+    },
+    {
+      "id": "888f0fff-0e31-4b96-9c3e-ec9f1ce6ec91",
+      "content_id": "8e4dc244-eb01-4208-9262-ae6ba25d3380",
+      "claim_id": "C86",
+      "claim": "Chemical inhibition of p38 partially protected organoids against TGF-\u03b21-induced cell death",
+      "claim_type": "EXPLICIT",
+      "source": "and chemical inhibition of p38, one of the major effectors of MAP3K7, partially protected organoids against TGF-\u03b21-induced cell death (Figure 5G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by organoid viability data with chemical inhibitors shown in Figure 5G",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:33:24.788698Z"
+    },
+    {
+      "id": "f68c4054-5780-449e-851f-90984ce67858",
+      "content_id": "8e4dc244-eb01-4208-9262-ae6ba25d3380",
+      "claim_id": "C87",
+      "claim": "Overexpression of the full-length isoform of MAP3K7 in TGF-\u03b21-treated Sf3b1K700E mutant organoids significantly decreased their viability",
+      "claim_type": "EXPLICIT",
+      "source": "Further supporting our hypothesis that Sf3b1K700E mediates resistance to TGF-\u03b21 via MAP3K7, overexpression of the full-length isoform of MAP3K7 in TGF-\u03b21-treated Sf3b1K700E mutant organoids significantly decreased their viability (Figure 5H1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by organoid viability data with MAP3K7 overexpression shown in Figure 5H and I",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:33:24.788698Z"
+    },
+    {
+      "id": "3f745363-ccfe-4dec-9409-6ccc7d414d29",
+      "content_id": "8e4dc244-eb01-4208-9262-ae6ba25d3380",
+      "claim_id": "C88",
+      "claim": "Inhibition of MAP3K7 with Takinib in human pancreatic H6c7 cells led to a significant increase in survival upon TGF-\u03b21 treatment",
+      "claim_type": "EXPLICIT",
+      "source": "In line with our results in murine cells, also in human pancreatic cells inhibition of MAP3K7 led to a significant increase in survival (Figure 5J and K).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by viability data shown in Figure 5J and K",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:33:24.788698Z"
+    },
+    {
+      "id": "62195c86-f6c2-46f1-ba83-7a57e1e6f360",
+      "content_id": "8e4dc244-eb01-4208-9262-ae6ba25d3380",
+      "claim_id": "C89",
+      "claim": "Inhibition of MAP3K7 with Takinib in human pancreatic organoids led to a significant increase in survival upon TGF-\u03b21 treatment",
+      "claim_type": "EXPLICIT",
+      "source": "In line with our results in murine cells, also in human pancreatic cells inhibition of MAP3K7 led to a significant increase in survival (Figure 5J and K).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by viability data shown in Figure 5J and K",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:33:24.788698Z"
+    },
+    {
+      "id": "daed7516-d6cc-4db8-9cae-c05af5f04d70",
+      "content_id": "8e4dc244-eb01-4208-9262-ae6ba25d3380",
+      "claim_id": "C90",
+      "claim": "Conditioning human PANC-1 PDAC cells with Takinib prior to TGF-\u03b21 exposure resulted in a significant decrease in migratory capacity in wound healing assays",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, conditioning human PANC-1 PDAC cells with TAKi prior to TGF-\u03b21 exposure resulted in a significant decrease in migratory capacity in wound healing assays (Figure 5L and M).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by wound healing assay data shown in Figure 5L and M",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:33:24.788698Z"
+    },
+    {
+      "id": "75451b67-a669-4ff3-8635-b5ff4bb9a668",
+      "content_id": "8e4dc244-eb01-4208-9262-ae6ba25d3380",
+      "claim_id": "C91",
+      "claim": "Sf3b1K700E mediates resistance of pancreatic epithelial cells to TGF-\u03b21 via MAP3K7",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, our results suggest that Sf3b1K700E mediates resistance of pancreatic epithelial cells to TGF-\u03b21 via MAP3K7, providing a potential mechanism for its role of in PDAC progression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from multiple lines of evidence including Map3k7 knockdown, overexpression, and inhibition experiments",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:33:24.788698Z"
+    },
+    {
+      "id": "d27854b5-fb99-4bdc-a69c-b6a7283dbf60",
+      "content_id": "8e4dc244-eb01-4208-9262-ae6ba25d3380",
+      "claim_id": "C92",
+      "claim": "Acquiring TGF-\u03b2 resistance is considered to be essential in early stages of PDAC tumorigenesis",
+      "claim_type": "EXPLICIT",
+      "source": "In line with this hypothesis, pancreatic epithelial cells have previously been found to undergo lethal EMT when stimulated with TGF-\u03b2 (David et al., 2016), and acquiring TGF-\u03b2 resistance is considered to be essential in early stages of PDAC tumorigenesis (Hezel et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to David et al., 2016 and Hezel et al., 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:33:24.788698Z"
+    },
+    {
+      "id": "0ea24e4d-114f-4164-8ebb-c618265ce4c3",
+      "content_id": "8e4dc244-eb01-4208-9262-ae6ba25d3380",
+      "claim_id": "C93",
+      "claim": "Deletion of Smad4 only triggered malignant transformation of the pancreas in combination with oncogenic Kras mutations",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, akin to Sf3b1K700E, deletion of the vital TGF-\u03b2 signalling component Smad4 only triggered malignant transformation of the pancreas in combination with oncogenic Kras mutations (Bardeesy et al., 2006b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Bardeesy et al., 2006b",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:33:24.788698Z"
+    },
+    {
+      "id": "13931ae0-6489-4baf-8e2d-96347b89d866",
+      "content_id": "8e4dc244-eb01-4208-9262-ae6ba25d3380",
+      "claim_id": "C94",
+      "claim": "SF3B1 mutations induce 3' missplicing of MAP3K7 in various tumor entities",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, this hypothesis is also supported by previous studies, which demonstrated that SF3B1 mutations induce 3' missplicing of MAP3K7 in various tumor entities (Bondu et al., 2019; Li et al., 2021; Lieu et al., 2022; Liu et al., 2020b; Wang et al., 2016; Zhang et al., 2019)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Bondu et al., 2019; Li et al., 2021; Lieu et al., 2022; Liu et al., 2020b; Wang et al., 2016; Zhang et al., 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:33:24.788698Z"
+    },
+    {
+      "id": "d2906b7d-7066-489f-824b-775f423ee583",
+      "content_id": "8e4dc244-eb01-4208-9262-ae6ba25d3380",
+      "claim_id": "C95",
+      "claim": "Aberrant splicing by SF3B1K700E reduces MAP3K7 protein levels",
+      "claim_type": "EXPLICIT",
+      "source": "that aberrant splicing by SF3B1K700E reduces MAP3K7 protein levels (North et al., 2022)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to North et al., 2022",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:33:24.788698Z"
+    },
+    {
+      "id": "e24a9f67-921c-4426-a0f8-47334ec5c8fc",
+      "content_id": "8e4dc244-eb01-4208-9262-ae6ba25d3380",
+      "claim_id": "C96",
+      "claim": "MAP3K7 has been shown to exert pro-apoptotic stimuli through activation of MAPK p38 and Jun N-terminal kinase (JNK)",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, depending on the cellular context, MAP3K7 has been shown to exert pro-apoptotic stimuli through activation of MAPK p38 and Jun N-terminal kinase (JNK; Mihaly et al., 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Mihaly et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:33:24.788698Z"
+    },
+    {
+      "id": "c97e2764-d75d-4b71-94b5-96449b282061",
+      "content_id": "8e4dc244-eb01-4208-9262-ae6ba25d3380",
+      "claim_id": "C97",
+      "claim": "MAP3K7 has been shown to exert anti-apoptotic stimuli through activation of the NF-\u03baB pathway",
+      "claim_type": "EXPLICIT",
+      "source": "or anti-apoptotic stimuli through activation of the NF-\u03baB pathway (Mukhopadhyay and Lee, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Mukhopadhyay and Lee, 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:33:24.788698Z"
+    },
+    {
+      "id": "a6d08dcb-12f6-453a-b154-fdef67a8e597",
+      "content_id": "8e4dc244-eb01-4208-9262-ae6ba25d3380",
+      "claim_id": "C98",
+      "claim": "SF3B1K700E promotes PDAC progression by reducing tumor-suppressive TGF-\u03b2 signalling through missplicing of MAP3K7",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, this study provides a first demonstration that oncogenic SF3B1K700E promotes tumor progression in vivo in a mouse model for PDAC. Based on data from pancreatic organoids and cell lines, we further suggest that SF3B1K700E promotes PDAC progression by reducing tumor-suppressive TGF-\u03b2 signalling through missplicing of MAP3K7.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple lines of experimental evidence from mouse models, organoids, and cell lines",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:33:24.788698Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "555ed188-b125-4516-a73d-ac3e4f930e21",
+      "content_id": "8e4dc244-eb01-4208-9262-ae6ba25d3380",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "SF3B1 is recurrently mutated across multiple cancer types including PDAC, with splicing factors RBM10, SF3B1, and U2AF1 frequently mutated in the PACA-CA cohort.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C10-C15, C23-C24 establish the prevalence of SF3B1 mutations across cancer types through citations to published studies and validation in the PACA-CA cohort (Figure 1\u2014figure supplement 1A). The data consistently support SF3B1 as a recurrently mutated splicing factor in PDAC and other cancers.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:33:24.788698Z"
+    },
+    {
+      "id": "5e6615d8-c533-42d8-87d2-88d3f42eb522",
+      "content_id": "8e4dc244-eb01-4208-9262-ae6ba25d3380",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "SF3B1 functions in RNA splicing by recognizing branchpoint sequences, and hotspot mutations at HEAT repeats 5-9 cause recognition of alternative branchpoint sequences leading to aberrant splicing and NMD-prone transcripts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C20 describe established molecular mechanisms of SF3B1 function and mutation effects, supported by multiple citations to prior work (Wahl et al., 2009; Zhang et al., 2020; Alsafadi et al., 2016; Darman et al., 2015; etc.). These are well-established background facts from the literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:33:24.788698Z"
+    },
+    {
+      "id": "f2db1572-5f4b-43ac-9e44-bc44f5c58460",
+      "content_id": "8e4dc244-eb01-4208-9262-ae6ba25d3380",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Analysis of PDAC mutations shows RBM10 has predominantly truncating mutations consistent with tumor suppressor function, while SF3B1 and U2AF1 have missense hotspot mutations indicating neomorphic function, with K700E being the most frequent SF3B1 mutation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C29 are supported by mutation pattern analysis in the PACA-CA cohort (Figure 1\u2014figure supplement 1A-B) and citation to Hern\u00e1ndez et al., 2016 for RBM10 tumor suppressor function. The inference of neomorphic function from hotspot missense mutations (C28) is reasonable but represents an interpretation rather than direct evidence.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:33:24.788698Z"
+    },
+    {
+      "id": "59abc765-370b-4a61-afc4-2f22b2c7de02",
+      "content_id": "8e4dc244-eb01-4208-9262-ae6ba25d3380",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Sf3b1K700E alone is insufficient to induce malignant transformation of the murine pancreas, with no effect on survival or pancreas weight after 300 days.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C30-C31 are directly supported by experimental data showing no significant differences in survival or pancreas weight between Sf3b1K700E/+ and WT mice at 300 days (Figure 1B-C). The sample size (n=8 per group) appears adequate for this negative result.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:33:24.788698Z"
+    },
+    {
+      "id": "aa3ba0bb-5ad0-4e9c-9cf8-7cb0c352c961",
+      "content_id": "8e4dc244-eb01-4208-9262-ae6ba25d3380",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Sf3b1K700E increases aggressiveness of PDAC when co-occurring with mutated KRAS and p53, with KPC-Sf3b1K700E/+ mice showing significantly shorter survival (57 vs 64 days) and increased tumor size at 9 weeks.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C32-C33 are supported by survival data (Figure 1E, p<0.0001) and tumor size measurements (Figure 1F, p=0.05) in the KPC model. The statistical significance is clearly demonstrated, though the survival difference is modest (7 days). Sample sizes are not explicitly stated in the claims but appear adequate based on the figures.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:33:24.788698Z"
+    },
+    {
+      "id": "6b17e97b-05eb-45d5-b658-b073383f102a",
+      "content_id": "8e4dc244-eb01-4208-9262-ae6ba25d3380",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Sf3b1K700E promotes early-stage pancreatic tumor progression, with 67% of KPC-Sf3b1K700E/+ mice developing PDAC at 5 weeks (vs 25% of KPC mice), along with increased ADM formation and altered marker expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C34-C38 are supported by histological analysis at 5 weeks showing increased PDAC incidence, ADM formation, and changes in CK19, MUC5AC, and \u03b2-amylase staining (Figure 1G-J, Figure 1\u2014figure supplement 1J-K). Statistical significance is demonstrated for multiple markers (p=0.005 for \u03b2-amylase, p=0.01 for MUC5AC).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:33:24.788698Z"
+    },
+    {
+      "id": "380e40bf-c229-4603-9569-e3a11ac045a2",
+      "content_id": "8e4dc244-eb01-4208-9262-ae6ba25d3380",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "In the KC model, Sf3b1K700E accelerates progression to PDAC, with 64% of KC-Sf3b1K700E/+ mice vs 10% of KC mice developing PDAC at 43 weeks and significantly shortened disease-free survival.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C41 are supported by histological analysis (Figure 1L, Figure 1\u2014figure supplement 1L) and survival data (Figure 1K, p=0.049). The Chi-square test for PDAC formation difference is appropriate. This provides independent validation of the early-stage effect in a different model.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:33:24.788698Z"
+    },
+    {
+      "id": "fee1af07-a455-4063-826c-cbab0ce38137",
+      "content_id": "8e4dc244-eb01-4208-9262-ae6ba25d3380",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "SF3B1K700E does not affect growth of fully developed PDAC tumors in orthotopic transplantation, indicating it contributes to malignancy by accelerating formation of precursor lesions rather than affecting advanced tumors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C43 are supported by orthotopic transplantation data (Figure 1\u2014figure supplement 1M-N) showing no difference in tumor growth. The inference (C43) that SF3B1K700E acts primarily in early stages is reasonable given the positive effects in early-stage models (C4, C39-C41) and negative result in advanced disease (C42).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:33:24.788698Z"
+    },
+    {
+      "id": "b1ac12f8-0d89-458e-861b-d1b4fa8c2281",
+      "content_id": "8e4dc244-eb01-4208-9262-ae6ba25d3380",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Transcriptomic analysis of KPC-Sf3b1K700E/+ tumor cells shows major impact on gene expression with IFN-\u03b1-response as the most enriched pathway and EMT as the most attenuated gene set.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C47 are supported by RNA-seq analysis with PCA (Figure 2\u2014figure supplement 1B) and GSEA (Figure 2A-B, Figure 2\u2014figure supplement 1C). The IFN-\u03b1 response finding is consistent with prior work (Chang et al., 2021, C46). Sample sizes (3 KPC, 4 KPC-Sf3b1K700E/+) are modest but adequate for transcriptomic analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:33:24.788698Z"
+    },
+    {
+      "id": "5586ea21-0ebc-4219-812c-ce29184e2a43",
+      "content_id": "8e4dc244-eb01-4208-9262-ae6ba25d3380",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Sf3b1K700E causes cell-autonomous downregulation of EMT genes, with 71% of analyzed genes reduced in KPC-Sf3b1K700E/+ organoids and 55% reduced in non-cancerous Sf3b1K700E organoids.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C51 are supported by qPCR validation of Tnc (Figure 2C), histology (Figure 2D-E), and organoid experiments (Figure 2F, Figure 2\u2014figure supplement 1D). The cell-autonomous nature (C51) is well-supported by the organoid experiments that control for microenvironment effects. Statistical significance is shown for individual genes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:33:24.788698Z"
+    },
+    {
+      "id": "d949b7dd-1500-4775-af08-07a70db60eb9",
+      "content_id": "8e4dc244-eb01-4208-9262-ae6ba25d3380",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "TGF-\u03b2 strongly induces 80% of analyzed EMT genes in KPC cells while TNF-\u03b1 induces only 20%, and Sf3b1K700E KPC cells fail to fully induce 6 of 9 EMT genes upon TGF-\u03b2 stimulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C54 are supported by qPCR data comparing TGF-\u03b2 and TNF-\u03b1 treatment (Figure 2\u2014figure supplement 1E-F) and TGF-\u03b2 response in Sf3b1K700E cells (Figure 2\u2014figure supplement 1G). This establishes TGF-\u03b2 as the primary EMT inducer and shows Sf3b1K700E impairs TGF-\u03b2-mediated EMT gene induction.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:33:24.788698Z"
+    },
+    {
+      "id": "74d8ecb7-e1e4-4398-95ab-be1926855312",
+      "content_id": "8e4dc244-eb01-4208-9262-ae6ba25d3380",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Sf3b1K700E reduces TGF-\u03b2-induced migration and invasion, with a sixfold decrease in matrigel invasion in murine organoids and reduced migration in human PANC-1 cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C56 are supported by invasion assays (Figure 2G-H) and wound healing assays (Figure 2I-J). Both murine and human systems show consistent effects. Statistical significance is demonstrated (p-values provided). This functionally validates the EMT gene expression changes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:33:24.788698Z"
+    },
+    {
+      "id": "d965a5df-efa1-4871-b9af-3658f9bf5935",
+      "content_id": "8e4dc244-eb01-4208-9262-ae6ba25d3380",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "TGF-\u03b2 induces lethal EMT in pancreatic lesions, and Sf3b1K700E tumors show reduced apoptotic cells in PanIN lumens, with apoptotic cells displaying mesenchymal markers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C61 are supported by immunofluorescence data (Figure 3A-B, Figure 3\u2014figure supplement 1A-D) and citation to David et al., 2016 for lethal EMT. The characterization of apoptotic cells as E-cadherin negative and Fibronectin-1 positive (C59) supports the EMT phenotype. Statistical significance is shown (p=0.04 for CC3+ cells).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:33:24.788698Z"
+    },
+    {
+      "id": "c044bf55-8bb3-4043-a49b-a6ba88ae96df",
+      "content_id": "8e4dc244-eb01-4208-9262-ae6ba25d3380",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "SF3B1K700E confers resistance to TGF-\u03b21-induced cell death in both tumor-derived and non-cancerous pancreatic organoids, with survival rates of 72% vs 17% in tumor organoids and 77% vs 3% in non-cancerous organoids.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C62-C65 are supported by caspase activity assays and viability measurements in multiple organoid systems (Figure 3C-H). The dramatic differences in survival are highly statistically significant. The consistency across tumor-derived and non-cancerous organoids strengthens the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:33:24.788698Z"
+    },
+    {
+      "id": "11e0723e-6a83-441b-841d-e67643f633a0",
+      "content_id": "8e4dc244-eb01-4208-9262-ae6ba25d3380",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Sf3b1K700E enables long-term organoid expansion in low-dose TGF-\u03b21 (>120 days for mutant vs <15 days for WT), and increases viability of human H6c7 cells upon TGF-\u03b21 exposure without affecting baseline proliferation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66-C68 are supported by long-term culture experiments (Figure 3I, Figure 3\u2014figure supplement 1G-H) and human cell viability assays (Figure 3J, Figure 3\u2014figure supplement 1J). The lack of effect on baseline proliferation (C68) is important for ruling out general growth advantages. The human cell data support conservation of the mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:33:24.788698Z"
+    },
+    {
+      "id": "d744c9dc-30d7-4415-8446-8ffb07bb98a1",
+      "content_id": "8e4dc244-eb01-4208-9262-ae6ba25d3380",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "SF3B1K700E predominantly causes alternative 3' splice events with cryptic sites showing upstream adenosine enrichment, less pronounced polypyrimidine tracts, and location 8-14 bases upstream of canonical sites, consistent with prior studies in other tissues.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69-C73 are supported by RNA-seq splicing analysis (Figure 4A-C) and citations to prior work (Liu et al., 2021; Mupo et al., 2017; Obeng et al., 2016; Yin et al., 2019). The molecular characterization of cryptic splice sites is detailed and consistent with established SF3B1 mutation effects.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:33:24.788698Z"
+    },
+    {
+      "id": "fe5392fe-eba2-40c2-baae-383aeb430a9d",
+      "content_id": "8e4dc244-eb01-4208-9262-ae6ba25d3380",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Pan-cancer analysis confirms SF3B1K700E causes predominant use of cryptic 3' splice sites in human cancers, with 11 genes showing conserved alternative splicing between human tumors and KPC mice.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C74-C75 are supported by pan-cancer analysis (Figure 4\u2014figure supplement 1A-B) and comparative analysis (Figure 4D). The identification of 11 conserved splice events provides candidates for functional studies. Citations to multiple prior studies support the cryptic 3' ss finding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:33:24.788698Z"
+    },
+    {
+      "id": "820fee60-4128-4a8c-a90e-58384060646e",
+      "content_id": "8e4dc244-eb01-4208-9262-ae6ba25d3380",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "One-third of Map3k7 transcripts are misspliced in Sf3b1K700E pancreata, with conservation in human cells overexpressing SF3B1K700E. MAP3K7 mediates non-canonical TGF-\u03b2 signaling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C76-C77, C80 are supported by targeted RNA-seq (Figure 4E-F, Figure 4\u2014figure supplement 1C-D) showing Map3k7 missplicing in both mouse and human systems. The functional role of MAP3K7 in TGF-\u03b2 signaling (C80) is supported by citation to Kim and Choi, 2012. The conservation across species strengthens the relevance.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:33:24.788698Z"
+    },
+    {
+      "id": "1b3f9556-9ce6-4de7-8572-28d62a335bf7",
+      "content_id": "8e4dc244-eb01-4208-9262-ae6ba25d3380",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Ppp2r5a does not show significant alternative splicing or altered expression in KPC-Sf3b1K700E tumor cells, indicating tissue-specificity of Ppp2r5a missplicing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C78-C79 are supported by RT-qPCR and RT-PCR data (Figure 4\u2014figure supplement 1E-F). The negative result for Ppp2r5a is important as it was reported in leukemia (Liu et al., 2020a), and the tissue-specificity inference (C79) is reasonable. This highlights that not all SF3B1-mediated splice events are universal.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:33:24.788698Z"
+    },
+    {
+      "id": "d812d286-9ce5-4e1a-b4d4-43273297deab",
+      "content_id": "8e4dc244-eb01-4208-9262-ae6ba25d3380",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Map3k7 knockdown to 35% of normal levels reduces expression of 7 of 10 EMT genes, increases organoid viability upon TGF-\u03b21 treatment, and p38 inhibition partially protects against TGF-\u03b21-induced cell death.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C82, C84-C86 are supported by shRNA knockdown experiments (Figure 5E-F, Figure 5\u2014figure supplement 1A-C) and chemical inhibitor studies (Figure 5G). The partial rescue by p38 inhibition supports MAP3K7 acting through this pathway. However, the incomplete rescue suggests other factors also contribute.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:33:24.788698Z"
+    },
+    {
+      "id": "5b812196-ec0e-4ada-bbfe-c41175ff81a0",
+      "content_id": "8e4dc244-eb01-4208-9262-ae6ba25d3380",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "Overexpression of full-length MAP3K7 in Sf3b1K700E mutant organoids significantly decreases their viability upon TGF-\u03b21 treatment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C87 is supported by MAP3K7 overexpression experiments (Figure 5H-I). This gain-of-function experiment provides strong evidence that reduced MAP3K7 levels contribute to TGF-\u03b2 resistance. The complementation of the mutant phenotype is a key piece of evidence for causality.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:33:24.788698Z"
+    },
+    {
+      "id": "5d2295f5-04a2-4554-b8a3-57b682a2dfa8",
+      "content_id": "8e4dc244-eb01-4208-9262-ae6ba25d3380",
+      "result_id": "R22",
+      "result_category": "llm",
+      "result": "MAP3K7 inhibition with Takinib increases survival of human pancreatic cells and organoids upon TGF-\u03b21 treatment and decreases migration of PANC-1 cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C88-C90 are supported by chemical inhibition experiments in human H6c7 cells (Figure 5J), human organoids (Figure 5K), and wound healing assays (Figure 5L-M). The consistency across multiple human systems and functional readouts (survival and migration) strengthens the conclusion that MAP3K7 mediates TGF-\u03b2 effects in human pancreatic cells.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:33:24.788698Z"
+    },
+    {
+      "id": "2e542448-4e97-4b0e-a4ad-d549df4e2ed0",
+      "content_id": "8e4dc244-eb01-4208-9262-ae6ba25d3380",
+      "result_id": "R23",
+      "result_category": "llm",
+      "result": "SF3B1K700E-mediated resistance to TGF-\u03b21 is partly mediated through aberrant splicing of Map3k7, with Sf3b1K700E mediating resistance via MAP3K7.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C91 synthesize multiple lines of evidence: Map3k7 missplicing (C76-C77), reduced MAP3K7 levels, knockdown/overexpression experiments (C84-C87), and inhibitor studies (C88-C90). The use of 'partly mediated' (C7) is appropriate given that Map3k7 knockdown doesn't fully recapitulate the Sf3b1K700E phenotype. The mechanism is well-supported but not exclusively responsible.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:33:24.788698Z"
+    },
+    {
+      "id": "524c8324-c8fc-454f-9dc9-7b300aa86900",
+      "content_id": "8e4dc244-eb01-4208-9262-ae6ba25d3380",
+      "result_id": "R24",
+      "result_category": "llm",
+      "result": "SF3B1K700E acts as an oncogenic driver in PDAC and promotes progression of early-stage tumors by impeding cellular response to tumor-suppressive TGF-\u03b2 effects through MAP3K7 missplicing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C9, C98 represent the main conclusions integrating mouse models (C2-C4, C32-C43), EMT gene expression (C47-C56), TGF-\u03b2 resistance (C6, C62-C68), and MAP3K7 mechanism (C7, C76-C77, C84-C91). The evidence is comprehensive across multiple experimental systems. However, the authors acknowledge in the Discussion that in vivo evidence for the MAP3K7 mechanism is lacking.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:33:24.788698Z"
+    },
+    {
+      "id": "f5662d4b-8b92-4083-98fd-2beb4b02e4ac",
+      "content_id": "8e4dc244-eb01-4208-9262-ae6ba25d3380",
+      "result_id": "R25",
+      "result_category": "llm",
+      "result": "Prior work has established that SF3B1 mutations affect PPP2R5A and MAP3K7 splicing in various cancers, MAP3K7 has context-dependent pro- and anti-apoptotic functions, and TGF-\u03b2 resistance is essential in early PDAC, with Smad4 deletion showing similar context-dependence to Sf3b1K700E.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C22, C92-C97 summarize relevant prior literature with appropriate citations. These provide important context for interpreting the current findings. The parallel between Sf3b1K700E and Smad4 deletion (C93) is particularly relevant for understanding the biological significance.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:33:24.788698Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "ae807890-7943-4e53-93a0-2299ef613f29",
+      "result_id": "555ed188-b125-4516-a73d-ac3e4f930e21"
+    },
+    {
+      "claim_id": "22287976-e4bb-430a-92a9-84bb97a3e1f8",
+      "result_id": "555ed188-b125-4516-a73d-ac3e4f930e21"
+    },
+    {
+      "claim_id": "6828e4a5-9375-4b08-9b23-a30dcefed4f2",
+      "result_id": "555ed188-b125-4516-a73d-ac3e4f930e21"
+    },
+    {
+      "claim_id": "71de63d9-8728-417a-b065-f7b3c9d71555",
+      "result_id": "555ed188-b125-4516-a73d-ac3e4f930e21"
+    },
+    {
+      "claim_id": "e3b6916f-c2b5-4526-8132-f0dc239622d1",
+      "result_id": "555ed188-b125-4516-a73d-ac3e4f930e21"
+    },
+    {
+      "claim_id": "de1cc84a-1421-4556-85f6-8564a48be053",
+      "result_id": "555ed188-b125-4516-a73d-ac3e4f930e21"
+    },
+    {
+      "claim_id": "e32d0399-a498-4229-8772-216088bc09bc",
+      "result_id": "555ed188-b125-4516-a73d-ac3e4f930e21"
+    },
+    {
+      "claim_id": "3ec16076-fec6-4f91-92d7-871da31b7e9a",
+      "result_id": "555ed188-b125-4516-a73d-ac3e4f930e21"
+    },
+    {
+      "claim_id": "8c4f81a3-550f-4be6-ace6-4d50732da78b",
+      "result_id": "555ed188-b125-4516-a73d-ac3e4f930e21"
+    },
+    {
+      "claim_id": "1d0839e6-0869-4815-983f-c6cd591f9e55",
+      "result_id": "5e6615d8-c533-42d8-87d2-88d3f42eb522"
+    },
+    {
+      "claim_id": "945e8cde-8bec-4224-b190-f13b088e9a02",
+      "result_id": "5e6615d8-c533-42d8-87d2-88d3f42eb522"
+    },
+    {
+      "claim_id": "139540b6-ee1a-4da7-a391-50b78ce57605",
+      "result_id": "5e6615d8-c533-42d8-87d2-88d3f42eb522"
+    },
+    {
+      "claim_id": "803c5afd-2705-4ee9-b2fb-235ac8a8c659",
+      "result_id": "5e6615d8-c533-42d8-87d2-88d3f42eb522"
+    },
+    {
+      "claim_id": "8bb642e6-f221-46c4-8202-a5f0a7a4d747",
+      "result_id": "5e6615d8-c533-42d8-87d2-88d3f42eb522"
+    },
+    {
+      "claim_id": "a0a150b8-12a9-453a-a9e2-dfe5ca02abe0",
+      "result_id": "f2db1572-5f4b-43ac-9e44-bc44f5c58460"
+    },
+    {
+      "claim_id": "1c099740-4038-452b-bae4-2125a1c43935",
+      "result_id": "f2db1572-5f4b-43ac-9e44-bc44f5c58460"
+    },
+    {
+      "claim_id": "4219845e-0385-4891-808f-76c876d0e122",
+      "result_id": "f2db1572-5f4b-43ac-9e44-bc44f5c58460"
+    },
+    {
+      "claim_id": "746d311d-a3e9-48b7-a791-6447756f1a47",
+      "result_id": "f2db1572-5f4b-43ac-9e44-bc44f5c58460"
+    },
+    {
+      "claim_id": "a32b404c-8d0c-4e51-86e4-7637d1850550",
+      "result_id": "f2db1572-5f4b-43ac-9e44-bc44f5c58460"
+    },
+    {
+      "claim_id": "aa4ce47d-43eb-4a85-8144-2532785b2478",
+      "result_id": "59abc765-370b-4a61-afc4-2f22b2c7de02"
+    },
+    {
+      "claim_id": "108448dc-57dc-4e01-abd8-0b6ab80bf976",
+      "result_id": "59abc765-370b-4a61-afc4-2f22b2c7de02"
+    },
+    {
+      "claim_id": "0c79df32-c3d4-4e77-9915-cff5684c1254",
+      "result_id": "59abc765-370b-4a61-afc4-2f22b2c7de02"
+    },
+    {
+      "claim_id": "a0830f47-638b-4fb5-b3e3-ec88f0605b94",
+      "result_id": "aa3ba0bb-5ad0-4e9c-9cf8-7cb0c352c961"
+    },
+    {
+      "claim_id": "31e81c15-b86e-42ae-9ad7-cc59379a540e",
+      "result_id": "aa3ba0bb-5ad0-4e9c-9cf8-7cb0c352c961"
+    },
+    {
+      "claim_id": "c70ded41-9c92-4693-a884-086bb93f1b7d",
+      "result_id": "aa3ba0bb-5ad0-4e9c-9cf8-7cb0c352c961"
+    },
+    {
+      "claim_id": "908a93d0-4025-4c77-98e0-ed9876a878d3",
+      "result_id": "6b17e97b-05eb-45d5-b658-b073383f102a"
+    },
+    {
+      "claim_id": "b3cda6fe-74c1-4d88-a0c0-f71c97d990c5",
+      "result_id": "6b17e97b-05eb-45d5-b658-b073383f102a"
+    },
+    {
+      "claim_id": "4f31945e-b066-445a-b47a-d5c1080826b8",
+      "result_id": "6b17e97b-05eb-45d5-b658-b073383f102a"
+    },
+    {
+      "claim_id": "fdc779c1-da17-42c7-8e8c-ac68045fab32",
+      "result_id": "6b17e97b-05eb-45d5-b658-b073383f102a"
+    },
+    {
+      "claim_id": "37aa3e60-a402-45ce-9844-b74f2ba1cd33",
+      "result_id": "6b17e97b-05eb-45d5-b658-b073383f102a"
+    },
+    {
+      "claim_id": "5b78e85e-ba36-494b-ad83-bfacde7f5c26",
+      "result_id": "6b17e97b-05eb-45d5-b658-b073383f102a"
+    },
+    {
+      "claim_id": "7631846d-7443-4be5-b9bd-6cf0991370ee",
+      "result_id": "380e40bf-c229-4603-9569-e3a11ac045a2"
+    },
+    {
+      "claim_id": "9bff8d25-246c-432e-bf8e-ac7865f839b3",
+      "result_id": "380e40bf-c229-4603-9569-e3a11ac045a2"
+    },
+    {
+      "claim_id": "dc5b33fc-179c-40fc-8e44-b59dabd99b4a",
+      "result_id": "380e40bf-c229-4603-9569-e3a11ac045a2"
+    },
+    {
+      "claim_id": "7afe807f-2f7b-49fa-b8f6-1cffef0caa72",
+      "result_id": "fee1af07-a455-4063-826c-cbab0ce38137"
+    },
+    {
+      "claim_id": "b56ebe18-c9fc-4229-8d82-9f43194449b8",
+      "result_id": "fee1af07-a455-4063-826c-cbab0ce38137"
+    },
+    {
+      "claim_id": "999e1dd6-52eb-4379-8bd4-a823bf2bc538",
+      "result_id": "b1ac12f8-0d89-458e-861b-d1b4fa8c2281"
+    },
+    {
+      "claim_id": "fc3e5450-905c-48f1-b19d-064675cbdd40",
+      "result_id": "b1ac12f8-0d89-458e-861b-d1b4fa8c2281"
+    },
+    {
+      "claim_id": "a60bacf0-f2ef-4bd2-8d43-5974f4a56b5e",
+      "result_id": "b1ac12f8-0d89-458e-861b-d1b4fa8c2281"
+    },
+    {
+      "claim_id": "b167073f-0d01-43db-8711-43b603cd40ff",
+      "result_id": "b1ac12f8-0d89-458e-861b-d1b4fa8c2281"
+    },
+    {
+      "claim_id": "59859930-b801-472f-aacf-844a4302f453",
+      "result_id": "5586ea21-0ebc-4219-812c-ce29184e2a43"
+    },
+    {
+      "claim_id": "b930a045-6a84-4535-be5d-6f03b4aff320",
+      "result_id": "5586ea21-0ebc-4219-812c-ce29184e2a43"
+    },
+    {
+      "claim_id": "e9a6ccce-6a44-4579-b23c-414cc19cda27",
+      "result_id": "5586ea21-0ebc-4219-812c-ce29184e2a43"
+    },
+    {
+      "claim_id": "02f67e57-8da7-45cf-88e0-d86b171922b7",
+      "result_id": "5586ea21-0ebc-4219-812c-ce29184e2a43"
+    },
+    {
+      "claim_id": "d9100475-552a-4a64-846f-ccdb6f724a29",
+      "result_id": "d949b7dd-1500-4775-af08-07a70db60eb9"
+    },
+    {
+      "claim_id": "db1182c0-41d4-4d1f-8c9b-9e6ae3ae2443",
+      "result_id": "d949b7dd-1500-4775-af08-07a70db60eb9"
+    },
+    {
+      "claim_id": "e8d6ce92-f965-4603-9cd3-6d59bb4b002d",
+      "result_id": "d949b7dd-1500-4775-af08-07a70db60eb9"
+    },
+    {
+      "claim_id": "cc04f0ea-d813-42af-88eb-656e8accacc4",
+      "result_id": "74d8ecb7-e1e4-4398-95ab-be1926855312"
+    },
+    {
+      "claim_id": "b634aa69-2a96-4dc2-90ba-7ad25dd2319c",
+      "result_id": "74d8ecb7-e1e4-4398-95ab-be1926855312"
+    },
+    {
+      "claim_id": "d348e989-cf96-4467-bf34-2d87f52cef0b",
+      "result_id": "d965a5df-efa1-4871-b9af-3658f9bf5935"
+    },
+    {
+      "claim_id": "6626de45-91b9-4e1f-b9da-93528be1090b",
+      "result_id": "d965a5df-efa1-4871-b9af-3658f9bf5935"
+    },
+    {
+      "claim_id": "1fe5e0dc-b5a8-487e-a740-7c78e1a4b971",
+      "result_id": "d965a5df-efa1-4871-b9af-3658f9bf5935"
+    },
+    {
+      "claim_id": "e737ed78-aeaa-40d2-83df-475d8a903729",
+      "result_id": "d965a5df-efa1-4871-b9af-3658f9bf5935"
+    },
+    {
+      "claim_id": "d4bf8970-019b-4e50-b30d-e8d757890d8c",
+      "result_id": "d965a5df-efa1-4871-b9af-3658f9bf5935"
+    },
+    {
+      "claim_id": "26bb5e44-75a0-4260-809f-3184f64cf33c",
+      "result_id": "c044bf55-8bb3-4043-a49b-a6ba88ae96df"
+    },
+    {
+      "claim_id": "74e84525-6780-47a5-971d-5de5ed64afdd",
+      "result_id": "c044bf55-8bb3-4043-a49b-a6ba88ae96df"
+    },
+    {
+      "claim_id": "83cd68da-ced5-4afc-b57e-7a5233f54999",
+      "result_id": "c044bf55-8bb3-4043-a49b-a6ba88ae96df"
+    },
+    {
+      "claim_id": "a98859b8-4dbb-4a5d-b815-3c7b1d4e655f",
+      "result_id": "c044bf55-8bb3-4043-a49b-a6ba88ae96df"
+    },
+    {
+      "claim_id": "95d5ad60-c2c7-4f8c-b1fa-7e263090e071",
+      "result_id": "c044bf55-8bb3-4043-a49b-a6ba88ae96df"
+    },
+    {
+      "claim_id": "231a4f36-2eac-445f-8761-1037ec101759",
+      "result_id": "11e0723e-6a83-441b-841d-e67643f633a0"
+    },
+    {
+      "claim_id": "f9548298-36dc-449b-b9b5-881c00ea9c71",
+      "result_id": "11e0723e-6a83-441b-841d-e67643f633a0"
+    },
+    {
+      "claim_id": "ca99acdf-0a3c-47fd-a8ab-0929834d4366",
+      "result_id": "11e0723e-6a83-441b-841d-e67643f633a0"
+    },
+    {
+      "claim_id": "da094290-a922-4d8b-9849-4e34693efd96",
+      "result_id": "d744c9dc-30d7-4415-8446-8ffb07bb98a1"
+    },
+    {
+      "claim_id": "c11e31c8-876f-452b-89f7-5c0b89709278",
+      "result_id": "d744c9dc-30d7-4415-8446-8ffb07bb98a1"
+    },
+    {
+      "claim_id": "6224de70-3985-4864-844e-0b290e06f11d",
+      "result_id": "d744c9dc-30d7-4415-8446-8ffb07bb98a1"
+    },
+    {
+      "claim_id": "57d5f617-5f73-47a2-9606-9fbc1cb02dc8",
+      "result_id": "d744c9dc-30d7-4415-8446-8ffb07bb98a1"
+    },
+    {
+      "claim_id": "52e70cd3-e3fb-4ba5-ada5-5a3e3c6bacf5",
+      "result_id": "d744c9dc-30d7-4415-8446-8ffb07bb98a1"
+    },
+    {
+      "claim_id": "3094c504-e058-421f-84a8-acd9b611c2cf",
+      "result_id": "fe5392fe-eba2-40c2-baae-383aeb430a9d"
+    },
+    {
+      "claim_id": "f21c7ec5-3ec1-465b-9e05-14b90c6b493b",
+      "result_id": "fe5392fe-eba2-40c2-baae-383aeb430a9d"
+    },
+    {
+      "claim_id": "529fbc40-0263-4220-b9a0-e9674931412f",
+      "result_id": "820fee60-4128-4a8c-a90e-58384060646e"
+    },
+    {
+      "claim_id": "c2cc0ddf-086f-433e-9818-66d5d1a88e92",
+      "result_id": "820fee60-4128-4a8c-a90e-58384060646e"
+    },
+    {
+      "claim_id": "8bd91394-ff02-40e7-8872-16f3fec4a89e",
+      "result_id": "820fee60-4128-4a8c-a90e-58384060646e"
+    },
+    {
+      "claim_id": "cf2f4715-a0f8-4543-89af-5bbd73981ad8",
+      "result_id": "1b3f9556-9ce6-4de7-8572-28d62a335bf7"
+    },
+    {
+      "claim_id": "04f69b40-acd6-4565-884e-0563e0e63e14",
+      "result_id": "1b3f9556-9ce6-4de7-8572-28d62a335bf7"
+    },
+    {
+      "claim_id": "17485356-7419-4ed9-9bb5-3a2350c92c05",
+      "result_id": "d812d286-9ce5-4e1a-b4d4-43273297deab"
+    },
+    {
+      "claim_id": "b6db2ddd-5d9c-4885-bc2d-83464c12cc69",
+      "result_id": "d812d286-9ce5-4e1a-b4d4-43273297deab"
+    },
+    {
+      "claim_id": "263e1ec7-1e20-4b40-aee7-c9eab8df73d0",
+      "result_id": "d812d286-9ce5-4e1a-b4d4-43273297deab"
+    },
+    {
+      "claim_id": "888f0fff-0e31-4b96-9c3e-ec9f1ce6ec91",
+      "result_id": "d812d286-9ce5-4e1a-b4d4-43273297deab"
+    },
+    {
+      "claim_id": "f68c4054-5780-449e-851f-90984ce67858",
+      "result_id": "5b812196-ec0e-4ada-bbfe-c41175ff81a0"
+    },
+    {
+      "claim_id": "3f745363-ccfe-4dec-9409-6ccc7d414d29",
+      "result_id": "5d2295f5-04a2-4554-b8a3-57b682a2dfa8"
+    },
+    {
+      "claim_id": "62195c86-f6c2-46f1-ba83-7a57e1e6f360",
+      "result_id": "5d2295f5-04a2-4554-b8a3-57b682a2dfa8"
+    },
+    {
+      "claim_id": "daed7516-d6cc-4db8-9cae-c05af5f04d70",
+      "result_id": "5d2295f5-04a2-4554-b8a3-57b682a2dfa8"
+    },
+    {
+      "claim_id": "920926a1-7985-4aa0-805d-8c91d25b33d0",
+      "result_id": "2e542448-4e97-4b0e-a4ad-d549df4e2ed0"
+    },
+    {
+      "claim_id": "75451b67-a669-4ff3-8635-b5ff4bb9a668",
+      "result_id": "2e542448-4e97-4b0e-a4ad-d549df4e2ed0"
+    },
+    {
+      "claim_id": "5670d7dd-55f6-404e-a95a-d234be7ba96b",
+      "result_id": "524c8324-c8fc-454f-9dc9-7b300aa86900"
+    },
+    {
+      "claim_id": "f95d8b15-3a33-474c-b30a-5c42b8783397",
+      "result_id": "524c8324-c8fc-454f-9dc9-7b300aa86900"
+    },
+    {
+      "claim_id": "a6d08dcb-12f6-453a-b154-fdef67a8e597",
+      "result_id": "524c8324-c8fc-454f-9dc9-7b300aa86900"
+    },
+    {
+      "claim_id": "dae170fc-24f7-4a02-9838-a691fc13f468",
+      "result_id": "f5662d4b-8b92-4083-98fd-2beb4b02e4ac"
+    },
+    {
+      "claim_id": "05c16ecf-20dc-41e0-95b7-f955b9aa0635",
+      "result_id": "f5662d4b-8b92-4083-98fd-2beb4b02e4ac"
+    },
+    {
+      "claim_id": "d27854b5-fb99-4bdc-a69c-b6a7283dbf60",
+      "result_id": "f5662d4b-8b92-4083-98fd-2beb4b02e4ac"
+    },
+    {
+      "claim_id": "0ea24e4d-114f-4164-8ebb-c618265ce4c3",
+      "result_id": "f5662d4b-8b92-4083-98fd-2beb4b02e4ac"
+    },
+    {
+      "claim_id": "13931ae0-6489-4baf-8e2d-96347b89d866",
+      "result_id": "f5662d4b-8b92-4083-98fd-2beb4b02e4ac"
+    },
+    {
+      "claim_id": "d2906b7d-7066-489f-824b-775f423ee583",
+      "result_id": "f5662d4b-8b92-4083-98fd-2beb4b02e4ac"
+    },
+    {
+      "claim_id": "e24a9f67-921c-4426-a0f8-47334ec5c8fc",
+      "result_id": "f5662d4b-8b92-4083-98fd-2beb4b02e4ac"
+    },
+    {
+      "claim_id": "c97e2764-d75d-4b71-94b5-96449b282061",
+      "result_id": "f5662d4b-8b92-4083-98fd-2beb4b02e4ac"
+    }
+  ],
+  "comparisons": []
+}

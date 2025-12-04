@@ -1,0 +1,1378 @@
+{
+  "submission": {
+    "id": "639025f3-3f40-49fc-b019-301eecf0529d",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-04T03:39:59.425659Z",
+    "updated_at": "2025-12-04T03:39:59.425659Z"
+  },
+  "content": [
+    {
+      "id": "a0a37c16-382c-4455-abfb-91f7ba1f306b",
+      "submission_id": "639025f3-3f40-49fc-b019-301eecf0529d",
+      "content_type": "manuscript",
+      "content_text": "# Discovery and biological evaluation of a potent small molecule CRM1 inhibitor for its selective ablation of extranodal NK/T cell lymphoma\n\n## Authors\n\n- He Liu<sup>1</sup> ([ORCID: 0009-0004-9016-3512](https://orcid.org/0009-0004-9016-3512))\n- Meisuo Liu<sup>1</sup>\n- Xibao Tian<sup>1</sup>\n- Haina Wang<sup>1</sup>\n- Jiujiao Gao<sup>1</sup>\n- Hanrui Li<sup>1</sup>\n- Zhehuan Zhao<sup>2</sup>\n- Yu Liu<sup>2</sup>\n- Caigang Liu<sup>3</sup> ([ORCID: 0000-0003-2083-235X](https://orcid.org/0000-0003-2083-235X)) \u2020\n- Xuan Chen<sup>1</sup>\n- Yongliang Yang<sup>1</sup> ([ORCID: 0000-0003-0449-0599](https://orcid.org/0000-0003-0449-0599)) \u2020\n\n### Affiliations\n\n1. School of Bioengineering, Dalian University of Technology Dalian China ([ROR:023hj5876](https://ror.org/023hj5876))\n2. School of Software, Dalian University of Technology Dalian China ([ROR:023hj5876](https://ror.org/023hj5876))\n3. Department of Oncology, Shengjing Hospital of China Medical University Shenyang China ([ROR:032d4f246](https://ror.org/032d4f246))\n\n\u2020 Corresponding author\n\n## Abstract\n\nBackground:The overactivation of NF-\u03baB signaling is a key hallmark for the pathogenesis of extranodal natural killer/T cell lymphoma (ENKTL), a very aggressive subtype of non-Hodgkin\u2019s lymphoma yet with rather limited control strategies. Previously, we found that the dysregulated exportin-1 (also known as CRM1) is mainly responsible for tumor cells to evade apoptosis and promote tumor-associated pathways such as NF-\u03baB signaling.Methods:Herein we reported the discovery and biological evaluation of a potent small molecule CRM1 inhibitor, LFS-1107. We validated that CRM1 is a major cellular target of LFS-1107 by biolayer interferometry assay (BLI) and the knockdown of CRM1 conferred tumor cells with resistance to LFS-1107.Results:We found that LFS-1107 can strongly suppresses the growth of ENKTL cells at low-range nanomolar concentration yet with minimal effects on human platelets and healthy peripheral blood mononuclear cells. Treatment of ENKTL cells with LFS-1107 resulted in the nuclear retention of IkB\u03b1 and consequent strong suppression of NF-\u03baB transcriptional activities, NF-\u03baB target genes downregulation and attenuated tumor cell growth and proliferation. Furthermore, LFS-1107 exhibited potent activities when administered to immunodeficient mice engrafted with human ENKTL cells.Conclusions:Therefore, LFS-1107 holds great promise for the treatment of ENKTL and may warrant translation for use in clinical trials.Funding:Yang's laboratory was supported by the National Natural Science Foundation of China (Grant: 81874301), the Fundamental Research Funds for Central University (Grant: DUT22YG122) and the Key Research project of 'be Recruited and be in Command' in Liaoning Province (Personal Target Discovery for Metabolic Diseases).\n\n## Introduction\n\nENKTL represents as a rare yet highly aggressive subtype of non-Hodgkin\u2019s lymphoma (NHL) (Yamaguchi et al., 2018) with rather poor prognosis and short median survival time (Suzuki et al., 2010). Previously, we and colleagues uncovered that the overactivation of NF-\u03baB signaling and its downstream cytokines is a key hallmark for the pathogenesis of ENKTL (Wen et al., 2018). Nevertheless, to date, targeted therapy towards ENKTL is still lacking and new therapeutic strategies are urgently needed to combat this rare yet deadly tumor (Jiang et al., 2015). Exportin-1, also known as CRM1, has been implicated in the aggressive behavior of various malignances by nuclear exporting critical tumor suppressor proteins and transcription factors (Dong et al., 2009). Moreover, CRM1 has been found to be highly upregulated in a panel of tumor types (Turner et al., 2012). Indeed, it is believed that tumor cells strive to evade powerful negative regulation of apoptosis and cell proliferation through CRM1-mediated nuclear export machinery. Previously, we reported that a natural and covalent CRM1 inhibitor sulforaphene and its synthetic analogues (Wang et al., 2018; Tian et al., 2020; Liu et al., 2023; Gao et al., 2021), can selectively kill a panel of tumor cells. Here, we presented the development and evaluation of a novel sulforaphene analogue as a potent CRM1 inhibitor with superior antitumor activities towards ENKTL while sparing human platelets.\n\n## Results and discussion\n\nIn this work, we want to find aromatic fragments that can be installed with sulforaphene parent structure as CRM1 inhibitors with strong potency. Previously, we developed a CRM1 inhibitor LFS-829 via traditional virtual screening and structure-based design approach. Herein, we strive to design a CRM1 inhibitor with strong potency against ENKTL cells through the recently developed AIDD (Artificial Intelligence Drug Discovery) approaches (Chan et al., 2019). Briefly, we adopted the deep reinforcement learning molecular de novo design model developed by Olivecrona et al., 2017 to facilitate the discovery of novel aromatic fragments. This model prioritizes those structures with modest similarity to the molecules in the positive dataset of known CRM1 inhibitors rather than very close analogues. We obtained an initial output of 3,000 moiety structures and the top 50 candidate moieties generated from this step were used as seed structures to search for commercial-available aromatic fragments from Sigma-Aldrich compound library (similarity ~97%). Next, we selected and purchased 10 commercial-accessible aromatic fragments (Figure 1A) which were experimentally tested via biolayer interferometry assay (BLI). Among the ten experimentally tested fragments, tetrazole moieties (S5 and S8 fragment) obtained the second highest binding constant with CRM1 via BLI assay experiments (Figure 1C and Figure 1\u2014figure supplement 1). Yet, given that tetrazole fragments are more synthetic accessible as compared to the fragment with the highest binding constant (S4 moiety in Figure 1A, benzo[d]oxazol-2-yl)-N, N-dimethylaniline), the tetrazole moiety was chosen to install with sulforaphene parent structure. Subsequently, we prepared a synthetic analogue of sulforaphene with the tetrazole aromatic moiety, named as LFS-1107 (Figure 1B), which was further evaluated through cell lines and in vivo animal models.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/80625/elife-80625-fig1-v2.jpg)\n\n**Figure 1.:** (A) The identification of ten commercial-accessible aromatic fragments aided by deep reinforcement learning model; (B) Synthesis of LFS-1107 via the installation of aromatic tetrazole moiety selected from the previous step to the sulforaphene parent structure; (C) Assessment of protein-ligand binding kinetics and binding affinity of tetrazole aromatic fragments via Bio-layer interferometry (BLI) assay; (D) Binding affinity of LFS-1107 and KPT-330 determined via BLI assay: LFS-1107, Kd~1.25E-11 M; KPT-330: Kd~5.29E-09 M.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/80625/elife-80625-fig1-figsupp1-v2.jpg)\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/80625/elife-80625-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** No binding affinities were detected for the two control proteins during BIL assay with compound LFS-1107.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/80625/elife-80625-fig1-figsupp3-v2.jpg)\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/80625/elife-80625-fig1-figsupp4-v2.jpg)\n\n**Figure 1\u2014figure supplement 4.:** It shows that CRM1 was significantly elevated in patients with Lymphoma.\n\nFirst, we sought to evaluate the binding specificity of LFS-1107 with CRM1 as compared to other possible protein targets with reactive cysteine in the binding pocket through the Octet K2 biolayer interferometry assay (BLI). Here, we chose IkB\u03b1 and Keap1 as two control probes to compare because both of them are reactive for covalent compounds and thereby frequently used for testing selectivity. Our BLI results revealed that LFS-1107 binds strongly with CRM1 (Kd~1.25E-11 M, Figure 1D) as compared to KPT-330 (Kd~5.29E-09 M), a known CRM1 inhibitor approved by FDA. In contrast, LFS-1107 doesn\u2019t bind with either two control probes IkB\u03b1 or Keap1 in BLI assay experiments (Figure 1\u2014figure supplement 2). Furthermore, the results revealed that LFS-1107 is a reversible CRM1 inhibitor with clear dissociation process which may implicate a low toxicity profile. This is consistent with the results of our previous studies that sulforaphene synthetic analogues are reversible CRM1 inhibitors. Moreover, we used GSH/GSSG detection assay kit to show that the GSH:GSSG ratio keeps constant upon the treatment of LFS-1107 and therefore we ruled out the possibility that LFS-1107 is a general redox modulator (Figure 2B). Collectively, our results revealed that CRM1 is a major cellular target of LFS-1107 and responsible for its cellular activities.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/80625/elife-80625-fig2-v2.jpg)\n\n**Figure 2.:** (A) Suppression of different human NK/T cell lymphoma cells; (B) GSH/GSSG ratio detection upon the treatment of LFS-1107; (C) The effect of LFS-1107 on normal PBMC cell lines; (D) The viability of platelets treated with LFS-1107; (E) Western blot result of the CRM1 with \u03b2-actin as loading control; (F) The cellular activities of LFS-1107 on siCRM1-293T and the wild-type 293T cell line with different concentrations of treatment for 48 h; (G) Nuclear retention of I\u03baB\u03b1 by confocal microscopy (Scale bar, 20 \u03bcM); (H) Quantification of the nuclear I\u039aB-\u03b1 ratio by fluorescence intensity per cell (Data presented as mean \u00b1 SEM); (I) Representative western blots of p65, Cox-2, c-Myc, and Survivin; (J) Western blots showing the protein level of I\u03baB\u03b1 in nucleus and cytoplasm; (K) ELISA detection of cytokine production after treated with LFS-1107. Data were either presented as representative images or expressed as the mean \u00b1 SD of each group. Statistical analysis were performed via Student t-test, ***p<0.001, ****p<0.0001.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/80625/elife-80625-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Moreover, the Gene Ontology (GO) analysis suggests that Biological Process (regulation of cellular component organization) and Molecular Function (protein binding) related to CRM1 were modulated upon the treatment of LFS-1107.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/80625/elife-80625-fig2-figsupp2-v2.jpg)\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/80625/elife-80625-fig2-figsupp3-v2.jpg)\n\n**Figure 2\u2014figure supplement 3.:** Nuclear accumulation of I\u03baB\u03b1 induced by treatment with LFS-1107 (500nM) for 3 hours. The medium (containing LFS-1107) was removed and replaced with new medium in the Wash group. Nuclei was stained with DAPI. Scale bars, 50\u03bcM.\n\nNext, we assessed LFS-1107 for its activity and specificity in human ENKTL cell lines. Our data show that LFS-1107 achieves IC50 value of 26 nM in SNK6 cell line and 36 nM in HANK-1 cell line (Figure 2A). To further study the selectivity of LFS-1107 towards ENKTL cells, we evaluated the toxicity of LFS-1107 in normal PBMCs isolated from peripheral blood of healthy donors (Figure 2C). Interestingly, LFS-1107 barely showed any toxicity at concentration of 4 \u03bcM and the toxicity towards normal human PBMC is minimal even at a high dose of 9 \u03bcM. This implicates that LFS-1107 can selectively eliminate ENKTL cells while sparing normal human PBMC with good safety profile. Moreover, drug-induced toxicity towards platelets (also called as thrombocytopenia) is a common side effect in clinical trials for cancer therapeutics. We assessed the toxicity effects of LFS-1107 towards platelets and we found that LFS-1107 barely exhibits any effects on human platelets even at very high concentrations of 500 \u03bcM (Figure 2D).\n\nSubsequently, we want to investigate whether LFS-1107 could inhibit CRM1-mediated nuclear export of I\u03baB\u03b1 and reduce constitutive NF-\u03baB activity in ENKTL cells. First, we demonstrated that LFS-1107 could suppress the expression of CRM1 in a dose-dependent manner (Figure 2E). We revealed that the cellular activities by LFS-1107 was significantly abrogated when CRM1 was knocked down by siCRM1, implicating that CRM1 is a main target responsible for the cellular activities of LFS-1107 (Figure 2F). Our immunofluorescent results by confocal microscopy revealed that LFS-1107 can lead to nuclear accumulation of I\u03baB\u03b1 after 3 hr treatment in a dose dependent manner (Figure 2G\u2013H). Next, we employed Western blot to further confirm nuclear localization of I\u03baB\u03b1 upon the treatment of LFS-1107 (Figure 2J). The results ascertained that I\u03baB\u03b1 was trapped in the nucleus as the protein level of nuclear I\u03baB\u03b1 was significantly upregulated after LFS-1107 treatment (Figure 2J). Moreover, it is well known that the constitutive activity of NF-\u03baB/p65 was accompanied by the increased production of a few proinflammatory cytokines. Consequently, we found the expression of proinflammatory and proliferative proteins p65, COX-2, c-Myc, and Survivin were downregulated in a dose dependent manner after treatment with LFS-1107 (Figure 2I). Furthermore, when SNK6 cells were treated with LFS-1107, we observed a significant reduction of the proinflammatory cytokines including TNF-\u03b1, IFN-\u03b3, NF-\u03baB/p65, IL-1\u03b1, IL-1\u03b2, IL-6, IL-8, and MCP-1 as measured by ELISA assay (Figure 2K). Moreover, proteomics analysis suggests that Biological Process (regulation of cellular component organization) and Molecular Function (protein binding) related to CRM1 were modulated upon the treatment of LFS-1107 (Figure 2\u2014figure supplement 1). These results suggested that the inhibition of CRM1 by LFS-1107 could lead to the downregulation of NF-\u03baB transcriptional activity, proinflammatory cytokines and oncogenic signatures of ENKTL.\n\nLastly, we established a xenograft mouse model to test our findings by injecting SNK6 cells intraperitoneally into NCG mice. We found that LFS-1107 treatment (10 mg/kg/week) was able to extend mouse survival (Figure 3A\u2013B) and eliminate tumor cells considerably as evidenced by flow cytometric analysis (Figure 3C\u2013D\u2013E), demonstrating the efficacy of LFS-1107 in controlling ENKTL. Moreover, remarkably, mice injected with LFS-1107 reduced splenomegaly and restored spleen weight and spleen volume as compared with the normal group (Figure 3F\u2013G) with a better overall survival rate. Noteworthy, splenomegaly is a conventional symptom for extranodal natural NK/T cell lymphoma patients (Tse and Kwong, 2017). Hence, our results implicate that LFS-1107 can ameliorate the symptoms of ENKTL and might be a potentially promising compound for ENKTL treatment.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/80625/elife-80625-fig3-v2.jpg)\n\n**Figure 3.:** (A) Scheme of the xenograft mouse model. The mice were randomly divided into three groups (n = 6-13 per group). SNK6 cells were injected i.v. in female NOD SCID mice, and mice were injected per week with LFS-1107; (B) Survival rate of different animal groups; (C\u2013E) Flow cytometry of human ENKTL cell lines in mouse bone marrow with the use of FITC anti-human CD45 antibody (P1, red) or no primary antibody control (black); (F\u2013G) The symptoms of splenomegaly in each group of euthanized mice. From left to right: normal group, control ENKTL xenograft model group(splenomegaly), LFS-1107 treatment group (10 mg/kg). Data were either presented as representative images or expressed as the mean \u00b1 SEM of each group. Statistical analysis were performed via Student t-test, *p<0.05, ***p<0.001.\n\n### Conclusions\n\nIn summary, we report the discovery and biological evaluation of a synthetic sulforaphene analogue as potent CRM1 inhibitor towards the treatment of ENKTL. We demonstrated that treatment of LFS-1107 holds great promise as an effective remedy for ENKTL, acting through the nuclear retention of IkB\u03b1 and subsequent attenuation of NF-\u03baB signaling. We want to remind the reader that we don\u2019t rule out the possibility that LFS-1107 may kill ENKTL cells via other mechanisms due to the broad-spectrum cargo proteins of CRM1. Yet, we want to argue that our study has captured the most prominent mechanism of actions for LFS-1107 towards ENKTL. Our study may represent a novel route for eliminating ENKTL tumor cells with a distinct mode of actions.\n\n## Materials and methods\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or refrerence</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Cell line (Homo sapiens)</td>\n      <td>SNK-6</td>\n      <td>ATCC</td>\n      <td>RRID:CVCL_A673</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (Homo sapiens)</td>\n      <td>HANK-1</td>\n      <td>ATCC</td>\n      <td>RRID:CVCL_8226</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (Homo sapiens)</td>\n      <td>HEK293T</td>\n      <td>ATCC</td>\n      <td>RRID:CVCL_0063</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (Homo sapiens)</td>\n      <td>Hela</td>\n      <td>ATCC</td>\n      <td>RRID:CVCL_0030</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Cox2 Antibody</td>\n      <td>Cell Signaling Technology, Danvers, MA</td>\n      <td>Cat# 4842RRID:AB_2084968</td>\n      <td>WB (1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>NF-\u03baB p65 (D14E12) XP Rabbit mAb</td>\n      <td>Cell Signaling Technology, Danvers, MA</td>\n      <td>Cat# 8424</td>\n      <td>WB (1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>c-Myc/N-Myc (D3N8F) Rabbit mAb</td>\n      <td>Cell Signaling Technology, Danvers, MA</td>\n      <td>Cat# 13987RRID:AB_2631168</td>\n      <td>WB (1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-Survivin antibody</td>\n      <td>Abcam, Waltham, MA</td>\n      <td>Cat# Ab76424RRID:AB_1524459</td>\n      <td>WB (1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>I\u03baB\u03b1 (L35A5) Mouse mAb (Amino-terminal Antigen)</td>\n      <td>Cell Signaling Technology, Danvers, MA</td>\n      <td>Cat# 4814RRID:AB_390781</td>\n      <td>WB (1:1000)IF(1:200)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Exportin-1/CRM1 (D6V7N) Rabbit mAb</td>\n      <td>Cell Signaling Technology, Danvers, MA</td>\n      <td>Cat# 46249RRID:AB_2799298</td>\n      <td>WB (1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Histone H3 (D1H2) XP Rabbit mAb (BSA and Azide Free)</td>\n      <td>Cell Signaling Technology, Danvers, MA</td>\n      <td>Cat# 60932</td>\n      <td>WB (1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>CD45 (Intracellular Domain) (D9M8I) XP Rabbit mAb</td>\n      <td>Cell Signaling Technology, Danvers, MA</td>\n      <td>Cat# 13917RRID:AB_2750898</td>\n      <td>F (1:100)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>FITC Goat Anti-Mouse IgG (H+L)</td>\n      <td>ABclonal, Wuhan, China</td>\n      <td>Cat# AS001RRID:AB_1524459</td>\n      <td>IF(1:50)</td>\n    </tr>\n    <tr>\n      <td>Protein</td>\n      <td>KEAP1 Protein, Human, Recombinant (His &amp; GST Tag)</td>\n      <td>Sinobiological, Beijing, China</td>\n      <td>Cat# 11981-H20B</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Protein</td>\n      <td>I\u03baB alpha Protein, Human, Recombinant (His Tag)</td>\n      <td>Sinobiological, Beijing, China</td>\n      <td>Cat# 12045-H07E</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Cell Counting Kit-8</td>\n      <td>Beyotime, Shanghai, China</td>\n      <td>Cat# C0037</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>GSH and GSSG Assay Kit</td>\n      <td>Beyotime, Shanghai, China</td>\n      <td>Cat# S0053</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>TNF-\u03b1 Elisa kit</td>\n      <td>Elabscience, Wuhan, China</td>\n      <td>Cat# E-EL-H2305c</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>IFN-1\u03b3 Elisa kit</td>\n      <td>Elabscience, Wuhan, China</td>\n      <td>Cat# E-EL-H0108c</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>p65 Elisa kit</td>\n      <td>Elabscience, Wuhan, China</td>\n      <td>Cat# E-EL-H1388c</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>IL-1\u03b1 Elisa kit</td>\n      <td>Elabscience, Wuhan, China</td>\n      <td>Cat# E-EL-H0088c</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>IL-1\u03b2 Elisa kit</td>\n      <td>Elabscience, Wuhan, China</td>\n      <td>Cat# E-EL-H0149c</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>IL-6 Elisa kit</td>\n      <td>Elabscience, Wuhan, China</td>\n      <td>Cat# E-EL-H6156</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>IL-8 Elisa kit</td>\n      <td>Elabscience, Wuhan, China</td>\n      <td>Cat# E-EL-H6008</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>MCP-1 Elisa kit</td>\n      <td>Elabscience, Wuhan, China</td>\n      <td>Cat# E-EL-H6005</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>NE-PER Nuclear and Cytoplasmic Extraction Reagents</td>\n      <td>Thermo, USA</td>\n      <td>Cat# 78833</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>GraphPad Prism</td>\n      <td>GraphPad Software</td>\n      <td>RRID:SCR_002798</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>KPT330</td>\n      <td>Targetmol, USA</td>\n      <td>Cat# T1844</td>\n      <td>CAS1421923-86-5</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>DAPI</td>\n      <td>Beyotime, Shanghai, China</td>\n      <td>Cat# C1005</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### The purity of the compound\n\nCompound LFS-1107 was ascertained by HNMR, LC-MS and HPLC analysis (\u226595% purity). The organic synthesis was conducted following standard procedures. All the chemicals and solvents were purchased from Sigma.\n\n### Organic synthesis\n\nThe NMR spectra of small molecule compounds were recorded on Bruker Avance 400 MHz for 1HNMR and 100 MHz for 13CNMR. The LCMS were taken on a quadrupole Mass Spectrometer on Shimadzu LCMS 2010 (Column: sepax ODS 50\u00d72.0 mm, 5 \u00b5m) or Agilent 1200 HPLC, 1956 MSD (Column: Shim-pack XR-ODS 30\u00d73.0, 2.2 \u00b5m) operating in ES (+) ionization mode. Chromatographic purifications were by flash chromatography using 100~200 mesh silica gel. Anhydrous solvents were pre-treated with 3 A MS column before used. All commercially available reagents were used as received unless otherwise stated.\n\n### Cell lines, cell cultures, and antibodies\n\nHuman lymphoma cell lines SNK6 and HANK-1 were purchased from ATCC. SNK6 and HANK-1 cell lines were maintained in RPMI 1640 medium supplemented with 10% FBS and 293T cell line in DMEM medium with 10% FBS. RPMI 1640 medium, DMEM medium and FBS (fetal bovine serum) were purchased from Hyclone (Thermo Scientific). Antibodies against Survivin (ab76424) was obtained from Abcam. Other antibodies were purchased from Cell Signaling Technology: anti-\u03b2-actin (#3700), anti-Cox2 (#4842), anti-p65 (#8424), anti-C-Myc (#13987), and anti-I\u03baB\u03b1 (#4814). Alexa 488-conjugated goat anti-rabbit antibody and Alexa 594-conjugated goat anti-mouse antibody were obtained from Invitrogen Life Technology (Invitrogen, CA, USA). Human lymphoma cell lines SNK6, HANK-1, 293T and Hela were purchased from the American Type Culture Collection (ATCC). The identity of these cell lines was confirmed by STR and the cells were tested negative for mycoplasma contamination throughout the experimental period.\n\n### Deep reinforcement learning model\n\nIn the present study, we adopted the deep reinforcement learning based molecular de novo design method developed by Olivecrona etc. from AstraZeneca. In brief, the deep reinforcement learning model consists of two main modules, the Design module (D) and the Evaluate module (E). The Design module (D) is used to produce novel chemical structures whereas the Evaluate module (E) is used to assess the feasibility and properties of the novel structures by assigning a numerical award or penalty to each new structure. The model employs the simple representation of chemical structures by the simplified molecular-input line-entry system (SMILES) strings in both the Design module (D) and the Evaluate module (E). The Design module was first pre-trained with about ~2 million structures from the PubChem database to learn basic rules of organic chemistry that define SMILES strings within the context of Recurrent neural network (RNN). To check the validity of the approach, we used the module to generate about 0.2 million compounds which were assessed by the structure checker ChemAxon and 97% of the generated structures were chemical sensible structures. Finally, the deep reinforcement learning based molecular design model was able to design ~3000 chemical structures from which we chose the top 50 candidate moieties for further consideration. In this work, we want to find novel fragments that can be installed with sulforaphene parent structure as CRM1 inhibitors. Indeed, our model prioritizes those structures with modest similarity to the molecules in the positive dataset rather than very close analogues. We used the values of molecule descriptors and root mean square deviation (RMSD) calculated as the reward function in the reinforcement learning stage in the model. We obtained an initial output of 3,000 structures, which were then automatically filtered to remove molecules bearing structure alerts. The model prioritizes the synthetic feasibility of a small-molecule compound, and the distinctiveness of the compound from other molecules in the literatures and in the patent space. The top 50 candidate moieties generated from the previous step were used as seed structures to search for commercial-available aromatic fragments (similarity ~97%). Lastly, we purchased 10 commercial-available aromatic fragments which were experimentally tested via biolayer interferometry assay (BLI).\n\n### Bio-layer interferometry (BLI) assay\n\nThe Octet K2 system (Molecular Device, ForteBIO, USA) is suitable for the characterization of protein-protein or protein-ligand binding kinetics and binding affinity. The assay consists of the following steps: 1. Protein and BLI sensor preparation. The recombinant protein CRM1 (50 \u03bcg/mL) was biotinylated in the presence of biotin at room temperature (RT) for 1 hr. Then, the excess biotin was removed through spin desalting columns. The recombinant CRM1 protein was then immobilized on super streptavidin sensors (ForteBIO, USA). The sensors were then blocked, washed, and moved into wells containing various concentrations of the test compounds in kinetic buffer (ForteBIO); 2. BLI experimental process. Automated detection was performed using an Octet K2 (Molecular Devices ForteBIO, USA). Buffer was added to a 96-well plate, and the plate was transferred to the K2 instrument for analysis by running serially at 25 \u00b0C with a shaking speed of 1000 rpm. Baseline readings were obtained in buffer (120 s), associations in wells containing compound (180 s), and dissociation in buffer (180 s). The signals from the following buffer were detected over time. First, each of these concentrations was applied to four sets of experiments: (a) CRM1-immobilized sensor in drug-containing kinetics buffer; (b) Blanked-sensor in drug-containing kinetics buffer; (c) CRM1-immobilized sensor in PBS-kinetics buffer; and (d) Blanked-sensor in PBS-kinetics buffer. The final value was calculated using the equation: (a-c)\u2013(b-d). This method removes interference from the sensor and drug-containing buffers. The binding signals were identified and the results were analyzed using the OctetHT V10.0 software.\n\n### Cell viability assay\n\nCell viability assays were performed as previously described. Human lymphoma cell lines SNK6 and HANK-1 were seeded into 96-well plates and treated with LFS-1107 in concentrations of 0\u2013800 nM for 72 hr. Cell viability was evaluated using the WST-8-based Cell Counting kit-8 (Beyotime), which was added to the wells and incubated for 3 hr. The absorbance of wells at 450 nm (reference wavelength 610 nm) was measured with a microplate reader (Infinite F50, Tecan).\n\n### Cytotoxicity assay\n\nThe Research Ethics Committee (REC) of Dalian University of Technology approved conduct of ex vivo assays with donated human cells (approval number: 2018\u2013023). Normal human peripheral blood mononuclear cells (PBMCs) were obtained from blood samples collected from healthy volunteers. Approval was obtained from The Second Affiliated Hospital of Dalian Medical University institutional review board for these studies. Peripheral blood mononuclear cells were isolated by density gradient centrifugation over Histopaque-1077 (Sigma Diagnostics, St. Louis, MO, USA) at 400 g for 30 min. Isolated mononuclear cells were washed and assayed for total number and viability using Trypan blue exclusion. PBMCs were suspended at 8\u00d7105 /mL and incubated in RPMI 1640 medium containing 10% FBS in 24-well plates. Platelets suspended in plasma were collected by apheresis from volunteer donors after obtaining written consent (The Second Affiliated Hospital of Dalian Medical University). After dilution 1:10 in Tyrode\u2019s buffer, platelets were incubated for 24 hr at 37 \u00b0C with graduated concentrations of test compounds (LFS-1107 or KPT-330) dissolved in DMSO. The EC50 values was calculated using GraphPad Prism software.\n\n### Western blot\n\nThe cytoplasmic and nucleic protein were extracted separately using the protein extraction kit (Boster) according to the manufacture\u2019s introduction. Protein (30\u201345 \u03bcg) was fractionated on a 10\u201315% acrylamide denaturing gel and transferred onto a PVDF membrane. The membrane was blocked with 5% nonfat dry milk in TBST for 1 hr at room temperature and washed in TBST three times, 5 min each time. The membrane was then incubated with primary antibodies at 1:500 to 1:1000 dilutions overnight at 4 \u00b0C. After washing with TBST for 15 min, the membrane was incubated with horseradish peroxidase (HRP) -conjugated secondary antibody at a 1:5000 dilutions for 1 hr at room temperature. After further washing in TBST, the proteins were detected by enhanced chemiluminescence on X-ray film with ECL western blotting detection kit (Thermo Fisher Scientific).\n\n### Nuclear export assays and confocal fluorescence microscopy\n\n293T cells were seeded onto glass bottom cell culture dish at a density of 3000\u20135000 cells in 1000 \u03bcL complete media. After incubation at 37 \u00b0C, 5% CO2 for 24 hr, cells were treated with CRM1 inhibitors for 3 hr. Small molecule compounds (KPT-330 and LFS-1107) were serially diluted 1:2 starting from 1 \u03bcM in RPMI 1640 medium supplemented with 10% FBS. Following the indicated treatments, cells were fixed for 20 min with 4% paraformaldehyde in PBS. Next, cell membranes were permeabilized by 0.3% Triton X-100 in PBS for 20 min. After blocking with 5% bovine serum albumin (BSA) in PBS for 1 hr at 37 \u00b0C, cells were treated with IkB\u03b1 antibodies in blocking buffer for 24 hr at 4 \u00b0C. Anti-mouse Alexa 594 were used as secondary antibodies. Cell nuclei were stained with DAPI for 20 min. After washing, photomicrographic images were recorded with confocal laser scanning microscope Fluoview FV10i. For cell counts, at least 200 cells exhibiting nuclear, nuclear and cytoplasmic, or cytoplasmic staining were counted from three separate images. Percentages of N(Nuclear), N/C(Nuclear/Cytoplasmic) and C(Cytoplasmic) cells were calculated and standard deviations were determined.\n\n### ELISA assay\n\nCell culture media were collected and centrifuged at for 20 min at 1000 g at 4\u2103to remove cell debris. The concentrations of serum cytokines were assayed by the ELISA kit (Elabscience Biotechnology Co., Ltd) according to the manufacturer\u2019s instructions. Three experimental replicates were performed for each sample.\n\n### RNA Interference experiment\n\nThe siRNA targets were as follows: XPO1-siRNA-1 (5'-CCAGCAAAGAAUGGCUCAATT-3'), XPO1-siRNA-2(5'-GGAAGAUUCUUCCAAGGAATT-3'), XPO1-siRNA-3(5'-CCAGGAGACAGCUAUAUUUTT-3'), and the control target was 5'-UUCUCCGAACGUGUCACGUTT-3', all of which were obtained from Future Biotherapeutics. 293T cells were seeded in 96-well plates at a density of 5000 cells per cell in DMEM medium with 10%FBS the day before transfection. 293T cells were transfected with control siRNA or XPO1-siRNA according to the manufacturer\u2019s instructions. The transfected cells were then collected for experiments 48 hr after transfection.\n\n### GSH/GSSG ratio detection\n\nSNK6 cells were seeded onto four plates at a density of 100,000 cells/well in 3 mL complete media. After incubation at 37 \u00b0C, 5% CO2 for 24 hr, cells were treated with LFS-1107 for 48 hr. Compound LFS-1107 was serially diluted 1:2 starting from 10 mM in RPMI 1640 medium supplemented with 10% FBS. Following the indicated treatments, cells were tested by GSH and GSSG Assay Kit (Beyotime), which can detect the content of GSH and GSSG in the sample separately. We then calculated the GSH:GSSG ratio of each sample. The results were displayed by GraphPad Prism.\n\n### In vivo efficacy studies\n\nNOD/SCID mice were purchased from the Nanjing Biomedical Research Institute of Nanjing University (NBRI). The mice were randomly divided into three groups (n=6\u201313 per group, day 0). In brief, SNK6 cells were intravenous injected into SCID mice and the growth of ENKTL cells was monitored every week for two consecutive weeks until the intrasplenic accumulation and proliferation of ENKTL cells. Subsequently, LFS-1107 was intraperitoneal injected to this ENTKL disease model per week (dose: 10 mg/kg). In some experiments, SNK6 cells were pretreated with LFS-1107 (1 \u03bcmol/L) or DMSO for 48 hr. Cells were then harvested and resuspended and the cell number was counted using a MuseTM cell analyzer. Animal studies in the present work have been conducted in accordance with the ethical standards and the Declaration of Helsinki. The investigation has been approved by the animal care and use committee of our institution.\n\n### Flow cytometry analysis\n\nMonocytes collected from mouse tissue were stained with FITC anti-human CD45 antibody and PE anti-mouse CD45 antibody. Isotype control antibody was used as a negative control. The Cytomics FC500 flow cytometry (Beckman, USA) was used for analysis.\n\n### Statistical analysis\n\nAll continuous variables were compared using one-way ANOVA, followed by Dunnett\u2019s test or Tukey\u2019s test for multiple comparisons whereas error bars in all figures represent the SEM or SD. * p<0.05, **p<0.01, ***p<0.001, ****p<0.0001. Survival curves were compared using the log-rank test with GraphPad software.\n",
+      "created_at": "2025-12-04T03:39:59.425659Z"
+    },
+    {
+      "id": "f025d8c7-0dd4-4e5a-9eb4-eda121732bf7",
+      "submission_id": "639025f3-3f40-49fc-b019-301eecf0529d",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Qing Zhang, https://ror.org/05byvp690 University of Texas Southwestern Medical Center United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.80625.sa0](https://doi.org/10.7554/eLife.80625.sa0)\n\nThis study provides important findings on the discovery of a novel CRM1 inhibitor. This study provides compelling data on the identification of a novel CRM1 inhibitor and shows its efficiency against extranodal natural killer/T cell lymphoma cells (ENKTL). The findings from this study will provide motivation on optimizing these novel CRM inhibitors for treatments of ENKTL and will be of broad interest to cancer biology.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Qing Zhang, https://ror.org/05byvp690 University of Texas Southwestern Medical Center United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.80625.sa1](https://doi.org/10.7554/eLife.80625.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Discovery and biological evaluation of a potent small molecule CRM1 inhibitor for its selective ablation of extranodal NK/T cell lymphoma\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Wafik El-Deiry as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1. In general, the image quality of this paper needs to be improved.\n\n2. Needs to provide direct evidence that LFS-1107 reversibly inhibits the nuclear export receptor CRM1.\n\n3. What are the cellular activities of the existing inhibitor KPT-330 for ENKTL cell lines, for instance, SNK6 cell line, as compared to the 1107 compound?\n\nReviewer #1 (Recommendations for the authors):\n\nAlthough the current paper is not ready to be published, the approach is original and I would be more than happy to review a re-submitted paper on the topic.\n\nReviewer #2 (Recommendations for the authors):\n\nThis is a rather interesting study that identified a potent small-molecular CRM1 inhibitor for the possible treatment of ENTKL. Below are some specific suggestions which I think may help to improve the manuscript in general,\n\n1. It would be necessary to explain in 1-2 sentences in the main text why the authors choose to use a deep-reinforcement learning model for the design of a CRM1 inhibitor.\n\n2. I am curious about the time cost for the generation of seed structures as well as the whole design process via the deep-reinforcement learning model in the manuscript. Please specify.\n\n3. In lines 74-76, the authors claimed that 50 candidate moieties were used as seed structures to search for commercial-available aromatic fragments. The authors should specify what commercial compound collection was used for the similarity searching.\n\n4. Figure 1\u2014figure supplement 4, is this result for ENKTL lymphoma patients or for general lymphoma patients? Please specify.\n\n5. The authors didn't discuss the results of Figure 2- Supplement 1. The authors should comment in 1-2 sentences in the main text.\n\n6. What are the cellular activities of the existing inhibitor KPT-330 for ENKTL cell lines, for instance, SNK6 cell line, as compared to the 1107 compound?\n\n7. Line 182-183, the authors should provide the reference for the model.\n\n8. To my knowledge, CRM1 may have a spectrum of cargo proteins. Is it possible that 1107 may suppress ENKTL cells via other mechanisms or pathways?\n\n9. The font size for Figure 1 and Figure 2 are too small to read. This should be adjusted and amended.\n",
+      "created_at": "2025-12-04T03:39:59.425659Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T03:39:59.425659Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T03:39:59.425659Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "da3104e1-bf8e-4bcd-a044-b3c9c95ec617",
+      "content_id": "a0a37c16-382c-4455-abfb-91f7ba1f306b",
+      "claim_id": "C1",
+      "claim": "The overactivation of NF-\u03baB signaling is a key hallmark for the pathogenesis of extranodal natural killer/T cell lymphoma (ENKTL).",
+      "claim_type": "EXPLICIT",
+      "source": "The overactivation of NF-\u03baB signaling is a key hallmark for the pathogenesis of extranodal natural killer/T cell lymphoma (ENKTL), a very aggressive subtype of non-Hodgkin's lymphoma yet with rather limited control strategies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work (Wen et al., 2018) as stated in the Introduction section.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:39:59.425659Z"
+    },
+    {
+      "id": "4dcd8792-4342-4eed-a209-dd489ee21d4d",
+      "content_id": "a0a37c16-382c-4455-abfb-91f7ba1f306b",
+      "claim_id": "C2",
+      "claim": "ENKTL is a very aggressive subtype of non-Hodgkin's lymphoma with rather limited control strategies.",
+      "claim_type": "EXPLICIT",
+      "source": "The overactivation of NF-\u03baB signaling is a key hallmark for the pathogenesis of extranodal natural killer/T cell lymphoma (ENKTL), a very aggressive subtype of non-Hodgkin's lymphoma yet with rather limited control strategies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations (Yamaguchi et al., 2018) and established knowledge about ENKTL.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:39:59.425659Z"
+    },
+    {
+      "id": "2e568c7a-93df-4a97-9f63-dd6a7f44816b",
+      "content_id": "a0a37c16-382c-4455-abfb-91f7ba1f306b",
+      "claim_id": "C3",
+      "claim": "ENKTL has rather poor prognosis and short median survival time.",
+      "claim_type": "EXPLICIT",
+      "source": "ENKTL represents as a rare yet highly aggressive subtype of non-Hodgkin's lymphoma (NHL) (Yamaguchi et al., 2018) with rather poor prognosis and short median survival time (Suzuki et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Suzuki et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:39:59.425659Z"
+    },
+    {
+      "id": "00ed71c3-d38b-4089-97ac-acf524a9638c",
+      "content_id": "a0a37c16-382c-4455-abfb-91f7ba1f306b",
+      "claim_id": "C4",
+      "claim": "The dysregulated exportin-1 (CRM1) is mainly responsible for tumor cells to evade apoptosis and promote tumor-associated pathways such as NF-\u03baB signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Previously, we found that the dysregulated exportin-1 (also known as CRM1) is mainly responsible for tumor cells to evade apoptosis and promote tumor-associated pathways such as NF-\u03baB signaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on the authors' previous findings as stated in the Abstract.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:39:59.425659Z"
+    },
+    {
+      "id": "27fc37a0-b737-4185-82ee-c7b8d1f0c930",
+      "content_id": "a0a37c16-382c-4455-abfb-91f7ba1f306b",
+      "claim_id": "C5",
+      "claim": "Targeted therapy towards ENKTL is still lacking.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, to date, targeted therapy towards ENKTL is still lacking and new therapeutic strategies are urgently needed to combat this rare yet deadly tumor (Jiang et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Jiang et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:39:59.425659Z"
+    },
+    {
+      "id": "f119c9b2-edda-4804-aab2-67b4b257e7b5",
+      "content_id": "a0a37c16-382c-4455-abfb-91f7ba1f306b",
+      "claim_id": "C6",
+      "claim": "CRM1 has been implicated in the aggressive behavior of various malignancies by nuclear exporting critical tumor suppressor proteins and transcription factors.",
+      "claim_type": "EXPLICIT",
+      "source": "Exportin-1, also known as CRM1, has been implicated in the aggressive behavior of various malignances by nuclear exporting critical tumor suppressor proteins and transcription factors (Dong et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Dong et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:39:59.425659Z"
+    },
+    {
+      "id": "988c610c-8db9-4700-add2-bf48047106eb",
+      "content_id": "a0a37c16-382c-4455-abfb-91f7ba1f306b",
+      "claim_id": "C7",
+      "claim": "CRM1 has been found to be highly upregulated in a panel of tumor types.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, CRM1 has been found to be highly upregulated in a panel of tumor types (Turner et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Turner et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:39:59.425659Z"
+    },
+    {
+      "id": "0c0479cf-0d3c-4e5c-9793-e6b0806e45fb",
+      "content_id": "a0a37c16-382c-4455-abfb-91f7ba1f306b",
+      "claim_id": "C8",
+      "claim": "Tumor cells strive to evade powerful negative regulation of apoptosis and cell proliferation through CRM1-mediated nuclear export machinery.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, it is believed that tumor cells strive to evade powerful negative regulation of apoptosis and cell proliferation through CRM1-mediated nuclear export machinery.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on established knowledge in the field as indicated by 'it is believed'.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:39:59.425659Z"
+    },
+    {
+      "id": "fde7686e-d635-4170-b747-99031e9b6f6c",
+      "content_id": "a0a37c16-382c-4455-abfb-91f7ba1f306b",
+      "claim_id": "C9",
+      "claim": "Sulforaphene and its synthetic analogues can selectively kill a panel of tumor cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Previously, we reported that a natural and covalent CRM1 inhibitor sulforaphene and its synthetic analogues (Wang et al., 2018; Tian et al., 2020; Liu et al., 2023; Gao et al., 2021), can selectively kill a panel of tumor cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to the authors' previous work.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:39:59.425659Z"
+    },
+    {
+      "id": "7c25f663-eb75-4f7b-b0c5-0baaa5375ab6",
+      "content_id": "a0a37c16-382c-4455-abfb-91f7ba1f306b",
+      "claim_id": "C10",
+      "claim": "A deep reinforcement learning molecular de novo design model was used to facilitate the discovery of novel aromatic fragments for CRM1 inhibitors.",
+      "claim_type": "EXPLICIT",
+      "source": "Briefly, we adopted the deep reinforcement learning molecular de novo design model developed by Olivecrona et al., 2017 to facilitate the discovery of novel aromatic fragments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Olivecrona et al., 2017 and describes the methodology used.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:39:59.425659Z"
+    },
+    {
+      "id": "9147848e-1e68-4a12-b820-1b2f0afc7a52",
+      "content_id": "a0a37c16-382c-4455-abfb-91f7ba1f306b",
+      "claim_id": "C11",
+      "claim": "The deep reinforcement learning model prioritizes structures with modest similarity to molecules in the positive dataset of known CRM1 inhibitors rather than very close analogues.",
+      "claim_type": "EXPLICIT",
+      "source": "This model prioritizes those structures with modest similarity to the molecules in the positive dataset of known CRM1 inhibitors rather than very close analogues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the design principle of the computational model used.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:39:59.425659Z"
+    },
+    {
+      "id": "70a266a1-8480-4df7-9601-ae090b541708",
+      "content_id": "a0a37c16-382c-4455-abfb-91f7ba1f306b",
+      "claim_id": "C12",
+      "claim": "An initial output of 3,000 moiety structures was obtained from the deep reinforcement learning model.",
+      "claim_type": "EXPLICIT",
+      "source": "We obtained an initial output of 3,000 moiety structures and the top 50 candidate moieties generated from this step were used as seed structures to search for commercial-available aromatic fragments from Sigma-Aldrich compound library (similarity ~97%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on the experimental data from the computational screening.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:39:59.425659Z"
+    },
+    {
+      "id": "2fadd9a9-c841-437e-bca8-807b714db7ea",
+      "content_id": "a0a37c16-382c-4455-abfb-91f7ba1f306b",
+      "claim_id": "C13",
+      "claim": "Ten commercial-accessible aromatic fragments were selected and purchased for experimental testing via biolayer interferometry assay (BLI).",
+      "claim_type": "EXPLICIT",
+      "source": "Next, we selected and purchased 10 commercial-accessible aromatic fragments (Figure 1A) which were experimentally tested via biolayer interferometry assay (BLI).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the experimental methodology described and shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:39:59.425659Z"
+    },
+    {
+      "id": "0cd1010f-b5fd-43cf-8766-c5e0739e8c18",
+      "content_id": "a0a37c16-382c-4455-abfb-91f7ba1f306b",
+      "claim_id": "C14",
+      "claim": "Tetrazole moieties (S5 and S8 fragment) obtained the second highest binding constant with CRM1 via BLI assay experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the ten experimentally tested fragments, tetrazole moieties (S5 and S8 fragment) obtained the second highest binding constant with CRM1 via BLI assay experiments (Figure 1C and Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1C and Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:39:59.425659Z"
+    },
+    {
+      "id": "fe2ced4d-3be7-4ba7-b645-ead359b19362",
+      "content_id": "a0a37c16-382c-4455-abfb-91f7ba1f306b",
+      "claim_id": "C15",
+      "claim": "Tetrazole fragments are more synthetically accessible compared to the fragment with the highest binding constant (S4 moiety).",
+      "claim_type": "EXPLICIT",
+      "source": "Yet, given that tetrazole fragments are more synthetic accessible as compared to the fragment with the highest binding constant (S4 moiety in Figure 1A, benzo[d]oxazol-2-yl)-N, N-dimethylaniline), the tetrazole moiety was chosen to install with sulforaphene parent structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference about synthetic accessibility considerations.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:39:59.425659Z"
+    },
+    {
+      "id": "e8ee0676-8104-4536-9fcc-9a79b22c3bbb",
+      "content_id": "a0a37c16-382c-4455-abfb-91f7ba1f306b",
+      "claim_id": "C16",
+      "claim": "LFS-1107 binds strongly with CRM1 with a Kd of approximately 1.25E-11 M.",
+      "claim_type": "EXPLICIT",
+      "source": "Our BLI results revealed that LFS-1107 binds strongly with CRM1 (Kd~1.25E-11 M, Figure 1D) as compared to KPT-330 (Kd~5.29E-09 M), a known CRM1 inhibitor approved by FDA.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental BLI data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:39:59.425659Z"
+    },
+    {
+      "id": "ea69d5b6-c2bf-4dc9-aa45-acd7bd8cc2cf",
+      "content_id": "a0a37c16-382c-4455-abfb-91f7ba1f306b",
+      "claim_id": "C17",
+      "claim": "KPT-330 binds to CRM1 with a Kd of approximately 5.29E-09 M.",
+      "claim_type": "EXPLICIT",
+      "source": "Our BLI results revealed that LFS-1107 binds strongly with CRM1 (Kd~1.25E-11 M, Figure 1D) as compared to KPT-330 (Kd~5.29E-09 M), a known CRM1 inhibitor approved by FDA.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental BLI data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:39:59.425659Z"
+    },
+    {
+      "id": "fc0d5c9e-a7f4-43f8-8363-7eb82690835d",
+      "content_id": "a0a37c16-382c-4455-abfb-91f7ba1f306b",
+      "claim_id": "C18",
+      "claim": "KPT-330 is a known CRM1 inhibitor approved by FDA.",
+      "claim_type": "EXPLICIT",
+      "source": "Our BLI results revealed that LFS-1107 binds strongly with CRM1 (Kd~1.25E-11 M, Figure 1D) as compared to KPT-330 (Kd~5.29E-09 M), a known CRM1 inhibitor approved by FDA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on established knowledge about KPT-330.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:39:59.425659Z"
+    },
+    {
+      "id": "070e19f4-55f4-458e-85ad-699903dadf38",
+      "content_id": "a0a37c16-382c-4455-abfb-91f7ba1f306b",
+      "claim_id": "C19",
+      "claim": "LFS-1107 doesn't bind with IkB\u03b1 or Keap1 in BLI assay experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, LFS-1107 doesn't bind with either two control probes IkB\u03b1 or Keap1 in BLI assay experiments (Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental BLI data shown in Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:39:59.425659Z"
+    },
+    {
+      "id": "e61cde30-09fc-45d6-a4b6-e936798c11b1",
+      "content_id": "a0a37c16-382c-4455-abfb-91f7ba1f306b",
+      "claim_id": "C20",
+      "claim": "LFS-1107 is a reversible CRM1 inhibitor with clear dissociation process.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the results revealed that LFS-1107 is a reversible CRM1 inhibitor with clear dissociation process which may implicate a low toxicity profile.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on experimental BLI data showing dissociation kinetics.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:39:59.425659Z"
+    },
+    {
+      "id": "c58394fc-c54d-443f-8784-b49cf46f0449",
+      "content_id": "a0a37c16-382c-4455-abfb-91f7ba1f306b",
+      "claim_id": "C21",
+      "claim": "Sulforaphene synthetic analogues are reversible CRM1 inhibitors.",
+      "claim_type": "EXPLICIT",
+      "source": "This is consistent with the results of our previous studies that sulforaphene synthetic analogues are reversible CRM1 inhibitors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to the authors' previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:39:59.425659Z"
+    },
+    {
+      "id": "7d2444b6-a949-41f1-9109-dcded6cb8898",
+      "content_id": "a0a37c16-382c-4455-abfb-91f7ba1f306b",
+      "claim_id": "C22",
+      "claim": "The GSH:GSSG ratio keeps constant upon the treatment of LFS-1107.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, we used GSH/GSSG detection assay kit to show that the GSH:GSSG ratio keeps constant upon the treatment of LFS-1107 and therefore we ruled out the possibility that LFS-1107 is a general redox modulator (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:39:59.425659Z"
+    },
+    {
+      "id": "c5b4f061-fad2-4605-9548-31cee82a3e02",
+      "content_id": "a0a37c16-382c-4455-abfb-91f7ba1f306b",
+      "claim_id": "C23",
+      "claim": "LFS-1107 is not a general redox modulator.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, we used GSH/GSSG detection assay kit to show that the GSH:GSSG ratio keeps constant upon the treatment of LFS-1107 and therefore we ruled out the possibility that LFS-1107 is a general redox modulator (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on inference from the GSH/GSSG ratio data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:39:59.425659Z"
+    },
+    {
+      "id": "8220a490-9a9e-4535-a9ad-9ab96e705402",
+      "content_id": "a0a37c16-382c-4455-abfb-91f7ba1f306b",
+      "claim_id": "C24",
+      "claim": "CRM1 is a major cellular target of LFS-1107 and responsible for its cellular activities.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, our results revealed that CRM1 is a major cellular target of LFS-1107 and responsible for its cellular activities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on multiple experimental results including BLI assays and siRNA knockdown experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:39:59.425659Z"
+    },
+    {
+      "id": "a171549b-cbcc-42d9-8d77-4fc1d11cb582",
+      "content_id": "a0a37c16-382c-4455-abfb-91f7ba1f306b",
+      "claim_id": "C25",
+      "claim": "LFS-1107 achieves IC50 value of 26 nM in SNK6 cell line.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data show that LFS-1107 achieves IC50 value of 26 nM in SNK6 cell line and 36 nM in HANK-1 cell line (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental cell viability data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:39:59.425659Z"
+    },
+    {
+      "id": "ef4ce5db-5f8f-4e43-8cd2-df0fa0561041",
+      "content_id": "a0a37c16-382c-4455-abfb-91f7ba1f306b",
+      "claim_id": "C26",
+      "claim": "LFS-1107 achieves IC50 value of 36 nM in HANK-1 cell line.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data show that LFS-1107 achieves IC50 value of 26 nM in SNK6 cell line and 36 nM in HANK-1 cell line (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental cell viability data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:39:59.425659Z"
+    },
+    {
+      "id": "b289de48-ae7d-4532-94c7-eafffb02c4c9",
+      "content_id": "a0a37c16-382c-4455-abfb-91f7ba1f306b",
+      "claim_id": "C27",
+      "claim": "LFS-1107 barely showed any toxicity at concentration of 4 \u03bcM in normal PBMCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, LFS-1107 barely showed any toxicity at concentration of 4 \u03bcM and the toxicity towards normal human PBMC is minimal even at a high dose of 9 \u03bcM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental cytotoxicity data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:39:59.425659Z"
+    },
+    {
+      "id": "ff6680b0-7cf7-43ce-b751-a4dfede7741f",
+      "content_id": "a0a37c16-382c-4455-abfb-91f7ba1f306b",
+      "claim_id": "C28",
+      "claim": "The toxicity of LFS-1107 towards normal human PBMC is minimal even at a high dose of 9 \u03bcM.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, LFS-1107 barely showed any toxicity at concentration of 4 \u03bcM and the toxicity towards normal human PBMC is minimal even at a high dose of 9 \u03bcM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental cytotoxicity data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:39:59.425659Z"
+    },
+    {
+      "id": "880bbb62-8fd2-4df6-ac43-6e453e6ba475",
+      "content_id": "a0a37c16-382c-4455-abfb-91f7ba1f306b",
+      "claim_id": "C29",
+      "claim": "LFS-1107 can selectively eliminate ENKTL cells while sparing normal human PBMC with good safety profile.",
+      "claim_type": "EXPLICIT",
+      "source": "This implicates that LFS-1107 can selectively eliminate ENKTL cells while sparing normal human PBMC with good safety profile.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the differential toxicity data between ENKTL cells and normal PBMCs.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:39:59.425659Z"
+    },
+    {
+      "id": "6e3e3409-e2e0-4125-9fd0-c10556f80d4b",
+      "content_id": "a0a37c16-382c-4455-abfb-91f7ba1f306b",
+      "claim_id": "C30",
+      "claim": "LFS-1107 barely exhibits any effects on human platelets even at very high concentrations of 500 \u03bcM.",
+      "claim_type": "EXPLICIT",
+      "source": "We assessed the toxicity effects of LFS-1107 towards platelets and we found that LFS-1107 barely exhibits any effects on human platelets even at very high concentrations of 500 \u03bcM (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental platelet viability data shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:39:59.425659Z"
+    },
+    {
+      "id": "581958d3-e6ad-4c65-bf6f-f1d3abca8580",
+      "content_id": "a0a37c16-382c-4455-abfb-91f7ba1f306b",
+      "claim_id": "C31",
+      "claim": "LFS-1107 could suppress the expression of CRM1 in a dose-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "First, we demonstrated that LFS-1107 could suppress the expression of CRM1 in a dose-dependent manner (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by Western blot data shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:39:59.425659Z"
+    },
+    {
+      "id": "1f58f1c8-4719-4b20-afa2-c66f9bc03df9",
+      "content_id": "a0a37c16-382c-4455-abfb-91f7ba1f306b",
+      "claim_id": "C32",
+      "claim": "The cellular activities by LFS-1107 was significantly abrogated when CRM1 was knocked down by siCRM1.",
+      "claim_type": "EXPLICIT",
+      "source": "We revealed that the cellular activities by LFS-1107 was significantly abrogated when CRM1 was knocked down by siCRM1, implicating that CRM1 is a main target responsible for the cellular activities of LFS-1107 (Figure 2F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by siRNA knockdown experimental data shown in Figure 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:39:59.425659Z"
+    },
+    {
+      "id": "e7b2bd15-7b0c-4e23-99f9-c30237e2d6c4",
+      "content_id": "a0a37c16-382c-4455-abfb-91f7ba1f306b",
+      "claim_id": "C33",
+      "claim": "LFS-1107 can lead to nuclear accumulation of I\u03baB\u03b1 after 3 hr treatment in a dose dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Our immunofluorescent results by confocal microscopy revealed that LFS-1107 can lead to nuclear accumulation of I\u03baB\u03b1 after 3 hr treatment in a dose dependent manner (Figure 2G\u2013H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by confocal microscopy data shown in Figure 2G-H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:39:59.425659Z"
+    },
+    {
+      "id": "53936652-2402-45cb-b5e9-288d5e4f3a8c",
+      "content_id": "a0a37c16-382c-4455-abfb-91f7ba1f306b",
+      "claim_id": "C34",
+      "claim": "I\u03baB\u03b1 was trapped in the nucleus as the protein level of nuclear I\u03baB\u03b1 was significantly upregulated after LFS-1107 treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "The results ascertained that I\u03baB\u03b1 was trapped in the nucleus as the protein level of nuclear I\u03baB\u03b1 was significantly upregulated after LFS-1107 treatment (Figure 2J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by Western blot data of nuclear and cytoplasmic fractions shown in Figure 2J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:39:59.425659Z"
+    },
+    {
+      "id": "4fd474f3-6232-4c92-8ef2-15bc9d28b539",
+      "content_id": "a0a37c16-382c-4455-abfb-91f7ba1f306b",
+      "claim_id": "C35",
+      "claim": "The expression of proinflammatory and proliferative proteins p65, COX-2, c-Myc, and Survivin were downregulated in a dose dependent manner after treatment with LFS-1107.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, we found the expression of proinflammatory and proliferative proteins p65, COX-2, c-Myc, and Survivin were downregulated in a dose dependent manner after treatment with LFS-1107 (Figure 2I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by Western blot data shown in Figure 2I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:39:59.425659Z"
+    },
+    {
+      "id": "9c135f11-d004-4334-8c7f-646955518d2a",
+      "content_id": "a0a37c16-382c-4455-abfb-91f7ba1f306b",
+      "claim_id": "C36",
+      "claim": "Treatment of SNK6 cells with LFS-1107 resulted in a significant reduction of proinflammatory cytokines including TNF-\u03b1, IFN-\u03b3, NF-\u03baB/p65, IL-1\u03b1, IL-1\u03b2, IL-6, IL-8, and MCP-1.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, when SNK6 cells were treated with LFS-1107, we observed a significant reduction of the proinflammatory cytokines including TNF-\u03b1, IFN-\u03b3, NF-\u03baB/p65, IL-1\u03b1, IL-1\u03b2, IL-6, IL-8, and MCP-1 as measured by ELISA assay (Figure 2K).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by ELISA data shown in Figure 2K.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:39:59.425659Z"
+    },
+    {
+      "id": "02f4d200-c5a9-4fd7-ae04-864f032cf6e1",
+      "content_id": "a0a37c16-382c-4455-abfb-91f7ba1f306b",
+      "claim_id": "C37",
+      "claim": "Biological Process (regulation of cellular component organization) and Molecular Function (protein binding) related to CRM1 were modulated upon the treatment of LFS-1107.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, proteomics analysis suggests that Biological Process (regulation of cellular component organization) and Molecular Function (protein binding) related to CRM1 were modulated upon the treatment of LFS-1107 (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by proteomics and Gene Ontology analysis data shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:39:59.425659Z"
+    },
+    {
+      "id": "f91360a5-87d3-4705-aa84-e633232f868f",
+      "content_id": "a0a37c16-382c-4455-abfb-91f7ba1f306b",
+      "claim_id": "C38",
+      "claim": "The inhibition of CRM1 by LFS-1107 could lead to the downregulation of NF-\u03baB transcriptional activity, proinflammatory cytokines and oncogenic signatures of ENKTL.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggested that the inhibition of CRM1 by LFS-1107 could lead to the downregulation of NF-\u03baB transcriptional activity, proinflammatory cytokines and oncogenic signatures of ENKTL.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from multiple experimental results including Western blots, ELISA, and proteomics data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:39:59.425659Z"
+    },
+    {
+      "id": "9e4fda2c-476b-4d6f-a131-ac9c464e1ab7",
+      "content_id": "a0a37c16-382c-4455-abfb-91f7ba1f306b",
+      "claim_id": "C39",
+      "claim": "LFS-1107 treatment (10 mg/kg/week) was able to extend mouse survival in a xenograft mouse model.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that LFS-1107 treatment (10 mg/kg/week) was able to extend mouse survival (Figure 3A\u2013B) and eliminate tumor cells considerably as evidenced by flow cytometric analysis (Figure 3C\u2013D\u2013E), demonstrating the efficacy of LFS-1107 in controlling ENKTL.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by in vivo survival data shown in Figure 3A-B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:39:59.425659Z"
+    },
+    {
+      "id": "b77c4d09-7459-4800-9449-493a501dac7d",
+      "content_id": "a0a37c16-382c-4455-abfb-91f7ba1f306b",
+      "claim_id": "C40",
+      "claim": "LFS-1107 treatment eliminated tumor cells considerably as evidenced by flow cytometric analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that LFS-1107 treatment (10 mg/kg/week) was able to extend mouse survival (Figure 3A\u2013B) and eliminate tumor cells considerably as evidenced by flow cytometric analysis (Figure 3C\u2013D\u2013E), demonstrating the efficacy of LFS-1107 in controlling ENKTL.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by flow cytometry data shown in Figure 3C-D-E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:39:59.425659Z"
+    },
+    {
+      "id": "ca166612-8fde-4cef-91ff-ddd4c504b3fe",
+      "content_id": "a0a37c16-382c-4455-abfb-91f7ba1f306b",
+      "claim_id": "C41",
+      "claim": "Mice injected with LFS-1107 reduced splenomegaly and restored spleen weight and spleen volume as compared with the normal group.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, remarkably, mice injected with LFS-1107 reduced splenomegaly and restored spleen weight and spleen volume as compared with the normal group (Figure 3F\u2013G) with a better overall survival rate.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by spleen weight and volume data shown in Figure 3F-G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:39:59.425659Z"
+    },
+    {
+      "id": "945017bb-0ed5-40a7-90d9-181bffbb6abb",
+      "content_id": "a0a37c16-382c-4455-abfb-91f7ba1f306b",
+      "claim_id": "C42",
+      "claim": "Splenomegaly is a conventional symptom for extranodal natural NK/T cell lymphoma patients.",
+      "claim_type": "EXPLICIT",
+      "source": "Noteworthy, splenomegaly is a conventional symptom for extranodal natural NK/T cell lymphoma patients (Tse and Kwong, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Tse and Kwong, 2017.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:39:59.425659Z"
+    },
+    {
+      "id": "02f95ff5-b0c6-4619-a988-cf5ea3990180",
+      "content_id": "a0a37c16-382c-4455-abfb-91f7ba1f306b",
+      "claim_id": "C43",
+      "claim": "LFS-1107 can ameliorate the symptoms of ENKTL.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, our results implicate that LFS-1107 can ameliorate the symptoms of ENKTL and might be a potentially promising compound for ENKTL treatment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the in vivo data showing reduction in splenomegaly and improved survival.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:39:59.425659Z"
+    },
+    {
+      "id": "2cb67d9f-e095-4dde-b6f4-43b694eebe7c",
+      "content_id": "a0a37c16-382c-4455-abfb-91f7ba1f306b",
+      "claim_id": "C44",
+      "claim": "LFS-1107 might be a potentially promising compound for ENKTL treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, our results implicate that LFS-1107 can ameliorate the symptoms of ENKTL and might be a potentially promising compound for ENKTL treatment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is speculative based on the cumulative experimental evidence presented.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:39:59.425659Z"
+    },
+    {
+      "id": "61307c2c-5dd5-4644-b3a5-22a857455145",
+      "content_id": "a0a37c16-382c-4455-abfb-91f7ba1f306b",
+      "claim_id": "C45",
+      "claim": "Treatment of LFS-1107 holds great promise as an effective remedy for ENKTL, acting through the nuclear retention of IkB\u03b1 and subsequent attenuation of NF-\u03baB signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, we report the discovery and biological evaluation of a synthetic sulforaphene analogue as potent CRM1 inhibitor towards the treatment of ENKTL. We demonstrated that treatment of LFS-1107 holds great promise as an effective remedy for ENKTL, acting through the nuclear retention of IkB\u03b1 and subsequent attenuation of NF-\u03baB signaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on the cumulative experimental evidence from cell-based and in vivo studies.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:39:59.425659Z"
+    },
+    {
+      "id": "04f0df17-6a9b-45da-b69f-29f06384a463",
+      "content_id": "a0a37c16-382c-4455-abfb-91f7ba1f306b",
+      "claim_id": "C46",
+      "claim": "LFS-1107 may kill ENKTL cells via other mechanisms due to the broad-spectrum cargo proteins of CRM1.",
+      "claim_type": "EXPLICIT",
+      "source": "We want to remind the reader that we don't rule out the possibility that LFS-1107 may kill ENKTL cells via other mechanisms due to the broad-spectrum cargo proteins of CRM1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is speculative and acknowledges potential alternative mechanisms.",
+      "evidence_type": "[\"SPECULATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:39:59.425659Z"
+    },
+    {
+      "id": "451a0733-708d-46af-a5e9-ccab635856a2",
+      "content_id": "a0a37c16-382c-4455-abfb-91f7ba1f306b",
+      "claim_id": "C47",
+      "claim": "The study has captured the most prominent mechanism of actions for LFS-1107 towards ENKTL.",
+      "claim_type": "EXPLICIT",
+      "source": "Yet, we want to argue that our study has captured the most prominent mechanism of actions for LFS-1107 towards ENKTL.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the comprehensive experimental data presented.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:39:59.425659Z"
+    },
+    {
+      "id": "2da52e2e-efea-418c-af99-7629af1d8bc9",
+      "content_id": "a0a37c16-382c-4455-abfb-91f7ba1f306b",
+      "claim_id": "C48",
+      "claim": "The study represents a novel route for eliminating ENKTL tumor cells with a distinct mode of actions.",
+      "claim_type": "EXPLICIT",
+      "source": "Our study may represent a novel route for eliminating ENKTL tumor cells with a distinct mode of actions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the overall findings and their novelty.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:39:59.425659Z"
+    },
+    {
+      "id": "141093fa-f027-499b-bad3-52645dca290d",
+      "content_id": "a0a37c16-382c-4455-abfb-91f7ba1f306b",
+      "claim_id": "C49",
+      "claim": "LFS-1107 holds great promise for the treatment of ENKTL and may warrant translation for use in clinical trials.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, LFS-1107 holds great promise for the treatment of ENKTL and may warrant translation for use in clinical trials.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is speculative based on the preclinical data presented.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:39:59.425659Z"
+    },
+    {
+      "id": "b6f1791d-3a71-49b7-b5bb-32fce2e7305d",
+      "content_id": "a0a37c16-382c-4455-abfb-91f7ba1f306b",
+      "claim_id": "C50",
+      "claim": "CRM1 was significantly elevated in patients with Lymphoma.",
+      "claim_type": "EXPLICIT",
+      "source": "It shows that CRM1 was significantly elevated in patients with Lymphoma.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 1\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:39:59.425659Z"
+    },
+    {
+      "id": "e5f3fbf9-62bb-48e7-800f-a918f62cbad8",
+      "content_id": "a0a37c16-382c-4455-abfb-91f7ba1f306b",
+      "claim_id": "C51",
+      "claim": "LFS-1107 can strongly suppress the growth of ENKTL cells at low-range nanomolar concentration.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that LFS-1107 can strongly suppresses the growth of ENKTL cells at low-range nanomolar concentration yet with minimal effects on human platelets and healthy peripheral blood mononuclear cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by cell viability data showing IC50 values in the nanomolar range.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:39:59.425659Z"
+    },
+    {
+      "id": "3ebd7ae0-1899-4c77-9411-2e08a9334d84",
+      "content_id": "a0a37c16-382c-4455-abfb-91f7ba1f306b",
+      "claim_id": "C52",
+      "claim": "LFS-1107 has minimal effects on human platelets and healthy peripheral blood mononuclear cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that LFS-1107 can strongly suppresses the growth of ENKTL cells at low-range nanomolar concentration yet with minimal effects on human platelets and healthy peripheral blood mononuclear cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by cytotoxicity data shown in Figures 2C and 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:39:59.425659Z"
+    },
+    {
+      "id": "42bb6b94-a860-46c9-86d3-34148d1ed4a6",
+      "content_id": "a0a37c16-382c-4455-abfb-91f7ba1f306b",
+      "claim_id": "C53",
+      "claim": "Treatment of ENKTL cells with LFS-1107 resulted in the nuclear retention of IkB\u03b1.",
+      "claim_type": "EXPLICIT",
+      "source": "Treatment of ENKTL cells with LFS-1107 resulted in the nuclear retention of IkB\u03b1 and consequent strong suppression of NF-\u03baB transcriptional activities, NF-\u03baB target genes downregulation and attenuated tumor cell growth and proliferation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by confocal microscopy and Western blot data shown in Figures 2G-H and 2J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:39:59.425659Z"
+    },
+    {
+      "id": "66a5105f-0d4a-4549-9707-52a7ebfe95e5",
+      "content_id": "a0a37c16-382c-4455-abfb-91f7ba1f306b",
+      "claim_id": "C54",
+      "claim": "Treatment of ENKTL cells with LFS-1107 resulted in strong suppression of NF-\u03baB transcriptional activities.",
+      "claim_type": "EXPLICIT",
+      "source": "Treatment of ENKTL cells with LFS-1107 resulted in the nuclear retention of IkB\u03b1 and consequent strong suppression of NF-\u03baB transcriptional activities, NF-\u03baB target genes downregulation and attenuated tumor cell growth and proliferation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by Western blot and ELISA data showing downregulation of NF-\u03baB target genes and cytokines.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:39:59.425659Z"
+    },
+    {
+      "id": "4d98eb4a-41fa-49cf-adc5-a3647b7d51b9",
+      "content_id": "a0a37c16-382c-4455-abfb-91f7ba1f306b",
+      "claim_id": "C55",
+      "claim": "Treatment of ENKTL cells with LFS-1107 resulted in NF-\u03baB target genes downregulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Treatment of ENKTL cells with LFS-1107 resulted in the nuclear retention of IkB\u03b1 and consequent strong suppression of NF-\u03baB transcriptional activities, NF-\u03baB target genes downregulation and attenuated tumor cell growth and proliferation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by Western blot data showing downregulation of p65, COX-2, c-Myc, and Survivin.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:39:59.425659Z"
+    },
+    {
+      "id": "0ac3f567-dc54-499d-918b-a77d219ae5ca",
+      "content_id": "a0a37c16-382c-4455-abfb-91f7ba1f306b",
+      "claim_id": "C56",
+      "claim": "Treatment of ENKTL cells with LFS-1107 resulted in attenuated tumor cell growth and proliferation.",
+      "claim_type": "EXPLICIT",
+      "source": "Treatment of ENKTL cells with LFS-1107 resulted in the nuclear retention of IkB\u03b1 and consequent strong suppression of NF-\u03baB transcriptional activities, NF-\u03baB target genes downregulation and attenuated tumor cell growth and proliferation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by cell viability assays and in vivo tumor burden data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:39:59.425659Z"
+    },
+    {
+      "id": "f58ca19a-bff7-467b-bb34-cb2b74cc410e",
+      "content_id": "a0a37c16-382c-4455-abfb-91f7ba1f306b",
+      "claim_id": "C57",
+      "claim": "LFS-1107 exhibited potent activities when administered to immunodeficient mice engrafted with human ENKTL cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, LFS-1107 exhibited potent activities when administered to immunodeficient mice engrafted with human ENKTL cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by in vivo data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:39:59.425659Z"
+    },
+    {
+      "id": "05b0c8e5-3a78-40c5-a5d4-c4175e8b2bbc",
+      "content_id": "a0a37c16-382c-4455-abfb-91f7ba1f306b",
+      "claim_id": "C58",
+      "claim": "The overactivation of NF-\u03baB signaling and its downstream cytokines is a key hallmark for the pathogenesis of ENKTL.",
+      "claim_type": "EXPLICIT",
+      "source": "Previously, we and colleagues uncovered that the overactivation of NF-\u03baB signaling and its downstream cytokines is a key hallmark for the pathogenesis of ENKTL (Wen et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Wen et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:39:59.425659Z"
+    },
+    {
+      "id": "18d60617-e922-4d05-9ad5-31628700899d",
+      "content_id": "a0a37c16-382c-4455-abfb-91f7ba1f306b",
+      "claim_id": "C59",
+      "claim": "The reversible nature of LFS-1107 binding to CRM1 may implicate a low toxicity profile.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the results revealed that LFS-1107 is a reversible CRM1 inhibitor with clear dissociation process which may implicate a low toxicity profile.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is speculative based on inference from the reversible binding kinetics.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:39:59.425659Z"
+    },
+    {
+      "id": "94c68695-f3e2-4f07-95b6-4b73dc326bb5",
+      "content_id": "a0a37c16-382c-4455-abfb-91f7ba1f306b",
+      "claim_id": "C60",
+      "claim": "Nuclear accumulation of I\u03baB\u03b1 induced by LFS-1107 treatment is reversible upon washing.",
+      "claim_type": "IMPLICIT",
+      "source": "Nuclear accumulation of I\u03baB\u03b1 induced by treatment with LFS-1107 (500nM) for 3 hours. The medium (containing LFS-1107) was removed and replaced with new medium in the Wash group.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 2\u2014figure supplement 3 showing reversibility of nuclear accumulation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:39:59.425659Z"
+    },
+    {
+      "id": "d2cb1432-3c70-4fe7-b12d-2f6121437fd2",
+      "content_id": "a0a37c16-382c-4455-abfb-91f7ba1f306b",
+      "claim_id": "C61",
+      "claim": "The deep reinforcement learning model was pre-trained with about 2 million structures from the PubChem database.",
+      "claim_type": "EXPLICIT",
+      "source": "The Design module was first pre-trained with about ~2 million structures from the PubChem database to learn basic rules of organic chemistry that define SMILES strings within the context of Recurrent neural network (RNN).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the training methodology for the computational model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:39:59.425659Z"
+    },
+    {
+      "id": "ddf65b27-0dd1-4a17-be29-ceefb131dced",
+      "content_id": "a0a37c16-382c-4455-abfb-91f7ba1f306b",
+      "claim_id": "C62",
+      "claim": "97% of the generated structures from the deep reinforcement learning model were chemically sensible structures.",
+      "claim_type": "EXPLICIT",
+      "source": "To check the validity of the approach, we used the module to generate about 0.2 million compounds which were assessed by the structure checker ChemAxon and 97% of the generated structures were chemical sensible structures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by computational validation data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:39:59.425659Z"
+    },
+    {
+      "id": "0bd41516-d601-4311-bd86-1383d9fb4720",
+      "content_id": "a0a37c16-382c-4455-abfb-91f7ba1f306b",
+      "claim_id": "C63",
+      "claim": "The model prioritizes the synthetic feasibility of a small-molecule compound.",
+      "claim_type": "EXPLICIT",
+      "source": "The model prioritizes the synthetic feasibility of a small-molecule compound, and the distinctiveness of the compound from other molecules in the literatures and in the patent space.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the design principles of the computational model.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:39:59.425659Z"
+    },
+    {
+      "id": "be9432ba-e347-4884-988f-00240aa75d1d",
+      "content_id": "a0a37c16-382c-4455-abfb-91f7ba1f306b",
+      "claim_id": "C64",
+      "claim": "The model prioritizes the distinctiveness of the compound from other molecules in the literatures and in the patent space.",
+      "claim_type": "EXPLICIT",
+      "source": "The model prioritizes the synthetic feasibility of a small-molecule compound, and the distinctiveness of the compound from other molecules in the literatures and in the patent space.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the design principles of the computational model.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:39:59.425659Z"
+    },
+    {
+      "id": "64358fc7-51ed-47e3-825b-2bf7ffcc0cbc",
+      "content_id": "a0a37c16-382c-4455-abfb-91f7ba1f306b",
+      "claim_id": "C65",
+      "claim": "IkB\u03b1 and Keap1 are reactive for covalent compounds and frequently used for testing selectivity.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we chose IkB\u03b1 and Keap1 as two control probes to compare because both of them are reactive for covalent compounds and thereby frequently used for testing selectivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on established knowledge in the field of covalent inhibitor development.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:39:59.425659Z"
+    },
+    {
+      "id": "77972b08-afdc-4089-8db1-792bf754fe21",
+      "content_id": "a0a37c16-382c-4455-abfb-91f7ba1f306b",
+      "claim_id": "C66",
+      "claim": "Drug-induced toxicity towards platelets (thrombocytopenia) is a common side effect in clinical trials for cancer therapeutics.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, drug-induced toxicity towards platelets (also called as thrombocytopenia) is a common side effect in clinical trials for cancer therapeutics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on established knowledge in clinical oncology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:39:59.425659Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "7fdaf596-bb7a-45a6-a6f0-bfa90c7ab69e",
+      "content_id": "a0a37c16-382c-4455-abfb-91f7ba1f306b",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors used a deep reinforcement learning model to identify novel aromatic fragments for CRM1 inhibitor design. The model generated 3,000 structures, from which 10 commercial fragments were selected and tested via BLI assay, with tetrazole moieties showing the second-highest binding affinity to CRM1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C15 and C61-C64 describe a computational drug design workflow that is well-documented with appropriate methodology. The model validation (97% chemically sensible structures, C62) and experimental testing of predictions (BLI assays, C13-C14) provide convergent evidence. The selection rationale combining binding affinity and synthetic accessibility (C15) is reasonable, though the choice of tetrazole over the highest-affinity fragment introduces some pragmatic compromise.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:39:59.425659Z"
+    },
+    {
+      "id": "7a853f98-f9dd-4c6c-8543-c4862c1cf56f",
+      "content_id": "a0a37c16-382c-4455-abfb-91f7ba1f306b",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "LFS-1107 binds to CRM1 with high affinity (Kd ~1.25E-11 M), approximately 400-fold stronger than the FDA-approved CRM1 inhibitor KPT-330 (Kd ~5.29E-09 M). LFS-1107 shows selectivity for CRM1 over control proteins I\u03baB\u03b1 and Keap1, and exhibits reversible binding kinetics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C21 are supported by BLI experimental data shown in Figures 1D and supplements. The Kd values are directly measured, selectivity is demonstrated with appropriate controls (C19, C65), and reversibility is evident from dissociation curves. However, the extraordinarily tight Kd (picomolar range) for LFS-1107 is unusual and would benefit from orthogonal validation methods beyond BLI, as BLI can sometimes overestimate affinity for slow off-rate compounds.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:39:59.425659Z"
+    },
+    {
+      "id": "182d72cd-0f18-41c8-b697-8385043751ae",
+      "content_id": "a0a37c16-382c-4455-abfb-91f7ba1f306b",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "LFS-1107 does not alter the GSH:GSSG ratio, indicating it is not a general redox modulator.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C23 are supported by GSH/GSSG detection assay data (Figure 2B). This control experiment appropriately addresses a potential confounding mechanism for compounds with reactive electrophilic groups. The constant ratio across treatment conditions provides clear evidence against non-specific redox activity.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:39:59.425659Z"
+    },
+    {
+      "id": "31c36373-235c-4948-8046-368bdf3d3aba",
+      "content_id": "a0a37c16-382c-4455-abfb-91f7ba1f306b",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "CRM1 is the major cellular target responsible for LFS-1107's cellular activities, as demonstrated by dose-dependent suppression of CRM1 expression and loss of LFS-1107 activity upon CRM1 knockdown.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24, C31-C32 are supported by Western blot data (Figure 2E) and siRNA knockdown experiments (Figure 2F). The genetic validation via siRNA is a critical control showing target dependency. However, the claim that CRM1 suppression is dose-dependent (C31) should be interpreted cautiously as protein downregulation may be secondary to CRM1 inhibition rather than direct binding effects.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:39:59.425659Z"
+    },
+    {
+      "id": "d304d6df-fd7c-43ed-97d4-612aec5008be",
+      "content_id": "a0a37c16-382c-4455-abfb-91f7ba1f306b",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "LFS-1107 potently inhibits ENKTL cell growth with IC50 values of 26 nM (SNK6) and 36 nM (HANK-1), demonstrating low nanomolar potency.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C26 and C51 are supported by cell viability data (Figure 2A). The IC50 values are in the low nanomolar range as stated. However, only two ENKTL cell lines were tested, which limits generalizability. The manuscript would benefit from testing additional ENKTL lines and demonstrating that the potency correlates with CRM1 expression levels.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:39:59.425659Z"
+    },
+    {
+      "id": "4391149c-1f37-4bc3-a3a3-23f0f004af6e",
+      "content_id": "a0a37c16-382c-4455-abfb-91f7ba1f306b",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "LFS-1107 exhibits selective toxicity toward ENKTL cells while sparing normal PBMCs (minimal toxicity up to 9 \u03bcM) and human platelets (no effect up to 500 \u03bcM), demonstrating a favorable safety profile.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C30 and C52 are supported by cytotoxicity data (Figures 2C-D). The selectivity window is substantial (~300-fold for PBMCs, >15,000-fold for platelets). However, the PBMC experiments lack details on donor numbers, cell viability assessment methods, and treatment duration. The platelet data (C30, C66) addresses an important clinical concern, though the extremely high concentration tested (500 \u03bcM) may exceed physiologically relevant exposures.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:39:59.425659Z"
+    },
+    {
+      "id": "40965eaa-3362-465e-89cf-c06bb3173cdc",
+      "content_id": "a0a37c16-382c-4455-abfb-91f7ba1f306b",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "LFS-1107 treatment causes dose-dependent nuclear accumulation and retention of I\u03baB\u03b1, as demonstrated by confocal microscopy and Western blot analysis of nuclear/cytoplasmic fractions. This nuclear retention is reversible upon drug washout.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C34, C53, and C60 are supported by confocal microscopy (Figures 2G-H) and subcellular fractionation data (Figure 2J, Figure 2-supplement 3). The dose-dependent nuclear accumulation and reversibility upon washout are clearly demonstrated. The use of both imaging and biochemical fractionation provides orthogonal validation. However, quantification methods for microscopy data should be more clearly described.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:39:59.425659Z"
+    },
+    {
+      "id": "c457ca26-0a64-4a98-b109-0bd909371cb3",
+      "content_id": "a0a37c16-382c-4455-abfb-91f7ba1f306b",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "LFS-1107 treatment suppresses NF-\u03baB signaling, as evidenced by downregulation of NF-\u03baB target proteins (p65, COX-2, c-Myc, Survivin) and proinflammatory cytokines (TNF-\u03b1, IFN-\u03b3, IL-1\u03b1, IL-1\u03b2, IL-6, IL-8, MCP-1), with proteomics analysis confirming modulation of CRM1-related biological processes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C38 and C54-C55 are supported by Western blot (Figure 2I), ELISA (Figure 2K), and proteomics data (Figure 2-supplement 1). The convergent evidence from multiple assays strengthens the conclusion. However, the ELISA data (C36) shows variable effects across cytokines, and statistical analysis details are limited. The proteomics GO analysis (C37) is descriptive but lacks depth regarding specific pathways and statistical significance of enrichment.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:39:59.425659Z"
+    },
+    {
+      "id": "d24590f4-1260-4364-b9c1-69dc96cac313",
+      "content_id": "a0a37c16-382c-4455-abfb-91f7ba1f306b",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "In a xenograft mouse model, LFS-1107 (10 mg/kg/week) extended survival, reduced tumor burden (flow cytometry), and ameliorated splenomegaly, a characteristic symptom of ENKTL.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C43 and C57 are supported by in vivo data (Figure 3). Survival extension, tumor cell reduction, and spleen normalization are demonstrated. However, critical experimental details are missing: group sizes vary widely (n=6-13), randomization and blinding procedures are not described, and statistical analysis of survival curves lacks hazard ratios or median survival times. The flow cytometry gating strategy (Figures 3C-E) shows dramatic differences but lacks isotype controls and quantification across all animals.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:39:59.425659Z"
+    },
+    {
+      "id": "d3642335-19bc-4137-b3a5-66b1a566a16b",
+      "content_id": "a0a37c16-382c-4455-abfb-91f7ba1f306b",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The authors conclude that LFS-1107 is a promising compound for ENKTL treatment that may warrant clinical translation, acting through nuclear retention of I\u03baB\u03b1 and NF-\u03baB pathway suppression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C44-C45 and C49 represent speculative conclusions about clinical potential. While the preclinical data are encouraging, several gaps exist: no pharmacokinetic/pharmacodynamic studies, no toxicity studies in normal animals, limited in vivo dosing regimens tested, and no comparison to standard-of-care therapies. The mechanism is reasonably well-established, but the claim of clinical promise (C49) is premature without additional preclinical validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:39:59.425659Z"
+    },
+    {
+      "id": "c7d2267d-c1f1-4ec1-ab2f-463f19578966",
+      "content_id": "a0a37c16-382c-4455-abfb-91f7ba1f306b",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The authors acknowledge that LFS-1107 may act through additional mechanisms beyond I\u03baB\u03b1/NF-\u03baB due to CRM1's broad cargo protein spectrum, but argue they have captured the most prominent mechanism and that this represents a novel therapeutic approach for ENKTL.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C48 represent appropriate scientific caveats and interpretations. The acknowledgment of potential alternative mechanisms (C46) is scientifically sound given CRM1's multiple cargo proteins. The claim of capturing the 'most prominent mechanism' (C47) is reasonable based on the convergent evidence presented, though not definitively proven. The novelty claim (C48) is supported by the distinct mechanism compared to existing therapies.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:39:59.425659Z"
+    },
+    {
+      "id": "9c561412-64cf-46a5-806e-db41b6dc9703",
+      "content_id": "a0a37c16-382c-4455-abfb-91f7ba1f306b",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "CRM1 expression is significantly elevated in lymphoma patients compared to other cancer types.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C50 is supported by data shown in Figure 1-supplement 4, but critical details are missing: the data source, sample sizes, statistical methods, and whether this represents mRNA or protein levels. The figure legend provides minimal context, and it's unclear if this analysis was performed by the authors or extracted from public databases. Without proper statistical validation and methodological details, this result cannot be fully evaluated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:39:59.425659Z"
+    },
+    {
+      "id": "63bc00d7-8c35-43fc-9a4f-3e3096b268f0",
+      "content_id": "a0a37c16-382c-4455-abfb-91f7ba1f306b",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "LFS-1107 treatment attenuates ENKTL tumor cell growth and proliferation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C56 is supported by cell viability assays (Figure 2A) and in vivo tumor burden data (Figure 3). The convergent evidence from both in vitro IC50 measurements and in vivo tumor cell reduction provides strong support. However, direct proliferation assays (e.g., Ki-67 staining, BrdU incorporation) would strengthen this conclusion beyond viability measurements.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:39:59.425659Z"
+    },
+    {
+      "id": "03bca590-5a11-4a9b-84a7-71ec8db18ec2",
+      "content_id": "a0a37c16-382c-4455-abfb-91f7ba1f306b",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The reversible binding of LFS-1107 to CRM1 may indicate a low toxicity profile.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C59 is speculative (C20, C59). While reversible binding is demonstrated by BLI dissociation kinetics, the inference about toxicity is not directly tested. The low toxicity to PBMCs and platelets (C27-C30) provides some support, but comprehensive toxicity studies in animals are absent. The relationship between binding reversibility and in vivo toxicity is not straightforward and requires empirical validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:39:59.425659Z"
+    },
+    {
+      "id": "aca28b37-bc3e-4c2a-86b0-70e20ecc4527",
+      "content_id": "a0a37c16-382c-4455-abfb-91f7ba1f306b",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Background claims establishing ENKTL as an aggressive lymphoma with poor prognosis, limited treatment options, and the role of NF-\u03baB signaling and CRM1 in its pathogenesis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C9 and C58 are background statements supported by appropriate citations to prior literature. These establish the scientific rationale for the study. The citations appear appropriate for the claims made, though independent verification of the cited work was not performed. These are standard contextual claims that frame the research question.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:39:59.425659Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "7c25f663-eb75-4f7b-b0c5-0baaa5375ab6",
+      "result_id": "7fdaf596-bb7a-45a6-a6f0-bfa90c7ab69e"
+    },
+    {
+      "claim_id": "9147848e-1e68-4a12-b820-1b2f0afc7a52",
+      "result_id": "7fdaf596-bb7a-45a6-a6f0-bfa90c7ab69e"
+    },
+    {
+      "claim_id": "70a266a1-8480-4df7-9601-ae090b541708",
+      "result_id": "7fdaf596-bb7a-45a6-a6f0-bfa90c7ab69e"
+    },
+    {
+      "claim_id": "2fadd9a9-c841-437e-bca8-807b714db7ea",
+      "result_id": "7fdaf596-bb7a-45a6-a6f0-bfa90c7ab69e"
+    },
+    {
+      "claim_id": "0cd1010f-b5fd-43cf-8766-c5e0739e8c18",
+      "result_id": "7fdaf596-bb7a-45a6-a6f0-bfa90c7ab69e"
+    },
+    {
+      "claim_id": "fe2ced4d-3be7-4ba7-b645-ead359b19362",
+      "result_id": "7fdaf596-bb7a-45a6-a6f0-bfa90c7ab69e"
+    },
+    {
+      "claim_id": "d2cb1432-3c70-4fe7-b12d-2f6121437fd2",
+      "result_id": "7fdaf596-bb7a-45a6-a6f0-bfa90c7ab69e"
+    },
+    {
+      "claim_id": "ddf65b27-0dd1-4a17-be29-ceefb131dced",
+      "result_id": "7fdaf596-bb7a-45a6-a6f0-bfa90c7ab69e"
+    },
+    {
+      "claim_id": "0bd41516-d601-4311-bd86-1383d9fb4720",
+      "result_id": "7fdaf596-bb7a-45a6-a6f0-bfa90c7ab69e"
+    },
+    {
+      "claim_id": "be9432ba-e347-4884-988f-00240aa75d1d",
+      "result_id": "7fdaf596-bb7a-45a6-a6f0-bfa90c7ab69e"
+    },
+    {
+      "claim_id": "e8ee0676-8104-4536-9fcc-9a79b22c3bbb",
+      "result_id": "7a853f98-f9dd-4c6c-8543-c4862c1cf56f"
+    },
+    {
+      "claim_id": "ea69d5b6-c2bf-4dc9-aa45-acd7bd8cc2cf",
+      "result_id": "7a853f98-f9dd-4c6c-8543-c4862c1cf56f"
+    },
+    {
+      "claim_id": "fc0d5c9e-a7f4-43f8-8363-7eb82690835d",
+      "result_id": "7a853f98-f9dd-4c6c-8543-c4862c1cf56f"
+    },
+    {
+      "claim_id": "070e19f4-55f4-458e-85ad-699903dadf38",
+      "result_id": "7a853f98-f9dd-4c6c-8543-c4862c1cf56f"
+    },
+    {
+      "claim_id": "e61cde30-09fc-45d6-a4b6-e936798c11b1",
+      "result_id": "7a853f98-f9dd-4c6c-8543-c4862c1cf56f"
+    },
+    {
+      "claim_id": "c58394fc-c54d-443f-8784-b49cf46f0449",
+      "result_id": "7a853f98-f9dd-4c6c-8543-c4862c1cf56f"
+    },
+    {
+      "claim_id": "64358fc7-51ed-47e3-825b-2bf7ffcc0cbc",
+      "result_id": "7a853f98-f9dd-4c6c-8543-c4862c1cf56f"
+    },
+    {
+      "claim_id": "7d2444b6-a949-41f1-9109-dcded6cb8898",
+      "result_id": "182d72cd-0f18-41c8-b697-8385043751ae"
+    },
+    {
+      "claim_id": "c5b4f061-fad2-4605-9548-31cee82a3e02",
+      "result_id": "182d72cd-0f18-41c8-b697-8385043751ae"
+    },
+    {
+      "claim_id": "8220a490-9a9e-4535-a9ad-9ab96e705402",
+      "result_id": "31c36373-235c-4948-8046-368bdf3d3aba"
+    },
+    {
+      "claim_id": "581958d3-e6ad-4c65-bf6f-f1d3abca8580",
+      "result_id": "31c36373-235c-4948-8046-368bdf3d3aba"
+    },
+    {
+      "claim_id": "1f58f1c8-4719-4b20-afa2-c66f9bc03df9",
+      "result_id": "31c36373-235c-4948-8046-368bdf3d3aba"
+    },
+    {
+      "claim_id": "a171549b-cbcc-42d9-8d77-4fc1d11cb582",
+      "result_id": "d304d6df-fd7c-43ed-97d4-612aec5008be"
+    },
+    {
+      "claim_id": "ef4ce5db-5f8f-4e43-8cd2-df0fa0561041",
+      "result_id": "d304d6df-fd7c-43ed-97d4-612aec5008be"
+    },
+    {
+      "claim_id": "e5f3fbf9-62bb-48e7-800f-a918f62cbad8",
+      "result_id": "d304d6df-fd7c-43ed-97d4-612aec5008be"
+    },
+    {
+      "claim_id": "b289de48-ae7d-4532-94c7-eafffb02c4c9",
+      "result_id": "4391149c-1f37-4bc3-a3a3-23f0f004af6e"
+    },
+    {
+      "claim_id": "ff6680b0-7cf7-43ce-b751-a4dfede7741f",
+      "result_id": "4391149c-1f37-4bc3-a3a3-23f0f004af6e"
+    },
+    {
+      "claim_id": "880bbb62-8fd2-4df6-ac43-6e453e6ba475",
+      "result_id": "4391149c-1f37-4bc3-a3a3-23f0f004af6e"
+    },
+    {
+      "claim_id": "6e3e3409-e2e0-4125-9fd0-c10556f80d4b",
+      "result_id": "4391149c-1f37-4bc3-a3a3-23f0f004af6e"
+    },
+    {
+      "claim_id": "3ebd7ae0-1899-4c77-9411-2e08a9334d84",
+      "result_id": "4391149c-1f37-4bc3-a3a3-23f0f004af6e"
+    },
+    {
+      "claim_id": "e7b2bd15-7b0c-4e23-99f9-c30237e2d6c4",
+      "result_id": "40965eaa-3362-465e-89cf-c06bb3173cdc"
+    },
+    {
+      "claim_id": "53936652-2402-45cb-b5e9-288d5e4f3a8c",
+      "result_id": "40965eaa-3362-465e-89cf-c06bb3173cdc"
+    },
+    {
+      "claim_id": "42bb6b94-a860-46c9-86d3-34148d1ed4a6",
+      "result_id": "40965eaa-3362-465e-89cf-c06bb3173cdc"
+    },
+    {
+      "claim_id": "94c68695-f3e2-4f07-95b6-4b73dc326bb5",
+      "result_id": "40965eaa-3362-465e-89cf-c06bb3173cdc"
+    },
+    {
+      "claim_id": "4fd474f3-6232-4c92-8ef2-15bc9d28b539",
+      "result_id": "c457ca26-0a64-4a98-b109-0bd909371cb3"
+    },
+    {
+      "claim_id": "9c135f11-d004-4334-8c7f-646955518d2a",
+      "result_id": "c457ca26-0a64-4a98-b109-0bd909371cb3"
+    },
+    {
+      "claim_id": "02f4d200-c5a9-4fd7-ae04-864f032cf6e1",
+      "result_id": "c457ca26-0a64-4a98-b109-0bd909371cb3"
+    },
+    {
+      "claim_id": "f91360a5-87d3-4705-aa84-e633232f868f",
+      "result_id": "c457ca26-0a64-4a98-b109-0bd909371cb3"
+    },
+    {
+      "claim_id": "66a5105f-0d4a-4549-9707-52a7ebfe95e5",
+      "result_id": "c457ca26-0a64-4a98-b109-0bd909371cb3"
+    },
+    {
+      "claim_id": "4d98eb4a-41fa-49cf-adc5-a3647b7d51b9",
+      "result_id": "c457ca26-0a64-4a98-b109-0bd909371cb3"
+    },
+    {
+      "claim_id": "9e4fda2c-476b-4d6f-a131-ac9c464e1ab7",
+      "result_id": "d24590f4-1260-4364-b9c1-69dc96cac313"
+    },
+    {
+      "claim_id": "b77c4d09-7459-4800-9449-493a501dac7d",
+      "result_id": "d24590f4-1260-4364-b9c1-69dc96cac313"
+    },
+    {
+      "claim_id": "ca166612-8fde-4cef-91ff-ddd4c504b3fe",
+      "result_id": "d24590f4-1260-4364-b9c1-69dc96cac313"
+    },
+    {
+      "claim_id": "945017bb-0ed5-40a7-90d9-181bffbb6abb",
+      "result_id": "d24590f4-1260-4364-b9c1-69dc96cac313"
+    },
+    {
+      "claim_id": "02f95ff5-b0c6-4619-a988-cf5ea3990180",
+      "result_id": "d24590f4-1260-4364-b9c1-69dc96cac313"
+    },
+    {
+      "claim_id": "f58ca19a-bff7-467b-bb34-cb2b74cc410e",
+      "result_id": "d24590f4-1260-4364-b9c1-69dc96cac313"
+    },
+    {
+      "claim_id": "2cb67d9f-e095-4dde-b6f4-43b694eebe7c",
+      "result_id": "d3642335-19bc-4137-b3a5-66b1a566a16b"
+    },
+    {
+      "claim_id": "61307c2c-5dd5-4644-b3a5-22a857455145",
+      "result_id": "d3642335-19bc-4137-b3a5-66b1a566a16b"
+    },
+    {
+      "claim_id": "141093fa-f027-499b-bad3-52645dca290d",
+      "result_id": "d3642335-19bc-4137-b3a5-66b1a566a16b"
+    },
+    {
+      "claim_id": "04f0df17-6a9b-45da-b69f-29f06384a463",
+      "result_id": "c7d2267d-c1f1-4ec1-ab2f-463f19578966"
+    },
+    {
+      "claim_id": "451a0733-708d-46af-a5e9-ccab635856a2",
+      "result_id": "c7d2267d-c1f1-4ec1-ab2f-463f19578966"
+    },
+    {
+      "claim_id": "2da52e2e-efea-418c-af99-7629af1d8bc9",
+      "result_id": "c7d2267d-c1f1-4ec1-ab2f-463f19578966"
+    },
+    {
+      "claim_id": "b6f1791d-3a71-49b7-b5bb-32fce2e7305d",
+      "result_id": "9c561412-64cf-46a5-806e-db41b6dc9703"
+    },
+    {
+      "claim_id": "0ac3f567-dc54-499d-918b-a77d219ae5ca",
+      "result_id": "63bc00d7-8c35-43fc-9a4f-3e3096b268f0"
+    },
+    {
+      "claim_id": "18d60617-e922-4d05-9ad5-31628700899d",
+      "result_id": "03bca590-5a11-4a9b-84a7-71ec8db18ec2"
+    },
+    {
+      "claim_id": "da3104e1-bf8e-4bcd-a044-b3c9c95ec617",
+      "result_id": "aca28b37-bc3e-4c2a-86b0-70e20ecc4527"
+    },
+    {
+      "claim_id": "4dcd8792-4342-4eed-a209-dd489ee21d4d",
+      "result_id": "aca28b37-bc3e-4c2a-86b0-70e20ecc4527"
+    },
+    {
+      "claim_id": "2e568c7a-93df-4a97-9f63-dd6a7f44816b",
+      "result_id": "aca28b37-bc3e-4c2a-86b0-70e20ecc4527"
+    },
+    {
+      "claim_id": "00ed71c3-d38b-4089-97ac-acf524a9638c",
+      "result_id": "aca28b37-bc3e-4c2a-86b0-70e20ecc4527"
+    },
+    {
+      "claim_id": "27fc37a0-b737-4185-82ee-c7b8d1f0c930",
+      "result_id": "aca28b37-bc3e-4c2a-86b0-70e20ecc4527"
+    },
+    {
+      "claim_id": "f119c9b2-edda-4804-aab2-67b4b257e7b5",
+      "result_id": "aca28b37-bc3e-4c2a-86b0-70e20ecc4527"
+    },
+    {
+      "claim_id": "988c610c-8db9-4700-add2-bf48047106eb",
+      "result_id": "aca28b37-bc3e-4c2a-86b0-70e20ecc4527"
+    },
+    {
+      "claim_id": "0c0479cf-0d3c-4e5c-9793-e6b0806e45fb",
+      "result_id": "aca28b37-bc3e-4c2a-86b0-70e20ecc4527"
+    },
+    {
+      "claim_id": "fde7686e-d635-4170-b747-99031e9b6f6c",
+      "result_id": "aca28b37-bc3e-4c2a-86b0-70e20ecc4527"
+    },
+    {
+      "claim_id": "05b0c8e5-3a78-40c5-a5d4-c4175e8b2bbc",
+      "result_id": "aca28b37-bc3e-4c2a-86b0-70e20ecc4527"
+    }
+  ],
+  "comparisons": []
+}

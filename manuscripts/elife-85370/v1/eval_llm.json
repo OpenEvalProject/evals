@@ -1,0 +1,214 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C45"
+    ],
+    "result": "The authors argue that methodological differences between their protocol and that of Sustar and Tuthill explain the failure to reproduce the induced regenerative response in Drosophila. Specifically, differences in amputation method, fly age, treatment concentrations, and stress management account for the discrepancy, with 30-50% of treated flies showing response in the authors' assay.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the authors provide a detailed comparison of protocols and identify multiple differences (C3, C14-C35), the causal link between these differences and the failure to reproduce remains inferential rather than experimentally demonstrated. The authors do not provide direct experimental evidence showing that adopting their exact protocol parameters would enable Sustar and Tuthill to observe regeneration. The claim relies heavily on correlation between protocol differences and outcomes rather than controlled experiments isolating each variable's contribution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C58",
+      "C59"
+    ],
+    "result": "The amputation method differs critically between protocols: the authors use Vannas surgical scissors which preserve muscle bundle integrity in the residual tibia, while Sustar and Tuthill used a razor blade which causes muscle bundle collapse.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17 and C58 are directly supported by the authors' imaging data (Figures 1a and 2), showing muscle bundles remaining in place after their amputation method. Claim C18/C59 references Sustar and Tuthill's published Figure 2B showing collapsed muscle bundles. The mechanical inference about razor blade pressure (C16) is reasonable given the physical requirements of the cutting method.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C66",
+      "C67"
+    ],
+    "result": "The authors used flies aged 2-7 days (typically 3-5 days) while Sustar and Tuthill used 1-2 day old flies. The authors avoided 1-day-old flies because cuticle maturation and tissue remodeling are still ongoing at this stage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The age difference is clearly documented (C19, C20) and the rationale for avoiding 1-day-old flies is supported by citation to Kimura and Truman, 1990 (C21, C66, C67). However, the authors do not provide direct experimental evidence that this age difference alone affects regenerative response, making this a descriptive rather than mechanistic finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C55"
+    ],
+    "result": "Sustar and Tuthill used at least three times higher concentrations of insulin and amino acids than the authors' protocol, which specifies 1.7 mM L-Leucine, 1.7 mM L-Glutamine, and 0.33 \u03bcg/ml insulin. The authors acknowledge publishing incorrect concentrations in their original methods section.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The concentration discrepancy is acknowledged (C23) and the authors take responsibility for the error in their original publication (C24), having published a correction (Abrams et al., 2023). The correct concentrations are now clearly specified (C55). This represents a critical methodological clarification that could explain the reproduction failure.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C61",
+      "C68"
+    ],
+    "result": "The authors minimize CO2 anesthesia stress by using lower flow rates (2-3 L/min vs 5-10 L/min), shorter exposure times (1-3 min vs 5 min), and fewer flies per session (1-2 vs 20). Increasing anesthesia time to 5 minutes reduces the frequency of flies responding to treatment by approximately half.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The protocol differences are clearly documented (C27-C29, C68) and supported by citations showing CO2 is stressful (C25) and stress affects regeneration (C26). Critically, the authors provide experimental data (C30, C61, Figure 1\u2014figure supplement 1a) demonstrating that increasing anesthesia time reduces treatment response, directly supporting the mechanistic claim that anesthesia duration affects outcomes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C62"
+    ],
+    "result": "Housing density affects regenerative response, with the authors housing \u22646 flies per vial. Increasing housing density reduces the frequency of flies responding to treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claim is supported by citations showing housing density is a stressor affecting physiological traits (C31), clear documentation of the authors' protocol (C32, C62), and experimental data (C33, Figure 1\u2014figure supplement 1b) demonstrating that increased density reduces treatment response. This provides direct experimental evidence for the parameter's importance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C22",
+      "C34",
+      "C35",
+      "C60"
+    ],
+    "result": "The mortality rate in Sustar and Tuthill's experiment (51% for controls at 3 weeks) was more than double that of the authors' protocol (14% for controls at 3 weeks), reflecting differences in stress management.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The mortality rates are clearly documented and compared (C22, C34, C35) with data shown in Figure 1b. The inference that this reflects stress management differences (C60) is reasonable given the documented protocol differences in anesthesia and housing, though the causal attribution is somewhat speculative as other factors could contribute to mortality differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C63"
+    ],
+    "result": "The regenerative response occurs in 30-50% of treated flies and can be assessed by multiple phenotypes: 49% showed measurable limb length changes beyond measurement noise, and responding flies show modified wound healing with absence of scab formation by 3 days post-amputation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims are supported by data from the authors' previous publication (C36, Figure 5e in Abrams et al., 2021) and current observations (C37, C39, C63). The scab formation phenotype is non-trivial as it involves genetically controlled immune signaling (C38, supported by Galko and Krasnow, 2004). The multiple independent phenotypes strengthen the evidence for a genuine biological response.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "The authors did not claim blastema formation in their original work. Sustar and Tuthill analyzed a white blob phenotype occurring at 3-4% frequency in both control and treated flies, which the authors do not observe in their protocol.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The authors clearly state blastema characterization was outside their scope (C42) and they made no blastema claims. The description of Sustar and Tuthill's analysis (C43) and the authors' contrasting observations (C44) are straightforward factual statements. This addresses a potential misinterpretation of the original work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C51",
+      "C52"
+    ],
+    "result": "Adult animals across multiple species (frogs, fish, mice, and Drosophila) that do not normally regenerate retain latent capacity to mount enhanced regenerative responses when stimulated by relatively simple interventions including nutrient modulation, electrical stimulation, inflammation, or drug treatments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This broad claim is well-supported by multiple citations across diverse species and intervention types (C5-C8). The general principle (C9, C51, C52) is appropriately qualified as incomplete regeneration and represents an established pattern in the regeneration field. The authors position their Drosophila work within this broader context appropriately.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Amputation/injury method is a critical parameter in regeneration studies that profoundly affects outcomes across multiple model systems, as different injury methods produce different tissue damage patterns and molecular responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This general principle is well-established and supported by appropriate citations to injury model literature in mice (C11), axolotl, and zebrafish (C13). The claims represent accepted knowledge in the regeneration field (C10, C12) and provide important context for understanding why methodological differences matter.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "While adult insects are established as non-regenerating and Sustar and Tuthill argue this is due to epigenetic silencing, the authors counter that epigenetic silencing can be modulated by factors including nutrients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The established knowledge that adult insects don't regenerate (C47) and Sustar and Tuthill's epigenetic argument (C48) are appropriately cited. The counter-argument that epigenetic silencing is modulatable is supported by the very study cited by Sustar and Tuthill (C49, Harris et al., 2020) and additional evidence for nutrient modulation of epigenetics (C50, Dai et al., 2020). This represents a valid scientific rebuttal.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C46",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C64",
+      "C65"
+    ],
+    "result": "The authors have published a detailed step-by-step protocol specifying critical parameters including fly age (2-7 days), treatment composition (1.7 mM leucine, 1.7 mM glutamine, 0.33 \u03bcg/ml insulin for 4-5 days), and imaging methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The publication of a detailed protocol (C46, Li et al., 2023) and the methodological details (C53-C57, C64-C65) are clearly documented. This represents an appropriate response to the reproducibility issues and provides the community with precise specifications for attempting replication.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,1040 @@
+{
+  "submission": {
+    "id": "40a0e406-6803-432a-bf8c-1649ea01c172",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-04T03:07:34.344439Z",
+    "updated_at": "2025-12-04T03:07:34.344439Z"
+  },
+  "content": [
+    {
+      "id": "08ac3c7d-ce69-41fc-8976-a2ee1438d6e0",
+      "submission_id": "40a0e406-6803-432a-bf8c-1649ea01c172",
+      "content_type": "manuscript",
+      "content_text": "# Balancing true and false detection of intermittent sensory targets by adjusting the inputs to the evidence accumulation process\n\n## Authors\n\n- Anna C Geuzebroek<sup>1</sup> ([ORCID: 0000-0002-8287-2990](https://orcid.org/0000-0002-8287-2990)) \u2020\n- Hannah Craddock<sup>1</sup>\n- Redmond G O'Connell<sup>3</sup> ([ORCID: 0000-0001-6949-2793](https://orcid.org/0000-0001-6949-2793))\n- Simon P Kelly<sup>1</sup> ([ORCID: 0000-0001-9983-3595](https://orcid.org/0000-0001-9983-3595)) \u2020\n\n### Affiliations\n\n1. School of Electrical and Electronic Engineering and UCD Centre for Biomedical Engineering, University College Dublin Dublin Ireland ([ROR:05m7pjf47](https://ror.org/05m7pjf47))\n2. Department of Statistics, University of Warwick Warwick United Kingdom ([ROR:01a77tt86](https://ror.org/01a77tt86))\n3. Trinity College Institute of Neuroscience and School of Psychology, Trinity College Dublin Dublin Ireland ([ROR:02tyrky19](https://ror.org/02tyrky19))\n\n\u2020 Corresponding author\n\n## Abstract\n\nDecisions about noisy stimuli are widely understood to be made by accumulating evidence up to a decision bound that can be adjusted according to task demands. However, relatively little is known about how such mechanisms operate in continuous monitoring contexts requiring intermittent target detection. Here, we examined neural decision processes underlying detection of 1 s coherence targets within continuous random dot motion, and how they are adjusted across contexts with weak, strong, or randomly mixed weak/strong targets. Our prediction was that decision bounds would be set lower when weak targets are more prevalent. Behavioural hit and false alarm rate patterns were consistent with this, and were well captured by a bound-adjustable leaky accumulator model. However, beta-band EEG signatures of motor preparation contradicted this, instead indicating lower bounds in the strong-target context. We thus tested two alternative models in which decision-bound dynamics were constrained directly by beta measurements, respectively, featuring leaky accumulation with adjustable leak, and non-leaky accumulation of evidence referenced to an adjustable sensory-level criterion. We found that the latter model best explained both behaviour and neural dynamics, highlighting novel means of decision policy regulation and the value of neurally informed modelling.\n\n## Introduction\n\nThe way that we form decisions is highly adaptable to task demands. It is now widely understood that making accurate decisions on noisy sensory information involves the accumulation of evidence up to a criterion amount or \u2018bound\u2019 (Gold and Shadlen, 2007; Ratcliff and Smith, 2004). This bound is seen as the primary means to strategically adapt perceptual decision policies to meet various task demands. Significant behavioural and neural evidence has now amassed to establish that bound adjustments are indeed carried out for certain, well-studied scenarios, such as when trading speed for accuracy in discrete, two-alternative forced choice decisions (Bogacz et al., 2010; Palmer et al., 2005), but it is not clear whether this mechanism generalises to all situations that require policy adaptations. In particular, in the pervasive daily life scenario in which unpredictably timed targets must be detected within continuous streams of noisy sensory information, one\u2019s decision policy must be tailored to rapidly detect as many targets as possible while keeping false alarms to a minimum (Lasley and Cohn, 1981). Here, an overly liberal policy could result in an excessive amount of false alarms driven solely by noise in between targets, while an overly conservative policy will miss too many targets (Gold and Stocker, 2017; Ossmy et al., 2013). In such contexts, expected target strength is a key factor in setting a decision policy to optimise performance \u2013 contexts with weaker targets call for a more liberal decision policy. Although bound adjustments present a natural mechanism for these policy adjustments, this has never been experimentally tested for this scenario.\n\nMuch has been learned about the neural implementation of decision-bound adjustments from studies of the neural basis of the speed-accuracy trade-off. In these studies, motor-selective cortical networks have been shown to implement an increase of baseline activity prior to evidence onset, emphasising speed by effectively decreasing the criterion amount of cumulative evidence needed to reach an action-triggering threshold (Forstmann et al., 2008; Forstmann et al., 2010; Ivanoff et al., 2008; van Veen et al., 2008; Wenzlaff et al., 2011). Additionally, recent behavioural and neurophysiological findings have established the operation of a time-dependent \u2018urgency\u2019 signal in these motor circuits, an evidence-independent build-up component that drives the decision process closer to a fixed decision threshold, gradually decreasing the cumulative evidence required to respond (Churchland et al., 2008; Hanks et al., 2014; Murphy et al., 2016; Thura and Cisek, 2016). However, little is known about how such mechanisms may participate in continuous detection scenarios, or in the adjustments needed to account for other task-related factors such as the expected target evidence strength. Our initial prediction for the present study was that the decision bound \u2013 that is, the criterion amount of cumulative evidence \u2013 would be lower in continuous detection contexts containing weaker targets. However, in continuous detection where target onsets are unpredictable, the decision process must operate continuously, offering other parameters that could alternatively be adjusted. For example, if accumulation proceeds continuously it is unlikely to be perfect because this generates excessive false alarms (Ossmy et al., 2013) and would instead entail some form of information loss such as through non-linear or leaky accumulation, which has been shown to form a critical adjustable component governing decision-making policies in volatile environments (for review, see Gold and Stocker, 2017; Glaze et al., 2015; Harun et al., 2020; Murphy et al., 2021).\n\nOur findings indicate that observers can adjust their decision-making policy based on their knowledge of the difficulty context, but not by adjusting bound settings in the way expected from observed speed/accuracy adjustments. While the electrophysiological signature of motor preparation gradually approached its action-triggering threshold through the inter-target interval (ITI) consistent with the operation of evidence-independent urgency, this baseline activity was not set higher in weak target contexts in order to reduce the bound as predicted. Instead, the motor preparation signal suggested that the bound was reduced in the strong context. We therefore hypothesised that an alternative way to set a conservative decision policy is to reduce the information gathered in the accumulator, and tested two ways of implementing this: (1) leaky accumulation with context-dependent leak and (2) a non-leaky accumulation of evidence referenced to a context-dependent sensory criterion. Fitting these models with urgency dynamics directly constrained by the observed motor preparation signals, we found that the latter model produced a superior fit to both behavioural data and the dynamics of a motor-independent signature of evidence accumulation, the centro-parietal positivity (CPP; Kelly and O\u2019Connell, 2013; O\u2019Connell et al., 2012). We are thus able to falsify the initially predicted bound-adjustment model in favour of an account based on the adjustment of a sensory-level criterion that regulates the transfer of incoming evidence into the accumulation process.\n\n## Results\n\n### Behavioural signatures of contextual adjustments\n\nWe analysed the data of 14 participants that continuously monitored a cloud of randomly moving dots for unpredictable, intermittent targets defined by coherent upward motion. Within each block, the difficulty context was set to be fixed with (1) only weak targets, (2) only strong targets, or (3) mixed with both randomly occurring weak and strong targets. The mixed context was included to control for differences due to target motion coherence itself as distinct from context (see Figure 1A). As expected, participants detected targets more accurately and faster when the targets were strong for both the fixed and mixed context (Figure 1B; main effect of motion coherence on hit rates in generalised mixed regression model (GMM), $\u03c7^{2}$(1)=8.5, p<0.001, and reaction time (RT) in repeated-measures ANOVA (rANOVA), F(1, 13)=371.8, p<0.001). Additionally, participants were faster in the mixed context than the fixed ones (main effect of difficulty context on RT in rANOVA, F(1, 13)=21.3, p<0.001).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/83025/elife-83025-fig1-v2.jpg)\n\n**Figure 1.:** (A) Participants continuously monitored a cloud of moving dots to detect targets defined by a step change to coherent upward motion for 1 s. The inter-target interval (ITI) duration varied between 2, 4, 6, and 8 s. In each block of 24 targets, participants would perform a weak fixed context condition (step increase of 25%), a strong fixed context condition (step increase of 70%), or a mixed context condition (25% and 70% equally likely). (B) Reaction time (RT) cumulative quantile probability functions and the proportions of a 2 s ITI period containing a false alarm as a function of difficulty context (dots in cumulative quantile probability and false alarm plots). Each plot includes simulated data from a fitted leaky accumulator model with bound adjustment (solid lines in cumulative quantile probability plot and bars in the false alarm plot). (C) Schematic representation of the leaky accumulator model with adjustable bound parameters. Noisy evidence, which steps up during targets, is accumulated ($y\u2062(t)$) until it reaches a context-dependent bound. Leaky accumulation is represented as a convolution with an exponential decay kernel. The degree of leakage is a free parameter but constrained to be equal (not adjusted) across contexts. When the target evidence is weak, a more liberal (lower) bound needs to be set to avoid misses; this comes however at the cost of more false alarms (example indicated in red). (D) Bound parameter values estimated by the best fitting bound-adjustment model. All figures represent a sample size of N = 14. Error bars represent the 95% confidence interval. p-Values resulting from the GMM are indicated by the asterisks; *p<0.05, **p<0.01, and ***p<0.001.\n\nFalse alarm rates demonstrate a qualitative signature of contextual adaptations, with approximately zero in the strong context, higher false alarms rates in the weak context probability of 0.09 per 2 s ITI period, and intermediate rates in the mixed context (probability of 0.04 per 2 s ITI period; Figure 1B; GMM, $\u03c7^{2}$(1)=5.7, p<0.001 and $\u03c7^{2}$(1)=5.5, p<0.001, respectively). In accumulator models of decision making, these patterns can be captured by setting a higher bound when the task is easy, to avoid false alarms while still detecting all targets (see Figure 1C). Confirming this, a leaky accumulator model with a higher bound for the strong context (Figure 1D and Table 1 for all the fitted parameters) was able to accurately reproduce behavioural data, particularly the important context-dependent false alarm pattern (see bars of the false alarm plot in Figure 1B; G2=16).\n\n**Table 1.**\n Parameter values estimated for the leaky accumulator model with adjustable bound fit to behaviour alone, and for the neurally informed models featuring leak adjustment and criterion adjustment. \u2019Noise\u2019 refers to the standard deviation (\u03c3) for the Gaussian sensory evidence noise. \u2019Bound\u2019 refers to the threshold set on the decision variable for triggering a response. \u2019Leak\u2019 refers to the proportion of the current cumulative evidence total that leaks away on the following sample (note a 16.7 ms time step is used). No leak was fitted for the criterion-adjustment model. \u2018Tnd\u2019 refers to the non-decision time in ms. \u2018Drift\u2019 refers to drift rate, corresponding to the mean of the sensory evidence during targets. The goodness-of-fit metric, G2, is listed for each model. Note that, if comparing parameter values between models directly, it must be taken into account that whereas the bound-adjustment model set a scaling parameter of noise \u03c3 = 0.1 and allowed bounds to vary freely with respect to this. In contrast, the neurally constrained models were scaled directly by the normalised urgency signals relative to the ultimate action-triggering bound taken to be equal to 1. These fixed parameters are indicated in red.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>Noise</th>\n      <th colspan=\"3\">Variable parameters</th>\n      <th></th>\n      <th></th>\n      <th>Tnd</th>\n      <th colspan=\"4\">Drift</th>\n      <th>G2</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td rowspan=\"3\">Bound-adjustment</td>\n      <td rowspan=\"3\">0.1</td>\n      <td colspan=\"3\">Bound</td>\n      <td rowspan=\"3\"></td>\n      <td>Leak</td>\n      <td rowspan=\"3\">238</td>\n      <td rowspan=\"2\">W</td>\n      <td rowspan=\"2\">S</td>\n      <td rowspan=\"2\">MW</td>\n      <td rowspan=\"2\">MS</td>\n      <td rowspan=\"3\">16</td>\n    </tr>\n    <tr>\n      <td>W</td>\n      <td>S</td>\n      <td>M</td>\n      <td rowspan=\"2\">0.14</td>\n    </tr>\n    <tr>\n      <td>0.58</td>\n      <td>0.85</td>\n      <td>0.63</td>\n      <td>0.05</td>\n      <td>0.14</td>\n      <td>0.05</td>\n      <td>0.12</td>\n    </tr>\n    <tr>\n      <td rowspan=\"3\">Leak-adjustment</td>\n      <td rowspan=\"3\">0.05</td>\n      <td colspan=\"3\">Leak</td>\n      <td rowspan=\"3\"></td>\n      <td>Bound</td>\n      <td rowspan=\"3\">238</td>\n      <td rowspan=\"2\">W</td>\n      <td rowspan=\"2\">S</td>\n      <td rowspan=\"2\">MW</td>\n      <td rowspan=\"2\">MS</td>\n      <td rowspan=\"3\">23</td>\n    </tr>\n    <tr>\n      <td>W</td>\n      <td>S</td>\n      <td>M</td>\n      <td rowspan=\"2\">1</td>\n    </tr>\n    <tr>\n      <td>0.02</td>\n      <td>0.08</td>\n      <td>0.04</td>\n      <td>0.02</td>\n      <td>0.06</td>\n      <td>0.03</td>\n      <td>0.07</td>\n    </tr>\n    <tr>\n      <td rowspan=\"3\">Criterion-adjustment</td>\n      <td rowspan=\"3\">0.07</td>\n      <td colspan=\"3\">Criterion</td>\n      <td rowspan=\"3\"></td>\n      <td rowspan=\"3\">1</td>\n      <td rowspan=\"3\">230</td>\n      <td rowspan=\"2\">W</td>\n      <td rowspan=\"2\">S</td>\n      <td rowspan=\"2\">MW</td>\n      <td rowspan=\"2\">MS</td>\n      <td rowspan=\"3\">16</td>\n    </tr>\n    <tr>\n      <td>W</td>\n      <td>S</td>\n      <td>M</td>\n    </tr>\n    <tr>\n      <td>0.02</td>\n      <td>0.06</td>\n      <td>0.03</td>\n      <td>0.03</td>\n      <td>0.10</td>\n      <td>0.04</td>\n      <td>0.09</td>\n    </tr>\n  </tbody>\n</table>\n\n### EEG signatures of decision formation: adjustments across contexts\n\nTo test for electrophysiological evidence for the putative bound adjustment, we examined two signals known to reflect the dynamics of decision formation: decreases in beta frequency band activity (15\u201330 Hz) over motor cortex contralateral to the movement, reflecting motor preparation (see Figure 2A), and the CPP, reflecting motor-independent evidence accumulation (see Figure 2D).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/83025/elife-83025-fig2-v2.jpg)\n\n**Figure 2.:** (A) Beta amplitude (15\u201330 Hz) over the motor cortex, aligned to the target (left) and to the response (right), averaged for each condition and expressed as a difference relative to the corresponding pre-response level taken to reflect motor execution threshold (i.e. threshold level is indicated by zero). To ensure that the beta rebound effect following false alarms (see Figure 2\u2014figure supplement 1) could not artificially drive the differences in excursion across conditions, targets occurring within 1.2 s of a false alarm were excluded from these data. The scalp topography shows the distribution of the difference between weak and strong targets in the baseline amplitude (again relative to the motor execution threshold; blue corresponds with more negative amplitude for strong relative to weak motion coherence). This highlights that the difference in beta excursion in the fixed strong relative to fixed weak context is maximal over the motor cortex. (B) The average beta excursion (i.e. difference of pre-target beta amplitude minus pre-response beta amplitude), plotted for three equal-size reaction time (RT) bins per condition. Smaller beta excursion predicts faster RTs as found in previous studies linking beta to a motor-level decision variable. (C) Grand-average beta excursion for all conditions, reflecting the neural index of bound settings. These show an obvious qualitative difference to the bound parameter values estimated in the behavioural data fit of the leaky accumulator model with adjustable bound in Figure 1D. (D) Centro-parietal positivity (CPP) signals averaged for each condition, target-locked (left) and response-locked (right). The topography of the indicated pre-response time window shows the cluster of electrodes used for plotting average waveforms. (E) Average pre-response CPP amplitude for each condition. All figures represent a sample size of N = 14. Error bars represent the 95% confidence interval. p-Values resulting from the GMM are indicated by the asterisks; *p<0.05, **p<0.01, and ***p<0.001.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/83025/elife-83025-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Note, false alarm waveforms of the strong context could not be plotted as there were close to zero false alarms in this condition. Despite a common baseline correction to the pre-response level for hits, the level reached just prior to a false alarm aligned to that of the hits indicating that offset levels did not differ during inter-target interval (ITI) from during targets.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/83025/elife-83025-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) Target-locked N2 waveform and (B) N2 amplitude around 300 ms after target onset, plotted as a function of reaction time (RT) for each condition. There are main effects of both target motion coherence ($\u03c7^{2}$(1)=4.7, p=0.006), with lower N2 for strong targets as well as in the mixed condition. Furthermore, there is a main effect of RT ($\u03c7^{2}$(1)=\u20132.6, p=0.002), where faster RTs have lower N2s. All figures represent a sample size of N = 14. Error bars represent the 95% confidence interval. (C) The scalp topography shows the distribution of the difference between mixed and fixed contexts. Blue would correspond with more negative amplitude in the mixed relative to fixed context.\n\nIt has long been established that beta oscillatory activity over motor cortical EEG sites gradually decreases in amplitude as participants prepare to make a movement with their contralateral limb (Donoghue et al., 1998; Pfurtscheller et al., 1996). More recently, several replicating findings further indicate that this beta-indexed motor preparation signal reflects a build-to-threshold decision variable driven by a combination of evidence accumulation and urgency. First, it builds at an evidence-dependent rate during decision formation and reaches a stereotyped threshold level at the time of motor execution (Kelly et al., 2021; O\u2019Connell et al., 2012). Second, fluctuations in pre-target beta activity have been shown to predict trial-to-trial behavioural variability in the way accumulator starting point variability does in models (de Lange et al., 2013; Donner et al., 2009; Gould et al., 2012). Third, pre-target beta is systematically shifted closer to its pre-response threshold level under conditions of speed emphasis (Murphy et al., 2016; Steinemann et al., 2018; Kelly et al., 2021). Fourth, in scenarios where evidence onset is anticipated, beta starts building towards its threshold even before evidence onsets. This is consistent with a dynamic urgency component and aligns with other behavioural and electrophysiological markers of dynamic urgency observed in the similar scenarios (Kelly et al., 2021; Corbett et al., 2023).\n\nIn line with this body of previous research, we took the amplitude reached by beta 80 ms prior to response (allowing for motor execution delays) to correspond to the threshold level required to trigger a response in a given condition. This way, the level in the pre-target baseline period can be taken to represent the decision variable starting point at the time of evidence onset. Thus, the difference between these two, known as the \u2018excursion\u2019, indexes the change in motor preparation required to commit to a detection decision and thus indexes bound settings in a given context (Heitz and Schall, 2012; Kelly et al., 2021, see below for separate analysis of baseline and pre-response amplitudes). First, to support the use of beta activity to reflect the motor-level decision variable in this dataset, we confirmed that it built up more steeply during higher coherence targets (Figure 2A; GMM, $\u03c7^{2}$(1)=\u20132.8, p=0.004), and that faster RTs within a given condition were associated with the signal starting relatively closer to pre-response threshold (Figure 2B; GMM, $\u03c7^{2}$(1)=2.6, p=0.008). Additionally, we found that the beta amplitude prior to a false alarm closely matched to the amplitude reached prior a true target detection, verifying the assumption that this threshold level is applied consistently within each block (see Figure 2\u2014figure supplement 1). Turning then to context-dependent adjustments, we found that difficulty context (fixed vs. mixed) and motion coherence (weak vs. strong) had a significant interactive effect on beta excursion (Figure 2C; GMM, $\u03c7^{2}$(1)=2.8, p=0.006). Contrary to the prediction of the bound-adjustment model (Figure 1D), this was driven by a pattern whereby beta excursion was smaller, not larger, in the strong context relative to other conditions, indicative of a lower decision bound (weak vs. strong in fixed condition: $\u03c7^{2}$(1)=\u20132.3, p=0.02; strong fixed vs. strong mixed: $\u03c7^{2}$(1)=2.1, p=0.03).\n\nMore recently, another signature of decision formation has been characterised \u2013 the CPP \u2013 which, like beta, builds at an evidence-dependent rate to a peak around the time of decision commitment and response (O\u2019Connell et al., 2012; Kelly and O\u2019Connell, 2013). This signal, unlike beta, builds even in the absence of motor requirements, but does not undergo baseline shifts according to speed/accuracy emphasis (Steinemann et al., 2018). The current working hypothesis is thus that the CPP reflects pure cumulative evidence which feeds into motor-level decision variable alongside other evidence-independent signal components such as urgency. In support of this scheme, simulations of pure cumulative evidence build-up have been shown to match empirical CPP waveforms in their dynamics and pre-response amplitude patterns across conditions and RTs (Afacan-Seref et al., 2018; Kelly et al., 2021; Twomey et al., 2015). Here, a hypothetical higher bound setting in the strong context would predict that more cumulative evidence is required before reaching the movement execution threshold, and hence a higher CPP amplitude. More specifically, a true contextual adjustment effect should give rise to a CPP amplitude difference in the strong relative to weak context over and above any difference between high and low coherence targets in the mixed context. This, however, was not observed in the empirical pre-response CPP, where only a significant motion coherence effect was found (GMM: $\u03c7^{2}$(1)=5, p<0.001; Figure 2D and E). Tracing the waveforms beyond the pre-response measurement window shows that the CPP tends to climb higher for the mixed strong than fixed strong condition, if anything (Figure 2D). The electrophysiological data are therefore inconsistent with the bound-adjustment model. This raises the question of whether an alternative mechanism can explain the behavioural markers of policy adjustment while also producing the observed dynamics in neural decision signals.\n\n### Alternative neurally informed models\n\nFollowing a recent approach (Kelly et al., 2021), we constructed models whose decision-bound settings were constrained to match the observed beta excursion measurements. We use beta activity as it best corresponds to the motor-level decision variable which is ultimately subjected to a threshold. After fitting to behaviour, we then examined whether key dynamical features of evidence accumulation predicted by the models matched those of the observed CPP time courses in a further validation step. To determine the beta activity-based model constraints, it was important to first characterise the dynamics of motor preparation during the ITI more fully. Beta waveforms during the full ITIs showed that in addition to the static shift towards the motor execution threshold in the strong context, there was a strong tendency for beta to decrease over the course of the ITI in all contexts (Figure 3A, lower). This increasing trend in beta mirrored a tendency for false alarm rate to increase during the ITI (Figure 3A, upper). In keeping with our recent work (Corbett et al., 2021; Kelly et al., 2021), we assumed that beta-indexed motor preparation is driven by the sum of evidence accumulation and evidence-independent urgency (Churchland et al., 2008; O\u2019Connell et al., 2018), and reasoned that since evidence is zero mean during the ITI, beta dynamics can be taken to index urgency alone during that period. Accordingly, we took the grand-average beta amplitude waveform during the 8 s ITI and baseline-corrected these relative to the motor execution threshold indexed by average pre-responses in a given context. These traces were normalised and flipped so that 1 corresponded to the motor execution threshold level and 0 to the lowest level of motor preparation during the ITI. To this waveform a second-order polynomial was fitted to capture the smooth urgency trend relative to threshold (see Materials and methods for more details). This signal was added to the output of the continuous evidence accumulation and the resultant decision variable was subjected to the ultimate, constant decision threshold (see Figure 3B and C).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/83025/elife-83025-fig3-v2.jpg)\n\n**Figure 3.:** (A) Motor preparation throughout the inter-target interval (ITI), showing a dynamic urgency trend. The proportion of false alarms (per 1 s period) increases throughout the ITI (upper; four ITIs superimposed). This corresponds to an increase in motor preparation throughout the ITI reflected in decreasing beta amplitude (lower). Beta amplitude is plotted for the 8 s ITI relative to the corresponding pre-response level taken to reflect motor execution threshold. After normalisation, beta amplitude is used to model urgency ($u\u2062(t)$) through the ITI generating the observed increase in false alarms. Model evaluation for the neurally informed (B) leak-adjustment and (C) sensory criterion-adjustment model comparing empirical and predicted reaction time (RT) cumulative quantile probability distributions and false alarm rates (per 2 s ITI period). Above are model schematics illustrating the different mechanisms of continuous accumulation and context-dependent adjustment. In (B) the leak-adjustment model, evidence is referenced to the centre of the noise distribution (C0, equal to zero) and accumulated ($y\u2062(t)$) with a leak. Leak is represented in the time constant of a convolution kernel and is free to change across contexts. Meanwhile in (C) the criterion-adjustment model, evidence is referenced to a criterion \u2018zero\u2019 so that is adjustable across contexts ($C_{W}$, $C_{S}$, and $C_{M}$ with two shown for illustration) and fed to a non-leaky accumulator with a lower reflecting bound at zero to preclude negative accumulation. All figures represent the empircical data of N = 14. Error bars represent the 95% confidence interval.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/83025/elife-83025-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** As a control, the neurally informed model fitting procedure was adjusted so that the temporal profile of dynamic urgency during the inter-target interval (ITI) was fixed and the static urgency offset between conditions was governed by two additional free parameters (here referred to as $S\u2062h\u2062i\u2062f\u2062t$). In this way, the predicted motor-level decision variable is more precisely linked to the sum of cumulative evidence plus urgency, and not just the urgency component. This is important in the criterion-adjustment model where due to the reflecting lower bound cumulative evidence ($y\u2062(t)$) asymptotes to different levels depending on criterion settings. This leads to the misestimation of the predicted motor-level decision variable in that case, and thus breaking its linking proposition with beta excursion. Specifically, behaviour and beta excursion data were fit simultaneously by minimising G2+beta penalty. This beta penalty term was added to the cost function to quantify the divergence between the real and simulated pre-target beta excursion summed across condition, for example $p\u2062e\u2062n\u2062a\u2062l\u2062t\u2062y=w*(o\u2062b\u2062s\u2062e\u2062r\u2062v\u2062e\u2062d\u2062B\u2062e\u2062t\u2062a-s\u2062i\u2062m\u2062u\u2062l\u2062a\u2062t\u2062e\u2062d\u2062B\u2062e\u2062t\u2062a)^{2}$ with $w=1000$ as a scaling factor. The dynamic urgency throughout the ITI was anchored to the mixed condition, while the static $S\u2062h\u2062i\u2062f\u2062t\u2062s$ for the other conditions ($S_{W}$ and $S_{S}$) are fitted for the neurally informed (A) leak-adjustment and (B) sensory criterion-adjustment model. Above are the revised model schematics illustrating the mechanism of adding free $S\u2062h\u2062i\u2062f\u2062t$ parameters to determine urgency offsets $u\u2062(t)$. All figures represent the empircical data of N = 14. Error bars represent the 95%\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/83025/elife-83025-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Simulated single-trial example of the motor-level decision variable $(y\u2062(t)+u\u2062(t))$ during the inter-target interval (ITI).This example illustrates how, in the weak context, despite the decision variable lying at a tonically lower level due to the lower urgency, the lower sensory criterion in this case causes short-term bursts of cumulative noise to occur more often, leading to increased false alarms.\n\nUsing these constraints, we explored other possible mechanisms of continuous accumulation and context-dependent adjustment. Since, contrary to expectations, the offsets in beta waveforms during the ITI would on their own predict increased false alarms in the fixed strong condition, there must be another adjustment applied elsewhere to counteract this. First, we considered that the same leaky accumulation mechanism as the bound-adjustment model may be at play but with the adjustment across contexts being applied to leak rather than bound (Figure 3B). Here, a more forgetful (higher leak) integration would reduce the risk of false alarms driven by noise (Glaze et al., 2015; Murphy et al., 2021; Ossmy et al., 2013) in a way similar to an increased bound, and thus presents an alternative means of setting a conservative policy. Second, we considered that, alternatively, a context-dependent evidence criterion could be set at each momentary evidence sample serving as a \u2018zero\u2019 reference placed between noise and signal evidence distributions, similar to the \u2018drift criterion\u2019 principle proposed by Ratcliff, 1985; Ratcliff et al., 1999; Ratcliff and Tuerlinckx, 2002. This criterion is distinct in meaning to that of signal detection theory (SDT) in that it does not on its own define the ultimate decision rule to categorise signal versus noise, but rather serves as a reference subtracted from the evidence so that only evidence samples substantially above the noise would be positively accumulated towards the decision bound, while noise alone would conversely tend to count negatively. To prevent runaway negative accumulation in this model, we adopt a reflecting lower bound at zero in the accumulator process (Usher and McClelland, 2001). Thus, this last model has two major distinctions: it assumes that an adjustable criterion is set directly on the momentary evidence in addition to the adjustable decision bound on the cumulative evidence (here linked directly to beta excursion), and involves a different form of information loss than leak which nevertheless has a similar effect of reducing risk of false alarms due to noise (see Figure 3C). False alarms in this model can be prevented by setting a higher evidence criterion, that is creating a stricter reference point distinguishing target evidence samples from noise.\n\nWhile both neurally informed models mimic the behavioural patterns well (see Figure 3B and C, goodness-of-fit in Table 1 and Figure 3\u2014figure supplement 2), the leak-adjustment model provides a poorer fit (G2=23) to the behavioural data than the criterion-adjustment model (G2=16; see Figure 3B, lower). Remarkably, despite being constrained to adopt the precise bound settings indexed by beta excursion, which oppose the adjustments predicted by the bound-adjustment model, the criterion-adjustment model was able to attain the same goodness-of-fit to behaviour as the initial bound-adjustment model (G2=16).\n\nIn the above neurally constrained model fits, we assumed that the cumulative evidence component of motor preparation is negligible during the ITI so that beta excursion directly constrains the urgency component only. A potential issue with this arises from the fact that the accumulator operates continuously in our models: whereas the zero-mean noise in the ITI would accumulate to an average level of zero in the leaky accumulation model, the lower reflecting bound in the criterion-adjustment model would cause a positive asymptotic value of the average evidence accumulation during the ITI which scales inversely with criterion. This would predict highest tonic activity in the weak context as it has the lowest criterion, so it does not constitute a viable alternative explanation the observed lowest beta offset in the weak context. Nevertheless, it highlights a likely inaccuracy in the model\u2019s estimation of the degree of adjustment of criterion and urgency offsets. We therefore carried out a revised model fitting procedure in which urgency offsets were not set directly by beta excursion, but rather free to vary in order to reproduce the observed static shifts in the beta excursion across contexts simultaneously with the behavioural data (see detailed explanation in Figure 3\u2014figure supplement 1). The behavioural fits still favoured the criterion-adjustment model (G2+penalty = 24) over the leak-adjustment model (G2+penalty = 33; see Table 2), and as expected, estimated even larger urgency offsets to compensate for the asymptotic evidence accumulation levels.\n\n**Table 2.**\n Parameter values estimated for neurally informed models fitting behaviour and beta excursion simultaneously (see Figure 3\u2014figure supplement 1). Neurally informed models were revised to directly constrain the temporal profile of the urgency signal during the inter-target interval (ITI) in the mixed condition only. Two free additional parameters were added for the additive offsets (\u2019shift\u2019) in urgency for the weak and strong context condition relative to the mixed context. Additionally, goodness-of-fit metrics are reported as G2+beta penalty.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>Noise</th>\n      <th colspan=\"3\">Variable parameters</th>\n      <th>Tnd</th>\n      <th colspan=\"4\">Drift</th>\n      <th></th>\n      <th colspan=\"2\">Shift</th>\n      <th>G2 + Penalty</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td rowspan=\"3\">Leak-adjustment</td>\n      <td rowspan=\"3\">0.05</td>\n      <td colspan=\"3\">Leak</td>\n      <td rowspan=\"3\">238</td>\n      <td rowspan=\"2\">W</td>\n      <td rowspan=\"2\">S</td>\n      <td rowspan=\"2\">MW</td>\n      <td rowspan=\"2\">MS</td>\n      <td rowspan=\"3\"></td>\n      <td rowspan=\"2\">W</td>\n      <td rowspan=\"2\">S</td>\n      <td rowspan=\"3\">33</td>\n    </tr>\n    <tr>\n      <td>W</td>\n      <td>S</td>\n      <td>M</td>\n    </tr>\n    <tr>\n      <td>0.03</td>\n      <td>0.08</td>\n      <td>0.04</td>\n      <td>0.03</td>\n      <td>0.07</td>\n      <td>0.03</td>\n      <td>0.07</td>\n      <td>0.02</td>\n      <td>0.03</td>\n    </tr>\n    <tr>\n      <td rowspan=\"3\">Criterion-adjustment</td>\n      <td rowspan=\"3\">0.09</td>\n      <td colspan=\"3\">Criterion</td>\n      <td rowspan=\"3\">248</td>\n      <td rowspan=\"2\">W</td>\n      <td rowspan=\"2\">S</td>\n      <td rowspan=\"2\">MW</td>\n      <td rowspan=\"2\">MS</td>\n      <td rowspan=\"3\"></td>\n      <td rowspan=\"2\">W</td>\n      <td rowspan=\"2\">S</td>\n      <td rowspan=\"3\">16</td>\n    </tr>\n    <tr>\n      <td>W</td>\n      <td>S</td>\n      <td>M</td>\n    </tr>\n    <tr>\n      <td>0.02</td>\n      <td>0.10</td>\n      <td>0.014</td>\n      <td>0.04</td>\n      <td>0.14</td>\n      <td>0.05</td>\n      <td>0.10</td>\n      <td>\u20130.14</td>\n      <td>0.06</td>\n    </tr>\n  </tbody>\n</table>\n\nTo provide further model validation, the empirical CPP was compared against the simulated evidence accumulation time courses of the different models. In the case of the neurally informed models, predicted signatures of bound settings (e.g. cumulative evidence at response) are not informative for validation because they are forced to equal the observed beta excursions by design (see Discussion for comparison of the observed CPP pre-response amplitudes with observed beta excursions). Instead, for the comparison of these two models, respectively featuring leaky accumulation and criterion-referenced, non-leaky accumulation, the stimulus-locked dynamics of accumulator build-up rate (i.e. first derivative) are particularly informative. While a leaky accumulator would be expected to begin to decline in its steepness immediately as it starts to build, a non-leaky accumulator would be expected to rise linearly with a steady slope for a certain amount of time. To test this and compare the models, we analysed the slope profile of the observed and simulated accumulation waveforms. We focused on the strong conditions which will be the most diagnostic in this regard because the strong evidence onset produces a high, robust initial slope, as well as a sharp and relatively invariant CPP build-up onset which best approximates the onset invariance assumed in the models. The fixed strong and, to a lesser degree, the mixed conditions also had stronger predicted degrees of leakage, so that any leak-induced drop in slope should be most apparent against EEG noise. By comparison, the weak conditions have a much less clear onset time presumably due to greater variability in build-up onset timing not accounted for in the model. We found that the empirical CPP slope time course plateaued in the strong conditions indicating a linear build-up profile (Figure 4A), whereas the simulated time course of the leaky accumulator models indeed showed a steep drop-off in temporal slope after an initial peak (Figure 4B/C). Meanwhile, the criterion-adjustment model with non-leaky accumulation showed a plateau in the slope similar to the empirical CPP (Figure 4D). To capture this key feature quantitatively, we computed the percentage drop in slope in the first 100 ms relative to its initial peak. For the fixed strong condition the empirical slope dropped by 5% (bootstrap CI95% = [\u20135% 16%]), while the criterion-adjustment model predicted a drop of 6%, and the leak-adjustment model a drop of 27.5%, the latter falling outside the empirical bootstrapped 95% CI. Similarly, in the mixed strong condition the empirical slope dropped by 1.5% (bootstrap CI95% = [\u20139.5% 13%]), compared to 3% predicted by the criterion-adjustment model and 17% predicted by the leak-adjustment model.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/83025/elife-83025-fig4-v2.jpg)\n\n**Figure 4.:** (A) Empirical average target-locked centro-parietal positivity (CPP) signals (upper row) for each condition as well as their first derivative (lower row). This can be compared to the simulated accumulator process, $y$, for (B) the bound-adjustment model, and the neurally informed (C) leak-adjustment and (D) criterion-adjustment models. The build-up rate of the CPP does not immediately begin to fall steeply in the way predicted by the leaky accumulator model. In these simulations, CPP is simulated as the cumulative evidence without direct urgency influence (Kelly et al., 2021). Without loss of generality for the behavioural responses, we assumed that after reaching commitment, there is a delay of 80 ms before the CPP stops accumulating and over 416 ms falls linearly back to zero, implemented identically in all contexts and in both models. This was based on observed post-response dynamics in the real CPP.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/83025/elife-83025-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Empirical average response-locked CPP waveforms (upper row) for each condition as well as the average pre-response CPP (lower row). Figure represent the empircical data of N = 14. Error bars represent the 95%. These are compared to the simulated accumulator process, $y$ for the (B) bound-adjustment, (C) leak-adjustment, and (D) criterion-adjustment models. All three models predict an interaction in pre-response cumulative evidence levels (see lower rows), but whereas the bound-adjustment model predicts the fixed strong condition to stand out as the highest, the neurally informed models, by design, predict cumulative evidence levels that mirror the decision bounds estimated from empirically observed beta excursion, where the fixed strong condition is instead the lowest.\n\n### Baseline and pre-response beta amplitudes and their relationship with RT\n\nThe above analysis of the beta excursion showed that participants began their decision process with a smaller distance to the motor execution threshold in the strong context than for the other conditions (Figure 2A). The dynamics of beta amplitude relative to the action-triggering threshold were the key element for constraining the models as these amplitudes dictate the criterion amount of cumulative evidence required to trigger a response. However, to help interpret these changes in terms of context-related differences in psychological state, it is also of interest to separately examine variations in absolute pre-target and pre-response beta amplitudes across and within conditions. At first blush the smaller excursion in the strong context appears consistent with participants being tonically more prepared to make a movement, which seems counter-intuitive for a task condition that is by far the easiest. However, pre-target beta amplitude was actually found to be higher, reflecting lower baseline motor preparation in the strong context than both the weak and mixed context (see Figure 5A, left and Figure 5B, GMM, $\u03c7^{2}$(1)=2.3, p=0.02 and $\u03c7^{2}$(1)=2.4, p=0.02, respectively). Meanwhile, pre-response beta amplitude was also significantly higher for the strong context, but to an even greater degree than at baseline (see Figure 5A, right and Figure 5C, GMM, $\u03c7^{2}$(1)=3, p=0.003). Thus, compared to the mixed and weak contexts, the much easier strong context appeared to have lower tonic levels of preparation, but also a disproportionately more liberal threshold level, resulting in the smaller beta excursion overall.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/83025/elife-83025-fig5-v2.jpg)\n\n**Figure 5.:** (A) Beta amplitude (15\u201330 Hz) over the motor cortex without any baseline or threshold subtraction, aligned to the target (left) and to the response (right), averaged for each condition. Additionally, a visual representation of excursion is shown with the red lines. Scalp topographies show the distribution of the difference between strong targets in the mixed and fixed condition, more red indicating higher activity in the fixed condition. (B) Baseline beta activity and (C) pre-response beta plotted for each condition and three equal-size reaction time (RT) bins. Error bars for all plots represent the 95% confidence interval.\n\nWe also examined variation of pre-target beta amplitude as a function of RT. As stated above, beta excursion was larger on trials with longer RTs. Interestingly, examining the baseline and pre-response amplitudes separately indicated that this RT relationship was driven by a correlation with beta amplitude in the baseline for the mixed and weak conditions (as seen previously, for example Steinemann et al., 2018), whereas it was driven by a correlation with pre-response amplitude in the strong context. This was indicated by a significant interaction between context, motion coherence, and RT for both baseline beta (GMM, $\u03c7^{2}$(1)=\u20130.43, p=0.004) and pre-response beta (GMM, $\u03c7^{2}$(1)=\u20130.3, p=0.007). Post hoc tests showed that baseline beta significantly varied with RT for both weak conditions (both weak conditions p<0.02) and the mixed strong conditions (GMM, $\u03c7^{2}$(1)=\u20130.32, p<0.001), but not fixed strong (Figure 5B; GMM, $\u03c7^{2}$(1)=\u20130.009, p=0.93). In contrast, pre-response beta predicts RT in only the fixed strong condition (Figure 5C; GMM, $\u03c7^{2}$(1)=2.5, p=0.02 vs. weak: p>0.75 and mixed strong: $\u03c7^{2}$(1)=\u20130.05, p=0.52). Thus, while excursion predicted RT in all conditions, this relationship with RT was expressed differently in the absolute baseline and pre-response levels in the fixed strong context, potential reasons for which are discussed below.\n\n## Discussion\n\nIn order to optimise detection task performance, which requires balancing true (signal-driven) against false (noise-driven) detections, the decision process must be strategically adjusted according to various task factors including one\u2019s knowledge of the evidence strength compared to the noise. In classic SDT, this is accomplished by adjusting a decision criterion which the observer uses to categorise a unitary observation as either signal or noise, setting it lower (more liberal) when targets are known to be weak. However, the normative SDT framework is based on a unitary sensory observation. In continuous detection scenarios, where fast responses are required to unpredictable targets within ongoing noisy information, decisions benefit from accumulating evidence over time. An obvious analogous mechanism for setting liberal/conservative policies in this case is to adjust a criterion on cumulative evidence, in the form of a response-triggering decision bound, as has been found to regulate speed-accuracy trade-off in discrete forced-choice decisions (Churchland et al., 2008; Hanks et al., 2014; Murphy et al., 2016; Palmer et al., 2005; Reddi and Carpenter, 2000; Reddi et al., 2003; Thura and Cisek, 2016). Here, we tested this prediction through the joint analysis and modelling of behavioural and electrophysiological data in a continuous motion detection task performed in three different difficulty contexts. Although we confirmed that context-dependent behaviour can be explained by a bound-adjustment model, we found that beta activity over motor cortex, a well-established neural signature of a thresholded decision variable, showed adjustment trends in the opposite direction. Beta excursion from baseline to motor execution threshold was smaller in the fixed strong context, indicative of a more liberal bound in this condition (see Figure 2A and B). Using the exact urgency dynamics reflected in beta oscillations which dictate the decision variable\u2019s starting level relative to threshold and hence the decision bound, we showed that behaviour can be captured equally well by a continuous accumulation model that employs an adjustable sensory criterion to which momentary evidence is referenced before accumulation.\n\nBuilding on other recent studies using neurally informed modelling (reviewed in O\u2019Connell and Kelly, 2021), the current study highlights the value in incorporating neural signatures of decision formation in models to uncover effects that cannot be resolved by considering behaviour alone. Specifically, the discrepancy between the behaviour and beta excursion proved to be crucial to test alternative computational mechanisms to implement context adjustments. The essential characteristic of the sensory criterion-adjustment mechanism is that it controls the strength of sensory input that is sufficient to give rise to significant positive accumulation. Within the framework of the current study, in which we assumed a common basis of continuous accumulation for all models, we implemented the criterion as a reference point subtracted from all evidence samples as they enter a continuous accumulator with lower reflecting bound. However, future research should systematically explore other viable implementations of the sensory criterion mechanism. In particular, accumulation need not be continuous and could instead be triggered, for example by the evidence first reaching a \u2018gate\u2019 level as has been proposed for visual search decisions (Purcell et al., 2010; Purcell et al., 2012; Schall et al., 2011), or by a distinct, lower-level process functioning as a relevant transition detector, neural correlates of which have been reported in humans (Loughnane et al., 2016) and are also present in the current data (see Figure 2\u2014figure supplement 2). These gate-based triggering mechanisms provide alternative ways to implement an adjustable criterion to regulate the input to the accumulator in order to set decision policy, and could potentially be teased apart through more complex manipulations of noise and target evidence dynamics.\n\nAs we have cautioned previously (O\u2019Connell and Kelly, 2021), this neurally informed modelling approach comes with the caveat that the validity of model inferences heavily depends on that of the \u2018linking propositions\u2019 (Schall, 2019) specifying how the measured neural decision signals relate to the underlying computational decision process. In this study we relied primarily on the assumption that beta amplitude, relative to its pre-response threshold level (e.g. excursion), maps onto a motor-level decision variable driven by the additive combination of evidence accumulation and urgency components. While several previous studies support this, it is important to survey the supporting results in this specific dataset, especially given the divergence of results from the bound adjustment that we had predicted. First, beta builds over time during targets at a rate that scales with evidence strength, pointing to the evidence accumulation component. Second, beta excursion strongly predicts RT in the way predicted of a bounded accumulator with starting point variability (de Lange et al., 2013; Donner et al., 2009; Gould et al., 2012). Third, it also builds during the ITI where we would expect that the accumulation of noise would flat-line or quickly asymptote, and the build-up trajectory matched the increasing false alarm rates, pointing to an evidence-independent urgency component. Last, false alarms are associated with a decrease of beta reaching a threshold level closely matching that of hits, indicating a stable threshold both before and during target evidence.\n\nWhen analysing absolute beta amplitudes, however, there was one result that did not align fully with previous studies. Previous studies found that beta activity usually reaches a stereotyped pre-response amplitude contralateral to the response across different conditions and RTs, suggesting a fixed threshold applied to motor preparation (O\u2019Connell et al., 2012; Steinemann et al., 2018; Kelly et al., 2021). While this holds true for most conditions in the current data, pre-response beta activity in the fixed strong condition was significantly elevated relative to the other conditions (see Figure 5A). We side-stepped this issue in our models by constraining them using the excursion relative to the pre-response level in a given condition rather than the absolute baseline activity. However, follow-up analysis of absolute beta levels yields further insight into how the context-dependent adjustments are physiologically implemented. Although the smaller beta excursion in the fixed strong condition might suggest that people maintained a higher state of continuous preparedness, which is presumably energy-consuming (Gottsdanker, 1975; N\u00e4\u00e4t\u00e4nen, 1972) and thus counter-intuitive for such an easy task, the elevated absolute beta amplitude in the ITI suggests much lower tonic preparation in this context. Meanwhile, the yet greater elevation in absolute beta at the time of response could be interpreted as a more relaxed level of response caution at the motor level, which in our criterion-adjustment model is counteracted by the higher sensory-level criterion to create an overall more conservative policy. We also found that pre-response, absolute beta amplitude in the fixed strong condition was higher for faster RTs than for slower RTs. However, relative to the mixed strong condition, this elevation for the fastest trials was also observed in the baseline period (Figure 5B), suggesting that other, slower-fluctuating generators of beta activity that also relate to RT may superimpose on the motor preparation signal. Indeed, beta activity has been linked to many cognitive factors other than motor preparation (Aoki et al., 2001; Brovelli et al., 2004; Buschman and Miller, 2007; Buschman and Miller, 2010; Engel and Fries, 2010; Murthy and Fetz, 1992; Siegel et al., 2012; Spitzer and Haegens, 2017), and here the topographies of condition differences suggest context-dependent changes across a wider network (Figure 5A). This again underlines the importance of using beta excursion as model constraints to minimise the influence of slower-fluctuating interfering beta generators, but also highlights the need for future research into how other factors such as attention, response vigour, and sensorimotor connectivity can influence pre-response contralateral beta amplitudes.\n\nAn advantage of having characterised multiple neural signatures of decision formation is that one can be used to constrain models while the other can be used for additional follow-up validation. However, in these data the observed CPP and beta signals were not precisely aligned in their respective estimates of decision-bound settings. Specifically, the pre-response amplitude of the CPP (Figure 2E) failed to mirror the reduction in beta excursion seen in the fixed strong condition (Figure 2B). Under the assumption that the CPP reflects the pure cumulative evidence component that adds to urgency at the downstream motor level where the threshold is set, it should reach lower pre-response amplitudes for conditions in which beta excursion is smaller (Steinemann et al., 2018; Kelly et al., 2021). However, simulations of both neurally informed models (see Figure 3\u2014figure supplement 1C and D) confirm that the predicted reduction in pre-response accumulator amplitude for the fixed strong relative to mixed strong is very small (6%), and not an effect easily detected in event-related potentials, suggesting the possibility of a type 2 error. Nevertheless, it is possible that the true empirical CPP amplitude in the fixed strong condition exceeds the value predicted in the models. We could speculate that this could arise from a relaxation of either the weighting or the delay of the transmission of CPP information into motor preparation in this easy condition, either of which would cause the amplitudes to be higher in the fixed pre-response window without changes to model structure or constraints.\n\nThe sensory criterion adjustment mechanism presents an interesting alternative means of policy setting with respect to the strategic adjustment of the action-triggering bound suggested by the dominant computational models and empirical research on the speed-accuracy trade-off (Bogacz et al., 2010; Palmer et al., 2005). It is important to note, however, that it is not yet clear why the policy is set by sensory criterion setting here and by decision-bound setting in the speed/accuracy work, as there are two major differences: here the decision requires an adjustment for sensory target strength, not speed/accuracy emphasis, and here the task is detection within a continuous stimulus as opposed to discrimination within discrete trials. To tell which factor explains the difference in adjustment mechanism, it will be necessary to examine speed-accuracy trade-off manipulations in a continuous detection task.\n\nIn conclusion, while previous studies of decision policy adjustments for other perceptual task manipulations have found that they are enacted by changing the decision bound, we here show that, when adjusting for expected difficulty level during continuous detection, people instead regulate the transfer of sensory evidence into the accumulator process. This suggests that the brain harbours a broader range of mechanisms to regulate decision policy than it had previously seemed.\n\n## Materials and methods\n\n### Participants\n\nFourteen participants (aged 21\u201360 years; eight female) were recruited at University College Dublin. Two participants were left-handed, all participants had normal or corrected-to-normal visual acuity, and had no previously diagnosed psychiatric disorders, epilepsy or suffered from any head injury resulting in loss of consciousness. All participants gave written consent prior to their participation and were compensated for their time with \u20ac25. The UCD Human Research Ethics Committee for Life Sciences approved all experimental procedures in accordance with the Declaration of Helsinki (LS-16-76-Craddock).\n\n### Experimental procedure\n\nParticipants performed the task in a dark room, while seated 57 cm from the monitor. All stimuli were presented on a black background on a 21-inch CRT monitor operating at 60 Hz refresh rate (1280\u00d7960 pixels). Stimuli were generated using custom-made software in MatlabR2016 (Mathworks, Inc, Natick, MA, USA) utilising Psychtoolbox (Brainard, 1997; Kleiner et al., 2007; Pelli, 1997).\n\n#### Experimental task: RDM\n\nParticipants performed a continuous detection version of the random dot motion (RDM) task (Hanks et al., 2006; Roitman and Shadlen, 2002; Ditterich, 2006; Shadlen and Newsome, 1996). In this task, they were asked to continuously monitor a cloud of white, randomly moving dots for intermittent targets defined as a step change from random to coherent upwards dot motion lasting for 1 s (see Figure 1A). During periods of incoherent motion (0% motion coherence), all dots were randomly displaced to a new location throughout the patch on each frame. Coherent dot motion was accomplished by displaying a certain percentage of randomly selected dots in a direction relative to their previous location within each frame. The ITI, in which motion coherence was held at 0%, was pseudo-randomly varied among four possibilities: 2, 4, 6, or 8 s. This ITI variability created temporal uncertainty to ensure continuous engagement in the detection task. Three target-strength contexts were run in separate blocks: in the \u2018weak evidence context\u2019 all targets had 25% coherence; in the \u2018strong evidence context\u2019 all targets were 70%; and both coherence levels could appear with equal likelihood in a \u2018mixed context\u2019. Participants were asked to respond to coherent upwards motion by clicking a mouse button with the index finger of their dominant hand. Each participant performed 12 blocks each consisting of 24 targets. Three blocks of each of the \u2018fixed\u2019 (single-coherence targets) contexts (\u2018strong\u2019 or \u2018weak\u2019) were first run in an order counterbalanced across participants. The \u2018mixed\u2019 target coherence context was originally designed as a control condition to verify bound invariance across target strengths within a single context, and thus all participants performed six \u2018mixed\u2019 blocks at the end of the experimental session.\n\nPrior to the experiment, participants completed four training blocks, each consisting of six targets with decreasing levels of coherence (90%, 70%, 45%, 25%). In the last training block, participants would practise the mixed context condition (25% and 70%). Feedback of the participant\u2019s performance was presented in text at the end of each block (numbers of hits, misses, and false alarms). The RDM pattern consists of a patch of 150 white, randomly moving dots (dot size: 4 pixels, dot speed of 3.33 deg/s) centrally presented in an aperture of 8 degree diameter. Dots were flickering on and off at a rate of 15 Hz. While this flicker was included as standard at the time to measure steady-state visual evoked potentials (see also Kelly and O\u2019Connell, 2013), these potentials do not reflect sensory evidence for the decision (which is instead the motion coherence) and therefore were not analysed here.\n\n### Data analysis\n\n#### Behavioural analysis\n\nAll trials were sorted and analysed according to the four conditions of fixed weak, fixed strong, mixed weak, and mixed strong. RT was calculated in milliseconds (ms) relative to the evidence (i.e. coherent dot motion) onset. Hits were defined as trials in which a response was made between 200 ms after target onset up to 650 ms after target offset. It was assumed that responses with RT faster than 200 ms were false alarms as it is too soon for them to be informed by the sensory evidence from the target. Meanwhile, late responses made up to 650 ms after target offset were defined as hits because this was the point where the post-target response probability returned to the level of false alarm rate during the ITI. Conversely, false alarms were defined as responses in the period from 650 ms after target offset to 200 ms after the following target onset. False alarm rate was calculated as the proportion of 2 s periods of ITI time in which such a false alarm response was made. We chose this \u2018per 2 s\u2019 scaling as it is the shortest ITI but note that no results are dependent on this choice of scaling, as it merely sets the units of measurement. In one exception, to look at the distribution through the ITI (Figure 3A, upper), we computed the proportion of false alarms per 1 s for each context.\n\nEffects of the different conditions on RT were statistically analysed using a repeated-measures ANOVA (rANOVA) that organised the four conditions into two binary factors of difficulty context (fixed vs. mixed), and coherence (25% vs 70%), and with the additional factor of ITI duration preceding a given target (2, 4, 6, or 8 s). GMM were used to analyse hit rate and false alarms rate, which allows statistical testing of proportions and bounded variables. A logit link function was used for hit rates as they are binomially distributed. False alarm rates were analysed as a function of context (weak, strong, and mixed contexts). A log-link function is used for the false alarm rates as participants had unbounded opportunities to make false alarms within each ITI, yielding a Poisson distribution. For all models, intercepts and slopes were added as random effects.\n\n#### EEG acquisition and preprocessing\n\nContinuous EEG was recorded from 128 scalp electrodes using a BioSemi system with a sample rate of 512 Hz. All data were analysed in Matlab R2018a utilising EEGLAB routines (Delorme and Makeig, 2004). Eye movements were recorded with four electro-oculogram (EOG) electrodes, two above and below the left eye and two at the outer canthus of each for vertical (vEOG) and horizontal (hEOG) eye movements and blinks. EEG data were low-pass filtered by convolution with a 137-tap hanning windowed sinc function to give a 3 dB corner frequency of 37 Hz with strong attenuation at the mains frequency (50 Hz; Kelly et al., 2021; Widmann et al., 2015). Noisy channels were automatically detected using the PREP pipeline (Bigdely-Shamlo et al., 2015) and interpolated using spherical spline interpolation. Initially, large target epochs were extracted using a window capturing the preceding ITI (up to 650 ms after the previous target offset) to 1 s after the current target offset, and shorter target epochs were further extracted from these.\n\nTarget trials were rejected if the absolute difference between the vEOG or hEOG electrodes exceeded 200 \u03bcV during \u2013100 ms before target onset up to 100 ms after response or if 10% of the electrodes exceeded 100 \u03bcV in the target epoch. If less than 10% of the electrodes exceeded 80 \u03bcV on a given trial, then these electrodes were interpolated using a spherical spline interpolation. One participant was excluded due to excessive trial rejection (>70% in each condition) due to a mix of blinking, eye movements, and EEG artefacts. After artefact rejection, the data were subjected to a current source density (CSD) transformation utilising the CSD toolbox in MatlabR2018a (Kayser and Tenke, 2006; Kayser, 2009).\n\n#### Decision signal analysis\n\nWe analysed two neurophysiological signals previously established to reflect decision formation. First, motor preparation was measured via effector-selective spectral amplitude decreases in the beta (15\u201330 Hz) frequency range. We omitted the 15 Hz frequency bin to avoid contamination of motor preparation signals by the 15 Hz steady-state visually evoked potentials (SSVEP) evoked by the on-off flicker of the dots at the same frequency. Second, we analysed the CPP, a motor-independent signal exhibiting evidence accumulation dynamics (O\u2019Connell et al., 2012; Kelly and O\u2019Connell, 2013). To measure beta amplitude, we computed a short time Fourier transform by applying a Fourier transform in a sliding window of 266 ms (four full cycles of the SSVEP) in steps of 10 ms, and then extracted amplitude in the 15\u201330 Hz frequency range for the electrode at standard sensorimotor sites C3 and C4, for participants that responded with right and left hand, respectively.\n\nThe CPP was measured from three centro-parietal electrodes that we selected from each individual participant with the highest signal-to-noise ratio (amplitude \u2013133 to \u201366 ms before the response divided by the standard measurement error as suggested by Luck et al., 2021), within a cluster of nine electrodes delineated based on the visual inspection of the grand-average topography of the response CPP (see topography in Figure 2D). Beta and CPP signals were then segmented into target-locked and response-locked epochs. Target-locked epochs were extracted from \u2013200 to 1000 ms around target onset, and response-locked epochs were extracted from \u2013400 to 200 ms around response time. For the CPP, epochs were baseline-corrected to \u2013133 to \u201366 ms around target onset (two full cycles of the SSVEP at 15 Hz). They were additionally low-passed filtered at 6 Hz with a fourth-order Butterworth filter, for plotting purposes only. Only hits, where no false alarm occurred within 1.2 s pre-target onset, were included in the analysis of stimulus- and response-locked CPP and beta.\n\nTo determine whether the neural signals show signs of decision-bound adjustment, we compared the beta amplitude \u2018excursion\u2019 \u2013 that is, amplitude just prior to response relative to just prior to target onset \u2013 and the pre-response CPP amplitude across the four conditions. Beta excursion was calculated on each trial by taking the difference of mean baseline amplitude (\u2212133 to \u201366 ms relative to target onset) minus mean pre-response amplitude (\u2212133 to \u201366 ms relative to response). CPP amplitude was calculated for each trial as the average amplitude in the pre-response time range \u2013133 to \u201366 ms relative to response. The effects on beta excursion and CPP were examined using a GMM with the factors of difficulty context (fixed vs. mixed) and motion coherence (25% vs 70%), and including RT (z-scored within participant) as a covariate. For all models, random intercepts and slopes were added as random effects.\n\nIn our framework we assume that beta reflects the combination of evidence accumulation and urgency components. As the noise during the ITI is zero mean, we assumed any beta dynamics or effects in the ITI mainly reflected the operation of urgency. Thus, in order to create a standardised urgency signal to constrain computational decision models (see below), we took the grand-average beta amplitude for each context in the pre-response amplitude (\u221267 to \u201333 ms) as the threshold level for that context and subtracted it from the beta signals measured during the ITI. Then, we took the longest ITI (8 s) and fitted a second-order polynomial to capture the smooth urgency trend, ignoring any residual noise. The smooth urgency function was then normalised by dividing it by the maximum value during the ITI in any context, and finally it was inverted (urgency = 1-urgency). In this way, 0 corresponds to the lowest motor preparation level measured during the ITI in the grand-average beta signals of any context and 1 corresponds to the threshold level for triggering a response. During the targets, evidence accumulation adds to urgency and therefore beta cannot be used to isolate the dynamics of urgency on its own. For the sake of parsimony, we simply assumed that during targets following 2, 4, or 6 s ITIs, urgency continued on its trajectory measured from 8 s ITIs. For targets following 8 s ITIs, we assumed that urgency held steady at its pre-target level, based on the fact that beta tended to saturate during the ITI.\n\n#### Computational models\n\nWe fitted three alternative models to the behavioural data: a leaky accumulator model with context-dependent bound (henceforth the bound-adjustment model) and two neurally constrained models with urgency quantified directly from beta signals as above, and featuring either leaky accumulation with context-dependent leak (henceforth the leak-adjustment model) or non-leaky accumulation of evidence cast relative to a sensory criterion with a lower reflecting decision bound at zero (henceforth the criterion-adjustment model). All three models follow a basic leaky accumulator model equation (Ossmy et al., 2013):\n\n$$\ny(t)=y(t\u2212dt)\u2217(1\u2212Leak)+x(t)\u2217Drift+\u03be\n$$\n\nwhere $y\u2062(t)$ is the accumulator output, $x\u2062(t)$ is a binary representation of target presence throughout the block (set to 1 during targets and 0 otherwise), which is scaled by drift rate \u2018Drift\u2019 according to the strength of the evidence for a given target and with added Gaussian noise, $\u03be_{s}=N(0,\\sigma_{s})$, altogether representing the noisy sensory evidence through the block. As indicated in the equation, the $L\u2062e\u2062a\u2062k$ parameter sets the degree to which the previous accumulator value ($y\u2062(t-d\u2062t)$) is scaled down relative to the incoming evidence. Time step size $d\u2062t$ was set to correspond to the refresh rate of the monitor (60 Hz or 16.67 ms). When the accumulator level ($y\u2062(t)$) exceeded the decision bound ($\\theta$), it was then set to zero for a post-response pause of 1 s, on the assumption that subjects are unlikely to resume accumulation immediately after responding given the range of ITIs.\n\nAdditionally, a non-decision time accounting for the delay between samples of evidence appearing on the screen and registering as increments to the accumulation process was estimated as a free parameter, while post-commitment delays associated with motor execution were fixed at 80 ms based on a typical motor time estimated for mouse-button presses (O\u2019Connell et al., 2012; Steinemann et al., 2018; Kelly et al., 2021). The apportioning of non-decision delays to before or after the accumulation to bound process does not generally impact the fitting of behavioural models, but we applied this fixed motor time here to be consistent with the measurement time window used for CPP amplitude. For the purposes of comparing the simulated and observed CPPs, rather than setting y=0 immediately upon threshold crossing, we allowed the simulated accumulator to continue accumulating for 80 ms beyond the point of decision commitment, after which the accumulator linearly decreased back to 0 over a period of 400 ms, mimicking the overshoot and fall of the empirical CPP after the response time. Note that model fits to behaviour are unaffected by the inclusion of this post-decision ramp-down. Further, to ensure that comparison of real and simulated CPP time courses would be minimally influenced by any misestimation of such time-shifts, we took measurements relative to the signal onset time in that analysis.\n\n##### Bound-adjustment model\n\nA leaky integrator model (Figure 1C), where the decision bound was free to vary across the three contexts (weak, strong, and mixed), was fitted only to the behavioural data. This model was predicted a priori to best explain the decision process adaptations. This model fixed the momentary sensory noise parameter at a value of 0.1 ($\\sigma_{s}$=0.1), and included three free decision-bound parameters \u2013 one for each context ($\\theta_{c\u2062o\u2062n\u2062t\u2062e\u2062x\u2062t}$), one leak parameter, commonly applied to all conditions, one non-decision time parameter, and one for four drift rate parameters (see below), making a total of six or nine free parameters.\n\n##### Neurally constrained leak-adjustment model\n\nUsing the same leaky accumulator mechanism as above, this model (Figure 3B) instead had three leak parameters ($L\u2062e\u2062a\u2062k_{c\u2062o\u2062n\u2062t\u2062e\u2062x\u2062t}$) so that leak was free to vary across the contexts (weak, strong, and mixed). Here, the decision bound was fixed to 1 and additionally the sensory noise parameter ($\\sigma_{s}$) was a free parameter since the decision variable is now scaled by the normalised bound. Here, the sum $y\u2062(t)+u\u2062(t)$ was computed as the motor-level decision variable and subjected to the fixed decision bound to determine responses (with the non-decision time implemented as in the previous model), where $u\u2062(t)$ is the urgency function measured from observed beta signals during the ITI as detailed above in Decision signal analysis. This resulted in six free parameters for the minimal model with one free $D\u2062r\u2062i\u2062f\u2062t$ rate parameter, and nine for the expanded model with four free $D\u2062r\u2062i\u2062f\u2062t$ rates.\n\n##### Neurally constrained criterion-adjustment model\n\nIn a second neurally constrained model (Figure 3C), we considered a non-leaky accumulation of evidence that is recast as a quantity relative to a sensory-level criterion (as distinct from a $C\u2062r\u2062i\u2062t\u2062e\u2062r\u2062i\u2062o\u2062n$ set on cumulative evidence in the decision variable, which we refer to as a \u2018decision bound\u2019), with the additional setting of a lower reflecting bound at zero on the accumulator, according to:\n\n$$\nt=max(0,y(t\u2212dt))+(x(t)\u2217Drift+\u03be_{s}\u2212C_{context})\n$$\n\nHere, sensory criterion ($C_{context}$) was free to vary across the three contexts (weak, strong, and mixed). The fixed bound, constrained urgency, and free noise parameter are exactly as in the neurally constrained leak-adjustment model above. Again, the most minimal model with a single free drift rate parameter thus has a total of six free parameters (including one non-decision time as usual), and nine free parameters for the version with four free $D\u2062r\u2062i\u2062f\u2062t$ rates.\n\n### Behavioural model fitting\n\nThese models were each fitted to a total of 32 behavioural data points, comprised of the proportion of all targets with a hit in six RT bins defined by the 0.1, 0.3, 0.5, 0.7, and 0.9 RT quantiles or with no response (misses) across the four target conditions, and the false alarm rate measured as a proportion of every 2 s segment of the ITIs before the targets of each condition (see above and Figure 1B). The models were fitted using Monte Carlo simulations of the decision process to generate simulated behavioural responses, which were compared to the observed data using the $\u03c7^{2}$-based statistic $G^{2}$:\n\n$$\nG^{2}=2(\\sumi=14n_{i}\\sumj=18p_{ij}log\u2061\\frac{p_{ij}}{\\pi_{ij}})\n$$\n\nHere, ni is the number of valid trials, $p_{i\u2062j}$ and $\\pi_{i\u2062j}$ are the observed and the simulated proportion, respectively, for condition $i$ in RT bin $j.G^{2}$ statistic was minimised with a bounded Nelder-Mead SIMPLEX algorithm (Nelder and Mead, 1965; $fminsearchbnd$ in Matlab).\n\nSimilar to Corbett et al., 2021, the models were fitted in several stages: In the first stage, a minimal model was fitted that included all relevant free parameters for that model (see above) but only one free drift rate parameter for the weak coherence, which was then linearly scaled for the strong conditions according to relative coherence (70/25). In this initial broad search, about 4500 trials were simulated per model evaluation in separate SIMPLEX fits for 1000 different initial \u2018guess\u2019 parameter vectors. These initial guess vectors were made by sampling from a uniform distribution spanning a reasonable range along each parameter dimension, so that the guess vectors together comprehensively covered a large parameter space in which to find a global minimum. In a second refinement stage, about 20,000 trials were simulated in each model evaluation in separate SIMPLEX fits starting from the 30 best estimated parameter vectors arising from the first step, with lower tolerance criteria for termination or convergence. This second step tended to improve the $G^{2}$ only slightly, typically by about 2%.\n\nLast, we ran a similar refinement step for model versions that now had four separate free drift rate parameters, to allow capturing any modulation of evidence accumulation quality due to either practice (as the participants always performed the mixed condition last) or context itself (e.g. drift rate may depend on how often strong targets arise in a given context). Using the 30 best refined parameters, we produced 200 new initial parameter vectors by adding random Gaussian jitter of a standard deviation of 1.1 times the mean of each of the refined parameters and 1.15 times of the mean for the drift rate parameters. Again about 20,000 trials were simulated in each model evaluation for this last step.\n\nTo confirm that the added complexity of four free drift rates was warranted over a single free drift rate parameter within each model, we computed the Akaike\u2019s (AIC) and Bayes information on criterion (BIC), to penalise for the complexity of the models, for example number of free parameters ($f$).\n\n$$\nAIC=G^{2}+2f\n$$\n\n\n\n$$\nBIC=G^{2}+flog\u2061(\\sumi=14n_{i})\n$$\n\nThe principal comparisons in the study were across the three models with the same number of free parameters in any comparison, only differing in accumulation and/or adjustment mechanisms. Therefore, these models were simply compared using $G^{2}$ itself.\n",
+      "created_at": "2025-12-04T03:07:34.344439Z"
+    },
+    {
+      "id": "e1cb326b-2fb4-4b5e-a746-401f1157c995",
+      "submission_id": "40a0e406-6803-432a-bf8c-1649ea01c172",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Valentin Wyart, https://ror.org/02vjkv261 Inserm France\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.83025.sa0](https://doi.org/10.7554/eLife.83025.sa0)\n\nThis important work reveals a novel mechanism by which perceptual decision-making is regulated as a function of task demands. The combination of behavioral and physiological (EEG) evidence supporting the accumulation of evidence referenced to a context-dependent sensory criterion is convincing. Overall, the study makes a strong case for the importance of augmenting behavioral modeling with additional input from neural signatures of the underlying decision process.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Valentin Wyart, https://ror.org/02vjkv261 Inserm France\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.83025.sa1](https://doi.org/10.7554/eLife.83025.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Balancing true and false detection of intermittent sensory targets by adjusting the inputs to the evidence accumulation process\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, and the evaluation has been overseen by Valentin Wyart as Reviewing Editor and Michael Frank as the Senior Editor. The following individual involved in the review of your submission has agreed to reveal their identity: Romy Fr\u00f6mer (Reviewer #2).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission. As you will see, the two reviewers have found that your work makes a strong case as to how behavior alone can be insufficient to tease apart competing models of sequential sampling models of decision-making, and possibly lead to misattribution of observed behavioral differences. Your neurally-informed modeling approach shows how neural measures may help in such situations to arbitrate between models that are indistinguishable from behavior alone. However, both reviewers agreed that this approach relies strongly on the assumed relationship between the neural measure of interest (here, the \u0392 amplitude signal) and the decision process, something which amounts to 'reverse' inference to some extent. It is therefore important to consider more explicitly the possibility that this assumed relationship may either be incorrect in some respect \u2013 e.g. because the neural measure reflects a mixture of components of the decision process rather than a single component. The approach is nevertheless novel, and potentially powerful, and the main text could provide all the available empirical evidence in the data that points toward the assumed relationship between \u0392 amplitude and evidence-independent urgency.\n\nThe reviewers have agreed on the below list of essential revisions that should be addressed in a point-by-point fashion and accounted for in a revised version of your manuscript. The individual reviews of the two reviewers are also provided at the bottom of this decision letter for you to address also minor comments on the manuscript. These individual reviews do not require point-by-point responses. We hope that you will be able to address these comments and that you will choose to submit your revised manuscript to eLife.\n\nEssential revisions:\n\n1) The revised manuscript should give greater consideration to the possibility that the hypothesized relationship between the neural measure of interest (\u0392 amplitude) and the decision process may not be entirely correct. The neurally-informed modeling approach is indeed quite appealing to distinguish between candidate models that are indistinguishable from behavior alone. However, it appears at times in the current manuscript to rely on a form of 'reverse' inference: assuming that the neural measure of interest is a faithful, selective correlate of a specific component of the decision process. It is almost never the case that such inferences can be made without significant doubt, especially in the case of non-invasive neural measures such as EEG-derived metrics.\n\nA specific paragraph in the Discussion section would be very useful for readers to clarify not only the benefits of your novel approach but also its assumptions and potential caveats.\n\n2) The neurally-informed modeling approach (Figure 3) appears to use \u0392 amplitude as an evidence-independent urgency signal that adds to the decision variable (it is described as such in the Methods section). However, \u0392 amplitude is clearly affected by the evidence (Figure 2A). And in the Results section, \u0392 amplitude is described as best corresponding to a decision variable, which would include a dependence on sensory evidence. This seems conflicting: how can \u0392 amplitude be used as an evidence-independent urgency signal in the neurally-informed modeling if it depends on sensory evidence?\n\nTo resolve this apparent discrepancy between the assumption of the neurally-informed modeling approach and the data, it would be very important to provide the key properties of the \u0392 amplitude signal (ideally from your own dataset) that make it suitable to use as an evidence-independent urgency signal. This list should ideally be found in the Results section so as to give readers a clear idea of the several properties of this signal before using it as an evidence-independent urgency signal in the modeling. Because the interpretability of the results of these analyses depends on this assumption, it is key that the reader understands how much this modeling assumption is grounded in the available data. Nevertheless, a Discussion paragraph that explains how the neurally informed modeling approach depends on this assumption (see point 1) is very important.\n\n3) Related to the previous point, the properties of the \u0392 amplitude signal suggest that it reflects a mixture of processes rather than a selective component of the decision process. As noted by Reviewer 2, in the evidence criterion adjustment model, the average DV value during the ITI will be closer to the decision bound in the weaker signal condition compared to the stronger signal condition (this is how the model fits the false alarm rate differences). This should be reflected in \u0392 amplitude if the latter reflects the DV. However, the \u0392-derived urgency is highest for the condition with the lowest false alarm rate and lowest for the condition with the highest false alarm rate. It would be very useful to clarify these seemingly hypothesis-inconsistent aspects of the data in the revised manuscript, which may be resolved with further details and explanations regarding what is expected of the neural signal of interest.\n\n4) Regarding the criterion-adjustment model, could there be an alternative equivalent account that does not involve regulation of the transfer of incoming evidence? It appears highly similar to one with a constant negative drift added to the decision variable in addition to the contribution of evidence (and a lower reflecting bound).\n\n5) Parameterization of the models. You explain clearly that one of the model parameters (e.g., noise or bound) must be fixed, but it is not clear why you didn't keep it the same parameter across all models. Couldn't you have fixed the noise parameters for all the models? Having it different across models makes it difficult to compare parameter values across the models, especially because the fitted noise term in the neurally-informed models appears dramatically reduced compared to the fixed value of noise used for the bound-adjustment model. Also regarding model parameterization, could you possibly report the leak parameter using more intuitive units? It seems to be parameterized as a fraction leak per time step, but the time step is unclear. Reporting the leak as a time constant would be immediately understandable.\n\n6) Reviewer 2 has identified several problems with Figure 3, which should be corrected in the revised version: Figure 3 could benefit from a number of improvements. The various line types in the top panel of A are not labeled or described. The range of values of the y-axis in the top panel seems rather small compared to the overall false alarm rates. I know the latter was calculated as a proportion over 2-second intervals. I don't know the bin width for Figure 3A, but the numbers being a factor of 10 smaller seems pretty far off based on my best guess of bin width. The scaling of the bottom panel of A clips off 2 of the 3 curves at earlier times. From the methods, I believe at least one of the curves should go all the way down to 1, so half the range is cut off in the current version. In panel B, the evidence distributions are not labeled and a bit confusing. I can guess that they correspond to distributions with a strong signal, with a weak signal, and without a signal. However, the presumptive \"without signal\" black distribution appears shifted negative of zero, which I don't think is correct. The title of panel F says \"simulated Bound-adjustment\" while the text describes this as the \"simulated criterion-adjustment\" model. I presume this is a mistake in labeling the title, but as this is the most critical distinction for the paper's main conclusion, it's really important to get it right.\n\n7) In Figure 3F (simulation of the criterion-adjustment model), it is indeed quite puzzling that the DV is at zero at the time of target onset. You explain that the urgency signal was removed from the simulations of this \"DV\", which is useful, but there should still be an influence of pre-target noise. Did the simulations not include any influence of pre-target noise? Reviewer 2 is correct that it is unclear why it is not included, and it should be explored explicitly if possible.\n\n8) It would be useful to discuss at least some alternative models that may have not been considered in this study. Modeling studies and their comparison are always dependent on the models being included. One could maybe have thought of a different alternative to the standard model, such as the precision-weighted evidence integration mentioned by Reviewer 3. It would be useful to discuss alternative variants of the standard account of the contrast between conditions somewhere in the Discussion section.\n\nFr\u00f6mer, R., Callaway, F., Griffiths, T., & Shenhav, A. (2022, October 22). Considering what we know and what we don't know: Expectations and confidence guide value integration in value-based decision-making. Retrieved from psyarxiv.com/2sqyt\n\nReviewer #1 (Recommendations for the authors):\n\nIn addition to the comments in the Public Review, Figure 3 could benefit from a number of improvements. The various line types in the top panel of A are not labeled or described. The range of values of the y-axis in the top panel seems rather small compared to the overall false alarm rates. I know the latter was calculated as a proportion over 2-second intervals. I don't know the bin width for Figure 3A, but the numbers being a factor of 10 smaller seems pretty far off based on my best guess of bin width. The scaling of the bottom panel of A clips off 2 of the 3 curves at earlier times. From the methods, I believe at least one of the curves should go all the way down to 1, so half the range is cut off in the current version. In panel B, the evidence distributions are not labeled and are a bit confusing. I can guess that they correspond to distributions with a strong signal, with a weak signal, and without a signal. However, the presumptive \"without signal\" black distribution appears shifted negative of zero, which I don't think is correct. The title of panel F says \"simulated Bound-adjustment\" while the text describes this as the \"simulated criterion-adjustment\" model. I presume this is a mistake in labeling the title, but as this is the most critical distinction for the paper's main conclusion, it's really important to get it right. To underscore that point, if this is in fact the simulation of the criterion-adjustment model, I'm surprised that the DV is at zero at the time of target onset. I realize that the urgency signal was removed from the simulations of this \"DV\", but there should still be an influence of pre-target noise. For the other models, the noise-driven DV averages to zero, but with the zero floor of the criterion-adjustment model, it shouldn't peg 0 exactly during this time. I suspect that the simulations did not include any influence of pre-target noise, and I would suggest that is something that should be included.\n\nReviewer #2 (Recommendations for the authors):\n\nThis paper was a pleasure to read. I found it very clearly written, with a clear rationale and thorough tests of the theoretical predictions. The methods are impressive but conveyed in a way as to not scare off readers.\n\nI would love to be helpful, but I can't see where the authors could use my advice.\n\nPerhaps out of curiosity: Instead of a sensory criterion as implemented by the authors, could the same pattern be achieved with precision-weighted evidence integration? (cf. Fr\u00f6mer, R., Callaway, F., Griffiths, T., & Shenhav, A. (2022, October 22). Considering what we know and what we don't know: Expectations and confidence guide value integration in value-based decision-making. Retrieved from psyarxiv.com/2sqyt).\n",
+      "created_at": "2025-12-04T03:07:34.344439Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T03:07:34.344439Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T03:07:34.344439Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "5905e4c4-62f7-489e-80f9-40b173f0c082",
+      "content_id": "08ac3c7d-ce69-41fc-8976-a2ee1438d6e0",
+      "claim_id": "C1",
+      "claim": "Decisions about noisy stimuli are widely understood to be made by accumulating evidence up to a decision bound that can be adjusted according to task demands.",
+      "claim_type": "EXPLICIT",
+      "source": "Decisions about noisy stimuli are widely understood to be made by accumulating evidence up to a decision bound that can be adjusted according to task demands.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to established literature in the field.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:07:34.344439Z"
+    },
+    {
+      "id": "dd2067df-1850-4075-92ac-2d58164279c6",
+      "content_id": "08ac3c7d-ce69-41fc-8976-a2ee1438d6e0",
+      "claim_id": "C4",
+      "claim": "Participants were faster in the mixed context than the fixed contexts.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, participants were faster in the mixed context than the fixed ones (main effect of difficulty context on RT in rANOVA, F(1, 13)=21.3, p<0.001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical analysis shows significant main effect of difficulty context on RT (F(1, 13)=21.3, p<0.001).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:07:34.344439Z"
+    },
+    {
+      "id": "c22a2c83-66be-469f-9546-db881a4a374e",
+      "content_id": "08ac3c7d-ce69-41fc-8976-a2ee1438d6e0",
+      "claim_id": "C8",
+      "claim": "A leaky accumulator model with a higher bound for the strong context was able to accurately reproduce behavioural data.",
+      "claim_type": "EXPLICIT",
+      "source": "Confirming this, a leaky accumulator model with a higher bound for the strong context (Figure 1D and Table 1 for all the fitted parameters) was able to accurately reproduce behavioural data, particularly the important context-dependent false alarm pattern (see bars of the false alarm plot in Figure 1B; G2=16).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Model fitting results show good fit to behavioral data (G2=16), with reference to Figure 1D and Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:07:34.344439Z"
+    },
+    {
+      "id": "289717a1-7c6a-4d8b-96c7-1efc90fe7a40",
+      "content_id": "08ac3c7d-ce69-41fc-8976-a2ee1438d6e0",
+      "claim_id": "C9",
+      "claim": "Beta oscillatory activity over motor cortical EEG sites gradually decreases in amplitude as participants prepare to make a movement with their contralateral limb.",
+      "claim_type": "EXPLICIT",
+      "source": "It has long been established that beta oscillatory activity over motor cortical EEG sites gradually decreases in amplitude as participants prepare to make a movement with their contralateral limb (Donoghue et al., 1998; Pfurtscheller et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to established literature (Donoghue et al., 1998; Pfurtscheller et al., 1996).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:07:34.344439Z"
+    },
+    {
+      "id": "f904f06e-e570-493e-b278-a7b68320e4db",
+      "content_id": "08ac3c7d-ce69-41fc-8976-a2ee1438d6e0",
+      "claim_id": "C10",
+      "claim": "Beta-indexed motor preparation signal builds at an evidence-dependent rate during decision formation and reaches a stereotyped threshold level at the time of motor execution.",
+      "claim_type": "EXPLICIT",
+      "source": "First, it builds at an evidence-dependent rate during decision formation and reaches a stereotyped threshold level at the time of motor execution (Kelly et al., 2021; O'Connell et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research (Kelly et al., 2021; O'Connell et al., 2012).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:07:34.344439Z"
+    },
+    {
+      "id": "6d02bc04-caa9-447e-be89-334c3d4a4fa9",
+      "content_id": "08ac3c7d-ce69-41fc-8976-a2ee1438d6e0",
+      "claim_id": "C11",
+      "claim": "Fluctuations in pre-target beta activity predict trial-to-trial behavioural variability in the way accumulator starting point variability does in models.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, fluctuations in pre-target beta activity have been shown to predict trial-to-trial behavioural variability in the way accumulator starting point variability does in models (de Lange et al., 2013; Donner et al., 2009; Gould et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research (de Lange et al., 2013; Donner et al., 2009; Gould et al., 2012).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:07:34.344439Z"
+    },
+    {
+      "id": "5f315a20-3646-472a-bd9e-24ef41fcdd2f",
+      "content_id": "08ac3c7d-ce69-41fc-8976-a2ee1438d6e0",
+      "claim_id": "C12",
+      "claim": "Pre-target beta is systematically shifted closer to its pre-response threshold level under conditions of speed emphasis.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, pre-target beta is systematically shifted closer to its pre-response threshold level under conditions of speed emphasis (Murphy et al., 2016; Steinemann et al., 2018; Kelly et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research (Murphy et al., 2016; Steinemann et al., 2018; Kelly et al., 2021).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:07:34.344439Z"
+    },
+    {
+      "id": "0488f29e-ac25-4413-b981-e07cd05bbe18",
+      "content_id": "08ac3c7d-ce69-41fc-8976-a2ee1438d6e0",
+      "claim_id": "C15",
+      "claim": "The beta amplitude prior to a false alarm closely matched the amplitude reached prior to a true target detection.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, we found that the beta amplitude prior to a false alarm closely matched to the amplitude reached prior a true target detection, verifying the assumption that this threshold level is applied consistently within each block (see Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Empirical observation from EEG data, with reference to Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:07:34.344439Z"
+    },
+    {
+      "id": "f58251a9-80e3-4bb6-97ab-811784340e9f",
+      "content_id": "08ac3c7d-ce69-41fc-8976-a2ee1438d6e0",
+      "claim_id": "C18",
+      "claim": "The CPP reflects pure cumulative evidence which feeds into motor-level decision variable alongside other evidence-independent signal components such as urgency.",
+      "claim_type": "EXPLICIT",
+      "source": "The current working hypothesis is thus that the CPP reflects pure cumulative evidence which feeds into motor-level decision variable alongside other evidence-independent signal components such as urgency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a working hypothesis based on previous research.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:07:34.344439Z"
+    },
+    {
+      "id": "21557174-f1ad-419f-bb10-2078da2a8b5d",
+      "content_id": "08ac3c7d-ce69-41fc-8976-a2ee1438d6e0",
+      "claim_id": "C19",
+      "claim": "Simulations of pure cumulative evidence build-up have been shown to match empirical CPP waveforms in their dynamics and pre-response amplitude patterns across conditions and RTs.",
+      "claim_type": "EXPLICIT",
+      "source": "In support of this scheme, simulations of pure cumulative evidence build-up have been shown to match empirical CPP waveforms in their dynamics and pre-response amplitude patterns across conditions and RTs (Afacan-Seref et al., 2018; Kelly et al., 2021; Twomey et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research (Afacan-Seref et al., 2018; Kelly et al., 2021; Twomey et al., 2015).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:07:34.344439Z"
+    },
+    {
+      "id": "52d72be7-4d8a-4c83-afd1-bdebdd9c6c17",
+      "content_id": "08ac3c7d-ce69-41fc-8976-a2ee1438d6e0",
+      "claim_id": "C21",
+      "claim": "Beta waveforms during the full ITIs showed that in addition to the static shift towards the motor execution threshold in the strong context, there was a strong tendency for beta to decrease over the course of the ITI in all contexts.",
+      "claim_type": "EXPLICIT",
+      "source": "Beta waveforms during the full ITIs showed that in addition to the static shift towards the motor execution threshold in the strong context, there was a strong tendency for beta to decrease over the course of the ITI in all contexts (Figure 3A, lower).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Empirical observation from EEG data, with reference to Figure 3A, lower.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:07:34.344439Z"
+    },
+    {
+      "id": "f5ba6121-af3b-4aa6-a0bd-f37619b91f0a",
+      "content_id": "08ac3c7d-ce69-41fc-8976-a2ee1438d6e0",
+      "claim_id": "C22",
+      "claim": "The increasing trend in beta mirrored a tendency for false alarm rate to increase during the ITI.",
+      "claim_type": "EXPLICIT",
+      "source": "This increasing trend in beta mirrored a tendency for false alarm rate to increase during the ITI (Figure 3A, upper).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Empirical observation from behavioral and EEG data, with reference to Figure 3A, upper.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:07:34.344439Z"
+    },
+    {
+      "id": "8d83b003-051e-4d86-9653-fd529baf9b59",
+      "content_id": "08ac3c7d-ce69-41fc-8976-a2ee1438d6e0",
+      "claim_id": "C23",
+      "claim": "Both neurally informed models mimic the behavioural patterns well.",
+      "claim_type": "EXPLICIT",
+      "source": "While both neurally informed models mimic the behavioural patterns well (see Figure 3B and C, goodness-of-fit in Table 1 and Figure 3\u2014figure supplement 2), the leak-adjustment model provides a poorer fit (G2=23) to the behavioural data than the criterion-adjustment model (G2=16; see Figure 3B, lower).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Model fitting results show goodness-of-fit metrics (G2=23 and G2=16), with reference to Figure 3B, C and Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:07:34.344439Z"
+    },
+    {
+      "id": "c0f42618-b8b7-45ea-92de-d737889a67c5",
+      "content_id": "08ac3c7d-ce69-41fc-8976-a2ee1438d6e0",
+      "claim_id": "C24",
+      "claim": "The leak-adjustment model provides a poorer fit (G2=23) to the behavioural data than the criterion-adjustment model (G2=16).",
+      "claim_type": "EXPLICIT",
+      "source": "While both neurally informed models mimic the behavioural patterns well (see Figure 3B and C, goodness-of-fit in Table 1 and Figure 3\u2014figure supplement 2), the leak-adjustment model provides a poorer fit (G2=23) to the behavioural data than the criterion-adjustment model (G2=16; see Figure 3B, lower).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Model fitting results show goodness-of-fit metrics (G2=23 vs G2=16), with reference to Figure 3B, lower.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:07:34.344439Z"
+    },
+    {
+      "id": "f1910e37-9c47-46f1-a058-656e739897ad",
+      "content_id": "08ac3c7d-ce69-41fc-8976-a2ee1438d6e0",
+      "claim_id": "C25",
+      "claim": "Despite being constrained to adopt the precise bound settings indexed by beta excursion, the criterion-adjustment model was able to attain the same goodness-of-fit to behaviour as the initial bound-adjustment model (G2=16).",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, despite being constrained to adopt the precise bound settings indexed by beta excursion, which oppose the adjustments predicted by the bound-adjustment model, the criterion-adjustment model was able to attain the same goodness-of-fit to behaviour as the initial bound-adjustment model (G2=16).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Model fitting results show equal goodness-of-fit metrics (G2=16 for both models).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:07:34.344439Z"
+    },
+    {
+      "id": "c77c677b-d0b2-41c5-a286-db57ecbf121f",
+      "content_id": "08ac3c7d-ce69-41fc-8976-a2ee1438d6e0",
+      "claim_id": "C26",
+      "claim": "The behavioural fits still favoured the criterion-adjustment model (G2+penalty = 24) over the leak-adjustment model (G2+penalty = 33) in the revised model fitting procedure.",
+      "claim_type": "EXPLICIT",
+      "source": "The behavioural fits still favoured the criterion-adjustment model (G2+penalty = 24) over the leak-adjustment model (G2+penalty = 33; see Table 2), and as expected, estimated even larger urgency offsets to compensate for the asymptotic evidence accumulation levels.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Model fitting results show goodness-of-fit metrics (G2+penalty = 24 vs 33), with reference to Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:07:34.344439Z"
+    },
+    {
+      "id": "ba1cd0da-3dee-485f-b7d2-eeee53f30805",
+      "content_id": "08ac3c7d-ce69-41fc-8976-a2ee1438d6e0",
+      "claim_id": "C27",
+      "claim": "The empirical CPP slope time course plateaued in the strong conditions indicating a linear build-up profile.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the empirical CPP slope time course plateaued in the strong conditions indicating a linear build-up profile (Figure 4A), whereas the simulated time course of the leaky accumulator models indeed showed a steep drop-off in temporal slope after an initial peak (Figure 4B/C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Empirical observation from EEG data analysis, with reference to Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:07:34.344439Z"
+    },
+    {
+      "id": "37a43b00-dde2-4a4d-b95d-a06d50df398a",
+      "content_id": "08ac3c7d-ce69-41fc-8976-a2ee1438d6e0",
+      "claim_id": "C28",
+      "claim": "The simulated time course of the leaky accumulator models showed a steep drop-off in temporal slope after an initial peak.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the empirical CPP slope time course plateaued in the strong conditions indicating a linear build-up profile (Figure 4A), whereas the simulated time course of the leaky accumulator models indeed showed a steep drop-off in temporal slope after an initial peak (Figure 4B/C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Model simulation results, with reference to Figure 4B/C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:07:34.344439Z"
+    },
+    {
+      "id": "49e4c134-c9ad-40e4-a9b5-7d3faeb3fc8d",
+      "content_id": "08ac3c7d-ce69-41fc-8976-a2ee1438d6e0",
+      "claim_id": "C29",
+      "claim": "The criterion-adjustment model with non-leaky accumulation showed a plateau in the slope similar to the empirical CPP.",
+      "claim_type": "EXPLICIT",
+      "source": "Meanwhile, the criterion-adjustment model with non-leaky accumulation showed a plateau in the slope similar to the empirical CPP (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Model simulation results, with reference to Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:07:34.344439Z"
+    },
+    {
+      "id": "d0bf2b12-3c3f-450e-94a2-27c169e78696",
+      "content_id": "08ac3c7d-ce69-41fc-8976-a2ee1438d6e0",
+      "claim_id": "C30",
+      "claim": "For the fixed strong condition the empirical slope dropped by 5% (bootstrap CI95% = [\u20135% 16%]).",
+      "claim_type": "EXPLICIT",
+      "source": "For the fixed strong condition the empirical slope dropped by 5% (bootstrap CI95% = [\u20135% 16%]), while the criterion-adjustment model predicted a drop of 6%, and the leak-adjustment model a drop of 27.5%, the latter falling outside the empirical bootstrapped 95% CI.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Quantitative analysis of CPP slope with bootstrap confidence intervals.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:07:34.344439Z"
+    },
+    {
+      "id": "61d09cbe-13e2-4082-8bf7-77c615b36138",
+      "content_id": "08ac3c7d-ce69-41fc-8976-a2ee1438d6e0",
+      "claim_id": "C31",
+      "claim": "The criterion-adjustment model predicted a drop of 6% in slope for the fixed strong condition.",
+      "claim_type": "EXPLICIT",
+      "source": "For the fixed strong condition the empirical slope dropped by 5% (bootstrap CI95% = [\u20135% 16%]), while the criterion-adjustment model predicted a drop of 6%, and the leak-adjustment model a drop of 27.5%, the latter falling outside the empirical bootstrapped 95% CI.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Model simulation results compared to empirical data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:07:34.344439Z"
+    },
+    {
+      "id": "e57cb7db-f31a-441a-8ae0-bd5e0633f757",
+      "content_id": "08ac3c7d-ce69-41fc-8976-a2ee1438d6e0",
+      "claim_id": "C32",
+      "claim": "The leak-adjustment model predicted a drop of 27.5% in slope for the fixed strong condition, falling outside the empirical bootstrapped 95% CI.",
+      "claim_type": "EXPLICIT",
+      "source": "For the fixed strong condition the empirical slope dropped by 5% (bootstrap CI95% = [\u20135% 16%]), while the criterion-adjustment model predicted a drop of 6%, and the leak-adjustment model a drop of 27.5%, the latter falling outside the empirical bootstrapped 95% CI.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Model simulation results compared to empirical data with statistical confidence intervals.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:07:34.344439Z"
+    },
+    {
+      "id": "0c6f96d6-dee7-499d-be3c-1e43236ad6b5",
+      "content_id": "08ac3c7d-ce69-41fc-8976-a2ee1438d6e0",
+      "claim_id": "C33",
+      "claim": "In the mixed strong condition the empirical slope dropped by 1.5% (bootstrap CI95% = [\u20139.5% 13%]).",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, in the mixed strong condition the empirical slope dropped by 1.5% (bootstrap CI95% = [\u20139.5% 13%]), compared to 3% predicted by the criterion-adjustment model and 17% predicted by the leak-adjustment model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Quantitative analysis of CPP slope with bootstrap confidence intervals.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:07:34.344439Z"
+    },
+    {
+      "id": "b2398f2f-ed3c-479c-8ea8-76485cf97fb0",
+      "content_id": "08ac3c7d-ce69-41fc-8976-a2ee1438d6e0",
+      "claim_id": "C34",
+      "claim": "The criterion-adjustment model predicted a drop of 3% in slope for the mixed strong condition.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, in the mixed strong condition the empirical slope dropped by 1.5% (bootstrap CI95% = [\u20139.5% 13%]), compared to 3% predicted by the criterion-adjustment model and 17% predicted by the leak-adjustment model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Model simulation results compared to empirical data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:07:34.344439Z"
+    },
+    {
+      "id": "9b22c7af-bfbe-49b0-8524-91d6b54873d1",
+      "content_id": "08ac3c7d-ce69-41fc-8976-a2ee1438d6e0",
+      "claim_id": "C35",
+      "claim": "The leak-adjustment model predicted a drop of 17% in slope for the mixed strong condition.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, in the mixed strong condition the empirical slope dropped by 1.5% (bootstrap CI95% = [\u20139.5% 13%]), compared to 3% predicted by the criterion-adjustment model and 17% predicted by the leak-adjustment model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Model simulation results compared to empirical data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:07:34.344439Z"
+    },
+    {
+      "id": "3051c651-8d98-45bd-8eb2-13fe6e8a3c1a",
+      "content_id": "08ac3c7d-ce69-41fc-8976-a2ee1438d6e0",
+      "claim_id": "C44",
+      "claim": "Fourteen participants were recruited at University College Dublin.",
+      "claim_type": "EXPLICIT",
+      "source": "Fourteen participants (aged 21\u201360 years; eight female) were recruited at University College Dublin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of participant recruitment details.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:07:34.344439Z"
+    },
+    {
+      "id": "d0e2d957-6bce-4e5f-958b-8a61390408f0",
+      "content_id": "08ac3c7d-ce69-41fc-8976-a2ee1438d6e0",
+      "claim_id": "C45",
+      "claim": "Two participants were left-handed.",
+      "claim_type": "EXPLICIT",
+      "source": "Two participants were left-handed, all participants had normal or corrected-to-normal visual acuity, and had no previously diagnosed psychiatric disorders, epilepsy or suffered from any head injury resulting in loss of consciousness.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of participant characteristics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:07:34.344439Z"
+    },
+    {
+      "id": "caa86e80-5764-4429-b083-1d9817b4e86e",
+      "content_id": "08ac3c7d-ce69-41fc-8976-a2ee1438d6e0",
+      "claim_id": "C46",
+      "claim": "All participants had normal or corrected-to-normal visual acuity.",
+      "claim_type": "EXPLICIT",
+      "source": "Two participants were left-handed, all participants had normal or corrected-to-normal visual acuity, and had no previously diagnosed psychiatric disorders, epilepsy or suffered from any head injury resulting in loss of consciousness.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of participant characteristics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:07:34.344439Z"
+    },
+    {
+      "id": "a0cbd77d-5508-4ef4-966c-c6070cd5ee14",
+      "content_id": "08ac3c7d-ce69-41fc-8976-a2ee1438d6e0",
+      "claim_id": "C47",
+      "claim": "The UCD Human Research Ethics Committee for Life Sciences approved all experimental procedures in accordance with the Declaration of Helsinki.",
+      "claim_type": "EXPLICIT",
+      "source": "The UCD Human Research Ethics Committee for Life Sciences approved all experimental procedures in accordance with the Declaration of Helsinki (LS-16-76-Craddock).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of ethical approval.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:07:34.344439Z"
+    },
+    {
+      "id": "5cfbf860-6f49-484d-b9e4-e74e068450b7",
+      "content_id": "08ac3c7d-ce69-41fc-8976-a2ee1438d6e0",
+      "claim_id": "C48",
+      "claim": "Participants performed the task in a dark room, while seated 57 cm from the monitor.",
+      "claim_type": "EXPLICIT",
+      "source": "Participants performed the task in a dark room, while seated 57 cm from the monitor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of experimental setup.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:07:34.344439Z"
+    },
+    {
+      "id": "8d4e7928-d075-44bc-af11-7cca35da8c1e",
+      "content_id": "08ac3c7d-ce69-41fc-8976-a2ee1438d6e0",
+      "claim_id": "C49",
+      "claim": "All stimuli were presented on a black background on a 21-inch CRT monitor operating at 60 Hz refresh rate (1280\u00d7960 pixels).",
+      "claim_type": "EXPLICIT",
+      "source": "All stimuli were presented on a black background on a 21-inch CRT monitor operating at 60 Hz refresh rate (1280\u00d7960 pixels).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of experimental setup.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:07:34.344439Z"
+    },
+    {
+      "id": "a9984fe1-5b21-45e7-b163-09c197fb60f9",
+      "content_id": "08ac3c7d-ce69-41fc-8976-a2ee1438d6e0",
+      "claim_id": "C50",
+      "claim": "Participants performed 12 blocks each consisting of 24 targets.",
+      "claim_type": "EXPLICIT",
+      "source": "Each participant performed 12 blocks each consisting of 24 targets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of experimental design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:07:34.344439Z"
+    },
+    {
+      "id": "ea2019ae-e2d8-42b6-9435-ac3046075a1f",
+      "content_id": "08ac3c7d-ce69-41fc-8976-a2ee1438d6e0",
+      "claim_id": "C51",
+      "claim": "Three blocks of each of the 'fixed' contexts ('strong' or 'weak') were first run in an order counterbalanced across participants.",
+      "claim_type": "EXPLICIT",
+      "source": "Three blocks of each of the 'fixed' (single-coherence targets) contexts ('strong' or 'weak') were first run in an order counterbalanced across participants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of experimental design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:07:34.344439Z"
+    },
+    {
+      "id": "c1d153b0-73cb-48aa-a4b3-02ae9c10d5b6",
+      "content_id": "08ac3c7d-ce69-41fc-8976-a2ee1438d6e0",
+      "claim_id": "C52",
+      "claim": "All participants performed six 'mixed' blocks at the end of the experimental session.",
+      "claim_type": "EXPLICIT",
+      "source": "The 'mixed' target coherence context was originally designed as a control condition to verify bound invariance across target strengths within a single context, and thus all participants performed six 'mixed' blocks at the end of the experimental session.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of experimental design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:07:34.344439Z"
+    },
+    {
+      "id": "72a603c9-f601-49ea-a6c2-3d6d9db05c35",
+      "content_id": "08ac3c7d-ce69-41fc-8976-a2ee1438d6e0",
+      "claim_id": "C53",
+      "claim": "Continuous EEG was recorded from 128 scalp electrodes using a BioSemi system with a sample rate of 512 Hz.",
+      "claim_type": "EXPLICIT",
+      "source": "Continuous EEG was recorded from 128 scalp electrodes using a BioSemi system with a sample rate of 512 Hz.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of EEG recording parameters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:07:34.344439Z"
+    },
+    {
+      "id": "304ee7c5-0891-4dbb-a092-00efa30e1dc6",
+      "content_id": "08ac3c7d-ce69-41fc-8976-a2ee1438d6e0",
+      "claim_id": "C54",
+      "claim": "One participant was excluded due to excessive trial rejection (>70% in each condition) due to a mix of blinking, eye movements, and EEG artefacts.",
+      "claim_type": "EXPLICIT",
+      "source": "One participant was excluded due to excessive trial rejection (>70% in each condition) due to a mix of blinking, eye movements, and EEG artefacts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of data exclusion criteria and results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:07:34.344439Z"
+    },
+    {
+      "id": "715dda82-d8a6-472b-8e63-ab0d8870b27f",
+      "content_id": "08ac3c7d-ce69-41fc-8976-a2ee1438d6e0",
+      "claim_id": "C55",
+      "claim": "Motor preparation was measured via effector-selective spectral amplitude decreases in the beta (15\u201330 Hz) frequency range.",
+      "claim_type": "EXPLICIT",
+      "source": "First, motor preparation was measured via effector-selective spectral amplitude decreases in the beta (15\u201330 Hz) frequency range.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of analysis method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:07:34.344439Z"
+    },
+    {
+      "id": "200edc55-c058-46c4-b056-fdb2f41bf6f5",
+      "content_id": "08ac3c7d-ce69-41fc-8976-a2ee1438d6e0",
+      "claim_id": "C56",
+      "claim": "The CPP is a motor-independent signal exhibiting evidence accumulation dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, we analysed the CPP, a motor-independent signal exhibiting evidence accumulation dynamics (O'Connell et al., 2012; Kelly and O'Connell, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research (O'Connell et al., 2012; Kelly and O'Connell, 2013).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:07:34.344439Z"
+    },
+    {
+      "id": "bd98c4b7-c9bc-4ddd-8f6b-b3a35ce24df1",
+      "content_id": "08ac3c7d-ce69-41fc-8976-a2ee1438d6e0",
+      "claim_id": "C57",
+      "claim": "The sensory criterion adjustment mechanism presents an alternative means of policy setting with respect to the strategic adjustment of the action-triggering bound.",
+      "claim_type": "EXPLICIT",
+      "source": "The sensory criterion adjustment mechanism presents an interesting alternative means of policy setting with respect to the strategic adjustment of the action-triggering bound suggested by the dominant computational models and empirical research on the speed-accuracy trade-off (Bogacz et al., 2010; Palmer et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion based on the study's findings, with reference to previous research (Bogacz et al., 2010; Palmer et al., 2005).",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:07:34.344439Z"
+    },
+    {
+      "id": "81ce59ac-4126-40a8-9a55-407ac8f731d3",
+      "content_id": "08ac3c7d-ce69-41fc-8976-a2ee1438d6e0",
+      "claim_id": "C58",
+      "claim": "When adjusting for expected difficulty level during continuous detection, people regulate the transfer of sensory evidence into the accumulator process rather than changing the decision bound.",
+      "claim_type": "EXPLICIT",
+      "source": "In conclusion, while previous studies of decision policy adjustments for other perceptual task manipulations have found that they are enacted by changing the decision bound, we here show that, when adjusting for expected difficulty level during continuous detection, people instead regulate the transfer of sensory evidence into the accumulator process.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as the main conclusion of the study based on the empirical findings and model comparisons.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:07:34.344439Z"
+    },
+    {
+      "id": "7c84fe41-f6c5-4c99-9a19-3743202b479a",
+      "content_id": "08ac3c7d-ce69-41fc-8976-a2ee1438d6e0",
+      "claim_id": "C59",
+      "claim": "The brain harbours a broader range of mechanisms to regulate decision policy than it had previously seemed.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that the brain harbours a broader range of mechanisms to regulate decision policy than it had previously seemed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an inference from the study's findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:07:34.344439Z"
+    },
+    {
+      "id": "c151f153-65e3-417c-bffd-e47995c8707f",
+      "content_id": "08ac3c7d-ce69-41fc-8976-a2ee1438d6e0",
+      "claim_id": "C60",
+      "claim": "In continuous detection where target onsets are unpredictable, the decision process must operate continuously.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in continuous detection where target onsets are unpredictable, the decision process must operate continuously, offering other parameters that could alternatively be adjusted.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a logical inference about the nature of continuous detection tasks.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:07:34.344439Z"
+    },
+    {
+      "id": "70471ef2-8ba8-4565-a5b1-ca0d2ee9c460",
+      "content_id": "08ac3c7d-ce69-41fc-8976-a2ee1438d6e0",
+      "claim_id": "C61",
+      "claim": "If accumulation proceeds continuously it is unlikely to be perfect because this generates excessive false alarms.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, if accumulation proceeds continuously it is unlikely to be perfect because this generates excessive false alarms (Ossmy et al., 2013) and would instead entail some form of information loss such as through non-linear or leaky accumulation, which has been shown to form a critical adjustable component governing decision-making policies in volatile environments (for review, see Gold and Stocker, 2017; Glaze et al., 2015; Harun et al., 2020; Murphy et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research (Ossmy et al., 2013; Gold and Stocker, 2017; Glaze et al., 2015; Harun et al., 2020; Murphy et al., 2021).",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:07:34.344439Z"
+    },
+    {
+      "id": "bab98ada-4410-4df4-8ee5-9726002ed433",
+      "content_id": "08ac3c7d-ce69-41fc-8976-a2ee1438d6e0",
+      "claim_id": "C62",
+      "claim": "Leaky accumulation has been shown to form a critical adjustable component governing decision-making policies in volatile environments.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, if accumulation proceeds continuously it is unlikely to be perfect because this generates excessive false alarms (Ossmy et al., 2013) and would instead entail some form of information loss such as through non-linear or leaky accumulation, which has been shown to form a critical adjustable component governing decision-making policies in volatile environments (for review, see Gold and Stocker, 2017; Glaze et al., 2015; Harun et al., 2020; Murphy et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research (Gold and Stocker, 2017; Glaze et al., 2015; Harun et al., 2020; Murphy et al., 2021).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:07:34.344439Z"
+    },
+    {
+      "id": "1c3108fd-9b32-4c4c-8c97-8d831321aaa4",
+      "content_id": "08ac3c7d-ce69-41fc-8976-a2ee1438d6e0",
+      "claim_id": "C63",
+      "claim": "Motor-selective cortical networks implement an increase of baseline activity prior to evidence onset to emphasize speed by effectively decreasing the criterion amount of cumulative evidence needed to reach an action-triggering threshold.",
+      "claim_type": "EXPLICIT",
+      "source": "In these studies, motor-selective cortical networks have been shown to implement an increase of baseline activity prior to evidence onset, emphasising speed by effectively decreasing the criterion amount of cumulative evidence needed to reach an action-triggering threshold (Forstmann et al., 2008; Forstmann et al., 2010; Ivanoff et al., 2008; van Veen et al., 2008; Wenzlaff et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research (Forstmann et al., 2008; Forstmann et al., 2010; Ivanoff et al., 2008; van Veen et al., 2008; Wenzlaff et al., 2011).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:07:34.344439Z"
+    },
+    {
+      "id": "49ea4011-59a4-4254-b387-51db0f8373fa",
+      "content_id": "08ac3c7d-ce69-41fc-8976-a2ee1438d6e0",
+      "claim_id": "C64",
+      "claim": "Recent behavioural and neurophysiological findings have established the operation of a time-dependent 'urgency' signal in motor circuits.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, recent behavioural and neurophysiological findings have established the operation of a time-dependent 'urgency' signal in these motor circuits, an evidence-independent build-up component that drives the decision process closer to a fixed decision threshold, gradually decreasing the cumulative evidence required to respond (Churchland et al., 2008; Hanks et al., 2014; Murphy et al., 2016; Thura and Cisek, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research (Churchland et al., 2008; Hanks et al., 2014; Murphy et al., 2016; Thura and Cisek, 2016).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:07:34.344439Z"
+    },
+    {
+      "id": "17e31de6-abf8-4201-ae90-c87afbd544a5",
+      "content_id": "08ac3c7d-ce69-41fc-8976-a2ee1438d6e0",
+      "claim_id": "C65",
+      "claim": "An urgency signal is an evidence-independent build-up component that drives the decision process closer to a fixed decision threshold, gradually decreasing the cumulative evidence required to respond.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, recent behavioural and neurophysiological findings have established the operation of a time-dependent 'urgency' signal in these motor circuits, an evidence-independent build-up component that drives the decision process closer to a fixed decision threshold, gradually decreasing the cumulative evidence required to respond (Churchland et al., 2008; Hanks et al., 2014; Murphy et al., 2016; Thura and Cisek, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research (Churchland et al., 2008; Hanks et al., 2014; Murphy et al., 2016; Thura and Cisek, 2016).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:07:34.344439Z"
+    },
+    {
+      "id": "e3dcf67e-2976-4f9d-9331-18dbde31581a",
+      "content_id": "08ac3c7d-ce69-41fc-8976-a2ee1438d6e0",
+      "claim_id": "C66",
+      "claim": "In continuous detection contexts containing weaker targets, contexts call for a more liberal decision policy.",
+      "claim_type": "EXPLICIT",
+      "source": "In such contexts, expected target strength is a key factor in setting a decision policy to optimise performance \u2013 contexts with weaker targets call for a more liberal decision policy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a logical inference about optimal decision policy.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:07:34.344439Z"
+    },
+    {
+      "id": "aed7fb70-1b78-4149-9cf8-8a67f1b66e67",
+      "content_id": "08ac3c7d-ce69-41fc-8976-a2ee1438d6e0",
+      "claim_id": "C67",
+      "claim": "An overly liberal policy could result in an excessive amount of false alarms driven solely by noise in between targets.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, an overly liberal policy could result in an excessive amount of false alarms driven solely by noise in between targets, while an overly conservative policy will miss too many targets (Gold and Stocker, 2017; Ossmy et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a logical inference with support from citations (Gold and Stocker, 2017; Ossmy et al., 2013).",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:07:34.344439Z"
+    },
+    {
+      "id": "af2beffa-bbd4-4237-b054-32f3341e9721",
+      "content_id": "08ac3c7d-ce69-41fc-8976-a2ee1438d6e0",
+      "claim_id": "C68",
+      "claim": "An overly conservative policy will miss too many targets.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, an overly liberal policy could result in an excessive amount of false alarms driven solely by noise in between targets, while an overly conservative policy will miss too many targets (Gold and Stocker, 2017; Ossmy et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a logical inference with support from citations (Gold and Stocker, 2017; Ossmy et al., 2013).",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:07:34.344439Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "680ecd57-ff27-4954-952a-3dc7d6c5b62d",
+      "content_id": "08ac3c7d-ce69-41fc-8976-a2ee1438d6e0",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The study recruited 14 participants (N=13 after exclusion) who performed a continuous random dot motion detection task with three difficulty contexts (weak, strong, mixed) while EEG was recorded from 128 electrodes at 512 Hz.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C54 provide comprehensive methodological details about participant recruitment, experimental setup, and data acquisition. The methods are clearly described with appropriate ethical approval (C47), adequate sample size for EEG studies, and justified exclusion criteria (C54). The experimental design with counterbalancing (C51) and control conditions (C52) is appropriate.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:07:34.344439Z"
+    },
+    {
+      "id": "f1b29785-f879-4fba-ad79-c5902ad0a129",
+      "content_id": "08ac3c7d-ce69-41fc-8976-a2ee1438d6e0",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Participants responded faster in the mixed context compared to fixed contexts, with a significant main effect of difficulty context on reaction time (F(1,13)=21.3, p<0.001).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C4 reports a statistically significant behavioral finding with appropriate statistical test (rANOVA) and clear p-value. The effect is well-powered given the large F-statistic and small p-value, indicating a robust context effect on reaction time.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:07:34.344439Z"
+    },
+    {
+      "id": "7ab80a02-2cc7-4bf2-8b3d-76ed975912da",
+      "content_id": "08ac3c7d-ce69-41fc-8976-a2ee1438d6e0",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "A leaky accumulator model with adjustable decision bounds across contexts (G\u00b2=16) successfully reproduced behavioral data including context-dependent false alarm patterns, but was matched in fit by a criterion-adjustment model (G\u00b2=16) despite the latter being constrained by neural data showing opposite bound adjustments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8, C23-C25 demonstrate that multiple computational mechanisms can explain the same behavioral patterns. The goodness-of-fit metrics (G\u00b2=16 for both bound-adjustment and criterion-adjustment models) are clearly reported with model comparisons showing the criterion-adjustment model achieves equal behavioral fit despite neural constraints. However, the leak-adjustment model shows poorer fit (G\u00b2=23), providing discriminative evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:07:34.344439Z"
+    },
+    {
+      "id": "872cd3a3-b043-4219-9e53-e3ad71459209",
+      "content_id": "08ac3c7d-ce69-41fc-8976-a2ee1438d6e0",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Beta oscillatory activity (15-30 Hz) over motor cortex serves as a neural signature of motor preparation that builds at evidence-dependent rates, reaches stereotyped threshold levels at response, predicts trial-to-trial behavioral variability, and shows consistent amplitude prior to both hits and false alarms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C12, C15, and C55 establish beta activity as a valid neural marker of decision-bound dynamics through convergent evidence from prior literature (C9-C12) and current empirical observations (C15, C55). The consistency of beta amplitude across hits and false alarms (C15) particularly validates the threshold interpretation. These linking propositions are critical for the neurally-informed modeling approach.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:07:34.344439Z"
+    },
+    {
+      "id": "a41dedee-00ab-4831-b59d-3ba57ecc9ff9",
+      "content_id": "08ac3c7d-ce69-41fc-8976-a2ee1438d6e0",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Beta amplitude decreased (motor preparation increased) progressively throughout the inter-target interval in all contexts, mirroring the temporal increase in false alarm rates during the ITI.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C22 report converging behavioral and neural evidence for dynamic urgency signals. The parallel between beta dynamics and false alarm rate increases provides strong support for the urgency interpretation, as both measures independently indicate increasing motor preparation over time. This is a key empirical foundation for constraining the computational models.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:07:34.344439Z"
+    },
+    {
+      "id": "9dd2ea85-9dd1-45da-8e74-fca7c40691f9",
+      "content_id": "08ac3c7d-ce69-41fc-8976-a2ee1438d6e0",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "In a revised model fitting procedure that simultaneously fit behavior and beta excursion, the criterion-adjustment model (G\u00b2+penalty=24) still outperformed the leak-adjustment model (G\u00b2+penalty=33).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C26 reports results from a more stringent model comparison that addresses potential confounds in the original fitting procedure. The criterion-adjustment model maintains superior fit even when both behavioral and neural constraints are applied simultaneously, strengthening the case for this mechanism. The penalty term appropriately accounts for model complexity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:07:34.344439Z"
+    },
+    {
+      "id": "7f498328-55fd-4bc3-8e1a-a7ae2d48f3f6",
+      "content_id": "08ac3c7d-ce69-41fc-8976-a2ee1438d6e0",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The empirical CPP slope profile showed a plateau (5% drop in fixed strong, 1.5% drop in mixed strong), matching predictions of the criterion-adjustment model (6% and 3% drops) but not the leak-adjustment model (27.5% and 17% drops, with the former falling outside empirical 95% CI).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C35 provide critical model validation through CPP slope analysis. The quantitative comparison with bootstrap confidence intervals (C30, C33) demonstrates that the leak-adjustment model's predictions fall outside empirical bounds (C32), while the criterion-adjustment model predictions fall within confidence intervals (C31, C34). This constitutes strong discriminative evidence between models based on independent neural data not used in model fitting.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:07:34.344439Z"
+    },
+    {
+      "id": "d97aac63-e1dd-480d-b895-722f5893b0fe",
+      "content_id": "08ac3c7d-ce69-41fc-8976-a2ee1438d6e0",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The centro-parietal positivity (CPP) reflects pure cumulative evidence that feeds into the motor-level decision variable alongside urgency, as supported by previous simulations matching empirical CPP dynamics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C19 and C56 establish the CPP as a motor-independent signature of evidence accumulation based on substantial prior literature. While C18 explicitly notes this is a \"working hypothesis,\" the convergent evidence from multiple prior studies (C19) and the current data provide strong support for using CPP to validate model predictions about evidence accumulation dynamics.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:07:34.344439Z"
+    },
+    {
+      "id": "7ccf2d52-d5fc-4c60-90e8-c4efda5d87c0",
+      "content_id": "08ac3c7d-ce69-41fc-8976-a2ee1438d6e0",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "When adjusting for expected difficulty during continuous detection, people regulate the transfer of sensory evidence into the accumulator via sensory criterion adjustment rather than changing the decision bound, suggesting the brain employs a broader range of decision policy mechanisms than previously recognized.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C59 present the main conclusion of the study, which is well-supported by the convergent evidence from behavioral modeling (equal fit to bound-adjustment), neural constraints (beta excursion showing opposite pattern), and independent validation (CPP slope analysis discriminating models). The conclusion appropriately acknowledges this as an alternative mechanism rather than claiming exclusivity, and is justified by the multi-level evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:07:34.344439Z"
+    },
+    {
+      "id": "e53afdee-7ea6-4e5a-90b6-4f1eb3d207ba",
+      "content_id": "08ac3c7d-ce69-41fc-8976-a2ee1438d6e0",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The study builds on established theoretical frameworks of evidence accumulation and decision bounds, while noting that continuous detection tasks may require different adjustment mechanisms than discrete choice tasks due to the need for continuous operation and management of false alarms from noise.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1 and C60-C68 establish the theoretical context and rationale for the study. These claims appropriately cite established literature (C1, C61-C65) and make logical inferences about task demands (C60, C66-C68). The reasoning that continuous detection may require different mechanisms is well-justified and provides clear motivation for testing alternative models beyond bound adjustment.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:07:34.344439Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "3051c651-8d98-45bd-8eb2-13fe6e8a3c1a",
+      "result_id": "680ecd57-ff27-4954-952a-3dc7d6c5b62d"
+    },
+    {
+      "claim_id": "d0e2d957-6bce-4e5f-958b-8a61390408f0",
+      "result_id": "680ecd57-ff27-4954-952a-3dc7d6c5b62d"
+    },
+    {
+      "claim_id": "caa86e80-5764-4429-b083-1d9817b4e86e",
+      "result_id": "680ecd57-ff27-4954-952a-3dc7d6c5b62d"
+    },
+    {
+      "claim_id": "a0cbd77d-5508-4ef4-966c-c6070cd5ee14",
+      "result_id": "680ecd57-ff27-4954-952a-3dc7d6c5b62d"
+    },
+    {
+      "claim_id": "5cfbf860-6f49-484d-b9e4-e74e068450b7",
+      "result_id": "680ecd57-ff27-4954-952a-3dc7d6c5b62d"
+    },
+    {
+      "claim_id": "8d4e7928-d075-44bc-af11-7cca35da8c1e",
+      "result_id": "680ecd57-ff27-4954-952a-3dc7d6c5b62d"
+    },
+    {
+      "claim_id": "a9984fe1-5b21-45e7-b163-09c197fb60f9",
+      "result_id": "680ecd57-ff27-4954-952a-3dc7d6c5b62d"
+    },
+    {
+      "claim_id": "ea2019ae-e2d8-42b6-9435-ac3046075a1f",
+      "result_id": "680ecd57-ff27-4954-952a-3dc7d6c5b62d"
+    },
+    {
+      "claim_id": "c1d153b0-73cb-48aa-a4b3-02ae9c10d5b6",
+      "result_id": "680ecd57-ff27-4954-952a-3dc7d6c5b62d"
+    },
+    {
+      "claim_id": "72a603c9-f601-49ea-a6c2-3d6d9db05c35",
+      "result_id": "680ecd57-ff27-4954-952a-3dc7d6c5b62d"
+    },
+    {
+      "claim_id": "304ee7c5-0891-4dbb-a092-00efa30e1dc6",
+      "result_id": "680ecd57-ff27-4954-952a-3dc7d6c5b62d"
+    },
+    {
+      "claim_id": "dd2067df-1850-4075-92ac-2d58164279c6",
+      "result_id": "f1b29785-f879-4fba-ad79-c5902ad0a129"
+    },
+    {
+      "claim_id": "c22a2c83-66be-469f-9546-db881a4a374e",
+      "result_id": "7ab80a02-2cc7-4bf2-8b3d-76ed975912da"
+    },
+    {
+      "claim_id": "8d83b003-051e-4d86-9653-fd529baf9b59",
+      "result_id": "7ab80a02-2cc7-4bf2-8b3d-76ed975912da"
+    },
+    {
+      "claim_id": "c0f42618-b8b7-45ea-92de-d737889a67c5",
+      "result_id": "7ab80a02-2cc7-4bf2-8b3d-76ed975912da"
+    },
+    {
+      "claim_id": "f1910e37-9c47-46f1-a058-656e739897ad",
+      "result_id": "7ab80a02-2cc7-4bf2-8b3d-76ed975912da"
+    },
+    {
+      "claim_id": "289717a1-7c6a-4d8b-96c7-1efc90fe7a40",
+      "result_id": "872cd3a3-b043-4219-9e53-e3ad71459209"
+    },
+    {
+      "claim_id": "f904f06e-e570-493e-b278-a7b68320e4db",
+      "result_id": "872cd3a3-b043-4219-9e53-e3ad71459209"
+    },
+    {
+      "claim_id": "6d02bc04-caa9-447e-be89-334c3d4a4fa9",
+      "result_id": "872cd3a3-b043-4219-9e53-e3ad71459209"
+    },
+    {
+      "claim_id": "5f315a20-3646-472a-bd9e-24ef41fcdd2f",
+      "result_id": "872cd3a3-b043-4219-9e53-e3ad71459209"
+    },
+    {
+      "claim_id": "0488f29e-ac25-4413-b981-e07cd05bbe18",
+      "result_id": "872cd3a3-b043-4219-9e53-e3ad71459209"
+    },
+    {
+      "claim_id": "715dda82-d8a6-472b-8e63-ab0d8870b27f",
+      "result_id": "872cd3a3-b043-4219-9e53-e3ad71459209"
+    },
+    {
+      "claim_id": "52d72be7-4d8a-4c83-afd1-bdebdd9c6c17",
+      "result_id": "a41dedee-00ab-4831-b59d-3ba57ecc9ff9"
+    },
+    {
+      "claim_id": "f5ba6121-af3b-4aa6-a0bd-f37619b91f0a",
+      "result_id": "a41dedee-00ab-4831-b59d-3ba57ecc9ff9"
+    },
+    {
+      "claim_id": "c77c677b-d0b2-41c5-a286-db57ecbf121f",
+      "result_id": "9dd2ea85-9dd1-45da-8e74-fca7c40691f9"
+    },
+    {
+      "claim_id": "ba1cd0da-3dee-485f-b7d2-eeee53f30805",
+      "result_id": "7f498328-55fd-4bc3-8e1a-a7ae2d48f3f6"
+    },
+    {
+      "claim_id": "37a43b00-dde2-4a4d-b95d-a06d50df398a",
+      "result_id": "7f498328-55fd-4bc3-8e1a-a7ae2d48f3f6"
+    },
+    {
+      "claim_id": "49e4c134-c9ad-40e4-a9b5-7d3faeb3fc8d",
+      "result_id": "7f498328-55fd-4bc3-8e1a-a7ae2d48f3f6"
+    },
+    {
+      "claim_id": "d0bf2b12-3c3f-450e-94a2-27c169e78696",
+      "result_id": "7f498328-55fd-4bc3-8e1a-a7ae2d48f3f6"
+    },
+    {
+      "claim_id": "61d09cbe-13e2-4082-8bf7-77c615b36138",
+      "result_id": "7f498328-55fd-4bc3-8e1a-a7ae2d48f3f6"
+    },
+    {
+      "claim_id": "e57cb7db-f31a-441a-8ae0-bd5e0633f757",
+      "result_id": "7f498328-55fd-4bc3-8e1a-a7ae2d48f3f6"
+    },
+    {
+      "claim_id": "0c6f96d6-dee7-499d-be3c-1e43236ad6b5",
+      "result_id": "7f498328-55fd-4bc3-8e1a-a7ae2d48f3f6"
+    },
+    {
+      "claim_id": "b2398f2f-ed3c-479c-8ea8-76485cf97fb0",
+      "result_id": "7f498328-55fd-4bc3-8e1a-a7ae2d48f3f6"
+    },
+    {
+      "claim_id": "9b22c7af-bfbe-49b0-8524-91d6b54873d1",
+      "result_id": "7f498328-55fd-4bc3-8e1a-a7ae2d48f3f6"
+    },
+    {
+      "claim_id": "f58251a9-80e3-4bb6-97ab-811784340e9f",
+      "result_id": "d97aac63-e1dd-480d-b895-722f5893b0fe"
+    },
+    {
+      "claim_id": "21557174-f1ad-419f-bb10-2078da2a8b5d",
+      "result_id": "d97aac63-e1dd-480d-b895-722f5893b0fe"
+    },
+    {
+      "claim_id": "200edc55-c058-46c4-b056-fdb2f41bf6f5",
+      "result_id": "d97aac63-e1dd-480d-b895-722f5893b0fe"
+    },
+    {
+      "claim_id": "81ce59ac-4126-40a8-9a55-407ac8f731d3",
+      "result_id": "7ccf2d52-d5fc-4c60-90e8-c4efda5d87c0"
+    },
+    {
+      "claim_id": "7c84fe41-f6c5-4c99-9a19-3743202b479a",
+      "result_id": "7ccf2d52-d5fc-4c60-90e8-c4efda5d87c0"
+    },
+    {
+      "claim_id": "bd98c4b7-c9bc-4ddd-8f6b-b3a35ce24df1",
+      "result_id": "7ccf2d52-d5fc-4c60-90e8-c4efda5d87c0"
+    },
+    {
+      "claim_id": "5905e4c4-62f7-489e-80f9-40b173f0c082",
+      "result_id": "e53afdee-7ea6-4e5a-90b6-4f1eb3d207ba"
+    },
+    {
+      "claim_id": "c151f153-65e3-417c-bffd-e47995c8707f",
+      "result_id": "e53afdee-7ea6-4e5a-90b6-4f1eb3d207ba"
+    },
+    {
+      "claim_id": "70471ef2-8ba8-4565-a5b1-ca0d2ee9c460",
+      "result_id": "e53afdee-7ea6-4e5a-90b6-4f1eb3d207ba"
+    },
+    {
+      "claim_id": "bab98ada-4410-4df4-8ee5-9726002ed433",
+      "result_id": "e53afdee-7ea6-4e5a-90b6-4f1eb3d207ba"
+    },
+    {
+      "claim_id": "1c3108fd-9b32-4c4c-8c97-8d831321aaa4",
+      "result_id": "e53afdee-7ea6-4e5a-90b6-4f1eb3d207ba"
+    },
+    {
+      "claim_id": "49ea4011-59a4-4254-b387-51db0f8373fa",
+      "result_id": "e53afdee-7ea6-4e5a-90b6-4f1eb3d207ba"
+    },
+    {
+      "claim_id": "17e31de6-abf8-4201-ae90-c87afbd544a5",
+      "result_id": "e53afdee-7ea6-4e5a-90b6-4f1eb3d207ba"
+    },
+    {
+      "claim_id": "e3dcf67e-2976-4f9d-9331-18dbde31581a",
+      "result_id": "e53afdee-7ea6-4e5a-90b6-4f1eb3d207ba"
+    },
+    {
+      "claim_id": "aed7fb70-1b78-4149-9cf8-8a67f1b66e67",
+      "result_id": "e53afdee-7ea6-4e5a-90b6-4f1eb3d207ba"
+    },
+    {
+      "claim_id": "af2beffa-bbd4-4237-b054-32f3341e9721",
+      "result_id": "e53afdee-7ea6-4e5a-90b6-4f1eb3d207ba"
+    }
+  ],
+  "comparisons": []
+}

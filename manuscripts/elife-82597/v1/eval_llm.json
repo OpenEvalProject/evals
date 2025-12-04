@@ -1,0 +1,576 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C28",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C36"
+    ],
+    "result": "Hypoxia decreased glycolysis in lung fibroblasts despite HIF-1\u03b1 activation and increased glycolytic enzyme expression. Specifically, hypoxia decreased cell proliferation rates, stabilized HIF-1\u03b1, upregulated GLUT1 and LDHA, modestly increased glucose uptake, but decreased lactate efflux.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C28-C33, and C36 collectively demonstrate that hypoxia uncouples HIF-1\u03b1 target gene expression from glycolytic flux. The data show robust HIF-1\u03b1 stabilization and glycolytic enzyme upregulation (C30) alongside decreased lactate efflux (C32-C33), supported by multiple experimental measurements including immunoblots, RT-qPCR, and extracellular flux assays (Figure 1). This unexpected finding is well-documented across multiple time points and cell types.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "PHD inhibition with BAY in normoxia increased glycolysis and lactate efflux. BAY treatment decreased cell growth rate, activated the HIF-1\u03b1 transcriptional program, and markedly increased both glucose uptake and lactate efflux, contrasting with the effects of hypoxia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4 and C37-C40 are well-supported by experimental data in Figure 2, showing that BAY treatment in normoxia produces the expected glycolytic response to HIF-1\u03b1 activation. The contrast between BAY treatment and hypoxia (C40) is a key finding demonstrating that HIF-1\u03b1 stabilization alone is insufficient to explain the metabolic response to hypoxia.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Hypoxia blocks the glycolysis-increasing effect of PHD inhibition. When BAY treatment was combined with 0.5% oxygen, the increase in lactate efflux observed with BAY in normoxia was completely abolished, demonstrating that hypoxia antagonizes HIF-1\u03b1-mediated glycolytic activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5 and C90-C94 are strongly supported by experimental data in Figure 8, showing that hypoxia overrides the metabolic effects of pharmacologic HIF-1\u03b1 stabilization. This is a critical finding that demonstrates hypoxia-specific regulatory mechanisms beyond HIF-1\u03b1 signaling. The experimental design appropriately tests the interaction between hypoxia and PHD inhibition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C7",
+      "C126",
+      "C127",
+      "C131",
+      "C132",
+      "C133",
+      "C140",
+      "C146"
+    ],
+    "result": "MYC plays a critical role in modulating HIF-1\u03b1 responses to hypoxia. Transcriptomic analysis revealed enrichment of MYC target genes in hypoxia but not BAY treatment. MYC protein levels increased in hypoxia-treated cells but decreased with BAY treatment alone. The data suggest that hypoxia-induced MYC expression uncouples the HIF transcriptional program from glycolytic flux.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C126-C127, C131-C133, C140, and C146 are supported by multiple lines of evidence including RNA-seq analysis (Figure 10), immunoblot data (Figure 11A-B), and functional experiments. The transcriptomic enrichment analysis clearly identifies MYC-related gene sets as differentially regulated between hypoxia and BAY treatment, and protein measurements confirm increased MYC in hypoxia. This represents a major mechanistic insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C8",
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "MYC knockdown in hypoxia increased glycolysis and was essential for cell proliferation. MYC-deficient cells proliferated more slowly in normoxia, and MYC was essential for sustaining cell proliferation in hypoxia. Consistent with the hypothesis, MYC knockdown increased lactate efflux in hypoxia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C134-C136 are well-supported by siRNA knockdown experiments shown in Figure 11D-F. The data demonstrate that reducing MYC levels in hypoxia increases glycolytic flux (measured as lactate efflux), directly supporting the model that MYC antagonizes HIF-driven glycolysis. The proliferation data (C134-C135) provide important context about MYC's role in hypoxic cell survival.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C9",
+      "C137",
+      "C138",
+      "C139"
+    ],
+    "result": "MYC overexpression in normoxia decreased glycolysis stimulated by PHD inhibition. MYC overexpression potentiated BAY-stimulated increases in HIF-1\u03b1 stabilization and target gene expression but attenuated BAY-stimulated lactate efflux in normoxia, despite not significantly affecting cell growth rate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C137-C139 are supported by adenoviral overexpression experiments in Figure 11G-I. The finding that MYC overexpression increases HIF-1\u03b1 and target genes (C138) while decreasing glycolytic flux (C139) provides strong complementary evidence to the knockdown experiments, demonstrating that MYC can uncouple HIF transcriptional activity from metabolic flux.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C10",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145"
+    ],
+    "result": "The principal finding is that MYC signaling in hypoxia uncouples HIF-dependent glycolytic gene transcription from glycolytic flux. Hypoxia reduced carbon flux through glycolysis despite robust HIF-1\u03b1 activation and glycolytic gene upregulation. The data suggest that changes in enzyme expression alone are insufficient to alter metabolic flux in hypoxia, pointing to regulatory mechanisms that supersede HIF-dependent gene transcription.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C141-C145 represent the main conclusions of the study, which are well-supported by the comprehensive experimental evidence including flux analysis, transcriptomics, and functional experiments with MYC manipulation. The integration of multiple experimental approaches (metabolic flux analysis, isotope tracing, gene expression, and genetic perturbations) provides strong support for this central conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C34",
+      "C35"
+    ],
+    "result": "More severe hypoxia (0.2% oxygen) and a second cell type (PASMCs) showed similar metabolic responses. Culture in 0.2% oxygen showed no change in glucose or lactate fluxes similar to 0.5% oxygen, and PASMCs showed no change in glucose uptake and reduced lactate efflux under 0.5% oxygen.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C35 are supported by data in Figure 1\u2014figure supplements 3 and 4. These experiments demonstrate that the unexpected metabolic response to hypoxia is not specific to the 0.5% oxygen level or to lung fibroblasts, strengthening the generalizability of the main findings. The replication in a second cell type is particularly important for establishing broader relevance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C46",
+      "C47"
+    ],
+    "result": "Hypoxia decreased glutamine consumption in lung fibroblasts, contrasting with cancer cell models. In substrate deprivation experiments, glucose deficiency decreased LF proliferation further in hypoxia, while glutamine deficiency had no additional impact, consistent with decreased glutamine consumption.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C43, C46-C47 are supported by extracellular flux measurements (Figure 1J) and substrate deprivation experiments (Figure 3A). The finding contrasts with previous cancer cell studies (C42-C43, properly cited), highlighting an important difference between primary cells and cancer cells. The substrate deprivation experiments provide functional validation of the flux measurements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C48",
+      "C49"
+    ],
+    "result": "PASMCs demonstrated high metabolic flexibility. Neither glucose nor glutamine deficiency decreased PASMC proliferation, suggesting these cells can utilize alternative substrates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C49 are supported by substrate deprivation experiments in Figure 3B. This finding highlights an important difference between LFs and PASMCs in their metabolic dependencies. However, the interpretation of 'metabolic flexibility' (C49) is somewhat speculative without direct evidence of alternative substrate utilization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Proline consumption uniquely increased in hypoxic lung fibroblasts. This finding is consistent with increased collagen expression in hypoxia, as proline constitutes ~10% of collagen amino acid content, suggesting extracellular proline contributes to collagen production.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C53 are supported by amino acid flux measurements (Figure 1J) and literature citations. The interpretation linking increased proline consumption to collagen production (C53) is reasonable given the cited evidence for hypoxia-induced collagen expression (C51) and the known composition of collagen (C52). This represents a cell-type-specific metabolic adaptation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "PASMCs showed increased consumption of branched-chain amino acids (leucine, valine) and arginine in hypoxia, which was not observed in LFs. These findings are consistent with known roles of BCAA metabolism and arginase in supporting PASMC proliferation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C59 are supported by amino acid flux measurements in PASMCs (Figure 1\u2014figure supplement 4J) and appropriate literature citations (C55-C58). The biochemical knowledge about BCAA metabolism (C55-C56) and arginase function (C57-C58) is correctly stated. This demonstrates distinct metabolic dependencies between cell types.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Stable isotope tracing revealed altered substrate utilization in hypoxia. Both hypoxia and BAY decreased glucose-derived carbon incorporation into pyruvate, suggesting increased contribution from unlabeled sources. Citrate labeling patterns showed decreased pyruvate dehydrogenase activity and increased pyruvate carboxylase contribution to TCA anaplerosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C68 are supported by isotope tracing data in Figure 4A-B. The interpretation of labeling patterns (C64, C66, C68) is based on sound biochemical reasoning about enzyme activities and carbon flow. The data demonstrate metabolic rewiring beyond simple changes in glycolytic flux, though the functional significance of increased pyruvate carboxylase activity requires further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Glutamine contributed less to TCA anaplerosis in hypoxia, and reductive carboxylation was low in LFs but higher in PASMCs. The M5 citrate fraction from reductive carboxylation was <7% in LFs, much less than the 10-20% reported in cancer cells, but was higher in PASMCs, more consistent with cancer cell literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C72 are supported by isotope tracing data in Figure 4C-D. The comparison with cancer cell literature (C71) is appropriate and highlights important differences between primary cells and cancer cells. The higher reductive carboxylation in PASMCs (C72) suggests cell-type-specific metabolic strategies and may be relevant to pulmonary hypertension pathology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Metabolic flux analysis revealed that hypoxia significantly decreased glycolysis, TCA cycle, and amino acid metabolism in LFs, while BAY treatment in normoxia increased glycolysis by nearly 50%. Intracellular metabolites did not reach isotopic steady state even after 72 hr, necessitating non-stationary flux analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C79 are supported by comprehensive flux analysis data in Figure 5 and Tables 1-2. The use of non-stationary flux analysis (C73) is methodologically appropriate given the lack of isotopic steady state. The quantitative flux estimates provide rigorous support for the main findings about differential effects of hypoxia versus BAY treatment on metabolism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Lactate is an important respiratory fuel in primary cells. Lactate labeled ~50% of citrate and ~20% of downstream TCA metabolites in both LFs and PASMCs. Hypoxia and BAY treatment increased lactate incorporation, including into gluconeogenic intermediates, suggesting lactate contributes to both oxidative metabolism and glycogen synthesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C89 are supported by lactate tracing experiments in Figure 7. The finding that lactate is a significant respiratory fuel (C82-C83) is well-documented by the labeling data. The interpretation is consistent with recent literature on lactate metabolism (C84-C86, properly cited). The incorporation into gluconeogenic intermediates (C87-C89) is an interesting observation supported by the data and prior literature (C88).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "siRNA-mediated PHD2 knockdown reproduced the effects of BAY treatment. siPHD2 stabilized HIF-1\u03b1 in normoxia and increased glycolytic gene expression, but hypoxia inhibited siPHD2-dependent increases in glycolysis, demonstrating that BAY effects are due to PHD inhibition rather than off-target effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C97 are supported by siRNA experiments in Figure 8\u2014figure supplement 1. This control experiment is important for ruling out off-target effects of the pharmacologic inhibitor (C97). The similar results with genetic and pharmacologic PHD inhibition strengthen confidence in the main findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "Metabolomic profiling revealed distinct molecular responses to hypoxia and BAY treatment. Of 133 metabolites measured, 98 were differentially regulated by hypoxia and 54 by BAY, with 44 shared. Principal component analysis showed hypoxia-treated cells were well-segregated from BAY-treated cells. Enrichment analysis identified up-regulation of arginine/proline metabolism and down-regulation of TCA cycle metabolites in hypoxia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C109 are supported by comprehensive metabolomic data in Figure 9 and supplements. The PCA analysis (C104-C105) clearly demonstrates distinct metabolic states. The enrichment analyses (C101-C102, C107-C108) are appropriately conducted and interpreted. The finding that TCA cycle flux is better preserved with BAY than hypoxia (C109) is consistent with the flux analysis data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "Hypoxia altered cellular redox state. Hypoxia increased the NADH/NAD+ ratio (driven by decreased NAD+), while BAY preserved this ratio. Hypoxia decreased the NADPH/NADP+ ratio in both control and BAY-treated cells. NADH accumulation may inhibit glycolytic flux, providing a mechanism for decreased glycolysis in hypoxia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C117 are supported by NAD(H) and NADP(H) measurements in Figure 9\u2014figure supplement 2. The differential effects on NADH/NAD+ ratio between hypoxia and BAY (C110-C111) provide a potential mechanism for their different metabolic effects. The interpretation about NADH inhibiting glycolysis (C112) is reasonable and supported by citation, though direct evidence for this mechanism is not provided. The decreased NADPH/NADP+ ratio (C113) is consistent with prior literature (C114).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "RNA-seq analysis revealed substantial transcriptional changes with hypoxia and BAY treatment. Of 10,686 differentially expressed genes, 869 were unique to BAY, 4002 were shared, and 5052 were unique to hypoxia. Both treatments enriched 'hypoxia' and 'glycolysis' gene sets. Principal component analysis showed the combination of hypoxia plus BAY was more similar to hypoxia alone than BAY alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C125 are supported by comprehensive RNA-seq data in Figure 10 and supplements. The transcriptomic analysis provides genome-wide evidence for distinct responses to hypoxia versus pharmacologic HIF activation. The PCA finding (C125) that hypoxia overrides BAY effects at the transcriptional level parallels the metabolic findings, strengthening the overall conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "CDKN1A expression patterns are consistent with MYC regulation. MYC represses CDKN1A transcription, and CDKN1A expression increased with BAY in normoxia but decreased with hypoxia, consistent with hypoxia-induced MYC activation. This contrasts with the classical view that hypoxia/HIF inhibits proliferation by inhibiting MYC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C128-C130 are supported by RNA-seq data (Figure 10\u2014figure supplement 2A) and appropriate literature citations. The CDKN1A expression pattern (C129) provides additional evidence for MYC activation in hypoxia. The contrast with classical understanding (C130) is appropriately noted and represents an important conceptual advance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C195",
+      "C197",
+      "C199"
+    ],
+    "result": "The experimental design involved specific methodological choices to capture exponential growth phase metabolism. Cells were placed in hypoxia 24 hr before sample collection to allow transcriptional program activation. 0.5% oxygen was selected as physiologically relevant and above the KM of cytochrome c oxidase. Flux measurements were performed in exponentially growing primary cells rather than immortalized cell lines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C27, C195, C197, and C199 describe key methodological decisions that are well-justified. The 24 hr pre-treatment (C26, C197) ensures steady-state transcriptional responses. The oxygen level selection (C27) is appropriately justified with citations. The use of primary cells (C199) is a strength of the study. These methodological choices are important for interpreting the results and distinguishing this work from prior cancer cell studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C188",
+      "C189",
+      "C190",
+      "C191",
+      "C192"
+    ],
+    "result": "PASMCs demonstrated significant reductive carboxylation that increased in hypoxia, unlike LFs. This metabolic feature, first identified in hypoxic tumor cells, may represent a metabolic vulnerability of hypoxic PASMCs relevant to pulmonary vascular disease, as isocitrate dehydrogenase has been implicated in pulmonary hypertension pathobiology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C188-C192 are supported by flux analysis data showing cell-type-specific differences. The connection to pulmonary hypertension (C190-C192) is appropriately speculative but well-grounded in prior literature (C191, properly cited). This represents an important translational insight, though the pathophysiological significance requires further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C193",
+      "C194",
+      "C196",
+      "C198",
+      "C200",
+      "C201"
+    ],
+    "result": "The study design and findings differ from typical approaches in the field. The unexpected finding that hypoxia decreased glycolysis contrasts with common assumptions. The study focused on exponentially growing primary cells to understand metabolic support for proliferation, whereas cells are often studied near confluence. The degree of metabolic reprogramming was modest, suggesting close coupling between proliferation and metabolism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C193-C194, C196, C198, C200-C201 provide important context for interpreting the results. The acknowledgment that findings were unexpected (C193) and differ from typical experimental conditions (C196, C198) is appropriate. The interpretation about coupling between proliferation and metabolism (C201) is reasonable given the data. The speculation about generalizability to other primary cells (C200) is appropriately cautious.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C202",
+      "C203",
+      "C204",
+      "C205"
+    ],
+    "result": "The study identifies important directions for future research. Additional studies are warranted to clarify the role of HIFs in mediating metabolic responses to hypoxia, determine how MYC activity is regulated by hypoxia, and identify other key regulators of hypoxic metabolic reprogramming in primary cells. The data caution against drawing conclusions about metabolite flux from gene transcription alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C202-C205 appropriately identify limitations and future directions. The recommendation for additional studies (C202-C204) acknowledges that mechanistic questions remain. The caution about inferring flux from transcription (C205) is an important general principle strongly supported by the data showing uncoupling of HIF target gene expression from glycolytic flux.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "The introduction establishes the biological context and knowledge gaps. Hypoxia requires metabolic adaptations, typically involving a shift from respiration to glycolysis mediated by HIF-1\u03b1. While extensively studied in cancer cells, comparatively little is known about primary cell metabolism in hypoxia. Previous cancer cell studies identified roles for reductive carboxylation and aspartate limitation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C11-C25 provide appropriate background and context, supported by relevant citations. These claims establish the rationale for the study by identifying the knowledge gap (C2) and summarizing relevant prior work. The statements about established mechanisms (C12-C18) and cancer cell studies (C23-C25) are accurately represented with proper citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C29",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Additional metabolic differences between hypoxia and BAY treatment were observed. Slower growth in hypoxia was not associated with decreased cell viability. BAY had more modest effects on amino acid fluxes compared to hypoxia, with specific differences in glutamate and alanine efflux.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29, C60-C62 are supported by experimental data (Figure 1\u2014figure supplement 1A, Figure 2J). These observations provide additional evidence for distinct metabolic states induced by hypoxia versus pharmacologic HIF activation. The viability data (C29) is important for ruling out toxicity as an explanation for decreased proliferation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153"
+    ],
+    "result": "The discussion contextualizes MYC's role in the hypoxia response. MYC regulates numerous genes involved in metabolism, proliferation, apoptosis, and differentiation, and is deregulated in most cancers. The literature describes a complex HIF-MYC relationship that depends on context. Generally, HIF-1 inhibits MYC, but the observation that MYC may antagonize HIF transcriptional effects in hypoxic primary cells suggests a substantially different regulatory relationship.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C147-C153 provide appropriate discussion context with proper citations. The summary of MYC biology (C147-C149) and HIF-MYC interactions (C150-C152) accurately represents the literature. The statement that findings suggest a different regulatory relationship (C153) is a reasonable interpretation of the data, though it appropriately acknowledges this represents a departure from previous understanding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C154",
+      "C155",
+      "C156",
+      "C157"
+    ],
+    "result": "MYC may sustain oxidative phosphorylation in hypoxia. MYC stimulates expression of nuclear-encoded mitochondrial genes and promotes mitochondrial biogenesis. The oxidative phosphorylation gene set was enriched in BAY-treated cells cultured in hypoxia. Hypoxic MYC activation may sustain energy production by oxidative phosphorylation, decreasing energetic demands that would drive glycolytic flux.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C154-C157 propose a mechanism for MYC's effects, but the evidence is limited. While the enrichment of oxidative phosphorylation genes (C155) is supported by data, the functional interpretation (C156) is speculative. No direct measurements of oxidative phosphorylation rates or ATP production are provided to test this hypothesis. The mechanism remains plausible but requires experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166",
+      "C167"
+    ],
+    "result": "Multiple mechanisms may regulate MYC levels in hypoxia. MYC concentration is regulated at multiple levels including transcription, mRNA stability, translation, and protein degradation. Hypoxia decreases MYC mRNA decay through various mechanisms including effects of mitochondrial ROS, N6-methyladenosine modification, and microRNA regulation. Studies in HEK293T cells showed that pharmacologic PHD inhibitors did not reproduce hypoxia's effect on MYC mRNA half-life.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C158-C167 summarize literature on MYC regulation with appropriate citations. The discussion of multiple regulatory mechanisms (C158-C167) provides important context for understanding how MYC might be differentially regulated by hypoxia versus PHD inhibition. The specific finding that PHD inhibitors don't reproduce hypoxia's effect on MYC mRNA (C162) from prior literature parallels the current study's findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C168",
+      "C169",
+      "C170",
+      "C171",
+      "C172"
+    ],
+    "result": "MYC protein stability is regulated by phosphorylation. MYC protein has a short half-life and is degraded by the proteasome. Two phosphorylation sites (S62 and T58) regulate stability, with S62 phosphorylation promoting stability and T58 phosphorylation leading to degradation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C168-C172 accurately summarize established knowledge about MYC protein regulation with appropriate citations. This information provides mechanistic context for understanding how MYC levels might be regulated differently in hypoxia versus normoxia with PHD inhibition.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R32",
+    "claim_ids": [
+      "C173",
+      "C174",
+      "C175",
+      "C176",
+      "C177",
+      "C178",
+      "C179",
+      "C180"
+    ],
+    "result": "Multiple oxygen-dependent mechanisms beyond PHD may contribute to differential effects of hypoxia versus PHD inhibition. These include other \u03b1-ketoglutarate-dependent dioxygenases (like JmjC histone demethylases), cysteamine dioxygenase, electron transport chain dysfunction leading to ROS production, and reductive stress with increased NADH/NAD+ ratio. NADH accumulation may slow glycolysis via GAPDH inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C173-C180 discuss alternative mechanisms with appropriate citations. These represent plausible explanations for why hypoxia and PHD inhibition have different metabolic effects. The discussion of NADH accumulation (C179-C180) connects to the study's own measurements (Figure 9\u2014figure supplement 2). However, these remain hypotheses that require direct experimental testing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R33",
+    "claim_ids": [
+      "C181",
+      "C182",
+      "C183",
+      "C184",
+      "C185"
+    ],
+    "result": "The cell-autonomous role of HIFs in hypoxia response may be limited. HIF-1\u03b1 appears important for mitigating ROS effects from dysfunctional electron transport. However, HIF-1\u03b1-null MEFs had increased ATP in hypoxia, suggesting adequate mitochondrial function. Genome-wide CRISPR screens found PHD, HIFs, and their targets were not selectively essential as a function of oxygen tension. HIF knockout did not affect growth or metabolism in hypoxic leukemia cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C181-C185 discuss literature findings with appropriate citations that contextualize the current results. The cited studies (C184-C185) showing limited essentiality of HIF signaling in some contexts support the interpretation that HIF-independent mechanisms are important in hypoxia. This discussion appropriately places the current findings in a broader context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R34",
+    "claim_ids": [
+      "C186",
+      "C187"
+    ],
+    "result": "Lactate incorporation into metabolic pathways increased with hypoxia and BAY treatment. This finding is consistent with increasing evidence for lactate as a metabolic fuel in several organ systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C186-C187 summarize a key finding with appropriate literature context. The lactate tracing data (Figure 7) clearly support increased lactate incorporation, and the citations (C187) appropriately place this in the context of emerging understanding of lactate metabolism.",
+    "result_type": "MINOR"
+  }
+]

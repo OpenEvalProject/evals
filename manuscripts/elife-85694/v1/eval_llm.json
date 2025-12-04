@@ -1,0 +1,227 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C10",
+      "C11"
+    ],
+    "result": "The manuscript challenges the traditional view that collaborative hunting requires large brains and high-level cognition by citing recent findings of collaborative hunting in smaller-brained vertebrates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C10, and C11 establish the scientific context through appropriate citations to prior literature. The traditional view (C1, C10) and recent contradictory findings (C2, C11) are well-documented in the cited studies, providing a solid foundation for the research question.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Deep reinforcement learning agents successfully learned collaborative hunting behavior without explicit theory of mind mechanisms, with success facilitated by difficulty of solitary hunting and reward sharing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C30 are supported by quantitative simulation data (Figure 2a) showing increased success rates and decreased hunting duration with multiple predators. The comparison with theoretical predictions (C29) and the identification of key factors (C19) strengthen the result. Statistical tests confirm significance (p<0.001).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C24",
+      "C25"
+    ],
+    "result": "In fast and equal mobility conditions, predators succeeded in almost all episodes regardless of predator number or reward sharing, indicating little benefit of cooperation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C25 are supported by quantitative data (0.99 \u00b1 0.00 success rate) from computational simulations. The inference that cooperation provides little benefit under these conditions (C25) logically follows from the data showing no performance difference with multiple predators.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C56",
+      "C59"
+    ],
+    "result": "Predators in the shared reward condition developed distance-dependent internal representations that guided collaborative hunting decisions, despite distance to other predators not being explicit inputs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C38, C56, and C59 are supported by t-SNE visualizations (Figure 3) showing clear separation by distance in shared conditions. The emergence of distance-dependent representations without explicit distance inputs (C59) is particularly compelling. However, t-SNE is a dimensionality reduction technique that can introduce artifacts, and the interpretation relies on visual inspection rather than quantitative metrics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C57"
+    ],
+    "result": "Distance-dependent rule-based predators successfully reproduced behaviors similar to deep reinforcement learning predators.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C57 is supported by rule-based agent simulations (Figure 3\u2014figure supplements 5-7) showing similar behavioral patterns. This provides convergent evidence for the distance-dependent decision mechanism. However, quantitative comparison metrics (e.g., success rates, behavioral similarity scores) would strengthen this claim.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C5",
+      "C21",
+      "C61"
+    ],
+    "result": "Predator agents' decision rules generalized robustly to human-controlled prey despite experiencing unfamiliar states, with better performance in multi-predator conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C44 are supported by human behavioral experiment data (Figure 4a, n=10 participants). The similar trends between simulation and human experiments (C39) and the robustness despite state dissimilarity (C41) are well-documented. However, the sample size is modest (n=10, all male), limiting generalizability. The occasional odd behavior in one-predator conditions (C42) is acknowledged but not fully explained.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Simulation results align with natural observations of collaborative hunting, including increased success with more predators, dependence on solitary hunting difficulty and reward sharing, role flexibility, and strategy variation across conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C50 compare simulation results with cited natural observations. The alignment is generally well-supported, though the comparisons are qualitative rather than quantitative. The claim of validity (C50) is somewhat circular, as the simulations were designed based on these ecological findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Collaborative hunts exceeded theoretical predictions based on independent predator performance, with coordinated behaviors emerging even without reward sharing under certain spatial constraints.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C55 are supported by comparison with theoretical predictions (Figure 2a) and observations of blocking behavior (Figure 2\u2014figure supplement 4). The emergence of coordination without reward sharing (C53-C55) is interesting but requires more mechanistic explanation. The role of spatial constraints is speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C22",
+      "C23",
+      "C45",
+      "C64"
+    ],
+    "result": "Collaborative hunting can emerge through simple state-action mappings based on distance-dependent representations, without requiring sophisticated cognitive mechanisms or theory of mind.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, C22, C23, C45, and C64 represent the main conclusion, supported by the collective evidence from simulations (C18-C30), internal representation analysis (C33-C38), and human experiments (C39-C44). The conclusion is well-supported but should be qualified: the study demonstrates sufficiency (simple mechanisms can produce collaborative hunting) but not necessity (natural collaborative hunting may still involve more complex cognition).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C62"
+    ],
+    "result": "Prey agents achieved higher successful evasion rates than human-controlled prey.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C62 is supported by comparison of agent and human performance in the experiments. This demonstrates the effectiveness of the learned prey strategies, though specific quantitative comparisons are not provided in the main text.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C6",
+      "C63"
+    ],
+    "result": "The findings suggest collaborative hunting can emerge in various natural interactions and may be a product of natural selection enabling rapid, robust action under time constraints.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C6 and C63 are speculative extrapolations from the computational results. While the reasoning is plausible, these claims about natural evolution and broad ecological implications go beyond what the simulations directly demonstrate. The study provides a proof of concept but does not test these evolutionary or ecological hypotheses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "The study employed independent learning with 4-layer neural networks using specific architectural choices, trained for 10^6 episodes, with human experiments involving 10 male participants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C75 describe methodological details that are clearly documented. However, several important details are missing or unclear: random seed specification for reproducibility, justification for architectural choices, convergence criteria, and the all-male participant sample limits generalizability of human experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C65"
+    ],
+    "result": "Real predator-prey dynamics involve additional factors like energy cost, partial observability, signal communication, and local surroundings not captured in this simplified model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C65 appropriately acknowledges limitations of the simplified model through citations to relevant literature. This is an important caveat for interpreting the results' applicability to natural systems.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C16",
+      "C17"
+    ],
+    "result": "Deep reinforcement learning is inspired by animal associative learning and related to dopamine-based reward learning, with associative learning being widely adopted in animals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C17 are supported by appropriate citations to foundational literature. These claims establish the biological plausibility of using reinforcement learning to model animal behavior, though the connection between artificial RL algorithms and actual neural mechanisms remains an active area of research.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C60"
+    ],
+    "result": "Deep reinforcement learning methods can extract systems of rules allowing emergence of complex behaviors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C60 is supported by the overall results showing emergence of collaborative hunting from simple learning rules. However, this is a general inference that could be stated more precisely regarding what types of complex behaviors and under what conditions.",
+    "result_type": "MINOR"
+  }
+]

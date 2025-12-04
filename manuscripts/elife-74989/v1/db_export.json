@@ -1,0 +1,1939 @@
+{
+  "submission": {
+    "id": "c7e97889-4ecb-4112-8c91-19291b3570f0",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-04T04:52:48.946810Z",
+    "updated_at": "2025-12-04T04:52:48.946810Z"
+  },
+  "content": [
+    {
+      "id": "cd68bc11-e5f2-4d3b-ae45-5f2fb701a9bc",
+      "submission_id": "c7e97889-4ecb-4112-8c91-19291b3570f0",
+      "content_type": "manuscript",
+      "content_text": "# Insulator-based dielectrophoresis-assisted separation of insulin secretory vesicles\n\n## Authors\n\n- Mahta Barekatain<sup>1</sup>\n- Yameng Liu<sup>2</sup>\n- Ashley Archambeau<sup>1</sup> ([ORCID: 0000-0002-9933-1787](https://orcid.org/0000-0002-9933-1787))\n- Vadim Cherezov<sup>1</sup> ([ORCID: 0000-0002-5265-3914](https://orcid.org/0000-0002-5265-3914))\n- Scott Fraser<sup>3</sup>\n- Kate L White<sup>1</sup> ([ORCID: 0000-0001-8894-9621](https://orcid.org/0000-0001-8894-9621)) \u2020\n- Mark A Hayes<sup>2</sup>\n\n### Affiliations\n\n1. Department of Chemistry, Bridge Institute, USC Michelson Center for Convergent Bioscience, University of Southern California Los Angeles United States ([ROR:03taz7m60](https://ror.org/03taz7m60))\n2. School of Molecular Sciences, Arizona State University Tempe United States ([ROR:03efmqc40](https://ror.org/03efmqc40))\n3. Department of Biological Sciences, Bridge Institute, USC Michelson Center for Convergent Bioscience, University of Southern California Los Angeles United States ([ROR:03taz7m60](https://ror.org/03taz7m60))\n\n\u2020 Corresponding author\n\n## Abstract\n\nOrganelle heterogeneity and inter-organelle contacts within a single cell contribute to the limited sensitivity of current organelle separation techniques, thus hindering organelle subpopulation characterization. Here, we use direct current insulator-based dielectrophoresis (DC-iDEP) as an unbiased separation method and demonstrate its capability by identifying distinct distribution patterns of insulin vesicles from INS-1E insulinoma cells. A multiple voltage DC-iDEP strategy with increased range and sensitivity has been applied, and a differentiation factor (ratio of electrokinetic to dielectrophoretic mobility) has been used to characterize features of insulin vesicle distribution patterns. We observed a significant difference in the distribution pattern of insulin vesicles isolated from glucose-stimulated cells relative to unstimulated cells, in accordance with maturation of vesicles upon glucose stimulation. We interpret the difference in distribution pattern to be indicative of high-resolution separation of vesicle subpopulations. DC-iDEP provides a path for future characterization of subtle biochemical differences of organelle subpopulations within any biological system.\n\n## Introduction\n\nCell-to-cell heterogeneity of function within a given cell type arises from differences in genomic, epigenomic, transcriptomic, and proteomic (Goldman et al., 2019) components and their subcellular localizations. Some examples are subpopulations of organelles as identified for synaptic vesicles (Crawford and Kavalali, 2015), mitochondria (Aryaman et al., 2018), and insulin secretory vesicles (Suckale and Solimena, 2010), among others. The biochemical composition of each of the different subpopulations of organelles must vary, reflecting differences in age, maturation, or specific biological role. To better understand cell function, the organelle subpopulations must be identified so their distinct functional roles may be determined. This fundamental aspect of cell biology, quantification of organelle subpopulations, is limited by lack of appropriate experimental methods. To address this gap in technology, we have developed a new approach for organelle subpopulation identification and quantification.\n\nThe new approach is centered on high-resolution separations technology built on conventional separation methods which are useful for numerous biological analyses. A traditional workflow consists of iterative centrifugation steps (Harford and Bonifacino, 2011) to isolate populations of targeted organelles for follow-up analysis with mass spectrometric or other omics-scale assays (Huber et al., 2003). Gradient columns have successfully isolated clathrin-coated vesicles (Girard et al., 2005), lipid droplets (Brasaemle and Wolins, 2016), mitochondria, and endoplasmic reticulum (ER) populations (Bozidis et al., 2007), from other organelles, based on differences in organelle densities. However, subpopulations of a given organelle with similar buoyant densities are often hard to differentiate and separate in these columns. Immunoisolation of organelles, although yielding pure populations, is limited by the need for specific organelle markers (Lange et al., 2000). Electrophoretic approaches, such as free-flow electrophoresis, have been adopted for use in microfluidic separation of organelles (Lu et al., 2004), enabling downstream analyses of the enriched fractions in the absence of major contaminants. However, these separations are limited to differentiation based on charge and size of the components. Although powerful, each of these traditional isolation approaches lacks sufficient sensitivity and robustness to isolate subpopulations of an organelle for biochemical characterizations such as proteomic analysis or imaging, except for smooth versus rough ER (Lee et al., 2015). Thus, new approaches which are sensitive to complex features beyond differences in density, size-to-charge or epitope recognition are needed.\n\nOne attractive strategy is to exploit higher order electric field effects which directly probe the nuanced physical properties of small complex bioparticles\u2014differentiating on radius, zeta potential, permittivity, interfacial polarizability, charge distribution, deformability, and conductivity of the particles, to name but a few (Chen et al., 2009; Hilton et al., 2020; Pethig, 2019; Matyushov, 2019; Hayes, 2020). Direct current insulator-based dielectrophoresis (DC-iDEP) utilizes these features for separating subpopulations of bioparticles such as viruses, bacteria, organelles, and proteins (Hayes, 2020; Ding et al., 2016; Jones et al., 2015; Liu and Hayes, 2021). This approach offers a wide dynamic range, as it has been specifically used for separations ranging from neural progenitors and stem cells (Liu et al., 2019) to resistant versus susceptible strains of cellular pathogens (Hilton et al., 2020; Jones et al., 2015). In DC-iDEP, subtle biophysical differences can be distinguished by the differences in dielectrophoretic (DEP) and electrokinetic (EK) forces that result from a rich set of distinguishing factors such that all constituents of the bioparticle influence the potential for separation. Unlike epitope recognition strategies, DC-iDEP is well suited for assaying subpopulations of organelles, where differentiating factors are not known. DC-iDEP can be used as a discovery-based approach to interrogate a broader spectrum of organelle subpopulations (Liu et al., 2019) because the bioparticle separations occur quickly and require small sample volume (Kim et al., 2019; Lapizco\u2010Encinas and Rito\u2010Palomares, 2007). Here, we demonstrate the power of DC-iDEP in organelle separation, by using it to investigate subtle differences in the subpopulations of insulin vesicles upon differential stimulation in the INS-1E insulinoma model of the pancreatic \u03b2-cells (Merglen et al., 2004).\n\nPancreatic \u03b2-cells are responsible for secreting insulin in a tightly regulated process that is key to maintaining glucose homeostasis. Insulin vesicles undergo a complex functional maturation process that is required for proper secretion of insulin and this process is dysregulated in diabetes (Suckale and Solimena, 2010). Immature insulin vesicles act as a sorting compartment (Feng and Arvan, 2003; Huang and Arvan, 1994) and mature into two distinct pools of functional vesicles within the cell: the readily releasable pool and the reserve pool (Boland et al., 2017; Orci, 1985; Orci et al., 1986; Dean, 1973; Figure 1A). The heterogeneity among subpopulations of insulin vesicles (Hou et al., 2009; Michael et al., 2006; Zhang et al., 2020) likely arises from the varying stages of the maturation process. This accounts for modifications of insulin vesicle membrane proteins, and variances in their age, mobility, and localization within the cell (Suckale and Solimena, 2010; Hao et al., 2005; Halban, 1982; Gold et al., 1982). However, the associated biochemical constituents of insulin vesicles have remained elusive in the absence of sensitive isolation approaches. The importance of insulin vesicles in glucose homeostasis has led several groups to attempt to isolate and characterize the insulin vesicles (Thurmond, 2007; Hutton et al., 1982). While these studies and follow-up proteomics analysis of the isolated vesicles Schvartz et al., 2012; Li et al., 2018; Brunner et al., 2007; Hickey et al., 2009 have provided insights into the biochemistry of these vesicles, there\u2019s very little overlap in protein IDs associated with these organelles from different studies (Figure 1B). Thus, there is a need for more robust isolation methods that can reproducibly differentiate between the heterogeneous subpopulations of insulin vesicles, among other organelles, and allow for their downstream characterization.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/74989/elife-74989-fig1-v1.jpg)\n\n**Figure 1.:** (A) Insulin vesicle formation and maturation in a pancreatic \u03b2-cell. Newly synthesized insulin is packed inside secretory vesicles which mature to store crystalline insulin in vesicles until secretion is stimulated through different signaling pathways. (B) Four published insulin vesicle proteomics studies (Schvartz et al., 2012; Li et al., 2018; Brunner et al., 2007; Hickey et al., 2009) aimed to identify the proteome of the heterogenous populations of secretory vesicles in INS-1E cells with only five proteins identified consistently. (C) Separation of insulin vesicles using a DC-iDEP device. Differential and density gradient centrifugation were used to enrich each sample for insulin vesicle populations. Samples were then immunolabeled and introduced into DC-iDEP device for high-resolution separation. Fluorescently labeled particles trapped near various gates in the channel are biophysically different subpopulations with varied EKMr values. The gates were constricted by increasing sizes of paired triangles, forming channel widths of 73 \u03bcm to 25 \u03bcm from inlet to the outlet. The different gates created $E\u2192$ and $\u25bd\u2016E\u2192\u2016$ distributions for EKMr values.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/74989/elife-74989-fig1-figsupp1-v1.jpg)\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/74989/elife-74989-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) Fractions of the density column were screened for insulin content in the enzyme linked immunosorbent assay (ELISA) assay. (B) Western blotting of the density column fractions revealed high concentrations of insulin vesicle marker synaptotagmin IX in fractions with high insulin content as well as the presence of endoplasmic reticulum (ER) and mitochondria contaminants as indicated by organelle markers SEC61 and cytochrome c, respectively, in the same fractions. Raw blot in Figure 1\u2014figure supplement 2\u2014source data 1 and 2. (C) Dynamic light scattering (DLS) was performed on fractions of interest to validate the presence of particles of 150\u2013200 nm in radius, corresponding to radii of insulin vesicles.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/74989/elife-74989-fig1-figsupp3-v1.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (A) Fluorescence confocal microscopy maximum projection image of enriched insulin vesicles. (B) Transmission electron microscopy (TEM) image of enriched insulin vesicles negatively stained with Nano-W. The diameters of these particles are characteristic of insulin vesicles. (C) Cryo-electron microscopy (cryo-EM) image of enriched insulin vesicles. Scale bars, 10 \u00b5m (A), 500 nm (B), 50 nm (C).\n\nIn this study, a new scanning voltage DC-iDEP separation strategy has been applied to immunolabeled insulin vesicles of the INS-1E insulinoma cells and has been shown to separate the full range of insulin vesicle subpopulations with improved resolution within multiple ranges of biophysical parameters (Figure 1C). We demonstrate that glucose treatment, which has been shown to influence the maturity or molecular content (White et al., 2020; Loconte et al., 2022), affects the biophysical characteristics associated with the vesicle subpopulations captured within our DC-iDEP device. This method allows discovery of subpopulations with distinct biophysical properties among insulin vesicles from untreated cells (n-insulin vesicles) and 25 mM glucose-treated cells (g-insulin vesicles). Our observations are consistent with previous studies where a pronounced shift in the molecular density of the insulin vesicles was noted under the two conditions (White et al., 2020; Loconte et al., 2022). This study substantiates the sensitivity of DC-iDEP separation technique in resolving subpopulations of insulin vesicles, among other organelles, and opens the avenue for numerous studies of the biochemical constituents where complex and heterogeneous populations of organelles are of interest.\n\n## Results\n\n### Analysis of enriched insulin vesicle samples post fractionation\n\nThe INS-1E cells used in these studies were capable of insulin secretion in response to increasing concentrations of glucose (Figure 1\u2014figure supplement 1). Isolated membrane fractions from differential and density gradient centrifugations were analyzed through enzyme linked immunosorbent assay (ELISA), western blotting (WB), dynamic light scattering (DLS), confocal microscopy, and electron microscopy (EM). ELISAs identified that lower fractions of the density column (9\u201312) contained the highest insulin content (Figure 1\u2014figure supplement 2A), the same fractions shown to be enriched in the insulin vesicle marker, synaptotagmin IX, by WB (Figure 1\u2014figure supplement 2B). DLS indicated that these fractions contained particles of 150\u2013200 nm radius, which corresponds to the known range of insulin vesicles radii (Olofsson et al., 2002; Greider et al., 1969). Although the WB revealed that the final enriched vesicle sample included some contaminants from unwanted organelles, such as the ER (Figure 1\u2014figure supplement 2B), this will not confound the analysis of insulin vesicles in the iDEP device as the fluorescent labeling was targeted only at insulin vesicles.\n\nTo verify that the insulin vesicles were intact prior to DC-iDEP, we imaged a modified INS-1E cell line that contains a human insulin and green fluorescent protein-tagged C peptide (hPro-CpepSfGFP) (Haataja et al., 2013). This GFP tag allowed for quick visual verification of intact vesicles using fluorescence confocal microscopy. We observed distinct puncta rather than a diffuse GFP signal which indicated that the vesicles were intact and not ruptured. Further analysis of isolated vesicles was done using EM. We observed intact vesicles with the expected size and shape using both transmission electron microscopy (TEM) and cryo-electron microscopy (cryo-EM) (Figure 1\u2014figure supplement 3).\n\n### Introduction of DC-iDEP as a discovery and quantification tool for insulin vesicle subpopulations\n\nEnriched vesicle samples from INS-1E cells were subjected to analysis using DC-iDEP after labeling with insulin vesicle marker synaptotagmin IX (Schvartz et al., 2012; Brunner et al., 2007), which was confirmed to colocalize with insulin in fluorescence microscopy imaging (Figure 2). The separation system was operated in a discovery or scanning mode by first applying a high voltage (2100 V, empirically determined, Figure 3) such that all particles were prevented from entering the first gate, because DEP forces exceed EK forces. The voltage was then lowered incrementally (300 V for each step) allowing various subpopulations to enter the separation zone and be sorted along the device according to their specific EKMr values (Figure 3). A bolus forms at a gate, corresponding to an EKMr value that is a result of a balance between DEP and EK forces on each particle and reflects a complex set of biological, chemical, and biophysical properties of the vesicles (Jones et al., 2015; Hilton and Hayes, 2019; Crowther et al., 2019; Liu and Hayes, 2020). The fluorescence intensity was captured for each gate over a full range of voltages (1800\u2013600 V), such that the largest EKMr values are probed with the higher applied voltage (Figure 4).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/74989/elife-74989-fig2-v1.jpg)\n\n**Figure 2.:** (A, E) Nuclei of INS-1E insulinoma cells stained with NucBlue. (B, F) Synaptotagmin IX labeled with rabbit anti-synaptotagmin IX and goat anti-rabbit IgG (H+L), Alexa 647. (C, G) Insulin hormone labeled with mouse anti-insulin and goat anti-mouse IgG (H+L), Alexa 488. (D, H) Localization of synaptotagmin IX to insulin vesicles as apparent from the merged intensities of panels (B) and (C) or (F) and (G). A strong colocalization was observed between insulin and synaptotagmin IX. Pearson\u2019s r value, 0.66 (D) and 0.64 (H). Microscopy was performed with a Leica Mica using a 63\u00d7/1.2NA water immersion objective on cells mounted in ProLong Glass Antifade Mountant. Scale bars, 5 \u00b5m.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/74989/elife-74989-fig3-v1.jpg)\n\n**Figure 3.:** As a function of the design of the sawtooth channel with different gate sizes along the channel, the applied voltage defines dielectrophoretic (DEP) and electrokinetic (EK) forces at each gate, and capture occurs when the EK force of the particle is equal to or smaller than the DEP force. At high voltages, only particles with high EKMr values can enter the channel; the highest applied voltage of 2100 V prevents all particles of the sample from entering the inlet of the device due to the induced dielectrophoretic forces (no fluorescent signal detected anywhere along the channel). Sequentially lower voltages allow the various subpopulations to enter and be separated throughout the channel. When a subpopulation\u2019s EKMr value surpasses the channel\u2019s DEP force limit, it travels freely and leaves the channel at the outlet. The right panel indicates fluorescent intensities of the captured particles are recorded along the channel at each voltage. Tracking these intensities allows the discovery and quantification of unknown subpopulations according to their biophysical properties.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/74989/elife-74989-fig4-v1.jpg)\n\n**Figure 4.:** Fluorescent intensities of captured n- and g-insulin vesicles with different EKMr values were recorded at each gate. Each data point reflects fluorescent intensities recorded at three subsequent gates with the same EKMr values, averaged out over biologically replicated experiments and normalized over all signals recorded at a given voltage. (A) Full profile of the sample\u2019s biophysical distribution was recorded at 1800 V. (B\u2013E) Insulin vesicle subpopulations were separated at subsequent applied voltages of 1500, 1200, 900, and 600 V. Values are mean \u00b1 SEM (n=3 for n-vesicles or 4 for g-vesicles for biologically independent experiments) (*p<0.05 using ANOVA with Bonferroni post hoc multiple comparison correction). Raw data in Figure 4\u2014source data 1.\n\n### Biophysical subpopulations of vesicles from untreated INS-1E cells\n\nThe distribution of fluorescently labeled n-insulin vesicles captured at each gate formed a characteristic arc (Figure 1C), indicating a well-operating and consistent system. Higher voltages provide a broader dynamic range of EKMr values for capturing a wider range of particles, while lower voltages provide detailed distribution of particles based on their associated EKMr values. At an applied voltage of 1800 V, particles were sensed at EKMr values below 1.5\u00d71010 V/m2 in patterns of overlapping subpopulations (Figure 4A, blue circles). These overlapping features begin to spread out with an applied voltage of 1500 V. At incrementally lower settings of applied voltages (1200, 900, and 600 V), distinctive patterns become identifiable (Figure 4B\u2013E). Notable and discernible features of bioparticle distribution are apparent around 1.2\u00d71010 and 1.8\u00d71010 V/m2 at an applied voltage of 1200 V (Figure 4C). Lowering the voltage to 900 V, and redistribution of bioparticles based on adapted properties of the channel, reveals a similar but attenuated feature of the distribution around 1.2\u00d71010 V/m2 (Figure 4D), whereas particles with EKMr values greater than 1.5\u00d71010 V/m2 leave the channel at this voltage. At this voltage, redistribution of particles, previously retained in overlapping patterns at 1200 V, forms a distinct peak around 5\u20136\u00d7109 V/m2 (Figure 4D). Further lowering the voltage to 600 V shows similar patterns of particle distribution around 5\u20136\u00d7109 V/m2, as well as distinctive patterns around 3\u20134\u00d7109 V/m2 (Figure 4E), while leaving out populations with EKMr values higher than 1.0\u00d71010 V/m2.\n\n### Biophysical subpopulations of vesicles from glucose-stimulated INS-1E cells\n\nInsulin vesicles obtained from 25 mM glucose-treated INS-1E cells (g-insulin vesicles) were studied with the same method used for the untreated cells (Figure 4, yellow squares). Consistent with the vesicles from untreated cells, patterns of primarily overlapping subpopulations were detectable at a voltage of 1800 V. Distribution of particles was observed at values up to 2.3\u00d71010 V/m2 (compared to a maximum value of 1.5\u00d71010 V/m2 for the untreated populations) (Figure 4A), which suggests that these vesicles have a broader range of properties than the population from the untreated cells. The first evidence of a distinct distribution feature was captured around 7\u20138\u00d7109 V/m2 when the voltage was lowered to 1500 V (Figure 4B). Decreasing the voltage to 1200 V and subsequent particle redistribution in the channel revealed a distribution pattern with discernible features around 7\u20138\u00d7109 V/m2, like those observed at 1500 V, as well as a distinct peak around 1.1\u00d71010 V/m2 (Figure 4C). Further lowering the voltage to 900 V resulted in a unique distribution pattern with discernible features around 1.1\u00d71010 V/m2 (Figure 4D), similar to 1200 V, and 8\u00d7109 V/m2 (Figure 4D), previously observed at 1500 and 1200 V (Figure 4B and C). Another feature of this distribution pattern was a peak around 4\u00d7109 V/m2 (Figure 4D). Ultimately, decreasing the voltage to 600 V revealed a distribution pattern with features around 4\u00d7109 and 8\u00d7109 V/m2 (Figure 4E), like those observed at higher voltages, leaving out patterns that were observed at EKMr values higher than 1.0\u00d71010 V/m2. This distinct distribution pattern, although consistent with distribution patterns at higher voltages, featured stretched-out peaks, consistent with a smaller and more refined range of EKMr values assigned throughout the channel.\n\n### Comparison of n- and g-insulin vesicle separation patterns within the iDEP device\n\nVisual inspection of the collected data revealed generally similar patterns of vesicles collected at specific EKMr values (Figure 4). However, at 1200 V we achieved adequate separation of vesicle populations to discern unique populations of vesicles from cells treated with glucose compared to no treatment. Using a two-way ANOVA, we found a statistically significant interaction between the effect of treatment on vesicles collected at each EKMr value for data collected only at 1200 V (F(8, 45)=3.61, p=0.003). A Bonferroni post hoc test revealed a significant difference in the intensity or quantity of vesicles collected between treated and untreated samples at 1.10\u00d7109 V/m2 (p=0.0249), 5.35\u00d7109 V/m2 (p=0.0469), 7.45\u00d7109 V/m2 (p=0.0369). These differences reflect a shift in the populations of insulin vesicles upon glucose stimulation.\n\n## Discussion\n\nUsing the DC-iDEP separation method, we identified distinct populations of insulin vesicles with varying biophysical properties. Furthermore, we observed different distribution patterns for insulin vesicles isolated from glucose-stimulated versus unstimulated cells, which suggests glucose stimulation alters the insulin vesicle subpopulations. This is consistent with findings from single-cell soft X-ray tomography, which revealed heterogeneities in the composition of insulin vesicles and their molecular densities upon glucose stimulation due to vesicle maturation (White et al., 2020; Loconte et al., 2022). Other studies have also observed enrichment of certain subpopulations of vesicles in response to glucose stimulation (Straub et al., 2004). Our approach addresses an important need to identify and separate distinct subpopulations of insulin vesicles which can allow for investigating their apparent heterogeneity.\n\nThe intensity peaks we observed at specific EKMr values likely correspond to some of the previously described insulin vesicle subpopulations (Zhang et al., 2020; Norris et al., 2021; Neukam et al., 2020; Yau et al., 2020; Kreutzberger et al., 2020). Larger particles are expected to have a smaller EKMr value compared to smaller particles (Hilton et al., 2020). Subpopulations containing larger insulin vesicles, such as a mature pool (Zhang et al., 2020; Norris et al., 2021), synaptotagmin IX-positive vesicles (Kreutzberger et al., 2020), or docked vesicles near the plasma membrane (Zhang et al., 2020) may have lower EKMr values than smaller immature vesicles. Additionally, phosphatidylcholine lipids increase the zeta potential of tristearoylglycerol crystals (Arts et al., 1994). This effect may extend to insulin vesicle subpopulations containing more phosphatidylcholine, such as young insulin vesicles (Neukam et al., 2020) which could lead to higher EKMr values. Taken together, these two properties may be used to predict the EKMr values of known insulin vesicle subpopulations. For example, insulin vesicles with EKMr values of 1\u20132\u00d7109 V/m2 (Figure 4C) may represent a synaptotagmin IX-positive subpopulation due to their larger radii and depletion under glucose stimulation. Additionally, young insulin vesicles may have EKMr values between 5 and 7.5\u00d7109 V/m2 (Figure 4C) due to higher amounts of phosphatidylcholine present in this subpopulation (Neukam et al., 2020). In this EKMr range, we observed a higher intensity for glucose-treated cells which may suggest biosynthesis of new vesicles. Immature insulin vesicles are likely to have higher EKMr values due to their smaller size (Zhang et al., 2020), such as an EKMr value between 1.5 and 1.6\u00d71010 V/m2 (Figure 4C). Here, we demonstrated the capabilities of DC-iDEP to separate insulin vesicle subpopulations in an unbiased manner. Future experiments using chemical probes to label subpopulations will be useful to accurately define the EKMr values associated with specific subpopulations.\n\nThe intensity at each EKMr value is influenced by individual insulin vesicles. The distribution of this pattern reflects differences in physical properties of the vesicles such as physical changes to the vesicles as they mature. The specific changes to the individual insulin vesicles which result in varied EKMr measurements can be associated with any alteration of the biochemical makeup of the bioparticle. There is an ongoing evolution of the theoretical underpinnings of electric field gradient techniques, where past physical descriptors were limited to conductivity and permittivity of the particle (Pethig, 2019). It is becoming better understood that the overall structure and subtle details of the bioparticle, including the particle-solvent cross-polarizations, will influence these forces (Pethig, 2019; Matyushov, 2019; Hayes, 2020; H\u00f6lzel and Pethig, 2021; Martin and Matyushov, 2012). This new view of the forces imparted on the insulin vesicles aligns with a rather simple proposition that the makeup of the particle has changed: something has been added, subtracted, or altered which changed the force on the particle in a measurable and quantifiable way. This is consistent with findings that glucose can affect the maturation of existing vesicles, increasing their molecular density or the concentration of biomolecules within the vesicle lumen (White et al., 2020). Additionally, the subpopulations we observe could have been altered by a change in surface protein expression or enrichment of unsaturated lipids (Moore et al., 2019). This is also consistent with findings that glucose enhances vesicle-mitochondria association which is hypothesized to contribute to insulin vesicle maturation (White et al., 2020). Identical particles always have the same EKMr in the same manner that identical proteins always have the same molecular weight (Zhu et al., 2019). Thus, we can use EKMr values to evaluate the presence of specific insulin vesicle subpopulations and explore how specific chemical probes may influence vesicle identity.\n\nThere are some subtleties in the presented data which accentuate features, and some limitations, of the DC-iDEP separations and the imaging system. The data for 1800 V, for instance, shows no discernable local maxima above 1.5\u00d71010 V/m2 for the n-vesicles, despite having identifiable populations with EKMr values higher than 1.5\u00d71010 V/m2 at lower voltages. Another feature that is quite apparent is a lack of distinct \u2018peaks\u2019 or identifiable patterns appearing at consistent EKMr values within the datasets from differing applied voltage values. While the applied voltage does not affect the properties of bioparticles, it defines the forces that oppose bioparticle movements across the channel at different gates. Accordingly, in an overlapping pattern of subpopulations, those with higher EKMr values overcome the weaker opposing forces at a given gate once the voltage is lowered (Liu and Hayes, 2021; Jones and Hayes, 2015). Hence, the signal which was previously averaged with signals from the other overlapping subpopulations is now discernible at a higher EKMr value. Considering the high resolution of the technique, homogeneous subpopulations of vesicles undoubtably consist of a very narrow range of EKMr values. Each data point shown in Figure 4 represents a homogenous subpopulation captured at the gate. While this feature is unsatisfying to classic separation scientists, it still allows for quantitative comparison of paired samples, as has been shown here. To further optimize the separation, one could modify the channels including the gate size and periodicity, as well as scan even more refined ranges of voltages to induce varying spectra of EKMr values along the device (Ding et al., 2016; Jones et al., 2015). Additionally, developing the capability to port the collected individual boluses will enable downstream analyses such as mass spectrometry or EM, transiting the technique from analytical to preparative.\n\nIn essence, the current work introduces DC-iDEP in a scanning mode as a powerful tool to interrogate complex organelle subpopulations and study their distinctive distribution patterns under different treatment conditions with the goal of organelle subpopulation discovery and quantification. Further, the putatively subtle differences in subpopulations between stimulated and unstimulated INS-1E insulinoma cells are quantified more extensively than previously possible. Finally, this method serves as a stepping stone toward isolation and concentration of fractions which show the largest difference between the two population patterns for further bioanalysis (imaging, proteomics, lipidomics, etc.) that otherwise would not be possible given the low-abundance components of these subpopulations. This approach can be broadly applied to any cell type and organelle beyond the scope of our model system of insulin vesicles and INS-1E insulinoma cells.\n\n## Materials and methods\n\nNo statistical methods were used to predetermine sample size. The experiments were not randomized, and investigators were not blinded to allocation during experiments and outcome assessment.\n\n### Cell culture\n\nINS-1E cells (Addex Bio C0018009; RRID: CVCL_0351) were cultured according to the supplier\u2019s protocol. Briefly, cells were seeded in RPMI 1640 media (modified to contain 2 mM L-glutamine; 10 mM HEPES pH 7.2, 1 mM sodium pyruvate, 2 g/L glucose, and 1.5 g/L sodium bicarbonate, 50 \u00b5M 2-mercaptoethanol, 100 U/mL penicillin, and 100 \u00b5g/mL streptomycin; sterile filtered through 0.22 \u00b5m filter) supplemented with 10% fetal bovine serum (FBS) and grown to 80% confluency. Cells were plated at a density of 105 cells/cm2 in a 24-well plate for the glucose sensitivity assay and incubated at 37\u00b0C with 5% CO2 in growth media for 4\u20135 days. Cells were pretreated at 60\u201380% confluency with Krebs-Ringer bicarbonate HEPES (KRBH) buffer (135 mM NaCl, 3.6 mM KCl, 5 mM NaHCO3, 0.5 mM NaH2PO4, 0.5 mM MgCl2, 1.5 mM CaCl2, 10 mM HEPES, pH 7.4, and 0.1% bovine serum albumin [BSA]; made fresh within 7 days of use) free of glucose and incubated at 37\u00b0C with 5% CO2 for 30 min. They were then stimulated for 30 min at 37\u00b0C using KRBH buffers containing 1.1, 5.6, 8.4, 11.1, 16.7, and 25 mM glucose, in the presence of house-made protease inhibitor (PI) cocktail (0.5 M AEBSF, 1 mM E-64, 1.13 mM leupeptin, and 151.36 \u03bcM aprotinin). KRBH buffer was removed and saved from cells for downstream analysis. Insulin secretion in response to increasing concentrations of glucose was confirmed in an ELISA (Mercodia 10-1250-01) following the manufacturer\u2019s manual (Figure 1\u2014figure supplement 1). For each biological replica, cells were plated at a density of 4\u00d7104 cells/cm2 in a five-layer cell chamber (VWR 76045-402) to yield enough material for completing the experiment. All cell stacks were at least 95% viable after the harvest with 0.05% trypsin. For glucose treatment, near 80% confluent cells were gently rinsed with dialyzed phosphate-buffered saline (PBS) twice and starved in a KRBH buffer with no glucose for 30 min, followed by a 30 min stimulation of insulin release by KRBH buffer supplemented with 25 mM glucose. Cells were then harvested by mild trypsinization.\n\n### Colocalization of synaptotagmin IX and insulin vesicles\n\nCells were grown on ibidi 8 well high ibiTreat slides (80806-96), precoated with poly-L-lysine. Cells were fixed with 4% ice-cold PFA for 10 min, and then stained with antibody cocktail (Mouse anti-insulin antibody [Cell Signaling Technology #8138], 1:100; Rabbit anti-synaptotagmin IX [Thermo Fisher Scientific PA5-44987; RRID: AB_2610517], 1:100) in 0.5% BSA, 0.2% saponin, 1% FBS of PBS buffer for 2 hr at room temperature (RT). After three washes with PBST for 10 min, cells were incubated for 1 hr with secondary antibody cocktail (Goat anti-Rabbit IgG (H+L) Highly Cross-Adsorbed Secondary Antibody, Alexa Fluor 488 [Invitrogen A-11034] 1:100; Goat anti-Mouse IgG (H+L) Highly Cross-Adsorbed Secondary Antibody, Alexa Fluor 647 [Invitrogen A-21236], 1:100). Cells were then mounted in ProLong Glass Antifade Mountant with NucBlue Stain (Thermo Fisher Scientific P36981) and cured for 24 hr before imaging.\n\nA Leica Mica microhub was used for confocal imaging. Image acquisition was performed using 63\u00d7/1.2NA water immersion objective, using 888\u00d7742 format, with 0.04 \u03bcm pixel size, and pinhole diameter automatically set. The signal was collected with 359, 499, and 650 nm excitations and 461, 520, 668 nm emissions for nuclei, insulin, and synaptotagmin IX by HyD FS detector, respectively. The images were deconvoluted by LAS X, lightning module. The refraction index was set to 1.52 for processing. 20\u201325 planes were collected with a Z-step size of 0.16 \u00b5m, and a maximum intensity projection was produced.\n\n### Insulin secretory vesicle enrichment\n\nFollowing trypsinization, all the steps were performed at 4\u00b0C. Cells were gently washed twice with PBS, followed by Dounce homogenization of the cells with 20 strokes in homogenization buffer (HB) (0.3 M sucrose, 10 mM MES, 1 mM EGTA, 1 mM MgSO4, pH 6.3) supplemented with house-made PI cocktail (0.5 M AEBSF, 1 mM E-64, 1.13 mM leupeptin, and 151.36 \u03bcM aprotinin). Cell debris was collected by centrifugation at 600 \u00d7 g for 10 min and re-homogenized as described above to lyse the remaining intact cells, followed by a second spin at 600 \u00d7 g. Supernatants were pooled and centrifuged at 5400 \u00d7 g for 15 min to remove mitochondria, ER, and other subcellular compartments of similar density. The pellet was discarded, and the supernatant was centrifuged at 35,000 \u00d7 g for 30 min to sediment insulin vesicles, among other contaminants, yielding up to ~5 \u00b5g of dry material per every million cells. This pellet was resuspended in ~450 \u03bcL HB and loaded on a density gradient column formed by layering decreasing densities of OptiPrep density media (Sigma-Aldrich D1556) and HB in 0.9 mL fractions of 40%, 35%, 30%, 25%, and 20% OptiPrep in an open-top thin-wall polypropylene tube (Beckman 326819). The density column was then spun in an SW55i Beckman rotor of an ultracentrifuge at 160,000 \u00d7 g for 8 hr to fractionate the insulin vesicle-containing population. Insulin vesicle subpopulations were isolated in fractions of 400 \u00b5L, and ELISA and WB were used to identify the fractions most enriched in insulin. A similar dilution was applied to all the fractions. The manufacturer\u2019s manual was followed for ELISA (Mercodia 10-1250-01) (Figure 1\u2014figure supplement 2A). For WB, fraction samples were mixed with 4X NuPAGE LDS sample buffer (Invitrogen NP0007), loaded on a 15-well NuPAGE 4\u201312% bis-tris gel (Invitrogen NP0323PK2) and run in a mini-gel tank (Life Technologies A25977) at 200 V for 30 min (Bio-Rad 1645050). Protein was then transferred to a PVDF membrane using iBlot 2 Transfer Stacks (Invitrogen IB24002) in iBlot 2 dry blotting device (Invitrogen IB21001). The membrane was blocked using 5% BSA, then cut according to marker protein size and incubated with antibodies against marker proteins for mitochondria (Cytochrome c Antibody; Novus Biologicals NB100-56503), ER (SEC61B Polyclonal Antibody; Life Technologies PA3015), and insulin vesicles (synaptotagmin IX; Thermo Fisher Scientific PA5-44987; RRID: AB_2610517) at RT for 2\u20135 hr. Membranes were then washed with 0.1% Tween supplemented PBS (PBST) twice and incubated with the secondary antibody (anti-rabbit IgG, anti-mouse IgG) at RT for 1 hr. Membranes were washed with PBST two to three times and bands were visualized upon addition of SigmaFast BCIP/NBT tablets (Sigma B5655) (Figure 1\u2014figure supplement 2B). Fractions containing the highest insulin levels and high concentration of the vesicle marker synaptotagmin IX were regarded as insulin vesicle samples and were further tested for DLS using Wyatt Technology\u2019s Mobius to confirm the size distribution of particles corresponding to the insulin vesicle diameter, reportedly 200\u2013500 nm. Data was analyzed in DYNAMICS and manually corrected against the control (HB) (Figure 1\u2014figure supplement 2C). Insulin vesicle fractions confirmed to have the expected insulin vesicle diameter by DLS were then pooled together and spun down at 35,000 \u00d7 g for 15 min to sediment the insulin vesicles. The pellet obtained from this step was used for immunolabeling of insulin vesicles.\n\n### Verification of intact isolated insulin vesicles\n\nFluorescent confocal microscopy was used to verify that enriched insulin vesicles were intact. Suspended insulin vesicles were imaged using a 63\u00d7 water objective on 0.6-mm-thick coverslips on a Mica (Leica Microsystems). The signal was collected with an excitation wavelength of 488 nm and emission wavelength of 509 nm. Images were deconvoluted by LAS X, lightning module. The refractive index was set to 1.33 for processing.\n\nNegative stain EM was used to evaluate if the isolated insulin vesicles were intact prior to analysis with DC-iDEP. In this case, we used a modified INS-1 cell line that expresses a human insulin and green fluorescent protein-tagged C peptide (hPro-CpepSfGFP) (Haataja et al., 2013) (GRINCH cells) which allowed for quick visual verification of isolated insulin-containing vesicles. Insulin vesicles isolated from GRINCH cells (RRID:CVCL_WH61) using an EDTA-supplemented enrichment strategy were deposited directly on EM grids (Formvar/Carbon 200 mesh, Copper, Ted Pella). Insulin vesicles were allowed to settle on the grid for 10 min at 20\u00b0C before blotting. A tungsten-based negative stain (Nano-W, Ted Pella) was spotted onto the grid, incubated at 20\u00b0C for 30 s, then excess stain was blotted. The negative staining was repeated twice more, then the grid was allowed to dry at 37\u00b0C for 1 hr. Prepared grids were imaged at RT on a Talos F200C G2 Transmission Electron Microscope (Thermo Fisher Scientific) running at 80 kV acceleration voltage.\n\nTo further validate the integrity of the insulin vesicles isolated, they were applied onto EM grids (Ted Pella Lacey Carbon, 200 mesh, TH, Gold) at 4\u00b0C and 100% humidity for cryo-EM imaging. Excess buffer was blotted for 2 s before grids were plunge-frozen in liquid ethane using a Vitrobot Mark IV (Thermo Fisher Scientific). Grids were imaged under cryogenic conditions using a 200 kV Glacios Cryo TEM equipped with a Falcon 4 detector (Thermo Fisher Scientific) or a 300 kV Krios G3i equipped with a Gatan K3 direct detection camera (Thermo Fisher Scientific).\n\n### Immunolabeling of insulin vesicles\n\nThe pellet was resuspended in HB and incubated with 5\u201310 \u03bcg of anti-synaptotagmin IX (Thermo Fisher Scientific PA5-44987; RRID:AB_2610517; 1:50\u20131:100) overnight to tag an insulin vesicle marker. This primary antibody was then fluorescently labeled by 2\u20134 hr incubation with 5\u201310 \u03bcg of Alexa 568-conjugated secondary antibody (Invitrogen A-11011; RRID:AB_143157; 1:50\u20131:100) (Figure 1). Insulin vesicles were washed with HB three times to remove the excess antibody and were finally resuspended in a low conductivity buffer (LCHB; 0.3 M sucrose, 5 mM MES, pH 6.3), which is compatible with dielectrophoresis studies.\n\n### Device fabrication\n\nThe design and fabrication methods of the separation device were described in prior publications (Greider et al., 1969). The device contains a 27-gate sawtooth channel with a depth of approximately 20 \u03bcm and a length of 3.5 cm from inlet to outlet (Figure 1C). The distance between two paired triangle tips (gates) decreases from 73 to 25 \u03bcm in the channel. The gate size decreases approximately 5 \u00b5m after every three repeats. Direct current was applied to the device between the inlet and outlet. The potentials were between 0 and 1800 V for testing.\n\nThe microfluidic devices were fabricated by standard soft lithographic technique as described previously (Staton et al., 2010). The design of the channel was created by AutoCAD (Autodesk, Inc, San Rafael, CA, USA) and was used for fabricating a photomask. The channel was created by exposing AZ P4620-positive photoresist (AZ Electronic Materials, Branchburg, NJ, USA) on Si wafer CEM388SS (Shin-Etsu MicroSi, Inc, Phoenix, AZ, USA) by contact lithography. Extra materials were removed from the Si wafer. A weight of 22 g of polydimethylsiloxane (PDMS, Sylgard 184, Dow/Corning, Midland, MI, USA) was used to fabricate four channels simultaneously. The PDMS mixture was placed on the Si wafer template and left to stand for 30 min to allow bubbles to dissipate, and then it was baked for 1 hr at a temperature of 80\u00b0C. Holes 2.5 mm in diameter were punched for inlet and outlet reservoirs. Each channel was capped with a glass microscope slide to fabricate the enclosed channels after cleaning and activation by plasma cleaner (Harrick Plasma, Ithaca, NY, USA) with a voltage of 50 kV.\n\n### Electric field simulations\n\nFinite element modeling (COMSOL, Inc, Burlington, MA, USA) of the distribution of the electric field in the microchannel was performed as previously detailed (Staton et al., 2010). The AC/DC module was used to interrogate the $E\u2192$, $\u2207|E\u2192|^{2}$, and $\\frac{\u2207|E\u2192|}{E^{2}}\u22c5E\u2192$ in an accurately scaled 2D model of the microchannel.\n\n### DC-iDEP\n\nThe separation channel was treated with 5% (wt/vol) BSA for 15 min followed by a wash with LCHB. A volume of 15 \u03bcL of the insulin vesicle sample was introduced to the device from the inlet. This sample fraction contains particles, ~75% of which have radii characteristic of insulin vesicle as apparent from DLS experiments (Figure 1\u2014figure supplement 2C). The volume in each reservoir was maintained with LCHB to prevent pressure-induced flow. Direct current was applied at 600, 900, 1200, 1500, and 1800 V between the inlet and outlet and particles were driven through the channel by the EK force experienced.\n\n### Imaging of vesicles during separation\n\nImages and recordings were acquired using an Olympus IX70 inverted microscope with 4\u00d7, NA 0.16, and 20\u00d7, NA 0.40, objectives. The 20\u00d7 objective was used to inspect the channel to confirm that the device was properly formed. The 4\u00d7 objective was used in recording the intensity of the insulin vesicle signal shown in Figure 1. A mercury short arc lamp (H30102 w/2, OSRAM) and a triple band pass cube (Olympus, Center Valley, PA, USA) were used for sample illumination and detection (excitation: 400/15-495/15-570/25 nm; dichroic: 410-510-590 nm; emission: 460/20-530/30-625/50 nm). Fluorescent intensities of immunolabeled insulin vesicles were recorded using the 4\u00d7 objective by a LightWise Allegro camera (LW-AL-CMV12000, USB3, 0059-0737-B, Imaging Solutions Group) after the voltage had been applied 90 s. Images were recorded from three to four biological replicates at each gate (27 total gates) for any given voltage. Images were further processed in ImageJ (NIH, freeware). The intensity at each gate was recorded along with the intensity of a nearby open area of the channel (image intensity background), which was subtracted from the intensity at each gate to adjust for any variation in illumination intensity. The data for each applied voltage value was normalized to the highest intensity within that dataset.\n\n### Theory\n\nThe forces exerted on bioparticles in the microfluidic device in the presence of direct current include DEP and EK forces. Separation of subpopulations is achieved based on the different magnitude of the forces each bioparticle experiences, related to the properties of the particles, including their radius, conductivity, and zeta potential.\n\nThe EK mobility, $\\mu_{EK}$, and velocity, $\u03c5\u2192_{EK}$, are described as:\n\n$$\n\\mu_{EK}=\\mu_{EP}+\\mu_{EOF}\n$$\n\n\n\n$$\n\u03c5_{EK}=\\mu_{EK}E\u2192\n$$\n\nwhere  $\\mu_{EP}$ is the electrophoretic (EP) mobility and  $\\mu_{EOF}$ is the electro-osmotic flow mobility. The DEP mobility, \u03bcDEP, and velocity,  $\u03bd\u2192_{DEP}$, can be expressed as:\n\n$$\n\\mu_{DEP}=\\frac{\\epsilon_{m}r^{2}f_{CM}}{3\u03b7}\n$$\n\n\n\n$$\n\u03bd\u2192_{DEP}=\\mu_{DEP}\u25bd|E\u2192|^{2}\n$$\n\nwhere r is the radius of the particle, fCM is the Clausius-Mossotti factor, \u03b5m is the dielectric constant of the solution, and \u03b7 is the viscosity.\n\nA combination of biophysical properties of the particles, such as insulin vesicles, determines the location where they will be captured in a microfluidic device. Capture occurs when the EK velocity of the particle is equal to that of DEP. The condition is:\n\n$$\nj\u2192\u22c5E\u2192=0\n$$\n\n\n\n$$\n\\frac{\u25bd|E\u2192|^{2}}{E^{2}}\u22c5E\u2192\\geq\\frac{\\mu_{EK}}{\\mu_{DEP}}\n$$\n\nwhere $E\u2192$  is the electric field intensity, $j\u2192$ is the particle flux, and $\u2207|E\u2192|$ is the gradient of the electric field. The ratio of EK to DEP mobilities (EKMr, $\\frac{\u00b5_{EK}}{\u00b5_{DEP}}$) can be used to characterize the biophysical properties of different subpopulations (Liu et al., 2019). The EKMr of an insulin vesicle is larger than $\\frac{\u25bd|E\u2192|^{2}}{E^{2}}\u22c5E\u2192_{1}$ of the gates which it has passed through and is smaller/equal to $\\frac{\u25bd|E\u2192|^{2}}{E^{2}}\u22c5E\u2192_{2}$ of the gates where it is captured. In this way, insulin vesicles are separated in the microfluidic channel, thus measuring the EKMr values for the insulin vesicles.\n",
+      "created_at": "2025-12-04T04:52:48.946810Z"
+    },
+    {
+      "id": "eee679ba-be3d-4396-b894-0307c9bb9297",
+      "submission_id": "c7e97889-4ecb-4112-8c91-19291b3570f0",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Michael Ailion, https://ror.org/00cvxb145 University of Washington United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.74989.sa0](https://doi.org/10.7554/eLife.74989.sa0)\n\nThis important study presents an exciting new method for separating organelles in an unbiased way and applies this method to the separation of distinct subpopulations of insulin vesicles. Solid evidence is presented that this method is capable of separating distinct subpopulations of insulin vesicles, but the identification of these subpopulations is incomplete and the biological significance of the proposed changes in vesicle populations remains unclear. This work will be of interest to cell biologists studying a variety of organelles.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Michael Ailion, https://ror.org/00cvxb145 University of Washington United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.74989.sa1](https://doi.org/10.7554/eLife.74989.sa1)\n\nOur editorial process produces two outputs: i) public reviews designed to be posted alongside the preprint for the benefit of readers; ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"iDEP-assisted isolation of insulin secretory vesicles\" for consideration by eLife. Your article has been reviewed by 4 peer reviewers, including Michael Ailion as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Nancy Carrasco as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Alex J B Kreutzberger (Reviewer #2).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nAll of the reviewers are excited about the new technique for separating insulin vesicles, but there was also a concern that the manuscript falls short in definitively demonstrating that the vesicles being measured are indeed insulin vesicles, with the biological significance of the proposed changes in vesicle populations remaining unclear. It is also unclear so far whether the technique permits further biochemical characterization of these vesicles. To be published in eLife, these issues must be resolved. Essential revisions are listed below, followed by a general evaluation summary, and the individual reviews of each of the reviewers.\n\nEssential revisions (for the authors):\n\n1. What are the vesicles being measured? Are these insulin containing vesicles? There is concern given that these vesicles are identified by a single marker and that the data show poor overlap of this marker with insulin by immunostaining. It needs to be resolved which specific synaptotagmin is labeled and further evidence that these vesicles are insulin vesicles needs to be provided. This could possibly be addressed by the use of additional markers and some type of composition or visual (EM) identification.\n\n2. What do the changes in vesicle populations mean? Are the differences biologically meaningful? Without knowing what the various populations of vesicles are, it is difficult to understand what the changes in response to glucose mean. Given that \u03b2 cells only secrete 5-10% of their content with glucose stimulation, it is hard to imagine that whole pools of vesicles change. If they do, this would be fascinating and a significant finding, but parameters need to be defined that could account for the magnitude of the observed changes. For example, how much remodeling of proteins or lipids would be required to account for the observed differences? Is there a way to provide some sort of standardization or comparison for such changes?\n\n3. One of the major advances of the new technology presented is the claimed ability to isolate populations of vesicles for further characterization. However, the feasibility of this is unclear and it is not demonstrated in the paper. Evidence needs to be provided that this method will yield enough sample material to enable further biochemical characterization. This could be as simple as taking two of the different granule populations separated using iDEP and running a Western blot for a few markers of insulin vesicles. That would demonstrate that the method is sorting insulin vesicles and that after sorting they can be characterized to some degree.\n\nReviewer #1 (Recommendations for the authors):\n\n1. In multiple places, the paper refers to performing experiments on \u03b2 cells (e.g. lines 17, 258, 275, 366, 371). INS-1E cells are not true \u03b2 cells and should not be referred to as such.\n\n2. There should be more detailed methods describing the immunolabeling of the vesicles. What pellet is referred to in line 166? How much primary and secondary antibody were used and how long was staining performed?\n\n3. t tests are used to compare specific data points between low and high glucose conditions (Figure 4), but such comparisons require a statistical test that corrects for multiple comparisons.\n\n4. The Results sections describing the data in Figure 4 were difficult to read. Rather than using phrases like \"pattern with discernible features,\" it would help to be specific about what features are being referred to.\n\n5. line 193: what is meant by \"Behavior comparison?\" This is an unintuitive heading.\n\n6. Line 175 should refer to Figure 1C (not Figure 2C).\n\n7. The transparent reporting form does not point to lines in the manuscript that specify how the sample size was determined, and I could not find that information in the manuscript. Other lines referred to in the transparent reporting form are off and appear to have shifted.\n\n8. According to eLife instructions, authors should avoid acronyms in the title:\n\nTitles of eLife research papers should avoid unfamiliar abbreviations or acronyms, or authors should spell out in full or provide a brief explanation for any acronyms. Please revise your title with this advice in mind.\n\n9. For eLife papers, the biological system should be indicated in the title and/or abstract:\n\nThe title and/or abstract should provide a clear indication of the biological system under investigation (i.e., species name or broader taxonomic group, if appropriate). For this paper, the biological system would be INS-1E insulinoma cells. Please revise your title and/or abstract with this advice in mind.\n\nReviewer #2 (Recommendations for the authors):\n\n1. Synaptotagmin V was chosen as a marker for insulin granules before sorting subpopulations. Synaptotagmin isoforms are well known to differentially sort into sub-populations (Zhang et al. 2011 Mol. Biol Cell, Rao et al. 2014 Mol Biol Cell, Rao et al. 2017 JGP, Kreutzberger et al. 2020 eLife). Could you be missing populations because Synaptotagmin V is only on a subset of insulin granules (ie are you sorting a sub-population of a sub-population)? Synaptotagmin VII is well characterized to control a distinct pool of insulin granules \u2013 would granules within this population be missed in your isolation procedure?\n\n2. Insulin granules were found to have different biophysical properties when cells were treated with glucose. Why is this a significant finding?\n\nThis glucose stimulation will trigger secretion and release of insulin and other secretory properties from some fraction of the insulin granules. Would you not expect the loss of these secretory contents to create a difference in dielectrophoretic and electrokinetic properties of the granules by no longer having the released secretory content?\n\n3. If there was more of a biochemical characterization of what compositional differences in lipids and proteins are present within isolated populations of granules \u2013 the impact of this work would be greatly increased.\n\nReviewer #3 (Recommendations for the authors):\n\n1) Studies with additional stimuli or cell treatments may reveal some clues regarding the identities of the major populations being observed that are changing.\n\n2) Control experiments modifying vesicle parameters would be really helpful to understand the implications. This could be done chemically or perhaps knocking down certain vesicle components targeting features of trafficking or maturation.\n\n3) Perhaps examining maturation markers, or age markers, or at least various insulin vesicle markers would be informative and or further confirmation of the changes in response to glucose (i.e. are general to the insulin population and not specific to SytV-positive vesicles).\n\n4) Examination of insulin vesicles from primary cells (rather than an insulinoma cell line), although challenging due to the limited numbers of cells, would greatly improve the impact of this study. Alternatively, data from other insulinoma cell lines may be a useful comparison to determine if the changes are universal or specific to the INS-1E cell line.\n",
+      "created_at": "2025-12-04T04:52:48.946810Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T04:52:48.946810Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T04:52:48.946810Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "c63165e9-de2a-4a22-8d05-bed0e89376ad",
+      "content_id": "cd68bc11-e5f2-4d3b-ae45-5f2fb701a9bc",
+      "claim_id": "C1",
+      "claim": "Organelle heterogeneity and inter-organelle contacts within a single cell contribute to the limited sensitivity of current organelle separation techniques.",
+      "claim_type": "EXPLICIT",
+      "source": "Organelle heterogeneity and inter-organelle contacts within a single cell contribute to the limited sensitivity of current organelle separation techniques, thus hindering organelle subpopulation characterization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as a motivation for the study.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:52:48.946810Z"
+    },
+    {
+      "id": "48bff616-f60a-4e50-a2d0-fb7272b1491f",
+      "content_id": "cd68bc11-e5f2-4d3b-ae45-5f2fb701a9bc",
+      "claim_id": "C2",
+      "claim": "DC-iDEP can identify distinct distribution patterns of insulin vesicles from INS-1E insulinoma cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we use direct current insulator-based dielectrophoresis (DC-iDEP) as an unbiased separation method and demonstrate its capability by identifying distinct distribution patterns of insulin vesicles from INS-1E insulinoma cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main finding stated in the abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:52:48.946810Z"
+    },
+    {
+      "id": "0db400d7-4331-4997-92f3-268434d99d84",
+      "content_id": "cd68bc11-e5f2-4d3b-ae45-5f2fb701a9bc",
+      "claim_id": "C3",
+      "claim": "A significant difference exists in the distribution pattern of insulin vesicles isolated from glucose-stimulated cells relative to unstimulated cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed a significant difference in the distribution pattern of insulin vesicles isolated from glucose-stimulated cells relative to unstimulated cells, in accordance with maturation of vesicles upon glucose stimulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a key finding stated in the abstract and supported by data in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:52:48.946810Z"
+    },
+    {
+      "id": "6375afed-a3be-40ac-814a-fef3520a138b",
+      "content_id": "cd68bc11-e5f2-4d3b-ae45-5f2fb701a9bc",
+      "claim_id": "C4",
+      "claim": "The difference in distribution pattern is indicative of high-resolution separation of vesicle subpopulations.",
+      "claim_type": "EXPLICIT",
+      "source": "We interpret the difference in distribution pattern to be indicative of high-resolution separation of vesicle subpopulations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the results stated in the abstract.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:52:48.946810Z"
+    },
+    {
+      "id": "a137878c-eee8-411d-b69b-b5d4987a7609",
+      "content_id": "cd68bc11-e5f2-4d3b-ae45-5f2fb701a9bc",
+      "claim_id": "C5",
+      "claim": "Cell-to-cell heterogeneity of function within a given cell type arises from differences in genomic, epigenomic, transcriptomic, and proteomic components and their subcellular localizations.",
+      "claim_type": "EXPLICIT",
+      "source": "Cell-to-cell heterogeneity of function within a given cell type arises from differences in genomic, epigenomic, transcriptomic, and proteomic (Goldman et al., 2019) components and their subcellular localizations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Goldman et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:52:48.946810Z"
+    },
+    {
+      "id": "67ef3bd4-c3d3-4220-8304-c3ac74a8b367",
+      "content_id": "cd68bc11-e5f2-4d3b-ae45-5f2fb701a9bc",
+      "claim_id": "C6",
+      "claim": "Subpopulations of organelles have been identified for synaptic vesicles.",
+      "claim_type": "EXPLICIT",
+      "source": "Some examples are subpopulations of organelles as identified for synaptic vesicles (Crawford and Kavalali, 2015), mitochondria (Aryaman et al., 2018), and insulin secretory vesicles (Suckale and Solimena, 2010), among others.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Crawford and Kavalali, 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:52:48.946810Z"
+    },
+    {
+      "id": "2e42d9ce-f6f1-42f7-8809-b4b1bc14c9b8",
+      "content_id": "cd68bc11-e5f2-4d3b-ae45-5f2fb701a9bc",
+      "claim_id": "C7",
+      "claim": "Subpopulations of organelles have been identified for mitochondria.",
+      "claim_type": "EXPLICIT",
+      "source": "Some examples are subpopulations of organelles as identified for synaptic vesicles (Crawford and Kavalali, 2015), mitochondria (Aryaman et al., 2018), and insulin secretory vesicles (Suckale and Solimena, 2010), among others.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Aryaman et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:52:48.946810Z"
+    },
+    {
+      "id": "775dc7d4-e216-4129-b4db-1daba7aab31f",
+      "content_id": "cd68bc11-e5f2-4d3b-ae45-5f2fb701a9bc",
+      "claim_id": "C8",
+      "claim": "Subpopulations of organelles have been identified for insulin secretory vesicles.",
+      "claim_type": "EXPLICIT",
+      "source": "Some examples are subpopulations of organelles as identified for synaptic vesicles (Crawford and Kavalali, 2015), mitochondria (Aryaman et al., 2018), and insulin secretory vesicles (Suckale and Solimena, 2010), among others.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Suckale and Solimena, 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:52:48.946810Z"
+    },
+    {
+      "id": "87eac650-76d8-4376-8500-1b8d5305aff1",
+      "content_id": "cd68bc11-e5f2-4d3b-ae45-5f2fb701a9bc",
+      "claim_id": "C9",
+      "claim": "The biochemical composition of different subpopulations of organelles must vary, reflecting differences in age, maturation, or specific biological role.",
+      "claim_type": "EXPLICIT",
+      "source": "The biochemical composition of each of the different subpopulations of organelles must vary, reflecting differences in age, maturation, or specific biological role.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference based on the concept of organelle subpopulations.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:52:48.946810Z"
+    },
+    {
+      "id": "3f40d13e-d929-4093-b713-908bc78eb8cb",
+      "content_id": "cd68bc11-e5f2-4d3b-ae45-5f2fb701a9bc",
+      "claim_id": "C10",
+      "claim": "Traditional workflows for organelle isolation consist of iterative centrifugation steps.",
+      "claim_type": "EXPLICIT",
+      "source": "A traditional workflow consists of iterative centrifugation steps (Harford and Bonifacino, 2011) to isolate populations of targeted organelles for follow-up analysis with mass spectrometric or other omics-scale assays (Huber et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Harford and Bonifacino, 2011 and Huber et al., 2003.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:52:48.946810Z"
+    },
+    {
+      "id": "873ff3a0-262d-4e67-b61e-2ea4d50f1b00",
+      "content_id": "cd68bc11-e5f2-4d3b-ae45-5f2fb701a9bc",
+      "claim_id": "C11",
+      "claim": "Gradient columns have successfully isolated clathrin-coated vesicles based on differences in organelle densities.",
+      "claim_type": "EXPLICIT",
+      "source": "Gradient columns have successfully isolated clathrin-coated vesicles (Girard et al., 2005), lipid droplets (Brasaemle and Wolins, 2016), mitochondria, and endoplasmic reticulum (ER) populations (Bozidis et al., 2007), from other organelles, based on differences in organelle densities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Girard et al., 2005.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:52:48.946810Z"
+    },
+    {
+      "id": "d92b2b06-4885-49bf-96cb-b9ad56bb03a8",
+      "content_id": "cd68bc11-e5f2-4d3b-ae45-5f2fb701a9bc",
+      "claim_id": "C12",
+      "claim": "Gradient columns have successfully isolated lipid droplets based on differences in organelle densities.",
+      "claim_type": "EXPLICIT",
+      "source": "Gradient columns have successfully isolated clathrin-coated vesicles (Girard et al., 2005), lipid droplets (Brasaemle and Wolins, 2016), mitochondria, and endoplasmic reticulum (ER) populations (Bozidis et al., 2007), from other organelles, based on differences in organelle densities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Brasaemle and Wolins, 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:52:48.946810Z"
+    },
+    {
+      "id": "714c76d9-2bbc-436b-91de-9191ffb6e14d",
+      "content_id": "cd68bc11-e5f2-4d3b-ae45-5f2fb701a9bc",
+      "claim_id": "C13",
+      "claim": "Gradient columns have successfully isolated mitochondria and endoplasmic reticulum populations based on differences in organelle densities.",
+      "claim_type": "EXPLICIT",
+      "source": "Gradient columns have successfully isolated clathrin-coated vesicles (Girard et al., 2005), lipid droplets (Brasaemle and Wolins, 2016), mitochondria, and endoplasmic reticulum (ER) populations (Bozidis et al., 2007), from other organelles, based on differences in organelle densities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Bozidis et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:52:48.946810Z"
+    },
+    {
+      "id": "6aca3845-8471-4261-9e4d-5e6edf73caf7",
+      "content_id": "cd68bc11-e5f2-4d3b-ae45-5f2fb701a9bc",
+      "claim_id": "C14",
+      "claim": "Subpopulations of a given organelle with similar buoyant densities are often hard to differentiate and separate in gradient columns.",
+      "claim_type": "EXPLICIT",
+      "source": "However, subpopulations of a given organelle with similar buoyant densities are often hard to differentiate and separate in these columns.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a limitation of gradient column methods stated in the text.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:52:48.946810Z"
+    },
+    {
+      "id": "4ba5b788-b61f-4ad4-9c5c-cf2e9d05d773",
+      "content_id": "cd68bc11-e5f2-4d3b-ae45-5f2fb701a9bc",
+      "claim_id": "C15",
+      "claim": "Immunoisolation of organelles is limited by the need for specific organelle markers.",
+      "claim_type": "EXPLICIT",
+      "source": "Immunoisolation of organelles, although yielding pure populations, is limited by the need for specific organelle markers (Lange et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Lange et al., 2000.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:52:48.946810Z"
+    },
+    {
+      "id": "ed4e4228-5878-4a1d-ac61-8f5f2d3fda76",
+      "content_id": "cd68bc11-e5f2-4d3b-ae45-5f2fb701a9bc",
+      "claim_id": "C16",
+      "claim": "Free-flow electrophoresis has been adopted for use in microfluidic separation of organelles.",
+      "claim_type": "EXPLICIT",
+      "source": "Electrophoretic approaches, such as free-flow electrophoresis, have been adopted for use in microfluidic separation of organelles (Lu et al., 2004), enabling downstream analyses of the enriched fractions in the absence of major contaminants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Lu et al., 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:52:48.946810Z"
+    },
+    {
+      "id": "73efefb2-281f-4d94-87d3-942e9ea036e3",
+      "content_id": "cd68bc11-e5f2-4d3b-ae45-5f2fb701a9bc",
+      "claim_id": "C17",
+      "claim": "Free-flow electrophoresis separations are limited to differentiation based on charge and size of the components.",
+      "claim_type": "EXPLICIT",
+      "source": "However, these separations are limited to differentiation based on charge and size of the components.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a limitation of electrophoretic approaches stated in the text.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:52:48.946810Z"
+    },
+    {
+      "id": "d1a5d4ea-908a-488a-98a0-9595206731f6",
+      "content_id": "cd68bc11-e5f2-4d3b-ae45-5f2fb701a9bc",
+      "claim_id": "C18",
+      "claim": "Traditional isolation approaches lack sufficient sensitivity and robustness to isolate subpopulations of an organelle for biochemical characterizations except for smooth versus rough ER.",
+      "claim_type": "EXPLICIT",
+      "source": "Although powerful, each of these traditional isolation approaches lacks sufficient sensitivity and robustness to isolate subpopulations of an organelle for biochemical characterizations such as proteomic analysis or imaging, except for smooth versus rough ER (Lee et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a limitation of traditional methods with citation to Lee et al., 2015 for the exception.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:52:48.946810Z"
+    },
+    {
+      "id": "45c0e047-2553-451c-a361-5e86999afde8",
+      "content_id": "cd68bc11-e5f2-4d3b-ae45-5f2fb701a9bc",
+      "claim_id": "C19",
+      "claim": "DC-iDEP utilizes higher order electric field effects to differentiate bioparticles based on radius, zeta potential, permittivity, interfacial polarizability, charge distribution, deformability, and conductivity.",
+      "claim_type": "EXPLICIT",
+      "source": "One attractive strategy is to exploit higher order electric field effects which directly probe the nuanced physical properties of small complex bioparticles\u2014differentiating on radius, zeta potential, permittivity, interfacial polarizability, charge distribution, deformability, and conductivity of the particles, to name but a few (Chen et al., 2009; Hilton et al., 2020; Pethig, 2019; Matyushov, 2019; Hayes, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:52:48.946810Z"
+    },
+    {
+      "id": "c36e3348-347f-4c78-8399-5b9b2ddc7226",
+      "content_id": "cd68bc11-e5f2-4d3b-ae45-5f2fb701a9bc",
+      "claim_id": "C20",
+      "claim": "DC-iDEP has been used for separating subpopulations of viruses, bacteria, organelles, and proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Direct current insulator-based dielectrophoresis (DC-iDEP) utilizes these features for separating subpopulations of bioparticles such as viruses, bacteria, organelles, and proteins (Hayes, 2020; Ding et al., 2016; Jones et al., 2015; Liu and Hayes, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:52:48.946810Z"
+    },
+    {
+      "id": "543adbab-bd98-4b0f-b3b2-fcd326578d3c",
+      "content_id": "cd68bc11-e5f2-4d3b-ae45-5f2fb701a9bc",
+      "claim_id": "C21",
+      "claim": "DC-iDEP has been specifically used for separations ranging from neural progenitors and stem cells to resistant versus susceptible strains of cellular pathogens.",
+      "claim_type": "EXPLICIT",
+      "source": "This approach offers a wide dynamic range, as it has been specifically used for separations ranging from neural progenitors and stem cells (Liu et al., 2019) to resistant versus susceptible strains of cellular pathogens (Hilton et al., 2020; Jones et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Liu et al., 2019, Hilton et al., 2020, and Jones et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:52:48.946810Z"
+    },
+    {
+      "id": "e43aa662-93ee-42e6-aa29-c4475eb75160",
+      "content_id": "cd68bc11-e5f2-4d3b-ae45-5f2fb701a9bc",
+      "claim_id": "C22",
+      "claim": "DC-iDEP is well suited for assaying subpopulations of organelles where differentiating factors are not known.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike epitope recognition strategies, DC-iDEP is well suited for assaying subpopulations of organelles, where differentiating factors are not known.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a stated advantage of DC-iDEP in the text.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:52:48.946810Z"
+    },
+    {
+      "id": "5885a73b-0063-4467-9b03-376280ee3ade",
+      "content_id": "cd68bc11-e5f2-4d3b-ae45-5f2fb701a9bc",
+      "claim_id": "C23",
+      "claim": "DC-iDEP can be used as a discovery-based approach to interrogate a broader spectrum of organelle subpopulations.",
+      "claim_type": "EXPLICIT",
+      "source": "DC-iDEP can be used as a discovery-based approach to interrogate a broader spectrum of organelle subpopulations (Liu et al., 2019) because the bioparticle separations occur quickly and require small sample volume (Kim et al., 2019; Lapizco\u2010Encinas and Rito\u2010Palomares, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Liu et al., 2019, Kim et al., 2019, and Lapizco-Encinas and Rito-Palomares, 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:52:48.946810Z"
+    },
+    {
+      "id": "8a410f81-a939-4217-9a28-ad283940bb42",
+      "content_id": "cd68bc11-e5f2-4d3b-ae45-5f2fb701a9bc",
+      "claim_id": "C24",
+      "claim": "Pancreatic \u03b2-cells are responsible for secreting insulin in a tightly regulated process that is key to maintaining glucose homeostasis.",
+      "claim_type": "EXPLICIT",
+      "source": "Pancreatic \u03b2-cells are responsible for secreting insulin in a tightly regulated process that is key to maintaining glucose homeostasis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established biological knowledge stated in the text.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:52:48.946810Z"
+    },
+    {
+      "id": "0a16025f-5c35-4744-bbfc-7e12a8fd0255",
+      "content_id": "cd68bc11-e5f2-4d3b-ae45-5f2fb701a9bc",
+      "claim_id": "C25",
+      "claim": "Insulin vesicles undergo a complex functional maturation process that is required for proper secretion of insulin.",
+      "claim_type": "EXPLICIT",
+      "source": "Insulin vesicles undergo a complex functional maturation process that is required for proper secretion of insulin and this process is dysregulated in diabetes (Suckale and Solimena, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Suckale and Solimena, 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:52:48.946810Z"
+    },
+    {
+      "id": "d8a8c84b-79a6-4f80-be17-41b09221b7ef",
+      "content_id": "cd68bc11-e5f2-4d3b-ae45-5f2fb701a9bc",
+      "claim_id": "C26",
+      "claim": "The insulin vesicle maturation process is dysregulated in diabetes.",
+      "claim_type": "EXPLICIT",
+      "source": "Insulin vesicles undergo a complex functional maturation process that is required for proper secretion of insulin and this process is dysregulated in diabetes (Suckale and Solimena, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Suckale and Solimena, 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:52:48.946810Z"
+    },
+    {
+      "id": "8a0a961b-5620-48a8-a785-b68ab2870d95",
+      "content_id": "cd68bc11-e5f2-4d3b-ae45-5f2fb701a9bc",
+      "claim_id": "C27",
+      "claim": "Immature insulin vesicles act as a sorting compartment.",
+      "claim_type": "EXPLICIT",
+      "source": "Immature insulin vesicles act as a sorting compartment (Feng and Arvan, 2003; Huang and Arvan, 1994) and mature into two distinct pools of functional vesicles within the cell: the readily releasable pool and the reserve pool (Boland et al., 2017; Orci, 1985; Orci et al., 1986; Dean, 1973; Figure 1A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Feng and Arvan, 2003 and Huang and Arvan, 1994.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:52:48.946810Z"
+    },
+    {
+      "id": "e55a267f-b338-423a-94eb-a2cc18347d8c",
+      "content_id": "cd68bc11-e5f2-4d3b-ae45-5f2fb701a9bc",
+      "claim_id": "C28",
+      "claim": "Immature insulin vesicles mature into two distinct pools of functional vesicles within the cell: the readily releasable pool and the reserve pool.",
+      "claim_type": "EXPLICIT",
+      "source": "Immature insulin vesicles act as a sorting compartment (Feng and Arvan, 2003; Huang and Arvan, 1994) and mature into two distinct pools of functional vesicles within the cell: the readily releasable pool and the reserve pool (Boland et al., 2017; Orci, 1985; Orci et al., 1986; Dean, 1973; Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citations to Boland et al., 2017, Orci, 1985, Orci et al., 1986, Dean, 1973, and Figure 1A.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:52:48.946810Z"
+    },
+    {
+      "id": "b5b3fb4e-9506-4933-a383-ae2aa09bcbce",
+      "content_id": "cd68bc11-e5f2-4d3b-ae45-5f2fb701a9bc",
+      "claim_id": "C29",
+      "claim": "The heterogeneity among subpopulations of insulin vesicles likely arises from the varying stages of the maturation process.",
+      "claim_type": "EXPLICIT",
+      "source": "The heterogeneity among subpopulations of insulin vesicles (Hou et al., 2009; Michael et al., 2006; Zhang et al., 2020) likely arises from the varying stages of the maturation process.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference supported by citations to Hou et al., 2009, Michael et al., 2006, and Zhang et al., 2020.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:52:48.946810Z"
+    },
+    {
+      "id": "74458dd3-3522-4aa2-b1b1-e11623a4e71c",
+      "content_id": "cd68bc11-e5f2-4d3b-ae45-5f2fb701a9bc",
+      "claim_id": "C30",
+      "claim": "Insulin vesicle heterogeneity accounts for modifications of insulin vesicle membrane proteins, and variances in their age, mobility, and localization within the cell.",
+      "claim_type": "EXPLICIT",
+      "source": "This accounts for modifications of insulin vesicle membrane proteins, and variances in their age, mobility, and localization within the cell (Suckale and Solimena, 2010; Hao et al., 2005; Halban, 1982; Gold et al., 1982).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Suckale and Solimena, 2010, Hao et al., 2005, Halban, 1982, and Gold et al., 1982.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:52:48.946810Z"
+    },
+    {
+      "id": "e49fde98-d4c1-4491-8526-1c9b22d996c2",
+      "content_id": "cd68bc11-e5f2-4d3b-ae45-5f2fb701a9bc",
+      "claim_id": "C31",
+      "claim": "The associated biochemical constituents of insulin vesicles have remained elusive in the absence of sensitive isolation approaches.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the associated biochemical constituents of insulin vesicles have remained elusive in the absence of sensitive isolation approaches.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the current state of knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:52:48.946810Z"
+    },
+    {
+      "id": "58970985-cb9c-4af0-8290-5e97e4f95232",
+      "content_id": "cd68bc11-e5f2-4d3b-ae45-5f2fb701a9bc",
+      "claim_id": "C32",
+      "claim": "Several groups have attempted to isolate and characterize insulin vesicles.",
+      "claim_type": "EXPLICIT",
+      "source": "The importance of insulin vesicles in glucose homeostasis has led several groups to attempt to isolate and characterize the insulin vesicles (Thurmond, 2007; Hutton et al., 1982).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Thurmond, 2007 and Hutton et al., 1982.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:52:48.946810Z"
+    },
+    {
+      "id": "c3b862a0-1532-4e0d-bdb9-8b5c1c31d4a8",
+      "content_id": "cd68bc11-e5f2-4d3b-ae45-5f2fb701a9bc",
+      "claim_id": "C33",
+      "claim": "There is very little overlap in protein IDs associated with insulin vesicles from different proteomics studies.",
+      "claim_type": "EXPLICIT",
+      "source": "While these studies and follow-up proteomics analysis of the isolated vesicles Schvartz et al., 2012; Li et al., 2018; Brunner et al., 2007; Hickey et al., 2009 have provided insights into the biochemistry of these vesicles, there's very little overlap in protein IDs associated with these organelles from different studies (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citations and Figure 1B showing a Venn diagram with minimal overlap.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:52:48.946810Z"
+    },
+    {
+      "id": "0c8feb6c-5ad6-411e-aaa0-89c79e2d9830",
+      "content_id": "cd68bc11-e5f2-4d3b-ae45-5f2fb701a9bc",
+      "claim_id": "C34",
+      "claim": "INS-1E cells used in these studies were capable of insulin secretion in response to increasing concentrations of glucose.",
+      "claim_type": "EXPLICIT",
+      "source": "The INS-1E cells used in these studies were capable of insulin secretion in response to increasing concentrations of glucose (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:52:48.946810Z"
+    },
+    {
+      "id": "c051c37c-6587-4e0b-8292-9bcdbee0b280",
+      "content_id": "cd68bc11-e5f2-4d3b-ae45-5f2fb701a9bc",
+      "claim_id": "C35",
+      "claim": "Lower fractions of the density column (9\u201312) contained the highest insulin content.",
+      "claim_type": "EXPLICIT",
+      "source": "ELISAs identified that lower fractions of the density column (9\u201312) contained the highest insulin content (Figure 1\u2014figure supplement 2A), the same fractions shown to be enriched in the insulin vesicle marker, synaptotagmin IX, by WB (Figure 1\u2014figure supplement 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 1\u2014figure supplement 2A and 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:52:48.946810Z"
+    },
+    {
+      "id": "1bec085e-98b1-4c1d-9732-034278c4de0e",
+      "content_id": "cd68bc11-e5f2-4d3b-ae45-5f2fb701a9bc",
+      "claim_id": "C36",
+      "claim": "Fractions 9-12 of the density column were enriched in the insulin vesicle marker, synaptotagmin IX.",
+      "claim_type": "EXPLICIT",
+      "source": "ELISAs identified that lower fractions of the density column (9\u201312) contained the highest insulin content (Figure 1\u2014figure supplement 2A), the same fractions shown to be enriched in the insulin vesicle marker, synaptotagmin IX, by WB (Figure 1\u2014figure supplement 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 1\u2014figure supplement 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:52:48.946810Z"
+    },
+    {
+      "id": "4edaef87-6dfd-49df-945a-fe0a03fbb093",
+      "content_id": "cd68bc11-e5f2-4d3b-ae45-5f2fb701a9bc",
+      "claim_id": "C37",
+      "claim": "Fractions 9-12 of the density column contained particles of 150\u2013200 nm radius, which corresponds to the known range of insulin vesicles radii.",
+      "claim_type": "EXPLICIT",
+      "source": "DLS indicated that these fractions contained particles of 150\u2013200 nm radius, which corresponds to the known range of insulin vesicles radii (Olofsson et al., 2002; Greider et al., 1969).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by DLS data and citations to Olofsson et al., 2002 and Greider et al., 1969.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:52:48.946810Z"
+    },
+    {
+      "id": "626d2a42-60b7-46c3-be3a-22a6aa6817e7",
+      "content_id": "cd68bc11-e5f2-4d3b-ae45-5f2fb701a9bc",
+      "claim_id": "C38",
+      "claim": "The final enriched vesicle sample included some contaminants from unwanted organelles, such as the ER.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the WB revealed that the final enriched vesicle sample included some contaminants from unwanted organelles, such as the ER (Figure 1\u2014figure supplement 2B), this will not confound the analysis of insulin vesicles in the iDEP device as the fluorescent labeling was targeted only at insulin vesicles.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by western blot data shown in Figure 1\u2014figure supplement 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:52:48.946810Z"
+    },
+    {
+      "id": "122f8a8b-9e70-430f-9255-d1a6caed465e",
+      "content_id": "cd68bc11-e5f2-4d3b-ae45-5f2fb701a9bc",
+      "claim_id": "C39",
+      "claim": "Isolated insulin vesicles were intact prior to DC-iDEP as verified by fluorescence confocal microscopy showing distinct puncta rather than a diffuse GFP signal.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed distinct puncta rather than a diffuse GFP signal which indicated that the vesicles were intact and not ruptured.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on fluorescence microscopy observations described in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:52:48.946810Z"
+    },
+    {
+      "id": "fe28ea9f-9c5c-4424-a7e7-045270174182",
+      "content_id": "cd68bc11-e5f2-4d3b-ae45-5f2fb701a9bc",
+      "claim_id": "C40",
+      "claim": "Intact vesicles with the expected size and shape were observed using both transmission electron microscopy (TEM) and cryo-electron microscopy (cryo-EM).",
+      "claim_type": "EXPLICIT",
+      "source": "We observed intact vesicles with the expected size and shape using both transmission electron microscopy (TEM) and cryo-electron microscopy (cryo-EM) (Figure 1\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by EM images shown in Figure 1\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:52:48.946810Z"
+    },
+    {
+      "id": "d7e3b60d-6eca-479d-9c5c-5f49112a6cb7",
+      "content_id": "cd68bc11-e5f2-4d3b-ae45-5f2fb701a9bc",
+      "claim_id": "C41",
+      "claim": "Synaptotagmin IX colocalizes with insulin in fluorescence microscopy imaging.",
+      "claim_type": "EXPLICIT",
+      "source": "Enriched vesicle samples from INS-1E cells were subjected to analysis using DC-iDEP after labeling with insulin vesicle marker synaptotagmin IX (Schvartz et al., 2012; Brunner et al., 2007), which was confirmed to colocalize with insulin in fluorescence microscopy imaging (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by colocalization data shown in Figure 2 and citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:52:48.946810Z"
+    },
+    {
+      "id": "1064ca13-486e-4bce-a92b-9c1aed86021e",
+      "content_id": "cd68bc11-e5f2-4d3b-ae45-5f2fb701a9bc",
+      "claim_id": "C42",
+      "claim": "A Pearson's r value of 0.66 was observed for colocalization between insulin and synaptotagmin IX in one cell.",
+      "claim_type": "EXPLICIT",
+      "source": "Pearson's r value, 0.66 (D) and 0.64 (H).",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This is quantitative data from Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:52:48.946810Z"
+    },
+    {
+      "id": "9e1960b1-26ce-4664-9ce7-c9ad2f7941af",
+      "content_id": "cd68bc11-e5f2-4d3b-ae45-5f2fb701a9bc",
+      "claim_id": "C43",
+      "claim": "A Pearson's r value of 0.64 was observed for colocalization between insulin and synaptotagmin IX in another cell.",
+      "claim_type": "EXPLICIT",
+      "source": "Pearson's r value, 0.66 (D) and 0.64 (H).",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This is quantitative data from Figure 2H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:52:48.946810Z"
+    },
+    {
+      "id": "3c39df72-580d-4e28-b4dc-d648f2a5011f",
+      "content_id": "cd68bc11-e5f2-4d3b-ae45-5f2fb701a9bc",
+      "claim_id": "C44",
+      "claim": "At high voltages (2100 V), all particles were prevented from entering the first gate because DEP forces exceed EK forces.",
+      "claim_type": "EXPLICIT",
+      "source": "The separation system was operated in a discovery or scanning mode by first applying a high voltage (2100 V, empirically determined, Figure 3) such that all particles were prevented from entering the first gate, because DEP forces exceed EK forces.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of the experimental method and its physical basis.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:52:48.946810Z"
+    },
+    {
+      "id": "c44ed69c-62bc-4c23-a5aa-9036ef788204",
+      "content_id": "cd68bc11-e5f2-4d3b-ae45-5f2fb701a9bc",
+      "claim_id": "C45",
+      "claim": "The voltage was lowered incrementally (300 V for each step) allowing various subpopulations to enter the separation zone and be sorted along the device according to their specific EKMr values.",
+      "claim_type": "EXPLICIT",
+      "source": "The voltage was then lowered incrementally (300 V for each step) allowing various subpopulations to enter the separation zone and be sorted along the device according to their specific EKMr values (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of the experimental method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:52:48.946810Z"
+    },
+    {
+      "id": "c8db8285-6883-4a9e-a422-f190df0be982",
+      "content_id": "cd68bc11-e5f2-4d3b-ae45-5f2fb701a9bc",
+      "claim_id": "C46",
+      "claim": "A bolus forms at a gate, corresponding to an EKMr value that is a result of a balance between DEP and EK forces on each particle.",
+      "claim_type": "EXPLICIT",
+      "source": "A bolus forms at a gate, corresponding to an EKMr value that is a result of a balance between DEP and EK forces on each particle and reflects a complex set of biological, chemical, and biophysical properties of the vesicles (Jones et al., 2015; Hilton and Hayes, 2019; Crowther et al., 2019; Liu and Hayes, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Jones et al., 2015, Hilton and Hayes, 2019, Crowther et al., 2019, and Liu and Hayes, 2020.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:52:48.946810Z"
+    },
+    {
+      "id": "37560831-bf06-4c59-9716-04035e487c4c",
+      "content_id": "cd68bc11-e5f2-4d3b-ae45-5f2fb701a9bc",
+      "claim_id": "C47",
+      "claim": "At an applied voltage of 1800 V, n-insulin vesicles were sensed at EKMr values below 1.5\u00d710^10 V/m^2 in patterns of overlapping subpopulations.",
+      "claim_type": "EXPLICIT",
+      "source": "At an applied voltage of 1800 V, particles were sensed at EKMr values below 1.5\u00d71010 V/m2 in patterns of overlapping subpopulations (Figure 4A, blue circles).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is data from Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:52:48.946810Z"
+    },
+    {
+      "id": "d913fcd0-235b-4429-a81a-47b5d49c99e5",
+      "content_id": "cd68bc11-e5f2-4d3b-ae45-5f2fb701a9bc",
+      "claim_id": "C48",
+      "claim": "At an applied voltage of 1200 V, notable and discernible features of n-insulin vesicle bioparticle distribution are apparent around 1.2\u00d710^10 and 1.8\u00d710^10 V/m^2.",
+      "claim_type": "EXPLICIT",
+      "source": "Notable and discernible features of bioparticle distribution are apparent around 1.2\u00d71010 and 1.8\u00d71010 V/m2 at an applied voltage of 1200 V (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is data from Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:52:48.946810Z"
+    },
+    {
+      "id": "fe0dc5c4-d9e9-47a1-8d02-64318e2e914b",
+      "content_id": "cd68bc11-e5f2-4d3b-ae45-5f2fb701a9bc",
+      "claim_id": "C49",
+      "claim": "At 900 V, n-insulin vesicles show a similar but attenuated feature of the distribution around 1.2\u00d710^10 V/m^2.",
+      "claim_type": "EXPLICIT",
+      "source": "Lowering the voltage to 900 V, and redistribution of bioparticles based on adapted properties of the channel, reveals a similar but attenuated feature of the distribution around 1.2\u00d71010 V/m2 (Figure 4D), whereas particles with EKMr values greater than 1.5\u00d71010 V/m2 leave the channel at this voltage.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is data from Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:52:48.946810Z"
+    },
+    {
+      "id": "181b0016-85bb-4e67-bbfd-f323a9947a6f",
+      "content_id": "cd68bc11-e5f2-4d3b-ae45-5f2fb701a9bc",
+      "claim_id": "C50",
+      "claim": "At 900 V, redistribution of n-insulin vesicles forms a distinct peak around 5\u20136\u00d710^9 V/m^2.",
+      "claim_type": "EXPLICIT",
+      "source": "At this voltage, redistribution of particles, previously retained in overlapping patterns at 1200 V, forms a distinct peak around 5\u20136\u00d7109 V/m2 (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is data from Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:52:48.946810Z"
+    },
+    {
+      "id": "d0a350b1-fd34-4369-bb84-e83898902b1b",
+      "content_id": "cd68bc11-e5f2-4d3b-ae45-5f2fb701a9bc",
+      "claim_id": "C51",
+      "claim": "At 600 V, n-insulin vesicles show similar patterns of particle distribution around 5\u20136\u00d710^9 V/m^2, as well as distinctive patterns around 3\u20134\u00d710^9 V/m^2.",
+      "claim_type": "EXPLICIT",
+      "source": "Further lowering the voltage to 600 V shows similar patterns of particle distribution around 5\u20136\u00d7109 V/m2, as well as distinctive patterns around 3\u20134\u00d7109 V/m2 (Figure 4E), while leaving out populations with EKMr values higher than 1.0\u00d71010 V/m2.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is data from Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:52:48.946810Z"
+    },
+    {
+      "id": "a9bab241-c98b-4f88-9c3b-a30ba94d52ba",
+      "content_id": "cd68bc11-e5f2-4d3b-ae45-5f2fb701a9bc",
+      "claim_id": "C52",
+      "claim": "At 1800 V, g-insulin vesicles show distribution of particles at values up to 2.3\u00d710^10 V/m^2 (compared to a maximum value of 1.5\u00d710^10 V/m^2 for the untreated populations).",
+      "claim_type": "EXPLICIT",
+      "source": "Distribution of particles was observed at values up to 2.3\u00d71010 V/m2 (compared to a maximum value of 1.5\u00d71010 V/m2 for the untreated populations) (Figure 4A), which suggests that these vesicles have a broader range of properties than the population from the untreated cells.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is data from Figure 4A with an interpretation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:52:48.946810Z"
+    },
+    {
+      "id": "9ffe97ac-db9c-4dd5-ade5-90bca1c19096",
+      "content_id": "cd68bc11-e5f2-4d3b-ae45-5f2fb701a9bc",
+      "claim_id": "C53",
+      "claim": "g-insulin vesicles have a broader range of properties than the population from the untreated cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Distribution of particles was observed at values up to 2.3\u00d71010 V/m2 (compared to a maximum value of 1.5\u00d71010 V/m2 for the untreated populations) (Figure 4A), which suggests that these vesicles have a broader range of properties than the population from the untreated cells.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the broader distribution range observed in Figure 4A.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:52:48.946810Z"
+    },
+    {
+      "id": "f7fe9548-9065-478f-9585-5e42a53bce03",
+      "content_id": "cd68bc11-e5f2-4d3b-ae45-5f2fb701a9bc",
+      "claim_id": "C54",
+      "claim": "At 1500 V, the first evidence of a distinct distribution feature for g-insulin vesicles was captured around 7\u20138\u00d710^9 V/m^2.",
+      "claim_type": "EXPLICIT",
+      "source": "The first evidence of a distinct distribution feature was captured around 7\u20138\u00d7109 V/m2 when the voltage was lowered to 1500 V (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is data from Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:52:48.946810Z"
+    },
+    {
+      "id": "be6d28b2-b9e0-4e94-8a52-436b0e6c4110",
+      "content_id": "cd68bc11-e5f2-4d3b-ae45-5f2fb701a9bc",
+      "claim_id": "C55",
+      "claim": "At 1200 V, g-insulin vesicles show a distribution pattern with discernible features around 7\u20138\u00d710^9 V/m^2 and a distinct peak around 1.1\u00d710^10 V/m^2.",
+      "claim_type": "EXPLICIT",
+      "source": "Decreasing the voltage to 1200 V and subsequent particle redistribution in the channel revealed a distribution pattern with discernible features around 7\u20138\u00d7109 V/m2, like those observed at 1500 V, as well as a distinct peak around 1.1\u00d71010 V/m2 (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is data from Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:52:48.946810Z"
+    },
+    {
+      "id": "210fb5e7-4cea-4e1b-93b3-0d0cddc2e808",
+      "content_id": "cd68bc11-e5f2-4d3b-ae45-5f2fb701a9bc",
+      "claim_id": "C56",
+      "claim": "At 900 V, g-insulin vesicles show a unique distribution pattern with discernible features around 1.1\u00d710^10 V/m^2, 8\u00d710^9 V/m^2, and a peak around 4\u00d710^9 V/m^2.",
+      "claim_type": "EXPLICIT",
+      "source": "Further lowering the voltage to 900 V resulted in a unique distribution pattern with discernible features around 1.1\u00d71010 V/m2 (Figure 4D), similar to 1200 V, and 8\u00d7109 V/m2 (Figure 4D), previously observed at 1500 and 1200 V (Figure 4B and C). Another feature of this distribution pattern was a peak around 4\u00d7109 V/m2 (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is data from Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:52:48.946810Z"
+    },
+    {
+      "id": "89003d16-c6fc-4e57-bb20-38919c4415e9",
+      "content_id": "cd68bc11-e5f2-4d3b-ae45-5f2fb701a9bc",
+      "claim_id": "C57",
+      "claim": "At 600 V, g-insulin vesicles show a distribution pattern with features around 4\u00d710^9 and 8\u00d710^9 V/m^2.",
+      "claim_type": "EXPLICIT",
+      "source": "Ultimately, decreasing the voltage to 600 V revealed a distribution pattern with features around 4\u00d7109 and 8\u00d7109 V/m2 (Figure 4E), like those observed at higher voltages, leaving out patterns that were observed at EKMr values higher than 1.0\u00d71010 V/m2.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is data from Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:52:48.946810Z"
+    },
+    {
+      "id": "45e6646d-9774-403d-9073-126d58a7a20d",
+      "content_id": "cd68bc11-e5f2-4d3b-ae45-5f2fb701a9bc",
+      "claim_id": "C58",
+      "claim": "At 1200 V, there is a statistically significant interaction between the effect of treatment on vesicles collected at each EKMr value (F(8, 45)=3.61, p=0.003).",
+      "claim_type": "EXPLICIT",
+      "source": "Using a two-way ANOVA, we found a statistically significant interaction between the effect of treatment on vesicles collected at each EKMr value for data collected only at 1200 V (F(8, 45)=3.61, p=0.003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical analysis result.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:52:48.946810Z"
+    },
+    {
+      "id": "2d824c53-76a3-4119-8a20-da71de4e854d",
+      "content_id": "cd68bc11-e5f2-4d3b-ae45-5f2fb701a9bc",
+      "claim_id": "C59",
+      "claim": "At 1200 V, there is a significant difference in the intensity or quantity of vesicles collected between treated and untreated samples at 1.10\u00d710^9 V/m^2 (p=0.0249).",
+      "claim_type": "EXPLICIT",
+      "source": "A Bonferroni post hoc test revealed a significant difference in the intensity or quantity of vesicles collected between treated and untreated samples at 1.10\u00d7109 V/m2 (p=0.0249), 5.35\u00d7109 V/m2 (p=0.0469), 7.45\u00d7109 V/m2 (p=0.0369).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical analysis result.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:52:48.946810Z"
+    },
+    {
+      "id": "02f7a354-5b0f-4248-828e-6bff0e0765e5",
+      "content_id": "cd68bc11-e5f2-4d3b-ae45-5f2fb701a9bc",
+      "claim_id": "C60",
+      "claim": "At 1200 V, there is a significant difference in the intensity or quantity of vesicles collected between treated and untreated samples at 5.35\u00d710^9 V/m^2 (p=0.0469).",
+      "claim_type": "EXPLICIT",
+      "source": "A Bonferroni post hoc test revealed a significant difference in the intensity or quantity of vesicles collected between treated and untreated samples at 1.10\u00d7109 V/m2 (p=0.0249), 5.35\u00d7109 V/m2 (p=0.0469), 7.45\u00d7109 V/m2 (p=0.0369).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical analysis result.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:52:48.946810Z"
+    },
+    {
+      "id": "533b09ea-c54f-420e-9926-0af4c2046d57",
+      "content_id": "cd68bc11-e5f2-4d3b-ae45-5f2fb701a9bc",
+      "claim_id": "C61",
+      "claim": "At 1200 V, there is a significant difference in the intensity or quantity of vesicles collected between treated and untreated samples at 7.45\u00d710^9 V/m^2 (p=0.0369).",
+      "claim_type": "EXPLICIT",
+      "source": "A Bonferroni post hoc test revealed a significant difference in the intensity or quantity of vesicles collected between treated and untreated samples at 1.10\u00d7109 V/m2 (p=0.0249), 5.35\u00d7109 V/m2 (p=0.0469), 7.45\u00d7109 V/m2 (p=0.0369).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical analysis result.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:52:48.946810Z"
+    },
+    {
+      "id": "461917a0-3836-401d-a290-9523d37ae1ce",
+      "content_id": "cd68bc11-e5f2-4d3b-ae45-5f2fb701a9bc",
+      "claim_id": "C62",
+      "claim": "The differences in vesicle collection between treated and untreated samples reflect a shift in the populations of insulin vesicles upon glucose stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "These differences reflect a shift in the populations of insulin vesicles upon glucose stimulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the statistical results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:52:48.946810Z"
+    },
+    {
+      "id": "9c2077a5-65a9-4a38-9662-58ac027d3f71",
+      "content_id": "cd68bc11-e5f2-4d3b-ae45-5f2fb701a9bc",
+      "claim_id": "C63",
+      "claim": "Different distribution patterns for insulin vesicles isolated from glucose-stimulated versus unstimulated cells suggest glucose stimulation alters the insulin vesicle subpopulations.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we observed different distribution patterns for insulin vesicles isolated from glucose-stimulated versus unstimulated cells, which suggests glucose stimulation alters the insulin vesicle subpopulations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the observed distribution patterns.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:52:48.946810Z"
+    },
+    {
+      "id": "9b61e2c2-a0b5-43bd-b7d4-3813072480a1",
+      "content_id": "cd68bc11-e5f2-4d3b-ae45-5f2fb701a9bc",
+      "claim_id": "C64",
+      "claim": "The observed differences in insulin vesicle distribution patterns are consistent with findings from single-cell soft X-ray tomography, which revealed heterogeneities in the composition of insulin vesicles and their molecular densities upon glucose stimulation due to vesicle maturation.",
+      "claim_type": "EXPLICIT",
+      "source": "This is consistent with findings from single-cell soft X-ray tomography, which revealed heterogeneities in the composition of insulin vesicles and their molecular densities upon glucose stimulation due to vesicle maturation (White et al., 2020; Loconte et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to White et al., 2020 and Loconte et al., 2022.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:52:48.946810Z"
+    },
+    {
+      "id": "9c094339-cd67-4fd6-ae5a-378bc1c821ac",
+      "content_id": "cd68bc11-e5f2-4d3b-ae45-5f2fb701a9bc",
+      "claim_id": "C65",
+      "claim": "Other studies have observed enrichment of certain subpopulations of vesicles in response to glucose stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Other studies have also observed enrichment of certain subpopulations of vesicles in response to glucose stimulation (Straub et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Straub et al., 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:52:48.946810Z"
+    },
+    {
+      "id": "2d7c529a-e9cb-423f-851c-a9dc04b15c3e",
+      "content_id": "cd68bc11-e5f2-4d3b-ae45-5f2fb701a9bc",
+      "claim_id": "C66",
+      "claim": "The intensity peaks observed at specific EKMr values likely correspond to some of the previously described insulin vesicle subpopulations.",
+      "claim_type": "EXPLICIT",
+      "source": "The intensity peaks we observed at specific EKMr values likely correspond to some of the previously described insulin vesicle subpopulations (Zhang et al., 2020; Norris et al., 2021; Neukam et al., 2020; Yau et al., 2020; Kreutzberger et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation supported by citations to Zhang et al., 2020, Norris et al., 2021, Neukam et al., 2020, Yau et al., 2020, and Kreutzberger et al., 2020.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:52:48.946810Z"
+    },
+    {
+      "id": "fc4d7041-5cd1-4588-b91b-a2da113e7ac9",
+      "content_id": "cd68bc11-e5f2-4d3b-ae45-5f2fb701a9bc",
+      "claim_id": "C67",
+      "claim": "Larger particles are expected to have a smaller EKMr value compared to smaller particles.",
+      "claim_type": "EXPLICIT",
+      "source": "Larger particles are expected to have a smaller EKMr value compared to smaller particles (Hilton et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Hilton et al., 2020.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:52:48.946810Z"
+    },
+    {
+      "id": "bfed94e4-417b-4c40-b99e-f75386e6fd2a",
+      "content_id": "cd68bc11-e5f2-4d3b-ae45-5f2fb701a9bc",
+      "claim_id": "C68",
+      "claim": "Subpopulations containing larger insulin vesicles, such as a mature pool, synaptotagmin IX-positive vesicles, or docked vesicles near the plasma membrane may have lower EKMr values than smaller immature vesicles.",
+      "claim_type": "EXPLICIT",
+      "source": "Subpopulations containing larger insulin vesicles, such as a mature pool (Zhang et al., 2020; Norris et al., 2021), synaptotagmin IX-positive vesicles (Kreutzberger et al., 2020), or docked vesicles near the plasma membrane (Zhang et al., 2020) may have lower EKMr values than smaller immature vesicles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the relationship between particle size and EKMr, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:52:48.946810Z"
+    },
+    {
+      "id": "a053140a-98e7-4476-8742-e260899690c1",
+      "content_id": "cd68bc11-e5f2-4d3b-ae45-5f2fb701a9bc",
+      "claim_id": "C69",
+      "claim": "Phosphatidylcholine lipids increase the zeta potential of tristearoylglycerol crystals.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, phosphatidylcholine lipids increase the zeta potential of tristearoylglycerol crystals (Arts et al., 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Arts et al., 1994.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:52:48.946810Z"
+    },
+    {
+      "id": "1609a308-1c8d-48b9-8cc8-ab9231689b50",
+      "content_id": "cd68bc11-e5f2-4d3b-ae45-5f2fb701a9bc",
+      "claim_id": "C70",
+      "claim": "The effect of phosphatidylcholine on zeta potential may extend to insulin vesicle subpopulations containing more phosphatidylcholine, such as young insulin vesicles, which could lead to higher EKMr values.",
+      "claim_type": "EXPLICIT",
+      "source": "This effect may extend to insulin vesicle subpopulations containing more phosphatidylcholine, such as young insulin vesicles (Neukam et al., 2020) which could lead to higher EKMr values.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the effect of phosphatidylcholine on zeta potential, supported by citation to Neukam et al., 2020.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:52:48.946810Z"
+    },
+    {
+      "id": "e2bc28e6-7112-43d5-9e46-cd67ff3ba0a9",
+      "content_id": "cd68bc11-e5f2-4d3b-ae45-5f2fb701a9bc",
+      "claim_id": "C71",
+      "claim": "Insulin vesicles with EKMr values of 1\u20132\u00d710^9 V/m^2 may represent a synaptotagmin IX-positive subpopulation due to their larger radii and depletion under glucose stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, insulin vesicles with EKMr values of 1\u20132\u00d7109 V/m2 (Figure 4C) may represent a synaptotagmin IX-positive subpopulation due to their larger radii and depletion under glucose stimulation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a speculative interpretation based on the data in Figure 4C.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:52:48.946810Z"
+    },
+    {
+      "id": "27ef8eaa-9a28-4f2d-bfd7-dca62503d9a7",
+      "content_id": "cd68bc11-e5f2-4d3b-ae45-5f2fb701a9bc",
+      "claim_id": "C72",
+      "claim": "Young insulin vesicles may have EKMr values between 5 and 7.5\u00d710^9 V/m^2 due to higher amounts of phosphatidylcholine present in this subpopulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, young insulin vesicles may have EKMr values between 5 and 7.5\u00d7109 V/m2 (Figure 4C) due to higher amounts of phosphatidylcholine present in this subpopulation (Neukam et al., 2020).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a speculative interpretation based on the data in Figure 4C and citation to Neukam et al., 2020.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:52:48.946810Z"
+    },
+    {
+      "id": "dd8e1bc8-05c0-48f3-bd72-3090a36ff0b7",
+      "content_id": "cd68bc11-e5f2-4d3b-ae45-5f2fb701a9bc",
+      "claim_id": "C73",
+      "claim": "In the EKMr range of 5-7.5\u00d710^9 V/m^2, a higher intensity was observed for glucose-treated cells which may suggest biosynthesis of new vesicles.",
+      "claim_type": "EXPLICIT",
+      "source": "In this EKMr range, we observed a higher intensity for glucose-treated cells which may suggest biosynthesis of new vesicles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the observed data.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:52:48.946810Z"
+    },
+    {
+      "id": "7835c5ed-d715-4f31-8510-f4420aae0aeb",
+      "content_id": "cd68bc11-e5f2-4d3b-ae45-5f2fb701a9bc",
+      "claim_id": "C74",
+      "claim": "Immature insulin vesicles are likely to have higher EKMr values due to their smaller size, such as an EKMr value between 1.5 and 1.6\u00d710^10 V/m^2.",
+      "claim_type": "EXPLICIT",
+      "source": "Immature insulin vesicles are likely to have higher EKMr values due to their smaller size (Zhang et al., 2020), such as an EKMr value between 1.5 and 1.6\u00d71010 V/m2 (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the relationship between particle size and EKMr, supported by citation to Zhang et al., 2020 and data in Figure 4C.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:52:48.946810Z"
+    },
+    {
+      "id": "db9acaf9-128f-4ead-8b46-81a7c83c1cf6",
+      "content_id": "cd68bc11-e5f2-4d3b-ae45-5f2fb701a9bc",
+      "claim_id": "C75",
+      "claim": "The intensity at each EKMr value is influenced by individual insulin vesicles.",
+      "claim_type": "EXPLICIT",
+      "source": "The intensity at each EKMr value is influenced by individual insulin vesicles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the interpretation of the data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:52:48.946810Z"
+    },
+    {
+      "id": "5d9eb58f-2b62-48b3-a293-20f7d69a0711",
+      "content_id": "cd68bc11-e5f2-4d3b-ae45-5f2fb701a9bc",
+      "claim_id": "C76",
+      "claim": "The distribution of the intensity pattern reflects differences in physical properties of the vesicles such as physical changes to the vesicles as they mature.",
+      "claim_type": "EXPLICIT",
+      "source": "The distribution of this pattern reflects differences in physical properties of the vesicles such as physical changes to the vesicles as they mature.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the observed distribution patterns.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:52:48.946810Z"
+    },
+    {
+      "id": "c8e613d6-d5f5-493f-bb4f-fe8dc81fd997",
+      "content_id": "cd68bc11-e5f2-4d3b-ae45-5f2fb701a9bc",
+      "claim_id": "C77",
+      "claim": "The specific changes to the individual insulin vesicles which result in varied EKMr measurements can be associated with any alteration of the biochemical makeup of the bioparticle.",
+      "claim_type": "EXPLICIT",
+      "source": "The specific changes to the individual insulin vesicles which result in varied EKMr measurements can be associated with any alteration of the biochemical makeup of the bioparticle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the interpretation of EKMr measurements.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:52:48.946810Z"
+    },
+    {
+      "id": "9662a6bc-a2f7-4f8d-8358-be74743f1230",
+      "content_id": "cd68bc11-e5f2-4d3b-ae45-5f2fb701a9bc",
+      "claim_id": "C78",
+      "claim": "The overall structure and subtle details of the bioparticle, including the particle-solvent cross-polarizations, will influence DEP and EK forces.",
+      "claim_type": "EXPLICIT",
+      "source": "It is becoming better understood that the overall structure and subtle details of the bioparticle, including the particle-solvent cross-polarizations, will influence these forces (Pethig, 2019; Matyushov, 2019; Hayes, 2020; H\u00f6lzel and Pethig, 2021; Martin and Matyushov, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Pethig, 2019, Matyushov, 2019, Hayes, 2020, H\u00f6lzel and Pethig, 2021, and Martin and Matyushov, 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:52:48.946810Z"
+    },
+    {
+      "id": "be711aca-63ed-436f-a21d-5214f45e9c52",
+      "content_id": "cd68bc11-e5f2-4d3b-ae45-5f2fb701a9bc",
+      "claim_id": "C79",
+      "claim": "The makeup of the insulin vesicle has changed: something has been added, subtracted, or altered which changed the force on the particle in a measurable and quantifiable way.",
+      "claim_type": "EXPLICIT",
+      "source": "This new view of the forces imparted on the insulin vesicles aligns with a rather simple proposition that the makeup of the particle has changed: something has been added, subtracted, or altered which changed the force on the particle in a measurable and quantifiable way.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the observed changes in EKMr values.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:52:48.946810Z"
+    },
+    {
+      "id": "355818cf-3409-41a4-95be-9febeaae979e",
+      "content_id": "cd68bc11-e5f2-4d3b-ae45-5f2fb701a9bc",
+      "claim_id": "C80",
+      "claim": "Glucose can affect the maturation of existing vesicles, increasing their molecular density or the concentration of biomolecules within the vesicle lumen.",
+      "claim_type": "EXPLICIT",
+      "source": "This is consistent with findings that glucose can affect the maturation of existing vesicles, increasing their molecular density or the concentration of biomolecules within the vesicle lumen (White et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to White et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:52:48.946810Z"
+    },
+    {
+      "id": "4dc44fb6-74e8-4646-a270-e095ec5c727f",
+      "content_id": "cd68bc11-e5f2-4d3b-ae45-5f2fb701a9bc",
+      "claim_id": "C81",
+      "claim": "The subpopulations observed could have been altered by a change in surface protein expression or enrichment of unsaturated lipids.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, the subpopulations we observe could have been altered by a change in surface protein expression or enrichment of unsaturated lipids (Moore et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation supported by citation to Moore et al., 2019.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:52:48.946810Z"
+    },
+    {
+      "id": "fbd83847-639d-4316-a2c2-11bf307075a7",
+      "content_id": "cd68bc11-e5f2-4d3b-ae45-5f2fb701a9bc",
+      "claim_id": "C82",
+      "claim": "Glucose enhances vesicle-mitochondria association which is hypothesized to contribute to insulin vesicle maturation.",
+      "claim_type": "EXPLICIT",
+      "source": "This is also consistent with findings that glucose enhances vesicle-mitochondria association which is hypothesized to contribute to insulin vesicle maturation (White et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to White et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:52:48.946810Z"
+    },
+    {
+      "id": "ba58441e-5798-4251-a6fe-6c7f4f4f98bd",
+      "content_id": "cd68bc11-e5f2-4d3b-ae45-5f2fb701a9bc",
+      "claim_id": "C83",
+      "claim": "Identical particles always have the same EKMr in the same manner that identical proteins always have the same molecular weight.",
+      "claim_type": "EXPLICIT",
+      "source": "Identical particles always have the same EKMr in the same manner that identical proteins always have the same molecular weight (Zhu et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a principle supported by citation to Zhu et al., 2019.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:52:48.946810Z"
+    },
+    {
+      "id": "11c48606-31ee-41fe-bb89-56d2b5e063cd",
+      "content_id": "cd68bc11-e5f2-4d3b-ae45-5f2fb701a9bc",
+      "claim_id": "C84",
+      "claim": "EKMr values can be used to evaluate the presence of specific insulin vesicle subpopulations and explore how specific chemical probes may influence vesicle identity.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we can use EKMr values to evaluate the presence of specific insulin vesicle subpopulations and explore how specific chemical probes may influence vesicle identity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the utility of EKMr measurements.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:52:48.946810Z"
+    },
+    {
+      "id": "d32b22af-8185-46ae-baf3-9f7c3caeebe6",
+      "content_id": "cd68bc11-e5f2-4d3b-ae45-5f2fb701a9bc",
+      "claim_id": "C85",
+      "claim": "The data for 1800 V shows no discernable local maxima above 1.5\u00d710^10 V/m^2 for the n-vesicles, despite having identifiable populations with EKMr values higher than 1.5\u00d710^10 V/m^2 at lower voltages.",
+      "claim_type": "EXPLICIT",
+      "source": "The data for 1800 V, for instance, shows no discernable local maxima above 1.5\u00d71010 V/m2 for the n-vesicles, despite having identifiable populations with EKMr values higher than 1.5\u00d71010 V/m2 at lower voltages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation about the data that highlights a feature of the technique.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:52:48.946810Z"
+    },
+    {
+      "id": "daf60d9e-9f81-4de4-b0fc-1b75ce935a7c",
+      "content_id": "cd68bc11-e5f2-4d3b-ae45-5f2fb701a9bc",
+      "claim_id": "C86",
+      "claim": "There is a lack of distinct 'peaks' or identifiable patterns appearing at consistent EKMr values within the datasets from differing applied voltage values.",
+      "claim_type": "EXPLICIT",
+      "source": "Another feature that is quite apparent is a lack of distinct 'peaks' or identifiable patterns appearing at consistent EKMr values within the datasets from differing applied voltage values.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation about the data that highlights a feature of the technique.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:52:48.946810Z"
+    },
+    {
+      "id": "1583b46a-04fd-442e-9755-543fc5ead1e6",
+      "content_id": "cd68bc11-e5f2-4d3b-ae45-5f2fb701a9bc",
+      "claim_id": "C87",
+      "claim": "The applied voltage does not affect the properties of bioparticles, but it defines the forces that oppose bioparticle movements across the channel at different gates.",
+      "claim_type": "EXPLICIT",
+      "source": "While the applied voltage does not affect the properties of bioparticles, it defines the forces that oppose bioparticle movements across the channel at different gates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explanation of how the DC-iDEP technique works.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:52:48.946810Z"
+    },
+    {
+      "id": "9af8e9b8-503b-49de-ad4a-e841c439ede3",
+      "content_id": "cd68bc11-e5f2-4d3b-ae45-5f2fb701a9bc",
+      "claim_id": "C88",
+      "claim": "In an overlapping pattern of subpopulations, those with higher EKMr values overcome the weaker opposing forces at a given gate once the voltage is lowered.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, in an overlapping pattern of subpopulations, those with higher EKMr values overcome the weaker opposing forces at a given gate once the voltage is lowered (Liu and Hayes, 2021; Jones and Hayes, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explanation supported by citations to Liu and Hayes, 2021 and Jones and Hayes, 2015.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:52:48.946810Z"
+    },
+    {
+      "id": "226c3b95-db85-4a2f-b030-8aae98763b31",
+      "content_id": "cd68bc11-e5f2-4d3b-ae45-5f2fb701a9bc",
+      "claim_id": "C89",
+      "claim": "Homogeneous subpopulations of vesicles undoubtably consist of a very narrow range of EKMr values.",
+      "claim_type": "EXPLICIT",
+      "source": "Considering the high resolution of the technique, homogeneous subpopulations of vesicles undoubtably consist of a very narrow range of EKMr values.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the nature of the subpopulations based on the technique's resolution.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:52:48.946810Z"
+    },
+    {
+      "id": "b8f55fd5-cb85-4648-9b92-9d0f1cb64c13",
+      "content_id": "cd68bc11-e5f2-4d3b-ae45-5f2fb701a9bc",
+      "claim_id": "C90",
+      "claim": "Each data point shown in Figure 4 represents a homogenous subpopulation captured at the gate.",
+      "claim_type": "EXPLICIT",
+      "source": "Each data point shown in Figure 4 represents a homogenous subpopulation captured at the gate.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statement about the interpretation of the data in Figure 4.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:52:48.946810Z"
+    },
+    {
+      "id": "e305154a-1a45-4827-81a3-3194e55b7734",
+      "content_id": "cd68bc11-e5f2-4d3b-ae45-5f2fb701a9bc",
+      "claim_id": "C91",
+      "claim": "The DC-iDEP technique allows for quantitative comparison of paired samples.",
+      "claim_type": "EXPLICIT",
+      "source": "While this feature is unsatisfying to classic separation scientists, it still allows for quantitative comparison of paired samples, as has been shown here.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the utility of the technique demonstrated in the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:52:48.946810Z"
+    },
+    {
+      "id": "a24f38df-c012-413b-83cf-e53728f9d375",
+      "content_id": "cd68bc11-e5f2-4d3b-ae45-5f2fb701a9bc",
+      "claim_id": "C92",
+      "claim": "To further optimize the separation, one could modify the channels including the gate size and periodicity, as well as scan even more refined ranges of voltages.",
+      "claim_type": "EXPLICIT",
+      "source": "To further optimize the separation, one could modify the channels including the gate size and periodicity, as well as scan even more refined ranges of voltages to induce varying spectra of EKMr values along the device (Ding et al., 2016; Jones et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a suggestion for future work supported by citations to Ding et al., 2016 and Jones et al., 2015.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:52:48.946810Z"
+    },
+    {
+      "id": "e73d6a56-1444-4020-a957-d9e54d124f51",
+      "content_id": "cd68bc11-e5f2-4d3b-ae45-5f2fb701a9bc",
+      "claim_id": "C93",
+      "claim": "DC-iDEP in a scanning mode is a powerful tool to interrogate complex organelle subpopulations and study their distinctive distribution patterns under different treatment conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "In essence, the current work introduces DC-iDEP in a scanning mode as a powerful tool to interrogate complex organelle subpopulations and study their distinctive distribution patterns under different treatment conditions with the goal of organelle subpopulation discovery and quantification.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement about the contribution of the work.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:52:48.946810Z"
+    },
+    {
+      "id": "828dd0d4-e6ee-42b4-af78-a206c4463926",
+      "content_id": "cd68bc11-e5f2-4d3b-ae45-5f2fb701a9bc",
+      "claim_id": "C94",
+      "claim": "The putatively subtle differences in subpopulations between stimulated and unstimulated INS-1E insulinoma cells are quantified more extensively than previously possible.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, the putatively subtle differences in subpopulations between stimulated and unstimulated INS-1E insulinoma cells are quantified more extensively than previously possible.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the advancement provided by the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:52:48.946810Z"
+    },
+    {
+      "id": "78799c16-8b52-4b33-8276-ff8644bcd664",
+      "content_id": "cd68bc11-e5f2-4d3b-ae45-5f2fb701a9bc",
+      "claim_id": "C95",
+      "claim": "This method serves as a stepping stone toward isolation and concentration of fractions which show the largest difference between the two population patterns for further bioanalysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, this method serves as a stepping stone toward isolation and concentration of fractions which show the largest difference between the two population patterns for further bioanalysis (imaging, proteomics, lipidomics, etc.) that otherwise would not be possible given the low-abundance components of these subpopulations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the future potential of the method.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:52:48.946810Z"
+    },
+    {
+      "id": "4a4c74e5-0658-45a8-af95-606963dcb75a",
+      "content_id": "cd68bc11-e5f2-4d3b-ae45-5f2fb701a9bc",
+      "claim_id": "C96",
+      "claim": "This approach can be broadly applied to any cell type and organelle beyond the scope of the model system of insulin vesicles and INS-1E insulinoma cells.",
+      "claim_type": "EXPLICIT",
+      "source": "This approach can be broadly applied to any cell type and organelle beyond the scope of our model system of insulin vesicles and INS-1E insulinoma cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the generalizability of the approach.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:52:48.946810Z"
+    },
+    {
+      "id": "e319718f-8095-4de9-b67d-30eb29a7fc0f",
+      "content_id": "cd68bc11-e5f2-4d3b-ae45-5f2fb701a9bc",
+      "claim_id": "C97",
+      "claim": "The device contains a 27-gate sawtooth channel with a depth of approximately 20 \u03bcm and a length of 3.5 cm from inlet to outlet.",
+      "claim_type": "EXPLICIT",
+      "source": "The device contains a 27-gate sawtooth channel with a depth of approximately 20 \u03bcm and a length of 3.5 cm from inlet to outlet (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of the device design shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:52:48.946810Z"
+    },
+    {
+      "id": "e1c825c6-53fd-4671-a8d1-9483d057a60b",
+      "content_id": "cd68bc11-e5f2-4d3b-ae45-5f2fb701a9bc",
+      "claim_id": "C98",
+      "claim": "The distance between two paired triangle tips (gates) decreases from 73 to 25 \u03bcm in the channel.",
+      "claim_type": "EXPLICIT",
+      "source": "The distance between two paired triangle tips (gates) decreases from 73 to 25 \u03bcm in the channel.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the device design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:52:48.946810Z"
+    },
+    {
+      "id": "b8391bf4-0018-4435-ba69-0f4c32e50b8a",
+      "content_id": "cd68bc11-e5f2-4d3b-ae45-5f2fb701a9bc",
+      "claim_id": "C99",
+      "claim": "The gate size decreases approximately 5 \u00b5m after every three repeats.",
+      "claim_type": "EXPLICIT",
+      "source": "The gate size decreases approximately 5 \u00b5m after every three repeats.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the device design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:52:48.946810Z"
+    },
+    {
+      "id": "3ba37e7a-5f28-4351-928f-7879277c5e21",
+      "content_id": "cd68bc11-e5f2-4d3b-ae45-5f2fb701a9bc",
+      "claim_id": "C100",
+      "claim": "INS-1E cells were cultured in RPMI 1640 media modified to contain 2 mM L-glutamine; 10 mM HEPES pH 7.2, 1 mM sodium pyruvate, 2 g/L glucose, and 1.5 g/L sodium bicarbonate, 50 \u00b5M 2-mercaptoethanol, 100 U/mL penicillin, and 100 \u00b5g/mL streptomycin supplemented with 10% fetal bovine serum.",
+      "claim_type": "EXPLICIT",
+      "source": "INS-1E cells (Addex Bio C0018009; RRID: CVCL_0351) were cultured according to the supplier's protocol. Briefly, cells were seeded in RPMI 1640 media (modified to contain 2 mM L-glutamine; 10 mM HEPES pH 7.2, 1 mM sodium pyruvate, 2 g/L glucose, and 1.5 g/L sodium bicarbonate, 50 \u00b5M 2-mercaptoethanol, 100 U/mL penicillin, and 100 \u00b5g/mL streptomycin; sterile filtered through 0.22 \u00b5m filter) supplemented with 10% fetal bovine serum (FBS) and grown to 80% confluency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the cell culture method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:52:48.946810Z"
+    },
+    {
+      "id": "cb911d82-bc93-4f32-af7d-9adc07c545d6",
+      "content_id": "cd68bc11-e5f2-4d3b-ae45-5f2fb701a9bc",
+      "claim_id": "C101",
+      "claim": "Cells were pretreated at 60\u201380% confluency with KRBH buffer free of glucose and incubated at 37\u00b0C with 5% CO2 for 30 min.",
+      "claim_type": "EXPLICIT",
+      "source": "Cells were pretreated at 60\u201380% confluency with Krebs-Ringer bicarbonate HEPES (KRBH) buffer (135 mM NaCl, 3.6 mM KCl, 5 mM NaHCO3, 0.5 mM NaH2PO4, 0.5 mM MgCl2, 1.5 mM CaCl2, 10 mM HEPES, pH 7.4, and 0.1% bovine serum albumin [BSA]; made fresh within 7 days of use) free of glucose and incubated at 37\u00b0C with 5% CO2 for 30 min.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:52:48.946810Z"
+    },
+    {
+      "id": "7ac7a0c9-b0ec-4f34-b7a8-1d968b634310",
+      "content_id": "cd68bc11-e5f2-4d3b-ae45-5f2fb701a9bc",
+      "claim_id": "C102",
+      "claim": "Cells were stimulated for 30 min at 37\u00b0C using KRBH buffers containing 1.1, 5.6, 8.4, 11.1, 16.7, and 25 mM glucose.",
+      "claim_type": "EXPLICIT",
+      "source": "They were then stimulated for 30 min at 37\u00b0C using KRBH buffers containing 1.1, 5.6, 8.4, 11.1, 16.7, and 25 mM glucose, in the presence of house-made protease inhibitor (PI) cocktail (0.5 M AEBSF, 1 mM E-64, 1.13 mM leupeptin, and 151.36 \u03bcM aprotinin).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:52:48.946810Z"
+    },
+    {
+      "id": "17330c89-081e-435b-89b5-1b6a7bd94699",
+      "content_id": "cd68bc11-e5f2-4d3b-ae45-5f2fb701a9bc",
+      "claim_id": "C103",
+      "claim": "The sample fraction introduced to the DC-iDEP device contains particles, ~75% of which have radii characteristic of insulin vesicle as apparent from DLS experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "This sample fraction contains particles, ~75% of which have radii characteristic of insulin vesicle as apparent from DLS experiments (Figure 1\u2014figure supplement 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is data from DLS experiments shown in Figure 1\u2014figure supplement 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:52:48.946810Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "a82a0f02-24a3-491d-a2be-4c38dc671cfd",
+      "content_id": "cd68bc11-e5f2-4d3b-ae45-5f2fb701a9bc",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors successfully enriched and validated insulin vesicles from INS-1E cells. Fractions 9-12 from density gradient centrifugation contained the highest insulin content and were enriched in synaptotagmin IX. These fractions contained particles of 150-200 nm radius consistent with insulin vesicles, though some ER contaminants were present. The isolated vesicles were intact as verified by fluorescence microscopy, TEM, and cryo-EM, and synaptotagmin IX colocalized with insulin (Pearson's r = 0.64-0.66).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C43 and C103 provide converging evidence from multiple orthogonal techniques (ELISA, Western blot, DLS, fluorescence microscopy, TEM, cryo-EM) that insulin vesicles were successfully enriched and intact. The colocalization data (C42-C43) with moderate Pearson's r values (0.64-0.66) supports that synaptotagmin IX is an appropriate marker. The presence of ER contaminants (C38) is acknowledged but does not confound the analysis due to specific fluorescent labeling.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:52:48.946810Z"
+    },
+    {
+      "id": "cbd822bb-20f6-4b71-a71b-b2b2548d8fab",
+      "content_id": "cd68bc11-e5f2-4d3b-ae45-5f2fb701a9bc",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "DC-iDEP identified distinct distribution patterns of unstimulated (n-) insulin vesicles across multiple voltages. At 1800V, vesicles were detected at EKMr values below 1.5\u00d710^10 V/m^2. At 1200V, discernible features appeared around 1.2\u00d710^10 and 1.8\u00d710^10 V/m^2. At 900V, a distinct peak formed around 5-6\u00d710^9 V/m^2. At 600V, patterns were observed around 3-4\u00d710^9 and 5-6\u00d710^9 V/m^2.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2 and C47-C51 describe systematic voltage-dependent separation patterns for n-insulin vesicles supported by data in Figure 4. The incremental voltage reduction strategy reveals progressively refined subpopulation distributions, demonstrating the capability of DC-iDEP to identify distinct patterns. The data shows consistent features across biological replicates (n=3).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:52:48.946810Z"
+    },
+    {
+      "id": "eb983326-4b00-4aea-ae0b-d21d46043351",
+      "content_id": "cd68bc11-e5f2-4d3b-ae45-5f2fb701a9bc",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "DC-iDEP identified distinct distribution patterns of glucose-stimulated (g-) insulin vesicles that differed from unstimulated vesicles. At 1800V, g-vesicles showed distribution up to 2.3\u00d710^10 V/m^2 (vs. 1.5\u00d710^10 V/m^2 for n-vesicles), suggesting a broader range of properties. Distinct features were observed at 7-8\u00d710^9 V/m^2 (1500V), peaks at 1.1\u00d710^10 V/m^2 (1200V), and patterns at 4\u00d710^9 and 8\u00d710^9 V/m^2 (900V and 600V).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C57 describe systematic differences in g-insulin vesicle distribution patterns supported by Figure 4 data. The broader EKMr range for g-vesicles (C52-C53) and distinct peak positions compared to n-vesicles provide evidence for glucose-induced changes in vesicle subpopulations. Data from n=4 biological replicates supports reproducibility.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:52:48.946810Z"
+    },
+    {
+      "id": "d998d829-c993-48a7-8c04-c0bd71fa9595",
+      "content_id": "cd68bc11-e5f2-4d3b-ae45-5f2fb701a9bc",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Statistical analysis revealed significant differences in insulin vesicle distribution patterns between glucose-stimulated and unstimulated cells. Two-way ANOVA at 1200V showed significant interaction (F(8,45)=3.61, p=0.003), with Bonferroni post-hoc tests identifying significant differences at three specific EKMr values: 1.10\u00d710^9 V/m^2 (p=0.0249), 5.35\u00d710^9 V/m^2 (p=0.0469), and 7.45\u00d710^9 V/m^2 (p=0.0369). These differences reflect a shift in insulin vesicle subpopulations upon glucose stimulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3 and C58-C63 provide statistical evidence for glucose-induced changes in vesicle populations. The two-way ANOVA with appropriate post-hoc correction identifies specific EKMr values where treated and untreated samples differ significantly. The statistical approach is sound, though only data at 1200V reached significance, suggesting the effect is voltage-dependent or that other voltages lacked sufficient power.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:52:48.946810Z"
+    },
+    {
+      "id": "178a6c80-dfcc-4793-a791-996b17de7f5c",
+      "content_id": "cd68bc11-e5f2-4d3b-ae45-5f2fb701a9bc",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The observed differences in distribution patterns are interpreted as indicative of high-resolution separation of vesicle subpopulations. The findings are consistent with prior studies showing glucose-induced changes in insulin vesicle molecular density and composition. DC-iDEP in scanning mode enables more extensive quantification of subtle differences between stimulated and unstimulated cells than previously possible.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C64-C66, C93-C94 interpret the observed distribution differences as evidence for subpopulation separation. The interpretation is supported by consistency with prior X-ray tomography studies (C64) and other glucose stimulation studies (C65). However, the interpretation that specific peaks correspond to known subpopulations (C66) remains speculative without direct validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:52:48.946810Z"
+    },
+    {
+      "id": "fc96d3be-451e-4927-8b35-54a4c5c5d6f8",
+      "content_id": "cd68bc11-e5f2-4d3b-ae45-5f2fb701a9bc",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The authors propose relationships between EKMr values and known insulin vesicle subpopulations based on biophysical principles. Larger vesicles should have lower EKMr values, while phosphatidylcholine-enriched vesicles should have higher EKMr values. Specific assignments are proposed: 1-2\u00d710^9 V/m^2 for synaptotagmin IX-positive vesicles, 5-7.5\u00d710^9 V/m^2 for young vesicles, and 1.5-1.6\u00d710^10 V/m^2 for immature vesicles.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C67-C74 propose mechanistic interpretations linking EKMr values to specific vesicle subpopulations. While the biophysical principles (C67, C69) are supported by citations, the specific assignments (C71-C74) are explicitly speculative and lack direct experimental validation. The authors acknowledge these are hypotheses requiring future validation with chemical probes. Without orthogonal confirmation, these remain plausible but unproven interpretations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:52:48.946810Z"
+    },
+    {
+      "id": "617942db-3d9d-4ffb-b4ea-e189099ba9f3",
+      "content_id": "cd68bc11-e5f2-4d3b-ae45-5f2fb701a9bc",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The authors propose that EKMr distribution patterns reflect physical and biochemical changes in insulin vesicles during maturation. Changes in EKMr values can result from alterations in vesicle composition, including molecular density, surface protein expression, lipid composition, or vesicle-mitochondria associations. The theoretical framework suggests that particle structure and particle-solvent interactions influence DEP and EK forces.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C75-C82 provide a theoretical framework for interpreting EKMr measurements, supported by multiple citations to recent theoretical work (C78). The connection to glucose-induced maturation (C80, C82) is supported by prior studies. However, the specific biochemical changes responsible for observed EKMr shifts (C81) remain speculative. The framework is conceptually sound but requires future biochemical validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:52:48.946810Z"
+    },
+    {
+      "id": "fa8d4578-4cbe-4d83-868e-2f9f8c666cf6",
+      "content_id": "cd68bc11-e5f2-4d3b-ae45-5f2fb701a9bc",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The DC-iDEP scanning voltage method operates by incrementally lowering voltage from 2100V to allow subpopulations with different EKMr values to enter and be separated. At high voltages, DEP forces prevent particle entry; lowering voltage allows particles to redistribute based on their EKMr values. The technique exhibits high resolution such that each data point represents a homogeneous subpopulation, though peaks do not appear at consistent EKMr values across voltages due to voltage-dependent force redistribution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C46 and C85-C91 describe the operational principles and characteristics of the DC-iDEP method. The voltage-scanning approach is well-documented in the methods and supported by Figure 3. The explanation for lack of consistent peaks across voltages (C85-C88) is physically sound and supported by citations. The claim that each data point represents a homogeneous subpopulation (C90) is an inference based on the technique's resolution but lacks direct validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:52:48.946810Z"
+    },
+    {
+      "id": "1132e2ea-70a5-403d-91f2-e3e0b045a08c",
+      "content_id": "cd68bc11-e5f2-4d3b-ae45-5f2fb701a9bc",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Current organelle separation techniques have limited sensitivity for isolating subpopulations due to organelle heterogeneity and inter-organelle contacts. Traditional methods (gradient columns, immunoisolation, electrophoresis) lack sufficient sensitivity except for smooth vs. rough ER. Previous insulin vesicle proteomics studies show minimal overlap in identified proteins, indicating inconsistent isolation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C14-C15, C17-C18, C31, C33 establish the motivation for the study by documenting limitations of existing methods. The claim about minimal protein overlap (C33) is supported by Figure 1B showing a Venn diagram. These claims accurately represent the state of the field and are supported by appropriate citations, providing strong justification for developing DC-iDEP.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:52:48.946810Z"
+    },
+    {
+      "id": "128ffb19-f923-4f48-a40c-b094f4b1ebb0",
+      "content_id": "cd68bc11-e5f2-4d3b-ae45-5f2fb701a9bc",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "DC-iDEP utilizes higher-order electric field effects to differentiate bioparticles based on multiple physical properties (radius, zeta potential, permittivity, etc.). The technique has been used for separating diverse bioparticles from proteins to stem cells, offers a wide dynamic range, and is well-suited for discovery-based interrogation of organelle subpopulations where differentiating factors are unknown.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C23 describe the capabilities and advantages of DC-iDEP, supported by multiple citations to prior work. The claims accurately represent the technique's principles and prior applications. The assertion that DC-iDEP is suitable for discovery-based approaches (C22-C23) is logical given its unbiased nature compared to epitope-based methods.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:52:48.946810Z"
+    },
+    {
+      "id": "eb947b70-4cad-419c-8cdc-c0a5abf7ec53",
+      "content_id": "cd68bc11-e5f2-4d3b-ae45-5f2fb701a9bc",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Insulin vesicles undergo complex maturation processes essential for proper insulin secretion and glucose homeostasis. Immature vesicles act as sorting compartments and mature into readily releasable and reserve pools. Vesicle heterogeneity arises from maturation stages and accounts for differences in membrane proteins, age, mobility, and localization. This process is dysregulated in diabetes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C30 provide biological background on insulin vesicles, supported by appropriate citations to established literature. These claims accurately represent current understanding of insulin vesicle biology and provide essential context for the study. The connection to diabetes (C26) establishes clinical relevance.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:52:48.946810Z"
+    },
+    {
+      "id": "7f5ed1b4-409a-463e-9fc9-919546886acd",
+      "content_id": "cd68bc11-e5f2-4d3b-ae45-5f2fb701a9bc",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The authors propose that EKMr values can be used to evaluate specific insulin vesicle subpopulations and that identical particles have consistent EKMr values. Future work could optimize separation by modifying channel design and voltage ranges, enable isolation of fractions for downstream bioanalysis, and apply the approach to other cell types and organelles.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C83-C84 and C92-C96 describe future applications and potential of the method. While the principle that identical particles have consistent EKMr (C83) is supported by citation, the proposed applications (C84, C92, C95-C96) are speculative and represent future work rather than demonstrated results. These are reasonable projections but lack experimental validation in the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:52:48.946810Z"
+    },
+    {
+      "id": "7d02684e-ebd9-484d-9b7c-cf69c76619b4",
+      "content_id": "cd68bc11-e5f2-4d3b-ae45-5f2fb701a9bc",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The DC-iDEP device contains a 27-gate sawtooth channel with 20 \u03bcm depth and 3.5 cm length, with gate sizes decreasing from 73 to 25 \u03bcm. INS-1E cells were cultured in modified RPMI 1640 media, pretreated with glucose-free KRBH buffer, and stimulated with various glucose concentrations (1.1-25 mM) for 30 minutes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C97-C102 describe methodological details for device fabrication and cell culture. These are straightforward descriptions of experimental procedures supported by the methods section and Figure 1C. The details are sufficiently specific to enable replication.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:52:48.946810Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "0c8feb6c-5ad6-411e-aaa0-89c79e2d9830",
+      "result_id": "a82a0f02-24a3-491d-a2be-4c38dc671cfd"
+    },
+    {
+      "claim_id": "c051c37c-6587-4e0b-8292-9bcdbee0b280",
+      "result_id": "a82a0f02-24a3-491d-a2be-4c38dc671cfd"
+    },
+    {
+      "claim_id": "1bec085e-98b1-4c1d-9732-034278c4de0e",
+      "result_id": "a82a0f02-24a3-491d-a2be-4c38dc671cfd"
+    },
+    {
+      "claim_id": "4edaef87-6dfd-49df-945a-fe0a03fbb093",
+      "result_id": "a82a0f02-24a3-491d-a2be-4c38dc671cfd"
+    },
+    {
+      "claim_id": "626d2a42-60b7-46c3-be3a-22a6aa6817e7",
+      "result_id": "a82a0f02-24a3-491d-a2be-4c38dc671cfd"
+    },
+    {
+      "claim_id": "122f8a8b-9e70-430f-9255-d1a6caed465e",
+      "result_id": "a82a0f02-24a3-491d-a2be-4c38dc671cfd"
+    },
+    {
+      "claim_id": "fe28ea9f-9c5c-4424-a7e7-045270174182",
+      "result_id": "a82a0f02-24a3-491d-a2be-4c38dc671cfd"
+    },
+    {
+      "claim_id": "d7e3b60d-6eca-479d-9c5c-5f49112a6cb7",
+      "result_id": "a82a0f02-24a3-491d-a2be-4c38dc671cfd"
+    },
+    {
+      "claim_id": "1064ca13-486e-4bce-a92b-9c1aed86021e",
+      "result_id": "a82a0f02-24a3-491d-a2be-4c38dc671cfd"
+    },
+    {
+      "claim_id": "9e1960b1-26ce-4664-9ce7-c9ad2f7941af",
+      "result_id": "a82a0f02-24a3-491d-a2be-4c38dc671cfd"
+    },
+    {
+      "claim_id": "17330c89-081e-435b-89b5-1b6a7bd94699",
+      "result_id": "a82a0f02-24a3-491d-a2be-4c38dc671cfd"
+    },
+    {
+      "claim_id": "48bff616-f60a-4e50-a2d0-fb7272b1491f",
+      "result_id": "cbd822bb-20f6-4b71-a71b-b2b2548d8fab"
+    },
+    {
+      "claim_id": "37560831-bf06-4c59-9716-04035e487c4c",
+      "result_id": "cbd822bb-20f6-4b71-a71b-b2b2548d8fab"
+    },
+    {
+      "claim_id": "d913fcd0-235b-4429-a81a-47b5d49c99e5",
+      "result_id": "cbd822bb-20f6-4b71-a71b-b2b2548d8fab"
+    },
+    {
+      "claim_id": "fe0dc5c4-d9e9-47a1-8d02-64318e2e914b",
+      "result_id": "cbd822bb-20f6-4b71-a71b-b2b2548d8fab"
+    },
+    {
+      "claim_id": "181b0016-85bb-4e67-bbfd-f323a9947a6f",
+      "result_id": "cbd822bb-20f6-4b71-a71b-b2b2548d8fab"
+    },
+    {
+      "claim_id": "d0a350b1-fd34-4369-bb84-e83898902b1b",
+      "result_id": "cbd822bb-20f6-4b71-a71b-b2b2548d8fab"
+    },
+    {
+      "claim_id": "a9bab241-c98b-4f88-9c3b-a30ba94d52ba",
+      "result_id": "eb983326-4b00-4aea-ae0b-d21d46043351"
+    },
+    {
+      "claim_id": "9ffe97ac-db9c-4dd5-ade5-90bca1c19096",
+      "result_id": "eb983326-4b00-4aea-ae0b-d21d46043351"
+    },
+    {
+      "claim_id": "f7fe9548-9065-478f-9585-5e42a53bce03",
+      "result_id": "eb983326-4b00-4aea-ae0b-d21d46043351"
+    },
+    {
+      "claim_id": "be6d28b2-b9e0-4e94-8a52-436b0e6c4110",
+      "result_id": "eb983326-4b00-4aea-ae0b-d21d46043351"
+    },
+    {
+      "claim_id": "210fb5e7-4cea-4e1b-93b3-0d0cddc2e808",
+      "result_id": "eb983326-4b00-4aea-ae0b-d21d46043351"
+    },
+    {
+      "claim_id": "89003d16-c6fc-4e57-bb20-38919c4415e9",
+      "result_id": "eb983326-4b00-4aea-ae0b-d21d46043351"
+    },
+    {
+      "claim_id": "0db400d7-4331-4997-92f3-268434d99d84",
+      "result_id": "d998d829-c993-48a7-8c04-c0bd71fa9595"
+    },
+    {
+      "claim_id": "45e6646d-9774-403d-9073-126d58a7a20d",
+      "result_id": "d998d829-c993-48a7-8c04-c0bd71fa9595"
+    },
+    {
+      "claim_id": "2d824c53-76a3-4119-8a20-da71de4e854d",
+      "result_id": "d998d829-c993-48a7-8c04-c0bd71fa9595"
+    },
+    {
+      "claim_id": "02f7a354-5b0f-4248-828e-6bff0e0765e5",
+      "result_id": "d998d829-c993-48a7-8c04-c0bd71fa9595"
+    },
+    {
+      "claim_id": "533b09ea-c54f-420e-9926-0af4c2046d57",
+      "result_id": "d998d829-c993-48a7-8c04-c0bd71fa9595"
+    },
+    {
+      "claim_id": "461917a0-3836-401d-a290-9523d37ae1ce",
+      "result_id": "d998d829-c993-48a7-8c04-c0bd71fa9595"
+    },
+    {
+      "claim_id": "9c2077a5-65a9-4a38-9662-58ac027d3f71",
+      "result_id": "d998d829-c993-48a7-8c04-c0bd71fa9595"
+    },
+    {
+      "claim_id": "6375afed-a3be-40ac-814a-fef3520a138b",
+      "result_id": "178a6c80-dfcc-4793-a791-996b17de7f5c"
+    },
+    {
+      "claim_id": "9b61e2c2-a0b5-43bd-b7d4-3813072480a1",
+      "result_id": "178a6c80-dfcc-4793-a791-996b17de7f5c"
+    },
+    {
+      "claim_id": "9c094339-cd67-4fd6-ae5a-378bc1c821ac",
+      "result_id": "178a6c80-dfcc-4793-a791-996b17de7f5c"
+    },
+    {
+      "claim_id": "2d7c529a-e9cb-423f-851c-a9dc04b15c3e",
+      "result_id": "178a6c80-dfcc-4793-a791-996b17de7f5c"
+    },
+    {
+      "claim_id": "e73d6a56-1444-4020-a957-d9e54d124f51",
+      "result_id": "178a6c80-dfcc-4793-a791-996b17de7f5c"
+    },
+    {
+      "claim_id": "828dd0d4-e6ee-42b4-af78-a206c4463926",
+      "result_id": "178a6c80-dfcc-4793-a791-996b17de7f5c"
+    },
+    {
+      "claim_id": "fc4d7041-5cd1-4588-b91b-a2da113e7ac9",
+      "result_id": "fc96d3be-451e-4927-8b35-54a4c5c5d6f8"
+    },
+    {
+      "claim_id": "bfed94e4-417b-4c40-b99e-f75386e6fd2a",
+      "result_id": "fc96d3be-451e-4927-8b35-54a4c5c5d6f8"
+    },
+    {
+      "claim_id": "a053140a-98e7-4476-8742-e260899690c1",
+      "result_id": "fc96d3be-451e-4927-8b35-54a4c5c5d6f8"
+    },
+    {
+      "claim_id": "1609a308-1c8d-48b9-8cc8-ab9231689b50",
+      "result_id": "fc96d3be-451e-4927-8b35-54a4c5c5d6f8"
+    },
+    {
+      "claim_id": "e2bc28e6-7112-43d5-9e46-cd67ff3ba0a9",
+      "result_id": "fc96d3be-451e-4927-8b35-54a4c5c5d6f8"
+    },
+    {
+      "claim_id": "27ef8eaa-9a28-4f2d-bfd7-dca62503d9a7",
+      "result_id": "fc96d3be-451e-4927-8b35-54a4c5c5d6f8"
+    },
+    {
+      "claim_id": "dd8e1bc8-05c0-48f3-bd72-3090a36ff0b7",
+      "result_id": "fc96d3be-451e-4927-8b35-54a4c5c5d6f8"
+    },
+    {
+      "claim_id": "7835c5ed-d715-4f31-8510-f4420aae0aeb",
+      "result_id": "fc96d3be-451e-4927-8b35-54a4c5c5d6f8"
+    },
+    {
+      "claim_id": "db9acaf9-128f-4ead-8b46-81a7c83c1cf6",
+      "result_id": "617942db-3d9d-4ffb-b4ea-e189099ba9f3"
+    },
+    {
+      "claim_id": "5d9eb58f-2b62-48b3-a293-20f7d69a0711",
+      "result_id": "617942db-3d9d-4ffb-b4ea-e189099ba9f3"
+    },
+    {
+      "claim_id": "c8e613d6-d5f5-493f-bb4f-fe8dc81fd997",
+      "result_id": "617942db-3d9d-4ffb-b4ea-e189099ba9f3"
+    },
+    {
+      "claim_id": "9662a6bc-a2f7-4f8d-8358-be74743f1230",
+      "result_id": "617942db-3d9d-4ffb-b4ea-e189099ba9f3"
+    },
+    {
+      "claim_id": "be711aca-63ed-436f-a21d-5214f45e9c52",
+      "result_id": "617942db-3d9d-4ffb-b4ea-e189099ba9f3"
+    },
+    {
+      "claim_id": "355818cf-3409-41a4-95be-9febeaae979e",
+      "result_id": "617942db-3d9d-4ffb-b4ea-e189099ba9f3"
+    },
+    {
+      "claim_id": "4dc44fb6-74e8-4646-a270-e095ec5c727f",
+      "result_id": "617942db-3d9d-4ffb-b4ea-e189099ba9f3"
+    },
+    {
+      "claim_id": "fbd83847-639d-4316-a2c2-11bf307075a7",
+      "result_id": "617942db-3d9d-4ffb-b4ea-e189099ba9f3"
+    },
+    {
+      "claim_id": "3c39df72-580d-4e28-b4dc-d648f2a5011f",
+      "result_id": "fa8d4578-4cbe-4d83-868e-2f9f8c666cf6"
+    },
+    {
+      "claim_id": "c44ed69c-62bc-4c23-a5aa-9036ef788204",
+      "result_id": "fa8d4578-4cbe-4d83-868e-2f9f8c666cf6"
+    },
+    {
+      "claim_id": "c8db8285-6883-4a9e-a422-f190df0be982",
+      "result_id": "fa8d4578-4cbe-4d83-868e-2f9f8c666cf6"
+    },
+    {
+      "claim_id": "d32b22af-8185-46ae-baf3-9f7c3caeebe6",
+      "result_id": "fa8d4578-4cbe-4d83-868e-2f9f8c666cf6"
+    },
+    {
+      "claim_id": "daf60d9e-9f81-4de4-b0fc-1b75ce935a7c",
+      "result_id": "fa8d4578-4cbe-4d83-868e-2f9f8c666cf6"
+    },
+    {
+      "claim_id": "1583b46a-04fd-442e-9755-543fc5ead1e6",
+      "result_id": "fa8d4578-4cbe-4d83-868e-2f9f8c666cf6"
+    },
+    {
+      "claim_id": "9af8e9b8-503b-49de-ad4a-e841c439ede3",
+      "result_id": "fa8d4578-4cbe-4d83-868e-2f9f8c666cf6"
+    },
+    {
+      "claim_id": "226c3b95-db85-4a2f-b030-8aae98763b31",
+      "result_id": "fa8d4578-4cbe-4d83-868e-2f9f8c666cf6"
+    },
+    {
+      "claim_id": "b8f55fd5-cb85-4648-9b92-9d0f1cb64c13",
+      "result_id": "fa8d4578-4cbe-4d83-868e-2f9f8c666cf6"
+    },
+    {
+      "claim_id": "e305154a-1a45-4827-81a3-3194e55b7734",
+      "result_id": "fa8d4578-4cbe-4d83-868e-2f9f8c666cf6"
+    },
+    {
+      "claim_id": "c63165e9-de2a-4a22-8d05-bed0e89376ad",
+      "result_id": "1132e2ea-70a5-403d-91f2-e3e0b045a08c"
+    },
+    {
+      "claim_id": "6aca3845-8471-4261-9e4d-5e6edf73caf7",
+      "result_id": "1132e2ea-70a5-403d-91f2-e3e0b045a08c"
+    },
+    {
+      "claim_id": "4ba5b788-b61f-4ad4-9c5c-cf2e9d05d773",
+      "result_id": "1132e2ea-70a5-403d-91f2-e3e0b045a08c"
+    },
+    {
+      "claim_id": "73efefb2-281f-4d94-87d3-942e9ea036e3",
+      "result_id": "1132e2ea-70a5-403d-91f2-e3e0b045a08c"
+    },
+    {
+      "claim_id": "d1a5d4ea-908a-488a-98a0-9595206731f6",
+      "result_id": "1132e2ea-70a5-403d-91f2-e3e0b045a08c"
+    },
+    {
+      "claim_id": "e49fde98-d4c1-4491-8526-1c9b22d996c2",
+      "result_id": "1132e2ea-70a5-403d-91f2-e3e0b045a08c"
+    },
+    {
+      "claim_id": "c3b862a0-1532-4e0d-bdb9-8b5c1c31d4a8",
+      "result_id": "1132e2ea-70a5-403d-91f2-e3e0b045a08c"
+    },
+    {
+      "claim_id": "45c0e047-2553-451c-a361-5e86999afde8",
+      "result_id": "128ffb19-f923-4f48-a40c-b094f4b1ebb0"
+    },
+    {
+      "claim_id": "c36e3348-347f-4c78-8399-5b9b2ddc7226",
+      "result_id": "128ffb19-f923-4f48-a40c-b094f4b1ebb0"
+    },
+    {
+      "claim_id": "543adbab-bd98-4b0f-b3b2-fcd326578d3c",
+      "result_id": "128ffb19-f923-4f48-a40c-b094f4b1ebb0"
+    },
+    {
+      "claim_id": "e43aa662-93ee-42e6-aa29-c4475eb75160",
+      "result_id": "128ffb19-f923-4f48-a40c-b094f4b1ebb0"
+    },
+    {
+      "claim_id": "5885a73b-0063-4467-9b03-376280ee3ade",
+      "result_id": "128ffb19-f923-4f48-a40c-b094f4b1ebb0"
+    },
+    {
+      "claim_id": "8a410f81-a939-4217-9a28-ad283940bb42",
+      "result_id": "eb947b70-4cad-419c-8cdc-c0a5abf7ec53"
+    },
+    {
+      "claim_id": "0a16025f-5c35-4744-bbfc-7e12a8fd0255",
+      "result_id": "eb947b70-4cad-419c-8cdc-c0a5abf7ec53"
+    },
+    {
+      "claim_id": "d8a8c84b-79a6-4f80-be17-41b09221b7ef",
+      "result_id": "eb947b70-4cad-419c-8cdc-c0a5abf7ec53"
+    },
+    {
+      "claim_id": "8a0a961b-5620-48a8-a785-b68ab2870d95",
+      "result_id": "eb947b70-4cad-419c-8cdc-c0a5abf7ec53"
+    },
+    {
+      "claim_id": "e55a267f-b338-423a-94eb-a2cc18347d8c",
+      "result_id": "eb947b70-4cad-419c-8cdc-c0a5abf7ec53"
+    },
+    {
+      "claim_id": "b5b3fb4e-9506-4933-a383-ae2aa09bcbce",
+      "result_id": "eb947b70-4cad-419c-8cdc-c0a5abf7ec53"
+    },
+    {
+      "claim_id": "74458dd3-3522-4aa2-b1b1-e11623a4e71c",
+      "result_id": "eb947b70-4cad-419c-8cdc-c0a5abf7ec53"
+    },
+    {
+      "claim_id": "ba58441e-5798-4251-a6fe-6c7f4f4f98bd",
+      "result_id": "7f5ed1b4-409a-463e-9fc9-919546886acd"
+    },
+    {
+      "claim_id": "11c48606-31ee-41fe-bb89-56d2b5e063cd",
+      "result_id": "7f5ed1b4-409a-463e-9fc9-919546886acd"
+    },
+    {
+      "claim_id": "a24f38df-c012-413b-83cf-e53728f9d375",
+      "result_id": "7f5ed1b4-409a-463e-9fc9-919546886acd"
+    },
+    {
+      "claim_id": "78799c16-8b52-4b33-8276-ff8644bcd664",
+      "result_id": "7f5ed1b4-409a-463e-9fc9-919546886acd"
+    },
+    {
+      "claim_id": "4a4c74e5-0658-45a8-af95-606963dcb75a",
+      "result_id": "7f5ed1b4-409a-463e-9fc9-919546886acd"
+    },
+    {
+      "claim_id": "e319718f-8095-4de9-b67d-30eb29a7fc0f",
+      "result_id": "7d02684e-ebd9-484d-9b7c-cf69c76619b4"
+    },
+    {
+      "claim_id": "e1c825c6-53fd-4671-a8d1-9483d057a60b",
+      "result_id": "7d02684e-ebd9-484d-9b7c-cf69c76619b4"
+    },
+    {
+      "claim_id": "b8391bf4-0018-4435-ba69-0f4c32e50b8a",
+      "result_id": "7d02684e-ebd9-484d-9b7c-cf69c76619b4"
+    },
+    {
+      "claim_id": "3ba37e7a-5f28-4351-928f-7879277c5e21",
+      "result_id": "7d02684e-ebd9-484d-9b7c-cf69c76619b4"
+    },
+    {
+      "claim_id": "cb911d82-bc93-4f32-af7d-9adc07c545d6",
+      "result_id": "7d02684e-ebd9-484d-9b7c-cf69c76619b4"
+    },
+    {
+      "claim_id": "7ac7a0c9-b0ec-4f34-b7a8-1d968b634310",
+      "result_id": "7d02684e-ebd9-484d-9b7c-cf69c76619b4"
+    }
+  ],
+  "comparisons": []
+}

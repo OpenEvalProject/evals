@@ -1,0 +1,2233 @@
+{
+  "submission": {
+    "id": "8acfe3c4-05c9-4c21-a77c-3e638a6ea1bb",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-04T02:13:21.395666Z",
+    "updated_at": "2025-12-04T02:13:21.395666Z"
+  },
+  "content": [
+    {
+      "id": "bbadede6-7f47-4155-8310-9f444086d42c",
+      "submission_id": "8acfe3c4-05c9-4c21-a77c-3e638a6ea1bb",
+      "content_type": "manuscript",
+      "content_text": "# Predicting mechanisms of action at genetic loci associated with discordant effects on type 2 diabetes and abdominal fat accumulation\n\n## Authors\n\n- Yonathan Tamrat Aberra<sup>1</sup> ([ORCID: 0000-0002-6055-2291](https://orcid.org/0000-0002-6055-2291)) \u2020\n- Lijiang Ma<sup>3</sup>\n- Johan LM Bj\u00f6rkegren<sup>3</sup>\n- Mete Civelek<sup>1</sup> ([ORCID: 0000-0002-8141-0284](https://orcid.org/0000-0002-8141-0284)) \u2020\n\n### Affiliations\n\n1. Department of Biomedical Engineering, University of Virginia Charlottesville United States ([ROR:0153tk833](https://ror.org/0153tk833))\n2. Center for Public Health Genomics, University of Virginia Charlottesville United States ([ROR:0153tk833](https://ror.org/0153tk833))\n3. Department of Genetics and Genomic Sciences, Icahn School of Medicine at Mount Sinai New York United States ([ROR:04a9tmd77](https://ror.org/04a9tmd77))\n4. Department of Medicine, Karolinska Institutet, Huddinge Stockholm Sweden ([ROR:056d84691](https://ror.org/056d84691))\n\n\u2020 Corresponding author\n\n## Abstract\n\nObesity is a major risk factor for cardiovascular disease, stroke, and type 2 diabetes (T2D). Excessive accumulation of fat in the abdomen further increases T2D risk. Abdominal obesity is measured by calculating the ratio of waist-to-hip circumference adjusted for the body-mass index (WHRadjBMI), a trait with a significant genetic inheritance. Genetic loci associated with WHRadjBMI identified in genome-wide association studies are predicted to act through adipose tissues, but many of the exact molecular mechanisms underlying fat distribution and its consequences for T2D risk are poorly understood. Further, mechanisms that uncouple the genetic inheritance of abdominal obesity from T2D risk have not yet been described. Here we utilize multi-omic data to predict mechanisms of action at loci associated with discordant effects on abdominal obesity and T2D risk. We find six genetic signals in five loci associated with protection from T2D but also with increased abdominal obesity. We predict the tissues of action at these discordant loci and the likely effector Genes (eGenes) at three discordant loci, from which we predict significant involvement of adipose biology. We then evaluate the relationship between adipose gene expression of eGenes with adipogenesis, obesity, and diabetic physiological phenotypes. By integrating these analyses with prior literature, we propose models that resolve the discordant associations at two of the five loci. While experimental validation is required to validate predictions, these hypotheses provide potential mechanisms underlying T2D risk stratification within abdominal obesity.\n\n## Introduction\n\nMetabolic syndrome (MetSyn) is a cluster of dysregulated metabolic conditions that tend to occur together to increase the risk for cardiometabolic disorders such as type 2 diabetes (T2D) (Lusis, 2006). This cluster includes insulin resistance (IR), abdominal obesity, elevated serum triglycerides (TG) levels, low high-density lipoprotein cholesterol levels, as well as elevated systolic and diastolic blood pressure. Obesity, or the excessive accumulation of fat that presents a risk to health, is a major contributor to MetSyn (Lusis, 2006; Feero et al., 2010). Obesity, which is typically defined as a body mass index (BMI) above 30, has reached unprecedented levels of prevalence, and its role as a central regulator of disease risk makes it an appealing therapeutic target (Feero et al., 2010). Several recently developed T2D therapeutics have even successfully targeted obesity; SGLT2 inhibitors and GLP-1 agonists have been reported to result in a 2\u20136 kg reduction of body weight and reduced IR (Brown et al., 2021).\n\nDespite the promise of these obesity-centered therapeutic strategies, there has also been a growing body of evidence describing a rare phenotype known as metabolically healthy obesity (MHO) (Bl\u00fcher, 2020). MHO describes a group of phenotypes in which individuals with obesity are protected from adverse metabolic effects (Smith et al., 2019). While no formal definition of MHO exists, it is often described as either obesity with less than three components of MetSyn, or obesity without IR as computed by the homeostasis model assessment of insulin resistance (HOMA-IR) (Smith et al., 2019). Mechanisms proposed to mediate this include depressed ectopic fat accumulation, subcutaneous adipose tissue (SAT) expansion plasticity, and shifts in fat storage from the abdomen to the legs (Bl\u00fcher, 2020; Smith et al., 2019; Loos and Kilpel\u00e4inen, 2018). In recent years the ability of abdominal obesity to mediate cardiometabolic disease risk has gained attention. People with MHO have less intra-abdominal fat accumulation compared to people with metabolically unhealthy obesity (Kl\u00f6ting et al., 2010; Karelis et al., 2005; Chen et al., 2015; Jennings et al., 2008; Hayes et al., 2010; Koster et al., 2010). Intra-abdominal fat accumulation can be approximated through the ratio of waist-to-hip circumference (WHR) adjusted for BMI (WHRadjBMI). WHRadjBMI is a causal factor that increases susceptibility for T2D, but the genetic and molecular mechanisms underlying fat distribution remain largely unknown (Emdin et al., 2017; Gill et al., 2021; Li et al., 2021). Understanding the mechanisms mediating WHRadjBMI, MHO, and T2D is critical to our understanding of disease pathogenesis and to clinical strategies to treat MetSyn.\n\nMost of the genetic mechanisms of MHO described have been associated with increased BMI without increased disease risk. For example, the missense variant rs373863828 in CREB3 regulatory factor has been shown to increase BMI without a corresponding increase in HOMA-IR and circulating TG, or a decrease in circulating adiponectin (Minster et al., 2016). Ob/ob mice with overexpression of adiponectin but lacking in leptin are shown to accumulate considerable fat mass without a corresponding increase in insulin sensitivity (Kim et al., 2007). In contrast, the genetic loci associated with increased WHRadjBMI but without increased disease risk have not yet been described. To date, all genes that have been shown to increase fat accumulation into abdominal fat depots have also been shown to increase the risk for T2D (Fathzadeh et al., 2020; Small et al., 2018; Yang et al., 2022; Gesta et al., 2011; Loh et al., 2020; Loh et al., 2015).\n\nAs complex traits with both environmental and genetic risk factors, abdominal obesity and T2D have been the subject of multiple genome-wide association studies (GWAS). While GWAS have identified hundreds of genetic loci associated with abdominal obesity and T2D, moving from association to mechanism at a locus is not trivial. The use of colocalization analysis (COLOC), which identifies loci that contain shared genetic architecture for multiple traits of interest, can inform mechanistic hypotheses moving from association to function by integrating data from multiple studies (Hukku et al., 2021; Wallace, 2013; Wallace et al., 2012; Wallace, 2020). For example, the colocalization of a GWAS signal with genetic regulation of genes at quantitative trait loci (QTLs) implies a mechanistic relationship between the regulated gene and GWAS trait (Hormozdiari et al., 2016). Another recently developed approach named Tissue of ACTion scores for Investigating Complex trait-Associated Loci (TACTICAL) (Torres et al., 2020) incorporates gene expression data, and epigenetic annotations with GWAS associations to predict the causal eGenes and tissues of action at GWAS loci. These methods have been used to inform data-driven mechanistic predictions at GWAS loci that have been experimentally validated and can recall previously validated loci as positive controls.\n\nTo advance the understanding of mechanisms linking body fat distribution to T2D risk, independent of overall obesity, we used COLOC and TACTICAL to predict the mechanisms of action at genetic loci associated with both T2D and WHR, both adjusted for the BMI. Using the most recent GWAS summary statistics, QTL summary statistics, tissue-specific gene expression data, and high-resolution epigenetic annotations, we predicted the shared genetic architecture of T2DadjBMI and WHRadjBMI at 79 genetic loci. Here, we present the identification of five loci that contained association signals with discordant effects on abdominal fat and T2D risk, meaning that the allele of the lead variant associated with protection from T2D was associated with increased abdominal fat accumulation. We predicted the eGenes and tissues of action at these five loci and explored the relationship between adipose eGene expression with cellular and physiological phenotypes. Here, we provide data-driven hypotheses about predicted candidate causal eGenes at GWAS loci with associations that recall metabolically healthy abdominal obesity.\n\n## Results\n\n### Colocalization analysis of genetic loci associated with T2D and body fat distribution predicts colocalization of discordant T2DadjBMI and WHRadjBMI association signals at six association signals\n\nTo identify genetic loci which contained pleiotropic association signals for both T2DadjBMI and WHRadjBMI, we performed colocalization analysis (Figure 1A). This analysis yielded 79 genetic loci where a single variant was significantly associated with both T2DadjBMI and WHRadjBMI. We obtained the 99% credible set of variants in colocalized loci (Supplementary file 1) and discovered the presence of 143 variants in five loci associated with discordant effects on T2DadjBMI and WHRadjBMI. We also discovered 851 SNPs in 73 loci with the expected concordant effects on both traits. Although almost all of the representative lead discordant variants reached genome-wide significance, two associations reached nominal significance (p<5e-05). Because of recent work demonstrating that even variants with only nominal and local significance in GWAS can also have functional relevance to GWAS traits, we included variants prioritized in the 99% credible set but with only nominal significance (Li et al., 2020a). We then performed fine-mapping of the causal variants in each locus containing a discordant association signal while relaxing the assumption of a single causal variant per locus. In four of the five loci, this fine-mapping recalled only one likely candidate causal signal. In the 5q21.1 locus, SuSiE identified a secondary association signal that was also associated with discordant effects on T2DadjBMI and WHRadjBMI (Figure 1B and Supplementary file 2). To parse the associations between specific components of WHRadjBMI, including WC, HC, WHR, and BMI, with both T2D and T2DadjBMI, we performed multi-trait colocalization analysis with Hyprcoloc of the associations at discordant loci (Supplementary file 3). At three of the five discordant loci, the discordant association signals were also colocalized with WHRadjBMI component traits waist circumference (WC) and WHR.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/79834/elife-79834-fig1-v3.jpg)\n\n**Figure 1.:** (A) Summary of analysis pipeline and generated results. Details of data sources are available in Supplementary file 1. (B) Effect size (WHRadjBMI) and odds ratio (T2DadjBMI) of lead genetic variant at discordant association signals. (C) Phenome-wide association study (PheWAS) of lead discordant genetic variant effect sizes on glycemic and anthropometric traits. From left to right: random glucose (RG), fasting glucose (FG), FG adjusted for body mass index (BMI) (FGadjBMI), fasting insulin adjusted for BMI (FIadjBMI), glycated hemoglobin (HBA1C), pancreatic fat percentage (PF), trunk fat ratio (TFR), visceral adipose tissue (VAT), VAT adjusted for BMI and height (VATadjBMIHeight), VAT to abdominal subcutaneous adipose tissue (VATtoASAT), VAT to gluteofemoral fat (VATtoFGAT), waist circumference, waist circumference adjusted for BMI (WCadjBMI), waist-to-hip ratio (WHR), and BMI. (D) Variant effect prediction of 99% credible set variants in discordant genetic loci.\n\nWe next investigated the genetic and physiological consequences of discordant variants. We performed a phenome-wide association study (PheWAS) for anthropometric and glycemic traits with the most highly powered GWAS available (Figure 1\u2014source data 1; Costanzo et al., 2023). We used the most highly powered GWAS or GWAS meta-analysis for each trait included in our PheWAS and queried the summary statistics for the associations of each lead discordant variant (Figure 1C). This query revealed consistent significant associations with discordance across anthropometric and glycemic traits in each locus. At the association signal in the 5q11.2 region, association signals exemplified this metabolic discordance. Represented by genetic variant rs459193, the association signal was associated with increased abdominal obesity in nearly every metric, but also with protection from T2D in nearly every metric. At all lead discordant variants, effects were consistent with a phenotype of increased abdominal obesity but protection from T2D.\n\nWe then queried the variant effect predictor (VEP) to discover genetic variant annotations (McLaren et al., 2016; Figure 1D and Supplementary file 4). VEP predicted that discordant variants overwhelmingly lie in noncoding regions of the genome, with only one missense variant in a coding region. Because the vast majority of discordant variants lie in noncoding regions, it is likely their function lies in altering genetic regulation of proximal genes (Civelek and Lusis, 2014). Therefore, we investigated the coincidence of these discordant variants with the genetic regulation of proximal genes with functional prediction methods.\n\n### Integration of molecular QTLs and genomic annotations to predict functional genes in tissues of action at discordant genetic loci\n\nTo investigate the role of eGenes in physiological phenotypes and cellular phenotypes, we evaluated the correlation of adipose tissue eGene expression and T2D-relevant phenotypes since these correlations can reveal biologically relevant functional relationships (Civelek et al., 2017). To predict the genes and tissues of function at discordant loci, we used publicly available multi-omic data from metabolically relevant tissue-specific resources to predict functional mechanisms underlying associations. We first interrogated where the 143 discordant variants in the credible set were located in relation to tissue-specific chromatin state data in pancreatic islet, adipose, liver, and skeletal muscle tissues (Kim et al., 2007). We computed the enrichment of colocalized association signals in various chromatin state annotations in each of these tissues (Figure 2A). We noted the specific enrichment of adipose tissue chromatin states of high activity, such as active transcription start sites, enhancer regions, and areas of transcriptional activity. For every other tissue, the leading annotations represented areas of decreased transcriptional activity. We additionally queried 3D chromatin data for discordant variant enhancer/promoter contact but did not find any significant interactions (Figure 2\u2014source data 1). We then used these enrichment scores, chromatin states, and gene expression data to predict the functional tissues at each colocalized locus (Supplementary file 5). We predicted that adipose tissue was classified as the candidate tissue of action (TOA) at three loci, and skeletal muscle and liver tissue shared classification with adipose tissue at the remaining two discordant loci (Figure 2B).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/79834/elife-79834-fig2-v3.jpg)\n\n**Figure 2.:** (A) Tissue-specific enrichment of chromatin states of variants in the 99% credible set of colocalized variants. (B) Tissue of action scores for association signals in the five discordant loci. Orange coloration indicates predicted adipose tissue of action at the locus, and blue coloration indicates shared tissue of action assignment at the locus. (C) Summary table of the expression quantitative trait loci (eQTL) and splicing QTL (sQTL) colocalizations with waist-to-hip circumference adjusted for the body mass index (WHRadjBMI) and T2DadjBMI for discordant loci. The expression effect direction is with respect to the protective type 2 diabetes allele. (D) Expression of predicted effector genes in discordant loci across cell types. From left to right: adipocyte progenitor stem cells (ASPC), lymphatic endothelial cells (LEC), smooth muscle cells (SMC), and natural killer cells (nk). Data was obtained from Emont et al., 2022.\n\nTo predict effector genes (eGenes) regulated by discordant variants, we next predicted the colocalization of QTLs with the WHRadjBMI and T2DadjBMI GWAS. Colocalization of a GWAS association signal with a genetic regulatory association signal can be used to prioritize mechanisms underlying association. We obtained expression QTL (eQTL) and splicing QTL (sQTL) summary statistics from multiple cohorts and tissue groups (Figure 2\u2014source data 1). We extracted eQTL summary statistics for all genes within 1 Mb of the lead variant of all discordant colocalized loci from adipose, pancreatic, skeletal muscle, and liver tissues. We extracted sQTL summary statistics for all genes within 1 Mb of the lead variant of all discordant colocalized loci for adipose tissue data that was available. We used Summary-based Mendelian Randomization (SMR) and Coloc.abf to perform GWAS-QTL colocalization and used the framework developed by Hukku et al. to reconcile the results of SMR and Coloc.abf. In this framework, colocalization found using Coloc.abf but not with SMR potentially represents signals with horizontal pleiotropy, whereas colocalization found through SMR but not through Coloc.abf potentially represents locus-level colocalization (Hukku et al., 2021). Colocalization found using both methods represents the identification of candidate causal effector transcripts. Our colocalization analysis revealed seven candidate causal effector transcripts at three of the five discordant loci (Figure 2C). With Coloc.abf, we predicted four putative eGenes in these two loci. At the 2p21 locus, we predicted THADA-AS (SAT, VAT) to be the sole eGene. At the 5q21.1 locus, we predicted GIN1 (SAT), PAM (SAT & SKM), and PPIP5K2 (SAT) to be the eGenes. The association signal at rs6860588 was associated with a novel alternative splicing isoform of PAM in SAT, which skips the 14th exon. Using SMR, we predicted four eGenes at two discordant loci. At the 5q21.1 locus, we predicted that the genetic association signal represented by rs6860588 was also associated with the regulation of EIF3KP1 (SAT, VAT, SKM, PANC), PPIP5K2 (SAT), and GIN1 (SAT, SKM, PANC). At the discordant association signal in the 19q13.11 locus, we predicted that the genetic association signal represented by variant rs3786897 was also associated with the regulation of PEPD (SAT, VAT). As the colocalization transcripts GIN1 and PPIP5K2 were replicated with both methods (Supplementary files 6 and 7), these represent high-confidence predictions of potentially causal effector transcripts underlying the genetic association with discordance in the 5q21.1 locus. We queried white adipose tissue single-cell RNA sequencing data (Emont et al., 2022) for discordant association signal eGenes and found that eGenes were expressed in adipocytes and adipocyte progenitor stem cells (ASPCs) (Figure 2D). Because body fat distribution associations are driven by ASPCs and adipocytes in adipose tissues (Lu et al., 2016; Locke et al., 2015; Hansen et al., 2023), we reasoned that exploring adipose expression data could help to explain discordant associations. This multi-omic data enabled us to make high-confidence consensus predictions of tissues and eGenes of action at discordant loci.\n\n### Adipose gene expression analysis of discordant loci eGenes reveals dynamic expression in adipogenesis and relationships with metabolic physiology\n\nTo investigate the role of eGenes in physiological phenotypes and cellular phenotypes, we then evaluated the gene expression dynamics of eGenes in adipose tissue. Correlations between relevant tissue gene expression and metabolic phenotypes can reveal biologically relevant functional relationships (Civelek et al., 2017). We used SAT transcriptomic data from the 426 men of the METSIM cohort to investigate how adipose tissue expression of discordant locus eGenes was related to 23 metabolic phenotypes underlying T2D and abdominal fat accumulation (Figure 3\u2014source data 1; Brotman et al., 2022; Laakso et al., 2017). We extracted adipose tissue gene expression data for eGenes. Gene expression data were available for six of the seven eGenes. We additionally extracted splice junction expression data for the only gene with a colocalized splice junction, PAM. We then computed the biweight midcorrelation of transcript counts or splice junction counts with 23 metabolic phenotypes. We found significant (false discovery rate [FDR] <0.05) correlations of adipose tissue gene expression of three genes with 13 phenotypes (Figure 3A). We found that adipose tissue expression of THADA-AS, PEPD, and GIN1 was significantly correlated with inflammatory, glycemic, and anthropometric phenotypes. SAT THADA-AS expression was positively correlated with IR, abdominal fat accumulation, and serum triglyceride levels, but with higher levels of plasma interleukin-1 receptor antagonist (IL-1RA) and C-reactive protein (CRP). IL-1RA plays a protective role in resolving inflammation (Volarevic et al., 2010), and elevated levels have been linked to prediabetes (Luotola, 2022; Grossmann et al., 2015). CRP has been used as a biomarker of increased inflammation in chronic diseases (Herwald and Egesten, 2021). The eQTL and GWAS data are associated with decreased expression of THADA-AS, which is consistent with the protection from IR in the correlation data but not with the increased abdominal obesity and inflammation. We are unable to resolve this correlation evidence with the discordance, but because the METSIM cohort was collected using single-end RNA sequencing, parsing the correlations of THADA and THADA-AS is difficult (Li et al., 2013). SAT expression of GIN1 was correlated with higher plasma adiponectin. Adiponectin, secreted by adipocytes, increases insulin sensitivity, and this provides a mechanism for protection from T2D (Achari and Jain, 2017). This expression is consistent with the QTL and GWAS data, providing a direct potential mechanism linking the eQTL to protection from T2D. SAT PEPD expression was also positively correlated with plasma IL-1RA levels. The QTL at this locus is associated with decreased expression of PEPD, providing another direct potential mechanism linking the eQTL to protection from T2D. Through this correlation analysis, we were able to predict the physiological consequences of eGenes at three discordant loci.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/79834/elife-79834-fig3-v3.jpg)\n\n**Figure 3.:** (A) Biweight midcorrelation of adipose tissue eGenes expression with metabolic phenotypes (false discovery rate [FDR] <5%). From left to right: Homeostatic model assessment of insulin resistance (HOMA-IR), high-density lipoproteins (HDL), low-density lipoproteins (LDL), interleukin-1 receptor agonist (IL1RA), C-reactive protein (CRP). (B) Dynamic expression of adipose tissue eGenes over 16-day adipogenesis time course in Simpson-Golabi-Behmel syndrome (SGBS) cells. We performed the likelihood ratio test (LRT) to evaluate if each gene was dynamically expressed over the time course. The p-value of the LRT is included.\n\nWe next evaluated if eGenes identified in adipose tissues were dynamically expressed in adipogenesis. Dynamic gene expression in adipogenesis could point to the regulatory and structural roles of eGenes in adipogenesis (Nassiri et al., 2016; Anderson et al., 2020). We obtained time series ASPC adipogenesis time course data and evaluated eGenes for dynamic expression. Gene expression data were available for five of the seven eGenes. Because the expression data was single-stranded and unable to resolve forward or reverse-strand sequences, we included the probe for THADA to represent THADA-AS. We found that all eGenes except PPIP5K2 were dynamically expressed over a 16-day adipogenesis time course (Figure 3B), implying potential functional roles for these genes in regulating preadipocyte fate.\n\n### Integration of analysis to predict the functional genes and tissues of action at the discordant 5q21.1 locus\n\nBy predicting the mechanisms of action at discordant loci, we were able to generate specific hypotheses about the genes at each locus that underlie GWAS associations. We predicted that the causal discordant signal at the 5q21.1 locus was represented by variant rs6860588. The T allele of rs6860588 is associated with protection from T2D, increased abdominal obesity, decreased SAT expression of GIN1, increased SKM expression of PAM, decreased SAT expression of PPIP5K2, increased SAT expression of a PAM splice variant with a skipped exon 14, and decreased SAT expression of the canonical PAM splice junctions, exon 13:14 and exon 14:15 (Figure 4A; Figure 4\u2014figure supplement 1 and Figure 4\u2014source data 1). While the eGenes, PAM, GIN1, and PPIP5K2, have not been studied in the context of obesity and metabolism, they have been studied for their function in other cell types. We found that GIN1 and PAM were dynamically expressed over the course of adipogenesis (Figure 3B). GIN1 has been hypothesized to be a key regulator of energy metabolism in atria (Li et al., 2020b), but little is known about gypsy integrases and their molecular function. PAM facilitates C-terminus glycine residue amidation, which can catalyze protein potency (Thomsen et al., 2018; Merkler, 1994). PAM additionally has been linked to metabolic phenotypes in multiple model organisms, where its deficiency is associated with decreased peptide secretion and potency critical to insulin release, but not with increased diabetes (Chen et al., 2020a; Zieli\u0144ski et al., 2016). PAM loss of function likely results in deficient peptide synthesis and secretion in adipocytes as well, and its increase of function likely results in increased myokine signaling from skeletal muscle. Knockdown of PPIP5Ks results in decreased proliferation, increased mitochondrial mass, decreased inositol metabolism, and accelerated glycolysis in tumor cell lines (Gu et al., 2021; Gu et al., 2017; Badodi et al., 2021). We did not observe significant interactions between adipose PPIP5K2 expression and adipogenesis or metabolic phenotypes, but this does not rule out a role for PPIP5K2 in the metabolic discordance at 5q21.1. Thus, we propose that the T allele at rs6860588 regulates a group of genes that promotes adipogenesis, glycolysis, and inflammation in white adipose tissue while simultaneously decreasing preadipocyte expansion and increasing skeletal muscle peptide secretion and potency (Figure 4B). This model is consistent with the TOA score and QTL analysis, which both predict skeletal muscle and adipose tissue contribution to the associations at the locus and reconcile the associations with abdominal obesity but protection from T2D associated with the T allele of rs6860588 (Figure 4C).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/79834/elife-79834-fig4-v3.jpg)\n\n**Figure 4.:** (A) \u03b2 of the T allele of discordant variant rs6860588 with respect to waist-to-hip circumference adjusted for the body mass index (WHRadjBMI), T2DadjBMI, and colocalized effector genes (eGenes). (B) Summary of associations with T allele at rs6860588. (C) Integrated model reconciling metabolic discordance with eGene-associated phenotypes in two tissues of action. Created with BioRender.com.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/79834/elife-79834-fig4-figsupp1-v3.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Manhattan plot of associations at the 5q21.1 locus containing lead variant rs6860588 for (A) waist-to-hip circumference adjusted for the body mass index (WHRadjBMI) genome-wide association studies (GWAS), (B) T2DadjBMI, (C) subcutaneous adipose tissue (SAT) expression of GIN1, (D) SKM expression of PAM, (E) SAT expression of PPIP5K2, (F) SAT expression of PAM splice variant that skips exon 14, (G) SAT expression of canonical PAM splice junction between exons 13 and 14, and (H) SAT expression of canonical PAM splice junction between exons 14 and 15.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/79834/elife-79834-fig4-figsupp2-v3.jpg)\n\n**Figure 4\u2014figure supplement 2.:** LocusCompare plot of associations with rs6752964 for (A) waist-to-hip circumference adjusted for the body mass index (WHRadjBMI) genome-wide association studies (GWAS) with T2DadjBMI GWAS, (B) T2DadjBMI GWAS with adipose tissue expression quantitative trait loci (eQTL), and (C) WHRadjBMI GWAS with adipose tissue eQTL. (D) The proposed model reconciles the metabolic discordance observed in 2p21 with the associated lead variant rs6752964. Created with BioRender.com.\n\n## Discussion\n\nWe report here the integration of multi-omic data spanning the genome, transcriptome, and epigenome to predict functional genes and tissues underlying genetic signals associated with abdominal obesity but protection from T2D. We predicted the colocalization of T2DadjBMI and WHRadjBMI association signals at 79 genetic loci. The protective allele of six association signals was associated with lower T2D risk but higher abdominal fat accumulation, independent of overall obesity (Figure 1). By analyzing colocalization with molecular QTLs, computing the enrichment of variants in epigenomic and genomic annotations, and comparing tissue-specific gene expression, we predicted the eGenes and tissues of action at discordant association signals (Figure 2). We found significant evidence that adipose tissue biology is a significant contributor at colocalized loci. We then explored the effects of eGenes expression in adipose tissue and preadipocytes on adipogenesis metabolic phenotypes (Figure 3) and proposed a model by which the genetic variant rs6860588 might confer protection from T2D but increased abdominal obesity (Figure 4).\n\nThe six genetic association signals associated with discordant metabolic phenotypes offer potential insight into the genetic mechanisms underlying risk stratification of T2D risk within abdominal obesity. While mechanisms promoting MHO have been described, most have focused on body fat distribution. Defining more mechanisms that promote MHO is critical as rates of obesity rise globally. Complicating the study of MHO is the lack of precision in its definition. Some definitions include obesity with less than three components of MetSyn, obesity with healthy HOMA-IR, or even obesity with the lack of a metabolic and cardiovascular disorder (Bl\u00fcher, 2020). MHO has been controversial and termed an intermediate state (Caleyachetty et al., 2017; Rey-L\u00f3pez et al., 2015; Bl\u00fcher, 2017), but a growing body of evidence has accumulated providing evidence that genetic mechanisms influence predisposition to it. In Samoans, the common CREBRF coding variant rs12513649 increases BMI and overall adiposity but protects from IR (Li et al., 2020a). Additionally, IRS1, COBLL1, PLA2G6, and TOMM40 have been associated with higher BMI but with protective lipidemic and glycemic traits (Loos and Kilpel\u00e4inen, 2018). The physiological functions of these genes have been proposed to involve adipose tissue caloric load capacity and body fat distribution (Loos and Kilpel\u00e4inen, 2018; Lu et al., 2016; Kilpel\u00e4inen et al., 2011; Lotta et al., 2017).\n\nWhile abdominal fat accumulation is known to be one of the strongest predictors of obesity-related complications (Emdin et al., 2017; Censin et al., 2019; Dale et al., 2017), our findings point to mechanisms that contradict this trend. Each locus must be functionally annotated before translating the association results to the clinic. If these discordant variants are functionally annotated and fully characterized, they might have clinical utility to T2D risk allele carriers and inform personalized therapeutic strategies. Discovering mechanisms uncoupling abdominal obesity from T2D can aid in personalized therapeutic strategies and in understanding personalized risk stratification. Risk-stratified personalized obesity treatment could prioritize patients that would or would not benefit significantly from weight-loss interventions, and use genotype as a biomarker for patients who would benefit from other therapeutic strategies (Klonoff, 2008; Williams et al., 2022). Thus, the importance of personalized risk stratification for T2D will only increase as abdominal obesity becomes more prevalent. Personalized risk stratification with an understanding of specific molecular, cellular, and physiological mechanisms will aid in the prioritization of effective therapies. This investigation provided specific hypotheses linking functional genes at discordant loci to tissues of action for experimental follow-up in vitro and in vivo. Functional characterization of the effect of these genes on insulin uptake, preadipocyte proliferation, and adipogenesis, as well as secretome characterization, will elucidate precise mechanisms through which these eGenes might contribute to the discordant association signals.\n\nWe predicted tissues and mechanisms of action at five loci containing six discordant association signals with increased abdominal obesity and protection for T2D. A particular example of a peculiar metabolic discordance was revealed at the 2p21 locus containing THADA and THADA-AS, represented by variant rs6752964 (Figure 4\u2014figure supplement 2). The associations have been replicated multiple times (Mahajan et al., 2018; Zeggini et al., 2008; Grarup et al., 2008), but the exact mechanisms underlying this association are unknown. THADA plays an evolutionarily conserved role in intracellular calcium signaling and consequently non-shivering thermogenesis. In Drosophila melanogaster, thada knockout flies developed obesity and hyperphagia without altered circulating glucose levels (Moraru et al., 2017). In mice, pancreatic Thada knockout resulted in protection from T2D through the preservation of \u03b2-cell mass and improvement of \u03b2-cell function (Zhang et al., 2023). Mendelian randomization studies in humans have likewise found consistent links between THADA and adiposity, but have not yet been able to link it to diabetic phenotypes such as insulin secretion (Grarup et al., 2008; Simonis-Bik et al., 2010). Our investigation revealed relationships between THADA and THADA-AS expression with diabetic and obesity-abdominal obesity phenotypes, as well as dynamic expression in adipogenesis (Figure 3). Regulatory interactions whereby THADA-AS expression interferes with THADA transcription could provide a basis by which variant rs6752964 might confer abdominal obesity, but protection from T2D (Brantl, 2002; Faghihi and Wahlestedt, 2009; Wight and Werner, 2013). Further, we also found colocalization of genetic regulation of PEPD in adipose tissue with the discordant association signal represented by variant rs3786897. Depletion of PEPD in preadipocytes has been shown to reduce adipogenic potential, decrease triglyceride accumulation, and phospho-Akt signaling, which is critical to insulin sensitivity (Chen et al., 2020b). Notably, a secondary signal represented by variant rs731839 was apparent in this locus but was not significant for WHRadjBMI. This signal has been associated with sex-specific effects on serum lipid levels in Han and Mulao populations (Lin et al., 2014). Further in vivo and in vitro work must be done to resolve this multi-tissue, multi-eGene locus.\n\nAlthough our analysis incorporated genome, transcriptome, epigenome, and phenome data in multiple cohorts, and used the consensus of orthogonal methods to predict the mechanisms of action at discordant loci, follow-up is required to validate each prediction. Additionally, our genetic expression data used single-strand sequencing, and therefore parsing out the associated effects of sense and antisense transcripts is difficult. Finally, it is critical to discover to diversify ancestry and sex in genetic association studies to identify more genetic loci underlying MHO. Without experimental follow-up and extensive clinical studies, genotype should not be used as a diagnostic metric. CRISPR editing of alleles in relevant cell types to study cis-regulatory effects on genes and phenotypic effects on cells, and work in animal models is necessary to fully annotate these loci. In addition, it is important to identify the indirect and direct effects of discordant variants, as these endocrine tissues are major contributors to peptide and hormone secretion. Further experimental characterization is critical to placing these results in the proper context and providing the basis for personalized interventions for T2D. The predictions at these six signals provide specific hypotheses to be tested, and should they be validated experimentally provide knowledge of the precise mechanisms of uncoupling obesity from T2D risk.\n\n## Methods\n\n### GWAS-GWAS colocalization analysis\n\nGWAS results for T2DadjBMI and WHRadjBMI were obtained from Mahajan et al., 2018, and Pulit et al., 2019. The set of single nucleotide polymorphisms (SNPs) within 500 kb of a genome-wide significant SNP in either GWAS was included in the colocalization test. Rare variants, defined as SNPs reported to have effect allele frequencies of less than 1% in either GWAS, were excluded. Proximal analysis windows (>250 kb) were merged, and the colocalization test was performed on these genetic loci with three methods: Coloc.abf (Wallace, 2020), Hyprcoloc (Foley et al., 2021), and visual inspection of LocusCompare plots (Liu et al., 2019).\n\nThe default parameters were used for Hyprcoloc. In Coloc.abf, the default parameters for p1 and p2 prior probabilities were used for the individual GWAS hypotheses. The parameter p12, the prior for single variant colocalization, was set to 5e-06 as prescribed by Wallace, 2020, to balance false negative and positive results. Loci were considered colocalized if the regional probability of colocalization was greater than 0.70. In Coloc.abf, this was the sum of the PPH3 and PPH4 statistics, and in Hyprcoloc this was the regional probability statistic. Loci that met colocalization criteria in either method were plotted using LocusCompare with the default European ancestry linkage disequilibrium (LD) data from 1000 Genomes (Fairley et al., 2020) and with genome build hg19. This resulted in 121 LocusCompare plots on which visual inspection was performed to verify colocalized genetic association signals. If genetic loci were considered colocalized by at least two of the three colocalization analysis methods, we considered these consensus colocalized loci. We termed this consensus analysis \u2018COLOC\u2019.\n\n### Discordant locus identification\n\nWe obtained the 99% credible set of SNPs from the results of Bayesian factor analysis implemented through Coloc.abf at each locus. We calculated the Z-scores for the association test of each genetic variant and the GWAS trait. If the Z-score associated with SNP had the opposite sign for association with WHRadjBMI and T2DadjBMI with respect to the same allele and the p-value for the association with both traits was less than 1e-05, we considered the variant discordant. We then identified in which loci the SNPs were located, and queried haploReg (Ward and Kellis, 2016) LD data with the haploR package in R (Zhbannikov et al., 2017) to separate signals in the same loci using LD clumping (R2 > 0.50) on the discordant variants.\n\n### Phenome-wide association study\n\nWe queried the GWAS meta-analysis associations of glycemic and anthropometric traits for each lead discordant variant in the Type 2 Diabetes Knowledge Portal (T2DKP) (Costanzo et al., 2023). We additionally obtained the summary statistics of abdominal fat MRI scans in the UK Biobank and queried these summary statistics for discordant variants (Liu et al., 2021).\n\n### Multi-trait colocalization analysis\n\nWe obtained GWAS summary statistics for WC, hip circumference (HC), WHR, WHRadjBMI, T2D, and T2DadjBMI. We extracted summary statistics of variants within genetic loci containing a discordant association signal (Mahajan et al., 2018; Pulit et al., 2019) and performed multi-trait colocalization with Hyprcoloc (Foley et al., 2021). We considered an association signal colocalized for multiple traits if Hyprcoloc computed a posterior probability for both body fat distribution traits (WC, HC, WHR, and WHRadjBMI) and T2D or T2DadjBMI.\n\n### Fine-mapping analysis\n\nWe performed variable selection in multiple regression as implemented in the R package SuSiE (Wang et al., 2020). This method implements the sum of single-effects models to fine-map the causal variant(s) in a locus. Using the T2DadjBMI and WHRadjBMI GWAS summary statistics and the 1000 Genomes LD data, we performed fine-mapping of loci containing a genetic variant associated with discordant effects on T2DadjBMI and WHRadjBMI. We used the default flag options in SuSiE and performed a sensitivity analysis of the results to a range of priors. We selected causal variants with a PPH4 greater than 0.70.\n\n### GWAS-QTL colocalization analysis\n\nWe obtained eQTL data from the Genotype-Tissue Expression (GTEx) for 49 tissues (Battle et al., 2017), the Stockholm-Tartu Atherosclerosis Reverse Networks Engineering Task (STARNET) cohort for 6 tissues (Franz\u00e9n et al., 2016), and the Metabolic Syndrome in Men (METSIM) for SAT (Brotman et al., 2022). We also obtained SAT sQTL results from the METSIM cohort. Data sources and further information are detailed in Figure 2\u2014source data 1. We extracted the QTL data for each gene or transcript within 1 Mb of a discordant locus start or end site and independently colocalized with the T2DadjBMI and WHRadjBMI GWAS using Coloc.abf and SMR. When implementing Coloc.abf, we considered a signal to be colocalized if PPH4 was greater than 0.50 (a threshold used for GWAS-QTL colocalization in admixed populations; Gay et al., 2020). We repeated the analysis in SMR and used an FDR threshold of 5% to control for false positives. We then performed a visual inspection of GWAS-QTL colocalization of plots generated by LocusCompare. If a GWAS-QTL colocalization met these criteria, the proximal gene was termed an eGene.\n\n### fGWAS annotation enrichment analysis\n\nWe used the functional GWAS (fGWAS) (Pickrell, 2014) command-line tool to compute the enrichment of associations, in particular genomic and epigenomic regions. We first obtained the chromosome and base-pair position of each variant in the 99% credible set from each of the 79 colocalized loci. We mapped the SNPs to their placement in genomic regions using bed files. We used bed files from tissue-specific chromatin state data (adipose, liver, pancreatic islet, and skeletal muscle) and genome-level coding region annotations, and mapped SNPs to their presence in these regions. From these maps, we performed enrichment analysis with the complete model of all annotations with the -fine and -xv flags on fGWAS. We used the natural log of the Bayes factor of the colocalization test and computed the enrichment of SNPs for presence in coding regions to genetic and epigenetic annotations.\n\n### TOA analysis\n\nWe conducted TOA score analysis using the credible set of SNPs from each of the 79 colocalized loci. TACTICAL computes the TOA score with the SNP-level Bayesian probabilities, the SNP annotation maps, and the annotation enrichment scores. We used the Coloc.abf PPH4 scores for the SNP-level Bayesian probability, the fGWAS annotation enrichment scores, and the SNP annotation maps to compute the TOA score at all colocalized loci. We separated independent association signals in the same loci (LD <0.5) with HaploReg (Ward and Kellis, 2016). With TACTICAL (Torres et al., 2020), we integrated the credible set of SNPs with the enrichment for genome-level and tissue-specific annotations. We used the default tissue classification thresholds of 0.20 to classify signals as belonging to a particular TOA and less than 0.10 difference to classify signals as sharing TOA assignments between multiple tissues.\n\n### Gene expression and phenotype correlation analysis\n\nFor each eGene, we computed the biweight midcorrelation and its significance, as implemented by the Weighted Genetic Coexpression Network Analysis (WGCNA) package (Langfelder and Horvath, 2008), between gene expression with metabolic phenotypes measured in the METSIM cohort (Laakso et al., 2017). We controlled for false positives with a 5% FDR threshold as implemented by the q-values package in R (John, 2002).\n\n### Adipogenesis gene expression dynamics analysis\n\nWe obtained Simpson-Golabi-Behmel syndrome preadipocyte adipogenesis time series gene expression data from GEO (accession number GSE76131) (Nassiri et al., 2016). We evaluated the dynamic expression of each adipose tissue eGene by fitting the gene expression over time to a linear model and applying the likelihood ratio test (LRT) to compare the time-dependent models to time-independent null models. We considered an eGene to be dynamically expressed in adipogenesis if the p-value of the LRT was less than 0.05.\n",
+      "created_at": "2025-12-04T02:13:21.395666Z"
+    },
+    {
+      "id": "2bd2d985-6748-4f17-a124-64083cb02d4a",
+      "submission_id": "8acfe3c4-05c9-4c21-a77c-3e638a6ea1bb",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Tune H Pers, https://ror.org/035b05819 University of Copenhagen Denmark\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.79834.sa0](https://doi.org/10.7554/eLife.79834.sa0)\n\nThis study presents a valuable finding on five genome-wide association study loci displaying discordant effects on T2D and abdominal obesity. The evidence supporting the claims of the authors is solid, although further experiments are required to describe the mechanisms through which a genetic variant can confer increased abdominal obesity while offering protection from T2D risk. The work will be of interest to researchers working within the fields of variant-to-function analysis and endocrinology.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Tune H Pers, https://ror.org/035b05819 University of Copenhagen Denmark\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.79834.sa1](https://doi.org/10.7554/eLife.79834.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Predicting mechanisms of action at genetic loci associated with discordant effects on type 2 diabetes and abdominal fat accumulation\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, including Tune H Pers as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by David James as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Marcel den Hoed (Reviewer #2).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1) Please carefully address, through additional analyses, the comments related to whether the proposed effector genes are likely \"healthy obesity genes\", or whether there are at these loci either multiple causal genes per locus, or single causal genes acting on different traits via different tissues and mechanisms.\n\n2) Please carefully address the comments on WHRadjBMI being a trait that is complicated to interpret due to its composite structure, ideally by including analyses focusing on the two different fat depots that the WHR measure is based on.\n\n3) Please address, where appropriate through additional analyses, all remaining comments raised by the three referees.\n\nReviewer #2 (Recommendations for the authors):\n\nI read your manuscript with great interest and think the findings are interesting. Nevertheless, I hope the points raised below can help make the manuscript even better, and help support some of the conclusions drawn.\n\n1. The trait that is WHRadjBMI has puzzled me for a while. Ratios can be problematic per se if two traits have a non-zero intercept (I am not sure if this is the case for WC and HC?), and adjusting for a heritable trait (BMI) may introduce collider bias, as was elegantly shown by Day et al. (https://pubmed.ncbi.nlm.nih.gov/26849114/). As a result, an association with WHRadjBMI may not reflect the same biological phenomenon for each locus. Hence, in addition to associations with WHRadjBMI and T2DadjBMI, it would be informative to also show summary statistics for associations of these loci with waist circumference, hip circumference, BMI and T2D in Figure 1.\n\n2. By running a co-localization analysis with sets of SNPs within 200kb of a genome-wide significant SNP in either GWAS, the number of truly co-localizing signals may be underestimated due to secondary association signals in either or both GWASs. It could be worthwhile to additionally run conditional analyses for each outcome to identify such loci and run the co-localization analysis for each association signal separately.\n\n3. The authors state that associations were considered discordant if the z-score had an opposite direction for the same allele. Presumably, the association with both traits also needed to be significant?\n\n4. In a best-case scenario, WHRadjBMI indeed reflects abdominal obesity, as intended. However, associations with WHRadjBMI then reflect the net association with adiposity across all individual abdominal fat depots. This does not tell us which lipid depot(s) drive(s) the association with WHRadjBMI. Could the authors explore associations with e.g., liver fat and pancreas fat as derived by MRI in UK biobank data for these six loci?\n\n5. Associations don't provide insights into causal pathways or directions of effect. Hence, I suggest refraining from using causal language, e.g., in line 75: \"protecting against T2D but increasing abdominal fat accumulation\". Even if a causal variant acts on both outcomes through a single causal gene and pathway (both are debatable at this stage), then there are still four possible courses of action. Similarly, in the discussion (line 237) the authors state that: \"increased expression of THADA-AS results in increased abdominal fat accumulation but decreased T2D risk\". No evidence was provided that justifies this conclusion based on an association.\n\n6. Even if there is only one causal gene, its effects on different outcomes may be mediated by multiple tissues and cell types (and thus, mechanisms). Since all six loci showing directionally discordant associations with WHRadjBMI and T2DadjBMI are located in non-coding regions, these loci likely have a regulatory role, e.g., as enhancers. Hence, the seemingly directionally discordant associations may well be mediated by more than one causal gene. I would argue that neither the \"one gene, multiple pathways\" nor the \"multiple genes\" scenarios reflect uncoupling.\n\n7. Co-localization of credible variants with sQTLs and eQTLs does not mean that such genes are causal for the traits of interest, as the association between the expression of a gene X and the outcome of interest can be confounded by the expression of the truly causal gene Y, with the expression of both genes X and Y influenced by the enhancer that is flagged by the causal variant. To get one step closer to such inference, it would be informative if the authors could show chromatin-chromatin interaction data for credible variants in all six discordant loci, across all relevant cell types.\n\n8. Gene prioritization is a fast-moving field, and a range of bioinformatics approaches \u2013 but no gold standard \u2013 are available to prioritize candidate genes. Results using proof-of-concept loci have not shown very convincing results for the predictive ability of eQTL associations to flag causal genes, even in the presence of co-localization. Hence, it would be informative to see which genes are prioritized in these loci by other available approaches \u2013 including but not limited to chromatin accessibility QTLs in relevant cell types \u2013 and if there is consensus across those approaches as to which gene(s) are likely causal.\n\n9. Even if there are loci that uncouple genetic effects on abdominal adiposity and risk of type-2 diabetes, the causal beneficial effect of weight loss is so large in comparison that it would no doubt remain advisable for most if not all individuals to lose weight to reduce the risk of T2D and its complications.\n\n10. Why was ATAC-sec data provided for only one of six discordant loci? In the discussion the authors state that tissues and mechanisms of action are predicted for six loci, but only one or two are described in the paper.\n\nReviewer #3 (Recommendations for the authors):\n\n1. The rationale for the study is unclear. The authors introduce the study as an investigation into factors explaining individual differences in the relationship between obesity and cardiometabolic health, particularly the \"metabolically healthy obesity\" and \"lean, insulin resistance\" phenotypes. However, the analyses use outcome phenotypes that are adjusted for BMI (i.e. obesity): WHRadjBMI and T2DadjBMI. Thus, the results do not explain differences in obesity status and metabolic health, but rather tell about differences in body fat distribution and T2D risk, independent of obesity. Furthermore, a relatively low abdominal fat accumulation is one of the key characteristics of the \"metabolically healthy obesity\" phenotype associated with lower T2D risk, while the \"lean, insulin resistance\" phenotype associated with increased T2D risk, is characterized by relative increase in abdominal adiposity. Thus, the discordant association pattern of relatively higher abdominal adiposity but lower risk of T2D, investigated by the authors, does not exemplify either of these two phenotypes. Could the authors think of a biological or clinical example that could represent the discordant genetic association pattern they are aiming to characterize, in order to create a more plausible rationale for the present analyses?\n\n2. Overall, it is difficult to imagine a plausible biological explanation for a relationship where higher WHRadjBMI would mediate a lower risk of T2DadjBMI. It would be really interesting is such biology exists, but at the moment the paper does not give much help to the reader in interpreting what biological mechanism could underlie such a relationship. An alternative explanation for the findings is the possibility that the genetic effects are driven by independent effects of the same genes on biological pathways in two separate tissues (e.g. adipose tissue and pancreas), which would then generate the seemingly discordant genetic association pattern between WHRadjBMI and T2DadjBMI.\n\n3. A clear weakness in the study is the lack of any consideration to the subcomponents of the WHR phenotype: waist and hip circumference. As WHR is calculated as the ratio of waist circumference to hip circumference, WHR can increase if waist circumference increases or if hip circumference decreases, reflecting an increase in abdominal fat or a decrease in gluteofemoral fat, respectively. Waist and hip circumferences have very different implications for cardiometabolic health and T2D risk. Thus, is it critical to include an analysis on genetic effects on the two different fat depots, to understand the biological underpinnings of the findings. In addition, further GWAS results could be used to look into more detailed fat distribution phenotypes, such as the amount of visceral fat and subcutaneous fat in different body compartments.\n\n4. The results show that two of the independent discordant loci (represented by rs3776705 and rs459193), associated with lower risk of T2DadjBMI, show genome-wide significant associations with higher 2-hour glucose levels, and one of the loci (rs459193) also shows a genome-wide significant association with higher fasting glucose levels, despite their protective effect on T2D risk. The findings appear counter-intuitive, considering that T2D is diagnosed based on elevated fasting and 2-hour glucose values. Particularly for these two loci, it would be critical to make sure that the directions of effects and the reported reference alleles are validated in a further set of data, to make sure that the discordant effects are not due to mismatched alleles.\n\n5. The paper includes several overstated claims about the clinical impact of the findings and use of the findings for personalized risk stratification [e.g. lines 77-78, 259-263]. The authors should revise the manuscript to avoid misleading the readers, by overstating the implications of their findings.\n",
+      "created_at": "2025-12-04T02:13:21.395666Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T02:13:21.395666Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T02:13:21.395666Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "9a6b75a6-abe8-48f2-9cfd-c2b74dbd77c0",
+      "content_id": "bbadede6-7f47-4155-8310-9f444086d42c",
+      "claim_id": "C1",
+      "claim": "Obesity is a major risk factor for cardiovascular disease, stroke, and type 2 diabetes (T2D).",
+      "claim_type": "EXPLICIT",
+      "source": "Obesity is a major risk factor for cardiovascular disease, stroke, and type 2 diabetes (T2D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a well-established scientific consensus statement about obesity's role in disease risk.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:13:21.395666Z"
+    },
+    {
+      "id": "151a4e7c-68f2-4e11-bc3f-6a8656e8ae08",
+      "content_id": "bbadede6-7f47-4155-8310-9f444086d42c",
+      "claim_id": "C2",
+      "claim": "Excessive accumulation of fat in the abdomen further increases T2D risk.",
+      "claim_type": "EXPLICIT",
+      "source": "Excessive accumulation of fat in the abdomen further increases T2D risk.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by established scientific knowledge about abdominal obesity and T2D risk.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:13:21.395666Z"
+    },
+    {
+      "id": "d45bbadb-54bf-4fcc-a07e-43bf6881b000",
+      "content_id": "bbadede6-7f47-4155-8310-9f444086d42c",
+      "claim_id": "C3",
+      "claim": "Abdominal obesity is measured by calculating the ratio of waist-to-hip circumference adjusted for the body-mass index (WHRadjBMI).",
+      "claim_type": "EXPLICIT",
+      "source": "Abdominal obesity is measured by calculating the ratio of waist-to-hip circumference adjusted for the body-mass index (WHRadjBMI), a trait with a significant genetic inheritance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a standard measurement method in the field, representing established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:13:21.395666Z"
+    },
+    {
+      "id": "4b83e545-2db6-4166-89c8-b1ae7880bab6",
+      "content_id": "bbadede6-7f47-4155-8310-9f444086d42c",
+      "claim_id": "C4",
+      "claim": "WHRadjBMI is a trait with a significant genetic inheritance.",
+      "claim_type": "EXPLICIT",
+      "source": "Abdominal obesity is measured by calculating the ratio of waist-to-hip circumference adjusted for the body-mass index (WHRadjBMI), a trait with a significant genetic inheritance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by established scientific knowledge about the heritability of body fat distribution traits.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:13:21.395666Z"
+    },
+    {
+      "id": "733e5c16-7c2d-4c7c-9429-c7cde067d2e7",
+      "content_id": "bbadede6-7f47-4155-8310-9f444086d42c",
+      "claim_id": "C5",
+      "claim": "Genetic loci associated with WHRadjBMI identified in genome-wide association studies are predicted to act through adipose tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "Genetic loci associated with WHRadjBMI identified in genome-wide association studies are predicted to act through adipose tissues, but many of the exact molecular mechanisms underlying fat distribution and its consequences for T2D risk are poorly understood.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on prior GWAS findings and predictions about tissue-specific mechanisms.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:13:21.395666Z"
+    },
+    {
+      "id": "995656d4-f049-4993-8ea2-913f1241e12e",
+      "content_id": "bbadede6-7f47-4155-8310-9f444086d42c",
+      "claim_id": "C6",
+      "claim": "Many of the exact molecular mechanisms underlying fat distribution and its consequences for T2D risk are poorly understood.",
+      "claim_type": "EXPLICIT",
+      "source": "Genetic loci associated with WHRadjBMI identified in genome-wide association studies are predicted to act through adipose tissues, but many of the exact molecular mechanisms underlying fat distribution and its consequences for T2D risk are poorly understood.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the current state of knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:13:21.395666Z"
+    },
+    {
+      "id": "368fc681-ff40-44c5-bc48-0cd993f70282",
+      "content_id": "bbadede6-7f47-4155-8310-9f444086d42c",
+      "claim_id": "C7",
+      "claim": "Mechanisms that uncouple the genetic inheritance of abdominal obesity from T2D risk have not yet been described.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, mechanisms that uncouple the genetic inheritance of abdominal obesity from T2D risk have not yet been described.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the current state of knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:13:21.395666Z"
+    },
+    {
+      "id": "074a8f81-fa7a-4ea7-848b-ec98b074c47e",
+      "content_id": "bbadede6-7f47-4155-8310-9f444086d42c",
+      "claim_id": "C8",
+      "claim": "Six genetic signals in five loci are associated with protection from T2D but also with increased abdominal obesity.",
+      "claim_type": "EXPLICIT",
+      "source": "We find six genetic signals in five loci associated with protection from T2D but also with increased abdominal obesity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the colocalization analysis performed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:13:21.395666Z"
+    },
+    {
+      "id": "c36820e8-2ca5-495a-962e-d1dcf32fa329",
+      "content_id": "bbadede6-7f47-4155-8310-9f444086d42c",
+      "claim_id": "C9",
+      "claim": "Adipose biology is significantly involved at three discordant loci.",
+      "claim_type": "EXPLICIT",
+      "source": "We predict the tissues of action at these discordant loci and the likely effector Genes (eGenes) at three discordant loci, from which we predict significant involvement of adipose biology.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the tissue of action analysis and QTL colocalization performed in the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:13:21.395666Z"
+    },
+    {
+      "id": "93b7b34d-4100-4e48-9e06-6176260170e9",
+      "content_id": "bbadede6-7f47-4155-8310-9f444086d42c",
+      "claim_id": "C10",
+      "claim": "Metabolic syndrome (MetSyn) is a cluster of dysregulated metabolic conditions that tend to occur together to increase the risk for cardiometabolic disorders such as type 2 diabetes (T2D).",
+      "claim_type": "EXPLICIT",
+      "source": "Metabolic syndrome (MetSyn) is a cluster of dysregulated metabolic conditions that tend to occur together to increase the risk for cardiometabolic disorders such as type 2 diabetes (T2D) (Lusis, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Lusis, 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:13:21.395666Z"
+    },
+    {
+      "id": "cef26c06-9598-40e8-abc7-3c38210470e6",
+      "content_id": "bbadede6-7f47-4155-8310-9f444086d42c",
+      "claim_id": "C11",
+      "claim": "MetSyn includes insulin resistance (IR), abdominal obesity, elevated serum triglycerides (TG) levels, low high-density lipoprotein cholesterol levels, as well as elevated systolic and diastolic blood pressure.",
+      "claim_type": "EXPLICIT",
+      "source": "This cluster includes insulin resistance (IR), abdominal obesity, elevated serum triglycerides (TG) levels, low high-density lipoprotein cholesterol levels, as well as elevated systolic and diastolic blood pressure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a standard definition of metabolic syndrome components, representing established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:13:21.395666Z"
+    },
+    {
+      "id": "7b50be0c-5bf2-42bb-ab18-a38a10e93a56",
+      "content_id": "bbadede6-7f47-4155-8310-9f444086d42c",
+      "claim_id": "C12",
+      "claim": "Obesity is a major contributor to MetSyn.",
+      "claim_type": "EXPLICIT",
+      "source": "Obesity, or the excessive accumulation of fat that presents a risk to health, is a major contributor to MetSyn (Lusis, 2006; Feero et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Lusis, 2006 and Feero et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:13:21.395666Z"
+    },
+    {
+      "id": "ceb582fa-ae73-47d7-8e20-7bd568c3f4e6",
+      "content_id": "bbadede6-7f47-4155-8310-9f444086d42c",
+      "claim_id": "C13",
+      "claim": "Obesity is typically defined as a body mass index (BMI) above 30.",
+      "claim_type": "EXPLICIT",
+      "source": "Obesity, which is typically defined as a body mass index (BMI) above 30, has reached unprecedented levels of prevalence, and its role as a central regulator of disease risk makes it an appealing therapeutic target (Feero et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a standard clinical definition of obesity, representing established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:13:21.395666Z"
+    },
+    {
+      "id": "73e02e00-b978-4e67-807c-c5573b731962",
+      "content_id": "bbadede6-7f47-4155-8310-9f444086d42c",
+      "claim_id": "C14",
+      "claim": "Obesity has reached unprecedented levels of prevalence.",
+      "claim_type": "EXPLICIT",
+      "source": "Obesity, which is typically defined as a body mass index (BMI) above 30, has reached unprecedented levels of prevalence, and its role as a central regulator of disease risk makes it an appealing therapeutic target (Feero et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Feero et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:13:21.395666Z"
+    },
+    {
+      "id": "7a743869-01c6-48c3-87bc-863d33c50f18",
+      "content_id": "bbadede6-7f47-4155-8310-9f444086d42c",
+      "claim_id": "C15",
+      "claim": "Obesity's role as a central regulator of disease risk makes it an appealing therapeutic target.",
+      "claim_type": "EXPLICIT",
+      "source": "Obesity, which is typically defined as a body mass index (BMI) above 30, has reached unprecedented levels of prevalence, and its role as a central regulator of disease risk makes it an appealing therapeutic target (Feero et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Feero et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:13:21.395666Z"
+    },
+    {
+      "id": "76dd5ef7-d943-42b4-839b-744db4821176",
+      "content_id": "bbadede6-7f47-4155-8310-9f444086d42c",
+      "claim_id": "C16",
+      "claim": "SGLT2 inhibitors and GLP-1 agonists have been reported to result in a 2\u20136 kg reduction of body weight and reduced IR.",
+      "claim_type": "EXPLICIT",
+      "source": "Several recently developed T2D therapeutics have even successfully targeted obesity; SGLT2 inhibitors and GLP-1 agonists have been reported to result in a 2\u20136 kg reduction of body weight and reduced IR (Brown et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Brown et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:13:21.395666Z"
+    },
+    {
+      "id": "d956b65a-0471-498f-a8fd-71928b7dc22c",
+      "content_id": "bbadede6-7f47-4155-8310-9f444086d42c",
+      "claim_id": "C17",
+      "claim": "Metabolically healthy obesity (MHO) describes a group of phenotypes in which individuals with obesity are protected from adverse metabolic effects.",
+      "claim_type": "EXPLICIT",
+      "source": "MHO describes a group of phenotypes in which individuals with obesity are protected from adverse metabolic effects (Smith et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Smith et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:13:21.395666Z"
+    },
+    {
+      "id": "b2992ba2-389a-45c1-b181-c218c1c953f3",
+      "content_id": "bbadede6-7f47-4155-8310-9f444086d42c",
+      "claim_id": "C18",
+      "claim": "No formal definition of MHO exists.",
+      "claim_type": "EXPLICIT",
+      "source": "While no formal definition of MHO exists, it is often described as either obesity with less than three components of MetSyn, or obesity without IR as computed by the homeostasis model assessment of insulin resistance (HOMA-IR) (Smith et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Smith et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:13:21.395666Z"
+    },
+    {
+      "id": "ecb35144-1eed-4ee9-83f5-64d3342cdb9f",
+      "content_id": "bbadede6-7f47-4155-8310-9f444086d42c",
+      "claim_id": "C19",
+      "claim": "MHO is often described as either obesity with less than three components of MetSyn, or obesity without IR as computed by HOMA-IR.",
+      "claim_type": "EXPLICIT",
+      "source": "While no formal definition of MHO exists, it is often described as either obesity with less than three components of MetSyn, or obesity without IR as computed by the homeostasis model assessment of insulin resistance (HOMA-IR) (Smith et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Smith et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:13:21.395666Z"
+    },
+    {
+      "id": "356654fc-2342-4080-9476-d8e907a578d3",
+      "content_id": "bbadede6-7f47-4155-8310-9f444086d42c",
+      "claim_id": "C20",
+      "claim": "Mechanisms proposed to mediate MHO include depressed ectopic fat accumulation, subcutaneous adipose tissue (SAT) expansion plasticity, and shifts in fat storage from the abdomen to the legs.",
+      "claim_type": "EXPLICIT",
+      "source": "Mechanisms proposed to mediate this include depressed ectopic fat accumulation, subcutaneous adipose tissue (SAT) expansion plasticity, and shifts in fat storage from the abdomen to the legs (Bl\u00fcher, 2020; Smith et al., 2019; Loos and Kilpel\u00e4inen, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Bl\u00fcher, 2020; Smith et al., 2019; and Loos and Kilpel\u00e4inen, 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:13:21.395666Z"
+    },
+    {
+      "id": "664ce792-f6e4-4ec2-baa1-70d6c56bdde4",
+      "content_id": "bbadede6-7f47-4155-8310-9f444086d42c",
+      "claim_id": "C21",
+      "claim": "People with MHO have less intra-abdominal fat accumulation compared to people with metabolically unhealthy obesity.",
+      "claim_type": "EXPLICIT",
+      "source": "People with MHO have less intra-abdominal fat accumulation compared to people with metabolically unhealthy obesity (Kl\u00f6ting et al., 2010; Karelis et al., 2005; Chen et al., 2015; Jennings et al., 2008; Hayes et al., 2010; Koster et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to Kl\u00f6ting et al., 2010; Karelis et al., 2005; Chen et al., 2015; Jennings et al., 2008; Hayes et al., 2010; and Koster et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:13:21.395666Z"
+    },
+    {
+      "id": "83f59660-422c-4479-8c89-a1ffff1afb23",
+      "content_id": "bbadede6-7f47-4155-8310-9f444086d42c",
+      "claim_id": "C22",
+      "claim": "Intra-abdominal fat accumulation can be approximated through the ratio of waist-to-hip circumference (WHR) adjusted for BMI (WHRadjBMI).",
+      "claim_type": "EXPLICIT",
+      "source": "Intra-abdominal fat accumulation can be approximated through the ratio of waist-to-hip circumference (WHR) adjusted for BMI (WHRadjBMI).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a standard measurement approach in the field, representing established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:13:21.395666Z"
+    },
+    {
+      "id": "4e8a2f4c-0328-4b51-9026-c36db2755e82",
+      "content_id": "bbadede6-7f47-4155-8310-9f444086d42c",
+      "claim_id": "C23",
+      "claim": "WHRadjBMI is a causal factor that increases susceptibility for T2D.",
+      "claim_type": "EXPLICIT",
+      "source": "WHRadjBMI is a causal factor that increases susceptibility for T2D, but the genetic and molecular mechanisms underlying fat distribution remain largely unknown (Emdin et al., 2017; Gill et al., 2021; Li et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Emdin et al., 2017; Gill et al., 2021; and Li et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:13:21.395666Z"
+    },
+    {
+      "id": "b4a66081-5324-4306-adf2-3a027a7fab83",
+      "content_id": "bbadede6-7f47-4155-8310-9f444086d42c",
+      "claim_id": "C24",
+      "claim": "The genetic and molecular mechanisms underlying fat distribution remain largely unknown.",
+      "claim_type": "EXPLICIT",
+      "source": "WHRadjBMI is a causal factor that increases susceptibility for T2D, but the genetic and molecular mechanisms underlying fat distribution remain largely unknown (Emdin et al., 2017; Gill et al., 2021; Li et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Emdin et al., 2017; Gill et al., 2021; and Li et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:13:21.395666Z"
+    },
+    {
+      "id": "540fd260-e7fa-42ae-8a3e-5c3755d9332a",
+      "content_id": "bbadede6-7f47-4155-8310-9f444086d42c",
+      "claim_id": "C25",
+      "claim": "The missense variant rs373863828 in CREB3 regulatory factor has been shown to increase BMI without a corresponding increase in HOMA-IR and circulating TG, or a decrease in circulating adiponectin.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the missense variant rs373863828 in CREB3 regulatory factor has been shown to increase BMI without a corresponding increase in HOMA-IR and circulating TG, or a decrease in circulating adiponectin (Minster et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Minster et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:13:21.395666Z"
+    },
+    {
+      "id": "981aafd9-a29a-4403-ba8d-d2c610928382",
+      "content_id": "bbadede6-7f47-4155-8310-9f444086d42c",
+      "claim_id": "C26",
+      "claim": "Ob/ob mice with overexpression of adiponectin but lacking in leptin are shown to accumulate considerable fat mass without a corresponding increase in insulin sensitivity.",
+      "claim_type": "EXPLICIT",
+      "source": "Ob/ob mice with overexpression of adiponectin but lacking in leptin are shown to accumulate considerable fat mass without a corresponding increase in insulin sensitivity (Kim et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Kim et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:13:21.395666Z"
+    },
+    {
+      "id": "69aa928b-ff39-41d6-af32-7faabf10f886",
+      "content_id": "bbadede6-7f47-4155-8310-9f444086d42c",
+      "claim_id": "C27",
+      "claim": "The genetic loci associated with increased WHRadjBMI but without increased disease risk have not yet been described.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the genetic loci associated with increased WHRadjBMI but without increased disease risk have not yet been described.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the current state of knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:13:21.395666Z"
+    },
+    {
+      "id": "0e326d69-5b69-48c5-b8d8-86a435dc9b4f",
+      "content_id": "bbadede6-7f47-4155-8310-9f444086d42c",
+      "claim_id": "C28",
+      "claim": "To date, all genes that have been shown to increase fat accumulation into abdominal fat depots have also been shown to increase the risk for T2D.",
+      "claim_type": "EXPLICIT",
+      "source": "To date, all genes that have been shown to increase fat accumulation into abdominal fat depots have also been shown to increase the risk for T2D (Fathzadeh et al., 2020; Small et al., 2018; Yang et al., 2022; Gesta et al., 2011; Loh et al., 2020; Loh et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Fathzadeh et al., 2020; Small et al., 2018; Yang et al., 2022; Gesta et al., 2011; Loh et al., 2020; and Loh et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:13:21.395666Z"
+    },
+    {
+      "id": "aa81dfec-a25d-49ff-91a0-1c12da2e1d84",
+      "content_id": "bbadede6-7f47-4155-8310-9f444086d42c",
+      "claim_id": "C29",
+      "claim": "Colocalization analysis (COLOC) identifies loci that contain shared genetic architecture for multiple traits of interest.",
+      "claim_type": "EXPLICIT",
+      "source": "The use of colocalization analysis (COLOC), which identifies loci that contain shared genetic architecture for multiple traits of interest, can inform mechanistic hypotheses moving from association to function by integrating data from multiple studies (Hukku et al., 2021; Wallace, 2013; Wallace et al., 2012; Wallace, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Hukku et al., 2021; Wallace, 2013; Wallace et al., 2012; and Wallace, 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:13:21.395666Z"
+    },
+    {
+      "id": "74abebf3-ab84-45a2-8db6-1ad2df83e0a0",
+      "content_id": "bbadede6-7f47-4155-8310-9f444086d42c",
+      "claim_id": "C30",
+      "claim": "The colocalization of a GWAS signal with genetic regulation of genes at quantitative trait loci (QTLs) implies a mechanistic relationship between the regulated gene and GWAS trait.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the colocalization of a GWAS signal with genetic regulation of genes at quantitative trait loci (QTLs) implies a mechanistic relationship between the regulated gene and GWAS trait (Hormozdiari et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Hormozdiari et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:13:21.395666Z"
+    },
+    {
+      "id": "ca5d1bac-f5e9-4f56-a703-5ba12b2f90a5",
+      "content_id": "bbadede6-7f47-4155-8310-9f444086d42c",
+      "claim_id": "C31",
+      "claim": "TACTICAL incorporates gene expression data, and epigenetic annotations with GWAS associations to predict the causal eGenes and tissues of action at GWAS loci.",
+      "claim_type": "EXPLICIT",
+      "source": "Another recently developed approach named Tissue of ACTion scores for Investigating Complex trait-Associated Loci (TACTICAL) (Torres et al., 2020) incorporates gene expression data, and epigenetic annotations with GWAS associations to predict the causal eGenes and tissues of action at GWAS loci.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Torres et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:13:21.395666Z"
+    },
+    {
+      "id": "1bdbeabd-1b57-42ad-96ab-d15fca9b5fcb",
+      "content_id": "bbadede6-7f47-4155-8310-9f444086d42c",
+      "claim_id": "C32",
+      "claim": "79 genetic loci were predicted to have shared genetic architecture of T2DadjBMI and WHRadjBMI.",
+      "claim_type": "EXPLICIT",
+      "source": "Using the most recent GWAS summary statistics, QTL summary statistics, tissue-specific gene expression data, and high-resolution epigenetic annotations, we predicted the shared genetic architecture of T2DadjBMI and WHRadjBMI at 79 genetic loci.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the colocalization analysis performed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:13:21.395666Z"
+    },
+    {
+      "id": "d721efea-577e-47dc-ba2f-1322e2600512",
+      "content_id": "bbadede6-7f47-4155-8310-9f444086d42c",
+      "claim_id": "C35",
+      "claim": "Colocalization analysis yielded 79 genetic loci where a single variant was significantly associated with both T2DadjBMI and WHRadjBMI.",
+      "claim_type": "EXPLICIT",
+      "source": "This analysis yielded 79 genetic loci where a single variant was significantly associated with both T2DadjBMI and WHRadjBMI.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the colocalization analysis performed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:13:21.395666Z"
+    },
+    {
+      "id": "e5e5f2d2-c47f-40a4-82eb-dfe2342c41e6",
+      "content_id": "bbadede6-7f47-4155-8310-9f444086d42c",
+      "claim_id": "C36",
+      "claim": "143 variants in five loci were associated with discordant effects on T2DadjBMI and WHRadjBMI.",
+      "claim_type": "EXPLICIT",
+      "source": "We obtained the 99% credible set of variants in colocalized loci (Supplementary file 1) and discovered the presence of 143 variants in five loci associated with discordant effects on T2DadjBMI and WHRadjBMI.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the colocalization analysis performed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:13:21.395666Z"
+    },
+    {
+      "id": "497c9259-d6eb-4437-8730-366d67459ead",
+      "content_id": "bbadede6-7f47-4155-8310-9f444086d42c",
+      "claim_id": "C37",
+      "claim": "851 SNPs in 73 loci were associated with concordant effects on both T2DadjBMI and WHRadjBMI.",
+      "claim_type": "EXPLICIT",
+      "source": "We also discovered 851 SNPs in 73 loci with the expected concordant effects on both traits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the colocalization analysis performed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:13:21.395666Z"
+    },
+    {
+      "id": "2e4cd5ca-60f6-4f3f-9e00-b54221ac7b2a",
+      "content_id": "bbadede6-7f47-4155-8310-9f444086d42c",
+      "claim_id": "C38",
+      "claim": "Almost all of the representative lead discordant variants reached genome-wide significance.",
+      "claim_type": "EXPLICIT",
+      "source": "Although almost all of the representative lead discordant variants reached genome-wide significance, two associations reached nominal significance (p<5e-05).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the colocalization analysis performed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:13:21.395666Z"
+    },
+    {
+      "id": "5790dbf7-6d08-4314-b612-e82d1a35cdb9",
+      "content_id": "bbadede6-7f47-4155-8310-9f444086d42c",
+      "claim_id": "C39",
+      "claim": "Two discordant associations reached nominal significance (p<5e-05).",
+      "claim_type": "EXPLICIT",
+      "source": "Although almost all of the representative lead discordant variants reached genome-wide significance, two associations reached nominal significance (p<5e-05).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the colocalization analysis performed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:13:21.395666Z"
+    },
+    {
+      "id": "4f81a9bb-bcc2-4ef4-8d0d-51e91ac303fb",
+      "content_id": "bbadede6-7f47-4155-8310-9f444086d42c",
+      "claim_id": "C40",
+      "claim": "Variants with only nominal and local significance in GWAS can have functional relevance to GWAS traits.",
+      "claim_type": "EXPLICIT",
+      "source": "Because of recent work demonstrating that even variants with only nominal and local significance in GWAS can also have functional relevance to GWAS traits, we included variants prioritized in the 99% credible set but with only nominal significance (Li et al., 2020a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Li et al., 2020a.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:13:21.395666Z"
+    },
+    {
+      "id": "bc882506-2a0c-4d41-a1ec-21aebadd8060",
+      "content_id": "bbadede6-7f47-4155-8310-9f444086d42c",
+      "claim_id": "C41",
+      "claim": "In four of the five loci, fine-mapping recalled only one likely candidate causal signal.",
+      "claim_type": "EXPLICIT",
+      "source": "In four of the five loci, this fine-mapping recalled only one likely candidate causal signal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the fine-mapping analysis performed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:13:21.395666Z"
+    },
+    {
+      "id": "995c8e2a-7f78-4be2-baab-06962b59aa55",
+      "content_id": "bbadede6-7f47-4155-8310-9f444086d42c",
+      "claim_id": "C42",
+      "claim": "In the 5q21.1 locus, SuSiE identified a secondary association signal that was also associated with discordant effects on T2DadjBMI and WHRadjBMI.",
+      "claim_type": "EXPLICIT",
+      "source": "In the 5q21.1 locus, SuSiE identified a secondary association signal that was also associated with discordant effects on T2DadjBMI and WHRadjBMI (Figure 1B and Supplementary file 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from the fine-mapping analysis performed in the study, shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:13:21.395666Z"
+    },
+    {
+      "id": "54b36e53-19dc-4aa1-9286-d0b02bfd4f35",
+      "content_id": "bbadede6-7f47-4155-8310-9f444086d42c",
+      "claim_id": "C43",
+      "claim": "At three of the five discordant loci, the discordant association signals were also colocalized with WHRadjBMI component traits waist circumference (WC) and WHR.",
+      "claim_type": "EXPLICIT",
+      "source": "At three of the five discordant loci, the discordant association signals were also colocalized with WHRadjBMI component traits waist circumference (WC) and WHR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the multi-trait colocalization analysis performed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:13:21.395666Z"
+    },
+    {
+      "id": "4af2599d-5478-4ea3-ba58-bb852e3994b2",
+      "content_id": "bbadede6-7f47-4155-8310-9f444086d42c",
+      "claim_id": "C44",
+      "claim": "The association signal at rs459193 was associated with increased abdominal obesity in nearly every metric, but also with protection from T2D in nearly every metric.",
+      "claim_type": "EXPLICIT",
+      "source": "At the association signal in the 5q11.2 region, association signals exemplified this metabolic discordance. Represented by genetic variant rs459193, the association signal was associated with increased abdominal obesity in nearly every metric, but also with protection from T2D in nearly every metric.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the PheWAS analysis performed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:13:21.395666Z"
+    },
+    {
+      "id": "0b9481b0-58b5-450b-8ba4-e89b54c6e82e",
+      "content_id": "bbadede6-7f47-4155-8310-9f444086d42c",
+      "claim_id": "C45",
+      "claim": "At all lead discordant variants, effects were consistent with a phenotype of increased abdominal obesity but protection from T2D.",
+      "claim_type": "EXPLICIT",
+      "source": "At all lead discordant variants, effects were consistent with a phenotype of increased abdominal obesity but protection from T2D.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the PheWAS analysis performed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:13:21.395666Z"
+    },
+    {
+      "id": "fd86c8d8-233b-49f1-9343-984986393239",
+      "content_id": "bbadede6-7f47-4155-8310-9f444086d42c",
+      "claim_id": "C46",
+      "claim": "Discordant variants overwhelmingly lie in noncoding regions of the genome, with only one missense variant in a coding region.",
+      "claim_type": "EXPLICIT",
+      "source": "VEP predicted that discordant variants overwhelmingly lie in noncoding regions of the genome, with only one missense variant in a coding region.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the variant effect predictor analysis performed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:13:21.395666Z"
+    },
+    {
+      "id": "a7e6db2a-efb9-48c2-b143-8668375450f4",
+      "content_id": "bbadede6-7f47-4155-8310-9f444086d42c",
+      "claim_id": "C47",
+      "claim": "Because the vast majority of discordant variants lie in noncoding regions, it is likely their function lies in altering genetic regulation of proximal genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Because the vast majority of discordant variants lie in noncoding regions, it is likely their function lies in altering genetic regulation of proximal genes (Civelek and Lusis, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the variant effect predictor results and supported by a citation to Civelek and Lusis, 2014.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:13:21.395666Z"
+    },
+    {
+      "id": "8ce3079c-67cc-4044-a753-56ec095bf607",
+      "content_id": "bbadede6-7f47-4155-8310-9f444086d42c",
+      "claim_id": "C48",
+      "claim": "Adipose tissue chromatin states of high activity, such as active transcription start sites, enhancer regions, and areas of transcriptional activity, showed specific enrichment for discordant variants.",
+      "claim_type": "EXPLICIT",
+      "source": "We noted the specific enrichment of adipose tissue chromatin states of high activity, such as active transcription start sites, enhancer regions, and areas of transcriptional activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the chromatin state enrichment analysis performed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:13:21.395666Z"
+    },
+    {
+      "id": "72719637-58c8-4715-8d07-4666c8959665",
+      "content_id": "bbadede6-7f47-4155-8310-9f444086d42c",
+      "claim_id": "C49",
+      "claim": "For every other tissue (pancreatic islet, liver, skeletal muscle), the leading annotations represented areas of decreased transcriptional activity.",
+      "claim_type": "EXPLICIT",
+      "source": "For every other tissue, the leading annotations represented areas of decreased transcriptional activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the chromatin state enrichment analysis performed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:13:21.395666Z"
+    },
+    {
+      "id": "c397dbf1-7ae4-41cf-af6a-5fb9718745e2",
+      "content_id": "bbadede6-7f47-4155-8310-9f444086d42c",
+      "claim_id": "C50",
+      "claim": "Adipose tissue was classified as the candidate tissue of action (TOA) at three discordant loci.",
+      "claim_type": "EXPLICIT",
+      "source": "We predicted that adipose tissue was classified as the candidate tissue of action (TOA) at three loci, and skeletal muscle and liver tissue shared classification with adipose tissue at the remaining two discordant loci (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from the TACTICAL analysis performed in the study, shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:13:21.395666Z"
+    },
+    {
+      "id": "56e3bafb-2a80-4c10-a5ca-e72684675842",
+      "content_id": "bbadede6-7f47-4155-8310-9f444086d42c",
+      "claim_id": "C51",
+      "claim": "Skeletal muscle and liver tissue shared classification with adipose tissue at the remaining two discordant loci.",
+      "claim_type": "EXPLICIT",
+      "source": "We predicted that adipose tissue was classified as the candidate tissue of action (TOA) at three loci, and skeletal muscle and liver tissue shared classification with adipose tissue at the remaining two discordant loci (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from the TACTICAL analysis performed in the study, shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:13:21.395666Z"
+    },
+    {
+      "id": "64678ca1-5670-4056-b62d-5c281af7cff9",
+      "content_id": "bbadede6-7f47-4155-8310-9f444086d42c",
+      "claim_id": "C52",
+      "claim": "Seven candidate causal effector transcripts were revealed at three of the five discordant loci through colocalization analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Our colocalization analysis revealed seven candidate causal effector transcripts at three of the five discordant loci (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from the GWAS-QTL colocalization analysis performed in the study, shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:13:21.395666Z"
+    },
+    {
+      "id": "b1c474d9-7ea4-4f80-9b7f-9ed4cd5443f9",
+      "content_id": "bbadede6-7f47-4155-8310-9f444086d42c",
+      "claim_id": "C53",
+      "claim": "At the 2p21 locus, THADA-AS (SAT, VAT) was predicted to be the sole eGene.",
+      "claim_type": "EXPLICIT",
+      "source": "At the 2p21 locus, we predicted THADA-AS (SAT, VAT) to be the sole eGene.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the GWAS-QTL colocalization analysis performed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:13:21.395666Z"
+    },
+    {
+      "id": "03c754ea-071a-4701-b492-bbe8a7970a25",
+      "content_id": "bbadede6-7f47-4155-8310-9f444086d42c",
+      "claim_id": "C54",
+      "claim": "At the 5q21.1 locus, GIN1 (SAT), PAM (SAT & SKM), and PPIP5K2 (SAT) were predicted to be the eGenes.",
+      "claim_type": "EXPLICIT",
+      "source": "At the 5q21.1 locus, we predicted GIN1 (SAT), PAM (SAT & SKM), and PPIP5K2 (SAT) to be the eGenes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the GWAS-QTL colocalization analysis performed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:13:21.395666Z"
+    },
+    {
+      "id": "cf86439c-7a2c-4a07-b4f8-90a28ca95e40",
+      "content_id": "bbadede6-7f47-4155-8310-9f444086d42c",
+      "claim_id": "C55",
+      "claim": "The association signal at rs6860588 was associated with a novel alternative splicing isoform of PAM in SAT, which skips the 14th exon.",
+      "claim_type": "EXPLICIT",
+      "source": "The association signal at rs6860588 was associated with a novel alternative splicing isoform of PAM in SAT, which skips the 14th exon.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the GWAS-sQTL colocalization analysis performed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:13:21.395666Z"
+    },
+    {
+      "id": "00367bff-3b46-4dc6-98ad-d25fb92321de",
+      "content_id": "bbadede6-7f47-4155-8310-9f444086d42c",
+      "claim_id": "C56",
+      "claim": "The genetic association signal represented by rs6860588 was associated with the regulation of EIF3KP1 (SAT, VAT, SKM, PANC), PPIP5K2 (SAT), and GIN1 (SAT, SKM, PANC).",
+      "claim_type": "EXPLICIT",
+      "source": "At the 5q21.1 locus, we predicted that the genetic association signal represented by rs6860588 was also associated with the regulation of EIF3KP1 (SAT, VAT, SKM, PANC), PPIP5K2 (SAT), and GIN1 (SAT, SKM, PANC).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the SMR colocalization analysis performed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:13:21.395666Z"
+    },
+    {
+      "id": "e9b698bf-7222-42e8-90ff-f89bea9bcdfc",
+      "content_id": "bbadede6-7f47-4155-8310-9f444086d42c",
+      "claim_id": "C57",
+      "claim": "At the discordant association signal in the 19q13.11 locus, the genetic association signal represented by variant rs3786897 was associated with the regulation of PEPD (SAT, VAT).",
+      "claim_type": "EXPLICIT",
+      "source": "At the discordant association signal in the 19q13.11 locus, we predicted that the genetic association signal represented by variant rs3786897 was also associated with the regulation of PEPD (SAT, VAT).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the SMR colocalization analysis performed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:13:21.395666Z"
+    },
+    {
+      "id": "dccf81ae-b537-4a1a-a868-5515dcfa8a19",
+      "content_id": "bbadede6-7f47-4155-8310-9f444086d42c",
+      "claim_id": "C58",
+      "claim": "GIN1 and PPIP5K2 represent high-confidence predictions of potentially causal effector transcripts underlying the genetic association with discordance in the 5q21.1 locus.",
+      "claim_type": "EXPLICIT",
+      "source": "As the colocalization transcripts GIN1 and PPIP5K2 were replicated with both methods (Supplementary files 6 and 7), these represent high-confidence predictions of potentially causal effector transcripts underlying the genetic association with discordance in the 5q21.1 locus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the replication of findings across multiple colocalization methods.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:13:21.395666Z"
+    },
+    {
+      "id": "b0f1ec80-71bd-4f9d-b9f5-8c1b021a128b",
+      "content_id": "bbadede6-7f47-4155-8310-9f444086d42c",
+      "claim_id": "C59",
+      "claim": "eGenes were expressed in adipocytes and adipocyte progenitor stem cells (ASPCs).",
+      "claim_type": "EXPLICIT",
+      "source": "We queried white adipose tissue single-cell RNA sequencing data (Emont et al., 2022) for discordant association signal eGenes and found that eGenes were expressed in adipocytes and adipocyte progenitor stem cells (ASPCs) (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from the single-cell RNA sequencing data analysis, shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:13:21.395666Z"
+    },
+    {
+      "id": "48c8c49a-dcdb-4da6-8c1c-fedd32def663",
+      "content_id": "bbadede6-7f47-4155-8310-9f444086d42c",
+      "claim_id": "C60",
+      "claim": "Body fat distribution associations are driven by ASPCs and adipocytes in adipose tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "Because body fat distribution associations are driven by ASPCs and adipocytes in adipose tissues (Lu et al., 2016; Locke et al., 2015; Hansen et al., 2023), we reasoned that exploring adipose expression data could help to explain discordant associations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Lu et al., 2016; Locke et al., 2015; and Hansen et al., 2023.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:13:21.395666Z"
+    },
+    {
+      "id": "d8e9f7ea-586a-4e82-bc98-d32d19a6bb2e",
+      "content_id": "bbadede6-7f47-4155-8310-9f444086d42c",
+      "claim_id": "C61",
+      "claim": "Correlations between relevant tissue gene expression and metabolic phenotypes can reveal biologically relevant functional relationships.",
+      "claim_type": "EXPLICIT",
+      "source": "Correlations between relevant tissue gene expression and metabolic phenotypes can reveal biologically relevant functional relationships (Civelek et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Civelek et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:13:21.395666Z"
+    },
+    {
+      "id": "2ea551c5-69d5-4b2b-86c9-8d1c7da65593",
+      "content_id": "bbadede6-7f47-4155-8310-9f444086d42c",
+      "claim_id": "C62",
+      "claim": "Adipose tissue expression of THADA-AS, PEPD, and GIN1 was significantly correlated with inflammatory, glycemic, and anthropometric phenotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that adipose tissue expression of THADA-AS, PEPD, and GIN1 was significantly correlated with inflammatory, glycemic, and anthropometric phenotypes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the correlation analysis performed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:13:21.395666Z"
+    },
+    {
+      "id": "af0cf10c-67e2-45a1-a0ac-c8d63eab724c",
+      "content_id": "bbadede6-7f47-4155-8310-9f444086d42c",
+      "claim_id": "C63",
+      "claim": "SAT THADA-AS expression was positively correlated with IR, abdominal fat accumulation, and serum triglyceride levels, but with higher levels of plasma interleukin-1 receptor antagonist (IL-1RA) and C-reactive protein (CRP).",
+      "claim_type": "EXPLICIT",
+      "source": "SAT THADA-AS expression was positively correlated with IR, abdominal fat accumulation, and serum triglyceride levels, but with higher levels of plasma interleukin-1 receptor antagonist (IL-1RA) and C-reactive protein (CRP).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the correlation analysis performed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:13:21.395666Z"
+    },
+    {
+      "id": "ef643880-cd52-4ba3-a7cf-d3ce396b9409",
+      "content_id": "bbadede6-7f47-4155-8310-9f444086d42c",
+      "claim_id": "C64",
+      "claim": "IL-1RA plays a protective role in resolving inflammation.",
+      "claim_type": "EXPLICIT",
+      "source": "IL-1RA plays a protective role in resolving inflammation (Volarevic et al., 2010), and elevated levels have been linked to prediabetes (Luotola, 2022; Grossmann et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Volarevic et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:13:21.395666Z"
+    },
+    {
+      "id": "3decd9da-a89c-463e-b200-1f4bc89caa21",
+      "content_id": "bbadede6-7f47-4155-8310-9f444086d42c",
+      "claim_id": "C65",
+      "claim": "Elevated levels of IL-1RA have been linked to prediabetes.",
+      "claim_type": "EXPLICIT",
+      "source": "IL-1RA plays a protective role in resolving inflammation (Volarevic et al., 2010), and elevated levels have been linked to prediabetes (Luotola, 2022; Grossmann et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Luotola, 2022 and Grossmann et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:13:21.395666Z"
+    },
+    {
+      "id": "b78c9359-3102-423e-bac8-5ddcce38a2d7",
+      "content_id": "bbadede6-7f47-4155-8310-9f444086d42c",
+      "claim_id": "C66",
+      "claim": "CRP has been used as a biomarker of increased inflammation in chronic diseases.",
+      "claim_type": "EXPLICIT",
+      "source": "CRP has been used as a biomarker of increased inflammation in chronic diseases (Herwald and Egesten, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Herwald and Egesten, 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:13:21.395666Z"
+    },
+    {
+      "id": "e47faf88-f4aa-4696-91b3-34d3bec7a8c4",
+      "content_id": "bbadede6-7f47-4155-8310-9f444086d42c",
+      "claim_id": "C67",
+      "claim": "SAT expression of GIN1 was correlated with higher plasma adiponectin.",
+      "claim_type": "EXPLICIT",
+      "source": "SAT expression of GIN1 was correlated with higher plasma adiponectin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the correlation analysis performed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:13:21.395666Z"
+    },
+    {
+      "id": "6a1a71f8-49bc-4030-babc-7494ea59d3b3",
+      "content_id": "bbadede6-7f47-4155-8310-9f444086d42c",
+      "claim_id": "C68",
+      "claim": "Adiponectin, secreted by adipocytes, increases insulin sensitivity.",
+      "claim_type": "EXPLICIT",
+      "source": "Adiponectin, secreted by adipocytes, increases insulin sensitivity, and this provides a mechanism for protection from T2D (Achari and Jain, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Achari and Jain, 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:13:21.395666Z"
+    },
+    {
+      "id": "1365bc7f-6a7e-455f-87c0-aa0c1f32dcbd",
+      "content_id": "bbadede6-7f47-4155-8310-9f444086d42c",
+      "claim_id": "C69",
+      "claim": "SAT PEPD expression was positively correlated with plasma IL-1RA levels.",
+      "claim_type": "EXPLICIT",
+      "source": "SAT PEPD expression was also positively correlated with plasma IL-1RA levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the correlation analysis performed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:13:21.395666Z"
+    },
+    {
+      "id": "87c564fa-def0-402e-beaa-5d0ee51d9e4c",
+      "content_id": "bbadede6-7f47-4155-8310-9f444086d42c",
+      "claim_id": "C70",
+      "claim": "All eGenes except PPIP5K2 were dynamically expressed over a 16-day adipogenesis time course.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that all eGenes except PPIP5K2 were dynamically expressed over a 16-day adipogenesis time course (Figure 3B), implying potential functional roles for these genes in regulating preadipocyte fate.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from the adipogenesis time course analysis, shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:13:21.395666Z"
+    },
+    {
+      "id": "9278adef-e3fd-4b11-ad10-79f148838f37",
+      "content_id": "bbadede6-7f47-4155-8310-9f444086d42c",
+      "claim_id": "C71",
+      "claim": "Dynamic expression of eGenes in adipogenesis implies potential functional roles for these genes in regulating preadipocyte fate.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that all eGenes except PPIP5K2 were dynamically expressed over a 16-day adipogenesis time course (Figure 3B), implying potential functional roles for these genes in regulating preadipocyte fate.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the dynamic expression patterns observed in the adipogenesis time course.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:13:21.395666Z"
+    },
+    {
+      "id": "ce4d3d7f-0a1b-423b-ac94-62778cbaf953",
+      "content_id": "bbadede6-7f47-4155-8310-9f444086d42c",
+      "claim_id": "C72",
+      "claim": "The causal discordant signal at the 5q21.1 locus was represented by variant rs6860588.",
+      "claim_type": "EXPLICIT",
+      "source": "We predicted that the causal discordant signal at the 5q21.1 locus was represented by variant rs6860588.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the fine-mapping and colocalization analyses performed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:13:21.395666Z"
+    },
+    {
+      "id": "c4d0a953-ea31-4d72-9dd7-323186f2b6e1",
+      "content_id": "bbadede6-7f47-4155-8310-9f444086d42c",
+      "claim_id": "C73",
+      "claim": "The T allele of rs6860588 is associated with protection from T2D, increased abdominal obesity, decreased SAT expression of GIN1, increased SKM expression of PAM, decreased SAT expression of PPIP5K2, increased SAT expression of a PAM splice variant with a skipped exon 14, and decreased SAT expression of the canonical PAM splice junctions, exon 13:14 and exon 14:15.",
+      "claim_type": "EXPLICIT",
+      "source": "The T allele of rs6860588 is associated with protection from T2D, increased abdominal obesity, decreased SAT expression of GIN1, increased SKM expression of PAM, decreased SAT expression of PPIP5K2, increased SAT expression of a PAM splice variant with a skipped exon 14, and decreased SAT expression of the canonical PAM splice junctions, exon 13:14 and exon 14:15 (Figure 4A; Figure 4\u2014figure supplement 1 and Figure 4\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from the colocalization and QTL analyses performed in the study, shown in Figure 4A and Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:13:21.395666Z"
+    },
+    {
+      "id": "f9400500-5667-48e4-873a-652354b61726",
+      "content_id": "bbadede6-7f47-4155-8310-9f444086d42c",
+      "claim_id": "C74",
+      "claim": "GIN1 has been hypothesized to be a key regulator of energy metabolism in atria.",
+      "claim_type": "EXPLICIT",
+      "source": "GIN1 has been hypothesized to be a key regulator of energy metabolism in atria (Li et al., 2020b), but little is known about gypsy integrases and their molecular function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Li et al., 2020b.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:13:21.395666Z"
+    },
+    {
+      "id": "c4d02859-700e-4242-b2aa-00bdbaeadcc7",
+      "content_id": "bbadede6-7f47-4155-8310-9f444086d42c",
+      "claim_id": "C75",
+      "claim": "Little is known about gypsy integrases and their molecular function.",
+      "claim_type": "EXPLICIT",
+      "source": "GIN1 has been hypothesized to be a key regulator of energy metabolism in atria (Li et al., 2020b), but little is known about gypsy integrases and their molecular function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the current state of knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:13:21.395666Z"
+    },
+    {
+      "id": "f27eeb64-7331-4ae4-b897-7a63fb2b0b4f",
+      "content_id": "bbadede6-7f47-4155-8310-9f444086d42c",
+      "claim_id": "C76",
+      "claim": "PAM facilitates C-terminus glycine residue amidation, which can catalyze protein potency.",
+      "claim_type": "EXPLICIT",
+      "source": "PAM facilitates C-terminus glycine residue amidation, which can catalyze protein potency (Thomsen et al., 2018; Merkler, 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Thomsen et al., 2018 and Merkler, 1994.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:13:21.395666Z"
+    },
+    {
+      "id": "c2324df8-4e72-4d10-a23d-23a9e066ee0a",
+      "content_id": "bbadede6-7f47-4155-8310-9f444086d42c",
+      "claim_id": "C77",
+      "claim": "PAM has been linked to metabolic phenotypes in multiple model organisms, where its deficiency is associated with decreased peptide secretion and potency critical to insulin release, but not with increased diabetes.",
+      "claim_type": "EXPLICIT",
+      "source": "PAM additionally has been linked to metabolic phenotypes in multiple model organisms, where its deficiency is associated with decreased peptide secretion and potency critical to insulin release, but not with increased diabetes (Chen et al., 2020a; Zieli\u0144ski et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Chen et al., 2020a and Zieli\u0144ski et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:13:21.395666Z"
+    },
+    {
+      "id": "b4fed0be-0565-42ca-8527-5f18630bf1ac",
+      "content_id": "bbadede6-7f47-4155-8310-9f444086d42c",
+      "claim_id": "C78",
+      "claim": "PAM loss of function likely results in deficient peptide synthesis and secretion in adipocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "PAM loss of function likely results in deficient peptide synthesis and secretion in adipocytes as well, and its increase of function likely results in increased myokine signaling from skeletal muscle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the known function of PAM and the tissue-specific expression patterns observed.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:13:21.395666Z"
+    },
+    {
+      "id": "47330466-edf3-4bd2-88e6-21942a8afe96",
+      "content_id": "bbadede6-7f47-4155-8310-9f444086d42c",
+      "claim_id": "C79",
+      "claim": "PAM increase of function likely results in increased myokine signaling from skeletal muscle.",
+      "claim_type": "EXPLICIT",
+      "source": "PAM loss of function likely results in deficient peptide synthesis and secretion in adipocytes as well, and its increase of function likely results in increased myokine signaling from skeletal muscle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the known function of PAM and the tissue-specific expression patterns observed.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:13:21.395666Z"
+    },
+    {
+      "id": "6a3eb0f2-0fea-4877-a220-c388e690834a",
+      "content_id": "bbadede6-7f47-4155-8310-9f444086d42c",
+      "claim_id": "C80",
+      "claim": "Knockdown of PPIP5Ks results in decreased proliferation, increased mitochondrial mass, decreased inositol metabolism, and accelerated glycolysis in tumor cell lines.",
+      "claim_type": "EXPLICIT",
+      "source": "Knockdown of PPIP5Ks results in decreased proliferation, increased mitochondrial mass, decreased inositol metabolism, and accelerated glycolysis in tumor cell lines (Gu et al., 2021; Gu et al., 2017; Badodi et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Gu et al., 2021; Gu et al., 2017; and Badodi et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:13:21.395666Z"
+    },
+    {
+      "id": "628c18e7-ea74-422b-85f1-3e20878fe7a4",
+      "content_id": "bbadede6-7f47-4155-8310-9f444086d42c",
+      "claim_id": "C81",
+      "claim": "The T allele at rs6860588 regulates a group of genes that promotes adipogenesis, glycolysis, and inflammation in white adipose tissue while simultaneously decreasing preadipocyte expansion and increasing skeletal muscle peptide secretion and potency.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we propose that the T allele at rs6860588 regulates a group of genes that promotes adipogenesis, glycolysis, and inflammation in white adipose tissue while simultaneously decreasing preadipocyte expansion and increasing skeletal muscle peptide secretion and potency (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a proposed model based on the integration of multiple lines of evidence from the study, shown in Figure 4B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:13:21.395666Z"
+    },
+    {
+      "id": "db844e33-85be-481a-bac7-e676569ff6d5",
+      "content_id": "bbadede6-7f47-4155-8310-9f444086d42c",
+      "claim_id": "C82",
+      "claim": "This model is consistent with the TOA score and QTL analysis, which both predict skeletal muscle and adipose tissue contribution to the associations at the 5q21.1 locus.",
+      "claim_type": "EXPLICIT",
+      "source": "This model is consistent with the TOA score and QTL analysis, which both predict skeletal muscle and adipose tissue contribution to the associations at the locus and reconcile the associations with abdominal obesity but protection from T2D associated with the T allele of rs6860588 (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the consistency of the proposed model with the TOA and QTL analyses, shown in Figure 4C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:13:21.395666Z"
+    },
+    {
+      "id": "11f7902c-914c-4c52-9f73-6cca1bfe85f5",
+      "content_id": "bbadede6-7f47-4155-8310-9f444086d42c",
+      "claim_id": "C83",
+      "claim": "The six genetic association signals associated with discordant metabolic phenotypes offer potential insight into the genetic mechanisms underlying risk stratification of T2D risk within abdominal obesity.",
+      "claim_type": "EXPLICIT",
+      "source": "The six genetic association signals associated with discordant metabolic phenotypes offer potential insight into the genetic mechanisms underlying risk stratification of T2D risk within abdominal obesity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the findings of the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:13:21.395666Z"
+    },
+    {
+      "id": "0f42debc-6133-45f8-9c08-97c1daac33e7",
+      "content_id": "bbadede6-7f47-4155-8310-9f444086d42c",
+      "claim_id": "C84",
+      "claim": "Defining more mechanisms that promote MHO is critical as rates of obesity rise globally.",
+      "claim_type": "EXPLICIT",
+      "source": "While mechanisms promoting MHO have been described, most have focused on body fat distribution. Defining more mechanisms that promote MHO is critical as rates of obesity rise globally.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the importance of the research based on current trends.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:13:21.395666Z"
+    },
+    {
+      "id": "a2974441-ed19-4011-92c2-c197b93fffea",
+      "content_id": "bbadede6-7f47-4155-8310-9f444086d42c",
+      "claim_id": "C85",
+      "claim": "MHO has been controversial and termed an intermediate state.",
+      "claim_type": "EXPLICIT",
+      "source": "MHO has been controversial and termed an intermediate state (Caleyachetty et al., 2017; Rey-L\u00f3pez et al., 2015; Bl\u00fcher, 2017), but a growing body of evidence has accumulated providing evidence that genetic mechanisms influence predisposition to it.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Caleyachetty et al., 2017; Rey-L\u00f3pez et al., 2015; and Bl\u00fcher, 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:13:21.395666Z"
+    },
+    {
+      "id": "5bf2cb89-63b3-4f6d-9585-e9ec9b8e475c",
+      "content_id": "bbadede6-7f47-4155-8310-9f444086d42c",
+      "claim_id": "C86",
+      "claim": "A growing body of evidence has accumulated providing evidence that genetic mechanisms influence predisposition to MHO.",
+      "claim_type": "EXPLICIT",
+      "source": "MHO has been controversial and termed an intermediate state (Caleyachetty et al., 2017; Rey-L\u00f3pez et al., 2015; Bl\u00fcher, 2017), but a growing body of evidence has accumulated providing evidence that genetic mechanisms influence predisposition to it.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the current state of knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:13:21.395666Z"
+    },
+    {
+      "id": "3be99459-2448-4d5d-8a4d-c13c64321438",
+      "content_id": "bbadede6-7f47-4155-8310-9f444086d42c",
+      "claim_id": "C87",
+      "claim": "In Samoans, the common CREBRF coding variant rs12513649 increases BMI and overall adiposity but protects from IR.",
+      "claim_type": "EXPLICIT",
+      "source": "In Samoans, the common CREBRF coding variant rs12513649 increases BMI and overall adiposity but protects from IR (Li et al., 2020a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Li et al., 2020a.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:13:21.395666Z"
+    },
+    {
+      "id": "025eb13c-04b1-4c76-b61f-7fad656db878",
+      "content_id": "bbadede6-7f47-4155-8310-9f444086d42c",
+      "claim_id": "C88",
+      "claim": "IRS1, COBLL1, PLA2G6, and TOMM40 have been associated with higher BMI but with protective lipidemic and glycemic traits.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, IRS1, COBLL1, PLA2G6, and TOMM40 have been associated with higher BMI but with protective lipidemic and glycemic traits (Loos and Kilpel\u00e4inen, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Loos and Kilpel\u00e4inen, 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:13:21.395666Z"
+    },
+    {
+      "id": "64d58f0d-4e55-4baf-abfb-5072519a7083",
+      "content_id": "bbadede6-7f47-4155-8310-9f444086d42c",
+      "claim_id": "C89",
+      "claim": "The physiological functions of IRS1, COBLL1, PLA2G6, and TOMM40 have been proposed to involve adipose tissue caloric load capacity and body fat distribution.",
+      "claim_type": "EXPLICIT",
+      "source": "The physiological functions of these genes have been proposed to involve adipose tissue caloric load capacity and body fat distribution (Loos and Kilpel\u00e4inen, 2018; Lu et al., 2016; Kilpel\u00e4inen et al., 2011; Lotta et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Loos and Kilpel\u00e4inen, 2018; Lu et al., 2016; Kilpel\u00e4inen et al., 2011; and Lotta et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:13:21.395666Z"
+    },
+    {
+      "id": "05e2093f-fa59-4c13-835d-91274b3446b9",
+      "content_id": "bbadede6-7f47-4155-8310-9f444086d42c",
+      "claim_id": "C90",
+      "claim": "Abdominal fat accumulation is known to be one of the strongest predictors of obesity-related complications.",
+      "claim_type": "EXPLICIT",
+      "source": "While abdominal fat accumulation is known to be one of the strongest predictors of obesity-related complications (Emdin et al., 2017; Censin et al., 2019; Dale et al., 2017), our findings point to mechanisms that contradict this trend.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Emdin et al., 2017; Censin et al., 2019; and Dale et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:13:21.395666Z"
+    },
+    {
+      "id": "e650725a-e6c4-4fd8-80ea-1087eb9802a2",
+      "content_id": "bbadede6-7f47-4155-8310-9f444086d42c",
+      "claim_id": "C91",
+      "claim": "The findings point to mechanisms that contradict the trend that abdominal fat accumulation is one of the strongest predictors of obesity-related complications.",
+      "claim_type": "EXPLICIT",
+      "source": "While abdominal fat accumulation is known to be one of the strongest predictors of obesity-related complications (Emdin et al., 2017; Censin et al., 2019; Dale et al., 2017), our findings point to mechanisms that contradict this trend.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the findings of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:13:21.395666Z"
+    },
+    {
+      "id": "63a661ee-e628-4569-bc3b-ba2d3352c0c2",
+      "content_id": "bbadede6-7f47-4155-8310-9f444086d42c",
+      "claim_id": "C92",
+      "claim": "If these discordant variants are functionally annotated and fully characterized, they might have clinical utility to T2D risk allele carriers and inform personalized therapeutic strategies.",
+      "claim_type": "EXPLICIT",
+      "source": "If these discordant variants are functionally annotated and fully characterized, they might have clinical utility to T2D risk allele carriers and inform personalized therapeutic strategies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about the potential clinical implications of the findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:13:21.395666Z"
+    },
+    {
+      "id": "c9d06b87-6806-47a0-aa8e-0a8ae4a4cdb9",
+      "content_id": "bbadede6-7f47-4155-8310-9f444086d42c",
+      "claim_id": "C93",
+      "claim": "Risk-stratified personalized obesity treatment could prioritize patients that would or would not benefit significantly from weight-loss interventions, and use genotype as a biomarker for patients who would benefit from other therapeutic strategies.",
+      "claim_type": "EXPLICIT",
+      "source": "Risk-stratified personalized obesity treatment could prioritize patients that would or would not benefit significantly from weight-loss interventions, and use genotype as a biomarker for patients who would benefit from other therapeutic strategies (Klonoff, 2008; Williams et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about potential clinical applications, supported by citations to Klonoff, 2008 and Williams et al., 2022.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:13:21.395666Z"
+    },
+    {
+      "id": "58e41376-7de5-4320-84dd-0c73cd599bcb",
+      "content_id": "bbadede6-7f47-4155-8310-9f444086d42c",
+      "claim_id": "C94",
+      "claim": "The importance of personalized risk stratification for T2D will only increase as abdominal obesity becomes more prevalent.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the importance of personalized risk stratification for T2D will only increase as abdominal obesity becomes more prevalent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on current trends in obesity prevalence.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:13:21.395666Z"
+    },
+    {
+      "id": "68778d1d-b1fb-4347-95e0-802df868c234",
+      "content_id": "bbadede6-7f47-4155-8310-9f444086d42c",
+      "claim_id": "C95",
+      "claim": "Functional characterization of the effect of these genes on insulin uptake, preadipocyte proliferation, and adipogenesis, as well as secretome characterization, will elucidate precise mechanisms through which these eGenes might contribute to the discordant association signals.",
+      "claim_type": "EXPLICIT",
+      "source": "Functional characterization of the effect of these genes on insulin uptake, preadipocyte proliferation, and adipogenesis, as well as secretome characterization, will elucidate precise mechanisms through which these eGenes might contribute to the discordant association signals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the need for future experimental work.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:13:21.395666Z"
+    },
+    {
+      "id": "8aa9e466-c8e3-4b1a-a730-83703567dc01",
+      "content_id": "bbadede6-7f47-4155-8310-9f444086d42c",
+      "claim_id": "C96",
+      "claim": "The associations at the 2p21 locus containing THADA and THADA-AS have been replicated multiple times.",
+      "claim_type": "EXPLICIT",
+      "source": "The associations have been replicated multiple times (Mahajan et al., 2018; Zeggini et al., 2008; Grarup et al., 2008), but the exact mechanisms underlying this association are unknown.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Mahajan et al., 2018; Zeggini et al., 2008; and Grarup et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:13:21.395666Z"
+    },
+    {
+      "id": "42d77f4b-e6ab-4064-a416-7e52a10f8a68",
+      "content_id": "bbadede6-7f47-4155-8310-9f444086d42c",
+      "claim_id": "C97",
+      "claim": "The exact mechanisms underlying the association at the 2p21 locus are unknown.",
+      "claim_type": "EXPLICIT",
+      "source": "The associations have been replicated multiple times (Mahajan et al., 2018; Zeggini et al., 2008; Grarup et al., 2008), but the exact mechanisms underlying this association are unknown.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the current state of knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:13:21.395666Z"
+    },
+    {
+      "id": "c66a1322-35e6-4817-9099-36ac6232712b",
+      "content_id": "bbadede6-7f47-4155-8310-9f444086d42c",
+      "claim_id": "C98",
+      "claim": "THADA plays an evolutionarily conserved role in intracellular calcium signaling and consequently non-shivering thermogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "THADA plays an evolutionarily conserved role in intracellular calcium signaling and consequently non-shivering thermogenesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge about THADA function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:13:21.395666Z"
+    },
+    {
+      "id": "1fe7fe5c-d5cf-41ab-a238-36b71d9d9e04",
+      "content_id": "bbadede6-7f47-4155-8310-9f444086d42c",
+      "claim_id": "C99",
+      "claim": "In Drosophila melanogaster, thada knockout flies developed obesity and hyperphagia without altered circulating glucose levels.",
+      "claim_type": "EXPLICIT",
+      "source": "In Drosophila melanogaster, thada knockout flies developed obesity and hyperphagia without altered circulating glucose levels (Moraru et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Moraru et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:13:21.395666Z"
+    },
+    {
+      "id": "9608ce8d-3876-43d7-8cf5-c1a910eb3777",
+      "content_id": "bbadede6-7f47-4155-8310-9f444086d42c",
+      "claim_id": "C100",
+      "claim": "In mice, pancreatic Thada knockout resulted in protection from T2D through the preservation of \u03b2-cell mass and improvement of \u03b2-cell function.",
+      "claim_type": "EXPLICIT",
+      "source": "In mice, pancreatic Thada knockout resulted in protection from T2D through the preservation of \u03b2-cell mass and improvement of \u03b2-cell function (Zhang et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Zhang et al., 2023.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:13:21.395666Z"
+    },
+    {
+      "id": "df421d89-3418-4238-93fc-03217c767ebf",
+      "content_id": "bbadede6-7f47-4155-8310-9f444086d42c",
+      "claim_id": "C101",
+      "claim": "Mendelian randomization studies in humans have found consistent links between THADA and adiposity, but have not yet been able to link it to diabetic phenotypes such as insulin secretion.",
+      "claim_type": "EXPLICIT",
+      "source": "Mendelian randomization studies in humans have likewise found consistent links between THADA and adiposity, but have not yet been able to link it to diabetic phenotypes such as insulin secretion (Grarup et al., 2008; Simonis-Bik et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Grarup et al., 2008 and Simonis-Bik et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:13:21.395666Z"
+    },
+    {
+      "id": "aa408336-def9-42af-b692-aeaabb1e73bd",
+      "content_id": "bbadede6-7f47-4155-8310-9f444086d42c",
+      "claim_id": "C102",
+      "claim": "Regulatory interactions whereby THADA-AS expression interferes with THADA transcription could provide a basis by which variant rs6752964 might confer abdominal obesity, but protection from T2D.",
+      "claim_type": "EXPLICIT",
+      "source": "Regulatory interactions whereby THADA-AS expression interferes with THADA transcription could provide a basis by which variant rs6752964 might confer abdominal obesity, but protection from T2D (Brantl, 2002; Faghihi and Wahlestedt, 2009; Wight and Werner, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative hypothesis based on known mechanisms of antisense RNA regulation, supported by citations to Brantl, 2002; Faghihi and Wahlestedt, 2009; and Wight and Werner, 2013.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:13:21.395666Z"
+    },
+    {
+      "id": "b52ea110-f70c-4f04-9da0-d61ce68d2227",
+      "content_id": "bbadede6-7f47-4155-8310-9f444086d42c",
+      "claim_id": "C103",
+      "claim": "Colocalization of genetic regulation of PEPD in adipose tissue with the discordant association signal represented by variant rs3786897 was found.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, we also found colocalization of genetic regulation of PEPD in adipose tissue with the discordant association signal represented by variant rs3786897.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the GWAS-QTL colocalization analysis performed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:13:21.395666Z"
+    },
+    {
+      "id": "1b576c44-661a-4ee3-949b-d3295b91c736",
+      "content_id": "bbadede6-7f47-4155-8310-9f444086d42c",
+      "claim_id": "C104",
+      "claim": "Depletion of PEPD in preadipocytes has been shown to reduce adipogenic potential, decrease triglyceride accumulation, and phospho-Akt signaling, which is critical to insulin sensitivity.",
+      "claim_type": "EXPLICIT",
+      "source": "Depletion of PEPD in preadipocytes has been shown to reduce adipogenic potential, decrease triglyceride accumulation, and phospho-Akt signaling, which is critical to insulin sensitivity (Chen et al., 2020b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Chen et al., 2020b.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:13:21.395666Z"
+    },
+    {
+      "id": "b8e88c8a-c686-4a7a-b0a0-0f0448ae0e4b",
+      "content_id": "bbadede6-7f47-4155-8310-9f444086d42c",
+      "claim_id": "C105",
+      "claim": "A secondary signal represented by variant rs731839 was apparent in the 19q13.11 locus but was not significant for WHRadjBMI.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, a secondary signal represented by variant rs731839 was apparent in this locus but was not significant for WHRadjBMI.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the fine-mapping analysis performed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:13:21.395666Z"
+    },
+    {
+      "id": "56656c3f-b953-4a33-9b2c-9d85b75510cc",
+      "content_id": "bbadede6-7f47-4155-8310-9f444086d42c",
+      "claim_id": "C106",
+      "claim": "The secondary signal rs731839 has been associated with sex-specific effects on serum lipid levels in Han and Mulao populations.",
+      "claim_type": "EXPLICIT",
+      "source": "This signal has been associated with sex-specific effects on serum lipid levels in Han and Mulao populations (Lin et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Lin et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:13:21.395666Z"
+    },
+    {
+      "id": "319da061-413d-4a63-9165-9f5074fb00d7",
+      "content_id": "bbadede6-7f47-4155-8310-9f444086d42c",
+      "claim_id": "C107",
+      "claim": "Further in vivo and in vitro work must be done to resolve the multi-tissue, multi-eGene 19q13.11 locus.",
+      "claim_type": "EXPLICIT",
+      "source": "Further in vivo and in vitro work must be done to resolve this multi-tissue, multi-eGene locus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the need for future experimental work.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:13:21.395666Z"
+    },
+    {
+      "id": "b9401cd0-534b-401d-8c43-b22551dad726",
+      "content_id": "bbadede6-7f47-4155-8310-9f444086d42c",
+      "claim_id": "C108",
+      "claim": "Follow-up is required to validate each prediction made in the analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Although our analysis incorporated genome, transcriptome, epigenome, and phenome data in multiple cohorts, and used the consensus of orthogonal methods to predict the mechanisms of action at discordant loci, follow-up is required to validate each prediction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the limitations of the study and the need for future work.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:13:21.395666Z"
+    },
+    {
+      "id": "0bed0941-0919-4d42-a4c0-3e2a0d0a4d65",
+      "content_id": "bbadede6-7f47-4155-8310-9f444086d42c",
+      "claim_id": "C109",
+      "claim": "The genetic expression data used single-strand sequencing, and therefore parsing out the associated effects of sense and antisense transcripts is difficult.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, our genetic expression data used single-strand sequencing, and therefore parsing out the associated effects of sense and antisense transcripts is difficult.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about a limitation of the study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:13:21.395666Z"
+    },
+    {
+      "id": "0bb8a937-2a30-48a6-9142-83103fc56c85",
+      "content_id": "bbadede6-7f47-4155-8310-9f444086d42c",
+      "claim_id": "C110",
+      "claim": "It is critical to diversify ancestry and sex in genetic association studies to identify more genetic loci underlying MHO.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, it is critical to discover to diversify ancestry and sex in genetic association studies to identify more genetic loci underlying MHO.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the need for future research.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:13:21.395666Z"
+    },
+    {
+      "id": "1c55ac7c-fa4c-471f-be59-7e16b964799f",
+      "content_id": "bbadede6-7f47-4155-8310-9f444086d42c",
+      "claim_id": "C111",
+      "claim": "Without experimental follow-up and extensive clinical studies, genotype should not be used as a diagnostic metric.",
+      "claim_type": "EXPLICIT",
+      "source": "Without experimental follow-up and extensive clinical studies, genotype should not be used as a diagnostic metric.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a cautionary statement about the clinical application of the findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:13:21.395666Z"
+    },
+    {
+      "id": "8bb391a4-7915-484e-9c44-06901414cb07",
+      "content_id": "bbadede6-7f47-4155-8310-9f444086d42c",
+      "claim_id": "C112",
+      "claim": "CRISPR editing of alleles in relevant cell types to study cis-regulatory effects on genes and phenotypic effects on cells, and work in animal models is necessary to fully annotate these loci.",
+      "claim_type": "EXPLICIT",
+      "source": "CRISPR editing of alleles in relevant cell types to study cis-regulatory effects on genes and phenotypic effects on cells, and work in animal models is necessary to fully annotate these loci.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the need for future experimental work.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:13:21.395666Z"
+    },
+    {
+      "id": "5926cb9b-fd7f-4991-8e3c-d18ff1364c07",
+      "content_id": "bbadede6-7f47-4155-8310-9f444086d42c",
+      "claim_id": "C113",
+      "claim": "It is important to identify the indirect and direct effects of discordant variants, as these endocrine tissues are major contributors to peptide and hormone secretion.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, it is important to identify the indirect and direct effects of discordant variants, as these endocrine tissues are major contributors to peptide and hormone secretion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the need for future research.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:13:21.395666Z"
+    },
+    {
+      "id": "9fc39eb0-03bb-46f0-8bb8-643d175630b8",
+      "content_id": "bbadede6-7f47-4155-8310-9f444086d42c",
+      "claim_id": "C114",
+      "claim": "Further experimental characterization is critical to placing these results in the proper context and providing the basis for personalized interventions for T2D.",
+      "claim_type": "EXPLICIT",
+      "source": "Further experimental characterization is critical to placing these results in the proper context and providing the basis for personalized interventions for T2D.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the need for future experimental work.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:13:21.395666Z"
+    },
+    {
+      "id": "c5904b49-9692-46d6-9db5-da348e139b42",
+      "content_id": "bbadede6-7f47-4155-8310-9f444086d42c",
+      "claim_id": "C115",
+      "claim": "The predictions at these six signals provide specific hypotheses to be tested, and should they be validated experimentally provide knowledge of the precise mechanisms of uncoupling obesity from T2D risk.",
+      "claim_type": "EXPLICIT",
+      "source": "The predictions at these six signals provide specific hypotheses to be tested, and should they be validated experimentally provide knowledge of the precise mechanisms of uncoupling obesity from T2D risk.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the potential impact of the findings if validated.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:13:21.395666Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "6d03144a-9b54-4f86-8c7d-67eabca9f2bf",
+      "content_id": "bbadede6-7f47-4155-8310-9f444086d42c",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Colocalization analysis identified 79 genetic loci with shared genetic architecture between T2DadjBMI and WHRadjBMI, including 143 variants in five loci with discordant effects (protection from T2D but increased abdominal obesity) and 851 SNPs in 73 loci with concordant effects. Fine-mapping identified secondary signals at the 5q21.1 locus.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C43 describe the primary colocalization findings using established methods (Coloc.abf, Hyprcoloc, SuSiE). The identification of both concordant and discordant loci is well-documented with specific numbers of variants and loci. The inclusion of nominally significant variants (C39-C40) is justified by citation. Fine-mapping results (C41-C42) provide additional resolution.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:13:21.395666Z"
+    },
+    {
+      "id": "34c78f1f-a2d9-43d7-800d-e0ff4503e1b6",
+      "content_id": "bbadede6-7f47-4155-8310-9f444086d42c",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Phenome-wide association study (PheWAS) demonstrated that all lead discordant variants showed consistent associations with increased abdominal obesity but protection from T2D across multiple anthropometric and glycemic traits.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C45 describe PheWAS results that validate the discordant phenotype across multiple related traits. The consistency across metrics strengthens the finding, though the manuscript does not provide detailed statistical tests for each trait association.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:13:21.395666Z"
+    },
+    {
+      "id": "45e3caca-7a40-4df0-b2b7-20e3541b85ae",
+      "content_id": "bbadede6-7f47-4155-8310-9f444086d42c",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Variant effect prediction revealed that discordant variants overwhelmingly lie in noncoding regions (with only one missense variant), suggesting their function involves altering genetic regulation of proximal genes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C47 present VEP analysis results and draw a reasonable inference about regulatory function. The inference (C47) is appropriately supported by citation and is consistent with established understanding of noncoding variant function.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:13:21.395666Z"
+    },
+    {
+      "id": "d7672417-a4cf-4aa1-b94b-8f4616af88e3",
+      "content_id": "bbadede6-7f47-4155-8310-9f444086d42c",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Chromatin state enrichment analysis and TACTICAL tissue-of-action prediction identified adipose tissue as the primary tissue of action at three discordant loci, with skeletal muscle and liver sharing classification at two loci. Discordant variants showed specific enrichment in active adipose chromatin states.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C51 describe tissue-of-action predictions using multiple lines of evidence (chromatin states, TACTICAL scores). The specific enrichment in active adipose chromatin states (C48) contrasts with decreased activity in other tissues (C49), providing tissue-specific evidence. The predictions are data-driven and methodologically sound.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:13:21.395666Z"
+    },
+    {
+      "id": "aded087b-9a48-4802-b8cd-e97abebad954",
+      "content_id": "bbadede6-7f47-4155-8310-9f444086d42c",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "GWAS-QTL colocalization analysis identified seven candidate effector genes at three discordant loci: THADA-AS at 2p21, GIN1/PAM/PPIP5K2 at 5q21.1 (including a novel PAM splice variant), and PEPD at 19q13.11. GIN1 and PPIP5K2 represent high-confidence predictions replicated across multiple methods.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C58 describe eGene predictions using orthogonal colocalization methods (Coloc.abf and SMR). The identification of a novel PAM splice variant (C55) adds mechanistic detail. The high-confidence designation for GIN1 and PPIP5K2 (C58) is justified by replication across methods, following established frameworks for reconciling colocalization results.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:13:21.395666Z"
+    },
+    {
+      "id": "9e2934d2-bb15-430c-b8f1-e2e47f0e9f36",
+      "content_id": "bbadede6-7f47-4155-8310-9f444086d42c",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Single-cell RNA sequencing analysis showed that predicted effector genes are expressed in adipocytes and adipocyte progenitor stem cells (ASPCs), cell types known to drive body fat distribution associations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C60 provide cell-type-specific expression validation using published single-cell data. The connection to ASPCs and adipocytes is well-supported by citations (C60) and consistent with the tissue-of-action predictions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:13:21.395666Z"
+    },
+    {
+      "id": "53991fcd-3a47-4174-a16d-dedc7bfe84b1",
+      "content_id": "bbadede6-7f47-4155-8310-9f444086d42c",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Adipose tissue expression of THADA-AS, PEPD, and GIN1 showed significant correlations with inflammatory, glycemic, and anthropometric phenotypes in the METSIM cohort. THADA-AS expression correlated with insulin resistance and inflammation markers; GIN1 expression correlated with adiponectin; PEPD expression correlated with IL-1RA.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C63, C67, C69 present correlation analysis results with appropriate FDR correction (5%). The correlations provide phenotypic context for the eGenes, though the authors acknowledge difficulty parsing THADA vs THADA-AS due to single-strand sequencing (C109). The correlations are observational and do not establish causation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:13:21.395666Z"
+    },
+    {
+      "id": "4ea23da6-35a4-4155-b465-4f160721d357",
+      "content_id": "bbadede6-7f47-4155-8310-9f444086d42c",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "All predicted effector genes except PPIP5K2 showed dynamic expression during a 16-day adipogenesis time course, suggesting potential functional roles in regulating preadipocyte fate.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C70-C71 present adipogenesis time course data with statistical testing (likelihood ratio test). The inference about functional roles (C71) is appropriately qualified as potential/implied rather than definitive. The dynamic expression patterns support but do not prove functional involvement.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:13:21.395666Z"
+    },
+    {
+      "id": "7ebbf807-5876-4f06-8d57-80d8e4ad23eb",
+      "content_id": "bbadede6-7f47-4155-8310-9f444086d42c",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "At the 5q21.1 locus, the T allele of rs6860588 is associated with protection from T2D and increased abdominal obesity through coordinated regulation of multiple genes (decreased GIN1 and PPIP5K2 in adipose, increased PAM in skeletal muscle, altered PAM splicing). The authors propose this promotes adipogenesis and glycolysis in adipose tissue while increasing skeletal muscle peptide secretion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C72-C73 present well-supported associations from colocalization and QTL data. However, the mechanistic model (C81-C82) integrates these findings with literature on gene function to propose a complex multi-tissue mechanism. While internally consistent and supported by TOA/QTL analyses, the model remains speculative (acknowledged in evidence_type as SPECULATION) and requires experimental validation. The proposed mechanisms for GIN1, PAM, and PPIP5K2 are inferred from studies in other contexts.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:13:21.395666Z"
+    },
+    {
+      "id": "602b106d-e612-4e22-b3cb-e7a9410de9f7",
+      "content_id": "bbadede6-7f47-4155-8310-9f444086d42c",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "At the 2p21 locus containing THADA/THADA-AS, the authors propose that regulatory interactions between the antisense transcript THADA-AS and THADA could explain the discordant association, based on prior studies showing THADA's role in calcium signaling, thermogenesis, and metabolic phenotypes in model organisms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C96-C102 synthesize prior literature (C96-C101) to propose a mechanism involving antisense regulation (C102). While the association is well-replicated (C96) and prior functional studies are cited, the proposed antisense regulatory mechanism (C102) is explicitly speculative. The authors acknowledge difficulty parsing THADA vs THADA-AS expression (C109), limiting interpretation of correlation data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:13:21.395666Z"
+    },
+    {
+      "id": "23b98e7b-e7ef-4e1d-a90e-88df8ccd87f4",
+      "content_id": "bbadede6-7f47-4155-8310-9f444086d42c",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "At the 19q13.11 locus, PEPD was identified as an effector gene, with prior studies showing its depletion reduces adipogenic potential and insulin signaling. A secondary signal (rs731839) was also detected but requires further investigation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C103-C104 present colocalization results and cite relevant functional studies of PEPD. The identification of a secondary signal (C105-C106) adds complexity. The authors appropriately acknowledge the need for additional work (C107) to resolve this multi-tissue, multi-gene locus.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:13:21.395666Z"
+    },
+    {
+      "id": "d594dee3-f8bb-4520-8e4e-cbfbfe16f33b",
+      "content_id": "bbadede6-7f47-4155-8310-9f444086d42c",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Six genetic signals in five loci show discordant associations (protection from T2D with increased abdominal obesity), with significant adipose tissue involvement at three loci. These findings contradict the typical relationship between abdominal fat accumulation and T2D risk.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C9 summarize the main findings, which are well-supported by the detailed analyses in other claim groups. Claims C83 and C91 appropriately frame the significance of identifying mechanisms that uncouple abdominal obesity from T2D risk, though C91's characterization as \"contradicting\" established trends may overstate the novelty given prior MHO literature.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:13:21.395666Z"
+    },
+    {
+      "id": "f1742151-73c2-45d1-b67f-484b5c21b9fd",
+      "content_id": "bbadede6-7f47-4155-8310-9f444086d42c",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The authors acknowledge multiple limitations including the need for experimental validation, technical limitations of single-strand sequencing for parsing sense/antisense transcripts, lack of ancestry diversity, and caution against clinical use without further validation. They propose specific experimental approaches (CRISPR editing, animal models) as necessary next steps.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C108-C115 appropriately acknowledge study limitations and the speculative nature of mechanistic models. The authors clearly state that predictions require validation and should not be used clinically without further work. This transparent discussion of limitations and future directions is appropriate for a computational/predictive study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:13:21.395666Z"
+    },
+    {
+      "id": "e2535400-149d-41bf-b709-49e06dcd6629",
+      "content_id": "bbadede6-7f47-4155-8310-9f444086d42c",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The introduction establishes the relationship between obesity, abdominal fat distribution (measured by WHRadjBMI), metabolic syndrome, and T2D risk, noting that mechanisms uncoupling abdominal obesity from T2D risk have not been previously described, despite examples of genetic variants affecting overall BMI without increasing disease risk.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C28 provide background context supported by appropriate citations. The distinction between previously described BMI-related MHO mechanisms (C25-C26) and the lack of described WHRadjBMI-related mechanisms (C27-C28) appropriately motivates the study. All background claims are either well-established knowledge or properly cited.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:13:21.395666Z"
+    },
+    {
+      "id": "3a26fa1c-9058-475d-a230-cdb080de7a42",
+      "content_id": "bbadede6-7f47-4155-8310-9f444086d42c",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The methodological framework uses colocalization analysis (COLOC) to identify shared genetic architecture and TACTICAL to predict tissues of action and effector genes, approaches that have been validated in prior studies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C31 describe established computational methods with appropriate citations. These methods form the analytical foundation of the study and have been previously validated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:13:21.395666Z"
+    },
+    {
+      "id": "c3730e18-1207-4234-abfc-2e0a3667eedf",
+      "content_id": "bbadede6-7f47-4155-8310-9f444086d42c",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The authors integrate literature on the biological functions of inflammatory markers (IL-1RA, CRP), adiponectin, and the predicted effector genes (GIN1, PAM, PPIP5K2) to interpret their correlation and expression findings.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C68, C74-C77, C80 cite relevant literature to provide biological context for interpreting the study's findings. These citations appropriately support the interpretation of correlation results and inform mechanistic hypotheses.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:13:21.395666Z"
+    },
+    {
+      "id": "3d5a56cb-3b44-49eb-b2f5-36619563550a",
+      "content_id": "bbadede6-7f47-4155-8310-9f444086d42c",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The discussion contextualizes findings within the broader MHO literature, noting controversy about MHO as an intermediate state while citing evidence for genetic influences on MHO predisposition, including examples of genes affecting BMI or body fat distribution with protective metabolic effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C85-C90 appropriately situate the findings within existing MHO literature with proper citations. The discussion acknowledges both the controversy around MHO and accumulating evidence for genetic mechanisms.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:13:21.395666Z"
+    },
+    {
+      "id": "6b64a9c2-61aa-4f32-b8a2-2d9d3a1fa909",
+      "content_id": "bbadede6-7f47-4155-8310-9f444086d42c",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The authors speculate about potential clinical applications including personalized risk stratification and therapeutic strategies, while emphasizing the need for functional characterization and validation before clinical implementation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C92-C95 appropriately present speculative clinical implications while maintaining appropriate caution. The speculation is clearly identified as such and conditioned on future validation work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:13:21.395666Z"
+    },
+    {
+      "id": "88aa5349-3dd0-4b16-acc3-af1a47764243",
+      "content_id": "bbadede6-7f47-4155-8310-9f444086d42c",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "The authors use correlation analysis as a tool to reveal biologically relevant functional relationships and make inferences about tissue-specific effects of PAM based on its known function in peptide amidation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C61 establishes the rationale for correlation analysis with citation. Claims C78-C79 make reasonable inferences about PAM function in different tissues based on established biochemistry, though these remain to be experimentally validated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:13:21.395666Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "1bdbeabd-1b57-42ad-96ab-d15fca9b5fcb",
+      "result_id": "6d03144a-9b54-4f86-8c7d-67eabca9f2bf"
+    },
+    {
+      "claim_id": "d721efea-577e-47dc-ba2f-1322e2600512",
+      "result_id": "6d03144a-9b54-4f86-8c7d-67eabca9f2bf"
+    },
+    {
+      "claim_id": "e5e5f2d2-c47f-40a4-82eb-dfe2342c41e6",
+      "result_id": "6d03144a-9b54-4f86-8c7d-67eabca9f2bf"
+    },
+    {
+      "claim_id": "497c9259-d6eb-4437-8730-366d67459ead",
+      "result_id": "6d03144a-9b54-4f86-8c7d-67eabca9f2bf"
+    },
+    {
+      "claim_id": "2e4cd5ca-60f6-4f3f-9e00-b54221ac7b2a",
+      "result_id": "6d03144a-9b54-4f86-8c7d-67eabca9f2bf"
+    },
+    {
+      "claim_id": "5790dbf7-6d08-4314-b612-e82d1a35cdb9",
+      "result_id": "6d03144a-9b54-4f86-8c7d-67eabca9f2bf"
+    },
+    {
+      "claim_id": "4f81a9bb-bcc2-4ef4-8d0d-51e91ac303fb",
+      "result_id": "6d03144a-9b54-4f86-8c7d-67eabca9f2bf"
+    },
+    {
+      "claim_id": "bc882506-2a0c-4d41-a1ec-21aebadd8060",
+      "result_id": "6d03144a-9b54-4f86-8c7d-67eabca9f2bf"
+    },
+    {
+      "claim_id": "995c8e2a-7f78-4be2-baab-06962b59aa55",
+      "result_id": "6d03144a-9b54-4f86-8c7d-67eabca9f2bf"
+    },
+    {
+      "claim_id": "54b36e53-19dc-4aa1-9286-d0b02bfd4f35",
+      "result_id": "6d03144a-9b54-4f86-8c7d-67eabca9f2bf"
+    },
+    {
+      "claim_id": "4af2599d-5478-4ea3-ba58-bb852e3994b2",
+      "result_id": "34c78f1f-a2d9-43d7-800d-e0ff4503e1b6"
+    },
+    {
+      "claim_id": "0b9481b0-58b5-450b-8ba4-e89b54c6e82e",
+      "result_id": "34c78f1f-a2d9-43d7-800d-e0ff4503e1b6"
+    },
+    {
+      "claim_id": "fd86c8d8-233b-49f1-9343-984986393239",
+      "result_id": "45e3caca-7a40-4df0-b2b7-20e3541b85ae"
+    },
+    {
+      "claim_id": "a7e6db2a-efb9-48c2-b143-8668375450f4",
+      "result_id": "45e3caca-7a40-4df0-b2b7-20e3541b85ae"
+    },
+    {
+      "claim_id": "8ce3079c-67cc-4044-a753-56ec095bf607",
+      "result_id": "d7672417-a4cf-4aa1-b94b-8f4616af88e3"
+    },
+    {
+      "claim_id": "72719637-58c8-4715-8d07-4666c8959665",
+      "result_id": "d7672417-a4cf-4aa1-b94b-8f4616af88e3"
+    },
+    {
+      "claim_id": "c397dbf1-7ae4-41cf-af6a-5fb9718745e2",
+      "result_id": "d7672417-a4cf-4aa1-b94b-8f4616af88e3"
+    },
+    {
+      "claim_id": "56e3bafb-2a80-4c10-a5ca-e72684675842",
+      "result_id": "d7672417-a4cf-4aa1-b94b-8f4616af88e3"
+    },
+    {
+      "claim_id": "64678ca1-5670-4056-b62d-5c281af7cff9",
+      "result_id": "aded087b-9a48-4802-b8cd-e97abebad954"
+    },
+    {
+      "claim_id": "b1c474d9-7ea4-4f80-9b7f-9ed4cd5443f9",
+      "result_id": "aded087b-9a48-4802-b8cd-e97abebad954"
+    },
+    {
+      "claim_id": "03c754ea-071a-4701-b492-bbe8a7970a25",
+      "result_id": "aded087b-9a48-4802-b8cd-e97abebad954"
+    },
+    {
+      "claim_id": "cf86439c-7a2c-4a07-b4f8-90a28ca95e40",
+      "result_id": "aded087b-9a48-4802-b8cd-e97abebad954"
+    },
+    {
+      "claim_id": "00367bff-3b46-4dc6-98ad-d25fb92321de",
+      "result_id": "aded087b-9a48-4802-b8cd-e97abebad954"
+    },
+    {
+      "claim_id": "e9b698bf-7222-42e8-90ff-f89bea9bcdfc",
+      "result_id": "aded087b-9a48-4802-b8cd-e97abebad954"
+    },
+    {
+      "claim_id": "dccf81ae-b537-4a1a-a868-5515dcfa8a19",
+      "result_id": "aded087b-9a48-4802-b8cd-e97abebad954"
+    },
+    {
+      "claim_id": "b0f1ec80-71bd-4f9d-b9f5-8c1b021a128b",
+      "result_id": "9e2934d2-bb15-430c-b8f1-e2e47f0e9f36"
+    },
+    {
+      "claim_id": "48c8c49a-dcdb-4da6-8c1c-fedd32def663",
+      "result_id": "9e2934d2-bb15-430c-b8f1-e2e47f0e9f36"
+    },
+    {
+      "claim_id": "2ea551c5-69d5-4b2b-86c9-8d1c7da65593",
+      "result_id": "53991fcd-3a47-4174-a16d-dedc7bfe84b1"
+    },
+    {
+      "claim_id": "af0cf10c-67e2-45a1-a0ac-c8d63eab724c",
+      "result_id": "53991fcd-3a47-4174-a16d-dedc7bfe84b1"
+    },
+    {
+      "claim_id": "e47faf88-f4aa-4696-91b3-34d3bec7a8c4",
+      "result_id": "53991fcd-3a47-4174-a16d-dedc7bfe84b1"
+    },
+    {
+      "claim_id": "1365bc7f-6a7e-455f-87c0-aa0c1f32dcbd",
+      "result_id": "53991fcd-3a47-4174-a16d-dedc7bfe84b1"
+    },
+    {
+      "claim_id": "87c564fa-def0-402e-beaa-5d0ee51d9e4c",
+      "result_id": "4ea23da6-35a4-4155-b465-4f160721d357"
+    },
+    {
+      "claim_id": "9278adef-e3fd-4b11-ad10-79f148838f37",
+      "result_id": "4ea23da6-35a4-4155-b465-4f160721d357"
+    },
+    {
+      "claim_id": "ce4d3d7f-0a1b-423b-ac94-62778cbaf953",
+      "result_id": "7ebbf807-5876-4f06-8d57-80d8e4ad23eb"
+    },
+    {
+      "claim_id": "c4d0a953-ea31-4d72-9dd7-323186f2b6e1",
+      "result_id": "7ebbf807-5876-4f06-8d57-80d8e4ad23eb"
+    },
+    {
+      "claim_id": "628c18e7-ea74-422b-85f1-3e20878fe7a4",
+      "result_id": "7ebbf807-5876-4f06-8d57-80d8e4ad23eb"
+    },
+    {
+      "claim_id": "db844e33-85be-481a-bac7-e676569ff6d5",
+      "result_id": "7ebbf807-5876-4f06-8d57-80d8e4ad23eb"
+    },
+    {
+      "claim_id": "8aa9e466-c8e3-4b1a-a730-83703567dc01",
+      "result_id": "602b106d-e612-4e22-b3cb-e7a9410de9f7"
+    },
+    {
+      "claim_id": "42d77f4b-e6ab-4064-a416-7e52a10f8a68",
+      "result_id": "602b106d-e612-4e22-b3cb-e7a9410de9f7"
+    },
+    {
+      "claim_id": "c66a1322-35e6-4817-9099-36ac6232712b",
+      "result_id": "602b106d-e612-4e22-b3cb-e7a9410de9f7"
+    },
+    {
+      "claim_id": "1fe7fe5c-d5cf-41ab-a238-36b71d9d9e04",
+      "result_id": "602b106d-e612-4e22-b3cb-e7a9410de9f7"
+    },
+    {
+      "claim_id": "9608ce8d-3876-43d7-8cf5-c1a910eb3777",
+      "result_id": "602b106d-e612-4e22-b3cb-e7a9410de9f7"
+    },
+    {
+      "claim_id": "df421d89-3418-4238-93fc-03217c767ebf",
+      "result_id": "602b106d-e612-4e22-b3cb-e7a9410de9f7"
+    },
+    {
+      "claim_id": "aa408336-def9-42af-b692-aeaabb1e73bd",
+      "result_id": "602b106d-e612-4e22-b3cb-e7a9410de9f7"
+    },
+    {
+      "claim_id": "b52ea110-f70c-4f04-9da0-d61ce68d2227",
+      "result_id": "23b98e7b-e7ef-4e1d-a90e-88df8ccd87f4"
+    },
+    {
+      "claim_id": "1b576c44-661a-4ee3-949b-d3295b91c736",
+      "result_id": "23b98e7b-e7ef-4e1d-a90e-88df8ccd87f4"
+    },
+    {
+      "claim_id": "b8e88c8a-c686-4a7a-b0a0-0f0448ae0e4b",
+      "result_id": "23b98e7b-e7ef-4e1d-a90e-88df8ccd87f4"
+    },
+    {
+      "claim_id": "56656c3f-b953-4a33-9b2c-9d85b75510cc",
+      "result_id": "23b98e7b-e7ef-4e1d-a90e-88df8ccd87f4"
+    },
+    {
+      "claim_id": "319da061-413d-4a63-9165-9f5074fb00d7",
+      "result_id": "23b98e7b-e7ef-4e1d-a90e-88df8ccd87f4"
+    },
+    {
+      "claim_id": "074a8f81-fa7a-4ea7-848b-ec98b074c47e",
+      "result_id": "d594dee3-f8bb-4520-8e4e-cbfbfe16f33b"
+    },
+    {
+      "claim_id": "c36820e8-2ca5-495a-962e-d1dcf32fa329",
+      "result_id": "d594dee3-f8bb-4520-8e4e-cbfbfe16f33b"
+    },
+    {
+      "claim_id": "11f7902c-914c-4c52-9f73-6cca1bfe85f5",
+      "result_id": "d594dee3-f8bb-4520-8e4e-cbfbfe16f33b"
+    },
+    {
+      "claim_id": "e650725a-e6c4-4fd8-80ea-1087eb9802a2",
+      "result_id": "d594dee3-f8bb-4520-8e4e-cbfbfe16f33b"
+    },
+    {
+      "claim_id": "b9401cd0-534b-401d-8c43-b22551dad726",
+      "result_id": "f1742151-73c2-45d1-b67f-484b5c21b9fd"
+    },
+    {
+      "claim_id": "0bed0941-0919-4d42-a4c0-3e2a0d0a4d65",
+      "result_id": "f1742151-73c2-45d1-b67f-484b5c21b9fd"
+    },
+    {
+      "claim_id": "0bb8a937-2a30-48a6-9142-83103fc56c85",
+      "result_id": "f1742151-73c2-45d1-b67f-484b5c21b9fd"
+    },
+    {
+      "claim_id": "1c55ac7c-fa4c-471f-be59-7e16b964799f",
+      "result_id": "f1742151-73c2-45d1-b67f-484b5c21b9fd"
+    },
+    {
+      "claim_id": "8bb391a4-7915-484e-9c44-06901414cb07",
+      "result_id": "f1742151-73c2-45d1-b67f-484b5c21b9fd"
+    },
+    {
+      "claim_id": "5926cb9b-fd7f-4991-8e3c-d18ff1364c07",
+      "result_id": "f1742151-73c2-45d1-b67f-484b5c21b9fd"
+    },
+    {
+      "claim_id": "9fc39eb0-03bb-46f0-8bb8-643d175630b8",
+      "result_id": "f1742151-73c2-45d1-b67f-484b5c21b9fd"
+    },
+    {
+      "claim_id": "c5904b49-9692-46d6-9db5-da348e139b42",
+      "result_id": "f1742151-73c2-45d1-b67f-484b5c21b9fd"
+    },
+    {
+      "claim_id": "9a6b75a6-abe8-48f2-9cfd-c2b74dbd77c0",
+      "result_id": "e2535400-149d-41bf-b709-49e06dcd6629"
+    },
+    {
+      "claim_id": "151a4e7c-68f2-4e11-bc3f-6a8656e8ae08",
+      "result_id": "e2535400-149d-41bf-b709-49e06dcd6629"
+    },
+    {
+      "claim_id": "d45bbadb-54bf-4fcc-a07e-43bf6881b000",
+      "result_id": "e2535400-149d-41bf-b709-49e06dcd6629"
+    },
+    {
+      "claim_id": "4b83e545-2db6-4166-89c8-b1ae7880bab6",
+      "result_id": "e2535400-149d-41bf-b709-49e06dcd6629"
+    },
+    {
+      "claim_id": "733e5c16-7c2d-4c7c-9429-c7cde067d2e7",
+      "result_id": "e2535400-149d-41bf-b709-49e06dcd6629"
+    },
+    {
+      "claim_id": "995656d4-f049-4993-8ea2-913f1241e12e",
+      "result_id": "e2535400-149d-41bf-b709-49e06dcd6629"
+    },
+    {
+      "claim_id": "368fc681-ff40-44c5-bc48-0cd993f70282",
+      "result_id": "e2535400-149d-41bf-b709-49e06dcd6629"
+    },
+    {
+      "claim_id": "93b7b34d-4100-4e48-9e06-6176260170e9",
+      "result_id": "e2535400-149d-41bf-b709-49e06dcd6629"
+    },
+    {
+      "claim_id": "cef26c06-9598-40e8-abc7-3c38210470e6",
+      "result_id": "e2535400-149d-41bf-b709-49e06dcd6629"
+    },
+    {
+      "claim_id": "7b50be0c-5bf2-42bb-ab18-a38a10e93a56",
+      "result_id": "e2535400-149d-41bf-b709-49e06dcd6629"
+    },
+    {
+      "claim_id": "ceb582fa-ae73-47d7-8e20-7bd568c3f4e6",
+      "result_id": "e2535400-149d-41bf-b709-49e06dcd6629"
+    },
+    {
+      "claim_id": "73e02e00-b978-4e67-807c-c5573b731962",
+      "result_id": "e2535400-149d-41bf-b709-49e06dcd6629"
+    },
+    {
+      "claim_id": "7a743869-01c6-48c3-87bc-863d33c50f18",
+      "result_id": "e2535400-149d-41bf-b709-49e06dcd6629"
+    },
+    {
+      "claim_id": "76dd5ef7-d943-42b4-839b-744db4821176",
+      "result_id": "e2535400-149d-41bf-b709-49e06dcd6629"
+    },
+    {
+      "claim_id": "d956b65a-0471-498f-a8fd-71928b7dc22c",
+      "result_id": "e2535400-149d-41bf-b709-49e06dcd6629"
+    },
+    {
+      "claim_id": "b2992ba2-389a-45c1-b181-c218c1c953f3",
+      "result_id": "e2535400-149d-41bf-b709-49e06dcd6629"
+    },
+    {
+      "claim_id": "ecb35144-1eed-4ee9-83f5-64d3342cdb9f",
+      "result_id": "e2535400-149d-41bf-b709-49e06dcd6629"
+    },
+    {
+      "claim_id": "356654fc-2342-4080-9476-d8e907a578d3",
+      "result_id": "e2535400-149d-41bf-b709-49e06dcd6629"
+    },
+    {
+      "claim_id": "664ce792-f6e4-4ec2-baa1-70d6c56bdde4",
+      "result_id": "e2535400-149d-41bf-b709-49e06dcd6629"
+    },
+    {
+      "claim_id": "83f59660-422c-4479-8c89-a1ffff1afb23",
+      "result_id": "e2535400-149d-41bf-b709-49e06dcd6629"
+    },
+    {
+      "claim_id": "4e8a2f4c-0328-4b51-9026-c36db2755e82",
+      "result_id": "e2535400-149d-41bf-b709-49e06dcd6629"
+    },
+    {
+      "claim_id": "b4a66081-5324-4306-adf2-3a027a7fab83",
+      "result_id": "e2535400-149d-41bf-b709-49e06dcd6629"
+    },
+    {
+      "claim_id": "540fd260-e7fa-42ae-8a3e-5c3755d9332a",
+      "result_id": "e2535400-149d-41bf-b709-49e06dcd6629"
+    },
+    {
+      "claim_id": "981aafd9-a29a-4403-ba8d-d2c610928382",
+      "result_id": "e2535400-149d-41bf-b709-49e06dcd6629"
+    },
+    {
+      "claim_id": "69aa928b-ff39-41d6-af32-7faabf10f886",
+      "result_id": "e2535400-149d-41bf-b709-49e06dcd6629"
+    },
+    {
+      "claim_id": "0e326d69-5b69-48c5-b8d8-86a435dc9b4f",
+      "result_id": "e2535400-149d-41bf-b709-49e06dcd6629"
+    },
+    {
+      "claim_id": "aa81dfec-a25d-49ff-91a0-1c12da2e1d84",
+      "result_id": "3a26fa1c-9058-475d-a230-cdb080de7a42"
+    },
+    {
+      "claim_id": "74abebf3-ab84-45a2-8db6-1ad2df83e0a0",
+      "result_id": "3a26fa1c-9058-475d-a230-cdb080de7a42"
+    },
+    {
+      "claim_id": "ca5d1bac-f5e9-4f56-a703-5ba12b2f90a5",
+      "result_id": "3a26fa1c-9058-475d-a230-cdb080de7a42"
+    },
+    {
+      "claim_id": "ef643880-cd52-4ba3-a7cf-d3ce396b9409",
+      "result_id": "c3730e18-1207-4234-abfc-2e0a3667eedf"
+    },
+    {
+      "claim_id": "3decd9da-a89c-463e-b200-1f4bc89caa21",
+      "result_id": "c3730e18-1207-4234-abfc-2e0a3667eedf"
+    },
+    {
+      "claim_id": "b78c9359-3102-423e-bac8-5ddcce38a2d7",
+      "result_id": "c3730e18-1207-4234-abfc-2e0a3667eedf"
+    },
+    {
+      "claim_id": "6a1a71f8-49bc-4030-babc-7494ea59d3b3",
+      "result_id": "c3730e18-1207-4234-abfc-2e0a3667eedf"
+    },
+    {
+      "claim_id": "f9400500-5667-48e4-873a-652354b61726",
+      "result_id": "c3730e18-1207-4234-abfc-2e0a3667eedf"
+    },
+    {
+      "claim_id": "c4d02859-700e-4242-b2aa-00bdbaeadcc7",
+      "result_id": "c3730e18-1207-4234-abfc-2e0a3667eedf"
+    },
+    {
+      "claim_id": "f27eeb64-7331-4ae4-b897-7a63fb2b0b4f",
+      "result_id": "c3730e18-1207-4234-abfc-2e0a3667eedf"
+    },
+    {
+      "claim_id": "c2324df8-4e72-4d10-a23d-23a9e066ee0a",
+      "result_id": "c3730e18-1207-4234-abfc-2e0a3667eedf"
+    },
+    {
+      "claim_id": "6a3eb0f2-0fea-4877-a220-c388e690834a",
+      "result_id": "c3730e18-1207-4234-abfc-2e0a3667eedf"
+    },
+    {
+      "claim_id": "a2974441-ed19-4011-92c2-c197b93fffea",
+      "result_id": "3d5a56cb-3b44-49eb-b2f5-36619563550a"
+    },
+    {
+      "claim_id": "5bf2cb89-63b3-4f6d-9585-e9ec9b8e475c",
+      "result_id": "3d5a56cb-3b44-49eb-b2f5-36619563550a"
+    },
+    {
+      "claim_id": "3be99459-2448-4d5d-8a4d-c13c64321438",
+      "result_id": "3d5a56cb-3b44-49eb-b2f5-36619563550a"
+    },
+    {
+      "claim_id": "025eb13c-04b1-4c76-b61f-7fad656db878",
+      "result_id": "3d5a56cb-3b44-49eb-b2f5-36619563550a"
+    },
+    {
+      "claim_id": "64d58f0d-4e55-4baf-abfb-5072519a7083",
+      "result_id": "3d5a56cb-3b44-49eb-b2f5-36619563550a"
+    },
+    {
+      "claim_id": "05e2093f-fa59-4c13-835d-91274b3446b9",
+      "result_id": "3d5a56cb-3b44-49eb-b2f5-36619563550a"
+    },
+    {
+      "claim_id": "63a661ee-e628-4569-bc3b-ba2d3352c0c2",
+      "result_id": "6b64a9c2-61aa-4f32-b8a2-2d9d3a1fa909"
+    },
+    {
+      "claim_id": "c9d06b87-6806-47a0-aa8e-0a8ae4a4cdb9",
+      "result_id": "6b64a9c2-61aa-4f32-b8a2-2d9d3a1fa909"
+    },
+    {
+      "claim_id": "58e41376-7de5-4320-84dd-0c73cd599bcb",
+      "result_id": "6b64a9c2-61aa-4f32-b8a2-2d9d3a1fa909"
+    },
+    {
+      "claim_id": "68778d1d-b1fb-4347-95e0-802df868c234",
+      "result_id": "6b64a9c2-61aa-4f32-b8a2-2d9d3a1fa909"
+    },
+    {
+      "claim_id": "d8e9f7ea-586a-4e82-bc98-d32d19a6bb2e",
+      "result_id": "88aa5349-3dd0-4b16-acc3-af1a47764243"
+    },
+    {
+      "claim_id": "b4fed0be-0565-42ca-8527-5f18630bf1ac",
+      "result_id": "88aa5349-3dd0-4b16-acc3-af1a47764243"
+    },
+    {
+      "claim_id": "47330466-edf3-4bd2-88e6-21942a8afe96",
+      "result_id": "88aa5349-3dd0-4b16-acc3-af1a47764243"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,181 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "The manuscript establishes that dN/dS exhibits timescale dependence in bacterial populations, with high values (~1 or >1) at short timescales and low values (<0.15) at long timescales. This pattern has been attributed to weak purifying selection in prior literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C10-C13 collectively document a well-established empirical pattern supported by multiple independent studies (Jolley et al., 2000; Dingle et al., 2001; Feil et al., 2003; Baker et al., 2004; Garud et al., 2019; Lieberman et al., 2011; Shoemaker et al., 2022). The timescale dependence of dN/dS is an observational fact that forms the foundation for the manuscript's investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C14",
+      "C15",
+      "C20",
+      "C21",
+      "C23"
+    ],
+    "result": "The classical weak purifying selection model, when fitted to gut microbiome data, yields parameter values (\u03b1 \u2248 0.10, s \u2248 3.5 \u00d7 10\u207b\u2075) that lead to problematic mutation accumulation requiring unrealistically large effective population sizes (Ne > 10\u00b9\u2075) to avoid Muller's ratchet.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C15 provide fitted parameter values from empirical data, while C20-C21 demonstrate through theory and simulation that these parameters lead to mutation accumulation. Claim C23 correctly concludes that the required Ne values exceed realistic estimates for both within-host (Ne \u2248 10\u00b9\u00b9) and global (Ne \u2248 10\u2079) bacterial populations. The mathematical framework (Equations 1-5) and simulations (Figure 2) provide converging evidence for this fundamental problem with the purifying selection model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "The purifying selection model is incompatible with observed adaptive sweeps and cannot be rescued by recombination at realistic rates in gut microbiome populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C24 documents observed adaptive sweeps in Bacteroides species from published studies. Claims C25-C26 demonstrate through simulation (Figure 2\u2014figure supplement 3) that even with generous recombination rates (r/m = 500), the purifying selection model still fails to prevent mutation accumulation in populations of size 10\u2079. The analysis correctly identifies that weak selection coefficients (s = 3.5 \u00d7 10\u207b\u2075) result in selective advantages too small to sweep faster than mutations accumulate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Adaptive nonsense mutations occur frequently in gut microbiome bacteria, with premature stop codons significantly enriched (p=0.015) among observed de novo mutations in B. fragilis, and reversions of stop codons have been documented in experimental systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C28 are supported by multiple citations to published observations. Claims C29-C30 provide a statistical analysis of data from Zhao et al., 2019, showing 28 of 325 nonsynonymous mutations were premature stop codons, significantly higher than expected by chance. The statistical test is appropriate and the p-value is clearly stated. This provides empirical support for the biological plausibility of the reversion model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C4"
+    ],
+    "result": "In gut microbiome populations with census sizes of 10\u00b9\u00b3 and generation times of 1-10 days, reversions are nearly guaranteed to occur and sweep within years due to high mutation supply (10 mutants per site per generation) and rapid fixation times for beneficial mutations (sben > 1% sweep within 10 years).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C32 cite published estimates of population parameters. Claims C33-C34 provide calculations based on these parameters showing high probability of reversion occurrence and fixation (Figure 3b). The theoretical framework (Appendix 1, Section 2.2) correctly applies population genetics principles. However, the analysis assumes well-mixed populations and may underestimate spatial structure effects, though C47 addresses this concern by citing theoretical work suggesting only ~10-fold difference between census and effective sizes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C5",
+      "C37",
+      "C38"
+    ],
+    "result": "The adaptive reversion model can explain dN/dS decay with biologically plausible parameters: median \u03c4_flip \u2248 46,000 generations and n_loci \u2248 55, consistent with the known presence of dozens of invertible promoters in Bacteroidetes genomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C5 is supported by model fitting (Figure 3c, Equation 8) showing good fits to empirical data (median R\u00b2 = 0.82). Claims C37-C38 provide biological context showing that the fitted parameter n_loci \u2248 55 is consistent with up to 47 invertible promoters in B. fragilis and that adaptive loss-of-function mutations affect genes regulated by these promoters. The convergence between fitted parameters and independent biological observations strengthens the model's plausibility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C6",
+      "C39",
+      "C40"
+    ],
+    "result": "The reversion model demonstrates that low dN/dS values on long timescales can emerge even when adaptive sweeps are frequent, with observed dN/dS \u2248 0.1 when true dN/dS > 1, and standard phylogenetic software (PAML) significantly underestimates actual dN/dS in the presence of reversions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C40 are supported by simulations (Figure 4a-b) showing divergence between observed and actual dN/dS values. The PAML analysis (Figure 4b) appropriately tests whether standard methods can detect adaptive selection under the reversion model. The simulations include realistic parameters (population size 10\u00b9\u2070, bottlenecks, clonal interference) and demonstrate that the reversion model can produce the observed dN/dS decay pattern while maintaining high actual adaptive evolution rates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Genomic analysis reveals enrichment of stop-codon adjacent codons (TTA/TCA) in specific functional categories of B. fragilis genes, particularly outer membrane transporters involved in inorganic ion transport and metabolism (p=1.22 \u00d7 10\u207b\u2074), which are known to interact with immune systems and phage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C43 present genomic analyses with appropriate statistical tests (one-proportion Z-test with Bonferroni correction) showing enrichment of stop-codon adjacent codons in functionally relevant gene categories. The analysis controls for baseline codon usage (13.48% vs. 16.67% neutral expectation) and identifies biologically meaningful patterns. Claim C44 provides mechanistic context from published literature. This provides indirect evidence for past reversions, though the analysis cannot definitively distinguish between reversions and other evolutionary processes affecting codon usage.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Reversions have been overlooked in population genetics literature because theory has focused on eukaryotic organisms with smaller populations where the infinite-site model (which assumes no reversions) is appropriate, and because spatial structure in gut microbiomes reduces effective population size by only ~10-fold.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C46 provide reasonable explanations for why reversions have not been widely considered, supported by citations to standard population genetics models. Claim C47 addresses a potential concern about spatial structure by citing theoretical work (Ghosh and Good, 2022; Labavi\u0107 et al., 2022) suggesting modest reductions in effective population size. However, these theoretical estimates of spatial effects may have uncertainties that could affect the quantitative predictions of the reversion model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C48",
+      "C49"
+    ],
+    "result": "Recent empirical studies provide preliminary evidence for reversions in gut microbiomes and document frequent within-person adaptation including parallel evolution and loss-of-function mutations in genes showing low long-term dN/dS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C49 cite published studies documenting apparent reversions (Chen and Garud, 2022) and within-person adaptation (Lieberman et al., 2011; Marvig et al., 2015; Zhao et al., 2019; Cooper and Lenski, 2000; Key et al., 2023). While the evidence for reversions is described as preliminary (elevated but not significantly so), the documentation of frequent adaptive evolution on short timescales combined with low long-term dN/dS in the same genes supports the manuscript's central thesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "The analysis uses dN/dS data from Garud et al., 2019 (via Shoemaker et al., 2022), fitting parameters using scipy.optimize.curve_fit to minimize RMSD of logarithmic dN/dS, focusing on 10 species with the most short-divergence-time data points.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C53 describe the data sources and methodological choices. The use of logarithmic fitting (C52) is appropriate given the log-scale nature of dN/dS decay, though Figure 1\u2014figure supplement 1 shows that linear fitting yields even smaller s values, strengthening the manuscript's argument. The selection of species based on short-divergence data (C53) is justified as critical for capturing the transition region of dN/dS decay. The methods are clearly described and reproducible.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C16"
+    ],
+    "result": "The manuscript correctly describes established principles of molecular evolution: most mutations are neutral or deleterious, dN/dS > 1 indicates adaptive evolution, dN/dS < 1 indicates purifying selection, and deep mutational scanning shows most amino acid changes in essential genes are measurably deleterious.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C9 accurately describe standard interpretations in population genetics supported by foundational literature (Kimura, 1977; Davies et al., 1999; Jolley et al., 2000; Dingle et al., 2001). Claim C16 correctly cites experimental evidence (Kelsic et al., 2016; Dewachter et al., 2023) showing that most amino acid changes in essential genes have measurable fitness effects. These claims establish the appropriate theoretical and empirical context for the manuscript's analysis.",
+    "result_type": "MINOR"
+  }
+]

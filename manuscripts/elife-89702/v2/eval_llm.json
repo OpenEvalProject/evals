@@ -1,0 +1,375 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "FKH-8 is expressed in all ciliated sensory neurons in C. elegans and its expression correlates with core ciliome gene expression during development. FKH-8 binds regulatory regions of ciliome genes, regulates their expression, affects cilium morphology, and controls behaviors mediated by sensory ciliated neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C11 and C25-C33 collectively demonstrate FKH-8's role through multiple converging lines of evidence: fosmid reporter expression data (C25-C28), sc-RNA-seq correlation analysis (C30-C31), ChIP-seq binding data (C8, C34-C49), mutant reporter expression defects (C53-C60), cilium morphology measurements (C94-C96), and behavioral assays (C99-C112). The integration of expression, binding, genetic, and phenotypic data provides strong support for FKH-8 as a direct regulator of sensory ciliome genes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "FKH-8 ChIP-seq analysis reveals that FKH-8 binds to ciliome gene regulatory regions, with enrichment for cilia-related GO terms. A Forkhead-like (FHL) motif is present in 27% of peaks at central positions. X-box motifs (DAF-19/RFX binding sites) are found in 21% of FKH-8 peaks, also enriched centrally, and 34% of ciliome genes contain both X-boxes and FKH-8 binding, with this dual signature more prevalent in core (62%) than subtype-specific (6%) ciliome genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C46 are supported by systematic ChIP-seq data analysis including GO enrichment (C34), de novo motif discovery (C35-C36), overlap analysis with known X-boxes (C37), computational motif scanning (C38-C39), comparative analysis with other FKH TFs (C40), and distance measurements (C44-C46). The computational analyses are appropriate and the enrichment statistics are clearly reported. The finding that core ciliome genes preferentially contain both regulatory signatures is particularly well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "FKH-8 and DAF-19 physically interact both when bound to DNA and in the nuclear soluble fraction free of chromatin, and they act together to regulate ciliome gene expression, particularly in core cilia components.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C13 and C47-C49 are supported by co-immunoprecipitation experiments in HEK293 cells showing interaction in both chromatin-bound and soluble nuclear fractions (C47-C48), and by genetic epistasis analysis showing synergistic effects in double mutants (C85-C89). The physical interaction data is complemented by the genomic co-localization of binding sites (C37-C46), providing multiple independent lines of evidence for functional cooperation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "fkh-8 mutants show significant defects in ciliome reporter gene expression across multiple genes and anatomical regions. The fkh-8(vlc43) null allele shows stronger phenotypes than the hypomorphic fkh-8(tm292) allele. Both alleles are recessive. Expression defects reflect enhancer activity defects rather than neuronal loss, and FKH-8 acts cell-autonomously. Cis-regulatory mutations of FKH binding sites produce expression defects stronger than trans-mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C65 are well-supported by quantitative reporter expression analysis in multiple genetic backgrounds (C53-C58), endogenous gene tagging experiments (C59-C60), cell-type-specific rescue experiments demonstrating cell autonomy (C61-C63), and cis-regulatory mutant analysis (C64-C65). The comparison between two alleles and heterozygote analysis properly establishes the genetic nature of the mutations. The observation that cis-mutations are stronger than trans-mutations (C65) is appropriately interpreted as potentially indicating either compensation by other factors or effects on additional TF binding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "FKH-8 and DAF-19 act synergistically in the regulation of ciliome gene expression. Loss of reporter expression in triple mutants exceeds the multiplicative effect of individual double mutants for ift-20, peli-1, and xbx-1. Cell-type-specific analysis shows that osm-1 expression in CEPV/CEPD neurons and xbx-1 expression in PHA neurons are only significantly affected in triple mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C89 are supported by quantitative genetic epistasis analysis using appropriate multiplicative models to test for synergy (C85-C86) and by cell-type-specific reporter analysis that unambiguously demonstrates synergistic effects in specific cellular contexts (C87-C88). The use of cell-type-specific markers to avoid confounding effects of ectopic expression in daf-19 mutants strengthens the analysis. The statistical approach for testing synergy appears appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "fkh-8(vlc43) mutants show cell-type-specific cilium morphology defects: CEP and AWB neurons have significantly reduced cilium length, ADF neurons have significantly increased cilium length, and AWA neurons show reduced cilium arborization depth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C96 are supported by quantitative cilium length measurements using confocal microscopy with appropriate reporters (n\u226532 per neuron type). The measurements were validated using an alternative immobilization method (polystyrene beads) to rule out artifacts from sodium azide treatment. The cell-type-specific nature of the defects (some shortened, some elongated) is consistent with the known complexity of cilium length regulation and suggests that FKH-8 regulates different ciliome components in different cell types.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "fkh-8 mutants display defects in multiple sensory behaviors mediated by ciliated neurons including nose touch, dauer regulation, olfactory responses (2-nonanone avoidance, 2-heptanone attraction), and gustatory responses (SDS and copper avoidance), while responses to gentle touch (non-ciliated neurons), posterior harsh touch, basal slowing, and NaCl attraction remain intact. This indicates FKH-8 is necessary for a wide range of cilia-mediated sensory functions but some neuron types retain function despite molecular and morphological defects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C114 are supported by a comprehensive battery of behavioral assays with appropriate controls. The finding that non-ciliated neuron functions (gentle touch, C99) are normal rules out general locomotory or response defects. The selective nature of behavioral defects, with some cilia-mediated behaviors intact (basal slowing, NaCl attraction) despite molecular defects in the relevant neurons, is appropriately interpreted as indicating retained sensory function in some contexts. Sample sizes appear adequate (n\u226515-60 depending on assay) and multiple biological replicates were performed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C118",
+      "C120",
+      "C121"
+    ],
+    "result": "Mouse FOXJ1 and FOXN4, but not FOXI1, can functionally substitute for C. elegans FKH-8 in rescuing ift-20 expression defects in dopaminergic neurons of fkh-8 mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C16 and C118-C121 are supported by cross-species rescue experiments using cell-type-specific expression of mouse FKH TF cDNAs. The rescue is quantified using reporter expression in identified dopaminergic neurons (n=30 per line, with multiple independent transgenic lines). The specificity of rescue (FOXJ1 and FOXN4 but not FOXI1) is important for establishing functional conservation. The use of the dat-1 promoter, which is unaffected in fkh-8 mutants, is appropriate for the rescue strategy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "FKH-8 binds five locations in the daf-19 locus and the fkh-8 locus contains three putative X-box sites, suggesting potential cross-regulation. However, FKH-8 does not appear required for daf-19 expression in ciliated neurons. Instead, DAF-19 isoforms A and B repress FKH-8 expression in non-ciliated neurons, while DAF-19D is not necessary for FKH-8 expression in ciliated neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C78 are supported by ChIP-seq data showing FKH-8 binding to daf-19 (C68), motif analysis showing X-boxes in fkh-8 (C69), reporter expression analysis in various daf-19 mutant backgrounds (C73-C78), and quantitative co-localization analysis (C76). The finding that FKH-8 expression is maintained in ciliated neurons in daf-19(m86) mutants but becomes pan-neuronal in these mutants supports the model of isoform-specific regulation. The use of the daf-19(of5) allele, which specifically affects A/B isoforms, strengthens the conclusion about isoform-specific repression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Ectopic expression of DAF-19D is sufficient to induce ectopic ift-20 expression, while ectopic FKH-8 expression has no significant effect. Together with stronger mutant phenotypes for daf-19, this indicates that RFX TFs display more instructive functions in ciliome gene expression than FKH-8.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C84 are supported by heat shock-inducible ectopic expression experiments showing differential sufficiency (C82-C83) and by comparison of mutant phenotype severity throughout the manuscript. The interpretation that RFX is more instructive while FKH-8 is more permissive/cooperative is reasonable given the data. However, the sufficiency experiments are limited to one reporter (ift-20) and one developmental stage (embryonic), so the generality of this conclusion could be tested further.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C122",
+      "C138",
+      "C139"
+    ],
+    "result": "RFX and FKH TF families act jointly as direct regulators of ciliome genes in sensory ciliated cell types. This regulatory logic could be an ancient trait predating functional cilia sub-specialization, and yet-unidentified FKH TFs might act with RFX in vertebrate sensory ciliated cell types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C17-C18 and C122-C139 represent evolutionary interpretations and predictions based on the experimental data. While C17 is well-supported by the experimental evidence in C. elegans (SUPPORTED), claims C18, C122, C138, and C139 are explicitly speculative (marked as SPECULATION in evidence_type). The evolutionary hypothesis is reasonable given: (1) functional conservation between FKH-8 and FOXJ1/FOXN4, (2) ancient origin of FoxJ/FoxN subfamilies, and (3) examples of RFX/FKH cooperation in fungi. However, these remain hypotheses requiring direct testing in other organisms. The prediction about vertebrate sensory cilia (C139) is particularly speculative given that FoxJ1/FoxN4 mutants show no major defects in non-motile cilia (C140), though a recent report describes some defects in olfactory neurons (C141).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "The fkh-8(tm292) allele is a deletion downstream of the FKH DNA binding domain and is likely a hypomorph rather than a null allele. The fkh-8(vlc43) allele is a deletion that removes the entire fkh-8 coding region.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C52 are supported by molecular characterization of the alleles (C50, C52) and phenotypic comparison showing that vlc43 has stronger phenotypes than tm292 (C55, C58). The classification of tm292 as a hypomorph is appropriately based on: (1) the deletion location preserving the DNA binding domain, (2) weaker phenotypes than vlc43, and (3) recessive inheritance (C56-C57). This genetic characterization is important for interpreting the functional studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "The kap-1 ciliome gene reporter is de-repressed in daf-19 mutants, but both kap-1 expression in ciliated neurons and its de-repression in daf-19 mutants are independent of FKH-8.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C81 are supported by reporter expression analysis in various genetic backgrounds showing that kap-1 behavior differs from other ciliome genes tested. This is consistent with prior literature showing that kap-1 is regulated by FKH-2 in AWB neurons (C125), which is itself a DAF-19 target. This result helps define the scope of FKH-8 function and shows that not all ciliome genes are FKH-8 targets, which is important for understanding the regulatory logic.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C93"
+    ],
+    "result": "Despite ciliome gene expression defects, fkh-8(vlc43) animals show similar DiD staining compared to wild type.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C93 is supported by DiD staining assays, which label a subset of amphid and phasmid neurons. This result indicates that gross cilium integrity is maintained in fkh-8 mutants despite molecular defects, which motivated the more detailed morphological analysis. However, DiD staining is a relatively crude assay that may not detect subtle morphological defects, so the more detailed measurements in C94-C96 were necessary and appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C66",
+      "C67"
+    ],
+    "result": "The observation that cis-regulatory mutations produce stronger expression defects than fkh-8 trans-mutations suggests either that other FKH factors can compensate for the lack of FKH-8, or that cis-mutations affect binding of other TFs in addition to FKH-8.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C66-C67 are explicitly speculative interpretations (marked as SPECULATION) of the observation that cis-mutants are stronger than trans-mutants (C65). Both explanations are plausible: (1) compensation by other FKH TFs is reasonable given that C. elegans has multiple FKH family members, and (2) the cis-mutations could affect other TF binding sites given the degenerate nature of TF binding motifs. The authors appropriately note that future work is needed to distinguish these possibilities. The cis-regulatory analysis itself is sound, but the mechanistic interpretation remains uncertain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Background claims about cilia biology, ciliopathies, and the known roles of RFX and FKH transcription factors in ciliogenesis across organisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5 and C19-C24 represent established knowledge in the field, supported by appropriate citations. These provide necessary context for the study but are not novel findings. The claim that no additional TFs act with RFX in primary cilia cell types (C5) is important for establishing the novelty of the work and appears accurate based on the literature at the time of the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C97"
+    ],
+    "result": "Background claims about cilium morphology regulation and the role of specific ciliome components like osm-5 in cilium morphology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C92 and C97 represent established knowledge about cilium morphology regulation, supported by appropriate citations. These provide context for interpreting the morphological phenotypes observed in fkh-8 mutants. The connection between osm-5 (an FKH-8 target) and AWB cilium morphology (C97-C98) provides a potential mechanistic link between molecular and phenotypic observations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C140",
+      "C141",
+      "C142"
+    ],
+    "result": "Background claims about FKH family evolution, known roles of FKH TFs in ciliogenesis in various organisms, and cooperativity between FKH and RFX TFs in vertebrates and other systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C117, C123-C128, C131-C135, and C140-C142 represent established knowledge from the literature, supported by appropriate citations. These provide important evolutionary and comparative context for interpreting the findings. The claim that establishing orthology relationships among FKH members is challenging (C115) is important for justifying the functional complementation approach. The examples of RFX/FKH cooperation in vertebrate motile cilia (C127-C128) and in fungi (C135) provide precedent for the regulatory logic discovered in C. elegans sensory cilia.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C129",
+      "C130"
+    ],
+    "result": "Cooperative actions of DAF-19 and FKH-8 appear prevalent for core ciliome components, while subtype-specific ciliome genes are known targets for neuron-type-specific terminal selectors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C129-C130 are supported by the enrichment analysis showing dual regulatory signatures are more common in core (62%) than subtype-specific (6%) ciliome genes (C42-C43), and by established literature on terminal selectors (C130). This distinction helps explain the regulatory architecture of the ciliome and suggests a division of labor between pan-ciliary regulators (RFX/FKH) and cell-type-specific regulators (terminal selectors).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C98",
+      "C106"
+    ],
+    "result": "Speculative interpretations connecting molecular findings to phenotypic observations: AWB cilium morphology defects in fkh-8 mutants could be correlated with osm-5 being a direct FKH-8 target, and FKH-8 could be required for correct dauer entry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C98 and C106 are explicitly speculative (marked as SPECULATION). C98 proposes a mechanistic link between osm-5 regulation and AWB morphology defects, which is plausible given that osm-5 mutants have AWB defects (C97), but this remains correlative. C106 interprets the reduced pheromone-induced dauer entry as indicating a role in dauer entry, but the effect is modest (3-fold vs 6-fold induction) and could reflect defects in dauer maintenance rather than entry. Both interpretations are reasonable but require additional experiments for confirmation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C136",
+      "C137"
+    ],
+    "result": "Speculative evolutionary hypotheses: the joint actions of RFX and FKH TFs could predate the split of fungi and metazoans, or alternatively, RFX and FKH TFs might have an inherent ability to cooperate explaining convergent evolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C136-C137 are explicitly speculative (marked as SPECULATION) evolutionary hypotheses. C136 is based on the observation of RFX/FKH cooperation in S. pombe (C135), while C137 proposes an alternative explanation based on inherent biochemical compatibility. Both are plausible but cannot be distinguished with the available data. These represent interesting hypotheses for future investigation but remain uncertain.",
+    "result_type": "MINOR"
+  }
+]

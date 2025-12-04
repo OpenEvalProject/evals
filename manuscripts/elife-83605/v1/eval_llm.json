@@ -1,0 +1,337 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C28"
+    ],
+    "result": "Lenacapavir (LEN) is the first capsid-targeting drug approved for clinical use by the European Union and U.S. FDA for treating multidrug-resistant HIV-1 infection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1 and C28 are consistent statements about LEN's regulatory approval status, supported by citations to published literature (C28). This represents established factual information about the drug's clinical status.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C34",
+      "C35",
+      "C37",
+      "C38",
+      "C46",
+      "C92",
+      "C93",
+      "C114"
+    ],
+    "result": "LEN's primary antiviral mechanism is 'lethal hyperstabilization' of the HIV capsid, where the drug induces capsid rupture while simultaneously preventing CA lattice disassembly, with this effect becoming dominant at high pM concentrations (close to IC95) when approximately 50% of FG binding sites are occupied.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This core finding is well-supported by multiple experimental approaches including single-molecule TIRF imaging (C34, C35, C46), dose-response analysis (C38), and occupancy measurements (C93). The data consistently demonstrate the dual effects of capsid breakage and lattice stabilization, with clear concentration-dependence and mechanistic interpretation (C92, C114).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Single-molecule TIRF microscopy with GFP-loaded virions distinguishes three capsid integrity states: leaky capsids (single-step GFP release), opening capsids (two-step GFP release), and closed capsids (retained GFP signal), plus immature particles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims describe the experimental observations from the TIRF assay (Figure 2B and supplements), providing clear operational definitions for different capsid states. The methodology is well-established from prior work (C15) and the observations are internally consistent.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "LEN treatment (5-500 nM) dose-dependently accelerates capsid opening (maximal effect at \u226550 nM) while preventing CA lattice disassembly, with 2-4 LEN molecules per hexamer (32-66% occupancy) sufficient to stabilize open lattices for at least 5 hours.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The dose-response data from GFP release and CypA paint experiments (Figures 2C-D, 3A-E) provide strong quantitative support for these claims. The occupancy calculations (C50) are based on reasonable assumptions about binding kinetics, though the estimate involves some uncertainty in the exact threshold.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "IP6 (100 \u03bcM) stabilizes intact capsids and partially counteracts LEN-induced capsid rupture at low drug concentrations (5 nM), but cannot prevent rupture at high LEN concentrations (\u226550 nM).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The experimental data (Figure 3B-C) clearly demonstrate the protective effect of IP6 at low LEN concentrations and its inability to prevent rupture at higher concentrations. This represents a well-controlled comparison showing the interplay between the stabilizing cofactor and the drug.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C55"
+    ],
+    "result": "Preincubation of virions with 5 nM LEN for 4 hours (allowing 95% site occupancy) increases drug-induced capsid rupture to levels observed with 500 nM LEN without preincubation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This experiment (Figure 4\u2014figure supplement 1B) directly tests the hypothesis that slow binding kinetics limit structural effects at low concentrations. The result supports the occupancy-dependent mechanism, though it represents a single concentration tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "A novel TIRF-based competition assay using fluorescently labeled CPSF6 peptide as a paint probe enables real-time measurement of LEN binding to authentic HIV capsids, yielding kon = 1.84 \u00b1 0.78\u00d710^5 M^-1 s^-1 and KD = 0.51 \u00b1 0.58 nM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The development and validation of this assay (Figure 4, Figure 4\u2014figure supplement 2) represents a significant methodological advance. The measured binding parameters are within reasonable agreement (2-3 fold) of published values from SPR, with differences potentially reflecting authentic capsid vs. hexamer binding or experimental variation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "In the improved TIRF assay measuring only IP6-stabilized capsids, LEN induces concentration-dependent capsid rupture with half-lives decreasing from 4.5 hr (0.2 nM) to 1 hr (1 nM), with rupture occurring at 20-30% occupancy at sub-nM concentrations and plateauing at ~70% occupancy at \u226510 nM LEN.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The refined assay design (Figure 4F-H) eliminates confounding from intrinsically unstable capsids, providing cleaner dose-response data. The occupancy-dependent rupture kinetics are well-characterized, though the complex kinetics at low concentrations (C63) suggest heterogeneity in capsid susceptibility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "In Jurkat cell infection assays, LEN exhibits biphasic inhibition: a first phase (IC50 ~0.1 nM, 15-30% occupancy) reducing infection to ~10% via late post-entry block, and a second phase (IC50 ~0.6-1.1 nM for RT, 50-70% occupancy) further reducing infection to <1% by blocking reverse transcription.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The infection and qPCR data (Figure 5) clearly demonstrate biphasic inhibition, with the second phase IC50 values corresponding to IC95 for infection. The occupancy calculations linking in vitro binding to cellular effects are reasonable, though they assume equilibrium binding and don't account for potential cellular factors affecting drug distribution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "In vitro CA assembly assays demonstrate that LEN and IP6 synergize to accelerate assembly, but compete to determine structure: IP6 promotes conical capsids while LEN biases toward tubular structures, with LEN alone insufficient to drive assembly in low salt conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The turbidity and EM data (Figure 6A-C) provide clear evidence for synergistic assembly kinetics and competing structural preferences. The observation that LEN requires IP6 for assembly (C76) is important for understanding the mechanism, though the in vitro conditions may not fully recapitulate cellular assembly.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C79",
+      "C80"
+    ],
+    "result": "CryoET analysis reveals that LEN treatment (700 nM, 30 min) causes aberrant CA assembly in mature virions, with 96% of treated virions containing additional CA structures and/or double-layered capsids, corroborated by 1.7-1.8-fold increased CypA paint signal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The cryoET data (Figure 6\u2014figure supplement 1) and CypA paint measurements provide complementary evidence for LEN-induced overassembly. The high frequency of aberrant structures (96%) is striking, though the functional consequences for infectivity are not directly tested in this experiment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Comparative analysis of FG-pocket binding drugs shows PF74 slows CA lattice disassembly in a concentration-dependent manner (requiring 97-99% occupancy for maximum effect, with ~70% signal loss after 80 min), while BI-2 (50 \u03bcM) only marginally slows disassembly, demonstrating that PF74 exerts similar but less potent effects than LEN.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The CypA paint experiments (Figure 7A-B, E) provide clear comparative data showing the hierarchy of stabilization potency (LEN > PF74 >> BI-2). The correlation with structural features (bridging contacts) is logical, though the mechanistic interpretation (C85) involves some inference beyond the direct observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "When infection inhibition is plotted as a function of FG-site occupancy, LEN achieves late-phase inhibition at 35-70% occupancy while PF74 requires >95% occupancy, demonstrating that LEN's superior potency reflects not just higher affinity but greater structural perturbation per bound molecule.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The occupancy-normalized comparison (Figures 5C, 7D) provides important mechanistic insight beyond simple affinity differences. However, the interpretation of 'rigidification potential' (C108) is somewhat speculative, and the occupancy calculations depend on the accuracy of the KD values used.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "CPSF6 peptide (100 \u03bcM) promotes capsid opening but strongly inhibits CA lattice disassembly, with partial stabilization at 18.5% occupancy (5 \u03bcM), demonstrating similar potency to LEN relative to occupancy and greater potency than PF74 or BI-2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The CPSF6p experiments (Figure 8) provide important data on a physiological FG-pocket ligand. The stabilization at low occupancy is notable, though the monomeric peptide may not fully represent the behavior of full-length, potentially multimeric CPSF6 in cells (acknowledged in C112).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "The degree of CA lattice stabilization by FG-pocket binders correlates with their ability to bridge between CA monomers within hexamers: BI-2 (single monomer contact) provides no stabilization, while PF74 and LEN (both bridging contacts) stabilize lattices by reducing conformational flexibility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This structure-function correlation (supported by structural data in Figure 1 and stabilization data in Figures 3, 7) provides a logical mechanistic framework. However, the interpretation involves inference from structural features to dynamic properties, and alternative explanations for the potency differences are not fully excluded.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Background on HIV capsid biology: The HIV capsid is a fullerene cone of ~1500 CA proteins (mostly hexamers, 12 pentamers) that protects the genome from innate immune sensing while facilitating nuclear entry through interactions with host factors (IP6, CypA, FG-pocket binding proteins) at specific binding sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims provide established background knowledge about HIV capsid structure and function, supported by appropriate citations to the literature. They set the context for the experimental work but do not represent novel findings from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Background on FG-pocket binding drugs: BI-2, PF74, and LEN represent successive generations of FG-pocket inhibitors with increasing binding footprints, affinities (KD: 1.2 \u03bcM, 120 nM, 215 pM), and potencies, with LEN interfering with multiple replication stages at pM concentrations and increasing cytoplasmic core numbers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims summarize published literature on the three drugs, providing essential context for the comparative analysis. The information is well-supported by citations, though it represents prior work rather than new findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C36",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Discussion of mechanisms: LEN-induced capsid rupture likely results from reduced lattice flexibility and strain accumulation, with IP6 promoting pentamer formation and high curvature while LEN drives low-curvature hexameric lattices, leading to aberrant assembly; the high-dose inhibition phase (>0.5 nM) corresponds to reverse transcription block via capsid opening.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These interpretive claims synthesize the experimental findings with structural insights from the literature (C97-C99 cite relevant studies). The mechanistic model is consistent with the data, though some aspects (e.g., the exact structural basis of rupture) remain speculative and would benefit from additional structural studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "Discussion of CPSF6 function: CPSF6 binds via a linear peptide motif making bridging contacts like PF74/LEN, with binding independent of lattice curvature; endogenous CPSF6 likely has higher avidity as a dimer or higher-order assembly, potentially explaining nuclear capsid remnants observed in infected cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims integrate the CPSF6p findings with published structural and cell biology data (C111, C113). The discussion appropriately acknowledges limitations of the peptide model (C112) and proposes testable hypotheses about physiological CPSF6 function.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C115"
+    ],
+    "result": "LEN reveals that FG-pocket binding can drastically alter capsid integrity, demonstrating the potential of this site for therapeutic intervention.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This concluding statement is well-supported by the comprehensive characterization of LEN's effects throughout the manuscript. It appropriately emphasizes the broader implications for antiviral drug development.",
+    "result_type": "MAJOR"
+  }
+]

@@ -1,0 +1,271 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C16",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "The authors designed and implemented a double barcode experimental evolution system to evolve haploid and diploid yeast populations in 12 different environments for up to 440 generations, isolating ~100-750 lineages per condition and focusing on three conditions (clotrimazole, fluconazole, and glycerol/ethanol) where >30 lineages with identifiable mutations were obtained from both ploidies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16 and C89-C99 describe the experimental design, which is well-documented with appropriate methodological detail. The double barcode system is clearly explained and justified (C89-C90), the number of environments and generations is specified (C16, C92), and the selection criteria for focal conditions are transparent (C98-C99). This represents sound experimental design for studying adaptive evolution and pleiotropy.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Lineage tracking data revealed that populations evolved in clotrimazole and fluconazole showed rapid adaptation (within 16-24 generations for clotrimazole), while glycerol/ethanol populations adapted more slowly, suggesting that antifungal drug selection is stronger than selection on alternative carbon sources.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C21 are supported by lineage tracking data shown in Figure 2. The observations about adaptation rates are directly measured from barcode frequency changes over time. The inference about relative selection strength (C18, C21) is reasonable given the observed dynamics, though it remains an interpretation rather than a direct measurement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Whole-genome sequencing identified 160 unique mutations in 25 genes, mostly single nucleotide polymorphisms causing missense or nonsense mutations. In clotrimazole, only PDR1 and PDR3 were targeted with numerous missense mutations in both ploidies, suggesting these mutations are likely hypermorphic and dominant or co-dominant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C25 are directly supported by whole-genome sequencing data presented in Table 2. The inference about dominance (C26) is reasonable given that the same genes are mutated in both haploids and diploids, though direct dominance testing was not performed. Claims C27-C28 appropriately cite prior knowledge about PDR1/PDR3 in drug resistance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "In fluconazole and glycerol/ethanol conditions, both ploidy-shared and ploidy-specific adaptive gene targets were observed. For example, IRA1 and IRA2 (Ras/cAMP pathway genes) were targeted in both ploidies in glycerol/ethanol, while HEM2, HEM3, and HAP1 (heme biosynthesis/sensing genes) were targeted only in diploids.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C34 are well-supported by whole-genome sequencing data shown in Table 2 and Figure 3. The observation of ploidy-specific mutational spectra is clearly documented. Citations to prior work (C31-C32) appropriately contextualize the findings. The inference about ploidy-dependent fitness effects (C34) follows logically from the observed mutational patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C70",
+      "C73",
+      "C74"
+    ],
+    "result": "Ploidy influences adaptive mutational spectra in a condition-specific manner: in clotrimazole, haploids and diploids accumulated mutations in identical genes (PDR1 and PDR3), while in fluconazole and glycerol/ethanol, they accumulated mutations in partially or largely disjoint gene sets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6 and C70-C74 are strongly supported by the whole-genome sequencing data in Table 2 and Figure 3. The condition-specific nature of ploidy effects is clearly demonstrated by comparing mutational spectra across conditions. The inference that ploidy does not affect pleiotropy in clotrimazole (C74) is reasonable given the shared gene targets, though pleiotropic profiles were also measured directly.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C101",
+      "C102"
+    ],
+    "result": "Fitness measurements are reproducible: lineages with identical mutations but different barcodes show similar fitness estimates across environments, and fitness estimates correlate well between replicates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C37 and C101-C102 demonstrate the reproducibility of fitness measurements. The example of GPB2-Q602* lineages (C36) provides specific evidence, and correlation data between replicates (C102, Appendix 1-figure 3) supports measurement reliability. This validation is essential for interpreting the pleiotropic fitness profiles.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C2",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Pleiotropy is common: most adaptive lineages show non-neutral fitness effects in non-home environments, with effects that can be beneficial, neutral, or deleterious depending on the environment. The strength of pleiotropic effects is environment-dependent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2 and C38-C42 are supported by bulk fitness assay data shown in Appendix 1-figures 5-7. The observation that most lineages are not neutral in non-home environments (C38-C39) is quantitatively demonstrated. Specific examples (C40-C41) illustrate the range of pleiotropic effects. The conclusion about environment-dependent pleiotropy (C42) is a reasonable inference from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C3",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Pleiotropic effects are unpredictable and variable: mutations from the same evolution can show similar patterns (e.g., all diploid clotrimazole mutations) or different patterns (e.g., different CSG2 mutations in fluconazole). However, mutations in the same gene tend to have more similar pleiotropic effects than mutations in different genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3 and C43-C49 are supported by fitness profile data in Figure 4 and Appendix 1-figure 8. The examples of diploid clotrimazole mutations (C43) and CSG2 mutations (C45-C47) effectively illustrate both consistency and variability in pleiotropic patterns. The general trend that same-gene mutations show similar pleiotropy (C48) is quantitatively supported by Appendix 1-figure 8.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C4",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Lineages with mutations in the same genes tend to show similar pleiotropic effects. However, even within the same pathway (Ras/cAMP), different genes can produce distinct pleiotropic patterns (IRA1/IRA2 vs. GPB2), suggesting that pleiotropy is gene-specific rather than solely environment-driven.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4 and C62-C69 are supported by fitness data in Appendix 1-figure 9. The observation that IRA1 and IRA2 mutations show similar patterns (C62-C63) while GPB2 mutations differ (C65) is clearly demonstrated. The inference that pleiotropy is gene-specific (C67-C69) is reasonable, though it represents an interpretation of the data rather than a direct test of mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Cost-free adaptation is possible: some mutations (e.g., certain PDR3 mutations in clotrimazole, CSG2-S26F and CSG2-E234D in fluconazole, HAP1-V1471 insertion) show high fitness in their home environment with neutral or positive fitness in all measured non-home environments, though costs may exist in untested environments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C61 are supported by fitness profile data in Figure 4. Multiple specific examples of cost-free adaptation are provided (C51-C59), with appropriate caveats about unmeasured environments (C61). The conclusion that cost-free adaptation is possible (C60) is well-supported, though the authors appropriately acknowledge the limitation that only a subset of possible environments were tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Ploidy affects pleiotropic trade-offs: haploid lineages adapted to glycerol/ethanol show trade-offs at 37\u00b0C while diploid lineages do not. Even for the same mutation (PDR1-Y864H) in both ploidies, the haploid lineage shows more negative fitness in pH 7.3 than the diploid.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C72 and C75-C77 are supported by fitness data in Figure 4 and Appendix 1-figures 5 and 9. The ploidy-specific trade-offs are clearly demonstrated (C72), and the PDR1-Y864H example (C75-C77) provides a direct comparison of the same mutation in different ploidies. This represents strong evidence for ploidy effects on pleiotropy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "HEM2, HEM3, and HAP1 were mutated only in diploid evolutions in glycerol/ethanol. The authors hypothesize these mutations may be recessively lethal and overdominant, consistent with prior work showing overdominance is common for adaptive mutations in diploids.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C78 is supported by sequencing data (Table 2, Figure 3), but the overdominance hypothesis (C79) is speculative and not directly tested. While prior work (C80-C82) supports the plausibility of overdominance, the authors acknowledge that additional experiments are needed to confirm this mechanism. The result is uncertain because the key mechanistic claim remains untested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C83",
+      "C84"
+    ],
+    "result": "Despite clotrimazole and fluconazole both being azole antifungals targeting ergosterol synthesis, they vary in selection strength and adaptive mutational spectra.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C83 appropriately cites established knowledge about azole mechanisms. Claim C84 is supported by the observed differences in adaptation dynamics (Figure 2) and mutational spectra (Table 2, Figure 3) between the two drug conditions. This represents a well-supported observation about environment-specific adaptation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "The study's short evolution time (up to 440 generations) limited adaptive mutations to three environments but reduced hitchhiking mutations. The authors conclude that pleiotropy is influenced by multiple factors including home environment, ploidy, target genes, and possibly selection strength.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C86 accurately describe a limitation and benefit of the experimental design. Claim C87 is speculative but reasonable. Claim C88 represents an appropriate synthesis of the study's findings, though it includes speculative elements about undetermined factors. The overall conclusion is well-supported by the presented data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C103"
+    ],
+    "result": "Lineages adapted to clotrimazole rapidly took over BFA populations in clotrimazole, preventing reliable fitness estimation in that environment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C103 describes a technical limitation in the fitness measurements. This is a straightforward observation about the experimental outcome and represents an appropriate acknowledgment of data limitations. The rapid takeover is consistent with the strong selection observed in clotrimazole evolution (C17).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C100"
+    ],
+    "result": "The types of mutational changes (SNPs, indels, etc.) that occurred in diploids or haploids evolved in the same condition appeared similar.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C100 is supported by data shown in Appendix 1-figure 1. This observation indicates that ploidy affects which genes are targeted rather than the types of mutations that occur, which is relevant for understanding the mechanisms of ploidy-dependent adaptation.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,375 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C16",
+      "C20",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "The study analyzed career paths of 2284 EMBL alumni (969 PhD students and 1315 postdocs) who completed their training between 1997 and 2020. Using manual Google searches, the authors located publicly available information for 89% of alumni and reconstructed detailed career paths for 71% based on online CVs and biographies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C16, C20, C124-C126 collectively describe the study design and data collection methodology. The sample size, timeframe, and data collection success rates are clearly stated with specific numbers. The methodology for avoiding double-counting (C126) is explicitly described.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "The most prevalent career outcome for EMBL alumni in 2021 was Academia: Principal Investigator (27.8%), followed by Academia: Other (16.8%), Science-related Non-research (15.3%), Industry Research (14.5%), Academia: Postdoc (10.7%), and Non-science-related (4%). The career path of 10.9% of alumni could not be determined.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C8 and C26-C33 present the primary career outcome data with consistent percentages and absolute numbers. The data are presented in both the abstract and results sections with supporting tables and figures. The percentages sum to 100% when including the unknown category, demonstrating internal consistency.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C49",
+      "C50",
+      "C51",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Entry into Academia: Principal Investigator positions has decreased over time for EMBL alumni, while entry into Science-related Non-research, Industry Research, and Non-science-related positions has increased. Cox proportional hazards models showed hazard ratios less than one for newer cohorts compared to the oldest cohort, indicating lower chances of becoming a PI. Nevertheless, becoming a PI remained the most common career path for the 2005-2012 cohort.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C10, C49-C51, C61-C63 describe temporal trends supported by Cox proportional hazards modeling (C61-C62) and cohort comparisons. The statistical analysis is appropriate for time-to-event data with censoring. The interpretation that hazard ratios <1 indicate decreased probability is correct. The claim that PI positions remain most common (C63) is supported by specific percentages.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "The percentage of EMBL alumni becoming PIs is comparable to other institutions including Stanford University, University of Toronto, University of Michigan, and University of Chicago. This suggests that the observed decrease in PI entry rates is not EMBL-specific but reflects a widespread change in the number of PhDs and postdocs relative to available PI positions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C60 present comparative data from multiple institutions with specific percentages and cohort information. The comparisons are appropriately matched by time period and career stage. The interpretation (C60) that trends are not EMBL-specific is reasonable given the similar patterns across institutions, though the authors appropriately note this as a hypothesis consistent with the data rather than a definitive conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Of alumni who became PIs, 75.3% transitioned from postdoc positions and 20.6% from Academia: Other positions. PhD alumni became PIs an average of 6.1 years after PhD defense, while postdoc alumni became PIs 2.5 years after completing their EMBL postdoc. Almost half of postdoc alumni who became PIs did so directly after their EMBL postdoc.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C42 describe career transition patterns with specific percentages and time metrics. The data are internally consistent and supported by Sankey diagrams (Figure 1\u2014figure supplement 1). The time-to-PI metrics are clearly defined using calendar years, and the methodology for calculating these is described in the Methods section.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "For alumni who became PIs within nine years, there was a statistically significant increase in time from PhD to first PI position between the 1997-2004 cohort (5.2 years) and the 2005-2012 cohort (6.1 years) for PhD alumni. For postdoc alumni, there was no significant difference in time from EMBL to first PI role between cohorts, but the time from PhD to PI increased from 5.3 to 6.0 years.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C68 present time-to-PI analyses with appropriate statistical testing (Welch's t-test) and specific p-values. The nine-year cutoff is justified methodologically. The distinction between time from EMBL vs. time from PhD for postdocs (C67-C68) is important and clearly presented. The statistical significance is appropriately reported with p-values.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Male alumni were more likely than female alumni to end up in PI positions, consistent with prior literature. However, there was no statistically significant difference in the time taken by male and female alumni to become PIs. Female alumni were more likely to end up in Science-related Non-research positions, while male alumni were more likely to end up in Industry Research or Non-science-related positions. Female alumni were also more likely to be classified as unknown, potentially biasing the results.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C75 present gender-based career outcome differences with appropriate statistical analysis and acknowledgment of limitations. The finding of no difference in time-to-PI (C71) is important and appropriately tested. The authors acknowledge potential bias due to difficulty tracking careers outside academia (C75), which is a reasonable methodological concern that appropriately qualifies the interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Alumni who became PIs had more favorable publication metrics from their EMBL work, including more first-author articles (2.4 vs 1.2) and higher CNCI values (5.7 vs 3.1). Cox models showed that postdocs with one first-author publication were 3.2 times more likely to become PIs than those without, and those with two or more were 6.6 times more likely. Publication statistics were highly predictive for PI entry (C-index 0.69), while cohort/year, gender, and PhD/postdoc status had lower predictive power (C-indexes 0.59, 0.57, 0.55).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C83, C88-C91 present publication-career outcome relationships with appropriate statistical modeling (Cox proportional hazards) and effect sizes (hazard ratios with confidence intervals). The differences in publication metrics are statistically significant with very small p-values. The C-index values appropriately quantify predictive power. The multivariate model comparison (C89) demonstrates that publication metrics alone perform nearly as well as the full model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Nationality and group leader seniority were not predictive of PI entry. For Academia: Other positions, group publications were most predictive. For Industry Research, Science-related Non-research, and Non-science-related positions, time-related factors were strongest predictors, and individual publication statistics were weak predictors. For Industry Research, there were no differences in likelihood based on number of publications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C97 describe differential predictive factors across career outcomes, supported by Cox modeling with C-index comparisons across different variable sets. The finding that publications predict PI outcomes but not industry outcomes (C95-C97) is clearly demonstrated with specific C-index values. This represents an important nuance in understanding career determinants.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "The mean number of authors per article more than doubled between 1995 and 2020. The mean number of articles per researcher remained constant at 3.6 across cohorts, but researchers from later cohorts published fewer first-author articles. More recent articles had higher CNCI values, and the proportion of articles with international collaborators increased from 47% to 79%.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C105 describe publication landscape changes supported by Figure 5 and statistical testing. The finding of constant total articles but fewer first-author articles (C102-C103) is important and statistically significant (p=6.5\u00d710\u207b\u2077). These trends are consistent with cited literature on changing authorship patterns and provide context for interpreting career outcome changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "EMBL alumni published an average of 4.5 research articles about their EMBL work, with 1.6 as first author. 90% authored at least one article and 73% were first author on at least one article. The average time from PhD to first role in a specific career area ranged from 4.2 years (Non-science-related) to 6.8 years (PI).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C25 present descriptive publication and career timing statistics. These are straightforward summary statistics from the dataset and are internally consistent. The data provide important context for understanding the publication-career relationship analyzed in later claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "For alumni entering Industry Research, 20.2% entered directly from PhD, 56.4% from postdoc, and 13.3% from Academia: Other positions. 71.6% remained in Industry Research long-term. Almost 60% of alumni working outside academia had management-level job titles, including 45% of those who left in the last five years.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C48 describe career transitions and seniority for non-academic positions. The percentages are specific and supported by the data. The finding of high management-level representation (C47-C48) is notable, though the authors appropriately acknowledge the difficulty in assessing career progression outside academia due to job title variation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C87",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "Cox proportional hazards regression models were fitted to predict time-to-event probabilities for each career outcome. Multivariate models used ridge penalty with 10-fold cross-validation. Harrell's C-index was calculated for model validation, with values ranging from 0.61 to 0.70 for complete models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87, C129-C131 describe the statistical methodology. Cox proportional hazards is appropriate for time-to-event data with censoring. The use of ridge penalty and cross-validation is appropriate for multivariate models. Harrell's C-index is the correct metric for evaluating Cox model performance. The methodology is clearly described and appropriate for the research questions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "EMBL currently employs more than 1110 scientists, including over 200 PhD students, 240 postdoctoral fellows, and 80 PIs. The EMBL International PhD Programme has a 92% completion rate, with students taking an average of 3.95 years to submit their thesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C15 provide institutional context with specific statistics. These are straightforward descriptive statistics about the institution. While important for context, they are not primary research findings but rather background information.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "EMBL alumni were predominantly based in the European Union (60%), other European countries including UK and Switzerland (20%), and the US (11%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C19 describe the geographic distribution of alumni. These are straightforward descriptive statistics from the dataset. The percentages are clearly stated and provide useful context for understanding the study population.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "EMBL does not use journal impact factors in hiring or evaluation decisions and is a signatory of DORA and member of CoARA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C86 describe institutional policies. These are statements of fact about the institution's practices and commitments. While important for context regarding the use of publication metrics in the analysis, these are not research findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C120"
+    ],
+    "result": "EMBL launched a career service in 2019 for all PhD students and postdocs, building on an EC-funded pilot project. EMBL has held an annual career day highlighting career options outside academia since 2006.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C111, C120 describe institutional career support initiatives. These are factual statements about programs at EMBL. While relevant to the discussion of career support, these are not research findings but rather contextual information about institutional practices.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119",
+      "C121"
+    ],
+    "result": "The retrospective, observational design limits the ability to disentangle causation from correlation. Changes in career outcomes may be driven by increased competition for PI roles or by greater availability/awareness of other career options. Many alumni may be attracted to the private sector by perceptions of higher pay, more stable contracts, and/or better work-life balance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C119, C121 acknowledge study limitations and offer alternative explanations. The authors appropriately recognize that their observational design cannot establish causation (C117). The alternative explanations (C118-C119, C121) are reasonable hypotheses, though they are explicitly presented as speculation rather than tested conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C69",
+      "C76",
+      "C98",
+      "C99",
+      "C100",
+      "C106",
+      "C107"
+    ],
+    "result": "The manuscript cites prior literature establishing that: the number of early-career researchers exceeds available positions; many PhD students and postdocs aspire to PI positions; female researchers are less likely to remain in academia; publication metrics are linked to faculty position outcomes; authorship and data per article have increased over time; first-author articles per researcher have decreased; and early-career researchers face job insecurity and career progression concerns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C12, C69, C76, C98-C100, C106-C107 summarize prior literature with appropriate citations. These claims provide important context for the current study. The citations appear appropriate for the claims made, though the reviewer cannot verify the accuracy of all cited work without examining the original sources.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C108",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "The skills and knowledge acquired during PhD and postdoc training are useful in diverse careers. The trend toward fewer first-author articles likely reflects increased collaboration and interdisciplinary research. Multi-partner projects provide skill development opportunities and allow tackling challenging questions, though they can take longer to complete. Open science practices can make contributions more transparent and available faster.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C108, C112-C116 present interpretations and general statements about research training and collaboration. While C108 is a reasonable inference from the diversity of career outcomes observed, it is not directly tested. Claims C112-C116 are largely discussion points supported by citations and general knowledge rather than findings from the current study. The causal claims about collaboration benefits are not empirically tested in this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C109",
+      "C122",
+      "C123"
+    ],
+    "result": "Further changes to the career landscape are likely due to COVID-19 impacts. The study plans to update data every four years and maintain career path data for 24 years after alumni leave EMBL.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109, C122-C123 discuss future directions. C109 is speculation about future trends supported by a citation. C122-C123 describe planned future work, which are statements of intent rather than research findings. These are appropriately presented as forward-looking statements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C127",
+      "C128"
+    ],
+    "result": "An individual was classified as having a 'detailed career path' if an online CV or biosketch accounted for their time since EMBL excluding a maximum of two one-year career breaks. Calendar years were used for all outcome data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C127-C128 describe methodological decisions for data classification and temporal measurement. These are clearly stated operational definitions. The allowance for career breaks (C127) is reasonable and explicitly justified. The use of calendar years (C128) is clearly explained with an example.",
+    "result_type": "MINOR"
+  }
+]

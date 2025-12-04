@@ -1,0 +1,1835 @@
+{
+  "submission": {
+    "id": "7f914c56-207c-4881-a983-86c7f9957bf0",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-04T01:33:27.425056Z",
+    "updated_at": "2025-12-04T01:33:27.425056Z"
+  },
+  "content": [
+    {
+      "id": "747c58df-0050-4e34-a3f7-9f37b6337b14",
+      "submission_id": "7f914c56-207c-4881-a983-86c7f9957bf0",
+      "content_type": "manuscript",
+      "content_text": "# Mating activates neuroendocrine pathways signaling hunger in Drosophila females\n\n## Authors\n\n- Meghan Laturney<sup>1</sup> ([ORCID: 0000-0002-6428-5565](https://orcid.org/0000-0002-6428-5565))\n- Gabriella R Sterne<sup>1</sup> ([ORCID: 0000-0002-7221-648X](https://orcid.org/0000-0002-7221-648X))\n- Kristin Scott<sup>1</sup> ([ORCID: 0000-0003-3150-7210](https://orcid.org/0000-0003-3150-7210)) \u2020\n\n### Affiliations\n\n1. University of California, Berkeley Berkeley United States ([ROR:01an7q238](https://ror.org/01an7q238))\n\n\u2020 Corresponding author\n\n## Abstract\n\nMated females reallocate resources to offspring production, causing changes to nutritional requirements and challenges to energy homeostasis. Although observed across species, the neural and endocrine mechanisms that regulate the nutritional needs of mated females are not well understood. Here, we find that mated Drosophila melanogaster females increase sugar intake, which is regulated by the activity of sexually dimorphic insulin receptor (Lgr3) neurons. In virgins, Lgr3+ cells have reduced activity as they receive inhibitory input from active, female-specific pCd-2 cells, restricting sugar intake. During copulation, males deposit sex peptide into the female reproductive tract, which silences a three-tier mating status circuit and initiates the female postmating response. We show that pCd-2 neurons also become silenced after mating due to the direct synaptic input from the mating status circuit. Thus, in mated females pCd-2 inhibition is attenuated, activating downstream Lgr3+ neurons and promoting sugar intake. Together, this circuit transforms the mated signal into a long-term hunger signal. Our results demonstrate that the mating circuit alters nutrient sensing centers to increase feeding in mated females, providing a mechanism to increase intake in anticipation of the energetic costs associated with reproduction.\n\n## Introduction\n\nAnimals choose what to eat. Their choices are reflections of their physiological demands as they seek out and consume food to meet their metabolic needs. Beyond food deprivation, other states can impose new nutritional requirements, shifting nutrient intake to maintain homeostasis. Female mating status, for example, impacts feeding decisions across species. In Drosophila, mated females increase egg production while also escalating nutrient consumption. Observed diet-related changes include an increase in total food intake (Carvalho et al., 2006) and the development of appetites for protein and salt (Vargas et al., 2010; Ribeiro and Dickson, 2010; Walker et al., 2015). These two nutrients have been linked to reproduction as dietary protein and salt are likely processed and used during egg assembly (Simpson et al., 2015; Walker et al., 2015). Thus, mated females seek out food rich in specific nutrients to couple feeding behavior with metabolic demand.\n\nAnother nutrient, sugar, may also be a vital postcopulatory diet component. Sugar is the fly\u2019s main energy source (Simpson et al., 2015). Females use sugar during egg production when dietary carbohydrates are synthesized into lipids (Brown et al., 2022) and packed into the developing ova (Sieber and Spradling, 2015). Mated females also increase their locomotor activity (Isaac et al., 2010), resulting in elevated metabolic rates (Brown et al., 2022) and driving the need for additional calories. Together, this predicts that mated females require significantly more sugar than virgins. However, as excessive sugar negatively impacts fly health (Baenas and Wagner, 2022), sugar intake must be tightly regulated. Although the sugar-to-protein ratio influences reproductive output and longevity (Simpson et al., 2015), the absolute levels of sugar intake of mated females remain untested. Moreover, how the mated state impinges upon neural and/or endocrine systems to modify feeding in mated females is not yet known.\n\nIn Drosophila, mated-related changes in female behavior and physiology are orchestrated by sex peptide (SP). SP is a 36-amino acid peptide that is produced in the male seminal fluid and transferred to females during copulation (Chen et al., 1988; Liu and Kubli, 2003). SP binds to its receptor (SPR; Yapici et al., 2008) which is expressed in sensory neurons (sex peptide sensory neurons, SPSNs) in the uterus (H\u00e4semeyer et al., 2009; Yang et al., 2009). SPSNs convey mating status to sex peptide abdominal ganglia (SAG) neurons that ascend to the central brain (Feng et al., 2014) and synapse onto pC1 neurons (Wang et al., 2020). This female-specific SPSN-SAG-pC1 circuit is active in virgin females and silenced after mating (Feng et al., 2014; Wang et al., 2020). Reception of SP and the consequential silencing of this circuit initiates the long-term postmating response, an umbrella term used to describe the shift in many behaviors after mating including reduced sexual receptivity and increased egg laying (Feng et al., 2014; Wang et al., 2020). Although the three-tier SPSN-SAG-pC1 circuit appears to coordinate postmating state (Walker et al., 2015; Feng et al., 2014; Wang et al., 2020), different neurons downstream of pC1 independently adjust individual behaviors (Wang et al., 2020; Wang et al., 2021).\n\nSimilar to other postmated behaviors, mated-related changes in feeding are also regulated by SP and the activity of this circuit. The reception of SP during mating or the artificial silencing of the first-order SPSNs and second-order SAG neurons causes an increase in the consumption of both salt and protein (Ribeiro and Dickson, 2010; Walker et al., 2015). This demonstrates that the mating status circuit alters food consumption in mated females to couple nutritional intake with internal needs. But how mating status is integrated into circuits that modulate feeding is unclear. For example, with the use of whole brain imaging, researchers have identified the \u2018borboleta\u2019 region as a modulator of yeast-based feeding in mated females. However, if and how this region is regulated by the SPSNs, SAG, or pC1 remains unknown (M\u00fcnch et al., 2022). Moreover, it is not yet determined if the mating status circuit also regulates the intake of other nutrients such as sugar that may be of vital use to mated females. Thus, how mating influences nutritional state circuits or feeding circuits remains a central question.\n\nHere, we investigated how mating status influences sucrose intake. We used automated behavioral assays, powerful genetic tools, connectomics, and functional imaging approaches to examine neural mechanisms for appetite changes in mated females.\n\n## Results\n\n### Females increase sugar intake after mating via changes in feeding microstructure\n\nTo investigate the impact of female mating status on sugar intake, we monitored individual feeding bouts over time using a high-throughput, automated feeding platform (FLIC; Ro et al., 2014; Figure 1A). We compared the consumption of virgins and two types of mated females (1 hr or 72 hr postmated). We found that 72 hr postmated females consumed for a significantly longer duration on sucrose solution than virgins or 1 hr postmated females (Figure 1B). To further evaluate the onset of increased sucrose consumption, we monitored the consumption of virgin, 24 hr postmated females, and 72 hr postmated females and established a postmated phenotype in both mated groups (Figure 1C). These studies demonstrate that mated females consume more sugar than virgins and that changes in sucrose consumption manifest 6\u201324 hr after copulation.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/85117/elife-85117-fig1-v2.jpg)\n\n**Figure 1.:** (A) Schematic of fly feeding behavior (left) and the fly liquid interaction counter (FLIC) signal that monitors food contact over time (right). (B) Cumulative drinking time of 50 mM sucrose in FLIC of the virgin (white circles, n=34), 1 hr postmated (pm) (light pink triangles, n=30), and 72 hr pm (dark pink squares, n=28) females. Line graph shows mean and s.e.m. over time. Kruskal-Wallis was used to compare groups at hour intervals, Dunn\u2019s post hoc at 6 hr, #p<0.05. (C) Total drinking time of 50 mM sucrose in FLIC in the 20 min assay of virgin (v; n=47), 24 hr pm (n=47), and 72 hr pm (n=22) females, Kruskal-Wallis, Dunn\u2019s post hoc. (D\u2013F) Schematic and plots of feeding behavior of virgin (v) and mated (m) females presented with sucrose of varying concentrations in FLIC 20 min assay (n=33\u201336) examining total drinking time (D), number of drinking bouts (E), and average bout duration (F). Box plots show first to third quartile, whiskers span 10\u201390 percentile, Mann-Whitney. (G) Schematic of female drinking from capillary containing sucrose solution in CAFE assay. (H) Total volume consumed of 50 mM sucrose in CAFE assay per fly in 24 hr by virgin (v, n=21) and mated females (m, n=21), unpaired t-test. (I) Schematic of proboscis extension response (PER) assay. (J and K) Percentage of proboscis extensions observed per fly upon three presentations of sucrose of indicated concentration (mM) in virgin (v) and mated (m) females in starved, n=17\u201318 (J) and fed state, n=16 (K), Mann-Whitney. *p<0.05, **p<0.01, ***p<0.001. Scatter plot shows mean +/\u2212 s.e.m. Column graph show mean +/\u2212 s.e.m. See Supplementary file 1 for full genotypes.\n\nTo explore differences in feeding dynamics, virgin and mated females were allowed to feed on different sucrose concentrations and the number and length of feeding bouts were examined. Mated females consumed for longer durations than virgins for all sucrose concentrations below 500 mM (Figure 1D). Investigation into the microstructure of feeding revealed that the postmated increase in sucrose consumption is due to an elongation in feeding bout duration rather than an increased number of bouts (Figure 1E and F). Thus, mated females consume more by engaging in longer feeding times rather than by initiating more feeding events.\n\nWe tested two predictions suggested by the mating-induced changes in sugar-feeding dynamics. First, longer overall feeding durations suggest that a greater amount of sugar is consumed. We directly tested this using a capillary feeder (CAFE; Ja et al., 2007; Figure 1G) and found that mated females consume significantly more sucrose than virgins (Figure 1H). Second, virgin and mated females execute a similar number of feeding bouts, suggesting that females do not differ in the probability of initiating a feeding event. To directly test this, we monitored proboscis extension upon sugar taste detection (Figure 1I) and found that virgin and mated females have similar feeding initiation propensities (Figure 1J and K). These results further corroborate that increased sugar consumption in mated females is due to longer meal duration rather than more frequent feeding bouts.\n\nHunger increases the sensitivity of gustatory neurons to sugar (Inagaki et al., 2012). To test whether changes in sugar sensory sensitivity underlie increased sucrose consumption in mated females, we monitored taste-induced neural activity in sugar gustatory neurons in mated and virgin females with the GCaMP6s calcium indicator (Figure 2A). Stimulation of the fly proboscis with sugar elicited similar responses in gustatory axons regardless of mating status (Figure 2B\u2013D), demonstrating that gustatory sensitivity is not altered by mating and not likely to contribute to changes in feeding.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/85117/elife-85117-fig2-v2.jpg)\n\n**Figure 2.:** (A) Schematic of in vivo calcium imaging experiment monitoring taste-induced activity in gustatory axons. (B\u2013D) Changes in GCaMP6s signal in virgin (gray) and mated (dark pink) females upon presentation of 250 mM sucrose, shown as representative fluorescent changes in single brains (B), changes over time (C), and area under the curve (D), n=10 per group. Blue bar represents proboscis sucrose stimulation, Wilcoxen Rank test. ns = not significant. Scatter plot shows raw data. Box and whisker plot shows median and quartiles. Scale bar 25 \u03bcm. See Supplementary file 1 for full genotypes.\n\n### Postmated increases in sucrose consumption are initiated by the mating status circuit\n\nAs mating increases egg production, we reasoned that the increase in sucrose consumption could be driven by a need-dependent mechanism. In this scenario, mating induces egg production, depleting energy stores and driving a need for sucrose consumption to restore homeostasis. To test this, we quantified sucrose consumption of eggless virgin females and eggless mated females with both FLIC (hs-bam, Figure 3A) and CAFE (ovoD, Figure 3\u2014figure supplement 1A). We found that despite a lack of egg production (Walker et al., 2015; Ohlstein and McKearin, 1997; M\u00e9vel-Ninio et al., 1996), mated females consumed more sucrose than virgins, demonstrating that the change in postmated sucrose feeding is not driven by egg production itself. Instead, this result suggests that sucrose feeding changes are anticipatory in nature and a consequence of a need-independent mechanism.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/85117/elife-85117-fig3-v2.jpg)\n\n**Figure 3.:** (A) Total drinking time of 250 mM sucrose in fly liquid interaction counter (FLIC) in the 20-min assay of the eggless virgin (v, n=16) and eggless mated (m, n=15) females, Mann-Whitney. (B) Schematic of the female with the mating circuit, showing first order (sex peptide sensory neurons, SPSNs, pink-orange), second order (sex peptide abdominal ganglia, SAG, dark yellow), and third order (pC1, green) neurons. (C) Confocal image of uterus stained to reveal SPSNs (UAS-CD8:GFP, green, arrow indicating cell bodies) and muscle tissue (phalloidin, blue). (D and E) Total drinking time of 250 mM sucrose in FLIC in the 20-min assay of virgin females of indicated genotype (n=17\u201328), Kruskal-Wallis, Dunn\u2019s post hoc. (F and H) Confocal images of the brain (top) and ventral nerve cord (bottom) of SAG-SS3 (F) and pC1-SS1 (H) females, stained to reveal neural projection pattern (UAS-mVenus, green) and all synapses (nc82, blue). (G and I) Drinking time of 250 mM sucrose by females exposed to light normalized to dark controls of indicated genotype in FLIC over 4 hr (each data point is the drinking time of an individual in the light condition minus the daily average drinking time of all females in dark condition within a genotype, n=17\u201339), Kruskal-Wallis, Dunn\u2019s post hoc at 4 hr, #p<0.05, ###p<0.001. Line graphs show mean and s.e.m. over time. *p<0.05, **p<0.01, ***p<0.001. Scatter plot shows mean +/\u2212 s.e.m. Scale bar 50 \u03bcm. See Supplementary file 1 for full genotypes. See also Figure 3\u2014figure supplement 1, Figure 3\u2014figure supplement 2, and Figure 3\u2014figure supplement 3.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/85117/elife-85117-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Total volume of 50 mM sucrose consumed per fly in CAFE assay by eggless virgin (v, n=21) and eggless mated females (m, n=20). *p<0.05, unpaired t-test. (B and C) Confocal image of uterus stained to reveal SPSNs (UAS-CD8:GFP, green, arrow indicating cell bodies) and muscle tissue (phalloidin, blue). (D) Confocal images of the brain (top) and ventral nerve cord (bottom) of genetic intersections accessing SPSNs stained to reveal off-target neurons in the central nervous system (UAS-GFP; green) and all synapses (nc82; blue). (E and F) Total drinking time in fly liquid interaction counter (FLIC) in the 20-min assay of virgin females of indicated genotype (n=19\u201341). Kruskal-Wallis with Dunn\u2019s Multiple Comparison Test revealed differences between silenced females and controls. Scatter plot shows mean +/\u2212 s.e.m. Scale bar 50 \u03bcm.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/85117/elife-85117-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A\u2013C) Total drinking time in fly liquid interaction counter (FLIC) in the 4-hr assay of females of indicated genotype and light condition. White circles are dark condition, green circles are green light condition, n=20\u201332. Scatter plot shows mean +/\u2212 s.e.m. Data were analyzed with two-way ANOVA and Bonferroni posttests, *p<0.05, ***p<0.001. (D) Drinking time of females exposed to light normalized to dark controls of indicated genotype in FLIC over 4 hr, n=20\u201324. Line graphs show mean and s.e.m. over time, Kruskal-Wallis, *p<0.05, **p<0.01. Dunn\u2019s post hoc at 4 hr, ##p<0.01, ns = not significant.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/85117/elife-85117-fig3-figsupp3-v2.jpg)\n\n**Figure 3\u2014figure supplement 3.:** (A) Confocal image of the brain (top) and posterior ventral nerve cord (VNC; bottom) of a SAG-SS3 driving the expression of multi-color flip-out tool, stained to reveal sex peptide abdominal ganglia (SAG) (UAS-flag, magenta), SAGb (UAS-HA, green) and all synapses (nc82, blue). White arrowheads indicate locations of distinctive morphological aspects: (top of the brain) projection in the dorsal protocerebrum present in SAG, absent in SAGb; (bottom of the brain) bowing in ascending axon absent in SAG, present in SAGb; (top of posterior VNC) projections along the ascending axon absent in SAG, present in SAGb; (bottom of VNC) SAG arborizations visible throughout the Abdominal neuromere, SAGb arborizations are restricted to the posterior Abdominal neuromere. (B) Confocal image of the brain (top) and posterior VNC (bottom) of a SAGb-SS1 and SAGb-SS2 stained to reveal SAGb expression pattern (UAS-GFP, green) and all synapses (nc82, blue). (C) Number of eggs laid in 24 hr by mated (co-housed with males for 72 hr) females of indicated genotype while exposed to red light (red) or no light (white). ***p<0.001 by two-way ANOVA analysis and Bonferroni posttests (n=7\u20139). Result reveals a similar phenotype to LSAN (Shao et al., 2019). (D) Drinking time of females exposed to light normalized to dark controls of indicated genotype in fly liquid interaction counter (FLIC) over 4 hr (n=12\u201320), Kruskal-Wallis. Line graph shows mean and s.e.m. over time. (E) Total drinking time in FLIC in the 4-hr assay, two-way ANOVA (n=12\u201320). Scale bar 50 \u03bcm. Scatter plot shows mean +/\u2212 s.e.m. ns = not significant.\n\nPostmated changes in female behavior are elicited by SP (Chen et al., 1988; Liu and Kubli, 2003; Laturney and Billeter, 2015), a male-derived seminal fluid peptide, and require female uterine primary sensory neurons (SPSNs; Yapici et al., 2008; H\u00e4semeyer et al., 2009; Yang et al., 2009; Figure 3B). To test the involvement of the SPSNs in postmated sucrose feeding changes, we genetically accessed SPSNs using three different genetic driver combinations (see methods). All genetic intersections consistently labeled at least four SPSNs (Figure 3C, Figure 3\u2014figure supplement 1B\u20131C) with no overlap of off-target neurons (Figure 3\u2014figure supplement 1D), making them useful tools to investigate the role of the SPSNs in postmating feeding changes. We silenced the SPSNs in virgin females using constitutive silencers (either the potassium inward rectifier, KIR2.1, or the tetanus toxin light chain, TNT) to mimic the mated state and measured sucrose consumption. Virgin females with SPSNs silenced consumed significantly more sucrose than virgin controls (Figure 3D and E, and Figure 3\u2014figure supplement 1E\u20131F), recapitulating the mated phenotype. This data argues that mated females increase sucrose consumption after mating via the SPSNs.\n\nThe canonical sex peptide pathway for postmated changes in female behavior is a three-layer circuit from SPSNs to SAGs to pC1 (Feng et al., 2014; Wang et al., 2020; Wang et al., 2021). As with the SPSNs, SAG, and pC1 neurons are active in a virgin female and silenced in a mated female (Feng et al., 2014; Wang et al., 2020). To precisely manipulate SAGs, we generated a new split-GAL4 line (SAG-SS3; Figure 3F) as SAG-SS1 labels off-target neurons that have arborizations in the SEZ that could impact feeding behavior and SAG-SS2 expression is weak making neither tool ideal (Feng et al., 2014). Next, we acutely silenced SAGs by driving the expression of the green-light gated anion channelrhodopsin (GtACR1) with SAG-SS3. Monitoring consumption over time, we found that acutely silencing SAGs significantly increased sucrose consumption (Figure 3G and Figure 3\u2014figure supplement 2A). Although an off-target ascending neuron is also labeled in SAG-SS3, referred to as SAGb, it is not responsible for changes in sucrose consumption (Figure 3\u2014figure supplement 3), arguing that the increased sucrose consumption observed with SAG-SS3 is due to the activity of SAG neuron itself. Downstream of SAG, we found that acutely silencing pC1 also significantly increased sucrose consumption (Figure 3H and I, and Figure 3\u2014figure supplement 2B\u2013D), demonstrating that pC1 neurons regulate postmating sucrose feeding. Taken together, we conclude that the increased sugar consumption after mating is part of the repertoire of behavioral changes induced after copulation by SP acting on the SPSN-SAG-pC1 mating status circuit.\n\n### Descending neurons that regulate egg laying and sexual receptivity do not influence sucrose consumption\n\nPostsynaptic to pC1, the mating status circuit splits into separate neural pathways that mediate different behavioral subprograms, including circuits that elicit changes in sexual receptivity (Wang et al., 2021) or egg-laying (Wang et al., 2020). We hypothesized that the neural circuit supporting the postmated increase in sucrose consumption could either follow one of the established circuits or diverge after pC1. To test if sucrose feeding is executed by previously identified postmating subcircuits, we optogenetically manipulated the activity of the descending neurons (DNs) for sexual receptivity (vpoDNs) or egg laying (oviDNs) to mimic the mated state (Figure 4A) and measured sucrose consumption. We found no difference in sucrose consumption upon manipulation of vpoDNs or oviDNs (Figure 4B, C, F and G, and Figure 4\u2014figure supplement 1). We note that we measured sucrose intake in immobilized flies for oviDN manipulations, as activating oviDNs caused females to stop walking (Figure 4D and E), likely a natural component of egg laying. These studies argue that neither of the previously identified circuits responsible for a single postmating response, egg laying, and sexual receptivity, mediate postmating sucrose feeding.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/85117/elife-85117-fig4-v2.jpg)\n\n**Figure 4.:** (A) Schematic of the mating circuit with neural outputs of pC1 and resulting postmating response. Green circles indicate active neurons, salmon circles indicate silenced neurons. (B and C) Difference in drinking time of 250 mM sucrose of indicated genotype in fly liquid interaction counter (FLIC) over 4 hr. Each data point represents the normalized drinking time of a single female in light conditions (drinking time minus the daily average drinking time of all females in dark conditions within a genotype, n=20\u201324), Kruskal-Wallis. Line graph shows mean and s.e.m. over time. (D) Velocity heatmap upon transient activation in individual walking flies, genotype indicated on the left. Each row represents the velocity of a single fly. Red bars indicate light ON (n=8\u201310). (E) Total distance traveled in the locomotor assay in (D). ON condition (red) includes 3\u201330 s light ON conditions. OFF condition (white) includes 3\u201330 s light OFF conditions immediately preceding each ON condition, Mann-Whitney, ***p<0.001. Aligned dot plot shows mean +/\u2212 s.e.m. (F and G) Drinking time of 250 mM sucrose of females exposed to light normalized to dark controls of indicated genotype in temporal consumption assay (n=19\u201326), One-way ANOVA, Bonferroni\u2019s post hoc. ns = not significant. Scatter plot shows mean +/\u2212 s.e.m. See Supplementary file 1 for full genotypes. See also Figure 4\u2014figure supplement 1.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/85117/elife-85117-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A and B) Total drinking time in fly liquid interaction counter (FLIC) in the 4-hr assay of females of indicated genotype and light condition. White circles are dark condition, green circles are green light condition, n=20\u201332. Data were analyzed with two-way ANOVA and Bonferroni post-tests. (C and D) Total drinking time in temporal consumption assay (TCA) of females of indicated genotype and light condition. White circles are dark condition, red circles are red light condition, n=20\u201332, two-way ANOVA and Bonferroni posttests. Scatter plot shows mean +/\u2212 s.e.m.\n\n### pCd-2 neural outputs of SAG and pC1 mediate postmating sucrose consumption\n\nTo identify novel pathways that mediate changes in mated feeding behavior, we examined other major outputs of the mating status circuit. We identified postsynaptic partners of SAG and pC1 using automated analysis (Buhmann et al., 2021; Heinrich et al., 2018) of a fly brain electron microscopy (EM) connectome (Zheng et al., 2018; Dorkenwald et al., 2022). This approach identified three pCd-2 neurons (Kimura et al., 2015; Nojima et al., 2021), pCd-2a, pCd-2b, and pCd-2c (Figure 5A), that are strongly connected to SAG (39 synapses) and pC1 (146 synapses). These neurons are promising candidates to mediate postmating feeding changes because their processes descend into the prow region of the Subesophageal Zone (SEZ; Figure 5B and C, and Figure 5\u2014figure supplement 1A), a brain region implicated in energy homeostasis and feeding (Shiu et al., 2022). As pC1 and SAG are cholinergic (Feng et al., 2014; Wang et al., 2020), pCd-2 cells likely receive excitatory signals from these two upstream synaptic partners and, therefore, would be predicted to be less active in mated females (Figure 5D).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/85117/elife-85117-fig5-v2.jpg)\n\n**Figure 5.:** (A) Schematic of neural connectivity of the mating status circuit and pCd-2 cells. Arrows represent direct connection and the number indicates the number of synapses per hemisphere. (B and C) Electron microscopy reconstruction of pCd-2a (B) and pCd-2b (C) neurons. (D) Model of circuit activity in virgin and mated state. Green circles indicate active neurons, salmon circles indicate silenced neurons. (E and F) Confocal images of pCd-2a-SS1and pCd-2b-SS1 brains, stained to reveal pCd-2 projection pattern (UAS-GFP, green) and all synapses (nc82, blue). Scale bar 50 \u03bcm. (G and H) Calcium responses of pCd-2a (G) and pCd-2b (H) in the prow region of the brain to activation of upstream pC1 neurons with R40F04-LexA (n=6\u20138) and the analysis of area under the curve, Wilcoxon Rank Test, scatter plot shows mean +/\u2212 s.e.m. (gray bar). Gray shading represents optogenetic stimulation. (I and J) Drinking time of 250 mM sucrose of females exposed to light normalized to dark controls of indicated genotype in fly liquid interaction counter (FLIC) over 4 hr (n=22\u201326). Line graph shows mean and s.e.m. over time, Kruskal-Wallis, Dunn\u2019s post hoc at 4 hr, ##p<0.01, ###p<0.001. (K) Difference in eggs laid in 24 hr of females exposed to light normalized to dark controls (n=10\u201320). For \u2018UAS-GtACR1 mated\u2019 group, the dataset represents eggs laid by mated females normalized to virgin females of the same genotype. Scatter plot shows mean +/\u2212 s.e.m, one sample t-test. *p<0.05, **p<0.01, ***p<0.001. See Supplementary file 1 for full genotypes. See also Figure 5\u2014figure supplement 1, Figure 5\u2014figure supplement 2, Figure 5\u2014figure supplement 3, and Figure 5\u2014figure supplement 4.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/85117/elife-85117-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Electron microscopy reconstruction of pCd-2c neuron. (B) Confocal images of brains and ventral nerve cords of female and male flies from pCd-2a and pCd-2b split-GAL4 lines stained to reveal expression pattern (UAS-mVenus, green) and all synapses (nc82, blue). Scale bar 50 \u03bcm.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/85117/elife-85117-fig5-figsupp2-v2.jpg)\n\n**Figure 5\u2014figure supplement 2.:** (A) Confocal images of a female brain stained to reveal the co-expression pattern of R40F04-LexA (LexAop-tdTomato, magenta), pC1-SS1 (UAS-GCaMP6s, green), and all synapses (nc82, blue). Arrowheads indicate three pC1 cells per hemisphere that are labeled by both driver lines. (B) Confocal image of a female brain stained to reveal expression pattern of R40F04-LexA (LexAop-GCaMP6s, green) and all synapses (nc82, blue). Arrowheads indicate the location of soma for four different cell types. Scale bar 50 \u03bcm.\n\n![Figure 5\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/85117/elife-85117-fig5-figsupp3-v2.jpg)\n\n**Figure 5\u2014figure supplement 3.:** (A and B) Number of eggs laid in 24 hr by virgin females of indicated genotype while exposed to green light (green) or no light (white). Two-way ANOVA analysis revealed no significant differences between groups (n=9\u201320). Scatter plot shows mean +/- s.e.m. (C\u2013E) Drinking time of females exposed to light normalized to dark controls of indicated genotype in fly liquid interaction counter (FLIC) over 4 hr (n=19\u201336), Kruskal-Wallis, Dunn\u2019s post hoc at 4 hr, #p<0.5, ##p<0.01, ###p<0.001, ns = not significant. Line graph shows mean and s.e.m. over time. (F\u2013J) Total drinking time in FLIC in the 4-hr assay (n=19\u201336). Analyzed with a two-way ANOVA and Bonferroni post tests. *p<0.05, **p<0.01, ***p<0.001. Scatter plot shows mean +/- s.e.m.\n\n![Figure 5\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/85117/elife-85117-fig5-figsupp4-v2.jpg)\n\n**Figure 5\u2014figure supplement 4.:** (A\u2013D) Drinking time of females exposed to light normalized to dark controls of indicated genotype in fly liquid interaction counter (FLIC) over 4 hr (n=13\u201326), Kruskal-Wallis, Dunn\u2019s post hoc at 4 hr, #p<0.05, ##p<0.01. Line graph shows mean and s.e.m over time. (E\u2013H) Total drinking time in FLIC in the 4-hr assay. Analyzed with a two-way ANOVA and Bonferroni post tests (n=13\u201326). *p<0.05, **p<0.01, ***p<0.001, ns = not significant. Scatter plot shows mean +/\u2212 s.e.m.\n\nWe generated split-GAL4 lines to genetically access pCd-2a and pCd-2b (Figure 5E and F) and found that both neurons are female-specific (Figure 5\u2014figure supplement 1B), consistent with a role in female postmating behavior. To test if pCd-2a and pCd-2b are functionally connected with pC1, we optogenetically activated pC1 using R40F04-LexA (see Methods and Figure 5\u2014figure supplement 2) while simultaneously measuring calcium responses in either pCd-2a or pCd-2b neurons. In both cases, neural activation caused significant calcium increases in pCd-2a and pCd-2b neurons (Figure 5G and H), validating pCd-2a and pCd-2b as targets of the mating status pathway. When we optogenetically silenced pCd-2a or pCd-2b neurons in virgins, mimicking the mated state (Figure 5D), females significantly increased sucrose consumption compared to controls (Figure 5I and J, and Figure 5\u2014figure supplement 3C\u2013J). Importantly, silencing pCd-2a or pCd-2b did not influence egg laying (Figure 5K and Figure 5\u2014figure supplement 3A\u2013B), demonstrating the separation of circuits for increased sucrose consumption from other behaviors downstream of pC1.\n\nTo explore if optogenetic manipulation of pCd-2a or pCd-2b mimicked the mated state, we silenced these neurons in already mated females. No difference in sucrose consumption would suggest that artificial silencing imitates the mated firing pattern. Instead, we found that mated females with pCd-2a or pCd-2b silenced further increased sucrose consumption (Figure 5\u2014figure supplement 4), suggesting that optogenetic inhibition is stronger than mating-induced inhibition. This is reasonable since the mated state likely decreases the activity of the mating status circuit rather than silences it completely (Feng et al., 2014). Next, we activated pCd-2a or pCd-2b in a mated female to mimic the virgin state to test if this cell type is necessary for the postmated increase in sugar intake. We found that mated females with pCd-2a artificially activated significantly reduced sugar intake compared to controls, recapitulating the virgin phenotype in mated females (Figure 5\u2014figure supplement 4). However, mated females with pCd-2b artificially activated did not differ from controls (Figure 5\u2014figure supplement 4), which may be a reflection of the fewer number of synapses from SAG and pC1 (Figure 5A). Thus, pCd-2a and pCd-2b activity regulate sucrose consumption in virgin and mated females, with decreased activity promoting consumption after mating.\n\n### Sexually dimorphic neuroendocrine Lgr3+ cells receive mating status signals via pCd-2 neurons and regulate sucrose consumption in mated females\n\nTo examine how pCd-2 neurons influence sucrose consumption, we used EM analyses and identified the major downstream targets of pCd-2 as t-shape cells (872 synapses) having processes in the SEZ prow region and a neuroendocrine center, the pars intercerebralis, with terminal arbors similar to insulin-producing cells and other median secretory cells (Liao and N\u00e4ssel, 2020; Figure 6A and Figure 6\u2014figure supplement 1). Based on anatomical similarity, these cells are leucine-rich repeat G-protein-coupled receptor-expressing medial bundle neurons (Lgr3 + mBNs; Dolan et al., 2007; Figure 6B and C). Lgr3 expression is sexually dimorphic, with a greater number of cells in the central brain and abdominal ganglia of females (Meissner et al., 2016), consistent with a role in female behavior. Moreover, Lgr3 is a receptor for the Drosophila insulin-like peptide 8 (Dilp8; Colombani et al., 2015; Garelli et al., 2015; Vallejo et al., 2015), and both Lgr3 and Dilp8 are known to regulate feeding (Yeom et al., 2021). These findings suggest that the Lgr3+ mBNs may represent the site where mating status circuits interact with hunger/satiety circuits to regulate feeding.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/85117/elife-85117-fig6-v2.jpg)\n\n**Figure 6.:** (A) Downstream neuronal cell types of pCd-2a (blue), pCd-2b (orange), and pCd-2c (purple) cells identified by electron microscopy reconstruction. Arrow indicates direct connection and numbers indicate pCd-2 output synapses with a color corresponding to upstream pCd-2 cell (a, b, or c). T-shape cell type is represented with a turquoise circle; other cell types are represented with white circles (a-j). (B) Electron microscopy reconstruction of t-shape neurons. (C) Confocal image of fru+ Lgr3-expressing cells (see methods) in the medial brain (UAS-CD8:GFP, green) and all synapses (nc82, blue). Scale bar 50 \u03bcm. (D and E) Calcium responses of Lgr3-expressing cell bodies in the prow region of the brain to activation of upstream pCd-2a (D) or pCd-2b (E) neurons (n=7\u20138) and the analysis of area under the curve, Wilcoxon Rank Test, scatter plot show mean +/\u2212 s.e.m. (gray bar). Gray shading represents optogenetic stimulation. (F) Neural model for the coordination of mating status and sucrose intake. Green circles indicate active neurons, salmon circles indicate silenced neurons. (G) Drinking time of 250 mM sucrose of females exposed to light normalized to dark controls of indicated genotype in fly liquid interaction counter (FLIC) over 4 hr (n=10\u201315). Line graph shows mean and s.e.m. over time, Kruskal-Wallis, Dunn\u2019s post hoc at 4 hr, #p<0.05, ##<0.01. *p<0.05, **p<0.01, ***p<0.001. See Supplementary file 1 for full genotypes. See also Figure 6\u2014figure supplement 1.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/85117/elife-85117-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** Schematic of neural connectivity of pCd-2 cells and downstream t-shape neurons identified by electron microscopy reconstruction. The number indicates the number of synapses.\n\nTo test this hypothesis, we first examined whether Lgr3+ mBNs are functionally connected to pCd-2a or pCd-2b by optogenetically activating these populations while simultaneously measuring calcium responses in Lgr3+ neurons. In both cases, neural activation caused significant calcium decreases in Lgr3+ neurons (Figure 6D and E), validating Lgr3+ mBNs as targets of pCd-2 and the mating status pathway. As pC1 is inhibited in the mated state, our studies argue that Lgr3+ mBNs are more active in mated females (Figure 6F). To examine whether activity in Lgr3+ mBNs influences consumption, we targeted this population with a genetic intersectional approach (R19B09\u2229fru; Figure 6C; Meissner et al., 2016), optogenetically activated Lgr3 + mBNs, and monitored sucrose consumption. We found that increased activity in Lgr3+ mBNs promotes sucrose consumption, mimicking the mated state (Figure 6G). Together, these studies reveal that Lgr3+ mBNs receive inputs from the canonical postmating circuit and are part of a neuroendocrine pathway that regulates sucrose consumption in postmated females.\n\n## Discussion\n\nAnimals must pair their internal metabolic needs with external food choices to maintain homeostasis. As animals\u2019 nutritional requirements shift in a state-dependent manner, they must adapt their feeding behavior accordingly, necessitating mechanisms that couple dynamic physiological demands with nutritional consumption. After mating, females experience a new metabolic requirement related to increased offspring production. In Drosophila, like many insect species, this is demonstrated through the significant increase in egg production and egg laying, two energetically expensive tasks. We predicted that mated females require more calories than virgins and, therefore, exhibit increased consumption of sugar, their main energy source (Simpson et al., 2015).\n\nHere, we characterized the sucrose consumption of virgin and mated females and found that mated females demonstrate increased sucrose intake. Although mated females are predicted to need more sugar to support increased reproductive output, we find that the mechanism that regulates postmating sugar intake is independent of the caloric deficiencies caused by egg production and is anticipatory in nature. This allows females to increase caloric intake prior to experiencing a deficiency in internal sugar levels. The postmated increase in sugar feeding is due primarily to an elongation of feeding bouts rather than an increased likelihood of initiating a feeding event or an increase in the appetitive nature of sugar. This is supported by data that demonstrates no change in response of the sucrose-sensing gustatory sensory neurons across mating states. Instead, we find that the female\u2019s mating status impinges on an endocrine center of the brain, where it may associate the mated state with elevated hunger levels.\n\nIn virgins, elevated activity of SAG and pC1 potentiates pCd-2-mediated inhibition of Lgr3+ cells, resulting in low sugar intake. After mating, the activity of SAG and pC1 is reduced (Feng et al., 2014; Wang et al., 2020), decreasing the activity of pCd-2 and alleviating the inhibition from Lgr3+ cells, increasing sucrose intake. Lgr3 is a leucine-rich repeat-containing G-protein coupled receptor, which binds Dilp8 (Drosophila insulin-like peptide 8; Colombani et al., 2015; Garelli et al., 2015; Vallejo et al., 2015) to regulate feeding in flies. Expression levels of Lgr3 and Dilp8 rise in fed flies and mutations in either gene increase feeding, arguing that Dilp8 and Lgr3 are satiety factors (Yeom et al., 2021). Our calcium imaging and behavioral studies of Lgr3+ mBNs indicate that they are more active in a mated state and activation of these neurons promotes sucrose consumption. Importantly, it has not been established how Dilp8 influences the activity of Lgr3+ mBNs. Regardless, together these data suggest a proposed model for how Lgr3+ mBN neurons integrate signals from the mating status and hunger/satiety systems (Figure 7). In virgin or satiated female flies, pCd-2 activity and circulating DILP8, respectively, inhibit Lgr3+ mBNs, reducing sugar feeding. Conversely, in mated or hungry flies, Lgr3+ mBNs lack the inhibitory signal from pCd-2 neurons or circulating Dilp8, respectively, resulting in increased sugar consumption. Hence, the mated state may be viewed mechanistically as an additional \u2018hunger\u2019 signal within this system.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/85117/elife-85117-fig7-v2.jpg)\n\n**Figure 7.:** Schematic of neural connectivity of mating status circuit (SPSN-SAG-pC1), mating status output neurons (pCd-2), and downstream Lgr3 cells. Circles represent neurons of indicated cell type. Lines between neurons represent synaptic connectivity: arrowheads indicate excitatory synapses, and horizontal lines indicate inhibitory synapses. Circuitry shown in green is active, pink indicates silenced. Star (blue) represents Dilp8. Blue wavey line is Dilp8 receptor, Lgr3. Status is indicated at the top and feeding outcome is indicated at the bottom (boxed).\n\nConsistent with the neural regulation of other postmating behaviors, including other postmated changes in feeding, the three-tier mating status circuit (SPSN-SAG-pC1) regulates postmated changes in sucrose consumption. Just as the silencing of first-order SPSNs and second-order SAG neurons drive changes in salt and protein appetites (Ribeiro and Dickson, 2010; Walker et al., 2015), we also find that artificially silencing any part of the SPSN-SAG-pC1 circuit drives increased sugar feeding, recapitulating the mated phenotype. Moreover, the neural regulation of postmating sucrose consumption, like other postmated behaviors, is also regulated by an independent pathway postsynaptic to the mating status circuit. Although the three-tier circuit appears to be a master regulator, the network splits into dedicated neural pathways modulating specific postmating behaviors such as egg laying (Wang et al., 2020), sexual receptivity (Wang et al., 2021), or sucrose consumption. Interestingly, although increased sugar intake may indeed support egg production, the neural mechanisms regulating the two behaviors are independent downstream of pC1.\n\nOur findings provide insight into not only the mechanisms that couple dynamic state-dependent physiological demands with nutritional consumption but also how these mechanisms are distinguishable from food deprivation-induced nutrient need. Sugar and yeast are both vital nutrients for flies (Simpson et al., 2015). Female Drosophila increase feeding of both sugar and yeast after nutrient deprivation and after mating (Ribeiro and Dickson, 2010; Corrales-Carvajal et al., 2016). Upon nutrient deprivation, the sensitivity of gustatory neurons change, promoting the detection of the deprived nutrient, for both sugar and yeast (Inagaki et al., 2012; Steck et al., 2018). However, we found that mated-related changes in sucrose were not due to changes in sensory neuron sensitivity. Similarly, mated-related changes in gustatory neuron sensitivity to yeast have not been found (Steck et al., 2018). It should be noted that after mating females display a transient modulation in chemosensory neurons that respond to polyamines (Hussain et al., 2016). However, these changes are not associated with polyamine consumption but instead oviposition behavior (Hussain et al., 2016). Taken together, these studies suggest that changes in postmated feeding behavior result from the mating status circuit (or its output neurons) modulating nutrient-sensing or feeding circuits, rather than directly tuning sensory neurons to promote feeding.\n\nAlthough mating status impinges on circuits that either process nutrient-sensing signals or regulate feeding circuits, there is no shared circuit yet identified for elevated nutrient intake of sugar and yeast in mated females. Beyond the three-tier mating status circuit, no overlap between areas of the brain modulating postmated increases in protein (Liu et al., 2017; M\u00fcnch et al., 2022) and sugar consumption (this manuscript) has been found. It remains to be elucidated whether the circuit described here specifically modulates post-mating changes in sucrose consumption or whether it impacts the intake of other nutrients, including protein and salt.\n\nOverall, our findings show that an elevated appetite for sucrose is an important behavioral subprogram elicited by mating and executed by female-specific circuitry, shifting the physiology of a mated female. The activation of hunger centers by the mating status circuit provides a neural mechanism that anticipates the large energetic demands associated with offspring production and increases caloric intake, promoting reproductive success.\n\n## Materials and methods\n\n### Rearing conditions and strains\n\nFlies were reared on standard cornmeal-agar-molasses medium, at 25 \u00b0C, 65% humidity on a 12-hr-light-dark cycle. Flies used in optogenetic assays were reared on food containing 0.25 mM all-trans-retinal (Sigma-Aldrich) in darkness, before and after eclosion.\n\nFlies were collected under CO2 1\u20138 hr after eclosion and housed in same-sex groups. To generate mated females, 15 virgin females, and five males were paired 3\u20135 days post-eclosion and group-housed for 72 hr. To generate recently mated females, a single virgin female was paired with a single male for 2 hr. If mating was observed, the recently mated female was then immediately placed into the indicated assay. To generate 24 hr mated females, a single virgin female was paired with a single male for 2 hr. If mating was observed, the recently mated female was then group housed with other recently mated females until testing. To generate egg-less females we used either ovoD mutant females (M\u00e9vel-Ninio et al., 1996) or hsp70-bam females (Ohlstein and McKearin, 1997) following the heat-shock protocol (Walker et al., 2015).\n\n### Capillary feeding (CAFE) assay\n\nCapillary feeding arenas were modified from the original (Ja et al., 2007). Briefly, we equipped a plastic vial, containing a wet kimwipe, with an altered rubber stopper lid housing two truncated 200 ml pipette tips whereby the capillaries can be inserted through. The capillaries (calibrated glass micropipettes, 5 ml) were loaded with 50 mM sucrose solution containing 0.25 mg/ml blue dye. To measure sucrose consumption, five virgin or mated females were gently aspirated into an arena for 24 hr, the displacement of the meniscus was measured, and the volume per fly was calculated (1 mm = 0.038 ml). Experiments were completed on at least three different days with all groups tested on each day.\n\n### Fly liquid interaction counter (FLIC)\n\nFemales of indicated genotype or mating status were first wet-starved for 12\u201318 hr. Following this, females were then gently aspirated into the fly liquid food interaction counter (FLIC; Ro et al., 2014), which was pre-filled with a sucrose solution of indicated concentration. The voltage from each well was continuously recorded and a .csv file was produced. Significant changes in the voltage indicated that the fly was contacting the liquid. Contact duration acted as a proxy for consumption time. Based on a video analysis of flies drinking in FLIC in our lab, we modified the parameters in R to better model consumption. The new parameters are as follows: Feeding.Interval.Minimum=10, Feeding.Threshold.Value=10, Tasting.Threshold.Interval=c(01,02), Feeding.Minevents=6, Signal.Threshold=10. Experiments were completed on at least three different days with all groups tested on each day.\n\nFor optogenetic control of neural activity, while flies were in the FLIC, we designed and constructed a 12-chamber lid equipped with either three red LEDs (617 nm, Luxeon Star, catalog number SP-01-E6) or three green LEDs (530 nm, Luxeon Star, catalog number SP-01-G4). The 12-chamber cover was made from half of a 24-well plate, which was trimmed to fit. Lights were attached to half of the 24-well plate lid and fitted atop the chamber cover. Lights were switched on (constant light) once all flies were loaded into the wells and remained on for the entire length of the assay. In the case of neural activation to observe potential decreases in sucrose consumption, flies were placed in humidified red light LED box (20 cm \u00d7 10 cm \u00d7 30 cm, custommade light box equipped with a 150 LED ribbon programmed with an Arduino with a constant light on) or a humidified dark box at the start of starvation. Data were prepared for analysis using using FLIC_automated_group_assignment (a customized R program, Laturney, 2023) and R (The R Project for Statistical Computing, https://www.r-project.org/).\n\n### Proboscis extension response (PER) assay\n\nFemales of indicated mating status were either wet-starved for 12\u201318 hr (starved) or kept on standard food (fed). Flies were then anesthetized using CO2 and fixed to a glass slide with No More Nails polish and then allowed to recover for 2 hr in a humidified box. Immediately before testing, flies were given water until they no longer responded to five consecutive presentations. Flies were then presented three times with sucrose of an indicated concentration and proboscis extension was recorded. Genotype of the fly was coded and, therefore, not apparent at the time of testing. Experiments were completed on multiple days with all groups included each day.\n\n### Temporal consumption assay (TCA)\n\nFlies were starved for 18 hr in darkness, anesthetized using CO2, and then fixed to a glass slide with No More Nails polish with limited light and allowed to recover for 2 hr in a humidified red light LED box (20 cm \u00d7 10 cm \u00d7 30 cm, custom made light box equipped with a 150 LED ribbon programmed with an Arduino with a constant light on) or a humidified dark box. Immediately before testing, flies were given water until they no longer responded to five consecutive presentations. In testing, flies were presented with 250 mM sucrose, and consumption time was recorded. Each trial ended when the fly was presented with the tastant and no longer responded to five consecutive presentations. Flies in the dark condition were given water and tested in low light conditions. Flies in red light condition were given water and tested in the presence of constant red light (LED panel made comprised of three red LEDs: 617 nm, Luxeon Star, catalog number SP-01-E6). Genotype of the fly was coded and, therefore, not apparent at the time of testing. Experiments were completed on at least three different days with all groups included each day.\n\n### Egg laying assay\n\n7-day-old females were placed in a vial with standard food and placed into a custom-made light box (20 cm \u00d7 10 cm \u00d7 30 cm) that was equipped with a 150 LED ribbon programmed with an Arduino. In neural activation tests, the red light was transiently on (1 s on/1 s off) to limit the likelihood of reduced neural firing with long light exposure time. In neural silencing tests, the green light was constantly on. Half of the females of each genotype were placed in vials wrapped in foil to function as no-light condition controls. After 24 hr, females were removed and eggs were immediately counted. Genotype of the fly was coded and, therefore, not apparent at the time of egg counting. Experiments were completed on at least two different days.\n\n### Locomotor assay\n\nLocomotor assays were conducted as described (Bidaye et al., 2020). Briefly, the behavior arenas were created by pouring 1.5% agarose gel into a 150 mm Petri plate, which was then loaded with 3D-printed acrylic molds to generate four bowl-shaped depressions. Once cooled, the agarose-filled Petri-plate containing four arenas (44 mm in diameter) was topped with a glass plate painted with Sigmacote. Flies were recorded with a FLIR Blackfly S camera (FL3-U3-13Y3M-C) fitted with a focus lens (LMVZ990-IR) and MIR bandpass filter (Midopt BP850) to allow infrared imaging at a resolution of 1280 \u00d7 1024 at 30 fps. Arenas were illuminated by a custom LED plate capable of 870 nm (infrared) and 630 nm (red) wavelengths (see Bidaye et al., 2020 for details). The 870 nm light was on throughout the assay. For CsChrimson activation, 630 nm LED was transiently switched on and pulsed at 50 Hz (performed in a dark room).\n\n### In vivo calcium imaging with taste stimulation\n\nProtocol was adapted (Shiu et al., 2022).Females aged 14\u201320 days: virgins were kept in groups of females and mated females were co-housed with Canton-S males. Females were food-deprived for 18\u201324 hr prior to imaging. A window was made in the head of the fly to allow for visualization of the SEZ and a drop of ~250 mOsmo AHL solution (Wang et al., 2003) was added to the head and imaging was immediately performed on a fixed-stage 3i spinning disk confocal microscope with a piezo drive and a 20 x water objective (1.6 x optical zoom). A 250 mM sucrose solution was delivered to the proboscis using a glass capillary. To analyze these images, a maximum intensity projection encompassing the arbors of Gr64f neurons was made using Fiji. Large ROIs were drawn manually corresponding to the GCaMP expression and a large ROI was drawn in an adjacent region to measure background autofluorescence. Mean fluorescence levels from the background ROI were subtracted from the Gr64f ROIs at each time point, resulting in the fluorescence trace over time: F(t). delta F/F was measured as follows: (F(t) \u2013 F(0)) / F(0), where F(0) was the average of 10-time points before stimulation with sucrose and F(t) was the average background subtracted increases in fluorescence during sucrose stimulation. Area under the curve for 10 frames before stimulation and during stimulation was approximated with the trapezoidal rule in Python using the NumPy.trapz function. Statistical analysis was carried out in Python using the SciPy package, version 1.7.3 (Virtanen et al., 2020). deltaF/F0 images were created as described (Yao and Scott, 2022). Experiments were completed over 4 days.\n\n### In vivo functional connectivity experiments\n\nIn vivo sample preparation for calcium imaging was performed as described (Shiu et al., 2022). Prior to imaging, female flies were aged for 2 weeks and then food-deprived in a vial containing a distilled water-soaked kimwipe for 18\u201324 hr prior to imaging. The pC1a-LexA line (R40F04-LexA attP40) was identified with the use of NeuPRINT and NeuronBridge. Within NeuPRINT we queried pC1a to determine the body ID (5813046951) and then using NeuronBridge we searched for lines containing this cell type. We chose R40F04 (score: 933) due to the lack of coexpression within the prow, the preferred imaging area of pCd-2. We verified that R40F04-LexA labels pC1 and describes the expression pattern (see Figure 5\u2014figure supplement 2). Female flies were housed with Canton-S males throughout aging and food deprivation. Following dissection, samples were bathed in ~250 mOsmo AHL solution (https://www.sciencedirect.com/science/article/pii/S0092867403000047) and imaged immediately using a 2-photon microscope. Volumetric images of the prow region were acquired with 920 nm light at 2.9 Hz with resonant scanning and a piezo-driven objective. During imaging, a custom ScanImage plugin was used to deliver two 10 s pulses of 660 nm light through the objective at a 10 s interval to excite CsChrimson.\n\nImage and statistical analysis of functional connectivity experiments were performed using Fiji (https://www.nature.com/articles/nmeth.2019), CircuitCatcher (a customized Python program, Bushey, 2019), and Python (Python Software Foundation, https://www.python.org/). Using Fiji, image stacks for each time point were the first maximum intensity projected. Then, using CircuitCatcher, an ROI containing Lrg3+ mBN cell bodies and a background ROI of brain tissue were selected and the average fluorescence intensity for each ROI at each timepoint was retrieved. Then, in Python, background subtraction was carried out for each timepoint (Ft) and initial fluorescence intensity (Finitial) was calculated as the mean corrected average fluorescence intensity for frames 1\u201315. Then, \u0394F/F was calculated using the following formula: Ft-Finitial/Finitial. Area under the curve for before (off; frames 1\u201329) and during (on; frames 30\u201358) light stimulation was approximated for flies that expressed both the optogenetic neural activator (Chrimson) and the calcium dependent indicator (GCaMP) as well as for the controls (flies only expressing the calcium indicator) with the trapezoidal rule in Python using the NumPy.trapz function. Traces were then normalized to controls. Statistical analysis of functional connectivity experiments was carried out in Python using the SciPy package, version 1.7.3 (https://www.nature.com/articles/s41592-019-0686-2).\n\n### Dissections and Immunohistochemistry\n\nAll CNS dissections and immunostaining (unless directly addressed) were performed following the detailed instructions found at https://www.janelia.org/project-team/flylight/protocols. To image split-GAL4 lines and intersections, we used the following primary antibodies: mouse \u03b1-Brp (nc82, DSHB, University of Iowa, USA) at 1:40, chicken \u03b1-GFP (Invitrogen, A10262) at 1:1000; and the following secondary antibodies: goat \u03b1-mouse AF647 (Invitrogen, A21236) at 1:500 and goat \u03b1-chicken AF488 (Life Technologies, A11039) at 1:500. Multi-Color Flip-Out fly generation was performed following the protocol (Nern et al., 2015). For imaging, we used the following primary antibodies: mouse \u03b1-Brp (nc82, DSHB, Univerisity of Iowa, USA) at 1:40, rabbit \u03b1-HA (rabbit \u03b1-HA, Cell Signaling Technology, C29F4) at 1:1000, rat \u03b1-Flag (Anti-DYKDDDDK, Novus Biologicals, NBP1-06712) at 1:1000; and the following secondary antibodies: goat \u03b1-mouse AF647 (Invitrogen, A21236) at 1:500, goat \u03b1-rabbit AF488 (Invitrogen, A11034) at 1:500, and goat \u03b1-rat AF568 (Invitrogen, A11077) at 1:500. To colabel R40F04-LexA and pC1, we used the following primary antibodies: mouse \u03b1-Brp (nc82, DSHB, University of Iowa, USA) at 1:40, chicken \u03b1-GFP (Invitrogen, A10262) at 1:1000 and rabbit \u03b1-DsRed (Living Colors, 632496) at 1:1000; and the following secondary antibodies: goat \u03b1-mouse AF647 (Invitrogen, A21236) at 1:500, goat \u03b1-chicken AF488 (Life Technologies, A11039) at 1:500, goat \u03b1-rabbit AF568 (Invitrogen, A11011) at 1:500.\n\nReproductive tract dissections and staining were performed as described (Billeter and Goodwin, 2004). For the primary antibody, we used chicken \u03b1-GFP (Invitrogen, A10262) at 1:1000 followed by goat \u03b1-chicken AF488 (Life Technologies, A11039) at 1:500 with the addition of Alexa Fluor 633 phalloidin (Thermo Fisher Scientific) to visualize the muscle-lined reproductive tract (1:500).\n\n### Confocal imaging\n\nSamples were imaged on an LSM710 confocal microscope (Zeiss) with a Plan-Apochromate 20 \u00d7 0.8 M27 objective and images were prepared in Fiji.\n\n### Electron microscopy neural reconstructions and connectivity\n\nSAG was previously partially reconstructed (Wang et al., 2020) in the Full Adult Female Brain (FAFB; Zheng et al., 2018) electron microscopy dataset using the CATMAID software (Saalfeld et al., 2009). We completed additional tracing of this neuron by continuing branches with a combination of both manual and assisted tracing. Manual tracing consisted of generating a skeleton of the neuron by following the neuron and marking the center of each branch. Assisted tracing consisted of joining and proofreading pre-assembled skeleton fragments with automated segmentation (Li et al., 2019). In addition to the skeleton tracing, new chemical synapses were also annotated as previously described (Zheng et al., 2018). Finally, downstream synaptic targets of SAG were then traced out from these additional locations using both manual and assisted tracing techniques as described above.\n\nNeurons traced in CATMAID, including SAG, pC1a, egg-laying circuit neurons (Wang et al., 2020), and sexual receptivity circuit neurons (Wang et al., 2021), were all located in Flywire (flywire.ai), which uses the same EM dataset (Zheng et al., 2018). To identify synaptic partners, we used a connectome annotation versioning engine (CAVE; Buhmann et al., 2021; Heinrich et al., 2018) using a cleft score cutoff of 100 to generate synapses of relatively high confidence (Heinrich et al., 2018).\n\n### Intersectional method to access SPSNs\n\nBased on previous reports, three genetic drivers label the SPSNs (VT003280, fru, and ppk; Feng et al., 2014; H\u00e4semeyer et al., 2009; Yang et al., 2009) with driver lines available in two separate binary expression systems (UAS-GAL4 and LexA-LexAop). With the use of a conditional reporter line (UAS > stop > GFP) and in combination with an inducible FLP line (LexAopFLP) three combinations were produced: fru-LexA\u2229ppk-GAL4, fru-LexA\u2229VT3280-GAL4, and VT3280-LexA\u2229ppk-GAL4. Images of the female reproductive tract were used to confirm the labeling of the SPSNs and images of the brain to determine off-target neural expression. With the use of a conditional effector line (UAS > stop > KIR or UAS > stop > TNT), SPSNs were silenced and females (along with genetic controls) were tested for changes in sucrose consumption.\n\n### Intersectional method to access Lgr3 median bundle neurons\n\nWe used R19B09-GAL4 to label Lgr3+ neurons. R19B09 is a fragment from the largest Lgr3 intron and confers sexually dimorphic median bundle expression similar to that exhibited by another driver line Lgr3-GAL4::VP16. This line was made from a bacterial artificial chromosome encompassing the Lgr3 locus and the VP16 activation domain inserted in the place of the first exon of Lgr3 (Meissner et al., 2016). Lgr3-GAL4::VP16 colocalizes with the Lgr3 probe, providing evidence that this driver line faithfully reveals Lgr3 expression (Meissner et al., 2016). Furthermore, R19B09-LexA and Lgr3-GAL4::VP16 colabel the median bundle neurons, suggesting that R19B09 is also a faithful reporter of Lgr3 in this region (Meissner et al., 2016). Therefore, we assume the majority, if not all, of the cells labeled by R19B09-GAL4 express Lgr3. Previous reports examining the number of cells labeled by the intersection of Lgr3-GAL4::VP16 and Fru-LexA report labeling 20.6 neurons per female brain hemisphere (Meissner et al., 2016). We assume that the intersection of R19B09-GAL4 and Fru-LexA labels a similar number of cells given that they both label the sexually dimorphic median bundle neurons (Meissner et al., 2016). Based on the electron microscopy connectome, we predict there are 31 \u2018t-shape\u2019 neurons downstream of pCd-2. Therefore, we predict we are gaining access to 66% of this downstream cell type using this method.\n\nSimilar to labeling the SPSNs, we used a conditional reporter line (UAS > stop > GFP), and in combination with an inducible FLP line (LexAopFLP) we produced fru-LexA\u2229R19B09-GAL4. Images of the female central nervous system were used to confirm the labeling of the median bundle neurons and substantiate that no off-target neurons were labeled. With the use of a conditional effector line (UAS > stop > CsChrimson or UAS > stop > KIR), the Lgr3+ MBNs were activated or silenced and females (along with genetic controls) were tested for changes in sucrose consumption.\n\n### Split-GAL4 screening and stabilization\n\n#### pCd-2 split generation\n\nUsing the FlyEM Hemibrain V1.2.1 dataset via NeuPRINT, we queried \u2018SAG\u2019 and explored the output neuron list, identifying three pCd-2 neurons per hemisphere (SMP286, SMP287, SMP288). From here, we used NeuronBridge (Meissner et al., 2022; Clements et al., 2022) to manually explore the light microscopy matches and generated a list of possible hemidriver that labeled this cell type. The expression pattern of the p65ADZp and ZpGAL4DBD combinations were examined by driving the expression of the UAS reporter (20xUAS-CsChrimson-mVenus in attP18). Combinations with specific expression in pCd-2 neurons were stabilized.\n\n#### SAGb split generation:\n\nUsing NeuronBridge (Meissner et al., 2022; Clements et al., 2022), we queried \u2018VT050405\u2019 (the genetic construct used as the p65ADZp hemidriver in SAG-SS3) and identified multiple \u2018Body Ids\u2019 that morphologically matched the non-SAG ascending cell type. From here, we generated a \u2018Color Depth Search\u2019 to create a list of possible hemidriver that labeled this cell type. The expression pattern of the p65ADZp and ZpGAL4DBD combinations were examined by driving the expression of UAS reporter (20x UAS-CsChrimson-mVenus in attP18) and combinations with specific expression in SAGb neurons were stabilized. Expression pattern of the split-GAL4 was then compared to SAGb. We confirmed the cells match in morphology with the following characteristics: the location of the soma, ladder rung arborizations in the ventral nerve cord, bowing ascending axons in the SEZ, and arborizations in the dorsal protocerebrum. See Figure 3\u2014figure supplement 3.\n\n### Statistical analysis\n\nStatistical tests for all experiments, with the exception of in vivo calcium imaging and in vivo functional connectivity experiments, were performed in GraphPad Prism. For two- and three-group comparisons, data were first tested for normality with the KS normality test (alpha = 0.05). If all groups passed then groups would be compared with a parametric test (t-test or one-way ANOVA, respectively). If at least one group did not pass, groups were compared with a non-parametric version (Mann-Whitney test or Kruskal-Wallis test, respectively). For all multi-factorial designs, a two-way ANOVA was performed with a Bonferroni post-hoc test. All statistical tests, significance levels, and the number of data points (N) are specified in the figure legend.\n\n### Normalized datasets\n\nMost datasets from optogenetic assays were normalized within each genotype. To generate this normalized dataset, data from females within the no-light condition were averaged, creating a \u2018no-light mean\u2019 for each genotype. This value was subtracted from each individual female within the light condition of the corresponding genotype. This dataset was then graphed and statistical analysis was performed as outlined above.\n\n### Data availability\n\nDetailed information about R code used to extract feeding behavior using our modified parameters for each experimental set-up is found at https://github.com/mlaturney/FLIC_automated_group_assignment, (Laturney, 2023).\n",
+      "created_at": "2025-12-04T01:33:27.425056Z"
+    },
+    {
+      "id": "8c465b91-aef2-476b-9f79-cdb3ddbfd3eb",
+      "submission_id": "7f914c56-207c-4881-a983-86c7f9957bf0",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Sonia Sen, https://ror.org/04xf4yw96 Tata Institute for Genetics and Society India\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.85117.sa0](https://doi.org/10.7554/eLife.85117.sa0)\n\nAfter mating, animals show a repertoire of behavioural changes. In flies, this includes an increase in egg-laying, salt, and food (particularly protein) consumption, and a concomitant decrease in sexual receptivity. This valuable study compellingly shows that flies also have an increased sugar appetite and they identify the central brain circuitry that controls this increase in the mated condition.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Sonia Sen, https://ror.org/04xf4yw96 Tata Institute for Genetics and Society India\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.85117.sa1](https://doi.org/10.7554/eLife.85117.sa1)\n\nOur editorial process produces two outputs: i) public reviews designed to be posted alongside the preprint for the benefit of readers; ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Mating activates neuroendocrine pathways signaling hunger in Drosophila females\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, including Sonia Sen as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by K VijayRaghavan as the Senior Editor. The following individual involved in the review of your submission has agreed to reveal their identity: Kenta Asahina (Reviewer #2).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\nWe appreciate the overall rigour and importance of this manuscript. We have a few suggestions for the authors that we think will strengthen their claims.\n\n1. The writing:\n\na. We note that the manuscript only briefly refers to the extensive literature on protein feeding and its modulation in response to mating. We suggest that the authors explicitly refer to this body of literature in the introduction and discuss their findings in its context.\n\nb. We also suggest that the authors tone down the claim that the Lgr3+ neurons are a hub that integrates mating and hunger status to modulate feeding since this integration per se hasn't been tested.\n\n2. The role of pCd2 and/or Lgr3+ in sugar and protein feeding. Our suggestion to the authors is to recapitulate the virgin circuit state in the mated females by activating pCd2 and/or silencing Lgr3+. Perhaps the authors have already done these manipulations, which should result in the suppression of sugar feeding \u2013 do they?\n\n3. The role of mating: One of the main claims of the manuscript is that mating increases sugar appetite. We felt that the circuit's requirement in a mating-dependent manner has not been convincingly demonstrated. The authors have performed manipulations that, in the virgin, drive the circuit to a mated state (silenced pCd2 and activated Lgr3+ ) and demonstrated an increase in sugar consumption. We felt that interpretations from these manipulations would be more valuable in the context of similar manipulations in the mated state. If their model is correct, we anticipate that these manipulations should not result in changes in sugar feeding. (If they do, it might just suggest that optogenetics does not recapitulate SP-mediated activation of the circuit.)\n\n3. Verification of the R40F04-LexA line. Since this is a new and potentially valuable reagent, it will be nice to describe its expression pattern thoroughly.\n\nIn addition to this, there are several more detailed comments in the reviews below and we urge the authors to address them wherever possible.\n\nReviewer #1 (Recommendations for the authors):\n\nWe very much enjoyed reading the manuscript for its clarity of data and its presentation.\n\n1. Given the vast amount of literature on the increase in protein preference post-mating, it is important to discuss these data in the context of those findings. In those data, flies are presented with a choice of sugars and proteins and seem to prefer proteins. But the data in this manuscript, and Carvalho et al. 2006, suggest that this might be a general increase in hunger overall. I would urge the authors to discuss this explicitly.\n\n2. In the circuit dissection experiments, one would expect that activating pCds or inactivating the Lgr3+ neurons in the mated condition should attenuate the sugar appetite. Does it?\n\n3. I liked the authors' interpretation of their circuit mapping \u2013 that the mated state is essentially a heightened hunger state. If this is true, these manipulations should also influence protein hunger. Can the authors show this?\n\nReviewer #2 (Recommendations for the authors):\n\nI have 3 recommendations on the current manuscript, 2 on an experiment, and 1 on the discussion.\n\nRegarding the experiment:\n\n1) any evidence that functions of pCd-2 and Lgr3 neurons are under influence of mating status will greatly strengthen the authors' conclusion that their role is to promote sucrose consumption after mating. Since direct measurement of baseline neuronal activities in pCd-2 and Lgr3 neurons is likely difficult in the Drosophila brain, one possible experiment is to test both the function (Figure 5I, J; Figure 6G) and/or the strength of the neural connection (Figure 5G, H; Figure 6D, E) is mating status-dependent. Currently, these experiments were performed only in virgin females. If the authors' model is correct (which I think is very likely), activation of pCd-2 (or their upstreams) should suppress sucrose consumption in mated females, but (at least) less so in virgin females (in which pCd-2 neurons are expected to be already active). In contrast, the inhibition of pCd-2 neurons may not change the sucrose consumption in mated females (in which pCd-2 neurons are already silenced). Moreover, stronger stimulation of pC1 and pC2-d may be required to excite pCd-2 and Lgr3, respectively, in mated females. Such mating status-dependent change in neural function can provide strong support for their hypothesis. No difference between mated and virgin females, in contrast, suggests that the levels of post-mating inhibition are likely much weaker than the optogenetic manipulation, suggesting nuanced modulation by the Sex Peptide. Either result would be valuable for follow-up studies.\n\n2) Provide evidence that R40F04-LexA indeed labels pC1a neurons, ideally by the overlap of expression with known pC1a split GAL4 lines. While the authors' argument that pC1a and pC2-a/b (labeled by the split GAL4s) are synaptically connected is convincing, the functional imaging experiment in Figure 5G, H is confounded by potential side effect by the activation of non-pC1 neurons (which are many, according to the image sample on FlyLight database). Since R40F04-LexA has not been previously used as a proxy of pC1a, a basic characterization of its expression pattern will help readers better interpret the data (along with its caveat).\n\nIn the discussion, I would like to suggest that authors better incorporate previous publications regarding the mating status-dependent changes in female feeding behaviors. For instance, Walker et al., Curr. Biol. (2015) showed that the SPSN-SAG axis controls both yeast and salt preference among mated females. This result is consistent with data in Steck et al., eLife (2018), which showed that the sensitivity of yeast-sensing GRNs remains unchanged after mating (similar to the sugar-sensing GRNs in this study). Discussions on whether pCd-2 also controls increased intake of these compounds can inspire readers in the field. Also, Hussain et al., PLoS Biol. (2016) showed that GRNs' sensitivity to polyamine is increased after mating, in contrast to the relatively stable sensitivity of sensory neurons shown in both this manuscript and Steck et al. Mating may exert its effect on different behaviors or sensory modalities in a distinct manner, which is worth mentioning given the Sex Peptide has received intense (and potentially outsized) attention in the context of mating-dependent behavioral changes. Without due discussion of these previous studies, the authors' assertion that the current study \"examine(d) neural mechanisms for appetitive changed in mated females\" (line 52) may appear premature.\n\nReviewer #3 (Recommendations for the authors):\n\nOverall, the major claims of this paper are interesting, important, and well-supported by the data. I would just note a few caveats:\n\n1. The authors do not perform silencing of Lgr3+ mBNs to show that they're required for increased feeding in mated females. This would be important to demonstrate whether these cells really have a key role in this post-mating change. Similarly, the role of pCd-2 neurons was shown through silencing in virgins to mimic mating; their role could be strengthened by activating them in mated females and showing a decrease in feeding.\n\n2. It has not been shown that the function of Lgr3/Dilp8 in regulating feeding occurs in the same median bundle cells that are affected by mating. This could be tested by knocking down Lgr3 specifically in these cells. Without this data, the major claims of the paper are still supported but the notion that the same cells integrate hunger and mating signals is somewhat speculative.\n\n3. Since a major implication of this paper is that mating and hunger signals converge on the same cells and may thus interact, it is important for the authors to be clear about whether virgin and mated females are being compared in the fed or starved state. Does mating affect feeding in just one of these states, or in both states? The authors may have the data to answer this question (e.g. I think the FLIC assays were performed in starved flies and the CAFE assays were performed in fed flies), but it is not discussed in the paper.\n\n4. A critical piece of this story is to know that the \"Lgr3+\" mBNs that are being manipulated actually express Lgr3. This is not obvious or explicitly discussed, but it seems that co-expression of the driver lines used here with an Lgr3 line may have been performed in a previous study (Meissner et al., 2016). The authors should clarify this and be explicit about what proportion of Lgr3+ mBNs they think they are targeting, and also what proportion of neurons they are targeting likely express Lgr3.\n\n5. The picture of the \"off-target\" SAGb neuron in Figure 3 \u2013 \u2014figure supplement 3A doesn't really look like its pictures in panel B of the same figure, where it is labeled by different driver lines; in fact the additional lines look more like SAG than SAGb. I am not sure how the authors know that these other driver lines are labeling the same neuron as the \"off-target\" neuron in the SAG-SS3 line.\n\n6. The authors describe Lgr3 as a hunger signal and imply that it is independent of mating, but, interestingly, Lgr3 is only expressed in females. This implies that it is not a generic hunger signal but has some specialized role. (One of the cited papers, Yeom et al., mentions that Dilp8 is highly expressed in the female ovary.) The authors may want to speculate about why Lgr3 is sex-specific and not simply frame Lgr3 as a generic hunger signal.\n\nIn addition to the above comments there are some additional comments that should be addressed but, for the most part, are not central to the major claims of the paper.\n\n1. Several comments related to the feeding assays:\n\na) It seems like the flies in your CAFE assay are consuming much less than in previous studies, which reported that female flies consume something on the order of 1 \u00b5l/day (e.g. Ja et al., 2007; Farhadian et al., 2012). Is there any explanation for why your flies are consuming much less? I know you're using 50 mM sucrose which is less than most other studies, but your FLIC data (Figure 1D) suggests that total consumption isn't highly dependent on concentration.\n\nb) It seems strange that cumulative consumption over 6 hours is a straight line (Figure 1B). Given that these flies were starved, I would expect to see high consumption in the first hour that then decreases substantially. Also, feeding bouts are typically clustered in the morning and evening, and not distributed equally throughout the day. Any thoughts on this?\n\nc) It seems strange that changing the sugar concentration more than 10-fold results in hardly any difference in feeding (Figure 1D-F). I might expect no difference if measuring over an entire day when homeostatic processes dominate over taste, but this is a 20 min assay. Also, the authors use the lack of difference in bout number between mated and virgin females as a justification for why feeding initiation (PER) is unlikely to be different. However, the bout number is also similar across sugar concentrations whereas PER is very different (at least for fed flies), which casts doubt on that logic.\n\n2. The text states: \"Thus, like hungry flies (Itskov et al., 2014), mated females consume more by engaging in longer feeding times rather than by initiating more feeding events.\" This seems misleading since the paper by Itskov et al. shows a huge difference in the number of sips for fed and starved flies, whereas the sip duration did not differ (Figure 5C and 6E).\n\n3. What was the rationale for focusing on pCd-2a and pCd-2b rather than pCd-2c?\n\n4. In Figure 5 \u2013 Figure supplement 1, the driver lines seem to label a few cells other than pCd-2 (e.g. in the optic lobe, abdominal ganglion, or along the surface of the brain), so it seems strange that in most cases the male brains completely lack any expression, even of the non-pCd-2 neurons.\n\n5. As noted in Point # 2 of the Public Review, I think that the data show a possible convergence of mating and hunger signals in the same cells, but it hasn't been shown definitively. Given this, I think the title is a bit speculative. I also think this sentence in the abstract is not really supported by the data: \"Together, this circuit transforms the mated signal into a long-term hunger signal.\"\n\n6. A functional connection between SAG and pCd-2 neurons was not tested here. This is not critical, but it would be interesting to not only confirm this connection but to test how the co-activation of pC1 and SAG affects the pCd-2 neurons. This might hint at why the circuit evolved to have both pC1 and SAG connected to pCd-2 rather than just one or the other. If the authors have ideas on this they could speculate in the Discussion.\n",
+      "created_at": "2025-12-04T01:33:27.425056Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T01:33:27.425056Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T01:33:27.425056Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "c7087045-d472-443f-8d33-74a183e3ff95",
+      "content_id": "747c58df-0050-4e34-a3f7-9f37b6337b14",
+      "claim_id": "C1",
+      "claim": "Mated Drosophila melanogaster females increase sugar intake.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we find that mated Drosophila melanogaster females increase sugar intake, which is regulated by the activity of sexually dimorphic insulin receptor (Lgr3) neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract directly states this finding, and it is supported by experimental data shown in Figures 1B-H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:27.425056Z"
+    },
+    {
+      "id": "ccabf0e6-a94a-4055-b769-bf9b1e20a46b",
+      "content_id": "747c58df-0050-4e34-a3f7-9f37b6337b14",
+      "claim_id": "C2",
+      "claim": "Increased sugar intake in mated females is regulated by the activity of sexually dimorphic Lgr3+ neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we find that mated Drosophila melanogaster females increase sugar intake, which is regulated by the activity of sexually dimorphic insulin receptor (Lgr3) neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract states this regulatory relationship, supported by experimental data in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:27.425056Z"
+    },
+    {
+      "id": "79736552-f47f-4db0-9047-066054d09b89",
+      "content_id": "747c58df-0050-4e34-a3f7-9f37b6337b14",
+      "claim_id": "C3",
+      "claim": "In virgin females, Lgr3+ cells have reduced activity as they receive inhibitory input from active, female-specific pCd-2 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In virgins, Lgr3+ cells have reduced activity as they receive inhibitory input from active, female-specific pCd-2 cells, restricting sugar intake.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract states this mechanism, supported by calcium imaging data in Figures 6D-E showing inhibitory responses.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:27.425056Z"
+    },
+    {
+      "id": "072e7059-0cff-413a-8f81-1439cd5ed50d",
+      "content_id": "747c58df-0050-4e34-a3f7-9f37b6337b14",
+      "claim_id": "C4",
+      "claim": "During copulation, males deposit sex peptide into the female reproductive tract.",
+      "claim_type": "EXPLICIT",
+      "source": "During copulation, males deposit sex peptide into the female reproductive tract, which silences a three-tier mating status circuit and initiates the female postmating response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and is supported by citations to previous work (Chen et al., 1988; Liu and Kubli, 2003) in the introduction.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:27.425056Z"
+    },
+    {
+      "id": "14e929b3-9761-442c-b9fc-c0dfb8511a14",
+      "content_id": "747c58df-0050-4e34-a3f7-9f37b6337b14",
+      "claim_id": "C5",
+      "claim": "Sex peptide silences a three-tier mating status circuit and initiates the female postmating response.",
+      "claim_type": "EXPLICIT",
+      "source": "During copulation, males deposit sex peptide into the female reproductive tract, which silences a three-tier mating status circuit and initiates the female postmating response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract states this, and it is supported by citations (Feng et al., 2014; Wang et al., 2020) and experimental data in Figure 3.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:27.425056Z"
+    },
+    {
+      "id": "48ff894e-9292-4a68-8f7e-0d3b7624cfc0",
+      "content_id": "747c58df-0050-4e34-a3f7-9f37b6337b14",
+      "claim_id": "C6",
+      "claim": "pCd-2 neurons become silenced after mating due to direct synaptic input from the mating status circuit.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that pCd-2 neurons also become silenced after mating due to the direct synaptic input from the mating status circuit.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract states this, supported by connectomics data in Figure 5A and functional connectivity data in Figures 5G-H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:27.425056Z"
+    },
+    {
+      "id": "45818764-bc48-45f7-86ab-dcf7784f5b92",
+      "content_id": "747c58df-0050-4e34-a3f7-9f37b6337b14",
+      "claim_id": "C7",
+      "claim": "In mated females, pCd-2 inhibition is attenuated, activating downstream Lgr3+ neurons and promoting sugar intake.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, in mated females pCd-2 inhibition is attenuated, activating downstream Lgr3+ neurons and promoting sugar intake.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract states this mechanism, supported by optogenetic manipulation data in Figures 5I-J and 6G.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:27.425056Z"
+    },
+    {
+      "id": "16bc7169-184c-4a88-b069-08fd0f616b73",
+      "content_id": "747c58df-0050-4e34-a3f7-9f37b6337b14",
+      "claim_id": "C8",
+      "claim": "The mating circuit transforms the mated signal into a long-term hunger signal.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, this circuit transforms the mated signal into a long-term hunger signal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement in the abstract based on the experimental findings presented throughout the manuscript.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:27.425056Z"
+    },
+    {
+      "id": "3cff9f54-e945-435f-b419-5c827976daef",
+      "content_id": "747c58df-0050-4e34-a3f7-9f37b6337b14",
+      "claim_id": "C9",
+      "claim": "The mating circuit alters nutrient sensing centers to increase feeding in mated females.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results demonstrate that the mating circuit alters nutrient sensing centers to increase feeding in mated females, providing a mechanism to increase intake in anticipation of the energetic costs associated with reproduction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract concludes with this statement, supported by the experimental data showing connections to Lgr3+ neurons.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:27.425056Z"
+    },
+    {
+      "id": "828614d9-79e9-4e5c-8305-c0d705ba1886",
+      "content_id": "747c58df-0050-4e34-a3f7-9f37b6337b14",
+      "claim_id": "C10",
+      "claim": "Increased feeding in mated females provides a mechanism to increase intake in anticipation of the energetic costs associated with reproduction.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results demonstrate that the mating circuit alters nutrient sensing centers to increase feeding in mated females, providing a mechanism to increase intake in anticipation of the energetic costs associated with reproduction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as an interpretation of the findings, supported by the observation that eggless females still show increased feeding (Figure 3A).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:27.425056Z"
+    },
+    {
+      "id": "e8e3a511-a6be-4c2e-8198-49049de89079",
+      "content_id": "747c58df-0050-4e34-a3f7-9f37b6337b14",
+      "claim_id": "C11",
+      "claim": "Mated Drosophila females increase total food intake.",
+      "claim_type": "EXPLICIT",
+      "source": "In Drosophila, mated females increase egg production while also escalating nutrient consumption. Observed diet-related changes include an increase in total food intake (Carvalho et al., 2006) and the development of appetites for protein and salt (Vargas et al., 2010; Ribeiro and Dickson, 2010; Walker et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with citation to Carvalho et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:27.425056Z"
+    },
+    {
+      "id": "db559915-00df-44f6-abdd-13981202957d",
+      "content_id": "747c58df-0050-4e34-a3f7-9f37b6337b14",
+      "claim_id": "C12",
+      "claim": "Mated Drosophila females develop appetites for protein and salt.",
+      "claim_type": "EXPLICIT",
+      "source": "In Drosophila, mated females increase egg production while also escalating nutrient consumption. Observed diet-related changes include an increase in total food intake (Carvalho et al., 2006) and the development of appetites for protein and salt (Vargas et al., 2010; Ribeiro and Dickson, 2010; Walker et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with citations to Vargas et al., 2010; Ribeiro and Dickson, 2010; Walker et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:27.425056Z"
+    },
+    {
+      "id": "c47af427-b722-4e6e-99e6-725c5617a2b8",
+      "content_id": "747c58df-0050-4e34-a3f7-9f37b6337b14",
+      "claim_id": "C13",
+      "claim": "Dietary protein and salt are likely processed and used during egg assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "These two nutrients have been linked to reproduction as dietary protein and salt are likely processed and used during egg assembly (Simpson et al., 2015; Walker et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with citations to Simpson et al., 2015; Walker et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:27.425056Z"
+    },
+    {
+      "id": "78fda52f-520d-4828-8f77-7743014702e8",
+      "content_id": "747c58df-0050-4e34-a3f7-9f37b6337b14",
+      "claim_id": "C14",
+      "claim": "Sugar is the fly's main energy source.",
+      "claim_type": "EXPLICIT",
+      "source": "Sugar is the fly's main energy source (Simpson et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with citation to Simpson et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:27.425056Z"
+    },
+    {
+      "id": "634db664-5f0c-4795-b257-4c98273a1fc3",
+      "content_id": "747c58df-0050-4e34-a3f7-9f37b6337b14",
+      "claim_id": "C15",
+      "claim": "Females use sugar during egg production when dietary carbohydrates are synthesized into lipids.",
+      "claim_type": "EXPLICIT",
+      "source": "Females use sugar during egg production when dietary carbohydrates are synthesized into lipids (Brown et al., 2022) and packed into the developing ova (Sieber and Spradling, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with citation to Brown et al., 2022.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:27.425056Z"
+    },
+    {
+      "id": "b4c9d7fc-17ee-47f0-9e6a-5509eb1a8313",
+      "content_id": "747c58df-0050-4e34-a3f7-9f37b6337b14",
+      "claim_id": "C16",
+      "claim": "Dietary carbohydrates are packed into the developing ova.",
+      "claim_type": "EXPLICIT",
+      "source": "Females use sugar during egg production when dietary carbohydrates are synthesized into lipids (Brown et al., 2022) and packed into the developing ova (Sieber and Spradling, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with citation to Sieber and Spradling, 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:27.425056Z"
+    },
+    {
+      "id": "8bd6b0d7-0027-4040-8aa7-88f8b9681824",
+      "content_id": "747c58df-0050-4e34-a3f7-9f37b6337b14",
+      "claim_id": "C17",
+      "claim": "Mated females increase their locomotor activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Mated females also increase their locomotor activity (Isaac et al., 2010), resulting in elevated metabolic rates (Brown et al., 2022) and driving the need for additional calories.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with citation to Isaac et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:27.425056Z"
+    },
+    {
+      "id": "e1557f9c-f214-4788-888e-36501222e64f",
+      "content_id": "747c58df-0050-4e34-a3f7-9f37b6337b14",
+      "claim_id": "C18",
+      "claim": "Increased locomotor activity in mated females results in elevated metabolic rates.",
+      "claim_type": "EXPLICIT",
+      "source": "Mated females also increase their locomotor activity (Isaac et al., 2010), resulting in elevated metabolic rates (Brown et al., 2022) and driving the need for additional calories.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with citation to Brown et al., 2022.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:27.425056Z"
+    },
+    {
+      "id": "0fe54f6b-39f1-4164-abc4-f5b9a253aaa6",
+      "content_id": "747c58df-0050-4e34-a3f7-9f37b6337b14",
+      "claim_id": "C19",
+      "claim": "Excessive sugar negatively impacts fly health.",
+      "claim_type": "EXPLICIT",
+      "source": "However, as excessive sugar negatively impacts fly health (Baenas and Wagner, 2022), sugar intake must be tightly regulated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with citation to Baenas and Wagner, 2022.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:27.425056Z"
+    },
+    {
+      "id": "abef3666-4c3f-40e1-9da4-51a1fd8d6049",
+      "content_id": "747c58df-0050-4e34-a3f7-9f37b6337b14",
+      "claim_id": "C20",
+      "claim": "The sugar-to-protein ratio influences reproductive output and longevity.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the sugar-to-protein ratio influences reproductive output and longevity (Simpson et al., 2015), the absolute levels of sugar intake of mated females remain untested.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with citation to Simpson et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:27.425056Z"
+    },
+    {
+      "id": "2565207c-9b85-4a03-ba26-c3e51c9a7f46",
+      "content_id": "747c58df-0050-4e34-a3f7-9f37b6337b14",
+      "claim_id": "C21",
+      "claim": "Sex peptide is a 36-amino acid peptide produced in the male seminal fluid and transferred to females during copulation.",
+      "claim_type": "EXPLICIT",
+      "source": "SP is a 36-amino acid peptide that is produced in the male seminal fluid and transferred to females during copulation (Chen et al., 1988; Liu and Kubli, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with citations to Chen et al., 1988; Liu and Kubli, 2003.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:27.425056Z"
+    },
+    {
+      "id": "2b8e8d87-eb76-4983-a7e1-dfef4651f48f",
+      "content_id": "747c58df-0050-4e34-a3f7-9f37b6337b14",
+      "claim_id": "C22",
+      "claim": "Sex peptide binds to its receptor (SPR) which is expressed in sensory neurons in the uterus.",
+      "claim_type": "EXPLICIT",
+      "source": "SP binds to its receptor (SPR; Yapici et al., 2008) which is expressed in sensory neurons (sex peptide sensory neurons, SPSNs) in the uterus (H\u00e4semeyer et al., 2009; Yang et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with citations to Yapici et al., 2008; H\u00e4semeyer et al., 2009; Yang et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:27.425056Z"
+    },
+    {
+      "id": "337b1ad2-8581-4669-825b-5ea86b23580f",
+      "content_id": "747c58df-0050-4e34-a3f7-9f37b6337b14",
+      "claim_id": "C23",
+      "claim": "SPSNs convey mating status to sex peptide abdominal ganglia (SAG) neurons that ascend to the central brain.",
+      "claim_type": "EXPLICIT",
+      "source": "SPSNs convey mating status to sex peptide abdominal ganglia (SAG) neurons that ascend to the central brain (Feng et al., 2014) and synapse onto pC1 neurons (Wang et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with citation to Feng et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:27.425056Z"
+    },
+    {
+      "id": "a135f8ff-22f2-4b8f-8f3d-9d19b14fa696",
+      "content_id": "747c58df-0050-4e34-a3f7-9f37b6337b14",
+      "claim_id": "C24",
+      "claim": "SAG neurons synapse onto pC1 neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "SPSNs convey mating status to sex peptide abdominal ganglia (SAG) neurons that ascend to the central brain (Feng et al., 2014) and synapse onto pC1 neurons (Wang et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with citation to Wang et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:27.425056Z"
+    },
+    {
+      "id": "2d89a7c3-4609-4fd5-ba34-4333b2833fdd",
+      "content_id": "747c58df-0050-4e34-a3f7-9f37b6337b14",
+      "claim_id": "C25",
+      "claim": "The SPSN-SAG-pC1 circuit is active in virgin females and silenced after mating.",
+      "claim_type": "EXPLICIT",
+      "source": "This female-specific SPSN-SAG-pC1 circuit is active in virgin females and silenced after mating (Feng et al., 2014; Wang et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with citations to Feng et al., 2014; Wang et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:27.425056Z"
+    },
+    {
+      "id": "4475c5ca-951e-4f3b-859f-9646a7bb0337",
+      "content_id": "747c58df-0050-4e34-a3f7-9f37b6337b14",
+      "claim_id": "C26",
+      "claim": "Reception of SP and silencing of the SPSN-SAG-pC1 circuit initiates the long-term postmating response.",
+      "claim_type": "EXPLICIT",
+      "source": "Reception of SP and the consequential silencing of this circuit initiates the long-term postmating response, an umbrella term used to describe the shift in many behaviors after mating including reduced sexual receptivity and increased egg laying (Feng et al., 2014; Wang et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with citations to Feng et al., 2014; Wang et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:27.425056Z"
+    },
+    {
+      "id": "6d21edbd-ee16-4e27-8f1a-b6dbf643947a",
+      "content_id": "747c58df-0050-4e34-a3f7-9f37b6337b14",
+      "claim_id": "C27",
+      "claim": "Different neurons downstream of pC1 independently adjust individual postmating behaviors.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the three-tier SPSN-SAG-pC1 circuit appears to coordinate postmating state (Walker et al., 2015; Feng et al., 2014; Wang et al., 2020), different neurons downstream of pC1 independently adjust individual behaviors (Wang et al., 2020; Wang et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with citations to Wang et al., 2020; Wang et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:27.425056Z"
+    },
+    {
+      "id": "f655a494-ba9d-4883-b834-68abd222e664",
+      "content_id": "747c58df-0050-4e34-a3f7-9f37b6337b14",
+      "claim_id": "C28",
+      "claim": "Reception of SP or artificial silencing of SPSNs and SAG neurons causes an increase in the consumption of both salt and protein.",
+      "claim_type": "EXPLICIT",
+      "source": "The reception of SP during mating or the artificial silencing of the first-order SPSNs and second-order SAG neurons causes an increase in the consumption of both salt and protein (Ribeiro and Dickson, 2010; Walker et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with citations to Ribeiro and Dickson, 2010; Walker et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:27.425056Z"
+    },
+    {
+      "id": "aeacc5ce-ecb4-4a09-b516-59a4f095802c",
+      "content_id": "747c58df-0050-4e34-a3f7-9f37b6337b14",
+      "claim_id": "C29",
+      "claim": "The 'borboleta' region modulates yeast-based feeding in mated females.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, with the use of whole brain imaging, researchers have identified the 'borboleta' region as a modulator of yeast-based feeding in mated females. However, if and how this region is regulated by the SPSNs, SAG, or pC1 remains unknown (M\u00fcnch et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with citation to M\u00fcnch et al., 2022.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:27.425056Z"
+    },
+    {
+      "id": "3c83b1fc-1279-4e00-82ee-3dff10805d0f",
+      "content_id": "747c58df-0050-4e34-a3f7-9f37b6337b14",
+      "claim_id": "C30",
+      "claim": "72 hr postmated females consumed sucrose for a significantly longer duration than virgins or 1 hr postmated females.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that 72 hr postmated females consumed for a significantly longer duration on sucrose solution than virgins or 1 hr postmated females (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:27.425056Z"
+    },
+    {
+      "id": "a3c5631c-1a71-4fb4-a638-a53996d9129b",
+      "content_id": "747c58df-0050-4e34-a3f7-9f37b6337b14",
+      "claim_id": "C31",
+      "claim": "Changes in sucrose consumption manifest 6\u201324 hr after copulation.",
+      "claim_type": "EXPLICIT",
+      "source": "These studies demonstrate that mated females consume more sugar than virgins and that changes in sucrose consumption manifest 6\u201324 hr after copulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results based on data from Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:27.425056Z"
+    },
+    {
+      "id": "b96bfc6c-a3e6-4e0d-baf1-78526e45ed2d",
+      "content_id": "747c58df-0050-4e34-a3f7-9f37b6337b14",
+      "claim_id": "C32",
+      "claim": "Mated females consume more sucrose by engaging in longer feeding times rather than by initiating more feeding events.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, mated females consume more by engaging in longer feeding times rather than by initiating more feeding events.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results based on data from Figures 1E and 1F showing bout duration differences but not bout number differences.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:27.425056Z"
+    },
+    {
+      "id": "84408846-358f-4679-9c11-a5ed8a847e34",
+      "content_id": "747c58df-0050-4e34-a3f7-9f37b6337b14",
+      "claim_id": "C33",
+      "claim": "Mated females consume significantly more sucrose volume than virgins.",
+      "claim_type": "EXPLICIT",
+      "source": "We directly tested this using a capillary feeder (CAFE; Ja et al., 2007; Figure 1G) and found that mated females consume significantly more sucrose than virgins (Figure 1H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by data shown in Figure 1H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:27.425056Z"
+    },
+    {
+      "id": "5f9d9482-d686-4d64-bc54-168404d344a5",
+      "content_id": "747c58df-0050-4e34-a3f7-9f37b6337b14",
+      "claim_id": "C34",
+      "claim": "Virgin and mated females have similar feeding initiation propensities.",
+      "claim_type": "EXPLICIT",
+      "source": "To directly test this, we monitored proboscis extension upon sugar taste detection (Figure 1I) and found that virgin and mated females have similar feeding initiation propensities (Figure 1J and K).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by data shown in Figures 1J and 1K.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:27.425056Z"
+    },
+    {
+      "id": "c61880ac-208d-4cf4-afc2-a1db8cf9e525",
+      "content_id": "747c58df-0050-4e34-a3f7-9f37b6337b14",
+      "claim_id": "C35",
+      "claim": "Hunger increases the sensitivity of gustatory neurons to sugar.",
+      "claim_type": "EXPLICIT",
+      "source": "Hunger increases the sensitivity of gustatory neurons to sugar (Inagaki et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results with citation to Inagaki et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:27.425056Z"
+    },
+    {
+      "id": "2d1d9423-9ac8-4f2b-938e-fa9fde99db20",
+      "content_id": "747c58df-0050-4e34-a3f7-9f37b6337b14",
+      "claim_id": "C36",
+      "claim": "Gustatory sensitivity is not altered by mating.",
+      "claim_type": "EXPLICIT",
+      "source": "Stimulation of the fly proboscis with sugar elicited similar responses in gustatory axons regardless of mating status (Figure 2B\u2013D), demonstrating that gustatory sensitivity is not altered by mating and not likely to contribute to changes in feeding.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by calcium imaging data shown in Figures 2B-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:27.425056Z"
+    },
+    {
+      "id": "50a64231-d21a-4354-9a77-50f04990f057",
+      "content_id": "747c58df-0050-4e34-a3f7-9f37b6337b14",
+      "claim_id": "C37",
+      "claim": "Despite a lack of egg production, eggless mated females consumed more sucrose than eggless virgins.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that despite a lack of egg production (Walker et al., 2015; Ohlstein and McKearin, 1997; M\u00e9vel-Ninio et al., 1996), mated females consumed more sucrose than virgins, demonstrating that the change in postmated sucrose feeding is not driven by egg production itself.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results and supported by data in Figure 3A and Figure 3\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:27.425056Z"
+    },
+    {
+      "id": "3ad3c4d3-e87e-414b-8790-63af5da17d28",
+      "content_id": "747c58df-0050-4e34-a3f7-9f37b6337b14",
+      "claim_id": "C38",
+      "claim": "The change in postmated sucrose feeding is not driven by egg production itself.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that despite a lack of egg production (Walker et al., 2015; Ohlstein and McKearin, 1997; M\u00e9vel-Ninio et al., 1996), mated females consumed more sucrose than virgins, demonstrating that the change in postmated sucrose feeding is not driven by egg production itself.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results based on experiments with eggless females shown in Figure 3A.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:27.425056Z"
+    },
+    {
+      "id": "1e012eda-78eb-4161-b968-32e622c7577c",
+      "content_id": "747c58df-0050-4e34-a3f7-9f37b6337b14",
+      "claim_id": "C39",
+      "claim": "Sucrose feeding changes are anticipatory in nature and a consequence of a need-independent mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, this result suggests that sucrose feeding changes are anticipatory in nature and a consequence of a need-independent mechanism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results as an interpretation of the eggless female experiments.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:27.425056Z"
+    },
+    {
+      "id": "e4f72ebc-135a-4d46-9fe0-73bf79404cb8",
+      "content_id": "747c58df-0050-4e34-a3f7-9f37b6337b14",
+      "claim_id": "C40",
+      "claim": "Virgin females with SPSNs silenced consumed significantly more sucrose than virgin controls.",
+      "claim_type": "EXPLICIT",
+      "source": "Virgin females with SPSNs silenced consumed significantly more sucrose than virgin controls (Figure 3D and E, and Figure 3\u2014figure supplement 1E\u20131F), recapitulating the mated phenotype.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by data shown in Figures 3D, 3E, and supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:27.425056Z"
+    },
+    {
+      "id": "c4e298c7-b8b1-4c74-a865-4ba291914909",
+      "content_id": "747c58df-0050-4e34-a3f7-9f37b6337b14",
+      "claim_id": "C41",
+      "claim": "Mated females increase sucrose consumption after mating via the SPSNs.",
+      "claim_type": "EXPLICIT",
+      "source": "This data argues that mated females increase sucrose consumption after mating via the SPSNs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results based on SPSN silencing experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:27.425056Z"
+    },
+    {
+      "id": "d2b9f248-e826-4446-9ab3-5cc7de363de2",
+      "content_id": "747c58df-0050-4e34-a3f7-9f37b6337b14",
+      "claim_id": "C42",
+      "claim": "Acutely silencing SAGs significantly increased sucrose consumption.",
+      "claim_type": "EXPLICIT",
+      "source": "Monitoring consumption over time, we found that acutely silencing SAGs significantly increased sucrose consumption (Figure 3G and Figure 3\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by data shown in Figure 3G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:27.425056Z"
+    },
+    {
+      "id": "b8a26b32-5578-4c3b-86c4-cad68821a88b",
+      "content_id": "747c58df-0050-4e34-a3f7-9f37b6337b14",
+      "claim_id": "C43",
+      "claim": "Acutely silencing pC1 significantly increased sucrose consumption.",
+      "claim_type": "EXPLICIT",
+      "source": "Downstream of SAG, we found that acutely silencing pC1 also significantly increased sucrose consumption (Figure 3H and I, and Figure 3\u2014figure supplement 2B\u2013D), demonstrating that pC1 neurons regulate postmating sucrose feeding.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by data shown in Figures 3H and 3I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:27.425056Z"
+    },
+    {
+      "id": "27f39019-b7fd-45b1-abff-d7f111963e31",
+      "content_id": "747c58df-0050-4e34-a3f7-9f37b6337b14",
+      "claim_id": "C44",
+      "claim": "The increased sugar consumption after mating is part of the repertoire of behavioral changes induced after copulation by SP acting on the SPSN-SAG-pC1 mating status circuit.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, we conclude that the increased sugar consumption after mating is part of the repertoire of behavioral changes induced after copulation by SP acting on the SPSN-SAG-pC1 mating status circuit.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results as a conclusion from the circuit manipulation experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:27.425056Z"
+    },
+    {
+      "id": "c2e49fed-9fd4-4cc5-8db8-f090911d22a3",
+      "content_id": "747c58df-0050-4e34-a3f7-9f37b6337b14",
+      "claim_id": "C45",
+      "claim": "Manipulation of vpoDNs or oviDNs did not affect sucrose consumption.",
+      "claim_type": "EXPLICIT",
+      "source": "We found no difference in sucrose consumption upon manipulation of vpoDNs or oviDNs (Figure 4B, C, F and G, and Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:27.425056Z"
+    },
+    {
+      "id": "83550d48-29dd-457d-bb30-2da656c98f64",
+      "content_id": "747c58df-0050-4e34-a3f7-9f37b6337b14",
+      "claim_id": "C46",
+      "claim": "Neither the circuits for egg laying nor sexual receptivity mediate postmating sucrose feeding.",
+      "claim_type": "EXPLICIT",
+      "source": "These studies argue that neither of the previously identified circuits responsible for a single postmating response, egg laying, and sexual receptivity, mediate postmating sucrose feeding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results based on the vpoDN and oviDN manipulation experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:27.425056Z"
+    },
+    {
+      "id": "86f83490-36ee-4bbd-a3a7-87a941a6881d",
+      "content_id": "747c58df-0050-4e34-a3f7-9f37b6337b14",
+      "claim_id": "C47",
+      "claim": "Three pCd-2 neurons (pCd-2a, pCd-2b, and pCd-2c) are strongly connected to SAG (39 synapses) and pC1 (146 synapses).",
+      "claim_type": "EXPLICIT",
+      "source": "This approach identified three pCd-2 neurons (Kimura et al., 2015; Nojima et al., 2021), pCd-2a, pCd-2b, and pCd-2c (Figure 5A), that are strongly connected to SAG (39 synapses) and pC1 (146 synapses).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by connectomics data shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:27.425056Z"
+    },
+    {
+      "id": "876a1426-a76d-4f58-a973-148046882d6b",
+      "content_id": "747c58df-0050-4e34-a3f7-9f37b6337b14",
+      "claim_id": "C48",
+      "claim": "pCd-2 cells have processes that descend into the prow region of the Subesophageal Zone (SEZ).",
+      "claim_type": "EXPLICIT",
+      "source": "These neurons are promising candidates to mediate postmating feeding changes because their processes descend into the prow region of the Subesophageal Zone (SEZ; Figure 5B and C, and Figure 5\u2014figure supplement 1A), a brain region implicated in energy homeostasis and feeding (Shiu et al., 2022).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by anatomical data shown in Figures 5B and 5C.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:27.425056Z"
+    },
+    {
+      "id": "3590808c-a9fe-45f8-b1ce-d9d51da214bd",
+      "content_id": "747c58df-0050-4e34-a3f7-9f37b6337b14",
+      "claim_id": "C49",
+      "claim": "The prow region of the SEZ is a brain region implicated in energy homeostasis and feeding.",
+      "claim_type": "EXPLICIT",
+      "source": "These neurons are promising candidates to mediate postmating feeding changes because their processes descend into the prow region of the Subesophageal Zone (SEZ; Figure 5B and C, and Figure 5\u2014figure supplement 1A), a brain region implicated in energy homeostasis and feeding (Shiu et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results with citation to Shiu et al., 2022.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:27.425056Z"
+    },
+    {
+      "id": "7f257dbb-a799-4f3a-b074-7516b8282756",
+      "content_id": "747c58df-0050-4e34-a3f7-9f37b6337b14",
+      "claim_id": "C50",
+      "claim": "pC1 and SAG are cholinergic.",
+      "claim_type": "EXPLICIT",
+      "source": "As pC1 and SAG are cholinergic (Feng et al., 2014; Wang et al., 2020), pCd-2 cells likely receive excitatory signals from these two upstream synaptic partners and, therefore, would be predicted to be less active in mated females (Figure 5D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results with citations to Feng et al., 2014; Wang et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:27.425056Z"
+    },
+    {
+      "id": "cdec6ea9-4355-4802-bc3f-bfa8fa311b1e",
+      "content_id": "747c58df-0050-4e34-a3f7-9f37b6337b14",
+      "claim_id": "C51",
+      "claim": "pCd-2 cells likely receive excitatory signals from SAG and pC1 and would be predicted to be less active in mated females.",
+      "claim_type": "EXPLICIT",
+      "source": "As pC1 and SAG are cholinergic (Feng et al., 2014; Wang et al., 2020), pCd-2 cells likely receive excitatory signals from these two upstream synaptic partners and, therefore, would be predicted to be less active in mated females (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results as an inference from the cholinergic nature of upstream neurons.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:27.425056Z"
+    },
+    {
+      "id": "9c0bfc5e-0e1c-4fce-aa2d-d51300785626",
+      "content_id": "747c58df-0050-4e34-a3f7-9f37b6337b14",
+      "claim_id": "C52",
+      "claim": "pCd-2a and pCd-2b neurons are female-specific.",
+      "claim_type": "EXPLICIT",
+      "source": "We generated split-GAL4 lines to genetically access pCd-2a and pCd-2b (Figure 5E and F) and found that both neurons are female-specific (Figure 5\u2014figure supplement 1B), consistent with a role in female postmating behavior.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by imaging data shown in Figure 5\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:27.425056Z"
+    },
+    {
+      "id": "b45c244b-f629-4471-af69-999f27523b63",
+      "content_id": "747c58df-0050-4e34-a3f7-9f37b6337b14",
+      "claim_id": "C53",
+      "claim": "Optogenetic activation of pC1 caused significant calcium increases in pCd-2a and pCd-2b neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "In both cases, neural activation caused significant calcium increases in pCd-2a and pCd-2b neurons (Figure 5G and H), validating pCd-2a and pCd-2b as targets of the mating status pathway.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by calcium imaging data shown in Figures 5G and 5H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:27.425056Z"
+    },
+    {
+      "id": "8e7ca70d-bfd7-441c-aebf-89089d08838e",
+      "content_id": "747c58df-0050-4e34-a3f7-9f37b6337b14",
+      "claim_id": "C54",
+      "claim": "Optogenetically silencing pCd-2a or pCd-2b neurons in virgins significantly increased sucrose consumption compared to controls.",
+      "claim_type": "EXPLICIT",
+      "source": "When we optogenetically silenced pCd-2a or pCd-2b neurons in virgins, mimicking the mated state (Figure 5D), females significantly increased sucrose consumption compared to controls (Figure 5I and J, and Figure 5\u2014figure supplement 3C\u2013J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by data shown in Figures 5I and 5J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:27.425056Z"
+    },
+    {
+      "id": "6250d506-c6db-4375-863b-f932186a1142",
+      "content_id": "747c58df-0050-4e34-a3f7-9f37b6337b14",
+      "claim_id": "C55",
+      "claim": "Silencing pCd-2a or pCd-2b did not influence egg laying.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, silencing pCd-2a or pCd-2b did not influence egg laying (Figure 5K and Figure 5\u2014figure supplement 3A\u2013B), demonstrating the separation of circuits for increased sucrose consumption from other behaviors downstream of pC1.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by data shown in Figure 5K.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:27.425056Z"
+    },
+    {
+      "id": "9acc9aba-3baf-418f-9d43-2750612dbf20",
+      "content_id": "747c58df-0050-4e34-a3f7-9f37b6337b14",
+      "claim_id": "C56",
+      "claim": "Mated females with pCd-2a or pCd-2b silenced further increased sucrose consumption.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, we found that mated females with pCd-2a or pCd-2b silenced further increased sucrose consumption (Figure 5\u2014figure supplement 4), suggesting that optogenetic inhibition is stronger than mating-induced inhibition.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by data shown in Figure 5\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:27.425056Z"
+    },
+    {
+      "id": "9f2f2440-21cd-4f1d-9667-ed3f7b6b6b43",
+      "content_id": "747c58df-0050-4e34-a3f7-9f37b6337b14",
+      "claim_id": "C57",
+      "claim": "Mated females with pCd-2a artificially activated significantly reduced sugar intake compared to controls.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that mated females with pCd-2a artificially activated significantly reduced sugar intake compared to controls, recapitulating the virgin phenotype in mated females (Figure 5\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by data shown in Figure 5\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:27.425056Z"
+    },
+    {
+      "id": "9b4a1f86-4a92-4ced-ae8e-e118d3daccfe",
+      "content_id": "747c58df-0050-4e34-a3f7-9f37b6337b14",
+      "claim_id": "C58",
+      "claim": "Mated females with pCd-2b artificially activated did not differ from controls.",
+      "claim_type": "EXPLICIT",
+      "source": "However, mated females with pCd-2b artificially activated did not differ from controls (Figure 5\u2014figure supplement 4), which may be a reflection of the fewer number of synapses from SAG and pC1 (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by data shown in Figure 5\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:27.425056Z"
+    },
+    {
+      "id": "013df8e0-d9c1-42f1-9c4e-c4947b4aebc6",
+      "content_id": "747c58df-0050-4e34-a3f7-9f37b6337b14",
+      "claim_id": "C59",
+      "claim": "pCd-2a and pCd-2b activity regulate sucrose consumption in virgin and mated females, with decreased activity promoting consumption after mating.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, pCd-2a and pCd-2b activity regulate sucrose consumption in virgin and mated females, with decreased activity promoting consumption after mating.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results as a conclusion from the pCd-2 manipulation experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:27.425056Z"
+    },
+    {
+      "id": "0e949abe-d9cf-4393-aa4f-23e7a8c5a4e5",
+      "content_id": "747c58df-0050-4e34-a3f7-9f37b6337b14",
+      "claim_id": "C60",
+      "claim": "The major downstream targets of pCd-2 are t-shape cells (872 synapses).",
+      "claim_type": "EXPLICIT",
+      "source": "To examine how pCd-2 neurons influence sucrose consumption, we used EM analyses and identified the major downstream targets of pCd-2 as t-shape cells (872 synapses) having processes in the SEZ prow region and a neuroendocrine center, the pars intercerebralis, with terminal arbors similar to insulin-producing cells and other median secretory cells (Liao and N\u00e4ssel, 2020; Figure 6A and Figure 6\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by connectomics data shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:27.425056Z"
+    },
+    {
+      "id": "e340b1ae-4cc6-4a14-9e3b-9db2c965359c",
+      "content_id": "747c58df-0050-4e34-a3f7-9f37b6337b14",
+      "claim_id": "C61",
+      "claim": "T-shape cells have processes in the SEZ prow region and the pars intercerebralis.",
+      "claim_type": "EXPLICIT",
+      "source": "To examine how pCd-2 neurons influence sucrose consumption, we used EM analyses and identified the major downstream targets of pCd-2 as t-shape cells (872 synapses) having processes in the SEZ prow region and a neuroendocrine center, the pars intercerebralis, with terminal arbors similar to insulin-producing cells and other median secretory cells (Liao and N\u00e4ssel, 2020; Figure 6A and Figure 6\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by anatomical data shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:27.425056Z"
+    },
+    {
+      "id": "5fbd6138-835b-4a09-b713-bc99d00c6dbd",
+      "content_id": "747c58df-0050-4e34-a3f7-9f37b6337b14",
+      "claim_id": "C62",
+      "claim": "T-shape cells are leucine-rich repeat G-protein-coupled receptor-expressing medial bundle neurons (Lgr3 + mBNs).",
+      "claim_type": "EXPLICIT",
+      "source": "Based on anatomical similarity, these cells are leucine-rich repeat G-protein-coupled receptor-expressing medial bundle neurons (Lgr3 + mBNs; Dolan et al., 2007; Figure 6B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results with citation to Dolan et al., 2007 and supported by anatomical data.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:27.425056Z"
+    },
+    {
+      "id": "bf334120-a649-40bd-9fd7-851e2984c5d9",
+      "content_id": "747c58df-0050-4e34-a3f7-9f37b6337b14",
+      "claim_id": "C63",
+      "claim": "Lgr3 expression is sexually dimorphic, with a greater number of cells in the central brain and abdominal ganglia of females.",
+      "claim_type": "EXPLICIT",
+      "source": "Lgr3 expression is sexually dimorphic, with a greater number of cells in the central brain and abdominal ganglia of females (Meissner et al., 2016), consistent with a role in female behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results with citation to Meissner et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:27.425056Z"
+    },
+    {
+      "id": "4b068cff-3a0b-49da-8d6f-1ba386f30455",
+      "content_id": "747c58df-0050-4e34-a3f7-9f37b6337b14",
+      "claim_id": "C64",
+      "claim": "Lgr3 is a receptor for the Drosophila insulin-like peptide 8 (Dilp8).",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, Lgr3 is a receptor for the Drosophila insulin-like peptide 8 (Dilp8; Colombani et al., 2015; Garelli et al., 2015; Vallejo et al., 2015), and both Lgr3 and Dilp8 are known to regulate feeding (Yeom et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results with citations to Colombani et al., 2015; Garelli et al., 2015; Vallejo et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:27.425056Z"
+    },
+    {
+      "id": "c6d20873-a5f4-46f3-960d-ce62d916c111",
+      "content_id": "747c58df-0050-4e34-a3f7-9f37b6337b14",
+      "claim_id": "C65",
+      "claim": "Both Lgr3 and Dilp8 are known to regulate feeding.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, Lgr3 is a receptor for the Drosophila insulin-like peptide 8 (Dilp8; Colombani et al., 2015; Garelli et al., 2015; Vallejo et al., 2015), and both Lgr3 and Dilp8 are known to regulate feeding (Yeom et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results with citation to Yeom et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:27.425056Z"
+    },
+    {
+      "id": "3fc1e758-b460-4e8b-932c-aadcbe2967c2",
+      "content_id": "747c58df-0050-4e34-a3f7-9f37b6337b14",
+      "claim_id": "C66",
+      "claim": "Optogenetic activation of pCd-2a or pCd-2b caused significant calcium decreases in Lgr3+ neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "In both cases, neural activation caused significant calcium decreases in Lgr3+ neurons (Figure 6D and E), validating Lgr3+ mBNs as targets of pCd-2 and the mating status pathway.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by calcium imaging data shown in Figures 6D and 6E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:27.425056Z"
+    },
+    {
+      "id": "9eb0830d-c81e-4728-9854-06125c55ed2a",
+      "content_id": "747c58df-0050-4e34-a3f7-9f37b6337b14",
+      "claim_id": "C67",
+      "claim": "Increased activity in Lgr3+ mBNs promotes sucrose consumption, mimicking the mated state.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that increased activity in Lgr3+ mBNs promotes sucrose consumption, mimicking the mated state (Figure 6G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by optogenetic activation data shown in Figure 6G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:27.425056Z"
+    },
+    {
+      "id": "075b8923-cae0-416d-bee8-5cb59b83b947",
+      "content_id": "747c58df-0050-4e34-a3f7-9f37b6337b14",
+      "claim_id": "C68",
+      "claim": "Lgr3+ mBNs receive inputs from the canonical postmating circuit and are part of a neuroendocrine pathway that regulates sucrose consumption in postmated females.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these studies reveal that Lgr3+ mBNs receive inputs from the canonical postmating circuit and are part of a neuroendocrine pathway that regulates sucrose consumption in postmated females.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results as a conclusion from the Lgr3+ mBN experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:27.425056Z"
+    },
+    {
+      "id": "061c1821-aacb-4bb1-8be9-44ce4e3c5c50",
+      "content_id": "747c58df-0050-4e34-a3f7-9f37b6337b14",
+      "claim_id": "C69",
+      "claim": "The mechanism that regulates postmating sugar intake is independent of the caloric deficiencies caused by egg production and is anticipatory in nature.",
+      "claim_type": "EXPLICIT",
+      "source": "Although mated females are predicted to need more sugar to support increased reproductive output, we find that the mechanism that regulates postmating sugar intake is independent of the caloric deficiencies caused by egg production and is anticipatory in nature.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion based on the eggless female experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:27.425056Z"
+    },
+    {
+      "id": "968a3677-389a-4b13-bbba-117d19ca29c1",
+      "content_id": "747c58df-0050-4e34-a3f7-9f37b6337b14",
+      "claim_id": "C70",
+      "claim": "The postmated increase in sugar feeding is due primarily to an elongation of feeding bouts rather than an increased likelihood of initiating a feeding event.",
+      "claim_type": "EXPLICIT",
+      "source": "The postmated increase in sugar feeding is due primarily to an elongation of feeding bouts rather than an increased likelihood of initiating a feeding event or an increase in the appetitive nature of sugar.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion based on the feeding microstructure data from Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:27.425056Z"
+    },
+    {
+      "id": "87c55cea-d61d-4629-9e80-35dcc4cc4911",
+      "content_id": "747c58df-0050-4e34-a3f7-9f37b6337b14",
+      "claim_id": "C71",
+      "claim": "There is no change in response of the sucrose-sensing gustatory sensory neurons across mating states.",
+      "claim_type": "EXPLICIT",
+      "source": "This is supported by data that demonstrates no change in response of the sucrose-sensing gustatory sensory neurons across mating states.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion based on the calcium imaging data from Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:27.425056Z"
+    },
+    {
+      "id": "a5ca8c18-1052-4c0a-a691-0b95d00c4d37",
+      "content_id": "747c58df-0050-4e34-a3f7-9f37b6337b14",
+      "claim_id": "C72",
+      "claim": "In virgins, elevated activity of SAG and pC1 potentiates pCd-2-mediated inhibition of Lgr3+ cells, resulting in low sugar intake.",
+      "claim_type": "EXPLICIT",
+      "source": "In virgins, elevated activity of SAG and pC1 potentiates pCd-2-mediated inhibition of Lgr3+ cells, resulting in low sugar intake.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion as a summary of the circuit mechanism.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:27.425056Z"
+    },
+    {
+      "id": "d4540a40-f8e6-4ef2-b3c1-c727e484caca",
+      "content_id": "747c58df-0050-4e34-a3f7-9f37b6337b14",
+      "claim_id": "C73",
+      "claim": "After mating, the activity of SAG and pC1 is reduced, decreasing the activity of pCd-2 and alleviating the inhibition from Lgr3+ cells, increasing sucrose intake.",
+      "claim_type": "EXPLICIT",
+      "source": "After mating, the activity of SAG and pC1 is reduced (Feng et al., 2014; Wang et al., 2020), decreasing the activity of pCd-2 and alleviating the inhibition from Lgr3+ cells, increasing sucrose intake.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion as a summary of the circuit mechanism with citations.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:27.425056Z"
+    },
+    {
+      "id": "ede8ca9b-a7bc-44c6-83a0-8e3d583bde81",
+      "content_id": "747c58df-0050-4e34-a3f7-9f37b6337b14",
+      "claim_id": "C74",
+      "claim": "Expression levels of Lgr3 and Dilp8 rise in fed flies and mutations in either gene increase feeding.",
+      "claim_type": "EXPLICIT",
+      "source": "Expression levels of Lgr3 and Dilp8 rise in fed flies and mutations in either gene increase feeding, arguing that Dilp8 and Lgr3 are satiety factors (Yeom et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion with citation to Yeom et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:27.425056Z"
+    },
+    {
+      "id": "7ef87036-da4f-441c-ae68-1c5c76f177cb",
+      "content_id": "747c58df-0050-4e34-a3f7-9f37b6337b14",
+      "claim_id": "C75",
+      "claim": "Dilp8 and Lgr3 are satiety factors.",
+      "claim_type": "EXPLICIT",
+      "source": "Expression levels of Lgr3 and Dilp8 rise in fed flies and mutations in either gene increase feeding, arguing that Dilp8 and Lgr3 are satiety factors (Yeom et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion with citation to Yeom et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:27.425056Z"
+    },
+    {
+      "id": "e3d76112-c14a-4f4e-a82b-bf84c9c18d62",
+      "content_id": "747c58df-0050-4e34-a3f7-9f37b6337b14",
+      "claim_id": "C76",
+      "claim": "Lgr3+ mBN neurons are more active in a mated state.",
+      "claim_type": "EXPLICIT",
+      "source": "Our calcium imaging and behavioral studies of Lgr3+ mBNs indicate that they are more active in a mated state and activation of these neurons promotes sucrose consumption.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion based on the experimental results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:27.425056Z"
+    },
+    {
+      "id": "0a6f0b4b-a546-4a55-94bd-9b7ef3e3f0d4",
+      "content_id": "747c58df-0050-4e34-a3f7-9f37b6337b14",
+      "claim_id": "C77",
+      "claim": "In virgin or satiated female flies, pCd-2 activity and circulating DILP8 inhibit Lgr3+ mBNs, reducing sugar feeding.",
+      "claim_type": "EXPLICIT",
+      "source": "In virgin or satiated female flies, pCd-2 activity and circulating DILP8, respectively, inhibit Lgr3+ mBNs, reducing sugar feeding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion as part of the proposed model shown in Figure 7.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:27.425056Z"
+    },
+    {
+      "id": "d3751401-b25d-448e-be1a-215d9e1a3646",
+      "content_id": "747c58df-0050-4e34-a3f7-9f37b6337b14",
+      "claim_id": "C78",
+      "claim": "In mated or hungry flies, Lgr3+ mBNs lack the inhibitory signal from pCd-2 neurons or circulating Dilp8, resulting in increased sugar consumption.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, in mated or hungry flies, Lgr3+ mBNs lack the inhibitory signal from pCd-2 neurons or circulating Dilp8, respectively, resulting in increased sugar consumption.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion as part of the proposed model shown in Figure 7.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:27.425056Z"
+    },
+    {
+      "id": "a0314cc2-077d-4e40-8952-6e4a720ac194",
+      "content_id": "747c58df-0050-4e34-a3f7-9f37b6337b14",
+      "claim_id": "C79",
+      "claim": "The mated state may be viewed mechanistically as an additional 'hunger' signal within this system.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, the mated state may be viewed mechanistically as an additional 'hunger' signal within this system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion as an interpretation of the findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:27.425056Z"
+    },
+    {
+      "id": "8f684367-4937-4915-bf48-c206bf8b5682",
+      "content_id": "747c58df-0050-4e34-a3f7-9f37b6337b14",
+      "claim_id": "C80",
+      "claim": "The three-tier mating status circuit (SPSN-SAG-pC1) regulates postmated changes in sucrose consumption.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the neural regulation of other postmating behaviors, including other postmated changes in feeding, the three-tier mating status circuit (SPSN-SAG-pC1) regulates postmated changes in sucrose consumption.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion based on the circuit manipulation experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:27.425056Z"
+    },
+    {
+      "id": "19b34d24-0014-4c10-a643-6c4095d44cae",
+      "content_id": "747c58df-0050-4e34-a3f7-9f37b6337b14",
+      "claim_id": "C81",
+      "claim": "The neural regulation of postmating sucrose consumption is regulated by an independent pathway postsynaptic to the mating status circuit.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the neural regulation of postmating sucrose consumption, like other postmated behaviors, is also regulated by an independent pathway postsynaptic to the mating status circuit.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion based on the identification of pCd-2 neurons.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:27.425056Z"
+    },
+    {
+      "id": "1cbb1815-0ea2-4e3b-8cfa-d3baa202f399",
+      "content_id": "747c58df-0050-4e34-a3f7-9f37b6337b14",
+      "claim_id": "C82",
+      "claim": "The neural mechanisms regulating increased sugar intake and egg production are independent downstream of pC1.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, although increased sugar intake may indeed support egg production, the neural mechanisms regulating the two behaviors are independent downstream of pC1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion based on the finding that pCd-2 manipulation affects feeding but not egg laying.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:27.425056Z"
+    },
+    {
+      "id": "2e92a7c5-b931-4a40-ada8-a257428dd914",
+      "content_id": "747c58df-0050-4e34-a3f7-9f37b6337b14",
+      "claim_id": "C83",
+      "claim": "Mated-related changes in sucrose were not due to changes in sensory neuron sensitivity.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we found that mated-related changes in sucrose were not due to changes in sensory neuron sensitivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion based on the gustatory neuron imaging data from Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:27.425056Z"
+    },
+    {
+      "id": "a72e8169-e091-497a-8f2f-59ce601eccf8",
+      "content_id": "747c58df-0050-4e34-a3f7-9f37b6337b14",
+      "claim_id": "C84",
+      "claim": "Mated-related changes in gustatory neuron sensitivity to yeast have not been found.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, mated-related changes in gustatory neuron sensitivity to yeast have not been found (Steck et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion with citation to Steck et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:27.425056Z"
+    },
+    {
+      "id": "6ca1cf5d-d11d-41be-a3b2-a738bc4d38ad",
+      "content_id": "747c58df-0050-4e34-a3f7-9f37b6337b14",
+      "claim_id": "C85",
+      "claim": "After mating females display a transient modulation in chemosensory neurons that respond to polyamines.",
+      "claim_type": "EXPLICIT",
+      "source": "It should be noted that after mating females display a transient modulation in chemosensory neurons that respond to polyamines (Hussain et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion with citation to Hussain et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:27.425056Z"
+    },
+    {
+      "id": "b046df01-4cec-4536-b014-3b0f07c5fb62",
+      "content_id": "747c58df-0050-4e34-a3f7-9f37b6337b14",
+      "claim_id": "C86",
+      "claim": "Transient modulation in chemosensory neurons that respond to polyamines is not associated with polyamine consumption but instead oviposition behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "However, these changes are not associated with polyamine consumption but instead oviposition behavior (Hussain et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion with citation to Hussain et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:27.425056Z"
+    },
+    {
+      "id": "834672a2-c619-4666-994f-92cf285b74f1",
+      "content_id": "747c58df-0050-4e34-a3f7-9f37b6337b14",
+      "claim_id": "C87",
+      "claim": "Changes in postmated feeding behavior result from the mating status circuit modulating nutrient-sensing or feeding circuits, rather than directly tuning sensory neurons to promote feeding.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these studies suggest that changes in postmated feeding behavior result from the mating status circuit (or its output neurons) modulating nutrient-sensing or feeding circuits, rather than directly tuning sensory neurons to promote feeding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion as a conclusion from multiple lines of evidence.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:27.425056Z"
+    },
+    {
+      "id": "ce01f92d-4ea6-4887-9481-8e126655f3d6",
+      "content_id": "747c58df-0050-4e34-a3f7-9f37b6337b14",
+      "claim_id": "C88",
+      "claim": "There is no shared circuit yet identified for elevated nutrient intake of sugar and yeast in mated females beyond the three-tier mating status circuit.",
+      "claim_type": "EXPLICIT",
+      "source": "Although mating status impinges on circuits that either process nutrient-sensing signals or regulate feeding circuits, there is no shared circuit yet identified for elevated nutrient intake of sugar and yeast in mated females.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion based on comparison with other studies.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:27.425056Z"
+    },
+    {
+      "id": "05c85a38-4b1f-4f1d-868b-bfb11d41d2c6",
+      "content_id": "747c58df-0050-4e34-a3f7-9f37b6337b14",
+      "claim_id": "C89",
+      "claim": "No overlap between areas of the brain modulating postmated increases in protein and sugar consumption has been found beyond the three-tier mating status circuit.",
+      "claim_type": "EXPLICIT",
+      "source": "Beyond the three-tier mating status circuit, no overlap between areas of the brain modulating postmated increases in protein (Liu et al., 2017; M\u00fcnch et al., 2022) and sugar consumption (this manuscript) has been found.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion with citations to Liu et al., 2017; M\u00fcnch et al., 2022.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:27.425056Z"
+    },
+    {
+      "id": "8e8d188f-7b63-4a14-bb6e-c2e6ec10c9d1",
+      "content_id": "747c58df-0050-4e34-a3f7-9f37b6337b14",
+      "claim_id": "C90",
+      "claim": "An elevated appetite for sucrose is an important behavioral subprogram elicited by mating and executed by female-specific circuitry.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, our findings show that an elevated appetite for sucrose is an important behavioral subprogram elicited by mating and executed by female-specific circuitry, shifting the physiology of a mated female.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion as a summary of the findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:27.425056Z"
+    },
+    {
+      "id": "d8b31900-8583-4baf-9b39-a498120c7c01",
+      "content_id": "747c58df-0050-4e34-a3f7-9f37b6337b14",
+      "claim_id": "C91",
+      "claim": "The activation of hunger centers by the mating status circuit provides a neural mechanism that anticipates the large energetic demands associated with offspring production and increases caloric intake, promoting reproductive success.",
+      "claim_type": "EXPLICIT",
+      "source": "The activation of hunger centers by the mating status circuit provides a neural mechanism that anticipates the large energetic demands associated with offspring production and increases caloric intake, promoting reproductive success.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion as a conclusion about the biological significance of the findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:27.425056Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "412bd578-3f11-4a66-ba6e-c63e14b8b16d",
+      "content_id": "747c58df-0050-4e34-a3f7-9f37b6337b14",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Mated Drosophila females increase sugar intake by engaging in longer feeding bouts rather than more frequent feeding events. This increase manifests 6-24 hours after copulation and results in significantly greater sucrose volume consumption.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C30-C33, and C70 are well-supported by multiple experimental approaches including FLIC (Figure 1B-F), CAFE (Figure 1H), and feeding microstructure analysis. The data consistently demonstrate increased consumption duration without changes in bout number, providing converging evidence for the result.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:33:27.425056Z"
+    },
+    {
+      "id": "770ce16d-12e3-44ec-94c9-584a27799a76",
+      "content_id": "747c58df-0050-4e34-a3f7-9f37b6337b14",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Mating does not alter gustatory sensitivity to sugar or feeding initiation propensity. Virgin and mated females show similar proboscis extension responses and similar calcium responses in gustatory neurons upon sugar stimulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34, C36, C71, and C83 are supported by proboscis extension response assays (Figures 1J-K) and calcium imaging of gustatory neurons (Figures 2B-D). The data demonstrate no significant differences between virgin and mated females in sensory responses, ruling out peripheral sensory mechanisms.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:33:27.425056Z"
+    },
+    {
+      "id": "7e4015ab-1c46-415e-960f-79f21ad91bbb",
+      "content_id": "747c58df-0050-4e34-a3f7-9f37b6337b14",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The increase in postmating sugar consumption is independent of egg production and anticipatory in nature. Eggless mated females still consume more sucrose than eggless virgins, demonstrating a need-independent mechanism.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C39 and C69 are supported by experiments using two different eggless mutants (hs-bam and ovoD) tested in both FLIC and CAFE assays (Figure 3A, Figure 3\u2014figure supplement 1A). The consistent results across different genetic backgrounds and assays provide strong evidence for anticipatory regulation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:33:27.425056Z"
+    },
+    {
+      "id": "1ea5cbe7-3fca-4ab8-a3ac-5df28d6edd9b",
+      "content_id": "747c58df-0050-4e34-a3f7-9f37b6337b14",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The SPSN-SAG-pC1 mating status circuit regulates postmating increases in sucrose consumption. Silencing any component of this three-tier circuit (SPSNs, SAG, or pC1) in virgin females increases sucrose consumption, mimicking the mated phenotype.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C44 and C80 are supported by optogenetic silencing experiments using multiple genetic driver lines (Figures 3D-I). The consistent phenotype across all three circuit levels provides strong evidence for the circuit's role in regulating sugar consumption.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:33:27.425056Z"
+    },
+    {
+      "id": "58ce5502-5d46-4c7b-af4a-a050678d804b",
+      "content_id": "747c58df-0050-4e34-a3f7-9f37b6337b14",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The neural circuits for egg laying (oviDNs) and sexual receptivity (vpoDNs) do not mediate postmating sucrose feeding. Manipulation of these neurons does not affect sucrose consumption.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C46 are supported by optogenetic manipulation experiments (Figure 4B-G) showing no effect on sucrose consumption. This demonstrates circuit specificity and rules out these previously identified postmating pathways.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:33:27.425056Z"
+    },
+    {
+      "id": "ec835805-807b-47c7-bf72-f19434fea579",
+      "content_id": "747c58df-0050-4e34-a3f7-9f37b6337b14",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "pCd-2 neurons (pCd-2a and pCd-2b) are female-specific outputs of the mating status circuit that regulate sucrose consumption. These neurons receive synaptic input from SAG and pC1, and their silencing increases sucrose consumption without affecting egg laying.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C48, C52-C55, and C59 are supported by connectomics data (Figure 5A), functional connectivity experiments (Figures 5G-H), and optogenetic manipulation (Figures 5I-K). The combination of anatomical, functional, and behavioral data provides strong converging evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:33:27.425056Z"
+    },
+    {
+      "id": "3db1d011-8295-4a9e-b317-281c0e6e784a",
+      "content_id": "747c58df-0050-4e34-a3f7-9f37b6337b14",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "pCd-2 neurons become silenced after mating due to direct synaptic input from the mating status circuit. In mated females, reduced pCd-2 activity leads to activation of downstream Lgr3+ neurons and increased sugar intake.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C7 and C51 are supported by connectomics showing direct synaptic connections (Figure 5A), functional connectivity demonstrating excitatory responses (Figures 5G-H), and the cholinergic nature of upstream neurons. The logic is sound given that active cholinergic inputs would excite pCd-2 in virgins, and silencing of these inputs after mating would reduce pCd-2 activity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:33:27.425056Z"
+    },
+    {
+      "id": "103be97b-e58c-4643-8135-3ce3050bb0e3",
+      "content_id": "747c58df-0050-4e34-a3f7-9f37b6337b14",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Lgr3+ medial bundle neurons (mBNs) are the major downstream targets of pCd-2 neurons and regulate sucrose consumption. These neurons receive inhibitory input from pCd-2, and their activation promotes sucrose consumption.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C62, C66-C68 are supported by connectomics data (Figure 6A), functional connectivity showing inhibitory responses (Figures 6D-E), and optogenetic activation experiments (Figure 6G). The data demonstrate both anatomical connectivity and functional regulation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:33:27.425056Z"
+    },
+    {
+      "id": "d52ec635-8d20-4810-8d8d-43ce965ac6c9",
+      "content_id": "747c58df-0050-4e34-a3f7-9f37b6337b14",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The complete circuit mechanism transforms mating status into a hunger signal: in virgins, active SAG/pC1 neurons excite pCd-2, which inhibits Lgr3+ neurons, restricting sugar intake. After mating, SAG/pC1 silencing reduces pCd-2 activity, disinhibiting Lgr3+ neurons and promoting sugar consumption in anticipation of reproductive energy demands.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2-C3, C8-C10, C72-C73, C76-C79, and C91 represent the integrated circuit model supported by the complete dataset. The model is logically consistent with all experimental findings including circuit connectivity, functional responses, and behavioral outcomes. The anticipatory nature is supported by the eggless female experiments.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:33:27.425056Z"
+    },
+    {
+      "id": "ddd91ad2-ea3f-4409-b5a4-fecfd68e94df",
+      "content_id": "747c58df-0050-4e34-a3f7-9f37b6337b14",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Optogenetic manipulation of pCd-2 neurons in mated females reveals that artificial silencing produces stronger effects than natural mating-induced silencing, and that pCd-2a activation can reverse the mated phenotype while pCd-2b activation cannot.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C58 are supported by bidirectional optogenetic experiments in mated females (Figure 5\u2014figure supplement 4). The differential effects between pCd-2a and pCd-2b are reasonably attributed to differences in synaptic connectivity strength (Figure 5A), though this interpretation is somewhat speculative.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:33:27.425056Z"
+    },
+    {
+      "id": "641ac91e-cbe3-4d98-92d7-429b9ae9e66a",
+      "content_id": "747c58df-0050-4e34-a3f7-9f37b6337b14",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Lgr3 is a sexually dimorphic receptor for Dilp8, and both are known to regulate feeding as satiety factors. Expression levels rise in fed flies and mutations increase feeding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C65, C74-C75 are supported by citations to prior work (Meissner et al., 2016; Colombani et al., 2015; Garelli et al., 2015; Vallejo et al., 2015; Yeom et al., 2021). These are established findings from the literature that provide context for the current work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:33:27.425056Z"
+    },
+    {
+      "id": "002ad639-efec-4199-a1c0-16fe051ba978",
+      "content_id": "747c58df-0050-4e34-a3f7-9f37b6337b14",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Postmating sucrose consumption is regulated by an independent pathway downstream of pC1, separate from egg laying and sexual receptivity circuits. The mating status circuit modulates nutrient-sensing centers rather than directly tuning sensory neurons, and no shared circuit for sugar and protein consumption has been identified beyond the three-tier mating status circuit.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C81-C82, C87-C89 are supported by the circuit dissection experiments showing separation from egg laying/receptivity circuits (Figure 4), lack of gustatory neuron changes (Figure 2), and comparison with prior literature. The conclusions are well-supported by the experimental evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:33:27.425056Z"
+    },
+    {
+      "id": "22807d5a-995c-4be6-97de-059be7f1d4e8",
+      "content_id": "747c58df-0050-4e34-a3f7-9f37b6337b14",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The sex peptide (SP) signaling pathway and SPSN-SAG-pC1 circuit architecture are established from prior work. SP is transferred during mating, binds to SPR on SPSNs in the uterus, which signal to SAG neurons that synapse onto pC1. This circuit is active in virgins and silenced after mating, initiating the postmating response.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C5, C21-C28, and C50 are supported by extensive citations to prior work (Chen et al., 1988; Liu and Kubli, 2003; Yapici et al., 2008; H\u00e4semeyer et al., 2009; Yang et al., 2009; Feng et al., 2014; Wang et al., 2020). These are well-established findings that provide the foundation for the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:33:27.425056Z"
+    },
+    {
+      "id": "51667466-4b85-4891-baba-d854866e6a9d",
+      "content_id": "747c58df-0050-4e34-a3f7-9f37b6337b14",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Prior work has established that mated Drosophila females increase total food intake and develop appetites for protein and salt, which are used in egg production. Sugar is the main energy source, and mated females have increased locomotor activity and metabolic rates. The borboleta region modulates yeast-based feeding in mated females.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C20 and C29 are supported by citations to prior literature (Carvalho et al., 2006; Vargas et al., 2010; Ribeiro and Dickson, 2010; Walker et al., 2015; Simpson et al., 2015; Brown et al., 2022; Isaac et al., 2010; Baenas and Wagner, 2022; M\u00fcnch et al., 2022). These provide important context and motivation for the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:33:27.425056Z"
+    },
+    {
+      "id": "cf7cbba8-108c-422e-ad13-45be05652e4a",
+      "content_id": "747c58df-0050-4e34-a3f7-9f37b6337b14",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Prior work shows that hunger increases gustatory neuron sensitivity to sugar, but mating-related changes in gustatory sensitivity to yeast have not been found. Transient modulation of polyamine-sensing neurons after mating is associated with oviposition, not consumption.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35, C84-C86 are supported by citations to prior work (Inagaki et al., 2012; Steck et al., 2018; Hussain et al., 2016). These findings from the literature help contextualize the current results showing no gustatory changes with mating.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:33:27.425056Z"
+    },
+    {
+      "id": "a858b94a-1006-4fcb-9c4d-f02ca7cb606a",
+      "content_id": "747c58df-0050-4e34-a3f7-9f37b6337b14",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The prow region of the SEZ is implicated in energy homeostasis and feeding based on prior work.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C49 is supported by citation to Shiu et al., 2022. This provides anatomical context for why pCd-2 neurons projecting to this region are good candidates for feeding regulation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:33:27.425056Z"
+    },
+    {
+      "id": "e32d1aa0-92f1-4c1f-b280-a8cc0d90948d",
+      "content_id": "747c58df-0050-4e34-a3f7-9f37b6337b14",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "An elevated appetite for sucrose is an important behavioral subprogram elicited by mating and executed by female-specific circuitry, shifting the physiology of mated females.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C90 is a summary statement supported by the complete dataset showing female-specific neurons (pCd-2a/b, Lgr3+ mBNs) regulating mating-induced changes in sugar consumption. This is a well-supported conclusion from the experimental findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:33:27.425056Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "c7087045-d472-443f-8d33-74a183e3ff95",
+      "result_id": "412bd578-3f11-4a66-ba6e-c63e14b8b16d"
+    },
+    {
+      "claim_id": "3c83b1fc-1279-4e00-82ee-3dff10805d0f",
+      "result_id": "412bd578-3f11-4a66-ba6e-c63e14b8b16d"
+    },
+    {
+      "claim_id": "a3c5631c-1a71-4fb4-a638-a53996d9129b",
+      "result_id": "412bd578-3f11-4a66-ba6e-c63e14b8b16d"
+    },
+    {
+      "claim_id": "b96bfc6c-a3e6-4e0d-baf1-78526e45ed2d",
+      "result_id": "412bd578-3f11-4a66-ba6e-c63e14b8b16d"
+    },
+    {
+      "claim_id": "84408846-358f-4679-9c11-a5ed8a847e34",
+      "result_id": "412bd578-3f11-4a66-ba6e-c63e14b8b16d"
+    },
+    {
+      "claim_id": "968a3677-389a-4b13-bbba-117d19ca29c1",
+      "result_id": "412bd578-3f11-4a66-ba6e-c63e14b8b16d"
+    },
+    {
+      "claim_id": "5f9d9482-d686-4d64-bc54-168404d344a5",
+      "result_id": "770ce16d-12e3-44ec-94c9-584a27799a76"
+    },
+    {
+      "claim_id": "2d1d9423-9ac8-4f2b-938e-fa9fde99db20",
+      "result_id": "770ce16d-12e3-44ec-94c9-584a27799a76"
+    },
+    {
+      "claim_id": "87c55cea-d61d-4629-9e80-35dcc4cc4911",
+      "result_id": "770ce16d-12e3-44ec-94c9-584a27799a76"
+    },
+    {
+      "claim_id": "2e92a7c5-b931-4a40-ada8-a257428dd914",
+      "result_id": "770ce16d-12e3-44ec-94c9-584a27799a76"
+    },
+    {
+      "claim_id": "50a64231-d21a-4354-9a77-50f04990f057",
+      "result_id": "7e4015ab-1c46-415e-960f-79f21ad91bbb"
+    },
+    {
+      "claim_id": "3ad3c4d3-e87e-414b-8790-63af5da17d28",
+      "result_id": "7e4015ab-1c46-415e-960f-79f21ad91bbb"
+    },
+    {
+      "claim_id": "1e012eda-78eb-4161-b968-32e622c7577c",
+      "result_id": "7e4015ab-1c46-415e-960f-79f21ad91bbb"
+    },
+    {
+      "claim_id": "061c1821-aacb-4bb1-8be9-44ce4e3c5c50",
+      "result_id": "7e4015ab-1c46-415e-960f-79f21ad91bbb"
+    },
+    {
+      "claim_id": "e4f72ebc-135a-4d46-9fe0-73bf79404cb8",
+      "result_id": "1ea5cbe7-3fca-4ab8-a3ac-5df28d6edd9b"
+    },
+    {
+      "claim_id": "c4e298c7-b8b1-4c74-a865-4ba291914909",
+      "result_id": "1ea5cbe7-3fca-4ab8-a3ac-5df28d6edd9b"
+    },
+    {
+      "claim_id": "d2b9f248-e826-4446-9ab3-5cc7de363de2",
+      "result_id": "1ea5cbe7-3fca-4ab8-a3ac-5df28d6edd9b"
+    },
+    {
+      "claim_id": "b8a26b32-5578-4c3b-86c4-cad68821a88b",
+      "result_id": "1ea5cbe7-3fca-4ab8-a3ac-5df28d6edd9b"
+    },
+    {
+      "claim_id": "27f39019-b7fd-45b1-abff-d7f111963e31",
+      "result_id": "1ea5cbe7-3fca-4ab8-a3ac-5df28d6edd9b"
+    },
+    {
+      "claim_id": "8f684367-4937-4915-bf48-c206bf8b5682",
+      "result_id": "1ea5cbe7-3fca-4ab8-a3ac-5df28d6edd9b"
+    },
+    {
+      "claim_id": "c2e49fed-9fd4-4cc5-8db8-f090911d22a3",
+      "result_id": "58ce5502-5d46-4c7b-af4a-a050678d804b"
+    },
+    {
+      "claim_id": "83550d48-29dd-457d-bb30-2da656c98f64",
+      "result_id": "58ce5502-5d46-4c7b-af4a-a050678d804b"
+    },
+    {
+      "claim_id": "86f83490-36ee-4bbd-a3a7-87a941a6881d",
+      "result_id": "ec835805-807b-47c7-bf72-f19434fea579"
+    },
+    {
+      "claim_id": "876a1426-a76d-4f58-a973-148046882d6b",
+      "result_id": "ec835805-807b-47c7-bf72-f19434fea579"
+    },
+    {
+      "claim_id": "9c0bfc5e-0e1c-4fce-aa2d-d51300785626",
+      "result_id": "ec835805-807b-47c7-bf72-f19434fea579"
+    },
+    {
+      "claim_id": "b45c244b-f629-4471-af69-999f27523b63",
+      "result_id": "ec835805-807b-47c7-bf72-f19434fea579"
+    },
+    {
+      "claim_id": "8e7ca70d-bfd7-441c-aebf-89089d08838e",
+      "result_id": "ec835805-807b-47c7-bf72-f19434fea579"
+    },
+    {
+      "claim_id": "6250d506-c6db-4375-863b-f932186a1142",
+      "result_id": "ec835805-807b-47c7-bf72-f19434fea579"
+    },
+    {
+      "claim_id": "013df8e0-d9c1-42f1-9c4e-c4947b4aebc6",
+      "result_id": "ec835805-807b-47c7-bf72-f19434fea579"
+    },
+    {
+      "claim_id": "48ff894e-9292-4a68-8f7e-0d3b7624cfc0",
+      "result_id": "3db1d011-8295-4a9e-b317-281c0e6e784a"
+    },
+    {
+      "claim_id": "45818764-bc48-45f7-86ab-dcf7784f5b92",
+      "result_id": "3db1d011-8295-4a9e-b317-281c0e6e784a"
+    },
+    {
+      "claim_id": "cdec6ea9-4355-4802-bc3f-bfa8fa311b1e",
+      "result_id": "3db1d011-8295-4a9e-b317-281c0e6e784a"
+    },
+    {
+      "claim_id": "0e949abe-d9cf-4393-aa4f-23e7a8c5a4e5",
+      "result_id": "103be97b-e58c-4643-8135-3ce3050bb0e3"
+    },
+    {
+      "claim_id": "e340b1ae-4cc6-4a14-9e3b-9db2c965359c",
+      "result_id": "103be97b-e58c-4643-8135-3ce3050bb0e3"
+    },
+    {
+      "claim_id": "5fbd6138-835b-4a09-b713-bc99d00c6dbd",
+      "result_id": "103be97b-e58c-4643-8135-3ce3050bb0e3"
+    },
+    {
+      "claim_id": "3fc1e758-b460-4e8b-932c-aadcbe2967c2",
+      "result_id": "103be97b-e58c-4643-8135-3ce3050bb0e3"
+    },
+    {
+      "claim_id": "9eb0830d-c81e-4728-9854-06125c55ed2a",
+      "result_id": "103be97b-e58c-4643-8135-3ce3050bb0e3"
+    },
+    {
+      "claim_id": "075b8923-cae0-416d-bee8-5cb59b83b947",
+      "result_id": "103be97b-e58c-4643-8135-3ce3050bb0e3"
+    },
+    {
+      "claim_id": "ccabf0e6-a94a-4055-b769-bf9b1e20a46b",
+      "result_id": "d52ec635-8d20-4810-8d8d-43ce965ac6c9"
+    },
+    {
+      "claim_id": "79736552-f47f-4db0-9047-066054d09b89",
+      "result_id": "d52ec635-8d20-4810-8d8d-43ce965ac6c9"
+    },
+    {
+      "claim_id": "16bc7169-184c-4a88-b069-08fd0f616b73",
+      "result_id": "d52ec635-8d20-4810-8d8d-43ce965ac6c9"
+    },
+    {
+      "claim_id": "3cff9f54-e945-435f-b419-5c827976daef",
+      "result_id": "d52ec635-8d20-4810-8d8d-43ce965ac6c9"
+    },
+    {
+      "claim_id": "828614d9-79e9-4e5c-8305-c0d705ba1886",
+      "result_id": "d52ec635-8d20-4810-8d8d-43ce965ac6c9"
+    },
+    {
+      "claim_id": "a5ca8c18-1052-4c0a-a691-0b95d00c4d37",
+      "result_id": "d52ec635-8d20-4810-8d8d-43ce965ac6c9"
+    },
+    {
+      "claim_id": "d4540a40-f8e6-4ef2-b3c1-c727e484caca",
+      "result_id": "d52ec635-8d20-4810-8d8d-43ce965ac6c9"
+    },
+    {
+      "claim_id": "e3d76112-c14a-4f4e-a82b-bf84c9c18d62",
+      "result_id": "d52ec635-8d20-4810-8d8d-43ce965ac6c9"
+    },
+    {
+      "claim_id": "0a6f0b4b-a546-4a55-94bd-9b7ef3e3f0d4",
+      "result_id": "d52ec635-8d20-4810-8d8d-43ce965ac6c9"
+    },
+    {
+      "claim_id": "d3751401-b25d-448e-be1a-215d9e1a3646",
+      "result_id": "d52ec635-8d20-4810-8d8d-43ce965ac6c9"
+    },
+    {
+      "claim_id": "a0314cc2-077d-4e40-8952-6e4a720ac194",
+      "result_id": "d52ec635-8d20-4810-8d8d-43ce965ac6c9"
+    },
+    {
+      "claim_id": "d8b31900-8583-4baf-9b39-a498120c7c01",
+      "result_id": "d52ec635-8d20-4810-8d8d-43ce965ac6c9"
+    },
+    {
+      "claim_id": "9acc9aba-3baf-418f-9d43-2750612dbf20",
+      "result_id": "ddd91ad2-ea3f-4409-b5a4-fecfd68e94df"
+    },
+    {
+      "claim_id": "9f2f2440-21cd-4f1d-9667-ed3f7b6b6b43",
+      "result_id": "ddd91ad2-ea3f-4409-b5a4-fecfd68e94df"
+    },
+    {
+      "claim_id": "9b4a1f86-4a92-4ced-ae8e-e118d3daccfe",
+      "result_id": "ddd91ad2-ea3f-4409-b5a4-fecfd68e94df"
+    },
+    {
+      "claim_id": "bf334120-a649-40bd-9fd7-851e2984c5d9",
+      "result_id": "641ac91e-cbe3-4d98-92d7-429b9ae9e66a"
+    },
+    {
+      "claim_id": "4b068cff-3a0b-49da-8d6f-1ba386f30455",
+      "result_id": "641ac91e-cbe3-4d98-92d7-429b9ae9e66a"
+    },
+    {
+      "claim_id": "c6d20873-a5f4-46f3-960d-ce62d916c111",
+      "result_id": "641ac91e-cbe3-4d98-92d7-429b9ae9e66a"
+    },
+    {
+      "claim_id": "ede8ca9b-a7bc-44c6-83a0-8e3d583bde81",
+      "result_id": "641ac91e-cbe3-4d98-92d7-429b9ae9e66a"
+    },
+    {
+      "claim_id": "7ef87036-da4f-441c-ae68-1c5c76f177cb",
+      "result_id": "641ac91e-cbe3-4d98-92d7-429b9ae9e66a"
+    },
+    {
+      "claim_id": "19b34d24-0014-4c10-a643-6c4095d44cae",
+      "result_id": "002ad639-efec-4199-a1c0-16fe051ba978"
+    },
+    {
+      "claim_id": "1cbb1815-0ea2-4e3b-8cfa-d3baa202f399",
+      "result_id": "002ad639-efec-4199-a1c0-16fe051ba978"
+    },
+    {
+      "claim_id": "834672a2-c619-4666-994f-92cf285b74f1",
+      "result_id": "002ad639-efec-4199-a1c0-16fe051ba978"
+    },
+    {
+      "claim_id": "ce01f92d-4ea6-4887-9481-8e126655f3d6",
+      "result_id": "002ad639-efec-4199-a1c0-16fe051ba978"
+    },
+    {
+      "claim_id": "05c85a38-4b1f-4f1d-868b-bfb11d41d2c6",
+      "result_id": "002ad639-efec-4199-a1c0-16fe051ba978"
+    },
+    {
+      "claim_id": "072e7059-0cff-413a-8f81-1439cd5ed50d",
+      "result_id": "22807d5a-995c-4be6-97de-059be7f1d4e8"
+    },
+    {
+      "claim_id": "14e929b3-9761-442c-b9fc-c0dfb8511a14",
+      "result_id": "22807d5a-995c-4be6-97de-059be7f1d4e8"
+    },
+    {
+      "claim_id": "2565207c-9b85-4a03-ba26-c3e51c9a7f46",
+      "result_id": "22807d5a-995c-4be6-97de-059be7f1d4e8"
+    },
+    {
+      "claim_id": "2b8e8d87-eb76-4983-a7e1-dfef4651f48f",
+      "result_id": "22807d5a-995c-4be6-97de-059be7f1d4e8"
+    },
+    {
+      "claim_id": "337b1ad2-8581-4669-825b-5ea86b23580f",
+      "result_id": "22807d5a-995c-4be6-97de-059be7f1d4e8"
+    },
+    {
+      "claim_id": "a135f8ff-22f2-4b8f-8f3d-9d19b14fa696",
+      "result_id": "22807d5a-995c-4be6-97de-059be7f1d4e8"
+    },
+    {
+      "claim_id": "2d89a7c3-4609-4fd5-ba34-4333b2833fdd",
+      "result_id": "22807d5a-995c-4be6-97de-059be7f1d4e8"
+    },
+    {
+      "claim_id": "4475c5ca-951e-4f3b-859f-9646a7bb0337",
+      "result_id": "22807d5a-995c-4be6-97de-059be7f1d4e8"
+    },
+    {
+      "claim_id": "6d21edbd-ee16-4e27-8f1a-b6dbf643947a",
+      "result_id": "22807d5a-995c-4be6-97de-059be7f1d4e8"
+    },
+    {
+      "claim_id": "f655a494-ba9d-4883-b834-68abd222e664",
+      "result_id": "22807d5a-995c-4be6-97de-059be7f1d4e8"
+    },
+    {
+      "claim_id": "7f257dbb-a799-4f3a-b074-7516b8282756",
+      "result_id": "22807d5a-995c-4be6-97de-059be7f1d4e8"
+    },
+    {
+      "claim_id": "e8e3a511-a6be-4c2e-8198-49049de89079",
+      "result_id": "51667466-4b85-4891-baba-d854866e6a9d"
+    },
+    {
+      "claim_id": "db559915-00df-44f6-abdd-13981202957d",
+      "result_id": "51667466-4b85-4891-baba-d854866e6a9d"
+    },
+    {
+      "claim_id": "c47af427-b722-4e6e-99e6-725c5617a2b8",
+      "result_id": "51667466-4b85-4891-baba-d854866e6a9d"
+    },
+    {
+      "claim_id": "78fda52f-520d-4828-8f77-7743014702e8",
+      "result_id": "51667466-4b85-4891-baba-d854866e6a9d"
+    },
+    {
+      "claim_id": "634db664-5f0c-4795-b257-4c98273a1fc3",
+      "result_id": "51667466-4b85-4891-baba-d854866e6a9d"
+    },
+    {
+      "claim_id": "b4c9d7fc-17ee-47f0-9e6a-5509eb1a8313",
+      "result_id": "51667466-4b85-4891-baba-d854866e6a9d"
+    },
+    {
+      "claim_id": "8bd6b0d7-0027-4040-8aa7-88f8b9681824",
+      "result_id": "51667466-4b85-4891-baba-d854866e6a9d"
+    },
+    {
+      "claim_id": "e1557f9c-f214-4788-888e-36501222e64f",
+      "result_id": "51667466-4b85-4891-baba-d854866e6a9d"
+    },
+    {
+      "claim_id": "0fe54f6b-39f1-4164-abc4-f5b9a253aaa6",
+      "result_id": "51667466-4b85-4891-baba-d854866e6a9d"
+    },
+    {
+      "claim_id": "abef3666-4c3f-40e1-9da4-51a1fd8d6049",
+      "result_id": "51667466-4b85-4891-baba-d854866e6a9d"
+    },
+    {
+      "claim_id": "aeacc5ce-ecb4-4a09-b516-59a4f095802c",
+      "result_id": "51667466-4b85-4891-baba-d854866e6a9d"
+    },
+    {
+      "claim_id": "c61880ac-208d-4cf4-afc2-a1db8cf9e525",
+      "result_id": "cf7cbba8-108c-422e-ad13-45be05652e4a"
+    },
+    {
+      "claim_id": "a72e8169-e091-497a-8f2f-59ce601eccf8",
+      "result_id": "cf7cbba8-108c-422e-ad13-45be05652e4a"
+    },
+    {
+      "claim_id": "6ca1cf5d-d11d-41be-a3b2-a738bc4d38ad",
+      "result_id": "cf7cbba8-108c-422e-ad13-45be05652e4a"
+    },
+    {
+      "claim_id": "b046df01-4cec-4536-b014-3b0f07c5fb62",
+      "result_id": "cf7cbba8-108c-422e-ad13-45be05652e4a"
+    },
+    {
+      "claim_id": "3590808c-a9fe-45f8-b1ce-d9d51da214bd",
+      "result_id": "a858b94a-1006-4fcb-9c4d-f02ca7cb606a"
+    },
+    {
+      "claim_id": "8e8d188f-7b63-4a14-bb6e-c2e6ec10c9d1",
+      "result_id": "e32d1aa0-92f1-4c1f-b280-a8cc0d90948d"
+    }
+  ],
+  "comparisons": []
+}

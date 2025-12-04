@@ -1,0 +1,293 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "The presence of a person at the gaze goal location significantly reduces saccade errors (angular, amplitude, and Euclidean) and latency of the first gaze-following saccade. This demonstrates that observers integrate peripheral visual information about potential gaze goals with foveal information about the gazer's head to guide eye movements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C11 are well-supported by statistical analyses (ANOVAs with large effect sizes, highly significant p-values) and visual data in Figure 2. The experimental manipulation (digitally removing gaze goals while keeping gazer information identical) provides strong evidence for the integration of peripheral and foveal information during gaze-following.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C42",
+      "C43",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Observers execute anticipatory first saccades that predict the gaze goal direction before the gazer's head completes its movement. The saccade angular error (18\u00b0) is significantly smaller than the gazer's head angular error at saccade initiation (40\u00b0), indicating saccades anticipate head direction by 340-370ms (target present) or 160-220ms (target absent), or 440-470ms and 260-320ms respectively when accounting for saccade programming delays.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C15 and C42-C48 are supported by bootstrap statistical tests with large effect sizes and data from both DNN and human annotations of gazer head direction. The temporal calculations are logically derived from established saccade programming delays (~100ms). However, the exact anticipation times depend on the accuracy of the DNN/human gaze estimates and assumptions about programming delays.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Observers execute reverse saccades (backward saccades toward the gazer) in 22% of trials, typically as the 2nd or 3rd saccade. These reverse saccades are triggered by slow gazer head velocity during the first 230ms of the video, suggesting observers infer the gazer's head might stop. Head velocity is the best predictor of reverse saccades among all gaze features tested.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C23 are supported by descriptive statistics, cluster-based permutation tests, and SVM classification analyses. The association between low head velocity and reverse saccades is statistically robust (p=1.0e-04, Cohen's d=1.9). The SVM analysis provides additional evidence that head velocity (71.2% accuracy) outperforms other features in predicting reverse saccades.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C81"
+    ],
+    "result": "Reverse saccades are planned concurrently with (prior to execution of) the first forward saccade, not after. Freezing the video after the first saccade execution did not reduce the proportion of reverse saccades (22% frozen vs 21% unfrozen, p=0.6), demonstrating that reverse saccades are programmed before the first forward saccade is executed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C25 and C81 are supported by an elegant experimental manipulation (Experiment 1A) with appropriate statistical testing. The lack of difference in reverse saccade frequency between frozen and unfrozen conditions provides strong evidence for concurrent programming. However, the sample size is small (n=5), though power analysis suggests this is adequate for detecting the effect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C82"
+    ],
+    "result": "Reverse saccades have a functional role in improving gaze-following accuracy. They land close to the gazer's head (mean distance 0.79\u00b0) and subsequent forward saccades after reverse saccades show reduced angular error (target present: 20.5\u00b0 vs 33.7\u00b0; target absent: 34.4\u00b0 vs 71.0\u00b0), amplitude error, and Euclidean error compared to forward saccades before reverse saccades.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C30 and C82 are supported by bootstrap statistical tests with appropriate multiple comparison corrections (FDR). The effect sizes are substantial (Cohen's d ranging from 0.38 to 1.2). The data clearly show improved accuracy after reverse saccades, though the effect is stronger for target/distractor-present conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "The benefit of reverse saccades is causally linked to re-fixating the gazer. When the gazer is digitally removed after reverse saccade detection, the saccade angular error post-reverse is significantly higher (target present: 28.2\u00b0 vs 9.2\u00b0; target absent: 46.0\u00b0 vs 12.8\u00b0) compared to unaltered videos, demonstrating that foveal reprocessing of the gazer is necessary for the accuracy benefit.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C33 are strongly supported by Experiment 2's causal manipulation with robust statistics (bootstrap tests, large effect sizes Cohen's d ~1.05-1.06). The experimental design controls for processing time by comparing trials with matched timing but different gazer presence, providing strong causal evidence. The replication of basic findings from Experiment 1 in this new cohort strengthens confidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Anticipatory and reverse saccades occur spontaneously during free-viewing search without explicit instructions to follow gaze. In Experiment 3, participants executed gaze-following saccades in 74-91% of trials, anticipatory saccades in 88% of trials, and reverse saccades in 33-37% of trials, demonstrating these behaviors are not artifacts of task instructions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C39 are supported by data from Experiment 3 with a different task (free-viewing search). The occurrence of similar or even higher rates of reverse saccades (33-37% vs 22% in Experiment 1) without explicit gaze-following instructions provides strong evidence for the ecological validity of these behaviors. However, the small sample size (n=5) is a limitation, though power analysis suggests adequacy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C79",
+      "C80"
+    ],
+    "result": "The oculomotor system integrates foveal gazer information with peripheral gaze goal information to make active predictions about likely gaze goals and dynamically monitors gazer head velocity to alter eye movements. This represents an inferential process that uses peripheral information to execute predictive saccades anticipating gazer head direction by 190-350ms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C41 and C79-C80 represent high-level interpretations well-supported by the collective experimental findings. The integration of peripheral and foveal information is demonstrated by the gaze goal presence/absence manipulation. The predictive nature is shown by anticipatory saccades. The dynamic monitoring is evidenced by head velocity-triggered reverse saccades. These interpretations are reasonable given the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C49"
+    ],
+    "result": "The oculomotor system might use multiple cues (head velocity, head deceleration, estimated gaze errors, etc.) to infer when the gazer's head will stop and trigger gaze-following saccades.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C49 is explicitly speculative (\"might use\") and while head velocity is well-supported as a predictor, the contribution of other cues like deceleration and estimated gaze errors is less directly tested. Figure 4\u2014figure supplement 1 shows correlations with other features, but these may be confounded with velocity. The SVM analysis shows velocity is the best single predictor, but doesn't rule out contributions from other features.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C52"
+    ],
+    "result": "In 15% of reverse saccade trials, first saccades landed within 0.5\u00b0 of the target but were still followed by reverse saccades, suggesting reverse saccades are not simply triggered by missing the gaze goal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C52 is supported by data analysis and provides evidence against an alternative explanation. However, this is a relatively small subset of trials (15% of 22% = ~3% of all trials) and the interpretation could be strengthened with additional analysis of what distinguishes these trials.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Experimental design and stimulus characteristics: 25 observers viewed 80 videos (1.2s) with systematic manipulation of gaze goal presence (25% target present, 25% distractor present, 50% absent). Observers executed 3-5 saccades per trial, with mean first saccade latency of 0.34s. In 81% of trials, first saccades were initiated before the gazer's head stopped moving (mean duration 0.61s).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C69 and C74-C76 describe the experimental design and basic descriptive statistics. These are well-documented in the methods and results sections with appropriate detail. The stimulus characteristics (eccentricity, head size) are clearly specified and relevant for interpreting the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C77",
+      "C78"
+    ],
+    "result": "The visual angle subtended by heads in the videos (1.47\u00b0) corresponds to viewing a real head at ~9.3m distance, at which the eyes subtend only 0.147\u00b0 vertically, making eye gaze information poor compared to head orientation. This justifies the focus on head direction rather than eye gaze.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C61 and C77-C78 involve straightforward geometric calculations based on known anatomical dimensions (cited appropriately) and measured visual angles. The calculations appear correct and the interpretation that eye information is limited at this distance is reasonable. This provides important context for why the study focuses on head direction.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C70",
+      "C71"
+    ],
+    "result": "The DNN model's accuracy in estimating gaze goal location is comparable to humans for target/distractor present trials and superior for absent trials.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C71 are supported by citation to prior work (Han and Eckstein, 2022). The validation of the DNN model is important for interpreting the gazer vector analyses, though the details are not provided in this manuscript. Reliance on a single citation for this critical methodological point is a minor limitation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C72",
+      "C73"
+    ],
+    "result": "In 87% of videos, the gazer started looking away at the end of the movie (mean 0.98-1.06s), and 88% of reverse saccades were executed before this time, indicating reverse saccades are not simply responses to the gazer looking away.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C73 are supported by analysis of video timing using both DNN and human annotations. This provides important evidence that reverse saccades are not artifacts of the gazer's behavior at the end of the video. The convergence of DNN and human estimates strengthens confidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "Background claims about the foveated visual system: humans make ~3 saccades/second, and the foveated system allocates more neural resources (retinal, thalamic, cortical, superior colliculus) to central vision, allowing computational and metabolic savings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5 are standard background knowledge appropriately cited to established literature. These provide necessary context for understanding the importance of eye movement control but are not novel findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C6",
+      "C7"
+    ],
+    "result": "Background claims about gaze-following: the behavior emerges at 8-10 months in human infants and is found across species including macaques, dogs, and goats.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C7 are well-established background knowledge appropriately cited. These provide evolutionary and developmental context for the importance of gaze-following but are not novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C44",
+      "C50",
+      "C51"
+    ],
+    "result": "Background claims about saccade programming: saccades are based on visual information ~100ms before execution, with 50-100ms delay between programming and execution. Concurrent saccade programming has been documented in simplified lab experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44, C50-C51 cite established literature on saccade programming delays and concurrent programming. These are important for interpreting the timing analyses but represent prior knowledge rather than novel findings. The novelty is in demonstrating concurrent programming in naturalistic gaze-following contexts.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Reverse saccades occur in other tasks (working memory, reading) but the reverse saccades during gaze-following are distinct in being triggered by moment-to-moment changes in gazer head velocity rather than errors or insufficient processing time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C55 appropriately cite literature on reverse/regressive saccades in other contexts and draw reasonable distinctions. The interpretation that gaze-following reverse saccades are functionally distinct is supported by the velocity-triggering data and functional benefit analyses, though direct comparisons across tasks would strengthen this claim.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Background claims about neural substrates: gaze position relates to neuronal responses in superior temporal sulcus and dorsal prefrontal cortex, and concurrent saccade programming relates to Frontal Eye Fields neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C58 appropriately cite relevant neuroscience literature to provide neural context for the behavioral findings. These are not tested in the current study but provide reasonable speculation about underlying mechanisms.",
+    "result_type": "MINOR"
+  }
+]

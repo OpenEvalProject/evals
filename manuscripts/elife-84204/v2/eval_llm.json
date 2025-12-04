@@ -1,0 +1,376 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C10",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "sAC is localized within mitochondria of ventricular cardiomyocytes, specifically within the intermembrane space (IMS) rather than the matrix. Super-resolution imaging shows sAC colocalizes with ATP synthase but not with F-actin, and is located within the outer mitochondrial membrane perimeter but not embedded in membranes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C47-C54 are well-supported by Airyscan super-resolution imaging data in Figure 1, showing high Pearson correlation between sAC and ATP synthase (C48), lack of colocalization with F-actin (C49), and localization within but not at the OMM (C52). The inference that sAC is in the IMS is supported by structural knowledge (C53) and imaging data (C52), though the exact compartment (IMS vs matrix) requires functional data from other results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Cardiac mitochondria contain functional sAC but no detectable transmembrane adenylyl cyclases (tmACs). Bicarbonate (10-15 mM) robustly activates cAMP production in isolated mitochondria, while forskolin (a tmAC activator) has no effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C58 are strongly supported by ELISA measurements in Figure 2A showing dose-dependent cAMP production with bicarbonate but no response to forskolin. This functional distinction between sAC and tmAC is well-established in the literature (C55, C56) and the experimental data clearly demonstrate only sAC is present and functional in cardiac mitochondria (C57, C58).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Physiological bicarbonate concentrations (10-15 mM) significantly increase mitochondrial ATP production, and this effect is further enhanced by IBMX (a PDE inhibitor), resulting in a doubling of ATP output. This indicates a cAMP signaling system inside mitochondria that responds to bicarbonate and is modulated by PDEs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C61 are well-supported by ATP production measurements in Figure 2B,C. The dose-response relationship with bicarbonate and the additive effect of IBMX provide strong evidence for a bicarbonate-activated, PDE-modulated cAMP signaling system regulating ATP production. Statistical significance is shown (p<0.05, p<0.01, p<0.001) with appropriate sample sizes (n=12-16).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Cardiac mitochondria contain carbonic anhydrase XIV (CA-XIV), which is localized to an interior compartment of the mitochondria. Together with sAC, both critical upstream components of the CO2/bicarbonate signaling pathway reside inside mitochondria.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C64 are supported by immunolabeling and super-resolution imaging in Figure 2D,E showing CA-XIV presence and localization. The co-labeling with TOM20 demonstrates interior localization (C63). The conclusion that both sAC and CA-XIV are inside mitochondria (C64) is well-supported by the combined imaging data, though the exact subcompartment (IMS vs matrix) is not definitively resolved by imaging alone.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Cardiac mitochondria have a lamellar structure with cristae creating alternating layers of intracristal space and matrix. Most (\u226585%) of the IMS volume is in crista layers adjacent to matrix. CO2 can rapidly equilibrate between matrix and cristae, and spontaneous CO2 hydration generates steady-state HCO3\u207b levels that track energy consumption.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C70 are supported by electron tomography data in Figure 2H and stereological analysis. The structural characterization (C65, C66) is directly measured from tomograms. The inferences about CO2 equilibration (C67) and bicarbonate generation (C68, C70) are reasonable based on known CO2 permeability and chemical equilibrium principles. The role of CA in speeding response time (C69) is a logical inference from enzyme kinetics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "At low [Ca2+]m, ATP production is minimal and not increased by IBMX, suggesting little endogenous cAMP. However, externally added cAMP increases ATP production by ~50%, further enhanced to 100% by IBMX. This demonstrates sAC is in the IMS (accessible to external cAMP) and activates targets in the IMS that signal to the matrix.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C79 are well-supported by functional data in Figure 3A. The lack of IBMX effect alone (C75) combined with the response to exogenous cAMP (C77) provides strong evidence for IMS localization (C78). The permeability properties of cAMP through VDAC but not IMM support the conclusion that signaling occurs in the IMS (C79). The experimental design effectively uses membrane permeability to map compartmentalization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "EPAC1, not PKA, is the target of cAMP in mitochondrial IMS. At low [Ca2+]m with exogenous cAMP, the EPAC1 inhibitor CE3F4 blocks ATP production increase, while the PKA inhibitor H89 has no effect. EPAC1 contributes to ATP generation even at low [Ca2+]m.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C84 are strongly supported by pharmacological inhibitor experiments in Figure 3A. The differential effects of CE3F4 vs H89 (C81) provide clear evidence that EPAC1, not PKA, mediates the cAMP effect (C82). The conclusion that signaling is in the IMS (C84) is supported by the cAMP permeability arguments. The experimental design with specific inhibitors is appropriate, though potential off-target effects are not discussed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "The bicarbonate/sAC/cAMP signaling pathway works independently of, yet additively with, [Ca2+]m signaling. At high [Ca2+]m, ATP production increases 2.6-fold, and adding cAMP produces an additional 1.3-fold increase. EPAC1 activation leads to Rap1 activation, as shown by pull-down assays.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C90 are well-supported by data in Figure 3B showing additive effects of Ca2+ and cAMP (C85, C86), supporting independence of the two pathways (C87). The sAC system functioning without elevated Ca2+ (C88) is demonstrated in earlier figures. EPAC1 sensitivity (C89) is shown by CE3F4 inhibition. Rap1 activation (C90) is directly demonstrated by pull-down assays in Figure 3C,D with appropriate controls (GTP\u03b3S).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "8Br-cAMP (membrane-permeant cAMP analog) decreases ATP production, contrasting with the stimulatory effect of regular cAMP. This indicates that cAMP in the matrix has inhibitory effects that overwhelm the stimulatory IMS signaling. The physiological bicarbonate/cAMP signaling occurs in the IMS, not the matrix.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C102 are supported by experiments in Figure 4B,C showing opposite effects of cAMP vs 8Br-cAMP. The membrane permeability properties of 8Br-cAMP (C93-C95) are well-established. The decreased ATP production with 8Br-cAMP (C96, C97, C99) contrasts sharply with cAMP effects, supporting the conclusion that matrix cAMP is inhibitory (C100). This provides strong evidence that physiological signaling is IMS-based (C101, C102), contradicting previous work (Acin-Perez et al., 2009).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "In post-MI hearts (8 weeks after LAD ligation), mitochondria from non-infarcted regions show altered ATP production regulation. At low [Ca2+]m, basal ATP production is elevated above sham controls, while at high [Ca2+]m it reaches control levels. The bicarbonate/cAMP system remains functional, suggesting both signaling arms are needed but with different set-points.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C128-C136 are supported by echocardiography data (Figure 6B,C) confirming MI and by ATP production measurements (Figure 6D) from non-infarcted tissue. The elevated basal ATP production at low Ca2+ (C132) and normal levels at high Ca2+ (C134) suggest remodeling of the regulatory systems. The continued cAMP responsiveness (C135) indicates the bicarbonate system remains functional. However, the mechanistic interpretation of 'different set-points' (C136) is somewhat speculative and would benefit from more detailed analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C5",
+      "C9",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C16",
+      "C17"
+    ],
+    "result": "CO2/bicarbonate represents a third regulatory system for mitochondrial ATP production. Bicarbonate activates sAC to generate cAMP, which activates EPAC1 and Rap1 in the IMS, increasing ATP production. This system works independently of, yet in conjunction with, [Ca2+]m-dependent regulation, functioning in a resonant/complementary manner to match ATP production to energy consumption.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C9, C11-C14, C16-C17 represent the main integrated conclusion of the paper. These are well-supported by the totality of experimental evidence: bicarbonate activation of sAC (Figure 2A), cAMP generation (Figure 2A), EPAC1/Rap1 activation (Figure 3), IMS localization (Figures 1, 3A, 4), independence from Ca2+ (Figure 3B), and functional significance (Figures 2-3, 6). The 'resonant/complementary' concept (C17) is a reasonable interpretation of the additive effects, though the detailed mechanisms of integration remain to be elucidated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C148"
+    ],
+    "result": "The current findings dispute all key conclusions of Manfredi et al. (2009) regarding sAC localization in the matrix and PKA involvement. Previous work is controversial, with disputed claims about PKA role in matrix, sAC matrix localization, and pharmacological tool specificity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C42, C148 accurately represent the controversy in the literature, supported by multiple citations (Di Benedetto et al., 2021; Covian et al., 2014; Lefkimmiatis et al., 2013; Wang et al., 2016). The current study's findings (IMS localization, EPAC not PKA, no matrix signaling) directly contradict Manfredi et al. The reference to a supplementary table (C148) comparing findings strengthens this assessment. This represents an important correction of the literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C43",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "sAC signaling reports on nutrient consumption (not availability) by monitoring CO2/HCO3\u207b production from metabolism. The bicarbonate sensitivity of sAC enables it to monitor 'carbon emissions' and sense an integrated local energy consumption index reflecting cellular energy demands and CO2 production as mitigated by vascular waste removal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43, C104-C106 represent a conceptual reframing of sAC function. The distinction between 'consumption' vs 'availability' (C43) is supported by the mechanism: CO2 is produced by metabolism (substrate consumption), not by substrate availability per se. The 'carbon emissions monitoring' concept (C105) and 'integrated energy consumption index' (C106) are reasonable interpretations of the bicarbonate-sensing mechanism, though somewhat metaphorical. The role of vascular waste removal (C106) connects to the EMS system discussed in the introduction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C108"
+    ],
+    "result": "While sAC, EPAC1, and Rap1 signaling occurs in the IMS, the exact location and identity of the Rap1 target protein(s) that ultimately affect ATP synthesis remain unknown. The working hypothesis is that Rap1 targets a protein in the IMM that affects ATP synthesis directly or indirectly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C92, C108 explicitly acknowledge a knowledge gap in the signaling pathway. The localization of sAC, EPAC1, and Rap1 to the IMS (C91) is well-supported by the experimental data. The statement that the downstream target is unknown (C92) is honest and appropriate. The hypothesis about an IMM target (C108) is reasonable given that neither EPAC1 nor Rap1 has transmembrane domains, but remains speculative and is appropriately labeled as such.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144"
+    ],
+    "result": "The current study employed methodological improvements over previous work: inclusion of GDP/GTP to enable EPAC/Rap1 function, use of pyruvate (more physiologically relevant for cardiac mitochondria than glutamate), and direct luminescence measurements of ATP production (higher signal-to-noise than oxygen consumption). These improvements enabled detection of cAMP effects via EPAC in the IMS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C140-C144 describe methodological improvements that are well-justified. The inclusion of GDP/GTP (C140) is critical for GTPase function and was apparently missing in previous studies. The use of pyruvate vs glutamate (C141-C142) is appropriate for cardiac tissue. The luminescence ATP measurements (C143) are direct and quantitative. These methodological choices are clearly described in the Methods section and the rationale is sound. The conclusion that these improvements enabled the key findings (C144) is reasonable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Background context: The heart consumes ATP at high and variable rates with minimal reserves, requiring dynamic regulation. Two known systems regulate mitochondrial ATP production: [Ca2+]m (linked to heart rate) and blood flow via electro-metabolic signaling. However, these systems do not fully account for the physiological range of ATP consumption, particularly when work increases at constant [Ca2+]m.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4, C18-C25 establish the background and motivation for the study. These are well-supported by extensive literature citations (Boyman et al., 2020; Wescott et al., 2019; Zhao et al., 2020; and many others). The gap in knowledge (C4, C24, C25) is clearly articulated and provides strong motivation for investigating a third regulatory system. This represents accurate representation of prior work and identification of an important unsolved problem.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Background on CO2/bicarbonate and adenylyl cyclases: CO2 is generated in mitochondrial matrix as metabolic waste, rapidly permeates membranes, and forms bicarbonate via carbonic anhydrase. sAC is activated by bicarbonate and differs from tmACs in localization (soluble, in organelles) and regulation (bicarbonate-activated, forskolin-insensitive). sAC achieves high signal-to-noise by producing cAMP in small volumes containing its targets (PKA and EPACs).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C8, C26-C36 provide essential background on CO2 biochemistry and adenylyl cyclase biology. These are well-established facts supported by appropriate citations (Buck et al., 1999; Litvin et al., 2003; Zippin et al., 2003; and others). The distinction between sAC and tmAC properties (C26-C27, C32-C33) is critical for the experimental design. The description of sAC compartmentalization (C34-C35) sets up the investigation of mitochondrial localization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "cAMP permeability properties: cAMP cannot readily cross membranes due to hydrophilicity. In isolated mitochondria, cAMP can enter the IMS through VDAC pores in the OMM but is excluded from the matrix because the IMM is impermeable to it.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C73 describe critical biophysical properties that underpin the experimental strategy. The hydrophilicity of cAMP and its membrane impermeability (C71, C73) are well-established and supported by citations (Lefkimmiatis et al., 2013; Di Benedetto et al., 2013). The VDAC permeability (C72) is also well-documented (Rostovtseva and Colombini, 1996-1997-2002). These properties are essential for interpreting the compartmentalization experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C103",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "Integration of Ca2+ and bicarbonate signaling: The Ca2+ pathway links ATP production to heart rate by elevating [Ca2+]m, which stimulates dehydrogenases, increases NADH, hyperpolarizes \u0394\u03a8M, and increases ATP synthase activity. The bicarbonate pathway responds to pressure-volume work via CO2 production, sAC activation, and cAMP signaling. The bicarbonate arm can double ATP production compared to elevated [Ca2+]m alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103, C122-C127 describe the integrated model of dual regulation. The Ca2+ pathway mechanism (C103, C122-C124) is well-established and supported by citations. The bicarbonate pathway (C125-C126) is the key finding of this paper. The quantitative statement about doubling ATP production (C127) is supported by data in Figures 2-3. This integration is illustrated in Figure 5 and represents the main conceptual advance of the paper.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "Structural and functional considerations for IMS signaling: The IMS has two domains (peripheral and intracristal), with ~85% of IMS volume in cristae in cardiac mitochondria. pH gradients exist within cristae. The lamellar structure with alternating matrix/ICS layers allows CO2 to bathe cristae, where it rapidly hydrates to HCO3\u207b. Bicarbonate levels can vary from 5-24 mM based on pH (6.7-7.4) and pCO2, making bicarbonate-based signaling feasible in crista microcompartments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C121 provide detailed structural and biochemical arguments for why IMS/crista signaling is feasible. The structural data (C112-C113) are from electron tomography (Figure 2H) and literature. The pH gradients (C114-C115) are from literature (Rieger et al., 2014; Garcia et al., 2019). The CO2 hydration kinetics (C117) are based on modeling and literature (Garg and Maren, 1972). The bicarbonate concentration calculations (C120) use the Henderson-Hasselbalch equation. These arguments are logical and well-supported, though some involve modeling and inference.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C137",
+      "C138",
+      "C139",
+      "C145",
+      "C146",
+      "C147",
+      "C149",
+      "C150"
+    ],
+    "result": "Summary and context: The study demonstrates two independent, complementary signaling systems regulating cardiac mitochondrial ATP production. Previous work by Buck/Levine, Manfredi, Balaban, and Lefkimmiatis reached different conclusions about sAC/PKA localization and function. Anderson and Lezoualc'h reported CaMKII involvement. The current findings show both pathways are needed in health and disease, with possible modifications post-MI. The resonant signaling enables continuous ATP production matching physiological demands.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C137-C139, C145-C147, C149-C150 provide context and summary. The citations of previous work (C137-C139, C145-C146) are accurate. The main conclusion about two independent systems (C147) is well-supported by the experimental data. The statement about possible modifications post-MI (C149) is supported by Figure 6 data, though mechanistic details are limited. The final conceptual statement about resonant signaling (C150) is a reasonable synthesis of the findings.",
+    "result_type": "MINOR"
+  }
+]

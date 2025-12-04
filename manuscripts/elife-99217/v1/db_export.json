@@ -1,0 +1,1538 @@
+{
+  "submission": {
+    "id": "e086bb80-e07b-412b-a2fa-011140701228",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-04T05:13:27.126378Z",
+    "updated_at": "2025-12-04T05:13:27.126378Z"
+  },
+  "content": [
+    {
+      "id": "2320e6ce-6865-4ddf-ab05-c3bf29803362",
+      "submission_id": "e086bb80-e07b-412b-a2fa-011140701228",
+      "content_type": "manuscript",
+      "content_text": "# CDK-mediated phosphorylation of PNKP is required for end-processing of single-strand DNA gaps on Okazaki fragments and genome stability\n\n## Authors\n\n- Kaima Tsukada<sup>1</sup> ([ORCID: 0000-0002-6725-9514](https://orcid.org/0000-0002-6725-9514)) \u2020\n- Rikiya Imamura<sup>1</sup>\n- Tomoko Miyake<sup>1</sup> ([ORCID: 0000-0003-3389-4007](https://orcid.org/0000-0003-3389-4007))\n- Kotaro Saikawa<sup>1</sup>\n- Mizuki Saito<sup>1</sup>\n- Naoya Kase<sup>1</sup>\n- Lingyan Fu<sup>1</sup>\n- Masamichi Ishiai<sup>3</sup> ([ORCID: 0000-0003-4313-9945](https://orcid.org/0000-0003-4313-9945))\n- Yoshihisa Matsumoto<sup>1</sup> ([ORCID: 0000-0002-0758-290X](https://orcid.org/0000-0002-0758-290X))\n- Mikio Shimada<sup>1</sup> ([ORCID: 0000-0003-1980-9187](https://orcid.org/0000-0003-1980-9187)) \u2020\n\n### Affiliations\n\n1. Laboratory for Zero-Carbon Energy, Institute of Integrated Research, Institute of Science Tokyo Tokyo Japan ([ROR:05dqf9946](https://ror.org/05dqf9946))\n2. Center for Chromosome Stability, Department of Cellular and Molecular Medicine, University of Copenhagen Copenhagen Denmark ([ROR:035b05819](https://ror.org/035b05819))\n3. National Cancer Center Research Institute Tokyo Japan ([ROR:0025ww868](https://ror.org/0025ww868))\n\n\u2020 Corresponding author\n\n## Abstract\n\nPolynucleotide kinase phosphatase (PNKP) has enzymatic activities as 3\u2032-phosphatase and 5\u2032-kinase of DNA ends to promote DNA ligation and repair. Here, we show that cyclin-dependent kinases (CDKs) regulate the phosphorylation of threonine 118 (T118) in PNKP. This phosphorylation allows recruitment to the gapped DNA structure found in single-strand DNA (ssDNA) nicks and/or gaps between Okazaki fragments (OFs) during DNA replication. T118A (alanine)-substituted PNKP-expressing cells exhibited an accumulation of ssDNA gaps in S phase and accelerated replication fork progression. Furthermore, PNKP is involved in poly (ADP-ribose) polymerase 1 (PARP1)-dependent replication gap filling as part of a backup pathway in the absence of OFs ligation. Altogether, our data suggest that CDK-mediated PNKP phosphorylation at T118 is important for its recruitment to ssDNA gaps to proceed with OFs ligation and its backup repairs via the gap-filling pathway to maintain genome stability.\n\n## Introduction\n\nGenomic DNA is threatened by intrinsic factors such as oxidative stress derived from mitochondria-dependent energy metabolism and extrinsic factors such as ionizing radiation (IR), ultraviolet radiation, and chemical compounds. These factors generate various types of DNA damage, such as base damage, DNA single-strand breaks (SSBs), and double-strand breaks (DSBs). Because DNA lesions cause chromosomal aberrations, leading to aneuploidy and tumorigenesis, DNA repair machinery has evolved in living organisms. Polynucleotide kinase phosphatase (PNKP) is a key enzyme with a dual role that bears 3\u2032-phosphatase and 5\u2032-kinase activity (Chappell et al., 2002; Karimi-Busheri et al., 1999; Jilani et al., 1999; Coquelle et al., 2011). Human PNKP consists of 521 amino acids, including the forkhead-associated (FHA) domain (amino acid residues 1\u2013110) in the amino-terminal region, and phosphatase (146\u2013337) and kinase (341\u2013516) domains in the carboxy-terminal region, which are connected by a linker region (111\u2013145). PNKP is recruited to SSBs and DSBs sites depending on its interactions via the FHA domain of PNKP with XRCC1 and XRCC4, respectively, and is involved in base excision repair (BER), SSB repair, and non-homologous end joining for DSB repair (Breslin and Caldecott, 2009; Mani et al., 2019; Mani et al., 2010; Tsukada et al., 2020; Tsukada et al., 2021). The PNKP linker region includes a nuclear localization signal and phosphorylation sites (Tsukada et al., 2020). Phosphorylation of PNKP at serine 114 by ataxia telangiectasia mutated (ATM) is required for protein stability and efficient DNA repair for cellular survival (Segal-Raz et al., 2011; Parsons et al., 2012). Mutations in PNKP are associated with the human inherited disease microcephaly and seizures (MCSZ), a neurodevelopmental disease (Shen et al., 2010), ataxia oculomotor apraxia 4 (AOA4) (Bras et al., 2015), and Charcot\u2013Marie\u2013Tooth disease (CMT2B2), a neurodegenerative disease (Pedroso et al., 2015). These mutations are mostly located in the phosphatase or kinase domains and attenuate the phosphatase and kinase activities (Reynolds et al., 2012; Kalasova et al., 2020; Berm\u00fadez-Guzm\u00e1n et al., 2020).\n\nThe BER and SSBs repair intermediates form gapped DNA structures, which are the main targets of PNKP. These DNA gaps are also found in Okazaki fragments (OFs) during DNA replication. DNA replication integrity is essential for ensuring genomic stability and accurate cell proliferation (Siddiqui et al., 2013; O\u2019Donnell et al., 2013). DNA replication is initiated at the origin of replication in the leading strand and at short RNA-primed DNA fragments, known as OFs, in the lagging strand (Leonard and M\u00e9chali, 2013; Okazaki et al., 1968). Recent reports suggest that single-strand DNA (ssDNA) gap-filling machinery is involved in OFs maturation (Hanzlikova et al., 2018). Poly (ADP-ribose) polymerase 1/2 (PARP1/2) is involved in the repair of SSBs, DSBs, and multiple DNA replication processes (Ray Chaudhuri et al., 2012; Ray Chaudhuri and Nussenzweig, 2017). PARP1 activity is required for efficient SSBs repair and ssDNA gap-filling pathway in OFs during DNA replication (Hanzlikova et al., 2018). The DNA replication machinery is precisely controlled by cyclin-dependent kinases (CDKs), which phosphorylate several replication factors to allow them to enter the S phase and promote DNA synthesis (Swaffer et al., 2016). During replication fork progression, ssDNA is fragile and protected by replication protein A (RPA) (Wold, 1997). When replication forks stall, ataxia telangiectasia mutated and Rad3-related protein (ATR) is activated and phosphorylates CHK1 and RPA to resolve or eliminate the impediment, promoting replication fork recovery (Cortez et al., 2001; Zou and Elledge, 2003). Furthermore, DNA damage, such as base damage, SSBs, and DSBs, occurs upon genotoxic stress and replication errors, which lead to DNA replication stress, genomic instability, genetic mutation, and tumorigenesis.\n\nIn this study, we found that PNKP was required for the ssDNA gap-filling pathway during DNA replication. Defects in PNKP induce the accumulation of single-strand gaps in OFs and genome instability. We also found that CDKs phosphorylate PNKP on threonine 118 (T118), mainly in the S phase, and that CDK-mediated PNKP phosphorylation allows it to be recruited to ssDNA gaps on OFs. Moreover, PNKP enzymatic activities, especially phosphatase activity, are required for processing of the ends of single-strand gaps on OFs. Taken together, our data suggest that phosphorylation-mediated PNKP recruitment to ssDNA gaps on OFs and the end-processing activity of PNKP are critically important for preventing genome instability through appropriate regulation of DNA replication.\n\n## Results\n\n### Generation of PNKP knockout U2OS cell line\n\nIn a previous study, we found that the depletion of PNKP resulted in impaired cell growth in mice (Shimada et al., 2015). To confirm that this phenotype is observed in human cells, we initially generated PNKP knockout U2OS cells (PNKP\u2212/\u2212 cells) using CRISPR/Cas9 Nickase (D10A) targeting exon 4 of the PNKP coding region (Chiang et al., 2016). We obtained two clones (C1 and C2) that showed complete loss of PNKP, as confirmed by western blot analysis with both N-terminus and C-terminus PNKP-recognized antibodies and DNA sequencing (Figure 1, Figure 1\u2014figure supplement 1A, B).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/99217/elife-99217-fig1-v1.jpg)\n\n**Figure 1.:** (A) Protein expression analysis of PNKP knockout U2OS cells (PNKP\u2212/\u2212 cells) generated by CRISPR/Cas9 genome editing. Protein expression of PNKP in PNKP\u2212/\u2212 clone 1 (C1) and clone 2 (C2) were confirmed by western blotting with N- and C-terminal recognized PNKP antibodies, respectively. XRCC1, XRCC4, and PCNA antibodies were used as loading controls. (B) Measurement of growth rate of U2OS WT and of PNKP\u2212/\u2212 C1 and C2 cells. Cell numbers (shown in vertical axis) were counted at indicated time points (shown in horizontal axis). (C, D) Measurement of endogenous DNA single-strand breaks (SSBs) of PNKP\u2212/\u2212 cells. SSBs were analyzed by immunofluorescence using PAN-ADP-ribose-binding reagents at 30 min after ionizing-radiation (IR) 2 Gy exposure in U2OS WT and PNKP\u2212/\u2212 (C1 and C2) cells treated with 10 \u03bcM poly ADP-ribose glycohydrolase inhibitor (PARGi) for 60 min. Error bars represent standard error of the mean (SEM). (E) Measurement of SSBs, detected by ADP-ribose intensity, in U2OS WT and PNKP\u2212/\u2212 C1 cells under hydroxyurea (HU) or Emetine (EME) treatment. Cells were pretreated with PARGi for 30 min prior to the treatment of HU or EME. ADP-ribose intensities were normalized by the intensity of non-treated (NT) U2OS. Error bars represent SEM. (F) Schematic and a representative image of experiments for measuring the formation of single-strand DNA gaps during DNA replication in U2OS WT and PNKP\u2212/\u2212 C1 cells with S1 nuclease treatment. (G) Quantified results of DNA fiber length in U2OS WT and PNKP\u2212/\u2212cells with S1 nuclease. CIdU tract lengths in CldU/IdU dual-labeled DNA fibers in the indicated cell lines were plotted as scatter plots. Error bars represent standard deviation (SD). Statistical significance was indicated as not significant (ns) and ****: 0.0005 < p \u2266 0.001. (H) Model of S1 nuclease-mediated digestion of DNA fiber in PNKP\u2212/\u2212 cells. In all panels, scale bar indicates 10 \u03bcm.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/99217/elife-99217-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) DNA sequencing results in PNKP exon 4 of U2OS WT, PNKP\u2212/\u2212 C1 and C2. DNA sequences of all alleles were aligned and PAM and sgRNA sequences were indicated. C1 and C2 have 2 and 3 alleles, respectively, and all reading frames were frame-shifted. \u2018Purple\u2019, \u2018Light blue\u2019, and \u2018Red\u2019 characters indicated mutations, protospacer adjacent motif (PAM), and single-guide RNA (sgRNA) sequences, respectively. \u2018-\u2019 indicates a deletion of nucleotide. (B) Targeting gene locus of CRISPR/Cas9 genome editing for generation of PNKP\u2212/\u2212 cells. PNKP L105 and P119 located on exon 4 were targeted by Cas9 D10A.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/99217/elife-99217-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) DNA double-strand break repair activity in PNKP\u2212/\u2212 C1 cells measured by western blotting. DNA double-strand breaks were analyzed by pS824-KAP1 and pS139-H2AX (\u03b3-H2AX) antibodies after indicated time points recovered from ionizing-radiation (IR) 5 Gy exposure. KAP1 and PCNA antibodies were used as loading control. p53 antibody was used as DNA damage response control. (B) Cellular sensitivity of PNKP\u2212/\u2212 cells to the DNA damages, especially DNA double-strand breaks, was measured by colony formation assay. Cells were treated by IR exposure at indicated dose. (C\u2013E) Schematic, representative images and measurement of DNA single-strand breaks induced by hydrogen peroxide (H2O2) in U2OS WT and PNKP\u2212/\u2212 cells. Single-strand breaks were analyzed by a native BrdU incorporation method. (F) Cellular sensitivity of PNKP\u2212/\u2212 cells to the DNA damages, especially DNA single-strand breaks, was measured by colony formation assay. Cells were treated by H2O2 at indicated dose. (G) Cellular sensitivity of PNKP\u2212/\u2212 cells to the DNA replication stress was measured by colony formation assay. Cells were treated by hydroxyurea (HU) at indicated dose. (H) Flowcytometric analysis for cell cycle distribution of U2OS WT and PNKP\u2212/\u2212 C1 and C2 cells. The cells were stained with propidium iodide (PI), and synthesized DNA was labeled by EdU. Percentage of each cell cycle is shown in vertical axis, cell types are shown in horizontal axis. Statistical analysis of S phase population between WT and PNKP\u2212/\u2212 C1 and C2 cells was shown above each bar graph. In all panels, scale bar indicates 10 \u03bcm. Statistical significance was indicated as not significant (ns), *: 0.01< p \u2266 0.05 and ****: 0.0005 < p \u2266 0.001.\n\nTo confirm that these PNKP\u2212/\u2212 cells have functional deficiencies in DNA repair, we analyzed their DSB repair ability (Figure 1\u2014figure supplement 2A, B). PNKP\u2212/\u2212 cells showed a delay in diminishing the phosphorylation of histone H2AX and KAP1, markers of DSBs, after IR-induced DNA damage (Figure 1\u2014figure supplement 2A). PNKP\u2212/\u2212 cells also showed increased sensitivity to IR exposure, suggesting a defect in DSB repair ability (Figure 1\u2014figure supplement 2B). We then assessed SSB repair activity in PNKP\u2212/\u2212 cells using a BrdU incorporation assay with in vitro Exonuclease III (ExoIII) digestion (Figure 1\u2014figure supplement 2C\u2013E). ExoIII excises nucleotides from 3\u2032 ends of nick and/or gap associated with SSBs, resulting in exposing incorporated BrdU (Figure 1\u2014figure supplement 2C). The cells displayed a significantly increased level of native BrdU signals and hyper-sensitivity upon SSB induction by hydrogen peroxide (H2O2), indicating that the loss of PNKP leads to reduced ability of SSB repair in cells (Figure 1\u2014figure supplement 2C\u2013F). These findings confirm deficiencies in both SSB and DSB repair in PNKP\u2212/\u2212 cells, aligning with observations from previous studies (Chalasani et al., 2018). Furthermore, PNKP\u2212/\u2212 cells showed increased sensitivity to the inhibition of DNA replication by hydroxyurea (HU) treatment (Figure 1\u2014figure supplement 2G). Taken together, these results indicate that PNKP\u2212/\u2212 cells were successfully established.\n\n### Loss of PNKP causes delayed cell proliferation due to accumulated ssDNA gaps in the S phase\n\nDuring the course of our experiments, we observed that PNKP\u2212/\u2212 cells grow slower than WT cells, consistent with our previous study in mice (Figure 1B; Shimada et al., 2015). Since cell proliferation is associated with DNA replication, we analyzed the cell cycle distribution of PNKP\u2212/\u2212 cells using flowcytometry. The analysis revealed an accumulation of PNKP\u2212/\u2212 cells in the S phase (Figure 1\u2014figure supplement 2H). Considering that increased endogenous genotoxic stress can lead to improper S phase progression, we assessed the endogenous level of DNA damage in our two PNKP\u2212/\u2212 clones. Given that one of the known targets of PNKP in DNA repair is SSBs, including ssDNA gap structures, we anticipated that PNKP might be involved in the formation of ssDNA gaps during cell proliferation, not only in the repair of exogenous DNA damage. To test this, we performed PAN ADP-ribosylation assays combined with poly ADP-ribose glycohydrolase inhibitor (PARGi) treatment (Figure 1C, D; Tsukada et al., 2020; Kalasova et al., 2020). Our two PNKP\u2212/\u2212 clones exhibited significantly higher levels of ADP-ribosylation, a marker of ssDNA gaps/breaks, compared to WT cells, indicating that PNKP\u2212/\u2212 cells face a pronounced amount of endogenously induced ssDNA gaps/breaks. To investigate whether the accumulated ssDNA gaps are generated in S phase during DNA replication, we assessed PAN ADP-ribose levels in PNKP\u2212/\u2212 cells in combination with treatment with HU or Emetine (EME), a DNA replication inhibitor that blocks single-strand gap formation on replication forks via proteosynthesis inhibition (Figure 1E; Burhans et al., 1991; Lukac et al., 2022). In WT cells, HU treatment increased the amount of poly ADP-ribosylation, yet statistically non-significant (p = 0.067), whereas EME prevented poly ADP-ribosylation by inhibiting single-strand nick and/or gap formation in the S phase of U2OS WT cells (p = 0.0093). These results were consistent with previous studies (Hanzlikova et al., 2018). Although PNKP\u2212/\u2212 cells showed high levels of ADP-ribose intensity spontaneously, HU and EME treatment rescued the increased ADP-ribose intensity in PNKP\u2212/\u2212 cells, albeit higher, yet statistically non-significant, extent than WT cells. This suggests that loss of PNKP leads to an accumulation of ssDNA gap structures during DNA replication. To directly detect DNA replication-mediated ssDNA gap formation in PNKP\u2212/\u2212 cells, we performed an S1 DNA fiber assay (Figure 1F, G). Cells were labeled with 5-iodo-2\u2032-deoxyuridine (IdU) for 15 min, followed by 60 min of 5-chloro-2\u2032-deoxyuridine (CldU) labeling. The individual tract lengths of CldU-labeled nascent DNA in IdU/CldU-double positive DNA fiber were quantified. Where indicated, labeled DNA was treated with a single-stranded DNA/RNA-specific endonuclease, S1 nuclease, to detect post-replicative ssDNA gaps by the shortened DNA tract length due to digestion of ssDNA gaps by S1 nuclease (Figure 1H). Despite the slower cell growth, PNKP\u2212/\u2212 cells exhibited faster progression of DNA replication fork than WT cells (Figure 1G). This result suggests that PNKP may be involved in the progression of DNA replication forks, as a similar phenotype has been reported in PCNA polyubiquitination mutant (K164R) cells, which were unable to reduce the replication fork speed (Thakar et al., 2020). PCNA KR mutant cells also showed slow cell proliferation due to accelerated replication speed failing to protect nascent DNA from degradation. This resulted in a slower cell proliferation phenotype, reminiscent of that observed in PNKP\u2212/\u2212 cells, although indeed recent study revealed that PNKP is involved in the fork protection (Mashayekhi et al., 2024). In addition, PNKP\u2212/\u2212 cells exhibited significantly shortened DNA fibers upon S1 nuclease-mediated DNA digestion, unlike U2OS WT cells. This observation suggests that the loss of PNKP results in the accumulation of ssDNA gaps on nascent replicated DNA, leading to improper cell proliferation due to high levels of endogenous DNA damage (Figure 1H).\n\n### PNKP is involved in canonical OFs maturation and ssDNA gap-filling pathways\n\nThe phenotype of increased tract length in PNKP\u2212/\u2212 cells is observed in two of PNKP\u2212/\u2212 clones, indicating that this phenotype is not clonal issue (Figure 2A). This phenotype in PNKP\u2212/\u2212 cells is evocative of deficiencies in DNA replication factors involved in canonical OFs maturation, such as FEN1 and LIG1, or factors in the ssDNA gap-filling pathway, an alternative/backup pathway of OFs maturation, such as PARP1 (Thakar et al., 2020; Maya-Mendoza et al., 2018; Cong et al., 2021). Considering these points, we hypothesized that PNKP plays a critical role in preventing the accumulation of ssDNA gaps on replicating DNA during OFs maturation. To test this hypothesis, we first assessed DNA tract length in cells treated with HU or a flap endonuclease 1 inhibitor (FEN1i), which prevents the resection of overhanging nucleotides from the ends of OFs, leading to unligated OFs (Figure 2B, Figure 2\u2014figure supplement 1; Exell et al., 2016; Ward et al., 2017; Zheng and Shen, 2011). Indeed, FEN1i treatment induced increased CldU tract length, whereas HU treatment led to stalled forks, consistent with previous studies (Thakar et al., 2020). Upon deficient canonical FEN1-mediated OFs maturation, post-replicative ssDNA gaps arise from unligated OFs, which are sensed by PARP1 and repaired via the PARP1-dependent gap-filling pathway for OFs maturation (Vaitsiankova et al., 2022). The PARP1-dependent gap-filling pathway is associated with XRCC1, a binding scaffold protein of PNKP in the SSB repair pathway (Hanzlikova et al., 2018). To determine whether PNKP plays a critical role in the PARP-dependent gap-filling pathway, we performed an S1 DNA fiber assay (Figure 2C, D). Cells were labeled with IdU for 15 min, followed by 60 min of CldU labeling in the presence or absence of an FEN1 inhibitor and/or PARP inhibitor, and the ratio of the individual tract lengths of nascent DNA labeled with IdU or CldU were quantified. Where indicated, labeled DNA was treated with S1 nuclease. Double treatment of FEN1i and PARPi in U2OS WT cells, followed by S1 nuclease treatment, showed significantly lower CldU/IdU ratio, indicating extensive DNA fiber digestion by S1 nuclease (Figure 2C). Although single treatment with either FEN1i or PARPi in U2OS WT cells, followed by S1 nuclease treatment, led to DNA fiber digestion, the extent was limited compared to the double treatment (Figure 2C, D), indicating that both pathways: FEN1-dependent canonical OFs maturation and PARP-dependent ssDNA gap-filling pathway, are coordinately required to prevent the emergence of ssDNA gaps during DNA replication, consistent with previous studies (Vaitsiankova et al., 2022). On the other hand, PNKP\u2212/\u2212 cells with S1 nuclease treatment showed extensive DNA fiber digestion even without FEN1i and PARP1i treatments, and this was not further increased by FEN1i and PARPi treatment. These results suggest that PNKP itself is involved in both pathways mentioned above (Figure 2E). Therefore, loss of PNKP results in a phenotype similar to the loss of FEN1 in terms of canonical OFs maturation, but also, like PARP inhibition, there is an additional effect in repairing ssDNA gaps created under FEN1 loss conditions.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/99217/elife-99217-fig2-v1.jpg)\n\n**Figure 2.:** (A) Quantified results of DNA fiber length in U2OS WT and PNKP\u2212/\u2212 C1 and C2 cells. Nascent synthesized DNA was labeled by CldU. CIdU tract lengths in the indicated cell lines were plotted as scatter plots of fork speed. At least 100 fibers per sample were quantified. Error bars represent SD. (B) Measurement of DNA synthesis speed in U2OS WT cells under NT, 2 mM hydroxyurea (HU) and 10 \u03bcM FEN1 inhibitor (FEN1i) treatment analyzed by DNA fiber assay. At least 100 DNA fibers were measured. Error bars represent SD. (C) Schematic and quantified results of experiments for measuring the formation of single-strand DNA (ssDNA) gaps in U2OS WT and PNKP\u2212/\u2212 C1 cells with 10 \u03bcM FEN1i and/or 10 \u03bcM PARP inhibitor (PARPi) treatment followed by S1 nuclease treatment. The ratio of CldU/IdU tract lengths in dual-labeled DNA fibers in the indicated cell lines and treatments were measured. Error bars represent SD. (D) Schematic and quantified results of experiments for measuring the formation of ssDNA gaps in U2OS WT and PNKP\u2212/\u2212 C1 cells with 10 \u03bcM PARPi treatment followed by S1 nuclease treatment. The ratio of IdU/CldU tract lengths in dual-labeled DNA fibers in the indicated cell lines and treatments were measured. (E) Model of S1 nuclease-mediated digestion of DNA fiber in FEN1i- and/or PARPi-treated cells. In all panels, scale bar indicates 10 \u03bcm. Statistical significance was indicated as not significant (ns), *: 0.01< p \u2266 0.05, **: 0.005 < p \u2266 0.01 and ****: 0.0005 < p \u2266 0.001.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/99217/elife-99217-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Measurement of DNA fiber tract length in U2OS WT cells under NT, 2 mM hydroxyurea (HU), and 10 \u03bcM FEN1 inhibitor treatment analyzed by DNA fiber assay. At least 100 DNA fibers were measured. Error bars represent SD. Statistical significance was indicated as not significant (ns) and ****: 0.0005 < p \u2266 0.001.\n\n### PNKP phosphorylation, especially of T118, is important for proper S phase progression and cell proliferation\n\nTo identify the region of PNKP involved in proper fork progression via the OFs maturation processes, we measured the growth rate and speed of fork progression in PNKP\u2212/\u2212 cells transiently expressing PNKP deletion mutants (D1: FHA domain, D2: linker region, D3: phosphatase domain, and D4: kinase domain) (Figure 3A\u2013C, Figure 3\u2014figure supplement 1A; Tsukada et al., 2021). D2 mutant-expressing cells showed slower proliferation than cells expressing WT PNKP and other mutants, although D3 and D4 exhibited mildly slower cell proliferation (WT vs. D3: p = 0.1737; WT vs. D4: p = 0.4523). Furthermore, D3, D4 as well as D2 mutant-expressing cells showed increased tract lengths compared to WT and D1 mutant-expressing cells, indicating that in addition to the enzymatic activity of PNKP, the linker region also plays a crucial role in proper fork progression.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/99217/elife-99217-fig3-v1.jpg)\n\n**Figure 3.:** (A) Schematic diagrams of the structure of GFP-tagged human PNKP WT and deletion mutants (D1\u2013D4). (B) Cell growth rate in U2OS WT and PNKP deletion mutant-expressing PNKP\u2212/\u2212 C1 cells. Cell growth rate was normalized by GFP-expressing U2OS cells. Error bars represent SEM. (C) Quantified results of DNA fiber length in U2OS WT and PNKP\u2212/\u2212 C1 cells expressing indicated PNKP deletion mutants. Nascent synthesized DNA was labeled by CldU. Error bars represent SD. (D) Alignment of amino acid sequences in linker region among mammalian species. SQ/TQ motif (blue) is PI3 kinase substrate motif. TP (red) is cyclin-dependent kinase (CDK) substrate motif. (E) Cell growth rate in U2OS WT and PNKP\u2212/\u2212 C1 cells expressing indicated point mutants. Cell growth rate was normalized by GFP-expressing U2OS cells. Error bars represent SEM. Statistical significance was indicated as not significant (ns), **: 0.005< p \u2266 0.01, ***: 0.001 < p \u2266 0.005 and ****: 0.0005 < p \u2266 0.001.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/99217/elife-99217-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Protein expression analysis of U2OS WT and PNKP\u2212/\u2212 C1 cells transiently expressing GFP or indicated PNKP deletion mutants. Protein expression was detected by western blotting. GFP antibody was used for confirming the expression of exogenous PNKP deletion mutants. PNKP antibody (Novus: NBP1-87257) was used for comparing expression levels of endogenous and exogenous PNKP. KAP1 antibody was used as a loading control. \u2018*\u2019 indicates endogenous PNKP. (B, C) Protein expression analysis of U2OS WT and PNKP\u2212/\u2212 C1 cells transiently expressing GFP or indicated PNKP point mutants. Protein expression was detected by western blotting (B) and immunofluorescence (C). (B) GFP antibody was used for confirming the expression of exogenous PNKP point mutants. PNKP antibody was used for comparing expression levels of endogenous and exogenous PNKP. KAP1 antibody was used as a loading control. \u2018*\u2019 indicates endogenous PNKP. (C) GFP fluorescence was observed by fluorescent microscope. 4\u2032,6-Diamidino-2-phenylindole dihydrochloride (DAPI) was used as nucleus staining. In all panels, scale bar indicates 10 \u03bcm.\n\nSince these results indicate the linker region of PNKP is involved in proper fork progression, we attempted to identify essential amino acids for DNA replication within this region. Using PhosphoSitePlus, we identified five potential phosphorylation sites: serine 114, threonine118, threonine 122, serine 126, and serine 143 (Figure 3D; Hornbeck et al., 2015). Amino acids S114, T118, and S143 are highly conserved among mammalian species. S114 and S126 form a typical SQ/TQ motif, with S114 being phosphorylated by ATM and S126 by ATM and DNA-PKcs (Segal-Raz et al., 2011; Zolner et al., 2011). T118, T122, and S143 are novel phosphorylation sites, with T118 predicted to be a CDK phosphorylation substrate motif (S/TP). To elucidate the importance of these amino acids in DNA replication, we constructed phosphorylation-mutant vectors containing five predicted phosphorylated amino acids substituted with alanine and measured the growth rates of these transfectants (Figure 3, Figure 3\u2014figure supplement 1B, C). T118A mutant-expressing cells exhibited a marked delay in cell growth, which was not observed in S114A, although T122A (p = 0.0258), S126A (p = 0.0523), and S143A (p = 0.4402) showed slight delays. These results suggest that the linker region of PNKP, especially the phosphorylation of PNKP on T118, is required for proper cell proliferation.\n\n### CDKs phosphorylate T118 of PNKP and pT118-PNKP interacts with nascent DNA on replication forks\n\nTo assess the importance of T118 phosphorylation in DNA replication, we generated antibodies that recognized the phosphorylated T118 (pT118) peptides. The sufficient titers and specificities of the pT118 antibody were confirmed using ELISA (Figure 4\u2014figure supplement 1A, B). The pT118 PNKP antibody was used for western blotting of lysates from U2OS WT-, green fluorescent protein (GFP)-PNKP WT-, or T118A-expressing cells. Although this antibody cross-reacted with proteins of approximately 55 kDa, which is close to the apparent molecular mass of endogenous PNKP, it clearly recognized GFP-tagged PNKP (GFP-PNKP) but not GFP-PNKP T118A (Figure 4\u2014figure supplement 1C). Therefore, GFP-PNKP expression was used to examine T118 phosphorylation.\n\nTo determine whether T118 phosphorylation is DNA replication-specific, we synchronized HCT116 cells transiently expressing GFP-PNKP using a double thymidine block and released them at specific times (Figure 4\u2014figure supplement 1D). After synchronization at the indicated cell cycle phases, cells were extracted and used for western blotting (Figure 4A). Since Cyclin A2 peaks during mid-to-late S/G2 phase and Cyclin E1 peaks at early S phase, we used these proteins as cell cycle markers (Fung et al., 2007; Pagano et al., 1992; Honda et al., 2005). pT118-PNKP was detected in asynchronized cells but increased particularly in the S phase, similar to Cyclin A2 expression levels. However, the reduction of pT118, possibly due to dephosphorylation of T118, was not as robust as the reduction in Cyclin A2 expression levels at the 12 hr time point. This effect was very weak during mitosis, suggesting that T118 phosphorylation plays a specific role in the S phase.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/99217/elife-99217-fig4-v1.jpg)\n\n**Figure 4.:** (A) Scheme and protein expression levels of GFP-PNKP-expressing HCT116 cells after release from double thymidine block. After released, cells were collected at indicated time points, and used for western blotting. pT118 PNKP antibody was generated for this study. Cyclin A2 and E1 antibodies were used for cell cycle markers. GAPDH antibody was used as a loading control. (B) In vitro analysis of PNKP phosphorylation on T118 by CDK/Cyclin complex. Purified His-PNKP and each CDK/Cyclin complex were incubated with reaction mixture and detected with western blotting by pT118-PNKP, His, GST, and Cyclin A2 antibodies. (C) HCT116 cells were lysed at 5 and 3 days after transfection with GFP-PNKP and co-transfection with mCherry2-Cyclin A2, and 3XFLAG-CDK1 or CDK2, respectively, and applied for western blotting. pT118 PNKP level was analyzed by pT118 PNKP-specific antibody. PNKP expression was analyzed with PNKP or GFP antibodies. Cyclin A2 expression was analyzed with RFP antibody. KAP1 antibody was used as loading control. (D) Analysis of isolated proteins from nascent DNA using isolation of proteins on nascent DNA (iPOND) technique. Proteins bound to EdU-labeled DNA in GFP-PNKP-expressing HEK293 cells were isolated using click reaction with biotin-azide followed by streptavidin-pulldowns and detected by western blotting. 0.1% of lysate used in Streptavidin-pulldowns represented as 0.1% input. (E) Western blotting to show interactions of GFP-PNKP WT or T118A with nascent DNA using the iPOND technique. PCNA was used as a loading control. (F) Western blotting to show interaction of PNKP with nascent DNA in XRCC1-depleted cells using the iPOND technique. PCNA was used as a loading control.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/99217/elife-99217-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Representative image of ELISA assay for pT118-PNKP antibody. Dilutions were shown in vertical axis, and ligands and antibodies were shown in horizontal axis. (B) Quantified results of A for confirming the titer and specificity of pT118-PNKP antibody. Absorbance was shown in vertical axis, and dilutions were shown in horizontal axis. (C) Specificity of pT118-PNKP antibody for cell lysate from U2OS WT and PNKP\u2212/\u2212 C1 cells transiently expressing GFP-PNKP or GFP-PNKP T118A mutant. Asterisks indicate non-specific detections. GFP and PNKP antibodies were used for confirming the expression of GFP-PNKP and GFP-PNKP T118A mutant. GAPDH antibody was used as a loading control. (D) Flowcytometric analysis of cell cycle distribution of HCT116 cells transiently expressing GFP-PNKP at indicated time after release from double thymidine block. Cell cycle was determined by DNA contents measured by PI staining (horizontal axis). (E) Western blotting to show interactions of GFP-PNKP WT or T118A with FLAG-tagged CDK1 or CDK2. Binding proteins of GFP-PNKP were purified using a GFP-pulldown method. (F) Schematic of isolation of proteins on nascent DNA (iPOND) experiment. Proteins bound to EdU-labeled nascent DNA in HEK293 cells were isolated using click reaction with biotin-azide followed by streptavidin-pulldowns. 0.1% of lysate used in streptavidin-pulldowns represented as 0.1% input as a loading control.\n\nSince amino acids around T118 contain a CDK substrate motif, we measured the direct phosphorylation activity using purified CDKs, cyclin, and PNKP, and detected them using a pT118 PNKP antibody (Figure 4B). CDK1/Cyclin A2 and CDK2/Cyclin A2 markedly phosphorylated PNKP, whereas CDK4/Cyclin D1 and CDK2/Cyclin E1 phosphorylated PNKP to a lesser extent, suggesting that CDK1/CyclinA2 and CDK2/CyclinA2 complexes are potential kinases of PNKP T118. We subsequently investigated the phosphorylation levels of PNKP at T118 under co-overexpression of Cyclin A2 and CDK1 or CDK2 (Figure 4C). Overexpression of both CDK2/Cyclin A2 and CDK1/Cyclin A2 showed an increased phosphorylation level at T118, supporting that these complexes are potential kinases of PNKP T118.\n\nIn line with this observation, we assessed protein interactions between PNKP and CDK1 or CDK2 using GFP-PNKP-pulldown assay (Figure 4\u2014figure supplement 1E). PNKP T118A mutant showed a reduced amount of protein interaction with both CDK1 and CDK2, with CDK2 appearing as a stronger binding partner of PNKP. These results indicate that CDK1/2, especially CDK2, are the kinases of T118 on PNKP. To elucidate the role of PNKP T118 phosphorylation in DNA replication, we isolated proteins from nascent DNA using iPOND (isolation of proteins on nascent DNA) technique to confirm interactions between PNKP and nascent DNA on replication forks (Figure 4\u2014figure supplement 1F). After 5-ethynyl-2\u2032-deoxyuridine (EdU) incorporation for 20 min in GFP-PNKP-expressing HEK293 cells, proteins bound to nascent DNA were extracted and detected by western blotting (Figure 4D). We found that replication fork-associated proteins, including FEN1, RPA2, and PCNA, as well as WT-PNKP and T118-phosphorylated PNKP interacted with nascent DNA. Additionally, the recruitment of PNKP to nascent DNA was reduced by the T118A mutation, which strongly suggests T118 phosphorylation is crucial for its recruitment to replication forks (Figure 4E).\n\nSince XRCC1 is a scaffold protein of ssDNA gap-filling pathway, we investigated whether the recruitment of PNKP to nascent DNA is dependent on XRCC1 using the iPOND technique (Figure 4F). Depletion of XRCC1 by siRNA treatment reduced the amount of PNKP recruited to nascent DNA, indicating the involvement of PNKP in ssDNA gap-filling pathway. However, some PNKP still bound to nascent DNA, suggesting an alternative recruitment pathway of PNKP to DNA replication forks, possibly for mediating canonical OF maturation. Taken together, these results suggest that the CDK1/Cyclin A2 or CDK2/Cyclin A2 complex potentially regulates the phosphorylation level of PNKP T118 in the S phase, facilitating PNKP recruitment to DNA replication forks.\n\n### Phosphorylation of PNKP at T118 is required for preventing the formation of unligated OFs\n\nIn order to examine the effect of T118 phosphorylation loss in DNA replication, we first investigated the FEN1-related phenotype of increased tract length in T118A- and T118D (a phospho-mimetic mutant)-expressing cells using a DNA fiber assay (Figure 5A, Figure 5\u2014figure supplement 1A). PNKP\u2212/\u2212 and T118A-expressing cells showed increased tract length, and FEN1i treatment did not further accelerate DNA fiber length, indicating that the T118A mutation alone provokes the longer DNA tract length phenotype due to the formation of unligated OFs, similar to FEN1 inhibition. Conversely, T118D-expressing cells exhibited normal DNA fiber tract length, similar to PNKP WT-expressing cells, and FEN1i treatment increased DNA fiber tract length in T118D-expressing cells. This suggests that the T118 phosphorylation plays an essential role in proper OFs maturation akin to FEN1.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/99217/elife-99217-fig5-v1.jpg)\n\n**Figure 5.:** (A) Measurement of DNA synthesis speed in U2OS WT and PNKP\u2212/\u2212 C1 cells expressing GFP, PNKP WT, T118A, or T118D mutants under 10 \u03bcM FEN1 inhibitor treatment analyzed by DNA fiber assay. At least 100 DNA fibers were measured. Error bars represent SD. (B, C) Representative images (B) and quantified results (C) of measurement of ADP-ribose intensity in U2OS WT and PNKP WT, PNKP T118-expressing PNKP\u2212/\u2212 C1 cells. Synthesized DNA was labeled by EdU and EdU-positive cells were defined as S phase and the other cells were defined as G1 +G2 phase. Error bars represent SEM. (D, E) Scheme, representative images (D) and quantified results (E) of the experiments for measurement of ADP-ribose intensity in U2OS WT and PNKP\u2212/\u2212 C1 cells expressing GFP, PNKP WT, and PNKP T118A mutant under DMSO (negative control) and FEN1i treatment only in EdU-positive (S phase) cells. Error bars represent SEM. In all panels, scale bar indicates 10 \u03bcm.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/99217/elife-99217-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Protein expression analysis of U2OS WT and PNKP\u2212/\u2212 C1 cells transiently expressing GFP or indicated PNKP mutants. Protein expression was detected by western blotting. GFP antibody was used for confirming the expression of exogenous PNKP mutants. PNKP antibody was used for comparing expression levels of endogenous and exogenous PNKP. KAP1 antibody was used as a loading control. \u2018*\u2019 indicates endogenous PNKP. (B) Quantified results of the experiments for measurement of ADP-ribose intensity in PNKP\u2212/\u2212 C1 cells expressing PNKP WT and PNKP T118D mutant under DMSO and FEN1i treatment. Error bars represent SEM. (C) Representative images of immunofluorescence using PAN ADP-ribose-binding reagents at 30 min after 2 Gy ionizing-radiation (IR) exposure in U2OS WT and PNKP\u2212/\u2212 cells transiently expressing GFP or indicated PNKP mutants. PARGi was added 30 min prior to IR exposure. Images detected by ADP-ribose, 4\u2032,6-diamidino-2-phenylindole dihydrochloride (DAPI) and DIC were shown. Scale bar indicates as 10 \u03bcm. (D) Quantified result of C. Relative ADP-ribose intensity is shown in vertical axis and cell types were shown in horizontal axis. At least 100 cells were analyzed for the quantification. (E) Measurement of ADP-ribose intensity in U2OS WT or PNKP\u2212/\u2212 C1 cells expressing GFP, PNKP WT, and PNKP T118A mutant under H2O2 treatment in EdU- and EdU-positive cells. Error bars represent SEM. (F) Measurement of DNA double-strand break (DSB) repair ability of indicated cells after 2Gy IR exposure. Cells were harvested at 30 min, 6 hr, and 24 hr after IR exposure. Percentage of \u03b3H2AX-positive cells is shown in vertical axis and conditions were shown in horizontal axis. NT indicates non-treatment. At least 100 cells were analyzed for the quantification. Statistical significance was indicated as not significant (ns) and ****: 0.0005 < p \u2266 0.001. (G, H) Measurement of the formations of micronuclei and chromosome bridges in U2OS WT and PNKP\u2212/\u2212 C1 cells expressing GFP, PNKP WT, and PNKP T118A mutant exposed to 5 Gy IR or 2 mM hydroxyurea (HU). DNA were stained by DAPI at 24 hr after each treatment. Cells with micronucleus (G) and chromosome bridge (H) were counted and graphed. At least 200 cells were counted. Error bars represent SEM. In all panels, statistical significance was indicated as not significant (ns), *: 0.01< p \u2266 0.05, **: 0.005< p \u2266 0.01, ***: 0.001 < p \u2266 0.005 and ****: 0.0005 < p \u2266 0.001.\n\nTo specifically investigate the formation of ssDNA gaps in the S phase, we transiently expressed WT PNKP or T118A in PNKP\u2212/\u2212 cells and incubated them with EdU-containing medium to separately assess ADP-ribose intensity inside (EdU-positive) and outside (EdU-negative) the S phase (Figure 5B, C). T118A-expressing cells in the S phase showed higher ADP-ribose intensity (1.61-fold increase vs. WT-expressing cells), similar to PNKP\u2212/\u2212 cells (2-fold increase vs. U2OS WT cells). WT PNKP expression rescued this effect, suggesting that PNKP function and T118 phosphorylation are required for ssDNA gap-less DNA replication. Of note, PNKP\u2212/\u2212 cells and PNKP T118A cells also showed higher ADP-ribose intensity outside the S phase (1.47-fold increase vs. WT-expressing cells), indicating that PNKP and T118 may play a role in preventing SSBs formation outside the S phase. Since FEN1 has been reported to function in R-loop processing, PNKP could also be involved in this process (Cristini et al., 2019; Laverde et al., 2022). Future studies of a role of PNKP in different cell cycle will be able to address this question.\n\nTo investigate whether ssDNA gaps in T118A cells originate from unligated OFs, we used FEN1i to examine an epistatic effect between T118A and deficient canonical OFs maturation by FEN1 inhibition (Figure 5D, E). We assessed the ADP-ribose intensity of WT PNKP or T118A-expressing PNKP\u2212/\u2212 cells treated with either DMSO or FEN1i only during the S phase. FEN1i-treated U2OS WT cells showed increased ADP-ribose intensity, indicating that FEN1i treatment leads to ssDNA gap formation. The increased ADP-ribose intensity phenotype in T118A-expressing cells was not observed in FEN1i-treated T118A-expressing cells. Additionally, T118D-expressing cells behaved similarly to PNKP WT-expressing cells (Figure 5\u2014figure supplement 1B). These data suggest that T118 phosphorylation of PNKP plays a critical role in suppressing ssDNA gap formation derived from unligated OFs in an epistatic pathway with FEN1. In conclusion, phosphorylation of PNKP at T118 is required to prevent unligated OF-mediated post-replicative ssDNA gap formation during DNA replication.\n\nIncidentally, as similar to PNKP\u2212/\u2212 cells, PNKP T118A-expressing cells exhibited reduced repair abilities against exogenous SSB and DSB induced by IR and H2O2 treatment (Figure 5\u2014figure supplement 1C\u2013F). Furthermore, T118A-expressing cells showed an increased frequency of micronuclei and chromosome bridges compared to WT PNKP-complemented cells even without any treatment as well as with IR or HU treatment (Figure 5\u2014figure supplement 1G, H). Altogether, our results suggest that endogenously increased ssDNA gap formation due to impaired OFs maturation in PNKP\u2212/\u2212 and T118A-expressing cells may cause genomic instability.\n\n### Enzymatic activities of PNKP are important for the end-processing of OFs\n\nThe main function of PNKP is to catalyze 5\u2032-phosphorylation and 3\u2032-dephosphorylation of the DNA ends. To clarify the role of these enzymatic abilities in OFs maturation, we constructed phosphatase-dead (D171A) and kinase-dead (K378A) PNKP mutants (Jilani et al., 1999; Reynolds et al., 2012; Kalasova et al., 2019). Initially, we attempted to establish stable clones expressing both mutants; however, we could not obtain stable phosphatase-dead (D171A) clones. This is consistent with previous observations, where PNKP-mutated MCSZ patient cells, exhibiting mutations in the phosphatase domain, showed unstable expression of PNKP (Shen et al., 2010), and recombinant phosphatase-dead PNKP was unstable (Kalasova et al., 2020). Therefore, these mutants were transiently expressed in PNKP\u2212/\u2212 cells, and protein expression was assessed through western blotting (Figure 6\u2014figure supplement 1A). We first assessed the phosphatase and kinase enzymatic activities of the PNKP T118A mutant and performed biochemical assays using cell extracts expressing PNKP mutants (Figure 6\u2014figure supplement 1B, C). Fluorescence-labeled SSB gap oligo DNA was mixed with cell lysates extracted from U2OS WT or PNKP\u2212/\u2212 cells expressing various PNKP mutants. The D171A and K378A mutants were used as phosphatase- and kinase-dead controls, respectively. Although the phosphatase-dead mutant showed slightly lower kinase activity and the kinase-dead mutant showed lower phosphatase activity than WT PNKP, it is possible that each mutant is structurally unstable, affecting enzyme activity. Intriguingly, T118A PNKP was still capable of dephosphorylating and phosphorylating gapped DNA ends in vitro, albeit to a lesser extent than WT PNKP. These results suggest that phosphorylation of PNKP at T118 is required for its recruitment to the gapped DNA structure but not directly for its enzymatic activity. To confirm this hypothesis, we assessed a binding ability to an ssDNA gap structure using cell lysates from WT PNKP, T118A, and T118D mutants (Figure 6\u2014figure supplement 1D). The T118A mutant showed impaired gapped DNA-binding ability, whereas the WT PNKP and the T118D mutant exhibited relatively higher binding ability than the PNKP T118A mutant.\n\nNext, we analyzed the increased tract length phenotype in cells expressing these enzymatic mutants using a DNA fiber assay (Figure 6A). Interestingly, D171A-expressing cells showed a spontaneously increased tract length, and FEN1i treatment did not further increase the tract length. K378A-expressing cells showed longer, yet statistically non-significant, tract length than WT PNKP-expressing cells (p = 0.6293), suggesting that PNKP enzymatic activities, especially those of phosphatase, are required for accurate fork progression. Subsequently, we elucidated whether the end-processing activities of PNKP are important for OF-mediated ssDNA gap formation. These PNKP mutant-expressing PNKP\u2212/\u2212 cells were treated with FEN1i, followed by measurement of ADP-ribose intensity in the S phase (Figure 6B, C). D171A-expressing cells showed a high ADP-ribose intensity (p < 0.0001), while K378A-expressing cells exhibited relatively high ADP-ribose intensity without FEN1i treatment (p = 0.001). Moreover, FEN1i-treated cells showed high levels of ADP-ribose intensity in all conditions. Taken together, these results suggest that PNKP phosphatase and kinase activities, especially those of phosphatase, play an important role in the end-processing of OFs, resulting in the suppression of OF-mediated post-replicative ssDNA gap formation and ensuring accurate DNA replication (Figure 6D).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/99217/elife-99217-fig6-v1.jpg)\n\n**Figure 6.:** (A) Measurement of the speed of DNA synthesis in U2OS WT and PNKP\u2212/\u2212 C1 cells expressing GFP, PNKP WT, D171A, and K378A mutants under 10 \u03bcM FEN1 inhibitor treatment analyzed by DNA fiber assay. At least 100 DNA fibers were measured. Error bars represent SD. Representative images (B) and quantified results (C) of the experiments for measurement of ADP-ribose intensity in U2OS WT and PNKP\u2212/\u2212 C1 cells expressing GFP, PNKP WT, PNKP D171A, and PNKP K378A mutants under DMSO (negative control) and FEN1i treatment only in EdU-positive (S phase) cells. Error bars represent SEM. (D) Model of the involvement of PNKP in DNA replication, especially in end-processing of canonical OFs ligation and gap-filling pathway. T118 of PNKP is phosphorylated by cyclin-dependent kinases (CDKs) for the recruitment to OFs during S phase. OFs ends are processed by PNKP and become the ligatable ends prior to the canonical OFs maturation. Unligated OFs are sensed by PARP1 for proceeding an alternative OFs maturation pathway, PARP-dependent gap filling, which requires proteins such as XRCC1, LIG3, and PNKP, to prevent the emergence of post-replicative single-strand DNA gaps. Impaired OFs maturation pathways lead to the accumulation of single-strand DNA gaps during DNA replication. In all panels, scale bar indicates 10 \u03bcm. Statistical significance was indicated as not significant (ns), *: 0.01< p \u2266 0.05 and ****: 0.0005 < p \u2266 0.001.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/99217/elife-99217-fig6-figsupp1-v1.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) Protein expression analysis for PNKP phosphatase-dead (D171A) and kinase-dead (K378A) mutants in U2OS WT and PNKP\u2212/\u2212 C1 cells expressing GFP, PNKP WT, D171A, and K378A mutants confirmed by western blotting. KAP1 antibody was used as a loading control. (B) Indicated number of cell extracts harvested from U2OS WT and PNKP\u2212/\u2212 C1 cells were incubated with TAMRA or 6-FAM-labeled oligonucleotide duplex harboring a single-strand break (SSB) GAP structure. Arrows indicate the positions of the TAMRA-labeled phosphatase substrates (top) and 6-FAM-labeled kinase substrates (bottom). (C) PNKP phosphatase and kinase activity biochemical analysis. Indicated cell extracts harvested from PNKP\u2212/\u2212 C1 cells expressing PNKP WT, T118A, D171A (phosphatase-dead), and K378A (kinase-dead) were incubated with TAMRA or 6-FAM-labeled oligonucleotide duplex harboring a single-strand DNA (ssDNA) gap structure. Arrows indicate the positions of the TAMRA-labeled phosphatase substrates (left) and 6-FAM-labeled kinase substrates (right). Band intensity of 18-nt 3\u2032-OH (left) and 21-nt 5\u2032-P (right) were analyzed using ImageJ software and indicated. (D) Measurement of the gapped DNA-binding ability of PNKP WT, T118A, and T118D mutants. Nuclear extracts were harvested from U2OS PNKP\u2212/\u2212 C1 cells at 2 days after transfection with GFP-PNKP WT, T118A, or T118D mutants. GFP antibody was used to detect GFP-PNKPs bound to the gapped double-stranded DNA. Error bars represent SEM. Statistical significance was indicated as not significant (ns) and ****: 0.0005 < p \u2266 0.001.\n\n## Discussion\n\nIn this study, we identified the phosphorylation of PNKP at T118, mediated by CDKs, potentially by the CDK1/Cyclin A2 or CDK2/Cyclin A2 complex. This phosphorylation is crucial for the recruitment of PNKP to gapped DNA structures, including nicks between OFs and OF-mediated post-replicative ssDNA gaps (Figure 6D). Defects in PNKP phosphorylation at T118 lead to the accumulation of ssDNA gaps during DNA replication due to a deficiency in canonical OFs ligation and the subsequent gap-filling pathway.\n\nPNKP consists of four regions: the FHA, linker, phosphatase, and kinase domains. Compared to other domains, the role of the linker region remains poorly understood, although it includes several residues that may be post-translationally modified. DNA damage signaling and DNA replication progression are often regulated by protein modifications such as phosphorylation and ubiquitination (Kolas et al., 2007; Blackford and Jackson, 2017; Cortez et al., 1999). Lysine is the main target of E3 ubiquitin ligase (Laney and Hochstrasser, 1999), and there is a clustered lysine region (137\u2013142) in the PNKP linker region. However, this region also includes a nuclear localization signal, and alanine substitution prevents its transport to the nucleus (Tsukada et al., 2020). Therefore, we focused on regions other than amino acids 137\u2013142. In the present study, we identified five predicted phosphorylation sites (S114, T118, T122, S126, and S143) in the linker region. The T118A mutant exhibited significantly reduced cell proliferation, while the T122A, S126A, and S143A mutants showed slightly reduced cell proliferation (Figure 3E), suggesting that these residues may also be involved in proper cell proliferation. In contrast, the S114A mutant-expressing cells showed effective SSB repair and normal cell growth (Figure 3E, Figure 5\u2014figure supplement 1), indicating that the phosphorylation of PNKP at S114 is likely important for DSB repair. The T118A mutant demonstrated reduced repair abilities of both exogenous SSBs and DSBs (Figure 5\u2014figure supplement 1C\u2013F). Upon H2O2 treatment, T118A-expressing cells show a slight increase of ADP-ribosylation compared to WT-complemented cells, which might suggest a possible partial preferential role of this modification in the S phase. Future studies will be able to elucidate the function of T118 phosphorylation in response to exogenous DNA damage.\n\nRegulating the speed of DNA synthesis is important for accurate DNA replication and fork integrity (Kunkel, 2004; Genois et al., 2021). PNKP\u2212/\u2212 and T118A-expressing cells showed high-speed DNA synthesis, resulting in slower cell proliferation and genome instability (Figures 1\u20143, 5, and 6). These observations are consistent with those in PCNA KR mutant cells and PARPi-treated cells (Thakar et al., 2020; Maya-Mendoza et al., 2018). We also found that enzymatic activity, especially the phosphatase activity of PNKP, is required for the end-processing of OFs during DNA replication (Figure 6). PNKP\u2212/\u2212 and mutant-expressing cells exhibited a significant increase in ADP-ribose intensity in the S phase, even without FEN1i treatment. However, FEN1i treatment in these cells led to an attenuated increase in ADP-ribose intensity compared to WT PNKP-expressing cells, suggesting that PNKP acts in an epistatic pathway with FEN1 for the canonical OFs ligation pathway (Figure 6B, C). FEN1 catalyzes the removal of RNA/DNA fragments from OFs on the lagging strand. Our data suggested that both the end-processing activity of PNKP and the exonuclease activity of FEN1 are required for canonical OFs ligation (Figures 2C, D, 5E, 6C).\n\nFurthermore, the PARP-mediated ssDNA gap-filling pathway is also involved in OFs maturation as an alternative/backup pathway (Vaitsiankova et al., 2022). Our data suggest that the loss of these two pathways results in extensively increased ssDNA gap formation during DNA replication, and the loss of PNKP can recapitulate this combinative phenotype (Figure 2C). This observation is consistent with the decreased ADP-ribose intensity observed in HU- and EME-treated PNKP \u2212/\u2212 cells (Figure 1E). Since EME inhibits single-strand gap formation (Burhans et al., 1991; Lukac et al., 2022) and HU treatment increases the amount of the OF-like DNA fragments (Laipis and Levine, 1973; Magnusson, 1973b; Magnusson, 1973a), these reagents inhibit mature OF structures as PNKP-appropriate substrates.\n\nMoreover, we found that the phosphorylation of PNKP at T118 is regulated in a cell cycle-dependent and CDK-associated manner (Figure 4A\u2013C, Figure 4\u2014figure supplement 1E). Since the activities of CDK1/Cyclin A2 and CDK2/Cyclin A2 complexes peak in the late S/G2 and S phases, respectively, we speculated that PNKP T118 is phosphorylated from the S phase to the G2 phase in CDK1/Cyclin A2- and CDK2/Cyclin A2-dependent manner (Figure 4B, C). We concluded that phosphorylation of PNKP at T118 allows it to be recruited to the ends of OFs, including ssDNA nicks and/or gaps between OFs, and processes the ends for subsequent ligation. Furthermore, PNKP is required for the PARP1-dependent ssDNA gap-filling pathway when unligated OFs are transformed into post-replicative ssDNA gap structures (Figure 2C).\n\nIn summary, maintaining genome stability is central to life, and the function of PNKP in DNA repair and OFs maturation is important for biological development. Although PNKP mutations cause several inherited diseases (MCSZ, AOA4, and CMT2B2) with neural developmental failure and neurodegeneration, almost all mutations are found in the FHA, phosphatase, or kinase domains and not in the linker region. This observation may indicate that mutations in the phosphorylated residue (T118) in the linker region are potentially embryonic lethal due to the importance of T118 in DNA replication, which is revealed in the present study. Since the inhibiting PNKP activity is an important target for anticancer drugs, in addition to the inhibition of phosphatase and kinase enzymatic activity (Freschauf et al., 2009), inhibiting phosphorylation at T118 of PNKP might be a potent target for cancer therapy. Ultimately, this study reveals a novel role for PNKP in processing the ends of OFs and the PARP-dependent single-strand gap-filling pathway during DNA replication. This may contribute to the elucidation of the biological basis of DNA replication and enhance our understanding of the mechanisms underlying the onset of inherited diseases.\n\n## Materials and methods\n\n### Cell culture\n\nThe human embryonic kidney cell line HEK293, the human colon cancer cell line HCT116, and the human osteosarcoma cell line U2OS were obtained from the American Type Culture Collection (ATCC), and U2OS PNKP\u2212/\u2212 cell lines were established in this study. All cell lines were maintained in Dulbecco\u2019s modified Eagle\u2019s medium (Nacalai Tesque Inc) supplemented with 10% vol/vol fetal bovine serum (Hyclone, GE Healthcare) and penicillin/streptomycin (Nacalai Tesque Inc) at 37\u00b0C in humidified atmosphere containing 5% CO2 conditions. All cell lines were tested for Mycoplasma contamination using the e-Myco Mycoplasma Detection PCR Kit (iNtRON Biotechnology, Inc, cat# 25235).\n\n### Construction of plasmid DNA and mutagenesis\n\nThe pEGFP-C1 plasmid was purchased from Clontech. Full-length human PNKP cDNA was obtained by PCR from the cDNA pool of U2OS cells and inserted into the pEGFP-C1. Mutations were introduced using the PrimeSTAR mutagenesis basal kit (Takara Bio, cat# R046A) according to the manufacturer\u2019s instructions. All the DNA constructs were verified by DNA sequence analysis. All primers for mutagenesis were designed using the Agilent QuikChange primer design program and are listed in Supplementary file 1, table 1.\n\n### cDNA and siRNA transfection\n\nFor cDNA transfection, PEI-MAX (Polysciences, Inc, cat# 24765) or Lipofectamine 3000 (Invitrogen, Thermo Fisher Scientific) were used according to the manufacturer\u2019s instructions. For siRNA transfection (treatment time is typically \u2013 48\u201372 hr), Lipofectamine RNAiMAX (Invitrogen, Thermo Fisher Scientific) was used according to the manufacturer\u2019s instructions. All the siRNAs were used at a final concentration of 50 \u2009nM. The targeting sites and sequences of the siRNA oligonucleotides are listed in Supplementary file 2, table 2.\n\n### Genome editing by CRISPR/Cas9 system and establishment of PNKP\u2212/\u2212 cell lines\n\nThe pSpCas9n(BB)-2A-Puro (PX462) vector was purchased from Addgene. For the establishment of PNKP-/- cells using CRISPR/Cas9 system, the sgRNA target sequences were cloned into the pSpCas9n(BB)-2A-Puro (PX462) vector and verified by DNA sequencing. U2OS cells were transfected with the targeting vectors and incubated for 2 days before the addition of selective medium containing 1.5 \u03bcg/ml puromycin (InvivoGen, cat# ant-pr-1). After 5 days, clonal cells were isolated by limiting dilution in 96-well plates. PNKP expression in single clones was analyzed by western blotting. Genomic mutations in both PNKP alleles present in U2OS cells were verified by DNA sequencing of a PCR-amplified genomic fragment cloned into a pEGFP-C1 vector. The sgRNA target sequences are shown in Figure 1\u2014figure supplement 1.\n\n### Sodium dodecyl sulfate\u2013polyacrylamide gel electrophoresis and western blotting\n\nCells were lysed in a radioimmunoprecipitation assay buffer (50 mM Tris-HCl, pH 8.0, 250 mM NaCl, 25 mM ethylenediaminetetraacetic acid [EDTA], 0.5% vol/vol Triton X-100, 0.5% wt/vol sodium dodecyl sulfate [SDS], and 0.5% wt/vol sodium deoxycholate) containing protease inhibitor cocktail (Nacalai Tesque Inc, cat# 25955-11) and phosphatase inhibitor cocktail (Nacalai Tesque Inc, cat# 07575-51), and the protein concentration was measured by a bicinchoninic acid (BCA) assay kit (Takara Bio) using bovine serum albumin (BSA) as the standard. In all experiments, 20 \u03bcg of protein was loaded onto SDS\u2013polyacrylamide gel electrophoresis (PAGE) plates. The proteins were electrophoresed at 30 mA/gel plate for 1\u20131.5 hr and transferred onto a polyvinylidene fluoride (PVDF) membrane at 100 V for 1.5 hr. Next, the PVDF membrane was blocked with either 2% wt/vol BSA/TBS-T (tris-buffered saline and Tween 20) or 5% wt/vol skim milk/TBS-T for 1 hr at room temperature on a shaker. For primary antibody reactions, the following primary antibodies were used for 1\u20134 hr at room temperature: PNKP (rabbit, 1:1000, Novus, cat# NBP1-87257), PNKP (rabbit, 1:1000, Abcam, cat# ab181107), pT118-PNKP (rabbit, 1:1000, generated in this paper), pS114-PNKP (rabbit, 1:1000, generated in this paper), XRCC1 (mouse, 1:1000, Invitrogen, Thermo Fisher Scientific, cat# MA5-13412), XRCC4 (rabbit, 1:1000, generated in our laboratory; Kamdar and Matsumoto, 2010), PCNA (rabbit, 1:500, Santa Cruz Biotechnology, cat# sc-7907), KAP1 (rabbit, 1:1000, abcam, cat# ab10483), pS824-KAP1 (rabbit, 1:1000, BETHYL, cat# A300-767A-2), Cyclin-A2 (mouse, 1:1000, Cell signaling, cat# BF683), Cyclin-E1 (rabbit, 1:1000, Sigma-Aldrich, cat# C4976), GFP (mouse, 1:3000, Nacali Tesque Inc, cat# GF200), ATM (mouse, 1:2000, Sigma-Aldrich, cat# A1106), DNA-PKcs (rabbit, 1:2000, abcam, cat# Y393), p53 (mouse, 1:5000, Santa Cruz Biotechnology, cat# sc-126), RPA2 (mouse, 1:3000, abcam, cat# ab2175), GAPDH (mouse, 1:10,000, EMD Millipore, cat# MAB374), FLAG-M2 (mouse, 1:1000, Sigma-Aldrich, cat# A8592), RFP (rabbit, 1:1000, MBL, PM005), and FEN1 (mouse, 1:500, Santa Cruz, sc-28355). The PVDF membrane was washed three times with TBS-T. For secondary antibody reactions, horseradish peroxidase (HRP)-conjugated rabbit or mouse antibodies (Dako, cat# P0399 or P0447, respectively) were incubated for 1 hr at room temperature. After washing five times with TBS-T, the membranes were developed using enhanced chemiluminescence (LI-COR Biosciences) and detected using a C-digit (LI-COR, Biosciences).\n\n### Immunoprecipitation\n\nFor sample preparation for immunoprecipitation, HEK293 cells were grown on 100 mm dishes, washed twice in phosphate-buffered saline (PBS; Nacalai Tesque Inc), and lysed in lysis buffer (50 mM Tris-HCl, pH 7.5, 100 mM NaCl, 0.2% NP-40, 1 mM MgCl2, and 10% glycerol) supplemented with cocktails of protease inhibitors and phosphatase inhibitors. After incubation for 30 min on the rotator at 4\u00b0C, lysates were cleared by centrifugation 20,000 \u00d7 g for 20 min at 4\u00b0C. Next, lysates were incubated with 10 \u03bcl of GFP-Trap magnetic agarose beads (ChromoTek, GmbH) for 4 hr with mixing on a rotator at 4\u00b0C. The beads were then washed five times with lysis buffer, and proteins were eluted in 2\u00d7 SDS sample buffer (125 mM Tris-HCl, pH 6.8, 4% wt/vol SDS, 20% vol/vol glycerol, 0.01% wt/vol bromophenol blue, and 5% vol/vol 2-mercaptoethanol).\n\n### Immunofluorescence\n\nCells were grown on glass coverslips and fixed with 4% formaldehyde for 15 min at 4\u00b0C. Cells were subsequently permeabilized with PBS containing 0.2% Triton X-100 for 5 min at 4\u00b0C. Following 30 min of blocking in PBS supplemented with 2% wt/vol BSA, primary antibody reactions were performed in PBS-T supplemented with 1% wt/vol BSA for 2 hr at room temperature. Cells were washed three times with PBS, and secondary antibody reactions were performed in PBS-T supplemented with 1% BSA for 1 hr at room temperature in the dark. After washing five times with PBS, coverslips were mounted in mounting medium (Dako) containing the nuclear staining dye 4\u2032,6-diamidino-2-phenylindole dihydrochloride (DAPI) and allowed to dry for 2 hr at room temperature in the dark. For the primary antibody, an anti-\u03b3H2AX mouse antibody (Merck Millipore, JBW301) was used at a 1:1000 dilution. An Alexa Fluor 594-conjugated mouse secondary antibody (Invitrogen, Thermo Fisher Scientific, cat# A32742) was used at a 1:2000 dilution.\n\nTo quantify \u03b3H2AX foci formation, nuclei and foci-positive cells were counted using the ImageJ software. Foci-positive cells were defined as those containing >10 foci, and at least 100 cells were counted. Representative images are presented.\n\nTo measure ADP-ribosylation, cells were pretreated with 10 \u03bcM poly (ADP-ribose) glycohydrolase inhibitor (PARGi, TOCRIS Bio-Techne, PDD 00017273) for 30 min prior to IR exposure to increase total ADP-ribosylation levels by inhibiting hydrolysis of the ribose-ribose bonds present in poly (ADP-ribose). For the HU and EME assays, cells were incubated in 2 mM HU (Sigma-Aldrich) for 2 hr or in 1 \u03bcM EME (Bio vision, BVN-B2339-50-50) for 1 hr, with PARG inhibitor added during the final 20 min. For the H2O2 assay, cells were labeled with 10 \u03bcM EdU for 20 min and then treated with 1 mM H2O2 for 10 min. As the primary reaction to detect SSBs, a PAN ADP-ribose-binding reagent (rabbit, Merck, cat# 9QQ12P) was used at 1:1000 dilution in PBS-T supplemented with 1% wt/vol BSA. Alexa Fluor 488- or 594-conjugated rabbit secondary antibodies (Invitrogen, cat# A32731 or A32740, respectively) was used at a 1:2000 dilution. EdU labeling was performed between blocking and primary antibody reaction using Click-iT EdU Alexa Fluor 488 Imaging Kit (Life Technologies, cat# C10337) according to the manufacturer\u2019s instructions. The mean intensity of ADP-ribose in nuclei stained with DAPI was measured using ImageJ software. At least 100 cells were counted, and the average ADP-ribose intensity was calculated using GraphPad Prism 8 (GraphPad Software Inc).\n\nTo measure genome instability, cells with micronuclei and chromosome bridges were counted using DAPI staining. At least 300 cells were counted using ImageJ software.\n\n### BrdU incorporation assay\n\nCells were grown on glass coverslips and labeled with 10 \u03bcM BrdU (Sigma) for 48 hr. After treatment with 100 \u03bcM H2O2 for 10 min, cells were pre-extracted with CSK buffer (10 mM PIPES-NaOH, pH 6.8, 100 mM NaCl, 300 mM sucrose, 3 mM MgCl2, and 1 mM EGTA) containing 0.5% (vol/vol) Triton X-100 for 10 min at 4\u00b0C and then fixed with 2% (wt/vol) formaldehyde containing 0.2% (vol/vol) Triton X-100 for 10 min at room temperature followed by wash twice with PBS-T. Following treatment with 0.1% (wt/vol) pepsin (Tokyo Chemical Industry) in 10 mM HCl for 10 min at 37\u00b0C, cells were washed twice with ExoIII buffer (50 mM Tris-HCl, pH 7.5, 10 mM MgCl2, 1 mM DTT) and then incubated in ExoIII buffer containing 10 u/ml ExoIII (Promega) for 15 min at 37\u00b0C. After quench by adding 20 mM EDTA and block with PBS-T containing 10% (vol/vol) new born calf serum (nBCS; Hyclone, GE Healthcare), cells were reacted with anti-BrdU (mouse, 1/100, BD Biosciences, cat# 347580) in PBS-T containing 10% (vol/vol) nBCS overnight at 4\u00b0C. Following wash twice with PBS-T, secondary antibody reaction was performed in PBS-T containing 10% (vol/vol) nBCS for 1 hr at room temperature in the dark. After washing five times with PBS-T, DAPI stain was performed in PBS-T on a shaker for 30 min at room temperature. Afterwards, coverslips were mounted in mounting medium and then dried overnight at room temperature in the dark followed by microscopy. The mean intensity of native BrdU in nuclei stained with DAPI was measured using CellProfiler (Stirling et al., 2021) software. At least 400 cells were counted, and the average of native BrdU intensity was calculated using GraphPad Prism 8 (GraphPad Software Inc).\n\n### \u03b3-Ray irradiation\n\nTo examine the sensitivity and response to IR, cells were irradiated using (Kamdar and Matsumoto, 2010) Co \u03b3-ray source in Tokyo Institute of Technology. The dose rate was measured using an ionizing chamber-type exposure dosimeter C-110 (Oyo Giken, Tokyo, Japan) and corrected for decay.\n\n### Colony formation assay\n\nThe surviving fraction was determined using the colony formation assay. The cells were plated on 100 mm dishes. The number of plated cells was adjusted using higher doses of the indicated DNA-damaging agents to obtain an appropriate number of colonies. After incubation for 12\u201314 hr at 37\u00b0C under 5% CO2 conditions, cells were exposed to grading doses of \u03b3-ray (1, 3, and 5 Gy), H2O2 (100 and 200 \u03bcM for 2 hr), and HU (1, 2, and 4 mM for 24 hr). The cells were further incubated for 10\u201314 days to form colonies. After washing with PBS, cells were fixed with 99.5% ethanol and stained with staining solution (0.02% wt/vol crystal violet; 2.5% vol/vol methanol). After washing the plates twice with water and drying overnight, colonies containing more than 50 cells were counted manually. The plating efficiency was calculated as the number of colonies divided by the number of plated cells. The surviving fraction was calculated as the plating efficiency of the irradiated cells divided by the plating efficiency of the unirradiated cells. Experiments were independently repeated at least three times.\n\n### Cell growth assay\n\nCell growth and growth rates were analyzed based on the number of cells at several time points (Figure 1B: days 0, 1, 2, 3, and 4; Figure 3B, E: days 0, 1, and 4). Cells were prepared at 70\u201380% confluency on 100 mm dishes or 60 mm dishes and spread onto 6-well plates (2 \u00d7 105 cells/well). The cells were cultured at 37\u00b0C in humidified atmosphere containing 5% CO2 conditions. After the indicated incubation period, cells were harvested by trypsinization, and cell numbers were counted using a Coulter counter (Beckman Coulter) in all experiments.\n\n### Cell cycle distribution analysis by flowcytometry\n\nThe procedure for cell cycle distribution analysis has been described in our recent publication (Tsuchiya et al., 2021) and was appropriately modified for this study. In brief, the nascently synthesized DNA was labeled with EdU and Alexa Fluor 488 azide through Click reaction using a Click-iT EdU Imaging kit (Life Technologies, cat# C10337), and cells were then stained with propidium iodide (PI) using a Cell Cycle Phase Determination Kit (Cayman Chemicals, cat# 10009349) according to the manufacturer\u2019s instruction. Cells grown in 6-well plates or 60 mm dish at 70\u201390% confluency were treated with 10 \u03bcM of EdU for 1 hr and harvested by trypsinization. Harvested cells were washed with 0.1% wt/vol BSA/PBS and fixed/permeabilized by BD cytofix/cytoperm buffer (BD Biosciences, cat# 554714) according to the manufacturer\u2019s instructions. Subsequently, the cells were washed with 1\u00d7 BD perm/wash buffer and resuspended in a click-it reaction cocktail for 1 hr at room temperature in the dark. After Click reaction, cells were washed with 1\u00d7 BD perm/wash buffer and resuspend in PBS containing 0.02% wt/vol sodium azide, 0.02% wt/vol RNaseA, and 0.01% wt/vol PI for 1 hr at room temperature in the dark. The cell suspension was supplemented with 500 ml of 0.1% wt/vol BSA/PBS for adjustment of the volume prior to the analysis and subjected to flow cytometry using Cell Lab Quanta SC (Beckman Coulter).\n\n### DNA fiber analysis\n\nThe DNA fiber assay was performed according to a previously reported paper (Schwab and Niedzwiedz, 2011) and appropriately modified for this study. Cells grown on 60 mm dish at 70\u201390% confluency were initially labeled with 50 \u03bcM IdU for 15 min and subsequently labeled with 250 \u03bcM CldU for 15 min in a humidified CO2 incubator. Labeled cells were harvested by trypsinization and resuspended in ice-cold PBS at 1 \u00d7 106 to 1 \u00d7 107 cells/ml.\n\nFor the S1 nuclease assay, cells were labeled with 250 \u03bcM of CldU for 60 min with 10 \u03bcM of FEN1 inhibitor (MedChemExpress, FEN1-IN-3) and/or treated with 10 \u03bcM of PARP inhibitor (AdooQ Bioscience, Olaparib, AZD2281) in a humidified CO2 incubator, washed once with PBS, and permeabilized with CSK-100 buffer (100 mM NaCl, 10 mM HEPES pH 7.8, 3 mM MgCl2, 300 mM sucrose, and 0.5% Triton X-100) for 10 min at RT. After permeabilization, cells were washed twice with ice-cold PBS and harvested by scraping. Harvested cells were divided into two 1.5 ml tubes for S1 nuclease treatment and subsequently centrifuged at 400 \u00d7 g for 3 min. Cell pellets were treated with S1 nuclease (Takara Bio, 2410A) for 30 min at 37\u00b0C and resuspended in ice-cold PBS at 1 \u00d7 106 to 1 \u00d7 107 cells/ml.\n\nTwo \u03bcl of the cell suspension was spotted on one end of the glass slides (Matsunami glass, cat# S8215) and air-dried for 5 min. 7 \u03bcl of DNA fiber lysis buffer (200 mM Tris-HCl, pH 7.5, 50 mM EDTA, and 0.5% wt/vol SDS) were added to the cell suspension, gently stirred with a pipette tip, and incubated for 2 min. The glass slides were tilted at 15\u00b0 to allow the fibers to spread along the slide and air-dried once the fiber solution reached the end of the glass slide. Glass slides were immersed in fixative (75% vol/vol methanol and 25% vol/vol acetic acid) and incubated for 10 min. After washing with distilled water twice, glass slides were immersed in 2.5 M HCl for 80 min, followed by three times wash with PBS, and blocked with 5% wt/vol BSA/PBS for 30 min. For primary antibody reaction, anti-BrdU (mouse, 1/100, BD Biosciences, cat# 347580, reacts with IdU) and anti-BrdU (rat, 1/400, abcam, cat# ab6326, reacts with CldU) diluted in 5% wt/vol BSA/PBS were used and incubated in a humidified case for 2 hr. After washing with PBS three times, goat anti-rat Alexa Fluor 488 (Invitrogen, 1/1000, cat# A110060) and goat anti-mouse Alexa Fluor 594 (Invitrogen, 1/1000, cat# A11005) were put onto the glass slides for secondary antibody reaction and incubated for 1 hr in the dark. The glass slides were subsequently washed three times with PBS-T and mounted using mounting medium (Dako). To observe DNA fibers, an OLYMPUS IX71 (OLYMPUS) or Zeiss LSM880 (Carl Zeiss) fluorescence microscope was used, and at least 50 fibers were measured in each experiment. The tract length of the DNA fibers was measured using the ImageJ software and analyzed using GraphPad Prism 8 (GraphPad Software Inc).\n\n### Protein\u2013DNA-binding assay\n\nAn EpiQuik Colorimetric General Protein-DNA Binding Assay Kit (Epigentek Inc, cat# P-2004-96) was used to measure the DNA-binding ability of WT, T118A, and T118D PNKP, according to the manufacturer\u2019s instructions. Nuclear extracts were harvested from U2OS PNKP\u2212/\u2212 cells transfected with WT GFP-PNKP, T118A, or T118D expression vectors in non-denaturing lysis buffer (150 mM KCl, 50 mM Tris-HCl, pH 8.3, 1 mM EDTA, and 1 mM DTT) supplemented with protease inhibitors. To measure the DNA-binding ability to the gapped DNA, a biotinylated oligonucleotide (BioF20: 5\u2032-Biotin/TAGCACCTACCGATTGTATG/Phos-3\u2032) and a non-biotinylated oligonucleotide (F15: 5\u2032/TACGTTTTTGTGTCG/3\u2032) were annealed to a complementary strand oligonucleotide (R36: 5\u2032-Phos/CGACACAAAAACGTATCATACAATCGGTAGGTGCTA/3\u2032) in annealing buffer (10 mM Tris, pH 7.5, 50 mM NaCl, and 1 mM EDTA). Oligonucleotides in annealing buffer were incubated at 95\u00b0C for 5 min and cooled down slowly. 20 ng of biotinylated double-stranded oligonucleotides and 10 \u03bcg of nuclear extract was used for the DNA-binding reaction in streptavidin-coated tubes. Additionally, 1 \u03bcg/ml GFP antibody (Nacali Tesque Inc, cat# GF200) and 0.5 \u03bcg/ml HRP-conjugated mouse antibody (Dako, cat# P0447) were used to detect DNA-binding proteins. The absorbance was measured at 450 nm using an iMark Microplate Absorbance Reader (Bio-Rad Laboratories).\n\n### PNKP phosphatase and kinase activity biochemical assay\n\nThe phosphatase and kinase activities of PNKP were determined in accordance with previous studies (Kalasova et al., 2020; Dobson and Allinson, 2006). Fluorescently labeled oligonucleotides (Integrated DNA Technologies) were used as PNKP substrates. For 3\u2032-phosphatase reaction, \u2018S1\u2019 [5\u2032-(TAMRA) TAGCATCGATCAGTCCTC-3\u2032-P] and \u2018C2\u2019 [5\u2032-P-GAGGTCTAGCATCGTTAGTCA-(6-FAM)-3\u2032] were annealed to a complementary strand oligonucleotide \u2018B1\u2019 [5\u2032-TGACTAACGATGCTAGACCTCTGAGGACTGATCGATGCTA-3\u2032] in annealing buffer (10 mM Tris pH 7.5, 200 mM NaCl, and 1 mM EDTA). For 5\u2032-kinase reaction, \u2018C1\u2019 [5\u2032-(TAMRA)-TAGCATCGATCAGTCCTC-3\u2032-OH] and \u2018S2\u2019 [5\u2032-OH-GAGGTCTAGCATCGTTAGTCA-(6-FAM)-3\u2032] were annealed to \u2018B1\u2019 oligonucleotides in annealing buffer. Each of these oligonucleotide mixtures was treated at 95\u00b0C for 5 min and then left at room temperature for 1 hr to anneal and form substrate oligonucleotides. The expression vectors for WT PNKP, T118A, D171A, and K378A were transfected into PNKP\u2212/\u2212 cells. In addition to these transfected PNKP\u2212/\u2212 cells, WT U2OS and PNKP\u2212/\u2212 cells were suspended in lysis buffer (25 mM Tris, pH 7.5, 10 mM EDTA, 10 mM EGTA, 100 mM NaCl, and 1% Triton X-100) and incubated for 15 min at 4\u00b0C and then centrifuged at 16,000 \u00d7 g for 20 min at 4\u00b0C. The supernatant was used as the cell-free protein extract. Protein extract of 1 \u00d7 105 cells was incubated with 100 nM substrate oligonucleotides and 20 \u03bcM single-stranded nuclease competitor oligonucleotide [5\u2032-AAAGATCACAAGCATAAAGAGACAGG-3\u2032] in reaction buffer (25 mM Tris, pH 7.5, 130 mM KCl, 10 mM MgCl2, 1 mM DTT, and 1 mM ATP) for 10 min at 37\u00b0C. The enzymatic reactions were terminated by adding 25 \u03bcl of quenching buffer (90% formamide, 50 mM EDTA, 0.006% Orange G) to 25 \u03bcl of reaction solution. Each reaction sample was diluted with quenching buffer (10\u00d7). Subsequently, 10 \u03bcl of each reaction sample was separated on a 20% denaturing polyacrylamide gel (7 M Urea and TBE buffer) for 16 hr (500 V, 10 mA) and analyzed on a Typhoon 9500 (GE Healthcare Life Science).\n\n### Isolation of proteins on nascent DNA\n\niPOND experiments were performed according to a previous protocol paper (Dungrawala and Cortez, 2015) and appropriately modified for this study. HEK293 cells grown in 15 cm dishes were treated with 10 \u03bcM EdU for 10 min. After EdU labeling, cells were fixed in 10 ml of 1% formaldehyde/PBS on the dishes for 20 min at room temperature and then quenched by adding 1 ml of 1.25 M glycine. Cells were harvested by scraping 5 min after quenching and washed three times with PBS. Cells were subsequently permeabilized with PBS containing 0.25% Triton X-100 for 30 min at room temperature and washed twice with PBS. Each sample was divided into two 1.5 ml tubes for a click reaction (with biotin-azide) and a no-click control (without biotin-azide). Click-iT Reaction Buffer (Thermo Fisher, cat#: C10269) and biotin-azide (Cayman Chemical, cat#: 13040) were used for the Click reaction, according to the manufacturer\u2019s protocol. Cells were washed twice in PBS and subsequently lysed in iPOND lysis buffer (1% SDS and 50 mM Tris-HCl pH8.0) containing protease inhibitor cocktail. Samples were sonicated using a BRANSON 150 sonicator, centrifuged at 20,000 \u00d7 g for 10 min at room temperature, and diluted in a 1:1 volume of PBS containing a protease inhibitor cocktail. 20 \u03bcl (per sample) of Streptavidin-Magnetic beads (Thermo Fisher, cat#: 88816) or 100 \u03bcl (per sample) of Dynabeads MyOne Streptavidin C1 (Thermo Fisher, cat#: 65001) were washed twice with iPOND lysis buffer and incubated with samples overnight at 4\u00b0C in the dark. Bead-sample mixtures were washed once in iPOND lysis buffer, once with low salt buffer (1% Triton X-100, 2 mM Tris-HCl pH 8.0, 2 mM EDTA, and 150 mM NaCl), once with high salt buffer (1% Triton X-100, 2 mM Tris-HCl pH 8.0, 2 mM EDTA, and 500 mM NaCl), and once with iPOND lysis buffer. Proteins were eluted in 2\u00d7 SDS sample buffer by incubating for 25 min at 95\u00b0C. Samples were resolved on SDS\u2013PAGE, and proteins were detected by immunoblotting.\n\n### In vitro kinase assay\n\nPurified human recombinant 6\u00d7His-tagged PNKP was generously provided by Dr. Michael Weinfeld. Purified human recombinant GST-tagged CDK4/Cyclin D1 (cat# PV4400), CDK2/Cyclin E1 (cat# PV6295), CDK1/Cyclin A2 (cat# PV6280), and 6\u00d7His-tagged CDK2/Cyclin A2 (cat# PV3267) were purchased from Thermo Fisher Scientific. For kinase reaction, 200 ng of each CDK/Cyclin complex was incubated with 1 \u03bcg of His-PNKP in kinase reaction buffer (25 mM Tris-HCl at pH 7.5, 5 mM MgCl2, 5 mM sodium pyrophosphate, 2 mM ATP, and 2 mM DTT) for 1 hr at 30\u00b0C. Reactions were quenched by adding 2\u00d7 SDS sample buffer and boiling for 10 min at 98\u00b0C. Samples were processed for western blotting and detected using specific antibodies.\n\n### Statistical analysis\n\nStatistical analysis was performed using either GraphPad Prism 8 (GraphPad Software Inc) or Microsoft Excel. Unpaired (two-tailed) t-tests were used to analyze the statistical significance of differences between the two experimental groups. One-way ANOVA followed by post hoc tests were used to analyze the statistical significance between multiple experimental groups. Sample scales are indicated in the figure legends. All experiments were independently performed at least three times with similar results. In all experiments, no statistical significance (ns) is defined as p > 0.05, * denotes 0.01 < p \u2266 0.05, ** denotes 0.005 < p \u2266 0.01, *** denotes 0.001 < p \u2266 0.005, and **** denotes 0.0005 < p \u2266 0.001.\n",
+      "created_at": "2025-12-04T05:13:27.126378Z"
+    },
+    {
+      "id": "fd9d9bd8-f405-4ab7-a437-dc1d08b9ca87",
+      "submission_id": "e086bb80-e07b-412b-a2fa-011140701228",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Ad\u00e8le L Marston, https://ror.org/01nrxwf90 University of Edinburgh United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.99217.sa0](https://doi.org/10.7554/eLife.99217.sa0)\n\nPNKP (polynucleotide kinase phosphatase) has dual functions of adding or removing phosphate groups at broken DNA ends for DNA damage repair, such as base damage or strand breaks. Here the authors provide convincing evidence that PNKP is also involved in the DNA replication process, particularly in processing Okazaki fragment ends. This is an important finding that expands our understanding of PNKP function, showing that it extends beyond DNA damage repair.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Ad\u00e8le L Marston, https://ror.org/01nrxwf90 University of Edinburgh United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.99217.sa1](https://doi.org/10.7554/eLife.99217.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\n[Editors' note: this paper was reviewed by Review Commons.]\n",
+      "created_at": "2025-12-04T05:13:27.126378Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T05:13:27.126378Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T05:13:27.126378Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "d483a0db-7ba2-4cfa-83e6-116877cf4a63",
+      "content_id": "2320e6ce-6865-4ddf-ab05-c3bf29803362",
+      "claim_id": "C1",
+      "claim": "PNKP knockout U2OS cells (PNKP\u2212/\u2212 cells) were generated using CRISPR/Cas9 Nickase (D10A) targeting exon 4 of the PNKP coding region.",
+      "claim_type": "EXPLICIT",
+      "source": "To confirm that this phenotype is observed in human cells, we initially generated PNKP knockout U2OS cells (PNKP\u2212/\u2212 cells) using CRISPR/Cas9 Nickase (D10A) targeting exon 4 of the PNKP coding region (Chiang et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the experimental method used to generate PNKP knockout cells, supported by citation to Chiang et al., 2016.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:13:27.126378Z"
+    },
+    {
+      "id": "31b503f9-00b0-462f-852d-5252e3191e1a",
+      "content_id": "2320e6ce-6865-4ddf-ab05-c3bf29803362",
+      "claim_id": "C2",
+      "claim": "Two PNKP knockout clones (C1 and C2) showed complete loss of PNKP as confirmed by western blot analysis with both N-terminus and C-terminus PNKP-recognized antibodies and DNA sequencing.",
+      "claim_type": "EXPLICIT",
+      "source": "We obtained two clones (C1 and C2) that showed complete loss of PNKP, as confirmed by western blot analysis with both N-terminus and C-terminus PNKP-recognized antibodies and DNA sequencing (Figure 1, Figure 1\u2014figure supplement 1A, B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in western blots and DNA sequencing results presented in Figure 1 and supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:13:27.126378Z"
+    },
+    {
+      "id": "04a387cf-6dbc-4da9-82ca-331040d73d6c",
+      "content_id": "2320e6ce-6865-4ddf-ab05-c3bf29803362",
+      "claim_id": "C3",
+      "claim": "PNKP\u2212/\u2212 cells showed a delay in diminishing the phosphorylation of histone H2AX and KAP1 after IR-induced DNA damage.",
+      "claim_type": "EXPLICIT",
+      "source": "PNKP\u2212/\u2212 cells showed a delay in diminishing the phosphorylation of histone H2AX and KAP1, markers of DSBs, after IR-induced DNA damage (Figure 1\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by western blot data showing delayed reduction of phosphorylation markers in Figure 1\u2014figure supplement 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:13:27.126378Z"
+    },
+    {
+      "id": "ffef3fde-ff8a-400e-89ca-c09a3e402789",
+      "content_id": "2320e6ce-6865-4ddf-ab05-c3bf29803362",
+      "claim_id": "C4",
+      "claim": "PNKP\u2212/\u2212 cells showed increased sensitivity to IR exposure, suggesting a defect in DSB repair ability.",
+      "claim_type": "EXPLICIT",
+      "source": "PNKP\u2212/\u2212 cells also showed increased sensitivity to IR exposure, suggesting a defect in DSB repair ability (Figure 1\u2014figure supplement 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by colony formation assay data showing increased sensitivity to IR in Figure 1\u2014figure supplement 2B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:13:27.126378Z"
+    },
+    {
+      "id": "16568be1-e786-42c4-a8ed-d63ed25e657e",
+      "content_id": "2320e6ce-6865-4ddf-ab05-c3bf29803362",
+      "claim_id": "C5",
+      "claim": "PNKP\u2212/\u2212 cells displayed a significantly increased level of native BrdU signals and hyper-sensitivity upon SSB induction by hydrogen peroxide (H2O2).",
+      "claim_type": "EXPLICIT",
+      "source": "The cells displayed a significantly increased level of native BrdU signals and hyper-sensitivity upon SSB induction by hydrogen peroxide (H2O2), indicating that the loss of PNKP leads to reduced ability of SSB repair in cells (Figure 1\u2014figure supplement 2C\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by BrdU incorporation assay data and colony formation assay data shown in Figure 1\u2014figure supplement 2C\u2013F.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:13:27.126378Z"
+    },
+    {
+      "id": "d102aefa-b4b0-411b-85a7-566ee2a64a10",
+      "content_id": "2320e6ce-6865-4ddf-ab05-c3bf29803362",
+      "claim_id": "C6",
+      "claim": "PNKP\u2212/\u2212 cells showed increased sensitivity to the inhibition of DNA replication by hydroxyurea (HU) treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, PNKP\u2212/\u2212 cells showed increased sensitivity to the inhibition of DNA replication by hydroxyurea (HU) treatment (Figure 1\u2014figure supplement 2G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by colony formation assay data showing increased sensitivity to HU in Figure 1\u2014figure supplement 2G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:13:27.126378Z"
+    },
+    {
+      "id": "95aab6e2-2323-43af-9fd4-5851b560af85",
+      "content_id": "2320e6ce-6865-4ddf-ab05-c3bf29803362",
+      "claim_id": "C7",
+      "claim": "PNKP\u2212/\u2212 cells grow slower than WT cells.",
+      "claim_type": "EXPLICIT",
+      "source": "During the course of our experiments, we observed that PNKP\u2212/\u2212 cells grow slower than WT cells, consistent with our previous study in mice (Figure 1B; Shimada et al., 2015).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by cell growth curve data in Figure 1B and citation to previous study in mice.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:13:27.126378Z"
+    },
+    {
+      "id": "37be1ad2-5cae-408f-98a0-90857561deb0",
+      "content_id": "2320e6ce-6865-4ddf-ab05-c3bf29803362",
+      "claim_id": "C8",
+      "claim": "PNKP\u2212/\u2212 cells accumulate in the S phase.",
+      "claim_type": "EXPLICIT",
+      "source": "The analysis revealed an accumulation of PNKP\u2212/\u2212 cells in the S phase (Figure 1\u2014figure supplement 2H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by flow cytometry data showing cell cycle distribution in Figure 1\u2014figure supplement 2H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:13:27.126378Z"
+    },
+    {
+      "id": "60d65fab-1c76-4e05-bb50-9e7284778bea",
+      "content_id": "2320e6ce-6865-4ddf-ab05-c3bf29803362",
+      "claim_id": "C9",
+      "claim": "PNKP\u2212/\u2212 clones exhibited significantly higher levels of ADP-ribosylation compared to WT cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Our two PNKP\u2212/\u2212 clones exhibited significantly higher levels of ADP-ribosylation, a marker of ssDNA gaps/breaks, compared to WT cells, indicating that PNKP\u2212/\u2212 cells face a pronounced amount of endogenously induced ssDNA gaps/breaks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by PAN ADP-ribosylation assay data showing increased ADP-ribosylation in PNKP\u2212/\u2212 cells.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:13:27.126378Z"
+    },
+    {
+      "id": "4be3e25a-5cfd-4027-8418-d092193c24cd",
+      "content_id": "2320e6ce-6865-4ddf-ab05-c3bf29803362",
+      "claim_id": "C10",
+      "claim": "HU and EME treatment rescued the increased ADP-ribose intensity in PNKP\u2212/\u2212 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Although PNKP\u2212/\u2212 cells showed high levels of ADP-ribose intensity spontaneously, HU and EME treatment rescued the increased ADP-ribose intensity in PNKP\u2212/\u2212 cells, albeit higher, yet statistically non-significant, extent than WT cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by ADP-ribosylation assay data with HU and EME treatments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:13:27.126378Z"
+    },
+    {
+      "id": "ee818cb4-1425-4a79-ae98-2667b344dbe4",
+      "content_id": "2320e6ce-6865-4ddf-ab05-c3bf29803362",
+      "claim_id": "C11",
+      "claim": "Loss of PNKP leads to an accumulation of ssDNA gap structures during DNA replication.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that loss of PNKP leads to an accumulation of ssDNA gap structures during DNA replication.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the rescue of ADP-ribose intensity by HU and EME treatment, which inhibit DNA replication.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:13:27.126378Z"
+    },
+    {
+      "id": "4335618c-1545-4d4a-8cef-b8e81c696519",
+      "content_id": "2320e6ce-6865-4ddf-ab05-c3bf29803362",
+      "claim_id": "C12",
+      "claim": "PNKP\u2212/\u2212 cells exhibited faster progression of DNA replication fork than WT cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the slower cell growth, PNKP\u2212/\u2212 cells exhibited faster progression of DNA replication fork than WT cells (Figure 1G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by DNA fiber assay data showing increased tract length in Figure 1G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:13:27.126378Z"
+    },
+    {
+      "id": "93210b13-f31c-439b-9960-20cff21a5cf2",
+      "content_id": "2320e6ce-6865-4ddf-ab05-c3bf29803362",
+      "claim_id": "C13",
+      "claim": "PNKP\u2212/\u2212 cells exhibited significantly shortened DNA fibers upon S1 nuclease-mediated DNA digestion.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, PNKP\u2212/\u2212 cells exhibited significantly shortened DNA fibers upon S1 nuclease-mediated DNA digestion, unlike U2OS WT cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by S1 DNA fiber assay data showing shortened DNA fibers after S1 nuclease treatment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:13:27.126378Z"
+    },
+    {
+      "id": "44a64eed-8825-4d1e-b372-87c7bbd021b0",
+      "content_id": "2320e6ce-6865-4ddf-ab05-c3bf29803362",
+      "claim_id": "C14",
+      "claim": "Loss of PNKP results in the accumulation of ssDNA gaps on nascent replicated DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "This observation suggests that the loss of PNKP results in the accumulation of ssDNA gaps on nascent replicated DNA, leading to improper cell proliferation due to high levels of endogenous DNA damage (Figure 1H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is inferred from the S1 nuclease digestion data and supported by a model in Figure 1H.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:13:27.126378Z"
+    },
+    {
+      "id": "e092816f-a7df-4685-a26a-2c7fdea5f306",
+      "content_id": "2320e6ce-6865-4ddf-ab05-c3bf29803362",
+      "claim_id": "C15",
+      "claim": "FEN1i treatment induced increased CldU tract length in U2OS WT cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, FEN1i treatment induced increased CldU tract length, whereas HU treatment led to stalled forks, consistent with previous studies (Thakar et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by DNA fiber assay data and citation to previous study.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:13:27.126378Z"
+    },
+    {
+      "id": "7f624e1f-b3d0-409e-bd5a-a55f59c02d71",
+      "content_id": "2320e6ce-6865-4ddf-ab05-c3bf29803362",
+      "claim_id": "C16",
+      "claim": "Double treatment of FEN1i and PARPi in U2OS WT cells, followed by S1 nuclease treatment, showed significantly lower CldU/IdU ratio, indicating extensive DNA fiber digestion by S1 nuclease.",
+      "claim_type": "EXPLICIT",
+      "source": "Double treatment of FEN1i and PARPi in U2OS WT cells, followed by S1 nuclease treatment, showed significantly lower CldU/IdU ratio, indicating extensive DNA fiber digestion by S1 nuclease (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by S1 DNA fiber assay data in Figure 2C showing reduced CldU/IdU ratio.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:13:27.126378Z"
+    },
+    {
+      "id": "c51acfec-59bc-40a8-91ae-f092c3891889",
+      "content_id": "2320e6ce-6865-4ddf-ab05-c3bf29803362",
+      "claim_id": "C17",
+      "claim": "Both FEN1-dependent canonical OFs maturation and PARP-dependent ssDNA gap-filling pathway are coordinately required to prevent the emergence of ssDNA gaps during DNA replication.",
+      "claim_type": "EXPLICIT",
+      "source": "Although single treatment with either FEN1i or PARPi in U2OS WT cells, followed by S1 nuclease treatment, led to DNA fiber digestion, the extent was limited compared to the double treatment (Figure 2C, D), indicating that both pathways: FEN1-dependent canonical OFs maturation and PARP-dependent ssDNA gap-filling pathway, are coordinately required to prevent the emergence of ssDNA gaps during DNA replication, consistent with previous studies (Vaitsiankova et al., 2022).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by S1 DNA fiber assay data comparing single and double inhibitor treatments, and citation to previous study.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:13:27.126378Z"
+    },
+    {
+      "id": "5d2a03cf-65e2-4c96-9265-ab16fe21f32f",
+      "content_id": "2320e6ce-6865-4ddf-ab05-c3bf29803362",
+      "claim_id": "C18",
+      "claim": "PNKP\u2212/\u2212 cells with S1 nuclease treatment showed extensive DNA fiber digestion even without FEN1i and PARP1i treatments.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, PNKP\u2212/\u2212 cells with S1 nuclease treatment showed extensive DNA fiber digestion even without FEN1i and PARP1i treatments, and this was not further increased by FEN1i and PARPi treatment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by S1 DNA fiber assay data showing extensive digestion in PNKP\u2212/\u2212 cells without inhibitor treatment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:13:27.126378Z"
+    },
+    {
+      "id": "a0f5f59d-bbc0-4e97-94e0-463f15aae90b",
+      "content_id": "2320e6ce-6865-4ddf-ab05-c3bf29803362",
+      "claim_id": "C19",
+      "claim": "PNKP is involved in both FEN1-dependent canonical OFs maturation and PARP-dependent ssDNA gap-filling pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that PNKP itself is involved in both pathways mentioned above (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is inferred from the observation that PNKP\u2212/\u2212 cells show extensive DNA fiber digestion without inhibitor treatment, suggesting involvement in both pathways.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:13:27.126378Z"
+    },
+    {
+      "id": "f47a8f17-caaf-4223-a0de-428f1b97e751",
+      "content_id": "2320e6ce-6865-4ddf-ab05-c3bf29803362",
+      "claim_id": "C20",
+      "claim": "D2 mutant-expressing cells showed slower proliferation than cells expressing WT PNKP and other mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "D2 mutant-expressing cells showed slower proliferation than cells expressing WT PNKP and other mutants, although D3 and D4 exhibited mildly slower cell proliferation (WT vs. D3: p = 0.1737; WT vs. D4: p = 0.4523).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by cell growth rate data comparing different PNKP deletion mutants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:13:27.126378Z"
+    },
+    {
+      "id": "d99d46b4-f4ba-4e5f-ab8a-3968ddfcc869",
+      "content_id": "2320e6ce-6865-4ddf-ab05-c3bf29803362",
+      "claim_id": "C21",
+      "claim": "D3, D4 as well as D2 mutant-expressing cells showed increased tract lengths compared to WT and D1 mutant-expressing cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, D3, D4 as well as D2 mutant-expressing cells showed increased tract lengths compared to WT and D1 mutant-expressing cells, indicating that in addition to the enzymatic activity of PNKP, the linker region also plays a crucial role in proper fork progression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by DNA fiber assay data comparing different PNKP deletion mutants.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:13:27.126378Z"
+    },
+    {
+      "id": "4b613bcf-9bb0-446f-a2b5-05a18fcd3e8c",
+      "content_id": "2320e6ce-6865-4ddf-ab05-c3bf29803362",
+      "claim_id": "C22",
+      "claim": "The linker region of PNKP plays a crucial role in proper fork progression.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, D3, D4 as well as D2 mutant-expressing cells showed increased tract lengths compared to WT and D1 mutant-expressing cells, indicating that in addition to the enzymatic activity of PNKP, the linker region also plays a crucial role in proper fork progression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the observation that D2 (linker deletion) mutant shows slower proliferation and increased tract length.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:13:27.126378Z"
+    },
+    {
+      "id": "0e1babad-a39e-4dd7-ad3b-38a3742564ed",
+      "content_id": "2320e6ce-6865-4ddf-ab05-c3bf29803362",
+      "claim_id": "C23",
+      "claim": "Five potential phosphorylation sites were identified in the PNKP linker region: serine 114, threonine118, threonine 122, serine 126, and serine 143.",
+      "claim_type": "EXPLICIT",
+      "source": "Using PhosphoSitePlus, we identified five potential phosphorylation sites: serine 114, threonine118, threonine 122, serine 126, and serine 143 (Figure 3D; Hornbeck et al., 2015).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by bioinformatics analysis using PhosphoSitePlus database and citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:13:27.126378Z"
+    },
+    {
+      "id": "64ca6221-c190-4827-aeb2-51fc0eeee846",
+      "content_id": "2320e6ce-6865-4ddf-ab05-c3bf29803362",
+      "claim_id": "C24",
+      "claim": "Amino acids S114, T118, and S143 are highly conserved among mammalian species.",
+      "claim_type": "EXPLICIT",
+      "source": "Amino acids S114, T118, and S143 are highly conserved among mammalian species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by sequence alignment data shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:13:27.126378Z"
+    },
+    {
+      "id": "4087f2d4-19fb-47c5-b3f3-9d04b5780486",
+      "content_id": "2320e6ce-6865-4ddf-ab05-c3bf29803362",
+      "claim_id": "C25",
+      "claim": "S114 is phosphorylated by ATM and S126 by ATM and DNA-PKcs.",
+      "claim_type": "EXPLICIT",
+      "source": "S114 and S126 form a typical SQ/TQ motif, with S114 being phosphorylated by ATM and S126 by ATM and DNA-PKcs (Segal-Raz et al., 2011; Zolner et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:13:27.126378Z"
+    },
+    {
+      "id": "41518219-a4a0-48af-9aba-a30cefa333e1",
+      "content_id": "2320e6ce-6865-4ddf-ab05-c3bf29803362",
+      "claim_id": "C26",
+      "claim": "T118 is predicted to be a CDK phosphorylation substrate motif (S/TP).",
+      "claim_type": "EXPLICIT",
+      "source": "T118, T122, and S143 are novel phosphorylation sites, with T118 predicted to be a CDK phosphorylation substrate motif (S/TP).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on sequence analysis identifying the S/TP motif.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:13:27.126378Z"
+    },
+    {
+      "id": "b01a5976-be9b-489c-9d66-eb8a432ddf87",
+      "content_id": "2320e6ce-6865-4ddf-ab05-c3bf29803362",
+      "claim_id": "C27",
+      "claim": "T118A mutant-expressing cells exhibited a marked delay in cell growth.",
+      "claim_type": "EXPLICIT",
+      "source": "T118A mutant-expressing cells exhibited a marked delay in cell growth, which was not observed in S114A, although T122A (p = 0.0258), S126A (p = 0.0523), and S143A (p = 0.4402) showed slight delays.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by cell growth rate data comparing different PNKP point mutants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:13:27.126378Z"
+    },
+    {
+      "id": "a851b1c9-22f2-4cc8-81e3-3d0cbf9abb2f",
+      "content_id": "2320e6ce-6865-4ddf-ab05-c3bf29803362",
+      "claim_id": "C28",
+      "claim": "The linker region of PNKP, especially the phosphorylation of PNKP on T118, is required for proper cell proliferation.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that the linker region of PNKP, especially the phosphorylation of PNKP on T118, is required for proper cell proliferation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the observation that T118A mutant shows marked delay in cell growth.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:13:27.126378Z"
+    },
+    {
+      "id": "a84c76c7-b706-4f28-b13b-48c97783ecf7",
+      "content_id": "2320e6ce-6865-4ddf-ab05-c3bf29803362",
+      "claim_id": "C29",
+      "claim": "pT118-PNKP was detected in asynchronized cells but increased particularly in the S phase, similar to Cyclin A2 expression levels.",
+      "claim_type": "EXPLICIT",
+      "source": "pT118-PNKP was detected in asynchronized cells but increased particularly in the S phase, similar to Cyclin A2 expression levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by western blot data from synchronized cells showing increased pT118-PNKP in S phase.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:13:27.126378Z"
+    },
+    {
+      "id": "9cfd0f47-d079-44ee-aecd-e78dde939073",
+      "content_id": "2320e6ce-6865-4ddf-ab05-c3bf29803362",
+      "claim_id": "C30",
+      "claim": "T118 phosphorylation was very weak during mitosis.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the reduction of pT118, possibly due to dephosphorylation of T118, was not as robust as the reduction in Cyclin A2 expression levels at the 12 hr time point. This effect was very weak during mitosis, suggesting that T118 phosphorylation plays a specific role in the S phase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by western blot data from synchronized cells showing weak pT118-PNKP during mitosis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:13:27.126378Z"
+    },
+    {
+      "id": "9b101552-69ae-464b-9fec-d98c977e7d6a",
+      "content_id": "2320e6ce-6865-4ddf-ab05-c3bf29803362",
+      "claim_id": "C31",
+      "claim": "CDK1/Cyclin A2 and CDK2/Cyclin A2 markedly phosphorylated PNKP at T118.",
+      "claim_type": "EXPLICIT",
+      "source": "CDK1/Cyclin A2 and CDK2/Cyclin A2 markedly phosphorylated PNKP, whereas CDK4/Cyclin D1 and CDK2/Cyclin E1 phosphorylated PNKP to a lesser extent, suggesting that CDK1/CyclinA2 and CDK2/CyclinA2 complexes are potential kinases of PNKP T118.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by in vitro kinase assay data showing phosphorylation of PNKP by CDK/Cyclin complexes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:13:27.126378Z"
+    },
+    {
+      "id": "4b04b98a-e0c4-4114-95cd-bc70c49c37cb",
+      "content_id": "2320e6ce-6865-4ddf-ab05-c3bf29803362",
+      "claim_id": "C32",
+      "claim": "Overexpression of both CDK2/Cyclin A2 and CDK1/Cyclin A2 showed an increased phosphorylation level at T118.",
+      "claim_type": "EXPLICIT",
+      "source": "Overexpression of both CDK2/Cyclin A2 and CDK1/Cyclin A2 showed an increased phosphorylation level at T118, supporting that these complexes are potential kinases of PNKP T118.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by western blot data from cells co-expressing CDK/Cyclin complexes and PNKP.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:13:27.126378Z"
+    },
+    {
+      "id": "c73be544-f957-41d2-ab7c-248021905fec",
+      "content_id": "2320e6ce-6865-4ddf-ab05-c3bf29803362",
+      "claim_id": "C33",
+      "claim": "PNKP T118A mutant showed a reduced amount of protein interaction with both CDK1 and CDK2.",
+      "claim_type": "EXPLICIT",
+      "source": "PNKP T118A mutant showed a reduced amount of protein interaction with both CDK1 and CDK2, with CDK2 appearing as a stronger binding partner of PNKP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by GFP-pulldown assay data showing reduced interaction between T118A mutant and CDKs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:13:27.126378Z"
+    },
+    {
+      "id": "a3882515-b076-4cd7-b284-de6d57864c26",
+      "content_id": "2320e6ce-6865-4ddf-ab05-c3bf29803362",
+      "claim_id": "C34",
+      "claim": "CDK1/2, especially CDK2, are the kinases of T118 on PNKP.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that CDK1/2, especially CDK2, are the kinases of T118 on PNKP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from in vitro kinase assay, co-expression, and protein interaction data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:13:27.126378Z"
+    },
+    {
+      "id": "d433c6da-61aa-4014-8523-b30669cb3439",
+      "content_id": "2320e6ce-6865-4ddf-ab05-c3bf29803362",
+      "claim_id": "C35",
+      "claim": "WT-PNKP and T118-phosphorylated PNKP interacted with nascent DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that replication fork-associated proteins, including FEN1, RPA2, and PCNA, as well as WT-PNKP and T118-phosphorylated PNKP interacted with nascent DNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by iPOND assay data showing PNKP and pT118-PNKP binding to nascent DNA.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:13:27.126378Z"
+    },
+    {
+      "id": "f1799fd9-6e77-4dc0-9b22-48276998c3eb",
+      "content_id": "2320e6ce-6865-4ddf-ab05-c3bf29803362",
+      "claim_id": "C36",
+      "claim": "The recruitment of PNKP to nascent DNA was reduced by the T118A mutation.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, the recruitment of PNKP to nascent DNA was reduced by the T118A mutation, which strongly suggests T118 phosphorylation is crucial for its recruitment to replication forks (Figure 4E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by iPOND assay data comparing WT and T118A PNKP binding to nascent DNA.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:13:27.126378Z"
+    },
+    {
+      "id": "9f6e33e3-72a3-411a-9442-7d86b69a40d5",
+      "content_id": "2320e6ce-6865-4ddf-ab05-c3bf29803362",
+      "claim_id": "C37",
+      "claim": "Depletion of XRCC1 by siRNA treatment reduced the amount of PNKP recruited to nascent DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Depletion of XRCC1 by siRNA treatment reduced the amount of PNKP recruited to nascent DNA, indicating the involvement of PNKP in ssDNA gap-filling pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by iPOND assay data from XRCC1-depleted cells showing reduced PNKP binding to nascent DNA.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:13:27.126378Z"
+    },
+    {
+      "id": "2c064c29-58ae-4bb9-b26b-2078ffbd4ec4",
+      "content_id": "2320e6ce-6865-4ddf-ab05-c3bf29803362",
+      "claim_id": "C38",
+      "claim": "Some PNKP still bound to nascent DNA after XRCC1 depletion, suggesting an alternative recruitment pathway of PNKP to DNA replication forks.",
+      "claim_type": "EXPLICIT",
+      "source": "However, some PNKP still bound to nascent DNA, suggesting an alternative recruitment pathway of PNKP to DNA replication forks, possibly for mediating canonical OF maturation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the observation that PNKP binding to nascent DNA is reduced but not eliminated by XRCC1 depletion.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:13:27.126378Z"
+    },
+    {
+      "id": "6cfec354-a4c2-40f7-9c43-a6b71862e3c7",
+      "content_id": "2320e6ce-6865-4ddf-ab05-c3bf29803362",
+      "claim_id": "C39",
+      "claim": "CDK1/Cyclin A2 or CDK2/Cyclin A2 complex potentially regulates the phosphorylation level of PNKP T118 in the S phase, facilitating PNKP recruitment to DNA replication forks.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these results suggest that the CDK1/Cyclin A2 or CDK2/Cyclin A2 complex potentially regulates the phosphorylation level of PNKP T118 in the S phase, facilitating PNKP recruitment to DNA replication forks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a synthesis of multiple experimental results including kinase assays, cell cycle analysis, and iPOND assays.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:13:27.126378Z"
+    },
+    {
+      "id": "09b6905b-c283-4596-bdd2-fcd7b6224e24",
+      "content_id": "2320e6ce-6865-4ddf-ab05-c3bf29803362",
+      "claim_id": "C40",
+      "claim": "PNKP\u2212/\u2212 and T118A-expressing cells showed increased tract length, and FEN1i treatment did not further accelerate DNA fiber length.",
+      "claim_type": "EXPLICIT",
+      "source": "PNKP\u2212/\u2212 and T118A-expressing cells showed increased tract length, and FEN1i treatment did not further accelerate DNA fiber length, indicating that the T118A mutation alone provokes the longer DNA tract length phenotype due to the formation of unligated OFs, similar to FEN1 inhibition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by DNA fiber assay data comparing different conditions and treatments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:13:27.126378Z"
+    },
+    {
+      "id": "5f81afeb-efa3-4fe2-9190-85aaaead51a2",
+      "content_id": "2320e6ce-6865-4ddf-ab05-c3bf29803362",
+      "claim_id": "C41",
+      "claim": "T118D-expressing cells exhibited normal DNA fiber tract length, similar to PNKP WT-expressing cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, T118D-expressing cells exhibited normal DNA fiber tract length, similar to PNKP WT-expressing cells, and FEN1i treatment increased DNA fiber tract length in T118D-expressing cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by DNA fiber assay data showing normal tract length in T118D-expressing cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:13:27.126378Z"
+    },
+    {
+      "id": "7f9da17f-7950-48f6-a86b-2c551215e73f",
+      "content_id": "2320e6ce-6865-4ddf-ab05-c3bf29803362",
+      "claim_id": "C42",
+      "claim": "T118 phosphorylation plays an essential role in proper OFs maturation akin to FEN1.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that the T118 phosphorylation plays an essential role in proper OFs maturation akin to FEN1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the observation that T118A mutation phenocopies FEN1 inhibition.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:13:27.126378Z"
+    },
+    {
+      "id": "d24da41e-83f2-4f59-8ef8-e62c0441d37d",
+      "content_id": "2320e6ce-6865-4ddf-ab05-c3bf29803362",
+      "claim_id": "C43",
+      "claim": "T118A-expressing cells in the S phase showed higher ADP-ribose intensity (1.61-fold increase vs. WT-expressing cells).",
+      "claim_type": "EXPLICIT",
+      "source": "T118A-expressing cells in the S phase showed higher ADP-ribose intensity (1.61-fold increase vs. WT-expressing cells), similar to PNKP\u2212/\u2212 cells (2-fold increase vs. U2OS WT cells).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by ADP-ribosylation assay data quantifying intensity in S phase cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:13:27.126378Z"
+    },
+    {
+      "id": "ed2fda88-6e7d-4816-8f43-bc98b0f3dbe2",
+      "content_id": "2320e6ce-6865-4ddf-ab05-c3bf29803362",
+      "claim_id": "C44",
+      "claim": "WT PNKP expression rescued the increased ADP-ribose intensity effect in PNKP\u2212/\u2212 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "WT PNKP expression rescued this effect, suggesting that PNKP function and T118 phosphorylation are required for ssDNA gap-less DNA replication.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by ADP-ribosylation assay data showing rescue by WT PNKP expression.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:13:27.126378Z"
+    },
+    {
+      "id": "c8f39daf-eb2e-4e8c-84b2-4a507cabd36e",
+      "content_id": "2320e6ce-6865-4ddf-ab05-c3bf29803362",
+      "claim_id": "C45",
+      "claim": "PNKP\u2212/\u2212 cells and PNKP T118A cells showed higher ADP-ribose intensity outside the S phase (1.47-fold increase vs. WT-expressing cells).",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, PNKP\u2212/\u2212 cells and PNKP T118A cells also showed higher ADP-ribose intensity outside the S phase (1.47-fold increase vs. WT-expressing cells), indicating that PNKP and T118 may play a role in preventing SSBs formation outside the S phase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by ADP-ribosylation assay data quantifying intensity in non-S phase cells.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:13:27.126378Z"
+    },
+    {
+      "id": "09d8a8a1-76a7-4f4f-b20f-4b518863b1ac",
+      "content_id": "2320e6ce-6865-4ddf-ab05-c3bf29803362",
+      "claim_id": "C46",
+      "claim": "FEN1i-treated U2OS WT cells showed increased ADP-ribose intensity.",
+      "claim_type": "EXPLICIT",
+      "source": "FEN1i-treated U2OS WT cells showed increased ADP-ribose intensity, indicating that FEN1i treatment leads to ssDNA gap formation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by ADP-ribosylation assay data from FEN1i-treated cells.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:13:27.126378Z"
+    },
+    {
+      "id": "106a0aff-18c1-4de1-a17b-4c540c275332",
+      "content_id": "2320e6ce-6865-4ddf-ab05-c3bf29803362",
+      "claim_id": "C47",
+      "claim": "The increased ADP-ribose intensity phenotype in T118A-expressing cells was not observed in FEN1i-treated T118A-expressing cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The increased ADP-ribose intensity phenotype in T118A-expressing cells was not observed in FEN1i-treated T118A-expressing cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by ADP-ribosylation assay data showing epistatic relationship between T118A and FEN1i.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:13:27.126378Z"
+    },
+    {
+      "id": "a6ec0a33-a254-4228-a3b3-1e8e0a6b7a24",
+      "content_id": "2320e6ce-6865-4ddf-ab05-c3bf29803362",
+      "claim_id": "C48",
+      "claim": "T118 phosphorylation of PNKP plays a critical role in suppressing ssDNA gap formation derived from unligated OFs in an epistatic pathway with FEN1.",
+      "claim_type": "EXPLICIT",
+      "source": "These data suggest that T118 phosphorylation of PNKP plays a critical role in suppressing ssDNA gap formation derived from unligated OFs in an epistatic pathway with FEN1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the epistatic relationship observed between T118A mutation and FEN1 inhibition.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:13:27.126378Z"
+    },
+    {
+      "id": "3fefbd92-dd7f-40bd-8926-d6c3f4074eec",
+      "content_id": "2320e6ce-6865-4ddf-ab05-c3bf29803362",
+      "claim_id": "C49",
+      "claim": "Phosphorylation of PNKP at T118 is required to prevent unligated OF-mediated post-replicative ssDNA gap formation during DNA replication.",
+      "claim_type": "EXPLICIT",
+      "source": "In conclusion, phosphorylation of PNKP at T118 is required to prevent unligated OF-mediated post-replicative ssDNA gap formation during DNA replication.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a synthesis of multiple experimental results showing the role of T118 phosphorylation in preventing ssDNA gaps.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:13:27.126378Z"
+    },
+    {
+      "id": "e79a94cc-3694-44c0-9f9e-067519c06ecb",
+      "content_id": "2320e6ce-6865-4ddf-ab05-c3bf29803362",
+      "claim_id": "C50",
+      "claim": "PNKP T118A-expressing cells exhibited reduced repair abilities against exogenous SSB and DSB induced by IR and H2O2 treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Incidentally, as similar to PNKP\u2212/\u2212 cells, PNKP T118A-expressing cells exhibited reduced repair abilities against exogenous SSB and DSB induced by IR and H2O2 treatment (Figure 5\u2014figure supplement 1C\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by ADP-ribosylation and \u03b3H2AX foci assay data from IR and H2O2-treated cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:13:27.126378Z"
+    },
+    {
+      "id": "e4b3e490-35e5-4d5e-b433-7e158fe15bf0",
+      "content_id": "2320e6ce-6865-4ddf-ab05-c3bf29803362",
+      "claim_id": "C51",
+      "claim": "T118A-expressing cells showed an increased frequency of micronuclei and chromosome bridges compared to WT PNKP-complemented cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, T118A-expressing cells showed an increased frequency of micronuclei and chromosome bridges compared to WT PNKP-complemented cells even without any treatment as well as with IR or HU treatment (Figure 5\u2014figure supplement 1G, H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by microscopy data quantifying micronuclei and chromosome bridges.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:13:27.126378Z"
+    },
+    {
+      "id": "d056617f-8fc2-44d9-a78f-d7174ee3fa1d",
+      "content_id": "2320e6ce-6865-4ddf-ab05-c3bf29803362",
+      "claim_id": "C52",
+      "claim": "Endogenously increased ssDNA gap formation due to impaired OFs maturation in PNKP\u2212/\u2212 and T118A-expressing cells may cause genomic instability.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, our results suggest that endogenously increased ssDNA gap formation due to impaired OFs maturation in PNKP\u2212/\u2212 and T118A-expressing cells may cause genomic instability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the observation of increased micronuclei and chromosome bridges in these cells.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:13:27.126378Z"
+    },
+    {
+      "id": "389e8ea7-204e-4cef-9617-4ce9cc58d19d",
+      "content_id": "2320e6ce-6865-4ddf-ab05-c3bf29803362",
+      "claim_id": "C53",
+      "claim": "PNKP T118A mutant was still capable of dephosphorylating and phosphorylating gapped DNA ends in vitro, albeit to a lesser extent than WT PNKP.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, T118A PNKP was still capable of dephosphorylating and phosphorylating gapped DNA ends in vitro, albeit to a lesser extent than WT PNKP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by in vitro enzymatic assay data comparing WT and T118A PNKP activities.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:13:27.126378Z"
+    },
+    {
+      "id": "42524dc4-6dfc-4c0d-aeb9-234dee9f91b0",
+      "content_id": "2320e6ce-6865-4ddf-ab05-c3bf29803362",
+      "claim_id": "C54",
+      "claim": "Phosphorylation of PNKP at T118 is required for its recruitment to the gapped DNA structure but not directly for its enzymatic activity.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that phosphorylation of PNKP at T118 is required for its recruitment to the gapped DNA structure but not directly for its enzymatic activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the observation that T118A retains enzymatic activity but shows reduced DNA binding.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:13:27.126378Z"
+    },
+    {
+      "id": "9f09b8b2-1622-4a7c-a276-3a477a767578",
+      "content_id": "2320e6ce-6865-4ddf-ab05-c3bf29803362",
+      "claim_id": "C55",
+      "claim": "The T118A mutant showed impaired gapped DNA-binding ability.",
+      "claim_type": "EXPLICIT",
+      "source": "The T118A mutant showed impaired gapped DNA-binding ability, whereas the WT PNKP and the T118D mutant exhibited relatively higher binding ability than the PNKP T118A mutant.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by protein-DNA binding assay data comparing WT, T118A, and T118D PNKP.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:13:27.126378Z"
+    },
+    {
+      "id": "5e3dfa89-08a7-47a3-aa91-7cddc18bdfaa",
+      "content_id": "2320e6ce-6865-4ddf-ab05-c3bf29803362",
+      "claim_id": "C56",
+      "claim": "D171A-expressing cells showed a spontaneously increased tract length, and FEN1i treatment did not further increase the tract length.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, D171A-expressing cells showed a spontaneously increased tract length, and FEN1i treatment did not further increase the tract length.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by DNA fiber assay data from D171A-expressing cells with and without FEN1i treatment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:13:27.126378Z"
+    },
+    {
+      "id": "bfea6f9f-62c1-4bb4-be98-cbaa203f1fa3",
+      "content_id": "2320e6ce-6865-4ddf-ab05-c3bf29803362",
+      "claim_id": "C57",
+      "claim": "K378A-expressing cells showed longer, yet statistically non-significant, tract length than WT PNKP-expressing cells (p = 0.6293).",
+      "claim_type": "EXPLICIT",
+      "source": "K378A-expressing cells showed longer, yet statistically non-significant, tract length than WT PNKP-expressing cells (p = 0.6293), suggesting that PNKP enzymatic activities, especially those of phosphatase, are required for accurate fork progression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by DNA fiber assay data from K378A-expressing cells.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:13:27.126378Z"
+    },
+    {
+      "id": "4953bd47-0768-4537-a733-62658f15c594",
+      "content_id": "2320e6ce-6865-4ddf-ab05-c3bf29803362",
+      "claim_id": "C58",
+      "claim": "D171A-expressing cells showed a high ADP-ribose intensity (p < 0.0001).",
+      "claim_type": "EXPLICIT",
+      "source": "D171A-expressing cells showed a high ADP-ribose intensity (p < 0.0001), while K378A-expressing cells exhibited relatively high ADP-ribose intensity without FEN1i treatment (p = 0.001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by ADP-ribosylation assay data from D171A-expressing cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:13:27.126378Z"
+    },
+    {
+      "id": "785416de-fa44-48b5-9b8e-c83af5a21cdb",
+      "content_id": "2320e6ce-6865-4ddf-ab05-c3bf29803362",
+      "claim_id": "C59",
+      "claim": "PNKP phosphatase and kinase activities, especially those of phosphatase, play an important role in the end-processing of OFs.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these results suggest that PNKP phosphatase and kinase activities, especially those of phosphatase, play an important role in the end-processing of OFs, resulting in the suppression of OF-mediated post-replicative ssDNA gap formation and ensuring accurate DNA replication (Figure 6D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is inferred from the observation that phosphatase-dead mutant shows more severe phenotype than kinase-dead mutant.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:13:27.126378Z"
+    },
+    {
+      "id": "d5820104-5558-4f9e-8c8b-67440657626f",
+      "content_id": "2320e6ce-6865-4ddf-ab05-c3bf29803362",
+      "claim_id": "C60",
+      "claim": "PNKP was required for the ssDNA gap-filling pathway during DNA replication.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, we found that PNKP was required for the ssDNA gap-filling pathway during DNA replication.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a summary of experimental findings showing PNKP involvement in gap-filling pathway.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:13:27.126378Z"
+    },
+    {
+      "id": "5fe6c0f9-9dfc-4945-87f8-d29916eaaf4b",
+      "content_id": "2320e6ce-6865-4ddf-ab05-c3bf29803362",
+      "claim_id": "C61",
+      "claim": "Defects in PNKP induce the accumulation of single-strand gaps in OFs and genome instability.",
+      "claim_type": "EXPLICIT",
+      "source": "Defects in PNKP induce the accumulation of single-strand gaps in OFs and genome instability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a summary of experimental findings showing ssDNA gap accumulation and genomic instability in PNKP-deficient cells.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:13:27.126378Z"
+    },
+    {
+      "id": "b52db187-f08f-488e-a562-324302bda8b1",
+      "content_id": "2320e6ce-6865-4ddf-ab05-c3bf29803362",
+      "claim_id": "C62",
+      "claim": "CDKs phosphorylate PNKP on threonine 118 (T118), mainly in the S phase.",
+      "claim_type": "EXPLICIT",
+      "source": "We also found that CDKs phosphorylate PNKP on threonine 118 (T118), mainly in the S phase, and that CDK-mediated PNKP phosphorylation allows it to be recruited to ssDNA gaps on OFs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by cell cycle analysis, in vitro kinase assays, and iPOND assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:13:27.126378Z"
+    },
+    {
+      "id": "ade7eab8-0543-404a-8be7-580244defe01",
+      "content_id": "2320e6ce-6865-4ddf-ab05-c3bf29803362",
+      "claim_id": "C63",
+      "claim": "CDK-mediated PNKP phosphorylation allows it to be recruited to ssDNA gaps on OFs.",
+      "claim_type": "EXPLICIT",
+      "source": "We also found that CDKs phosphorylate PNKP on threonine 118 (T118), mainly in the S phase, and that CDK-mediated PNKP phosphorylation allows it to be recruited to ssDNA gaps on OFs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by iPOND assays showing reduced recruitment of T118A mutant to nascent DNA.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:13:27.126378Z"
+    },
+    {
+      "id": "54fdbcbc-109d-40e3-bc97-ffa031e9dda3",
+      "content_id": "2320e6ce-6865-4ddf-ab05-c3bf29803362",
+      "claim_id": "C64",
+      "claim": "PNKP enzymatic activities, especially phosphatase activity, are required for processing of the ends of single-strand gaps on OFs.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, PNKP enzymatic activities, especially phosphatase activity, are required for processing of the ends of single-strand gaps on OFs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by DNA fiber and ADP-ribosylation assays using enzymatic mutants.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:13:27.126378Z"
+    },
+    {
+      "id": "89fd2d1b-862d-4c73-95a4-791ee716f6a8",
+      "content_id": "2320e6ce-6865-4ddf-ab05-c3bf29803362",
+      "claim_id": "C65",
+      "claim": "Phosphorylation-mediated PNKP recruitment to ssDNA gaps on OFs and the end-processing activity of PNKP are critically important for preventing genome instability through appropriate regulation of DNA replication.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, our data suggest that phosphorylation-mediated PNKP recruitment to ssDNA gaps on OFs and the end-processing activity of PNKP are critically important for preventing genome instability through appropriate regulation of DNA replication.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a synthesis of all experimental findings in the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:13:27.126378Z"
+    },
+    {
+      "id": "390c2823-b02e-48fa-b9d7-c7bd0dcebaef",
+      "content_id": "2320e6ce-6865-4ddf-ab05-c3bf29803362",
+      "claim_id": "C66",
+      "claim": "PNKP has enzymatic activities as 3\u2032-phosphatase and 5\u2032-kinase of DNA ends to promote DNA ligation and repair.",
+      "claim_type": "EXPLICIT",
+      "source": "Polynucleotide kinase phosphatase (PNKP) has enzymatic activities as 3\u2032-phosphatase and 5\u2032-kinase of DNA ends to promote DNA ligation and repair.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge about PNKP function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:13:27.126378Z"
+    },
+    {
+      "id": "217c8707-f5a9-4399-963a-d316172fcb7c",
+      "content_id": "2320e6ce-6865-4ddf-ab05-c3bf29803362",
+      "claim_id": "C67",
+      "claim": "Human PNKP consists of 521 amino acids, including the forkhead-associated (FHA) domain (amino acid residues 1\u2013110) in the amino-terminal region, and phosphatase (146\u2013337) and kinase (341\u2013516) domains in the carboxy-terminal region, which are connected by a linker region (111\u2013145).",
+      "claim_type": "EXPLICIT",
+      "source": "Human PNKP consists of 521 amino acids, including the forkhead-associated (FHA) domain (amino acid residues 1\u2013110) in the amino-terminal region, and phosphatase (146\u2013337) and kinase (341\u2013516) domains in the carboxy-terminal region, which are connected by a linker region (111\u2013145).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge about PNKP structure.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:13:27.126378Z"
+    },
+    {
+      "id": "2ab240b3-49e5-458e-9ec8-d8bb335b289d",
+      "content_id": "2320e6ce-6865-4ddf-ab05-c3bf29803362",
+      "claim_id": "C68",
+      "claim": "PNKP is recruited to SSBs and DSBs sites depending on its interactions via the FHA domain of PNKP with XRCC1 and XRCC4, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "PNKP is recruited to SSBs and DSBs sites depending on its interactions via the FHA domain of PNKP with XRCC1 and XRCC4, respectively, and is involved in base excision repair (BER), SSB repair, and non-homologous end joining for DSB repair (Breslin and Caldecott, 2009; Mani et al., 2019; Mani et al., 2010; Tsukada et al., 2020; Tsukada et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:13:27.126378Z"
+    },
+    {
+      "id": "0fe2e5bb-f719-42b0-b393-6f47fa342310",
+      "content_id": "2320e6ce-6865-4ddf-ab05-c3bf29803362",
+      "claim_id": "C69",
+      "claim": "Phosphorylation of PNKP at serine 114 by ataxia telangiectasia mutated (ATM) is required for protein stability and efficient DNA repair for cellular survival.",
+      "claim_type": "EXPLICIT",
+      "source": "Phosphorylation of PNKP at serine 114 by ataxia telangiectasia mutated (ATM) is required for protein stability and efficient DNA repair for cellular survival (Segal-Raz et al., 2011; Parsons et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:13:27.126378Z"
+    },
+    {
+      "id": "46b49829-0e52-4899-a469-3e09b1bf0528",
+      "content_id": "2320e6ce-6865-4ddf-ab05-c3bf29803362",
+      "claim_id": "C70",
+      "claim": "Mutations in PNKP are associated with the human inherited disease microcephaly and seizures (MCSZ), a neurodevelopmental disease.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutations in PNKP are associated with the human inherited disease microcephaly and seizures (MCSZ), a neurodevelopmental disease (Shen et al., 2010), ataxia oculomotor apraxia 4 (AOA4) (Bras et al., 2015), and Charcot\u2013Marie\u2013Tooth disease (CMT2B2), a neurodegenerative disease (Pedroso et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:13:27.126378Z"
+    },
+    {
+      "id": "357605d1-280c-4cc7-91d3-3a8b673754b2",
+      "content_id": "2320e6ce-6865-4ddf-ab05-c3bf29803362",
+      "claim_id": "C71",
+      "claim": "PNKP mutations are mostly located in the phosphatase or kinase domains and attenuate the phosphatase and kinase activities.",
+      "claim_type": "EXPLICIT",
+      "source": "These mutations are mostly located in the phosphatase or kinase domains and attenuate the phosphatase and kinase activities (Reynolds et al., 2012; Kalasova et al., 2020; Berm\u00fadez-Guzm\u00e1n et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:13:27.126378Z"
+    },
+    {
+      "id": "06ba189c-0982-42cd-b604-68f5820277d7",
+      "content_id": "2320e6ce-6865-4ddf-ab05-c3bf29803362",
+      "claim_id": "C72",
+      "claim": "DNA replication is initiated at the origin of replication in the leading strand and at short RNA-primed DNA fragments, known as OFs, in the lagging strand.",
+      "claim_type": "EXPLICIT",
+      "source": "DNA replication is initiated at the origin of replication in the leading strand and at short RNA-primed DNA fragments, known as OFs, in the lagging strand (Leonard and M\u00e9chali, 2013; Okazaki et al., 1968).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge about DNA replication and supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:13:27.126378Z"
+    },
+    {
+      "id": "caeb33d6-2245-4f97-97d9-bb701a3d4c68",
+      "content_id": "2320e6ce-6865-4ddf-ab05-c3bf29803362",
+      "claim_id": "C73",
+      "claim": "ssDNA gap-filling machinery is involved in OFs maturation.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent reports suggest that single-strand DNA (ssDNA) gap-filling machinery is involved in OFs maturation (Hanzlikova et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:13:27.126378Z"
+    },
+    {
+      "id": "229485aa-593b-4837-8df1-e838e5efce55",
+      "content_id": "2320e6ce-6865-4ddf-ab05-c3bf29803362",
+      "claim_id": "C74",
+      "claim": "PARP1 activity is required for efficient SSBs repair and ssDNA gap-filling pathway in OFs during DNA replication.",
+      "claim_type": "EXPLICIT",
+      "source": "PARP1 activity is required for efficient SSBs repair and ssDNA gap-filling pathway in OFs during DNA replication (Hanzlikova et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:13:27.126378Z"
+    },
+    {
+      "id": "43d6f6d2-88e1-45d2-a415-a25939868e5d",
+      "content_id": "2320e6ce-6865-4ddf-ab05-c3bf29803362",
+      "claim_id": "C75",
+      "claim": "The DNA replication machinery is precisely controlled by cyclin-dependent kinases (CDKs), which phosphorylate several replication factors to allow them to enter the S phase and promote DNA synthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "The DNA replication machinery is precisely controlled by cyclin-dependent kinases (CDKs), which phosphorylate several replication factors to allow them to enter the S phase and promote DNA synthesis (Swaffer et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge about cell cycle regulation and supported by citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:13:27.126378Z"
+    },
+    {
+      "id": "b7772fc4-ee7b-4736-ab62-75fec30f0eae",
+      "content_id": "2320e6ce-6865-4ddf-ab05-c3bf29803362",
+      "claim_id": "C76",
+      "claim": "When replication forks stall, ataxia telangiectasia mutated and Rad3-related protein (ATR) is activated and phosphorylates CHK1 and RPA to resolve or eliminate the impediment, promoting replication fork recovery.",
+      "claim_type": "EXPLICIT",
+      "source": "When replication forks stall, ataxia telangiectasia mutated and Rad3-related protein (ATR) is activated and phosphorylates CHK1 and RPA to resolve or eliminate the impediment, promoting replication fork recovery (Cortez et al., 2001; Zou and Elledge, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge about DNA damage response and supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:13:27.126378Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "9831a785-22b4-40ff-b3ef-57e6c17614a6",
+      "content_id": "2320e6ce-6865-4ddf-ab05-c3bf29803362",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "PNKP knockout U2OS cells (PNKP\u2212/\u2212 cells) were successfully generated using CRISPR/Cas9 Nickase targeting exon 4, with two clones (C1 and C2) showing complete loss of PNKP protein as confirmed by western blot and DNA sequencing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1 and C2 provide converging evidence from multiple validation methods (western blot with two different antibodies and DNA sequencing) demonstrating successful knockout. The methodology is well-established and the validation is thorough.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T05:13:27.126378Z"
+    },
+    {
+      "id": "047267df-7047-453a-87af-fd43773902e9",
+      "content_id": "2320e6ce-6865-4ddf-ab05-c3bf29803362",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "PNKP\u2212/\u2212 cells exhibit defects in DNA repair, showing delayed DSB repair (reduced phosphorylation of H2AX and KAP1), increased sensitivity to IR and H2O2, and increased sensitivity to HU treatment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C6 collectively demonstrate DNA repair deficiencies through multiple complementary assays (western blot for repair kinetics, colony formation for sensitivity). The results are consistent with known PNKP functions in SSB and DSB repair.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T05:13:27.126378Z"
+    },
+    {
+      "id": "13c2d670-a0c2-4185-a3c7-b447c717f9a3",
+      "content_id": "2320e6ce-6865-4ddf-ab05-c3bf29803362",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Loss of PNKP causes slower cell proliferation with S phase accumulation, increased endogenous ssDNA gaps/breaks (measured by ADP-ribosylation), faster replication fork progression, and accumulation of ssDNA gaps on nascent DNA during replication.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C14 provide comprehensive evidence linking PNKP loss to replication defects through multiple orthogonal assays (growth curves, flow cytometry, ADP-ribosylation, DNA fiber assays with S1 nuclease). The rescue by HU/EME treatment (C10) supports the replication-specific nature of the phenotype. The faster fork progression despite slower growth is paradoxical but consistent with similar observations in other DNA repair mutants.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T05:13:27.126378Z"
+    },
+    {
+      "id": "61e6ec23-9d9b-47bb-96c1-2492bb7ca774",
+      "content_id": "2320e6ce-6865-4ddf-ab05-c3bf29803362",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "PNKP is involved in both FEN1-dependent canonical Okazaki fragment maturation and PARP-dependent ssDNA gap-filling pathways, as demonstrated by epistasis analysis showing that PNKP\u2212/\u2212 cells phenocopy the combined loss of both pathways.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C19 use S1 nuclease DNA fiber assays with pharmacological inhibitors to demonstrate epistatic relationships. The observation that PNKP\u2212/\u2212 cells show extensive fiber digestion without inhibitors, not further increased by FEN1i+PARPi treatment, strongly supports involvement in both pathways. The logic is sound and consistent with prior literature (C17 cites Vaitsiankova et al., 2022).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T05:13:27.126378Z"
+    },
+    {
+      "id": "f5bdb52a-c84a-43da-936d-f1752d46a936",
+      "content_id": "2320e6ce-6865-4ddf-ab05-c3bf29803362",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The linker region of PNKP (D2 deletion mutant) is crucial for proper cell proliferation and fork progression, as D2 mutant-expressing cells show slower proliferation and increased tract lengths similar to enzymatic domain mutants (D3, D4).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C22 use deletion mutant analysis to map functional regions. The D2 (linker) mutant shows the most severe growth defect, and both D2 and enzymatic mutants (D3, D4) show increased tract lengths. This implicates the linker region in replication fork regulation, though the mechanism remains unclear at this stage.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T05:13:27.126378Z"
+    },
+    {
+      "id": "636c83ce-64d3-4f89-9d49-becf6b00fba3",
+      "content_id": "2320e6ce-6865-4ddf-ab05-c3bf29803362",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Five potential phosphorylation sites were identified in the PNKP linker region, with T118 (a predicted CDK substrate) being particularly important for cell proliferation, as T118A mutant shows marked growth delay.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C28 combine bioinformatics analysis (PhosphoSitePlus), sequence conservation, and functional validation through point mutants. The T118A mutant shows the most severe growth phenotype among the tested sites, supporting its functional importance. The identification of T118 as a CDK motif (S/TP) is based on sequence analysis and is reasonable.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T05:13:27.126378Z"
+    },
+    {
+      "id": "3e0b353a-c0b1-4bfa-8a4e-bf4c469fa7cf",
+      "content_id": "2320e6ce-6865-4ddf-ab05-c3bf29803362",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "CDK1/Cyclin A2 and CDK2/Cyclin A2 phosphorylate PNKP at T118 predominantly during S phase, as demonstrated by cell cycle synchronization, in vitro kinase assays, co-expression experiments, and protein interaction studies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C34 provide multiple lines of evidence: temporal correlation with S phase (C29-C30), direct phosphorylation in vitro (C31), increased phosphorylation upon co-expression (C32), and reduced interaction with T118A mutant (C33). The convergence of these independent approaches strongly supports CDK1/2 as T118 kinases. However, the antibody specificity should be noted (cross-reactivity mentioned in methods).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T05:13:27.126378Z"
+    },
+    {
+      "id": "17de8e7c-9bc9-408d-97a8-b3b5e5fadabb",
+      "content_id": "2320e6ce-6865-4ddf-ab05-c3bf29803362",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "T118 phosphorylation is required for PNKP recruitment to nascent DNA at replication forks, with partial dependence on XRCC1, suggesting involvement in both gap-filling and canonical OF maturation pathways.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C39 use iPOND assays to demonstrate PNKP and pT118-PNKP at replication forks (C35), reduced recruitment with T118A mutation (C36), and partial XRCC1 dependence (C37-C38). The data support a model where T118 phosphorylation facilitates fork recruitment through both XRCC1-dependent and -independent mechanisms. The iPOND technique is appropriate for this question.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T05:13:27.126378Z"
+    },
+    {
+      "id": "5fd752d3-b251-4fa6-9e74-60264c3002b9",
+      "content_id": "2320e6ce-6865-4ddf-ab05-c3bf29803362",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "T118 phosphorylation is essential for preventing unligated OF-mediated ssDNA gap formation, as T118A mutant phenocopies FEN1 inhibition (increased tract length, epistasis with FEN1i) and shows increased ADP-ribosylation in S phase that is rescued by WT PNKP.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C49 provide comprehensive functional characterization of T118 phosphorylation using DNA fiber assays (C40-C42), ADP-ribosylation assays (C43-C47), and epistasis analysis (C47-C48). The T118D phosphomimetic rescues the phenotype (C41), supporting the importance of phosphorylation. The epistatic relationship with FEN1i (C47-C48) places T118 phosphorylation in the canonical OF maturation pathway. The data are internally consistent and well-controlled.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T05:13:27.126378Z"
+    },
+    {
+      "id": "864d96b8-ac25-4a8f-9688-c7f9917331b2",
+      "content_id": "2320e6ce-6865-4ddf-ab05-c3bf29803362",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "T118A-expressing cells show reduced repair of exogenous DNA damage (IR, H2O2) and increased genomic instability (micronuclei, chromosome bridges), suggesting that impaired OF maturation causes genome instability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C52 demonstrate that T118 phosphorylation defects have consequences beyond replication, affecting DNA repair and genome stability. The increased micronuclei and chromosome bridges (C51) are consistent with unrepaired DNA damage. However, the causal link between OF maturation defects and genomic instability (C52) is inferred rather than directly demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T05:13:27.126378Z"
+    },
+    {
+      "id": "4ef230f4-6572-406c-89e1-8f5fc0473579",
+      "content_id": "2320e6ce-6865-4ddf-ab05-c3bf29803362",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "T118 phosphorylation is required for PNKP recruitment to gapped DNA structures but not for its enzymatic activity, as T118A retains phosphatase/kinase activity in vitro but shows impaired DNA binding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C55 use in vitro enzymatic assays and DNA binding assays to separate recruitment from catalytic function. The T118A mutant retains enzymatic activity (C53) but shows reduced DNA binding (C55), supporting a recruitment-specific role for T118 phosphorylation. This is an important mechanistic distinction.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T05:13:27.126378Z"
+    },
+    {
+      "id": "eb374658-7f97-45ad-816d-6c50b38e8453",
+      "content_id": "2320e6ce-6865-4ddf-ab05-c3bf29803362",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "PNKP enzymatic activities, especially phosphatase activity, are required for OF end-processing, as phosphatase-dead (D171A) mutant shows more severe phenotypes (increased tract length, high ADP-ribosylation) than kinase-dead (K378A) mutant.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C59 use enzymatic mutants to assess the importance of PNKP catalytic activities. The D171A (phosphatase-dead) mutant shows stronger phenotypes than K378A (kinase-dead), suggesting phosphatase activity is more critical for OF processing. The epistasis with FEN1i (C56) supports involvement in canonical OF maturation. However, the authors note that D171A is unstable, which could complicate interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T05:13:27.126378Z"
+    },
+    {
+      "id": "e676b1e3-5452-496e-a77c-0220f58e1531",
+      "content_id": "2320e6ce-6865-4ddf-ab05-c3bf29803362",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "CDK-mediated phosphorylation of PNKP at T118 during S phase recruits PNKP to ssDNA gaps on Okazaki fragments, where its enzymatic activities (especially phosphatase) process DNA ends to prevent gap accumulation and maintain genome stability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C65 synthesize the major findings into a coherent model. The claims are supported by the collective evidence from multiple experimental approaches throughout the study. This represents the main conclusion of the manuscript and integrates the mechanistic findings (phosphorylation, recruitment, enzymatic activity) with the functional outcomes (gap prevention, genome stability).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T05:13:27.126378Z"
+    },
+    {
+      "id": "983f3f54-2da4-464c-ad7f-3b55a3cfe172",
+      "content_id": "2320e6ce-6865-4ddf-ab05-c3bf29803362",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Background information on PNKP structure, function, regulation, disease associations, and the context of DNA replication and Okazaki fragment maturation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66-C76 provide established background knowledge supported by appropriate citations. These claims set the context for the study but do not represent novel findings. They are accurately stated and properly referenced.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T05:13:27.126378Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "d483a0db-7ba2-4cfa-83e6-116877cf4a63",
+      "result_id": "9831a785-22b4-40ff-b3ef-57e6c17614a6"
+    },
+    {
+      "claim_id": "31b503f9-00b0-462f-852d-5252e3191e1a",
+      "result_id": "9831a785-22b4-40ff-b3ef-57e6c17614a6"
+    },
+    {
+      "claim_id": "04a387cf-6dbc-4da9-82ca-331040d73d6c",
+      "result_id": "047267df-7047-453a-87af-fd43773902e9"
+    },
+    {
+      "claim_id": "ffef3fde-ff8a-400e-89ca-c09a3e402789",
+      "result_id": "047267df-7047-453a-87af-fd43773902e9"
+    },
+    {
+      "claim_id": "16568be1-e786-42c4-a8ed-d63ed25e657e",
+      "result_id": "047267df-7047-453a-87af-fd43773902e9"
+    },
+    {
+      "claim_id": "d102aefa-b4b0-411b-85a7-566ee2a64a10",
+      "result_id": "047267df-7047-453a-87af-fd43773902e9"
+    },
+    {
+      "claim_id": "95aab6e2-2323-43af-9fd4-5851b560af85",
+      "result_id": "13c2d670-a0c2-4185-a3c7-b447c717f9a3"
+    },
+    {
+      "claim_id": "37be1ad2-5cae-408f-98a0-90857561deb0",
+      "result_id": "13c2d670-a0c2-4185-a3c7-b447c717f9a3"
+    },
+    {
+      "claim_id": "60d65fab-1c76-4e05-bb50-9e7284778bea",
+      "result_id": "13c2d670-a0c2-4185-a3c7-b447c717f9a3"
+    },
+    {
+      "claim_id": "4be3e25a-5cfd-4027-8418-d092193c24cd",
+      "result_id": "13c2d670-a0c2-4185-a3c7-b447c717f9a3"
+    },
+    {
+      "claim_id": "ee818cb4-1425-4a79-ae98-2667b344dbe4",
+      "result_id": "13c2d670-a0c2-4185-a3c7-b447c717f9a3"
+    },
+    {
+      "claim_id": "4335618c-1545-4d4a-8cef-b8e81c696519",
+      "result_id": "13c2d670-a0c2-4185-a3c7-b447c717f9a3"
+    },
+    {
+      "claim_id": "93210b13-f31c-439b-9960-20cff21a5cf2",
+      "result_id": "13c2d670-a0c2-4185-a3c7-b447c717f9a3"
+    },
+    {
+      "claim_id": "44a64eed-8825-4d1e-b372-87c7bbd021b0",
+      "result_id": "13c2d670-a0c2-4185-a3c7-b447c717f9a3"
+    },
+    {
+      "claim_id": "e092816f-a7df-4685-a26a-2c7fdea5f306",
+      "result_id": "61e6ec23-9d9b-47bb-96c1-2492bb7ca774"
+    },
+    {
+      "claim_id": "7f624e1f-b3d0-409e-bd5a-a55f59c02d71",
+      "result_id": "61e6ec23-9d9b-47bb-96c1-2492bb7ca774"
+    },
+    {
+      "claim_id": "c51acfec-59bc-40a8-91ae-f092c3891889",
+      "result_id": "61e6ec23-9d9b-47bb-96c1-2492bb7ca774"
+    },
+    {
+      "claim_id": "5d2a03cf-65e2-4c96-9265-ab16fe21f32f",
+      "result_id": "61e6ec23-9d9b-47bb-96c1-2492bb7ca774"
+    },
+    {
+      "claim_id": "a0f5f59d-bbc0-4e97-94e0-463f15aae90b",
+      "result_id": "61e6ec23-9d9b-47bb-96c1-2492bb7ca774"
+    },
+    {
+      "claim_id": "f47a8f17-caaf-4223-a0de-428f1b97e751",
+      "result_id": "f5bdb52a-c84a-43da-936d-f1752d46a936"
+    },
+    {
+      "claim_id": "d99d46b4-f4ba-4e5f-ab8a-3968ddfcc869",
+      "result_id": "f5bdb52a-c84a-43da-936d-f1752d46a936"
+    },
+    {
+      "claim_id": "4b613bcf-9bb0-446f-a2b5-05a18fcd3e8c",
+      "result_id": "f5bdb52a-c84a-43da-936d-f1752d46a936"
+    },
+    {
+      "claim_id": "0e1babad-a39e-4dd7-ad3b-38a3742564ed",
+      "result_id": "636c83ce-64d3-4f89-9d49-becf6b00fba3"
+    },
+    {
+      "claim_id": "64ca6221-c190-4827-aeb2-51fc0eeee846",
+      "result_id": "636c83ce-64d3-4f89-9d49-becf6b00fba3"
+    },
+    {
+      "claim_id": "4087f2d4-19fb-47c5-b3f3-9d04b5780486",
+      "result_id": "636c83ce-64d3-4f89-9d49-becf6b00fba3"
+    },
+    {
+      "claim_id": "41518219-a4a0-48af-9aba-a30cefa333e1",
+      "result_id": "636c83ce-64d3-4f89-9d49-becf6b00fba3"
+    },
+    {
+      "claim_id": "b01a5976-be9b-489c-9d66-eb8a432ddf87",
+      "result_id": "636c83ce-64d3-4f89-9d49-becf6b00fba3"
+    },
+    {
+      "claim_id": "a851b1c9-22f2-4cc8-81e3-3d0cbf9abb2f",
+      "result_id": "636c83ce-64d3-4f89-9d49-becf6b00fba3"
+    },
+    {
+      "claim_id": "a84c76c7-b706-4f28-b13b-48c97783ecf7",
+      "result_id": "3e0b353a-c0b1-4bfa-8a4e-bf4c469fa7cf"
+    },
+    {
+      "claim_id": "9cfd0f47-d079-44ee-aecd-e78dde939073",
+      "result_id": "3e0b353a-c0b1-4bfa-8a4e-bf4c469fa7cf"
+    },
+    {
+      "claim_id": "9b101552-69ae-464b-9fec-d98c977e7d6a",
+      "result_id": "3e0b353a-c0b1-4bfa-8a4e-bf4c469fa7cf"
+    },
+    {
+      "claim_id": "4b04b98a-e0c4-4114-95cd-bc70c49c37cb",
+      "result_id": "3e0b353a-c0b1-4bfa-8a4e-bf4c469fa7cf"
+    },
+    {
+      "claim_id": "c73be544-f957-41d2-ab7c-248021905fec",
+      "result_id": "3e0b353a-c0b1-4bfa-8a4e-bf4c469fa7cf"
+    },
+    {
+      "claim_id": "a3882515-b076-4cd7-b284-de6d57864c26",
+      "result_id": "3e0b353a-c0b1-4bfa-8a4e-bf4c469fa7cf"
+    },
+    {
+      "claim_id": "d433c6da-61aa-4014-8523-b30669cb3439",
+      "result_id": "17de8e7c-9bc9-408d-97a8-b3b5e5fadabb"
+    },
+    {
+      "claim_id": "f1799fd9-6e77-4dc0-9b22-48276998c3eb",
+      "result_id": "17de8e7c-9bc9-408d-97a8-b3b5e5fadabb"
+    },
+    {
+      "claim_id": "9f6e33e3-72a3-411a-9442-7d86b69a40d5",
+      "result_id": "17de8e7c-9bc9-408d-97a8-b3b5e5fadabb"
+    },
+    {
+      "claim_id": "2c064c29-58ae-4bb9-b26b-2078ffbd4ec4",
+      "result_id": "17de8e7c-9bc9-408d-97a8-b3b5e5fadabb"
+    },
+    {
+      "claim_id": "6cfec354-a4c2-40f7-9c43-a6b71862e3c7",
+      "result_id": "17de8e7c-9bc9-408d-97a8-b3b5e5fadabb"
+    },
+    {
+      "claim_id": "09b6905b-c283-4596-bdd2-fcd7b6224e24",
+      "result_id": "5fd752d3-b251-4fa6-9e74-60264c3002b9"
+    },
+    {
+      "claim_id": "5f81afeb-efa3-4fe2-9190-85aaaead51a2",
+      "result_id": "5fd752d3-b251-4fa6-9e74-60264c3002b9"
+    },
+    {
+      "claim_id": "7f9da17f-7950-48f6-a86b-2c551215e73f",
+      "result_id": "5fd752d3-b251-4fa6-9e74-60264c3002b9"
+    },
+    {
+      "claim_id": "d24da41e-83f2-4f59-8ef8-e62c0441d37d",
+      "result_id": "5fd752d3-b251-4fa6-9e74-60264c3002b9"
+    },
+    {
+      "claim_id": "ed2fda88-6e7d-4816-8f43-bc98b0f3dbe2",
+      "result_id": "5fd752d3-b251-4fa6-9e74-60264c3002b9"
+    },
+    {
+      "claim_id": "c8f39daf-eb2e-4e8c-84b2-4a507cabd36e",
+      "result_id": "5fd752d3-b251-4fa6-9e74-60264c3002b9"
+    },
+    {
+      "claim_id": "09d8a8a1-76a7-4f4f-b20f-4b518863b1ac",
+      "result_id": "5fd752d3-b251-4fa6-9e74-60264c3002b9"
+    },
+    {
+      "claim_id": "106a0aff-18c1-4de1-a17b-4c540c275332",
+      "result_id": "5fd752d3-b251-4fa6-9e74-60264c3002b9"
+    },
+    {
+      "claim_id": "a6ec0a33-a254-4228-a3b3-1e8e0a6b7a24",
+      "result_id": "5fd752d3-b251-4fa6-9e74-60264c3002b9"
+    },
+    {
+      "claim_id": "3fefbd92-dd7f-40bd-8926-d6c3f4074eec",
+      "result_id": "5fd752d3-b251-4fa6-9e74-60264c3002b9"
+    },
+    {
+      "claim_id": "e79a94cc-3694-44c0-9f9e-067519c06ecb",
+      "result_id": "864d96b8-ac25-4a8f-9688-c7f9917331b2"
+    },
+    {
+      "claim_id": "e4b3e490-35e5-4d5e-b433-7e158fe15bf0",
+      "result_id": "864d96b8-ac25-4a8f-9688-c7f9917331b2"
+    },
+    {
+      "claim_id": "d056617f-8fc2-44d9-a78f-d7174ee3fa1d",
+      "result_id": "864d96b8-ac25-4a8f-9688-c7f9917331b2"
+    },
+    {
+      "claim_id": "389e8ea7-204e-4cef-9617-4ce9cc58d19d",
+      "result_id": "4ef230f4-6572-406c-89e1-8f5fc0473579"
+    },
+    {
+      "claim_id": "42524dc4-6dfc-4c0d-aeb9-234dee9f91b0",
+      "result_id": "4ef230f4-6572-406c-89e1-8f5fc0473579"
+    },
+    {
+      "claim_id": "9f09b8b2-1622-4a7c-a276-3a477a767578",
+      "result_id": "4ef230f4-6572-406c-89e1-8f5fc0473579"
+    },
+    {
+      "claim_id": "5e3dfa89-08a7-47a3-aa91-7cddc18bdfaa",
+      "result_id": "eb374658-7f97-45ad-816d-6c50b38e8453"
+    },
+    {
+      "claim_id": "bfea6f9f-62c1-4bb4-be98-cbaa203f1fa3",
+      "result_id": "eb374658-7f97-45ad-816d-6c50b38e8453"
+    },
+    {
+      "claim_id": "4953bd47-0768-4537-a733-62658f15c594",
+      "result_id": "eb374658-7f97-45ad-816d-6c50b38e8453"
+    },
+    {
+      "claim_id": "785416de-fa44-48b5-9b8e-c83af5a21cdb",
+      "result_id": "eb374658-7f97-45ad-816d-6c50b38e8453"
+    },
+    {
+      "claim_id": "d5820104-5558-4f9e-8c8b-67440657626f",
+      "result_id": "e676b1e3-5452-496e-a77c-0220f58e1531"
+    },
+    {
+      "claim_id": "5fe6c0f9-9dfc-4945-87f8-d29916eaaf4b",
+      "result_id": "e676b1e3-5452-496e-a77c-0220f58e1531"
+    },
+    {
+      "claim_id": "b52db187-f08f-488e-a562-324302bda8b1",
+      "result_id": "e676b1e3-5452-496e-a77c-0220f58e1531"
+    },
+    {
+      "claim_id": "ade7eab8-0543-404a-8be7-580244defe01",
+      "result_id": "e676b1e3-5452-496e-a77c-0220f58e1531"
+    },
+    {
+      "claim_id": "54fdbcbc-109d-40e3-bc97-ffa031e9dda3",
+      "result_id": "e676b1e3-5452-496e-a77c-0220f58e1531"
+    },
+    {
+      "claim_id": "89fd2d1b-862d-4c73-95a4-791ee716f6a8",
+      "result_id": "e676b1e3-5452-496e-a77c-0220f58e1531"
+    },
+    {
+      "claim_id": "390c2823-b02e-48fa-b9d7-c7bd0dcebaef",
+      "result_id": "983f3f54-2da4-464c-ad7f-3b55a3cfe172"
+    },
+    {
+      "claim_id": "217c8707-f5a9-4399-963a-d316172fcb7c",
+      "result_id": "983f3f54-2da4-464c-ad7f-3b55a3cfe172"
+    },
+    {
+      "claim_id": "2ab240b3-49e5-458e-9ec8-d8bb335b289d",
+      "result_id": "983f3f54-2da4-464c-ad7f-3b55a3cfe172"
+    },
+    {
+      "claim_id": "0fe2e5bb-f719-42b0-b393-6f47fa342310",
+      "result_id": "983f3f54-2da4-464c-ad7f-3b55a3cfe172"
+    },
+    {
+      "claim_id": "46b49829-0e52-4899-a469-3e09b1bf0528",
+      "result_id": "983f3f54-2da4-464c-ad7f-3b55a3cfe172"
+    },
+    {
+      "claim_id": "357605d1-280c-4cc7-91d3-3a8b673754b2",
+      "result_id": "983f3f54-2da4-464c-ad7f-3b55a3cfe172"
+    },
+    {
+      "claim_id": "06ba189c-0982-42cd-b604-68f5820277d7",
+      "result_id": "983f3f54-2da4-464c-ad7f-3b55a3cfe172"
+    },
+    {
+      "claim_id": "caeb33d6-2245-4f97-97d9-bb701a3d4c68",
+      "result_id": "983f3f54-2da4-464c-ad7f-3b55a3cfe172"
+    },
+    {
+      "claim_id": "229485aa-593b-4837-8df1-e838e5efce55",
+      "result_id": "983f3f54-2da4-464c-ad7f-3b55a3cfe172"
+    },
+    {
+      "claim_id": "43d6f6d2-88e1-45d2-a415-a25939868e5d",
+      "result_id": "983f3f54-2da4-464c-ad7f-3b55a3cfe172"
+    },
+    {
+      "claim_id": "b7772fc4-ee7b-4736-ab62-75fec30f0eae",
+      "result_id": "983f3f54-2da4-464c-ad7f-3b55a3cfe172"
+    }
+  ],
+  "comparisons": []
+}

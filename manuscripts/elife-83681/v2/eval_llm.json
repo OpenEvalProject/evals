@@ -1,0 +1,139 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C83",
+      "C84"
+    ],
+    "result": "Nearly all basigin in human erythrocyte membranes exists in macromolecular complexes with either PMCA (predominantly PMCA4, ~28%) or MCT1 (~72%), with no detectable free basigin. This was demonstrated through size exclusion chromatography, 2D blue native PAGE with antibody shifts, sequential depletion experiments, and mass spectrometry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple orthogonal experimental approaches (SEC, 2D PAGE, immunodepletion, mass spectrometry) converge on the same conclusion. The data show consistent stoichiometry across methods, with no free basigin detected even with prolonged exposure. The quantification is supported by densitometry from multiple replicates (n=3).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "PfRH5 binds to the basigin-PMCA complex with ~9-fold higher affinity (KD ~60 nM) than to monomeric full-length basigin (KD ~560 nM). The binding follows two-state kinetics rather than simple 1:1 binding, suggesting an initial capture event followed by complex stabilization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "SPR data with appropriate controls (R5.004 blocking) demonstrate the enhanced affinity. The two-state binding model fits significantly better (\u03c7\u00b2=1.85) than 1:1 model (\u03c7\u00b2=7.71). The purified complex shows Ca\u00b2\u207a-dependent ATPase activity confirming it is functional. Structural modeling supports that the basigin binding site remains accessible in the complex.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C93"
+    ],
+    "result": "PfRH5 binding does not modulate PMCA-mediated calcium transport function. Neither PfRH5 (2 \u03bcM) nor the PfRCR complex (1 \u03bcM) altered BKCa channel activation curves or Ca\u00b2\u207a-ATPase activity of the basigin-PMCA complex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Two independent functional assays (electrophysiology measuring intracellular Ca\u00b2\u207a via BKCa channels, n=9; and direct ATPase activity measurement, n=3) both show no effect of PfRH5. Positive control (caloxin 1c2) demonstrates the assay can detect PMCA inhibition. This argues against PfRH5 causing calcium spikes through direct PMCA inhibition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "PfRH5 binds to the basigin-MCT1 complex with high affinity (KD ~93 nM), similar to basigin-PMCA and higher than monomeric basigin. The interaction also follows two-state binding kinetics with association time-dependent dissociation rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "SPR data show binding to MCT1-depleted samples reduces response by ~22%, and dual depletion eliminates binding. Purified basigin-MCT1 shows two-state kinetics (\u03c7\u00b2=3.09) with KD of 93 nM. Time-dependent dissociation rates confirm two-state binding. SEC shows stable complex formation. Data are consistent across multiple technical approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C70",
+      "C71"
+    ],
+    "result": "Commercially available polyclonal antibodies targeting the extracellular domains of PMCA and MCT1 did not inhibit P. falciparum growth at 75 \u03bcg/ml, while the basigin-targeting antibody TRA-1-85 showed complete inhibition at 1 \u03bcg/ml.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Only a single high concentration was tested for PMCA/MCT1 antibodies without dose-response curves. The epitopes of these commercial polyclonal antibodies are unknown, and no structural or binding data are provided to explain why they failed to inhibit. The authors acknowledge this limitation, noting that growth-inhibitory antibodies targeting these proteins might be possible but were not identified here.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C98"
+    ],
+    "result": "The potent growth-inhibitory antibodies R5.016 and 9AD4 do not block PfRH5 binding to monomeric basigin but reduce binding to basigin-PMCA complexes by >90% and to basigin-MCT1 complexes by >50%. Structural modeling indicates these antibodies sterically occlude PfRH5 binding through clashes with the membrane or transporter proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "SPR data clearly show differential blocking: no inhibition with monomeric basigin but strong inhibition with complexes (n=3 biological replicates for PMCA, technical replicates for MCT1). R5.016 shows concentration-dependent inhibition with IC50 ~100 nM. Non-inhibitory antibodies (R5.011, R5.015) show no blocking. Structural models provide mechanistic rationale for steric occlusion that would be enhanced in the membrane context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C39",
+      "C85",
+      "C90",
+      "C99"
+    ],
+    "result": "The authors speculate that the two-state binding kinetics may reflect an initial basigin interaction followed by secondary contacts with PMCA or MCT1, and that antibody inhibition would be stronger in native membranes than in detergent micelles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These are explicitly speculative interpretations acknowledged by the authors ('may be due to', 'compatible with', 'we would expect'). While plausible and consistent with the data, they are not directly tested. The molecular basis of two-state binding and the exact antibody mechanism in vivo remain to be determined.",
+    "result_type": "MINOR"
+  }
+]

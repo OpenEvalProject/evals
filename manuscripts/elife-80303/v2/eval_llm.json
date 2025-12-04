@@ -1,0 +1,283 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "VSD activation involves rotation of the lower S4 helix, releasing W281 from a hydrophobic cavity and increasing lipid contacts at the VSD-pore interface. Equilibrium MD simulations show that in the resting state, W281 is nestled in a hydrophobic cavity formed by S4, S1, and the HCN domain, while in the activated state, W281 is pulled out and primarily interacts with lipids. The Y289D mutant represents an intermediate state. VSD activation increases lipid tail contacts at the lower S4/S5 interface from ~24\u00b17 to ~40\u00b17 POPC carbon atoms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C23, C30-C35 are well-supported by equilibrium MD simulations showing state-dependent W281 positioning and quantified lipid contact changes. The data from Figures 1 and 2 provide direct computational evidence for the proposed structural rearrangements and lipid interactions during VSD activation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C36",
+      "C37"
+    ],
+    "result": "Hyperpolarizing MD simulations with enhanced activation strategies show incomplete VSD activation and no pore opening. Under -1V hyperpolarization with cAMP bound, only one VSD undergoes full activation in the intact system, while the HCND-less system shows accelerated but still incomplete activation. S4 bending and rotation are correlated with W281-N300 hydrogen bond formation. Despite these strategies, the pore gate remained closed throughout simulations, consistent with the ~100 ms timescale for pore opening being far beyond accessible simulation times.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C28, C36-C37 are supported by the hyperpolarizing MD simulations shown in Figure 2 and supplementary figures. The incomplete activation and lack of pore opening are consistent with the known weak coupling and slow gating kinetics in HCN channels, providing appropriate context for the need for enhanced sampling approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "VSD activation induces tilting of the S5 helix and formation of a state-specific D290-K412 interaction between the S4-S5 linker and C-linker. The N-terminal end of S5 is displaced during VSD activation in a manner observed in both MD simulations and cryoEM structures, including the Y289D mutant. The D290-K412 interaction is specific to the activated and intermediate states, forming rapidly in simulations of the activated structure and remaining stable. This interaction is hypothesized to couple VSD movement to gate opening through the C-linker.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C45 are supported by equilibrium MD simulations (Figure 3B-C) showing state-dependent S5 displacement and D290-K412 interaction formation. The observations are consistent with previous structural and computational studies (C40-C41), though C45 remains a hypothesis requiring experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Cysteine crosslinking experiments validate the functional importance of the D290-K412 interaction in stabilizing the open state. The D290C-K412C double mutant shows high basal current and depolarized activation in the absence of cadmium. In the presence of cadmium, basal conductance increases from 0.44\u00b10.4 to 0.77\u00b10.7, and the voltage dependence shifts 60 mV to more positive potentials. These results indicate that crossbridging D290C and K412C preferentially stabilizes the open state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C50 are well-supported by electrophysiology experiments shown in Figure 3D and supplementary figures. The cadmium-dependent increase in basal conductance and rightward shift in voltage dependence provide strong experimental evidence that the D290-K412 interaction promotes channel opening, validating the computational predictions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "ABMD simulations drive pore opening through splaying of S6 helices with hinging at G382 and formation of specific inter-subunit contacts. Structural comparisons across CNBD channels show consistent increases in V390 distances upon opening. ABMD simulations observe S6 splaying with V390 rotation, increased pore radius, hydration, and K+ permeation (1-3 events per simulation). A contact between H392 and adjacent Q398 forms during opening, analogous to contacts in the open hERG structure. This contact is proposed to be necessary for pore widening and stabilization of the open state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C56 are supported by ABMD simulations (Figure 4 and supplements) and structural comparisons to related channels. The observation of pore opening, ion permeation, and formation of predicted contacts provides computational evidence for the proposed mechanism, though the ABMD approach involves biasing forces that guide the transition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Pore opening involves strengthening of intra-subunit S5/S6 contacts and weakening of inter-subunit S6-S6 contacts, accompanied by formation of specific polar interactions at the S4/S5/S6 interface. ABMD simulations show slight reinforcement of hydrophobic S5/S6 contact area while S6-S6 interfaces are substantially weakened. Formation of R297-E282, R297-H392, and E282-R404 interactions accompanies pore opening, coupled with loss of R297-lipid contacts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C60 are supported by contact area calculations and interaction analysis from ABMD simulations (Figure 4 supplements). The tradeoff between strengthening S5/S6 and weakening S6-S6 interfaces provides a mechanistic explanation for pore dilation, consistent with previous mutagenesis studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "State-dependent lipid binding at the S4/S5/S6 interface suggests a key role for lipids in electromechanical coupling. Lipids bind in two sites (A and B) on opposite sides of the interface, with increased contacts with polar/charged residues in the activated state. Site B engages VSD residues including S4 gating charges, while site A engages S5 (R297) and S6 (H392). H392 can form contacts with both R297 and lipid headgroups, with both contacts reinforced in the activated state but lipid contacts broken in the open state. Activation and opening are proposed to be driven by a combination of hydrophobic forces and positioning of lipid headgroups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C65, C67-C70 are supported by lipid contact analysis from equilibrium and ABMD simulations (Figure 5). The state-dependent lipid binding patterns provide computational evidence for lipid involvement in gating, though C69 remains a hypothesis. The observations are consistent with lipid densities observed in related channel structures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "The proposed electromechanical coupling model involves a cascade of hydrophobic interface rearrangements triggered by hyperpolarization. The model proposes: (1) S4 downward movement and breaking at S272, (2) W281 release from the S1/HCND cavity with S4 rotation and W281-N300 contact formation, increasing hydrophobic S4/S5/lipid interfaces, (3) D290-K412 contact formation causing S5 bending away from S6, (4) S6 rotation and hinging at G382 maintaining S5/S6 contacts, and (5) pore expansion via V390 reorientation enabling conduction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C75 represent the integrated model based on the collective simulation results shown in Figure 6. The model is well-supported by the individual observations from equilibrium, hyperpolarizing, and ABMD simulations, though it represents a computational prediction of the complete coupling pathway that would benefit from further experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "The proposed model is consistent with recent experimental observations in spHCN and explains coupling in split channels. A two-step VSD activation mechanism was recently identified in spHCN, where secondary voltage sensor movement correlates with opening. Simulations of the Y289D mutant suggest that S4 rotation alone (without bending) can drive pore opening through W281-N300 contact formation. This model explains how voltage sensor movement couples to pore gating in channels lacking covalent S4-S5 linkage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C79 connect the current computational findings to previous experimental work. C76 is supported by citation to recent spHCN experiments. C77-C79 are reasonable inferences from the Y289D simulations (C23) and are consistent with previous experimental observations on split channels, providing broader context for the proposed mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "The model is consistent with previous mutagenesis studies showing the S4-S5 interface stabilizes the closed state and the S5/S6 interface is important for coupling. Previous work suggested the lower S4-S5 interface stabilizes the closed pore. Current simulations reveal pore opening involves strengthening S5/S6 at the expense of S6-S6 interfaces, consistent with leucine zipper mutagenesis showing disruption reduces VSD-driven opening. VSD activation displaces the S4/S5 interface away from closed S6, enabling S6 dilation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C83 appropriately contextualize the current findings with previous experimental work. C80 and C82 are based on cited mutagenesis studies. C81 is supported by the ABMD simulations (C57-C58). C83 represents a reasonable mechanistic interpretation consistent with both current simulations and previous studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C84",
+      "C85"
+    ],
+    "result": "The ABMD open state models show excellent agreement with previous cysteine crosslinking experiments mapping S4-S5 linker and C-linker interactions. Truncation studies show the C-linker and CNBD are not necessary for activation, but mutagenesis has identified critical interactions for coupling. Comparison of ABMD models to Kwan et al. 2012 crosslinking data shows that the closest residue pairs in the models correspond to pairs favoring the open state, while distant pairs favor closed or are unresponsive to cadmium.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C85 appropriately compare the computational models to previous experimental data. C84 is based on cited truncation and mutagenesis studies. C85 is supported by the comparison shown in Videos 1-6, demonstrating good agreement between the ABMD models and functional crosslinking data, providing validation for the computational approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "The ABMD open state model involves V390 dilation and rotation with \u03c0-helix formation, potentially combining features of CNBD family and hERG-specific opening mechanisms. The model shows V390 rotation away from the pore axis while still lining the inner vestibule, consistent with its influence on open pore blocker affinity. Pore opening is coupled to S6 deformation and \u03c0-helix formation. hERG is the only CNBD channel with \u03c0-helix in S6, while others (CNG, TAX-4, HCN4) use right-handed S6 twist. HCN1 may combine features of both mechanisms. The HCN4 open structure (resting VSD) shows slight I511 rotation without \u03c0-helix, possibly representing the pharmacologically distinct instantaneous open state rather than the activated-open state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C86-C95 describe structural features of the ABMD open state and compare to related channels. C86-C88 are supported by the ABMD simulations. C89-C90 are based on structural comparisons. However, C91 and C93 are speculative, and the interpretation of differences between HCN1 simulations and HCN4 structure (C92-C95) is uncertain. The \u03c0-helix formation may be an artifact of the ABMD biasing protocol or represent a genuine mechanistic feature requiring experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "State-dependent lipid binding at the VSD-pore interface is consistent with observations in related channels and may represent a conserved regulatory mechanism. Saponaro et al. reported state-dependent lipid binding in HCN4 structures (resting-closed only). Similar lipid density was observed in KAT1. Recent work on SthK proposed PA lipid regulation via binding to a site with residues corresponding to R297 and D401 (salt bridge in closed state), with lipid absent and salt bridge broken in the open state. Mutagenesis in HCN2 confirmed conservation of this mechanism. HCN1 simulations show reduced R297 and D401 lipid contacts in activated/closed and activated/open states compared to resting/closed, consistent with the SthK model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C102 appropriately contextualize the lipid binding observations with recent structural and functional studies on related channels. C96-C101 are based on cited work on HCN4, KAT1, SthK, and HCN2. C102 is supported by the simulation data (Figure 5), showing consistency with the proposed lipid regulation mechanism. This provides broader significance for the lipid binding observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C66"
+    ],
+    "result": "Background claims establishing HCN channel structure, function, and physiological importance. HCN channels are the only mammalian voltage-gated channels opening upon hyperpolarization, forming tetrameric assemblies with six transmembrane helices per subunit divided into VSD and pore domains. They are crucial for rhythmic activity and have been implicated in arrhythmias, epilepsies, and neuropathic pain. VSD activation involves downward S4 movement. HCN channels adopt a non-domain swapped architecture characteristic of CNBD-containing channels. Available structures represent three of four gating states (resting-closed, activated-closed, resting-open), with the activated-open state missing. The coupling energy is 3-4.5 kcal/mol (~one hydrogen bond). H392 is highly conserved in the HCN family.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C6-C20, C66 represent established background knowledge about HCN channels supported by citations to previous structural, functional, and clinical studies. These claims provide appropriate context for the current work and are well-supported by the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "The study addresses the gap in understanding HCN channel electromechanical coupling by proposing a mechanism involving VSD-pore interface reorganization and state-dependent lipid occupancy. Previous structural and simulation studies failed to capture pore opening triggered by VSD activation, presumably due to weak coupling and limited timescales. The current work proposes that coupling involves reorganization of VSD-pore helix interfaces, shifting the balance between hydrophobic and hydrophilic interactions in a 'domino effect'. Simulations reveal state-dependent lipid occupancy at the coupling interface, suggesting a key role for lipids.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C5 represent the main contributions of the current study. C3 appropriately identifies the gap in previous work. C4-C5 are supported by the collective simulation results (equilibrium, hyperpolarizing, and ABMD) showing interface reorganization and state-dependent lipid binding. These represent the primary findings of the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C29",
+      "C40",
+      "C41",
+      "C55"
+    ],
+    "result": "Supporting observations from related channels provide context for the proposed mechanism. Swapping W281 and N300 inverts gating polarity in spHCN. Tilted S5 conformations are observed in open structures of hERG and TAX-4. S5 tilting was proposed as critical for HCN1 coupling and shown experimentally in HCN4. The H392-Q398 contact (equivalent to N658-Q664) is present in open hERG.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29, C40, C41, C55 are based on cited experimental and structural studies on related channels. These observations provide important context and validation for the proposed coupling mechanism in HCN1, showing conservation of key features across the CNBD channel family.",
+    "result_type": "MINOR"
+  }
+]

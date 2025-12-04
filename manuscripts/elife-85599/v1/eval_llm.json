@@ -1,0 +1,244 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C31",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "The study recorded CA1 neurons from 5 Long-Evans rats (3 males, 2 females) navigating a novel city-block maze for pseudorandom reward, yielding an average of 14.7 cells per session that met inclusion criteria. Custom hyperdrives were implanted over right CA1, and data from male and female rats were pooled together as they were consistent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C31, C93-C96 provide clear methodological details about subjects, sample sizes, surgical procedures, and ethical compliance. The experimental design is well-documented with appropriate controls for sex differences (C94), and the sample sizes are explicitly stated with ranges provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C56",
+      "C59",
+      "C91",
+      "C92"
+    ],
+    "result": "Place fields showed directional tuning on the city-block maze despite the hybrid nature of the task (combining open-field and linear-track elements). A significant subset of fields was directionally tuned (93/310 fields by Mann-Whitney test, 103/297 by GLM analysis), and direction could be decoded from population activity in 10/20 datasets. This suggests that the low degrees of freedom for path choices resulted in directional discrimination even without explicit learning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C38-C41 provide converging statistical evidence for directional tuning using multiple analytical approaches (Mann-Whitney, GLM, random forest decoding). The binomial tests show highly significant results (p<10^-40), and the interpretation (C56, C91-C92) is appropriately cautious about the mechanisms. The finding is well-supported by multiple complementary analyses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C30",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Place field repetition was observed, with neurons having multiple fields (2-7 fields, mean 3.55\u00b11.46) at geometrically similar locations in the maze. Repeating fields were equally likely in vertical or horizontal alleys, and the mean orientation alignment score (0.71) was significantly greater than chance (95th percentile shuffle=0.64), indicating that multiple fields of a neuron share a positional input determining where to fire.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C37 document place field repetition with appropriate quantification (C33, C36) and controls for technical artifacts (C35). The OAS analysis (C36-C37) provides statistical evidence that repetition is not random. The operational definition (C27) is clearly stated, and the distribution of field numbers (C33) is well-characterized.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C30",
+      "C42",
+      "C43",
+      "C44",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C57",
+      "C62",
+      "C72",
+      "C73"
+    ],
+    "result": "Repeating fields from the same cell showed correlated directional preferences when aligned along the same corridor (r\u00b2=0.237, p=0.00012) but uncorrelated preferences when on different corridors (r\u00b2=0.017, p=0.125), with these correlations being significantly different (Z=2.49, p=0.0063). This demonstrates that positional inputs (determining where cells fire) can be dissociated from nonpositional inputs (determining firing rates within fields).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6, C47-C50 provide the core experimental evidence with appropriate statistics. The corridor analysis is well-controlled, with shuffling procedures (referenced in methods) supporting the findings. Claims C57, C72-C73 appropriately interpret this as evidence for dissociable positional and nonpositional inputs. The within-cell control design is a strength of this result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Repeating and non-repeating fields showed no significant differences in directional tuning strength (mean difference 0.88 vs 1.21 normalized Hz, p=0.49) or proportion of directional fields (69/172 vs 51/125, p=0.97), indicating that place field repetition per se does not predict stronger directional tuning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C44 provide clear statistical comparisons between repeating and non-repeating fields using both Mann-Whitney tests and chi-square tests. The lack of significant differences is well-documented with appropriate p-values, and the conclusion (C44) follows logically from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C71"
+    ],
+    "result": "Position could be reliably decoded from population activity (median performance above 95th percentile in 10/10 datasets, p=9.76\u00d710^-14), with repeating and non-repeating neurons being similarly informative about position (average difference=0.06\u00b10.21, p=0.38). This demonstrates that both positional and nonpositional signals can be retrieved from the multiplexed coding scheme.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C46 provide strong statistical evidence for position decoding with appropriate controls (shuffled data). The comparison between repeating and non-repeating neurons (C46) is well-controlled with downsampling to equate sample sizes. Claim C71's interpretation about multiplexed coding is supported by the decoding results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Individual fields displayed complex temporal dynamics (83/296 fields significant by GLM, p=2.07\u00d710^-38), with population activity changing gradually over minutes. Temporal dynamics within repeating fields were heterogeneous and uncorrelated (mean correlation=0.049\u00b10.26), and more distant time windows showed decreased correlation (slope=-0.06\u00b10.022, p=2.49\u00d710^-5). Despite this drift, the map maintained spatial informativeness, and positional inputs remained stable as fields drifted between analogous locations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C8, C51-C55, C79-C85 provide comprehensive evidence for temporal dynamics using GLM analysis, population vector correlations, and sliding window decoding. The statistical evidence is strong (p<10^-30), and appropriate controls (shuffling tests mentioned in methods) were performed. The interpretation that temporal dynamics are uncorrelated across repeating fields (C81-C82) is well-supported by the correlation analysis (C53).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C70",
+      "C74"
+    ],
+    "result": "The positional inputs that drive a cell to fire in similar locations can be behaviorally and temporally dissociated from nonpositional inputs that alter firing rates within fields. This dissociation offers a potential mechanism to increase flexibility for encoding episodic variables within a spatiotemporal framework, with nonpositional inputs being flexible as expected for encoding episodic content.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C9-C10, C70, C74 represent the main theoretical interpretation of the experimental findings. While the dissociation is well-demonstrated by the experimental data (corridor analysis, temporal dynamics), the claim that this \"offers a potential mechanism\" (C10) and that nonpositional inputs are \"always flexible\" (C74) are speculative interpretations that extend beyond the direct evidence. The episodic memory framework is plausible but not directly tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C61",
+      "C62"
+    ],
+    "result": "A subset of repeating fields showed strong correlations in firing rates across different trajectory types, while many fields in different corridors were anticorrelated in trajectory responses. This suggests that place field repetition may result from multiple mechanisms, with some fields encoding trajectory while others encode different dimensions such as local border geometry, making trajectory coding more complex than previously characterized.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C65 describe trajectory analysis results with reference to Figure 5G. The bimodal distribution of trajectory correlations (mentioned in methods with Hartigan's test) supports the interpretation of multiple mechanisms (C65). Claims C61-C62 appropriately contextualize these findings relative to prior work. The conclusion is well-supported though the specific mechanisms remain to be fully elucidated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Fields on the same corridor were sampled by shorter paths without direction changes, while traveling between fields on different corridors involved direction changes and longer paths. This behavioral difference correlates with the corridor effect on directional tuning, suggesting that fields sampled along contiguous trajectories are more likely to share directionality.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C77 provide behavioral data with reference to Figure 5\u2014figure supplement 1B showing path length differences. The interpretation (C78) is appropriately presented as speculative (\"one explanation\"). The behavioral analysis provides important context for understanding the corridor effect on directional tuning, though causality is not established.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Cells were disproportionately likely to have fields aligned along an axis of the maze (vertical or horizontal), similar to axis-tuned cells reported previously. The potential contribution of local border geometry to place field repetition is supported by multiple studies, and it is plausible that repetition may be caused by stronger border-related input to these neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C67 describes an observation from the current data with citation to similar prior findings. However, C66 and C68 are largely speculative about mechanisms. While the OAS analysis (C36) supports alignment, the specific contribution of border geometry versus other factors is not directly tested. The interpretation is plausible given known CA1 inputs but requires additional experiments to confirm.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C29"
+    ],
+    "result": "The manuscript provides extensive background on hippocampal function, including its role in episodic memory encoding, the cognitive map theory, spatial firing properties of place cells, responses to various sensory stimuli and navigational variables, and the rate remapping hypothesis distinguishing positional from nonpositional inputs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C11-C25, C29 summarize established knowledge about hippocampal function with appropriate citations to foundational and recent literature. These background claims are well-supported by the cited literature and represent accurate summaries of the field's understanding. This is standard background material for contextualizing the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C56",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "The presence of directional firing on the hybrid maze suggests that low degrees of freedom for path choices resulted in path discrimination. The behavioral sampling of an environment may affect CA1 place map representation, and the pattern of behavioral sampling per se might be sufficient to cause splitting/directionality, even without explicit learning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C56, C86-C90 provide interpretations of the directional firing results in the context of behavioral constraints. While C90 documents that rats did not explore randomly (with figure reference), the causal claims about behavioral sampling causing directionality (C89) are speculative. The interpretation is plausible but alternative explanations (geometry, reference frames) are not ruled out.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,337 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "The manuscript provides background on inflammasomes as filamentous signaling platforms that assemble sequentially and are regulated by endogenous pyrin-only-proteins (POPs). These claims establish the biological context and prior knowledge about inflammasome structure, assembly, and regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C23, C30-C34 are well-supported by citations to established literature and represent accepted knowledge in the field. These background claims provide necessary context for the experimental work and are appropriately referenced.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Prior work suggested that POP target specificities are dictated by sequence homology: POP1 is 65% identical to ASCPYD and thought to inhibit ASC nucleation; POP2 is 68% identical to NLRP2PYD and targets ASC and AIM2; POP3 is 67% identical to AIM2PYD and targets ALRs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C29 accurately represent prior hypotheses from the literature (supported by citations and sequence alignment data in supplementary figures). These claims establish the prevailing model that the authors challenge with their new findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Rosetta interface analyses suggest that PYD filaments assemble bidirectionally with symmetric energy landscapes, and that overall \u0394Gs for PYD\u2022PYD interactions are more favorable than POP\u2022PYD interactions. The analyses suggest broader target specificities than predicted by sequence homology alone, with POP1 favoring ASCPYD, all three POPs potentially targeting AIM2, and POP1 showing favorable interactions with NLRP3 and NLRP6.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C52 are supported by Rosetta computational analyses shown in Figure 1. The bidirectional assembly finding (C35-C37) is consistent with prior work (C35 cites Matyszewski et al., 2021). The energy calculations provide testable predictions, though the arbitrary threshold (\u0394\u0394G \u22643.5) for favorable interactions lacks justification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C56",
+      "C58",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "POP1 is ineffective in directly inhibiting ASC assembly. In cellular assays, POP1-eGFP only marginally inhibited ASCPYD-mCherry filament assembly (\u226420% suppression) and reduced ASCFL puncta by ~30%. In vitro, POP1 (up to 150 \u00b5M) did not affect ASCPYD oligomerization kinetics, FRET efficiency, or filament formation by nsEM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C56, C58, C64-C66 are consistently supported by multiple complementary experimental approaches (cellular imaging Figure 2A-D, FRET assays Figure 2E, nsEM Figure 2F). The convergence of in cellulo and in vitro data strengthens the conclusion that POP1 does not directly target ASC, contradicting prior hypotheses (C25).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C6",
+      "C9",
+      "C57",
+      "C59",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "POP2 and POP3 directly suppress ASC nucleation and moderately affect elongation. Both POPs significantly reduced ASCPYD filament assembly in cells (POP2 more effective than POP3) and prolonged the lag phase of ASCPYD polymerization in FRET assays (up to ~15 min delay) with dose-dependent effects. nsEM showed complete absence of filaments with POP2 and few filaments with POP3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C9, C57, C59, C67-C74 are well-supported by convergent data from cellular imaging (Figure 2A-D), FRET assays (Figure 2E), and nsEM (Figure 2F). The observation that FRET signals increase despite lack of filaments (C72) suggests POPs trap ASC in nonfunctional oligomeric states. IC50 values are reported with error estimates (N=3).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Re-analysis of Rosetta data reveals that POP2 and POP3 show both favorable (\u0394\u0394G \u22643.5) and unfavorable (\u0394\u0394G \u226510.0) interfaces with ASCPYD, while POP1\u2022ASCPYD interfaces lack strong unfavorable interactions. This led to the hypothesis that a combination of favorable and unfavorable interactions is necessary for effective POP-mediated inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C77 are supported by Rosetta analyses (Figure 2\u2014figure supplement 3) and rationalize the experimental observations. However, the thresholds for favorable (\u22643.5) and unfavorable (\u226510.0) interactions are arbitrarily determined as stated in C75, which weakens the quantitative interpretation. The hypothesis (C77) is testable and guides subsequent experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C5",
+      "C7",
+      "C8",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C90",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "All three POPs can inhibit ALR (AIM2 and IFI16) filament assembly, with POP1 acting as a decoy targeting upstream receptors rather than ASC. POP1 was more effective against AIM2PYD and IFI16PYD (~60% inhibition) than ASCPYD (~20%). All three POPs decreased AIM2PYD elongation in FRET assays (POP3 most effective, IC50 = 27\u00b111 \u00b5M), and POP2/3 essentially obliterated filament formation in cells and by nsEM. The presence of activating ligands (dsDNA) can diminish POP inhibitory effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C7-C8, C78-C86, C90, C92-C97 are supported by cellular imaging (Figure 3A-D), FRET assays (Figure 3E), nsEM (Figure 3F), and dsDNA binding assays (Figure 3\u2014figure supplement 2). The data consistently show POP1 preferentially targets upstream receptors. The observation that dsDNA diminishes inhibition (C97) is important for understanding physiological context. Sample sizes (N\u22654) and statistical tests are appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "POPs can directly inhibit NLRP filament assembly with differential specificities. POP1 was more effective against NLRP3PYD and NLRP6PYD (~60% inhibition) than ASCPYD (~20%), predominantly inhibiting elongation. POP2 was less effective against NLRPs than ASC. POP3 was equally effective against NLRPs and ASC but less effective than against ALRs. IL-18 release assays confirmed POP2 as most potent, POP3 second, and POP1 least effective.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C114 are supported by Rosetta analyses (Figure 4\u2014figure supplement 1), cellular imaging (Figure 4A-D), FRET assays (Figure 4E), nsEM (Figure 4F), and IL-18 ELISA (Figure 4\u2014figure supplement 2E). The convergence of computational predictions with experimental data strengthens conclusions. The functional IL-18 assay validates the physiological relevance of the inhibition mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "Single point mutations (N73L and D23K) in AIM2PYD that impair self-assembly can reprogram the protein into a POP-like inhibitor. Both mutants inhibited WT-AIM2PYD polymerization in vitro (FRET assays) and in cells, with N73L being more effective than D23K. This provides proof-of-principle that PYDs can be converted to inhibitors by introducing deleterious mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C120 are supported by nsEM (Figure 5B), FRET assays (Figure 5C), and cellular imaging (Figure 5D-E). The mutant experiments provide strong support for the hypothesis that unfavorable interactions are necessary for inhibition (C77). The differential effectiveness of N73L vs D23K is consistently observed across methods, though the molecular basis for this difference is not fully explained.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Recombinant POP1 behaves as a monomer, while POP2 and POP3 are prone to aggregation/degradation and require MBP tags for purification. Upon MBP cleavage, POP2 and POP3 form elongated oligomers with undefined structures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C63 are supported by SEC profiles and nsEM images (Figure 2\u2014figure supplement 2A-B). These biochemical characterizations are important for interpreting the functional assays. The oligomeric nature of POP2/3 may contribute to their enhanced inhibitory activity (C148), though this connection is speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C10",
+      "C152"
+    ],
+    "result": "The authors propose that degenerate-code-like target selection and inhibition mechanisms, rather than amino acid sequence homology, underpin POP regulation of inflammasome assembly. A combination of favorable and unfavorable interactions between POPs and PYDs is necessary for effective recognition and inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10 and C152 represent the central conclusion of the manuscript, supported by the convergence of Rosetta analyses and extensive biochemical experiments (C4-C9, C75-C120). The model explains why sequence homology alone (C23-C29) does not predict target specificity and is validated by the mutant experiments (C115-C120). This represents a significant conceptual advance in understanding POP function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C60",
+      "C124",
+      "C125"
+    ],
+    "result": "POPs interfere with inflammasome filament polymerization (nucleation and/or elongation) without co-assembling, unlike COPs that co-assemble with CARDs. Excess POPs are necessary for inhibition, especially when activating ligands are present.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60, C124-C125 are supported by experimental data (FRET, nsEM, dsDNA binding assays) and comparison with prior COP studies. The mechanistic distinction from COPs is important for understanding POP function. The requirement for excess POPs is consistent with the less favorable POP\u2022PYD vs PYD\u2022PYD interactions shown by Rosetta (C38).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "POP2/3 suppress ASC nucleation while also interfering with upstream receptor elongation. The authors reason that modulating both assembly steps while requiring excess POPs is suited for attenuating inflammasome activities without complete shutdown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C126-C127 are supported by FRET data (Figures 2E, 3E, 4E). However, C128 is speculative reasoning about physiological function without direct experimental support. While the logic is plausible, demonstrating that this dual mechanism provides appropriate attenuation would require additional experiments (e.g., dose-response studies in physiological contexts).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C129",
+      "C130"
+    ],
+    "result": "POP1 expression is predominantly induced by IL-1\u03b2, suggesting it is part of a negative feedback loop for attenuating excessive inflammasome activities by preventing perpetuation of upstream filaments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C129 is supported by citation to prior work (de Almeida et al., 2015). However, C130 is speculative inference based on the IL-1\u03b2 induction pattern and the finding that POP1 targets upstream receptors. While the negative feedback hypothesis is plausible and consistent with the data, it lacks direct experimental validation in this manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "POP2 potently inhibits ASCPYD nucleation while moderately suppressing select upstream receptors like AIM2. Its expression is induced by diverse cytokines, leading to the postulate that POP2 acts as a pan-inflammasome inhibitor essential for preventing spurious innate immune responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C131-C134 are supported by citations and experimental data (Figure 2). However, C135 is speculative postulation about POP2's physiological role as a pan-inflammasome inhibitor. While consistent with the broad cytokine induction and potent ASC inhibition, this functional interpretation requires validation in physiological contexts beyond the scope of the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141"
+    ],
+    "result": "POP3 inhibits AIM2PYD elongation and ASCPYD nucleation, and can in principle inhibit NLRPs. POP3 is exclusively induced by interferons (which also drive ALR expression), leading to the postulate that contextual expression dictates its in vivo targets despite intrinsic capability to inhibit various receptors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C136-C140 are supported by citations and experimental data (Figures 2-4). However, C141 is speculative postulation about how expression context determines in vivo targets. While the logic connecting IFN-induced expression of both POP3 and ALRs is compelling, this hypothesis requires validation through context-specific experiments not performed in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150"
+    ],
+    "result": "The authors propose a mechanistic model where nonequilibrium filament assembly kinetics define POP regulation. POPs and PYDs transiently associate via favorable interfaces, but without strong unfavorable interactions, homotypic PYD\u2022PYD interactions outcompete POP\u2022PYD binding. Excess POPs with unfavorable interfaces expose adverse surfaces that hamper assembly. Multimeric POPs may be more effective, and POPs may preferentially trap oligomeric PYDs in nonfunctional states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C142-C150 represent a mechanistic model based on experimental observations and thermodynamic reasoning. While the model is consistent with the data (Rosetta analyses, FRET kinetics, nsEM), many aspects are speculative (C142, C144-C148, C150). The model provides testable hypotheses but lacks direct experimental validation of the proposed transient interactions and kinetic trapping mechanisms. Claim C149 is supported by prior work (citation).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C151"
+    ],
+    "result": "The authors acknowledge that experiments with full-length proteins are consistent with isolated PYD results, but note there could be additional complexity in POP\u2022inflammasome interactions beyond what is reported, given that receptors contain multiple domains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C151 appropriately acknowledges limitations of the study. The consistency between full-length and isolated PYD experiments is supported by data in supplementary figures. The caveat about additional complexity is reasonable given that only PYD domains were studied in detail, while full-length receptors have additional regulatory domains.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,1473 @@
+{
+  "submission": {
+    "id": "23f010f0-a3d4-4d39-9043-4bf951e46260",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-04T05:10:01.798024Z",
+    "updated_at": "2025-12-04T05:10:01.798024Z"
+  },
+  "content": [
+    {
+      "id": "cd6fe8fc-0111-4f03-917f-bc2b468172a0",
+      "submission_id": "23f010f0-a3d4-4d39-9043-4bf951e46260",
+      "content_type": "manuscript",
+      "content_text": "# A within-host infection model to explore tolerance and resistance\n\n## Authors\n\n- David Duneau<sup>1</sup> ([ORCID: 0000-0002-8323-1511](https://orcid.org/0000-0002-8323-1511)) \u2020\n- Pierre DM Lafont<sup>1</sup>\n- Christine Lauzeral<sup>1</sup>\n- Nathalie Parthuisot<sup>1</sup>\n- Christian Faucher<sup>1</sup>\n- Xuerong Jin<sup>4</sup> ([ORCID: 0009-0000-2862-4075](https://orcid.org/0009-0000-2862-4075))\n- Nicolas Buchon<sup>4</sup> ([ORCID: 0000-0003-3636-8387](https://orcid.org/0000-0003-3636-8387))\n- Jean-Baptiste Ferdy<sup>1</sup> ([ORCID: 0000-0002-4020-1208](https://orcid.org/0000-0002-4020-1208)) \u2020\n\n### Affiliations\n\n1. Centre de Recherche sur la Biodiversit\u00b4e et l\u2019Environnement, Universit\u00b4e Paul Sabatier Toulouse France ([ROR:03v2c3v44](https://ror.org/03v2c3v44))\n2. Centre for Cardiovascular Sciences, Queen\u2019s Medical Research Institute, University of Edinburgh Edinburgh United Kingdom ([ROR:01nrxwf90](https://ror.org/01nrxwf90))\n3. Institute of Evolutionary Biology, School of Biological Sciences, University of Edinburgh Edinburgh United Kingdom ([ROR:01nrxwf90](https://ror.org/01nrxwf90))\n4. Cornell Institute of Host-Microbe Interactions and Disease, Department of entomology, Cornell university New York United States ([ROR:05bnh6r87](https://ror.org/05bnh6r87))\n\n\u2020 Corresponding author\n\n## Abstract\n\nHow are some individuals surviving infections while others die? The answer lies in how infected individuals invest into controlling pathogen proliferation and mitigating damage, two strategies respectively called resistance and disease tolerance. Pathogen within-host dynamics (WHD), influenced by resistance, and its connection to host survival, determined by tolerance, decide the infection outcome. To grasp these intricate effects of resistance and tolerance, we used a deterministic theoretical model where pathogens interact with the immune system of a host. The model describes the positive and negative regulation of the immune response, consider the way damage accumulate during the infection and predicts WHD. When chronic, infections stabilize at a Set-Point Pathogen Load (SPPL). Our model predicts that this situation can be transient, the SPPL being then a predictor of life span which depends on initial condition (e.g. inoculum). When stable, the SPPL is rather diagnostic of non-lethal chronic infections. In lethal infections, hosts die at a Pathogen Load Upon Death (PLUD) which is almost independent from the initial conditions. As the SPPL, the PLUD is affected by both resistance and tolerance but we demonstrate that it can be used in conjunction with mortality measurement to distinguish the effect of disease tolerance from that of resistance. We validate empirically this new approach, using Drosophila melanogaster and the pathogen Providencia rettgeri. We found that, as predicted by the model, hosts that were wounded or deficient of key antimicrobial peptides had a higher PLUD, while Catalase mutant hosts, likely to have a default in disease tolerance, had a lower PLUD.\n\n## Introduction\n\nInfectious diseases produce a vast array of symptoms, some leading to death whereas others are easily overcome. This heterogeneity of outcomes reflects, in part, the diversity of pathogens. However, even typically benign pathogens can occasionally be fatal, while the deadliest pathogens rarely cause 100% mortality (e.g. even in Ebola infections, 40% of infected people survive, Shultz et al., 2016). Predicting who is at greater risk of dying from an infection is central in medicine, because accurate predictions can help tailoring public health efforts. A common approach to this problem relies on detecting statistical associations between patients\u2019 conditions and fatality rates (e.g. Barda et al., 2020 in the case of COVID-19). Although essential and efficient, this approach is not meant to understand the ultimate causes of death.\n\nWhat actually makes an infected patient succumb is that it did not control pathogen proliferation and could not sustain the damage imposed by the infection (Cola\u00e7o et al., 2021; Duneau and Ferdy, 2022; Jackson et al., 2014; Soares et al., 2017). Overall, the hosts can, therefore, survive an infection by strategies which combine resisting to pathogens by producing immune defense and tolerating the consequences of infection (in animals Ayres and Schneider, 2008; R\u00e5berg et al., 2007; Read et al., 2008, but also in plants Kover and Schaal, 2002). Hosts which survive because they tolerate infections can either sustain a high level of damage, (i.e. disease tolerance stricto sensu Schneider, 2021) or repair them efficiently to maintain homeostasis, (i.e. resilience sensu Ferrandon, 2013). Forecasting the outcome of an infection for one individual patient requires that we quantify the relative investment in each of these strategies (Balard and Heitlinger, 2022).\n\nIn principle, separating the effects of disease resistance from those of disease tolerance should be relatively easy, as resistance directly impacts the Within Host Dynamics (WHD) of pathogens, while tolerance affects survival but should have no effect on WHD. The task is in fact challenging because both resistance and tolerance have indirect effects which intermingle. For example, immune defense is a double-edged sword which can save the host\u2019s life but sometimes cause pathologies and reduce lifespan (Critchlow et al., 2023; Lin et al., 2018; Petkau et al., 2017). An increase in resistance could, therefore, come with an apparent decrease in disease tolerance. Reciprocally, disease tolerance and the damage mitigation it relies on could allow a host to sustain higher levels of defense, and indirectly increase its resistance to disease. These intricate effects, added to the fact that some regulatory genes affect both resistance and tolerance, led some authors to consider that they should be seen as two finely co-regulated aspects of the immune response to infection (Martins et al., 2019; Pucillo and Vitale, 2020). Studying experimentally the WHD and its connection to survival is probably still the only way to understand the mechanisms which underlie resistance and tolerance, but theoretical studies are needed to unravel their effects and provide testable predictions (Lazzaro and Tate, 2022).\n\nWe present here an effort to disentangle the action of disease tolerance and resistance using a mathematical model of WHD. Our model aims at being general, while taking advantage of recent empirical descriptions of WHD in Drosophila melanogaster (Duneau et al., 2017a). Invertebrates have proven to be good alternative experimental models to understand the relation between WHD and infection outcomes. First, they provide the advantage that the total pathogen load can be quantified on large numbers of animals, regardless of the pathogen tropism, so that the WHD can be studied on a wide range of disease types (Duneau et al., 2017a). Second, they share with mammals a large part of the mechanisms underlying their innate immune system, as shown in Drosophila melanogaster (Buchon et al., 2014). Our purpose was twofold: first, we aimed to designing a model which could reproduce the different situations documented by Duneau et al., 2017a and in other studies; second we used it to explore how experimental proxies of resistance and disease tolerance actually connect to infection parameters. Figure 1 presents an example of WHD in Drosophila which illustrates one of the behaviors we wanted our model to be able to reproduce, and defines the PLUD and the SPPL, which we propose as a generalization of SPVL and SPBL to pathogens other than viruses and bacteria, the two quantities which we have investigated most. Finally, we used our model to design methods which could help to experimentally distinguish the effects of disease tolerance from that of resistance.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/104052/elife-104052-fig1-v2.jpg)\n\n**Figure 1.:** Adapted from Duneau et al., 2017a. Each point represents the bacterial load estimated from a single killed male fly (Drosophila melanogaster) injected with a suspension of the bacterium Providencia rettgeri containing ca. 2000 bacterial cells. Twenty hours after injection, some flies maintain a moderate load and will live on for several days, while others have reached high loads and will die rapidly.\n\nWe found that only models with complex, non-linear regulations of immunity can satisfactorily reproduce infections which range from chronic to acute and from benign to lethal. We further demonstrated that the model adequately predicts both the existence and the properties of the SPPL if defense production is assumed to decrease with accumulating damage. We show that the SPPL can then be transient and does, as documented in HIV infections, predict the host\u2019s lifespan. We further demonstrated that SPPLs with entirely different properties can be measured in other situations where the pathogen stably associates to the host, causing little damage. Our model also predicts that the host dies at a PLUD which is virtually independent of inoculum size (as observed by Duneau et al., 2017a), and should therefore reflect the genetic characteristics of interacting pathogens and hosts. We finally propose that the PLUD could be used in combination with a mortality measurement (such as the Hazard Ratio) to experimentally distinguish the effects of disease tolerance from that of resistance. We validated this theory using experimental infections of Drosophila melanogaster by the pathogenic bacterium Providencia rettgeri.\n\n## Methods and results\n\n### A model of host-pathogen interactions\n\nOne purpose of our work was to develop a mathematical model capable of reproducing the wide variety of WHD documented to date. Our model aims at being general, but we used the recent empirical work of Duneau et al., 2017a on Drosophila melanogaster to facilitate explanations and interpretations. This previous work documents chronic and acute diseases, some benign, while others are lethal. But most importantly, it also depicts situations where an infection initiated in carefully controlled conditions can bifurcate, with some of the hosts developing a form of chronic infection when others die within a few days (as illustrated in Figure 1).\n\nSuch bifurcations in dynamical systems are most often by-products of bistability. The few available examples of bistable WHD models in the literature are all modifications of the Lotka-Volterra predator-prey model (Pujol et al., 2009; Souto-Maior et al., 2018). Mayer et al., 1995 demonstrated that in such models non-linear functional responses for both pathogen dynamics and host defense regulation could yield bifurcations between chronic infections with high and low equilibrium pathogen load.\n\nOther models have proven that the non-linearities that create bifurcations could originate from feedback between pathogen proliferation and immune defense production. van Leeuwen et al., 2019, for example, demonstrated that a model that explicitly describes the amount of resource intestinal pathogens diverted from their host can be bistable, a result later confirmed by Yu et al., 2021. Ellner et al., 2021 showed that situations where pathogens actively destroy immune defenses and also create bistability in disease outcome. All these models have in common that they predict bistability where some infections are cleared (or almost cleared, in the case of Ellner et al., 2021 conceptual model). In that sense, they do not reproduce the situations documented by Duneau et al., 2017a, where some infections remain chronic while others are lethal.\n\nIn our research, we amalgamated Mayer et al., 1995\u2019s concept of nonlinear modulation in defense production with the hypothesis that pathogens cause damage that can hinder the host\u2019s ability to combat infection. We customized our model to not only forecast pathogen dynamics, but also estimate the host\u2019s survival prospects.\n\nLet $x$ be the pathogen load (e.g. bacteria), $y$ the level of defense (e.g. anti-microbial peptides) produced by the host immune system, and $z$ the damage caused by the infection (see Figure 2A). Whether the host suffers from severe infection, chronic yet mild infection, or clears pathogens, depends on its genetically determined capacity to fight or tolerate pathogens, but also on the inoculum size and on the host physiological state at the start of the infection. In our model, the inoculum size is the initial value of the pathogen load ($x_{0}$). The physiological state of the host at the start of the infection is described by the initial level of defense ($y_{0}$) and of damage ($z_{0}$). The initial level of defense can be set by constitutive immunity, when a healthy host is at its homeostatic state (i.e. $y_{0}=y~_{h}$). It can also be lowered, when the host is weakened by environmental challenges. Similarly, before the infection has started, the host suffers from an initial level of damage which origin is not the studied infection. This level is $z~_{h}$ when the host is at its homeostatic state, but can be increased in case of environmental challenges (e.g. infection starting from a wound).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/104052/elife-104052-fig2-v2.jpg)\n\n**Figure 2.:** (A) A description of the model. Large arrows indicate fluxes which make pathogen load ($x$), level of defense ($y$), and damage ($z$) vary over time. Dashed arrows indicate how each variable influences, negatively (flat arrowhead) or positively, these fluxes. Tables list parameters and their default values, separating those which determine the production or efficacy of defense (resistance parameters) from those which determine the production and the repair of damage (tolerance parameters). (B). The activation of defense as described by the functional response $F(x)$ gives the level of defense production that is reached in the absence of negative regulation. It increases with pathogen load $x$, $F(0)=\\gamma$ (the horizontal gray line) being the maximum constitutive defense production, reached when the host is not infected. $\\alpha$ controls how fast defense expression increases with load (dashed curve: $\\alpha=24$ instead of 12 for the plain curve). Increasing $u$, (dotted curve: $u=0.75$ instead of 0.5) makes $F$ increase slower when the pathogen load is low. (C) The negative regulation of defense production as described by the functional response $G(y,z)$. Down-regulation of defense production increases with both defense ($y$) and damage ($z$) levels. Note, however, that $\u03c8=0$ or $l=0$ would make $G$ independent of damage level.\n\nA set of parameters (described in Figure 2A) characterizes the genetic interaction between a host and a pathogen. These parameters reflect both the genetically determined capacity of the host to fight an infection and the genetically determined aggressiveness of the pathogen it is fighting against. These parameters govern the dynamics of $(x,y,z)$ over time $t$, as described by the following differential equations:\n\n$$\n{\\frac{dx}{dt}=x(1\u2212x)\u2212\\deltaxy\\frac{dy}{dt}=F(x)G(y,z)\u2212\\phiy\\frac{dz}{dt}=\\omegax+\u03b7y\u2212\u03bez.\n$$\n\nFor the sake of simplicity, the equations of system (Equation 1) are written dimensionless, $x$ being a fraction of the pathogen\u2019s carrying capacity within the host and time units corresponding to the pathogen\u2019s generation time. The equation governing the dynamics of pathogens is that of the evolution of a prey population in a classic Lotka-Volterra model (Lotka, 1923; Volterra, 1928). The pathogens are destroyed by the defense at a rate $\\deltay$, with $\\delta$ representing the efficacy of immune molecules or cells at killing pathogens.\n\nWe considered that damage should increase with pathogen load, but that it might also increase with the level of defense that is produced (i.e. immunopathology, Gonz\u00e1lez-Gonz\u00e1lez and Wayne, 2020; Graham et al., 2005; Rommelaere et al., 2024). We assumed that damage are caused by pathogens at a rate $\\omega$ and by defense at a rate $\u03b7$. We further reasoned that damage are repaired at a constant rate $\u03be$. It is now well established that repairing mechanisms are in fact modulated during the course of an infection (Martins et al., 2019; Pucillo and Vitale, 2020). For simplicity, and because the details of how this regulation responds to damage and defense production are still unknown, we deliberately neglected this modulation. We also made the simplifying assumption that damage caused by pathogens and by immune responses is of the same nature, allowing it to be repaired at the same rate. Finally, we postulated that the host cannot sustain infinite damage, resulting in death if $z$ exceeds the threshold value $z_{d}$.\n\nWe assumed that the time variation in the level of defense is set by the balance between the production of new molecules or cells ($F(x)G(y,z)$) and the spontaneous decay of already produced ones ($\\phiy$, with defense persisting longer in the host when $\\phi$ is decreased). The functions $F$ and $G$ describe the modulation of defense production, with $F$ modeling how production is activated upon pathogen detection, and $G$ describing negative regulation. Following Mayer et al., 1995, we wrote both $F$ and $G$ as non-linear functional responses and investigated how the shapes of these two functions influence the outcome of the infection.\n\nThe function $F$ is given by\n\n$$\nF(x)=\\gamma+\\alpha\\frac{x^{u}}{1+\\betax^{v}}.\n$$\n\nWe posited that $F$ must be an increasing function of pathogen load ($u\\geqv$ and $\\beta>0$). In the absence of pathogens and with no negative regulation, the production of defense equals \u03b3. The parameter \u03b3, therefore, sets the maximum constitutive production of defense. Upon infection, $F$ increases with pathogen load (because we assume $\\alpha>0$), and reaches its maximum feasible value when $x$ reaches the carrying capacity (i.e. when $x=1$ with then $F(1)=\\gamma+\\alpha/(1+\\beta)$). Figure 2B illustrates that higher values of \u03b1, i.e., more sensitive defense activation, make this increase steeper. Increasing $u$ above $v$ makes $F$ sigmoid, which reproduces cases where the production of defense is barely activated unless the pathogen load becomes significant (as Figure 2B illustrates). Overall, the parametrization of $F$ allowed us to vary the constitutive level of defense expression, the speed at which defenses are activated upon infection, and the load at which pathogens are detected.\n\nThe function $G$ corresponds to the negative regulation of the production of defense, with\n\n$$\nG(y,z)=\\frac{1}{1+y^{k}+\u03c8z^{l}}.\n$$\n\nHere, we considered that the regulation of the production of defense must incorporate a negative effect of immune defense ($y$) on defense production itself. This was motivated by the negative feedback loops that regulate immune responses in mammals and insects. In Drosophila, for example, the Diedel and WntD genes have such a function (Lamiable et al., 2016a; Lamiable et al., 2016b). Similarly, PGRP-LB, which has mammalian orthologs, is activated by the immune deficiency (Imd) pathway, one of the signaling cascades which regulates the expression of most antimicrobial peptides. But PGRP-LB also down-regulates this same Imd pathway, and thus provides a clear example of negative regulation of immune response (Kleino and Silverman, 2014).\n\nOur model also aims to incorporate how damage accumulation modifies the regulation of defense production. This can conceptually be separated into two distinct phases. Early in the infection, damage-associated molecular patterns (DAMPs) have been proposed as universally used signals that trigger the activation of an immune response (Matzinger, 1994; Seong et al., 2021). These DAMPs can come from a wound, that would be systematically associated to the infection. We have assumed that in this case, DAMPs would trigger an instantaneous increase in both defense and damage, which we can model by increasing both $y_{0}$ and $z_{0}$. DAMPs could also originate from the infection itself, but they should then strongly correlate with bacterial load, as damage and load are tightly coupled during early infection. Therefore, we assumed that the positive regulation of defense production upon the detection of DAMPs that originate from the infection is incorporated in function $F$.\n\nLater in the infection, the accumulation of damage caused by the infection could disrupt immune system homeostasis by altering the host\u2019s health condition (Stoecklein et al., 2012). This may occur because the energy spent repairing damage is no longer available for defense production. Additionally, the tissues producing defenses may themselves be damaged by the infection, impairing the production of immune molecules or cells. In our model, these effects are represented in function $G$ by the negative effect of the damage ($z$) on defense production (see Figure 2C), the importance of which is controlled by the parameters $\u03c8$ and $l$.\n\nAs should be clear from Equations 2 and 3, we purposely made $F$ and $G$ versatile so that our model can reproduce various types of host-pathogen interactions. This came at the cost of a large number of parameters. Figure 2 represents the model, lists its parameters and gives the parameter values we have used in our computations, unless otherwise specified. Parameters can be separated in two lists, with disease tolerance parameters that control damage production or repair on one side, and resistance parameters, which control the efficacy and level of immune defense on the other (see Figure 2). This clear-cut distinction, though, ignores potential indirect effects. For example, increasing the host capacity to repair damage (i.e. increasing $\u03be$) makes it more tolerant to the infection. But damage hinders defense production, so that increasing $\u03be$ indirectly allows the host to produce more defense, hence making it more resistant. Similarly, increased defense production causes additional damage and should, therefore, reduce the host\u2019s tolerance to disease. One of our aims was, therefore, to describe how the combined direct and indirect effects of each parameter impact both resistance and tolerance to infections.\n\nFinally, due to the complexity of functions $F$ and $G$, the equilibria of our model are intractable. We, therefore, relied on numerical methods to compute both the homeostatic state in the absence of pathogens $(y~_{h},z~_{h})$ and other equilibria $(x~,y~,z~)$ with pathogens present. This, as most of the numerical analysis detailed here, has been performed using the GSL library (Galassi et al., 2009) and functions provided in (R Developmental Core Team, 2018). We were nevertheless able to derive the stability conditions for some of the equilibria (see Appendix 1) and the relation between equilibrium load and parameters (see Appendix 2).\n\n### The different possible outcomes of an infection\n\nThe entanglement between pathogen proliferation, defense, and damage production is too complex to predict the outcome of an infection from their separate effects. But numerically integrating Equations 1 allowed us to simulate infections, and thus to investigate how variations in parameters (e.g. the maximum level of constitutive production of defense, $\\gamma$) or initial variable values (e.g. the initial level of damage, $z_{0}$) impact WHD and eventually determine the survival of the host.\n\nBy presenting a few chosen simulations, we first demonstrate that our model can reproduce situations where the host succeeds in controlling the infection (Figure 3A\u2013C), either by clearing pathogens ($\\gamma=5$) or by maintaining pathogen load, and therefore damage, at a tolerable level ($\\gamma=1.8$). In the latter case, we can consider that the population of pathogens eventually reaches a Set Point Pathogen Load (SPPL, as defined in Figure 1) and will stay there for the whole host\u2019s life.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/104052/elife-104052-fig3-v2.jpg)\n\n**Figure 3.:** Each column corresponds to one of the three variables of the model ($x$, pathogen load; $y$, defense; $z$, damage). In all cases, the initial pathogen load ($x_{0}$) is 10\u22126 and, unless otherwise specified, $y_{0}$ and $z_{0}$ are set at their homeostatic state $y~_{h}$ and $z~_{h}$ (indicated by horizontal dashed line). Red letters in circles indicate the outcome of the infection: C, clearance; L, low pathogen load; H, high pathogen load. Dots correspond to results of stochastic simulations where the initial pathogen load is randomly drawn from a log-normal distribution with an average in $log\u2061(x_{0})$ set to $log\u2061(10^{\u22126})$ and variance 0.15, and then the deterministic equations of the model are solved numerically. (A-C) illustrate cases where the immune defense eventually controls the infection, either by clearing pathogens (gray curves, $\\gamma=5$) or by making it chronic (green curves, $\\gamma=1.8$). With $\\gamma=5$, the constitutive expression of defense is strong and hence the level of defense before infection ($y~_{h}$) is very high. This level slightly increases upon infection (which leads to a corresponding increase in damage, as defense induce damage when $\u03b7>0$) and returns to the homeostatic state once pathogens have been cleared. With $\\gamma=1.8$ (green curve), the initial level of defense is much lower and the infection stabilizes at the Set Point Pathogen Load (SPPL, see Figure 1). Defense and damage both peak following infection and, because pathogen are not cleared, they eventually stabilize at a level above the homeostatic state. (D-F) illustrates cases where the immune response does not suffice to control the infection (green curves, $\\gamma=1.8$, red curves, $\\gamma=0.5$). In both cases, the peak in defense production induced by infection is not sufficient to stop pathogen proliferation. This, combined to the side effects of defense, provokes a sharp increase in damage. The accumulation of damage hinders defense production (because $\u03c8>0$ and $l>0$) which in turn makes the level of defense rapidly decrease. The infection is then out of control and eventually kills the host, when the accumulated damage $z$ exceeds the level the host can sustain ($z>z_{d}$). Note that the two hosts die at very similar Pathogen Load Upon Death (PLUD, see Figure 1) although at very different times. Note also that bacteria continue proliferating after host death, so that the PLUD is below the carrying capacity at the time of death (which is fixed to one) and likely much below the load that could be reached in a cadaver. When $\\gamma=1.8$ (green curve), the immune response is strong enough to curb pathogen proliferation. This maintains the population of pathogens at a SPPL, which differs from that of the green curve in figures A-C because it is transient. These two green curves have been obtained with identical parameters; they only differ in the initial level of damage $z_{0}$ (which,in D-F, is increased by 0.3% of $z_{d}$). Their differences, therefore, demonstrate that the model can be bistable: with fixed parameters, the outcome of an infection might depend on initial conditions. These simulations can be reproduced using a dedicated R Shiny web application (Chang et al., 2021), where parameter values can be changed to explore their impact on the dynamics (see https://plafont.shinyapps.io/WHD_app/, DOI: 10.5281/zenodo.13309653).\n\nIn the three simulations of Figure 3A\u2013C, the level of defense was initially set at its homeostatic state, the immune state of a healthy host which is characterized by $y=y~_{h}$ and $z=z~_{h}$. Upon infection, defense increased and either returned to its initial level, when the infection is cleared, or stabilized to an intermediate level due to the remaining controlled pathogen population (Figure 3B, $\\gamma=1.8$).\n\nExternal challenges are expected to disrupt host homeostatic state prior to infection, which can lead to contrasted consequences. A host may be, for example, infected through a wound. This wound may cause damage which in turn could either trigger the immune system (Asri et al., 2019; Kenmoku et al., 2017), and potentially help the host to fight the infection, or hampers the expression of immune defense, and facilitates the infection (Stoecklein et al., 2012). We reproduced the later situation by setting $z_{0}$ above the homeostatic level of damage $z~_{h}$. In our model, this means that defenses are initially hampered by the effects of damage, causing the immune response to occur with a delay (Figure 3B, gray curve with $\\gamma=5$ and $z_{0}=z~_{h}+10%z_{d}$). This finding has been illustrated in Chambers et al., 2014, where the addition of sterile injury to Drosophila melanogaster prior to infection increased mortality to Providencia rettgeri compared to infections without wounding. This increase in mortality is suggested to be due to a decrease in resistance. In Figure 3B, the wound allowed pathogens to proliferate during early infection, but the host nevertheless managed to clear the infection. We demonstrated (see Appendix 1) that this is because the strong constitutive production of defense ($\\gamma=5$) in this simulation guaranties a high homeostatic level of defense. More generally, we proved that clearance is possible if and only if $\\gamma\\geq\\gamma_{c}$, with\n\n$$\n\\gamma_{c}=\\frac{\\phi/\\delta}{G(1/\\delta,\u03b7/(\u03be\\delta))}.\n$$\n\nInfection resolution is thus possible only when a sufficient level of immune effectors is present before the infection starts. In our simulations, this level $y~_{h}$ is set by the constitutive expression of defense $\\gamma$, and characterizes the homeostatic state. As Equation 4 demonstrates, the level of constitutive expression required to cure the infection decreases when defenses are more efficient ($\\delta$ increases) or persist longer ($\\phi$ decreases), and increases with down-regulation of defense production.\n\nThe wound did not change the outcome of infection in hosts with strong constitutive immunity (gray curves in Figure 3A). It did in hosts with $\\gamma=1.8$, which survived infection when not wounded (green curve in Figure 3A) but died from it when wounded prior to infection ($z_{0}=z~_{h}+0.3%z_{d}$ in the green curves of Figure 3D). The initial immune handicap caused by the wound indeed facilitated infection, so that pathogen load reaches extreme values which eventually killed the host. Environmental challenges other than wounds might have a direct negative impact on defense production, which we could reproduce in our model by setting $y_{0}$ below $y~_{h}$. This type of challenge could also facilitate infections by opportunistic microorganisms, with trajectories similar to the green curve of Figure 3D\u2013F. As expected, hosts with weak constitutive defense can die from infection even when not wounded ($\\gamma=0.5$, red curves Figure 3D\u2013F). In the two lethal infections presented in Figure 3D\u2013F, the defense collapsed as damage rapidly amassed during the final phase of the disease (see Figure 3E), because $\u03c8>0$ makes damage hinder defense production. In both cases, damage eventually exceeded the maximum level the host can sustain ($z_{d}$), and the host died from the infection (see Figure 3F).\n\nAlthough identical in their final outcome, the two simulations of Figure 3D\u2013F differ in the times the infection took to kill the host. When constitutive immunity is weak (red curve, $\\gamma=0.5$), pathogens reached high loads before defense managed to slow down their proliferation. The hosts, therefore, succumbed rapidly. When constitutive immunity is stronger but the host is wounded (green curve, $\\gamma=1.8$), the host went through a phase where pathogen proliferation was under temporary control, and infection transiently stabilized at a SPPL. This SPPL differs fundamentally from that of Figure 3A\u2013C, because slowly accumulating damage ended up bringing defense below the level which permits efficient control of pathogen proliferation. This SPPL was, therefore, transient, while that of Figure 3A\u2013C was stable.\n\n### Bistability can make the SPPL transient\n\nThe host depicted by the green curves of Figure 3A\u2013C suffered from a chronic but benign infection; that of the green curves of Figure 3D\u2013F died from a severe infection. Still these two hosts and their respective pathogens can be considered as genetically identical, as the two simulations were run with the very same parameter values. The only difference between them was that the host in Figure 3D\u2013F had been wounded before being infected. This result demonstrates that our model can be bistable: for a fixed set of parameters, the outcome of an infection can depend on initial conditions.\n\nWe were not able to determine sufficient conditions which would guarantee bistability, but we demonstrated that bistability will occur if $F$ decreases for high pathogen loads (i.e. if $u<v$ and $x$ is large) or if $G$ decreases with damage (i.e. if $\u03c8>0$, see Appendix 1). We further demonstrated that this conclusion would hold if the damage repair mechanisms were regulated (see Appendix 1 for a complete analysis of bistability in modified versions of our model). The first condition for bistability, where $F$ decreases when $x$ gets large, implies that pathogens have a direct negative effect on defense production, as Ellner et al., 2021 assumed in their model. The second condition, where $\u03c8$ is non null, means that damage hinders the production of defense. We, therefore, propose that empirical evidence of bistability, such as in Figure 1, indicate that the infection lowers the immune defense either directly, as in Ellner et al., 2021, or indirectly, through resource diversion, as in van Leeuwen et al., 2019, or damage accumulation, as in our model.\n\nThe negative impact of infection on defense production is a necessary condition for bistability, but it is not sufficient on its own. Additional, more specific conditions are required, which cannot be mathematically determined. In the following, we focused on two parameters which describes the constitutive and the inducible parts of defense production (namely \u03b3, the maximum constitutive defense production and \u03b1, the activation of defense production). In Figure 4A, where the two parameters were varied, two lines delimit a region within which the infection dynamics is bistable. When \u03b3 is fixed to 2 and only \u03b1 is varied (which corresponds to the vertical dotted line in Figure 4A) the equilibrium load $x~$ is very high for low values of \u03b1 and drops to low values when \u03b1 is high (Figure 4B). For intermediate values of \u03b1, the system is bistable: both high load and low load equilibria are possible. The same sort of pattern occurs when \u03b1 is fixed to 10 and \u03b3 only is varied (the horizontal dotted line in Figure 4A): the equilibrium load is high when \u03b3 is low, the infection is always cleared when $\\gamma$ is high, and the system becomes bistable when \u03b3 has intermediate values. Inside this bistable region, the high load infection is always possible; the second possible equilibrium is either low load infection, when $\\gamma<\\gamma_{c}$, or clearance otherwise (Figure 4B).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/104052/elife-104052-fig4-v2.jpg)\n\n**Figure 4.:** (A) The types of stable equilibria when maximum rate of constitutive defense production (\u03b3) and defense activation rate (\u03b1) vary. Parameters are as in Figure 2 and both \u03b1 and \u03b3 are varied. The vertical dashed line indicates the value of $\\gamma_{c}$ above which clearance is stable. Red labels indicate which equilibria are stable: H, high load equilibrium, L, low load equilibrium and C, clearance (the distinction between H and L equilibrium is exemplified in figures B and C). The two oblique solid lines delimit a parameter region for which the system is bistable (H/L or H/C). The color indicates which equilibrium the infection actually reaches when the initial load is $x_{0}=10^{\u22126}$ and when $y_{0}$ and $z_{0}$ are set to the homeostatic state. (B) The equilibrium load $x~$ as a function of \u03b1 when parameters are as in A but \u03b3 is fixed to 2 (which corresponds to the vertical dotted line in A). Solid lines indicate stable equilibria while dashed lines are unstable ones. The distinction between high load and low-load equilibria is appropriate here because equilibria with intermediate loads are not stable. (C) The equilibrium load $x~$ as a function of \u03b3 with parameters as in A except \u03b1 fixed to 10 (which corresponds to the horizontal dotted line in A). In the bistable region, the high load equilibrium is always possible; the second possible equilibrium is either low load, when \u03b3 is below $\\gamma_{c}$, or clearance otherwise. (D) Parameters as in A except $\u03c8=0.5$, which reduces the negative impact of damage on defense production. (E) Parameters as in A except $u=0.75$, which lowers defense production at low pathogen load.\n\nIn bistable situations, the equilibrium load is either high or low, with no possible intermediate situation. This happens because in such systems the two possible stable equilibria are separated by a third, unstable, one that the system cannot reach (the dashed curves in Figure 4B and C). Which stable equilibrium will be reached then depends on initial conditions. This is represented by the colored areas of Figure 4A, with the inoculum $x_{0}$ fixed to 10\u22126 and $y_{0}$ and $z_{0}$ set to the homeostatic state. When only the high load equilibrium is possible, the host always dies from the infection because the equilibrium level of damage $z~$ exceeds $z_{d}$. When only the low load equilibrium is possible, the host survives, and the infection becomes chronic. In the bistable area, the infection also becomes chronic when clearance is not possible ($\\gamma<\\gamma_{c}$), with load stabilizing at a SPPL. But two situations must be distinguished here: first, when the immunity is strong enough to control pathogen\u2019s proliferation (the green area in 4 A), the infection reaches the low load equilibrium. The host will then survive the infection and load will stabilize at the SPPL for its whole life. Second, when the host immunity is weaker (the yellow area in Figure 4A) defense controls proliferation but for a limited period of time, as in the green curve of Figure 3D. The SPPL is then transient: the infection will eventually break loose, as accumulating damage causes the collapse of defense, ultimately killing the host.\n\nDemonstrating experimentally that a SPPL is transient might prove difficult, first because it is not always feasible to monitor pathogen load until the host dies and, second, because even if it was, it may still be challenging to demonstrate that the death of an individual host was actually caused by the infection. Our model offers a solution to this problem. Mathematically, a transient SPPL indeed occurs when the three variables progress slowly, because they have approached an equilibrium point, where all derivatives $dx/dt$, $dy/dt$ and $dz/dt$ are close to zero. However, this equilibrium must be unstable, as the trajectories eventually moves away from it and head towards a high load infection. This indicates, first, that the SPPL cannot be transient unless an unstable equilibrium point exists with $x~>0$, which in turn requires that the system is bistable (this unstable equilibrium corresponds to the dashed curves in Figure 4B and C). Second, it also proves that a transient SPPL is not a true equilibrium situation. It is in fact close to the notion of a quasi-static state in thermodynamics. Therefore, the transient SPPL should vary with initial conditions. We have shown that the SPPL does indeed increase with the initial dose $x_{0}$ when it is transient, while it is independent from initial conditions when stable (see Figure 5). These results are in line with empirical results, as the SPPL depends on initial inoculum when Drosophila are infected by pathogenic bacteria (Chambers et al., 2019; Duneau et al., 2017a; Acu\u00f1a Hidalgo et al., 2021), but not when infected by non-pathogenic bacteria such as E. coli (Ramirez-Corona et al., 2021). We, therefore, propose that testing the link between the SPPL and the initial dose is a way to experimentally demonstrate that the control over infection is transient.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/104052/elife-104052-fig5-v2.jpg)\n\n**Figure 5.:** The three quantities are represented here as functions of the inoculated dose. The black curves have been computed with parameters as in Figure 2, while the red curves correspond to a decrease in resistance (5% decrease in defense efficiency $\\delta$) and the blue to a decrease in tolerance (5% decrease in damage repair efficiency $\u03be$). For each parameter set, $y_{0}$ was set at its homeostatic state and $z_{0}$ was either at the homeostatic state or increased by 1% of $z_{d}$ (indicated by boxes in the figures). (A) The Lethal Time (LT) decreases with inoculated dose and with $z_{0}$. Decrease in resistance or in tolerance both reduces the time it takes for the pathogen to kill the host. Note that a decrease in tolerance (blue curves compared to black curves) only shifts the relationship between LT and dose, without altering its slope. (B) The stable SPPL (dashed lines) is by definition independent from initial conditions. The transient SPPL (solid lines) conversely increases with both $x_{0}$ and $z_{0}$. Decreased resistance and decreased tolerance both increase the SPPL. Variations in transient SPPL mirror that of LT, which indicates that the SPPL is a good predictor of the host lifespan. (C) The PLUD is almost independent from the initial dose and slightly increases with $z_{0}$. It increases with lowered resistance (low $\\delta$, red curves) but decreases when tolerance is lowered (low $\u03be$, blue curves).\n\nBistability, as we have already discussed, is possible in our model when accumulating damage negatively impacts defense production. As expected, reducing this impact by lowering the value of $\u03c8$ reduces the range of parameters which permits bistability. With $\u03c8=2$ in Figure 4A, 94% of the parameter area where the high load equilibrium is possible is bistable; in Figure 4D, where $\u03c8$ is reduced to 0.5, only 82% of this same area is bistable. Finally, the distinction between high and low load equilibria, although convenient, is not always possible. In Figure 4E, with $u=0.75$, the bistable area forms a closed triangular shape. In this case, when low constitutive defense production (i.e. low \u03b3) does not allow for bistability, a continuum exists between high-load equilibria (low values of \u03b1) and low-load equilibria (high values of $\\alpha$), without a bistable region in between.\n\n### Load and mortality measurements should reflect both tolerance and resistance to infection\n\nThe SPPL and the PLUD can both be estimated from experimental infections, as earlier work by Duneau et al., 2017a has shown. They have been proposed to reflect different aspects of the host immune response: the SPPL, stable or transient, being a pathogen load stabilized by the host immunity, may be taken as a proxy for resistance; the PLUD, being the maximum pathogen load the host can endure, may rather quantify the host\u2019s tolerance to infection. Measurements of host survival to infection are also commonly used as proxies of resistance or tolerance (e.g. Gupta and Vale, 2017; Louie et al., 2016). Here, we have used our model to question the way these quantities are used as surrogate measurements for tolerance or resistance. For this purpose, we computed them from simulated infections and surveyed how they relate to immunity parameters (see Appendix 3,4 and 5 for a complete analysis).\n\nAs expected, the time it takes for a pathogen to kill its host decreases if inoculum size is increased (Figure 5A) or if the host is wounded prior to infection (i.e. when $z_{0}$ is increased by 1% of $z_{d}$ above the homeostatic state). Lethal Time (LT) thus strongly depends on the conditions in which the infection has been initiated. Our simulations further show that any genetic change in the host or the pathogen that would reduce the host resistance (red curves in Figure 5A) or tolerance (blue curves in Figure 5A) would accelerate death. We also showed that contrary to what some authors have proposed (e.g. Gupta and Vale, 2017; Louie et al., 2016), a reduction in tolerance does not necessarily modify how LT relates to dose; a reduction in resistance, conversely, makes LT less dependent on dose (compare red and blue curves in Figure 5A, see Appendix 5 for a complete analysis on this point). Hence, the comparison of lethal time in response to different doses is more likely to characterize differences in resistance than in disease tolerance.\n\nThe SPPL, when it is stable, does not depend on initial conditions (dashed lines in Figure 5B). This is because a stable SPPL is an equilibrium towards which the infection will converge, no matter where it starts from, as long as the host survives the infection. The transient SPPL, conversely, is not an equilibrium. We showed that it does increase with dose and is higher when the host is wounded prior to infection. Our simulations finally indicate that both transient and stable SPPL increase when either tolerance or resistance are impeded (see Appendix 1 and 3 for a complete analysis). In fact, if by definition stable SPPL does not correlate with the time the host will die, variations in the transient SPPL almost exactly mirrors that of the LT. This is because the control of proliferation does not last long when the transient SPPL is high: infections which maintain high pathogen loads rapidly progress towards host death. A first practical consequence of this observation is that measurements of the SPPL and of the LT bear the same information on the host immunity. Therefore, it is useless to measure both, unless one wants to predict transmission rate, which should quantitatively depend on both bacterial load and infection duration. A second practical consequence is that the SPPL, when transient, can be used as a predictor of the infected host\u2019s lifespan, as already demonstrated in HIV infections (Fraser et al., 2007; Mellors et al., 1996).\n\nThe two hosts of Figure 3D\u2013F die at very different times but at almost indistinguishable PLUD. This is confirmed by Figure 5A, where the PLUD does not vary with changes in inoculum size that do otherwise yield threefold variations in LT (compare Figure 5C to Figure 5A). More generally, the PLUD is only weakly influenced by the conditions in which the infection has been initiated, albeit we predict that it should slightly increase when the host is wounded. Our model, therefore, reproduces an important property of the PLUD which Duneau et al., 2017a have documented (see Figure 1): for a given pair of host and bacterial pathogens, the PLUD in D. melanogaster is almost constant and does not correlate with the time to succumb from the infection. In our model, this comes from the fact that the pathogen load $x$ evolves much faster than other variables at the start of the infection (as detailed in Appendix 4). Pathogens thus rapidly reach the highest possible load allowed by the current amount of defense ($x_{t}\u22721\u2212\\deltay_{t}$). The dynamics of $x$ is then \u2018enslaved\u2019 by that of $y$ and $z$ (Van Kampen, 1985) and, as the disease enters its final stage, the load increases slowly while $y$ gradually diminishes under the effect of accumulating damage. Because of this very particular dynamics, the way $x_{t}$ relates to $z_{t}$ will be very similar for all infections that enter their final phase, which in the end renders the PLUD almost independent from the conditions that prevailed at the onset of the infection.\n\nAnother particularity of the PLUD, is that it increases when resistance is diminished (red curves in Figure 5C) but decreases when tolerance is lowered (blue curves in Figure 5C). The PLUD is, therefore, a composite measurement which reacts to both resistance and tolerance traits, just like the SPPL and the LT, but has the unique feature that it responds differently to these two types of variation (see Appendix 4 and the following section for a more complete elasticity analysis).\n\n### Combining PLUD and hazard ratio (HR) to characterize the host\u2019s ability to handle infections\n\nWe have seen before that variations in resistance and variations in disease tolerance have distinctive impacts on the PLUD. Still, a host lineage with higher than average PLUD could either be less resistant or more tolerant than other lineages. The PLUD is, therefore, difficult to interpret by itself, but we shall demonstrate that its relationship with mortality measurements are informative. To investigate this, we performed elasticity analyses of the PLUD and the Hazard Ratio, a measure of death risk relative to a chosen reference host (HR, see Appendix 6 for definitions and analyses). As our model allows to determine the time to death of a given infection, the HR can be obtained from a Cox proportional hazard model (Cox, 1972) adjusted on simulated survival curves.\n\nAs expected, we found that reducing the risk to die from the infection can be achieved through a tighter control of pathogen proliferation or, alternatively, by mitigating the damage the infection causes (Figure 6A and B). For example, HR decreases both when the defense is made more efficient ($\\delta$ increases) and when damage repairing is accelerated ($\u03be$ increases).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/104052/elife-104052-fig6-v2.jpg)\n\n**Figure 6.:** In (A and B), parameters are initially fixed as in Figure 2 except for $\\gamma=0.5$, as in red curve if Figure 3. Parameters are then varied one at a time, from \u20135 to +5%. For each modified parameter value, the PLUD was computed and 100 survival simulations were run with $x_{0}$ randomly drawn from a log-normal distribution with average 10\u22126 and variance 0.5. A Cox proportional hazard model was then fitted on simulated data so that log Hazard Ratio (log HR) could be related to parameter variation. The horizontal dashed lines would correspond to parameters which have no influence on PLUD; the vertical dashed line would correspond to those which do not impact HR. (A) The effect of tolerance parameters (defined as in Figure 2A). Arrows indicate that, as expected, any increase in the damage induced by the pathogen ($\\omega$) decrease the PLUD, while increasing damage repair ($\u03be$) or tolerance to damage ($z_{d}$) has the opposite effects. For the parameter set we have used here, increasing $\u03b7$ has almost no effect on PLUD and only slightly increases HR. (B) The effects of resistance parameter (defined as in Figure 2A). Variation in any of these parameters produces a positive correlation between PLUD and HR. (C) The variation in PLUD and HR when all parameters are all randomly drawn from independent Gaussian laws. The red cross corresponds to a strain with parameters as in Figure 2 and each dot is a \u2018mutant strain\u2019 which parameters have 95% chances to deviate by less than 0.5% from that of the \u2018wild-type strain.\u2019 Open circles are mutants which either log PLUD ratio or log HR ratio do not significantly deviate from zero (see text for details). We sorted mutants in four groups, according to whether their PLUD and HR has significantly increased or decreased compared to the wild strain. The distributions of traits are indicated for each group on colored circles, with segments spanning 75% of the deviation range and the central dot corresponding to the median deviation. Segments in red indicate that 75% of the mutants have either lower trait values than the wild-type strain (when the segment is inside the circle) or higher trait values (when outside).\n\nVariations in PLUD are more complex, but Figure 6A suggests that reducing damage (e.g. by increasing damage repair, $\u03be$) or making the host more damage-tolerant (by increasing the maximum damage level the host can sustain, $z_{d}$) should increase the PLUD. As a result, variations in parameters which have a direct impact on the dynamics of damage produce a negative correlation between PLUD and HR. Figure 6B further suggests that anything that reduces pathogen proliferation, like increasing the production or efficacy of defense (\u03b1 or $\\delta$), comes with a decreased PLUD. Variations in parameters that control the defense, therefore, result in a positive correlation between the PLUD and HR. In summary, Figure 6 indicates that faster death (i.e. increased HR) would indicate lower tolerance when associated with lower PLUD, when it would rather suggest lower resistance in case of higher PLUD.\n\nThe case of $\u03b7$, which quantifies the importance of defense side effects, demonstrates that although appealing, this method has its limits. This parameter clearly relates to damage production and we demonstrate that the lower bound of the PLUD expectedly decreases when $\u03b7$ increases (see Equation (S4-1) in Appendix 4). But when immunity is weak, this effect can reverse, with increasing $\u03b7$ impairing control and resulting in higher PLUD (as we demonstrate in our elasticity analysis, see Appendix 4\u2014figure 2 when both \u03b1 and \u03b3 are low). In hosts with very weak immunity, therefore, variations in the detrimental side-effects of defense ($\u03b7$) can create a positive correlation between PLUD and HR (as in Figure 6A). In addition, Figure 6A shows that different forms of variation in tolerance (e.g. variations in pathogenicity $\\omega$, in damage repair $\u03be$ or in $z_{d}$ the maximum level of damage the host can sustain) will produce the same signal. Figure 6B demonstrates a similar situation for variations in resistance. Therefore, experimental measurements of PLUD and HR can be used to distinguish variations in tolerance from variations in resistance, broadly speaking, but will likely fail to identify the precise mechanisms involved.\n\nThe practical use of the above proposed method will largely depend on which specific parameters differ the most among the hosts and pathogens to compare. We cannot predict much on this matter, as everything will obviously depend on the genetic variation of these traits. A crude way to test the utility of the method, though, is to let all parameters vary and see which effect predominates. In Figure 6C, we randomly drew all 14 parameters from independent Gaussian laws with average set at the parameter values given in Figure 2, and a variance chosen so that 95% of the random values differ by less than 0.5% from this average. If we consider that the parameter set given in Figure 2 represents a wild-type host, each random parameter set can be considered as being a mutant strain. We randomly sampled 2000 such mutants. We then simulated 100 survival curves for each of them, which we compared to that of the wild type by using a Cox proportional hazard model to estimate HR. We used the same simulations to compare the PLUD of the mutants to that of the wild-type, as if load was estimated by plating. For that purpose, we randomly drew numbers of Colony Forming Units (CFU) from Poisson distributions with average given by the predicted WHD, which we then compared between the mutant and the wild-type hosts using a Poisson glm. We have drawn one number of CFU per host from a Poisson distribution with average 1000 times the simulated PLUD, so that we have similar statistical powers when comparing PLUDs and HRs. In Figure 6C, the red cross lying on the origin is the wild-type; mutants which significantly deviate from it (closed circle) are separated in four groups, according to the deviation signs. For each group, we compared the distribution of mutant traits to that of the wild-type. We found that mutants with significantly higher HR and PLUD have almost systematically a stronger down-regulation of defense production (with clearly higher value of $l$) and a slightly lower efficiency of defense ($\\delta$). Hence, such mutants die faster than the wild-type because they are less resistant. Mutants with higher HR but lower PLUD have most often a lower tolerance to damage (lower $z_{d}$) and are more susceptible to the pathogen virulence (greater $\\omega$). These mutants, therefore, die faster than the wild-type strain because they are less disease tolerant.\n\n### Wounding Drosophila melanogaster increases the PLUD\n\nOur model predicts that when damage hinders defense production, hosts that are wounded prior to infection should have higher PLUD (see Figure 5C). We tested this prediction by measuring the PLUD of the bacterial pathogen Providencia rettgeri injected in D. melanogaster that were either injured in the thorax before being injected in the abdomen or not injured (see Figure 7 and Appendix 7 for methodological details). Wound could in principle increase defense, e.g. as hemocyte innate immune training triggered by DAMPs (Chakrabarti and Visweswariah, 2020), but hemocytes have no detectable effects on infections caused by Providencia rettgeri (Duneau et al., 2017a). Therefore, we do not anticipate any positive impacts of the wound. Instead, we expect that the wound decreases resistance, as indicated by Chambers et al., 2014. We found that indeed, the wound significantly reduced survival (Cox proportional hazard model with random experimental blocks: X2 = 1397.44, degrees of freedom (df) = 1, p - value < 2.2e-16). PLUD estimates were found to be highly variable, with some individuals dying at load less than 104. These individuals may have died from reasons other than the P. rettgeri infection; we, therefore, conducted two analyses, with these individuals either included or removed (outliers being identified by a Rosner test, see Appendix 7 for details). We found in both analyses that wounded hosts die at a PLUD significantly higher than non-wounded (linear mixed model with random experimental blocks: X2 = 11.29, df = 1, p - value = 0.008 with outliers removed; X2 = 11.04, df = 1, p - value = 0.0009 with outliers retained) with no significant difference among genotypes (p - value = 0.73 and p - value = 0.59) with outliers removed or not removed, respectively although the effect is much clearer on line RAL-630 than in the three other lines (see Figure 7). Overall the wound does increase both hazard ratio and PLUD, as our model predicts. This result can be taken as an evidence that inflicting damage to D. melanogaster hinders the production of defense, and thus indirectly reduces resistance.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/104052/elife-104052-fig7-v2.jpg)\n\n**Figure 7.:** We performed the experiment on four genotypes sampled from the Drosophila Genetic Reference Panel (lines RAL-818, RAL-630, RAL-584 and RAL-559, which have no known difference in immunity effectors). (A) Proportion of surviving flies as a function of hours post injection. Numbers in legend indicate sample sizes for no wound/wound treatments, respectively. In all lines, the wound significantly and sharply reduces survival. (B) PLUD for each D. melanogaster line. Each point represents an individual fly and the bars represent the means. Crosses are PLUD estimates which have been categorized as outliers by a Rosner test. (C) Log PLUD ratio as a function of log Hazard Ratio. For each line, we computed the log-ratio of PLUD in wounded flies to that in non-wounded (with outliers excluded). The value of zero, therefore, corresponds to a non-wounded reference, as for log-HR. Bars represents the 95% CI obtained by bootstrap. The wound consistently increases both the HR and the PLUD, as our model predicts.\n\n### Suppressing Drosophila melanogaster\u2019s active effectors increases the PLUD\n\nOur model also predicts that mutations that decrease resistance should in most cases increase the PLUD. This seems in contradiction with Duneau et al., 2017a who did not find any effect of immunosuppression on the PLUD in P. rettgeri infections. The original analysis in this paper used a linear mixed model where the effects of Imd, Melanization and Toll pathways were assessed together. We reanalized the dataset and examined each pathway separately. We observed that the PLUD exhibited an increase when the Imd pathway was suppressed (Kruskal-Wallis: X2 = 7.87, df = 1, p-value = 0.005) or when melanization was inhibited (Kruskal-Wallis: X2 = 15.56, df = 1, p-value = 7.9e-5). However, there was no significant change in PLUD when the Toll pathway was suppressed (Kruskal-Wallis: X2 = 0.03, df = 1, p-value = 0.86).\n\nA limitation of the previous study is that the wildtypes used were not ideal genetic controls, given that the mutants did not undergo backcrossing. In order to strengthen the test of our theoretical prediction, we quantified the PLUD in D. melanogaster mutants with some immune effectors (AMPs) either deleted or silenced, and compared it to PLUD measured in appropriate controls (see Appendix 7).\n\nIn a first experiment, we used two isogenic lines sharing the same genetic background but from which genetic deletions have induced a loss-of-function either in Defensin (line A) or in Drosocin, Attacins, and both Diptericins (line B). We also used a third mutant line (line AB) which combines the loss-of-function of both lines A and B. Line A lacks Defensin, an antimicrobial peptide strongly upregulated upon P. rettgeri infection (Duneau et al., 2017b; Troha et al., 2018) but with moderate effects on survival (Hanson et al., 2019). Lines B and AB, which both lack Diptericins, are conversely expected to be highly susceptible to P. rettgeri (Hanson et al., 2019; Unckless et al., 2016). We have used as a control a fourth mutant line which lacks Bomanins (line Bom\u039455C). Bom\u039455C is a good reference as it is mutated in the same background than the other genotypes, but the AMPs it lacks are mostly involved into fighting Gram-positive bacterial infections (Clemmons et al., 2015). In addition, previous experiments have shown that Bom\u039455C mutants have a PLUD comparable to controls when infected with the gram positive bacteria Enterococcus faecalis (Lin et al., 2020).\n\nWe found that, compared to line Bom\u039455C, lines A, B, and AB have higher death rates when infected by P. rettgeri (Figure 8A; Cox proportional hazard model with random experimental blocks: X2 = 138.12, df = 3, p-value = 9.6e-30) and higher PLUD (Figure 8B; linear mixed model with random experimental blocks: X2 = 17.01, df = 3 , p-value = 0.0007). We challenged this first result by comparing another mutant that, contrary to line B, lacks only Diptericins (DptSK1) (Hanson et al., 2019). We compared this mutant to DrsR1, a mutant which shares the same genetic background (Hanson et al., 2019) but has Drosomycin deleted, Drosomycin being an antifungi AMP that is inactive against bacteria (Fehlbaum et al., 1994). We found again that death is faster and PLUD higher when Diptericins are deleted (Figure 8D\u2013F; linear mixed model with random experimental blocks: X2 = 10.11, df = 1, p-value = 0.001). But if Bom\u039455C and Drosomycin are clearly less important for resistance against P. rettgeri than Diptericin, studies start to suggest that they may play a role in tolerance to fungi toxin or are involved in other functions which could influence tolerance (Araki et al., 2019; Xu et al., 2023). Therefore, we also challenged our hypothesis by injecting P. rettgeri in flies that constitutively express, thanks to an ubiquitous driver (Actin5C-Gal4), a RNAi which silences specifically Diptericin A. This time we used as control line the advised match genetic background for the attP40 genetic background of the TRiP genetic RNAi panel. We found that flies with silenced Diptericin A die faster and at a higher PLUD than controls (Figure 8G\u2013I; linear mixed model with random experimental blocks: X2 = 8.42, df = 1, p-value = 0.0037). Overall, based on previous results and on those three different approaches, we concluded that a reduction in resistance caused by a lack of effectors provokes an increase in both HR and PLUD. Finally, it should be noticed that, as our model predicts, the increase in PLUD is remarkably constant throughout experiments (approx. +0.2 in Figure 8C, F and I) even though the HR varies from approx. +0.3 to +1.5.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/104052/elife-104052-fig8-v2.jpg)\n\n**Figure 8.:** (A, D, and G) give the proportion of surviving flies as a function of hours post-injection. (B, E, and H) present per fly estimations of PLUD. Black lines represent the means, different symbols correspond to distinct replicate experiments, and small letters above graph indicate significant differences, as tested by a pairwise Wilcoxon test. (C, F, and I) present per line estimations of log PLUD ratios, as a function of estimations of log HR. Ratios are here computed relative to the control line and bars represents the 95% CI as obtained by bootstrap. In (A-C), three lines which lack effectors active against P. rettgeri (A Defensin deleted, B all Diptericins deleted and AB both Defensin and Diptericins deleted) are compared to Bom\u039455C. Bom\u039455C lacks Bomanins, immune effectors which are inactive against P. rettgeri, and is thus used here as a control. All three lines die significantly faster than Bom\u039455C and have a significantly higher PLUD (B and C). In panels (D-F), following a similar logic, we compared DptASK1, which has Diptericin A deleted, to DrsR1, which has Drosomycin deleted. Diptericin A has been shown to be the most active AMP against P. rettgeri while Drosomycin is active mostly against gram positive bacteria and fungi. (D) demonstrates that deleting Diptericin A is sufficient to make the mutant more susceptible to the infection than Drs mutant. (E and F) demonstrate that this increase in susceptibility goes together with an increase in PLUD. In (G-I) we used RNAi to silence Diptericin A. The control is the match genetic background recommended for the TRiP RNAi panel. Silencing Diptericin A accelerates death (G) and significantly increases the PLUD (H-I).\n\n### Suppressing catalase expression in Drosophila melanogaster decreases the PLUD\n\nNo gene is unambiguously identified as involved in disease tolerance in D. melanogaster, probably in part because damage are uneasy to quantify experimentally. CrebA and Bombardier are candidate genes (Troha et al., 2018; Lin et al., 2020), but they have been determined as such using the PLUD as a tolerance proxy, which would make our reasoning circular. Other genes have been proposed, but their roles were mostly identified using approaches that our model suggests are limited for establishing a proxy of disease tolerance (Figure 5A, see Appendix 5). We thus decided to test our method on a gene which function is well understood and should contribute to disease tolerance.\n\nReactive oxygen species (ROS) have been shown to be critical agents in oxygen toxicity, disrupting the structural and functional integrity of cells. Catalase is among several enzymes involved in scavenging oxygen free radicals and protecting those cells. The activity of Catalases into reducing reactive oxygen species has been shown in Drosophila infections (Ha et al., 2005) and mosquito systemic infections (DeJong et al., 2007), making it a strong candidate for a tolerance gene.\n\nWe found that silencing Catalase ubiquitously with Actin-Gal4 driving an RNAi does increase flies susceptibility to systemic bacterial infection when comparing to a match genetic background as control (i.e. attP2 control line, the advised RNAi control for the attP2 genetic background of the TRiP genetic RNAi panel, see Figure 9A). The log(HR) is comparable in strength to that of silencing Diptericin A. We further observed that silencing Catalase does decrease the PLUD (see Figure 9B; linear mixed model with random experimental blocks and a correction for heteroscedasticity: X2 = 23.33, df = 1, p-value = 1.37e-6). Again, although the level of PLUD was different, likely due to the difference in genetic background, the relative difference (i.e. log(PLUD ratio)) was comparable in strength to that of silencing Diptericin A, but of opposite sign. Therefore, based on its known functions and the fact that our experimental results follow the predictions of our theoretical model, we propose that Catalase is part of the arsenal that enable a fly to tolerate bacterial infections.\n\n![Figure 9.](https://cdn.elifesciences.org/articles/104052/elife-104052-fig9-v2.jpg)\n\n**Figure 9.:** As in Figure 8G\u2013I, the control is the match genetic background recommended for the TRiP RNAi panel. Silencing Catalase accelerates death (panel A) and significantly decreases the PLUD (panels B-C).\n\n## Discussion\n\nSigns and symptoms of infectious diseases vary widely: severe diseases can cause rapid and certain death if untreated, while benign diseases may go almost unnoticed. Pathogen load is the proximal cause distinguishing severe infections from benign ones. However, the factors determining pathogen load itself are complex, as pathogen proliferation is influenced not only by environmental conditions but also by the interacting genetically fixed characteristics of both the host and the pathogen. This is often simplified by categorizing host and pathogen traits into two types: those that determine resistance to infection (how effectively the immune system controls pathogen proliferation) and those that allow tolerance to the damage inflicted by the infection. To explore these concepts of resistance and tolerance, we have developed a process-based model of Within Host Dynamics (WHD) of pathogens. Our approach involves studying how the proxies used in the literature to quantify resistance and tolerance relate to the processes encompassed by our model.\n\nTo ensure this approach is possible, our model behavior needs to match experimental evidence. We first found that it recreates the most commonly observed types of WHD documented to date in D. melanogaster and in other insect host systems. The model thus provides a general theoretical framework which can be useful to investigate most situations of experimental infection. Most importantly, it finely reproduces the properties of two experimental proxies which have been used to evaluate resistance or tolerance to disease: the SPPL increases with dose in chronic lethal infections but not in chronic benign infections; the PLUD increases if the host is wounded before infection but is insensitive to inoculum size. We take these results as evidences that the biological basis on which we grounded the model are sound.\n\nWe shall in the following section summarize how the SPPL and the PLUD relate to model parameters and how they can yield insights into resistance and tolerance. A general conclusion is that they reflect both mechanisms. We were nevertheless able to predict what information can be gained from each of them and propose experimental methods to tease apart resistance and tolerance effects.\n\n### Exploring chronicity: Stable and unstable set-point pathogen loads\n\nWhen a host survives the infection but does not successfully clear the pathogen, the disease enters a phase of chronicity (Virgin et al., 2009) and load stabilizes at a SPPL. Such chronic phases characterize a large range of infectious diseases, and we have shown that this is determined by the host immune defense. Notably, strong constitutive defense prevents chronicity because it permits the host to clear pathogens; weak constitutive defense combined to slow activation upon pathogen detection also prevents chronicity because hosts then die from the infection.\n\nA more surprising prediction of our model is that chronicity can be transient, the SPPL being then unstable. This happens when the damage which accumulates during the infection eventually obstructs the production of immune defense. Pathogen proliferation is then unleashed which leads to host death. Illustrations of such infections could be, in humans, Mycobacterium tuberculosis causing tuberculosis infections or HIV causing AIDS; in Drosophila, this could be Providencia rettgeri infections. When the SPPL is stable, by contrast, the host never clears pathogens but it will not die either from the infection. In human, this could be Porphyromonas gingivilis causing gum infections; in Drosophila, this could be Escherichia coli infections. Our model clearly highlighted those two types of chronic infections and suggests that their SPPL cannot be interpreted the same way.\n\nIn particular, we found that unstable SPPLs depend on how the infection was initiated. For example, we predict that they should be higher when the host is injured prior to contamination and should correlate positively with the inoculum size (see Figure 5). These predictions agree with previous study of bacterial infection of D. melanogaster (Acu\u00f1a Hidalgo et al., 2021; Chambers et al., 2014; Chambers et al., 2019; Duneau et al., 2017a). Our model predicts that stable SPPLs are, conversely, independent from how the infection is initiated. In particular, they are insensitive to inoculum size, in accordance with benign Escherichia coli infections of D. melanogaster (Ramirez-Corona et al., 2021). The stable SPPL, therefore, reflects stable genetically determined characteristics of both the host and the pathogen, but it is affected by traits related to both tolerance and resistance. For example, low stable SPPL could indicate either that the host has efficient immune defense, or that it tolerates well infections.\n\nThis is not to say that no information can be gained from the study of SPPL, be it stable or unstable. In probably all chronic infections, everything being equal, the pathogen load during the chronic phase is an appropriate tool to compare the capacity to be transmitted to another host: the higher the SPPL, the most the host sheds pathogens (Fraser et al., 2007; Matthews et al., 2006). The unstable SPPL is also an important concept because it is a good predictor of the duration of chronicity: we found indeed that the higher the SPPL, the earlier the host dies from the infection. Monitoring survival to infection and transient SPPL is, therefore, providing redundant information. This is particularly well established in the specific case of HIV infections, where high SPPL is associated to short asymptomatic phases and rapid progression to the final stage of the disease (Fraser et al., 2007). The SPPL in HIV infections has also raised considerable attention because of two striking characteristics which are not fully understood. First, it is highly variable among patients; second, it is heritable, which means that the SPPL of a newly infected patient positively correlates to that of the person it has been infected by. The most common explanation of this correlation is that part of the variation in SPPL is caused by genetic variation in viruses. But if variance in SPPL has a genetic origin, the SPPL should evolve during the course of the infection and load should, therefore, increase over time.\n\nThe heritable nature of SPPL, therefore, contradicts the observation that load is constant throughout the asymptomatic phase of the disease (although some possible solutions to this paradox have been proposed Bonhoeffer et al., 2015; Hool et al., 2014). Our model suggests that part of the large variance in SPPL could be non-genetic yet heritable. If transmission events occur during chronicity, the inoculum size should indeed increase with the SPPL of the donor host (as suggested by Fraser et al., 2007). As we have demonstrated that the transient SPPL does increase with inoculum size, the SPPL of a newly contaminated host should reflect that of the donor host. The fact that the transient SPPL increases with inoculum size could, therefore, suffice to create a form of non-genetic heritability in SPPL.\n\nFinally, we propose that quantifying the SPPL for various doses in a chronic disease would allow, if the SPPL increases with dose, to demonstrate that it is unstable. This could be used as an experimental method to prove that chronicity is transient. In experimental systems which our model reproduces, it would in addition demonstrate that the system is bistable (a necessary condition for the existence of unstable SPPL) which in turn requires that the infection impairs immunity by reducing the production of defense, either directly as in Ellner et al., 2021 or indirectly through the accumulation of damage (Stoecklein et al., 2012; van Leeuwen et al., 2019; DeJong et al., 2007), or by making defense less efficient (e.g. Zhang, 2016). Hence, showing that the SPPL is transient informs on the fact that the pathogens, or the damage they cause, obstruct the immune response. The positive link between dose and SPPL has been found in some experiments (Shultz et al., 2016; Chambers et al., 2019); additional work is required to demonstrate that the explanation our model provides applies to these experiments.\n\nWe have so far assumed that pathogens do not evolve during the course of the infection. We did not consider this possibility, first because it is beyond the scope of our study, and second because Duneau et al., 2017a demonstrated that within-host evolution did not explain bifurcation in their experiments. But in situations where, for example, frequent mutations arise that make pathogens resistant to host immunity, a phenomenon resembling bistability could occur: hosts where resistance has evolved would be killed by the infection while others would control it and survive. If this happens, bistability would have nothing to do with damage hindering defense. But this does not compromise our predictions because the SPPL would then probably not vary with dose (as demonstrated by Ellner et al., 2021 in the modified version of their model where bacteria are protected from AMPs).\n\n### Characterizing lethal diseases: The pathogen load upon death\n\nThe Pathogen Load Upon Death is the maximum pathogen load a host can sustain before it dies from the infection. It has been logically used as a measure of disease tolerance (Duneau et al., 2017a; Huang et al., 2020; Lin et al., 2020; Troha et al., 2018) and of pathogenicity (Faucher et al., 2021). As expected, our model confirms that the PLUD strongly depends on tolerance to damage ($z_{d}$, see Appendix 4). However, if the PLUD was an unambiguous quantification of tolerance, as proposed by Duneau et al., 2017a, it should not depend on any parameter other than $z_{d}$, or at least not on parameters that determine the control of pathogen proliferation. We conversely predict that hosts with an impeded immune response are expected to have a higher PLUD, which we confirmed with an experimental design more powerful than that of Duneau et al., 2017a (see Figure 8).\n\nIn our model, the PLUD increases when less defense are produced (e.g. when \u03b1 or \u03b3 decrease, see Appendix 4\u2014figure 2) or when defense are made less efficient (i.e. when $\\delta$ is decreased, see Figure 6). This is because the PLUD is a load which, as such, reflects the ability of pathogens to proliferate inside the host. Hence, like the transient SPPL and probably like any quantity derived from load estimations, the PLUD is subject to mixed influences of immune control of proliferation and of damage mitigation.\n\nThe PLUD, unlike the transient SPPL this time, is independent from inoculum size: flies injected with large inoculum die faster but at the same load than flies infected with small inoculum (Duneau et al., 2017a). Our model reproduces this observation, and we have demonstrated mathematically that this happens because pathogen load is a \u2018fast variable\u2019 (Van Kampen, 1985, see Appendix 4). In practice, once the accumulation of damage due to the infection is starting to affect the immune system in a way that the defense are impeded, the system is entering a run-away process: pathogens proliferate faster, inflicting new damage to the host, which decrease the defense further. Infections that enter this dynamics tend to all follow the same typical trajectory, and therefore kill the host at the same pathogen load. We found that this occurs in most parameter combinations (see Appendix 4), except when hosts die at very low damage (i.e. when $z_{d}$ is low). In that particular case, death occurs so rapidly that infections have no time to converge to their typical final trajectory and the PLUD depends on inoculum size. This could represents situations where the host is already extremely weak or about to die at the time of the infection. However, in most relevant cases, the PLUD being independent of how the infection has started, it reflects the genetically fixed traits of both hosts and pathogens that influence disease tolerance and resistance.\n\n### The PLUD as an aid to compare disease tolerance and resistance among hosts or diseases\n\nIt has been proposed that disease tolerance could be quantified as the slope of a linear relation of time to death to a load measured at a fixed point during the infection (e.g. Louie et al., 2016; McCarville and Ayres, 2018) or with the linear or logistic relationship between initial inoculum size and time to death (e.g. Gupta and Vale, 2017). However, our analysis strongly suggests that these approaches mostly measure resistance (see Figure 5). This is probably due to the fact that any pathogen load reflects resistance mechanisms. Instead, we propose to use the relation between the HR and the PLUD ratio to determine whether differences in susceptibilities are mainly due to deficiencies in tolerance or resistance mechanisms. Our method is similar but differs in two key aspects. First, we propose using a load that reflects a specific moment of the infection rather than a load measured at an arbitrary, fixed time. This approach ensures that loads can be compared among hosts and among pathogens, as they will always have the same biological interpretation. Second, we used measures of Hazard Ratio obtained for a fixed inoculum size, as changing the inoculum size has little impact on the relation between the PLUD and the Hazard Ratio, unless very high inoculum are used, which can lead to artifacts by artificially bypassing the immune response.\n\nObserving that a particular genotype of host has a lower than average PLUD cannot indicate whether this genotype is less tolerant or more resistant than others to the infection. However, our model shows that if this low PLUD genotype also has a higher than average risk to die from the infection (or a shorter time to death) its susceptibility is probably due to a default in tolerance to infection. If conversely a genotype has a higher than average risk to die with a higher PLUD, we would conclude that its susceptibility is mostly due to a default in resistance (see Figure 6).\n\nWe confirmed this prediction in the case of P. rettgeri infecting D. melanogaster: host genotypes with impeded immune effectors have both a higher Hazard Ratio and a higher PLUD than host genotypes with a more efficient immune response. Using Catalase, an enzyme involved in protecting cells from damage by ROS, as a candidate gene for tolerance, we also confirmed that faster death, which we assumed to indicate lower tolerance, was associated with a lower PLUD. Although the link between a lower pathogen load sustained before death and a default in tolerance seems logical, this probably needs further confirmation with other candidate genes for which we will start to understand the mechanisms by which they contribute to tolerance. As we already mentioned, potential tolerance genes in D. melanogaster have been identified using the PLUD as a tolerance proxy (CrebA and Bombardier Lin et al., 2020; Troha et al., 2018), or methods of which we discussed the limits, (grainyhead, debris buster, and G9a Howick and Lazzaro, 2017; Merkling et al., 2015). In fact, the role of G9a in controlling bacterial load is still debated (Gupta and Vale, 2017). We, therefore, here provide a clear indication that our method allows to detect defaults in tolerance, but complete validation will require that other candidate genes are tested.\n\nOne of the great benefit of theoretical studies is that they allow to explore notions which arose from empirical work. Concepts which seem well and clearly defined may often be underlain by complex and intermingled mechanisms. Our approach has helped to clarify the notions of disease tolerance and resistance, in particular by showing how experimental measurements can be misleading when interpreted as unambiguous measurements of one or the other mechanism. Many other mechanisms which determine important aspects of infection pose the same sort of difficulty. For example, the co-regulation of damage repair and immune response is now well accepted (Martins et al., 2019; Pucillo and Vitale, 2020) but remains difficult to study. Similarly, we do not know how the presence of different types of damage could affect disease outcome. We advocate that pursuing this combination of theoretical and empirical approaches is needed, first to predict how such intermingled mechanisms impact the infection outcomes, and second to design appropriate proxies and experimental methods to quantify their impact.\n",
+      "created_at": "2025-12-04T05:10:01.798024Z"
+    },
+    {
+      "id": "f31be935-76ba-4c1b-a954-6c4177b0e094",
+      "submission_id": "23f010f0-a3d4-4d39-9043-4bf951e46260",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Bruno Lemaitre, https://ror.org/02s376052 \u00c9cole Polytechnique F\u00e9d\u00e9rale de Lausanne Switzerland\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.104052.sa0](https://doi.org/10.7554/eLife.104052.sa0)\n\nDuneau et al. provide an extensive effort to model parameters of infection, an important topic in disease management. The theoretical findings of this study are important and will be of interest to mathematical biologists to model infection. The empirical data support the arguments, but may be incomplete, and more could be done in experiment design to shore up the robustness of these findings. This study helps us to better understand the complex course of infection.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Bruno Lemaitre, https://ror.org/02s376052 \u00c9cole Polytechnique F\u00e9d\u00e9rale de Lausanne Switzerland\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.104052.sa1](https://doi.org/10.7554/eLife.104052.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nDecision letter after peer review:\n\n[Editors\u2019 note: the authors submitted for reconsideration following the decision after peer review. What follows is the decision letter after the first round of review.]\n\nThank you for submitting the paper \"A within-host infection model to explore tolerance and resistance\" for consideration at eLife. As you can see from the three reviewers and despite their interest on the manuscript, there are substantial issues needed to improve the manuscript both at the theoretical and experimental level. Note that eLife is opened to the idea of a new submission if the authors can address the points raised by reviewers. The reviewers did share that this article may be more suitable in its current format for a more specialized journal;\n\nReviewer #1 (Recommendations for the authors):\n\nThe authors provide an impressive, detailed, and nuanced discussion of parameters contributing to outcome of infection. This statistical model considers a variety of theoretical contributors to pathogen growth, immune defense, and damage amelioration. The topic at hand is of general interest in modelling infectious disease processes, and to understand what parameters contribute most to readouts of disease progression. The framework the authors set out is logically consistent, and there is a clear effort to be thorough in constructing their statistical framework.\n\nHowever I am unconvinced that the experimental data support the conclusions of the model (Figure 7-8). As the model is entirely theory, it is essential that the experimental design and data used to validate the model robustly support its predictions. The authors may be able to address these concerns in revisions, and increase confidence in their conclusions.\n\nThe authors use different experimental treatments (ex. wounding prior to infection) and three key experimental readouts to inform on the interactions of their model parameters (Survival, SPPL, PLUD). However I am unconvinced by the experimental data presented to validate their model. This unfortunately derails the paper right at the critical stage, and deflates confidence in the conclusions.\n\nLines 484-497 (Figure 7) \u2013 The key question is if mortality increase caused by wounding is loss of resistance or tolerance. The metric used to test this is PLUD. The authors do find a general higher PLUD in wounded flies, though only in 2/4 genotypes. I am concerned this result comes from survivor bias effects.\n\nAs SPPL is variable across individuals, any flies surviving the initial phase of infection will suppress pathogen growth to a transient SPPL. However flies dying rapidly from the infection have uninterrupted pathogen growth towards PLUD. As seen in Figure 7A, many No Wound flies survive this initial infection, but have a steady mild mortality rate at later time points. On the other hand, Wounded flies die almost 100%, and survival curves plateau.\n\nTherefore Wounded flies mostly die from unchecked bacterial growth. However No Wound flies die from either pathogen growth (majority) or at later time points, despite having suppressed the initial infection (minority). I suspect this is caused by a factor the authors ignore: Zd of their model is not fixed. Damage from the initial infection and autotoxicity from the immune response may not kill hosts in the first 24h, but can ultimately be the cause of death (ex. organ failure). In beetles, it is known that autotoxic effects of the immune response reduce lifespan associated with malpighian tubule dysfunction (doi:10.1098/rspb.2017.0125). Even a fly that successfully suppresses pathogens can die from failing organ systems without needing recurrent pathogen growth, which may not even be possible when the blood is antimicrobial.\n\nThe significance of Figure 7B is driven almost entirely by low-PLUD outliers present mostly in No Wound flies. This suggests PLUD differences are driven by loss of tolerance in No Wound survivors, and not loss of resistance in dying Wounded flies. This is the exact opposite conclusion of the authors. If the authors have time of death associated with their data points, this could confirm or counter my concern regarding low-PLUD outliers.\n\nLines 498-520 (Figure 8) \u2013 The authors use Bom mutants as a control, saying they have little effect on gram-negative bacteria (Hanson et al). But checking Hanson et al., they do not infect Bom mutants with gram-negative bacteria. In fact, Duneau et al. (2017,BMC BIOL) reports that the Toll pathway mediates a sexual dimorphism in response to P. rettgeri infection. Duneau et al. (2017,eLife) also showed PLUD does not vary across Imd, Toll, Phagocytosis, or Melanization mutants? These studies from one of the authors are in direct contradiction to the logic of this experiment.\n\nAlso Bomanin function is not known, and there is no evidence they are directly antimicrobial based on existing studies. Instead, the authors cite Lin et al. in their discussion (Lines 653-657), which is a study implicating Bomanin effects on tolerance through Bombardier, including a mortality associated with immune activation by heat-killed bacteria. It is likely Bomanins affect tolerance, so use of Bom mutants as a baseline for comparison is wholly inappropriate. Why did the authors not use a wild type control here?\n\nAdditionally, A group died more than Bomanin, so their claim that Defensin does not affect survival seems untrue in their conditions. The difference in PLUD in A, B, and AB is less convincing. Defensin is also associated with clearance of aberrant cells (doi:10.7554/eLife.45061), so even assuming a mild difference is true, it can again be due to tolerance effects. Why did the authors not compare Diptericins specifically in their question, given previous studies on the Diptericin and P. rettgeri? This is not a strict request for additional experiments, but I would be more convinced by use of AMP genotypes that might have specific activity against P. rettgeri, and genotypes with related but less important activity. A wild type control is necessary.\n\n\u2013 It is not clear why the authors do not modulate JAK-STAT stress responses as a test of resistance vs tolerance (Lines 149-155 are not convincing).\n\n\u2013 What is the status of the Diptericin locus in RAL-818, RAL-630, etc\u2026 Given Unckless et al. (2016)?\n\n\u2013 In the discussion the authors comment on SPPL nicely. I am curious if they have considered the scenario where bacteria in SPPL stage are in a hibernation state. This is common in uropathogenic E. coli, which reside in host epithelial cells and cause recurrent outbreaks. But those E. coli are not constantly causing damage while in hibernation. Does the model assume a constant rate of damage for bacteria in SPPL phase?\n\n\u2013 The authors should include a README file explaining the columns in their supplemental data files\n\nReviewer #2 (Recommendations for the authors):\n\nLafont et al. developed a novel theoretical model that describes how host resistance and tolerance affect within-host pathogen dynamics. Their model focuses on recently documented with-host bacterial dynamics in Drosophila. Specifically, it was previously shown that in some cases the same inoculation dose can lead to two distinct outcomes: (1) the host successfully controls pathogen growth, which leads to an apparently stable set-point pathogen load (SPPL), and (2) the pathogen growth out of control reaching very high levels termed pathogen load upon death (PLUD), which causes rapid host death. The developed model can successfully reproduce this type of branching process. In addition to other existing models, the authors are able to reproduce the empirically observed pattern that the SPPL can increase with an increasing inoculum dose. Two findings of the model analysis are particularly relevant for empiricists studying resistance and tolerance. First, the results contradict the previous belief that only tolerance affects the PLUD. Instead, the authors now demonstrate that also resistance can affect the PLUD. Second, the authors raise considerable doubt on the validity of a commonly applied method for quantifying tolerance, which is based on measuring the reaction norm of host fitness in relation to pathogen load (measured either by the inoculum dose or by pathogen load at one point during the infection). Specifically, the authors show that this reaction norm can be more strongly influenced by resistance than by tolerance. To overcome these problems, the authors propose a novel method to infer variation in resistance and tolerance, which is based on integrating measures of the PLUD and host survival. Finally, the authors validated parts of their model with experimental infection studies on Drosophila melanogaster. These studies demonstrate the predicted effect that the PLUD increases and survival decrease due to wounding, and due to the knockout of important resistance genes. The agreement between the predicted and observed effects is interpreted by the authors as a confirmation of the general validity of their model and the proposed method.\n\nTaken together, the authors present very interesting theoretical and empirical results with potentially far-reaching consequences for understanding and measuring how hosts respond to pathogen infections. Nevertheless, there are some limitations of this study, which I think were not sufficiently considered when interpreting the results.\n\n1. The theoretical and empirical work is biased towards resistance. The pronounced differences in the way both host strategies were modelled and empirically investigated could strongly limit the validity and generality of the model and the proposed method. As the authors explain, due to the lack of known tolerance genes in Drosophila, they were not able to empirically test tolerance specific predictions of their model. The authors acknowledge this limitation, but do not see it as a major problem. However, it appears doubtful that the empirically measured resistance effects are sufficient for concluding that also the tolerance effects are correctly predicted by the model. In addition to these limitations on the empirical side, the theoretical side contains the limitation that tolerance was modelled in a much more simplistic way compared to resistance. In the model, host resistance is characterized by three major features: it depends on host condition (i.e. the level of damage), it is costly (because it generates damage), and it is modulated by pathogen load. In contrast, the implementation of tolerance lacks all of these features: it is cost-free, it is independent of host condition and it is independent of pathogen load or amount of damage. The authors acknowledge that tolerance mechanisms are known to be modulated during an infection, but because related details are still unknown they chose to model tolerance in a very simplistic way. This choice is certainly a reasonable first step. Nevertheless, it leaves the possibility that more complex tolerance effects could strongly affect the dynamics predicted by the model. Especially in combination with the lack of empirical data on tolerance, this makes it challenging to fully assess the validity and generality of the model and the proposed method.\n\n2. Effects on reaction norms are not very well explored. The authors have shown that the relationships between inoculation dose and host survival contradicts assumptions made in empirical studies (Figure 5). However, the relationship between SPPL and host survival is not explicitly shown and it is, therefore, hard to assess whether the problem also applies to this relationship. A more detailed analysis would be particularly informative for empirical studies that measure pathogen load during the infection. Furthermore, conducting empirical tests of the predicted effects is an important task that remains to be done before concluding that the reaction norm approach is generally flawed.\n\n3. Host background mortality is not considered. The authors developed a deterministic model in which host death can only occur due to an infection. Host background mortality due to other causes is not considered. This is not necessarily a problem for the theoretical analyses. However, to avoid biased results, empirical applications of the proposed method should control for potential variation in background mortality among different host lines.\n\n4. Very wide and skewed empirical PLUD distributions. In some cases, the empirically measured PLUD distributions are very skewed and very wide with a difference of up to five orders of magnitude between the smallest and the largest values (Figure 7B). It is not clear how this enormous variation arose and whether this might indicate a mismatch to the dynamics predicted by the model.\n\n5. Differences between observed and predicted branching dynamics. There seems to be a mismatch between the empirically observed temporal pattern of branching (Figure 1) and the corresponding model dynamics (Figure 3D). In the model, branching starts immediately after inoculation with a rather slow separation of both branches, whereas in the empirical data branching appears to occur much later with a quite sudden, strong separation of both branches. However, the example shown in Figure 3D might not be a general representation of branching dynamics occurring in the model. Furthermore, it is hard to assess whether a mismatch would necessarily indicate a problem that is relevant to the main findings of this study.\n\nL117-119: It would be appropriate to acknowledge that Ellner et al. (2021) proposed an extension of their basic model that includes a protected state, which allows for higher SPPLs.\n\nFigure 3: I was wondering whether the colours are suitable for colour-blind people.\n\nL 247: It would be nice if there would be a corresponding illustration of this result.\n\nL 348-349: At first glance, this reads as a generalization beyond the model, which would not be appropriate at this point. It might be useful to add some clarification, e.g. \"In the model \u2026\"\n\nL 605-612: All this makes sense if the model correctly captures the dynamics of the investigated host-pathogen system. However, whether this is indeed the case for other host-pathogen systems still needs to be demonstrated. It seems to me that at this point it would be appropriate to remind the reader of this limitation.\n\nReviewer #3 (Recommendations for the authors):\n\nIn this manuscript, the authors study a model of within-host dynamics of pathogens that aims to capture the fact that some hosts may survive infections while others die from them, even if these infections are identical. The model recovers previous experimental observations, and a prediction from it is tested through new experiments.\n\nSpecifically, the authors propose a deterministic model based on coupled partial differential equations, where various parameters describe host resistance (via immune response) and tolerance to the disease. The equations include a specific nonlinear immune regulation, written as the product of an activation of immune defense production by pathogen load, and of a negative feedback that depends both on immune defense level itself and on damage caused. The model can be bistable, allowing for different outcomes (death or survival) under the same parameters, with different initial conditions. A difference in the host initial state (preexisting damage level) suffices to cause a different outcome for the same infection.\n\nThe authors make a thorough analysis of the equilibrium states of the model, and of the impact of each parameter. They demonstrate that in this model, infections can evolve either to clearance, to death (once damage exceeds a certain threshold), or become chronic. The authors show that the latter case can in fact be transient, and that the set-point pathogen load, which depends on initial conditions, is then a predictor of life span. True chronicity is also possible. In deadly cases, the authors find that the pathogen load upon death is almost independent from inoculum size, and they demonstrate that the value of this load, together with a hazard ratio, could be employed to distinguish the effects of tolerance and resistance.\n\nFinally, the authors report experiments where Drosophila melanogaster is infected by Providencia rettgeri. Their experimental study follows up on a previous one where some of the same authors observed that some hosts survived while others died, under the same infection conditions [Duneau, D. et al. (2017) eLife, 6, e28298] \u2013 an observation that is recovered by the present model. The new experiments demonstrate that wounding the hosts or suppressing some of their immune effectors both increase the pathogen load upon death. This provides a test of the model prediction that damage should increase the pathogen load upon death as it hinders defense production.\n\nStrengths:\n\nThe manuscript provides a comprehensive analysis of the model proposed. An important strength of this work is that a prediction of the model is directly tested by a novel experiment. A Shiny App performing a numerical resolution of the model is provided and allows the reader to directly experiment with its outcomes.\n\nWeaknesses:\n\nThe model builds on previous ones which are cited. Some of them already featured bistability [Pujol, J. M. et al. (2009) PLoS Computational Biology, 5 (6), e1000399; Souto-Maior, C. et al. (2018) PLoS Neglected Tropical Diseases, 12 (3), e0006339; Ellner, S. P. et al. (2021) Proceedings of the Royal Society B, 288 (1951), 20210786]. The main formal difference is the specific nonlinear immune regulation form that is chosen. The main consequence is that a rather high set-point pathogen load (SPPL) is possible, and that it can be transient (but note that Ellner et al. proposed another mechanism to obtain a high SPPL). However, no full theoretical insight is provided on the key feature that allows this behavior, as the nonlinear immune regulation chosen is quite complex and includes multiple parameters. The default parameter values are not explicitly related to realistic ones.\n\nWhile this manuscript is very interesting, I have some concerns that prevent me from recommending publication at least in the present form.\n\n1. The authors should highlight more clearly the impact of the differences between the model that is proposed and previous ones, especially those that already aimed to describe the results of [Duneau, D. et al. (2017) eLife, 6, e28298].\n\n\u2013 Can a link be made to the model which was proposed in [Duneau, D. et al. (2017) eLife, 6, e28298], in particular to the tipping point which played an important role there?\n\n\u2013 What novel insights does the present model bring compared to [Ellner, S. P. et al. (2021) Proceedings of the Royal Society B, 288 (1951), 20210786], which is directly motivated by [Duneau, D. et al. (2017) eLife, 6, e28298]? The authors mention that a difference is that a nonlethal infection gets almost cleared in that paper (no high SPPL), but this is only true of the \"conceptual model\" proposed there, and Ellner et al. then propose that some pathogens may be protected from the host immune response, which can result in a high SPPL. This point should be discussed.\n\n2. The model that is chosen is quite complex, which raises several questions:\n\n\u2013 The authors refer to the previous study [Mayer, H. et al. (1995) Chaos 5 (1), 155-161] to justify the specific nonlinear immune regulation form they chose, but in that paper, the functions F and G are added and not multiplied in the equation regarding the immune defense level. The authors should motivate their choice.\n\n\u2013 Multiple parameters are introduced, and their default values are listed in Figure 2. It would be important how these values are chosen, and to assess how realistic these choices are, and how robust the conclusions are to parameter variations in the realistic range. For instance, is the transient SPPL expected to last for a duration substantially shorter than host lifetime or not?\n\n\u2013 Is this the simplest model that allows to have a high SPPL in addition to the bistability already present in other models? What key ingredient allows this?\n\n3. Experimentally, what is the impact of the wound alone (without infection)?\n\n4. The manuscript is quite long and conciseness would make it better. I recommend focusing on the key new insights and minimizing repetitions between the text and the figure legends, as well as between the Results and the Discussion.\n\n5. The use of inappropriate theoretical terms should be avoided.\n\n\u2013 In the legend of Figure 3, please avoid the term \"stochastic simulations\" as the model is entirely deterministic. What is done here is varying the initial conditions used to numerically solve the deterministic equations.\n\n\u2013 The model is called \"Lotka-Volterra\" in reference to the prey-predator model but the similarities are not very strong. For instance, there are no oscillations in the dynamics here, while they are a hallmark of the Lotka-Volterra prey-predator model. Thus, unless there is a specific reason for calling the model \"Lotka-Volterra\" I would recommend refraining from using this name.\n\nDetailed points:\n\n1. Providing a Shiny App is great as it allows the reader to try the model out, but I strongly recommend to also post the code on GitHub and archive it to Zenodo, as it is durable and identifiable by a DOI.\n\n2. Line 143: \"For the sake of simplicity, the first equation of system (1) is written dimensionless\": in fact, all three equations are in dimensionless form.\n\n3. Line 166: Is \u03b1 assumed to be positive? If yes, it would be good to mention it here.\n\n4. Some letters are quite small in figures. In Figure 3 it would be helpful to use different colors and to put explicit legends for each curve.\n\n5. Legend of Figure 3: x_0 is set to 10^-6, not log(x_0). Is the initial level of damage increased by 3% of z_d (legend) or 0.3% (figure)? Please clarify.\n\n6. Figure 4 A,D,E: Can a qualitative explanation be provided for the way the white region size varies between these cases?\n\n7. Line 483: Please spell out GLMM and explain notations (df etc.).\n\n8. In Eq. S1-1 I believe that eta/xi should be to the power l and not l+1.\n\n9. Line 893: \"A necessary condition for clearance to be stable is that dx/dt(0,yh,zh)<0\": this is problematic because equilibrium implies that dx/dt(0,yh,zh)=0. Do the authors mean dx/dt(epsilon,yh,zh)<0? Please clarify this.\n\n10. Line 912: I believe that the last > should actually read <.\n\n11. Figure S2-2: I believe that this corresponds to a stable equilibrium. It would be good to specify it.\n\n12. Figure S3-1: Please explain what the various curves and lines are.\n\n13. Line 1062: f and g should read F and G.\n\n14. Figure S4-1: I believe that blue and red indicate increasing and decreasing PLUD, not higher and lower.\n\n[Editors\u2019 note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"A within-host infection model to explore tolerance and resistance\" for further consideration by eLife. Your revised article has been evaluated by Wendy Garrett (Senior Editor) and a Reviewing Editor.\n\nThe manuscript has been improved, but there are some remaining issues that need to be addressed, as outlined below:\n\nReviewer #1 (Recommendations for the authors):\n\n1) Experimental data set\n\nI fully disagree with response 3. My concerns of Bomanins affecting tolerance have now been validated by further studies since this manuscript was first submitted (Xu et al. 2023 EMBO Rep). This supports signals already seen in Lin et al. (the authors should review Lin et al. Fig5bbd-early vs late and Fig6). In the new experiments, the authors use of Drs is inappropriate. Drs is involved in hemocyte recruitment to cancerous tissue and Drs OE suppresses JNK activation (Krautz et al. 2020 eLife). Drs is further implicated in other anti-cancer or traumatic brain injury responses (papers by Inoue lab 2019 and multiple recently by Wassarman lab). Both Bom and Drs can reasonably affect tolerance, and any mutation might have unintended consequences. A wild-type control is essential, and there is no justifiable reason not to include one.\n\nThe RNAi experiments are appreciated, and useful. However they raise some concerns as somehow the PLUD of Cat-IR is 10^2 higher than of Dpt-IR. PLUD is not a metric that should be so sensitive to inter-experiment variation, so these data are difficult to reconcile, and their meaning is difficult to trust. Also, what is the control? No detail is given for \"mock-RNAi\", and in general RNAi is best used as supporting evidence due to the need to mix genetic backgrounds that could affect results in cryptic ways.\n\n2) Regarding my previous point, apologies if this was not clear, but reflecting 2 years later perhaps I can frame this concern better: lower resistance increasing PLUD is misleading phrasing. The way Figure 5 is presented reflects theoretical space. But PLUD is something defined by a biological limit of the host carrying capacity with a physical volume restriction as a theoretical maximum. As shown previously by Duneau et al. 2017, max PLUD of Dmel individuals in Figure 2 of Duneau was log2(25) to log2(26) across all D. melanogaster studied. What is different across strains here (and in Duneau et al. 2017 to some extent) is variance of PLUD. Thus why it's odd to frame it as \"PLUD increases by loss of resistance,\" because in fact the maximum PLUD in Fig7 is pretty consistent across all genotypes and treatments, and no increase is really possible (physical/biological limits). Instead, loss of resistance leads to more consistent microbial growth, faster, and reflected by more consistent mortality outcomes. Thus you get more consistent PLUDS near the maximum physical PLUD. In a wild-type host, resistance creates more complex dynamics, and opens the door for tolerance to impact the outcome and the PLUD. The response supplementary data support this concern exactly. Here, seemingly in 3of4 cases, the PLUD data have an intrinsic survivor bias: blue data points with bimodal survival outcomes have a right skew, while red data points lacking diverse survival outcomes skew to the left, and may even show less diverse ranges (certainly true of 630 and 559).\n\n3) The theory of the model, to this reviewer, seems exceptionally detailed, consistent, and logical. This study has merits and contributes to a body of literature that is seeking to formalize host-pathogen interactions in a mathematical biology framework. I remain concerned with the application of this model to empirical data, which appears to be complex to interpret.\n\nReviewer #2 (Recommendations for the authors):\n\nGeneral appreciation: The authors put a lot of effort in responding to all the reviewer comments, which I think greatly improved the manuscript.\n\n1) There is from my point of view only one issue remaining, which has not been sufficiently addressed. I apologize in case my previous comment on that matter was not clear enough. I had remarked that potential variation in host background mortality should be controlled for in empirical analyses. The authors addressed this issue in the context of their PLUD analyses by removing outliers. However, variation in host background mortality could also be a serious issue for the survival analyses. It seems that currently the implicit assumption in the conducted survival analyses is that there is no variation in background mortality among the compared strains or treatments. Thus, any inferred survival difference is attributed to different infection dynamics. If the possibility of different background mortalities is considered, then a correct interpretation of the survival analyses seems to require the analysis of appropriate non-infection controls. In the simplest case, it might be sufficient to show that there are no apparent survival differences among strains or treatments in non-infection controls. If there are any differences, they would need to be somehow controlled for in the survival analyses of the infected individuals. In case the authors disagree with my argumentation, it would be useful to provide a corresponding explanation in the manuscript why it is not necessary to include non-infection controls in the conducted survival analyses.\n\nReviewer #3 (Recommendations for the authors):\n\nGeneral appreciation: The authors have addressed my comments thoroughly, and I thank them for this. The manuscript is improved as a result. I still have two points about the model.\n\n1) I still find the use of the term \"stochastic simulations\" misleading in the legend of Figure 3. I recommend that the authors explicitly specify \"Dots corresponds to results of stochastic simulations where the initial pathogen load is randomly drawn (\u2026) and then the deterministic equations of the model are solved numerically.\"\n\n2) I got a bit worried by the authors' response regarding parameter values and robustness to varying them. Indeed they state: \"As often with models, duration can be changed almost at will by adjusting parameters or initial conditions!\" One would hope that if the parameters are varied in a physiological range, the conclusions do not vary \"at will\"\u2026 This said, I understand the difficulty of precisely determining each parameter.\n\nOverall, I find that the theory-experiment comparison is an important strength of this manuscript.\n",
+      "created_at": "2025-12-04T05:10:01.798024Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T05:10:01.798024Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T05:10:01.798024Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "25245b85-e20f-4f5c-b475-a2d8cb07cb42",
+      "content_id": "cd6fe8fc-0111-4f03-917f-bc2b468172a0",
+      "claim_id": "C1",
+      "claim": "Even in Ebola infections, 40% of infected people survive.",
+      "claim_type": "EXPLICIT",
+      "source": "even in Ebola infections, 40% of infected people survive, Shultz et al., 2016",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Shultz et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:10:01.798024Z"
+    },
+    {
+      "id": "13c6b12a-dac9-4013-8be4-5e398bbbb06c",
+      "content_id": "cd6fe8fc-0111-4f03-917f-bc2b468172a0",
+      "claim_id": "C2",
+      "claim": "Hosts can survive an infection by strategies which combine resisting to pathogens by producing immune defense and tolerating the consequences of infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, the hosts can, therefore, survive an infection by strategies which combine resisting to pathogens by producing immune defense and tolerating the consequences of infection (in animals Ayres and Schneider, 2008; R\u00e5berg et al., 2007; Read et al., 2008, but also in plants Kover and Schaal, 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to empirical work in animals and plants",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:10:01.798024Z"
+    },
+    {
+      "id": "c940a018-3946-4116-9cfe-41d19bd4167e",
+      "content_id": "cd6fe8fc-0111-4f03-917f-bc2b468172a0",
+      "claim_id": "C3",
+      "claim": "Immune defense is a double-edged sword which can save the host's life but sometimes cause pathologies and reduce lifespan.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, immune defense is a double-edged sword which can save the host's life but sometimes cause pathologies and reduce lifespan (Critchlow et al., 2023; Lin et al., 2018; Petkau et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to multiple studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:10:01.798024Z"
+    },
+    {
+      "id": "9b4b0a82-fc7b-41a2-926f-8eadcda9a033",
+      "content_id": "cd6fe8fc-0111-4f03-917f-bc2b468172a0",
+      "claim_id": "C4",
+      "claim": "Invertebrates share with mammals a large part of the mechanisms underlying their innate immune system, as shown in Drosophila melanogaster.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, they share with mammals a large part of the mechanisms underlying their innate immune system, as shown in Drosophila melanogaster (Buchon et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Buchon et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:10:01.798024Z"
+    },
+    {
+      "id": "0cb5cdc4-fb8e-452a-9fbc-82360a12edf5",
+      "content_id": "cd6fe8fc-0111-4f03-917f-bc2b468172a0",
+      "claim_id": "C5",
+      "claim": "The model predicts that infections can stabilize at a Set-Point Pathogen Load (SPPL) when chronic.",
+      "claim_type": "EXPLICIT",
+      "source": "When chronic, infections stabilize at a Set-Point Pathogen Load (SPPL).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction from the mathematical model presented in the manuscript",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:10:01.798024Z"
+    },
+    {
+      "id": "1a9fa145-b6a9-4152-b4c0-91b64c53393f",
+      "content_id": "cd6fe8fc-0111-4f03-917f-bc2b468172a0",
+      "claim_id": "C6",
+      "claim": "The SPPL can be transient, being then a predictor of life span which depends on initial condition (e.g. inoculum).",
+      "claim_type": "EXPLICIT",
+      "source": "Our model predicts that this situation can be transient, the SPPL being then a predictor of life span which depends on initial condition (e.g. inoculum).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction from the mathematical model",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:10:01.798024Z"
+    },
+    {
+      "id": "c8d39263-7216-4853-912a-5637a4ea5a3c",
+      "content_id": "cd6fe8fc-0111-4f03-917f-bc2b468172a0",
+      "claim_id": "C7",
+      "claim": "When stable, the SPPL is diagnostic of non-lethal chronic infections.",
+      "claim_type": "EXPLICIT",
+      "source": "When stable, the SPPL is rather diagnostic of non-lethal chronic infections.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction from the mathematical model",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:10:01.798024Z"
+    },
+    {
+      "id": "4fbe4d67-7d71-4655-aaa7-da9e390e77e6",
+      "content_id": "cd6fe8fc-0111-4f03-917f-bc2b468172a0",
+      "claim_id": "C8",
+      "claim": "In lethal infections, hosts die at a Pathogen Load Upon Death (PLUD) which is almost independent from the initial conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "In lethal infections, hosts die at a Pathogen Load Upon Death (PLUD) which is almost independent from the initial conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction from the mathematical model",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:10:01.798024Z"
+    },
+    {
+      "id": "10800cac-a5b5-422c-b5ab-03dcbc9b2f37",
+      "content_id": "cd6fe8fc-0111-4f03-917f-bc2b468172a0",
+      "claim_id": "C9",
+      "claim": "The PLUD can be used in conjunction with mortality measurement to distinguish the effect of disease tolerance from that of resistance.",
+      "claim_type": "EXPLICIT",
+      "source": "we demonstrate that it can be used in conjunction with mortality measurement to distinguish the effect of disease tolerance from that of resistance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical prediction from the model analysis",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:10:01.798024Z"
+    },
+    {
+      "id": "a0136a10-ad48-4d0d-92da-f935c631255a",
+      "content_id": "cd6fe8fc-0111-4f03-917f-bc2b468172a0",
+      "claim_id": "C10",
+      "claim": "Hosts that were wounded had a higher PLUD.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that, as predicted by the model, hosts that were wounded or deficient of key antimicrobial peptides had a higher PLUD",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data presented in the manuscript",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:10:01.798024Z"
+    },
+    {
+      "id": "a8e27f7b-21cc-4682-8cb8-d5ef0ce98230",
+      "content_id": "cd6fe8fc-0111-4f03-917f-bc2b468172a0",
+      "claim_id": "C11",
+      "claim": "Hosts deficient of key antimicrobial peptides had a higher PLUD.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that, as predicted by the model, hosts that were wounded or deficient of key antimicrobial peptides had a higher PLUD",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data presented in the manuscript",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:10:01.798024Z"
+    },
+    {
+      "id": "9a42142f-2425-4533-9b61-a00e79858862",
+      "content_id": "cd6fe8fc-0111-4f03-917f-bc2b468172a0",
+      "claim_id": "C12",
+      "claim": "Catalase mutant hosts, likely to have a default in disease tolerance, had a lower PLUD.",
+      "claim_type": "EXPLICIT",
+      "source": "while Catalase mutant hosts, likely to have a default in disease tolerance, had a lower PLUD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data presented in the manuscript",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:10:01.798024Z"
+    },
+    {
+      "id": "0e41badb-8b5c-41da-b233-5915078070fc",
+      "content_id": "cd6fe8fc-0111-4f03-917f-bc2b468172a0",
+      "claim_id": "C13",
+      "claim": "Bistability in WHD models can be created by non-linear functional responses for both pathogen dynamics and host defense regulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Mayer et al., 1995 demonstrated that in such models non-linear functional responses for both pathogen dynamics and host defense regulation could yield bifurcations between chronic infections with high and low equilibrium pathogen load.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Mayer et al., 1995",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:10:01.798024Z"
+    },
+    {
+      "id": "db73cc26-700b-4298-af9f-06e5bf11f0f4",
+      "content_id": "cd6fe8fc-0111-4f03-917f-bc2b468172a0",
+      "claim_id": "C14",
+      "claim": "The model can reproduce infections which range from chronic to acute and from benign to lethal.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that only models with complex, non-linear regulations of immunity can satisfactorily reproduce infections which range from chronic to acute and from benign to lethal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the model analysis",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:10:01.798024Z"
+    },
+    {
+      "id": "c1e17d73-3fd0-4def-9809-2a16c94131eb",
+      "content_id": "cd6fe8fc-0111-4f03-917f-bc2b468172a0",
+      "claim_id": "C15",
+      "claim": "The model adequately predicts both the existence and the properties of the SPPL if defense production is assumed to decrease with accumulating damage.",
+      "claim_type": "EXPLICIT",
+      "source": "We further demonstrated that the model adequately predicts both the existence and the properties of the SPPL if defense production is assumed to decrease with accumulating damage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the model analysis",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:10:01.798024Z"
+    },
+    {
+      "id": "165c1722-a638-4d12-8174-451ef1d41a6d",
+      "content_id": "cd6fe8fc-0111-4f03-917f-bc2b468172a0",
+      "claim_id": "C16",
+      "claim": "The SPPL can be transient and predict the host's lifespan.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that the SPPL can then be transient and does, as documented in HIV infections, predict the host's lifespan.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a model prediction supported by comparison to HIV infection data",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:10:01.798024Z"
+    },
+    {
+      "id": "060f1336-951e-4d8a-9a1b-183a0ecf72c2",
+      "content_id": "cd6fe8fc-0111-4f03-917f-bc2b468172a0",
+      "claim_id": "C17",
+      "claim": "The PLUD is virtually independent of inoculum size.",
+      "claim_type": "EXPLICIT",
+      "source": "Our model also predicts that the host dies at a PLUD which is virtually independent of inoculum size (as observed by Duneau et al., 2017a)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a model prediction that matches empirical observations",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:10:01.798024Z"
+    },
+    {
+      "id": "561a37e5-7c32-4bd0-b854-4acff5711c78",
+      "content_id": "cd6fe8fc-0111-4f03-917f-bc2b468172a0",
+      "claim_id": "C18",
+      "claim": "The PLUD should reflect the genetic characteristics of interacting pathogens and hosts.",
+      "claim_type": "EXPLICIT",
+      "source": "and should therefore reflect the genetic characteristics of interacting pathogens and hosts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the model's prediction about PLUD independence from initial conditions",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:10:01.798024Z"
+    },
+    {
+      "id": "a546bb52-c2f1-40fa-aa01-0707fdbd577f",
+      "content_id": "cd6fe8fc-0111-4f03-917f-bc2b468172a0",
+      "claim_id": "C21",
+      "claim": "Empirical evidence of bistability indicates that the infection lowers the immune defense either directly or indirectly through resource diversion or damage accumulation.",
+      "claim_type": "EXPLICIT",
+      "source": "We, therefore, propose that empirical evidence of bistability, such as in Figure 1, indicate that the infection lowers the immune defense either directly, as in Ellner et al., 2021, or indirectly, through resource diversion, as in van Leeuwen et al., 2019, or damage accumulation, as in our model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the model combined with citations to other theoretical work",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:10:01.798024Z"
+    },
+    {
+      "id": "a4546208-d1c3-4221-b16a-542645068321",
+      "content_id": "cd6fe8fc-0111-4f03-917f-bc2b468172a0",
+      "claim_id": "C24",
+      "claim": "The SPPL depends on initial inoculum when Drosophila are infected by pathogenic bacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "These results are in line with empirical results, as the SPPL depends on initial inoculum when Drosophila are infected by pathogenic bacteria (Chambers et al., 2019; Duneau et al., 2017a; Acu\u00f1a Hidalgo et al., 2021)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to empirical studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:10:01.798024Z"
+    },
+    {
+      "id": "b469ef99-d858-4d33-9d00-d419f11428d3",
+      "content_id": "cd6fe8fc-0111-4f03-917f-bc2b468172a0",
+      "claim_id": "C25",
+      "claim": "The SPPL does not depend on initial inoculum when Drosophila are infected by non-pathogenic bacteria such as E. coli.",
+      "claim_type": "EXPLICIT",
+      "source": "but not when infected by non-pathogenic bacteria such as E. coli (Ramirez-Corona et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to empirical study",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:10:01.798024Z"
+    },
+    {
+      "id": "45facd7b-8376-47e7-9e24-f5baa07aeebd",
+      "content_id": "cd6fe8fc-0111-4f03-917f-bc2b468172a0",
+      "claim_id": "C26",
+      "claim": "Testing the link between the SPPL and the initial dose is a way to experimentally demonstrate that the control over infection is transient.",
+      "claim_type": "EXPLICIT",
+      "source": "We, therefore, propose that testing the link between the SPPL and the initial dose is a way to experimentally demonstrate that the control over infection is transient.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed experimental method based on model predictions",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:10:01.798024Z"
+    },
+    {
+      "id": "a9d18e26-4e9e-4c41-94f7-567b86cadda5",
+      "content_id": "cd6fe8fc-0111-4f03-917f-bc2b468172a0",
+      "claim_id": "C27",
+      "claim": "The PLUD increases when resistance is diminished.",
+      "claim_type": "EXPLICIT",
+      "source": "Another particularity of the PLUD, is that it increases when resistance is diminished (red curves in Figure 5C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by model simulations shown in Figure 5C",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:10:01.798024Z"
+    },
+    {
+      "id": "12d4b1f2-6384-4423-8f78-29752510bf85",
+      "content_id": "cd6fe8fc-0111-4f03-917f-bc2b468172a0",
+      "claim_id": "C28",
+      "claim": "The PLUD decreases when tolerance is lowered.",
+      "claim_type": "EXPLICIT",
+      "source": "but decreases when tolerance is lowered (blue curves in Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by model simulations shown in Figure 5C",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:10:01.798024Z"
+    },
+    {
+      "id": "9947e364-82c7-4546-8951-41565f572b03",
+      "content_id": "cd6fe8fc-0111-4f03-917f-bc2b468172a0",
+      "claim_id": "C29",
+      "claim": "Variations in parameters which have a direct impact on the dynamics of damage produce a negative correlation between PLUD and HR.",
+      "claim_type": "EXPLICIT",
+      "source": "As a result, variations in parameters which have a direct impact on the dynamics of damage produce a negative correlation between PLUD and HR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the elasticity analysis of the model",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:10:01.798024Z"
+    },
+    {
+      "id": "3f6058dc-3aa6-496d-956c-26672fec48ee",
+      "content_id": "cd6fe8fc-0111-4f03-917f-bc2b468172a0",
+      "claim_id": "C30",
+      "claim": "Variations in parameters that control the defense result in a positive correlation between the PLUD and HR.",
+      "claim_type": "EXPLICIT",
+      "source": "Variations in parameters that control the defense, therefore, result in a positive correlation between the PLUD and HR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the elasticity analysis of the model",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:10:01.798024Z"
+    },
+    {
+      "id": "f66fd5c4-43e6-417c-928d-248fbfa08efb",
+      "content_id": "cd6fe8fc-0111-4f03-917f-bc2b468172a0",
+      "claim_id": "C31",
+      "claim": "Faster death would indicate lower tolerance when associated with lower PLUD.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, Figure 6 indicates that faster death (i.e. increased HR) would indicate lower tolerance when associated with lower PLUD",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference from the analysis shown in Figure 6",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:10:01.798024Z"
+    },
+    {
+      "id": "fa7dc32c-efd5-4595-bf77-31b82d0aaf7b",
+      "content_id": "cd6fe8fc-0111-4f03-917f-bc2b468172a0",
+      "claim_id": "C32",
+      "claim": "Faster death would suggest lower resistance in case of higher PLUD.",
+      "claim_type": "EXPLICIT",
+      "source": "when it would rather suggest lower resistance in case of higher PLUD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the analysis shown in Figure 6",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:10:01.798024Z"
+    },
+    {
+      "id": "ea66f5d8-389d-49f7-b7e4-573c90cfda67",
+      "content_id": "cd6fe8fc-0111-4f03-917f-bc2b468172a0",
+      "claim_id": "C33",
+      "claim": "The wound significantly reduced survival in Drosophila melanogaster infected with Providencia rettgeri.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that indeed, the wound significantly reduced survival (Cox proportional hazard model with random experimental blocks: X2 = 1397.44, degrees of freedom (df) = 1, p - value < 2.2e-16).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by statistical analysis of experimental data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:10:01.798024Z"
+    },
+    {
+      "id": "acd687ab-5428-496b-87c9-582faba49090",
+      "content_id": "cd6fe8fc-0111-4f03-917f-bc2b468172a0",
+      "claim_id": "C34",
+      "claim": "Wounded hosts die at a PLUD significantly higher than non-wounded hosts.",
+      "claim_type": "EXPLICIT",
+      "source": "We found in both analyses that wounded hosts die at a PLUD significantly higher than non-wounded (linear mixed model with random experimental blocks: X2 = 11.29, df = 1, p - value = 0.008 with outliers removed; X2 = 11.04, df = 1, p - value = 0.0009 with outliers retained)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by statistical analysis of experimental data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:10:01.798024Z"
+    },
+    {
+      "id": "f0658e80-f83f-4269-a438-1b818b6c9773",
+      "content_id": "cd6fe8fc-0111-4f03-917f-bc2b468172a0",
+      "claim_id": "C35",
+      "claim": "The wound increases both hazard ratio and PLUD.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall the wound does increase both hazard ratio and PLUD, as our model predicts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data that confirms model predictions",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:10:01.798024Z"
+    },
+    {
+      "id": "d9000351-3ab8-4223-9f57-e5532747c8b8",
+      "content_id": "cd6fe8fc-0111-4f03-917f-bc2b468172a0",
+      "claim_id": "C36",
+      "claim": "Inflicting damage to D. melanogaster hinders the production of defense, and thus indirectly reduces resistance.",
+      "claim_type": "EXPLICIT",
+      "source": "This result can be taken as an evidence that inflicting damage to D. melanogaster hinders the production of defense, and thus indirectly reduces resistance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the experimental results",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:10:01.798024Z"
+    },
+    {
+      "id": "10e22641-3d23-4e0b-aaf0-dbcdf4fe8078",
+      "content_id": "cd6fe8fc-0111-4f03-917f-bc2b468172a0",
+      "claim_id": "C37",
+      "claim": "The PLUD exhibited an increase when the Imd pathway was suppressed.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that the PLUD exhibited an increase when the Imd pathway was suppressed (Kruskal-Wallis: X2 = 7.87, df = 1, p-value = 0.005)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by statistical analysis of experimental data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:10:01.798024Z"
+    },
+    {
+      "id": "debea976-5dd2-4580-8ca9-7b7bd690d38b",
+      "content_id": "cd6fe8fc-0111-4f03-917f-bc2b468172a0",
+      "claim_id": "C38",
+      "claim": "The PLUD exhibited an increase when melanization was inhibited.",
+      "claim_type": "EXPLICIT",
+      "source": "or when melanization was inhibited (Kruskal-Wallis: X2 = 15.56, df = 1, p-value = 7.9e-5).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by statistical analysis of experimental data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:10:01.798024Z"
+    },
+    {
+      "id": "0ff920bd-d773-4557-aa5a-b6e8718c0292",
+      "content_id": "cd6fe8fc-0111-4f03-917f-bc2b468172a0",
+      "claim_id": "C39",
+      "claim": "There was no significant change in PLUD when the Toll pathway was suppressed.",
+      "claim_type": "EXPLICIT",
+      "source": "However, there was no significant change in PLUD when the Toll pathway was suppressed (Kruskal-Wallis: X2 = 0.03, df = 1, p-value = 0.86).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by statistical analysis of experimental data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:10:01.798024Z"
+    },
+    {
+      "id": "4347805d-1199-4dc0-903b-a466bf45c2f7",
+      "content_id": "cd6fe8fc-0111-4f03-917f-bc2b468172a0",
+      "claim_id": "C40",
+      "claim": "Lines A, B, and AB have higher death rates when infected by P. rettgeri compared to line Bom\u039455C.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that, compared to line Bom\u039455C, lines A, B, and AB have higher death rates when infected by P. rettgeri (Figure 8A; Cox proportional hazard model with random experimental blocks: X2 = 138.12, df = 3, p-value = 9.6e-30)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by statistical analysis of experimental data shown in Figure 8A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:10:01.798024Z"
+    },
+    {
+      "id": "c840555b-36fc-44ec-bae6-697f263acf9a",
+      "content_id": "cd6fe8fc-0111-4f03-917f-bc2b468172a0",
+      "claim_id": "C41",
+      "claim": "Lines A, B, and AB have higher PLUD compared to line Bom\u039455C.",
+      "claim_type": "EXPLICIT",
+      "source": "and higher PLUD (Figure 8B; linear mixed model with random experimental blocks: X2 = 17.01, df = 3 , p-value = 0.0007).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by statistical analysis of experimental data shown in Figure 8B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:10:01.798024Z"
+    },
+    {
+      "id": "ae3a1aa1-c48e-44bf-825f-7958ec0117c6",
+      "content_id": "cd6fe8fc-0111-4f03-917f-bc2b468172a0",
+      "claim_id": "C42",
+      "claim": "Deleting Diptericin A makes the mutant more susceptible to P. rettgeri infection than Drs mutant.",
+      "claim_type": "EXPLICIT",
+      "source": "(D) demonstrates that deleting Diptericin A is sufficient to make the mutant more susceptible to the infection than Drs mutant.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 8D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:10:01.798024Z"
+    },
+    {
+      "id": "0a0b2585-1863-4771-9f07-75e1324c3a72",
+      "content_id": "cd6fe8fc-0111-4f03-917f-bc2b468172a0",
+      "claim_id": "C43",
+      "claim": "Deleting Diptericin A increases the PLUD.",
+      "claim_type": "EXPLICIT",
+      "source": "(E and F) demonstrate that this increase in susceptibility goes together with an increase in PLUD.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 8E and F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:10:01.798024Z"
+    },
+    {
+      "id": "8ebd5c35-bba2-4883-b001-9d9a476aeb24",
+      "content_id": "cd6fe8fc-0111-4f03-917f-bc2b468172a0",
+      "claim_id": "C44",
+      "claim": "Silencing Diptericin A accelerates death.",
+      "claim_type": "EXPLICIT",
+      "source": "Silencing Diptericin A accelerates death (G)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 8G",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:10:01.798024Z"
+    },
+    {
+      "id": "b1975d87-09d8-454a-a8cd-5eb6842d040e",
+      "content_id": "cd6fe8fc-0111-4f03-917f-bc2b468172a0",
+      "claim_id": "C45",
+      "claim": "Silencing Diptericin A significantly increases the PLUD.",
+      "claim_type": "EXPLICIT",
+      "source": "and significantly increases the PLUD (H-I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 8H-I",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:10:01.798024Z"
+    },
+    {
+      "id": "b839335a-1016-4b8d-95be-071dc77c5d59",
+      "content_id": "cd6fe8fc-0111-4f03-917f-bc2b468172a0",
+      "claim_id": "C46",
+      "claim": "A reduction in resistance caused by a lack of effectors provokes an increase in both HR and PLUD.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, based on previous results and on those three different approaches, we concluded that a reduction in resistance caused by a lack of effectors provokes an increase in both HR and PLUD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from multiple experimental approaches",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:10:01.798024Z"
+    },
+    {
+      "id": "bffb4a28-8de2-4eb1-aff6-e7c144e85c23",
+      "content_id": "cd6fe8fc-0111-4f03-917f-bc2b468172a0",
+      "claim_id": "C47",
+      "claim": "The increase in PLUD is remarkably constant throughout experiments (approx. +0.2) even though the HR varies from approx. +0.3 to +1.5.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, it should be noticed that, as our model predicts, the increase in PLUD is remarkably constant throughout experiments (approx. +0.2 in Figure 8C, F and I) even though the HR varies from approx. +0.3 to +1.5.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from experimental data shown in Figure 8",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:10:01.798024Z"
+    },
+    {
+      "id": "a8110b4a-6636-454f-86f5-18656bae7fb0",
+      "content_id": "cd6fe8fc-0111-4f03-917f-bc2b468172a0",
+      "claim_id": "C48",
+      "claim": "Catalase is among several enzymes involved in scavenging oxygen free radicals and protecting cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Catalase is among several enzymes involved in scavenging oxygen free radicals and protecting those cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about Catalase function",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:10:01.798024Z"
+    },
+    {
+      "id": "fbead17f-8b7b-480e-aee8-2b5bd71d87a0",
+      "content_id": "cd6fe8fc-0111-4f03-917f-bc2b468172a0",
+      "claim_id": "C49",
+      "claim": "The activity of Catalases into reducing reactive oxygen species has been shown in Drosophila infections.",
+      "claim_type": "EXPLICIT",
+      "source": "The activity of Catalases into reducing reactive oxygen species has been shown in Drosophila infections (Ha et al., 2005)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Ha et al., 2005",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:10:01.798024Z"
+    },
+    {
+      "id": "5b5aad58-938e-4369-916f-38d93ed1094b",
+      "content_id": "cd6fe8fc-0111-4f03-917f-bc2b468172a0",
+      "claim_id": "C50",
+      "claim": "Silencing Catalase increases flies susceptibility to systemic bacterial infection.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that silencing Catalase ubiquitously with Actin-Gal4 driving an RNAi does increase flies susceptibility to systemic bacterial infection when comparing to a match genetic background as control (i.e. attP2 control line, the advised RNAi control for the attP2 genetic background of the TRiP genetic RNAi panel, see Figure 9A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 9A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:10:01.798024Z"
+    },
+    {
+      "id": "61979e06-ff41-4a34-ae31-df2d73f51179",
+      "content_id": "cd6fe8fc-0111-4f03-917f-bc2b468172a0",
+      "claim_id": "C51",
+      "claim": "Silencing Catalase decreases the PLUD.",
+      "claim_type": "EXPLICIT",
+      "source": "We further observed that silencing Catalase does decrease the PLUD (see Figure 9B; linear mixed model with random experimental blocks and a correction for heteroscedasticity: X2 = 23.33, df = 1, p-value = 1.37e-6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by statistical analysis of experimental data shown in Figure 9B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:10:01.798024Z"
+    },
+    {
+      "id": "e4ae696a-1849-4813-8e64-fa508f220eb4",
+      "content_id": "cd6fe8fc-0111-4f03-917f-bc2b468172a0",
+      "claim_id": "C52",
+      "claim": "Catalase is part of the arsenal that enable a fly to tolerate bacterial infections.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, based on its known functions and the fact that our experimental results follow the predictions of our theoretical model, we propose that Catalase is part of the arsenal that enable a fly to tolerate bacterial infections.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on known Catalase function and experimental results matching model predictions",
+      "evidence_type": "[\"INFERENCE\", \"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:10:01.798024Z"
+    },
+    {
+      "id": "811e2066-acc6-493c-b0f1-2809a8e7ebdd",
+      "content_id": "cd6fe8fc-0111-4f03-917f-bc2b468172a0",
+      "claim_id": "C53",
+      "claim": "The SPPL in HIV infections is highly variable among patients.",
+      "claim_type": "EXPLICIT",
+      "source": "First, it is highly variable among patients",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an established observation about HIV infections",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:10:01.798024Z"
+    },
+    {
+      "id": "4019226f-54e3-4bd3-9d78-cc17193b7ae3",
+      "content_id": "cd6fe8fc-0111-4f03-917f-bc2b468172a0",
+      "claim_id": "C54",
+      "claim": "The SPPL in HIV infections is heritable, meaning that the SPPL of a newly infected patient positively correlates to that of the person it has been infected by.",
+      "claim_type": "EXPLICIT",
+      "source": "second, it is heritable, which means that the SPPL of a newly infected patient positively correlates to that of the person it has been infected by.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an established observation about HIV infections",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:10:01.798024Z"
+    },
+    {
+      "id": "b5712272-efd5-4dc2-b25c-f2de5f9a8616",
+      "content_id": "cd6fe8fc-0111-4f03-917f-bc2b468172a0",
+      "claim_id": "C55",
+      "claim": "High SPPL in HIV infections is associated to short asymptomatic phases and rapid progression to the final stage of the disease.",
+      "claim_type": "EXPLICIT",
+      "source": "This is particularly well established in the specific case of HIV infections, where high SPPL is associated to short asymptomatic phases and rapid progression to the final stage of the disease (Fraser et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Fraser et al., 2007",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:10:01.798024Z"
+    },
+    {
+      "id": "4e8d0d0e-1475-4e5c-abff-e3dd45883442",
+      "content_id": "cd6fe8fc-0111-4f03-917f-bc2b468172a0",
+      "claim_id": "C56",
+      "claim": "Part of the large variance in SPPL could be non-genetic yet heritable.",
+      "claim_type": "EXPLICIT",
+      "source": "Our model suggests that part of the large variance in SPPL could be non-genetic yet heritable.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis proposed based on model predictions",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:10:01.798024Z"
+    },
+    {
+      "id": "a598bd16-8108-4fe8-9975-63437ed74ae0",
+      "content_id": "cd6fe8fc-0111-4f03-917f-bc2b468172a0",
+      "claim_id": "C57",
+      "claim": "If transmission events occur during chronicity, the inoculum size should increase with the SPPL of the donor host.",
+      "claim_type": "EXPLICIT",
+      "source": "If transmission events occur during chronicity, the inoculum size should indeed increase with the SPPL of the donor host (as suggested by Fraser et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference supported by citation",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:10:01.798024Z"
+    },
+    {
+      "id": "efd02e4a-5224-4403-af0e-d3444579544c",
+      "content_id": "cd6fe8fc-0111-4f03-917f-bc2b468172a0",
+      "claim_id": "C58",
+      "claim": "The fact that the transient SPPL increases with inoculum size could suffice to create a form of non-genetic heritability in SPPL.",
+      "claim_type": "EXPLICIT",
+      "source": "As we have demonstrated that the transient SPPL does increase with inoculum size, the SPPL of a newly contaminated host should reflect that of the donor host. The fact that the transient SPPL increases with inoculum size could, therefore, suffice to create a form of non-genetic heritability in SPPL.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from model predictions",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:10:01.798024Z"
+    },
+    {
+      "id": "f1e94fa5-bcae-46c0-a994-4bd8c492d75d",
+      "content_id": "cd6fe8fc-0111-4f03-917f-bc2b468172a0",
+      "claim_id": "C59",
+      "claim": "Showing that the SPPL is transient informs on the fact that the pathogens, or the damage they cause, obstruct the immune response.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, showing that the SPPL is transient informs on the fact that the pathogens, or the damage they cause, obstruct the immune response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the model's bistability conditions",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:10:01.798024Z"
+    },
+    {
+      "id": "e9e2e310-f55a-470d-830d-eaefb267d6ec",
+      "content_id": "cd6fe8fc-0111-4f03-917f-bc2b468172a0",
+      "claim_id": "C60",
+      "claim": "Duneau et al., 2017a demonstrated that within-host evolution did not explain bifurcation in their experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "We did not consider this possibility, first because it is beyond the scope of our study, and second because Duneau et al., 2017a demonstrated that within-host evolution did not explain bifurcation in their experiments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Duneau et al., 2017a",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:10:01.798024Z"
+    },
+    {
+      "id": "66053df7-b335-4bf2-9f1b-28455a440ee0",
+      "content_id": "cd6fe8fc-0111-4f03-917f-bc2b468172a0",
+      "claim_id": "C62",
+      "claim": "Hosts with an impeded immune response are expected to have a higher PLUD.",
+      "claim_type": "EXPLICIT",
+      "source": "We conversely predict that hosts with an impeded immune response are expected to have a higher PLUD, which we confirmed with an experimental design more powerful than that of Duneau et al., 2017a (see Figure 8).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a model prediction confirmed by experimental data in Figure 8",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:10:01.798024Z"
+    },
+    {
+      "id": "a837e7db-4666-45bd-9ff5-96a3f1701dbb",
+      "content_id": "cd6fe8fc-0111-4f03-917f-bc2b468172a0",
+      "claim_id": "C64",
+      "claim": "Flies injected with large inoculum die faster but at the same load than flies infected with small inoculum.",
+      "claim_type": "EXPLICIT",
+      "source": "The PLUD, unlike the transient SPPL this time, is independent from inoculum size: flies injected with large inoculum die faster but at the same load than flies infected with small inoculum (Duneau et al., 2017a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Duneau et al., 2017a",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:10:01.798024Z"
+    },
+    {
+      "id": "4f51606c-8664-484d-816f-1dcfdc29def7",
+      "content_id": "cd6fe8fc-0111-4f03-917f-bc2b468172a0",
+      "claim_id": "C65",
+      "claim": "The model reproduces the observation that PLUD is independent from inoculum size.",
+      "claim_type": "EXPLICIT",
+      "source": "Our model reproduces this observation",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a model result",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:10:01.798024Z"
+    },
+    {
+      "id": "a557d7d3-187c-4537-9f1b-d842855c0289",
+      "content_id": "cd6fe8fc-0111-4f03-917f-bc2b468172a0",
+      "claim_id": "C66",
+      "claim": "The PLUD independence from inoculum size happens because pathogen load is a 'fast variable'.",
+      "claim_type": "EXPLICIT",
+      "source": "and we have demonstrated mathematically that this happens because pathogen load is a 'fast variable' (Van Kampen, 1985, see Appendix 4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mathematical demonstration from the model",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:10:01.798024Z"
+    },
+    {
+      "id": "0dec4507-e181-4f35-990b-79f5959e4f05",
+      "content_id": "cd6fe8fc-0111-4f03-917f-bc2b468172a0",
+      "claim_id": "C67",
+      "claim": "Hemocytes have no detectable effects on infections caused by Providencia rettgeri.",
+      "claim_type": "EXPLICIT",
+      "source": "but hemocytes have no detectable effects on infections caused by Providencia rettgeri (Duneau et al., 2017a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Duneau et al., 2017a",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:10:01.798024Z"
+    },
+    {
+      "id": "31767be6-bb34-4333-b4c2-6dba568d1d4b",
+      "content_id": "cd6fe8fc-0111-4f03-917f-bc2b468172a0",
+      "claim_id": "C68",
+      "claim": "The wound decreases resistance, as indicated by Chambers et al., 2014.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, we expect that the wound decreases resistance, as indicated by Chambers et al., 2014.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Chambers et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:10:01.798024Z"
+    },
+    {
+      "id": "07a7cce6-ec8e-43e1-b7d3-b03fcb1e4a73",
+      "content_id": "cd6fe8fc-0111-4f03-917f-bc2b468172a0",
+      "claim_id": "C69",
+      "claim": "Defensin is an antimicrobial peptide strongly upregulated upon P. rettgeri infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Line A lacks Defensin, an antimicrobial peptide strongly upregulated upon P. rettgeri infection (Duneau et al., 2017b; Troha et al., 2018)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Duneau et al., 2017b and Troha et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:10:01.798024Z"
+    },
+    {
+      "id": "3537ed2f-acf4-4f83-a44b-fd118c13bba1",
+      "content_id": "cd6fe8fc-0111-4f03-917f-bc2b468172a0",
+      "claim_id": "C70",
+      "claim": "Defensin has moderate effects on survival in P. rettgeri infections.",
+      "claim_type": "EXPLICIT",
+      "source": "but with moderate effects on survival (Hanson et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Hanson et al., 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:10:01.798024Z"
+    },
+    {
+      "id": "d33f11d2-817b-4640-a54f-9c2bc4a5f035",
+      "content_id": "cd6fe8fc-0111-4f03-917f-bc2b468172a0",
+      "claim_id": "C71",
+      "claim": "Lines B and AB, which both lack Diptericins, are expected to be highly susceptible to P. rettgeri.",
+      "claim_type": "EXPLICIT",
+      "source": "Lines B and AB, which both lack Diptericins, are conversely expected to be highly susceptible to P. rettgeri (Hanson et al., 2019; Unckless et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Hanson et al., 2019 and Unckless et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:10:01.798024Z"
+    },
+    {
+      "id": "f0e2c5b3-0d1e-4fe4-89f3-b39b40b79b92",
+      "content_id": "cd6fe8fc-0111-4f03-917f-bc2b468172a0",
+      "claim_id": "C72",
+      "claim": "Bom\u039455C mutants have a PLUD comparable to controls when infected with Enterococcus faecalis.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, previous experiments have shown that Bom\u039455C mutants have a PLUD comparable to controls when infected with the gram positive bacteria Enterococcus faecalis (Lin et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Lin et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:10:01.798024Z"
+    },
+    {
+      "id": "51339f0a-8327-4a39-947a-a067e7434c24",
+      "content_id": "cd6fe8fc-0111-4f03-917f-bc2b468172a0",
+      "claim_id": "C73",
+      "claim": "Diptericin A has been shown to be the most active AMP against P. rettgeri.",
+      "claim_type": "EXPLICIT",
+      "source": "Diptericin A has been shown to be the most active AMP against P. rettgeri",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:10:01.798024Z"
+    },
+    {
+      "id": "a076e2ad-6bc4-4a75-b0b5-b30742f70aa4",
+      "content_id": "cd6fe8fc-0111-4f03-917f-bc2b468172a0",
+      "claim_id": "C74",
+      "claim": "Drosomycin is active mostly against gram positive bacteria and fungi.",
+      "claim_type": "EXPLICIT",
+      "source": "while Drosomycin is active mostly against gram positive bacteria and fungi.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:10:01.798024Z"
+    },
+    {
+      "id": "f3d70fe8-94fe-4ab8-a67d-8ebd5474f5e5",
+      "content_id": "cd6fe8fc-0111-4f03-917f-bc2b468172a0",
+      "claim_id": "C75",
+      "claim": "Drosomycin is an antifungi AMP that is inactive against bacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "Drosomycin being an antifungi AMP that is inactive against bacteria (Fehlbaum et al., 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Fehlbaum et al., 1994",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:10:01.798024Z"
+    },
+    {
+      "id": "85ea03cb-d487-4a81-af18-46e5c21c168e",
+      "content_id": "cd6fe8fc-0111-4f03-917f-bc2b468172a0",
+      "claim_id": "C76",
+      "claim": "Deleting Diptericin A is sufficient to make the mutant more susceptible to the infection than Drs mutant.",
+      "claim_type": "EXPLICIT",
+      "source": "We found again that death is faster and PLUD higher when Diptericins are deleted (Figure 8D\u2013F; linear mixed model with random experimental blocks: X2 = 10.11, df = 1, p-value = 0.001).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by statistical analysis of experimental data shown in Figure 8D-F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:10:01.798024Z"
+    },
+    {
+      "id": "31b255db-ee9f-4b84-a895-f886a167a001",
+      "content_id": "cd6fe8fc-0111-4f03-917f-bc2b468172a0",
+      "claim_id": "C77",
+      "claim": "Flies with silenced Diptericin A die faster and at a higher PLUD than controls.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that flies with silenced Diptericin A die faster and at a higher PLUD than controls (Figure 8G\u2013I; linear mixed model with random experimental blocks: X2 = 8.42, df = 1, p-value = 0.0037).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by statistical analysis of experimental data shown in Figure 8G-I",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:10:01.798024Z"
+    },
+    {
+      "id": "aab64ad6-62c8-4b8c-8d5e-1773582fc5e0",
+      "content_id": "cd6fe8fc-0111-4f03-917f-bc2b468172a0",
+      "claim_id": "C78",
+      "claim": "The log(HR) of silencing Catalase is comparable in strength to that of silencing Diptericin A.",
+      "claim_type": "EXPLICIT",
+      "source": "The log(HR) is comparable in strength to that of silencing Diptericin A.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from comparing experimental results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:10:01.798024Z"
+    },
+    {
+      "id": "6d4faa7f-2bbe-478e-b42d-74c51a65ab2b",
+      "content_id": "cd6fe8fc-0111-4f03-917f-bc2b468172a0",
+      "claim_id": "C79",
+      "claim": "The relative difference in PLUD (i.e. log(PLUD ratio)) from silencing Catalase was comparable in strength to that of silencing Diptericin A, but of opposite sign.",
+      "claim_type": "EXPLICIT",
+      "source": "Again, although the level of PLUD was different, likely due to the difference in genetic background, the relative difference (i.e. log(PLUD ratio)) was comparable in strength to that of silencing Diptericin A, but of opposite sign.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from comparing experimental results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:10:01.798024Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "c73bab1e-9e60-4fcf-b249-4b9c19a1743c",
+      "content_id": "cd6fe8fc-0111-4f03-917f-bc2b468172a0",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The mathematical model predicts that chronic infections stabilize at a Set-Point Pathogen Load (SPPL), which can be either transient (predicting lifespan and depending on initial conditions) or stable (diagnostic of non-lethal chronic infections). The model requires complex, non-linear regulation of immunity and assumes defense production decreases with accumulating damage to adequately predict SPPL properties.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C7, C14-C16 collectively describe model predictions about SPPL behavior that are internally consistent with the mathematical framework presented. The model successfully reproduces different infection outcomes (chronic to acute, benign to lethal) and predicts SPPL properties that align with empirical observations in HIV and Drosophila infections cited in the manuscript.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T05:10:01.798024Z"
+    },
+    {
+      "id": "9f0adb5d-7182-43d7-a99e-ceacc6786a4f",
+      "content_id": "cd6fe8fc-0111-4f03-917f-bc2b468172a0",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The model predicts that in lethal infections, hosts die at a Pathogen Load Upon Death (PLUD) that is virtually independent of initial conditions including inoculum size. This independence occurs because pathogen load is a 'fast variable' that becomes enslaved to the slower dynamics of defense and damage, causing all lethal infections to converge to similar final trajectories.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8, C17-C18, C64-C66 present a coherent theoretical prediction supported by mathematical demonstration (Appendix 4 referenced in C66) and empirical validation from Duneau et al. 2017a (C64). The mechanistic explanation via fast-variable dynamics provides a rigorous theoretical foundation for the PLUD's independence from initial conditions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T05:10:01.798024Z"
+    },
+    {
+      "id": "e4cd89f8-c61c-4861-8a31-ed4f24a3ddc0",
+      "content_id": "cd6fe8fc-0111-4f03-917f-bc2b468172a0",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The model predicts that PLUD can distinguish between effects of disease tolerance and resistance when combined with mortality measurements. Specifically, decreased resistance increases both PLUD and hazard ratio (positive correlation), while decreased tolerance decreases PLUD but increases hazard ratio (negative correlation).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9, C27-C32 describe a theoretically derived method for distinguishing tolerance from resistance based on the differential effects of these parameters on PLUD and mortality. The elasticity analysis (referenced in C29-C30) and Figure 6 simulations (C31-C32) provide mathematical support for these predictions, which are later validated experimentally.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T05:10:01.798024Z"
+    },
+    {
+      "id": "0d81955e-0ea4-4b24-b35a-3d15548b81bf",
+      "content_id": "cd6fe8fc-0111-4f03-917f-bc2b468172a0",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Experimental validation shows that wounding Drosophila melanogaster before infection with Providencia rettgeri significantly reduces survival and increases PLUD, confirming model predictions. This result suggests that inflicting damage hinders defense production and indirectly reduces resistance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C36 and C10 present experimental results with appropriate statistical tests (Cox proportional hazard model, linear mixed models with p-values < 0.01) across multiple genotypes. The results consistently show increased PLUD with wounding, matching model predictions and supporting the interpretation that damage impairs defense production.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T05:10:01.798024Z"
+    },
+    {
+      "id": "f48c8649-39ff-4878-9357-47aa7df8e614",
+      "content_id": "cd6fe8fc-0111-4f03-917f-bc2b468172a0",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Multiple experimental approaches demonstrate that reducing resistance through deletion or silencing of antimicrobial peptides (particularly Diptericins) increases both hazard ratio and PLUD in Drosophila infected with P. rettgeri. The increase in PLUD is remarkably constant (~+0.2) across experiments despite variable effects on hazard ratio.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C47 and C11 present convergent evidence from three independent experimental designs (AMP deletion mutants, specific Diptericin deletions, and RNAi silencing) with appropriate statistical analyses and controls. The consistency of PLUD increases across different genetic backgrounds and methods (C47) strengthens the conclusion that reduced resistance increases PLUD as predicted by the model.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T05:10:01.798024Z"
+    },
+    {
+      "id": "d030c64b-6389-455f-8ef4-f28e6d1c3120",
+      "content_id": "cd6fe8fc-0111-4f03-917f-bc2b468172a0",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Silencing Catalase in Drosophila increases susceptibility to bacterial infection but decreases PLUD, consistent with a role in disease tolerance rather than resistance. This supports the model prediction that reduced tolerance decreases PLUD while increasing mortality risk.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C52 and C12 provide experimental validation of the tolerance prediction using Catalase, an enzyme with well-established protective functions against oxidative damage (C48-C49). The statistical evidence is strong (p = 1.37e-6 for PLUD decrease, C51), and the opposite direction of PLUD change compared to resistance mutants (C79) supports the interpretation that Catalase contributes to tolerance mechanisms.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T05:10:01.798024Z"
+    },
+    {
+      "id": "a38b5791-a0e2-4a7c-a606-2d312c8ab30a",
+      "content_id": "cd6fe8fc-0111-4f03-917f-bc2b468172a0",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The model demonstrates that bistability in infection outcomes requires that pathogens or damage obstruct immune defense production, either directly or indirectly. Empirical evidence of bistability (such as bifurcating infection outcomes) indicates such negative feedback mechanisms are operating.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13, C21, C59-C60 connect theoretical bistability conditions to biological mechanisms and empirical observations. The mathematical analysis (referenced in Appendix 1) establishes necessary conditions for bistability, and the exclusion of within-host evolution as an alternative explanation (C60, citing Duneau et al. 2017a) strengthens the interpretation that damage-mediated feedback is responsible.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T05:10:01.798024Z"
+    },
+    {
+      "id": "0f027dea-e80d-402b-b7a7-0b15c86c5306",
+      "content_id": "cd6fe8fc-0111-4f03-917f-bc2b468172a0",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The model predicts and empirical evidence confirms that SPPL depends on initial inoculum when Drosophila are infected by pathogenic bacteria but not by non-pathogenic bacteria like E. coli. Testing this dose-dependence provides an experimental method to demonstrate transient control over infection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C26 connect model predictions to empirical observations with appropriate citations (Chambers et al. 2019, Duneau et al. 2017a for pathogenic bacteria; Ramirez-Corona et al. 2021 for E. coli). The proposed experimental method (C26) logically follows from the model's distinction between transient and stable SPPLs.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T05:10:01.798024Z"
+    },
+    {
+      "id": "c0cc8a3b-502c-45fc-8328-46d7f14877cd",
+      "content_id": "cd6fe8fc-0111-4f03-917f-bc2b468172a0",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The model proposes that the heritable variation in SPPL observed in HIV infections could be partially explained by non-genetic mechanisms: if transmission occurs during chronicity, inoculum size correlates with donor SPPL, and since transient SPPL increases with inoculum, recipient SPPL would reflect donor SPPL without requiring genetic transmission.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C53-C58 present an interesting hypothesis (C56 explicitly labeled as speculation) that could explain HIV SPPL heritability. While the logical chain is coherent and supported by model predictions about transient SPPL, this remains speculative without direct experimental validation. The hypothesis is plausible but requires empirical testing to confirm the proposed non-genetic heritability mechanism.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T05:10:01.798024Z"
+    },
+    {
+      "id": "c226859c-e171-4725-a68b-0779daa11915",
+      "content_id": "cd6fe8fc-0111-4f03-917f-bc2b468172a0",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The model predicts that hosts with impeded immune responses have higher PLUD, which was confirmed experimentally with more powerful designs than previous studies. Wounds are expected to decrease resistance based on prior literature, and hemocytes have no detectable effect on P. rettgeri infections.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62, C68, C67 connect model predictions to experimental validation and prior literature. The experimental confirmation in Figure 8 (C62) with improved statistical power supports the prediction. The citations to Chambers et al. 2014 (C68) and Duneau et al. 2017a (C67) provide appropriate context for interpreting the wound and hemocyte effects.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T05:10:01.798024Z"
+    },
+    {
+      "id": "8a81f6c5-7924-463c-9fc2-c5b3fc5f8a25",
+      "content_id": "cd6fe8fc-0111-4f03-917f-bc2b468172a0",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The experimental design uses well-characterized Drosophila mutant lines with deletions in specific antimicrobial peptides. Defensin has moderate effects on P. rettgeri survival, while Diptericins (especially Diptericin A) are highly active against this pathogen. Drosomycin is inactive against bacteria, and Bomanins primarily target gram-positive bacteria.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69-C77 describe the genetic tools and their known properties based on established literature (Duneau et al. 2017b, Troha et al. 2018, Hanson et al. 2019, Unckless et al. 2016, Lin et al. 2020, Fehlbaum et al. 1994). The characterization of these mutants provides appropriate controls and validates the experimental design for testing resistance effects on PLUD.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T05:10:01.798024Z"
+    },
+    {
+      "id": "70f8deac-7475-4214-a26d-27c4507be57c",
+      "content_id": "cd6fe8fc-0111-4f03-917f-bc2b468172a0",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The effects of silencing Catalase on hazard ratio are comparable in magnitude to silencing Diptericin A, but the effects on PLUD are opposite in direction (comparable magnitude but opposite sign), supporting the distinction between tolerance and resistance mechanisms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C78-C79 provide a direct comparison between a tolerance gene (Catalase) and a resistance gene (Diptericin A), showing that while both affect mortality similarly, their effects on PLUD differ in direction. This observation strongly supports the model's prediction that tolerance and resistance can be distinguished by their differential effects on PLUD and mortality.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T05:10:01.798024Z"
+    },
+    {
+      "id": "18bfd3c7-642e-457b-9a90-0fc8ae3d5286",
+      "content_id": "cd6fe8fc-0111-4f03-917f-bc2b468172a0",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Background claims establish that even deadly pathogens like Ebola have survivors, hosts survive infections through combined resistance and tolerance strategies, immune defense can cause pathologies, and invertebrates like Drosophila share innate immune mechanisms with mammals.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C4 present well-established background knowledge supported by appropriate citations (Shultz et al. 2016, Ayres and Schneider 2008, R\u00e5berg et al. 2007, Read et al. 2008, Kover and Schaal 2002, Critchlow et al. 2023, Lin et al. 2018, Petkau et al. 2017, Buchon et al. 2014). These claims provide necessary context for the study but are not novel findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T05:10:01.798024Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "0cb5cdc4-fb8e-452a-9fbc-82360a12edf5",
+      "result_id": "c73bab1e-9e60-4fcf-b249-4b9c19a1743c"
+    },
+    {
+      "claim_id": "1a9fa145-b6a9-4152-b4c0-91b64c53393f",
+      "result_id": "c73bab1e-9e60-4fcf-b249-4b9c19a1743c"
+    },
+    {
+      "claim_id": "c8d39263-7216-4853-912a-5637a4ea5a3c",
+      "result_id": "c73bab1e-9e60-4fcf-b249-4b9c19a1743c"
+    },
+    {
+      "claim_id": "db73cc26-700b-4298-af9f-06e5bf11f0f4",
+      "result_id": "c73bab1e-9e60-4fcf-b249-4b9c19a1743c"
+    },
+    {
+      "claim_id": "c1e17d73-3fd0-4def-9809-2a16c94131eb",
+      "result_id": "c73bab1e-9e60-4fcf-b249-4b9c19a1743c"
+    },
+    {
+      "claim_id": "165c1722-a638-4d12-8174-451ef1d41a6d",
+      "result_id": "c73bab1e-9e60-4fcf-b249-4b9c19a1743c"
+    },
+    {
+      "claim_id": "4fbe4d67-7d71-4655-aaa7-da9e390e77e6",
+      "result_id": "9f0adb5d-7182-43d7-a99e-ceacc6786a4f"
+    },
+    {
+      "claim_id": "060f1336-951e-4d8a-9a1b-183a0ecf72c2",
+      "result_id": "9f0adb5d-7182-43d7-a99e-ceacc6786a4f"
+    },
+    {
+      "claim_id": "561a37e5-7c32-4bd0-b854-4acff5711c78",
+      "result_id": "9f0adb5d-7182-43d7-a99e-ceacc6786a4f"
+    },
+    {
+      "claim_id": "a837e7db-4666-45bd-9ff5-96a3f1701dbb",
+      "result_id": "9f0adb5d-7182-43d7-a99e-ceacc6786a4f"
+    },
+    {
+      "claim_id": "4f51606c-8664-484d-816f-1dcfdc29def7",
+      "result_id": "9f0adb5d-7182-43d7-a99e-ceacc6786a4f"
+    },
+    {
+      "claim_id": "a557d7d3-187c-4537-9f1b-d842855c0289",
+      "result_id": "9f0adb5d-7182-43d7-a99e-ceacc6786a4f"
+    },
+    {
+      "claim_id": "10800cac-a5b5-422c-b5ab-03dcbc9b2f37",
+      "result_id": "e4cd89f8-c61c-4861-8a31-ed4f24a3ddc0"
+    },
+    {
+      "claim_id": "a9d18e26-4e9e-4c41-94f7-567b86cadda5",
+      "result_id": "e4cd89f8-c61c-4861-8a31-ed4f24a3ddc0"
+    },
+    {
+      "claim_id": "12d4b1f2-6384-4423-8f78-29752510bf85",
+      "result_id": "e4cd89f8-c61c-4861-8a31-ed4f24a3ddc0"
+    },
+    {
+      "claim_id": "9947e364-82c7-4546-8951-41565f572b03",
+      "result_id": "e4cd89f8-c61c-4861-8a31-ed4f24a3ddc0"
+    },
+    {
+      "claim_id": "3f6058dc-3aa6-496d-956c-26672fec48ee",
+      "result_id": "e4cd89f8-c61c-4861-8a31-ed4f24a3ddc0"
+    },
+    {
+      "claim_id": "f66fd5c4-43e6-417c-928d-248fbfa08efb",
+      "result_id": "e4cd89f8-c61c-4861-8a31-ed4f24a3ddc0"
+    },
+    {
+      "claim_id": "fa7dc32c-efd5-4595-bf77-31b82d0aaf7b",
+      "result_id": "e4cd89f8-c61c-4861-8a31-ed4f24a3ddc0"
+    },
+    {
+      "claim_id": "ea66f5d8-389d-49f7-b7e4-573c90cfda67",
+      "result_id": "0d81955e-0ea4-4b24-b35a-3d15548b81bf"
+    },
+    {
+      "claim_id": "acd687ab-5428-496b-87c9-582faba49090",
+      "result_id": "0d81955e-0ea4-4b24-b35a-3d15548b81bf"
+    },
+    {
+      "claim_id": "f0658e80-f83f-4269-a438-1b818b6c9773",
+      "result_id": "0d81955e-0ea4-4b24-b35a-3d15548b81bf"
+    },
+    {
+      "claim_id": "d9000351-3ab8-4223-9f57-e5532747c8b8",
+      "result_id": "0d81955e-0ea4-4b24-b35a-3d15548b81bf"
+    },
+    {
+      "claim_id": "a0136a10-ad48-4d0d-92da-f935c631255a",
+      "result_id": "0d81955e-0ea4-4b24-b35a-3d15548b81bf"
+    },
+    {
+      "claim_id": "10e22641-3d23-4e0b-aaf0-dbcdf4fe8078",
+      "result_id": "f48c8649-39ff-4878-9357-47aa7df8e614"
+    },
+    {
+      "claim_id": "debea976-5dd2-4580-8ca9-7b7bd690d38b",
+      "result_id": "f48c8649-39ff-4878-9357-47aa7df8e614"
+    },
+    {
+      "claim_id": "0ff920bd-d773-4557-aa5a-b6e8718c0292",
+      "result_id": "f48c8649-39ff-4878-9357-47aa7df8e614"
+    },
+    {
+      "claim_id": "4347805d-1199-4dc0-903b-a466bf45c2f7",
+      "result_id": "f48c8649-39ff-4878-9357-47aa7df8e614"
+    },
+    {
+      "claim_id": "c840555b-36fc-44ec-bae6-697f263acf9a",
+      "result_id": "f48c8649-39ff-4878-9357-47aa7df8e614"
+    },
+    {
+      "claim_id": "ae3a1aa1-c48e-44bf-825f-7958ec0117c6",
+      "result_id": "f48c8649-39ff-4878-9357-47aa7df8e614"
+    },
+    {
+      "claim_id": "0a0b2585-1863-4771-9f07-75e1324c3a72",
+      "result_id": "f48c8649-39ff-4878-9357-47aa7df8e614"
+    },
+    {
+      "claim_id": "8ebd5c35-bba2-4883-b001-9d9a476aeb24",
+      "result_id": "f48c8649-39ff-4878-9357-47aa7df8e614"
+    },
+    {
+      "claim_id": "b1975d87-09d8-454a-a8cd-5eb6842d040e",
+      "result_id": "f48c8649-39ff-4878-9357-47aa7df8e614"
+    },
+    {
+      "claim_id": "b839335a-1016-4b8d-95be-071dc77c5d59",
+      "result_id": "f48c8649-39ff-4878-9357-47aa7df8e614"
+    },
+    {
+      "claim_id": "bffb4a28-8de2-4eb1-aff6-e7c144e85c23",
+      "result_id": "f48c8649-39ff-4878-9357-47aa7df8e614"
+    },
+    {
+      "claim_id": "a8e27f7b-21cc-4682-8cb8-d5ef0ce98230",
+      "result_id": "f48c8649-39ff-4878-9357-47aa7df8e614"
+    },
+    {
+      "claim_id": "a8110b4a-6636-454f-86f5-18656bae7fb0",
+      "result_id": "d030c64b-6389-455f-8ef4-f28e6d1c3120"
+    },
+    {
+      "claim_id": "fbead17f-8b7b-480e-aee8-2b5bd71d87a0",
+      "result_id": "d030c64b-6389-455f-8ef4-f28e6d1c3120"
+    },
+    {
+      "claim_id": "5b5aad58-938e-4369-916f-38d93ed1094b",
+      "result_id": "d030c64b-6389-455f-8ef4-f28e6d1c3120"
+    },
+    {
+      "claim_id": "61979e06-ff41-4a34-ae31-df2d73f51179",
+      "result_id": "d030c64b-6389-455f-8ef4-f28e6d1c3120"
+    },
+    {
+      "claim_id": "e4ae696a-1849-4813-8e64-fa508f220eb4",
+      "result_id": "d030c64b-6389-455f-8ef4-f28e6d1c3120"
+    },
+    {
+      "claim_id": "9a42142f-2425-4533-9b61-a00e79858862",
+      "result_id": "d030c64b-6389-455f-8ef4-f28e6d1c3120"
+    },
+    {
+      "claim_id": "0e41badb-8b5c-41da-b233-5915078070fc",
+      "result_id": "a38b5791-a0e2-4a7c-a606-2d312c8ab30a"
+    },
+    {
+      "claim_id": "a546bb52-c2f1-40fa-aa01-0707fdbd577f",
+      "result_id": "a38b5791-a0e2-4a7c-a606-2d312c8ab30a"
+    },
+    {
+      "claim_id": "f1e94fa5-bcae-46c0-a994-4bd8c492d75d",
+      "result_id": "a38b5791-a0e2-4a7c-a606-2d312c8ab30a"
+    },
+    {
+      "claim_id": "e9e2e310-f55a-470d-830d-eaefb267d6ec",
+      "result_id": "a38b5791-a0e2-4a7c-a606-2d312c8ab30a"
+    },
+    {
+      "claim_id": "a4546208-d1c3-4221-b16a-542645068321",
+      "result_id": "0f027dea-e80d-402b-b7a7-0b15c86c5306"
+    },
+    {
+      "claim_id": "b469ef99-d858-4d33-9d00-d419f11428d3",
+      "result_id": "0f027dea-e80d-402b-b7a7-0b15c86c5306"
+    },
+    {
+      "claim_id": "45facd7b-8376-47e7-9e24-f5baa07aeebd",
+      "result_id": "0f027dea-e80d-402b-b7a7-0b15c86c5306"
+    },
+    {
+      "claim_id": "811e2066-acc6-493c-b0f1-2809a8e7ebdd",
+      "result_id": "c0cc8a3b-502c-45fc-8328-46d7f14877cd"
+    },
+    {
+      "claim_id": "4019226f-54e3-4bd3-9d78-cc17193b7ae3",
+      "result_id": "c0cc8a3b-502c-45fc-8328-46d7f14877cd"
+    },
+    {
+      "claim_id": "b5712272-efd5-4dc2-b25c-f2de5f9a8616",
+      "result_id": "c0cc8a3b-502c-45fc-8328-46d7f14877cd"
+    },
+    {
+      "claim_id": "4e8d0d0e-1475-4e5c-abff-e3dd45883442",
+      "result_id": "c0cc8a3b-502c-45fc-8328-46d7f14877cd"
+    },
+    {
+      "claim_id": "a598bd16-8108-4fe8-9975-63437ed74ae0",
+      "result_id": "c0cc8a3b-502c-45fc-8328-46d7f14877cd"
+    },
+    {
+      "claim_id": "efd02e4a-5224-4403-af0e-d3444579544c",
+      "result_id": "c0cc8a3b-502c-45fc-8328-46d7f14877cd"
+    },
+    {
+      "claim_id": "66053df7-b335-4bf2-9f1b-28455a440ee0",
+      "result_id": "c226859c-e171-4725-a68b-0779daa11915"
+    },
+    {
+      "claim_id": "31767be6-bb34-4333-b4c2-6dba568d1d4b",
+      "result_id": "c226859c-e171-4725-a68b-0779daa11915"
+    },
+    {
+      "claim_id": "0dec4507-e181-4f35-990b-79f5959e4f05",
+      "result_id": "c226859c-e171-4725-a68b-0779daa11915"
+    },
+    {
+      "claim_id": "07a7cce6-ec8e-43e1-b7d3-b03fcb1e4a73",
+      "result_id": "8a81f6c5-7924-463c-9fc2-c5b3fc5f8a25"
+    },
+    {
+      "claim_id": "3537ed2f-acf4-4f83-a44b-fd118c13bba1",
+      "result_id": "8a81f6c5-7924-463c-9fc2-c5b3fc5f8a25"
+    },
+    {
+      "claim_id": "d33f11d2-817b-4640-a54f-9c2bc4a5f035",
+      "result_id": "8a81f6c5-7924-463c-9fc2-c5b3fc5f8a25"
+    },
+    {
+      "claim_id": "f0e2c5b3-0d1e-4fe4-89f3-b39b40b79b92",
+      "result_id": "8a81f6c5-7924-463c-9fc2-c5b3fc5f8a25"
+    },
+    {
+      "claim_id": "51339f0a-8327-4a39-947a-a067e7434c24",
+      "result_id": "8a81f6c5-7924-463c-9fc2-c5b3fc5f8a25"
+    },
+    {
+      "claim_id": "a076e2ad-6bc4-4a75-b0b5-b30742f70aa4",
+      "result_id": "8a81f6c5-7924-463c-9fc2-c5b3fc5f8a25"
+    },
+    {
+      "claim_id": "f3d70fe8-94fe-4ab8-a67d-8ebd5474f5e5",
+      "result_id": "8a81f6c5-7924-463c-9fc2-c5b3fc5f8a25"
+    },
+    {
+      "claim_id": "85ea03cb-d487-4a81-af18-46e5c21c168e",
+      "result_id": "8a81f6c5-7924-463c-9fc2-c5b3fc5f8a25"
+    },
+    {
+      "claim_id": "31b255db-ee9f-4b84-a895-f886a167a001",
+      "result_id": "8a81f6c5-7924-463c-9fc2-c5b3fc5f8a25"
+    },
+    {
+      "claim_id": "aab64ad6-62c8-4b8c-8d5e-1773582fc5e0",
+      "result_id": "70f8deac-7475-4214-a26d-27c4507be57c"
+    },
+    {
+      "claim_id": "6d4faa7f-2bbe-478e-b42d-74c51a65ab2b",
+      "result_id": "70f8deac-7475-4214-a26d-27c4507be57c"
+    },
+    {
+      "claim_id": "25245b85-e20f-4f5c-b475-a2d8cb07cb42",
+      "result_id": "18bfd3c7-642e-457b-9a90-0fc8ae3d5286"
+    },
+    {
+      "claim_id": "13c6b12a-dac9-4013-8be4-5e398bbbb06c",
+      "result_id": "18bfd3c7-642e-457b-9a90-0fc8ae3d5286"
+    },
+    {
+      "claim_id": "c940a018-3946-4116-9cfe-41d19bd4167e",
+      "result_id": "18bfd3c7-642e-457b-9a90-0fc8ae3d5286"
+    },
+    {
+      "claim_id": "9b4b0a82-fc7b-41a2-926f-8eadcda9a033",
+      "result_id": "18bfd3c7-642e-457b-9a90-0fc8ae3d5286"
+    }
+  ],
+  "comparisons": []
+}

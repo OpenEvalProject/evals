@@ -1,0 +1,1727 @@
+{
+  "submission": {
+    "id": "1ef5b0b1-7cb4-4515-8843-52092d62b3fe",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-04T02:59:38.480366Z",
+    "updated_at": "2025-12-04T02:59:38.480366Z"
+  },
+  "content": [
+    {
+      "id": "f59583ac-f349-4a84-bf53-cbe45231bf97",
+      "submission_id": "1ef5b0b1-7cb4-4515-8843-52092d62b3fe",
+      "content_type": "manuscript",
+      "content_text": "# Resting-state fMRI signals contain spectral signatures of local hemodynamic response timing\n\n## Authors\n\n- Sydney M Bailes<sup>1</sup> ([ORCID: 0000-0003-1712-9233](https://orcid.org/0000-0003-1712-9233))\n- Daniel EP Gomez<sup>1</sup>\n- Beverly Setzer<sup>1</sup>\n- Laura D Lewis<sup>1</sup> ([ORCID: 0000-0002-4003-0277](https://orcid.org/0000-0002-4003-0277)) \u2020\n\n### Affiliations\n\n1. Department of Biomedical Engineering, Boston University Boston United States ([ROR:05qwgg493](https://ror.org/05qwgg493))\n2. Athinoula A. Martinos Center for Biomedical Imaging, Massachusetts General Hospital Charlestown United States ([ROR:002pd6e78](https://ror.org/002pd6e78))\n3. Department of Radiology, Harvard Medical School Boston United States\n4. Graduate Program for Neuroscience, Boston University Boston United States ([ROR:05qwgg493](https://ror.org/05qwgg493))\n5. Institute for Medical Engineering and Science, Massachusetts Institute of Technology Cambridge United States ([ROR:042nb2s44](https://ror.org/042nb2s44))\n6. Department of Electrical Engineering and Computer Science, Massachusetts Institute of Technology Cambridge United States ([ROR:042nb2s44](https://ror.org/042nb2s44))\n\n\u2020 Corresponding author\n\n## Abstract\n\nFunctional magnetic resonance imaging (fMRI) has proven to be a powerful tool for noninvasively measuring human brain activity; yet, thus far, fMRI has been relatively limited in its temporal resolution. A key challenge is understanding the relationship between neural activity and the blood-oxygenation-level-dependent (BOLD) signal obtained from fMRI, generally modeled by the hemodynamic response function (HRF). The timing of the HRF varies across the brain and individuals, confounding our ability to make inferences about the timing of the underlying neural processes. Here, we show that resting-state fMRI signals contain information about HRF temporal dynamics that can be leveraged to understand and characterize variations in HRF timing across both cortical and subcortical regions. We found that the frequency spectrum of resting-state fMRI signals significantly differs between voxels with fast versus slow HRFs in human visual cortex. These spectral differences extended to subcortex as well, revealing significantly faster hemodynamic timing in the lateral geniculate nucleus of the thalamus. Ultimately, our results demonstrate that the temporal properties of the HRF impact the spectral content of resting-state fMRI signals and enable voxel-wise characterization of relative hemodynamic response timing. Furthermore, our results show that caution should be used in studies of resting-state fMRI spectral properties, because differences in fMRI frequency content can arise from purely vascular origins. This finding provides new insight into the temporal properties of fMRI signals across voxels, which is crucial for accurate fMRI analyses, and enhances the ability of fast fMRI to identify and track fast neural dynamics.\n\n## Introduction\n\nFunctional magnetic resonance imaging (fMRI) enables non-invasive measurement of human brain activity via the hemodynamic response. When activity in a population of neurons changes, these changes give rise to the blood-oxygenation-level-dependent (BOLD) signal measured in most fMRI studies (Ogawa et al., 1990). Thus far, however, BOLD fMRI has exhibited relatively limited ability to provide the fine-grained temporal information necessary for deepening our understanding of brain dynamics. This is due to the fact that the signals obtained from BOLD fMRI are not direct measures of neural activity, but rather reflect the coupling between neuronal activity and the hemodynamic response, which evolves on a time course of seconds (Kwong et al., 1992; Ogawa et al., 1990). This coupling between neural activity and the BOLD signal can be represented by the hemodynamic response function (HRF) (Aguirre et al., 1998; Handwerker et al., 2004). The properties of the HRF depend on many interconnected factors, including the effects of local vascular architecture and cerebrovascular dynamics, that vary substantially across the brain and between individuals (Aguirre et al., 1998; Handwerker et al., 2004; Len and Neary, 2011; Logothetis et al., 2001). The relative timing and shape of the HRF, therefore, also varies considerably across brain regions and even between neighboring voxels (Buckner et al., 1998; Lee et al., 1995; Birn et al., 2001; Siero et al., 2011; Miezin et al., 2000; Siero et al., 2015). Hemodynamic response temporal lag variation is substantially larger than many neural effects of interest, introducing variability on the order of several seconds (Buckner et al., 1998; Lee et al., 1995; Birn et al., 2001; Siero et al., 2011). Thus, to enable inferences about the relative timing of neural activity using signals obtained from BOLD fMRI, it is crucial to understand the variations in HRF timing across the brain.\n\nAdvances in acquisition technology now allow high-resolution whole brain fMRI data to be acquired at fast (<500ms) rates (Polimeni and Lewis, 2021; Chen et al., 2019; Barth et al., 2016; Chiew et al., 2018; Hennig et al., 2007; Setsompop et al., 2016), suggesting that fMRI could provide a unique tool to noninvasively track temporal sequences of neural activity (Menon et al., 1998) across the entire brain. Indeed, recent studies have revealed highly structured temporal dynamics using fMRI and suggest that fMRI can enable whole-brain mapping of temporal sequences (Lee et al., 2013; Setzer et al., 2021; Raut et al., 2021; Mitra et al., 2016; Vizioli et al., 2018). Furthermore, hemodynamic signals have been shown to contain more information about fast and high-frequency activity than previously thought (Lee et al., 2013; Smith et al., 2012; Chen and Glover, 2015; Lewis et al., 2016; Sasai et al., 2021). Studies examining individual brain regions have demonstrated that fMRI can achieve impressive temporal precision within regions, on the order of 100ms (Lin et al., 2013), meaning that high fidelity temporal information is present within these hemodynamic signals. However, a key remaining challenge is that the hemodynamic differences across the brain confound our ability to infer the timing of the underlying neural activity from BOLD fMRI. Specifically, if a given brain region shows earlier BOLD activity, it could be due to faster neural activity or simply due to a faster hemodynamic response in that region. Fully exploiting the higher temporal resolution provided by fast fMRI techniques will therefore ultimately require accounting for differences in the temporal dynamics of the hemodynamic response across the whole brain.\n\nDespite the well-known heterogeneity of hemodynamic timing, most common analysis approaches for BOLD fMRI data assume a standard, canonical HRF shape throughout the brain (Glover, 1999). This approach is understandable, since the true HRF is not known, but it nevertheless cannot account for the vascular confound introduced by hemodynamic response variability. Incorrect assumptions about the shape and timing of the HRF can lead to incorrect inferences regarding the underlying neural activity (Gonzalez-Castillo et al., 2012; Lindquist et al., 2009; Handwerker et al., 2012), and studies that assume a whole brain canonical HRF are unable to decouple the neural and vascular components of the BOLD signal (Handwerker et al., 2004; Rangaprakash et al., 2018; Rangaprakash et al., 2017; Deshpande et al., 2010; Chang et al., 2008). Even when using flexible modeling approaches, such as basis sets or finite impulse response models, it is not possible to determine whether a given region\u2019s faster fMRI response reflects fast neural activity, or simply faster local neurovascular coupling (Handwerker et al., 2012).\n\nThe fact that most studies do not account for variations in HRF dynamics is largely due to methodological challenges. Previous work has demonstrated that it is possible to quantify hemodynamic lags across brain regions, and even on a voxel-wise level, to detect the relative order of BOLD responses with high temporal precision (Siero et al., 2011; Miezin et al., 2000; Siero et al., 2015; Lin et al., 2013; Chang et al., 2008; Sicard and Duong, 2005; Lin et al., 2018; Misaki et al., 2013; Kastrup et al., 1999; Liu et al., 2017; Bright et al., 2009; Chen et al., 2021; Wu et al., 2013; Wu et al., 2021). One such method is the use of a stimulus paradigm that drives activity in particular brain regions where the neuronal response properties are relatively well understood and controlled such as primary sensory or motor cortices (Handwerker et al., 2004; Birn et al., 2001; Siero et al., 2011; Miezin et al., 2000; Lin et al., 2018). However, this approach cannot be applied to the majority of the brain, where the neuronal response properties are not known ahead of time. Alternatively, using a breath hold or similar hypercapnic challenge can modulate cerebral blood flow (CBF) to all vascularized regions with minimal changes in cerebral metabolic rate of oxygen (CMRO2), allowing mapping of vascular latencies (Chang et al., 2008; Sicard and Duong, 2005; Kastrup et al., 1999; Liu et al., 2017; Bright et al., 2009; Chen et al., 2021; Pinto et al., 2021). However, breath hold tasks are not suitable for all subject populations, as some patients may have difficulty complying with the breath hold task. Furthermore, breath hold tasks modulate and measure cerebrovascular reactivity (CVR), which contributes to neurovascular coupling but is a distinct process. While neurovascular coupling reflects the alterations in local hemodynamics that occur in response to changes in neural activity, CVR is specifically a measure of a blood vessel\u2019s capacity to dilate and constrict in response to a vasoactive stimulus, and does not include the extensive metabolic and molecular factors that also drive neurovascular coupling (Pinto et al., 2021; D\u2019Esposito et al., 2003; Iadecola, 2017). In fact, there is evidence that while CVR is affected by healthy aging, some metrics of neurovascular coupling are not, hinting that distinct mechanisms may shape these two patterns (Stefanidis et al., 2019; West et al., 2019; Grinband et al., 2017).\n\nA task-free, neurovascular-based approach for detecting the lags of intrinsic neurovascular coupling would therefore be broadly relevant for analyzing fMRI data. A potential alternative route towards identifying local hemodynamic properties is to examine the properties of resting-state fMRI data. Resting-state fMRI signals reflect neurovascular coupling induced by spontaneous neural activity (Mateo et al., 2017; Ma et al., 2016) and confer the additional benefit of being task-independent, which makes it a viable scan type for patient populations. Moreover, unlike stimulus- or task-based paradigms for mapping local hemodynamic response timings in specific brain regions, resting-state fMRI can be used to examine the HRF across the whole brain. These advantages have prompted past research into the utility of resting-state fMRI signals to estimate the HRF itself with prior work utilizing deconvolution approaches to explore HRF timing in resting-state data (Wu et al., 2013; Wu et al., 2021; Sreenivasan et al., 2015). However, these approaches require assumptions about the underlying neural events, which are not known. We therefore investigated whether intrinsic signatures of local neurovascular coupling dynamics are present in the resting-state fMRI signal.\n\nOur goal was to understand whether information about the temporal dynamics of the hemodynamic response is present in resting-state fMRI data. We first used simulations of the BOLD response to illustrate how distinct, physiologically relevant HRF shapes should produce marked differences in the frequency content of resting-state signals. Next, we verified this result in fast fMRI data collected at 7 Tesla (T) using visual stimulation to induce a neural response with known timing in primary visual cortex (V1). We quantified the temporal delay of voxels in V1 in response to a controlled, oscillating visual stimulus, and found that voxels with fast and slow hemodynamic responses exhibited distinct resting-state spectral features. We further extended our analyses to the visual thalamus (lateral geniculate nucleus, LGN) and found that this principle generalized to subcortex. To understand the potential of this information as a tool to predict the temporal properties of individual voxels, we then trained classifiers to use information from the resting-state spectrum to classify voxels as being fast or slow cortical voxels, or even faster LGN voxels. We found that resting-state signals were better predictors of voxel-wise differences in relative hemodynamic timing than latencies measured from a gold standard breath hold task. Our results establish that information about hemodynamic timing can be extracted from the frequency spectrum of resting-state fMRI signals. This demonstrates that resting-state fMRI can provide a way to understand and predict the temporal dynamics of the HRF across the brain, which is critical for interpreting neural activity using BOLD fMRI.\n\n## Results\n\n### The temporal dynamics of the HRF profoundly impact the spectrum of simulated BOLD responses\n\nPrevious modeling work has illustrated that narrower HRFs should result in BOLD responses containing more high frequency power (Chen and Glover, 2015), suggesting that local variations in HRF timing should manifest as local variations in the frequency content of BOLD signals. We therefore hypothesized that the frequency spectrum of BOLD dynamics in the resting-state can be used to infer the relative timing of the task-driven hemodynamic response. We first aimed to illustrate this property by simulating the BOLD frequency response using HRFs with different temporal dynamics. If we assume that the BOLD response is a linear time-invariant system, we can compute the BOLD response as a convolution between a given input (i.e. the stimulus) and the characteristic input response of the system (i.e. the HRF). Then, by varying the frequency of the stimulus we can construct a spectrum of the BOLD frequency response for HRFs with faster or slower dynamics (Figure 1A). We performed this simulation using six different HRFs (Figure 1B) with physiologically representative values for their time-to-peak (TTP), full width at half maximum (FWHM), and amplitude (Siero et al., 2011). We observed that while HRFs with faster dynamics produced less power in the low frequency bands compared to those with slower dynamics, they also showed a shallower decline in power at higher frequencies (Figure 1C). Furthermore, this effect was preserved when we normalized the different HRFs to have the same peak amplitude (Figure 1\u2014figure supplement 1A), demonstrating that this phenomenon is not solely due to the higher amplitude of slower HRFs (Figure 1\u2014figure supplement 1B). This effect was also preserved if we accounted for the 1/f-like spectral pattern that neural activity displays (Figure 1\u2014figure supplement 1C\u2013E). And finally, although prior work has shown that the TTP and FWHM of the HRF are correlated (Siero et al., 2011; de Zwart et al., 2005), we also tested the effect of holding one parameter constant (Figure 1\u2014figure supplement 2). Varying the FWHM had a more profound impact on the frequency spectrum compared to varying the TTP (Figure 1\u2014figure supplement 2), as expected due to the higher frequency content of narrower HRF shapes, although short TTPs also had a smaller effect on the spectrum. These simulations demonstrate that there should be profound differences in the relative power at low versus high frequencies for voxels with fast vs. slow HRFs, which we hypothesized can be quantified and related to the temporal dynamics of the hemodynamic response.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/86453/elife-86453-fig1-v2.jpg)\n\n**Figure 1.:** (A) We generated a simulated BOLD response to determine the response amplitude of each HRF to each neural frequency. By convolving a given HRF with an oscillating stimulus, and sweeping across a range of frequencies, we generated a frequency spectrum of the simulated BOLD responses. This simulation was repeated using HRFs with varying temporal properties, to compare the frequency spectrum of simulated BOLD responses with faster or slower hemodynamic responses. (B) We generated a range of HRFs with physiologically plausible timings and amplitudes (Siero et al., 2011). (C) We found that temporal properties of the HRF had noticeable effects on the simulated spectra, particularly under 0.2 Hz.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/86453/elife-86453-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) We normalized each HRF to its respective peak amplitude to examine effect on frequency spectra. (B) The differences in spectral content of the BOLD signal are not simply due to the amplitude of each HRF but rather a signature of the temporal dynamics of the HRF, as the slope differences persist when normalizing for amplitude, with slower HRFs generating steeper frequency responses. (C) Plot showing the magnitudes of the neural waveform at each frequency and their 1 /f decay. (D) Physiologically relevant HRFs used in simulations. (E) Temporal properties of HRF noticeably affect the slope of the simulated spectra even when oscillation amplitudes decay with 1 /f pattern, demonstrating that distinct slopes are expected for distinct HRFs regardless of the specific neural signal amplitude.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/86453/elife-86453-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) We generated a set of 6 HRFs with a fixed TTP of 6 s, variable FWHMs ranging from 2 to 6 s, and the same amplitude. (B) Changing the FWHM of the HRF has noticeable effects on the simulated frequency spectra. (C) The slope of the frequency spectrum under 0.2 Hz was positively correlated with the FWHM. (D) We generated another set of 6 HRFs with variable TTPs ranging from 2 to 6 s, a fixed FWHM of 3 s, and the same amplitude. (E) Changing the TTP of the HRF has a smaller effect on the simulated frequency spectra. (F) The slope of the frequency spectrum under 0.2 Hz was positively correlated with the TTP.\n\n### Features of the resting-state spectrum show significant differences between fast and slow voxels\n\nBased on these simulation results, we then examined the frequency content of resting-state fMRI data. Spontaneous BOLD fluctuations captured in resting-state fMRI are linked to fluctuations in neuronal activity (Mateo et al., 2017; Ma et al., 2016; Fox and Raichle, 2007), and accordingly, reflect the neurovascular coupling mechanisms that link neural fluctuations to BOLD fluctuations. To empirically test the prediction that fast and slow voxels should have distinct frequency content in the resting-state, we first used a task paradigm to identify voxels in V1 with consistently fast or slow hemodynamic responses. To drive continuous oscillations in V1 we presented the subjects with a 12 Hz counterphase flickering radial checkerboard with the luminance contrast of the checkerboard modulated in time as a sine wave of 0.05 Hz (Figure 2A, top). We used a combination of an anatomical and functional localizer to identify stimulus-driven voxels in V1 (Figure 2B). For those voxels that were significantly driven by the stimulus, we then calculated the phase lag, or relative response latency to the stimulus (Figure 2C). Consistent with prior studies (Birn et al., 2001; Lewis et al., 2016; de Zwart et al., 2005) we found a wide range of hemodynamic response lags within V1 (Figure 2A, bottom). From this distribution, we extracted groups of fast and slow responding voxels (Figure 2D\u2013E). Then, for each voxel identified as fast or slow within the task run, we calculated that voxel\u2019s frequency spectrum in the resting-state. Figure 2F shows the resting-state spectrum of a representative fast and slow voxel from a single subject where the differences in the spectra, particularly the distinct slope under 0.2 Hz, are visible.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/86453/elife-86453-fig2-v2.jpg)\n\n**Figure 2.:** (A) Subjects viewed a flickering checkerboard with oscillating luminance contrast to drive neural oscillations in V1. Some voxels showed a faster response to the visual stimulus and other showed a slower response, with a noticeable difference in the temporal dynamics of the mean response in these groups. Shading represents standard error. (B) Example of a functional localizer in one subject with the white lines denoting the outline of the primary visual cortex (V1) based on anatomical segmentation. One visual stimulus run was used as a functional localizer to identify stimulus-driven voxels in V1. (C) For all stimulus-driven voxels in V1, the phase of the response to the visual stimulus was calculated from the average of the visual stimulus runs not used as the functional localizer, corresponding to the local hemodynamic delay. (D) We defined groups of \u2018fast\u2019 and \u2018slow\u2019 voxels using a Gaussian fit to the histogram of phases. Histogram shows example from one representative subject. (E) Example map of fast and slow voxels generated for a single subject. (F) Frequency spectrum of a representative slow and fast voxel\u2019s resting-state signal, showing a difference in power drop off across frequencies, with a steeper slope for the slower voxel.\n\nOur simulations had predicted a difference in the overall frequency content of resting-state fMRI signals in voxels with fast versus slow HRFs. To quantify this property across voxels, we sought to generate a set of spectral features that could capture these resting-state spectral dynamics. We constructed four spectral features to capture spectral properties: the slope using a linear fit under 0.2 Hz, the exponent of an aperiodic 1 /f fit, the amplitude of low frequency fluctuations (0.01\u20130.1 Hz power; ALFF) (Zang et al., 2007), and the fractional ALFF (ratio of 0.01\u20130.08 Hz to 0\u20130.25 Hz; fALFF) (Zou et al., 2008; Figure 3). Each feature of the resting-state spectra revealed significant differences (Wilcoxon rank-sum test, p<0.05) between fast and slow voxels across subjects. The slope showed significant differences between the fast and slow voxels within each individual subject (15/15), while the aperiodic exponent, ALFF, and fALFF showed significant differences in 14, 11, and 13 subjects, respectively. (See Supplementary file 1 for p-values). Each of these features reflects information about the frequency content at high and low frequencies, suggesting that this was an effective metric for differentiating voxels with fast or slow hemodynamic responses. Notably, the most effective features for distinguishing fast and slow voxels were the ones that explicitly captured the relative difference in high-frequency vs. low-frequency power.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/86453/elife-86453-fig3-v2.jpg)\n\n**Figure 3.:** For each subject, we calculated four features of the resting-state frequency spectrum and compared the values between the task-defined fast and slow voxels using a Wilcoxon rank sum test. For the (A) slope, using a linear fit of frequency spectrum under 0.2 Hz, 15/15 subjects showed significant differences; (B) exponent of an aperiodic 1 /f fit under 0.5 Hz, 14/15 subjects showed significant differences; (C) amplitude of low frequency fluctuations (ALFF), 11/15 subjects showed significant differences; and (D) fractional ALFF, 13/15 subjects showed significant differences. Black lines indicate a significant difference in a given subject (Wilcoxon rank-sum test, p<0.05) and red lines indicate a non-significant difference.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/86453/elife-86453-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Based on our simulations and data collected at 7 Tesla we expected that for each spectral feature the slow voxels will have higher values than the fast voxels. In an independent replication dataset at 3T, for each spectral feature all 10 subjects followed this expected pattern further demonstrating the robustness of this phenomenon. For both the (A) slope of a linear fit of the frequency spectrum under 0.2 Hz and (B) exponent of an aperiodic 1 /f fit under 0.5 Hz 9/10 subjects showed significant differences at the individual level. For both the (C) ALFF and (D) fALFF 8/10 subjects showed significant differences at the individual level. All differences were significant (p<0.05) at the group level.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/86453/elife-86453-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** We did not observe a consistent effect on the noise floor between fast and slow voxels, with no significant difference at the group level.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/86453/elife-86453-fig3-figsupp3-v2.jpg)\n\n**Figure 3\u2014figure supplement 3.:** Each point represents a single voxel, red-line shows linear fit. p-values are from a linear hypothesis test on the model coefficients. (A) Example subject showing significant, positive correlations between each spectral feature and the magnitude of the phase. (B) A second example subject also showing a significant, positive correlation between each spectral feature and the magnitude of the phase.\n\n### Faster hemodynamic responses in thalamus are also reflected in shallower frequency spectra\n\nA key strength of fMRI is its ability to noninvasively image activity in the subcortex. Having established that the resting-state spectrum contained signatures of local hemodynamic response timing within V1, we next aimed to test whether this principle extended to the visual thalamus, specifically the LGN. Prior studies have shown that LGN has faster hemodynamic responses than V1 (Lau et al., 2011; Yen et al., 2011; Lewis et al., 2018); however, due to its small size and lower signal-to-noise ratio, extracting its spectral features accurately could be more challenging. We generated individual masks of the LGN within each subject using the individual anatomical segmentation (Fischl, 2012) and a functional localizer (Figure 4A). To confirm the presence of stimulus-locked oscillations in the LGN and to assess the relative timing of its response, we first examined the latency of the average response to the visual stimulus in the LGN, as compared to the fast and slow groups in V1. We observed that the LGN peaked before both the fast and slow groups in V1 (Figure 4B), consistent with prior work demonstrating faster hemodynamics in thalamus (Lau et al., 2011; Yen et al., 2011; Lewis et al., 2018). Then, to test whether this faster hemodynamic response was similarly linked to flatter resting-state spectra, we compared the LGN voxels\u2019 resting-state features to the previously identified fast and slow voxels in the cortex. We found that for all subjects there were clear differences in each spectral feature within the LGN compared to both the fast and slow voxels of the visual cortex (Figure 4C\u2013F; See Supplementary file 1 for p-values). The feature that had the poorest sensitivity to differences between the LGN features and cortical features is ALFF, which could be explained by ALFF\u2019s higher sensitivity to non-neural noise sources (Zou et al., 2008). We thus observed even shallower frequency slopes for the fast LGN voxels \u2013 again consistent with our simulation results, demonstrating that this pattern held not just within V1 but even extended to the LGN of the thalamus. This observation was also robust to controlling for the higher thermal noise in LGN signals (Figure 4\u2014figure supplement 1).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/86453/elife-86453-fig4-v2.jpg)\n\n**Figure 4.:** (A) Example LGN localizer in one subject showing uncorrected z-statistic in the localizer run within the anatomical mask of LGN defined by the white outline. (B) Average time series of fast and slow V1 voxels compared to LGN voxels for an example subject. LGN displayed a fast visually-driven response, leading even the earliest cortical voxels. Time series are smoothed for display using a 10-point moving average. Shading represents standard error. (C\u2013F) For each subject we calculated the four resting-state spectral features for the LGN and compared them to the fast and slow voxels in V1. For the (C) slope, 15/15 subjects showed significant differences between fast vs. LGN and slow vs. LGN; (D) exponent of an aperiodic 1 /f fit, 15/15 subjects showed significant differences between fast-LGN and slow-LGN; (E) ALFF, 5/15 subjects showed significant differences between fast vs. LGN and 7/15 between slow vs. LGN; and (F) fALFF, 15/15 subjects showed significant differences between fast-LGN and between slow-LGN. Black lines indicate a significant difference (Wilcoxon rank-sum test, p<0.05) and red lines indicate a non-significant difference.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/86453/elife-86453-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Spectra of example LGN voxel demonstrating the method for accounting for the noise floor in the slope of the linear fit. The original linear fit and the linear fit with the noise floor produce similar results. (B) Average magnitude of slopes before and after fitting the noise floor in fast and slow cortical voxels as well as LGN voxels with error bars showing SEM. The within group averages did not significantly change when fitting for the noise floor versus not.\n\n### Resting-state spectral information better characterizes neurovascular coupling delays than a breath hold task\n\nPerhaps the most established method of mapping hemodynamic latencies across the brain is using a breath hold task to quantify cerebrovascular reactivity (Chang et al., 2008; Kastrup et al., 1999; Liu et al., 2017; Bright et al., 2009; Chen et al., 2021; Pinto et al., 2021). Therefore, we tested whether similar information about hemodynamic latencies found using the resting-state spectra could be found in data from the breath hold task. To determine this, we first mapped the vascular latency in response to the breath hold task on a voxel-wise basis across the brain (Chang et al., 2008). We then compared each voxel\u2019s relative vascular latency from the breath hold task across the three groups identified in the visual task \u2013 the fast and slow cortical voxels and LGN voxels. We found that some subjects showed the expected temporal sequence of activation, where LGN voxels and fast cortical voxels respond earlier than slow cortical voxels (Figure 5A), but this effect was not present in all subjects (Figure 5B). Even among the subjects that exhibited the expected order of activation, few of them showed individual-level significant differences in breath hold latency between the groups (Figure 5C). Specifically, in only 7/15 subjects was the average breath hold latency of fast cortical voxels significantly faster compared to slow cortical voxels. Furthermore, the breath hold latency in LGN voxels was slower than expected in some subjects: it was significantly slower than fast cortical voxels in 5 subjects and significantly slower than slow cortical voxels in 1 subject (Wilcoxon rank-sum test, p<0.05). These results demonstrate that although the vascular latencies derived from the breath hold task do show significant differences between fast and slow cortical voxels and LGN voxels across the group, this effect is less robust in individual subjects than the resting-state spectral features. Additionally, not all subjects demonstrated the expected order of latencies between the three groups \u2013 with LGN first followed by fast cortical and, lastly, slow cortical voxels. Taken together, these results suggest that the features of the resting-state spectrum capture additional information about local differences in neurovascular coupling delays.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/86453/elife-86453-fig5-v2.jpg)\n\n**Figure 5.:** (A) Plot of one subject\u2019s average BOLD response to the breath hold task in fast (teal) and slow (pink) cortical voxels as well as LGN voxels (yellow). The shaded areas are the standard error across voxels of that group. Colored arrows denote the peak of the response to the breath hold. The LGN time series peaks slightly earlier than the fast cortical voxels and both the LGN and fast cortical voxels peak well before the slow cortical voxels. This sequence of activation matches what is expected based on the hemodynamic lags across these structures. (B) Plot of one subject\u2019s average BOLD response to the breath hold task where the order of activation is not as expected. While the slow cortical voxels reached their peak last, the fast cortical voxels peaked before LGN voxel, meaning that the breath hold would not accurately predict latency in this subject. (C) Comparison of the average breath hold latency in fast, slow, and LGN voxels in all subjects. For 9/15 subjects, the average latency of the fast cortical voxels was less than the slow cortical voxels, as expected, and 7 of these 9 had a significant difference. For only 2/15 subjects, the average latency of the LGN voxels was less than fast voxels, as expected, but only 1 of these 2 had a statistically significant difference. For 4/15 subjects, the average latency of slow cortical voxels was larger than LGN voxels, and 1 of these 4 had a statistically significant difference. (Wilcoxon rank-sum test, p<0.05).\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/86453/elife-86453-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Boxplot shows the average framewise displacement per task condition across subjects. There was significantly more motion during the breath-hold task than during the visual task (Wilcoxon rank-sum test, p=0.01), but no significant difference in motion between the visual stimulus and resting-state runs (p=0.431). There was a trend towards more motion in the breath hold runs compared to the resting-state runs (p=0.051).\n\n### Features of the resting-state spectrum can predict voxels with fast or slow hemodynamic response timing\n\nOur results showed consistent signatures of hemodynamic response latency in the resting-state fMRI signal, suggesting that this information could potentially be used to predict local neurovascular latencies. Indeed, we found that these spectral features were significantly correlated with the absolute timing of their hemodynamic responses (Figure 3\u2014figure supplement 3, Supplementary file 3). To investigate the utility of the resting-state spectrum to predict the temporal dynamics of the HRF, we tested whether support vector machines (SVMs) could classify slow, fast, and fastest (LGN) voxels using information from the resting-state spectrum. First, we trained a SVM to classify slow, fast, and LGN voxels based on the four features of the resting-state spectra identified in Figure 3. We found that the classifier validation accuracies, both within each individual subject and on the dataset that combined all subjects, were well above chance (Figure 6), demonstrating robust prediction of local hemodynamic delays (per-subject accuracy in Supplementary file 2). We next considered whether correlated information between neighboring voxels could be contributing this prediction, to test whether we could generalize to distant voxels. To control for instances of voxels in the test set being in close proximity to voxels in the training set, we trained a new set of models using voxels in a single hemisphere (left or right) as the training set, and voxels in the other hemisphere as the testing set. Following this procedure, the number of voxels for training and testing was often closer to a 50\u201350 split than an 80\u201320 split; however, validation accuracies both within individual subjects and across subjects nevertheless remained well above chance. Interestingly, the overall performance across subjects was higher, suggesting better generalization across subjects when training on spatially separated voxels (Figure 6\u2014figure supplement 1).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/86453/elife-86453-fig6-v2.jpg)\n\n**Figure 6.:** The classification accuracies reported are the average validation accuracy across 1000 bootstraps. The black markers indicate the models trained using resting-state spectral features from all subjects combined into one model; the colored markers show results from individual subjects (n=15). Both models trained using features of the resting-state spectrum performed significantly better than the model trained using the breath hold latencies; however, there was no significant difference in performance between the two models trained using information from the resting-state spectrum (=0.283). All classifiers perform significantly above chance (33%). *** p<0.0005 (Wilcoxon rank-sum test).\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/86453/elife-86453-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** We trained a second model to test whether we could predict early and late voxels when training and test voxels were in distinct locations. All validation accuracies reported for the 80\u201320 test-train split are the average validation accuracy across 1000 bootstraps. The validation accuracies reported for the LH-RH test-train split are from training the model using one hemisphere and validating the model on the other hemisphere. (A) Each colored marker shows results from an individual subject (N=15). For some subjects, the validation accuracy decreased when using a LH-RH split while others increased. All classifiers performed well above chance (33%). (B) The model trained using features from all subjects had a higher validation accuracy when using a LH-RH split compared to the random 80\u201320 split, suggesting improved generalization across subjects when training on spatially separated voxels.\n\nRegression models aiming to predict specific response timing (rather than classifying fast vs. slow) were significantly above chance but still performed poorly, with an average coefficient of determination of 0.104 and an average root mean squared error of 0.923 (Supplementary file 4), likely due to the fact that absolute HRF timing depends on task state (Chen and Glover, 2015). We next investigated whether our chosen features were sufficient for classification, or whether additional useful information was present in the full resting-state spectrum, by training a second SVM classifier to use each voxel\u2019s resting-state spectrum as the predictor for the classifier. The input to the classifier was the resting-state spectrum limited to up to 0.5 Hz to reduce the number of features fed into the model to avoid overfitting. Once again, we found that the accuracies, both within individual subjects and on the dataset that combined all subjects, were well above chance (Figure 6; per-subject accuracy in Supplementary file 2). The SVM classifiers trained using the spectrum trended toward slightly higher classification accuracies than the pre-selected features (Figure 6), but the performance of the two models was not significantly different (p=0.2828; Wilcoxon rank-sum test). We therefore concluded that our constructed spectral features are capturing key aspects of the resting-state spectrum that are important for predicting hemodynamic latency.\n\nWe next tested whether the resting-state signals performed better than the breath hold task at differentiating between fast, slow, and LGN voxels. We trained another SVM classifier to use the breath hold latencies as predictors and found that this model performed significantly above chance (Figure 6), consistent with prior work demonstrating its utility in predicting delays. However, it nevertheless performed significantly worse than both resting-state models (Wilcoxon rank-sum test, p<0.0005; per-subject accuracy in Supplementary file 2). This result further supported the conclusion that resting-state spectral information performs well at capturing differences in hemodynamic response timings.\n\n## Discussion\n\nWe conclude that the frequency spectrum of resting-state fMRI signals contains rich information about local hemodynamic timing. Our simulations first illustrated the rationale for this effect: HRFs with faster temporal dynamics produce less power in the low frequency bands and a shallower attenuation of power at high frequencies. This effect is preserved even when we account for the higher amplitude of slower HRFs and the 1 /f decay of the amplitude of spontaneous neural activity. Following this observation, we constructed several quantitative features based on the resting-state spectrum, each capturing a similar property: the relative amplitude of high vs. low frequencies, and when used as predictors for a SVM were able to classify individual voxels as fast or slow. Our findings demonstrate that the temporal properties of the HRF affect the spectral features of resting-state fMRI signals and present a framework for characterizing the temporal properties of the hemodynamic response across voxels, which is crucial for accurate fMRI analyses.\n\nThe work presented here has broad implications for fMRI studies using the frequency content of the BOLD signal to make inferences about intrinsic brain activity. Prior work has identified changes in the spectral content of fMRI signals in certain clinical populations, including major depressive disorder (Wang et al., 2016), mild cognitive impairment (Han et al., 2011), and Alzheimer\u2019s disease (Yang et al., 2020), and interpreted these differences as changes in intrinsic brain activity. However, as seen here, differences in hemodynamic response timings will also alter the frequency content of fMRI signals. Furthermore, prior work has shown that intrinsic timescales of BOLD activity vary across brain regions and can be used to predict individual subject patterns (Fallon et al., 2020). Our work suggests hemodynamic differences may contribute to these observations. Therefore, changes in the spectral content of fMRI signals can arise not just from differences in intrinsic brain activity but could also be indicators of different hemodynamic response timing.\n\nA common theme across the spectral features we constructed was that they were sensitive to the relative contributions of low- and high-frequency power. Two features we selected (the slope of the spectrum and the exponent of the aperiodic 1 /f fit) are direct measures of the attenuation in power towards higher frequencies. Similar information is contained in the commonly used metrics ALFF and fALFF (Zou et al., 2008): ALFF is a marker of the power in low frequency bands and fALFF is a measure of the ratio of high to low frequency power. While each of these features showed significant differences between fast and slow cortical voxels, only the slope and fALFF exhibited significant differences within each individual subject. These features explicitly capture the relative difference in high-frequency vs. low-frequency power, corresponding to the main prediction of our simulations. Conversely, ALFF had the poorest sensitivity within subjects which could be due to the fact that ALFF is the only feature that does not include information from both low and high frequency ranges and is instead limited to a relatively narrow band of frequencies, 0.01\u20130.08 Hz. Overall, our results suggest that while some information is contained in the magnitude of the fMRI signal alone, capturing the relative power in high versus low frequencies is the most important metric for predicting hemodynamic timing. Moreover, using the resting-state spectrum itself did not perform significantly better than our chosen features in classifying fast and slow voxels, suggesting that the relative power is indeed the primary contributor when predicting variations in local HRF timings.\n\nOur results highlight the substantial variability in hemodynamic timing even within a single cortical area, and provide a way to predict this speed, but the specific reasons why individual voxels are fast or slow are not yet clear. A multitude of neurovascular and anatomical factors contribute to the variability in hemodynamic response timing across the brain. For example, the anatomical organization of the vascular network inherently introduces temporal dispersion to the hemodynamic response. As blood travels through the vascular network in response to changes in neuronal activity it not only encounters a range of vessel diameters, but also many branch points which each introduce delays. Prior work has shown that the timing and duration of the hemodynamic response both increase towards the cortical surface while the fastest, narrowest hemodynamic responses occurred in deeper gray matter (Siero et al., 2011; de Zwart et al., 2005; Duvernoy et al., 1981). This suggests the possibility that the fast responding voxels identified in our study are more concentrated in deeper gray matter, although the spatial resolution of our images was not sufficient to separate voxels by cortical depth in this study. Vascular elasticity and reactivity also change across the vascular network and vary between regions further contributing to the variable timing of the hemodynamic response across the brain (Uluda\u011f and Blinder, 2018; Drew, 2019). Arteries are surrounded by smooth muscle cells that rapidly relax and expand their diameter in response to neural activity while veins dilate much more slowly (Drew, 2019). Local differences in the relative concentrations of arteries and veins could therefore also introduce differences in the temporal dynamics of the BOLD signal (Siero et al., 2011; de Zwart et al., 2005; Taylor et al., 2018), suggesting that the slow responding voxels may be more likely to contain veins. These relationships between vascular anatomy and timing further highlight that fMRI studies analyzing spectral power or temporal autocorrelation should take into consideration how local vascular anatomy affects these metrics.\n\nA unique advantage of fMRI is its ability to image throughout the whole brain, and our results suggest the potential for extracting more information from fMRI studies of subcortex. Due to significant improvements in both the sensitivity and spatial resolution of fMRI, an increasing number of studies are utilizing fMRI to study small, deep brain structures such as the thalamus and brainstem (Beissner et al., 2014; Sclocco et al., 2018; Saranathan et al., 2021; Beissner and Baudrexel, 2014). The ability to image these deeper brain structures in humans opens the door to studying diverse aspects of cognition associated with these deeper brain regions (Beissner et al., 2014; Sclocco et al., 2018; Saranathan et al., 2021; Beissner and Baudrexel, 2014; Sherman, 2007). However, these deep brain structures also have unique physiological and anatomical properties that alter their vascular dynamics (Lau et al., 2011; Yen et al., 2011; Lewis et al., 2018; Duvernoy, 2009; Devonshire et al., 2012). Faster hemodynamic responses are frequently reported in subcortex, but hemodynamic responses in these regions are less well characterized than in the cortex. Our analyses found that variations in HRF timing are reflected in the frequency spectra of thalamic voxels as well, despite their differing signal-to-noise ratio. This result demonstrates the utility of our approach in subcortex and could benefit neuroimaging studies of structures such as the thalamus, a target of increasing interest in fMRI.\n\nImprovements in the temporal resolution of BOLD fMRI have also sparked interest in detecting neural sequences at sub-second timescales, which are highly relevant for many studies of cognition. Recent studies have leveraged fast fMRI to detect rapid sequences of neural events related to visual sequence detection (Wittkuhn and Schuck, 2021), auditory dynamics (Fr\u00fchholz et al., 2020), and changes in arousal state (Setzer et al., 2021). As we continue to identify these rapid neural sequences, it will become even more crucial to consider how the hemodynamic response varies across regions to determine whether a given sequence represents regional differences in neuronal or in hemodynamic timing. Considering spectral signatures can support inference of precise timing of neural activity by providing information about relative hemodynamic latencies between voxels and regions.\n\nWe found that the resting-state signals predicted voxel-wise differences in relative hemodynamic response timing significantly better using a breath hold to estimate vascular delays, the current gold standard. This observation could be explained by multiple factors. One potential factor is subject motion (Figure 5\u2014figure supplement 1). There was significantly more motion during the breath hold task compared to the visual stimulus (Wilcoxon rank-sum test, p=0.01), which could lead to breath tasks providing less reliable information. Additionally, the models trained using the breath hold latencies were only able to leverage one piece of information: the measure of vascular latency derived from cross-correlation. The information from taking the cross-correlation in the time domain may also be more sensitive to noise, especially at the fast sampling rate of our scans. However, a more important factor may be the biological mechanisms generating each signal. The breath hold task directly modulates cerebrovascular reactivity with minimal accompanying changes in CMRO2, allowing for assessment of local cerebral vascular reactivity uncoupled from neuronal activation (Kastrup et al., 1999). CVR is important to assess in many clinical applications, and the breath hold-based approach remains a gold standard for CVR mapping (Kastrup et al., 1999; Liu et al., 2017; Bright et al., 2009; Pinto et al., 2021). However, while CVR is a significant modulator of the hemodynamic response, it is only one component of neurovascular coupling, and there are many other factors and signaling pathways that also contribute. In particular, local metabolic factors and feedback mechanisms also modulate of blood flow in the brain and are not replicated in the breath hold task (Iadecola, 2017; Hosford and Gourine, 2019). The hemodynamic responses induced by neural activity may, therefore, not be identical in timing to those induced by a purely vascular signal. By contrast, the signals obtained from resting-state fMRI are coupled to underlying neural activity in an analogous manner as during a task condition (Mateo et al., 2017; Ma et al., 2016; Fox and Raichle, 2007). The improved performance of the resting-state-based prediction may therefore reflect that it is intrinsically more similar to a task than the breath hold condition, as the underlying biological origins of resting-state signals share common mechanisms with task-induced neurovascular coupling. Future applications may therefore benefit from continuing to use breath tasks as a gold standard to assess CVR, whereas resting-state analyses may be a better metric of neurovascular coupling.\n\nOne limitation of our study is that our approach has thus far only been validated in the visual system, which is the basis for the majority of our knowledge about the HRF. Given that the HRF has been shown to vary across the brain, the generalizability of our approach to different brain regions has yet to be established. However, studies that have empirically derived the HRF in other brain regions, such as the motor cortex (Siero et al., 2011) or somatosensory cortex (de Zwart et al., 2005), have produced HRFs with similar shapes and parameters to the double-gamma HRF utilized in our simulations (Handwerker et al., 2004; Siero et al., 2011; de Zwart et al., 2005; Taylor et al., 2018) providing evidence that this approach may be generalizable across the brain. Still, future work could investigate this approach in other primary sensory systems such as the auditory system where there are reliable stimulation paradigms. Additionally, this study used data collected at an ultra-high magnetic field strength (7T) which affords a higher signal-to-noise ratio (SNR) compared to more traditional 3T fMRI. However, we also performed the same spectral analysis in an independent dataset acquired at 3T and robustly replicated our result, demonstrating that this pattern is preserved despite a lower SNR and different acquisition parameters (Figure 3\u2014figure supplement 1).\n\nThe work discussed here suggests a wide range of neuroscience applications for our approach to measuring hemodynamic timing. One logical next step would be to use the ability to characterize temporal variation in the HRF to not just predict, but to correct for vascular delays. Previous work demonstrated that correcting for varying hemodynamic latencies across the brain can affect functional connectivity analyses (Rangaprakash et al., 2018; Chang et al., 2008). Our results could further enhance removal of non-neural latency differences that confound functional connectivity metrics, both static and dynamic, and can increase confidence that the networks we are analyzing are derived from neuronal dynamics. This has become increasingly of interest as more studies use functional connectivity, particularly in resting-state, to study dynamics underlying diseases such as PTSD (Jin et al., 2017; Rabinak et al., 2011; Maron-Katz et al., 2020; Zhu et al., 2017), Alzheimer\u2019s Disease (Greicius et al., 2004; Bai et al., 2008; Agosta et al., 2012; Koch et al., 2012), Parkinson\u2019s Disease (Helmich et al., 2010; Hacker et al., 2012; Agosta et al., 2014; Baggio et al., 2015; Putcha et al., 2015), and others (Filippi et al., 2019). Since changes in neurovascular function have been observed in many disorders (de la Torre and Mecocci, 2018; Gutteridge et al., 2020; Burrage et al., 2018), analyzing spectral dynamics may help interpret functional connectivity differences in clinical populations.\n\nAlthough we focused on the utility of resting-state spectral information to classify voxels as having relatively fast or slow hemodynamic response timings, we did also examine the correlation with absolute timing measures. We found that most subjects had significant positive correlations between each of the spectral features and the task response latency. Despite this fact, when estimating continuous predictions of absolute hemodynamic response lag, prediction performance was poor. Importantly, previous evidence has shown that the absolute timing of the HRF varies between task and resting-state conditions (Chen and Glover, 2015), suggesting that caution is needed in using absolute measures of hemodynamic latencies, as these may not generalize across conditions. Measuring relative differences in HRF timing might therefore be a more effective method to correct for variations in the hemodynamic response across brain regions, since task state can modulate the absolute timing of the hemodynamic response. Furthermore, the relative differences provide the key information necessary to interpret sequences of activity across brain regions, enabling examination of whether purely vascular differences are present across those regions.\n\nTogether, our results demonstrate that the resting-state fMRI signal contains information about local hemodynamic response speeds. This approach can help understand brain-wide variations in HRF dynamics, which is critical as the field moves toward a new era of fMRI studies utilizing fast fMRI to study rapid neuronal dynamics and higher level cognition.\n\n## Materials and methods\n\n### Simulations\n\nSpectra of simulated BOLD responses were generated by convolving a given HRF with oscillating stimuli, ranging from 0.1 to 0.5 Hz, and taking the magnitude of the simulated BOLD response as the power at that frequency (Figure 1A). We used six HRFs with varying time-to-peak (TTP), full width at half maximum (FWHM), and peak percent signal changes (PSCs) to represent a range of physiologically relevant HRFs (Figure 1B). These properties were drawn from previous work characterizing varying HRF temporal dynamics at different cortical depths (Siero et al., 2011) and the values used are reported below in Supplementary file 5. We also normalized these HRFs by their maximum percent signal change and re-simulated the BOLD responses to create a new simulated spectrum for each HRF (Figure 1C). Additionally, we performed simulations to account for the dominant 1/f-like spectral pattern of neural activity by setting the amplitude of the oscillating stimuli to be 1/stimulus frequency ranging from 0.1 to 0.5 Hz (Figure 1\u2014figure supplement 1).\n\n### Subject population\n\nAll experimental procedures were approved by the Massachusetts General Hospital Institutional Review Board (protocol number: 2014P001068), and all subjects provided informed consent. Twenty-one participants were scanned in total; five were excluded for excessive motion and one was excluded for poor performance on the visual task suggesting they had closed their eyes. This left 15 subjects whose data was analyzed (mean age = 28 years, range = 22\u201342 years, 8 female).\n\n### Experimental design\n\nSubjects underwent a total of 7 functional scans: 3 visual stimulus, 2 breath hold, and 2 resting-state runs. All stimuli were programmed in MATLAB using Psychtoolbox (Brainard, 1997).\n\n### Visual stimulus\n\nEach visual stimulus functional run lasted 254 s, with the first 14 s showing a gray screen with the red fixation dot and the following 240 s consisting of the 12 Hz counterphase flickering radial checkerboard. To drive continuous neural oscillations in the visual cortex, the luminance contrast of the flickering checkerboard oscillated at a frequency of 0.05 Hz (except for one subject who was presented with 0.1 Hz oscillations). To assist the subjects with fixation, in the center of the visual field was a red dot that changed brightness at random intervals. Subjects were directed to press a button whenever the brightness of the red dot changed, and their average response time and response accuracy was reported at the end of each run. This allowed us to monitor participant engagement with the task. Each subject participated in 3 visual stimulus runs.\n\n### Breath hold Task\n\nFor each breath hold run subjects performed eight repetitions of an adapted version of a previously established breath hold task (Chang et al., 2008): a block comprised of 27 s of free breathing, 3 cycles of paced breathing (3 s breathe out, 3 s breathe in), a 15 s breath hold, and, lastly, a 30-s period of free breathing. The total time for the breath hold task scans was 8.5 min. The instructions for breathing were projected to the subjects displaying the text \u2018Breathe Freely\u2019; \u2018Breathe Out\u2019; \u2018Breathe In\u2019; and \u2018HOLD BREATH\u2019. All but one subject participated in 2 breath hold runs; a single subject performed only 1 breath hold run. For 2 subjects, a single breath hold run was excluded from analyses for excessive motion defined here as greater than 0.5 mm average motion across the whole run. No additional runs were excluded for these subjects.\n\n### Resting-state\n\nEach subject participated in 2 resting-state runs where they were instructed to relax in the scanner with their eyes open and to try not to fall asleep. For some of the subjects, a fixation dot was presented to help minimize eye movements. Each resting-state scan lasted 8.5 minutes.\n\n### MRI Data Acquisition\n\nSubjects were scanned on a 7 Tesla Siemens MAGNETOM scanner with a custom-built 32-channel head coil. Anatomical images were acquired with 0.75 mm isotropic multiecho magnetization-prepared rapid gradient-echo (MEMPRAGE) protocol (van der Kouwe et al., 2008) with TR = 2.530ms, echo time (TE)=1.76ms and 3.7ms, inversion time (TI)=1100ms, echo-spacing=6.2ms, 7o flip angle, bandwidth = 651 Hz, in-plane acceleration R=2, FOV = 320 x 320 x 244 mm and a total scan time of 7:20 min. For functional runs, 15 oblique slices were positioned to target the calcarine sulcus to include primary visual cortex (V1) and angled to include the lateral geniculate nucleus (LGN) located in the thalamus. Functional runs were acquired as single-shot gradient-echo EPI with 2 mm isotropic resolution, TR = 227ms, TE = 24ms, echo-spacing=0.59ms, 30o flip angle, bandwidth = 2604 Hz, in-plane acceleration R=2, SMS Multiband Factor = 3, CAIPI shift = FOV/3 (Setsompop et al., 2012).\n\n### Physiological Monitoring\n\nFor all the functional scans, subjects\u2019 heart rate and respiration were monitored using piezoelectric transducer on the non-dominant thumb and a respiratory belt around the upper rib cage, respectively. The physiological recordings were obtained at a sampling rate of 1000 Hz using a PowerLab physio box connected to a computer running LabChart 7 from ADInstruments.\n\n### fMRI Analyses\n\n#### fMRI preprocessing\n\nAnatomical images were bias-corrected using SPM (https://www.fil.ion.ucl.ac.uk/spm/) and segmented using FreeSurfer (Fischl, 2012). Functional runs were preprocessed with slice-timing correction, performed using FSL (http://fsl.fmrib.ox.ac.uk/fsl/fslwiki/), and motion correction, performed using AFNI software (https://afni.nimh.nih.gov/). No spatial smoothing was applied.\n\nBecause fast fMRI has distinct contributions from systemic physiological noise, including cardiac rhythms and respiration, physiological noise removal was performed on the visual stimulus and resting-state functional runs using dynamic regression adapted from RETROICOR (Glover et al., 2000) in runs where physiological recordings were successfully collected. In runs where physiological recordings were not successfully collected (2 runs total), physiological noise was removed using a statistical model of harmonic regression with autoregressive noise (HRAN) (Agrawal et al., 2020).\n\n#### Visual localizer\n\nFor each subject, one of the visual stimulus runs was used as a functional localizer to identify voxels that were significantly driven by the oscillating stimulus. A general linear model (GLM) was fit in FSL (http://fsl.fmrib.ox.ac.uk/fsl/fslwiki/) using sine and cosine basis functions with the same period as the stimulus. The F-statistic of the combined fit to both the sine and cosine basis function was transformed to a Z-score and voxels with a Z-score above 2.5 were selected for further analysis. This functional localizer was then constrained by its intersection with the anatomical definition of V1 (Figure 2B). Specifically, the V1 segmentation was generated automatically from the MEMPRAGE volume based on the cortical surface reconstruction generated using FreeSurfer (Fischl, 2012). The selected voxels from the localizer run were then mapped to each other functional run in a single transformation step. This was done by first registering all functional runs to the anatomical scan using boundary-based registration (Greve and Fischl, 2009) and then resampling the desired volume into the localizer field of view using the registration matrices.\n\n### LGN segmentation\n\nThe lateral geniculate nucleus (LGN) was segmented using both anatomical and functional constraints. The anatomically defined boundaries of the LGN were generated using the FreeSurfer developmental version that generates an individual-level probabilistic atlas in individual anatomical space (Iglesias et al., 2018). From this probabilistic atlas we considered voxels with at least a 30% probability of falling within LGN and dilated this mask to capture border voxels. We next applied a functional constraint using the visual localizer where voxels in the dilated mask with a Z-score above 2.5 were considered part of our final LGN map in each subject.\n\n### Voxel-wise phase analysis and groupings\n\nWe then averaged the two remaining visual stimulus runs and extracted voxel\u2019s average time series between the two runs. We discarded the first 14 s to analyze the steady-state response to the visual stimulus. An estimation of the voxel\u2019s lag in relation to the oscillating stimulus was calculated using the arctangent of the sine and cosine regressor estimates. This allowed us to generate a histogram of latencies to the visual stimulus (Figure 2C). To extract \u2018fast\u2019 and \u2018slow\u2019 reacting voxels, a Gaussian model was fit to the histogram of phase delays. The centroid ($b$) and Full Width at Half Maximum ($FWHM$) of the Gaussian fit were calculated. Groups of fast and slow voxels were then Edges of the Gaussian fit were defined as \u00b1 $\\frac{1}{2} FWHM$ and fast and slow groups were made that each had a width of $\\frac{1}{3}FWHM$. Fast voxels were identified as being within $[b-\\frac{FWHM}{2}, b-\\frac{FWHM}{6}]$ while slow voxels were identified as $[b+\\frac{FWHM}{6},b+\\frac{FWHM}{2}]$ (Figure 2C). This procedure was done for each individual subject and on average yielded 142 fast voxels (range 64\u2013236) and 139 slow voxels (range 68\u2013254). Masks of fast and slow voxels were generated per subject and then mapped to the resting-state runs to inform the spectral analysis (Figure 2D).\n\n### Resting-state spectral analysis\n\nFast and slow voxels were always identified in task-driven runs, allowing us to assess frequency content in the resting-state run using fully independent data. The maps of fast and slow voxels were registered to each individual resting-state run, and for each voxel within these masks, after discarding the first 14 s, the voxel-wise resting-state power spectrum was calculated using the Chronux toolbox (Bokil et al., 2010) with five tapers. We used four features to characterize the resting-state spectra: (1) slope of linear fit under 0.2 Hz; (2) the exponent of the aperiodic 1 /f fit under 0.5 Hz; (3) the amplitude of low frequency fluctuations (ALFF); and (4) the fractional ALFF (fALFF). Each of these features was z-scored within the run and then averaged on a voxel-wise basis between the two resting-state runs. All analysis of the resting-state spectra was performed in MATLAB. See Figure 3A\u2013D for more information.\n\n#### Slope\n\nA linear fit was generated for each voxel\u2019s resting-state spectrum under 0.2 Hz using least-squares to determine the coefficients of a first order polynomial. From this we were able to record the slope of that linear fit for each voxel.\n\n#### Exponent of aperiodic fit\n\nEquation 1 was fit using the Levenberg-Marquardt algorithm to solve non-linear least squares for each voxel\u2019s resting-state spectra. In this equation, $F$ is the independent variable and the $b$ and $x$ are the values being fit. The exponent of the resultant fit ($x$) was recorded for each voxel.\n\n$$\ny=b-log_{10}\u2061(F^{x})\n$$\n\n#### Amplitude of low-frequency fluctuations (ALFF)\n\nFor each voxel, ALFF was calculated according to the method outlined in Zou et al., 2008. Briefly, each voxel\u2019s time series was band pass filtered between 0.01 and 0.08 Hz. Then, the voxel\u2019s time series is transformed into the frequency domain via Fast Fourier Transform (FFT). The power at each frequency is proportional to the square of the amplitude of the FFT at that frequency, and for each voxel, the ALFF value was taken as the averaged square root of the power in the 0.01\u20130.08 Hz frequency range. This is shown in Equation 2 where $FFT(k)$ is the magnitude of the FFT at frequency $k$, $N$ is the number of time points, $P$ is the power spectrum, and the bar represents the average in the specified range.\n\n$$\nP=\\frac{FFT^{2}}{N}; ALFF=\\sqrt{P}-_{[0.01,0.8]}\n$$\n\n#### Fractional ALFF (fALFF)\n\nEach voxel\u2019s fALFF was calculated as described in Zou et al., 2008. Fractional ALFF is briefly defined as the ratio of the power of each frequency at the low frequency range (0.01\u20130.08 Hz) to that of the \u2018global\u2019 frequency range (0.01\u20130.25 Hz). See Equation 3.\n\n$$\nfALFF=\\frac{ALFF_{0.01, 0.8}}{ALFF_{0.01,0.25}}\n$$\n\n### Breath-hold latency calculations\n\nVoxel-wise hemodynamic latencies were calculated according to the method outlined in Chang et al., 2008. Each voxel\u2019s hemodynamic latency was defined as the time-lag yielding the maximum cross-correlation between the given voxel\u2019s time series, $x(t)$, and a reference time series, $y(t)$. The reference time series was found by taking the average time series across voxels in the brain that exceeded a minimum correlation of $r>0.25$ with the breath hold task regressor. This breath hold task regressor was defined as the convolution of a box car function, where the value is set to 1 during the breath hold and 0 at other times, and a sign-reversed canonical HRF (Glover, 1999). Both $x(t)$ and $yt$ were resampled to a resolution of 100ms before computing cross-correlations.\n\n### Support vector machine (SVM) classification of fast, slow, and LGN voxels\n\nSVM classifiers were trained both within and across subjects using Scikit-learn in Python (Pedregosa, 2011). Three models were trained with different predictive features: (1) the resting-state spectrum between 0 and 0.5 Hz, (2) the 4 features of the resting-state spectrum previously identified, and (3) the latency of the response to the breath hold task. The resting-state spectrum was extracted by taking the power at frequencies up to 0.5 Hz ultimately generating a set of 461 features. For all models, before being put into the classifier, the data was normalized by removing the mean and dividing by the standard deviation across voxels for each feature independently using the StandardScaler function of Scikit-learn. For all models, the parameters of the SVM classifier were as follows: regularization parameter ($C$)=10, kernel type =radial basis function (rbf), kernel coefficient $(\\gamma)=\\frac{1}{n_{features}\u2217X.variance}$ . To get validation accuracies both within and across subjects, 1000 bootstraps were performed where the 80\u201320 test-train split of voxels was randomly chosen for each bootstrap. The average validation accuracies over the 1000 bootstraps were calculated along with the 95% confidence intervals. This methodology was followed for all 3 SVM classifiers.\n\n### Support vector machine (SVM) regression to predict relative hemodynamic response latency\n\nSVM models for regression were trained within subject to continuously predict the hemodynamic response latency estimated from the visual stimulus. We limited the regression to voxels whose hemodynamic response latency relative to the median was between [\u20133, 3] sec. Two different models were trained with different predictive features: (1) the resting-state spectrum between 0 and 0.5 Hz and (2) the 4 features of the resting-state spectrum previously identified. The input data to the model was normalized by removing the mean and dividing by the standard deviation cross voxels using the StandardScaler function of Scikit-learn. The parameters of the SVM regression model were as follows: kernel type = radial basis function, kernel coefficient $(\\gamma)=\\frac{1}{n_{features}\u2217X.variance}$, regularization parameter = 10, epsilon = 0.1. To get the validation coefficient of determination ($R^{2})$, 1000 bootstraps were performed on an 80\u201320 test-train split of voxels that were randomly chosen for each bootstrap. The average $R^{2}$ over the 1000 bootstraps was calculated along with the 95% confidence interval.\n\n### Replication dataset at 3 Tesla\n\nTo generate the replication figure (Figure 3\u2014figure supplement 1), we analyzed 10 subjects (mean age = 23 years, range = 19\u201329, 6 female) from a previously published dataset (Williams et al., 2023). Subjects were selected for analysis if they had completed at least one run of a visual task as well as one resting-state scan of at least 10 min. Briefly, subjects were scanned on a 3 Tesla Siemens Prisma scanner with a 64-channel head and neck coil. Anatomical runs were acquired with 1 mm isotropic T1-weighted multi-echo MPRAGE (van der Kouwe et al., 2008). Functional runs were acquired using TR = 0.378 s, 2.5 mm isotropic voxels, and multiband factor = 8. Similar preprocessing steps were performed for this dataset as described above in fMRI Preprocessing including slice-timing correction and motion correction. More information about the specific acquisition parameters and preprocessing can be found in the original open-access publication (Williams et al., 2023).\n\nThe visual stimulus was a counterphase 12 Hz flickering checkerboard stimulus that lasted 254 s with fixed 16 s ON and 16 s OFF periods beginning with an OFF period. To assist the subjects with fixation, in the center of the checkerboard was a red dot that changed brightness at random interval. Subjects were instructed to press a button whenever they detected a color change. During the resting-state scans subjects performed a behavioral task where they were instructed to close their eyes and press a button on a response box on every breath in. This behavioral task enabled us to behaviorally monitor if the subjects fell asleep. Only subjects that were consistently doing the behavioral task during the entire resting-state run were included in our analysis.\n\nA GLM was fit in FSL to identify voxels that were driven by the stimulus and voxels with a Z-statistic above 2.5 were selected for further analysis. This functional localizer was then further constrained by its intersection with the anatomical definition of V1. Voxel-wise hemodynamic response lags within this combined mask were calculated and groups of fast and slow voxels were extracted using the methods described above in Voxel-wise Phase Analysis and Groupings. Then, the fast and slow voxels were registered to the resting-state run and the same procedure outlined above in Resting-state Spectral Analysis was used to extract the 4 spectral features of interest.\n",
+      "created_at": "2025-12-04T02:59:38.480366Z"
+    },
+    {
+      "id": "dd720202-0a91-46f3-b4b3-db173f61e556",
+      "submission_id": "1ef5b0b1-7cb4-4515-8843-52092d62b3fe",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Shella Keilholz, https://ror.org/03czfpz43 Emory University and Georgia Institute of Technology United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.86453.sa0](https://doi.org/10.7554/eLife.86453.sa0)\n\nThis manuscript addresses the important issue of hemodynamic response function (HRF) variability across brain areas and will be valuable to researchers who use fMRI and other types of functional imaging that rely on neurovascular coupling. Using simulations and experiments, the authors provide compelling evidence that differences in the HRF can impact spectrum-based metrics such as ALFF and fALFF. A better understanding of the variability of the HRF is critical for the proper interpretation of activation onset times and of differences observed in clinical populations where both neural and vascular alterations can be expected.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Shella Keilholz, https://ror.org/03czfpz43 Emory University and Georgia Institute of Technology United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.86453.sa1](https://doi.org/10.7554/eLife.86453.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Resting-state fMRI signals contain spectral signatures of local hemodynamic response timing\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Timothy Behrens as the Senior Editor.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1) The authors should consider and discuss the impact of potential differences in HRF shape beyond the standard model and visual cortex. Simulations considering other variations of hemodynamic responses, especially those derived empirically, would be valuable in determining the extent to which their findings are generalizable.\n\n2) The authors should clarify the selection of voxels for training and testing, keeping proximity in mind.\n\n3) Additional context for the interpretation of fast vs slow responders should be given (anatomical/functional location, proximity to vasculature).\n\nReviewer #2 (Recommendations for the authors):\n\n1. If the authors have collected any similar data with different acquisition parameters (such as 3T, lower resolution), a comparison could be helpful for understanding how well the approach translates to other imaging parameters.\n\n2. For the SVM classification, it is mentioned that voxels are randomly sampled for the 80-20 splits. It would seem possible that certain voxels in an instance of the test set could happen to be in close proximity to voxels in the associated training set, and any smoothness in the reconstructed fMRI data might introduce bias in the performance (despite the fact that the authors have not applied spatial smoothing in post-processing). To examine this possibility, voxels in each test partition could be constrained to be at least a certain distance away from voxels in the associated training split.\n\n3. The interpretation of the slow v. fast V1 voxel groups could be discussed. Are the fast and slow voxels found in consistent locations across different subjects, and do they map to different anatomic regions within the visual cortex (similar to the example in Figure 1E)? What might cause a voxel to belong to one or the other group \u2013 is there a relation to the underlying neural or vascular anatomy of these subjects?\n\n4. To examine the influence of thermal noise, the authors have taken care to show that removing a fitted noise floor alters the spectral measures of interest by only a small amount (Figure S2). To further test if there is a relationship between the thermal noise content and the HRF phase, perhaps one could see if the fast versus slow V1 voxel groups have any difference in the estimated noise floor (using an appropriate normalization scheme to handle the arbitrary units of fMRI).\n\n5. The amount of head motion in these subjects during each condition (breath-hold, rest, visual) could be reported.\n",
+      "created_at": "2025-12-04T02:59:38.480366Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T02:59:38.480366Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T02:59:38.480366Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "8397f046-98cf-4ac2-bd17-2884b045f4c8",
+      "content_id": "f59583ac-f349-4a84-bf53-cbe45231bf97",
+      "claim_id": "C1",
+      "claim": "Functional magnetic resonance imaging (fMRI) enables non-invasive measurement of human brain activity via the hemodynamic response.",
+      "claim_type": "EXPLICIT",
+      "source": "Functional magnetic resonance imaging (fMRI) enables non-invasive measurement of human brain activity via the hemodynamic response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a well-established fact in the field, supported by the citation to foundational work.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:59:38.480366Z"
+    },
+    {
+      "id": "2993d143-8bad-44b6-95c7-50f903362d46",
+      "content_id": "f59583ac-f349-4a84-bf53-cbe45231bf97",
+      "claim_id": "C2",
+      "claim": "Changes in neural activity give rise to the blood-oxygenation-level-dependent (BOLD) signal measured in most fMRI studies.",
+      "claim_type": "EXPLICIT",
+      "source": "When activity in a population of neurons changes, these changes give rise to the blood-oxygenation-level-dependent (BOLD) signal measured in most fMRI studies (Ogawa et al., 1990).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Ogawa et al., 1990, a foundational paper in fMRI.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:59:38.480366Z"
+    },
+    {
+      "id": "93fe7d95-3178-4eb4-bf3a-ef79553c9311",
+      "content_id": "f59583ac-f349-4a84-bf53-cbe45231bf97",
+      "claim_id": "C3",
+      "claim": "The hemodynamic response evolves on a time course of seconds.",
+      "claim_type": "EXPLICIT",
+      "source": "the hemodynamic response, which evolves on a time course of seconds (Kwong et al., 1992; Ogawa et al., 1990).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Kwong et al., 1992 and Ogawa et al., 1990.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:59:38.480366Z"
+    },
+    {
+      "id": "6fe4acd9-cb17-486b-8065-bcf68453edca",
+      "content_id": "f59583ac-f349-4a84-bf53-cbe45231bf97",
+      "claim_id": "C4",
+      "claim": "The coupling between neural activity and the BOLD signal can be represented by the hemodynamic response function (HRF).",
+      "claim_type": "EXPLICIT",
+      "source": "This coupling between neural activity and the BOLD signal can be represented by the hemodynamic response function (HRF) (Aguirre et al., 1998; Handwerker et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Aguirre et al., 1998 and Handwerker et al., 2004.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:59:38.480366Z"
+    },
+    {
+      "id": "3558b701-22de-4fc5-b11c-f52e71bfe45f",
+      "content_id": "f59583ac-f349-4a84-bf53-cbe45231bf97",
+      "claim_id": "C5",
+      "claim": "The properties of the HRF depend on many interconnected factors, including local vascular architecture and cerebrovascular dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "The properties of the HRF depend on many interconnected factors, including the effects of local vascular architecture and cerebrovascular dynamics, that vary substantially across the brain and between individuals (Aguirre et al., 1998; Handwerker et al., 2004; Len and Neary, 2011; Logothetis et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:59:38.480366Z"
+    },
+    {
+      "id": "6829b3a0-e5e2-4684-8a64-33980237ebc8",
+      "content_id": "f59583ac-f349-4a84-bf53-cbe45231bf97",
+      "claim_id": "C6",
+      "claim": "The relative timing and shape of the HRF varies considerably across brain regions and even between neighboring voxels.",
+      "claim_type": "EXPLICIT",
+      "source": "The relative timing and shape of the HRF, therefore, also varies considerably across brain regions and even between neighboring voxels (Buckner et al., 1998; Lee et al., 1995; Birn et al., 2001; Siero et al., 2011; Miezin et al., 2000; Siero et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:59:38.480366Z"
+    },
+    {
+      "id": "0f69009d-ddec-4a18-addf-e1be39380129",
+      "content_id": "f59583ac-f349-4a84-bf53-cbe45231bf97",
+      "claim_id": "C7",
+      "claim": "Hemodynamic response temporal lag variation is substantially larger than many neural effects of interest, introducing variability on the order of several seconds.",
+      "claim_type": "EXPLICIT",
+      "source": "Hemodynamic response temporal lag variation is substantially larger than many neural effects of interest, introducing variability on the order of several seconds (Buckner et al., 1998; Lee et al., 1995; Birn et al., 2001; Siero et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:59:38.480366Z"
+    },
+    {
+      "id": "53babb42-00af-400c-931e-271d01661c14",
+      "content_id": "f59583ac-f349-4a84-bf53-cbe45231bf97",
+      "claim_id": "C8",
+      "claim": "Advances in acquisition technology now allow high-resolution whole brain fMRI data to be acquired at fast (<500ms) rates.",
+      "claim_type": "EXPLICIT",
+      "source": "Advances in acquisition technology now allow high-resolution whole brain fMRI data to be acquired at fast (<500ms) rates (Polimeni and Lewis, 2021; Chen et al., 2019; Barth et al., 2016; Chiew et al., 2018; Hennig et al., 2007; Setsompop et al., 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to recent technical advances.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:59:38.480366Z"
+    },
+    {
+      "id": "c5676db4-db4d-46bb-bcbe-e723beea995e",
+      "content_id": "f59583ac-f349-4a84-bf53-cbe45231bf97",
+      "claim_id": "C9",
+      "claim": "Recent studies have revealed highly structured temporal dynamics using fMRI.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, recent studies have revealed highly structured temporal dynamics using fMRI and suggest that fMRI can enable whole-brain mapping of temporal sequences (Lee et al., 2013; Setzer et al., 2021; Raut et al., 2021; Mitra et al., 2016; Vizioli et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to recent studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:59:38.480366Z"
+    },
+    {
+      "id": "c3f64bd9-6f3f-48c4-b7ea-25df6cbab91e",
+      "content_id": "f59583ac-f349-4a84-bf53-cbe45231bf97",
+      "claim_id": "C10",
+      "claim": "Hemodynamic signals have been shown to contain more information about fast and high-frequency activity than previously thought.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, hemodynamic signals have been shown to contain more information about fast and high-frequency activity than previously thought (Lee et al., 2013; Smith et al., 2012; Chen and Glover, 2015; Lewis et al., 2016; Sasai et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:59:38.480366Z"
+    },
+    {
+      "id": "b8b3e9e2-0f3c-43b7-b3a6-cd6fa73ac2a6",
+      "content_id": "f59583ac-f349-4a84-bf53-cbe45231bf97",
+      "claim_id": "C11",
+      "claim": "fMRI can achieve impressive temporal precision within regions, on the order of 100ms.",
+      "claim_type": "EXPLICIT",
+      "source": "Studies examining individual brain regions have demonstrated that fMRI can achieve impressive temporal precision within regions, on the order of 100ms (Lin et al., 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Lin et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:59:38.480366Z"
+    },
+    {
+      "id": "e6caa4c6-9d17-445f-b6d9-ce4e13c57818",
+      "content_id": "f59583ac-f349-4a84-bf53-cbe45231bf97",
+      "claim_id": "C12",
+      "claim": "Most common analysis approaches for BOLD fMRI data assume a standard, canonical HRF shape throughout the brain.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the well-known heterogeneity of hemodynamic timing, most common analysis approaches for BOLD fMRI data assume a standard, canonical HRF shape throughout the brain (Glover, 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Glover, 1999, and reflects common practice in the field.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:59:38.480366Z"
+    },
+    {
+      "id": "047fea32-cacc-41a9-98cf-a27c726e3908",
+      "content_id": "f59583ac-f349-4a84-bf53-cbe45231bf97",
+      "claim_id": "C13",
+      "claim": "Incorrect assumptions about the shape and timing of the HRF can lead to incorrect inferences regarding the underlying neural activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Incorrect assumptions about the shape and timing of the HRF can lead to incorrect inferences regarding the underlying neural activity (Gonzalez-Castillo et al., 2012; Lindquist et al., 2009; Handwerker et al., 2012)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:59:38.480366Z"
+    },
+    {
+      "id": "f2f7fc26-f154-46bb-bbc3-6d667fe95bf5",
+      "content_id": "f59583ac-f349-4a84-bf53-cbe45231bf97",
+      "claim_id": "C14",
+      "claim": "Studies that assume a whole brain canonical HRF are unable to decouple the neural and vascular components of the BOLD signal.",
+      "claim_type": "EXPLICIT",
+      "source": "studies that assume a whole brain canonical HRF are unable to decouple the neural and vascular components of the BOLD signal (Handwerker et al., 2004; Rangaprakash et al., 2018; Rangaprakash et al., 2017; Deshpande et al., 2010; Chang et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:59:38.480366Z"
+    },
+    {
+      "id": "fcea9dc0-4d38-40d0-a6ae-703d9f1ded8c",
+      "content_id": "f59583ac-f349-4a84-bf53-cbe45231bf97",
+      "claim_id": "C15",
+      "claim": "Previous work has demonstrated that it is possible to quantify hemodynamic lags across brain regions on a voxel-wise level.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous work has demonstrated that it is possible to quantify hemodynamic lags across brain regions, and even on a voxel-wise level, to detect the relative order of BOLD responses with high temporal precision (Siero et al., 2011; Miezin et al., 2000; Siero et al., 2015; Lin et al., 2013; Chang et al., 2008; Sicard and Duong, 2005; Lin et al., 2018; Misaki et al., 2013; Kastrup et al., 1999; Liu et al., 2017; Bright et al., 2009; Chen et al., 2021; Wu et al., 2013; Wu et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by extensive citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:59:38.480366Z"
+    },
+    {
+      "id": "fcd6bfbf-36b1-485b-8131-a481abdd01f2",
+      "content_id": "f59583ac-f349-4a84-bf53-cbe45231bf97",
+      "claim_id": "C16",
+      "claim": "Breath hold tasks modulate cerebral blood flow (CBF) to all vascularized regions with minimal changes in cerebral metabolic rate of oxygen (CMRO2).",
+      "claim_type": "EXPLICIT",
+      "source": "Alternatively, using a breath hold or similar hypercapnic challenge can modulate cerebral blood flow (CBF) to all vascularized regions with minimal changes in cerebral metabolic rate of oxygen (CMRO2), allowing mapping of vascular latencies (Chang et al., 2008; Sicard and Duong, 2005; Kastrup et al., 1999; Liu et al., 2017; Bright et al., 2009; Chen et al., 2021; Pinto et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:59:38.480366Z"
+    },
+    {
+      "id": "c8605618-7c7e-4e82-80f5-b49834989cb3",
+      "content_id": "f59583ac-f349-4a84-bf53-cbe45231bf97",
+      "claim_id": "C17",
+      "claim": "Cerebrovascular reactivity (CVR) is a measure of a blood vessel's capacity to dilate and constrict in response to a vasoactive stimulus.",
+      "claim_type": "EXPLICIT",
+      "source": "While neurovascular coupling reflects the alterations in local hemodynamics that occur in response to changes in neural activity, CVR is specifically a measure of a blood vessel's capacity to dilate and constrict in response to a vasoactive stimulus, and does not include the extensive metabolic and molecular factors that also drive neurovascular coupling (Pinto et al., 2021; D'Esposito et al., 2003; Iadecola, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations defining CVR.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:59:38.480366Z"
+    },
+    {
+      "id": "5e99742d-c163-4546-aa14-84da60d46183",
+      "content_id": "f59583ac-f349-4a84-bf53-cbe45231bf97",
+      "claim_id": "C18",
+      "claim": "There is evidence that while CVR is affected by healthy aging, some metrics of neurovascular coupling are not.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, there is evidence that while CVR is affected by healthy aging, some metrics of neurovascular coupling are not, hinting that distinct mechanisms may shape these two patterns (Stefanidis et al., 2019; West et al., 2019; Grinband et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Stefanidis et al., 2019; West et al., 2019; Grinband et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:59:38.480366Z"
+    },
+    {
+      "id": "c753be12-59cb-4119-b871-131f086a4a7c",
+      "content_id": "f59583ac-f349-4a84-bf53-cbe45231bf97",
+      "claim_id": "C19",
+      "claim": "Resting-state fMRI signals reflect neurovascular coupling induced by spontaneous neural activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Resting-state fMRI signals reflect neurovascular coupling induced by spontaneous neural activity (Mateo et al., 2017; Ma et al., 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Mateo et al., 2017 and Ma et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:59:38.480366Z"
+    },
+    {
+      "id": "38335022-56a5-42fa-976f-fd0bde048065",
+      "content_id": "f59583ac-f349-4a84-bf53-cbe45231bf97",
+      "claim_id": "C20",
+      "claim": "Previous modeling work has illustrated that narrower HRFs should result in BOLD responses containing more high frequency power.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous modeling work has illustrated that narrower HRFs should result in BOLD responses containing more high frequency power (Chen and Glover, 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Chen and Glover, 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:59:38.480366Z"
+    },
+    {
+      "id": "8ae67b3b-546f-40d0-9141-e953119888bc",
+      "content_id": "f59583ac-f349-4a84-bf53-cbe45231bf97",
+      "claim_id": "C21",
+      "claim": "HRFs with faster dynamics produced less power in the low frequency bands compared to those with slower dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that while HRFs with faster dynamics produced less power in the low frequency bands compared to those with slower dynamics, they also showed a shallower decline in power at higher frequencies (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by simulation results shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:59:38.480366Z"
+    },
+    {
+      "id": "23e1a5a7-933d-46db-8fab-c6d31c8ce611",
+      "content_id": "f59583ac-f349-4a84-bf53-cbe45231bf97",
+      "claim_id": "C22",
+      "claim": "HRFs with faster dynamics showed a shallower decline in power at higher frequencies.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that while HRFs with faster dynamics produced less power in the low frequency bands compared to those with slower dynamics, they also showed a shallower decline in power at higher frequencies (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by simulation results shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:59:38.480366Z"
+    },
+    {
+      "id": "f3afde64-4232-4858-9b8e-aed8eb03b63e",
+      "content_id": "f59583ac-f349-4a84-bf53-cbe45231bf97",
+      "claim_id": "C23",
+      "claim": "The effect of HRF temporal dynamics on spectral content is preserved when HRFs are normalized to have the same peak amplitude.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, this effect was preserved when we normalized the different HRFs to have the same peak amplitude (Figure 1\u2014figure supplement 1A)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by simulation results shown in Figure 1\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:59:38.480366Z"
+    },
+    {
+      "id": "8fdb7f3b-21ee-40d4-881d-c72b974170c9",
+      "content_id": "f59583ac-f349-4a84-bf53-cbe45231bf97",
+      "claim_id": "C24",
+      "claim": "The effect of HRF temporal dynamics on spectral content is preserved when accounting for the 1/f-like spectral pattern that neural activity displays.",
+      "claim_type": "EXPLICIT",
+      "source": "This effect was also preserved if we accounted for the 1/f-like spectral pattern that neural activity displays (Figure 1\u2014figure supplement 1C\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by simulation results shown in Figure 1\u2014figure supplement 1C\u2013E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:59:38.480366Z"
+    },
+    {
+      "id": "1e0833e9-e486-4638-8247-141a9d92d1a1",
+      "content_id": "f59583ac-f349-4a84-bf53-cbe45231bf97",
+      "claim_id": "C25",
+      "claim": "The time-to-peak (TTP) and full width at half maximum (FWHM) of the HRF are correlated.",
+      "claim_type": "EXPLICIT",
+      "source": "And finally, although prior work has shown that the TTP and FWHM of the HRF are correlated (Siero et al., 2011; de Zwart et al., 2005)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Siero et al., 2011 and de Zwart et al., 2005.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:59:38.480366Z"
+    },
+    {
+      "id": "7469b670-87d9-4470-9cf0-beb31f3825a0",
+      "content_id": "f59583ac-f349-4a84-bf53-cbe45231bf97",
+      "claim_id": "C26",
+      "claim": "Varying the FWHM had a more profound impact on the frequency spectrum compared to varying the TTP.",
+      "claim_type": "EXPLICIT",
+      "source": "Varying the FWHM had a more profound impact on the frequency spectrum compared to varying the TTP (Figure 1\u2014figure supplement 2)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by simulation results shown in Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:59:38.480366Z"
+    },
+    {
+      "id": "47ad75d3-d2d0-4839-83c4-05c0f6f615bf",
+      "content_id": "f59583ac-f349-4a84-bf53-cbe45231bf97",
+      "claim_id": "C27",
+      "claim": "A wide range of hemodynamic response lags exists within V1.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with prior studies (Birn et al., 2001; Lewis et al., 2016; de Zwart et al., 2005) we found a wide range of hemodynamic response lags within V1 (Figure 2A, bottom).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 2A and citations to prior studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:59:38.480366Z"
+    },
+    {
+      "id": "ce4a47c2-8b3b-459c-9d69-4985335b8c7c",
+      "content_id": "f59583ac-f349-4a84-bf53-cbe45231bf97",
+      "claim_id": "C28",
+      "claim": "The slope of the resting-state frequency spectrum showed significant differences between fast and slow voxels in 15/15 subjects.",
+      "claim_type": "EXPLICIT",
+      "source": "The slope showed significant differences between the fast and slow voxels within each individual subject (15/15)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by statistical analysis across all subjects.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:59:38.480366Z"
+    },
+    {
+      "id": "ec62c1b0-5c6b-4faf-9573-d2b4c04f9303",
+      "content_id": "f59583ac-f349-4a84-bf53-cbe45231bf97",
+      "claim_id": "C29",
+      "claim": "The aperiodic exponent showed significant differences between fast and slow voxels in 14/15 subjects.",
+      "claim_type": "EXPLICIT",
+      "source": "while the aperiodic exponent, ALFF, and fALFF showed significant differences in 14, 11, and 13 subjects, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by statistical analysis across subjects.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:59:38.480366Z"
+    },
+    {
+      "id": "ef2c6b9b-8cad-4099-8c03-e4f1bfa1ecb4",
+      "content_id": "f59583ac-f349-4a84-bf53-cbe45231bf97",
+      "claim_id": "C30",
+      "claim": "ALFF showed significant differences between fast and slow voxels in 11/15 subjects.",
+      "claim_type": "EXPLICIT",
+      "source": "while the aperiodic exponent, ALFF, and fALFF showed significant differences in 14, 11, and 13 subjects, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by statistical analysis across subjects.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:59:38.480366Z"
+    },
+    {
+      "id": "c50b18e1-c9c1-41ad-a10d-460fddf3330f",
+      "content_id": "f59583ac-f349-4a84-bf53-cbe45231bf97",
+      "claim_id": "C31",
+      "claim": "fALFF showed significant differences between fast and slow voxels in 13/15 subjects.",
+      "claim_type": "EXPLICIT",
+      "source": "while the aperiodic exponent, ALFF, and fALFF showed significant differences in 14, 11, and 13 subjects, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by statistical analysis across subjects.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:59:38.480366Z"
+    },
+    {
+      "id": "5fcc220b-75ef-40ed-9aac-f369641b9158",
+      "content_id": "f59583ac-f349-4a84-bf53-cbe45231bf97",
+      "claim_id": "C32",
+      "claim": "Prior studies have shown that LGN has faster hemodynamic responses than V1.",
+      "claim_type": "EXPLICIT",
+      "source": "Prior studies have shown that LGN has faster hemodynamic responses than V1 (Lau et al., 2011; Yen et al., 2011; Lewis et al., 2018)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:59:38.480366Z"
+    },
+    {
+      "id": "c6ce2f96-8750-4e3d-8115-505835152924",
+      "content_id": "f59583ac-f349-4a84-bf53-cbe45231bf97",
+      "claim_id": "C33",
+      "claim": "The LGN peaked before both the fast and slow groups in V1.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that the LGN peaked before both the fast and slow groups in V1 (Figure 4B), consistent with prior work demonstrating faster hemodynamics in thalamus (Lau et al., 2011; Yen et al., 2011; Lewis et al., 2018).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 4B and citations to prior work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:59:38.480366Z"
+    },
+    {
+      "id": "eb23e554-7838-4fdb-a826-0f0323125f06",
+      "content_id": "f59583ac-f349-4a84-bf53-cbe45231bf97",
+      "claim_id": "C34",
+      "claim": "For all subjects there were clear differences in each spectral feature within the LGN compared to both the fast and slow voxels of the visual cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that for all subjects there were clear differences in each spectral feature within the LGN compared to both the fast and slow voxels of the visual cortex (Figure 4C\u2013F; See Supplementary file 1 for p-values).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 4C\u2013F and statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:59:38.480366Z"
+    },
+    {
+      "id": "da37bd51-cfe4-4d7b-a284-7617175ea184",
+      "content_id": "f59583ac-f349-4a84-bf53-cbe45231bf97",
+      "claim_id": "C35",
+      "claim": "The slope feature showed significant differences between fast vs. LGN and slow vs. LGN in 15/15 subjects.",
+      "claim_type": "EXPLICIT",
+      "source": "For the (C) slope, 15/15 subjects showed significant differences between fast vs. LGN and slow vs. LGN",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by statistical analysis across all subjects.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:59:38.480366Z"
+    },
+    {
+      "id": "94fef1d0-65f0-4658-833b-5311e7e9c055",
+      "content_id": "f59583ac-f349-4a84-bf53-cbe45231bf97",
+      "claim_id": "C36",
+      "claim": "The aperiodic exponent showed significant differences between fast-LGN and slow-LGN in 15/15 subjects.",
+      "claim_type": "EXPLICIT",
+      "source": "(D) exponent of an aperiodic 1 /f fit, 15/15 subjects showed significant differences between fast-LGN and slow-LGN",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by statistical analysis across all subjects.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:59:38.480366Z"
+    },
+    {
+      "id": "cd73c6bb-554d-454a-9cda-25065a9e9a7e",
+      "content_id": "f59583ac-f349-4a84-bf53-cbe45231bf97",
+      "claim_id": "C37",
+      "claim": "ALFF showed significant differences between fast vs. LGN in 5/15 subjects and between slow vs. LGN in 7/15 subjects.",
+      "claim_type": "EXPLICIT",
+      "source": "(E) ALFF, 5/15 subjects showed significant differences between fast vs. LGN and 7/15 between slow vs. LGN",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by statistical analysis across subjects.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:59:38.480366Z"
+    },
+    {
+      "id": "4bca6b14-b31f-401d-a5a2-f0c9bc99c65f",
+      "content_id": "f59583ac-f349-4a84-bf53-cbe45231bf97",
+      "claim_id": "C38",
+      "claim": "fALFF showed significant differences between fast-LGN and between slow-LGN in 15/15 subjects.",
+      "claim_type": "EXPLICIT",
+      "source": "(F) fALFF, 15/15 subjects showed significant differences between fast-LGN and between slow-LGN.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by statistical analysis across all subjects.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:59:38.480366Z"
+    },
+    {
+      "id": "cfb88113-f317-4e2a-a152-82698c400342",
+      "content_id": "f59583ac-f349-4a84-bf53-cbe45231bf97",
+      "claim_id": "C39",
+      "claim": "In only 7/15 subjects was the average breath hold latency of fast cortical voxels significantly faster compared to slow cortical voxels.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, in only 7/15 subjects was the average breath hold latency of fast cortical voxels significantly faster compared to slow cortical voxels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by statistical analysis of breath hold data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:59:38.480366Z"
+    },
+    {
+      "id": "f33dd10f-eb26-4cb3-8555-b89a4d442bb6",
+      "content_id": "f59583ac-f349-4a84-bf53-cbe45231bf97",
+      "claim_id": "C40",
+      "claim": "The breath hold latency in LGN voxels was significantly slower than fast cortical voxels in 5 subjects.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the breath hold latency in LGN voxels was slower than expected in some subjects: it was significantly slower than fast cortical voxels in 5 subjects and significantly slower than slow cortical voxels in 1 subject (Wilcoxon rank-sum test, p<0.05).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by statistical analysis of breath hold data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:59:38.480366Z"
+    },
+    {
+      "id": "6db73c34-db69-4857-9d7e-1dbd79f671e1",
+      "content_id": "f59583ac-f349-4a84-bf53-cbe45231bf97",
+      "claim_id": "C41",
+      "claim": "The breath hold latency in LGN voxels was significantly slower than slow cortical voxels in 1 subject.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the breath hold latency in LGN voxels was slower than expected in some subjects: it was significantly slower than fast cortical voxels in 5 subjects and significantly slower than slow cortical voxels in 1 subject (Wilcoxon rank-sum test, p<0.05).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by statistical analysis of breath hold data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:59:38.480366Z"
+    },
+    {
+      "id": "7689afc7-a492-45b3-9259-8c90ef24a586",
+      "content_id": "f59583ac-f349-4a84-bf53-cbe45231bf97",
+      "claim_id": "C42",
+      "claim": "Support vector machines (SVMs) could classify slow, fast, and LGN voxels using information from the resting-state spectrum with accuracies well above chance.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the classifier validation accuracies, both within each individual subject and on the dataset that combined all subjects, were well above chance (Figure 6)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by classification results shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:59:38.480366Z"
+    },
+    {
+      "id": "8a3c49c4-32c7-4be7-aae5-1c63a4a931ef",
+      "content_id": "f59583ac-f349-4a84-bf53-cbe45231bf97",
+      "claim_id": "C43",
+      "claim": "Validation accuracies remained well above chance when training on voxels in one hemisphere and testing on the other hemisphere.",
+      "claim_type": "EXPLICIT",
+      "source": "Following this procedure, the number of voxels for training and testing was often closer to a 50\u201350 split than an 80\u201320 split; however, validation accuracies both within individual subjects and across subjects nevertheless remained well above chance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by classification results with hemisphere-split training/testing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:59:38.480366Z"
+    },
+    {
+      "id": "cd0383cb-5bd2-4db3-925d-f3eb6ae76936",
+      "content_id": "f59583ac-f349-4a84-bf53-cbe45231bf97",
+      "claim_id": "C44",
+      "claim": "The overall performance across subjects was higher when training on spatially separated voxels.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the overall performance across subjects was higher, suggesting better generalization across subjects when training on spatially separated voxels (Figure 6\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by classification results shown in Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:59:38.480366Z"
+    },
+    {
+      "id": "40c2f238-82a7-463a-b03d-21244094339a",
+      "content_id": "f59583ac-f349-4a84-bf53-cbe45231bf97",
+      "claim_id": "C45",
+      "claim": "Regression models aiming to predict specific response timing performed poorly, with an average coefficient of determination of 0.104 and an average root mean squared error of 0.923.",
+      "claim_type": "EXPLICIT",
+      "source": "Regression models aiming to predict specific response timing (rather than classifying fast vs. slow) were significantly above chance but still performed poorly, with an average coefficient of determination of 0.104 and an average root mean squared error of 0.923 (Supplementary file 4)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by regression analysis results reported in Supplementary file 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:59:38.480366Z"
+    },
+    {
+      "id": "52df7bc2-2699-496e-916a-7c9bbd3b6984",
+      "content_id": "f59583ac-f349-4a84-bf53-cbe45231bf97",
+      "claim_id": "C46",
+      "claim": "Absolute HRF timing depends on task state.",
+      "claim_type": "EXPLICIT",
+      "source": "likely due to the fact that absolute HRF timing depends on task state (Chen and Glover, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Chen and Glover, 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:59:38.480366Z"
+    },
+    {
+      "id": "6419b308-f705-45b3-8b75-c286f6772552",
+      "content_id": "f59583ac-f349-4a84-bf53-cbe45231bf97",
+      "claim_id": "C47",
+      "claim": "The SVM classifier trained using the breath hold latencies performed significantly worse than both resting-state models.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it nevertheless performed significantly worse than both resting-state models (Wilcoxon rank-sum test, p<0.0005; per-subject accuracy in Supplementary file 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by statistical comparison of classifier performance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:59:38.480366Z"
+    },
+    {
+      "id": "8fa33340-078e-49dc-8c48-c21648df85a8",
+      "content_id": "f59583ac-f349-4a84-bf53-cbe45231bf97",
+      "claim_id": "C48",
+      "claim": "The frequency spectrum of resting-state fMRI signals contains rich information about local hemodynamic timing.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that the frequency spectrum of resting-state fMRI signals contains rich information about local hemodynamic timing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion drawn from the simulation and experimental results presented.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:59:38.480366Z"
+    },
+    {
+      "id": "16c7332c-33c8-42e7-804f-650d2ae335f5",
+      "content_id": "f59583ac-f349-4a84-bf53-cbe45231bf97",
+      "claim_id": "C49",
+      "claim": "Prior work has identified changes in the spectral content of fMRI signals in certain clinical populations, including major depressive disorder.",
+      "claim_type": "EXPLICIT",
+      "source": "Prior work has identified changes in the spectral content of fMRI signals in certain clinical populations, including major depressive disorder (Wang et al., 2016), mild cognitive impairment (Han et al., 2011), and Alzheimer's disease (Yang et al., 2020)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior clinical studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:59:38.480366Z"
+    },
+    {
+      "id": "1d9ab7f0-00d8-4497-939c-a8e110d0cdbf",
+      "content_id": "f59583ac-f349-4a84-bf53-cbe45231bf97",
+      "claim_id": "C50",
+      "claim": "Prior work has identified changes in the spectral content of fMRI signals in mild cognitive impairment.",
+      "claim_type": "EXPLICIT",
+      "source": "Prior work has identified changes in the spectral content of fMRI signals in certain clinical populations, including major depressive disorder (Wang et al., 2016), mild cognitive impairment (Han et al., 2011), and Alzheimer's disease (Yang et al., 2020)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior clinical studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:59:38.480366Z"
+    },
+    {
+      "id": "72597203-30ca-46fa-b9df-4f50b86b62ec",
+      "content_id": "f59583ac-f349-4a84-bf53-cbe45231bf97",
+      "claim_id": "C51",
+      "claim": "Prior work has identified changes in the spectral content of fMRI signals in Alzheimer's disease.",
+      "claim_type": "EXPLICIT",
+      "source": "Prior work has identified changes in the spectral content of fMRI signals in certain clinical populations, including major depressive disorder (Wang et al., 2016), mild cognitive impairment (Han et al., 2011), and Alzheimer's disease (Yang et al., 2020)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior clinical studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:59:38.480366Z"
+    },
+    {
+      "id": "9072ab4e-13f5-4859-a507-f6568bd55616",
+      "content_id": "f59583ac-f349-4a84-bf53-cbe45231bf97",
+      "claim_id": "C52",
+      "claim": "Differences in hemodynamic response timings will alter the frequency content of fMRI signals.",
+      "claim_type": "EXPLICIT",
+      "source": "However, as seen here, differences in hemodynamic response timings will also alter the frequency content of fMRI signals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the study's findings.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:59:38.480366Z"
+    },
+    {
+      "id": "30bce0c2-2c27-44e0-9322-ccbe67232916",
+      "content_id": "f59583ac-f349-4a84-bf53-cbe45231bf97",
+      "claim_id": "C53",
+      "claim": "Prior work has shown that intrinsic timescales of BOLD activity vary across brain regions and can be used to predict individual subject patterns.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, prior work has shown that intrinsic timescales of BOLD activity vary across brain regions and can be used to predict individual subject patterns (Fallon et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Fallon et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:59:38.480366Z"
+    },
+    {
+      "id": "fdd68731-6ddf-430f-8781-e2ffa4a73519",
+      "content_id": "f59583ac-f349-4a84-bf53-cbe45231bf97",
+      "claim_id": "C54",
+      "claim": "Changes in the spectral content of fMRI signals can arise not just from differences in intrinsic brain activity but could also be indicators of different hemodynamic response timing.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, changes in the spectral content of fMRI signals can arise not just from differences in intrinsic brain activity but could also be indicators of different hemodynamic response timing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the study's findings.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:59:38.480366Z"
+    },
+    {
+      "id": "9b78168b-ac0a-4ac4-abff-e0940fef9ab7",
+      "content_id": "f59583ac-f349-4a84-bf53-cbe45231bf97",
+      "claim_id": "C55",
+      "claim": "ALFF is a marker of the power in low frequency bands.",
+      "claim_type": "EXPLICIT",
+      "source": "ALFF is a marker of the power in low frequency bands",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition of the ALFF metric.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:59:38.480366Z"
+    },
+    {
+      "id": "22d97d50-0ad2-411a-adee-6e508c7057b6",
+      "content_id": "f59583ac-f349-4a84-bf53-cbe45231bf97",
+      "claim_id": "C56",
+      "claim": "fALFF is a measure of the ratio of high to low frequency power.",
+      "claim_type": "EXPLICIT",
+      "source": "fALFF is a measure of the ratio of high to low frequency power.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition of the fALFF metric.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:59:38.480366Z"
+    },
+    {
+      "id": "01dea47c-c1fe-44ae-bbec-56ee16344891",
+      "content_id": "f59583ac-f349-4a84-bf53-cbe45231bf97",
+      "claim_id": "C57",
+      "claim": "ALFF is limited to a relatively narrow band of frequencies, 0.01\u20130.08 Hz.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, ALFF had the poorest sensitivity within subjects which could be due to the fact that ALFF is the only feature that does not include information from both low and high frequency ranges and is instead limited to a relatively narrow band of frequencies, 0.01\u20130.08 Hz.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the ALFF metric's frequency range.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:59:38.480366Z"
+    },
+    {
+      "id": "9edaf206-6c2c-4ebb-a9fc-207517add119",
+      "content_id": "f59583ac-f349-4a84-bf53-cbe45231bf97",
+      "claim_id": "C58",
+      "claim": "Using the resting-state spectrum itself did not perform significantly better than the chosen features in classifying fast and slow voxels.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, using the resting-state spectrum itself did not perform significantly better than our chosen features in classifying fast and slow voxels",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by comparison of classifier performance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:59:38.480366Z"
+    },
+    {
+      "id": "626cc252-7923-45b1-b2b6-271a6f7b2b63",
+      "content_id": "f59583ac-f349-4a84-bf53-cbe45231bf97",
+      "claim_id": "C59",
+      "claim": "The timing and duration of the hemodynamic response both increase towards the cortical surface while the fastest, narrowest hemodynamic responses occurred in deeper gray matter.",
+      "claim_type": "EXPLICIT",
+      "source": "Prior work has shown that the timing and duration of the hemodynamic response both increase towards the cortical surface while the fastest, narrowest hemodynamic responses occurred in deeper gray matter (Siero et al., 2011; de Zwart et al., 2005; Duvernoy et al., 1981).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:59:38.480366Z"
+    },
+    {
+      "id": "49be708d-00fd-4d21-a49c-d8fc6c53a5ff",
+      "content_id": "f59583ac-f349-4a84-bf53-cbe45231bf97",
+      "claim_id": "C60",
+      "claim": "Vascular elasticity and reactivity change across the vascular network and vary between regions.",
+      "claim_type": "EXPLICIT",
+      "source": "Vascular elasticity and reactivity also change across the vascular network and vary between regions further contributing to the variable timing of the hemodynamic response across the brain (Uluda\u011f and Blinder, 2018; Drew, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Uluda\u011f and Blinder, 2018 and Drew, 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:59:38.480366Z"
+    },
+    {
+      "id": "a06d080e-f493-4134-ab1f-e65b174b5789",
+      "content_id": "f59583ac-f349-4a84-bf53-cbe45231bf97",
+      "claim_id": "C61",
+      "claim": "Arteries are surrounded by smooth muscle cells that rapidly relax and expand their diameter in response to neural activity while veins dilate much more slowly.",
+      "claim_type": "EXPLICIT",
+      "source": "Arteries are surrounded by smooth muscle cells that rapidly relax and expand their diameter in response to neural activity while veins dilate much more slowly (Drew, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Drew, 2019.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:59:38.480366Z"
+    },
+    {
+      "id": "69de0b20-8e0b-41b4-8d53-e576f6b01a56",
+      "content_id": "f59583ac-f349-4a84-bf53-cbe45231bf97",
+      "claim_id": "C62",
+      "claim": "An increasing number of studies are utilizing fMRI to study small, deep brain structures such as the thalamus and brainstem.",
+      "claim_type": "EXPLICIT",
+      "source": "Due to significant improvements in both the sensitivity and spatial resolution of fMRI, an increasing number of studies are utilizing fMRI to study small, deep brain structures such as the thalamus and brainstem (Beissner et al., 2014; Sclocco et al., 2018; Saranathan et al., 2021; Beissner and Baudrexel, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to recent studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:59:38.480366Z"
+    },
+    {
+      "id": "1235dcd9-11a8-4fbe-8266-9d7b5d463599",
+      "content_id": "f59583ac-f349-4a84-bf53-cbe45231bf97",
+      "claim_id": "C63",
+      "claim": "Faster hemodynamic responses are frequently reported in subcortex.",
+      "claim_type": "EXPLICIT",
+      "source": "Faster hemodynamic responses are frequently reported in subcortex, but hemodynamic responses in these regions are less well characterized than in the cortex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general observation from the literature.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:59:38.480366Z"
+    },
+    {
+      "id": "a9436041-7325-447e-83a1-bc136270382e",
+      "content_id": "f59583ac-f349-4a84-bf53-cbe45231bf97",
+      "claim_id": "C64",
+      "claim": "Recent studies have leveraged fast fMRI to detect rapid sequences of neural events related to visual sequence detection.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent studies have leveraged fast fMRI to detect rapid sequences of neural events related to visual sequence detection (Wittkuhn and Schuck, 2021), auditory dynamics (Fr\u00fchholz et al., 2020), and changes in arousal state (Setzer et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to recent studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:59:38.480366Z"
+    },
+    {
+      "id": "73a9642e-14f2-4935-af3c-1997144d5f6c",
+      "content_id": "f59583ac-f349-4a84-bf53-cbe45231bf97",
+      "claim_id": "C65",
+      "claim": "There was significantly more motion during the breath hold task compared to the visual stimulus.",
+      "claim_type": "EXPLICIT",
+      "source": "There was significantly more motion during the breath-hold task than during the visual task (Wilcoxon rank-sum test, p=0.01)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by statistical analysis of motion data shown in Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:59:38.480366Z"
+    },
+    {
+      "id": "fda71090-fcd0-4edd-8087-6354cc929083",
+      "content_id": "f59583ac-f349-4a84-bf53-cbe45231bf97",
+      "claim_id": "C66",
+      "claim": "There was no significant difference in motion between the visual stimulus and resting-state runs.",
+      "claim_type": "EXPLICIT",
+      "source": "but no significant difference in motion between the visual stimulus and resting-state runs (p=0.431).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by statistical analysis of motion data shown in Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:59:38.480366Z"
+    },
+    {
+      "id": "44d039a0-ee9e-4ddb-9f0d-6e5d0465ebc0",
+      "content_id": "f59583ac-f349-4a84-bf53-cbe45231bf97",
+      "claim_id": "C67",
+      "claim": "The breath hold task directly modulates cerebrovascular reactivity with minimal accompanying changes in CMRO2.",
+      "claim_type": "EXPLICIT",
+      "source": "The breath hold task directly modulates cerebrovascular reactivity with minimal accompanying changes in CMRO2, allowing for assessment of local cerebral vascular reactivity uncoupled from neuronal activation (Kastrup et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Kastrup et al., 1999 and established knowledge about breath hold tasks.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:59:38.480366Z"
+    },
+    {
+      "id": "4abc777d-1f97-4b71-8dfd-3108f226e226",
+      "content_id": "f59583ac-f349-4a84-bf53-cbe45231bf97",
+      "claim_id": "C68",
+      "claim": "The hemodynamic responses induced by neural activity may not be identical in timing to those induced by a purely vascular signal.",
+      "claim_type": "EXPLICIT",
+      "source": "The hemodynamic responses induced by neural activity may, therefore, not be identical in timing to those induced by a purely vascular signal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the differences between neurovascular coupling and CVR.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:59:38.480366Z"
+    },
+    {
+      "id": "6cefac9b-d41b-4740-8086-db6f85a0e671",
+      "content_id": "f59583ac-f349-4a84-bf53-cbe45231bf97",
+      "claim_id": "C69",
+      "claim": "The signals obtained from resting-state fMRI are coupled to underlying neural activity in an analogous manner as during a task condition.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, the signals obtained from resting-state fMRI are coupled to underlying neural activity in an analogous manner as during a task condition (Mateo et al., 2017; Ma et al., 2016; Fox and Raichle, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:59:38.480366Z"
+    },
+    {
+      "id": "b08cedc7-8ed1-4fa1-9c89-4a50f1d28060",
+      "content_id": "f59583ac-f349-4a84-bf53-cbe45231bf97",
+      "claim_id": "C70",
+      "claim": "Studies that have empirically derived the HRF in motor cortex or somatosensory cortex have produced HRFs with similar shapes and parameters to the double-gamma HRF.",
+      "claim_type": "EXPLICIT",
+      "source": "However, studies that have empirically derived the HRF in other brain regions, such as the motor cortex (Siero et al., 2011) or somatosensory cortex (de Zwart et al., 2005), have produced HRFs with similar shapes and parameters to the double-gamma HRF utilized in our simulations (Handwerker et al., 2004; Siero et al., 2011; de Zwart et al., 2005; Taylor et al., 2018)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:59:38.480366Z"
+    },
+    {
+      "id": "ed95c358-5eb6-4695-a633-783169b6fa80",
+      "content_id": "f59583ac-f349-4a84-bf53-cbe45231bf97",
+      "claim_id": "C71",
+      "claim": "The same spectral analysis was robustly replicated in an independent dataset acquired at 3T.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we also performed the same spectral analysis in an independent dataset acquired at 3T and robustly replicated our result, demonstrating that this pattern is preserved despite a lower SNR and different acquisition parameters (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by replication results shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:59:38.480366Z"
+    },
+    {
+      "id": "e05e9efb-ea40-4050-a350-c85d575ff8d7",
+      "content_id": "f59583ac-f349-4a84-bf53-cbe45231bf97",
+      "claim_id": "C72",
+      "claim": "Previous work demonstrated that correcting for varying hemodynamic latencies across the brain can affect functional connectivity analyses.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous work demonstrated that correcting for varying hemodynamic latencies across the brain can affect functional connectivity analyses (Rangaprakash et al., 2018; Chang et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Rangaprakash et al., 2018 and Chang et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:59:38.480366Z"
+    },
+    {
+      "id": "c5631092-aae5-4eaf-8926-91c25a69344f",
+      "content_id": "f59583ac-f349-4a84-bf53-cbe45231bf97",
+      "claim_id": "C73",
+      "claim": "Changes in neurovascular function have been observed in many disorders.",
+      "claim_type": "EXPLICIT",
+      "source": "Since changes in neurovascular function have been observed in many disorders (de la Torre and Mecocci, 2018; Gutteridge et al., 2020; Burrage et al., 2018)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:59:38.480366Z"
+    },
+    {
+      "id": "b4567c6e-6aee-4977-a399-32c176d6831b",
+      "content_id": "f59583ac-f349-4a84-bf53-cbe45231bf97",
+      "claim_id": "C74",
+      "claim": "Previous evidence has shown that the absolute timing of the HRF varies between task and resting-state conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, previous evidence has shown that the absolute timing of the HRF varies between task and resting-state conditions (Chen and Glover, 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Chen and Glover, 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:59:38.480366Z"
+    },
+    {
+      "id": "e8b70a69-fbd0-4c79-bf0c-c5a3372c19e6",
+      "content_id": "f59583ac-f349-4a84-bf53-cbe45231bf97",
+      "claim_id": "C75",
+      "claim": "Task state can modulate the absolute timing of the hemodynamic response.",
+      "claim_type": "EXPLICIT",
+      "source": "since task state can modulate the absolute timing of the hemodynamic response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:59:38.480366Z"
+    },
+    {
+      "id": "45ad39e9-5272-40a7-bd36-5a0f0f5b81ea",
+      "content_id": "f59583ac-f349-4a84-bf53-cbe45231bf97",
+      "claim_id": "C76",
+      "claim": "Twenty-one participants were scanned in total.",
+      "claim_type": "EXPLICIT",
+      "source": "Twenty-one participants were scanned in total",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the study population.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:59:38.480366Z"
+    },
+    {
+      "id": "7b84d727-73ad-425a-ade6-29d873cc195a",
+      "content_id": "f59583ac-f349-4a84-bf53-cbe45231bf97",
+      "claim_id": "C77",
+      "claim": "Five subjects were excluded for excessive motion.",
+      "claim_type": "EXPLICIT",
+      "source": "five were excluded for excessive motion",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about subject exclusion.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:59:38.480366Z"
+    },
+    {
+      "id": "40f6326c-70e5-42ac-9b63-067bb471e815",
+      "content_id": "f59583ac-f349-4a84-bf53-cbe45231bf97",
+      "claim_id": "C78",
+      "claim": "One subject was excluded for poor performance on the visual task suggesting they had closed their eyes.",
+      "claim_type": "EXPLICIT",
+      "source": "one was excluded for poor performance on the visual task suggesting they had closed their eyes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about subject exclusion.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:59:38.480366Z"
+    },
+    {
+      "id": "ae98c7b6-8b40-4bf7-a36e-0d4198ae663c",
+      "content_id": "f59583ac-f349-4a84-bf53-cbe45231bf97",
+      "claim_id": "C79",
+      "claim": "Fifteen subjects' data was analyzed.",
+      "claim_type": "EXPLICIT",
+      "source": "This left 15 subjects whose data was analyzed (mean age = 28 years, range = 22\u201342 years, 8 female).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the final study population.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:59:38.480366Z"
+    },
+    {
+      "id": "3c2a36e1-0dfa-4521-b018-13df943541df",
+      "content_id": "f59583ac-f349-4a84-bf53-cbe45231bf97",
+      "claim_id": "C80",
+      "claim": "Subjects underwent a total of 7 functional scans: 3 visual stimulus, 2 breath hold, and 2 resting-state runs.",
+      "claim_type": "EXPLICIT",
+      "source": "Subjects underwent a total of 7 functional scans: 3 visual stimulus, 2 breath hold, and 2 resting-state runs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the experimental design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:59:38.480366Z"
+    },
+    {
+      "id": "b05f7976-1b65-4c5d-9436-3d3f8843424e",
+      "content_id": "f59583ac-f349-4a84-bf53-cbe45231bf97",
+      "claim_id": "C81",
+      "claim": "Subjects were scanned on a 7 Tesla Siemens MAGNETOM scanner with a custom-built 32-channel head coil.",
+      "claim_type": "EXPLICIT",
+      "source": "Subjects were scanned on a 7 Tesla Siemens MAGNETOM scanner with a custom-built 32-channel head coil.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the scanning equipment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:59:38.480366Z"
+    },
+    {
+      "id": "1c8533a5-d248-4624-925e-02373c928f0a",
+      "content_id": "f59583ac-f349-4a84-bf53-cbe45231bf97",
+      "claim_id": "C82",
+      "claim": "Functional runs were acquired as single-shot gradient-echo EPI with 2 mm isotropic resolution, TR = 227ms.",
+      "claim_type": "EXPLICIT",
+      "source": "Functional runs were acquired as single-shot gradient-echo EPI with 2 mm isotropic resolution, TR = 227ms",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the acquisition parameters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:59:38.480366Z"
+    },
+    {
+      "id": "82032fb5-ac20-4704-974a-3d1d82ecc9e6",
+      "content_id": "f59583ac-f349-4a84-bf53-cbe45231bf97",
+      "claim_id": "C83",
+      "claim": "The spectral features were significantly correlated with the absolute timing of hemodynamic responses.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, we found that these spectral features were significantly correlated with the absolute timing of their hemodynamic responses (Figure 3\u2014figure supplement 3, Supplementary file 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by correlation analysis shown in Figure 3\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:59:38.480366Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "5dbfe106-d75e-430f-9cec-59a562147198",
+      "content_id": "f59583ac-f349-4a84-bf53-cbe45231bf97",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The manuscript establishes foundational knowledge about fMRI and the hemodynamic response function (HRF), noting that the HRF varies substantially across brain regions and introduces temporal variability on the order of seconds.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C7 are well-established facts in the fMRI field, supported by extensive citations to foundational and prior work. These claims provide necessary background context and are not contested.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:59:38.480366Z"
+    },
+    {
+      "id": "866cf7b4-6878-4a28-9d84-0e95489dcf1f",
+      "content_id": "f59583ac-f349-4a84-bf53-cbe45231bf97",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Recent advances in fMRI acquisition technology enable fast, high-resolution whole-brain imaging that can capture structured temporal dynamics and high-frequency neural activity with temporal precision on the order of 100ms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C11 are supported by multiple citations to recent technical and methodological advances in the field. These claims establish the motivation for the current work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:59:38.480366Z"
+    },
+    {
+      "id": "ac5cbc8e-b481-4e10-a524-49b3e56098d1",
+      "content_id": "f59583ac-f349-4a84-bf53-cbe45231bf97",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Most common fMRI analysis approaches assume a canonical HRF throughout the brain, which can lead to incorrect inferences about neural activity and inability to decouple neural and vascular signal components.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C14 are supported by citations to prior work and reflect established knowledge about limitations of standard fMRI analysis. These claims motivate the need for the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:59:38.480366Z"
+    },
+    {
+      "id": "5cbd07dc-a281-40a5-bc73-f9580a67760c",
+      "content_id": "f59583ac-f349-4a84-bf53-cbe45231bf97",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Prior work has demonstrated methods to quantify hemodynamic lags, including breath hold tasks that measure cerebrovascular reactivity (CVR), which is distinct from neurovascular coupling and may be differentially affected by aging.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C19 are supported by extensive citations to prior work. These claims establish the state of the field and distinguish CVR from neurovascular coupling, providing important context for the study's approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:59:38.480366Z"
+    },
+    {
+      "id": "95ab7bfa-b747-4b7f-8849-50eb34ed419c",
+      "content_id": "f59583ac-f349-4a84-bf53-cbe45231bf97",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Simulations demonstrate that HRFs with faster temporal dynamics produce less power at low frequencies and shallower decline at high frequencies, with FWHM having a more profound impact on the frequency spectrum than TTP. This effect persists when normalizing for amplitude and accounting for 1/f neural activity patterns.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C26 are supported by simulation results shown in Figures 1 and supplements. The simulations are methodologically sound, using physiologically plausible HRF parameters from prior work. The effect is demonstrated under multiple control conditions (amplitude normalization, 1/f patterns, separate TTP/FWHM variations).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:59:38.480366Z"
+    },
+    {
+      "id": "533c4667-de2d-408e-90dd-a02946237d5b",
+      "content_id": "f59583ac-f349-4a84-bf53-cbe45231bf97",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "In V1, voxels with fast versus slow hemodynamic responses (identified via visual task) show significant differences in resting-state spectral features, with slope and fALFF showing the most consistent differences across subjects (15/15 and 13/15 subjects respectively).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C31 are supported by empirical data from 15 subjects shown in Figures 2-3. The statistical analysis is appropriate (Wilcoxon rank-sum test), and the results are consistent with simulation predictions. The replication at 3T (C71) further strengthens this finding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:59:38.480366Z"
+    },
+    {
+      "id": "90843f61-3b51-416b-9413-e2f4e5bc3683",
+      "content_id": "f59583ac-f349-4a84-bf53-cbe45231bf97",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The LGN shows faster hemodynamic responses than V1 cortical voxels, and this is reflected in distinct resting-state spectral features, with slope, aperiodic exponent, and fALFF showing significant differences in all 15 subjects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C38 are supported by data shown in Figure 4 and are consistent with prior work on LGN hemodynamics. The finding extends the cortical results to subcortex. However, ALFF showed weaker sensitivity (C37), which is appropriately acknowledged and explained.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:59:38.480366Z"
+    },
+    {
+      "id": "c9e13a5b-a14c-4bb0-af42-16aecf02a656",
+      "content_id": "f59583ac-f349-4a84-bf53-cbe45231bf97",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Breath hold-derived vascular latencies showed inconsistent patterns across subjects and performed significantly worse than resting-state spectral features in predicting hemodynamic timing. This may reflect that CVR measures different aspects of vascular function than neurovascular coupling, and that breath hold tasks had more motion artifacts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C41, C47, C65-C69 are supported by data in Figures 5-6 and statistical comparisons. The finding that breath hold performs worse than resting-state is well-documented (p<0.0005). The biological explanation distinguishing CVR from neurovascular coupling is reasonable and supported by citations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:59:38.480366Z"
+    },
+    {
+      "id": "6349cdcc-b0ce-486f-aaba-b27f550f6c65",
+      "content_id": "f59583ac-f349-4a84-bf53-cbe45231bf97",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "SVM classifiers using resting-state spectral features can classify fast, slow, and LGN voxels with accuracies well above chance, even when training and testing on spatially separated hemispheres. Using the full spectrum did not significantly outperform the selected spectral features.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C44, C58 are supported by classification results in Figure 6. The methodology is sound with appropriate cross-validation (1000 bootstraps, 80-20 split, hemisphere split). The finding that selected features perform as well as full spectra validates the feature selection approach.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:59:38.480366Z"
+    },
+    {
+      "id": "c141b846-3321-4375-b8f6-a49f3b1c0273",
+      "content_id": "f59583ac-f349-4a84-bf53-cbe45231bf97",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Regression models to predict absolute hemodynamic timing performed poorly (R\u00b2=0.104), likely because absolute HRF timing depends on task state and differs between task and resting-state conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C46, C74-C75 are supported by regression results and citations to prior work (Chen and Glover, 2015). The poor regression performance is appropriately interpreted as reflecting state-dependent absolute timing rather than a failure of the approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:59:38.480366Z"
+    },
+    {
+      "id": "e71fb883-4d3a-4742-b99d-efdd646c8199",
+      "content_id": "f59583ac-f349-4a84-bf53-cbe45231bf97",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The frequency spectrum of resting-state fMRI signals contains rich information about local hemodynamic timing, and differences in hemodynamic response timing can alter the frequency content of fMRI signals, which has implications for interpreting spectral differences as purely neural in origin.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48, C52, C54 represent the main conclusions of the study, supported by the convergence of simulation results (C21-C26), empirical findings in V1 (C27-C31) and LGN (C32-C38), and classification performance (C42-C44). The logical chain from simulations to empirical validation to prediction is sound.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:59:38.480366Z"
+    },
+    {
+      "id": "6587a782-9175-466b-a55d-a61073088ade",
+      "content_id": "f59583ac-f349-4a84-bf53-cbe45231bf97",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Prior work has identified spectral changes in clinical populations and variations in intrinsic timescales across brain regions, but these findings may be confounded by hemodynamic differences rather than purely reflecting neural changes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C51, C53, C73 are supported by citations to prior clinical and basic research. The reinterpretation of prior findings in light of the current results is reasonable and appropriately cautious, noting this as a potential confound rather than definitively attributing prior findings to vascular effects.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:59:38.480366Z"
+    },
+    {
+      "id": "a77b8be5-d109-4f07-8c93-012c094753f5",
+      "content_id": "f59583ac-f349-4a84-bf53-cbe45231bf97",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "ALFF measures power in low frequency bands (0.01-0.08 Hz) while fALFF measures the ratio of high to low frequency power, with ALFF's narrower frequency range potentially explaining its poorer sensitivity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C57 are definitions and characterizations of established metrics, supported by knowledge in the field. The explanation for ALFF's poorer performance is logical and consistent with the metric's definition.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:59:38.480366Z"
+    },
+    {
+      "id": "ee1276b2-d258-4ae4-aa87-eeef06d86d0f",
+      "content_id": "f59583ac-f349-4a84-bf53-cbe45231bf97",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Vascular architecture and properties vary across the brain, with hemodynamic responses being faster in deeper gray matter, and arteries dilating faster than veins due to smooth muscle cell properties.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C61 are supported by citations to prior anatomical and physiological work. These claims provide biological context for interpreting the observed variations in hemodynamic timing.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:59:38.480366Z"
+    },
+    {
+      "id": "e7c79baa-b42f-4400-9339-a50c7c40cb75",
+      "content_id": "f59583ac-f349-4a84-bf53-cbe45231bf97",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Recent advances enable fMRI studies of small subcortical structures, where faster hemodynamic responses are frequently reported but less well characterized, and fast fMRI has been used to detect rapid neural sequences.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C64 are supported by citations to recent studies. These claims establish the relevance of the work for subcortical imaging and fast fMRI applications.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:59:38.480366Z"
+    },
+    {
+      "id": "688c1a0c-20e1-494b-8962-abc9d30815c9",
+      "content_id": "f59583ac-f349-4a84-bf53-cbe45231bf97",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "HRFs empirically derived in motor and somatosensory cortex have similar parameters to the double-gamma HRF used in simulations, and the spectral analysis was robustly replicated in an independent 3T dataset.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C70-C71 are supported by citations and replication data (Figure 3\u2014figure supplement 1). The replication at 3T with different acquisition parameters strengthens confidence in the generalizability of the findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:59:38.480366Z"
+    },
+    {
+      "id": "6b8c441f-3483-4d3a-aeb8-4a9f66660829",
+      "content_id": "f59583ac-f349-4a84-bf53-cbe45231bf97",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Correcting for varying hemodynamic latencies can affect functional connectivity analyses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C72 is supported by citations to prior work. This establishes the practical importance of the current findings for connectivity studies.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:59:38.480366Z"
+    },
+    {
+      "id": "c5a106f1-76e9-464f-8f89-2cb369369733",
+      "content_id": "f59583ac-f349-4a84-bf53-cbe45231bf97",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The study analyzed 15 subjects (after excluding 6 for motion or poor task performance) who underwent 7 functional scans each, acquired at 7T with 2mm isotropic resolution and TR=227ms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C76-C82 describe the study design and methods. The sample size is reasonable for a 7T study, exclusion criteria are appropriate, and acquisition parameters are clearly specified. The fast TR (227ms) is appropriate for the study goals.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:59:38.480366Z"
+    },
+    {
+      "id": "3faa044a-a946-4cfd-bc98-3addbabcc5f0",
+      "content_id": "f59583ac-f349-4a84-bf53-cbe45231bf97",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Spectral features were significantly correlated with absolute timing of hemodynamic responses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C83 is supported by correlation analysis shown in Figure 3\u2014figure supplement 3. This provides additional validation that spectral features capture timing information, though absolute prediction remains poor (C45).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:59:38.480366Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "8397f046-98cf-4ac2-bd17-2884b045f4c8",
+      "result_id": "5dbfe106-d75e-430f-9cec-59a562147198"
+    },
+    {
+      "claim_id": "2993d143-8bad-44b6-95c7-50f903362d46",
+      "result_id": "5dbfe106-d75e-430f-9cec-59a562147198"
+    },
+    {
+      "claim_id": "93fe7d95-3178-4eb4-bf3a-ef79553c9311",
+      "result_id": "5dbfe106-d75e-430f-9cec-59a562147198"
+    },
+    {
+      "claim_id": "6fe4acd9-cb17-486b-8065-bcf68453edca",
+      "result_id": "5dbfe106-d75e-430f-9cec-59a562147198"
+    },
+    {
+      "claim_id": "3558b701-22de-4fc5-b11c-f52e71bfe45f",
+      "result_id": "5dbfe106-d75e-430f-9cec-59a562147198"
+    },
+    {
+      "claim_id": "6829b3a0-e5e2-4684-8a64-33980237ebc8",
+      "result_id": "5dbfe106-d75e-430f-9cec-59a562147198"
+    },
+    {
+      "claim_id": "0f69009d-ddec-4a18-addf-e1be39380129",
+      "result_id": "5dbfe106-d75e-430f-9cec-59a562147198"
+    },
+    {
+      "claim_id": "53babb42-00af-400c-931e-271d01661c14",
+      "result_id": "866cf7b4-6878-4a28-9d84-0e95489dcf1f"
+    },
+    {
+      "claim_id": "c5676db4-db4d-46bb-bcbe-e723beea995e",
+      "result_id": "866cf7b4-6878-4a28-9d84-0e95489dcf1f"
+    },
+    {
+      "claim_id": "c3f64bd9-6f3f-48c4-b7ea-25df6cbab91e",
+      "result_id": "866cf7b4-6878-4a28-9d84-0e95489dcf1f"
+    },
+    {
+      "claim_id": "b8b3e9e2-0f3c-43b7-b3a6-cd6fa73ac2a6",
+      "result_id": "866cf7b4-6878-4a28-9d84-0e95489dcf1f"
+    },
+    {
+      "claim_id": "e6caa4c6-9d17-445f-b6d9-ce4e13c57818",
+      "result_id": "ac5cbc8e-b481-4e10-a524-49b3e56098d1"
+    },
+    {
+      "claim_id": "047fea32-cacc-41a9-98cf-a27c726e3908",
+      "result_id": "ac5cbc8e-b481-4e10-a524-49b3e56098d1"
+    },
+    {
+      "claim_id": "f2f7fc26-f154-46bb-bbc3-6d667fe95bf5",
+      "result_id": "ac5cbc8e-b481-4e10-a524-49b3e56098d1"
+    },
+    {
+      "claim_id": "fcea9dc0-4d38-40d0-a6ae-703d9f1ded8c",
+      "result_id": "5cbd07dc-a281-40a5-bc73-f9580a67760c"
+    },
+    {
+      "claim_id": "fcd6bfbf-36b1-485b-8131-a481abdd01f2",
+      "result_id": "5cbd07dc-a281-40a5-bc73-f9580a67760c"
+    },
+    {
+      "claim_id": "c8605618-7c7e-4e82-80f5-b49834989cb3",
+      "result_id": "5cbd07dc-a281-40a5-bc73-f9580a67760c"
+    },
+    {
+      "claim_id": "5e99742d-c163-4546-aa14-84da60d46183",
+      "result_id": "5cbd07dc-a281-40a5-bc73-f9580a67760c"
+    },
+    {
+      "claim_id": "c753be12-59cb-4119-b871-131f086a4a7c",
+      "result_id": "5cbd07dc-a281-40a5-bc73-f9580a67760c"
+    },
+    {
+      "claim_id": "38335022-56a5-42fa-976f-fd0bde048065",
+      "result_id": "95ab7bfa-b747-4b7f-8849-50eb34ed419c"
+    },
+    {
+      "claim_id": "8ae67b3b-546f-40d0-9141-e953119888bc",
+      "result_id": "95ab7bfa-b747-4b7f-8849-50eb34ed419c"
+    },
+    {
+      "claim_id": "23e1a5a7-933d-46db-8fab-c6d31c8ce611",
+      "result_id": "95ab7bfa-b747-4b7f-8849-50eb34ed419c"
+    },
+    {
+      "claim_id": "f3afde64-4232-4858-9b8e-aed8eb03b63e",
+      "result_id": "95ab7bfa-b747-4b7f-8849-50eb34ed419c"
+    },
+    {
+      "claim_id": "8fdb7f3b-21ee-40d4-881d-c72b974170c9",
+      "result_id": "95ab7bfa-b747-4b7f-8849-50eb34ed419c"
+    },
+    {
+      "claim_id": "1e0833e9-e486-4638-8247-141a9d92d1a1",
+      "result_id": "95ab7bfa-b747-4b7f-8849-50eb34ed419c"
+    },
+    {
+      "claim_id": "7469b670-87d9-4470-9cf0-beb31f3825a0",
+      "result_id": "95ab7bfa-b747-4b7f-8849-50eb34ed419c"
+    },
+    {
+      "claim_id": "47ad75d3-d2d0-4839-83c4-05c0f6f615bf",
+      "result_id": "533c4667-de2d-408e-90dd-a02946237d5b"
+    },
+    {
+      "claim_id": "ce4a47c2-8b3b-459c-9d69-4985335b8c7c",
+      "result_id": "533c4667-de2d-408e-90dd-a02946237d5b"
+    },
+    {
+      "claim_id": "ec62c1b0-5c6b-4faf-9573-d2b4c04f9303",
+      "result_id": "533c4667-de2d-408e-90dd-a02946237d5b"
+    },
+    {
+      "claim_id": "ef2c6b9b-8cad-4099-8c03-e4f1bfa1ecb4",
+      "result_id": "533c4667-de2d-408e-90dd-a02946237d5b"
+    },
+    {
+      "claim_id": "c50b18e1-c9c1-41ad-a10d-460fddf3330f",
+      "result_id": "533c4667-de2d-408e-90dd-a02946237d5b"
+    },
+    {
+      "claim_id": "5fcc220b-75ef-40ed-9aac-f369641b9158",
+      "result_id": "90843f61-3b51-416b-9413-e2f4e5bc3683"
+    },
+    {
+      "claim_id": "c6ce2f96-8750-4e3d-8115-505835152924",
+      "result_id": "90843f61-3b51-416b-9413-e2f4e5bc3683"
+    },
+    {
+      "claim_id": "eb23e554-7838-4fdb-a826-0f0323125f06",
+      "result_id": "90843f61-3b51-416b-9413-e2f4e5bc3683"
+    },
+    {
+      "claim_id": "da37bd51-cfe4-4d7b-a284-7617175ea184",
+      "result_id": "90843f61-3b51-416b-9413-e2f4e5bc3683"
+    },
+    {
+      "claim_id": "94fef1d0-65f0-4658-833b-5311e7e9c055",
+      "result_id": "90843f61-3b51-416b-9413-e2f4e5bc3683"
+    },
+    {
+      "claim_id": "cd73c6bb-554d-454a-9cda-25065a9e9a7e",
+      "result_id": "90843f61-3b51-416b-9413-e2f4e5bc3683"
+    },
+    {
+      "claim_id": "4bca6b14-b31f-401d-a5a2-f0c9bc99c65f",
+      "result_id": "90843f61-3b51-416b-9413-e2f4e5bc3683"
+    },
+    {
+      "claim_id": "cfb88113-f317-4e2a-a152-82698c400342",
+      "result_id": "c9e13a5b-a14c-4bb0-af42-16aecf02a656"
+    },
+    {
+      "claim_id": "f33dd10f-eb26-4cb3-8555-b89a4d442bb6",
+      "result_id": "c9e13a5b-a14c-4bb0-af42-16aecf02a656"
+    },
+    {
+      "claim_id": "6db73c34-db69-4857-9d7e-1dbd79f671e1",
+      "result_id": "c9e13a5b-a14c-4bb0-af42-16aecf02a656"
+    },
+    {
+      "claim_id": "6419b308-f705-45b3-8b75-c286f6772552",
+      "result_id": "c9e13a5b-a14c-4bb0-af42-16aecf02a656"
+    },
+    {
+      "claim_id": "73a9642e-14f2-4935-af3c-1997144d5f6c",
+      "result_id": "c9e13a5b-a14c-4bb0-af42-16aecf02a656"
+    },
+    {
+      "claim_id": "fda71090-fcd0-4edd-8087-6354cc929083",
+      "result_id": "c9e13a5b-a14c-4bb0-af42-16aecf02a656"
+    },
+    {
+      "claim_id": "44d039a0-ee9e-4ddb-9f0d-6e5d0465ebc0",
+      "result_id": "c9e13a5b-a14c-4bb0-af42-16aecf02a656"
+    },
+    {
+      "claim_id": "4abc777d-1f97-4b71-8dfd-3108f226e226",
+      "result_id": "c9e13a5b-a14c-4bb0-af42-16aecf02a656"
+    },
+    {
+      "claim_id": "6cefac9b-d41b-4740-8086-db6f85a0e671",
+      "result_id": "c9e13a5b-a14c-4bb0-af42-16aecf02a656"
+    },
+    {
+      "claim_id": "7689afc7-a492-45b3-9259-8c90ef24a586",
+      "result_id": "6349cdcc-b0ce-486f-aaba-b27f550f6c65"
+    },
+    {
+      "claim_id": "8a3c49c4-32c7-4be7-aae5-1c63a4a931ef",
+      "result_id": "6349cdcc-b0ce-486f-aaba-b27f550f6c65"
+    },
+    {
+      "claim_id": "cd0383cb-5bd2-4db3-925d-f3eb6ae76936",
+      "result_id": "6349cdcc-b0ce-486f-aaba-b27f550f6c65"
+    },
+    {
+      "claim_id": "9edaf206-6c2c-4ebb-a9fc-207517add119",
+      "result_id": "6349cdcc-b0ce-486f-aaba-b27f550f6c65"
+    },
+    {
+      "claim_id": "40c2f238-82a7-463a-b03d-21244094339a",
+      "result_id": "c141b846-3321-4375-b8f6-a49f3b1c0273"
+    },
+    {
+      "claim_id": "52df7bc2-2699-496e-916a-7c9bbd3b6984",
+      "result_id": "c141b846-3321-4375-b8f6-a49f3b1c0273"
+    },
+    {
+      "claim_id": "b4567c6e-6aee-4977-a399-32c176d6831b",
+      "result_id": "c141b846-3321-4375-b8f6-a49f3b1c0273"
+    },
+    {
+      "claim_id": "e8b70a69-fbd0-4c79-bf0c-c5a3372c19e6",
+      "result_id": "c141b846-3321-4375-b8f6-a49f3b1c0273"
+    },
+    {
+      "claim_id": "8fa33340-078e-49dc-8c48-c21648df85a8",
+      "result_id": "e71fb883-4d3a-4742-b99d-efdd646c8199"
+    },
+    {
+      "claim_id": "9072ab4e-13f5-4859-a507-f6568bd55616",
+      "result_id": "e71fb883-4d3a-4742-b99d-efdd646c8199"
+    },
+    {
+      "claim_id": "fdd68731-6ddf-430f-8781-e2ffa4a73519",
+      "result_id": "e71fb883-4d3a-4742-b99d-efdd646c8199"
+    },
+    {
+      "claim_id": "16c7332c-33c8-42e7-804f-650d2ae335f5",
+      "result_id": "6587a782-9175-466b-a55d-a61073088ade"
+    },
+    {
+      "claim_id": "1d9ab7f0-00d8-4497-939c-a8e110d0cdbf",
+      "result_id": "6587a782-9175-466b-a55d-a61073088ade"
+    },
+    {
+      "claim_id": "72597203-30ca-46fa-b9df-4f50b86b62ec",
+      "result_id": "6587a782-9175-466b-a55d-a61073088ade"
+    },
+    {
+      "claim_id": "30bce0c2-2c27-44e0-9322-ccbe67232916",
+      "result_id": "6587a782-9175-466b-a55d-a61073088ade"
+    },
+    {
+      "claim_id": "c5631092-aae5-4eaf-8926-91c25a69344f",
+      "result_id": "6587a782-9175-466b-a55d-a61073088ade"
+    },
+    {
+      "claim_id": "9b78168b-ac0a-4ac4-abff-e0940fef9ab7",
+      "result_id": "a77b8be5-d109-4f07-8c93-012c094753f5"
+    },
+    {
+      "claim_id": "22d97d50-0ad2-411a-adee-6e508c7057b6",
+      "result_id": "a77b8be5-d109-4f07-8c93-012c094753f5"
+    },
+    {
+      "claim_id": "01dea47c-c1fe-44ae-bbec-56ee16344891",
+      "result_id": "a77b8be5-d109-4f07-8c93-012c094753f5"
+    },
+    {
+      "claim_id": "626cc252-7923-45b1-b2b6-271a6f7b2b63",
+      "result_id": "ee1276b2-d258-4ae4-aa87-eeef06d86d0f"
+    },
+    {
+      "claim_id": "49be708d-00fd-4d21-a49c-d8fc6c53a5ff",
+      "result_id": "ee1276b2-d258-4ae4-aa87-eeef06d86d0f"
+    },
+    {
+      "claim_id": "a06d080e-f493-4134-ab1f-e65b174b5789",
+      "result_id": "ee1276b2-d258-4ae4-aa87-eeef06d86d0f"
+    },
+    {
+      "claim_id": "69de0b20-8e0b-41b4-8d53-e576f6b01a56",
+      "result_id": "e7c79baa-b42f-4400-9339-a50c7c40cb75"
+    },
+    {
+      "claim_id": "1235dcd9-11a8-4fbe-8266-9d7b5d463599",
+      "result_id": "e7c79baa-b42f-4400-9339-a50c7c40cb75"
+    },
+    {
+      "claim_id": "a9436041-7325-447e-83a1-bc136270382e",
+      "result_id": "e7c79baa-b42f-4400-9339-a50c7c40cb75"
+    },
+    {
+      "claim_id": "b08cedc7-8ed1-4fa1-9c89-4a50f1d28060",
+      "result_id": "688c1a0c-20e1-494b-8962-abc9d30815c9"
+    },
+    {
+      "claim_id": "ed95c358-5eb6-4695-a633-783169b6fa80",
+      "result_id": "688c1a0c-20e1-494b-8962-abc9d30815c9"
+    },
+    {
+      "claim_id": "e05e9efb-ea40-4050-a350-c85d575ff8d7",
+      "result_id": "6b8c441f-3483-4d3a-aeb8-4a9f66660829"
+    },
+    {
+      "claim_id": "45ad39e9-5272-40a7-bd36-5a0f0f5b81ea",
+      "result_id": "c5a106f1-76e9-464f-8f89-2cb369369733"
+    },
+    {
+      "claim_id": "7b84d727-73ad-425a-ade6-29d873cc195a",
+      "result_id": "c5a106f1-76e9-464f-8f89-2cb369369733"
+    },
+    {
+      "claim_id": "40f6326c-70e5-42ac-9b63-067bb471e815",
+      "result_id": "c5a106f1-76e9-464f-8f89-2cb369369733"
+    },
+    {
+      "claim_id": "ae98c7b6-8b40-4bf7-a36e-0d4198ae663c",
+      "result_id": "c5a106f1-76e9-464f-8f89-2cb369369733"
+    },
+    {
+      "claim_id": "3c2a36e1-0dfa-4521-b018-13df943541df",
+      "result_id": "c5a106f1-76e9-464f-8f89-2cb369369733"
+    },
+    {
+      "claim_id": "b05f7976-1b65-4c5d-9436-3d3f8843424e",
+      "result_id": "c5a106f1-76e9-464f-8f89-2cb369369733"
+    },
+    {
+      "claim_id": "1c8533a5-d248-4624-925e-02373c928f0a",
+      "result_id": "c5a106f1-76e9-464f-8f89-2cb369369733"
+    },
+    {
+      "claim_id": "82032fb5-ac20-4704-974a-3d1d82ecc9e6",
+      "result_id": "3faa044a-a946-4cfd-bc98-3addbabcc5f0"
+    }
+  ],
+  "comparisons": []
+}

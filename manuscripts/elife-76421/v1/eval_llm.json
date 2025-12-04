@@ -1,0 +1,294 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "The authors developed a method using a focused IR laser (\u03bb=1455 nm) scanned at 1 kHz to generate localized temperature gradients. Temperature profiles were measured using rhodamine B and validated with mCherry-H2b, showing an average temperature increase of 2\u00b0C inside the nucleus at medium laser intensity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C56 describe the experimental setup and temperature measurement validation. The method is well-documented with multiple independent measurements (rhodamine B and mCherry-H2b) that correspond well, providing strong technical validation of the approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C1",
+      "C57",
+      "C60",
+      "C61"
+    ],
+    "result": "Strongly localized temperature gradients (approaching 1\u00b0C/\u00b5m) induce substantial chromatin displacements (>1 \u00b5m) that are instantaneous, largely reversible, and show spatial dependence with larger displacements closer to the temperature stimulus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C57, C60-C61 are supported by direct experimental measurements including kymograph analysis and centroid tracking shown in Figures 1-2. The instantaneous and reversible nature is demonstrated through time-series analysis with exponential dynamics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C2",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Nuclear area and lamina shape remain largely unaffected during temperature-induced chromatin displacement, with nuclear area changing by only ~1% and border deviations on the order of 100 nm, likely reflecting the dominating stiffness of the nuclear lamina.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C62-C64 are supported by quantitative measurements of nuclear geometry shown in Figure 2. The minimal changes in nuclear dimensions are well-documented and the interpretation regarding lamina stiffness is consistent with prior knowledge (C45, C64).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C3",
+      "C58",
+      "C100",
+      "C101",
+      "C104",
+      "C105"
+    ],
+    "result": "Chromatin displacements are highly reversible with dynamics fitting a Kelvin-Voigt viscoelastic model, showing characteristic times \u03c4 around 1 second, indicating that elastic and viscous contributions are in close balance on the mesoscale at the second timescale.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C58, C100-C101, C104-C105 are supported by fitting experimental data to the Kelvin-Voigt model with good agreement. The characteristic times are consistently measured around 1 second across multiple experiments, and the interpretation of balanced elastic/viscous contributions follows logically from the \u03c4 = \u03b7/E relationship.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C4",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C99"
+    ],
+    "result": "In genetically inverted nuclei (Casz1 overexpression), the central heterochromatin cluster (CHC) displays high resistance to deformation with constant area and shape during displacement, behaving as a solid. The CHC displacement dynamics fit a Kelvin-Voigt model (\u03c4~0.74-0.92 s) and likely reflect properties of radial chromatin fibers experiencing up to 15% strain, while CHC bulk strain remains below 1%.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C66-C72, C99 are supported by measurements in the inverted nucleus model shown in Figure 3. The constant CHC area/shape during displacement, fitting to viscoelastic model, and strain calculations are all quantitatively documented. The interpretation of solid-like behavior is consistent with the data and prior literature (C99 cites Strickfaden et al., 2020).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Particle image velocimetry (PIV) was used to generate spatial displacement and strain maps showing local volumetric changes (hydrostatic strain) and orthogonal displacements (shear strain). Absolute nuclear strain magnitudes displayed asymptotic exponential dynamics, while total hydrostatic strain averaged near 0%, consistent with constant nuclear area.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C76 describe the analytical approach and are supported by the methods and data shown in Figure 4. The PIV analysis is well-established (cited: Sveen, 2004; Zidovska et al., 2013), and the consistency between strain measurements and nuclear area observations validates the approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C5",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Using mCherry-H2b intensity as a proxy for chromatin density, the authors found a non-linear relationship between chromatin density and deformation: both densely packed (C7) and loosely packed (C1) regions experienced the least volumetric change, while medium dense regions (C4) showed the highest. Lightly packed euchromatin (C1-3) tends to be compressed while heterochromatin (C4-7) tends to be extended.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C77-C80 are supported by spatially resolved strain analysis shown in Figure 4d-f with statistical significance (p<0.05 to p<10\u207b\u2077). The non-linear relationship is surprising but well-documented. The interpretation that euchromatin acts as a mechanical buffer (C80) is a reasonable inference from the compression/extension patterns observed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C6",
+      "C82",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Nucleoli display high mechanical resilience with only half the absolute hydrostatic strain compared to overall chromatin (7.2% vs 13.5%). In some cases, nucleoli remained largely static with chromatin flowing around them. Perinucleolar chromatin shows strong association with the nucleolus border, with displacement gradually increasing with distance, suggesting the chromatin network is highly interwoven with continuous interactions on the micron scale.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C82, C86-C91 are supported by quantitative measurements shown in Figure 5 with statistical significance. The gradient of displacement around static nucleoli is well-documented, and the inferences about perinucleolar chromatin association (C90) and chromatin network connectivity (C91) are reasonable interpretations of the spatial displacement patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C128"
+    ],
+    "result": "Chromatin motion occurs at ambient temperatures much lower than 36\u00b0C, and the directed motion is driven by the temperature gradient rather than absolute temperature, as only the gradient has the appropriate symmetry (directionality) to account for the observed directional chromatin motion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C93, C128 are supported by experiments at different ambient temperatures (Figure 1\u2014figure supplement 1c-d) and physics-based reasoning about symmetry. The argument that a scalar temperature rise cannot explain directional motion while a vectorial gradient can is logically sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "The temperature fluctuations used in the study (2\u00b0C increase) are within the range of natural temperature variations in biological systems and common experimental practices, as evidenced by temperature variations in incubators (>1.3\u00b0C), mouse core temperature (up to 5\u00b0C variation), and bovine embryo tolerance (up to 40\u00b0C).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C97 are supported by citations to previous research (Palmer et al., 2019; Kaplan and Leveille, 1974; Rivera and Hansen, 2001). This contextualizes the temperature perturbations used in the study as physiologically relevant.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C98"
+    ],
+    "result": "The instantaneous nature of the chromatin response suggests that the larger portion of the response can be explained mechanically rather than through biochemical changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C98 is a reasonable inference based on the rapid timescale of the response (seconds) shown in the data. Biochemical changes typically require longer timescales, making mechanical explanations more plausible for the instantaneous response observed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "The results support the view that interphase chromatin is akin to a porous hydrogel, revealing characteristic dynamic behavior with both dissipative and elastic contributions. Chromatin shows 'network effects' with coherent motion of spatially extended gel-like heterochromatin domains visible over length scales up to 1.5 \u00b5m, consistent with previous magnetic force studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C117 integrate the current findings with prior FRAP studies (C113) and magnetic bead studies (Keizer et al., 2022). The network effects are directly observed in the displacement gradients around static nucleoli (Figure 5), and the interpretation of gel-like behavior is consistent with the reversible, viscoelastic dynamics observed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C129",
+      "C130"
+    ],
+    "result": "With a thermal expansion coefficient of water of 3.5\u00d710\u207b\u2074/\u00b0C, the volumetric expansion of the nucleus during laser heating remains below 0.1%, which is unlikely to cause significant pressure changes given the flexible nature of cell membranes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C129-C130 are supported by straightforward calculations using known physical constants. The reasoning that 0.1% volumetric expansion in flexible membranes would not generate significant pressure is sound.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "The authors discuss multiple potential physical mechanisms for temperature gradient-induced chromatin motion, including thermophoresis via electric fields, temperature-dependent DNA-histone affinity, temperature-dependent hydrophilicity, thermal fluctuations affecting nucleosome dynamics, and thermoviscous flows, though the latter can be decoupled due to different symmetry properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C131-C136 present various speculative mechanisms supported by citations to relevant literature. However, the manuscript does not experimentally distinguish between these mechanisms or provide direct evidence for which mechanism(s) dominate. These remain plausible hypotheses requiring further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "The authors propose that their method could be combined with complementary approaches (Hi-C, liquid Hi-C, ChIP-seq) to connect mechanical properties with sequence interactions and epigenetic modifications, and could be applied to study chromatin-lamina interactions, laminopathies, and mitotic nuclear reformation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C118-C124 are speculative statements about future applications and combinations with other methods. While these are reasonable suggestions, they represent proposed future work rather than demonstrated results. The capability to study compartment interfaces (C122) is demonstrated, but the specific applications remain to be validated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C106",
+      "C107"
+    ],
+    "result": "The characteristic times and material properties observed are consistent with previous studies: passive micro-rheology showing relaxation times of 2.3 s and 0.8 s for euchromatin and heterochromatin, time scales around 10 s for viscous components in mammalian/yeast nuclei, recent findings of chromatin fluidity with piconewton forces, and similar non-linear strain-density relationships in cardiomyocytes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C103, C106-C107 contextualize the current findings within prior literature through appropriate citations. The consistency with multiple independent studies using different methods strengthens the validity of the current results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C108",
+      "C109"
+    ],
+    "result": "The high resilience of lightly packed chromatin compartments is surprising and merits further investigation. One potential explanation is that persistent tethering of RNA to transcribed chromatin, important for transcriptional pocket formation, provides structural support.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C108 acknowledges the unexpected nature of the finding, while C109 offers a speculative explanation supported by citation (Hilbert et al., 2021). However, this mechanism is not directly tested in the manuscript and remains a hypothesis requiring validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "The static behavior of nucleoli may be explained by perinucleolar chromatin anchoring nucleoli to the nuclear lamina (especially in 2D cultures), potentially involving nucleolus associated domains (NADs) and interfacial forces between membraneless organelles and other structures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C110-C112 present speculative explanations for nucleolar behavior supported by citations. However, these mechanisms are not directly tested in the manuscript. The observation of static nucleoli is well-documented, but the molecular mechanisms remain uncertain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "Previous studies have shown temperature-dependent changes in chromatin compaction after bulk cooling (hours timescale) and reversible nuclear volume changes after homogeneous temperature increases (\u0394T=18\u00b0C) in isolated nuclei, with volumetric changes dependent on ion valency suggesting electro-osmotic water influx.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125-C127 accurately summarize findings from cited previous studies (Fischl et al., 2020; Chan et al., 2017). These provide important context for distinguishing the current gradient-based approach from bulk heating effects.",
+    "result_type": "MINOR"
+  }
+]

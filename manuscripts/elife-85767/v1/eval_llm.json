@@ -1,0 +1,177 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "The authors establish the theoretical foundation that misinformation spreads on social media because the existing incentive structure dissociates social rewards from information veracity, despite users' ability to discern true from false content. This is based on prior literature showing that misinformation generates similar engagement as true information, users respond to social rewards via reinforcement learning, and people share misinformation even when they don't trust it.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C7 collectively establish the theoretical motivation through citations to published research. While these are claims about prior work rather than new findings, they appropriately cite relevant literature (C1-C7 all include citations) and form a coherent rationale for the intervention tested. The logic connecting user discernment ability (C4), equal engagement for true/false content (C5), reinforcement learning behavior (C6), and resulting misinformation sharing (C7) is sound.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Experiment 1 demonstrates that participants used 'trust' and 'distrust' reaction buttons more discerningly than 'like' and 'dislike' buttons when evaluating 100 news posts (50 true, 50 false). The effect held for both Democrats and Republicans, though Democrats showed greater overall discernment. Negative reactions were used more discerningly than positive reactions, and trust/distrust buttons were used more frequently than like/dislike buttons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C17 present statistically significant results from Experiment 1 (N=106) with appropriate statistical tests (ANOVAs, t-tests), effect sizes (partial \u03b7\u00b2), and p-values. The main finding (C9: F(1,104)=95.832, p<0.001, partial \u03b7\u00b2=0.48) shows a large effect. The results are internally consistent and replicated in Experiment 4 (C35). However, the study relies on posts from a single fact-checking website (C46), which may limit generalizability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C54"
+    ],
+    "result": "Experiment 2 shows that participants who received 'trust' or 'distrust' feedback shared more true relative to false information compared to those receiving 'like'/'dislike' feedback or no feedback. This effect occurred across different content types without reducing overall engagement. Participants in trust/distrust conditions also showed improved belief accuracy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C23 present statistically significant results from Experiment 2 (N=288) with appropriate between-subjects ANOVA analyses. The main effect (C18: F(1,281)=15.2, p<0.001, partial \u03b7\u00b2=0.051) is medium-sized and holds across content topics (C21). Critically, C54 shows no reduction in engagement, addressing a key practical concern. However, the feedback was not collected in real-time but taken from Experiment 1 (C47-C48), which is a methodological limitation involving deception that could affect ecological validity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Experiment 3 demonstrates that combined 'trust & distrust' feedback increased discernment in sharing behavior compared to 'like & dislike' feedback or no feedback, while also increasing overall engagement. The effect was observed using posts selected to be politically balanced between Democrats and Republicans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C26 present statistically significant results from Experiment 3 (N=391) with appropriate analyses. The main effect (C24: F(1,385)=11.009, p<0.001, partial \u03b7\u00b2=0.054) is medium-sized. Importantly, C25 shows increased engagement (F(1,385)=8.7692, p<0.001), supporting the inference in C26 that the intervention improves discernment without reducing engagement. The use of politically balanced posts (C49) strengthens the design by controlling for partisan bias, though this also limits the stimulus set to only 40 posts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Drift-diffusion modeling reveals that the mechanism underlying improved discernment in trust/distrust environments is an increased drift rate, indicating participants weighted evidence consistent with veracity-promoting responses more heavily. This was demonstrated through both experimental data and successful model recovery with simulated data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C30 and C55-C60 present computational modeling results using hierarchical Bayesian drift-diffusion models with appropriate convergence diagnostics (Gelman-Rubin statistic <1.1). The key finding is credible differences in drift rate between conditions (C28-C29: 95% HDI excludes zero), while other parameters showed no consistent differences (C55-C56). Model validation through parameter recovery (C57) and reproduction of behavioral patterns with simulated data (C58-C60) strengthens confidence in the results. However, the interpretation that drift rate specifically reflects weighting of veracity-consistent evidence (C30) is an inference that, while reasonable, goes beyond what the model parameters directly measure.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C31",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "The authors conclude that their novel incentive structure significantly reduced misinformation spread through a mechanism where users shared more true content to obtain trust rewards and avoid distrust punishments. The effects were replicated with large to medium effect sizes, and computational modeling pinpointed the mechanism as increased weighting of accuracy-consistent evidence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C37 are summary claims integrating results from all experiments. C31 and C34 are supported by the experimental findings (C18, C24, C25, C26). C35 is supported by successful replications in Experiments 4-6. C36-C37 are supported by the drift-diffusion modeling results (C28-C30). However, C33 involves an inference about user motivation that, while plausible given the reinforcement learning framework, is not directly tested. The claim of 'significant reduction' is supported statistically but the practical significance in real-world settings remains uncertain given the simulated platform design.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "The intervention's effects held across diverse topics and participants, and feedback not only improved sharing discernment but may also have increased belief accuracy, though this latter effect was inconsistent across experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "C38 is supported by the experimental design including various topics (C45) and analysis showing effects across topics (C21). However, C39-C40 regarding belief accuracy are uncertain because the effect was observed in only 3 of 4 experiments (Experiments 2, 5, 6 but not 3), as explicitly noted in the manuscript. This inconsistency suggests the belief accuracy effect may be less robust than the sharing behavior effect, and the authors appropriately hedge with 'may also increase' language. Additional experiments or analysis would be needed to definitively establish this secondary effect.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C32",
+      "C41",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "The authors speculate that the intervention could be adopted by social media platforms at no cost, potentially reducing violence, vaccine hesitancy, and political polarization while complementing existing interventions. They acknowledge limitations of simulated platforms compared to real-world complexity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C32, C41, C61-C62, and C65 are explicitly speculative about implementation and broader impacts. While the experimental results support the mechanism in controlled settings, these claims about real-world adoption, cost, and societal impacts (C41: reducing violence, vaccine hesitancy, polarization) go far beyond what the data demonstrate. C63-C64 appropriately acknowledge the limitation that real platforms are more complex. These are reasonable speculations for a discussion section but lack empirical support and would require field studies on actual platforms to validate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "The experiments used appropriate sample sizes based on power calculations, included politically balanced samples of Democrats and Republicans, and used posts from Politifact covering diverse topics. Experiment 2 used pre-recorded feedback from Experiment 1 rather than real-time feedback, though participants believed it was real-time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C49 describe methodological details that are factually stated and internally consistent. Sample sizes (C42-C44) were determined by power calculations. The use of Politifact posts (C46) and diverse topics (C45) is appropriate, though reliance on a single fact-checking source is a limitation. The deception regarding real-time feedback (C47-C48) is a significant methodological concern for ecological validity, though it was necessary for experimental control. The selection of politically balanced posts in Experiment 3 (C49) strengthens internal validity but limits generalizability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "The authors provide theoretical explanations for observed patterns, including that reward reinforces action while punishment reinforces inaction, that sharing is intrinsically rewarding, and that participants were sensitive to per-post feedback rather than total feedback.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C50-C51 cite relevant prior research to explain theoretical mechanisms. C52-C53 are inferences about participant behavior that are reasonable given the data (participants didn't simply skip all posts or share all posts to optimize total feedback), though these specific mechanisms weren't directly tested. These claims provide plausible explanations for the observed patterns and are appropriately hedged as inferences rather than direct findings.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,255 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C38",
+      "C43",
+      "C45",
+      "C47",
+      "C48",
+      "C51",
+      "C52",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "The authors recorded responses from 8388 cells in the mouse retina using two-photon Ca2+ imaging while presenting natural dichromatic movies capturing green and UV spectral bands. After quality filtering, 3527 cells were assigned to 32 functional RGC groups based on responses to synthetic stimuli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C5, C38, C43, C45, C47, C48, C51, C52 describe a well-documented experimental approach with clear sample sizes, stimulus parameters, and classification methods. The methodology is standard for the field and appropriately detailed in claims C126-C132.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139"
+    ],
+    "result": "A CNN model was trained to predict RGC responses to natural movies, achieving an average test set correlation of 0.48 across 3527 cells. The nonlinear CNN model outperformed a linearized (LN) model for all RGC groups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C54 provide quantitative performance metrics with appropriate comparisons to baseline models. The model architecture (C135-C136) and training procedures (C137-C139) are adequately described, and the use of ensemble modeling (C139) is appropriate for reducing variance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C39",
+      "C55",
+      "C61",
+      "C62",
+      "C63",
+      "C140",
+      "C141",
+      "C142"
+    ],
+    "result": "Model-guided search for maximally exciting inputs (MEIs) predicted that 66% of G28 RGCs exhibit centre colour opponency with UV-ON, green-OFF selectivity. This represents a novel chromatic tuning property for this RGC group, characterized as co-extensive rather than centre-surround opponency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C39, C61-C63 present a clear quantitative finding (66% of G28 cells) with appropriate characterization of the opponency type. The MEI generation procedure (C140-C142) is well-described with appropriate constraints and convergence criteria. The novelty claim is supported by contrast with prior findings (C62).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C8",
+      "C40",
+      "C64",
+      "C65",
+      "C66",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C74"
+    ],
+    "result": "Experimental validation confirmed that G28 RGCs (identified as tSbC/OND cells) respond selectively to Green-OFF, UV-ON contrasts. Most RGC groups showed strongest responses to their own group's MEI, validating the model's predictions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C40, C64-C66, C69 demonstrate convergent evidence from Ca2+ imaging and electrophysiology (C71, C74). The identification of G28 as tSbC cells (C70) is supported by functional and morphological criteria. The delayed response onset (C72) represents a model limitation but does not invalidate the main findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "G28 RGCs exhibit nonlinear chromatic contrast tuning: they are UV-selective at lower contrasts but become colour-opponent (inhibited by green) at higher contrasts. This nonlinearity cannot be captured by linear-nonlinear models, which predicted colour opponency in only 25% of G28 cells compared to 66% for the CNN model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C79 provide strong evidence for nonlinear processing through model comparison (C75), computational inference (C76-C78), and experimental validation (C79). The quantitative difference between LN and CNN models (25% vs 66%) is substantial and the tuning map analysis provides mechanistic insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C9",
+      "C41",
+      "C82",
+      "C83",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Green-OFF, UV-ON chromatic contrast is characteristic of ground-to-sky transitions across the horizon in natural scenes. Analysis of inter-clip transitions showed that ground-to-sky transitions occupy the same region of chromatic contrast space as G28 MEIs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C41, C82-C83 are supported by citations to prior work on natural scene statistics. The analysis of inter-clip transitions (C85-C87) provides direct evidence linking the MEI properties to ecologically relevant stimuli. The spatial distribution in chromatic contrast space is clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C10",
+      "C88",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C125"
+    ],
+    "result": "G28 (tSbC) RGCs achieved the highest performance among all RGC types at detecting ground-to-sky transitions, with robust performance across different lighting conditions, retinal locations (ventral and dorsal), and transition speeds. However, the advantage over other RGC groups diminished at higher speeds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C88, C90, C93, C125 are supported by ROC analysis with appropriate statistical testing. The robustness analysis (C91) and speed-dependent effects (C92) are demonstrated through in silico experiments. The claim of 'best performance' is quantitatively supported, though the diminishing advantage at high speeds (C92) appropriately qualifies the result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C11",
+      "C42",
+      "C80",
+      "C81",
+      "C84",
+      "C114",
+      "C123"
+    ],
+    "result": "The authors propose that tSbC RGCs may provide contextual information (sky vs. ground) necessary for selecting appropriate behavioral responses to other stimuli. The nonlinear chromatic contrast tuning amplifies discriminability of colour-opponent stimuli, potentially serving to detect ethologically relevant features.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C11, C42, C81, C84, C114, C123 are explicitly speculative hypotheses (marked as SPECULATION in evidence_type). While the functional interpretation is plausible and well-motivated by the data, it lacks direct behavioral validation or circuit-level confirmation. The proposed mechanisms remain untested hypotheses requiring future experimental work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "MEI properties reflected known functional properties of RGC groups: G20 and G21 MEIs had high and low temporal frequencies respectively, matching their known frequency preferences; MEIs of ON and OFF RGCs had positive and negative contrasts respectively; and MEIs were largely consistent within functional RGC groups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C60 demonstrate that the MEI approach recovers known RGC properties, providing validation of the method. The consistency within groups (C60) and correspondence with established functional classifications (C57-C59) support the reliability of the approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "MEIs differ fundamentally from linear filters obtained through reverse correlation: linear filters provide the best linear approximation averaged across the stimulus ensemble, while MEIs identify the single stimulus that maximally activates a cell, often exhibiting greater complexity and higher frequency components.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C97 provide appropriate conceptual clarification about MEI interpretation, supported by citations (C94, C97). This methodological distinction is important for proper interpretation of the results and is well-established in the literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "The co-extensive colour opponency in tSbC RGCs differs from previously described centre-surround colour opponency in mice and is functionally reminiscent of colour-opponent RGCs in guinea pig and ground squirrels. The circuit mechanisms likely differ from primate small bistratified RGCs and may involve colour-selective amacrine cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C98-C100 accurately characterize prior work and the novelty of the finding. However, the circuit mechanism proposals (C101-C105) are largely speculative inferences based on anatomical considerations and prior work. Claim C105 is explicitly marked as speculation. Direct circuit-level validation is needed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "tSbC RGCs have been previously identified and proposed to serve multiple functions including saccade suppression, gaze stabilization, and defocus detection. These different functional roles are not mutually exclusive and may be complementary.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C113 accurately summarize prior work on tSbC/SbC RGCs with appropriate citations. The acknowledgment of multiple potential functions (C113) and uncertainties (C111) is appropriate. This provides important context for the current findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C124"
+    ],
+    "result": "The horizon is a prominent visual landmark that bisects the visual field into ground and sky regions. Visual stimuli carry different behavioral meaning depending on their location relative to the horizon, requiring context-specific processing. A context-change signal must be reliable across different stimulus parameters to be behaviorally useful.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C117 are supported by citations and represent established knowledge about visual ecology. Claims C118-C119 are logical inferences about predator/prey detection. Claim C124 is a reasonable inference about signal requirements. Together these provide appropriate ecological context for interpreting the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C133"
+    ],
+    "result": "Despite the low imaging frame rate (7.8125 Hz), Ca2+ responses can be related to spike rate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C133 is supported by multiple citations to prior work establishing the relationship between Ca2+ signals and spiking at this temporal resolution. This justifies the use of Ca2+ imaging for the study.",
+    "result_type": "MINOR"
+  }
+]

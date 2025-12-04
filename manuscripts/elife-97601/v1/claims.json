@@ -1,0 +1,54 @@
+[
+  {
+    "claim_id": "C1",
+    "claim": "A bacterium is responsible for a disease that infects citrus plants across Asia.",
+    "claim_type": "EXPLICIT",
+    "source": "The bacterium responsible for a disease that infects citrus plants across Asia facilitates its own proliferation by increasing the fecundity of its host insect.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the abstract as a factual assertion about a bacterium causing disease in citrus plants in Asia.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C2",
+    "claim": "The bacterium facilitates its own proliferation by increasing the fecundity of its host insect.",
+    "claim_type": "EXPLICIT",
+    "source": "The bacterium responsible for a disease that infects citrus plants across Asia facilitates its own proliferation by increasing the fecundity of its host insect.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is directly stated in the abstract as the mechanism by which the bacterium proliferates.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C3",
+    "claim": "The bacterium has a host insect that transmits the disease to citrus plants.",
+    "claim_type": "IMPLICIT",
+    "source": "The bacterium responsible for a disease that infects citrus plants across Asia facilitates its own proliferation by increasing the fecundity of its host insect.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The reference to 'host insect' and the bacterium infecting citrus plants implies the insect serves as a vector for disease transmission.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C4",
+    "claim": "Increased fecundity of the host insect benefits the bacterium's proliferation.",
+    "claim_type": "IMPLICIT",
+    "source": "The bacterium responsible for a disease that infects citrus plants across Asia facilitates its own proliferation by increasing the fecundity of its host insect.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The causal relationship stated implies that higher insect reproduction rates lead to greater bacterial proliferation.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  }
+]

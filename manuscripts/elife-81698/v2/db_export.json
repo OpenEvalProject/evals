@@ -1,0 +1,1990 @@
+{
+  "submission": {
+    "id": "126d7946-ae39-4f74-b011-be202691c37c",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-04T04:41:21.166726Z",
+    "updated_at": "2025-12-04T04:41:21.166726Z"
+  },
+  "content": [
+    {
+      "id": "9fac699b-9790-42ec-b0a8-edf34af5b0ec",
+      "submission_id": "126d7946-ae39-4f74-b011-be202691c37c",
+      "content_type": "manuscript",
+      "content_text": "# Discovery of runs-of-homozygosity diplotype clusters and their associations with diseases in UK Biobank\n\n## Authors\n\n- Ardalan Naseri<sup>1</sup> ([ORCID: 0000-0002-2747-2193](https://orcid.org/0000-0002-2747-2193))\n- Degui Zhi<sup>2</sup> ([ORCID: 0000-0001-7754-1890](https://orcid.org/0000-0001-7754-1890)) \u2020\n- Shaojie Zhang<sup>1</sup> ([ORCID: 0000-0002-4051-5549](https://orcid.org/0000-0002-4051-5549)) \u2020\n\n### Affiliations\n\n1. Department of Computer Science, University of Central Florida Orlando United States ([ROR:036nfer12](https://ror.org/036nfer12))\n2. Center for Precision Health, School of Biomedical Informatics, The University of Texas Health Science Center at Houston Houston United States ([ROR:03gds6c39](https://ror.org/03gds6c39))\n\n\u2020 Corresponding author\n\n## Abstract\n\nRuns-of-homozygosity (ROH) segments, contiguous homozygous regions in a genome were traditionally linked to families and inbred populations. However, a growing literature suggests that ROHs are ubiquitous in outbred populations. Still, most existing genetic studies of ROH in populations are limited to aggregated ROH content across the genome, which does not offer the resolution for mapping causal loci. This limitation is mainly due to a lack of methods for the efficient identification of shared ROH diplotypes. Here, we present a new method, ROH-DICE (runs-of-homozygous diplotype cluster enumerator), to find large ROH diplotype clusters, sufficiently long ROHs shared by a sufficient number of individuals, in large cohorts. ROH-DICE identified over 1 million ROH diplotypes that span over 100 single nucleotide polymorphisms (SNPs) and are shared by more than 100 UK Biobank participants. Moreover, we found significant associations of clustered ROH diplotypes across the genome with various self-reported diseases, with the strongest associations found between the extended human leukocyte antigen (HLA) region and autoimmune disorders. We found an association between a diplotype covering the homeostatic iron regulator (HFE) gene and hemochromatosis, even though the well-known causal SNP was not directly genotyped or imputed. Using a genome-wide scan, we identified a putative association between carriers of an ROH diplotype in chromosome 4 and an increase in mortality among COVID-19 patients (p-value = 1.82 \u00d7 10\u221211). In summary, our ROH-DICE method, by calling out large ROH diplotypes in a large outbred population, enables further population genetics into the demographic history of large populations. More importantly, our method enables a new genome-wide mapping approach for finding disease-causing loci with multi-marker recessive effects at a population scale.\n\n## Introduction\n\nRuns-of-homozygosity (ROH) regions are regions of diploid chromosomes where identical-by-descent (IBD) haplotypes are inherited from each parent (Ceballos et al., 2018). Traditionally, ROH was thought to be relevant only to inbred populations, and ROH may be linked to consanguinity and population isolation (Kirin et al., 2010). However, a growing number of studies of large cohorts and biobanks have found that ROH may be ubiquitously present (Clark et al., 2019; Joshi et al., 2015). Still, our understanding of the genetic impacts of ROH is limited.\n\nMost existing studies used individuals\u2019 global ROH content (the sum of lengths or the count of ROHs) as a surrogate for the degree of inbreeding and associated it with phenotypes. It has long been known that inbreeding is harmful to the health of offspring (Morton et al., 1956), and several studies have suggested that the global ROH content is associated with higher risks of recessive disorders (Lencz et al., 2007; Keller et al., 2012; Christofidou et al., 2015). ROHs can also be related to complex traits such as height (Yang et al., 2010). With the growing trend of multi-cohort collaboration through meta-analysis, the effect of global ROH content has been studied over very large sample sizes (Clark et al., 2019; Joshi et al., 2015). A recent study (Yengo et al., 2019) revealed that people with extremely long ROH can be found even in outbred populations.\n\nHowever, collapsing the individual\u2019s rich ROH content into a single number summarizing their global content is a drastic oversimplification. In doing so, the opportunities for mapping causal loci of phenotypes are lost. Ideally, one might wish to identify chromosomal regions with a certain ROH diplotype (Luo et al., 2006) (pairs of identical haplotypes) and associate the ROH diplotype with the phenotypes of interest. Indeed, homozygosity mapping in pedigree or inbred populations has achieved success in identifying recessive loci (Keller et al., 2012; Lander and Botstein, 1987; Leutenegger et al., 2006; Pourreza et al., 2020; Tischfield et al., 2005; Gandin et al., 2015). However, for general outbred populations, the total number of possible ROH diplotypes at a locus is too enormous to be enumerated efficiently, and ROH mapping of outbred populations has remained only a theoretical possibility.\n\nHere, we proposed an approach, ROH-DICE (runs-of-homozygous diplotype cluster enumerator), that bypasses this impossibly large search space of diplotypes. Instead of enumerating all ROH diplotypes, we focused on those that are sufficiently long and frequent. Such ROH diplotypes are of interest because they are at the extreme of distribution: the chance of ROH is determined by the chance of a pair of mates having IBD, and such chance and also the length of IBD segments will decay quickly in outbred populations, as supported by population genetics theory (Thompson, 2013; Donnelly, 1983) and real-world data (Ralph and Coop, 2013; Naseri et al., 2019b). However, little is known about such ROH diplotypes because no existing methods can efficiently find them.\n\nWe present an efficient positional Burrows\u2013Wheeler transform (PBWT)-based (Durbin, 2014) method to find clusters of identical matches. We apply our method to find clusters of ROH diplotypes in UK Biobank data. Each cluster of ROH diplotypes is defined as a set of 100 consecutive homozygous sites that are shared among over 100 individuals. We investigate the association between the detected ROH diplotype clusters and self-reported non-cancerous diseases and present the results for the disease having the strongest associations with the detected ROH diplotype clusters.\n\n## Results\n\n### Methods overview\n\nAn ROH diplotype is a pair of homozygous haplotypes of an individual. A frequent ROH diplotype is one shared by several individuals at the same location and with the same consensus sequence. Although long and frequent ROH diplotypes are not very common, it is difficult to enumerate ROH diplotypes above a certain length and a certain frequency. We refer to frequent ROH diplotypes above a certain frequency (set of individuals) and a length as ROH clusters. As a compromise, ROH regions are traditionally aggregated into single numbers and their association with phenotypes is investigated. As a result, the loci-specific association signals of the ROHs or the allele-specific signals are likely to be lost (see Figure 1).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/81698/elife-81698-fig1-v2.jpg)\n\n**Figure 1.:** The actual ROH contents (a) including the locations and sequence identities of ROH (indicated by different colors) were lost in traditional ROH analysis pipelines (b) which aggregate the ROH contents per individual and lose the chances for identifying associating loci. ROH-DICE (c) reveals ROH diplotype clusters that are long and wide enough, thus enabling mapping loci associated with phenotypes.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/81698/elife-81698-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (a) and (b) show the detection power and accuracy using different L and W values without genotype errors. (c) and (d) show the detection power and accuracy with a genotyping error rate of 0.1% using different L and W values.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/81698/elife-81698-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** The target was set to L = 100 and W = 20. Various length and width values were used as cut-offs.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/81698/elife-81698-fig1-figsupp3-v2.jpg)\n\nTo solve this problem, we first processed the biallelic genotype panel (with three possible values 0, 1, and 2 at each position) by randomly assigning any heterozygous sites to homozygous sites with the reference or the alternative allele. The reasons for such processing are twofold. One, through this conversion, the true ROH diplotype clusters, mostly consisting of homozygous sites, are relatively intact and will still have a high probability of maintaining a good portion of their haplotype. However, some post hoc processing may be needed to merge the ROH diplotype clustered with minor deviations of their consensus sequences. Notably, this conversion should introduce very few false positives as when the length and the width cut-offs are large, there is little chance a non-ROH diplotype cluster will emerge. Two, this effectively converts the panel into a haplotype panel (with two possible values 0 and 2 at each position), where efficient algorithms for identifying haplotype matching blocks are available. A haplotype matching block is defined as a sequence of variant sites that have a predefined minimum frequency. An extra benefit is, by doing this conversion, no phasing of haplotypes is needed.\n\nHaplotype matching blocks can be identified by leveraging the efficient sorting of haplotypes in the PBWT data structure. For a haplotype panel, PBWT sorts haplotype sequences at each variant site according to their reverse suffixes, and thus a set of haplotypes sharing the same sequence before a variant site will be adjacent in the sorting and form a \u2018matching block\u2019. We use auxiliary PBWT data structures to keep track of the length (the number of variant sites) and the width (the number of haplotype sequences) of the matching block and trigger the output report by watching the data structures. Figure 2 summarizes the overall ROH-DICE method. More details about the algorithms for finding blocks of matches and searching for ROH diplotypes are presented in the Methods section.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/81698/elife-81698-fig2-v2.jpg)\n\n**Figure 2.:** The input is a genotype panel where each line represents an individual. The heterozygous sites are depicted in violet in the genotype panel. Input genotype data are converted into a binarized genotype panel where homozygous sites are preserved. The matching blocks (clusters) are searched using consensus PBWT (cPBWT). A matching block is defined by a minimum number of sites, individuals, and also an objective function. The objective can be either maximizing the number of individuals or maximizing the number of sites. The clusters of matches are highlighted in different colors. Red represents a cluster with the maximized number of individuals and blue represents a cluster with the maximized number of sites.\n\n### Evaluation of ROH clusters in simulated data\n\n#### Accuracy and power of ROH clusters\n\nTo evaluate the detection power and accuracy of ROH clusters, we simulated 200 individuals of European ancestry using msprime (Baumdicker et al., 2022). The IBD segments were computed using the tskit (Kelleher et al., 2018). The tskit package extracts IBD segments between any two individuals and genomic loci where the alleles have been inherited along the same genealogical path. The variant sites with a minor allele frequency of less than 1% were filtered out. We then created an artificial variant call file where the number of sites corresponds to the number of sites in the original file. We iterated over each pairwise IBD segment and assigned the identical randomly selected alleles for all sites covering the IBD segment. Finally, we ran a modified version of cPBWT on the interim panel where only homozygous sites are included in each matching block.\n\nWe extracted the cluster from the ground truth with the maximum overlap for each reported cluster and computed the overlap ratio. The accuracy is then defined as the average of the overlap ratios. The computed accuracy would ensure that a reported percentage of each cluster belongs to the one exact cluster in the ground truth. The power is defined as the average cumulative overlap ratios between the reported clusters and clusters from the ground truth. Large clusters may be reported as two or several smaller clusters due to the strict cut-off values for L and W, and the power would determine what percentage of the clusters could be recovered based on the cut-off values. We computed accuracy and power for the reported ROH clusters using haplotypes with 0% and 0.1% genotyping error rates for different L and W cut-off values (Figure 1\u2014figure supplement 1). The results show that our approach is robust against genotyping errors up to 0.1%. The detection power for W = 5 and L = 50 without any error was 79.6% whereas the power for the data with the genotyping error was 79.1%. The accuracy increases with increasing the target lengths and widths. For example for W = 5 and L = 50, the accuracy was 55% whereas the accuracy for W = 20 and L = 100 was 63%. Figure 1\u2014figure supplement 2 shows the detection power for clusters with L = 100 and W = 20, where different cut-off values were used. The figure shows that the detection power increases with smaller cut-off values. The power for the target values W = 20 and L = 100 was 34% if the cut-offs were set the same, however, the power increased to 84% with smaller cut-offs (W = 5 and L = 50). To estimate the power and accuracy for W = 100 and L = 100, we simulated another dataset containing 1000 individuals of European ancestry with a genotyping error rate of 0.1%. The simulation parameters for this dataset were the same as for the 200 samples (except the number of samples) and ground truth clusters were extracted similarly. The power was 55.96% and accuracy 52.84%, while 58.97% of the reported clusters overlap 50% or more with a ground truth cluster.\n\n#### Power of ROH-DICE in association studies\n\nTo evaluate the effectiveness of ROH-DICE in association studies, we used the ROH clusters obtained from a sample of 200 genomes of 10 Mbp. We set the minimum length of variant sites to 100 and the minimum number of samples to 5 (L = 100 and W = 5). We generated 100 phenotypes associated with an ROH cluster for each effect size ranging from 0 to 0.3, using the formula $Y_{i}=X_{i}\\beta+N(0,\\sigma^{2})$ with  $\\sigma^{2}$ = 0.1. We choose large effect sizes so that the power can be evaluated even with small sample sizes. Here, Xi equals 1 if the sample belongs to the ROH cluster and 0 otherwise.\n\nThe total number of variant sites was 23,566, and we extracted 1263 ROH clusters. We calculated the p-values for both ROH clusters and all variant sites. We used a p-value cut-off of 0.05 divided by the number of tests for each phenotype to determine whether the calculated p-value was smaller than the threshold, indicating an association. For genome-wide association studies (GWAS), only one variant site within the ROH cluster, contributing to the phenotype, was required. We tested for all additive, dominant, and recessive effects (Figure 1\u2014figure supplement 3). The figure demonstrates that ROH-DICE outperforms GWAS when a phenotype is associated with a set of consecutive homozygous sites. The maximum effect size of 0.3 resulted in ROH clusters achieving a power of 100%, whereas the additive model only achieved 11%, and the dominant and recessive models achieved 52% and 70%, respectively. The GWAS with recessive effect yields the best results among other GWAS tests, however, its power is still lower than using ROH clusters.\n\n### ROH diplotypes in UK Biobank\n\nHere, we searched for the clusters of ROH regions in the UK Biobank data (Bycroft et al., 2018). All autosomal chromosomes of all UK participants (487,409) were searched for ROH regions that are shared among at least 100 individuals comprising at least 100 consecutive sites. 56,972 people with self-reported non-British ethnicity in UK Biobank were filtered out. We chose a minimal number of markers that is large enough to avoid an extensive number of clusters. Moreover, the longer the ROH segment, the more likely it is due to shared ancestry rather than statistical noise. Our objective is also to select clusters with a sufficiently large number of individuals to correlate them with phenotypes. It is worth noting that in previous studies, a minimum cut-off of 100 individuals was commonly used (Lencz et al., 2007; Christofidou et al., 2015; Moreno-Grau et al., 2021). On average ~18% of sites are heterozygous, and thus for a pair of 100 sites genotype sequences, there is a very small probability that they will be mapped to the same compressed haplotype. Thus, the rate of false positives should be low. To increase statistical power for downstream association tasks, the width-maximal blocks were reported. This was achieved by running the ROH-DICE program, with a wall clock time of 18 hr and 54 min where the program was executed for all chromosomes in parallel (total CPU hours of ~242.5 hr). The maximum residence size for each chromosome was approximately 180 MB. After running the ROH-DICE program, further post-processing steps were conducted. Each individual with more than 1% heterozygous sites within the block was removed from the cluster. Any two clusters with the same consensus and the exact starting and ending positions were merged.\n\nA total of 1,880,826 ROH clusters (shared among at least 100 individuals and extending at least 100 consecutive sites) were identified in all 22 autosomal chromosomes (Supplementary file 1). The average length of these ROHs is 553,095 bp (~0.55 cM). The distribution of ROH clusters is very uneven (Figure 3a). Interestingly, the number of ROH clusters in chromosome 6 is the highest. This is mainly due to the excessive number of ROH clusters in the MHC region (65,458). Figure 4 illustrates the genome-wide coverage of the ROH clusters, with visible peaks at chromosomes 2, 6, and 8. A peak region in chromosome 2 (chr2:135755899\u2013136827560) has been reported to harbor a high selection signal (Browning and Browning, 2020). This region contains the lactase gene (LCT) gene which includes a variant selected for lactose tolerance in the European population (Itan et al., 2009), though the current understanding of the selection pressure is more nuanced (Mathieson and Terhorst, 2022; Evershed et al., 2022; Le et al., 2022). The most prominent peak in chromosome 6 is located in the MHC region (chr6:28477797\u201333448354), whose details are shown in Figure 3b. The peak in chromosome 8 (chr8:42531565\u201342629520) contains two known genes, CHRNB3 and CHRNA6. Previous studies have demonstrated the significant role of the CHRNB3\u2013CHRNA6 gene cluster on chromosome 8 in nicotine dependence (Wen et al., 2016). Additionally, an earlier study has identified strong evidence for selection in the CHRNB3\u2013CHRNA6 region (Sadler et al., 2015). Surprisingly, some clusters comprise more than a hundred thousand individuals sharing the same ROH consensus. The high rate of ROH clusters in the MHC region may be attributed to the high density of markers and low recombination rates (Traherne, 2008; Lam et al., 2013). We also filtered out all ROH clusters shorter than 0.1 cM (Figure 3\u2014figure supplement 1). There is no excessive number of ROH clusters in chromosome 6, as identified by a minimum number of variant sites. The number of samples in ROH clusters within the MHC regions reduces significantly. Although there is still a peak, it is comparable to other chromosomes such as chromosome 10 or 12 (Figure 4\u2014figure supplement 1). In all subsequent results, we have included clusters with more than 100 sites. However, all the corresponding tables contain the genetic length of the clusters. Low recombination rate regions may contain excessive ROH clusters that we prefer not to discard since it will artificially ignore some ROH clusters driven by selection. The ROH clusters are abundant in regions with low recombination rates and also their distribution is expected to be population specific. Moreover, the \u2018hotspots\u2019 and \u2018coldspots\u2019 may vary in different populations (Pemberton et al., 2012). \u2018ROH hotspots\u2019 in study (Pemberton et al., 2012) refer to locations where the single nucleotide polymorphism (SNP)-wise ROH frequency is the 99.5th percentile among all frequencies, where a frequency was defined for each variant site. To enable a comparison with the ROH frequencies from the Pemberton et al., 2012 study, we also calculated a score for the variant sites by using the intersecting ROH clusters with the sites. We extracted ROH clusters with more individuals than the 99.5th percentile and lower than the 0.5th percentile (see Methods section). The top-ranked ROH \u2018coldspot\u2019 in the European population is located in chromosome 18 (Pemberton et al., 2012) and is also identified as below the 0.5th percentile using our method. The top-ranked \u2018hotspot\u2019 was reported in chromosome 15 for Europeans (Pemberton et al., 2012) which also overlaps with a peak for British people in chromosome 15 (72100881\u201372681976) in our study where the number of samples in detected ROH cluster exceeds the 99.5th percentile. The common hotspots and coldspots are listed in Supplementary files 2 and 3, respectively. However, further investigation may be required to confirm \u2018hotspots\u2019 as other factors such as marker density may contribute to excessive clusters in certain regions. We also calculated Spearman\u2019s rank correlation coefficient (\u03c1) between the two datasets. The correlation coefficient between combined ROH classes in the European population (Pemberton et al., 2012) and the ROH clusters in UKBB was 0.54. Of note, Pemberton et al., 2012 defined three types of ROH clusters (short or class A, intermediate or class B, and long or class C). Our reported ROH regions are based on shared diplotypes with at least 100 SNPs. These regions may not necessarily align with all ROH classes, as variations in length and consensus may lead to differences in ROH regions.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/81698/elife-81698-fig3-v2.jpg)\n\n**Figure 3.:** Some regions may contain multiple overlapping clusters comprising different sets of individuals. The minimum length of the ROH regions was set to 100 sites and the minimum number of individuals to 100.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/81698/elife-81698-fig3-figsupp1-v2.jpg)\n\n![Figure 4.](https://cdn.elifesciences.org/articles/81698/elife-81698-fig4-v2.jpg)\n\n**Figure 4.:** Chromosome 18 has the lowest peak for individuals sharing an ROH diplotype. Chromosomes 2, 6, and 8 contain diplotypes shared with more than 100,000 individuals.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/81698/elife-81698-fig4-figsupp1-v2.jpg)\n\n### ROH clusters and disease association\n\nWe conducted a phenotypic association analysis of the found ROH diplotype clusters with 445 self-reported non-cancerous diseases, as they are conveniently available in the UK Biobank. We first conducted a quick chi-squared test associating each of the 1,880,826 ROH diplotype cluster membership against each of the 445 phenotypes (see Methods section). The p-values for the 100 regions with the lowest p-values were re-computed using age, sex, genetics principal components, and genotype measurement batch fields by PHESANT (Millard et al., 2018) (details see Methods). This identified 61 associations passing the Bonferroni-corrected p-value threshold of 10\u221212. Table 1 shows the p-values for disease associated with the HLA region (chr6) computed by PHESANT. p-values for some diseases are very low in both the chi-squared test and regression analysis using PHESANT. It also includes the SNP with the lowest p-value in each cluster that is associated with the corresponding disease. The SNP with the lowest p-value in each cluster was extracted from Neale\u2019s lab results [http://www.nealelab.is/blog/2017/9/15/heritability-of-2000-traits-and-disorders-in-the-uk-biobank]. Most of the clusters with low p-values contain at least one SNP with a very low p-value that is associated with the corresponding disease. The top 100 diplotypes with the lowest p-values using chi-squared tests and PHESANT are included in Supplementary file 4.\n\n**Table 1.**\n Clusters of the runs-of-homozygosity (ROH) diplotypes with the lowest p-values in the HLA region for self-reported diseases using the British population in UK Biobank.Detailed diplotype consensus sequences are available in Supplementary file 5. The p-values were calculated using PHESANT. Only the region with the lowest p-value has been included for each disease. Beta represents the effect size reported by PHESANT and D\u2032 describes the non-random association of an ROH cluster and the overlapping SNP.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Disease (binary trait)</th>\n      <th>Diplotype ID</th>\n      <th>Position (on chr6)</th>\n      <th>p-value</th>\n      <th>Beta</th>\n      <th>Carrier frequency (%)</th>\n      <th>Odds ratio</th>\n      <th>Genetic length (cM)</th>\n      <th>GWAS p-value*</th>\n      <th>GWAS beta*</th>\n      <th>GWAS lead SNP*</th>\n      <th>D\u2032</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Ankylosing spondylitis</td>\n      <td>1</td>\n      <td>31431031\u201331464050</td>\n      <td>4.62 \u00d7 10\u221234</td>\n      <td>0.121</td>\n      <td>0.29</td>\n      <td>8.66</td>\n      <td>0.071198</td>\n      <td>0</td>\n      <td>1.45 \u00d7 10\u22122</td>\n      <td>rs113340460</td>\n      <td>0.61</td>\n    </tr>\n    <tr>\n      <td>Hemochromatosis</td>\n      <td>2</td>\n      <td>25969631\u201326108168</td>\n      <td>8.02 \u00d7 10\u2212120</td>\n      <td>0.417</td>\n      <td>0.09</td>\n      <td>24.51</td>\n      <td>0.011597</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <td>Malabsorption/coeliac disease</td>\n      <td>3</td>\n      <td>32564985\u201332629755</td>\n      <td>3.41 \u00d7 10\u2212259</td>\n      <td>0.315</td>\n      <td>4.12</td>\n      <td>1.64</td>\n      <td>0.005408</td>\n      <td>0</td>\n      <td>7.74 \u00d7 10\u22123</td>\n      <td>rs9271352</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <td>Multiple sclerosis</td>\n      <td>4</td>\n      <td>32410215\u201332554129</td>\n      <td>4.36 \u00d7 10\u221245</td>\n      <td>0.192</td>\n      <td>0.37</td>\n      <td>3.79</td>\n      <td>0.012736</td>\n      <td>1.05 \u00d7 10\u2212107</td>\n      <td>4.58 \u00d7 10\u22123</td>\n      <td>rs9268925</td>\n      <td>0.99</td>\n    </tr>\n    <tr>\n      <td>Polymyalgia rheumatica</td>\n      <td>5</td>\n      <td>31710968\u201331794592</td>\n      <td>7.31 \u00d7 10\u221209</td>\n      <td>0.080</td>\n      <td>0.23</td>\n      <td>5.90</td>\n      <td>0.006808</td>\n      <td>1.59 \u00d7 10\u221208</td>\n      <td>6.80 \u00d7 10\u22123</td>\n      <td>rs1150748</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <td>Prostate problem (not cancer)</td>\n      <td>6</td>\n      <td>34607958\u201335163974</td>\n      <td>2.84 \u00d7 10\u221208</td>\n      <td>0.082</td>\n      <td>0.18</td>\n      <td>6.94</td>\n      <td>0.034889</td>\n      <td>9.81 \u00d7 10\u221204</td>\n      <td>9.81 \u00d7 10\u22124</td>\n      <td>rs76117834</td>\n      <td>0.03</td>\n    </tr>\n    <tr>\n      <td>Psoriasis</td>\n      <td>7</td>\n      <td>31254263\u201331263216</td>\n      <td>1.20 \u00d7 10\u2212122</td>\n      <td>0.214</td>\n      <td>1.21</td>\n      <td>2.73</td>\n      <td>3.07\u00d710\u201305</td>\n      <td>0</td>\n      <td>1.93 \u00d7 10\u22122</td>\n      <td>rs13214872</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <td>Psoriatic arthropathy</td>\n      <td>8</td>\n      <td>33072522\u201333115762</td>\n      <td>8.54 \u00d7 10\u221212</td>\n      <td>0.122</td>\n      <td>0.20</td>\n      <td>3.97</td>\n      <td>0.008708</td>\n      <td>4.76 \u00d7 10\u221210</td>\n      <td>1.01 \u00d7 10\u22123</td>\n      <td>rs17221401</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <td>Rheumatoid arthritis</td>\n      <td>9</td>\n      <td>32412539\u201332573760</td>\n      <td>8.15 \u00d7 10\u2212122</td>\n      <td>0.208</td>\n      <td>0.23</td>\n      <td>2.34</td>\n      <td>0.01293</td>\n      <td>6.96 \u00d7 10\u2212124</td>\n      <td>8.24 \u00d7 10\u22123</td>\n      <td>rs188575117</td>\n      <td>0.98</td>\n    </tr>\n  </tbody>\n</table>\n\n_*p-values are for the reported SNP from http://www.nealelab.is/blog/2017/9/15/heritability-of-2000-traits-and-disorders-in-the-uk-biobank._\n\nNot surprisingly, the most prominent associations we found are ROH diplotypes in the HLA region with autoimmune diseases. We found that malabsorption/coeliac disease, psoriasis, rheumatoid arthritis, and multiple sclerosis have the strongest association with loci in the HLA region. These results are largely consistent with known literature (Dieli-Crimi et al., 2015; Gutierrez-Achury et al., 2015; Kurk\u00f3 et al., 2013; Bhalerao and Bowcock, 1998; Baranzini and Oksenberg, 2017; Canela-Xandri et al., 2018). One of the most significant associations we identified is the association between the ROH diplotype at chr6:25988167\u201326122453 and hemochromatosis (p-value = 9.16 \u00d7 10\u2212120). The frequency of the ROH diplotype is only 0.02% and the odds ratio of having the disease for the carrier is 102.21. Interestingly, several other ROH diplotypes at this locus also have a strong association with hemochromatosis (Table 1). This locus is in the extended HLA region and has a low recombination rate. Hemochromatosis is an inherited disorder in which iron levels in the body slowly build up over several years. The gene HFE (chr6:26087509\u201326095469) is a well-known recessive locus for this disease (Pietrangelo, 2010). The C282Y polymorphism (rs1800562, chr6:26092913) in HFE is the most penetrant but other polymorphisms with lesser penetrance are also known. Interestingly, the minor allele frequency of the SNP rs1800562 is 6% in the European population but it is not genotyped (and is also not available in the imputed panel) in the UK Biobank data. As a result, this association signal has been completely missing in the Neale Lab results. In another study, the SNP has been imputed and a specific association study for the recessive effect between the homozygous alleles of rs1800562 and hemochromatosis has been reported (Tamosauskaite et al., 2019). Our approach found this recessive association signal without direct genotyping of any SNP with high linkage disequilibrium (LD) to the causal SNP, demonstrating the power of our approach beyond regular additive effect GWAS. However, we did not verify that this SNP is indeed part of the ROH diplotype as we do not have access to the WGS data.\n\nWe also found some loci outside of the HLA region that are presumably associated with non-cancerous diseases (Table 2). The most prominent one is an ROH diplotype at chr1:151515188\u2013151902494 with eczema/dermatitis. This signal overlaps with the GWAS finding of rs4845604 at chr1:151829204 (Johansson et al., 2019).\n\n**Table 2.**\n Clusters of the runs-of-homozygosity (ROH) diplotypes with the lowest p-values outside of the HLA region for self-reported diseases using the British population in UK Biobank.The p-values were calculated using PHESANT.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Disease (binary trait)</th>\n      <th>Diplotype ID</th>\n      <th>Position</th>\n      <th>p-value</th>\n      <th>Beta</th>\n      <th>Carrier frequency (%)</th>\n      <th>Odds ratio</th>\n      <th>Genetic length (cM)</th>\n      <th>GWAS p-value*</th>\n      <th>GWAS beta*</th>\n      <th>GWAS lead SNP*</th>\n      <th>D\u2032</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Deep venous thrombosis (dvt)</td>\n      <td>10</td>\n      <td>chr1:169075589\u2013169528830</td>\n      <td>3.10 \u00d7 10\u221221</td>\n      <td>0.039</td>\n      <td>2.08</td>\n      <td>10.49</td>\n      <td>0.56</td>\n      <td>7.41 \u00d7 10\u2212166</td>\n      <td>\u22123.13 \u00d7 10\u22122</td>\n      <td>rs6025</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <td rowspan=\"3\">Eczema/dermatitis</td>\n      <td>11</td>\n      <td>chr1:151515188\u2013151902494</td>\n      <td>1.52 \u00d7 10\u221227</td>\n      <td>0.044</td>\n      <td>2.85</td>\n      <td>7.31</td>\n      <td>0.36</td>\n      <td>3.45 \u00d7 10\u221236</td>\n      <td>1.43 \u00d7 10\u22122</td>\n      <td>rs55875222</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <td>12</td>\n      <td>chr1:151940401\u2013152280032</td>\n      <td>9.46 \u00d7 10\u221224</td>\n      <td>0.053</td>\n      <td>11.76</td>\n      <td>2.07</td>\n      <td>0.12</td>\n      <td>1.35 \u00d7 10\u221264</td>\n      <td>1.84 \u00d7 10\u22122</td>\n      <td>rs61815559</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <td>13</td>\n      <td>chr1:152493154\u2013152964479</td>\n      <td>1.53 \u00d7 10\u221221</td>\n      <td>0.039</td>\n      <td>2.85</td>\n      <td>7.35</td>\n      <td>0.36</td>\n      <td>1.01 \u00d7 10\u221242</td>\n      <td>1.62 \u00d7 10\u22122</td>\n      <td>rs61813875</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <td>Hypothyroidism/myxoedema</td>\n      <td>14</td>\n      <td>chr12:111910219\u2013112874179</td>\n      <td>4.51 \u00d7 10\u221221</td>\n      <td>0.062</td>\n      <td>5.06</td>\n      <td>1.25</td>\n      <td>0.04</td>\n      <td>1.88 \u00d7 10\u221280</td>\n      <td>9.87 \u00d7 10\u22123</td>\n      <td>rs7137828</td>\n      <td>0.99</td>\n    </tr>\n  </tbody>\n</table>\n\n_*p-values are for the reported SNP from http://www.nealelab.is/blog/2017/9/15/heritability-of-2000-traits-and-disorders-in-the-uk-biobank._\n\nThe beta values for effect size were included in all reported tables. These beta values for ROH-DICE are positive, indicating that carriers of these ROH diplotypes may have an increased risk of certain non-cancerous diseases. We also used D\u2032 as a measure of linkage between the reported GWAS results and ROH clusters (see Methods section). We found that most of the GWAS results and ROH clusters are strongly correlated. However, in a few cases, D\u2032 is small or close to zero. In such cases, the reported p-value from GWAS was also insignificant, while the ROH cluster indicated a significant association (See Table 1 and Supplementary file 4). The SNP IDs and consensus alleles for all ROH clusters in Tables 1 and 2 are reported in Supplementary file 5.\n\n### ROH clusters and COVID-19 association\n\nWe computed the p-value using the chi-square test for the association between mortality of COVID-19 and the detected ROH regions. We considered only the clusters that had at least 10 cases (tested positive and passed away in 2020). Figure 5 shows the Manhattan plot for ROH regions and mortality of COVID-19. The most significant ROH region is located in chr4:106318456\u2013106483898 (0.114 cM) with the p-value 1.63 \u00d7 10\u221210. 4389 individuals share the diplotypes and 76 of them have tested positive for COVID-19. Eleven persons who carried the same ROH consensus and had tested positive, died in 2020. In other words, carriers of this diplotype have a fivefold mortality compared to non-carriers among COVID-19 patients. We used the GMMAT (Hoare, 1961) mixed model regression to validate the association of this diplotype while adjusting for age, gender, and genetic similarity (see Methods section). The reported p-value was 1.82 \u00d7 10\u221211 which is even smaller than the p-value from the chi-square test. The region includes the PPA2 gene. The gene product is an inorganic pyrophosphatase located in the mitochondrion (Curbo et al., 2006). Missense mutations in this gene are reported to cause sudden unexpected cardiac arrest in infancy (Guimier et al., 2016). The PPA2 gene has also been recently implicated in COVID-19 through an integrated analysis of GWAS of European patients and lung expressed quantitative trait loci (eQTL) data by the summary-data-based (SMR) method (Zong and Li, 2021). The identified region linked to COVID-19 mortality overlaps also with the ARHGEF38 gene. A genetic variant within the gene (rs72670002) has been reported to be significantly associated with severe illness from COVID-19 in a recent study that used 24,202 cases of critical COVID-19 (Pairo-Castineira et al., 2023). Other nearby genes within a 200-kb range include TET2, INTS12, and GSTCD.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/81698/elife-81698-fig5-v2.jpg)\n\n**Figure 5.:** (a) Manhattan plot of ROH diplotypes across all chromosomes and mortality of COVID-19. Diplotypes with less than 10 cases were discarded. (b) UCSC genome browser (https://genome.ucsc.edu) view of the region containing the diplotype with a significant p-value in chromosome 4.\n\n## Discussion\n\nIn this work, we introduced an efficient algorithm, ROH-DICE, for finding clusters of ROH regions in very large cohorts. The algorithm can find all clusters of ROH regions based on the given parameters: the minimum number of individuals, the minimum length of the ROH regions, and the objective function. The running time of the algorithm is linear to the size of the genotype panel which enables fast processing of millions of individuals without requiring extravagant resources.\n\nUsing ROH-DICE, we conducted a systematic investigation of ROH diplotype clusters in a large population cohort, the UK Biobank. To the best of our knowledge, there has been no such investigation of the genomic distribution of ROH diplotypes conducted previously. We found over 1.8 million ROH diplotype clusters spanning over 100 SNPs and shared by over 100 individuals. While we reported this single data point, the interpretation of the genome-wide ROH diplotype distribution is difficult. First, the expected distribution of ROH diplotype clusters is not known. For populations with an idealized infinite population size, ROH diplotype distribution can be estimated from the allele frequency spectrum. However, for any finite population, when we are looking at haplotypes spanning 100 sites, only a small fraction of possible allele combinations is observed and the distribution will be heavily dependent on the population history. Large ROH clusters can be used to identify signatures of selection in humans or other species. Positive selection reduces haplotype diversity, increasing homozygosity around the target locus, resulting in higher frequencies of ROH in regions containing selection loci (Pemberton et al., 2012; Sabeti et al., 2002). Therefore, excessive ROH regions can be linked to selective sweeps and have been found to coincide with positive selection in humans (Pemberton et al., 2012), and other species (Hewett et al., 2023). Three large ROH clusters in chromosomes 2, 6, and 8 of UKBB overlap with known hotspots for selection signals. It should be noted that although the selection of 100 individuals and 100 sites has been used in other studies, it is somewhat arbitrary. While we believe that small variations in the values would not affect the results, using different values such as 200 or 1000 may lead to different ROH clusters. Our preliminary analysis indicates that increasing the length and width of the clusters improves accuracy but reduces power. Future works may investigate the effect of different parameters on the distribution of ROH clusters and downstream analysis.\n\nWe found a strong association between non-cancerous diseases and some ROH diplotypes. The majority of ROH regions harboring strong associations with non-cancerous diseases were located in the extended HLA region in chromosome 6. As expected, most of the related diseases were also autoimmune system disorders. While the association signals we found mostly overlap with existing GWAS hits, we are testing different genetic effects. The existing GWAS are mainly testing the additive effects of single SNPs, while we are testing the recessive effects of relatively long haplotypes. In a sense, our analysis is similar to traditional family-based homozygosity mapping (Lander and Botstein, 1987), but at a population scale. Future works are warranted to fully develop this potential new gene mapping approach. We want to clarify that we are not claiming ROH-DICE to be superior to regular GWAS in all scenarios. Our simulation only demonstrates that ROH-DICE performs better under certain conditions. Specifically, when the causal variant is located in a long ROH diplotype shared by many individuals (ROH diplotype clusters), ROH-DICE outperforms regular GWAS. It is important to note that ROH-DICE is not meant to replace regular GWAS, but to complement it.\n\nThe disease associations presented in this work largely do not represent novel discoveries. The significant associations can be identified in the first place if a recessive mode of inheritance is assumed or a more powerful imputation panel is implemented. However, there is no guarantee that the sites are well imputed if the LD between the genotyped sites is low. We also showed in our simulation that the ROH clusters would outperform GWAS with an additive or even recessive model in terms of power if a phenotype is associated with a set of consecutive homozygous sites.\n\nWe used age, gender, and genetic principal components as confounding variables in the association analysis. Genetic principal components can reduce the confounding effect brought on by population structure but it may be insufficient to completely eliminate the effects of recent demographic structure and the local environment (Zaidi and Mathieson, 2020). For example, individuals sharing excessive ROH diplotypes may share similar environments since they are closely related and reside close to one another. Since we did not rule out related individuals, some of the reported GWAS signals may not be attributable to ROH.\n\nOur association analysis is a proof of concept and opens up many future opportunities. With our methods, it is possible to extend this analysis to non-disease complex traits. For example, one can investigate whether individuals who share more ROH diplotype clusters have similar phenotypes. Such an analysis may reveal the contribution of dominance variance to the heritability of traits of interest. It will also be interesting to compare the findings with previous research based on genome-wide aggregate ROH content.\n\n## Methods\n\n### Identification of haplotype clusters in PBWT\n\nThe PBWT proposed by Durbin, 2014 facilitates an efficient approach to search for all pairs of long matches in haplotype or genotype panels. The basic idea behind the PBWT search is to sort the panels at each site by their reversed prefix order. As a result, the matches in the panel will be placed adjacent to each other. However, at the time we started this project, all existing PBWT algorithms (Durbin, 2014; Naseri et al., 2019c; Naseri et al., 2019a; Sanaullah et al., 2020) were aimed at identifying pairwise matches. In this work, we propose to employ the PBWT data structures to search for clusters of multi-way matches instead of individual pairs of matches. Independent of our work, a couple of algorithms have been proposed to find haplotype blocks in a PBWT panel (Cunha et al., 2018; Alanko et al., 2020). The algorithm by Cunha et al., 2018; Alanko et al., 2020 may not be feasible to handle biobank scale data. The recently proposed algorithms by Cunha et al., 2018; Alanko et al., 2020, however, will scale well for large-scale data, but they aim to enumerate all maximal haplotype blocks. For datasets comprising hundreds of thousands or millions of individuals, the number of reported clusters of any length may be excessive. Moreover, a minimum length threshold in terms of both sites and number of individuals would be more meaningful for downstream analysis especially association analysis, for example where a minimum number of cases are required. Hence, after detecting all possible clusters, filtering has to be applied to remove spurious clusters. Here, we formulate the haplotype blocks problem with two distinct objective functions which will reduce the complexity of filtering the detected clusters afterward.\n\n### Block maximal match problems\n\nBased on the different formulations of the problem, we may have different objective functions: the first problem is to find all clusters with at least L sites that are shared among at least t sequences while maximizing the number of sequences for each cluster. Using proper data structures, we can keep track of the starting position of the matches and report them efficiently. The second problem is to find clusters with at least L sites among at least t sequences while maximizing the number of sites for each cluster. Again, the sequences that share a consensus are put in the same block.\n\nPBWT sorting at the site k places sequences with identical reverse prefixes into clusters of matches that are adjacent to each other. We refer to these clusters as blocks, where the number of sequences W is the width of the block in terms of the number of haplotypes, and the length of matches L is the length of the block in terms of the number of sites. Recall the concept of the set maximal match of Durbin, 2014 as the pairwise haplotype match that cannot be extended at either end. We extend the concept of set maximal match to block maximal match, that is, the haplotype match block that cannot be extended. As the block is a 2D object, the extension can be defined either lengthwise or widthwise. Therefore, we can define the lengthwise block maximal match as the matching block that cannot be extended lengthwise. Similarly, the widthwise block maximal match is that which cannot be extended widthwise.\n\nFor the PBWT block match problem, the goal is to identify all block maximal matches that have a minimal sequence length L and a minimal width W. Note that for an identified PBWT block, the boundary of the block may not be exactly defined (see Figure 6 for an example). We can either report the block boundary that maximizes the length \u2013 length-maximal PBWT block, or the block boundary that maximizes the width \u2013 width-maximal PBWT block. We developed exact algorithms for identifying and reporting block maximal matches. This is achieved by using proper data structures tracking the starting position of the matches and the upper and lower boundaries of each matching block. A detailed description of the algorithms is provided in the cPBWT algorithms subsection.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/81698/elife-81698-fig6-v2.jpg)\n\n**Figure 6.:** (a) Clusters of haplotypes with two different objectives: maximizing the number of sites and maximizing the number of indivdiuals. The green rectangle ending at site 4 highlights a cluster that meets the requirement of W \u2265 3 and L \u2265 3 while maximizing the number of individuals (width-maximal). The blue rectangles ending at 4 maximize the number of sites (length-maximal). The blue rectangles ending at site 8 show a cluster with W \u2265 3 and L \u2265 3 maximizing the number of sites and number of individuals. This cluster is length-maximal because adding either column 5 or 9 will introduce a mismatch; It is also width-maximal because adding the third haplotype will introduce a mismatch. (b) Two clusters (clusters A and B) with the same starting and ending positions but different consensuses. Therefore, these two clusters are not merged and considered as separate clusters. Each line represents one individual and 0/0 alleles are highlighted in gray, and 1/1 alleles in black.\n\n### cPBWT algorithms\n\n#### Maximizing the number of haplotypes\n\nGiven a haplotype or genotype panel, the objective is to find all matches greater than a given length L that are shared among at least c haplotypes (or individuals). By sorting the panel at each site the matches are placed in the same block. The divergence value for each sequence contains the starting position of the match to its preceding sequence in the reversed prefix order. The matches are separated by a sequence with a divergence value greater than k \u2212 L. To maximize the number of sequences, the maximum value of the divergence values in each block is considered. The size of the block should also be greater than c to be reported. Algorithm 1 (Supplementary file 6) illustrates the procedure for finding long matches while maximizing the number of haplotypes or sequences in detail. Algorithm 2 (Supplementary file 6) illustrates the procedure for updating the intermediate variables V and Q to compute dk+1 and ak+1 based on the dk and ak. The time complexity of this algorithm is O(NM), where N denotes the number of variant sites and M denotes the number of individuals. Divergence values and prefix arrays are computed in linear time for each variant site and the maximal number of matching blocks at each site is bound by O(M).\n\n#### Maximizing the length of the match\n\nThe objective is to find the longest matches greater than a given length L shared among at least c sequences. The match will not be reported if the block of matches can be extended while at least c sequences are not terminating. To do this, two conditions should be held: First, at least c sequence for one allele should be present in the block, and second, the cth lowest divergence value in the block should be greater or equal to the cth lowest divergence of the matches ending with the allele with at least c occurrences. To find the cth lowest divergence value, the Quickselect algorithm, a modified one-sided version of Quicksort (Hoare, 1961), is used. Quickselect has the average time complexity of O(N), where N denotes the size of the given list. Algorithm 3 (Supplementary file 6) illustrates the procedure of finding long matches while maximizing the length of the match in detail.\n\n### ROH-DICE algorithm\n\nAny of the two cPBWT algorithms can be applied to search for ROH\u2013diplotype clusters from genotype data. Maximizing the number of haplotypes would guarantee the inclusion of all samples that may share specific ROH diplotypes. Hence, for association analysis between ROH diplotype and phenotypes, this optimization would be preferred. On the other hand, maximizing the number of sites would ensure the inclusion of all variant sites between the individuals contributing to the matches which may be more appropriate for other applications such as studying population structures or imputation.\n\nROH-DICE maps the genotype sequence $x$, defined over the alphabet of {0,1,2}, into a compressed haplotype sequence $y$, defined over the alphabet of {0,1}. For homozygous sites, the mapping is straightforward: for $x_{i}=0$, $y_{i}=0$; for $x_{i}=2$, $y_{i}=1$. For heterozygous sites $x_{i}=1$, a random value from 0 and 1 was assigned with a probability of \u00bd for 0 and \u00bd for 1. The identified maximal matching blocks in the PBWT panel comprising all compressed haplotype sequences ${y_{i}}$, correspond to the approximate ROH clusters in the original genotype sequences ${x_{i}}.$ After finding all ROH clusters for a given cut-off, the clusters with the identical start and end positions, and consensus (determined by majority alleles) was merged.\n\n### Identification of ROH hotspots and coldspots\n\nThe frequency of ROH calculated over all three size classes at each SNP in the combined data set from the Pemberton study was downloaded (Pemberton et al., 2012). The genomic locations were lifted over to hg19 using the liftOver tool (Hinrichs et al., 2006). The overlapping ROH cluster from ROH-DICE results with the maximum number of individuals (samples) was assigned for each SNP. ROH hotspots were considered locations where the number of samples in ROH clusters exceeded the 99.5th percentile. ROH coldspots were considered locations where the number of samples in ROH clusters was lower than the 0.5th percentile (equal to 0).\n\n### UK Biobank dataset\n\nThe phased haplotype data of the UKBB data (version 2) comprising 658,720 sites were extracted. The Data-Field 20002 contains self-reported non-cancer illnesses comprising 445 categories (diseases). For the association analysis, 430,437 individuals of British ethnicity were selected. The ethnic backgrounds were extracted using the Data-Field 21000.\n\n### Genetic association analysis\n\nWe computed the p-values for each disease in all detected ROH clusters that were present in at least 10 individuals. p-values were computed using chi-squared test considering the following numbers: D1: Number of individuals sharing a disease within the detected consensus of ROH. N1: Number of individuals in the detected ROH not sharing the disease. D2: Total number of individuals sharing the disease subtracting D1. N2: M \u2212 N1 \u2212 N2 \u2212 D2, where M denotes the total number of individuals. 100 regions with the lowest p-values (for any disease) were selected and further investigated using PHESANT (downloaded on August 22, 2018).\n\nFor PHESANT analysis, age was calculated manually using the date of attending the assessment center (53), year of birth (34), and month of birth (52). Sex (31), genetic principal components (22009), number of self-reported non-cancer illnesses (135), genotype measurement batch (22000), and non-cancer illness (20002) fields were also maintained. PHESANT tests the associations of a trait of interest with a set of other phenotypes, and we considered all diplotypes in the 100 regions as traits of interest. Most of the regions include multiple clusters with the same starting and ending positions but different consensus. We considered all of the clusters in the same region as traits of interest (660 traits of interest in total). Regressions were performed on each diplotype cluster separately, so more than one cluster may have been tested in the same region.\n\n### Retrieval and annotation using the genetic association result from Neale Lab\n\nEach of the associations (computed by PHESANT) was validated against the GWAS results published by Neale\u2019s lab [http://www.nealelab.is/blog/2017/9/15/heritability-of-2000-traits-and-disorders-in-the-uk-biobank, accessed July 27, 2018]. For each disease in each cluster (according to PHESANT), all reported SNPs within the genomic region of the cluster that were reported to be associated with the disease (according to Neale\u2019s lab results) were searched and the SNP with the lowest p-value was reported.\n\n### Linkage pattern analysis between GWAS and ROH-DICE results\n\nIn linkage disequilibrium analysis, D and D\u2032 are commonly used measures to quantify the degree of non-random association between alleles at different loci. D measures the difference between the observed frequency of a haplotype and the frequency expected under random mating, while D\u2032 is a normalized measure of D that considers the allele frequencies at each locus. In this study, we have adapted these measures between two loci into a location and an ROH cluster.\n\nD\u2032 between an ROH cluster and an SNP overlapping the cluster was calculated by normalizing the D between the ROH cluster membership and alternate allele of the SNP similar to linkage analysis between variant sites. Assume pR is the frequency of samples that belong to the cluster, pS is the frequency of alternate allele, and pRS is the frequency of samples belonging to the cluster and having the minor allele. We calculate pr as 1 \u2212 pR and ps as 1 \u2212 pS. Finally, the D\u2032 can be calculated by using the following formula:\n\nif $(D<0):D^{\u2032}=max(\u2212p_{R}p_{S},\u2212p_{r}p_{s})$\n\nelse: $D^{\u2032}=max(p_{R}p_{S},p_{r}p_{s})$\n\nwhere $D=p_{RS}-p_{R}p_{S}$.\n\n### COVID-19 mortality and ROH diplotypes\n\nTwo tables \u2018covid19_result.txt\u2019 and \u2018death.txt\u2019 provided by the UK Biobank were downloaded on July 24, 2020. The table \u2018covid19_result.txt\u2019 contains the test results whether the sample was reported as positive or negative for COVID-19. The table \u2018death.txt\u2019 includes the date of death for samples. In the July 24, 2020 release of the table in UK Biobank, 201 British individuals have been reported COVID-19 positive and died in 2020. Those individuals were considered as cases for mortality analysis. A total of 8120 British individuals have been tested for COVID-19. The controls contained the individuals who had been tested but no death information was provided for them. We tested all detected ROH diplotypes for COVID-19 mortality association (with at least 10 cases) using the chi-square test. For the chi-square test, the total number of individuals M corresponds to the number of tested individuals for COVID-19 (8120). GMMAT (Hoare, 1961) was used to recalculate the p-value for the diplotype with the lowest p-value from the chi-square test (chr4:106318456\u2013106483898) while adjusting for age, gender, and genomic relationship matrix (GRM). The GRM was computed using the kinship coefficients calculated from KING (Hoare, 1961).\n",
+      "created_at": "2025-12-04T04:41:21.166726Z"
+    },
+    {
+      "id": "5ca339c1-65ed-482f-9ced-6db50f19872b",
+      "submission_id": "126d7946-ae39-4f74-b011-be202691c37c",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Ziyue Gao, https://ror.org/00b30xv10 University of Pennsylvania United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.81698.sa0](https://doi.org/10.7554/eLife.81698.sa0)\n\nThis important study presents a new method for homozygosity mapping in population-scale datasets, based on an innovative computational algorithm that efficiently identifies runs-of-homozygosity (ROH) segments shared by many individuals. Simulation results provided convincing evidence for good accuracy and power of the new algorithm. Application of this new method to the UK Biobank dataset largely recapitulated previously known associations but also revealed a small number of novel discoveries that were missed by existing genome-wide association study methods, highlighting the utility of this new approach. This study will be of substantial interest to readers in human genetics and quantitative genetics.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Ziyue Gao, https://ror.org/00b30xv10 University of Pennsylvania United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.81698.sa1](https://doi.org/10.7554/eLife.81698.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Discovery of runs-of-homozygosity diplotype clusters and their associations with diseases in UK Biobank\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Molly Przeworski as the Senior Editor. The following individual involved in the review of your submission has agreed to reveal their identity: Shai Carmi (Reviewer #3).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions (for the authors):\n\nAll three reviewers agree that the approach presented is innovative and potentially useful for future applications in large biobank datasets. However, the performance of the algorithm for identifying ROH diplotype clusters is not quantitatively characterized to demonstrate a low false positive rate. Additionally, the reviewers noted that most of the ROH-phenotype associations identified have already been found by standard GWAS, and more would be found by GWAS with recessive effects considered, which raises the question about the power of the new approach over existing GWAS methods. Lastly, the identified ROH clusters and associations have not been fully reported. Hence, below are the essential revisions that the reviewers suggest, and specific analyses are laid out in detail in their reviews below:\n\n1) The authors need to quantify the error rate of all the identified ROH clusters by going back to the diploid genotype data to confirm that (1) each individual in the cluster is truly (nearly) homozygous across the identified ROH segment; (2) individuals in the same ROH cluster do share the same diplotype. It is also recommended to simulate genotypes with errors (or mutations) to characterize the sensitivity and false positive rate of the ROH detection method. These characterizations will help demonstrate the performance of the new approach and justify (or improve) the choice of parameters for defining ROH clusters (i.e., spanning over 100 SNPs and shared by over 100 individuals).\n\n2) When characterizing the false positive rate of ROH cluster detection, particular attention should be paid to the MHC region, as the reviewers have raised considerable concerns regarding the usually large number of signals in this region. Although the high SNP density and complex linkage-disequilibrium patterns may enable the detection of more short haplotypes shared by identity across individuals, these haplotypes are not expected to be more likely in the homozygous state, so more ROH clusters are not necessarily expected. The authors need to (1) verify \uff08or refute) that most of the identified ROH clusters are real based on the full genotype data; (2) characterize and explain the distribution of ROH segment length in terms of physical or genetic distance, and compare it to that of other chromosomes; (3) consider possibilities of potential technical artifacts, either introduced by the \"random allele drawing\" of the algorithm or already present in the genotype data (e.g., due to cryptic duplication or structural variation).\n\n3) Although the authors listed a couple of examples where the associations are missed by standard additive effect GWAS, many recent GWAS tools provide alternative models (dominant, recessive, or general) for detecting signals with non-additive effects. It is thus important to quantify the power of the ROH-based method vs. standard (single variant) GWAS with a recessive effect considered.\n\n4) The authors should include more comprehensive reports of the identified ROH clusters and associations in the supplemental materials, which will enable other authors to reproduce the results and carry out follow-up studies.\n\nReviewer #1 (Recommendations for the authors):\n\nAssuming the ROH diplotype cluster identification is accurate, I wonder if the authors could further utilize the identified clusters to explore the genetic architecture of disease risks (or of other complex traits). For example, one can ask if individuals who shared more ROH diplotype clusters tend to be more similar in phenotypes. Such analysis may shed light on the contribution of dominance variance to heritability for traits of interest.\n\nAssuming the ROH association has good power and a low false positive rate, it should be relatively straightforward and of broad interest to extend this analysis to non-disease complex traits. It will also be interesting to compare the results with findings from previous research based on genome-wide aggregate ROH content.\n\nThe direction of the ROH association should be reported for each signal in all tables (including supplementary ones) to indicate if homozygosity of certain haplotypes is associated with increased or decreased risk. Similarly, the direction of the effect size of the non-reference allele should be annotated for GWAS results. The linkage pattern between the non-reference allele of GWAS SNP and the ROH segment should be added.\n\nReviewer #2 (Recommendations for the authors):\n\nThe algorithm itself is reasonable, however, my biggest concern is that assessment of whether the identified segments are statistically significant is lacking. The authors mentioned \"the rate of false positives should be low\". However, it is not obvious, and the results should be more specific and quantitative.\n\nFirst, given the IBD sharing or genetic relatedness in a group of individuals, would the identified ROH be explained by chance alone? This should be evaluated.\n\nSecond, what part does linkage disequilibrium play in ROH? As reported, the MHC region of chr6 has a ROH hotspot. The MHC region is known to have an extremely high level of LD. If taken LD level into account, would the ROH clusters be significant?\n\nThird, if SNPs are pre-processed, for example only SNPs with certain MAF and with certain LD distance are kept, how would the results look like? Also, the numbers 100 markers and 100 individuals are quite arbitrary. How would the results depend on the choice of parameters, say with 50 and 200 markers, 50 and 200 individuals?\n\nFourth, the definition of ROH clusters, blocks, and hotspots should be clearly described.\n\nFifth, two optimization rules are mentioned, and for the UKB data, only the width-maximal blocks were reported. In practice, what are the criteria to choose one rule over another?\n\nSixth, the disease associations discussed do not represent new discoveries. The significant associations can be identified in the first place if a recessive mode of inheritance is assumed or a more powerful imputation panel was implemented.\n\nReviewer #3 (Recommendations for the authors):\n\nPlease see the annotated PDF file. No need to respond to corrections of typos etc.\n\n[Editors' note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Discovery of runs-of-homozygosity diplotype clusters and their associations with diseases in UK Biobank\" for further consideration by eLife. Your revised article has been evaluated by Detlef Weigel (Senior Editor) and a Reviewing Editor.\n\nThe manuscript has been improved but there are some remaining issues that need to be addressed, as outlined below:\n\n1. The newly added evaluation of accuracy and power of ROH diplotype clusters detected by ROH-DICE is appreciated, but this evaluation is based on simulated genotypes of 200 individuals only, and the combination of detection thresholds evaluated do not match those used in the empirical study of UK Biobank data (L=100, W=100). Therefore, it is highly unclear how accurate and powerful ROH-DICE is expected to be in practice. Understandably, simulating a dataset as large as the UK Biobank is infeasible. It will be useful if the authors could provide some back-of-envelope calculation or semi-quantitative estimation of the power in large-scale genomic datasets such as UK Biobank (even an estimate of the order of magnitude would be helpful).\n\n2. The authors argue that the accuracy of ROH diplotype clusters detected in MHC is comparable to other parts of the genome, because there is no excess clusters detected in MHC, when a genetic distance threshold is used instead of the number of consecutive SNPs threshold. However, Figure 3\u2014figure supplement 1 only shows no excess clusters on chromosome 6, without providing specific information regarding the MHC region. Moreover, beyond the total number of clusters, the authors need to show that the size distribution of the ROH diplotype clusters (i.e., number of individuals in each cluster) of MHC is comparable to elsewhere in the genome, as higher SNP density and low recombination rate is not expected to lead to more people sharing the same diplotype. (Related to this point, additional legend/explanation is needed to explain the y-axis, blocks, and colors of Figure 3B, as the current legend is not sufficiently informative.)\n\n3. The evaluation of the power of ROH diplotype association is based on the strong assumption that the causal variant indeed lies in a long, ROH diplotype shared by many individuals (i.e., ROH diplotype clusters). One might argue that the comparison between standard GWAS and ROH-DICE based on this assumption is unfair, because only a small fraction of causal variants reside in ROH diplotype clusters, and standard GWAS may have better power in other scenarios. A more comprehensive and fair comparison is to assign causal variants in the simulated datasets at random, assuming additive, dominant or recessive effect, respectively. The authors can then quantify the frequency of different scenarios (e.g., causal variants in ROH-diplotype clusters of various sizes or not in ROH segments at all) and compare the performance of the two association methods in different scenarios. (Related to this point, more information (such as the simulated sample size, detection thresholds, assignment of causal alleles) is needed in the legend of Figure 1\u2014figure supplement 3.)\n",
+      "created_at": "2025-12-04T04:41:21.166726Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T04:41:21.166726Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T04:41:21.166726Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "0e5fcf60-3a41-4756-a1b2-4b3840d0a312",
+      "content_id": "9fac699b-9790-42ec-b0a8-edf34af5b0ec",
+      "claim_id": "C1",
+      "claim": "Runs-of-homozygosity (ROH) segments are contiguous homozygous regions in a genome traditionally linked to families and inbred populations.",
+      "claim_type": "EXPLICIT",
+      "source": "Runs-of-homozygosity (ROH) segments, contiguous homozygous regions in a genome were traditionally linked to families and inbred populations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the traditional understanding of ROH, supported by established scientific knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:41:21.166726Z"
+    },
+    {
+      "id": "7e6771c3-a803-4880-89b4-6307fb84b2d9",
+      "content_id": "9fac699b-9790-42ec-b0a8-edf34af5b0ec",
+      "claim_id": "C2",
+      "claim": "A growing literature suggests that ROHs are ubiquitous in outbred populations.",
+      "claim_type": "EXPLICIT",
+      "source": "However, a growing literature suggests that ROHs are ubiquitous in outbred populations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim references existing literature on the topic, indicating citation-based support.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:41:21.166726Z"
+    },
+    {
+      "id": "2d6eaca2-db2b-4969-a71d-1d0e62820391",
+      "content_id": "9fac699b-9790-42ec-b0a8-edf34af5b0ec",
+      "claim_id": "C3",
+      "claim": "Most existing genetic studies of ROH in populations are limited to aggregated ROH content across the genome.",
+      "claim_type": "EXPLICIT",
+      "source": "Still, most existing genetic studies of ROH in populations are limited to aggregated ROH content across the genome, which does not offer the resolution for mapping causal loci.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a characterization of existing studies based on knowledge of the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:41:21.166726Z"
+    },
+    {
+      "id": "96ab0cf4-ca39-499b-aae0-b9299fa9b49c",
+      "content_id": "9fac699b-9790-42ec-b0a8-edf34af5b0ec",
+      "claim_id": "C4",
+      "claim": "Aggregated ROH content analysis does not offer the resolution for mapping causal loci.",
+      "claim_type": "EXPLICIT",
+      "source": "Still, most existing genetic studies of ROH in populations are limited to aggregated ROH content across the genome, which does not offer the resolution for mapping causal loci.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the limitations of aggregated analysis methods.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:41:21.166726Z"
+    },
+    {
+      "id": "84ad0825-8a0d-4458-ac17-3a57991737c6",
+      "content_id": "9fac699b-9790-42ec-b0a8-edf34af5b0ec",
+      "claim_id": "C5",
+      "claim": "The limitation of ROH studies is mainly due to a lack of methods for the efficient identification of shared ROH diplotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "This limitation is mainly due to a lack of methods for the efficient identification of shared ROH diplotypes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the cause of limitations in the field.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:41:21.166726Z"
+    },
+    {
+      "id": "60350b87-2b58-400e-9f7a-af95df289edb",
+      "content_id": "9fac699b-9790-42ec-b0a8-edf34af5b0ec",
+      "claim_id": "C6",
+      "claim": "ROH-DICE identified over 1 million ROH diplotypes that span over 100 single nucleotide polymorphisms (SNPs) and are shared by more than 100 UK Biobank participants.",
+      "claim_type": "EXPLICIT",
+      "source": "ROH-DICE identified over 1 million ROH diplotypes that span over 100 single nucleotide polymorphisms (SNPs) and are shared by more than 100 UK Biobank participants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of data obtained from applying the ROH-DICE method to UK Biobank data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:41:21.166726Z"
+    },
+    {
+      "id": "943c4248-f906-4256-ab98-a5b29ed1bbc2",
+      "content_id": "9fac699b-9790-42ec-b0a8-edf34af5b0ec",
+      "claim_id": "C7",
+      "claim": "Significant associations of clustered ROH diplotypes across the genome with various self-reported diseases were found.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, we found significant associations of clustered ROH diplotypes across the genome with various self-reported diseases, with the strongest associations found between the extended human leukocyte antigen (HLA) region and autoimmune disorders.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the association analysis performed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:41:21.166726Z"
+    },
+    {
+      "id": "ed1c55c2-5750-4411-bfe6-bd0b1c337aa3",
+      "content_id": "9fac699b-9790-42ec-b0a8-edf34af5b0ec",
+      "claim_id": "C8",
+      "claim": "The strongest associations were found between the extended human leukocyte antigen (HLA) region and autoimmune disorders.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, we found significant associations of clustered ROH diplotypes across the genome with various self-reported diseases, with the strongest associations found between the extended human leukocyte antigen (HLA) region and autoimmune disorders.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specific finding from the association analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:41:21.166726Z"
+    },
+    {
+      "id": "c1d81ac3-36eb-4d6d-b20e-7cd537499296",
+      "content_id": "9fac699b-9790-42ec-b0a8-edf34af5b0ec",
+      "claim_id": "C9",
+      "claim": "An association was found between a diplotype covering the homeostatic iron regulator (HFE) gene and hemochromatosis.",
+      "claim_type": "EXPLICIT",
+      "source": "We found an association between a diplotype covering the homeostatic iron regulator (HFE) gene and hemochromatosis, even though the well-known causal SNP was not directly genotyped or imputed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specific association finding from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:41:21.166726Z"
+    },
+    {
+      "id": "4d8a575d-8e4a-440f-b841-388024bd5811",
+      "content_id": "9fac699b-9790-42ec-b0a8-edf34af5b0ec",
+      "claim_id": "C10",
+      "claim": "The well-known causal SNP for hemochromatosis was not directly genotyped or imputed in the UK Biobank data.",
+      "claim_type": "EXPLICIT",
+      "source": "We found an association between a diplotype covering the homeostatic iron regulator (HFE) gene and hemochromatosis, even though the well-known causal SNP was not directly genotyped or imputed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the data availability in UK Biobank.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:41:21.166726Z"
+    },
+    {
+      "id": "f78753ef-1a1e-4947-a0d5-26b80a46ec28",
+      "content_id": "9fac699b-9790-42ec-b0a8-edf34af5b0ec",
+      "claim_id": "C11",
+      "claim": "A putative association was identified between carriers of an ROH diplotype in chromosome 4 and an increase in mortality among COVID-19 patients (p-value = 1.82 \u00d7 10\u221211).",
+      "claim_type": "EXPLICIT",
+      "source": "Using a genome-wide scan, we identified a putative association between carriers of an ROH diplotype in chromosome 4 and an increase in mortality among COVID-19 patients (p-value = 1.82 \u00d7 10\u221211).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specific association finding with statistical support from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:41:21.166726Z"
+    },
+    {
+      "id": "d36d5b70-2144-48b4-b139-bfa2c9734dbb",
+      "content_id": "9fac699b-9790-42ec-b0a8-edf34af5b0ec",
+      "claim_id": "C12",
+      "claim": "ROH regions are regions of diploid chromosomes where identical-by-descent (IBD) haplotypes are inherited from each parent.",
+      "claim_type": "EXPLICIT",
+      "source": "Runs-of-homozygosity (ROH) regions are regions of diploid chromosomes where identical-by-descent (IBD) haplotypes are inherited from each parent (Ceballos et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:41:21.166726Z"
+    },
+    {
+      "id": "2c6249e6-2289-43cc-a11c-a9c23ab3ae5c",
+      "content_id": "9fac699b-9790-42ec-b0a8-edf34af5b0ec",
+      "claim_id": "C13",
+      "claim": "ROH may be linked to consanguinity and population isolation.",
+      "claim_type": "EXPLICIT",
+      "source": "Traditionally, ROH was thought to be relevant only to inbred populations, and ROH may be linked to consanguinity and population isolation (Kirin et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:41:21.166726Z"
+    },
+    {
+      "id": "7b24ac2f-a1ce-437c-9cb3-4ec9a148a436",
+      "content_id": "9fac699b-9790-42ec-b0a8-edf34af5b0ec",
+      "claim_id": "C14",
+      "claim": "A growing number of studies of large cohorts and biobanks have found that ROH may be ubiquitously present.",
+      "claim_type": "EXPLICIT",
+      "source": "However, a growing number of studies of large cohorts and biobanks have found that ROH may be ubiquitously present (Clark et al., 2019; Joshi et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:41:21.166726Z"
+    },
+    {
+      "id": "250fb9ac-e0a1-43c4-917d-7b3e58ab66b1",
+      "content_id": "9fac699b-9790-42ec-b0a8-edf34af5b0ec",
+      "claim_id": "C15",
+      "claim": "It has long been known that inbreeding is harmful to the health of offspring.",
+      "claim_type": "EXPLICIT",
+      "source": "It has long been known that inbreeding is harmful to the health of offspring (Morton et al., 1956), and several studies have suggested that the global ROH content is associated with higher risks of recessive disorders (Lencz et al., 2007; Keller et al., 2012; Christofidou et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to established knowledge.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:41:21.166726Z"
+    },
+    {
+      "id": "83ce8477-9735-4946-8cdf-69f3e4fd0e0a",
+      "content_id": "9fac699b-9790-42ec-b0a8-edf34af5b0ec",
+      "claim_id": "C16",
+      "claim": "Several studies have suggested that the global ROH content is associated with higher risks of recessive disorders.",
+      "claim_type": "EXPLICIT",
+      "source": "It has long been known that inbreeding is harmful to the health of offspring (Morton et al., 1956), and several studies have suggested that the global ROH content is associated with higher risks of recessive disorders (Lencz et al., 2007; Keller et al., 2012; Christofidou et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:41:21.166726Z"
+    },
+    {
+      "id": "6222e3b3-2994-4860-be1b-7e36e66b9a6b",
+      "content_id": "9fac699b-9790-42ec-b0a8-edf34af5b0ec",
+      "claim_id": "C17",
+      "claim": "ROHs can be related to complex traits such as height.",
+      "claim_type": "EXPLICIT",
+      "source": "ROHs can also be related to complex traits such as height (Yang et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:41:21.166726Z"
+    },
+    {
+      "id": "ad0b9040-a037-4757-b63d-3ac057b76273",
+      "content_id": "9fac699b-9790-42ec-b0a8-edf34af5b0ec",
+      "claim_id": "C18",
+      "claim": "People with extremely long ROH can be found even in outbred populations.",
+      "claim_type": "EXPLICIT",
+      "source": "A recent study (Yengo et al., 2019) revealed that people with extremely long ROH can be found even in outbred populations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a recent study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:41:21.166726Z"
+    },
+    {
+      "id": "16026aa7-7f58-459d-8a9a-0390991bde07",
+      "content_id": "9fac699b-9790-42ec-b0a8-edf34af5b0ec",
+      "claim_id": "C19",
+      "claim": "Homozygosity mapping in pedigree or inbred populations has achieved success in identifying recessive loci.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, homozygosity mapping in pedigree or inbred populations has achieved success in identifying recessive loci (Keller et al., 2012; Lander and Botstein, 1987; Leutenegger et al., 2006; Pourreza et al., 2020; Tischfield et al., 2005; Gandin et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to previous successful studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:41:21.166726Z"
+    },
+    {
+      "id": "72fd5a54-8368-4e0b-ba3e-c0a99f8418a8",
+      "content_id": "9fac699b-9790-42ec-b0a8-edf34af5b0ec",
+      "claim_id": "C20",
+      "claim": "For general outbred populations, the total number of possible ROH diplotypes at a locus is too enormous to be enumerated efficiently.",
+      "claim_type": "EXPLICIT",
+      "source": "However, for general outbred populations, the total number of possible ROH diplotypes at a locus is too enormous to be enumerated efficiently, and ROH mapping of outbred populations has remained only a theoretical possibility.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about computational limitations in the field.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:41:21.166726Z"
+    },
+    {
+      "id": "cdf3d2c0-a054-4d1c-9de0-49b518ca3e12",
+      "content_id": "9fac699b-9790-42ec-b0a8-edf34af5b0ec",
+      "claim_id": "C21",
+      "claim": "ROH mapping of outbred populations has remained only a theoretical possibility.",
+      "claim_type": "EXPLICIT",
+      "source": "However, for general outbred populations, the total number of possible ROH diplotypes at a locus is too enormous to be enumerated efficiently, and ROH mapping of outbred populations has remained only a theoretical possibility.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the state of the field before this work.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:41:21.166726Z"
+    },
+    {
+      "id": "ec3fdb04-8a93-4844-a8a7-abfcfaa89d53",
+      "content_id": "9fac699b-9790-42ec-b0a8-edf34af5b0ec",
+      "claim_id": "C22",
+      "claim": "The chance of ROH is determined by the chance of a pair of mates having IBD.",
+      "claim_type": "EXPLICIT",
+      "source": "Such ROH diplotypes are of interest because they are at the extreme of distribution: the chance of ROH is determined by the chance of a pair of mates having IBD, and such chance and also the length of IBD segments will decay quickly in outbred populations, as supported by population genetics theory (Thompson, 2013; Donnelly, 1983) and real-world data (Ralph and Coop, 2013; Naseri et al., 2019b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by population genetics theory and citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:41:21.166726Z"
+    },
+    {
+      "id": "55223392-900a-43af-a517-9515b4aff3a8",
+      "content_id": "9fac699b-9790-42ec-b0a8-edf34af5b0ec",
+      "claim_id": "C23",
+      "claim": "The chance and length of IBD segments will decay quickly in outbred populations.",
+      "claim_type": "EXPLICIT",
+      "source": "Such ROH diplotypes are of interest because they are at the extreme of distribution: the chance of ROH is determined by the chance of a pair of mates having IBD, and such chance and also the length of IBD segments will decay quickly in outbred populations, as supported by population genetics theory (Thompson, 2013; Donnelly, 1983) and real-world data (Ralph and Coop, 2013; Naseri et al., 2019b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by population genetics theory and real-world data with citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:41:21.166726Z"
+    },
+    {
+      "id": "58781fc2-0737-4735-8b82-15de35eab8be",
+      "content_id": "9fac699b-9790-42ec-b0a8-edf34af5b0ec",
+      "claim_id": "C24",
+      "claim": "Each cluster of ROH diplotypes is defined as a set of 100 consecutive homozygous sites that are shared among over 100 individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "Each cluster of ROH diplotypes is defined as a set of 100 consecutive homozygous sites that are shared among over 100 individuals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological definition used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:41:21.166726Z"
+    },
+    {
+      "id": "d4281c61-0489-4aa4-9ec0-d14e1f2bec71",
+      "content_id": "9fac699b-9790-42ec-b0a8-edf34af5b0ec",
+      "claim_id": "C25",
+      "claim": "A total of 1,880,826 ROH clusters were identified in all 22 autosomal chromosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "A total of 1,880,826 ROH clusters (shared among at least 100 individuals and extending at least 100 consecutive sites) were identified in all 22 autosomal chromosomes (Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of data from the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:41:21.166726Z"
+    },
+    {
+      "id": "5814ed0f-f90c-4af9-91b9-a7cc1ec1469c",
+      "content_id": "9fac699b-9790-42ec-b0a8-edf34af5b0ec",
+      "claim_id": "C26",
+      "claim": "The average length of ROH clusters is 553,095 bp (~0.55 cM).",
+      "claim_type": "EXPLICIT",
+      "source": "The average length of these ROHs is 553,095 bp (~0.55 cM).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical summary of the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:41:21.166726Z"
+    },
+    {
+      "id": "fa3fc527-08d5-4d78-8868-8a76b2a7e379",
+      "content_id": "9fac699b-9790-42ec-b0a8-edf34af5b0ec",
+      "claim_id": "C27",
+      "claim": "The number of ROH clusters in chromosome 6 is the highest.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the number of ROH clusters in chromosome 6 is the highest.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:41:21.166726Z"
+    },
+    {
+      "id": "5178ada3-1fe1-4e13-8d4b-63c62dfcd0ff",
+      "content_id": "9fac699b-9790-42ec-b0a8-edf34af5b0ec",
+      "claim_id": "C28",
+      "claim": "The high number of ROH clusters in chromosome 6 is mainly due to the excessive number of ROH clusters in the MHC region (65,458).",
+      "claim_type": "EXPLICIT",
+      "source": "This is mainly due to the excessive number of ROH clusters in the MHC region (65,458).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the data showing concentration in the MHC region.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:41:21.166726Z"
+    },
+    {
+      "id": "429f4be0-a6fb-4a63-965b-3ee2464ac313",
+      "content_id": "9fac699b-9790-42ec-b0a8-edf34af5b0ec",
+      "claim_id": "C29",
+      "claim": "A peak region in chromosome 2 (chr2:135755899\u2013136827560) has been reported to harbor a high selection signal.",
+      "claim_type": "EXPLICIT",
+      "source": "A peak region in chromosome 2 (chr2:135755899\u2013136827560) has been reported to harbor a high selection signal (Browning and Browning, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:41:21.166726Z"
+    },
+    {
+      "id": "edbe1ec2-12bf-417c-b69b-7214b3463062",
+      "content_id": "9fac699b-9790-42ec-b0a8-edf34af5b0ec",
+      "claim_id": "C30",
+      "claim": "The chromosome 2 peak region contains the lactase gene (LCT) gene which includes a variant selected for lactose tolerance in the European population.",
+      "claim_type": "EXPLICIT",
+      "source": "This region contains the lactase gene (LCT) gene which includes a variant selected for lactose tolerance in the European population (Itan et al., 2009), though the current understanding of the selection pressure is more nuanced (Mathieson and Terhorst, 2022; Evershed et al., 2022; Le et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:41:21.166726Z"
+    },
+    {
+      "id": "7e682fbf-fab5-4676-ba75-6672592d7643",
+      "content_id": "9fac699b-9790-42ec-b0a8-edf34af5b0ec",
+      "claim_id": "C31",
+      "claim": "The peak in chromosome 8 (chr8:42531565\u201342629520) contains two known genes, CHRNB3 and CHRNA6.",
+      "claim_type": "EXPLICIT",
+      "source": "The peak in chromosome 8 (chr8:42531565\u201342629520) contains two known genes, CHRNB3 and CHRNA6.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about gene content in a genomic region.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:41:21.166726Z"
+    },
+    {
+      "id": "8b17d810-bef9-40f8-9576-977af09baa72",
+      "content_id": "9fac699b-9790-42ec-b0a8-edf34af5b0ec",
+      "claim_id": "C32",
+      "claim": "Previous studies have demonstrated the significant role of the CHRNB3\u2013CHRNA6 gene cluster on chromosome 8 in nicotine dependence.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies have demonstrated the significant role of the CHRNB3\u2013CHRNA6 gene cluster on chromosome 8 in nicotine dependence (Wen et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:41:21.166726Z"
+    },
+    {
+      "id": "37bcc190-df34-422d-90a2-5e0d0eee9ddb",
+      "content_id": "9fac699b-9790-42ec-b0a8-edf34af5b0ec",
+      "claim_id": "C33",
+      "claim": "An earlier study has identified strong evidence for selection in the CHRNB3\u2013CHRNA6 region.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, an earlier study has identified strong evidence for selection in the CHRNB3\u2013CHRNA6 region (Sadler et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:41:21.166726Z"
+    },
+    {
+      "id": "e13f0aa0-fa10-43b9-a7a3-c3a111e086bc",
+      "content_id": "9fac699b-9790-42ec-b0a8-edf34af5b0ec",
+      "claim_id": "C34",
+      "claim": "Some clusters comprise more than a hundred thousand individuals sharing the same ROH consensus.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, some clusters comprise more than a hundred thousand individuals sharing the same ROH consensus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:41:21.166726Z"
+    },
+    {
+      "id": "f51d0522-22fb-4c09-a0c3-7c81fe8094af",
+      "content_id": "9fac699b-9790-42ec-b0a8-edf34af5b0ec",
+      "claim_id": "C35",
+      "claim": "The high rate of ROH clusters in the MHC region may be attributed to the high density of markers and low recombination rates.",
+      "claim_type": "EXPLICIT",
+      "source": "The high rate of ROH clusters in the MHC region may be attributed to the high density of markers and low recombination rates (Traherne, 2008; Lam et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation supported by citations.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:41:21.166726Z"
+    },
+    {
+      "id": "5aedc060-37f3-4f4d-b5a9-afe55c9bbdb5",
+      "content_id": "9fac699b-9790-42ec-b0a8-edf34af5b0ec",
+      "claim_id": "C36",
+      "claim": "The correlation coefficient between combined ROH classes in the European population and the ROH clusters in UKBB was 0.54.",
+      "claim_type": "EXPLICIT",
+      "source": "The correlation coefficient between combined ROH classes in the European population (Pemberton et al., 2012) and the ROH clusters in UKBB was 0.54.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from comparing datasets.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:41:21.166726Z"
+    },
+    {
+      "id": "2f6ea88a-3f8b-4109-81a8-448636cab152",
+      "content_id": "9fac699b-9790-42ec-b0a8-edf34af5b0ec",
+      "claim_id": "C37",
+      "claim": "61 associations passed the Bonferroni-corrected p-value threshold of 10\u221212.",
+      "claim_type": "EXPLICIT",
+      "source": "This identified 61 associations passing the Bonferroni-corrected p-value threshold of 10\u221212.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:41:21.166726Z"
+    },
+    {
+      "id": "a766b609-178c-4fed-8d02-8e4a95116bde",
+      "content_id": "9fac699b-9790-42ec-b0a8-edf34af5b0ec",
+      "claim_id": "C38",
+      "claim": "The most prominent associations found are ROH diplotypes in the HLA region with autoimmune diseases.",
+      "claim_type": "EXPLICIT",
+      "source": "Not surprisingly, the most prominent associations we found are ROH diplotypes in the HLA region with autoimmune diseases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary finding from the association analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:41:21.166726Z"
+    },
+    {
+      "id": "49413aad-26d7-49b7-b771-a4213c971fbc",
+      "content_id": "9fac699b-9790-42ec-b0a8-edf34af5b0ec",
+      "claim_id": "C39",
+      "claim": "Malabsorption/coeliac disease, psoriasis, rheumatoid arthritis, and multiple sclerosis have the strongest association with loci in the HLA region.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that malabsorption/coeliac disease, psoriasis, rheumatoid arthritis, and multiple sclerosis have the strongest association with loci in the HLA region.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specific finding from the association analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:41:21.166726Z"
+    },
+    {
+      "id": "022f0a01-a874-4844-8273-2909bd068bac",
+      "content_id": "9fac699b-9790-42ec-b0a8-edf34af5b0ec",
+      "claim_id": "C40",
+      "claim": "These results are largely consistent with known literature.",
+      "claim_type": "EXPLICIT",
+      "source": "These results are largely consistent with known literature (Dieli-Crimi et al., 2015; Gutierrez-Achury et al., 2015; Kurk\u00f3 et al., 2013; Bhalerao and Bowcock, 1998; Baranzini and Oksenberg, 2017; Canela-Xandri et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison with previous literature supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:41:21.166726Z"
+    },
+    {
+      "id": "d219a194-8de8-4bc9-9a23-15762def6218",
+      "content_id": "9fac699b-9790-42ec-b0a8-edf34af5b0ec",
+      "claim_id": "C41",
+      "claim": "One of the most significant associations identified is the association between the ROH diplotype at chr6:25988167\u201326122453 and hemochromatosis (p-value = 9.16 \u00d7 10\u2212120).",
+      "claim_type": "EXPLICIT",
+      "source": "One of the most significant associations we identified is the association between the ROH diplotype at chr6:25988167\u201326122453 and hemochromatosis (p-value = 9.16 \u00d7 10\u2212120).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specific association finding with statistical support.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:41:21.166726Z"
+    },
+    {
+      "id": "9ed7481d-0732-40bb-a3a4-367138552c84",
+      "content_id": "9fac699b-9790-42ec-b0a8-edf34af5b0ec",
+      "claim_id": "C42",
+      "claim": "The frequency of the ROH diplotype associated with hemochromatosis is only 0.02%.",
+      "claim_type": "EXPLICIT",
+      "source": "The frequency of the ROH diplotype is only 0.02% and the odds ratio of having the disease for the carrier is 102.21.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical description of the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:41:21.166726Z"
+    },
+    {
+      "id": "263ed593-3f41-4816-a54e-68206d660ab9",
+      "content_id": "9fac699b-9790-42ec-b0a8-edf34af5b0ec",
+      "claim_id": "C43",
+      "claim": "The odds ratio of having hemochromatosis for the carrier of the ROH diplotype is 102.21.",
+      "claim_type": "EXPLICIT",
+      "source": "The frequency of the ROH diplotype is only 0.02% and the odds ratio of having the disease for the carrier is 102.21.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from the association analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:41:21.166726Z"
+    },
+    {
+      "id": "0516b560-9a2d-4050-a4df-7d343d4dca84",
+      "content_id": "9fac699b-9790-42ec-b0a8-edf34af5b0ec",
+      "claim_id": "C44",
+      "claim": "Hemochromatosis is an inherited disorder in which iron levels in the body slowly build up over several years.",
+      "claim_type": "EXPLICIT",
+      "source": "Hemochromatosis is an inherited disorder in which iron levels in the body slowly build up over several years.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established medical knowledge about the disease.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:41:21.166726Z"
+    },
+    {
+      "id": "ede9aa78-1aea-4d47-abf0-f7f5bb30909d",
+      "content_id": "9fac699b-9790-42ec-b0a8-edf34af5b0ec",
+      "claim_id": "C45",
+      "claim": "The gene HFE (chr6:26087509\u201326095469) is a well-known recessive locus for hemochromatosis.",
+      "claim_type": "EXPLICIT",
+      "source": "The gene HFE (chr6:26087509\u201326095469) is a well-known recessive locus for this disease (Pietrangelo, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:41:21.166726Z"
+    },
+    {
+      "id": "92ccd129-6c0d-469d-ad24-bf0ee480b272",
+      "content_id": "9fac699b-9790-42ec-b0a8-edf34af5b0ec",
+      "claim_id": "C46",
+      "claim": "The C282Y polymorphism (rs1800562, chr6:26092913) in HFE is the most penetrant.",
+      "claim_type": "EXPLICIT",
+      "source": "The C282Y polymorphism (rs1800562, chr6:26092913) in HFE is the most penetrant but other polymorphisms with lesser penetrance are also known.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the genetic basis of hemochromatosis.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:41:21.166726Z"
+    },
+    {
+      "id": "8e023ea6-ac14-45fa-8868-cc3f81657f7b",
+      "content_id": "9fac699b-9790-42ec-b0a8-edf34af5b0ec",
+      "claim_id": "C47",
+      "claim": "The minor allele frequency of the SNP rs1800562 is 6% in the European population.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the minor allele frequency of the SNP rs1800562 is 6% in the European population but it is not genotyped (and is also not available in the imputed panel) in the UK Biobank data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about allele frequency in a population.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:41:21.166726Z"
+    },
+    {
+      "id": "c755ebba-15b7-45bf-a76b-246274f81533",
+      "content_id": "9fac699b-9790-42ec-b0a8-edf34af5b0ec",
+      "claim_id": "C48",
+      "claim": "The SNP rs1800562 is not genotyped and is also not available in the imputed panel in the UK Biobank data.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the minor allele frequency of the SNP rs1800562 is 6% in the European population but it is not genotyped (and is also not available in the imputed panel) in the UK Biobank data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about data availability in UK Biobank.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:41:21.166726Z"
+    },
+    {
+      "id": "b532cc8a-a925-4180-bf9d-960fd4d22136",
+      "content_id": "9fac699b-9790-42ec-b0a8-edf34af5b0ec",
+      "claim_id": "C49",
+      "claim": "The hemochromatosis association signal has been completely missing in the Neale Lab results.",
+      "claim_type": "EXPLICIT",
+      "source": "As a result, this association signal has been completely missing in the Neale Lab results.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation about the absence of a signal in another analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:41:21.166726Z"
+    },
+    {
+      "id": "7a7e051d-79ee-4256-8bc7-84e4518845a0",
+      "content_id": "9fac699b-9790-42ec-b0a8-edf34af5b0ec",
+      "claim_id": "C50",
+      "claim": "In another study, the SNP rs1800562 has been imputed and a specific association study for the recessive effect between the homozygous alleles of rs1800562 and hemochromatosis has been reported.",
+      "claim_type": "EXPLICIT",
+      "source": "In another study, the SNP has been imputed and a specific association study for the recessive effect between the homozygous alleles of rs1800562 and hemochromatosis has been reported (Tamosauskaite et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to another study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:41:21.166726Z"
+    },
+    {
+      "id": "1682f1ff-0c3c-4a97-a96e-f1940f280acb",
+      "content_id": "9fac699b-9790-42ec-b0a8-edf34af5b0ec",
+      "claim_id": "C51",
+      "claim": "The most prominent ROH diplotype association outside of the HLA region is at chr1:151515188\u2013151902494 with eczema/dermatitis.",
+      "claim_type": "EXPLICIT",
+      "source": "The most prominent one is an ROH diplotype at chr1:151515188\u2013151902494 with eczema/dermatitis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specific finding from the association analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:41:21.166726Z"
+    },
+    {
+      "id": "c3b932a5-2aec-4889-a0c1-6683adf243d8",
+      "content_id": "9fac699b-9790-42ec-b0a8-edf34af5b0ec",
+      "claim_id": "C52",
+      "claim": "The eczema/dermatitis signal overlaps with the GWAS finding of rs4845604 at chr1:151829204.",
+      "claim_type": "EXPLICIT",
+      "source": "This signal overlaps with the GWAS finding of rs4845604 at chr1:151829204 (Johansson et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison with previous GWAS results supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:41:21.166726Z"
+    },
+    {
+      "id": "67d4269a-a12a-4e6d-a317-1e6d47964298",
+      "content_id": "9fac699b-9790-42ec-b0a8-edf34af5b0ec",
+      "claim_id": "C53",
+      "claim": "The most significant ROH region associated with COVID-19 mortality is located in chr4:106318456\u2013106483898 (0.114 cM) with the p-value 1.63 \u00d7 10\u221210.",
+      "claim_type": "EXPLICIT",
+      "source": "The most significant ROH region is located in chr4:106318456\u2013106483898 (0.114 cM) with the p-value 1.63 \u00d7 10\u221210.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specific finding from the COVID-19 mortality association analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:41:21.166726Z"
+    },
+    {
+      "id": "0536ccec-38c4-403a-ac0d-b7e7cbf63a83",
+      "content_id": "9fac699b-9790-42ec-b0a8-edf34af5b0ec",
+      "claim_id": "C54",
+      "claim": "4389 individuals share the diplotypes associated with COVID-19 mortality and 76 of them have tested positive for COVID-19.",
+      "claim_type": "EXPLICIT",
+      "source": "4389 individuals share the diplotypes and 76 of them have tested positive for COVID-19.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the data for the COVID-19 association.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:41:21.166726Z"
+    },
+    {
+      "id": "c788cb7a-1313-48ca-90d9-36f439223dc1",
+      "content_id": "9fac699b-9790-42ec-b0a8-edf34af5b0ec",
+      "claim_id": "C55",
+      "claim": "Eleven persons who carried the same ROH consensus and had tested positive for COVID-19, died in 2020.",
+      "claim_type": "EXPLICIT",
+      "source": "Eleven persons who carried the same ROH consensus and had tested positive, died in 2020.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the data for the COVID-19 mortality association.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:41:21.166726Z"
+    },
+    {
+      "id": "42a063c7-845b-429f-ac01-6f9c6f911268",
+      "content_id": "9fac699b-9790-42ec-b0a8-edf34af5b0ec",
+      "claim_id": "C56",
+      "claim": "Carriers of the chr4 diplotype have a fivefold mortality compared to non-carriers among COVID-19 patients.",
+      "claim_type": "EXPLICIT",
+      "source": "In other words, carriers of this diplotype have a fivefold mortality compared to non-carriers among COVID-19 patients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical inference from the data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:41:21.166726Z"
+    },
+    {
+      "id": "2843f267-ea89-4ab5-99bf-744dc7633d33",
+      "content_id": "9fac699b-9790-42ec-b0a8-edf34af5b0ec",
+      "claim_id": "C57",
+      "claim": "The reported p-value from GMMAT mixed model regression for the chr4 diplotype and COVID-19 mortality was 1.82 \u00d7 10\u221211.",
+      "claim_type": "EXPLICIT",
+      "source": "We used the GMMAT (Hoare, 1961) mixed model regression to validate the association of this diplotype while adjusting for age, gender, and genetic similarity (see Methods section). The reported p-value was 1.82 \u00d7 10\u221211 which is even smaller than the p-value from the chi-square test.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the statistical validation analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:41:21.166726Z"
+    },
+    {
+      "id": "844ddb10-d22e-4309-9517-84ec73a132e6",
+      "content_id": "9fac699b-9790-42ec-b0a8-edf34af5b0ec",
+      "claim_id": "C58",
+      "claim": "The region associated with COVID-19 mortality includes the PPA2 gene.",
+      "claim_type": "EXPLICIT",
+      "source": "The region includes the PPA2 gene.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about gene content in the genomic region.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:41:21.166726Z"
+    },
+    {
+      "id": "eca24e21-672b-4eb8-b8b5-b98bebf7abeb",
+      "content_id": "9fac699b-9790-42ec-b0a8-edf34af5b0ec",
+      "claim_id": "C59",
+      "claim": "The PPA2 gene product is an inorganic pyrophosphatase located in the mitochondrion.",
+      "claim_type": "EXPLICIT",
+      "source": "The gene product is an inorganic pyrophosphatase located in the mitochondrion (Curbo et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the gene supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:41:21.166726Z"
+    },
+    {
+      "id": "7f0c28db-3dc9-42e7-a7b2-f9e839f9aa3f",
+      "content_id": "9fac699b-9790-42ec-b0a8-edf34af5b0ec",
+      "claim_id": "C60",
+      "claim": "Missense mutations in the PPA2 gene are reported to cause sudden unexpected cardiac arrest in infancy.",
+      "claim_type": "EXPLICIT",
+      "source": "Missense mutations in this gene are reported to cause sudden unexpected cardiac arrest in infancy (Guimier et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:41:21.166726Z"
+    },
+    {
+      "id": "052538af-a699-4a86-8347-85ec321467bb",
+      "content_id": "9fac699b-9790-42ec-b0a8-edf34af5b0ec",
+      "claim_id": "C61",
+      "claim": "The PPA2 gene has been recently implicated in COVID-19 through an integrated analysis of GWAS of European patients and lung expressed quantitative trait loci (eQTL) data by the summary-data-based (SMR) method.",
+      "claim_type": "EXPLICIT",
+      "source": "The PPA2 gene has also been recently implicated in COVID-19 through an integrated analysis of GWAS of European patients and lung expressed quantitative trait loci (eQTL) data by the summary-data-based (SMR) method (Zong and Li, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to recent work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:41:21.166726Z"
+    },
+    {
+      "id": "2e1b5045-4ad3-4140-8bb3-4e0d50894d32",
+      "content_id": "9fac699b-9790-42ec-b0a8-edf34af5b0ec",
+      "claim_id": "C62",
+      "claim": "The identified region linked to COVID-19 mortality overlaps with the ARHGEF38 gene.",
+      "claim_type": "EXPLICIT",
+      "source": "The identified region linked to COVID-19 mortality overlaps also with the ARHGEF38 gene.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about gene content in the genomic region.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:41:21.166726Z"
+    },
+    {
+      "id": "df362cfb-8e4f-43dc-b723-f4283cde0b10",
+      "content_id": "9fac699b-9790-42ec-b0a8-edf34af5b0ec",
+      "claim_id": "C63",
+      "claim": "A genetic variant within the ARHGEF38 gene (rs72670002) has been reported to be significantly associated with severe illness from COVID-19 in a recent study that used 24,202 cases of critical COVID-19.",
+      "claim_type": "EXPLICIT",
+      "source": "A genetic variant within the gene (rs72670002) has been reported to be significantly associated with severe illness from COVID-19 in a recent study that used 24,202 cases of critical COVID-19 (Pairo-Castineira et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to recent work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:41:21.166726Z"
+    },
+    {
+      "id": "ba4c7c14-2dd5-4837-855b-1114a3b21e21",
+      "content_id": "9fac699b-9790-42ec-b0a8-edf34af5b0ec",
+      "claim_id": "C64",
+      "claim": "Other nearby genes within a 200-kb range of the COVID-19 mortality-associated region include TET2, INTS12, and GSTCD.",
+      "claim_type": "EXPLICIT",
+      "source": "Other nearby genes within a 200-kb range include TET2, INTS12, and GSTCD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about gene content in the genomic region.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:41:21.166726Z"
+    },
+    {
+      "id": "b848e372-c19c-4889-b43d-3f9359eed47f",
+      "content_id": "9fac699b-9790-42ec-b0a8-edf34af5b0ec",
+      "claim_id": "C65",
+      "claim": "The running time of the ROH-DICE algorithm is linear to the size of the genotype panel.",
+      "claim_type": "EXPLICIT",
+      "source": "The running time of the algorithm is linear to the size of the genotype panel which enables fast processing of millions of individuals without requiring extravagant resources.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the computational complexity of the algorithm.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:41:21.166726Z"
+    },
+    {
+      "id": "12ff5034-6e1d-4a79-8688-d9a778995dda",
+      "content_id": "9fac699b-9790-42ec-b0a8-edf34af5b0ec",
+      "claim_id": "C66",
+      "claim": "ROH-DICE enables fast processing of millions of individuals without requiring extravagant resources.",
+      "claim_type": "EXPLICIT",
+      "source": "The running time of the algorithm is linear to the size of the genotype panel which enables fast processing of millions of individuals without requiring extravagant resources.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the practical implications of the algorithm's efficiency.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:41:21.166726Z"
+    },
+    {
+      "id": "314b0bdb-4931-45b0-84e5-c7a3081a2bf9",
+      "content_id": "9fac699b-9790-42ec-b0a8-edf34af5b0ec",
+      "claim_id": "C67",
+      "claim": "Large ROH clusters can be used to identify signatures of selection in humans or other species.",
+      "claim_type": "EXPLICIT",
+      "source": "Large ROH clusters can be used to identify signatures of selection in humans or other species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about potential applications of the method.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:41:21.166726Z"
+    },
+    {
+      "id": "2d24a9e3-bf70-4560-82dd-151542b4590d",
+      "content_id": "9fac699b-9790-42ec-b0a8-edf34af5b0ec",
+      "claim_id": "C68",
+      "claim": "Positive selection reduces haplotype diversity, increasing homozygosity around the target locus, resulting in higher frequencies of ROH in regions containing selection loci.",
+      "claim_type": "EXPLICIT",
+      "source": "Positive selection reduces haplotype diversity, increasing homozygosity around the target locus, resulting in higher frequencies of ROH in regions containing selection loci (Pemberton et al., 2012; Sabeti et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about selection supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:41:21.166726Z"
+    },
+    {
+      "id": "dc30c951-0f41-462f-beff-c7ecfdad3ac5",
+      "content_id": "9fac699b-9790-42ec-b0a8-edf34af5b0ec",
+      "claim_id": "C69",
+      "claim": "Excessive ROH regions can be linked to selective sweeps and have been found to coincide with positive selection in humans and other species.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, excessive ROH regions can be linked to selective sweeps and have been found to coincide with positive selection in humans (Pemberton et al., 2012), and other species (Hewett et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:41:21.166726Z"
+    },
+    {
+      "id": "d7a44a4b-0f0a-4af0-9834-22fbbf7d292b",
+      "content_id": "9fac699b-9790-42ec-b0a8-edf34af5b0ec",
+      "claim_id": "C70",
+      "claim": "Three large ROH clusters in chromosomes 2, 6, and 8 of UKBB overlap with known hotspots for selection signals.",
+      "claim_type": "EXPLICIT",
+      "source": "Three large ROH clusters in chromosomes 2, 6, and 8 of UKBB overlap with known hotspots for selection signals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from comparing the data with known selection hotspots.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:41:21.166726Z"
+    },
+    {
+      "id": "a7b1a9af-2a43-4838-b715-50702f6f7ca5",
+      "content_id": "9fac699b-9790-42ec-b0a8-edf34af5b0ec",
+      "claim_id": "C71",
+      "claim": "The existing GWAS are mainly testing the additive effects of single SNPs, while ROH-DICE is testing the recessive effects of relatively long haplotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "The existing GWAS are mainly testing the additive effects of single SNPs, while we are testing the recessive effects of relatively long haplotypes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison of the genetic effects being tested by different methods.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:41:21.166726Z"
+    },
+    {
+      "id": "b2e8d53b-1f2e-43d3-8858-29e4193152f5",
+      "content_id": "9fac699b-9790-42ec-b0a8-edf34af5b0ec",
+      "claim_id": "C72",
+      "claim": "The ROH-DICE analysis is similar to traditional family-based homozygosity mapping, but at a population scale.",
+      "claim_type": "EXPLICIT",
+      "source": "In a sense, our analysis is similar to traditional family-based homozygosity mapping (Lander and Botstein, 1987), but at a population scale.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison with traditional methods supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:41:21.166726Z"
+    },
+    {
+      "id": "8089d876-89b1-4617-b0e5-4fd20c7051ae",
+      "content_id": "9fac699b-9790-42ec-b0a8-edf34af5b0ec",
+      "claim_id": "C73",
+      "claim": "ROH-DICE is not meant to replace regular GWAS, but to complement it.",
+      "claim_type": "EXPLICIT",
+      "source": "It is important to note that ROH-DICE is not meant to replace regular GWAS, but to complement it.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the intended use of the method.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:41:21.166726Z"
+    },
+    {
+      "id": "3f8de059-0f13-47df-8736-d998a93deea1",
+      "content_id": "9fac699b-9790-42ec-b0a8-edf34af5b0ec",
+      "claim_id": "C74",
+      "claim": "When the causal variant is located in a long ROH diplotype shared by many individuals (ROH diplotype clusters), ROH-DICE outperforms regular GWAS.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, when the causal variant is located in a long ROH diplotype shared by many individuals (ROH diplotype clusters), ROH-DICE outperforms regular GWAS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the simulation study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:41:21.166726Z"
+    },
+    {
+      "id": "c99c495f-5232-4b60-a1c1-f956b1b7dfa1",
+      "content_id": "9fac699b-9790-42ec-b0a8-edf34af5b0ec",
+      "claim_id": "C75",
+      "claim": "Genetic principal components can reduce the confounding effect brought on by population structure but it may be insufficient to completely eliminate the effects of recent demographic structure and the local environment.",
+      "claim_type": "EXPLICIT",
+      "source": "Genetic principal components can reduce the confounding effect brought on by population structure but it may be insufficient to completely eliminate the effects of recent demographic structure and the local environment (Zaidi and Mathieson, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about limitations of the method supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:41:21.166726Z"
+    },
+    {
+      "id": "e5de76fe-3260-42b9-9784-ad046c4a4c21",
+      "content_id": "9fac699b-9790-42ec-b0a8-edf34af5b0ec",
+      "claim_id": "C76",
+      "claim": "Individuals sharing excessive ROH diplotypes may share similar environments since they are closely related and reside close to one another.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, individuals sharing excessive ROH diplotypes may share similar environments since they are closely related and reside close to one another.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about potential confounding factors.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:41:21.166726Z"
+    },
+    {
+      "id": "8f11c397-4de5-411c-9925-fb481756ee4f",
+      "content_id": "9fac699b-9790-42ec-b0a8-edf34af5b0ec",
+      "claim_id": "C77",
+      "claim": "Some of the reported GWAS signals may not be attributable to ROH since related individuals were not ruled out.",
+      "claim_type": "EXPLICIT",
+      "source": "Since we did not rule out related individuals, some of the reported GWAS signals may not be attributable to ROH.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an acknowledgment of a limitation in the study design.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:41:21.166726Z"
+    },
+    {
+      "id": "609a50f1-7910-4ffc-ba48-36093474e89b",
+      "content_id": "9fac699b-9790-42ec-b0a8-edf34af5b0ec",
+      "claim_id": "C78",
+      "claim": "The time complexity of the ROH-DICE algorithm is O(NM), where N denotes the number of variant sites and M denotes the number of individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "The time complexity of this algorithm is O(NM), where N denotes the number of variant sites and M denotes the number of individuals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the computational complexity of the algorithm.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:41:21.166726Z"
+    },
+    {
+      "id": "a10a1996-5639-4df3-9dff-c5812359e320",
+      "content_id": "9fac699b-9790-42ec-b0a8-edf34af5b0ec",
+      "claim_id": "C79",
+      "claim": "ROH-DICE processed all UK Biobank chromosomes in parallel with a wall clock time of 18 hr and 54 min (total CPU hours of ~242.5 hr).",
+      "claim_type": "EXPLICIT",
+      "source": "This was achieved by running the ROH-DICE program, with a wall clock time of 18 hr and 54 min where the program was executed for all chromosomes in parallel (total CPU hours of ~242.5 hr).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a report of the computational performance of the method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:41:21.166726Z"
+    },
+    {
+      "id": "57c33663-8cef-4e6c-8787-e3f3e50bd697",
+      "content_id": "9fac699b-9790-42ec-b0a8-edf34af5b0ec",
+      "claim_id": "C80",
+      "claim": "The maximum residence size for each chromosome was approximately 180 MB.",
+      "claim_type": "EXPLICIT",
+      "source": "The maximum residence size for each chromosome was approximately 180 MB.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a report of the memory requirements of the method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:41:21.166726Z"
+    },
+    {
+      "id": "6814a769-4526-442f-ab0c-efefb5c2d659",
+      "content_id": "9fac699b-9790-42ec-b0a8-edf34af5b0ec",
+      "claim_id": "C81",
+      "claim": "56,972 people with self-reported non-British ethnicity in UK Biobank were filtered out.",
+      "claim_type": "EXPLICIT",
+      "source": "56,972 people with self-reported non-British ethnicity in UK Biobank were filtered out.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the data filtering process.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:41:21.166726Z"
+    },
+    {
+      "id": "dc1daed1-b911-435c-8f21-2ce94b5f8139",
+      "content_id": "9fac699b-9790-42ec-b0a8-edf34af5b0ec",
+      "claim_id": "C82",
+      "claim": "On average ~18% of sites are heterozygous.",
+      "claim_type": "EXPLICIT",
+      "source": "On average ~18% of sites are heterozygous, and thus for a pair of 100 sites genotype sequences, there is a very small probability that they will be mapped to the same compressed haplotype.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical observation about the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:41:21.166726Z"
+    },
+    {
+      "id": "291ada47-f969-4805-b148-828f9acd3f5b",
+      "content_id": "9fac699b-9790-42ec-b0a8-edf34af5b0ec",
+      "claim_id": "C83",
+      "claim": "For a pair of 100 sites genotype sequences, there is a very small probability that they will be mapped to the same compressed haplotype.",
+      "claim_type": "EXPLICIT",
+      "source": "On average ~18% of sites are heterozygous, and thus for a pair of 100 sites genotype sequences, there is a very small probability that they will be mapped to the same compressed haplotype.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about false positive rates based on the heterozygosity rate.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:41:21.166726Z"
+    },
+    {
+      "id": "9bee67a6-07fd-41db-8c1f-c07a025b4206",
+      "content_id": "9fac699b-9790-42ec-b0a8-edf34af5b0ec",
+      "claim_id": "C84",
+      "claim": "The rate of false positives should be low.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the rate of false positives should be low.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the method's specificity.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:41:21.166726Z"
+    },
+    {
+      "id": "d6ab138b-7d52-42b4-9b28-7e3fbfc36e5b",
+      "content_id": "9fac699b-9790-42ec-b0a8-edf34af5b0ec",
+      "claim_id": "C85",
+      "claim": "The detection power for W = 5 and L = 50 without any error was 79.6%.",
+      "claim_type": "EXPLICIT",
+      "source": "The detection power for W = 5 and L = 50 without any error was 79.6% whereas the power for the data with the genotyping error was 79.1%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the simulation study evaluating the method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:41:21.166726Z"
+    },
+    {
+      "id": "36385731-9851-4073-8049-571623c03363",
+      "content_id": "9fac699b-9790-42ec-b0a8-edf34af5b0ec",
+      "claim_id": "C86",
+      "claim": "The power for the data with 0.1% genotyping error was 79.1%.",
+      "claim_type": "EXPLICIT",
+      "source": "The detection power for W = 5 and L = 50 without any error was 79.6% whereas the power for the data with the genotyping error was 79.1%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the simulation study evaluating robustness to errors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:41:21.166726Z"
+    },
+    {
+      "id": "18ab102b-6733-4aa7-bd16-ac4da46bbc3b",
+      "content_id": "9fac699b-9790-42ec-b0a8-edf34af5b0ec",
+      "claim_id": "C87",
+      "claim": "The approach is robust against genotyping errors up to 0.1%.",
+      "claim_type": "EXPLICIT",
+      "source": "The results show that our approach is robust against genotyping errors up to 0.1%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the simulation study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:41:21.166726Z"
+    },
+    {
+      "id": "a2447b05-112b-4a7a-a32e-60f62bb16cf4",
+      "content_id": "9fac699b-9790-42ec-b0a8-edf34af5b0ec",
+      "claim_id": "C88",
+      "claim": "The accuracy for W = 5 and L = 50 was 55%.",
+      "claim_type": "EXPLICIT",
+      "source": "For example for W = 5 and L = 50, the accuracy was 55% whereas the accuracy for W = 20 and L = 100 was 63%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the simulation study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:41:21.166726Z"
+    },
+    {
+      "id": "2c597d2f-eeb9-42ab-810a-c9e1fe04e39f",
+      "content_id": "9fac699b-9790-42ec-b0a8-edf34af5b0ec",
+      "claim_id": "C89",
+      "claim": "The accuracy for W = 20 and L = 100 was 63%.",
+      "claim_type": "EXPLICIT",
+      "source": "For example for W = 5 and L = 50, the accuracy was 55% whereas the accuracy for W = 20 and L = 100 was 63%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the simulation study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:41:21.166726Z"
+    },
+    {
+      "id": "474c5aa0-6628-4a21-a63b-b7f92d33cb27",
+      "content_id": "9fac699b-9790-42ec-b0a8-edf34af5b0ec",
+      "claim_id": "C90",
+      "claim": "The accuracy increases with increasing the target lengths and widths.",
+      "claim_type": "EXPLICIT",
+      "source": "The accuracy increases with increasing the target lengths and widths.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the simulation results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:41:21.166726Z"
+    },
+    {
+      "id": "f756ec83-b52f-461a-99dc-8d35cd29176b",
+      "content_id": "9fac699b-9790-42ec-b0a8-edf34af5b0ec",
+      "claim_id": "C91",
+      "claim": "The power for W = 100 and L = 100 was 55.96% and accuracy 52.84%.",
+      "claim_type": "EXPLICIT",
+      "source": "The power was 55.96% and accuracy 52.84%, while 58.97% of the reported clusters overlap 50% or more with a ground truth cluster.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the simulation study with 1000 individuals.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:41:21.166726Z"
+    },
+    {
+      "id": "12b3bdde-e5b6-4ed4-a639-ed349c6e0f00",
+      "content_id": "9fac699b-9790-42ec-b0a8-edf34af5b0ec",
+      "claim_id": "C92",
+      "claim": "58.97% of the reported clusters overlap 50% or more with a ground truth cluster.",
+      "claim_type": "EXPLICIT",
+      "source": "The power was 55.96% and accuracy 52.84%, while 58.97% of the reported clusters overlap 50% or more with a ground truth cluster.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the simulation study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:41:21.166726Z"
+    },
+    {
+      "id": "a02abb8e-8687-4774-ad5a-de9eba6932a6",
+      "content_id": "9fac699b-9790-42ec-b0a8-edf34af5b0ec",
+      "claim_id": "C93",
+      "claim": "ROH-DICE outperforms GWAS when a phenotype is associated with a set of consecutive homozygous sites.",
+      "claim_type": "EXPLICIT",
+      "source": "The figure demonstrates that ROH-DICE outperforms GWAS when a phenotype is associated with a set of consecutive homozygous sites.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion from the simulation study shown in Figure 1\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:41:21.166726Z"
+    },
+    {
+      "id": "69a2a23d-968d-4490-a6a6-0f19fb6192c6",
+      "content_id": "9fac699b-9790-42ec-b0a8-edf34af5b0ec",
+      "claim_id": "C94",
+      "claim": "The maximum effect size of 0.3 resulted in ROH clusters achieving a power of 100%.",
+      "claim_type": "EXPLICIT",
+      "source": "The maximum effect size of 0.3 resulted in ROH clusters achieving a power of 100%, whereas the additive model only achieved 11%, and the dominant and recessive models achieved 52% and 70%, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the power analysis simulation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:41:21.166726Z"
+    },
+    {
+      "id": "28bc1a42-1860-4a25-8bd6-a229baa40956",
+      "content_id": "9fac699b-9790-42ec-b0a8-edf34af5b0ec",
+      "claim_id": "C95",
+      "claim": "The additive model only achieved 11% power at effect size 0.3.",
+      "claim_type": "EXPLICIT",
+      "source": "The maximum effect size of 0.3 resulted in ROH clusters achieving a power of 100%, whereas the additive model only achieved 11%, and the dominant and recessive models achieved 52% and 70%, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the power analysis simulation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:41:21.166726Z"
+    },
+    {
+      "id": "73b31c3d-97b6-4cd7-91a3-601b1e8795e7",
+      "content_id": "9fac699b-9790-42ec-b0a8-edf34af5b0ec",
+      "claim_id": "C96",
+      "claim": "The dominant and recessive models achieved 52% and 70% power respectively at effect size 0.3.",
+      "claim_type": "EXPLICIT",
+      "source": "The maximum effect size of 0.3 resulted in ROH clusters achieving a power of 100%, whereas the additive model only achieved 11%, and the dominant and recessive models achieved 52% and 70%, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the power analysis simulation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:41:21.166726Z"
+    },
+    {
+      "id": "a8b4261d-60ae-4d8c-a038-2646d0fb4878",
+      "content_id": "9fac699b-9790-42ec-b0a8-edf34af5b0ec",
+      "claim_id": "C97",
+      "claim": "The GWAS with recessive effect yields the best results among other GWAS tests, however, its power is still lower than using ROH clusters.",
+      "claim_type": "EXPLICIT",
+      "source": "The GWAS with recessive effect yields the best results among other GWAS tests, however, its power is still lower than using ROH clusters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from comparing different GWAS models with ROH-DICE.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:41:21.166726Z"
+    },
+    {
+      "id": "d93fec27-b9ec-44db-aa22-9aa6bb009f83",
+      "content_id": "9fac699b-9790-42ec-b0a8-edf34af5b0ec",
+      "claim_id": "C98",
+      "claim": "Most of the clusters with low p-values contain at least one SNP with a very low p-value that is associated with the corresponding disease.",
+      "claim_type": "EXPLICIT",
+      "source": "Most of the clusters with low p-values contain at least one SNP with a very low p-value that is associated with the corresponding disease.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from comparing ROH-DICE results with GWAS results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:41:21.166726Z"
+    },
+    {
+      "id": "4d3d8c5a-cfce-4fef-bc1a-3cba4c8e62df",
+      "content_id": "9fac699b-9790-42ec-b0a8-edf34af5b0ec",
+      "claim_id": "C99",
+      "claim": "Most of the GWAS results and ROH clusters are strongly correlated based on D\u2032 measure.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that most of the GWAS results and ROH clusters are strongly correlated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the linkage disequilibrium analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:41:21.166726Z"
+    },
+    {
+      "id": "9831184f-04f3-48c0-898d-6b14d5dcb196",
+      "content_id": "9fac699b-9790-42ec-b0a8-edf34af5b0ec",
+      "claim_id": "C100",
+      "claim": "In a few cases where D\u2032 is small or close to zero, the reported p-value from GWAS was also insignificant, while the ROH cluster indicated a significant association.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in a few cases, D\u2032 is small or close to zero. In such cases, the reported p-value from GWAS was also insignificant, while the ROH cluster indicated a significant association (See Table 1 and Supplementary file 4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from comparing GWAS and ROH-DICE results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:41:21.166726Z"
+    },
+    {
+      "id": "eb72deb2-9f0a-4a95-89cc-9e038b194016",
+      "content_id": "9fac699b-9790-42ec-b0a8-edf34af5b0ec",
+      "claim_id": "C101",
+      "claim": "201 British individuals have been reported COVID-19 positive and died in 2020 in the UK Biobank data.",
+      "claim_type": "EXPLICIT",
+      "source": "In the July 24, 2020 release of the table in UK Biobank, 201 British individuals have been reported COVID-19 positive and died in 2020.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the COVID-19 data used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:41:21.166726Z"
+    },
+    {
+      "id": "dd84f84c-45bf-48b3-857b-4f951d9c81d5",
+      "content_id": "9fac699b-9790-42ec-b0a8-edf34af5b0ec",
+      "claim_id": "C102",
+      "claim": "A total of 8120 British individuals have been tested for COVID-19 in the UK Biobank data.",
+      "claim_type": "EXPLICIT",
+      "source": "A total of 8120 British individuals have been tested for COVID-19.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the COVID-19 data used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:41:21.166726Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "1e23b1e3-6a94-499c-9063-06b381951a7f",
+      "content_id": "9fac699b-9790-42ec-b0a8-edf34af5b0ec",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors establish the background and motivation for ROH-DICE by reviewing prior work on runs-of-homozygosity (ROH). They note that while ROH was traditionally associated with inbred populations, recent studies show ROH is ubiquitous in outbred populations. However, existing studies aggregate ROH content genome-wide, losing locus-specific information needed for mapping causal variants. This limitation stems from the computational infeasibility of enumerating all possible ROH diplotypes in outbred populations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C21 provide a coherent literature review establishing the scientific context. The claims are supported by appropriate citations to prior work (C2, C13, C14, C15, C16, C17, C18, C19) and accurately characterize the state of the field. The identification of the computational limitation (C20-C21) as the key barrier is a reasonable inference that motivates the methodological contribution.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:41:21.166726Z"
+    },
+    {
+      "id": "c0887b93-5391-451f-ba16-97b94bbbc3a1",
+      "content_id": "9fac699b-9790-42ec-b0a8-edf34af5b0ec",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The authors explain the population genetics rationale for focusing on long, frequent ROH diplotypes. They note that the chance and length of IBD segments decay quickly in outbred populations, making long shared ROH diplotypes rare and informative. Additionally, positive selection reduces haplotype diversity and increases homozygosity, so excessive ROH regions can indicate selective sweeps.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C23 and C68-C69 are well-supported by citations to population genetics theory and empirical studies. The reasoning that long, frequent ROH diplotypes represent extreme events in outbred populations is sound and provides theoretical justification for the method's focus. The connection to selection signatures is also appropriately supported by prior literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:41:21.166726Z"
+    },
+    {
+      "id": "b4de3c5c-16d5-4b66-a57a-33f2766c38a9",
+      "content_id": "9fac699b-9790-42ec-b0a8-edf34af5b0ec",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The authors present ROH-DICE, an efficient PBWT-based algorithm for identifying ROH diplotype clusters. They define clusters as \u2265100 consecutive homozygous sites shared by \u2265100 individuals. The algorithm has O(NM) time complexity and processed all UK Biobank chromosomes in ~19 hours wall-clock time with ~180 MB memory per chromosome. The method converts heterozygous sites to homozygous randomly, which should produce low false positive rates given ~18% heterozygosity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The methodological claims (C24, C65-C66, C78-C84) are internally consistent and the computational performance metrics (C79-C80) demonstrate practical feasibility. The false positive argument (C82-C84) is reasonable given the low probability of random matching over 100 sites with 18% heterozygosity. However, the choice of thresholds (100 sites, 100 individuals) is somewhat arbitrary as acknowledged by the authors.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:41:21.166726Z"
+    },
+    {
+      "id": "381d8fac-dfd3-4222-9024-1d2c7bdd2821",
+      "content_id": "9fac699b-9790-42ec-b0a8-edf34af5b0ec",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Simulation studies using msprime-generated data show ROH-DICE achieves 79.6% detection power and 55-63% accuracy depending on parameters (W, L), with minimal degradation (79.1% power) under 0.1% genotyping error. Accuracy increases with larger target lengths and widths. For larger cohorts (1000 individuals), power was 55.96% and accuracy 52.84% for W=100, L=100.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The simulation results (C85-C92) provide quantitative validation of the method's performance. The power and accuracy metrics are clearly defined and the robustness to genotyping errors (C87) is demonstrated. The trend of increasing accuracy with larger parameters (C90) is expected and supports the method's validity. However, the moderate accuracy values (52-63%) indicate substantial room for improvement.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:41:21.166726Z"
+    },
+    {
+      "id": "b0fc2696-7919-4fad-9df4-85a1938b208f",
+      "content_id": "9fac699b-9790-42ec-b0a8-edf34af5b0ec",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Power analysis simulations demonstrate that ROH-DICE substantially outperforms standard GWAS approaches when phenotypes are associated with consecutive homozygous sites. At effect size 0.3, ROH-DICE achieved 100% power compared to 11% for additive GWAS, 52% for dominant, and 70% for recessive models. The recessive GWAS model performed best among GWAS approaches but still had lower power than ROH-DICE.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C93-C97 present a clear comparative analysis showing ROH-DICE's superior power in specific scenarios. The simulation design is appropriate for evaluating the method's advantages. However, the authors appropriately note (C73-C74) that this advantage is specific to situations where causal variants lie in long, shared ROH diplotypes, and ROH-DICE is meant to complement rather than replace GWAS.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:41:21.166726Z"
+    },
+    {
+      "id": "6c3c4a73-8245-4a12-ba10-10623f5b3586",
+      "content_id": "9fac699b-9790-42ec-b0a8-edf34af5b0ec",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "ROH-DICE identified 1,880,826 ROH clusters (\u2265100 sites, \u2265100 individuals) across 22 autosomal chromosomes in UK Biobank, with average length 553,095 bp (~0.55 cM). Chromosome 6 had the highest number of clusters, mainly due to 65,458 clusters in the MHC region. Some clusters comprised over 100,000 individuals sharing the same ROH consensus.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6 and C25-C28, C34 report the primary descriptive results from applying ROH-DICE to UK Biobank data. The numbers are specific and internally consistent. The concentration in chromosome 6/MHC region (C27-C28) is biologically plausible given the known characteristics of this region. The finding of very large clusters (C34) is notable and demonstrates the method's ability to detect widespread shared homozygosity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:41:21.166726Z"
+    },
+    {
+      "id": "f2b143af-256a-4336-a83e-0c1eb63a8b91",
+      "content_id": "9fac699b-9790-42ec-b0a8-edf34af5b0ec",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Three large ROH clusters in chromosomes 2, 6, and 8 overlap with known selection hotspots. The chromosome 2 peak contains the LCT gene associated with lactose tolerance. The chromosome 8 peak contains CHRNB3-CHRNA6 genes linked to nicotine dependence and selection. The high rate of MHC region clusters may reflect high marker density and low recombination rates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C33, C35, C70 connect the ROH-DICE findings to known biology and prior selection studies. The associations with LCT (C30) and CHRNB3-CHRNA6 (C31-C33) are well-supported by citations. The explanation for MHC enrichment (C35) is plausible though speculative. These results validate the method by recovering expected signals and demonstrate its utility for detecting selection signatures.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:41:21.166726Z"
+    },
+    {
+      "id": "560753ab-ce28-478e-8753-2b524be231b3",
+      "content_id": "9fac699b-9790-42ec-b0a8-edf34af5b0ec",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The correlation coefficient between ROH clusters in UK Biobank and combined ROH classes in the European population from a prior study was 0.54.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C36 reports a moderate correlation (0.54) with prior work, which provides some external validation. However, the interpretation is unclear\u2014is 0.54 considered good agreement or not? The authors note differences in ROH definitions between studies but don't fully explain whether this correlation level is expected or concerning. Additional context would strengthen this validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:41:21.166726Z"
+    },
+    {
+      "id": "5358e490-cc4e-44cf-a028-1a85bf2516e5",
+      "content_id": "9fac699b-9790-42ec-b0a8-edf34af5b0ec",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Association analysis identified 61 significant associations (p < 10\u207b\u00b9\u00b2) between ROH diplotype clusters and self-reported diseases. The strongest associations were between the HLA region and autoimmune disorders, specifically malabsorption/coeliac disease, psoriasis, rheumatoid arthritis, and multiple sclerosis. These results are largely consistent with known literature.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C8, C37-C40 present the main disease association findings. The statistical threshold (C37) is appropriately stringent (Bonferroni-corrected). The HLA-autoimmune associations (C38-C39) are well-established in the literature, and the authors appropriately cite supporting studies (C40). While these are not novel discoveries, they validate the method's ability to detect known associations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:41:21.166726Z"
+    },
+    {
+      "id": "af6595c1-5983-4b15-b0aa-ab08e3e142d7",
+      "content_id": "9fac699b-9790-42ec-b0a8-edf34af5b0ec",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "ROH-DICE identified a highly significant association between an ROH diplotype at chr6:25988167-26122453 and hemochromatosis (p = 9.16 \u00d7 10\u207b\u00b9\u00b2\u2070, OR = 102.21, frequency = 0.02%). This region covers the HFE gene, and the well-known causal SNP (rs1800562, C282Y) was not genotyped or imputed in UK Biobank, causing this signal to be completely missing in standard GWAS (Neale Lab results). Another study that imputed this SNP reported the association.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C10, C41-C50 present a compelling example of ROH-DICE's advantage over standard GWAS. The association statistics are extremely strong (C41-C43), and the biological explanation is well-established (C44-C46). The key insight is that ROH-DICE detected this association despite the causal SNP being absent from the data (C48-C49), demonstrating the method's ability to capture recessive effects through haplotype-based analysis. This is a major strength of the approach.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:41:21.166726Z"
+    },
+    {
+      "id": "a405c44d-73df-44b3-8545-6aa34fb7698c",
+      "content_id": "9fac699b-9790-42ec-b0a8-edf34af5b0ec",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Outside the HLA region, the most prominent association was between an ROH diplotype at chr1:151515188-151902494 and eczema/dermatitis, which overlaps with a known GWAS signal (rs4845604).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C52 identify a significant non-HLA association that validates against prior GWAS findings. The overlap with known GWAS results (C52) provides external validation. This demonstrates the method works beyond the HLA region, though the result is confirmatory rather than novel.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:41:21.166726Z"
+    },
+    {
+      "id": "28b852a3-ac00-48ad-a05e-ea9c09e50065",
+      "content_id": "9fac699b-9790-42ec-b0a8-edf34af5b0ec",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "A genome-wide scan identified a putative association between an ROH diplotype in chromosome 4 (chr4:106318456-106483898) and increased COVID-19 mortality (chi-square p = 1.63 \u00d7 10\u207b\u00b9\u2070, GMMAT p = 1.82 \u00d7 10\u207b\u00b9\u00b9). Among 4389 diplotype carriers, 76 tested positive for COVID-19 and 11 died, representing a fivefold increase in mortality compared to non-carriers. The region contains PPA2 and ARHGEF38 genes, both previously implicated in COVID-19 severity in other studies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C11, C53-C64, C101-C102 present an intriguing COVID-19 association. The statistical evidence is strong (p = 1.82 \u00d7 10\u207b\u00b9\u00b9 after adjustment, C57), and the effect size is substantial (5-fold mortality increase, C56). The biological plausibility is supported by prior COVID-19 GWAS implicating the same genes (C61, C63). However, several concerns limit confidence: (1) small case numbers (11 deaths, C55), (2) potential confounding from population structure given related individuals weren't excluded (C77), (3) environmental confounding from shared geography (C76), and (4) the early data release (July 2020, C101) may not represent the full pandemic. The result is labeled 'putative' (C11) appropriately. Replication in independent cohorts is needed.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:41:21.166726Z"
+    },
+    {
+      "id": "624e8d0c-dfd2-4012-a946-64eb6da7fbf5",
+      "content_id": "9fac699b-9790-42ec-b0a8-edf34af5b0ec",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Comparison with GWAS results showed that most ROH clusters with low p-values contain at least one SNP with very low GWAS p-value for the corresponding disease, and most GWAS results and ROH clusters are strongly correlated by D\u2032 measure. However, in a few cases with low D\u2032, GWAS p-values were insignificant while ROH clusters showed significant associations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C98-C100 provide important validation by comparing ROH-DICE results with standard GWAS. The general concordance (C98-C99) validates the method, while the discordant cases (C100) highlight situations where ROH-DICE may offer complementary information. The use of D\u2032 as a linkage measure is appropriate. This analysis strengthens confidence in the overall approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:41:21.166726Z"
+    },
+    {
+      "id": "33adaa6b-66a8-4b52-be88-6515378003bc",
+      "content_id": "9fac699b-9790-42ec-b0a8-edf34af5b0ec",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The authors position ROH-DICE as complementary to standard GWAS rather than a replacement. While GWAS tests additive effects of single SNPs, ROH-DICE tests recessive effects of long haplotypes, similar to family-based homozygosity mapping but at population scale. ROH-DICE outperforms GWAS specifically when causal variants are located in long ROH diplotypes shared by many individuals.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71-C74 provide appropriate context for interpreting the method's utility. The comparison with GWAS (C71) and family-based mapping (C72) is accurate. The authors appropriately acknowledge the method is complementary (C73) and specify the conditions under which it excels (C74). This measured interpretation strengthens the paper by avoiding overclaiming.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:41:21.166726Z"
+    },
+    {
+      "id": "3e556320-f8f4-4332-a0e1-e867054e07e8",
+      "content_id": "9fac699b-9790-42ec-b0a8-edf34af5b0ec",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The authors acknowledge limitations regarding population structure and environmental confounding. Genetic principal components may be insufficient to eliminate effects of recent demographic structure and local environment. Individuals sharing excessive ROH diplotypes may share similar environments due to close relatedness and geographic proximity. Some reported signals may not be attributable to ROH since related individuals were not excluded.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C75-C77 provide important caveats about potential confounding. The acknowledgment that principal components may be insufficient (C75) is supported by citation. The concern about environmental confounding (C76) and the limitation of not excluding relatives (C77) are honest assessments of the study's limitations. These caveats are particularly relevant for interpreting the COVID-19 result and strengthen the paper's credibility.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:41:21.166726Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "0e5fcf60-3a41-4756-a1b2-4b3840d0a312",
+      "result_id": "1e23b1e3-6a94-499c-9063-06b381951a7f"
+    },
+    {
+      "claim_id": "7e6771c3-a803-4880-89b4-6307fb84b2d9",
+      "result_id": "1e23b1e3-6a94-499c-9063-06b381951a7f"
+    },
+    {
+      "claim_id": "2d6eaca2-db2b-4969-a71d-1d0e62820391",
+      "result_id": "1e23b1e3-6a94-499c-9063-06b381951a7f"
+    },
+    {
+      "claim_id": "96ab0cf4-ca39-499b-aae0-b9299fa9b49c",
+      "result_id": "1e23b1e3-6a94-499c-9063-06b381951a7f"
+    },
+    {
+      "claim_id": "84ad0825-8a0d-4458-ac17-3a57991737c6",
+      "result_id": "1e23b1e3-6a94-499c-9063-06b381951a7f"
+    },
+    {
+      "claim_id": "d36d5b70-2144-48b4-b139-bfa2c9734dbb",
+      "result_id": "1e23b1e3-6a94-499c-9063-06b381951a7f"
+    },
+    {
+      "claim_id": "2c6249e6-2289-43cc-a11c-a9c23ab3ae5c",
+      "result_id": "1e23b1e3-6a94-499c-9063-06b381951a7f"
+    },
+    {
+      "claim_id": "7b24ac2f-a1ce-437c-9cb3-4ec9a148a436",
+      "result_id": "1e23b1e3-6a94-499c-9063-06b381951a7f"
+    },
+    {
+      "claim_id": "250fb9ac-e0a1-43c4-917d-7b3e58ab66b1",
+      "result_id": "1e23b1e3-6a94-499c-9063-06b381951a7f"
+    },
+    {
+      "claim_id": "83ce8477-9735-4946-8cdf-69f3e4fd0e0a",
+      "result_id": "1e23b1e3-6a94-499c-9063-06b381951a7f"
+    },
+    {
+      "claim_id": "6222e3b3-2994-4860-be1b-7e36e66b9a6b",
+      "result_id": "1e23b1e3-6a94-499c-9063-06b381951a7f"
+    },
+    {
+      "claim_id": "ad0b9040-a037-4757-b63d-3ac057b76273",
+      "result_id": "1e23b1e3-6a94-499c-9063-06b381951a7f"
+    },
+    {
+      "claim_id": "16026aa7-7f58-459d-8a9a-0390991bde07",
+      "result_id": "1e23b1e3-6a94-499c-9063-06b381951a7f"
+    },
+    {
+      "claim_id": "72fd5a54-8368-4e0b-ba3e-c0a99f8418a8",
+      "result_id": "1e23b1e3-6a94-499c-9063-06b381951a7f"
+    },
+    {
+      "claim_id": "cdf3d2c0-a054-4d1c-9de0-49b518ca3e12",
+      "result_id": "1e23b1e3-6a94-499c-9063-06b381951a7f"
+    },
+    {
+      "claim_id": "ec3fdb04-8a93-4844-a8a7-abfcfaa89d53",
+      "result_id": "c0887b93-5391-451f-ba16-97b94bbbc3a1"
+    },
+    {
+      "claim_id": "55223392-900a-43af-a517-9515b4aff3a8",
+      "result_id": "c0887b93-5391-451f-ba16-97b94bbbc3a1"
+    },
+    {
+      "claim_id": "2d24a9e3-bf70-4560-82dd-151542b4590d",
+      "result_id": "c0887b93-5391-451f-ba16-97b94bbbc3a1"
+    },
+    {
+      "claim_id": "dc30c951-0f41-462f-beff-c7ecfdad3ac5",
+      "result_id": "c0887b93-5391-451f-ba16-97b94bbbc3a1"
+    },
+    {
+      "claim_id": "58781fc2-0737-4735-8b82-15de35eab8be",
+      "result_id": "b4de3c5c-16d5-4b66-a57a-33f2766c38a9"
+    },
+    {
+      "claim_id": "b848e372-c19c-4889-b43d-3f9359eed47f",
+      "result_id": "b4de3c5c-16d5-4b66-a57a-33f2766c38a9"
+    },
+    {
+      "claim_id": "12ff5034-6e1d-4a79-8688-d9a778995dda",
+      "result_id": "b4de3c5c-16d5-4b66-a57a-33f2766c38a9"
+    },
+    {
+      "claim_id": "609a50f1-7910-4ffc-ba48-36093474e89b",
+      "result_id": "b4de3c5c-16d5-4b66-a57a-33f2766c38a9"
+    },
+    {
+      "claim_id": "a10a1996-5639-4df3-9dff-c5812359e320",
+      "result_id": "b4de3c5c-16d5-4b66-a57a-33f2766c38a9"
+    },
+    {
+      "claim_id": "57c33663-8cef-4e6c-8787-e3f3e50bd697",
+      "result_id": "b4de3c5c-16d5-4b66-a57a-33f2766c38a9"
+    },
+    {
+      "claim_id": "6814a769-4526-442f-ab0c-efefb5c2d659",
+      "result_id": "b4de3c5c-16d5-4b66-a57a-33f2766c38a9"
+    },
+    {
+      "claim_id": "dc1daed1-b911-435c-8f21-2ce94b5f8139",
+      "result_id": "b4de3c5c-16d5-4b66-a57a-33f2766c38a9"
+    },
+    {
+      "claim_id": "291ada47-f969-4805-b148-828f9acd3f5b",
+      "result_id": "b4de3c5c-16d5-4b66-a57a-33f2766c38a9"
+    },
+    {
+      "claim_id": "9bee67a6-07fd-41db-8c1f-c07a025b4206",
+      "result_id": "b4de3c5c-16d5-4b66-a57a-33f2766c38a9"
+    },
+    {
+      "claim_id": "d6ab138b-7d52-42b4-9b28-7e3fbfc36e5b",
+      "result_id": "381d8fac-dfd3-4222-9024-1d2c7bdd2821"
+    },
+    {
+      "claim_id": "36385731-9851-4073-8049-571623c03363",
+      "result_id": "381d8fac-dfd3-4222-9024-1d2c7bdd2821"
+    },
+    {
+      "claim_id": "18ab102b-6733-4aa7-bd16-ac4da46bbc3b",
+      "result_id": "381d8fac-dfd3-4222-9024-1d2c7bdd2821"
+    },
+    {
+      "claim_id": "a2447b05-112b-4a7a-a32e-60f62bb16cf4",
+      "result_id": "381d8fac-dfd3-4222-9024-1d2c7bdd2821"
+    },
+    {
+      "claim_id": "2c597d2f-eeb9-42ab-810a-c9e1fe04e39f",
+      "result_id": "381d8fac-dfd3-4222-9024-1d2c7bdd2821"
+    },
+    {
+      "claim_id": "474c5aa0-6628-4a21-a63b-b7f92d33cb27",
+      "result_id": "381d8fac-dfd3-4222-9024-1d2c7bdd2821"
+    },
+    {
+      "claim_id": "f756ec83-b52f-461a-99dc-8d35cd29176b",
+      "result_id": "381d8fac-dfd3-4222-9024-1d2c7bdd2821"
+    },
+    {
+      "claim_id": "12b3bdde-e5b6-4ed4-a639-ed349c6e0f00",
+      "result_id": "381d8fac-dfd3-4222-9024-1d2c7bdd2821"
+    },
+    {
+      "claim_id": "a02abb8e-8687-4774-ad5a-de9eba6932a6",
+      "result_id": "b0fc2696-7919-4fad-9df4-85a1938b208f"
+    },
+    {
+      "claim_id": "69a2a23d-968d-4490-a6a6-0f19fb6192c6",
+      "result_id": "b0fc2696-7919-4fad-9df4-85a1938b208f"
+    },
+    {
+      "claim_id": "28bc1a42-1860-4a25-8bd6-a229baa40956",
+      "result_id": "b0fc2696-7919-4fad-9df4-85a1938b208f"
+    },
+    {
+      "claim_id": "73b31c3d-97b6-4cd7-91a3-601b1e8795e7",
+      "result_id": "b0fc2696-7919-4fad-9df4-85a1938b208f"
+    },
+    {
+      "claim_id": "a8b4261d-60ae-4d8c-a038-2646d0fb4878",
+      "result_id": "b0fc2696-7919-4fad-9df4-85a1938b208f"
+    },
+    {
+      "claim_id": "60350b87-2b58-400e-9f7a-af95df289edb",
+      "result_id": "6c3c4a73-8245-4a12-ba10-10623f5b3586"
+    },
+    {
+      "claim_id": "d4281c61-0489-4aa4-9ec0-d14e1f2bec71",
+      "result_id": "6c3c4a73-8245-4a12-ba10-10623f5b3586"
+    },
+    {
+      "claim_id": "5814ed0f-f90c-4af9-91b9-a7cc1ec1469c",
+      "result_id": "6c3c4a73-8245-4a12-ba10-10623f5b3586"
+    },
+    {
+      "claim_id": "fa3fc527-08d5-4d78-8868-8a76b2a7e379",
+      "result_id": "6c3c4a73-8245-4a12-ba10-10623f5b3586"
+    },
+    {
+      "claim_id": "5178ada3-1fe1-4e13-8d4b-63c62dfcd0ff",
+      "result_id": "6c3c4a73-8245-4a12-ba10-10623f5b3586"
+    },
+    {
+      "claim_id": "e13f0aa0-fa10-43b9-a7a3-c3a111e086bc",
+      "result_id": "6c3c4a73-8245-4a12-ba10-10623f5b3586"
+    },
+    {
+      "claim_id": "429f4be0-a6fb-4a63-965b-3ee2464ac313",
+      "result_id": "f2b143af-256a-4336-a83e-0c1eb63a8b91"
+    },
+    {
+      "claim_id": "edbe1ec2-12bf-417c-b69b-7214b3463062",
+      "result_id": "f2b143af-256a-4336-a83e-0c1eb63a8b91"
+    },
+    {
+      "claim_id": "7e682fbf-fab5-4676-ba75-6672592d7643",
+      "result_id": "f2b143af-256a-4336-a83e-0c1eb63a8b91"
+    },
+    {
+      "claim_id": "8b17d810-bef9-40f8-9576-977af09baa72",
+      "result_id": "f2b143af-256a-4336-a83e-0c1eb63a8b91"
+    },
+    {
+      "claim_id": "37bcc190-df34-422d-90a2-5e0d0eee9ddb",
+      "result_id": "f2b143af-256a-4336-a83e-0c1eb63a8b91"
+    },
+    {
+      "claim_id": "f51d0522-22fb-4c09-a0c3-7c81fe8094af",
+      "result_id": "f2b143af-256a-4336-a83e-0c1eb63a8b91"
+    },
+    {
+      "claim_id": "d7a44a4b-0f0a-4af0-9834-22fbbf7d292b",
+      "result_id": "f2b143af-256a-4336-a83e-0c1eb63a8b91"
+    },
+    {
+      "claim_id": "5aedc060-37f3-4f4d-b5a9-afe55c9bbdb5",
+      "result_id": "560753ab-ce28-478e-8753-2b524be231b3"
+    },
+    {
+      "claim_id": "943c4248-f906-4256-ab98-a5b29ed1bbc2",
+      "result_id": "5358e490-cc4e-44cf-a028-1a85bf2516e5"
+    },
+    {
+      "claim_id": "ed1c55c2-5750-4411-bfe6-bd0b1c337aa3",
+      "result_id": "5358e490-cc4e-44cf-a028-1a85bf2516e5"
+    },
+    {
+      "claim_id": "2f6ea88a-3f8b-4109-81a8-448636cab152",
+      "result_id": "5358e490-cc4e-44cf-a028-1a85bf2516e5"
+    },
+    {
+      "claim_id": "a766b609-178c-4fed-8d02-8e4a95116bde",
+      "result_id": "5358e490-cc4e-44cf-a028-1a85bf2516e5"
+    },
+    {
+      "claim_id": "49413aad-26d7-49b7-b771-a4213c971fbc",
+      "result_id": "5358e490-cc4e-44cf-a028-1a85bf2516e5"
+    },
+    {
+      "claim_id": "022f0a01-a874-4844-8273-2909bd068bac",
+      "result_id": "5358e490-cc4e-44cf-a028-1a85bf2516e5"
+    },
+    {
+      "claim_id": "c1d81ac3-36eb-4d6d-b20e-7cd537499296",
+      "result_id": "af6595c1-5983-4b15-b0aa-ab08e3e142d7"
+    },
+    {
+      "claim_id": "4d8a575d-8e4a-440f-b841-388024bd5811",
+      "result_id": "af6595c1-5983-4b15-b0aa-ab08e3e142d7"
+    },
+    {
+      "claim_id": "d219a194-8de8-4bc9-9a23-15762def6218",
+      "result_id": "af6595c1-5983-4b15-b0aa-ab08e3e142d7"
+    },
+    {
+      "claim_id": "9ed7481d-0732-40bb-a3a4-367138552c84",
+      "result_id": "af6595c1-5983-4b15-b0aa-ab08e3e142d7"
+    },
+    {
+      "claim_id": "263ed593-3f41-4816-a54e-68206d660ab9",
+      "result_id": "af6595c1-5983-4b15-b0aa-ab08e3e142d7"
+    },
+    {
+      "claim_id": "0516b560-9a2d-4050-a4df-7d343d4dca84",
+      "result_id": "af6595c1-5983-4b15-b0aa-ab08e3e142d7"
+    },
+    {
+      "claim_id": "ede9aa78-1aea-4d47-abf0-f7f5bb30909d",
+      "result_id": "af6595c1-5983-4b15-b0aa-ab08e3e142d7"
+    },
+    {
+      "claim_id": "92ccd129-6c0d-469d-ad24-bf0ee480b272",
+      "result_id": "af6595c1-5983-4b15-b0aa-ab08e3e142d7"
+    },
+    {
+      "claim_id": "8e023ea6-ac14-45fa-8868-cc3f81657f7b",
+      "result_id": "af6595c1-5983-4b15-b0aa-ab08e3e142d7"
+    },
+    {
+      "claim_id": "c755ebba-15b7-45bf-a76b-246274f81533",
+      "result_id": "af6595c1-5983-4b15-b0aa-ab08e3e142d7"
+    },
+    {
+      "claim_id": "b532cc8a-a925-4180-bf9d-960fd4d22136",
+      "result_id": "af6595c1-5983-4b15-b0aa-ab08e3e142d7"
+    },
+    {
+      "claim_id": "7a7e051d-79ee-4256-8bc7-84e4518845a0",
+      "result_id": "af6595c1-5983-4b15-b0aa-ab08e3e142d7"
+    },
+    {
+      "claim_id": "1682f1ff-0c3c-4a97-a96e-f1940f280acb",
+      "result_id": "a405c44d-73df-44b3-8545-6aa34fb7698c"
+    },
+    {
+      "claim_id": "c3b932a5-2aec-4889-a0c1-6683adf243d8",
+      "result_id": "a405c44d-73df-44b3-8545-6aa34fb7698c"
+    },
+    {
+      "claim_id": "f78753ef-1a1e-4947-a0d5-26b80a46ec28",
+      "result_id": "28b852a3-ac00-48ad-a05e-ea9c09e50065"
+    },
+    {
+      "claim_id": "67d4269a-a12a-4e6d-a317-1e6d47964298",
+      "result_id": "28b852a3-ac00-48ad-a05e-ea9c09e50065"
+    },
+    {
+      "claim_id": "0536ccec-38c4-403a-ac0d-b7e7cbf63a83",
+      "result_id": "28b852a3-ac00-48ad-a05e-ea9c09e50065"
+    },
+    {
+      "claim_id": "c788cb7a-1313-48ca-90d9-36f439223dc1",
+      "result_id": "28b852a3-ac00-48ad-a05e-ea9c09e50065"
+    },
+    {
+      "claim_id": "42a063c7-845b-429f-ac01-6f9c6f911268",
+      "result_id": "28b852a3-ac00-48ad-a05e-ea9c09e50065"
+    },
+    {
+      "claim_id": "2843f267-ea89-4ab5-99bf-744dc7633d33",
+      "result_id": "28b852a3-ac00-48ad-a05e-ea9c09e50065"
+    },
+    {
+      "claim_id": "844ddb10-d22e-4309-9517-84ec73a132e6",
+      "result_id": "28b852a3-ac00-48ad-a05e-ea9c09e50065"
+    },
+    {
+      "claim_id": "eca24e21-672b-4eb8-b8b5-b98bebf7abeb",
+      "result_id": "28b852a3-ac00-48ad-a05e-ea9c09e50065"
+    },
+    {
+      "claim_id": "7f0c28db-3dc9-42e7-a7b2-f9e839f9aa3f",
+      "result_id": "28b852a3-ac00-48ad-a05e-ea9c09e50065"
+    },
+    {
+      "claim_id": "052538af-a699-4a86-8347-85ec321467bb",
+      "result_id": "28b852a3-ac00-48ad-a05e-ea9c09e50065"
+    },
+    {
+      "claim_id": "2e1b5045-4ad3-4140-8bb3-4e0d50894d32",
+      "result_id": "28b852a3-ac00-48ad-a05e-ea9c09e50065"
+    },
+    {
+      "claim_id": "df362cfb-8e4f-43dc-b723-f4283cde0b10",
+      "result_id": "28b852a3-ac00-48ad-a05e-ea9c09e50065"
+    },
+    {
+      "claim_id": "ba4c7c14-2dd5-4837-855b-1114a3b21e21",
+      "result_id": "28b852a3-ac00-48ad-a05e-ea9c09e50065"
+    },
+    {
+      "claim_id": "eb72deb2-9f0a-4a95-89cc-9e038b194016",
+      "result_id": "28b852a3-ac00-48ad-a05e-ea9c09e50065"
+    },
+    {
+      "claim_id": "dd84f84c-45bf-48b3-857b-4f951d9c81d5",
+      "result_id": "28b852a3-ac00-48ad-a05e-ea9c09e50065"
+    },
+    {
+      "claim_id": "d93fec27-b9ec-44db-aa22-9aa6bb009f83",
+      "result_id": "624e8d0c-dfd2-4012-a946-64eb6da7fbf5"
+    },
+    {
+      "claim_id": "4d3d8c5a-cfce-4fef-bc1a-3cba4c8e62df",
+      "result_id": "624e8d0c-dfd2-4012-a946-64eb6da7fbf5"
+    },
+    {
+      "claim_id": "9831184f-04f3-48c0-898d-6b14d5dcb196",
+      "result_id": "624e8d0c-dfd2-4012-a946-64eb6da7fbf5"
+    },
+    {
+      "claim_id": "a7b1a9af-2a43-4838-b715-50702f6f7ca5",
+      "result_id": "33adaa6b-66a8-4b52-be88-6515378003bc"
+    },
+    {
+      "claim_id": "b2e8d53b-1f2e-43d3-8858-29e4193152f5",
+      "result_id": "33adaa6b-66a8-4b52-be88-6515378003bc"
+    },
+    {
+      "claim_id": "8089d876-89b1-4617-b0e5-4fd20c7051ae",
+      "result_id": "33adaa6b-66a8-4b52-be88-6515378003bc"
+    },
+    {
+      "claim_id": "3f8de059-0f13-47df-8736-d998a93deea1",
+      "result_id": "33adaa6b-66a8-4b52-be88-6515378003bc"
+    },
+    {
+      "claim_id": "c99c495f-5232-4b60-a1c1-f956b1b7dfa1",
+      "result_id": "3e556320-f8f4-4332-a0e1-e867054e07e8"
+    },
+    {
+      "claim_id": "e5de76fe-3260-42b9-9784-ad046c4a4c21",
+      "result_id": "3e556320-f8f4-4332-a0e1-e867054e07e8"
+    },
+    {
+      "claim_id": "8f11c397-4de5-411c-9925-fb481756ee4f",
+      "result_id": "3e556320-f8f4-4332-a0e1-e867054e07e8"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,253 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C34",
+      "C35"
+    ],
+    "result": "The authors developed a method for electrical visualization of axonal morphology using HD-MEAs that enabled reconstruction of up to 5-cm-long axonal arbors and direct monitoring of axonal conduction across thousands of recording sites. A total of 1.86 m of cortical and spinal axons were reconstructed, revealing the location of the axon initial segment (AIS), axonal trunk, and higher-order branches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C8, C34, and C35 collectively describe the core methodological achievement and its capabilities. The quantitative results (1.86 m total reconstruction, up to 5 cm individual arbors) are supported by experimental data presented in Figures 1, 7, and throughout the manuscript. The method's ability to reveal functional morphology including AIS, trunk, and branches is demonstrated with visual evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C71",
+      "C72"
+    ],
+    "result": "The HD-MEA system used comprises 26,400 platinum microelectrodes packed within an area of 3.85\u00d72.1 mm\u00b2, with interelectrode distances of 17.5 \u03bcm providing a density of 3264 microelectrodes per mm\u00b2. Up to 1024 readout and/or stimulation channels could be routed to desired electrodes, and neuronal extracellular action potentials were recorded at 20 kHz sampling rate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C38 and C71-C72 describe technical specifications of the HD-MEA system. These are straightforward technical parameters that are consistently reported and supported by Figure 2 and supplementary figures. The specifications are verifiable and internally consistent.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Cortical cultures were grown in monolayers with estimated thicknesses of ~5-40 \u03bcm, motor neuron cultures with thicknesses of ~5-50 \u03bcm, and both yielded cell densities of ~500-2000 neurons per mm\u00b2. The relative proximity of axons to the sensing area varied within ranges of ~1-13 \u03bcm for cortical neurons and ~1-18 \u03bcm for motor neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C43 describe culture characteristics measured experimentally and shown in Figure 2\u2014figure supplements 4 and 5. The measurements are quantitative, include visual evidence from Z-stack imaging, and provide important context for interpreting the electrical recordings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C45",
+      "C46"
+    ],
+    "result": "The adaptive thresholding algorithm detected 45%, 74%, and 98% of actual peaks after the first, second, and third steps, respectively, with no false peak detections observed for thresholds set to 9, 2, and 1 STD of the noise in the three steps.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C46 describe the performance of the peak detection algorithm validated using Bayes optimal template-matching as ground truth. The validation is rigorous, using data from 20 cells (10 cortical and 10 motor neurons), and results are shown in Figure 5B with clear quantitative metrics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C47",
+      "C48"
+    ],
+    "result": "The tracking algorithm interconnected 70%, 85%, and 91% of mapped AP peaks after the first, second, and third steps, respectively, with no false links established when using interconnection areas with diameters of 100, 200, and 400 \u03bcm in the three steps.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C48 describe the performance of the tracking algorithm validated using stimulation-triggered axonal activities as ground truth. The validation approach is sound, using electrical stimulation to reveal known conduction trajectories, and results are presented in Figure 6B with quantitative performance metrics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Functional morphologies were reconstructed for 50 cortical and 50 motor neurons, totaling 1.04 m and 0.81 m of axons respectively. Average axonal lengths were comparable (16.73\u00b11.20 mm cortical vs 14.63\u00b10.88 mm motor, p=0.25), but length-to-area quotients were significantly higher for cortical neurons (11.72\u00b10.32 mm\u207b\u00b9) than motor neurons (9.49\u00b10.24 mm\u207b\u00b9, p<10\u207b\u2076).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C53 present comparative morphological analysis with appropriate sample sizes (N=50 each), statistical testing (Mann-Whitney U-test), and clear quantitative results shown in Figure 7B. The finding that cortical axons have higher length-to-area ratios despite similar total lengths is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Cortical axons develop branching points in more proximal parts of their arbors (0.27\u00b10.01 mm vs 0.43\u00b10.01 mm, p<10\u207b\u2076) and form shorter inter-branching segments (0.34\u00b10.01 mm vs 0.48\u00b10.01 mm, p<10\u207b\u2076) compared to spinal axons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C56 describe branching pattern differences with strong statistical support (p<10\u207b\u2076) from analysis of 50 neurons per type. Results are shown in Figure 7C with clear quantitative comparisons and appropriate statistical testing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Cortical axons have significantly more axon terminals (29.92\u00b11.64 vs 17.82\u00b11.03, p<10\u207b\u2076) than spinal axons, but spinal axons project terminals at significantly greater distances (2.41\u00b10.04 mm vs 1.17\u00b10.02 mm, p<10\u207b\u2076).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C59 present terminal distribution analysis with strong statistical support from 50 neurons per type. The complementary findings (more terminals in cortical, longer projection in motor) are biologically coherent and well-supported by data in Figure 7D.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "APs recorded from proximal axons had significantly higher amplitude in cortical neurons (44.58\u00b14.81 \u03bcV) than motor neurons (19.07\u00b12.53 \u03bcV, p<10\u207b\u2076), while APs from distal axons had significantly smaller amplitude in cortical neurons (1.50\u00b10.10 \u03bcV) than motor neurons (3.30\u00b10.38 \u03bcV, p<10\u207b\u2076). Similar patterns were observed for primary trunks versus axonal trees.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C63 describe AP amplitude differences across axonal domains with strong statistical support from analysis of 45,232 data points (cortical) and 36,286 data points (motor). Results are shown in Figure 8B-C with appropriate statistical testing and clear biological interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Cortical neurons had significantly shorter active timespans (4.60\u00b10.33 ms vs 7.40\u00b10.32 ms, p<10\u207b\u2076), shorter intervals of signal arrivals at terminals (3.44\u00b10.31 ms vs 5.40\u00b10.34 ms, p=0.0024), and lower variance of arrival times (0.95\u00b10.23 ms\u00b2 vs 2.50\u00b10.35 ms\u00b2, p<10\u207b\u2074) compared to motor neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C67 describe temporal dynamics of conduction with strong statistical support from 50 neurons per type. Results are shown in Figure 9B with appropriate statistical testing. The findings are internally consistent and biologically interpretable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Cortical axons exhibit significantly slower average conduction velocities (0.46\u00b10.01 m/s vs 0.56\u00b10.02 m/s, p<10\u207b\u2074) and more uniform velocities (variance 0.03\u00b10.002 vs 0.04\u00b10.003 m/s, p<10\u207b\u2074) compared to spinal axons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C70 describe conduction velocity differences with strong statistical support from extensive data (45,232 cortical and 36,286 motor data points). Results are shown in Figure 9C with appropriate statistical testing and are consistent with known biological differences in axon diameter.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Cortices from embryonic day 18 Sprague Dawley rat were used for cortical neuron cultures, and spinal cords from embryonic day 14 Sprague Dawley rat were used for motor neuron cultures. All experimental protocols were approved by the Uppsala Animal Ethical Committee under animal license C97/15.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C75 describe methodological details about animal sources and ethical approval. These are straightforward factual statements about experimental procedures that are standard for reporting and are documented in the Methods section.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "The manuscript provides extensive background on axon biology, including their role in signal transmission, information processing beyond conduction, involvement in neurodegenerative diseases, structural and functional properties of cortical versus motor axons, and historical perspectives on axonal function from classical binary transmission to modern understanding of analog processing and activity-dependent modulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C10-C29 represent background knowledge and literature review supported by appropriate citations. These claims establish context and motivation for the study. All claims are properly attributed to prior work through citations and represent established knowledge in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "The manuscript reviews existing technologies for studying axons, noting that HD-MEAs allow accessing axonal action potentials at high spatiotemporal resolution but provide no insights on morphology, patch-clamp is limited to single sites, and fluorescent indicators have limitations including photobleaching, phototoxicity, and potential physiological perturbations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C5, C30-C33 describe limitations of existing technologies, properly supported by citations to prior work. These claims establish the technological gap that the current study addresses and are well-documented in the literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C44"
+    ],
+    "result": "The AIS is the dominant contributor to the neuron's extracellular electrical landscape, which can be attributed to high densities of voltage-gated ion channels expressed in the AIS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C44 represents established knowledge properly supported by multiple citations (Bakkum et al., 2019; Kole et al., 2008; Hu et al., 2009; Lorincz and Nusser, 2010). This is important background for understanding the method's ability to identify neurons.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C9"
+    ],
+    "result": "Cortical and spinal axons have specific features in their structure and function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C9 is a high-level summary statement that is supported by the detailed comparative analyses presented in claims C49-C70. The specific structural and functional differences are well-documented with extensive quantitative data from 50 neurons per type.",
+    "result_type": "MAJOR"
+  }
+]

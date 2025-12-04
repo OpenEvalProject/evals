@@ -1,0 +1,1877 @@
+{
+  "submission": {
+    "id": "d20d8174-6160-43fa-aa4f-86be54972e69",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-04T02:53:13.186085Z",
+    "updated_at": "2025-12-04T02:53:13.186085Z"
+  },
+  "content": [
+    {
+      "id": "40d8d67c-faad-482f-b04c-59e86a6eab43",
+      "submission_id": "d20d8174-6160-43fa-aa4f-86be54972e69",
+      "content_type": "manuscript",
+      "content_text": "# Continuous, long-term crawling behavior characterized by a robotic transport system\n\n## Authors\n\n- James Yu<sup>1</sup> ([ORCID: 0000-0002-6247-0433](https://orcid.org/0000-0002-6247-0433))\n- Stephanie Dancausse<sup>2</sup>\n- Maria Paz<sup>1</sup>\n- Tolu Faderin<sup>1</sup>\n- Melissa Gaviria<sup>2</sup>\n- Joseph W Shomar<sup>2</sup> ([ORCID: 0009-0000-9534-6263](https://orcid.org/0009-0000-9534-6263))\n- Dave Zucker<sup>3</sup> ([ORCID: 0000-0003-0259-6293](https://orcid.org/0000-0003-0259-6293))\n- Vivek Venkatachalam<sup>1</sup> ([ORCID: 0000-0002-2414-7416](https://orcid.org/0000-0002-2414-7416)) \u2020\n- Mason Klein<sup>2</sup> ([ORCID: 0000-0001-8211-077X](https://orcid.org/0000-0001-8211-077X)) \u2020\n\n### Affiliations\n\n1. Department of Physics, Northeastern University Boston United States ([ROR:04t5xt781](https://ror.org/04t5xt781))\n2. Department of Physics and Department of Biology, University of Miami Coral Gables United States ([ROR:02dgjyy92](https://ror.org/02dgjyy92))\n3. FlySorter, LLC Seattle United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nDetailed descriptions of behavior provide critical insight into the structure and function of nervous systems. In Drosophila larvae and many other systems, short behavioral experiments have been successful in characterizing rapid responses to a range of stimuli at the population level. However, the lack of long-term continuous observation makes it difficult to dissect comprehensive behavioral dynamics of individual animals and how behavior (and therefore the nervous system) develops over time. To allow for long-term continuous observations in individual fly larvae, we have engineered a robotic instrument that automatically tracks and transports larvae throughout an arena. The flexibility and reliability of its design enables controlled stimulus delivery and continuous measurement over developmental time scales, yielding an unprecedented level of detailed locomotion data. We utilize the new system\u2019s capabilities to perform continuous observation of exploratory search behavior over a duration of 6 hr with and without a thermal gradient present, and in a single larva for over 30 hr. Long-term free-roaming behavior and analogous short-term experiments show similar dynamics that take place at the beginning of each experiment. Finally, characterization of larval thermotaxis in individuals reveals a bimodal distribution in navigation efficiency, identifying distinct phenotypes that are obfuscated when only analyzing population averages.\n\n## Introduction\n\nA complete description of an organism\u2019s behavior, or any responsive system more generally, would include a map of how inputs transform into outputs. Reflexes or decisions made by the peripheral and central nervous systems, for example, can be characterized as functions that take surrounding environmental (and internal) stimulus information, process it, and lead to a physical behavior. An organism\u2019s transformation properties are rarely constant, and instead change over short and long time scales, determined by its stimulus history and development. A comprehensive understanding of animal behavior and its underlying mechanisms would ideally address all time scales between fast neural responses through the slow physiological changes associated with development. Short-term responses to individual stimuli have been characterized in many organisms, but a high-bandwidth treatment with continuous measurement of behavior through the entire time course of an animal\u2019s development has been prohibitive. The lack of continuous observation makes it difficult to dissect individual behavioral dynamics and their development over time. In most organisms, behavior is too fast, too complicated, is performed in too large of a space, or otherwise too difficult to observe with sufficient resolution over a long time.\n\nRecent work in several model systems has begun to dramatically increase the duration of behavioral recording. Roaming and dwelling behavior in worms has been recorded with high spatiotemporal resolution through larval development by via isolation of individuals in small arenas (Stern et al., 2017). The multi-camera imaging system has observed changes in roaming behaviors across and within developmental stages in the same animal along with providing insight into the variation of these behaviors between individuals in a population. Long-term home-cage behavior in both mice (Goulding et al., 2008) and rats (Poddar et al., 2013) has been studied using a combination of behavior-specific sensors and cameras. The home-cage systems include automated monitoring and training of multiple animals in parallel, increasing overall throughput and minimizing the human assistance required for such tasks, and have been successful in elucidating new determinants in behaviors across multiple time scales, including feeding, daily activity patterns, and learning novel motor tasks. Finally, long-duration recording of 1D walking in adult fruit flies (Drosophila melanogaster) has been recorded using a simple photobeam interrupt (Pfeiffenberger et al., 2010), and more complex behaviors have been recorded using video monitoring (Geissmann et al., 2017) and robotic manipulation (Alisch et al., 2018). Our goal in the present work is to investigate long-term locomotion in a free, open physical space, by continuously monitoring a simple model organism with a short life cycle, which will allow us to characterize exploratory search and directed navigation over a sizable fraction of the organism\u2019s life cycle.\n\nThe D. melanogaster larva model system (hereafter referred to as Drosophila or larva) presents an opportunity to study navigational behavioral dynamics over long time scales, and is well suited to a detailed quantitative treatment. It possesses a well-defined, slow behavioral repertoire and robust response to many stimuli (Sokolowski, 1980, Louis and de Polavieja, 2017, Riedl and Louis, 2012). The fruit fly has a relatively short life cycle with high accessibility to their three short larval stages (Fern\u00e1ndez-Moreno et al., 2007). During these stages, larvae are highly food-motivated and thus in the absence of food engage in nearly continuous exploratory search movement, which facilitates behavioral studies of locomotion over long times (Wosniack et al., 2022). They also demonstrate responses to chemosensory cues (Schumann et al., 2021, Kim et al., 2017, Vogt et al., 2021, Colomb et al., 2007), mechanical and nociceptive stimulation (Almeida-Carvalho et al., 2017, Almeida-Oliveira et al., 2021, Kudow et al., 2019), light (Kane et al., 2013), as well as the ability to retain memory and change their behaviors in accordance with learned experiences, and habituate to prolonged stimuli (McGuire et al., 2003; McGuire et al., 2004, Larkin et al., 2015, Berne et al., 2021). Larvae also perform robust behavioral responses to temperature changes, engaging in thermotaxis along thermal gradients, and modulating aspects of their locomotive behavior, in particular their turning rate, in order to reach optimal conditions (Luo et al., 2010, Klein et al., 2015). The recent availability of a connectome brain wiring diagram (Huser et al., 2012, Larderet et al., 2017) and numerous genetic tools have facilitated probing the neural circuits and molecular mechanisms that underlie these behaviors (Hernandez-Nunez et al., 2020, Kaun et al., 2012, Gepner et al., 2015, Sokolowski, 1980, Tian et al., 2009, Xie et al., 2018, Inada et al., 2011). Here, we focus on directly observed free-moving exploratory search and navigation behavior and seek to continuously measure fly larva crawling over times scales of many hours.\n\nResponses to a wide range of stimuli in larvae typically occur through changes in their navigation and locomotion. Their navigation behavior, when confined to flat 2D spaces, is akin to an organism-scale 2D random walk (Berg and Brown, 1972, Berg, 2004), characterized as an alternating sequence of forward crawling \u2018runs\u2019 and direction-altering \u2018turns\u2019, making the animal\u2019s behavior and response to stimuli straightforward to quantify (Codling et al., 2008, G\u00fcnther et al., 2016, Lahiri et al., 2011, Klein et al., 2017; Figure 1A). However, larvae crawl away and typically remain at the edges of confining barriers, or climb walls or bury into a substrates (Louis and de Polavieja, 2017) (see Figure 1\u2014figure supplement 1). Any such scenario results in the termination of exploratory search behavior, limiting most experiments to shorter snapshots of larval behavior, typically on the order of 10 min (Jaime et al., 2018, Klein et al., 2015, Alisch et al., 2018, Klein et al., 2017). A similar issue arises with directed navigation, for example along a 1D stimulus gradient, where larvae reach their preferred stimulus location or the edge of the arena after a short time, after which they no longer navigate toward anything. Thus, we desire a system that can prolong the behavior under investigation. Manually prolonging exploratory crawling behavior, such as picking up a larva with a wet paintbrush and placing them back at the center, is inefficient, difficult to perform consistently, and too labor-intensive over long times, and thus not very practical. Longer experiments with adult Drosophila have successfully been automated to allow higher throughput, although with confinement (Jaime et al., 2018, Alisch et al., 2018, Buchanan et al., 2015), but no such system has previously been developed for freely crawling larvae.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/86585/elife-86585-fig1-v1.jpg)\n\n**Figure 1.:** (A) Schematic illustrating the fly larva\u2019s simple search behavior. They search their environment in a modified 2D random walk, with 20 example paths (black) shown. Trajectories are characterized by an alternating series of forward crawling runs (red) and turns (blue). (B) Isometric CAD schematic of the transport robot. The robot is built from a modified 3D printer with a custom nozzle. Feedback from a mounted overhead camera allows for tight coordination with the moving arm to safely and robustly interact with the experimental arena. (C) The nozzle is built as a narrow tube that allows air and vacuum flow with a flat plastic disk fitted at the bottom. The disk provides ample surface area for a water droplet to form, and the droplet\u2019s surface pressure can pick up larvae while minimizing stress on the animal during the interaction. (D) Top and side view schematics of the flat crawling arena. Larvae crawl atop an agar substrate, which is kept hydrated by a surrounding moat. The robot nozzle picks up larvae as they approach the edge of the arena and transports them back to the center to continue their freeroaming behavior. (E) Flowchart of the larva pick-up feedback process. In standby mode, the camera records a video of larval behavior. When it detects a larva nearing the perimeter, it triggers the pick-up protocol for the robot. The manipulator arm moves to a point in the moat nearest to the larva and dips the nozzle in, forming a droplet at the tip to be used for pick-up. The camera provides a more recent position for the moving larva as the robot attempts a pick-up. If feedback from the camera suggests a successful pick-up, it attempts a drop-off. Otherwise, the manipulator repeats its attempt after receiving an updated larval position. Multiple failed attempts can trigger small perturbations to robot calibration parameters to allow better flexibility through reinforcement learning before continuing pick-up attempts. Similarly, the robot performs multiple drop-off attempts at the center of the arena until it receives a positive confirmation from the camera, at which point the system returns to its original standby mode. (F) Photographs before (top) and after (bottom) the robot moves a larva from the perimeter to the center of the arena.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/86585/elife-86585-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Larvae move freely until they are near the edges, where they dwell. Circles segment the arena into equal areas (1/3 in each region). Blue numbers indicate the number of larvae in the region.\n\nHere, we present the design and operation of an automated \u2018larva picker\u2019 robot and demonstrate its capabilities through continuous observation of larval exploratory searching and navigation behavioral response with high detail and over unprecedented duration. Importantly, identity is maintained throughout tracking, so we can characterize exploration and navigation at the population and individual animal levels together, as larvae search for food under varying hunger conditions, or negotiate variable temperature environments. In doing so, we are able to reveal new behavioral dynamics, where the animals\u2019 search strategy is modulated over hours and we can discriminate between different individual statistics that are otherwise hidden by population averages.\n\n## Results\n\n### A robotic system transports larvae throughout an arena\n\nTo perform long-term behavioral studies with the larva, we have designed and fabricated a robotic instrument that automatically tracks, transports, and feeds larvae throughout a large arena. The flexibility of its design enables arbitrary stimulus delivery alongside continuous measurement of behavior, yielding an unprecedented level of detailed locomotion data and a comprehensive view of locomotion strategies at the population and individual animal levels together.\n\nThe system operates by tightly coordinating video acquisition from an overhead camera with a manipulator arm capable of traversing three dimensions and a custom nozzle that can manipulate larvae (Figure 1B).\n\nA small number of larvae crawl on an agar gel are illuminated by red LEDs from the side, and a camera records their activity. The camera detects when a larva nears the edge of the crawling arena, and the robot arm and nozzle pick up the larva with the aid of a water droplet and place the larva back in the center. This process is shown in Figure 1E.\n\nMeanwhile, the mounted camera refreshes the image and therefore the position of the larva before and after each step of any protocol, ensuring that the process is robust to variations in crawling speed and behavior and to failed attempts, which are detected and repeated (Figure 1E). The pick-up/drop-off procedure is triggered at an average rate of 0.87 times per hour per animal, and is 99.8%/99.9% successful (90%/95% on the first try), highly important for the viability of long-term experiments.\n\nOur system must also address desiccation of the agar gel substrate and animal starvation, which limit experiment times and affect behavior. To address the former, we have built an auto-replenishing water moat (Figure 1D) in direct contact with the gel, which then maintains its water content and physical shape. In addition, the moat also provides a convenient and readily available water source for the nozzle. To address the latter, the robot can automatically administer a drop of apple juice (\u22480.1 g/mL sugar concentration) directly to the larva on a predetermined schedule. The larva is allowed to eat for a fixed time, then rinsed with water so that it can return to a free-crawling state.\n\nWith these features in place, our system has so far achieved more than 30 hr of continuous observation of individual larva behavior.\n\nIn some experiments we observe how larvae navigate a variable sensory environment. We use a similar system as outlined in Klein et al., 2015, to generate a 1D linear spatial thermal gradient of 0.035\u00b0C/mm with 13\u00b0C on one side and 21\u00b0C on the other.\n\n### Video analysis identifies key behavioral features\n\nOur data analysis pipeline extracts numerous behavioral features from video recordings of crawling larvae (Figure 2). Custom computer vision software takes raw movies and extracts the position and body contour of each larva while preserving individual animal identities (Figure 2A). Because the robot arm can briefly block the camera during pick-up events (average of \u22484.5 s of occlusion duration per pick-up event), resulting in dropped frames, the software interpolates larval positions in these frames to maintain continuous observation. Since the larva\u2019s body length is roughly 1 mm and it crawls with an average speed well below 1 mm/s, significant behavior events are unlikely to occur during dropped frames and interpolation is sufficient to rebuild trajectories.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/86585/elife-86585-fig2-v1.jpg)\n\n**Figure 2.:** (A) Raw video acquired during the experiment is fed into computer vision software that tracks each larva while maintaining their identity. (B) A posture tracker analyzes the isolated crops of each larva to determine its posture and orientation. (C) A state tracker determines the behavioral state of each animal at each time point. (D) Compiling all information from the preceding algorithms allows the pipeline to identify and calculate a wide variety of behavioral features.\n\nThe isolated crops of each larva are run through a recurrent U-Net Ronneberger et al., 2015 convolutional neural network (Figure 2B) to determine the posture and orientation. Using all available information (position, contour, and posture), we use a densely connected neural network with bidirectional recurrence to classify the behavioral state of the larva (\u2018run\u2019, \u2018turn\u2019) at each time point (Figure 2C; G\u00fcnther et al., 2016). From here, we can identify a wide range of behavioral features and track them over extended time periods.\n\n### The robot enables continuous observation of free exploratory searching over 6 hr\n\nOptimizing searches by modulating behavior is essential to the larva\u2019s ability to find a food source efficiently. While previous studies with Drosophila larvae have revealed some changes to its navigation over the first few minutes of exploratory search of an isotropic environment, how and whether their behavior evolves or persists afterward remains unknown (Klein et al., 2017). Studies on another small organism with qualitatively comparable navigation dynamics, the nematode Caenorhabditis elegans, show similar changes in behavior during the first \u2248 100 s. Some longer-duration experiments (1 hr vs 15 min) reveal a transition in navigation strategy between two distinct modes of local and global searches, but transitions across similar or longer time scales have yet to be observed in Drosophila (Calhoun et al., 2014, Klein et al., 2017). Here, we demonstrate how our larva picker robot enables continuous observation and analysis of larval locomotive behavior on very long time scales to study changes in its search strategy in an isotropic environment.\n\nIn Figure 3, we present the results from continuous observation of second instar wild type (Canton-S) larvae ($N=42$) freely roaming the experimental stage for a 6 hr time duration. Figure 3A and C shows the speed and the turn rate of the larvae, respectively, exhibiting the dynamics of their behavior. Notably, there is a significant drop in activity (both speed and turn rate) over the first hour before settling into a plateau that lasts for the following few hours. The correlation between larval crawl speed and turn rate over time has been previously observed (G\u00fcnther et al., 2016) and is clearly evident here, and we measure a correlation coefficient of 0.572 in the population mean speeds and turn rates. With the large amount of data gathered on each individual, we confirm that this correlation also exists at the individual level with an average correlation coefficient of 0.348 \u00b1 0.098.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/86585/elife-86585-fig3-v1.jpg)\n\n**Figure 3.:** (A) Larval crawl speed over time, comparing the results from continuous 6 hr observation recorded on the robot system (blue, $N=42$) to shorter 10 min observation of larger numbers of starved larvae (colored, $N=200$ per bar, from 10 experiments with 20 larvae each). (B) Larval crawl speed over 10 min after starvation. We observe a decline in crawl speed ($-7.7\\times10^{-5}$ mm/s2) comparable to that observed during the first hour of the continuous observation ($-6.9\\times10^{-5}$ mm/s2). (C) Larval turn rate over time. Similar to larval crawl speed (A), there is a noticeable drop in turn rate over the first hour, indicating an overall decrease in activity. (D) Analysis of larval crawl speed before and after an interaction with the larva picker robot. We plot larval crawl speed during the 5 min immediately before (purple) and the 5 min immediately after (red) an interaction with the robot, that is, a pick-up and drop-off event (vertical black dashed line). After a 1\u20132 min transient ($p<0.05$, Student\u2019s t-test), speed returns to the mean pre-interaction level (horizontal black line). For all panels, shaded regions indicate standard deviation from the mean.\n\n### Long-term free-roaming behavior is consistent with analogous snapshot observations\n\nSince the larva were not fed over the duration of the experiment, we compare continuous observations with short \u2018snapshot\u2019 observations of larvae at various stages of starvation ($N=200$ per stage). Larvae were removed from food and starved over a certain number of hours, then placed on an agar gel arena to be observe for 10 min without interruption, and with no interaction with the robot. The decline in activity seen in the robot-mediated experiments is not present when observing crawl speeds averaged over the 10 min duration (Figure 3A, colored bars). Upon closer inspection, however, larval crawl speed measured in the starvation studies (Figure 3B) reveal a trend over time that mirrors what we observe in the first hour of continuous observations. Over these 10 min snapshot observations, we measure an average decline of $-7.7\\times10^{-5}$ mm/s2, comparable to the average of $-6.9\\times10^{-5}$ mm/s2 seen over the first hour of continuous observations. The similarity offers confidence that the behavioral dynamics present here are not caused by transport robot actions but are real features of the animal that continue to persist and develop over a period that is more than 30 times longer than what snapshot observations can capture.\n\nTo further ensure that disruptions to behavior due to the robot\u2019s interference have minimal influence, we analyzed larval behavior before and after each interaction with the robot (i.e. a pick-up and drop-off event). Figure 3D shows averaged larval crawl speeds 5 min before and 5 min after an interaction event (vertical dashed line). As expected, mean larval speeds before the interaction shows little change over the small window. We do observe a transient of approximately 1\u20132 min just after the interaction, where there is a noticeable increase in speed ($p<0.05$, Student\u2019s t-test), but it quickly returns to the same mean as before (horizontal line).\n\n### A freely crawling single larva is continuously monitored for more than 30 hr\n\nAs noted in the previous section, the robot is also capable of automatic scheduled feeding. To keep the larva alive as long as possible, the robot administers a drop of sugar-rich solution directly to the larva once every hour. The larva is allowed to feed for 1 min, then the animal and the drop site is rinsed with water, and the larva resumes its exploratory search. Using this protocol, we are able to study larval locomotive behavior for over 30 hr, yielding an unprecedented amount of behavioral and developmental information on an individual animal. Figure 4 presents the trajectory of a single larva and some of its behavior features observed over a duration of 30 hr, where the individual animal crawls for more than 48 m. Some behavioral features exhibit steady change, like a decreasing speed throughout the experiment. Notable differences in path shape occur approximately half way through the long observation, with dramatic increases in curvature and turn size, consistent with the tight loops seen in the full trajectory plot (Figure 4A). It is unclear what caused the change in behavior. In addition to biological triggers, possible causes include changes in the environment, such as changes in the ambient humidity and uneven changes in agar desiccation or temperature profile producing subtle gradients over the experiment duration. We also note that this larva maintains a left-turning bias throughout the experiment.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/86585/elife-86585-fig4-v1.jpg)\n\n**Figure 4.:** In order to maintain exploratory search behavior in a fly larva without starving it, the robot automatically delivers a drop of apple juice (\u22480.1 g/mL sugar concentration). The larva is allowed to eat for 1\u22122 min, after which the robot uses water and air to rinse the larva, which then continues roaming freely. This protocol allows for continuous observation of larval behavior over developmental time scales. (A) The larva\u2019s trajectory over a 30 hr duration, with its path (green) stitched together by matching each corresponding robot pick-up and drop-off positions (orange markers) by translation (no rotation, e.g. up is always toward same edge of agar) to produce a continuous trajectory. The larva begins at the top right and ends its run at the bottom (purple markers). (B) A \u00d720 magnification on a small section of the path, showing the scale of the path compared to the larva\u2019s body (black bar, \u2248 1 mm). (C) We plot a number of behavioral features observed during its search trajectory, including its speed (red), body bend angle (orange), trajectory curvature (green), turn rate (blue), turn size (purple), and turn handedness (olive). Turn handedness is calculated as $(N_{l\u2062e\u2062f\u2062t}-N_{r\u2062i\u2062g\u2062h\u2062t})/N_{t\u2062o\u2062t\u2062a\u2062l}$, such that a handedness of 1.0 indicates all left turns, and a handedness of \u22121.0 indicates all right turns. Dotted gray lines indicate time of robot pick-up events.\n\n### Larval thermotaxis is maintained over long periods\n\nBy leveraging the automated transport system\u2019s flexible design to deliver and study responses to stimuli, we manipulate the temperature of the agar arena to study larval thermotaxis behavior. Drosophila larvae have robust, highly sensitive, and well-documented response to changes in temperature, and work has been done to decipher the behavioral strategy utilized to efficiently navigate thermal gradients (Luo et al., 2010, Klein et al., 2015). However, there is a lack of abundant data on individual animals, since single experiments last on the order of 10 min, and thus a lack of understanding of the differences in thermotaxis strategy and its development between individuals. It is also unknown how thermotaxis might evolve over long times. The automated transport system here provides an opportunity to delve deeper into these questions.\n\nNavigational efficiency can be captured by a dimensionless navigation index equal to $\u27e8v_{x}\u27e9/\u27e8v\u27e9$, the average of the component of crawling velocity along the thermal gradient normalized to the average speed. The resulting navigation index ranges from +1.o (parallel to gradient, i.e. crawling directly toward the warm side of the arena) to \u22121.0 (anti-parallel to gradient, i.e. crawling directly toward the cold side of the arena) (Klein et al., 2015, Luo et al., 2010, Gallio et al., 2011). Figure 5 shows the navigation index of second instar wild type (Canton-S) larvae as they crawl across the experiment arena for 6 hr, both with ($N=38$) and without ($N=42$) a thermal gradient present. The thermal gradient is centered at 17\u00b0C with a steepness of 0.032\u00b0C/mm, which would normally evoke robust cold avoidance behavior (Luo et al., 2010).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/86585/elife-86585-fig5-v1.jpg)\n\n**Figure 5.:** Comparison of navigation index in a zero gradient environment (A, $N=42$) and in a presence of a linear thermal gradient of 0.035\u00b0C/mm (B, $N=38$).Navigation efficiency is calculated as a dimensionless index equal to $\u27e8v_{x}\u27e9/\u27e8v\u27e9$, such that +1.0 is parallel to gradient, 0.0 is normal to gradient, and \u22121.0 is anti-parallel to gradient. We observe a clear increase in average navigation index (dashed lines) when exposed to a thermal gradient (increase from $0.032\\pm0.020$ to $0.130\\pm0.017$ [$p<0.001$, Student\u2019s t-test]), but we do not observe any significant pattern of change in that index over time. Solid line indicates a navigation index of zero, indicative of no preference in crawling direction. Shaded region indicates one standard deviation.\n\nWhen roaming freely with no gradient present, we observe an average navigation index of $0.032\\pm0.020$ (range indicating standard deviation). When a thermal gradient is applied to the arena, we observe a clear increase in navigation index to an average of $0.130\\pm0.017$ ($p<0.001$, Student\u2019s t-test). The navigation index also remains steady over the 6 hr measurement time.\n\n### Navigation efficiency of individuals exhibits distinct behavioral phenotypes\n\nShort snapshot observations produce limited information on any single animal, therefore limiting most thermotaxis analysis to population-level statistics. Long continuous observation enabled by the transport robot uncovers much more detailed information about individual animals, allowing us to analyze behavioral features at the individual level as well (Figure 6). Importantly, averaging over a population necessarily results in some loss of information such that different statistics at the individual level can generate the same population mean.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/86585/elife-86585-fig6-v1.jpg)\n\n**Figure 6.:** Each distribution shows the probability (vertical axis) of observing a certain navigation index (horizontal axis) at any given time in a series of observations for single individuals (purple), or a series of average observations for the population at each time point (red). When dissecting probability distributions of observed behavior, we notice that the same population (inter-animal) mean can be produced by two individual (intra-animal) distributions. (A) Simulated example of individual probability distributions with high intra-animal variability. The thin, lighter traces are probability distributions of eight individual animals. The resulting mean of intra-animal distribution (thick purple) closely resembles the population mean (thick red). (B) Simulated example of individual probability distributions with high inter-animal variability. The thin, lighter traces are probability distributions of eight individual animals. The resulting mean of intra-animal distribution (purple) forms a multimodal distribution despite a similar population mean (red) as (A, C). Empirical probability distribution of navigation index observed without a thermal gradient. There is high intra-animal variability but low inter-animal variability, such that the intra-animal mean forms a similar distribution to the population mean, as in the simulated results in panel A. $N=42$ individual larvae. (D) Empirical probability distribution of navigation index observed in presence of a thermal gradient (0.035\u00b0C/mm). In contrast to (C), during thermotaxis, the intra-animal mean forms a bimodal distribution ($B\u2062C=0.67$, compared to $B\u2062C=0.48$ in C) despite each individual distribution remaining unimodal ($B\u2062C=0.51\\pm0.06$ with gradient, $B\u2062C=0.50\\pm0.04$ without). $N=38$ individual larvae. This more closely resembles a distribution with high inter-animal variability as in the simulated results in panel B. (E) Individual empirical probability distribution of navigation index observed without a thermal gradient, displaying the same data used to generate panel C. (F) Individual empirical probability distribution of navigation index observed in presence of a thermal gradient, displaying the same data used to generate (D).\n\nFigure 6A\u2013B demonstrates the differences between two such cases by examining simulated toy examples of a probability distribution of observations of a navigation index, where a point on the distribution represents the probability of observing a certain navigation index at any given time. Each series of observations (one series of observation represents behavior of a single individual) is sampled from a Gaussian distribution, whose mean and standard deviation are randomly determined with two different statistics. In the first simulation (Figure 6A), the Gaussian mean and standard deviations for each animal have low inter-animal variability, producing a mean of intra-animal distributions that is similar to the population mean distribution. In the second (Figure 6B), high inter-animal variability in the same instead produces a multi-modal distribution for individuals despite the extra modes not being present at the population level. While the two simulations show distinct means of intra-animal probability distributions (purple), that is variability between individuals is different, both simulations still produce similar distributions when analyzing probability of navigation index observations at the population level (red). Because our long timescale thermotaxis experiments generate enough data to establish both population-level and individual-level navigation indices, we can examine how similar distributions of larval thermal navigation behavior may compare between the population and individual levels.\n\nInterestingly, we find that larval navigation index behavior switches from one model to the other when a thermal gradient is applied (Figure 6C and D). The population means have a similar shape and spread in both gradient and gradient-free contexts (red traces in Figure 6C and D). However, without a thermal gradient (Figure 6C), the individual distributions exhibit high intra-animal variability and low inter-animal variability, mirroring those seen in the first simulation (Figure 6A). In the presence of a thermal gradient (Figure 6D), we observe a bimodal intra-animal distribution despite each individual distribution remaining unimodal ($B\u2062C=0.51\\pm0.06$ with gradient, $B\u2062C=0.50\\pm0.04$ without), more closely resembling the second simulation (Figure 6B) instead. We measure a binomial coefficient (BC) (Freeman and Dale, 2013, Codling et al., 2008) of 0.67 in a thermal gradient, compared to $B\u2062C=0.48$ when there is no gradient present. This is a significant increase ($p<0.01$, Student\u2019s t-test) that crosses the critical value for detecting bimodality ($B\u2062C_{c\u2062r\u2062i\u2062t}=5/9$), clearly indicating a shift in the shape of the distribution.\n\n## Discussion\n\nWe have developed an automated system for long-term observation of Drosophila larvae (Figure 1). The robotic arm is capable of transporting larvae as they approach the edge of the experiment arena back to the center, allowing continuous observation of exploratory search or directed navigation behavior from an overhead camera. Through coordination and constant feedback between the robot and video acquisition, the system maintains larvae within the arena with high reliability, and we are able to achieve continuous observation over developmental time scales. The accompanying analysis pipeline takes the output video from these experiments to track larval posture and behavioral state while maintaining individual identities. The analysis compensates for the output video\u2019s low resolution and lack of detailed features of the larvae through a combination of local and global features and the use of recurrent neural networks (Figure 2).\n\nWe present a study of free-roaming behavior in larvae over 6 hr of continuous observation, comparing results to short 10 min snapshot observations of larvae at various stages of starvation (Figure 3). The comparison yields dissimilar patterns when considering the 10 min averages, but similar dynamics when considering the change in behavior over time, such that the 10 min trajectory in larval crawl speed resembles that seen in the first hour of continuous observation. The similarity suggests behavioral dynamics that are present in both experiments, but persist and develop over a duration that is an order of magnitude longer than what snapshot observations can capture.\n\nSince our analysis maintains animal identities throughout the video, we are able to capture behavioral information on single individuals with unprecedented detail. We leverage this new trove of data to analyze larval response to a thermal gradient and examine the probability distribution of the observed navigation index over time (Figure 6). In particular, we note that the same population (inter-animal) mean can be produced by different individual (intra-animal) distributions. Interestingly, larvae seem to switch to a different distribution shape upon encountering a thermal gradient. The individual distributions of navigation index without a thermal gradient exhibits high intra-animal variability but low inter-animal variability, forming a unimodal mean distribution that is similar to the population mean. In contrast, during thermotaxis the individual distributions exhibit high inter-animal variability, such that it become bimodal when a gradient is applied, despite the distribution shape remaining unimodal at the individual and population level. Thermotaxis behavior of individual crawlers approximately falls into two categories of neutral and strong crawlers (bimodal distribution), but this phenomenon was masked in past research because analysis focused on population averages and the experiments were too short. With our individual-focused and long-term experiments, we were able to see this phenomenon more clearly. This result is consistent with recent findings that suggest a switch-like (all-or-none) learning behavior in larval Drosophila, which is also not apparent when only analyzing population means. By observing decision-making behavior of individual larvae over several cycles of stimulus and reward, Lesar et al., 2021, find that Pavlovian training of preference for carbon dioxide is similarly quantized to two states (all-or-none), each centered at a fixed preference index. While the context and modality for the learning assays are different than our observation of larval thermotaxis, both results reveal new features of larval behavior that were previously obscured in population averages. Both results also suggest the existence of larval \u2018personality types\u2019, or distinct, quantized behavioral phenotypes that vary between individual animals (Lesar et al., 2021, Klein et al., 2015, G\u00fcnther et al., 2016, Ohyama et al., 2013). Our present work provides some progress in uncovering such phenotypes and furthering our understanding of learning and development of navigational strategies in individual animals in addition to population averages.\n\nWith the robot\u2019s flexible design, we can continue to probe these questions in many different contexts. For example, the robot could deliver food or soluble drugs directly to the larvae on a predetermined schedule to measure both the acute and chronic effects on the animal\u2019s behavior and physiology (Wolf and Heberlein, 2003, Bainton et al., 2000, Besson and Martin, 2005, Gerber and Stocker, 2007, Fayyazuddin et al., 2006, Robinson et al., 2012, Kaun et al., 2012). We could also leverage the existing lighting system to implement optogenetic activation or suppression of specific neurons, allowing delivery of fictive stimuli or studies of the effects of certain neuronal circuits on larval behavior and development (Gradinaru et al., 2010, Inada et al., 2011, Salvaterra and Kitamoto, 2001, Hernandez-Nunez et al., 2015, Kane et al., 2013). This could either be activated on a predetermined schedule, or integrated directly with the existing robot and camera feedback system to enable activation triggers based on specific conditions such as larval behavior (e.g. activate upon larva initiating a turn).\n\nOur study has sought to characterize very-long-timescale free-crawling behavior, both with and without a single stimulus that influences crawling direction. The larva picker robot effectively acts as a 2D conveyor belt, rapidly (on the order of seconds) repositioning a larva each time it reaches the edge of the arena (on the order of every 60 min). Although this method enables continuous measurement of free crawling, it does have inherent limitations.\n\nFirst, the behavior we measure is far removed from what larva behavior looks like in an ecological setting. In nature, larvae search for rotting fruit to consume, and if they find it, tend to stay in it during larval development, then typically move to drier areas to pupate (Sokolowski et al., 1986). During this process they sense and respond to many stimuli (odors, humidity, light, vibration, temperature, etc.). In the present work we isolate the larvae from stimuli, placing them on a flat substrate with no visible light, food, or temperature changes, thus providing an environment where larvae are always searching, in a state of near-constant locomotion. This could affect larval development times and other behavioral features, which will be in a better position to study with a more rigorous feeding system and a larger data set. As an early fundamental step in what we hope becomes a more complete understanding of multisensory integration and behavior in realistic settings, we have focused on understanding high-bandwidth 2D crawling trajectories and the basic behavior sequences that form them.\n\nSecond, there are limitations to how well we can truly isolate crawling larvae from outside stimuli. Although experiments are run with red lights (not visible to larvae), other light from the surrounding lab could reach the animals, and the room is not precisely temperature stabilized. Similarly, vibrations or air currents in the building were not measured or directly controlled. The most blatant outside stimulus is the pick-up and drop-off process from the robot. Although we have determined that the short-term effects of this disturbance fade after less than 60 s, we do not yet have sufficient data to study long-term effects, and repeated transport from the robot arm could introduce important changes. We do have several reasons to believe these effects will be minimal, however. In one of our previous studies (Klein et al., 2015) we observed that a larva\u2019s thermal response behavior becomes uncorrelated with its stimulus history after approximately 10 s; and in another Berne et al., 2021 found that physical behavior returns to normal within approximately 20 s of a stimulus introduction, even in presence of very strong vertical vibration. Further, although fly larvae can form associative memories, particularly in pairing conditioned stimuli with odors or tastes (Gerber and Stocker, 2007), our arenas are free of salient stimuli that would be likely to induce this such memory formation. Since larvae do not see in our environment and do not make spatial maps, we consider the larva\u2019s behavior to be exploratory, even though in a literal sense they are exploring the same space repeatedly. Because the animal is highly food-motivated, it will continuously execute search patterns even after many hours of failure to locate food.\n\nA major obstacle in way of achieving continuous observation of the entire larval life cycle (\u2248 100 hr) is a reliable method of delivering enough nutrition and ensuring the larva has sufficiently fed. The current method of delivering drops of sugar-rich solutions has not been sufficient to trigger molting into the next instar stage, thus limiting us to a single instar. Feeding larvae on their primary behavior arena can also introduce new stimuli, as remnants of the food solutions can be sensed by the olfactory or gustatory systems in the larvae. Future improvements to the apparatus may include a separate short-term feeding station away from the main navigation area. We hope to solve this problem and others as we continue to develop the system and expand its capabilities, for example with a second adjacent arena with more nutritive food where larvae could experience longer feeding times before being returned by the robot to the primary behavioral arena. Such rich detail covering the entire development of the larva would provide powerful insight into the long-term learning, memory, and behavioral adaptations in tandem with the physiological developments that take place between instar stages.\n\nWe hope that this study has highlighted some advantages of long-term continuous measurement, and that similar instrumentation and analysis method could be applied to other organisms, along with a wide range of investigations in the fly larva.\n\n## Materials and methods\n\n### Larva picker robot\n\nThe manipulator arm is translated by stepper motors (Nema 8) in the X- and Y-axes and a 5V solenoid (SparkFun) for the Z-axis, which are driven by a programmable controller board (SmoothieBoard) with physical and software limits in place to prevent overtravel. At the end of the arm is a custom 18-gauge nozzle (Figure 1C) that can interact with the larva and the experimental arena (Figure 1D) that sit below the camera and manipulator assembly.\n\nA 2.3-megapixel CMOS camera (Grasshopper3) observes a small number (4\u20136) of larvae crawling on a 22 \u00d7 22 cm2 agar gel (2.5% wt/vol agar in water, with 0.75% charcoal added for improved contrast) and records at 10 Hz. Larvae are illuminated with four strips of red LEDs (dominant wavelength around 620 nm), which is outside the visible range of the larva (Sprecher et al., 2007), arranged in a square around the agar gel. To maintain larval exploratory searching behavior over a long duration, the camera detects when one nears the edge of the arena. This triggers the manipulator to pick up the larva with the nozzle. The larva is maintained on the nozzle via the surface tension of a water droplet. The water droplet provides a way to indirectly interact with the larva to prevent causing damage to the animal. After the manipulator arm moves to the center of the arena, it drops off the larva with a slow horizontal motion, effectively rolling it off the nozzle (Figure 1E). The manipulator replenishes the water droplet before each pick-up, and a small flat Delrin plastic disk (2 mm diameter) at the bottom of the nozzle provides more surface area for the droplet to form (Figure 1C). When the surface tension of the water is insufficient to pick up the larva, the nozzle is capable of exerting vacuum suction to assist in pick-up, as well as allowing air flow to release the larva during drop-off.\n\nIn some experiments we observe how larvae navigate a variable sensory environment. We use a similar system as outlined in Klein et al., 2015, to generate a 1D linear spatial thermal gradient.\n\nWe fit the underside of the experimental arena\u2019s aluminium base with hot and cold reservoirs on opposite sides, each equipped with two liquid-cooled water blocks. PID (proportional-integral-derivative) controllers drive thermoelectric coolers between each water block and its reservoir to maintain a thermal gradient of 0.035\u00b0C/mm across the agar gel in the arena, with 13\u00b0C on one side and 21\u00b0C on the other.\n\n### Constrained larval behavior\n\nDrosophila larvae tend to spend a lot of time near the edges of conventional cultivation dishes. To demonstrate this, we monitored larvae crawling in a 60 mm agar dish for 20 min. An example time lapse showing the distribution of animals moving toward, and dwelling at, the perimeter is shown in Figure 1\u2014figure supplement 1.\n\n### Analysis pipeline\n\n#### Position tracking\n\nCustom computer vision software takes raw movies and extracts the position and body contour of each larva while preserving individual animal identities.\n\nEach frame is prepared with increased contrast with dynamic background subtraction. Over long duration experiments, the background that the larvae navigate may change slowly over time due to interactions with the animals or environmental effects such as condensation or dust. With this in mind, we update a dynamic background that will be subtracted from each frame using an infinite impulse response filter. The background, $B_{t}$, for the frame, $F_{t}$, is calculated as:\n\n$$\nB_{t}=\\alpha\u2062F_{t}+(1-\\alpha)\u2062B_{t-1}\n$$\n\nwhere $\\alpha$ defines the feedforward coefficient that is chosen heuristically based on the imaging rate and experimental conditions.\n\nAfter preprocessing, larvae in each frame are detected by isolating outermost contours around clusters of bright pixels. Contours within a size range are identified as individual larvae, where the size range is manually adjusted to match the camera resolution and the current larval development stage. Animal identities are linked frame-to-frame by minimizing a pairwise loss that is calculated using a weighted sum of distances between heuristically chosen features from the previous frame to the next. The loss between a detected contour, $i$, and a larva from the preceding frame, $j$, is calculated as:\n\n$$\nL_{i\u2062j}=\\beta_{r}\u2062D\u2062(r_{i},r_{j})+\\beta_{p}\u2062D\u2062(p_{i},p_{j})+\\beta_{a}\u2062D\u2062(a_{i},a_{j})\n$$\n\nwhere $r$ is position of the larva\u2019s center of mass, $p$ is momentum, $a$ is the contour area (i.e. animal size), and $D\u2062(x,y)$ is the Euclidean distance between vectors $x$ and $y$. The coefficients, \u03b2, weigh each distance term and can be adjusted for different animals and imaging conditions. Each new contour, $i$, is uniquely assigned to an ID, $j$, beginning with the pair with the lowest loss, then the next lowest loss out of the remaining possible pairs, etc. Any larvae without an assignment in the current frame is given interpolated properties based on the previous few frames to compensate for occlusions or other cases when it is missing from view. Since the linking is sequential, doing so also helps avoid some cases of undesirable identity swaps. With contours in each frame assigned to a unique larva, the centroid of each contour is recorded as the position of the animal and is used to produce a crop around each larva.\n\nWe observe collision events occurring at an average rate of 0.63 events per hour in an arena of six larvae. In frames where two or more animals are colliding, that is their contours are on top of each other to form a single large contour, the contours for the colliding animals from previous frames are translated and combined to generate a similarly large contour. The translation of each contour is initialized using the momentum of the larva in preceding frames, and is optimized for a small number of epochs ($N<50$) such that the resulting combination best matches the large contour seen in the current frame. The coordinates resulting from this optimization are used as the position of the animal in these frames instead. Through this method, identities are preserved across collision events with an accuracy of 91%, or <1 misidentifications per 6 hr experiment, which can be manually verified and corrected.\n\n#### Posture analysis\n\nThe isolated crops (64 \u00d7 64 in pixels) around each animal are run through a recurrent U-Net (Ronneberger et al., 2015) convolutional neural network to determine the posture and orientation. The U-Net architecture has been shown to be highly effective at tasks that preserve spatial structure in an image by taking advantage of both global and local features (Ronneberger et al., 2015, Risse et al., 2017, He et al., 2015). We design our model such that the output is a probability heat map of the head and tail of the larva, which preserves the global spatial structure of the larva\u2019s body.\n\nTraditional convolutional neural networks, including U-Net, often fail when analyzing sparse images with low-resolution features (Risse et al., 2017). This is particularly pronounced in our case since each larva is generally captured as clusters of only \u224830 uniformly bright pixels surrounded by black pixels. To compensate for this, we utilize more temporal information, such as the current momentum of the centroid. Since larval posture does not deviate much from frame to frame, we add recurrence in the form of long short-term memory (LSTM) cells (Hochreiter and Schmidhuber, 1997) at the beginning, middle, and final layers of the network to simplify the problem at each subsequent time step. The recurrence also creates an additional cost for head-tail flips which we have found to be a common issue with previous approaches to the problem (Risse et al., 2017, Mathis et al., 2018, G\u00fcnel et al., 2019).\n\nOur implementation of the network comprises two main modules: an encoder and a decoder. The encoder is composed of four submodules of alternating convolutional neural network layers and nonlinear activation layers, including a rectified linear unit (ReLU) and a pooling layer. This is mirrored by the decoder on the other side with the same submodules with upsampling layers replacing the pooling ones. We follow the U-Net architecture to add information \u2018highways\u2019 between corresponding layers on the encoder and decoder side, passing outputs from each submodule of the encoder into the corresponding submodule of the decoder. We further modify this architecture by adding recurrence in the form of LSTM cells in the convolutional layers at the beginning of the encoder, the center-most layers between the two modules, and the end of the decoder to simplify the problem at each subsequent time step.\n\nWe formulate the output as a probability heat map of keypoints that define the posture of the animal (e.g. head and tail of the Drosophila larva), which preserves the global spatial structure of the larva\u2019s body. The network is trained using manually labeled videos of larvae with \u22481000 frames per animal undergoing several posture changes, including at least one turning event. Upon verification with a small number of such videos withheld during training, we measure of RMSE of $1.60\\pm0.66$ px for the head and tail coordinates.\n\nWe may also estimate the \u2018spine\u2019 of the animal that characterizes the curvature of the body by using the head and tail points as shown in Risse et al., 2017. The contour of the animal is split into two halves, $c_{1}$ and $c_{2}$, such that both connect the head and tail along either side of the body. We resample the half-contours at equal rates via linear interpolation such that each point along $c_{1}$ has a unique match along $c_{2}$. Spine points can then be calculated as the midpoint between equidistant pairs along the two contours. We use the resulting \u2018midspine\u2019 point as a more accurate position of the animal, $r_{t}$, which is favored for subsequent downstream analysis of behavior over the centroid of the animal contour in image space.\n\n#### Behavior classification\n\nUsing all available information (position, contour, and posture), we use a densely connected neural network with bidirectional recurrence to classify the behavioral state of the animal (e.g. \u2018forward crawl\u2019, \u2018turn\u2019) at each time point (G\u00fcnther et al., 2016). The network is a sequence of nine densely connected linear layers alternating with ReLU activation layers, and a bidirectional LSTM layer at the beginning and middle of the sequence for a total of 11 layers. The bidirectional recurrence here allows the network to identify the bends in the animal\u2019s path and particular postural dynamics by comparing frames both before and after. A softmax activation layer at the end of the network scales the output between 0 and 1, representing the probability of each possible larval behavior exhibited in the current frame. The state with the highest assigned probability is selected as the current behavioral state, with some additional cost for switching between behavioral states. From here, we can identify a wide range of behavioral features and track them over extended time periods.\n\nThe network is trained using manually labeled videos of individual larvae crawling for 1 hr. Since the larva is likely to be crawling forward for a large majority of frames, the loss is weighted 10-fold toward frames during turning events. Upon verification with a small number of such videos withheld during training, we measure of an accuracy of 99.8% of frames labeled with the correct behavioral state.\n",
+      "created_at": "2025-12-04T02:53:13.186085Z"
+    },
+    {
+      "id": "b4bb19da-16bf-4cd9-9345-6df311f14a9c",
+      "submission_id": "d20d8174-6160-43fa-aa4f-86be54972e69",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Matthieu Louis, https://ror.org/02t274463 University of California, Santa Barbara United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.86585.sa0](https://doi.org/10.7554/eLife.86585.sa0)\n\nThis study describes a useful method to monitor the behavior of Drosophila larvae in a uniform environment over much longer time scales than was possible with previous methods. The authors provide a solid characterization of aspects of the method and show that the behavior of single larvae can be quantified over several hours. The experiments offer a proof-of-concept for a robotic device that will enable the investigation of behavior in long-term experiments in ways that were previously unimaginable.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Matthieu Louis, https://ror.org/02t274463 University of California, Santa Barbara United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.86585.sa1](https://doi.org/10.7554/eLife.86585.sa1)\n\nOur editorial process produces two outputs: i) public reviews designed to be posted alongside the preprint for the benefit of readers; ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Continuous, long-term crawling behavior characterized by a robotic transport system\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and K VijayRaghavan as the Senior Editor.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\nThe reviewers appreciate the qualities and future impact of the method you have developed to study the long-term behavior of Drosophila larvae. The observation of a bimodal distribution in the navigation index of single larvae highlights that mean behaviors measured over short observation times can mask diversity in the behaviors of individual animals. You provide strong evidence that your system will be useful to other laboratories interested in prolonged recording of larval activity. However, several weaknesses of the manuscript should be addressed prior to its publication. The revision does not require the collection of additional data. Generally, you should provide a more thorough description of where your method fits with respect to published work and how the method itself works. More specifically, we recommend that you implement the following changes:\n\n\u2013 Improve the introduction to more accurately reflect previous work done to study behavior in worms and rodents over long durations.\n\n\u2013 Provide additional information about the training process of the neural network used to track larvae. Please ensure that the method is reproducible and customizable by other labs.\n\n\u2013 Discuss the implications of physical perturbations during the picking and transportation of an animal. These perturbations are likely to affect subsequent behavior, which might preclude the study of prolonged free-moving exploration. These limitations should be discussed in the manuscript.\n\n\u2013 Comment on the ability of the tracker to maintain the identity of single larvae over prolonged periods of time.\n\nReviewer #1 (Recommendations for the authors):\n\nIntroduction:\n\n43: More focus is needed for clarification. What is the problem you are trying to solve? It is very much larva-specific but that is not clear at all from the introduction. Both the aim of the work and the relative background in the literature can be defined in greater detail. High throughput analysis of behavior, in general, is possible and not prohibitive at all. Examples are the Drosophila activity monitors (commercial) and the ethoscope (open source). Both are able to record the activity of adult animals throughout their lifespan, in high throughput.\n\n87: There is an issue here with how you define exploration. Picking an animal from the border of an arena to place it back in the center is not a way to prolong exploration. It's certainly a way to prolong crawling behaviour but not necessarily exploration. You are basically mimicking a conveyor belt here: it can certainly be useful but I don't think it has much to do with exploration. In fact, it would be important to think of this concept in ecological terms and ask: for how long will a larva crawl/explore its natural environment? Will a larva in an apple crawl continuously for 30 hours, as it does in this device?\n\n315: I suppose you refer to melanogaster only, or do you mean all Drosophila species?\n\nFigure 1: I don't think the concept exposed in E is so difficult to require illustrations. F is really difficult to understand and thus not informative. Perhaps replace it with a supplementary video of the picking process?\n\nFigure 5: Not clear how to interpret this figure. What are the dashed and continuous lines? What does the P*** refer to? You refer to a \"clear increase in navigation index\" but this is not clear by looking at the figure.\n\nFigure 6: I am afraid I do not understand the reasoning behind this experiment. This would really benefit from a clearer and more accessible explanation, in terms of aims and methods.\n\nReviewer #2 (Recommendations for the authors):\n\nMy only comment to the authors is that it would nice to see additional paths in the very long duration recordings. Are some larvae right-handed while others are predominantly left-handed?\n\nReviewer #3 (Recommendations for the authors):\n\n\u2013 I don't think Figure 1A is cited in the text.\n\n\u2013 Line 185: How long are the occlusions by the robot arm and how far does a typical larva move (perhaps as a fraction of body length) during the occlusions?\n\n\u2013 Line 326: Is \"navigational effectiveness\" a standard term? If not, I wonder if a better term might be something like navigational cosine? The reason I ask is that if a larva has reached a desired temperature in a gradient then the \"effective\" thing to do might be to stop moving or move orthogonally to the gradient which would have a Navigational Effectiveness of 0.\n\n\u2013 Line 343: include details of statistical test.\n\nSuggestions for improvement:\n\n\u2013 Include lines on the time series in Figure 4 to show the picking times.\n\n\u2013 In general, the data in Figure 4 is tantalizing, but because it's based on a single observation we can't rule out the increase in speed later in the recording isn't due to chance or some environmental change in the room. The most interesting thing would be to include some more data, but if that's not possible, including some more discussion of possible causes (including those that don't have anything to do with larval biology) in the text might help.\n",
+      "created_at": "2025-12-04T02:53:13.186085Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T02:53:13.186085Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T02:53:13.186085Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "67e22a0d-3052-4f3b-a657-904be51506ba",
+      "content_id": "40d8d67c-faad-482f-b04c-59e86a6eab43",
+      "claim_id": "C1",
+      "claim": "Short behavioral experiments have been successful in characterizing rapid responses to a range of stimuli at the population level in Drosophila larvae and many other systems.",
+      "claim_type": "EXPLICIT",
+      "source": "In Drosophila larvae and many other systems, short behavioral experiments have been successful in characterizing rapid responses to a range of stimuli at the population level.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about the state of the field, drawing on established scientific knowledge about behavioral experiments.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:53:13.186085Z"
+    },
+    {
+      "id": "5166daa3-c004-45a0-a62f-21ec92a55495",
+      "content_id": "40d8d67c-faad-482f-b04c-59e86a6eab43",
+      "claim_id": "C2",
+      "claim": "The lack of long-term continuous observation makes it difficult to dissect comprehensive behavioral dynamics of individual animals.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the lack of long-term continuous observation makes it difficult to dissect comprehensive behavioral dynamics of individual animals and how behavior (and therefore the nervous system) develops over time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference about the limitations of short-term observations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:53:13.186085Z"
+    },
+    {
+      "id": "c2b475ec-e20a-408d-86b2-ba2ba90e3abf",
+      "content_id": "40d8d67c-faad-482f-b04c-59e86a6eab43",
+      "claim_id": "C3",
+      "claim": "A robotic instrument has been engineered that automatically tracks and transports larvae throughout an arena.",
+      "claim_type": "EXPLICIT",
+      "source": "To allow for long-term continuous observations in individual fly larvae, we have engineered a robotic instrument that automatically tracks and transports larvae throughout an arena.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the primary experimental system developed in this work, supported by the design and implementation details provided.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:53:13.186085Z"
+    },
+    {
+      "id": "fbcd3649-2e34-4565-b2f8-0a0d160a3b85",
+      "content_id": "40d8d67c-faad-482f-b04c-59e86a6eab43",
+      "claim_id": "C4",
+      "claim": "The robotic system enables controlled stimulus delivery and continuous measurement over developmental time scales.",
+      "claim_type": "EXPLICIT",
+      "source": "The flexibility and reliability of its design enables controlled stimulus delivery and continuous measurement over developmental time scales, yielding an unprecedented level of detailed locomotion data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes capabilities of the system demonstrated through the experiments presented.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:53:13.186085Z"
+    },
+    {
+      "id": "e85303bc-ad66-494b-8441-f4fe418060eb",
+      "content_id": "40d8d67c-faad-482f-b04c-59e86a6eab43",
+      "claim_id": "C5",
+      "claim": "Continuous observation of exploratory search behavior was performed over a duration of 6 hr with and without a thermal gradient present.",
+      "claim_type": "EXPLICIT",
+      "source": "We utilize the new system's capabilities to perform continuous observation of exploratory search behavior over a duration of 6 hr with and without a thermal gradient present, and in a single larva for over 30 hr.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes specific experiments conducted using the robotic system.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:53:13.186085Z"
+    },
+    {
+      "id": "b6ca1a7d-9f81-4720-b184-0d504395970b",
+      "content_id": "40d8d67c-faad-482f-b04c-59e86a6eab43",
+      "claim_id": "C6",
+      "claim": "A single larva was continuously observed for over 30 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "We utilize the new system's capabilities to perform continuous observation of exploratory search behavior over a duration of 6 hr with and without a thermal gradient present, and in a single larva for over 30 hr.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a specific long-duration experiment conducted.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:53:13.186085Z"
+    },
+    {
+      "id": "715e28f7-86d3-4768-8ca4-08bda635d029",
+      "content_id": "40d8d67c-faad-482f-b04c-59e86a6eab43",
+      "claim_id": "C7",
+      "claim": "Long-term free-roaming behavior and analogous short-term experiments show similar dynamics that take place at the beginning of each experiment.",
+      "claim_type": "EXPLICIT",
+      "source": "Long-term free-roaming behavior and analogous short-term experiments show similar dynamics that take place at the beginning of each experiment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from comparing different experimental conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:53:13.186085Z"
+    },
+    {
+      "id": "fac02cc0-11ff-4a2e-9728-cb0c83b35f78",
+      "content_id": "40d8d67c-faad-482f-b04c-59e86a6eab43",
+      "claim_id": "C8",
+      "claim": "Characterization of larval thermotaxis in individuals reveals a bimodal distribution in navigation efficiency.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, characterization of larval thermotaxis in individuals reveals a bimodal distribution in navigation efficiency, identifying distinct phenotypes that are obfuscated when only analyzing population averages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a key finding from the thermotaxis experiments, supported by statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:53:13.186085Z"
+    },
+    {
+      "id": "b20b21c1-f51e-4996-b116-5c93a460b560",
+      "content_id": "40d8d67c-faad-482f-b04c-59e86a6eab43",
+      "claim_id": "C9",
+      "claim": "Distinct phenotypes in navigation efficiency are obfuscated when only analyzing population averages.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, characterization of larval thermotaxis in individuals reveals a bimodal distribution in navigation efficiency, identifying distinct phenotypes that are obfuscated when only analyzing population averages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from comparing individual-level and population-level analyses.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:53:13.186085Z"
+    },
+    {
+      "id": "d570ed8e-7255-4615-bf9a-2fb51d56574f",
+      "content_id": "40d8d67c-faad-482f-b04c-59e86a6eab43",
+      "claim_id": "C10",
+      "claim": "Roaming and dwelling behavior in worms has been recorded with high spatiotemporal resolution through larval development via isolation of individuals in small arenas.",
+      "claim_type": "EXPLICIT",
+      "source": "Roaming and dwelling behavior in worms has been recorded with high spatiotemporal resolution through larval development by via isolation of individuals in small arenas (Stern et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This cites prior work on C. elegans as context for the current study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:53:13.186085Z"
+    },
+    {
+      "id": "8dbc59b9-5a16-4a31-80be-1ae22f3c0b8c",
+      "content_id": "40d8d67c-faad-482f-b04c-59e86a6eab43",
+      "claim_id": "C11",
+      "claim": "Long-term home-cage behavior in both mice and rats has been studied using a combination of behavior-specific sensors and cameras.",
+      "claim_type": "EXPLICIT",
+      "source": "Long-term home-cage behavior in both mice (Goulding et al., 2008) and rats (Poddar et al., 2013) has been studied using a combination of behavior-specific sensors and cameras.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This cites prior work on rodents as context for the current study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:53:13.186085Z"
+    },
+    {
+      "id": "6ca67e65-dd58-4c0b-9503-27ac806279ad",
+      "content_id": "40d8d67c-faad-482f-b04c-59e86a6eab43",
+      "claim_id": "C12",
+      "claim": "Long-duration recording of 1D walking in adult fruit flies has been recorded using a simple photobeam interrupt.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, long-duration recording of 1D walking in adult fruit flies (Drosophila melanogaster) has been recorded using a simple photobeam interrupt (Pfeiffenberger et al., 2010), and more complex behaviors have been recorded using video monitoring (Geissmann et al., 2017) and robotic manipulation (Alisch et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This cites prior work on adult Drosophila as context for the current study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:53:13.186085Z"
+    },
+    {
+      "id": "cabd4780-88c9-4755-b07d-c4c06754a68e",
+      "content_id": "40d8d67c-faad-482f-b04c-59e86a6eab43",
+      "claim_id": "C13",
+      "claim": "The D. melanogaster larva possesses a well-defined, slow behavioral repertoire and robust response to many stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "It possesses a well-defined, slow behavioral repertoire and robust response to many stimuli (Sokolowski, 1980, Louis and de Polavieja, 2017, Riedl and Louis, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This draws on established knowledge about Drosophila larvae, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:53:13.186085Z"
+    },
+    {
+      "id": "b4e3cb94-85be-4fe9-95ea-d82ee1948c9b",
+      "content_id": "40d8d67c-faad-482f-b04c-59e86a6eab43",
+      "claim_id": "C14",
+      "claim": "The fruit fly has a relatively short life cycle with high accessibility to their three short larval stages.",
+      "claim_type": "EXPLICIT",
+      "source": "The fruit fly has a relatively short life cycle with high accessibility to their three short larval stages (Fern\u00e1ndez-Moreno et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about Drosophila development, supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:53:13.186085Z"
+    },
+    {
+      "id": "32e63aee-b98b-42db-b015-3e1f54203112",
+      "content_id": "40d8d67c-faad-482f-b04c-59e86a6eab43",
+      "claim_id": "C15",
+      "claim": "During larval stages, larvae are highly food-motivated and thus in the absence of food engage in nearly continuous exploratory search movement.",
+      "claim_type": "EXPLICIT",
+      "source": "During these stages, larvae are highly food-motivated and thus in the absence of food engage in nearly continuous exploratory search movement, which facilitates behavioral studies of locomotion over long times (Wosniack et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about larval behavior, supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:53:13.186085Z"
+    },
+    {
+      "id": "29261396-6c2c-4dd1-82c6-dfc90edd9f50",
+      "content_id": "40d8d67c-faad-482f-b04c-59e86a6eab43",
+      "claim_id": "C16",
+      "claim": "Drosophila larvae demonstrate responses to chemosensory cues.",
+      "claim_type": "EXPLICIT",
+      "source": "They also demonstrate responses to chemosensory cues (Schumann et al., 2021, Kim et al., 2017, Vogt et al., 2021, Colomb et al., 2007), mechanical and nociceptive stimulation (Almeida-Carvalho et al., 2017, Almeida-Oliveira et al., 2021, Kudow et al., 2019), light (Kane et al., 2013), as well as the ability to retain memory and change their behaviors in accordance with learned experiences, and habituate to prolonged stimuli (McGuire et al., 2003; McGuire et al., 2004, Larkin et al., 2015, Berne et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about larval sensory responses, supported by multiple citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:53:13.186085Z"
+    },
+    {
+      "id": "748a4058-c390-4718-98ed-8aa0f6840fb1",
+      "content_id": "40d8d67c-faad-482f-b04c-59e86a6eab43",
+      "claim_id": "C17",
+      "claim": "Drosophila larvae demonstrate responses to mechanical and nociceptive stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "They also demonstrate responses to chemosensory cues (Schumann et al., 2021, Kim et al., 2017, Vogt et al., 2021, Colomb et al., 2007), mechanical and nociceptive stimulation (Almeida-Carvalho et al., 2017, Almeida-Oliveira et al., 2021, Kudow et al., 2019), light (Kane et al., 2013), as well as the ability to retain memory and change their behaviors in accordance with learned experiences, and habituate to prolonged stimuli (McGuire et al., 2003; McGuire et al., 2004, Larkin et al., 2015, Berne et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about larval sensory responses, supported by multiple citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:53:13.186085Z"
+    },
+    {
+      "id": "2033aba2-50f7-488b-837a-31c83c6176ad",
+      "content_id": "40d8d67c-faad-482f-b04c-59e86a6eab43",
+      "claim_id": "C18",
+      "claim": "Drosophila larvae demonstrate responses to light.",
+      "claim_type": "EXPLICIT",
+      "source": "They also demonstrate responses to chemosensory cues (Schumann et al., 2021, Kim et al., 2017, Vogt et al., 2021, Colomb et al., 2007), mechanical and nociceptive stimulation (Almeida-Carvalho et al., 2017, Almeida-Oliveira et al., 2021, Kudow et al., 2019), light (Kane et al., 2013), as well as the ability to retain memory and change their behaviors in accordance with learned experiences, and habituate to prolonged stimuli (McGuire et al., 2003; McGuire et al., 2004, Larkin et al., 2015, Berne et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about larval sensory responses, supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:53:13.186085Z"
+    },
+    {
+      "id": "b25a8171-a5ff-4af9-9432-b25dc35405d8",
+      "content_id": "40d8d67c-faad-482f-b04c-59e86a6eab43",
+      "claim_id": "C19",
+      "claim": "Drosophila larvae have the ability to retain memory and change their behaviors in accordance with learned experiences.",
+      "claim_type": "EXPLICIT",
+      "source": "They also demonstrate responses to chemosensory cues (Schumann et al., 2021, Kim et al., 2017, Vogt et al., 2021, Colomb et al., 2007), mechanical and nociceptive stimulation (Almeida-Carvalho et al., 2017, Almeida-Oliveira et al., 2021, Kudow et al., 2019), light (Kane et al., 2013), as well as the ability to retain memory and change their behaviors in accordance with learned experiences, and habituate to prolonged stimuli (McGuire et al., 2003; McGuire et al., 2004, Larkin et al., 2015, Berne et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about larval learning and memory, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:53:13.186085Z"
+    },
+    {
+      "id": "8d9e027d-3861-4aeb-91c8-a7a7a9f6ea70",
+      "content_id": "40d8d67c-faad-482f-b04c-59e86a6eab43",
+      "claim_id": "C20",
+      "claim": "Drosophila larvae habituate to prolonged stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "They also demonstrate responses to chemosensory cues (Schumann et al., 2021, Kim et al., 2017, Vogt et al., 2021, Colomb et al., 2007), mechanical and nociceptive stimulation (Almeida-Carvalho et al., 2017, Almeida-Oliveira et al., 2021, Kudow et al., 2019), light (Kane et al., 2013), as well as the ability to retain memory and change their behaviors in accordance with learned experiences, and habituate to prolonged stimuli (McGuire et al., 2003; McGuire et al., 2004, Larkin et al., 2015, Berne et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about larval habituation, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:53:13.186085Z"
+    },
+    {
+      "id": "806ab2b7-86f3-46f5-b2ef-666dd58f7e28",
+      "content_id": "40d8d67c-faad-482f-b04c-59e86a6eab43",
+      "claim_id": "C21",
+      "claim": "Larvae perform robust behavioral responses to temperature changes, engaging in thermotaxis along thermal gradients.",
+      "claim_type": "EXPLICIT",
+      "source": "Larvae also perform robust behavioral responses to temperature changes, engaging in thermotaxis along thermal gradients, and modulating aspects of their locomotive behavior, in particular their turning rate, in order to reach optimal conditions (Luo et al., 2010, Klein et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about larval thermotaxis, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:53:13.186085Z"
+    },
+    {
+      "id": "ae8f62cb-9383-4ecb-be95-7c34680c17f0",
+      "content_id": "40d8d67c-faad-482f-b04c-59e86a6eab43",
+      "claim_id": "C22",
+      "claim": "Larvae modulate their turning rate in order to reach optimal temperature conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Larvae also perform robust behavioral responses to temperature changes, engaging in thermotaxis along thermal gradients, and modulating aspects of their locomotive behavior, in particular their turning rate, in order to reach optimal conditions (Luo et al., 2010, Klein et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the mechanism of larval thermotaxis, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:53:13.186085Z"
+    },
+    {
+      "id": "ad9b549e-c82f-4a3c-98d1-c2b5f17563a5",
+      "content_id": "40d8d67c-faad-482f-b04c-59e86a6eab43",
+      "claim_id": "C23",
+      "claim": "A connectome brain wiring diagram is available for Drosophila larvae.",
+      "claim_type": "EXPLICIT",
+      "source": "The recent availability of a connectome brain wiring diagram (Huser et al., 2012, Larderet et al., 2017) and numerous genetic tools have facilitated probing the neural circuits and molecular mechanisms that underlie these behaviors (Hernandez-Nunez et al., 2020, Kaun et al., 2012, Gepner et al., 2015, Sokolowski, 1980, Tian et al., 2009, Xie et al., 2018, Inada et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This cites the availability of connectome data as a resource for the field.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:53:13.186085Z"
+    },
+    {
+      "id": "f5d7e289-6222-452b-b2b9-b5ba402273df",
+      "content_id": "40d8d67c-faad-482f-b04c-59e86a6eab43",
+      "claim_id": "C24",
+      "claim": "Larval navigation behavior, when confined to flat 2D spaces, is akin to an organism-scale 2D random walk.",
+      "claim_type": "EXPLICIT",
+      "source": "Their navigation behavior, when confined to flat 2D spaces, is akin to an organism-scale 2D random walk (Berg and Brown, 1972, Berg, 2004), characterized as an alternating sequence of forward crawling 'runs' and direction-altering 'turns', making the animal's behavior and response to stimuli straightforward to quantify (Codling et al., 2008, G\u00fcnther et al., 2016, Lahiri et al., 2011, Klein et al., 2017; Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the established model of larval navigation, supported by citations and illustrated in Figure 1A.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:53:13.186085Z"
+    },
+    {
+      "id": "6eb9dd5b-d83d-47f7-8ac9-83f11afaf58a",
+      "content_id": "40d8d67c-faad-482f-b04c-59e86a6eab43",
+      "claim_id": "C25",
+      "claim": "Larval navigation is characterized as an alternating sequence of forward crawling 'runs' and direction-altering 'turns'.",
+      "claim_type": "EXPLICIT",
+      "source": "Their navigation behavior, when confined to flat 2D spaces, is akin to an organism-scale 2D random walk (Berg and Brown, 1972, Berg, 2004), characterized as an alternating sequence of forward crawling 'runs' and direction-altering 'turns', making the animal's behavior and response to stimuli straightforward to quantify (Codling et al., 2008, G\u00fcnther et al., 2016, Lahiri et al., 2011, Klein et al., 2017; Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the basic behavioral units of larval locomotion, supported by citations and illustrated in Figure 1A.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:53:13.186085Z"
+    },
+    {
+      "id": "87dbb23e-5079-4e96-8984-9387b428d45d",
+      "content_id": "40d8d67c-faad-482f-b04c-59e86a6eab43",
+      "claim_id": "C26",
+      "claim": "Larvae crawl away and typically remain at the edges of confining barriers, or climb walls or bury into substrates.",
+      "claim_type": "EXPLICIT",
+      "source": "However, larvae crawl away and typically remain at the edges of confining barriers, or climb walls or bury into a substrates (Louis and de Polavieja, 2017) (see Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes a behavioral tendency of larvae, supported by citation and demonstrated in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:53:13.186085Z"
+    },
+    {
+      "id": "feff6f8e-cdc9-44cc-8c48-213e0cb535a9",
+      "content_id": "40d8d67c-faad-482f-b04c-59e86a6eab43",
+      "claim_id": "C27",
+      "claim": "Edge-dwelling behavior results in the termination of exploratory search behavior, limiting most experiments to shorter snapshots of larval behavior, typically on the order of 10 min.",
+      "claim_type": "EXPLICIT",
+      "source": "Any such scenario results in the termination of exploratory search behavior, limiting most experiments to shorter snapshots of larval behavior, typically on the order of 10 min (Jaime et al., 2018, Klein et al., 2015, Alisch et al., 2018, Klein et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about experimental limitations based on larval behavior, supported by citations to typical experiment durations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:53:13.186085Z"
+    },
+    {
+      "id": "e65a768c-55e5-49df-b382-8f3eae1b6c4c",
+      "content_id": "40d8d67c-faad-482f-b04c-59e86a6eab43",
+      "claim_id": "C28",
+      "claim": "The robot is built from a modified 3D printer with a custom nozzle.",
+      "claim_type": "EXPLICIT",
+      "source": "The robot is built from a modified 3D printer with a custom nozzle.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the physical construction of the robotic system, shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:53:13.186085Z"
+    },
+    {
+      "id": "966d9894-92d7-4673-a951-0ea863ab409b",
+      "content_id": "40d8d67c-faad-482f-b04c-59e86a6eab43",
+      "claim_id": "C29",
+      "claim": "Feedback from a mounted overhead camera allows for tight coordination with the moving arm to safely and robustly interact with the experimental arena.",
+      "claim_type": "EXPLICIT",
+      "source": "Feedback from a mounted overhead camera allows for tight coordination with the moving arm to safely and robustly interact with the experimental arena.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the control system of the robot, illustrated in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:53:13.186085Z"
+    },
+    {
+      "id": "82652b22-5065-443f-b19b-d2a52b10a983",
+      "content_id": "40d8d67c-faad-482f-b04c-59e86a6eab43",
+      "claim_id": "C30",
+      "claim": "The nozzle is built as a narrow tube that allows air and vacuum flow with a flat plastic disk fitted at the bottom.",
+      "claim_type": "EXPLICIT",
+      "source": "The nozzle is built as a narrow tube that allows air and vacuum flow with a flat plastic disk fitted at the bottom.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the design of the nozzle component, shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:53:13.186085Z"
+    },
+    {
+      "id": "8ca18048-e411-4d34-89b8-75e6d938ac24",
+      "content_id": "40d8d67c-faad-482f-b04c-59e86a6eab43",
+      "claim_id": "C31",
+      "claim": "The water droplet's surface pressure can pick up larvae while minimizing stress on the animal during the interaction.",
+      "claim_type": "EXPLICIT",
+      "source": "The disk provides ample surface area for a water droplet to form, and the droplet's surface pressure can pick up larvae while minimizing stress on the animal during the interaction.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the mechanism of larval pick-up, illustrated in Figure 1C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:53:13.186085Z"
+    },
+    {
+      "id": "815743c6-4601-4a94-9878-56a7233abeae",
+      "content_id": "40d8d67c-faad-482f-b04c-59e86a6eab43",
+      "claim_id": "C32",
+      "claim": "Larvae crawl atop an agar substrate, which is kept hydrated by a surrounding moat.",
+      "claim_type": "EXPLICIT",
+      "source": "Larvae crawl atop an agar substrate, which is kept hydrated by a surrounding moat.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the experimental arena design, shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:53:13.186085Z"
+    },
+    {
+      "id": "205bebf8-5f06-41db-88bd-a7ae4e5955aa",
+      "content_id": "40d8d67c-faad-482f-b04c-59e86a6eab43",
+      "claim_id": "C33",
+      "claim": "The pick-up/drop-off procedure is triggered at an average rate of 0.87 times per hour per animal.",
+      "claim_type": "EXPLICIT",
+      "source": "The pick-up/drop-off procedure is triggered at an average rate of 0.87 times per hour per animal, and is 99.8%/99.9% successful (90%/95% on the first try), highly important for the viability of long-term experiments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative measurement of system performance from experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:53:13.186085Z"
+    },
+    {
+      "id": "94b639cc-dfd2-47a2-9a29-038bcd61737c",
+      "content_id": "40d8d67c-faad-482f-b04c-59e86a6eab43",
+      "claim_id": "C34",
+      "claim": "The pick-up/drop-off procedure is 99.8%/99.9% successful (90%/95% on the first try).",
+      "claim_type": "EXPLICIT",
+      "source": "The pick-up/drop-off procedure is triggered at an average rate of 0.87 times per hour per animal, and is 99.8%/99.9% successful (90%/95% on the first try), highly important for the viability of long-term experiments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative measurement of system reliability from experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:53:13.186085Z"
+    },
+    {
+      "id": "f6752698-9410-41ad-ab36-cdfa1f3287b3",
+      "content_id": "40d8d67c-faad-482f-b04c-59e86a6eab43",
+      "claim_id": "C35",
+      "claim": "The system has achieved more than 30 hr of continuous observation of individual larva behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "With these features in place, our system has so far achieved more than 30 hr of continuous observation of individual larva behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of experimental achievement, supported by data presented in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:53:13.186085Z"
+    },
+    {
+      "id": "48ec0a29-8e53-4eca-b354-9c19a0e3784a",
+      "content_id": "40d8d67c-faad-482f-b04c-59e86a6eab43",
+      "claim_id": "C36",
+      "claim": "A 1D linear spatial thermal gradient of 0.035\u00b0C/mm with 13\u00b0C on one side and 21\u00b0C on the other was generated.",
+      "claim_type": "EXPLICIT",
+      "source": "In some experiments we observe how larvae navigate a variable sensory environment. We use a similar system as outlined in Klein et al., 2015, to generate a 1D linear spatial thermal gradient of 0.035\u00b0C/mm with 13\u00b0C on one side and 21\u00b0C on the other.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental conditions for thermotaxis experiments.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:53:13.186085Z"
+    },
+    {
+      "id": "23e57f0b-6177-432a-93f1-6e84bf9b596f",
+      "content_id": "40d8d67c-faad-482f-b04c-59e86a6eab43",
+      "claim_id": "C37",
+      "claim": "Custom computer vision software extracts the position and body contour of each larva while preserving individual animal identities.",
+      "claim_type": "EXPLICIT",
+      "source": "Custom computer vision software takes raw movies and extracts the position and body contour of each larva while preserving individual animal identities (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the analysis pipeline, illustrated in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:53:13.186085Z"
+    },
+    {
+      "id": "59bae573-b389-4908-9f1b-26b2d7c740a2",
+      "content_id": "40d8d67c-faad-482f-b04c-59e86a6eab43",
+      "claim_id": "C38",
+      "claim": "The software interpolates larval positions in dropped frames to maintain continuous observation.",
+      "claim_type": "EXPLICIT",
+      "source": "Because the robot arm can briefly block the camera during pick-up events (average of \u22484.5 s of occlusion duration per pick-up event), resulting in dropped frames, the software interpolates larval positions in these frames to maintain continuous observation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a feature of the analysis software to handle occlusions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:53:13.186085Z"
+    },
+    {
+      "id": "93c4bc80-7f07-44e8-b522-9edcb3d01b14",
+      "content_id": "40d8d67c-faad-482f-b04c-59e86a6eab43",
+      "claim_id": "C39",
+      "claim": "The average occlusion duration per pick-up event is approximately 4.5 s.",
+      "claim_type": "EXPLICIT",
+      "source": "Because the robot arm can briefly block the camera during pick-up events (average of \u22484.5 s of occlusion duration per pick-up event), resulting in dropped frames, the software interpolates larval positions in these frames to maintain continuous observation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative measurement from experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:53:13.186085Z"
+    },
+    {
+      "id": "9fd966ae-8892-459d-b58b-6155ed4234c1",
+      "content_id": "40d8d67c-faad-482f-b04c-59e86a6eab43",
+      "claim_id": "C40",
+      "claim": "The larva's body length is roughly 1 mm.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the larva's body length is roughly 1 mm and it crawls with an average speed well below 1 mm/s, significant behavior events are unlikely to occur during dropped frames and interpolation is sufficient to rebuild trajectories.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about larval morphology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:53:13.186085Z"
+    },
+    {
+      "id": "7e5a1bc1-752a-48eb-9794-6087a2d3b1ff",
+      "content_id": "40d8d67c-faad-482f-b04c-59e86a6eab43",
+      "claim_id": "C41",
+      "claim": "The larva crawls with an average speed well below 1 mm/s.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the larva's body length is roughly 1 mm and it crawls with an average speed well below 1 mm/s, significant behavior events are unlikely to occur during dropped frames and interpolation is sufficient to rebuild trajectories.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a measurement from experimental data, used to justify the interpolation approach.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:53:13.186085Z"
+    },
+    {
+      "id": "fe364538-92a2-44a9-b34b-6260acfe08c3",
+      "content_id": "40d8d67c-faad-482f-b04c-59e86a6eab43",
+      "claim_id": "C42",
+      "claim": "A recurrent U-Net convolutional neural network is used to determine larval posture and orientation.",
+      "claim_type": "EXPLICIT",
+      "source": "The isolated crops of each larva are run through a recurrent U-Net Ronneberger et al., 2015 convolutional neural network (Figure 2B) to determine the posture and orientation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the analysis method, illustrated in Figure 2B and citing the U-Net architecture.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:53:13.186085Z"
+    },
+    {
+      "id": "60a2d53a-51c7-4979-9225-3c877b1fcb79",
+      "content_id": "40d8d67c-faad-482f-b04c-59e86a6eab43",
+      "claim_id": "C43",
+      "claim": "A densely connected neural network with bidirectional recurrence is used to classify the behavioral state of the larva at each time point.",
+      "claim_type": "EXPLICIT",
+      "source": "Using all available information (position, contour, and posture), we use a densely connected neural network with bidirectional recurrence to classify the behavioral state of the larva ('run', 'turn') at each time point (Figure 2C; G\u00fcnther et al., 2016).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the analysis method, illustrated in Figure 2C and citing prior work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:53:13.186085Z"
+    },
+    {
+      "id": "0f333e7b-6e1a-413f-8cb0-0eaa0da2bef0",
+      "content_id": "40d8d67c-faad-482f-b04c-59e86a6eab43",
+      "claim_id": "C44",
+      "claim": "There is a significant drop in activity (both speed and turn rate) over the first hour of continuous observation before settling into a plateau.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, there is a significant drop in activity (both speed and turn rate) over the first hour before settling into a plateau that lasts for the following few hours.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the 6-hour continuous observation experiments, shown in Figure 3A and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:53:13.186085Z"
+    },
+    {
+      "id": "30652b45-b5bd-4e97-925a-530e84744aed",
+      "content_id": "40d8d67c-faad-482f-b04c-59e86a6eab43",
+      "claim_id": "C45",
+      "claim": "The correlation between larval crawl speed and turn rate over time has been previously observed.",
+      "claim_type": "EXPLICIT",
+      "source": "The correlation between larval crawl speed and turn rate over time has been previously observed (G\u00fcnther et al., 2016) and is clearly evident here, and we measure a correlation coefficient of 0.572 in the population mean speeds and turn rates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This cites prior work and confirms the finding with new data.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:53:13.186085Z"
+    },
+    {
+      "id": "553fbb1d-716d-4fc4-b60c-ed77e441b34a",
+      "content_id": "40d8d67c-faad-482f-b04c-59e86a6eab43",
+      "claim_id": "C46",
+      "claim": "A correlation coefficient of 0.572 was measured in the population mean speeds and turn rates.",
+      "claim_type": "EXPLICIT",
+      "source": "The correlation between larval crawl speed and turn rate over time has been previously observed (G\u00fcnther et al., 2016) and is clearly evident here, and we measure a correlation coefficient of 0.572 in the population mean speeds and turn rates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative measurement from the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:53:13.186085Z"
+    },
+    {
+      "id": "c5b203e4-562f-4d60-9809-30fb6157afff",
+      "content_id": "40d8d67c-faad-482f-b04c-59e86a6eab43",
+      "claim_id": "C47",
+      "claim": "The correlation between speed and turn rate exists at the individual level with an average correlation coefficient of 0.348 \u00b1 0.098.",
+      "claim_type": "EXPLICIT",
+      "source": "With the large amount of data gathered on each individual, we confirm that this correlation also exists at the individual level with an average correlation coefficient of 0.348 \u00b1 0.098.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative measurement from individual-level analysis of the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:53:13.186085Z"
+    },
+    {
+      "id": "c16c7d3d-1fde-46d5-87c9-03d02084a6cf",
+      "content_id": "40d8d67c-faad-482f-b04c-59e86a6eab43",
+      "claim_id": "C53",
+      "claim": "The robot administers a drop of sugar-rich solution directly to the larva once every hour to keep the larva alive as long as possible.",
+      "claim_type": "EXPLICIT",
+      "source": "To keep the larva alive as long as possible, the robot administers a drop of sugar-rich solution directly to the larva once every hour.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the feeding protocol used in the 30-hour experiment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:53:13.186085Z"
+    },
+    {
+      "id": "633cb7b2-48bc-4f2c-8baf-bdcbcf913602",
+      "content_id": "40d8d67c-faad-482f-b04c-59e86a6eab43",
+      "claim_id": "C54",
+      "claim": "The larva is allowed to feed for 1 min, then the animal and the drop site is rinsed with water.",
+      "claim_type": "EXPLICIT",
+      "source": "The larva is allowed to feed for 1 min, then the animal and the drop site is rinsed with water, and the larva resumes its exploratory search.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the feeding protocol used in the 30-hour experiment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:53:13.186085Z"
+    },
+    {
+      "id": "a4d7508a-b13a-423d-ab0e-eca3fd6f0a08",
+      "content_id": "40d8d67c-faad-482f-b04c-59e86a6eab43",
+      "claim_id": "C55",
+      "claim": "Larval locomotive behavior was studied for over 30 hr, yielding an unprecedented amount of behavioral and developmental information on an individual animal.",
+      "claim_type": "EXPLICIT",
+      "source": "Using this protocol, we are able to study larval locomotive behavior for over 30 hr, yielding an unprecedented amount of behavioral and developmental information on an individual animal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the achievement of the long-duration experiment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:53:13.186085Z"
+    },
+    {
+      "id": "94cc56ba-4795-4f1a-85ac-7766c52db6d4",
+      "content_id": "40d8d67c-faad-482f-b04c-59e86a6eab43",
+      "claim_id": "C56",
+      "claim": "The individual animal crawls for more than 48 m over 30 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 4 presents the trajectory of a single larva and some of its behavior features observed over a duration of 30 hr, where the individual animal crawls for more than 48 m.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative measurement from the 30-hour experiment, shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:53:13.186085Z"
+    },
+    {
+      "id": "845c6389-71fe-4dfd-bb7d-3bbf001909e6",
+      "content_id": "40d8d67c-faad-482f-b04c-59e86a6eab43",
+      "claim_id": "C57",
+      "claim": "Some behavioral features exhibit steady change, like a decreasing speed throughout the 30-hour experiment.",
+      "claim_type": "EXPLICIT",
+      "source": "Some behavioral features exhibit steady change, like a decreasing speed throughout the experiment.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the 30-hour experiment data, shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:53:13.186085Z"
+    },
+    {
+      "id": "ed7b9473-14fb-4509-b6a0-e65ba6ced7a7",
+      "content_id": "40d8d67c-faad-482f-b04c-59e86a6eab43",
+      "claim_id": "C58",
+      "claim": "Notable differences in path shape occur approximately half way through the 30-hour observation, with dramatic increases in curvature and turn size.",
+      "claim_type": "EXPLICIT",
+      "source": "Notable differences in path shape occur approximately half way through the long observation, with dramatic increases in curvature and turn size, consistent with the tight loops seen in the full trajectory plot (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the 30-hour experiment data, shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:53:13.186085Z"
+    },
+    {
+      "id": "c34a4ea9-bc89-47b3-93f7-7598d35e5482",
+      "content_id": "40d8d67c-faad-482f-b04c-59e86a6eab43",
+      "claim_id": "C59",
+      "claim": "The larva in the 30-hour experiment maintains a left-turning bias throughout the experiment.",
+      "claim_type": "EXPLICIT",
+      "source": "We also note that this larva maintains a left-turning bias throughout the experiment.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the 30-hour experiment data, shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:53:13.186085Z"
+    },
+    {
+      "id": "999f9aed-2c1c-4a6e-9af2-2962af463754",
+      "content_id": "40d8d67c-faad-482f-b04c-59e86a6eab43",
+      "claim_id": "C60",
+      "claim": "Drosophila larvae have robust, highly sensitive, and well-documented response to changes in temperature.",
+      "claim_type": "EXPLICIT",
+      "source": "Drosophila larvae have robust, highly sensitive, and well-documented response to changes in temperature, and work has been done to decipher the behavioral strategy utilized to efficiently navigate thermal gradients (Luo et al., 2010, Klein et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about larval thermotaxis, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:53:13.186085Z"
+    },
+    {
+      "id": "eddd1fcf-4e8c-407c-98d7-5651023f46e1",
+      "content_id": "40d8d67c-faad-482f-b04c-59e86a6eab43",
+      "claim_id": "C61",
+      "claim": "The thermal gradient is centered at 17\u00b0C with a steepness of 0.032\u00b0C/mm.",
+      "claim_type": "EXPLICIT",
+      "source": "The thermal gradient is centered at 17\u00b0C with a steepness of 0.032\u00b0C/mm, which would normally evoke robust cold avoidance behavior (Luo et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental conditions for thermotaxis experiments.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:53:13.186085Z"
+    },
+    {
+      "id": "5c924bb5-2f1c-44f9-ad32-bf9b15aa950c",
+      "content_id": "40d8d67c-faad-482f-b04c-59e86a6eab43",
+      "claim_id": "C64",
+      "claim": "The navigation index remains steady over the 6 hr measurement time during thermotaxis.",
+      "claim_type": "EXPLICIT",
+      "source": "The navigation index also remains steady over the 6 hr measurement time.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the thermotaxis experiments, shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:53:13.186085Z"
+    },
+    {
+      "id": "50cf7db4-8a55-4ba9-990f-2c7f04814e48",
+      "content_id": "40d8d67c-faad-482f-b04c-59e86a6eab43",
+      "claim_id": "C65",
+      "claim": "Averaging over a population necessarily results in some loss of information such that different statistics at the individual level can generate the same population mean.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, averaging over a population necessarily results in some loss of information such that different statistics at the individual level can generate the same population mean.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statistical principle applied to the analysis.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:53:13.186085Z"
+    },
+    {
+      "id": "c6c73930-91d7-4722-8c2d-a491155c6001",
+      "content_id": "40d8d67c-faad-482f-b04c-59e86a6eab43",
+      "claim_id": "C66",
+      "claim": "Larval navigation index behavior switches from one model to the other when a thermal gradient is applied.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we find that larval navigation index behavior switches from one model to the other when a thermal gradient is applied (Figure 6C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a key finding from comparing individual-level distributions with and without gradient, shown in Figure 6C and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:53:13.186085Z"
+    },
+    {
+      "id": "d18be288-ccae-49eb-b78c-aebbf42f086c",
+      "content_id": "40d8d67c-faad-482f-b04c-59e86a6eab43",
+      "claim_id": "C67",
+      "claim": "Without a thermal gradient, the individual distributions exhibit high intra-animal variability and low inter-animal variability.",
+      "claim_type": "EXPLICIT",
+      "source": "However, without a thermal gradient (Figure 6C), the individual distributions exhibit high intra-animal variability and low inter-animal variability, mirroring those seen in the first simulation (Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from analyzing individual-level navigation index distributions, shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:53:13.186085Z"
+    },
+    {
+      "id": "f3fc99fa-3690-4b19-b246-10736037bc46",
+      "content_id": "40d8d67c-faad-482f-b04c-59e86a6eab43",
+      "claim_id": "C71",
+      "claim": "The robotic arm is capable of transporting larvae as they approach the edge of the experiment arena back to the center.",
+      "claim_type": "EXPLICIT",
+      "source": "The robotic arm is capable of transporting larvae as they approach the edge of the experiment arena back to the center, allowing continuous observation of exploratory search or directed navigation behavior from an overhead camera.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This summarizes the core functionality of the robotic system.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:53:13.186085Z"
+    },
+    {
+      "id": "419dc787-0607-4caf-a76f-4ce1d62a9133",
+      "content_id": "40d8d67c-faad-482f-b04c-59e86a6eab43",
+      "claim_id": "C72",
+      "claim": "The system maintains larvae within the arena with high reliability.",
+      "claim_type": "EXPLICIT",
+      "source": "Through coordination and constant feedback between the robot and video acquisition, the system maintains larvae within the arena with high reliability, and we are able to achieve continuous observation over developmental time scales.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about system performance, supported by the reliability statistics provided earlier.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:53:13.186085Z"
+    },
+    {
+      "id": "df12ce2a-2b0c-41b1-95e7-9b98f38d643a",
+      "content_id": "40d8d67c-faad-482f-b04c-59e86a6eab43",
+      "claim_id": "C73",
+      "claim": "The analysis compensates for the output video's low resolution and lack of detailed features through a combination of local and global features and the use of recurrent neural networks.",
+      "claim_type": "EXPLICIT",
+      "source": "The analysis compensates for the output video's low resolution and lack of detailed features of the larvae through a combination of local and global features and the use of recurrent neural networks (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the approach taken in the analysis pipeline, illustrated in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:53:13.186085Z"
+    },
+    {
+      "id": "43f422ba-2a87-496c-a9e7-9d2f23e1c8f2",
+      "content_id": "40d8d67c-faad-482f-b04c-59e86a6eab43",
+      "claim_id": "C74",
+      "claim": "The comparison between continuous and snapshot observations yields dissimilar patterns when considering the 10 min averages, but similar dynamics when considering the change in behavior over time.",
+      "claim_type": "EXPLICIT",
+      "source": "The comparison yields dissimilar patterns when considering the 10 min averages, but similar dynamics when considering the change in behavior over time, such that the 10 min trajectory in larval crawl speed resembles that seen in the first hour of continuous observation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from comparing the two experimental approaches, shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:53:13.186085Z"
+    },
+    {
+      "id": "60d64822-0b0f-4665-9ccc-08a44578f0ba",
+      "content_id": "40d8d67c-faad-482f-b04c-59e86a6eab43",
+      "claim_id": "C75",
+      "claim": "Thermotaxis behavior of individual crawlers approximately falls into two categories of neutral and strong crawlers (bimodal distribution).",
+      "claim_type": "EXPLICIT",
+      "source": "Thermotaxis behavior of individual crawlers approximately falls into two categories of neutral and strong crawlers (bimodal distribution), but this phenomenon was masked in past research because analysis focused on population averages and the experiments were too short.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the bimodal distribution finding in the context of prior research.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:53:13.186085Z"
+    },
+    {
+      "id": "0e616a6d-17c4-4cfa-b704-ab7dc9a11f58",
+      "content_id": "40d8d67c-faad-482f-b04c-59e86a6eab43",
+      "claim_id": "C76",
+      "claim": "This result is consistent with recent findings that suggest a switch-like (all-or-none) learning behavior in larval Drosophila.",
+      "claim_type": "EXPLICIT",
+      "source": "This result is consistent with recent findings that suggest a switch-like (all-or-none) learning behavior in larval Drosophila, which is also not apparent when only analyzing population means.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This connects the current findings to prior work on larval learning.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:53:13.186085Z"
+    },
+    {
+      "id": "5f719377-cbb8-4e67-8322-fc52b3ba7b29",
+      "content_id": "40d8d67c-faad-482f-b04c-59e86a6eab43",
+      "claim_id": "C77",
+      "claim": "Lesar et al., 2021, find that Pavlovian training of preference for carbon dioxide is quantized to two states (all-or-none), each centered at a fixed preference index.",
+      "claim_type": "EXPLICIT",
+      "source": "By observing decision-making behavior of individual larvae over several cycles of stimulus and reward, Lesar et al., 2021, find that Pavlovian training of preference for carbon dioxide is similarly quantized to two states (all-or-none), each centered at a fixed preference index.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This cites specific findings from prior work for comparison.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:53:13.186085Z"
+    },
+    {
+      "id": "783212c0-1214-420f-bb96-0090e760441c",
+      "content_id": "40d8d67c-faad-482f-b04c-59e86a6eab43",
+      "claim_id": "C78",
+      "claim": "Both results reveal new features of larval behavior that were previously obscured in population averages.",
+      "claim_type": "EXPLICIT",
+      "source": "While the context and modality for the learning assays are different than our observation of larval thermotaxis, both results reveal new features of larval behavior that were previously obscured in population averages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference connecting the current work to prior findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:53:13.186085Z"
+    },
+    {
+      "id": "3453cc9e-bef0-4fe7-8b89-eff8d4fe726b",
+      "content_id": "40d8d67c-faad-482f-b04c-59e86a6eab43",
+      "claim_id": "C79",
+      "claim": "Both results suggest the existence of larval 'personality types', or distinct, quantized behavioral phenotypes that vary between individual animals.",
+      "claim_type": "EXPLICIT",
+      "source": "Both results also suggest the existence of larval 'personality types', or distinct, quantized behavioral phenotypes that vary between individual animals (Lesar et al., 2021, Klein et al., 2015, G\u00fcnther et al., 2016, Ohyama et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the findings in the context of prior work on individual variability.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:53:13.186085Z"
+    },
+    {
+      "id": "ef36cc77-5fad-4a71-b865-fec2ebfbc079",
+      "content_id": "40d8d67c-faad-482f-b04c-59e86a6eab43",
+      "claim_id": "C80",
+      "claim": "The robot could deliver food or soluble drugs directly to the larvae on a predetermined schedule to measure both the acute and chronic effects on the animal's behavior and physiology.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the robot could deliver food or soluble drugs directly to the larvae on a predetermined schedule to measure both the acute and chronic effects on the animal's behavior and physiology (Wolf and Heberlein, 2003, Bainton et al., 2000, Besson and Martin, 2005, Gerber and Stocker, 2007, Fayyazuddin et al., 2006, Robinson et al., 2012, Kaun et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about future applications of the system, supported by citations to relevant prior work.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:53:13.186085Z"
+    },
+    {
+      "id": "d0b42712-5abe-478b-89c2-75909da03b9e",
+      "content_id": "40d8d67c-faad-482f-b04c-59e86a6eab43",
+      "claim_id": "C81",
+      "claim": "The existing lighting system could be leveraged to implement optogenetic activation or suppression of specific neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "We could also leverage the existing lighting system to implement optogenetic activation or suppression of specific neurons, allowing delivery of fictive stimuli or studies of the effects of certain neuronal circuits on larval behavior and development (Gradinaru et al., 2010, Inada et al., 2011, Salvaterra and Kitamoto, 2001, Hernandez-Nunez et al., 2015, Kane et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about future applications of the system, supported by citations to relevant prior work.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:53:13.186085Z"
+    },
+    {
+      "id": "1d7b956c-0838-4b89-997b-e838b52b263f",
+      "content_id": "40d8d67c-faad-482f-b04c-59e86a6eab43",
+      "claim_id": "C82",
+      "claim": "The larva picker robot effectively acts as a 2D conveyor belt, rapidly (on the order of seconds) repositioning a larva each time it reaches the edge of the arena (on the order of every 60 min).",
+      "claim_type": "EXPLICIT",
+      "source": "The larva picker robot effectively acts as a 2D conveyor belt, rapidly (on the order of seconds) repositioning a larva each time it reaches the edge of the arena (on the order of every 60 min).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of how the system operates, with timing information from experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:53:13.186085Z"
+    },
+    {
+      "id": "f589254b-2aec-46ca-82a7-25492e33f323",
+      "content_id": "40d8d67c-faad-482f-b04c-59e86a6eab43",
+      "claim_id": "C83",
+      "claim": "The behavior measured is far removed from what larva behavior looks like in an ecological setting.",
+      "claim_type": "EXPLICIT",
+      "source": "First, the behavior we measure is far removed from what larva behavior looks like in an ecological setting.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an acknowledgment of a limitation of the experimental approach.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:53:13.186085Z"
+    },
+    {
+      "id": "c3e8359a-f22a-4fcf-8e7b-ac2431c215e7",
+      "content_id": "40d8d67c-faad-482f-b04c-59e86a6eab43",
+      "claim_id": "C84",
+      "claim": "In nature, larvae search for rotting fruit to consume, and if they find it, tend to stay in it during larval development, then typically move to drier areas to pupate.",
+      "claim_type": "EXPLICIT",
+      "source": "In nature, larvae search for rotting fruit to consume, and if they find it, tend to stay in it during larval development, then typically move to drier areas to pupate (Sokolowski et al., 1986).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about larval ecology, supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:53:13.186085Z"
+    },
+    {
+      "id": "479dfcc9-189d-43db-bf99-1c84f584ab5d",
+      "content_id": "40d8d67c-faad-482f-b04c-59e86a6eab43",
+      "claim_id": "C85",
+      "claim": "Larvae are placed on a flat substrate with no visible light, food, or temperature changes, providing an environment where larvae are always searching, in a state of near-constant locomotion.",
+      "claim_type": "EXPLICIT",
+      "source": "In the present work we isolate the larvae from stimuli, placing them on a flat substrate with no visible light, food, or temperature changes, thus providing an environment where larvae are always searching, in a state of near-constant locomotion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental conditions used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:53:13.186085Z"
+    },
+    {
+      "id": "ea8d9dee-04f7-4b70-aab5-044d2e575419",
+      "content_id": "40d8d67c-faad-482f-b04c-59e86a6eab43",
+      "claim_id": "C86",
+      "claim": "Experiments are run with red lights (not visible to larvae).",
+      "claim_type": "EXPLICIT",
+      "source": "Although experiments are run with red lights (not visible to larvae), other light from the surrounding lab could reach the animals, and the room is not precisely temperature stabilized.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental conditions and acknowledges potential confounds.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:53:13.186085Z"
+    },
+    {
+      "id": "bfa17ae0-cc52-4db5-a1d0-3f59b412209d",
+      "content_id": "40d8d67c-faad-482f-b04c-59e86a6eab43",
+      "claim_id": "C87",
+      "claim": "The short-term effects of robot disturbance fade after less than 60 s.",
+      "claim_type": "EXPLICIT",
+      "source": "Although we have determined that the short-term effects of this disturbance fade after less than 60 s, we do not yet have sufficient data to study long-term effects, and repeated transport from the robot arm could introduce important changes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the analysis of behavior before and after robot interactions, shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:53:13.186085Z"
+    },
+    {
+      "id": "1c7b226b-2f5a-4c4d-893d-6669914626be",
+      "content_id": "40d8d67c-faad-482f-b04c-59e86a6eab43",
+      "claim_id": "C88",
+      "claim": "A larva's thermal response behavior becomes uncorrelated with its stimulus history after approximately 10 s.",
+      "claim_type": "EXPLICIT",
+      "source": "In one of our previous studies (Klein et al., 2015) we observed that a larva's thermal response behavior becomes uncorrelated with its stimulus history after approximately 10 s; and in another Berne et al., 2021 found that physical behavior returns to normal within approximately 20 s of a stimulus introduction, even in presence of very strong vertical vibration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This cites prior work to support the argument that robot effects are minimal.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:53:13.186085Z"
+    },
+    {
+      "id": "17e736ec-0957-45b3-abf8-04801bd90779",
+      "content_id": "40d8d67c-faad-482f-b04c-59e86a6eab43",
+      "claim_id": "C89",
+      "claim": "Physical behavior returns to normal within approximately 20 s of a stimulus introduction, even in presence of very strong vertical vibration.",
+      "claim_type": "EXPLICIT",
+      "source": "In one of our previous studies (Klein et al., 2015) we observed that a larva's thermal response behavior becomes uncorrelated with its stimulus history after approximately 10 s; and in another Berne et al., 2021 found that physical behavior returns to normal within approximately 20 s of a stimulus introduction, even in presence of very strong vertical vibration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This cites prior work to support the argument that robot effects are minimal.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:53:13.186085Z"
+    },
+    {
+      "id": "6a8e9bba-7bcd-4235-a425-ac76e2c3310e",
+      "content_id": "40d8d67c-faad-482f-b04c-59e86a6eab43",
+      "claim_id": "C90",
+      "claim": "Fly larvae can form associative memories, particularly in pairing conditioned stimuli with odors or tastes.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, although fly larvae can form associative memories, particularly in pairing conditioned stimuli with odors or tastes (Gerber and Stocker, 2007), our arenas are free of salient stimuli that would be likely to induce this such memory formation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This cites established knowledge about larval learning to argue that memory formation is unlikely in the experimental context.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:53:13.186085Z"
+    },
+    {
+      "id": "d2fa81c3-f431-4aa1-8069-fd6d6baf878b",
+      "content_id": "40d8d67c-faad-482f-b04c-59e86a6eab43",
+      "claim_id": "C91",
+      "claim": "Because the animal is highly food-motivated, it will continuously execute search patterns even after many hours of failure to locate food.",
+      "claim_type": "EXPLICIT",
+      "source": "Because the animal is highly food-motivated, it will continuously execute search patterns even after many hours of failure to locate food.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about larval behavior based on their known food motivation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:53:13.186085Z"
+    },
+    {
+      "id": "c0207911-fe7e-45c0-a732-c12b682d92bd",
+      "content_id": "40d8d67c-faad-482f-b04c-59e86a6eab43",
+      "claim_id": "C92",
+      "claim": "A major obstacle in achieving continuous observation of the entire larval life cycle (\u2248 100 hr) is a reliable method of delivering enough nutrition and ensuring the larva has sufficiently fed.",
+      "claim_type": "EXPLICIT",
+      "source": "A major obstacle in way of achieving continuous observation of the entire larval life cycle (\u2248 100 hr) is a reliable method of delivering enough nutrition and ensuring the larva has sufficiently fed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This identifies a limitation of the current system.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:53:13.186085Z"
+    },
+    {
+      "id": "cefbd60a-fab3-4ddd-9da3-cc783da6633b",
+      "content_id": "40d8d67c-faad-482f-b04c-59e86a6eab43",
+      "claim_id": "C93",
+      "claim": "The current method of delivering drops of sugar-rich solutions has not been sufficient to trigger molting into the next instar stage.",
+      "claim_type": "EXPLICIT",
+      "source": "The current method of delivering drops of sugar-rich solutions has not been sufficient to trigger molting into the next instar stage, thus limiting us to a single instar.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation about the limitations of the current feeding protocol.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:53:13.186085Z"
+    },
+    {
+      "id": "47ccf47e-24b3-4827-b4a3-e310b909d5e9",
+      "content_id": "40d8d67c-faad-482f-b04c-59e86a6eab43",
+      "claim_id": "C94",
+      "claim": "Feeding larvae on their primary behavior arena can introduce new stimuli, as remnants of the food solutions can be sensed by the olfactory or gustatory systems in the larvae.",
+      "claim_type": "EXPLICIT",
+      "source": "Feeding larvae on their primary behavior arena can also introduce new stimuli, as remnants of the food solutions can be sensed by the olfactory or gustatory systems in the larvae.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about potential confounds from the feeding protocol.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:53:13.186085Z"
+    },
+    {
+      "id": "2530939d-8a41-437c-b68a-ebf5ed6b6dc8",
+      "content_id": "40d8d67c-faad-482f-b04c-59e86a6eab43",
+      "claim_id": "C95",
+      "claim": "Future improvements to the apparatus may include a separate short-term feeding station away from the main navigation area.",
+      "claim_type": "EXPLICIT",
+      "source": "Future improvements to the apparatus may include a separate short-term feeding station away from the main navigation area.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about future improvements to the system.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:53:13.186085Z"
+    },
+    {
+      "id": "cd4b2265-9c87-4fa6-9867-3a232a363522",
+      "content_id": "40d8d67c-faad-482f-b04c-59e86a6eab43",
+      "claim_id": "C96",
+      "claim": "The manipulator arm is translated by stepper motors (Nema 8) in the X- and Y-axes and a 5V solenoid (SparkFun) for the Z-axis.",
+      "claim_type": "EXPLICIT",
+      "source": "The manipulator arm is translated by stepper motors (Nema 8) in the X- and Y-axes and a 5V solenoid (SparkFun) for the Z-axis, which are driven by a programmable controller board (SmoothieBoard) with physical and software limits in place to prevent overtravel.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the technical specifications of the robotic system.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:53:13.186085Z"
+    },
+    {
+      "id": "878ec916-bb08-43e5-b389-b83bf21864d3",
+      "content_id": "40d8d67c-faad-482f-b04c-59e86a6eab43",
+      "claim_id": "C97",
+      "claim": "A 2.3-megapixel CMOS camera (Grasshopper3) observes larvae and records at 10 Hz.",
+      "claim_type": "EXPLICIT",
+      "source": "A 2.3-megapixel CMOS camera (Grasshopper3) observes a small number (4\u20136) of larvae crawling on a 22 \u00d7 22 cm2 agar gel (2.5% wt/vol agar in water, with 0.75% charcoal added for improved contrast) and records at 10 Hz.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the technical specifications of the imaging system.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:53:13.186085Z"
+    },
+    {
+      "id": "eb10c61c-80e4-41b8-9334-f7bc1c393001",
+      "content_id": "40d8d67c-faad-482f-b04c-59e86a6eab43",
+      "claim_id": "C98",
+      "claim": "Larvae are illuminated with four strips of red LEDs (dominant wavelength around 620 nm), which is outside the visible range of the larva.",
+      "claim_type": "EXPLICIT",
+      "source": "Larvae are illuminated with four strips of red LEDs (dominant wavelength around 620 nm), which is outside the visible range of the larva (Sprecher et al., 2007), arranged in a square around the agar gel.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the illumination system and cites evidence that the wavelength is not visible to larvae.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:53:13.186085Z"
+    },
+    {
+      "id": "8389719a-c8c0-40c1-b71d-62ab8b837938",
+      "content_id": "40d8d67c-faad-482f-b04c-59e86a6eab43",
+      "claim_id": "C99",
+      "claim": "PID controllers drive thermoelectric coolers between each water block and its reservoir to maintain a thermal gradient of 0.035\u00b0C/mm across the agar gel in the arena.",
+      "claim_type": "EXPLICIT",
+      "source": "PID (proportional-integral-derivative) controllers drive thermoelectric coolers between each water block and its reservoir to maintain a thermal gradient of 0.035\u00b0C/mm across the agar gel in the arena, with 13\u00b0C on one side and 21\u00b0C on the other.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the technical implementation of the thermal gradient system.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:53:13.186085Z"
+    },
+    {
+      "id": "f1a54d00-50cd-47da-97ad-74ed192f3953",
+      "content_id": "40d8d67c-faad-482f-b04c-59e86a6eab43",
+      "claim_id": "C100",
+      "claim": "Each frame is prepared with increased contrast with dynamic background subtraction.",
+      "claim_type": "EXPLICIT",
+      "source": "Each frame is prepared with increased contrast with dynamic background subtraction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a step in the image processing pipeline.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:53:13.186085Z"
+    },
+    {
+      "id": "62145eec-eac3-4478-83ae-e06d671f5a26",
+      "content_id": "40d8d67c-faad-482f-b04c-59e86a6eab43",
+      "claim_id": "C101",
+      "claim": "The background is updated using an infinite impulse response filter.",
+      "claim_type": "EXPLICIT",
+      "source": "With this in mind, we update a dynamic background that will be subtracted from each frame using an infinite impulse response filter.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the method for dynamic background subtraction.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:53:13.186085Z"
+    },
+    {
+      "id": "4265b4b4-6730-4cc8-8dbd-06738a9954ec",
+      "content_id": "40d8d67c-faad-482f-b04c-59e86a6eab43",
+      "claim_id": "C102",
+      "claim": "Collision events occur at an average rate of 0.63 events per hour in an arena of six larvae.",
+      "claim_type": "EXPLICIT",
+      "source": "We observe collision events occurring at an average rate of 0.63 events per hour in an arena of six larvae.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative measurement from experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:53:13.186085Z"
+    },
+    {
+      "id": "be424ca0-34ad-4b35-9ee0-24aba1f26621",
+      "content_id": "40d8d67c-faad-482f-b04c-59e86a6eab43",
+      "claim_id": "C103",
+      "claim": "Identities are preserved across collision events with an accuracy of 91%, or <1 misidentifications per 6 hr experiment.",
+      "claim_type": "EXPLICIT",
+      "source": "Through this method, identities are preserved across collision events with an accuracy of 91%, or <1 misidentifications per 6 hr experiment, which can be manually verified and corrected.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative measurement of the performance of the collision handling algorithm.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:53:13.186085Z"
+    },
+    {
+      "id": "406e99b3-2af8-4580-92f2-a6b3ad72cc7a",
+      "content_id": "40d8d67c-faad-482f-b04c-59e86a6eab43",
+      "claim_id": "C104",
+      "claim": "The U-Net architecture has been shown to be highly effective at tasks that preserve spatial structure in an image by taking advantage of both global and local features.",
+      "claim_type": "EXPLICIT",
+      "source": "The U-Net architecture has been shown to be highly effective at tasks that preserve spatial structure in an image by taking advantage of both global and local features (Ronneberger et al., 2015, Risse et al., 2017, He et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This cites prior work on the U-Net architecture to justify its use.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:53:13.186085Z"
+    },
+    {
+      "id": "bc70ec41-8cdd-4f38-bb15-f63d8d67120d",
+      "content_id": "40d8d67c-faad-482f-b04c-59e86a6eab43",
+      "claim_id": "C105",
+      "claim": "Traditional convolutional neural networks, including U-Net, often fail when analyzing sparse images with low-resolution features.",
+      "claim_type": "EXPLICIT",
+      "source": "Traditional convolutional neural networks, including U-Net, often fail when analyzing sparse images with low-resolution features (Risse et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This cites a known limitation of CNNs to motivate the use of recurrence.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:53:13.186085Z"
+    },
+    {
+      "id": "97fc22d4-0e7c-4619-9e56-197e49d13183",
+      "content_id": "40d8d67c-faad-482f-b04c-59e86a6eab43",
+      "claim_id": "C106",
+      "claim": "Each larva is generally captured as clusters of only \u224830 uniformly bright pixels surrounded by black pixels.",
+      "claim_type": "EXPLICIT",
+      "source": "This is particularly pronounced in our case since each larva is generally captured as clusters of only \u224830 uniformly bright pixels surrounded by black pixels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the image quality and resolution in the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:53:13.186085Z"
+    },
+    {
+      "id": "6ac1d8ed-1bac-4c4d-a362-7627933b51fe",
+      "content_id": "40d8d67c-faad-482f-b04c-59e86a6eab43",
+      "claim_id": "C108",
+      "claim": "An accuracy of 99.8% of frames labeled with the correct behavioral state was measured for the behavior classification network.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon verification with a small number of such videos withheld during training, we measure of an accuracy of 99.8% of frames labeled with the correct behavioral state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative measurement of the performance of the behavior classification network.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:53:13.186085Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "b77e2cee-790c-4946-a046-86d17e2ef328",
+      "content_id": "40d8d67c-faad-482f-b04c-59e86a6eab43",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "A robotic system was developed that automatically tracks and transports Drosophila larvae throughout an arena using a modified 3D printer with a custom water-droplet-based nozzle. The system achieves high reliability with 99.8%/99.9% pick-up/drop-off success rates and maintains larvae within the arena through tight coordination between camera feedback and robotic manipulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C28-C34, C71-C72, and C96-C98 collectively describe the robotic system's design, implementation, and performance metrics. The technical specifications are detailed, the success rates are quantified, and the system's functionality is demonstrated through the experiments. The convergence of hardware description, performance data, and successful long-duration experiments provides strong support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:53:13.186085Z"
+    },
+    {
+      "id": "84d62a0d-3d8d-43cc-be15-08fb201bba78",
+      "content_id": "40d8d67c-faad-482f-b04c-59e86a6eab43",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "A custom computer vision and machine learning pipeline was developed to track larval position, posture, and behavioral state from video recordings. The pipeline uses recurrent U-Net for posture tracking and densely connected neural networks for behavioral classification, achieving 99.8% accuracy in behavioral state classification and 91% accuracy in preserving identities across collision events.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C43 and C73, C100-C108 describe the analysis pipeline with specific architectural choices, performance metrics, and justifications for design decisions. The reported accuracies (99.8% for behavior classification, 91% for collision handling) are quantified and the methods are described in sufficient detail. The use of recurrent networks to handle low-resolution sparse images is well-motivated by cited limitations of traditional CNNs.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:53:13.186085Z"
+    },
+    {
+      "id": "7887d613-3eb6-4a5c-b42e-483beba894ba",
+      "content_id": "40d8d67c-faad-482f-b04c-59e86a6eab43",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Six-hour continuous observations of larval exploratory behavior reveal a significant drop in activity (speed and turn rate) over the first hour before plateauing. This pattern is consistent with short-term snapshot observations when examining temporal dynamics rather than time-averaged values, with correlation between speed and turn rate observed at both population (r=0.572) and individual (r=0.348\u00b10.098) levels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C44-C47, C7, and C74 present convergent evidence from both continuous and snapshot experiments. The quantitative correlation coefficients are provided, statistical comparisons are made, and the similarity in decline rates between continuous (-6.9\u00d710\u207b\u2075 mm/s\u00b2) and snapshot (-7.7\u00d710\u207b\u2075 mm/s\u00b2) observations strengthens the conclusion. Figure 3 provides visual support for these temporal dynamics.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:53:13.186085Z"
+    },
+    {
+      "id": "1657b651-1cae-44c4-8bc3-4b50ba574479",
+      "content_id": "40d8d67c-faad-482f-b04c-59e86a6eab43",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "A single larva was continuously observed for over 30 hours using automated hourly feeding, crawling more than 48 meters total. Behavioral features showed both steady changes (decreasing speed) and dramatic shifts halfway through (increased curvature and turn size), with maintained left-turning bias throughout.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C35, C53-C59 describe the 30-hour experiment with specific quantitative measurements (48m distance, hourly feeding protocol). The observations are supported by Figure 4 showing trajectory and behavioral features over time. However, the authors acknowledge uncertainty about causes of behavioral changes (biological vs. environmental), which is appropriately noted but doesn't undermine the observational findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:53:13.186085Z"
+    },
+    {
+      "id": "0fc45efc-58b1-4593-af47-f76eeab7a273",
+      "content_id": "40d8d67c-faad-482f-b04c-59e86a6eab43",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Individual-level analysis of larval thermotaxis reveals a bimodal distribution in navigation efficiency (BC=0.67 vs 0.48 without gradient, p<0.01), identifying distinct 'neutral' and 'strong' crawler phenotypes. This bimodality is masked in population averages, demonstrating that different individual-level statistics can generate similar population means.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C9, C66-C67, C75, and C65 present a key finding with statistical support (binomial coefficient crossing critical threshold of 5/9). Figure 6 demonstrates both simulated and empirical evidence for how population averages can obscure individual variability. The bimodal distribution is quantified and the shift from high intra-animal to high inter-animal variability with gradient application is clearly shown. The statistical test (p<0.01) supports the significance of the distribution change.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:53:13.186085Z"
+    },
+    {
+      "id": "35f2b1e1-884f-4ddb-aeaa-f1793503882a",
+      "content_id": "40d8d67c-faad-482f-b04c-59e86a6eab43",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Larvae exposed to a thermal gradient (0.035\u00b0C/mm, 13-21\u00b0C) show increased navigation index (0.130\u00b10.017) compared to no gradient (0.032\u00b10.020, p<0.001), with navigation efficiency remaining steady over 6 hours of observation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36, C60-C61, and C64 describe the thermotaxis experiments with specific gradient parameters and quantified navigation indices. The statistical significance (p<0.001) is reported and the stability over time is documented. Figure 5 provides visual support. The experimental conditions are well-defined and build on established prior work (Klein et al., 2015).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:53:13.186085Z"
+    },
+    {
+      "id": "bcb6552c-be85-4b15-b78a-0ae228717cf3",
+      "content_id": "40d8d67c-faad-482f-b04c-59e86a6eab43",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Short-term effects of robot disturbance on larval behavior fade after less than 60 seconds, with a transient increase in speed for 1-2 minutes post-interaction (p<0.05) before returning to baseline. This is consistent with prior findings that thermal response becomes uncorrelated with stimulus history after ~10s and physical behavior normalizes within ~20s.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C87-C89 address a critical concern about robot interference. Figure 3D shows the transient effect quantitatively, and the authors appropriately cite prior work to contextualize the recovery timescales. The statistical significance of the transient is noted (p<0.05) and the return to baseline is demonstrated. However, the authors acknowledge uncertainty about long-term cumulative effects, which is an appropriate limitation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:53:13.186085Z"
+    },
+    {
+      "id": "a6f3d4de-9917-4969-ab15-477066cb5c0f",
+      "content_id": "40d8d67c-faad-482f-b04c-59e86a6eab43",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The bimodal thermotaxis phenotypes are consistent with recent findings of switch-like learning behavior in larval Drosophila, suggesting the existence of distinct behavioral 'personality types' that vary between individuals and are obscured by population averaging.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C76-C79 connect the current findings to prior work (Lesar et al., 2021) on quantized learning states. While the modalities differ (thermotaxis vs. CO\u2082 preference), both reveal bimodal individual-level distributions masked by population means. The interpretation is appropriately cautious about the different contexts while drawing parallels. The connection to 'personality types' is supported by multiple citations and represents a reasonable interpretation of the convergent findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:53:13.186085Z"
+    },
+    {
+      "id": "4eeaf80e-799f-4278-b138-a0b8e5efe7c2",
+      "content_id": "40d8d67c-faad-482f-b04c-59e86a6eab43",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The robotic system's flexible design enables potential future applications including scheduled delivery of food or drugs to measure acute and chronic effects, and optogenetic manipulation of specific neurons during behavior.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C4, C80-C81 describe potential capabilities and future applications. While C4 states the system 'enables' these capabilities, C80-C81 are explicitly speculative ('could deliver', 'could leverage'). The feeding capability is demonstrated in the 30-hour experiment, but drug delivery and optogenetics are not tested. These represent reasonable extensions supported by citations to relevant prior work, but remain undemonstrated possibilities rather than established results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:53:13.186085Z"
+    },
+    {
+      "id": "20541019-aaa3-435d-a5b5-f41ef74e996e",
+      "content_id": "40d8d67c-faad-482f-b04c-59e86a6eab43",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The experimental conditions (flat substrate, no visible light, minimal food) are far removed from ecological settings and have limitations including potential uncontrolled environmental stimuli, inability to trigger molting with current feeding methods, and possible introduction of olfactory/gustatory cues from food remnants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C83-C86 and C90-C94 represent the authors' critical self-assessment of experimental limitations. These are appropriately acknowledged constraints rather than refuted claims. The comparison to natural ecology (C84) is supported by citation, and the feeding limitations (C92-C93) are demonstrated by the failure to induce molting. This represents good scientific practice in acknowledging limitations, though these are not primary results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:53:13.186085Z"
+    },
+    {
+      "id": "b0f5d274-2e2a-4e3a-8624-178d2fe502a3",
+      "content_id": "40d8d67c-faad-482f-b04c-59e86a6eab43",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Prior work has established short-term behavioral characterization in various systems, but long-term continuous observation has been limited. Drosophila larvae are well-suited for such studies due to their simple behavioral repertoire, short life cycle, robust sensory responses, and tendency to dwell at arena edges which limits typical experiments to ~10 minutes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2 and C10-C27 provide context from prior work and established knowledge about larval biology and behavior. These are appropriately cited and represent accurate characterization of the field and model system. The edge-dwelling behavior (C26-C27) is demonstrated in Figure 1\u2014figure supplement 1. This background appropriately motivates the need for the robotic system but represents contextual information rather than novel findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:53:13.186085Z"
+    },
+    {
+      "id": "f9c5c0cf-0dff-4f81-b434-8c7acc2a04f2",
+      "content_id": "40d8d67c-faad-482f-b04c-59e86a6eab43",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Future improvements may include a separate feeding station away from the main navigation area to avoid introducing olfactory/gustatory stimuli.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C95 is explicitly speculative about future improvements. While this addresses a real limitation identified in C94, it represents a proposed solution rather than an implemented or tested feature. This is appropriate discussion of future directions but not a current result.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:53:13.186085Z"
+    },
+    {
+      "id": "3b54d7cd-ce2b-40cd-a284-aab095c01878",
+      "content_id": "40d8d67c-faad-482f-b04c-59e86a6eab43",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "PID controllers drive thermoelectric coolers to maintain a thermal gradient of 0.035\u00b0C/mm across the agar gel arena.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C99 describes the technical implementation of the thermal gradient system with specific parameters. This is a straightforward methodological detail that is consistent with the gradient parameters reported in the experiments (C36, C61) and builds on prior work (Klein et al., 2015). The implementation is adequately described for reproducibility.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:53:13.186085Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "c2b475ec-e20a-408d-86b2-ba2ba90e3abf",
+      "result_id": "b77e2cee-790c-4946-a046-86d17e2ef328"
+    },
+    {
+      "claim_id": "e65a768c-55e5-49df-b382-8f3eae1b6c4c",
+      "result_id": "b77e2cee-790c-4946-a046-86d17e2ef328"
+    },
+    {
+      "claim_id": "966d9894-92d7-4673-a951-0ea863ab409b",
+      "result_id": "b77e2cee-790c-4946-a046-86d17e2ef328"
+    },
+    {
+      "claim_id": "82652b22-5065-443f-b19b-d2a52b10a983",
+      "result_id": "b77e2cee-790c-4946-a046-86d17e2ef328"
+    },
+    {
+      "claim_id": "8ca18048-e411-4d34-89b8-75e6d938ac24",
+      "result_id": "b77e2cee-790c-4946-a046-86d17e2ef328"
+    },
+    {
+      "claim_id": "815743c6-4601-4a94-9878-56a7233abeae",
+      "result_id": "b77e2cee-790c-4946-a046-86d17e2ef328"
+    },
+    {
+      "claim_id": "205bebf8-5f06-41db-88bd-a7ae4e5955aa",
+      "result_id": "b77e2cee-790c-4946-a046-86d17e2ef328"
+    },
+    {
+      "claim_id": "94b639cc-dfd2-47a2-9a29-038bcd61737c",
+      "result_id": "b77e2cee-790c-4946-a046-86d17e2ef328"
+    },
+    {
+      "claim_id": "f3fc99fa-3690-4b19-b246-10736037bc46",
+      "result_id": "b77e2cee-790c-4946-a046-86d17e2ef328"
+    },
+    {
+      "claim_id": "419dc787-0607-4caf-a76f-4ce1d62a9133",
+      "result_id": "b77e2cee-790c-4946-a046-86d17e2ef328"
+    },
+    {
+      "claim_id": "cd4b2265-9c87-4fa6-9867-3a232a363522",
+      "result_id": "b77e2cee-790c-4946-a046-86d17e2ef328"
+    },
+    {
+      "claim_id": "878ec916-bb08-43e5-b389-b83bf21864d3",
+      "result_id": "b77e2cee-790c-4946-a046-86d17e2ef328"
+    },
+    {
+      "claim_id": "eb10c61c-80e4-41b8-9334-f7bc1c393001",
+      "result_id": "b77e2cee-790c-4946-a046-86d17e2ef328"
+    },
+    {
+      "claim_id": "23e57f0b-6177-432a-93f1-6e84bf9b596f",
+      "result_id": "84d62a0d-3d8d-43cc-be15-08fb201bba78"
+    },
+    {
+      "claim_id": "59bae573-b389-4908-9f1b-26b2d7c740a2",
+      "result_id": "84d62a0d-3d8d-43cc-be15-08fb201bba78"
+    },
+    {
+      "claim_id": "93c4bc80-7f07-44e8-b522-9edcb3d01b14",
+      "result_id": "84d62a0d-3d8d-43cc-be15-08fb201bba78"
+    },
+    {
+      "claim_id": "9fd966ae-8892-459d-b58b-6155ed4234c1",
+      "result_id": "84d62a0d-3d8d-43cc-be15-08fb201bba78"
+    },
+    {
+      "claim_id": "7e5a1bc1-752a-48eb-9794-6087a2d3b1ff",
+      "result_id": "84d62a0d-3d8d-43cc-be15-08fb201bba78"
+    },
+    {
+      "claim_id": "fe364538-92a2-44a9-b34b-6260acfe08c3",
+      "result_id": "84d62a0d-3d8d-43cc-be15-08fb201bba78"
+    },
+    {
+      "claim_id": "60a2d53a-51c7-4979-9225-3c877b1fcb79",
+      "result_id": "84d62a0d-3d8d-43cc-be15-08fb201bba78"
+    },
+    {
+      "claim_id": "df12ce2a-2b0c-41b1-95e7-9b98f38d643a",
+      "result_id": "84d62a0d-3d8d-43cc-be15-08fb201bba78"
+    },
+    {
+      "claim_id": "f1a54d00-50cd-47da-97ad-74ed192f3953",
+      "result_id": "84d62a0d-3d8d-43cc-be15-08fb201bba78"
+    },
+    {
+      "claim_id": "62145eec-eac3-4478-83ae-e06d671f5a26",
+      "result_id": "84d62a0d-3d8d-43cc-be15-08fb201bba78"
+    },
+    {
+      "claim_id": "4265b4b4-6730-4cc8-8dbd-06738a9954ec",
+      "result_id": "84d62a0d-3d8d-43cc-be15-08fb201bba78"
+    },
+    {
+      "claim_id": "be424ca0-34ad-4b35-9ee0-24aba1f26621",
+      "result_id": "84d62a0d-3d8d-43cc-be15-08fb201bba78"
+    },
+    {
+      "claim_id": "406e99b3-2af8-4580-92f2-a6b3ad72cc7a",
+      "result_id": "84d62a0d-3d8d-43cc-be15-08fb201bba78"
+    },
+    {
+      "claim_id": "bc70ec41-8cdd-4f38-bb15-f63d8d67120d",
+      "result_id": "84d62a0d-3d8d-43cc-be15-08fb201bba78"
+    },
+    {
+      "claim_id": "97fc22d4-0e7c-4619-9e56-197e49d13183",
+      "result_id": "84d62a0d-3d8d-43cc-be15-08fb201bba78"
+    },
+    {
+      "claim_id": "6ac1d8ed-1bac-4c4d-a362-7627933b51fe",
+      "result_id": "84d62a0d-3d8d-43cc-be15-08fb201bba78"
+    },
+    {
+      "claim_id": "e85303bc-ad66-494b-8441-f4fe418060eb",
+      "result_id": "7887d613-3eb6-4a5c-b42e-483beba894ba"
+    },
+    {
+      "claim_id": "0f333e7b-6e1a-413f-8cb0-0eaa0da2bef0",
+      "result_id": "7887d613-3eb6-4a5c-b42e-483beba894ba"
+    },
+    {
+      "claim_id": "30652b45-b5bd-4e97-925a-530e84744aed",
+      "result_id": "7887d613-3eb6-4a5c-b42e-483beba894ba"
+    },
+    {
+      "claim_id": "553fbb1d-716d-4fc4-b60c-ed77e441b34a",
+      "result_id": "7887d613-3eb6-4a5c-b42e-483beba894ba"
+    },
+    {
+      "claim_id": "c5b203e4-562f-4d60-9809-30fb6157afff",
+      "result_id": "7887d613-3eb6-4a5c-b42e-483beba894ba"
+    },
+    {
+      "claim_id": "715e28f7-86d3-4768-8ca4-08bda635d029",
+      "result_id": "7887d613-3eb6-4a5c-b42e-483beba894ba"
+    },
+    {
+      "claim_id": "43f422ba-2a87-496c-a9e7-9d2f23e1c8f2",
+      "result_id": "7887d613-3eb6-4a5c-b42e-483beba894ba"
+    },
+    {
+      "claim_id": "b6ca1a7d-9f81-4720-b184-0d504395970b",
+      "result_id": "1657b651-1cae-44c4-8bc3-4b50ba574479"
+    },
+    {
+      "claim_id": "f6752698-9410-41ad-ab36-cdfa1f3287b3",
+      "result_id": "1657b651-1cae-44c4-8bc3-4b50ba574479"
+    },
+    {
+      "claim_id": "c16c7d3d-1fde-46d5-87c9-03d02084a6cf",
+      "result_id": "1657b651-1cae-44c4-8bc3-4b50ba574479"
+    },
+    {
+      "claim_id": "633cb7b2-48bc-4f2c-8baf-bdcbcf913602",
+      "result_id": "1657b651-1cae-44c4-8bc3-4b50ba574479"
+    },
+    {
+      "claim_id": "a4d7508a-b13a-423d-ab0e-eca3fd6f0a08",
+      "result_id": "1657b651-1cae-44c4-8bc3-4b50ba574479"
+    },
+    {
+      "claim_id": "94cc56ba-4795-4f1a-85ac-7766c52db6d4",
+      "result_id": "1657b651-1cae-44c4-8bc3-4b50ba574479"
+    },
+    {
+      "claim_id": "845c6389-71fe-4dfd-bb7d-3bbf001909e6",
+      "result_id": "1657b651-1cae-44c4-8bc3-4b50ba574479"
+    },
+    {
+      "claim_id": "ed7b9473-14fb-4509-b6a0-e65ba6ced7a7",
+      "result_id": "1657b651-1cae-44c4-8bc3-4b50ba574479"
+    },
+    {
+      "claim_id": "c34a4ea9-bc89-47b3-93f7-7598d35e5482",
+      "result_id": "1657b651-1cae-44c4-8bc3-4b50ba574479"
+    },
+    {
+      "claim_id": "fac02cc0-11ff-4a2e-9728-cb0c83b35f78",
+      "result_id": "0fc45efc-58b1-4593-af47-f76eeab7a273"
+    },
+    {
+      "claim_id": "b20b21c1-f51e-4996-b116-5c93a460b560",
+      "result_id": "0fc45efc-58b1-4593-af47-f76eeab7a273"
+    },
+    {
+      "claim_id": "c6c73930-91d7-4722-8c2d-a491155c6001",
+      "result_id": "0fc45efc-58b1-4593-af47-f76eeab7a273"
+    },
+    {
+      "claim_id": "d18be288-ccae-49eb-b78c-aebbf42f086c",
+      "result_id": "0fc45efc-58b1-4593-af47-f76eeab7a273"
+    },
+    {
+      "claim_id": "60d64822-0b0f-4665-9ccc-08a44578f0ba",
+      "result_id": "0fc45efc-58b1-4593-af47-f76eeab7a273"
+    },
+    {
+      "claim_id": "50cf7db4-8a55-4ba9-990f-2c7f04814e48",
+      "result_id": "0fc45efc-58b1-4593-af47-f76eeab7a273"
+    },
+    {
+      "claim_id": "48ec0a29-8e53-4eca-b354-9c19a0e3784a",
+      "result_id": "35f2b1e1-884f-4ddb-aeaa-f1793503882a"
+    },
+    {
+      "claim_id": "eddd1fcf-4e8c-407c-98d7-5651023f46e1",
+      "result_id": "35f2b1e1-884f-4ddb-aeaa-f1793503882a"
+    },
+    {
+      "claim_id": "999f9aed-2c1c-4a6e-9af2-2962af463754",
+      "result_id": "35f2b1e1-884f-4ddb-aeaa-f1793503882a"
+    },
+    {
+      "claim_id": "5c924bb5-2f1c-44f9-ad32-bf9b15aa950c",
+      "result_id": "35f2b1e1-884f-4ddb-aeaa-f1793503882a"
+    },
+    {
+      "claim_id": "bfa17ae0-cc52-4db5-a1d0-3f59b412209d",
+      "result_id": "bcb6552c-be85-4b15-b78a-0ae228717cf3"
+    },
+    {
+      "claim_id": "1c7b226b-2f5a-4c4d-893d-6669914626be",
+      "result_id": "bcb6552c-be85-4b15-b78a-0ae228717cf3"
+    },
+    {
+      "claim_id": "17e736ec-0957-45b3-abf8-04801bd90779",
+      "result_id": "bcb6552c-be85-4b15-b78a-0ae228717cf3"
+    },
+    {
+      "claim_id": "0e616a6d-17c4-4cfa-b704-ab7dc9a11f58",
+      "result_id": "a6f3d4de-9917-4969-ab15-477066cb5c0f"
+    },
+    {
+      "claim_id": "5f719377-cbb8-4e67-8322-fc52b3ba7b29",
+      "result_id": "a6f3d4de-9917-4969-ab15-477066cb5c0f"
+    },
+    {
+      "claim_id": "783212c0-1214-420f-bb96-0090e760441c",
+      "result_id": "a6f3d4de-9917-4969-ab15-477066cb5c0f"
+    },
+    {
+      "claim_id": "3453cc9e-bef0-4fe7-8b89-eff8d4fe726b",
+      "result_id": "a6f3d4de-9917-4969-ab15-477066cb5c0f"
+    },
+    {
+      "claim_id": "fbcd3649-2e34-4565-b2f8-0a0d160a3b85",
+      "result_id": "4eeaf80e-799f-4278-b138-a0b8e5efe7c2"
+    },
+    {
+      "claim_id": "ef36cc77-5fad-4a71-b865-fec2ebfbc079",
+      "result_id": "4eeaf80e-799f-4278-b138-a0b8e5efe7c2"
+    },
+    {
+      "claim_id": "d0b42712-5abe-478b-89c2-75909da03b9e",
+      "result_id": "4eeaf80e-799f-4278-b138-a0b8e5efe7c2"
+    },
+    {
+      "claim_id": "f589254b-2aec-46ca-82a7-25492e33f323",
+      "result_id": "20541019-aaa3-435d-a5b5-f41ef74e996e"
+    },
+    {
+      "claim_id": "c3e8359a-f22a-4fcf-8e7b-ac2431c215e7",
+      "result_id": "20541019-aaa3-435d-a5b5-f41ef74e996e"
+    },
+    {
+      "claim_id": "479dfcc9-189d-43db-bf99-1c84f584ab5d",
+      "result_id": "20541019-aaa3-435d-a5b5-f41ef74e996e"
+    },
+    {
+      "claim_id": "ea8d9dee-04f7-4b70-aab5-044d2e575419",
+      "result_id": "20541019-aaa3-435d-a5b5-f41ef74e996e"
+    },
+    {
+      "claim_id": "6a8e9bba-7bcd-4235-a425-ac76e2c3310e",
+      "result_id": "20541019-aaa3-435d-a5b5-f41ef74e996e"
+    },
+    {
+      "claim_id": "d2fa81c3-f431-4aa1-8069-fd6d6baf878b",
+      "result_id": "20541019-aaa3-435d-a5b5-f41ef74e996e"
+    },
+    {
+      "claim_id": "c0207911-fe7e-45c0-a732-c12b682d92bd",
+      "result_id": "20541019-aaa3-435d-a5b5-f41ef74e996e"
+    },
+    {
+      "claim_id": "cefbd60a-fab3-4ddd-9da3-cc783da6633b",
+      "result_id": "20541019-aaa3-435d-a5b5-f41ef74e996e"
+    },
+    {
+      "claim_id": "47ccf47e-24b3-4827-b4a3-e310b909d5e9",
+      "result_id": "20541019-aaa3-435d-a5b5-f41ef74e996e"
+    },
+    {
+      "claim_id": "67e22a0d-3052-4f3b-a657-904be51506ba",
+      "result_id": "b0f5d274-2e2a-4e3a-8624-178d2fe502a3"
+    },
+    {
+      "claim_id": "5166daa3-c004-45a0-a62f-21ec92a55495",
+      "result_id": "b0f5d274-2e2a-4e3a-8624-178d2fe502a3"
+    },
+    {
+      "claim_id": "d570ed8e-7255-4615-bf9a-2fb51d56574f",
+      "result_id": "b0f5d274-2e2a-4e3a-8624-178d2fe502a3"
+    },
+    {
+      "claim_id": "8dbc59b9-5a16-4a31-80be-1ae22f3c0b8c",
+      "result_id": "b0f5d274-2e2a-4e3a-8624-178d2fe502a3"
+    },
+    {
+      "claim_id": "6ca67e65-dd58-4c0b-9503-27ac806279ad",
+      "result_id": "b0f5d274-2e2a-4e3a-8624-178d2fe502a3"
+    },
+    {
+      "claim_id": "cabd4780-88c9-4755-b07d-c4c06754a68e",
+      "result_id": "b0f5d274-2e2a-4e3a-8624-178d2fe502a3"
+    },
+    {
+      "claim_id": "b4e3cb94-85be-4fe9-95ea-d82ee1948c9b",
+      "result_id": "b0f5d274-2e2a-4e3a-8624-178d2fe502a3"
+    },
+    {
+      "claim_id": "32e63aee-b98b-42db-b015-3e1f54203112",
+      "result_id": "b0f5d274-2e2a-4e3a-8624-178d2fe502a3"
+    },
+    {
+      "claim_id": "29261396-6c2c-4dd1-82c6-dfc90edd9f50",
+      "result_id": "b0f5d274-2e2a-4e3a-8624-178d2fe502a3"
+    },
+    {
+      "claim_id": "748a4058-c390-4718-98ed-8aa0f6840fb1",
+      "result_id": "b0f5d274-2e2a-4e3a-8624-178d2fe502a3"
+    },
+    {
+      "claim_id": "2033aba2-50f7-488b-837a-31c83c6176ad",
+      "result_id": "b0f5d274-2e2a-4e3a-8624-178d2fe502a3"
+    },
+    {
+      "claim_id": "b25a8171-a5ff-4af9-9432-b25dc35405d8",
+      "result_id": "b0f5d274-2e2a-4e3a-8624-178d2fe502a3"
+    },
+    {
+      "claim_id": "8d9e027d-3861-4aeb-91c8-a7a7a9f6ea70",
+      "result_id": "b0f5d274-2e2a-4e3a-8624-178d2fe502a3"
+    },
+    {
+      "claim_id": "806ab2b7-86f3-46f5-b2ef-666dd58f7e28",
+      "result_id": "b0f5d274-2e2a-4e3a-8624-178d2fe502a3"
+    },
+    {
+      "claim_id": "ae8f62cb-9383-4ecb-be95-7c34680c17f0",
+      "result_id": "b0f5d274-2e2a-4e3a-8624-178d2fe502a3"
+    },
+    {
+      "claim_id": "ad9b549e-c82f-4a3c-98d1-c2b5f17563a5",
+      "result_id": "b0f5d274-2e2a-4e3a-8624-178d2fe502a3"
+    },
+    {
+      "claim_id": "f5d7e289-6222-452b-b2b9-b5ba402273df",
+      "result_id": "b0f5d274-2e2a-4e3a-8624-178d2fe502a3"
+    },
+    {
+      "claim_id": "6eb9dd5b-d83d-47f7-8ac9-83f11afaf58a",
+      "result_id": "b0f5d274-2e2a-4e3a-8624-178d2fe502a3"
+    },
+    {
+      "claim_id": "87dbb23e-5079-4e96-8984-9387b428d45d",
+      "result_id": "b0f5d274-2e2a-4e3a-8624-178d2fe502a3"
+    },
+    {
+      "claim_id": "feff6f8e-cdc9-44cc-8c48-213e0cb535a9",
+      "result_id": "b0f5d274-2e2a-4e3a-8624-178d2fe502a3"
+    },
+    {
+      "claim_id": "2530939d-8a41-437c-b68a-ebf5ed6b6dc8",
+      "result_id": "f9c5c0cf-0dff-4f81-b434-8c7acc2a04f2"
+    },
+    {
+      "claim_id": "8389719a-c8c0-40c1-b71d-62ab8b837938",
+      "result_id": "3b54d7cd-ce2b-40cd-a284-aab095c01878"
+    }
+  ],
+  "comparisons": []
+}

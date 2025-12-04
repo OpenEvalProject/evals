@@ -1,0 +1,297 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C28",
+      "C29",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "rs6740960 is a lead SNP at the 2p21 locus significantly associated with normal-range jaw shape variation (p=3.39\u00d710\u207b\u00b3\u2076) and nsCL/P risk (p=5.71\u00d710\u207b\u00b9\u00b3) in Europeans. The 'T' allele (frequency ~50%) is associated with jaw protrusion and increased clefting risk.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C28-C38 collectively establish rs6740960's dual association with normal facial variation and disease risk through cited GWAS studies (Ludwig et al., 2017; Claes et al., 2018). The statistical significance, allele frequencies, and phenotypic effects are well-documented with appropriate p-values and visualizations in Figure 1A.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C8",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "The rs6740960 'A' allele frequency varies dramatically across human populations: ~50% in Europeans and South Asians, 21% in Africans, and only 2% in East Asians. FST values between East Asians and Europeans/South Asians (0.48 and 0.52) indicate high genetic differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C43-C49 present population genetic data from the 1000 Genomes Project shown in Figure 1B. The allele frequencies and FST calculations are clearly documented, and the interpretation of FST values as indicating high genetic differentiation is consistent with population genetics standards.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Multi-species sequence alignments reveal that the 'T' allele at rs6740960 is ancestral (shared with Neanderthal and chimpanzee), while the 'A' allele is a human-derived variant. The T\u2192A substitution creates a putative DLX transcription factor binding site, and three chimp-specific mutations include a predicted ETS binding site gain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C55 are supported by multi-species sequence alignments shown in Figure 2A. The ancestral state determination is straightforward from the alignment data. However, the transcription factor binding site predictions (C52, C55) are computational inferences that would benefit from experimental validation, though they are appropriately presented as predictions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C9",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "The rs6740960 cognate enhancer shows divergent activity between humans and chimpanzees. ChIP-seq data reveal higher p300 and H3K27ac enrichment in chimp CNCCs. Transgenic mouse reporter assays demonstrate that both human and chimp orthologs drive craniofacial expression, but the chimp enhancer shows stronger and broader activity, particularly in the medial nasal prominence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C63 and C9 are supported by ChIP-seq data (Figure 2B) and transgenic mouse LacZ reporter assays (Figure 2C). The authors acknowledge a caveat regarding random integration and positional effects in the transgenic assays, but multiple independent embryos showing consistent patterns (Figure 2\u2014figure supplement 1) strengthen the conclusions. The evolutionary divergence in enhancer activity is well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C64",
+      "C65"
+    ],
+    "result": "C2orf91 (LINC02898), the closest annotated gene to rs6740960, shows minimal expression (TPM <1) in CNCCs and derivative cell types, suggesting the enhancer targets a more distal gene.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C65 are supported by RNA-seq data shown in Figure 3\u2014figure supplement 1. The low expression of the nearest gene provides important negative evidence that motivates the search for alternative target genes. This is a well-reasoned exclusion based on appropriate expression data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C3",
+      "C68",
+      "C69"
+    ],
+    "result": "H3K27ac HiChIP reveals that the rs6740960 cognate enhancer makes contact with the PKDCC promoter selectively in chondrocytes but not in CNCCs, despite comparable H3K27ac enrichment in both cell types. PKDCC encodes a secreted tyrosine kinase involved in chondrocyte differentiation that causes skeletal defects and clefting when mutated in mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C69 and C3 are supported by H3K27ac ChIP-seq and HiChIP data (Figure 3B) and ChIP-qPCR validation (Figure 3\u2014figure supplement 2). The cell-type-specific chromatin interactions are clearly demonstrated. The characterization of PKDCC function is well-supported by multiple citations to prior mouse studies. This establishes PKDCC as the target gene with appropriate mechanistic rationale.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C5",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "CRISPR/Cas9 genome editing demonstrates that heterozygous deletion of the rs6740960 cognate enhancer causes 40-60% reduction in PKDCC expression in chondrocytes but not CNCCs. The rs6740960 'T' allele itself causes 15-30% reduction in PKDCC expression specifically in chondrocytes. Allele-specific differences suggest other cis-regulatory variants can modulate these effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C74 and C5 are supported by ddPCR allele-specific expression data from multiple independent clonal lines (Figure 3C, Figure 3\u2014figure supplement 5). The experimental design with heterozygous deletions and SNP mutations, phasing strategy (Figure 3\u2014figure supplements 3-4), and biological replicates is rigorous. The observation of allele-specific magnitude differences (C74) is appropriately interpreted as evidence for additional modulatory variants.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C107"
+    ],
+    "result": "Pkdcc-/- mice display shortened nasal capsule and severe clefting affecting the maxilla and palatine bones, confirming previously reported phenotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C76 and C107 confirm prior literature findings (Imuta et al., 2009; Kinoshita et al., 2009) using micro-CT imaging (Figure 4\u2014figure supplement 1) with n=13 embryos. This serves as a positive control validating the mouse model and imaging approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C6",
+      "C92"
+    ],
+    "result": "Pkdcc+/- mice exhibit statistically significant mandible shape changes (p=0.0021) with elongation of the angular process and mental region. These phenotypes are concordant with the protruding jaw phenotype associated with rs6740960 in human GWAS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C79, C6, and C92 are supported by dense landmark morphometric analysis using MeshMonk and permutation testing (Figure 4B) with appropriate sample sizes (n=20 wild-type, n=24 Pkdcc+/-). The statistical approach is rigorous, controlling for litter and sex effects. The concordance between mouse and human phenotypes (C79) is a key translational finding, though it relies on qualitative comparison of morphological patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C93",
+      "C94"
+    ],
+    "result": "Pkdcc+/- mice show significant shape changes in maxilla and palatine bones (p=0.015), including wider distance between palatine horizontal plates. This widening is insufficient to cause complete clefting, consistent with rs6740960 being a risk variant rather than a deterministic cause of CL/P.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C82, C93-C94 are supported by morphometric analysis (Figure 4C-D). The observation that Pkdcc+/- mice show palatal widening without complete clefting (C94) is appropriately interpreted as consistent with the common variant's role as a risk factor rather than a Mendelian cause. This reconciles the high allele frequency with low disease prevalence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C83",
+      "C7",
+      "C84",
+      "C85"
+    ],
+    "result": "The rs6740960 SNP affects normal-range and disease-associated facial variation through regulating PKDCC expression in cranial chondrocytes via a craniofacial enhancer active in developing jaw primordia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C85 and C7 represent the main mechanistic conclusion integrating all experimental findings. The SNP-to-phenotype pathway is well-supported by: (1) enhancer identification and characterization, (2) target gene identification via HiChIP, (3) functional validation via genome editing, and (4) phenotypic concordance in mouse models. This represents a complete mechanistic explanation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "The rs6740960 'T' risk allele frequency (~50% in Europeans) is two orders of magnitude higher than CL/P prevalence, indicating the variant must act additively or synergistically with other genetic variants (including rs4952552 at the same locus) and/or environmental factors to cause clefting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C100 present a logical argument reconciling common variant frequency with rare disease outcome. The inference that additional factors are required (C96) is well-reasoned. The citation of environmental risk factors (C97) and endophenotype studies (C98-C100) provides supporting context. The identification of rs4952552 in endophenotype GWAS (C99) suggests locus complexity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C104"
+    ],
+    "result": "rs6740960 is in high linkage disequilibrium (r\u00b2=0.81) with rs4952552 located ~16 kb away. rs6740960 was prioritized for functional follow-up because it resides in an active enhancer region in CNCCs (unlike rs4952552) and had high imputation quality (INFO=0.91) in GWAS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C42 and C104 provide important methodological context for SNP prioritization. The LD calculation, genomic distance, and chromatin state differences are documented in Figure 1\u2014figure supplement 2. The imputation quality score validates the GWAS finding. The prioritization strategy is scientifically sound.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "PKDCC remodels extracellular matrix and affects chondrocyte differentiation timing during cartilage development. While Pkdcc is important for limb development, the craniofacial-specific activity of the rs6740960 enhancer restricts SNP effects to facial development. The mandibular phenotype involves the angular process, which attaches to the masseter muscle involved in mastication.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C91, C101-C103 provide mechanistic and anatomical context supported by appropriate citations. The tissue-specific restriction of SNP effects (C89) is inferred from enhancer activity patterns (Figure 2C) and is logically sound. The anatomical details about the angular process (C102-C103) provide functional context for the observed phenotypes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C30",
+      "C31"
+    ],
+    "result": "Background context on facial genetics: The human face is complex and has evolved dramatically. Facial shape is highly polygenic (>300 GWAS loci) and genetically encoded (evidenced by twin studies). GWAS variants map to non-coding regions enriched in enhancers active in facial development cell types (CNCCs, chondrocytes). There is overlap between variants affecting normal facial variation and nsCL/P risk.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C27, C30-C31 provide well-cited background context from the literature. These are appropriately referenced review articles and prior studies. While not original findings of this study, they establish the scientific foundation and rationale for the work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C105",
+      "C106"
+    ],
+    "result": "H9 hESC cells are homozygous for the 'A' allele at rs6740960, while H1 hESC cells are naturally heterozygous (A/T), serving as controls for genome editing and ddPCR experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C106 describe cell line genotypes used as experimental materials and controls. These are straightforward factual statements about the cell lines used, validated by genotyping data shown in Figure 3\u2014figure supplement 4.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C4",
+      "C108"
+    ],
+    "result": "PKDCC encodes a tyrosine kinase involved in chondrogenesis and skeletal development. Prior to this study, dysmorphic craniofacial phenotypes had not been reported in heterozygous Pkdcc+/- mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4 and C108 provide important context about PKDCC function and prior knowledge gaps. C4 is well-supported by citations. C108 correctly notes that the subtle heterozygous phenotypes described in this study represent a novel finding not reported in prior mouse studies, justifying the need for sensitive morphometric analysis.",
+    "result_type": "MINOR"
+  }
+]

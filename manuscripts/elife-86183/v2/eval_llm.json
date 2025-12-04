@@ -1,0 +1,203 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "OHRBETS is a low-cost ($600-$1000), open-source head-fixed behavioral platform featuring retractable spouts and wheel brakes that operate with high precision and reliability. The retractable spout achieves >98% positional consistency within 0.3 mm and extends in <180 ms, while the wheel brake stops rotation in 100% of trials, typically within 250 ms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C24 provide converging evidence for the technical specifications and performance of OHRBETS. The hardware validation data (C22-C24) demonstrates quantitative precision metrics using high-speed video and DeepLabCut analysis, supporting the system's reliability. Cost estimates (C21) and design features (C18-C20) are directly stated and supported by the described components and experimental data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Head-fixed mice trained with OHRBETS successfully learned operant conditioning for sucrose reward, demonstrating rapid acquisition (25/31 mice by session 1, 29/31 by session 6), flexible responding to changes in reward cost and magnitude, reversal learning, and behavioral patterns similar to freely moving conditions, though with some sex differences and reduced total liquid consumption compared to freely moving assays.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C25-C35 collectively demonstrate robust operant learning in head-fixed mice with appropriate statistical analyses (repeated measures ANOVA, post-hoc tests). The data show clear acquisition curves, discrimination between active/inactive responses, and replication of established behavioral phenomena (progressive ratio, reversal learning, cost sensitivity). Sex differences (C30) and reduced consumption in head-fixed vs. freely moving (C35) are appropriately documented limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "OHRBETS enables optogenetic intracranial self-stimulation under both positive and negative reinforcement procedures. Mice showed robust positive reinforcement for LHAGABA stimulation in both head-fixed and freely moving conditions with correlated response rates across systems. Negative reinforcement for LHAGlut stimulation was successfully demonstrated in head-fixed conditions but showed reduced effectiveness in freely moving assays.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C36-C46 demonstrate successful optogenetic reinforcement with appropriate controls (mCherry-expressing mice showed no discrimination). The positive correlation of response rates across head-fixed and freely moving conditions (C41) validates the head-fixed approach. The discrepancy in negative reinforcement between conditions (C44-C46) is acknowledged, though the explanation (C46) remains speculative. Statistical analyses support group differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "OHRBETS permits wheel time preference (WTP) behavior analogous to freely moving real-time place testing (RTPT). LHAGABA:ChR2 mice showed strong place preference and LHAGlut:ChR2 mice showed strong place aversion in both assays, with no statistical differences in paired zone duration between head-fixed and freely moving versions and significant correlations across conditions for experimental but not control mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C47-C50 demonstrate that WTP in OHRBETS produces valence-related behaviors comparable to freely moving RTPT. The lack of preference/aversion in controls (C47), frequency-dependent effects in experimental mice (C48), statistical equivalence across systems (C49), and selective correlation in experimental groups (C50) provide converging evidence. However, the fundamental differences between spatial and non-spatial cues between the two assays are not fully addressed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "In the multi-spout brief-access task, mice displayed concentration-dependent licking for sucrose (positive relationship), quinine (negative relationship), and NaCl (negative relationship), with distinct temporal patterns across solution types. Lick counts correlated strongly with fluid consumption weight, validating the measure. Minor effects of age and sex were observed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C51-C59 demonstrate robust concentration-dependent consummatory behavior with appropriate statistical analyses (one-way RM ANOVA with post-hoc tests). The validation of lick counts against weight gain (C51) strengthens the behavioral measure. The distinct temporal patterns across solution types (C55) and differences in task engagement (C57) are well-documented. Sex and age effects are appropriately characterized as minor.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C6",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Licking behavior in the multi-spout task was modulated by homeostatic state (water restriction > food restriction > ad libitum for sucrose; sodium depletion > sodium replete for NaCl) and circadian cycle (dark cycle > light cycle for sucrose consumption, particularly early in sessions).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C61-C67 demonstrate clear modulation of consummatory behavior by physiological state with appropriate statistical support (two-way RM ANOVA showing main effects and interactions). The homeostatic manipulations (C61-C63) and circadian effects (C65-C67) replicate established findings from freely moving literature (supported by citations). The speculation about increased water licking during sodium depletion (C64) is appropriately qualified and cited.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C68"
+    ],
+    "result": "Multi-spout brief-access behavior showed no statistical differences in mean licking across concentrations between two independent laboratories (Stuber and Roitman labs), despite nominal differences in licking microstructure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C68 demonstrates reproducibility across labs with appropriate statistical analysis. While inter-lick intervals differed between labs (noted in text), the key measure of concentration-dependent licking was statistically equivalent, supporting the system's reproducibility. This is an important validation for an open-source platform.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C7",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Mesolimbic dopamine signals measured via GRAB-DA fiber photometry during the multi-spout task showed strong correlations with solution value and consumption magnitude. NAcShL showed stronger scaling than NAcShM for appetitive solutions under food restriction, while both regions showed strong scaling for aversive NaCl solutions. Trial-by-trial correlations between dopamine signals and licking were observed across all conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C69-C77 demonstrate successful integration of fiber photometry with OHRBETS and meaningful dopamine dynamics. The differential scaling across brain regions and homeostatic states (C70-C74) is supported by appropriate statistical analyses (two-way RM ANOVA with post-hoc tests). Strong correlations between dopamine and behavior (C72, C75) and simultaneous dual-site recordings (C75) validate the approach. The speculation about NAcShM's role in aversive processing (C77) is appropriately qualified and cited.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C1",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Head-fixed behavioral approaches offer advantages including experimental control, precise stimulus delivery, precise behavioral measurement, isolation of behavioral subcomponents, and enhanced compatibility with neuroscience techniques (optogenetics, fiber photometry, two-photon imaging, holographic optogenetics), but come at the cost of reduced naturalistic behavior and enhanced stress.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C8-C12 represent established knowledge in the field, appropriately cited (Bjerre and Palmer, 2020) and supported by the experimental demonstrations throughout the manuscript. The advantages are demonstrated through the successful implementation of multiple behavioral paradigms with concurrent optogenetics and fiber photometry. The acknowledged limitations (C9) provide appropriate context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Motivated behaviors are essential for survival and can be disrupted in disease states. These behaviors are typically assessed using multiple tasks that isolate components like appetitive and consummatory behaviors, which may rely on independent or overlapping circuits. The brief-access task enables measurement of responses to multiple solution concentrations within a session. Despite widespread use in freely moving animals, there has been limited adaptation of these tasks for head-fixed rodents.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C17 provide appropriate background and rationale for the study, supported by relevant citations (Kenny, 2011; Rossi and Stuber, 2018; Volkow et al., 2017; Panksepp, 1982; Robinson and Berridge, 1993; Boughter et al., 2002; Davis, 1973; Smith, 2001). The observation about limited head-fixed adaptation (C17) is a reasonable assessment of the field that motivates the development of OHRBETS.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Head fixation can be acutely stressful and may influence behaviors and neuronal activity. The reduced naturalistic character of head-fixed approaches can impair behavior and related neuronal activity. While isolation of behavioral components provides insight into specific mechanisms, it may limit understanding of how circuits function during complex behaviors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C81 appropriately acknowledge limitations of head-fixed approaches with supporting citations (Juczewski et al., 2020; Aghajan et al., 2015; Aronov and Tank, 2014). These represent important caveats for interpreting the results and are appropriately discussed. The balanced presentation of advantages and limitations strengthens the manuscript.",
+    "result_type": "MINOR"
+  }
+]

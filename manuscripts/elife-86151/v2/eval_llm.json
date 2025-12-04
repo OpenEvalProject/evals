@@ -1,0 +1,493 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C82"
+    ],
+    "result": "The HEAT repeat 9 of Ric-8A undergoes a substantial conformational change upon NCS-1 binding, with helix a9 unfolding and helix b9 refolding into regions R1 and R2. This rearrangement exposes hydrophobic residues to interact with NCS-1's hydrophobic crevice while exposing positively charged residues on the opposite face, creating an amphipathic structure that forces detachment of repeat 9 from repeat 8.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C75 are directly supported by high-resolution crystallographic data (Figures 3B, 7B, 7C, Video 1) showing the structural rearrangement. The ~180\u00b0 rotation (C72) is quantified and visualized. The dramatic thermal stability increase (>20\u00b0C, C78) provides independent biophysical validation. Claims C76-C77 about electrostatic repulsion and hinge mechanisms are reasonable inferences from the structural data, though speculative. The convergence of crystallographic, thermal stability, and mutagenesis data (C83) strongly supports this conformational change model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C180",
+      "C181",
+      "C182",
+      "C183",
+      "C184",
+      "C185",
+      "C186",
+      "C187",
+      "C188",
+      "C189",
+      "C190",
+      "C191",
+      "C192",
+      "C193",
+      "C194",
+      "C195",
+      "C196",
+      "C197",
+      "C198"
+    ],
+    "result": "The NCS-1/Ric-8A interface involves HEAT repeat 9 (specifically helices R1 and R2) with a contact area of 1140 \u00c5\u00b2 and 1469 total contacts. The interface includes nine H-bonds and extensive van der Waals interactions, with the R1-R2 loop accounting for 28% of total contacts. Deletion constructs and mutagenesis confirm that HEAT repeat 9, but not rH10 or rH11 helices, is necessary and sufficient for NCS-1 recognition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The structural characterization is supported by high-resolution crystallography (Table 1: 1.70-1.86 \u00c5 resolution) with good refinement statistics (Rwork/Rfree 18.64/20.76 for best structure). The contact analysis (C182-C183) uses standard computational methods. Co-immunoprecipitation data with deletion constructs (C180, C194, Figure 2C) and point mutants (C199-C205, Figure 3D) provide orthogonal validation. Statistical analysis shows significant effects for key mutants (p<0.05). The convergence of structural and functional data strongly supports the interface definition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C199",
+      "C200",
+      "C201",
+      "C202",
+      "C203",
+      "C204",
+      "C205"
+    ],
+    "result": "Mutagenesis studies reveal that individual H-bond disruptions (R148A/R151A, Y52A, D37A) have minimal effects on binding, but combined mutations show cumulative effects. The quadruple mutant (D37A/Y52A/R148A/R151A) reduces binding by >60%. Hydrophobic interactions involving NCS-1 W30 and Ric-8A L424/M425 are critical, reducing binding >50% when mutated, comparable to disrupting H-bonds throughout the interface.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The mutagenesis data (Figure 3D) includes appropriate controls (wild-type) and statistical analysis (paired t-test, n=3, p-values reported). The finding that hydrophobic interactions are as important as H-bonds is well-supported. However, the study would benefit from quantitative binding affinity measurements (Kd values) rather than just co-IP band intensities. The cumulative effect of mutations supports a distributed binding interface rather than a single hotspot, which is consistent with the large contact area.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "NCS-1/Ric-8A complex formation requires Ca\u00b2\u207a binding to structural sites EF-2 and EF-3, but not to the regulatory site EF-4. Neither Ca\u00b2\u207a-free nor fully Ca\u00b2\u207a-loaded NCS-1 efficiently recognizes Ric-8A. Assembly occurs optimally when transitioning from EGTA to intermediate Ca\u00b2\u207a conditions, as demonstrated by size exclusion chromatography and nano-DSF showing a >20\u00b0C thermal stability increase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims are supported by multiple orthogonal approaches: SEC (Figure 2A), nano-DSF (Figure 2B with n=3 replicates, SEM reported), crystallography (Figure 4A showing Ca\u00b2\u207a at EF-2/EF-3 but not EF-4), and BLI (Figure 4E, Table 3). The experimental design appropriately tests three conditions (Ca\u00b2\u207a-free, intermediate, saturated). The >20\u00b0C thermal shift is substantial and reproducible. However, the 'intermediate Ca\u00b2\u207a' conditions are not precisely defined in terms of actual free Ca\u00b2\u207a concentration, which limits mechanistic interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C115"
+    ],
+    "result": "Crystallographic analysis reveals that EF-2 and EF-3 contain Ca\u00b2\u207a (confirmed by 6\u03c3 anomalous peaks), while EF-4 contains Na\u207a rather than Ca\u00b2\u207a in the NCS-1/Ric-8A complex. Na\u207a was modeled at EF-4 based on its presence in crystallization conditions, lack of anomalous signal, and structural indistinguishability from Ca\u00b2\u207a at the resolution obtained.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The anomalous scattering analysis (Figure 4A) provides strong evidence for Ca\u00b2\u207a at EF-2/EF-3 (6\u03c3 peaks) and absence at EF-4. The reasoning for Na\u207a assignment is sound: (1) Na\u207a present in crystallization buffer (100 mM), (2) no anomalous signal expected for Na\u207a, (3) similar ionic radii allow equivalent coordination geometry. However, the assignment is indirect\u2014direct confirmation would require different wavelength data or other spectroscopic methods. The residual anomalous signal at EF-4 (C148) suggests possible low Ca\u00b2\u207a occupancy, consistent with assembly data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C114",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C163"
+    ],
+    "result": "Na\u207a binds to NCS-1 with an apparent Kd of 123.4\u00b126.6 mM, as demonstrated by tryptophan fluorescence saturation at 300 mM NaCl. K\u207a shows linear changes without saturation up to 500 mM, indicating NCS-1 cannot bind K\u207a at physiologically relevant concentrations. The fluorescence changes likely reflect W103 environment alterations transmitted through EF-3/EF-4 helix-helix contacts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The fluorescence data (Figure 4B) shows clear saturation for Na\u207a but not K\u207a, with n=3 replicates and SEM reported. The Kd calculation assumes 1:1 binding, which is reasonable but simplified. The interpretation about W103 (C159-C161) is logical given structural data showing EF-3/EF-4 contacts (Figure 3\u2014supplement 2), though direct evidence (e.g., W103 mutant) is not provided. The physiological relevance is supported by typical intracellular Na\u207a concentrations (5-15 mM), though the Kd is relatively high.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C168",
+      "C169",
+      "C170",
+      "C171",
+      "C172",
+      "C173",
+      "C174",
+      "C175"
+    ],
+    "result": "ITC reveals that Ca\u00b2\u207a binds to NCS-1 via a three-site sequential model, with the first and last steps enthalpy-driven and the second entropy-driven. Na\u207a modulates Ca\u00b2\u207a affinity: in 150 mM Na\u207a vs. K\u207a, the Kd for the first and last sites increases ~1.5-fold, while the second site Kd doubles and its enthalpy change triples. This indicates Na\u207a binding influences multiple Ca\u00b2\u207a sites through inter-EF-hand communication.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The ITC data (Figure 4D, Table 4) is analyzed with an appropriate sequential binding model. The thermodynamic parameters are well-determined with small errors. The comparison between Na\u207a and K\u207a conditions is properly controlled. However, the assignment of specific sites to specific binding steps is uncertain\u2014the authors acknowledge this limitation (C171 cites NMR data for site assignment). The claim about inter-EF-hand communication (C175) is reasonable but somewhat speculative. The possibility of Na\u207a binding to multiple sites (C176) is appropriately acknowledged as uncertain.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C164",
+      "C165",
+      "C166",
+      "C167"
+    ],
+    "result": "Complex formation occurs in both Na\u207a and K\u207a containing media, demonstrating that Na\u207a occupation of EF-4 does not contribute to NCS-1/Ric-8A assembly. Only Ca\u00b2\u207a binding to structural sites EF-2 and EF-3 triggers the conformational rearrangement necessary for Ric-8A recognition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The assembly data in Na\u207a vs. K\u207a buffers (Figure 4C) directly tests the role of Na\u207a in complex formation. The conclusion that Na\u207a at EF-4 is not required for assembly is well-supported. This is consistent with crystallographic data showing Na\u207a at EF-4 in the assembled complex. The inference that only EF-2/EF-3 Ca\u00b2\u207a binding is required (C165) is supported by the Ca\u00b2\u207a titration data (Figure 2A) and crystallography. The logic is sound and conclusions are appropriately constrained.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C177",
+      "C178",
+      "C179"
+    ],
+    "result": "BLI measurements show that NCS-1 affinity for Ric-8A-P3 is Ca\u00b2\u207a-dependent: at 0 nM Ca\u00b2\u207a (125 mM Na\u207a), Kd is in the hundreds of \u03bcM range; at 250 nM Ca\u00b2\u207a, affinity decreases 1.5-fold; at 425 nM Ca\u00b2\u207a (above the EF-4 Kd), affinity is greatly reduced to the mM range.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The BLI data (Figure 4E, Table 3) provides quantitative affinity measurements at defined Ca\u00b2\u207a concentrations with n=3 replicates and SEM reported. The experimental design appropriately uses decalcified water and controlled Ca\u00b2\u207a additions. The dramatic affinity decrease at 425 nM Ca\u00b2\u207a (>100-fold) is consistent with EF-4 Ca\u00b2\u207a loading disrupting the complex. However, the Kd values are relatively high (hundreds of \u03bcM), raising questions about physiological relevance. The use of peptide (Ric-8A-P3) rather than full-length protein may affect affinity measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C99",
+      "C100"
+    ],
+    "result": "NCS-1 binds to unphosphorylated Ric-8A and protects it from CK2-mediated phosphorylation. The non-phosphorylatable Ric-8A mutant (S436A/T441A) shows increased binding to NCS-1 compared to wild-type, suggesting Ric-8A is partially phosphorylated in vivo. When complexed with NCS-1, Ric-8A is not phosphorylated by CK2, as demonstrated by anion exchange chromatography and LC-MS/MS showing no phosphopeptides even with enrichment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple lines of evidence support this result: co-IP (Figure 5A), anion exchange chromatography (Figure 5B), and LC-MS/MS (Figure 5\u2014supplement 1). The experimental design includes appropriate controls (uncomplexed Ric-8A, untreated samples). The LC-MS/MS with phosphopeptide enrichment provides strong negative evidence. The inference about partial in vivo phosphorylation (C55) is reasonable but indirect. The mechanism of protection (steric occlusion vs. conformational change) is not definitively established, though the structural data suggests steric occlusion of phosphorylation sites.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C60",
+      "C103",
+      "C104"
+    ],
+    "result": "Phosphorylated Ric-8A does not efficiently interact with NCS-1, as shown by assembly experiments. The strong ionic interactions of phosphorylated S435 and T440 with the ARM-HEAT repeat domain would preclude the structural rearrangement of repeat 9 necessary for NCS-1 binding. Therefore, Ric-8A dephosphorylation must precede NCS-1 binding in the cellular context.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The assembly data (Figure 5C) shows clear reduction in complex formation with phosphorylated Ric-8A. The structural explanation (C104) is well-reasoned based on the phospho-Ric-8A/G\u03b1 structure (Figure 7A) showing phosphoresidue interactions that would stabilize the G\u03b1-binding conformation. However, the assembly experiment is qualitative (SEC peak analysis) rather than quantitative (Kd measurement). The cellular inference (C103) is logical but extrapolates beyond the in vitro data. The requirement for dephosphorylation is a reasonable model but cellular phosphatase identity and regulation are not addressed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Nucleotide exchange assays demonstrate that NCS-1 complexed to Ric-8A inhibits Ric-8A GEF activity toward G\u03b1i1. In the absence of Ca\u00b2\u207a, Ric-8A-491 increases nucleotide exchange ~4-fold over intrinsic rate, while His-NCS-1/Ric-8A-491 shows no significant effect. Ca\u00b2\u207a addition restores GEF activity in a concentration-dependent manner, with ~35% restoration at 25 \u03bcM Ca\u00b2\u207a. The apparent activation constants are Ka-EXC=29\u00b18 \u03bcM for Ca\u00b2\u207a enhancement of intrinsic/Ric-8A-catalyzed exchange, and Ka-NCS-1=61\u00b135 \u03bcM for Ca\u00b2\u207a-induced complex disassembly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The nucleotide exchange data (Figure 6) includes appropriate controls (intrinsic rate, Ric-8A alone, NCS-1 alone) with minimum n=6 technical replicates. The experimental design tests multiple Ca\u00b2\u207a concentrations (0-500 \u03bcM). The fitting to exponential models is appropriate. However, several issues warrant caution: (1) The Ka-NCS-1 value (61\u00b135 \u03bcM) has large error, (2) The discrepancy between Ka-NCS-1 and ITC-derived EF-4 Kd is acknowledged but not fully resolved, (3) The partial restoration (35% at 25 \u03bcM) suggests incomplete complex disassembly or additional regulatory mechanisms, (4) The use of truncated constructs may not fully recapitulate full-length protein behavior.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "The binding of NCS-1 and G\u03b1 to Ric-8A are mutually exclusive. NCS-1 induces a structural rearrangement in Ric-8A that traps it in a conformation inaccessible to CK2-mediated phosphorylation, demonstrating negative regulation of Ric-8A-mediated G-protein signaling. NCS-1 complexed with Ric-8A shows loss of GEF activity toward G\u03b1, with restoration upon increasing Ca\u00b2\u207a concentration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This integrative result combines structural data (showing overlapping binding sites), phosphorylation assays (Figure 5B), and functional GEF assays (Figure 6). The mutual exclusivity is supported by structural comparison (Figure 7) showing that NCS-1 binding occludes the G\u03b1 binding site. The phosphorylation protection and GEF inhibition provide functional validation. The Ca\u00b2\u207a-dependent restoration links structure to function. However, direct competition experiments (e.g., mixing all three proteins) are not shown. The claim of 'trapping' (C4) is strong language\u2014the data show protection from phosphorylation, but reversibility is not extensively tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C122"
+    ],
+    "result": "The NCS-1 C-terminal helix H10 acts as a built-in competitive inhibitor of Ric-8A binding. Structural comparison shows H10 position completely overlaps with the Ric-8A recognition region. Ric-8A binding causes only subtle NCS-1 structural changes: helix H3 and the H3-H4 loop rearrange to accommodate helix R2, and the H7-H8 loop undergoes conformational change to permit contacts with Ric-8A R1 region.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The structural comparison (Figure 1\u2014supplement 1) clearly shows H10 overlap with Ric-8A binding site. The prior work showing 30% affinity increase without H10 (C45-C46, cited) supports the competitive inhibition model. The minimal NCS-1 structural changes (C89-C91) are documented by superposition analysis (Figure 1\u2014supplement 1C). This is consistent with NCS-1 using a pre-formed binding surface. The mechanism explains the Ca\u00b2\u207a-dependent regulation: H10 insertion/ejection from the crevice modulates accessibility to Ric-8A.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C143"
+    ],
+    "result": "NCS-1 recognizes Ric-8A and dopamine D2 receptor with opposite Ca\u00b2\u207a dependencies: Ric-8A binding occurs at low Ca\u00b2\u207a (EF-4 free), while D2R binding requires high Ca\u00b2\u207a. The role of helix H10 also differs: it is required for D2R recognition but negatively regulates Ric-8A binding. This differential regulation means Ric-8A and D2R are mutually exclusively bound to NCS-1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The comparison is supported by current data (Figures 3A, 4A showing EF-4 empty in NCS-1/Ric-8A) and cited prior work on D2R (Figure 1A, Pandalaneni et al., 2015). The opposite Ca\u00b2\u207a requirements are clearly documented. The H10 role difference is supported by structural data and prior work. The mutual exclusivity inference (C119) is logical given the opposite Ca\u00b2\u207a requirements and single NCS-1 molecule. This provides an elegant regulatory mechanism for coordinating different signaling pathways. However, direct competition experiments in cells would strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C116"
+    ],
+    "result": "During nerve impulse transmission, Na\u207a precedes Ca\u00b2\u207a waves. Na\u207a binding to NCS-1 EF-4 decreases Ca\u00b2\u207a affinity, meaning NCS-1/Ric-8A disassembly and Ric-8A activation would occur at higher Ca\u00b2\u207a concentrations than initially expected. This ensures return to the inactive Ric-8A/NCS-1-complexed state when Ca\u00b2\u207a levels decrease.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The physiological context (C110-C113) is established knowledge (cited). The Na\u207a effect on Ca\u00b2\u207a affinity is demonstrated by ITC (C114, Figure 4D, Table 4). The physiological interpretation (C116) is a reasonable inference but somewhat speculative. The model provides an elegant explanation for how NCS-1 integrates Na\u207a and Ca\u00b2\u207a signals during neurotransmission. However, the actual intracellular Na\u207a concentrations during action potentials and their effects on NCS-1 in situ are not directly measured. The model would benefit from cellular validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141"
+    ],
+    "result": "Small-molecule modulators (inhibitor FD-44 and stabilizer 3b) regulate NCS-1/Ric-8A complex formation by acting as allosteric modulators that stabilize helix H10 inside (inhibitors) or outside (stabilizers) the hydrophobic crevice. The binding sites overlap with the C-terminal half of Ric-8A helix R2. The structure explains why FD-44 plus H10 completely blocks Ric-8A binding, while 3b's polar characteristics prevent H10 insertion, making the cavity available for Ric-8A.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The structural explanation (C135-C139) is supported by comparison of NCS-1/Ric-8A structure with prior NCS-1/modulator structures (Figure 1\u2014supplement 1A,B, cited work). The overlap of binding sites (C136) is clearly shown. The allosteric mechanism (C132-C133) is supported by prior work showing FD-44 doesn't inhibit when H10 is deleted (C134). The inference that Ric-8A would displace 3b (C141) is reasonable given moderate 3b affinity. However, the ternary complex possibility (C140) is based on structural modeling rather than direct experimental evidence. Binding competition experiments would strengthen these conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "A regulatory model emerges where increased Ca\u00b2\u207a levels promote NCS-1/Ric-8A complex disassembly, allowing Ric-8A release from the membrane and subsequent phosphorylation by CK2, which activates Ric-8A for G\u03b1 binding and GEF activity. In neurons where NCS-1 is expressed, Ric-8A phosphorylation may be under NCS-1 control and regulated by Ca\u00b2\u207a signals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This model (illustrated in Figure 8) integrates multiple experimental findings: Ca\u00b2\u207a-dependent complex disassembly (Figures 2A, 4E, 6), phosphorylation protection (Figure 5B), and GEF inhibition (Figure 6). The model is internally consistent and explains the data. However, several aspects are inferred rather than directly demonstrated: (1) membrane release is not directly shown, (2) the phosphatase involved in dephosphorylation is not identified, (3) the model is based on in vitro reconstitution and may not fully capture cellular complexity, (4) the claim about NCS-1 control of Ric-8A phosphorylation in neurons (C106) is speculative. Cellular validation experiments would strengthen this model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Background information on NCS-1 and Ric-8A establishes that NCS-1 is the most abundant NCS family protein, is N-terminally myristoylated, constantly membrane-bound, and regulates multiple neuronal functions. Ric-8A is a ubiquitous cytosolic protein functioning as both a G\u03b1 chaperone and GEF, with both activities stimulated by CK2 phosphorylation. Prior work showed NCS-1/Ric-8A complex regulates synapse number and neurotransmitter release probability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C1-C42) are primarily from cited literature and represent established knowledge. They provide appropriate context for the current study. The citations appear appropriate and the claims are consistent with the field. This background establishes the biological importance of the NCS-1/Ric-8A interaction and justifies the structural and mechanistic studies presented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "Structural comparison reveals that the NCS-1/Ric-8A complex is most similar to KChIP1/Kv4.3, with an elongated helix resembling R2. However, the helix orientation is opposite, no R1-equivalent segment is recognized, and Ca\u00b2\u207a content differs. While all NCS protein ligands use the same hydrophobic crevice, differences in Ca\u00b2\u207a site ligation, helix H10 role, and the EF-3/EF-4 connecting loop shape the crevice for specific target recognition, with polar interactions ensuring specificity and affinity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The structural comparisons (Figure 1A, Figure 1\u2014supplement 1D) are appropriate and well-documented. The analysis identifies both similarities and differences between NCS protein complexes. The conclusion about determinants of specificity (C126-C127) is supported by the structural data and mutagenesis results. This comparative analysis provides insight into the general principles of NCS protein target recognition while explaining the specificity for different targets.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C142",
+      "C144"
+    ],
+    "result": "The high-resolution structural data on the NCS-1/Ric-8A interface will enable rational development of improved compounds with better regulatory properties and selectivity. The different Ca\u00b2\u207a and structural determinants for recognizing Ric-8A vs. D2R opens paths to designing selective drugs targeting specific neuronal pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These claims (C142, C144) are speculative statements about future applications rather than results of the current study. While the structural data certainly provides a foundation for drug design, the actual development and testing of improved compounds is not presented. The potential for selectivity based on different recognition mechanisms is reasonable but unproven. These are appropriate discussion points but should not be considered supported results of the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C145"
+    ],
+    "result": "Human full-length NCS-1 has 100% protein sequence identity with the rat variant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is a straightforward sequence comparison claim stated in Materials and methods. It justifies the use of rat and human constructs interchangeably in different experiments. This can be easily verified against sequence databases.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C80",
+      "C81"
+    ],
+    "result": "Global conformational changes within the Ric-8A ARM-HEAT repeat domain have been observed when comparing phosphorylated and unphosphorylated forms, with interactions between phosphorylated residues and C-terminal repeat 9 translated into different subdomain contacts and altered global shape and curvature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This claim (C80-C81) is based on cited prior work (Zeng et al., 2019) and is used to contextualize the current findings. The citation is appropriate and the interpretation is consistent with the cited work. This provides important context for understanding how phosphorylation might affect NCS-1 binding beyond the local effects at repeat 9.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Van der Waals interactions between the upper part of NCS-1 crevice and the C-terminal half of Ric-8A helix R2 are critical for binding. In the G\u03b1 complex, this region adopts an extended coiled structure attached to the ARM-HEAT domain via phosphoresidue interactions. In the absence of phosphorylation, this region would be solvent-exposed and could acquire helical structure to initiate NCS-1 recognition, with initial R2 contacts potentially triggering subsequent reorganization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The importance of R2 C-terminal interactions is supported by mutagenesis (C83, Figure 3D showing W30A and L424A/M425A effects). The structural description of the G\u03b1 complex (C84) is from cited work (Figure 7A). The mechanistic model (C85-C86) is a reasonable inference from the structural data, though the step-wise recognition process is speculative. The model provides a plausible mechanism for how unphosphorylated Ric-8A transitions from the G\u03b1-binding conformation to the NCS-1-binding conformation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C105",
+      "C109"
+    ],
+    "result": "It has been proposed that Ric-8A is constitutively phosphorylated in cells. NCS-1 likely also interacts with Ric-8B, since the NCS-1 interacting region sequence and structure is conserved.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C105 cites prior work but the current data suggests this may not apply in NCS-1-expressing tissues. Claim C109 about Ric-8B is speculative, based only on sequence conservation without experimental validation. These are reasonable hypotheses but lack direct experimental support in the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C162"
+    ],
+    "result": "EF-hand motifs always occur in pairs and communicate with each other through Ca\u00b2\u207a binding loops and helix-helix contacts to orchestrate structural rearrangement and transmit Ca\u00b2\u207a signals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is established knowledge about EF-hand proteins, appropriately cited (Grabarek, 2006). It provides important context for understanding how Na\u207a binding at EF-4 could affect other EF-hands through inter-domain communication.",
+    "result_type": "MINOR"
+  }
+]

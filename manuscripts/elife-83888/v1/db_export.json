@@ -1,0 +1,2125 @@
+{
+  "submission": {
+    "id": "760b3fbd-aa19-40b1-8421-c97252d23266",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-04T01:33:43.809408Z",
+    "updated_at": "2025-12-04T01:33:43.809408Z"
+  },
+  "content": [
+    {
+      "id": "d296ab4f-06b5-410c-a1d1-3ecb6953f97c",
+      "submission_id": "760b3fbd-aa19-40b1-8421-c97252d23266",
+      "content_type": "manuscript",
+      "content_text": "# \u2018Skeletal Age\u2019 for mapping the impact of fracture on mortality\n\n## Authors\n\n- Thach Tran<sup>1</sup> ([ORCID: 0000-0002-6454-124X](https://orcid.org/0000-0002-6454-124X)) \u2020\n- Thao Ho-Le<sup>1</sup>\n- Dana Bliuc<sup>2</sup>\n- Bo Abrahamsen<sup>4</sup>\n- Louise Hansen<sup>7</sup> ([ORCID: 0000-0002-4400-2732](https://orcid.org/0000-0002-4400-2732))\n- Peter Vestergaard<sup>8</sup>\n- Jacqueline R Center<sup>2</sup> ([ORCID: 0000-0002-5278-4527](https://orcid.org/0000-0002-5278-4527))\n- Tuan V Nguyen<sup>1</sup> ([ORCID: 0000-0002-3246-6281](https://orcid.org/0000-0002-3246-6281)) \u2020\n\n### Affiliations\n\n1. School of Biomedical Engineering, University of Technology Sydney Sydney Australia ([ROR:03f0f6041](https://ror.org/03f0f6041))\n2. Garvan Institute of Medical Research Sydney Australia ([ROR:01b3dvp57](https://ror.org/01b3dvp57))\n3. Faculty of Medicine, UNSW Sydney New South Wales Australia ([ROR:03r8z3t63](https://ror.org/03r8z3t63))\n4. Department of Medicine, Holb\u00e6k Hospital Holb\u00e6k Denmark\n5. Department of Clinical Research, Odense Patient Data Explorative Network, University of Southern Denmark Odense Denmark ([ROR:03yrrjy16](https://ror.org/03yrrjy16))\n6. Nuffield Department of Orthopaedics, Rheumatology and Musculoskeletal Sciences University of Oxford Oxford United Kingdom ([ROR:052gg0110](https://ror.org/052gg0110))\n7. Kontraktenheden, North Denmark Region Denmark Denmark ([ROR:003gkfx86](https://ror.org/003gkfx86))\n8. Department of Clinical Medicine, Aalborg University Aalborg Denmark ([ROR:04m5j1k67](https://ror.org/04m5j1k67))\n9. Department of Endocrinology, Aalborg University Hospital Aalborg Denmark ([ROR:04m5j1k67](https://ror.org/04m5j1k67))\n10. Steno Diabetes Center North Jutland Aalborg Denmark ([ROR:03aqyvf83](https://ror.org/03aqyvf83))\n11. School of Medicine Sydney, University of Notre Dame Australia Sydney Australia ([ROR:02stey378](https://ror.org/02stey378))\n12. School of Population Health, UNSW Medicine, UNSW Sydney Kensington Australia ([ROR:03r8z3t63](https://ror.org/03r8z3t63))\n\n\u2020 Corresponding author\n\n## Abstract\n\nBackground:Fragility fracture is associated with an increased risk of mortality, but mortality is not part of doctor-patient communication. Here, we introduce a new concept called \u2018Skeletal Age\u2019 as the age of an individual\u2019s skeleton resulting from a fragility fracture to convey the combined risk of fracture and fracture-associated mortality for an individual.Methods:We used the Danish National Hospital Discharge Register which includes the whole-country data of 1,667,339 adults in Denmark born on or before January 1, 1950, who were followed up to December 31, 2016 for incident low-trauma fracture and mortality. Skeletal age is defined as the sum of chronological age and the number of years of life lost (YLL) associated with a fracture. Cox\u2019s proportional hazards model was employed to determine the hazard of mortality associated with a specific fracture for a given risk profile, and the hazard was then transformed into YLL using the Gompertz law of mortality.Results:During the median follow-up period of 16 years, there had been 307,870 fractures and 122,744 post-fracture deaths. A fracture was associated with between 1 and 7 years of life lost, with the loss being greater in men than women. Hip fractures incurred the greatest loss of life years. For instance, a 60-year-old individual with a hip fracture is estimated to have a skeletal age of 66 for men and 65 for women. Skeletal Age was estimated for each age and fracture site stratified by gender.Conclusions:We propose \u2018Skeletal Age\u2019 as a new metric to assess the impact of a fragility fracture on an individual\u2019s life expectancy. This approach will enhance doctor-patient risk communication about the risks associated with osteoporosis.Funding:National Health and Medical Research Council in Australia and Amgen Competitive Grant Program 2019.\n\n## Introduction\n\nFragility fracture is a direct consequence of osteoporosis, just as stroke is a consequence of hypertension. Fracture, especially hip fracture, is associated with an increased risk of mortality. Indeed, patients with a fragility fracture have on average a twofold increase in the risk of mortality (Center et al., 1999). Between 22% (Brauer et al., 2009) and 58% (Rapp et al., 2008) of patients with a hip fracture die within 12 months post fracture. The identification of high-risk individuals for early intervention is a major priority in the control of osteoporotic fractures in the general community. In randomized controlled trials, treating high-risk individuals reduces the risk of fracture (Black et al., 2020), though whether the reduction translates into reduced mortality risk remains contentious (Bolland et al., 2010; Cummings et al., 2019). However, the treatment uptake has been low, with only 40% of hip fracture patients in the United States being given osteoporosis treatment within 1 month after discharge in 2002, which was then halved in 2011 (Solomon et al., 2014). This undertreatment is considered a crisis in the management of osteoporosis globally.\n\nDespite the excess mortality after fracture, mortality is not part of doctor-patient communication about treatment or risk assessment, because there is a lack of an intuitive method of conveying risk. Traditionally, relative risk (e.g. \"the risk of mortality is increased by twofold\") has been used as a metric of excess risk, but this metric often gives an exaggerated impression (Trevena et al., 2013), and is perceived as larger than the absolute risk (Akl et al., 2011). On the other hand, absolute risk in terms of probability over a period of time is much harder to understand (Zipkin et al., 2014), even for doctors and patients (Gigerenzer et al., 2007). The underappreciation of post-fracture mortality\u2019s gravity has caused patients to be hesitant towards treatment and prevention, contributing to the crisis of osteoporosis management. Thus, there is an urgent need for a more informative metric to internalize the combined risks of fracture and mortality in a way that patients and doctors can comprehend easily.\n\nThe concept of \u2018Effective Age\u2019 (Spiegelhalter, 2016) is useful here. In engineering, effective age is the age of a structure based on its current conditions; whereas in medicine, the effective age of an individual is the age of a typical healthy person who matches the specific risk profile of this individual (Spiegelhalter, 2016). Depending on whether the risk profile is not healthy (i.e. presence of risk factors) or healthy (i.e. absence of risk factors), the effective age is older or younger, respectively than the chronological age (Spiegelhalter, 2016). The best-known effective age in medicine is \u2018Heart Age\u2019 or \u2018Vascular Age\u2019 (NHS Health Check, 2022) and \u2018Lung Age\u2019 (Morris and Temple, 1985). The use of heart age and lung age has resulted in a better clinical impact than the traditional absolute risk metric (Kulendrarajah et al., 2020).\n\nWe consider that patients with osteoporosis and the general public are not sufficiently informed about the risk of post-fracture mortality, and this might have contributed to the current crisis of under management of osteoporosis (Roux and Briot, 2020; Beaudoin et al., 2019). In an effort to improve the management of osteoporosis, we advance the idea of the \u2018Skeletal Age\u2019 which is conceptually defined as the age of one\u2019s skeleton as a consequence of fragility fracture. This new metric is not only one that quantifies the impact of fracture on mortality but also one that captures the risk of fracture and the risk of post-fracture mortality.\n\nThe aim of this study was to analyze the relationship between fracture and mortality, and then translate this relationship into the \u2018Skeletal Age\u2019 for each fracture site by leveraging data from the Danish National Hospital Discharge Registry (NHDR). The NHDR data are ideal for this analysis because, apart from comorbidities at the individual patient level, it has documented the incidence of fractures and post-fracture mortality for the entire Danish population.\n\n## Methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>R Project for Statistical Computing</td>\n      <td>R Project for Statistical Computing</td>\n      <td>RRID:SCR_001905</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Stata Statistical Software</td>\n      <td>A Software resource for statistical analysis and presentation of graphics</td>\n      <td>RRID:SCR_012763</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Study design\n\nThe Danish National Hospital Discharge Registry can be viewed as a retrospective population-based cohort. This analysis included all adults aged 50 years old and older as of January 1, 2001 in Denmark whose health status had been followed up until December 31, 2016 for mortality. Individuals who had sustained a fracture at 45+ years old between 1996 and 2000 were excluded to avoid potential bias that the incident fracture analyzed in this study was a second fracture (Figure 1). This is not a clinical trial. This analysis (Statistics Denmark project number 706667) was approved by the National Board of Health, the Danish Data Protection Agency, and Statistics Denmark, and is subject to independent control and monitoring by The Danish Health Data Authority. Written informed consent is waived for routinely collected, pseudonymized registry data. This study followed the Strengthening the Reporting of Observational Studies in Epidemiology (STROBE) reporting guideline.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/83888/elife-83888-fig1-v1.jpg)\n\n### Ascertainment of fracture and mortality\n\nThe initial incident fracture was defined as the first low-trauma fracture reported between January 1, 2001 and December 31, 2014. When more than one fracture occurred during a single event, only the fracture at the most proximal site was considered. We used the International Statistical Classification of Disease and Related Health Problems, tenth version (ICD-10) codes to identify individuals with specific fracture sites including hip, femur, pelvis, vertebrae, humerus, rib, clavicle (collectively known as proximal fractures), forearm, lower leg, knee, ankle, foot and hand (collectively known as distal fractures) from the Danish NHDR (Supplementary file 1). All fractures included in the analysis were radiologically ascertained. Face, skull, finger, or toe fractures and high-trauma fractures due to traffic accidents were excluded.\n\nThe study participants were followed up to December 31, 2016 for mortality, allowing at least 2 years of follow-up post fracture. Death was ascertained from the Danish Register on Causes of Death.\n\n### Covariates assessment\n\nThe predefined covariates included age and comorbidities. We used the ICD-10 from the NHDR that includes any diagnosis documented between 1996 and 2000 to operationally define comorbidities at the study entry (i.e. January 1, 2001), and those within 5 years prior to the initial fracture to define comorbidities at fracture time. The severity of comorbidities was summarised using the Charlson comorbidity index (Quan et al., 2011).\n\n### Statistical analysis\n\nSkeletal age is operationally defined as the sum of the chronological age and the change in life expectancy associated with fracture. The changes in life expectancy resulting from a specific fracture were computed incorporating (i) the association between individual fracture sites and mortality from a Cox\u2019s proportional hazards regression and (ii) the baseline hazards described by Gompertz distribution and the population life expectancy from the national lifetable data (Kulinskaya et al., 2020).\n\nFor the first aim, a Cox\u2019s proportional hazards regression was used to quantify the association between an initial specific fracture and mortality, in which both fracture and confounding variables were analyzed in a time-dependent manner to minimize the risk of immortal time bias (Suissa, 2008). The analyses did not account for the possibility of subsequent or recurrent fractures as this falls outside the scope of the study. The models adjusted for confounding effects of age and severity of comorbidities (Quan et al., 2011). Age and comorbidities at baseline and those at the time of fracture were also used. For individuals without fracture, the follow-up time was calculated from the study entry to the study end (December 31, 2016) or date of death, whichever came first; while their covariates at baseline were adjusted in the analysis model (Figure 2). By contrast, the follow-up time for those with an incident fracture was split into the pre-fracture (i.e. unexposed) and post-fracture (i.e. exposed) period for which the clustering effect was accounted for in the Cox\u2019s proportional hazards regression. We conducted a time-dependent analysis to quantify the relationship between an incident exposure (i.e. an incident fracture) and the primary outcome of interest (i.e. post-fracture mortality) accounting for the risk of immortal time bias (Suissa, 2008). The pre-fracture period was the time interval between the study entry and date of fracture, and used the covariates at study entry; whereas the post-fracture period was between the date of fracture and date of death or study end, whichever came first, and included the covariates at the time of fracture. The proportional hazards assumption was graphically checked using the Schoenfeld\u2019s residuals.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/83888/elife-83888-fig2-v1.jpg)\n\nFor the second aim, we determined the skeletal age of an individual based on the individual\u2019s specific risk profile. First, we calculated a prognostic index for an individual as a single-number summary of the combined effects of his/her specific fracture site and comorbidity severity (Henderson and Keiding, 2005). The prognostic index is a linear combination of the risk factors with weights derived from the regression coefficients. The individualized fracture-mortality association for an individual with a specific risk profile was then the difference between his/her prognostic index and the mean prognostic index of \u2018typical\u2019 people in the study population (Henderson and Keiding, 2005). In the second step, we used the Gompertz law of mortality and the Danish national lifetable data to transform the fracture-mortality association into life expectancy as a result of a fracture (Kulinskaya et al., 2020). The Gompertz law of mortality indicates the annual risk of dying at the age t can be expressed as $ht=Be^{kt}$ in which B~0.0000189 in women and 0.0000347 in men (Gompertz, 1825). Under the Gompertz law of mortality, the annual risk of dying associated with aging 1 year is remarkably consistent between ages 50 and 95 across ethnicities and over time (Brenner et al., 1993; Vaupel, 2010). Assuming the Gompertz baseline hazard, the log-hazards of mortality to specific fracture site i at the fracture time t is $a+bt$, where a and b are the estimated regression coefficients. The life expectancy for a specific fracture site at the fracture age z under the Gompertz distribution G(a,b) is obtained as $e_{Ga,b}z=\\frac{b^{-1}exp\u2061(b^{-1}e^{a})E_{1}(b^{-1}e^{a+bz})}{exp\u2061(-e^{a}b^{-1}(e^{bz}-1))}$ , where $E_{1}(b^{-1}e^{a+bz})$ denotes the exponential integral. The loss of life years associated with specific fracture site was then calculated as the difference between the estimate life expectancy associated with fracture $e_{Ga,b}z$ and the population life expectancy (Kulinskaya et al., 2020). The skeletal age for each individual site of fracture was the sum of the individual\u2019s chronological age at the time of fracture and the loss of life years as a result of the fracture. The 95% CI of the skeletal age was computed using the confidence limits of the adjusted hazards ratios to account for uncertainty of the magnitude of association between individual site of fracture and mortality. The analyses were performed using Stata (Stata Statistical Software: Release 16. College Station, TX: StataCorp LLC) and the R statistical environment on a Windows platform (R Development Core Team, 2020).\n\n## Results\n\n### Incidence of fractures\n\nThe present analysis was based on data from 793,815 men and 873,524 women aged 63.9 (standard deviation [SD] 10.3) and 65.5 (11.3) years old as of January 1, 2001, respectively (Figure 1). During a median of 14 years of follow-up (interquartile range [IQR]: 6.5, 14.0 years), 95,372 men and 212,498 women had sustained a fracture. The incidence of fractures was 10.9 fractures/1000 person-years (95% confidence interval [CI]: 10.8, 11.0) in men and 23.2 fractures/1000 person-years (23.1, 23.3) in women. Collectively, forearm, hip, and humerus fractures accounted for 55% of all fractures in men and 70% in women.\n\nAs expected, men and women with a fracture were on average older than those without a fracture. Individuals with a fracture had more comorbidities than those who did not sustain a fracture (Table 1). For instance, the prevalence of myocardial infarction among patients with a fracture (9.3% in men and 4.7% in women) was higher than that among individuals without a fracture (4% in men and 1.5% in women). Similar trend was also observed for stroke, diabetes, and cancer.\n\n**Table 1.**\n Characteristics of the study population at baseline stratified by gender, fracture, and mortality status.\n\n\n<table>\n  <thead>\n    <tr>\n      <th rowspan=\"2\">Characteristic</th>\n      <th colspan=\"2\">Non-fracture group</th>\n      <th colspan=\"2\">Fracture group</th>\n    </tr>\n    <tr>\n      <th>Alive</th>\n      <th>Dead</th>\n      <th>Alive</th>\n      <th>Dead</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Men</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Number of individuals</td>\n      <td>466,936</td>\n      <td>231,507</td>\n      <td>54,355</td>\n      <td>41,017</td>\n    </tr>\n    <tr>\n      <td>Age at baseline1</td>\n      <td>59.8 (7.7)</td>\n      <td>71.1 (10.4)</td>\n      <td>61.3 (8.9)</td>\n      <td>72.4 (10.4)</td>\n    </tr>\n    <tr>\n      <td>Age at fracture1</td>\n      <td></td>\n      <td></td>\n      <td>68.2 (9.9)</td>\n      <td>77.8 (10.5)</td>\n    </tr>\n    <tr>\n      <td>Comorbidities*</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Charlson comorbidity index2</td>\n      <td>0 (0, 0)</td>\n      <td>0 (0, 1)</td>\n      <td>0 (0, 1)</td>\n      <td>1 (0, 2)</td>\n    </tr>\n    <tr>\n      <td>0</td>\n      <td>404,415 (86.7%)</td>\n      <td>140,293 (60.6%)</td>\n      <td>32,287 (59.4%)</td>\n      <td>12,592 (30.7%)</td>\n    </tr>\n    <tr>\n      <td>1\u20132</td>\n      <td>56,701 (12.1%)</td>\n      <td>70,841 (30.6%)</td>\n      <td>17,557 (32.3%)</td>\n      <td>19,073 (46.5%)</td>\n    </tr>\n    <tr>\n      <td>3\u20134</td>\n      <td>3,328 (0.7%)</td>\n      <td>9,260 (4.0%)</td>\n      <td>2,881 (5.3%)</td>\n      <td>5,209 (12.7%)</td>\n    </tr>\n    <tr>\n      <td>5+</td>\n      <td>2,492 (0.5%)</td>\n      <td>1,112 (4.8%)</td>\n      <td>1,631 (3.0%)</td>\n      <td>4,143 (10.1%)</td>\n    </tr>\n    <tr>\n      <td>Specific comorbidities3</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Myocardial infarction</td>\n      <td>18,734 (4.0%)</td>\n      <td>22,225 (9.6%)</td>\n      <td>5,055 (9.3%)</td>\n      <td>6,071 (14.8%)</td>\n    </tr>\n    <tr>\n      <td>Congestive heart failure</td>\n      <td>12,814 (2.7%)</td>\n      <td>26,623 (11.5%)</td>\n      <td>5,109 (9.4%)</td>\n      <td>8,655 (21.1%)</td>\n    </tr>\n    <tr>\n      <td>Stroke</td>\n      <td>21,792 (4.7%)</td>\n      <td>31,253 (13.5%)</td>\n      <td>9,458 (17.4%)</td>\n      <td>11,567 (28.2%)</td>\n    </tr>\n    <tr>\n      <td>Peripheral vascular disease</td>\n      <td>10,912 (2.3%)</td>\n      <td>18,058 (7.8%)</td>\n      <td>4,240 (7.8%)</td>\n      <td>5,660 (13.8%)</td>\n    </tr>\n    <tr>\n      <td>Arrhythmias</td>\n      <td>10,835 (2.3%)</td>\n      <td>18,289 (7.9%)</td>\n      <td>4,892 (9.0%)</td>\n      <td>5,747 (18.4%)</td>\n    </tr>\n    <tr>\n      <td>Hypertension</td>\n      <td>14,340 (3.1%)</td>\n      <td>15,279 (6.6%)</td>\n      <td>7,718 (14.2%)</td>\n      <td>7,875 (19.2%)</td>\n    </tr>\n    <tr>\n      <td>Diabetes mellitus with no chronic complications</td>\n      <td>19,805 (4.2%)</td>\n      <td>21,067 (9.1%)</td>\n      <td>6,305 (11.6%)</td>\n      <td>6,317 (15.4%)</td>\n    </tr>\n    <tr>\n      <td>Diabetes mellitus with chronic complications</td>\n      <td>6,120 (1.3%)</td>\n      <td>8,103 (3.5%)</td>\n      <td>2,446 (4.5%)</td>\n      <td>2,748 (6.7%)</td>\n    </tr>\n    <tr>\n      <td>Renal disease</td>\n      <td>4,290 (0.9%)</td>\n      <td>8,797 (3.8%)</td>\n      <td>2,120 (3.9%)</td>\n      <td>3,609 (8.8%)</td>\n    </tr>\n    <tr>\n      <td>Cancer</td>\n      <td>26,126 (5.6%)</td>\n      <td>43,523 (18.8%)</td>\n      <td>8,914 (16.4%)</td>\n      <td>11,813 (28.8%)</td>\n    </tr>\n    <tr>\n      <td>Metastatic tumors</td>\n      <td>1,894 (0.4%)</td>\n      <td>9,492 (4.1%)</td>\n      <td>1,033 (1.9%)</td>\n      <td>3,035 (7.4%)</td>\n    </tr>\n    <tr>\n      <td>Dementia</td>\n      <td>2,869 (0.6%)</td>\n      <td>7,640 (3.3%)</td>\n      <td>2,663 (4.9%)</td>\n      <td>6,071 (14.8%)</td>\n    </tr>\n    <tr>\n      <td>Chronic lung disease</td>\n      <td>16,600 (3.6%)</td>\n      <td>25,697 (11.1%)</td>\n      <td>6,740 (12.4%)</td>\n      <td>8,696 (21.2%)</td>\n    </tr>\n    <tr>\n      <td>Rheumatologic</td>\n      <td>4,881 (1.1%)</td>\n      <td>4,630 (2.0%)</td>\n      <td>1,685 (3.1%)</td>\n      <td>1,600 (3.9%)</td>\n    </tr>\n    <tr>\n      <td>Mild liver disease</td>\n      <td>2,647 (0.6%)</td>\n      <td>3,704 (1.6%)</td>\n      <td>1,468 (2.7%)</td>\n      <td>1,805 (4.4%)</td>\n    </tr>\n    <tr>\n      <td>Moderate/severe liver disease</td>\n      <td>589 (0.1%)</td>\n      <td>1,389 (0.6%)</td>\n      <td>435 (0.8%)</td>\n      <td>779 (1.9%)</td>\n    </tr>\n    <tr>\n      <td>Hemiplegia</td>\n      <td>661 (0.1%)</td>\n      <td>927 (0.4%)</td>\n      <td>461 (0.9%)</td>\n      <td>480 (0.9%)</td>\n    </tr>\n    <tr>\n      <td>HIV/AIDS</td>\n      <td>108 (0.02%)</td>\n      <td>81 (0.03%)</td>\n      <td>37 (0.07%)</td>\n      <td>23 (0.06%)</td>\n    </tr>\n    <tr>\n      <td>Women</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Number of individuals</td>\n      <td>465,559</td>\n      <td>195,467</td>\n      <td>130,771</td>\n      <td>81,727</td>\n    </tr>\n    <tr>\n      <td>Age at baseline1</td>\n      <td>60.5 (8.3)</td>\n      <td>74.0 (11.1)</td>\n      <td>63.9 (9.7)</td>\n      <td>76.3 (9.9)</td>\n    </tr>\n    <tr>\n      <td>Age at fracture1</td>\n      <td></td>\n      <td></td>\n      <td>70.9 (10.2)</td>\n      <td>81.3 (9.6)</td>\n    </tr>\n    <tr>\n      <td>Comorbidities*</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Charlson comorbidity index2</td>\n      <td>0 (0, 0)</td>\n      <td>0 (0, 1)</td>\n      <td>0 (0, 1)</td>\n      <td>1 (0, 2)</td>\n    </tr>\n    <tr>\n      <td>0</td>\n      <td>400,005 (85.9%)</td>\n      <td>121,776 (62.3%)</td>\n      <td>81,574 (62.4%)</td>\n      <td>32,093 (39.3%)</td>\n    </tr>\n    <tr>\n      <td>1\u20132</td>\n      <td>59,923 (12.9%)</td>\n      <td>57,663 (29.5%)</td>\n      <td>41,114 (31.4%)</td>\n      <td>35,866 (44.0%)</td>\n    </tr>\n    <tr>\n      <td>3\u20134</td>\n      <td>2,975 (0.6%)</td>\n      <td>6,255 (3.2%)</td>\n      <td>5,196 (4.0%)</td>\n      <td>7,960 (9.8%)</td>\n    </tr>\n    <tr>\n      <td>5+</td>\n      <td>2,656 (0.6%)</td>\n      <td>9,773 (5.0%)</td>\n      <td>2,887 (2.2%)</td>\n      <td>5,695 (7.0%)</td>\n    </tr>\n    <tr>\n      <td>Specific comorbidities3</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Myocardial infarction</td>\n      <td>7,164 (1.5%)</td>\n      <td>10,946 (5.6%)</td>\n      <td>6,109 (4.7%)</td>\n      <td>7,562 (9.3%)</td>\n    </tr>\n    <tr>\n      <td>Congestive heart failure</td>\n      <td>7,307 (1.6%)</td>\n      <td>18,374 (9.4%)</td>\n      <td>8,056 (6.2%)</td>\n      <td>13,615 (16.7%)</td>\n    </tr>\n    <tr>\n      <td>Stroke</td>\n      <td>16,329 (3.5%)</td>\n      <td>22,870 (11.7%)</td>\n      <td>17,143 (13.1%)</td>\n      <td>19,247 (23.6%)</td>\n    </tr>\n    <tr>\n      <td>Peripheral vascular disease</td>\n      <td>6,517 (1.4%)</td>\n      <td>10,555 (5.4%)</td>\n      <td>6,196 (4.7%)</td>\n      <td>7,309 (9.0%)</td>\n    </tr>\n    <tr>\n      <td>Arrhythmias</td>\n      <td>7,671 (1.7%)</td>\n      <td>13,096 (6.7%)</td>\n      <td>7,947 (6.1%)</td>\n      <td>11,440 (14.0%)</td>\n    </tr>\n    <tr>\n      <td>Hypertension</td>\n      <td>12,910 (2.8%)</td>\n      <td>12,510 (6.4%)</td>\n      <td>17,970 (13.7%)</td>\n      <td>15,727 (19.3%)</td>\n    </tr>\n    <tr>\n      <td>Diabetes mellitus with no chronic complications</td>\n      <td>14,151 (3.0%)</td>\n      <td>14,074 (7.2%)</td>\n      <td>9,960 (7.6%)</td>\n      <td>9,214 (11.3%)</td>\n    </tr>\n    <tr>\n      <td>Diabetes mellitus with chronic complications</td>\n      <td>3,367 (0.7%)</td>\n      <td>4,496 (2.3%)</td>\n      <td>2,969 (2.3%)</td>\n      <td>3,126 (3.8%)</td>\n    </tr>\n    <tr>\n      <td>Renal disease</td>\n      <td>2,386 (0.5%)</td>\n      <td>4,300 (2.2%)</td>\n      <td>2,697 (2.1%)</td>\n      <td>3,561 (4.4%)</td>\n    </tr>\n    <tr>\n      <td>Cancer</td>\n      <td>30,913 (6.6%)</td>\n      <td>34,989 (17.9%)</td>\n      <td>20,246 (15.5%)</td>\n      <td>18,785 (23.0%)</td>\n    </tr>\n    <tr>\n      <td>Metastatic tumors</td>\n      <td>2,302 (0.5%)</td>\n      <td>8,796 (4.5%)</td>\n      <td>2,221 (1.7%)</td>\n      <td>4,632 (5.7%)</td>\n    </tr>\n    <tr>\n      <td>Dementia</td>\n      <td>3,035 (0.7%)</td>\n      <td>7,428 (3.8%)</td>\n      <td>7,169 (5.5%)</td>\n      <td>13,136 (16.1%)</td>\n    </tr>\n    <tr>\n      <td>Chronic lung disease</td>\n      <td>18,759 (4.0%)</td>\n      <td>20,915 (10.7%)</td>\n      <td>15,065 (11.5%)</td>\n      <td>14,018 (17.2%)</td>\n    </tr>\n    <tr>\n      <td>Rheumatologic</td>\n      <td>10,392 (2.2%)</td>\n      <td>7,037 (3.6%)</td>\n      <td>7,482 (5.7%)</td>\n      <td>5,256 (6.4%)</td>\n    </tr>\n    <tr>\n      <td>Mild liver disease</td>\n      <td>2,599 (0.6%)</td>\n      <td>2,346 (1.2%)</td>\n      <td>2,165 (1.7%)</td>\n      <td>1,802 (2.2%)</td>\n    </tr>\n    <tr>\n      <td>Moderate/severe liver disease</td>\n      <td>296 (0.1%)</td>\n      <td>782 (0.4%)</td>\n      <td>422 (0.3%)</td>\n      <td>643 (0.8%)</td>\n    </tr>\n    <tr>\n      <td>Hemiplegia</td>\n      <td>524 (0.1%)</td>\n      <td>573 (0.3%)</td>\n      <td>577 (0.4%)</td>\n      <td>475 (0.6%)</td>\n    </tr>\n    <tr>\n      <td>HIV/AIDS</td>\n      <td>14 (0.0%)</td>\n      <td>9 (0.0%)</td>\n      <td>12 (0.01%)</td>\n      <td>4 (0.0%)</td>\n    </tr>\n  </tbody>\n</table>\n\n_Notes: 1: mean (SD); 2: median (IQR); 3: number (%). *: at baseline for individuals without fracture or at fracture time for fracture patients. Comorbidities included not only chronic diseases that require hospitalization, but also those documented as either secondary diagnoses or at outpatient or emergency visits._\n\n### Incidence of mortality\n\nDuring a median follow-up of 6.5 years (6.0 years (IQR: 2.5, 10.0) in men, 6.7 years (3.3, 10.8) in women), 272,524 men and 277,194 women had died, yielding unadjusted mortality incidence rates of 6.55 deaths/100 person-years (95% CI: 6.48, 6.61) in men and 5.42 deaths/100 person-years (5.39, 5.46) in women. More importantly, the unadjusted rate of mortality among patients with a fracture (6.54/100 person-years in men and 5.42/100 person-years in women) was greater than among those without a fracture (2.56/100 person-years in men and 2.24/100 person-years in women). Analysis by fracture site revealed that men and women with a fracture at the hip, pelvis, or vertebra had a much greater risk of mortality than other fractures (Table 2).\n\n**Table 2.**\n Incidence of mortality following specific fracture sites stratified by gender.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Fracture</th>\n      <th>Number</th>\n      <th>Age at fracture (years)</th>\n      <th>Number of deaths</th>\n      <th>Follow-up time (person-years)</th>\n      <th>Rate* of mortality (95% CI)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Men</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>No fracture</td>\n      <td>698,443</td>\n      <td>63.6** (10.2)</td>\n      <td>231,507</td>\n      <td>9,049,194</td>\n      <td>2.6% (2.5, 2.6)</td>\n    </tr>\n    <tr>\n      <td>Any fracture</td>\n      <td>95,372</td>\n      <td>72.3 (11.2)</td>\n      <td>41,017</td>\n      <td>626,733</td>\n      <td>6.5% (6.5, 6.6)</td>\n    </tr>\n    <tr>\n      <td>Hip fracture</td>\n      <td>25,706</td>\n      <td>79.5 (9.7)</td>\n      <td>16,890</td>\n      <td>107,789</td>\n      <td>15.7% (15.4, 15.9)</td>\n    </tr>\n    <tr>\n      <td>Femur</td>\n      <td>1,910</td>\n      <td>74.5 (10.8)</td>\n      <td>997</td>\n      <td>10,468</td>\n      <td>9.5% (8.9, 10.1)</td>\n    </tr>\n    <tr>\n      <td>Pelvis</td>\n      <td>1,305</td>\n      <td>77.0 (10.9)</td>\n      <td>751</td>\n      <td>6,465</td>\n      <td>11.6% (10.8, 12.5)</td>\n    </tr>\n    <tr>\n      <td>Vertebrae</td>\n      <td>6,924</td>\n      <td>72.7 (10.5)</td>\n      <td>3,125</td>\n      <td>41,746</td>\n      <td>7.5% (7.2, 7.7)</td>\n    </tr>\n    <tr>\n      <td>Humerus</td>\n      <td>10,126</td>\n      <td>72.6 (10.7)</td>\n      <td>4,827</td>\n      <td>62,350</td>\n      <td>7.7% (7.5, 8.0)</td>\n    </tr>\n    <tr>\n      <td>Rib</td>\n      <td>6,867</td>\n      <td>69.7 (10.4)</td>\n      <td>2,350</td>\n      <td>50,186</td>\n      <td>4.7% (4.5, 4.9)</td>\n    </tr>\n    <tr>\n      <td>Clavicle</td>\n      <td>5,201</td>\n      <td>68.2 (10.5)</td>\n      <td>1,636</td>\n      <td>39,731</td>\n      <td>4.1% (3.9, 4.3)</td>\n    </tr>\n    <tr>\n      <td>Lower leg</td>\n      <td>6,296</td>\n      <td>67.0 (9.5)</td>\n      <td>1,796</td>\n      <td>52,915</td>\n      <td>3.4% (3.2, 3.6)</td>\n    </tr>\n    <tr>\n      <td>Forearm</td>\n      <td>15,268</td>\n      <td>69.4 (10.2)</td>\n      <td>4,675</td>\n      <td>120,719</td>\n      <td>3.9% (3.8, 4.0)</td>\n    </tr>\n    <tr>\n      <td>Knee</td>\n      <td>1,382</td>\n      <td>70.2 (10.1)</td>\n      <td>447</td>\n      <td>10,886</td>\n      <td>4.1% (3.7, 4.5)</td>\n    </tr>\n    <tr>\n      <td>Ankle</td>\n      <td>1,084</td>\n      <td>67.6 (9.8)</td>\n      <td>275</td>\n      <td>9,081</td>\n      <td>3.0% (2.7, 3.4)</td>\n    </tr>\n    <tr>\n      <td>Hand</td>\n      <td>8,309</td>\n      <td>67.7 (10.1)</td>\n      <td>2,178</td>\n      <td>70,263</td>\n      <td>3.1% (3.0, 3.2)</td>\n    </tr>\n    <tr>\n      <td>Foot</td>\n      <td>4,994</td>\n      <td>65.3 (9.7)</td>\n      <td>1,070</td>\n      <td>44,136</td>\n      <td>2.4% (2.3, 2.6)</td>\n    </tr>\n    <tr>\n      <td>Women</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>No fracture</td>\n      <td>661,026</td>\n      <td>64.5** (11.1)</td>\n      <td>195,467</td>\n      <td>8,723,863</td>\n      <td>2.2% (2.2, 2.3)</td>\n    </tr>\n    <tr>\n      <td>Any fracture</td>\n      <td>212,498</td>\n      <td>74.9 (11.2)</td>\n      <td>81,727</td>\n      <td>1,506,940</td>\n      <td>5.4% (5.4, 5.5)</td>\n    </tr>\n    <tr>\n      <td>Hip fracture</td>\n      <td>51,669</td>\n      <td>82.1 (9.2)</td>\n      <td>31,816</td>\n      <td>259,087</td>\n      <td>12.3% (12.1, 12.4)</td>\n    </tr>\n    <tr>\n      <td>Femur</td>\n      <td>3,529</td>\n      <td>78.9 (10.9)</td>\n      <td>1,921</td>\n      <td>19,322</td>\n      <td>9.9% (9.5, 10.4)</td>\n    </tr>\n    <tr>\n      <td>Pelvis</td>\n      <td>4,920</td>\n      <td>81.2 (10.0)</td>\n      <td>2,893</td>\n      <td>26,761</td>\n      <td>10.8% (10.4, 11.2)</td>\n    </tr>\n    <tr>\n      <td>Vertebrae</td>\n      <td>9,732</td>\n      <td>76.6 (10.6)</td>\n      <td>4,658</td>\n      <td>60,295</td>\n      <td>7.7% (7.5, 7.9)</td>\n    </tr>\n    <tr>\n      <td>Humerus</td>\n      <td>28,298</td>\n      <td>74.4 (10.5)</td>\n      <td>10,330</td>\n      <td>202,662</td>\n      <td>5.1% (5.0, 5.2)</td>\n    </tr>\n    <tr>\n      <td>Rib</td>\n      <td>3,153</td>\n      <td>74.1 (11.9)</td>\n      <td>1,218</td>\n      <td>22,285</td>\n      <td>5.5% (5.2, 5.8)</td>\n    </tr>\n    <tr>\n      <td>Clavicle</td>\n      <td>4,480</td>\n      <td>72.7 (11.5)</td>\n      <td>1,577</td>\n      <td>31,755</td>\n      <td>5.0% (4.7, 5.2)</td>\n    </tr>\n    <tr>\n      <td>Lower leg</td>\n      <td>11,460</td>\n      <td>70.1 (10.8)</td>\n      <td>3,130</td>\n      <td>94,308</td>\n      <td>3.3% (3.2, 3.4)</td>\n    </tr>\n    <tr>\n      <td>Forearm</td>\n      <td>68,333</td>\n      <td>72.0 (10.3)</td>\n      <td>18,470</td>\n      <td>559,406</td>\n      <td>3.3% (3.2, 3.3)</td>\n    </tr>\n    <tr>\n      <td>Knee</td>\n      <td>2,604</td>\n      <td>71.3 (9.7)</td>\n      <td>629</td>\n      <td>21,085</td>\n      <td>3.0% (2.8, 3.2)</td>\n    </tr>\n    <tr>\n      <td>Ankle</td>\n      <td>1,936</td>\n      <td>70.0 (10.6)</td>\n      <td>499</td>\n      <td>15,726</td>\n      <td>3.2% (2.9, 3.5)</td>\n    </tr>\n    <tr>\n      <td>Hand</td>\n      <td>12,489</td>\n      <td>69.6 (10.2)</td>\n      <td>2681</td>\n      <td>108,112</td>\n      <td>2.5% (2.4, 2.6)</td>\n    </tr>\n    <tr>\n      <td>Foot</td>\n      <td>9,916</td>\n      <td>67.8 (9.6)</td>\n      <td>1904</td>\n      <td>86,136</td>\n      <td>2.2% (2.1, 2.3)</td>\n    </tr>\n  </tbody>\n</table>\n\n_Notes: *: rates were calculated as number of deaths/100 person-years; **: age at baseline (years)._\n\nHowever, the above observation could be confounded by age and comorbidities, because individuals with a fracture were on average older and had more comorbidities than those without a fracture. Therefore, we employed multivariable-adjusted Cox\u2019s proportional hazards model to estimate the strength of the association between fracture and mortality, adjusting for age and severity of comorbidities (Figure 3). Individuals with any fragility fracture were associated with a 30\u201345% increased hazard of death (adjusted hazard ratio = 1.46 (95% CI: 1.45, 1.48) in men; 1.28 (1.27, 1.30) in women). For the same age and comorbidity profile, men and women with a hip or femur fracture had an almost twofold greater risk of death than those without a fracture.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/83888/elife-83888-fig3-v1.jpg)\n\n**Figure 3.:** Legend * severity of comorbidities is assessed using the Charlson Comorbidity Index. Hazard ratio and the corresponding 95% confidence interval were estimated from a multivariable-adjusted Cox's proportional hazards regression.\n\nThe increased risk of mortality was also observed among those with a proximal fracture, such as the pelvis, vertebrae, humerus, rib, clavicle, and lower leg fracture after controlling for age and comorbidities. However, there was no significantly increased risk of death following a forearm, knee, ankle, hand, or foot fracture (Figure 3).\n\n### Skeletal age\n\nBased on the association between fracture and mortality and using the Gompertz law, we estimated the skeletal age for each fracture site and each chronological age (from the age of 50) in men and women (Figure 4; Supplementary file 2). Patients with a fracture - any fracture at all - have lost years of life, and hence their skeletal age was greater than their chronological age. For a given age, men with a fracture on average had greater skeletal age than women by approximately 1 year. In either sex, the loss of years of life was more pronounced in younger age groups and gradually converged in the older age groups.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/83888/elife-83888-fig4-v1.jpg)\n\nAs expected, patients with a hip fracture had the highest skeletal age than those with other fractures. For example, a 70-year-old man who had sustained a hip fracture would have a skeletal age of 75 years (i.e. a loss of 5 years of life); however, if a 50-year-old man with a hip fracture would have a skeletal age of 56.8 years which is equivalent to almost 7 years of life lost. Other fractures such as the femur, pelvis, vertebrae, and humerus also signified a significant loss of years of life (around 5 years); thus, 50-year-old patients with one of these fractures are estimated to have a skeletal age of around 55 years.\n\nHowever, fractures are the rib, clavicle, and lower leg were associated with lower years of life lost, and the skeletal age of patients with one of these fractures was generally lower than patients with a more serious fracture (e.g. hip fracture). For instance, a 60-year-old patient with a lower leg fracture would be expected to have a skeletal age of 62.4 years for men or 61.9 years for women (Supplementary file 3).\n\n## Discussion\n\nIt has been well established that fracture, especially hip fracture, is associated with an increased risk of mortality, and this excess risk is commonly expressed in terms of the relative risk metric. Here, we proposed a new effective age metric called \u2018Skeletal Age\u2019 to quantify the impact of fracture on mortality. Using data from a nationwide cohort of 1.7 million adults aged 50+ years old in Denmark, we showed that almost all types of fracture were associated with a loss of years of life, indicating that the skeletal age of individuals suffering from a fracture is greater than their chronological age. This finding has important implications that we discuss below.\n\nOur finding confirmed the previous studies (Tran et al., 2018; Bliuc et al., 2009; Browner et al., 1996; Melton et al., 2013; Haentjens et al., 2010; Tran et al., 2017) that patients with a fragility fracture were associated with a significantly greater risk of mortality than their similarly aged and gender counterparts without fracture who had the same comorbidity profile. Our finding is also consistent with an earlier Danish study demonstrating reduced life expectancy in patients, with or without fractures, at the time of beginning osteoporosis treatment (Abrahamsen et al., 2015). However, the magnitude of the association between individual sites of fracture observed in our study is slightly lower than that documented in several previous cohort studies (Bliuc et al., 2009; Browner et al., 1996; Melton et al., 2013; Haentjens et al., 2010; Tran et al., 2017), with hip fractures being associated with a 1.7-to-6-fold increased risk of death (Haentjens et al., 2010). This discrepancy could be due to the difference in study populations. While cohort studies usually recruit healthy participants, our national registry-based study was able to document all individuals in Denmark. As a result, our control group (i.e. those without a fracture) included individuals in poor health conditions with multiple comorbidities who are usually unable to be recruited in a cohort study. Whether the association between fracture and mortality is causal or not is a matter of contention. It is commonly assumed that the association is confounded by comorbidities, but multiple studies have found that comorbidities contributed little to the excess risk of mortality among fractured patients (Vestergaard et al., 2007; Chen et al., 2018). In the present analysis, we have also adjusted for comorbidities, and the significant fracture \u2013 mortality association remained unchanged, suggesting that the association is unlikely due to comorbidities.\n\nRegardless of the nature of the association, mortality is not a component of doctor-patient communication. Existing fracture risk assessment models such as Garvan (Nguyen et al., 2007) and FRAX (Kanis et al., 2007) provide the estimated probability (i.e. absolute risk) of fracture over a 10 year period without any information on mortality. However, doctors and patients have difficulty in understanding and interpreting probability (Gigerenzer et al., 2007). Only a fifth of a sample of highly educated American adults could understand one in 1000 is equivalent to 0.1% (Lipkus et al., 2001). Conveying a low, though clinically significant absolute risk (e.g. \u2018Your risk of hip fracture over the next 10 years is 5%\u2019) might provide a false peace of mind and underestimated risk perception, leading to increasing possibilities of refusing the recommended treatment (Trevena et al., 2013). Thus, poor communication about fracture risk and mortality consequences might have contributed to the global crisis of undertreatment of osteoporosis.\n\nBased on the concept of effective age, we proposed the idea of \u2018Skeletal Age\u2019 as a new metric for communicating the risk of mortality following a fracture. Unlike the current fracture risk assessment tools (Beaudoin et al., 2019) which estimate the probability of fracture over time using probability-based metrics, such as relative risk and absolute risk, skeletal age quantifies the consequence of a fracture using a natural frequency metric. A natural frequency metric has been consistently shown to be easier and more friendly to doctors and patients than the probability-based metrics (Akl et al., 2011; Gigerenzer et al., 2007; Ahmed et al., 2012). It is not straightforward to appreciate the importance of the twofold increased risk of death (i.e. relative risk = 2.0) without knowing the background risk (i.e. twofolds of 1% would remarkably differ from twofolds of 10%). By contrast, for the same twofold mortality risk of hip fracture, telling a 60 year man with a hip fracture that his skeletal age would be 66 years old, equivalent to a 6 year loss of life, is more intuitive. The skeletal age of 66 years old can also be interpreted as the individual being in the same risk category as a 66-year-old with \u2018favorable risk factors\u2019 or at least the ones that are potentially modifiable. Hence, an older skeletal age also means a greater risk of fracture. In addition, the skeletal age can be also used to convey the possible benefit of treatment, providing an alternative metric to the conventional metrics such as relative risk or relative risk reduction. For instance, a patient might find the statement \u2018Zoledronic acid treatment helps a patient with a hip fracture gain 3 years of life\u2019 much easier to understand and probably more persuasive than \u2018Zoledronic acid treatment reduced the risk of death by 28%\u2019 (Lyles et al., 2007).\n\nSkeletal age is an addition to the already available metrics such as \u2018Heart Age,\u2019 \u2018Lung Age,\u2019 and more recently \u2018Covid Age\u2019 which have been demonstrated to be superior to the conventional risk metrics (Grover et al., 2007; Lowensteyn et al., 1998; Lopez-Gonzalez et al., 2015; Bonner et al., 2015; Svendsen et al., 2020) in terms of positive behavioral changes. For instance, compared with usual care, individuals who were given heart age had a greater smoking cessation rate (Lopez-Gonzalez et al., 2015; Bonner et al., 2015), substantial improvement in weight, body mass index, and physical activity (Lopez-Gonzalez et al., 2015), and a greater proportion of high-risk patients returning for a follow-up appointment (Lowensteyn et al., 1998). The use of heart age also led to significantly greater improvement at 12 months in metabolic parameters (Lopez-Gonzalez et al., 2015) or lipid profiles (Grover et al., 2007). A recent cluster randomized controlled trial in Norway also found that heart age was a good way to communicate cardiovascular risk and to motivate individuals to reduce cardiovascular risk factors (Svendsen et al., 2020). Similarly, the use of lung age could also lead to a clinically significant increase in the reported smoking cessation rates (Kaminsky et al., 2011; Takagi et al., 2017; Parkes et al., 2008). Collectively, these data suggest that effective age metrics can help patients better understand their risk and lead to preventive changes. A web-based calculator \u2018BONEcheck.org\u2019 has been developed to assist healthcare professionals and the public to estimate the risk of fracture and skeletal age for an individual with specific risk profiles, potentially improving doctor-patient risk communication.\n\nOur findings should be interpreted within the context of their strengths and limitations. First, we included a whole-country population with long follow-up and robust diagnostic data, minimizing potential selection bias and misclassification (Frank, 2000), and allowing us to examine mortality risk following individual fracture sites. Second, the current study analyzed both fracture and covariates, such as aging and the presence of comorbidities in a time-dependent manner, making it statistically rigorous in minimizing an immortal time bias and sufficiently accounting for confounding effects. The analysis thus provided accurate estimates of the association between specific fracture sites and mortality risk as it was able to control for confounding effects at both the study entry and the time of fracture.\n\nHowever, the use of registry-based data, originally documented and coded for administrative or reimbursement purposes is prone to variable data accuracy, the lack of specific clinical information, and non-medical factors (Mazzali and Duca, 2015). Fortunately, all essential study variables (i.e. comorbidities, fracture, and death) were systematically obtained from the Danish NHDR that includes excellent, complete medical records and precise diagnoses for all individuals living in Denmark since 1995 (Andersen et al., 1999; Vestergaard and Mosekilde, 2002). The use of diagnosis-based comorbidities, though possibly associated with lower sensitivity than the self-reported ones (Lujic et al., 2017) is able to capture the severe health disorders that prompt the participants to seek for medical assistance. Second, the analyses could not make adjustments for lifestyle factors and physical activity, which are usually obtained in a cohort study. As they are closely related to aging and the presence of comorbidities which were already accounted for in our analysis, making further adjustments for these lifestyle factors is unlikely to substantially modify the findings. Third, mild, asymptomatic fractures or chronic diseases that did not require medical attention might not be registered in the Danish NHDR. It is nevertheless unlikely that these unregistered fractures and comorbidities would modify the findings significantly, as previous studies have indicated a high concordance between self-reported fractures and those registered in the NHDR (Hundrup et al., 2004), and a high positive predictive value of the self-reported comorbidities (Lujic et al., 2017). Finally, our analysis did not include the examination of the effect of bone metabolism-affecting medications on the assessment of skeletal health. However, these medications were prescribed to only a few individuals aged 50 years or over in Denmark (Vestergaard et al., 2005), even for those with a hip fracture (Roerholt et al., 2009), and there is no strong evidence from randomized controlled trials of their impact on post-fracture mortality (Cummings et al., 2019).\n\nIn conclusion, we advanced the concept of skeletal age as the age of an individual\u2019s skeleton resulting from a fragility fracture. Unlike existing metrics (e.g. relative risk, probability of fracture), skeletal age combines the risk that an individual will sustain a fracture and the risk of mortality once a fracture has occurred, making the doctor-patient communication more intuitive and possibly more effective. Given the evidence of the successful implication of similar effective age metrics, skeletal age is expected to improve risk communication and ultimately improve treatment uptake among patients who are indicated for treatment. A randomized controlled trial aiming to compare the use of skeletal age and the current metrics in fracture risk communication is warranted.\n",
+      "created_at": "2025-12-04T01:33:43.809408Z"
+    },
+    {
+      "id": "2967e44b-dfc0-41c9-8415-83cb75a0a0c4",
+      "submission_id": "760b3fbd-aa19-40b1-8421-c97252d23266",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Luigi Gennari, https://ror.org/01tevnk56 University of Siena Italy\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.83888.sa0](https://doi.org/10.7554/eLife.83888.sa0)\n\nThis important study presents the idea of \"Skeletal Age\", defined as the age of one's skeleton as a consequence of fragility fracture, as a potential new tool to raise awareness about the increased risk of mortality following a fracture (particularly hip fractures) and thus improve the medical management of osteoporosis. The evidence is convincing and is derived from a very large database from the Danish National Hospital Discharge Registry. The proposed approach is of general interest and might represent a starting point for making the health risks of an osteoporotic fracture more intuitive and possibly more effective.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Luigi Gennari, https://ror.org/01tevnk56 University of Siena Italy\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.83888.sa1](https://doi.org/10.7554/eLife.83888.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"'Skeletal Age' as a measure of the impact of fracture on mortality: a nationwide population-based study\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Mone Zaidi as the Senior Editor. The following individual involved in the review of your submission has agreed to reveal their identity: Elena Tsourdi (Reviewer #2).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1) Better clarification of study design and statistical analysis should be required in order to address the conceptual problems raised by Reviewer 1 (e.g. concerning the assessment of comorbidities, or how the information about low-energy fracture obtained from ICD registries, or whether the risk of a second fracture/recurrent fractures was taken into account in the analyses). Additional information is also required about the identification of fractures, particularly vertebral fractures, as outlined by Reviewer 2 (e.g. were all fractures radiographically confirmed?).\n\n2) As underlined by Reviewer 1, the analysis performed did not show that individuals with and without fractures matched for co-morbidities had different mortality risks. Given the large and comprehensive sample, this could be explored in more detail.\n\n3) Additional information is required to better explain how the assessment of skeletal age may capture the risk of a future fracture.\n\n4) The discussion should be more balanced, since, apart from a zoledronic acid trial and the quoted metanalysis by Bolland et al. (JCEM 2010;95:1174-81), there is no clear information from randomized controlled trials demonstrating a significant effect of treatments for osteoporosis on mortality. Indeed, as also outlined by Reviewer 2, it seems that the impact of medications affecting bone metabolism on the assessment of skeletal health (osteoporosis drugs, glucocorticoids, PPI, aromatase-inhibitors, etc.) in the Danish National Hospital Discharge Registry was not considered. Moreover, in their conclusive remarks, the Authors propose to replace the fracture probability with skeletal age for individualized fracture risk assessment. Again, given the limited information about the effects of anti-osteoporotic agents on mortality, I'd suggest somehow recommending the \"integration\" rather than \"replacement\" of the individual fracture risk assessment with skeletal age, at least at this stage.\n\nReviewer #1 (Recommendations for the authors):\n\nGeneral comments:\n\nThe individuals who fracture have more co-morbidities with high mortality risk than the individuals who do not. In order to understand the contribution of a fracture to mortality risk, it would be more appropriate to establish populations of individuals with and without fracture matched with respect to age, gender, and co-morbidities and compare mortality between these groups.\n\nSpecific comments:\n\nResults:\n\nl.151-: As the period of fracture identification was from 2001 to 2014, how can the median follow-up be 16 years?\n\nl.163-: Why was the follow-up period for mortality shorter than for fracture? To make the occurrence of fracture and death comparable, I suggest providing both per 100 or 1000 patient-years.\n\nl.166-: It should be clearly stated that the mortality rates in individuals with and without fractures are unadjusted.\n\nMaterial and methods:\n\nl.320-: Why only data to 2016, this is 6 years ago?\n\nl.330-: How was low-energy fracture determined? Fracture mechanism is usually not captured in registers?\n\nl.343-: Were only comorbidities leading to hospitalisation registered? What about comorbidities diagnosed and treated by GPs?\n\nl.363-: it is not clear how the mortality rate pre-fracture in the patients who fractured was taken into account. The individuals had a higher prevalence of many dead-prone comorbidities and would therefore most likely also have had a higher risk of death before the fracture than the no-fracture population. In addition, how was the risk of a second fracture/recurrent fractures taken into account in the analyses?\n\nFigure 2: the HR was adjusted for the Charlson Co-morbidity index, not specific co-morbidities.\n\nReviewer #2 (Recommendations for the authors):\n\nA few additional points which should be addressed too:\n\nAscertainment of fractures: The authors should provide some information as to whether these fractures (esp. vertebral fractures) were self-reported or radiographically assessed. In addition to this, was it ascertained that these were fragility fractures?\n\nPatients: Did the authors have any information on the BMD of these subjects? In addition, were medications that affect bone metabolism (osteoporosis drugs, glucocorticoids, PPI, aromatase inhibitors, etc.) documented? If so, why were they not imputed in Cox's proportional hazards model?\n",
+      "created_at": "2025-12-04T01:33:43.809408Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T01:33:43.809408Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T01:33:43.809408Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "f8b35990-a747-4348-ae66-23ec6062a09f",
+      "content_id": "d296ab4f-06b5-410c-a1d1-3ecb6953f97c",
+      "claim_id": "C1",
+      "claim": "Fragility fracture is associated with an increased risk of mortality.",
+      "claim_type": "EXPLICIT",
+      "source": "Fragility fracture is associated with an increased risk of mortality, but mortality is not part of doctor-patient communication.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a well-established finding cited throughout the manuscript and supported by data from the study.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:43.809408Z"
+    },
+    {
+      "id": "1127f3b6-3ac3-44c2-a61e-d7c01a0cd737",
+      "content_id": "d296ab4f-06b5-410c-a1d1-3ecb6953f97c",
+      "claim_id": "C2",
+      "claim": "Mortality is not part of doctor-patient communication about fracture.",
+      "claim_type": "EXPLICIT",
+      "source": "Fragility fracture is associated with an increased risk of mortality, but mortality is not part of doctor-patient communication.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a problem in current clinical practice.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:43.809408Z"
+    },
+    {
+      "id": "a6394ed4-0e33-488c-a7f3-2a804b04275d",
+      "content_id": "d296ab4f-06b5-410c-a1d1-3ecb6953f97c",
+      "claim_id": "C3",
+      "claim": "Skeletal Age is defined as the sum of chronological age and the number of years of life lost (YLL) associated with a fracture.",
+      "claim_type": "EXPLICIT",
+      "source": "Skeletal age is defined as the sum of chronological age and the number of years of life lost (YLL) associated with a fracture.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the operational definition provided in the abstract.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:43.809408Z"
+    },
+    {
+      "id": "0afe6555-4e05-4de9-bc0e-b51734258ba8",
+      "content_id": "d296ab4f-06b5-410c-a1d1-3ecb6953f97c",
+      "claim_id": "C4",
+      "claim": "The study included 1,667,339 adults in Denmark born on or before January 1, 1950.",
+      "claim_type": "EXPLICIT",
+      "source": "We used the Danish National Hospital Discharge Register which includes the whole-country data of 1,667,339 adults in Denmark born on or before January 1, 1950, who were followed up to December 31, 2016 for incident low-trauma fracture and mortality.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the study population size reported in the methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:43.809408Z"
+    },
+    {
+      "id": "9d103bea-d57e-4cb1-ae13-7faabbeb8005",
+      "content_id": "d296ab4f-06b5-410c-a1d1-3ecb6953f97c",
+      "claim_id": "C5",
+      "claim": "During the median follow-up period of 16 years, there had been 307,870 fractures and 122,744 post-fracture deaths.",
+      "claim_type": "EXPLICIT",
+      "source": "During the median follow-up period of 16 years, there had been 307,870 fractures and 122,744 post-fracture deaths.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "These are the primary outcome data from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:43.809408Z"
+    },
+    {
+      "id": "f7292cdc-24e5-4467-807d-eed568a96e68",
+      "content_id": "d296ab4f-06b5-410c-a1d1-3ecb6953f97c",
+      "claim_id": "C6",
+      "claim": "A fracture was associated with between 1 and 7 years of life lost.",
+      "claim_type": "EXPLICIT",
+      "source": "A fracture was associated with between 1 and 7 years of life lost, with the loss being greater in men than women.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a key finding from the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:43.809408Z"
+    },
+    {
+      "id": "650ab30f-625f-4dcd-bb6f-082bee8382b0",
+      "content_id": "d296ab4f-06b5-410c-a1d1-3ecb6953f97c",
+      "claim_id": "C7",
+      "claim": "The loss of years of life associated with fracture was greater in men than women.",
+      "claim_type": "EXPLICIT",
+      "source": "A fracture was associated with between 1 and 7 years of life lost, with the loss being greater in men than women.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparative finding between sexes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:43.809408Z"
+    },
+    {
+      "id": "b1f70fb1-c231-4323-986f-45c47aaf4831",
+      "content_id": "d296ab4f-06b5-410c-a1d1-3ecb6953f97c",
+      "claim_id": "C8",
+      "claim": "Hip fractures incurred the greatest loss of life years.",
+      "claim_type": "EXPLICIT",
+      "source": "Hip fractures incurred the greatest loss of life years.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specific finding about hip fractures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:43.809408Z"
+    },
+    {
+      "id": "edc7e040-32d9-44d8-a3b3-15e217def4df",
+      "content_id": "d296ab4f-06b5-410c-a1d1-3ecb6953f97c",
+      "claim_id": "C9",
+      "claim": "A 60-year-old individual with a hip fracture is estimated to have a skeletal age of 66 for men and 65 for women.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, a 60-year-old individual with a hip fracture is estimated to have a skeletal age of 66 for men and 65 for women.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specific example calculation from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:43.809408Z"
+    },
+    {
+      "id": "4b1b3e29-531b-4cd6-a1d3-010dad624f06",
+      "content_id": "d296ab4f-06b5-410c-a1d1-3ecb6953f97c",
+      "claim_id": "C10",
+      "claim": "Fracture is a direct consequence of osteoporosis, just as stroke is a consequence of hypertension.",
+      "claim_type": "EXPLICIT",
+      "source": "Fragility fracture is a direct consequence of osteoporosis, just as stroke is a consequence of hypertension.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an analogy used to explain the relationship between osteoporosis and fracture.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:43.809408Z"
+    },
+    {
+      "id": "5ad98d00-c4f1-4965-8465-3cbad623cb67",
+      "content_id": "d296ab4f-06b5-410c-a1d1-3ecb6953f97c",
+      "claim_id": "C11",
+      "claim": "Patients with a fragility fracture have on average a twofold increase in the risk of mortality.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, patients with a fragility fracture have on average a twofold increase in the risk of mortality (Center et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:43.809408Z"
+    },
+    {
+      "id": "638bc70c-68fd-49b0-8363-441f5c9128b5",
+      "content_id": "d296ab4f-06b5-410c-a1d1-3ecb6953f97c",
+      "claim_id": "C12",
+      "claim": "Between 22% and 58% of patients with a hip fracture die within 12 months post fracture.",
+      "claim_type": "EXPLICIT",
+      "source": "Between 22% (Brauer et al., 2009) and 58% (Rapp et al., 2008) of patients with a hip fracture die within 12 months post fracture.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a range of mortality rates cited from previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:43.809408Z"
+    },
+    {
+      "id": "0185c355-a386-4683-b40f-1f2c616cc22b",
+      "content_id": "d296ab4f-06b5-410c-a1d1-3ecb6953f97c",
+      "claim_id": "C13",
+      "claim": "Treating high-risk individuals reduces the risk of fracture in randomized controlled trials.",
+      "claim_type": "EXPLICIT",
+      "source": "In randomized controlled trials, treating high-risk individuals reduces the risk of fracture (Black et al., 2020), though whether the reduction translates into reduced mortality risk remains contentious (Bolland et al., 2010; Cummings et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a randomized controlled trial.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:43.809408Z"
+    },
+    {
+      "id": "747b3e1b-b1b3-430b-8169-bff9e66b32d5",
+      "content_id": "d296ab4f-06b5-410c-a1d1-3ecb6953f97c",
+      "claim_id": "C14",
+      "claim": "Whether the reduction in fracture risk translates into reduced mortality risk remains contentious.",
+      "claim_type": "EXPLICIT",
+      "source": "In randomized controlled trials, treating high-risk individuals reduces the risk of fracture (Black et al., 2020), though whether the reduction translates into reduced mortality risk remains contentious (Bolland et al., 2010; Cummings et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is acknowledged as an area of ongoing debate with citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:43.809408Z"
+    },
+    {
+      "id": "8199d629-6e80-4dbc-9df4-1ff577b322e9",
+      "content_id": "d296ab4f-06b5-410c-a1d1-3ecb6953f97c",
+      "claim_id": "C15",
+      "claim": "Only 40% of hip fracture patients in the United States were given osteoporosis treatment within 1 month after discharge in 2002, which was then halved in 2011.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the treatment uptake has been low, with only 40% of hip fracture patients in the United States being given osteoporosis treatment within 1 month after discharge in 2002, which was then halved in 2011 (Solomon et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specific statistic about treatment uptake cited from previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:43.809408Z"
+    },
+    {
+      "id": "0dafe25b-ca24-41a5-8627-b0460a84ebdb",
+      "content_id": "d296ab4f-06b5-410c-a1d1-3ecb6953f97c",
+      "claim_id": "C16",
+      "claim": "Undertreatment of osteoporosis is considered a crisis in the management of osteoporosis globally.",
+      "claim_type": "EXPLICIT",
+      "source": "This undertreatment is considered a crisis in the management of osteoporosis globally.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a characterization of the current state of osteoporosis management.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:43.809408Z"
+    },
+    {
+      "id": "f1bbe4fc-3a24-437b-bb86-53ca7be1a3f2",
+      "content_id": "d296ab4f-06b5-410c-a1d1-3ecb6953f97c",
+      "claim_id": "C17",
+      "claim": "Relative risk often gives an exaggerated impression.",
+      "claim_type": "EXPLICIT",
+      "source": "Traditionally, relative risk (e.g. \"the risk of mortality is increased by twofold\") has been used as a metric of excess risk, but this metric often gives an exaggerated impression (Trevena et al., 2013), and is perceived as larger than the absolute risk (Akl et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to research on risk communication.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:43.809408Z"
+    },
+    {
+      "id": "3d2ff86d-4a19-4d3f-b7ac-a9b5648b45d6",
+      "content_id": "d296ab4f-06b5-410c-a1d1-3ecb6953f97c",
+      "claim_id": "C18",
+      "claim": "Relative risk is perceived as larger than the absolute risk.",
+      "claim_type": "EXPLICIT",
+      "source": "Traditionally, relative risk (e.g. \"the risk of mortality is increased by twofold\") has been used as a metric of excess risk, but this metric often gives an exaggerated impression (Trevena et al., 2013), and is perceived as larger than the absolute risk (Akl et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to research on risk perception.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:43.809408Z"
+    },
+    {
+      "id": "511cad9e-a8c8-448d-af12-7bcacf78f12c",
+      "content_id": "d296ab4f-06b5-410c-a1d1-3ecb6953f97c",
+      "claim_id": "C19",
+      "claim": "Absolute risk in terms of probability over a period of time is much harder to understand.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, absolute risk in terms of probability over a period of time is much harder to understand (Zipkin et al., 2014), even for doctors and patients (Gigerenzer et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to research on risk comprehension.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:43.809408Z"
+    },
+    {
+      "id": "f3004c7d-3ae8-40ed-a90e-e287bebb7aff",
+      "content_id": "d296ab4f-06b5-410c-a1d1-3ecb6953f97c",
+      "claim_id": "C20",
+      "claim": "Only a fifth of a sample of highly educated American adults could understand one in 1000 is equivalent to 0.1%.",
+      "claim_type": "EXPLICIT",
+      "source": "Only a fifth of a sample of highly educated American adults could understand one in 1000 is equivalent to 0.1% (Lipkus et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specific finding from a cited study on numeracy.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:43.809408Z"
+    },
+    {
+      "id": "e6e51ef1-fccc-4bdb-a3dd-adc03189d5e5",
+      "content_id": "d296ab4f-06b5-410c-a1d1-3ecb6953f97c",
+      "claim_id": "C21",
+      "claim": "In engineering, effective age is the age of a structure based on its current conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "In engineering, effective age is the age of a structure based on its current conditions; whereas in medicine, the effective age of an individual is the age of a typical healthy person who matches the specific risk profile of this individual (Spiegelhalter, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition cited from Spiegelhalter's work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:43.809408Z"
+    },
+    {
+      "id": "8e774fe4-54a5-440c-a075-c952802fbd2e",
+      "content_id": "d296ab4f-06b5-410c-a1d1-3ecb6953f97c",
+      "claim_id": "C22",
+      "claim": "In medicine, the effective age of an individual is the age of a typical healthy person who matches the specific risk profile of this individual.",
+      "claim_type": "EXPLICIT",
+      "source": "In engineering, effective age is the age of a structure based on its current conditions; whereas in medicine, the effective age of an individual is the age of a typical healthy person who matches the specific risk profile of this individual (Spiegelhalter, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition cited from Spiegelhalter's work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:43.809408Z"
+    },
+    {
+      "id": "86fba355-2b33-4c52-9232-7bf9f34bb439",
+      "content_id": "d296ab4f-06b5-410c-a1d1-3ecb6953f97c",
+      "claim_id": "C23",
+      "claim": "The use of heart age and lung age has resulted in a better clinical impact than the traditional absolute risk metric.",
+      "claim_type": "EXPLICIT",
+      "source": "The use of heart age and lung age has resulted in a better clinical impact than the traditional absolute risk metric (Kulendrarajah et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to research on effective age metrics.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:43.809408Z"
+    },
+    {
+      "id": "023613a8-0b9f-45fd-8695-15b8be1e57ce",
+      "content_id": "d296ab4f-06b5-410c-a1d1-3ecb6953f97c",
+      "claim_id": "C24",
+      "claim": "The study included all adults aged 50 years old and older as of January 1, 2001 in Denmark.",
+      "claim_type": "EXPLICIT",
+      "source": "This analysis included all adults aged 50 years old and older as of January 1, 2001 in Denmark whose health status had been followed up until December 31, 2016 for mortality.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the study population inclusion criteria.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:43.809408Z"
+    },
+    {
+      "id": "cf246a76-29c5-48c3-9c8e-eab43976c4a2",
+      "content_id": "d296ab4f-06b5-410c-a1d1-3ecb6953f97c",
+      "claim_id": "C25",
+      "claim": "Individuals who had sustained a fracture at 45+ years old between 1996 and 2000 were excluded to avoid potential bias that the incident fracture analyzed in this study was a second fracture.",
+      "claim_type": "EXPLICIT",
+      "source": "Individuals who had sustained a fracture at 45+ years old between 1996 and 2000 were excluded to avoid potential bias that the incident fracture analyzed in this study was a second fracture (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an exclusion criterion explained in the methods and shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:43.809408Z"
+    },
+    {
+      "id": "cf01c44c-5ce0-41a8-a25c-974eaaf42a14",
+      "content_id": "d296ab4f-06b5-410c-a1d1-3ecb6953f97c",
+      "claim_id": "C26",
+      "claim": "The initial incident fracture was defined as the first low-trauma fracture reported between January 1, 2001 and December 31, 2014.",
+      "claim_type": "EXPLICIT",
+      "source": "The initial incident fracture was defined as the first low-trauma fracture reported between January 1, 2001 and December 31, 2014.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the operational definition of the exposure variable.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:43.809408Z"
+    },
+    {
+      "id": "cac3e5de-abf9-48a7-90bc-e38ada0aaf0d",
+      "content_id": "d296ab4f-06b5-410c-a1d1-3ecb6953f97c",
+      "claim_id": "C27",
+      "claim": "When more than one fracture occurred during a single event, only the fracture at the most proximal site was considered.",
+      "claim_type": "EXPLICIT",
+      "source": "When more than one fracture occurred during a single event, only the fracture at the most proximal site was considered.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological decision for handling multiple fractures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:43.809408Z"
+    },
+    {
+      "id": "ca4042ea-1c06-4e46-bb5f-8da4eeffdc88",
+      "content_id": "d296ab4f-06b5-410c-a1d1-3ecb6953f97c",
+      "claim_id": "C28",
+      "claim": "All fractures included in the analysis were radiologically ascertained.",
+      "claim_type": "EXPLICIT",
+      "source": "All fractures included in the analysis were radiologically ascertained.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the method of fracture ascertainment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:43.809408Z"
+    },
+    {
+      "id": "d2f4df98-31b1-478b-a483-5e56e46756ae",
+      "content_id": "d296ab4f-06b5-410c-a1d1-3ecb6953f97c",
+      "claim_id": "C29",
+      "claim": "Face, skull, finger, or toe fractures and high-trauma fractures due to traffic accidents were excluded.",
+      "claim_type": "EXPLICIT",
+      "source": "Face, skull, finger, or toe fractures and high-trauma fractures due to traffic accidents were excluded.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes exclusion criteria for fracture types.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:43.809408Z"
+    },
+    {
+      "id": "ed2f8e57-a849-47dd-8b73-1e8bd2c61d4a",
+      "content_id": "d296ab4f-06b5-410c-a1d1-3ecb6953f97c",
+      "claim_id": "C30",
+      "claim": "The study participants were followed up to December 31, 2016 for mortality, allowing at least 2 years of follow-up post fracture.",
+      "claim_type": "EXPLICIT",
+      "source": "The study participants were followed up to December 31, 2016 for mortality, allowing at least 2 years of follow-up post fracture.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the follow-up period for the outcome.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:43.809408Z"
+    },
+    {
+      "id": "6e9546ca-73aa-473a-8990-8d6db5b07a9b",
+      "content_id": "d296ab4f-06b5-410c-a1d1-3ecb6953f97c",
+      "claim_id": "C31",
+      "claim": "Skeletal age is operationally defined as the sum of the chronological age and the change in life expectancy associated with fracture.",
+      "claim_type": "EXPLICIT",
+      "source": "Skeletal age is operationally defined as the sum of the chronological age and the change in life expectancy associated with fracture.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the operational definition used in the statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:43.809408Z"
+    },
+    {
+      "id": "2b97e992-d5a9-4951-a21a-3b2d2cad50b9",
+      "content_id": "d296ab4f-06b5-410c-a1d1-3ecb6953f97c",
+      "claim_id": "C32",
+      "claim": "A Cox's proportional hazards regression was used to quantify the association between an initial specific fracture and mortality.",
+      "claim_type": "EXPLICIT",
+      "source": "For the first aim, a Cox's proportional hazards regression was used to quantify the association between an initial specific fracture and mortality, in which both fracture and confounding variables were analyzed in a time-dependent manner to minimize the risk of immortal time bias (Suissa, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the statistical method used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:43.809408Z"
+    },
+    {
+      "id": "04d17e95-dae1-45c9-8827-0505baaffc2a",
+      "content_id": "d296ab4f-06b5-410c-a1d1-3ecb6953f97c",
+      "claim_id": "C33",
+      "claim": "Both fracture and confounding variables were analyzed in a time-dependent manner to minimize the risk of immortal time bias.",
+      "claim_type": "EXPLICIT",
+      "source": "For the first aim, a Cox's proportional hazards regression was used to quantify the association between an initial specific fracture and mortality, in which both fracture and confounding variables were analyzed in a time-dependent manner to minimize the risk of immortal time bias (Suissa, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a methodological approach to reduce bias, with citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:43.809408Z"
+    },
+    {
+      "id": "12998d67-08e3-47d8-bb4d-a6584095dafd",
+      "content_id": "d296ab4f-06b5-410c-a1d1-3ecb6953f97c",
+      "claim_id": "C34",
+      "claim": "The models adjusted for confounding effects of age and severity of comorbidities.",
+      "claim_type": "EXPLICIT",
+      "source": "The models adjusted for confounding effects of age and severity of comorbidities (Quan et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the covariates included in the statistical models.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:43.809408Z"
+    },
+    {
+      "id": "2815b1f5-96cd-497b-833f-c1dce2c3ff2e",
+      "content_id": "d296ab4f-06b5-410c-a1d1-3ecb6953f97c",
+      "claim_id": "C36",
+      "claim": "Under the Gompertz law of mortality, the annual risk of dying associated with aging 1 year is remarkably consistent between ages 50 and 95 across ethnicities and over time.",
+      "claim_type": "EXPLICIT",
+      "source": "Under the Gompertz law of mortality, the annual risk of dying associated with aging 1 year is remarkably consistent between ages 50 and 95 across ethnicities and over time (Brenner et al., 1993; Vaupel, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a property of the Gompertz law supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:43.809408Z"
+    },
+    {
+      "id": "67359324-cc01-446f-8593-7f930f636a8e",
+      "content_id": "d296ab4f-06b5-410c-a1d1-3ecb6953f97c",
+      "claim_id": "C37",
+      "claim": "During the median follow-up period of 14 years, 95,372 men and 212,498 women had sustained a fracture.",
+      "claim_type": "EXPLICIT",
+      "source": "During a median of 14 years of follow-up (interquartile range [IQR]: 6.5, 14.0 years), 95,372 men and 212,498 women had sustained a fracture.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a key result describing fracture incidence.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:43.809408Z"
+    },
+    {
+      "id": "4ce7958c-b22d-4a59-97e9-98ea632905f7",
+      "content_id": "d296ab4f-06b5-410c-a1d1-3ecb6953f97c",
+      "claim_id": "C38",
+      "claim": "The incidence of fractures was 10.9 fractures/1000 person-years (95% confidence interval [CI]: 10.8, 11.0) in men and 23.2 fractures/1000 person-years (23.1, 23.3) in women.",
+      "claim_type": "EXPLICIT",
+      "source": "The incidence of fractures was 10.9 fractures/1000 person-years (95% confidence interval [CI]: 10.8, 11.0) in men and 23.2 fractures/1000 person-years (23.1, 23.3) in women.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a calculated incidence rate from the study data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:43.809408Z"
+    },
+    {
+      "id": "00445ae0-2246-4df0-be89-9e8fcffdea32",
+      "content_id": "d296ab4f-06b5-410c-a1d1-3ecb6953f97c",
+      "claim_id": "C39",
+      "claim": "Forearm, hip, and humerus fractures accounted for 55% of all fractures in men and 70% in women.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, forearm, hip, and humerus fractures accounted for 55% of all fractures in men and 70% in women.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a descriptive statistic from the study data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:43.809408Z"
+    },
+    {
+      "id": "655797c5-6cfd-4069-9851-02ceedcba051",
+      "content_id": "d296ab4f-06b5-410c-a1d1-3ecb6953f97c",
+      "claim_id": "C40",
+      "claim": "Men and women with a fracture were on average older than those without a fracture.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, men and women with a fracture were on average older than those without a fracture.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a descriptive finding from the study data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:43.809408Z"
+    },
+    {
+      "id": "c4926105-fdfc-4ae1-b3d5-42e08acfb258",
+      "content_id": "d296ab4f-06b5-410c-a1d1-3ecb6953f97c",
+      "claim_id": "C41",
+      "claim": "Individuals with a fracture had more comorbidities than those who did not sustain a fracture.",
+      "claim_type": "EXPLICIT",
+      "source": "Individuals with a fracture had more comorbidities than those who did not sustain a fracture (Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a descriptive finding shown in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:43.809408Z"
+    },
+    {
+      "id": "7fbeed71-0f8c-482e-894a-05b0508cd00b",
+      "content_id": "d296ab4f-06b5-410c-a1d1-3ecb6953f97c",
+      "claim_id": "C42",
+      "claim": "The prevalence of myocardial infarction among patients with a fracture (9.3% in men and 4.7% in women) was higher than that among individuals without a fracture (4% in men and 1.5% in women).",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, the prevalence of myocardial infarction among patients with a fracture (9.3% in men and 4.7% in women) was higher than that among individuals without a fracture (4% in men and 1.5% in women).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specific comparison of comorbidity prevalence.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:43.809408Z"
+    },
+    {
+      "id": "5dcb2206-9f1a-494b-b31c-baadfc1cc86d",
+      "content_id": "d296ab4f-06b5-410c-a1d1-3ecb6953f97c",
+      "claim_id": "C43",
+      "claim": "During a median follow-up of 6.5 years, 272,524 men and 277,194 women had died.",
+      "claim_type": "EXPLICIT",
+      "source": "During a median follow-up of 6.5 years (6.0 years (IQR: 2.5, 10.0) in men, 6.7 years (3.3, 10.8) in women), 272,524 men and 277,194 women had died, yielding unadjusted mortality incidence rates of 6.55 deaths/100 person-years (95% CI: 6.48, 6.61) in men and 5.42 deaths/100 person-years (5.39, 5.46) in women.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a key result describing mortality incidence.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:43.809408Z"
+    },
+    {
+      "id": "9467b50d-dd66-45ea-a703-8d9669d47d34",
+      "content_id": "d296ab4f-06b5-410c-a1d1-3ecb6953f97c",
+      "claim_id": "C44",
+      "claim": "The unadjusted mortality incidence rates were 6.55 deaths/100 person-years (95% CI: 6.48, 6.61) in men and 5.42 deaths/100 person-years (5.39, 5.46) in women.",
+      "claim_type": "EXPLICIT",
+      "source": "During a median follow-up of 6.5 years (6.0 years (IQR: 2.5, 10.0) in men, 6.7 years (3.3, 10.8) in women), 272,524 men and 277,194 women had died, yielding unadjusted mortality incidence rates of 6.55 deaths/100 person-years (95% CI: 6.48, 6.61) in men and 5.42 deaths/100 person-years (5.39, 5.46) in women.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a calculated mortality rate from the study data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:43.809408Z"
+    },
+    {
+      "id": "14396017-debd-458f-af21-1b4d9bc56538",
+      "content_id": "d296ab4f-06b5-410c-a1d1-3ecb6953f97c",
+      "claim_id": "C45",
+      "claim": "The unadjusted rate of mortality among patients with a fracture (6.54/100 person-years in men and 5.42/100 person-years in women) was greater than among those without a fracture (2.56/100 person-years in men and 2.24/100 person-years in women).",
+      "claim_type": "EXPLICIT",
+      "source": "More importantly, the unadjusted rate of mortality among patients with a fracture (6.54/100 person-years in men and 5.42/100 person-years in women) was greater than among those without a fracture (2.56/100 person-years in men and 2.24/100 person-years in women).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison of mortality rates between fracture and non-fracture groups.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:43.809408Z"
+    },
+    {
+      "id": "6bbb4b33-8a5d-45f7-96f5-0e92bc429abf",
+      "content_id": "d296ab4f-06b5-410c-a1d1-3ecb6953f97c",
+      "claim_id": "C46",
+      "claim": "Men and women with a fracture at the hip, pelvis, or vertebra had a much greater risk of mortality than other fractures.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis by fracture site revealed that men and women with a fracture at the hip, pelvis, or vertebra had a much greater risk of mortality than other fractures (Table 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from site-specific analysis shown in Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:43.809408Z"
+    },
+    {
+      "id": "d26f4a19-5995-480f-9d98-ec5259e41cf7",
+      "content_id": "d296ab4f-06b5-410c-a1d1-3ecb6953f97c",
+      "claim_id": "C47",
+      "claim": "Individuals with any fragility fracture were associated with a 30\u201345% increased hazard of death (adjusted hazard ratio = 1.46 (95% CI: 1.45, 1.48) in men; 1.28 (1.27, 1.30) in women).",
+      "claim_type": "EXPLICIT",
+      "source": "Individuals with any fragility fracture were associated with a 30\u201345% increased hazard of death (adjusted hazard ratio = 1.46 (95% CI: 1.45, 1.48) in men; 1.28 (1.27, 1.30) in women).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a key finding from the multivariable-adjusted Cox regression.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:43.809408Z"
+    },
+    {
+      "id": "954dd6cd-027b-4041-a48a-d84592227c2b",
+      "content_id": "d296ab4f-06b5-410c-a1d1-3ecb6953f97c",
+      "claim_id": "C48",
+      "claim": "Men and women with a hip or femur fracture had an almost twofold greater risk of death than those without a fracture, for the same age and comorbidity profile.",
+      "claim_type": "EXPLICIT",
+      "source": "For the same age and comorbidity profile, men and women with a hip or femur fracture had an almost twofold greater risk of death than those without a fracture.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specific finding about hip and femur fractures from the adjusted analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:43.809408Z"
+    },
+    {
+      "id": "621a0f5f-a610-4284-85b4-416f4d809dfa",
+      "content_id": "d296ab4f-06b5-410c-a1d1-3ecb6953f97c",
+      "claim_id": "C49",
+      "claim": "The increased risk of mortality was also observed among those with a proximal fracture, such as the pelvis, vertebrae, humerus, rib, clavicle, and lower leg fracture after controlling for age and comorbidities.",
+      "claim_type": "EXPLICIT",
+      "source": "The increased risk of mortality was also observed among those with a proximal fracture, such as the pelvis, vertebrae, humerus, rib, clavicle, and lower leg fracture after controlling for age and comorbidities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding about proximal fractures from the adjusted analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:43.809408Z"
+    },
+    {
+      "id": "54f1fdc1-6dde-4b74-ba08-2b7ab2b42d99",
+      "content_id": "d296ab4f-06b5-410c-a1d1-3ecb6953f97c",
+      "claim_id": "C50",
+      "claim": "There was no significantly increased risk of death following a forearm, knee, ankle, hand, or foot fracture.",
+      "claim_type": "EXPLICIT",
+      "source": "However, there was no significantly increased risk of death following a forearm, knee, ankle, hand, or foot fracture (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding about distal fractures shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:43.809408Z"
+    },
+    {
+      "id": "fa6f686f-4339-4d35-b359-ac528a795cf3",
+      "content_id": "d296ab4f-06b5-410c-a1d1-3ecb6953f97c",
+      "claim_id": "C51",
+      "claim": "Patients with a fracture have lost years of life, and hence their skeletal age was greater than their chronological age.",
+      "claim_type": "EXPLICIT",
+      "source": "Patients with a fracture - any fracture at all - have lost years of life, and hence their skeletal age was greater than their chronological age.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a key finding about skeletal age.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:43.809408Z"
+    },
+    {
+      "id": "ef0bdf2e-88cb-4a44-8976-dd60ccc281bb",
+      "content_id": "d296ab4f-06b5-410c-a1d1-3ecb6953f97c",
+      "claim_id": "C52",
+      "claim": "For a given age, men with a fracture on average had greater skeletal age than women by approximately 1 year.",
+      "claim_type": "EXPLICIT",
+      "source": "For a given age, men with a fracture on average had greater skeletal age than women by approximately 1 year.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a sex-specific finding about skeletal age.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:43.809408Z"
+    },
+    {
+      "id": "4963860a-6bf4-4e73-8904-c441df4ba359",
+      "content_id": "d296ab4f-06b5-410c-a1d1-3ecb6953f97c",
+      "claim_id": "C53",
+      "claim": "The loss of years of life was more pronounced in younger age groups and gradually converged in the older age groups.",
+      "claim_type": "EXPLICIT",
+      "source": "In either sex, the loss of years of life was more pronounced in younger age groups and gradually converged in the older age groups.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding about age-related patterns in years of life lost.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:43.809408Z"
+    },
+    {
+      "id": "5fe00b5e-a801-4398-b870-1fd85a80c7a8",
+      "content_id": "d296ab4f-06b5-410c-a1d1-3ecb6953f97c",
+      "claim_id": "C54",
+      "claim": "Patients with a hip fracture had the highest skeletal age than those with other fractures.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, patients with a hip fracture had the highest skeletal age than those with other fractures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparative finding about hip fractures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:43.809408Z"
+    },
+    {
+      "id": "1a76ba03-5a2c-450b-a82a-15a1a8d4a461",
+      "content_id": "d296ab4f-06b5-410c-a1d1-3ecb6953f97c",
+      "claim_id": "C55",
+      "claim": "A 70-year-old man who had sustained a hip fracture would have a skeletal age of 75 years (i.e. a loss of 5 years of life).",
+      "claim_type": "EXPLICIT",
+      "source": "For example, a 70-year-old man who had sustained a hip fracture would have a skeletal age of 75 years (i.e. a loss of 5 years of life); however, if a 50-year-old man with a hip fracture would have a skeletal age of 56.8 years which is equivalent to almost 7 years of life lost.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specific example calculation of skeletal age.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:43.809408Z"
+    },
+    {
+      "id": "26c12791-ab40-4dde-b8c2-ef5aafe1efb5",
+      "content_id": "d296ab4f-06b5-410c-a1d1-3ecb6953f97c",
+      "claim_id": "C56",
+      "claim": "A 50-year-old man with a hip fracture would have a skeletal age of 56.8 years which is equivalent to almost 7 years of life lost.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, a 70-year-old man who had sustained a hip fracture would have a skeletal age of 75 years (i.e. a loss of 5 years of life); however, if a 50-year-old man with a hip fracture would have a skeletal age of 56.8 years which is equivalent to almost 7 years of life lost.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specific example calculation of skeletal age.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:43.809408Z"
+    },
+    {
+      "id": "593e54fb-4de8-40d2-a2c6-19f4592fa156",
+      "content_id": "d296ab4f-06b5-410c-a1d1-3ecb6953f97c",
+      "claim_id": "C57",
+      "claim": "Fractures at the femur, pelvis, vertebrae, and humerus signified a significant loss of years of life (around 5 years).",
+      "claim_type": "EXPLICIT",
+      "source": "Other fractures such as the femur, pelvis, vertebrae, and humerus also signified a significant loss of years of life (around 5 years); thus, 50-year-old patients with one of these fractures are estimated to have a skeletal age of around 55 years.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding about years of life lost for specific fracture types.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:43.809408Z"
+    },
+    {
+      "id": "6ac9f2a6-ab74-495d-8162-191f551092a1",
+      "content_id": "d296ab4f-06b5-410c-a1d1-3ecb6953f97c",
+      "claim_id": "C58",
+      "claim": "50-year-old patients with femur, pelvis, vertebrae, or humerus fractures are estimated to have a skeletal age of around 55 years.",
+      "claim_type": "EXPLICIT",
+      "source": "Other fractures such as the femur, pelvis, vertebrae, and humerus also signified a significant loss of years of life (around 5 years); thus, 50-year-old patients with one of these fractures are estimated to have a skeletal age of around 55 years.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specific example calculation of skeletal age.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:43.809408Z"
+    },
+    {
+      "id": "8aa57f42-c646-4e86-82f1-4305419170d3",
+      "content_id": "d296ab4f-06b5-410c-a1d1-3ecb6953f97c",
+      "claim_id": "C59",
+      "claim": "Fractures at the rib, clavicle, and lower leg were associated with lower years of life lost.",
+      "claim_type": "EXPLICIT",
+      "source": "However, fractures are the rib, clavicle, and lower leg were associated with lower years of life lost, and the skeletal age of patients with one of these fractures was generally lower than patients with a more serious fracture (e.g. hip fracture).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparative finding about less severe fractures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:43.809408Z"
+    },
+    {
+      "id": "1f644890-36da-4f44-816b-6a577c4a88f0",
+      "content_id": "d296ab4f-06b5-410c-a1d1-3ecb6953f97c",
+      "claim_id": "C60",
+      "claim": "A 60-year-old patient with a lower leg fracture would be expected to have a skeletal age of 62.4 years for men or 61.9 years for women.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, a 60-year-old patient with a lower leg fracture would be expected to have a skeletal age of 62.4 years for men or 61.9 years for women (Supplementary file 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specific example calculation of skeletal age.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:43.809408Z"
+    },
+    {
+      "id": "4abe3c5a-b75b-4c87-8f9d-84e1ba6edb29",
+      "content_id": "d296ab4f-06b5-410c-a1d1-3ecb6953f97c",
+      "claim_id": "C61",
+      "claim": "The magnitude of the association between individual sites of fracture observed in this study is slightly lower than that documented in several previous cohort studies.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the magnitude of the association between individual sites of fracture observed in our study is slightly lower than that documented in several previous cohort studies (Bliuc et al., 2009; Browner et al., 1996; Melton et al., 2013; Haentjens et al., 2010; Tran et al., 2017), with hip fractures being associated with a 1.7-to-6-fold increased risk of death (Haentjens et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison with previous literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:43.809408Z"
+    },
+    {
+      "id": "26d12a6f-54f0-4866-9c8a-0d304179f27c",
+      "content_id": "d296ab4f-06b5-410c-a1d1-3ecb6953f97c",
+      "claim_id": "C62",
+      "claim": "Hip fractures have been associated with a 1.7-to-6-fold increased risk of death in previous studies.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the magnitude of the association between individual sites of fracture observed in our study is slightly lower than that documented in several previous cohort studies (Bliuc et al., 2009; Browner et al., 1996; Melton et al., 2013; Haentjens et al., 2010; Tran et al., 2017), with hip fractures being associated with a 1.7-to-6-fold increased risk of death (Haentjens et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a range of effect sizes from previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:43.809408Z"
+    },
+    {
+      "id": "7342db08-9974-4964-a1a2-66941fe361aa",
+      "content_id": "d296ab4f-06b5-410c-a1d1-3ecb6953f97c",
+      "claim_id": "C63",
+      "claim": "The discrepancy in effect size could be due to the difference in study populations.",
+      "claim_type": "EXPLICIT",
+      "source": "This discrepancy could be due to the difference in study populations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explanation for differences with previous studies.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:43.809408Z"
+    },
+    {
+      "id": "8c191040-2600-4e66-97f3-603aad4a8c44",
+      "content_id": "d296ab4f-06b5-410c-a1d1-3ecb6953f97c",
+      "claim_id": "C64",
+      "claim": "Cohort studies usually recruit healthy participants.",
+      "claim_type": "EXPLICIT",
+      "source": "While cohort studies usually recruit healthy participants, our national registry-based study was able to document all individuals in Denmark.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a characterization of typical cohort study design.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:43.809408Z"
+    },
+    {
+      "id": "743562e3-b30f-4275-ae77-11c670b6dc0e",
+      "content_id": "d296ab4f-06b5-410c-a1d1-3ecb6953f97c",
+      "claim_id": "C65",
+      "claim": "The control group (those without a fracture) in this study included individuals in poor health conditions with multiple comorbidities who are usually unable to be recruited in a cohort study.",
+      "claim_type": "EXPLICIT",
+      "source": "As a result, our control group (i.e. those without a fracture) included individuals in poor health conditions with multiple comorbidities who are usually unable to be recruited in a cohort study.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explanation of how the study population differs from typical cohorts.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:43.809408Z"
+    },
+    {
+      "id": "412593c7-4741-4627-bb5c-5cfa174b7d5c",
+      "content_id": "d296ab4f-06b5-410c-a1d1-3ecb6953f97c",
+      "claim_id": "C66",
+      "claim": "Whether the association between fracture and mortality is causal or not is a matter of contention.",
+      "claim_type": "EXPLICIT",
+      "source": "Whether the association between fracture and mortality is causal or not is a matter of contention.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This acknowledges uncertainty about causality.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:43.809408Z"
+    },
+    {
+      "id": "5d852440-18c1-4e4c-bf0d-46b07923b744",
+      "content_id": "d296ab4f-06b5-410c-a1d1-3ecb6953f97c",
+      "claim_id": "C67",
+      "claim": "It is commonly assumed that the association between fracture and mortality is confounded by comorbidities.",
+      "claim_type": "EXPLICIT",
+      "source": "It is commonly assumed that the association is confounded by comorbidities, but multiple studies have found that comorbidities contributed little to the excess risk of mortality among fractured patients (Vestergaard et al., 2007; Chen et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a common assumption in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:43.809408Z"
+    },
+    {
+      "id": "5ebbd189-bca4-4cca-b85d-5e636298c912",
+      "content_id": "d296ab4f-06b5-410c-a1d1-3ecb6953f97c",
+      "claim_id": "C68",
+      "claim": "Multiple studies have found that comorbidities contributed little to the excess risk of mortality among fractured patients.",
+      "claim_type": "EXPLICIT",
+      "source": "It is commonly assumed that the association is confounded by comorbidities, but multiple studies have found that comorbidities contributed little to the excess risk of mortality among fractured patients (Vestergaard et al., 2007; Chen et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:43.809408Z"
+    },
+    {
+      "id": "81370bf1-a9a9-454d-beb5-9e1043dc5662",
+      "content_id": "d296ab4f-06b5-410c-a1d1-3ecb6953f97c",
+      "claim_id": "C69",
+      "claim": "The significant fracture-mortality association remained unchanged after adjusting for comorbidities in this study.",
+      "claim_type": "EXPLICIT",
+      "source": "In the present analysis, we have also adjusted for comorbidities, and the significant fracture \u2013 mortality association remained unchanged, suggesting that the association is unlikely due to comorbidities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the adjusted analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:43.809408Z"
+    },
+    {
+      "id": "d407ce22-03d4-4c64-9b13-fe89d0b2eb3d",
+      "content_id": "d296ab4f-06b5-410c-a1d1-3ecb6953f97c",
+      "claim_id": "C70",
+      "claim": "The association between fracture and mortality is unlikely due to comorbidities.",
+      "claim_type": "EXPLICIT",
+      "source": "In the present analysis, we have also adjusted for comorbidities, and the significant fracture \u2013 mortality association remained unchanged, suggesting that the association is unlikely due to comorbidities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the adjusted analysis results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:43.809408Z"
+    },
+    {
+      "id": "8fd617b5-a7e1-42f8-b5c0-de2e317a263c",
+      "content_id": "d296ab4f-06b5-410c-a1d1-3ecb6953f97c",
+      "claim_id": "C71",
+      "claim": "Existing fracture risk assessment models such as Garvan and FRAX provide the estimated probability of fracture over a 10 year period without any information on mortality.",
+      "claim_type": "EXPLICIT",
+      "source": "Existing fracture risk assessment models such as Garvan (Nguyen et al., 2007) and FRAX (Kanis et al., 2007) provide the estimated probability (i.e. absolute risk) of fracture over a 10 year period without any information on mortality.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a characterization of existing risk assessment tools with citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:43.809408Z"
+    },
+    {
+      "id": "7a0c89f4-ebc4-405c-9160-cd3a0e020d22",
+      "content_id": "d296ab4f-06b5-410c-a1d1-3ecb6953f97c",
+      "claim_id": "C72",
+      "claim": "Doctors and patients have difficulty in understanding and interpreting probability.",
+      "claim_type": "EXPLICIT",
+      "source": "However, doctors and patients have difficulty in understanding and interpreting probability (Gigerenzer et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to research on risk comprehension.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:43.809408Z"
+    },
+    {
+      "id": "c584c3b2-aa98-42a1-9f2f-8a234de6d0ef",
+      "content_id": "d296ab4f-06b5-410c-a1d1-3ecb6953f97c",
+      "claim_id": "C73",
+      "claim": "Conveying a low, though clinically significant absolute risk might provide a false peace of mind and underestimated risk perception, leading to increasing possibilities of refusing the recommended treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Conveying a low, though clinically significant absolute risk (e.g. 'Your risk of hip fracture over the next 10 years is 5%') might provide a false peace of mind and underestimated risk perception, leading to increasing possibilities of refusing the recommended treatment (Trevena et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a concern about risk communication supported by citation.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:43.809408Z"
+    },
+    {
+      "id": "eb752ea9-8ed2-4170-b6d2-3b673c6e6e1b",
+      "content_id": "d296ab4f-06b5-410c-a1d1-3ecb6953f97c",
+      "claim_id": "C74",
+      "claim": "Poor communication about fracture risk and mortality consequences might have contributed to the global crisis of undertreatment of osteoporosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, poor communication about fracture risk and mortality consequences might have contributed to the global crisis of undertreatment of osteoporosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis about the cause of undertreatment.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:43.809408Z"
+    },
+    {
+      "id": "7eac8cf0-a89a-4aaf-b203-2e7542c2c1dc",
+      "content_id": "d296ab4f-06b5-410c-a1d1-3ecb6953f97c",
+      "claim_id": "C75",
+      "claim": "A natural frequency metric has been consistently shown to be easier and more friendly to doctors and patients than the probability-based metrics.",
+      "claim_type": "EXPLICIT",
+      "source": "A natural frequency metric has been consistently shown to be easier and more friendly to doctors and patients than the probability-based metrics (Akl et al., 2011; Gigerenzer et al., 2007; Ahmed et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to research on risk communication.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:43.809408Z"
+    },
+    {
+      "id": "4440ff41-341a-4b32-923c-307b76a67412",
+      "content_id": "d296ab4f-06b5-410c-a1d1-3ecb6953f97c",
+      "claim_id": "C76",
+      "claim": "Skeletal age can be used to convey the possible benefit of treatment, providing an alternative metric to the conventional metrics such as relative risk or relative risk reduction.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the skeletal age can be also used to convey the possible benefit of treatment, providing an alternative metric to the conventional metrics such as relative risk or relative risk reduction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed application of skeletal age.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:43.809408Z"
+    },
+    {
+      "id": "3af94037-f124-45a3-aee4-2ad662ee7d2d",
+      "content_id": "d296ab4f-06b5-410c-a1d1-3ecb6953f97c",
+      "claim_id": "C77",
+      "claim": "Zoledronic acid treatment reduced the risk of death by 28%.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, a patient might find the statement 'Zoledronic acid treatment helps a patient with a hip fracture gain 3 years of life' much easier to understand and probably more persuasive than 'Zoledronic acid treatment reduced the risk of death by 28%' (Lyles et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from a cited clinical trial.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:43.809408Z"
+    },
+    {
+      "id": "6f4b9ebc-e98e-4502-96a5-2001265b77c4",
+      "content_id": "d296ab4f-06b5-410c-a1d1-3ecb6953f97c",
+      "claim_id": "C78",
+      "claim": "Heart age and lung age have been demonstrated to be superior to the conventional risk metrics.",
+      "claim_type": "EXPLICIT",
+      "source": "Skeletal age is an addition to the already available metrics such as 'Heart Age,' 'Lung Age,' and more recently 'Covid Age' which have been demonstrated to be superior to the conventional risk metrics (Grover et al., 2007; Lowensteyn et al., 1998; Lopez-Gonzalez et al., 2015; Bonner et al., 2015; Svendsen et al., 2020) in terms of positive behavioral changes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research on effective age metrics.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:43.809408Z"
+    },
+    {
+      "id": "6ede2dbb-ff33-40f7-9d35-29e5f8b0c824",
+      "content_id": "d296ab4f-06b5-410c-a1d1-3ecb6953f97c",
+      "claim_id": "C79",
+      "claim": "Individuals who were given heart age had a greater smoking cessation rate compared with usual care.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, compared with usual care, individuals who were given heart age had a greater smoking cessation rate (Lopez-Gonzalez et al., 2015; Bonner et al., 2015), substantial improvement in weight, body mass index, and physical activity (Lopez-Gonzalez et al., 2015), and a greater proportion of high-risk patients returning for a follow-up appointment (Lowensteyn et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from cited studies on heart age interventions.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:43.809408Z"
+    },
+    {
+      "id": "e36eaaf6-2019-47b2-8d8d-3ab6cc915493",
+      "content_id": "d296ab4f-06b5-410c-a1d1-3ecb6953f97c",
+      "claim_id": "C80",
+      "claim": "Individuals given heart age showed substantial improvement in weight, body mass index, and physical activity.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, compared with usual care, individuals who were given heart age had a greater smoking cessation rate (Lopez-Gonzalez et al., 2015; Bonner et al., 2015), substantial improvement in weight, body mass index, and physical activity (Lopez-Gonzalez et al., 2015), and a greater proportion of high-risk patients returning for a follow-up appointment (Lowensteyn et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from a cited study on heart age interventions.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:43.809408Z"
+    },
+    {
+      "id": "5d3d42d5-260b-4f34-af1f-53485a7a09bd",
+      "content_id": "d296ab4f-06b5-410c-a1d1-3ecb6953f97c",
+      "claim_id": "C81",
+      "claim": "The use of heart age led to a greater proportion of high-risk patients returning for a follow-up appointment.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, compared with usual care, individuals who were given heart age had a greater smoking cessation rate (Lopez-Gonzalez et al., 2015; Bonner et al., 2015), substantial improvement in weight, body mass index, and physical activity (Lopez-Gonzalez et al., 2015), and a greater proportion of high-risk patients returning for a follow-up appointment (Lowensteyn et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from a cited study on heart age interventions.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:43.809408Z"
+    },
+    {
+      "id": "7113cac3-44d5-4c67-88cd-3443628d2f68",
+      "content_id": "d296ab4f-06b5-410c-a1d1-3ecb6953f97c",
+      "claim_id": "C82",
+      "claim": "The use of heart age led to significantly greater improvement at 12 months in metabolic parameters or lipid profiles.",
+      "claim_type": "EXPLICIT",
+      "source": "The use of heart age also led to significantly greater improvement at 12 months in metabolic parameters (Lopez-Gonzalez et al., 2015) or lipid profiles (Grover et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from cited studies on heart age interventions.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:43.809408Z"
+    },
+    {
+      "id": "0b3e299c-c31c-42f6-9235-6e8a3d96de94",
+      "content_id": "d296ab4f-06b5-410c-a1d1-3ecb6953f97c",
+      "claim_id": "C83",
+      "claim": "A cluster randomized controlled trial in Norway found that heart age was a good way to communicate cardiovascular risk and to motivate individuals to reduce cardiovascular risk factors.",
+      "claim_type": "EXPLICIT",
+      "source": "A recent cluster randomized controlled trial in Norway also found that heart age was a good way to communicate cardiovascular risk and to motivate individuals to reduce cardiovascular risk factors (Svendsen et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from a cited randomized controlled trial.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:43.809408Z"
+    },
+    {
+      "id": "5f18eee1-da35-431f-bba2-3a836f3d44e5",
+      "content_id": "d296ab4f-06b5-410c-a1d1-3ecb6953f97c",
+      "claim_id": "C84",
+      "claim": "The use of lung age could lead to a clinically significant increase in the reported smoking cessation rates.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, the use of lung age could also lead to a clinically significant increase in the reported smoking cessation rates (Kaminsky et al., 2011; Takagi et al., 2017; Parkes et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from cited studies on lung age interventions.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:43.809408Z"
+    },
+    {
+      "id": "4d60a1c9-56c1-4fc2-b383-87241a503a3c",
+      "content_id": "d296ab4f-06b5-410c-a1d1-3ecb6953f97c",
+      "claim_id": "C85",
+      "claim": "Effective age metrics can help patients better understand their risk and lead to preventive changes.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, these data suggest that effective age metrics can help patients better understand their risk and lead to preventive changes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the cited evidence on effective age metrics.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:43.809408Z"
+    },
+    {
+      "id": "ce01c79b-5545-468f-99d6-f1062b09a574",
+      "content_id": "d296ab4f-06b5-410c-a1d1-3ecb6953f97c",
+      "claim_id": "C86",
+      "claim": "A web-based calculator 'BONEcheck.org' has been developed to assist healthcare professionals and the public to estimate the risk of fracture and skeletal age for an individual with specific risk profiles.",
+      "claim_type": "EXPLICIT",
+      "source": "A web-based calculator 'BONEcheck.org' has been developed to assist healthcare professionals and the public to estimate the risk of fracture and skeletal age for an individual with specific risk profiles, potentially improving doctor-patient risk communication.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a tool developed as part of this work.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:43.809408Z"
+    },
+    {
+      "id": "bcb7a91e-df07-4f75-96be-22d4f286aee3",
+      "content_id": "d296ab4f-06b5-410c-a1d1-3ecb6953f97c",
+      "claim_id": "C87",
+      "claim": "The study included a whole-country population with long follow-up and robust diagnostic data, minimizing potential selection bias and misclassification.",
+      "claim_type": "EXPLICIT",
+      "source": "First, we included a whole-country population with long follow-up and robust diagnostic data, minimizing potential selection bias and misclassification (Frank, 2000), and allowing us to examine mortality risk following individual fracture sites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a strength of the study design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:43.809408Z"
+    },
+    {
+      "id": "5c8ba9d1-a5fa-42c0-b9ba-aa8cc6375f11",
+      "content_id": "d296ab4f-06b5-410c-a1d1-3ecb6953f97c",
+      "claim_id": "C88",
+      "claim": "The current study analyzed both fracture and covariates in a time-dependent manner, making it statistically rigorous in minimizing an immortal time bias.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, the current study analyzed both fracture and covariates, such as aging and the presence of comorbidities in a time-dependent manner, making it statistically rigorous in minimizing an immortal time bias and sufficiently accounting for confounding effects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a strength of the statistical approach.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:43.809408Z"
+    },
+    {
+      "id": "e6e278e5-0604-43ab-bfd8-f9328b5cd041",
+      "content_id": "d296ab4f-06b5-410c-a1d1-3ecb6953f97c",
+      "claim_id": "C89",
+      "claim": "The use of registry-based data is prone to variable data accuracy, the lack of specific clinical information, and non-medical factors.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the use of registry-based data, originally documented and coded for administrative or reimbursement purposes is prone to variable data accuracy, the lack of specific clinical information, and non-medical factors (Mazzali and Duca, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a limitation of registry-based studies cited from the literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:43.809408Z"
+    },
+    {
+      "id": "93f01b7e-da59-4cd0-a1fd-3b10c381d37b",
+      "content_id": "d296ab4f-06b5-410c-a1d1-3ecb6953f97c",
+      "claim_id": "C90",
+      "claim": "The Danish NHDR includes excellent, complete medical records and precise diagnoses for all individuals living in Denmark since 1995.",
+      "claim_type": "EXPLICIT",
+      "source": "Fortunately, all essential study variables (i.e. comorbidities, fracture, and death) were systematically obtained from the Danish NHDR that includes excellent, complete medical records and precise diagnoses for all individuals living in Denmark since 1995 (Andersen et al., 1999; Vestergaard and Mosekilde, 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a characterization of the data source supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:43.809408Z"
+    },
+    {
+      "id": "1c9b7203-6de4-4eb3-aea8-e5d89bb46cef",
+      "content_id": "d296ab4f-06b5-410c-a1d1-3ecb6953f97c",
+      "claim_id": "C91",
+      "claim": "The use of diagnosis-based comorbidities is possibly associated with lower sensitivity than the self-reported ones.",
+      "claim_type": "EXPLICIT",
+      "source": "The use of diagnosis-based comorbidities, though possibly associated with lower sensitivity than the self-reported ones (Lujic et al., 2017) is able to capture the severe health disorders that prompt the participants to seek for medical assistance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a limitation acknowledged with citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:43.809408Z"
+    },
+    {
+      "id": "9b4378e3-a67e-4cfa-aa73-226f25c6514e",
+      "content_id": "d296ab4f-06b5-410c-a1d1-3ecb6953f97c",
+      "claim_id": "C92",
+      "claim": "Diagnosis-based comorbidities are able to capture the severe health disorders that prompt the participants to seek for medical assistance.",
+      "claim_type": "EXPLICIT",
+      "source": "The use of diagnosis-based comorbidities, though possibly associated with lower sensitivity than the self-reported ones (Lujic et al., 2017) is able to capture the severe health disorders that prompt the participants to seek for medical assistance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a justification for the comorbidity measurement approach.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:43.809408Z"
+    },
+    {
+      "id": "4de8fb3f-cf6a-4ef4-a975-ea806e32ccab",
+      "content_id": "d296ab4f-06b5-410c-a1d1-3ecb6953f97c",
+      "claim_id": "C93",
+      "claim": "The analyses could not make adjustments for lifestyle factors and physical activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, the analyses could not make adjustments for lifestyle factors and physical activity, which are usually obtained in a cohort study.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a limitation of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:43.809408Z"
+    },
+    {
+      "id": "62a64182-d145-40b4-ac8d-803f6d660dbe",
+      "content_id": "d296ab4f-06b5-410c-a1d1-3ecb6953f97c",
+      "claim_id": "C94",
+      "claim": "Making further adjustments for lifestyle factors is unlikely to substantially modify the findings because they are closely related to aging and the presence of comorbidities which were already accounted for in the analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "As they are closely related to aging and the presence of comorbidities which were already accounted for in our analysis, making further adjustments for these lifestyle factors is unlikely to substantially modify the findings.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a justification for why the limitation may not be critical.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:43.809408Z"
+    },
+    {
+      "id": "36dbbbe3-0ddd-4321-96b8-e6aa3e92f579",
+      "content_id": "d296ab4f-06b5-410c-a1d1-3ecb6953f97c",
+      "claim_id": "C95",
+      "claim": "Mild, asymptomatic fractures or chronic diseases that did not require medical attention might not be registered in the Danish NHDR.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, mild, asymptomatic fractures or chronic diseases that did not require medical attention might not be registered in the Danish NHDR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a limitation of the data source.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:43.809408Z"
+    },
+    {
+      "id": "7f4f83c7-4e10-4bbc-98a7-8961495ef585",
+      "content_id": "d296ab4f-06b5-410c-a1d1-3ecb6953f97c",
+      "claim_id": "C96",
+      "claim": "It is unlikely that unregistered fractures and comorbidities would modify the findings significantly, as previous studies have indicated a high concordance between self-reported fractures and those registered in the NHDR.",
+      "claim_type": "EXPLICIT",
+      "source": "It is nevertheless unlikely that these unregistered fractures and comorbidities would modify the findings significantly, as previous studies have indicated a high concordance between self-reported fractures and those registered in the NHDR (Hundrup et al., 2004), and a high positive predictive value of the self-reported comorbidities (Lujic et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a justification for why the limitation may not be critical, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:43.809408Z"
+    },
+    {
+      "id": "e30cc2b6-aeb8-4150-81d9-cbc162fe7c29",
+      "content_id": "d296ab4f-06b5-410c-a1d1-3ecb6953f97c",
+      "claim_id": "C97",
+      "claim": "Previous studies have indicated a high positive predictive value of the self-reported comorbidities.",
+      "claim_type": "EXPLICIT",
+      "source": "It is nevertheless unlikely that these unregistered fractures and comorbidities would modify the findings significantly, as previous studies have indicated a high concordance between self-reported fractures and those registered in the NHDR (Hundrup et al., 2004), and a high positive predictive value of the self-reported comorbidities (Lujic et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from cited previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:43.809408Z"
+    },
+    {
+      "id": "10a4d6df-b861-486f-981a-a28f874ea352",
+      "content_id": "d296ab4f-06b5-410c-a1d1-3ecb6953f97c",
+      "claim_id": "C98",
+      "claim": "The analysis did not include the examination of the effect of bone metabolism-affecting medications on the assessment of skeletal health.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, our analysis did not include the examination of the effect of bone metabolism-affecting medications on the assessment of skeletal health.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a limitation of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:43.809408Z"
+    },
+    {
+      "id": "90708792-c563-4559-9ed0-cbb21a425a2c",
+      "content_id": "d296ab4f-06b5-410c-a1d1-3ecb6953f97c",
+      "claim_id": "C99",
+      "claim": "Bone metabolism-affecting medications were prescribed to only a few individuals aged 50 years or over in Denmark.",
+      "claim_type": "EXPLICIT",
+      "source": "However, these medications were prescribed to only a few individuals aged 50 years or over in Denmark (Vestergaard et al., 2005), even for those with a hip fracture (Roerholt et al., 2009), and there is no strong evidence from randomized controlled trials of their impact on post-fracture mortality (Cummings et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a justification for why the limitation may not be critical, supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:43.809408Z"
+    },
+    {
+      "id": "1d4de1a8-a5b1-4631-a983-fc1132e92ce0",
+      "content_id": "d296ab4f-06b5-410c-a1d1-3ecb6953f97c",
+      "claim_id": "C100",
+      "claim": "There is no strong evidence from randomized controlled trials of the impact of bone metabolism-affecting medications on post-fracture mortality.",
+      "claim_type": "EXPLICIT",
+      "source": "However, these medications were prescribed to only a few individuals aged 50 years or over in Denmark (Vestergaard et al., 2005), even for those with a hip fracture (Roerholt et al., 2009), and there is no strong evidence from randomized controlled trials of their impact on post-fracture mortality (Cummings et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a characterization of the evidence base supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:43.809408Z"
+    },
+    {
+      "id": "8925bb32-c9d8-43f2-99ea-ea5a96fe69b9",
+      "content_id": "d296ab4f-06b5-410c-a1d1-3ecb6953f97c",
+      "claim_id": "C101",
+      "claim": "Skeletal age combines the risk that an individual will sustain a fracture and the risk of mortality once a fracture has occurred.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike existing metrics (e.g. relative risk, probability of fracture), skeletal age combines the risk that an individual will sustain a fracture and the risk of mortality once a fracture has occurred, making the doctor-patient communication more intuitive and possibly more effective.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a key feature of the skeletal age metric.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:43.809408Z"
+    },
+    {
+      "id": "b445dd77-1cd3-4f0d-ab7b-ce10e8a2feab",
+      "content_id": "d296ab4f-06b5-410c-a1d1-3ecb6953f97c",
+      "claim_id": "C102",
+      "claim": "Skeletal age is expected to improve risk communication and ultimately improve treatment uptake among patients who are indicated for treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Given the evidence of the successful implication of similar effective age metrics, skeletal age is expected to improve risk communication and ultimately improve treatment uptake among patients who are indicated for treatment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis about the potential impact of skeletal age.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:43.809408Z"
+    },
+    {
+      "id": "d392fa3f-88d9-4ec8-8d31-731ff6d8a4a2",
+      "content_id": "d296ab4f-06b5-410c-a1d1-3ecb6953f97c",
+      "claim_id": "C103",
+      "claim": "A randomized controlled trial aiming to compare the use of skeletal age and the current metrics in fracture risk communication is warranted.",
+      "claim_type": "EXPLICIT",
+      "source": "A randomized controlled trial aiming to compare the use of skeletal age and the current metrics in fracture risk communication is warranted.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation for future research.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:43.809408Z"
+    },
+    {
+      "id": "897186a6-1e4c-416b-af16-b5830a3771c3",
+      "content_id": "d296ab4f-06b5-410c-a1d1-3ecb6953f97c",
+      "claim_id": "C104",
+      "claim": "The study population consisted of 793,815 men and 873,524 women aged 63.9 (SD 10.3) and 65.5 (11.3) years old as of January 1, 2001, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "The present analysis was based on data from 793,815 men and 873,524 women aged 63.9 (standard deviation [SD] 10.3) and 65.5 (11.3) years old as of January 1, 2001, respectively (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the baseline characteristics of the study population shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:43.809408Z"
+    },
+    {
+      "id": "97df33ea-6359-4da5-8c2e-2837592b8ba0",
+      "content_id": "d296ab4f-06b5-410c-a1d1-3ecb6953f97c",
+      "claim_id": "C105",
+      "claim": "Figure 1 shows the study design and participant flow.",
+      "claim_type": "IMPLICIT",
+      "source": "Figure 1.",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "Figure 1 is referenced in the context of describing the study population and exclusions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:43.809408Z"
+    },
+    {
+      "id": "a98b9380-576d-48d3-89a4-52d24497782f",
+      "content_id": "d296ab4f-06b5-410c-a1d1-3ecb6953f97c",
+      "claim_id": "C106",
+      "claim": "Figure 2 illustrates the time-dependent analysis approach for individuals with and without fracture.",
+      "claim_type": "IMPLICIT",
+      "source": "Figure 2.",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "Figure 2 is referenced in the context of explaining the time-dependent Cox regression methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:43.809408Z"
+    },
+    {
+      "id": "e07f118f-c7f3-42b6-9f50-c9faec725b79",
+      "content_id": "d296ab4f-06b5-410c-a1d1-3ecb6953f97c",
+      "claim_id": "C107",
+      "claim": "Figure 3 shows the hazard ratios for mortality risk by fracture site, stratified by gender.",
+      "claim_type": "IMPLICIT",
+      "source": "Figure 3.",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "Figure 3 is referenced when discussing the association between specific fracture sites and mortality.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:43.809408Z"
+    },
+    {
+      "id": "431e64b9-21bf-4e38-8362-c11b15457276",
+      "content_id": "d296ab4f-06b5-410c-a1d1-3ecb6953f97c",
+      "claim_id": "C108",
+      "claim": "Figure 4 shows the relationship between chronological age and skeletal age for different fracture sites.",
+      "claim_type": "IMPLICIT",
+      "source": "Figure 4.",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "Figure 4 is referenced when presenting skeletal age estimates.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:33:43.809408Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "2fe81845-2728-4181-bbc5-648ae77d1584",
+      "content_id": "d296ab4f-06b5-410c-a1d1-3ecb6953f97c",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The study analyzed 1,667,339 Danish adults aged 50+ from a national registry, excluding those with prior fractures, and followed them for incident fractures (2001-2014) and mortality (through 2016). All fractures were radiologically confirmed, with specific exclusion criteria applied.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C24-C30, C104-C105 collectively describe the study population, inclusion/exclusion criteria, and data sources. The methodology is clearly documented with appropriate exclusions to avoid bias (C25), radiological confirmation of fractures (C28), and adequate follow-up periods (C30). Figure 1 provides visual confirmation of the study flow.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:33:43.809408Z"
+    },
+    {
+      "id": "f1ee6a39-bc71-43be-bf6c-2c7d7f2c80a2",
+      "content_id": "d296ab4f-06b5-410c-a1d1-3ecb6953f97c",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "During 14 years of follow-up, 95,372 men and 212,498 women sustained fractures, with incidence rates of 10.9 and 23.2 per 1000 person-years respectively. Individuals with fractures were older and had more comorbidities than those without fractures.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C42 present descriptive epidemiological findings with specific incidence rates, confidence intervals, and demographic comparisons. The data are internally consistent and presented with appropriate statistical measures. Table 1 provides detailed comorbidity comparisons supporting C41-C42.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:33:43.809408Z"
+    },
+    {
+      "id": "6fb0d026-8200-4e6a-ae1f-6003f977d3de",
+      "content_id": "d296ab4f-06b5-410c-a1d1-3ecb6953f97c",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "During median 6.5 years follow-up, 272,524 men and 277,194 women died. Unadjusted mortality rates were substantially higher in individuals with fractures (6.54/100 person-years in men, 5.42 in women) compared to those without fractures (2.56 and 2.24 respectively), with hip, pelvis, and vertebral fractures showing the highest mortality.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C46 present unadjusted mortality data with confidence intervals and site-specific analyses. The findings are internally consistent and supported by Table 2 and Figure 3 (C107). However, these are unadjusted estimates that require further analysis to account for confounding.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:33:43.809408Z"
+    },
+    {
+      "id": "33965d02-8267-4780-82b7-7432aafcbe45",
+      "content_id": "d296ab4f-06b5-410c-a1d1-3ecb6953f97c",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The study employed time-dependent Cox proportional hazards regression to quantify fracture-mortality associations, adjusting for age and comorbidities in a time-dependent manner to minimize immortal time bias.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C34, C88, C106 describe the statistical methodology with appropriate citation (Suissa 2008) for the time-dependent approach. The time-dependent analysis is a strength that addresses a common bias in observational studies. Figure 2 illustrates the analytical approach, supporting the methodological claims.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:33:43.809408Z"
+    },
+    {
+      "id": "a42b783f-ea08-4b6c-9196-090e94076125",
+      "content_id": "d296ab4f-06b5-410c-a1d1-3ecb6953f97c",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "After adjusting for age and comorbidities, any fragility fracture was associated with 30-45% increased mortality hazard (HR=1.46 in men, 1.28 in women). Hip/femur fractures showed nearly twofold increased risk, proximal fractures showed elevated risk, but distal fractures (forearm, knee, ankle, hand, foot) showed no significant mortality increase.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C50 present adjusted hazard ratios with confidence intervals from multivariable Cox regression. The findings are consistent with prior literature (C1, C11, C12) and show a clear gradient by fracture site. Figure 3 (C107) provides visual confirmation. The statistical approach appropriately controls for confounding, though residual confounding remains possible.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:33:43.809408Z"
+    },
+    {
+      "id": "db0c8da5-af2e-4bed-bce3-ef2eec894e57",
+      "content_id": "d296ab4f-06b5-410c-a1d1-3ecb6953f97c",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Skeletal Age is operationally defined as chronological age plus years of life lost from fracture, calculated using Cox regression estimates transformed via the Gompertz law of mortality, which shows consistent annual mortality risk increases across ages 50-95.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C31, C36 define the Skeletal Age metric and its mathematical foundation. The Gompertz law application is appropriately cited (Brenner 1993, Vaupel 2010). The operational definition is clear and mathematically sound, though the transformation from hazard ratios to years of life lost involves assumptions about baseline mortality that may not hold perfectly.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:33:43.809408Z"
+    },
+    {
+      "id": "30130db4-12dc-4adb-8b1d-3469144df65b",
+      "content_id": "d296ab4f-06b5-410c-a1d1-3ecb6953f97c",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Fractures were associated with 1-7 years of life lost, with greater loss in men than women and in younger versus older age groups. Hip fractures showed the greatest loss (e.g., 60-year-old with hip fracture has skeletal age of 66 for men, 65 for women). Other proximal fractures showed ~5 years loss, while distal fractures showed smaller losses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C9, C51-C60 present the main Skeletal Age findings with specific examples. The results are internally consistent and follow logically from the hazard ratios and Gompertz transformation. Figure 4 (C108) provides comprehensive visualization. The age and sex gradients are biologically plausible, though the precision of specific estimates depends on the validity of the Gompertz assumptions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:33:43.809408Z"
+    },
+    {
+      "id": "ca5bb4ea-43a1-468f-8239-0c27d98ce505",
+      "content_id": "d296ab4f-06b5-410c-a1d1-3ecb6953f97c",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The observed fracture-mortality associations were slightly lower than previous cohort studies (which reported 1.7-6-fold increases for hip fractures), likely because this registry-based study included sicker individuals in the control group compared to typical cohort studies that recruit healthy participants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C65 compare findings to prior literature and provide a reasonable explanation for differences. The explanation that registry-based controls include sicker individuals is plausible and well-reasoned (C64-C65). However, this remains speculative (C63) as the authors did not directly compare their control group characteristics to those in cohort studies.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:33:43.809408Z"
+    },
+    {
+      "id": "094d73d7-f43c-4d80-96ee-74ea7a0ff280",
+      "content_id": "d296ab4f-06b5-410c-a1d1-3ecb6953f97c",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "While causality of the fracture-mortality association remains contentious, the association persisted after adjusting for comorbidities in this study, and prior research suggests comorbidities contribute little to excess mortality in fracture patients, suggesting the association is unlikely due to comorbidities alone.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C66-C70 address causality and confounding. While C69 correctly states the association remained after adjustment, the inference that it is \"unlikely due to comorbidities\" (C70) is overstated. Residual confounding, unmeasured confounders, and confounding by indication remain possible. The authors appropriately acknowledge uncertainty (C66) but then make a stronger causal inference than the observational data support.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:33:43.809408Z"
+    },
+    {
+      "id": "d97e4f3c-b62b-496d-833d-fa6f33a86635",
+      "content_id": "d296ab4f-06b5-410c-a1d1-3ecb6953f97c",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Mortality is not part of current doctor-patient communication about fractures. Existing risk tools (FRAX, Garvan) provide probability-based metrics that are difficult to understand, with relative risk giving exaggerated impressions and absolute risk being poorly comprehended. Natural frequency metrics are easier to understand than probability-based metrics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C17-C20, C71-C75 characterize current risk communication challenges with appropriate citations. The evidence from cited studies (Gigerenzer 2007, Lipkus 2001, Akl 2011, etc.) supports the claims about comprehension difficulties. However, C74 (that poor communication contributed to undertreatment) is speculative and not directly tested.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:33:43.809408Z"
+    },
+    {
+      "id": "c544de47-0a29-4053-b15f-43f8cc7cebd8",
+      "content_id": "d296ab4f-06b5-410c-a1d1-3ecb6953f97c",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Effective age metrics (like Heart Age and Lung Age) have been demonstrated superior to conventional risk metrics, leading to improved behavioral changes including smoking cessation, weight loss, and treatment adherence. Skeletal Age combines fracture risk and post-fracture mortality risk into an intuitive metric.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C23, C78-C85 cite substantial evidence that effective age metrics improve outcomes in cardiovascular and respiratory contexts. The citations appear appropriate and the evidence is consistent. However, this evidence is from other domains; whether Skeletal Age will have similar effects in osteoporosis is untested (C101 correctly characterizes this as a feature, not proven benefit).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:33:43.809408Z"
+    },
+    {
+      "id": "ece469df-bdc3-432c-880a-7817fab49db0",
+      "content_id": "d296ab4f-06b5-410c-a1d1-3ecb6953f97c",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Skeletal Age can potentially be used to convey treatment benefits (e.g., 'gain 3 years of life' vs '28% risk reduction'). A web calculator (BONEcheck.org) was developed, and the metric is expected to improve risk communication and treatment uptake, though a randomized controlled trial is warranted to test this.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C76, C102 are speculative about future benefits (appropriately marked as such). C86 describes a tool that was developed. C103 correctly identifies need for validation. However, C77's example of treatment benefit calculation lacks methodological detail\u2014it's unclear how the '3 years' was derived from the 28% risk reduction. The potential benefits are plausible but unproven.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:33:43.809408Z"
+    },
+    {
+      "id": "6fde7ec4-05e6-46cc-8287-652ce17a7174",
+      "content_id": "d296ab4f-06b5-410c-a1d1-3ecb6953f97c",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Treatment reduces fracture risk in RCTs, but whether this translates to reduced mortality remains contentious. Treatment uptake is low (40% of US hip fracture patients in 2002, halved by 2011), representing a global crisis in osteoporosis management.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C16 accurately characterize the treatment evidence and uptake problem with appropriate citations. The characterization of debate about mortality benefits (C14) is accurate. The treatment uptake statistics (C15) are specific and cited. The characterization as a 'crisis' (C16) is a value judgment but reflects consensus in the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:33:43.809408Z"
+    },
+    {
+      "id": "5ee26bd9-1fd4-46a1-9a76-c6c4b50123a0",
+      "content_id": "d296ab4f-06b5-410c-a1d1-3ecb6953f97c",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Study strengths include whole-country population with long follow-up minimizing selection bias, and time-dependent analysis of fracture and covariates minimizing immortal time bias and accounting for confounding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C87-C88 accurately identify genuine methodological strengths. The population-based design does minimize selection bias, and the time-dependent approach is appropriate for the research question. These are legitimate strengths that enhance confidence in the findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:33:43.809408Z"
+    },
+    {
+      "id": "8d9d09b2-cd35-4d41-90fe-45ac29f667de",
+      "content_id": "d296ab4f-06b5-410c-a1d1-3ecb6953f97c",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "While registry data can have accuracy issues, the Danish NHDR has excellent, complete records since 1995. Diagnosis-based comorbidities may have lower sensitivity than self-report but capture severe disorders requiring medical attention.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C89-C92 acknowledge limitations while providing context. The characterization of Danish registry quality (C90) is supported by citations. The trade-off between sensitivity and specificity for diagnosis-based comorbidities (C91-C92) is reasonable, though the authors may understate the limitation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:33:43.809408Z"
+    },
+    {
+      "id": "4bb14e3f-2888-4ebf-b505-b0829e72b37f",
+      "content_id": "d296ab4f-06b5-410c-a1d1-3ecb6953f97c",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The study could not adjust for lifestyle factors and physical activity, but these are closely related to age and comorbidities already adjusted for, so further adjustment is unlikely to substantially modify findings.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C93 correctly identifies a limitation. However, C94's assertion that lifestyle adjustment would not modify findings is speculative. Lifestyle factors may have independent effects beyond their correlation with age/comorbidities. This limitation could be more significant than acknowledged, particularly for fractures with lifestyle-related causes.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:33:43.809408Z"
+    },
+    {
+      "id": "ac1d832c-90bf-4d06-bbcf-65fb424279ae",
+      "content_id": "d296ab4f-06b5-410c-a1d1-3ecb6953f97c",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Mild, asymptomatic fractures or diseases not requiring medical attention might not be registered, but this is unlikely to significantly modify findings given high concordance between self-reported and registered fractures and high positive predictive value of registered comorbidities.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C95-C97 acknowledge a limitation and provide evidence it may not be critical. The citations to validation studies (Hundrup 2004, Lujic 2017) support the assertion. However, the impact on skeletal age estimates for less severe fractures could still be meaningful even if the overall association is robust.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:33:43.809408Z"
+    },
+    {
+      "id": "9cc62de3-6a64-4b42-a69d-60ba9c010dfa",
+      "content_id": "d296ab4f-06b5-410c-a1d1-3ecb6953f97c",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The study did not examine effects of bone metabolism medications, but these were prescribed to few individuals in Denmark, and there is no strong RCT evidence of their impact on post-fracture mortality.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C98-C100 acknowledge a limitation and provide context for why it may not be critical. The low prescription rates (C99) and lack of mortality evidence (C100) are appropriately cited. However, this limitation means the skeletal age estimates represent untreated natural history, which may differ from treated patients.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:33:43.809408Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "0afe6555-4e05-4de9-bc0e-b51734258ba8",
+      "result_id": "2fe81845-2728-4181-bbc5-648ae77d1584"
+    },
+    {
+      "claim_id": "023613a8-0b9f-45fd-8695-15b8be1e57ce",
+      "result_id": "2fe81845-2728-4181-bbc5-648ae77d1584"
+    },
+    {
+      "claim_id": "cf246a76-29c5-48c3-9c8e-eab43976c4a2",
+      "result_id": "2fe81845-2728-4181-bbc5-648ae77d1584"
+    },
+    {
+      "claim_id": "cf01c44c-5ce0-41a8-a25c-974eaaf42a14",
+      "result_id": "2fe81845-2728-4181-bbc5-648ae77d1584"
+    },
+    {
+      "claim_id": "cac3e5de-abf9-48a7-90bc-e38ada0aaf0d",
+      "result_id": "2fe81845-2728-4181-bbc5-648ae77d1584"
+    },
+    {
+      "claim_id": "ca4042ea-1c06-4e46-bb5f-8da4eeffdc88",
+      "result_id": "2fe81845-2728-4181-bbc5-648ae77d1584"
+    },
+    {
+      "claim_id": "d2f4df98-31b1-478b-a483-5e56e46756ae",
+      "result_id": "2fe81845-2728-4181-bbc5-648ae77d1584"
+    },
+    {
+      "claim_id": "ed2f8e57-a849-47dd-8b73-1e8bd2c61d4a",
+      "result_id": "2fe81845-2728-4181-bbc5-648ae77d1584"
+    },
+    {
+      "claim_id": "897186a6-1e4c-416b-af16-b5830a3771c3",
+      "result_id": "2fe81845-2728-4181-bbc5-648ae77d1584"
+    },
+    {
+      "claim_id": "97df33ea-6359-4da5-8c2e-2837592b8ba0",
+      "result_id": "2fe81845-2728-4181-bbc5-648ae77d1584"
+    },
+    {
+      "claim_id": "67359324-cc01-446f-8593-7f930f636a8e",
+      "result_id": "f1ee6a39-bc71-43be-bf6c-2c7d7f2c80a2"
+    },
+    {
+      "claim_id": "4ce7958c-b22d-4a59-97e9-98ea632905f7",
+      "result_id": "f1ee6a39-bc71-43be-bf6c-2c7d7f2c80a2"
+    },
+    {
+      "claim_id": "00445ae0-2246-4df0-be89-9e8fcffdea32",
+      "result_id": "f1ee6a39-bc71-43be-bf6c-2c7d7f2c80a2"
+    },
+    {
+      "claim_id": "655797c5-6cfd-4069-9851-02ceedcba051",
+      "result_id": "f1ee6a39-bc71-43be-bf6c-2c7d7f2c80a2"
+    },
+    {
+      "claim_id": "c4926105-fdfc-4ae1-b3d5-42e08acfb258",
+      "result_id": "f1ee6a39-bc71-43be-bf6c-2c7d7f2c80a2"
+    },
+    {
+      "claim_id": "7fbeed71-0f8c-482e-894a-05b0508cd00b",
+      "result_id": "f1ee6a39-bc71-43be-bf6c-2c7d7f2c80a2"
+    },
+    {
+      "claim_id": "5dcb2206-9f1a-494b-b31c-baadfc1cc86d",
+      "result_id": "6fb0d026-8200-4e6a-ae1f-6003f977d3de"
+    },
+    {
+      "claim_id": "9467b50d-dd66-45ea-a703-8d9669d47d34",
+      "result_id": "6fb0d026-8200-4e6a-ae1f-6003f977d3de"
+    },
+    {
+      "claim_id": "14396017-debd-458f-af21-1b4d9bc56538",
+      "result_id": "6fb0d026-8200-4e6a-ae1f-6003f977d3de"
+    },
+    {
+      "claim_id": "6bbb4b33-8a5d-45f7-96f5-0e92bc429abf",
+      "result_id": "6fb0d026-8200-4e6a-ae1f-6003f977d3de"
+    },
+    {
+      "claim_id": "e07f118f-c7f3-42b6-9f50-c9faec725b79",
+      "result_id": "6fb0d026-8200-4e6a-ae1f-6003f977d3de"
+    },
+    {
+      "claim_id": "2b97e992-d5a9-4951-a21a-3b2d2cad50b9",
+      "result_id": "33965d02-8267-4780-82b7-7432aafcbe45"
+    },
+    {
+      "claim_id": "04d17e95-dae1-45c9-8827-0505baaffc2a",
+      "result_id": "33965d02-8267-4780-82b7-7432aafcbe45"
+    },
+    {
+      "claim_id": "12998d67-08e3-47d8-bb4d-a6584095dafd",
+      "result_id": "33965d02-8267-4780-82b7-7432aafcbe45"
+    },
+    {
+      "claim_id": "5c8ba9d1-a5fa-42c0-b9ba-aa8cc6375f11",
+      "result_id": "33965d02-8267-4780-82b7-7432aafcbe45"
+    },
+    {
+      "claim_id": "a98b9380-576d-48d3-89a4-52d24497782f",
+      "result_id": "33965d02-8267-4780-82b7-7432aafcbe45"
+    },
+    {
+      "claim_id": "f8b35990-a747-4348-ae66-23ec6062a09f",
+      "result_id": "a42b783f-ea08-4b6c-9196-090e94076125"
+    },
+    {
+      "claim_id": "5ad98d00-c4f1-4965-8465-3cbad623cb67",
+      "result_id": "a42b783f-ea08-4b6c-9196-090e94076125"
+    },
+    {
+      "claim_id": "638bc70c-68fd-49b0-8363-441f5c9128b5",
+      "result_id": "a42b783f-ea08-4b6c-9196-090e94076125"
+    },
+    {
+      "claim_id": "d26f4a19-5995-480f-9d98-ec5259e41cf7",
+      "result_id": "a42b783f-ea08-4b6c-9196-090e94076125"
+    },
+    {
+      "claim_id": "954dd6cd-027b-4041-a48a-d84592227c2b",
+      "result_id": "a42b783f-ea08-4b6c-9196-090e94076125"
+    },
+    {
+      "claim_id": "621a0f5f-a610-4284-85b4-416f4d809dfa",
+      "result_id": "a42b783f-ea08-4b6c-9196-090e94076125"
+    },
+    {
+      "claim_id": "54f1fdc1-6dde-4b74-ba08-2b7ab2b42d99",
+      "result_id": "a42b783f-ea08-4b6c-9196-090e94076125"
+    },
+    {
+      "claim_id": "e07f118f-c7f3-42b6-9f50-c9faec725b79",
+      "result_id": "a42b783f-ea08-4b6c-9196-090e94076125"
+    },
+    {
+      "claim_id": "a6394ed4-0e33-488c-a7f3-2a804b04275d",
+      "result_id": "db0c8da5-af2e-4bed-bce3-ef2eec894e57"
+    },
+    {
+      "claim_id": "6e9546ca-73aa-473a-8990-8d6db5b07a9b",
+      "result_id": "db0c8da5-af2e-4bed-bce3-ef2eec894e57"
+    },
+    {
+      "claim_id": "2815b1f5-96cd-497b-833f-c1dce2c3ff2e",
+      "result_id": "db0c8da5-af2e-4bed-bce3-ef2eec894e57"
+    },
+    {
+      "claim_id": "f7292cdc-24e5-4467-807d-eed568a96e68",
+      "result_id": "30130db4-12dc-4adb-8b1d-3469144df65b"
+    },
+    {
+      "claim_id": "650ab30f-625f-4dcd-bb6f-082bee8382b0",
+      "result_id": "30130db4-12dc-4adb-8b1d-3469144df65b"
+    },
+    {
+      "claim_id": "b1f70fb1-c231-4323-986f-45c47aaf4831",
+      "result_id": "30130db4-12dc-4adb-8b1d-3469144df65b"
+    },
+    {
+      "claim_id": "edc7e040-32d9-44d8-a3b3-15e217def4df",
+      "result_id": "30130db4-12dc-4adb-8b1d-3469144df65b"
+    },
+    {
+      "claim_id": "fa6f686f-4339-4d35-b359-ac528a795cf3",
+      "result_id": "30130db4-12dc-4adb-8b1d-3469144df65b"
+    },
+    {
+      "claim_id": "ef0bdf2e-88cb-4a44-8976-dd60ccc281bb",
+      "result_id": "30130db4-12dc-4adb-8b1d-3469144df65b"
+    },
+    {
+      "claim_id": "4963860a-6bf4-4e73-8904-c441df4ba359",
+      "result_id": "30130db4-12dc-4adb-8b1d-3469144df65b"
+    },
+    {
+      "claim_id": "5fe00b5e-a801-4398-b870-1fd85a80c7a8",
+      "result_id": "30130db4-12dc-4adb-8b1d-3469144df65b"
+    },
+    {
+      "claim_id": "1a76ba03-5a2c-450b-a82a-15a1a8d4a461",
+      "result_id": "30130db4-12dc-4adb-8b1d-3469144df65b"
+    },
+    {
+      "claim_id": "26c12791-ab40-4dde-b8c2-ef5aafe1efb5",
+      "result_id": "30130db4-12dc-4adb-8b1d-3469144df65b"
+    },
+    {
+      "claim_id": "593e54fb-4de8-40d2-a2c6-19f4592fa156",
+      "result_id": "30130db4-12dc-4adb-8b1d-3469144df65b"
+    },
+    {
+      "claim_id": "6ac9f2a6-ab74-495d-8162-191f551092a1",
+      "result_id": "30130db4-12dc-4adb-8b1d-3469144df65b"
+    },
+    {
+      "claim_id": "8aa57f42-c646-4e86-82f1-4305419170d3",
+      "result_id": "30130db4-12dc-4adb-8b1d-3469144df65b"
+    },
+    {
+      "claim_id": "1f644890-36da-4f44-816b-6a577c4a88f0",
+      "result_id": "30130db4-12dc-4adb-8b1d-3469144df65b"
+    },
+    {
+      "claim_id": "431e64b9-21bf-4e38-8362-c11b15457276",
+      "result_id": "30130db4-12dc-4adb-8b1d-3469144df65b"
+    },
+    {
+      "claim_id": "4abe3c5a-b75b-4c87-8f9d-84e1ba6edb29",
+      "result_id": "ca5bb4ea-43a1-468f-8239-0c27d98ce505"
+    },
+    {
+      "claim_id": "26d12a6f-54f0-4866-9c8a-0d304179f27c",
+      "result_id": "ca5bb4ea-43a1-468f-8239-0c27d98ce505"
+    },
+    {
+      "claim_id": "7342db08-9974-4964-a1a2-66941fe361aa",
+      "result_id": "ca5bb4ea-43a1-468f-8239-0c27d98ce505"
+    },
+    {
+      "claim_id": "8c191040-2600-4e66-97f3-603aad4a8c44",
+      "result_id": "ca5bb4ea-43a1-468f-8239-0c27d98ce505"
+    },
+    {
+      "claim_id": "743562e3-b30f-4275-ae77-11c670b6dc0e",
+      "result_id": "ca5bb4ea-43a1-468f-8239-0c27d98ce505"
+    },
+    {
+      "claim_id": "412593c7-4741-4627-bb5c-5cfa174b7d5c",
+      "result_id": "094d73d7-f43c-4d80-96ee-74ea7a0ff280"
+    },
+    {
+      "claim_id": "5d852440-18c1-4e4c-bf0d-46b07923b744",
+      "result_id": "094d73d7-f43c-4d80-96ee-74ea7a0ff280"
+    },
+    {
+      "claim_id": "5ebbd189-bca4-4cca-b85d-5e636298c912",
+      "result_id": "094d73d7-f43c-4d80-96ee-74ea7a0ff280"
+    },
+    {
+      "claim_id": "81370bf1-a9a9-454d-beb5-9e1043dc5662",
+      "result_id": "094d73d7-f43c-4d80-96ee-74ea7a0ff280"
+    },
+    {
+      "claim_id": "d407ce22-03d4-4c64-9b13-fe89d0b2eb3d",
+      "result_id": "094d73d7-f43c-4d80-96ee-74ea7a0ff280"
+    },
+    {
+      "claim_id": "1127f3b6-3ac3-44c2-a61e-d7c01a0cd737",
+      "result_id": "d97e4f3c-b62b-496d-833d-fa6f33a86635"
+    },
+    {
+      "claim_id": "f1bbe4fc-3a24-437b-bb86-53ca7be1a3f2",
+      "result_id": "d97e4f3c-b62b-496d-833d-fa6f33a86635"
+    },
+    {
+      "claim_id": "3d2ff86d-4a19-4d3f-b7ac-a9b5648b45d6",
+      "result_id": "d97e4f3c-b62b-496d-833d-fa6f33a86635"
+    },
+    {
+      "claim_id": "511cad9e-a8c8-448d-af12-7bcacf78f12c",
+      "result_id": "d97e4f3c-b62b-496d-833d-fa6f33a86635"
+    },
+    {
+      "claim_id": "f3004c7d-3ae8-40ed-a90e-e287bebb7aff",
+      "result_id": "d97e4f3c-b62b-496d-833d-fa6f33a86635"
+    },
+    {
+      "claim_id": "8fd617b5-a7e1-42f8-b5c0-de2e317a263c",
+      "result_id": "d97e4f3c-b62b-496d-833d-fa6f33a86635"
+    },
+    {
+      "claim_id": "7a0c89f4-ebc4-405c-9160-cd3a0e020d22",
+      "result_id": "d97e4f3c-b62b-496d-833d-fa6f33a86635"
+    },
+    {
+      "claim_id": "c584c3b2-aa98-42a1-9f2f-8a234de6d0ef",
+      "result_id": "d97e4f3c-b62b-496d-833d-fa6f33a86635"
+    },
+    {
+      "claim_id": "eb752ea9-8ed2-4170-b6d2-3b673c6e6e1b",
+      "result_id": "d97e4f3c-b62b-496d-833d-fa6f33a86635"
+    },
+    {
+      "claim_id": "7eac8cf0-a89a-4aaf-b203-2e7542c2c1dc",
+      "result_id": "d97e4f3c-b62b-496d-833d-fa6f33a86635"
+    },
+    {
+      "claim_id": "4b1b3e29-531b-4cd6-a1d3-010dad624f06",
+      "result_id": "c544de47-0a29-4053-b15f-43f8cc7cebd8"
+    },
+    {
+      "claim_id": "e6e51ef1-fccc-4bdb-a3dd-adc03189d5e5",
+      "result_id": "c544de47-0a29-4053-b15f-43f8cc7cebd8"
+    },
+    {
+      "claim_id": "8e774fe4-54a5-440c-a075-c952802fbd2e",
+      "result_id": "c544de47-0a29-4053-b15f-43f8cc7cebd8"
+    },
+    {
+      "claim_id": "86fba355-2b33-4c52-9232-7bf9f34bb439",
+      "result_id": "c544de47-0a29-4053-b15f-43f8cc7cebd8"
+    },
+    {
+      "claim_id": "6f4b9ebc-e98e-4502-96a5-2001265b77c4",
+      "result_id": "c544de47-0a29-4053-b15f-43f8cc7cebd8"
+    },
+    {
+      "claim_id": "6ede2dbb-ff33-40f7-9d35-29e5f8b0c824",
+      "result_id": "c544de47-0a29-4053-b15f-43f8cc7cebd8"
+    },
+    {
+      "claim_id": "e36eaaf6-2019-47b2-8d8d-3ab6cc915493",
+      "result_id": "c544de47-0a29-4053-b15f-43f8cc7cebd8"
+    },
+    {
+      "claim_id": "5d3d42d5-260b-4f34-af1f-53485a7a09bd",
+      "result_id": "c544de47-0a29-4053-b15f-43f8cc7cebd8"
+    },
+    {
+      "claim_id": "7113cac3-44d5-4c67-88cd-3443628d2f68",
+      "result_id": "c544de47-0a29-4053-b15f-43f8cc7cebd8"
+    },
+    {
+      "claim_id": "0b3e299c-c31c-42f6-9235-6e8a3d96de94",
+      "result_id": "c544de47-0a29-4053-b15f-43f8cc7cebd8"
+    },
+    {
+      "claim_id": "5f18eee1-da35-431f-bba2-3a836f3d44e5",
+      "result_id": "c544de47-0a29-4053-b15f-43f8cc7cebd8"
+    },
+    {
+      "claim_id": "4d60a1c9-56c1-4fc2-b383-87241a503a3c",
+      "result_id": "c544de47-0a29-4053-b15f-43f8cc7cebd8"
+    },
+    {
+      "claim_id": "8925bb32-c9d8-43f2-99ea-ea5a96fe69b9",
+      "result_id": "c544de47-0a29-4053-b15f-43f8cc7cebd8"
+    },
+    {
+      "claim_id": "4440ff41-341a-4b32-923c-307b76a67412",
+      "result_id": "ece469df-bdc3-432c-880a-7817fab49db0"
+    },
+    {
+      "claim_id": "3af94037-f124-45a3-aee4-2ad662ee7d2d",
+      "result_id": "ece469df-bdc3-432c-880a-7817fab49db0"
+    },
+    {
+      "claim_id": "ce01c79b-5545-468f-99d6-f1062b09a574",
+      "result_id": "ece469df-bdc3-432c-880a-7817fab49db0"
+    },
+    {
+      "claim_id": "b445dd77-1cd3-4f0d-ab7b-ce10e8a2feab",
+      "result_id": "ece469df-bdc3-432c-880a-7817fab49db0"
+    },
+    {
+      "claim_id": "d392fa3f-88d9-4ec8-8d31-731ff6d8a4a2",
+      "result_id": "ece469df-bdc3-432c-880a-7817fab49db0"
+    },
+    {
+      "claim_id": "0185c355-a386-4683-b40f-1f2c616cc22b",
+      "result_id": "6fde7ec4-05e6-46cc-8287-652ce17a7174"
+    },
+    {
+      "claim_id": "747b3e1b-b1b3-430b-8169-bff9e66b32d5",
+      "result_id": "6fde7ec4-05e6-46cc-8287-652ce17a7174"
+    },
+    {
+      "claim_id": "8199d629-6e80-4dbc-9df4-1ff577b322e9",
+      "result_id": "6fde7ec4-05e6-46cc-8287-652ce17a7174"
+    },
+    {
+      "claim_id": "0dafe25b-ca24-41a5-8627-b0460a84ebdb",
+      "result_id": "6fde7ec4-05e6-46cc-8287-652ce17a7174"
+    },
+    {
+      "claim_id": "bcb7a91e-df07-4f75-96be-22d4f286aee3",
+      "result_id": "5ee26bd9-1fd4-46a1-9a76-c6c4b50123a0"
+    },
+    {
+      "claim_id": "5c8ba9d1-a5fa-42c0-b9ba-aa8cc6375f11",
+      "result_id": "5ee26bd9-1fd4-46a1-9a76-c6c4b50123a0"
+    },
+    {
+      "claim_id": "e6e278e5-0604-43ab-bfd8-f9328b5cd041",
+      "result_id": "8d9d09b2-cd35-4d41-90fe-45ac29f667de"
+    },
+    {
+      "claim_id": "93f01b7e-da59-4cd0-a1fd-3b10c381d37b",
+      "result_id": "8d9d09b2-cd35-4d41-90fe-45ac29f667de"
+    },
+    {
+      "claim_id": "1c9b7203-6de4-4eb3-aea8-e5d89bb46cef",
+      "result_id": "8d9d09b2-cd35-4d41-90fe-45ac29f667de"
+    },
+    {
+      "claim_id": "9b4378e3-a67e-4cfa-aa73-226f25c6514e",
+      "result_id": "8d9d09b2-cd35-4d41-90fe-45ac29f667de"
+    },
+    {
+      "claim_id": "4de8fb3f-cf6a-4ef4-a975-ea806e32ccab",
+      "result_id": "4bb14e3f-2888-4ebf-b505-b0829e72b37f"
+    },
+    {
+      "claim_id": "62a64182-d145-40b4-ac8d-803f6d660dbe",
+      "result_id": "4bb14e3f-2888-4ebf-b505-b0829e72b37f"
+    },
+    {
+      "claim_id": "36dbbbe3-0ddd-4321-96b8-e6aa3e92f579",
+      "result_id": "ac1d832c-90bf-4d06-bbcf-65fb424279ae"
+    },
+    {
+      "claim_id": "7f4f83c7-4e10-4bbc-98a7-8961495ef585",
+      "result_id": "ac1d832c-90bf-4d06-bbcf-65fb424279ae"
+    },
+    {
+      "claim_id": "e30cc2b6-aeb8-4150-81d9-cbc162fe7c29",
+      "result_id": "ac1d832c-90bf-4d06-bbcf-65fb424279ae"
+    },
+    {
+      "claim_id": "10a4d6df-b861-486f-981a-a28f874ea352",
+      "result_id": "9cc62de3-6a64-4b42-a69d-60ba9c010dfa"
+    },
+    {
+      "claim_id": "90708792-c563-4559-9ed0-cbb21a425a2c",
+      "result_id": "9cc62de3-6a64-4b42-a69d-60ba9c010dfa"
+    },
+    {
+      "claim_id": "1d4de1a8-a5b1-4631-a983-fc1132e92ce0",
+      "result_id": "9cc62de3-6a64-4b42-a69d-60ba9c010dfa"
+    }
+  ],
+  "comparisons": []
+}

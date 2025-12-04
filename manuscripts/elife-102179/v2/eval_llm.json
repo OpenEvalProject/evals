@@ -1,0 +1,295 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C66"
+    ],
+    "result": "The 53BP1 oligomerization domain (OD) forms a stable trimer, and the LBD-OD construct is also trimeric. This represents the first reported trimeric client of LC8, as all previously known oligomeric LC8 clients are dimers or tetramers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24 and C25 are strongly supported by SEC-MALS data showing masses consistent with trimers across a wide concentration range (75-750 \u03bcM). Claims C26 and C66 are supported by comparison to established knowledge of LC8 clients and the novel finding that 53BP1 is trimeric. The data are internally consistent and the conclusion is well-justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C75"
+    ],
+    "result": "The 53BP1 OD contains primarily beta-sheet structure with some alpha-helical propensity, while the LBD remains disordered in the LBD-OD construct. The ordered domain spans residues 1225-1290, and both constructs refold reversibly with a Tm of 57\u00b0C. The increased structure compared to sequence predictions is attributed to folding upon oligomerization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C31 and C75 are supported by multiple complementary techniques: CD spectroscopy, BeStSel analysis, thermal denaturation, and comparison with computational predictions. The inference that increased structure is due to oligomerization (C75) is reasonable given the discrepancy between CD-based and sequence-based predictions. The data are internally consistent.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "NMR analysis demonstrates that the LBD remains disordered in the LBD-OD construct, with most residues showing similar dynamics to LBD alone. Residues 1210-1225 show reduced dynamics due to proximity to the OD. LC8 binding cooperativity is conserved in the presence of the OD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C34 and C76-C79 are well-supported by comprehensive NMR data including HSQC, relaxation measurements (R1, R2, NOE), chemical shift indexing, and LC8 titration experiments. The interpretation that reduced dynamics at residues 1210-1225 is due to proximity to the OD is reasonable. The conclusion about conserved cooperativity (C79) is appropriately cautious as an inference.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C80"
+    ],
+    "result": "LBD-OD with excess LC8 forms heterogeneous complexes with masses consistent with a trimeric complex (1 LBD-OD trimer + 3 LC8 dimers, ~114 kDa) and a bridged dimer-of-trimers complex (2 LBD-OD trimers + up to 9 LC8 dimers, ~293 kDa).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C38 and C80 are supported by SEC-MALS data showing multiple populations with masses in the 120-296 kDa range. The mass calculations (C36, C37, C80) are straightforward and the observed masses match expectations. The interpretation of a bridged complex is reasonable given the data, though intermediate species cannot be ruled out as acknowledged in the text.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Analysis of QT mutants by SV-AUC and SEC-MALS demonstrates that QT2 is necessary for forming stable bridged complexes that survive dilution during SEC. QT2-OD retains bridged complexes while QT3-OD forms only a single complex in SEC-MALS, despite both forming bridged complexes in SV-AUC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C40 and C81-C88 are supported by complementary SV-AUC and SEC-MALS data on multiple QT mutants. The key finding that only QT2-containing constructs maintain stable bridged complexes upon dilution is well-documented. The inference of an activation barrier (C84) is reasonable given the observation of multiple species. The data are internally consistent across techniques.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C89"
+    ],
+    "result": "ITC analysis shows that QT2 is the only LC8 binding site with unfavorable entropy, while QT1 is the weakest binding site overall. Wild-type LBD-OD shows a stoichiometry near 3:1 (LC8:53BP1), and all interactions are enthalpically favorable with Kd in the sub-micromolar to low micromolar range.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C44 and C89 are supported by ITC data. C41 and C42 cite prior work (Howe et al., 2022) appropriately. C43, C44, and C89 are directly supported by the ITC experiments shown. The thermodynamic parameters are clearly presented in Table 3 and Figure 5K.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Subsequent binding sites (SBS) model analysis of ITC data reveals that QT2-OD has the smallest difference in affinity between intratrimer (Kd=0.3 \u03bcM) and bridging (Kd=1.1 \u03bcM) interactions. Non-sigmoidal isotherms for QT1 and QT3 are attributed to formation of a trimeric intermediate, while QT2 binding may pay the entropic penalty for bridging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45 and C90-C97 are supported by detailed ITC analysis using both OSS and SBS models. The reverse titration experiments (C92, C101) provide strong support for the intermediate model. The interpretation that QT2 has the strongest bridging affinity (C97) is well-supported. However, C46 is appropriately marked as speculation. The SBS model fitting is described with appropriate constraints and inverse-variance weighting.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Analysis of two-site mutants shows that all LBD-ODm with QT2 removed exhibit non-sigmoidal isotherms consistent with two-step binding, while constructs containing QT2 show sigmoidal isotherms. QT13-OD gives a non-sigmoidal isotherm that becomes sigmoidal upon reverse titration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C102 are supported by ITC data on two-site mutants. The observation that only QT2-lacking constructs show non-sigmoidal isotherms is consistent and supports the model of QT2's unique role. The reverse titration experiment (C101) provides strong mechanistic insight.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C104"
+    ],
+    "result": "Shortening the linker between LBD and OD by 5 or 15 residues progressively shifts the population toward bridged complexes. The entropic contribution becomes more favorable with shorter linkers, while overall binding affinity remains unchanged. ITC shows sigmoidal isotherms for both linker deletion mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C50 and C104 are supported by SEC-MALS and ITC data on linker deletion mutants. The progressive shift to bridged complexes with shorter linkers is clearly shown in Figure 6B. The thermodynamic analysis (C49, C50) is supported by ITC data in Figure 6D-E. The interpretation is mechanistically sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "QT2 sequence variants show that the phosphomimetic T1171E forms only trimeric complexes, while T1171I and T1171V form mixtures of trimer and bridged complexes, with T1171V showing significantly more bridged complex. The sequence specificity of QT2, particularly at the -1 position, is a major determinant of 53BP1 heterogeneity. The QT2 anchor is well-conserved in animals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C55 and C106-C109 are supported by SEC-MALS data on QT2 sequence variants and BLAST analysis. The differential effects of T1171I vs T1171V on bridged complex formation are clearly shown. The inference that sequence specificity determines heterogeneity (C54) is well-supported. The conservation analysis (C55) provides evolutionary context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Cell culture experiments show that the phosphodeficient mutant T1171I produces 53BP1 foci similar to wild-type (79\u00b17% vs 85\u00b13%), while the phosphomimetic T1171E shows no significant difference from the LC8 binding null mutant (47\u00b112% vs 47\u00b15%). Constructs lacking QT2 fail to improve focus formation over the null mutant, while QT2 alone provides enhancement. These data suggest QT2 is not phosphorylated in response to ionizing radiation and plays a role in regulating LC8-mediated enhancement of 53BP1 focus formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C61 are supported by immunofluorescence data from cell culture experiments (Figure 7D-E). The statistical analysis shows significant differences between groups. The inference that QT2 is not phosphorylated (C58) is reasonable based on the similarity of T1171I to WT. The conclusion about QT2's regulatory role (C61) is appropriately cautious as an inference. Sample sizes are adequate (>180 cells per group).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "The authors propose that the primary role of LC8 is to bridge 53BP1 trimers, promoting recruitment to DNA damage sites. The formation of higher-order oligomers explains how LC8 improves 53BP1 foci. The stability of bridged complexes is tuned by multivalency, QT2 binding specificity, and linker length. Only QT2 is necessary for stable bridged complexes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62, C63, C115, C116, and C117 represent the main conclusions of the paper. C117 is well-supported by AUC and ITC data. C116 is supported by the combined data from mutant analysis, linker deletions, and thermodynamic studies. C62, C63, and C115 are appropriately presented as proposals/models based on the combined in vitro and cell culture data. The conclusions are reasonable given the evidence, though C62 and C63 contain speculative elements as acknowledged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "The authors speculate that heterogeneity in 53BP1-LC8 complexes may improve recruitment to nuclear repair foci, and that the bridged dimer-of-trimers complex could bind up to three histones bivalently, resulting in high avidity and retention in DNA repair foci.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C67-C69 are explicitly stated as speculation in the manuscript. While the model is consistent with the structural data and provides a mechanistic explanation for the observed enhancement of foci formation, direct evidence for bivalent histone binding by the bridged complex is not provided. The speculation is reasonable but requires experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C64",
+      "C65",
+      "C70",
+      "C103",
+      "C105",
+      "C110",
+      "C111",
+      "C112",
+      "C114"
+    ],
+    "result": "Background information on 53BP1 function in DNA repair, its domain architecture, LC8 binding properties, and prior work on 53BP1-LC8 interactions is presented, citing appropriate literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C23, C64-C65, C70, C103, C105, C110-C112, and C114 represent background information and prior work, all appropriately cited. These claims establish the context for the current study and are supported by the cited literature. No issues with citation accuracy are apparent.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Computational predictions of the 53BP1 OD structure show that IUPred predicts residues 1240-1270 are ordered, coiled-coil prediction tools find no coiled-coils, and structure prediction algorithms (AlphaFold2, PsiPred, JPred) predict primarily beta-sheet or mixed alpha/beta structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C74 are supported by computational predictions using established tools (IUPred, Waggawagga, Marcoil, AlphaFold2, PsiPred, JPred). The predictions are appropriately cited and used to complement experimental data. The discrepancies between predictions are noted and addressed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C113"
+    ],
+    "result": "The authors state that bridging of 53BP1 trimers by LC8 may be an important regulatory mechanism, but explicitly note that further research is necessary to determine physiological relevance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C113 is explicitly stated as speculation requiring further research. While the in vitro data strongly support the bridging mechanism, and cell culture data show correlation with focus formation, the authors appropriately acknowledge that physiological relevance remains to be established. This is a reasonable assessment of the current state of evidence.",
+    "result_type": "MINOR"
+  }
+]

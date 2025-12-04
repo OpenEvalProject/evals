@@ -1,0 +1,317 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Loss of Kdm1a in mice causes a dramatic reduction of PRC2 proteins (EZH2, SUZ12, EED) through post-transcriptional mechanisms. This reduction is reversed by proteasome inhibition and requires KDM1A catalytic activity, indicating that KDM1A maintains EZH2 protein stability to prevent PRC2 disassembly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple independent experimental approaches (conditional knockout mice, MEFs, chemical inhibition, siRNA knockdown, rescue experiments) consistently demonstrate that loss of KDM1A leads to PRC2 protein reduction (C38-C45). The post-transcriptional mechanism is established by showing unchanged mRNA levels (C41), and proteasome involvement is confirmed by MG132 rescue (C44). The requirement for catalytic activity is demonstrated by rescue experiments (C45).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Loss of L3mbtl3 or Dcaf5 in mice results in PRC2 accumulation and increased H3K27 trimethylation. L3MBTL3 tightly regulates EZH2 protein levels, and co-deletion of Kdm1a and L3mbtl3 restores EZH2 levels in Kdm1a-deficient cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple genetic models (null embryos, conditional knockouts, CRISPR knockout cells, overexpression) consistently show that loss of L3mbtl3 or Dcaf5 increases EZH2 and H3K27me3 levels (C47-C54, C57-C58). The genetic epistasis experiment showing restoration of EZH2 in double knockouts (C51-C52) provides strong evidence for L3MBTL3 acting downstream of KDM1A in EZH2 regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C70"
+    ],
+    "result": "EZH2 is methylated at lysine 20 (K20) by SET7, and this methylation promotes EZH2 proteolysis through L3MBTL3 and CRL4DCAF5. KDM1A demethylates K20 to stabilize EZH2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The K20 methylation is demonstrated through multiple approaches: in vitro demethylation assays (C62), specific antibody detection in cells and mice (C64-C66), SET7 overexpression effects (C67), and enrichment in L3MBTL3 co-IP (C68). The functional consequences are shown by proteasome inhibitor rescue (C64) and genetic manipulations (C65-C66, C69). The mechanistic link between methylation and proteolysis is well-established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C7",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C141"
+    ],
+    "result": "K20 methylation is inhibited by AKT-mediated phosphorylation of serine 21 (S21) in EZH2, establishing a methylation-phosphorylation switch. AKT inhibition increases K20 methylation and promotes EZH2 proteolysis in most cell types, while S21 phosphorylation stabilizes EZH2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The inverse relationship between K20 methylation and S21 phosphorylation is demonstrated in multiple contexts: SET7 overexpression reduces S21 phosphorylation (C74), developmental time course shows inverse correlation (C76-C77), and AKT inhibition increases K20 methylation while promoting EZH2 degradation in MEFs, PA-1, and H1299 cells (C91-C94). The cell-type specificity (T47D exception) is explained by differential L3MBTL3 expression (C97-C101), strengthening the mechanistic model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "Ezh2K20R/K20R mutant mice are viable but develop hepatosplenomegaly and show expansion of hematopoietic stem cells and downstream populations in bone marrow, with increased expression of HSC regulators (Runx1, Gata2, Etv6, cFos, Ikaros, Gfi1) and altered expression of EZH2-repressed genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The phenotypic characterization is comprehensive, including organ measurements (C109), flow cytometry quantification of multiple hematopoietic populations (C110-C113), and gene expression analysis (C115-C116). The viability with normal Mendelian ratios (C108) indicates the mutation is not embryonic lethal. The consistency between increased EZH2 protein stability (expected from K20R mutation) and hematopoietic expansion provides mechanistic coherence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C125",
+      "C127",
+      "C128",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "Ezh2K20R/K20R mutant mice show increased GFI1B expression in spleen, mild-to-moderate reactive hyperplasia, increased EZH2 and H3K27me3 protein levels, and increased proliferating cells. The K20R mutation modulates EZH2 protein stability and induces these pathological changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The splenic phenotype is well-documented through multiple approaches: RT-PCR showing increased Gfi1b mRNA (C125), immunohistochemistry and Western blotting confirming increased GFI1B protein (C127-C128), histological analysis showing hyperplasia (C120), and Ki67 staining indicating increased proliferation (C123). The increased EZH2 and H3K27me3 levels (C122) are consistent with the stabilizing effect of the K20R mutation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C10",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C142"
+    ],
+    "result": "EZH2 is regulated by a methylation-phosphorylation switch where K20 methylation-dependent proteolysis is negatively controlled by AKT-mediated S21 phosphorylation. This switch regulates PRC2 activity and hematopoiesis through dynamic control of EZH2 stability and enzymatic activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This integrative model is supported by the convergence of multiple lines of evidence: the opposing effects of K20 methylation (proteolysis) and S21 phosphorylation (activity inhibition) on EZH2 (C137), the mutual exclusivity of these modifications (C141-C142), the developmental regulation showing coordinated changes (C76-C78), and the in vivo consequences in Ezh2K20R mice (C8-C9). The model coherently explains all major experimental observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "The CRL4DCAF5 ubiquitin ligase complex, recruited by L3MBTL3, is involved in proteolytic degradation of EZH2 to regulate H3K27me3 levels during mouse development and in cultured cancer cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The role of DCAF5 is demonstrated through multiple approaches: CRISPR-generated Dcaf5 knockout mice show elevated EZH2 and H3K27me3 (C57-C58), and siRNA-mediated co-silencing experiments in cells confirm the epistatic relationship (C59). The consistency with prior work on L3MBTL3-CRL4DCAF5 targeting other substrates (C56) provides mechanistic coherence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C139"
+    ],
+    "result": "PHF20L1 prevents the proteolysis of EZH2 by protecting the K20-methylated form. Loss of PHF20L1 destabilizes EZH2 protein, and this effect is rescued by co-silencing L3mbtl3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The protective role of PHF20L1 is demonstrated by siRNA experiments showing that PHF20L1 loss induces EZH2 degradation (C71), which is rescued by co-silencing L3mbtl3 (C71). This establishes PHF20L1 as a reader protein that protects methylated EZH2 from L3MBTL3-mediated degradation, analogous to its role with SOX2.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "L3MBTL3 is expressed during mouse embryonic development (E12-E15) when EZH2 levels decline. L3MBTL3 interacts with EZH2 in a SET7- and K20-dependent manner, and SET7, L3MBTL3, and DCAF5 are sufficient to promote K20-dependent EZH2 polyubiquitination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The temporal expression of L3MBTL3 during development is shown by LacZ reporter staining (C79), correlating with EZH2 decline (C80). The molecular interactions are demonstrated by co-IP experiments showing SET7-dependent (C82) and K20-dependent (C83) binding. The sufficiency for ubiquitination is shown by reconstitution experiments (C86), with K20R mutation abolishing this effect (C87). The resistance of K20R and S21A mutants to KDM1A loss (C84-C85) provides additional functional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C89",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C103",
+      "C105"
+    ],
+    "result": "The methylation-phosphorylation switch operates differentially in various cell types. T47D cells show defective EZH2 proteolytic response to AKT inhibition due to low L3MBTL3 expression, which can be restored by ectopic L3MBTL3 expression. L3mbtl3 null MEFs phenocopy T47D cells in their response to AKT inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The cell-type specificity is rigorously demonstrated: T47D cells lack EZH2 proteolytic response to MK2206 (C90), which is explained by low L3MBTL3 expression (C105) and restored by ectopic L3MBTL3 (C97-C98). The L3mbtl3 null MEFs show the same response pattern as T47D cells (C100), providing genetic validation of the hypothesis (C99, C101). This explains apparent discrepancies with prior literature (C102-C103).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "PRC2 plays essential roles in embryonic development, cell fate determination, and various developmental processes. EZH2 is frequently altered in cancers and serves as a therapeutic target. S21 phosphorylation by AKT inhibits EZH2 activity and facilitates tumorigenesis, but the physiological role of S21-phosphorylated EZH2 remains unclear.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are well-established background claims supported by appropriate citations to prior literature (C11-C25). The knowledge gap regarding S21 phosphorylation (C26) provides context for the current study. These claims accurately represent the state of the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Protein lysine methylation regulates chromatin structure and gene expression through histone modifications. Many non-histone proteins are methylated by SET7 and demethylated by KDM1A, leading to methylation-dependent proteolysis. Loss of Kdm1a causes embryonic lethality and impairs stem cell function, but the molecular targets remain unclear.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These background claims are well-supported by citations to prior literature, including the authors' own work (C27-C36). The knowledge gap regarding KDM1A targets (C37) provides rationale for the current study. These claims accurately represent established knowledge and set up the study's objectives.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C73",
+      "C138",
+      "C140"
+    ],
+    "result": "In T47D cells, SET7 expression increases K20 methylation without causing significant EZH2 degradation. The fraction of EZH2 not modified by K20 methylation or S21 phosphorylation is likely the active form for H3K27 trimethylation. The PHF20L1-protected, K20-methylated EZH2 fraction may also be catalytically active.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the observation in T47D cells is documented (C73), the claims about which EZH2 fractions are catalytically active (C138, C140) are speculative and not directly tested. The manuscript acknowledges these as possibilities requiring further investigation. The T47D observation is explained by low L3MBTL3 levels, but the activity states of different EZH2 modifications remain to be determined experimentally.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C104",
+      "C106",
+      "C107",
+      "C118",
+      "C119",
+      "C126",
+      "C129",
+      "C130"
+    ],
+    "result": "L3mbtl3 is mutated in various cancers and pathological disorders. EZH2 alterations are frequently associated with cancers, and lysine methylation-dependent proteolysis may be affected in cancer cells. GFI1B is a proto-oncogenic transcriptional regulator that interacts with EZH2 and GATA1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims are supported by appropriate citations to prior literature (C104, C106, C118-C119, C126, C129-C130). The speculation about altered proteolysis in cancer (C107) is reasonable given the documented L3MBTL3 mutations and differential expression, though it requires further investigation. These claims provide important context for understanding the pathological implications of the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C102"
+    ],
+    "result": "AKT inhibition by MK2206 reduced EZH2 protein stability in several cancer cells, as reported in prior literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This claim is supported by citation to prior literature (Riquelme et al., 2016) and is consistent with the authors' findings in most cell types. It helps explain the cell-type specificity observed and validates the methylation-phosphorylation switch model.",
+    "result_type": "MINOR"
+  }
+]

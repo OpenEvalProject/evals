@@ -1,0 +1,259 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C6",
+      "C41",
+      "C49",
+      "C101"
+    ],
+    "result": "Homozygous deletion of Fdx1 (Fdx1-/-) results in embryonic lethality between E10.5 and E13.5 in mice. The authors generated Fdx1-deficient mice and found that no Fdx1-/- pups were born from heterozygous intercrosses, and only one Fdx1-/- embryo was observed at E10.5, with none at E13.5.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C41, C49, and C101 are well-supported by breeding data showing 0/67 live Fdx1-/- pups and timed pregnancy data showing one Fdx1-/- embryo at E10.5 but none at E13.5 (Figure 1C-E). The experimental design is appropriate and the conclusion of embryonic lethality is justified by the complete absence of homozygous knockout animals.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C105"
+    ],
+    "result": "The embryonic lethality of Fdx1-/- mice is comparable to that of Fdxr-/- mice (which die at E8.5), suggesting that Fdx1 and Fdxr regulate similar processes required for mammalian embryonic development and survival.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52, C53, and C105 are supported by comparison with prior work (Zhang et al., 2017) showing Fdxr-/- embryonic lethality at E8.5. While the timing differs slightly (E8.5 vs E10.5-E13.5), both genes show complete embryonic lethality when homozygously deleted, supporting the inference that they regulate similar essential developmental processes. The comparison is reasonable given the known functional relationship between FDXR and FDX1.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C56",
+      "C59",
+      "C60"
+    ],
+    "result": "Fdx1+/- mice show distinct tumor susceptibility compared to Fdxr+/- mice. While Fdxr+/- mice were highly tumor-prone (26/29, p<0.00001), Fdx1+/- mice showed no statistically significant increase in overall tumor incidence (11/26 vs 11/51 WT, p=0.0673), though they did develop adenocarcinomas and sarcomas.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56, C59, and C60 are supported by histological analysis with appropriate statistical testing (Fisher's exact test). The data clearly show Fdxr+/- mice are tumor-prone while Fdx1+/- mice are not, despite both showing some adenocarcinomas. The statistical analysis is appropriate and the distinction between the two genotypes is well-documented in Figure 2B-D.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C69",
+      "C115"
+    ],
+    "result": "Murine cells deficient in both alleles of Fdx1 are not viable. The authors were unable to obtain Fdx1-/- clones in FL83B hepatocytes and SCp2 mammary epithelial cells using CRISPR-Cas9, indicating Fdx1 is required for cell survival in these murine cell lines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69 and C115 are supported by the inability to generate Fdx1-/- clones in multiple murine cell lines (Figure 3C, G), which is consistent with the embryonic lethality observed in vivo. However, the authors note that human FDX1-/- cells are viable (C84, C116), suggesting species-specific differences. The inference of essentiality is reasonable but could benefit from rescue experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C84",
+      "C116",
+      "C117"
+    ],
+    "result": "Unlike murine cells, complete knockout of FDX1 in human HCT116 cells is possible, suggesting species-specific differences. The authors hypothesize that human FDX2 may compensate for FDX1 loss in human cells but not in murine cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84 and C116 are supported by experimental data showing successful generation of FDX1-/- HCT116 cells (Figure 4A) and citations to other studies. Claim C117 is speculative but reasonable given the observed species difference. The hypothesis about FDX2 compensation is plausible but requires experimental validation to be fully supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C10",
+      "C45",
+      "C72",
+      "C73",
+      "C76",
+      "C78",
+      "C80",
+      "C82",
+      "C83",
+      "C85",
+      "C86",
+      "C88",
+      "C89",
+      "C91",
+      "C103",
+      "C118"
+    ],
+    "result": "FDX1 deficiency leads to lipid droplet accumulation in both murine and human cells, possibly via the ABCA1-SREBP1/2 pathway. Loss of Fdx1 decreased ABCA1 expression, increased mature SREBP2 (and slightly increased SREBP1), and increased the SREBP2 target MVD, indicating transcriptional activation of lipid metabolism pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims are well-supported by multiple lines of evidence: Nile Red staining showing lipid droplet accumulation (Figures 3B, D, I, 4D), Western blot analysis showing decreased ABCA1 and increased mature SREBP2 and MVD (Figures 3E-F, 4B-C), and enzymatic assays showing increased cholesterol and TAGs (Figure 4E-F). The pathway mechanism is supported by known relationships between ABCA1 and SREBP2 (C77). The use of multiple cell types (MEFs, FL83B, SCp2, HCT116) strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C90"
+    ],
+    "result": "Overexpression of FDX1 decreased lipid droplet accumulation in HCT116 cells, providing reciprocal evidence for FDX1's role in lipid metabolism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C90 is supported by Nile Red staining data (Figure 4\u2014figure supplement 1B) showing reduced lipid droplets upon doxycycline-induced FDX1 overexpression. This gain-of-function experiment complements the loss-of-function studies and strengthens the causal relationship between FDX1 and lipid metabolism. However, quantification of the effect would strengthen this result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C11",
+      "C46",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C98",
+      "C104",
+      "C119"
+    ],
+    "result": "Untargeted lipidomic analysis of FDX1-KO HCT116 cells revealed alterations in multiple lipid classes: increased cholesterol, acylcarnitines (CARs), and phosphatidylcholines (PCs); decreased lysophosphatidylcholines (LPCs), lysophosphatidylethanolamines (LPEs), and ceramides (CERs); with no significant changes in phosphatidylethanolamines (PEs), cardiolipins, sphingomyelins (SMs), fatty acids (FAs), and diacylglycerols (DAGs).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims are supported by comprehensive LC-MS/MS lipidomic analysis identifying and quantifying 710 lipids (C92). The data are presented with statistical analysis (Figure 5A-L, Figure 5\u2014figure supplement 1) showing specific changes in multiple lipid classes. The methodology is appropriate for untargeted lipidomics. However, the discrepancy between TAG measurements by enzymatic assay (increased) vs lipidomics (decreased) is noted and explained (C97), though this raises questions about the specificity of the enzymatic assay.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C97"
+    ],
+    "result": "The discrepancy between TAG measurements by enzymatic assay (increased) and lipidomic analysis (decreased) suggests that glycerols from other complex lipids may have been recognized by the enzymatic assay as TAGs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C97 attempts to explain a significant methodological discrepancy between two measurement approaches. While the authors cite literature supporting this explanation (Kapoor and Gupta, 2012; Haupt and Valley, 2020), the conflicting results raise concerns about which measurement is accurate. This uncertainty undermines confidence in the TAG-specific conclusions and suggests the need for additional validation or more specific assays.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C123",
+      "C124"
+    ],
+    "result": "FDX1 is essential for mammalian embryonic development and lipid homeostasis at both cellular and organismal levels. Loss of FDX1 leads to pathological impairment in mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12, C13, C123, and C124 represent the main conclusions of the study. They are well-supported by the embryonic lethality data (C6, C41, C49), lipid accumulation in cells (C72, C86, C88), lipidomic alterations (C93-C95), and the observation of steatohepatitis in Fdx1+/- mice (C120). The integration of in vivo and in vitro data across multiple experimental systems provides strong support for these overarching conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C120"
+    ],
+    "result": "Altered lipid metabolism is likely responsible for the steatohepatitis observed in Fdx1-deficient mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C120 is supported by the observation of high incidence of liver steatosis/steatohepatitis in Fdx1+/- mice (Figure 2E-F) combined with the demonstrated lipid metabolism defects in Fdx1-deficient cells. The inference is reasonable given the known relationship between lipid accumulation and steatohepatitis (C121, C122). However, direct measurement of lipid profiles in the livers of Fdx1+/- mice would strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "The mechanism of Fdx1-/- embryonic lethality remains unclear. The authors consider and reject progesterone deficiency as the sole cause (since Cyp11a1-/- mice survive to birth) and hypothesize that defects in lipoylation of TCA cycle enzymes and oxidative phosphorylation may be responsible.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C106-C109 are speculative hypotheses about the mechanism of embryonic lethality. While the authors appropriately cite relevant literature (C107, C110), these remain untested hypotheses. The rejection of the progesterone hypothesis based on Cyp11a1-/- survival is logical, but the alternative hypothesis about TCA cycle enzyme lipoylation, while plausible, lacks direct experimental support in this study. Further mechanistic studies are needed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C113",
+      "C114"
+    ],
+    "result": "The differential tumor susceptibility between Fdxr+/- and Fdx1+/- mice may be explained by differential effects on p53 expression, with Fdxr loss decreasing p53 but Fdx1 loss having no significant effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113 and C114 are supported by citation to prior work (Zhang et al., 2017) showing the differential effects on p53. This provides a plausible mechanistic explanation for the observed difference in tumor susceptibility between Fdxr+/- and Fdx1+/- mice. However, this explanation relies entirely on prior work and is not directly tested in the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C64",
+      "C65",
+      "C74",
+      "C75",
+      "C77",
+      "C79",
+      "C81",
+      "C87",
+      "C99",
+      "C100",
+      "C110",
+      "C121",
+      "C122",
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "Background knowledge claims about FDX1/2 function, lipid metabolism, SREBP pathways, and disease associations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims represent established knowledge from the literature, appropriately cited throughout the manuscript. They provide necessary context for interpreting the experimental results. The citations appear appropriate and the knowledge claims are consistent with current understanding of these systems.",
+    "result_type": "MINOR"
+  }
+]

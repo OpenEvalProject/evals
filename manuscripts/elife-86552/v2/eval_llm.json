@@ -1,0 +1,311 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "The manuscript establishes the biological and physical context for studying temporal heterogeneity in neural circuits. Multiple physical and biological systems exhibit fluctuations over large timescales (C1, C10-C13), and neurons within the same cortical circuit show long-tailed distributions of intrinsic timescales (C2, C14-C16). The mechanisms underlying this heterogeneity are unknown (C3, C20), but heterogeneous cell assemblies are observed in cortical architecture (C21), and multiple timescales may be computationally beneficial (C18-C19).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims establish well-documented background knowledge from prior literature (C10-C16, C18-C19, C21 all cite experimental studies) and clearly state the knowledge gap (C3, C20) that motivates the current work. The claims are mutually consistent and provide appropriate context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C22",
+      "C23",
+      "C34",
+      "C35",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "The core theoretical finding is that neural circuits with heterogeneous neural assemblies of different sizes naturally generate multiple timescales spanning several orders of magnitude (C4, C22, C34). The mechanism is that each unit's intrinsic timescale depends on both its own self-coupling (representing assembly size) and the network's self-coupling distribution (C5, C35, C97). Units are interpreted as neural assemblies consistent with experimental evidence (C95, C96), and this model can explain the heterogeneity observed in primate cortex recordings (C23).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims are supported by analytical theory (mean-field equations), simulations of rate networks, and comparison with experimental data from Cavanagh et al., 2016 (Figure 1b, Figure 3bi). The exponential relationship between self-coupling and timescale is derived analytically (C48) and validated in simulations. The fit to primate data (C23, C50) provides strong empirical support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C32",
+      "C33",
+      "C39",
+      "C42",
+      "C47",
+      "C48",
+      "C58"
+    ],
+    "result": "The analytical theory reveals that an assembly's intrinsic timescale depends on its size (C24), and a new bistable chaotic regime emerges (C25). Networks with heterogeneous self-couplings exhibit a complex landscape of stable fixed points (C39), and the chaotic phase is characterized by a large range of simultaneously realized timescales (C42). Mean-field theory predicts an exponential relation between self-coupling and autocorrelation decay time (C47, C48), and multiple timescales can be robustly generated spanning several orders of magnitude (C58).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The analytical framework is developed using dynamic mean-field theory and the universal colored noise approximation (UCNA) to the Fokker-Planck equation. The exponential scaling (Equation 4) is derived analytically and validated against simulations (Figure 3aii, Figure 4c). The bistable chaotic regime is a novel theoretical prediction supported by phase diagrams (Figure 2a) and stability analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C26",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C67",
+      "C68",
+      "C70",
+      "C73",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "The theory applies to biologically plausible spiking networks with cell-type specific connectivity (C26, C98). The spiking network exhibits metastable dynamics through sequences of attractors (C62, C63), where dwell times increase with assembly size (C64). This metastable regime is similar to the bistable activity in rate networks (C65), though with differences in transfer functions (C67, C68). A heterogeneous distribution of assembly sizes yields heterogeneous self-couplings (C70, C99) and generates a reservoir of timescales (C73, C100).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The spiking network implementation (Figure 5) demonstrates that the mechanism translates to biologically realistic models with E/I neurons and clustered architecture. The relationship between assembly size and timescale (Figure 5b) follows a quadratic polynomial in log(T) vs. s, consistent with the analytical prediction (Equation 4). The timescale range (20 ms-100 s) matches experimental observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C74",
+      "C75",
+      "C101",
+      "C109",
+      "C110"
+    ],
+    "result": "The model with a lognormal distribution of self-couplings generates a long-tailed distribution of timescales that fits the distribution observed in awake primate orbitofrontal cortex (C50, C51, C101). The timescale range (20 ms-100 s) and assembly sizes (50-100 neurons) are consistent with experimental observations (C74, C75, C109, C110).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The model predictions are directly compared with experimental data from Cavanagh et al., 2016 (Figure 3bi) and show good quantitative agreement. The assembly sizes are consistent with Perin et al., 2011 and Marshel et al., 2019. However, the authors note they used a different timescale metric (half-width at half-max) than the exponential fits used in the experimental study, requiring a conversion factor.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C60",
+      "C117",
+      "C118"
+    ],
+    "result": "The neural mechanism underlying timescale separation is not an intrinsic property of a single unit but requires the unit to be part of a recurrently connected network (C60, C117). The mechanism only emerges when driving the unit with a self-consistent mean-field from an underlying recurrent network (C118).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This conclusion is supported by comparing dynamics when units are driven by white noise versus network-generated colored noise (Figure 4c). The timescale separation is absent with white noise but emerges with the self-consistent network input, demonstrating the critical role of recurrent dynamics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C84",
+      "C85"
+    ],
+    "result": "In both spiking and rate networks, the reservoir of timescales is associated with a heterogeneous distribution of large positive eigenvalues in the weight matrix (C84). Schur eigenvectors with large positive eigenvalues map onto E/I cluster pairs (C78), and larger eigenvalues correspond to larger assemblies and slower timescales (C79, C80, C82). The correspondence between rate and spiking networks should be performed at the level of dynamical modes in the Schur basis (C85).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The eigenvalue analysis (Figure 5c, Appendix 2) provides a unifying mathematical framework linking the spiking and rate network models. The Schur decomposition reveals that slow modes correspond to large positive eigenvalues associated with large assemblies. This analysis is rigorous and well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C28",
+      "C90",
+      "C91",
+      "C133"
+    ],
+    "result": "When driven by time-dependent broadband input, large assemblies preferentially entrain slow spectral components while small assemblies entrain fast components (C7, C8, C28, C90, C91, C133). In heterogeneous networks, chaotic activity is suppressed across multiple frequencies that depend on assembly size (C28).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The frequency-selective entrainment is demonstrated in simulations (Figure 6a) using a spectral modulation index. The crossover frequency depends on the self-coupling ratio and input amplitude (Figure 6b,c). This extends previous work on chaos suppression (Rajan et al., 2010) to heterogeneous networks with multiple resonant frequencies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C9",
+      "C29",
+      "C30",
+      "C137"
+    ],
+    "result": "Heterogeneous assemblies can provide a biologically plausible mechanism for neural circuits to demix complex temporal input signals by transforming temporal into spatial neural codes via frequency-selective neural assemblies (C9, C29, C30, C137).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the frequency-selective entrainment is well-demonstrated (C7, C8, C90, C91), the functional interpretation as a temporal-to-spatial demixing mechanism is speculative. The authors acknowledge this is a suggestion (C29) and speculation (C30, C137). No direct evidence is provided that this mechanism actually performs demixing of complex signals in a computational task.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C111"
+    ],
+    "result": "A fundamental new prediction of the model is the direct relationship between assembly size and its timescale (C111).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is clearly stated as a testable prediction for future experiments. The relationship is well-established theoretically and in simulations (C24, C48, C64, C79), but has not been directly tested experimentally. This is an appropriate and important prediction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "Previous mechanisms relied on heterogeneous single-cell time constants (C112, C113), but the authors found that heterogeneity in single-cell time constants does not lead to timescale diversity in the presence of strong recurrent dynamics (C114, C115, C116).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The analysis in Appendix 3 demonstrates that heterogeneous membrane time constants fail to generate timescale separation in recurrent networks (C114). This is an important negative control showing that the mechanism is fundamentally network-based rather than single-cell based.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "Previous models based on feedforward gradients can explain timescale separation within a factor of 10 (C119-C122), but it is unknown if they extend to several orders of magnitude or if feedforward structure exists within local circuits (C122, C123). The current model relies on recurrent connectivity and local assemblies (C124).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This provides appropriate context for the novelty of the current work. The comparison with previous models (Chaudhuri et al., 2014, 2015) is fair and accurately identifies the limitations of feedforward models and the advantages of the recurrent assembly-based mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "The dynamics of units with large self-couplings can be captured analytically using the universal colored noise approximation (UCNA) to the Fokker-Planck equation (C127), which is applied to neural networks for the first time (C128). This slow-switching regime may underlie metastable activity in behaving mammals (C129), and the UCNA may provide a powerful tool for investigating network dynamics (C131).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The UCNA analysis (Equations 19-22, Figure 4) provides accurate predictions for the mean first passage time and probability distributions. The application to neural networks is novel and mathematically rigorous. However, the connection to metastable activity (C129) and future utility (C131) are speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C132",
+      "C138",
+      "C139",
+      "C140",
+      "C141"
+    ],
+    "result": "The presence of long timescales in the chaotic regime may be beneficial for memory capacity (C132), flexible computations (C138, C139), and future applications in reservoir computing or trained networks (C140, C141).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These are all speculative claims about potential functional benefits and future directions. No computational tasks are performed to demonstrate these benefits. While the speculations are reasonable and well-motivated by citations, they remain untested hypotheses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "Experimental observations show hierarchical timescales across cortical areas (50-350 ms) (C102) and heterogeneous timescales within areas across species (C103-C105), including reward memory encoding (C106). Timescales are typically estimated using parametric fits which may have biases (C107), while the model uses nonparametric estimation (C108).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims accurately summarize experimental literature and acknowledge methodological differences between the model and experiments. The authors appropriately note the conversion factor needed to compare their nonparametric timescale estimates with exponential fits from experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C86",
+      "C87"
+    ],
+    "result": "In rate networks, transitions are driven by self-consistent colored noise from synaptic disorder (C86), while in spiking networks, disorder in inter-assembly couplings may contribute but finite size effects may also play a role (C87).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The mechanism in rate networks is well-established (C86), but the mechanism in spiking networks is acknowledged as uncertain (C87). The authors appropriately identify this as an open question requiring further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C27",
+      "C89",
+      "C94",
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "Previous work showed chaos suppression at a single resonant frequency in homogeneous networks (C27, C89, C94), with mechanisms based on cellular properties or feedforward structure (C134, C135). The current work presents a recurrent network mechanism for population-specific chaos suppression independent of network size (C136).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The comparison with prior work (Rajan et al., 2010; Muscinelli et al., 2019; Lindner, 2016; Deger et al., 2014) is accurate and appropriately contextualizes the novelty of the population-specific mechanism demonstrated in Figure 6.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C125",
+      "C126"
+    ],
+    "result": "Other network models generating multiple timescales were proposed based on self-tuned criticality with anti-Hebbian plasticity (C125) or multiple block-structured connectivity (C126).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims accurately cite alternative modeling approaches (Magnasco et al., 2009; Aljadeff et al., 2015) and provide appropriate context for the current work.",
+    "result_type": "MINOR"
+  }
+]

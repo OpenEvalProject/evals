@@ -1,0 +1,1592 @@
+{
+  "submission": {
+    "id": "4fe26f89-d8af-498f-9a15-7440f339e1c0",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-04T02:30:54.716019Z",
+    "updated_at": "2025-12-04T02:30:54.716019Z"
+  },
+  "content": [
+    {
+      "id": "57da2bfe-28a9-4381-83c1-47e075e35ffb",
+      "submission_id": "4fe26f89-d8af-498f-9a15-7440f339e1c0",
+      "content_type": "manuscript",
+      "content_text": "# A critical role for heme synthesis and succinate in the regulation of pluripotent states transitions\n\n## Authors\n\n- Damien Detraux<sup>1</sup> ([ORCID: 0000-0002-9704-2076](https://orcid.org/0000-0002-9704-2076))\n- Marino Caruso<sup>1</sup>\n- Louise Feller<sup>1</sup>\n- Maude Fransolet<sup>1</sup>\n- S\u00e9bastien Meurant<sup>1</sup> ([ORCID: 0000-0003-0711-9605](https://orcid.org/0000-0003-0711-9605))\n- Julie Mathieu<sup>2</sup>\n- Thierry Arnould<sup>1</sup>\n- Patricia Renard<sup>1</sup> ([ORCID: 0000-0003-4144-3353](https://orcid.org/0000-0003-4144-3353)) \u2020\n\n### Affiliations\n\n1. Laboratory of Biochemistry and Cell Biology (URBC), NAmur Research Institute for LIfe Sciences (NARILIS), University of Namur (UNamur), Namur, Belgium Namur Belgium ([ROR:03d1maw17](https://ror.org/03d1maw17))\n2. Institute for Stem Cell and Regenerative Medicine, University of Washington Seattle United States ([ROR:00cvxb145](https://ror.org/00cvxb145))\n3. Department of Comparative Medicine, University of Washington Seattle United States ([ROR:00cvxb145](https://ror.org/00cvxb145))\n\n\u2020 Corresponding author\n\n## Abstract\n\nUsing embryonic stem cells (ESCs) in regenerative medicine or in disease modeling requires a complete understanding of these cells. Two main distinct developmental states of ESCs have been stabilized in vitro, a na\u00efve pre-implantation stage and a primed post-implantation stage. Based on two recently published CRISPR-Cas9 knockout functional screens, we show here that the exit of the na\u00efve state is impaired upon heme biosynthesis pathway blockade, linked in mESCs to the incapacity to activate MAPK- and TGF\u03b2-dependent signaling pathways after succinate accumulation. In addition, heme synthesis inhibition promotes the acquisition of 2 cell-like cells in a heme-independent manner caused by a mitochondrial succinate accumulation and leakage out of the cell. We further demonstrate that extracellular succinate acts as a paracrine/autocrine signal, able to trigger the 2C-like reprogramming through the activation of its plasma membrane receptor, SUCNR1. Overall, this study unveils a new mechanism underlying the maintenance of pluripotency under the control of heme synthesis.\n\n## Introduction\n\nThe development and regeneration of an organism are two processes held by stem cells. These cells possess unique features such as an unlimited capacity for self-renewal and the ability to differentiate into various cell types. With their pluripotent phenotype, embryonic stem cells (ESCs) retain the ability to differentiate into all cell types of the embryo. First in mouse (Martin, 1981; Evans and Kaufman, 1981), then later in human (Thomson et al., 1998), two main states of pluripotent stem cells have been described: the na\u00efve ESCs, resembling the inner cell mass (ICM) of the pre-implantation embryo epiblast, and the primed ESCs, mirroring the epiblast of the post-implantation stage. While these cells represent timely close stages in embryo development, they display dramatic differences, such as developmental potential (Gafni et al., 2013; Ware et al., 2014), epigenetic landscape, X-chromosome inactivation pattern and metabolic activity (Sperber et al., 2015; Theunissen et al., 2016; Zhou et al., 2012; Sahakyan et al., 2017; Grow et al., 2015; Takashima et al., 2014; Nichols and Smith, 2009). Aside from these two pluripotent stages, ESC culture is known to be very heterogenous in terms of pluripotent or epigenetic marker expression (Sust\u00e1\u010dkov\u00e1 et al., 2012). Interestingly, a small population (representing about 1 %) of mouse ESCs grown in na\u00efve conditions displays features of the two-cell stage embryo (2C-like population or 2CLCs) exhibiting extended potential (Macfarlan et al., 2012). This subset also displays the expression of 2C-specific genes such as the Zscan4 cluster, the retro-transposable element MuERVL or the master regulator DUX (Macfarlan et al., 2012; Percharde et al., 2018; Ishiuchi et al., 2015), a disappearance of chromocenters and loss of the core pluripotency protein OCT4 (Macfarlan et al., 2012). However, despite the well-known differences between the different pluripotent states, little is understood about the molecular mechanisms governing the transition between them.\n\nSeveral studies have started to address the question of the naive-to-primed ESC transition using different screening methods to identify genes controlling this transition (reviewed in Li et al., 2020). Notably, a few studies have revealed mTORC1/2 as a critical component for the na\u00efve-to-primed transition (Mathieu et al., 2019; Li et al., 2018; Duggal et al., 2015) that regulates key developmental pathways such as Wnt signaling (Sperber et al., 2015; Mathieu et al., 2019; Xu et al., 2016; Taelman et al., 2019). Among the hits of the different screens, we observed the recurrence of genes involved in the heme biosynthesis pathway. This pathway, starting in mitochondria, uses succinyl-CoA and glycine as starting material. It then proceeds to successive cytosolic reactions before ending by the formation of the heme molecule in the mitochondrial matrix. Although largely studied in hematopoietic stem cells, the roles of this biosynthetic pathway and this metabolite have never been studied in the context of pluripotency. In this study, we demonstrate the incapacity of mouse ESCs (mESCs) to exit from na\u00efve toward the primed state under heme synthesis inhibition, a process caused by the inability to activate the core MAPK and TGF\u03b2-SMADs signaling pathways due to an accumulation of extramitochondrial succinate. We also show that heme synthesis inhibition in na\u00efve mESCs favors the emergence of 2CLCs in the cell population. This effect is heme-independent as hemin supplementation does not prevent it. We next demonstrate that the reprogramming in 2C-like state upon heme biosynthesis inhibition is actually caused by the accumulation and release of succinate derived from the heme synthesis inhibition, acting as both paracrine and autocrine signals.\n\n## Results\n\n### Murine ESCs are dependent on heme biosynthesis to properly transition to the primed stage\n\nIn order to unveil the pathways required for the na\u00efve-to-primed ESC transition, we compared the results of whole genome CRISPR-Cas9 screens previously published for mouse and human ESCs (Mathieu et al., 2019; Li et al., 2018). The significant hits (p val <0.05) were submitted to the DAVID functional annotation tools. For the human screen, positive hits for apoptosis were removed. Indeed, since a negative selection was applied to induce the death of primed human ESCs (hESCs), cells that acquired a resistance to cell death by mutating genes involved in apoptosis would be spared. Figure 1a displays the top Gene Ontologies (GO) for the DAVID biological processes showing \u2018heme biosynthetic process\u2019 as one of the most enriched in both studies (Mathieu et al., 2019; Li et al., 2018). Seven out of 8 enzymes of this metabolic pathway (ALAD, PBGD, UROS, UROD, CPOX, PPOX, and FECH) came out as positive hits in the CRISPR screen during the na\u00efve-to-primed mESC transition. In hESCs, only the 4 cytosolic enzymes (PBGD, UROS, UROD, and CPOX) were highlighted. In both models, the expression of these genes both in vitro and in vivo is not modified Table 1. Together, the results stress the importance of this metabolic pathway for the naive-to-primed transition, although its role in non-hematopoietic stem cells is poorly understood.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/78546/elife-78546-fig1-v2.jpg)\n\n**Figure 1.:** (a) DAVID biological processes GO enrichment from two independent CRISPR-Cas9 screens for the naive state exit, in mouse (left panel) (Li et al., 2020) and in human (right panel) (Mathieu et al., 2019). The heme biosynthetic pathway is highlighted In red. (b) Relative expression of na\u00efve and primed markers of mESCs in na\u00efve conditions (2iL), in transition for 2 days to the Epi stage (EpiLC) with or without 0.5 mM succinylacetone as heme synthesis inhibitor (EpiLC +SA) and 10 \u00b5M hemin supplementation (EpiLC +SA + H), assessed by RT-qPCR relative to Gapdh expression (Tfcp2l1, transcription factor CP2-like 1; Esrr\u03b2, estrogen-related receptor \u03b2; Klf2/4, Kruppel-like factor 2/4; Tbx3, T-Box Transcription Factor 3; Fgf5/15, fibroblast growth factor-5/15; Zic2, zic family member 2; Otx2, homeobox protein 2). Results expressed as mean +/-S.D. *p<0.05, **p<0.01, ***p<0.001. ANOVA-1. n=3 independent biological replicates. (c) Western blot analysis of the protein abundance of OTX2 and DNMT3A relative to GAPDH as a loading control for cells in na\u00efve conditions (2iL), in transition for 2 days to the Epi stage (EpiLC) with 0.5 mM SA (+SA) and 10 \u00b5M hemin (+H) supplementation. Representative blot of three biological replicates. (d) Phase contrast micrographs of cells in naive (2iL), or in transition to the primed (EpiLC) state with treatment with SA and hemin (H). Scale bar = 50 \u03bcm. Confocal micrographs of mESCs in naive stage or in transition for TFE3 (Transcription Factor Binding To IGHM Enhancer 3) and KLF4, in green. Scale bar = 20 \u03bcm. TFE3 n=3 and KLF4 n=3 biological replicates (e) Principal component analysis (PCA) of the normalized RNAseq data transcripts.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/78546/elife-78546-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (a) Validation of the knock-out of ALAD in mESCs. Trace file of the sequencing of the guide region in WT and KO clone cells and western blot analysis of the ALAD protein abundance. (b) Relative expression of na\u00efve and primed markers of ALAD KO mESCs in na\u00efve conditions (2iL +hemin), in transition for 2 days to the EpiLC stage (EpiLC +hemin) or EpiLC without hemin to reveal the ALAD KO phenotype, assessed by RT-qPCR relative to Gapdh expression. Data shown as mean +/-S.D. *p<0.05, **p<0.01, ***p<0.001. ANOVA-1. n=3 independent biological replicates. (c) Relative expression of na\u00efve (TFCP2L1; KLF4 and ESRRB) and primed (SALL1, ETV4, FOXA2, T-Brachyury) markers of hESCs (Elf1 cell line) assessed by RT-qPCR relative to \u03b2-Actin expression and normalized to RSeT naive control, during the 4 days transition in TeSR media with or without 0.5 mM of SA. n=3 independent biological replicates. Results expressed as mean +/-S.D. * p<0.05, **p<0.01, ***p<0.001; ANOVA-1.\n\n**Table 1.**\n Relative expression of heme synthesis enzymes.(a) Fold change expression of the 8 enzymes of the heme synthesis pathway, based on normalized data from bulk RNAseq or proteomics analysis, extracted from published datasets. (b) Normalized gene expression counts of heme synthesis enzymes from in vivo mouse blastocysts analyzed by RNAseq.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>a</th>\n      <th></th>\n      <th colspan=\"4\">Human ESCs</th>\n      <th colspan=\"2\">Mouse ESCs</th>\n      <th>b</th>\n      <th colspan=\"3\">Mouse blastocysts</th>\n    </tr>\n    <tr>\n      <th></th>\n      <th>Source</th>\n      <th colspan=\"2\">Di Stephano et al.</th>\n      <th>Grow et al.</th>\n      <th>Sperber et al.</th>\n      <th>Nakamura et al.</th>\n      <th>This study</th>\n      <th></th>\n      <th colspan=\"3\">Nakamura et al.</th>\n    </tr>\n    <tr>\n      <th></th>\n      <th>Type</th>\n      <th>Proteomics</th>\n      <th colspan=\"5\">Transcriptomics</th>\n      <th>Stage</th>\n      <th>E4.5</th>\n      <th>E5.5</th>\n      <th>E6.5</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td rowspan=\"8\">Enzyme</td>\n      <td>ALAS</td>\n      <td>0,7</td>\n      <td>0,88</td>\n      <td>1,22</td>\n      <td>0,95</td>\n      <td>0,85</td>\n      <td>1,016</td>\n      <td>Alas</td>\n      <td>17</td>\n      <td>12</td>\n      <td>16</td>\n    </tr>\n    <tr>\n      <td>ALAD</td>\n      <td>0,47</td>\n      <td>0,29</td>\n      <td>0,81</td>\n      <td>0,96</td>\n      <td>0,54</td>\n      <td>0,92</td>\n      <td>Alad</td>\n      <td>40</td>\n      <td>22</td>\n      <td>33</td>\n    </tr>\n    <tr>\n      <td>HMBS</td>\n      <td>1,43</td>\n      <td>0,84</td>\n      <td>1,22</td>\n      <td>1,27</td>\n      <td>1,15</td>\n      <td>0,81</td>\n      <td>Hmbs</td>\n      <td>73</td>\n      <td>65</td>\n      <td>60</td>\n    </tr>\n    <tr>\n      <td>UROD</td>\n      <td>1,12</td>\n      <td>1,05</td>\n      <td>0,62</td>\n      <td>1,10</td>\n      <td>1,33</td>\n      <td>0,64</td>\n      <td>Uros</td>\n      <td>2,2</td>\n      <td>5,4</td>\n      <td>5,7</td>\n    </tr>\n    <tr>\n      <td>UROS</td>\n      <td>2,09</td>\n      <td>1,58</td>\n      <td>0,78</td>\n      <td>1,12</td>\n      <td>0,50</td>\n      <td>0,75</td>\n      <td>Urod</td>\n      <td>43</td>\n      <td>53</td>\n      <td>80</td>\n    </tr>\n    <tr>\n      <td>CPOX</td>\n      <td>1,24</td>\n      <td>2,07</td>\n      <td>1,02</td>\n      <td>1,25</td>\n      <td>1,12</td>\n      <td>0,87</td>\n      <td>Cpox</td>\n      <td>22</td>\n      <td>13</td>\n      <td>14</td>\n    </tr>\n    <tr>\n      <td>PPOX</td>\n      <td>2,09</td>\n      <td>1,54</td>\n      <td>1,16</td>\n      <td>1,37</td>\n      <td>1,25</td>\n      <td>0,56</td>\n      <td>Ppox</td>\n      <td>14</td>\n      <td>7</td>\n      <td>7</td>\n    </tr>\n    <tr>\n      <td>FECH</td>\n      <td>0,98</td>\n      <td>1,10</td>\n      <td>1,28</td>\n      <td>0,77</td>\n      <td>1,06</td>\n      <td>1,30</td>\n      <td>Fech</td>\n      <td>8</td>\n      <td>26</td>\n      <td>28</td>\n    </tr>\n  </tbody>\n</table>\n\nExperimentally, to trigger the exit of the na\u00efve mESC state, the serum-free media with na\u00efve cytokines cocktail (LIF; CHIR99021 and PD0325901; 2iL) is switched to a media with fibroblast growth factor 2 (FGF2) and activin A for 48 hr, allowing mESCs to gain post-implantation features (EpiLC). Using succinylacetone (SA) to inhibit heme synthesis, by interfering with ALAD activity (Sassa and Kappas, 1983), and 10 \u03bcM of hemin for its rescue, we show that, when mESCs are pushed for 48 hr to exit the na\u00efve stage (EpiLC) in the presence of SA (EpiLC +SA), the expression of the primed gene markers Fgf5, Fgf15, Otx2, Oct6, Dnmt3a, and Zic2 is significantly reduced (Figure 1b). In addition, the loss of expression for na\u00efve markers (Esrrb, Tfcp2l1, Klf2-4, and Tbx3) is partially prevented in these conditions. This was confirmed at the protein level by a decrease in the abundance of OTX2 and DNMT3A analyzed by western blot (Figure 1c) and the increase in the abundance of KLF4 by immunofluorescence, when cells were treated with SA during the transition (Figure 1d). Furthermore, the subcellular localization of TFE3, mainly nuclear in na\u00efve cells and only cytosolic in primed cells (Mathieu et al., 2019; Betschinger et al., 2013), remains nuclear in the presence of SA (Figure 1D). Hemin supplementation restores the gene expression, the protein abundance and the subcellular localization of TFE3 to levels similar to those found in cells incubated without SA (Figure 1a\u2013d). To consolidate this, we then generated an ALAD KO line, which was maintained in culture with hemin supplementation to avoid degeneration. In accordance with the results obtained with SA, removal of hemin during the transition perturbed the exit from the naive state (Figure 1\u2014figure supplement 1). Finally, principal component analysis (PCA) of the normalized gene expression from RNA sequencing also reveals the segregation of the cells treated with SA (EpiLC + SA) from either the controls (EpiLC) or the cells rescued with hemin (EpiLC +SA + H) (Figure 1e). An impairment of the na\u00efve state exit is also observed to some extent in human ESCs (Elf1 cell line) when pushed to exit in TeSR for 4 days (Figure 1\u2014figure supplement 1c). Overall, these results confirm the functional screen data by showing that the inhibition of heme biosynthesis impairs the naive-to-primed mESC transition.\n\n### Heme synthesis inhibition prevents the activation of key signaling pathways associated with implantation\n\nHeme deficiency is canonically sensed in mammals through the nuclear factor BACH1 (reviewed in Zhang et al., 2018), increasing its nuclear localization or the activation of the integrated stress response (ISR; reviewed in Pakos-Zebrucka et al., 2016) through the action of the heme-regulated inhibitor (HRI). While we did not observe an accumulation of BACH1 in the nucleus following SA treatment (Figure 2\u2014figure supplement 1a), we did observe an increase in EIF2\u03b1 phosphorylation and a reduction in global protein translation, both showing activation of the ISR (Figure 2\u2014figure supplement 1b-c). However, activation of this pathway with a chemical activator of HRI, BTdCPU (Chen et al., 2011), effectively reducing protein translation to the extent of SA, did not prevent the exit from the naive stage (Figure 2\u2014figure supplement 1d-e). Thus, to identify the mechanisms involved in the failure of the cells to properly undergo the transition, we performed a gene set enrichment analysis (GSEA) with the KEGG pathways (Kyoto Encyclopedia of Genes and Genomes) between EpiLC and EpiLC +SA RNAseq data. While genes involved in xenobiotic detoxification or cytochrome P450 are expected to be upregulated in response to SA-induced heme deprivation (Vinchi et al., 2014; L\u00e4ms\u00e4 et al., 2012), many crucial signaling pathways involved in development are shown negatively enriched in SA-treated condition (Figure 2a). We thus focused our attention on the pathways directly associated with the naive-to-primed transition that is triggered by the combined presence of FGF2 and activin A in the growth culture medium, especially since detailed analysis of the PC loadings driving the PC2 separation (Figure 1e) highlights several SMAD pathway-related proteins (Figure 2\u2014figure supplement 1f). On the one hand, the MAPK-ERK1/2 pathway (downstream of FGF2) was not activated in EPI +SA cells, as shown by the absence of phosphorylation of ERK1/2 (Figure 2\u2014figure supplement 1g). On the other hand, the activin A-SMAD pathway activation was also compromised as shown by the difference in nuclear localization of SMAD2/3 when compared to the EpiLC cells (Figure 2\u2014figure supplement 1h) or SMAD3 phosphorylation (Figure 2b\u2013c). Interestingly, chemical inhibition of those two pathways by 1 \u03bcM PD0325901 (MEKi) and 5 \u03bcM SIS3 (TGF\u03b2-SMADi) (Figure 2\u2014figure supplement 1g-h) shows that the inhibition of the SMAD translocation mimics the transition defects observed with SA as revealed by the gene expression analysis of naive and primed markers (Figure 2\u2014figure supplement 1i). This pathway inhibition was especially observed after 24 h of treatment, and concomitant with the defect in gene expression (Figure 2b\u2013d). Addition of two- or threefold increased doses of activin or FGF2 did not rescue the gene expression pattern, indicating a strong inhibition (Figure 2\u2014figure supplement 1j). Mechanistically, previous reports have shown that heme biosynthesis consumes a lot of the glycine and succinyl-CoA precursors in the mitochondria, acting as some sort of \u2018succinyl-CoA sink\u2019 (Atamna, 2004). We thus hypothesized that heme synthesis inhibition would increase the abundance of succinyl-CoA in mitochondria, that could then exit the organelle in the form of succinate and accumulate in other cell compartments (Atamna, 2004). The accumulation of succinate precursor is reinforced by the observed decreased abundance of the succinate dehydrogenase (SDH), consuming succinate in the TCA, known to be destabilized by the loss of heme (nicely reviewed in Kim et al., 2012; Figure 2e). Together, these results indicate a possible accumulation of succinate in response to heme synthesis inhibition, that could potentially cause the transition defect. To test this hypothesis, we used butylmalonate (BM), an inhibitor of the dicarboxylate carrier (DIC; SLC25A10), to prevent leakage of succinate from the mitochondrial matrix to the cytosol (Mills et al., 2018), and this nicely resumed the transition as shown by the gene expression profile of mESCs in the EpiLC + SA + BM condition (Figure 2f).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/78546/elife-78546-fig2-v2.jpg)\n\n**Figure 2.:** (a) GSEA performed on RNAseq data were analyzed for KEGG pathways. Up- and Down-regulated KEGG pathways in EpiLC + SA versus EpiLC Ctl, represented as normalized enrichment scores (NES). (b) Western blot analysis of the time course protein abundance of SMAD3 and phospho-SMAD3 relative to GAPDH as a loading control for cells in na\u00efve conditions (2iL), in transition for up to 2 days to the Epi stage (EpiLC) with 0.5 mM SA as heme synthesis inhibitor. Representative blot of 5 biological replicates, and quantified in (c). (d) Time course gene expression analysis of Fgf5 and Tbx3 assessed by RT-qPCR, expressed as mean +/-S.D. ANOVA-2. n=5 independent biological replicates. (e) Western blot analysis of SDHB during the transition, relative to GAPDH as loading control. Representative blot of 2 biological replicates. (f) Relative expression of na\u00efve and primed markers of mESCs in na\u00efve conditions (2iL), in transition for 2 days to the Epi stage (EpiLC) with or without 0.5 mM SA (EpiLC + SA), 1 \u00b5M butylmalonate (+BM) or 5 \u00b5M of Sirt7 inhibitor supplementation, assessed by RT-qPCR relative to Gapdh expression. n=3 independent biological replicates. ANOVA1 (g) Median fluorescence intensity of succinyllysine residues measured by flow cytometry for mESC in transition with 5 \u00b5M Sirt7 inhibitor (Sirt7i). n=3 independent biological replicates, ANOVA1. (h) Representative western blot analysis of the abundance of the total and phosphorylated forms of SMAD3 and ERK1/2, using GAPDH as loading control, for mESC in transition with a Sirt7 inhibitor (Sirt7i), and quantified in (i).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/78546/elife-78546-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (a) Representative Confocal micrographs of mESCs in na\u00efve stage (2iL) or in transition (EpiLC) for BACH1. Dapi as a nuclear counterstain. Scale bar = 20 \u00b5m. (b) Western blot analysis of the protein abundance of phospho-eukaryotic translation initiation factor 2\u03b1 (EIF2\u03b1) relative to GAPDH as a loading control for cells in na\u00efve conditions (2iL), in transition for 2 days (EpiLC) with 0.5 mM SA (+SA) and 10 \u00b5M hemin (SA +H) supplementation. (c) Representative western blot of SunSET analysis (puromycin incorporation assay) and quantification of puromycin-labelled protein abundance relative to histone 3 (H3) as a loading control. Cells were exposed 10 minutes to 10 \u03bcg/ml of puromycin. Data presented as mean intensity +/-S.d. One-way ANOVA. n=3 independent biological replicates. (d) SunSET of mESCs cultured in 2iL and exposed or not to 0.5 mM of succinylacetone (SA) or to 0.5, 2 or 5 \u03bcM of BTdCPU for 2 days. (e) Relative expression of na\u00efve and primed markers by RT-qPCR relative to Gapdh expression in mESCs grown in na\u00efve conditions (2iL), in transition for 2 days (EpiLC) with 0.5 mM SA (+SA) or 2 \u00b5M BTdCPU. S.d *p<0.05, **p<0.01, ***p<0.001. One-way ANOVA. n=3 independent biological replicates. (f) Relevant PC loadings. Genes contributing to principal components separating na\u00efve 2iL, EpiLC with or without SA and hemin during the exit. (g) Western blot analysis and quantification of the protein abundance of ERK1/2 and phospho-ERK1/2 (Thr202/Tyr204) relative to GAPDH as a loading control for cells in na\u00efve conditions (2iL), in transition for 2 days to the Epi stage (EpiLC) with 0.5 mM SA, 10 \u00b5M hemin (H) supplementation and/or 1 \u00b5M MEK inhibitor (PD0325901; MEKi). Representative blot of three biological replicates. (h) Confocal analysis of the immunostaining of SMAD2/3 (green) in cells in na\u00efve conditions (2iL), in transition to the Epi stage (EpiLC) with SA, hemin (H) supplementation or a SMAD3 inhibitor (SIS3, 5 \u00b5M), representative of three independent experiments. (i) Relative expression of na\u00efve and primed markers of mESCs in na\u00efve (2iL), in transition (EpiLC) with or without SA 0.5 mM, Hemin 10 \u00b5M, SIS3 5 \u00b5M, MEKi 1 \u00b5M (PD0325901), or with FGF2 and Activin A supplementation (j) assessed by RT-qPCR relative to Gapdh expression. Data shown as mean +/-S.D. n=3 independent biological replicates. ANOVA1.\n\nSuccinate accumulation and/or SDH ablation is known to increase protein lysine succinylation (Smestad et al., 2018), an effect that is observed upon SA treatment and that we mimicked by inhibiting Sirt7, a cytosolic and nuclear desuccinylase (Figure 2g). The ability of this molecule to mimic SA in the pathway\u2019s inhibition (Figure 2h\u2013i) and to prevent the exit of the naive state (Figure 2f) points at succinylation events as the cause of the transition defects.\n\n### Blockade of heme synthesis in naive mESCs triggers the activation of a 2C-like program\n\nIn addition to this defect in the exit from the naive state, we found that treatment of na\u00efve 2iL cells with SA also modifies the global gene expression as 2iL + SA samples cluster away from 2iL control cells when analyzed by PCA performed on RNAseq data (Figure 3a). Our attention was thus drawn on markers reported to be expressed in the two-cell embryo. Indeed, a small proportion of the mESC population actually expresses a gene signature reminiscent of the 2 C stage, these cells thus called 2C-like cells (2CLCs) (Macfarlan et al., 2012). Indeed, the expression of the 142 genes previously identified as upregulated in this 2C-like population (Macfarlan et al., 2012) was statistically upregulated in 2iL versus 2iL + SA (Figure 3b) and this was further confirmed by RT-qPCR for a selection of the most common markers (Figure 3c) and further supported by the upregulation of the 2CLC markers in ALAD KO mESCs (Figure 3d). As the studies that characterize this 2C-like population report an important heterogeneity at the population level (Macfarlan et al., 2012; Eckersley-Maslin et al., 2016), we quantified the fraction of ZSCAN4+ and MUERVL-GAG+ cell populations by immunostaining followed by confocal microscopy observations. As shown in Figure 3e and f, treatment with SA increases the fraction of 2C-like cells by two to three folds. A similar trend is observed for genes involved in the ZGA for hESCs (Taubenschmid-Stowers et al., 2022; Figure 3g).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/78546/elife-78546-fig3-v2.jpg)\n\n**Figure 3.:** (a) Principal component analysis (PCA) of the normalized RNAseq data transcripts of na\u00efve mESCs (2iL) treated for 48 hr with 0.5 mM SA \u00b1 10 \u03bcM Hemin. (b) Boxplot of mean Log2FC of 2 C markers defined in Macfarlan et al., 2012 or all analyzed mRNAs in 2iL +SA versus 2iL control cells. Statistical significance is calculated by Student T-test. p<0.001. (c) Relative expression of 2 C gene markers of mESCs assessed by RT-qPCR relative to Gapdh expression and to 2iL naive control represented as a Tukey box and whisker plot. The line represents the median and the +is the mean. Oct4=octamer-binding transcription factor 4, Muervl = murine endogenous retrovirus-like, Dux = double homeobox, Zfp352=Zinc-finger protein 352, Tcstv1=2-cell-stage variable group member 1, Dub1=Ubiquitin Specific Peptidase 36, Zscan4c=Zinc Finger And SCAN Domain Containing 4, isoform c. n=9. (d) Gene expression analysis of 2CLC markers of ALAD KO mESCs grown for 2 days with or without 10 \u00b5M Hemin, assessed by RT-qPCR. n=3 biological replicates. ANOVA1 (e) Immunostaining of ZSCAN4 or MUERVL-GAG in untreated naive cells (2iL control) or treated with SA at 0.5 mM. DAPI is used as a nuclear counterstain. Scale bar = 20 \u03bcm. (f) Percentage of MUERVL- or ZSCAN4-positive cells in the whole population of na\u00efve (2iL) mESCs or na\u00efve treated or not with SA (2iL SA), counted from confocal micrographs as in (f) with 10 images per condition for at least 1000 cells per condition. n=4 independent biological replicates. Results expressed as mean +/-S.D. ** p<0.01; T-Tests. (g) Relative expression of ZGA related genes in hESCs assessed by RT-qPCR relative to TBP expression and normalized to naive 2iL +IGF + FGF2 (2iLIF) control, with or without 0.5 mM of SA. n=3 independent biological replicates. Results expressed as mean +/-S.D. * p<0.05, **p<0.01, ***p<0.001; t-tests.\n\n### The induction of the 2C-like program is succinate-dependent\n\nInterestingly, and as opposed to the naive-to-primed setup, the observed phenotype seems independent of heme as it is not rescued by hemin supplementation (Figure 4a\u2013b). We thus investigated the putative role of succinate accumulation in the phenotype. The abundance of succinylated proteins in naive cells treated or not with SA was assessed using a pan-succinyllysine antibody in confocal microscopy and in flow cytometry (Figure 4c). In basal conditions, the bulk of succinyllysine modifications are located in the mitochondria (Figure 4\u2014figure supplement 1), as expected. However, a dramatic increase in the signal associated with succinylated proteins is observed in all subcellular compartments when heme synthesis is inhibited, an effect that is not (or very partially) rescued upon hemin supplementation (Figure 4c). We then postulated that blocking the exit of this metabolite from mitochondria would prevent the acquisition of widespread succinyl-lysine post-translational modifications and impair the acquisition of the 2C-like cells markers, only if this phenotype is dependent on increased succinate concentration. As hypothesized, addition of BM combined to SA is correlated to a rescue of both the increase in 2 C markers and the proportion of ZSCAN4 or MUERVL-positive cells in the population (Figure 4a and d). Altogether, this shows that an accumulation of extra-mitochondrial succinate upstream of heme synthesis in naive mESCs induces a 2C-like phenotype, reinforced by the inability of glycine to induce same effect (Figure 4a). In order to observe the levels of protein succinylation, and by extension the levels of succinate, in endogenous 2CLCs of the mESC population, we took advantage of a previously described reporter cell line for this 2C-state, characterized by the stable insertion of a construct containing a turboGFP-coding gene under the control of the MUERVL long terminal repeat (2 C:::turboGFP; Ishiuchi et al., 2015; Rodriguez-Terrones et al., 2020). The simultaneous observation of the endogenous GFP fluorescence, the absence of OCT4 (Macfarlan et al., 2012) and the immunostaining of the succinyl-lysine residues showed an increase in protein succinylation specifically in the 2C-like cells (GFP+; OCT4-) sub-population, as quantified by flow cytometry (Figure 4e\u2013f).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/78546/elife-78546-fig4-v2.jpg)\n\n**Figure 4.:** (a) Relative expression of 2 C markers of mESCs assessed by RT-qPCR relative to Gapdh expression and normalized to 2iL naive control, in mESCs treated for 2 days with 0.5 mM SA (2iL SA), with or without 10 \u03bcM Hemin (2iL SA + H), 1 \u03bcM diethyl butylmalonate (2iL SA + BM), 1 \u03bcM BM alone (BM) or 10 mM glycine. S.D. * p<0.05, **p<0.01, ***p<0.001. ANOVA-1. n=3\u20136 independent biological replicates. (b) Boxplot of mean Log2FC of 2 C markers defined in Macfarlan et al., 2012 or all analyzed mRNAs in 2iL + SA + H versus 2iL control cells. Statistical significance is calculated by Student T-test. p<0.001. (c) Immunostaining of succinylated lysine residues (green) in mESCs treated for 2 days with 0.5 mM SA, with or without 10 \u03bcM Hemin (SA + Hemin) and quantified by flow cytometry. Representative image of n=3 independent experiments. Scale bar = 20 \u03bcm. Results expressed as median fluorescence +/-S.D. * p<0.05, **p<0.01; ANOVA-1 (d) Percentage of MUERVL or ZSCAN4-positive cells in the whole population of na\u00efve (2iL) mESCs or naive cells treated for 2 days with SA (2iL SA) with or without 10 \u03bcM hemin (2iL SA + H) or 1 \u03bcM diethyl butylmalonate (2iL SA + BM). n=4 independent biological replicates. Results expressed as mean +/-S.D. * p<0.05, **p<0.01, ***p<0.001; ANOVA-1. (e) Immunostaining of succinyllysine residues (Red) and Oct4 (cyan) of TBG4 cells (ES-E14TG2a mESCs with a 2C-GFP (green) reporter construct) (Mills et al., 2018). Representative image of n=3 independent experiments. Scale bar = 20 \u03bcm. Arrows indicate 2CLCs according to the GFP reporter. (f) Quantification of the median fluorescence intensity of the succinyllysine residues in the GFP +and GFP- populations of TBG4 mESCs separated by flow cytometry. n=4 independent biological replicates. * p<0.05, T-test.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/78546/elife-78546-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Immunostaining of succinyllysine residues (green) and OXPHOS complexes (red) in mESCs 2iL na\u00efve control, in mESCs treated with 0.5 mM SA (+SA), with or without 10 \u03bcM Hemin (+SA + H). DAPI is used as nuclear counterstain. Representative images of n=3 independent experiments. Scale bar = 20 \u03bcm.\n\nSince we showed that the increase in the reprogramming of some mESCs to a 2C-like state after heme synthesis inhibition was the result of succinate exit from mitochondria, we then aimed to further confirm these results, by inducing a mitochondrial accumulation of succinate, independently of heme biosynthesis inhibition, using Atpenin A5 (AA5), an SDH inhibitor (Miyadera et al., 2003). AA5 induces the protein lysine succinylation (Figure 5a), an increase in the number of ZSCAN4-positive cells (Figure 5b) and the expression of 2 C markers (Figure 5c and e). These effects were counteracted by the addition of BM to prevent the succinate exit from the mitochondria (Figure 5b), confirming the involvement of succinate in the process.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/78546/elife-78546-fig5-v2.jpg)\n\n**Figure 5.:** (a) Immunostaining of succinylated lysine residues (green) in mESCs in 2iL media or treated with 250 nM AA5. Representative image of n=3 independent experiments and quantified by flow cytometry. T-test. Scale bar = 20 \u03bcm (b) Percentage of ZSCAN4-positive cells in the whole population of na\u00efve (2iL) mESCs or na\u00efve treated with 250 nM AA5, with or without 1 \u03bcM diethyl butylmalonate (BM), counted from confocal micrographs with 10 images per conditions for at least 1000 cells per condition. n=3 independent biological replicates. ANOVA1 (c) Relative expression of the 2CLC genes in response to 250 nM AA5 or 0.5 \u00b5M retinoic acid (RA), with or without 10 \u00b5M HX531 and 100 nM AGN193109. (d-e) Relative expression of 2C-gene markers of mESCs assessed by RT-qPCR relative to Gapdh expression in na\u00efve 2iL mESCs and treated with 16 mM dimethyl succinate, 40 mM sodium succinate (Na succinate), 1 \u03bcM of MCT1 and 4 inhibitor (AZD3965; AZD) and 1 \u03bcM SUCNR1 receptor antagonist (NF-56-EJ40; NF56). Data shown as mean +/-S.D. *p<0.05, **p<0.01, ***p<0.001. ANOVA-1 followed by a Tukey post-test. n=4 independent biological replicates. (f) Graphical representation of the succinate-induced 2CLC reprogramming. Created with https://www.biorender.com/.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/78546/elife-78546-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Immunostaining of HIF1\u03b1 (green), OCT4 as stemness marker (red) and DAPI as nuclear counterstain in mESCs 2iL naive control, in mESCs treated with 100 \u03bcM of CoCl2 as positive control or 0.5 mM SA and 250 nM AA5. Representative images of n=3 independent experiments. Scale bar = 20 \u03bcm.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/78546/elife-78546-fig5-figsupp2-v2.jpg)\n\n**Figure 5\u2014figure supplement 2.:** (a) Immunostaining of of trimethylated histone 3 (H3) residues (green) in mESCs 2iL na\u00efve control, treated with 0.5 mM SA (+SA) or with 250 nM AA5 (+AA5). Scale bar = 20 \u03bcm. (b) Relative quantification of the methylated histone 3 fluorescent signal from confocal analysis. Data shown as mean +/-S.D. *p<0.05, **p<0.01, ***p<0.001. N.S. p>0.05 from ANOVA-1 analysis. n=3 independent biological replicates, with at least 200 cells per condition analyzed. (c) Immunostaining of of 5-methylcytosine (5mC; green) in mESCs 2iL na\u00efve control, treated with 0.5 mM SA (+SA) or with 250 nM AA5 (+AA5). DAPI is used as nuclear counterstain. Scale bar = 20 \u03bcm. (d) Relative quantification of the 5mC fluorescent signal from confocal analysis. Data shown as mean +/-S.D. n=2 independent biological replicates. (e) Relative quantification of the trimethylated histone 3 (H3) residues signal from confocal analysis of naive 2iL mESC or treated with 250 nM JIB04 as a HDM inhibitor and 5 \u00b5M TETin-C35 as a TET DNA demethylase inhibitor. Data shown as mean +/-S.D. n=3 independent biological replicates. T-tests (f) Relative expression of 2 C gene markers of mESCs assessed by RT-qPCR relative to Gapdh expression. Data shown as mean +/-S.D. *p<0.05, **p<0.01, ***p<0.001. T-test (e) or ANOVA-1 (f). n=3 biological replicates.\n\n### Succinate acts through the activation of its receptor, SUCNR1, to trigger the 2C-like program\n\nOnce in the cytosol, succinate could either inhibit the \u03b1-ketoglutarate (\u03b1KG)-dependent-dioxygenases or exit the cell through the monocarboxylate transporters (MCTs) and act as an extracellular signal molecule. Indeed, succinate is a reaction product of hydroxylation reactions catalyzed by \u03b1KG-dependent dioxygenases. Three families of dioxygenases are known to be sensitive to an increase in succinate concentration: the prolyl-hydroxylases (PDHs), the Ten-eleven translocation (TET) methylcytosine dioxygenases and the histone demethylases (HDM). Of these three classes, we ruled out a role for PHDs, responsible for HIF1\u03b1 degradation, as the abundance of this transcription factor was not increased by SA nor by AA5 treatment, demonstrating a lack of stabilization following a putative PHD inhibition (Figure 5\u2014figure supplement 1). Since recent reports in the literature have highlighted a crucial role of the epigenetic landscape and a role of the TET proteins in the acquisition of the 2CLC phenotype (Eckersley-Maslin et al., 2016; Huang et al., 2021; Sch\u00fcle et al., 2019; Lu et al., 2014; Yang et al., 2016), we then focused our attention on the histone 3 (H3) and DNA methylation landscapes and observed a robust increase in the amount of trimethylation of lysines 4, 9, and 27 of H3 (H3K4,-K9, -K27) along with an increase in the global abundance of 5mC when mESCs were treated with either SA or AA5 (Figure 5\u2014figure supplement 2a-d). However, chemical inhibition of HDMs by JIB04 (Wang et al., 2013) and/or TET by TETin-C35 (Singh et al., 2020) does not trigger a rise in the proportion of 2CLCs or in 2 C marker expression (Figure 5\u2014figure supplement 2e-f). We then suspected that succinate could act instead as a paracrine signal after its release in the extracellular media. Indeed, exogenous supplementation with a membrane impermeable (sodium succinate) or permeable (dimethylsuccinate) form of succinate were able to increase the 2CLC marker expression (Figure 5d). We further found that inhibition of the succinate exit through the plasma membrane, by targeting MCT1 and 4 with the AZD3965 inhibitor (Beloueche-Babari et al., 2017; Reddy et al., 2020) combined to inhibition of the succinate receptor SUCNR1 by NF-56-EJ40 (Haffke et al., 2019) is able to bring down the rise in 2CLC marker expression triggered by AA5 (Figure 5e). Recent reports have shown that retinoic acid (RA) also increases the 2CLC population, an effect mediated by the retinoic acid receptor RAR but not the RXRs (Iturbide et al., 2021). While the induction of the 2CLC gene signature in response to AA5 is similar to RA, the mode of action seems to involve both RAR and RXR since the effect is rescued by addition of both inhibitors, AGN193109 and HX531, respectively (Figure 5c). These findings strongly support succinate acting as a paracrine/autocrine signal upstream of RAR/RXR transcriptional activity. Together, these sets of data highlight the critical role of succinate in the acquisition and maintenance of pluri/totipotent states in mESCs by a totally new mechanism.\n\n## Discussion\n\nThe comparison of two different genome-scale CRISPR screens in the exit of the na\u00efve state of mouse and human ESCs (Mathieu et al., 2019; Li et al., 2018) revealed the importance of heme biosynthesis for the transition to another pluripotent state, the primed state. Using succinyl acetone (SA), a specific inhibitor of ALAD that catalyzes the second reaction of the pathway, and hemin to rescue the heme defect, we first confirmed the requirement of this pathway for the naive-to-primed transition in mESCs. This is in accordance with the embryonic lethality at the implantation stage of mouse embryos knockout for the heme synthesis pathway enzymes since the naive-to-primed transition recapitulates, in vitro, this critical step (shown for HMBS Lindberg et al., 1996, UROS Bensidhoum, 1998, UROD Phillips et al., 2001, CPOX Conway et al., 2017 and FECH Magness et al., 2002). RNAseq analysis of na\u00efve cells undergoing transition to the primed stage in the presence of SA with or without addition of hemin revealed a failure to properly activate the MAPK and TGF\u03b2-SMAD pathways in response to heme biosynthesis inhibition. It has been previously demonstrated that the proper activation of these two pathways is required to proceed with the transition to the primed stage (Tsanov et al., 2017; Jiapaer et al., 2018; Senft et al., 2018; Arman et al., 1998). While the inhibition of SMAD3 was able to mimic the effect observed by heme synthesis inhibition, the inhibition of MAPK by MEK inhibition proved to be inefficient at blocking the process, in contradiction to its role in the progression of pluripotency (Tsanov et al., 2017; Jiapaer et al., 2018; Arman et al., 1998). Such a connection between heme synthesis inhibition and signaling pathways has only been reported once in PC12 neuronal cells, with SA blocking the activation of the MAPK despite the presence of nerve growth factor (NGF) (Zhu et al., 2002). Thus, it seems to be a conserved mechanism among various cell identities/types, as it is also observed in our study for cells responding to FGF2 signals. While the link between heme and these crucial signaling pathways remains unknown, it brings to light a crucial importance of this metabolite and its synthesis pathway, so far poorly understood, in the context of pluripotency.\n\nAside from its effect on the exit of the na\u00efve stage, we showed here that the inhibition of heme synthesis also triggers a reprogramming toward a 2C-like stage. Indeed, mESCs cultured in 2iL conditions have been previously defined as a heterogenous population that naturally includes a small percentage of cells displaying features of the two-cell stage embryo (Macfarlan et al., 2012; Rodriguez-Terrones et al., 2020). Interestingly, this 2CLC population is transient and cycles back and forth to a naive pluripotency state (Macfarlan et al., 2012; Fu et al., 2020). Unexpectedly, heme synthesis inhibition favors this reprogramming as shown by the increase in 2C-like markers in the whole population and the proportion of ZSCAN4 or MUERVL-positive cells. Strikingly, this effect is clearly dependent on the accumulation of succinate as it is (i) not rescued by hemin, (ii) blocked by inhibition of the mitochondrial succinate transporter and (iii) phenocopied by SDH inhibition. Additionally, MUERVL-positive cells spontaneously emerging in na\u00efve ESC colonies endogenously display a high level of succinylated proteins, supporting a role for this metabolite in the identity of the 2C-like state. The role of several metabolites in the gain of 2CLC features has already been recently unveiled, highlighting a role for acetate, lactate, and D-ribose (Rodriguez-Terrones et al., 2020). This metabolite screening also showed a positive effect of succinate on the 2C-like features acquisition. Beyond its role in the cellular metabolism, we show here that the succinate accumulation outside mitochondria leads to a global reduction in cytosine demethylation activity of the TETs and histone demethylation as previously observed in cancers after accumulation of succinate or SDH mutations (Letouz\u00e9 et al., 2013; Xiao et al., 2012). However, previous reports are somewhat discordant regarding the role of TETs in the acquisition of the 2CLC phenotype as their effect seems to be dependent on their interacting partners (Eckersley-Maslin et al., 2016; Huang et al., 2021; Sch\u00fcle et al., 2019; Lu et al., 2014). For example, while TET2 could cooperate with PSPC1 (Paraspeckle Component 1) to reduce the expression of the retrotransposon MuERVL (Guallar et al., 2018), binding of the TET proteins with SMCHD1 (structural maintenance of chromosomes flexible hinge domain containing 1) prevents the demethylation of the Dux gene locus and thus prevents its expression (Huang et al., 2021). Succinate accumulation would result in a global decrease in the activity of all 3 TET isoforms, resembling those of a TET triple KO, already shown to induce the 2 C phenotype (Lu et al., 2014). The methylation landscape of histones, especially H3, is also highly dynamic both in vivo, at the time of the zygote genome activation (ZGA) that takes place at the 2C-stage, and in the 2CLC conversion with remodeling of H3K4me3, H3K9me3, and H3K27me3 (Zhang et al., 2021; Wang et al., 2018; Yang et al., 2022) (extensively reviewed in Xia and Xie, 2020). Similarly to the situation with the TETs, the action of HDM on the loss or acquisition of 2C-like features in vitro is complex, as loss of KDM1a (lysine demethylase 1 a) is shown to promote the expression of Zscan4 and MuERVL (Macfarlan et al., 2011) whereas loss of KDM5a and b decreases the expression of the markers and blocks the ZGA in vivo (Dahl et al., 2016). However, while the literature highlights a role for these modifications of the epigenetic landscape in the 2CLC emergence, this is not supported by the data presented here. This discrepancy could be due to differences in the culture conditions, as these previous studies use mESC grown in serum +LIF conditions, while we use ground na\u00efve mESCs (in 2iL and serum-free culture). Such difference has been previously described in the establishment of another pluripotent state of ESCs, the paused state (Xu et al., 2022). Interestingly, instead of an epigenetic rewiring as the major cause of 2CLC reprogramming, our data shed light on succinate acting as a paracrine/autocrine signal, able to trigger the emergence of 2CLCs by an MCT-dependent export and the activation of SUCNR1 expressing cells. Further studies are now needed to precisely dissect which downstream actors are truly responsible for the activation of the 2 C transcriptional program.\n\nOur study thus brings an additional and different example of metabolic control of pluripotency, and adds succinate to previously reported metabolites such as S-adenosylmethionine (SAM) (Sperber et al., 2015), alpha-ketoglutarate (\u03b1KG) (Carey et al., 2015; Tischler et al., 2019), glutamine (Tohyama et al., 2016), acetyl-CoA (Moussaieff et al., 2015), lactate or D-ribose (Rodriguez-Terrones et al., 2020) that are known to regulate the pluripotent states mostly through their contribution to modifications of the epigenetic landscape (reviewed in Tsogtbaatar et al., 2020). In addition to these previous studies, we highlight a role of succinate that goes beyond epigenetic landscape regulation but instead influences pluripotency regulation through protein succinylation and a paracrine effect. Further emphasis on the importance of succinate in early development is also demonstrated by the embryonic lethality of the SDH subunits in mice (Piruat et al., 2004; Siebers et al., 2018; Lepoutre-Lussey et al., 2016; Tak\u00e1cs-Vellai et al., 2021). Altogether, these results indicate a critical role of both heme and succinate in the progression of the pluripotency continuum, ranging from the 2CLCs on one hand and to the acquisition of primed pluripotency on the other.\n\n## Materials and methods\n\n### Cell culture and ALAD ko generation\n\nmESCs (ES-E14TG2a) or tbg4 mESCs (described in Ishiuchi et al., 2015) were cultured in N2B27 medium consisting of a 1:1 mixture of DMEM/F12 (Gibco, 31330\u2013038) and Neurobasal Medium (Gibco, 21103\u2013049) supplemented with 1 x N-2 Supplement (Gibco, 17502\u2013048), 1 x B-27 Supplement (Gibco, 17504\u2013044), 1/100 penicillin-streptomycin (Gibco, 15140\u2013122), 1 x MEM nonessential amino acids (NEAA) (Gibco, 11140\u2013035), 1 x GlutaMAX (Gibco, 35050\u2013038), 1 x sodium-pyruvate (Gibco, 11360\u2013039) and 0.1 mM \u03b2-mercaptoethanol (Gibco, 31350\u2013010). Na\u00efve mESCs were maintained on 0.2% gelatin (Sigma, G1393)-coated plates at a density of 50,000 cells/cm2 and in N2B27 medium complemented with 103 U/ml of mLIF (ESGRO, ESG1107), 3 \u03bcM of GSK3 inhibitor (CHIR99021) (Peprotech, 2520691) and 1 \u03bcM of MEK inhibitor (PD0325901) (referred to as 2iL) (SelleckChem, S1036). Cells were passaged every 2\u20133 days using accutase (Stemcell Technologies, #07920). Cells were then collected by centrifugation at 1200 rpm for 3 min and counted before seeding. The transition to EpiSC was obtained by transferring na\u00efve mESCs on 15 \u03bcg/ml fibronectin (Gibco, 33010\u2013018)-coated plates at a density of 30,000 cells/cm2 and by supplementing the N2B27 medium with 12 ng/ml of bFGF (Peprotech, 100-18B) and 20 ng/ml of activin A (Peprotech, 120\u201314 P). Coating proteins were incubated 1 hr before seeding. mESCs were maintained at 37 \u00b0C, 5% CO2 in a humidified incubator. Human ESCs, Elf1 line, were maintained of an irradiated MEF monolayer and grown in either RSeT (Stemcell Technologies) medium or in a medium composed of DMEM/F-12 media supplemented with 20% knockout serum replacer (KSR), 0.1 mM nonessential amino acids (NEAA), 1 mM sodium pyruvate, penicillin/streptomycin (all from Invitrogen), 0.1 \u2009mM \u03b2-mercaptoethanol (Sigma-Aldrich), 1 \u00b5M GSK3 inhibitor (CHIR99021), 1 \u2009\u00b5M of MEK inhibitor (PD0325901), 10 \u2009ng/ml human LIF (Chemicon), 5 ng/ml IGF1 (Peprotech) and 10 \u2009ng/ml bFGF. Cells were transferred to matrigel-coated plates prior to analysis. Exit from the na\u00efve state triggered by growing the cells in mTeSR1 (StemCell technologies) for 4 days.\n\nFor knock-out generation, one million E14 mESC were electroporated with Cas9 (0.6 \u00b5M, Sigma) and gRNA (3 \u00b5M, Synthego) as RNP complex using Amaxa nucleofector (Human Stem Cell kit 2) in presence of 10 \u00b5M Hemin 10 uM. Individual colonies were hand-picked and plated into 96-well plates. DNA was extracted using Quick Extract DNA extraction solution (Epicentre#QE09050) and nested PCR was performed. The PCR product was purified using EXO-SAP enzyme (Thermo Fisher) and sent for Sanger sequencing analysis (through Genewiz).\n\nLines were routinely tested for mycoplasma and STR authenticated.\n\n### mESC treatment\n\nThe heme inhibitor succinylacetone (SA) (Sigma, D1415) is used at a concentration of 0.5 mM. Hemin (Sigma, 51280) is used at a concentration of 10 \u03bcM in 0.1 N NaOH. Diethyl butylmalonate (BM) (Sigma, 112038) is used at a concentration of 1 mM. Atpenin A5 (Santa Cruz biotechnology, sc-202475) is used at 250 nM. SIS3 (Selleck chemicals, S7959) is used at 5 \u03bcM. NF-56-EJ40 (Axon Medchem 3056) is used at 1 \u03bcM. AZD3965 (Selleckchem S7339) is used at 1 \u03bcM. Exogenous succinate is provided as either 40 mM Sodium succinate (Sigma) or 16 mM dimethylsuccinate (Sigma) supplementation. HDM inhibition was achieved with 250 nM JIB04 (Medchem express HY-13953) and TET inhibition with 5 \u03bcM TETin-C35 (Aobious AOB11121). For retinoic acid experiments, RA, HY-14649, HX531 (HY-108521) and AGN193109 (HY-U00449) were used at 0.5 \u00b5M, 10 \u00b5M and 100 nM, respectively (all from Medchemexpress). Inhibition of Sirt7 is achieved using 5 \u00b5M of the Sirt7 inhibitor 97491 (MedChemExpress).\n\n### RNA extraction and RT-qPCR\n\nRNA was extracted after 2 days of culture with the ReliaPrep RNA Tissue Miniprep System (Promega, Z6111) following manufacturer\u2019s protocol for non-fibrous tissue by adding RNA lysis buffer on pelleted cells. RNA concentrations were quantified with the Nanophotometer N60 (Implen). Reverse transcription (RT) was performed with the GoScript Reverse Transcriptase kit Random Primers (Promega, A2801) to convert 1 \u03bcg of RNA into cDNA. Briefly, RNA was mixed with RNAse-free water to obtain 1 \u03bcg of RNA in 12 \u03bcL and heated 5 min at 70 \u00b0C. Then, 8 \u03bcL of RT mix (4 \u03bcL random primers buffer, 2 \u03bcL enzyme, 2 \u03bcL RNAse free water) was added and the reaction was performed in a thermocycler (5 min at 25 \u00b0C, 60 min at 20 \u00b0C and 15 min at 70 \u00b0C).\n\nThe qPCR was performed on the ViiA 7 Real-Time PCR System (Thermo Fisher) with 10 ng of cDNA per reaction, SYBR Green GoTaq qPCR Master Mix (Promega, A6002) and primers listed in the Table 2 at a final concentration of 300 nM. Altogether, 2 \u03bcL of cDNA (5 ng/\u03bcL), 1 \u03bcL of forward primer (6 \u03bcM), 1 \u03bcL of reverse primer (6 \u03bcM), 10 \u03bcL of Master Mix and 6 \u03bcL of RNAse-free water were added in each well. Relative expression was calculated using the 2-\u2206Ct method with GAPDH as an endogenous control.\n\n**Table 2.**\n List of primers used in qPCR.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Gene</th>\n      <th>Sequences (5\u2019 \u2192 3\u2019)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td colspan=\"2\">Mouse</td>\n    </tr>\n    <tr>\n      <td>DNMT3A</td>\n      <td>F: CTGCTGTGGAATACCCTGTTAGR: CTTTCTACCTGCTGCCATACTC</td>\n    </tr>\n    <tr>\n      <td>ESRRB</td>\n      <td>F: GCACCTGGGCTCTAGTTGCR: TACAGTCCTCGTAGCTCTTGC</td>\n    </tr>\n    <tr>\n      <td>FGF5</td>\n      <td>F: GGGATTGTAGGAATACGAGGAGTTR: CCAGAAGAATGGACGGTTGT</td>\n    </tr>\n    <tr>\n      <td>FGF15</td>\n      <td>F: TGTTTCACCGCTCCTTCTTTR: TTCTCCATCCTGTCGGAATC</td>\n    </tr>\n    <tr>\n      <td>GAPDH</td>\n      <td>F: CATGGCCTTCCGTGTTCCTR: CCTGCTTCACCACCTTCTTG</td>\n    </tr>\n    <tr>\n      <td>KLF2</td>\n      <td>F: CTAAAGGCGCATCTGCGTAR: TAGTGGCGGGTAAGCTCGT</td>\n    </tr>\n    <tr>\n      <td>KLF4</td>\n      <td>F: CCAGCAAGTCAGCTTGTGAAR: GGGCATGTTCAAGTTGGATT</td>\n    </tr>\n    <tr>\n      <td>OCT4</td>\n      <td>F: CACGAGTGGAAAGCAACTCAR: AGATGGTGGTCTGGCTGAAC</td>\n    </tr>\n    <tr>\n      <td>OTX2</td>\n      <td>F: TATCTAAAGCAACCGCCTTACGR: AAGTCCATACCCGAAGTGGTC</td>\n    </tr>\n    <tr>\n      <td>REX1</td>\n      <td>F: CCCTCGACAGACTGACCCTAAR: TCGGGGCTAATCTCACTTTCAT</td>\n    </tr>\n    <tr>\n      <td>TFCP2L1</td>\n      <td>F: GCTGGAGAATCGGAAGCTAGGR: AAAACGACACGGATGATGCTC</td>\n    </tr>\n    <tr>\n      <td>ZIC2</td>\n      <td>F: CAAGGTCCGGGTGCTTACCR: ATTAAAGGGAGGCCCCGAATA</td>\n    </tr>\n    <tr>\n      <td>TBX3</td>\n      <td>F: CTCCATTCCAGTTTGGTCAAR: CAACAGCAGCCTGGTTACAC</td>\n    </tr>\n    <tr>\n      <td>OCT6</td>\n      <td>F: TTTCTCAAGTGTCCCAAGCCR: ACCACCTCCTTCTCCAGTTG</td>\n    </tr>\n    <tr>\n      <td>DNMT3B</td>\n      <td>F: GGCAAGGACGACGTTTTGTGR: GTTGGACACGTCCGTGTAGTGAG</td>\n    </tr>\n    <tr>\n      <td>DUX</td>\n      <td>F: AAAGGAAGAGCATGTGCCAGCR: GCAGTAAGCTGTCCTGGGAAC</td>\n    </tr>\n    <tr>\n      <td>ZFP352</td>\n      <td>F: AAGTCCCACATCTGAAGAAACACR: GGGTATGAGGATTCACCCACA</td>\n    </tr>\n    <tr>\n      <td>TCSTV1</td>\n      <td>F: TGAACCCTGATGCCTGCTAAGACTR: AGATGGCTGCAAAGACACAACTGC</td>\n    </tr>\n    <tr>\n      <td>ZSCAN4C</td>\n      <td>F: CCGGAGAAAGCAGTGAGGTGGAR: CGAAAATGCTAACAGTTGAT</td>\n    </tr>\n    <tr>\n      <td>MuERV-L</td>\n      <td>F: CCCATCATGAGCTGGGTACTR: CGTGCAGATCCATCAGTAAA</td>\n    </tr>\n    <tr>\n      <td>DUB1</td>\n      <td>F: GCAGGCCAACCTCAAACAGR: CGCAGGGCTCTCCTAAATCTT</td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">Human</td>\n    </tr>\n    <tr>\n      <td>ZSCAN4</td>\n      <td>F: TGGAAATCAAGTGGCAAAAA R: CTGCATGTGGACGTGGAC</td>\n    </tr>\n    <tr>\n      <td>LEUTX</td>\n      <td>F: GCTACAATGGGGAAACTGGR: CTCTTCCATTTGGCACGCTG</td>\n    </tr>\n    <tr>\n      <td>DUX4</td>\n      <td>F: AGGAAGAATACCGGGCTCTGR: AGTCTCTCACCGGGCCTAG</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>TFCP2L1</td>\n      <td>Hs01011666_m1</td>\n    </tr>\n    <tr>\n      <td>KLF4</td>\n      <td>F: GGGAGAAGACACTGCGTCAR: GGAAGCACTGGGGGAAGT</td>\n    </tr>\n    <tr>\n      <td>ESRRB</td>\n      <td>hs01584024_m1</td>\n    </tr>\n    <tr>\n      <td>SALL1</td>\n      <td>F: AGAGAACTCACACTGGAGAGR: CATGTGTACCTTAAGATTGCCT</td>\n    </tr>\n    <tr>\n      <td>ETV4</td>\n      <td>F: CGACTCTGAAGATCTCTTCCR: TCATCACTGTCTGGTACCT</td>\n    </tr>\n  </tbody>\n</table>\n\n### Western blot analyses\n\nPellets of cells were lysed by adding protein lysis buffer 20 mM Tris-HCl; pH 7.5, 150 mM NaCl, 15% Glycerol, 2% SDS, 25 x protease inhibitor cocktail (PIC, cOmplete protease inhibitor cocktail, Roche 11697498001), 25 x phosphatase inhibitor buffer (PIB, composed of 25 mM Na3VO3, 250 mM 4-nitrophenylphosphate, 250 mM \u03b2-glycerophosphate and 125 mM NaF), 1% TRITON X-100, SuperNuclease (Sino Biologicals, 25 U/10 \u03bcL) and by pipetting up and down. The protein concentration was determined by Pierce protein assay (ThermoFisher, 22660). Samples were mixed with Laemmli buffer (SDS, \u03b2-mercaptoethanol, Bromophenol blue) and heated for 5 min at 95 \u00b0C before loading. An amount of 10 \u03bcg of proteins were loaded on SDS-containing 10 or 12% polyacrylamide gels. At the end of migration, proteins were transferred to PVDF membranes (IPFL00010) by liquid transfer. Membranes were then blocked in LI-COR Intercept blocking buffer PBS for 1 hr at RT and incubated overnight at 4 \u00b0C with the primary antibodies. Membranes were washed three times for 5 min with PBS +0.1% Tween-20 (PBST) before and after 1 h-incubation with the secondary antibodies at RT. Detections were performed and quantified with Odyssey LI-COR scanner. Primary and secondary antibodies were both diluted in Licor PBST. GAPDH was used as loading control. Primary and secondary antibodies for GAPDH detection were incubated 30 min. Antibodies and dilutions used are: anti-GAPDH 1:20000(Sigma, G8795), anti-KLF4 1:200 (R&D, AF3158), anti-Oct4 1:100 (Santa Cruz, sc-5279), anti-OTX2 1:100 (R&D, AF1979), anti-pan-succinyllysines 1:300 (PTM-401), anti-TFE3 1:400 (Sigma, HPA023881), anti-ZSCAN4 1:400 (Millipore, AB4340), anti-MUERVL-GAG 1:200 (Novus, NBP2-66963), anti-ERK1/2 1:1000 (Cell Signaling 9102), anti-phosphoERK1/2 1:1000 (Cell Signaling 9101), anti-SMAD2/3 1:1000(Cell Signaling 8685), anti-SMAD3 1:1000 (Abcam ab52903).\n\n### Immunofluorescence\n\nCells were seeded on coated glass cover (Assistent) slips 2 days before fixation with 4% paraformaldehyde (Sigma, 30525-89-4) for 15 min. Coating was performed for 1 hr with 15 \u03bcg/ml of fibronectin or with 3.5 \u03bcg/cm2 Cell-Tak (VWR, 734\u20131081) diluted in 0.1 M sodium bicarbonate. Cells were permeabilized and blocked for 30 min incubation in blocking buffer (PBS, 0.1% TRITON, 1% BSA). Immunostaining was performed by an overnight incubation of cover slips at 4 \u00b0C on 30 \u03bcL drops containing primary antibody diluted in blocking buffer. After three washes of 5 min in blocking buffer, the cells were incubated for 1 hr in the dark and at RT with 30 \u03bcL drops containing secondary antibody and DAPI (Sigma, 10 236 276 001) diluted 1:1000 in blocking buffer. Cover slips were mounted with Mowiol after three washes of 5 min in blocking buffer. Analyses were performed with a Leica TCS SP5 confocal microscope (Leica microsystems). For 5mC analysis, cells were fixed for 15 min with 4% PFA, permeabilized for 10 min with PBS-0.5% Triton X-100 and treated with 4 N HCl for 20 min to denature DNA. Cells were then washed once with distilled water a 2 hr blocking with 2% BSA and 0.5% Triton X-100. After these steps, the staining process would resume as described above, using a 5mC primary antibody (Sigma SAB2702243) diluted 1:300 in blocking buffer (PBS, 0.1% TRITON, 1% BSA).\n\n### Flow cytometry\n\nCells were detached by a 5 min incubation with Accutase and spun for 5 min at 400 g. The cell pellet was then washed with PBS-10 % FBS followed by another centrifugation. The pellet, containing at least 106 cells, was fixed by adding 100 \u03bcl of 4% PFA for 15 min. After centrifugation, the cells were permeabilized with the Invitrogen permeabilization buffer (00833356) for 30 min at room temperature. Antibodies were incubated for 1h30 at room temperature in PBS-10 % FBS and briefly vortexed every 30 min. After three washes with PBS-10 % FBS, the cells were incubated with an anti-rabbit Alexa 647 1:1000 for 1 hr. Cell pellets were washed twice before being resuspended in PBS-10 % FBS and analysed with the FACSVerse machine. TBG4 ESCs (previously published Eckersley-Maslin et al., 2016) were used for pan-succinyllysine levels measure in 2CLCs, by gating the turboGFP +population and measuring the alexa 647 intensity.\n\n### RNA sequencing\n\nSequence libraries were prepared with the Lexogen QuantSeq 3' mRNA-Seq library prep kit according to the manufacturer\u2019s protocol. Samples were indexed to allow for multiplexing. Library quality and size range were assessed using a Bioanalyzer (Agilent Technologies) with the DNA 1000 kit (Agilent Technologies, California, USA). Libraries were subsequently sequenced on an Illumina HiSeq4000 instrument. Single-end reads of 50 bp length were produced with a minimum of 1 M reads per sample.\n\nQuality control of raw reads was performed with FastQC v0.11.7, available online at: http://www.bioinformatics.babraham.ac.uk/projects/fastqc. Adapters were filtered with ea-utils fastq-mcf v1.05 (Erik Aronesty (2011), ea-utils: \u201cCommand-line tools for processing biological sequencing data; https://github.com/ExpressionAnalysis/ea-utils copy archived at Expression Analysis, 2021). Splice-aware alignment was performed with HiSAT2 against the mouse reference genome mm10. Reads mapping to multiple loci in the reference genome were discarded. Resulting BAM files were handled with Samtools v1.5 (Li et al., 2009). Quantification of reads per gene was performed with HT-seq Count v2.7.14. Count-based differential expression analysis was done with R-based Bioconductor package DESeq2. Reported p-values were adjusted for multiple testing with the Benjamini-Hochberg procedure, which controls false discovery rate (FDR).\n\n### Data analysis\n\nTMM normalized rLog transformed counts were used for Principal Component analysis using R package PCATools. Gene set enrichment analysis (GSEA) was made on gene list ranked on Log2FC using R package ClusterProfiler (Yu et al., 2012). For genes with FC >2 in MUERVL::Tomato+ list from Macfarlan et al., 2012, Z score was calculated from TMM-rLog transformed counts and plotted as heatmap using R package Heatmap.plus. Analysis was made using statistical programming language R.\n\n### Statistical analysis\n\nOne-way ANOVA statistical test followed Turkey multiple comparison test or student T-Tests were conducted on all results when indicated using GraphPad Prism version 9.1.1, GraphPad Software, San Diego, California USA, https://www.graphpad.com.\n",
+      "created_at": "2025-12-04T02:30:54.716019Z"
+    },
+    {
+      "id": "8c332c94-469a-41e5-986d-2b882e892cc3",
+      "submission_id": "4fe26f89-d8af-498f-9a15-7440f339e1c0",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Sim\u00f3n M\u00e9ndez-Ferrer, https://ror.org/013meh722 University of Cambridge United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.78546.sa0](https://doi.org/10.7554/eLife.78546.sa0)\n\nIn their study, Detraux D and colleagues provide compelling evidence demonstrating a role for heme biosynthesis on FGF-ERK and TGF \u03b2 signalling and exit from na\u00efve pluripotency, and in controlling the 2-cell-like cell state. The observations and conclusions provided by the authors are convincing and potentially relevant in the field of pluripotent cell state transitions.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Sim\u00f3n M\u00e9ndez-Ferrer, https://ror.org/013meh722 University of Cambridge United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.78546.sa1](https://doi.org/10.7554/eLife.78546.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"A critical role for heme synthesis and succinate in the regulation of pluripotent states transitions\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Mone Zaidi as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1) Are the levels of heme itself, or the mentioned 7 enzymes of the heme pathway regulated during differentiation?\n\n2) Further experiments are needed to determine whether the lack of proper Tgf \u03b2 and FGF-ERK signalling activation are cause or consequence of the observed differentiation defects. How do cells sense heme deficiency and does how heme deficiency result in inability to activate ERK/MAPK and TGF \u03b2 signaling?\n\n3) Can the authors attempt to titrate pathway inhibition to a similar level as observed in heme pathway deficient ESCs? Furthermore, can the differentiation defect be rescued upon overstimulation of FGF-ERK and TGF \u03b2 to reach WT levels?\n\n4) Analyse cell proliferation and viability after SA (or AA5) treatment. If there is an impact on cellular health, this needs to be reported and taken into careful consideration when interpreting results.\n\n5) The statement made in lines 150-152 and shown as Suppl. Figure 2b should be further supported by proper quantification using replicate assays.\n\n6) Expression levels in TS cells or in trophoblast tissue must be used as control to judge the effect size. The statement that SA treatment expands the lineage potential of ESCs needs to be supported by appropriate and statistically strong data beyond the increase in some marker genes (which are also expressed in embryonic tissues).\n\n7) Please provide direct evidence for disruption of heme biosynthesis directly instructing cells to take on a 2CLC state. How strong is the effect of inhibiting heme synthesis and succinate in inducing the 2CLC population as the absolute number of Zscan4+ or MuERVL+ cell is < 3%? The authors could use other 2CLC inducers (such as acetate (Rodriguez-Terrones, 2020) and RA (Iturbide, A., 2021) as a control, for comparison. The functional assay of 2 cell-like cells after heme synthesis inhibition should be test in vivo by 8-cell or blastocyst injection.\n\n8) Quantification and comparison of pan succinate levels in Figures4c and 5a would be required for interpretation.\n\n9) What happens with positive enriched genes in the SA-treated condition? Upregulation plot should be added to Figure 2a and discussed.\n\n10) In the section describing the upregulation of 2-cell-stage-related genes when SA is added, please add a scramble as control, treat 2iL cells with an inhibitor of a different metabolic pathway for 48h and analyze by rt-PCR a) the 2-cell-related genes, b) the differentiation towards trophoblast cells.\n\n11) The authors provide a very detailed molecular analysis on the effect of heme synthesis inhibition on the pluripotency exit. However, functional characterization (such as teratoma formation) is important to tell whether these naive mESC after treatment with heme synthesis blocker have any defects on the pluripotency exit and differentiation.\n\n12) Although it is clear that heme synthesis is important for the mouse pluripotency status transition, it is not clear whether this is a mechanism present in human as well. The authors presented bioinformatic data suggesting that this might be the case. Does heme synthesis blockade increase the emergence of human 2 cell-like cells?\n\n13) A genetic approach would complement and strengthen the specificity of the conclusions obtained with chemicals. For example, the inhibition of heme synthesis by SA should also be confirmed by knockout or knockdown of proteins in this pathway like ALAD, PBGD et al.\n\nReviewer #1 (Recommendations for the authors):\n\nThe authors will find below a list of my concerns.\n\n1. For readers of the stem cell field a more detailed introduction into the heme synthesis pathway needs to be included in the introduction,\n\n2. The statement made in lines 150-152 and shown as Suppl. Figure 2b should be further supported by proper quantification using replicate assays.\n\n3. Lines 207-209. The rationale and the conclusion behind the experiment shown in Suppl. Figure 4 must be better explained.\n\n4. Line 98: the word 'prevented' is too strong for the observed effect. Oct6, Otx2 and Dnmt3b are clearly upregulated, merely less than in WT.\n\n5. The authors could put their findings in context of data on the impact of modulating the intracellular \u03b1KG/succinate ratio on pluripotency maintenance (https://doi.org/10.1038/nature13981; https://doi.org/10.15252/embj.201899518).\n\n6. Does BM also rescue the exit from pluripotency phenotype?\n\n7. Quantification and comparison of pan succinate levels in Figures4c and 5a would be helpful and required for interpretation. As there is basically no staining detectable in untreated cells in 4a and some in 5a, it is unclear whether SA and AA5 effects are similar in size. It appears that AA5 treatment has a much weaker effect.\n\nReviewer #2 (Recommendations for the authors):\n\n\u2013 In the first part, regarding the analysis of previously published results of CRISPR-Cas9 screens (lines 77-87): It would be ideal to use an alternative annotation tool for gene ontology analyses. DAVID is already outdated. If the finding is corroborated with an alternative method, it not only gives strength to the initial observations but allows finding new targets of interest.\n\n\u2013 The second title, \"Heme synthesis inhibition prevents the activation of key developmental signaling pathways,\" needs to be more specific. Because heme is a critical component of general cell homeostasis, it is evident that the inhibition will affect key signaling pathways, not only in development but in any stage of mammal's life.\n\nIn this same section, what happens with positive enriched genes in the SA-treated condition? It should be added the up-regulation plot side Figure 2a, and a correspondent discussion about it.\n\n\u2013 In the section describing the upregulation of 2-cell-stage-related genes when SA is added, it is needed to add a scramble-inhibition as control. Treat 2iL cells with an inhibitor of a different metabolic pathway for 48h and analyze by rt-PCR (a) the 2-cell-related genes, (b) the differentiation towards trophoblast cells.\n\n\u2013 What happens with the glycine levels after heme synthesis inhibition? Does glycine play a role in the induction of a 2-cell-like state? Ideally authors should include an experiment to test this role.\n\n\u2013 The following is optional, but it could be a considerable improvement to provide the bulk RNA seq comparing the inhibition of SUCNR1 vs. the activation induced by succinate, to see all other pathways that could crosstalk and describe better the mechanism of the succinate in pluripotent/totipotent states.\n\n\u2013 The authors provide a very detailed molecular analysis on the effect of heme synthesis inhibition on the pluripotency exit. However, functional characterization (such as teratoma formation) is important to tell whether these naive mESC after treatment with heme synthesis blocker have any defects on the pluripotency exit and differentiation.\n\n\u2013 Although it is clear that heme synthesis is important for the mouse pluripotency status transition, it is not clear whether this is a mechanism present in human as well. The authors presented bioinformatic data suggesting that this might be the case. It is important that the authors perform functional studies in the human cells to further substantiate this point.\n\n\u2013 It is not clear how the cell senses heme deficiency and how heme deficiency results in inability to activate ERK/MAPK and TGF \u03b2 signaling. Could the authors provide comments into this aspect?\n\n\u2013 How strong the effect of inhibiting heme synthesis and succinate in inducing the 2CLC population are as the absolute number of Zscan4+ or MuERVL+ cell are quite low (< 3%)? I suggest that the authors include other 2CLC inducers such as acetate (Rodriguez-Terrones, 2020) and RA (Iturbide, A., 2021) as a control for comparison.\n\n\u2013 The authors performed the 2CLC experiment with 2iL condition. However, a quick review of the literature indicates that many of these studies have been done in FBS/LIF system. Can the authors comment on the difference between 2iL condition and FBS/LIF in the study of 2CLC?\n\n\u2013 The authors analyzed that heme synthesis is also important human pluripotent state transition. It will be interesting to see the scenario in human pluripotent stem cells, which will largely make the study difference, especially if the heme synthesis blockade will also increase the emergence of human 2 cell-like cells.\n\n\u2013 The functional assay of 2 cell-like cells after heme synthesis inhibition should be tested in vivo by 8-cell or blastocyst injection\n\n\u2013 The whole study of inhibition is chemical achieved. As a supplement, the authors should also test with genetic intervention instead of sole chemicals. For example, the inhibition of heme synthesis by SA should also be confirmed by knockout or knockdown of proteins in this pathway like ALAD, PBGD et al. Also similar with AA5.\n\n\u2013 To make the finding here more convincing and significant, it will be good to confirm in embryos.\n\n\u2013 The manuscript should include the metabolism part in the introduction instead of using large paragraphs in the main text to introduce these pathways and previous studies.\n",
+      "created_at": "2025-12-04T02:30:54.716019Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T02:30:54.716019Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T02:30:54.716019Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "d8dc4a6e-218e-46e0-b380-515652733142",
+      "content_id": "57da2bfe-28a9-4381-83c1-47e075e35ffb",
+      "claim_id": "C1",
+      "claim": "Seven out of 8 enzymes of the heme biosynthesis pathway (ALAD, PBGD, UROS, UROD, CPOX, PPOX, and FECH) came out as positive hits in the CRISPR screen during the na\u00efve-to-primed mESC transition.",
+      "claim_type": "EXPLICIT",
+      "source": "Seven out of 8 enzymes of this metabolic pathway (ALAD, PBGD, UROS, UROD, CPOX, PPOX, and FECH) came out as positive hits in the CRISPR screen during the na\u00efve-to-primed mESC transition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the results from the CRISPR-Cas9 functional screens analyzed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:30:54.716019Z"
+    },
+    {
+      "id": "fd41927e-3e21-4e42-8b29-2120439adfe8",
+      "content_id": "57da2bfe-28a9-4381-83c1-47e075e35ffb",
+      "claim_id": "C2",
+      "claim": "In hESCs, only the 4 cytosolic enzymes (PBGD, UROS, UROD, and CPOX) of the heme biosynthesis pathway were highlighted in the CRISPR screen.",
+      "claim_type": "EXPLICIT",
+      "source": "In hESCs, only the 4 cytosolic enzymes (PBGD, UROS, UROD, and CPOX) were highlighted.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the results from the CRISPR-Cas9 functional screen in human ESCs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:30:54.716019Z"
+    },
+    {
+      "id": "489c0da9-8f9e-4832-9ac4-f2fa8fd029ef",
+      "content_id": "57da2bfe-28a9-4381-83c1-47e075e35ffb",
+      "claim_id": "C3",
+      "claim": "The expression of heme biosynthesis pathway genes both in vitro and in vivo is not modified during the na\u00efve-to-primed transition.",
+      "claim_type": "EXPLICIT",
+      "source": "In both models, the expression of these genes both in vitro and in vivo is not modified Table 1.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data presented in Table 1 showing gene expression levels.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:30:54.716019Z"
+    },
+    {
+      "id": "4bae4a47-475e-4fbb-b790-339b3f6c1b79",
+      "content_id": "57da2bfe-28a9-4381-83c1-47e075e35ffb",
+      "claim_id": "C4",
+      "claim": "Heme biosynthesis pathway is one of the most enriched Gene Ontologies in both mouse and human CRISPR screens for na\u00efve state exit.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 1a displays the top Gene Ontologies (GO) for the DAVID biological processes showing 'heme biosynthetic process' as one of the most enriched in both studies (Mathieu et al., 2019; Li et al., 2018).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by DAVID functional annotation analysis of CRISPR screen data and is shown in Figure 1a.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:30:54.716019Z"
+    },
+    {
+      "id": "f378d6e0-e2b8-4115-9e62-eef1cef507b1",
+      "content_id": "57da2bfe-28a9-4381-83c1-47e075e35ffb",
+      "claim_id": "C5",
+      "claim": "Treatment with succinylacetone (SA) during the na\u00efve-to-primed transition significantly reduces the expression of primed gene markers Fgf5, Fgf15, Otx2, Oct6, Dnmt3a, and Zic2.",
+      "claim_type": "EXPLICIT",
+      "source": "when mESCs are pushed for 48 hr to exit the na\u00efve stage (EpiLC) in the presence of SA (EpiLC +SA), the expression of the primed gene markers Fgf5, Fgf15, Otx2, Oct6, Dnmt3a, and Zic2 is significantly reduced (Figure 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by RT-qPCR data shown in Figure 1b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:30:54.716019Z"
+    },
+    {
+      "id": "c470dd7f-9d07-4bf1-a87f-76860248619a",
+      "content_id": "57da2bfe-28a9-4381-83c1-47e075e35ffb",
+      "claim_id": "C6",
+      "claim": "SA treatment partially prevents the loss of expression for na\u00efve markers (Esrrb, Tfcp2l1, Klf2-4, and Tbx3) during the na\u00efve-to-primed transition.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the loss of expression for na\u00efve markers (Esrrb, Tfcp2l1, Klf2-4, and Tbx3) is partially prevented in these conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by RT-qPCR data shown in Figure 1b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:30:54.716019Z"
+    },
+    {
+      "id": "c6703881-89ae-4779-a27d-811072fbd0d5",
+      "content_id": "57da2bfe-28a9-4381-83c1-47e075e35ffb",
+      "claim_id": "C7",
+      "claim": "Hemin supplementation restores gene expression, protein abundance, and subcellular localization of TFE3 to levels similar to those found in cells incubated without SA.",
+      "claim_type": "EXPLICIT",
+      "source": "Hemin supplementation restores the gene expression, the protein abundance and the subcellular localization of TFE3 to levels similar to those found in cells incubated without SA (Figure 1a\u2013d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by RT-qPCR, western blot, and immunofluorescence data shown in Figures 1a-d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:30:54.716019Z"
+    },
+    {
+      "id": "7c167f65-3518-4a63-b949-318177eaad46",
+      "content_id": "57da2bfe-28a9-4381-83c1-47e075e35ffb",
+      "claim_id": "C8",
+      "claim": "Removal of hemin during the transition in ALAD KO mESCs perturbs the exit from the naive state.",
+      "claim_type": "EXPLICIT",
+      "source": "In accordance with the results obtained with SA, removal of hemin during the transition perturbed the exit from the naive state (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by RT-qPCR data shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:30:54.716019Z"
+    },
+    {
+      "id": "0a6cc794-e650-4058-b12e-9dccbb85c8ce",
+      "content_id": "57da2bfe-28a9-4381-83c1-47e075e35ffb",
+      "claim_id": "C9",
+      "claim": "An impairment of the na\u00efve state exit is observed in human ESCs (Elf1 cell line) when pushed to exit in TeSR for 4 days with SA treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "An impairment of the na\u00efve state exit is also observed to some extent in human ESCs (Elf1 cell line) when pushed to exit in TeSR for 4 days (Figure 1\u2014figure supplement 1c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by RT-qPCR data shown in Figure 1\u2014figure supplement 1c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:30:54.716019Z"
+    },
+    {
+      "id": "c8a9bf04-8ab2-49e5-aa58-da8269539ec2",
+      "content_id": "57da2bfe-28a9-4381-83c1-47e075e35ffb",
+      "claim_id": "C10",
+      "claim": "SA treatment increases EIF2\u03b1 phosphorylation and reduces global protein translation, indicating activation of the integrated stress response (ISR).",
+      "claim_type": "EXPLICIT",
+      "source": "we did observe an increase in EIF2\u03b1 phosphorylation and a reduction in global protein translation, both showing activation of the ISR (Figure 2\u2014figure supplement 1b-c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by western blot and SunSET assay data shown in Figure 2\u2014figure supplement 1b-c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:30:54.716019Z"
+    },
+    {
+      "id": "21aa67fc-fbd4-462d-98c8-d9fe923fca57",
+      "content_id": "57da2bfe-28a9-4381-83c1-47e075e35ffb",
+      "claim_id": "C11",
+      "claim": "Activation of the integrated stress response with BTdCPU does not prevent the exit from the naive stage.",
+      "claim_type": "EXPLICIT",
+      "source": "However, activation of this pathway with a chemical activator of HRI, BTdCPU (Chen et al., 2011), effectively reducing protein translation to the extent of SA, did not prevent the exit from the naive stage (Figure 2\u2014figure supplement 1d-e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by SunSET assay and RT-qPCR data shown in Figure 2\u2014figure supplement 1d-e.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:30:54.716019Z"
+    },
+    {
+      "id": "f5a46714-af24-4ecd-9c28-185c1f0bcf7d",
+      "content_id": "57da2bfe-28a9-4381-83c1-47e075e35ffb",
+      "claim_id": "C12",
+      "claim": "GSEA analysis shows that many crucial signaling pathways involved in development are negatively enriched in SA-treated condition.",
+      "claim_type": "EXPLICIT",
+      "source": "many crucial signaling pathways involved in development are shown negatively enriched in SA-treated condition (Figure 2a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by GSEA analysis of RNAseq data shown in Figure 2a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:30:54.716019Z"
+    },
+    {
+      "id": "7a0682c3-96c2-4aaf-900b-a644585b14e6",
+      "content_id": "57da2bfe-28a9-4381-83c1-47e075e35ffb",
+      "claim_id": "C13",
+      "claim": "The MAPK-ERK1/2 pathway is not activated in EPI +SA cells, as shown by the absence of phosphorylation of ERK1/2.",
+      "claim_type": "EXPLICIT",
+      "source": "On the one hand, the MAPK-ERK1/2 pathway (downstream of FGF2) was not activated in EPI +SA cells, as shown by the absence of phosphorylation of ERK1/2 (Figure 2\u2014figure supplement 1g).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by western blot data shown in Figure 2\u2014figure supplement 1g.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:30:54.716019Z"
+    },
+    {
+      "id": "8b14921c-de5a-4149-a464-c38bdeff7c0d",
+      "content_id": "57da2bfe-28a9-4381-83c1-47e075e35ffb",
+      "claim_id": "C14",
+      "claim": "The activin A-SMAD pathway activation is compromised in SA-treated cells as shown by the difference in nuclear localization of SMAD2/3 and SMAD3 phosphorylation.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, the activin A-SMAD pathway activation was also compromised as shown by the difference in nuclear localization of SMAD2/3 when compared to the EpiLC cells (Figure 2\u2014figure supplement 1h) or SMAD3 phosphorylation (Figure 2b\u2013c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunofluorescence and western blot data shown in Figure 2\u2014figure supplement 1h and Figure 2b-c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:30:54.716019Z"
+    },
+    {
+      "id": "cdd00048-ca36-42a0-83b2-79c4af92d314",
+      "content_id": "57da2bfe-28a9-4381-83c1-47e075e35ffb",
+      "claim_id": "C15",
+      "claim": "Chemical inhibition of the SMAD pathway mimics the transition defects observed with SA.",
+      "claim_type": "EXPLICIT",
+      "source": "chemical inhibition of those two pathways by 1 \u03bcM PD0325901 (MEKi) and 5 \u03bcM SIS3 (TGF\u03b2-SMADi) (Figure 2\u2014figure supplement 1g-h) shows that the inhibition of the SMAD translocation mimics the transition defects observed with SA as revealed by the gene expression analysis of naive and primed markers (Figure 2\u2014figure supplement 1i).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by RT-qPCR data shown in Figure 2\u2014figure supplement 1i.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:30:54.716019Z"
+    },
+    {
+      "id": "2cdf66dc-6536-4414-8b0a-6bf4174688b5",
+      "content_id": "57da2bfe-28a9-4381-83c1-47e075e35ffb",
+      "claim_id": "C16",
+      "claim": "Addition of two- or threefold increased doses of activin or FGF2 does not rescue the gene expression pattern in SA-treated cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Addition of two- or threefold increased doses of activin or FGF2 did not rescue the gene expression pattern, indicating a strong inhibition (Figure 2\u2014figure supplement 1j).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by RT-qPCR data shown in Figure 2\u2014figure supplement 1j.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:30:54.716019Z"
+    },
+    {
+      "id": "456365ea-ff6e-4d2b-a730-d4e9e1bc6e67",
+      "content_id": "57da2bfe-28a9-4381-83c1-47e075e35ffb",
+      "claim_id": "C17",
+      "claim": "Heme biosynthesis consumes a lot of glycine and succinyl-CoA precursors in the mitochondria, acting as a 'succinyl-CoA sink'.",
+      "claim_type": "EXPLICIT",
+      "source": "Mechanistically, previous reports have shown that heme biosynthesis consumes a lot of the glycine and succinyl-CoA precursors in the mitochondria, acting as some sort of 'succinyl-CoA sink' (Atamna, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:30:54.716019Z"
+    },
+    {
+      "id": "5ef1177d-5332-4150-8f9e-7b182d1a805e",
+      "content_id": "57da2bfe-28a9-4381-83c1-47e075e35ffb",
+      "claim_id": "C18",
+      "claim": "Heme synthesis inhibition increases the abundance of succinyl-CoA in mitochondria, which can exit the organelle as succinate and accumulate in other cell compartments.",
+      "claim_type": "EXPLICIT",
+      "source": "We thus hypothesized that heme synthesis inhibition would increase the abundance of succinyl-CoA in mitochondria, that could then exit the organelle in the form of succinate and accumulate in other cell compartments (Atamna, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis based on previous literature and the observed effects.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:30:54.716019Z"
+    },
+    {
+      "id": "d2bc703c-28f5-4f49-9cd3-4136a2749dfa",
+      "content_id": "57da2bfe-28a9-4381-83c1-47e075e35ffb",
+      "claim_id": "C19",
+      "claim": "SA treatment decreases the abundance of succinate dehydrogenase (SDH).",
+      "claim_type": "EXPLICIT",
+      "source": "The accumulation of succinate precursor is reinforced by the observed decreased abundance of the succinate dehydrogenase (SDH), consuming succinate in the TCA, known to be destabilized by the loss of heme (nicely reviewed in Kim et al., 2012; Figure 2e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by western blot data shown in Figure 2e and cited literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:30:54.716019Z"
+    },
+    {
+      "id": "5c5f4b9f-ccef-49a6-9c86-0b540521e05e",
+      "content_id": "57da2bfe-28a9-4381-83c1-47e075e35ffb",
+      "claim_id": "C20",
+      "claim": "Butylmalonate (BM), an inhibitor of the dicarboxylate carrier, resumes the na\u00efve-to-primed transition in SA-treated cells.",
+      "claim_type": "EXPLICIT",
+      "source": "To test this hypothesis, we used butylmalonate (BM), an inhibitor of the dicarboxylate carrier (DIC; SLC25A10), to prevent leakage of succinate from the mitochondrial matrix to the cytosol (Mills et al., 2018), and this nicely resumed the transition as shown by the gene expression profile of mESCs in the EpiLC + SA + BM condition (Figure 2f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by RT-qPCR data shown in Figure 2f and cited literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:30:54.716019Z"
+    },
+    {
+      "id": "ae8a61c7-bcb2-4c9c-bfbc-63cbcb84e53a",
+      "content_id": "57da2bfe-28a9-4381-83c1-47e075e35ffb",
+      "claim_id": "C21",
+      "claim": "Succinate accumulation increases protein lysine succinylation.",
+      "claim_type": "EXPLICIT",
+      "source": "Succinate accumulation and/or SDH ablation is known to increase protein lysine succinylation (Smestad et al., 2018), an effect that is observed upon SA treatment and that we mimicked by inhibiting Sirt7, a cytosolic and nuclear desuccinylase (Figure 2g).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by flow cytometry data shown in Figure 2g and cited literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:30:54.716019Z"
+    },
+    {
+      "id": "35ca5e9c-5dbf-4704-a437-a5dd2f88dbbe",
+      "content_id": "57da2bfe-28a9-4381-83c1-47e075e35ffb",
+      "claim_id": "C22",
+      "claim": "Inhibition of Sirt7 mimics SA in preventing the exit of the naive state.",
+      "claim_type": "EXPLICIT",
+      "source": "The ability of this molecule to mimic SA in the pathway's inhibition (Figure 2h\u2013i) and to prevent the exit of the naive state (Figure 2f) points at succinylation events as the cause of the transition defects.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by western blot and RT-qPCR data shown in Figure 2f, h-i.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:30:54.716019Z"
+    },
+    {
+      "id": "671c6edc-095a-493b-87c0-1fcc014c474e",
+      "content_id": "57da2bfe-28a9-4381-83c1-47e075e35ffb",
+      "claim_id": "C23",
+      "claim": "Treatment of na\u00efve 2iL cells with SA modifies the global gene expression as shown by PCA analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to this defect in the exit from the naive state, we found that treatment of na\u00efve 2iL cells with SA also modifies the global gene expression as 2iL + SA samples cluster away from 2iL control cells when analyzed by PCA performed on RNAseq data (Figure 3a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by PCA analysis of RNAseq data shown in Figure 3a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:30:54.716019Z"
+    },
+    {
+      "id": "fd850e48-7425-4086-a7ea-993970c528e4",
+      "content_id": "57da2bfe-28a9-4381-83c1-47e075e35ffb",
+      "claim_id": "C24",
+      "claim": "The expression of 142 genes previously identified as upregulated in the 2C-like population is statistically upregulated in 2iL versus 2iL + SA.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the expression of the 142 genes previously identified as upregulated in this 2C-like population (Macfarlan et al., 2012) was statistically upregulated in 2iL versus 2iL + SA (Figure 3b)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by RNAseq data analysis shown in Figure 3b and cited literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:30:54.716019Z"
+    },
+    {
+      "id": "d8e4839f-b7ed-46f6-8d59-232d8c493774",
+      "content_id": "57da2bfe-28a9-4381-83c1-47e075e35ffb",
+      "claim_id": "C25",
+      "claim": "Treatment with SA increases the fraction of ZSCAN4+ and MUERVL-GAG+ cell populations by two to three folds.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 3e and f, treatment with SA increases the fraction of 2C-like cells by two to three folds.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunostaining and confocal microscopy data shown in Figure 3e and f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:30:54.716019Z"
+    },
+    {
+      "id": "04b33a15-2617-49c0-83d2-aec7f34eb216",
+      "content_id": "57da2bfe-28a9-4381-83c1-47e075e35ffb",
+      "claim_id": "C26",
+      "claim": "SA treatment upregulates 2CLC markers in ALAD KO mESCs.",
+      "claim_type": "EXPLICIT",
+      "source": "this was further confirmed by RT-qPCR for a selection of the most common markers (Figure 3c) and further supported by the upregulation of the 2CLC markers in ALAD KO mESCs (Figure 3d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by RT-qPCR data shown in Figure 3c and 3d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:30:54.716019Z"
+    },
+    {
+      "id": "6f68e49b-28da-45f0-9d63-e4ee83a545bd",
+      "content_id": "57da2bfe-28a9-4381-83c1-47e075e35ffb",
+      "claim_id": "C27",
+      "claim": "A similar trend of increased ZGA-related gene expression is observed in hESCs treated with SA.",
+      "claim_type": "EXPLICIT",
+      "source": "A similar trend is observed for genes involved in the ZGA for hESCs (Taubenschmid-Stowers et al., 2022; Figure 3g).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by RT-qPCR data shown in Figure 3g and cited literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:30:54.716019Z"
+    },
+    {
+      "id": "9986964d-354d-487e-8212-8cc06eca5732",
+      "content_id": "57da2bfe-28a9-4381-83c1-47e075e35ffb",
+      "claim_id": "C28",
+      "claim": "The 2C-like phenotype induced by SA is independent of heme as it is not rescued by hemin supplementation.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, and as opposed to the naive-to-primed setup, the observed phenotype seems independent of heme as it is not rescued by hemin supplementation (Figure 4a\u2013b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by RT-qPCR and RNAseq data shown in Figure 4a-b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:30:54.716019Z"
+    },
+    {
+      "id": "7e5d7d51-4cf9-46bd-aabc-658056a05ced",
+      "content_id": "57da2bfe-28a9-4381-83c1-47e075e35ffb",
+      "claim_id": "C29",
+      "claim": "SA treatment causes a dramatic increase in succinylated proteins in all subcellular compartments.",
+      "claim_type": "EXPLICIT",
+      "source": "However, a dramatic increase in the signal associated with succinylated proteins is observed in all subcellular compartments when heme synthesis is inhibited, an effect that is not (or very partially) rescued upon hemin supplementation (Figure 4c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunofluorescence and flow cytometry data shown in Figure 4c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:30:54.716019Z"
+    },
+    {
+      "id": "833b2b66-63b4-410f-ac3c-b58e19cbb53f",
+      "content_id": "57da2bfe-28a9-4381-83c1-47e075e35ffb",
+      "claim_id": "C30",
+      "claim": "Addition of butylmalonate (BM) combined with SA rescues both the increase in 2C markers and the proportion of ZSCAN4 or MUERVL-positive cells.",
+      "claim_type": "EXPLICIT",
+      "source": "As hypothesized, addition of BM combined to SA is correlated to a rescue of both the increase in 2 C markers and the proportion of ZSCAN4 or MUERVL-positive cells in the population (Figure 4a and d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by RT-qPCR and immunofluorescence data shown in Figure 4a and d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:30:54.716019Z"
+    },
+    {
+      "id": "bda9eebc-e7b2-4ee3-860c-0ab520bcfc76",
+      "content_id": "57da2bfe-28a9-4381-83c1-47e075e35ffb",
+      "claim_id": "C31",
+      "claim": "Glycine supplementation does not induce the 2C-like phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, this shows that an accumulation of extra-mitochondrial succinate upstream of heme synthesis in naive mESCs induces a 2C-like phenotype, reinforced by the inability of glycine to induce same effect (Figure 4a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by RT-qPCR data shown in Figure 4a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:30:54.716019Z"
+    },
+    {
+      "id": "81c687de-4840-47f8-b4fe-8477496bdfad",
+      "content_id": "57da2bfe-28a9-4381-83c1-47e075e35ffb",
+      "claim_id": "C32",
+      "claim": "Endogenous 2CLCs (GFP+; OCT4-) show an increase in protein succinylation compared to non-2CLCs.",
+      "claim_type": "EXPLICIT",
+      "source": "The simultaneous observation of the endogenous GFP fluorescence, the absence of OCT4 (Macfarlan et al., 2012) and the immunostaining of the succinyl-lysine residues showed an increase in protein succinylation specifically in the 2C-like cells (GFP+; OCT4-) sub-population, as quantified by flow cytometry (Figure 4e\u2013f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunofluorescence and flow cytometry data shown in Figure 4e-f and cited literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:30:54.716019Z"
+    },
+    {
+      "id": "389f28b8-50cd-4e5c-a05e-9eaa1c36f7d7",
+      "content_id": "57da2bfe-28a9-4381-83c1-47e075e35ffb",
+      "claim_id": "C33",
+      "claim": "Atpenin A5 (AA5), an SDH inhibitor, induces protein lysine succinylation.",
+      "claim_type": "EXPLICIT",
+      "source": "AA5 induces the protein lysine succinylation (Figure 5a)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunofluorescence and flow cytometry data shown in Figure 5a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:30:54.716019Z"
+    },
+    {
+      "id": "2fa5ab68-171f-49c2-b349-d5c172f86ded",
+      "content_id": "57da2bfe-28a9-4381-83c1-47e075e35ffb",
+      "claim_id": "C34",
+      "claim": "AA5 treatment increases the number of ZSCAN4-positive cells.",
+      "claim_type": "EXPLICIT",
+      "source": "AA5 induces the protein lysine succinylation (Figure 5a), an increase in the number of ZSCAN4-positive cells (Figure 5b)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunofluorescence data shown in Figure 5b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:30:54.716019Z"
+    },
+    {
+      "id": "311a4052-3505-49e0-9a2b-b3d46cea9b7c",
+      "content_id": "57da2bfe-28a9-4381-83c1-47e075e35ffb",
+      "claim_id": "C35",
+      "claim": "AA5 treatment increases the expression of 2C markers.",
+      "claim_type": "EXPLICIT",
+      "source": "AA5 induces the protein lysine succinylation (Figure 5a), an increase in the number of ZSCAN4-positive cells (Figure 5b) and the expression of 2 C markers (Figure 5c and e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by RT-qPCR data shown in Figure 5c and e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:30:54.716019Z"
+    },
+    {
+      "id": "ef6fbad3-3aa2-485b-ae63-da7f8da80e40",
+      "content_id": "57da2bfe-28a9-4381-83c1-47e075e35ffb",
+      "claim_id": "C36",
+      "claim": "Addition of BM counteracts the effects of AA5 on 2CLC markers.",
+      "claim_type": "EXPLICIT",
+      "source": "These effects were counteracted by the addition of BM to prevent the succinate exit from the mitochondria (Figure 5b), confirming the involvement of succinate in the process.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunofluorescence data shown in Figure 5b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:30:54.716019Z"
+    },
+    {
+      "id": "8b0e46f6-6f97-42e0-8e12-dd99b741a430",
+      "content_id": "57da2bfe-28a9-4381-83c1-47e075e35ffb",
+      "claim_id": "C37",
+      "claim": "Exogenous supplementation with sodium succinate or dimethylsuccinate increases 2CLC marker expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, exogenous supplementation with a membrane impermeable (sodium succinate) or permeable (dimethylsuccinate) form of succinate were able to increase the 2CLC marker expression (Figure 5d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by RT-qPCR data shown in Figure 5d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:30:54.716019Z"
+    },
+    {
+      "id": "fec6a752-2051-48b9-91b1-36e2bf5831a5",
+      "content_id": "57da2bfe-28a9-4381-83c1-47e075e35ffb",
+      "claim_id": "C38",
+      "claim": "Inhibition of succinate exit through MCT1/4 and SUCNR1 receptor reduces the rise in 2CLC marker expression triggered by AA5.",
+      "claim_type": "EXPLICIT",
+      "source": "We further found that inhibition of the succinate exit through the plasma membrane, by targeting MCT1 and 4 with the AZD3965 inhibitor (Beloueche-Babari et al., 2017; Reddy et al., 2020) combined to inhibition of the succinate receptor SUCNR1 by NF-56-EJ40 (Haffke et al., 2019) is able to bring down the rise in 2CLC marker expression triggered by AA5 (Figure 5e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by RT-qPCR data shown in Figure 5e and cited literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:30:54.716019Z"
+    },
+    {
+      "id": "bec253b9-f797-44ee-978b-145bf8d58bee",
+      "content_id": "57da2bfe-28a9-4381-83c1-47e075e35ffb",
+      "claim_id": "C39",
+      "claim": "Retinoic acid (RA) increases the 2CLC population through a mechanism mediated by both RAR and RXR.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent reports have shown that retinoic acid (RA) also increases the 2CLC population, an effect mediated by the retinoic acid receptor RAR but not the RXRs (Iturbide et al., 2021). While the induction of the 2CLC gene signature in response to AA5 is similar to RA, the mode of action seems to involve both RAR and RXR since the effect is rescued by addition of both inhibitors, AGN193109 and HX531, respectively (Figure 5c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by RT-qPCR data shown in Figure 5c and cited literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:30:54.716019Z"
+    },
+    {
+      "id": "ef4c4540-e4bb-480d-8d94-ccf2871b0ecd",
+      "content_id": "57da2bfe-28a9-4381-83c1-47e075e35ffb",
+      "claim_id": "C40",
+      "claim": "Succinate acts as a paracrine/autocrine signal upstream of RAR/RXR transcriptional activity.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings strongly support succinate acting as a paracrine/autocrine signal upstream of RAR/RXR transcriptional activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the experimental data showing succinate effects and RAR/RXR involvement.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:30:54.716019Z"
+    },
+    {
+      "id": "75840025-da55-4c5d-a798-1080092b82b8",
+      "content_id": "57da2bfe-28a9-4381-83c1-47e075e35ffb",
+      "claim_id": "C41",
+      "claim": "Embryonic lethality at the implantation stage occurs in mouse embryos knockout for heme synthesis pathway enzymes HMBS, UROS, UROD, CPOX, and FECH.",
+      "claim_type": "EXPLICIT",
+      "source": "This is in accordance with the embryonic lethality at the implantation stage of mouse embryos knockout for the heme synthesis pathway enzymes since the naive-to-primed transition recapitulates, in vitro, this critical step (shown for HMBS Lindberg et al., 1996, UROS Bensidhoum, 1998, UROD Phillips et al., 2001, CPOX Conway et al., 2017 and FECH Magness et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:30:54.716019Z"
+    },
+    {
+      "id": "a981e056-1602-4812-88c0-11677691f587",
+      "content_id": "57da2bfe-28a9-4381-83c1-47e075e35ffb",
+      "claim_id": "C42",
+      "claim": "The proper activation of MAPK and TGF\u03b2-SMAD pathways is required to proceed with the na\u00efve-to-primed transition.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been previously demonstrated that the proper activation of these two pathways is required to proceed with the transition to the primed stage (Tsanov et al., 2017; Jiapaer et al., 2018; Senft et al., 2018; Arman et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:30:54.716019Z"
+    },
+    {
+      "id": "7cee3c80-0219-40b9-bff2-c761307ab4db",
+      "content_id": "57da2bfe-28a9-4381-83c1-47e075e35ffb",
+      "claim_id": "C43",
+      "claim": "A connection between heme synthesis inhibition and MAPK signaling blockade has been reported in PC12 neuronal cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Such a connection between heme synthesis inhibition and signaling pathways has only been reported once in PC12 neuronal cells, with SA blocking the activation of the MAPK despite the presence of nerve growth factor (NGF) (Zhu et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:30:54.716019Z"
+    },
+    {
+      "id": "727c6bdf-92c9-4dbf-9bae-91f1080f238b",
+      "content_id": "57da2bfe-28a9-4381-83c1-47e075e35ffb",
+      "claim_id": "C44",
+      "claim": "A small population (about 1%) of mouse ESCs grown in na\u00efve conditions displays features of the two-cell stage embryo (2C-like population or 2CLCs).",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, a small population (representing about 1 %) of mouse ESCs grown in na\u00efve conditions displays features of the two-cell stage embryo (2C-like population or 2CLCs) exhibiting extended potential (Macfarlan et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:30:54.716019Z"
+    },
+    {
+      "id": "29bc768c-65ac-4467-8b04-a26182c07283",
+      "content_id": "57da2bfe-28a9-4381-83c1-47e075e35ffb",
+      "claim_id": "C45",
+      "claim": "The 2CLC subset displays the expression of 2C-specific genes such as the Zscan4 cluster, MuERVL, and DUX.",
+      "claim_type": "EXPLICIT",
+      "source": "This subset also displays the expression of 2C-specific genes such as the Zscan4 cluster, the retro-transposable element MuERVL or the master regulator DUX (Macfarlan et al., 2012; Percharde et al., 2018; Ishiuchi et al., 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:30:54.716019Z"
+    },
+    {
+      "id": "0b8afd42-9430-41e0-96fd-2dcbbd7a2ebd",
+      "content_id": "57da2bfe-28a9-4381-83c1-47e075e35ffb",
+      "claim_id": "C46",
+      "claim": "2CLCs exhibit a disappearance of chromocenters and loss of the core pluripotency protein OCT4.",
+      "claim_type": "EXPLICIT",
+      "source": "a disappearance of chromocenters and loss of the core pluripotency protein OCT4 (Macfarlan et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:30:54.716019Z"
+    },
+    {
+      "id": "53a76432-8e92-47b1-bd35-e7b5acdd9d2c",
+      "content_id": "57da2bfe-28a9-4381-83c1-47e075e35ffb",
+      "claim_id": "C47",
+      "claim": "mTORC1/2 is a critical component for the na\u00efve-to-primed transition.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, a few studies have revealed mTORC1/2 as a critical component for the na\u00efve-to-primed transition (Mathieu et al., 2019; Li et al., 2018; Duggal et al., 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:30:54.716019Z"
+    },
+    {
+      "id": "5cfdf3cc-ac9c-4777-84c7-3c8f0f512a15",
+      "content_id": "57da2bfe-28a9-4381-83c1-47e075e35ffb",
+      "claim_id": "C48",
+      "claim": "mTORC1/2 regulates key developmental pathways such as Wnt signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "that regulates key developmental pathways such as Wnt signaling (Sperber et al., 2015; Mathieu et al., 2019; Xu et al., 2016; Taelman et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:30:54.716019Z"
+    },
+    {
+      "id": "bdb3e752-df2d-4310-92fe-f4146714f646",
+      "content_id": "57da2bfe-28a9-4381-83c1-47e075e35ffb",
+      "claim_id": "C49",
+      "claim": "SA treatment does not increase the abundance of HIF1\u03b1, demonstrating a lack of PHD inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "Of these three classes, we ruled out a role for PHDs, responsible for HIF1\u03b1 degradation, as the abundance of this transcription factor was not increased by SA nor by AA5 treatment, demonstrating a lack of stabilization following a putative PHD inhibition (Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunofluorescence data shown in Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:30:54.716019Z"
+    },
+    {
+      "id": "ef6ae0bf-6032-49d2-8acb-4665473a3021",
+      "content_id": "57da2bfe-28a9-4381-83c1-47e075e35ffb",
+      "claim_id": "C50",
+      "claim": "SA or AA5 treatment increases the amount of trimethylation of lysines 4, 9, and 27 of H3 (H3K4,-K9, -K27).",
+      "claim_type": "EXPLICIT",
+      "source": "we then focused our attention on the histone 3 (H3) and DNA methylation landscapes and observed a robust increase in the amount of trimethylation of lysines 4, 9, and 27 of H3 (H3K4,-K9, -K27) along with an increase in the global abundance of 5mC when mESCs were treated with either SA or AA5 (Figure 5\u2014figure supplement 2a-d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunofluorescence data shown in Figure 5\u2014figure supplement 2a-d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:30:54.716019Z"
+    },
+    {
+      "id": "1dae862a-03b7-4a74-a5a2-c610aae680f3",
+      "content_id": "57da2bfe-28a9-4381-83c1-47e075e35ffb",
+      "claim_id": "C51",
+      "claim": "SA or AA5 treatment increases the global abundance of 5mC.",
+      "claim_type": "EXPLICIT",
+      "source": "we then focused our attention on the histone 3 (H3) and DNA methylation landscapes and observed a robust increase in the amount of trimethylation of lysines 4, 9, and 27 of H3 (H3K4,-K9, -K27) along with an increase in the global abundance of 5mC when mESCs were treated with either SA or AA5 (Figure 5\u2014figure supplement 2a-d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunofluorescence data shown in Figure 5\u2014figure supplement 2a-d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:30:54.716019Z"
+    },
+    {
+      "id": "7443b8bf-21f9-4ecc-8489-0be77266df1a",
+      "content_id": "57da2bfe-28a9-4381-83c1-47e075e35ffb",
+      "claim_id": "C52",
+      "claim": "Chemical inhibition of HDMs by JIB04 and/or TET by TETin-C35 does not trigger a rise in the proportion of 2CLCs or in 2C marker expression.",
+      "claim_type": "EXPLICIT",
+      "source": "However, chemical inhibition of HDMs by JIB04 (Wang et al., 2013) and/or TET by TETin-C35 (Singh et al., 2020) does not trigger a rise in the proportion of 2CLCs or in 2 C marker expression (Figure 5\u2014figure supplement 2e-f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunofluorescence and RT-qPCR data shown in Figure 5\u2014figure supplement 2e-f and cited literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:30:54.716019Z"
+    },
+    {
+      "id": "4300cfdf-06c3-4aa9-b2c2-c7a9137d67b6",
+      "content_id": "57da2bfe-28a9-4381-83c1-47e075e35ffb",
+      "claim_id": "C53",
+      "claim": "Embryonic lethality of SDH subunits in mice demonstrates the importance of succinate in early development.",
+      "claim_type": "EXPLICIT",
+      "source": "Further emphasis on the importance of succinate in early development is also demonstrated by the embryonic lethality of the SDH subunits in mice (Piruat et al., 2004; Siebers et al., 2018; Lepoutre-Lussey et al., 2016; Tak\u00e1cs-Vellai et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:30:54.716019Z"
+    },
+    {
+      "id": "09071fba-e3cb-453c-820c-5e0c9c02f417",
+      "content_id": "57da2bfe-28a9-4381-83c1-47e075e35ffb",
+      "claim_id": "C54",
+      "claim": "Na\u00efve ESCs resemble the inner cell mass (ICM) of the pre-implantation embryo epiblast.",
+      "claim_type": "EXPLICIT",
+      "source": "the na\u00efve ESCs, resembling the inner cell mass (ICM) of the pre-implantation embryo epiblast",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in the field of stem cell biology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:30:54.716019Z"
+    },
+    {
+      "id": "fe8a7525-a933-45a4-be2f-217860ba8e7d",
+      "content_id": "57da2bfe-28a9-4381-83c1-47e075e35ffb",
+      "claim_id": "C55",
+      "claim": "Primed ESCs mirror the epiblast of the post-implantation stage.",
+      "claim_type": "EXPLICIT",
+      "source": "and the primed ESCs, mirroring the epiblast of the post-implantation stage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in the field of stem cell biology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:30:54.716019Z"
+    },
+    {
+      "id": "e3b4af5f-e56d-4c00-93d8-1b1892570360",
+      "content_id": "57da2bfe-28a9-4381-83c1-47e075e35ffb",
+      "claim_id": "C56",
+      "claim": "Na\u00efve and primed ESCs display dramatic differences in developmental potential, epigenetic landscape, X-chromosome inactivation pattern, and metabolic activity.",
+      "claim_type": "EXPLICIT",
+      "source": "While these cells represent timely close stages in embryo development, they display dramatic differences, such as developmental potential (Gafni et al., 2013; Ware et al., 2014), epigenetic landscape, X-chromosome inactivation pattern and metabolic activity (Sperber et al., 2015; Theunissen et al., 2016; Zhou et al., 2012; Sahakyan et al., 2017; Grow et al., 2015; Takashima et al., 2014; Nichols and Smith, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:30:54.716019Z"
+    },
+    {
+      "id": "b1cdda72-0b2c-4c85-91c9-a61b571f1514",
+      "content_id": "57da2bfe-28a9-4381-83c1-47e075e35ffb",
+      "claim_id": "C57",
+      "claim": "ESC culture is heterogenous in terms of pluripotent or epigenetic marker expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Aside from these two pluripotent stages, ESC culture is known to be very heterogenous in terms of pluripotent or epigenetic marker expression (Sust\u00e1\u010dkov\u00e1 et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:30:54.716019Z"
+    },
+    {
+      "id": "48e429cd-4217-48fb-9c75-0d94ba529452",
+      "content_id": "57da2bfe-28a9-4381-83c1-47e075e35ffb",
+      "claim_id": "C58",
+      "claim": "The 2CLC population is transient and cycles back and forth to a naive pluripotency state.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, this 2CLC population is transient and cycles back and forth to a naive pluripotency state (Macfarlan et al., 2012; Fu et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:30:54.716019Z"
+    },
+    {
+      "id": "9f2e4a08-ab03-4c17-b7f8-99d9d8174693",
+      "content_id": "57da2bfe-28a9-4381-83c1-47e075e35ffb",
+      "claim_id": "C59",
+      "claim": "Metabolites such as acetate, lactate, and D-ribose play a role in the gain of 2CLC features.",
+      "claim_type": "EXPLICIT",
+      "source": "The role of several metabolites in the gain of 2CLC features has already been recently unveiled, highlighting a role for acetate, lactate, and D-ribose (Rodriguez-Terrones et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:30:54.716019Z"
+    },
+    {
+      "id": "740e0110-75de-4ea6-9e0a-d0c8fb679fc0",
+      "content_id": "57da2bfe-28a9-4381-83c1-47e075e35ffb",
+      "claim_id": "C60",
+      "claim": "A previous metabolite screening showed a positive effect of succinate on the 2C-like features acquisition.",
+      "claim_type": "EXPLICIT",
+      "source": "This metabolite screening also showed a positive effect of succinate on the 2C-like features acquisition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim refers to previous screening data mentioned in the context.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:30:54.716019Z"
+    },
+    {
+      "id": "6aafb52f-2e8e-4c0a-8676-f02af0958550",
+      "content_id": "57da2bfe-28a9-4381-83c1-47e075e35ffb",
+      "claim_id": "C61",
+      "claim": "Succinate accumulation leads to a global reduction in cytosine demethylation activity of TETs and histone demethylation, as observed in cancers after succinate accumulation or SDH mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "Beyond its role in the cellular metabolism, we show here that the succinate accumulation outside mitochondria leads to a global reduction in cytosine demethylation activity of the TETs and histone demethylation as previously observed in cancers after accumulation of succinate or SDH mutations (Letouz\u00e9 et al., 2013; Xiao et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the data in the study and citations to previous literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:30:54.716019Z"
+    },
+    {
+      "id": "e500c5cf-309e-4f28-9807-141a867735ff",
+      "content_id": "57da2bfe-28a9-4381-83c1-47e075e35ffb",
+      "claim_id": "C62",
+      "claim": "TET2 can cooperate with PSPC1 to reduce the expression of the retrotransposon MuERVL.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, while TET2 could cooperate with PSPC1 (Paraspeckle Component 1) to reduce the expression of the retrotransposon MuERVL (Guallar et al., 2018)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:30:54.716019Z"
+    },
+    {
+      "id": "b307e25e-b0b9-4fa2-8f45-01dde8405811",
+      "content_id": "57da2bfe-28a9-4381-83c1-47e075e35ffb",
+      "claim_id": "C63",
+      "claim": "Binding of TET proteins with SMCHD1 prevents the demethylation of the Dux gene locus and thus prevents its expression.",
+      "claim_type": "EXPLICIT",
+      "source": "binding of the TET proteins with SMCHD1 (structural maintenance of chromosomes flexible hinge domain containing 1) prevents the demethylation of the Dux gene locus and thus prevents its expression (Huang et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:30:54.716019Z"
+    },
+    {
+      "id": "a9041f32-6c2d-411f-9fac-dabaad248d9b",
+      "content_id": "57da2bfe-28a9-4381-83c1-47e075e35ffb",
+      "claim_id": "C64",
+      "claim": "TET triple KO induces the 2C phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "Succinate accumulation would result in a global decrease in the activity of all 3 TET isoforms, resembling those of a TET triple KO, already shown to induce the 2 C phenotype (Lu et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:30:54.716019Z"
+    },
+    {
+      "id": "34c52070-9a09-48b5-bc66-4868a7dc35e5",
+      "content_id": "57da2bfe-28a9-4381-83c1-47e075e35ffb",
+      "claim_id": "C65",
+      "claim": "The methylation landscape of histones, especially H3, is highly dynamic both in vivo at the time of ZGA and in the 2CLC conversion.",
+      "claim_type": "EXPLICIT",
+      "source": "The methylation landscape of histones, especially H3, is also highly dynamic both in vivo, at the time of the zygote genome activation (ZGA) that takes place at the 2C-stage, and in the 2CLC conversion with remodeling of H3K4me3, H3K9me3, and H3K27me3 (Zhang et al., 2021; Wang et al., 2018; Yang et al., 2022) (extensively reviewed in Xia and Xie, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:30:54.716019Z"
+    },
+    {
+      "id": "015567f0-02ea-4ed5-a8ed-4e2998326583",
+      "content_id": "57da2bfe-28a9-4381-83c1-47e075e35ffb",
+      "claim_id": "C66",
+      "claim": "Loss of KDM1a promotes the expression of Zscan4 and MuERVL.",
+      "claim_type": "EXPLICIT",
+      "source": "as loss of KDM1a (lysine demethylase 1 a) is shown to promote the expression of Zscan4 and MuERVL (Macfarlan et al., 2011)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:30:54.716019Z"
+    },
+    {
+      "id": "b6fc10d7-feea-460c-845d-b68fcf7fef5f",
+      "content_id": "57da2bfe-28a9-4381-83c1-47e075e35ffb",
+      "claim_id": "C67",
+      "claim": "Loss of KDM5a and b decreases the expression of 2CLC markers and blocks the ZGA in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "whereas loss of KDM5a and b decreases the expression of the markers and blocks the ZGA in vivo (Dahl et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:30:54.716019Z"
+    },
+    {
+      "id": "1befbfcf-f7a0-4407-a6d7-06e1df1f9889",
+      "content_id": "57da2bfe-28a9-4381-83c1-47e075e35ffb",
+      "claim_id": "C68",
+      "claim": "The discrepancy in the role of epigenetic modifications in 2CLC emergence could be due to differences in culture conditions between serum+LIF and ground na\u00efve (2iL) mESCs.",
+      "claim_type": "EXPLICIT",
+      "source": "This discrepancy could be due to differences in the culture conditions, as these previous studies use mESC grown in serum +LIF conditions, while we use ground na\u00efve mESCs (in 2iL and serum-free culture). Such difference has been previously described in the establishment of another pluripotent state of ESCs, the paused state (Xu et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on observed differences and cited literature.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:30:54.716019Z"
+    },
+    {
+      "id": "5a4075fa-4aeb-48ef-91dc-1e561b9cd4ad",
+      "content_id": "57da2bfe-28a9-4381-83c1-47e075e35ffb",
+      "claim_id": "C69",
+      "claim": "Metabolites such as S-adenosylmethionine (SAM), alpha-ketoglutarate (\u03b1KG), glutamine, acetyl-CoA, lactate, and D-ribose regulate pluripotent states mostly through their contribution to modifications of the epigenetic landscape.",
+      "claim_type": "EXPLICIT",
+      "source": "Our study thus brings an additional and different example of metabolic control of pluripotency, and adds succinate to previously reported metabolites such as S-adenosylmethionine (SAM) (Sperber et al., 2015), alpha-ketoglutarate (\u03b1KG) (Carey et al., 2015; Tischler et al., 2019), glutamine (Tohyama et al., 2016), acetyl-CoA (Moussaieff et al., 2015), lactate or D-ribose (Rodriguez-Terrones et al., 2020) that are known to regulate the pluripotent states mostly through their contribution to modifications of the epigenetic landscape (reviewed in Tsogtbaatar et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:30:54.716019Z"
+    },
+    {
+      "id": "ba1728b4-07a8-4c54-bc64-a611354499cf",
+      "content_id": "57da2bfe-28a9-4381-83c1-47e075e35ffb",
+      "claim_id": "C70",
+      "claim": "Succinate influences pluripotency regulation through protein succinylation and a paracrine effect.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to these previous studies, we highlight a role of succinate that goes beyond epigenetic landscape regulation but instead influences pluripotency regulation through protein succinylation and a paracrine effect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary claim based on the experimental findings presented in the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:30:54.716019Z"
+    },
+    {
+      "id": "d3092992-deba-49ec-8882-5b1c8f4edaef",
+      "content_id": "57da2bfe-28a9-4381-83c1-47e075e35ffb",
+      "claim_id": "C71",
+      "claim": "Both heme and succinate play a critical role in the progression of the pluripotency continuum, ranging from 2CLCs to the acquisition of primed pluripotency.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, these results indicate a critical role of both heme and succinate in the progression of the pluripotency continuum, ranging from the 2CLCs on one hand and to the acquisition of primed pluripotency on the other.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary claim based on the experimental findings presented in the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:30:54.716019Z"
+    },
+    {
+      "id": "81a3b1ab-742c-4eb0-83e8-7e36b9dd6786",
+      "content_id": "57da2bfe-28a9-4381-83c1-47e075e35ffb",
+      "claim_id": "C72",
+      "claim": "The link between heme and MAPK/TGF\u03b2-SMAD signaling pathways remains unknown.",
+      "claim_type": "EXPLICIT",
+      "source": "While the link between heme and these crucial signaling pathways remains unknown, it brings to light a crucial importance of this metabolite and its synthesis pathway, so far poorly understood, in the context of pluripotency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This acknowledges a gap in current understanding.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:30:54.716019Z"
+    },
+    {
+      "id": "3572da70-b531-4c2a-8892-1011d9543e8c",
+      "content_id": "57da2bfe-28a9-4381-83c1-47e075e35ffb",
+      "claim_id": "C73",
+      "claim": "Succinylation events are the cause of the na\u00efve-to-primed transition defects upon heme synthesis inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "The ability of this molecule to mimic SA in the pathway's inhibition (Figure 2h\u2013i) and to prevent the exit of the naive state (Figure 2f) points at succinylation events as the cause of the transition defects.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the experimental data showing Sirt7 inhibition effects.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:30:54.716019Z"
+    },
+    {
+      "id": "29fb404c-c22d-4820-9084-80226eb96067",
+      "content_id": "57da2bfe-28a9-4381-83c1-47e075e35ffb",
+      "claim_id": "C74",
+      "claim": "Extracellular succinate acts as a paracrine/autocrine signal able to trigger 2C-like reprogramming through the activation of SUCNR1.",
+      "claim_type": "EXPLICIT",
+      "source": "We further demonstrate that extracellular succinate acts as a paracrine/autocrine signal, able to trigger the 2C-like reprogramming through the activation of its plasma membrane receptor, SUCNR1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary claim based on the experimental findings with MCT and SUCNR1 inhibitors.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:30:54.716019Z"
+    },
+    {
+      "id": "a7c9c26a-381b-4322-939c-c31b1425ca07",
+      "content_id": "57da2bfe-28a9-4381-83c1-47e075e35ffb",
+      "claim_id": "C75",
+      "claim": "The exit of the na\u00efve state is impaired upon heme biosynthesis pathway blockade in mESCs.",
+      "claim_type": "EXPLICIT",
+      "source": "we show here that the exit of the na\u00efve state is impaired upon heme biosynthesis pathway blockade, linked in mESCs to the incapacity to activate MAPK- and TGF\u03b2-dependent signaling pathways after succinate accumulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary claim based on the experimental findings presented in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:30:54.716019Z"
+    },
+    {
+      "id": "7f1f0b15-3dc2-4f21-8ab3-013390b777ec",
+      "content_id": "57da2bfe-28a9-4381-83c1-47e075e35ffb",
+      "claim_id": "C76",
+      "claim": "Heme synthesis inhibition promotes the acquisition of 2 cell-like cells in a heme-independent manner caused by mitochondrial succinate accumulation and leakage.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, heme synthesis inhibition promotes the acquisition of 2 cell-like cells in a heme-independent manner caused by a mitochondrial succinate accumulation and leakage out of the cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary claim based on the experimental findings presented in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:30:54.716019Z"
+    },
+    {
+      "id": "4ee250a2-e82c-4227-82ac-ff13c03b8751",
+      "content_id": "57da2bfe-28a9-4381-83c1-47e075e35ffb",
+      "claim_id": "C77",
+      "claim": "This study unveils a new mechanism underlying the maintenance of pluripotency under the control of heme synthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, this study unveils a new mechanism underlying the maintenance of pluripotency under the control of heme synthesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary claim of the study's contribution.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:30:54.716019Z"
+    },
+    {
+      "id": "acda901c-a1a4-467f-92da-00711f30c58e",
+      "content_id": "57da2bfe-28a9-4381-83c1-47e075e35ffb",
+      "claim_id": "C78",
+      "claim": "BACH1 does not accumulate in the nucleus following SA treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "While we did not observe an accumulation of BACH1 in the nucleus following SA treatment (Figure 2\u2014figure supplement 1a)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunofluorescence data shown in Figure 2\u2014figure supplement 1a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:30:54.716019Z"
+    },
+    {
+      "id": "77cbbf90-d369-4f09-8806-572b34a5cea9",
+      "content_id": "57da2bfe-28a9-4381-83c1-47e075e35ffb",
+      "claim_id": "C79",
+      "claim": "The pathway inhibition by SA was especially observed after 24 h of treatment, concomitant with the defect in gene expression.",
+      "claim_type": "EXPLICIT",
+      "source": "This pathway inhibition was especially observed after 24 h of treatment, and concomitant with the defect in gene expression (Figure 2b\u2013d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by western blot and RT-qPCR time course data shown in Figure 2b-d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:30:54.716019Z"
+    },
+    {
+      "id": "a4c18ad8-a96e-4d0b-9cd2-c388b1026cdc",
+      "content_id": "57da2bfe-28a9-4381-83c1-47e075e35ffb",
+      "claim_id": "C80",
+      "claim": "In basal conditions, the bulk of succinyllysine modifications are located in the mitochondria.",
+      "claim_type": "EXPLICIT",
+      "source": "In basal conditions, the bulk of succinyllysine modifications are located in the mitochondria (Figure 4\u2014figure supplement 1), as expected.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunofluorescence data shown in Figure 4\u2014figure supplement 1 and is consistent with established knowledge.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:30:54.716019Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "147526c7-946f-447f-978d-b9c4fab0e561",
+      "content_id": "57da2bfe-28a9-4381-83c1-47e075e35ffb",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "CRISPR screens in mouse and human ESCs identified heme biosynthesis pathway enzymes as positive hits for na\u00efve-to-primed transition, with 7 of 8 enzymes in mESCs and 4 cytosolic enzymes in hESCs highlighted, despite no change in gene expression during the transition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C4 are well-supported by CRISPR screen data (C1, C2), gene expression analysis (C3), and GO enrichment analysis (C4). The functional screen results are validated through multiple independent datasets and analytical approaches, providing strong convergent evidence for the importance of heme biosynthesis in pluripotency transitions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:30:54.716019Z"
+    },
+    {
+      "id": "af6c5330-8313-4e90-8e93-9790c67218e9",
+      "content_id": "57da2bfe-28a9-4381-83c1-47e075e35ffb",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Inhibition of heme biosynthesis with succinylacetone (SA) impairs the na\u00efve-to-primed transition in both mouse and human ESCs, as evidenced by reduced primed marker expression and retained na\u00efve marker expression, with hemin supplementation rescuing this phenotype.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C9 are strongly supported by multiple complementary experimental approaches including RT-qPCR (C5, C6), western blot (C7), immunofluorescence (C7), genetic knockout validation (C8), and cross-species validation in hESCs (C9). The rescue experiments with hemin provide critical specificity controls demonstrating the effect is heme-dependent.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:30:54.716019Z"
+    },
+    {
+      "id": "c78a8bd7-0fe5-4c95-935b-69074505fbe2",
+      "content_id": "57da2bfe-28a9-4381-83c1-47e075e35ffb",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "SA treatment activates the integrated stress response (ISR) as shown by increased EIF2\u03b1 phosphorylation and reduced protein translation, but ISR activation alone does not prevent na\u00efve state exit, and BACH1 nuclear accumulation is not observed.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10, C11, and C78 are supported by western blot and SunSET assay data. The negative control experiment with BTdCPU (C11) effectively demonstrates that ISR activation is not the mechanism underlying the transition defect, strengthening the overall mechanistic interpretation. The absence of BACH1 accumulation (C78) rules out a canonical heme-sensing pathway.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:30:54.716019Z"
+    },
+    {
+      "id": "f489b3a1-6fe6-4662-836a-52e8d4e5bf78",
+      "content_id": "57da2bfe-28a9-4381-83c1-47e075e35ffb",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Heme synthesis inhibition prevents activation of MAPK-ERK1/2 and TGF\u03b2-SMAD signaling pathways during the na\u00efve-to-primed transition, with chemical inhibition of SMAD mimicking SA effects, and increased ligand doses failing to rescue the phenotype.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C16 and C79 are well-supported by GSEA analysis, western blots, immunofluorescence, and RT-qPCR data. The time-course experiments (C79) establish temporal correlation between pathway inhibition and gene expression defects. The chemical inhibitor experiments (C15) and ligand supplementation experiments (C16) provide strong mechanistic validation, though the molecular link between heme and these pathways remains unclear.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:30:54.716019Z"
+    },
+    {
+      "id": "9c09d22d-35dc-4734-953e-3a5fe070d3dd",
+      "content_id": "57da2bfe-28a9-4381-83c1-47e075e35ffb",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Heme synthesis inhibition leads to succinate accumulation through reduced SDH abundance, and blocking succinate export from mitochondria with butylmalonate rescues the transition defect, implicating protein succinylation as the causal mechanism.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C22 and C73 form a coherent mechanistic model supported by literature (C17), western blot data for SDH (C19), rescue experiments with butylmalonate (C20), flow cytometry for succinylation (C21), and Sirt7 inhibition experiments (C22). The convergence of multiple independent experimental approaches (metabolite transport inhibition, desuccinylase inhibition) strongly supports the proposed mechanism, though C18 remains a hypothesis and C73 is an inference.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:30:54.716019Z"
+    },
+    {
+      "id": "737def2c-e280-4291-9fb1-e2ebd6017087",
+      "content_id": "57da2bfe-28a9-4381-83c1-47e075e35ffb",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "SA treatment of na\u00efve mESCs induces a 2C-like cell state, as demonstrated by upregulation of 2C-specific genes, increased ZSCAN4+ and MUERVL+ cell populations, with similar effects observed in ALAD KO cells and hESCs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C27 are strongly supported by PCA analysis (C23), RNAseq data (C24), RT-qPCR (C26), immunofluorescence quantification (C25), and cross-validation in genetic knockout (C26) and human cells (C27). The multiple orthogonal approaches and cross-species validation provide robust evidence for this unexpected phenotype.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:30:54.716019Z"
+    },
+    {
+      "id": "d2ff3a50-ab8f-4306-b3de-ac9485604ac9",
+      "content_id": "57da2bfe-28a9-4381-83c1-47e075e35ffb",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The 2C-like phenotype induced by heme synthesis inhibition is heme-independent but succinate-dependent, as hemin supplementation does not rescue the phenotype, butylmalonate blocks it, and endogenous 2CLCs show elevated protein succinylation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C32 and C80 are well-supported by RT-qPCR, immunofluorescence, and flow cytometry data. The differential rescue by hemin (effective for na\u00efve-to-primed transition but not 2CLC induction) is a critical observation distinguishing two separate mechanisms. The observation of elevated succinylation in endogenous 2CLCs (C32) provides important correlative evidence linking succinate metabolism to the 2C state.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:30:54.716019Z"
+    },
+    {
+      "id": "1b404832-7bea-4888-acdd-b78043dd00e3",
+      "content_id": "57da2bfe-28a9-4381-83c1-47e075e35ffb",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Atpenin A5 (AA5), an SDH inhibitor, phenocopies SA effects by inducing protein succinylation, increasing ZSCAN4+ cells, and upregulating 2C markers, with butylmalonate blocking these effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C36 are strongly supported by immunofluorescence, flow cytometry, and RT-qPCR data. The use of an independent method (SDH inhibition) to induce succinate accumulation provides critical validation that succinate, rather than other effects of heme synthesis inhibition, drives the 2CLC phenotype. The butylmalonate rescue (C36) further confirms the mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:30:54.716019Z"
+    },
+    {
+      "id": "dddd4ef3-1775-4b54-9fbb-13f265a74323",
+      "content_id": "57da2bfe-28a9-4381-83c1-47e075e35ffb",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Exogenous succinate supplementation increases 2CLC markers, and inhibition of succinate export through MCT1/4 and SUCNR1 receptor reduces AA5-induced 2CLC marker expression, demonstrating that succinate acts as a paracrine/autocrine signal.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37, C38, C40, and C74 are supported by RT-qPCR data with both membrane-permeable and impermeable succinate forms (C37) and pharmacological inhibition of succinate transporters and receptor (C38). The convergence of gain-of-function (exogenous succinate) and loss-of-function (transporter/receptor inhibition) experiments provides strong evidence for the paracrine/autocrine signaling model, though C40 and C74 involve some inference.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:30:54.716019Z"
+    },
+    {
+      "id": "87cee564-64e2-4eb3-be5b-44e089d2da92",
+      "content_id": "57da2bfe-28a9-4381-83c1-47e075e35ffb",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The 2CLC induction by AA5 involves both RAR and RXR receptors, as inhibition of both receptors rescues the effect, differing from retinoic acid which acts only through RAR.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C39 is supported by RT-qPCR data showing rescue with both RAR and RXR inhibitors. This provides important mechanistic insight distinguishing the succinate-mediated pathway from the previously described retinoic acid pathway, though the molecular details of how succinate activates these receptors remain unclear.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:30:54.716019Z"
+    },
+    {
+      "id": "281661e7-182f-4a7f-b3d0-5abc042e54bc",
+      "content_id": "57da2bfe-28a9-4381-83c1-47e075e35ffb",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "SA and AA5 treatment increases histone H3 trimethylation (H3K4me3, H3K9me3, H3K27me3) and global 5mC levels, but chemical inhibition of histone demethylases or TET enzymes does not induce 2CLC features, and HIF1\u03b1 is not stabilized.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C52 are supported by immunofluorescence data. The negative results with HDM and TET inhibitors (C52) are important for ruling out epigenetic mechanisms as the primary driver of 2CLC induction, despite the observed changes in methylation patterns. The absence of HIF1\u03b1 stabilization (C49) rules out PHD inhibition. However, the interpretation that epigenetic changes are not causal requires caution, as the chemical inhibitors may not fully recapitulate the effects of succinate accumulation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:30:54.716019Z"
+    },
+    {
+      "id": "bd07f62e-feb4-460e-b31f-b2668503897f",
+      "content_id": "57da2bfe-28a9-4381-83c1-47e075e35ffb",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The manuscript provides extensive background context from prior literature regarding embryonic lethality of heme synthesis enzyme knockouts, requirements for MAPK and TGF\u03b2-SMAD pathways in pluripotency transitions, characteristics of 2CLCs, roles of metabolites and epigenetic modifications in pluripotency, and potential mechanistic explanations for the observed phenomena.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C69 are primarily literature citations and established knowledge that provide context for the experimental findings. These are appropriately cited and accurately represent prior work. C68 offers a reasonable speculation about culture condition differences. These contextual claims support the interpretation of the experimental results but do not constitute primary findings of this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:30:54.716019Z"
+    },
+    {
+      "id": "4663a54d-6703-4713-a450-72d4609d0f3e",
+      "content_id": "57da2bfe-28a9-4381-83c1-47e075e35ffb",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The study concludes that heme and succinate play critical roles in pluripotency regulation through distinct mechanisms: heme is required for na\u00efve-to-primed transition via MAPK/TGF\u03b2-SMAD pathway activation, while succinate promotes 2CLC acquisition through protein succinylation and paracrine signaling, unveiling a new metabolic control mechanism of pluripotency.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C70, C71, C75, C76, and C77 represent summary conclusions that integrate the experimental findings. These are well-supported by the collective evidence from the study, though C72 appropriately acknowledges that the molecular link between heme and signaling pathways remains unknown. The dual role of the heme synthesis pathway (heme-dependent and succinate-dependent effects) is a novel and significant finding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:30:54.716019Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "d8dc4a6e-218e-46e0-b380-515652733142",
+      "result_id": "147526c7-946f-447f-978d-b9c4fab0e561"
+    },
+    {
+      "claim_id": "fd41927e-3e21-4e42-8b29-2120439adfe8",
+      "result_id": "147526c7-946f-447f-978d-b9c4fab0e561"
+    },
+    {
+      "claim_id": "489c0da9-8f9e-4832-9ac4-f2fa8fd029ef",
+      "result_id": "147526c7-946f-447f-978d-b9c4fab0e561"
+    },
+    {
+      "claim_id": "4bae4a47-475e-4fbb-b790-339b3f6c1b79",
+      "result_id": "147526c7-946f-447f-978d-b9c4fab0e561"
+    },
+    {
+      "claim_id": "f378d6e0-e2b8-4115-9e62-eef1cef507b1",
+      "result_id": "af6c5330-8313-4e90-8e93-9790c67218e9"
+    },
+    {
+      "claim_id": "c470dd7f-9d07-4bf1-a87f-76860248619a",
+      "result_id": "af6c5330-8313-4e90-8e93-9790c67218e9"
+    },
+    {
+      "claim_id": "c6703881-89ae-4779-a27d-811072fbd0d5",
+      "result_id": "af6c5330-8313-4e90-8e93-9790c67218e9"
+    },
+    {
+      "claim_id": "7c167f65-3518-4a63-b949-318177eaad46",
+      "result_id": "af6c5330-8313-4e90-8e93-9790c67218e9"
+    },
+    {
+      "claim_id": "0a6cc794-e650-4058-b12e-9dccbb85c8ce",
+      "result_id": "af6c5330-8313-4e90-8e93-9790c67218e9"
+    },
+    {
+      "claim_id": "c8a9bf04-8ab2-49e5-aa58-da8269539ec2",
+      "result_id": "c78a8bd7-0fe5-4c95-935b-69074505fbe2"
+    },
+    {
+      "claim_id": "21aa67fc-fbd4-462d-98c8-d9fe923fca57",
+      "result_id": "c78a8bd7-0fe5-4c95-935b-69074505fbe2"
+    },
+    {
+      "claim_id": "acda901c-a1a4-467f-92da-00711f30c58e",
+      "result_id": "c78a8bd7-0fe5-4c95-935b-69074505fbe2"
+    },
+    {
+      "claim_id": "f5a46714-af24-4ecd-9c28-185c1f0bcf7d",
+      "result_id": "f489b3a1-6fe6-4662-836a-52e8d4e5bf78"
+    },
+    {
+      "claim_id": "7a0682c3-96c2-4aaf-900b-a644585b14e6",
+      "result_id": "f489b3a1-6fe6-4662-836a-52e8d4e5bf78"
+    },
+    {
+      "claim_id": "8b14921c-de5a-4149-a464-c38bdeff7c0d",
+      "result_id": "f489b3a1-6fe6-4662-836a-52e8d4e5bf78"
+    },
+    {
+      "claim_id": "cdd00048-ca36-42a0-83b2-79c4af92d314",
+      "result_id": "f489b3a1-6fe6-4662-836a-52e8d4e5bf78"
+    },
+    {
+      "claim_id": "2cdf66dc-6536-4414-8b0a-6bf4174688b5",
+      "result_id": "f489b3a1-6fe6-4662-836a-52e8d4e5bf78"
+    },
+    {
+      "claim_id": "77cbbf90-d369-4f09-8806-572b34a5cea9",
+      "result_id": "f489b3a1-6fe6-4662-836a-52e8d4e5bf78"
+    },
+    {
+      "claim_id": "456365ea-ff6e-4d2b-a730-d4e9e1bc6e67",
+      "result_id": "9c09d22d-35dc-4734-953e-3a5fe070d3dd"
+    },
+    {
+      "claim_id": "5ef1177d-5332-4150-8f9e-7b182d1a805e",
+      "result_id": "9c09d22d-35dc-4734-953e-3a5fe070d3dd"
+    },
+    {
+      "claim_id": "d2bc703c-28f5-4f49-9cd3-4136a2749dfa",
+      "result_id": "9c09d22d-35dc-4734-953e-3a5fe070d3dd"
+    },
+    {
+      "claim_id": "5c5f4b9f-ccef-49a6-9c86-0b540521e05e",
+      "result_id": "9c09d22d-35dc-4734-953e-3a5fe070d3dd"
+    },
+    {
+      "claim_id": "ae8a61c7-bcb2-4c9c-bfbc-63cbcb84e53a",
+      "result_id": "9c09d22d-35dc-4734-953e-3a5fe070d3dd"
+    },
+    {
+      "claim_id": "35ca5e9c-5dbf-4704-a437-a5dd2f88dbbe",
+      "result_id": "9c09d22d-35dc-4734-953e-3a5fe070d3dd"
+    },
+    {
+      "claim_id": "3572da70-b531-4c2a-8892-1011d9543e8c",
+      "result_id": "9c09d22d-35dc-4734-953e-3a5fe070d3dd"
+    },
+    {
+      "claim_id": "671c6edc-095a-493b-87c0-1fcc014c474e",
+      "result_id": "737def2c-e280-4291-9fb1-e2ebd6017087"
+    },
+    {
+      "claim_id": "fd850e48-7425-4086-a7ea-993970c528e4",
+      "result_id": "737def2c-e280-4291-9fb1-e2ebd6017087"
+    },
+    {
+      "claim_id": "d8e4839f-b7ed-46f6-8d59-232d8c493774",
+      "result_id": "737def2c-e280-4291-9fb1-e2ebd6017087"
+    },
+    {
+      "claim_id": "04b33a15-2617-49c0-83d2-aec7f34eb216",
+      "result_id": "737def2c-e280-4291-9fb1-e2ebd6017087"
+    },
+    {
+      "claim_id": "6f68e49b-28da-45f0-9d63-e4ee83a545bd",
+      "result_id": "737def2c-e280-4291-9fb1-e2ebd6017087"
+    },
+    {
+      "claim_id": "9986964d-354d-487e-8212-8cc06eca5732",
+      "result_id": "d2ff3a50-ab8f-4306-b3de-ac9485604ac9"
+    },
+    {
+      "claim_id": "7e5d7d51-4cf9-46bd-aabc-658056a05ced",
+      "result_id": "d2ff3a50-ab8f-4306-b3de-ac9485604ac9"
+    },
+    {
+      "claim_id": "833b2b66-63b4-410f-ac3c-b58e19cbb53f",
+      "result_id": "d2ff3a50-ab8f-4306-b3de-ac9485604ac9"
+    },
+    {
+      "claim_id": "bda9eebc-e7b2-4ee3-860c-0ab520bcfc76",
+      "result_id": "d2ff3a50-ab8f-4306-b3de-ac9485604ac9"
+    },
+    {
+      "claim_id": "81c687de-4840-47f8-b4fe-8477496bdfad",
+      "result_id": "d2ff3a50-ab8f-4306-b3de-ac9485604ac9"
+    },
+    {
+      "claim_id": "a4c18ad8-a96e-4d0b-9cd2-c388b1026cdc",
+      "result_id": "d2ff3a50-ab8f-4306-b3de-ac9485604ac9"
+    },
+    {
+      "claim_id": "389f28b8-50cd-4e5c-a05e-9eaa1c36f7d7",
+      "result_id": "1b404832-7bea-4888-acdd-b78043dd00e3"
+    },
+    {
+      "claim_id": "2fa5ab68-171f-49c2-b349-d5c172f86ded",
+      "result_id": "1b404832-7bea-4888-acdd-b78043dd00e3"
+    },
+    {
+      "claim_id": "311a4052-3505-49e0-9a2b-b3d46cea9b7c",
+      "result_id": "1b404832-7bea-4888-acdd-b78043dd00e3"
+    },
+    {
+      "claim_id": "ef6fbad3-3aa2-485b-ae63-da7f8da80e40",
+      "result_id": "1b404832-7bea-4888-acdd-b78043dd00e3"
+    },
+    {
+      "claim_id": "8b0e46f6-6f97-42e0-8e12-dd99b741a430",
+      "result_id": "dddd4ef3-1775-4b54-9fbb-13f265a74323"
+    },
+    {
+      "claim_id": "fec6a752-2051-48b9-91b1-36e2bf5831a5",
+      "result_id": "dddd4ef3-1775-4b54-9fbb-13f265a74323"
+    },
+    {
+      "claim_id": "ef4c4540-e4bb-480d-8d94-ccf2871b0ecd",
+      "result_id": "dddd4ef3-1775-4b54-9fbb-13f265a74323"
+    },
+    {
+      "claim_id": "29fb404c-c22d-4820-9084-80226eb96067",
+      "result_id": "dddd4ef3-1775-4b54-9fbb-13f265a74323"
+    },
+    {
+      "claim_id": "bec253b9-f797-44ee-978b-145bf8d58bee",
+      "result_id": "87cee564-64e2-4eb3-be5b-44e089d2da92"
+    },
+    {
+      "claim_id": "bdb3e752-df2d-4310-92fe-f4146714f646",
+      "result_id": "281661e7-182f-4a7f-b3d0-5abc042e54bc"
+    },
+    {
+      "claim_id": "ef6ae0bf-6032-49d2-8acb-4665473a3021",
+      "result_id": "281661e7-182f-4a7f-b3d0-5abc042e54bc"
+    },
+    {
+      "claim_id": "1dae862a-03b7-4a74-a5a2-c610aae680f3",
+      "result_id": "281661e7-182f-4a7f-b3d0-5abc042e54bc"
+    },
+    {
+      "claim_id": "7443b8bf-21f9-4ecc-8489-0be77266df1a",
+      "result_id": "281661e7-182f-4a7f-b3d0-5abc042e54bc"
+    },
+    {
+      "claim_id": "75840025-da55-4c5d-a798-1080092b82b8",
+      "result_id": "bd07f62e-feb4-460e-b31f-b2668503897f"
+    },
+    {
+      "claim_id": "a981e056-1602-4812-88c0-11677691f587",
+      "result_id": "bd07f62e-feb4-460e-b31f-b2668503897f"
+    },
+    {
+      "claim_id": "7cee3c80-0219-40b9-bff2-c761307ab4db",
+      "result_id": "bd07f62e-feb4-460e-b31f-b2668503897f"
+    },
+    {
+      "claim_id": "727c6bdf-92c9-4dbf-9bae-91f1080f238b",
+      "result_id": "bd07f62e-feb4-460e-b31f-b2668503897f"
+    },
+    {
+      "claim_id": "29bc768c-65ac-4467-8b04-a26182c07283",
+      "result_id": "bd07f62e-feb4-460e-b31f-b2668503897f"
+    },
+    {
+      "claim_id": "0b8afd42-9430-41e0-96fd-2dcbbd7a2ebd",
+      "result_id": "bd07f62e-feb4-460e-b31f-b2668503897f"
+    },
+    {
+      "claim_id": "53a76432-8e92-47b1-bd35-e7b5acdd9d2c",
+      "result_id": "bd07f62e-feb4-460e-b31f-b2668503897f"
+    },
+    {
+      "claim_id": "5cfdf3cc-ac9c-4777-84c7-3c8f0f512a15",
+      "result_id": "bd07f62e-feb4-460e-b31f-b2668503897f"
+    },
+    {
+      "claim_id": "4300cfdf-06c3-4aa9-b2c2-c7a9137d67b6",
+      "result_id": "bd07f62e-feb4-460e-b31f-b2668503897f"
+    },
+    {
+      "claim_id": "09071fba-e3cb-453c-820c-5e0c9c02f417",
+      "result_id": "bd07f62e-feb4-460e-b31f-b2668503897f"
+    },
+    {
+      "claim_id": "fe8a7525-a933-45a4-be2f-217860ba8e7d",
+      "result_id": "bd07f62e-feb4-460e-b31f-b2668503897f"
+    },
+    {
+      "claim_id": "e3b4af5f-e56d-4c00-93d8-1b1892570360",
+      "result_id": "bd07f62e-feb4-460e-b31f-b2668503897f"
+    },
+    {
+      "claim_id": "b1cdda72-0b2c-4c85-91c9-a61b571f1514",
+      "result_id": "bd07f62e-feb4-460e-b31f-b2668503897f"
+    },
+    {
+      "claim_id": "48e429cd-4217-48fb-9c75-0d94ba529452",
+      "result_id": "bd07f62e-feb4-460e-b31f-b2668503897f"
+    },
+    {
+      "claim_id": "9f2e4a08-ab03-4c17-b7f8-99d9d8174693",
+      "result_id": "bd07f62e-feb4-460e-b31f-b2668503897f"
+    },
+    {
+      "claim_id": "740e0110-75de-4ea6-9e0a-d0c8fb679fc0",
+      "result_id": "bd07f62e-feb4-460e-b31f-b2668503897f"
+    },
+    {
+      "claim_id": "6aafb52f-2e8e-4c0a-8676-f02af0958550",
+      "result_id": "bd07f62e-feb4-460e-b31f-b2668503897f"
+    },
+    {
+      "claim_id": "e500c5cf-309e-4f28-9807-141a867735ff",
+      "result_id": "bd07f62e-feb4-460e-b31f-b2668503897f"
+    },
+    {
+      "claim_id": "b307e25e-b0b9-4fa2-8f45-01dde8405811",
+      "result_id": "bd07f62e-feb4-460e-b31f-b2668503897f"
+    },
+    {
+      "claim_id": "a9041f32-6c2d-411f-9fac-dabaad248d9b",
+      "result_id": "bd07f62e-feb4-460e-b31f-b2668503897f"
+    },
+    {
+      "claim_id": "34c52070-9a09-48b5-bc66-4868a7dc35e5",
+      "result_id": "bd07f62e-feb4-460e-b31f-b2668503897f"
+    },
+    {
+      "claim_id": "015567f0-02ea-4ed5-a8ed-4e2998326583",
+      "result_id": "bd07f62e-feb4-460e-b31f-b2668503897f"
+    },
+    {
+      "claim_id": "b6fc10d7-feea-460c-845d-b68fcf7fef5f",
+      "result_id": "bd07f62e-feb4-460e-b31f-b2668503897f"
+    },
+    {
+      "claim_id": "1befbfcf-f7a0-4407-a6d7-06e1df1f9889",
+      "result_id": "bd07f62e-feb4-460e-b31f-b2668503897f"
+    },
+    {
+      "claim_id": "5a4075fa-4aeb-48ef-91dc-1e561b9cd4ad",
+      "result_id": "bd07f62e-feb4-460e-b31f-b2668503897f"
+    },
+    {
+      "claim_id": "ba1728b4-07a8-4c54-bc64-a611354499cf",
+      "result_id": "4663a54d-6703-4713-a450-72d4609d0f3e"
+    },
+    {
+      "claim_id": "d3092992-deba-49ec-8882-5b1c8f4edaef",
+      "result_id": "4663a54d-6703-4713-a450-72d4609d0f3e"
+    },
+    {
+      "claim_id": "81a3b1ab-742c-4eb0-83e8-7e36b9dd6786",
+      "result_id": "4663a54d-6703-4713-a450-72d4609d0f3e"
+    },
+    {
+      "claim_id": "a7c9c26a-381b-4322-939c-c31b1425ca07",
+      "result_id": "4663a54d-6703-4713-a450-72d4609d0f3e"
+    },
+    {
+      "claim_id": "7f1f0b15-3dc2-4f21-8ab3-013390b777ec",
+      "result_id": "4663a54d-6703-4713-a450-72d4609d0f3e"
+    },
+    {
+      "claim_id": "4ee250a2-e82c-4227-82ac-ff13c03b8751",
+      "result_id": "4663a54d-6703-4713-a450-72d4609d0f3e"
+    }
+  ],
+  "comparisons": []
+}

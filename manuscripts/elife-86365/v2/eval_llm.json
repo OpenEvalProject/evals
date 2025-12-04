@@ -1,0 +1,477 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "BrainPy leverages JAX and XLA to provide JIT compilation for Python class objects, enabling models to be compiled into binary instructions for CPU, GPU, and TPU with performance comparable to native C or CUDA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 and C34-C37 collectively establish BrainPy's core compilation infrastructure. The claims are consistent and supported by citations to JAX (Frostig et al., 2018) and XLA (Sabne, 2020). Performance claims are substantiated by experimental data in Figures 6-8 showing speedups and cross-platform deployment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "BrainPy provides specialized infrastructure for brain dynamics modeling, including NumPy-like operators, sparse and event-based operators, numerical integrators, and a modular programming interface. Dedicated operators reduce running time by several orders of magnitude compared to traditional dense matrix operators.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C33 and C38-C42 describe BrainPy's infrastructure components. The performance claim (C42) is supported by experimental data in Figures 7B-C showing orders of magnitude speedup. The design decisions are well-justified and demonstrated through multiple examples.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "BrainPy provides comprehensive numerical integration capabilities for differential equations, including ODEs, SDEs, and FDEs, with support for various solvers and delay forms. The integration is designed as a Python decorator for ease of use.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C51 describe BrainPy's differential equation solving capabilities. The claims are internally consistent and describe a comprehensive set of features. The decorator design pattern is a standard software engineering approach that enhances usability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C52",
+      "C53",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "BrainPy introduces the DynamicalSystem interface that supports modular, hierarchical, and composable programming for brain dynamics models at any organizational level. This hierarchical composition property is unique to BrainPy among brain simulators.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C18 and C52-C72 describe the DynamicalSystem interface and its capabilities. The hierarchical composition is demonstrated in Figure 2 with concrete examples from channels to systems. The claim of uniqueness (C70) is stated but not rigorously benchmarked against all simulators.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "BrainPy provides the DSRunner interface for simulating brain dynamics models at multiple levels (channel, neuron, network, system) with support for parallel simulation methods including multiprocessing and JAX's vmap/pmap for batch execution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C80 describe simulation capabilities. Figure 3 demonstrates simulation at multiple levels (A-D) and batch simulation (E). The parallel simulation methods are well-established techniques (multiprocessing, vmap, pmap) appropriately applied to brain dynamics modeling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "BrainPy provides the DSTrainer interface supporting multiple training algorithms including backpropagation through time (BPTT), offline learning (ridge regression), and online learning (FORCE). The unified syntax enables training the same model with different algorithms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C92 describe training capabilities supported by citations (Masse et al., 2019; Bellec et al., 2020; Neftci et al., 2019; etc.). Figure 4 demonstrates training of different model types with various algorithms. The claim about training the same model with multiple algorithms (C87) is demonstrated in Figure 4D-F.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "BrainPy provides the DSAnalyzer interface for automatic dynamics analysis, supporting phase plane and bifurcation analyses for low-dimensional systems and slow point computation with linearization analysis for high-dimensional systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C106 describe analysis capabilities. Figure 5 demonstrates phase plane analysis (A), bifurcation analysis (B-C), and slow point finding with linearization (D-E). The numerical approach (C101) is appropriate for handling nonlinear systems. Citations support the methods (Sussillo and Barak, 2013; Wu et al., 2008).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "JIT compilation with XLA addresses the challenge of efficiently simulating brain dynamics models in Python by transforming dynamic code into static machine code and employing operator fusion. This achieves 10x speedup for the COBA network and makes LIF models comparable to matrix multiplication in performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C120 describe JIT compilation benefits. The challenge is established by citation (Blundell et al., 2018). Figure 6 provides experimental evidence showing LIF performance matching matrix multiplication (A) and 10x speedup for COBA (B-C). The explanation of XLA's operator fusion is technically sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "BrainPy's specialized event-based and sparse operators address the inefficiency of conventional operators for brain dynamics models with sparse connections and event-driven computations, achieving orders of magnitude speedup for the COBA network while maintaining consistent time ratios as network size increases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C130 describe specialized operators and their benefits. The sparsity characteristic is supported by citation (Potjans and Diesmann, 2014). Figure 7 demonstrates the problem (A) and solution (B-C) with experimental data showing orders of magnitude speedup and consistent time ratios.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145"
+    ],
+    "result": "Benchmarking against NEURON, NEST, Brian2, Brian2CUDA, GeNN, and Brian2GeNN on CPU and GPU platforms shows BrainPy achieves 1-2 orders of magnitude speedup over NEURON/NEST on CPU, comparable or better performance than Brian2/Brian2CUDA on GPU, with particularly strong performance in x32 mode for the COBAHH model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C131-C145 describe benchmarking results. Figure 8A-E provides comprehensive experimental data comparing multiple simulators across platforms. The methodology is sound with established benchmark models (COBA, COBAHH). Results are consistent with prior work (Stimberg et al., 2019) and show clear performance advantages.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158"
+    ],
+    "result": "BrainPy supports TPU deployment but faces limitations for sparse networks due to lack of native sparse computation support, requiring masked dense matrices that result in slower performance and quadratic memory increase. For dense networks, TPUs significantly outperform CPUs and GPUs with excellent scalability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C146-C158 describe TPU performance. The limitations for sparse networks (C147-C150) are clearly stated with experimental evidence. The strong performance for dense networks (C156, C158) is demonstrated in Figure 8F. The technical explanation of TPU characteristics (C157) is accurate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166",
+      "C167",
+      "C168",
+      "C169",
+      "C170",
+      "C171"
+    ],
+    "result": "BrainPy provides an extensible architecture enabling easy extension of infrastructure, utility functions, and machine-learning methods through Python interfaces. Custom operators can be implemented via the CustomOpByNumba interface with performance comparable to or better than C++ implementations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C159-C171 describe extensibility features. The motivation is well-established (C159-C162). The CustomOpByNumba interface is demonstrated with examples (C165-C166). The performance claim (C171) is supported by Figure 9 showing comparable performance to C++ operators.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C172",
+      "C173",
+      "C174",
+      "C175",
+      "C176",
+      "C177",
+      "C178",
+      "C179",
+      "C180",
+      "C181",
+      "C182",
+      "C183",
+      "C184"
+    ],
+    "result": "BrainPy supports integration with the JAX machine learning ecosystem through compatibility with JAX libraries, enabling conversion between BrainPy models and other frameworks like Flax. This addresses the limitation of existing brain simulators in incorporating machine learning advances.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C172-C184 describe machine learning integration. The limitation of existing simulators (C176) motivates the approach. The technical solution through object-oriented transformations (C180) and conversion interfaces (C182, C184) is well-described. Citations support the ecosystem claim (Saxe et al., 2021; Heek, 2020).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C185",
+      "C186",
+      "C187",
+      "C188",
+      "C189",
+      "C190",
+      "C191",
+      "C192"
+    ],
+    "result": "BrainPy's object-oriented programming approach differs from the declarative domain-specific languages used by most brain simulators (Brian2, NeuroML, NetPyNE, BMTK). While declarative approaches offer clear separation and concise specification, BrainPy's approach exposes implementation details and adds code complexity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C185-C192 compare programming paradigms. The characterization of existing simulators is supported by citations (Stimberg et al., 2019; Cannon et al., 2014; Dura-Bernal et al., 2019; Dai et al., 2020a,b). The acknowledged limitation (C192) demonstrates balanced assessment of the design tradeoff.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C193",
+      "C194",
+      "C195",
+      "C196",
+      "C197",
+      "C198"
+    ],
+    "result": "BrainPy's current scope focuses on large-scale network modeling while balancing biological fidelity and computational tractability. Detailed spatial modeling with multi-compartment dynamics exceeds the current scope due to computational expense and lack of implicit solver support.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C193-C198 clearly define BrainPy's scope and limitations. The rationale for excluding multi-compartment models (C194, C196-C197) is technically sound. Citations support the characterization of tools for detailed modeling (Hines and Carnevale, 1997; Akar et al., 2019). This is an honest assessment of current limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C199",
+      "C200",
+      "C201",
+      "C202",
+      "C203",
+      "C204",
+      "C205",
+      "C206",
+      "C207"
+    ],
+    "result": "BrainPy supports data and model parallelism via GSPMD for dense or structured sparse models but does not support general parallelization of sparse spiking neural networks on multiple devices. This differs from NEST and NEURON which provide MPI-based parallelization for large-scale SNNs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C199-C207 describe parallelization capabilities and limitations. The GSPMD support is documented with citation (Xu et al., 2021). The limitation for sparse SNNs (C203-C204) is clearly stated. The comparison with NEST/NEURON (C205-C206) is supported by citations and acknowledges their superior parallelization for this use case.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C208",
+      "C209",
+      "C210",
+      "C211"
+    ],
+    "result": "Future work should support efficient multi-compartment neuron models to enable biologically detailed subcellular modeling. Studies show dendritic mechanisms provide advantages to network models, and efficient implementation could bridge machine-learning-oriented and biophysical SNN models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C208-C211 describe future work. The importance is supported by citations (Poirazi and Papoutsi, 2020; Bono and Clopath, 2017; Legenstein and Maass, 2011; Wu et al., 2018). However, C211 is speculative about potential benefits without concrete implementation or validation. This is appropriate for a future work section but cannot be evaluated as supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C212",
+      "C213",
+      "C214",
+      "C215"
+    ],
+    "result": "Future work should develop parallel primitive operators and memory-efficient algorithms for ultra-large-scale simulations (>billions of neurons). Current approaches rely on massive parallelization, and BrainPy aims to parallelize array-based data structures and develop approximating algorithms to overcome O(n\u00b2) complexity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C212-C215 describe future work priorities. The current approach is documented with citations (Kunkel et al., 2011; 2014; Jordan et al., 2018). However, C215 is speculative about future development without concrete implementation. The goal of approximating algorithms is stated but not demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C217",
+      "C218",
+      "C219",
+      "C220",
+      "C221",
+      "C222",
+      "C223",
+      "C224"
+    ],
+    "result": "Future work should integrate BrainPy with modern accelerators and neuromorphic systems. TPUs are less efficient than GPUs for sparse biological networks due to lack of dedicated operators, and future work will explore TPU kernel development. Neuromorphic systems offer power efficiency but require translation tools and mapping optimizations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C217-C224 describe future hardware integration. The TPU inefficiency for sparse networks (C218-C220) is supported by experimental data (Appendix 11\u2014figure 8). The explanation (C220) is technically sound. The neuromorphic characterization (C222) is accurate. However, C221 and C223 are speculative future plans without implementation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Large-scale brain science projects (BRAIN Initiative, Human Brain Project, China Brain Project) are producing vast amounts of neural data. Computational modeling is essential for interpreting this data, but there is currently a lack of general-purpose programming frameworks for brain dynamics modeling, similar to TensorFlow and PyTorch in deep learning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C14 establish the motivation for BrainPy. The brain science projects are documented with citations (Jorgenson et al., 2015; Amunts et al., 2016; Poo et al., 2016). The comparison to TensorFlow/PyTorch is supported by citations (Abadi et al., 2016; Paszke et al., 2019; Dean, 2022). The need for a framework is supported by citation (D'Angelo and Jirsa, 2022).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C15",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "BrainPy provides an integrated platform for simulation, training, and analysis of brain dynamics models with infrastructure including operators, solvers, model-building formats, and JIT compilation. Models can be deployed across devices without code modification, and the framework is highly extensible with robust continuous integration and automatic documentation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15 and C19-C28 provide an overview of BrainPy's capabilities. These are high-level summary claims that are substantiated by the detailed claims and experimental evidence in other result groups. The open-source availability (C28) is verifiable. The continuous integration and documentation (C26-C27) are standard software engineering practices.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "BrainPy addresses the incompatibility between modular/composable interfaces and JIT compilers (JAX, Numba) by providing object-oriented transformations including JIT compilation for class objects and automatic differentiation for class variables. A specialized toolbox provides utility functions for brain dynamics modeling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C57 describe technical solutions to compatibility challenges. The incompatibility issue (C54-C55) is a known limitation of functional JIT compilers. The solution through object-oriented transformations (C56) is a novel contribution. The toolbox utilities (C57) support the modeling workflow.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C66"
+    ],
+    "result": "A synapse model in BrainPy consists of four components: synaptic dynamics, synaptic communication, synaptic output, and synaptic plasticity, with various options for each component.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C66 describes the modular structure of synapse models in BrainPy. This is a design decision that reflects biological and computational considerations. The four-component structure is reasonable and enables flexible composition of different synapse types.",
+    "result_type": "MINOR"
+  }
+]

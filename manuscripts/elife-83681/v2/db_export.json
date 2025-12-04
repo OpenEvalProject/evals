@@ -1,0 +1,1662 @@
+{
+  "submission": {
+    "id": "27f1048e-fb3a-4d96-9724-a96586856777",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-04T03:29:58.236262Z",
+    "updated_at": "2025-12-04T03:29:58.236262Z"
+  },
+  "content": [
+    {
+      "id": "4eb13ebe-fc2f-4109-97f3-7ec3821df670",
+      "submission_id": "27f1048e-fb3a-4d96-9724-a96586856777",
+      "content_type": "manuscript",
+      "content_text": "# Erythrocyte invasion-neutralising antibodies prevent Plasmodium falciparum RH5 from binding to basigin-containing membrane protein complexes\n\n## Authors\n\n- Abhishek Jamwal<sup>1</sup> ([ORCID: 0009-0004-6842-6056](https://orcid.org/0009-0004-6842-6056))\n- Cristina F Constantin<sup>3</sup>\n- Stephan Hirschi<sup>1</sup>\n- Sebastian Henrich<sup>3</sup>\n- Wolfgang Bildl<sup>3</sup>\n- Bernd Fakler<sup>3</sup>\n- Simon J Draper<sup>1</sup> ([ORCID: 0000-0002-9415-1357](https://orcid.org/0000-0002-9415-1357))\n- Uwe Schulte<sup>3</sup> ([ORCID: 0000-0003-3557-0591](https://orcid.org/0000-0003-3557-0591))\n- Matthew K Higgins<sup>1</sup> ([ORCID: 0000-0002-2870-1955](https://orcid.org/0000-0002-2870-1955)) \u2020\n\n### Affiliations\n\n1. Department of Biochemistry, University of Oxford Oxford United Kingdom ([ROR:052gg0110](https://ror.org/052gg0110))\n2. Kavli Institute for Nanoscience Discovery, Dorothy Crowfoot Hodgkin Building, University of Oxford Oxford United Kingdom ([ROR:052gg0110](https://ror.org/052gg0110))\n3. Institute of Physiology, Faculty of Medicine, University of Freiburg Freiburg Germany ([ROR:0245cg223](https://ror.org/0245cg223))\n4. Signalling Research Centres BIOSS and CIBS Freiburg Germany\n\n\u2020 Corresponding author\n\n## Abstract\n\nBasigin is an essential host receptor for invasion of Plasmodium falciparum into human erythrocytes, interacting with parasite surface protein PfRH5. PfRH5 is a leading blood-stage malaria vaccine candidate and a target of growth-inhibitory antibodies. Here, we show that erythrocyte basigin is exclusively found in one of two macromolecular complexes, bound either to plasma membrane Ca2+-ATPase 1/4 (PMCA1/4) or to monocarboxylate transporter 1 (MCT1). PfRH5 binds to each of these complexes with a higher affinity than to isolated basigin ectodomain, making it likely that these are the physiological targets of PfRH5. PMCA-mediated Ca2+ export is not affected by PfRH5, making it unlikely that this is the mechanism underlying changes in calcium flux at the interface between an erythrocyte and the invading parasite. However, our studies rationalise the function of the most effective growth-inhibitory antibodies targeting PfRH5. While these antibodies do not reduce the binding of PfRH5 to monomeric basigin, they do reduce its binding to basigin-PMCA and basigin-MCT complexes. This indicates that the most effective PfRH5-targeting antibodies inhibit growth by sterically blocking the essential interaction of PfRH5 with basigin in its physiological context.\n\n## Introduction\n\nMalaria is still one of the most deadly parasitic diseases to affect humans, with Plasmodium falciparum as the causative agent of the most severe cases (Sato, 2021). The clinical symptoms of malaria occur as the merozoite developmental form of the parasite invades and replicates within human red blood cells (RBCs) (Venugopal et al., 2020). Vaccines or therapeutics which block erythrocyte invasion therefore have the potential to contribute to reduction and elimination of malaria.\n\nErythrocyte invasion is driven by a series of molecular interactions between merozoite ligands and their receptors on erythrocyte surfaces (Cowman et al., 2017). While many of these interactions are redundant, the binding of merozoite P. falciparum reticulocyte homologue 5 (PfRH5) to erythrocyte basigin is essential for invasion by all tested P. falciparum strains (Crosnier et al., 2011), making PfRH5 one of the most promising blood-stage malaria vaccine candidates. PfRH5 is part of the five-component PfPCRCR complex, containing PfRH5, PfCyRPA, PfRIPR, PfPTRAMP, and PfCSS, and each component is essential for invasion and is a target of growth-inhibitory antibodies or nanobodies (Farrell et al., 2023; Reddy et al., 2015; Scally et al., 2022; Wong et al., 2019).\n\nVaccination of human volunteers with PfRH5 elicits strain-transcending anti-malarial antibodies (Payne et al., 2017) and, in a human challenge model, reduces the rate of parasite growth (Minassian et al., 2021). Structural studies of PfRH5 have revealed that basigin binds towards one of the tips of the \u2018kite-like\u2019 structure of PfRH5 (Wright et al., 2014). Structures of PfRH5 in complex with Fab fragments of monoclonal antibodies have identified a number of important epitopes across PfRH5, including those for human and mouse growth-inhibitory antibodies (R5.004, R5.016, 9AD4, and QA1) (Alanine et al., 2019; Wright et al., 2014), as well as the epitope for an antibody which potentiates the effects of growth-inhibitory antibodies (R5.011) (Alanine et al., 2019). This insight has guided development of improved PfRH5-containing vaccines (Campeotto et al., 2017). However, mysteries remain, with the most effective growth-inhibitory antibodies, 9AD4 and R5.016 not able to block basigin binding. How do they prevent invasion?\n\nBasigin is a type I transmembrane protein of the immunoglobulin (Ig) superfamily, with the most common isoform presenting an ectodomain consisting of two highly glycosylated extracellular Ig domains (Muramatsu, 2016), both of which contact PfRH5 (Wright et al., 2014). More recently, the transmembrane segment of basigin has been shown to mediate formation of heteromeric complexes which contain basigin and either monocarboxylate transporters (MCTs) or plasma membrane calcium ATPases (PMCAs) (Muramatsu, 2016; Supper et al., 2016). MCTs are involved in proton-coupled exchange of lactate or pyruvate across plasma membranes (Felmlee et al., 2020). Both MCT1 and MCT4 interact with basigin in multiple eukaryotic cell lines (Kirk et al., 2000), affecting their function and stability (Kirk et al., 2000) and MCT1 is the primary subtype in human erythrocytes (Juel et al., 2003). PMCAs also play a role in membrane transport, with four subtypes of PMCA removing Ca2+ from the cell cytosol to maintain intracellular Ca2+ homeostasis and modulate cell signalling (Stafford et al., 2017). Either basigin, or its close paralog neuroplastin, are essential subunits of PMCA, influencing expression and function of PMCAs in rodent neurons, with human erythrocyte PMCAs complexed with basigin (Schmidt et al., 2017). Both basigin-MCT1 and neuroplastin-PMCA1 complexes have been structurally characterised, revealing interactions mediated by transmembrane helices (Gong et al., 2018; Wang et al., 2021), with the PfRH5 binding site on the basigin ectodomain remaining accessible.\n\nProteomics studies have confirmed that PMCA1, PMCA4, and MCT1 are all expressed on human RBC plasma membrane (Ravenhill et al., 2019) and, intriguingly, the actions of both MCTs and PMCAs have been linked to severe malaria (Bedu-Addo et al., 2013; Mariga et al., 2014; Timmann et al., 2012). In the case of MCT1, cerebral malaria is associated with increased lactate concentrations, which may damage the blood-brain barrier. However, it is hard to envisage a mechanism by which modulation of MCT1 function by PfRH5 during the rapid process of erythrocyte invasion could contribute to the symptoms of malaria. In contrast, PMCA polymorphisms have been linked to the development of severe malaria in a genome-wide association study, suggesting that calcium homeostasis across the erythrocyte membrane may affect the outcomes of malaria. Spikes of increased intra-erythrocytic calcium have been observed during the parasite invasion process and these are dependent on the interaction between PfRH5 and basigin (Volz et al., 2016; Weiss et al., 2015), raising the question of whether localised blockage of PMCA-mediated calcium efflux may cause these calcium spikes. In this study, we therefore asked whether PfRH5 can interact with basigin which is complexed with MCT1 and PMCAs, whether this modulates PMCA function and whether this explains the function of growth-inhibitory antibodies.\n\n## Results\n\n### Basigin in human erythrocyte is primarily found in complex with PMCAs and MCTs\n\nWe first aimed to determine whether basigin is mostly free when extracted from human erythrocyte membranes or is predominantly in complex with PMCAs or MCTs. We solubilised human erythrocyte ghosts using a mild detergent mixture of n-dodecyl-\u03b2-D-maltose and cholesterol hemisuccinate (DDM:CHS), fractionated this extract by size exclusion chromatography and used western blotting to assess where basigin, PMCAs, and MCT1 elute (Figure 1a). Probing individual fractions with a basigin-binding antibody revealed a broad band indicating the presence of heterogeneously glycosylated basigin. Fractions rich in basigin also showed strong signals for both PMCAs and MCT1, indicating that the majority of basigin co-migrates with PMCAs and MCT1 (Figure 1a). The three components predominantly eluted in a region of the migration profile between standards of mass 157 kDa and 200 kDa, compatible with the mass of detergent-solubilised basigin-MCT1 and basigin-PMCA complexes (Figure 1a). No basigin was found in later fractions in the region of the profile which would correspond to the mass of a single basigin in a detergent micelle.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/83681/elife-83681-fig1-v2.jpg)\n\n**Figure 1.:** (a) The upper panel shows the trace from size exclusion chromatography of n-dodecyl-\u03b2-D-maltose and cholesterol hemisuccinate (DDM/CHS)-solubilised ghost membrane proteins fractionated on a Superdex 200 increase 10/300 column (blue) and for full-length basigin purified from insect cells in CHAPS and exchanged into DDM:CHS (green). The elution volumes of molecular weight standards are indicated above the trace. Fractions collected are demarcated by vertical red dotted lines. The lower panel shows western blots of fractions 2\u201314. Representative blots for basigin (40\u201365 kDa, upper panel), PMCA (~138 kDa, upper middle panel), and MCT1 (~45 kDa, lower middle panel) show that all three proteins co-elute predominantly in fractions 7\u20139. The lower panel shows the equivalent blot for full-length basigin (FL-BSG), related to the green trace. Data shown are representative from n=2 biological replicates. (b) Western blot analysis of 2D blue native PAGE/SDS-PAGE separations of human erythrocyte membrane solubilisates before (upper panel) and after pre-incubation with anti-basigin antibody (lower panel). Blot membranes were stained with antibodies specific for PMCA1/4, basigin and MCT1. Markers of apparent complex size indicate the positions of known mitochondrial respiratory chain (super)complexes (Sch\u00e4gger and Pfeiffer, 2000) run in a separate gel lane. Binding of the antibody led to a full size-shift of both PMCA1/4-basigin and MCT1-basigin complexes, whereas no signal of free basigin could be observed in the low molecular weight range, even after overexposure of the blot. Data shown are representative from n=2 biological replicates. (c) The left-hand panel shows representative western blot images depicting sequential depletion of PMCA (upper panel) and MCT1 (upper-middle panel). Depletion of both transporters leads to reduced basigin levels, while levels of glycophorin C are unaffected in each fraction, again confirming that basigin is in complex with PMCA or MCT1. The remaining panels show densitometry plots obtained from inverted images of the western blots. Mean integrated band densities are shown with error bars as the standard error of the mean (n=3) and represent technical replicates. (d) Bar diagram depicting molecular abundances (abundancenormspec values) of the indicated proteins in depleting affinity purifications with anti-basigin and anti-neuroplastin (NPTN) antibodies from mildly solubilised human erythrocyte membranes as determined by mass spectrometry. The abundance for all proteins was 0 after affinity purification with an IgG control. Data shown are representative from n=8 biological replicates for basigin and n=5 biological replicates for neuroplastin.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/83681/elife-83681-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (a, b) Purification of full-length basigin from baculovirus-infected insect cells was performed in two different detergent mixtures (n-dodecyl-\u03b2-D-maltose and cholesterol hemisuccinate [DDM:CHS] or CHAPS) or was performed in CHAPS, followed by exchange into DDM:CHS (exchanged). (a) shows a Coomassie-stained SDS-PAGE analysis of these three samples. (b) The left-hand panel shows size exclusion chromatography traces on a S200 10/300 increase column for these samples. The right-hand panel shows surface plasmon resonance measurements of the binding of these three samples (0.4 \u03bcM), together with basigin ectodomain (BSGecto, 2 \u03bcM) to immobilised P. falciparum reticulocyte homologue 5 (PfRH5) (right). (c) Analysis of basigin-containing membrane protein complexes extracted from erythrocytes as in Figure 1b, albeit using a broader mass range resolving blue native gel. Data shown are representative from n=2 biological replicates. (d) Repeats of depletion experiments from Figure 1c. (e) Assessment of the depletion of basigin from solubilised erythrocyte membranes using beads lacking antibodies, related to Figure 1c.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/83681/elife-83681-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** The top panel shows the outcome of separation of the basigin-rich fraction from n-dodecyl-\u03b2-D-maltose and cholesterol hemisuccinate (DDM:CHS)-solubilised ghost membranes on a Superdex 200 increase 10/300 column (blue). This was repeated in the presence of MCT1 antibody (green). Individual fractions are labelled and demarcated using red dashed lines. Above the trace are shown the elution profile of molecular weight standards. The lower panel shows western blots probed with MCT1 (left), basigin (central), and GPC (right) for the fractions from the size exclusion profile, both without (top, -IgG) and with (bottom, +IgG) the MCT1 antibody. This shows mobility shift for both MCT1 and basigin, but not the glycophorin C (GPC) control. Data shown are representative from n=2 technical replicates.\n\nTo calibrate this experiment, we expressed full-length basigin in baculovirus-infected Sf9 cells. This was extracted and purified using either CHAPS or DDM:CHS. The DDM:CHS-extracted protein purified with other protein components, migrated as a broad peak on a size exclusion column and showed complex binding kinetics for PfRH5 (Figure 1\u2014figure supplement 1a, b). In contrast, protein extracted with CHAPS appeared pure on a gel, showed an elution profile indicating it to be monodispersed on a size exclusion column and bound to PfRH5, as determined by surface plasmon resonance, with binding kinetics which matched those of basigin ectodomain (Figure 1\u2014figure supplement 1a, b). We therefore concluded that insect cell expressed full-length basigin also associates with binding partners in Sf9 cells which co-purify in DDM:CHS but are removed using the harsher detergent CHAPS. To generate a sample suitable to calibrate our size exclusion experiment, we therefore purified full-length basigin after solubilisation with CHAPS and then detergent exchanged this sample into DDM:CHS, producing monomeric full-length basigin in a detergent micelle which matched that of our basigin-containing complexes purified from erythrocytes (Figure 1\u2014figure supplement 1a, b). This full-length basigin eluted at ~11.2 ml from a size exclusion column, later than the basigin-containing complexes extracted from erythrocytes (Figure 1a). These data suggest that erythrocyte basigin is predominantly found in complexes which co-elute with MCT1 and PMCA.\n\nTo more closely investigate the association of basigin with PMCAs and MCT1, we performed antibody shift assays in two different settings. First, we used size exclusion chromatography to assess whether antibodies alter the mobility of basigin-MCT1 complexes (Figure 1\u2014figure supplement 2). A basigin-rich solubilised ghost extract was applied to a size exclusion column either in the presence or absence of an MCT1-targeting monoclonal antibody and the resultant fractions were probed on western blots for MCT1, basigin, or a glycophorin C control. While there was no shift of glycophorin C, the addition of the MCT1-specific antibody caused a shift in elution profile of the majority of the MCT1 and ~53% of basigin, suggesting them to be in complex (Figure 1\u2014figure supplement 2). However, ~47% of the basigin did not shift. This identifies pools of basigin which are found in complex with and without MCT1. Next, we performed antibody shift experiments on detergent-solubilised human erythrocyte membrane extracts resolved by 2D blue native PAGE (Figure 1b, Figure 1\u2014figure supplement 1c). Western blotting these 2D gels and staining with basigin, PMCA, and MCT1 antibodies indicated two separate populations of basigin-containing complexes, one of which co-migrated with PMCA and one of which co-migrated with MCT1. Inclusion of an antibody which quantitatively binds to basigin shifted both populations to higher molecular weight (Figure 1b). Signals at the appropriate molecular weight for free basigin were not observed in either the presence or absence of the basigin-binding antibody (Figure 1b, Figure 1\u2014figure supplement 1c), even upon prolonged exposure of the blots.\n\nIn parallel, we conducted a depletion experiment. PMCAs and MCT1 were sequentially depleted from solubilised ghosts. PMCAs were first depleted by affinity capture on a calmodulin (CaM) resin, which binds to a regulatory site on the cytoplasmic tails of PMCAs (Stafford et al., 2017), while a monoclonal antibody was used to subsequently immunodeplete MCT1. Western blotting was used to assess the fraction of PMCA, MCT1, and basigin depleted at each stage and these were quantified by densitometry (Figure 1c, Figure 1\u2014figure supplement 1d). Sequential depletions of both PMCA and MCT1 resulted in almost complete elimination of basigin from the solubilised ghost membrane proteome, confirming that nearly all basigin is complexed with one of these transporters. Densitometric measurements also showed greater reduction in basigin levels upon MCT1 depletion, with ~72% of basigin complexed with MCT1 and ~28% of basigin complexed with PMCA. No basigin was depleted using beads alone (Figure 1\u2014figure supplement 1e).\n\nAs there are multiple PMCA subtypes in human cells, we next used mass spectrometry analysis to identify which subtypes co-purify with basigin from human erythrocytes. This revealed PMCA4 to be the major partner of basigin in human erythrocytes, while also identifying PMCA1 (Figure 1d). Also identified were MCTs, with MCT1 as the primary subtype and MCT2 and -4 also detected (Figure 1d).\n\nCollectively, these data show that native basigin in human erythrocytes is found only in heteromeric complexes, either with PMCA (predominantly PMCA4) or MCT1. As the interaction between PfRH5 and basigin has been shown to be essential for erythrocyte invasion by P. falciparum, this raises the question of whether PfRH5 can bind to either the basigin-PMCA and/or basigin-MCT1 complexes.\n\n### PfRH5 binds to the basigin-PMCA complex with greater affinity than to monomeric basigin\n\nWe next investigated the binding of PfRH5 to basigin-PMCA complexes. The structure of the neuroplastin-PMCA1 complex shows the neuroplastin ectodomain to be presented above the extracellular loops of PMCA, with the surface of neuroplastin equivalent to that used by basigin to bind to PfRH5 being exposed, making it likely that PfRH5 can bind to PMCA-bound basigin (Figure 2a; Gong et al., 2018). To test this, we purified basigin-PMCA complexes from detergent solubilised human erythrocyte ghost cells using CaM affinity chromatography. Elution fractions showed a prominent band at ~138 kDa on a Coomassie-stained SDS-PAGE gel, corresponding to the mass of PMCA (Figure 2\u2014figure supplement 1a). Western blotting confirmed the co-purification of basigin with PMCA (Figure 2\u2014figure supplement 1a). Basigin and PMCA eluted as a single peak on a size exclusion column, with an elution profile matching a 200 kDa standard, suggesting complex formation (Figure 2b). The purified complex showed Ca2+-dependent ATP hydrolysis activity, confirming that active basigin-PMCA complexes had been isolated (Figure 2\u2014figure supplement 1b).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/83681/elife-83681-fig2-v2.jpg)\n\n**Figure 2.:** (a) A structural model showing a complex of basigin (blue) and PMCA (pink) (based on PDB: 6A69, Gong et al., 2018) onto which the complex of PfRH5 (yellow) and basigin (blue) (PDB:4U0Q, Wright et al., 2014) has been docked. (b) A size exclusion profile obtained for calmodulin affinity chromatography-purified PMCA from human erythrocyte ghosts separated on a Superdex 200 increase 10/300 column. The inset shows a western blot probed with an anti-basigin monoclonal antibody indicating co-migration of basigin with PMCA. Data shown are representative from n=3 biological replicates. (c) A surface plasmon resonance (SPR) sensogram showing the binding of a concentration series of full-length basigin (twofold dilutions from 4 \u03bcM) to immobilised PfRH5. Black lines show data and dashed red lines show fitting to a 1:1 binding model, with a dissociation constant of 0.56 \u03bcM. Data shown are representative from n=3 biological replicates. (d) An SPR sensogram showing the binding of a concentration series of basigin-PMCA (twofold dilutions from 400 nM) to immobilised PfRH5. Black lines show data and dashed red lines show fitting to a two-state binding model. The derived rate and affinity constants are presented in Supplementary files 1 and 2. Data shown are representative from n=2 biological replicates. (e) Activation curves of BKCa channels recorded in Chinese hamster ovary (CHO) cells expressing BKCa channels alone (grey), or cells also transfected with human PMCA4b and basigin with (red) and without (black) addition of PfRH5 at 2 \u03bcM concentration. Data shown are from n=3 biological replicates and error bars show standard error of mean. (f) Concentration-response curves for the inhibition of Ca2+-ATPase activity, as determined by measuring inorganic phosphate production, of purified basigin-PMCA complex by known inhibitor caloxin 1c2 (red) and PfRH5 (blue). Each data point represents the mean and error bars represent the standard error of the mean of technical replicates (n=3, technical replicates).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/83681/elife-83681-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (a) The upper panel shows Coomassie-stained elution fractions from the outcome of purification of PMCA from n-dodecyl-\u03b2-D-maltose and cholesterol hemisuccinate (DDM:CHS)-solubilised erythrocyte ghosts using a calmodulin affinity column. PMCA can be observed running at ~130 kDa. The lower panel shows a western blot of the same fractions probed with basigin monoclonal antibody. Basigin and PMCA co-elute. (b) Measurement of phosphate release from ATP catalysed by basigin-PMCA in the absence (red) and presence (red) of Ca2+. The binding of (c) basigin ectodomain and (d) basigin-PMCA to immobilised PfRH5 (at a concentration of 50 nM) in the presence (red) and absence (black) of monoclonal antibody R5.004. Data shown are representative from n=3 biological replicates. (e) The binding of basigin ectodomain to immobilised PfRH5 (with a twofold dilution series starting at 4 \u03bcM). Data were filled to a 1:1 binding model with an affinity of 0.79 \u03bcM. (f) The binding of basigin-PMCA complex to immobilised PfRH5 (with a twofold dilution series starting at 500 nM). Data were filled to a 1:1 binding model (left), a two-state binding model (centre), and equilibrium model (right, 92 nM affinity).\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/83681/elife-83681-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (a) Two-dimensional blue native PAGE western blot analysis as in Figure 1\u2014figure supplement 1c probed with either anti-PMCA1/4 or anti-basigin. The top panel shows solubilised cells transfected with human PMCA4b and basigin, while the lower panel shows basigin-PMCA4 complex purified from these cells. (b) Activation curves of BKCa channels recorded in Chinese hamster ovary (CHO) cells (grey), or cells also transfected with human PMCA4b and basigin with (red) and without (black) addition of PfRCR at 1 \u03bcM concentration. Error bars show standard error of mean from n=5 biological replicates. (c) Activation curves of BKCa channels recorded in CHO cells (grey, in the presence of 100 nM, 1 \u03bcM, 5 \u03bcM, or 50 \u03bcM Ca2+), or cells also transfected with human PMCA4b and basigin with (red) and without (black) addition of PfRCR at 1 \u03bcM concentration. Error bars show standard error of mean from n=5 biological replicates.\n\nBinding of purified basigin-PMCA complexes to PfRH5 was measured by surface plasmon resonance (SPR) analysis. PfRH5 was chemically biotinylated on lysine residues and was immobilised on a streptavidin-coated chip and either 0.4 \u03bcM basigin-PMCA or 4 \u03bcM of basigin ectodomain were injected. Basigin ectodomain bound with similar kinetics to those previously observed (Figure 2\u2014figure supplement 1c; Crosnier et al., 2011; Wright et al., 2014). Basigin-PMCA complexes bound PfRH5 with a sensogram profile indicating slower on- and off-rates (Figure 2\u2014figure supplement 1d). To confirm that these responses are specific, we pre-incubated surface-immobilised PfRH5 with monoclonal antibody R5.004, which occludes the basigin binding site (Alanine et al., 2019). This blocked the binding of both basigin ectodomain and basigin-PMCA to PfRH5, as expected (Figure 2\u2014figure supplement 1c and d).\n\nTo measure binding kinetics, we produced PfRH5 carrying an N-terminal biotin acceptor peptide (BAP) tag. This was captured at low density on a streptavidin-coated SPR chip and binding was studied by injecting twofold dilution series of either basigin ectodomain (Figure 2\u2014figure supplement 1e), full-length basigin (purified in CHAPS and exchanged into DDM:CHS) (Figure 2c), or basigin-PMCA (Figure 2d). Kinetic binding data for full-length basigin could be fitted to a 1:1 binding model with an affinity of 0.56 \u00b5M (\u03c72=2.44), in good agreement with the affinity of ~1 \u00b5M measured for basigin ectodomain in previous studies (Figure 2\u2014figure supplement 1e; Crosnier et al., 2011; Wright et al., 2014). In contrast, the kinetic data for the basigin-PMCA complexes did not fit well to a 1:1 binding model (\u03c72=7.71) (Figure 2\u2014figure supplement 1f), but the fit improved significantly (\u03c72=1.85) when using a two-state binding model (Figure 2\u2014figure supplement 1f, Supplementary files 1 and 2). This model is consistent with an interaction which involves two separate, successive events, such as an initial lower affinity capture event, followed by a second binding event which increases the overall affinity, or a conformational change which follows an initial binding event. PfRH5 therefore bound to basigin-PMCA ~9-fold more tightly than to full-length basigin, primarily due to a lower dissociation rate constant (Supplementary files 1 and 2).\n\n### PfRH5 binding does not modulate calcium transport mediated by basigin-PMCA complexes\n\nWe next investigated whether PfRH5 binding can modulate the activity of PMCA, perhaps accounting for changes in calcium flux at the junction between the erythrocyte and invading merozoite. To test this, we used an established system in which current recordings from BKCa-type Ca2+-activated K+ channels were used as a readout of apparent intracellular Ca2+ concentration (Schmidt et al., 2017). The expression of PMCA4b and basigin, together with BKCa, in this system caused reduced intracellular Ca2+ concentrations, as demonstrated by a right shift in the BKCa activation curve. We confirmed that the PMCA4-basigin complex formed in these cells using 2D blue native PAGE western blot analysis of solubilised membranes (Figure 2\u2014figure supplement 2a). We next added PfRH5 at a concentration of 2 \u03bcM which caused no further change in the BKCa activation curve, indicating that PfRH5 binding did not modulate PMCA-basigin function and did not change the intracellular Ca2+ concentration (Figure 2e). As PfRH5 is normally part of the three-component PfRCR complex, we also added PfRCR at a concentration of 1 \u03bcM to the same system. Here too, we observed no effect on intracellular Ca2+ concentration (Figure 2\u2014figure supplement 2b and c). Finally, we studied the effect of PfRH5 on Ca2+-dependent ATPase activity of purified basigin-PMCA by following inorganic phosphate release through a colorimetric assay. While the extracellular peptide inhibitor caloxin 1c2 inhibited calcium-dependent ATP hydrolysis at high micromolar concentrations, the addition of PfRH5 did not alter the ATPase activity of PMCA (Figure 2f). We therefore see no evidence that PfRH5 binding affects the activity of the basigin-PMCA calcium pump.\n\n### PfRH5 binds to the basigin-MCT1 complex with greater affinity than for monomeric basigin\n\nAs a large fraction of erythrocyte basigin is associated with MCT1, we also tested whether the basigin-MCT1 complex can bind to PfRH5, as the PfRH5-binding site of basigin is exposed in the structure of the basigin-MCT1 complex (Wang et al., 2021; Figure 3a). We first studied the binding of PfRH5 to solubilised ghosts and their depleted forms using SPR. Flowing solubilised ghost membrane extract over a chip surface coated with PfRH5 produced a binding response (Figure 3b). This reduced ~22% after depletion of PMCA-containing complexes, and the binding response was nearly absent for samples depleted for both PMCAs and MCT1 (Figure 3b). This suggests that basigin in complex with either MCT1 or PMCAs can bind to PfRH5.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/83681/elife-83681-fig3-v2.jpg)\n\n**Figure 3.:** (a) A structural model showing a complex of basigin (blue) and MCT1 (cyan) (based on PDB: 6LYY, Wang et al., 2021) onto which the complex of PfRH5 (yellow) and basigin (blue) (PDB:4U0Q, Wright et al., 2014) has been docked. (b) Surface plasmon resonance (SPR) traces after flowing detergent solubilised erythrocyte membrane basigin-rich fractions (red) and membrane fractions depleted for plasma membrane calcium ATPase (PMCA) (pink) and both PMCA and MCT1 (orange) over a PfRH5-coated surface. (c) An SPR sensogram showing the binding of a concentration series of basigin-MCT1 (twofold dilutions from 1600 nM) to immobilised PfRH5. Black lines show data and dotted red lines show fitting to a two-state binding model. Data shown are representative from n=3 technical replicates. (d) Purified PfRH5 and basigin-MCT1 were assayed for complex formation through size exclusion chromatography using a Superdex 200 increase 10/300 column. The elution profile of basigin-MCT1 alone (blue) and in the presence of PfRH5 (red) are shown. The inset SDS-PAGE gel shows the protein species present in the fractions indicated by stars in the elution trace. (e) Growth inhibition assays assessed the effect of antibodies targeting basigin (at 1 \u03bcg/ml) and MCT-1 and PMCAs (both at 75 \u03bcg/ml) on P. falciparum growth in human blood culture. Five mM EDTA was used as a positive control (100% growth inhibition) while complete media was used as a negative control (0% growth inhibition). Data are the mean and standard deviation of three technical replicates, with a single example from three biological repeats shown.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/83681/elife-83681-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (a) The binding of basigin-MCT1 to immobilised PfRH5 (with a twofold dilution series starting at 1600 nM). Data were filled to a 1:1 binding model (left), a two-state binding model (centre), and equilibrium model (right, 178 nM affinity). (b) Analysis of the binding of basigin-MCT1 (at a concentration of 250 nM) to immobilised PfRH5. The four curves were measured with different association times, showing that increased association time leads to slow dissociation rates. In each case, data are shown as a black line and fitting curves are dashed red lines. Each binding measurement was done twice (n=2).\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/83681/elife-83681-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Human erythrocytes were stained with monoclonal antibodies targeting the extracellular domains of MCT1, PMCA, or basigin. Western blots are for gels loaded with 15 \u03bcg of sample and are probed with anti-MCT1 (top-left, 1:250 dilution), anti-PMCAs (top-right, 1:500 dilution), and anti-basigin (bottom-right, 1:1000 dilution), Experiments were done twice (n=2).\n\nWe next expressed the basigin-MCT1 complex in Sf9 cells and tested its binding to PfRH5. To measure the affinity of the interaction, monobiotinylated PfRH5 was coupled to an SPR chip before injection of a twofold dilution series of purified basigin-MCT1 complex. Again, the kinetic data could be best described by a two-state binding model (\u03c72=3.09) with a KD value of 93 nM (Figure 3c, Figure 3\u2014figure supplement 1a, Supplementary files 1 and 2). One of the predictions of a two-state binding model is that longer periods of incubation of PfRH5 with the basigin-MCT1 complex allow a larger fraction of interacting species to form stable complexes due to completion of the second binding event, and lead to slower off-rates. When we injected basigin-MCT1 over a chip decorated with biotinylated PfRH5, we indeed observed slower off-rates to be associated with longer incubation times, confirming a two-state interaction (Figure 3\u2014figure supplement 1b). We also mixed basigin-MCT1 with PfRH5 for analysis by size exclusion chromatography, and again observed formation of a stable complex (Figure 3d). Therefore, PfRH5 binds to both basigin-PMCA and basigin-MCT1 with similar affinities, both more tightly than the interaction with the isolated basigin ectodomain.\n\n### Two antibodies that bind to PMCAs and MCT1 do not inhibit parasite growth\n\nWe next assessed whether polyclonal antibodies that bind to PMCAs and MCT1 can prevent the growth of P. falciparum in human blood culture. We obtained the only two commercially available antibodies which bind to the extracellular regions of either PMCAs or MCT1, together with the growth-inhibitory basigin-binding monoclonal antibody, TRA-1\u201385. We first assessed the ability of these antibodies to stain human erythrocytes by immunofluorescence imaging, confirming that they bind to basigin-MCT1 and basigin-PMCA complexes in the context of intact erythrocytes (Figure 3\u2014figure supplement 2). We next conducted a standard one-cycle growth inhibition assay which assessed the ability of these antibodies to block growth of P. falciparum in human blood culture (Figure 3e). As previously shown, the basigin-targeting antibody, TRA-1\u201385, showed complete inhibition of growth at a 1 \u03bcg/ml concentration (Crosnier et al., 2011). However, neither the PMCA or MCT1 antibodies caused growth inhibition at 75 \u03bcg/ml concentration. In neither case are structures available to show how these antibodies bind to their receptors, making it impossible rationalise why they were not inhibitory. We envisage that it may be possible to raise growth-inhibitory antibodies which target MCT1 or PMCAs, but with strongly growth-inhibitory monoclonal antibodies that target PfRH5 already available, antibodies targeting MCT1 or PMCAs are unlikely to be therapeutically valuable.\n\n### Growth-inhibitory antibodies sterically block binding of PfRH5 to basigin-PMCA and basigin-MCT1 complexes\n\nWhile antibodies which occlude the basigin binding site of PfRH5 are growth-inhibitory, some of the most potent PfRH5-binding growth-inhibitory antibodies do not prevent PfRH5 from binding to basigin, raising questions about their mode of action. We therefore tested the ability of a panel of structurally characterised antibodies to prevent PfRH5 from binding to basigin ectodomain, full-length basigin, basigin-PMCA, and basigin-MCT1. The panel consisted of one growth-inhibitory antibody, R5.004, which prevents basigin binding, and two potent growth-inhibitory antibodies, R5.016 and 9AD4, which do not prevent basigin binding. Also tested were non-inhibitory antibodies, R5.011 and R5.015, which do not block basigin binding.\n\nIn accordance with previously published findings, only R5.004 prevented the binding of basigin ectodomain to PfRH5 immobilised on an SPR chip (Figure 4\u2014figure supplement 1a). A similar outcome was seen for full-length basigin, showing that the presence of the detergent micelle is not sufficient to allow R5.016 to cause steric occlusion of binding (Figure 4a, Figure 4\u2014figure supplement 1b). In contrast, both R5.016 and 9AD4 reduced binding of basigin-PMCA to immobilised PfRH5 by >90% (Figure 4b, Figure 4\u2014figure supplement 1b). Indeed R5.016 inhibited binding of basigin-PMCA to PfRH5 in a concentration-dependent manner, with concentrations of 100 nM or above producing nearly 90% inhibition (Figure 4\u2014figure supplement 1c and d). Both R5.016 and 9AD4 also reduced the binding of the basigin-MCT1 complex to immobilised PfRH5, with 100 nM of either antibody reducing binding by more than 50% (Figure 4c, Figure 4\u2014figure supplement 1b). In contrast, neither of the non-inhibitory antibodies tested reduced the binding of basigin-PMCA or basigin-MCT1 to PfRH5.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/83681/elife-83681-fig4-v2.jpg)\n\n**Figure 4.:** Five different PfRH5-binding monoclonal antibodies were tested for the inhibition of the binding of PfRH5 to (a) full-length basigin, (b) basigin-PMCA complex, and (c) basigin-MCT1 complex. In each case data (n=3) shown are the mean and error bars represent standard error of mean of biological replicates for full-length basigin and basigin-PMCA and technical replicates for basigin-MCT1. (d) Structural models showing a complex of basigin (blue) and PMCA (pink) (based on PDB: 6A69, Gong et al., 2018) onto which the complex of PfRH5 (yellow) and basigin (blue) (PDB:4U0Q, Wright et al., 2014) has been docked. Onto this model has been docked either the complex of PfRH5 (yellow) bound to the Fab fragment of R5.016 (red, PDB:6RCV, Alanine et al., 2019) or of 9AD4 (green; 4U0R, Wright et al., 2014). (e) Structural models showing a complex of basigin (blue) and MCT1 (cyan) (based on PDB: 6LYY, Wang et al., 2021) onto which the complex of PfRH5 (yellow) and basigin (blue) (PDB:4U0Q, Wright et al., 2014) has been docked. Onto this model has been docked either the complex of PfRH5 (yellow) bound to the Fab fragment of R5.016 (red, PDB:6RCV, Alanine et al., 2019) or of 9AD4 (green; 4U0R, Wright et al., 2014).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/83681/elife-83681-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (a) The impact of five different PfRH5-binding monoclonal antibodies on the binding of PfRH5 to basigin ectodomain. Data plot shows mean and standard error from three biological replicates (n=3). (b) Assessment of the impact of the same monoclonal antibodies binding to full-length basigin (left), basigin-PMCA complex (centre), and basigin-MCT1 complex (right) by surface plasmon resonance analysis. (c) Analysis of the dose response of inhibition of binding of basigin-PMCA to immobilised PfRH5 with different concentrations of R5.016. The left-hand panel shows surface plasmon resonance traces while the right-hand panel shows the response plotted against R5.016 concentration.\n\nTo rationalise the mechanism of inhibition, we docked crystal structures of PfRH5 complexed with basigin (Wright et al., 2014), R5.016 (Alanine et al., 2019), and 9AD4 (Wright et al., 2014) Fab fragments onto the neuroplastin-PMCA structure (Gong et al., 2018; Figure 4d) and the basigin-MCT1 structure (Wang et al., 2021; Figure 4e) to generate composite models. In both cases, binding of R5.016 and 9AD4 to PfRH5 would physically occlude its binding to basigin in the basigin-PMCA or basigin-MCT1 complexes, either through direct clashes with MCT1 or PMCA, or through a clash with the plasma membrane. Indeed, these structural models are constructed using only the Fab fragments of the monoclonal antibodies and, in the presence of the antibody constant domains, even greater steric clash would be expected. These data therefore support a model in which neutralising antibodies prevent PfRH5 from binding to basigin in the context of macromolecular basigin-containing complexes.\n\n## Discussion\n\nNumerous studies have now confirmed that the interaction between PfRH5 and basigin is required for invasion of P. falciparum into human erythrocytes (Crosnier et al., 2011). To date, no strain of P. falciparum has been identified which can take a basigin-independent invasion route. Blocking this interaction also has proven therapeutic potential to prevent malaria, with antibodies against both PfRH5 and basigin identified which inhibit invasion (Alanine et al., 2019; Douglas et al., 2014; Wright et al., 2014; Zenonos et al., 2015), with vaccination (Douglas et al., 2015) or passive transfer of neutralising antibodies (Douglas et al., 2019) leading to protection of Aotus monkeys from parasite challenge and with human vaccination slowing the onset of parasitaemia (Minassian et al., 2021). Nevertheless, mysteries remain. First, the functional consequences of the PfRH5-basigin interaction are still unclear. What are the downstream outcomes of the interaction and why are they essential for invasion? Second, some of the most potent human and mouse PfRH5-targeting monoclonal antibodies which block parasite invasion do not directly block the PfRH5-basigin interaction. How do they function?\n\nTo answer these questions, we started by investigating the immediate molecular context of basigin in human erythrocytes. Various studies in different cell types have shown that basigin forms heteromeric complexes with either PMCAs or MCTs (Muramatsu, 2016). We therefore used a combination of depletion, purification, 2D blue native PAGE, and mobility shift experiments to show that nearly all basigin in human erythrocyte membranes is found in complex with either PMCAs or MCTs (Figure 1). While ~20% of basigin was not depleted with either PMCAs or MCT1 (Figure 1c), all basigin migrated at a high molecular weight on a size exclusion column and we did not observe free basigin in 2D blue native PAGE experiments. Indeed, techniques that more carefully preserve complex formation showed all basigin to be associated with PMCAs or MCTs (Figure 1b, Figure 1\u2014figure supplement 1c). The detection of free basigin in depletion experiments may then be due to disruption of protein complexes during depletion experiments, or due to basigin in complex with subtypes or splice isoforms of PMCA or other subtypes of MCTs that are not efficiently depleted. Therefore, nearly all basigin in human erythrocytes is found within larger protein complexes, with consequences for its recognition by PfRH5 and its role in Plasmodium invasion.\n\nIntriguingly, both MCT1- and PMCA-bound basigin bind more tightly to PfRH5 than to isolated full-length basigin. Indeed, fitting of kinetic binding data from SPR showed that, while the binding of PfRH5 to basigin fits a simple 1:1 binding mode, its binding to basigin-PMCA and basigin-MCT1 shows biphasic kinetics, which fit most closely to a two-state binding model. This is further supported by data which shows that PfRH5 binds to basigin-MCT1 such that increasing association times correlate with decreasing dissociation rates, suggesting an initial lower affinity interaction, which \u2018matures\u2019 into a higher affinity interaction over time. While kinetic fitting data cannot be used to strictly derive a molecular mechanism, this is compatible with an initial lower affinity interaction between PfRH5 and basigin, followed by a subsequent interaction which stabilises the complex, possibly between PfRH5 and another part of the basigin-PMCA or basigin-MCT1 complexes.\n\nOur demonstration that PfRH5 can bind to basigin-PMCA and basigin-MCT1 next led us to investigate whether PfRH5 binding can modulate the functions of these two transporters. MCT1 is a lactate transporter, and we were not able to envisage a mechanism by which altered lactate transport could play an essential role in the context of the ~20-s-long process of erythrocyte invasion. However, PfRH5 is known to be essential for a spike of increased calcium concentration at the merozoite-erythrocyte junction (Volz et al., 2016; Weiss et al., 2015) and the presence of basigin has been shown to alter PMCA function (Schmidt et al., 2017). Could modulation of basigin-PMCA function block calcium efflux and cause this spike during erythrocyte invasion? Our data do not support this hypothesis, with no change in basigin-PMCA function observed, either in the presence of PfRH5 or of the PfRCR complex. How PfRH5 modulates erythrocyte calcium levels to facilitate invasion is therefore still unclear. However, the demonstration that erythrocyte basigin is primarily found in large multimeric complexes will provide clues for future research to unveil this mechanism.\n\nFinally, our results reveal the mechanisms by which the most potent PfRH5-targeting neutralising antibodies can block invasion. Immunity to blood-stage malaria is antibody-mediated and, while antibodies which target other aspects of the malaria life cycle use Fc-dependent mechanisms of immunity (Kurtovic et al., 2020; Teo et al., 2016), those which prevent invasion appear to function directly by blocking essential interactions (Alanine et al., 2019; Douglas et al., 2019; Wright et al., 2014). As a result, the outcome of in vitro growth inhibition assays correlates well with protection due to PfRH5-targeting antibodies (Douglas et al., 2019). It was therefore a mystery why the most effective PfRH5-targeting neutralising antibodies from both humans (R5.016) (Alanine et al., 2019) and mice (9AD4) (Douglas et al., 2014; Wright et al., 2014) do not interfere with the PfRH5-basigin interaction. Studying basigin in the context of its membrane protein binding partners provides an answer, with both R5.016 and 9AD4 inhibiting the binding of PfRH5 to basigin-PMCA and basigin-MCT1 complexes. While this inhibition is strong in the context of a detergent micelle, we would expect it to be even stronger in the membrane context, with both R5.016 and 9AD4 modelled to angle directly towards the membrane plane. Our studies therefore highlight the importance of understanding the molecular context of basigin in understanding PfRH5 function and its inhibition, and open new directions to understand why the PfRH5-basigin interaction is so crucial for erythrocyte invasion.\n\n## Materials and methods\n\n### Ghost preparation from human erythrocytes\n\n400\u2013450 ml of packed human RBCs were purchased from the NHS blood transfusion service after ethical consideration from the relevant University of Oxford ethics committee. No information about the age, sex, gender, and ethnicity of the donors was available. RBCs were lysed in 10 volumes of hypotonic buffer (10 mM Tris-Cl, pH 8.0 and 1 mM EDTA and 1 mM PMSF) at 4\u00b0C for 2 hr. The lysate was first centrifuged at 1500 \u00d7 g for 30 min to remove cellular debris and then circulated through four omega T-series centramate 0.1 sq. ft tangential filter flow unit (100 kDa, PALL) to generate 300\u2013350 ml of concentrated retentate of RBC membranes. The retentate was spun at 100,000 \u00d7 g for 45 min at 4\u00b0C and bulk haemoglobin was very carefully pipetted from the top without disturbing the pellet. To remove residual haemoglobin, retrieved membrane pellets were resuspended in hypotonic buffer and centrifuged at 100,000 \u00d7 g for 20 min at 4\u00b0C. This process was repeated at least four times or until white to light pink ghosts were obtained. Ghosts corresponding to 100 ml of packed RBCs were stored in 50 ml of buffer containing 20 mM HEPES-Na, pH 7.2, 150 mM NaCl, 10% glycerol supplemented with complete protease inhibitor cocktail EDTA-free (Roche) at \u201380\u00b0C until further use.\n\n### Fractionation and analysis of solubilised ghosts by size exclusion chromatography\n\n0.5 ml of ghost membranes were solubilised by adding 10% of a mixture of DDM:CHS in a 10:1 wt/wt ratio (DDM-CHS) solution to final concentration of 1.2% and incubating for 1 hr at 4\u00b0C with gentle stirring. Solubilised membranes were spun at 100,000 \u00d7 g for 45 min at 4\u00b0C, and the supernatant was injected into a Superdex 200 increase 10/300 GL (cytiva) column calibrated with known molecular weight standards (GE Healthcare). Size exclusion chromatography was then performed at a flow rate of 0.5 ml/min in a buffer containing 20 mM HEPES, pH 7.2, 150 mM NaCl, and 0.02% DDM/CHS where proteins eluting from the column were collected as discrete fractions of 500 \u00b5l each. 10\u201315 \u03bcg protein from each fraction was separated on a 10% SDS-PAGE gel and blotted on a PVDF membrane using Bio-Rad turbo transfer pack and apparatus. Membranes were blocked with 6% TBS-milk subsequently probed with 1:500 mouse anti-human PMCA IgG (5F3, Santa Cruz Biotechnology), 1:1000 mouse anti-human CD147 IgG (Biolegend), and 1:1000 mouse anti-human MCT1 IgG (Santa Cruz Biotechnology) overnight at 4\u00b0C. Washes were conducted in TBS and TBS-T-20 0.05% and the membrane was then incubated with anti-mouse IgG 1:20,000 for 45 min at room temperature. After final washes, blots were developed and visualised using ECL reagent SuperSignal West Atto (Thermo Scientific) and i-Bright imager (Life Technologies).\n\n### Mobility shift using an antibody against MCT1\n\n200 \u00b5l of 0.1\u20130.15 mg of fractions of DDM-CHS solubilised human ghost proteins rich in basigin were incubated with 20 \u00b5g of mouse anti-human MCT1 IgG and incubated for 30 min on ice. Following the incubation, the sample was injected into a Superdex 200 increase 10/300 GL column and eluted at 0.5 ml/min as fractions of 500 \u00b5l. 10\u201315 \u00b5g protein from each SEC fraction from samples with or without MCT1 antibody were separated by 12% SDS-PAGE, prior to western blotting. Detection of MCT1 and basigin was performed on separate blots, using 1:1000 of polyclonal rabbit anti-human MCT1 IgG (Cell Signaling) and 1:1000 mouse anti-human CD147 IgG (Biolegend) followed by HRP-conjugated secondary IgG antibody of specific host type. Proteins were visualised with ECL reagent SuperSignal West Atto using i-Bright imager (Life Technologies).\n\n### Depletion of native PMCA and MCT1\n\n0.20 mg of solubilised ghost proteins were incubated with 30 \u00b5l of CaM resin for 45 min at 4\u00b0C to deplete native PMCA. Beads were removed by centrifugation at 250 \u00d7 g for 5 min. 50 \u00b5g was set aside for analysis and the remaining sample was mixed with 10 \u00b5g of mouse anti-human MCT1 IgG and incubated for 30 min on ice. Following the incubation, 50 \u00b5l of protein G resin was added to the mixture and was further incubated for 2 hr on a rotating platform in a cold room. Supernatant from this depleted mixture was collected by centrifugation to remove beads. 10\u201315 \u00b5g of protein from solubilised ghost and each depleted fraction was separated on 12% SDS-PAGE for side-by-side analysis using western blotting. Blots were developed and visualised as described above.\n\n### Affinity purification from human erythrocytes for mass spectrometry analysis\n\nMembranes were prepared from human erythrocytes by hypotonic lysis (1:50 (vol:vol) in 1 mM EDTA/EGTA, 10 mM Tris-HCl, pH 7.4+protease inhibitors) followed by ultrasound treatment (2\u00d720 pulses, duty cycle 50, output 1 (Branson Sonifier 250)) and ultracentrifugation for 10 min at 150,000 \u00d7 g. Membrane pellets were resuspended at 11 mg/ml (as determined by Bradford assay, Bio-Rad) in 20 mM Tris-HCl, pH 7.4. Then 2 mg of membrane were solubilised in 2 ml ComplexioLyte 47 ready-to-use detergent buffer (Logopharm) supplemented with 1 mM EDTA/EGTA and protease inhibitors. After ultracentrifugation for 10 min at 250,000 \u00d7 g, the solubilisate was precleared by incubation with 15 \u00b5g bead-immobilised control IgG (Millipore 12\u2013370) for 1 hr at 4\u00b0C. Two 0.5 ml aliquots of the supernatant were then mixed with 5 \u00b5g of bead-immobilised anti-basigin (Origene TA501189) and anti-neuroplastin (R&D Systems AF7818) antibodies, respectively. After 2 hr incubation at 4\u00b0C, beads were washed twice for 10 min in ComplexioLyte 47 washing buffer (Logopharm) and eluted with 2\u00d710 \u00b5l of denaturing buffer (non-reducing Laemmli buffer+8 M urea, 2\u00d710 min at 37\u00b0C). The eluates were then supplemented with 100 mM DTT, run on an SDS-PAGE gel and silver-stained. Lanes were split into high- and low-MW range sections and subjected to standard in-gel tryptic digestion for subsequent LC-MS/MS analysis. Target depletion in these affinity purifications was verified by western blot analysis (not shown).\n\n### Mass spectrometry and protein quantification\n\nLC-MS/MS analysis was carried out in positive ion mode on an LTQ Orbitrap XL mass spectrometer (Thermo Scientific, Germany; CID fragmentation of the five most abundant new precursors per scan cycle; singly charged ions rejected; dynamic exclusion duration 30 s) equipped with a split-based UltiMate 3000 HPLC (Dionex/Thermo Scientific, Germany; \u2018short\u2019 gradient) as detailed in Schmidt et al., 2017. Peak lists were extracted from MS/MS spectra using \u2018msconvert.exe\u2019 (ProteoWizard; https://proteowizard.sourceforge.io/; v3.0.6906). After an initial database search precursor mass (m/z) values were corrected by linear shifting of their median offset. Final searches against the UniProtKB/Swiss-Prot database (human, release 2022_02) using Mascot Server 2.6.2 (Matrix Science Ltd, UK) were restricted to \u00b15 ppm (peptide mass tolerance) and used the following parameters: acetyl (protein N-term), carbamidomethyl (C), Gln->pyro Glu (N-term Q), Glu->pyro Glu (N-term E), oxidation (M), propionamide (C), phospho (ST), and phospho (Y) as variable modifications, fragment mass tolerance \u00b10.8 Da, one missed tryptic cleavage allowed.\n\nLabel-free quantification of proteins was carried out as described (M\u00fcller et al., 2016). In brief, full-scan MS data were processed with MaxQuant v1.6.3 (https://www.maxquant.org) to obtain mass calibrated peptide signal intensities (peak volumes [PVs]). Their elution times in the evaluated datasets were pairwise aligned and then assigned to peptides based on their m/z and elution time (obtained either directly from MS/MS-based identification or indirectly from identifications in parallel datasets) using in-house developed software. Matching tolerances were \u00b12 ppm and \u00b11 min. Abundancenormspec values reflecting the molecular abundance of proteins were calculated as the sums of all assigned and protein isoform-specific PVs divided by the number of MS-accessible protein isoform-specific amino acids (Bildl et al., 2012).\n\n### 2D antibody shift assay\n\nBlue native gel-based antibody shift analysis was carried out as described in Schmidt et al., 2017. Two mg of human erythrocyte membrane were solubilised and centrifugated as described for mass spectrometry analysis. 600 \u00b5l of the solubilisate was mixed with anti-basigin antibodies (8.4 \u00b5g, TA501164 [9H5]+TA501189 [10E10], both Origene) for 2 hr and 600 \u00b5l remained untreated. Samples were concentrated on a sucrose cushion (200 \u00b5l 20% sucrose in ComplexioLyte 47+protease inhibitors and 300 \u00b5l 50% sucrose in 750 mM aminocaproic acid and 50 mM BisTris, pH 7.0) by ultracentrifugation at 400,000 \u00d7 g for 1.5 hr. 300 \u00b5l of both sucrose phases, together with 120 \u00b5l of solubilised rat brain mitochondria (serving as size marker), were separated overnight on a 2\u201312% blue native PAGE gradient gel. The lanes were excised, equilibrated in 2\u00d7 Laemmli buffer with 8 M urea and resolved on second dimension 10% SDS-PAGE gels that were blotted on PVDF membranes. The latter were cut, blocked with 3% skim milk powder in PBS/0.05% Tween-20 and stained with anti-PMCA1/4 (Alomone Labs ACP-005), anti-basigin (Proteintech 11989-1AP), or anti-MCT1 (Santa Cruz Biotechnology SC-365501) followed by HRP-conjugated secondary IgG antibodies specific for respective host species (Santa Cruz Biotechnology) and ECL Prime captured by film. Total protein stains of these western blot membranes (SYPRO Ruby Protein Blot Stain, Bio-Rad) were used for proper alignment of blot signals and visualisation of size marker complexes.\n\n### Broad-range blue native gel analysis of native and reconstituted basigin-PMCA complexes\n\nBlue native gel electrophoresis covering an extended size range (linear acrylamide gradient 1\u201316%) was carried out as described above resolving the following samples: (i) 120 \u00b5l of solubilised rat brain mitochondria (serving as size marker), (ii) 200 \u00b5g human erythrocyte membrane solubilised in 200 \u00b5l ComplexioLyte 47+protease inhibitors, ultracentrifuged (without sucrose cushion), (iii) solubilised tsA basi/nptn -/- cells (Schmidt et al., 2017) transfected with N-terminally Flag-tagged human PMCA4+C-terminally His-tagged human basigin (9 ml ComplexioLyte 47+protease inhibitors/g cells), and (iv) two-step affinity-purified PMCA4-basigin complex (40 \u00b5g). The latter was obtained by adding 20 mM imidazole and 1 mM Mg2+ to the solubilisate which was then incubated with Ni-Sepharose beads (high performance 17-5268-01, Cytiva) for 90 min. After washing of the Sepharose resin on a column for 30 min (150 mM NaCl, 20 mM Tris-HCl, 30 mM imidazole, 0.05% GDN+protease inhibitors), bound proteins were eluted with three bed volumes of the same buffer adjusted to 200 mM imidazole. The eluate was then incubated with anti-Flag M2 sepharose beads (A2220, Sigma-Aldrich) for 2 hr. After washing on a column for 60 min, proteins were eluted (150 mM NaCl, 20 mM Tris-HCl, 0.05% GDN+triple Flag peptide [0.025%]). The eluate was then concentrated to 2 mg/ml by ultrafiltration (Vivaspin 6/100,000 MW, Sartorius) and ultracentrifuged for 15 min at 150,000 \u00d7 g to remove protein aggregates. Lanes (ii\u2013iv) were excised and subjected to SDS-PAGE/western blot analysis as described above except that a chemiluminescence reader (ImageQuant 800, Amersham) was used for imaging.\n\n### Expression and purification of BAP-tagged PfRH5\n\nA construct was generated consisting of PfRH5 with an N-terminal BAP and a C-terminal C-tag, inserted into the pExpreS2.1 vector (ExpreS2ion Biotechnologies, H\u00f8rsholm, Denmark). This was transfected into Schneider 2 (S2) cells and after 24 hr zeocin was added to a final concentration of 0.05 mg/ml. A polyclonal cell line was selected over 3 weeks and was then expanded to higher volumes for isolation and purification.\n\n1.5 l of cell supernatant were concentrated 10-fold, and buffer exchanged to Tris-buffered saline (TBS), pH 7.8 using four omega T-series centramate 0.1 sq. ft tangential filter flow unit (3 kDa, PALL). The buffer-exchanged supernatant was loaded onto a CaptureSelect C-tagXL pre-packed column (Thermo Fisher Scientific). The column was washed with 50 ml of TBS, pH 7.8 and PfRH5 was eluted with buffer containing 20 mM Tris-Cl, pH 7.8 and 2 mM MgCl2 as six fractions of 500 \u03bcl each. Each fraction was quantified at 280 nm using a nano-spectrophotometer (Thermo Fisher Scientific) and fractions of concentration 0.5 mg/ml or more were subjected to separation on a Superdex 200 increase 10/300 GL column (cytiva) for further purification.\n\n### Purification of the PfRH5-PfCyRPA- PfRIPR (RCR) complex\n\nPfRH5, PfCyRPA, and PfRIPR were expressed and purified as described earlier (Ragotte et al., 2022). After purification PfRH5, PfCyRPA, and PfRIPR were mixed in an equimolar ratio and incubated on ice for 30 min. The assembled complex was then injected into a Superdex 200 increase 10/300 GL column (cytiva) to obtain a homogenous, purified PfRCR complex.\n\n### Purification of basigin-PMCA complex from ghosts\n\n100 ml of frozen human ghost cells were thawed in a water bath at 20\u00b0C. Ghosts were then solubilised by adding DDM/CHS solution to final concentration of 1.2% at 4\u00b0C under gentle stirring for 1 hr. Non-solubilised material was removed by centrifugation at 100,000 \u00d7 g for 30 min and CaCl2 was added to the supernatant to final concentration of 0.25 mM. One ml of CaM resin (MERCK) pre-equilibrated in wash buffer containing 20 mM HEPES-Na, pH 7.2, 300 mM NaCl, 10% glycerol, 0.25 mM CaCl2, and 1.2% DDM/CHS was added to the supernatant mixture and incubated at 4\u00b0C under gentle stirring. After 1 hr, the resin was transferred to a gravity flow column and washed with 50 ml of equilibration buffer containing 0.02% instead of 1.2% DDM/CHS. Finally, protein bound to CaM resin was eluted in 8\u201310 fractions of 250\u2013300 \u00b5l each in total 2.4 ml of elution buffer containing 20 mM HEPES-Na, pH 7.2, 150 mM NaCl, 1 mM EDTA, and 0.02% DDM/CHS. Identity and purity of eluted proteins was assessed by coomassie staining on 10% SDS-PAGE followed by western blotting with mouse anti-human basigin IgG (Biolegend). Fractions were pooled and concentrated using Amicon centrifugal filter units 100 kDa (Merck) to separate on a Superdex 200 increase 10/300 GL column equilibrated (GE Healthcare) with buffer containing 20 mM HEPES-Na, pH 7.2, 150 mM NaCl, and 0.02% DDM/CHS to check homogeneity or integrity of affinity-purified complex. Using this procedure, a total of 20\u201335 \u00b5g of basigin-PMCA complex was obtained.\n\n### Recombinant expression and purification of basigin-MCT1 complex\n\nSynthetic genes (GeneArt) encoding full-length human MCT1 (uniprot ID: P53985) and human basigin (uniprot ID: P35613-2) were cloned individually into pFastBac vector (Invitrogen) for recombinant expression in Sf9 cells. MCT1 was fused to a C-terminal His6-tag, whereas basigin was not tagged. Bacmids were generated in DH10Bac cells (Life Technologies) and purified by isopropanol precipitation using a miniprep kit (QIAGEN). First-generation baculoviruses (P1) were produced by transfecting Sf9 cells with individual bacmids at a cell density of 1\u00d7106 cells/ml and subsequently amplified to produce third-generation viruses (P3). Expression of the complex was induced by adding an equal number of viral particles from both MCT1 and basigin-containing P3 viruses to Sf9 cells (~2.5\u20133.0 \u00d7 106 cells/ml). After 48 hr cells were harvested and resuspended in lysis buffer (25 mM Tris, pH 8.0, 150 mM NaCl, 10% glycerol, and EDTA-free complete protease inhibitor) and lysed using a Dounce homogeniser sonication (60% amplitude, 3 s \u2018on\u2019 and 9 s \u2018off\u2019 pulse for 1:30 min) on ice. Lysed homogenate was centrifuged at 3000 \u00d7 g for 20 min to remove cell debris, and the obtained supernatant was spun at 100,000 \u00d7 g for 45 min at 4\u00b0C to isolate Sf9 plasma membranes. Isolated membranes homogenised in lysis buffer were solubilised with 1.2% DDM/CHS at 4\u00b0C for 1 hr. After centrifugation at 100,000 \u00d7 g for 45 min, the supernatant was incubated with Ni-NTA resin (QIAGEN) at 4\u00b0C for 1 hr. The resin was then passed through on a gravity flow column, which was washed with 25 mM Tris, pH 8.0, 300 mM NaCl, 10% glycerol, 15 mM imidazole, and 0.02% DDM/CHS. The protein was eluted in lysis buffer supplemented with 400 mM imidazole. Eluted protein complex was further purified on a Superdex 200 increase 10/300 GL column, and a total of 0.2\u20130.3 mg could be obtained from 500 ml Sf9 cell culture.\n\n### Recombinant expression and purification of full-length basigin from Sf9 cells\n\nA synthetic gene encoding human basigin (uniprot ID: P35613-2) was cloned into pFastBac vector for recombinant expression as C-terminal His6-tagged membrane protein in Sf9 cells (Sigma). Bacmid containing the target gene was generated in DH10Bac cells (Life Technologies) and purified by isopropanol precipitation using lysis and neutralisation buffers from a plasmid miniprep kit (QIAGEN). First-generation baculoviruses (P1) were produced by transfecting Sf9 cells with individual bacmids at a cell density of 1\u00d7106 cells/ml and subsequently amplified to produce second-generation viruses (P2). Full-length basigin was expressed by adding P2 viruses to Sf9 cells (~2.5\u20133.0 \u00d7 106 cells/ml) at a final concentration of 1%. After 48 hr, cells were harvested and resuspended in lysis buffer (25 mM Tris, pH 8.0, 150 mM NaCl, 10% glycerol, and EDTA-free complete protease inhibitor) and lysed using a Dounce homogeniser followed by sonication (60% amplitude, 3 s \u2018on\u2019 and 9 s \u2018off\u2019 pulse for 1:30 min) on ice. The lysed homogenate was centrifuged at 3000 \u00d7 g for 20 min to remove cell debris, and the obtained supernatant was spun at 100,000 \u00d7 g for 45 min at 4\u00b0C to isolate Sf9 plasma membranes. Isolated membranes corresponding to 500 ml of Sf9 cell culture were first resuspended in 50 ml lysis buffer using a Dounce homogeniser and were then solubilised with 1.2% (vol/vol) DDM:CHS at 4\u00b0C for 1 hr. After centrifugation at 100,000 \u00d7 g for 45 min, the supernatant was incubated with Ni-NTA resin (QIAGEN) at 4\u00b0C for 1 hr. The resin was then passed through on a gravity flow column, which was washed with 25 mM Tris, pH 8.0, 300 mM NaCl, 10% glycerol, 15 mM imidazole, and 0.02% DDM:CHS. The protein was eluted in lysis buffer supplemented with 400 mM imidazole. Eluted protein was further purified on an S200 10/300 column (Cytiva), and a total of 0.2\u20130.4 mg could be obtained from 100 ml Sf9 cell culture.\n\n### Purification and production of full-length basigin in monomeric form\n\nIsolated membranes corresponding to 250 ml of Sf9 cells containing His6-tagged full-length basigin were resuspended using Dounce homogeniser in 50 ml of buffer containing 20 mM Tris-HCl, pH 8.0, and 150 mM NaCl. Membranes were then solubilised by dropwise adding 10% (vol/vol) CHAPS to a final concentration of 1\u20131.2%. Solubilisate was cleared by centrifuging at 100,000\u00d7 g for 45 min, and the supernatant was incubated with Ni-NTA resin (QIAGEN) at 4\u00b0C for 1 hr. The resin was then passed through a gravity flow column, which was washed with 25 mM Tris-HCl, pH 8.0, 300 mM NaCl, 15 mM imidazole, and 1% CHAPS. The protein was eluted in lysis buffer supplemented with 400 mM imidazole. Eluted protein was purified on a superdex 200 10/300 increase column (Cytiva) resulting in 0.1\u20130.2 mg of monomeric full-length basigin.\n\nTo incorporate CHAPS-purified monomeric full-length basigin into DDM:CHS, purified protein was first immobilised on Ni-NTA by incubating with the resin for 2 hr in a cold room. The resin was then washed at 0.5 ml/min flow rate with 50\u201360 ml of buffer containing 20 mM Tris, pH 8.0, 150 mM NaCl, and 0.1% DDM:CHS. After washing, the protein was eluted and applied to a superdex 200 10/300 increase column (Cytiva), pre-equilibrated with 20 mM Tris-HCl, pH 8, 150 mM NaCl, and 0.02% DDM:CHS. Peak fractions corresponding to non-aggregated, monomeric protein were pooled to produce 0.03\u20130.05 mg of micelle-exchanged protein.\n\n### SPR affinity measurements\n\nSEC-purified PfRH5 was biotinylated enzymatically using Escherichia coli biotin ligase to transfer a single biotin residue. Experiments were performed at 25\u00b0C on a Biacore T200 instrument (GE Healthcare) using a CAP chip (Biotin CAPture kit [Cytiva]) in a buffer containing 20 mM HEPES-Na, pH 7.5, 150 mM NaCl, 1 mM EDTA, 0.02% DDM/CHS, and 1 mg/ml salmon sperm DNA. Purified analyte proteins were equilibrated in the SPR buffer using a PD-5 column prior to the experiment. The sensor surface was first coated with oligonucleotide-coupled streptavidin following the manufacturer\u2019s instructions. 50\u201370 RUs of monobiotinylated PfRH5 were captured on the chip to quantify interactions with basigin-PMCA and basigin-MCT1 complexes, whereas 300\u2013350 RUs were immobilised for basigin ectodomain binding. Binding measurements were performed at 30 \u00b5l/min by injecting twofold dilution series from 400 nM to 1.56 nM for basigin-PMCA, 1.6 \u00b5M to 6.25 nM for basigin-MCT1 complexes, and 4 \u00b5M to 7.81 nM for basigin ectodomain. Association was measured for 180 s followed by dissociation for 300 s and after each binding cycle, the sensor chip surface was regenerated by injecting 10 \u00b5l of 6 M guanidium-HCl and 1 M NaOH, pH 11.0 mixed in a 4:1 ratio. The data were processed using BIA evaluation software version 1.0 (BIAcore, GE Healthcare) and response curves were double referenced by subtracting the signal from both reference cell and averaged blank injections. Kinetic constants were calculated using global analysis, fitting 1:1 Langmuir model (A+B \u2194AB) for basigin ectodomain and full-length basigin, and a two-state model involving conformation change (A+B \u2194AB* \u2194 AB) for basigin-PMCA and basigin-MCT1 interactions with PfRH5.\n\n### SPR analysis using ghost proteins\n\nSEC-purified PfRH5 in 1\u00d7 PBS was chemically biotinylated using EZ-Link Sulfo-NHS-Biotin (Thermo Fisher Scientific) following the manufacturer\u2019s instructions. Basigin-enriched ghost protein and its PMCA and MCT1 depleted versions were first exchanged into SPR buffer on a PD-5 column. Each ghost fraction was then flowed individually over CAP chip surface coated with 400\u2013450 RUs of chemically biotinylated PfRH5. The association phase was measured for 180 s, while the dissociation phase was observed for 300 s and the recorded response curves were double referenced by subtracting response data from reference surface and buffer blank.\n\n### SPR analysis of monoclonal antibody blocking\n\n450\u2013500 RUs of chemically biotinylated PfRH5 were immobilised on flow cell 2 of the CAP chip. A mAb blocking experiment was then performed by injecting a single concentration (typically 50 nM for each mAb) for 240 s followed immediately by an analyte injection (2 \u00b5M basigin ectodomain or 0.2\u20130.4 \u00b5M basigin-PMCA or basigin-MCT1 complex) for 180 s on flow cells 1 and 2. Also, 10-fold dilution series of 10 \u03bcM to 0.1 nM of R5.016 was applied for 240 s to gauge concentration-dependent inhibition of the binding of PfRH5 to basigin-PMCA by R5.016. All sensogram curves were double referenced by subtracting responses from reference surface and blank injections.\n\n### Measurement of Ca2+ -ATPase activity\n\n0.075\u20130.1 \u00b5g of basigin-PMCA was incubated in a buffer containing 20 mM HEPES-NaOH, pH 7.2, 150 mM NaCl, 1 mM MgCl2, 0.5 mM EGTA and 0.1 mM ATP and 0.02% (wt/wt) DDM/CHS. The reaction started by addition of 0.55 mM CaCl2, incubated for up to 30 min at 30\u00b0C. The reaction was stopped by addition of 1 mM EGTA following which the inorganic phosphate (Pi) released due to ATP hydrolysis was detected by using Pi color lock gold kit (Abcam) and by measuring absorbance at 625 nm using a Spectra Max (Molecular Devices) colorimeter. The Ca2+-ATPase activity in the reaction mixture was calculated by subtracting the amount of Pi liberated in the tubes without Ca2+ and expressed in micromolar at different time points. The concentration of Pi in the reaction mixes was determined from a linear standard curve generated from Pi standard solution provided in the kit.\n\nTo study inhibition of Ca2+-ATPase activity, 0.1 \u00b5g of basigin-PMCA complex in 100 \u00b5l reaction buffer was pre-incubated with 0\u201332 \u00b5M of PfRH5 or caloxin 1c2 peptide in a 96-well microplate. The ATPase activity was stimulated by addition of 0.55 mM CaCl2 at 30\u00b0C. After 10 min, the reaction was stopped with 1 mM EGTA and colour was developed using Pi color lock gold kit followed by absorbance measurements at 625 nm. The inhibition of PMCA activity was inferred by comparing amount of Pi liberated in the reaction mixes containing PfRH5 or caloxin 1c2 to the reaction mix without any inhibitor.\n\n### Electrophysiology\n\nChinese hamster ovary cells were transiently transfected with cDNA coding for the mouse BK(Ca) channel alpha subunit (Uniprot ID Q08460), PMCA4b (P23634), and Basigin (P35613). The cells were incubated at 37\u00b0C and 5% CO2 and measured 2\u20134 days after transfection. Whole-cell patch clamp recordings were performed at room temperature using a HEKA EPC 10 amplifier. The currents were low pass filtered at 3\u201310 kHz and sampled at 20 KHz. Leak currents were subtracted using a P/4 leak subtraction protocol with holding potential of \u201390 mV and voltage steps opposite in polarity to those in experimental protocol. Serial resistance was 30\u201370% compensated using the internal compensation circuitry. The standard extracellular solution contained 5.8 mM KCl, 144 mM NaCl, 0.9 mM MgCl2, 1.3 mM CaCl2, 0.7 mM NaH2PO4, 5.6 mM D-glucose, and 10 mM HEPES-NaOH, pH 7.4. Recording pipettes pulled from quartz glass had resistance of 2.5\u20134.5 M\u03a9 when filled with internal solution containing 139 mM KCl, 3.5 mM MgCl2, 2 mM DiBrBAPTA, 5 mM HEPES-NaOH, pH 7.3; 2.5 mM Na2ATP, 0.1 mM Na3GTP, pH 7.3. CaCl2 was added to the internal solution to obtain 5 \u00b5M free [Ca2+]. PfRH5 and PfRCR were applied at final concentration of 2 and 1 \u00b5M respectively, for 3\u201310 min in the bath before recording.\n\nSteady-state activation of BKCa channels was determined using test pulses ranging from \u201350 to +200 mV (in 10 mV increment), followed by a repolarisation step to 0 mV. The conductance-voltage relations have been determined from the tail current amplitudes measured 0.5 ms after repolarisation to the fixed membrane potential (0 mV) and normalised to the maximum. For fitting, a Boltzmann function was used: g/gmax = gmax/(1+exp((Vh-Vm)/k)), where Vh is the voltage required for half maximal activation and k the slope factor.\n\nAll the chemicals except DiBrBAPTA (Alfa Aesar) were purchased from Sigma.\n\n### Immunofluorescence\n\n100 \u03bcl of packed erythrocytes were washed by resuspending cells in 400 \u03bcl of 1\u00d7 PBS and pelleted at 1500 \u00d7 g for 5 min at 4\u00b0C. After three washes, cells were fixed using a 4% paraformaldehyde solution (Thermo Fisher Scientific) containing 0.0075% glutaraldehyde (Merck) for 45 min at room temperature. Cells were washed three times using 1\u00d7 PBS and treated with 0.1 mg/ml sodium borohydride for 30 min at room temperature (Merck). Treated cells were washed three times with 1\u00d7 PBS and were blocked afterwards with 4% BSA solution for 1 hr at 4\u00b0C. 20 \u03bcl erythrocytes were incubated with anti-basigin (1:200), anti- PMCA (1:50), and anti-MCT1 (1:50) antibodies overnight at 4\u00b0C. All antibodies tested were acquired from commercial sources: anti-TRA-1\u201385/CD147 antibody (R&D Systems, MAB3195-SP), anti-MCT1 polyclonal antibody (Almone Labs LTD, distributed by Thermo Fisher Scientific, AMT-011) and anti-PMCA polyclonal antibody (Invitrogen, distributed by Thermo Fisher Scientific, PA5-107073). Antibody-bound cells were washed three times with 1\u00d7 PBS with 0.05% Tween 20, followed by labelling with anti-mouse IgG Alexa 488 (1:300) and anti-rabbit IgG (1:300). Labelled cells were washed another three times with 1\u00d7 PBS with 0.05% Tween 20 and resuspended in 300 \u03bcl of 1\u00d7 PBS followed by incubation on a coverslip coated with 0.1 mg/ml poly-D lysine 30 min. Coverslips containing mounted erythrocytes were placed on a glass slide and sealed using nail paint. Imaging was performed using an Oxford Nano imager microscope using a 100\u00d7 oil immersion objective equipped with continuous wave excitation laser 483 nm and 540 nm. Images were obtained at an exposure time of 200 ms with an objective-based total internal reflection angle of 54 degrees, using Nano imager software version 1.7, and the images were analysed using ImageJ.\n\n### P. falciparum culture and growth inhibition assay\n\nP. falciparum strain 3D7 was cultured using human erythrocytes (supplied by NHSBT at the John Radcliffe Hospital, Oxford, UK) at 2% hematocrit in RPMI 1640 (Thermo Fisher Scientific, 21870076) supplemented with 25 mM HEPES, 50 mg/l hypoxanthine, 2 g/l D-glucose, 2 mM L-glutamine, 10 \u03bcg/ml gentamycin, and 0.5% (wt/vol) AlbuMAX II (Thermo Fisher, 11021029) at 37\u00b0C in static cell culture flasks gassed with 5% CO2 and 5% O2. For growth inhibition assays, late-stage schizont cultures, synchronised by serial treatment with 5% sorbitol, were incubated in 96-well plates for one complete life cycle (ca. 44 hr) with antibodies at various concentrations in 40 \u03bcl at 1% hematocrit and an initial parasitaemia of 0.4%. All antibodies tested were acquired from commercial sources: anti-TRA-1\u201385/CD147 antibody (R&D Systems, MAB3195-SP), anti-MCT1 polyclonal antibody (Almone Labs LTD, distributed by Thermo Fisher Scientific, AMT-011), and anti-PMCA polyclonal antibody (Invitrogen, distributed by Thermo Fisher Scientific, PA5-107073). Parasite growth was assessed by measuring parasite lactate dehydrogenase activity as described previously (Makler and Hinrichs, 1993), using control cultures with only medium or medium supplemented with 5 mM EDTA as references for 0% and 100% growth inhibition, respectively.\n\n### Data processing software\n\nImageJ was used for densitometric analysis of western blots. SPR curves, SEC elution traces, and other graphs were reproduced using Prism 9 software and structural figures were prepared with Pymol (Schroedinger).\n",
+      "created_at": "2025-12-04T03:29:58.236262Z"
+    },
+    {
+      "id": "fa67c60b-df5c-4289-b234-9cd913ac3f1a",
+      "submission_id": "27f1048e-fb3a-4d96-9724-a96586856777",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Olivier Silvie, https://ror.org/02en5vm52 Sorbonne Universit\u00e9, UPMC Univ Paris 06, INSERM, CNRS France\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.83681.sa0](https://doi.org/10.7554/eLife.83681.sa0)\n\nThis elegantly performed and rigorous study generates new and conceptually important insights into the interaction between an essential malaria parasite invasion ligand (and vaccine candidate) called PfRH5, and its erythrocyte surface integral membrane receptor basigin. The authors provide compelling evidence based on rigorous biochemical assays that erythrocyte basigin is predominantly expressed in a complex with one of two distinct erythrocyte membrane proteins called PMCA and MCT1 and that PfRH5 binds to these complexes better than to isolated basigin. Certain invasion-inhibitory antibodies, that do not prevent binding of PfRH5 to isolated basigin, do in contrast prevent binding to the basigin complexes, explaining the mode of action of these previously enigmatic antibodies and providing valuable data towards the improved design of vaccines based on PfRH5.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Olivier Silvie, https://ror.org/02en5vm52 Sorbonne Universit\u00e9, UPMC Univ Paris 06, INSERM, CNRS France\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.83681.sa1](https://doi.org/10.7554/eLife.83681.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Erythrocyte invasion-neutralising antibodies prevent Plasmodium falciparum RH5 from binding to basigin-containing membrane protein complexes\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Dominique Soldati-Favre as the Senior Editor. The following individual involved in the review of your submission has agreed to reveal their identity: Michael J Blackman (Reviewer #2).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nAll three reviewers appreciated that this is an important study that substantially advances our understanding of malaria parasite interactions with human erythrocytes during invasion. While they found the evidence compelling, they also identified two major weaknesses that should be addressed in a revised version of the manuscript:\n\nEssential revisions:\n\n(1) The reviewers expressed some concerns about the calcium flux experiments. The data show that RH5 binding does not alter the calcium pump activity of PMCA in purified complexes or expressed in CHO cells. Unless they can provide experimental evidence that RH5-PMCA interaction has no effect on calcium flux in the context of erythrocyte invasion, they should tone down their claims and not rule out the role of PMCA inhibition during invasion. They should also confirm that recombinant PMCA4b and basigin interact and form the expected complex in their expression system, and consider performing a BKca activation dose-response experiment after the addition of Ca ionophore with and without a buffered low nanomolar [Ca].\n\n(2) The reviewers were concerned that the SPR results may reflect the use of a full-length basigin versus just the ectodomain. This point needs to be addressed to more firmly establish that the association with other proteins is indeed critical for RH5 binding. Also, the reviewers raised some technical issues regarding the evidence for the absence of free monomeric basigin in the SEC and 2D blue native PAGE experiments.\n\nThe reviewers made some additional comments to improve the manuscript, as indicated in the individual reviews.\n\nReviewer #1 (Recommendations for the authors):\n\n(1) While the work is extremely well performed and provides compelling evidence that BSG is found in complexes with PMCA or MCT1 and that BSG-PMCA and BSG-MCT1 bind RH5 with higher affinity than isolated BSG, the story would be complete if the authors could include functional data on the role of PCMA and MCT1 during P. falciparum invasion. Have they tested the invasion-neutralising activity of specific antibodies and/or chemical inhibitors (such as caloxin 1c2)?\n\n(2) The authors rule out the possibility that RH5 binding to BSG-PMCA may contribute to the calcium spike observed during erythrocyte invasion, based on the observation that RH5 does not alter the calcium pump activity of PMCA in purified complexes or expressed in CHO cells. However, formal demonstration would require evidence that RH5-PMCA interaction has no effect on calcium flux in the context of erythrocyte invasion. The authors may consider inhibiting PMCA and testing for calcium flux in invasion experiments. In the absence of such experimental data, they should tone down their claim.\n\n(3) The antibody shift assay in figure 1 not only shows that basigin is essentially complexed with PMCA and MCT1, but also that all PMCA and all MCT1 are complexed with basigin (Figure 1b). This is quite surprising and should be discussed. Is it possibly due to partial solubilization by DDM/CHS? Along the same line, how do the authors explain that basigin, PMCA, and MCT1 are all found in the same fraction (7-9), although the expected size of each complex is different (BSG-MCT1 would rather be expected in fractions 11-12)? Have the authors tested other detergents and/or cross-linking to check that BSG is exclusively found in complexes with PMCA or MCT1? Another possible control is to test the effect of anti-MCT1 antibody on PMCA-BSG in mobility shift assays (supplementary Figure 1).\n\nReviewer #2 (Recommendations for the authors):\n\nThe study and its conclusions are conceptually simple but rigorous and elegantly performed. The experimental approaches used are appropriate and the data are not over-interpreted. I have no major criticisms of the work. However, I have just a few comments regarding issues that might improve the manuscript.\n\n1. Figure 1a and 1b: for the experiments using SEC or 2D blue native PAGE to analyse the form of basigin in erythrocyte ghost extracts, repeated reference is made to the predicted position of migration of monomeric free basigin. However, the authors do not calibrate their SEC or PAGE systems with this protein so this is a prediction only. I am aware that most of their work on recombinant basigin has used just the protein ectodomain, but do they also have access to recombinant full-length basigin (i.e. including its TMD) for this purpose?\n\n2. The evidence presented that PfRH5 binds with higher affinity (slower off-rates, as well as apparently slower on-rates) to the native basigin-PMCA and basigin-MCT1 complexes than to recombinant basigin itself is convincing. However, this is discussed only briefly and the authors do not really attempt to provide a plausible explanation for this, since there is no structural evidence that RH5 makes molecular contacts with the basigin partner proteins. Is it conceivable that PfRH5 makes interactions with segments of PMCA or MCT1 (either protein components or post-translational modifications) that do not present electron density in the available crystal structures? I do feel that this point is worthy of a little more attention in the Discussion.\n\nReviewer #3 (Recommendations for the authors):\n\n1) Figure 1 shows that most basigin on erythrocytes is associated with either MCT1 or PMCA4b. p. 4. The densitometry plot for basigin in Figure 1c does not appear to show a statistically significant reduction with PMCA depletion as the error bars are large relative to the decrease in mean band density. Would statistical analysis of these data clearly establish depletion of basigin with PMCA?\n\na. The GPC control in this depletion experiment is useful but does not control for nonspecific depletion of basigin on the resin, possibly due to its substantial glycosylation. It would be useful to include depletion of basigin on resin that captures irrelevant proteins (e.g. GPC and Band 3). This is especially important considering that the experiment aims to quantify basigin depletion on sequential resins, where nonspecific adsorption may be cumulative.\n\n2) Figure 1b. p. 4. \"Signals at the appropriate molecular weight for free basigin were not observed in either the presence or absence of the basigin-binding antibody\" is not clearly supported by the data in Figure 1b because it is not clear that the first dimension (blue native PAGE) reveals proteins migrating at 40-65 kDa. The lowest MW marker, at 180 kDa, is close to the bottom of the 1st dimension migration. A molecular weight standard at or below this range is needed and should be indicated at the top left of the gel.\n\n3) Figure 2e and Supp. Figure 2c. are important because they could reveal changes in erythrocyte Ca++ content resulting from RH5-basigin-PMCA interaction; a change in Ca++ content might reveal why RH5-basigin interaction is required for invasion. The co-expression of BKca, PMCA4b, and basigin in CHO cells is sophisticated and empowered to address this question. The right shift in BKca activation upon PMCA expression is consistent with functional PMCA Ca pumps that efflux Ca++, lowering intracellular Ca required for BKca activation. Controls are however needed to show that the expressed protein PMCA4b and basigin interact and form the expected complex in this system. A control to show that PfRH5 faithfully interacted with this complex upon its exogenous addition is also required to interpret an absence of change. A similar control is suggested for the PfRCR complex experiment (Supp. Figure 2c).\n\n4) Figure 2e and Supp. Figure 2c. Another concern is whether the reduction in intracellular Ca++ with PMCA4b expression has maximally right-shifted the BKca activation curve. If it has done so, then changes in PMCA4b activity upon RH5 (or RCR) binding might not further shift the BKca activation curve in this system. The authors have properly used the Boltzmann equation to fit these curves in Figure 2f and Supp. Figure 2c (per the Methods section), but do not report V1/2 parameters. By eye, my estimate from the data is approximately 130 mV, which is only modestly to the left of the fully right-shifted value reported in PMID: 18955592 (183 mV). Because those workers used a different system, a control is needed here. A straightforward solution to this problem would be to perform a BKca activation dose-response experiment after the addition of Ca ionophore with and without a buffered low nanomolar [Ca] to show that further right shifts are detectable in the authors' hands.\n\n5) Figure 2d, Supp. Figure 3b: \"This model is consisted with an interaction which involves two separate, successive events, such as an initial lower affinity capture event, followed by a second binding event which increases the overall affinity, or a conformational change which follows an initial binding event.\" \u2013 some caution is required here because there are other explanations. For example, it is possible that under the SPR conditions basigin-PMCA dissociates into individual subunits. Then, the complex kinetics could reflect the heterogeneous binding of isolated basigin vs intact complexes. Another possibility is the dose-dependent formation of basigin-PMCA aggregates, which would also complicate the observed kinetics. These caveats do not negate the observed tighter binding of basigin-PMCA than of ectodomain alone, but I recommend a more cautious presentation. Some of these caveats also apply to interpreting SPR kinetic data with basigin-MCT1.\n\n6) More fundamentally, the SPR data compare full-length basigin complexed with PMCA or MCT1 to the basigin ectodomain alone and implicitly infer that the difference reflects the formation of a larger complex of basigin with another protein (PMCA or MCT1). Instead, the slow binding could reflect the use of a full-length basigin vs. just the ectodomain. As the RH5 binding sites are well above the membrane and distant from the partner proteins, this reviewer tends to favor better binding results from the use of a full-length basigin (in DDM-CHS, which may stabilize the protein) when compared to the soluble ectodomain fragment. The association with other proteins is compelling and interesting, but may not be critical for RH5 binding or inhibition by antibodies (Figure 4).\n\n7) The docking experiments in Figure 4d and 4e do, however, suggest a contribution from the associated proteins. Antibody inhibition experiments using full-length basigin in DDM-CHS, such as those performed in Figure 4a-c, would be revealing and address this concern definitively, but I do not consider them essential for this publication. The authors may, however, want to present the interpretation of Figure 4a-c more cautiously with this in mind.\n\n8) p. 5. The start of the 3rd paragraph is confusing. \"To measure binding kinetics, we produced PfRH5 carrying an N-terminal biotin acceptor peptide tag. This was captured at low density on a streptavidin-coated SPR chip\" is in a second paragraph after a paragraph describing SPR with streptavidin-coated chips. I assume the data in the preceding paragraph also used PfRH5 carrying an N-terminal biotin acceptor peptide tag. If correct, the confusion would be corrected by moving the biotin acceptor tag statement to the preceding paragraph and simply describing that dose-response experiments were used to measure binding kinetics in the second paragraph.\n\n9) The Results section for Figure 2f \u2013 unclear what method is being used here as it is only described as \"colorimetry\" in Results and not explained in the figure legend. I believe this is the same ATPase assay as in Figure Suppl 2b, but this should be clarified.\n",
+      "created_at": "2025-12-04T03:29:58.236262Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T03:29:58.236262Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T03:29:58.236262Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "bfb96270-2ffa-42dc-9a9d-4dbb5ede057c",
+      "content_id": "4eb13ebe-fc2f-4109-97f3-7ec3821df670",
+      "claim_id": "C1",
+      "claim": "Basigin is an essential host receptor for invasion of Plasmodium falciparum into human erythrocytes, interacting with parasite surface protein PfRH5.",
+      "claim_type": "EXPLICIT",
+      "source": "Basigin is an essential host receptor for invasion of Plasmodium falciparum into human erythrocytes, interacting with parasite surface protein PfRH5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and is supported by citations to prior work (Crosnier et al., 2011) in the introduction.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:58.236262Z"
+    },
+    {
+      "id": "ea1aeb39-15d1-431e-9622-f8f807f81d5d",
+      "content_id": "4eb13ebe-fc2f-4109-97f3-7ec3821df670",
+      "claim_id": "C2",
+      "claim": "PfRH5 is a leading blood-stage malaria vaccine candidate and a target of growth-inhibitory antibodies.",
+      "claim_type": "EXPLICIT",
+      "source": "PfRH5 is a leading blood-stage malaria vaccine candidate and a target of growth-inhibitory antibodies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by multiple citations in the introduction (Payne et al., 2017; Minassian et al., 2021).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:58.236262Z"
+    },
+    {
+      "id": "89c07720-f116-4300-ab7d-05cdae287437",
+      "content_id": "4eb13ebe-fc2f-4109-97f3-7ec3821df670",
+      "claim_id": "C3",
+      "claim": "Erythrocyte basigin is exclusively found in one of two macromolecular complexes, bound either to plasma membrane Ca2+-ATPase 1/4 (PMCA1/4) or to monocarboxylate transporter 1 (MCT1).",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show that erythrocyte basigin is exclusively found in one of two macromolecular complexes, bound either to plasma membrane Ca2+-ATPase 1/4 (PMCA1/4) or to monocarboxylate transporter 1 (MCT1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by experimental data in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:58.236262Z"
+    },
+    {
+      "id": "6550174d-264c-4e9c-9930-febd9ec175ee",
+      "content_id": "4eb13ebe-fc2f-4109-97f3-7ec3821df670",
+      "claim_id": "C4",
+      "claim": "PfRH5 binds to basigin-PMCA and basigin-MCT1 complexes with a higher affinity than to isolated basigin ectodomain.",
+      "claim_type": "EXPLICIT",
+      "source": "PfRH5 binds to each of these complexes with a higher affinity than to isolated basigin ectodomain, making it likely that these are the physiological targets of PfRH5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by SPR data in Figures 2 and 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:58.236262Z"
+    },
+    {
+      "id": "a2094174-974a-4d2d-b084-887243124bd8",
+      "content_id": "4eb13ebe-fc2f-4109-97f3-7ec3821df670",
+      "claim_id": "C5",
+      "claim": "PMCA-mediated Ca2+ export is not affected by PfRH5.",
+      "claim_type": "EXPLICIT",
+      "source": "PMCA-mediated Ca2+ export is not affected by PfRH5, making it unlikely that this is the mechanism underlying changes in calcium flux at the interface between an erythrocyte and the invading parasite.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by experimental data in Figure 2e and 2f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:58.236262Z"
+    },
+    {
+      "id": "1a0e7ead-8e54-486f-b9ab-2ac1e94065d5",
+      "content_id": "4eb13ebe-fc2f-4109-97f3-7ec3821df670",
+      "claim_id": "C6",
+      "claim": "Growth-inhibitory antibodies R5.016 and 9AD4 do not reduce the binding of PfRH5 to monomeric basigin.",
+      "claim_type": "EXPLICIT",
+      "source": "While these antibodies do not reduce the binding of PfRH5 to monomeric basigin, they do reduce its binding to basigin-PMCA and basigin-MCT complexes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by SPR data in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:58.236262Z"
+    },
+    {
+      "id": "f93a2f72-ae6e-4fa6-89ae-9fa3d5ecc972",
+      "content_id": "4eb13ebe-fc2f-4109-97f3-7ec3821df670",
+      "claim_id": "C7",
+      "claim": "Growth-inhibitory antibodies R5.016 and 9AD4 reduce PfRH5 binding to basigin-PMCA and basigin-MCT1 complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "While these antibodies do not reduce the binding of PfRH5 to monomeric basigin, they do reduce its binding to basigin-PMCA and basigin-MCT complexes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by SPR data in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:58.236262Z"
+    },
+    {
+      "id": "4aa9a7f9-4b3e-4285-91be-8cfb59e98b02",
+      "content_id": "4eb13ebe-fc2f-4109-97f3-7ec3821df670",
+      "claim_id": "C8",
+      "claim": "The most effective PfRH5-targeting antibodies inhibit growth by sterically blocking the essential interaction of PfRH5 with basigin in its physiological context.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicates that the most effective PfRH5-targeting antibodies inhibit growth by sterically blocking the essential interaction of PfRH5 with basigin in its physiological context.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion stated in the abstract and supported by structural modeling and SPR data in Figure 4.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:58.236262Z"
+    },
+    {
+      "id": "28238b2f-c1ea-4023-aa2e-ad46814f976a",
+      "content_id": "4eb13ebe-fc2f-4109-97f3-7ec3821df670",
+      "claim_id": "C9",
+      "claim": "Malaria is still one of the most deadly parasitic diseases to affect humans, with Plasmodium falciparum as the causative agent of the most severe cases.",
+      "claim_type": "EXPLICIT",
+      "source": "Malaria is still one of the most deadly parasitic diseases to affect humans, with Plasmodium falciparum as the causative agent of the most severe cases (Sato, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement supported by a citation to Sato, 2021.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:58.236262Z"
+    },
+    {
+      "id": "ab4396ef-e701-442c-b882-daa1dc03360c",
+      "content_id": "4eb13ebe-fc2f-4109-97f3-7ec3821df670",
+      "claim_id": "C11",
+      "claim": "The binding of merozoite P. falciparum reticulocyte homologue 5 (PfRH5) to erythrocyte basigin is essential for invasion by all tested P. falciparum strains.",
+      "claim_type": "EXPLICIT",
+      "source": "While many of these interactions are redundant, the binding of merozoite P. falciparum reticulocyte homologue 5 (PfRH5) to erythrocyte basigin is essential for invasion by all tested P. falciparum strains (Crosnier et al., 2011), making PfRH5 one of the most promising blood-stage malaria vaccine candidates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement supported by a citation to Crosnier et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:58.236262Z"
+    },
+    {
+      "id": "12ffda97-3946-4077-a77d-13bb84e1a924",
+      "content_id": "4eb13ebe-fc2f-4109-97f3-7ec3821df670",
+      "claim_id": "C12",
+      "claim": "PfRH5 is part of the five-component PfPCRCR complex, containing PfRH5, PfCyRPA, PfRIPR, PfPTRAMP, and PfCSS.",
+      "claim_type": "EXPLICIT",
+      "source": "PfRH5 is part of the five-component PfPCRCR complex, containing PfRH5, PfCyRPA, PfRIPR, PfPTRAMP, and PfCSS, and each component is essential for invasion and is a target of growth-inhibitory antibodies or nanobodies (Farrell et al., 2023; Reddy et al., 2015; Scally et al., 2022; Wong et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:58.236262Z"
+    },
+    {
+      "id": "27309624-c795-4b6f-944d-69dd695b1392",
+      "content_id": "4eb13ebe-fc2f-4109-97f3-7ec3821df670",
+      "claim_id": "C13",
+      "claim": "Each component of the PfPCRCR complex is essential for invasion and is a target of growth-inhibitory antibodies or nanobodies.",
+      "claim_type": "EXPLICIT",
+      "source": "PfRH5 is part of the five-component PfPCRCR complex, containing PfRH5, PfCyRPA, PfRIPR, PfPTRAMP, and PfCSS, and each component is essential for invasion and is a target of growth-inhibitory antibodies or nanobodies (Farrell et al., 2023; Reddy et al., 2015; Scally et al., 2022; Wong et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:58.236262Z"
+    },
+    {
+      "id": "e9206b18-33ef-4afa-83bb-0d83858a0791",
+      "content_id": "4eb13ebe-fc2f-4109-97f3-7ec3821df670",
+      "claim_id": "C14",
+      "claim": "Vaccination of human volunteers with PfRH5 elicits strain-transcending anti-malarial antibodies.",
+      "claim_type": "EXPLICIT",
+      "source": "Vaccination of human volunteers with PfRH5 elicits strain-transcending anti-malarial antibodies (Payne et al., 2017) and, in a human challenge model, reduces the rate of parasite growth (Minassian et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement supported by a citation to Payne et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:58.236262Z"
+    },
+    {
+      "id": "695cf9dd-3918-495c-a78e-b07d88f44fe3",
+      "content_id": "4eb13ebe-fc2f-4109-97f3-7ec3821df670",
+      "claim_id": "C15",
+      "claim": "In a human challenge model, PfRH5 vaccination reduces the rate of parasite growth.",
+      "claim_type": "EXPLICIT",
+      "source": "Vaccination of human volunteers with PfRH5 elicits strain-transcending anti-malarial antibodies (Payne et al., 2017) and, in a human challenge model, reduces the rate of parasite growth (Minassian et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement supported by a citation to Minassian et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:58.236262Z"
+    },
+    {
+      "id": "c5c28f1a-f9f3-4e42-9de4-146696b29abc",
+      "content_id": "4eb13ebe-fc2f-4109-97f3-7ec3821df670",
+      "claim_id": "C16",
+      "claim": "Basigin binds towards one of the tips of the 'kite-like' structure of PfRH5.",
+      "claim_type": "EXPLICIT",
+      "source": "Structural studies of PfRH5 have revealed that basigin binds towards one of the tips of the 'kite-like' structure of PfRH5 (Wright et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement supported by a citation to Wright et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:58.236262Z"
+    },
+    {
+      "id": "ff291361-c50b-4238-8ff9-519961e8c399",
+      "content_id": "4eb13ebe-fc2f-4109-97f3-7ec3821df670",
+      "claim_id": "C17",
+      "claim": "Structures of PfRH5 in complex with Fab fragments of monoclonal antibodies have identified a number of important epitopes across PfRH5, including those for human and mouse growth-inhibitory antibodies (R5.004, R5.016, 9AD4, and QA1).",
+      "claim_type": "EXPLICIT",
+      "source": "Structures of PfRH5 in complex with Fab fragments of monoclonal antibodies have identified a number of important epitopes across PfRH5, including those for human and mouse growth-inhibitory antibodies (R5.004, R5.016, 9AD4, and QA1) (Alanine et al., 2019; Wright et al., 2014), as well as the epitope for an antibody which potentiates the effects of growth-inhibitory antibodies (R5.011) (Alanine et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement supported by citations to Alanine et al., 2019 and Wright et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:58.236262Z"
+    },
+    {
+      "id": "d8e5b09d-0f21-48d7-921a-8e85f842fc6d",
+      "content_id": "4eb13ebe-fc2f-4109-97f3-7ec3821df670",
+      "claim_id": "C18",
+      "claim": "The most effective growth-inhibitory antibodies, 9AD4 and R5.016, are not able to block basigin binding.",
+      "claim_type": "EXPLICIT",
+      "source": "However, mysteries remain, with the most effective growth-inhibitory antibodies, 9AD4 and R5.016 not able to block basigin binding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement in the introduction that sets up the research question.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:58.236262Z"
+    },
+    {
+      "id": "c0e239dc-a7fe-49bc-873d-5cb822d3775e",
+      "content_id": "4eb13ebe-fc2f-4109-97f3-7ec3821df670",
+      "claim_id": "C19",
+      "claim": "Basigin is a type I transmembrane protein of the immunoglobulin (Ig) superfamily, with the most common isoform presenting an ectodomain consisting of two highly glycosylated extracellular Ig domains.",
+      "claim_type": "EXPLICIT",
+      "source": "Basigin is a type I transmembrane protein of the immunoglobulin (Ig) superfamily, with the most common isoform presenting an ectodomain consisting of two highly glycosylated extracellular Ig domains (Muramatsu, 2016), both of which contact PfRH5 (Wright et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement supported by citations to Muramatsu, 2016 and Wright et al., 2014.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:58.236262Z"
+    },
+    {
+      "id": "16370d7a-f013-4015-bc0e-ee92a26eae4c",
+      "content_id": "4eb13ebe-fc2f-4109-97f3-7ec3821df670",
+      "claim_id": "C20",
+      "claim": "Both extracellular Ig domains of basigin contact PfRH5.",
+      "claim_type": "EXPLICIT",
+      "source": "Basigin is a type I transmembrane protein of the immunoglobulin (Ig) superfamily, with the most common isoform presenting an ectodomain consisting of two highly glycosylated extracellular Ig domains (Muramatsu, 2016), both of which contact PfRH5 (Wright et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement supported by a citation to Wright et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:58.236262Z"
+    },
+    {
+      "id": "52550e80-ee3e-4586-90a5-b814022a6432",
+      "content_id": "4eb13ebe-fc2f-4109-97f3-7ec3821df670",
+      "claim_id": "C21",
+      "claim": "The transmembrane segment of basigin mediates formation of heteromeric complexes which contain basigin and either monocarboxylate transporters (MCTs) or plasma membrane calcium ATPases (PMCAs).",
+      "claim_type": "EXPLICIT",
+      "source": "More recently, the transmembrane segment of basigin has been shown to mediate formation of heteromeric complexes which contain basigin and either monocarboxylate transporters (MCTs) or plasma membrane calcium ATPases (PMCAs) (Muramatsu, 2016; Supper et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement supported by citations to Muramatsu, 2016 and Supper et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:58.236262Z"
+    },
+    {
+      "id": "f896b623-4760-41c6-85fb-68e275bf1a50",
+      "content_id": "4eb13ebe-fc2f-4109-97f3-7ec3821df670",
+      "claim_id": "C22",
+      "claim": "MCTs are involved in proton-coupled exchange of lactate or pyruvate across plasma membranes.",
+      "claim_type": "EXPLICIT",
+      "source": "MCTs are involved in proton-coupled exchange of lactate or pyruvate across plasma membranes (Felmlee et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement supported by a citation to Felmlee et al., 2020.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:58.236262Z"
+    },
+    {
+      "id": "12524819-a712-4d59-917a-db8faf251d45",
+      "content_id": "4eb13ebe-fc2f-4109-97f3-7ec3821df670",
+      "claim_id": "C23",
+      "claim": "Both MCT1 and MCT4 interact with basigin in multiple eukaryotic cell lines.",
+      "claim_type": "EXPLICIT",
+      "source": "Both MCT1 and MCT4 interact with basigin in multiple eukaryotic cell lines (Kirk et al., 2000), affecting their function and stability (Kirk et al., 2000) and MCT1 is the primary subtype in human erythrocytes (Juel et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement supported by a citation to Kirk et al., 2000.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:58.236262Z"
+    },
+    {
+      "id": "417e7f33-59a2-40c3-a814-747d7a241341",
+      "content_id": "4eb13ebe-fc2f-4109-97f3-7ec3821df670",
+      "claim_id": "C24",
+      "claim": "MCT1 is the primary subtype in human erythrocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Both MCT1 and MCT4 interact with basigin in multiple eukaryotic cell lines (Kirk et al., 2000), affecting their function and stability (Kirk et al., 2000) and MCT1 is the primary subtype in human erythrocytes (Juel et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement supported by a citation to Juel et al., 2003.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:58.236262Z"
+    },
+    {
+      "id": "68158751-8477-4c2c-99cd-86ad59f53e96",
+      "content_id": "4eb13ebe-fc2f-4109-97f3-7ec3821df670",
+      "claim_id": "C25",
+      "claim": "PMCAs play a role in membrane transport, with four subtypes of PMCA removing Ca2+ from the cell cytosol to maintain intracellular Ca2+ homeostasis and modulate cell signalling.",
+      "claim_type": "EXPLICIT",
+      "source": "PMCAs also play a role in membrane transport, with four subtypes of PMCA removing Ca2+ from the cell cytosol to maintain intracellular Ca2+ homeostasis and modulate cell signalling (Stafford et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement supported by a citation to Stafford et al., 2017.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:58.236262Z"
+    },
+    {
+      "id": "ff5a531b-b255-4cf9-9197-7203c98c59a9",
+      "content_id": "4eb13ebe-fc2f-4109-97f3-7ec3821df670",
+      "claim_id": "C26",
+      "claim": "Either basigin, or its close paralog neuroplastin, are essential subunits of PMCA, influencing expression and function of PMCAs in rodent neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Either basigin, or its close paralog neuroplastin, are essential subunits of PMCA, influencing expression and function of PMCAs in rodent neurons, with human erythrocyte PMCAs complexed with basigin (Schmidt et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement supported by a citation to Schmidt et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:58.236262Z"
+    },
+    {
+      "id": "0d925ca6-8f70-4a03-b6db-ac8f61ad9ba7",
+      "content_id": "4eb13ebe-fc2f-4109-97f3-7ec3821df670",
+      "claim_id": "C27",
+      "claim": "Human erythrocyte PMCAs are complexed with basigin.",
+      "claim_type": "EXPLICIT",
+      "source": "Either basigin, or its close paralog neuroplastin, are essential subunits of PMCA, influencing expression and function of PMCAs in rodent neurons, with human erythrocyte PMCAs complexed with basigin (Schmidt et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement supported by a citation to Schmidt et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:58.236262Z"
+    },
+    {
+      "id": "f0107e62-34f1-4bbf-a30d-2472ca8aabcc",
+      "content_id": "4eb13ebe-fc2f-4109-97f3-7ec3821df670",
+      "claim_id": "C28",
+      "claim": "Both basigin-MCT1 and neuroplastin-PMCA1 complexes have been structurally characterised, revealing interactions mediated by transmembrane helices.",
+      "claim_type": "EXPLICIT",
+      "source": "Both basigin-MCT1 and neuroplastin-PMCA1 complexes have been structurally characterised, revealing interactions mediated by transmembrane helices (Gong et al., 2018; Wang et al., 2021), with the PfRH5 binding site on the basigin ectodomain remaining accessible.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement supported by citations to Gong et al., 2018 and Wang et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:58.236262Z"
+    },
+    {
+      "id": "f94eedc6-2e67-40ee-8f83-7000916064e4",
+      "content_id": "4eb13ebe-fc2f-4109-97f3-7ec3821df670",
+      "claim_id": "C29",
+      "claim": "The PfRH5 binding site on the basigin ectodomain remains accessible in basigin-MCT1 and neuroplastin-PMCA1 complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "Both basigin-MCT1 and neuroplastin-PMCA1 complexes have been structurally characterised, revealing interactions mediated by transmembrane helices (Gong et al., 2018; Wang et al., 2021), with the PfRH5 binding site on the basigin ectodomain remaining accessible.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement supported by citations to Gong et al., 2018 and Wang et al., 2021.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:58.236262Z"
+    },
+    {
+      "id": "3d707bca-d9dc-40de-abd9-d6756b4c8af4",
+      "content_id": "4eb13ebe-fc2f-4109-97f3-7ec3821df670",
+      "claim_id": "C30",
+      "claim": "PMCA1, PMCA4, and MCT1 are all expressed on human RBC plasma membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "Proteomics studies have confirmed that PMCA1, PMCA4, and MCT1 are all expressed on human RBC plasma membrane (Ravenhill et al., 2019) and, intriguingly, the actions of both MCTs and PMCAs have been linked to severe malaria (Bedu-Addo et al., 2013; Mariga et al., 2014; Timmann et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement supported by a citation to Ravenhill et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:58.236262Z"
+    },
+    {
+      "id": "15de7273-e3ca-48ab-b273-696cf4692180",
+      "content_id": "4eb13ebe-fc2f-4109-97f3-7ec3821df670",
+      "claim_id": "C31",
+      "claim": "The actions of both MCTs and PMCAs have been linked to severe malaria.",
+      "claim_type": "EXPLICIT",
+      "source": "Proteomics studies have confirmed that PMCA1, PMCA4, and MCT1 are all expressed on human RBC plasma membrane (Ravenhill et al., 2019) and, intriguingly, the actions of both MCTs and PMCAs have been linked to severe malaria (Bedu-Addo et al., 2013; Mariga et al., 2014; Timmann et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement supported by citations to Bedu-Addo et al., 2013; Mariga et al., 2014; Timmann et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:58.236262Z"
+    },
+    {
+      "id": "9c596730-2be4-4ade-8fe8-01b3110a8bb2",
+      "content_id": "4eb13ebe-fc2f-4109-97f3-7ec3821df670",
+      "claim_id": "C32",
+      "claim": "Cerebral malaria is associated with increased lactate concentrations, which may damage the blood-brain barrier.",
+      "claim_type": "EXPLICIT",
+      "source": "In the case of MCT1, cerebral malaria is associated with increased lactate concentrations, which may damage the blood-brain barrier.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement in the introduction that provides context for the study.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:58.236262Z"
+    },
+    {
+      "id": "22a8fab3-080a-43d5-8faf-db1d9db608b2",
+      "content_id": "4eb13ebe-fc2f-4109-97f3-7ec3821df670",
+      "claim_id": "C33",
+      "claim": "PMCA polymorphisms have been linked to the development of severe malaria in a genome-wide association study.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, PMCA polymorphisms have been linked to the development of severe malaria in a genome-wide association study, suggesting that calcium homeostasis across the erythrocyte membrane may affect the outcomes of malaria.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement supported by citations in the introduction (Timmann et al., 2012).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:58.236262Z"
+    },
+    {
+      "id": "56a36df0-3693-4edb-a4ba-ce92b6ab0584",
+      "content_id": "4eb13ebe-fc2f-4109-97f3-7ec3821df670",
+      "claim_id": "C34",
+      "claim": "Spikes of increased intra-erythrocytic calcium have been observed during the parasite invasion process and these are dependent on the interaction between PfRH5 and basigin.",
+      "claim_type": "EXPLICIT",
+      "source": "Spikes of increased intra-erythrocytic calcium have been observed during the parasite invasion process and these are dependent on the interaction between PfRH5 and basigin (Volz et al., 2016; Weiss et al., 2015), raising the question of whether localised blockage of PMCA-mediated calcium efflux may cause these calcium spikes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement supported by citations to Volz et al., 2016 and Weiss et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:58.236262Z"
+    },
+    {
+      "id": "e355561f-025d-449e-abca-109a1d8a099d",
+      "content_id": "4eb13ebe-fc2f-4109-97f3-7ec3821df670",
+      "claim_id": "C35",
+      "claim": "Probing individual fractions with a basigin-binding antibody revealed a broad band indicating the presence of heterogeneously glycosylated basigin.",
+      "claim_type": "EXPLICIT",
+      "source": "Probing individual fractions with a basigin-binding antibody revealed a broad band indicating the presence of heterogeneously glycosylated basigin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of experimental results shown in Figure 1a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:58.236262Z"
+    },
+    {
+      "id": "f917d05a-8e68-4fa4-8399-eb2b688df63d",
+      "content_id": "4eb13ebe-fc2f-4109-97f3-7ec3821df670",
+      "claim_id": "C36",
+      "claim": "Fractions rich in basigin also showed strong signals for both PMCAs and MCT1, indicating that the majority of basigin co-migrates with PMCAs and MCT1.",
+      "claim_type": "EXPLICIT",
+      "source": "Fractions rich in basigin also showed strong signals for both PMCAs and MCT1, indicating that the majority of basigin co-migrates with PMCAs and MCT1 (Figure 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of experimental results shown in Figure 1a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:58.236262Z"
+    },
+    {
+      "id": "da6b8a27-e342-49ea-b21d-ad076e88f24a",
+      "content_id": "4eb13ebe-fc2f-4109-97f3-7ec3821df670",
+      "claim_id": "C37",
+      "claim": "The three components predominantly eluted in a region of the migration profile between standards of mass 157 kDa and 200 kDa, compatible with the mass of detergent-solubilised basigin-MCT1 and basigin-PMCA complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "The three components predominantly eluted in a region of the migration profile between standards of mass 157 kDa and 200 kDa, compatible with the mass of detergent-solubilised basigin-MCT1 and basigin-PMCA complexes (Figure 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of experimental results shown in Figure 1a.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:58.236262Z"
+    },
+    {
+      "id": "13b6eac1-029f-4c37-b3f5-8b29a04fcf6d",
+      "content_id": "4eb13ebe-fc2f-4109-97f3-7ec3821df670",
+      "claim_id": "C38",
+      "claim": "No basigin was found in later fractions in the region of the profile which would correspond to the mass of a single basigin in a detergent micelle.",
+      "claim_type": "EXPLICIT",
+      "source": "No basigin was found in later fractions in the region of the profile which would correspond to the mass of a single basigin in a detergent micelle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of experimental results shown in Figure 1a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:58.236262Z"
+    },
+    {
+      "id": "ac5e9c52-b233-4c71-aecb-0842fc518c73",
+      "content_id": "4eb13ebe-fc2f-4109-97f3-7ec3821df670",
+      "claim_id": "C39",
+      "claim": "Insect cell expressed full-length basigin associates with binding partners in Sf9 cells which co-purify in DDM:CHS but are removed using the harsher detergent CHAPS.",
+      "claim_type": "EXPLICIT",
+      "source": "We therefore concluded that insect cell expressed full-length basigin also associates with binding partners in Sf9 cells which co-purify in DDM:CHS but are removed using the harsher detergent CHAPS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on experimental data shown in Figure 1\u2014figure supplement 1a, b.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:58.236262Z"
+    },
+    {
+      "id": "784515d8-10f3-4eca-9f36-81bfb3972e34",
+      "content_id": "4eb13ebe-fc2f-4109-97f3-7ec3821df670",
+      "claim_id": "C40",
+      "claim": "Full-length basigin purified in CHAPS and exchanged into DDM:CHS eluted at ~11.2 ml from a size exclusion column, later than the basigin-containing complexes extracted from erythrocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "This full-length basigin eluted at ~11.2 ml from a size exclusion column, later than the basigin-containing complexes extracted from erythrocytes (Figure 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of experimental results shown in Figure 1a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:58.236262Z"
+    },
+    {
+      "id": "0004b6d0-0613-4194-84ee-2a92e8bd8136",
+      "content_id": "4eb13ebe-fc2f-4109-97f3-7ec3821df670",
+      "claim_id": "C41",
+      "claim": "The addition of the MCT1-specific antibody caused a shift in elution profile of the majority of the MCT1 and ~53% of basigin, suggesting them to be in complex.",
+      "claim_type": "EXPLICIT",
+      "source": "While there was no shift of glycophorin C, the addition of the MCT1-specific antibody caused a shift in elution profile of the majority of the MCT1 and ~53% of basigin, suggesting them to be in complex (Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of experimental results shown in Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:58.236262Z"
+    },
+    {
+      "id": "b164de36-ef4c-4514-8df8-8ff4f71a7c3e",
+      "content_id": "4eb13ebe-fc2f-4109-97f3-7ec3821df670",
+      "claim_id": "C42",
+      "claim": "~47% of the basigin did not shift in the MCT1 antibody shift experiment.",
+      "claim_type": "EXPLICIT",
+      "source": "However, ~47% of the basigin did not shift.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of experimental results shown in Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:58.236262Z"
+    },
+    {
+      "id": "b12c59dc-7888-4f9d-9520-32f424db0ed4",
+      "content_id": "4eb13ebe-fc2f-4109-97f3-7ec3821df670",
+      "claim_id": "C43",
+      "claim": "Western blotting 2D gels and staining with basigin, PMCA, and MCT1 antibodies indicated two separate populations of basigin-containing complexes, one of which co-migrated with PMCA and one of which co-migrated with MCT1.",
+      "claim_type": "EXPLICIT",
+      "source": "Western blotting these 2D gels and staining with basigin, PMCA, and MCT1 antibodies indicated two separate populations of basigin-containing complexes, one of which co-migrated with PMCA and one of which co-migrated with MCT1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of experimental results shown in Figure 1b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:58.236262Z"
+    },
+    {
+      "id": "674ec2f2-68e6-465f-b25b-2f9925a37045",
+      "content_id": "4eb13ebe-fc2f-4109-97f3-7ec3821df670",
+      "claim_id": "C44",
+      "claim": "Inclusion of an antibody which quantitatively binds to basigin shifted both populations to higher molecular weight.",
+      "claim_type": "EXPLICIT",
+      "source": "Inclusion of an antibody which quantitatively binds to basigin shifted both populations to higher molecular weight (Figure 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of experimental results shown in Figure 1b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:58.236262Z"
+    },
+    {
+      "id": "a9182a71-6c61-49fb-84f4-b8fc938f46d1",
+      "content_id": "4eb13ebe-fc2f-4109-97f3-7ec3821df670",
+      "claim_id": "C45",
+      "claim": "Signals at the appropriate molecular weight for free basigin were not observed in either the presence or absence of the basigin-binding antibody.",
+      "claim_type": "EXPLICIT",
+      "source": "Signals at the appropriate molecular weight for free basigin were not observed in either the presence or absence of the basigin-binding antibody (Figure 1b, Figure 1\u2014figure supplement 1c), even upon prolonged exposure of the blots.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of experimental results shown in Figure 1b and Figure 1\u2014figure supplement 1c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:58.236262Z"
+    },
+    {
+      "id": "40db3430-a425-42e0-a627-e4cec91a3921",
+      "content_id": "4eb13ebe-fc2f-4109-97f3-7ec3821df670",
+      "claim_id": "C46",
+      "claim": "Sequential depletions of both PMCA and MCT1 resulted in almost complete elimination of basigin from the solubilised ghost membrane proteome.",
+      "claim_type": "EXPLICIT",
+      "source": "Sequential depletions of both PMCA and MCT1 resulted in almost complete elimination of basigin from the solubilised ghost membrane proteome, confirming that nearly all basigin is complexed with one of these transporters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of experimental results shown in Figure 1c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:58.236262Z"
+    },
+    {
+      "id": "e0a5daa4-3d83-417a-8125-e43d3519ec3b",
+      "content_id": "4eb13ebe-fc2f-4109-97f3-7ec3821df670",
+      "claim_id": "C47",
+      "claim": "Densitometric measurements showed ~72% of basigin complexed with MCT1 and ~28% of basigin complexed with PMCA.",
+      "claim_type": "EXPLICIT",
+      "source": "Densitometric measurements also showed greater reduction in basigin levels upon MCT1 depletion, with ~72% of basigin complexed with MCT1 and ~28% of basigin complexed with PMCA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of experimental results shown in Figure 1c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:58.236262Z"
+    },
+    {
+      "id": "7c9fce2a-c8ed-4b0a-aee9-f37544eb3b6b",
+      "content_id": "4eb13ebe-fc2f-4109-97f3-7ec3821df670",
+      "claim_id": "C48",
+      "claim": "Mass spectrometry analysis revealed PMCA4 to be the major partner of basigin in human erythrocytes, while also identifying PMCA1.",
+      "claim_type": "EXPLICIT",
+      "source": "This revealed PMCA4 to be the major partner of basigin in human erythrocytes, while also identifying PMCA1 (Figure 1d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of experimental results shown in Figure 1d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:58.236262Z"
+    },
+    {
+      "id": "13c18a41-8231-4cd7-8daa-06c44661e4c0",
+      "content_id": "4eb13ebe-fc2f-4109-97f3-7ec3821df670",
+      "claim_id": "C49",
+      "claim": "Mass spectrometry identified MCT1 as the primary subtype of MCT in human erythrocytes, with MCT2 and -4 also detected.",
+      "claim_type": "EXPLICIT",
+      "source": "Also identified were MCTs, with MCT1 as the primary subtype and MCT2 and -4 also detected (Figure 1d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of experimental results shown in Figure 1d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:58.236262Z"
+    },
+    {
+      "id": "1146fdcf-5c89-4ec4-bf7c-f1eef23cbbcd",
+      "content_id": "4eb13ebe-fc2f-4109-97f3-7ec3821df670",
+      "claim_id": "C50",
+      "claim": "The structure of the neuroplastin-PMCA1 complex shows the neuroplastin ectodomain to be presented above the extracellular loops of PMCA, with the surface of neuroplastin equivalent to that used by basigin to bind to PfRH5 being exposed.",
+      "claim_type": "EXPLICIT",
+      "source": "The structure of the neuroplastin-PMCA1 complex shows the neuroplastin ectodomain to be presented above the extracellular loops of PMCA, with the surface of neuroplastin equivalent to that used by basigin to bind to PfRH5 being exposed, making it likely that PfRH5 can bind to PMCA-bound basigin (Figure 2a; Gong et al., 2018).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statement based on structural analysis shown in Figure 2a and supported by citation to Gong et al., 2018.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:58.236262Z"
+    },
+    {
+      "id": "a0df0f0c-42e2-40be-b7cf-f7ce25db0a76",
+      "content_id": "4eb13ebe-fc2f-4109-97f3-7ec3821df670",
+      "claim_id": "C51",
+      "claim": "It is likely that PfRH5 can bind to PMCA-bound basigin.",
+      "claim_type": "EXPLICIT",
+      "source": "The structure of the neuroplastin-PMCA1 complex shows the neuroplastin ectodomain to be presented above the extracellular loops of PMCA, with the surface of neuroplastin equivalent to that used by basigin to bind to PfRH5 being exposed, making it likely that PfRH5 can bind to PMCA-bound basigin (Figure 2a; Gong et al., 2018).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on structural analysis shown in Figure 2a.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:58.236262Z"
+    },
+    {
+      "id": "f80ad8e3-d3b8-48bc-9187-935843927785",
+      "content_id": "4eb13ebe-fc2f-4109-97f3-7ec3821df670",
+      "claim_id": "C52",
+      "claim": "Basigin and PMCA eluted as a single peak on a size exclusion column, with an elution profile matching a 200 kDa standard, suggesting complex formation.",
+      "claim_type": "EXPLICIT",
+      "source": "Basigin and PMCA eluted as a single peak on a size exclusion column, with an elution profile matching a 200 kDa standard, suggesting complex formation (Figure 2b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of experimental results shown in Figure 2b.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:58.236262Z"
+    },
+    {
+      "id": "94eca864-c3d2-4541-8059-d6786e486e67",
+      "content_id": "4eb13ebe-fc2f-4109-97f3-7ec3821df670",
+      "claim_id": "C53",
+      "claim": "The purified basigin-PMCA complex showed Ca2+-dependent ATP hydrolysis activity.",
+      "claim_type": "EXPLICIT",
+      "source": "The purified complex showed Ca2+-dependent ATP hydrolysis activity, confirming that active basigin-PMCA complexes had been isolated (Figure 2\u2014figure supplement 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of experimental results shown in Figure 2\u2014figure supplement 1b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:58.236262Z"
+    },
+    {
+      "id": "48ace9a9-6e65-4cae-8ee2-79c45c3ff58e",
+      "content_id": "4eb13ebe-fc2f-4109-97f3-7ec3821df670",
+      "claim_id": "C54",
+      "claim": "Full-length basigin bound to PfRH5 with a dissociation constant of 0.56 \u00b5M.",
+      "claim_type": "EXPLICIT",
+      "source": "Kinetic binding data for full-length basigin could be fitted to a 1:1 binding model with an affinity of 0.56 \u00b5M (\u03c72=2.44), in good agreement with the affinity of ~1 \u00b5M measured for basigin ectodomain in previous studies (Figure 2\u2014figure supplement 1e; Crosnier et al., 2011; Wright et al., 2014).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of experimental results shown in Figure 2c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:58.236262Z"
+    },
+    {
+      "id": "fbad86e1-1477-48bb-9bab-a08f5221ca64",
+      "content_id": "4eb13ebe-fc2f-4109-97f3-7ec3821df670",
+      "claim_id": "C55",
+      "claim": "The kinetic data for the basigin-PMCA complexes did not fit well to a 1:1 binding model but the fit improved significantly when using a two-state binding model.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the kinetic data for the basigin-PMCA complexes did not fit well to a 1:1 binding model (\u03c72=7.71) (Figure 2\u2014figure supplement 1f), but the fit improved significantly (\u03c72=1.85) when using a two-state binding model (Figure 2\u2014figure supplement 1f, Supplementary files 1 and 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of experimental results shown in Figure 2d and Figure 2\u2014figure supplement 1f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:58.236262Z"
+    },
+    {
+      "id": "8e86c614-7f7e-492f-b741-4e78975311cf",
+      "content_id": "4eb13ebe-fc2f-4109-97f3-7ec3821df670",
+      "claim_id": "C56",
+      "claim": "PfRH5 bound to basigin-PMCA ~9-fold more tightly than to full-length basigin, primarily due to a lower dissociation rate constant.",
+      "claim_type": "EXPLICIT",
+      "source": "PfRH5 therefore bound to basigin-PMCA ~9-fold more tightly than to full-length basigin, primarily due to a lower dissociation rate constant (Supplementary files 1 and 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on experimental data shown in Figures 2c and 2d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:58.236262Z"
+    },
+    {
+      "id": "3d1af748-53e7-4236-9868-7e6399158594",
+      "content_id": "4eb13ebe-fc2f-4109-97f3-7ec3821df670",
+      "claim_id": "C57",
+      "claim": "The expression of PMCA4b and basigin, together with BKCa, in Chinese hamster ovary cells caused reduced intracellular Ca2+ concentrations, as demonstrated by a right shift in the BKCa activation curve.",
+      "claim_type": "EXPLICIT",
+      "source": "The expression of PMCA4b and basigin, together with BKCa, in this system caused reduced intracellular Ca2+ concentrations, as demonstrated by a right shift in the BKCa activation curve.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of experimental results shown in Figure 2e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:58.236262Z"
+    },
+    {
+      "id": "82e58eec-0bf7-4d97-b284-1045e75ee556",
+      "content_id": "4eb13ebe-fc2f-4109-97f3-7ec3821df670",
+      "claim_id": "C58",
+      "claim": "Addition of PfRH5 at a concentration of 2 \u03bcM caused no change in the BKCa activation curve, indicating that PfRH5 binding did not modulate PMCA-basigin function and did not change the intracellular Ca2+ concentration.",
+      "claim_type": "EXPLICIT",
+      "source": "We next added PfRH5 at a concentration of 2 \u03bcM which caused no further change in the BKCa activation curve, indicating that PfRH5 binding did not modulate PMCA-basigin function and did not change the intracellular Ca2+ concentration (Figure 2e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of experimental results shown in Figure 2e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:58.236262Z"
+    },
+    {
+      "id": "7a3232a9-a417-40d0-b2ad-6fa0bfa4e16a",
+      "content_id": "4eb13ebe-fc2f-4109-97f3-7ec3821df670",
+      "claim_id": "C59",
+      "claim": "Addition of PfRCR at a concentration of 1 \u03bcM caused no effect on intracellular Ca2+ concentration.",
+      "claim_type": "EXPLICIT",
+      "source": "As PfRH5 is normally part of the three-component PfRCR complex, we also added PfRCR at a concentration of 1 \u03bcM to the same system. Here too, we observed no effect on intracellular Ca2+ concentration (Figure 2\u2014figure supplement 2b and c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of experimental results shown in Figure 2\u2014figure supplement 2b and c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:58.236262Z"
+    },
+    {
+      "id": "6d1bfcd8-afd0-4d3d-8d49-0877c0c39a7c",
+      "content_id": "4eb13ebe-fc2f-4109-97f3-7ec3821df670",
+      "claim_id": "C60",
+      "claim": "The extracellular peptide inhibitor caloxin 1c2 inhibited calcium-dependent ATP hydrolysis at high micromolar concentrations.",
+      "claim_type": "EXPLICIT",
+      "source": "While the extracellular peptide inhibitor caloxin 1c2 inhibited calcium-dependent ATP hydrolysis at high micromolar concentrations, the addition of PfRH5 did not alter the ATPase activity of PMCA (Figure 2f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of experimental results shown in Figure 2f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:58.236262Z"
+    },
+    {
+      "id": "711236a6-2dd2-4bab-a015-544d6d939c25",
+      "content_id": "4eb13ebe-fc2f-4109-97f3-7ec3821df670",
+      "claim_id": "C61",
+      "claim": "The addition of PfRH5 did not alter the ATPase activity of PMCA.",
+      "claim_type": "EXPLICIT",
+      "source": "While the extracellular peptide inhibitor caloxin 1c2 inhibited calcium-dependent ATP hydrolysis at high micromolar concentrations, the addition of PfRH5 did not alter the ATPase activity of PMCA (Figure 2f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of experimental results shown in Figure 2f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:58.236262Z"
+    },
+    {
+      "id": "e16eef05-a3c9-4378-8efe-868bc65dff2a",
+      "content_id": "4eb13ebe-fc2f-4109-97f3-7ec3821df670",
+      "claim_id": "C62",
+      "claim": "The PfRH5-binding site of basigin is exposed in the structure of the basigin-MCT1 complex.",
+      "claim_type": "EXPLICIT",
+      "source": "As a large fraction of erythrocyte basigin is associated with MCT1, we also tested whether the basigin-MCT1 complex can bind to PfRH5, as the PfRH5-binding site of basigin is exposed in the structure of the basigin-MCT1 complex (Wang et al., 2021; Figure 3a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statement based on structural analysis shown in Figure 3a and supported by citation to Wang et al., 2021.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:58.236262Z"
+    },
+    {
+      "id": "635e2f7c-a719-4067-9eb9-af368eb1dbba",
+      "content_id": "4eb13ebe-fc2f-4109-97f3-7ec3821df670",
+      "claim_id": "C63",
+      "claim": "Flowing solubilised ghost membrane extract over a chip surface coated with PfRH5 produced a binding response that reduced ~22% after depletion of PMCA-containing complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "Flowing solubilised ghost membrane extract over a chip surface coated with PfRH5 produced a binding response (Figure 3b). This reduced ~22% after depletion of PMCA-containing complexes, and the binding response was nearly absent for samples depleted for both PMCAs and MCT1 (Figure 3b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of experimental results shown in Figure 3b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:58.236262Z"
+    },
+    {
+      "id": "7bc7852f-54f2-4c6d-86ca-0a34ba58c9d3",
+      "content_id": "4eb13ebe-fc2f-4109-97f3-7ec3821df670",
+      "claim_id": "C64",
+      "claim": "The binding response was nearly absent for samples depleted for both PMCAs and MCT1.",
+      "claim_type": "EXPLICIT",
+      "source": "Flowing solubilised ghost membrane extract over a chip surface coated with PfRH5 produced a binding response (Figure 3b). This reduced ~22% after depletion of PMCA-containing complexes, and the binding response was nearly absent for samples depleted for both PMCAs and MCT1 (Figure 3b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of experimental results shown in Figure 3b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:58.236262Z"
+    },
+    {
+      "id": "02d32920-8846-45ac-a550-1c15eb47371f",
+      "content_id": "4eb13ebe-fc2f-4109-97f3-7ec3821df670",
+      "claim_id": "C65",
+      "claim": "Basigin in complex with either MCT1 or PMCAs can bind to PfRH5.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that basigin in complex with either MCT1 or PMCAs can bind to PfRH5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on experimental data shown in Figure 3b.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:58.236262Z"
+    },
+    {
+      "id": "caa552de-d523-4260-a2d0-1cbe3aed066e",
+      "content_id": "4eb13ebe-fc2f-4109-97f3-7ec3821df670",
+      "claim_id": "C66",
+      "claim": "The kinetic data for basigin-MCT1 binding to PfRH5 could be best described by a two-state binding model with a KD value of 93 nM.",
+      "claim_type": "EXPLICIT",
+      "source": "Again, the kinetic data could be best described by a two-state binding model (\u03c72=3.09) with a KD value of 93 nM (Figure 3c, Figure 3\u2014figure supplement 1a, Supplementary files 1 and 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of experimental results shown in Figure 3c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:58.236262Z"
+    },
+    {
+      "id": "4b6bc57d-f555-4722-ace3-1a8465073ae4",
+      "content_id": "4eb13ebe-fc2f-4109-97f3-7ec3821df670",
+      "claim_id": "C67",
+      "claim": "Longer periods of incubation of PfRH5 with the basigin-MCT1 complex lead to slower off-rates.",
+      "claim_type": "EXPLICIT",
+      "source": "When we injected basigin-MCT1 over a chip decorated with biotinylated PfRH5, we indeed observed slower off-rates to be associated with longer incubation times, confirming a two-state interaction (Figure 3\u2014figure supplement 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of experimental results shown in Figure 3\u2014figure supplement 1b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:58.236262Z"
+    },
+    {
+      "id": "b34cd8e7-d22a-43a2-845f-5038124ca785",
+      "content_id": "4eb13ebe-fc2f-4109-97f3-7ec3821df670",
+      "claim_id": "C68",
+      "claim": "Mixing basigin-MCT1 with PfRH5 for analysis by size exclusion chromatography showed formation of a stable complex.",
+      "claim_type": "EXPLICIT",
+      "source": "We also mixed basigin-MCT1 with PfRH5 for analysis by size exclusion chromatography, and again observed formation of a stable complex (Figure 3d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of experimental results shown in Figure 3d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:58.236262Z"
+    },
+    {
+      "id": "9ebb0eb5-fe5f-4930-8dd0-87af06d960a9",
+      "content_id": "4eb13ebe-fc2f-4109-97f3-7ec3821df670",
+      "claim_id": "C69",
+      "claim": "PfRH5 binds to both basigin-PMCA and basigin-MCT1 with similar affinities, both more tightly than the interaction with the isolated basigin ectodomain.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, PfRH5 binds to both basigin-PMCA and basigin-MCT1 with similar affinities, both more tightly than the interaction with the isolated basigin ectodomain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on experimental data shown in Figures 2 and 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:58.236262Z"
+    },
+    {
+      "id": "312e51cb-7f18-4af1-9dd9-dd13e66ee780",
+      "content_id": "4eb13ebe-fc2f-4109-97f3-7ec3821df670",
+      "claim_id": "C70",
+      "claim": "The basigin-targeting antibody, TRA-1\u201385, showed complete inhibition of P. falciparum growth at a 1 \u03bcg/ml concentration.",
+      "claim_type": "EXPLICIT",
+      "source": "As previously shown, the basigin-targeting antibody, TRA-1\u201385, showed complete inhibition of growth at a 1 \u03bcg/ml concentration (Crosnier et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of experimental results shown in Figure 3e and supported by citation to Crosnier et al., 2011.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:58.236262Z"
+    },
+    {
+      "id": "f83555cd-90dd-4297-bfeb-8e6b8b3e3897",
+      "content_id": "4eb13ebe-fc2f-4109-97f3-7ec3821df670",
+      "claim_id": "C71",
+      "claim": "Neither the PMCA or MCT1 antibodies caused growth inhibition at 75 \u03bcg/ml concentration.",
+      "claim_type": "EXPLICIT",
+      "source": "However, neither the PMCA or MCT1 antibodies caused growth inhibition at 75 \u03bcg/ml concentration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of experimental results shown in Figure 3e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:58.236262Z"
+    },
+    {
+      "id": "b2df4690-f45e-4bec-9274-a0090d178129",
+      "content_id": "4eb13ebe-fc2f-4109-97f3-7ec3821df670",
+      "claim_id": "C72",
+      "claim": "Only R5.004 prevented the binding of basigin ectodomain to PfRH5 immobilised on an SPR chip.",
+      "claim_type": "EXPLICIT",
+      "source": "In accordance with previously published findings, only R5.004 prevented the binding of basigin ectodomain to PfRH5 immobilised on an SPR chip (Figure 4\u2014figure supplement 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of experimental results shown in Figure 4\u2014figure supplement 1a.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:58.236262Z"
+    },
+    {
+      "id": "f08a78e8-f129-42ea-ab4d-19b5bdfc836a",
+      "content_id": "4eb13ebe-fc2f-4109-97f3-7ec3821df670",
+      "claim_id": "C73",
+      "claim": "A similar outcome was seen for full-length basigin, showing that the presence of the detergent micelle is not sufficient to allow R5.016 to cause steric occlusion of binding.",
+      "claim_type": "EXPLICIT",
+      "source": "A similar outcome was seen for full-length basigin, showing that the presence of the detergent micelle is not sufficient to allow R5.016 to cause steric occlusion of binding (Figure 4a, Figure 4\u2014figure supplement 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of experimental results shown in Figure 4a.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:58.236262Z"
+    },
+    {
+      "id": "6c6a9853-f6dc-4349-bc4a-eb40fda229c5",
+      "content_id": "4eb13ebe-fc2f-4109-97f3-7ec3821df670",
+      "claim_id": "C74",
+      "claim": "Both R5.016 and 9AD4 reduced binding of basigin-PMCA to immobilised PfRH5 by >90%.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, both R5.016 and 9AD4 reduced binding of basigin-PMCA to immobilised PfRH5 by >90% (Figure 4b, Figure 4\u2014figure supplement 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of experimental results shown in Figure 4b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:58.236262Z"
+    },
+    {
+      "id": "c2db2577-eadf-4c16-b94e-56b87617ac00",
+      "content_id": "4eb13ebe-fc2f-4109-97f3-7ec3821df670",
+      "claim_id": "C75",
+      "claim": "R5.016 inhibited binding of basigin-PMCA to PfRH5 in a concentration-dependent manner, with concentrations of 100 nM or above producing nearly 90% inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed R5.016 inhibited binding of basigin-PMCA to PfRH5 in a concentration-dependent manner, with concentrations of 100 nM or above producing nearly 90% inhibition (Figure 4\u2014figure supplement 1c and d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of experimental results shown in Figure 4\u2014figure supplement 1c and d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:58.236262Z"
+    },
+    {
+      "id": "809167ae-d609-4b0f-a64c-8114fe151142",
+      "content_id": "4eb13ebe-fc2f-4109-97f3-7ec3821df670",
+      "claim_id": "C76",
+      "claim": "Both R5.016 and 9AD4 reduced the binding of the basigin-MCT1 complex to immobilised PfRH5, with 100 nM of either antibody reducing binding by more than 50%.",
+      "claim_type": "EXPLICIT",
+      "source": "Both R5.016 and 9AD4 also reduced the binding of the basigin-MCT1 complex to immobilised PfRH5, with 100 nM of either antibody reducing binding by more than 50% (Figure 4c, Figure 4\u2014figure supplement 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of experimental results shown in Figure 4c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:58.236262Z"
+    },
+    {
+      "id": "a22cda63-259b-4c2a-8963-f81dee3f1bff",
+      "content_id": "4eb13ebe-fc2f-4109-97f3-7ec3821df670",
+      "claim_id": "C77",
+      "claim": "Neither of the non-inhibitory antibodies tested reduced the binding of basigin-PMCA or basigin-MCT1 to PfRH5.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, neither of the non-inhibitory antibodies tested reduced the binding of basigin-PMCA or basigin-MCT1 to PfRH5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of experimental results shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:58.236262Z"
+    },
+    {
+      "id": "4763b363-b84e-436b-a134-c281223b9d03",
+      "content_id": "4eb13ebe-fc2f-4109-97f3-7ec3821df670",
+      "claim_id": "C78",
+      "claim": "Binding of R5.016 and 9AD4 to PfRH5 would physically occlude its binding to basigin in the basigin-PMCA or basigin-MCT1 complexes, either through direct clashes with MCT1 or PMCA, or through a clash with the plasma membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "In both cases, binding of R5.016 and 9AD4 to PfRH5 would physically occlude its binding to basigin in the basigin-PMCA or basigin-MCT1 complexes, either through direct clashes with MCT1 or PMCA, or through a clash with the plasma membrane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on structural modeling shown in Figure 4d and 4e.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:58.236262Z"
+    },
+    {
+      "id": "dfeb82d3-3d0f-46ed-9c43-f9ff48864cce",
+      "content_id": "4eb13ebe-fc2f-4109-97f3-7ec3821df670",
+      "claim_id": "C79",
+      "claim": "Neutralising antibodies prevent PfRH5 from binding to basigin in the context of macromolecular basigin-containing complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "These data therefore support a model in which neutralising antibodies prevent PfRH5 from binding to basigin in the context of macromolecular basigin-containing complexes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on experimental data shown in Figure 4.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:58.236262Z"
+    },
+    {
+      "id": "52488146-3ce0-478a-89da-755ec38410d9",
+      "content_id": "4eb13ebe-fc2f-4109-97f3-7ec3821df670",
+      "claim_id": "C80",
+      "claim": "No strain of P. falciparum has been identified which can take a basigin-independent invasion route.",
+      "claim_type": "EXPLICIT",
+      "source": "To date, no strain of P. falciparum has been identified which can take a basigin-independent invasion route.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement in the discussion supported by prior knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:58.236262Z"
+    },
+    {
+      "id": "945bb171-fb07-4f47-989c-203fb0745dd1",
+      "content_id": "4eb13ebe-fc2f-4109-97f3-7ec3821df670",
+      "claim_id": "C81",
+      "claim": "Vaccination or passive transfer of neutralising antibodies leads to protection of Aotus monkeys from parasite challenge.",
+      "claim_type": "EXPLICIT",
+      "source": "Blocking this interaction also has proven therapeutic potential to prevent malaria, with antibodies against both PfRH5 and basigin identified which inhibit invasion (Alanine et al., 2019; Douglas et al., 2014; Wright et al., 2014; Zenonos et al., 2015), with vaccination (Douglas et al., 2015) or passive transfer of neutralising antibodies (Douglas et al., 2019) leading to protection of Aotus monkeys from parasite challenge and with human vaccination slowing the onset of parasitaemia (Minassian et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement supported by citations to Douglas et al., 2015 and Douglas et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:58.236262Z"
+    },
+    {
+      "id": "1c52c38c-8c88-45b7-9b39-99949c8f11de",
+      "content_id": "4eb13ebe-fc2f-4109-97f3-7ec3821df670",
+      "claim_id": "C82",
+      "claim": "Human vaccination with PfRH5 slows the onset of parasitaemia.",
+      "claim_type": "EXPLICIT",
+      "source": "Blocking this interaction also has proven therapeutic potential to prevent malaria, with antibodies against both PfRH5 and basigin identified which inhibit invasion (Alanine et al., 2019; Douglas et al., 2014; Wright et al., 2014; Zenonos et al., 2015), with vaccination (Douglas et al., 2015) or passive transfer of neutralising antibodies (Douglas et al., 2019) leading to protection of Aotus monkeys from parasite challenge and with human vaccination slowing the onset of parasitaemia (Minassian et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement supported by a citation to Minassian et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:58.236262Z"
+    },
+    {
+      "id": "b4e7dcbd-e69a-4fae-8b68-de3db52c8a7b",
+      "content_id": "4eb13ebe-fc2f-4109-97f3-7ec3821df670",
+      "claim_id": "C83",
+      "claim": "Nearly all basigin in human erythrocyte membranes is found in complex with either PMCAs or MCTs.",
+      "claim_type": "EXPLICIT",
+      "source": "To answer these questions, we started by investigating the immediate molecular context of basigin in human erythrocytes. Various studies in different cell types have shown that basigin forms heteromeric complexes with either PMCAs or MCTs (Muramatsu, 2016). We therefore used a combination of depletion, purification, 2D blue native PAGE, and mobility shift experiments to show that nearly all basigin in human erythrocyte membranes is found in complex with either PMCAs or MCTs (Figure 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the discussion and supported by experimental data in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:58.236262Z"
+    },
+    {
+      "id": "73136800-f26e-4672-b35e-43d706a998ef",
+      "content_id": "4eb13ebe-fc2f-4109-97f3-7ec3821df670",
+      "claim_id": "C84",
+      "claim": "While ~20% of basigin was not depleted with either PMCAs or MCT1, all basigin migrated at a high molecular weight on a size exclusion column.",
+      "claim_type": "EXPLICIT",
+      "source": "While ~20% of basigin was not depleted with either PMCAs or MCT1 (Figure 1c), all basigin migrated at a high molecular weight on a size exclusion column and we did not observe free basigin in 2D blue native PAGE experiments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of experimental results shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:58.236262Z"
+    },
+    {
+      "id": "9deac786-1523-4014-a035-256972176f4e",
+      "content_id": "4eb13ebe-fc2f-4109-97f3-7ec3821df670",
+      "claim_id": "C85",
+      "claim": "The detection of free basigin in depletion experiments may be due to disruption of protein complexes during depletion experiments, or due to basigin in complex with subtypes or splice isoforms of PMCA or other subtypes of MCTs that are not efficiently depleted.",
+      "claim_type": "EXPLICIT",
+      "source": "The detection of free basigin in depletion experiments may then be due to disruption of protein complexes during depletion experiments, or due to basigin in complex with subtypes or splice isoforms of PMCA or other subtypes of MCTs that are not efficiently depleted.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about the interpretation of experimental results.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:58.236262Z"
+    },
+    {
+      "id": "fe64b1d5-3841-4373-bdbf-8b74e0b886e1",
+      "content_id": "4eb13ebe-fc2f-4109-97f3-7ec3821df670",
+      "claim_id": "C86",
+      "claim": "MCT1- and PMCA-bound basigin bind more tightly to PfRH5 than isolated full-length basigin.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, both MCT1- and PMCA-bound basigin bind more tightly to PfRH5 than to isolated full-length basigin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the discussion and supported by experimental data in Figures 2 and 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:58.236262Z"
+    },
+    {
+      "id": "043d063a-f67a-4111-ba36-461899c9a774",
+      "content_id": "4eb13ebe-fc2f-4109-97f3-7ec3821df670",
+      "claim_id": "C87",
+      "claim": "The binding of PfRH5 to basigin fits a simple 1:1 binding mode.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, fitting of kinetic binding data from SPR showed that, while the binding of PfRH5 to basigin fits a simple 1:1 binding mode, its binding to basigin-PMCA and basigin-MCT1 shows biphasic kinetics, which fit most closely to a two-state binding model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of experimental results shown in Figures 2 and 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:58.236262Z"
+    },
+    {
+      "id": "a4eb8e2a-3739-4846-bc64-e2243f0ec151",
+      "content_id": "4eb13ebe-fc2f-4109-97f3-7ec3821df670",
+      "claim_id": "C88",
+      "claim": "The binding of PfRH5 to basigin-PMCA and basigin-MCT1 shows biphasic kinetics, which fit most closely to a two-state binding model.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, fitting of kinetic binding data from SPR showed that, while the binding of PfRH5 to basigin fits a simple 1:1 binding mode, its binding to basigin-PMCA and basigin-MCT1 shows biphasic kinetics, which fit most closely to a two-state binding model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of experimental results shown in Figures 2 and 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:58.236262Z"
+    },
+    {
+      "id": "bb258bbe-27fc-42f4-8f04-972690bd5032",
+      "content_id": "4eb13ebe-fc2f-4109-97f3-7ec3821df670",
+      "claim_id": "C89",
+      "claim": "PfRH5 binds to basigin-MCT1 such that increasing association times correlate with decreasing dissociation rates.",
+      "claim_type": "EXPLICIT",
+      "source": "This is further supported by data which shows that PfRH5 binds to basigin-MCT1 such that increasing association times correlate with decreasing dissociation rates, suggesting an initial lower affinity interaction, which 'matures' into a higher affinity interaction over time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of experimental results shown in Figure 3\u2014figure supplement 1b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:58.236262Z"
+    },
+    {
+      "id": "864740ca-0859-40e1-acf4-f76ff84b33c9",
+      "content_id": "4eb13ebe-fc2f-4109-97f3-7ec3821df670",
+      "claim_id": "C90",
+      "claim": "The two-state binding model is compatible with an initial lower affinity interaction between PfRH5 and basigin, followed by a subsequent interaction which stabilises the complex, possibly between PfRH5 and another part of the basigin-PMCA or basigin-MCT1 complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "While kinetic fitting data cannot be used to strictly derive a molecular mechanism, this is compatible with an initial lower affinity interaction between PfRH5 and basigin, followed by a subsequent interaction which stabilises the complex, possibly between PfRH5 and another part of the basigin-PMCA or basigin-MCT1 complexes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about the molecular mechanism based on experimental data.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:58.236262Z"
+    },
+    {
+      "id": "d2af4276-b616-430d-8a10-6aa2c6e8a070",
+      "content_id": "4eb13ebe-fc2f-4109-97f3-7ec3821df670",
+      "claim_id": "C91",
+      "claim": "PfRH5 is known to be essential for a spike of increased calcium concentration at the merozoite-erythrocyte junction.",
+      "claim_type": "EXPLICIT",
+      "source": "However, PfRH5 is known to be essential for a spike of increased calcium concentration at the merozoite-erythrocyte junction (Volz et al., 2016; Weiss et al., 2015) and the presence of basigin has been shown to alter PMCA function (Schmidt et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement supported by citations to Volz et al., 2016 and Weiss et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:58.236262Z"
+    },
+    {
+      "id": "6622fc93-8bd2-4b7a-aed2-660281900cfe",
+      "content_id": "4eb13ebe-fc2f-4109-97f3-7ec3821df670",
+      "claim_id": "C92",
+      "claim": "The presence of basigin has been shown to alter PMCA function.",
+      "claim_type": "EXPLICIT",
+      "source": "However, PfRH5 is known to be essential for a spike of increased calcium concentration at the merozoite-erythrocyte junction (Volz et al., 2016; Weiss et al., 2015) and the presence of basigin has been shown to alter PMCA function (Schmidt et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement supported by a citation to Schmidt et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:58.236262Z"
+    },
+    {
+      "id": "fc574d1d-d6f2-4037-8f45-2af733041cbc",
+      "content_id": "4eb13ebe-fc2f-4109-97f3-7ec3821df670",
+      "claim_id": "C93",
+      "claim": "No change in basigin-PMCA function was observed in the presence of PfRH5 or of the PfRCR complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data do not support this hypothesis, with no change in basigin-PMCA function observed, either in the presence of PfRH5 or of the PfRCR complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the discussion and supported by experimental data in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:58.236262Z"
+    },
+    {
+      "id": "c7843db6-4ca1-4e9a-b1b6-62a6c318ffdf",
+      "content_id": "4eb13ebe-fc2f-4109-97f3-7ec3821df670",
+      "claim_id": "C94",
+      "claim": "Immunity to blood-stage malaria is antibody-mediated.",
+      "claim_type": "EXPLICIT",
+      "source": "Immunity to blood-stage malaria is antibody-mediated and, while antibodies which target other aspects of the malaria life cycle use Fc-dependent mechanisms of immunity (Kurtovic et al., 2020; Teo et al., 2016), those which prevent invasion appear to function directly by blocking essential interactions (Alanine et al., 2019; Douglas et al., 2019; Wright et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:58.236262Z"
+    },
+    {
+      "id": "bad1436f-b330-479f-ae63-bfceacb36700",
+      "content_id": "4eb13ebe-fc2f-4109-97f3-7ec3821df670",
+      "claim_id": "C95",
+      "claim": "Antibodies which prevent invasion appear to function directly by blocking essential interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Immunity to blood-stage malaria is antibody-mediated and, while antibodies which target other aspects of the malaria life cycle use Fc-dependent mechanisms of immunity (Kurtovic et al., 2020; Teo et al., 2016), those which prevent invasion appear to function directly by blocking essential interactions (Alanine et al., 2019; Douglas et al., 2019; Wright et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement supported by citations to Alanine et al., 2019; Douglas et al., 2019; Wright et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:58.236262Z"
+    },
+    {
+      "id": "9cec207d-afb4-4063-960b-ec8f11dbb102",
+      "content_id": "4eb13ebe-fc2f-4109-97f3-7ec3821df670",
+      "claim_id": "C96",
+      "claim": "The outcome of in vitro growth inhibition assays correlates well with protection due to PfRH5-targeting antibodies.",
+      "claim_type": "EXPLICIT",
+      "source": "As a result, the outcome of in vitro growth inhibition assays correlates well with protection due to PfRH5-targeting antibodies (Douglas et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement supported by a citation to Douglas et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:58.236262Z"
+    },
+    {
+      "id": "bae28dff-4a73-48d2-9dfa-cd2dd901ae5d",
+      "content_id": "4eb13ebe-fc2f-4109-97f3-7ec3821df670",
+      "claim_id": "C97",
+      "claim": "The most effective PfRH5-targeting neutralising antibodies from both humans (R5.016) and mice (9AD4) do not interfere with the PfRH5-basigin interaction.",
+      "claim_type": "EXPLICIT",
+      "source": "It was therefore a mystery why the most effective PfRH5-targeting neutralising antibodies from both humans (R5.016) (Alanine et al., 2019) and mice (9AD4) (Douglas et al., 2014; Wright et al., 2014) do not interfere with the PfRH5-basigin interaction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:58.236262Z"
+    },
+    {
+      "id": "f95226f4-9e53-48c3-b302-74aa48add8d4",
+      "content_id": "4eb13ebe-fc2f-4109-97f3-7ec3821df670",
+      "claim_id": "C98",
+      "claim": "Both R5.016 and 9AD4 inhibit the binding of PfRH5 to basigin-PMCA and basigin-MCT1 complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "Studying basigin in the context of its membrane protein binding partners provides an answer, with both R5.016 and 9AD4 inhibiting the binding of PfRH5 to basigin-PMCA and basigin-MCT1 complexes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the discussion and supported by experimental data in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:58.236262Z"
+    },
+    {
+      "id": "be74cbc8-eabb-4052-871d-2981fc7b9a2a",
+      "content_id": "4eb13ebe-fc2f-4109-97f3-7ec3821df670",
+      "claim_id": "C99",
+      "claim": "The inhibition by R5.016 and 9AD4 would be expected to be even stronger in the membrane context than in a detergent micelle.",
+      "claim_type": "EXPLICIT",
+      "source": "While this inhibition is strong in the context of a detergent micelle, we would expect it to be even stronger in the membrane context, with both R5.016 and 9AD4 modelled to angle directly towards the membrane plane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation based on structural modeling shown in Figure 4.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:58.236262Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "94bac3e6-53a5-4844-a933-476c0af1ba14",
+      "content_id": "4eb13ebe-fc2f-4109-97f3-7ec3821df670",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Nearly all basigin in human erythrocyte membranes exists in macromolecular complexes with either PMCA (predominantly PMCA4, ~28%) or MCT1 (~72%), with no detectable free basigin. This was demonstrated through size exclusion chromatography, 2D blue native PAGE with antibody shifts, sequential depletion experiments, and mass spectrometry.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Multiple orthogonal experimental approaches (SEC, 2D PAGE, immunodepletion, mass spectrometry) converge on the same conclusion. The data show consistent stoichiometry across methods, with no free basigin detected even with prolonged exposure. The quantification is supported by densitometry from multiple replicates (n=3).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:29:58.236262Z"
+    },
+    {
+      "id": "b6c86d2a-bba7-4fd5-95d5-0adfd26edc65",
+      "content_id": "4eb13ebe-fc2f-4109-97f3-7ec3821df670",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "PfRH5 binds to the basigin-PMCA complex with ~9-fold higher affinity (KD ~60 nM) than to monomeric full-length basigin (KD ~560 nM). The binding follows two-state kinetics rather than simple 1:1 binding, suggesting an initial capture event followed by complex stabilization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "SPR data with appropriate controls (R5.004 blocking) demonstrate the enhanced affinity. The two-state binding model fits significantly better (\u03c7\u00b2=1.85) than 1:1 model (\u03c7\u00b2=7.71). The purified complex shows Ca\u00b2\u207a-dependent ATPase activity confirming it is functional. Structural modeling supports that the basigin binding site remains accessible in the complex.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:29:58.236262Z"
+    },
+    {
+      "id": "8f501a24-cd26-49cb-8c43-e1bca479d846",
+      "content_id": "4eb13ebe-fc2f-4109-97f3-7ec3821df670",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "PfRH5 binding does not modulate PMCA-mediated calcium transport function. Neither PfRH5 (2 \u03bcM) nor the PfRCR complex (1 \u03bcM) altered BKCa channel activation curves or Ca\u00b2\u207a-ATPase activity of the basigin-PMCA complex.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Two independent functional assays (electrophysiology measuring intracellular Ca\u00b2\u207a via BKCa channels, n=9; and direct ATPase activity measurement, n=3) both show no effect of PfRH5. Positive control (caloxin 1c2) demonstrates the assay can detect PMCA inhibition. This argues against PfRH5 causing calcium spikes through direct PMCA inhibition.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:29:58.236262Z"
+    },
+    {
+      "id": "15b65cf9-c3bb-4335-ade7-977cb6a343c0",
+      "content_id": "4eb13ebe-fc2f-4109-97f3-7ec3821df670",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "PfRH5 binds to the basigin-MCT1 complex with high affinity (KD ~93 nM), similar to basigin-PMCA and higher than monomeric basigin. The interaction also follows two-state binding kinetics with association time-dependent dissociation rates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "SPR data show binding to MCT1-depleted samples reduces response by ~22%, and dual depletion eliminates binding. Purified basigin-MCT1 shows two-state kinetics (\u03c7\u00b2=3.09) with KD of 93 nM. Time-dependent dissociation rates confirm two-state binding. SEC shows stable complex formation. Data are consistent across multiple technical approaches.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:29:58.236262Z"
+    },
+    {
+      "id": "15421a0f-77c1-4439-a3eb-8c9def673de9",
+      "content_id": "4eb13ebe-fc2f-4109-97f3-7ec3821df670",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Commercially available polyclonal antibodies targeting the extracellular domains of PMCA and MCT1 did not inhibit P. falciparum growth at 75 \u03bcg/ml, while the basigin-targeting antibody TRA-1-85 showed complete inhibition at 1 \u03bcg/ml.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Only a single high concentration was tested for PMCA/MCT1 antibodies without dose-response curves. The epitopes of these commercial polyclonal antibodies are unknown, and no structural or binding data are provided to explain why they failed to inhibit. The authors acknowledge this limitation, noting that growth-inhibitory antibodies targeting these proteins might be possible but were not identified here.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:29:58.236262Z"
+    },
+    {
+      "id": "956ef1db-7440-4f3e-abd1-f348c5fb9773",
+      "content_id": "4eb13ebe-fc2f-4109-97f3-7ec3821df670",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The potent growth-inhibitory antibodies R5.016 and 9AD4 do not block PfRH5 binding to monomeric basigin but reduce binding to basigin-PMCA complexes by >90% and to basigin-MCT1 complexes by >50%. Structural modeling indicates these antibodies sterically occlude PfRH5 binding through clashes with the membrane or transporter proteins.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "SPR data clearly show differential blocking: no inhibition with monomeric basigin but strong inhibition with complexes (n=3 biological replicates for PMCA, technical replicates for MCT1). R5.016 shows concentration-dependent inhibition with IC50 ~100 nM. Non-inhibitory antibodies (R5.011, R5.015) show no blocking. Structural models provide mechanistic rationale for steric occlusion that would be enhanced in the membrane context.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:29:58.236262Z"
+    },
+    {
+      "id": "d726010e-c9e7-4e5e-a0a4-8df0f2513489",
+      "content_id": "4eb13ebe-fc2f-4109-97f3-7ec3821df670",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The authors speculate that the two-state binding kinetics may reflect an initial basigin interaction followed by secondary contacts with PMCA or MCT1, and that antibody inhibition would be stronger in native membranes than in detergent micelles.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "These are explicitly speculative interpretations acknowledged by the authors ('may be due to', 'compatible with', 'we would expect'). While plausible and consistent with the data, they are not directly tested. The molecular basis of two-state binding and the exact antibody mechanism in vivo remain to be determined.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:29:58.236262Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "89c07720-f116-4300-ab7d-05cdae287437",
+      "result_id": "94bac3e6-53a5-4844-a933-476c0af1ba14"
+    },
+    {
+      "claim_id": "e355561f-025d-449e-abca-109a1d8a099d",
+      "result_id": "94bac3e6-53a5-4844-a933-476c0af1ba14"
+    },
+    {
+      "claim_id": "f917d05a-8e68-4fa4-8399-eb2b688df63d",
+      "result_id": "94bac3e6-53a5-4844-a933-476c0af1ba14"
+    },
+    {
+      "claim_id": "da6b8a27-e342-49ea-b21d-ad076e88f24a",
+      "result_id": "94bac3e6-53a5-4844-a933-476c0af1ba14"
+    },
+    {
+      "claim_id": "13b6eac1-029f-4c37-b3f5-8b29a04fcf6d",
+      "result_id": "94bac3e6-53a5-4844-a933-476c0af1ba14"
+    },
+    {
+      "claim_id": "784515d8-10f3-4eca-9f36-81bfb3972e34",
+      "result_id": "94bac3e6-53a5-4844-a933-476c0af1ba14"
+    },
+    {
+      "claim_id": "0004b6d0-0613-4194-84ee-2a92e8bd8136",
+      "result_id": "94bac3e6-53a5-4844-a933-476c0af1ba14"
+    },
+    {
+      "claim_id": "b164de36-ef4c-4514-8df8-8ff4f71a7c3e",
+      "result_id": "94bac3e6-53a5-4844-a933-476c0af1ba14"
+    },
+    {
+      "claim_id": "b12c59dc-7888-4f9d-9520-32f424db0ed4",
+      "result_id": "94bac3e6-53a5-4844-a933-476c0af1ba14"
+    },
+    {
+      "claim_id": "674ec2f2-68e6-465f-b25b-2f9925a37045",
+      "result_id": "94bac3e6-53a5-4844-a933-476c0af1ba14"
+    },
+    {
+      "claim_id": "a9182a71-6c61-49fb-84f4-b8fc938f46d1",
+      "result_id": "94bac3e6-53a5-4844-a933-476c0af1ba14"
+    },
+    {
+      "claim_id": "40db3430-a425-42e0-a627-e4cec91a3921",
+      "result_id": "94bac3e6-53a5-4844-a933-476c0af1ba14"
+    },
+    {
+      "claim_id": "e0a5daa4-3d83-417a-8125-e43d3519ec3b",
+      "result_id": "94bac3e6-53a5-4844-a933-476c0af1ba14"
+    },
+    {
+      "claim_id": "7c9fce2a-c8ed-4b0a-aee9-f37544eb3b6b",
+      "result_id": "94bac3e6-53a5-4844-a933-476c0af1ba14"
+    },
+    {
+      "claim_id": "13c18a41-8231-4cd7-8daa-06c44661e4c0",
+      "result_id": "94bac3e6-53a5-4844-a933-476c0af1ba14"
+    },
+    {
+      "claim_id": "b4e7dcbd-e69a-4fae-8b68-de3db52c8a7b",
+      "result_id": "94bac3e6-53a5-4844-a933-476c0af1ba14"
+    },
+    {
+      "claim_id": "73136800-f26e-4672-b35e-43d706a998ef",
+      "result_id": "94bac3e6-53a5-4844-a933-476c0af1ba14"
+    },
+    {
+      "claim_id": "6550174d-264c-4e9c-9930-febd9ec175ee",
+      "result_id": "b6c86d2a-bba7-4fd5-95d5-0adfd26edc65"
+    },
+    {
+      "claim_id": "1146fdcf-5c89-4ec4-bf7c-f1eef23cbbcd",
+      "result_id": "b6c86d2a-bba7-4fd5-95d5-0adfd26edc65"
+    },
+    {
+      "claim_id": "a0df0f0c-42e2-40be-b7cf-f7ce25db0a76",
+      "result_id": "b6c86d2a-bba7-4fd5-95d5-0adfd26edc65"
+    },
+    {
+      "claim_id": "f80ad8e3-d3b8-48bc-9187-935843927785",
+      "result_id": "b6c86d2a-bba7-4fd5-95d5-0adfd26edc65"
+    },
+    {
+      "claim_id": "94eca864-c3d2-4541-8059-d6786e486e67",
+      "result_id": "b6c86d2a-bba7-4fd5-95d5-0adfd26edc65"
+    },
+    {
+      "claim_id": "48ace9a9-6e65-4cae-8ee2-79c45c3ff58e",
+      "result_id": "b6c86d2a-bba7-4fd5-95d5-0adfd26edc65"
+    },
+    {
+      "claim_id": "fbad86e1-1477-48bb-9bab-a08f5221ca64",
+      "result_id": "b6c86d2a-bba7-4fd5-95d5-0adfd26edc65"
+    },
+    {
+      "claim_id": "8e86c614-7f7e-492f-b741-4e78975311cf",
+      "result_id": "b6c86d2a-bba7-4fd5-95d5-0adfd26edc65"
+    },
+    {
+      "claim_id": "fe64b1d5-3841-4373-bdbf-8b74e0b886e1",
+      "result_id": "b6c86d2a-bba7-4fd5-95d5-0adfd26edc65"
+    },
+    {
+      "claim_id": "043d063a-f67a-4111-ba36-461899c9a774",
+      "result_id": "b6c86d2a-bba7-4fd5-95d5-0adfd26edc65"
+    },
+    {
+      "claim_id": "a4eb8e2a-3739-4846-bc64-e2243f0ec151",
+      "result_id": "b6c86d2a-bba7-4fd5-95d5-0adfd26edc65"
+    },
+    {
+      "claim_id": "a2094174-974a-4d2d-b084-887243124bd8",
+      "result_id": "8f501a24-cd26-49cb-8c43-e1bca479d846"
+    },
+    {
+      "claim_id": "3d1af748-53e7-4236-9868-7e6399158594",
+      "result_id": "8f501a24-cd26-49cb-8c43-e1bca479d846"
+    },
+    {
+      "claim_id": "82e58eec-0bf7-4d97-b284-1045e75ee556",
+      "result_id": "8f501a24-cd26-49cb-8c43-e1bca479d846"
+    },
+    {
+      "claim_id": "7a3232a9-a417-40d0-b2ad-6fa0bfa4e16a",
+      "result_id": "8f501a24-cd26-49cb-8c43-e1bca479d846"
+    },
+    {
+      "claim_id": "6d1bfcd8-afd0-4d3d-8d49-0877c0c39a7c",
+      "result_id": "8f501a24-cd26-49cb-8c43-e1bca479d846"
+    },
+    {
+      "claim_id": "711236a6-2dd2-4bab-a015-544d6d939c25",
+      "result_id": "8f501a24-cd26-49cb-8c43-e1bca479d846"
+    },
+    {
+      "claim_id": "fc574d1d-d6f2-4037-8f45-2af733041cbc",
+      "result_id": "8f501a24-cd26-49cb-8c43-e1bca479d846"
+    },
+    {
+      "claim_id": "e16eef05-a3c9-4378-8efe-868bc65dff2a",
+      "result_id": "15b65cf9-c3bb-4335-ade7-977cb6a343c0"
+    },
+    {
+      "claim_id": "635e2f7c-a719-4067-9eb9-af368eb1dbba",
+      "result_id": "15b65cf9-c3bb-4335-ade7-977cb6a343c0"
+    },
+    {
+      "claim_id": "7bc7852f-54f2-4c6d-86ca-0a34ba58c9d3",
+      "result_id": "15b65cf9-c3bb-4335-ade7-977cb6a343c0"
+    },
+    {
+      "claim_id": "02d32920-8846-45ac-a550-1c15eb47371f",
+      "result_id": "15b65cf9-c3bb-4335-ade7-977cb6a343c0"
+    },
+    {
+      "claim_id": "caa552de-d523-4260-a2d0-1cbe3aed066e",
+      "result_id": "15b65cf9-c3bb-4335-ade7-977cb6a343c0"
+    },
+    {
+      "claim_id": "4b6bc57d-f555-4722-ace3-1a8465073ae4",
+      "result_id": "15b65cf9-c3bb-4335-ade7-977cb6a343c0"
+    },
+    {
+      "claim_id": "b34cd8e7-d22a-43a2-845f-5038124ca785",
+      "result_id": "15b65cf9-c3bb-4335-ade7-977cb6a343c0"
+    },
+    {
+      "claim_id": "9ebb0eb5-fe5f-4930-8dd0-87af06d960a9",
+      "result_id": "15b65cf9-c3bb-4335-ade7-977cb6a343c0"
+    },
+    {
+      "claim_id": "312e51cb-7f18-4af1-9dd9-dd13e66ee780",
+      "result_id": "15421a0f-77c1-4439-a3eb-8c9def673de9"
+    },
+    {
+      "claim_id": "f83555cd-90dd-4297-bfeb-8e6b8b3e3897",
+      "result_id": "15421a0f-77c1-4439-a3eb-8c9def673de9"
+    },
+    {
+      "claim_id": "1a0e7ead-8e54-486f-b9ab-2ac1e94065d5",
+      "result_id": "956ef1db-7440-4f3e-abd1-f348c5fb9773"
+    },
+    {
+      "claim_id": "f93a2f72-ae6e-4fa6-89ae-9fa3d5ecc972",
+      "result_id": "956ef1db-7440-4f3e-abd1-f348c5fb9773"
+    },
+    {
+      "claim_id": "b2df4690-f45e-4bec-9274-a0090d178129",
+      "result_id": "956ef1db-7440-4f3e-abd1-f348c5fb9773"
+    },
+    {
+      "claim_id": "f08a78e8-f129-42ea-ab4d-19b5bdfc836a",
+      "result_id": "956ef1db-7440-4f3e-abd1-f348c5fb9773"
+    },
+    {
+      "claim_id": "6c6a9853-f6dc-4349-bc4a-eb40fda229c5",
+      "result_id": "956ef1db-7440-4f3e-abd1-f348c5fb9773"
+    },
+    {
+      "claim_id": "c2db2577-eadf-4c16-b94e-56b87617ac00",
+      "result_id": "956ef1db-7440-4f3e-abd1-f348c5fb9773"
+    },
+    {
+      "claim_id": "809167ae-d609-4b0f-a64c-8114fe151142",
+      "result_id": "956ef1db-7440-4f3e-abd1-f348c5fb9773"
+    },
+    {
+      "claim_id": "a22cda63-259b-4c2a-8963-f81dee3f1bff",
+      "result_id": "956ef1db-7440-4f3e-abd1-f348c5fb9773"
+    },
+    {
+      "claim_id": "4763b363-b84e-436b-a134-c281223b9d03",
+      "result_id": "956ef1db-7440-4f3e-abd1-f348c5fb9773"
+    },
+    {
+      "claim_id": "dfeb82d3-3d0f-46ed-9c43-f9ff48864cce",
+      "result_id": "956ef1db-7440-4f3e-abd1-f348c5fb9773"
+    },
+    {
+      "claim_id": "f95226f4-9e53-48c3-b302-74aa48add8d4",
+      "result_id": "956ef1db-7440-4f3e-abd1-f348c5fb9773"
+    },
+    {
+      "claim_id": "ac5e9c52-b233-4c71-aecb-0842fc518c73",
+      "result_id": "d726010e-c9e7-4e5e-a0a4-8df0f2513489"
+    },
+    {
+      "claim_id": "9deac786-1523-4014-a035-256972176f4e",
+      "result_id": "d726010e-c9e7-4e5e-a0a4-8df0f2513489"
+    },
+    {
+      "claim_id": "864740ca-0859-40e1-acf4-f76ff84b33c9",
+      "result_id": "d726010e-c9e7-4e5e-a0a4-8df0f2513489"
+    },
+    {
+      "claim_id": "be74cbc8-eabb-4052-871d-2981fc7b9a2a",
+      "result_id": "d726010e-c9e7-4e5e-a0a4-8df0f2513489"
+    }
+  ],
+  "comparisons": []
+}

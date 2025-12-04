@@ -1,0 +1,1690 @@
+{
+  "submission": {
+    "id": "781c457c-dd31-4638-a19b-49d9aee95e96",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-04T04:36:27.438864Z",
+    "updated_at": "2025-12-04T04:36:27.438864Z"
+  },
+  "content": [
+    {
+      "id": "73134fed-3c08-4869-a857-55380fd826ac",
+      "submission_id": "781c457c-dd31-4638-a19b-49d9aee95e96",
+      "content_type": "manuscript",
+      "content_text": "# Brain representations of motion and position in the double-drift illusion\n\n## Authors\n\n- Noah J Steinberg<sup>1</sup> ([ORCID: 0000-0003-1337-1479](https://orcid.org/0000-0003-1337-1479)) \u2020\n- Zvi N Roth<sup>1</sup> ([ORCID: 0000-0002-2173-1625](https://orcid.org/0000-0002-2173-1625)) \u2020\n- J Anthony Movshon<sup>3</sup> ([ORCID: 0000-0002-0274-9213](https://orcid.org/0000-0002-0274-9213))\n- Elisha Merriam<sup>1</sup> ([ORCID: 0000-0003-2787-566X](https://orcid.org/0000-0003-2787-566X))\n\n### Affiliations\n\n1. Laboratory of Brain and Cognition, National Institute of Mental Health Bethesda United States ([ROR:04xeg9z08](https://ror.org/04xeg9z08))\n2. School of Psychological Sciences, Faculty of Social Sciences, Tel Aviv University Tel Aviv Israel ([ROR:04mhzgx49](https://ror.org/04mhzgx49))\n3. Center for Neural Science, New York University New York United States ([ROR:0190ak572](https://ror.org/0190ak572))\n\n\u2020 Corresponding author\n\n## Abstract\n\nIn the \u2018double-drift\u2019 illusion, local motion within a window moving in the periphery of the visual field alters the window\u2019s perceived path. The illusion is strong even when the eyes track a target whose motion matches the window so that the stimulus remains stable on the retina. This implies that the illusion involves the integration of retinal signals with non-retinal eye-movement signals. To identify where in the brain this integration occurs, we measured BOLD fMRI responses in visual cortex while subjects experienced the double-drift illusion. We then used a combination of univariate and multivariate decoding analyses to identify (1) which brain areas were sensitive to the illusion and (2) whether these brain areas contained information about the illusory stimulus trajectory. We identified a number of cortical areas that responded more strongly during the illusion than a control condition that was matched for low-level stimulus properties. Only in area hMT+ was it possible to decode the illusory trajectory. We additionally performed a number of important controls that rule out possible low-level confounds. Concurrent eye tracking confirmed that subjects accurately tracked the moving target; we were unable to decode the illusion trajectory using eye position measurements recorded during fMRI scanning, ruling out explanations based on differences in oculomotor behavior. Our results provide evidence for a perceptual representation in human visual cortex that incorporates extraretinal information.\n\n## Introduction\n\nNeurons throughout visual cortex encode the location of visual stimuli on the retina, suggesting that the visual system uses a primarily retina-centered reference frame. Yet visual perception is stable across frequent eye movements that displace the retinal image. This observation has led to the idea that the brain maintains a world-centered or \u2019spatiotopic' representation that is invariant to changes in eye position. This idea has perhaps received its strongest support from monkey single-unit recording studies showing that neurons in the ventral intraparietal area (VIP) in macaque monkeys exhibit receptive fields that do not change position when the eyes move (Duhamel et al., 1997). Observations of spatiotopic representation have also been reported in a number of human brain imaging studies. For example, visually evoked responses in both human MT/MST (hMT+) and the lateral occipital complex (LOC) have been reported to be invariant to changes in eye position (d\u2019Avossa et al., 2007; McKyton and Zohary, 2007). These brain imaging studies suggest a broad agreement in the brain\u2019s representation of space in monkey and human visual cortex.\n\nSpatiotopic encoding has not been observed in all fMRI studies, however. For example, a number of studies have measured spatial receptive fields for a range of eye positions and found that receptive fields change position when the eyes move, suggesting that the brain uses a retinotopic reference frame (Gardner et al., 2008; Golomb and Kanwisher, 2012; Merriam et al., 2013). The discrepancy between these studies and reports of spatiotopic representations have not been fully resolved. One suggestion is that the reference frame for stimulus encoding depends on cognitive or task demands. For example, Crespi et al., 2011 reported that the reference frame of visual responses can shift from retinotopic to spatiotopic depending on the attentional state of the observer. Behavioral studies have reported that spatiotopic representations become more prominent in tasks requiring sequences of eye movements, suggesting that spatiotopic coordinates are built-up over time (Poletti et al., 2013; Sun and Goldberg, 2016). Together, these observations suggest that reference frames can be dynamic and depend on a variety of factors, such as visual context or the specific task (Steinberg et al., 2022).\n\nIn the current study, we used a version of the double-drift illusion to investigate a fundamental paradox of spatiotopic visual processing. The double-drift illusion occurs when a combination of local motion and an orthogonal global motion trajectory causes a strong perception of illusory drift away from the veridical trajectory. The illusion can be strikingly large so that the stimulus appears to deviate by as much as 45\u00b0 away from the veridical motion path (Tse and Hsieh, 2006; Shapiro et al., 2010; Lisi and Cavanagh, 2015). A recent study revealed that the illusion persists even during smooth pursuit when the stimulus is stabilized on the retina (Cavanagh and Tse, 2019). This pursuit version of the double-drift illusion highlights the paradox of spatiotopic processing: even though the stimulus is at a constant position on the retina, it is perceived to change position in world-centered coordinates. Here, we asked if this illusion could provide insight into spatiotopic encoding in the brain. We hypothesized that several regions in occipital and parietal cortex are involved in computing the illusory percept. A number of brain areas encode stable stimulus position during pursuit eye movements (i.e., \u2018real position\u2019 cells) (Nau et al., 2018). Moreover, several of these areas have been implicated in spatiotopic processing (d\u2019Avossa et al., 2007). If this hypothesis is correct, we predict that activity in extrastriate cortex will reflect the illusory motion path instead of the veridical stimulus path.\n\n## Results\n\nWe tested whether fMRI BOLD activity in human visual cortex reflects the perceived spatial position of a visual stimulus that remained at a constant retinal location. We measured BOLD activity during a version of the double-drift illusion in which the perceived location of the stimulus differed from its actual location by several degrees (Figure 1).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/76803/elife-76803-fig1-v2.jpg)\n\n**Figure 1.:** (A) Leftward drift illusion. Participants made smooth pursuit eye movements, tracking the target as it moved vertically in tandem with a Gabor stimulus. Both the gabor and target moved for 12 seconds. Conjunction of local motion (grating phase drift) and global motion (displacement of the Gaussian envelope) produces an illusion in which the Gabor appears to drift several degrees to the left of its actual trajectory, even when smooth pursuit eye movements stabilize the Gabor on the retina. (B) Rightward drift illusion. Conjunction of local and global motion produces illusion of a rightward Gabor trajectory. (C) No-illusion control condition. Randomly updated grating phase does not produce illusory stimulus trajectory. All three stimulus conditions contain the same net motion energy and involved the same pursuit eye movements, yet are associated with strongly different percepts.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/76803/elife-76803-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** For experiments 1, 2, and 4, colored portions of bars represent mean number of voxels identified in Stim (blue) and eye (yellow) localizers, their overlap (orange), and the remaining voxels (purple). For experiment 3, colored portions of bars represent mean number of voxels used for decoding (blue, top 50% voxels ranked by R2) and those that were not used for decoding (orange).\n\nTo determine whether BOLD activity contained information about the visual illusion, we trained a classifier to decode blocks of illusory trials from blocks of trials in which no illusion was perceived. Using leave-one-run-out cross-validation, we found that responses in multiple cortical areas were sensitive to the double-drift illusion (Figure 2); the classifier could accurately decode illusory drift in all four visual area regions of interest (ROIs) (Figure 3A, left).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/76803/elife-76803-fig2-v2.jpg)\n\n**Figure 2.:** (A) Stimulus localizer-evoked activity in cortical regions representing stimulus location (center), eye movement localizer-evoked diffuse activity in visual cortex, extending well beyond stimulus representation. Data from a single participant in the stimulus localizer shown on an inflated cortical surface (left) and a flattened patch of the occipital lobe (center). Data from the same subject in the eye-movement localizer shown on the right. Boundaries of retinotopic visual areas identified according to an anatomical template. Color indicates the phase of the response. Yellow hues indicate a response in phase with the onset of the stimulus (center) or onset of smooth pursuit (right). (B) Time course of fMRI response from voxels identified in the stimulus localizer, from three cortical areas exhibiting a larger response for the double-drift illusion than during a no-illusion control condition.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/76803/elife-76803-fig3-v2.jpg)\n\n**Figure 3.:** (A) Accuracy of discriminating the double-drift illusion from a control condition that was matched for net motion energy. Participants either attended the peripheral stimulus and reported the presence of the illusion (Expt 1, left), or attended the fovea and reported a luminance decrement at fixation (Expt 2, right). (B) Accuracy of discriminating rightward vs. leftward drift illusion paths in Expt 2 (attend fixation) based on fMRI responses in voxels selected to match the retinotopic location of the stimulus (left) and voxels selected based on responses to pursuit eye movements (right). (C) Decoding accuracy for independent replication and control experiments (Expt 3). Left, decoding illusory drift paths, replicating results of Expt 2. Right, decoding local-motion only control conditions, which did not produce a drift illusion. Vertical lines extend from minimum to maximum bootstrap decoding accuracy. Horizontal lines denote median bootstrap decoding accuracy. Maroon dot, p<0.01; orange dot, p<0.05; gray dot, nonsignificant (p>0.05).\n\nA number of different factors could lead to accurate decoding of the double-drift illusion. One possibility is that the decoder was sensitive to neural activity related to computing the location of the stimulus. Alternatively, it is possible that the perception of the illusion attracted spatial attention, and the classifier was picking up on attentional differences between illusory and non-illusory conditions. To control for this second possibility, we repeated the experiment, but had participants perform a demanding task at fixation that required sustained attention (Haladjian et al., 2018). The fixation task minimized differences in spatial attention to the stimulus across conditions. We again tested whether the classifier could discriminate the double-drift illusion from the control condition. While overall decoding accuracy was slightly reduced in this experiment, we found that decoding accuracy remained robust and significant in LO, hMT+, and V3A/B, but not in early visual cortex (EVC) (Figure 3A, right), consistent with other recent observations (Liu et al., 2019; Ho and Schwarzkopf, 2022). Participants were not attending the stimulus; therefore, these results cannot be attributed to differences in spatial attention. Instead, we conclude that the classifier was sensitive to information related to encoding the perceived position of the stimulus during the illusion.\n\nThe critical test in this study is whether BOLD fMRI activity in visual cortex can discriminate between different illusory paths. We tested whether a classifier could decode the drift path of the illusion. Of all the visual areas tested, only area hMT+ could discriminate leftward from rightward illusory paths (Figure 3B, left). Because the stimulus remained at a constant retinal location, the ability to discriminate the illusory motion path suggests a non-retinotopic representation of stimulus position.\n\nWe next tested alternative explanations for the ability to discriminate motion trajectory in MT+. It is conceivable that decoding of the drift path was due to subtle differences in smooth pursuit eye movements, rather than encoding of the stimulus position. Specifically, we wondered if perceiving the illusion caused a change in oculomotor behavior, which could in turn result in decodable differences in fMRI activity. Under this alternative explanation, the ability to decode the trajectory of the illusion would be a secondary consequence of any difference in oculomotor behavior between illusory conditions. We conducted the following analyses to rule out this explanation. First, we repeated the classification analysis, this time using only voxels that were selective for smooth pursuit eye movements, as identified in a separate pursuit control experiment. In this analysis, we specifically excluded voxels that responded in the stimulus localizer (see \u2018Smooth pursuit control experiment\u2019). We reasoned that voxels that responded in the pursuit localizer should be most sensitive to any differences in pursuit eye movements in the main experiment. Note that this logic should apply, regardless of whether these voxels are selective for pursuit eye movements, or to the visual consequences of retinal slip during pursuit (i.e., during catch-up saccades). We found that responses in these voxels do not carry information that distinguishes the drift paths, in any of the ROIs (Figure 3B, right). Results from this control analysis suggest that the information being utilized by the classifier is not due to differences in pursuit eye movements. Second, in a subset of subjects, we repeated the fMRI experiment but with concurrent eye tracking (see \u2018Eye tracking data with concurrent fMRI\u2019). In this subset of subjects, we replicated our main fMRI results (decoding the illusion trajectory from hMT+ responses), but we were unable to decode the illusory trajectory from the eye position measurements alone, indicating that there was no information contained in the oculomotor behavior related to perceiving the illusion (Figure 4). Moreover, we quantified microsaccade characteristics (amplitude and direction) and found no reliable differences between illusory conditions (illusion vs. no-illusion), or between the direction of the illusion (left vs. right). We conclude that oculomotor behavior was unlikely an underlying cause of the fMRI findings reported here.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/76803/elife-76803-fig4-v2.jpg)\n\n**Figure 4.:** (A) Eye position measured during blocks of double-drift illusion; one representative subject averaged over all blocks in a scan session. Traces show stable fixation during the first 12 s followed by 12 s of vertical smooth pursuit. Eye position did not differ between leftward and rightward illusion. (B) Eye position during blocks of local motion only trials. (C) Polar histogram of microsaccades direction during leftward and rightward double-drift illusion and the two motion conditions. (D) Histogram of saccade amplitude during the two illusion conditions and the two motion conditions. (E) Decoding accuracies, using the horizontal and vertical eye position measurements to train and test a linear classifier to discriminate the direction of local motion. The bar labeled 'illusion' indicates accuracy for decoding trajectory during the illusion; the bar labeled 'fixation' indicates decoding during fixation (when no illusion was perceived); bar labeled 'local motion' indicates decoding during the local-motion only condition (during fixation). Horizontal gray dashed line denotes chance decoding for binary decision (50%). Horizontal black dashed line denotes 95% confidence interval of null distribution estimated using a permutation test.\n\nWhile the two illusory drift paths in our experiment were carefully balanced for net motion energy (i.e., a combination of a vertical global trajectory and horizontal local motion), we wondered if the ability of the classifier to discriminate leftward and rightward illusion drift paths could be due to the difference in temporal sequence of events within the trial (e.g., leftward followed by rightward motion, and vice versa). To test this possibility, we scanned another group of participants in an experiment (Expt 3) in which we included both illusion conditions from Expt 2, and two control conditions that contained the same local motion, but no global trajectory (and no smooth pursuit eye movements). For the illusory double-drift conditions, we again found that drift path was decodable in hMT+, replicating the results from Exp 2 in an independent group of participants (Figure 3C, left). However, the classifier was unable to decode the conditions containing local motion alone (i.e., discriminating left-followed-by-right from right-followed-by-leftward; Figure 3C, right). This result demonstrates that information about illusory motion paths in hMT+ is not due to local motion of the stimulus alone.\n\n## Discussion\n\nWe found that fMRI BOLD responses in several visual cortical areas could reliably discriminate the double-drift illusion from a control condition that was matched for motion energy. In EVC, this result could be explained by attentional effects associated with perceiving the illusion, since when attention was directed away from the illusion, decoding in EVC dropped to chance. Beyond early visual cortex, several areas (hMT+, LO, and V3A/B) exhibited significant decoding of the illusion itself, even when controlling for spatial attention. Moreover, responses in hMT+ could also discriminate the illusory drift path, suggesting that retinal and extraretinal information are integrated in hMT+ and used to construct the spatiotopic perception experienced during the illusion. A number of control experiments indicate that these findings cannot be attributed to low-level stimulus or oculomotor factors. Our results may indicate non-retinal stimulus position encoding occurs in human extrastriate visual cortex.\n\n### Source of illusory drift path information\n\nWhat is the source of decodable drift path information? One possibility is related to a coarse-scale map for direction of motion, which has been observed throughout visual cortex, including all of the areas included in our study (Wang et al., 2014). The coarse-scale map for direction of motion in early visual areas (V1/V2/V3) is thought to result from an aperture-inward bias: larger responses were observed for motion away from the aperture edge (Wang et al., 2014). In contrast, the coarse-scale map observed in hMT+ did not depend on the aperture boundary, but instead consisted of a bias for motion toward the fovea (Wang et al., 2014). Could this fovea-centered bias explain the ability to decode the path of the double-drift illusion? In the current study, a fovea-centered bias would predict a leftward preference across voxels within hMT+ since the stimulus was always in the right visual field and leftward motion would be toward the fovea. However, the two illusory conditions (Figure 1A and B) had identical net amounts of leftward and rightward local motion, and identical proportions of time of leftward and rightward illusory drift paths. We think it is hence unlikely that a net motion bias toward the fovea in hMT + accounts for the observed results.\n\nAn alternative account is that differences in BOLD activity to the two illusory drift paths arise because of the topographic organization within hMT+ (Huk et al., 2002; Amano et al., 2009). The rightward drift path begins with illusory drift up-and-to-the-right, which increases the perceived eccentricity of the Gabor (Lisi and Cavanagh, 2015). The path continues with drift down-and-to-the-left, which brings the perceived position back to the original position. This cycle repeats throughout the block of trials. In contrast, the leftward drift path begins with illusory drift up-and-to-the-left, which decreases the perceived eccentricity of the Gabor, and continues with drift down-and-to-the-right, bringing the perceived position back to the original position. Thus, the average eccentricity of the perceived drift path is higher during rightward drift and lower during leftward drift. This shift in the perceived eccentricity of the stimulus could result in slightly different patterns of activity in hMT+, and this difference could underlie the ability to decode the illusion drift path.\n\nThis second account depends on there being an explicit representation of the perceived position of a stimulus in hMT+, while position encoding in EVC is entirely veridical. Since veridical position did not differ for rightward and leftward drift paths; the classifier was unable to decode the drift path from activity in EVC. Consistent with this account, one fMRI study (Maus et al., 2013) has reported that BOLD activity in hMT+ reflects the illusory position during motion-induced position shift. Activity throughout visual cortex is known to encode stimulus position in retinal, not spatiotopic, coordinates (Gardner et al., 2008). However, it remains unknown whether retinotopic coding is also universal in visual cortex for motion illusions. If the second account is accurate, our data may imply a difference between EVC and downstream areas in the spatial encoding of illusory motion.\n\n### Spatiotopic coordinates in visual cortex\n\nThe double-drift illusion results from combining local motion of the Gabor with a global trajectory of the envelope. In the smooth-pursuit variant of the illusion, the envelope only has a trajectory when defined in spatiotopic coordinates, since the stimulus remains at a constant retinal location. With a stable position of the stimulus on the retina, the presence of the illusion suggests some degree of spatiotopic processing in the brain (Turi and Burr, 2012). This could be accomplished by the formation of an explicit spatiotopic reference frame (Duhamel et al., 1997; d'd\u2019Avossa et al., 2007; Crespi et al., 2011). Alternatively this could be accomplished through a computation by which a retinotopic input is combined with an eye position gain field (Merriam et al., 2013). Our data do not speak to which of these two possibilities is more likely.\n\n### Decoding the drift illusion beyond hMT+\n\nIn addition to decoding the illusory drift path, patterns of activity in multiple visual areas enabled classification of the perception of the illusion. When subjects were attending the stimulus, illusion decoding was possible in all the visual areas that we studied, raising the possibility that the illusion attracted attention, resulting in a higher BOLD response during illusory blocks (see Figure 2). When subjects were attending to a task at fixation (Exp 2), the illusion could still be decoded from activity in LO, V3A/B, and hMT+, but not from EVC. Previous fMRI studies have claimed that the locus of attention can affect the apparent reference frame in which a stimulus is encoded (Crespi et al., 2011). It is unclear, however, whether attention and task indeed change the spatial reference frame, or instead affect global response amplitudes (Roth et al., 2020), which may constitute an additive signal obfuscating measurement of the underlying reference frame. In Exp 1, subjects performed a task on the stimulus, and so attention was likely directed toward the stimulus. In an earlier fMRI study on the double-drift illusion (Liu et al., 2019), subjects also performed a task on the stimulus, and while the tasks were different in the two experiments, in both cases attention was focused on the stimulus. Our results in Exp 2, in which subjects attended fixation, and not the stimulus, demonstrate that attention and task do have an impact on the spatial encoding of the double-drift illusion, and highlights the importance of controlling the attentional state of the observer when studying visual reference frames (Crespi et al., 2011).\n\n### Disentangling spatiotopic representations and remapping\n\nTwo potential mechanisms have been suggested for the visual system\u2019s ability to preserve a stable percept across saccades. The first is a spatiotopic representation, relying on afferent signals that update across saccades. This can be thought of as a combination of two representations: a retinotopic representation of the visual world, and a representation of gaze direction in the world. The two are integrated to form our perception of the outside world, independent of changes in direction of gaze. The second mechanism is remapping. During (or a brief moment prior to) a saccade, receptive fields shift to where they will naturally be positioned after the saccade. This shift, or remapping, ensures that neurons activity before and after the saccade will reflect the same region in the visual field. After the saccade, the receptive field returns to its natural retinotopic position. Behavioral investigations into mechanisms for visual stability across eye movements have found evidence that both spatiotopic representations and receptive field remapping underly visual stability (Poletti et al., 2013), with the relative contribution of each mechanism depending on the number of intervening saccades. After a single saccade, receptive field remapping is the primary mechanism underlying visual stability, whereas spatiotopic representations become prominent after multiple saccades (Sun and Goldberg, 2016). It is therefore possible that fMRI studies exploring spatiotopic representations could in fact probe retinotopic coding that is updated by remapping across saccades.\n\nThe version of the double-drift illusion employed in the current study did not require saccadic eye movements, making it unlikely that perisaccadic remapping contributed to our results. Remapping can take place during saccades since saccades are discrete events separated in time, leaving time for both the shift and the return. However, shifting the receptive field cannot be used for continuous gradual changes such as smooth pursuit. A receptive field shift in the direction of the planned motion before the beginning of the pursuit would not correct for the rest of the pursuit, and furthermore, there would be no opportunity to shift back. We find it plausible to assume, therefore, that the remapping mechanism is relevant only for saccades. Note that subjects may perform saccades during the pursuit (e.g., catch-up saccades) that could be corrected by remapping, but the pursuit itself cannot be corrected by remapping. Therefore, a spatiotopic signal robust to smooth pursuit provides evidence for a different correction mechanism, namely a spatiotopic representation. From this, our results suggest that stimulus position was encoded in a spatiotopic representation.\n\n### Relationship to a previous study of the double-drift illusion\n\nA recent study Liu et al., 2019 used a decoding approach to identify brain activity reflecting the percept during a version of the double-drift illusion that did not include smooth pursuit. A classifier was used to decode both the veridical direction of a diagonally moving Gabor patch, and the illusion direction during the double-drift illusion. Briefly, they found that both veridical motion and illusory motion direction could be decoded from visual cortex, but a classifier trained on veridical motion could not decode illusory motion and vice versa, suggesting differences between the patterns of activity in the two conditions. Instead, cross-decoding was possible primarily in prefrontal cortex, suggesting that activity in PFC reflects the perceived motion direction.\n\nThe results reported by Liu et al., 2019 are surprising, on several accounts. First, when the double-drift experiment was repeated with exactly the same stimuli, the brain regions that showed significant decoding changed (compare their Figure 4A with their Figure 6A). Second, when the veridical motion stimuli were changed slightly, the pattern of regions supporting decoding changed substantially (compare their Figure 4B with their Figure 6B), as did the regions supporting cross-decoding between veridical motion and illusory motion (compare their Figure 4C with their Figure 6C). These findings raise important questions and suggest that multiple factors, such as spatial attention, may influence the ability to decode an illusory motion path, as we have demonstrated in our study.\n\nRegardless, the results of Liu et al. do not have direct bearing on which reference frame was used to encode the stimulus location, which is the topic of the current study. Because in Liu et al. subjects were fixating on the Gabor, the encoding of the illusion could have been in either retinal or spatiotopic coordinates. In contrast, in our study, the stimulus must have been encoded in spatiotopic coordinates. However, one potentially interesting extension of the cross-decoding approach would be to train the decoder on a version of the illusion involving fixation (as in Liu et al.), but then test the decoder on the illusion during pursuit (as in the current study). If perceived motion direction is represented in spatiotopic coordinates in both cases, one would expect the classifier to succeed in cross-decoding. However, if spatiotopic coding is used during pursuit (as we have shown here) but not during fixation, this cross-decoding should fail.\n\n## Materials and methods\n\n### Participants\n\nData were acquired from 19 healthy participants (11 females, age range 23\u201334 y, mean 25.8 y) with normal or corrected-to-normal vision. Experiments were conducted with the written consent of each observer. The consent and experimental protocol were in compliance with the safety guidelines for MRI research and were approved by the Institutional Review Board of the National Institutes of Health. Of the 19 participants, 12 were scanned in multiple sessions and in multiple experimental conditions. 9, 12, and 5 participants participated in Exp 1, 2, and 3, respectively.\n\n### Stimuli\n\nA Gabor pattern, consisting of a vertically oriented sinusoidal grating (spatial frequency of 1 cycle/\u00b0) within a Gaussian envelope (standard deviation of 1 dva), moved back and forth along a linear, vertical trajectory with a length of 8\u00b0. The trajectory length was varied slightly (\u00b11\u00b0) across subjects to accommodate the restricted field of view within the scanner. The Gabor moved according to a linear velocity profile (10\u00b0/s) that was smoothed slightly at the top and bottom of the Gabor\u2019s path where it changed direction to facilitate accurate pursuit eye movements. The Gabor\u2019s internal grating moved orthogonally relative to its trajectory with a speed of 6.66 Hz, reversing its direction at the two endpoints of the trajectory. Participants fixated a target (0.2 dva, white dot with a black outer rim) that was positioned 9\u201312 dva to the left of the Gabor envelope and moved smoothly alongside it. Participants were instructed to pursue the target. Pursuit accuracy was confirmed during the behavioral experiment for each subject prior to the fMRI experiment.\n\n### Pre-scan behavioral experiment\n\nPrior to the first scanning session, participants viewed the double drift stimulus in a behavioral experiment and were asked to judge the angle of the illusion. Participants viewed the illusion in 12 s blocks while pursuing a target that moved smoothly alongside the stimulus. The Gabor completed eight traversals per block. At the end of each block, the Gabor was replaced with a vertical line, aligned to the physical (vertical) path of the Gabor\u2019s trajectory. Participants manipulated the angle of the line with the keyboard in order to match the perceived path of the Gabor.\n\n### Eye tracking data with concurrent fMRI (Expt 4)\n\nEye tracking concurrent with 7T fMRI scanning was performed in a replication of Expt 3. We reran the experimental same experimental protocol described for (Expt 3, see below) with simultaneous eye tracking (Eyelink, 1000 Hz) on five new participants. The raw eye traces were corrected for missing data during blinks and mean centered, but not further preprocessing was performed (i.e., the eye traces were not temporally smoothed). We then used a support vector machine (SVM) classifier to the azimuth and elevation data (concatenated together to produce two vectors) together using the cosmoMVPA toolbox (Oosterhof et al., 2016). Decoding was attempted over trajectories/traversals of the stimulus (6 traversals \u00d7 8 runs = 48 exemplars). Three separate classifiers were designed: first, we trained and tested a classifier on eye data during the fixation portion of the trials with the visual illusion where we did not expect the traces to discriminate between conditions. This analysis served as a control. Second, we trained and tested a classifier using eye data from the illusion trials, just as we did using the fMRI data. We reasoned that any differences in the horizontal or vertical displacement of eye position during the illusion could be used to support accurate decoding. Therefore, to isolate the effect of local motion alone, we built a third classifier using eye position during the trials with only local motion. For all tests, a permutation test (1000 instances) was performed to determine the 95th percentile. Any differences in the horizontal or vertical displacement of eye position during the illusion could be used to support accurate decoding. Therefore, to isolate the effect of local motion alone, we built a classifier using eye position during the trials with only local motion. For all tests, a permutation test (1000 instances) was performed to determine the 95th percentile.\n\nAll subjects invariably make small saccades during smooth pursuit eye movements. These are typically catch-up saccades that correct for small inaccuracies in pursuit gain. It is possible that the illusion changed saccadic characteristics, such as the number, size, or direction of saccades. We therefore performed an analysis on the magnitude and direction of saccades. Saccades were typically small and did not differ in any between any of the four experimental conditions, two illusory conditions (left and right) and the two local motion-only conditions. A two-way ANOVA (illusion-vs-no-illusion \u00d7 direction) was performed across all subjects and did not reveal any significant differences or interactions.\n\n### Experimental conditions and fMRI design\n\n#### Expt 1: Attend to drift illusion path\n\nThe main fMRI experiment consisted of a randomized blocked design with three stimulus conditions, all of which involved the same vertical Gabor envelope trajectory: (1) perceived leftward drift path (internal local motion leftward during upward trajectory; rightward during downward trajectory); (2) perceived rightward drift path (internal local motion rightward during upward trajectory; leftward during downward trajectory); and (3) no-illusion control condition (randomized internal local motion, updated at 60 Hz). In all three conditions, participants pursued a fixation dot that moved smoothly and predictably alongside the Gabor, so that the Gabor remained at a constant retinal location throughout the experiment. Under conditions 1 and 2, the Gabor\u2019s perceived drift path differed from its actual trajectory by several degrees. In condition 3, the Gabor\u2019s perceived path matched its actual trajectory (i.e., there was no illusion). Each of the three conditions contained the same global and local motion energy and required the same smooth pursuit eye movements.\n\nEach Gabor traversal lasted for 1.5 s (750 ms up, 750 ms down). The Gabor completed eight traversals in a 12 s block. The three conditions were randomly interleaved, and experimental blocks alternated with 12 s blocks of fixation in which both the pursuit target and the Gabor remained stationary, with no internal motion. Participants were instructed to press one of three buttons at the end of each experimental block indicating the direction of the illusion (\u20181\u2019 for leftward drift illusion, \u20182\u2019 for no illusion, and \u20183\u2019 for rightward drift). The double-drift illusion is typically strong and unambiguous, even during smooth pursuit eye movements. Accordingly, participants performed the attend-to-stimulus task with nearly 100% accuracy. Each fMRI run lasted for 288 s and included four blocks of each of the three conditions in a randomized order.\n\n#### Expt 2: Attend to fixation target\n\nExperimental design and stimuli were identical to Expt 1, except for additional luminance decrements of the fixation target. Participants\u2019 task was to press a button when they detected the brief (250 ms) luminance decrement. Luminance decrements were determined using an adaptive, 1-up-2-down staircase procedure (Levitt, 1971) prior to scanning, producing a detection rate of approximately 70% outside the scanner. We found that subjects behavior improved inside the scanner and detected the luminance changes with greater than 90% accuracy. The Gabor stimulus was not relevant to the task and subjects were not instructed to attend to it. Each fMRI run lasted for 288 s and included four blocks of each of the three conditions in a randomized order.\n\n#### Expt 3: Local motion control\n\nThis experiment controlled for differences in the pattern of local internal motion in Expts 1 and 2. While the two illusory drift paths (leftward drift, rightward drift) were balanced for net local and global motion energy, they differed in the order of motion direction. In the leftward drift illusion condition, local motion started leftward (for 750 ms) and was followed by rightward motion (for 750 ms). Vice versa for the rightward drift illusion condition. Expt 3 consisted of 4 conditions. Conditions 1 and 2 were identical to the two illusory conditions in Expts 1 and 2. However, in this experiment there were two additional control conditions in which participants viewed the same patterns of local motion as in conditions 1 and 2, but the Gabor did not move across the screen (no global motion trajectory), nor were there smooth pursuit eye movements. Instead, participants fixated a stationary target alongside a stationary Gabor containing internal motion to the left and right. In condition 3, the order of local motion was the same as in condition 1 (leftward followed by rightward). Condition 4 matched the local motion of condition 2. Participants were instructed to press a button when they detected the brief (250 ms) luminance decrement. Each fMRI run lasted for 288 s and included 3 blocks of each of the 4 conditions in randomized order.\n\n#### Expt 4: Concurrent eye tracking\n\nThis experiment was identical to Expt 3, except for two important differences. First, the experiment was performed with concurrent high-resolution eye tracking. Second, we ran the Luminance decrements task using an adaptive, 1-up-2-down staircase procedure (Levitt, 1971) for an extended period of time inside the scanner before the start of the experiment. Once the luminance decriment thresholds were stable at 70% inside the scanner, we fixed the decrement step size for the rest of the experiment. Analysis of behavioral performance inside the scanner confirmed that performance was as intended for each of the six subjects was as intended (66, 70, 78, 80, 75, and 71%). This was important for ensuring high task demands, so that subjects could not simultaneously attend the Gabor stimulus.\n\n#### Stimulus-only localizer experiment\n\nIn each scanning session, participants were scanned in a stimulus-only localizer experiment in which the stimulus appeared and disappeared in a two-condition block alternation protocol (9 s on, 9 s off; 14 blocks per fMRI run, lasting 252 s). Participants maintained fixation on a stationary target. A vertical Gabor stimulus appeared at the same size and eccentricity as in the main experiment. The Gabor contained internal local motion that changed direction randomly every 250 ms. After 9 s, the stimulus disappeared and participants continued to fixate. Three stimulus-only runs were included in each scanning session, one run at the beginning of the session, one in the middle, and a third run at the end of the session. Participants did not perform a behavioral task during the stimulus-only experiment.\n\n#### Eye-movement localizer experiment\n\nIn each scanning session, participants were also scanned in an eye-movement localizer experiment in which participants tracked a moving fixation dot that was identical to the double-drift illusion experiments, except that there was no peripheral Gabor stimulus. Responses to pursuit eye movements were measured in a two-condition block alternation protocol (9 s pursuit, 9 s fixation; 14 blocks per fMRI run, each lasting 252 s). Two eye-movement localizer runs were included in each scanning session, one run at the beginning of the session and a second run at the end of the session. Participants did not perform a behavioral task during eye-movement localizer experiment.\n\n### Experimental setup: Behavioral\n\nStimuli were generated using MATLAB (MathWorks, MA) and MGL (Gardner et al., 2018) on a Macintosh computer, and presented on a 61-inch screen (BenQ XL242OZ) positioned 57 cm away from the participant. Participants were seated in a darkened room and were head stabilized by a chin rest. An Eyelink 1000 eye-tracking system was used to measure binocular eye position at 1000 Hz. Eye-tracking calibration was performed at the beginning of the session and repeated intermittently throughout the session to ensure that eye tracking accuracy remained within 1\u00b0 of visual angle throughout the experiment.\n\n### Experimental setup: fMRI\n\nStimuli were generated using MATLAB (MathWorks) and MGL (Gardner et al., 2018) on a Macintosh computer. Stimuli were displayed via a PLUS U2-1200 LCD projector (resolution: 1024 \u00d7 768 pixels; refresh rate: 60 Hz) onto a back-projection screen in the bore of the magnet. Participants viewed the display through an angled mirror at a viewing distance of approximately 58 cm, producing a field of view of 20.5\u00b0 \u00d7 16.1\u00b0.\n\nfMRI data were acquired from participants on a research-dedicated Siemens 7T Magnetom scanner using a 32-channel head coil, located in the Clinical Research Center on the National Institutes of Health campus (Bethesda, MD). Functional imaging was conducted with 56 slices oriented parallel to the calcarine sulcus covering the posterior half of the brain: TR: 1500 ms; TE 23 ms; FA: 55\u00b0; voxel size: 1.2 \u00d7 1.2 \u00d7 1.2 mm with 10% gap between slices; grid size: 160 \u00d7 160 voxels. Multiband factor 2, GRAPPA/iPAT factor 3. The slices covered all of the occipital and parietal lobes, and the posterior portion of the temporal lobe. For Expt 5, voxel size was increased to 1.8 \u00d7 1.8 \u00d7 1.8 mm, with 0% gap, Multiband factor 2, and GRAPPA/iPAT factor 2.\n\nFor each participant, a high-resolution anatomy of the entire brain was acquired by co-registering and averaging between 2 and 8 T1-weighted anatomical volumes (magnetization-prepared rapid-acquisition gradient echo, or MP2RAGE; TR: 2500 ms; TE: 3.93 ms; FA: 8\u00b0; voxel size: 0.7 \u00d7 0.7 \u00d7 0.7 mm; grid size: 256 \u00d7 256 voxels). The averaged anatomical volume was used for co-registration across scanning sessions and for gray-matter segmentation and cortical flattening. Functional scans were acquired using T2*-weighted, gradient recalled echo-planar imaging to measure blood oxygen level-dependent (BOLD) changes in image intensity (Ogawa et al., 1990). The in-plane anatomical was aligned to the high-resolution anatomical volume using a robust image registration algorithm (Nestares and Heeger, 2000).\n\nPrior to the first experimental functional run of each session, 30 volumes were acquired with identical scanning parameters and slice prescription as the subsequent functional runs, except for the phase encoding direction which was reversed. This single reverse phase-encoded run was used to estimate the susceptibility-induced off-resonance field using a method similar to that described in Andersson et al., 2003 as implemented in FSL (Smith et al., 2004). This estimate was then used to correct the spatial distortions in each subsequent run in the session.\n\n### fMRI preprocessing and analysis\n\nThe anatomical volume acquired in each scanning session was aligned to the high-resolution anatomical volume of the same participant\u2019s brain using a robust image registration algorithm (Nestares and Heeger, 2000). Head movement within and across scans was compensated using standard procedures (Nestares and Heeger, 2000). The time series from each voxel was divided by its mean to convert from arbitrary intensity units to percent modulation and high-pass filtered (cutoff = 0.01 Hz) to remove low-frequency noise and drift (Smith et al., 1999).\n\n### ROI definition\n\nROIs were defined according to an anatomical template (Benson and Winawer, 2018). Such templates are inherently imprecise because of inter-subject variability. Each subject has a slightly different anatomy and a slightly different location of functional ROIs. The smaller an ROI the more severe this imprecision becomes relative to the ROI size. To mitigate this problem, we combined nearby regions to form larger ROIs which we analyzed. V1, V2, and V3 were combined to form an early visual cortex ROI (EVC); LO1 and LO2 were combined into LO; V3A and V3B were combined into V3A/B; TO1 and TO2 were combined to form hMT+, corresponding to MT and MST.\n\n### Data analysis for stimulus-only and eye-movement localizers\n\nThe three stimulus localizer scans were averaged together, and the two eye-movement scans were averaged together. The first cycle of each averaged time series was discarded, leaving 13 cycles. Each individual voxel\u2019s time course was fitted to a cosine with a period matching the cycle duration of 12 volumes (18 s). Each voxel was then assigned the correlation coefficient and phase of the best-fitting cosine. Voxels with a correlation coefficient greater than 0.2 were considered active in the localizer.\n\n### GLM analysis\n\nBOLD fMRI time series were averaged across all voxels within each ROI. Trials were then divided into two conditions: double-drift illusion (either leftward or rightward) and no illusion. Each condition was modeled by 16 predictors, one for each time point in the 24 s following the beginning of the trial. Deconvolution was performed by multiplying the pseudoinverse of the condition predictor matrix with the time series (Dale, 1999). This procedure yields two hemodynamic response functions for each ROI. The average of the two response functions was used as the ROI\u2019s hemodynamic response function for the next analysis step. Next, a design matrix was constructed for each ROI, with a single HRF function modeling each 12 s block. Response amplitudes were then computed by taking the pseudoinverse of this design matrix and multiplying it with the single voxel time series.\n\nThe goal of this analysis was to estimate a response amplitude for each voxel on each scanning run. The first step was to estimate a single hemodynamic response function for each ROI and each participant. This was accomplished by averaging across all voxels within the ROI, and then using deconvolution (Gardner et al., 2008) to estimate a hemodynamic response function (collapsing across the different conditions) over a 24 s period following the beginning of the block. Next, this single hemodynamic response was used to create a design matrix, treating each of the conditions independently. Response amplitudes were then computed by taking the pseudoinverse of this design matrix and multiplying it with the time series for each individual voxel within the ROI. This procedure allowed for differences in the shape of the hemodynamic response across different ROIs and across different participants.\n\n### Decoding analysis\n\nIn multivariate classification analysis of fMRI data, each condition is represented by a set of points in multidimensional space, with dimensionality equal to the number of voxels and each point corresponding to a single measurement. Accurate decoding is possible when the responses corresponding to different conditions form distinct clusters within this high-dimensional space (Pereira et al., 2009). We measured the amplitude of the fMRI response during 12 s blocks of trials, in which each block consisted of eight up-down traversals of the double-drift illusion. We took the beta weight from the GLM analysis (see above) as the amplitude of the response during each 12 s block as a single input to the classification analysis. These response amplitudes were stacked across blocks within a run, and across runs within a session, forming an m \u00d7 n matrix, with m being the number of voxels in the region of interest and n being the number of repeated measurements in the session. The value of n was typically 64 (for 14 of 19 participants), and ranged from 48 (1 participant) to 96 (4 participants). We only included voxels with a GLM R2 in the top 50th percentile. Prior to decoding each voxel\u2019s beta weights were z-scored. Decoding was performed with a maximum likelihood classifier using the MATLAB function \u2018classify\u2019 with the option \u2018diagLinear\u2019 (Roth et al., 2018). Decoding accuracy was computed using leave-one-run out cross-validation. The m \u00d7 n data matrix was partitioned along the n dimension (repeated measurements) into training and testing sets, in which the training set consisted of the blocks from all but one of the runs, and the testing set included the blocks (from all three conditions) from the left out run. Because the data in the training and testing sets were drawn from different runs in the same session, they were statistically independent. The training set was used to estimate the parameters (multivariate means and variances) of the maximum-likelihood classifier. The testing set was then used for decoding. Decoding accuracy was determined as the proportion of the test examples that the classifier was able to correctly assign to one of the two illusory drift paths. Illusion decoding was performed separately for left vs no-illusion, and for right vs no-illusion, and then averaged across both.\n\nThe leave-one-run-out cross-validation procedure resulted in a single decoding accuracy estimate per ROI per session. A non-parametric permutation test was used to evaluate the significance of this decoding accuracy. Specifically, we constructed a distribution of accuracies expected under the null hypothesis that there is no difference between the two illusory drift paths. To generate a null distribution decoding accuracy, we permuted the block labels for each run and repeated the leave-one-run-out decoding analysis. Repeating this randomization 1000 times yielded a distribution of accuracies expected under the null hypothesis. Accuracies computed using the unrandomized training data were then considered statistically significant when decoding accuracy was higher than the 95th percentile of the null distribution (p<0.05, one-tailed permutation test).\n",
+      "created_at": "2025-12-04T04:36:27.438864Z"
+    },
+    {
+      "id": "c7962baa-1341-4c6f-a111-a154ee97860d",
+      "submission_id": "781c457c-dd31-4638-a19b-49d9aee95e96",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Kristine Krug, https://ror.org/00ggpsq73 Otto-von-Guericke University Magdeburg Germany\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.76803.sa0](https://doi.org/10.7554/eLife.76803.sa0)\n\nThis important and elegant imaging experiment in humans shows that visual area hMT+, but not other candidate brain areas, signal the perceived motion path in a visual drift illusion. Using a convincing computational decoding approach, the results indicate a perceptual representation of the illusory position in space for moving stimuli even when the actual retinal position of the stimulus is kept stable. Such a representation and the underlying neural mechanisms are of broad importance for our understanding of the neural basis of sensory perception.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Kristine Krug, https://ror.org/00ggpsq73 Otto-von-Guericke University Magdeburg Germany\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.76803.sa1](https://doi.org/10.7554/eLife.76803.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you very much for submitting your article \"Neural Basis of The Double Drift Illusion\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, including Kristine Krug as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Tirin Moore as the Senior Editor. The following individuals involved in the review of your submission have agreed to reveal their identity: Corentin Gaillard (Reviewer #1); Maria Concetta Morrone (Reviewer #2).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions (for the authors):\n\nThere are three main areas, the reviewers have identified that need further clarification and some limited additional analyses. They are summarised here. Please use the recommendations to the authors below for the more detailed questions that need addressing.\n\n1) Motivation of the particular study and discussion of the results in relation to the existing literature needs expansion for the reader to be able to better evaluate the specific contribution of this particular study.\n\n- The authors motivate the study by saying that there have been conflicting results about which brain areas are involved in spatiotopic coding, but they did not give an indication about why there might be conflicting results or why the current study is suitable to address the previous discrepancies. Is this study simply adding another observation to the existing body of literature, or does it go beyond previous studies in a critical theoretical way, especially also with regard to Liu et al. 2019 (Current Biology)?\n\n- A more nuanced discussion of the more controversial literature on retinotopic vs. spatiotopic visual coding and where the current work is situated in introduction and discussion. The authors seem to confirm the importance of attention, and that could be made more explicit. In addition, there is much evidence both for retinotopy and spatiotopy which is simply overlooked.\n\n- How do the current results relate to the literature on a role of hMT+ in global motion perception? Is this a potential alternative interpretation of the results and if not, why not.\n\n2) The results and methods require more detailed explanation and some limited additional data, in particular with regards to:\n\n- the eye movement controls\n\n- the ROI definitions\n\n- the decoding method\n\n- some of the more marginal statistical results\n\n3) The reviewers would like to see a direct, quantitative comparison of the decoding for different motion directions of the drift illusion with and without attention (i.e. the attention comparison in 3A but for decoding left-right trajectory).\n\nReviewer #1 (Recommendations for the authors):\n\n1) lines 289-298: Eye movement control: \"Pursuit accuracy was confirmed during the behavioral experiment or each subject prior to the fMRI experiment.\" A weakness of the paper is the lack of eye movement measurements during the MR scan. Changes in eye movement for the combination of different combinations of up- and downwards drift with directions of motion could potentially provide an explanation of the source of the perceptual signals.\n\n(i) The authors should report the detailed behavioural data from their eye movement controls. For instance, show up and down pursuit trajectories separately when combined with left or right stimulus motion to exclude eye movement drift as a signal source and test whether they are different.\n\n(ii) This control is also relevant to the last point from the discussion (line 256) whether the authors are dealing with (a) a retinotopic representation associated with saccade driven remapping of receptive field or (b) a spatiotopic representation.\n\nThe authors defend the second argument based on the fact that their task does not require saccades (therefore no remapping), but there could still be catch-up saccades during the smooth pursuit phase and there is also no control for micro-saccades.\n\n2) The authors want to rule out the hypothesis that differences in pursuit eye movements could account for the decoding performance. In figure 3B right, they claim that hMT eye movement voxels did not contain information about the illusionary trajectory but:\n\nAccuracy for that decoding is 0.53+-0.8, p-value 0.052, which is just not significant. If you look at the table, For Expt 1, second condition, LO based decoding is at 0.5260 +- 0.10 and has p-value of 0.047. This could arise from the fact that the decoded categories are not the same and from changes in 95%CI, but given the number of comparisons and very close results, Expt 2 is a little bit less convincing than either Exit 1or 3 with their elegant designs.\n\nThis requires a more detailed and differentiated discussion of the underlying statistics.\n\nThe authors should also show (in a supplement) the distribution of the eye movement related voxels they excluded/analysed separately in the different subjects.\n\n3) In a previous (neurophysiology) study, the authors made the point that V5/MT signals in macaques were not coding a global motion percept (Hedges et al. 2011). A critical point there was the size of stimulus relative to the receptive field size in V5/MT. In reference to that, a more detailed discussion would be helpful, in terms of the extent to which the receptive fields in hMT+ encode spatial position in this paradigm and the size of their stimulus relative to hMT+ receptive field sizes might shed light on the underlying neural mechanism.\n\nIn general, it would be good to see more discussion of how the current study is situated relative to other studies that suggested (or not) a role of V5/MT with regard to perceptual signalling.\n\n4) More experimental detail in some areas would be helpful to the reader (see also points 1-3)\n\n- Abstract: Include type details of analysis used.\n\n- eye movement data from behavioural experiments (supplement)\n\n- number and distribution of eye movement related voxels.\n\nReviewer #2 (Recommendations for the authors):\n\nOne major concern, which could confuse readers, is the treatment of previous research of the authors. The opening line is: \"The primate visual system is retinotopic: neurons throughout visual cortex encode the location of visual stimuli on the retina (Gardner et al., 2008)\": a simple statement of undisputed fact, with no qualification, no mention that several other papers, before and after Gardner, have reported different data and drawn different conclusions. Later in the introduction we hear that there is indeed a controversy, with a possible explanation for the discrepant results (attentional focus). Later still their results are presented, strongly supporting a non-retinotopic representation in hMT+. Then in the discussion, the first sentence is reiterated: \"Activity throughout visual cortex is known to encode stimulus position in retinal, not spatiotopic, coordinates (Gardner et al., 2008)\", with no discussion of the discrepancy between the current results and this simple, undisputed \"historical fact\".\n\nThis is very hard to follow. However much one is attached to one's own work, it cannot be considered Gospel truth and everything else noise. This becomes particularly bizarre when the \"noise\" is consistent with the current research, and the previous publication not. I think the readers deserve a discussion on the discrepancy, and how best to move forward. The authors seem to confirm the importance of attention, and that could be made more explicit (but see methodological criticisms). In addition, there is much evidence both for retinotopy and spatiotopy which is simply overlooked.\n\nPerhaps the title could be improved, to reflect the actual conclusions of the paper (non-retinal motion response in MT). It does not really discover the \"Neural basis for the double-drift illusion\", as it specifically examines only the condition when observers track the stimulus, stabilizing it on the retina. It also does not speak to the main result, spatiotopic cortical representation.\n\nThe results and methods presentation also requires a more detailed explanation. At present many analyses are unclear or use the wrong methodology.\n\n1. Definition of ROIs. It is unclear if the stimuli used to define the map of figure 2A is moving vertically and if the %BOLD of figure 2B is taken for the extended ROI defined by the atlas as stated in the methods, or are simply the average of the significant foci of figure 2A. Given the maximum activity of 1% I am inclined to say that it is the response of only the significant voxels in the ROIs. Usually, peripheral stimuli do not produce such large activity. But if so the analysis is subject to circularity!\n\nIn the methods they state that given the great variability of segmentation with atlas they pooled together early visual areas. This is very peculiar, given the much greater variability in the segmentation of LO1 and LO2. Why not use a better and complete atlas, like the Glasser? Why not show a map of the average across all subjects?\n\n2. The decoding methods are very compressed and many details are not available. Normally for any decoding strategy the average activity is normalize so the decoding is not biased by the different mean. Has this been done?\n\nDecoding responses to stimuli that have a different average power of signal is trivial, so the results of figure 3A that compare two stimuli with greatly different energy should be eliminated. In any case the different stimulus power between stimuli in Figure 1C and the other two should be measured and discussed.\n\n3. The attention control is important, given the previous dispute, but it should be run between the two different motion directions. The question is: in the unattended condition can the direction of the illusory motion been decoded?\n\n4. Also eye-movements is a crucial aspect, but not so much for pursuit given that hopefully the subject were fixating, but for drift. The direction of eye drift could bias the decoding results. However, the comparison of decoding between sets of voxels of different numerosity is a potential problem. The stimulus voxels should be reduced in size to match the other ROI.\n\nTo conclude, I think the work is interesting and important, worth eventual publication in a good journal. However, it needs a major rewrite, detailing better important technical details, reviewing existing literature with a less egocentric bias, and discussing better the apparent conflicts between this paper and previously published studies, including those of the authors.\n\nReviewer #3 (Recommendations for the authors):\n\nRecommendations\n\n1. Regarding major comment 3 -- I believe there are a couple of things the authors can do to increase confidence that eye movements are not driving the results. (1) Redo the decoding from stimulus selective voxels while excluding all pursuit selective voxels. (2) If it is not possible to measure (or ideally, control) eye position in the scanner, a behavioral version of the \"attend to fixation\" experiment could be performed with eye tracking to determine whether smooth pursuit eye movements are affected by the illusory drift direction.\n\n2. It would be helpful if the authors could more thoroughly report the behavioral results for both tasks, including performance levels and threshold values on the fixation task to demonstrate that the task was demanding and the staircase was working well.\n",
+      "created_at": "2025-12-04T04:36:27.438864Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T04:36:27.438864Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T04:36:27.438864Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "b0c13cf0-0b41-4693-a07d-2c18afb320ca",
+      "content_id": "73134fed-3c08-4869-a857-55380fd826ac",
+      "claim_id": "C1",
+      "claim": "In the 'double-drift' illusion, local motion within a window moving in the periphery of the visual field alters the window's perceived path.",
+      "claim_type": "EXPLICIT",
+      "source": "In the 'double-drift' illusion, local motion within a window moving in the periphery of the visual field alters the window's perceived path.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definitional statement about the double-drift illusion that is established in the literature and forms the basis of the study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:27.438864Z"
+    },
+    {
+      "id": "e2e8dd0a-bebd-4271-b213-5c6e7b87541e",
+      "content_id": "73134fed-3c08-4869-a857-55380fd826ac",
+      "claim_id": "C2",
+      "claim": "The double-drift illusion is strong even when the eyes track a target whose motion matches the window so that the stimulus remains stable on the retina.",
+      "claim_type": "EXPLICIT",
+      "source": "The illusion is strong even when the eyes track a target whose motion matches the window so that the stimulus remains stable on the retina.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement references established knowledge about the double-drift illusion during smooth pursuit.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:27.438864Z"
+    },
+    {
+      "id": "667804f1-1b4e-4086-9e99-badf403826b3",
+      "content_id": "73134fed-3c08-4869-a857-55380fd826ac",
+      "claim_id": "C3",
+      "claim": "The double-drift illusion during smooth pursuit implies that the illusion involves the integration of retinal signals with non-retinal eye-movement signals.",
+      "claim_type": "EXPLICIT",
+      "source": "This implies that the illusion involves the integration of retinal signals with non-retinal eye-movement signals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the observation that the illusion persists when the stimulus is retinally stabilized.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:27.438864Z"
+    },
+    {
+      "id": "f64953b5-ecf0-4298-a9d7-73d2ec673328",
+      "content_id": "73134fed-3c08-4869-a857-55380fd826ac",
+      "claim_id": "C4",
+      "claim": "Multiple cortical areas responded more strongly during the illusion than a control condition that was matched for low-level stimulus properties.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified a number of cortical areas that responded more strongly during the illusion than a control condition that was matched for low-level stimulus properties.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental fMRI data comparing illusion and control conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:27.438864Z"
+    },
+    {
+      "id": "25e4c72a-c62f-4add-8fab-ab98206fff7e",
+      "content_id": "73134fed-3c08-4869-a857-55380fd826ac",
+      "claim_id": "C5",
+      "claim": "Only in area hMT+ was it possible to decode the illusory trajectory.",
+      "claim_type": "EXPLICIT",
+      "source": "Only in area hMT+ was it possible to decode the illusory trajectory.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of the main experimental finding based on multivariate decoding analysis of fMRI data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:27.438864Z"
+    },
+    {
+      "id": "2bf3a36d-c56d-42dd-a983-935f129b051d",
+      "content_id": "73134fed-3c08-4869-a857-55380fd826ac",
+      "claim_id": "C6",
+      "claim": "Subjects accurately tracked the moving target during fMRI scanning.",
+      "claim_type": "EXPLICIT",
+      "source": "Concurrent eye tracking confirmed that subjects accurately tracked the moving target",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by concurrent eye tracking measurements during fMRI.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:27.438864Z"
+    },
+    {
+      "id": "955ba288-cda2-4583-abb1-58c92a2af8f7",
+      "content_id": "73134fed-3c08-4869-a857-55380fd826ac",
+      "claim_id": "C7",
+      "claim": "The illusion trajectory could not be decoded using eye position measurements recorded during fMRI scanning.",
+      "claim_type": "EXPLICIT",
+      "source": "we were unable to decode the illusion trajectory using eye position measurements recorded during fMRI scanning, ruling out explanations based on differences in oculomotor behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on decoding analysis applied to eye tracking data collected during fMRI.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:27.438864Z"
+    },
+    {
+      "id": "ae87876f-6c6b-422e-a2b8-112b5fc3ce69",
+      "content_id": "73134fed-3c08-4869-a857-55380fd826ac",
+      "claim_id": "C8",
+      "claim": "The results provide evidence for a perceptual representation in human visual cortex that incorporates extraretinal information.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results provide evidence for a perceptual representation in human visual cortex that incorporates extraretinal information.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion inferred from the experimental findings.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:27.438864Z"
+    },
+    {
+      "id": "f3797b72-a947-43c5-868f-7c71873a5ffb",
+      "content_id": "73134fed-3c08-4869-a857-55380fd826ac",
+      "claim_id": "C9",
+      "claim": "Neurons throughout visual cortex encode the location of visual stimuli on the retina.",
+      "claim_type": "EXPLICIT",
+      "source": "Neurons throughout visual cortex encode the location of visual stimuli on the retina, suggesting that the visual system uses a primarily retina-centered reference frame.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from the neuroscience literature about visual cortex organization.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:27.438864Z"
+    },
+    {
+      "id": "ffd67b46-747d-4324-a5e6-a1da0b72d7bd",
+      "content_id": "73134fed-3c08-4869-a857-55380fd826ac",
+      "claim_id": "C10",
+      "claim": "Visual perception is stable across frequent eye movements that displace the retinal image.",
+      "claim_type": "EXPLICIT",
+      "source": "Yet visual perception is stable across frequent eye movements that displace the retinal image.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a well-established observation in visual neuroscience.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:27.438864Z"
+    },
+    {
+      "id": "087aa9f6-2f33-4e28-bfaa-fc3e5e963df1",
+      "content_id": "73134fed-3c08-4869-a857-55380fd826ac",
+      "claim_id": "C11",
+      "claim": "Neurons in the ventral intraparietal area (VIP) in macaque monkeys exhibit receptive fields that do not change position when the eyes move.",
+      "claim_type": "EXPLICIT",
+      "source": "This idea has perhaps received its strongest support from monkey single-unit recording studies showing that neurons in the ventral intraparietal area (VIP) in macaque monkeys exhibit receptive fields that do not change position when the eyes move (Duhamel et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a specific study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:27.438864Z"
+    },
+    {
+      "id": "1e47b001-d2c5-454d-8326-e41d53d602d2",
+      "content_id": "73134fed-3c08-4869-a857-55380fd826ac",
+      "claim_id": "C12",
+      "claim": "Visually evoked responses in both human MT/MST (hMT+) and the lateral occipital complex (LOC) have been reported to be invariant to changes in eye position.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, visually evoked responses in both human MT/MST (hMT+) and the lateral occipital complex (LOC) have been reported to be invariant to changes in eye position (d'Avossa et al., 2007; McKyton and Zohary, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to specific studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:27.438864Z"
+    },
+    {
+      "id": "07e40931-5b14-48fa-81f1-5093a0146d99",
+      "content_id": "73134fed-3c08-4869-a857-55380fd826ac",
+      "claim_id": "C13",
+      "claim": "A number of studies have measured spatial receptive fields for a range of eye positions and found that receptive fields change position when the eyes move.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, a number of studies have measured spatial receptive fields for a range of eye positions and found that receptive fields change position when the eyes move, suggesting that the brain uses a retinotopic reference frame (Gardner et al., 2008; Golomb and Kanwisher, 2012; Merriam et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to multiple studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:27.438864Z"
+    },
+    {
+      "id": "9f7754b5-7c97-45da-ae5a-60de06958ded",
+      "content_id": "73134fed-3c08-4869-a857-55380fd826ac",
+      "claim_id": "C14",
+      "claim": "The reference frame of visual responses can shift from retinotopic to spatiotopic depending on the attentional state of the observer.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, Crespi et al., 2011 reported that the reference frame of visual responses can shift from retinotopic to spatiotopic depending on the attentional state of the observer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a specific study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:27.438864Z"
+    },
+    {
+      "id": "e5f46da5-58e2-4cca-a50b-60e591a8e97c",
+      "content_id": "73134fed-3c08-4869-a857-55380fd826ac",
+      "claim_id": "C15",
+      "claim": "Spatiotopic representations become more prominent in tasks requiring sequences of eye movements.",
+      "claim_type": "EXPLICIT",
+      "source": "Behavioral studies have reported that spatiotopic representations become more prominent in tasks requiring sequences of eye movements, suggesting that spatiotopic coordinates are built-up over time (Poletti et al., 2013; Sun and Goldberg, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to specific behavioral studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:27.438864Z"
+    },
+    {
+      "id": "4a84511b-ae56-4cc4-adde-760e383e073f",
+      "content_id": "73134fed-3c08-4869-a857-55380fd826ac",
+      "claim_id": "C16",
+      "claim": "The double-drift illusion occurs when a combination of local motion and an orthogonal global motion trajectory causes a strong perception of illusory drift away from the veridical trajectory.",
+      "claim_type": "EXPLICIT",
+      "source": "The double-drift illusion occurs when a combination of local motion and an orthogonal global motion trajectory causes a strong perception of illusory drift away from the veridical trajectory.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definitional statement about the double-drift illusion based on established literature.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:27.438864Z"
+    },
+    {
+      "id": "cc11deb8-4f91-4214-9ec0-bb84c6a8e924",
+      "content_id": "73134fed-3c08-4869-a857-55380fd826ac",
+      "claim_id": "C17",
+      "claim": "The double-drift illusion can be strikingly large so that the stimulus appears to deviate by as much as 45\u00b0 away from the veridical motion path.",
+      "claim_type": "EXPLICIT",
+      "source": "The illusion can be strikingly large so that the stimulus appears to deviate by as much as 45\u00b0 away from the veridical motion path (Tse and Hsieh, 2006; Shapiro et al., 2010; Lisi and Cavanagh, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to multiple studies characterizing the illusion magnitude.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:27.438864Z"
+    },
+    {
+      "id": "0ac1522b-b928-4f98-bd93-6280009517ac",
+      "content_id": "73134fed-3c08-4869-a857-55380fd826ac",
+      "claim_id": "C18",
+      "claim": "The double-drift illusion persists even during smooth pursuit when the stimulus is stabilized on the retina.",
+      "claim_type": "EXPLICIT",
+      "source": "A recent study revealed that the illusion persists even during smooth pursuit when the stimulus is stabilized on the retina (Cavanagh and Tse, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a specific study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:27.438864Z"
+    },
+    {
+      "id": "f289125d-bcde-4a5e-b7fe-97c19e2c6863",
+      "content_id": "73134fed-3c08-4869-a857-55380fd826ac",
+      "claim_id": "C19",
+      "claim": "Several brain areas encode stable stimulus position during pursuit eye movements.",
+      "claim_type": "EXPLICIT",
+      "source": "A number of brain areas encode stable stimulus position during pursuit eye movements (i.e., 'real position' cells) (Nau et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a specific study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:27.438864Z"
+    },
+    {
+      "id": "03219169-bc19-4b21-84c8-4d08b00dc3d4",
+      "content_id": "73134fed-3c08-4869-a857-55380fd826ac",
+      "claim_id": "C21",
+      "claim": "When subjects were attending to a task at fixation, the illusion could still be decoded from activity in LO, V3A/B, and hMT+, but not from EVC.",
+      "claim_type": "EXPLICIT",
+      "source": "When subjects were attending to a task at fixation (Exp 2), the illusion could still be decoded from activity in LO, V3A/B, and hMT+, but not from EVC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on experimental data from Experiment 2 with the fixation task.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:27.438864Z"
+    },
+    {
+      "id": "147bb503-bdd7-4da9-88c4-fa350d5d8ad6",
+      "content_id": "73134fed-3c08-4869-a857-55380fd826ac",
+      "claim_id": "C22",
+      "claim": "Overall decoding accuracy was slightly reduced when participants performed a demanding task at fixation.",
+      "claim_type": "EXPLICIT",
+      "source": "While overall decoding accuracy was slightly reduced in this experiment, we found that decoding accuracy remained robust and significant in LO, hMT+, and V3A/B, but not in early visual cortex (EVC) (Figure 3A, right)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on comparison of decoding results between Experiment 1 and Experiment 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:27.438864Z"
+    },
+    {
+      "id": "ebc44894-29c0-47a1-b57d-ec31a9ca82ff",
+      "content_id": "73134fed-3c08-4869-a857-55380fd826ac",
+      "claim_id": "C23",
+      "claim": "The classifier was sensitive to information related to encoding the perceived position of the stimulus during the illusion.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, we conclude that the classifier was sensitive to information related to encoding the perceived position of the stimulus during the illusion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the experimental results showing decoding persists when attention is controlled.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:27.438864Z"
+    },
+    {
+      "id": "3afb2a8c-5511-43a2-8018-0f7dcb85da67",
+      "content_id": "73134fed-3c08-4869-a857-55380fd826ac",
+      "claim_id": "C24",
+      "claim": "Only area hMT+ could discriminate leftward from rightward illusory paths.",
+      "claim_type": "EXPLICIT",
+      "source": "Of all the visual areas tested, only area hMT+ could discriminate leftward from rightward illusory paths (Figure 3B, left).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct statement of experimental results from trajectory decoding analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:27.438864Z"
+    },
+    {
+      "id": "a3be3926-70ac-4f8e-a208-3c40f31af1b3",
+      "content_id": "73134fed-3c08-4869-a857-55380fd826ac",
+      "claim_id": "C25",
+      "claim": "The ability to discriminate the illusory motion path suggests a non-retinotopic representation of stimulus position.",
+      "claim_type": "EXPLICIT",
+      "source": "Because the stimulus remained at a constant retinal location, the ability to discriminate the illusory motion path suggests a non-retinotopic representation of stimulus position.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the experimental finding that trajectory can be decoded despite constant retinal position.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:27.438864Z"
+    },
+    {
+      "id": "debca41b-c83d-4f13-8bc6-ef2ea679a312",
+      "content_id": "73134fed-3c08-4869-a857-55380fd826ac",
+      "claim_id": "C26",
+      "claim": "Voxels that responded in the pursuit localizer do not carry information that distinguishes the drift paths in any of the ROIs.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that responses in these voxels do not carry information that distinguishes the drift paths, in any of the ROIs (Figure 3B, right).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on decoding analysis using voxels selective for pursuit eye movements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:27.438864Z"
+    },
+    {
+      "id": "e537ec8b-52e4-49e8-8b46-91f301cfd57d",
+      "content_id": "73134fed-3c08-4869-a857-55380fd826ac",
+      "claim_id": "C27",
+      "claim": "The information being utilized by the classifier is not due to differences in pursuit eye movements.",
+      "claim_type": "EXPLICIT",
+      "source": "Results from this control analysis suggest that the information being utilized by the classifier is not due to differences in pursuit eye movements.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the control analysis using pursuit-selective voxels.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:27.438864Z"
+    },
+    {
+      "id": "a57e75c1-ccb1-4bec-a7ed-020868dadbd7",
+      "content_id": "73134fed-3c08-4869-a857-55380fd826ac",
+      "claim_id": "C28",
+      "claim": "There was no information contained in the oculomotor behavior related to perceiving the illusion.",
+      "claim_type": "EXPLICIT",
+      "source": "In this subset of subjects, we replicated our main fMRI results (decoding the illusion trajectory from hMT+ responses), but we were unable to decode the illusory trajectory from the eye position measurements alone, indicating that there was no information contained in the oculomotor behavior related to perceiving the illusion (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on decoding analysis applied to concurrent eye tracking data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:27.438864Z"
+    },
+    {
+      "id": "aab164e8-e058-4f3e-b9b6-2f8dab275307",
+      "content_id": "73134fed-3c08-4869-a857-55380fd826ac",
+      "claim_id": "C29",
+      "claim": "There were no reliable differences in microsaccade characteristics (amplitude and direction) between illusory conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, we quantified microsaccade characteristics (amplitude and direction) and found no reliable differences between illusory conditions (illusion vs. no-illusion), or between the direction of the illusion (left vs. right).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on analysis of microsaccade data from eye tracking.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:27.438864Z"
+    },
+    {
+      "id": "643cbf62-9abf-4ec8-ace6-6752aa42814a",
+      "content_id": "73134fed-3c08-4869-a857-55380fd826ac",
+      "claim_id": "C30",
+      "claim": "Oculomotor behavior was unlikely an underlying cause of the fMRI findings.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that oculomotor behavior was unlikely an underlying cause of the fMRI findings reported here.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the eye tracking control analyses.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:27.438864Z"
+    },
+    {
+      "id": "e27d4e14-ff96-48f8-83ba-05c95e495dc8",
+      "content_id": "73134fed-3c08-4869-a857-55380fd826ac",
+      "claim_id": "C31",
+      "claim": "The classifier was unable to decode the conditions containing local motion alone.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the classifier was unable to decode the conditions containing local motion alone (i.e., discriminating left-followed-by-right from right-followed-by-leftward; Figure 3C, right).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on decoding analysis of the local motion control conditions in Experiment 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:27.438864Z"
+    },
+    {
+      "id": "85e3ac85-86a2-4732-913f-b13ade0deefd",
+      "content_id": "73134fed-3c08-4869-a857-55380fd826ac",
+      "claim_id": "C32",
+      "claim": "Information about illusory motion paths in hMT+ is not due to local motion of the stimulus alone.",
+      "claim_type": "EXPLICIT",
+      "source": "This result demonstrates that information about illusory motion paths in hMT+ is not due to local motion of the stimulus alone.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the local motion control experiment results.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:27.438864Z"
+    },
+    {
+      "id": "1021a0fd-a3f2-4d9b-b867-3d622b8cc84a",
+      "content_id": "73134fed-3c08-4869-a857-55380fd826ac",
+      "claim_id": "C33",
+      "claim": "fMRI BOLD responses in several visual cortical areas could reliably discriminate the double-drift illusion from a control condition that was matched for motion energy.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that fMRI BOLD responses in several visual cortical areas could reliably discriminate the double-drift illusion from a control condition that was matched for motion energy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement of the main experimental findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:27.438864Z"
+    },
+    {
+      "id": "df1f124a-466c-4ead-beaa-c202b770b4a5",
+      "content_id": "73134fed-3c08-4869-a857-55380fd826ac",
+      "claim_id": "C34",
+      "claim": "In EVC, decoding of the illusion could be explained by attentional effects associated with perceiving the illusion.",
+      "claim_type": "EXPLICIT",
+      "source": "In EVC, this result could be explained by attentional effects associated with perceiving the illusion, since when attention was directed away from the illusion, decoding in EVC dropped to chance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on comparing results between attend-stimulus and attend-fixation conditions.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:27.438864Z"
+    },
+    {
+      "id": "4fa063d0-2a1e-4e16-aa0b-c85b9fa0b174",
+      "content_id": "73134fed-3c08-4869-a857-55380fd826ac",
+      "claim_id": "C35",
+      "claim": "Responses in hMT+ could discriminate the illusory drift path, suggesting that retinal and extraretinal information are integrated in hMT+.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, responses in hMT+ could also discriminate the illusory drift path, suggesting that retinal and extraretinal information are integrated in hMT+ and used to construct the spatiotopic perception experienced during the illusion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the trajectory decoding results in hMT+.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:27.438864Z"
+    },
+    {
+      "id": "ac08d90a-b043-42b6-9fea-f53144b31344",
+      "content_id": "73134fed-3c08-4869-a857-55380fd826ac",
+      "claim_id": "C36",
+      "claim": "Non-retinal stimulus position encoding occurs in human extrastriate visual cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results may indicate non-retinal stimulus position encoding occurs in human extrastriate visual cortex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative conclusion based on the overall pattern of results.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:27.438864Z"
+    },
+    {
+      "id": "26c3e8a2-e2e7-4a97-a3d6-31e2b3f48f72",
+      "content_id": "73134fed-3c08-4869-a857-55380fd826ac",
+      "claim_id": "C37",
+      "claim": "A coarse-scale map for direction of motion has been observed throughout visual cortex, including all of the areas included in the study.",
+      "claim_type": "EXPLICIT",
+      "source": "One possibility is related to a coarse-scale map for direction of motion, which has been observed throughout visual cortex, including all of the areas included in our study (Wang et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a specific study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:27.438864Z"
+    },
+    {
+      "id": "f53f76c1-12e4-4826-9578-c4394a8171af",
+      "content_id": "73134fed-3c08-4869-a857-55380fd826ac",
+      "claim_id": "C38",
+      "claim": "The coarse-scale map for direction of motion in early visual areas (V1/V2/V3) is thought to result from an aperture-inward bias.",
+      "claim_type": "EXPLICIT",
+      "source": "The coarse-scale map for direction of motion in early visual areas (V1/V2/V3) is thought to result from an aperture-inward bias: larger responses were observed for motion away from the aperture edge (Wang et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a specific study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:27.438864Z"
+    },
+    {
+      "id": "1ce65412-0cc0-4a2f-9688-cc110f8979e5",
+      "content_id": "73134fed-3c08-4869-a857-55380fd826ac",
+      "claim_id": "C39",
+      "claim": "The coarse-scale map observed in hMT+ consisted of a bias for motion toward the fovea.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the coarse-scale map observed in hMT+ did not depend on the aperture boundary, but instead consisted of a bias for motion toward the fovea (Wang et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a specific study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:27.438864Z"
+    },
+    {
+      "id": "24f3e892-5efb-4fb5-8ab1-13bb80909bd5",
+      "content_id": "73134fed-3c08-4869-a857-55380fd826ac",
+      "claim_id": "C40",
+      "claim": "A net motion bias toward the fovea in hMT+ is unlikely to account for the observed results.",
+      "claim_type": "EXPLICIT",
+      "source": "We think it is hence unlikely that a net motion bias toward the fovea in hMT + accounts for the observed results.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the balanced design of the experimental conditions.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:27.438864Z"
+    },
+    {
+      "id": "692cbcd0-b529-4f23-8e20-12fd4a33f2e0",
+      "content_id": "73134fed-3c08-4869-a857-55380fd826ac",
+      "claim_id": "C41",
+      "claim": "Differences in BOLD activity to the two illusory drift paths arise because of the topographic organization within hMT+.",
+      "claim_type": "EXPLICIT",
+      "source": "An alternative account is that differences in BOLD activity to the two illusory drift paths arise because of the topographic organization within hMT+ (Huk et al., 2002; Amano et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative alternative explanation supported by citations.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:27.438864Z"
+    },
+    {
+      "id": "a6bf3e94-21d8-4d88-8292-a336a614675c",
+      "content_id": "73134fed-3c08-4869-a857-55380fd826ac",
+      "claim_id": "C42",
+      "claim": "The average eccentricity of the perceived drift path is higher during rightward drift and lower during leftward drift.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the average eccentricity of the perceived drift path is higher during rightward drift and lower during leftward drift.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the geometry of the illusory trajectories.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:27.438864Z"
+    },
+    {
+      "id": "a4687baf-8ed7-4bc4-ae4d-9197fe7b1a4d",
+      "content_id": "73134fed-3c08-4869-a857-55380fd826ac",
+      "claim_id": "C43",
+      "claim": "There is an explicit representation of the perceived position of a stimulus in hMT+, while position encoding in EVC is entirely veridical.",
+      "claim_type": "EXPLICIT",
+      "source": "This second account depends on there being an explicit representation of the perceived position of a stimulus in hMT+, while position encoding in EVC is entirely veridical.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the differential decoding results across brain areas.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:27.438864Z"
+    },
+    {
+      "id": "9af13fa7-fd78-4010-a9cc-1588b91bc2c4",
+      "content_id": "73134fed-3c08-4869-a857-55380fd826ac",
+      "claim_id": "C44",
+      "claim": "BOLD activity in hMT+ reflects the illusory position during motion-induced position shift.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this account, one fMRI study (Maus et al., 2013) has reported that BOLD activity in hMT+ reflects the illusory position during motion-induced position shift.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a specific study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:27.438864Z"
+    },
+    {
+      "id": "47c4980e-cc98-46a2-8d26-ae017bc652d5",
+      "content_id": "73134fed-3c08-4869-a857-55380fd826ac",
+      "claim_id": "C45",
+      "claim": "Activity throughout visual cortex is known to encode stimulus position in retinal, not spatiotopic, coordinates.",
+      "claim_type": "EXPLICIT",
+      "source": "Activity throughout visual cortex is known to encode stimulus position in retinal, not spatiotopic, coordinates (Gardner et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a specific study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:27.438864Z"
+    },
+    {
+      "id": "90cdad64-0c52-444d-a089-1141d05aa443",
+      "content_id": "73134fed-3c08-4869-a857-55380fd826ac",
+      "claim_id": "C46",
+      "claim": "It remains unknown whether retinotopic coding is also universal in visual cortex for motion illusions.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it remains unknown whether retinotopic coding is also universal in visual cortex for motion illusions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the current state of knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:27.438864Z"
+    },
+    {
+      "id": "d75b3bf0-a2d5-40aa-82bf-6435afe87300",
+      "content_id": "73134fed-3c08-4869-a857-55380fd826ac",
+      "claim_id": "C47",
+      "claim": "The data may imply a difference between EVC and downstream areas in the spatial encoding of illusory motion.",
+      "claim_type": "EXPLICIT",
+      "source": "If the second account is accurate, our data may imply a difference between EVC and downstream areas in the spatial encoding of illusory motion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the results.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:27.438864Z"
+    },
+    {
+      "id": "3e106019-97af-405d-aa7e-71b99bb543a3",
+      "content_id": "73134fed-3c08-4869-a857-55380fd826ac",
+      "claim_id": "C48",
+      "claim": "In the smooth-pursuit variant of the illusion, the envelope only has a trajectory when defined in spatiotopic coordinates.",
+      "claim_type": "EXPLICIT",
+      "source": "In the smooth-pursuit variant of the illusion, the envelope only has a trajectory when defined in spatiotopic coordinates, since the stimulus remains at a constant retinal location.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the geometry of the stimulus during smooth pursuit.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:27.438864Z"
+    },
+    {
+      "id": "813873cb-4d96-4d15-8d4d-e355a6315972",
+      "content_id": "73134fed-3c08-4869-a857-55380fd826ac",
+      "claim_id": "C49",
+      "claim": "The presence of the illusion with a stable position of the stimulus on the retina suggests some degree of spatiotopic processing in the brain.",
+      "claim_type": "EXPLICIT",
+      "source": "With a stable position of the stimulus on the retina, the presence of the illusion suggests some degree of spatiotopic processing in the brain (Turi and Burr, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference supported by citation.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:27.438864Z"
+    },
+    {
+      "id": "7528fb2c-31eb-4d65-8ff0-bc5ccc43e692",
+      "content_id": "73134fed-3c08-4869-a857-55380fd826ac",
+      "claim_id": "C50",
+      "claim": "Spatiotopic processing could be accomplished by the formation of an explicit spatiotopic reference frame.",
+      "claim_type": "EXPLICIT",
+      "source": "This could be accomplished by the formation of an explicit spatiotopic reference frame (Duhamel et al., 1997; d'd'Avossa et al., 2007; Crespi et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative possibility supported by citations.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:27.438864Z"
+    },
+    {
+      "id": "44185405-f3ce-4c32-a489-b460a16fd9de",
+      "content_id": "73134fed-3c08-4869-a857-55380fd826ac",
+      "claim_id": "C51",
+      "claim": "Spatiotopic processing could be accomplished through a computation by which a retinotopic input is combined with an eye position gain field.",
+      "claim_type": "EXPLICIT",
+      "source": "Alternatively this could be accomplished through a computation by which a retinotopic input is combined with an eye position gain field (Merriam et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative alternative possibility supported by citation.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:27.438864Z"
+    },
+    {
+      "id": "4e548fdb-6c2f-4825-9b64-aefcfa36fdf8",
+      "content_id": "73134fed-3c08-4869-a857-55380fd826ac",
+      "claim_id": "C52",
+      "claim": "When subjects were attending the stimulus, illusion decoding was possible in all the visual areas studied.",
+      "claim_type": "EXPLICIT",
+      "source": "When subjects were attending the stimulus, illusion decoding was possible in all the visual areas that we studied, raising the possibility that the illusion attracted attention, resulting in a higher BOLD response during illusory blocks (see Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on experimental results from Experiment 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:27.438864Z"
+    },
+    {
+      "id": "3066ad2f-9cdd-4175-955d-e7d37f590371",
+      "content_id": "73134fed-3c08-4869-a857-55380fd826ac",
+      "claim_id": "C53",
+      "claim": "The locus of attention can affect the apparent reference frame in which a stimulus is encoded.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous fMRI studies have claimed that the locus of attention can affect the apparent reference frame in which a stimulus is encoded (Crespi et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a specific study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:27.438864Z"
+    },
+    {
+      "id": "f65e0716-5db9-42b2-9d08-9ea64ad18640",
+      "content_id": "73134fed-3c08-4869-a857-55380fd826ac",
+      "claim_id": "C54",
+      "claim": "Attention and task do have an impact on the spatial encoding of the double-drift illusion.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results in Exp 2, in which subjects attended fixation, and not the stimulus, demonstrate that attention and task do have an impact on the spatial encoding of the double-drift illusion",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from comparing results across experiments with different attentional demands.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:27.438864Z"
+    },
+    {
+      "id": "44b367bc-e12d-4682-acdb-8e4fe34955ac",
+      "content_id": "73134fed-3c08-4869-a857-55380fd826ac",
+      "claim_id": "C55",
+      "claim": "Both spatiotopic representations and receptive field remapping underlie visual stability across eye movements.",
+      "claim_type": "EXPLICIT",
+      "source": "Behavioral investigations into mechanisms for visual stability across eye movements have found evidence that both spatiotopic representations and receptive field remapping underly visual stability (Poletti et al., 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a specific study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:27.438864Z"
+    },
+    {
+      "id": "d857f6df-e5e7-464d-9e04-7605106a57ca",
+      "content_id": "73134fed-3c08-4869-a857-55380fd826ac",
+      "claim_id": "C56",
+      "claim": "After a single saccade, receptive field remapping is the primary mechanism underlying visual stability.",
+      "claim_type": "EXPLICIT",
+      "source": "After a single saccade, receptive field remapping is the primary mechanism underlying visual stability, whereas spatiotopic representations become prominent after multiple saccades (Sun and Goldberg, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a specific study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:27.438864Z"
+    },
+    {
+      "id": "37a28b4a-6788-4a8e-ac6f-1f6b47a9c777",
+      "content_id": "73134fed-3c08-4869-a857-55380fd826ac",
+      "claim_id": "C57",
+      "claim": "It is unlikely that perisaccadic remapping contributed to the results of the current study.",
+      "claim_type": "EXPLICIT",
+      "source": "The version of the double-drift illusion employed in the current study did not require saccadic eye movements, making it unlikely that perisaccadic remapping contributed to our results.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the experimental design using smooth pursuit.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:27.438864Z"
+    },
+    {
+      "id": "0d5d6314-f05a-4f7c-ac90-2f4a6e089aa7",
+      "content_id": "73134fed-3c08-4869-a857-55380fd826ac",
+      "claim_id": "C58",
+      "claim": "The remapping mechanism is relevant only for saccades.",
+      "claim_type": "EXPLICIT",
+      "source": "We find it plausible to assume, therefore, that the remapping mechanism is relevant only for saccades.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative inference based on the temporal characteristics of saccades vs. smooth pursuit.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:27.438864Z"
+    },
+    {
+      "id": "141035d5-d3eb-4bf4-8561-22a7ee889665",
+      "content_id": "73134fed-3c08-4869-a857-55380fd826ac",
+      "claim_id": "C59",
+      "claim": "A spatiotopic signal robust to smooth pursuit provides evidence for a spatiotopic representation rather than remapping.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, a spatiotopic signal robust to smooth pursuit provides evidence for a different correction mechanism, namely a spatiotopic representation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the experimental design and results.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:27.438864Z"
+    },
+    {
+      "id": "dde56197-6e36-4242-bb4d-d81642161134",
+      "content_id": "73134fed-3c08-4869-a857-55380fd826ac",
+      "claim_id": "C60",
+      "claim": "The results suggest that stimulus position was encoded in a spatiotopic representation.",
+      "claim_type": "EXPLICIT",
+      "source": "From this, our results suggest that stimulus position was encoded in a spatiotopic representation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion inferred from the experimental findings.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:27.438864Z"
+    },
+    {
+      "id": "a64f6f04-10b6-4403-8855-fc2a4698ca58",
+      "content_id": "73134fed-3c08-4869-a857-55380fd826ac",
+      "claim_id": "C61",
+      "claim": "Liu et al., 2019 used a decoding approach to identify brain activity reflecting the percept during a version of the double-drift illusion that did not include smooth pursuit.",
+      "claim_type": "EXPLICIT",
+      "source": "A recent study Liu et al., 2019 used a decoding approach to identify brain activity reflecting the percept during a version of the double-drift illusion that did not include smooth pursuit.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of a previous study supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:27.438864Z"
+    },
+    {
+      "id": "df7c5cec-6927-40eb-9dd5-33df0b59b0e6",
+      "content_id": "73134fed-3c08-4869-a857-55380fd826ac",
+      "claim_id": "C62",
+      "claim": "Liu et al. found that both veridical motion and illusory motion direction could be decoded from visual cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "Briefly, they found that both veridical motion and illusory motion direction could be decoded from visual cortex, but a classifier trained on veridical motion could not decode illusory motion and vice versa, suggesting differences between the patterns of activity in the two conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of findings from a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:27.438864Z"
+    },
+    {
+      "id": "fcda6a59-b41d-45cc-b296-e70fc5df6427",
+      "content_id": "73134fed-3c08-4869-a857-55380fd826ac",
+      "claim_id": "C63",
+      "claim": "Cross-decoding between veridical and illusory motion was possible primarily in prefrontal cortex in the Liu et al. study.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, cross-decoding was possible primarily in prefrontal cortex, suggesting that activity in PFC reflects the perceived motion direction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of findings from a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:27.438864Z"
+    },
+    {
+      "id": "ee072c84-07f3-4b53-8e3c-9f0de51cf08f",
+      "content_id": "73134fed-3c08-4869-a857-55380fd826ac",
+      "claim_id": "C64",
+      "claim": "The results reported by Liu et al., 2019 are surprising because the brain regions that showed significant decoding changed when the double-drift experiment was repeated with exactly the same stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "The results reported by Liu et al., 2019 are surprising, on several accounts. First, when the double-drift experiment was repeated with exactly the same stimuli, the brain regions that showed significant decoding changed (compare their Figure 4A with their Figure 6A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a critical evaluation of a previous study based on comparing their reported results.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:27.438864Z"
+    },
+    {
+      "id": "9316b28c-6c32-48b5-b452-998244d9b106",
+      "content_id": "73134fed-3c08-4869-a857-55380fd826ac",
+      "claim_id": "C65",
+      "claim": "Multiple factors, such as spatial attention, may influence the ability to decode an illusory motion path.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings raise important questions and suggest that multiple factors, such as spatial attention, may influence the ability to decode an illusory motion path, as we have demonstrated in our study.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the current study's findings and comparison with previous work.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:27.438864Z"
+    },
+    {
+      "id": "b1648919-df76-46dc-b96b-641d5252df78",
+      "content_id": "73134fed-3c08-4869-a857-55380fd826ac",
+      "claim_id": "C66",
+      "claim": "The results of Liu et al. do not have direct bearing on which reference frame was used to encode the stimulus location.",
+      "claim_type": "EXPLICIT",
+      "source": "Regardless, the results of Liu et al. do not have direct bearing on which reference frame was used to encode the stimulus location, which is the topic of the current study.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an evaluative statement about the relevance of a previous study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:27.438864Z"
+    },
+    {
+      "id": "bde9bcf2-2cb0-4c18-ae4c-0128a52cc33d",
+      "content_id": "73134fed-3c08-4869-a857-55380fd826ac",
+      "claim_id": "C67",
+      "claim": "In the Liu et al. study, the encoding of the illusion could have been in either retinal or spatiotopic coordinates because subjects were fixating on the Gabor.",
+      "claim_type": "EXPLICIT",
+      "source": "Because in Liu et al. subjects were fixating on the Gabor, the encoding of the illusion could have been in either retinal or spatiotopic coordinates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the interpretation of a previous study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:27.438864Z"
+    },
+    {
+      "id": "a9542f72-4cc8-4325-8c1c-3634bbf3a44b",
+      "content_id": "73134fed-3c08-4869-a857-55380fd826ac",
+      "claim_id": "C68",
+      "claim": "In the current study, the stimulus must have been encoded in spatiotopic coordinates.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, in our study, the stimulus must have been encoded in spatiotopic coordinates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the experimental design using smooth pursuit.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:27.438864Z"
+    },
+    {
+      "id": "08b97f50-86e8-443e-840d-5080b2b4c96f",
+      "content_id": "73134fed-3c08-4869-a857-55380fd826ac",
+      "claim_id": "C69",
+      "claim": "Data were acquired from 19 healthy participants with normal or corrected-to-normal vision.",
+      "claim_type": "EXPLICIT",
+      "source": "Data were acquired from 19 healthy participants (11 females, age range 23\u201334 y, mean 25.8 y) with normal or corrected-to-normal vision.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the participant sample.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:27.438864Z"
+    },
+    {
+      "id": "a9f3ac5e-0284-4abe-aa85-65df2514e9b0",
+      "content_id": "73134fed-3c08-4869-a857-55380fd826ac",
+      "claim_id": "C70",
+      "claim": "The Gabor pattern consisted of a vertically oriented sinusoidal grating with spatial frequency of 1 cycle/\u00b0 within a Gaussian envelope with standard deviation of 1 dva.",
+      "claim_type": "EXPLICIT",
+      "source": "A Gabor pattern, consisting of a vertically oriented sinusoidal grating (spatial frequency of 1 cycle/\u00b0) within a Gaussian envelope (standard deviation of 1 dva), moved back and forth along a linear, vertical trajectory with a length of 8\u00b0.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct description of the stimulus parameters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:27.438864Z"
+    },
+    {
+      "id": "9edeb56f-8240-4807-92e7-872c6e12d3a0",
+      "content_id": "73134fed-3c08-4869-a857-55380fd826ac",
+      "claim_id": "C71",
+      "claim": "The Gabor moved according to a linear velocity profile of 10\u00b0/s.",
+      "claim_type": "EXPLICIT",
+      "source": "The Gabor moved according to a linear velocity profile (10\u00b0/s) that was smoothed slightly at the top and bottom of the Gabor's path where it changed direction to facilitate accurate pursuit eye movements.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct description of the stimulus motion parameters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:27.438864Z"
+    },
+    {
+      "id": "844d467c-b499-43b7-92e6-d6b6669be130",
+      "content_id": "73134fed-3c08-4869-a857-55380fd826ac",
+      "claim_id": "C72",
+      "claim": "The Gabor's internal grating moved orthogonally relative to its trajectory with a speed of 6.66 Hz.",
+      "claim_type": "EXPLICIT",
+      "source": "The Gabor's internal grating moved orthogonally relative to its trajectory with a speed of 6.66 Hz, reversing its direction at the two endpoints of the trajectory.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct description of the internal motion parameters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:27.438864Z"
+    },
+    {
+      "id": "8db376ee-04d2-4161-901e-1eb277112024",
+      "content_id": "73134fed-3c08-4869-a857-55380fd826ac",
+      "claim_id": "C73",
+      "claim": "Participants fixated a target positioned 9\u201312 dva to the left of the Gabor envelope that moved smoothly alongside it.",
+      "claim_type": "EXPLICIT",
+      "source": "Participants fixated a target (0.2 dva, white dot with a black outer rim) that was positioned 9\u201312 dva to the left of the Gabor envelope and moved smoothly alongside it.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct description of the experimental procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:27.438864Z"
+    },
+    {
+      "id": "3c3c92d2-9111-4c8e-b482-f21fdd59c8b4",
+      "content_id": "73134fed-3c08-4869-a857-55380fd826ac",
+      "claim_id": "C74",
+      "claim": "Pursuit accuracy was confirmed during the behavioral experiment for each subject prior to the fMRI experiment.",
+      "claim_type": "EXPLICIT",
+      "source": "Pursuit accuracy was confirmed during the behavioral experiment for each subject prior to the fMRI experiment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the experimental procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:27.438864Z"
+    },
+    {
+      "id": "b0fe18aa-ca70-4b35-91fa-ce3034c38932",
+      "content_id": "73134fed-3c08-4869-a857-55380fd826ac",
+      "claim_id": "C75",
+      "claim": "The Gabor completed eight traversals per block in the main fMRI experiment.",
+      "claim_type": "EXPLICIT",
+      "source": "Each Gabor traversal lasted for 1.5 s (750 ms up, 750 ms down). The Gabor completed eight traversals in a 12 s block.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct description of the experimental design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:27.438864Z"
+    },
+    {
+      "id": "554ff206-9c4b-4758-a757-b89325799f2f",
+      "content_id": "73134fed-3c08-4869-a857-55380fd826ac",
+      "claim_id": "C76",
+      "claim": "Participants performed the attend-to-stimulus task with nearly 100% accuracy.",
+      "claim_type": "EXPLICIT",
+      "source": "The double-drift illusion is typically strong and unambiguous, even during smooth pursuit eye movements. Accordingly, participants performed the attend-to-stimulus task with nearly 100% accuracy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about behavioral performance in the experiment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:27.438864Z"
+    },
+    {
+      "id": "423a0f62-9a62-4d98-a730-919cbc1dc5d2",
+      "content_id": "73134fed-3c08-4869-a857-55380fd826ac",
+      "claim_id": "C77",
+      "claim": "Subjects detected the luminance changes with greater than 90% accuracy inside the scanner.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that subjects behavior improved inside the scanner and detected the luminance changes with greater than 90% accuracy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about behavioral performance in Experiment 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:27.438864Z"
+    },
+    {
+      "id": "f11ac85a-da4d-47cc-b505-698b2cd26d87",
+      "content_id": "73134fed-3c08-4869-a857-55380fd826ac",
+      "claim_id": "C78",
+      "claim": "fMRI data were acquired on a research-dedicated Siemens 7T Magnetom scanner using a 32-channel head coil.",
+      "claim_type": "EXPLICIT",
+      "source": "fMRI data were acquired from participants on a research-dedicated Siemens 7T Magnetom scanner using a 32-channel head coil, located in the Clinical Research Center on the National Institutes of Health campus (Bethesda, MD).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct description of the scanning equipment and parameters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:27.438864Z"
+    },
+    {
+      "id": "7e0d8a21-13a8-4847-a091-d9c330befab9",
+      "content_id": "73134fed-3c08-4869-a857-55380fd826ac",
+      "claim_id": "C79",
+      "claim": "ROIs were defined according to an anatomical template.",
+      "claim_type": "EXPLICIT",
+      "source": "ROIs were defined according to an anatomical template (Benson and Winawer, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the analysis method with citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:27.438864Z"
+    },
+    {
+      "id": "fd698778-a8e9-4073-ba07-291a04145f43",
+      "content_id": "73134fed-3c08-4869-a857-55380fd826ac",
+      "claim_id": "C80",
+      "claim": "V1, V2, and V3 were combined to form an early visual cortex ROI (EVC).",
+      "claim_type": "EXPLICIT",
+      "source": "V1, V2, and V3 were combined to form an early visual cortex ROI (EVC)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about how ROIs were defined.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:27.438864Z"
+    },
+    {
+      "id": "c32903a1-0a16-4286-81c1-d8ff57eb88a8",
+      "content_id": "73134fed-3c08-4869-a857-55380fd826ac",
+      "claim_id": "C81",
+      "claim": "TO1 and TO2 were combined to form hMT+, corresponding to MT and MST.",
+      "claim_type": "EXPLICIT",
+      "source": "TO1 and TO2 were combined to form hMT+, corresponding to MT and MST.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about how ROIs were defined.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:27.438864Z"
+    },
+    {
+      "id": "c85cdcd8-7ccc-40d8-bf8d-33661631d705",
+      "content_id": "73134fed-3c08-4869-a857-55380fd826ac",
+      "claim_id": "C82",
+      "claim": "Only voxels with a GLM R2 in the top 50th percentile were included in the decoding analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "We only included voxels with a GLM R2 in the top 50th percentile.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the analysis method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:27.438864Z"
+    },
+    {
+      "id": "485dfc05-1a6d-458e-ab7e-d37528953e1c",
+      "content_id": "73134fed-3c08-4869-a857-55380fd826ac",
+      "claim_id": "C83",
+      "claim": "Decoding was performed with a maximum likelihood classifier using leave-one-run out cross-validation.",
+      "claim_type": "EXPLICIT",
+      "source": "Decoding was performed with a maximum likelihood classifier using the MATLAB function 'classify' with the option 'diagLinear' (Roth et al., 2018). Decoding accuracy was computed using leave-one-run out cross-validation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the analysis method with citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:27.438864Z"
+    },
+    {
+      "id": "6176c347-6dd4-4f24-a4cb-35668e79b613",
+      "content_id": "73134fed-3c08-4869-a857-55380fd826ac",
+      "claim_id": "C84",
+      "claim": "A non-parametric permutation test was used to evaluate the significance of decoding accuracy.",
+      "claim_type": "EXPLICIT",
+      "source": "A non-parametric permutation test was used to evaluate the significance of this decoding accuracy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the statistical analysis method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:27.438864Z"
+    },
+    {
+      "id": "0f748caf-4353-4d30-9d5b-4438b65b038d",
+      "content_id": "73134fed-3c08-4869-a857-55380fd826ac",
+      "claim_id": "C85",
+      "claim": "Accuracies were considered statistically significant when decoding accuracy was higher than the 95th percentile of the null distribution.",
+      "claim_type": "EXPLICIT",
+      "source": "Accuracies computed using the unrandomized training data were then considered statistically significant when decoding accuracy was higher than the 95th percentile of the null distribution (p<0.05, one-tailed permutation test).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the statistical threshold used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:27.438864Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "d4411d4d-721e-4bae-af76-92a1dca1592c",
+      "content_id": "73134fed-3c08-4869-a857-55380fd826ac",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Multiple visual cortical areas (EVC, LO, V3A/B, hMT+) showed differential BOLD responses that could discriminate the double-drift illusion from a matched control condition. When attention was directed to fixation rather than the stimulus, decoding remained significant in LO, V3A/B, and hMT+ but dropped to chance in early visual cortex (EVC), suggesting that EVC decoding reflects attentional effects while higher areas encode perceived position.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C21-23, C33-34, and C52 collectively demonstrate that multiple visual areas respond differentially to the illusion, with appropriate controls for attention (Experiment 2). The experimental design properly controls for low-level stimulus properties and attention, and the decoding analyses with permutation testing provide robust statistical support. The inference that EVC reflects attention while higher areas encode perception is well-justified by the differential effects of the attention manipulation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:36:27.438864Z"
+    },
+    {
+      "id": "66e74d25-01e0-46db-bc05-f3f3c264364e",
+      "content_id": "73134fed-3c08-4869-a857-55380fd826ac",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Only area hMT+ could decode the illusory trajectory direction (leftward vs. rightward drift paths), despite the stimulus remaining at a constant retinal location during smooth pursuit. This suggests that hMT+ integrates retinal and extraretinal information to construct a spatiotopic representation of the perceived stimulus position.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C24-25, C35, C60, and C68 provide converging evidence that hMT+ uniquely encodes the illusory trajectory. The experimental design with retinally-stabilized stimuli during smooth pursuit is critical: since retinal position was constant, successful decoding of trajectory direction necessarily implies non-retinotopic encoding. Multiple control experiments (pursuit-selective voxels, local motion controls, eye tracking) rule out alternative explanations. The conclusion of spatiotopic representation in hMT+ is well-supported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:36:27.438864Z"
+    },
+    {
+      "id": "ce748ec3-46a6-494a-9a6b-f9eb81416677",
+      "content_id": "73134fed-3c08-4869-a857-55380fd826ac",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Concurrent eye tracking confirmed accurate pursuit, and multiple control analyses ruled out oculomotor explanations for the fMRI decoding results. The illusory trajectory could not be decoded from eye position measurements, pursuit-selective voxels showed no trajectory information, and microsaccade characteristics did not differ between conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-7, C26-30 provide comprehensive controls for oculomotor confounds. The convergence of evidence from multiple independent analyses (eye tracking decoding, pursuit-selective voxel analysis, microsaccade analysis) strongly supports the conclusion that oculomotor behavior does not explain the fMRI findings. The experimental design and statistical analyses appear rigorous, though the sample size for concurrent eye tracking (n=5-6) is relatively small.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:36:27.438864Z"
+    },
+    {
+      "id": "85a5b121-9ca1-4887-8b13-5eebb99f6eca",
+      "content_id": "73134fed-3c08-4869-a857-55380fd826ac",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "A control experiment (Experiment 3) demonstrated that local motion alone, without the global trajectory and illusion, could not be decoded in hMT+, ruling out the possibility that trajectory decoding was due solely to differences in local motion patterns.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-32 describe a critical control that addresses whether the temporal sequence of local motion directions could explain trajectory decoding. The inability to decode local motion alone while successfully decoding the illusion trajectory provides strong evidence that the decodable information in hMT+ specifically relates to the illusory percept rather than low-level motion features. This control is well-designed and the conclusion is justified.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:36:27.438864Z"
+    },
+    {
+      "id": "55063372-90d2-4c17-b239-7cab57c89797",
+      "content_id": "73134fed-3c08-4869-a857-55380fd826ac",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The results provide evidence for a perceptual representation in human visual cortex that incorporates extraretinal information and suggest spatiotopic processing. During smooth pursuit, the stimulus envelope only has a trajectory in spatiotopic coordinates, and the persistence of the illusion with retinal stabilization implies spatiotopic processing distinct from perisaccadic remapping.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8, C36, C48-49, and C59 represent the main conclusions of the study. These are well-supported by the experimental findings showing trajectory decoding despite constant retinal position (C5, C24), the control experiments ruling out confounds (C26-32), and the theoretical argument that smooth pursuit requires different mechanisms than saccadic remapping (C57-59). The logic connecting retinal stabilization during pursuit to spatiotopic encoding is sound.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:36:27.438864Z"
+    },
+    {
+      "id": "e6cfdadd-c843-4dcb-a111-2356177d4e62",
+      "content_id": "73134fed-3c08-4869-a857-55380fd826ac",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The authors discuss two potential mechanisms for trajectory decoding in hMT+: a fovea-centered motion bias or topographic organization reflecting differences in perceived eccentricity between leftward and rightward drift paths. They argue the fovea-centered bias is unlikely given the balanced design, and suggest the topographic account implies explicit representation of perceived position in hMT+ but veridical encoding in EVC.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C37-43 and C47 present speculative interpretations of the mechanism underlying trajectory decoding. While the authors appropriately cite relevant literature (C37-39, C41) and provide logical arguments against the fovea-centered bias (C40), the topographic explanation (C41-43) remains speculative without direct evidence. The claim that this implies differential encoding between EVC and hMT+ (C43, C47) is an interesting hypothesis but requires additional experiments to test directly.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:36:27.438864Z"
+    },
+    {
+      "id": "251ce847-9aee-45a7-ad22-f34247a6ae4a",
+      "content_id": "73134fed-3c08-4869-a857-55380fd826ac",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The authors propose that spatiotopic processing could be accomplished either through an explicit spatiotopic reference frame or through combining retinotopic input with eye position gain fields, but acknowledge their data do not distinguish between these mechanisms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C50-51 present two plausible computational mechanisms for spatiotopic processing, both supported by citations to relevant literature. However, the authors explicitly state their data cannot distinguish between these possibilities. This is an appropriate acknowledgment of the study's limitations. The claims are speculative regarding mechanism but honest about what the current data can and cannot address.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:36:27.438864Z"
+    },
+    {
+      "id": "36ef512b-ca5c-4cc3-a461-ee9e6c89a9b2",
+      "content_id": "73134fed-3c08-4869-a857-55380fd826ac",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Attention and task demands impact the spatial encoding of the double-drift illusion, as demonstrated by differential decoding patterns between attend-stimulus and attend-fixation conditions. Multiple factors including spatial attention may influence the ability to decode illusory motion paths.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-54 and C65 are supported by the comparison between Experiments 1 and 2, which systematically manipulated attention while controlling other factors. The finding that EVC decoding dropped to chance when attention was directed away from the stimulus (C21-22, C34) while higher areas maintained significant decoding provides clear evidence for attentional modulation. This is an important methodological contribution highlighting the need to control attentional state.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:36:27.438864Z"
+    },
+    {
+      "id": "73d19d52-e9a2-467b-a9b6-701b1c8e01f9",
+      "content_id": "73134fed-3c08-4869-a857-55380fd826ac",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The authors argue that their spatiotopic findings reflect a different mechanism than perisaccadic remapping, reasoning that remapping is relevant only for discrete saccades and cannot account for continuous smooth pursuit. They conclude that spatiotopic signals robust to smooth pursuit provide evidence for spatiotopic representation rather than remapping.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-60 present a logical argument distinguishing spatiotopic representation from remapping mechanisms. The reasoning is sound: remapping requires discrete events (saccades) with time for receptive field shifts and returns, which is incompatible with continuous smooth pursuit (C57-58). The experimental design using smooth pursuit without saccades (C57) appropriately tests this distinction. While C58 is somewhat speculative, the overall argument is well-reasoned and supported by the experimental approach.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:36:27.438864Z"
+    },
+    {
+      "id": "851827b2-bfae-4eb2-a54c-fb2fcf56450f",
+      "content_id": "73134fed-3c08-4869-a857-55380fd826ac",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The authors critically evaluate a previous study (Liu et al., 2019) that used the double-drift illusion without smooth pursuit, noting inconsistencies in that study's results and arguing that their own study uniquely addresses reference frame encoding because smooth pursuit ensures spatiotopic rather than potentially retinotopic encoding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-68 provide a critical but fair evaluation of related prior work. The authors correctly identify methodological differences (fixation vs. pursuit) that affect interpretation regarding reference frames (C66-68). The criticism of inconsistencies in Liu et al.'s results (C64) is based on comparing their reported figures. The distinction that the current study uniquely addresses spatiotopic encoding due to the smooth pursuit design (C68) is valid and important for contextualizing the contribution.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:36:27.438864Z"
+    },
+    {
+      "id": "8aad202e-884d-489e-8b48-91f37e57df87",
+      "content_id": "73134fed-3c08-4869-a857-55380fd826ac",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The study employed 19 participants across multiple experiments, used carefully controlled Gabor stimuli with specific motion parameters, acquired 7T fMRI data with appropriate preprocessing, defined ROIs using anatomical templates, and performed decoding analyses with maximum likelihood classifiers using leave-one-run-out cross-validation and permutation testing for statistical significance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69-85 describe the methodological details of the study. The methods appear rigorous and appropriate: adequate sample sizes for fMRI (though smaller for eye tracking controls), well-specified stimulus parameters (C70-73), standard fMRI acquisition and preprocessing (C78), validated ROI definition approach (C79-81), and appropriate statistical methods including cross-validation and permutation testing (C83-85). The behavioral performance data (C76-77) confirm task engagement. These methodological claims are well-documented and standard for the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:36:27.438864Z"
+    },
+    {
+      "id": "81772aad-ca96-437e-92d7-c130de568d8d",
+      "content_id": "73134fed-3c08-4869-a857-55380fd826ac",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The double-drift illusion is characterized by local motion within a moving window altering the perceived path, persists during smooth pursuit with retinal stabilization, can deviate up to 45\u00b0 from veridical trajectory, and implies integration of retinal and non-retinal eye-movement signals.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-3 and C16-18 describe established properties of the double-drift illusion based on prior literature (C17-18 cite multiple studies). These are accurate characterizations of the phenomenon that provide essential background for the study. The inference that the illusion involves integration of retinal and extraretinal signals (C3) is a reasonable interpretation of the persistence during retinal stabilization (C2, C18).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:36:27.438864Z"
+    },
+    {
+      "id": "9080d590-8b61-4bc5-9e87-80dffd28045c",
+      "content_id": "73134fed-3c08-4869-a857-55380fd826ac",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The authors review prior literature on visual reference frames, noting that while neurons encode retinal position and perception is stable across eye movements, evidence for spatiotopic representations is mixed, with some studies supporting spatiotopic encoding in areas like VIP and hMT+ while others find retinotopic encoding, and factors like attention and task demands may influence reference frame.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-15, C19, C45-46 accurately summarize the state of the literature on visual reference frames, appropriately citing relevant studies for each claim. The authors present a balanced view of conflicting findings in the field (spatiotopic vs. retinotopic encoding) and note important moderating factors like attention (C14-15). This provides appropriate context for their study and accurately represents the scientific debate in the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:36:27.438864Z"
+    },
+    {
+      "id": "b3e7ef97-b9c9-4288-95bf-90bf64b529b5",
+      "content_id": "73134fed-3c08-4869-a857-55380fd826ac",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "A previous fMRI study (Maus et al., 2013) reported that BOLD activity in hMT+ reflects illusory position during motion-induced position shift, consistent with the current study's interpretation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C44 cites a specific prior study that supports the interpretation that hMT+ can encode illusory rather than veridical position. This is an appropriate citation of relevant prior work that provides convergent evidence for the current findings. The claim accurately represents the cited work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:36:27.438864Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "f64953b5-ecf0-4298-a9d7-73d2ec673328",
+      "result_id": "d4411d4d-721e-4bae-af76-92a1dca1592c"
+    },
+    {
+      "claim_id": "03219169-bc19-4b21-84c8-4d08b00dc3d4",
+      "result_id": "d4411d4d-721e-4bae-af76-92a1dca1592c"
+    },
+    {
+      "claim_id": "147bb503-bdd7-4da9-88c4-fa350d5d8ad6",
+      "result_id": "d4411d4d-721e-4bae-af76-92a1dca1592c"
+    },
+    {
+      "claim_id": "ebc44894-29c0-47a1-b57d-ec31a9ca82ff",
+      "result_id": "d4411d4d-721e-4bae-af76-92a1dca1592c"
+    },
+    {
+      "claim_id": "1021a0fd-a3f2-4d9b-b867-3d622b8cc84a",
+      "result_id": "d4411d4d-721e-4bae-af76-92a1dca1592c"
+    },
+    {
+      "claim_id": "df1f124a-466c-4ead-beaa-c202b770b4a5",
+      "result_id": "d4411d4d-721e-4bae-af76-92a1dca1592c"
+    },
+    {
+      "claim_id": "4e548fdb-6c2f-4825-9b64-aefcfa36fdf8",
+      "result_id": "d4411d4d-721e-4bae-af76-92a1dca1592c"
+    },
+    {
+      "claim_id": "25e4c72a-c62f-4add-8fab-ab98206fff7e",
+      "result_id": "66e74d25-01e0-46db-bc05-f3f3c264364e"
+    },
+    {
+      "claim_id": "3afb2a8c-5511-43a2-8018-0f7dcb85da67",
+      "result_id": "66e74d25-01e0-46db-bc05-f3f3c264364e"
+    },
+    {
+      "claim_id": "a3be3926-70ac-4f8e-a208-3c40f31af1b3",
+      "result_id": "66e74d25-01e0-46db-bc05-f3f3c264364e"
+    },
+    {
+      "claim_id": "4fa063d0-2a1e-4e16-aa0b-c85b9fa0b174",
+      "result_id": "66e74d25-01e0-46db-bc05-f3f3c264364e"
+    },
+    {
+      "claim_id": "dde56197-6e36-4242-bb4d-d81642161134",
+      "result_id": "66e74d25-01e0-46db-bc05-f3f3c264364e"
+    },
+    {
+      "claim_id": "a9542f72-4cc8-4325-8c1c-3634bbf3a44b",
+      "result_id": "66e74d25-01e0-46db-bc05-f3f3c264364e"
+    },
+    {
+      "claim_id": "2bf3a36d-c56d-42dd-a983-935f129b051d",
+      "result_id": "ce748ec3-46a6-494a-9a6b-f9eb81416677"
+    },
+    {
+      "claim_id": "955ba288-cda2-4583-abb1-58c92a2af8f7",
+      "result_id": "ce748ec3-46a6-494a-9a6b-f9eb81416677"
+    },
+    {
+      "claim_id": "debca41b-c83d-4f13-8bc6-ef2ea679a312",
+      "result_id": "ce748ec3-46a6-494a-9a6b-f9eb81416677"
+    },
+    {
+      "claim_id": "e537ec8b-52e4-49e8-8b46-91f301cfd57d",
+      "result_id": "ce748ec3-46a6-494a-9a6b-f9eb81416677"
+    },
+    {
+      "claim_id": "a57e75c1-ccb1-4bec-a7ed-020868dadbd7",
+      "result_id": "ce748ec3-46a6-494a-9a6b-f9eb81416677"
+    },
+    {
+      "claim_id": "aab164e8-e058-4f3e-b9b6-2f8dab275307",
+      "result_id": "ce748ec3-46a6-494a-9a6b-f9eb81416677"
+    },
+    {
+      "claim_id": "643cbf62-9abf-4ec8-ace6-6752aa42814a",
+      "result_id": "ce748ec3-46a6-494a-9a6b-f9eb81416677"
+    },
+    {
+      "claim_id": "e27d4e14-ff96-48f8-83ba-05c95e495dc8",
+      "result_id": "85a5b121-9ca1-4887-8b13-5eebb99f6eca"
+    },
+    {
+      "claim_id": "85e3ac85-86a2-4732-913f-b13ade0deefd",
+      "result_id": "85a5b121-9ca1-4887-8b13-5eebb99f6eca"
+    },
+    {
+      "claim_id": "ae87876f-6c6b-422e-a2b8-112b5fc3ce69",
+      "result_id": "55063372-90d2-4c17-b239-7cab57c89797"
+    },
+    {
+      "claim_id": "ac08d90a-b043-42b6-9fea-f53144b31344",
+      "result_id": "55063372-90d2-4c17-b239-7cab57c89797"
+    },
+    {
+      "claim_id": "3e106019-97af-405d-aa7e-71b99bb543a3",
+      "result_id": "55063372-90d2-4c17-b239-7cab57c89797"
+    },
+    {
+      "claim_id": "813873cb-4d96-4d15-8d4d-e355a6315972",
+      "result_id": "55063372-90d2-4c17-b239-7cab57c89797"
+    },
+    {
+      "claim_id": "141035d5-d3eb-4bf4-8561-22a7ee889665",
+      "result_id": "55063372-90d2-4c17-b239-7cab57c89797"
+    },
+    {
+      "claim_id": "26c3e8a2-e2e7-4a97-a3d6-31e2b3f48f72",
+      "result_id": "e6cfdadd-c843-4dcb-a111-2356177d4e62"
+    },
+    {
+      "claim_id": "f53f76c1-12e4-4826-9578-c4394a8171af",
+      "result_id": "e6cfdadd-c843-4dcb-a111-2356177d4e62"
+    },
+    {
+      "claim_id": "1ce65412-0cc0-4a2f-9688-cc110f8979e5",
+      "result_id": "e6cfdadd-c843-4dcb-a111-2356177d4e62"
+    },
+    {
+      "claim_id": "24f3e892-5efb-4fb5-8ab1-13bb80909bd5",
+      "result_id": "e6cfdadd-c843-4dcb-a111-2356177d4e62"
+    },
+    {
+      "claim_id": "692cbcd0-b529-4f23-8e20-12fd4a33f2e0",
+      "result_id": "e6cfdadd-c843-4dcb-a111-2356177d4e62"
+    },
+    {
+      "claim_id": "a6bf3e94-21d8-4d88-8292-a336a614675c",
+      "result_id": "e6cfdadd-c843-4dcb-a111-2356177d4e62"
+    },
+    {
+      "claim_id": "a4687baf-8ed7-4bc4-ae4d-9197fe7b1a4d",
+      "result_id": "e6cfdadd-c843-4dcb-a111-2356177d4e62"
+    },
+    {
+      "claim_id": "d75b3bf0-a2d5-40aa-82bf-6435afe87300",
+      "result_id": "e6cfdadd-c843-4dcb-a111-2356177d4e62"
+    },
+    {
+      "claim_id": "7528fb2c-31eb-4d65-8ff0-bc5ccc43e692",
+      "result_id": "251ce847-9aee-45a7-ad22-f34247a6ae4a"
+    },
+    {
+      "claim_id": "44185405-f3ce-4c32-a489-b460a16fd9de",
+      "result_id": "251ce847-9aee-45a7-ad22-f34247a6ae4a"
+    },
+    {
+      "claim_id": "3066ad2f-9cdd-4175-955d-e7d37f590371",
+      "result_id": "36ef512b-ca5c-4cc3-a461-ee9e6c89a9b2"
+    },
+    {
+      "claim_id": "f65e0716-5db9-42b2-9d08-9ea64ad18640",
+      "result_id": "36ef512b-ca5c-4cc3-a461-ee9e6c89a9b2"
+    },
+    {
+      "claim_id": "9316b28c-6c32-48b5-b452-998244d9b106",
+      "result_id": "36ef512b-ca5c-4cc3-a461-ee9e6c89a9b2"
+    },
+    {
+      "claim_id": "44b367bc-e12d-4682-acdb-8e4fe34955ac",
+      "result_id": "73d19d52-e9a2-467b-a9b6-701b1c8e01f9"
+    },
+    {
+      "claim_id": "d857f6df-e5e7-464d-9e04-7605106a57ca",
+      "result_id": "73d19d52-e9a2-467b-a9b6-701b1c8e01f9"
+    },
+    {
+      "claim_id": "37a28b4a-6788-4a8e-ac6f-1f6b47a9c777",
+      "result_id": "73d19d52-e9a2-467b-a9b6-701b1c8e01f9"
+    },
+    {
+      "claim_id": "0d5d6314-f05a-4f7c-ac90-2f4a6e089aa7",
+      "result_id": "73d19d52-e9a2-467b-a9b6-701b1c8e01f9"
+    },
+    {
+      "claim_id": "141035d5-d3eb-4bf4-8561-22a7ee889665",
+      "result_id": "73d19d52-e9a2-467b-a9b6-701b1c8e01f9"
+    },
+    {
+      "claim_id": "dde56197-6e36-4242-bb4d-d81642161134",
+      "result_id": "73d19d52-e9a2-467b-a9b6-701b1c8e01f9"
+    },
+    {
+      "claim_id": "a64f6f04-10b6-4403-8855-fc2a4698ca58",
+      "result_id": "851827b2-bfae-4eb2-a54c-fb2fcf56450f"
+    },
+    {
+      "claim_id": "df7c5cec-6927-40eb-9dd5-33df0b59b0e6",
+      "result_id": "851827b2-bfae-4eb2-a54c-fb2fcf56450f"
+    },
+    {
+      "claim_id": "fcda6a59-b41d-45cc-b296-e70fc5df6427",
+      "result_id": "851827b2-bfae-4eb2-a54c-fb2fcf56450f"
+    },
+    {
+      "claim_id": "ee072c84-07f3-4b53-8e3c-9f0de51cf08f",
+      "result_id": "851827b2-bfae-4eb2-a54c-fb2fcf56450f"
+    },
+    {
+      "claim_id": "9316b28c-6c32-48b5-b452-998244d9b106",
+      "result_id": "851827b2-bfae-4eb2-a54c-fb2fcf56450f"
+    },
+    {
+      "claim_id": "b1648919-df76-46dc-b96b-641d5252df78",
+      "result_id": "851827b2-bfae-4eb2-a54c-fb2fcf56450f"
+    },
+    {
+      "claim_id": "bde9bcf2-2cb0-4c18-ae4c-0128a52cc33d",
+      "result_id": "851827b2-bfae-4eb2-a54c-fb2fcf56450f"
+    },
+    {
+      "claim_id": "a9542f72-4cc8-4325-8c1c-3634bbf3a44b",
+      "result_id": "851827b2-bfae-4eb2-a54c-fb2fcf56450f"
+    },
+    {
+      "claim_id": "08b97f50-86e8-443e-840d-5080b2b4c96f",
+      "result_id": "8aad202e-884d-489e-8b48-91f37e57df87"
+    },
+    {
+      "claim_id": "a9f3ac5e-0284-4abe-aa85-65df2514e9b0",
+      "result_id": "8aad202e-884d-489e-8b48-91f37e57df87"
+    },
+    {
+      "claim_id": "9edeb56f-8240-4807-92e7-872c6e12d3a0",
+      "result_id": "8aad202e-884d-489e-8b48-91f37e57df87"
+    },
+    {
+      "claim_id": "844d467c-b499-43b7-92e6-d6b6669be130",
+      "result_id": "8aad202e-884d-489e-8b48-91f37e57df87"
+    },
+    {
+      "claim_id": "8db376ee-04d2-4161-901e-1eb277112024",
+      "result_id": "8aad202e-884d-489e-8b48-91f37e57df87"
+    },
+    {
+      "claim_id": "3c3c92d2-9111-4c8e-b482-f21fdd59c8b4",
+      "result_id": "8aad202e-884d-489e-8b48-91f37e57df87"
+    },
+    {
+      "claim_id": "b0fe18aa-ca70-4b35-91fa-ce3034c38932",
+      "result_id": "8aad202e-884d-489e-8b48-91f37e57df87"
+    },
+    {
+      "claim_id": "554ff206-9c4b-4758-a757-b89325799f2f",
+      "result_id": "8aad202e-884d-489e-8b48-91f37e57df87"
+    },
+    {
+      "claim_id": "423a0f62-9a62-4d98-a730-919cbc1dc5d2",
+      "result_id": "8aad202e-884d-489e-8b48-91f37e57df87"
+    },
+    {
+      "claim_id": "f11ac85a-da4d-47cc-b505-698b2cd26d87",
+      "result_id": "8aad202e-884d-489e-8b48-91f37e57df87"
+    },
+    {
+      "claim_id": "7e0d8a21-13a8-4847-a091-d9c330befab9",
+      "result_id": "8aad202e-884d-489e-8b48-91f37e57df87"
+    },
+    {
+      "claim_id": "fd698778-a8e9-4073-ba07-291a04145f43",
+      "result_id": "8aad202e-884d-489e-8b48-91f37e57df87"
+    },
+    {
+      "claim_id": "c32903a1-0a16-4286-81c1-d8ff57eb88a8",
+      "result_id": "8aad202e-884d-489e-8b48-91f37e57df87"
+    },
+    {
+      "claim_id": "c85cdcd8-7ccc-40d8-bf8d-33661631d705",
+      "result_id": "8aad202e-884d-489e-8b48-91f37e57df87"
+    },
+    {
+      "claim_id": "485dfc05-1a6d-458e-ab7e-d37528953e1c",
+      "result_id": "8aad202e-884d-489e-8b48-91f37e57df87"
+    },
+    {
+      "claim_id": "6176c347-6dd4-4f24-a4cb-35668e79b613",
+      "result_id": "8aad202e-884d-489e-8b48-91f37e57df87"
+    },
+    {
+      "claim_id": "0f748caf-4353-4d30-9d5b-4438b65b038d",
+      "result_id": "8aad202e-884d-489e-8b48-91f37e57df87"
+    },
+    {
+      "claim_id": "b0c13cf0-0b41-4693-a07d-2c18afb320ca",
+      "result_id": "81772aad-ca96-437e-92d7-c130de568d8d"
+    },
+    {
+      "claim_id": "e2e8dd0a-bebd-4271-b213-5c6e7b87541e",
+      "result_id": "81772aad-ca96-437e-92d7-c130de568d8d"
+    },
+    {
+      "claim_id": "667804f1-1b4e-4086-9e99-badf403826b3",
+      "result_id": "81772aad-ca96-437e-92d7-c130de568d8d"
+    },
+    {
+      "claim_id": "4a84511b-ae56-4cc4-adde-760e383e073f",
+      "result_id": "81772aad-ca96-437e-92d7-c130de568d8d"
+    },
+    {
+      "claim_id": "cc11deb8-4f91-4214-9ec0-bb84c6a8e924",
+      "result_id": "81772aad-ca96-437e-92d7-c130de568d8d"
+    },
+    {
+      "claim_id": "0ac1522b-b928-4f98-bd93-6280009517ac",
+      "result_id": "81772aad-ca96-437e-92d7-c130de568d8d"
+    },
+    {
+      "claim_id": "f3797b72-a947-43c5-868f-7c71873a5ffb",
+      "result_id": "9080d590-8b61-4bc5-9e87-80dffd28045c"
+    },
+    {
+      "claim_id": "ffd67b46-747d-4324-a5e6-a1da0b72d7bd",
+      "result_id": "9080d590-8b61-4bc5-9e87-80dffd28045c"
+    },
+    {
+      "claim_id": "087aa9f6-2f33-4e28-bfaa-fc3e5e963df1",
+      "result_id": "9080d590-8b61-4bc5-9e87-80dffd28045c"
+    },
+    {
+      "claim_id": "1e47b001-d2c5-454d-8326-e41d53d602d2",
+      "result_id": "9080d590-8b61-4bc5-9e87-80dffd28045c"
+    },
+    {
+      "claim_id": "07e40931-5b14-48fa-81f1-5093a0146d99",
+      "result_id": "9080d590-8b61-4bc5-9e87-80dffd28045c"
+    },
+    {
+      "claim_id": "9f7754b5-7c97-45da-ae5a-60de06958ded",
+      "result_id": "9080d590-8b61-4bc5-9e87-80dffd28045c"
+    },
+    {
+      "claim_id": "e5f46da5-58e2-4cca-a50b-60e591a8e97c",
+      "result_id": "9080d590-8b61-4bc5-9e87-80dffd28045c"
+    },
+    {
+      "claim_id": "f289125d-bcde-4a5e-b7fe-97c19e2c6863",
+      "result_id": "9080d590-8b61-4bc5-9e87-80dffd28045c"
+    },
+    {
+      "claim_id": "47c4980e-cc98-46a2-8d26-ae017bc652d5",
+      "result_id": "9080d590-8b61-4bc5-9e87-80dffd28045c"
+    },
+    {
+      "claim_id": "90cdad64-0c52-444d-a089-1141d05aa443",
+      "result_id": "9080d590-8b61-4bc5-9e87-80dffd28045c"
+    },
+    {
+      "claim_id": "9af13fa7-fd78-4010-a9cc-1588b91bc2c4",
+      "result_id": "b3e7ef97-b9c9-4288-95bf-90bf64b529b5"
+    }
+  ],
+  "comparisons": []
+}

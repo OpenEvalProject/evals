@@ -1,0 +1,1539 @@
+{
+  "submission": {
+    "id": "b89f08f1-995c-4dae-b4e4-0312146492b0",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-04T03:01:56.233530Z",
+    "updated_at": "2025-12-04T03:01:56.233530Z"
+  },
+  "content": [
+    {
+      "id": "fd7770d7-128a-481b-8120-0378bf278fc1",
+      "submission_id": "b89f08f1-995c-4dae-b4e4-0312146492b0",
+      "content_type": "manuscript",
+      "content_text": "# Novelty and uncertainty differentially drive exploration across development\n\n## Authors\n\n- Kate Nussenbaum<sup>1</sup> ([ORCID: 0000-0002-7185-6880](https://orcid.org/0000-0002-7185-6880))\n- Rebecca E Martin<sup>1</sup>\n- Sean Maulhardt<sup>1</sup>\n- Yi (Jen) Yang<sup>1</sup>\n- Greer Bizzell-Hatcher<sup>1</sup>\n- Naiti S Bhatt<sup>1</sup>\n- Maximilian Koenig<sup>1</sup>\n- Gail M Rosenbaum<sup>1</sup>\n- John P O'Doherty<sup>6</sup>\n- Jeffrey Cockburn<sup>6</sup>\n- Catherine A Hartley<sup>1</sup> ([ORCID: 0000-0003-0177-7295](https://orcid.org/0000-0003-0177-7295)) \u2020\n\n### Affiliations\n\n1. New York University New York United States ([ROR:0190ak572](https://ror.org/0190ak572))\n2. University of Maryland College Park United States ([ROR:047s2c258](https://ror.org/047s2c258))\n3. Temple University Philadelphia United States ([ROR:00kx1jb78](https://ror.org/00kx1jb78))\n4. Leiden University Leiden Netherlands ([ROR:027bh9e22](https://ror.org/027bh9e22))\n5. Geisinger Health System Danville United States ([ROR:02qdbgx97](https://ror.org/02qdbgx97))\n6. Caltech Pasadena United States ([ROR:05dxps055](https://ror.org/05dxps055))\n\n\u2020 Corresponding author\n\n## Abstract\n\nAcross the lifespan, individuals frequently choose between exploiting known rewarding options or exploring unknown alternatives. A large body of work has suggested that children may explore more than adults. However, because novelty and reward uncertainty are often correlated, it is unclear how they differentially influence decision-making across development. Here, children, adolescents, and adults (ages 8\u201327 years, N = 122) completed an adapted version of a recently developed value-guided decision-making task that decouples novelty and uncertainty. In line with prior studies, we found that exploration decreased with increasing age. Critically, participants of all ages demonstrated a similar bias to select choice options with greater novelty, whereas aversion to reward uncertainty increased into adulthood. Computational modeling of participant choices revealed that whereas adolescents and adults demonstrated attenuated uncertainty aversion for more novel choice options, children\u2019s choices were not influenced by reward uncertainty.\n\n## Introduction\n\nAcross the lifespan, exploration increases individuals\u2019 knowledge of the world and promotes the discovery of rewarding actions. In some circumstances, exploring new options may yield greater benefits than sticking to known alternatives, whereas in others, \u2018exploiting\u2019 known options may bring about greater rewards. This trade-off is known as the \u2018explore\u2013exploit\u2019 dilemma (Cohen et al., 2007; Sutton et al., 1998), reflecting the challenge inherent to resolving this tension. In general, the optimal balance between exploration and exploitation may shift across the lifespan. Relative to adults, children tend to know less about the world and have longer temporal horizons over which to exploit newly discovered information (Gopnik, 2020; Gopnik et al., 2017). Thus, it may be advantageous to explore to a greater extent earlier in life, and gradually shift to a more exploitative decision strategy as experience yields knowledge. Empirical data suggest that individuals at varied developmental stages do indeed tackle explore\u2013exploit problems differently. Children and adolescents tend to explore more than adults (Christakou et al., 2013; Giron et al., 2022; Jepma et al., 2020; Lloyd et al., 2021; Nussenbaum and Hartley, 2019; Schulz et al., 2019), and this increased exploration promotes enhanced learning about the structure of the environment (Blanco and Sloutsky, 2021; Liquin and Gopnik, 2022; Sumner et al., 2019). Despite compelling arguments for why an early bias toward exploration may be advantageous and growing evidence that children are in fact more exploratory than adults, the cause of the developmental shift toward exploitation remains unclear.\n\nPrior work has revealed that across development, two features of choice options influence exploration: stimulus novelty (Daffner et al., 1998; Gottlieb et al., 2013; Henderson and Moore, 1980; Jaegle et al., 2019; Kakade and Dayan, 2002; Wittmann et al., 2008) and reward uncertainty (Badre et al., 2012; Blanco and Sloutsky, 2021; Gershman, 2018; Somerville et al., 2017; Trudel et al., 2021; Wang et al., 2021; Wilson et al., 2014). Here, we use novelty to refer to the extent to which choice options have been previously encountered and uncertainty to refer to the variance in the distributions of rewards that they yield. Disentangling the role of novelty and uncertainty in driving exploratory decision making is challenging because they are often correlated. For example, a new toy has high novelty because it has never been encountered and high reward uncertainty because its entertainment value is unknown. Still, while novel stimuli almost always have high reward uncertainty, in many cases, familiar options do as well \u2014 when buying a familiar toy as a gift for someone else, one may have little knowledge of how much they will like it.\n\nA recent study in adults took advantage of these types of choices, and, by harnessing familiar options with unknown reward probabilities, decoupled the influence of novelty and uncertainty on exploratory decision making in adults (Cockburn et al., 2022). Adults were novelty-seeking, preferentially selecting choice options that they had encountered infrequently in the past versus those that were more familiar. However, adults were also uncertainty averse, such that they tended to avoid options with high reward uncertainty. This tension between avoiding uncertain options while pursuing novel alternatives, which are themselves inherently uncertain, suggested interactive effects of choice features. Computational modeling further revealed that stimulus novelty diminished the influence of uncertainty on exploratory choice. Thus, these findings suggest that value-guided decision making in adults \u2014 and specifically, the balance between exploration and exploitation \u2014 may be governed by complex interactions among different features of choice options. To date, however, the influences of novelty and uncertainty have not been disentangled in children and adolescents.\n\nChanges in the influence of these choice features may shift the explore\u2013exploit balance across development. A stronger appetitive influence of stimulus novelty may drive greater exploration earlier in life. Reduced uncertainty aversion, or perhaps even an early preference to explore more uncertain options, may similarly promote heightened exploratory behavior. Novelty and uncertainty may also exert unique, interactive effects for younger individuals. Though prior studies have found effects of novelty (Henderson and Moore, 1980; Mendel, 1965) and reward uncertainty (Blanco and Sloutsky, 2021; Meder et al., 2021; Schulz et al., 2019) on exploration and choice in early childhood, it is unclear how their relative influence changes from childhood to early adulthood, leaving open the question of why children tend to explore more than adults. Further, in most developmental studies, novelty and uncertainty are confounded, making it difficult to tease apart their separate, motivational effects.\n\nHere, using an adapted version of the task introduced in Cockburn et al., 2022 with a large age-continuous developmental sample, we asked how the influence of novelty and uncertainty on exploratory choice changes from middle childhood to early adulthood. We hypothesized that the developmental shift from more exploratory to more exploitative behavior would be driven by changes in how both novelty and reward uncertainty affect the evaluation of choice options from childhood to adulthood.\n\n## Results\n\n### Approach\n\nParticipants ages 8\u201327 years (N = 122; mean age = 17.9 years, standard deviation [SD] age = 5.6 years, 62 females, 59 males, 1 non-binary) completed a child-friendly decision-making task adapted from one used in a prior adult study (Cockburn et al., 2022). In the task, participants tried to find gold coins that various creatures had hidden in different territories. The task was divided into 10 blocks of 15 trials. Each block took place within a different territory in which coins were hidden by a distinct creature. Each creature hid their coins among three possible locations, one of which held a coin on either 20 or 30% of trials (on easy and hard blocks, respectively), one of which held a coin on 50% of trials, and one of which held a coin on either 70 or 80% of trials. Participants were not explicitly informed of these probabilities, and had to learn, through trial and error, where each creature was most likely to hide a coin. On every trial, participants viewed two hiding spots and had to select one in which to search for a coin (Figure 1). After a brief delay, participants saw the outcome of their choice \u2014 either a coin or an X indicating that they had not found a coin. Throughout each block, the background of the screen indicated the territory and a picture in the lower left corner indicated the creature that had hidden coins there.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/84260/elife-84260-fig1-v1.jpg)\n\n**Figure 1.:** Participants completed 10 blocks of 15 choice trials in which they selected between two of three \u2018hiding spots\u2019 to find gold coins. Within each block, two hiding spots had been previously encountered and one was completely novel. Each block took place within a different \u2018territory\u2019 in which a new creature hid coins. Each creature had different preferred hiding spots, such that the reward probabilities associated with each option were reset at the beginning of each block.\n\nImportantly, after the first block, each subsequent block contained two hiding spots that participants had encountered in previous blocks and one novel hiding spot they had not seen before. Though participants had already encountered two of the hiding spots within each block, the reward probabilities were re-randomized for every creature. In this way, the task dissociated sensory novelty and reward uncertainty. At the beginning of every block, the novelty of each hiding spot varied but all hiding spots had high reward uncertainty. Participants were explicitly told that the reward probabilities were reset in every block; within the task narrative, this was framed as each creature having different favorite hiding spots in their respective territory (see Appendix 1 for analyses demonstrating that participants of all ages indeed comprehended these instructions and \u2018reset\u2019 the reward probabilities at the beginning of each block). After the exploration task, participants completed a surprise memory test in which they were shown each of the ten creatures, one at a time, and asked to select its favorite hiding spot from an array of five options.\n\n### Exploration task performance\n\nFirst, we examined whether participants learned to select the better options within each block of the task. On each trial, the optimal choice was defined as the option with the higher reward probability. A mixed-effects logistic regression examining the effects of within-block trial number, age, block difficulty, block number, and their interactions, with random participant intercepts and slopes across trial number, block difficulty, and block number revealed that participants learned to make more optimal choices over the course of each block, odds ratio (OR) = 1.11, 95% confidence interval = [1.07, 1.16], $\u03c7^{2}$ (1) = 24.5, p < 0.001. In addition, participants learned faster, OR = 1.05 [1.01, 1.08], $\u03c7^{2}$ (1) = 8.2, p = 0.004, and made more optimal choices in easy relative to hard blocks, OR = 1.11 [1.07, 1.15], $\u03c7^{2}$ (1) = 25.5, p < 0.001 (Figure 2A). Performance also improved with increasing age, OR = 1.10 [1.03, 1.18], $\u03c7^{2}$ (1) = 7.1, p = 0.008 (Figure 2A). While we did not observe a main effect of block number, we did observe a block number \u00d7 block difficulty interaction, OR = 0.96 [0.93, 0.99], $\u03c7^{2}$ (1) = 7.3, p = 0.007, as well as a block difficulty \u00d7 trial \u00d7 block number interaction, OR = 0.94 [0.91, 0.97], $\u03c7^{2}$ (1) = 15.1, p < 0.001, such that performance differences between easy and hard blocks were greater earlier in the experiment. No other interactions reached significance (ps > 0.07).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/84260/elife-84260-fig2-v1.jpg)\n\n**Figure 2.:** (A) Participants\u2019 (n = 122) proportion of optimal choices as a function of age and block difficulty. (B) Reward participants earned in easy and hard blocks of the task across age. In both plots, points represent participant averages in each block condition, lines show the best-fitting linear regression modeling the effect of age, and the shaded regions around them represent 95% confidence intervals. The dotted lines indicate chance-level performance.\n\nWe followed the same analytical approach to examine whether participants earned reward on each trial, though we removed the block difficulty and block number random slopes to allow the model to converge. Here, we similarly observed that performance improved across trials within each block, OR = 1.03 [1.00, 1.07], $\u03c7^{2}$ (1) = 3.9, p = 0.049. Further, the rate at which participants learned to make rewarding choices was faster in easier versus harder blocks, OR = 1.03 [1.00, 1.06], $\u03c7^{2}$ (1) = 3.9, p = 0.048, though the effect of block difficulty was greater in earlier blocks, OR = 0.97 [0.94, 1.00], $\u03c7^{2}$ (1) = 4.0, p = 0.045. No other main effects or interactions reached significance.\n\nTaken together, these findings indicate that participants across our age range learned to select rewarding choice options throughout each block, though the extent to which participants learned to \u2018exploit\u2019 the most rewarding choice options increased across age. Participants also demonstrated above-chance (defined as 0.2) memory for the most rewarding choice within each block (mean = 0.25; standard error [SE] = 0.001; t(119) = 4.02, p < 0.001). Memory accuracy did not vary across age, $\\beta$ = \u22120.046, SE = 0.07, z = \u22120.69, p = 0.49, and did not significantly relate to individual differences in learning (see Appendix 1).\n\n### Age-related change in exploration\n\nNext, we turned to our main questions of interest: whether and how novelty and uncertainty influenced exploration across age. To examine the influence of expected value, uncertainty, and stimulus novelty on choice behavior, we defined and computed these three feature values for each choice option on every trial (Cockburn et al., 2022). Expected value was defined as the mean of the beta distribution specified according to the win and loss history of each choice option (hiding spot) within the block: $\\frac{\\alpha}{\\alpha+ \\beta}$ where  $\\alpha$ = number of wins +1 and $\\beta$ = number of losses +1. Uncertainty was defined as the variance of this beta distribution: $\\frac{(\\alpha*\\beta)^{2}}{\\alpha+ \\beta +1}$ . Stimulus novelty was determined by taking the variance of a different beta distribution, where  $\\alpha$ = the number of times participants had seen the choice option before throughout the entire task +1 and $\\beta$ = 1.\n\nTo address how these choice features differentially influenced exploration across development, we computed the differences in expected value, uncertainty, and novelty between the left and right choice options on every trial. We then ran a mixed-effects logistic regression examining how these differences \u2014 as well as their interactions with continuous age \u2014 related to the probability that the participant chose the left option on every trial. Participants were more likely to select the options that they had learned were more valuable, OR = 3.22 [2.82, 3.67], $\u03c7^{2}$ (1) = 155.8, p < 0.001. However, expected value was not the only driver of choice behavior. Participants also demonstrated a bias toward selecting more novel stimuli, OR = 1.34 [1.28, 1.41], $\u03c7^{2}$ (1) = 104.2, p < 0.001, and a bias away from choosing options with greater uncertainty, OR = 0.89 [0.83, 0.95], $\u03c7^{2}(1)$ = 11.9, p < 0.001. On trials in which the two choice options had similar-expected-values (<0.05 difference), participants selected the more novel option on 58.7% (SE = 0.8%) of trials and the more uncertain option on only 46.2% (SE = 0.9%) of trials.\n\nThe influence of expected value, novelty, and uncertainty on choice behavior each followed distinct developmental trajectories. Results from our regression model indicated that younger participants\u2019 choices were less value-driven relative to those of older participants, as reflected in a significant age \u00d7 expected value interaction, OR = 1.22 [1.07, 1.39], $\u03c7^{2}(1)$ = 8.97, p = 0.003 (Figure 3A). These findings are consistent with a broader literature that has observed age-related improvements in the computation of expected value (Rosenbaum and Hartley, 2019). Importantly, however, age-related increases in these \u2018exploitative\u2019 choices were not driven by age-related differences in novelty-seeking; there was not a significant interaction between age and novelty, OR = 1.02 [0.98, 1.07], $\u03c7^{2}$ (1) = 0.96, p = 0.327. In contrast to the relative stability of this novelty preference across age, we observed a significant age \u00d7 uncertainty interaction effect, OR = 0.89 [0.84, 0.95], $\u03c7^{2}$ (1) = 11.3, p < 0.001, indicating greater uncertainty aversion in older participants (Figure 3A). All findings held when we included block number and within-block trial number as interacting fixed effects in the model (see Appendix 1).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/84260/elife-84260-fig3-v1.jpg)\n\n**Figure 3.:** (A) The proportion of all trials in which participants (n = 122) chose the left, more novel, and more uncertain choice option as a function of the expected value difference between the options. Participants were more likely to choose options with greater expected value, higher novelty, and lower uncertainty (ps < 0.001). The influence of novelty did not vary across age, whereas uncertainty was more aversive in older participants (p < 0.001). Points indicate age group means and error bars show standard errors. (B) The proportion of similar-expected-value trials (difference between the two options <0.05) in which participants chose the more novel and more uncertain option, plotted as a function of continuous age. The lines show the best-fitting linear regression lines and the shaded regions around them represent 95% confidence intervals.\n\nWe further examined whether age-related increases in uncertainty aversion were due to an early preference to engage with uncertain options or early indifference to uncertainty. To test these possibilities, we ran an additional mixed-effects logistic regression including data only from child participants, examining how expected value, uncertainty, and novelty influenced choice. Results indicated that children\u2019s choices were significantly influenced by both expected value (OR = 2.27 [1.78, 2.91], \u03c72(1) = 26.8, p < 0.001) and novelty (OR = 1.35 [1.24, 1.48], \u03c72(1) = 28.4, p < 0.001). However, there was not an effect of uncertainty on choice, OR = 1.07 [0.945, 1.21], \u03c72(1) = 1.17, p = 0.280, indicating no significant evidence for uncertainty-seeking.\n\nCorroborating these findings, on trials in which the two choice options had nearly identical expected values (<0.05 difference), children, adolescents, and adults, on average, selected the more novel option on 59.1% (SE = 1.7%), 59.1% (SE = 1.7%), and 58.3% (SE = 1.2%) of trials, respectively (Figure 3B). However, whereas adults tended to avoid the more uncertain option, selecting it on only 41.9% (SE = 1.2%) of equal-expected-value trials, adolescents and children selected the more uncertain option on 48.9% (SE = 1.7%) and 52.7% (SE = 1.7%) of these trials, respectively (Figure 3B). Thus, taken together, these results suggest that age-related decreases in exploratory choices were driven by an increase in aversion to reward uncertainty with increasing age.\n\n### Age-related change in sensitivity versus aversion to uncertainty\n\nThere are two potential accounts of the observed increase in uncertainty aversion with increasing age: Children may have been sensitive to reward uncertainty but not averse to it, or, they may have failed to track uncertainty at all due to the computational demands of estimating the variance of outcome distributions across the task. To disentangle these two possibilities, we examined how the uncertainty of the selected choice option influenced participant response times. If younger participants were sensitive to reward uncertainty, their response times should relate to it.\n\nA linear mixed-effects model examining how the expected value, novelty, and uncertainty of the selected choice option \u2014 as well as their interactions with age \u2014 related to log-transformed response times revealed sensitivity to all three choice features across age (Figure 4). Participants responded more quickly when selecting options with higher expected values (b = \u22120.03, SE = 0.006, F(1, 115.4) = 29.7, p < 0.001), and more slowly when selecting options with higher novelty (b = 0.06, SE = 0.004, F(1, 111.3) = 197, p < 0.001) and higher uncertainty (b = 0.07, SE = 0.005, F(1, 117.1) = 171.7, p < 0.001). We also observed significant novelty by age (b = \u22120.009, SE = 0.004, F(1, 108.2) = 4.2, p = 0.043) and uncertainty by age interactions (b = 0.015, SE = 0.005, F(1, 117.8) = 8.2, p = 0.005). Novelty had a stronger slowing influence on the response times of younger versus older participants, whereas uncertainty had a stronger slowing influence on the response times of older versus younger participants (Figure 4). Critically, however, we continued to observe a significant effect of uncertainty on response times when we only included children\u2019s data in the model, b = 0.04, SE = 0.01, F(1, 38.2) = 16.5, p < 0.001, indicating that children\u2019s response times were sensitive to the uncertainty of the selected option (see Appendix 1\u2014table 5 for regression coefficients for all choice features cross age groups). These findings held when we controlled for within-block trial number in the models (ps < 0.01).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/84260/elife-84260-fig4-v1.jpg)\n\n**Figure 4.:** (A) Participants (n = 122) were faster to select options with higher expected values, (B) slower to select options with greater uncertainty, and (C) slower to select options with higher novelty. Individual points in panels A\u2013C show individual log-transformed response times on each trial. The lines in panels A\u2013C show the best-fitting linear regression lines and the shaded regions around them represent 95% confidence intervals. (D) The influence of expected value on response times did not vary across age, whereas younger participants demonstrated (E) a weaker influence of uncertainty on response times (p = 0.005) and (F) a stronger influence of novelty on response times (p = 0.043). The lines in panels D\u2013E show predictions from a linear mixed-effects model and the shaded regions around them represent 95% confidence intervals.\n\nWe also examined whether slower response times reflected uncertainty aversion by examining the relation between individual differences in the influence of uncertainty on choice and in the influence of uncertainty on response times. To do so, we extracted individual participants\u2019 random uncertainty slopes from a model examining how expected value, novelty, and uncertainty differences between choice options related to decisions, and individual participants\u2019 random uncertainty slopes from our model examining how the expected value, novelty, and uncertainty of the selected choice option related to response times. We then ran a linear regression examining how the effect of uncertainty on response times, age, and their interaction related to uncertainty aversion. We observed a significant negative relation between the effect of uncertainty on choice and the effect of uncertainty on response times, $\\beta$ = \u22120.22, SE = 0.09, t = \u22122.5, p = 0.014, indicating that participants who were more uncertainty averse were also slower to select more uncertain options. We did not observe a significant age x uncertainty interaction effect (p = 0.81). Thus, taken together, our findings suggest that despite not demonstrating uncertainty aversion in their decisions, children were sensitive to the relative reward uncertainty of different choice options throughout the task.\n\n### Computational characterization of choice\n\nAs in Cockburn et al., 2022, we observed opposing effects of novelty and uncertainty on choice \u2014 though participants sought out novel options, they shied away from those with greater uncertainty. At first glance, these results are somewhat puzzling because novel options are inherently uncertain. Reinforcement learning models that formalize different algorithms for how the expected utilities of the choice options are computed across trials can provide greater insight into how novelty and uncertainty may interact to influence exploratory choice behavior.\n\nWe fit participant choice data with six different reinforcement learning models (see methods). Across models, we conceptualized the learning process as that of a \u2018forgetful Bayesian learner,\u2019 such that the expected value of each choice option is computed as the mean of a beta distribution with hyperparameters that reflect recency-weighted win and loss outcomes (Cockburn et al., 2022). We then modified this baseline model by adding either fully separable or interacting uncertainty and novelty biases. Specifically, beyond the baseline model, we fit three additional models in which uncertainty and novelty exerted separable influences on choice behavior: a model augmented with a novelty bias that adjusted the initial hyperparameters of each option\u2019s beta distribution, a model augmented with an uncertainty bias that added or subtracted each option\u2019s scaled uncertainty to its expected utility, and a model augmented with both biases. Corroborating our behavioral results, parameter estimates from the model with both a novelty and uncertainty bias revealed an age-consistent novelty preference but age-varying uncertainty aversion (see Appendix 1).\n\nWe additionally fit two models that account for interactions between novelty and uncertainty. Given the findings of Cockburn et al., 2022, we hypothesized that novelty may buffer the aversive influence of reward uncertainty. In other words, we expected that the extent to which the uncertainty of a given choice option would influence its utility would increase in relation to its familiarity. Thus, we fit two additional models (with and without a separate novelty bias) in which the uncertainty bias was \u2018gated\u2019 by stimulus familiarity (though the model with both a novelty bias and familiarity gate was not recoverable; see \u2018methods\u2019).\n\nTo test for age-related change in the way that novelty and uncertainty influenced exploratory choice, we compared model fits for these six models within each age group using a random-effects Bayesian model selection procedure with simultaneous hierarchical parameter estimation (Piray et al., 2019) and examined protected exceedance probabilities (PXPs), which reflect the probability that a given model in a comparison set is the most frequent, best-fitting model across participants, while controlling for differences in model frequencies that may arise due to chance.\n\nIn line with findings from Cockburn et al., 2022, we found that adult choices were best characterized by a model in which choice utilities took into account interactions between novelty and uncertainty. Specifically, adult choices were best captured by the familiarity-gated uncertainty model (PXP Familiarity Gate = 1), in which uncertainty aversion was greater for more familiar options. Despite showing weaker aversion to uncertainty relative to adults, adolescents were also best fit by this model (PXP Familiarity Gate = 1). Children\u2019s choices, however, were best captured by a model with a simple novelty bias (PXP Novelty Bias = 0.62; PXP Familiarity Gate = 0.38).\n\nParameter estimates from the winning models reflected participants\u2019 bias toward novel stimuli and away from those with high reward uncertainty. Children\u2019s average \u2018novelty bias\u2019 (from the group-level novelty bias model fits) was 1.49, indicating that they optimistically initiated the value of novel options. A one-sample hierarchical Bayesian inference (HBI) t-test examining the group-level posterior distribution of the novelty bias parameter (implemented via the cbm model-fitting package Piray et al., 2019), revealed that children\u2019s novelty bias was significantly different from 0, t(16.3) = 5.96, p < 0.001. The average value of the \u2018uncertainty bias\u2019 (from the group-level familiarity-gated uncertainty model fits) was \u22120.15 for both adolescents and adults. HBI t-tests revealed that uncertainty bias parameter estimates were significantly different from 0 in both age groups (Adolescents: t(26.5) = \u22127.8, p < 0.001; Adults: t(11.3) = \u22124.16, p = 0.001).\n\nModel simulations revealed that the winning models well-captured qualitative features of behavioral choice data for each age group. For each model, we generated 50 simulated datasets using each of the 122 participants\u2019 trial sequence and parameter estimates (for a total of 6100 simulated agents per model). For each model, we then computed the performance of 122 simulated participants by averaging the performance of the 50 agents who shared the same trial sequence. Data from these simulations demonstrated that the familiarity-gated uncertainty model generated the most strongly diverging effects of novelty and uncertainty on choice, in line with the adult and adolescent data (Figure 5; also see Appendix 1\u2014figure 2). The simpler novelty bias model instantiated a bias toward both novel and uncertain choices. Thus, these modeling results suggest that whereas adults and adolescents were more strongly deterred by the uncertainty of familiar options versus novel ones, children employed a simpler learning algorithm in which they optimistically initialized the value of novel choice options.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/84260/elife-84260-fig5-v1.jpg)\n\n**Figure 5.:** The average proportion of similar-expected-value trials (with expected value magnitude differences <0.05) in which both real (n = 122) and simulated (n = 122) participants chose the more novel and more uncertain option. The shaded regions show the empirical data and best-fitting model for each age group. Error bars represented the standard error across participant means. The novelty bias and familiarity-gated uncertainty model each had three free parameters, while the baseline model had two, and the novelty + uncertainty bias model had four.\n\n## Discussion\n\nIn this study, we investigated how novelty and uncertainty influence exploration across development. Though new choice options tend to have both high novelty and high reward uncertainty, we found that the influence of these features on decision making follow distinct developmental trajectories. While participants across age demonstrated a similar bias toward selecting more novel choice options, only older participants showed aversion to selecting those with greater uncertainty. These findings suggest that children\u2019s bias toward exploration over exploitation may arise from attenuated aversion to selecting more uncertain options rather than heightened sensitivity to novelty.\n\nPrior studies have found that novelty may be intrinsically rewarding (Wittmann et al., 2008), motivating individuals to approach, learn about, and remember the new stimuli they encounter (Houillon et al., 2013; Krebs et al., 2009). Children (Henderson and Moore, 1980; Mendel, 1965; Valenti, 1985), adolescents (Spear, 2000), and adults (Cockburn et al., 2022; Daffner et al., 1998) all demonstrate novelty-seeking behavior. However, though many studies have shown novelty preferences at different developmental stages, little work has compared novelty preferences across age. Research in rodents has suggested that adolescents may demonstrate heightened sensitivity to novelty (Philpot and Wecker, 2008; Spear, 2000; Stansfield and Kirstein, 2006), but to the best of our knowledge, there is no human evidence for an adolescent peak in novelty preferences. Indeed, our findings suggest that the drive to engage with novel stimuli promotes exploratory choice in a consistent manner across our age range. Moreover, the consistency of novelty-seeking across development indicates that differences in the reward value assigned to novel options cannot fully account for developmental differences in exploration.\n\nWhereas novelty-seeking did not exhibit age-related change, uncertainty aversion increased from childhood to early adulthood, potentially reflecting developmental improvement in the strategic modulation of information-seeking. Prior studies of decision making have found that individuals across age demonstrate uncertainty aversion in some environments (Camerer and Weber, 1992; Payzan-LeNestour et al., 2013; Rosenbaum and Hartley, 2019) and uncertainty-seeking in others (Blanchard and Gershman, 2018; Giron et al., 2022; Schulz et al., 2019). These seemingly discrepant patterns of behavior may be explained by differences in the utility of resolving uncertainty across contexts. In environments where learned information can be exploited to improve subsequent choices, resolving uncertainty has high utility (Rich and Gureckis, 2018; Wilson et al., 2014), whereas in choice contexts with short temporal horizons, there is little opportunity to use learned reward information to improve future decisions (Camerer and Weber, 1992; Levy et al., 2010). In our task, individuals had a relatively short horizon over which to exploit reward probabilities that themselves required multiple trials to learn \u2014 children\u2019s reduced uncertainty aversion may have emerged from insensitivity to the limited utility of gaining additional information about the most uncertain choice options (Somerville et al., 2017).\n\nImportantly, even though children\u2019s choices were not uncertainty averse, children\u2019s slower response times when engaging with more uncertain options suggests that they were able to track uncertainty. Indeed, the developmental decrease in uncertainty-seeking behavior that we observed here is in line with what has been observed in prior studies in which uncertainty was easier to discern. For example, in one study (Blanco and Sloutsky, 2021), children tended to select choice options with hidden reward amounts over those with visible reward amounts. In other studies with spatially correlated rewards, children could use the layout of revealed outcomes to direct their sampling toward unexplored regions (Giron et al., 2022; Meder et al., 2021; Schulz et al., 2019). In studies of causal learning and exploratory play, young children often use experiences of surprise or the coherence of their own beliefs about the world to direct their exploration toward uncertain parts of the environment (Bonawitz et al., 2012; Schulz and Bonawitz, 2007; Wang et al., 2021). Here, we extend these past findings to demonstrate that children are sensitive to uncertainty even when it depends on distributions of binary outcomes.\n\nOur observation of an influence of uncertainty on children\u2019s reaction times suggests that uncertainty did affect how children made value-based decisions. Future work could fit cognitive models to both participants\u2019 choices and response times to investigate how, across age, uncertainty influences component cognitive processes involved in value-based decision making. For example, researchers could use sequential sampling models to test different hypotheses about how value uncertainty \u2014 and its interactions with both expected value and novelty \u2014 influences both the rate at which participants accumulate evidence for a given option as well as the evidence threshold that must be reached for a response to be made (Lee and Usher, 2023; Wu et al., 2022). In addition, these approaches could be integrated with reinforcement learning models (Fontanesi et al., 2019) to gain further resolution into how the learned features of different options influence the choices participants make and the speed with which they make them.\n\nOur computational modeling findings largely replicated previous work suggesting that by adulthood, novelty and uncertainty interact competitively (Cockburn et al., 2022), exerting opposing motivational influences on decision-making. Using functional magnetic resonance imaging (fMRI), this prior adult study (Cockburn et al., 2022) revealed that activation in the ventral striatum reflects a biased reward prediction error consistent with optimistic value initialization for novel stimuli, whereas activation in the medial prefrontal cortex (mPFC) reflects the subjective utility of uncertainty reduction. In line with choices being best characterized by a model in which the aversive influence of uncertainty was dampened by novelty, the integration of uncertainty into these mPFC value representations was similarly diminished for novel stimuli (Cockburn et al., 2022). Cockburn et al., 2022 posited that attenuated uncertainty aversion for novel stimuli may promote exploration even in environments where deriving the prospective utility of uncertainty reduction is difficult. Our findings further suggest that these competitive interactions between uncertainty and novelty may emerge in adolescence, as connectivity between cortical and subcortical circuitry matures (Casey et al., 2019; Parr et al., 2021). However, more neuroimaging work is needed to unveil how changes in neural circuitry support the use of these choice features during decision making across development.\n\nRecent theories have proposed that heightened exploration is an adaptive quality of childhood (Giron et al., 2022; Gopnik, 2020), but these theoretical accounts \u2014 and the empirical work they have inspired \u2014 have left open the question of how different features of the environment elicit this strong, exploratory drive early in life. Here, we demonstrated that the developmental shift from more exploratory to more exploitative behavior may arise from strengthening aversion to selecting options with higher reward uncertainty with increasing age, rather than from changes in novelty-seeking. Importantly, in the real world, exploration manifests through interaction with dynamic ecological contexts in which novelty and uncertainty may be highly idiosyncratic. Compared to adolescents and adults, children may encounter a greater number of novel options due to their relative lack of life experience. As they gain more autonomy, adolescents may find themselves facing more decisions (particularly in the social domain) with unknown reward outcomes. The current findings help build toward a comprehensive understanding of developmental change in exploration by disentangling the cognitive processes that govern how individuals interact with these core features of the choice options present in natural environments.\n\n## Methods\n\n### Participants\n\nOne hundred and twenty-two participants between the ages of 8 and 27 years old (mean age = 17.9 years, SD age = 5.6 years, 62 females, 59 males, 1 non-binary) completed the experiment. Based on prior, similar studies of value-guided decision making from childhood to adulthood (Habicht et al., 2021; Somerville et al., 2017), we determined a target sample size of N = 120, evenly distributed across our age range, prior to data collection. The final analyzed sample of 122 participants comprised n = 30 children (mean age = 10.5 years; SD age = 1.4 years; range = 8.1\u201312.7 years; 14 females), n = 30 adolescents (mean age = 15.5 years; SD age = 1.3 years; range = 13.6\u201317.8 years; 16 females), and n = 62 adults (mean age = 22.6 years; SD age = 2.8 years; range = 18.1\u201327.8 years; 32 females). Data from one additional participant were not analyzed because the participant chose to stop the experiment prior to completing the entire exploration task. Two participants included in the final analyzed sample were excluded from memory test analyses due to technical errors during data acquisition.\n\nParticipants were recruited from the local New York City community. Participants reported normal or corrected-to-normal vision and no history of diagnosed psychiatric or learning disorders. Based on self- or parental report, 33.6% of participants were Asian, 33.6% were White, 18.0% were two or more races, 13.1% were Black, and 1.6% were Pacific Islander/Native Hawaiian. In addition, 15.6% of participants were Hispanic.\n\nResearch procedures were approved by New York University\u2019s Institutional Review Board (IRB-2016-1194 and IRB-FY2021-5356). Adult participants provided written consent prior to participating in the study. Children and adolescents provided written assent, and their parents or guardians provided written consent on their behalf, prior to their participation. All participants were compensated $15/hr for the experimental session. Participants were told that they would receive an additional bonus payment based on their performance in the experiment; in reality, all participants received an additional $5 bonus payment.\n\n### Task\n\n#### Exploration task\n\nParticipants completed a child-friendly decision-making task adapted from one used in a prior adult study (Cockburn et al., 2022). The child-friendly version of the task was framed within an \u2018Enchanted Kingdom\u2019 narrative and included fewer stimuli and trials per block than the version used in prior work (Cockburn et al., 2022) with adults. Within this narrative framework, participants were tasked with finding gold coins to raise money to build a bridge to unite two sides of an enchanted kingdom. Various creatures had hidden the gold coins in different territories around the kingdom. On every trial, participants had to choose between two hiding spots to search for a coin.\n\nThe task was divided into 10 blocks of 15 trials. Each block took place within a different territory in which coins were hidden by a distinct creature. Each creature hid their coins among three possible locations. Half of the blocks were \u2018easy\u2019 \u2014 in easy blocks, the creature\u2019s favorite hiding spot held a coin on 80% of trials, their second favorite held a coin on 50% of trials, and their least favorite held a coin on 20% of trials. The other half of blocks were \u2018hard\u2019 \u2014 in hard blocks, the creature\u2019s favorite hiding spot held a coin on 70% of trials, their second favorite held a coin on 50% of trials, and their least favorite held a coin on 30% of trials. Participants were not explicitly informed of these probabilities, and had to learn, through trial and error, where each creature was most likely to hide a coin.\n\nOn every trial, participants viewed two hiding spots and had 4 s to select one in which to search for a coin by pressing one of two keys on a standard keyboard (Figure 1). After a brief delay in which the option they selected was outlined (500 ms), participants saw the outcome of their choice \u2014 either a coin or an X indicating that they had not found a coin (1.5 s). Throughout each block, the background of the screen indicated the territory and a picture in the lower left corner indicated the creature that had hidden coins there.\n\nImportantly, after the first block, each subsequent block contained two hiding spots that participants had encountered in previous blocks and one novel hiding spot they had not seen before. Though participants had already encountered two of the hiding spots within each block, the reward probabilities were re-randomized for every creature. In this way, the task dissociated sensory novelty and reward uncertainty. At the beginning of every block, the novelty of each hiding spot varied \u2014 at least one hiding spot was completely novel, whereas from the second block on, the other two had been encountered anywhere from 4 to 82 times (mean = 22.4 encounters, SD = 13.8 encounters) \u2014 but all hiding spots had high reward uncertainty. Participants were explicitly told that the reward probabilities were reset in every block; within the task narrative, this was framed as each creature having different favorite hiding spots in their respective territory (see Appendix 1 for analyses demonstrating that participants of all ages indeed comprehended these instructions and \u2018reset\u2019 the reward probabilities at the beginning of each block).\n\nThe order of the creatures and the hiding spots assigned to each creature were randomized for each participant. Within each block, the reward probabilities assigned to the two \u2018old\u2019 hiding spots and the novel hiding spot were randomized. On each trial, the two hiding spots that appeared as choice options and their positions on the screen (left or right) were also randomized.\n\n#### Memory test\n\nImmediately after the exploration task, participants completed a surprise memory test. They were shown each of the ten creatures, one at a time, and asked to select its favorite hiding spot from an array of five options, using numbers on the keyboard. The array of five options always included the hiding spot in which the creature was most likely to hide the coin (the correct answer), the two other hiding spots where that creature hid coins, a previously encountered hiding spot from a different block of the task, and a new hiding spot that was not presented in the exploration task.\n\n#### Instructions and practice\n\nPrior to completing both the exploration and the memory task, participants went through extensive, interactive instructions with an experimenter. The instructions were written and illustrated on the computer screen, and an experimenter read them aloud. During the instructions, participants were informed that (1) hiding spots may repeat throughout the task but each creature had different favorite hiding spots, (2) a creature would not always hide its coins in its favorite spot, and (3) each creature\u2019s hiding spot preferences remained stable throughout the entire block. They also discussed three comprehension questions with an experimenter to ensure their full understanding of the task; comprehension questions were not scored, but instead remained on the screen until participants selected the correct answer (with experimenter guidance, if needed). Finally, participants completed two full practice blocks with stimuli that were not used in the main task.\n\n### WASI\n\nAfter the exploration task and memory test, participants were administered the vocabulary and matrix reasoning subtests of the Wechsler Abbreviated Scale of Intelligence (Wechsler, 2011). Because our primary aim was to address the relation between age and exploratory behavior, we report results from the models without WASI scores in the main text of the manuscript and include results from the models with WASI scores in Appendix 1.\n\n### Analysis approach\n\n#### Treatment of age\n\nWe treated age as a continuous variable in all regression analyses. We binned participants into three age groups (children aged 8\u201312 years, adolescents aged 13\u201317 years, and adults aged 18\u201327 years) for data visualization and model comparison purposes. Our adult age group spanned a greater age range and included double the number of participants as our child and adolescent age groups; as such, we include additional visualizations and model comparison results that subdivide this group into college-aged adults (18\u201322 years) and post-college-aged adults (23\u201327 years) in Appendix 1.\n\nBecause we originally hypothesized that the influence of expected value, uncertainty, and novelty would change monotonically with age, we included linear age in all regression analyses. To account for potential non-linearities in our age effects, we report results from analyses including quadratic age in Appendix 1, though we note that the quadratic age effects we observed do not hold when we control for potential cohort-level IQ differences across our sample (see Appendix 1).\n\n#### Mixed-effects modeling methods\n\nData processing was conducted in both Matlab 2020b (The MathWorks Inc, 2020) and R version 4.1.1 (R Development Core Team, 2018). Mixed-effects models were run using the \u2018afex\u2019 package (Singmann et al., 2020). Continuous variables were z-scored across the entire dataset prior to their inclusion in the models. Choice trials in which participants failed to make a response, or responded in faster than 200ms were excluded from all analyses (n = 154 out of 18,300 total trials; max 13 out of 150 trials excluded per participant). Models included random participant intercepts and slopes across all fixed effects, except where noted due to convergence failures. For logistic mixed-effects models, we assessed the significance of fixed effects via likelihood ratio tests. For linear mixed-effects models, we assessed the significance of fixed effects via F tests using the Satterthwaite approximation to determine the degrees of freedom.\n\n### Computational modeling\n\nWe fit participant data with six variants of a reinforcement learning model that reflected different hypotheses about how expected value, novelty, and uncertainty may influence the estimated utility of the choice options presented on each trial (Cockburn et al., 2022). Across all models, these estimated utilities (V) were transformed into choice probabilities via a softmax function, with an inverse temperature parameter ($\\beta_{SM}$) that captured the extent to which estimated utilities drove participant choices, with higher estimates reflecting more value-driven choices, and lower estimates reflecting greater choice stochasticity such that:\n\n$$\np(c_{t}\u00a0=\u00a01)\u00a0=\u00a0\\frac{1}{1+e^{\\beta_{SM}\u00a0\u2217\u00a0(V_{2}\u00a0\u2212\u00a0V_{1})}}\n$$\n\nwhere $c_{t}$ is the choice they made on trial t.\n\nFollowing the approach of Cockburn et al., 2022, we modeled the task from the perspective of a forgetful Bayesian learner. From this perspective, each option is represented as a Beta distribution, where the two parameters that define the distribution ($\\alpha$ and $\\beta$) reflect recency-weighted win and loss histories. The recency weights are governed by a learning rate-free parameter ($\u03b7$), with higher values reflecting greater weight placed on more recent outcomes such that:\n\n$$\n\\alpha_{i }=1+\\sum_{t=0  }^{T-1}\u03b7^{T-t}* O_{t}^{w}\n$$\n\nand\n\n$$\n\\beta_{i }= 1 + \\sum_{t=0}^{T-1} \u03b7^{T-t} * O_{t}^{L}\n$$\n\nwhere T represents the current trial within the block, and $O_{t}^{W}$ and $O_{t}^{L}$ represent win and loss outcomes on each trial (such that they are set to 1 for win and loss outcomes, and 0 otherwise, respectively). In line with our model-free analyses, we conceptualize the mean of the beta distribution defined by these two parameters as the choice option\u2019s expected value (Q) and its variance as the option\u2019s uncertainty (U).\n\nBaseline model (two parameters). The baseline model captured the hypothesis that choices were driven by each option\u2019s expected value. As such, in the two-parameter baseline model, the means of the beta distributions determined the utility of each choice option.\n\nNovelty bias model (three parameters). The novelty bias model was identical to the baseline model except that a novelty bias was incorporated by inflating the initial values of the hyperparameters of the beta distribution of each choice option on its first appearance in the task. This bias, implemented as free parameter, N, inflated either $\\alpha$ (reflecting optimistic initialization or novelty-seeking behavior) or $\\beta$ (reflecting pessimistic initialization, or novelty aversion).\n\nUncertainty bias model (three parameters). The uncertainty bias model was identical to the baseline model except that each option\u2019s utility was defined as the sum of its expected value and weighted uncertainty. The weight placed on the uncertainty of each option (U), implemented as free parameter, $w_{U}$ , could be negative (reflecting uncertainty aversion) or positive (reflecting uncertainty-seeking).\n\nNovelty and uncertainty bias model (four parameters). The novelty and uncertainty bias model incorporated both the novelty bias and uncertainty bias parameters described above.\n\nFamiliarity-gated uncertainty model (three parameters). This model captured the hypothesis that novelty and uncertainty interacted to influence the subjective utility of the choice options. The model implemented a \u2018familiarity-gating\u2019 mechanism, such that the uncertainty of less novel options influenced their subjective utility to a greater extent (Cockburn et al., 2022). As in our model-free analyses, we mathematically defined each option\u2019s novelty as the variance of a beta distribution with hyperparameters  $\\alpha$ = 1 + number of times each option has been presented and  $\\beta$ = 1. We then defined option familiarity, F, as 1 \u2212 option novelty. Finally, we then further multiplied each option\u2019s weighted uncertainty value by option familiarity such that:\n\n$$\nV_{i} = Q_{i} + F_{i} *U_{i}* w_{u}\n$$\n\nNovelty-biased familiarity-gated uncertainty model (four parameters). Finally, this model was identical to the familiarity-gated uncertainty model, but it also implemented optimistic or pessimistic initialization of novel choice options based on each participant\u2019s novelty bias, N.\n\n#### Model-fitting methods\n\nComputational modeling was conducted using the computational and behavioral modeling (cbm) package (Piray et al., 2019) within Matlab 2020b (The MathWorks Inc, 2020). We first fit each of the six model\u2019s to each participant\u2019s choice data, using common priors  $(N(\\mu=0,\u00a0\\sigma^{2}=6.25))$ (Cockburn et al., 2022). Because the package relies on normally distributed parameters, following the approach of Cockburn et al., 2022, across all models, we first transformed the inverse temperature parameter, which was constrained to be between 0 and 20, and the learning rate, which was constrained to be between 0 and 1, using sigmoidal functions.\n\nThese first-level fits were then fed into a second-level fitting and model comparison algorithm. Here, we performed fitting and model comparison separately for each age group to determine the most frequent best-fitting model for children, adolescents, and adults. The second-level fitting procedure performs simultaneous hierarchical parameter estimation and Bayesian model comparison, in which each participant is treated as a random effect (i.e., different participants may be best fit by different models). Through this approach, the extent to which the parameter estimates for a particular participant influences the group-level empirical prior over each parameter is determined by the extent to which their choice data are best captured by a particular model (Piray et al., 2019).\n\n#### Model recovery\n\nTo determine the extent to which the six models in our comparison set were identifiable, we generated 50 simulated datasets using each participants\u2019 trial sequence and parameter estimates for each model. We then fit each of these datasets with all six models, using the same two-stage fitting process that we used for our empirical data: For each of the 50 simulated datasets, we first fit each of the six models to each simulated participant\u2019s choice data, using common priors  $(N(\\mu=0,\u00a0\\sigma^{2}=6.25))$. We then fed these fits into a second-level fitting and model comparison algorithm. For each simulated model, we examined the average proportion of participants best fit by each of the six models (Figure 6). We also examined the proportion of the 50 datasets simulated with each model for which each fitted model was the most frequent best-fitting model, according to exceedance probabilities (Figure 6).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/84260/elife-84260-fig6-v1.jpg)\n\n**Figure 6.:** (A) Confusion matrices showing the probability of each fitted model given a simulated model. Across simulated datasets, the most frequent, best-fitting model usually matched the model that was used to generate the data. (B) Inversion matrices showing the probability of each simulated model given a fitted model. Together, these results indicate that the familiarity-gated uncertainty model could not be distinguished from the familiarity-gated uncertainty model with an additional novelty parameter.\n\nThese results revealed that in general, model identifiability was strong, particularly for the baseline, novelty bias, uncertainty bias, and familiarity-gated uncertainty model. Model identifiability for the novelty and uncertainty bias model was weaker, likely because participants may have had novelty- or uncertainty-bias parameter values that were close to 0, leading their data to be better fit by a model that implemented only one of the two biases. Finally, the familiarity-gated uncertainty model with an additional novelty bias (implemented via asymmetric value initialization) was not recoverable at all and was almost always confused for the familiarity-gated uncertainty model. By attenuating the (generally aversive) influence of uncertainty on the utility of more novel stimuli, the familiarity-gated uncertainty model inherently implements a bias toward more novel options; thus, our task does not have the resolution to effectively determine whether there may also be an additional bias toward novelty instantiated via optimistic value initialization. However, the model recoverability results demonstrate that models that implement an interactive effect of novelty and uncertainty can be clearly distinguished from those that do not. Moreover, these model recoverability results indicate that the novelty bias model and familiarity-gated uncertainty model were highly distinguishable from one another, supporting our claim that children employed a value-updating mechanism that was fundamentally distinct from the one used by adolescents and adults in our task.\n",
+      "created_at": "2025-12-04T03:01:56.233530Z"
+    },
+    {
+      "id": "e6d8c391-3a49-4fda-813d-d9489f20e790",
+      "submission_id": "b89f08f1-995c-4dae-b4e4-0312146492b0",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- David Badre, https://ror.org/05gq02987 Brown University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.84260.sa0](https://doi.org/10.7554/eLife.84260.sa0)\n\nThis is an important study that investigates changes in novelty-seeking and uncertainty-directed exploration from childhood to adulthood. A wide age range of participants was tested using a well-suited task and performance was analyzed using a sophisticated model-based approach. The results provide compelling evidence that age-related changes in decision-making are driven by attenuation in uncertainty aversion in the presence of stable novelty-seeking from childhood to adulthood.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- David Badre, https://ror.org/05gq02987 Brown University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.84260.sa1](https://doi.org/10.7554/eLife.84260.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Novelty and uncertainty differentially drive exploration across development\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, and the evaluation has been overseen by a Reviewing Editor, David Badre, and Timothy Behrens as the Senior Editor. The following individual involved in the review of your submission has agreed to reveal their identity: Charley M. Wu (Reviewer #1).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\nThough both reviewers found this to be an important investigation, they identified some points that could be addressed in revision to strengthen the support for the conclusions. Their detailed comments below are clear, so I won't copy them here. But they focus on four issues that would be essential to revise.\n\n1) Modeling \u2013 Both reviewers had comments about ways that the modeling could be improved. R1 provided suggestions on how you can clarify and elaborate on the performance of the models. R2 suggested some new modeling, such as incorporating RT, given the sensitivity of decision time.\n\n2) Statistics \u2013 R1 had several comments regarding the strength of the statistical evidence that could be clarified.\n\n3) Novelty measure \u2013 R1 also raised questions about the definition of novelty. This is important to address, or at least clarify how you are defining it, given the centrality of this construct for your conclusions.\n\n4) Reward uncertainty in children \u2013 Related to R2's comments on modeling, R2 also raised comments about the strength of evidence for the conclusion that children do not use reward uncertainty when making their decision when one considers measures like response time. This also seems important to address given its relationship to your conclusions about changes in this factor over development.\n\nReviewer #1 (Recommendations for the authors):\n\nNussenbaum, Martin, and colleagues present experimental data and computational modeling results to disentangle the role of uncertainty-directed and novelty-seeking exploration across childhood, adolescence, and adulthood. Their task uses an adapted version of a previously published decision-making task (Cockburn et al., 2022), where they analyze age-related differences in choice behavior (quantified in terms of value, uncertainty, and novelty), reaction times, and with various computational models incorporating different biases.\n\nOverall, I found this work to be clearly written and well-motivated. Some priority claims in the introduction seemed a bit unnecessary though since previous work has also disentangled novelty and uncertainty (Stoji\u0107 et al., 2020), and two papers already cited in the manuscript have looked at how exploration changes from childhood to adulthood (Giron et al., 2022; Schulz et al., 2019). However, I think this paper is interesting enough and provides a sufficiently new perspective without needing to rely on claims about being first.\n\nThe goal of the paper is to disentangle age-related changes in uncertainty-directed and novelty-seeking exploration. I believe that the behavioral and model-based analyses provide some (but perhaps limited) support for the idea that novelty-seeking stays fixed over the lifespan, whereas people become more uncertainty-averse as they get older.\n\nWhile I greatly appreciate the use of multiple analyses to support their arguments, I have some reservations about the conclusions reached by this paper. These reservations hinge on potential weaknesses in statistical analyses, limited application of the computational models, and potential issues with the quantification of novelty.\n\nStatistics\n\nWhile the statistics were generally pretty clear, there was heterogeneity across behavioral analyses that seemed to lack justification. Moving from the proportion of optimal choices to total reward earned, it's unclear if the same random effects structure (as in the logistic regression) is applied or if a non-mixed effects model is used instead. If there is a specific reason for changing the statistical framework, it would be helpful to provide some justification.\n\nAdditionally, some of the behavioral effects seem rather weak when looking at the plots (e.g., changes in performance over age and age-related differences in choosing more vs. less uncertain options). While likelihood ratio tests are used to show that a model with the predictor is better than one without, the coefficients are not reported, making it difficult to assess whether the effect size is meaningful. Looking at Figure 2B, it wasn't obvious if children performed reliably worse than adults, or if the task is relatively simple such that a ceiling effect is reached. Reporting the regression coefficients (or the Odds Ratio for the logistic regression) and using a consistent mixed-effects structure would greatly help with interpreting these results.\n\nModel results\n\nOne of the strengths of the paper is in using multiple analyses (e.g., choices, RTs, and models) to probe the main question. However, I felt that the model results were a bit underwhelming. It's clear a lot of work has gone into them, but we are given a relatively sparse account of how well they perform. Showing age-related changes to the parameters governing novelty and uncertainty bias would be very helpful in supporting the behavioral analyses in justifying the current conclusions. Currently, it's not reported if children's novelty bias differs from adolescents or adults or if novelty bias changes as a function of age. Second, beyond the rather 1-dimensional comparison provided in Figure 5, would you expect the models to also reproduce key behavioral signatures (e.g., in Figure 2 and Figure 3?)? It's also fine if this is out of the current scope, but a demonstration that age-related changes in uncertainty bias but not novelty is necessary to reproduce key aspects of behavior would provide the strongest support for the current claims. Lastly, the recovery results suggest potential misspecification with the winning model also accounting for a lot of the variance from other models. It would be very helpful to also report the inversion matrix (Wilson and Collins, 2019).\n\nMeasuring novelty\n\nI found the quantification of stimulus novelty to be sensible but somewhat limited. It captures a uni-dimensional account of how often one has interacted with a given stimulus. But it doesn't capture how accustomed we are to other stimuli and how genuinely novel new stimuli may be. For example, for a na\u00efve learner in the task, any new locations may be equally novel. However, over the course of learning, one gains familiarity with existing stimuli, such that new locations might be more surprising or unexpected. This familiarity effect would predict that novel stimuli in early blocks should differ from later blocks.\n\nPerhaps a more holistic account of stimulus novelty could use a Dirichlet distribution over the n different hiding locations, where the concentration parameter \u03b1_i is updated for each experience of stimuli i. This would capture how expectations over all stimuli can inform novelty judgements about a particular new stimulus. I should clarify that this is a rather speculative suggestion, and I'm definitely not going to insist that you adopt it. Perhaps you've already looked into the effect of novelty over blocks and have already falsified this prediction. However, I am personally curious about how this would influence other downstream analyses. And since the forgetting mechanisms of the Bayesian learner can be applied to uncertainty but not to the current implementation of novelty, swapping to a Dirichlet distribution would also let you apply an equivalent decay process to the concentration parameters.\n\nReferences:\n\nBarr, D. J., Levy, R., Scheepers, C., and Tily, H. J. (2013). Random effects structure for confirmatory hypothesis testing: Keep it maximal. Journal of Memory and Language, 68(3). https://doi.org/10.1016/j.jml.2012.11.001\n\nGiron, A. P., Ciranka, S. K., Schulz, E., van den Bos, W., Ruggeri, A., Meder, B., and Wu, C. M. (2022). Developmental changes resemble stochastic optimization. https://doi.org/10.31234/osf.io/9f4k3\n\nSchulz, E., Wu, C. M., Ruggeri, A., and Meder, B. (2019). Searching for Rewards Like a Child Means Less Generalization and More Directed Exploration. Psychological Science, 30(11), 1561-1572.\n\nStoji\u0107, H., Schulz, E., P Analytis, P., and Speekenbrink, M. (2020). It's new, but is it good? How generalization and uncertainty guide the exploration of novel options. Journal of Experimental Psychology. General, 149(10), 1878-1907.\n\nWilson, R. C., and Collins, A. G. (2019). Ten simple rules for the computational modeling of behavioral data. eLife, 8. https://doi.org/10.7554/eLife.49547\n\nReviewer #2 (Recommendations for the authors):\n\nThis study deploys a modified value-guided decision-making task (adopted from Cockburn et al., 2022) to examine factors contributing to the commonly observed developmental shift toward exploitation. The paradigm permits a dissociation between sensory stimulus novelty and reward uncertainty, allowing the authors to investigate the effects of both factors on choice behavior across a large population of participants ranging from eight to 27 years. The authors apply a combination of linear mixed-effect modeling and reinforcement learning to examine age-related differences in the influence of novelty and reward uncertainty on choices and reaction times (RTs). Both types of analyses yield the same age-related differences: the choice behavior of adults is best captured by both sensory novelty (novelty-seeking) and reward uncertainty (uncertainty aversion), whereas the choice behavior of children is best captured by novelty, not uncertainty. Nevertheless, children's RTs are partly influenced by reward uncertainty. The authors conclude that the developmental shift toward exploitation may reflect an age-related increase in the aversion to reward uncertainty (as opposed to alterations in novelty-seeking) and that children do not factor uncertainty into their decision-making.\n\nStrengths\n\nThe study deployed a well-suited paradigm (Cockburn et al., 2022) to examine age-related changes in decision-making behavior. The experiment enables a clean dissociation between (sensory) stimulus novelty and reward uncertainty and is amenable to both statistical and computational modeling of participant behavior. Notably, the authors took great care in adapting the paradigm for children and ensuring that all participants understood instructions involving the experimental manipulation (e.g., that the reward uncertainty resets every block while some stimuli might occur more often).\n\nAnother strength of this article is its multi-methodical approach to examining the core hypothesis that age-related changes in exploratory behavior are driven by how novelty and reward uncertainty influence choice evaluation. The statistical analyses appear sound and replicate prior findings. Moreover, the statistical analyses comport the results from a formal comparison of different reinforcement learning models (each implementing a different hypothesis). Notably, the authors demonstrate the validity of the comparison by showcasing model recovery on synthetic data.\n\nWeaknesses\n\nThe only critical weakness I could identify pertains to the conclusion that children did not use reward uncertainty \"to guide their decisions.\" This argument rests on the observation that children's choices were unaffected by reward uncertainty. However, the authors observed that RTs were affected by reward uncertainty, leading them to conclude that children may be aware of the reward uncertainty but don't factor it into the decision-making process. If RTs were regarded as a more sensitive measure than choices, then reward uncertainty might arguably still affect the decision process. This hypothesis may be better tested by fitting a drift-diffusion model to both choices and RTs and examining the effect of reward uncertainty on the rate of evidence accumulation. The advantages of this method would be that the model is fit using more information (choices and RTs) and that it allows dissociating mechanisms for biasing the decision process (e.g., rate of evidence accumulation) from mechanisms for delaying the decision process (response threshold).\n\nImpact\n\nFrom a conceptual point of view, the study contributes novel insights into developmental changes in decision-making behavior while, at the same time, offering a valuable replication of previous findings (Cockburn et al., 2022).\n\nFrom a technical point of view, the adopted paradigm and modeling effort provide a valuable tool for other researchers to examine the distinctive contributions of novelty and reward uncertainty to human decision-making. Therefore, I applaud the authors for making their data, analysis, and code available on OSF.\n\n1. Developmental shift in aversion to uncertainty. Is it the case that adults become more uncertainty-averse or that children are more uncertainty-seeking to begin with or both? Figure 3B suggests the former, although Figure 5 suggests the latter so it might be worth further (statistical) examination.\n\n2. Effects of uncertainty on choices versus RTs in children. The manuscript argues that children \"were able to track uncertainty, despite not using it to guide their decisions.\" This argument seems to rest on the observation that uncertainty did not affect choices but RTs. However, RTs are also impacted by the decision-making process and could be regarded as a more sensitive measure. Thus, I wonder if it is fair to argue that uncertainty did not influence children's choices. A cleaner examination of this question might involve fitting a drift-diffusion model (e.g., with the HDDM package) to both children's choices and RTs. An effect of uncertainty on the rate of evidence accumulation would indicate that uncertainty influences the decision-making process. In contrast, an effect on threshold would suggest that the decision is not biased based on uncertainty but generally slowed.\n\n3. Perhaps I am missing something, but I wondered why the authors did not consider fitting a mixture RL model in which the interaction term (bias x novelty) was weighted depending on age (in addition to the main terms). The advantage of such an approach may be that, if hierarchically fitted, the weight could be directly examined.\n",
+      "created_at": "2025-12-04T03:01:56.233530Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T03:01:56.233530Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T03:01:56.233530Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "8da4aa11-7e9c-4adc-b149-03fc9baac7b6",
+      "content_id": "fd7770d7-128a-481b-8120-0378bf278fc1",
+      "claim_id": "C1",
+      "claim": "Children, adolescents, and adults (ages 8\u201327 years, N = 122) completed an adapted version of a recently developed value-guided decision-making task that decouples novelty and uncertainty.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, children, adolescents, and adults (ages 8\u201327 years, N = 122) completed an adapted version of a recently developed value-guided decision-making task that decouples novelty and uncertainty.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the sample characteristics and task completion.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:01:56.233530Z"
+    },
+    {
+      "id": "02da3f3c-7bb1-4c36-8c16-caa8faff150f",
+      "content_id": "fd7770d7-128a-481b-8120-0378bf278fc1",
+      "claim_id": "C2",
+      "claim": "Exploration decreased with increasing age.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with prior studies, we found that exploration decreased with increasing age.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the study's data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:01:56.233530Z"
+    },
+    {
+      "id": "ae9ce5cb-1d34-4fec-98c4-8da6a71babd6",
+      "content_id": "fd7770d7-128a-481b-8120-0378bf278fc1",
+      "claim_id": "C3",
+      "claim": "Participants of all ages demonstrated a similar bias to select choice options with greater novelty.",
+      "claim_type": "EXPLICIT",
+      "source": "Critically, participants of all ages demonstrated a similar bias to select choice options with greater novelty, whereas aversion to reward uncertainty increased into adulthood.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the study's data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:01:56.233530Z"
+    },
+    {
+      "id": "3f00a7de-e541-4f3e-b494-ad3981277d87",
+      "content_id": "fd7770d7-128a-481b-8120-0378bf278fc1",
+      "claim_id": "C4",
+      "claim": "Aversion to reward uncertainty increased into adulthood.",
+      "claim_type": "EXPLICIT",
+      "source": "Critically, participants of all ages demonstrated a similar bias to select choice options with greater novelty, whereas aversion to reward uncertainty increased into adulthood.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the study's data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:01:56.233530Z"
+    },
+    {
+      "id": "e6a2af40-b17c-422b-85be-b225de7eef71",
+      "content_id": "fd7770d7-128a-481b-8120-0378bf278fc1",
+      "claim_id": "C5",
+      "claim": "Adolescents and adults demonstrated attenuated uncertainty aversion for more novel choice options.",
+      "claim_type": "EXPLICIT",
+      "source": "Computational modeling of participant choices revealed that whereas adolescents and adults demonstrated attenuated uncertainty aversion for more novel choice options, children's choices were not influenced by reward uncertainty.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from computational modeling of the study data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:01:56.233530Z"
+    },
+    {
+      "id": "1dcc36ca-3613-428a-a71f-42624bab10f5",
+      "content_id": "fd7770d7-128a-481b-8120-0378bf278fc1",
+      "claim_id": "C6",
+      "claim": "Children's choices were not influenced by reward uncertainty.",
+      "claim_type": "EXPLICIT",
+      "source": "Computational modeling of participant choices revealed that whereas adolescents and adults demonstrated attenuated uncertainty aversion for more novel choice options, children's choices were not influenced by reward uncertainty.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from computational modeling of the study data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:01:56.233530Z"
+    },
+    {
+      "id": "10d18f5c-7dd0-4a01-b841-36227cff144b",
+      "content_id": "fd7770d7-128a-481b-8120-0378bf278fc1",
+      "claim_id": "C7",
+      "claim": "Children tend to know less about the world and have longer temporal horizons over which to exploit newly discovered information relative to adults.",
+      "claim_type": "EXPLICIT",
+      "source": "Relative to adults, children tend to know less about the world and have longer temporal horizons over which to exploit newly discovered information (Gopnik, 2020; Gopnik et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:01:56.233530Z"
+    },
+    {
+      "id": "1f7023aa-754a-456d-ab47-8379988af6d6",
+      "content_id": "fd7770d7-128a-481b-8120-0378bf278fc1",
+      "claim_id": "C8",
+      "claim": "It may be advantageous to explore to a greater extent earlier in life, and gradually shift to a more exploitative decision strategy as experience yields knowledge.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, it may be advantageous to explore to a greater extent earlier in life, and gradually shift to a more exploitative decision strategy as experience yields knowledge.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical inference based on the preceding discussion about children's knowledge and temporal horizons.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:01:56.233530Z"
+    },
+    {
+      "id": "3f38c74b-80e0-4666-9adc-966e39a569c1",
+      "content_id": "fd7770d7-128a-481b-8120-0378bf278fc1",
+      "claim_id": "C9",
+      "claim": "Children and adolescents tend to explore more than adults.",
+      "claim_type": "EXPLICIT",
+      "source": "Children and adolescents tend to explore more than adults (Christakou et al., 2013; Giron et al., 2022; Jepma et al., 2020; Lloyd et al., 2021; Nussenbaum and Hartley, 2019; Schulz et al., 2019)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:01:56.233530Z"
+    },
+    {
+      "id": "43216025-c53a-4453-8ba9-463a7557b0d7",
+      "content_id": "fd7770d7-128a-481b-8120-0378bf278fc1",
+      "claim_id": "C10",
+      "claim": "Increased exploration promotes enhanced learning about the structure of the environment.",
+      "claim_type": "EXPLICIT",
+      "source": "and this increased exploration promotes enhanced learning about the structure of the environment (Blanco and Sloutsky, 2021; Liquin and Gopnik, 2022; Sumner et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:01:56.233530Z"
+    },
+    {
+      "id": "aa2f2485-072e-4050-8be2-e109ad173577",
+      "content_id": "fd7770d7-128a-481b-8120-0378bf278fc1",
+      "claim_id": "C11",
+      "claim": "Across development, stimulus novelty influences exploration.",
+      "claim_type": "EXPLICIT",
+      "source": "Prior work has revealed that across development, two features of choice options influence exploration: stimulus novelty (Daffner et al., 1998; Gottlieb et al., 2013; Henderson and Moore, 1980; Jaegle et al., 2019; Kakade and Dayan, 2002; Wittmann et al., 2008) and reward uncertainty (Badre et al., 2012; Blanco and Sloutsky, 2021; Gershman, 2018; Somerville et al., 2017; Trudel et al., 2021; Wang et al., 2021; Wilson et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:01:56.233530Z"
+    },
+    {
+      "id": "9f4b25b1-0661-4470-9fdc-9554f7d15a5a",
+      "content_id": "fd7770d7-128a-481b-8120-0378bf278fc1",
+      "claim_id": "C12",
+      "claim": "Across development, reward uncertainty influences exploration.",
+      "claim_type": "EXPLICIT",
+      "source": "Prior work has revealed that across development, two features of choice options influence exploration: stimulus novelty (Daffner et al., 1998; Gottlieb et al., 2013; Henderson and Moore, 1980; Jaegle et al., 2019; Kakade and Dayan, 2002; Wittmann et al., 2008) and reward uncertainty (Badre et al., 2012; Blanco and Sloutsky, 2021; Gershman, 2018; Somerville et al., 2017; Trudel et al., 2021; Wang et al., 2021; Wilson et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:01:56.233530Z"
+    },
+    {
+      "id": "270cdcc4-e486-48f4-b360-54fe2b7ed3b1",
+      "content_id": "fd7770d7-128a-481b-8120-0378bf278fc1",
+      "claim_id": "C13",
+      "claim": "Novelty refers to the extent to which choice options have been previously encountered.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we use novelty to refer to the extent to which choice options have been previously encountered and uncertainty to refer to the variance in the distributions of rewards that they yield.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definitional statement provided by the authors.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:01:56.233530Z"
+    },
+    {
+      "id": "f297205b-23f4-441d-856d-f9b51b6132e1",
+      "content_id": "fd7770d7-128a-481b-8120-0378bf278fc1",
+      "claim_id": "C14",
+      "claim": "Uncertainty refers to the variance in the distributions of rewards that choice options yield.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we use novelty to refer to the extent to which choice options have been previously encountered and uncertainty to refer to the variance in the distributions of rewards that they yield.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definitional statement provided by the authors.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:01:56.233530Z"
+    },
+    {
+      "id": "674e96b4-44b8-4482-8440-91734e5a7658",
+      "content_id": "fd7770d7-128a-481b-8120-0378bf278fc1",
+      "claim_id": "C15",
+      "claim": "Adults were novelty-seeking, preferentially selecting choice options that they had encountered infrequently in the past versus those that were more familiar.",
+      "claim_type": "EXPLICIT",
+      "source": "Adults were novelty-seeking, preferentially selecting choice options that they had encountered infrequently in the past versus those that were more familiar.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on findings from a prior study (Cockburn et al., 2022).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:01:56.233530Z"
+    },
+    {
+      "id": "4eebc75f-00e6-45d2-ab5d-e9d44c8d9413",
+      "content_id": "fd7770d7-128a-481b-8120-0378bf278fc1",
+      "claim_id": "C16",
+      "claim": "Adults were uncertainty averse, such that they tended to avoid options with high reward uncertainty.",
+      "claim_type": "EXPLICIT",
+      "source": "However, adults were also uncertainty averse, such that they tended to avoid options with high reward uncertainty.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on findings from a prior study (Cockburn et al., 2022).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:01:56.233530Z"
+    },
+    {
+      "id": "c0e41f73-f422-4deb-bf0c-98c65dd8a324",
+      "content_id": "fd7770d7-128a-481b-8120-0378bf278fc1",
+      "claim_id": "C17",
+      "claim": "Stimulus novelty diminished the influence of uncertainty on exploratory choice in adults.",
+      "claim_type": "EXPLICIT",
+      "source": "Computational modeling further revealed that stimulus novelty diminished the influence of uncertainty on exploratory choice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on computational modeling findings from a prior study (Cockburn et al., 2022).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:01:56.233530Z"
+    },
+    {
+      "id": "83e619d0-802b-41f3-87eb-f420bbf0f4e1",
+      "content_id": "fd7770d7-128a-481b-8120-0378bf278fc1",
+      "claim_id": "C18",
+      "claim": "The influences of novelty and uncertainty have not been disentangled in children and adolescents.",
+      "claim_type": "EXPLICIT",
+      "source": "To date, however, the influences of novelty and uncertainty have not been disentangled in children and adolescents.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the state of the literature prior to this study.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:01:56.233530Z"
+    },
+    {
+      "id": "f1f4eec1-c011-4c1a-8f35-4bfde712eef7",
+      "content_id": "fd7770d7-128a-481b-8120-0378bf278fc1",
+      "claim_id": "C26",
+      "claim": "On trials in which the two choice options had similar expected values, participants selected the more novel option on 58.7% of trials.",
+      "claim_type": "EXPLICIT",
+      "source": "On trials in which the two choice options had similar-expected-values (<0.05 difference), participants selected the more novel option on 58.7% (SE = 0.8%) of trials and the more uncertain option on only 46.2% (SE = 0.9%) of trials.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a descriptive statistic from the study data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:01:56.233530Z"
+    },
+    {
+      "id": "6dcf2c63-88b2-4a16-a96f-c881968366ac",
+      "content_id": "fd7770d7-128a-481b-8120-0378bf278fc1",
+      "claim_id": "C27",
+      "claim": "On trials in which the two choice options had similar expected values, participants selected the more uncertain option on only 46.2% of trials.",
+      "claim_type": "EXPLICIT",
+      "source": "On trials in which the two choice options had similar-expected-values (<0.05 difference), participants selected the more novel option on 58.7% (SE = 0.8%) of trials and the more uncertain option on only 46.2% (SE = 0.9%) of trials.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a descriptive statistic from the study data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:01:56.233530Z"
+    },
+    {
+      "id": "903cc9f9-872c-4c8b-8918-46ef4aa5e97d",
+      "content_id": "fd7770d7-128a-481b-8120-0378bf278fc1",
+      "claim_id": "C31",
+      "claim": "Children's choices were significantly influenced by expected value.",
+      "claim_type": "EXPLICIT",
+      "source": "Results indicated that children's choices were significantly influenced by both expected value (OR = 2.27 [1.78, 2.91], \u03c72(1) = 26.8, p < 0.001) and novelty (OR = 1.35 [1.24, 1.48], \u03c72(1) = 28.4, p < 0.001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from statistical analysis of children's data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:01:56.233530Z"
+    },
+    {
+      "id": "c5bd1cdb-391b-4205-85d7-f47aab588592",
+      "content_id": "fd7770d7-128a-481b-8120-0378bf278fc1",
+      "claim_id": "C32",
+      "claim": "Children's choices were significantly influenced by novelty.",
+      "claim_type": "EXPLICIT",
+      "source": "Results indicated that children's choices were significantly influenced by both expected value (OR = 2.27 [1.78, 2.91], \u03c72(1) = 26.8, p < 0.001) and novelty (OR = 1.35 [1.24, 1.48], \u03c72(1) = 28.4, p < 0.001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from statistical analysis of children's data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:01:56.233530Z"
+    },
+    {
+      "id": "db40eebd-5737-4da2-9c80-f81905bd2f6f",
+      "content_id": "fd7770d7-128a-481b-8120-0378bf278fc1",
+      "claim_id": "C33",
+      "claim": "There was not an effect of uncertainty on children's choice.",
+      "claim_type": "EXPLICIT",
+      "source": "However, there was not an effect of uncertainty on choice, OR = 1.07 [0.945, 1.21], \u03c72(1) = 1.17, p = 0.280, indicating no significant evidence for uncertainty-seeking.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from statistical analysis of children's data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:01:56.233530Z"
+    },
+    {
+      "id": "2bb44001-d1a6-4a08-a5cc-ea6cd9288879",
+      "content_id": "fd7770d7-128a-481b-8120-0378bf278fc1",
+      "claim_id": "C34",
+      "claim": "Children selected the more novel option on 59.1% of equal-expected-value trials.",
+      "claim_type": "EXPLICIT",
+      "source": "Corroborating these findings, on trials in which the two choice options had nearly identical expected values (<0.05 difference), children, adolescents, and adults, on average, selected the more novel option on 59.1% (SE = 1.7%), 59.1% (SE = 1.7%), and 58.3% (SE = 1.2%) of trials, respectively (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a descriptive statistic from the study data, with reference to Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:01:56.233530Z"
+    },
+    {
+      "id": "6f248a2c-1f70-4c12-8d42-d03284a572ec",
+      "content_id": "fd7770d7-128a-481b-8120-0378bf278fc1",
+      "claim_id": "C35",
+      "claim": "Adolescents selected the more novel option on 59.1% of equal-expected-value trials.",
+      "claim_type": "EXPLICIT",
+      "source": "Corroborating these findings, on trials in which the two choice options had nearly identical expected values (<0.05 difference), children, adolescents, and adults, on average, selected the more novel option on 59.1% (SE = 1.7%), 59.1% (SE = 1.7%), and 58.3% (SE = 1.2%) of trials, respectively (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a descriptive statistic from the study data, with reference to Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:01:56.233530Z"
+    },
+    {
+      "id": "d13a01d3-a190-4ac5-ab9e-b60e8536c084",
+      "content_id": "fd7770d7-128a-481b-8120-0378bf278fc1",
+      "claim_id": "C36",
+      "claim": "Adults selected the more novel option on 58.3% of equal-expected-value trials.",
+      "claim_type": "EXPLICIT",
+      "source": "Corroborating these findings, on trials in which the two choice options had nearly identical expected values (<0.05 difference), children, adolescents, and adults, on average, selected the more novel option on 59.1% (SE = 1.7%), 59.1% (SE = 1.7%), and 58.3% (SE = 1.2%) of trials, respectively (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a descriptive statistic from the study data, with reference to Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:01:56.233530Z"
+    },
+    {
+      "id": "fae35731-62d2-4f79-8118-b7e05eb493d3",
+      "content_id": "fd7770d7-128a-481b-8120-0378bf278fc1",
+      "claim_id": "C37",
+      "claim": "Adults selected the more uncertain option on only 41.9% of equal-expected-value trials.",
+      "claim_type": "EXPLICIT",
+      "source": "However, whereas adults tended to avoid the more uncertain option, selecting it on only 41.9% (SE = 1.2%) of equal-expected-value trials, adolescents and children selected the more uncertain option on 48.9% (SE = 1.7%) and 52.7% (SE = 1.7%) of these trials, respectively (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a descriptive statistic from the study data, with reference to Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:01:56.233530Z"
+    },
+    {
+      "id": "d7460cd6-6746-4a0d-a192-57e3c6b91251",
+      "content_id": "fd7770d7-128a-481b-8120-0378bf278fc1",
+      "claim_id": "C38",
+      "claim": "Adolescents selected the more uncertain option on 48.9% of equal-expected-value trials.",
+      "claim_type": "EXPLICIT",
+      "source": "However, whereas adults tended to avoid the more uncertain option, selecting it on only 41.9% (SE = 1.2%) of equal-expected-value trials, adolescents and children selected the more uncertain option on 48.9% (SE = 1.7%) and 52.7% (SE = 1.7%) of these trials, respectively (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a descriptive statistic from the study data, with reference to Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:01:56.233530Z"
+    },
+    {
+      "id": "8dc314ca-7eb6-4307-a493-3f7a42a9703c",
+      "content_id": "fd7770d7-128a-481b-8120-0378bf278fc1",
+      "claim_id": "C39",
+      "claim": "Children selected the more uncertain option on 52.7% of equal-expected-value trials.",
+      "claim_type": "EXPLICIT",
+      "source": "However, whereas adults tended to avoid the more uncertain option, selecting it on only 41.9% (SE = 1.2%) of equal-expected-value trials, adolescents and children selected the more uncertain option on 48.9% (SE = 1.7%) and 52.7% (SE = 1.7%) of these trials, respectively (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a descriptive statistic from the study data, with reference to Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:01:56.233530Z"
+    },
+    {
+      "id": "fd1607c6-67cf-4a1d-8fd8-d7fce05bc130",
+      "content_id": "fd7770d7-128a-481b-8120-0378bf278fc1",
+      "claim_id": "C40",
+      "claim": "Age-related decreases in exploratory choices were driven by an increase in aversion to reward uncertainty with increasing age.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, taken together, these results suggest that age-related decreases in exploratory choices were driven by an increase in aversion to reward uncertainty with increasing age.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the pattern of results across age groups.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:01:56.233530Z"
+    },
+    {
+      "id": "f67c15b7-0739-438c-bbc2-8cc0a035265c",
+      "content_id": "fd7770d7-128a-481b-8120-0378bf278fc1",
+      "claim_id": "C41",
+      "claim": "Participants responded more quickly when selecting options with higher expected values.",
+      "claim_type": "EXPLICIT",
+      "source": "Participants responded more quickly when selecting options with higher expected values (b = \u22120.03, SE = 0.006, F(1, 115.4) = 29.7, p < 0.001)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from statistical analysis of response time data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:01:56.233530Z"
+    },
+    {
+      "id": "ff101786-6a29-4091-8232-09160d34adb5",
+      "content_id": "fd7770d7-128a-481b-8120-0378bf278fc1",
+      "claim_id": "C42",
+      "claim": "Participants responded more slowly when selecting options with higher novelty.",
+      "claim_type": "EXPLICIT",
+      "source": "and more slowly when selecting options with higher novelty (b = 0.06, SE = 0.004, F(1, 111.3) = 197, p < 0.001) and higher uncertainty (b = 0.07, SE = 0.005, F(1, 117.1) = 171.7, p < 0.001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from statistical analysis of response time data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:01:56.233530Z"
+    },
+    {
+      "id": "5d38ee4e-bc48-4a22-a8f4-c76c893bf3cf",
+      "content_id": "fd7770d7-128a-481b-8120-0378bf278fc1",
+      "claim_id": "C43",
+      "claim": "Participants responded more slowly when selecting options with higher uncertainty.",
+      "claim_type": "EXPLICIT",
+      "source": "and more slowly when selecting options with higher novelty (b = 0.06, SE = 0.004, F(1, 111.3) = 197, p < 0.001) and higher uncertainty (b = 0.07, SE = 0.005, F(1, 117.1) = 171.7, p < 0.001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from statistical analysis of response time data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:01:56.233530Z"
+    },
+    {
+      "id": "cefe1d17-0f21-424f-9aa9-da9531c814a7",
+      "content_id": "fd7770d7-128a-481b-8120-0378bf278fc1",
+      "claim_id": "C44",
+      "claim": "Novelty had a stronger slowing influence on the response times of younger versus older participants.",
+      "claim_type": "EXPLICIT",
+      "source": "Novelty had a stronger slowing influence on the response times of younger versus older participants, whereas uncertainty had a stronger slowing influence on the response times of older versus younger participants (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from statistical analysis of response time data, with reference to Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:01:56.233530Z"
+    },
+    {
+      "id": "9fc42786-3b2e-4cbf-855e-8cf0d0e46ea2",
+      "content_id": "fd7770d7-128a-481b-8120-0378bf278fc1",
+      "claim_id": "C45",
+      "claim": "Uncertainty had a stronger slowing influence on the response times of older versus younger participants.",
+      "claim_type": "EXPLICIT",
+      "source": "Novelty had a stronger slowing influence on the response times of younger versus older participants, whereas uncertainty had a stronger slowing influence on the response times of older versus younger participants (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from statistical analysis of response time data, with reference to Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:01:56.233530Z"
+    },
+    {
+      "id": "064ff974-002c-475d-9fa2-815a7c2331b2",
+      "content_id": "fd7770d7-128a-481b-8120-0378bf278fc1",
+      "claim_id": "C46",
+      "claim": "Children's response times were sensitive to the uncertainty of the selected option.",
+      "claim_type": "EXPLICIT",
+      "source": "Critically, however, we continued to observe a significant effect of uncertainty on response times when we only included children's data in the model, b = 0.04, SE = 0.01, F(1, 38.2) = 16.5, p < 0.001, indicating that children's response times were sensitive to the uncertainty of the selected option",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from statistical analysis of children's response time data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:01:56.233530Z"
+    },
+    {
+      "id": "52e25091-9ed8-4571-841e-3bf016b9cba7",
+      "content_id": "fd7770d7-128a-481b-8120-0378bf278fc1",
+      "claim_id": "C48",
+      "claim": "Despite not demonstrating uncertainty aversion in their decisions, children were sensitive to the relative reward uncertainty of different choice options throughout the task.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, taken together, our findings suggest that despite not demonstrating uncertainty aversion in their decisions, children were sensitive to the relative reward uncertainty of different choice options throughout the task.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the response time findings in children.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:01:56.233530Z"
+    },
+    {
+      "id": "7dc65bb1-ac4b-4eef-bbf8-ee4f9cc817e9",
+      "content_id": "fd7770d7-128a-481b-8120-0378bf278fc1",
+      "claim_id": "C49",
+      "claim": "Adult choices were best characterized by a model in which choice utilities took into account interactions between novelty and uncertainty.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with findings from Cockburn et al., 2022, we found that adult choices were best characterized by a model in which choice utilities took into account interactions between novelty and uncertainty.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from computational modeling of adult data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:01:56.233530Z"
+    },
+    {
+      "id": "e606a85b-f39f-41ae-b65f-eb0299e5a91d",
+      "content_id": "fd7770d7-128a-481b-8120-0378bf278fc1",
+      "claim_id": "C50",
+      "claim": "Adult choices were best captured by the familiarity-gated uncertainty model.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, adult choices were best captured by the familiarity-gated uncertainty model (PXP Familiarity Gate = 1), in which uncertainty aversion was greater for more familiar options.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from computational model comparison for adults.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:01:56.233530Z"
+    },
+    {
+      "id": "c861a1c0-7842-4a59-86e5-46ca7046ff6c",
+      "content_id": "fd7770d7-128a-481b-8120-0378bf278fc1",
+      "claim_id": "C51",
+      "claim": "Adolescent choices were best captured by the familiarity-gated uncertainty model.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite showing weaker aversion to uncertainty relative to adults, adolescents were also best fit by this model (PXP Familiarity Gate = 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from computational model comparison for adolescents.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:01:56.233530Z"
+    },
+    {
+      "id": "6c9454b3-a7ad-42e3-979a-309d7a3e768d",
+      "content_id": "fd7770d7-128a-481b-8120-0378bf278fc1",
+      "claim_id": "C52",
+      "claim": "Children's choices were best captured by a model with a simple novelty bias.",
+      "claim_type": "EXPLICIT",
+      "source": "Children's choices, however, were best captured by a model with a simple novelty bias (PXP Novelty Bias = 0.62; PXP Familiarity Gate = 0.38).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from computational model comparison for children.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:01:56.233530Z"
+    },
+    {
+      "id": "61043372-0b71-478e-8bd4-3865d7a46a3c",
+      "content_id": "fd7770d7-128a-481b-8120-0378bf278fc1",
+      "claim_id": "C53",
+      "claim": "Children optimistically initiated the value of novel options.",
+      "claim_type": "EXPLICIT",
+      "source": "Children's average 'novelty bias' (from the group-level novelty bias model fits) was 1.49, indicating that they optimistically initiated the value of novel options.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from computational modeling parameter estimates for children.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:01:56.233530Z"
+    },
+    {
+      "id": "30cae179-7fde-40ff-b2a7-4ba42ec9eb64",
+      "content_id": "fd7770d7-128a-481b-8120-0378bf278fc1",
+      "claim_id": "C54",
+      "claim": "Children's novelty bias was significantly different from 0.",
+      "claim_type": "EXPLICIT",
+      "source": "A one-sample hierarchical Bayesian inference (HBI) t-test examining the group-level posterior distribution of the novelty bias parameter (implemented via the cbm model-fitting package Piray et al., 2019), revealed that children's novelty bias was significantly different from 0, t(16.3) = 5.96, p < 0.001.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from statistical testing of model parameters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:01:56.233530Z"
+    },
+    {
+      "id": "70a29acb-62a5-4467-ac39-946c4f7cf690",
+      "content_id": "fd7770d7-128a-481b-8120-0378bf278fc1",
+      "claim_id": "C55",
+      "claim": "The average value of the uncertainty bias was \u22120.15 for both adolescents and adults.",
+      "claim_type": "EXPLICIT",
+      "source": "The average value of the 'uncertainty bias' (from the group-level familiarity-gated uncertainty model fits) was \u22120.15 for both adolescents and adults.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from computational modeling parameter estimates.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:01:56.233530Z"
+    },
+    {
+      "id": "a706669f-06d9-4fbc-b98c-b36f1f39c3e2",
+      "content_id": "fd7770d7-128a-481b-8120-0378bf278fc1",
+      "claim_id": "C56",
+      "claim": "Uncertainty bias parameter estimates were significantly different from 0 in both adolescents and adults.",
+      "claim_type": "EXPLICIT",
+      "source": "HBI t-tests revealed that uncertainty bias parameter estimates were significantly different from 0 in both age groups (Adolescents: t(26.5) = \u22127.8, p < 0.001; Adults: t(11.3) = \u22124.16, p = 0.001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from statistical testing of model parameters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:01:56.233530Z"
+    },
+    {
+      "id": "ebe26676-4cb1-423d-86c3-22c2245fd2bf",
+      "content_id": "fd7770d7-128a-481b-8120-0378bf278fc1",
+      "claim_id": "C57",
+      "claim": "Adults and adolescents were more strongly deterred by the uncertainty of familiar options versus novel ones.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, these modeling results suggest that whereas adults and adolescents were more strongly deterred by the uncertainty of familiar options versus novel ones, children employed a simpler learning algorithm in which they optimistically initialized the value of novel choice options.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the computational modeling results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:01:56.233530Z"
+    },
+    {
+      "id": "e107b227-ebd0-423f-b43c-4b166a320b5d",
+      "content_id": "fd7770d7-128a-481b-8120-0378bf278fc1",
+      "claim_id": "C58",
+      "claim": "Children employed a simpler learning algorithm in which they optimistically initialized the value of novel choice options.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, these modeling results suggest that whereas adults and adolescents were more strongly deterred by the uncertainty of familiar options versus novel ones, children employed a simpler learning algorithm in which they optimistically initialized the value of novel choice options.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the computational modeling results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:01:56.233530Z"
+    },
+    {
+      "id": "9b37f7d2-618c-462d-af89-3e420415cea5",
+      "content_id": "fd7770d7-128a-481b-8120-0378bf278fc1",
+      "claim_id": "C59",
+      "claim": "Children's bias toward exploration over exploitation may arise from attenuated aversion to selecting more uncertain options rather than heightened sensitivity to novelty.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings suggest that children's bias toward exploration over exploitation may arise from attenuated aversion to selecting more uncertain options rather than heightened sensitivity to novelty.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the overall pattern of results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:01:56.233530Z"
+    },
+    {
+      "id": "438b8446-0aca-475d-b685-f85b5c241f93",
+      "content_id": "fd7770d7-128a-481b-8120-0378bf278fc1",
+      "claim_id": "C60",
+      "claim": "Novelty may be intrinsically rewarding.",
+      "claim_type": "EXPLICIT",
+      "source": "Prior studies have found that novelty may be intrinsically rewarding (Wittmann et al., 2008), motivating individuals to approach, learn about, and remember the new stimuli they encounter (Houillon et al., 2013; Krebs et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:01:56.233530Z"
+    },
+    {
+      "id": "42c0a8b6-e512-4f5d-9504-240263cd5ac4",
+      "content_id": "fd7770d7-128a-481b-8120-0378bf278fc1",
+      "claim_id": "C61",
+      "claim": "Children demonstrate novelty-seeking behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "Children (Henderson and Moore, 1980; Mendel, 1965; Valenti, 1985), adolescents (Spear, 2000), and adults (Cockburn et al., 2022; Daffner et al., 1998) all demonstrate novelty-seeking behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:01:56.233530Z"
+    },
+    {
+      "id": "6c04d6c1-45b3-4eca-a088-d0a51e24db66",
+      "content_id": "fd7770d7-128a-481b-8120-0378bf278fc1",
+      "claim_id": "C62",
+      "claim": "Adolescents demonstrate novelty-seeking behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "Children (Henderson and Moore, 1980; Mendel, 1965; Valenti, 1985), adolescents (Spear, 2000), and adults (Cockburn et al., 2022; Daffner et al., 1998) all demonstrate novelty-seeking behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:01:56.233530Z"
+    },
+    {
+      "id": "29bc4d1b-0efc-4622-88a6-ae4eb26d33f5",
+      "content_id": "fd7770d7-128a-481b-8120-0378bf278fc1",
+      "claim_id": "C63",
+      "claim": "Adults demonstrate novelty-seeking behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "Children (Henderson and Moore, 1980; Mendel, 1965; Valenti, 1985), adolescents (Spear, 2000), and adults (Cockburn et al., 2022; Daffner et al., 1998) all demonstrate novelty-seeking behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:01:56.233530Z"
+    },
+    {
+      "id": "9582fe71-f0e1-4e5a-b991-a30be197141b",
+      "content_id": "fd7770d7-128a-481b-8120-0378bf278fc1",
+      "claim_id": "C64",
+      "claim": "The drive to engage with novel stimuli promotes exploratory choice in a consistent manner across the age range studied.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, our findings suggest that the drive to engage with novel stimuli promotes exploratory choice in a consistent manner across our age range.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the study's findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:01:56.233530Z"
+    },
+    {
+      "id": "54adadaa-46ed-41db-bd4b-12960eaa9a30",
+      "content_id": "fd7770d7-128a-481b-8120-0378bf278fc1",
+      "claim_id": "C65",
+      "claim": "Differences in the reward value assigned to novel options cannot fully account for developmental differences in exploration.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the consistency of novelty-seeking across development indicates that differences in the reward value assigned to novel options cannot fully account for developmental differences in exploration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the consistency of novelty-seeking across age.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:01:56.233530Z"
+    },
+    {
+      "id": "f9794e62-b08f-4edd-b006-cd319861b84f",
+      "content_id": "fd7770d7-128a-481b-8120-0378bf278fc1",
+      "claim_id": "C66",
+      "claim": "Individuals across age demonstrate uncertainty aversion in some environments.",
+      "claim_type": "EXPLICIT",
+      "source": "Prior studies of decision making have found that individuals across age demonstrate uncertainty aversion in some environments (Camerer and Weber, 1992; Payzan-LeNestour et al., 2013; Rosenbaum and Hartley, 2019) and uncertainty-seeking in others (Blanchard and Gershman, 2018; Giron et al., 2022; Schulz et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:01:56.233530Z"
+    },
+    {
+      "id": "40652618-555e-421a-8f64-50e33a749373",
+      "content_id": "fd7770d7-128a-481b-8120-0378bf278fc1",
+      "claim_id": "C67",
+      "claim": "Individuals across age demonstrate uncertainty-seeking in some environments.",
+      "claim_type": "EXPLICIT",
+      "source": "Prior studies of decision making have found that individuals across age demonstrate uncertainty aversion in some environments (Camerer and Weber, 1992; Payzan-LeNestour et al., 2013; Rosenbaum and Hartley, 2019) and uncertainty-seeking in others (Blanchard and Gershman, 2018; Giron et al., 2022; Schulz et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:01:56.233530Z"
+    },
+    {
+      "id": "fa280ae8-a47a-4bf1-ab96-6f07210b7603",
+      "content_id": "fd7770d7-128a-481b-8120-0378bf278fc1",
+      "claim_id": "C68",
+      "claim": "In environments where learned information can be exploited to improve subsequent choices, resolving uncertainty has high utility.",
+      "claim_type": "EXPLICIT",
+      "source": "In environments where learned information can be exploited to improve subsequent choices, resolving uncertainty has high utility (Rich and Gureckis, 2018; Wilson et al., 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:01:56.233530Z"
+    },
+    {
+      "id": "61145b04-0ed1-402a-b533-442a178bc08f",
+      "content_id": "fd7770d7-128a-481b-8120-0378bf278fc1",
+      "claim_id": "C69",
+      "claim": "In choice contexts with short temporal horizons, there is little opportunity to use learned reward information to improve future decisions.",
+      "claim_type": "EXPLICIT",
+      "source": "whereas in choice contexts with short temporal horizons, there is little opportunity to use learned reward information to improve future decisions (Camerer and Weber, 1992; Levy et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:01:56.233530Z"
+    },
+    {
+      "id": "caef6384-0eb9-41f6-82bb-5edf2225dc43",
+      "content_id": "fd7770d7-128a-481b-8120-0378bf278fc1",
+      "claim_id": "C70",
+      "claim": "Children's reduced uncertainty aversion may have emerged from insensitivity to the limited utility of gaining additional information about the most uncertain choice options.",
+      "claim_type": "EXPLICIT",
+      "source": "In our task, individuals had a relatively short horizon over which to exploit reward probabilities that themselves required multiple trials to learn \u2014 children's reduced uncertainty aversion may have emerged from insensitivity to the limited utility of gaining additional information about the most uncertain choice options (Somerville et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the findings, with a citation to related work.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:01:56.233530Z"
+    },
+    {
+      "id": "b04a304d-9edc-4bfa-a52f-fc95d13fb480",
+      "content_id": "fd7770d7-128a-481b-8120-0378bf278fc1",
+      "claim_id": "C71",
+      "claim": "The developmental decrease in uncertainty-seeking behavior observed in this study is in line with what has been observed in prior studies in which uncertainty was easier to discern.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the developmental decrease in uncertainty-seeking behavior that we observed here is in line with what has been observed in prior studies in which uncertainty was easier to discern.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison of the current findings to prior research.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:01:56.233530Z"
+    },
+    {
+      "id": "fed74209-cd69-4414-a787-65c24120c178",
+      "content_id": "fd7770d7-128a-481b-8120-0378bf278fc1",
+      "claim_id": "C72",
+      "claim": "In one study, children tended to select choice options with hidden reward amounts over those with visible reward amounts.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, in one study (Blanco and Sloutsky, 2021), children tended to select choice options with hidden reward amounts over those with visible reward amounts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on findings from a cited prior study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:01:56.233530Z"
+    },
+    {
+      "id": "d726e255-f5c9-4d72-95f3-287d8792468c",
+      "content_id": "fd7770d7-128a-481b-8120-0378bf278fc1",
+      "claim_id": "C73",
+      "claim": "Young children often use experiences of surprise or the coherence of their own beliefs about the world to direct their exploration toward uncertain parts of the environment.",
+      "claim_type": "EXPLICIT",
+      "source": "In studies of causal learning and exploratory play, young children often use experiences of surprise or the coherence of their own beliefs about the world to direct their exploration toward uncertain parts of the environment (Bonawitz et al., 2012; Schulz and Bonawitz, 2007; Wang et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:01:56.233530Z"
+    },
+    {
+      "id": "85f8dc42-5f0e-4366-9d3f-668a6afd3cfa",
+      "content_id": "fd7770d7-128a-481b-8120-0378bf278fc1",
+      "claim_id": "C74",
+      "claim": "Children are sensitive to uncertainty even when it depends on distributions of binary outcomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we extend these past findings to demonstrate that children are sensitive to uncertainty even when it depends on distributions of binary outcomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the current study's findings in relation to prior work.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:01:56.233530Z"
+    },
+    {
+      "id": "263e908a-500a-4350-a11a-1a3fb6db0fa5",
+      "content_id": "fd7770d7-128a-481b-8120-0378bf278fc1",
+      "claim_id": "C75",
+      "claim": "By adulthood, novelty and uncertainty interact competitively, exerting opposing motivational influences on decision-making.",
+      "claim_type": "EXPLICIT",
+      "source": "Our computational modeling findings largely replicated previous work suggesting that by adulthood, novelty and uncertainty interact competitively (Cockburn et al., 2022), exerting opposing motivational influences on decision-making.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the computational modeling results, with reference to prior work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:01:56.233530Z"
+    },
+    {
+      "id": "c3199078-1673-4e7a-82e1-a93128120cfd",
+      "content_id": "fd7770d7-128a-481b-8120-0378bf278fc1",
+      "claim_id": "C76",
+      "claim": "Activation in the ventral striatum reflects a biased reward prediction error consistent with optimistic value initialization for novel stimuli in adults.",
+      "claim_type": "EXPLICIT",
+      "source": "Using functional magnetic resonance imaging (fMRI), this prior adult study (Cockburn et al., 2022) revealed that activation in the ventral striatum reflects a biased reward prediction error consistent with optimistic value initialization for novel stimuli, whereas activation in the medial prefrontal cortex (mPFC) reflects the subjective utility of uncertainty reduction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on findings from a cited prior fMRI study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:01:56.233530Z"
+    },
+    {
+      "id": "9cd25598-2df3-42af-96ad-17b7476b604e",
+      "content_id": "fd7770d7-128a-481b-8120-0378bf278fc1",
+      "claim_id": "C77",
+      "claim": "Activation in the medial prefrontal cortex reflects the subjective utility of uncertainty reduction in adults.",
+      "claim_type": "EXPLICIT",
+      "source": "Using functional magnetic resonance imaging (fMRI), this prior adult study (Cockburn et al., 2022) revealed that activation in the ventral striatum reflects a biased reward prediction error consistent with optimistic value initialization for novel stimuli, whereas activation in the medial prefrontal cortex (mPFC) reflects the subjective utility of uncertainty reduction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on findings from a cited prior fMRI study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:01:56.233530Z"
+    },
+    {
+      "id": "b2422239-2a8b-467b-ac3c-a9fda7e3e50b",
+      "content_id": "fd7770d7-128a-481b-8120-0378bf278fc1",
+      "claim_id": "C78",
+      "claim": "The integration of uncertainty into mPFC value representations was diminished for novel stimuli in adults.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with choices being best characterized by a model in which the aversive influence of uncertainty was dampened by novelty, the integration of uncertainty into these mPFC value representations was similarly diminished for novel stimuli (Cockburn et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on findings from a cited prior fMRI study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:01:56.233530Z"
+    },
+    {
+      "id": "ff4c14da-7118-49a8-949b-83faa1644c55",
+      "content_id": "fd7770d7-128a-481b-8120-0378bf278fc1",
+      "claim_id": "C79",
+      "claim": "Attenuated uncertainty aversion for novel stimuli may promote exploration even in environments where deriving the prospective utility of uncertainty reduction is difficult.",
+      "claim_type": "EXPLICIT",
+      "source": "Cockburn et al., 2022 posited that attenuated uncertainty aversion for novel stimuli may promote exploration even in environments where deriving the prospective utility of uncertainty reduction is difficult.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical claim from a cited prior study.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:01:56.233530Z"
+    },
+    {
+      "id": "c7fe95b8-d534-4601-a196-e3ada4e2d429",
+      "content_id": "fd7770d7-128a-481b-8120-0378bf278fc1",
+      "claim_id": "C80",
+      "claim": "Competitive interactions between uncertainty and novelty may emerge in adolescence, as connectivity between cortical and subcortical circuitry matures.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings further suggest that these competitive interactions between uncertainty and novelty may emerge in adolescence, as connectivity between cortical and subcortical circuitry matures (Casey et al., 2019; Parr et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the findings, with citations to related work on brain development.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:01:56.233530Z"
+    },
+    {
+      "id": "cbe4eaeb-e49f-4d40-b2ba-9c49ddf69bd4",
+      "content_id": "fd7770d7-128a-481b-8120-0378bf278fc1",
+      "claim_id": "C81",
+      "claim": "Heightened exploration is an adaptive quality of childhood.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent theories have proposed that heightened exploration is an adaptive quality of childhood (Giron et al., 2022; Gopnik, 2020)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on recent theoretical proposals cited in the text.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:01:56.233530Z"
+    },
+    {
+      "id": "4f0926ee-aef8-4ef6-9f1e-6008a2baaf7e",
+      "content_id": "fd7770d7-128a-481b-8120-0378bf278fc1",
+      "claim_id": "C82",
+      "claim": "The developmental shift from more exploratory to more exploitative behavior may arise from strengthening aversion to selecting options with higher reward uncertainty with increasing age.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we demonstrated that the developmental shift from more exploratory to more exploitative behavior may arise from strengthening aversion to selecting options with higher reward uncertainty with increasing age, rather than from changes in novelty-seeking.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the overall pattern of results in the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:01:56.233530Z"
+    },
+    {
+      "id": "769cdad3-aa9f-4265-ac66-3aa9b6c26458",
+      "content_id": "fd7770d7-128a-481b-8120-0378bf278fc1",
+      "claim_id": "C83",
+      "claim": "One hundred and twenty-two participants between the ages of 8 and 27 years old completed the experiment.",
+      "claim_type": "EXPLICIT",
+      "source": "One hundred and twenty-two participants between the ages of 8 and 27 years old (mean age = 17.9 years, SD age = 5.6 years, 62 females, 59 males, 1 non-binary) completed the experiment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the study sample.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:01:56.233530Z"
+    },
+    {
+      "id": "314bbfe4-9e24-452d-8170-00f8f4f3286d",
+      "content_id": "fd7770d7-128a-481b-8120-0378bf278fc1",
+      "claim_id": "C84",
+      "claim": "The final analyzed sample comprised n = 30 children, n = 30 adolescents, and n = 62 adults.",
+      "claim_type": "EXPLICIT",
+      "source": "The final analyzed sample of 122 participants comprised n = 30 children (mean age = 10.5 years; SD age = 1.4 years; range = 8.1\u201312.7 years; 14 females), n = 30 adolescents (mean age = 15.5 years; SD age = 1.3 years; range = 13.6\u201317.8 years; 16 females), and n = 62 adults (mean age = 22.6 years; SD age = 2.8 years; range = 18.1\u201327.8 years; 32 females).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the study sample broken down by age group.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:01:56.233530Z"
+    },
+    {
+      "id": "7dc1fb55-7d14-4e1a-ab6d-9f5ed0cfa5ad",
+      "content_id": "fd7770d7-128a-481b-8120-0378bf278fc1",
+      "claim_id": "C85",
+      "claim": "The task was divided into 10 blocks of 15 trials.",
+      "claim_type": "EXPLICIT",
+      "source": "The task was divided into 10 blocks of 15 trials.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental task structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:01:56.233530Z"
+    },
+    {
+      "id": "c5556574-7b26-460e-9b5f-64358b135b77",
+      "content_id": "fd7770d7-128a-481b-8120-0378bf278fc1",
+      "claim_id": "C86",
+      "claim": "Half of the blocks were 'easy' with reward probabilities of 80%, 50%, and 20%.",
+      "claim_type": "EXPLICIT",
+      "source": "Half of the blocks were 'easy' \u2014 in easy blocks, the creature's favorite hiding spot held a coin on 80% of trials, their second favorite held a coin on 50% of trials, and their least favorite held a coin on 20% of trials.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental task design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:01:56.233530Z"
+    },
+    {
+      "id": "465779b8-f656-46ca-866d-e0f1e044ea7f",
+      "content_id": "fd7770d7-128a-481b-8120-0378bf278fc1",
+      "claim_id": "C87",
+      "claim": "Half of the blocks were 'hard' with reward probabilities of 70%, 50%, and 30%.",
+      "claim_type": "EXPLICIT",
+      "source": "The other half of blocks were 'hard' \u2014 in hard blocks, the creature's favorite hiding spot held a coin on 70% of trials, their second favorite held a coin on 50% of trials, and their least favorite held a coin on 30% of trials.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental task design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:01:56.233530Z"
+    },
+    {
+      "id": "cc11419f-1315-4150-aa69-3f4a531643fb",
+      "content_id": "fd7770d7-128a-481b-8120-0378bf278fc1",
+      "claim_id": "C88",
+      "claim": "After the first block, each subsequent block contained two hiding spots that participants had encountered in previous blocks and one novel hiding spot.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, after the first block, each subsequent block contained two hiding spots that participants had encountered in previous blocks and one novel hiding spot they had not seen before.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental task design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:01:56.233530Z"
+    },
+    {
+      "id": "06d867bd-ce7d-4c61-b134-e469066ec2d0",
+      "content_id": "fd7770d7-128a-481b-8120-0378bf278fc1",
+      "claim_id": "C89",
+      "claim": "The reward probabilities were re-randomized for every creature.",
+      "claim_type": "EXPLICIT",
+      "source": "Though participants had already encountered two of the hiding spots within each block, the reward probabilities were re-randomized for every creature.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental task design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:01:56.233530Z"
+    },
+    {
+      "id": "668adb1c-d403-4150-8d66-72a0bdb2bafd",
+      "content_id": "fd7770d7-128a-481b-8120-0378bf278fc1",
+      "claim_id": "C90",
+      "claim": "Participants demonstrated above-chance memory for the most rewarding choice within each block.",
+      "claim_type": "EXPLICIT",
+      "source": "Participants also demonstrated above-chance (defined as 0.2) memory for the most rewarding choice within each block (mean = 0.25; standard error [SE] = 0.001; t(119) = 4.02, p < 0.001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from statistical analysis of memory test data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:01:56.233530Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "f8698607-cd29-4f23-9b42-4b4c867702cc",
+      "content_id": "fd7770d7-128a-481b-8120-0378bf278fc1",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "A developmental sample of 122 participants (ages 8-27 years) completed a novel decision-making task that decoupled novelty and uncertainty by presenting familiar hiding spots with re-randomized reward probabilities across blocks.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C83-C89 collectively describe the sample characteristics and task design. The task structure is clearly specified with appropriate controls to dissociate novelty from uncertainty, and the sample size (N=122) is adequate for developmental comparisons across three age groups.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:01:56.233530Z"
+    },
+    {
+      "id": "106d5eaa-b485-44ad-bd4c-1ab8b02d5925",
+      "content_id": "fd7770d7-128a-481b-8120-0378bf278fc1",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Exploration decreased with age, driven by increasing uncertainty aversion rather than changes in novelty-seeking. All age groups showed similar novelty preferences (~59% selection of novel options on equal-value trials), but adults avoided uncertain options (41.9% selection) while children showed no uncertainty aversion (52.7% selection).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2-C4 and C26-C40 provide converging evidence from multiple analyses showing age-stable novelty-seeking but age-increasing uncertainty aversion. The statistical tests include appropriate controls, significant p-values, and effect sizes. The descriptive statistics on equal-value trials corroborate the regression findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:01:56.233530Z"
+    },
+    {
+      "id": "2bba4630-fcd3-48ea-a176-e683e09d8c95",
+      "content_id": "fd7770d7-128a-481b-8120-0378bf278fc1",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Children's choices were significantly influenced by expected value and novelty but not by uncertainty, indicating indifference rather than uncertainty-seeking.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C33 report results from a focused analysis of children's data with appropriate statistical tests. The non-significant effect of uncertainty (p=0.280) with OR near 1.0 provides clear evidence for indifference rather than seeking or aversion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:01:56.233530Z"
+    },
+    {
+      "id": "76beb06e-f62c-4458-95f7-c58f8848de83",
+      "content_id": "fd7770d7-128a-481b-8120-0378bf278fc1",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Response time analyses revealed that all participants, including children, were sensitive to uncertainty despite children showing no uncertainty aversion in choice behavior. Uncertainty slowed responses more in older participants, while novelty slowed responses more in younger participants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C46 and C48 describe response time findings with appropriate statistical tests (all p<0.001 for main effects, p=0.005 and p=0.043 for interactions). The critical finding that children showed significant uncertainty effects on RT (p<0.001) despite no choice effects demonstrates dissociation between sensitivity and aversion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:01:56.233530Z"
+    },
+    {
+      "id": "1e00415c-3cdb-4de1-87b4-240663f7eb4a",
+      "content_id": "fd7770d7-128a-481b-8120-0378bf278fc1",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Computational modeling revealed that adults and adolescents were best fit by a familiarity-gated uncertainty model (PXP=1.0) where uncertainty aversion was attenuated for novel options, while children were best fit by a simpler novelty bias model (PXP=0.62) with optimistic value initialization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C58 describe model comparison results using appropriate Bayesian methods with protected exceedance probabilities. Parameter estimates were significantly different from zero (all p<0.001). Model recovery analyses (Figure 6) demonstrate adequate identifiability, though the novelty+familiarity-gated model was not recoverable.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:01:56.233530Z"
+    },
+    {
+      "id": "5895fac3-c5bd-4cf3-9d2a-1677084fa573",
+      "content_id": "fd7770d7-128a-481b-8120-0378bf278fc1",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The developmental shift from exploration to exploitation arises from attenuated uncertainty aversion in childhood rather than heightened novelty-seeking, as novelty preferences remain stable across development.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59, C64, C65, and C82 represent the main conclusions synthesizing the empirical findings. These conclusions are well-supported by the convergent evidence from choice behavior, response times, and computational modeling showing age-stable novelty effects but age-varying uncertainty effects.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:01:56.233530Z"
+    },
+    {
+      "id": "acef5e3e-824a-4f10-afc6-6459f554d1c9",
+      "content_id": "fd7770d7-128a-481b-8120-0378bf278fc1",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Participants demonstrated above-chance memory for the most rewarding choice within each block (mean=0.25 vs. chance=0.2, p<0.001).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C90 reports a significant memory test result with appropriate statistical testing. However, the effect size is modest (0.25 vs 0.20 chance level), and the manuscript notes memory did not relate to learning, limiting its interpretive value.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:01:56.233530Z"
+    },
+    {
+      "id": "9cd678a6-fea2-4fb2-87f2-4e509a398782",
+      "content_id": "fd7770d7-128a-481b-8120-0378bf278fc1",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Prior work establishes that children explore more than adults, that novelty and uncertainty influence exploration, and that these factors have not been disentangled developmentally until now.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C18 summarize prior literature with appropriate citations. These claims establish the theoretical motivation and gap in the literature that the current study addresses. The definitions of novelty (C13) and uncertainty (C14) are clearly stated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:01:56.233530Z"
+    },
+    {
+      "id": "5632c39f-0610-46b3-ae62-7aea0ee7fc37",
+      "content_id": "fd7770d7-128a-481b-8120-0378bf278fc1",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Prior research shows novelty is intrinsically rewarding across development, uncertainty preferences vary by context, and children's reduced uncertainty aversion may reflect insensitivity to the limited utility of information gain in short-horizon tasks.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C73 provide theoretical context from prior work with appropriate citations. Claim C70 offers a speculative but reasonable interpretation of the findings based on horizon effects, appropriately marked as speculation in the evidence type.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:01:56.233530Z"
+    },
+    {
+      "id": "935ed548-8466-4033-9667-f6373b8b7da8",
+      "content_id": "fd7770d7-128a-481b-8120-0378bf278fc1",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The current findings extend prior work by demonstrating children's sensitivity to uncertainty from binary outcome distributions, replicate competitive novelty-uncertainty interactions in adults, and suggest these interactions emerge in adolescence with neural maturation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C74-C75 are supported by the current data and prior work. However, claims C76-C80 rely heavily on prior fMRI findings and speculative developmental neuroscience interpretations (C80) without direct neural data in the current study. The speculation about adolescent emergence requires further empirical validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:01:56.233530Z"
+    },
+    {
+      "id": "49638b25-9a69-4867-b2f6-465354cd2da7",
+      "content_id": "fd7770d7-128a-481b-8120-0378bf278fc1",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Recent theories propose that heightened exploration is an adaptive quality of childhood.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C81 accurately summarizes theoretical proposals from cited work (Giron et al., 2022; Gopnik, 2020). This provides appropriate theoretical framing for the empirical findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:01:56.233530Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "8da4aa11-7e9c-4adc-b149-03fc9baac7b6",
+      "result_id": "f8698607-cd29-4f23-9b42-4b4c867702cc"
+    },
+    {
+      "claim_id": "769cdad3-aa9f-4265-ac66-3aa9b6c26458",
+      "result_id": "f8698607-cd29-4f23-9b42-4b4c867702cc"
+    },
+    {
+      "claim_id": "314bbfe4-9e24-452d-8170-00f8f4f3286d",
+      "result_id": "f8698607-cd29-4f23-9b42-4b4c867702cc"
+    },
+    {
+      "claim_id": "7dc1fb55-7d14-4e1a-ab6d-9f5ed0cfa5ad",
+      "result_id": "f8698607-cd29-4f23-9b42-4b4c867702cc"
+    },
+    {
+      "claim_id": "c5556574-7b26-460e-9b5f-64358b135b77",
+      "result_id": "f8698607-cd29-4f23-9b42-4b4c867702cc"
+    },
+    {
+      "claim_id": "465779b8-f656-46ca-866d-e0f1e044ea7f",
+      "result_id": "f8698607-cd29-4f23-9b42-4b4c867702cc"
+    },
+    {
+      "claim_id": "cc11419f-1315-4150-aa69-3f4a531643fb",
+      "result_id": "f8698607-cd29-4f23-9b42-4b4c867702cc"
+    },
+    {
+      "claim_id": "06d867bd-ce7d-4c61-b134-e469066ec2d0",
+      "result_id": "f8698607-cd29-4f23-9b42-4b4c867702cc"
+    },
+    {
+      "claim_id": "02da3f3c-7bb1-4c36-8c16-caa8faff150f",
+      "result_id": "106d5eaa-b485-44ad-bd4c-1ab8b02d5925"
+    },
+    {
+      "claim_id": "ae9ce5cb-1d34-4fec-98c4-8da6a71babd6",
+      "result_id": "106d5eaa-b485-44ad-bd4c-1ab8b02d5925"
+    },
+    {
+      "claim_id": "3f00a7de-e541-4f3e-b494-ad3981277d87",
+      "result_id": "106d5eaa-b485-44ad-bd4c-1ab8b02d5925"
+    },
+    {
+      "claim_id": "f1f4eec1-c011-4c1a-8f35-4bfde712eef7",
+      "result_id": "106d5eaa-b485-44ad-bd4c-1ab8b02d5925"
+    },
+    {
+      "claim_id": "6dcf2c63-88b2-4a16-a96f-c881968366ac",
+      "result_id": "106d5eaa-b485-44ad-bd4c-1ab8b02d5925"
+    },
+    {
+      "claim_id": "2bb44001-d1a6-4a08-a5cc-ea6cd9288879",
+      "result_id": "106d5eaa-b485-44ad-bd4c-1ab8b02d5925"
+    },
+    {
+      "claim_id": "6f248a2c-1f70-4c12-8d42-d03284a572ec",
+      "result_id": "106d5eaa-b485-44ad-bd4c-1ab8b02d5925"
+    },
+    {
+      "claim_id": "d13a01d3-a190-4ac5-ab9e-b60e8536c084",
+      "result_id": "106d5eaa-b485-44ad-bd4c-1ab8b02d5925"
+    },
+    {
+      "claim_id": "fae35731-62d2-4f79-8118-b7e05eb493d3",
+      "result_id": "106d5eaa-b485-44ad-bd4c-1ab8b02d5925"
+    },
+    {
+      "claim_id": "d7460cd6-6746-4a0d-a192-57e3c6b91251",
+      "result_id": "106d5eaa-b485-44ad-bd4c-1ab8b02d5925"
+    },
+    {
+      "claim_id": "8dc314ca-7eb6-4307-a493-3f7a42a9703c",
+      "result_id": "106d5eaa-b485-44ad-bd4c-1ab8b02d5925"
+    },
+    {
+      "claim_id": "fd1607c6-67cf-4a1d-8fd8-d7fce05bc130",
+      "result_id": "106d5eaa-b485-44ad-bd4c-1ab8b02d5925"
+    },
+    {
+      "claim_id": "903cc9f9-872c-4c8b-8918-46ef4aa5e97d",
+      "result_id": "2bba4630-fcd3-48ea-a176-e683e09d8c95"
+    },
+    {
+      "claim_id": "c5bd1cdb-391b-4205-85d7-f47aab588592",
+      "result_id": "2bba4630-fcd3-48ea-a176-e683e09d8c95"
+    },
+    {
+      "claim_id": "db40eebd-5737-4da2-9c80-f81905bd2f6f",
+      "result_id": "2bba4630-fcd3-48ea-a176-e683e09d8c95"
+    },
+    {
+      "claim_id": "f67c15b7-0739-438c-bbc2-8cc0a035265c",
+      "result_id": "76beb06e-f62c-4458-95f7-c58f8848de83"
+    },
+    {
+      "claim_id": "ff101786-6a29-4091-8232-09160d34adb5",
+      "result_id": "76beb06e-f62c-4458-95f7-c58f8848de83"
+    },
+    {
+      "claim_id": "5d38ee4e-bc48-4a22-a8f4-c76c893bf3cf",
+      "result_id": "76beb06e-f62c-4458-95f7-c58f8848de83"
+    },
+    {
+      "claim_id": "cefe1d17-0f21-424f-9aa9-da9531c814a7",
+      "result_id": "76beb06e-f62c-4458-95f7-c58f8848de83"
+    },
+    {
+      "claim_id": "9fc42786-3b2e-4cbf-855e-8cf0d0e46ea2",
+      "result_id": "76beb06e-f62c-4458-95f7-c58f8848de83"
+    },
+    {
+      "claim_id": "064ff974-002c-475d-9fa2-815a7c2331b2",
+      "result_id": "76beb06e-f62c-4458-95f7-c58f8848de83"
+    },
+    {
+      "claim_id": "52e25091-9ed8-4571-841e-3bf016b9cba7",
+      "result_id": "76beb06e-f62c-4458-95f7-c58f8848de83"
+    },
+    {
+      "claim_id": "7dc65bb1-ac4b-4eef-bbf8-ee4f9cc817e9",
+      "result_id": "1e00415c-3cdb-4de1-87b4-240663f7eb4a"
+    },
+    {
+      "claim_id": "e606a85b-f39f-41ae-b65f-eb0299e5a91d",
+      "result_id": "1e00415c-3cdb-4de1-87b4-240663f7eb4a"
+    },
+    {
+      "claim_id": "c861a1c0-7842-4a59-86e5-46ca7046ff6c",
+      "result_id": "1e00415c-3cdb-4de1-87b4-240663f7eb4a"
+    },
+    {
+      "claim_id": "6c9454b3-a7ad-42e3-979a-309d7a3e768d",
+      "result_id": "1e00415c-3cdb-4de1-87b4-240663f7eb4a"
+    },
+    {
+      "claim_id": "61043372-0b71-478e-8bd4-3865d7a46a3c",
+      "result_id": "1e00415c-3cdb-4de1-87b4-240663f7eb4a"
+    },
+    {
+      "claim_id": "30cae179-7fde-40ff-b2a7-4ba42ec9eb64",
+      "result_id": "1e00415c-3cdb-4de1-87b4-240663f7eb4a"
+    },
+    {
+      "claim_id": "70a29acb-62a5-4467-ac39-946c4f7cf690",
+      "result_id": "1e00415c-3cdb-4de1-87b4-240663f7eb4a"
+    },
+    {
+      "claim_id": "a706669f-06d9-4fbc-b98c-b36f1f39c3e2",
+      "result_id": "1e00415c-3cdb-4de1-87b4-240663f7eb4a"
+    },
+    {
+      "claim_id": "ebe26676-4cb1-423d-86c3-22c2245fd2bf",
+      "result_id": "1e00415c-3cdb-4de1-87b4-240663f7eb4a"
+    },
+    {
+      "claim_id": "e107b227-ebd0-423f-b43c-4b166a320b5d",
+      "result_id": "1e00415c-3cdb-4de1-87b4-240663f7eb4a"
+    },
+    {
+      "claim_id": "9b37f7d2-618c-462d-af89-3e420415cea5",
+      "result_id": "5895fac3-c5bd-4cf3-9d2a-1677084fa573"
+    },
+    {
+      "claim_id": "9582fe71-f0e1-4e5a-b991-a30be197141b",
+      "result_id": "5895fac3-c5bd-4cf3-9d2a-1677084fa573"
+    },
+    {
+      "claim_id": "54adadaa-46ed-41db-bd4b-12960eaa9a30",
+      "result_id": "5895fac3-c5bd-4cf3-9d2a-1677084fa573"
+    },
+    {
+      "claim_id": "4f0926ee-aef8-4ef6-9f1e-6008a2baaf7e",
+      "result_id": "5895fac3-c5bd-4cf3-9d2a-1677084fa573"
+    },
+    {
+      "claim_id": "668adb1c-d403-4150-8d66-72a0bdb2bafd",
+      "result_id": "acef5e3e-824a-4f10-afc6-6459f554d1c9"
+    },
+    {
+      "claim_id": "10d18f5c-7dd0-4a01-b841-36227cff144b",
+      "result_id": "9cd678a6-fea2-4fb2-87f2-4e509a398782"
+    },
+    {
+      "claim_id": "1f7023aa-754a-456d-ab47-8379988af6d6",
+      "result_id": "9cd678a6-fea2-4fb2-87f2-4e509a398782"
+    },
+    {
+      "claim_id": "3f38c74b-80e0-4666-9adc-966e39a569c1",
+      "result_id": "9cd678a6-fea2-4fb2-87f2-4e509a398782"
+    },
+    {
+      "claim_id": "43216025-c53a-4453-8ba9-463a7557b0d7",
+      "result_id": "9cd678a6-fea2-4fb2-87f2-4e509a398782"
+    },
+    {
+      "claim_id": "aa2f2485-072e-4050-8be2-e109ad173577",
+      "result_id": "9cd678a6-fea2-4fb2-87f2-4e509a398782"
+    },
+    {
+      "claim_id": "9f4b25b1-0661-4470-9fdc-9554f7d15a5a",
+      "result_id": "9cd678a6-fea2-4fb2-87f2-4e509a398782"
+    },
+    {
+      "claim_id": "270cdcc4-e486-48f4-b360-54fe2b7ed3b1",
+      "result_id": "9cd678a6-fea2-4fb2-87f2-4e509a398782"
+    },
+    {
+      "claim_id": "f297205b-23f4-441d-856d-f9b51b6132e1",
+      "result_id": "9cd678a6-fea2-4fb2-87f2-4e509a398782"
+    },
+    {
+      "claim_id": "674e96b4-44b8-4482-8440-91734e5a7658",
+      "result_id": "9cd678a6-fea2-4fb2-87f2-4e509a398782"
+    },
+    {
+      "claim_id": "4eebc75f-00e6-45d2-ab5d-e9d44c8d9413",
+      "result_id": "9cd678a6-fea2-4fb2-87f2-4e509a398782"
+    },
+    {
+      "claim_id": "c0e41f73-f422-4deb-bf0c-98c65dd8a324",
+      "result_id": "9cd678a6-fea2-4fb2-87f2-4e509a398782"
+    },
+    {
+      "claim_id": "83e619d0-802b-41f3-87eb-f420bbf0f4e1",
+      "result_id": "9cd678a6-fea2-4fb2-87f2-4e509a398782"
+    },
+    {
+      "claim_id": "438b8446-0aca-475d-b685-f85b5c241f93",
+      "result_id": "5632c39f-0610-46b3-ae62-7aea0ee7fc37"
+    },
+    {
+      "claim_id": "42c0a8b6-e512-4f5d-9504-240263cd5ac4",
+      "result_id": "5632c39f-0610-46b3-ae62-7aea0ee7fc37"
+    },
+    {
+      "claim_id": "6c04d6c1-45b3-4eca-a088-d0a51e24db66",
+      "result_id": "5632c39f-0610-46b3-ae62-7aea0ee7fc37"
+    },
+    {
+      "claim_id": "29bc4d1b-0efc-4622-88a6-ae4eb26d33f5",
+      "result_id": "5632c39f-0610-46b3-ae62-7aea0ee7fc37"
+    },
+    {
+      "claim_id": "f9794e62-b08f-4edd-b006-cd319861b84f",
+      "result_id": "5632c39f-0610-46b3-ae62-7aea0ee7fc37"
+    },
+    {
+      "claim_id": "40652618-555e-421a-8f64-50e33a749373",
+      "result_id": "5632c39f-0610-46b3-ae62-7aea0ee7fc37"
+    },
+    {
+      "claim_id": "fa280ae8-a47a-4bf1-ab96-6f07210b7603",
+      "result_id": "5632c39f-0610-46b3-ae62-7aea0ee7fc37"
+    },
+    {
+      "claim_id": "61145b04-0ed1-402a-b533-442a178bc08f",
+      "result_id": "5632c39f-0610-46b3-ae62-7aea0ee7fc37"
+    },
+    {
+      "claim_id": "caef6384-0eb9-41f6-82bb-5edf2225dc43",
+      "result_id": "5632c39f-0610-46b3-ae62-7aea0ee7fc37"
+    },
+    {
+      "claim_id": "b04a304d-9edc-4bfa-a52f-fc95d13fb480",
+      "result_id": "5632c39f-0610-46b3-ae62-7aea0ee7fc37"
+    },
+    {
+      "claim_id": "fed74209-cd69-4414-a787-65c24120c178",
+      "result_id": "5632c39f-0610-46b3-ae62-7aea0ee7fc37"
+    },
+    {
+      "claim_id": "d726e255-f5c9-4d72-95f3-287d8792468c",
+      "result_id": "5632c39f-0610-46b3-ae62-7aea0ee7fc37"
+    },
+    {
+      "claim_id": "85f8dc42-5f0e-4366-9d3f-668a6afd3cfa",
+      "result_id": "935ed548-8466-4033-9667-f6373b8b7da8"
+    },
+    {
+      "claim_id": "263e908a-500a-4350-a11a-1a3fb6db0fa5",
+      "result_id": "935ed548-8466-4033-9667-f6373b8b7da8"
+    },
+    {
+      "claim_id": "c3199078-1673-4e7a-82e1-a93128120cfd",
+      "result_id": "935ed548-8466-4033-9667-f6373b8b7da8"
+    },
+    {
+      "claim_id": "9cd25598-2df3-42af-96ad-17b7476b604e",
+      "result_id": "935ed548-8466-4033-9667-f6373b8b7da8"
+    },
+    {
+      "claim_id": "b2422239-2a8b-467b-ac3c-a9fda7e3e50b",
+      "result_id": "935ed548-8466-4033-9667-f6373b8b7da8"
+    },
+    {
+      "claim_id": "ff4c14da-7118-49a8-949b-83faa1644c55",
+      "result_id": "935ed548-8466-4033-9667-f6373b8b7da8"
+    },
+    {
+      "claim_id": "c7fe95b8-d534-4601-a196-e3ada4e2d429",
+      "result_id": "935ed548-8466-4033-9667-f6373b8b7da8"
+    },
+    {
+      "claim_id": "cbe4eaeb-e49f-4d40-b2ba-9c49ddf69bd4",
+      "result_id": "49638b25-9a69-4867-b2f6-465354cd2da7"
+    }
+  ],
+  "comparisons": []
+}

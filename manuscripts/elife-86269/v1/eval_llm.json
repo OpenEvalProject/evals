@@ -1,0 +1,235 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "Single-cell RNA sequencing of mouse wound beds at 24 hr and 48 hr after injury revealed four major cell types (monocytes/macrophages, neutrophils, dendritic cells, and fibroblasts) with dramatic transcriptional changes between timepoints, including separate clustering of 24 hr and 48 hr samples, >2-fold increase in macrophages and neutrophils, and markedly different gene expression patterns in each cell type over time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C8 collectively describe the scRNA-seq experimental design, cell type classification using neural networks, and temporal dynamics. The methods are clearly described, figures are referenced, and the observations about temporal clustering and cell type proportions are supported by the data presented. The use of established marker genes and neural network classification (C3) provides methodological rigor.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Gene ontology analysis revealed that immune cells upregulated genes for their specific inflammatory functions, while fibroblasts upregulated ECM organization genes. Importantly, DCs, fibroblasts, and neutrophils upregulated apoptotic genes, which was validated by immunostaining showing cleaved caspase 3+ cells in wound beds, with significantly more at 48 hr than 24 hr, including in CD11c+ dendritic cells and Pdgfra+ fibroblasts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C19 describe GO analysis results and validation by immunostaining. The functional enrichment analysis is appropriate for scRNA-seq data, and the protein-level validation of apoptosis (C15-C18) strengthens the transcriptional findings. The quantitative comparison showing increased cleaved caspase 3+ cells at 48 hr (C16) with statistical significance supports the temporal dynamics of apoptosis. The citation for S100a8/S100a9 function (C13) appropriately supports the interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Efferocytosis pathway genes were upregulated in wound beds, with fibroblasts expressing multiple receptors (Tyro3, Axl, Itgav, Slc7a11) and ligands (Gas6, Pros1, C3, C4b, Mfge8), immune cells expressing detection receptors, and a specific subset of Lyve1+ resident macrophages highly expressing Gas6, Timd4, and Retnla. Axl was uniquely expressed by dendritic cells and fibroblasts, confirmed by immunostaining showing Axl protein in CD11c+ cells and Pdgfra-GFP+ fibroblasts with elongated processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C32 describe efferocytosis gene expression patterns and protein validation. The scRNA-seq data showing cell type-specific expression is complemented by immunostaining validation (C28, C29, C31). The lineage tracing experiment using Lyz2CreER;mTmG mice (C27) provides strong evidence that Lyve1+ cells are resident rather than recruited. The characterization of the Lyve1+ macrophage subset (C25) is supported by co-expression of multiple markers. Citations appropriately support the characterization of Lyve1+ cells as resident macrophages (C26).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "qPCR analysis showed significant upregulation of efferocytosis receptor mRNAs (including TAM receptors) in wound beds compared to naive skin, while Gas6 and Retnla were downregulated and Socs1/Socs3 were upregulated. Functional efferocytosis was demonstrated by injecting labeled apoptotic neutrophils into wounds at 1, 3, and 5 days, showing active efferocytosis at all timepoints with significantly more efferocytosing cells at 5 days, though the efferocytosis rate remained relatively constant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C40 describe qPCR validation and functional efferocytosis assays. The qPCR data (C33-C36) validates the scRNA-seq findings at the tissue level. The neutrophil injection experiment (C37-C39) provides direct functional evidence of efferocytosis activity. The quantification distinguishes between absolute numbers of efferocytosing cells (C38) and efferocytosis rate (C39), showing appropriate statistical analysis. The experimental design with multiple timepoints strengthens the conclusions about temporal dynamics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Analysis of human diabetic and non-diabetic foot wounds revealed alterations in apoptotic gene expression, with monocytes/macrophages in diabetic wounds showing increased expression of multiple apoptosis genes. Diabetic wounds displayed a striking increase in efferocytosis pathway genes, particularly AXL (increased in all cell types) and GAS6 (increased in most cell types). CellChat analysis revealed altered GAS6-AXL signaling in diabetic wounds, with monocytes/macrophages newly expressing AXL and increasing GAS6 stimulation. Immunostaining showed more prevalent Gas6 staining in diabetic samples colocalizing with CD68+ macrophages, though quantification was not statistically significant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C44-C54 describe human sample analysis comparing diabetic and non-diabetic wounds. While the scRNA-seq analysis and CellChat predictions are methodologically sound (C46-C51), the immunostaining validation (C52-C53) shows a trend but lacks statistical significance (C53). The sample sizes are small (n=2 non-diabetic, n=6 diabetic for immunostaining), limiting statistical power. The conclusion that diabetic wounds 'may activate and modulate GAS6-AXL signaling' (C54) is appropriately cautious but requires additional validation. The demographic information is provided in supplementary materials but not fully described in the main text.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "TLR3 signaling is sufficient but not necessary for Axl expression in skin. scRNA-seq showed TLR3 is uniquely expressed by dendritic cells and fibroblasts among TLRs. Poly(I:C) injection in naive skin induced Ifnb and Axl expression in WT but not TLR3 KO mice, confirming TLR3 specificity. IFN-\u03b2 injection was sufficient to induce Axl protein expression. However, in wound beds, Axl protein was expressed similarly in TLR3 KO and WT mice, indicating TLR3-independent mechanisms drive Axl upregulation in wounds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C66 describe experiments testing TLR3's role in Axl expression. The experimental design using poly(I:C) injections with appropriate controls (PBS, TLR3 KO mice) is rigorous (C59, C61-C62). The specificity of poly(I:C) for TLR3 is supported by citation (C60) and confirmed by Ifnb induction only in WT mice (C59). The IFN-\u03b2 sufficiency experiment (C64) establishes a mechanistic link. The key finding that Axl is expressed in TLR3 KO wounds (C65) is clearly demonstrated and appropriately interpreted as indicating additional mechanisms (C66). The distinction between sufficiency in naive skin and necessity in wounds is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Axl inhibition using function-blocking antibody impaired wound repair but not efferocytosis. Anti-Axl Ab treatment significantly reduced Axl mRNA at day 5 (indicating reduced signaling), but did not change immune cell proportions at day 3 or apoptotic cell numbers. However, Axl expression shifted from dendritic cells to macrophages. At day 5, anti-Axl Ab-treated wounds showed healing defects including reduced granulation tissue, significantly decreased fibroblast repopulation (aSMA) and revascularization (CD31), but normal re-epithelialization. Gene expression changes included downregulation of Arg1, Tgfb, Il1a and upregulation of Ifnb, Socs1, Socs3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C77 describe Axl inhibition experiments with appropriate controls. The use of Axl mRNA downregulation as a readout of reduced signaling (C67-C68) is supported by citation of the positive feedback mechanism (C69). Flow cytometry analysis (C70-C71) provides quantitative assessment of immune cell populations and Axl expression shifts. The histological and immunostaining analyses (C72-C75) are quantified with statistical tests showing significant defects in fibroblast repopulation and revascularization but not re-epithelialization, indicating specific rather than global healing defects. The gene expression changes (C76) are consistent with altered inflammatory signaling. The conclusion (C77) is appropriately supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Timd4 inhibition using function-blocking antibody impaired efferocytosis and wound repair. Anti-Timd4 Ab-treated wounds showed significantly more TUNEL+ apoptotic cells at days 1 and 5, and increased cleaved caspase 3+ cells, consistent with defective efferocytosis. At day 5, wounds displayed qualitative defects in granulation tissue and significant reduction in revascularization (CD31), but no significant changes in fibroblast repopulation (aSMA) or re-epithelialization (ITGA6). Gene expression analysis showed significant upregulation of inflammatory cytokines (Ifng, Ifnb) and downstream factors (Socs1, Socs3) at early timepoints.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C87 describe Timd4 inhibition experiments. The efficacy of the anti-Timd4 Ab is supported by citation (C78, though this claim is not included in this result). The increase in TUNEL+ and cleaved caspase 3+ cells (C79-C80) provides strong evidence for defective efferocytosis, with appropriate statistical analysis. The interpretation (C81) appropriately acknowledges that increased apoptosis cannot be ruled out but the data are consistent with efferocytosis defects. The histological analysis (C82-C84) shows specific defects in revascularization without affecting other repair processes, indicating a distinct phenotype from Axl inhibition. The gene expression changes (C85-C86) showing upregulation of inflammatory markers support altered inflammatory resolution. The conclusion (C87) is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "The study demonstrates that apoptotic and efferocytosis pathways are upregulated in distinct cell types in mouse wounds and human diabetic foot wounds, with efferocytosis receptors Axl and Timd4 having differential effects on wound repair. Axl signaling is required for wound repair (affecting revascularization and fibroblast repopulation) but is dispensable for efferocytosis, while Timd4 inhibition decreases efferocytosis and abrogates wound repair (affecting revascularization). In mouse wounds, Axl is upregulated in dendritic cells and fibroblasts via TLR3-independent mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C89 and C112-C115 represent the main conclusions synthesized from the experimental results. These summary claims are well-supported by the detailed experimental evidence described in previous result groups. The differential roles of Axl and Timd4 (C89, C112-C113) are clearly demonstrated by the distinct phenotypes observed in inhibition experiments. The human diabetic wound findings (C114) add translational relevance, though with the caveats noted in the human sample result group. The TLR3-independence of Axl upregulation in wounds (C115) is strongly supported by the TLR3 KO experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C55",
+      "C56",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C97",
+      "C98",
+      "C99",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "The manuscript contextualizes findings within existing literature on apoptosis and efferocytosis in wound healing and other systems, citing prior work on: increased apoptosis in diabetic wounds, conflicting reports on macrophage efferocytosis in diabetic wounds, apoptosis in regeneration, TLR3's role in Axl induction and wound repair, mechanisms of apoptotic cell signaling, PtdSer exposure, fibroblast efferocytosis, differential TAM receptor properties, Axl's role in tumor biology, and Timd4's functions in various tissues including heart and skin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C43, C55-C56, C90-C95, C97-C99, C102-C108 represent citations of prior work that contextualize the current findings. These claims appropriately cite relevant literature and accurately represent the cited work based on the context provided. The citations support the rationale for the experiments (e.g., C55-C56 for TLR3 experiments) and help interpret the findings (e.g., C98-C99 for understanding Axl's role). Some claims note conflicting prior findings (C42-C43), which appropriately acknowledges complexity in the field. The citations are used to support background knowledge rather than as primary evidence for the current study's conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C96",
+      "C100",
+      "C101",
+      "C111"
+    ],
+    "result": "The authors interpret their findings and propose future directions, suggesting that apoptotic cells are rapidly cleared via efferocytosis in skin wounds, that Axl inhibition did not detectably impact efferocytosis but showed compensatory shifts in Axl expression between cell types, and that targeting efferocytosis mechanisms may reveal therapeutic avenues for chronic wounds in diabetic patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96, C100-C101, and C111 represent interpretations and speculations based on the data. C96 is a reasonable interpretation supported by the efferocytosis assay data and high numbers of phagocytic cells. C100-C101 appropriately interpret the Axl inhibition results, noting the lack of detectable efferocytosis defects and the shift in Axl expression between cell types, suggesting compensation. C111 is appropriately speculative ('may reveal') about therapeutic applications, acknowledging that further research is needed. These interpretations are logical extensions of the data but represent inferences rather than direct observations.",
+    "result_type": "MINOR"
+  }
+]

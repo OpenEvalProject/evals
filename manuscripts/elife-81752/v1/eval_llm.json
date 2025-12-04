@@ -1,0 +1,250 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C69"
+    ],
+    "result": "Cervical cancer represents a significant global disease burden, with 604,000 new cases and 342,000 deaths estimated worldwide in 2020.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, and C69 are background statements supported by appropriate citations (Sung et al., 2021; de Martel et al., 2017). These provide context for the study but are not original findings from this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "Cervical cancer prevention measures (HPV vaccination, screening, and treatment) can reduce disease burden, but access is limited in LMICs. The WHO developed a global elimination strategy with specific intervention targets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C11 describe established knowledge and WHO policy supported by appropriate citations. These are background claims providing context for the study rather than original findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Local cervical cancer epidemiological data (sexual behavior, HPV prevalence, cervical cancer incidence) are essential for impact projections but are often unavailable or subject to bias.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C15 establish the rationale for the study by documenting data gaps and challenges, supported by appropriate citations. These justify the need for the Footprinting framework.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "India has the world's highest cervical cancer burden with limited access to preventive measures. Data availability varies across Indian states: 2 states have complete HPV prevalence data, 12 have incidence and sexual behavior data, and 11 have only sexual behavior data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C20 describe the Indian case study context and data availability, supported by appropriate citations. These establish the hierarchical data structure that motivates the Footprinting approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Clustering analysis of cervical cancer incidence patterns identified 2-3 optimal clusters based on BIC. The 2-clustering revealed low-incidence (47 cases/100,000, peak at 60-64 years) and high-incidence (91 cases/100,000, peak at 55-59 years) patterns. The 3-clustering added an intermediate cluster (64 cases/100,000, peak at 60-64 years).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C27 describe the clustering results with specific BIC values and incidence patterns supported by Table 1 and Figure 2. The analysis appropriately uses BIC for model selection, though the decision to combine clusters 2 and 3 for classification purposes requires additional justification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Sexual behavior variables predict cervical cancer incidence clusters. The top three predictors were: proportion of urban males reporting sex with non-regular partners, median age of first sex in rural males, and median age of first sex in urban females. High proportions of urban males with non-regular partners, high female age at first sex, and low male age at first sex were associated with high-incidence clusters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C33 describe the random forest classification results supported by Figure 3 and source data. The associations are clearly demonstrated, though the authors note the distinction is less clear for age at first sex variables.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "The random forest classifier achieved 29% out-of-bag error. When applied to states with known clusters, only 2 of 14 states (14%) were misclassified. All 11 states without incidence data were classified to the low-incidence cluster, resulting in 19 low-incidence and 6 high-incidence states total.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C37 report classifier performance metrics supported by Table 3. The 29% out-of-bag error but only 14% misclassification on known data suggests reasonable performance, though the discrepancy warrants explanation. The classification of all unknown states to low-incidence is data-driven but should be interpreted cautiously.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "HPV prevalence validation showed 16.9% in the high-incidence cluster versus 9.8% in the low-incidence cluster (1.7-fold difference), comparable to the 1.9-fold difference in age-standardized cervical cancer incidence (17.9 vs 9.01 cases/100,000 women-years).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C41 provide validation of the clustering by comparing HPV prevalence and incidence ratios. The similar fold-differences (1.7 vs 1.9) support the validity of the clusters, though this is based on only one survey per cluster.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "India divides into 19 low-incidence and 6 high-incidence states. High-incidence states show more sexual activity with non-regular partners. Contrary to prior literature, early sexual debut in women was associated with lower incidence in this dataset, hypothesized to reflect rural populations with less non-regular partner activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C42-C43 are well-supported by data. However, C45-C46 present a finding contradicting prior literature (C44) with only a speculative hypothesis (C46) as explanation. This unexpected finding requires additional validation or mechanistic investigation before being considered fully supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C47"
+    ],
+    "result": "Urbanization may shift more Indian states to high cervical cancer incidence patterns with earlier peak incidence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C47 is speculative about future trends based on urbanization. While supported by a citation (Baussano et al., 2016), this is a hypothesis rather than a demonstrated finding from the current data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C68"
+    ],
+    "result": "The Footprinting framework successfully approximated missing cervical cancer epidemiological data for India. Two main incidence patterns were identified, states with missing data were classified, and missing incidence and HPV prevalence were approximated using cluster means. This enabled state-specific impact projections for the first time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C52 and C68 summarize the framework's application and outcomes. The methodology is clearly described and executed, with results reported in companion manuscripts. The framework successfully addresses the stated goal of approximating missing data for impact projections.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Data sources included cervical cancer incidence from CI5 (16 registries in 10 states) and NCDIR (17 additional registries), totaling 33 registries in 14 states. Sexual behavior data from the 2006 NACO survey covered all 25 states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C58 describe data sources with appropriate citations. The methods section clearly documents data provenance and coverage, which is essential for reproducibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "The Footprinting framework is similar to other extrapolation approaches but has strengths: it uses observed epidemiological patterns rather than predefined units, and employs a clustering method that considers entire age-specific incidence patterns rather than single summary measures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C61 position the framework relative to existing methods with appropriate citations. The stated advantages are valid methodological improvements, though comparative performance evaluation would strengthen these claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C62",
+      "C63"
+    ],
+    "result": "The study's nationwide cervical cancer incidence estimate was lower than GLOBOCAN's, potentially due to different extrapolation methods and inclusion of 17 additional low-incidence registries not in GLOBOCAN.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C63 acknowledge a discrepancy with GLOBOCAN estimates and provide plausible explanations. The explanation is reasonable given the methodological differences, though the magnitude of difference is not quantified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "The Footprinting framework is flexible and could be adapted to approximate missing economic data or applied to other contexts, though applicability depends on data availability. Impact projections can assist local health authorities in planning cervical cancer prevention strategies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C67 discuss framework flexibility and applications. C64 is speculative about future applications, while C65-C67 appropriately acknowledge limitations and potential utility. These are reasonable interpretations of the framework's scope.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "The clustering used Poisson regression with three parameters (intercept, age, age-squared) chosen to match the typical age-incidence pattern. Classification used the R package party version 1.3-7 with specified parameters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C72 describe statistical methods with appropriate justification. The Poisson model choice is reasonable for count data, and the parametric form matches expected incidence patterns. Software and parameters are specified for reproducibility.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,339 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "The study utilized two large Danish health data sources: the National Patient Registry (NPR) covering 1994-2018 with 23,592 pancreatic cancer patients (18,523 confirmed by Danish Cancer Registry), and electronic health records (EHRs) from 2006-2016 with 3,078 pancreatic cancer patients. Gender distribution was approximately equal in both datasets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C24 provide clear descriptive statistics about the data sources used in the study. The temporal coverage, patient counts, and demographic characteristics are explicitly stated and internally consistent. These are straightforward data descriptions that form the foundation of the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Text mining of clinical notes identified 16 unique symptoms not found in NPR, while NPR contained 24 symptoms not found by text mining. 57 symptoms were identified in both sources. Symptoms like 'Pain', 'Nausea and vomiting', and 'Abnormal blood-pressure reading' were more frequent in clinical notes, while 'Abdominal and pelvic pain' was more frequent in NPR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C33 describe the complementary nature of the two data sources with specific counts and examples supported by Figure 1. The findings demonstrate that text mining and registry data capture different aspects of symptom presentation, which is a key methodological result of the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "The text mining approach achieved 93% coverage of pancreatic cancer patients (2,867/3,078) and identified 73 unique symptoms in cases versus 79 in controls (30,780 matched patients). Validation on 200 clinical notes showed 83.4% sensitivity and 99.8% specificity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C39 provide validation metrics for the text mining methodology. The sensitivity of 83.4% is reasonable for NLP tasks, and the specificity of 99.8% is expected given the high proportion of non-symptom text. The validation sample size (200 notes, 807 symptoms) is adequate for performance estimation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Registry-based trajectory analysis covering 3,863 patients (21% of cases) identified temporal patterns of symptoms before pancreatic cancer diagnosis. Known symptoms like 'Jaundice', 'Abdominal and pelvic pain', and 'Haemorrhage' appeared prior to diagnosis, with symptoms like 'Headache' and 'Enlarged lymph nodes' appearing earliest, while 'Visible peristalsis' and 'Abdominal and pelvic pain' appeared closest to diagnosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C44, C49-C51 describe registry-based trajectory findings with temporal ordering of symptoms. The statistical methodology (RR, binomial tests, Bonferroni correction) is appropriate for identifying directional disease pairs. The findings are supported by Figure 3A and supplementary data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Text-mined symptom trajectories covering 311 patients (10% of cases) showed progression from generic symptoms like 'Pain' to more specific symptoms like 'Jaundice'. Two specific trajectories ('Cough\u2192Jaundice\u2192Intestinal obstruction' and 'Pain\u2192Jaundice\u2192Abnormal results of function studies') were associated with shorter median survival (\u226490 days).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C57 describe text-mined trajectory patterns with survival associations. The use of logistic regression with OR>1 and p<0.05 thresholds, followed by directionality testing and Bonferroni correction, is methodologically sound. The survival associations are clearly stated and supported by Figure 3B.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Disease trajectory analysis identified associations between pancreatic cancer and cardiovascular diseases (angina pectoris, myocardial infarction, chronic ischemic heart disease, hypertension), Type 2 Diabetes, and digestive system disorders (cholelithiasis, disorders of lipoprotein metabolism). Patients with multiple cardiovascular diseases prior to pancreatic cancer showed worse survival.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C48 describe disease associations found in trajectory analysis. The cardiovascular-pancreatic cancer association is supported by cited literature (C65-C67). However, the survival claim (C48) is observational and lacks statistical testing details. The associations are descriptive rather than causal, which is appropriately acknowledged in C70-C71.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C75",
+      "C115",
+      "C116"
+    ],
+    "result": "Text mining of clinical notes captured more symptoms prior to pancreatic cancer diagnosis than registry data, despite the smaller cohort size (3,078 vs 18,523). For example, 'Pain' was documented in >2,000/3,078 text-mined cases but <500/18,523 registry cases. Symptoms like 'Blood pressure reading without diagnosis', 'Abnormalities of heartbeat', and 'Intestinal obstruction' were found only in text-mined data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C60, C75, C115-C116 demonstrate the complementary value of text mining versus structured registry data. The specific examples and patient counts support the conclusion that clinical notes capture more symptom information. This is a key finding showing the added value of NLP approaches for symptom detection.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "Temporal analysis of text-mined symptoms showed that specific symptoms like 'Jaundice', 'Disorders of porphyrin and bilirubin metabolism', and 'Intestinal obstruction' appeared closest to diagnosis, while general symptoms like 'Pain', 'Intestinal disorders', 'Heartburn', and 'Fever' appeared earlier. 'Hepatomegaly and splenomegaly' showed different temporal distributions between short (\u226490 days) and longer survival groups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C109 describe temporal patterns of symptoms relative to diagnosis and survival. The findings are supported by Figure 2 showing symptom distributions over time. The observation about differential timing by survival group is clinically plausible and adds prognostic insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C61",
+      "C62"
+    ],
+    "result": "Trajectory analysis predominantly detected symptom patterns in patients with longer survival (>90 days), potentially because patients with short survival (\u226490 days) had fewer documented symptoms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C61-C62 identify a potential bias in trajectory detection. While C61 is observational, C62 is explicitly speculative ('This could be because'). The explanation is plausible but not empirically validated. This represents an important limitation that could affect interpretation of trajectory findings, particularly for early detection applications.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "Many patients had unknown staging information. There was slight overrepresentation of longer survival patients in the jaundice symptom group. Survival distributions were similar between patients with and without clinical notes, and between text-mined and registry-based trajectory cohorts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C113 address potential biases in the study. The staging data limitation (C110) is acknowledged. The survival comparisons (C112-C113) supported by Figure 2-supplement 2 and Figure 3-supplement 2 help validate that the EHR subcohort is representative, strengthening the generalizability of text-mining findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "The study used ICD-10 code C25 to define pancreatic cancer cases, confirmed by Danish Cancer Registry. Symptoms were extracted using ICD-10 Chapter 18 vocabulary, expanded with literature-based pancreatic cancer symptoms to create a 691-symptom dictionary. Controls were matched 10:1 on sex, age, birth year, and diagnosis year. Data preprocessing excluded temporary diagnoses and non-residents.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C92 describe the study design and methodology. The case definition, symptom vocabulary construction, control matching strategy, and data preprocessing steps are clearly specified. The 10:1 matching ratio provides adequate statistical power. The methodology is transparent and reproducible.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "Text mining used Tagcorpus software with post-processing to remove negations and references to other persons. Statistical analysis employed Relative Risk with binomial tests for registry data and logistic regression with odds ratios for text-mined data, with directionality testing and Bonferroni correction. Validation used 200 randomly selected clinical notes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C101 describe the computational and statistical methods. The use of Tagcorpus is appropriate and cited. The statistical approaches (RR for registry, OR for text-mined data) are suitable for the respective data types. Bonferroni correction addresses multiple testing. The validation sample size is adequate for performance estimation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Study limitations include: data restricted to hospital contacts (not capturing earliest symptoms), shorter EHR period (2006-2016) versus NPR (1994-2018), challenges in direct comparison between data sources, potential information bias in NPR coding, and inability to infer causality from trajectories.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C74 appropriately acknowledge study limitations. The restriction to hospital data (C68) is a significant limitation for early detection. The inability to infer causality (C70-C71) is correctly stated and important for interpretation. The information bias concern (C74) is supported by citations. These limitations are honestly reported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C118"
+    ],
+    "result": "The study demonstrates that combining registry data and text-mined EHRs provides comprehensive temporal patterns of symptoms prior to pancreatic cancer diagnosis, revealing increased prevalence of early symptoms in EHRs. Symptoms appear in complex, messy order, progressing from general/unspecific to more specific and severe as cancer advances.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C79, C118 summarize the main conclusions. The complementary value of combining data sources is well-supported by the results (C25-C33, C58-C60). The characterization of symptom progression from general to specific (C79) is supported by trajectory analyses (C57, C105-C106). These represent the core contributions of the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C114"
+    ],
+    "result": "The 90-day survival threshold was chosen to distinguish early and late death groups because only a small fraction of patients are resectable at diagnosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C114 justifies the 90-day survival cutoff with citations to Sgouros and Maraveyas, 2008 and Berkman et al., 2023. While the choice is somewhat arbitrary, it is clinically motivated and consistently applied throughout the analysis. The rationale is reasonable for distinguishing prognostic groups.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Literature supports that jaundice can indicate late-stage cancer with poor survival but also enables shorter diagnostic intervals compared to other symptoms. Cardiovascular diseases have been suggested to play a role in pancreatic cancer prognosis and as risk factors for other cancers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C67 provide literature context for interpreting findings. The dual nature of jaundice (late-stage indicator vs. diagnostic facilitator) is appropriately nuanced with citations. The cardiovascular-cancer associations are supported by multiple citations, providing context for the trajectory findings in C45-C48.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C80",
+      "C81"
+    ],
+    "result": "Future applications could use AI and advanced text mining to build longitudinal multi-modal trajectories for improved symptom extraction and early prediction of pancreatic cancer, potentially serving as a guide for better screening procedures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C81 are explicitly speculative statements about future applications. While the current study provides foundational evidence for the value of multi-modal data, the proposed AI applications remain hypothetical. These are appropriate forward-looking statements based on the demonstrated proof-of-concept.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "Background literature establishes that pancreatic cancer is predicted to become the second leading cause of cancer deaths, has few generic symptoms resulting in late diagnosis, 11% 5-year survival (42% if detected early, 83.7% for stage I), with common symptoms including weight loss, abdominal pain, anorexia, jaundice, and new-onset diabetes with weight loss.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C9 provide background context from cited literature. These are standard epidemiological and clinical facts about pancreatic cancer that motivate the study. All claims are supported by appropriate citations. This background establishes the clinical importance of early symptom detection.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Prior work establishes that Nordic registries are high-quality, the Danish NPR enables temporal disease pattern studies, EHRs contain deeper phenotypic information, and previous studies have identified various pancreatic cancer symptoms but found symptoms appear sporadically with no difference in diagnostic interval between confirmed and suspected cases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C18 review prior work on registry quality, EHR value, and pancreatic cancer symptom studies. All claims are supported by citations. This literature review appropriately positions the current study's contribution: combining registry and EHR data for comprehensive temporal symptom analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "The study received appropriate regulatory approvals from Danish Data Protection Agency, Health Data Authority, and Patient Safety Authority. Analysis was conducted using Python 3.8 and R 3.6.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C104 document ethical approvals and software versions. The regulatory approvals are appropriate for registry research in Denmark. Software versions are specified, supporting reproducibility. These are standard methodological details.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,277 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C5",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C102",
+      "C103"
+    ],
+    "result": "Caveolae are highly enriched and stably associated with the rear of migrating RPE1 cells. Live-cell imaging shows that caveolar proteins (cavin1, cavin3) remain at the cell rear for several hours during migration on 2D surfaces and in 3D collagen matrices. Electron tomography reveals dense networks of interconnected caveolar clusters at the cell rear. Rear retraction events cause apparent accumulation of caveolae, and rear localization is rapidly re-established after cell division.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C32-C41, C102 are well-supported by multiple complementary experimental approaches including immunofluorescence quantification (C5, C32), live-cell time-lapse imaging with fluorescent fusion proteins (C33-C40), and electron tomography (C41, C102). The data consistently demonstrate rear enrichment (~8-fold, ~70% of cells) and stable association over hours. The migration speed measurements (C36, C37) are appropriately compared to literature values. The observations of rear retraction dynamics (C38) and re-establishment after division (C39) and polarization (C40) are directly shown in time-lapse data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "The Cav1-APEX2-EGFP (Cav1-A2E) fusion protein is functional and suitable for proximity proteomics. Cav1-A2E is expressed at levels comparable to or lower than endogenous Cav1, colocalizes with cavin1 at the cell rear, is efficiently incorporated into caveolae as shown by TEM, and produces spatially restricted biotinylation at the cell rear that is dependent on biotin phenol and hydrogen peroxide.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C46 are supported by appropriate validation experiments. Western blot (C42), immunofluorescence with Pearson correlation (C43), TEM (C44), and streptavidin-HRP blotting (C45) and fluorescent streptavidin labeling (C46) collectively demonstrate that the fusion protein is functional and appropriate for the proximity labeling approach. The controls (biotin phenol and H2O2 dependence) are properly included.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Time-resolved proximity proteomics reveals a membrane tension-sensitive Cav1 interactome. A total of 348 proteins were enriched in Cav1 proximity proteomes under isotonic (NT), hypo-osmotic (HYPO), and recovery (REC) conditions. Under hypo-osmotic conditions, core caveolar proteins (Cav1, Cav2, EHD2) and actin cytoskeleton regulators (Pacsin2, utrophin, tensin-1) dissociate from Cav1-A2E, but reassociate within 30 minutes of recovery. The Cav1 interactome is enriched in cortical actin cytoskeleton and integrin adhesion components.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C57 are supported by comprehensive mass spectrometry analysis with appropriate controls (NES-A2E), statistical filtering (p<0.05, logFC>0), and three biological replicates. The identification of 348 proteins (C47), their distribution across conditions (C48-C49), and the tension-dependent dissociation/reassociation of caveolar proteins (C50-C54) are clearly demonstrated in volcano plots and heatmaps. GO annotation analysis supports the enrichment of actin cytoskeleton components (C55). The Z-score analysis (C56) and identification of absent proteins (C57) provide additional quantitative support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Proximity ligation assays (PLA) validate the proteomics findings and demonstrate tension-dependent protein associations. Under iso-osmotic conditions, robust PLA signals are observed between Cav1-A2E and PTRF/cavin1, filamin-A, cortactin, and between endogenous Cav1 and EHD2-A2E. Hypo-osmotic shock drastically reduces these PLA signals, which recover to control levels after 30 minutes. This indicates reversible disassembly of caveolae and tension-regulated linkage between caveolae and the cortical actin cytoskeleton.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C68 are well-supported by quantitative PLA experiments with appropriate controls and statistical analysis (n=30 cells, three independent experiments, Wilcoxon test). The PLA data (C58-C65) validate the proteomics findings and demonstrate spatial localization (C62-C63). The conclusions about reversible disassembly (C66) and tension-regulated linkage (C67-C68) are appropriately inferred from the combined PLA and proteomics data, with support from cited literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "ROCK1 and HSPB1 are recruited to caveolae during recovery from hypo-osmotic shock, and ROCK activity is required for caveolae reassembly. ROCK1 and HSPB1 are specifically enriched with Cav1 in HYPO and REC samples by proteomics and PLA. ROCK inhibition blocks caveolae rear localization and reduces Cav1-A2E/PTRF interaction, but increases Cav1-A2E/ROCK1 and Cav1-A2E/HSPB1 PLA signals, suggesting ROCK activity weakens these associations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C80 are supported by proteomics (C69), PLA validation (C72), and ROCK inhibition experiments (C73-C77). The data consistently show enrichment of ROCK1 and HSPB1 during recovery and the requirement for ROCK activity in caveolae reassembly. The inferences about recruitment at high tension (C78), requirement for reassembly (C79), and activity-dependent weakening of association (C80) are appropriately drawn from the experimental data, though some mechanistic details remain speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "ARHGAP29 negatively regulates caveolae rear localization and RPE1 cell migration. Cav1 knockdown increases ARHGAP29, YAP, and pS127 YAP levels while decreasing pMLC. ARHGAP29 knockdown increases Cav1 Y14 phosphorylation without affecting pMLC. ARHGAP29 overexpression perturbs Cav1 rear distribution, causes cells to establish multiple random protrusions, and markedly reduces migration velocity and mean squared displacement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C94 are supported by western blot analysis (C85-C88, n=3-4 experiments with statistical tests), qPCR (C89), immunofluorescence quantification (C90, n=18 cells), and live-cell migration analysis (C91-C93, ~60 cells per condition). The data consistently demonstrate a negative regulatory role for ARHGAP29 in caveolae localization and cell migration. The conclusion (C94) is appropriately inferred from the combined data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "The Cav1 interactome represents a composite cell-wide interactome rather than a rear-specific interactome, and caveolae assembly/disassembly is remarkably dynamic. The interactome includes proteins present at but not exclusive to the cell rear. The entire caveolar coat structure is re-established within 30 minutes of recovery from hypo-osmotic shock.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C98 are appropriately inferred from the experimental design and data. The observation that proteins like filamin-A and cortactin show ~40% rear localization (C62-C63) supports the composite nature of the interactome (C95-C96). The rapid recovery of caveolar proteins to NT levels within 30 minutes (C53, C97) demonstrates dynamic assembly/disassembly (C98). These are reasonable interpretations of the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "The manuscript discusses alternative interpretations of caveolae flattening. Recent work shows flat Cav1 scaffolds contain detectable cavins and that EHD2 and Pacsin2 associate with both flat and curved caveolae. The authors suggest membrane tension either partially dissociates the caveolar coat or induces substantial structural remodeling of many but not all caveolae.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C99-C100 are appropriately cited from recent literature (Matthaeus et al., 2022). Claim C101 is speculative and acknowledges uncertainty about the exact structural changes induced by tension. The authors appropriately note they cannot discriminate between flat and invaginated caveolae at the resolution of their microscopy, and the hypo-osmotic shock may exceed physiological tension levels. This represents honest acknowledgment of limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "The manuscript proposes a model where low membrane tension favors caveolae formation at the cell rear due to a stable front-rear membrane tension gradient. Actomyosin-driven contraction and membrane tension gradients promote caveolae formation specifically at the rear. Caveolae assembly/disassembly at the rear is coordinated with the protrusion/retraction cycle, with low tension favoring caveolae formation and high tension causing flattening.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C123 represent a synthesis of the current data with extensive literature support (C104, C106-C111, C114-C115, C118-C119). The model is appropriately supported by the observation of rear-localized caveolae (C5), tension-dependent disassembly (C6-C8, C50-C51), and dynamics during rear retraction (C38, C112). The inferences about tension fluctuations (C120) and coordination with protrusion/retraction cycles (C121-C123) are reasonable extrapolations from the data and cited literature, though some aspects remain speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C124",
+      "C125"
+    ],
+    "result": "The manuscript speculates that the dynamic and reversible nature of caveolae might play an important role in regulating the recruitment of signaling proteins to the rear, in addition to buffering membrane tension. This is based on the observation that caveolae substantially increase effective membrane surface and provide unique topology and curvature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C124 is supported by citation (Golani et al., 2019), but claim C125 is explicitly speculative (\"might play an important role\"). While the speculation is reasonable given the data showing tension-dependent protein associations (C7-C8, C55), it lacks direct experimental support in this manuscript. This represents appropriate scientific speculation about functional implications.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "The manuscript integrates current findings with previous work showing that RhoA/ROCK signaling and caveolae form a positive feedback loop controlling cell rear retraction. Cav1 is critical for myosin-II activation (reduced pMLC upon Cav1 knockdown), and Cav1 scaffolds recruit Ect2 and ROCK1 to the cell rear to promote caveolae formation and actomyosin contractility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126-C128 are appropriately cited from previous work (Hetmanski et al., 2019). Claims C129-C130 are supported by western blot data (C86) showing drastically reduced pMLC in Cav1 siRNA cells. Claim C131 is a reasonable inference integrating the current data (C69, C72, C78-C79) with previous findings, though the direct recruitment mechanism is not fully demonstrated in this manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143"
+    ],
+    "result": "The manuscript proposes multiple speculative models for ARHGAP29 function. ARHGAP29 might interrupt the caveolae-actomyosin feedback loop by suppressing RhoA signaling at the rear, or might establish a Rac/Rho activity gradient at the front. ARHGAP29 contains an F-BAR domain that senses membrane curvature, and its recruitment might be controlled by subtle changes in membrane tension, similar to its C. elegans ortholog SPV-1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C132, C137, C142-C143 are explicitly speculative. Claims C133-C136 are supported by immunofluorescence data showing ARHGAP29 in lamellipodia-like protrusions devoid of Cav1 (C134), but the mechanistic interpretation (C135-C136) is inferred. Claims C138-C141 appropriately cite literature on ARHGAP29/SPV-1 structure and function. The authors appropriately acknowledge multiple possible mechanisms and the speculative nature of their models. The lack of clear rear localization of ARHGAP29 in steady-state cells is honestly discussed as unexpected.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154"
+    ],
+    "result": "Cav1 and ARHGAP29 control actin dynamics through different pathways. Cav1 promotes rear retraction via RhoA/ROCK/MLC signaling, while ARHGAP29 may control F-actin stability via RhoA/LIMK/cofilin. ARHGAP29 knockdown increases Cav1 Y14 phosphorylation, while Cav1 knockdown increases ARHGAP29 expression. ARHGAP29 interferes with RhoA/ROCK or Src signaling to suppress Cav1 phosphorylation, and caveolae dampen ARHGAP29 expression to reinforce the positive feedback loop.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C144 is appropriately inferred from the differential effects on pMLC (C86, C88). Claims C145-C148 appropriately cite literature. Claims C149-C150 are supported by western blot data (C87, C85). Claims C151-C152 appropriately cite literature on Cav1 Y14 phosphorylation. Claims C153-C154 are reasonable inferences from the data, though the mechanisms remain incompletely understood and somewhat speculative (C154 explicitly uses \"somehow\").",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C155"
+    ],
+    "result": "The manuscript concludes that caveolae act as a rear-localized membrane tension sensor that links the F-actin cortex and actomyosin contractility to cell rear retraction, integrating current findings with previous work.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C155 is an appropriate summary conclusion supported by the major findings of the manuscript: rear enrichment of caveolae (C5), tension-dependent disassembly (C6-C8, C50-C51), linkage to actin cytoskeleton (C55, C67), and effects on migration (C13, C94). The conclusion appropriately integrates current data with cited previous work (Hetmanski et al., 2019, 2021).",
+    "result_type": "MAJOR"
+  }
+]

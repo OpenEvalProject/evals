@@ -1,0 +1,262 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "A PTX-like photoprobe binds to a ~50-60 kDa plasma protein specifically in chemically defended dendrobatid poison frog species (O. sylvatica, D. tinctorius, E. tricolor) but not in non-toxic species or other vertebrates. The binding shows differential competition patterns with various alkaloids (PTX, DHQ, epibatidine) across species, but not with nicotine.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The photocrosslinking experiments (C31-C41, Figure 1) provide clear visual evidence of species-specific binding in the 50-60 kDa range, with appropriate negative controls (non-toxic frogs, other vertebrates) and competition assays demonstrating specificity. The differential competition patterns across species are consistently shown and support the conclusion of a specific alkaloid-binding protein.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Proteomic analysis identified the alkaloid-binding protein as serpinA1 (ABG), with 1224.5 average spectral counts that were competed off by 64% with PTX. Full peptide coverage was achieved, and albumin showed no competition despite high abundance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The proteomic data (C42-C46, Figure 2) provide quantitative evidence for ABG identification with appropriate competition controls. The full peptide coverage (C44) and albumin negative control (C45) strengthen the identification. The use of pooled samples and replicates supports the quantitative claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C76"
+    ],
+    "result": "AlphaFold structural prediction of OsABG revealed a high-confidence structure with a conserved binding pocket (three alpha helices backed by beta sheets) similar to mammalian hormone carriers (CBG, TBG) and BBS. Molecular docking simulations predicted PTX binding in this conserved pocket, though specific coordinating residues differ across proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The structural predictions (C47-C50, Figure 3) are well-supported by AlphaFold confidence scores and comparative analysis with known structures. The molecular docking provides computational support for the binding site, though this is predictive rather than experimentally determined. The claim about structural conservation is validated by visual comparison with crystal structures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Recombinantly expressed OsABG, DtABG, and EtABG recapitulated plasma binding patterns, with OsABG showing the strongest binding and competition at 1:1 photoprobe:PTX ratio. DtABG and EtABG required higher protein concentrations and showed weaker binding, confirming species-specific differences in alkaloid-binding affinity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The recombinant protein experiments (C52-C56, Figure 4A-C) successfully validate the plasma findings with purified proteins, providing strong evidence that ABG alone is sufficient for the observed binding activity. The species differences in binding affinity are consistently demonstrated, though the requirement for higher concentrations in DtABG and EtABG could reflect expression/purification differences rather than solely intrinsic affinity differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C86",
+      "C87"
+    ],
+    "result": "Site-directed mutagenesis of predicted binding pocket residues disrupted photoprobe binding. Quadruple mutations (m1, m2) completely abolished binding, while single-point mutations (D383A, Y36F, S374A) significantly weakened binding but retained PTX competition ability, confirming the predicted binding pocket and identifying critical residues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The mutagenesis experiments (C57-C60, Figure 4F) provide strong biochemical validation of the computationally predicted binding pocket. The graded effects (complete loss vs. weakened binding) support the specificity of the identified residues. However, the retention of competition ability in single mutants (C59) suggests some functional redundancy or that binding is not completely abolished.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C61",
+      "C62"
+    ],
+    "result": "Microscale thermophoresis (MST) demonstrated that wild-type OsABG binds PTX with higher affinity than BSA or OsABG mutant 3 (D383A), with the mutant showing similar affinity to BSA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The MST data (C61-C62, Figure 5A) provide direct quantitative binding measurements supporting the specificity of OsABG for PTX. The inclusion of BSA as a control and the D383A mutant validates the importance of the identified binding pocket. However, actual Kd values are not reported in the claims, limiting quantitative assessment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "OsABG dramatically reduces the amount of 'free' PTX in solution (as measured by 3 kDa MWCO filtration) while not affecting free nicotine levels, demonstrating specific sequestration capability and potential regulation of bioavailable alkaloid pools.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The filtration experiments (C63-C64, Figure 5C) provide functional evidence for sequestration activity with appropriate specificity controls (nicotine). The LC-MS quantification strengthens the claims. However, the in vitro conditions may not fully reflect in vivo sequestration dynamics, and the claim about regulation (C65) is somewhat inferential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C99"
+    ],
+    "result": "OsABG mRNA is highly expressed in the liver, exceeding all other serpinA genes and albumin expression levels, consistent with liver production typical of serpin family proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The RNA-seq data (C66-C68, Figure 6B, Figure 6\u2014figure supplement 1) clearly demonstrate high liver-specific expression with appropriate comparative analysis to other serpinA genes and albumin. The tissue specificity is well-established, though the claim relies on mRNA levels rather than protein abundance measurements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C74"
+    ],
+    "result": "Field-collected O. sylvatica frogs contain diverse alkaloid classes on their skin (33% histrionicotoxins, 22% 5,8-indolizidines, etc.), and purified OsABG binds histrionicotoxin-like compounds (HTX), indolizidine, and shows slight competition with wild frog skin toxin mixtures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The GC-MS alkaloid profiling (C69, Figure 6C) and additional crosslinking experiments (C70-C71, Figure 6D) demonstrate ecological relevance by showing OsABG can bind naturally occurring alkaloid classes. The slight competition with toxin mixture (C71) is appropriately qualified. This connects the biochemical findings to the natural context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C102",
+      "C103"
+    ],
+    "result": "Immunohistochemistry with a custom anti-OsABG antibody detected OsABG protein in the deeper layers of intestinal mucosa and inner dermal layers underlying skin granular glands. Antibody specificity was confirmed by signal loss upon pre-incubation with purified OsABG protein.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The immunohistochemistry data (C72-C73, Figure 6E-F) provide tissue localization evidence with appropriate antibody blocking controls confirming specificity. The localization to intestinal mucosa and skin dermis is consistent with a transport function from dietary absorption to skin storage. The antibody validation strengthens the claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C51"
+    ],
+    "result": "The purified OsABG protein doublet results from differential N-glycosylation, as demonstrated by collapse of the doublet upon PNGase treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The deglycosylation experiment (C51, Figure 4\u2014figure supplement 1) provides direct biochemical evidence for the glycosylation explanation of the doublet pattern, with appropriate enzymatic control. This is a straightforward biochemical characterization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C6",
+      "C8",
+      "C9",
+      "C10",
+      "C75",
+      "C76",
+      "C77",
+      "C112",
+      "C113"
+    ],
+    "result": "ABG represents a novel small molecule binding functionality for serpin proteins, exhibiting structural homology to mammalian hormone carriers (CBG, TBG) and amphibian biliverdin-binding proteins (BBS) rather than saxiphilin, albumin, or vitamin carriers. This provides evidence for convergent evolution of serpins for small molecule binding and transport.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The identification of ABG as a serpin (C6, C43) combined with structural comparisons (C9, C48, C76) and functional characterization (C10, C75) support the novelty claim. The evolutionary interpretation (C77, C113) is reasonably inferred from the structural and functional similarities to other small molecule-binding serpins, though direct phylogenetic analysis is not presented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "ABG shows different binding specificities across poison frog species representing independent evolutionary origins of chemical defense (O. sylvatica, D. tinctorius, E. tricolor), with binding activity only in dendrobatid species capable of acquired chemical defense, suggesting conserved mechanisms of alkaloid sequestration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The species comparison data (C90-C93, Figure 1B) demonstrate phylogenetically informed patterns of binding activity consistent with independent evolution of chemical defense. The absence of binding in non-toxic dendrobatids and other frog families (C33-C36, C93) supports the evolutionary interpretation, though more species sampling would strengthen the claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "The lack of photoprobe binding in Malagasy poison frog (M. aurantiaca) plasma suggests different molecular mechanisms for alkaloid transport. O. sylvatica appears to have a more promiscuous alkaloid-binding pocket, potentially related to the high diversity of alkaloids found in wild populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The absence of binding in M. aurantiaca (C34, C96) is clearly shown, but the inference about different mechanisms is speculative without further investigation. The claim about O. sylvatica's promiscuous binding pocket (C97) is reasonably inferred from the broader competition pattern but lacks direct quantitative comparison of binding affinities across multiple alkaloids. The connection to alkaloid diversity (C98) is correlative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C88",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "ABG may play an important transport role in poison frog physiology and chemical defense, potentially mediating bioaccumulation of dietary alkaloids to the skin by regulating pools of unbound alkaloids in plasma, similar to mammalian hormone carriers CBG and TBG.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the tissue distribution (C72, C102-C103), sequestration capability (C63-C65), and structural similarities to hormone carriers (C105-C107) support a transport function, the actual transport role (C108, C110) remains speculative without in vivo functional studies. The claim about regulating unbound alkaloid pools (C109) is inferred from in vitro data. The novelty claim (C111) is supported but the transport function requires validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C89",
+      "C114"
+    ],
+    "result": "OsABG utilizes a binding site structurally conserved in serpin family proteins but has encoded remarkable specificity for certain alkaloids through specific amino acid residues in this pocket.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The structural conservation (C48, C89) combined with mutagenesis data (C57-C60, C87) and differential binding patterns (C37, C52, C114) support both the conservation and specificity claims. The single-point mutation effects (C87) particularly support the fine-tuned specificity claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C115"
+    ],
+    "result": "The discovery of ABG as a serpin capable of binding multiple ligands enables future efforts to engineer the binding pocket for new ligands once binding specificity is fully understood.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This is a speculative claim about future applications (C115) based on the current findings. While the multi-ligand binding capability is demonstrated (C56, C70), the feasibility of engineering for new ligands is not experimentally tested and represents a research direction rather than a result.",
+    "result_type": "MINOR"
+  }
+]

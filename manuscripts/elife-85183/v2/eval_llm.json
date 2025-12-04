@@ -1,0 +1,179 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "The manuscript provides background on tRNA discovery and the established codon compensation hypothesis for phage-encoded tRNAs, which proposes that phages encode tRNAs to supplement rare host codons due to GC content differences between phage and host.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C6 are all supported by appropriate citations to prior work and represent well-established knowledge in the field. These claims accurately describe the historical context and prevailing hypothesis for phage-encoded tRNAs.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "The manuscript reviews recent evidence that phage tRNAs may counteract host tRNA depletion strategies during infection, including mechanisms involving anticodon nucleases and specific examples like PrrC/tRNA ligase and Retron Ec78, while noting that the mechanism by which phage tRNAs avoid degradation remains unclear.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C11 are supported by appropriate citations to recent literature. Claim C12 accurately identifies a knowledge gap in the field, which motivates the current study. These claims provide appropriate context for the authors' hypothesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "The authors hypothesize that phage-encoded tRNAs are insensitive to anticodon nuclease activity and select mycobacteriophage cluster C1 as a model system because these phages encode many tRNAs (33 per phage on average) and their mycobacterial hosts encode well-characterized anticodon nucleases (VapC, MazF, RelE) that target the anticodon loop and are activated during stress responses including phage infection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The hypothesis (C13) is clearly stated and the rationale for selecting the mycobacteriophage system (C14-C19) is well-justified with appropriate citations. The background on anticodon nuclease mechanisms is supported by established literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "All 10 mycobacteriophage-encoded tRNAs targeted by anticodon nucleases contain anticodon loop mutations known to affect VapC cleavage, supporting the hypothesis that phage tRNAs are insensitive to anticodon nucleases and serve to counteract host tRNA depletion during infection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C20 presents the key empirical finding (10/10 targeted tRNAs have mutations) supported by data in Figure 1C and supplementary files. Claims C21-C22 are reasonable inferences from this observation, though C22 remains a proposed mechanism requiring functional validation. The 100% concordance (10/10) is striking and supports the hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Mycobacteriophages rarely encode tRNAs that are cleaved within the anticodon itself (such as serine tRNAs targeted at the GA site and RelE targets), suggesting phages avoid these tRNAs rather than evolving resistance, and instead encode alternative tRNAs like tRNA-Ser(gct) that are not targeted by nucleases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23, C25, and C27 are supported by data in Supplementary file 1b and appropriate citations. The inference that phages avoid rather than evolve resistance to anticodon-targeted cleavage (C24) is reasonable given the observation. Claim C26 provides a logical compensatory mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Codon usage analysis shows no significant difference in codon frequency between phage genes with and without encoded tRNAs (p=0.3011), no difference between phage and host codon frequencies (p=0.999), and only 2/23 instances where preferred codons differ between phage and host, suggesting phage tRNAs were not selected for codon compensation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C30 present statistical analyses with appropriate tests (Welch's t-test, paired t-test) and non-significant p-values that support the conclusion. The inference in C31 that tRNAs were not selected for codon compensation is well-supported by this evidence and directly challenges the prevailing hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C32"
+    ],
+    "result": "The authors conclude that phage tRNAs in mycobacteria evolved to resist anticodon nucleases to overcome host tRNA-depletion defense strategies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This conclusion (C32) is well-supported by the combined evidence from claims C20-C31, including the mutation patterns, avoidance patterns, and lack of support for codon compensation. However, functional validation experiments would strengthen this evolutionary claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C56"
+    ],
+    "result": "Analysis of phage tRNAs in enterobacteria (S. flexneri, E. coli, S. enterica) shows mutations near cleavage sites in 9/11 instances, with exceptions explained by tRNA ligases (PrrC/tRNA-Lys ligase), wobble position modifications (Colicin E5), or unknown recognition sequences, demonstrating consistency with the mycobacteria findings despite limitations in knowledge of recognition sequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C33-C35 present data showing 9/11 concordance in enterobacteria, which is lower than the 10/10 in mycobacteria. The explanations for exceptions (C35-C38, C40) are partially speculative (C37, C38) or rely on prior work (C35). Claim C56 acknowledges a significant limitation: unknown recognition sequences limit the analysis to cleavage sites only. The 2/11 discrepancies and reliance on speculation for some exceptions introduce uncertainty about the generalizability of the hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "The authors propose that phage-encoded tRNAs escape host tRNAse targeting via insensitivity-causing mutations in cleavage and recognition sites, speculate this mechanism may extend beyond mycobacteria and enterobacteria given the ubiquity of viral tRNAs and host tRNAses, and suggest the hypothesis could guide selection or engineering of bacteriophages for therapeutic applications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C42 represents the main conclusion, which is reasonably supported by the mycobacteria data but less certain for enterobacteria. Claims C41 and C43 are explicitly speculative about broader applicability and future applications. Without functional validation experiments or analysis of additional bacterial systems, the generalizability remains uncertain.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "The methods describe the computational pipeline for analyzing tRNAs in mycobacteria and other bacterial species, including reference genomes, data sources, annotation tools (Aragorn v1.2.41, tRNAscan-SE v2.0), codon analysis tools (cusp EMBOSS v6.6.0.0), literature search procedures, and species selection criteria.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C52 provide methodological details with appropriate tool versions, citations, and dates. The methods are sufficiently described for the computational analyses performed, though the manuscript lacks experimental validation. The exclusion criteria (C50) are clearly stated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Figure 1 illustrates the genomic context of tRNA clusters in mycobacteriophage Rizal (36 tRNAs) and the proposed mechanism where host tRNAses deplete tRNAs during infection but phage tRNAs resist cleavage, allowing phage propagation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C55 accurately describe the content of Figure 1. The figure provides clear visual support for the proposed mechanism, though C54-C55 represent the proposed model rather than experimentally validated mechanisms.",
+    "result_type": "MINOR"
+  }
+]

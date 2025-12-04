@@ -1,0 +1,1911 @@
+{
+  "submission": {
+    "id": "00f3518f-5646-4ba7-a47a-3899994e51db",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-04T03:32:59.204790Z",
+    "updated_at": "2025-12-04T03:32:59.204790Z"
+  },
+  "content": [
+    {
+      "id": "fbe915c7-4d3f-4a8e-9ed9-bdce892f602d",
+      "submission_id": "00f3518f-5646-4ba7-a47a-3899994e51db",
+      "content_type": "manuscript",
+      "content_text": "# A modelled analysis of the impact of COVID-19-related disruptions to HPV vaccination\n\n## Authors\n\n- Louiza S Velentzis<sup>1</sup> ([ORCID: 0000-0002-9309-0492](https://orcid.org/0000-0002-9309-0492)) \u2020\n- Megan A Smith<sup>1</sup> ([ORCID: 0000-0002-0401-2653](https://orcid.org/0000-0002-0401-2653)) \u2020\n- James Killen<sup>1</sup>\n- Julia ML Brotherton<sup>2</sup>\n- Rebecca Guy<sup>4</sup>\n- Karen Canfell<sup>1</sup>\n\n### Affiliations\n\n1. Daffodil Centre, The University of Sydney, a joint venture with Cancer Council NSW Sydney Australia ([ROR:0384j8v12](https://ror.org/0384j8v12))\n2. School of Population and Global Health, University of Melbourne Victoria Australia ([ROR:01ej9dk98](https://ror.org/01ej9dk98))\n3. Australian Centre for Prevention of Cervical Cancer Victoria Australia\n4. The Kirby Institute, University of New South Wales Sydney Australia ([ROR:03r8z3t63](https://ror.org/03r8z3t63))\n\n\u2020 Corresponding author\n\n## Abstract\n\nCOVID-19 disrupted school attendance in many countries, delaying routine adolescent vaccination against human papillomavirus (HPV) in some settings. We used Policy1-Cervix, a dynamic model simulating HPV transmission, natural history, vaccination, cervical screening, and diagnosis of HPV-related cancers, to estimate the impact on HPV-related cancers from disruptions to HPV vaccination in a high-income setting. A baseline scenario of no disruption to HPV vaccination was modelled, which assumed uptake of the nonavalent vaccine at the age of 12 by 82.4% of females and 75.5% of males, as is the coverage in Australia. Additional lifetime HPV-related cancer cases were calculated for three disruption scenarios affecting one birth cohort (2008; aged 12 in 2020) compared to the baseline scenario: (1) 1-year delay (no doses missed); (2) 1- to 7-year delay (slow catch-up); (3) no catch-up (herd effects only). A fourth scenario assumed no catch-up HPV vaccination for two birth cohorts, that is all individuals born in 2008 and in 2009 missed vaccination (worst-case scenario). Compared to 1532 HPV-related cancer cases estimated for the baseline no disruption scenario, we found a 1-year delay could result in \u22640.3% more HPV-related cancers (n = 4) but the increase would be greater if catch-up was slower (5%; n = 70), and especially if there was no catch-up (49%; n = 750). Additional cancers for a single missed cohort were most commonly cervical (23% of the additional cases) and anal cancers (16%) in females and oropharyngeal cancers in males (20%). In the worst-case scenario of two birth cohorts missing vaccination, \u226462% more HPV-related cancers would be diagnosed (n = 1892). In conclusion, providing catch-up of missed HPV vaccines is conducted, short-term delays in vaccinating adolescents are unlikely to have substantial long-term effects on cancer.\n\n## Introduction\n\nAustralia was the first country to implement a fully government funded National HPV Vaccination program. Human papillomavirus (HPV) vaccination has been routinely offered through schools, to girls aged 12\u201313 years since 2007 and to boys aged 12\u201313 years since 2013. Additionally, catch-up HPV vaccination was offered to females aged 14\u201326 years in 2007\u20132009 and to males aged 14\u201315 years in 2013\u20132014. In 2018, a three-dose schedule with the quadrivalent HPV vaccine which protects against four HPV types (6, 11, 16, and 18) was replaced by a two-dose schedule with the nonavalent HPV vaccine (HPV9), protecting against an additional five oncogenic HPV types (31, 33, 45, 52, and 58). Since 2017, free catch-up of vaccinations under the Australian National Immunization Program, including the HPV vaccine, is available to all people aged under 20 years and is administered in primary care (Australian Government Department of Health and Aged Care, 2022). HPV course completion rates by age 15 were 79.8% among girls and 77.0% among boys who reached the age of 15 years in 2019 (National Centre for Immunisation Research and Surveillance Australia, 2020).\n\nFollowing the World Health Organization\u2019s declaration of the COVID-19 pandemic in March 2020, strict national- and state-level infection control measures were introduced in Australia. Social and physical restrictions affected essential health services including the delivery of school-based vaccination programmes due to school closures from imposed lockdowns in 2020 and in some states in 2021 (National Centre for Immunisation Research and Surveillance Australia, 2021a; Parliament of Victoria, 2021). Globally, the World Health Organization reported the largest continued decline in overall vaccinations in the last three decades and a loss of over a quarter of the HPV vaccine coverage achieved in 2019 (World Health Organization, 2022).\n\nInfection with oncogenic HPV types is a major causal factor for the development of cervical cancer and for a fraction of cancers of the anus, oropharynx, penis, vagina, and vulva (IARC Working Group on the Evaluation of Carcinogenic Risks to Humans, 2012). Except for cervical screening, organized screening is not generally available for any of the other HPV-related cancers. A previous analysis of the burden of HPV-related disease in Australia estimated that 80% of the estimated 1544 HPV-associated cancers in 2012 were attributable to types preventable by the quadrivalent vaccine (HPV16/18), with an additional 9% attributable to the five additional types prevented by the nonavalent vaccine (Patel et al., 2018).\n\nThe aim of this study was to estimate the additional lifetime HPV-related cancer cases in men and women that could be caused by HPV vaccination delays or missed doses due to the pandemic by using a simulation model to project the long-term outcomes from different potential disruption scenarios, using Australia as an example. The study was designed prior to the emergence of actual 2020\u20132021 vaccination disruption data, and hence, a number of potential disruption scenarios were considered to encompass a wide range of possibilities.\n\n## Results\n\nIn the baseline scenario of no interruption to HPV vaccination, we estimate 2583 HPV-related cancer cases would be prevented in the 2008 cohort due to HPV vaccination, equating to 63% of all HPV-related cases (Table 1). The first disruption scenario (1-year delay) would result in four (0.3%) additional lifetime cancer cases and slightly fewer cases prevented overall (2579). Under a slow vaccination catch-up strategy or in the worse cases \u2013 no vaccination catch-up for either one or two cohorts \u2013 an additional 70 (5%), 750 (49%), and 1892 (62%) cancer cases, respectively, were predicted to occur. Figure 1 presents the estimated lifetime HPV-related cancer cases for all scenarios for the 2008 cohort (left) and combined 2008 and 2009 cohorts (right).\n\n**Table 1.**\n Estimated number of human papillomavirus (HPV)-related cancer cases and cases prevented for vaccinated and unvaccinated cohorts, and four vaccination disruption scenarios.\n\n\n<table>\n  <thead>\n    <tr>\n      <th rowspan=\"2\">Modelled scenarios</th>\n      <th colspan=\"5\">Outcomes in 2008 birth cohort*</th>\n      <th colspan=\"5\">Outcomes in 2008 and 2009 birth cohorts\u2020</th>\n    </tr>\n    <tr>\n      <th>Total cases</th>\n      <th>Prevented cases (unvax comparator)</th>\n      <th>Additional cases (compared to no disruption)</th>\n      <th>% Prevented (unvax comparator)</th>\n      <th>% Additional(compared to no disruption)</th>\n      <th>Total cases</th>\n      <th>Prevented cases (unvax comparator)</th>\n      <th>Additional cases(compared to no disruption)</th>\n      <th>% Prevented (unvax comparator)</th>\n      <th>% Additional(compared to no disruption)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Unvaxed</td>\n      <td>3923</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td>7847</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>No disruption</td>\n      <td>1532</td>\n      <td>2583</td>\n      <td></td>\n      <td>63</td>\n      <td></td>\n      <td>3061</td>\n      <td>4876</td>\n      <td></td>\n      <td>63</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>S1: 1-year delay</td>\n      <td>1537</td>\n      <td>2579</td>\n      <td>4</td>\n      <td>63</td>\n      <td>0.3</td>\n      <td>3066</td>\n      <td>4781</td>\n      <td>5\u2021</td>\n      <td>63</td>\n      <td>0.2</td>\n    </tr>\n    <tr>\n      <td>S2: 1- to 7-year delay</td>\n      <td>1603</td>\n      <td>2513</td>\n      <td>70</td>\n      <td>61</td>\n      <td>5</td>\n      <td>3133</td>\n      <td>4714</td>\n      <td>72\u2021</td>\n      <td>62</td>\n      <td>2</td>\n    </tr>\n    <tr>\n      <td>S3: no catch-up</td>\n      <td>2282</td>\n      <td>1833</td>\n      <td>750</td>\n      <td>45</td>\n      <td>49</td>\n      <td>3846</td>\n      <td>4001</td>\n      <td>785\u2021</td>\n      <td>53</td>\n      <td>26</td>\n    </tr>\n    <tr>\n      <td>S4: no catch-up (two missed cohorts)</td>\n      <td>2503</td>\n      <td>1613</td>\n      <td>970</td>\n      <td>39</td>\n      <td>63</td>\n      <td>4954</td>\n      <td>2893</td>\n      <td>1892</td>\n      <td>40</td>\n      <td>62</td>\n    </tr>\n  </tbody>\n</table>\n\n_No disruption: uninterrupted HPV vaccination in females and males at age 12 with status quo uptake; scenario 1: disruption with rapid catch-up, 1-year delay in HPV vaccine catch-up; scenario 2: disruption with slow catch-up, 1- to 7-year delay in HPV vaccine catch-up; scenario 3: disruption with no HPV vaccine catch-up (herd effects only; 2008 cohort affected); scenario 4: disruption with no HPV vaccine catch-up (herd effects only; 2008 and 2009 cohorts affected).*Includes outcomes specifically for the cohort consisting of females and males born in 2008 (any effects on the 2009 cohort are not included).\u2020Includes outcomes specifically for the cohort consisting of females and males born in either 2008 or 2009.\u2021Differences between these additional cases compared to additional cases in the outcomes specific to the 2008 cohort (left-hand side of table) are additional cases in unvaccinated individuals in the 2009 cohort, due to a loss in the indirect protection they received from vaccination of the 2008 cohort in the No disruption scenario due to herd effects.vax: vaccine; unvaxed: unvaccinated i.e. assuming no HPV vaccination in cohort(s)._\n\n![Figure 1.](https://cdn.elifesciences.org/articles/85720/elife-85720-fig1-v1.jpg)\n\n**Figure 1.:** Scenarios include two HPV vaccination catch-up scenarios [S1: 1-year delay in vaccination (rapid); S2: 1- to 7-year delay in vaccination (slow)] and two scenarios modelling the absence of vaccination catch-up, varying in the cohort affected (S3: scenario 3 affecting the 2008 birth cohort; S4: scenario 4 affectioning the 2008 and 2009 birth cohorts).\n\nTable 2 shows a breakdown of HPV-related cancer cases developed over a lifetime by cancer type and sex for the disruption scenarios. In the worst-case scenarios of missed HPV vaccination, most of the additional cancers occurred in females, and the additional cancers were most commonly cervical and anal cancers (females) and oropharyngeal, followed by anal cancers (males). When combined across both sexes, the additional cancers were most commonly oropharyngeal (>80% of which were in males) and anal cancers (mostly in females).\n\n**Table 2.**\n Estimated number of cancer cases in modelled scenarios according to sex and cancer type.\n\n\n<table>\n  <thead>\n    <tr>\n      <th rowspan=\"2\">Modelled scenarios</th>\n      <th rowspan=\"2\">Total cases (additional compared to no disruption)</th>\n      <th colspan=\"5\">Females, N (additional compared to no disruption)</th>\n      <th colspan=\"3\">Males, N (additional compared to no disruption)</th>\n    </tr>\n    <tr>\n      <th>Anal</th>\n      <th>Cervical</th>\n      <th>Oropharyngeal</th>\n      <th>Vaginal</th>\n      <th>Vulvar</th>\n      <th>Anal</th>\n      <th>Oropharyngeal</th>\n      <th>Penile</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td colspan=\"10\">2008 cohort</td>\n    </tr>\n    <tr>\n      <td>Unvaxed</td>\n      <td>3923</td>\n      <td>489</td>\n      <td>788</td>\n      <td>185</td>\n      <td>162</td>\n      <td>729</td>\n      <td>389</td>\n      <td>911</td>\n      <td>271</td>\n    </tr>\n    <tr>\n      <td>No disruption</td>\n      <td>1532</td>\n      <td>100</td>\n      <td>62</td>\n      <td>86</td>\n      <td>61</td>\n      <td>580</td>\n      <td>74</td>\n      <td>423</td>\n      <td>146</td>\n    </tr>\n    <tr>\n      <td>Scenario 1</td>\n      <td>1537 (4)*</td>\n      <td>101 (1)</td>\n      <td>63 (1)</td>\n      <td>86</td>\n      <td>61</td>\n      <td>580</td>\n      <td>75 (1)</td>\n      <td>424 (1)</td>\n      <td>146</td>\n    </tr>\n    <tr>\n      <td>Scenario 2</td>\n      <td>1603 (70)*</td>\n      <td>114 (14)</td>\n      <td>74 (12)</td>\n      <td>90 (4)</td>\n      <td>64 (3)</td>\n      <td>586 (6)</td>\n      <td>85 (11)</td>\n      <td>440 (17)</td>\n      <td>150 (4)</td>\n    </tr>\n    <tr>\n      <td>Scenario 3</td>\n      <td>2282 (750)*</td>\n      <td>236 (136)</td>\n      <td>250 (188)</td>\n      <td>121 (35)</td>\n      <td>96 (35)</td>\n      <td>632 (52)</td>\n      <td>175 (101)</td>\n      <td>593 (170)</td>\n      <td>180 (34)</td>\n    </tr>\n    <tr>\n      <td colspan=\"10\">2008 and 2009 cohorts</td>\n    </tr>\n    <tr>\n      <td>Unvaxed</td>\n      <td>7847</td>\n      <td>978</td>\n      <td>1576</td>\n      <td>370</td>\n      <td>324</td>\n      <td>1458</td>\n      <td>778</td>\n      <td>1822</td>\n      <td>542</td>\n    </tr>\n    <tr>\n      <td>No disruption</td>\n      <td>3061</td>\n      <td>199</td>\n      <td>125</td>\n      <td>172</td>\n      <td>122</td>\n      <td>1160</td>\n      <td>148</td>\n      <td>845</td>\n      <td>292</td>\n    </tr>\n    <tr>\n      <td>Scenario 42008 cohort</td>\n      <td>2503 (971)*</td>\n      <td>276 (176)</td>\n      <td>303 (241)</td>\n      <td>131 (45)</td>\n      <td>107 (46)</td>\n      <td>647 (67)</td>\n      <td>205 (131)</td>\n      <td>644 (221)</td>\n      <td>190 (44)</td>\n    </tr>\n    <tr>\n      <td>2009 cohort</td>\n      <td>2451 (922)</td>\n      <td>268 (169)</td>\n      <td>285 (222)</td>\n      <td>129 (43)</td>\n      <td>104 (43)</td>\n      <td>644 (64)</td>\n      <td>199 (125)</td>\n      <td>634 (212)</td>\n      <td>188 (42)</td>\n    </tr>\n    <tr>\n      <td>Scenario 4 total</td>\n      <td>4954 (1892)*</td>\n      <td>544 (345)</td>\n      <td>588 (463)</td>\n      <td>260 (88)</td>\n      <td>211 (89)</td>\n      <td>1291 (131)</td>\n      <td>404 (256)</td>\n      <td>1278 (433)</td>\n      <td>378 (86)</td>\n    </tr>\n  </tbody>\n</table>\n\n_Sum of cases may not add to \u2018total cases\u2019 due to rounding.Unvaxed: assuming no HPV vaccination in cohort(s); No disruption: HPV vaccination in females and males at age 12 with coverage of 82.4% in females and 75.5% in males; scenario 1: disruption with rapid catch-up, 1-year delay; scenario 2: disruption with slow catch-up, 1- to 7-year delay; scenario 3: disruption with no catch-up (herd effects only; 2008 cohort affected); scenario 4: disruption with no catch-up (herd effects only; 2008 and 2009 cohorts affected).*The number of additional cases presented in the table does not always match the difference between case figures stated for individual scenarios in Table 2, due to rounding._\n\nIn the main analysis, we explicitly modelled primary HPV cervical screening as also occurring in these cohorts, which would allow the cervical screening programme to compensate, to some extent, for cervical cancers not prevented via HPV vaccination. In the sensitivity analysis that used an incidence-based approach, the number of additional cervical cancer cases predicted was larger and cervical cancers would have comprised around 35% of the additional HPV-related cancer cases (rather than around 17\u201325%, when screening was modelled) (Supplementary file 1D). The percentage increase in cases was similar but somewhat higher (e.g. 54% increase in cases for one missed cohort, compared to 49% increase when screening was modelled).\n\n## Discussion\n\nThis is the first study to estimate the long-term potential impact of missed HPV vaccinations across HPV-induced cancers while accounting for natural history, sexual behaviour, and herd immunity. We found that rapid catch-up of HPV vaccination in young adolescents within a year meant that even extreme disruptions where all vaccinations were delayed had a minimal long-term effect on cancer cases. A slower pace of recovery, however, or, in the worst case, missed vaccination in one or two cohorts was associated with a higher excess burden of cancers. While herd effects from vaccination still prevented close to half of HPV-related cancers, missing a single cohort entirely would result in an estimated 49% more HPV-related cancers in that cohort compared to no disruption.\n\nIn Australia, initial national figures show for adolescents aged 11 to <15 years who received their first dose in 2020, 74.7% of girls and 72.6% of boys received their second dose in the same calendar year, compared to 86.2% and 84.3%, for girls and boys, respectively, in 2019 (National Centre for Immunisation Research and Surveillance Australia, 2020). The difference in numbers suggest vaccination delays in second doses, possibly due to COVID-19 effects including school closures during lockdowns, and decreased school attendance due to infections. These data do not provide insight into the impact on first doses. In line with WHO recommendations, final coverage data are reported as those who are vaccinated by age 15, and this information is not yet available for the most affected cohorts (aged 12\u201313 in 2020 and 2021; born approximately 2007\u20132009; turning 15 in 2022\u20132024) (National Centre for Immunisation Research and Surveillance Australia, 2021b). Reports from other countries indicate that COVID-19 has delayed progress in achieving high coverage of HPV vaccination. For example, a US study found recovery after a marked decline in HPV dose administration in March to May 2020 (median 64\u201371%) was not fully achieved during June to September 2020 (Patel Murthy et al., 2021).\n\nIn November 2020, WHO released a global strategy calling for all countries to take action to achieve the elimination of cervical cancer as a public health problem within the next century (World Health Organization, 2020). In the near future most lives will be saved globally through increased uptake of cervical screening and access to cancer treatment (Canfell et al., 2020), but in the longer-term maintaining high coverage of HPV vaccination will be critical in reducing mortality and achieving global elimination (Canfell et al., 2020; Brisson et al., 2020). Globally, the timeframe to reach elimination is likely to be impacted by pandemic-induced delays in HPV vaccination delivery and also by global shortages of the HPV vaccine estimated to last until 2024 thus delaying the introduction of vaccination in low- and middle-income countries (World Health Organization (WHO), 2018). In countries predicted to achieve cervical cancer elimination in the relatively short term, such as Australia, short delays of 1 year are not predicted to delay elimination (Smith et al., 2021). There are signs, however, of a decrease in vaccine confidence in Europe around the time of the COVID-19 pandemic, with lower confidence for the HPV vaccine reported in 17 countries in 2022 compared to 2020 (de Figueiredo et al., 2022).\n\nThe strengths of this study include evaluating the impact of the COVID-19 pandemic across different HPV-related cancers, in both women and men and across a wide range of possibilities for vaccination disruption \u2013 two of which assumed a delay in HPV vaccination and two scenarios where the affected birth cohorts remained unvaccinated. Some limitations should also be noted. Even in the context of some cohorts missing vaccination entirely, herd effects still prevented a considerable proportion of HPV-related cancers overall; these effects would be smaller in settings with lower coverage (Brisson et al., 2016). This is unlikely to affect our finding that catch-up within a year minimizes the impact of disruptions, and so would likely strengthen the case for rapid catch-up in settings where herd effects are likely to be lower. The model also assumed that cervical screening would continue in birth cohorts offered HPV9, and, based on our sensitivity analysis that removed explicit modelling of screening, this prevented some cancers that would otherwise have occurred due to missed vaccination. In practice, screening may not continue in the same way in cohorts offered HPV9 as it would be much less cost-effective (Simms et al., 2016). As yet, no policy decision has been made for screening in these cohorts, however, and screening may in future be tailored based on individual vaccination status, rather than age eligibility for vaccination. The model did not incorporate any potential changes in sexual behaviour which may affect estimates.\n\nAustralia is a relatively high HPV vaccination coverage setting. Outcomes may be less favourable in a lower coverage setting, as there would be less protection from herd effects; however, the impact of disruptions might also be smaller in a setting with lower coverage, since a lower coverage programme would be less effective. Nevertheless, the finding that if catch-up is performed expeditiously then it mitigates much of the effect from vaccination delays, is likely to hold in other settings. In a previous study modelling the health impacts of HPV vaccination hesitancy in Japan from 2013 to 2019 and the potential effects of restoring coverage to 70% with catch-up vaccination in 2020 is informative as it demonstrates that multi-age HPV catch-up vaccination, such as after catastrophic falls in coverage in Japan, would be effective in mitigating the effects (Simms et al., 2020).\n\nOur findings provide evidence that rapid catch-up of missed HPV vaccine doses would minimize the long-term impact of vaccination programme disruptions, but delays would result in preventable HPV-related cancer cases in future.\n\n## Methods\n\n### Model\n\nWe used Policy1-Cervix, an established modelling platform of dynamic HPV transmission, HPV natural history, cervical screening, treatment, and cancer survival that has been validated across several settings. The dynamic HPV transmission component of Policy1-Cervix incorporates HPV vaccination and was used to estimate HPV incidence by age under scenarios of disruption to vaccination coverage, compared to a no disruption scenario. The number of lifetime cervical cancer cases was subsequently estimated for the cohorts affected after explicitly modelling cervical screening (5-yearly HPV screening starting from age 25) (Smith et al., 2021) to take into account that cervical screening may prevent some cancers that would otherwise have been prevented by vaccination. In addition, HPV incidence estimated by the dynamic HPV transmission model was used in a separate incidence-based model to project the lifetime number of non-cervical HPV-related cancers in both sexes (i.e. anal, oropharyngeal, penile, vaginal, and vulvar), as previously described (Kim et al., 2021). Data included age- and sex-specific incidence of each cancer and proportion of cases attributable to vaccine-targeted HPV types (Supplementary file 1A-C). In a sensitivity analysis, we also used an analogous incidence-based approach to also estimate the impact on cervical cancer, rather than explicitly allowing screening to prevent some of the cervical cancers which would arise due to missed vaccination. Further information on the Policy1-Cervix model can be found at https://www.policy1.org/models/cervix/documentation.\n\n### Scenarios\n\nA baseline scenario of uninterrupted HPV vaccination (status quo) assumed a two-dose uptake of HPV9 at age 12 of 82.4% among females and 75.5% among males. Three disruption scenarios were modelled affecting females and males born in 2008 cohort who were aged 12 in 2020 (322,115 people). Scenario 1 assumed a fast catch-up where vaccination was delayed by one year (but no doses were entirely missed); scenario 2 assumed a slow catch-up where vaccination was delayed between 1 and 7 years with an equal proportion being caught up each year; and scenario 3 assumed there was no catch-up, and therefore any protection in the cohort would be due to herd effects only. A fourth scenario was also conducted which assumed individuals born in 2008 and in 2009 (644,230 people), missed HPV vaccination at age 12, with no catch-up.\n\nFor each scenario, we estimated the number of HPV-associated cancer cases (from age 12 to 84 years) prevented by vaccination compared to an unvaccinated comparator cohort, and the additional number of cases under each disruption scenario compared to the no disruption scenario.\n",
+      "created_at": "2025-12-04T03:32:59.204790Z"
+    },
+    {
+      "id": "e5b4f0ec-4a7b-49e0-90b3-174ed073ff47",
+      "submission_id": "00f3518f-5646-4ba7-a47a-3899994e51db",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Jos W van der Meer, https://ror.org/05wg1m734 Radboud University Medical Centre Netherlands\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.85720.sa0](https://doi.org/10.7554/eLife.85720.sa0)\n\nThe study presents important findings for public health authorities and policymakers to enable them to make evidence-based decisions when deciding on how to manage the effect of HPV vaccination disruptions. This study is particularly relevant in light of the efforts of the WHO to achieve global elimination of cervical cancers. The findings are convincing and the model used is appropriate.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Jos W van der Meer, https://ror.org/05wg1m734 Radboud University Medical Centre Netherlands\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.85720.sa1](https://doi.org/10.7554/eLife.85720.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"The impact of COVID-19-related disruptions to HPV vaccination \u2013 a modelled analysis\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Diane Harper as the Senior Editor. The following individuals involved in the review of your submission have agreed to reveal their identity: Aura Timmen (Reviewer #1), Rebecca Luckett (Reviewer #2).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1. The abstract is difficult to follow. State more clearly what \"natural history / vaccination / screening / HPV-related cancers\" means in association with the model rather than putting it in parentheses. Similarly in the 3rd sentence, clarify what the \"no disruption\" scenario is as its own sentence, then explain what you are comparing it to. It may also help to have the 'n' of the background number of HPV-related cancers since n's are given later on for each scenario to give context to this finding. In the sentence starting with \"additional\". It is not clear what (males: 20%) and (females: 16%) mean after the two types of cancers from the abstract alone. These should either be explained or taken out. Finally, the difference between the fourth scenario and the \"worst case scenario\" is confusing.\n\n2. In the first introductory paragraph, please explain the content in parentheses to improve clarity.\n\n3. Methods: just as in the abstract, please clarify the fourth scenario and the difference in outcomes in the 2008 vs 2008-2009 affected cohorts.\n\n4. Results section: Given there are multiple scenarios given, in the opening Results section, please add \"in the baseline scenario of no interruption of HPV vaccination\u2026\" or something similar to set the stage very clearly.\n\n5. There is space to expand on the results presented in Table 1, including an explanation of Affected cohorts 2008 vs Affected cohorts 2008-2009. It may also be useful to explain this analysis in the methods section.\n\nReviewer #1 (Recommendations for the authors):\n\nSome considerations regarding how public debates about COVID-19 vaccination might have impacted the uptake of the HPV-vaccine might enrich the discussion.\n\nReviewer #2 (Recommendations for the authors):\n\n\u2013 If 2020-2021 vaccination data is now available, could this be mentioned in the discussion (it is alluded to in the introduction).\n\n\u2013 The abstract is difficult to follow. State more clearly what \"natural history / vaccination / screening / HPV-related cancers\" means in association with the model rather than putting it in parentheses. Similarly in the 3rd sentence, clarify what the \"no disruption\" scenario is as its own sentence, then explain what you are comparing it to. It may also help to have the 'n' of the background number of HPV-related cancers since n's are given later on for each scenario to give context to this finding. In the sentence starting with \"additional\". It is not clear what (males: 20%) and (females: 16%) mean after the two types of cancers from the abstract alone. These should either be explained or taken out. Finally, the difference between the fourth scenario and the \"worst case scenario\" is confusing.\n\n\u2013 In the first introductory paragraph, I would recommend explaining the content in parentheses to improve clarity.\n\n\u2013 Methods: just the same comment as in the abstract to clarify the fourth scenario and the difference in outcomes in the 2008 vs 2008-2009 affected cohorts.\n\n\u2013 Results section: Given there are multiple scenarios given, in the opening Results section, I would suggest adding \"in the baseline scenario of no interruption of HPV vaccination\u2026\" or something similar to set the stage very clearly.\n\n\u2013 There is space to expand on the results presented in Table 1, including an explanation of Affected cohorts 2008 vs Affected cohorts 2008-2009. It may also be useful to explain this analysis in the methods section.\n\n\u2013 Given that Australia is a best-case scenario and other countries have not had the same success in HPV vaccination coverage, in the discussion would it be possible to give a comparison of how these three scenarios would look different in a population with school-based vaccination but lower coverage volume such that readers could understand how much of the success / failures of each of the three catch-up scenarios? It would be particularly helpful for readers who are not familiar with the modeling tool used in this analysis.\n",
+      "created_at": "2025-12-04T03:32:59.204790Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T03:32:59.204790Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T03:32:59.204790Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "b3be27a6-5a96-4edf-9385-57683c526220",
+      "content_id": "fbe915c7-4d3f-4a8e-9ed9-bdce892f602d",
+      "claim_id": "C1",
+      "claim": "COVID-19 disrupted school attendance in many countries, delaying routine adolescent vaccination against human papillomavirus (HPV) in some settings.",
+      "claim_type": "EXPLICIT",
+      "source": "COVID-19 disrupted school attendance in many countries, delaying routine adolescent vaccination against human papillomavirus (HPV) in some settings.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as a factual assertion about the impact of COVID-19 on vaccination programs.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:32:59.204790Z"
+    },
+    {
+      "id": "ed3d481a-8572-42e9-b75b-2d3f4ffea93e",
+      "content_id": "fbe915c7-4d3f-4a8e-9ed9-bdce892f602d",
+      "claim_id": "C2",
+      "claim": "In the baseline scenario of no disruption to HPV vaccination, uptake of the nonavalent vaccine at the age of 12 was 82.4% of females and 75.5% of males in Australia.",
+      "claim_type": "EXPLICIT",
+      "source": "A baseline scenario of no disruption to HPV vaccination was modelled, which assumed uptake of the nonavalent vaccine at the age of 12 by 82.4% of females and 75.5% of males, as is the coverage in Australia.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as the baseline assumption for the model, representing actual coverage in Australia.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:32:59.204790Z"
+    },
+    {
+      "id": "2eadd1df-7976-41b2-87fe-2ee25aa75bf4",
+      "content_id": "fbe915c7-4d3f-4a8e-9ed9-bdce892f602d",
+      "claim_id": "C3",
+      "claim": "Compared to the baseline no disruption scenario, 1532 HPV-related cancer cases were estimated.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to 1532 HPV-related cancer cases estimated for the baseline no disruption scenario",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct result from the model simulation presented in the abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:32:59.204790Z"
+    },
+    {
+      "id": "565bd379-3529-4cbc-b42d-f22cb3361e26",
+      "content_id": "fbe915c7-4d3f-4a8e-9ed9-bdce892f602d",
+      "claim_id": "C4",
+      "claim": "A 1-year delay in HPV vaccination could result in \u22640.3% more HPV-related cancers (n = 4).",
+      "claim_type": "EXPLICIT",
+      "source": "we found a 1-year delay could result in \u22640.3% more HPV-related cancers (n = 4)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct finding from the model simulation comparing disruption scenario 1 to baseline.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:32:59.204790Z"
+    },
+    {
+      "id": "b29efd5d-d402-489c-b468-1066d4533bc1",
+      "content_id": "fbe915c7-4d3f-4a8e-9ed9-bdce892f602d",
+      "claim_id": "C5",
+      "claim": "A slow catch-up of HPV vaccination (1-7 year delay) would result in a 5% increase in HPV-related cancers (n = 70).",
+      "claim_type": "EXPLICIT",
+      "source": "but the increase would be greater if catch-up was slower (5%; n = 70)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct finding from the model simulation for scenario 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:32:59.204790Z"
+    },
+    {
+      "id": "b958cfce-c714-405e-9ef2-e0679c446939",
+      "content_id": "fbe915c7-4d3f-4a8e-9ed9-bdce892f602d",
+      "claim_id": "C6",
+      "claim": "No catch-up of HPV vaccination would result in a 49% increase in HPV-related cancers (n = 750) for a single missed cohort.",
+      "claim_type": "EXPLICIT",
+      "source": "and especially if there was no catch-up (49%; n = 750)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct finding from the model simulation for scenario 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:32:59.204790Z"
+    },
+    {
+      "id": "ddec3178-2aa9-4929-83b7-76823d4eb03a",
+      "content_id": "fbe915c7-4d3f-4a8e-9ed9-bdce892f602d",
+      "claim_id": "C7",
+      "claim": "For a single missed cohort, additional cancers were most commonly cervical (23% of the additional cases) and anal cancers (16%) in females.",
+      "claim_type": "EXPLICIT",
+      "source": "Additional cancers for a single missed cohort were most commonly cervical (23% of the additional cases) and anal cancers (16%) in females",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a breakdown of the model results by cancer type and sex.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:32:59.204790Z"
+    },
+    {
+      "id": "bf5191c4-122b-4d48-a744-4cc73f9d70ca",
+      "content_id": "fbe915c7-4d3f-4a8e-9ed9-bdce892f602d",
+      "claim_id": "C8",
+      "claim": "For a single missed cohort, additional cancers in males were most commonly oropharyngeal cancers (20%).",
+      "claim_type": "EXPLICIT",
+      "source": "and oropharyngeal cancers in males (20%)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a breakdown of the model results by cancer type and sex.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:32:59.204790Z"
+    },
+    {
+      "id": "d16bd35d-1e96-41c4-a451-7cb6c64031bd",
+      "content_id": "fbe915c7-4d3f-4a8e-9ed9-bdce892f602d",
+      "claim_id": "C9",
+      "claim": "In the worst-case scenario of two birth cohorts missing vaccination, \u226462% more HPV-related cancers would be diagnosed (n = 1892).",
+      "claim_type": "EXPLICIT",
+      "source": "In the worst-case scenario of two birth cohorts missing vaccination, \u226462% more HPV-related cancers would be diagnosed (n = 1892).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct finding from the model simulation for scenario 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:32:59.204790Z"
+    },
+    {
+      "id": "b53e5528-21ae-49dc-9ccd-935a15cb98e7",
+      "content_id": "fbe915c7-4d3f-4a8e-9ed9-bdce892f602d",
+      "claim_id": "C10",
+      "claim": "Providing catch-up of missed HPV vaccines is conducted, short-term delays in vaccinating adolescents are unlikely to have substantial long-term effects on cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "In conclusion, providing catch-up of missed HPV vaccines is conducted, short-term delays in vaccinating adolescents are unlikely to have substantial long-term effects on cancer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion drawn from the model results comparing different catch-up scenarios.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:32:59.204790Z"
+    },
+    {
+      "id": "444ecf06-9fc5-4c0e-978a-a74e74462831",
+      "content_id": "fbe915c7-4d3f-4a8e-9ed9-bdce892f602d",
+      "claim_id": "C11",
+      "claim": "Australia was the first country to implement a fully government funded National HPV Vaccination program.",
+      "claim_type": "EXPLICIT",
+      "source": "Australia was the first country to implement a fully government funded National HPV Vaccination program.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a historical fact about Australia's HPV vaccination program.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:32:59.204790Z"
+    },
+    {
+      "id": "61bd83c7-09e5-4ce9-8040-50708089cf34",
+      "content_id": "fbe915c7-4d3f-4a8e-9ed9-bdce892f602d",
+      "claim_id": "C12",
+      "claim": "HPV vaccination has been routinely offered through schools to girls aged 12\u201313 years since 2007 in Australia.",
+      "claim_type": "EXPLICIT",
+      "source": "Human papillomavirus (HPV) vaccination has been routinely offered through schools, to girls aged 12\u201313 years since 2007",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a historical fact about Australia's HPV vaccination program.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:32:59.204790Z"
+    },
+    {
+      "id": "af54aa93-36a1-41ca-862f-db7b6898a8c9",
+      "content_id": "fbe915c7-4d3f-4a8e-9ed9-bdce892f602d",
+      "claim_id": "C13",
+      "claim": "HPV vaccination has been routinely offered through schools to boys aged 12\u201313 years since 2013 in Australia.",
+      "claim_type": "EXPLICIT",
+      "source": "and to boys aged 12\u201313 years since 2013",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a historical fact about Australia's HPV vaccination program.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:32:59.204790Z"
+    },
+    {
+      "id": "43760da9-e3f4-42d8-99c9-f24f226f1b68",
+      "content_id": "fbe915c7-4d3f-4a8e-9ed9-bdce892f602d",
+      "claim_id": "C14",
+      "claim": "Catch-up HPV vaccination was offered to females aged 14\u201326 years in 2007\u20132009 in Australia.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, catch-up HPV vaccination was offered to females aged 14\u201326 years in 2007\u20132009",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a historical fact about Australia's HPV vaccination program.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:32:59.204790Z"
+    },
+    {
+      "id": "f84942d8-346f-42db-8078-def7a53bfc4e",
+      "content_id": "fbe915c7-4d3f-4a8e-9ed9-bdce892f602d",
+      "claim_id": "C15",
+      "claim": "Catch-up HPV vaccination was offered to males aged 14\u201315 years in 2013\u20132014 in Australia.",
+      "claim_type": "EXPLICIT",
+      "source": "and to males aged 14\u201315 years in 2013\u20132014",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a historical fact about Australia's HPV vaccination program.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:32:59.204790Z"
+    },
+    {
+      "id": "04f772a6-0781-45f9-9e66-7cf691d33c5a",
+      "content_id": "fbe915c7-4d3f-4a8e-9ed9-bdce892f602d",
+      "claim_id": "C16",
+      "claim": "In 2018, a three-dose schedule with the quadrivalent HPV vaccine was replaced by a two-dose schedule with the nonavalent HPV vaccine (HPV9) in Australia.",
+      "claim_type": "EXPLICIT",
+      "source": "In 2018, a three-dose schedule with the quadrivalent HPV vaccine which protects against four HPV types (6, 11, 16, and 18) was replaced by a two-dose schedule with the nonavalent HPV vaccine (HPV9), protecting against an additional five oncogenic HPV types (31, 33, 45, 52, and 58).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a historical fact about changes to Australia's HPV vaccination program.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:32:59.204790Z"
+    },
+    {
+      "id": "4e6fdc57-446a-4cf1-a433-1d46952376fb",
+      "content_id": "fbe915c7-4d3f-4a8e-9ed9-bdce892f602d",
+      "claim_id": "C17",
+      "claim": "The quadrivalent HPV vaccine protects against four HPV types (6, 11, 16, and 18).",
+      "claim_type": "EXPLICIT",
+      "source": "the quadrivalent HPV vaccine which protects against four HPV types (6, 11, 16, and 18)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about the quadrivalent HPV vaccine.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:32:59.204790Z"
+    },
+    {
+      "id": "ace96c36-2c91-43e9-812e-57d74a8059ea",
+      "content_id": "fbe915c7-4d3f-4a8e-9ed9-bdce892f602d",
+      "claim_id": "C18",
+      "claim": "The nonavalent HPV vaccine protects against an additional five oncogenic HPV types (31, 33, 45, 52, and 58) beyond those covered by the quadrivalent vaccine.",
+      "claim_type": "EXPLICIT",
+      "source": "protecting against an additional five oncogenic HPV types (31, 33, 45, 52, and 58)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about the nonavalent HPV vaccine.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:32:59.204790Z"
+    },
+    {
+      "id": "029da00f-d4af-42b8-9c8f-e53c964c1f52",
+      "content_id": "fbe915c7-4d3f-4a8e-9ed9-bdce892f602d",
+      "claim_id": "C19",
+      "claim": "Since 2017, free catch-up of vaccinations under the Australian National Immunization Program, including the HPV vaccine, is available to all people aged under 20 years and is administered in primary care.",
+      "claim_type": "EXPLICIT",
+      "source": "Since 2017, free catch-up of vaccinations under the Australian National Immunization Program, including the HPV vaccine, is available to all people aged under 20 years and is administered in primary care (Australian Government Department of Health and Aged Care, 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a fact about Australia's vaccination policy, supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:32:59.204790Z"
+    },
+    {
+      "id": "b6a0cfc7-f26e-471a-809f-1a517b8e175f",
+      "content_id": "fbe915c7-4d3f-4a8e-9ed9-bdce892f602d",
+      "claim_id": "C20",
+      "claim": "HPV course completion rates by age 15 were 79.8% among girls and 77.0% among boys who reached the age of 15 years in 2019.",
+      "claim_type": "EXPLICIT",
+      "source": "HPV course completion rates by age 15 were 79.8% among girls and 77.0% among boys who reached the age of 15 years in 2019 (National Centre for Immunisation Research and Surveillance Australia, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as data from Australia's vaccination surveillance, supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:32:59.204790Z"
+    },
+    {
+      "id": "9da13bba-0aab-4f25-b80a-f81b3d2f47be",
+      "content_id": "fbe915c7-4d3f-4a8e-9ed9-bdce892f602d",
+      "claim_id": "C21",
+      "claim": "The World Health Organization declared the COVID-19 pandemic in March 2020.",
+      "claim_type": "EXPLICIT",
+      "source": "Following the World Health Organization's declaration of the COVID-19 pandemic in March 2020",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a historical fact about the WHO's pandemic declaration.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:32:59.204790Z"
+    },
+    {
+      "id": "1339d110-5d88-4f6f-984c-82267f6b75ad",
+      "content_id": "fbe915c7-4d3f-4a8e-9ed9-bdce892f602d",
+      "claim_id": "C22",
+      "claim": "Strict national- and state-level infection control measures were introduced in Australia following the WHO's declaration of the COVID-19 pandemic.",
+      "claim_type": "EXPLICIT",
+      "source": "Following the World Health Organization's declaration of the COVID-19 pandemic in March 2020, strict national- and state-level infection control measures were introduced in Australia.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a fact about Australia's response to the pandemic.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:32:59.204790Z"
+    },
+    {
+      "id": "43872a8a-9459-4ce2-b280-4c30f4a59c95",
+      "content_id": "fbe915c7-4d3f-4a8e-9ed9-bdce892f602d",
+      "claim_id": "C23",
+      "claim": "Social and physical restrictions affected essential health services including the delivery of school-based vaccination programmes due to school closures from imposed lockdowns in 2020 and in some states in 2021.",
+      "claim_type": "EXPLICIT",
+      "source": "Social and physical restrictions affected essential health services including the delivery of school-based vaccination programmes due to school closures from imposed lockdowns in 2020 and in some states in 2021 (National Centre for Immunisation Research and Surveillance Australia, 2021a; Parliament of Victoria, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a fact about the impact of COVID-19 restrictions, supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:32:59.204790Z"
+    },
+    {
+      "id": "e0d0effa-d3a4-42d6-880a-0ef6437c4897",
+      "content_id": "fbe915c7-4d3f-4a8e-9ed9-bdce892f602d",
+      "claim_id": "C24",
+      "claim": "The World Health Organization reported the largest continued decline in overall vaccinations in the last three decades.",
+      "claim_type": "EXPLICIT",
+      "source": "Globally, the World Health Organization reported the largest continued decline in overall vaccinations in the last three decades",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a fact from WHO reporting, with a citation provided.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:32:59.204790Z"
+    },
+    {
+      "id": "53c8aeb9-632e-4ef9-84a5-285bd4a7b521",
+      "content_id": "fbe915c7-4d3f-4a8e-9ed9-bdce892f602d",
+      "claim_id": "C25",
+      "claim": "There was a loss of over a quarter of the HPV vaccine coverage achieved in 2019 globally.",
+      "claim_type": "EXPLICIT",
+      "source": "and a loss of over a quarter of the HPV vaccine coverage achieved in 2019 (World Health Organization, 2022)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a fact from WHO reporting, with a citation provided.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:32:59.204790Z"
+    },
+    {
+      "id": "d58631c9-3728-4e35-9bdd-82e4e922c6f7",
+      "content_id": "fbe915c7-4d3f-4a8e-9ed9-bdce892f602d",
+      "claim_id": "C26",
+      "claim": "Infection with oncogenic HPV types is a major causal factor for the development of cervical cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "Infection with oncogenic HPV types is a major causal factor for the development of cervical cancer and for a fraction of cancers of the anus, oropharynx, penis, vagina, and vulva (IARC Working Group on the Evaluation of Carcinogenic Risks to Humans, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established scientific knowledge, supported by a citation to IARC.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:32:59.204790Z"
+    },
+    {
+      "id": "cb3cb455-a284-42ff-8758-a3148fb567d2",
+      "content_id": "fbe915c7-4d3f-4a8e-9ed9-bdce892f602d",
+      "claim_id": "C27",
+      "claim": "Infection with oncogenic HPV types is a major causal factor for a fraction of cancers of the anus, oropharynx, penis, vagina, and vulva.",
+      "claim_type": "EXPLICIT",
+      "source": "Infection with oncogenic HPV types is a major causal factor for the development of cervical cancer and for a fraction of cancers of the anus, oropharynx, penis, vagina, and vulva (IARC Working Group on the Evaluation of Carcinogenic Risks to Humans, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established scientific knowledge, supported by a citation to IARC.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:32:59.204790Z"
+    },
+    {
+      "id": "6a2dba46-b824-412c-bacd-e4ec59348fb5",
+      "content_id": "fbe915c7-4d3f-4a8e-9ed9-bdce892f602d",
+      "claim_id": "C28",
+      "claim": "Except for cervical screening, organized screening is not generally available for any of the other HPV-related cancers.",
+      "claim_type": "EXPLICIT",
+      "source": "Except for cervical screening, organized screening is not generally available for any of the other HPV-related cancers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a fact about current screening practices.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:32:59.204790Z"
+    },
+    {
+      "id": "02788e9e-19e7-4fce-94b0-7cdc62cd37e6",
+      "content_id": "fbe915c7-4d3f-4a8e-9ed9-bdce892f602d",
+      "claim_id": "C29",
+      "claim": "80% of the estimated 1544 HPV-associated cancers in Australia in 2012 were attributable to types preventable by the quadrivalent vaccine (HPV16/18).",
+      "claim_type": "EXPLICIT",
+      "source": "A previous analysis of the burden of HPV-related disease in Australia estimated that 80% of the estimated 1544 HPV-associated cancers in 2012 were attributable to types preventable by the quadrivalent vaccine (HPV16/18), with an additional 9% attributable to the five additional types prevented by the nonavalent vaccine (Patel et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from a previous study, supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:32:59.204790Z"
+    },
+    {
+      "id": "e763ad86-4a44-45a1-ad02-1b12c29892a4",
+      "content_id": "fbe915c7-4d3f-4a8e-9ed9-bdce892f602d",
+      "claim_id": "C30",
+      "claim": "An additional 9% of HPV-associated cancers in Australia in 2012 were attributable to the five additional types prevented by the nonavalent vaccine.",
+      "claim_type": "EXPLICIT",
+      "source": "A previous analysis of the burden of HPV-related disease in Australia estimated that 80% of the estimated 1544 HPV-associated cancers in 2012 were attributable to types preventable by the quadrivalent vaccine (HPV16/18), with an additional 9% attributable to the five additional types prevented by the nonavalent vaccine (Patel et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from a previous study, supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:32:59.204790Z"
+    },
+    {
+      "id": "1ea9b830-1e1a-4d1d-87e1-28bf6ab476f6",
+      "content_id": "fbe915c7-4d3f-4a8e-9ed9-bdce892f602d",
+      "claim_id": "C31",
+      "claim": "In the baseline scenario of no interruption to HPV vaccination, 2583 HPV-related cancer cases would be prevented in the 2008 cohort due to HPV vaccination.",
+      "claim_type": "EXPLICIT",
+      "source": "In the baseline scenario of no interruption to HPV vaccination, we estimate 2583 HPV-related cancer cases would be prevented in the 2008 cohort due to HPV vaccination",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct result from the model simulation presented in the Results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:32:59.204790Z"
+    },
+    {
+      "id": "55c75c3e-5ed4-44d5-98e2-84d50fc62292",
+      "content_id": "fbe915c7-4d3f-4a8e-9ed9-bdce892f602d",
+      "claim_id": "C32",
+      "claim": "HPV vaccination prevents 63% of all HPV-related cases in the 2008 cohort in the baseline scenario.",
+      "claim_type": "EXPLICIT",
+      "source": "equating to 63% of all HPV-related cases (Table 1)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct result from the model simulation presented in the Results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:32:59.204790Z"
+    },
+    {
+      "id": "007cf0be-c732-4fbd-b126-7ebfc3cc92b0",
+      "content_id": "fbe915c7-4d3f-4a8e-9ed9-bdce892f602d",
+      "claim_id": "C33",
+      "claim": "The first disruption scenario (1-year delay) would result in four (0.3%) additional lifetime cancer cases.",
+      "claim_type": "EXPLICIT",
+      "source": "The first disruption scenario (1-year delay) would result in four (0.3%) additional lifetime cancer cases",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct result from the model simulation presented in the Results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:32:59.204790Z"
+    },
+    {
+      "id": "f8f1bb25-6596-4309-a8fd-d62662831457",
+      "content_id": "fbe915c7-4d3f-4a8e-9ed9-bdce892f602d",
+      "claim_id": "C34",
+      "claim": "Under a slow vaccination catch-up strategy, an additional 70 (5%) cancer cases were predicted to occur.",
+      "claim_type": "EXPLICIT",
+      "source": "Under a slow vaccination catch-up strategy or in the worse cases \u2013 no vaccination catch-up for either one or two cohorts \u2013 an additional 70 (5%)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct result from the model simulation presented in the Results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:32:59.204790Z"
+    },
+    {
+      "id": "d187e491-df4a-416c-9369-04f2a7fdf5e1",
+      "content_id": "fbe915c7-4d3f-4a8e-9ed9-bdce892f602d",
+      "claim_id": "C35",
+      "claim": "With no vaccination catch-up for one cohort, an additional 750 (49%) cancer cases were predicted to occur.",
+      "claim_type": "EXPLICIT",
+      "source": "750 (49%)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct result from the model simulation presented in the Results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:32:59.204790Z"
+    },
+    {
+      "id": "d914c068-69f0-4bca-8855-93d232d5c779",
+      "content_id": "fbe915c7-4d3f-4a8e-9ed9-bdce892f602d",
+      "claim_id": "C36",
+      "claim": "With no vaccination catch-up for two cohorts, an additional 1892 (62%) cancer cases were predicted to occur.",
+      "claim_type": "EXPLICIT",
+      "source": "and 1892 (62%) cancer cases, respectively, were predicted to occur",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct result from the model simulation presented in the Results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:32:59.204790Z"
+    },
+    {
+      "id": "b344e5bc-cbed-44c3-a896-c5f5daadb12f",
+      "content_id": "fbe915c7-4d3f-4a8e-9ed9-bdce892f602d",
+      "claim_id": "C37",
+      "claim": "In the worst-case scenarios of missed HPV vaccination, most of the additional cancers occurred in females.",
+      "claim_type": "EXPLICIT",
+      "source": "In the worst-case scenarios of missed HPV vaccination, most of the additional cancers occurred in females",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from the model results breakdown by sex.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:32:59.204790Z"
+    },
+    {
+      "id": "1594b3fc-dc53-4d10-ab06-3f0e2419cafe",
+      "content_id": "fbe915c7-4d3f-4a8e-9ed9-bdce892f602d",
+      "claim_id": "C38",
+      "claim": "In the worst-case scenarios, the additional cancers were most commonly cervical and anal cancers in females.",
+      "claim_type": "EXPLICIT",
+      "source": "and the additional cancers were most commonly cervical and anal cancers (females)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from the model results breakdown by cancer type and sex.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:32:59.204790Z"
+    },
+    {
+      "id": "2b168b93-fd52-46f6-92b8-0b064b13f6f5",
+      "content_id": "fbe915c7-4d3f-4a8e-9ed9-bdce892f602d",
+      "claim_id": "C39",
+      "claim": "In the worst-case scenarios, the additional cancers in males were most commonly oropharyngeal, followed by anal cancers.",
+      "claim_type": "EXPLICIT",
+      "source": "and oropharyngeal, followed by anal cancers (males)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from the model results breakdown by cancer type and sex.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:32:59.204790Z"
+    },
+    {
+      "id": "2c23eb23-cf98-49ec-a5b9-71e1cc92bcc4",
+      "content_id": "fbe915c7-4d3f-4a8e-9ed9-bdce892f602d",
+      "claim_id": "C40",
+      "claim": "When combined across both sexes, the additional cancers were most commonly oropharyngeal (>80% of which were in males) and anal cancers (mostly in females).",
+      "claim_type": "EXPLICIT",
+      "source": "When combined across both sexes, the additional cancers were most commonly oropharyngeal (>80% of which were in males) and anal cancers (mostly in females).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from the model results breakdown by cancer type and sex.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:32:59.204790Z"
+    },
+    {
+      "id": "b9b8aa6a-e17b-43eb-9c93-538d8170f006",
+      "content_id": "fbe915c7-4d3f-4a8e-9ed9-bdce892f602d",
+      "claim_id": "C41",
+      "claim": "In the main analysis, primary HPV cervical screening was explicitly modelled as occurring in these cohorts.",
+      "claim_type": "EXPLICIT",
+      "source": "In the main analysis, we explicitly modelled primary HPV cervical screening as also occurring in these cohorts",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a methodological choice in the main analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:32:59.204790Z"
+    },
+    {
+      "id": "f1b8d8f0-fa9b-4f6b-9305-6277f100e17f",
+      "content_id": "fbe915c7-4d3f-4a8e-9ed9-bdce892f602d",
+      "claim_id": "C42",
+      "claim": "Cervical screening would allow the cervical screening programme to compensate, to some extent, for cervical cancers not prevented via HPV vaccination.",
+      "claim_type": "EXPLICIT",
+      "source": "which would allow the cervical screening programme to compensate, to some extent, for cervical cancers not prevented via HPV vaccination",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an inference about the effect of including screening in the model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:32:59.204790Z"
+    },
+    {
+      "id": "0828f0f5-0957-4cd4-bef5-3d318052f04e",
+      "content_id": "fbe915c7-4d3f-4a8e-9ed9-bdce892f602d",
+      "claim_id": "C43",
+      "claim": "In the sensitivity analysis that used an incidence-based approach, the number of additional cervical cancer cases predicted was larger.",
+      "claim_type": "EXPLICIT",
+      "source": "In the sensitivity analysis that used an incidence-based approach, the number of additional cervical cancer cases predicted was larger",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from the sensitivity analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:32:59.204790Z"
+    },
+    {
+      "id": "63a2be6d-62d4-4b7d-95df-618a6af1bbf4",
+      "content_id": "fbe915c7-4d3f-4a8e-9ed9-bdce892f602d",
+      "claim_id": "C44",
+      "claim": "In the sensitivity analysis, cervical cancers would have comprised around 35% of the additional HPV-related cancer cases (rather than around 17\u201325%, when screening was modelled).",
+      "claim_type": "EXPLICIT",
+      "source": "and cervical cancers would have comprised around 35% of the additional HPV-related cancer cases (rather than around 17\u201325%, when screening was modelled) (Supplementary file 1D)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from the sensitivity analysis comparing different modeling approaches.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:32:59.204790Z"
+    },
+    {
+      "id": "df4dbd9a-3110-4007-9432-eaed6d23cc3e",
+      "content_id": "fbe915c7-4d3f-4a8e-9ed9-bdce892f602d",
+      "claim_id": "C45",
+      "claim": "In the sensitivity analysis, the percentage increase in cases was similar but somewhat higher (e.g. 54% increase in cases for one missed cohort, compared to 49% increase when screening was modelled).",
+      "claim_type": "EXPLICIT",
+      "source": "The percentage increase in cases was similar but somewhat higher (e.g. 54% increase in cases for one missed cohort, compared to 49% increase when screening was modelled).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from the sensitivity analysis comparing different modeling approaches.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:32:59.204790Z"
+    },
+    {
+      "id": "b2a2af52-88c2-4669-9272-63d15ca633da",
+      "content_id": "fbe915c7-4d3f-4a8e-9ed9-bdce892f602d",
+      "claim_id": "C46",
+      "claim": "This is the first study to estimate the long-term potential impact of missed HPV vaccinations across HPV-induced cancers while accounting for natural history, sexual behaviour, and herd immunity.",
+      "claim_type": "EXPLICIT",
+      "source": "This is the first study to estimate the long-term potential impact of missed HPV vaccinations across HPV-induced cancers while accounting for natural history, sexual behaviour, and herd immunity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a claim about the novelty of the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:32:59.204790Z"
+    },
+    {
+      "id": "711f05df-64df-4f37-9a54-a10f5a6db924",
+      "content_id": "fbe915c7-4d3f-4a8e-9ed9-bdce892f602d",
+      "claim_id": "C47",
+      "claim": "Rapid catch-up of HPV vaccination in young adolescents within a year meant that even extreme disruptions where all vaccinations were delayed had a minimal long-term effect on cancer cases.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that rapid catch-up of HPV vaccination in young adolescents within a year meant that even extreme disruptions where all vaccinations were delayed had a minimal long-term effect on cancer cases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a main finding from the model results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:32:59.204790Z"
+    },
+    {
+      "id": "7b6151af-db99-4be9-871a-bde77ef1c145",
+      "content_id": "fbe915c7-4d3f-4a8e-9ed9-bdce892f602d",
+      "claim_id": "C48",
+      "claim": "A slower pace of recovery of HPV vaccination was associated with a higher excess burden of cancers.",
+      "claim_type": "EXPLICIT",
+      "source": "A slower pace of recovery, however, or, in the worst case, missed vaccination in one or two cohorts was associated with a higher excess burden of cancers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a main finding from the model results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:32:59.204790Z"
+    },
+    {
+      "id": "688eb6b3-8396-4b29-a563-5857cdc27574",
+      "content_id": "fbe915c7-4d3f-4a8e-9ed9-bdce892f602d",
+      "claim_id": "C49",
+      "claim": "While herd effects from vaccination still prevented close to half of HPV-related cancers, missing a single cohort entirely would result in an estimated 49% more HPV-related cancers in that cohort compared to no disruption.",
+      "claim_type": "EXPLICIT",
+      "source": "While herd effects from vaccination still prevented close to half of HPV-related cancers, missing a single cohort entirely would result in an estimated 49% more HPV-related cancers in that cohort compared to no disruption.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a main finding from the model results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:32:59.204790Z"
+    },
+    {
+      "id": "8e791970-70ac-4a12-b75d-89304088351e",
+      "content_id": "fbe915c7-4d3f-4a8e-9ed9-bdce892f602d",
+      "claim_id": "C50",
+      "claim": "In Australia, for adolescents aged 11 to <15 years who received their first dose in 2020, 74.7% of girls and 72.6% of boys received their second dose in the same calendar year.",
+      "claim_type": "EXPLICIT",
+      "source": "In Australia, initial national figures show for adolescents aged 11 to <15 years who received their first dose in 2020, 74.7% of girls and 72.6% of boys received their second dose in the same calendar year",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as data from Australia's vaccination surveillance.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:32:59.204790Z"
+    },
+    {
+      "id": "091a89b3-0ec8-413a-8152-4e543ff56684",
+      "content_id": "fbe915c7-4d3f-4a8e-9ed9-bdce892f602d",
+      "claim_id": "C51",
+      "claim": "In 2019, 86.2% of girls and 84.3% of boys aged 11 to <15 years who received their first dose received their second dose in the same calendar year in Australia.",
+      "claim_type": "EXPLICIT",
+      "source": "compared to 86.2% and 84.3%, for girls and boys, respectively, in 2019 (National Centre for Immunisation Research and Surveillance Australia, 2020)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as data from Australia's vaccination surveillance, supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:32:59.204790Z"
+    },
+    {
+      "id": "f7872206-980f-4ac2-8a18-a7ce72454eca",
+      "content_id": "fbe915c7-4d3f-4a8e-9ed9-bdce892f602d",
+      "claim_id": "C52",
+      "claim": "The difference in numbers between 2019 and 2020 suggest vaccination delays in second doses, possibly due to COVID-19 effects including school closures during lockdowns, and decreased school attendance due to infections.",
+      "claim_type": "EXPLICIT",
+      "source": "The difference in numbers suggest vaccination delays in second doses, possibly due to COVID-19 effects including school closures during lockdowns, and decreased school attendance due to infections.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an inference from the comparison of 2019 and 2020 data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:32:59.204790Z"
+    },
+    {
+      "id": "f2107c2d-c665-47a7-8635-8f3b414441cb",
+      "content_id": "fbe915c7-4d3f-4a8e-9ed9-bdce892f602d",
+      "claim_id": "C53",
+      "claim": "Final coverage data are reported as those who are vaccinated by age 15, in line with WHO recommendations.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with WHO recommendations, final coverage data are reported as those who are vaccinated by age 15",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a fact about reporting practices, referencing WHO recommendations.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:32:59.204790Z"
+    },
+    {
+      "id": "7d5a2b3b-24a2-40e9-9976-0546307727ac",
+      "content_id": "fbe915c7-4d3f-4a8e-9ed9-bdce892f602d",
+      "claim_id": "C54",
+      "claim": "Coverage information by age 15 is not yet available for the most affected cohorts (aged 12\u201313 in 2020 and 2021; born approximately 2007\u20132009; turning 15 in 2022\u20132024).",
+      "claim_type": "EXPLICIT",
+      "source": "and this information is not yet available for the most affected cohorts (aged 12\u201313 in 2020 and 2021; born approximately 2007\u20132009; turning 15 in 2022\u20132024) (National Centre for Immunisation Research and Surveillance Australia, 2021b)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a fact about data availability, supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:32:59.204790Z"
+    },
+    {
+      "id": "8062fa9e-4ed4-4800-bdce-7315629c732d",
+      "content_id": "fbe915c7-4d3f-4a8e-9ed9-bdce892f602d",
+      "claim_id": "C55",
+      "claim": "Reports from other countries indicate that COVID-19 has delayed progress in achieving high coverage of HPV vaccination.",
+      "claim_type": "EXPLICIT",
+      "source": "Reports from other countries indicate that COVID-19 has delayed progress in achieving high coverage of HPV vaccination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a general observation from international reports.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:32:59.204790Z"
+    },
+    {
+      "id": "e2d4dfb8-c3d3-4d22-9b1e-88247cf876d0",
+      "content_id": "fbe915c7-4d3f-4a8e-9ed9-bdce892f602d",
+      "claim_id": "C56",
+      "claim": "A US study found recovery after a marked decline in HPV dose administration in March to May 2020 (median 64\u201371%) was not fully achieved during June to September 2020.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, a US study found recovery after a marked decline in HPV dose administration in March to May 2020 (median 64\u201371%) was not fully achieved during June to September 2020 (Patel Murthy et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from a US study, supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:32:59.204790Z"
+    },
+    {
+      "id": "df63093f-268c-4614-a07b-011d6acef26f",
+      "content_id": "fbe915c7-4d3f-4a8e-9ed9-bdce892f602d",
+      "claim_id": "C57",
+      "claim": "In November 2020, WHO released a global strategy calling for all countries to take action to achieve the elimination of cervical cancer as a public health problem within the next century.",
+      "claim_type": "EXPLICIT",
+      "source": "In November 2020, WHO released a global strategy calling for all countries to take action to achieve the elimination of cervical cancer as a public health problem within the next century (World Health Organization, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a fact about WHO policy, supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:32:59.204790Z"
+    },
+    {
+      "id": "82c855e7-9d96-4889-aae6-57a0e4d8ed34",
+      "content_id": "fbe915c7-4d3f-4a8e-9ed9-bdce892f602d",
+      "claim_id": "C58",
+      "claim": "In the near future most lives will be saved globally through increased uptake of cervical screening and access to cancer treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "In the near future most lives will be saved globally through increased uptake of cervical screening and access to cancer treatment (Canfell et al., 2020)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from previous research, supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:32:59.204790Z"
+    },
+    {
+      "id": "ddf90f2a-dcc1-4001-afc6-6e414c798799",
+      "content_id": "fbe915c7-4d3f-4a8e-9ed9-bdce892f602d",
+      "claim_id": "C59",
+      "claim": "In the longer-term maintaining high coverage of HPV vaccination will be critical in reducing mortality and achieving global elimination.",
+      "claim_type": "EXPLICIT",
+      "source": "but in the longer-term maintaining high coverage of HPV vaccination will be critical in reducing mortality and achieving global elimination (Canfell et al., 2020; Brisson et al., 2020)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from previous research, supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:32:59.204790Z"
+    },
+    {
+      "id": "658d933a-483b-4623-843a-67633cb23eea",
+      "content_id": "fbe915c7-4d3f-4a8e-9ed9-bdce892f602d",
+      "claim_id": "C60",
+      "claim": "Globally, the timeframe to reach elimination is likely to be impacted by pandemic-induced delays in HPV vaccination delivery.",
+      "claim_type": "EXPLICIT",
+      "source": "Globally, the timeframe to reach elimination is likely to be impacted by pandemic-induced delays in HPV vaccination delivery",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an inference about the impact of pandemic delays on elimination goals.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:32:59.204790Z"
+    },
+    {
+      "id": "b8f6caf3-c389-4a41-a9c1-bb7a1bc122df",
+      "content_id": "fbe915c7-4d3f-4a8e-9ed9-bdce892f602d",
+      "claim_id": "C61",
+      "claim": "Global shortages of the HPV vaccine are estimated to last until 2024.",
+      "claim_type": "EXPLICIT",
+      "source": "and also by global shortages of the HPV vaccine estimated to last until 2024",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a fact about vaccine supply, supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:32:59.204790Z"
+    },
+    {
+      "id": "08d8dbc4-04b7-4f97-be51-6362f4454fc2",
+      "content_id": "fbe915c7-4d3f-4a8e-9ed9-bdce892f602d",
+      "claim_id": "C62",
+      "claim": "Global shortages of the HPV vaccine are delaying the introduction of vaccination in low- and middle-income countries.",
+      "claim_type": "EXPLICIT",
+      "source": "thus delaying the introduction of vaccination in low- and middle-income countries (World Health Organization (WHO), 2018)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a consequence of vaccine shortages, supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:32:59.204790Z"
+    },
+    {
+      "id": "05436f90-1971-4b7e-a911-1f6c5f0fe08f",
+      "content_id": "fbe915c7-4d3f-4a8e-9ed9-bdce892f602d",
+      "claim_id": "C63",
+      "claim": "In countries predicted to achieve cervical cancer elimination in the relatively short term, such as Australia, short delays of 1 year are not predicted to delay elimination.",
+      "claim_type": "EXPLICIT",
+      "source": "In countries predicted to achieve cervical cancer elimination in the relatively short term, such as Australia, short delays of 1 year are not predicted to delay elimination (Smith et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from previous research, supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:32:59.204790Z"
+    },
+    {
+      "id": "496ee632-f31c-4040-9966-d3b78357d1e3",
+      "content_id": "fbe915c7-4d3f-4a8e-9ed9-bdce892f602d",
+      "claim_id": "C64",
+      "claim": "There are signs of a decrease in vaccine confidence in Europe around the time of the COVID-19 pandemic.",
+      "claim_type": "EXPLICIT",
+      "source": "There are signs, however, of a decrease in vaccine confidence in Europe around the time of the COVID-19 pandemic",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an observation from research, with a citation provided.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:32:59.204790Z"
+    },
+    {
+      "id": "edf25363-f039-418d-a1a0-c74d4b37221e",
+      "content_id": "fbe915c7-4d3f-4a8e-9ed9-bdce892f602d",
+      "claim_id": "C65",
+      "claim": "Lower confidence for the HPV vaccine was reported in 17 countries in Europe in 2022 compared to 2020.",
+      "claim_type": "EXPLICIT",
+      "source": "with lower confidence for the HPV vaccine reported in 17 countries in 2022 compared to 2020 (de Figueiredo et al., 2022)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from research, supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:32:59.204790Z"
+    },
+    {
+      "id": "ed36a081-ff98-4505-8ced-876aded3bd17",
+      "content_id": "fbe915c7-4d3f-4a8e-9ed9-bdce892f602d",
+      "claim_id": "C66",
+      "claim": "Even in the context of some cohorts missing vaccination entirely, herd effects still prevented a considerable proportion of HPV-related cancers overall.",
+      "claim_type": "EXPLICIT",
+      "source": "Even in the context of some cohorts missing vaccination entirely, herd effects still prevented a considerable proportion of HPV-related cancers overall",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from the model results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:32:59.204790Z"
+    },
+    {
+      "id": "22095fcd-b659-4a5a-b99d-9c489b60f59b",
+      "content_id": "fbe915c7-4d3f-4a8e-9ed9-bdce892f602d",
+      "claim_id": "C67",
+      "claim": "Herd effects would be smaller in settings with lower coverage.",
+      "claim_type": "EXPLICIT",
+      "source": "these effects would be smaller in settings with lower coverage (Brisson et al., 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an inference about the generalizability of findings, supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:32:59.204790Z"
+    },
+    {
+      "id": "0bfa227b-6124-4ce2-9f1a-f6275f423242",
+      "content_id": "fbe915c7-4d3f-4a8e-9ed9-bdce892f602d",
+      "claim_id": "C68",
+      "claim": "The finding that catch-up within a year minimizes the impact of disruptions is unlikely to be affected by lower herd effects in settings with lower coverage.",
+      "claim_type": "EXPLICIT",
+      "source": "This is unlikely to affect our finding that catch-up within a year minimizes the impact of disruptions",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an inference about the robustness of the main finding.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:32:59.204790Z"
+    },
+    {
+      "id": "93025434-c05a-4026-bc10-fed76cea080c",
+      "content_id": "fbe915c7-4d3f-4a8e-9ed9-bdce892f602d",
+      "claim_id": "C69",
+      "claim": "Lower herd effects in settings with lower coverage would likely strengthen the case for rapid catch-up.",
+      "claim_type": "EXPLICIT",
+      "source": "and so would likely strengthen the case for rapid catch-up in settings where herd effects are likely to be lower",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an inference about the implications for lower coverage settings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:32:59.204790Z"
+    },
+    {
+      "id": "39dc5c44-07c8-4892-aad3-fbbeb47c6438",
+      "content_id": "fbe915c7-4d3f-4a8e-9ed9-bdce892f602d",
+      "claim_id": "C70",
+      "claim": "The model assumed that cervical screening would continue in birth cohorts offered HPV9.",
+      "claim_type": "EXPLICIT",
+      "source": "The model also assumed that cervical screening would continue in birth cohorts offered HPV9",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a methodological assumption of the model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:32:59.204790Z"
+    },
+    {
+      "id": "ea89339e-90a7-42b9-bfce-4782a94810b7",
+      "content_id": "fbe915c7-4d3f-4a8e-9ed9-bdce892f602d",
+      "claim_id": "C71",
+      "claim": "Based on the sensitivity analysis that removed explicit modelling of screening, cervical screening prevented some cancers that would otherwise have occurred due to missed vaccination.",
+      "claim_type": "EXPLICIT",
+      "source": "and, based on our sensitivity analysis that removed explicit modelling of screening, this prevented some cancers that would otherwise have occurred due to missed vaccination",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from the sensitivity analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:32:59.204790Z"
+    },
+    {
+      "id": "e6a7031a-3567-4acb-868c-dd1cac9d04ad",
+      "content_id": "fbe915c7-4d3f-4a8e-9ed9-bdce892f602d",
+      "claim_id": "C72",
+      "claim": "Screening may not continue in the same way in cohorts offered HPV9 as it would be much less cost-effective.",
+      "claim_type": "EXPLICIT",
+      "source": "In practice, screening may not continue in the same way in cohorts offered HPV9 as it would be much less cost-effective (Simms et al., 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a consideration about future screening policy, supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:32:59.204790Z"
+    },
+    {
+      "id": "9b111b6f-7832-49e7-b75a-64a14f18e49e",
+      "content_id": "fbe915c7-4d3f-4a8e-9ed9-bdce892f602d",
+      "claim_id": "C73",
+      "claim": "No policy decision has been made for screening in cohorts offered HPV9.",
+      "claim_type": "EXPLICIT",
+      "source": "As yet, no policy decision has been made for screening in these cohorts, however",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a fact about current policy status.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:32:59.204790Z"
+    },
+    {
+      "id": "a54ce2eb-36e5-4a3e-a970-8af3620157d2",
+      "content_id": "fbe915c7-4d3f-4a8e-9ed9-bdce892f602d",
+      "claim_id": "C74",
+      "claim": "Screening may in future be tailored based on individual vaccination status, rather than age eligibility for vaccination.",
+      "claim_type": "EXPLICIT",
+      "source": "and screening may in future be tailored based on individual vaccination status, rather than age eligibility for vaccination",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as speculation about future screening policy.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:32:59.204790Z"
+    },
+    {
+      "id": "a9951e54-290d-4602-8730-c6fc8ac0a173",
+      "content_id": "fbe915c7-4d3f-4a8e-9ed9-bdce892f602d",
+      "claim_id": "C75",
+      "claim": "The model did not incorporate any potential changes in sexual behaviour which may affect estimates.",
+      "claim_type": "EXPLICIT",
+      "source": "The model did not incorporate any potential changes in sexual behaviour which may affect estimates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a limitation of the model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:32:59.204790Z"
+    },
+    {
+      "id": "3a1959be-052e-4337-967e-cdcc02c89d7f",
+      "content_id": "fbe915c7-4d3f-4a8e-9ed9-bdce892f602d",
+      "claim_id": "C76",
+      "claim": "Australia is a relatively high HPV vaccination coverage setting.",
+      "claim_type": "EXPLICIT",
+      "source": "Australia is a relatively high HPV vaccination coverage setting.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a characterization of Australia's vaccination program.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:32:59.204790Z"
+    },
+    {
+      "id": "0246c273-5d7b-49fc-a433-1fe254c0cab1",
+      "content_id": "fbe915c7-4d3f-4a8e-9ed9-bdce892f602d",
+      "claim_id": "C77",
+      "claim": "Outcomes may be less favourable in a lower coverage setting, as there would be less protection from herd effects.",
+      "claim_type": "EXPLICIT",
+      "source": "Outcomes may be less favourable in a lower coverage setting, as there would be less protection from herd effects",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as speculation about generalizability to other settings.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:32:59.204790Z"
+    },
+    {
+      "id": "ca117da5-997b-46b6-8fe0-2abf5f7b3038",
+      "content_id": "fbe915c7-4d3f-4a8e-9ed9-bdce892f602d",
+      "claim_id": "C78",
+      "claim": "The impact of disruptions might be smaller in a setting with lower coverage, since a lower coverage programme would be less effective.",
+      "claim_type": "EXPLICIT",
+      "source": "however, the impact of disruptions might also be smaller in a setting with lower coverage, since a lower coverage programme would be less effective",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as speculation about generalizability to other settings.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:32:59.204790Z"
+    },
+    {
+      "id": "8d01dfc6-1e4c-4c67-9eb1-d912f1b56a1a",
+      "content_id": "fbe915c7-4d3f-4a8e-9ed9-bdce892f602d",
+      "claim_id": "C79",
+      "claim": "The finding that if catch-up is performed expeditiously then it mitigates much of the effect from vaccination delays, is likely to hold in other settings.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, the finding that if catch-up is performed expeditiously then it mitigates much of the effect from vaccination delays, is likely to hold in other settings.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an inference about the generalizability of the main finding.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:32:59.204790Z"
+    },
+    {
+      "id": "e0b86479-0034-4f3f-9fd8-c2c23718aefb",
+      "content_id": "fbe915c7-4d3f-4a8e-9ed9-bdce892f602d",
+      "claim_id": "C80",
+      "claim": "A previous study modelling the health impacts of HPV vaccination hesitancy in Japan from 2013 to 2019 found that multi-age HPV catch-up vaccination would be effective in mitigating the effects.",
+      "claim_type": "EXPLICIT",
+      "source": "In a previous study modelling the health impacts of HPV vaccination hesitancy in Japan from 2013 to 2019 and the potential effects of restoring coverage to 70% with catch-up vaccination in 2020 is informative as it demonstrates that multi-age HPV catch-up vaccination, such as after catastrophic falls in coverage in Japan, would be effective in mitigating the effects (Simms et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from previous research, supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:32:59.204790Z"
+    },
+    {
+      "id": "b45e04fd-0533-405e-a98a-e135171a6e90",
+      "content_id": "fbe915c7-4d3f-4a8e-9ed9-bdce892f602d",
+      "claim_id": "C81",
+      "claim": "Rapid catch-up of missed HPV vaccine doses would minimize the long-term impact of vaccination programme disruptions.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings provide evidence that rapid catch-up of missed HPV vaccine doses would minimize the long-term impact of vaccination programme disruptions",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as the main conclusion from the study findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:32:59.204790Z"
+    },
+    {
+      "id": "a042201e-5f85-42c1-9230-459ed8b2f534",
+      "content_id": "fbe915c7-4d3f-4a8e-9ed9-bdce892f602d",
+      "claim_id": "C82",
+      "claim": "Delays in HPV vaccination catch-up would result in preventable HPV-related cancer cases in future.",
+      "claim_type": "EXPLICIT",
+      "source": "but delays would result in preventable HPV-related cancer cases in future",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as the main conclusion from the study findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:32:59.204790Z"
+    },
+    {
+      "id": "71828c34-d957-44ad-989b-8cb2bd3c627a",
+      "content_id": "fbe915c7-4d3f-4a8e-9ed9-bdce892f602d",
+      "claim_id": "C83",
+      "claim": "Policy1-Cervix is an established modelling platform of dynamic HPV transmission, HPV natural history, cervical screening, treatment, and cancer survival that has been validated across several settings.",
+      "claim_type": "EXPLICIT",
+      "source": "We used Policy1-Cervix, an established modelling platform of dynamic HPV transmission, HPV natural history, cervical screening, treatment, and cancer survival that has been validated across several settings.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a description of the model used in the study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:32:59.204790Z"
+    },
+    {
+      "id": "683fdf4e-5ebd-46b4-9d70-e275ef8905e1",
+      "content_id": "fbe915c7-4d3f-4a8e-9ed9-bdce892f602d",
+      "claim_id": "C84",
+      "claim": "The dynamic HPV transmission component of Policy1-Cervix incorporates HPV vaccination.",
+      "claim_type": "EXPLICIT",
+      "source": "The dynamic HPV transmission component of Policy1-Cervix incorporates HPV vaccination",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a description of the model capabilities.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:32:59.204790Z"
+    },
+    {
+      "id": "a930588a-b86b-457e-9bc0-57deb562f279",
+      "content_id": "fbe915c7-4d3f-4a8e-9ed9-bdce892f602d",
+      "claim_id": "C85",
+      "claim": "The dynamic HPV transmission model was used to estimate HPV incidence by age under scenarios of disruption to vaccination coverage, compared to a no disruption scenario.",
+      "claim_type": "EXPLICIT",
+      "source": "and was used to estimate HPV incidence by age under scenarios of disruption to vaccination coverage, compared to a no disruption scenario",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a description of how the model was used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:32:59.204790Z"
+    },
+    {
+      "id": "0c9f1abe-e7d3-4cf0-932f-301805251ff9",
+      "content_id": "fbe915c7-4d3f-4a8e-9ed9-bdce892f602d",
+      "claim_id": "C86",
+      "claim": "The number of lifetime cervical cancer cases was estimated for the cohorts affected after explicitly modelling cervical screening (5-yearly HPV screening starting from age 25).",
+      "claim_type": "EXPLICIT",
+      "source": "The number of lifetime cervical cancer cases was subsequently estimated for the cohorts affected after explicitly modelling cervical screening (5-yearly HPV screening starting from age 25) (Smith et al., 2021)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a description of the methodology, with a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:32:59.204790Z"
+    },
+    {
+      "id": "8ccbc0ab-35c0-430c-ab36-db66a15455b0",
+      "content_id": "fbe915c7-4d3f-4a8e-9ed9-bdce892f602d",
+      "claim_id": "C87",
+      "claim": "HPV incidence estimated by the dynamic HPV transmission model was used in a separate incidence-based model to project the lifetime number of non-cervical HPV-related cancers in both sexes (i.e. anal, oropharyngeal, penile, vaginal, and vulvar).",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, HPV incidence estimated by the dynamic HPV transmission model was used in a separate incidence-based model to project the lifetime number of non-cervical HPV-related cancers in both sexes (i.e. anal, oropharyngeal, penile, vaginal, and vulvar), as previously described (Kim et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a description of the methodology, with a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:32:59.204790Z"
+    },
+    {
+      "id": "01f4d492-f73b-4dfa-92a3-052b1a6f079d",
+      "content_id": "fbe915c7-4d3f-4a8e-9ed9-bdce892f602d",
+      "claim_id": "C88",
+      "claim": "Scenario 1 assumed a fast catch-up where vaccination was delayed by one year (but no doses were entirely missed).",
+      "claim_type": "EXPLICIT",
+      "source": "Scenario 1 assumed a fast catch-up where vaccination was delayed by one year (but no doses were entirely missed)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a description of the modeled scenario.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:32:59.204790Z"
+    },
+    {
+      "id": "120410f0-3b36-456c-81b7-876d765685f0",
+      "content_id": "fbe915c7-4d3f-4a8e-9ed9-bdce892f602d",
+      "claim_id": "C89",
+      "claim": "Scenario 2 assumed a slow catch-up where vaccination was delayed between 1 and 7 years with an equal proportion being caught up each year.",
+      "claim_type": "EXPLICIT",
+      "source": "scenario 2 assumed a slow catch-up where vaccination was delayed between 1 and 7 years with an equal proportion being caught up each year",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a description of the modeled scenario.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:32:59.204790Z"
+    },
+    {
+      "id": "baad6513-2a0e-4292-8408-afce02868b11",
+      "content_id": "fbe915c7-4d3f-4a8e-9ed9-bdce892f602d",
+      "claim_id": "C90",
+      "claim": "Scenario 3 assumed there was no catch-up, and therefore any protection in the cohort would be due to herd effects only.",
+      "claim_type": "EXPLICIT",
+      "source": "and scenario 3 assumed there was no catch-up, and therefore any protection in the cohort would be due to herd effects only",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a description of the modeled scenario.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:32:59.204790Z"
+    },
+    {
+      "id": "522b76f8-eedd-4c97-a416-8566c962dc07",
+      "content_id": "fbe915c7-4d3f-4a8e-9ed9-bdce892f602d",
+      "claim_id": "C91",
+      "claim": "A fourth scenario assumed individuals born in 2008 and in 2009 (644,230 people), missed HPV vaccination at age 12, with no catch-up.",
+      "claim_type": "EXPLICIT",
+      "source": "A fourth scenario was also conducted which assumed individuals born in 2008 and in 2009 (644,230 people), missed HPV vaccination at age 12, with no catch-up.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a description of the modeled scenario.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:32:59.204790Z"
+    },
+    {
+      "id": "44357e35-e333-4456-a4d8-a5a6f813bf99",
+      "content_id": "fbe915c7-4d3f-4a8e-9ed9-bdce892f602d",
+      "claim_id": "C92",
+      "claim": "Three disruption scenarios were modelled affecting females and males born in 2008 cohort who were aged 12 in 2020 (322,115 people).",
+      "claim_type": "EXPLICIT",
+      "source": "Three disruption scenarios were modelled affecting females and males born in 2008 cohort who were aged 12 in 2020 (322,115 people).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a description of the modeled scenarios.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:32:59.204790Z"
+    },
+    {
+      "id": "bfe927dc-0722-4b1f-b3c5-69ba994817d9",
+      "content_id": "fbe915c7-4d3f-4a8e-9ed9-bdce892f602d",
+      "claim_id": "C93",
+      "claim": "For each scenario, the number of HPV-associated cancer cases (from age 12 to 84 years) prevented by vaccination was estimated compared to an unvaccinated comparator cohort.",
+      "claim_type": "EXPLICIT",
+      "source": "For each scenario, we estimated the number of HPV-associated cancer cases (from age 12 to 84 years) prevented by vaccination compared to an unvaccinated comparator cohort",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a description of the analysis approach.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:32:59.204790Z"
+    },
+    {
+      "id": "8121fed6-66a7-48f6-8481-48da343d9f45",
+      "content_id": "fbe915c7-4d3f-4a8e-9ed9-bdce892f602d",
+      "claim_id": "C94",
+      "claim": "For each scenario, the additional number of cases under each disruption scenario was estimated compared to the no disruption scenario.",
+      "claim_type": "EXPLICIT",
+      "source": "and the additional number of cases under each disruption scenario compared to the no disruption scenario",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a description of the analysis approach.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:32:59.204790Z"
+    },
+    {
+      "id": "8d1dbe23-423b-47b5-90c0-b6de816959eb",
+      "content_id": "fbe915c7-4d3f-4a8e-9ed9-bdce892f602d",
+      "claim_id": "C95",
+      "claim": "The study was designed prior to the emergence of actual 2020\u20132021 vaccination disruption data.",
+      "claim_type": "EXPLICIT",
+      "source": "The study was designed prior to the emergence of actual 2020\u20132021 vaccination disruption data",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as context for the study design.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:32:59.204790Z"
+    },
+    {
+      "id": "08e6701f-d600-4ed8-b7cb-eb4d9f2e4155",
+      "content_id": "fbe915c7-4d3f-4a8e-9ed9-bdce892f602d",
+      "claim_id": "C96",
+      "claim": "A number of potential disruption scenarios were considered to encompass a wide range of possibilities.",
+      "claim_type": "EXPLICIT",
+      "source": "and hence, a number of potential disruption scenarios were considered to encompass a wide range of possibilities",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as justification for the scenario selection.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:32:59.204790Z"
+    },
+    {
+      "id": "c50c5e43-b448-49ab-af00-21ef82ac49ad",
+      "content_id": "fbe915c7-4d3f-4a8e-9ed9-bdce892f602d",
+      "claim_id": "C117",
+      "claim": "Figure 1 presents the estimated lifetime HPV-related cancer cases for all scenarios for the 2008 cohort (left) and combined 2008 and 2009 cohorts (right).",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 1 presents the estimated lifetime HPV-related cancer cases for all scenarios for the 2008 cohort (left) and combined 2008 and 2009 cohorts (right).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a description of what Figure 1 shows.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:32:59.204790Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "b1648ee3-a81e-43c8-8ef5-4496a601702c",
+      "content_id": "fbe915c7-4d3f-4a8e-9ed9-bdce892f602d",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Using the Policy1-Cervix model, the authors estimated that in a baseline scenario with no disruption to HPV vaccination (82.4% coverage in females, 75.5% in males), 2583 HPV-related cancer cases would be prevented in the 2008 birth cohort, representing 63% of all HPV-related cases, with 1532 total cases expected.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C3, C31-C32 provide consistent baseline model outputs. The methodology (C83-C87, C92-C94) describes an established, validated model (Policy1-Cervix) with appropriate components including dynamic transmission, natural history, screening, and cancer outcomes. The baseline parameters are clearly stated and the model outputs are internally consistent.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:32:59.204790Z"
+    },
+    {
+      "id": "e9e5a53c-7230-4e94-b420-129a492b2588",
+      "content_id": "fbe915c7-4d3f-4a8e-9ed9-bdce892f602d",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "A 1-year delay in HPV vaccination with rapid catch-up resulted in only 4 additional cancer cases (0.3% increase), demonstrating that rapid catch-up minimizes long-term impact even with extreme disruptions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C33 provide consistent quantitative results for Scenario 1. Claim C47 appropriately interprets this finding as showing minimal impact with rapid catch-up. The scenario definition (C88) is clear. The small effect size is plausible given that no doses were entirely missed, only delayed.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:32:59.204790Z"
+    },
+    {
+      "id": "a1c45f1f-0701-4fb0-8f89-5fd828df3492",
+      "content_id": "fbe915c7-4d3f-4a8e-9ed9-bdce892f602d",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "A slow catch-up strategy (1-7 year delay with equal proportions caught up each year) resulted in 70 additional cancer cases (5% increase), demonstrating that slower recovery is associated with higher excess cancer burden.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C34 provide consistent quantitative results for Scenario 2. Claim C48 appropriately interprets the finding. The scenario definition (C89) is clear. The intermediate effect size between rapid catch-up and no catch-up is logically consistent.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:32:59.204790Z"
+    },
+    {
+      "id": "bc0ee321-f04b-45d3-bc7f-cb37fc9a25e6",
+      "content_id": "fbe915c7-4d3f-4a8e-9ed9-bdce892f602d",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "With no catch-up vaccination for one cohort, 750 additional cancer cases (49% increase) were predicted, though herd effects still prevented close to half of HPV-related cancers in that cohort.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C35, C49 provide consistent quantitative results for Scenario 3. Claim C66 appropriately notes the protective effect of herd immunity. The scenario definition (C90) is clear. The substantial increase despite herd effects is plausible and demonstrates the importance of direct vaccination.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:32:59.204790Z"
+    },
+    {
+      "id": "c0792a2c-31df-4f65-9b27-d79a944ed220",
+      "content_id": "fbe915c7-4d3f-4a8e-9ed9-bdce892f602d",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "In the worst-case scenario where two birth cohorts (2008 and 2009) missed vaccination with no catch-up, 1892 additional cancer cases (62% increase) were predicted.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9, C36 provide consistent quantitative results for Scenario 4. The scenario definition (C91) is clear. The effect is appropriately larger than the single-cohort scenario, though not exactly double due to herd effects and population dynamics.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:32:59.204790Z"
+    },
+    {
+      "id": "47e361bf-6b63-4e3b-b7eb-a2054374d7a0",
+      "content_id": "fbe915c7-4d3f-4a8e-9ed9-bdce892f602d",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "For a single missed cohort, additional cancers were most commonly cervical (23%) and anal (16%) in females, and oropharyngeal (20%) in males. Combined across sexes, oropharyngeal (>80% in males) and anal cancers (mostly in females) were most common.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C8, C37-C40 provide a consistent breakdown of cancer types by sex. The percentages and distributions are internally consistent and align with known HPV-related cancer epidemiology. The sex-specific patterns reflect biological differences in HPV-related cancer sites.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:32:59.204790Z"
+    },
+    {
+      "id": "9c4fb455-25ec-409a-9966-2bc8097351f2",
+      "content_id": "fbe915c7-4d3f-4a8e-9ed9-bdce892f602d",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The main analysis explicitly modeled cervical screening, which compensated for some cancers not prevented by vaccination. A sensitivity analysis without screening showed larger cervical cancer increases (35% vs 17-25% of additional cases) and somewhat higher overall increases (54% vs 49% for one missed cohort).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C42, C70-C71 describe the main analysis approach and rationale. Claims C43-C45 provide consistent sensitivity analysis results showing the protective effect of screening. The sensitivity analysis appropriately tests a key assumption and shows the model is somewhat robust to this choice, though screening does have a meaningful impact.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:32:59.204790Z"
+    },
+    {
+      "id": "a9602116-dab8-4240-816e-b34ff00d639f",
+      "content_id": "fbe915c7-4d3f-4a8e-9ed9-bdce892f602d",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The authors conclude that with rapid catch-up of missed HPV vaccines, short-term delays in vaccinating adolescents are unlikely to have substantial long-term effects on cancer, but delays in catch-up would result in preventable cancer cases.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10, C47, C81-C82 state the main conclusions, which are well-supported by the quantitative results showing minimal impact with 1-year delay (C4, C33) but substantial increases with slower or no catch-up (C5-C6, C34-C35). The conclusions appropriately distinguish between rapid and delayed catch-up scenarios.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:32:59.204790Z"
+    },
+    {
+      "id": "aab8eb21-d6cf-45ca-97f6-93dc618f00f0",
+      "content_id": "fbe915c7-4d3f-4a8e-9ed9-bdce892f602d",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Australian surveillance data showed decreased second-dose completion rates in 2020 (74.7% girls, 72.6% boys) compared to 2019 (86.2% girls, 84.3% boys), suggesting vaccination delays possibly due to COVID-19 effects. Final coverage data by age 15 are not yet available for the most affected cohorts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C51 provide specific surveillance data with citations. Claim C52 offers a reasonable interpretation of the decline. Claim C54 appropriately notes data limitations. The observed decline is consistent with the pandemic's impact on school-based vaccination programs.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:32:59.204790Z"
+    },
+    {
+      "id": "b96e7dae-cb46-4f0d-b860-3e0ca629e9f3",
+      "content_id": "fbe915c7-4d3f-4a8e-9ed9-bdce892f602d",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The authors discuss generalizability, noting that Australia is a high-coverage setting where herd effects are substantial. In lower-coverage settings, herd effects would be smaller, but the finding that rapid catch-up minimizes disruption impact is likely to hold and may be even more important.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C69, C76-C79 provide a thoughtful discussion of generalizability. The reasoning about herd effects in different coverage settings is sound. The conclusion that rapid catch-up remains important across settings is appropriately qualified and logically supported.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:32:59.204790Z"
+    },
+    {
+      "id": "d5b46054-b458-48d3-b21a-0bc111623214",
+      "content_id": "fbe915c7-4d3f-4a8e-9ed9-bdce892f602d",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The authors acknowledge model limitations including that screening may not continue in the same way for HPV9-vaccinated cohorts (as it would be less cost-effective), no policy decision has been made, screening may be tailored by vaccination status, and the model did not incorporate potential changes in sexual behavior.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C72-C75 appropriately acknowledge important limitations. The discussion of future screening policy uncertainty (C72-C74) is reasonable given the changing landscape with HPV9. The limitation regarding sexual behavior (C75) is appropriately noted, though the pandemic's impact on sexual behavior patterns is uncertain.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:32:59.204790Z"
+    },
+    {
+      "id": "8cdec0a9-65f6-45ec-b516-0a42d7a5bf5a",
+      "content_id": "fbe915c7-4d3f-4a8e-9ed9-bdce892f602d",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "COVID-19 disrupted school attendance and vaccination programs globally. The WHO declared the pandemic in March 2020, leading to infection control measures in Australia including school closures. Globally, the WHO reported the largest decline in vaccinations in three decades and loss of over a quarter of HPV vaccine coverage achieved in 2019.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C21-C25 provide appropriate background context supported by citations. The statements about pandemic impacts on vaccination are well-documented in the literature and provide necessary context for the study's motivation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:32:59.204790Z"
+    },
+    {
+      "id": "2dca7b9c-e382-42f7-83d1-bcec392ba3be",
+      "content_id": "fbe915c7-4d3f-4a8e-9ed9-bdce892f602d",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Australia was the first country to implement a fully government-funded National HPV Vaccination program, offering vaccination to girls since 2007 and boys since 2013, with various catch-up programs. In 2018, the program switched from quadrivalent (HPV 6,11,16,18) to nonavalent vaccine (adding HPV 31,33,45,52,58). Course completion rates by age 15 in 2019 were 79.8% for girls and 77.0% for boys.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C20 provide accurate historical background about Australia's HPV vaccination program, supported by appropriate citations. These facts are well-documented and provide necessary context for understanding the baseline scenario and study setting.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:32:59.204790Z"
+    },
+    {
+      "id": "ae3e62e0-e0c2-4671-8d90-632c039b1fec",
+      "content_id": "fbe915c7-4d3f-4a8e-9ed9-bdce892f602d",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Oncogenic HPV types are a major causal factor for cervical cancer and a fraction of anal, oropharyngeal, penile, vaginal, and vulvar cancers. Organized screening is generally only available for cervical cancer. In Australia in 2012, 80% of HPV-associated cancers were attributable to HPV16/18 (quadrivalent vaccine types) with an additional 9% attributable to the five additional nonavalent vaccine types.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C28 state well-established scientific knowledge about HPV and cancer, appropriately cited. Claims C29-C30 provide specific data from a previous Australian study with citation. This background appropriately establishes the disease burden and vaccine potential.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:32:59.204790Z"
+    },
+    {
+      "id": "427a2766-9ad3-4ffc-bf2a-6c91e824ad6e",
+      "content_id": "fbe915c7-4d3f-4a8e-9ed9-bdce892f602d",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The authors claim this is the first study to estimate the long-term impact of missed HPV vaccinations across HPV-induced cancers while accounting for natural history, sexual behavior, and herd immunity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C46 asserts novelty but provides no systematic comparison with prior literature. While the study may be novel in its specific combination of features, the claim of being 'first' is difficult to verify without a comprehensive literature review. The claim may be overstated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:32:59.204790Z"
+    },
+    {
+      "id": "dcc04982-1591-4c82-aabb-673ab886cf05",
+      "content_id": "fbe915c7-4d3f-4a8e-9ed9-bdce892f602d",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The authors provide context from international reports and prior studies showing COVID-19 impacts on HPV vaccination globally, WHO elimination goals, the importance of vaccination for long-term elimination, vaccine supply shortages, and evidence from other settings including Japan that catch-up vaccination can mitigate coverage gaps.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C65, C80 provide appropriate contextualization from the literature with citations. The discussion appropriately situates the study findings within the broader global context of HPV vaccination, elimination goals, and pandemic impacts.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:32:59.204790Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "ed3d481a-8572-42e9-b75b-2d3f4ffea93e",
+      "result_id": "b1648ee3-a81e-43c8-8ef5-4496a601702c"
+    },
+    {
+      "claim_id": "2eadd1df-7976-41b2-87fe-2ee25aa75bf4",
+      "result_id": "b1648ee3-a81e-43c8-8ef5-4496a601702c"
+    },
+    {
+      "claim_id": "1ea9b830-1e1a-4d1d-87e1-28bf6ab476f6",
+      "result_id": "b1648ee3-a81e-43c8-8ef5-4496a601702c"
+    },
+    {
+      "claim_id": "55c75c3e-5ed4-44d5-98e2-84d50fc62292",
+      "result_id": "b1648ee3-a81e-43c8-8ef5-4496a601702c"
+    },
+    {
+      "claim_id": "71828c34-d957-44ad-989b-8cb2bd3c627a",
+      "result_id": "b1648ee3-a81e-43c8-8ef5-4496a601702c"
+    },
+    {
+      "claim_id": "683fdf4e-5ebd-46b4-9d70-e275ef8905e1",
+      "result_id": "b1648ee3-a81e-43c8-8ef5-4496a601702c"
+    },
+    {
+      "claim_id": "a930588a-b86b-457e-9bc0-57deb562f279",
+      "result_id": "b1648ee3-a81e-43c8-8ef5-4496a601702c"
+    },
+    {
+      "claim_id": "0c9f1abe-e7d3-4cf0-932f-301805251ff9",
+      "result_id": "b1648ee3-a81e-43c8-8ef5-4496a601702c"
+    },
+    {
+      "claim_id": "8ccbc0ab-35c0-430c-ab36-db66a15455b0",
+      "result_id": "b1648ee3-a81e-43c8-8ef5-4496a601702c"
+    },
+    {
+      "claim_id": "44357e35-e333-4456-a4d8-a5a6f813bf99",
+      "result_id": "b1648ee3-a81e-43c8-8ef5-4496a601702c"
+    },
+    {
+      "claim_id": "bfe927dc-0722-4b1f-b3c5-69ba994817d9",
+      "result_id": "b1648ee3-a81e-43c8-8ef5-4496a601702c"
+    },
+    {
+      "claim_id": "8121fed6-66a7-48f6-8481-48da343d9f45",
+      "result_id": "b1648ee3-a81e-43c8-8ef5-4496a601702c"
+    },
+    {
+      "claim_id": "565bd379-3529-4cbc-b42d-f22cb3361e26",
+      "result_id": "e9e5a53c-7230-4e94-b420-129a492b2588"
+    },
+    {
+      "claim_id": "007cf0be-c732-4fbd-b126-7ebfc3cc92b0",
+      "result_id": "e9e5a53c-7230-4e94-b420-129a492b2588"
+    },
+    {
+      "claim_id": "711f05df-64df-4f37-9a54-a10f5a6db924",
+      "result_id": "e9e5a53c-7230-4e94-b420-129a492b2588"
+    },
+    {
+      "claim_id": "01f4d492-f73b-4dfa-92a3-052b1a6f079d",
+      "result_id": "e9e5a53c-7230-4e94-b420-129a492b2588"
+    },
+    {
+      "claim_id": "b29efd5d-d402-489c-b468-1066d4533bc1",
+      "result_id": "a1c45f1f-0701-4fb0-8f89-5fd828df3492"
+    },
+    {
+      "claim_id": "f8f1bb25-6596-4309-a8fd-d62662831457",
+      "result_id": "a1c45f1f-0701-4fb0-8f89-5fd828df3492"
+    },
+    {
+      "claim_id": "7b6151af-db99-4be9-871a-bde77ef1c145",
+      "result_id": "a1c45f1f-0701-4fb0-8f89-5fd828df3492"
+    },
+    {
+      "claim_id": "120410f0-3b36-456c-81b7-876d765685f0",
+      "result_id": "a1c45f1f-0701-4fb0-8f89-5fd828df3492"
+    },
+    {
+      "claim_id": "b958cfce-c714-405e-9ef2-e0679c446939",
+      "result_id": "bc0ee321-f04b-45d3-bc7f-cb37fc9a25e6"
+    },
+    {
+      "claim_id": "d187e491-df4a-416c-9369-04f2a7fdf5e1",
+      "result_id": "bc0ee321-f04b-45d3-bc7f-cb37fc9a25e6"
+    },
+    {
+      "claim_id": "688eb6b3-8396-4b29-a563-5857cdc27574",
+      "result_id": "bc0ee321-f04b-45d3-bc7f-cb37fc9a25e6"
+    },
+    {
+      "claim_id": "ed36a081-ff98-4505-8ced-876aded3bd17",
+      "result_id": "bc0ee321-f04b-45d3-bc7f-cb37fc9a25e6"
+    },
+    {
+      "claim_id": "baad6513-2a0e-4292-8408-afce02868b11",
+      "result_id": "bc0ee321-f04b-45d3-bc7f-cb37fc9a25e6"
+    },
+    {
+      "claim_id": "d16bd35d-1e96-41c4-a451-7cb6c64031bd",
+      "result_id": "c0792a2c-31df-4f65-9b27-d79a944ed220"
+    },
+    {
+      "claim_id": "d914c068-69f0-4bca-8855-93d232d5c779",
+      "result_id": "c0792a2c-31df-4f65-9b27-d79a944ed220"
+    },
+    {
+      "claim_id": "522b76f8-eedd-4c97-a416-8566c962dc07",
+      "result_id": "c0792a2c-31df-4f65-9b27-d79a944ed220"
+    },
+    {
+      "claim_id": "ddec3178-2aa9-4929-83b7-76823d4eb03a",
+      "result_id": "47e361bf-6b63-4e3b-b7eb-a2054374d7a0"
+    },
+    {
+      "claim_id": "bf5191c4-122b-4d48-a744-4cc73f9d70ca",
+      "result_id": "47e361bf-6b63-4e3b-b7eb-a2054374d7a0"
+    },
+    {
+      "claim_id": "b344e5bc-cbed-44c3-a896-c5f5daadb12f",
+      "result_id": "47e361bf-6b63-4e3b-b7eb-a2054374d7a0"
+    },
+    {
+      "claim_id": "1594b3fc-dc53-4d10-ab06-3f0e2419cafe",
+      "result_id": "47e361bf-6b63-4e3b-b7eb-a2054374d7a0"
+    },
+    {
+      "claim_id": "2b168b93-fd52-46f6-92b8-0b064b13f6f5",
+      "result_id": "47e361bf-6b63-4e3b-b7eb-a2054374d7a0"
+    },
+    {
+      "claim_id": "2c23eb23-cf98-49ec-a5b9-71e1cc92bcc4",
+      "result_id": "47e361bf-6b63-4e3b-b7eb-a2054374d7a0"
+    },
+    {
+      "claim_id": "b9b8aa6a-e17b-43eb-9c93-538d8170f006",
+      "result_id": "9c4fb455-25ec-409a-9966-2bc8097351f2"
+    },
+    {
+      "claim_id": "f1b8d8f0-fa9b-4f6b-9305-6277f100e17f",
+      "result_id": "9c4fb455-25ec-409a-9966-2bc8097351f2"
+    },
+    {
+      "claim_id": "0828f0f5-0957-4cd4-bef5-3d318052f04e",
+      "result_id": "9c4fb455-25ec-409a-9966-2bc8097351f2"
+    },
+    {
+      "claim_id": "63a2be6d-62d4-4b7d-95df-618a6af1bbf4",
+      "result_id": "9c4fb455-25ec-409a-9966-2bc8097351f2"
+    },
+    {
+      "claim_id": "df4dbd9a-3110-4007-9432-eaed6d23cc3e",
+      "result_id": "9c4fb455-25ec-409a-9966-2bc8097351f2"
+    },
+    {
+      "claim_id": "39dc5c44-07c8-4892-aad3-fbbeb47c6438",
+      "result_id": "9c4fb455-25ec-409a-9966-2bc8097351f2"
+    },
+    {
+      "claim_id": "ea89339e-90a7-42b9-bfce-4782a94810b7",
+      "result_id": "9c4fb455-25ec-409a-9966-2bc8097351f2"
+    },
+    {
+      "claim_id": "b53e5528-21ae-49dc-9ccd-935a15cb98e7",
+      "result_id": "a9602116-dab8-4240-816e-b34ff00d639f"
+    },
+    {
+      "claim_id": "711f05df-64df-4f37-9a54-a10f5a6db924",
+      "result_id": "a9602116-dab8-4240-816e-b34ff00d639f"
+    },
+    {
+      "claim_id": "b45e04fd-0533-405e-a98a-e135171a6e90",
+      "result_id": "a9602116-dab8-4240-816e-b34ff00d639f"
+    },
+    {
+      "claim_id": "a042201e-5f85-42c1-9230-459ed8b2f534",
+      "result_id": "a9602116-dab8-4240-816e-b34ff00d639f"
+    },
+    {
+      "claim_id": "8e791970-70ac-4a12-b75d-89304088351e",
+      "result_id": "aab8eb21-d6cf-45ca-97f6-93dc618f00f0"
+    },
+    {
+      "claim_id": "091a89b3-0ec8-413a-8152-4e543ff56684",
+      "result_id": "aab8eb21-d6cf-45ca-97f6-93dc618f00f0"
+    },
+    {
+      "claim_id": "f7872206-980f-4ac2-8a18-a7ce72454eca",
+      "result_id": "aab8eb21-d6cf-45ca-97f6-93dc618f00f0"
+    },
+    {
+      "claim_id": "7d5a2b3b-24a2-40e9-9976-0546307727ac",
+      "result_id": "aab8eb21-d6cf-45ca-97f6-93dc618f00f0"
+    },
+    {
+      "claim_id": "22095fcd-b659-4a5a-b99d-9c489b60f59b",
+      "result_id": "b96e7dae-cb46-4f0d-b860-3e0ca629e9f3"
+    },
+    {
+      "claim_id": "0bfa227b-6124-4ce2-9f1a-f6275f423242",
+      "result_id": "b96e7dae-cb46-4f0d-b860-3e0ca629e9f3"
+    },
+    {
+      "claim_id": "93025434-c05a-4026-bc10-fed76cea080c",
+      "result_id": "b96e7dae-cb46-4f0d-b860-3e0ca629e9f3"
+    },
+    {
+      "claim_id": "3a1959be-052e-4337-967e-cdcc02c89d7f",
+      "result_id": "b96e7dae-cb46-4f0d-b860-3e0ca629e9f3"
+    },
+    {
+      "claim_id": "0246c273-5d7b-49fc-a433-1fe254c0cab1",
+      "result_id": "b96e7dae-cb46-4f0d-b860-3e0ca629e9f3"
+    },
+    {
+      "claim_id": "ca117da5-997b-46b6-8fe0-2abf5f7b3038",
+      "result_id": "b96e7dae-cb46-4f0d-b860-3e0ca629e9f3"
+    },
+    {
+      "claim_id": "8d01dfc6-1e4c-4c67-9eb1-d912f1b56a1a",
+      "result_id": "b96e7dae-cb46-4f0d-b860-3e0ca629e9f3"
+    },
+    {
+      "claim_id": "e6a7031a-3567-4acb-868c-dd1cac9d04ad",
+      "result_id": "d5b46054-b458-48d3-b21a-0bc111623214"
+    },
+    {
+      "claim_id": "9b111b6f-7832-49e7-b75a-64a14f18e49e",
+      "result_id": "d5b46054-b458-48d3-b21a-0bc111623214"
+    },
+    {
+      "claim_id": "a54ce2eb-36e5-4a3e-a970-8af3620157d2",
+      "result_id": "d5b46054-b458-48d3-b21a-0bc111623214"
+    },
+    {
+      "claim_id": "a9951e54-290d-4602-8730-c6fc8ac0a173",
+      "result_id": "d5b46054-b458-48d3-b21a-0bc111623214"
+    },
+    {
+      "claim_id": "b3be27a6-5a96-4edf-9385-57683c526220",
+      "result_id": "8cdec0a9-65f6-45ec-b516-0a42d7a5bf5a"
+    },
+    {
+      "claim_id": "9da13bba-0aab-4f25-b80a-f81b3d2f47be",
+      "result_id": "8cdec0a9-65f6-45ec-b516-0a42d7a5bf5a"
+    },
+    {
+      "claim_id": "1339d110-5d88-4f6f-984c-82267f6b75ad",
+      "result_id": "8cdec0a9-65f6-45ec-b516-0a42d7a5bf5a"
+    },
+    {
+      "claim_id": "43872a8a-9459-4ce2-b280-4c30f4a59c95",
+      "result_id": "8cdec0a9-65f6-45ec-b516-0a42d7a5bf5a"
+    },
+    {
+      "claim_id": "e0d0effa-d3a4-42d6-880a-0ef6437c4897",
+      "result_id": "8cdec0a9-65f6-45ec-b516-0a42d7a5bf5a"
+    },
+    {
+      "claim_id": "53c8aeb9-632e-4ef9-84a5-285bd4a7b521",
+      "result_id": "8cdec0a9-65f6-45ec-b516-0a42d7a5bf5a"
+    },
+    {
+      "claim_id": "444ecf06-9fc5-4c0e-978a-a74e74462831",
+      "result_id": "2dca7b9c-e382-42f7-83d1-bcec392ba3be"
+    },
+    {
+      "claim_id": "61bd83c7-09e5-4ce9-8040-50708089cf34",
+      "result_id": "2dca7b9c-e382-42f7-83d1-bcec392ba3be"
+    },
+    {
+      "claim_id": "af54aa93-36a1-41ca-862f-db7b6898a8c9",
+      "result_id": "2dca7b9c-e382-42f7-83d1-bcec392ba3be"
+    },
+    {
+      "claim_id": "43760da9-e3f4-42d8-99c9-f24f226f1b68",
+      "result_id": "2dca7b9c-e382-42f7-83d1-bcec392ba3be"
+    },
+    {
+      "claim_id": "f84942d8-346f-42db-8078-def7a53bfc4e",
+      "result_id": "2dca7b9c-e382-42f7-83d1-bcec392ba3be"
+    },
+    {
+      "claim_id": "04f772a6-0781-45f9-9e66-7cf691d33c5a",
+      "result_id": "2dca7b9c-e382-42f7-83d1-bcec392ba3be"
+    },
+    {
+      "claim_id": "4e6fdc57-446a-4cf1-a433-1d46952376fb",
+      "result_id": "2dca7b9c-e382-42f7-83d1-bcec392ba3be"
+    },
+    {
+      "claim_id": "ace96c36-2c91-43e9-812e-57d74a8059ea",
+      "result_id": "2dca7b9c-e382-42f7-83d1-bcec392ba3be"
+    },
+    {
+      "claim_id": "029da00f-d4af-42b8-9c8f-e53c964c1f52",
+      "result_id": "2dca7b9c-e382-42f7-83d1-bcec392ba3be"
+    },
+    {
+      "claim_id": "b6a0cfc7-f26e-471a-809f-1a517b8e175f",
+      "result_id": "2dca7b9c-e382-42f7-83d1-bcec392ba3be"
+    },
+    {
+      "claim_id": "d58631c9-3728-4e35-9bdd-82e4e922c6f7",
+      "result_id": "ae3e62e0-e0c2-4671-8d90-632c039b1fec"
+    },
+    {
+      "claim_id": "cb3cb455-a284-42ff-8758-a3148fb567d2",
+      "result_id": "ae3e62e0-e0c2-4671-8d90-632c039b1fec"
+    },
+    {
+      "claim_id": "6a2dba46-b824-412c-bacd-e4ec59348fb5",
+      "result_id": "ae3e62e0-e0c2-4671-8d90-632c039b1fec"
+    },
+    {
+      "claim_id": "02788e9e-19e7-4fce-94b0-7cdc62cd37e6",
+      "result_id": "ae3e62e0-e0c2-4671-8d90-632c039b1fec"
+    },
+    {
+      "claim_id": "e763ad86-4a44-45a1-ad02-1b12c29892a4",
+      "result_id": "ae3e62e0-e0c2-4671-8d90-632c039b1fec"
+    },
+    {
+      "claim_id": "b2a2af52-88c2-4669-9272-63d15ca633da",
+      "result_id": "427a2766-9ad3-4ffc-bf2a-6c91e824ad6e"
+    },
+    {
+      "claim_id": "8062fa9e-4ed4-4800-bdce-7315629c732d",
+      "result_id": "dcc04982-1591-4c82-aabb-673ab886cf05"
+    },
+    {
+      "claim_id": "e2d4dfb8-c3d3-4d22-9b1e-88247cf876d0",
+      "result_id": "dcc04982-1591-4c82-aabb-673ab886cf05"
+    },
+    {
+      "claim_id": "df63093f-268c-4614-a07b-011d6acef26f",
+      "result_id": "dcc04982-1591-4c82-aabb-673ab886cf05"
+    },
+    {
+      "claim_id": "82c855e7-9d96-4889-aae6-57a0e4d8ed34",
+      "result_id": "dcc04982-1591-4c82-aabb-673ab886cf05"
+    },
+    {
+      "claim_id": "ddf90f2a-dcc1-4001-afc6-6e414c798799",
+      "result_id": "dcc04982-1591-4c82-aabb-673ab886cf05"
+    },
+    {
+      "claim_id": "658d933a-483b-4623-843a-67633cb23eea",
+      "result_id": "dcc04982-1591-4c82-aabb-673ab886cf05"
+    },
+    {
+      "claim_id": "b8f6caf3-c389-4a41-a9c1-bb7a1bc122df",
+      "result_id": "dcc04982-1591-4c82-aabb-673ab886cf05"
+    },
+    {
+      "claim_id": "08d8dbc4-04b7-4f97-be51-6362f4454fc2",
+      "result_id": "dcc04982-1591-4c82-aabb-673ab886cf05"
+    },
+    {
+      "claim_id": "05436f90-1971-4b7e-a911-1f6c5f0fe08f",
+      "result_id": "dcc04982-1591-4c82-aabb-673ab886cf05"
+    },
+    {
+      "claim_id": "496ee632-f31c-4040-9966-d3b78357d1e3",
+      "result_id": "dcc04982-1591-4c82-aabb-673ab886cf05"
+    },
+    {
+      "claim_id": "edf25363-f039-418d-a1a0-c74d4b37221e",
+      "result_id": "dcc04982-1591-4c82-aabb-673ab886cf05"
+    },
+    {
+      "claim_id": "e0b86479-0034-4f3f-9fd8-c2c23718aefb",
+      "result_id": "dcc04982-1591-4c82-aabb-673ab886cf05"
+    }
+  ],
+  "comparisons": []
+}

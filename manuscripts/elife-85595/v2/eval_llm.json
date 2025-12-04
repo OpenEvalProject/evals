@@ -1,0 +1,244 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "High glucose conditions increase O-GlcNAcylation of DNMT1 in multiple cell types and in vivo. This was demonstrated in Hep3B, HepG2, B-cell-derived lymphocytes, PBMCs, and mouse liver samples from HF/HS diet-fed mice. The effect is independent of changes in OGT or OGA activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C36 provide converging evidence from multiple cell types (Hep3B, HepG2, lymphocytes, PBMCs) and in vivo mouse models showing increased O-GlcNAcylation of DNMT1 with high glucose/sucrose treatment. The data include appropriate controls (TMG/OSMI treatments, enzyme activity assays) and demonstrate reproducibility across biological systems. The claim that OGT/OGA activity is unchanged (C32) strengthens the conclusion that substrate availability drives the modification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "S878 in the BAH1 domain is the major O-GlcNAcylation site on human DNMT1, with T158 as a secondary site. S878 is evolutionarily conserved from vertebrates to Arabidopsis thaliana. Mass spectrometry also identified three previously unreported phosphorylation sites (T208, S209, S1122).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C42 combine computational prediction (OGTSite), mass spectrometry identification, evolutionary conservation analysis, and functional validation via alanine mutagenesis. The S878A mutant shows >50% reduction in O-GlcNAcylation (C41), supporting S878 as the major site. The convergence of multiple independent methods (MS, mutagenesis, conservation) provides strong evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C52",
+      "C53"
+    ],
+    "result": "O-GlcNAcylation of DNMT1-S878 inhibits its DNA methyltransferase activity. High glucose/TMG treatment reduces DNMT1 activity in cell lines, PBMCs, and mouse liver. The S878A mutant is resistant to this inhibition, while the T158A mutant and S878D phosphomimetic are not, demonstrating specificity for O-GlcNAcylation at S878.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C50, C52-C53 demonstrate dose-dependent inhibition of DNMT1 activity across multiple systems (cell lines, primary cells, mouse tissue). The critical evidence is that the S878A mutant is not inhibited by high glucose/TMG (C47), while T158A behaves like WT (C49) and the phosphomimetic S878D is also not inhibited (C52), establishing that O-GlcNAcylation specifically at S878 causes the functional effect. The use of multiple mutants provides strong mechanistic evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "O-GlcNAcylation of DNMT1-S878 causes global loss of DNA methylation. High glucose/TMG treatment leads to methylation loss comparable to DNMT inhibitor GSK-3484862, but this effect is absent in the S878A mutant. Phosphorylation at S878 does not correlate with methylation loss.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C61 demonstrate that the functional consequence of S878 O-GlcNAcylation is loss of DNA methylation, measured by LINE-1 assay, restriction enzyme digestion, and nanopore sequencing. The S878A mutant shows no methylation loss (C55, C60), establishing causality. The phosphomimetic control (C57) rules out phosphorylation as the mechanism. Multiple orthogonal methylation assays strengthen the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C62",
+      "C64",
+      "C65",
+      "C67",
+      "C68"
+    ],
+    "result": "O-GlcNAcylation of DNMT1 causes preferential loss of DNA methylation at partially methylated domains (PMDs), which are gene-poor, contain lowly transcribed genes, and correspond to late-replicating regions. This effect is not observed in S878A mutant cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62, C64-C65, C67-C68 use genome-wide nanopore sequencing to show that methylation loss is not uniform but preferentially affects PMDs with specific genomic features (gene-poor, low transcription, late replication). The S878A mutant does not show this pattern (C68), confirming specificity. The characterization of PMD features is consistent with established knowledge (C63, C66) and provides mechanistic insight into how DNMT1 inhibition manifests genome-wide.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "High glucose conditions cause methylation loss at transposable elements, with greater loss at LINEs and LTRs than SINEs. Evolutionarily young TEs (e.g., LTR12C) are protected from methylation loss, possibly through binding by KRAB zinc-finger proteins ZFP57 and ZNF605. In general, evolutionarily recent elements are less likely to lose methylation than older elements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C72, C74-C78 characterize differential effects on TE methylation using nanopore sequencing stratified by TE class and evolutionary age. The observation that LTR12C elements resist methylation loss (C75) is supported by ChIP-exo data showing KZFP binding (C76), providing a mechanistic hypothesis (C77). The evolutionary age analysis (C78) is comprehensive. However, the mechanistic link between KZFP binding and methylation maintenance (C77) is speculative and would benefit from functional validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Loss of DNA methylation from O-GlcNAcylation of DNMT1 is associated with increased DNA damage and apoptosis. High glucose increases ROS in both WT and S878A cells, but DNA damage (\u03b3-H2A.X, 8-OHdG) and cell death are reduced in S878A cells despite high ROS, suggesting DNA methylation partially mitigates ROS-induced damage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C82, C85-C91 link the epigenetic changes to cellular phenotypes. The key observation is that S878A cells show reduced DNA damage (C86-C87) and cell death (C89) despite similar ROS levels (C85), suggesting methylation status affects the cellular response to oxidative stress. Pathway analysis (C79) and apoptosis protein arrays (C80-C82) support the connection. However, the mechanistic link between hypomethylation and increased DNA damage (C88, C90-C91) remains somewhat speculative and correlative rather than definitively causal.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C96",
+      "C99",
+      "C102"
+    ],
+    "result": "The authors propose that O-GlcNAcylation of DNMT1 at S878 disrupts the BAH1 domain function, inhibiting DNMT1 activity and leading to PMD establishment. This provides a mechanism linking glucose metabolism to epigenetic regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C96, C99, C102 are mechanistic interpretations rather than direct experimental observations. While the data strongly support that S878 O-GlcNAcylation inhibits DNMT1 activity and causes PMD formation, the specific mechanism of BAH1 domain disruption is not directly demonstrated. Structural studies, domain deletion experiments, or cofactor binding assays would be needed to confirm how O-GlcNAcylation mechanistically disrupts BAH1 function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C43",
+      "C51",
+      "C63",
+      "C66",
+      "C69",
+      "C70",
+      "C73",
+      "C83",
+      "C84",
+      "C93",
+      "C94",
+      "C95",
+      "C97",
+      "C98",
+      "C100",
+      "C103",
+      "C104",
+      "C105",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "The manuscript provides extensive background on O-GlcNAcylation, DNMT1, PMDs, and their roles in metabolism and disease, establishing the context and significance of the study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C23, C43, C51, C63, C66, C69-C70, C73, C83-C84, C93-C95, C97-C98, C100, C103-C105, C108-C110 are primarily citations of established knowledge from the literature. These provide appropriate context and are generally well-supported by the cited references. These background claims are not novel findings but establish the rationale for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C58"
+    ],
+    "result": "Changes in DNMT1 under hyperglycemia do not impact its nucleocytoplasmic localization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C58 is supported by immunofluorescence data (Figure 3\u2014figure supplement 3) showing no change in DNMT1 localization with high glucose treatment. This negative result is important for ruling out localization changes as a mechanism for the observed functional effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C92",
+      "C106",
+      "C107",
+      "C111"
+    ],
+    "result": "The study establishes that extracellular glucose levels impact epigenomic regulation through O-GlcNAcylation of DNMT1, linking metabolic stress to cell fate through epigenetic mechanisms. The authors suggest potential utility of O-GlcNAcylation as a biomarker and therapeutic target.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92, C107, C111 are broad conclusions well-supported by the collective data. Claim C106 regarding biomarker utility is more speculative and represents a future direction rather than a demonstrated result. The overall conclusion that glucose metabolism affects the epigenome through DNMT1 O-GlcNAcylation is strongly supported by the convergent evidence from multiple experimental approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C101"
+    ],
+    "result": "DNMT1 activity gradually increases with glucose concentrations in a time-dependent manner.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C101 is supported by time-course data in Figure 3\u2014figure supplement 1 showing that DNMT1 activity increases with glucose over time before being inhibited by TMG treatment. This observation is consistent with prior reports (C100) that glucose can activate DNMT1 through other mechanisms (e.g., 25-hydroxycholesterol), and the subsequent inhibition by O-GlcNAcylation represents a counterregulatory mechanism.",
+    "result_type": "MINOR"
+  }
+]

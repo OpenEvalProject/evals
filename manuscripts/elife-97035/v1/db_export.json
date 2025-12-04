@@ -1,0 +1,2152 @@
+{
+  "submission": {
+    "id": "a9d3633b-46c7-4900-b30c-46b29a75b846",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-04T04:40:22.797089Z",
+    "updated_at": "2025-12-04T04:40:22.797089Z"
+  },
+  "content": [
+    {
+      "id": "a562c88d-4ab8-45e2-bce2-b97d5735a677",
+      "submission_id": "a9d3633b-46c7-4900-b30c-46b29a75b846",
+      "content_type": "manuscript",
+      "content_text": "# Post-meiotic mechanism of facultative parthenogenesis in gonochoristic whiptail lizard species\n\n## Authors\n\n- David V Ho<sup>1</sup> ([ORCID: 0000-0002-4709-269X](https://orcid.org/0000-0002-4709-269X))\n- Duncan Tormey<sup>3</sup> ([ORCID: 0000-0002-0963-3424](https://orcid.org/0000-0002-0963-3424))\n- Aaron Odell<sup>1</sup>\n- Aracely A Newton<sup>3</sup>\n- Robert R Schnittker<sup>3</sup> ([ORCID: 0000-0002-2950-8604](https://orcid.org/0000-0002-2950-8604))\n- Diana P Baumann<sup>3</sup>\n- William B Neaves<sup>3</sup>\n- Morgan R Schroeder<sup>3</sup>\n- Rutendo F Sigauke<sup>3</sup>\n- Anthony J Barley<sup>4</sup> ([ORCID: 0000-0003-1675-6577](https://orcid.org/0000-0003-1675-6577))\n- Peter Baumann<sup>1</sup> ([ORCID: 0000-0003-4892-1485](https://orcid.org/0000-0003-4892-1485)) \u2020\n\n### Affiliations\n\n1. Department of Biology, Johannes Gutenberg University Mainz Germany ([ROR:023b0x485](https://ror.org/023b0x485))\n2. Institute of Quantitative and Computational Biosciences, Johannes Gutenberg University Mainz Germany ([ROR:023b0x485](https://ror.org/023b0x485))\n3. Stowers Institute for Medical Research Kansas City United States ([ROR:04bgfm609](https://ror.org/04bgfm609))\n4. School of Mathematical and Natural Sciences, Arizona State University\u2013West Valley Campus Glendale United States ([ROR:03efmqc40](https://ror.org/03efmqc40))\n5. Institute of Molecular Biology Mainz Germany ([ROR:05kxtq558](https://ror.org/05kxtq558))\n\n\u2020 Corresponding author\n\n## Abstract\n\nFacultative parthenogenesis (FP) has historically been regarded as rare in vertebrates, but in recent years incidences have been reported in a growing list of fish, reptile, and bird species. Despite the increasing interest in the phenomenon, the underlying mechanism and evolutionary implications have remained unclear. A common finding across many incidences of FP is either a high degree of homozygosity at microsatellite loci or low levels of heterozygosity detected in next-generation sequencing data. This has led to the proposal that second polar body fusion following the meiotic divisions restores diploidy and thereby mimics fertilization. Here, we show that FP occurring in the gonochoristic Aspidoscelis species A. marmoratus and A. arizonae results in genome-wide homozygosity, an observation inconsistent with polar body fusion as the underlying mechanism of restoration. Instead, a high-quality reference genome for A. marmoratus and analysis of whole-genome sequencing from multiple FP and control animals reveals that a post-meiotic mechanism gives rise to homozygous animals from haploid, unfertilized oocytes. Contrary to the widely held belief that females need to be isolated from males to undergo FP, females housed with conspecific and heterospecific males produced unfertilized eggs that underwent spontaneous development. In addition, offspring arising from both fertilized eggs and parthenogenetic development were observed to arise from a single clutch. Strikingly, our data support a mechanism for facultative parthenogenesis that removes all heterozygosity in a single generation. Complete homozygosity exposes the genetic load and explains the high rate of congenital malformations and embryonic mortality associated with FP in many species. Conversely, for animals that develop normally, FP could potentially exert strong purifying selection as all lethal recessive alleles are purged in a single generation.\n\n## Introduction\n\nIncidences of facultative parthenogenesis (FP) have been reported to occur in diverse vertebrate clades including bony fish (Lampert et al., 2007), sharks (Chapman et al., 2007; Chapman et al., 2008; Feldheim et al., 2010; Dudgeon et al., 2017), snakes (Dubach et al., 1997; Groot et al., 2003; Booth and Schuett, 2011; Germano and Smith, 2010; Booth et al., 2012; Kinney et al., 2013; Booth et al., 2014; Allen et al., 2018; Card et al., 2021), lizards (Lenk et al., 2005; Watts et al., 2006; Kratochv\u00edl et al., 2020), crocodilians (Booth et al., 2023), and birds (Bartelmez and Riddle, 1924; Olsen and Marsden, 1954; Sarvella, 1973; Schut et al., 2008; Ramachandran and McDaniel, 2018; Parker et al., 2010). The phenomenon was originally mistaken for long-term sperm storage occurring in zoo environments where females were housed without current or recent access to conspecific males. The most parsimonious explanation was, therefore, that the animal had previously been in contact with a male and that stored sperm was responsible for delayed fertilization (Booth and Schuett, 2011; Holt and Lloyd, 2010; Sever and Hamlett, 2002). However, more recent studies involving microsatellite (MS) and/or amplified fragment length polymorphism (AFLP) analyses revealed no paternal contributions, as all alleles detected in the offspring were only found in the maternal ancestors (Groot et al., 2003; Booth and Schuett, 2011; Shibata et al., 2017; Ryder et al., 2021; Levine et al., 2024). Females with no access to males producing solely male (ZW systems) or female (XY systems) offspring that only harbor maternal genetic markers are now considered hallmarks of facultative parthenogenesis. Nevertheless, clear examples of long-term sperm storage have also been documented in the recent literature (Levine et al., 2021), underscoring the need for molecular methods such as MS analysis or sequencing data to elucidate the underlying mechanisms. Originally thought to only occur in captivity, more recent reports indicate that FP occurs in natural populations as well (Booth et al., 2012; Fields et al., 2015). Serious concerns have been raised by conservation biologists, as species with dwindling population densities, including the endangered species Komodo dragon (Watts et al., 2006), small tooth sawfish (Fields et al., 2015), California condor (Ryder et al., 2021), and American crocodile (Booth et al., 2023) are overrepresented among reports of FP.\n\nWhile overrepresentation could be a consequence of an increased likelihood of detection in species that are the subject of intense research and conservation efforts, the observations raise the question if FP is an adaptive trait aiding in the colonization of new areas and mitigating the effects of population bottlenecks or is simply a neutral trait (Fields et al., 2015). The adaptive trait hypothesis would of course require successful reproduction of FP animals either sexually or parthenogenetically, which to date has only been documented in a few cases (Kratochv\u00edl et al., 2020; Straube et al., 2016). At the same time, the association of FP with increased homozygosity constitutes a concern for conservation biology, as an increase in FP within dwindling populations further accelerates the loss of genetic diversity, exposes deleterious alleles, and could compromise efforts to maintain the existing gene pool in selective breeding programs (Groot et al., 2003; Booth and Schuett, 2016). FP is also being studied as a desirable outcome in the commercial production of poultry. However, examination of tens of thousands of unfertilized eggs from several different avian species and strains has not resulted in economically sustainable hatching rates thus far. One of the highest hatch rates for unfertilized eggs is seen in the Beltsville small white turkey with a rate of 0.88% (Ramachandran and McDaniel, 2018; Olsen, 1975). A better understanding of the triggers and molecular mechanisms underlying FP and the fitness of the resulting offspring are, therefore, needed in a variety of contexts. These include: to understand a fundamental biological mechanism and its significance in vertebrate evolution, to aid in conservation efforts including captive breeding programs, and to possibly harness FP in an agricultural context (Ryder et al., 2021).\n\nThe high level of homozygosity observed in animals produced by FP has been interpreted as evidence for polar body fusion following meiosis II, also known as automixis, leading to the restoration of diploidy in unfertilized eggs (Figure 1A; Chapman et al., 2007; Card et al., 2021; Booth et al., 2023; Booth and Schuett, 2016; Reynolds et al., 2012). If automixis involves the fusion of one of the meiotic products from the first polar body (central automixis), homozygosity will be concentrated near the chromosome ends and heterozygosity will be preferentially retained near the centromeres as premeiotic recombination strongly favors homologs over sister chromatids and homologs segregate during the first meiotic division. In contrast, a second polar body fusion (terminal automixis) would reunite sister chromatids, for which heterozygosity is preferentially seen near the chromosome termini (Figure 1B). In many cases, heterozygous and homozygous loci appeared to be inherited in FP offspring (Groot et al., 2003; Allen et al., 2018; Card et al., 2021; Kratochv\u00edl et al., 2020; Booth et al., 2023), but information as to the genomic location of these loci has been lacking. Central and terminal automixis are also distinguished by the extent of heterozygosity, with lower levels observed in next-generation sequencing data in snakes and crocodiles suggesting terminal automixis as the likely mechanism (Allen et al., 2018; Card et al., 2021; Booth et al., 2023).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/97035/elife-97035-fig1-v1.jpg)\n\n**Figure 1.:** (A) Schematic of canonical meiosis. Only one pair of homologous chromosomes is shown using red and blue to distinguish homologs. (B) Schematic of main mechanisms by which a diploid oocyte may be produced in the context of facultative parthenogenesis. First polar body fusion, second polar body fusion, or post-meiotic duplication of chromosomes in the haploid gamete. (C) Photographs of Aspidoscelis arizonae with characteristic blue ventral coloration (top), A. gularis with light spots in dark fields that separate light stripes on dorsum (middle), and A. marmoratus with light and dark reticulated pattern on dorsum (bottom). (D) Microsatellite analysis for the three co-housed animals and two offspring (ID 8449 and 8450) produced in this enclosure. Alleles are color-coded as follows: A. arizonae male (blue), A. gularis male (green), and A. marmoratus female (red). Differences in shading highlight the two alleles at heterozygous loci. Both offspring are homozygous at all loci with most alleles matching only maternal alleles. For MS16, offspring alleles are not shaded because of this allele being shared between the mother and the A. gularis male. Single nucleotide differences in size are common binning artifacts and, therefore, are not scored as different alleles.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/97035/elife-97035-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Only alleles that are unique to a potential mother are colored. Single nucleotide differences in size are common binning artifacts and, therefore, are not scored as different alleles. The two offspring were homozygous for all eight markers. At three markers (MS7, MS9, MS10), both offspring inherited alleles only found in animal 122.\n\nWhile facultative parthenogenesis occurs in a wide range of vertebrate species, true obligate parthenogenesis is limited to a few taxa of squamate reptiles including the North American whiptail lizards of the genus Aspidoscelis (Avise, 2015). Historic hybridization events between distinct gonochoristic species in this clade has given rise to numerous hybrid individuals with the ability to reproduce clonally as all female lineages (Vanzolini, 1993; Reeder et al., 2002). In contrast to the increased homozygosity associated with FP, obligate parthenogenetic species are characterized by the long-term preservation of the high degree of heterozygosity that had its origin in the lineage-founding cross-species hybridization events.\n\nOur laboratory has a longstanding interest in the mechanism of obligate parthenogenesis in whiptail lizards (Lutes et al., 2010; Newton et al., 2016). In this context, we are maintaining and propagating individuals of several obligate parthenogenetic as well as gonochoristic species. MS analysis revealed over 20 incidences of FP in the marbled whiptail lizard, A. marmoratus and the Arizona striped whiptail, A. arizonae. (The taxonomy of the genus Aspidoscelis has undergone frequent revisions and the maternal ancestor of the obligate parthenogenetic species A. neomexicanus was formerly known as the subspecies A. tigris marmoratus and the male ancestor as the subspecies A. inornatus arizonae (Barley et al., 2022a). For the purpose of this manuscript we follow the taxonomic conclusions by Barley et al., 2021). Whiptail lizards have an XX/XY sex determination system (Cole et al., 1969) and all FP offspring are consequently female. The identification of multiple incidences of FP provided us with the opportunity to investigate the mechanism of FP in whiptail lizards through next-generation sequencing. The generation of a genome assembly, in addition to whole-genome sequencing, allowed us to distinguish between different mechanisms for restoring diploidy in FP animals. To address the question of whether FP is limited to animals in captivity, we examined reduced-representation sequencing (RAD-seq) data of 321 whiptail lizards from 15 gonochoristic species sampled in nature. In aggregate, a combination of MS analysis, next-generation sequencing, and cytological analysis allows us to report on both the evidence and mechanism of FP in whiptail lizards and suggest that a baseline incidence of FP may coexist alongside sexual reproduction in some species.\n\n## Results\n\n### Identification of FP in A. marmoratus\n\nIn the context of studying interspecific hybridization among gonochoristic species of whiptail lizards, three female A. marmoratus (ID 122, 4238, 4239) were housed with a male A. arizonae (ID 4272) and a male A. gularis (ID 302) for close to three years. During this period, seven hybrid offspring between A. marmoratus 122 and A. arizonae 4272 were produced and confirmed by MS analysis. These animals will be described in more detail in due course. Surprisingly, two female hatchlings emerged that resembled A. marmoratus rather than the expected products of hybridization with either A. arizonae or A. gularis. Genotyping revealed only a single allele for each of eight MS markers in the two offspring (ID 8449 and 8450, Figure 1D) and identified A. marmoratus (ID 122) as the mother (Figure 1\u2014figure supplement 1). The mother and the male A. arizonae were each heterozygous at five of the eight markers and the A. gularis male at six. Further supporting a uniparental origin of 8449 and 8450, all alleles found in the offspring were also present in the mother (Figure 1D). For seven of the eight markers, neither male shared the allele found in the hatchling lizards, providing strong evidence that neither male fathered the offspring. For the remaining marker MS16, the A. marmoratus mother and the A. gularis male were homozygous for the same allele found in the two offspring, therefore, not allowing a conclusion to be based on this locus. It is important to note that for two of the markers (MS7 and MS15), the two offspring inherited different alleles from the mother, indicating that they are not genetically identical to each other, but have randomly inherited one of the maternal alleles at each locus.\n\nTwo additional eggs (ID 8394 and 9070) were recovered from the same enclosure and found to contain developing embryos. MS analysis also revealed A. marmoratus 122 as the mother and complete homozygosity at all loci. Given that all of these offspring are female, inherited only maternal alleles, and animal 122 had no history of being housed with a conspecific male during its lifetime, both interspecific hybridization and long-term sperm storage are all but ruled out and FP is strongly supported.\n\nFP animals of A. marmoratus presented a unique opportunity to examine the underlying molecular mechanism. The observed homozygosity at all MS loci further promised to aid in the generation of a high-quality genome assembly, as homozygosity circumvents the challenge of collapsing haplotypes into a consensus sequence (Kajitani et al., 2014). To increase homozygosity, inbreeding for 15\u201320 generations is common practice prior to whole-genome sequencing and genome assembly (Zhang et al., 2019; Fang et al., 2012). However, generation times of more than one year make this a costly and time-consuming strategy for many vertebrate species including A. marmoratus.\n\n### Genome sequencing and de novo assembly\n\nThe A. marmoratus genome is distributed over 23 chromosomes as previously demonstrated by metaphase spread analysis (Lowe and Wright, 1966). We used flow cytometry to compare nuclear DNA content of A. marmoratus erythrocytes from whole blood with cells from three species with well-characterized genome sizes. The nuclear DNA content of A. marmoratus was close to that of Danio rerio (1.4 Gb) and we calculated a haploid genome size for A. marmoratus of 1.55 Gb (Figure 2\u2014figure supplement 1A).\n\nGenomic DNA of FP animal 8450 was used to generate short insert paired-end, mate-pair (5 Kb, 8 Kb, 2\u201315 Kb, 40 Kb), and Chicago (Putnam et al., 2016) libraries for Illumina short-read sequencing. The paired-end and mate-pair reads were first assembled with Meraculous (Chapman et al., 2011) yielding an N50 of 1.6 Mb. The subsequent addition of Chicago reads and scaffolding with the HiRise pipeline by Dovetail Genomics produced an assembly of 1,639,530,780 bp distributed over 3826 scaffolds (Supplementary file 1) and raised the scaffold N50 to 32.22 Mb (Figure 2\u2014figure supplement 1B). With a BUSCO completeness score of 96% the A. marmoratus genome assembly is comparable to other recently released reptilian genome assemblies (Figure 2\u2014figure supplement 1C). Over 98% of the assembled sequences are contained within 90 scaffolds of more than 1 Mb in length, making this assembly highly contiguous.\n\nPhylogenetic analysis of shared BUSCO genes with several other reference genomes (Xenopus, zebrafish, medaka, platyfish, tegu, green anole, chicken, mouse, rat, dog, cow, human) confirmed that A. marmoratus is most closely related to the tegu Salvator merianae, another representative of the family Teiidae (Figure 2\u2014figure supplement 2). As transposable elements are a driving force in genome evolution, we examined the repeat content for the A. marmoratus genome. All classes of repeat elements combined amounted to 40.27% of the A. marmoratus assembly, only slightly below that found in other lizards S. merianae and Anolis carolinensis (Figure 2\u2014figure supplement 3A). Strikingly, unclassified repeats make up the largest class of repeat elements in the A. marmoratus genome, an observation that parallels findings in S. merianae. However, a comparison between the unclassified repeats found in A. marmoratus, S. merianae, and A. carolinensis revealed few similarities with only around 10% of the unclassified repeats shared between A. marmoratus and S. merianae, and no significant overlap between these two species and A. carolinensis (Figure 2\u2014figure supplement 3B). While further characterization of the unclassified repeat elements is needed, it is apparent that an impressive expansion of novel repeat element classes has occurred within this clade.\n\nTo annotate the A. marmoratus genome, we assembled a total of 119,728 transcripts from RNA-seq data generated from blood and embryo using Trinity (Supplementary file 2). These transcripts were subsequently used in the MAKER2 gene annotation pipeline, yielding 25,856 protein-coding genes and 44,461 protein isoforms (Supplementary file 3). To assign a putative function, we used BLASTp to query the UniProtKB/Swiss-Prot database (UniProt Consortium, 2018) and found significant hits for 76% of the putative protein-coding genes. Our assembly and annotation pipelines yielded 40 HOX genes and 2 EVX genes in four gene clusters (Figure 2\u2014figure supplement 4). The HOX gene clusters are highly conserved among tetrapods and their complete presence and shared order within each cluster serve as a measure of assembly quality (Kuraku and Meyer, 2009).\n\n### Assessment of heterozygosity\n\nThe presence of only one allele for each of the examined MS markers already suggested widespread homozygosity in A. marmoratus produced by FP, consistent with similar observations in other vertebrate species. The highly contiguous genome assembly now afforded us the opportunity to probe the mechanism of FP by searching for regions of heterozygosity and mapping their relative genomic locations. Towards this aim, we performed whole-genome sequencing for an additional nine animals: four of them produced by FP (ID 12512, 12513, 6993, 9177), two mothers (ID 122, 9721), and three unrelated control animals (ID 003, 001, S30700; Supplementary file 4). Each mother and the controls were heterozygous at several MS markers confirming their origin through sexual reproduction. Following alignment to the reference genome (Supplementary file 5), we defined heterozygous sites as those covered by an even number of reads with two alleles supported by the same number of reads. Sites covered by an odd number of reads were filtered out for this initial analysis. This stringent requirement was chosen to limit the search to apparent heterozygous sites with strong support, decreasing the chance of false positives.\n\nFor all ten individuals, the average sequencing coverage ranged between 15.91 and 20.08 (Figure 2\u2014figure supplement 5). For FP animals, the number of heterozygous sites in a 10 Kb sliding window approaches zero for all sites with mean coverage (Figure 2A). For positions with coverage greater than the average, an increase in apparent heterozygosity was observed, due to the collapse of repetitive sequences during the assembly process. Based on this observation, we limited further analysis to positions in the genome where the coverage is equal to the mean sequencing depth (as defined by rounding the mean sequencing coverage value to the next even integer). For example, for animal 003, the average sequencing coverage is 18.31 (Figure 2\u2014figure supplement 5A) and we only considered sites with a coverage of 20 (Figure 2\u2014figure supplement 6A). This generated between 30,769 and 53,416 heterozygous sites for which two alleles were equally supported in the sexually produced mothers and control animals (Figure 2\u2014figure supplement 6A\u2013E). Far fewer heterozygous sites (between 649 and 928) were observed in the FP animals (Figure 2\u2014figure supplement 6F\u2013J). Plotting the heterozygous sites according to their position in the reference genome illustrates not only their sparsity in the genomes of FP animals, but also reveals their random distribution (Figure 2B). If FP genomes were the product of automixis, regions of homozygosity would be interspersed with regions of heterozygosity. The extent of heterozygosity within the latter would be the same as that observed in the respective mother. The few apparently heterozygous sites identified in FP animals are, therefore, not supporting either form of automixis but are most likely the result of over-assembly of repetitive regions (ie. collapsing paralogous loci into a single representative sequence) and a combination of biological (ie. somatic mutations) and technical errors (ie. PCR and sequencing errors).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/97035/elife-97035-fig2-v1.jpg)\n\n**Figure 2.:** (A) Effect of coverage on the apparent rate of heterozygosity based on evenly split read counts supporting two alleles. Analysis of whole-genome sequencing data for five sexually produced animals (ID 003, 001, 122, S30700, 9721) and five individuals produced by facultative parthenogenetic (FP) animals (ID 6993, 9177, 8450, 12512, 12513) were aligned to the reference genome. In FP animals, the number of heterozygous sites approaches zero for sites with mean coverage (x\u0304=18.37). (B) Scaffolds are ordered from largest to smallest on the x-axis. Red lines indicate borders between ordered scaffolds. Each black dot represents a heterozygous position in the genome defined by having a sequencing coverage equal to the average and equal support for only two alleles. The y-axis position of each data point is a random value between bounds of area shown to spread the data and better illustrate the density of heterozygous sites. (C) Average heterozygous sites, as defined in (B), per 10 Kb window for mothers (orange) and respective FP daughters (purple and pink).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/97035/elife-97035-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Genome size estimation using fluorescence-activated cell sorting (FACs). The standard curve was generated using known genome sizes from fruit flies, zebrafish, and mouse, and then comparing fluorescent intensity with that of erythrocytes from A. marmoratus. (B) N(x)% plot shows the ordered scaffold lengths plotted against the cumulative fraction of the genome. Dashed lines mark the N50 and N90 values. (C) BUSCO analysis of 2586 conserved vertebrate coding genes for A. marmoratus, Salvator merianae, Anolis carolinensis, Shinisaurus crocodilurus, and Alligator mississippiensis. Values for S. crocodilurus and A. mississippiensis were taken from Gao et al., 2017.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/97035/elife-97035-fig2-figsupp2-v1.jpg)\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/97035/elife-97035-fig2-figsupp3-v1.jpg)\n\n**Figure 2\u2014figure supplement 3.:** (A) Repetitive DNA content in Aspidoscelis marmoratus, Salvator merianae, and Anolis carolinensis genomes separated by repeat classes as defined by RepeatMasker. (B) Overlap of unclassified repetitive elements between the three genomes as in (A). (C\u2013E) Distribution of the sizes of unclassified repetitive elements, respectively, for A. marmoratus, S. merianae, and A. carolinensis.\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/97035/elife-97035-fig2-figsupp4-v1.jpg)\n\n**Figure 2\u2014figure supplement 4.:** Red blocks indicate a region of homology was found on the sense strand, blue indicates the antisense strand. EVX1 and EVX2 are also shown, due to their relevance to HOX cluster evolution.\n\n![Figure 2\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/97035/elife-97035-fig2-figsupp5-v1.jpg)\n\n**Figure 2\u2014figure supplement 5.:** (A\u2013J) Animal IDs are shown in the top right corner of each panel, with animals produced by facultative parthenogenesis denoted with \u2018facultative parthenogenesis (FP).\u2019 The distributions were generated by examining the coverage at every position in the reference assembly. Regions with coverage greater than the mean are shaded in gray in each panel.\n\n![Figure 2\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/97035/elife-97035-fig2-figsupp6-v1.jpg)\n\n**Figure 2\u2014figure supplement 6.:** (A\u2013J) The two numbers to the left of each row indicate how many reads support each allele. Animal IDs are shown above each panel, with animals produced by facultative parthenogenesis denoted with \u2018facultative parthenogenesis (FP)\u2019.\n\n![Figure 2\u2014figure supplement 7.](https://cdn.elifesciences.org/articles/97035/elife-97035-fig2-figsupp7-v1.jpg)\n\n**Figure 2\u2014figure supplement 7.:** A scaffold ideogram is shown in blue and coordinates of 167 annotated V2r26 homologs are shown in black.\n\n![Figure 2\u2014figure supplement 8.](https://cdn.elifesciences.org/articles/97035/elife-97035-fig2-figsupp8-v1.jpg)\n\n**Figure 2\u2014figure supplement 8.:** There are 10 additional copies of Vmn2r26 homologs found on Scaffold 45 not identified by MAKER2 (177 total), while genome-wide, we annotated 323 copies. Phylogenetic analysis of the 323 copies with eight other mouse vomeronasal two receptors show that the mouse receptors form their own distinct clade from A. marmoratus and there is substantial sequence diversity among the A. marmoratus homologs. A manual search for additional copies of Vmn2r26 resulted in 478 further hits. Vmn2r26 belongs to a family of receptors known as V2Rs and this estimate on the number of Vmn2r26 homologs ranks A. marmoratus as one of the species with the largest expansion of V2Rs (Shi and Zhang, 2007; Brykczynska et al., 2013).\n\nWhen examining each mother-daughter group, the average number of heterozygous sites per 10 Kb window was greater in the sexually produced mothers across the entire assembly (Figure 2C). For most of the assembly, the average number of heterozygous sites remained close to zero for FP animals. The most notable exception was a region around genomic coordinate 1.0 Gb, but even there the extent of apparent heterozygosity remained below 50% of what is observed in this region for each of the mothers. Examination of the scaffold in question (Scaffold 45) revealed 167 genes annotated as homologous to vomeronasal 2 receptor 26 (Vmn2r26; Figure 2\u2014figure supplement 7, Figure 2\u2014figure supplement 8). Members of this subfamily of receptors are found on the microvilli of the vomeronasal organ, where they are responsible for pheromone detection and play a significant role in social and environmental responses (Ryba and Tirindelli, 1997; Houck, 2009; Su et al., 2009). Given that this genomic region harbors a large cluster of highly similar genes, the most parsimonious explanation for the elevated level of apparent heterozygosity is over-assembly. This conclusion is further supported by the increase in apparent heterozygosity in this region for the mothers and control animals. In aggregate, our analysis strongly supports genome-wide homozygosity for FP animals, inconsistent with either central or terminal automixis. Instead, the results favor a post-meiotic mechanism that restores diploidy by replicating the haploid genome residing in the oocyte following completion of the two meiotic divisions and thereby establishing genome-wide homozygosity in the offspring.\n\n### Cryptic FP in A. arizonae\n\nFollowing the identification of several A. marmoratus generated by FP, we genotyped individuals from two other gonochoristic species housed in our laboratory. While no cases of FP were identified among 80 A. gularis produced eggs in captivity, we identified eight incidences of FP among 832 A. arizonae records between October 2007 and July 2018. During the same period, we recorded 15 incidences of FP among 286 A. marmoratus records (Supplementary file 6). Notably, in all cases, eggs undergoing FP development had been laid in enclosures where females were housed with conspecific males or males of a sister species known to mate with the heterospecific females. Isolation from mating partners was thus not a significant factor in triggering FP. In one enclosure, three A. arizonae females (ID 12850, 12851, 12852) were housed with a conspecific male (ID 12849; Figure 3A). MS analysis of four hatchlings that originated from a single clutch laid in this enclosure identified animal 12852 as the mother of all four animals. Unexpectedly, two of her offspring were homozygous at all eight loci examined, whereas the two others were heterozygous at all loci, identifying animal 12849 as their father (Figure 3B). Therefore, both fertilized and unfertilized eggs developed alongside each other within the same clutch.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/97035/elife-97035-fig3-v1.jpg)\n\n**Figure 3.:** (A) Microsatellite analysis for the four co-housed adult animals (ID 12849, 12850, 12851, 12852) and the four hatchlings (ID 16213, 16214, 16215, 16216) produced in this enclosure. Alleles are color-coded for each potential parent: 12849 male (blue), 12850 female (green), 12851 female (orange), 12852 female (red). Differences in shading highlight the two alleles at heterozygous loci. Offspring 16213 and 16214 are heterozygous at all loci, with most loci having one allele matching 12849 and one allele matching 12852. Offspring 16215 and 16216 are homozygous at all loci, with most alleles matching only the 12852 female. Non-shaded offspring alleles indicate ambiguous inheritance as multiple adult animals share the same allele. Single nucleotide differences in size are common binning artifacts and, therefore, are not scored as different alleles. (B) Pedigree shows the relationship between the four offspring. The single clutch of four contains both sexually (yellow) and facultative parthenogenetically (blue) produced offspring.\n\n### Mixoploid erythrocytes and developmental defects\n\nMicroscopic examination of blood from a newly hatched FP lizard revealed a striking bimodality in the sizes of erythrocyte nuclei when compared to a sexually produced animals (Figure 4A, B). Nuclear size correlates well with DNA content measurements (Walker et al., 1991), suggesting the presence of mixoploidy in the FP animal. Whereas most cells closely resembled those observed in the blood from the sexually produced animal, approximately 10% of red blood cells from the FP animal harbored smaller nuclei, consistent with half the amount of DNA (Figure 4B). In addition, 1.27% contained two small nuclei, indicating that the final cytokinesis during erythrocyte differentiation had failed for some haploid progenitor cells. DNA content analysis by flow cytometry confirmed the presence of haploid cells (Figure 4C). In the blood of sexually produced animals, no haploid or bi-nucleated cells were observed. These observations raise the possibility that the embryonic development of FP animals is initiated with consecutive divisions of a haploid, unfertilized oocyte. At a later stage in development, diploid cells most likely arise via failed cytokinesis. From that point forward, both haploid and diploid cells coexist, and the embryo develops in a mixoploid state. Indicative of a more widespread phenomenon, mixoploidy was also observed in another FP A. marmoratus and in A. arizonae (Figure 4\u2014figure supplement 1). The observed fraction of haploid cells was closer to 1% in these instances.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/97035/elife-97035-fig4-v1.jpg)\n\n**Figure 4.:** (A) Giemsa staining of erythrocytes from a sexually produced Aspidoscelis marmoratus (ID 14744). All cells are diploid (n=601). Scale bar corresponds to 10 \u00b5m. (B) Giemsa staining of erythrocytes from a newly hatched facultative parthenogenetic A. marmoratus (ID 9177). Diploid (n=844), smaller haploid (n=87), and binucleated (n=12) cells are evident. Scale bar corresponds to 10 \u00b5m. (C) DNA content from erythrocytes determined by propidium iodide staining and detection by flow cytometry. Samples are from a sexually produced A. marmoratus (2n, ID 5358), an obligate triploid parthenogen A. exanguis (3n, ID 4950), and facultative parthenogenesis (FP) A. marmoratus (ID 9177). Number of events scored by flow cytometry were 44,145 (2n), 44,043 (3n), and 44,060 (9177). The FP 9177 sample contained an additional peak to the left of the 2 n peak (90.04%), indicating the presence of haploid cells (9.62%).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/97035/elife-97035-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Giemsa staining of erythrocytes from a one-year-old facultative parthenogenetic Aspidoscelis marmoratus (ID 25384). Diploid (n=1661), smaller haploid (white arrow, n=17), and binucleated (black arrow, n=1) cells are evident. Scale bar corresponds to 10 \u03bcm. (B) Giemsa staining of erythrocytes from a sexually produced A. marmoratus (ID 23880). All cells are diploid (n=924). Scale bar corresponds to 10 \u03bcm. (C) Feulgen staining of erythrocytes from a one-year-old facultative parthenogenetic A. arizonae (ID 23507). Diploid (n=130) and smaller haploid (white arrow, n=2) cells are evident. Scale bar corresponds to 10 \u03bcm. (D) Feulgen staining of erythrocytes from a sexually produced A. arizonae (ID 26714). All cells are diploid (n=1506). Scale bar corresponds to 10 \u03bcm.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/97035/elife-97035-fig4-figsupp2-v1.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A) Aspidoscelis marmoratus 25384. No abnormal phenotypes noted. (B) Aspidoscelis arizonae 23507. No abnormal phenotypes noted. (C) A. marmoratus 12512. Misalignment of jaws (*). Agenesis of left eye (**). (D) A. marmoratus 12513. Misalignment of jaws (*). Agenesis of right eye (**). (E) A. marmoratus 6993. Animal was cut from egg with exposed brain. (F) A. marmoratus 8394. Did not hatch. Missing a leg, failure of abdomen closure leading to exposed organs, face abnormalities, and hunched back. (G) A. marmoratus 19688. Did not hatch. Multiple craniofacial deformities. (H) A. marmoratus 25385. Partially emerged from egg with egg yolk still attached. (I) A. arizonae 16216. Agenesis of left eye.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/97035/elife-97035-fig4-figsupp3-v1.jpg)\n\n**Figure 4\u2014figure supplement 3.:** (A) Ovary (left; ID 8450) and diplotene stage germinal vesicle (right; ID 8449). The lizard ovary image is taken with a Leica M205FA dissection microscope. Scale bar corresponds to 1 mm. The germinal vesicle is stained with DAPI. Scale bar corresponds to 10 \u03bcm. (B) Ovary (left; ID 13103) and diplotene stage germinal vesicle (right ID 5359) from sexually produced A. marmoratus. The lizard ovary image is taken with a Leica as described previously. Scale bar corresponds to 1 mm. The germinal vesicle is stained with Acridine Orange (0.01%). Scale bar corresponds to 10 \u03bcm.\n\nGenome-wide loss of heterozygosity exposes functionally compromised alleles that were previously covered by intact alleles on the homologous chromosomes. Depending on the extent of this genetic load, one would expect a substantial fraction of oocytes to not develop at all or for defects to manifest at various stages of embryonic and post-embryonic development. Indeed, of the 23 incidences of FP examined here, only 14 hatched, while the remaining lizards died in ovum (Supplementary file 6). For these nine unhatched eggs, we isolated developed embryos shortly after the expected hatch date and confirmed FP origin by MS analysis. The clutches that produced the 23 confirmed cases of FP contained an additional 24 eggs. For these, development did not initiate or terminated at an earlier stage of development precluding MS analysis. Based on the uncertainty regarding how many of these eggs underwent partial FP development, the incidence of FP may be even higher than reported here.\n\nThe observation of various malformations in several of the FP embryos and hatchlings further supports that genome-wide homozygosity unmasks deleterious alleles. Notable developmental defects included craniofacial abnormalities such as misaligned jaws, agenesis of eyes, missing limbs, and failed abdominal closure (Figure 4\u2014figure supplement 2). Only six out of 16 FP animals (37.5%) hatched with no discernable developmental defects (Figure 4\u2014figure supplement 2 A-B). This is in stark contrast to sexually produced animals, where over 98% of hatchlings (n=687) showed no abnormalities. Additionally, most of the defects noted in sexually produced animals were less severe than in FP animals including bulges in tails or truncated digits. While we have not recorded instances of FP animals producing offspring via FP, as described for the whitespotted bamboo shark (Straube et al., 2016), FP A. marmoratus 8450 did produce two eggs while housed in isolation, but these failed to hatch. Analysis of the ovaries of FP animal 8450 as well as germinal vesicles of its FP sister 8449 revealed no differences in structure and anatomy compared to fertile sexually reproducing animals (Figure 4\u2014figure supplement 3).\n\n### Putative incidences of FP in wild populations of whiptail lizards\n\nAs FP has been associated with captivity in most species where it has been reported, we examined restriction site-associated DNA sequencing (RAD-seq) data for wild animals across 15 gonochoristic species (Figure 5). Because RAD-seq is a form of reduced-representation sequencing (Rivera-Col\u00f3n and Catchen, 2022), we limited further analysis to the 321 individuals that had an average sequencing coverage of at least 20. Computational data analysis revealed five animals (one A. angusticeps and four A. deppii) that had very low levels of heterozygosity at positions of average coverage (<0.05% heterozygous positions). In contrast, the average level of heterozygosity was 0.261% across the dataset, with the highest heterozygosity value at 0.578%. Of the five low heterozygosity animals, A. deppii (ID LDOR30) showed the most striking level of homozygosity affecting all sites but one (Rosner\u2019s Test for Outliers within A. deppii individuals, log-transformation, R=5.127, \u03bb=3.928, p<0.001). This is consistent with the pattern of homozygosity observed with the whole-genome sequencing from FP animals produced in the laboratory. Further fieldwork and analysis will be required to assess the level of FP in natural populations of gonochoristic Aspidoscelis species (and other factors that could influence the observed heterozygosity such as population size, levels of hybridization, and inbreeding). To assess whether all whiptail species can produce viable offspring through FP, larger and broader datasets will be required to compare the incidence of FP between species, especially because animals with developmental defects associated with FP would not have hatched or survived in the wild and would, therefore, not have shown up in the RAD-seq dataset.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/97035/elife-97035-fig5-v1.jpg)\n\n**Figure 5.:** Percent heterozygosity estimates from reduced-representation sequencing (RAD-seq) for 321 whiptail lizards from 15 species. All individuals had an average coverage of at least 20. Each point is an individual, and percent heterozygosity was calculated only for sites where the coverage is equal to the average sequencing coverage. Five points with black borders indicate individuals (one angusticeps and four deppii) with low levels of heterozygosity. The heterozygosity of Aspidoscelis deppii ID LDOR30 (marked with arrow) is far less than that observed for individuals of the same species (Rosner\u2019s Test for Outliers within deppii individuals, p<0.001), having only one called heterozygous position. Species (sample size): angusticeps (Booth et al., 2023), arizonae (Lenk et al., 2005), burti (Germano and Smith, 2010), costatus (Shibata et al., 2017), deppii (Ryba and Tirindelli, 1997), gularis (Olsen and Marsden, 1954), guttatus (Reeder et al., 2002), inornatus (Ryder et al., 2021), lineattissimus (Groot et al., 2003), marmoratus (Allen et al., 2018), occidentalis (Dudgeon et al., 2017), sackii (Groot et al., 2003), scalaris (Streisinger et al., 1981), sexlineatus (Germano and Smith, 2010), tigris (Card et al., 2021).\n\n## Discussion\n\nIn this study, we report over 20 incidences of facultative parthenogenesis in marbled and Arizona striped whiptail lizards. By sequencing and assembling a highly contiguous A. marmoratus genome, we were able to refute automixis as the underlying mechanism in whiptail lizards. Instead, genome-wide homozygosity raises a possibility of a post-meiotic mechanism involving the activation of embryonic development in unfertilized haploid oocytes. Even though FP whiptail lizards are largely comprised of homozygous diploid cells, a fraction of haploid cells persists through development and is readily detectable in young adults. Such mixoploidy and genome-wide homozygosity come at a price. In eight confirmed and 24 suspected cases of FP, development ceased prior to hatching and most FP animals that hatched showed congenital defects. Nevertheless, FP was observed at a rate of 1% and 5% in A. arizonae and A. marmoratus, respectively, and this occurred in the presence of mating partners. Interestingly, these rates are similar to what has been reported for wild populations of two North American pitviper species (Booth et al., 2012). Our findings indicate that FP is far more common in some vertebrate species than previously thought. The purifying selection associated with homozygosity may be an important force in generating additional resilience to counteract the effects of population bottlenecks and inbreeding depression. However, support for this hypothesis is predicated on the fitness and reproduction of FP offspring and, therefore, more long-term studies on seemingly healthy individuals of FP origin are needed.\n\nThe start of embryonic development is tightly coupled to fertilization in many vertebrates as the sperm entering the oocyte triggers a signaling cascade that is essential for the completion of female meiosis and initiation of cell division following karyogamy (Sagata, 1996). This process has been mimicked in the laboratory by piercing frog oocytes with a needle to trigger the signal to complete meiosis and initiate replication and division in the haploid oocyte (Le Peuch et al., 1985; Wolf, 1974). In zebrafish, homozygous embryos are routinely generated by fertilization of oocytes with UV-irradiated sperm, a treatment that destroys the paternal DNA (Streisinger et al., 1981). An oocyte treated in this manner will replicate the intact maternal genome in the absence of karyogamy. If the haploid oocyte is then subjected to heat shock treatment, cytokinesis is prevented resulting in a pseudodiploid oocyte that undergoes a second round of DNA replication followed by mitosis. Thus an entirely homozygous diploid embryo starts to develop (Kroeger et al., 2014). In contrast to human intervention forcing two consecutive rounds of DNA replication to occur without intervening mitosis at the start of embryonic development, our data indicate that one or multiple rounds of DNA replication and mitosis take place in some haploid oocytes of whiptail lizards prior to a skipped mitosis yielding a homozygous diploid cell followed by mixoploid development. Initiation of development in a haploid state may be conserved in avian species as unfertilized turkey eggs can yield embryos that contain 40% of haploid cells at blastoderm followed by a reduction to 1.3% within the blood of hatched birds (Cassar et al., 1998). Depending on the tissue and ploidy distribution, the presence of haploid cells may contribute to abnormal development of specific tissues reported here and elsewhere (Ito et al., 1991; Tanaka et al., 2004). Successful embryonic development from haploid cells that restore the diploid state by duplication has also been observed in a stick insect species (Pijnacker, 1969). In whiptail lizards, we have not been able to examine post-meiotic oocytes as locating the post-meiotic nucleus within a large yolked egg is inherently difficult. The difficulty is compounded by the unpredictability of which eggs will undergo FP development and the need to sacrifice animals to remove eggs.\n\nIn addition to mixoploidy, genome-wide homozygosity constitutes another obstacle to normal development as each recessive deleterious allele is exposed in either the hemizygous state (haploid cells) or homozygous state (diploid cells). Indeed, arrested development and abnormal phenotypes are observed in FP whiptails, as well as in FP animals across many other species (Booth et al., 2023; Booth and Schuett, 2016; Adams et al., 2023; Olsen, 1973). It is important to note though that some whiptails of FP origin developed normally, much like their sexually produced counterparts. At the population level, FP leads to a precipitous reduction in genetic diversity as only one set of alleles is inherited in the next generation. While FP could be an adaptive trait to bridge population bottlenecks when mate encounters are infrequent, small populations already rely heavily on inbreeding and FP further reduces the size of the gene pool (Watts et al., 2006; Ryder et al., 2021).\n\nWhile FP can be considered the most extreme example of inbreeding, it is also the most powerful example of genetic purging as it eliminates most deleterious alleles in a single generation. FP in whiptail lizards and other species could, therefore, be considered a reproductive strategy, akin to mixed-mating systems in plants (Goodwillie et al., 2005). The ability to produce offspring via two different strategies provides a level of reproductive assurance in plants (Busch and Delph, 2012). Indeed, we see parallels to this in our own data in which female whiptails have produced offspring via both sexual reproduction and FP on separate occasions or simultaneously within a single clutch. Within plant species with mixed-mating, there are differences between the rates of selfing and outbreeding between populations, and hypotheses as to why these differences occur include limited pollinator visitation and resource availability (Whitehead et al., 2018). To assess whether the co-occurrence of sexual and FP reproduction in vertebrates can indeed be considered a reproductive strategy rather than biological noise will require further studies to assess the reproductive competence and fecundity of offspring produced by either mode of reproduction. To gain a better understanding of the origin and outcomes of FP in whiptail lizards, it will also be important to identify the triggers. It has been proposed that lack of or limited mate encounters triggers FP, but our data in combination with many other reports (Booth et al., 2012; Booth et al., 2014; Kratochv\u00edl et al., 2020; Ryder et al., 2021; Booth et al., 2011; Feldheim et al., 2023; Larose et al., 2023) rejects the idea that this is the key trigger. Recent work identifying key cell cycle genes inducing FP in two species of Drosophila (Sperling et al., 2023) and selection resulting in higher incidences of parthenogenesis in birds (Parker et al., 2010; Olsen, 1975; Olsen et al., 1968) suggest a genetic basis for the initiation of FP.\n\nOur study adds two species of whiptail lizards to a growing list of vertebrates capable of FP and establishes that it occurs alongside sexual reproduction in the presence of males. Using whole-genome sequencing, we demonstrate that post-meiotic genome duplication is the underlying mechanism. One must now consider the possibility that FP is an adaptive trait and that low rates of successful FP could contribute significantly to genome purification. Sexually mature FP offspring will have a low genetic load and only pass on neutral or mildly deleterious alleles to the next generation. However, a role for FP as an adaptive trait hinges on further studies demonstrating the ability of parthenogens to reproduce themselves either through further FP or sexually. If successive reproduction occurs, FP may reduce the frequency of deleterious alleles within a population, as well as provide reproductive assurance when males are scarce. Additional whole-genome sequencing data for species with documented FP will be needed for a better understanding of the genetic basis, propensity, and evolutionary significance of FP.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Biological sample (Aspidoscelis spp.)</td>\n      <td>Erythrocytes, tail clippings, liver isolation</td>\n      <td>This paper, wild populations</td>\n      <td></td>\n      <td>See Ethics Statement</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Giemsa stain</td>\n      <td>Sigma</td>\n      <td>GS500</td>\n      <td>0.40%</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Schiff\u2019s reagent</td>\n      <td>Fisher Scientific</td>\n      <td>#SS32-500</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Roche gDNA Isolation Kit</td>\n      <td>Roche</td>\n      <td>#11814770001</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>KAPA HTP kit</td>\n      <td>KAPA</td>\n      <td>KK8234</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Nextera Mate-Pair Library Prep Kit</td>\n      <td>Illumina</td>\n      <td>FC-132\u20131001</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>TruSeq RNA Library Prep Kit v2</td>\n      <td>Illumina</td>\n      <td>RS-122\u20132001</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Oligos for MS analysis</td>\n      <td>This paper</td>\n      <td></td>\n      <td>See Supplementary file 7</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Meraculous 2.0</td>\n      <td>https://jgi.doe.gov/data-and-tools/software-tools/meraculous/</td>\n      <td>RRID:SCR_010700</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>BUSCO 3.0.1</td>\n      <td>https://busco.ezlab.org/</td>\n      <td>RRID:SCR_015008</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>RAxML 8.2.11</td>\n      <td>https://cme.h-its.org/exelixis/web/software/raxml/</td>\n      <td>RRID:SCR_006086</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>RepeatModeler 1.0.11</td>\n      <td>https://www.repeatmasker.org/RepeatModeler/</td>\n      <td>RRID:SCR_015027</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>RepeatMasker 4.0.9</td>\n      <td>https://www.repeatmasker.org/</td>\n      <td>RRID:SCR_012954</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>BLAST 2.6.0 &amp; 2.9.0+</td>\n      <td>https://blast.ncbi.nlm.nih.gov/Blast.cgi</td>\n      <td>RRID:SCR_004870</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>BWA 0.7.15</td>\n      <td>https://bio-bwa.sourceforge.net/</td>\n      <td>RRID:SCR_010910</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Picard 1.119</td>\n      <td>https://broadinstitute.github.io/picard/</td>\n      <td>RRID:SCR_006525</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>GATK 3.5</td>\n      <td>https://gatk.broadinstitute.org/hc/en-us</td>\n      <td>RRID:SCR_001876</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>seqtk 1.2-r94</td>\n      <td>https://github.com/lh3/seqtkLi, 2016</td>\n      <td>1.2-r94</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>pysam 0.12.0.1</td>\n      <td>https://github.com/pysam-developers/pysampysam-developers, 2017</td>\n      <td>0.12.0.1</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>pysamstats 0.24.3</td>\n      <td>https://github.com/alimanfoo/pysamstatsMiles, 2015</td>\n      <td>0.24.3</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Trinity</td>\n      <td>https://github.com/trinityrnaseq/trinityrnaseqtrinityrnaseq, 2015</td>\n      <td>2.0.6</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>seqclean</td>\n      <td>https://sourceforge.net/projects/seqclean</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>MAKER2 2.31.8</td>\n      <td>https://www.yandell-lab.org/software/maker.html</td>\n      <td>RRID:SCR_005309</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Interproscan 5.13\u201352.0</td>\n      <td>https://interproscan-docs.readthedocs.io/en/latest/</td>\n      <td>RRID:SCR_005829</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Exonerate 2.4.0</td>\n      <td>https://www.ebi.ac.uk/about/vertebrate-genomics/software/exonerate</td>\n      <td>RRID:SCR_016088</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Geneious 10.1.3</td>\n      <td>https://www.geneious.com/</td>\n      <td>RRID:SCR_010519</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Stacks 2.62</td>\n      <td>https://catchenlab.life.illinois.edu/stacks/</td>\n      <td>RRID:SCR_003184</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Micromanager 1.4</td>\n      <td>https://micro-manager.org/</td>\n      <td>RRID:SCR_000415</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Flowjo treestar</td>\n      <td>https://www.flowjo.com/</td>\n      <td>RRID:SCR_008520</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Microsatellite analysis\n\nDNA was extracted from tail samples for microsatellite genotyping as described in Lutes et al., 2011. PCR products were analyzed by capillary electrophoresis on a 3730 DNA Analyzer and data was analyzed using GeneMapper (v. 4.0). Primer information can be found in Supplementary file 7.\n\n### Genome size estimation\n\nThe genome size of A. marmoratus was estimated by fluorescence-activated cell sorting (FACs), in which a standard curve correlating fluorescence intensity of DNA-bound propidium iodide with known genome sizes was generated using cells from fruit flies, zebrafish, and mouse, and then comparing fluorescent intensity with that of erythrocytes from A. marmoratus. Samples were stained using the Sigma PI staining preparation and analyzed on the Influx cytometer. PI fluorescence was collected using the PI Texas red detector with linear amplification and data analysis was performed in FlowJo and Microsoft Excel.\n\n### DNA isolation, sequencing, and genome assembly for A. marmoratus\n\nAll genome sequencing libraries generated for the purpose of the A. marmoratus genome assembly were derived from the FP animal 8450. The liver tissue was first dissociated in a 10 mL Dounce homogenizer using the tight-fitting pestle and then processed using the Roche gDNA Isolation Kit (#11814770001, MilliporeSigma, St. Louis, MO, USA).\n\nA short insert, high-coverage library was generated using the KAPA HTP kit (KK8234), with 1 \u00b5g of gDNA. The resulting library was size selected for fragments between 500\u2013850 bp on a Pippin Prep (Sage Science). Two 40 Kb mate-pair libraries were generated by Lucigen from 1 \u00b5g of gDNA using the CviQl and BfaI restriction enzymes, respectively. Each library was sequenced on the Illumina MiSeq using the MiSeq Reagent Kit v2 (500 cycles). An additional three mate-pair libraries were generated, spanning distances of 5 Kb, 8 Kb, and 2\u201315 Kb, using the Illumina Nextera Mate-Pair Library Prep Kit and 1 \u00b5g of gDNA for each. Size selection used the Gel-Plus protocol with Pippin for the 5 and 8 Kb libraries, and the Gel-Free protocol for the 2\u201315 Kb library. All three libraries were pooled and sequenced on three separate RapidSeq flow cells on an Illumina HiSeq 2500. Chicago libraries were prepared at Dovetail Genomics LLC, Santa Cruz, CA, USA from liver tissue to generate read pairs spanning distances up to 140 Kb and sequenced on an Illumina HiSeq 2500. The combined sequencing data was initially assembled at Dovetail Genomics using Meraculous and their in-house HiRise genome assembly algorithms to generate the A. marmoratus reference genome (AspMar1.0).\n\n### Assessing assembly completeness\n\nIn order to assess the completeness of the A. marmoratus reference genome, we used BUSCO (v. 3.0.1) (Sim\u00e3o et al., 2015) with the vertebrate_od9 dataset containing 2586 genes, with default parameters apart from changing the BLAST cutoff from 1e-3 to a more stringent value of 1e-6. We used BUSCO numbers generated in Gao et al., 2017 for Shinisaurus crocodilurus and Alligator mississippiensis in Figure 2\u2014figure supplement 1.\n\nTo perform a phylogenetic analysis, 1333 shared \u2018complete\u2019 single-copy orthologs were identified in the genomes of green anole (Anolis carolinensis, anoCar2), cow (Bos taurus, ARS-UCD1.2), dog (Canis lupus familiaris, CanFam3.1), zebrafish (Danio rerio, danRer10), chicken (Gallus gallus, galGal5), human (Homo sapiens, GRCh38.p13), mouse (Mus musculus, GRCm38.p6), medaka (Oryzias latipes, oryLat2), rat (Rattus norvegicus, Rnor_6.0), Argentine black and white tegu (Salvator merianae, HLtupMer3), western clawed frog (Xenopus tropicalis, Xenopus_tropicalis_v9.1), platyfish (Xiphophorus maculatus, X_maculatus-5.0-male). For each amino acid sequence, a multiple sequence alignment was performed with MAFFT (v. 7.305) (Katoh and Standley, 2013). The alignments were concatenated into a supermatrix of 1,112,277 amino acids. Phylogenetic tree topology was estimated using the Maximum Likelihood inference method using the pthreads version of RAxML (v. 8.2.11) and the PROTOGAMMAAUTO model for sequence evolution with 100 bootstrap replicates (Stamatakis, 2014).\n\n### Repeat identification\n\nWe quantified and annotated the repetitive DNA content within the A. marmoratus genome assembly by using the RepeatMasker pipeline on A. marmoratus scaffolds greater than or equal to 10 Kb in length. We first generated a de novo list of A. marmoratus repetitive elements using RepeatModeler (v. 1.0.11) (Smit and Hubley, 2008). We then used these as input into RepeatMasker (v. 4.0.9) (Smit et al., 2008) using the NCBI/RMBLAST (v. 2.6.0+) search engine. Unclassified repeat element consensus sequences from the RepeatModeler output for each of the three lizards (A. marmoratus, S. merianae, and A. carolinensis) were compared to each other by identifying reciprocal best hits using BLAST (v. 2.9.0+).\n\n### Whole-genome sequencing, reference genome alignment, and heterozygosity determination\n\nGenomic DNA isolated from either liver or tail was prepared for sequencing using the KAPA HTP Library Preparation Kit (KK8234). Stock adapters were used from the Nextflex kit and barcodes were from BioScientific. All libraries were sequenced on the Illumina HiSeq 2500 platform. Whole-genome sequencing data was aligned to the A. marmoratus reference genome with BWA (v. 0.7.15) (Li and Durbin, 2010) and marked for duplicates with Picard (RRID:SCR_006525; v. 1.119; https://broadinstitute.github.io/picard/). Because samples were sequenced over multiple lanes, the alignment files were merged subsequently, and another round of duplication marking was performed. The alignment files were realigned around small insertions and deletions with GATK (v. 3.5) (DePristo et al., 2011). Data corresponding to lizard ID 122\u2019s bam file was down-sampled to 33% of its original size using seqtk (v. 1.2-r94) to match the expected average genome coverage of the other samples, as this animal was sequenced on one flow cell without multiplexing and, therefore, having much more sequenced reads.\n\nThe per position nucleotide profiles for each alignment were then generated using a combination of pysam (RRID:SCR_021017, v. 0.12.0.1) (https://github.com/pysam-developers/pysam) and pysamstats (Miles, 2015. v. 0.24.3) (https://github.com/alimanfoo/pysamstats) to determine the heterozygosity at any genomic position.\n\n### Transcriptome assembly and genome annotation\n\nTwo poly-A selected stranded RNA-sequencing libraries were generated with the TruSeq RNA Library Prep Kit v2 (RS-122\u20132001) and sequenced on an Illumina HiSeq 2500 for the purpose of an A. marmoratus transcriptome assembly. The first library was derived from a blood sample taken from a male animal, and the second library was derived from an embryo incubated at 28 \u00b0C and harvested 47\u201351 days post-egg deposition.\n\nTrinity (v. 2.0.6) (Grabherr et al., 2011) was then used to generate an initial transcriptome assembly. The original reads were aligned to this transcriptome assembly using the Trinity companion script align_and_estimate_abundance.pl. Transcript isoforms with no read support were then filtered out and the remaining assembly was run through seqclean (https://sourceforge.net/projects/seqclean/). Evidence-based annotations for the transcriptome assembly were generated using the MAKER2 pipeline (v. 2.31.8) (Holt and Yandell, 2011). For MAKER2, the entire UniProtKB/Swiss-Prot database of proteins (UniProt Consortium, 2018) was used and the Repbase data base was used to mask repeats within the MAKER2 framework (Bao et al., 2015). Assigning putative functions to the gene models was performed using BLAST (v. 2.6.0) and Interproscan (v. 5.13\u201352.0) (Jones et al., 2014).\n\nCopy number estimation for the Vomeronasal 2 receptor 26 (Vmn2r26) genes was based on aligning the mouse ortholog (http://www.orthodb.org), to the A. marmoratus reference assembly using Exonerate (v. 2.4.0) (Slater and Birney, 2005) with a maximum intron size set to 20 Kb. Genes annotated as Vmn2r26 in the MAKER2 annotations were concatenated and aligned using Geneious (v. 10.1.3) (Geneious Prime, 2017) with default settings. The FastTree plugin (v. 1.0) was used to generate the phylogenetic tree from the alignment with default parameters.\n\n### RAD-sequencing analysis\n\nDouble digest RAD-sequencing data was derived primarily from previous studies (Barley et al., 2021; Barley et al., 2022b; Barley et al., 2019; Barley et al., 2022a). Fastq files were processed with Stacks (v. 2.62) using process_radtags and then samples from the same species were passed separately using denovo_map.pl. The script executes all the components of the standard Stacks pipeline. The gstacks program of denovo_map.pl calls variants for each position in each locus and assigns it either homozygous, heterozygous, or unknown. Output files were used to calculate the average coverage for each sample. Samples that have at least a coverage of 20 were considered for subsequent analysis. For each passing sample, the heterozygosity was calculated for sites at average coverage by adding up all heterozygous positions and dividing it by the total.\n\n### Giemsa staining of erythrocytes\n\nWhole blood was collected aseptically from tails using acid citrate dextrose as an anticoagulant. All samples were prepared immediately after collection. A 5 \u00b5L aliquot of the diluted blood sample was used to prepare a blood smear on a 25 \u00d7 75 \u00d7 1 mm microscope slide. Once dry, the slide was placed in 95% ethanol for 5 min. Giemsa stain (0.4%; Sigma, GS500) was applied liberally to cover the slide every 4 min for a total incubation time of 16 min. The prepared slides were imaged on an Axioplan2 imaging microscope equipped with a plan-apochromat 100 x /1.40 Oil objective and an Axiocam HRc (color) camera (Zeiss). Micromanager (v. 1.4) software was used to acquire the images. The acquired images were then scored visually for the number of haploid, diploid, and binucleated erythrocytes.\n\n### Feulgen staining of erythrocytes\n\nWhole blood was collected aseptically from tails using acid citrate dextrose as an anticoagulant. All samples were prepared immediately after collection. A 5 \u00b5L aliquot of the diluted blood sample was used to prepare a blood smear on a 25 \u00d7 75 \u00d7 1 mm microscope slide. Blood smears were treated with 10% neutral buffered formalin for 5 min at RT, then rinsed twice in distilled water. The slides were immersed in 5 M HCl for 30 min at RT, and then rinsed 2 times in distilled water. Slides were then immersed in Schiff\u2019s reagent (Fisher Scientific #SS32-500) at RT for 15\u201330 min until nuclei were stained. The slides were transferred directly to bisulfite water that was prepared by dissolving 2.5 g of potassium metabisulfite in 500 mL of water and adjusting the pH to 4.0 by the addition of concentrated HCl. The bisulfite wash was repeated three times with 10\u201315 sec of agitation. The slide was then washed under running tap water for 2 min and dehydrated by incubating in 70% EtOH for 5 min and then 95% EtOH for 5 min. The preparations were cleared in xylene before mounting.\n\n### Flow cytometry of erythrocytes\n\nBlood collected from animals was treated as previously described for flow cytometry with modifications: ethanol fixation was performed after RNase treatment and propidium iodide staining was performed overnight, followed by sonication to disrupt aggregate cells (Lutes et al., 2011). A minimum number of 50,000 events were collected for each sample. Flowjo (treestar) was used for data analysis.\n\n### Imaging of ovaries and germinal vesicle\n\nGerminal vesicle isolation and acquisition of image stacks by confocal microscopy were performed as described (Lutes et al., 2010). Ovary images were acquired with a Leica M205FA dissection microscope with a planar 0.63 X objective using Micromanager (v. 1.4) software.\n",
+      "created_at": "2025-12-04T04:40:22.797089Z"
+    },
+    {
+      "id": "53ced55f-4c0e-4e35-b413-aebf105283ca",
+      "submission_id": "a9d3633b-46c7-4900-b30c-46b29a75b846",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Detlef Weigel, https://ror.org/0243gzr89 Max Planck Institute for Biology T\u00fcbingen Germany\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.97035.sa0](https://doi.org/10.7554/eLife.97035.sa0)\n\nIn this valuable paper, convincing evidence is provided for the production of facultatively parthenogenetic whiptail lizards through a gametic duplication. The audience for the work will be broad, given that parthenogenesis is such a fascinating topic.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Detlef Weigel, https://ror.org/0243gzr89 Max Planck Institute for Biology T\u00fcbingen Germany\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.97035.sa1](https://doi.org/10.7554/eLife.97035.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\n[Editors' note: this paper was reviewed by Review Commons.]\n\nThank you for resubmitting your work entitled \"Post-meiotic mechanism of facultative parthenogenesis in gonochoristic whiptail lizard species\" for further consideration by eLife. Your revised article has been evaluated by Detlef Weigel as Senior and Reviewing Editor.\n\nReviewer #2 (Recommendations for the authors):\n\nThe authors have responded appropriately to my suggestions. There is just one lingering area of concern in lines 209-219. First, the authors refer to defining heterozygous sites as having two alleles supported by the \"same\" number of reads (changed from \"equal\"), but what does \"same\" mean? Presumably it's not the exact same number of reads, because this would exclude all sites with an odd number of reads. So how is \"same\" defined? An analogous issue applies to the \"coverage equal to the mean sequencing depth\". What \"equal\" needs in this context needs to be precisely defined.\n",
+      "created_at": "2025-12-04T04:40:22.797089Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T04:40:22.797089Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T04:40:22.797089Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "c04533e2-fb93-4255-a53e-9718c57aafbe",
+      "content_id": "a562c88d-4ab8-45e2-bce2-b97d5735a677",
+      "claim_id": "C1",
+      "claim": "Facultative parthenogenesis (FP) has been reported in bony fish.",
+      "claim_type": "EXPLICIT",
+      "source": "Incidences of facultative parthenogenesis (FP) have been reported to occur in diverse vertebrate clades including bony fish (Lampert et al., 2007)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Lampert et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:40:22.797089Z"
+    },
+    {
+      "id": "b20eb7d0-1867-4778-87eb-6af5e3dec10a",
+      "content_id": "a562c88d-4ab8-45e2-bce2-b97d5735a677",
+      "claim_id": "C2",
+      "claim": "Facultative parthenogenesis (FP) has been reported in sharks.",
+      "claim_type": "EXPLICIT",
+      "source": "Incidences of facultative parthenogenesis (FP) have been reported to occur in diverse vertebrate clades including bony fish (Lampert et al., 2007), sharks (Chapman et al., 2007; Chapman et al., 2008; Feldheim et al., 2010; Dudgeon et al., 2017)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple citations to Chapman et al., 2007; Chapman et al., 2008; Feldheim et al., 2010; Dudgeon et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:40:22.797089Z"
+    },
+    {
+      "id": "c128f175-0e47-43b3-89a1-a565a3456586",
+      "content_id": "a562c88d-4ab8-45e2-bce2-b97d5735a677",
+      "claim_id": "C3",
+      "claim": "Facultative parthenogenesis (FP) has been reported in snakes.",
+      "claim_type": "EXPLICIT",
+      "source": "Incidences of facultative parthenogenesis (FP) have been reported to occur in diverse vertebrate clades including bony fish (Lampert et al., 2007), sharks (Chapman et al., 2007; Chapman et al., 2008; Feldheim et al., 2010; Dudgeon et al., 2017), snakes (Dubach et al., 1997; Groot et al., 2003; Booth and Schuett, 2011; Germano and Smith, 2010; Booth et al., 2012; Kinney et al., 2013; Booth et al., 2014; Allen et al., 2018; Card et al., 2021)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple citations to studies on snakes.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:40:22.797089Z"
+    },
+    {
+      "id": "2885dc26-afb0-4cf0-a69b-68867dc6bd72",
+      "content_id": "a562c88d-4ab8-45e2-bce2-b97d5735a677",
+      "claim_id": "C4",
+      "claim": "Facultative parthenogenesis (FP) has been reported in lizards.",
+      "claim_type": "EXPLICIT",
+      "source": "Incidences of facultative parthenogenesis (FP) have been reported to occur in diverse vertebrate clades including bony fish (Lampert et al., 2007), sharks (Chapman et al., 2007; Chapman et al., 2008; Feldheim et al., 2010; Dudgeon et al., 2017), snakes (Dubach et al., 1997; Groot et al., 2003; Booth and Schuett, 2011; Germano and Smith, 2010; Booth et al., 2012; Kinney et al., 2013; Booth et al., 2014; Allen et al., 2018; Card et al., 2021), lizards (Lenk et al., 2005; Watts et al., 2006; Kratochv\u00edl et al., 2020)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Lenk et al., 2005; Watts et al., 2006; Kratochv\u00edl et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:40:22.797089Z"
+    },
+    {
+      "id": "23b17d4a-ea6e-4b12-af90-8be678a92e31",
+      "content_id": "a562c88d-4ab8-45e2-bce2-b97d5735a677",
+      "claim_id": "C5",
+      "claim": "Facultative parthenogenesis (FP) has been reported in crocodilians.",
+      "claim_type": "EXPLICIT",
+      "source": "Incidences of facultative parthenogenesis (FP) have been reported to occur in diverse vertebrate clades including bony fish (Lampert et al., 2007), sharks (Chapman et al., 2007; Chapman et al., 2008; Feldheim et al., 2010; Dudgeon et al., 2017), snakes (Dubach et al., 1997; Groot et al., 2003; Booth and Schuett, 2011; Germano and Smith, 2010; Booth et al., 2012; Kinney et al., 2013; Booth et al., 2014; Allen et al., 2018; Card et al., 2021), lizards (Lenk et al., 2005; Watts et al., 2006; Kratochv\u00edl et al., 2020), crocodilians (Booth et al., 2023)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Booth et al., 2023.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:40:22.797089Z"
+    },
+    {
+      "id": "353085e2-fa77-4c16-bc93-c1c101533e9d",
+      "content_id": "a562c88d-4ab8-45e2-bce2-b97d5735a677",
+      "claim_id": "C6",
+      "claim": "Facultative parthenogenesis (FP) has been reported in birds.",
+      "claim_type": "EXPLICIT",
+      "source": "Incidences of facultative parthenogenesis (FP) have been reported to occur in diverse vertebrate clades including bony fish (Lampert et al., 2007), sharks (Chapman et al., 2007; Chapman et al., 2008; Feldheim et al., 2010; Dudgeon et al., 2017), snakes (Dubach et al., 1997; Groot et al., 2003; Booth and Schuett, 2011; Germano and Smith, 2010; Booth et al., 2012; Kinney et al., 2013; Booth et al., 2014; Allen et al., 2018; Card et al., 2021), lizards (Lenk et al., 2005; Watts et al., 2006; Kratochv\u00edl et al., 2020), crocodilians (Booth et al., 2023), and birds (Bartelmez and Riddle, 1924; Olsen and Marsden, 1954; Sarvella, 1973; Schut et al., 2008; Ramachandran and McDaniel, 2018; Parker et al., 2010)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple citations to studies on birds.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:40:22.797089Z"
+    },
+    {
+      "id": "3407a018-fb7c-4840-a98c-cf110e853ead",
+      "content_id": "a562c88d-4ab8-45e2-bce2-b97d5735a677",
+      "claim_id": "C7",
+      "claim": "FP was originally mistaken for long-term sperm storage in zoo environments.",
+      "claim_type": "EXPLICIT",
+      "source": "The phenomenon was originally mistaken for long-term sperm storage occurring in zoo environments where females were housed without current or recent access to conspecific males.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated directly in the text.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:40:22.797089Z"
+    },
+    {
+      "id": "5a9d7e6f-0b92-4c91-aeb2-c72ed435478d",
+      "content_id": "a562c88d-4ab8-45e2-bce2-b97d5735a677",
+      "claim_id": "C8",
+      "claim": "Microsatellite and AFLP analyses revealed no paternal contributions in FP offspring.",
+      "claim_type": "EXPLICIT",
+      "source": "However, more recent studies involving microsatellite (MS) and/or amplified fragment length polymorphism (AFLP) analyses revealed no paternal contributions, as all alleles detected in the offspring were only found in the maternal ancestors (Groot et al., 2003; Booth and Schuett, 2011; Shibata et al., 2017; Ryder et al., 2021; Levine et al., 2024).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple citations to studies using MS and AFLP analyses.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:40:22.797089Z"
+    },
+    {
+      "id": "81887453-3875-4f8e-867e-f3dc85c63850",
+      "content_id": "a562c88d-4ab8-45e2-bce2-b97d5735a677",
+      "claim_id": "C9",
+      "claim": "FP occurs in natural populations as well as in captivity.",
+      "claim_type": "EXPLICIT",
+      "source": "Originally thought to only occur in captivity, more recent reports indicate that FP occurs in natural populations as well (Booth et al., 2012; Fields et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Booth et al., 2012 and Fields et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:40:22.797089Z"
+    },
+    {
+      "id": "719b7ae9-8599-4078-abe5-b6fc23d3fbe3",
+      "content_id": "a562c88d-4ab8-45e2-bce2-b97d5735a677",
+      "claim_id": "C10",
+      "claim": "Endangered species are overrepresented among reports of FP.",
+      "claim_type": "EXPLICIT",
+      "source": "Serious concerns have been raised by conservation biologists, as species with dwindling population densities, including the endangered species Komodo dragon (Watts et al., 2006), small tooth sawfish (Fields et al., 2015), California condor (Ryder et al., 2021), and American crocodile (Booth et al., 2023) are overrepresented among reports of FP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to studies on endangered species showing FP.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:40:22.797089Z"
+    },
+    {
+      "id": "9a7eecae-16b8-48e7-a8d5-3396703ac83a",
+      "content_id": "a562c88d-4ab8-45e2-bce2-b97d5735a677",
+      "claim_id": "C11",
+      "claim": "The high level of homozygosity in FP animals has been interpreted as evidence for polar body fusion following meiosis II.",
+      "claim_type": "EXPLICIT",
+      "source": "The high level of homozygosity observed in animals produced by FP has been interpreted as evidence for polar body fusion following meiosis II, also known as automixis, leading to the restoration of diploidy in unfertilized eggs (Figure 1A; Chapman et al., 2007; Card et al., 2021; Booth et al., 2023; Booth and Schuett, 2016; Reynolds et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to multiple studies and a reference to Figure 1A.",
+      "evidence_type": "[\"CITATION\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:40:22.797089Z"
+    },
+    {
+      "id": "8d1e48dd-bba2-4252-aff8-2e54d56a1536",
+      "content_id": "a562c88d-4ab8-45e2-bce2-b97d5735a677",
+      "claim_id": "C12",
+      "claim": "Central automixis results in homozygosity concentrated near chromosome ends and heterozygosity near centromeres.",
+      "claim_type": "EXPLICIT",
+      "source": "If automixis involves the fusion of one of the meiotic products from the first polar body (central automixis), homozygosity will be concentrated near the chromosome ends and heterozygosity will be preferentially retained near the centromeres as premeiotic recombination strongly favors homologs over sister chromatids and homologs segregate during the first meiotic division.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge of meiotic processes and recombination patterns.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:40:22.797089Z"
+    },
+    {
+      "id": "773cd39a-ffa1-4475-a91c-092c4daaed45",
+      "content_id": "a562c88d-4ab8-45e2-bce2-b97d5735a677",
+      "claim_id": "C13",
+      "claim": "Terminal automixis results in heterozygosity preferentially near chromosome termini.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, a second polar body fusion (terminal automixis) would reunite sister chromatids, for which heterozygosity is preferentially seen near the chromosome termini (Figure 1B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge of meiotic processes and is illustrated in Figure 1B.",
+      "evidence_type": "[\"KNOWLEDGE\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:40:22.797089Z"
+    },
+    {
+      "id": "b9871ae1-4fba-463a-b11c-85189e6bcbbb",
+      "content_id": "a562c88d-4ab8-45e2-bce2-b97d5735a677",
+      "claim_id": "C14",
+      "claim": "Lower levels of heterozygosity in next-generation sequencing data suggest terminal automixis in snakes and crocodiles.",
+      "claim_type": "EXPLICIT",
+      "source": "Central and terminal automixis are also distinguished by the extent of heterozygosity, with lower levels observed in next-generation sequencing data in snakes and crocodiles suggesting terminal automixis as the likely mechanism (Allen et al., 2018; Card et al., 2021; Booth et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to studies using next-generation sequencing data.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:40:22.797089Z"
+    },
+    {
+      "id": "d722c561-73a3-4668-b4e7-d7f5ef127df5",
+      "content_id": "a562c88d-4ab8-45e2-bce2-b97d5735a677",
+      "claim_id": "C15",
+      "claim": "Obligate parthenogenesis in squamate reptiles is limited to a few taxa including North American whiptail lizards of the genus Aspidoscelis.",
+      "claim_type": "EXPLICIT",
+      "source": "While facultative parthenogenesis occurs in a wide range of vertebrate species, true obligate parthenogenesis is limited to a few taxa of squamate reptiles including the North American whiptail lizards of the genus Aspidoscelis (Avise, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Avise, 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:40:22.797089Z"
+    },
+    {
+      "id": "f11db7bc-84c3-4259-ada3-fe68334d85f4",
+      "content_id": "a562c88d-4ab8-45e2-bce2-b97d5735a677",
+      "claim_id": "C16",
+      "claim": "Historic hybridization events in Aspidoscelis have given rise to all-female lineages capable of clonal reproduction.",
+      "claim_type": "EXPLICIT",
+      "source": "Historic hybridization events between distinct gonochoristic species in this clade has given rise to numerous hybrid individuals with the ability to reproduce clonally as all female lineages (Vanzolini, 1993; Reeder et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Vanzolini, 1993 and Reeder et al., 2002.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:40:22.797089Z"
+    },
+    {
+      "id": "ead8b3ac-4b42-48ab-b390-6e9a842e8051",
+      "content_id": "a562c88d-4ab8-45e2-bce2-b97d5735a677",
+      "claim_id": "C17",
+      "claim": "Obligate parthenogenetic species preserve high heterozygosity from founding hybridization events.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to the increased homozygosity associated with FP, obligate parthenogenetic species are characterized by the long-term preservation of the high degree of heterozygosity that had its origin in the lineage-founding cross-species hybridization events.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the contrast between FP and obligate parthenogenesis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:40:22.797089Z"
+    },
+    {
+      "id": "6f9c5c71-5f6b-438a-95b4-41eedecbc145",
+      "content_id": "a562c88d-4ab8-45e2-bce2-b97d5735a677",
+      "claim_id": "C18",
+      "claim": "MS analysis revealed over 20 incidences of FP in A. marmoratus and A. arizonae.",
+      "claim_type": "EXPLICIT",
+      "source": "MS analysis revealed over 20 incidences of FP in the marbled whiptail lizard, A. marmoratus and the Arizona striped whiptail, A. arizonae.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data from microsatellite analysis conducted in this study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:40:22.797089Z"
+    },
+    {
+      "id": "0c77fce9-0777-4a1f-b0e6-b6ecaa81d176",
+      "content_id": "a562c88d-4ab8-45e2-bce2-b97d5735a677",
+      "claim_id": "C19",
+      "claim": "Whiptail lizards have an XX/XY sex determination system.",
+      "claim_type": "EXPLICIT",
+      "source": "Whiptail lizards have an XX/XY sex determination system (Cole et al., 1969) and all FP offspring are consequently female.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Cole et al., 1969.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:40:22.797089Z"
+    },
+    {
+      "id": "2c79d3fa-1d3a-456a-b681-acca4615d8ea",
+      "content_id": "a562c88d-4ab8-45e2-bce2-b97d5735a677",
+      "claim_id": "C20",
+      "claim": "All FP offspring in whiptail lizards are female.",
+      "claim_type": "EXPLICIT",
+      "source": "Whiptail lizards have an XX/XY sex determination system (Cole et al., 1969) and all FP offspring are consequently female.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the XX/XY sex determination system and the mechanism of FP.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:40:22.797089Z"
+    },
+    {
+      "id": "c3c055e7-1abc-4895-a82c-c255e16d14dc",
+      "content_id": "a562c88d-4ab8-45e2-bce2-b97d5735a677",
+      "claim_id": "C21",
+      "claim": "Three female A. marmoratus were housed with a male A. arizonae and a male A. gularis for close to three years.",
+      "claim_type": "EXPLICIT",
+      "source": "In the context of studying interspecific hybridization among gonochoristic species of whiptail lizards, three female A. marmoratus (ID 122, 4238, 4239) were housed with a male A. arizonae (ID 4272) and a male A. gularis (ID 302) for close to three years.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the experimental setup and is directly stated in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:40:22.797089Z"
+    },
+    {
+      "id": "da626593-9764-44a4-888e-ea17983d8709",
+      "content_id": "a562c88d-4ab8-45e2-bce2-b97d5735a677",
+      "claim_id": "C22",
+      "claim": "Seven hybrid offspring between A. marmoratus 122 and A. arizonae 4272 were produced and confirmed by MS analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "During this period, seven hybrid offspring between A. marmoratus 122 and A. arizonae 4272 were produced and confirmed by MS analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by microsatellite analysis data from this study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:40:22.797089Z"
+    },
+    {
+      "id": "45597176-2257-4061-aaad-883a914d1f55",
+      "content_id": "a562c88d-4ab8-45e2-bce2-b97d5735a677",
+      "claim_id": "C23",
+      "claim": "Two female hatchlings (ID 8449 and 8450) resembled A. marmoratus rather than hybrids.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, two female hatchlings emerged that resembled A. marmoratus rather than the expected products of hybridization with either A. arizonae or A. gularis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on morphological observation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:40:22.797089Z"
+    },
+    {
+      "id": "2031714c-cf38-4d2b-a359-b6b762043d5b",
+      "content_id": "a562c88d-4ab8-45e2-bce2-b97d5735a677",
+      "claim_id": "C24",
+      "claim": "Genotyping revealed only a single allele for each of eight MS markers in offspring ID 8449 and 8450.",
+      "claim_type": "EXPLICIT",
+      "source": "Genotyping revealed only a single allele for each of eight MS markers in the two offspring (ID 8449 and 8450, Figure 1D) and identified A. marmoratus (ID 122) as the mother (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by microsatellite genotyping data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:40:22.797089Z"
+    },
+    {
+      "id": "3da7b787-8eec-419e-9516-c1cc553e1e5a",
+      "content_id": "a562c88d-4ab8-45e2-bce2-b97d5735a677",
+      "claim_id": "C25",
+      "claim": "A. marmoratus ID 122 was identified as the mother of offspring 8449 and 8450.",
+      "claim_type": "EXPLICIT",
+      "source": "Genotyping revealed only a single allele for each of eight MS markers in the two offspring (ID 8449 and 8450, Figure 1D) and identified A. marmoratus (ID 122) as the mother (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by microsatellite analysis data shown in Figure 1D and Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:40:22.797089Z"
+    },
+    {
+      "id": "9a3a8182-5501-46b3-b8ef-24b9b8324c1c",
+      "content_id": "a562c88d-4ab8-45e2-bce2-b97d5735a677",
+      "claim_id": "C26",
+      "claim": "All alleles found in offspring 8449 and 8450 were also present in the mother (ID 122).",
+      "claim_type": "EXPLICIT",
+      "source": "Further supporting a uniparental origin of 8449 and 8450, all alleles found in the offspring were also present in the mother (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by microsatellite data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:40:22.797089Z"
+    },
+    {
+      "id": "24e28c89-9978-43de-8fbf-d5edebf6a79a",
+      "content_id": "a562c88d-4ab8-45e2-bce2-b97d5735a677",
+      "claim_id": "C27",
+      "claim": "For seven of eight markers, neither male shared the allele found in offspring 8449 and 8450.",
+      "claim_type": "EXPLICIT",
+      "source": "For seven of the eight markers, neither male shared the allele found in the hatchling lizards, providing strong evidence that neither male fathered the offspring.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by microsatellite analysis data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:40:22.797089Z"
+    },
+    {
+      "id": "d0db75b1-02fd-4f2f-9c2b-67b3abcb01b6",
+      "content_id": "a562c88d-4ab8-45e2-bce2-b97d5735a677",
+      "claim_id": "C28",
+      "claim": "Offspring 8449 and 8450 inherited different alleles from the mother at two markers (MS7 and MS15).",
+      "claim_type": "EXPLICIT",
+      "source": "It is important to note that for two of the markers (MS7 and MS15), the two offspring inherited different alleles from the mother, indicating that they are not genetically identical to each other, but have randomly inherited one of the maternal alleles at each locus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by microsatellite data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:40:22.797089Z"
+    },
+    {
+      "id": "7fd1c965-a9ae-449c-bdcc-0364c5a70bb1",
+      "content_id": "a562c88d-4ab8-45e2-bce2-b97d5735a677",
+      "claim_id": "C29",
+      "claim": "Two additional eggs (ID 8394 and 9070) from the same enclosure contained developing embryos with complete homozygosity at all loci.",
+      "claim_type": "EXPLICIT",
+      "source": "Two additional eggs (ID 8394 and 9070) were recovered from the same enclosure and found to contain developing embryos. MS analysis also revealed A. marmoratus 122 as the mother and complete homozygosity at all loci.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by microsatellite analysis data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:40:22.797089Z"
+    },
+    {
+      "id": "682dcf24-a5cb-4425-b6ac-be99f4c65a00",
+      "content_id": "a562c88d-4ab8-45e2-bce2-b97d5735a677",
+      "claim_id": "C30",
+      "claim": "Animal 122 had no history of being housed with a conspecific male during its lifetime.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that all of these offspring are female, inherited only maternal alleles, and animal 122 had no history of being housed with a conspecific male during its lifetime, both interspecific hybridization and long-term sperm storage are all but ruled out and FP is strongly supported.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on husbandry records.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:40:22.797089Z"
+    },
+    {
+      "id": "c1a497ac-f7d6-4104-9823-77e5acc5b50d",
+      "content_id": "a562c88d-4ab8-45e2-bce2-b97d5735a677",
+      "claim_id": "C31",
+      "claim": "The A. marmoratus genome is distributed over 23 chromosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "The A. marmoratus genome is distributed over 23 chromosomes as previously demonstrated by metaphase spread analysis (Lowe and Wright, 1966).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Lowe and Wright, 1966.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:40:22.797089Z"
+    },
+    {
+      "id": "08ee63d4-f83c-4b85-ae5c-5402a6222122",
+      "content_id": "a562c88d-4ab8-45e2-bce2-b97d5735a677",
+      "claim_id": "C32",
+      "claim": "The haploid genome size for A. marmoratus is 1.55 Gb.",
+      "claim_type": "EXPLICIT",
+      "source": "The nuclear DNA content of A. marmoratus was close to that of Danio rerio (1.4 Gb) and we calculated a haploid genome size for A. marmoratus of 1.55 Gb (Figure 2\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by flow cytometry data shown in Figure 2\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:40:22.797089Z"
+    },
+    {
+      "id": "34f730d8-8912-45c5-a5e4-66ac38165202",
+      "content_id": "a562c88d-4ab8-45e2-bce2-b97d5735a677",
+      "claim_id": "C33",
+      "claim": "The A. marmoratus genome assembly has a scaffold N50 of 32.22 Mb.",
+      "claim_type": "EXPLICIT",
+      "source": "The subsequent addition of Chicago reads and scaffolding with the HiRise pipeline by Dovetail Genomics produced an assembly of 1,639,530,780 bp distributed over 3826 scaffolds (Supplementary file 1) and raised the scaffold N50 to 32.22 Mb (Figure 2\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by assembly statistics shown in Figure 2\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:40:22.797089Z"
+    },
+    {
+      "id": "97473c5a-fd40-44d1-b2ed-974360e693d5",
+      "content_id": "a562c88d-4ab8-45e2-bce2-b97d5735a677",
+      "claim_id": "C34",
+      "claim": "The A. marmoratus genome assembly has a BUSCO completeness score of 96%.",
+      "claim_type": "EXPLICIT",
+      "source": "With a BUSCO completeness score of 96% the A. marmoratus genome assembly is comparable to other recently released reptilian genome assemblies (Figure 2\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by BUSCO analysis shown in Figure 2\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:40:22.797089Z"
+    },
+    {
+      "id": "a16200f8-1d1e-474b-af4b-9a32ffd97f54",
+      "content_id": "a562c88d-4ab8-45e2-bce2-b97d5735a677",
+      "claim_id": "C35",
+      "claim": "Over 98% of the A. marmoratus assembled sequences are contained within 90 scaffolds of more than 1 Mb in length.",
+      "claim_type": "EXPLICIT",
+      "source": "Over 98% of the assembled sequences are contained within 90 scaffolds of more than 1 Mb in length, making this assembly highly contiguous.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on assembly statistics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:40:22.797089Z"
+    },
+    {
+      "id": "35c08a03-1dc0-4ba1-bd90-3a231bd92cd0",
+      "content_id": "a562c88d-4ab8-45e2-bce2-b97d5735a677",
+      "claim_id": "C36",
+      "claim": "A. marmoratus is most closely related to the tegu Salvator merianae.",
+      "claim_type": "EXPLICIT",
+      "source": "Phylogenetic analysis of shared BUSCO genes with several other reference genomes (Xenopus, zebrafish, medaka, platyfish, tegu, green anole, chicken, mouse, rat, dog, cow, human) confirmed that A. marmoratus is most closely related to the tegu Salvator merianae, another representative of the family Teiidae (Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by phylogenetic analysis shown in Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:40:22.797089Z"
+    },
+    {
+      "id": "380b417d-5984-45d0-9224-698c0f01a894",
+      "content_id": "a562c88d-4ab8-45e2-bce2-b97d5735a677",
+      "claim_id": "C37",
+      "claim": "All classes of repeat elements combined amount to 40.27% of the A. marmoratus assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "All classes of repeat elements combined amounted to 40.27% of the A. marmoratus assembly, only slightly below that found in other lizards S. merianae and Anolis carolinensis (Figure 2\u2014figure supplement 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by repeat analysis shown in Figure 2\u2014figure supplement 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:40:22.797089Z"
+    },
+    {
+      "id": "04005c21-5f9f-4e62-a7f0-390a42b750a6",
+      "content_id": "a562c88d-4ab8-45e2-bce2-b97d5735a677",
+      "claim_id": "C38",
+      "claim": "Unclassified repeats make up the largest class of repeat elements in the A. marmoratus genome.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, unclassified repeats make up the largest class of repeat elements in the A. marmoratus genome, an observation that parallels findings in S. merianae.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by repeat analysis data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:40:22.797089Z"
+    },
+    {
+      "id": "910ff485-6ef1-45bf-82e9-17cf958fbe3e",
+      "content_id": "a562c88d-4ab8-45e2-bce2-b97d5735a677",
+      "claim_id": "C39",
+      "claim": "Only around 10% of the unclassified repeats are shared between A. marmoratus and S. merianae.",
+      "claim_type": "EXPLICIT",
+      "source": "However, a comparison between the unclassified repeats found in A. marmoratus, S. merianae, and A. carolinensis revealed few similarities with only around 10% of the unclassified repeats shared between A. marmoratus and S. merianae, and no significant overlap between these two species and A. carolinensis (Figure 2\u2014figure supplement 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by comparative repeat analysis shown in Figure 2\u2014figure supplement 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:40:22.797089Z"
+    },
+    {
+      "id": "18a67975-07fc-4ddd-89d2-f897b1feaf93",
+      "content_id": "a562c88d-4ab8-45e2-bce2-b97d5735a677",
+      "claim_id": "C40",
+      "claim": "The MAKER2 gene annotation pipeline yielded 25,856 protein-coding genes and 44,461 protein isoforms.",
+      "claim_type": "EXPLICIT",
+      "source": "These transcripts were subsequently used in the MAKER2 gene annotation pipeline, yielding 25,856 protein-coding genes and 44,461 protein isoforms (Supplementary file 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by annotation data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:40:22.797089Z"
+    },
+    {
+      "id": "3e7919ff-9712-4b0b-bdeb-0a6dca8c9cf1",
+      "content_id": "a562c88d-4ab8-45e2-bce2-b97d5735a677",
+      "claim_id": "C41",
+      "claim": "76% of the putative protein-coding genes had significant hits in the UniProtKB/Swiss-Prot database.",
+      "claim_type": "EXPLICIT",
+      "source": "To assign a putative function, we used BLASTp to query the UniProtKB/Swiss-Prot database (UniProt Consortium, 2018) and found significant hits for 76% of the putative protein-coding genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by BLAST analysis data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:40:22.797089Z"
+    },
+    {
+      "id": "8a3cbf63-09bb-473b-a233-19dbcb9c8a7f",
+      "content_id": "a562c88d-4ab8-45e2-bce2-b97d5735a677",
+      "claim_id": "C42",
+      "claim": "The A. marmoratus assembly contains 40 HOX genes and 2 EVX genes in four gene clusters.",
+      "claim_type": "EXPLICIT",
+      "source": "Our assembly and annotation pipelines yielded 40 HOX genes and 2 EVX genes in four gene clusters (Figure 2\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by annotation data shown in Figure 2\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:40:22.797089Z"
+    },
+    {
+      "id": "702daf58-6549-40b2-ae0b-580b5052d2b4",
+      "content_id": "a562c88d-4ab8-45e2-bce2-b97d5735a677",
+      "claim_id": "C43",
+      "claim": "For FP animals, the number of heterozygous sites in a 10 Kb sliding window approaches zero for all sites with mean coverage.",
+      "claim_type": "EXPLICIT",
+      "source": "For FP animals, the number of heterozygous sites in a 10 Kb sliding window approaches zero for all sites with mean coverage (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by whole-genome sequencing analysis shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:40:22.797089Z"
+    },
+    {
+      "id": "9078ba07-efeb-442b-bfb2-fc3c7035eb74",
+      "content_id": "a562c88d-4ab8-45e2-bce2-b97d5735a677",
+      "claim_id": "C44",
+      "claim": "Sexually produced mothers and control animals had between 30,769 and 53,416 heterozygous sites at average coverage.",
+      "claim_type": "EXPLICIT",
+      "source": "This generated between 30,769 and 53,416 heterozygous sites for which two alleles were equally supported in the sexually produced mothers and control animals (Figure 2\u2014figure supplement 6A\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by whole-genome sequencing data shown in Figure 2\u2014figure supplement 6A\u2013E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:40:22.797089Z"
+    },
+    {
+      "id": "fb6a0ca7-166f-4b45-bcb6-e566d8b777a5",
+      "content_id": "a562c88d-4ab8-45e2-bce2-b97d5735a677",
+      "claim_id": "C45",
+      "claim": "FP animals had between 649 and 928 heterozygous sites at average coverage.",
+      "claim_type": "EXPLICIT",
+      "source": "Far fewer heterozygous sites (between 649 and 928) were observed in the FP animals (Figure 2\u2014figure supplement 6F\u2013J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by whole-genome sequencing data shown in Figure 2\u2014figure supplement 6F\u2013J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:40:22.797089Z"
+    },
+    {
+      "id": "eb0803cd-1e78-41e2-bbbe-6fe1998fa8d7",
+      "content_id": "a562c88d-4ab8-45e2-bce2-b97d5735a677",
+      "claim_id": "C46",
+      "claim": "Heterozygous sites in FP animals are randomly distributed across the genome.",
+      "claim_type": "EXPLICIT",
+      "source": "Plotting the heterozygous sites according to their position in the reference genome illustrates not only their sparsity in the genomes of FP animals, but also reveals their random distribution (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by visualization of heterozygous sites shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:40:22.797089Z"
+    },
+    {
+      "id": "1f197582-514d-4598-b559-f9747e4b84af",
+      "content_id": "a562c88d-4ab8-45e2-bce2-b97d5735a677",
+      "claim_id": "C47",
+      "claim": "The few apparently heterozygous sites in FP animals are most likely the result of over-assembly of repetitive regions and biological/technical errors.",
+      "claim_type": "EXPLICIT",
+      "source": "The few apparently heterozygous sites identified in FP animals are, therefore, not supporting either form of automixis but are most likely the result of over-assembly of repetitive regions (ie. collapsing paralogous loci into a single representative sequence) and a combination of biological (ie. somatic mutations) and technical errors (ie. PCR and sequencing errors).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the data and knowledge of sequencing artifacts.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:40:22.797089Z"
+    },
+    {
+      "id": "d2f626a2-a564-423f-94d3-0a722a2ae98c",
+      "content_id": "a562c88d-4ab8-45e2-bce2-b97d5735a677",
+      "claim_id": "C48",
+      "claim": "Scaffold 45 harbors 167 genes annotated as homologous to vomeronasal 2 receptor 26 (Vmn2r26).",
+      "claim_type": "EXPLICIT",
+      "source": "Examination of the scaffold in question (Scaffold 45) revealed 167 genes annotated as homologous to vomeronasal 2 receptor 26 (Vmn2r26; Figure 2\u2014figure supplement 7, Figure 2\u2014figure supplement 8).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by annotation data shown in Figure 2\u2014figure supplement 7 and Figure 2\u2014figure supplement 8.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:40:22.797089Z"
+    },
+    {
+      "id": "b30ae366-f1d0-4561-a0eb-eaa2b03f6cdd",
+      "content_id": "a562c88d-4ab8-45e2-bce2-b97d5735a677",
+      "claim_id": "C49",
+      "claim": "The elevated level of apparent heterozygosity in Scaffold 45 is most likely due to over-assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that this genomic region harbors a large cluster of highly similar genes, the most parsimonious explanation for the elevated level of apparent heterozygosity is over-assembly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the presence of highly similar genes.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:40:22.797089Z"
+    },
+    {
+      "id": "6c8485d5-4aec-412c-b892-3473a6995516",
+      "content_id": "a562c88d-4ab8-45e2-bce2-b97d5735a677",
+      "claim_id": "C50",
+      "claim": "The analysis strongly supports genome-wide homozygosity for FP animals.",
+      "claim_type": "EXPLICIT",
+      "source": "In aggregate, our analysis strongly supports genome-wide homozygosity for FP animals, inconsistent with either central or terminal automixis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the comprehensive analysis of heterozygosity across the genome.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:40:22.797089Z"
+    },
+    {
+      "id": "073b5bfd-bb46-490d-acb6-b7227348bbfb",
+      "content_id": "a562c88d-4ab8-45e2-bce2-b97d5735a677",
+      "claim_id": "C51",
+      "claim": "The results favor a post-meiotic mechanism that restores diploidy by replicating the haploid genome in the oocyte.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, the results favor a post-meiotic mechanism that restores diploidy by replicating the haploid genome residing in the oocyte following completion of the two meiotic divisions and thereby establishing genome-wide homozygosity in the offspring.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the genome-wide homozygosity data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:40:22.797089Z"
+    },
+    {
+      "id": "732d74c9-a085-4b1e-b006-080ef6f9c7aa",
+      "content_id": "a562c88d-4ab8-45e2-bce2-b97d5735a677",
+      "claim_id": "C52",
+      "claim": "No cases of FP were identified among 80 A. gularis produced eggs in captivity.",
+      "claim_type": "EXPLICIT",
+      "source": "While no cases of FP were identified among 80 A. gularis produced eggs in captivity, we identified eight incidences of FP among 832 A. arizonae records between October 2007 and July 2018.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on microsatellite analysis of captive breeding records.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:40:22.797089Z"
+    },
+    {
+      "id": "c97dfd09-ea3c-471e-a435-1a6505a904a0",
+      "content_id": "a562c88d-4ab8-45e2-bce2-b97d5735a677",
+      "claim_id": "C53",
+      "claim": "Eight incidences of FP were identified among 832 A. arizonae records between October 2007 and July 2018.",
+      "claim_type": "EXPLICIT",
+      "source": "While no cases of FP were identified among 80 A. gularis produced eggs in captivity, we identified eight incidences of FP among 832 A. arizonae records between October 2007 and July 2018.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on microsatellite analysis of captive breeding records.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:40:22.797089Z"
+    },
+    {
+      "id": "bdbe814b-34b8-4428-8156-d62fbadc085e",
+      "content_id": "a562c88d-4ab8-45e2-bce2-b97d5735a677",
+      "claim_id": "C54",
+      "claim": "15 incidences of FP were recorded among 286 A. marmoratus records during the same period.",
+      "claim_type": "EXPLICIT",
+      "source": "During the same period, we recorded 15 incidences of FP among 286 A. marmoratus records (Supplementary file 6).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on microsatellite analysis of captive breeding records.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:40:22.797089Z"
+    },
+    {
+      "id": "c3b18664-463f-4ea7-ab40-f200b5043029",
+      "content_id": "a562c88d-4ab8-45e2-bce2-b97d5735a677",
+      "claim_id": "C55",
+      "claim": "In all cases, eggs undergoing FP development had been laid in enclosures where females were housed with males.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, in all cases, eggs undergoing FP development had been laid in enclosures where females were housed with conspecific males or males of a sister species known to mate with the heterospecific females.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on husbandry records.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:40:22.797089Z"
+    },
+    {
+      "id": "64a4b03f-f848-43c7-9b9c-7ffc4e810be9",
+      "content_id": "a562c88d-4ab8-45e2-bce2-b97d5735a677",
+      "claim_id": "C56",
+      "claim": "Isolation from mating partners was not a significant factor in triggering FP.",
+      "claim_type": "EXPLICIT",
+      "source": "Isolation from mating partners was thus not a significant factor in triggering FP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the observation that FP occurred in the presence of males.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:40:22.797089Z"
+    },
+    {
+      "id": "d5086cc2-fb30-4a4c-bd65-8465d0cadc49",
+      "content_id": "a562c88d-4ab8-45e2-bce2-b97d5735a677",
+      "claim_id": "C57",
+      "claim": "A single clutch from A. arizonae female 12852 contained both sexually produced and FP offspring.",
+      "claim_type": "EXPLICIT",
+      "source": "MS analysis of four hatchlings that originated from a single clutch laid in this enclosure identified animal 12852 as the mother of all four animals. Unexpectedly, two of her offspring were homozygous at all eight loci examined, whereas the two others were heterozygous at all loci, identifying animal 12849 as their father (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by microsatellite analysis shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:40:22.797089Z"
+    },
+    {
+      "id": "f2e395f1-9ec2-421a-84f2-2b15cac1bc61",
+      "content_id": "a562c88d-4ab8-45e2-bce2-b97d5735a677",
+      "claim_id": "C58",
+      "claim": "Both fertilized and unfertilized eggs developed alongside each other within the same clutch.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, both fertilized and unfertilized eggs developed alongside each other within the same clutch.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the microsatellite data showing both sexual and FP offspring in one clutch.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:40:22.797089Z"
+    },
+    {
+      "id": "ce54b812-f136-43f2-80ac-da80ca19864b",
+      "content_id": "a562c88d-4ab8-45e2-bce2-b97d5735a677",
+      "claim_id": "C59",
+      "claim": "Blood from a newly hatched FP lizard showed bimodality in erythrocyte nuclear sizes.",
+      "claim_type": "EXPLICIT",
+      "source": "Microscopic examination of blood from a newly hatched FP lizard revealed a striking bimodality in the sizes of erythrocyte nuclei when compared to a sexually produced animals (Figure 4A, B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by microscopic examination shown in Figure 4A and 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:40:22.797089Z"
+    },
+    {
+      "id": "2d9b8ebd-7871-4344-b3fb-eccff5eb754d",
+      "content_id": "a562c88d-4ab8-45e2-bce2-b97d5735a677",
+      "claim_id": "C60",
+      "claim": "Approximately 10% of red blood cells from the FP animal harbored smaller nuclei consistent with half the amount of DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas most cells closely resembled those observed in the blood from the sexually produced animal, approximately 10% of red blood cells from the FP animal harbored smaller nuclei, consistent with half the amount of DNA (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by microscopic examination and cell counting shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:40:22.797089Z"
+    },
+    {
+      "id": "6a40d222-4557-4d1b-9fe0-e7b0744a3188",
+      "content_id": "a562c88d-4ab8-45e2-bce2-b97d5735a677",
+      "claim_id": "C61",
+      "claim": "1.27% of erythrocytes from the FP animal contained two small nuclei.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, 1.27% contained two small nuclei, indicating that the final cytokinesis during erythrocyte differentiation had failed for some haploid progenitor cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by microscopic examination and cell counting.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:40:22.797089Z"
+    },
+    {
+      "id": "06ebb759-4064-43ae-a1dd-1813ff5b12d4",
+      "content_id": "a562c88d-4ab8-45e2-bce2-b97d5735a677",
+      "claim_id": "C62",
+      "claim": "DNA content analysis by flow cytometry confirmed the presence of haploid cells in FP animal blood.",
+      "claim_type": "EXPLICIT",
+      "source": "DNA content analysis by flow cytometry confirmed the presence of haploid cells (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by flow cytometry data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:40:22.797089Z"
+    },
+    {
+      "id": "6ea8143b-48a3-4be3-a222-990d5be44560",
+      "content_id": "a562c88d-4ab8-45e2-bce2-b97d5735a677",
+      "claim_id": "C63",
+      "claim": "In the blood of sexually produced animals, no haploid or bi-nucleated cells were observed.",
+      "claim_type": "EXPLICIT",
+      "source": "In the blood of sexually produced animals, no haploid or bi-nucleated cells were observed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on microscopic examination of control animals.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:40:22.797089Z"
+    },
+    {
+      "id": "c2a1d8b4-c7b4-485d-9bf5-1a52ba3ea8e9",
+      "content_id": "a562c88d-4ab8-45e2-bce2-b97d5735a677",
+      "claim_id": "C64",
+      "claim": "Embryonic development of FP animals may be initiated with consecutive divisions of a haploid, unfertilized oocyte.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations raise the possibility that the embryonic development of FP animals is initiated with consecutive divisions of a haploid, unfertilized oocyte.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative, based on the observation of haploid cells in FP animals.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:40:22.797089Z"
+    },
+    {
+      "id": "e416b75f-c91a-4a91-9849-73578ba1157a",
+      "content_id": "a562c88d-4ab8-45e2-bce2-b97d5735a677",
+      "claim_id": "C65",
+      "claim": "Diploid cells in FP animals most likely arise via failed cytokinesis at a later stage in development.",
+      "claim_type": "EXPLICIT",
+      "source": "At a later stage in development, diploid cells most likely arise via failed cytokinesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative, inferred from the presence of both haploid and diploid cells.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:40:22.797089Z"
+    },
+    {
+      "id": "45d46cbf-8327-4958-9780-d28009044981",
+      "content_id": "a562c88d-4ab8-45e2-bce2-b97d5735a677",
+      "claim_id": "C66",
+      "claim": "Both haploid and diploid cells coexist in FP embryos, developing in a mixoploid state.",
+      "claim_type": "EXPLICIT",
+      "source": "From that point forward, both haploid and diploid cells coexist, and the embryo develops in a mixoploid state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the observation of both haploid and diploid cells in FP animals.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:40:22.797089Z"
+    },
+    {
+      "id": "f1b29da2-0b19-4a78-b713-02a31861c0d4",
+      "content_id": "a562c88d-4ab8-45e2-bce2-b97d5735a677",
+      "claim_id": "C67",
+      "claim": "Mixoploidy was also observed in another FP A. marmoratus and in A. arizonae.",
+      "claim_type": "EXPLICIT",
+      "source": "Indicative of a more widespread phenomenon, mixoploidy was also observed in another FP A. marmoratus and in A. arizonae (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by microscopic examination shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:40:22.797089Z"
+    },
+    {
+      "id": "b60aeb80-58a6-45f6-9631-d984007259ec",
+      "content_id": "a562c88d-4ab8-45e2-bce2-b97d5735a677",
+      "claim_id": "C68",
+      "claim": "Genome-wide loss of heterozygosity exposes functionally compromised alleles.",
+      "claim_type": "EXPLICIT",
+      "source": "Genome-wide loss of heterozygosity exposes functionally compromised alleles that were previously covered by intact alleles on the homologous chromosomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established genetic knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:40:22.797089Z"
+    },
+    {
+      "id": "4fb4da62-3cd3-4c2d-b0d2-4de42031a2b8",
+      "content_id": "a562c88d-4ab8-45e2-bce2-b97d5735a677",
+      "claim_id": "C69",
+      "claim": "Of the 23 incidences of FP examined, only 14 hatched.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, of the 23 incidences of FP examined here, only 14 hatched, while the remaining lizards died in ovum (Supplementary file 6).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on husbandry records.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:40:22.797089Z"
+    },
+    {
+      "id": "5cadc518-21f4-40fb-8d94-db4fa02159c4",
+      "content_id": "a562c88d-4ab8-45e2-bce2-b97d5735a677",
+      "claim_id": "C70",
+      "claim": "Notable developmental defects in FP animals included craniofacial abnormalities, missing limbs, and failed abdominal closure.",
+      "claim_type": "EXPLICIT",
+      "source": "Notable developmental defects included craniofacial abnormalities such as misaligned jaws, agenesis of eyes, missing limbs, and failed abdominal closure (Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by photographic documentation shown in Figure 4\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:40:22.797089Z"
+    },
+    {
+      "id": "24b811f5-e1c9-4026-ba43-5364c82897aa",
+      "content_id": "a562c88d-4ab8-45e2-bce2-b97d5735a677",
+      "claim_id": "C71",
+      "claim": "Only six out of 16 FP animals (37.5%) hatched with no discernable developmental defects.",
+      "claim_type": "EXPLICIT",
+      "source": "Only six out of 16 FP animals (37.5%) hatched with no discernable developmental defects (Figure 4\u2014figure supplement 2 A-B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on phenotypic assessment shown in Figure 4\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:40:22.797089Z"
+    },
+    {
+      "id": "be43786f-6699-476e-a08a-203708c1d97d",
+      "content_id": "a562c88d-4ab8-45e2-bce2-b97d5735a677",
+      "claim_id": "C72",
+      "claim": "Over 98% of sexually produced hatchlings (n=687) showed no abnormalities.",
+      "claim_type": "EXPLICIT",
+      "source": "This is in stark contrast to sexually produced animals, where over 98% of hatchlings (n=687) showed no abnormalities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on phenotypic assessment of control animals.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:40:22.797089Z"
+    },
+    {
+      "id": "919f12c2-1858-4c7c-ba82-459a751a1ac5",
+      "content_id": "a562c88d-4ab8-45e2-bce2-b97d5735a677",
+      "claim_id": "C73",
+      "claim": "FP A. marmoratus 8450 produced two eggs while housed in isolation, but these failed to hatch.",
+      "claim_type": "EXPLICIT",
+      "source": "While we have not recorded instances of FP animals producing offspring via FP, as described for the whitespotted bamboo shark (Straube et al., 2016), FP A. marmoratus 8450 did produce two eggs while housed in isolation, but these failed to hatch.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on husbandry records.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:40:22.797089Z"
+    },
+    {
+      "id": "5d60ebb4-3b13-4898-835d-53914b1cf257",
+      "content_id": "a562c88d-4ab8-45e2-bce2-b97d5735a677",
+      "claim_id": "C74",
+      "claim": "Analysis of ovaries and germinal vesicles of FP animals revealed no differences compared to fertile sexually reproducing animals.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of the ovaries of FP animal 8450 as well as germinal vesicles of its FP sister 8449 revealed no differences in structure and anatomy compared to fertile sexually reproducing animals (Figure 4\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by microscopic examination shown in Figure 4\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:40:22.797089Z"
+    },
+    {
+      "id": "9b8c4359-3fd9-4419-af5f-0a7204cbc802",
+      "content_id": "a562c88d-4ab8-45e2-bce2-b97d5735a677",
+      "claim_id": "C75",
+      "claim": "RAD-seq data was examined for wild animals across 15 gonochoristic species.",
+      "claim_type": "EXPLICIT",
+      "source": "As FP has been associated with captivity in most species where it has been reported, we examined restriction site-associated DNA sequencing (RAD-seq) data for wild animals across 15 gonochoristic species (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim describes the analysis performed and is shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:40:22.797089Z"
+    },
+    {
+      "id": "c061c5a5-4f0a-4e1d-b161-09e9c3726846",
+      "content_id": "a562c88d-4ab8-45e2-bce2-b97d5735a677",
+      "claim_id": "C76",
+      "claim": "321 individuals with an average sequencing coverage of at least 20 were analyzed.",
+      "claim_type": "EXPLICIT",
+      "source": "Because RAD-seq is a form of reduced-representation sequencing (Rivera-Col\u00f3n and Catchen, 2022), we limited further analysis to the 321 individuals that had an average sequencing coverage of at least 20.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the filtering criteria for the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:40:22.797089Z"
+    },
+    {
+      "id": "ba31900a-e935-4b71-8c26-fa5c75d95e54",
+      "content_id": "a562c88d-4ab8-45e2-bce2-b97d5735a677",
+      "claim_id": "C77",
+      "claim": "Five animals (one A. angusticeps and four A. deppii) had very low levels of heterozygosity (<0.05%).",
+      "claim_type": "EXPLICIT",
+      "source": "Computational data analysis revealed five animals (one A. angusticeps and four A. deppii) that had very low levels of heterozygosity at positions of average coverage (<0.05% heterozygous positions).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on RAD-seq data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:40:22.797089Z"
+    },
+    {
+      "id": "45b9d315-4a8e-4b11-b962-095ac1f21019",
+      "content_id": "a562c88d-4ab8-45e2-bce2-b97d5735a677",
+      "claim_id": "C78",
+      "claim": "The average level of heterozygosity across the RAD-seq dataset was 0.261%.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the average level of heterozygosity was 0.261% across the dataset, with the highest heterozygosity value at 0.578%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on RAD-seq data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:40:22.797089Z"
+    },
+    {
+      "id": "a889f092-a53d-425a-a8d7-10bb54a938f8",
+      "content_id": "a562c88d-4ab8-45e2-bce2-b97d5735a677",
+      "claim_id": "C79",
+      "claim": "A. deppii (ID LDOR30) showed the most striking level of homozygosity with all sites but one being homozygous.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the five low heterozygosity animals, A. deppii (ID LDOR30) showed the most striking level of homozygosity affecting all sites but one (Rosner's Test for Outliers within A. deppii individuals, log-transformation, R=5.127, \u03bb=3.928, p<0.001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by RAD-seq data analysis and statistical testing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:40:22.797089Z"
+    },
+    {
+      "id": "2604e36a-09b0-49f4-9d31-1c11b1a50aea",
+      "content_id": "a562c88d-4ab8-45e2-bce2-b97d5735a677",
+      "claim_id": "C80",
+      "claim": "FP occurring in A. marmoratus and A. arizonae results in genome-wide homozygosity.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show that FP occurring in the gonochoristic Aspidoscelis species A. marmoratus and A. arizonae results in genome-wide homozygosity, an observation inconsistent with polar body fusion as the underlying mechanism of restoration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by whole-genome sequencing data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:40:22.797089Z"
+    },
+    {
+      "id": "405a4818-89c6-4c63-865d-dd40b27c4bcb",
+      "content_id": "a562c88d-4ab8-45e2-bce2-b97d5735a677",
+      "claim_id": "C81",
+      "claim": "A post-meiotic mechanism gives rise to homozygous animals from haploid, unfertilized oocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, a high-quality reference genome for A. marmoratus and analysis of whole-genome sequencing from multiple FP and control animals reveals that a post-meiotic mechanism gives rise to homozygous animals from haploid, unfertilized oocytes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from genome-wide homozygosity data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:40:22.797089Z"
+    },
+    {
+      "id": "5b4e3714-1ba3-4d7a-950d-8893612a3c36",
+      "content_id": "a562c88d-4ab8-45e2-bce2-b97d5735a677",
+      "claim_id": "C82",
+      "claim": "Females housed with conspecific and heterospecific males produced unfertilized eggs that underwent spontaneous development.",
+      "claim_type": "EXPLICIT",
+      "source": "Contrary to the widely held belief that females need to be isolated from males to undergo FP, females housed with conspecific and heterospecific males produced unfertilized eggs that underwent spontaneous development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on husbandry records and microsatellite analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:40:22.797089Z"
+    },
+    {
+      "id": "dac99cb4-34b3-46d9-83e3-e41a4f8ee6b8",
+      "content_id": "a562c88d-4ab8-45e2-bce2-b97d5735a677",
+      "claim_id": "C83",
+      "claim": "Offspring arising from both fertilized eggs and parthenogenetic development were observed in a single clutch.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, offspring arising from both fertilized eggs and parthenogenetic development were observed to arise from a single clutch.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by microsatellite analysis of a single clutch.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:40:22.797089Z"
+    },
+    {
+      "id": "291dcfbb-c2c0-4c58-949e-ede7d8f136e3",
+      "content_id": "a562c88d-4ab8-45e2-bce2-b97d5735a677",
+      "claim_id": "C84",
+      "claim": "The mechanism for facultative parthenogenesis removes all heterozygosity in a single generation.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, our data support a mechanism for facultative parthenogenesis that removes all heterozygosity in a single generation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on genome-wide homozygosity data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:40:22.797089Z"
+    },
+    {
+      "id": "b963afe9-bbf2-4d4d-b504-976a2dc21a65",
+      "content_id": "a562c88d-4ab8-45e2-bce2-b97d5735a677",
+      "claim_id": "C85",
+      "claim": "Complete homozygosity exposes the genetic load and explains the high rate of congenital malformations and embryonic mortality associated with FP.",
+      "claim_type": "EXPLICIT",
+      "source": "Complete homozygosity exposes the genetic load and explains the high rate of congenital malformations and embryonic mortality associated with FP in many species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from genetic principles and observed developmental defects.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:40:22.797089Z"
+    },
+    {
+      "id": "1ba0dd82-5a60-4c4c-a303-173e59b70c84",
+      "content_id": "a562c88d-4ab8-45e2-bce2-b97d5735a677",
+      "claim_id": "C86",
+      "claim": "For animals that develop normally, FP could potentially exert strong purifying selection as all lethal recessive alleles are purged in a single generation.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, for animals that develop normally, FP could potentially exert strong purifying selection as all lethal recessive alleles are purged in a single generation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative, based on inference from the mechanism of FP.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:40:22.797089Z"
+    },
+    {
+      "id": "ab063d55-decc-419b-bfd8-b21bae8d9c1c",
+      "content_id": "a562c88d-4ab8-45e2-bce2-b97d5735a677",
+      "claim_id": "C87",
+      "claim": "The start of embryonic development is tightly coupled to fertilization in many vertebrates.",
+      "claim_type": "EXPLICIT",
+      "source": "The start of embryonic development is tightly coupled to fertilization in many vertebrates as the sperm entering the oocyte triggers a signaling cascade that is essential for the completion of female meiosis and initiation of cell division following karyogamy (Sagata, 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Sagata, 1996 and represents established knowledge.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:40:22.797089Z"
+    },
+    {
+      "id": "92771e59-762b-4c39-a99e-36edf2d059bd",
+      "content_id": "a562c88d-4ab8-45e2-bce2-b97d5735a677",
+      "claim_id": "C88",
+      "claim": "Piercing frog oocytes with a needle can trigger the signal to complete meiosis and initiate replication and division in the haploid oocyte.",
+      "claim_type": "EXPLICIT",
+      "source": "This process has been mimicked in the laboratory by piercing frog oocytes with a needle to trigger the signal to complete meiosis and initiate replication and division in the haploid oocyte (Le Peuch et al., 1985; Wolf, 1974).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Le Peuch et al., 1985 and Wolf, 1974.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:40:22.797089Z"
+    },
+    {
+      "id": "96a14b8a-29ee-409a-913d-bad4eb7cd403",
+      "content_id": "a562c88d-4ab8-45e2-bce2-b97d5735a677",
+      "claim_id": "C89",
+      "claim": "In zebrafish, homozygous embryos are routinely generated by fertilization of oocytes with UV-irradiated sperm.",
+      "claim_type": "EXPLICIT",
+      "source": "In zebrafish, homozygous embryos are routinely generated by fertilization of oocytes with UV-irradiated sperm, a treatment that destroys the paternal DNA (Streisinger et al., 1981).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Streisinger et al., 1981.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:40:22.797089Z"
+    },
+    {
+      "id": "5a6f2f57-c6b6-4d44-84bb-f1934efb0405",
+      "content_id": "a562c88d-4ab8-45e2-bce2-b97d5735a677",
+      "claim_id": "C90",
+      "claim": "Heat shock treatment of zebrafish oocytes prevents cytokinesis resulting in a pseudodiploid oocyte.",
+      "claim_type": "EXPLICIT",
+      "source": "If the haploid oocyte is then subjected to heat shock treatment, cytokinesis is prevented resulting in a pseudodiploid oocyte that undergoes a second round of DNA replication followed by mitosis. Thus an entirely homozygous diploid embryo starts to develop (Kroeger et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Kroeger et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:40:22.797089Z"
+    },
+    {
+      "id": "df1c0fac-38c3-4617-a2bd-63144f77d470",
+      "content_id": "a562c88d-4ab8-45e2-bce2-b97d5735a677",
+      "claim_id": "C91",
+      "claim": "One or multiple rounds of DNA replication and mitosis take place in some haploid oocytes of whiptail lizards prior to a skipped mitosis yielding a homozygous diploid cell.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to human intervention forcing two consecutive rounds of DNA replication to occur without intervening mitosis at the start of embryonic development, our data indicate that one or multiple rounds of DNA replication and mitosis take place in some haploid oocytes of whiptail lizards prior to a skipped mitosis yielding a homozygous diploid cell followed by mixoploid development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the observation of mixoploidy in FP animals.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:40:22.797089Z"
+    },
+    {
+      "id": "b140402c-9584-4cb3-9a75-a76875c80e15",
+      "content_id": "a562c88d-4ab8-45e2-bce2-b97d5735a677",
+      "claim_id": "C92",
+      "claim": "Unfertilized turkey eggs can yield embryos that contain 40% of haploid cells at blastoderm followed by a reduction to 1.3% within the blood of hatched birds.",
+      "claim_type": "EXPLICIT",
+      "source": "Initiation of development in a haploid state may be conserved in avian species as unfertilized turkey eggs can yield embryos that contain 40% of haploid cells at blastoderm followed by a reduction to 1.3% within the blood of hatched birds (Cassar et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Cassar et al., 1998.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:40:22.797089Z"
+    },
+    {
+      "id": "8d98c1fc-085c-4581-aff0-095b7c65c782",
+      "content_id": "a562c88d-4ab8-45e2-bce2-b97d5735a677",
+      "claim_id": "C93",
+      "claim": "The presence of haploid cells may contribute to abnormal development of specific tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "Depending on the tissue and ploidy distribution, the presence of haploid cells may contribute to abnormal development of specific tissues reported here and elsewhere (Ito et al., 1991; Tanaka et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative, supported by citations to Ito et al., 1991 and Tanaka et al., 2004.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:40:22.797089Z"
+    },
+    {
+      "id": "4363ce33-5583-41e6-ab63-a5ff2d5232a2",
+      "content_id": "a562c88d-4ab8-45e2-bce2-b97d5735a677",
+      "claim_id": "C94",
+      "claim": "Successful embryonic development from haploid cells that restore the diploid state by duplication has been observed in a stick insect species.",
+      "claim_type": "EXPLICIT",
+      "source": "Successful embryonic development from haploid cells that restore the diploid state by duplication has also been observed in a stick insect species (Pijnacker, 1969).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Pijnacker, 1969.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:40:22.797089Z"
+    },
+    {
+      "id": "22e627b5-cda1-42f0-a2ff-ede03cca7963",
+      "content_id": "a562c88d-4ab8-45e2-bce2-b97d5735a677",
+      "claim_id": "C95",
+      "claim": "FP leads to a precipitous reduction in genetic diversity as only one set of alleles is inherited in the next generation.",
+      "claim_type": "EXPLICIT",
+      "source": "At the population level, FP leads to a precipitous reduction in genetic diversity as only one set of alleles is inherited in the next generation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the mechanism of FP.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:40:22.797089Z"
+    },
+    {
+      "id": "29380aee-846d-4d95-8bb7-646dafbd47a8",
+      "content_id": "a562c88d-4ab8-45e2-bce2-b97d5735a677",
+      "claim_id": "C96",
+      "claim": "FP can be considered the most extreme example of inbreeding.",
+      "claim_type": "EXPLICIT",
+      "source": "While FP can be considered the most extreme example of inbreeding, it is also the most powerful example of genetic purging as it eliminates most deleterious alleles in a single generation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the mechanism of FP and genetic principles.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:40:22.797089Z"
+    },
+    {
+      "id": "8aab524c-8999-4c3d-9780-ea6c1638060b",
+      "content_id": "a562c88d-4ab8-45e2-bce2-b97d5735a677",
+      "claim_id": "C97",
+      "claim": "FP in whiptail lizards and other species could be considered a reproductive strategy, akin to mixed-mating systems in plants.",
+      "claim_type": "EXPLICIT",
+      "source": "FP in whiptail lizards and other species could, therefore, be considered a reproductive strategy, akin to mixed-mating systems in plants (Goodwillie et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative, drawing an analogy to plant mating systems with citation to Goodwillie et al., 2005.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:40:22.797089Z"
+    },
+    {
+      "id": "a1d93142-f89a-4cc6-8978-5591510ea1d0",
+      "content_id": "a562c88d-4ab8-45e2-bce2-b97d5735a677",
+      "claim_id": "C98",
+      "claim": "The ability to produce offspring via two different strategies provides a level of reproductive assurance in plants.",
+      "claim_type": "EXPLICIT",
+      "source": "The ability to produce offspring via two different strategies provides a level of reproductive assurance in plants (Busch and Delph, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Busch and Delph, 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:40:22.797089Z"
+    },
+    {
+      "id": "fd910e62-f91a-42b2-bb04-3475c20e40d4",
+      "content_id": "a562c88d-4ab8-45e2-bce2-b97d5735a677",
+      "claim_id": "C99",
+      "claim": "Female whiptails have produced offspring via both sexual reproduction and FP on separate occasions or simultaneously within a single clutch.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, we see parallels to this in our own data in which female whiptails have produced offspring via both sexual reproduction and FP on separate occasions or simultaneously within a single clutch.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on microsatellite analysis data from this study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:40:22.797089Z"
+    },
+    {
+      "id": "625f85aa-d854-4fdd-8e49-aced8b2b9b15",
+      "content_id": "a562c88d-4ab8-45e2-bce2-b97d5735a677",
+      "claim_id": "C100",
+      "claim": "Recent work identified key cell cycle genes inducing FP in two species of Drosophila.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent work identifying key cell cycle genes inducing FP in two species of Drosophila (Sperling et al., 2023) and selection resulting in higher incidences of parthenogenesis in birds (Parker et al., 2010; Olsen, 1975; Olsen et al., 1968) suggest a genetic basis for the initiation of FP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Sperling et al., 2023.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:40:22.797089Z"
+    },
+    {
+      "id": "6dc0148f-5774-4955-904a-92a6b72dd566",
+      "content_id": "a562c88d-4ab8-45e2-bce2-b97d5735a677",
+      "claim_id": "C101",
+      "claim": "Selection has resulted in higher incidences of parthenogenesis in birds.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent work identifying key cell cycle genes inducing FP in two species of Drosophila (Sperling et al., 2023) and selection resulting in higher incidences of parthenogenesis in birds (Parker et al., 2010; Olsen, 1975; Olsen et al., 1968) suggest a genetic basis for the initiation of FP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Parker et al., 2010; Olsen, 1975; Olsen et al., 1968.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:40:22.797089Z"
+    },
+    {
+      "id": "80d97571-2a3d-4969-bbef-7818be687a29",
+      "content_id": "a562c88d-4ab8-45e2-bce2-b97d5735a677",
+      "claim_id": "C102",
+      "claim": "This study adds two species of whiptail lizards to the list of vertebrates capable of FP.",
+      "claim_type": "EXPLICIT",
+      "source": "Our study adds two species of whiptail lizards to a growing list of vertebrates capable of FP and establishes that it occurs alongside sexual reproduction in the presence of males.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the findings of this study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:40:22.797089Z"
+    },
+    {
+      "id": "3f9b3393-0970-4e10-81ee-e87dd853617b",
+      "content_id": "a562c88d-4ab8-45e2-bce2-b97d5735a677",
+      "claim_id": "C103",
+      "claim": "FP occurs alongside sexual reproduction in the presence of males in whiptail lizards.",
+      "claim_type": "EXPLICIT",
+      "source": "Our study adds two species of whiptail lizards to a growing list of vertebrates capable of FP and establishes that it occurs alongside sexual reproduction in the presence of males.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on husbandry records and microsatellite analysis from this study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:40:22.797089Z"
+    },
+    {
+      "id": "05f3d317-2544-42c1-a4f4-d3a7dbe4fa70",
+      "content_id": "a562c88d-4ab8-45e2-bce2-b97d5735a677",
+      "claim_id": "C104",
+      "claim": "Post-meiotic genome duplication is the underlying mechanism of FP in whiptail lizards.",
+      "claim_type": "EXPLICIT",
+      "source": "Using whole-genome sequencing, we demonstrate that post-meiotic genome duplication is the underlying mechanism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on whole-genome sequencing data showing genome-wide homozygosity.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:40:22.797089Z"
+    },
+    {
+      "id": "c0dd7469-4572-4a93-bc2a-6adb28b40312",
+      "content_id": "a562c88d-4ab8-45e2-bce2-b97d5735a677",
+      "claim_id": "C105",
+      "claim": "Low rates of successful FP could contribute significantly to genome purification.",
+      "claim_type": "EXPLICIT",
+      "source": "One must now consider the possibility that FP is an adaptive trait and that low rates of successful FP could contribute significantly to genome purification.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative, based on inference from the mechanism of FP.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:40:22.797089Z"
+    },
+    {
+      "id": "9cb61c50-968d-4631-8e14-bf4d31c2955c",
+      "content_id": "a562c88d-4ab8-45e2-bce2-b97d5735a677",
+      "claim_id": "C106",
+      "claim": "Sexually mature FP offspring will have a low genetic load and only pass on neutral or mildly deleterious alleles to the next generation.",
+      "claim_type": "EXPLICIT",
+      "source": "Sexually mature FP offspring will have a low genetic load and only pass on neutral or mildly deleterious alleles to the next generation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the purifying selection mechanism of FP.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:40:22.797089Z"
+    },
+    {
+      "id": "e0f59c72-88ca-4ff1-8af7-2993bbd61c85",
+      "content_id": "a562c88d-4ab8-45e2-bce2-b97d5735a677",
+      "claim_id": "C107",
+      "claim": "A role for FP as an adaptive trait hinges on the ability of parthenogens to reproduce themselves either through further FP or sexually.",
+      "claim_type": "EXPLICIT",
+      "source": "However, a role for FP as an adaptive trait hinges on further studies demonstrating the ability of parthenogens to reproduce themselves either through further FP or sexually.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative, identifying a condition for FP to be adaptive.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:40:22.797089Z"
+    },
+    {
+      "id": "c8852813-0444-41ae-a9a3-f056d8bc280d",
+      "content_id": "a562c88d-4ab8-45e2-bce2-b97d5735a677",
+      "claim_id": "C108",
+      "claim": "FP may reduce the frequency of deleterious alleles within a population.",
+      "claim_type": "EXPLICIT",
+      "source": "If successive reproduction occurs, FP may reduce the frequency of deleterious alleles within a population, as well as provide reproductive assurance when males are scarce.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative, conditional on successive reproduction of FP offspring.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:40:22.797089Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "eeb4b4e5-cfe4-42be-b428-51deca4c610d",
+      "content_id": "a562c88d-4ab8-45e2-bce2-b97d5735a677",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Facultative parthenogenesis (FP) has been reported across diverse vertebrate clades including bony fish, sharks, snakes, lizards, crocodilians, and birds based on prior literature.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C6 are well-supported by multiple citations to prior work documenting FP in each vertebrate clade. These claims establish the taxonomic breadth of FP as background knowledge for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:40:22.797089Z"
+    },
+    {
+      "id": "39adb94d-70a5-4725-8e9f-86ced6fd0886",
+      "content_id": "a562c88d-4ab8-45e2-bce2-b97d5735a677",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "FP was historically mistaken for sperm storage but molecular analyses revealed no paternal contributions, occurs in natural populations, and is overrepresented in endangered species.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C10 are supported by citations to prior work. These claims provide important context about the historical understanding of FP, its detection methods, and conservation implications based on established literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:40:22.797089Z"
+    },
+    {
+      "id": "3609555d-fe2a-4a27-82c0-2aa6cc0adcf1",
+      "content_id": "a562c88d-4ab8-45e2-bce2-b97d5735a677",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The prevailing hypothesis for FP mechanism is automixis (polar body fusion), with central and terminal automixis distinguished by patterns of heterozygosity retention along chromosomes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C14 accurately describe the prior mechanistic hypotheses for FP based on citations and established knowledge of meiotic processes. These claims set up the alternative hypothesis that the current study will test.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:40:22.797089Z"
+    },
+    {
+      "id": "acbb37fb-4e43-4da5-9eee-35a9e46f9e6e",
+      "content_id": "a562c88d-4ab8-45e2-bce2-b97d5735a677",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Obligate parthenogenesis in Aspidoscelis whiptail lizards arose from historic hybridization events and preserves high heterozygosity, contrasting with the increased homozygosity in facultative parthenogenesis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C17 are supported by citations and provide important biological context distinguishing obligate from facultative parthenogenesis. This contrast is essential for interpreting the study's findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:40:22.797089Z"
+    },
+    {
+      "id": "8740088b-07cc-41d3-a9cb-9a38e4d56862",
+      "content_id": "a562c88d-4ab8-45e2-bce2-b97d5735a677",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Microsatellite analysis revealed over 20 incidences of FP in A. marmoratus and A. arizonae, with all FP offspring being female due to the XX/XY sex determination system.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C20 are supported by microsatellite data from this study (C18) and a citation for the sex determination system (C19). The inference that all FP offspring are female (C20) logically follows from the XX/XY system.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:40:22.797089Z"
+    },
+    {
+      "id": "66e97a4f-8aad-4579-9904-392d0262e464",
+      "content_id": "a562c88d-4ab8-45e2-bce2-b97d5735a677",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "In a mixed-species enclosure, A. marmoratus female 122 produced both hybrid offspring with A. arizonae male 4272 and parthenogenetic offspring (8449, 8450, 8394, 9070) that were homozygous at all microsatellite loci and inherited only maternal alleles.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C30 are well-supported by microsatellite data shown in Figure 1D and supplementary figures. The experimental setup is clearly described, and the genetic evidence strongly supports parthenogenetic origin with no paternal contribution and complete homozygosity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:40:22.797089Z"
+    },
+    {
+      "id": "8c45dce8-3b18-42b7-b9b8-cb06593664a6",
+      "content_id": "a562c88d-4ab8-45e2-bce2-b97d5735a677",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "A high-quality reference genome for A. marmoratus was assembled with 1.55 Gb size, N50 of 32.22 Mb, 96% BUSCO completeness, and annotation yielding 25,856 protein-coding genes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C42 are supported by genome assembly statistics, flow cytometry data, BUSCO analysis, phylogenetic analysis, repeat analysis, and annotation results shown in multiple supplementary figures. The assembly quality metrics are appropriate and well-documented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:40:22.797089Z"
+    },
+    {
+      "id": "d31e94f3-1bb3-4649-89f1-a479a8457e93",
+      "content_id": "a562c88d-4ab8-45e2-bce2-b97d5735a677",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Whole-genome sequencing revealed genome-wide homozygosity in FP animals with only 649-928 heterozygous sites compared to 30,769-53,416 in sexually produced animals, inconsistent with automixis and favoring a post-meiotic duplication mechanism.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C51 are strongly supported by whole-genome sequencing data shown in Figure 2 and supplementary figures. The analysis is rigorous, with appropriate filtering for coverage and careful consideration of potential artifacts. The conclusion that genome-wide homozygosity rules out automixis is well-justified.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:40:22.797089Z"
+    },
+    {
+      "id": "33639a07-3842-48ab-a9cd-75e2002df8d3",
+      "content_id": "a562c88d-4ab8-45e2-bce2-b97d5735a677",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "FP occurred at rates of 1% in A. arizonae (8/832) and 5% in A. marmoratus (15/286), with all cases occurring in enclosures where females were housed with males, indicating isolation is not required for FP.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C56 are supported by microsatellite analysis of captive breeding records. The observation that FP occurred in the presence of males challenges the prevailing hypothesis that isolation triggers FP, though the mechanism remains unclear.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:40:22.797089Z"
+    },
+    {
+      "id": "485a4021-6865-4230-9da9-b8f7ada29058",
+      "content_id": "a562c88d-4ab8-45e2-bce2-b97d5735a677",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "A single clutch from A. arizonae female 12852 contained both sexually produced offspring (heterozygous at all loci) and FP offspring (homozygous at all loci).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C58 are supported by microsatellite analysis shown in Figure 3B. This finding demonstrates that sexual and parthenogenetic reproduction can occur simultaneously within the same clutch, an important observation for understanding FP biology.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:40:22.797089Z"
+    },
+    {
+      "id": "e06211c4-3bdc-491a-8735-422ea13bddc2",
+      "content_id": "a562c88d-4ab8-45e2-bce2-b97d5735a677",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "FP animals exhibit mixoploidy with approximately 10% haploid cells and 90% diploid cells in blood, suggesting development initiates from haploid oocytes with diploid cells arising later via failed cytokinesis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C67 are supported by microscopic examination (Figure 4A-B) and flow cytometry (Figure 4C) showing bimodal nuclear sizes and DNA content. The mechanistic interpretation (C64-C66) is speculative but reasonable given the data. Mixoploidy was confirmed in multiple FP animals (C67).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:40:22.797089Z"
+    },
+    {
+      "id": "ea3071ff-bca7-48fe-83a6-5805cbdcea92",
+      "content_id": "a562c88d-4ab8-45e2-bce2-b97d5735a677",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Genome-wide homozygosity in FP animals exposes deleterious alleles, resulting in high embryonic mortality (9/23 died in ovum) and developmental defects (only 37.5% hatched normally) compared to 98% normal development in sexually produced animals.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C72 are supported by husbandry records and photographic documentation (Figure 4\u2014figure supplement 2). The high rate of developmental abnormalities and mortality is consistent with the genetic consequences of complete homozygosity exposing recessive deleterious alleles.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:40:22.797089Z"
+    },
+    {
+      "id": "8adf6a64-7900-4f12-96cc-3a143e92e97e",
+      "content_id": "a562c88d-4ab8-45e2-bce2-b97d5735a677",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "FP animal 8450 produced two eggs in isolation that failed to hatch, and ovarian/germinal vesicle anatomy of FP animals appeared normal compared to sexually reproducing animals.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C73-C74 are supported by husbandry records and microscopic examination (Figure 4\u2014figure supplement 3). These observations suggest FP animals have normal reproductive anatomy but may have reduced fertility, though more data would be needed to draw firm conclusions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:40:22.797089Z"
+    },
+    {
+      "id": "2eff6fc8-638b-44be-9a04-bb4a91e66a82",
+      "content_id": "a562c88d-4ab8-45e2-bce2-b97d5735a677",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "RAD-seq analysis of 321 wild whiptail lizards from 15 species identified five individuals with very low heterozygosity (<0.05%), including one A. deppii (LDOR30) with near-complete homozygosity, suggesting putative FP in wild populations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C75-C79 are supported by RAD-seq data analysis (Figure 5) with appropriate statistical testing. However, the interpretation that low heterozygosity indicates FP is uncertain because alternative explanations (inbreeding, small population size) are not ruled out. The authors acknowledge this limitation and call for further fieldwork.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:40:22.797089Z"
+    },
+    {
+      "id": "6a3f5fe7-7289-4fa6-aa2e-35596768c59c",
+      "content_id": "a562c88d-4ab8-45e2-bce2-b97d5735a677",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "FP in whiptail lizards results in genome-wide homozygosity via post-meiotic genome duplication, occurs alongside sexual reproduction in the presence of males, removes all heterozygosity in one generation, and could exert strong purifying selection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C80-C86 synthesize the major findings of the study. C80-C84 are well-supported by the genomic and breeding data. C85 is supported by the developmental defect data. C86 is speculative but logically follows from the mechanism\u2014it requires future work to demonstrate reproductive success of FP offspring.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:40:22.797089Z"
+    },
+    {
+      "id": "f64dbe8a-ca3f-40e1-8582-ab67a7b37850",
+      "content_id": "a562c88d-4ab8-45e2-bce2-b97d5735a677",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The mechanism of FP in whiptail lizards parallels experimental systems in frogs and zebrafish where haploid oocytes can initiate development and restore diploidy, with similar mixoploidy observed in turkey parthenogenesis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C87-C94 are supported by citations to prior work and draw appropriate parallels to experimental and natural systems. The comparison to zebrafish gynogenesis (C89-C90) and turkey parthenogenesis (C92) strengthens the mechanistic interpretation, though C91 and C93 remain somewhat speculative.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:40:22.797089Z"
+    },
+    {
+      "id": "4c305d7d-7655-41c3-9e56-c974894ee6ef",
+      "content_id": "a562c88d-4ab8-45e2-bce2-b97d5735a677",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "FP represents extreme inbreeding that precipitously reduces genetic diversity but also provides powerful genetic purging, potentially functioning as a reproductive strategy analogous to mixed-mating systems in plants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C95-C96 are well-supported by genetic principles and the study's data. Claims C97-C99 are speculative, drawing an analogy to plant mating systems. While the parallel is interesting and C99 is supported by the study's data, the adaptive significance of FP remains uncertain without demonstrating reproductive success of FP offspring.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:40:22.797089Z"
+    },
+    {
+      "id": "15fe295f-771d-4e85-bd37-acfc2de6279c",
+      "content_id": "a562c88d-4ab8-45e2-bce2-b97d5735a677",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Recent work in Drosophila and birds suggests a genetic basis for FP initiation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C100-C101 are supported by citations to recent work. These claims provide important context suggesting FP has a genetic basis that could be subject to selection, though the specific genes involved in whiptail lizards remain unknown.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:40:22.797089Z"
+    },
+    {
+      "id": "873e9290-ddf3-432c-9e99-7b72cbe56897",
+      "content_id": "a562c88d-4ab8-45e2-bce2-b97d5735a677",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "This study establishes A. marmoratus and A. arizonae as FP-capable species, demonstrates post-meiotic genome duplication as the mechanism, and proposes FP could be an adaptive trait contributing to genome purification if FP offspring can reproduce.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C102-C104 are well-supported by the study's data and represent major findings. Claims C105-C108 are speculative about the adaptive significance of FP. The hypothesis that FP contributes to genome purification is interesting but requires demonstrating that FP offspring can successfully reproduce (C107), which has not been shown in this study.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:40:22.797089Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "c04533e2-fb93-4255-a53e-9718c57aafbe",
+      "result_id": "eeb4b4e5-cfe4-42be-b428-51deca4c610d"
+    },
+    {
+      "claim_id": "b20eb7d0-1867-4778-87eb-6af5e3dec10a",
+      "result_id": "eeb4b4e5-cfe4-42be-b428-51deca4c610d"
+    },
+    {
+      "claim_id": "c128f175-0e47-43b3-89a1-a565a3456586",
+      "result_id": "eeb4b4e5-cfe4-42be-b428-51deca4c610d"
+    },
+    {
+      "claim_id": "2885dc26-afb0-4cf0-a69b-68867dc6bd72",
+      "result_id": "eeb4b4e5-cfe4-42be-b428-51deca4c610d"
+    },
+    {
+      "claim_id": "23b17d4a-ea6e-4b12-af90-8be678a92e31",
+      "result_id": "eeb4b4e5-cfe4-42be-b428-51deca4c610d"
+    },
+    {
+      "claim_id": "353085e2-fa77-4c16-bc93-c1c101533e9d",
+      "result_id": "eeb4b4e5-cfe4-42be-b428-51deca4c610d"
+    },
+    {
+      "claim_id": "3407a018-fb7c-4840-a98c-cf110e853ead",
+      "result_id": "39adb94d-70a5-4725-8e9f-86ced6fd0886"
+    },
+    {
+      "claim_id": "5a9d7e6f-0b92-4c91-aeb2-c72ed435478d",
+      "result_id": "39adb94d-70a5-4725-8e9f-86ced6fd0886"
+    },
+    {
+      "claim_id": "81887453-3875-4f8e-867e-f3dc85c63850",
+      "result_id": "39adb94d-70a5-4725-8e9f-86ced6fd0886"
+    },
+    {
+      "claim_id": "719b7ae9-8599-4078-abe5-b6fc23d3fbe3",
+      "result_id": "39adb94d-70a5-4725-8e9f-86ced6fd0886"
+    },
+    {
+      "claim_id": "9a7eecae-16b8-48e7-a8d5-3396703ac83a",
+      "result_id": "3609555d-fe2a-4a27-82c0-2aa6cc0adcf1"
+    },
+    {
+      "claim_id": "8d1e48dd-bba2-4252-aff8-2e54d56a1536",
+      "result_id": "3609555d-fe2a-4a27-82c0-2aa6cc0adcf1"
+    },
+    {
+      "claim_id": "773cd39a-ffa1-4475-a91c-092c4daaed45",
+      "result_id": "3609555d-fe2a-4a27-82c0-2aa6cc0adcf1"
+    },
+    {
+      "claim_id": "b9871ae1-4fba-463a-b11c-85189e6bcbbb",
+      "result_id": "3609555d-fe2a-4a27-82c0-2aa6cc0adcf1"
+    },
+    {
+      "claim_id": "d722c561-73a3-4668-b4e7-d7f5ef127df5",
+      "result_id": "acbb37fb-4e43-4da5-9eee-35a9e46f9e6e"
+    },
+    {
+      "claim_id": "f11db7bc-84c3-4259-ada3-fe68334d85f4",
+      "result_id": "acbb37fb-4e43-4da5-9eee-35a9e46f9e6e"
+    },
+    {
+      "claim_id": "ead8b3ac-4b42-48ab-b390-6e9a842e8051",
+      "result_id": "acbb37fb-4e43-4da5-9eee-35a9e46f9e6e"
+    },
+    {
+      "claim_id": "6f9c5c71-5f6b-438a-95b4-41eedecbc145",
+      "result_id": "8740088b-07cc-41d3-a9cb-9a38e4d56862"
+    },
+    {
+      "claim_id": "0c77fce9-0777-4a1f-b0e6-b6ecaa81d176",
+      "result_id": "8740088b-07cc-41d3-a9cb-9a38e4d56862"
+    },
+    {
+      "claim_id": "2c79d3fa-1d3a-456a-b681-acca4615d8ea",
+      "result_id": "8740088b-07cc-41d3-a9cb-9a38e4d56862"
+    },
+    {
+      "claim_id": "c3c055e7-1abc-4895-a82c-c255e16d14dc",
+      "result_id": "66e97a4f-8aad-4579-9904-392d0262e464"
+    },
+    {
+      "claim_id": "da626593-9764-44a4-888e-ea17983d8709",
+      "result_id": "66e97a4f-8aad-4579-9904-392d0262e464"
+    },
+    {
+      "claim_id": "45597176-2257-4061-aaad-883a914d1f55",
+      "result_id": "66e97a4f-8aad-4579-9904-392d0262e464"
+    },
+    {
+      "claim_id": "2031714c-cf38-4d2b-a359-b6b762043d5b",
+      "result_id": "66e97a4f-8aad-4579-9904-392d0262e464"
+    },
+    {
+      "claim_id": "3da7b787-8eec-419e-9516-c1cc553e1e5a",
+      "result_id": "66e97a4f-8aad-4579-9904-392d0262e464"
+    },
+    {
+      "claim_id": "9a3a8182-5501-46b3-b8ef-24b9b8324c1c",
+      "result_id": "66e97a4f-8aad-4579-9904-392d0262e464"
+    },
+    {
+      "claim_id": "24e28c89-9978-43de-8fbf-d5edebf6a79a",
+      "result_id": "66e97a4f-8aad-4579-9904-392d0262e464"
+    },
+    {
+      "claim_id": "d0db75b1-02fd-4f2f-9c2b-67b3abcb01b6",
+      "result_id": "66e97a4f-8aad-4579-9904-392d0262e464"
+    },
+    {
+      "claim_id": "7fd1c965-a9ae-449c-bdcc-0364c5a70bb1",
+      "result_id": "66e97a4f-8aad-4579-9904-392d0262e464"
+    },
+    {
+      "claim_id": "682dcf24-a5cb-4425-b6ac-be99f4c65a00",
+      "result_id": "66e97a4f-8aad-4579-9904-392d0262e464"
+    },
+    {
+      "claim_id": "c1a497ac-f7d6-4104-9823-77e5acc5b50d",
+      "result_id": "8c45dce8-3b18-42b7-b9b8-cb06593664a6"
+    },
+    {
+      "claim_id": "08ee63d4-f83c-4b85-ae5c-5402a6222122",
+      "result_id": "8c45dce8-3b18-42b7-b9b8-cb06593664a6"
+    },
+    {
+      "claim_id": "34f730d8-8912-45c5-a5e4-66ac38165202",
+      "result_id": "8c45dce8-3b18-42b7-b9b8-cb06593664a6"
+    },
+    {
+      "claim_id": "97473c5a-fd40-44d1-b2ed-974360e693d5",
+      "result_id": "8c45dce8-3b18-42b7-b9b8-cb06593664a6"
+    },
+    {
+      "claim_id": "a16200f8-1d1e-474b-af4b-9a32ffd97f54",
+      "result_id": "8c45dce8-3b18-42b7-b9b8-cb06593664a6"
+    },
+    {
+      "claim_id": "35c08a03-1dc0-4ba1-bd90-3a231bd92cd0",
+      "result_id": "8c45dce8-3b18-42b7-b9b8-cb06593664a6"
+    },
+    {
+      "claim_id": "380b417d-5984-45d0-9224-698c0f01a894",
+      "result_id": "8c45dce8-3b18-42b7-b9b8-cb06593664a6"
+    },
+    {
+      "claim_id": "04005c21-5f9f-4e62-a7f0-390a42b750a6",
+      "result_id": "8c45dce8-3b18-42b7-b9b8-cb06593664a6"
+    },
+    {
+      "claim_id": "910ff485-6ef1-45bf-82e9-17cf958fbe3e",
+      "result_id": "8c45dce8-3b18-42b7-b9b8-cb06593664a6"
+    },
+    {
+      "claim_id": "18a67975-07fc-4ddd-89d2-f897b1feaf93",
+      "result_id": "8c45dce8-3b18-42b7-b9b8-cb06593664a6"
+    },
+    {
+      "claim_id": "3e7919ff-9712-4b0b-bdeb-0a6dca8c9cf1",
+      "result_id": "8c45dce8-3b18-42b7-b9b8-cb06593664a6"
+    },
+    {
+      "claim_id": "8a3cbf63-09bb-473b-a233-19dbcb9c8a7f",
+      "result_id": "8c45dce8-3b18-42b7-b9b8-cb06593664a6"
+    },
+    {
+      "claim_id": "702daf58-6549-40b2-ae0b-580b5052d2b4",
+      "result_id": "d31e94f3-1bb3-4649-89f1-a479a8457e93"
+    },
+    {
+      "claim_id": "9078ba07-efeb-442b-bfb2-fc3c7035eb74",
+      "result_id": "d31e94f3-1bb3-4649-89f1-a479a8457e93"
+    },
+    {
+      "claim_id": "fb6a0ca7-166f-4b45-bcb6-e566d8b777a5",
+      "result_id": "d31e94f3-1bb3-4649-89f1-a479a8457e93"
+    },
+    {
+      "claim_id": "eb0803cd-1e78-41e2-bbbe-6fe1998fa8d7",
+      "result_id": "d31e94f3-1bb3-4649-89f1-a479a8457e93"
+    },
+    {
+      "claim_id": "1f197582-514d-4598-b559-f9747e4b84af",
+      "result_id": "d31e94f3-1bb3-4649-89f1-a479a8457e93"
+    },
+    {
+      "claim_id": "d2f626a2-a564-423f-94d3-0a722a2ae98c",
+      "result_id": "d31e94f3-1bb3-4649-89f1-a479a8457e93"
+    },
+    {
+      "claim_id": "b30ae366-f1d0-4561-a0eb-eaa2b03f6cdd",
+      "result_id": "d31e94f3-1bb3-4649-89f1-a479a8457e93"
+    },
+    {
+      "claim_id": "6c8485d5-4aec-412c-b892-3473a6995516",
+      "result_id": "d31e94f3-1bb3-4649-89f1-a479a8457e93"
+    },
+    {
+      "claim_id": "073b5bfd-bb46-490d-acb6-b7227348bbfb",
+      "result_id": "d31e94f3-1bb3-4649-89f1-a479a8457e93"
+    },
+    {
+      "claim_id": "732d74c9-a085-4b1e-b006-080ef6f9c7aa",
+      "result_id": "33639a07-3842-48ab-a9cd-75e2002df8d3"
+    },
+    {
+      "claim_id": "c97dfd09-ea3c-471e-a435-1a6505a904a0",
+      "result_id": "33639a07-3842-48ab-a9cd-75e2002df8d3"
+    },
+    {
+      "claim_id": "bdbe814b-34b8-4428-8156-d62fbadc085e",
+      "result_id": "33639a07-3842-48ab-a9cd-75e2002df8d3"
+    },
+    {
+      "claim_id": "c3b18664-463f-4ea7-ab40-f200b5043029",
+      "result_id": "33639a07-3842-48ab-a9cd-75e2002df8d3"
+    },
+    {
+      "claim_id": "64a4b03f-f848-43c7-9b9c-7ffc4e810be9",
+      "result_id": "33639a07-3842-48ab-a9cd-75e2002df8d3"
+    },
+    {
+      "claim_id": "d5086cc2-fb30-4a4c-bd65-8465d0cadc49",
+      "result_id": "485a4021-6865-4230-9da9-b8f7ada29058"
+    },
+    {
+      "claim_id": "f2e395f1-9ec2-421a-84f2-2b15cac1bc61",
+      "result_id": "485a4021-6865-4230-9da9-b8f7ada29058"
+    },
+    {
+      "claim_id": "ce54b812-f136-43f2-80ac-da80ca19864b",
+      "result_id": "e06211c4-3bdc-491a-8735-422ea13bddc2"
+    },
+    {
+      "claim_id": "2d9b8ebd-7871-4344-b3fb-eccff5eb754d",
+      "result_id": "e06211c4-3bdc-491a-8735-422ea13bddc2"
+    },
+    {
+      "claim_id": "6a40d222-4557-4d1b-9fe0-e7b0744a3188",
+      "result_id": "e06211c4-3bdc-491a-8735-422ea13bddc2"
+    },
+    {
+      "claim_id": "06ebb759-4064-43ae-a1dd-1813ff5b12d4",
+      "result_id": "e06211c4-3bdc-491a-8735-422ea13bddc2"
+    },
+    {
+      "claim_id": "6ea8143b-48a3-4be3-a222-990d5be44560",
+      "result_id": "e06211c4-3bdc-491a-8735-422ea13bddc2"
+    },
+    {
+      "claim_id": "c2a1d8b4-c7b4-485d-9bf5-1a52ba3ea8e9",
+      "result_id": "e06211c4-3bdc-491a-8735-422ea13bddc2"
+    },
+    {
+      "claim_id": "e416b75f-c91a-4a91-9849-73578ba1157a",
+      "result_id": "e06211c4-3bdc-491a-8735-422ea13bddc2"
+    },
+    {
+      "claim_id": "45d46cbf-8327-4958-9780-d28009044981",
+      "result_id": "e06211c4-3bdc-491a-8735-422ea13bddc2"
+    },
+    {
+      "claim_id": "f1b29da2-0b19-4a78-b713-02a31861c0d4",
+      "result_id": "e06211c4-3bdc-491a-8735-422ea13bddc2"
+    },
+    {
+      "claim_id": "b60aeb80-58a6-45f6-9631-d984007259ec",
+      "result_id": "ea3071ff-bca7-48fe-83a6-5805cbdcea92"
+    },
+    {
+      "claim_id": "4fb4da62-3cd3-4c2d-b0d2-4de42031a2b8",
+      "result_id": "ea3071ff-bca7-48fe-83a6-5805cbdcea92"
+    },
+    {
+      "claim_id": "5cadc518-21f4-40fb-8d94-db4fa02159c4",
+      "result_id": "ea3071ff-bca7-48fe-83a6-5805cbdcea92"
+    },
+    {
+      "claim_id": "24b811f5-e1c9-4026-ba43-5364c82897aa",
+      "result_id": "ea3071ff-bca7-48fe-83a6-5805cbdcea92"
+    },
+    {
+      "claim_id": "be43786f-6699-476e-a08a-203708c1d97d",
+      "result_id": "ea3071ff-bca7-48fe-83a6-5805cbdcea92"
+    },
+    {
+      "claim_id": "919f12c2-1858-4c7c-ba82-459a751a1ac5",
+      "result_id": "8adf6a64-7900-4f12-96cc-3a143e92e97e"
+    },
+    {
+      "claim_id": "5d60ebb4-3b13-4898-835d-53914b1cf257",
+      "result_id": "8adf6a64-7900-4f12-96cc-3a143e92e97e"
+    },
+    {
+      "claim_id": "9b8c4359-3fd9-4419-af5f-0a7204cbc802",
+      "result_id": "2eff6fc8-638b-44be-9a04-bb4a91e66a82"
+    },
+    {
+      "claim_id": "c061c5a5-4f0a-4e1d-b161-09e9c3726846",
+      "result_id": "2eff6fc8-638b-44be-9a04-bb4a91e66a82"
+    },
+    {
+      "claim_id": "ba31900a-e935-4b71-8c26-fa5c75d95e54",
+      "result_id": "2eff6fc8-638b-44be-9a04-bb4a91e66a82"
+    },
+    {
+      "claim_id": "45b9d315-4a8e-4b11-b962-095ac1f21019",
+      "result_id": "2eff6fc8-638b-44be-9a04-bb4a91e66a82"
+    },
+    {
+      "claim_id": "a889f092-a53d-425a-a8d7-10bb54a938f8",
+      "result_id": "2eff6fc8-638b-44be-9a04-bb4a91e66a82"
+    },
+    {
+      "claim_id": "2604e36a-09b0-49f4-9d31-1c11b1a50aea",
+      "result_id": "6a3f5fe7-7289-4fa6-aa2e-35596768c59c"
+    },
+    {
+      "claim_id": "405a4818-89c6-4c63-865d-dd40b27c4bcb",
+      "result_id": "6a3f5fe7-7289-4fa6-aa2e-35596768c59c"
+    },
+    {
+      "claim_id": "5b4e3714-1ba3-4d7a-950d-8893612a3c36",
+      "result_id": "6a3f5fe7-7289-4fa6-aa2e-35596768c59c"
+    },
+    {
+      "claim_id": "dac99cb4-34b3-46d9-83e3-e41a4f8ee6b8",
+      "result_id": "6a3f5fe7-7289-4fa6-aa2e-35596768c59c"
+    },
+    {
+      "claim_id": "291dcfbb-c2c0-4c58-949e-ede7d8f136e3",
+      "result_id": "6a3f5fe7-7289-4fa6-aa2e-35596768c59c"
+    },
+    {
+      "claim_id": "b963afe9-bbf2-4d4d-b504-976a2dc21a65",
+      "result_id": "6a3f5fe7-7289-4fa6-aa2e-35596768c59c"
+    },
+    {
+      "claim_id": "1ba0dd82-5a60-4c4c-a303-173e59b70c84",
+      "result_id": "6a3f5fe7-7289-4fa6-aa2e-35596768c59c"
+    },
+    {
+      "claim_id": "ab063d55-decc-419b-bfd8-b21bae8d9c1c",
+      "result_id": "f64dbe8a-ca3f-40e1-8582-ab67a7b37850"
+    },
+    {
+      "claim_id": "92771e59-762b-4c39-a99e-36edf2d059bd",
+      "result_id": "f64dbe8a-ca3f-40e1-8582-ab67a7b37850"
+    },
+    {
+      "claim_id": "96a14b8a-29ee-409a-913d-bad4eb7cd403",
+      "result_id": "f64dbe8a-ca3f-40e1-8582-ab67a7b37850"
+    },
+    {
+      "claim_id": "5a6f2f57-c6b6-4d44-84bb-f1934efb0405",
+      "result_id": "f64dbe8a-ca3f-40e1-8582-ab67a7b37850"
+    },
+    {
+      "claim_id": "df1c0fac-38c3-4617-a2bd-63144f77d470",
+      "result_id": "f64dbe8a-ca3f-40e1-8582-ab67a7b37850"
+    },
+    {
+      "claim_id": "b140402c-9584-4cb3-9a75-a76875c80e15",
+      "result_id": "f64dbe8a-ca3f-40e1-8582-ab67a7b37850"
+    },
+    {
+      "claim_id": "8d98c1fc-085c-4581-aff0-095b7c65c782",
+      "result_id": "f64dbe8a-ca3f-40e1-8582-ab67a7b37850"
+    },
+    {
+      "claim_id": "4363ce33-5583-41e6-ab63-a5ff2d5232a2",
+      "result_id": "f64dbe8a-ca3f-40e1-8582-ab67a7b37850"
+    },
+    {
+      "claim_id": "22e627b5-cda1-42f0-a2ff-ede03cca7963",
+      "result_id": "4c305d7d-7655-41c3-9e56-c974894ee6ef"
+    },
+    {
+      "claim_id": "29380aee-846d-4d95-8bb7-646dafbd47a8",
+      "result_id": "4c305d7d-7655-41c3-9e56-c974894ee6ef"
+    },
+    {
+      "claim_id": "8aab524c-8999-4c3d-9780-ea6c1638060b",
+      "result_id": "4c305d7d-7655-41c3-9e56-c974894ee6ef"
+    },
+    {
+      "claim_id": "a1d93142-f89a-4cc6-8978-5591510ea1d0",
+      "result_id": "4c305d7d-7655-41c3-9e56-c974894ee6ef"
+    },
+    {
+      "claim_id": "fd910e62-f91a-42b2-bb04-3475c20e40d4",
+      "result_id": "4c305d7d-7655-41c3-9e56-c974894ee6ef"
+    },
+    {
+      "claim_id": "625f85aa-d854-4fdd-8e49-aced8b2b9b15",
+      "result_id": "15fe295f-771d-4e85-bd37-acfc2de6279c"
+    },
+    {
+      "claim_id": "6dc0148f-5774-4955-904a-92a6b72dd566",
+      "result_id": "15fe295f-771d-4e85-bd37-acfc2de6279c"
+    },
+    {
+      "claim_id": "80d97571-2a3d-4969-bbef-7818be687a29",
+      "result_id": "873e9290-ddf3-432c-9e99-7b72cbe56897"
+    },
+    {
+      "claim_id": "3f9b3393-0970-4e10-81ee-e87dd853617b",
+      "result_id": "873e9290-ddf3-432c-9e99-7b72cbe56897"
+    },
+    {
+      "claim_id": "05f3d317-2544-42c1-a4f4-d3a7dbe4fa70",
+      "result_id": "873e9290-ddf3-432c-9e99-7b72cbe56897"
+    },
+    {
+      "claim_id": "c0dd7469-4572-4a93-bc2a-6adb28b40312",
+      "result_id": "873e9290-ddf3-432c-9e99-7b72cbe56897"
+    },
+    {
+      "claim_id": "9cb61c50-968d-4631-8e14-bf4d31c2955c",
+      "result_id": "873e9290-ddf3-432c-9e99-7b72cbe56897"
+    },
+    {
+      "claim_id": "e0f59c72-88ca-4ff1-8af7-2993bbd61c85",
+      "result_id": "873e9290-ddf3-432c-9e99-7b72cbe56897"
+    },
+    {
+      "claim_id": "c8852813-0444-41ae-a9a3-f056d8bc280d",
+      "result_id": "873e9290-ddf3-432c-9e99-7b72cbe56897"
+    }
+  ],
+  "comparisons": []
+}

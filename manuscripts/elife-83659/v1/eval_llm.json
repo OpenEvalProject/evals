@@ -1,0 +1,264 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C15"
+    ],
+    "result": "The authors establish the motivation for their work by noting that while IS formation is critical for T cell-based immunotherapies, the population-level dynamics of IS formation remain poorly defined, and no theoretical framework exists to characterize these dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 and C15 establish well-supported background knowledge and identify a clear gap in the field. These claims are based on established immunology principles (C1, C2) and accurate assessment of the current state of knowledge (C3, C15), providing strong justification for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C81",
+      "C82"
+    ],
+    "result": "The authors developed an experimental system using CD3+ Jurkat effector cells and CD19+ Raji target cells, sorted into subpopulations based on antigen expression, and quantified IS formation including typical IS and variants using imaging flow cytometry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C18 and C81-C82 describe the experimental setup with appropriate detail. The use of well-characterized cell lines, flow cytometry-based sorting, and imaging flow cytometry for IS quantification represents a sound methodological approach supported by the figures.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C19",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "The authors developed a base model incorporating three fundamental components: 3D antibody-antigen binding to form binary complexes, cell-cell encounter probability based on Brownian motion, and 2D binding-driven cell-cell adhesion to form ternary complexes, with additional features including CD3 downregulation, CD19 internalization, and IS variant formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19 and C83-C92 describe a mechanistically detailed model structure with appropriate assumptions grounded in the literature. The model incorporates both molecular-scale (3D/2D binding) and cellular-scale (encounter, adhesion) processes, representing a novel integration supported by citations to relevant prior work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C29",
+      "C31"
+    ],
+    "result": "The base model produces experimentally consistent predictions across multiple conditions, accurately predicting the bell-shaped relationship between BiTE concentration and IS formation, time-dependent IS formation dynamics, differential effects of CD3 vs CD19 expression, cell density effects, E:T ratio effects, and IS variant formation patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4 and C20-C26, C29, C31 demonstrate strong agreement between model predictions and experimental data across diverse conditions (Figure 3). The model captures complex phenomena including the bell-shaped dose-response and correctly predicts relative contributions of different factors, providing robust validation of the modeling approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C30",
+      "C32",
+      "C33"
+    ],
+    "result": "IS variants (ETE, ETT, ETET, etc.) comprised 12-25% of total IS under most conditions, with ETE and ETT being most frequent. The fraction of IS variants correlated positively with total IS abundance, and the E:T ratio in IS variants was approximately 1.1, slightly favoring effector cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C28 and C30-C33 present quantitative observations about IS variant formation that are well-supported by experimental data in Figure 4. The model accurately predicts these variant patterns, demonstrating that the framework captures multi-cell engagement dynamics beyond simple pairwise interactions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "The in vitro model incorporating serial engagement predicts that target cell lysis increases considerably over 72 hours and that tumor evolution toward low CD19-expressing populations (antigen escape) occurs, with the speed of evolution increasing at higher BiTE concentrations and accelerating over time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C38 describe predictions from the extended in vitro model that are consistent with clinical observations of antigen escape (C36). The mechanistic basis (lower CD19 expression reduces engagement probability) is sound, though the model predictions would benefit from direct experimental validation of the evolutionary dynamics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C7"
+    ],
+    "result": "The model predicts that effector cell density critically determines target cell lysis, with higher lysis in lymph nodes and spleen due to abundant effector cells, while the bone marrow shows restricted lysis and may serve as a sanctuary site for tumor evolution and treatment resistance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C42 and C7 present model predictions about organ-specific lysis patterns based on known T cell distributions. While the predictions are mechanistically sound and consistent with clinical observations of bone marrow relapse (C75), these remain computational predictions that would benefit from direct experimental validation in vivo.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "The in vivo model assumes blood serves only as a trafficking route without mediating IS formation, supported by experimental observations that negligible IS forms under blood flow shear stress, though pre-formed IS are stable under shear stress.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C45 describe a modeling assumption validated by experimental data (Figure 6\u2014figure supplement 1). The shear stress experiments appropriately test the assumption, though the range of shear stresses tested and the in vitro nature of these experiments represent limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C5",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "The in vivo model, incorporating patient-specific parameters including BiTE dosing regimens and T cell proliferation profiles, reasonably predicted B-cell depletion profiles in patients across multiple clinical trials and could distinguish between responding and non-responding patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C46-C48 demonstrate that the model predictions align with clinical data from multiple trials (Figure 6b-e). The ability to account for patient-specific T cell dynamics and distinguish responders from non-responders represents strong clinical validation, though the model is fitted to these data rather than making prospective predictions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "The in vivo model predicts evolution toward low CD19-expressing populations in non-responders, differential cell lysis across organs (>45% in lymph nodes, ~30% in spleen, poor efficiency in bone marrow), and that surviving low-CD19 cells in bone marrow can repopulate and cause relapse even in high responders.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C55 present model predictions about spatial heterogeneity in treatment response and tumor evolution. While mechanistically sound and consistent with clinical observations, these predictions represent model outputs rather than directly validated findings. The relapse mechanism (C55) is inferred rather than demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C56"
+    ],
+    "result": "Sensitivity analyses confirmed that baseline tumor burden, drug concentration, cytotoxic T cell infiltration, and CD19 expression are critical determinants of patient response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C56 is supported by systematic sensitivity analyses shown in Figure 6i-l. These analyses appropriately explore the parameter space and identify key drivers of treatment response, providing insight into sources of patient heterogeneity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C6",
+      "C8",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "The model predicts that optimal dosing regimens depend on tumor growth rate, CD19 expression, and T cell abundance, with the clinically approved dose potentially suboptimal for slow-growing tumors. For slow-growing tumors with low T cells, medium doses achieve comparable efficacy with less CD19 evolution, while high doses are needed for fast-growing tumors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C6, C8, C57-C61, C77-C80 present model-based dosing recommendations that are mechanistically reasonable but lack prospective clinical validation. The predictions about optimal dosing represent computational simulations that would require clinical trials to validate. The claim that approved dosing is 'suboptimal' (C61, C78) is strong given the lack of prospective validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Cell-cell encounter is identified as a rate-limiting step for IS formation, particularly when target cell density is low or effector cell density is insufficient. When target cell density is extremely high, insufficient antibody concentration can limit IS formation, consistent with clinical observations of better efficacy at low tumor burden.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C66 present mechanistic insights from the model that are well-supported by the model structure and consistent with clinical observations (C66). The identification of encounter as rate-limiting under certain conditions represents an important conceptual contribution, though C62-C64 are inferences rather than direct measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C67",
+      "C68"
+    ],
+    "result": "The model predicts a bell-shaped concentration-response curve consistent with literature reports, but the curve peaks at higher concentrations when CD3 downregulation is not included, highlighting the importance of this mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C68 compare the model predictions to established literature findings and demonstrate the importance of including CD3 downregulation. This represents appropriate model validation and mechanistic insight, though C68 is based on model simulations rather than experimental data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "CD19 expression and target cell density have distinct effects on cell lysis: CD19 expression plateaus in effect beyond 3\u00d710^5 receptors/cell, while target cell density shows a bidirectional effect, enhancing encounter probability at low densities but becoming limited by BiTE concentration at high densities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C71 describe model predictions that distinguish molecular-scale (CD19 expression) from cellular-scale (cell density) effects. These predictions are mechanistically sound and highlight the importance of multi-scale modeling, though they represent computational findings rather than experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "The model predicts that tumor evolution toward antigen escape is inevitable, with stronger therapeutic pressure driving faster evolution. This is consistent with clinical observations that antigen escape is a common resistance mechanism and that relapses are often first detected in the bone marrow, though alternative mechanisms like chemokine gradients may also contribute.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C75 connect model predictions to established clinical phenomena (C74-C75), providing face validity. However, C73 makes a strong claim about inevitability based on model simulations, and C76 appropriately acknowledges alternative mechanisms. The predictions would benefit from prospective validation.",
+    "result_type": "MAJOR"
+  }
+]

@@ -1,0 +1,1295 @@
+{
+  "submission": {
+    "id": "59341500-049d-46ee-ae2d-77296fa9a99c",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-04T02:02:08.711689Z",
+    "updated_at": "2025-12-04T02:02:08.711689Z"
+  },
+  "content": [
+    {
+      "id": "c20af57a-6aec-450e-a271-1d30cbce3829",
+      "submission_id": "59341500-049d-46ee-ae2d-77296fa9a99c",
+      "content_type": "manuscript",
+      "content_text": "# Changing the incentive structure of social media platforms to halt the spread of misinformation\n\n## Authors\n\n- Laura K Globig<sup>1</sup> ([ORCID: 0000-0002-0612-0594](https://orcid.org/0000-0002-0612-0594)) \u2020\n- Nora Holtz<sup>1</sup>\n- Tali Sharot<sup>1</sup> ([ORCID: 0000-0002-8384-6292](https://orcid.org/0000-0002-8384-6292)) \u2020\n\n### Affiliations\n\n1. Affective Brain Lab, Department of Experimental Psychology, University College London London United Kingdom ([ROR:02jx3x895](https://ror.org/02jx3x895))\n2. The Max Planck UCL Centre for Computational Psychiatry and Ageing Research, University College London London United Kingdom ([ROR:02jx3x895](https://ror.org/02jx3x895))\n3. Department of Brain and Cognitive Sciences, Massachusetts Institute of Technology Cambridge United States ([ROR:042nb2s44](https://ror.org/042nb2s44))\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe powerful allure of social media platforms has been attributed to the human need for social rewards. Here, we demonstrate that the spread of misinformation on such platforms is facilitated by existing social \u2018carrots\u2019 (e.g., \u2018likes\u2019) and \u2018sticks\u2019 (e.g., \u2018dislikes\u2019) that are dissociated from the veracity of the information shared. Testing 951 participants over six experiments, we show that a slight change to the incentive structure of social media platforms, such that social rewards and punishments are contingent on information veracity, produces a considerable increase in the discernment of shared information. Namely, an increase in the proportion of true information shared relative to the proportion of false information shared. Computational modeling (i.e., drift-diffusion models) revealed the underlying mechanism of this effect is associated with an increase in the weight participants assign to evidence consistent with discerning behavior. The results offer evidence for an intervention that could be adopted to reduce misinformation spread, which in turn could reduce violence, vaccine hesitancy and political polarization, without reducing engagement.\n\n## Introduction\n\nIn recent years, the spread of misinformation online has skyrocketed, increasing polarization, racism and resistance to climate action and vaccines (Barreto et al., 2021; Rapp and Salovich, 2018; Tsfati et al., 2020; Van Bavel et al., 2021). Existing measures to halt the spread, such as flagging posts, have had limited impact (e.g., Chan et al., 2017; Grady et al., 2021; Lees et al., 2022).\n\nWe hypothesize that the spread of misinformation on social media platforms is facilitated by the existing incentive structure of those platforms, where social rewards (in the form of \u2018likes\u2019 and \u2018shares\u2019) are dissociated from the veracity of the information (Figure 1a, left panel, Sharot, 2021). The rationale for this hypothesis is as follows: users can discern true from false content to a reasonable degree (Allen et al., 2021; Pennycook and Rand, 2019). Yet, because misinformation generates no less retweets and \u2018likes\u2019 than reliable information (Lazer et al., 2018; Vosoughi et al., 2018), and online behavior conforms to a reinforcement-learning model by which users are reacting to social rewards (Lindstr\u00f6m et al., 2021; Brady et al., 2021) users have little reason to use their discernment to guide their sharing behavior. Thus, people will share misinformation even when they do not trust it (Pennycook et al., 2021; Ren et al., 2021).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/85767/elife-85767-fig1-v1.jpg)\n\n**Figure 1.:** (a) The current incentive structure (blue) is such that the veracity of shared information is dissociated from rewards (\u2018carrots\u2019) and punishments (\u2018sticks\u2019). That is, true information and misinformation may lead to roughly equal number of rewards and punishments. An optimal incentive structure (orange) is such that sharing true information is rewarded with more \u2018carrots\u2019 than sharing misinformation, which in turn is penalized with more \u2018sticks\u2019 than true information. To create an optimal environment, an intervention is needed by which the number of rewards and punishments are directly associated with the veracity of information. (b) We test one such possible intervention (Experiment 1). In particular, we allow people to engage with posts using \u2018trust\u2019 reaction buttons and \u2018distrust\u2019 reaction buttons (orange). The rationale is that they will use these reactions to discern true from false information more so than \u2018like\u2019 and \u2018dislike\u2019 reaction buttons. (c) As a result, to obtain a greater number of \u2018trust\u2019 carrots and a smaller number of \u2018distrust\u2019 sticks in response to a post, people in the optimal environment (orange) will share more true than misinformation compared to those in the suboptimal environment which includes no feedback at all (gray), and those in an environment where the association between veracity of information and number of carrots and sticks is weak (blue). This second step is tested in Experiments 2 and 3.\n\nTo halt the spread, an incentive structure is needed where \u2018carrots\u2019 and \u2018sticks\u2019 are directly associated with accuracy (Figure 1a, right panel, Sharot, 2021). Such a system will work with the natural human tendency to select actions that lead to the greatest reward and avoid those that lead to punishment (Skinner, 1966). Scientists have tested different strategies to reduce the spread of misinformation, including educating people about fake news (Guess et al., 2020; Traberg et al., 2022), using a prompt to direct attention to accuracy (Kozyreva et al., 2020; Pennycook et al., 2021; Pennycook et al., 2020) and limiting how widely a post can be shared (Jackson et al., 2022). Surprisingly, possible interventions in which the incentive structure of social media platforms is altered to reduce misinformation have been overlooked.\n\nHere, we test the efficacy of such a structure by slightly altering the engagement options offered to users. Specifically, we add an option to react to posts using \u2018trust\u2019 and \u2018distrust\u2019 buttons (Figure 1b). We selected these buttons because trust by definition is related to veracity \u2013 it is defined as \u2018a firm belief in the reliability, truth, ability, or strength of someone or something\u2019 (Oxford Dictionary).\n\nWe hypothesize that (1) people will use the \u2018trust\u2019 and \u2018distrust\u2019 buttons to discern true from misinformation more so than the commonly existing engagement options (such as a \u2018like\u2019 button; Figure 1b, top panel). By \u2018discernment\u2019 we mean that true posts will receive more \u2018trusts\u2019 reactions than \u2018distrusts\u2019 reactions and vice versa for false posts. This will create an environment in which rewards (\u2018trusts\u2019) and punishments (\u2018distrusts\u2019) are more directly associated with the veracity of information. Thus, (2) when exposed to this environment, users will start sharing more true information and less false information in order to obtain more \u2018trust\u2019 carrots and fewer \u2018distrust\u2019 sticks (Figure 1b, bottom panel). The new feedback options could both reinforce user behavior that generates trustworthy material and signal to others that the post is dependable.\n\nWe also test environments in which participants receive only \u2018trusts\u2019 (a different number of trust for different posts) or only \u2018distrusts\u2019 (a different number of distrust for different posts) to examine if and how the impact of small vs large positive feedback (\u2018trust\u2019) on discernment differs from the impact of small vs large negative feedback (distrust\u2019). It has been proposed that the possibility of reward is more likely to reinforce action than the possibility of punishment, while the possibility of punishment is more likely to reinforce inaction (Guitart-Masip et al., 2014; Guitart-Masip et al., 2011; Guitart-Masip et al., 2012). This may translate to a large number of \u2018trust\u2019 selectively increasing sharing of true information without decreasing sharing of misinformation and vice versa for large number of \u2018distrust\u2019. Further, being mindful of potential differences in sharing behavior across political parties (e.g., Grinberg et al., 2019; Guess et al., 2020) we test participants from both sides of the political divide.\n\nTo that end, over six experiments 951 participants engaged in simulated social media platforms where they encountered true and false information. In Experiment 1, we examined whether participants would use \u2018trust\u2019 and \u2018distrust\u2019 buttons to discern true from false information more so than existing \u2018like\u2019 and \u2018dislike' buttons (Figure 1b, replication: Experiment 4). In Experiments 2 and 3, we tested whether new groups of participants would share more true than false information in social media platforms that introduce real \u2018trust\u2019 and \u2018distrust\u2019 feedback from other participants (Figure 1c, replication: Experiments 5 and 6). The intuition is that \u2018trust\u2019 and \u2018distrust\u2019 reactions will naturally be used to indicate veracity and thus provide a reward structure contingent on accuracy, thereby reducing the sharing of misinformation and generating a healthier information ecosystem. Using computational modeling we provide insights into the specific mechanism by which our intervention improves sharing discernment.\n\n## Results\n\n### Participants use \u2018trust\u2019 and \u2018distrust\u2019 buttons to discern true from false information (Experiment 1)\n\nIn a first step, we examined whether participants used \u2018trust\u2019 and \u2018distrust\u2019 reactions to discern true from false information more so than \u2018like\u2019 and \u2018dislike\u2019 reactions. In Experiment 1, participants saw 100 news posts taken from the fact-checking website Politifact (https://www.politifact.com; see Figure 2). Half of the posts were true, and half were false. Participants were given the opportunity to react to each post using \u2018like\u2019, \u2018dislike\u2019, \u2018trust\u2019, and \u2018distrust\u2019 reaction buttons. They could select as many buttons as they wished or none at all (skip). Five participants were excluded according to pre-determined criteria (see Materials and methods for details). Thus, 106 participants (52 Democrats, 54 Republican, Mage = 40.745, SDage \u00b1 14.479; female = 54, male = 52) were included in the analysis. See Figure 2\u2014figure supplement 1 for full instructions.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/85767/elife-85767-fig2-v1.jpg)\n\n**Figure 2.:** Participants observed a series of 100 posts in random order (50 true, 50 false). Their task was to react using one or more of the \u2018like\u2019, \u2018dislike\u2019, \u2018trust\u2019, or \u2018distrust\u2019 buttons or to skip. The task was self-paced.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/85767/elife-85767-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** At the start of the experiment participants received extensive instructions explaining the task.\n\nWe then examined whether participants used the different reaction buttons to discern true from false information. Discernment was calculated as follows, such that high numbers always indicate better discernment:\n\nFor \u2018like\u2019:\n\n$$\nDiscernment=Prop_{likestrue}\u2212Prop_{likesfalse}\n$$\n\nFor \u2018dislike\u2019:\n\n$$\nDiscernment=Prop_{dislikesfalse}\u2212Prop_{dislikestrue}\n$$\n\nFor \u2018trust\u2019:\n\n$$\nDiscernment=Prop_{truststrue}\u2212Prop_{trustsfalse}\n$$\n\nFor \u2018distrust\u2019:\n\n$$\nDiscernment=Prop_{distrustsfalse}\u2212Prop_{distruststrue}\n$$\n\nWith Prop indicating the proportion of that response out of all true posts, or out of all false posts, as indicated.\n\nThese discernment scores were calculated for each participant separately and then entered into a 2 (type of reaction: \u2018trust\u2019 and \u2018distrust\u2019/\u2018like\u2019 and \u2018dislike\u2019) by 2 (valence of reaction: positive, i.e., \u2018like\u2019, \u2018trust\u2019/negative, i.e., \u2018dislike\u2019, \u2018distrust\u2019) within-subject analysis of variance (ANOVA). Political orientation was also added as a between-subject factor (Republican/Democrat), allowing for an interaction of political orientation and type of reaction to assess whether participants with differing political beliefs used the reaction buttons in different ways.\n\nThe results reveal that participants\u2019 use of \u2018(Dis)Trust\u2019 reaction buttons (M = 0.127; SE = 0.007) was more discerning than their use of \u2018(Dis)Like\u2019 reaction buttons (M = 0.047; SE = 0.005; F(1,104) = 95.832, p < 0.001, partial \u03b72 = 0.48, Figure 3). We additionally observed an effect of valence (F(1,105) = 17.33, p < 0.001, partial \u03b72 = 0.14), with negatively valenced reaction buttons (e.g., \u2018dislike\u2019 and \u2018distrust\u2019, M = 0.095, SE = 0.007) being used in a more discerning manner than positively valenced reaction buttons (e.g., \u2018like\u2019 and \u2018trust\u2019, M = 0.087, SE = 0.005) and an effect of political orientation (F(1,104) = 25.262, p < 0.001, partial \u03b72 = 0.2), with Democrats (M = 0.115, SE = 0.007) being more discerning than Republicans (M = 0.06, SE = 0.005). There was also an interaction of type of reaction and political orientation (F(1,104) = 24.084, p < 0.001, partial \u03b72 = 0.19), which was characterized by Democrats showing greater discernment than Republicans in their use of \u2018(Dis)Trust\u2019 reaction buttons (F(1,104) = 33.592, p < 0.001, partial \u03b72 = 0.24), but not in their use of \u2018(Dis)Like\u2019 reaction buttons (F(1,104) = 2.255, p = 0.136, partial \u03b72 = 0.02). Importantly, however, both Democrats (F(1,51) = 93.376, p < 0.001, partial \u03b72 = 0.65) and Republicans (F(1,53) = 14.715, p < 0.001, partial \u03b72 = 0.22) used the \u2018(Dis)Trust\u2019 reaction buttons in a more discerning manner than the \u2018(Dis)Like\u2019 reaction buttons.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/85767/elife-85767-fig3-v1.jpg)\n\n**Figure 3.:** \u2018Distrust\u2019 and \u2018trust\u2019 reactions were used in a more discerning manner than \u2018like\u2019 and \u2018dislike\u2019 reactions. Y axis shows discernment between true and false posts. For positive reactions (e.g., \u2018likes\u2019 and \u2018trusts\u2019), discernment is equal to the proportion of positive reactions for true information minus false information, and vice versa for negative reactions (\u2018dislikes\u2019 and \u2018distrusts\u2019). X axis shows reaction options. Data are plotted as box plots for each reaction button, in which horizontal lines indicate median values, boxes indicate 25/75% interquartile range and whiskers indicate 1.5 \u00d7 interquartile range. Diamond shape indicates the mean discernment per reaction. Individuals\u2019 mean discernment data are shown separately as gray dots. Symbols above each box plot indicate significance level compared to 0 using a t-test. N=106, ***p < 0.001.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/85767/elife-85767-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Experiment 4 is a replication of Experiment 1, in which participants (N=50) observe posts (half true half false) and can respond by clicking all, none or some of the following buttons: \u2018like\u2019, \u2018dislike\u2019, \u2018trust\u2019, and \u2018distrust\u2019 (see Materials and methods for details). Y axis shows discernment. For positive reactions (e.g., \u2018likes\u2019 and \u2018trusts\u2019) discernment is equal to the proportion of those reactions in response to true posts minus false posts, and vice versa for negative reactions (\u2018dislikes\u2019 and \u2018distrusts\u2019). A 2 (type of reaction: \u2018trust\u2019 and \u2018distrust\u2019/\u2018like\u2019 and \u2018dislike\u2019) by 2 (valence: positive, i.e., \u2018like\u2019, \u2018trust\u2019/negative, i.e., \u2018dislike\u2019, \u2018distrust\u2019) within-subject analysis of variance (ANOVA) revealed an effect of type of feedback (F(1,49) = 51.996, p < 0.001, partial \u03b72 = 0.51): participants used \u2018(Dis)Trust\u2019 (M = 0.111; SE = 0.01) in a more discerning manner than \u2018(Dis)Like\u2019 (M = 0.03; SE = 0.006). There was also an effect of valence (F(1,49) = 7.147, p = 0.01, partial \u03b72 = 0.13): participants used negative reactions (M = 0.082; SE = 0.011) in a more discerning manner than positive reactions (M = 0.06, SE = 0.006). Participants\u2019 used all reaction buttons, except \u2018dislike\u2019, to discern between true and false posts (\u2018like\u2019: M = 0.053; SE = 0.008; t(49) = 6.982, p < 0.001, Cohen\u2019s d = 0.987; \u2018trust\u2019: M = 0.066; SE = 0.01; t(49) = 6.641, p < 0.001, Cohen\u2019s d = 0.939; \u2018dislike\u2019: M = 0.007; SE = 0.008; t(49) = 0.883, p = 0.381, Cohen\u2019s d = 0.125; \u2018distrust\u2019: M = 0.157; SE = 0.014; t(49) = 11.312, p < 0.001, Cohen\u2019s d = 1.6). Data are plotted as box plots for each reaction, in which horizontal lines indicate median values, boxes indicate 25/75% interquartile range, and whiskers indicate 1.5 \u00d7 interquartile range. Diamond shape indicates the mean discernment per reaction. Individuals\u2019 mean discernment data are shown separately as gray dots. Symbols above each box plot indicate significance level compared to 0 using a t-test. ***p < 0.001.\n\nOne-sample t-tests against zero further revealed that participants\u2019 use of each reaction button discerned true from false information (\u2018like\u2019: M = 0.06; SE = 0.006; t(105) = 10.483, p < 0.001, Cohen\u2019s d = 1.018; \u2018trust\u2019: M = 0.099; SE = 0.01; t(105) = 9.744, p < 0.001, Cohen\u2019s d = 0.946; \u2018dislike\u2019: M = 0.034; SE = 0.007; t(105) = 4.76, p < 0.001, Cohen\u2019s d = 0.462; \u2018distrust\u2019: M = 0.156; SE = 0.01; t(105) = 15.872, p < 0.001, Cohen\u2019s d = 1.542).\n\nThus far, we have shown that participants use \u2018(Dis)Trust\u2019 reaction buttons in a more discerning manner than \u2018(Dis)Like\u2019 reaction buttons. As social media platforms care about overall engagement not only its quality, we examined how frequently participants used the different reaction buttons. An ANOVA with the same specifications as above was conducted, but this time submitting frequency of reaction as the dependent variable. We found that participants used \u2018(Dis)Trust\u2019 reaction buttons more often than \u2018(Dis)Like\u2019 reaction buttons (percentage use of reaction out of all trials: \u2018trust\u2019: M = 28.057%; \u2018distrust\u2019: M = 34.085%; \u2018like\u2019: M = 18.604%; \u2018dislike\u2019: M = 23.745%; F(1,104) = 36.672, p < 0.001, partial \u03b72 = 0.26). In addition, negative reaction buttons (\u2018distrust\u2019 and \u2018dislike\u2019: M = 28.915%, SE = 1.177) were used more frequently than positive reaction buttons (\u2018trust\u2019 and \u2018like\u2019: M = 23.33%, SE = 1.133; F(1,105) = 16.96, p < 0.001, partial \u03b72 = 0.07). No other effect was significant. Interestingly, we also found that participants who skipped more posts were less discerning (R = \u22120.414, p < 0.001). Together, the results show that the new reaction options increase engagement.\n\nThe results hold when controlling for demographics, when not including political orientation in the analysis, and allowing for an interaction between type of reaction and valence (see Supplementary files 1 and 2). The results also replicate in an independent sample (Experiment 4, see Materials and methods for details; and Figure 3\u2014figure supplement 1, Supplementary file 3).\n\n### \u2018Trust\u2019 and \u2018distrust\u2019 incentives improve discernment in sharing behavior (Experiment 2)\n\nThus far, we have shown that participants use \u2018(Dis)Trust\u2019 reaction buttons in a more discerning manner than \u2018(Dis)Like\u2019 reaction buttons. Thus, an environment which offers \u2018(Dis)Trust\u2019 feedback is one where the number of \u2018carrots\u2019 (in the form of \u2018trusts\u2019) and the number of \u2018sticks\u2019 (in the form of \u2018distrusts\u2019) are directly associated with the veracity of the posts. It then follows that submitting participants to such an environment will increase their sharing of true information (to receive \u2018trusts\u2019) and reduce their sharing of misinformation (to avoid \u2018distrusts\u2019).\n\nTo test this, we ran a second experiment. A new group of participants (N = 320) were recruited to engage in a simulated social media platform. They observed the same 100 posts (50 true, 50 false) shown to the participants in Experiment 1, but this time instead of reacting to the posts they could either share the post or skip it (see Figure 4 and Figure 4\u2014figure supplements 1 and 2 for full instructions). They were told that if they chose to share a post, it would be shared to their feed such that the other participants would be able to see the post and would then be able to react to it in real time (feedback). Depending on the environment participants were in, which varied between subjects, they could receive feedback in the form of the number of users who (1) \u2018disliked\u2019, (2) \u2018liked\u2019, (3) \u2018distrusted\u2019, or (4) \u2018trusted\u2019 their posts. We also included a (5) baseline condition, in which participants received no feedback. If participants selected to skip, they would observe a white screen asking them to click continue. Data of 32 participants were not analyzed according to pre-determined criteria (see Materials and methods for details). Two-hundred and eighty-eight participants (146 Democrats, 142 Republicans, Mage = 38.073, SDage \u00b1 13.683; female = 147, male = 141) were included in the analysis (see Materials and methods for details).\n\n$$\nDiscernment=Prop_{repoststrue}\u2212Prop_{repostsfalse}\n$$\n\n![Figure 4.](https://cdn.elifesciences.org/articles/85767/elife-85767-fig4-v1.jpg)\n\n**Figure 4.:** In Experiment 2 on each of 100 trials participants observed a post (50 true, 50 false content). They then chose whether to share it or skip (self-paced). They were told that if they chose to share a post, it would be shared to their feed such that other participants would be able to see the post and react to it in real time (feedback). Depending on the environment participants were in, they could either observe the number of (1) \u2018dislikes\u2019 (N = 45), (2) \u2018likes\u2019 (N = 89), (3) \u2018distrusts\u2019 (N = 49), or (4) \u2018trusts\u2019 (N = 46) feedback. The feedback was in fact the number of reactions gathered from Experiment 1, though the participants believed the reactions were in real time as indicated by a rotating cogwheel (1 s). Once the feedback appeared, participants could then click continue. If participants selected to skip, they would observe a white screen asking them to click continue (self-paced). In the Baseline environment (N = 59) participants received no feedback. Experiment 3 was identical to Experiment 2 with two distinctions: (1) Depending on the environment participants were in, they could either observe the number of (i) both \u2018dislikes\u2019 and \u2018likes\u2019 (N = 128), (ii) both \u2018distrusts\u2019 and \u2018trusts\u2019 (N = 137), or (iii) no feedback (Baseline, N = 126). (2) In Experiment 3, we selected 40 posts (20 true, 20 false) to which Republicans and Democrats had on average reacted to similarly using the \u2018trust\u2019 button in Experiment 1. Discernment was calculated for each participant by subtracting the proportion of sharing false information from the proportion of sharing true information. High discernment indicates greater sharing of true than false information.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/85767/elife-85767-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** At the start of the experiment participants received extensive instructions explaining the task. Depending on which condition they were assigned to participants would receive Instructions for either the (a) Baseline environment, (b) Like environment, (c) Dislike environment, (d) Trust environment, or (e) Distrust environment.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/85767/elife-85767-fig4-figsupp2-v1.jpg)\n\n**Figure 4\u2014figure supplement 2.:** At the start of the experiment participants received extensive instructions explaining the task. Depending on which condition they were assigned to participants would receive Instructions for either the (a) Baseline environment, (b) Like & Dislike environment, or (c) Trust & Distrust environment.\n\nThese scores were submitted into a between-subject ANOVA with type of feedback (\u2018trust\u2019 and \u2018distrust\u2019/\u2018like\u2019 and \u2018dislike\u2019/Baseline), valence (positive, i.e., \u2018like\u2019, \u2018trust\u2019/negative, i.e., \u2018dislike\u2019, \u2018distrust\u2019 vs neutral/no feedback) and political orientation (Republican/Democrat) as factors. We also allowed for an interaction of political orientation and type of feedback.\n\nWe observed an effect of type of feedback (F(1,281) = 15.2, p < 0.001, partial \u03b72 = 0.051), such that participants shared more true than false information in the \u2018(Dis)Trust\u2019 environments (M = 0.18, SE = 0.018) than the \u2018(Dis)Like\u2019 environments (M = 0.085, SE = 0.019, F(1,225) = 14.249, p < 0.001, partial \u03b72 = 0.06) and Baseline environment (M = 0.084, SE = 0.025; F(1,150) = 10.906, p = 0.001, partial \u03b72 = 0.068, Figure 5a). Moreover, participants who received \u2018trust\u2019 feedback (M = 0.176, SE = 0.026) were more discerning in their sharing behavior than those who received \u2018like\u2019 feedback (M = 0.081, SE = 0.021, F(1,131) = 10.084, p = 0.002, partial \u03b72 = 0.071). Those who received \u2018distrust\u2019 feedback (M = 0.175, SE = 0.026) were more discerning than those who received \u2018dislike\u2019 feedback (M = 0.092, SE = 0.039, F(1,90) = 5.003, p = 0.028, partial \u03b72 = 0.053). We further observed a trend interaction between type of feedback and political orientation (F(1,281) = 2.939, p = 0.055, partial \u03b72 = 0.02). While Democrats (M = 0.213; SE = 0.014) were generally more discerning than Republicans (M = 0.017; SE = 0.016; F(1,281) = 77.392, p < 0.001, partial \u03b72 = 0.216), this difference was smaller in those who received \u2018(Dis)Trust\u2019 feedback (M = 0.082, SE = 0.034) compared to those who received \u2018(Dis)Like\u2019 feedback (M = 0.23, SE = 0.03; F(1,224) = 4.879, p = 0.028, partial \u03b72 = 0.021) and by trend smaller than those who received no feedback (M = 0.229, SE = 0.045; F(1,149) = 3.774, p = 0.054, partial \u03b72 = 0.025). There was no difference between the latter two (F(1,188) = 0.00, p = 0.988, partial \u03b72 = 0.00). No other effects were significant. Overall engagement, measured as percentage of posts shared out of all trials, did not differ across environments (F(1,281) = 1.218, p = 0.271, partial \u03b72=0.004; Mean % posts shared out of all trials: Baseline = 27.712%; Dislike = 35.889%; Like = 33.258%; Distrust = 32.51%; Trust = 30.435%; see Supplementary file 4 for means for true and false posts).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/85767/elife-85767-fig5-v1.jpg)\n\n**Figure 5.:** (a) Participants (N=288) operating in an environment where \u2018(Dis)Trust\u2019 feedback was introduced shared more true information relative to false information than participants operating in an environment where only \u2018(Dis)Like\u2019 feedback was available, or no feedback at all (Baseline) Y axis shows discernment, that is, proportion of true posts shared minus proportion of false posts shared. X axis shows the group environment (type of feedback). (b) This was the case regardless of the topic of the post (politics, science, health, environment, society, other). Bubble size corresponds to number of the posts included in the study. Diagonal dashed line indicates point of equivalence, where discernment in equal across the \u2018(Dis)Like\u2019 and \u2018(Dis)Trust\u2019 environments. As can be seen, all circles are above the dashed line indicating that in all cases discernment is greater in an environment that offers \u2018(Dis)Trust\u2019 feedback. Y axis shows discernment in the \u2018(Dis)Trust\u2019 environment, X axis shows discernment in the \u2018(Dis)Like\u2019 environment. (c) Experiment 3 (N=391) showed the same results as Experiment 2. Data are plotted as box plots for each reaction, in which horizontal lines indicate median values, boxes indicate 25/75% interquartile range, and whiskers indicate 1.5 \u00d7 interquartile range. Diamond shape indicates the mean discernment per reaction. Individuals\u2019 mean discernment data are shown separately as gray dots; symbols above each box plot indicate significance level compared to 0 using a t-test.***p < 0.001, **p < 0.01.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/85767/elife-85767-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (a) Experiment 5 and (b) Experiment 6 are replications of Experiments 2 and 3. (a) In Experiment 5 participants (N=261) observed the same 100 posts (50 true, 50 false) shown to participants in Experiment 4, but instead of reacting to the posts they could either share the post or skip it. Depending on their group, participants would then receive feedback from other participants in the form of the number of either (1) \u2018dislikes\u2019, or (2) \u2018likes\u2019, or (3) \u2018distrusts\u2019, or (4) \u2018trusts\u2019. The Baseline group received no feedback (see Materials and methods for details). On the Y axis is \u2018Discernment\u2019 = proportion of sharing true information \u2212 proportion of sharing false information. A between-subject analysis of variance (ANOVA) on discernment with type of feedback (\u2018trust\u2019 and \u2018distrust\u2019/\u2018like\u2019 and \u2018dislike\u2019/Baseline) and valence (positive, i.e., \u2018like\u2019, \u2018trust\u2019/negative, i.e., \u2018dislike\u2019, \u2018distrust\u2019 vs neutral/no feedback) revealed an effect of type of feedback (F(1,257) = 8.112, p = 0.005, partial \u03b72 = 0.031): discernment was greater in the \u2018(Dis)Trust\u2019 conditions (M = 0.236, SE = 0.019) than the \u2018(Dis)Like\u2019 (M = 0.111, SE = 0.022; F(1,212) = 7.682, p = 0.006, partial \u03b72=0.035) and Baseline (M = 0.102, SE = 0.026; F(1,163) = 16.246, p < 0.001, partial \u03b72 = 0.087) conditions. No other effects were significant. (b) Experiment 6 (N=150) was the same as Experiment 5, but with three groups: Baseline group (receiving no feedback), 'Trust & Distrust\u2019 group, in which participants received both the number of Trust and Distrust feedback, and a \u2018Like & Dislike\u2019 environment, in which participants received the number of Like and Dislike feedback (see Materials and methods and for details). Once again, an ANOVA revealed a main effect of type of feedback (F(1,147) = 11.150, p < 0.001, partial \u03b72 = 0.132): participants in the \u2018Trust and Distrust\u2019 group were more discerning (M = 0.264, SE = 0.023) than those in the \u2018Like and Dislike\u2019 (M = 0.147, SE = 0.027; F(1,101) = 11.122, p = 0.001, partial \u03b72 = 0.099) and baseline (M = 0.106, SE = 0.026; F(1,101) = 21.141, p < 0.001, partial \u03b72 = 0.173) groups. Data are plotted as box plots for each reaction, in which horizontal lines indicate median values, boxes indicate 25/75% interquartile range, and whiskers indicate 1.5 \u00d7 interquartile range. Diamond shape indicates the mean discernment per reaction. Individuals\u2019 mean discernment data are shown separately as gray dots; symbols above each box plot indicate significance level compared to 0 using a t-test . ***p < 0.001, **p < 0.01.\n\nResults hold when controlling for demographics, when not including political orientation in the analysis, and allowing for an interaction between type of reaction and valence (see Supplementary files 5 and 6). Results replicate in an independent sample (Experiment 5, see Materials and methods for details; and Figure 5\u2014figure supplement 1, Supplementary file 7).\n\nTo recap \u2013 participants in Experiment 2 decided whether to share content or skip. They then observed the reaction of other participants to their post (they believed this was happening in real time, but for simplicity we fed them reactions of participants from Experiment 1). Each participant in Experiment 2 observed only one type of feedback. For example, only \u2018distrusts\u2019. How is it that observing \u2018distrusts\u2019 alone increases discernment? The rationale behind this design is that for any given post, true or false, some users will distrust the post. However, true posts will receive fewer \u2018distrusts\u2019 than false posts. It is the number of \u2018distrusts\u2019 per post that matters. The participants are motivated to minimize the average number of \u2018distrusts\u2019 they receive. To achieve this, they should post more true posts and fewer false posts. Of course, if the participants were simply trying of minimize the total number of distrusts, they would just skip on every trial. Participants do not do that, however. Potentially because sharing in and of itself is rewarding (Tamir and Mitchell, 2012). The results indicate that participants are sensitive to the number of \u2018distrusts\u2019 per posts not just to the total number of \u2018distrusts\u2019 over all posts.\n\nThe same rationale holds for the participants that only observe \u2018trusts\u2019. They receive more \u2018trusts\u2019 for true than false posts. It is the magnitude of \u2018trusts\u2019 that is associated with veracity. This motivates participants to post more true posts and fewer false posts in order to maximize the average number of \u2018trusts\u2019 per post. Of course, if participants were simply trying of maximize the total number of \u2018trusts\u2019, they would just share on every trial. Participants do not do that, however. This indicates that they are sensitive to the number of \u2018trusts\u2019 per post not just to total number over all posts. Any user of social media platforms could relate to this; when posting a tweet, for example, many people will be disappointed with only a handful of \u2018hearts\u2019. The user\u2019s goal is to maximize positive feedback per post. The same rationale as above holds for \u2018likes\u2019 and \u2018dislikes\u2019 except that those are less associated with veracity, thus impact discernment less.\n\nThe posts included in the experiment covered a range of topics including politics, science, health, environment, and society. As observed in Figure 5b, the effect of \u2018(Dis)Trust\u2019 environment on discernment is observed regardless of content type.\n\nThus far, our results show that changing the incentive structure of social media platforms by coupling the number of \u2018carrots\u2019 and \u2018sticks\u2019 with information veracity could be a valuable tool to reduce the spread of misinformation. If feedback promotes discernment in sharing behavior, it is plausible that it may in turn improve belief accuracy. To test this, we asked participants at the end of the experiment to indicate how accurate they thought a post was on a scale from inaccurate (0) to accurate (100). Participants\u2019 error in estimating whether a post was true or false was calculated as follows: for false posts error was equal to the participants\u2019 accuracy rating and for true posts it was equal to 100 minus their rating. Participants\u2019 average error scores were entered into a between-subject ANOVA with type of feedback and valence of feedback, as well as political orientation and its interaction with feedback type. We observed an effect of type of feedback (F(1,281) = 7.084, p = 0.008, partial \u03b72 = 0.025), such that participants were more accurate (less errors) when they received \u2018(Dis)Trust\u2019 feedback (M = 47.24, SE = 0.938) compared to \u2018(Dis)Like\u2019 feedback (M = 50.553, SE = 0.851, F(1,224) = 7.024, p = 0.009, partial \u03b72 = 0.03). We further observed an effect of political orientation (F(1,281) = 11.402, p < 0.001, \u03b72 = 0.039), with Democrats (M = 47.264, SE = 0.773) being more accurate than Republicans (M = 51.117, SE = 0.802). No other effects were significant. All results hold when controlling for demographics, when not including political orientation in the analysis, and allowing for an interaction between type of feedback and valence (see Supplementary file 8). We replicated these results in Experiment 5. We again, observed an effect of feedback type (F(1,258) = 4.179, p = 0.042, partial \u03b72 = 0.016), such that participants were more accurate (less errors) when they received \u2018(Dis)Trust\u2019 feedback (M = 35.717, SE = 0.65) compared to \u2018(Dis)Like\u2019 feedback (M = 37.63, SE = 0.767; F(1,212) = 3.955, p = 0.048, partial \u03b72 = 0.018) and also more accurate than those who received no feedback (Baseline, M = 39.73, SE = 0.886; F(1,162) = 11.759, p < 0.001, partial \u03b72 = 0.068). No other effects were significant. These results hold when allowing for an interaction between type of feedback and valence (see Supplementary file 9).\n\n### \u2018Trust\u2019 and \u2018distrust\u2019 incentives together improve discernment in sharing behavior (Experiment 3)\n\nGiven that Experiment 2 revealed that receiving \u2018trust\u2019 or \u2018distrust\u2019 feedback separately improves discernment, it is likely that the coupled presentation of both will jointly also improve discernment. To test this, we ran a third experiment with a new group of participants. The task was identical to Experiment 2 (see Figure 4), but this time we included three between-subject environments: a Baseline environment, in which participants received no feedback, a \u2018Trust & Distrust\u2019 environment, in which participants observed both the number of trust and the number of distrust feedback, and a \u2018Like & Dislike\u2019 environment, in which participants observed both the number of like and the number of dislike feedback.\n\nAdditionally, to ensure posts align equally with Democratic and Republican beliefs, in Experiment 3 we selected 40 posts (20 true, 20 false) in response to which Republicans and Democrats utilized the \u2018trust\u2019 button in a similar manner in Experiment 1 (see Materials and methods). Data of 18 participants were not analyzed according to pre-determined criteria (see Materials and methods for details). Analysis of Experiment 3 (N = 391, 194 Democrats, 197 Republican, Mage = 35.304, SDage \u00b1 11.089; female = 196, male = 192, other = 3) was the same as in Experiment 2 except that there were three environments (Baseline, \u2018Like & Dislike\u2019, and \u2018Trust & Distrust\u2019) and no valence of feedback, because all environments either include both positive and negative feedbacks or no feedback.\n\nDiscernment was submitted to a between-subject ANOVA with type of feedback (Baseline/\u2018Like & Dislike\u2019/\u2018Trust & Distrust\u2019), political orientation and their interaction as factors. Again, we observed an effect of type of feedback (F(1,385) = 11.009, p < 0.001, partial \u03b72 = 0.054, Figure 5c), with participants in the \u2018Trust & Distrust\u2019 feedback group posting more true relative to false information (M = 0.101, SE = 0.015) than those in the \u2018Like & Dislike\u2019 group (M = 0.042, SE = 0.013; F(1,261) = 8.478, p = 0.00, partial \u03b72 = 0.031) or those who received no feedback at all (M = 0.008, SE = 0.014, F(1,259) = 20.142, p < 0.001, partial \u03b72 = 0.0724). By contrast there was no difference between the latter two groups (F(1,250) = 2.981, p = 0.085, partial \u03b72 = 0.012). As observed in Experiment 2, Democrats (M = 0.073, SE = 0.011) were more discerning than Republicans (M = 0.031, SE = 0.012; F(1,385) = 6.409, p = 0.012, partial \u03b72 = 0.016). No other effects were significant.\n\nInterestingly participants shared more frequently in the \u2018Trust & Distrust\u2019 environment compared to the other two environments (% of all trials: \u2018Trust & Distrust\u2019 = 36.2%, \u2018Like & Dislike\u2019 = 30.41%; Baseline = 25.853%; F(1,385) = 8.7692, p < 0.001, partial \u03b72 = 0.044). This illustrates that \u2018(Dis)Trust\u2019 feedback improves discernment without reducing engagement. No other effects were significant.\n\nAll results hold when controlling for demographics, when not including political orientation in the analysis, and allowing for an interaction between type of reaction and valence (see Supplementary files 10 and 11). Results replicate in an independent sample (Experiment 6, see Materials and methods for details; and Figure 5\u2014figure supplement 1).\n\nAt the end of Experiment 3, we again asked participants to indicate how accurate they thought a post was. Participants\u2019 average error scores were calculated as in Experiment 2 and entered into a between-subject ANOVA with type of feedback, political orientation and their interaction as factors. Democrats (M = 40.591; SE = 6.371) were more accurate than Republicans (M = 42.056; SE = 5.633; F(1,385) = 5.723, p = 0.017, partial \u03b72 = 0.015). No other effects were significant (for results controlling for demographics not including political orientation see Supplementary file 12). Note, that in the replication study (Experiment 6) we did observe an effect of type of feedback (F(1,147) = 4.596, p = 0.012, partial \u03b72 = 0.059), with \u2018(Dis)Trust condition being most accurate. Thus, we see accuracy effects in three (Experiments 2, 5, and 6) out of our four experiments.\n\nTaken together these findings suggest that changing the incentive structure of social media platforms, such that \u2018carrots\u2019 and \u2018sticks\u2019 are strongly associated with veracity promotes discernment in sharing behavior, thereby reducing the spread of misinformation.\n\n### \u2018(Dis)Trust\u2019 incentives improve discernment in sharing behavior by increasing the relative importance of evidence consistent with discerning behavior\n\nNext, we set out to characterize the mechanism by which the new incentive structure increased discernment. Imagine you observe a post on social media, and you need to decide whether to share it \u2013 how do you make this decision? First, you examine the post. Second, you retrieve existing knowledge. For example, you may think about what you already know about the topic, what you heard others say, you may try to estimate how others will react to the post if you share it, and so on. This process is called \u2018evidence accumulation\u2019 \u2013 you gradually accumulate and integrate external evidence and internal evidence (memories, preferences, etc.) to decide. Some of the evidence you retrieve will push you toward a \u2018good\u2019 response that promotes veracity (i.e., posting a true post and skipping a false post) and some will push you toward a \u2018bad\u2019 response that obstructs veracity (i.e., posting a false post and skipping a true post). We can think of the evidence that pushes you toward a response that promotes veracity as \u2018signal\u2019. Using computational modeling it is possible to estimate how much a participant is influenced (\u2018pushed\u2019) by signal relative to noise, by calculating a parameter known as a \u2018drift rate\u2019 in a class of models known as drift-diffusion models (DDM). One possibility then is that in the \u2018(Dis)Trust\u2019 environment evidence toward responses that promote veracity is given more weight than toward responses that obstruct veracity (i.e., the drift rate is larger), thus people make more discerning decisions.\n\nAnother, non-exclusive possibility, is that in the \u2018(Dis)Trust\u2019 environment participants are more careful about their decisions. They require more evidence before making a decision. For example, they may spend more time deliberating the post. In DDM, this is estimated by calculating what is known as the distance between the decision thresholds (i.e., how much total distance do I need to be \u2018pushed\u2019 in one direction or the other to finally make a choice).\n\nTo test the above possible mechanisms, we modeled our data using the DDM (Ratcliff, 1978; Ratcliff and McKoon, 2008, see also Lin et al., 2023). We modeled participants\u2019 responses (\u2018veracity-promoting\u2019 vs \u2018veracity-obstructing\u2019 choice) separately for each type of feedback (\u2018(Dis)Trust\u2019, \u2018(Dis)Like\u2019, Baseline) and each experiment (Experiments 2 and 3). The following parameters were included: (1) t(0) \u2013 the amount of non-decision time, capturing encoding and motor response time; (2) \u03b1 \u2013 the distance between decision thresholds (\u2018veracity-promoting\u2019 response vs \u2018veracity-obstructing\u2019 response); (3) z \u2013 starting point of the accumulation process; and (4) v \u2013 the drift rate (see Materials and methods for details; Ratcliff, 1978; Ratcliff and McKoon, 2008; Voss et al., 2013).\n\nWe next examined which of the parameters were different in the different environments (see Tables 1 and 2, and Supplementary files 13 and 14 for highest density interval [HDI] comparisons). To that end, we calculated the difference in posterior distributions of each parameter for each pair of incentive environments (\u2018(Dis)Trust\u2019 vs \u2018(Dis)Like\u2019, \u2018(Dis)Trust\u2019 vs Baseline, \u2018(Dis)Like\u2019 vs Baseline) and report the 95% HDI of the difference. If the 95% HDI of the distribution does not overlap with zero, we infer a credible difference between the two incentive environments.\n\n**Table 1.**\n Group estimates for drift-diffusion model (DDM) in Experiment 2.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Estimate</th>\n      <th>Baseline</th>\n      <th>\u2018(Dis)Like\u2019</th>\n      <th>\u2018(Dis)Trust\u2019</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Distance between decision thresholds (\u03b1)</td>\n      <td>2.15395% CI [2.09; 2.214]</td>\n      <td>2.37395% CI [2.281; 2.466]</td>\n      <td>2.40395% CI [2.280; 2.529]</td>\n    </tr>\n    <tr>\n      <td>Non-decision time (t0)</td>\n      <td>7.02595% CI [6.898; 7.154]</td>\n      <td>6.93695% CI [6.802; 7.071]</td>\n      <td>6.68195% CI [6.425; 6.94]</td>\n    </tr>\n    <tr>\n      <td>Starting point (z)</td>\n      <td>0.49795% CI [0.486; 0.508]</td>\n      <td>0.49195% CI [0.483; 0.50]</td>\n      <td>0.4895% CI [0.471; 0.49]</td>\n    </tr>\n    <tr>\n      <td>Drift rate (v)</td>\n      <td>0.09895% CI [0.039; 0.158]</td>\n      <td>0.1095% CI [0.056; 0.145]</td>\n      <td>0.21695% CI [0.17; 0.262]</td>\n    </tr>\n  </tbody>\n</table>\n\n**Table 2.**\n Group estimates for drift-diffusion model (DDM) in Experiment 3.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Estimate</th>\n      <th>Baseline</th>\n      <th>\u2018(Dis)Like\u2019</th>\n      <th>\u2018(Dis)Trust\u2019</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Distance between decision thresholds (\u03b1)</td>\n      <td>2.23895% CI [2.153; 2.328]</td>\n      <td>2.20795% CI [2.132; 2.286]</td>\n      <td>2.20995% CI [2.134; 2.286]</td>\n    </tr>\n    <tr>\n      <td>Non-decision time (t0)</td>\n      <td>6.995% CI [6.762; 7.04]</td>\n      <td>7.05195% CI [6.918; 7.186]</td>\n      <td>7.07695% CI [6.944; 7.208]</td>\n    </tr>\n    <tr>\n      <td>Starting point (z)</td>\n      <td>0.595% CI [0.49; 0.51]</td>\n      <td>0.595% CI [0.49; 0.511]</td>\n      <td>0.48995% CI [0.476; 0.5]</td>\n    </tr>\n    <tr>\n      <td>Drift rate (v)</td>\n      <td>0.00695% CI [\u22120.027; 0.037]</td>\n      <td>0.03795% CI [0.002; 0.069]</td>\n      <td>0.1295% CI [0.086; 0.155]</td>\n    </tr>\n  </tbody>\n</table>\n\nFor both Experiment 2 (see Figure 6a) and Experiment 3 (see Figure 6c) we observed a meaningful difference in the drift rate. In particular, in the \u2018(Dis)Trust\u2019 environments the drift rate was larger (Experiment 2: v = 0.216; Experiment 3: v = 0.12) than in the\u2018(Dis)Like\u2019 environments (Experiment 2: v = 0.01; 95% HDI of difference [0.048; 0.183], Experiment 3: v = 0.037; 95% HDI of difference [0.032; 0.135]) or no feedback environment (Experiment 2: v = 0.098; 95% HDI of difference [0.041; 0.195]; Experiment 3: v = 0.006; 95% HDI of difference [0.061; 0.167]). The Baseline and \u2018(Dis)Like\u2019 environments did not differ for drift rate (Experiment 2: 95% HDI of difference: [\u22120.075; 0.08]; Experiment 3: 95% HDI of difference [\u22120.016; 0.079]). This suggests that relative to the other environments, in the \u2018(Dis)Trust\u2019 environments evidence consistent with a \u2018veracity-promoting\u2019 response is weighted more than \u2018evidence\u2019 consistent with a \u2018veracity-obstructing\u2019 response. We replicate these results in Experiments 5 and 6 (see Supplementary files 15\u201318).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/85767/elife-85767-fig6-v1.jpg)\n\n**Figure 6.:** Displayed are the posterior distributions of parameter estimates for the Baseline environment, the \u2018(Dis)Like\u2019 environment and the \u2018(Dis)Trust\u2019 environment. Dashed vertical lines indicate respective group means. In both (a) Experiment 2 (N=288) and (c) Experiment 3 (N=391) highest density interval (HDI) comparison revealed that participants had a larger drift rate in the \u2018(Dis)Trust\u2019 environments than in the other environments. No credible difference was observed between the latter two environments. Recovered model parameter estimates reproduced experimental results for both (b) Experiment 2 and (d) Experiment 3. * indicates credible difference between environments.\n\nWhile in Experiment 2 the decision threshold in the Baseline environment was lower than the other two environments, and non-decision time (t0) higher than in the \u2018(Dis)Trust\u2019, these differences are not replicated in Experiment 3. More importantly, neither decision threshold nor non-decision time differed between the \u2018(Dis)Trust\u2019 and \u2018(Dis)Like\u2019 environments (see Tables 1 and 2 and Supplementary files 13 and 14 for HDI comparisons).\n\nModel parameters could be successfully recovered with data simulated using group-level parameters from Experiments 2 and 3 separately (for details, see Materials and methods, see Figure 6b, d, Supplementary files 19 and 20). This was done by fitting the model to simulated data, in the same way as for the experimental data. We sampled 2000 times from the posteriors, discarding the first 500 as burn in. The same pattern of results was reproduced with the simulated data as with real participants\u2019 data (Figure 7). For each experiment, we ran two separate one-way ANOVAs to assess the effect of type of feedback on discernment: one for the real data and one for the simulated data. We remind the reader that we entered responses into our DDM as either \u2018veracity-promoting\u2019 (true post shared or false post skipped) or \u2018veracity-obstructing\u2019 (false post shared or true post skipped). Thus, discernment here is calculated as:\n\n$$\nDiscernment=Prop_{veracity\u2212promotingresponses}\u2212Prop_{veracity\u2212obstructingresponses}\n$$\n\nWhich is equal to:\n\n$$\nDiscernment=Prop_{repoststrueposts+skipsfalseposts}\u2212Prop_{repostsfalseposts+skipstrueposts}\n$$\n\nAs expected, we observed an effect of type of feedback in both the simulated (Experiment 2: F(1,285) = 3.795, p = 0.024, \u03b72 = 0.026; Experiment 3: F(1,388) = 7.843, p = 0.001, \u03b72 = 0.039, Figure 7b, d), and the experimental data (Experiment 2: F(1,287) = 7.049, p = 0.001, \u03b72 = 0.047; Experiment 3: F(1,388) = 11.166, p < 0.001, \u03b72 = 0.054). That is, discernment was higher in \u2018(Dis)Trust\u2019 environments relative to \u2018(Dis)Like\u2019 environments or no feedback environments (Figure 7a, c, see Supplementary files 21 and 22 for pairwise comparisons and Supplementary file 23 for correlations between real and recovered individual-level parameters).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/85767/elife-85767-fig7-v1.jpg)\n\n**Figure 7.:** One-way ANOVAs revealed that In both (a) Experiment 2 (N=288) and (c) Experiment 3 (N=391) participants who received \u2018(Dis)Trust\u2019 feedback were more discerning than participants in the \u2018(Dis)Like\u2019 and Baseline environments. Simulated data reproduced these findings (b, d). Y axis shows discernment, that is, proportion of true posts shared and false posts skipped minus the proportion of true posts skipped and false posts shared. X axis shows feedback group. Data are plotted as box plots for each reaction, in which horizontal lines indicate median values, boxes indicate 25/75% interquartile range and whiskers indicate 1.5 \u00d7 interquartile range. Diamond shape indicates the mean discernment per reaction. Individuals\u2019 mean discernment data are shown separately as gray dots; symbols above each box plot indicate significance level compared to 0 using a t-test. ***p < 0.001, **p < 0.01, *p < 0.05.\n\n## Discussion\n\nHere, we created a novel incentive structure that significantly reduced the spread of misinformation and provide insights into the cognitive mechanisms that make it work. This structure can be adopted by social media platforms at no cost. The key was to offer reaction buttons (social \u2018carrots\u2019 and \u2018sticks\u2019) that participants were likely to use in a way that discerned between true and false information. Users who found themselves in such an environment, shared more true than false posts in order to receive more \u2018carrots\u2019 and less \u2018sticks\u2019.\n\nIn particular, we offered \u2018trust\u2019 and \u2018distrust\u2019 reaction buttons, which in contrast to \u2018likes\u2019 and \u2018dislikes\u2019, are by definition associated with veracity. For example, a person may dislike a post about Joe Biden winning the election, however this does not necessarily mean that they think it is untrue. Indeed, in our study participants used \u2018distrust\u2019 and \u2018trust\u2019 reaction buttons in a more discerning manner than \u2018dislike\u2019 and \u2018like\u2019 reaction buttons. This created an environment in which the number of social rewards (\u2018carrots\u2019) and punishments (\u2018sticks\u2019) were strongly associated with the veracity of the information shared. Participants who were submitted to this new environment were more discerning in their sharing behavior compared to those in traditional environments who saw either no feedback or \u2018dislike\u2019 and/or \u2018like\u2019 feedback. The result was a reduction in sharing of misinformation without a reduction in overall engagement. All the effects were replicated and effect sizes of misinformation reduction were large to medium.\n\nUsing computational modeling we were able to pin-point the changes to participants\u2019 decision-making process. In particular, drift-diffusion modeling revealed that participants in the new environment assigned more weight to evidence consistent with discerning than non-discerning behavior relative to traditional environments. In other words, the possibility of receiving rewards that are consistent with accuracy led to an increase in the weight participants assigned to accuracy-consistent evidence when making a decision. \u2018Evidence\u2019 likely includes external information that can influence the decision to share a post (such as the text and photo associated with the post) as well as internal information (e.g., retrieval of associated knowledge and memories).\n\nOur results held when the potential feedback was only negative (\u2018distrust\u2019), only positive (\u2018trust\u2019), or both (\u2018trust\u2019 and \u2018distrust\u2019). While negative reaction buttons were used in a more discerning manner and more frequently than positive reaction buttons, we did not find evidence for a differential strength of positively or negatively valenced feedback on discernment of sharing behavior itself.\n\nThe findings also held across a wide range of different topics (e.g., politics, health, science, etc.) and a diverse sample of participants, suggesting that the intervention is not limited to a set group of topics or users, but instead relies more broadly on the underlying mechanism of associating veracity and social rewards. Indeed, we speculate that these findings would hold for different \u2018carrots\u2019 and \u2018sticks\u2019 (beyond \u2018trust\u2019 and \u2018distrust\u2019), as long as people use these \u2018carrots\u2019 and \u2018sticks\u2019 to reward true information and punish false information. However, we speculate that the incentives were especially powerful due to being provided by fellow users and easily quantifiable (just as existing buttons including \u2018like\u2019 and \u2018heart\u2019). This may contrast with incentives which are either provided by the platform itself and/or not clearly quantified such as verification marks (Edgerly and Vraga, 2019) or flagging false news (Brashier et al., 2021; Chan et al., 2017; Grady et al., 2021; Lees et al., 2022). Interestingly, a trust button has also been shown to increase sharing of private information (B\u0103l\u0103u and Utz, 2016).\n\nFinally, we observed that feedback not only promotes discernment in sharing behavior but may also increase the accuracy of beliefs. Though, while we see an increase in accuracy of beliefs in three of the four experiments, we did not observe this effect in Experiment 3. Thus, the new incentive structure reduces the spread of misinformation and may help in correcting false beliefs. It does so without drastically diverging from the existing incentive structure of social media networks by relying on user engagement. Thus, this intervention may be a powerful addition to existing intervention such as educating users on how to detect misinformation (e.g., Lewandowsky and van der Linden, 2021; Maertens et al., 2021; Pilditch et al., 2022; Roozenbeek and van der Linden, 2019; Traberg et al., 2022) or prompting users to think about accuracy before they engage in the platform (e.g., Capraro and Celadin, 2022; Fazio, 2020; Pennycook and Rand, 2022). Over time, these incentives may help users build better habits online (e.g., Anderson and Wood, 2021; Ceylan et al., 2023).\n\nAs real-world platforms are in the hands of private entities, studying changes to existing platforms requires testing simulated platforms. The advantage of this approach is the ability to carefully isolate the effects of different factors. However, \u2018real world\u2019 networks are more complex and involve additional features which may interact with the tested factors. Our hope is that the science described here will eventually impact how privately owned platforms are designed, which will reveal whether the basic mechanisms reported here hold in more complex scenarios.\n\nThis study lays the groundwork for integration of the new incentive structure into existing (and future) social media platforms to further test the external validity of the findings. Rather than removing existing forms of engagement, we suggest an addition that complements the existing system and could be adopted by social media platforms at no cost. The new structure could subsequentially help reduce violence, vaccine hesitancy and political polarization, without reducing user engagement.\n\n## Materials and methods\n\n### Experimental design\n\n#### Power calculations\n\nSample sizes for all experiments were computed based on our pilot study (see Experiments 4\u20136). Power calculations were performed using g*Power (Faul et al., 2009) to achieve power of 0.8 (beta = 0.2, alpha = 0.05; Experiment 1: partial \u03b72 = 0.51; Experiment 2: Cohen\u2019s d = 0.33; Experiment 3: Cohen\u2019s d = 0.327).\n\n#### Participants (Experiment 1)\n\nOne-hundred and eleven participants residing in the USA completed the task on Prolific Academic. Exclusion criteria were pre-established. Data of four participants who failed more than two memory checks were excluded from further analysis (see below). Thus, data of 107 participants were analyzed (52 Democrats, 54 Republican, 1 Other, Mage = 40.579, SDage \u00b1 14.512; female = 55, male = 52; Non-White = 20, White = 87). Participants received \u00a37.50 per hour for their participation in addition to a memory test performance-related bonus. For all experiments presented in this article, ethical approval was provided by the Research Ethics Committee at University College London (#3990/003) and all participants gave informed consent. All experiments were performed in accordance with the principles expressed in the Declaration of Helsinki. All samples were politically balanced for Democrats and Republicans. All experiments were replicated using biological replicates (Experiments 4\u20136).\n\n#### Participants (Experiment 2)\n\nThree-hundred and twenty participants completed the task on Prolific Academic. Data of four participants who failed more than two memory checks were excluded from further analysis (see below for details). Thus, data of 316 participants were analyzed (146 Democrats, 142 Republican, 28 Other, Mage = 37.598, SDage \u00b1 13.60; female = 157, male = 157, other = 2, Non-White = 77, White = 239). Participants received \u00a37.50 per hour for the participation in addition to a memory test performance-related bonus.\n\n#### Participants (Experiment 3)\n\nFour-hundred and nine participants completed the task on Prolific Academic. Data of three participants who failed more than two memory checks were excluded from further analysis (see Participants Experiment 1 for details). Further data of three participants who suspected that the feedback provided did not stem from real participants were excluded. Thus, data of four-hundred and three participants were analyzed (194 Democrats, 197 Republican, 12 Other, Mage = 35.179, SDage \u00b1 11.051; female = 204, male = 194, other = 4, Non-White = 85, White = 218). Participants received \u00a37.50 per hour for their participation in addition to a memory test performance-related bonus.\n\n#### Participants (Experiment 4)\n\nFifty participants residing in the USA completed the task on Prolific Academic (25 Democrats, 8 Republican, 17 Other, Mage = 33.16, SDage \u00b19.804; females = 24, male = 25, other = 1, Non-White = 15, White = 35). No participants failed the attention checks. Participants received \u00a37.50 per hour for their participation in addition to a memory test performance-related bonus.\n\n#### Participants (Experiment 5)\n\nTwo-hundred and sixty-one participants completed the task on Prolific Academic (132 Democrats, 90 Republican, 39 Other, Mage = 34.824, SDage \u00b1 12.632; females = 122, males = 131, others = 8, Non-White = 84, White = 177). Participants received \u00a37.50 per hour for their participation in addition to a memory test performance-related bonus.\n\n#### Participants (Experiment 6)\n\nOne-hundred and fifty participants completed the task on Prolific Academic (74 Democrats, 14 Republican, 62 Other, Mage = 34.2, SDage \u00b1 12.489; females = 70, males = 77, others = 3, Non-White = 39, White = 150). Participants received \u00a37.50 per hour for their participation in addition to a memory test performance-related bonus.\n\n#### Task (Experiment 1)\n\nParticipants engaged in a simulated social media platform where they saw 100 news posts, each consisting of an image and a headline (see Figure 2, Supplementary file 24 for stimuli and ratings). Half of the posts were true, and half were false. They covered a range of different topics including COVID-19, environmental issues, politics, health, and society. They were all extracted from fact-checking website Politifact (https://www.politifact.com). For each post, participants had the option to either \u2018like\u2019, \u2018dislike\u2019, \u2018trust\u2019, or \u2018distrust\u2019 the post, or they could choose to \u2018skip\u2019 the post. They could press as many options as they wished (i.e., \u2018like\u2019 and \u2018distrust\u2019 for example). Participants were informed that if they chose to react to a post other users would be able to see their reactions. They were asked to treat the platform as they would any other social media network. The order in which reaction buttons appeared on screen was counterbalanced across participants. Participants also indicated their age, gender, ethnicity, and political orientation. The task was coded using the Qualtrics online platform (https://www.qualtrics.com).\n\n#### Memory/attention check\n\nAt the end of the experiment, participants were presented with five posts and had to indicate whether these were old or new. This is to ensure that participants were attentive during the experiment. Participants who failed more than two of the memory checks were excluded from the analysis.\n\n#### Task (Experiment 2)\n\nIn Experiment 2, participants engaged in a simulated social media platform where they saw the same 100 posts (50 true, 50 false) shown to participants in Experiment 1. Participants had to either \u2018repost\u2019 or \u2018skip\u2019 each post (see Figure 4). They were told that if they decided to repost, then the post would be shared to their feed, and they would observe other participants\u2019 reaction to it. We used a between-subject design with five environments. Depending on the environment participants were randomly assigned to, they could either see (1) how many people disliked the post, (2) how many people liked the post, (3) how many people distrusted the post, or (4) how many people trusted the post. We also included a Baseline environment, in which participants received no feedback. Due to logistic constraints, the feedback was not collected in real time but was instead taken from participants\u2019 reactions in Experiment 1. The participants, however, believed the reactions were provided in real time as indicated by a rotating cogwheel (1 s). If participants selected to skip, they would also observe a rotating cogwheel (1 s) and then a screen asking them to click continue. The average duration of the white screen (M = 2.351 s; SE = 0.281) was not different from the average duration of feedback (M = 2.625 s; SE = 0.245; t(233) = 0.853, p = 0.395, Cohen\u2019s d = 0.056). Though the duration of trials in which participants chose to skip (M = 9.046, SE = 0.38) was slightly shorter than those in which they chose to share (M = 9.834, SE = 0.358; t(233) = 2.044, p = 0.042, Cohen\u2019s d = 0.134). Thereafter, participants were presented with all the posts again and asked to indicate if they believed the post was accurate or inaccurate on a continuous scale from 0 = inaccurate to 100 = accurate. Finally, participants completed a short demographic questionnaire assessing age, gender, ethnicity, and political orientation. The task was self-paced. The task was coded using JsPsych and Javascript.\n\n#### Task (Experiment 3)\n\nExperiment 3 (see Figure 4) was identical to the task used in Experiment 2 with three exceptions:\n\n#### Task (Experiments 4\u20136)\n\nThe tasks and analysis in Experiments 4\u20136 were identical to those used in Experiments 1\u20133 except for the following differences:\n\n### Statistical analysis\n\n#### Statistical analysis (Experiment 1)\n\nWe examined whether participants used the different reaction buttons to discern true from false information. For positive reactions (e.g., \u2018likes\u2019 and \u2018trusts\u2019) discernment is equal to the proportion of those reactions for true information minus false information, and vice versa for negative reactions (\u2018dislikes\u2019 and \u2018distrusts\u2019). Proportions were calculated for each participant and then entered into a 2 (type of reaction: \u2018trust\u2019 and \u2018distrust\u2019/\u2018like\u2019 and \u2018dislike\u2019) by 2 (valence: positive, i.e., \u2018like\u2019, \u2018trust\u2019/negative, i.e., \u2018dislike\u2019, \u2018distrust\u2019) within-subject ANOVA. Political orientation was also added as a between-subject factor (Republican/Democrat), allowing for an interaction of political orientation and type of reaction to assess whether participants with differing political beliefs used the reaction buttons in different ways. We performed one-sample t-tests to compare discernment (equal to the proportion of those reactions for true information minus false information, and vice versa for negative reactions) against zero to assess whether each reaction discerned between true and false information. To examine whether participants\u2019 frequency of use of each reaction option differed we again ran a within-subject ANOVA, but this time with percentage frequency of reaction option used as the dependent variable. We computed a Pearson\u2019s correlation across participants between frequency of skips and discernment.\n\nOne participant selected \u2018other\u2019 for political orientations. This participant was not included in the analysis because political orientation was included in analyses, and such small group sizes could heavily skew results. All statistical tests conducted in the present article are two sided. Analysis was conducted using IBM SPSS 27 and R Studio (Version 1.3.1056). All statistical tests conducted in the present article are two sided. All results of interest hold when controlling for demographics (age, gender, and ethnicity; see Supplementary files 9\u201316).\n\n#### Discernment analysis (Experiments 2 and 3)\n\nDiscernment is calculated for each participant by subtracting the proportion of sharing false information from the proportion of sharing true information. High discernment indicates greater sharing of true than false information. In Experiment 2, scores were submitted into an ANOVA with type of feedback (\u2018(Dis)Trust\u2019 vs \u2018(Dis)Like\u2019 vs Baseline), valence of feedback (positive, i.e., \u2018like\u2019, \u2018trust\u2019 vs negative, i.e., \u2018dislike\u2019, \u2018distrust\u2019), political orientation and an interaction of political orientation and type of feedback. To assess whether frequency of posts shared differed we used the same ANOVA, this time with percentage of posts shared out of all trials as the dependent variable.\n\nTo test whether \u2018(Dis)Trust\u2019 feedback improves belief accuracy, we transformed participants\u2019 belief ratings (which were given on a scale from post is accurate (100) or post is inaccurate (0)) to indicate error. If the post was false (inaccurate) error was equal to the rating itself, if the post was true (accurate) error was equal to 100 minus the rating. Participants\u2019 average error scores were then entered into a between-subject ANOVA with type of feedback (Baseline, \u2018(Dis)Trust\u2019, \u2018(Dis)Like\u2019), valence of feedback, political orientation, and an interaction of political orientation and type of feedback.\n\nAnalysis of Experiment 3 followed that of Experiment 2 with the difference being that we had three type of feedback environments (Baseline, \u2018Like & Dislike\u2019, and \u2018Trust & Distrust\u2019) and of course no valence of feedback (as all environments were mixed valence or no valence). Data of participants who selected \u2018other\u2019 for political orientations (Experiment 2 = 28, Experiment 3 = 12) were not analyzed, because political orientation was included in the analyses variable, and small group sizes of \u2018other\u2019 could heavily skew results.\n\n#### Drift-diffusion modeling (Experiments 2 and 3)\n\nTo assess whether being exposed to an environment with \u2018(Dis)Trust\u2019 feedback impacted the parameters of the evidence accumulation process in our data compared to Baseline and \u2018(Dis)Like\u2019 feedback we analyzed our data using drift-diffusion modeling. To that end we ran three separate models \u2013 one for each type of feedback and included the following parameters: (1) t(0), amount of non-accumulation/non-decision time; (2) \u03b1, distance between decision thresholds; (3) z, starting point of the accumulation process; and (4) v, drift rate, is the rate of evidence accumulation.\n\nWe used the HDDM software toolbox (Wiecki et al., 2013) to estimate the parameters of our models. The HDDM package employs hierarchical Bayesian parameter estimation, using Markov chain Monte Carlo (MCMC) methods to sample the posterior probability density distributions for the estimated parameter values. We estimated both group- and individual-level parameters. Parameters for individual participants were assumed to be randomly drawn from a group-level distribution. Participants\u2019 parameters both contributed to and were constrained by the estimates of group-level parameters. In fitting the models, we used priors that assigned equal probability to all possible values of the parameters. Models were fit to log-transformed RTs. We sampled 20,000 times from the posteriors, discarding the first 5000 as burn in and thinning set at 5. MCMCs are guaranteed to reliably approximate the target posterior density as the number of samples approaches infinity. To test whether the MCMC converged within the allotted time, we used Gelman\u2013Rubin statistic (Gelman and Rubin, 1997) on five chains of our sampling procedure. The Gelman\u2013Rubin diagnostic evaluates MCMC convergence by analyzing the difference between multiple Markov chains. The convergence is assessed by comparing the estimated between- and within-chain variances for each model parameter. In each case, the Gelman\u2013Rubin statistic was close to one (<1.1), suggesting that MCMC were able to converge.\n\nWe then compared parameter estimates using 95% HDI. Specifically, for each comparison (\u2018(Dis)Trust\u2019 vs \u2018(Dis)Like\u2019, \u2018(Dis)Trust\u2019 vs Baseline, \u2018(Dis)Like\u2019 vs Baseline) we calculated the difference in the posterior distributions and reported the 95% HDI of the difference. If this HDI did not include zero, we consider there to be a meaningful difference between the two feedback types compared. To validate the winning model, we used each group\u2019s parameters obtained from participants\u2019 data to simulate log-transformed response times and responses separately for each feedback type. We used the exact number of subjects and number of trials as in the experiments. Simulated data were then used to (1) perform model recovery analysis and (2) to compare the pattern of participants\u2019 response to the pattern of simulated responses, separately for each group. We sampled 2000 times from the posteriors, discarding the first 500 as burn in. Simulation and model recovery analysis were performed using the HDDM software toolbox (Wiecki et al., 2013). One-way ANOVAs were computed to examine if simulated data reproduced the behavioral pattern from experimental data. To that end, discernment was entered into a one-way ANOVA with type of feedback as the independent variable for Experiments 2 and 3 separately. Note, that as we did not enter veracity of the post into our DDM and instead entered responses as either \u2018veracity-promoting\u2019 (true post shared or false post skipped) or \u2018veracity-obstructing\u2019 (false post shared or true post skipped). Thus, discernment was calculated as the proportion of true posts shared and false posts skipped minus the proportion of true posts skipped and false posts shared.\n\n#### Analysis (Experiments 4\u20136)\n\nThe analyses were identical to those in Experiment 1\u20133 except that the samples were not politically balanced (see Participants Experiments 4\u20136), as such analysis did not take into account political orientation.\n",
+      "created_at": "2025-12-04T02:02:08.711689Z"
+    },
+    {
+      "id": "480574e4-640f-47d2-b1ee-16e8f45fbb69",
+      "submission_id": "59341500-049d-46ee-ae2d-77296fa9a99c",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Claire M Gillan, https://ror.org/02tyrky19 Trinity College Dublin Ireland\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.85767.sa0](https://doi.org/10.7554/eLife.85767.sa0)\n\nThis important paper outlines a novel method for reducing the spread of misinformation on social media platforms. A compelling series of experiments and replications support the main claims, which could have significant real-world societal impact.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Claire M Gillan, https://ror.org/02tyrky19 Trinity College Dublin Ireland\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.85767.sa1](https://doi.org/10.7554/eLife.85767.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Changing the Incentive Structure of Social Media Platforms to Halt the Spread of Misinformation\" for consideration by eLife \u2013 we enjoyed reading it and think it could have significant real-world impact.\n\nYour article has been reviewed by 3 peer reviewers, including Claire M Gillan as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Michael Frank as the Senior Editor. The reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1) Clarity and consistency of analysis. While all the reviewers applauded the replications and comprehensiveness of the study, it was felt that some important analyses were omitted. Of note, the valence by response type interaction was not carried out, though there were valence effects. There are also queries about the use of political orientation in these main analyses given it is not the focus of the paper.\n\n2) More detail of the design of the study, including the instructions provided to participants and reporting of the ratings of trust/distrust, like/dislike from study 1 (which are used for study 2). Means are reported, but distributions of ratings for each post would be helpful to understand the feedback received in study 2.\n\n3) The DDM is not essential to the main results, but there were questions about the omission of the starting bias and in general the methods could have been better fleshed out.\n\n4) Although some reviewers felt the question was more applied, it was suggested there be more emphasis on theoretical motivations for the study. So you might consider striking a balance here.\n\nReviewer #1:\n\nThis is a very comprehensive and compelling piece of research that investigates a novel method for reducing the spread of misinformation online. The authors introduce trust/distrust options into a (analogue) social media environment and illustrate that it improves discernment (sensitivity of users to the factual basis of content they share). Pairing cross-sectional, correlational designs with causal manipulation and replication across multiple independent studies, this is a tour de force. There is immediate real-world impact from the work; the data present a compelling case that misinformation would be spread less often if social media environments included peer-assessments of the trustworthiness of content. The authors additionally showed that trust/distrust options actually increase engagement with social media over the existing like/dislike buttons, which creates an interesting additional incentive for private companies in this space to implement this. Finally, they showed that these social incentives around trust actually increase belief accuracy in users.\n\nThe authors compliment these insights with mechanistic explanations by modelling the 'sharing of posts' data using a drift diffusion model and comparing parameters across environments where trust/distrust vs like/dislike were differentially available. They find that across two studies drift rates are larger in the trust/distrust conditions, suggesting users accumulate more information before making a decision.\n\nThe authors note that the complexities of real world social media environments may work differently to the tightly controlled laboratory analogues described here and this would be an important next step. Other papers have investigated methods to promote the sharing of true information online, but they are typically active training conditions that would be difficult to roll out and achieve engagement. In contrast, the approach here is naturalistic and gamified in the same sense like/dislikes are on these platforms and demonstrably increases engagement.\n\nI really have no major suggestions at all. The paper is very clear and extremely comprehensive. It builds nicely on this recent PNAS paper (https://www.pnas.org/doi/epdf/10.1073/pnas.2216614120), though no need to cite it necessarily, it highlights the need for methods that can promote discernment via their reward systems \u2013 the present paper appears to do just that.\n\nReviewer #2:\n\nThis study presents important data that changing the incentive structure in social platform can decrease the spread of misinformation. If implemented in the real world, these findings may help solve an important problem in our society. The evidence supporting the conclusions is solid but more clarity in the way the analyses were conducted would strengthen the study.\n\nOne strength of the study is that it tests a clear hypothesis, namely that changing the incentive structure in social media platforms (so that rewards and punishment that users receive reflect the veracity of the information they share) will decrease the spread of misinformation. The authors suggest changing the current like/dislike feedback by trust/distrust feedback, the latter implying a judgement about veracity of the statement.\n\nThe study involves 3 different experiments. One strength of the study is that the main fundings are replicated in 3 independent experiments. In the first experiment, the authors demonstrate that participants discern true from false information when deciding to trust or distrust a new post to a higher degree than when deciding to like or dislike a post. This claim seems to be supported by the data. In the second and the third studies, the authors show that participants are more likely to share true information when their decisions to share a post result in trust or distrust feedback in comparison to like or dislike feedback or no feedback at all. Moreover, seeing how other participants trust/distrust the posts increase the accuracy of the beliefs that participants hold at the end of the experiment. These claims also seem to be supported by the data.\n\nThese results are clearly relevant and provide a clear and easy to implement solution to a very hot problem in our contemporary society, namely spread of misinformation via social media that contributes to polarization and consolidation of conspiracy theories. In this sense, these results might be very valuable. However, I missed information about what participants were told about the experiment and what were they instructed to do. This information has implications to understand the possible generalization of the results outside of the experimental setting. For example, the authors show that participants engage more with the trust/distrust than with the like/dislike buttons. It is not clear how this result may be influenced by the fact that participants are doing an experiment about trustworthiness of social media posts. The authors rightly acknowledge that their simulated social network is a simplification of a more complex real system. Hence, the importance of knowing every detail of the experimental paradigm and instructions given to the participants.\n\nThe authors used DDM to understand the underlying cognitive mechanism of the observed effects. The standard DMM as implemented in this study assumes that the decision-making process is at equilibrium and does not account for changes due to learning during the experiment. This is a drawback considering that the main effect of changing the incentive structure is expected to be achieved through a learning process. Nevertheless, the DDM could still disentangle between alternative cognitive/computational explanations of the differences between the experimental conditions. But the current implementation is difficult to fully interpret. It is unclear why the starting point is fixed and not a free parameter. Theoretically, it is equally likely that the experimental manipulation induces a bias towards discernment in repost behavior. And if there is a good reason to fix the starting point, it is unclear how it was chosen and how this decision impacts the rest of the DMM results.\n\nAlthough strongly mitigated by the fact that the main results are replicated, one possible drawback of the study is that it was not preregistered. The analysis pipeline involves a few researchers' degrees of freedom. I list 3 examples:\n\n1) It is unclear why the ANOVA in experiment 1 did not include an interaction between type of response and valence. The data seems to show a pattern towards this direction whereby the main behavioral effect is driven by a difference between dislike and distrust whereas the difference between like and trust seems much smaller or non-significant. The omission of the interaction might have affected the reported results.\n\n2) I am not sure that the use of political orientation in the analysis is fully adequate. The authors report an interaction with the main effect in experiment 1 driven by stronger results among democrats when compared to republicans. However, in experiment 2, the interaction is only marginally significant. Despite this, the authors still explore it further to show a difference in discernment between democrats and republicans. In experiment 3, the authors only used a subset of posts that were equally trusted by democrats and republicans. Importantly, the data shows that effect of trust/distrust on repost discernment is unaffected, which strengthens the main results without doubt. However, this rises the possibility that the interaction in experiment 1 is driven by the selection of material. It is also unclear to what extend the results in experiment 1 and 2 are dependent on the inclusion of political orientation in the models. Also, the inclusion of this factors justifies the exclusion of a significant number of participants in experiment 2 and 3.\n\n3) In experiment 2 and 3, the main results are analyzed using a GLM approach. It is unclear why an ANOVA is not used here and how the main regressor was built. The latter may have implications for interpretation of the results.\n\nTry to increase clarity in some points of the text. The use of the term discernment in the abstract is not clear as the term is only defined in the text. State clearly in the Results section that experiment 2 and 3 are between subject (now it is only stated in the figure) along with the number of participants per group, including the number of excluded participants.\n\nInclude the interaction between type of response and valence in study 1. Report the results with and without political orientation to show that the results are independent of the inclusion of this factor.\n\nI would suggest that the DDM analysis either includes all model parameters as free or that the authors try to implement different variations (with different free parameters) and perform model comparison to test which is the most parsimonious fit to the data. In the recoverability analysis, I would report the correlation between the simulated and recovered parameters. And if different models are tested, I would include a confusion matrix of the recoverability of the models.\n\nWhen presenting the DDM results, I would avoid the systematic use of \"good\" and \"bad\" labels for the responses. It is fine to use this metaphor in one instance, but it sounds like an oversimplification when it is repeated many times.\n\nIn the first paragraph of the discussion, the authors state \"Users who found themselves in such an environment began sharing more true than false posts in order to receive carrots and avoid sticks.\" I would reformulate this statement not to imply learning. Although learning is implicit by the fact that the effects are a consequence of changing the incentive structure, the behavioral data analysis is aggregated across the whole experiment.\n\nFigure 7 is missing\n\nReviewer #3:\n\nThis paper suggests that changing the incentive structure on social platforms may influence people's discernment in their sharing decisions. Particularly, in experiment 1, the authors suggest that participants' use of trust-distrust buttons were more discerning than their use of like-dislike button. In experiments 2 and 3, the authors suggest that operating in a trust-distrust environment makes people's sharing more discerning than operating in a like-dislike or no-feedback environments. They also test a drift rate and claim that people place more weight to accuracy when provided with the distrust-trust feedback.\n\nStrengths:\n\n\u2013 The paper examines a novel mechanism to prevent misinformation spread on social platforms.\n\n\u2013 The authors' idea of offering buttons that are better linked to headline veracity is a practical solution that could be easily implemented.\n\nWeaknesses:\n\n\u2013 The conceptualization could be better articulated with wider coverage of the misinformation literature.\n\n\u2013 There is a disconnect between the theory and the empirical studies.\n\n\u2013 Fake and true headlines may be different from one another on other factors (e.g., emotions) that affect people's trust judgments.\n\n\u2013 The design of experiments 2 and 3 fails to accurately connect trust judgments to the veracity of the headlines.\n\nMajor Comments\n\nConceptualization:\n\nConceptually, authors suggest that adding buttons should make people's evaluations of headlines (in experiment 1) and the presence of much wider variety of feedback will make their sharing decisions better (in experiments 2 and 3).\n\n1. The reader would like to see better build-up of the theoretical framework. Some questions are:\n\na. Whereas social media sharing (especially sharing 40-100 headlines) seem to be repetitive and can lead participants to develop habits (Anderson and Wood 2021; Ceylan et al., 2023). Do habits play a role? With the change in incentive structure, do participants develop different sharing habits?\n\nb. Would we expect differential evaluation and sharing as a function of valence of the feedback button? The authors claim in many places that \"\u2026 humans naturally seek social rewards and are motivated to avoid social punishments (Behrens, Hunt, Woolrich, and Rushworth, 2008; Bhanji and Delgado, 2014).\" Do they test and find evidence for this? (More discussion and suggestions are below).\n\n2. Figure 1b and 1c are rather confusing than clarifying. If I understand correctly, in experiment 2, participants receive one type of feedback that is disconnected from the actual veracity of the information. If people receive just distrust feedback for all the headlines (true and false), how is this in line with the idea that authors align carrots with truth and sticks with falsity?\n\nEmpirics:\n\nMy overall feedback is that authors should better connect their conceptualization to their empirics.\n\n3. Why is the participant the evaluator of the news headline in experiment 1 and then the sharer of the headline in experiments 2 and 3?\n\n4. The reader wonders where the action comes from: is it from reduction in rejecting false information or increasing in endorsing true information? In the model authors shared in the Supplemental Appendix Table 2, can the authors run a mixed effect model on the % of headlines engaged (not skipped) as a function of type of reaction and valence of reaction? This will help authors test their theory more robustly.\n\na. The same for Supplemental Appendix Tables 5 and 7. Authors can test their theory by including an interaction term for type of reaction and valence of that reaction.\n\n5. In experiment 1, how did \"skip\" reaction impact people's discernment? Were those who skipped more discerning than those who used like-dislike buttons?\n\n6. In experiments 2 and 3, the authors provide participants with 100 headlines. Participants make a skip or repost decision. Then, participants receive one of the types of feedback depending on their condition. One problem with this design and what authors suggest in Figure 1 is that participants receive one type of feedback in their respective condition. For instance, in the distrust condition, participants receive distrust feedback no matter what the veracity of the headline is. This is problematic because in this model, people do not have an opportunity to learn and connect veracity with trust feedback. I suggest authors could collect new data by cleaning up this mapping. The reader wonders how the results would change if this mapping actually happens and participants receive trust feedback when they share accurate information and distrust feedback when they share false information.\n\na. This may explain why the authors do not find a differential effect between trust and distrust conditions. Trust feedback that is disconnected from the actual veracity of the headline would not enhance people's discernment differentially when this feedback is negative or positive. It seems like participants were just operating in an environment knowing that the feedback will be about trust but no matter what they share the valence of the trust would not change.\n\n7. Further, in the current execution, participants learn about the reward and use this learning in their sharing decision all at one stage. However, the execution of the study can be cleaner if the authors separate the learning stage from the test stage (see Study 4 in Ceylan et al., 2023).\n\n8. One concern is that the authors stripped the headlines from any factor that could contribute people's truth and trust judgments. For instance, source credibility or consensus are factors that aid people's judgments on social platforms such as Facebook and Twitter. One may wonder how people make their truth judgments in the absence of these cues. Can people discern true information from false information? In experiment 2, authors measure the discernment, but I did not see the means between true and false headlines. Also, do people's trust and like responses correlate with the actual veracity of the information?\n\n9. Trust judgments also bear on other factors. One such factor is emotions (Dunn and Schweitzer, 2005). The reader wonders what the valence of the emotions is between the true and false headlines. A pretest that shows differences in emotions between false and true headlines would be helpful to the reader.\n\n10. I am not very familiar with the computational analysis calculating drift rate. For readers who will not be very familiar with this method will need more detail about the analysis. Also, it seems like the results from experiments 2 and 3 do not show similar trends. Specifically, in experiment 2, the distance between the thresholds is the highest in the trust-distrust conditions and the non-decision time is the lowest. In experiment 3, there is no difference in distance between the thresholds across all three conditions. This time, the non-decision time was the highest in the trust-distrust conditions. How do the authors reconcile these differences?\n\nReferences\n\nAnderson, I. A., and Wood, W. (2021). Habits and the electronic herd: The psychology behind social media's successes and failures. Consumer Psychology Review, 4(1), 83-99.\n\nCeylan, G., Anderson, I. A., and Wood, W. (2023). Sharing of misinformation is habitual, not just lazy or biased. Proceedings of the National Academy of Sciences, 120(4), e2216614120.\n\nDunn, J. R., and Schweitzer, M. E. (2005). Feeling and believing: the influence of emotion on trust. Journal of personality and social psychology, 88(5), 736.\n",
+      "created_at": "2025-12-04T02:02:08.711689Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T02:02:08.711689Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T02:02:08.711689Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "ae47d6d0-4fbc-47d3-ad31-45a9eb7ccde4",
+      "content_id": "c20af57a-6aec-450e-a271-1d30cbce3829",
+      "claim_id": "C1",
+      "claim": "The spread of misinformation online has increased polarization, racism and resistance to climate action and vaccines.",
+      "claim_type": "EXPLICIT",
+      "source": "In recent years, the spread of misinformation online has skyrocketed, increasing polarization, racism and resistance to climate action and vaccines (Barreto et al., 2021; Rapp and Salovich, 2018; Tsfati et al., 2020; Van Bavel et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple citations to published research (Barreto et al., 2021; Rapp and Salovich, 2018; Tsfati et al., 2020; Van Bavel et al., 2021).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:02:08.711689Z"
+    },
+    {
+      "id": "121fad0c-680f-4869-8904-f5ff88670acb",
+      "content_id": "c20af57a-6aec-450e-a271-1d30cbce3829",
+      "claim_id": "C2",
+      "claim": "Existing measures to halt the spread of misinformation, such as flagging posts, have had limited impact.",
+      "claim_type": "EXPLICIT",
+      "source": "Existing measures to halt the spread, such as flagging posts, have had limited impact (e.g., Chan et al., 2017; Grady et al., 2021; Lees et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to studies evaluating flagging interventions (Chan et al., 2017; Grady et al., 2021; Lees et al., 2022).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:02:08.711689Z"
+    },
+    {
+      "id": "4d3a6d90-4be8-4580-bea6-0dd3c7e29ce9",
+      "content_id": "c20af57a-6aec-450e-a271-1d30cbce3829",
+      "claim_id": "C3",
+      "claim": "The spread of misinformation on social media platforms is facilitated by the existing incentive structure where social rewards are dissociated from the veracity of information.",
+      "claim_type": "EXPLICIT",
+      "source": "We hypothesize that the spread of misinformation on social media platforms is facilitated by the existing incentive structure of those platforms, where social rewards (in the form of 'likes' and 'shares') are dissociated from the veracity of the information (Figure 1a, left panel, Sharot, 2021).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a hypothesis stated by the authors, supported by a citation (Sharot, 2021) and illustrated in Figure 1a.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:02:08.711689Z"
+    },
+    {
+      "id": "0efd22e1-fb35-4eda-815c-56619725302a",
+      "content_id": "c20af57a-6aec-450e-a271-1d30cbce3829",
+      "claim_id": "C4",
+      "claim": "Users can discern true from false content to a reasonable degree.",
+      "claim_type": "EXPLICIT",
+      "source": "users can discern true from false content to a reasonable degree (Allen et al., 2021; Pennycook and Rand, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to research on user discernment abilities (Allen et al., 2021; Pennycook and Rand, 2019).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:02:08.711689Z"
+    },
+    {
+      "id": "afbe85b0-b78a-4946-a5de-19121be458d1",
+      "content_id": "c20af57a-6aec-450e-a271-1d30cbce3829",
+      "claim_id": "C5",
+      "claim": "Misinformation generates no less retweets and 'likes' than reliable information.",
+      "claim_type": "EXPLICIT",
+      "source": "because misinformation generates no less retweets and 'likes' than reliable information (Lazer et al., 2018; Vosoughi et al., 2018)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to studies on social media engagement patterns (Lazer et al., 2018; Vosoughi et al., 2018).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:02:08.711689Z"
+    },
+    {
+      "id": "61485834-54ff-44de-9afa-fe450e36f3bf",
+      "content_id": "c20af57a-6aec-450e-a271-1d30cbce3829",
+      "claim_id": "C6",
+      "claim": "Online behavior conforms to a reinforcement-learning model by which users are reacting to social rewards.",
+      "claim_type": "EXPLICIT",
+      "source": "online behavior conforms to a reinforcement-learning model by which users are reacting to social rewards (Lindstr\u00f6m et al., 2021; Brady et al., 2021)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to research on reinforcement learning in online behavior (Lindstr\u00f6m et al., 2021; Brady et al., 2021).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:02:08.711689Z"
+    },
+    {
+      "id": "21cbcadc-13de-4f82-833d-f2efea9ec238",
+      "content_id": "c20af57a-6aec-450e-a271-1d30cbce3829",
+      "claim_id": "C7",
+      "claim": "People will share misinformation even when they do not trust it.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, people will share misinformation even when they do not trust it (Pennycook et al., 2021; Ren et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to research on sharing behavior (Pennycook et al., 2021; Ren et al., 2021).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:02:08.711689Z"
+    },
+    {
+      "id": "af417418-260d-4e8b-a13c-954dbb8dffe1",
+      "content_id": "c20af57a-6aec-450e-a271-1d30cbce3829",
+      "claim_id": "C8",
+      "claim": "Trust by definition is related to veracity.",
+      "claim_type": "EXPLICIT",
+      "source": "We selected these buttons because trust by definition is related to veracity \u2013 it is defined as 'a firm belief in the reliability, truth, ability, or strength of someone or something' (Oxford Dictionary).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a dictionary definition from Oxford Dictionary.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:02:08.711689Z"
+    },
+    {
+      "id": "fcdada55-18ff-45e8-97f1-6abdef1d6ed3",
+      "content_id": "c20af57a-6aec-450e-a271-1d30cbce3829",
+      "claim_id": "C9",
+      "claim": "Participants used '(Dis)Trust' reaction buttons more discerningly than '(Dis)Like' reaction buttons in Experiment 1.",
+      "claim_type": "EXPLICIT",
+      "source": "The results reveal that participants' use of '(Dis)Trust' reaction buttons (M = 0.127; SE = 0.007) was more discerning than their use of '(Dis)Like' reaction buttons (M = 0.047; SE = 0.005; F(1,104) = 95.832, p < 0.001, partial \u03b72 = 0.48, Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by statistical analysis of experimental data from Experiment 1, with results shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:02:08.711689Z"
+    },
+    {
+      "id": "74f739c1-cae7-4daa-abd6-ab0eeab9dc42",
+      "content_id": "c20af57a-6aec-450e-a271-1d30cbce3829",
+      "claim_id": "C10",
+      "claim": "Negatively valenced reaction buttons were used in a more discerning manner than positively valenced reaction buttons in Experiment 1.",
+      "claim_type": "EXPLICIT",
+      "source": "We additionally observed an effect of valence (F(1,105) = 17.33, p < 0.001, partial \u03b72 = 0.14), with negatively valenced reaction buttons (e.g., 'dislike' and 'distrust', M = 0.095, SE = 0.007) being used in a more discerning manner than positively valenced reaction buttons (e.g., 'like' and 'trust', M = 0.087, SE = 0.005)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by statistical analysis of experimental data from Experiment 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:02:08.711689Z"
+    },
+    {
+      "id": "5beb0203-fc2b-4def-b8dd-493ba7dc2bd4",
+      "content_id": "c20af57a-6aec-450e-a271-1d30cbce3829",
+      "claim_id": "C11",
+      "claim": "Democrats were more discerning than Republicans in Experiment 1.",
+      "claim_type": "EXPLICIT",
+      "source": "and an effect of political orientation (F(1,104) = 25.262, p < 0.001, partial \u03b72 = 0.2), with Democrats (M = 0.115, SE = 0.007) being more discerning than Republicans (M = 0.06, SE = 0.005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by statistical analysis of experimental data from Experiment 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:02:08.711689Z"
+    },
+    {
+      "id": "c2642bb0-440d-4f07-bb2e-8127f14c3afa",
+      "content_id": "c20af57a-6aec-450e-a271-1d30cbce3829",
+      "claim_id": "C12",
+      "claim": "Democrats showed greater discernment than Republicans in their use of '(Dis)Trust' reaction buttons but not in their use of '(Dis)Like' reaction buttons.",
+      "claim_type": "EXPLICIT",
+      "source": "There was also an interaction of type of reaction and political orientation (F(1,104) = 24.084, p < 0.001, partial \u03b72 = 0.19), which was characterized by Democrats showing greater discernment than Republicans in their use of '(Dis)Trust' reaction buttons (F(1,104) = 33.592, p < 0.001, partial \u03b72 = 0.24), but not in their use of '(Dis)Like' reaction buttons (F(1,104) = 2.255, p = 0.136, partial \u03b72 = 0.02).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by statistical analysis of experimental data from Experiment 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:02:08.711689Z"
+    },
+    {
+      "id": "dce7e177-9721-41ce-8ec1-42e0eb8e4fc1",
+      "content_id": "c20af57a-6aec-450e-a271-1d30cbce3829",
+      "claim_id": "C13",
+      "claim": "Both Democrats and Republicans used the '(Dis)Trust' reaction buttons in a more discerning manner than the '(Dis)Like' reaction buttons.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, however, both Democrats (F(1,51) = 93.376, p < 0.001, partial \u03b72 = 0.65) and Republicans (F(1,53) = 14.715, p < 0.001, partial \u03b72 = 0.22) used the '(Dis)Trust' reaction buttons in a more discerning manner than the '(Dis)Like' reaction buttons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by statistical analysis of experimental data from Experiment 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:02:08.711689Z"
+    },
+    {
+      "id": "8f9add5d-ec54-4acd-aae3-ff434a17f64e",
+      "content_id": "c20af57a-6aec-450e-a271-1d30cbce3829",
+      "claim_id": "C14",
+      "claim": "Participants' use of each reaction button discerned true from false information in Experiment 1.",
+      "claim_type": "EXPLICIT",
+      "source": "One-sample t-tests against zero further revealed that participants' use of each reaction button discerned true from false information ('like': M = 0.06; SE = 0.006; t(105) = 10.483, p < 0.001, Cohen's d = 1.018; 'trust': M = 0.099; SE = 0.01; t(105) = 9.744, p < 0.001, Cohen's d = 0.946; 'dislike': M = 0.034; SE = 0.007; t(105) = 4.76, p < 0.001, Cohen's d = 0.462; 'distrust': M = 0.156; SE = 0.01; t(105) = 15.872, p < 0.001, Cohen's d = 1.542).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by statistical analysis of experimental data from Experiment 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:02:08.711689Z"
+    },
+    {
+      "id": "f26bd1ce-6363-408f-8c56-d020aa856776",
+      "content_id": "c20af57a-6aec-450e-a271-1d30cbce3829",
+      "claim_id": "C15",
+      "claim": "Participants used '(Dis)Trust' reaction buttons more often than '(Dis)Like' reaction buttons.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that participants used '(Dis)Trust' reaction buttons more often than '(Dis)Like' reaction buttons (percentage use of reaction out of all trials: 'trust': M = 28.057%; 'distrust': M = 34.085%; 'like': M = 18.604%; 'dislike': M = 23.745%; F(1,104) = 36.672, p < 0.001, partial \u03b72 = 0.26).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by statistical analysis of experimental data from Experiment 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:02:08.711689Z"
+    },
+    {
+      "id": "08168a59-0f4d-4592-bc8f-f83a9b96c5cd",
+      "content_id": "c20af57a-6aec-450e-a271-1d30cbce3829",
+      "claim_id": "C16",
+      "claim": "Negative reaction buttons were used more frequently than positive reaction buttons.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, negative reaction buttons ('distrust' and 'dislike': M = 28.915%, SE = 1.177) were used more frequently than positive reaction buttons ('trust' and 'like': M = 23.33%, SE = 1.133; F(1,105) = 16.96, p < 0.001, partial \u03b72 = 0.07).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by statistical analysis of experimental data from Experiment 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:02:08.711689Z"
+    },
+    {
+      "id": "e0b70532-1b6d-411b-8696-9cdb97a26d31",
+      "content_id": "c20af57a-6aec-450e-a271-1d30cbce3829",
+      "claim_id": "C17",
+      "claim": "Participants who skipped more posts were less discerning.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we also found that participants who skipped more posts were less discerning (R = \u22120.414, p < 0.001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by correlation analysis of experimental data from Experiment 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:02:08.711689Z"
+    },
+    {
+      "id": "e05e3f3d-e80c-4dac-b9fb-54e40f38c5ca",
+      "content_id": "c20af57a-6aec-450e-a271-1d30cbce3829",
+      "claim_id": "C18",
+      "claim": "Participants shared more true than false information in the '(Dis)Trust' environments than in the '(Dis)Like' environments and Baseline environment in Experiment 2.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed an effect of type of feedback (F(1,281) = 15.2, p < 0.001, partial \u03b72 = 0.051), such that participants shared more true than false information in the '(Dis)Trust' environments (M = 0.18, SE = 0.018) than the '(Dis)Like' environments (M = 0.085, SE = 0.019, F(1,225) = 14.249, p < 0.001, partial \u03b72 = 0.06) and Baseline environment (M = 0.084, SE = 0.025; F(1,150) = 10.906, p = 0.001, partial \u03b72 = 0.068, Figure 5a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by statistical analysis of experimental data from Experiment 2, with results shown in Figure 5a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:02:08.711689Z"
+    },
+    {
+      "id": "17a3335a-c426-4172-8b9f-2cfcfc85f49a",
+      "content_id": "c20af57a-6aec-450e-a271-1d30cbce3829",
+      "claim_id": "C19",
+      "claim": "Participants who received 'trust' feedback were more discerning in their sharing behavior than those who received 'like' feedback.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, participants who received 'trust' feedback (M = 0.176, SE = 0.026) were more discerning in their sharing behavior than those who received 'like' feedback (M = 0.081, SE = 0.021, F(1,131) = 10.084, p = 0.002, partial \u03b72 = 0.071).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by statistical analysis of experimental data from Experiment 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:02:08.711689Z"
+    },
+    {
+      "id": "3c3d3f92-e4c3-475f-b75f-e872d1899848",
+      "content_id": "c20af57a-6aec-450e-a271-1d30cbce3829",
+      "claim_id": "C20",
+      "claim": "Participants who received 'distrust' feedback were more discerning than those who received 'dislike' feedback.",
+      "claim_type": "EXPLICIT",
+      "source": "Those who received 'distrust' feedback (M = 0.175, SE = 0.026) were more discerning than those who received 'dislike' feedback (M = 0.092, SE = 0.039, F(1,90) = 5.003, p = 0.028, partial \u03b72 = 0.053).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by statistical analysis of experimental data from Experiment 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:02:08.711689Z"
+    },
+    {
+      "id": "9c7692b4-4d68-4f3c-92e2-af1e0f36824e",
+      "content_id": "c20af57a-6aec-450e-a271-1d30cbce3829",
+      "claim_id": "C21",
+      "claim": "The effect of '(Dis)Trust' environment on discernment is observed regardless of content type.",
+      "claim_type": "EXPLICIT",
+      "source": "As observed in Figure 5b, the effect of '(Dis)Trust' environment on discernment is observed regardless of content type.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 5b, which displays discernment across different content topics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:02:08.711689Z"
+    },
+    {
+      "id": "4a202f67-8f9c-4a5f-a3b6-8ad943546c8d",
+      "content_id": "c20af57a-6aec-450e-a271-1d30cbce3829",
+      "claim_id": "C22",
+      "claim": "Participants were more accurate when they received '(Dis)Trust' feedback compared to '(Dis)Like' feedback in Experiment 2.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed an effect of type of feedback (F(1,281) = 7.084, p = 0.008, partial \u03b72 = 0.025), such that participants were more accurate (less errors) when they received '(Dis)Trust' feedback (M = 47.24, SE = 0.938) compared to '(Dis)Like' feedback (M = 50.553, SE = 0.851, F(1,224) = 7.024, p = 0.009, partial \u03b72 = 0.03).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by statistical analysis of belief accuracy data from Experiment 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:02:08.711689Z"
+    },
+    {
+      "id": "bc444f41-aa7c-45e2-947b-5becbbbea279",
+      "content_id": "c20af57a-6aec-450e-a271-1d30cbce3829",
+      "claim_id": "C23",
+      "claim": "Democrats were more accurate than Republicans in Experiment 2.",
+      "claim_type": "EXPLICIT",
+      "source": "We further observed an effect of political orientation (F(1,281) = 11.402, p < 0.001, \u03b72 = 0.039), with Democrats (M = 47.264, SE = 0.773) being more accurate than Republicans (M = 51.117, SE = 0.802).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by statistical analysis of belief accuracy data from Experiment 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:02:08.711689Z"
+    },
+    {
+      "id": "7c62c67f-6f86-4041-9a4d-694e07660aa4",
+      "content_id": "c20af57a-6aec-450e-a271-1d30cbce3829",
+      "claim_id": "C24",
+      "claim": "Participants in the 'Trust & Distrust' feedback group posted more true relative to false information than those in the 'Like & Dislike' group or those who received no feedback at all in Experiment 3.",
+      "claim_type": "EXPLICIT",
+      "source": "Again, we observed an effect of type of feedback (F(1,385) = 11.009, p < 0.001, partial \u03b72 = 0.054, Figure 5c), with participants in the 'Trust & Distrust' feedback group posting more true relative to false information (M = 0.101, SE = 0.015) than those in the 'Like & Dislike' group (M = 0.042, SE = 0.013; F(1,261) = 8.478, p = 0.00, partial \u03b72 = 0.031) or those who received no feedback at all (M = 0.008, SE = 0.014, F(1,259) = 20.142, p < 0.001, partial \u03b72 = 0.0724).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by statistical analysis of experimental data from Experiment 3, with results shown in Figure 5c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:02:08.711689Z"
+    },
+    {
+      "id": "ea01eb8a-5935-4dd0-8a58-0998577c265a",
+      "content_id": "c20af57a-6aec-450e-a271-1d30cbce3829",
+      "claim_id": "C25",
+      "claim": "Participants shared more frequently in the 'Trust & Distrust' environment compared to the other two environments in Experiment 3.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly participants shared more frequently in the 'Trust & Distrust' environment compared to the other two environments (% of all trials: 'Trust & Distrust' = 36.2%, 'Like & Dislike' = 30.41%; Baseline = 25.853%; F(1,385) = 8.7692, p < 0.001, partial \u03b72 = 0.044).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by statistical analysis of engagement data from Experiment 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:02:08.711689Z"
+    },
+    {
+      "id": "910d3a06-7431-4fb4-9859-12b12f04a0e6",
+      "content_id": "c20af57a-6aec-450e-a271-1d30cbce3829",
+      "claim_id": "C26",
+      "claim": "'(Dis)Trust' feedback improves discernment without reducing engagement.",
+      "claim_type": "EXPLICIT",
+      "source": "This illustrates that '(Dis)Trust' feedback improves discernment without reducing engagement.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the data showing increased discernment and increased sharing frequency in the '(Dis)Trust' environment.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:02:08.711689Z"
+    },
+    {
+      "id": "551dffb0-2969-4f43-ae30-05e07db34149",
+      "content_id": "c20af57a-6aec-450e-a271-1d30cbce3829",
+      "claim_id": "C27",
+      "claim": "Democrats were more accurate than Republicans in Experiment 3.",
+      "claim_type": "EXPLICIT",
+      "source": "Democrats (M = 40.591; SE = 6.371) were more accurate than Republicans (M = 42.056; SE = 5.633; F(1,385) = 5.723, p = 0.017, partial \u03b72 = 0.015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by statistical analysis of belief accuracy data from Experiment 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:02:08.711689Z"
+    },
+    {
+      "id": "7321e773-4031-47a6-8afb-9ec4e1825061",
+      "content_id": "c20af57a-6aec-450e-a271-1d30cbce3829",
+      "claim_id": "C28",
+      "claim": "In the '(Dis)Trust' environments the drift rate was larger than in the '(Dis)Like' environments or no feedback environment in Experiment 2.",
+      "claim_type": "EXPLICIT",
+      "source": "For both Experiment 2 (see Figure 6a) and Experiment 3 (see Figure 6c) we observed a meaningful difference in the drift rate. In particular, in the '(Dis)Trust' environments the drift rate was larger (Experiment 2: v = 0.216; Experiment 3: v = 0.12) than in the'(Dis)Like' environments (Experiment 2: v = 0.01; 95% HDI of difference [0.048; 0.183], Experiment 3: v = 0.037; 95% HDI of difference [0.032; 0.135]) or no feedback environment (Experiment 2: v = 0.098; 95% HDI of difference [0.041; 0.195]; Experiment 3: v = 0.006; 95% HDI of difference [0.061; 0.167]).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by drift-diffusion modeling analysis of experimental data from Experiment 2, with results shown in Figure 6a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:02:08.711689Z"
+    },
+    {
+      "id": "73a26a4c-4310-4439-8e64-002b794482e2",
+      "content_id": "c20af57a-6aec-450e-a271-1d30cbce3829",
+      "claim_id": "C29",
+      "claim": "In the '(Dis)Trust' environments the drift rate was larger than in the '(Dis)Like' environments or no feedback environment in Experiment 3.",
+      "claim_type": "EXPLICIT",
+      "source": "For both Experiment 2 (see Figure 6a) and Experiment 3 (see Figure 6c) we observed a meaningful difference in the drift rate. In particular, in the '(Dis)Trust' environments the drift rate was larger (Experiment 2: v = 0.216; Experiment 3: v = 0.12) than in the'(Dis)Like' environments (Experiment 2: v = 0.01; 95% HDI of difference [0.048; 0.183], Experiment 3: v = 0.037; 95% HDI of difference [0.032; 0.135]) or no feedback environment (Experiment 2: v = 0.098; 95% HDI of difference [0.041; 0.195]; Experiment 3: v = 0.006; 95% HDI of difference [0.061; 0.167]).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by drift-diffusion modeling analysis of experimental data from Experiment 3, with results shown in Figure 6c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:02:08.711689Z"
+    },
+    {
+      "id": "87416d2f-ae1e-4ba5-9c8e-46ed739d3e14",
+      "content_id": "c20af57a-6aec-450e-a271-1d30cbce3829",
+      "claim_id": "C30",
+      "claim": "In the '(Dis)Trust' environments evidence consistent with a 'veracity-promoting' response is weighted more than 'evidence' consistent with a 'veracity-obstructing' response.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that relative to the other environments, in the '(Dis)Trust' environments evidence consistent with a 'veracity-promoting' response is weighted more than 'evidence' consistent with a 'veracity-obstructing' response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the drift-diffusion modeling results showing larger drift rates in '(Dis)Trust' environments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:02:08.711689Z"
+    },
+    {
+      "id": "a6e28913-c230-441a-98b2-1252d6dce994",
+      "content_id": "c20af57a-6aec-450e-a271-1d30cbce3829",
+      "claim_id": "C31",
+      "claim": "The new incentive structure significantly reduced the spread of misinformation.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we created a novel incentive structure that significantly reduced the spread of misinformation and provide insights into the cognitive mechanisms that make it work.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary claim supported by the experimental results from Experiments 2 and 3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:02:08.711689Z"
+    },
+    {
+      "id": "7d70c514-7fb5-4330-a637-32bebf309545",
+      "content_id": "c20af57a-6aec-450e-a271-1d30cbce3829",
+      "claim_id": "C32",
+      "claim": "The new incentive structure can be adopted by social media platforms at no cost.",
+      "claim_type": "EXPLICIT",
+      "source": "This structure can be adopted by social media platforms at no cost.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative claim about the practical implementation of the intervention.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:02:08.711689Z"
+    },
+    {
+      "id": "eba0aaaa-4662-4d8b-83ab-763bc61c7a8e",
+      "content_id": "c20af57a-6aec-450e-a271-1d30cbce3829",
+      "claim_id": "C33",
+      "claim": "Users who found themselves in the new environment shared more true than false posts in order to obtain more 'trust' carrots and fewer 'distrust' sticks.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, (2) when exposed to this environment, users will start sharing more true information and less false information in order to obtain more 'trust' carrots and fewer 'distrust' sticks (Figure 1b, bottom panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference about the mechanism underlying the observed behavioral changes, supported by the experimental results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:02:08.711689Z"
+    },
+    {
+      "id": "3594663f-42d9-4749-a022-64372686ee05",
+      "content_id": "c20af57a-6aec-450e-a271-1d30cbce3829",
+      "claim_id": "C34",
+      "claim": "The result was a reduction in sharing of misinformation without a reduction in overall engagement.",
+      "claim_type": "EXPLICIT",
+      "source": "The result was a reduction in sharing of misinformation without a reduction in overall engagement.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the experimental data showing increased discernment and maintained or increased engagement.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:02:08.711689Z"
+    },
+    {
+      "id": "b2a0cc95-9990-4930-a30c-36365ed1a1a3",
+      "content_id": "c20af57a-6aec-450e-a271-1d30cbce3829",
+      "claim_id": "C35",
+      "claim": "All the effects were replicated and effect sizes of misinformation reduction were large to medium.",
+      "claim_type": "EXPLICIT",
+      "source": "All the effects were replicated and effect sizes of misinformation reduction were large to medium.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the replication studies (Experiments 4-6) and the reported effect sizes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:02:08.711689Z"
+    },
+    {
+      "id": "e5b6df59-f638-4ba3-aa37-fb54b1b74dab",
+      "content_id": "c20af57a-6aec-450e-a271-1d30cbce3829",
+      "claim_id": "C36",
+      "claim": "Drift-diffusion modeling revealed that participants in the new environment assigned more weight to evidence consistent with discerning than non-discerning behavior relative to traditional environments.",
+      "claim_type": "EXPLICIT",
+      "source": "Using computational modeling we were able to pin-point the changes to participants' decision-making process. In particular, drift-diffusion modeling revealed that participants in the new environment assigned more weight to evidence consistent with discerning than non-discerning behavior relative to traditional environments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the drift-diffusion modeling analysis showing larger drift rates in '(Dis)Trust' environments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:02:08.711689Z"
+    },
+    {
+      "id": "223123cc-0e47-4592-937e-a964923c7784",
+      "content_id": "c20af57a-6aec-450e-a271-1d30cbce3829",
+      "claim_id": "C37",
+      "claim": "The possibility of receiving rewards that are consistent with accuracy led to an increase in the weight participants assigned to accuracy-consistent evidence when making a decision.",
+      "claim_type": "EXPLICIT",
+      "source": "In other words, the possibility of receiving rewards that are consistent with accuracy led to an increase in the weight participants assigned to accuracy-consistent evidence when making a decision.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the drift-diffusion modeling results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:02:08.711689Z"
+    },
+    {
+      "id": "0d07f83b-3caf-47e9-b680-4e44804d3931",
+      "content_id": "c20af57a-6aec-450e-a271-1d30cbce3829",
+      "claim_id": "C38",
+      "claim": "The findings held across a wide range of different topics and a diverse sample of participants.",
+      "claim_type": "EXPLICIT",
+      "source": "The findings also held across a wide range of different topics (e.g., politics, health, science, etc.) and a diverse sample of participants, suggesting that the intervention is not limited to a set group of topics or users, but instead relies more broadly on the underlying mechanism of associating veracity and social rewards.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the experimental design which included posts on various topics and the analysis showing effects across topics.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:02:08.711689Z"
+    },
+    {
+      "id": "1deaa246-32b1-40d5-a807-4cfacd54f790",
+      "content_id": "c20af57a-6aec-450e-a271-1d30cbce3829",
+      "claim_id": "C39",
+      "claim": "Feedback not only promotes discernment in sharing behavior but may also increase the accuracy of beliefs.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we observed that feedback not only promotes discernment in sharing behavior but may also increase the accuracy of beliefs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the belief accuracy analyses in Experiments 2, 5, and 6, though not in Experiment 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:02:08.711689Z"
+    },
+    {
+      "id": "ef9d209b-045b-4376-ae1c-5e600299866f",
+      "content_id": "c20af57a-6aec-450e-a271-1d30cbce3829",
+      "claim_id": "C40",
+      "claim": "The new incentive structure reduces the spread of misinformation and may help in correcting false beliefs.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the new incentive structure reduces the spread of misinformation and may help in correcting false beliefs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary claim supported by the experimental results on sharing behavior and belief accuracy.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:02:08.711689Z"
+    },
+    {
+      "id": "da8d0124-ea69-4f22-a1e7-43f9c466550e",
+      "content_id": "c20af57a-6aec-450e-a271-1d30cbce3829",
+      "claim_id": "C41",
+      "claim": "The new incentive structure could help reduce violence, vaccine hesitancy and political polarization, without reducing user engagement.",
+      "claim_type": "EXPLICIT",
+      "source": "The new structure could subsequentially help reduce violence, vaccine hesitancy and political polarization, without reducing user engagement.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative claim about the potential broader impacts of the intervention.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:02:08.711689Z"
+    },
+    {
+      "id": "d0df51e7-9712-497d-a7be-64fbc1913cf3",
+      "content_id": "c20af57a-6aec-450e-a271-1d30cbce3829",
+      "claim_id": "C42",
+      "claim": "106 participants were included in the analysis of Experiment 1.",
+      "claim_type": "EXPLICIT",
+      "source": "Five participants were excluded according to pre-determined criteria (see Materials and methods for details). Thus, 106 participants (52 Democrats, 54 Republican, Mage = 40.745, SDage \u00b1 14.479; female = 54, male = 52) were included in the analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about the sample size in Experiment 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:02:08.711689Z"
+    },
+    {
+      "id": "0644f770-3462-43a4-8de0-fd924897b1e6",
+      "content_id": "c20af57a-6aec-450e-a271-1d30cbce3829",
+      "claim_id": "C43",
+      "claim": "288 participants were included in the analysis of Experiment 2.",
+      "claim_type": "EXPLICIT",
+      "source": "Data of 32 participants were not analyzed according to pre-determined criteria (see Materials and methods for details). Two-hundred and eighty-eight participants (146 Democrats, 142 Republicans, Mage = 38.073, SDage \u00b1 13.683; female = 147, male = 141) were included in the analysis (see Materials and methods for details).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about the sample size in Experiment 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:02:08.711689Z"
+    },
+    {
+      "id": "7c3a20df-242c-489e-9b48-40784eba599e",
+      "content_id": "c20af57a-6aec-450e-a271-1d30cbce3829",
+      "claim_id": "C44",
+      "claim": "391 participants were included in the analysis of Experiment 3.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of Experiment 3 (N = 391, 194 Democrats, 197 Republican, Mage = 35.304, SDage \u00b1 11.089; female = 196, male = 192, other = 3)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about the sample size in Experiment 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:02:08.711689Z"
+    },
+    {
+      "id": "f82dec8e-2c06-4d87-b93a-a0212a697324",
+      "content_id": "c20af57a-6aec-450e-a271-1d30cbce3829",
+      "claim_id": "C45",
+      "claim": "The posts included in the experiment covered a range of topics including politics, science, health, environment, and society.",
+      "claim_type": "EXPLICIT",
+      "source": "The posts included in the experiment covered a range of topics including politics, science, health, environment, and society.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about the experimental stimuli.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:02:08.711689Z"
+    },
+    {
+      "id": "f91f15a2-b147-46b5-adf8-c75fb2206b7f",
+      "content_id": "c20af57a-6aec-450e-a271-1d30cbce3829",
+      "claim_id": "C46",
+      "claim": "All posts were extracted from fact-checking website Politifact.",
+      "claim_type": "EXPLICIT",
+      "source": "They were all extracted from fact-checking website Politifact (https://www.politifact.com).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about the source of experimental stimuli.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:02:08.711689Z"
+    },
+    {
+      "id": "b82480a8-11a9-4d51-beab-ab50630cafa1",
+      "content_id": "c20af57a-6aec-450e-a271-1d30cbce3829",
+      "claim_id": "C47",
+      "claim": "The feedback in Experiment 2 was not collected in real time but was instead taken from participants' reactions in Experiment 1.",
+      "claim_type": "EXPLICIT",
+      "source": "Due to logistic constraints, the feedback was not collected in real time but was instead taken from participants' reactions in Experiment 1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about the experimental procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:02:08.711689Z"
+    },
+    {
+      "id": "94f7aa3c-0e63-4aa1-94d5-5adb9aca05e8",
+      "content_id": "c20af57a-6aec-450e-a271-1d30cbce3829",
+      "claim_id": "C48",
+      "claim": "The participants in Experiment 2 believed the reactions were provided in real time.",
+      "claim_type": "EXPLICIT",
+      "source": "The participants, however, believed the reactions were provided in real time as indicated by a rotating cogwheel (1 s).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about the experimental procedure and participant beliefs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:02:08.711689Z"
+    },
+    {
+      "id": "31c9b911-12f0-4e67-9d5e-f7c0de99447b",
+      "content_id": "c20af57a-6aec-450e-a271-1d30cbce3829",
+      "claim_id": "C49",
+      "claim": "In Experiment 3, 40 posts were selected to which Republicans and Democrats had on average reacted to similarly using the 'trust' button in Experiment 1.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, to ensure posts align equally with Democratic and Republican beliefs, in Experiment 3 we selected 40 posts (20 true, 20 false) in response to which Republicans and Democrats utilized the 'trust' button in a similar manner in Experiment 1 (see Materials and methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about the experimental design of Experiment 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:02:08.711689Z"
+    },
+    {
+      "id": "93b97945-12fd-4cce-959d-07ed665a1cc9",
+      "content_id": "c20af57a-6aec-450e-a271-1d30cbce3829",
+      "claim_id": "C50",
+      "claim": "The possibility of reward is more likely to reinforce action than the possibility of punishment, while the possibility of punishment is more likely to reinforce inaction.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been proposed that the possibility of reward is more likely to reinforce action than the possibility of punishment, while the possibility of punishment is more likely to reinforce inaction (Guitart-Masip et al., 2014; Guitart-Masip et al., 2011; Guitart-Masip et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to research on reward and punishment (Guitart-Masip et al., 2014; Guitart-Masip et al., 2011; Guitart-Masip et al., 2012).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:02:08.711689Z"
+    },
+    {
+      "id": "3b85383c-2c12-4114-b5b7-08cd5bec9e4c",
+      "content_id": "c20af57a-6aec-450e-a271-1d30cbce3829",
+      "claim_id": "C51",
+      "claim": "Sharing in and of itself is rewarding.",
+      "claim_type": "EXPLICIT",
+      "source": "Potentially because sharing in and of itself is rewarding (Tamir and Mitchell, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to research on the rewarding nature of sharing (Tamir and Mitchell, 2012).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:02:08.711689Z"
+    },
+    {
+      "id": "0fd5c72c-a16a-4923-9317-93b6ce04803d",
+      "content_id": "c20af57a-6aec-450e-a271-1d30cbce3829",
+      "claim_id": "C52",
+      "claim": "The results indicate that participants are sensitive to the number of 'distrusts' per posts not just to the total number of 'distrusts' over all posts.",
+      "claim_type": "EXPLICIT",
+      "source": "The results indicate that participants are sensitive to the number of 'distrusts' per posts not just to the total number of 'distrusts' over all posts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the experimental results showing that participants did not simply skip all posts to minimize total distrusts.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:02:08.711689Z"
+    },
+    {
+      "id": "240365a9-7240-4fac-b67c-64076f0652b4",
+      "content_id": "c20af57a-6aec-450e-a271-1d30cbce3829",
+      "claim_id": "C53",
+      "claim": "Participants are sensitive to the number of 'trusts' per post not just to total number over all posts.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicates that they are sensitive to the number of 'trusts' per post not just to total number over all posts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the experimental results showing that participants did not simply share all posts to maximize total trusts.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:02:08.711689Z"
+    },
+    {
+      "id": "b4d8dea1-91fa-43d7-81f4-157bd15f2769",
+      "content_id": "c20af57a-6aec-450e-a271-1d30cbce3829",
+      "claim_id": "C54",
+      "claim": "Overall engagement did not differ across environments in Experiment 2.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall engagement, measured as percentage of posts shared out of all trials, did not differ across environments (F(1,281) = 1.218, p = 0.271, partial \u03b72=0.004; Mean % posts shared out of all trials: Baseline = 27.712%; Dislike = 35.889%; Like = 33.258%; Distrust = 32.51%; Trust = 30.435%; see Supplementary file 4 for means for true and false posts).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by statistical analysis of engagement data from Experiment 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:02:08.711689Z"
+    },
+    {
+      "id": "8976025e-2933-4819-96e8-cc387693f06f",
+      "content_id": "c20af57a-6aec-450e-a271-1d30cbce3829",
+      "claim_id": "C55",
+      "claim": "The Baseline and '(Dis)Like' environments did not differ for drift rate in Experiment 2.",
+      "claim_type": "EXPLICIT",
+      "source": "The Baseline and '(Dis)Like' environments did not differ for drift rate (Experiment 2: 95% HDI of difference: [\u22120.075; 0.08]; Experiment 3: 95% HDI of difference [\u22120.016; 0.079]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by drift-diffusion modeling analysis of experimental data from Experiment 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:02:08.711689Z"
+    },
+    {
+      "id": "be6d1b44-42fc-46bd-a42f-5901a550272e",
+      "content_id": "c20af57a-6aec-450e-a271-1d30cbce3829",
+      "claim_id": "C56",
+      "claim": "The Baseline and '(Dis)Like' environments did not differ for drift rate in Experiment 3.",
+      "claim_type": "EXPLICIT",
+      "source": "The Baseline and '(Dis)Like' environments did not differ for drift rate (Experiment 2: 95% HDI of difference: [\u22120.075; 0.08]; Experiment 3: 95% HDI of difference [\u22120.016; 0.079]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by drift-diffusion modeling analysis of experimental data from Experiment 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:02:08.711689Z"
+    },
+    {
+      "id": "db79873c-15e3-4465-80de-436031dcf257",
+      "content_id": "c20af57a-6aec-450e-a271-1d30cbce3829",
+      "claim_id": "C57",
+      "claim": "Model parameters could be successfully recovered with data simulated using group-level parameters from Experiments 2 and 3.",
+      "claim_type": "EXPLICIT",
+      "source": "Model parameters could be successfully recovered with data simulated using group-level parameters from Experiments 2 and 3 separately (for details, see Materials and methods, see Figure 6b, d, Supplementary files 19 and 20).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by model recovery analysis shown in Figure 6b and 6d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:02:08.711689Z"
+    },
+    {
+      "id": "3a9bfcf7-312e-482c-86bb-c1e909712c39",
+      "content_id": "c20af57a-6aec-450e-a271-1d30cbce3829",
+      "claim_id": "C58",
+      "claim": "The same pattern of results was reproduced with the simulated data as with real participants' data.",
+      "claim_type": "EXPLICIT",
+      "source": "The same pattern of results was reproduced with the simulated data as with real participants' data (Figure 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the comparison of real and simulated data shown in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:02:08.711689Z"
+    },
+    {
+      "id": "58a1214d-3d94-4fc5-a04a-41fccd78952c",
+      "content_id": "c20af57a-6aec-450e-a271-1d30cbce3829",
+      "claim_id": "C59",
+      "claim": "Discernment was higher in '(Dis)Trust' environments relative to '(Dis)Like' environments or no feedback environments in simulated data from Experiment 2.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, we observed an effect of type of feedback in both the simulated (Experiment 2: F(1,285) = 3.795, p = 0.024, \u03b72 = 0.026; Experiment 3: F(1,388) = 7.843, p = 0.001, \u03b72 = 0.039, Figure 7b, d), and the experimental data (Experiment 2: F(1,287) = 7.049, p = 0.001, \u03b72 = 0.047; Experiment 3: F(1,388) = 11.166, p < 0.001, \u03b72 = 0.054). That is, discernment was higher in '(Dis)Trust' environments relative to '(Dis)Like' environments or no feedback environments (Figure 7a, c, see Supplementary files 21 and 22 for pairwise comparisons and Supplementary file 23 for correlations between real and recovered individual-level parameters).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by statistical analysis of simulated data from Experiment 2, with results shown in Figure 7b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:02:08.711689Z"
+    },
+    {
+      "id": "28c59703-ff85-4dd8-bbf1-1bc796d9b1de",
+      "content_id": "c20af57a-6aec-450e-a271-1d30cbce3829",
+      "claim_id": "C60",
+      "claim": "Discernment was higher in '(Dis)Trust' environments relative to '(Dis)Like' environments or no feedback environments in simulated data from Experiment 3.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, we observed an effect of type of feedback in both the simulated (Experiment 2: F(1,285) = 3.795, p = 0.024, \u03b72 = 0.026; Experiment 3: F(1,388) = 7.843, p = 0.001, \u03b72 = 0.039, Figure 7b, d), and the experimental data (Experiment 2: F(1,287) = 7.049, p = 0.001, \u03b72 = 0.047; Experiment 3: F(1,388) = 11.166, p < 0.001, \u03b72 = 0.054). That is, discernment was higher in '(Dis)Trust' environments relative to '(Dis)Like' environments or no feedback environments (Figure 7a, c, see Supplementary files 21 and 22 for pairwise comparisons and Supplementary file 23 for correlations between real and recovered individual-level parameters).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by statistical analysis of simulated data from Experiment 3, with results shown in Figure 7d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:02:08.711689Z"
+    },
+    {
+      "id": "44c02da4-7295-4685-bfb2-079e79b12d0b",
+      "content_id": "c20af57a-6aec-450e-a271-1d30cbce3829",
+      "claim_id": "C61",
+      "claim": "This intervention may be a powerful addition to existing intervention such as educating users on how to detect misinformation or prompting users to think about accuracy before they engage in the platform.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, this intervention may be a powerful addition to existing intervention such as educating users on how to detect misinformation (e.g., Lewandowsky and van der Linden, 2021; Maertens et al., 2021; Pilditch et al., 2022; Roozenbeek and van der Linden, 2019; Traberg et al., 2022) or prompting users to think about accuracy before they engage in the platform (e.g., Capraro and Celadin, 2022; Fazio, 2020; Pennycook and Rand, 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative claim about the potential complementarity of the intervention with existing approaches, supported by citations to relevant research.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:02:08.711689Z"
+    },
+    {
+      "id": "2af2d599-f479-4419-a0ae-56d1adc14795",
+      "content_id": "c20af57a-6aec-450e-a271-1d30cbce3829",
+      "claim_id": "C62",
+      "claim": "Over time, these incentives may help users build better habits online.",
+      "claim_type": "EXPLICIT",
+      "source": "Over time, these incentives may help users build better habits online (e.g., Anderson and Wood, 2021; Ceylan et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative claim about the long-term effects of the intervention, supported by citations to research on habit formation (Anderson and Wood, 2021; Ceylan et al., 2023).",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:02:08.711689Z"
+    },
+    {
+      "id": "b6c13740-6502-43ff-bbb2-a3c864e2ec29",
+      "content_id": "c20af57a-6aec-450e-a271-1d30cbce3829",
+      "claim_id": "C63",
+      "claim": "The advantage of studying simulated platforms is the ability to carefully isolate the effects of different factors.",
+      "claim_type": "EXPLICIT",
+      "source": "The advantage of this approach is the ability to carefully isolate the effects of different factors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the methodological advantages of the experimental approach.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:02:08.711689Z"
+    },
+    {
+      "id": "5fd7bfee-4aad-4494-a659-2893c80ab49b",
+      "content_id": "c20af57a-6aec-450e-a271-1d30cbce3829",
+      "claim_id": "C64",
+      "claim": "'Real world' networks are more complex and involve additional features which may interact with the tested factors.",
+      "claim_type": "EXPLICIT",
+      "source": "However, 'real world' networks are more complex and involve additional features which may interact with the tested factors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement acknowledging the limitations of the experimental approach.",
+      "evidence_type": "[\"KNOWLEDGE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:02:08.711689Z"
+    },
+    {
+      "id": "dcc85ec4-0303-4189-9d46-6dbd43315472",
+      "content_id": "c20af57a-6aec-450e-a271-1d30cbce3829",
+      "claim_id": "C65",
+      "claim": "Rather than removing existing forms of engagement, the authors suggest an addition that complements the existing system.",
+      "claim_type": "EXPLICIT",
+      "source": "Rather than removing existing forms of engagement, we suggest an addition that complements the existing system and could be adopted by social media platforms at no cost.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the proposed implementation of the intervention.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:02:08.711689Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "d0ef6767-778b-442f-8d40-dce3bafc81b5",
+      "content_id": "c20af57a-6aec-450e-a271-1d30cbce3829",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors establish the theoretical foundation that misinformation spreads on social media because the existing incentive structure dissociates social rewards from information veracity, despite users' ability to discern true from false content. This is based on prior literature showing that misinformation generates similar engagement as true information, users respond to social rewards via reinforcement learning, and people share misinformation even when they don't trust it.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C7 collectively establish the theoretical motivation through citations to published research. While these are claims about prior work rather than new findings, they appropriately cite relevant literature (C1-C7 all include citations) and form a coherent rationale for the intervention tested. The logic connecting user discernment ability (C4), equal engagement for true/false content (C5), reinforcement learning behavior (C6), and resulting misinformation sharing (C7) is sound.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:02:08.711689Z"
+    },
+    {
+      "id": "e81eae01-c64f-4892-8b93-79714100cadf",
+      "content_id": "c20af57a-6aec-450e-a271-1d30cbce3829",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Experiment 1 demonstrates that participants used 'trust' and 'distrust' reaction buttons more discerningly than 'like' and 'dislike' buttons when evaluating 100 news posts (50 true, 50 false). The effect held for both Democrats and Republicans, though Democrats showed greater overall discernment. Negative reactions were used more discerningly than positive reactions, and trust/distrust buttons were used more frequently than like/dislike buttons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C17 present statistically significant results from Experiment 1 (N=106) with appropriate statistical tests (ANOVAs, t-tests), effect sizes (partial \u03b7\u00b2), and p-values. The main finding (C9: F(1,104)=95.832, p<0.001, partial \u03b7\u00b2=0.48) shows a large effect. The results are internally consistent and replicated in Experiment 4 (C35). However, the study relies on posts from a single fact-checking website (C46), which may limit generalizability.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:02:08.711689Z"
+    },
+    {
+      "id": "3b58f869-b167-49da-9bad-65e99d3643fe",
+      "content_id": "c20af57a-6aec-450e-a271-1d30cbce3829",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Experiment 2 shows that participants who received 'trust' or 'distrust' feedback shared more true relative to false information compared to those receiving 'like'/'dislike' feedback or no feedback. This effect occurred across different content types without reducing overall engagement. Participants in trust/distrust conditions also showed improved belief accuracy.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C23 present statistically significant results from Experiment 2 (N=288) with appropriate between-subjects ANOVA analyses. The main effect (C18: F(1,281)=15.2, p<0.001, partial \u03b7\u00b2=0.051) is medium-sized and holds across content topics (C21). Critically, C54 shows no reduction in engagement, addressing a key practical concern. However, the feedback was not collected in real-time but taken from Experiment 1 (C47-C48), which is a methodological limitation involving deception that could affect ecological validity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:02:08.711689Z"
+    },
+    {
+      "id": "bafbf623-76f2-4850-8c0a-475381fe3c6a",
+      "content_id": "c20af57a-6aec-450e-a271-1d30cbce3829",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Experiment 3 demonstrates that combined 'trust & distrust' feedback increased discernment in sharing behavior compared to 'like & dislike' feedback or no feedback, while also increasing overall engagement. The effect was observed using posts selected to be politically balanced between Democrats and Republicans.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C26 present statistically significant results from Experiment 3 (N=391) with appropriate analyses. The main effect (C24: F(1,385)=11.009, p<0.001, partial \u03b7\u00b2=0.054) is medium-sized. Importantly, C25 shows increased engagement (F(1,385)=8.7692, p<0.001), supporting the inference in C26 that the intervention improves discernment without reducing engagement. The use of politically balanced posts (C49) strengthens the design by controlling for partisan bias, though this also limits the stimulus set to only 40 posts.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:02:08.711689Z"
+    },
+    {
+      "id": "1e081920-98b4-4d02-bf99-a9f524815dd2",
+      "content_id": "c20af57a-6aec-450e-a271-1d30cbce3829",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Drift-diffusion modeling reveals that the mechanism underlying improved discernment in trust/distrust environments is an increased drift rate, indicating participants weighted evidence consistent with veracity-promoting responses more heavily. This was demonstrated through both experimental data and successful model recovery with simulated data.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C30 and C55-C60 present computational modeling results using hierarchical Bayesian drift-diffusion models with appropriate convergence diagnostics (Gelman-Rubin statistic <1.1). The key finding is credible differences in drift rate between conditions (C28-C29: 95% HDI excludes zero), while other parameters showed no consistent differences (C55-C56). Model validation through parameter recovery (C57) and reproduction of behavioral patterns with simulated data (C58-C60) strengthens confidence in the results. However, the interpretation that drift rate specifically reflects weighting of veracity-consistent evidence (C30) is an inference that, while reasonable, goes beyond what the model parameters directly measure.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:02:08.711689Z"
+    },
+    {
+      "id": "d99f1236-54ac-4e6a-a7f0-829097305a47",
+      "content_id": "c20af57a-6aec-450e-a271-1d30cbce3829",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The authors conclude that their novel incentive structure significantly reduced misinformation spread through a mechanism where users shared more true content to obtain trust rewards and avoid distrust punishments. The effects were replicated with large to medium effect sizes, and computational modeling pinpointed the mechanism as increased weighting of accuracy-consistent evidence.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C37 are summary claims integrating results from all experiments. C31 and C34 are supported by the experimental findings (C18, C24, C25, C26). C35 is supported by successful replications in Experiments 4-6. C36-C37 are supported by the drift-diffusion modeling results (C28-C30). However, C33 involves an inference about user motivation that, while plausible given the reinforcement learning framework, is not directly tested. The claim of 'significant reduction' is supported statistically but the practical significance in real-world settings remains uncertain given the simulated platform design.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:02:08.711689Z"
+    },
+    {
+      "id": "d9777d44-9615-48fb-88e0-6f432d15a21d",
+      "content_id": "c20af57a-6aec-450e-a271-1d30cbce3829",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The intervention's effects held across diverse topics and participants, and feedback not only improved sharing discernment but may also have increased belief accuracy, though this latter effect was inconsistent across experiments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "C38 is supported by the experimental design including various topics (C45) and analysis showing effects across topics (C21). However, C39-C40 regarding belief accuracy are uncertain because the effect was observed in only 3 of 4 experiments (Experiments 2, 5, 6 but not 3), as explicitly noted in the manuscript. This inconsistency suggests the belief accuracy effect may be less robust than the sharing behavior effect, and the authors appropriately hedge with 'may also increase' language. Additional experiments or analysis would be needed to definitively establish this secondary effect.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:02:08.711689Z"
+    },
+    {
+      "id": "bd22b751-21d9-4c5d-8296-9dcffd4473b8",
+      "content_id": "c20af57a-6aec-450e-a271-1d30cbce3829",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The authors speculate that the intervention could be adopted by social media platforms at no cost, potentially reducing violence, vaccine hesitancy, and political polarization while complementing existing interventions. They acknowledge limitations of simulated platforms compared to real-world complexity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C32, C41, C61-C62, and C65 are explicitly speculative about implementation and broader impacts. While the experimental results support the mechanism in controlled settings, these claims about real-world adoption, cost, and societal impacts (C41: reducing violence, vaccine hesitancy, polarization) go far beyond what the data demonstrate. C63-C64 appropriately acknowledge the limitation that real platforms are more complex. These are reasonable speculations for a discussion section but lack empirical support and would require field studies on actual platforms to validate.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:02:08.711689Z"
+    },
+    {
+      "id": "ad3bbc86-803d-4d52-b966-4eb69e145c34",
+      "content_id": "c20af57a-6aec-450e-a271-1d30cbce3829",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The experiments used appropriate sample sizes based on power calculations, included politically balanced samples of Democrats and Republicans, and used posts from Politifact covering diverse topics. Experiment 2 used pre-recorded feedback from Experiment 1 rather than real-time feedback, though participants believed it was real-time.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C49 describe methodological details that are factually stated and internally consistent. Sample sizes (C42-C44) were determined by power calculations. The use of Politifact posts (C46) and diverse topics (C45) is appropriate, though reliance on a single fact-checking source is a limitation. The deception regarding real-time feedback (C47-C48) is a significant methodological concern for ecological validity, though it was necessary for experimental control. The selection of politically balanced posts in Experiment 3 (C49) strengthens internal validity but limits generalizability.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:02:08.711689Z"
+    },
+    {
+      "id": "91878d9c-87c6-4ef8-b3b5-a446a2160eb7",
+      "content_id": "c20af57a-6aec-450e-a271-1d30cbce3829",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The authors provide theoretical explanations for observed patterns, including that reward reinforces action while punishment reinforces inaction, that sharing is intrinsically rewarding, and that participants were sensitive to per-post feedback rather than total feedback.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "C50-C51 cite relevant prior research to explain theoretical mechanisms. C52-C53 are inferences about participant behavior that are reasonable given the data (participants didn't simply skip all posts or share all posts to optimize total feedback), though these specific mechanisms weren't directly tested. These claims provide plausible explanations for the observed patterns and are appropriately hedged as inferences rather than direct findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:02:08.711689Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "ae47d6d0-4fbc-47d3-ad31-45a9eb7ccde4",
+      "result_id": "d0ef6767-778b-442f-8d40-dce3bafc81b5"
+    },
+    {
+      "claim_id": "121fad0c-680f-4869-8904-f5ff88670acb",
+      "result_id": "d0ef6767-778b-442f-8d40-dce3bafc81b5"
+    },
+    {
+      "claim_id": "4d3a6d90-4be8-4580-bea6-0dd3c7e29ce9",
+      "result_id": "d0ef6767-778b-442f-8d40-dce3bafc81b5"
+    },
+    {
+      "claim_id": "0efd22e1-fb35-4eda-815c-56619725302a",
+      "result_id": "d0ef6767-778b-442f-8d40-dce3bafc81b5"
+    },
+    {
+      "claim_id": "afbe85b0-b78a-4946-a5de-19121be458d1",
+      "result_id": "d0ef6767-778b-442f-8d40-dce3bafc81b5"
+    },
+    {
+      "claim_id": "61485834-54ff-44de-9afa-fe450e36f3bf",
+      "result_id": "d0ef6767-778b-442f-8d40-dce3bafc81b5"
+    },
+    {
+      "claim_id": "21cbcadc-13de-4f82-833d-f2efea9ec238",
+      "result_id": "d0ef6767-778b-442f-8d40-dce3bafc81b5"
+    },
+    {
+      "claim_id": "af417418-260d-4e8b-a13c-954dbb8dffe1",
+      "result_id": "e81eae01-c64f-4892-8b93-79714100cadf"
+    },
+    {
+      "claim_id": "fcdada55-18ff-45e8-97f1-6abdef1d6ed3",
+      "result_id": "e81eae01-c64f-4892-8b93-79714100cadf"
+    },
+    {
+      "claim_id": "74f739c1-cae7-4daa-abd6-ab0eeab9dc42",
+      "result_id": "e81eae01-c64f-4892-8b93-79714100cadf"
+    },
+    {
+      "claim_id": "5beb0203-fc2b-4def-b8dd-493ba7dc2bd4",
+      "result_id": "e81eae01-c64f-4892-8b93-79714100cadf"
+    },
+    {
+      "claim_id": "c2642bb0-440d-4f07-bb2e-8127f14c3afa",
+      "result_id": "e81eae01-c64f-4892-8b93-79714100cadf"
+    },
+    {
+      "claim_id": "dce7e177-9721-41ce-8ec1-42e0eb8e4fc1",
+      "result_id": "e81eae01-c64f-4892-8b93-79714100cadf"
+    },
+    {
+      "claim_id": "8f9add5d-ec54-4acd-aae3-ff434a17f64e",
+      "result_id": "e81eae01-c64f-4892-8b93-79714100cadf"
+    },
+    {
+      "claim_id": "f26bd1ce-6363-408f-8c56-d020aa856776",
+      "result_id": "e81eae01-c64f-4892-8b93-79714100cadf"
+    },
+    {
+      "claim_id": "08168a59-0f4d-4592-bc8f-f83a9b96c5cd",
+      "result_id": "e81eae01-c64f-4892-8b93-79714100cadf"
+    },
+    {
+      "claim_id": "e0b70532-1b6d-411b-8696-9cdb97a26d31",
+      "result_id": "e81eae01-c64f-4892-8b93-79714100cadf"
+    },
+    {
+      "claim_id": "e05e3f3d-e80c-4dac-b9fb-54e40f38c5ca",
+      "result_id": "3b58f869-b167-49da-9bad-65e99d3643fe"
+    },
+    {
+      "claim_id": "17a3335a-c426-4172-8b9f-2cfcfc85f49a",
+      "result_id": "3b58f869-b167-49da-9bad-65e99d3643fe"
+    },
+    {
+      "claim_id": "3c3d3f92-e4c3-475f-b75f-e872d1899848",
+      "result_id": "3b58f869-b167-49da-9bad-65e99d3643fe"
+    },
+    {
+      "claim_id": "9c7692b4-4d68-4f3c-92e2-af1e0f36824e",
+      "result_id": "3b58f869-b167-49da-9bad-65e99d3643fe"
+    },
+    {
+      "claim_id": "4a202f67-8f9c-4a5f-a3b6-8ad943546c8d",
+      "result_id": "3b58f869-b167-49da-9bad-65e99d3643fe"
+    },
+    {
+      "claim_id": "bc444f41-aa7c-45e2-947b-5becbbbea279",
+      "result_id": "3b58f869-b167-49da-9bad-65e99d3643fe"
+    },
+    {
+      "claim_id": "b4d8dea1-91fa-43d7-81f4-157bd15f2769",
+      "result_id": "3b58f869-b167-49da-9bad-65e99d3643fe"
+    },
+    {
+      "claim_id": "7c62c67f-6f86-4041-9a4d-694e07660aa4",
+      "result_id": "bafbf623-76f2-4850-8c0a-475381fe3c6a"
+    },
+    {
+      "claim_id": "ea01eb8a-5935-4dd0-8a58-0998577c265a",
+      "result_id": "bafbf623-76f2-4850-8c0a-475381fe3c6a"
+    },
+    {
+      "claim_id": "910d3a06-7431-4fb4-9859-12b12f04a0e6",
+      "result_id": "bafbf623-76f2-4850-8c0a-475381fe3c6a"
+    },
+    {
+      "claim_id": "551dffb0-2969-4f43-ae30-05e07db34149",
+      "result_id": "bafbf623-76f2-4850-8c0a-475381fe3c6a"
+    },
+    {
+      "claim_id": "7321e773-4031-47a6-8afb-9ec4e1825061",
+      "result_id": "1e081920-98b4-4d02-bf99-a9f524815dd2"
+    },
+    {
+      "claim_id": "73a26a4c-4310-4439-8e64-002b794482e2",
+      "result_id": "1e081920-98b4-4d02-bf99-a9f524815dd2"
+    },
+    {
+      "claim_id": "87416d2f-ae1e-4ba5-9c8e-46ed739d3e14",
+      "result_id": "1e081920-98b4-4d02-bf99-a9f524815dd2"
+    },
+    {
+      "claim_id": "8976025e-2933-4819-96e8-cc387693f06f",
+      "result_id": "1e081920-98b4-4d02-bf99-a9f524815dd2"
+    },
+    {
+      "claim_id": "be6d1b44-42fc-46bd-a42f-5901a550272e",
+      "result_id": "1e081920-98b4-4d02-bf99-a9f524815dd2"
+    },
+    {
+      "claim_id": "db79873c-15e3-4465-80de-436031dcf257",
+      "result_id": "1e081920-98b4-4d02-bf99-a9f524815dd2"
+    },
+    {
+      "claim_id": "3a9bfcf7-312e-482c-86bb-c1e909712c39",
+      "result_id": "1e081920-98b4-4d02-bf99-a9f524815dd2"
+    },
+    {
+      "claim_id": "58a1214d-3d94-4fc5-a04a-41fccd78952c",
+      "result_id": "1e081920-98b4-4d02-bf99-a9f524815dd2"
+    },
+    {
+      "claim_id": "28c59703-ff85-4dd8-bbf1-1bc796d9b1de",
+      "result_id": "1e081920-98b4-4d02-bf99-a9f524815dd2"
+    },
+    {
+      "claim_id": "a6e28913-c230-441a-98b2-1252d6dce994",
+      "result_id": "d99f1236-54ac-4e6a-a7f0-829097305a47"
+    },
+    {
+      "claim_id": "eba0aaaa-4662-4d8b-83ab-763bc61c7a8e",
+      "result_id": "d99f1236-54ac-4e6a-a7f0-829097305a47"
+    },
+    {
+      "claim_id": "3594663f-42d9-4749-a022-64372686ee05",
+      "result_id": "d99f1236-54ac-4e6a-a7f0-829097305a47"
+    },
+    {
+      "claim_id": "b2a0cc95-9990-4930-a30c-36365ed1a1a3",
+      "result_id": "d99f1236-54ac-4e6a-a7f0-829097305a47"
+    },
+    {
+      "claim_id": "e5b6df59-f638-4ba3-aa37-fb54b1b74dab",
+      "result_id": "d99f1236-54ac-4e6a-a7f0-829097305a47"
+    },
+    {
+      "claim_id": "223123cc-0e47-4592-937e-a964923c7784",
+      "result_id": "d99f1236-54ac-4e6a-a7f0-829097305a47"
+    },
+    {
+      "claim_id": "0d07f83b-3caf-47e9-b680-4e44804d3931",
+      "result_id": "d9777d44-9615-48fb-88e0-6f432d15a21d"
+    },
+    {
+      "claim_id": "1deaa246-32b1-40d5-a807-4cfacd54f790",
+      "result_id": "d9777d44-9615-48fb-88e0-6f432d15a21d"
+    },
+    {
+      "claim_id": "ef9d209b-045b-4376-ae1c-5e600299866f",
+      "result_id": "d9777d44-9615-48fb-88e0-6f432d15a21d"
+    },
+    {
+      "claim_id": "7d70c514-7fb5-4330-a637-32bebf309545",
+      "result_id": "bd22b751-21d9-4c5d-8296-9dcffd4473b8"
+    },
+    {
+      "claim_id": "da8d0124-ea69-4f22-a1e7-43f9c466550e",
+      "result_id": "bd22b751-21d9-4c5d-8296-9dcffd4473b8"
+    },
+    {
+      "claim_id": "44c02da4-7295-4685-bfb2-079e79b12d0b",
+      "result_id": "bd22b751-21d9-4c5d-8296-9dcffd4473b8"
+    },
+    {
+      "claim_id": "2af2d599-f479-4419-a0ae-56d1adc14795",
+      "result_id": "bd22b751-21d9-4c5d-8296-9dcffd4473b8"
+    },
+    {
+      "claim_id": "b6c13740-6502-43ff-bbb2-a3c864e2ec29",
+      "result_id": "bd22b751-21d9-4c5d-8296-9dcffd4473b8"
+    },
+    {
+      "claim_id": "5fd7bfee-4aad-4494-a659-2893c80ab49b",
+      "result_id": "bd22b751-21d9-4c5d-8296-9dcffd4473b8"
+    },
+    {
+      "claim_id": "dcc85ec4-0303-4189-9d46-6dbd43315472",
+      "result_id": "bd22b751-21d9-4c5d-8296-9dcffd4473b8"
+    },
+    {
+      "claim_id": "d0df51e7-9712-497d-a7be-64fbc1913cf3",
+      "result_id": "ad3bbc86-803d-4d52-b966-4eb69e145c34"
+    },
+    {
+      "claim_id": "0644f770-3462-43a4-8de0-fd924897b1e6",
+      "result_id": "ad3bbc86-803d-4d52-b966-4eb69e145c34"
+    },
+    {
+      "claim_id": "7c3a20df-242c-489e-9b48-40784eba599e",
+      "result_id": "ad3bbc86-803d-4d52-b966-4eb69e145c34"
+    },
+    {
+      "claim_id": "f82dec8e-2c06-4d87-b93a-a0212a697324",
+      "result_id": "ad3bbc86-803d-4d52-b966-4eb69e145c34"
+    },
+    {
+      "claim_id": "f91f15a2-b147-46b5-adf8-c75fb2206b7f",
+      "result_id": "ad3bbc86-803d-4d52-b966-4eb69e145c34"
+    },
+    {
+      "claim_id": "b82480a8-11a9-4d51-beab-ab50630cafa1",
+      "result_id": "ad3bbc86-803d-4d52-b966-4eb69e145c34"
+    },
+    {
+      "claim_id": "94f7aa3c-0e63-4aa1-94d5-5adb9aca05e8",
+      "result_id": "ad3bbc86-803d-4d52-b966-4eb69e145c34"
+    },
+    {
+      "claim_id": "31c9b911-12f0-4e67-9d5e-f7c0de99447b",
+      "result_id": "ad3bbc86-803d-4d52-b966-4eb69e145c34"
+    },
+    {
+      "claim_id": "93b97945-12fd-4cce-959d-07ed665a1cc9",
+      "result_id": "91878d9c-87c6-4ef8-b3b5-a446a2160eb7"
+    },
+    {
+      "claim_id": "3b85383c-2c12-4114-b5b7-08cd5bec9e4c",
+      "result_id": "91878d9c-87c6-4ef8-b3b5-a446a2160eb7"
+    },
+    {
+      "claim_id": "0fd5c72c-a16a-4923-9317-93b6ce04803d",
+      "result_id": "91878d9c-87c6-4ef8-b3b5-a446a2160eb7"
+    },
+    {
+      "claim_id": "240365a9-7240-4fac-b67c-64076f0652b4",
+      "result_id": "91878d9c-87c6-4ef8-b3b5-a446a2160eb7"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,297 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "The authors developed and validated a computational model of L2/3 V1 pyramidal neurons based on prior work (Park et al., 2019), implemented in NEURON, with electrophysiological properties validated against experimental data and specific modifications to synaptic timing to reflect feedback inputs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C21-C28 collectively describe the model development and validation. The model is based on established prior work (C21), uses standard simulation software (C22), has been validated against experimental data (C23), and includes biologically motivated parameter choices (C24). The computational infrastructure and simulation parameters are clearly specified (C26-C28), supporting reproducibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Two-photon calcium imaging experiments were performed on 11 neurons from 2 wild-type C57BL/6 mice with appropriate ethical approval.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C31 describe the experimental methodology with appropriate ethical oversight (C29), standard animal subjects (C30), and explicit sample sizes (C31). However, the very small sample size (2 mice, 11 neurons) is a limitation for generalizability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "The model exhibits diverse dendritic integration properties with varying spiking thresholds and non-linear input-output functions across apical and basal dendrites, which correlate with morphological features like segment volume and electrotonic length.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C39 describe model characterization with quantitative data (C34) and figure support (C32, C33, C36). The findings of non-linear integration (C36) align with cited experimental observations. The correlation with morphological features (C39) provides mechanistic insight, though this is model-derived rather than experimentally validated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C40",
+      "C76"
+    ],
+    "result": "The model's spontaneous activity patterns adequately reproduce experimental two-photon calcium imaging data from L2/3 V1 pyramidal neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40 and C76 describe model validation against experimental data with figure support (Figure 2\u2014figure supplement 1E, F). This validation is important for establishing model credibility, though the comparison relies on converting voltage traces to approximate calcium signals, which introduces methodological uncertainty.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C41",
+      "C42"
+    ],
+    "result": "The model neuron exhibits robust orientation tuning (OSI 0.77 \u00b1 0.11, tuning width 44 \u00b1 9.17\u00b0) that persists after apical tree ablation, consistent with prior experimental findings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C42 demonstrate that the model reproduces key experimental observations from Park et al., 2019, including orientation tuning metrics (C41) and robustness to apical ablation (C42). The quantitative agreement with prior work and explicit statistical criteria (OSI >0.2, tuning width <80\u00b0) support these findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C77"
+    ],
+    "result": "The model neuron's orientation preference deviates from linear summation of synaptic inputs, exhibiting bias toward either apical or basal tree preferences depending on synaptic distribution, indicating non-linear integration of inputs from the two dendritic trees.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C48 and C77 describe systematic exploration of dendritic disparity effects with multiple synaptic distribution models. The deviation from linear expectation (C43, C47) and dependence on synaptic distribution (C45, C46, C48) are well-documented. However, the model fails to maintain adequate tuning beyond 50\u00b0 disparity (C44), which limits the parameter space explored.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C78"
+    ],
+    "result": "The majority of somatic spikes (76.51 \u00b1 10.21%) are dependent on apical sodium conductance, regardless of whether activity is stimulus-driven or background-driven, and this dependence is not significantly affected by the distribution of background synapses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C52 and C78 present quantitative results from the ionic intervention protocol with clear statistical support and multiple control conditions. The finding is counterintuitive given that feedforward input reaches the basal tree (C52), but the consistency across conditions (C50, C51) strengthens the conclusion. Sample sizes are provided (N=131, 25, 156, 42 spikes).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Removal of stimulus-driven input from either apical or basal trees reduces but does not abolish orientation tuning, with basal input removal having a larger effect. However, reducing basal synaptic weights by 50% completely abolishes tuning, indicating that basal synaptic input is critical for orientation tuning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C56 describe systematic manipulation experiments with statistical tests (p-values provided) and figure support (Figure 4A, B). The differential effects of complete removal versus weight reduction provide mechanistic insight. The conclusion about basal tree criticality (C56) is well-supported by the data, though it appears to contradict the apical dominance in spike generation (C49).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C79",
+      "C80"
+    ],
+    "result": "Nullification of sodium conductance in the apical tree completely abolishes orientation tuning, while the same manipulation in the basal tree has no significant impact, indicating that apical sodium channels are critical for orientation tuning while basal sodium channels are not.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C58 and C79-C80 present clear experimental results with statistical support (p \u2248 0.24125 for basal manipulation) and figure references (Figure 4C). This finding is consistent with the apical dominance in spike generation (C49) and provides a mechanistic explanation for orientation tuning.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Sensitivity analysis shows that 5% reduction in apical sodium conductance maintains apical dominance in spike generation but reduces firing rate, while 10% reduction causes loss of tuning with either apical or basal sodium elimination and shifts spike generation toward more balanced apical-basal contributions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C62 describe systematic sensitivity analysis with quantitative results (spike counts: 885, 345, 190) and statistical tests. The analysis demonstrates robustness of the main findings to moderate parameter variations (5%) but also identifies a threshold (10%) where the system behavior changes, which is important for understanding model limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C81"
+    ],
+    "result": "Apical sodium channels are necessary for both spike generation and orientation tuning, while AMPA and NMDA activity is necessary in both apical and basal trees for orientation tuning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C64 and C81 synthesize results from multiple experiments (Figures 3, 4A, 4B, 4C) to draw broader conclusions about the differential roles of ionic versus synaptic mechanisms. The conclusions are well-supported by the experimental manipulations, though they represent model predictions rather than experimentally validated findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C82"
+    ],
+    "result": "The apical tree exerts its influence on somatic spiking primarily via sodium-mediated spiking, while the basal tree primarily utilizes AMPA- and NMDA-driven depolarizations rather than sodium spikes, due to higher sodium spiking thresholds in basal dendrites for similar electrotonic lengths.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C66 and C82 provide mechanistic interpretation of the experimental results, linking the differential contributions to morphological and biophysical properties. The inference is logical and consistent with the data, though it represents a model-based hypothesis rather than direct experimental evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "EPSP attenuation is greater in apical versus basal dendritic segments of similar morphology (length, diameter, volume), but this difference disappears when normalized by distance, path volume, or electrotonic length. Sodium spiking thresholds are lower in apical dendrites for similar electrotonic length but higher for similar volume, likely due to current sink effects from soma proximity affecting basal dendrites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C74 present systematic analysis of morphological and electrophysiological relationships with statistical tests (p-values provided) and figure support (Figure 5). The findings provide mechanistic explanation for the differential contributions of apical and basal trees. The analysis is thorough, though it relies on model properties rather than experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "The model predicts a synergistic effect between apical and basal trees, where somatic spikes are reliably produced only when apical dendritic sodium spikes coincide with basal synaptically driven depolarizations and/or spikes, a mechanism termed 'Bimodal Input Coincidence'.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C85 synthesize the major findings into a coherent mechanistic model with figure support (Figure 6). The prediction is well-supported by the experimental manipulations showing that both apical sodium activity and basal synaptic activity are necessary. However, this represents a model-based prediction requiring experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C90",
+      "C91"
+    ],
+    "result": "The authors propose that L2/3 V1 pyramidal cells perform salient feature extraction compatible with predictive coding, where basal trees represent visual input as depolarizations and apical trees receive predictive/attentional signals that generate dendritic spikes to 'highlight' relevant features.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C86-C87 and C90-C91 present speculative interpretations of the model results in the context of predictive coding theory. While the proposed mechanism is consistent with the model findings and known connectivity patterns, it represents a hypothesis rather than a tested prediction. The claims are explicitly marked as speculation (evidence_type includes SPECULATION), and experimental validation would be required to support this interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C89"
+    ],
+    "result": "The apparent contradiction between apical tree importance for tuning and robustness to ablation is resolved by considering homeostatic alterations that counteract increased input resistance following apical tree loss.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C89 provides a mechanistic explanation for reconciling seemingly contradictory findings, supported by citation to Park et al., 2019. The explanation is plausible and consistent with known homeostatic mechanisms, though it represents an assumption rather than a directly tested hypothesis in this study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "The authors acknowledge multiple limitations including: findings are bound to the specific morphology simulated, lack of data on dendritic signal attenuation and ion channel distributions, simplified network complexity, absence of in vivo-like input patterns, simplified inhibitory inputs, and lack of retinotopically shifted inhibitory inputs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C98 provide transparent discussion of study limitations. The authors appropriately acknowledge that findings may not generalize to other morphologies (C92), though they note correlations with specific features that could enable inference (C93). The limitations regarding simplified inputs (C95-C98) are significant but common in computational modeling studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "The manuscript provides extensive background on pyramidal neuron morphology, connectivity, and functional properties in L2/3 V1, drawing from established neuroscience knowledge and prior experimental and modeling studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C6-C20, and C99-C101 provide background context supported by appropriate citations. These claims establish the scientific foundation for the study and are well-supported by the literature. They represent established knowledge rather than novel findings from this work.",
+    "result_type": "MINOR"
+  }
+]

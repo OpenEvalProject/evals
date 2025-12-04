@@ -1,0 +1,306 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C7"
+    ],
+    "result": "Full-length SsrB exhibits a 32-fold increase in DNA-binding affinity at acid pH (6.1) compared to neutral pH (7.4) at the SPI-2 promoter sseI, with highly cooperative binding at both pH values (Hill coefficients of 8\u00b11 and 12\u00b16, respectively).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C13 provide quantitative single-molecule unzipping measurements showing KD values of 148\u00b12 nM at pH 7.4 and 4.6\u00b10.2 nM at pH 6.1, yielding a ~32-fold affinity increase. Claim C7 documents high cooperativity. The data are internally consistent, include error estimates, and are supported by multiple independent measurements (3-5 replicates per concentration, with additional error analysis in Figure 1\u2014figure supplement 1).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C5",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C60",
+      "C61"
+    ],
+    "result": "The isolated C-terminal DNA-binding domain of SsrB (SsrBc) shows reduced DNA-binding affinity (4-fold lower than full-length at neutral pH), reduced cooperativity, only a 4-fold pH-dependent increase in affinity, and fails to support acid-stimulated SPI-2 transcriptional activity or intracellular survival in vitro and in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C22 provide comprehensive evidence from single-molecule binding assays (C14-C17), \u03b2-galactosidase transcriptional assays (C18-C20), and HeLa cell infection experiments (C21-C22). The data consistently show that SsrBc lacks the robust pH sensitivity of full-length SsrB. Multiple experimental approaches converge on the same conclusion, with appropriate controls (vector-only) and statistical comparisons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Substitution of non-conserved histidine residues (His28, His34, His72) in the receiver domain, either singly or in combination, does not affect the acid-stimulated increase in SsrB transcriptional activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C31 report that single, double, and triple histidine mutants at positions 28, 34, and 72 all retain acid-stimulated activity comparable to wild-type (4.2- to 8.1-fold increases vs. 5-6-fold for WT). The data are supported by \u03b2-galactosidase assays with appropriate replicates (n=3) and statistical comparisons showing no significant differences (p>0.05). This negative result effectively narrows the search for the pH-sensing residue.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C6"
+    ],
+    "result": "His12, a conserved residue in the receiver domain located near the active site, is essential for acid-stimulated DNA binding and transcriptional activity of SsrB. The H12Q substitution retains full activity at neutral pH but eliminates the pH-dependent increase in DNA-binding affinity and cooperativity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C40 provide structural context (C32-C33), transcriptional activity data (C34-C37), and single-molecule binding measurements (C38-C40) demonstrating that His12 is critical for pH sensing. The H12Q mutant is particularly informative: it retains 99% activity at pH 7.4 but shows no increase at pH 5.6 (0.9-fold), and its DNA-binding affinity remains unchanged between pH 7.4 (154\u00b13 nM) and pH 6.1 (123\u00b113 nM). This loss-of-function phenotype specifically for pH sensing, while maintaining baseline activity, strongly supports the claim that His12 confers pH sensitivity allosterically.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "The aromatic nature of the His12 imidazole ring contributes to pH sensing in SsrB. Lysine substitution (H12K) reduces both activity and pH sensitivity, while aromatic substitutions (H12Y, H12F) reduce activity but retain acid stimulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C47 present a systematic structure-function analysis. H12K shows reduced activity (34%) and minimal pH response (2.7-fold), while H12Y and H12F show reduced activity (30% and 24%) but retain pH sensitivity (6.9- and 6.7-fold increases). This differential effect supports the interpretation that the aromatic character of His12 is important for pH sensing. However, the interpretation is somewhat limited by the possibility that lysine substitution causes steric hindrance (acknowledged by the authors in C70), and the lack of other basic amino acid substitutions (e.g., arginine) to fully test the protonation hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C10",
+      "C93"
+    ],
+    "result": "His12 substitutions (H12Q, H12Y) render Salmonella significantly less virulent in cell culture models, with reduced SPI-2 transcriptional activity and intracellular survival in HeLa cells and RAW macrophages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C52 provide in vivo validation of the His12 pH-sensing mechanism. In HeLa cells, H12Q and H12Y mutants show 62% and 58% PsifA-lacZ activity at 8 hpi, and 33% and 40% survival at 16 hpi compared to wild-type. In RAW macrophages, H12Q shows only 2-fold replication increase vs. 13-fold for wild-type. The data include appropriate controls (\u0394ssrB) and statistical significance (p<0.001 to p<0.0001, n=3). The consistency across two cell types and multiple readouts (transcription, survival, replication) strongly supports the conclusion that His12-mediated pH sensing is critical for virulence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C8",
+      "C9",
+      "C71",
+      "C72"
+    ],
+    "result": "His12 influences SsrB phosphorylation: the H12Q substitution requires higher phosphoramidate concentrations for maximal phosphorylation at neutral pH (K0.5 = 7.1 mM vs. 2.9 mM for wild-type) and abolishes pH-dependent differences in phosphorylation kinetics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C57 present HPLC-based phosphorylation assays showing that H12Q has reduced phosphorylation efficiency at neutral pH and loses pH-dependent modulation (Kobs values of 0.20 and 0.17 min\u207b\u00b9 at pH 7.4 and 6.1, respectively, vs. 0.62 and 0.19 min\u207b\u00b9 for wild-type). However, the phosphorylation experiments use only n=1 or n=2 replicates (stated in Figure 4 legend), which is insufficient for robust statistical conclusions. Additionally, the use of the small molecule phosphodonor PA rather than the cognate kinase SsrA limits physiological relevance. Despite these limitations, the data consistently show that His12 affects phosphorylation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C85"
+    ],
+    "result": "The SsrB receiver domain is required for highly cooperative DNA binding at the SPI-2 promoter. SsrBc shows substantially lower cooperativity (Hill coefficient 3\u00b11) than full-length SsrB (8\u00b11), and His12 substitution reduces cooperativity at acid pH, suggesting His12 is required for SsrB oligomerization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C82 document reduced cooperativity in SsrBc and H12Q mutants based on Hill coefficient measurements from single-molecule binding assays. The interpretation that the receiver domain and His12 promote higher-order oligomerization is supported by the binding data and is consistent with structural models (C83-C85). However, the Hill coefficient for SsrB at pH 6.1 has a large error (12\u00b16), which introduces uncertainty. The conclusion is further supported by prior work showing SsrBc can form dimers (C79, citation to Carroll et al., 2009), but the specific oligomeric state responsible for high cooperativity is not directly determined.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Structural modeling suggests His12 can form hydrogen bonds with Asp11 and \u03c0-cation interactions with Lys106, which may contribute to pH sensing and activity modulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C66-C70 are based on computational predictions (i-TASSER and AlphaFold) rather than experimental structures. While the models provide plausible mechanistic hypotheses (e.g., H-bond maintenance in H12Q explaining retained activity at neutral pH, \u03c0-cation interactions in aromatic substitutions explaining retained pH sensitivity), these remain speculative without experimental validation. The authors appropriately acknowledge this uncertainty by using language like 'could potentially' and 'may interact.' Experimental structural data (e.g., crystal structures or NMR) would be needed to confirm these interactions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Based on crystal structures of related response regulators (RcsB, VraR, LiaR), the conserved His12 can participate in \u03c0-cation interactions with Mg\u00b2\u207a in the phosphorylated state, and changes in His12 rotameric state could modulate phosphorylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C75-C76 accurately cite structural data from other response regulators showing His12 orientation changes upon phosphorylation. However, claim C77 extrapolates this to SsrB without direct structural evidence. While the hypothesis is reasonable and consistent with the phosphorylation data (C53-C57), it remains speculative. The authors appropriately use cautious language ('could modulate'), but experimental validation (e.g., metal-binding assays, structural studies of SsrB) is needed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Structural modeling and comparison to RcsB crystal structures suggest His12 is present at the SsrB dimer interface and may interact with residues in the DNA-binding domain (e.g., Glu172) to allosterically modulate DNA-binding affinity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C83-C89 combine AlphaFold predictions for SsrB with crystal structure data from RcsB to propose a mechanism for allosteric regulation. While the RcsB hexamer structure (C86-C88) provides a useful template, the extrapolation to SsrB (C89) is speculative. The authors acknowledge this by stating 'may potentially interact.' The cooperativity data (C82) support a role for His12 in oligomerization, but the specific molecular interactions and oligomeric state (dimer vs. hexamer) are not experimentally determined for SsrB.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "SsrB has the highest isoelectric point (7.12) and a high number of histidine residues (9) among NarL/FixJ response regulators, and the pKa of histidine (~6.45) is within the physiological pH range relevant for SPI-2 activation (pH 6.45-6.7).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C27 present comparative sequence analysis (Table 1) and cite established biochemical knowledge about histidine pKa and Salmonella cytoplasmic pH thresholds. The data are straightforward and well-supported by citations. This analysis provides context for why histidine residues were investigated as pH sensors, though it does not directly demonstrate pH sensing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "SsrB shows a 32-fold increase in affinity for the SPI-2 promoter sseI at acid pH, compared to a previously reported 5-fold increase at the non-SPI-2 promoter csgD, suggesting selective activation of SPI-2 transcription within the macrophage vacuole.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C62 accurately cites prior work (Liew et al., 2019), and C63 reports the current study's finding of a 32-fold increase at sseI. The comparison is valid and the interpretation (C65) that this differential affinity enables selective SPI-2 activation is reasonable, though it remains somewhat speculative without direct demonstration that non-SPI-2 promoters are not activated to the same extent in vivo. The degenerate nature of the SsrB binding site (C64) is well-established by citations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C58"
+    ],
+    "result": "The receiver domain of SsrB senses a reduction in pH to allosterically increase DNA-binding affinity of the C-terminal effector domain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C58 is a summary statement supported by the collective evidence from claims C5-C22 (showing SsrBc is insufficient for pH sensing), C32-C40 (identifying His12 in the receiver domain as the pH sensor), and C38-C40 (demonstrating that His12 substitution eliminates pH-dependent affinity changes). The use of 'allosterically' is appropriate given that His12 is in the receiver domain and affects DNA binding by the C-terminal domain.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C74",
+      "C92"
+    ],
+    "result": "This work demonstrates for the first time the influence of the conserved His12 residue on pH-dependent phosphorylation and oligomerization of a response regulator, and establishes its critical role in Salmonella virulence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74 and C92 are summary statements supported by the phosphorylation data (C53-C57), cooperativity data (C78-C82), and virulence data (C48-C52). While prior work showed His12 affects phosphorylation in other RRs (C73), the pH-dependence is novel. The claim of novelty is appropriate, though the phosphorylation data have limited replicates (n=1-2).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C94"
+    ],
+    "result": "Preventing pH switching by targeting His12 represents a novel strategy for controlling Salmonella pathogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C94 is a forward-looking statement about therapeutic potential. While the data clearly show that His12 substitution renders Salmonella avirulent (C48-C52, C93), the claim that this represents a 'novel strategy for controlling Salmonella pathogenesis' is speculative. No drug development, target validation in animal models, or assessment of potential resistance mechanisms is presented. This is appropriately framed as a concluding speculation rather than a demonstrated result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "Background context on SsrB function, SPI-2 regulation, and the role of pH in Salmonella pathogenesis, based on prior literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4 and C95-C108 provide background information from the Introduction, all supported by appropriate citations to prior work. These claims establish the context for the current study but do not represent new findings. The citations appear accurate and relevant.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C90",
+      "C91"
+    ],
+    "result": "The RcsB His12A substitution behaves differently from SsrB His12Q: RcsB His12A is not phosphorylated and cannot bind DNA, whereas SsrB His12Q binds DNA with affinity comparable to wild-type at neutral pH.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C90 accurately cites prior work on RcsB (Casino et al., 2018), and C91 reports the current study's finding for SsrB H12Q (supported by Figure 2d). This comparison highlights functional differences between homologous response regulators and is appropriately discussed as a caveat when extrapolating from RcsB structures to SsrB.",
+    "result_type": "MINOR"
+  }
+]

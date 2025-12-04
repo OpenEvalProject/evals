@@ -1,0 +1,302 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C29",
+      "C30"
+    ],
+    "result": "The manuscript establishes the motivation for using nonlinear models in fetal-neonatal fMRI analysis. Current analysis of fetal-neonatal fMRI relies on linear models adapted from adult neuroimaging, but the rapid and complex neurodevelopment during the fetal-neonatal period, combined with the inherent nonlinearity of fMRI signals, suggests that linear models may be inadequate for capturing these developmental trajectories.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4, C20-C24, C29-C30 collectively establish a well-supported rationale for the study. The claims about rapid fetal-neonatal brain development (C3) and current reliance on linear models (C2, C20) are supported by established knowledge and citations. The nonlinearity of fMRI signals (C24) and limitations of linear models in this context (C23, C30) are supported by citations to prior work. The inference that nonlinear approaches may be needed (C4, C29) follows logically from these premises.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C146",
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165"
+    ],
+    "result": "The study applied a variational autoencoder (VAE) pretrained on adult rsfMRI to analyze >500 fetal and neonatal scans from two independent datasets (dHCP and DBI). The VAE was previously shown to be superior to linear models in adults, and the authors hypothesized it would provide more accurate representations of fetal-neonatal brain activity compared to linear methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C31-C40, C146, C160-C165 describe the study design, methodology, and datasets. The sample sizes (>500 subjects across two datasets) are clearly documented with demographic details. The VAE methodology is described with reference to prior work (C6, C31-C34). The hypothesis (C36) and experimental design (C37-C39) are clearly stated. The datasets are well-characterized with appropriate demographic information.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C99",
+      "C129",
+      "C140",
+      "C141"
+    ],
+    "result": "VAE showed superior reconstruction performance of fetal-neonatal fMRI patterns compared to linear models (ICA with 50-300 components and cortical parcels). The VAE consistently achieved the best spatial similarity to original images across time points and datasets, with statistically significant differences (p<10\u207b\u00b3). The improved performance was not merely due to smoothing effects, as demonstrated by systematic smoothing analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C51, C99, C129, C140-C141 are well-supported by quantitative data in Figures 2-3. Statistical significance is properly tested with Bonferroni correction (C47). The smoothing analysis (Figure 3, C48-C51, C129) addresses a potential confound and demonstrates that VAE's superior performance is not simply due to greater smoothing. The comparison includes multiple linear models with varying dimensions, strengthening the conclusion. The consistency across datasets (C44) supports generalizability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Reconstruction performance showed age-dependent patterns: positive correlation with postmenstrual age in neonates (dHCP: r=0.20, p<0.01; DBI: r=0.35, p<0.01) but negative correlation with gestational age in fetuses (r=-0.69, p<10\u207b\u2074). The negative correlation in fetuses was partially explained by brain size effects related to registration to a standard template, but remained significant after controlling for brain size. In neonates, the positive age dependency remained significant even when controlling for brain size and head motion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C62 present age-related findings with appropriate statistical tests and partial correlation analyses. The positive correlation in neonates is consistent across datasets (C52) and robust to controlling for radiology scores (C53), brain size (C59), and head motion (C62). The negative correlation in fetuses (C54) is explained with a plausible hypothesis about registration artifacts (C55), supported by brain size analysis (C56-C57). However, the residual negative correlation after controlling for brain size (C57) suggests additional unexplained factors, which the authors acknowledge.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C63",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C110"
+    ],
+    "result": "Individual reconstruction performance showed significant inter-session consistency in both repeated ex utero scans (r=0.38, p<0.01, ICC=0.38) and longitudinal in utero to ex utero scans (r=0.39-0.40, p<0.01). This consistency remained significant after controlling for head motion and brain size, suggesting that reconstruction performance reflects both chronological brain maturity and intrinsic individual neural traits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63, C65-C68, C110 demonstrate inter-session consistency with appropriate statistical tests (correlation and ICC). The analyses controlling for potential confounds (head motion C65-C66, brain size C67) strengthen the interpretation. The sample sizes for repeated scans are adequate (n=48 for dHCP, n=57 for DBI). The inference about individual neural traits (C68) is reasonable given the data, though the moderate correlation values (r~0.38-0.40) suggest substantial unexplained variance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C100",
+      "C102"
+    ],
+    "result": "VAE-derived latent variables achieved superior age prediction accuracy compared to linear models in both datasets. In dHCP, VAE achieved RMSE=1.98\u00b10.06 weeks, MAE=1.53\u00b10.05 weeks, r\u00b2=0.72\u00b10.01, outperforming all linear models including IC300 and cortical parcels. In DBI, VAE showed RMSE=3.83\u00b10.20 weeks, MAE=3.02\u00b10.17 weeks, r\u00b2=0.66\u00b10.01. VAE used fewer features (14.14\u00b10.32% of latent space) than most linear models while achieving better performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C75, C100, C102 are supported by comprehensive age prediction analyses with proper cross-validation (10-fold CV, 100 repetitions). Tables 1-2 provide detailed quantitative comparisons across multiple models. Statistical significance is established through multiple metrics (RMSE, MAE, r\u00b2). The finding that VAE outperforms even higher-dimensional linear models (IC300) is notable (C45, C72, C100). The subgroup analysis (C75) showing VAE superiority only in neonates (not fetuses) when analyzed separately is an important nuance that suggests dataset-specific effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "VAE demonstrated superior cross-center generalizability for age prediction. When trained on dHCP and tested on DBI, VAE achieved the lowest prediction error (RMSE=4.95\u00b10.66 weeks, MAE=3.90\u00b10.65 weeks) compared to all linear models, with statistically significant differences (p<10\u207b\u2076).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C78 are supported by rigorous cross-center validation (Figure 6, Table 3). The experimental design (training on one dataset, testing on another with different acquisition parameters) is appropriate for assessing generalizability. The use of 100 random trials with bootstrapping strengthens the statistical analysis. The superior performance of VAE in this challenging cross-center scenario is a strong result supporting the nonlinear approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C115",
+      "C124",
+      "C127"
+    ],
+    "result": "Using the VAE decoder with temporal ICA, the study identified 30 functional brain networks in neonates showing both activation and deactivation patterns. Networks included sensory systems (visual, auditory, somatosensory) with inter-hemispheric and inter-network contrasts, and precursors of the default mode network. These networks showed more dynamic patterns (lateralization, bilateral activation, activation/deactivation contrasts) compared to networks defined by spatial ICA in prior studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C87, C115, C124, C127 describe network mapping results shown in Figure 7 and supplements. The methodology combining VAE spatial compression with temporal ICA is clearly described. Specific networks are identified with anatomical detail (C80-C87). The comparison to prior spatial ICA studies (C124) provides context. However, some networks were noted as difficult to interpret (mentioned in text), and the reproducibility analysis (next result) is important for validating these findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C134",
+      "C135"
+    ],
+    "result": "VAE-derived networks showed better age-matched reproducibility across datasets than within-dataset reproducibility (inter-dataset similarity for age-matched groups > intra-dataset similarity for age-mismatched groups). Linear models showed the opposite pattern (higher intra-dataset similarity), suggesting they were more sensitive to acquisition parameters than to age-related neurophysiological features.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C92, C134-C135 present a compelling reproducibility analysis (Figure 7C-D). The finding that VAE networks are more similar across datasets when ages match than within datasets when ages differ is strong evidence for capturing neurophysiologically relevant features rather than acquisition artifacts. The contrast with linear models strengthens this interpretation. The analysis was repeated with 100 different ICA initializations, enhancing reliability. The speculation about linear models depending on acquisition parameters (C92) is reasonable given the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C117",
+      "C118"
+    ],
+    "result": "Age-related analysis revealed that 12 of 30 networks showed significant correlation with postmenstrual age (FDR-corrected p<0.05). The network most strongly correlated with age (IC6, r=0.29, p<10\u207b\u2076) showed joint activation in somatosensory and auditory regions. Older neonates (\u226543 weeks) showed higher variance and additional engagement of primary auditory areas with right hemisphere lateralization compared to younger neonates (\u226439 weeks), suggesting spatial expansion and recharacterization of brain networks during early postnatal development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C98, C117-C118 present age-related network changes with appropriate statistical testing (FDR correction for multiple comparisons). The detailed analysis of IC6 (Figure 8) provides specific anatomical findings. The comparison between young and old groups shows both quantitative (variance differences, p<10\u207b\u2077) and qualitative (spatial pattern) changes. The interpretation of spatial expansion and network recharacterization (C98, C118) is supported by the data and consistent with developmental neuroscience literature cited.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C101",
+      "C103",
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "The authors propose that VAE's superior performance stems from its nonlinear architecture enabling extraction of meaningful features robust to morphological variations and artifacts. The cascade of nonlinear operations through multiple layers disentangles complex brain activity patterns from residual noise, differentiating VAE from linear models. The combination of nonlinear spatial compression via VAE and temporal modeling via temporal ICA may be a critical addition to existing tools for mapping fetal-neonatal brain networks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C101, C103, C130-C132 present interpretations and speculations about why VAE performs better. While the analogy to computer vision (C101) is supported by citations, the specific mechanism proposed (C103) is speculative. The suggestion about investigating finer-scale networks with higher-dimensional VAE (C131) and the proposed combined VAE+temporal ICA approach (C132) are reasonable but untested hypotheses. These claims represent discussion and interpretation rather than demonstrated results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C123"
+    ],
+    "result": "The authors interpret reconstruction performance as reflecting similarity to adult brain patterns and discuss the emergence of individual functional connectivity signatures. They reference prior work showing individual FC uniqueness in adults but conflicting findings in neonates, and suggest their inter-session consistency results (r=0.38-0.40) provide evidence for individual neural signatures emerging during the fetal-neonatal period.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C104-C114, C123 present interpretations of the reconstruction performance and inter-session consistency findings in the context of individual brain signatures. The interpretation that reconstruction performance reflects similarity to adult brain (C111) is reasonable given the VAE was trained on adults, but alternative explanations are acknowledged (C112). The comparison to prior work on individual uniqueness (C104-C109) provides context, but the moderate correlations (r~0.38-0.40) are substantially lower than adult values (~92%), making the interpretation about emerging individual signatures (C68) somewhat speculative. The discussion of dual aspects of latent variables (C114, C123) is thoughtful but not directly tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C125",
+      "C126",
+      "C128",
+      "C133",
+      "C136"
+    ],
+    "result": "The authors interpret their findings in the context of brain development theory and discuss methodological considerations. They suggest the spatial expansion of networks during neonatal development aligns with the 'segregation to integration' framework from prior studies. They attribute differences between their networks and prior spatial ICA results to methodological differences between temporal and spatial ICA. They propose VAE could be used for multi-center studies and creating longitudinal functional atlases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C119-C121, C125-C126, C128, C133, C136 present interpretations and speculations. The connection to segregation-integration theory (C119) is supported by citations but represents interpretation. The explanation of methodological differences between temporal and spatial ICA (C125-C126) is reasonable and supported by citations. The observation about lack of anticorrelated cognitive-sensory networks (C128) is interesting but speculative about developmental timing. The proposals about multi-center applications (C136) and longitudinal atlases (C122) are reasonable future directions but not demonstrated. The acknowledgment of dataset differences (C133) shows appropriate caution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C137",
+      "C138",
+      "C139",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159"
+    ],
+    "result": "The authors acknowledge several limitations: VAE focuses on spatial representations and ignores temporal dynamics; VAE induces smoothing that may miss fine-grained changes; VAE does not capture subcortical information; and the model was pretrained only on adult data. They suggest future improvements including incorporating temporal features, fine-tuning with fetal-neonatal data, optimizing hyperparameters, and including subcortical regions. They propose VAE could enable tracking spatial evolution of networks and identifying early biomarkers for neurodevelopmental disorders.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C137-C159 present limitations and future directions. The stated limitations (C137, C139, C142, C144) are appropriate and well-justified. The smoothing limitation (C139-C141) is particularly important given the developmental focus. The acknowledgment that the model was trained only on adults (C144) is a significant limitation for fetal-neonatal applications. The proposed future directions (C145, C148, C150, C151, C156-C159) are reasonable and follow logically from the limitations. The speculation about clinical applications (C159) is appropriately tentative. These represent honest assessment of limitations and thoughtful consideration of future work.",
+    "result_type": "MINOR"
+  }
+]

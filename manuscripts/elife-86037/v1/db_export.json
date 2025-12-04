@@ -1,0 +1,1065 @@
+{
+  "submission": {
+    "id": "230b025d-fd93-4fc0-b4f5-a1c32c244fea",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-04T03:49:11.846123Z",
+    "updated_at": "2025-12-04T03:49:11.846123Z"
+  },
+  "content": [
+    {
+      "id": "28a9dc1d-68e8-4aa5-a8c6-6f34610fe687",
+      "submission_id": "230b025d-fd93-4fc0-b4f5-a1c32c244fea",
+      "content_type": "manuscript",
+      "content_text": "# Cross-movie prediction of individualized functional topography\n\n## Authors\n\n- Guo Jiahui<sup>1</sup> ([ORCID: 0000-0002-1528-9025](https://orcid.org/0000-0002-1528-9025))\n- Ma Feilong<sup>1</sup>\n- Samuel A Nastase<sup>2</sup>\n- James V Haxby<sup>1</sup> ([ORCID: 0000-0002-6558-3118](https://orcid.org/0000-0002-6558-3118))\n- M Ida Gobbini<sup>3</sup> ([ORCID: 0000-0001-6727-7934](https://orcid.org/0000-0001-6727-7934)) \u2020\n\n### Affiliations\n\n1. Center for Cognitive Neuroscience, Dartmouth College Hanover United States ([ROR:049s0rh22](https://ror.org/049s0rh22))\n2. Princeton Neuroscience Institute, Princeton University Princeton United States ([ROR:00hx57361](https://ror.org/00hx57361))\n3. Department of Medical and Surgical Sciences (DIMEC), University of Bologna Bologna Italy ([ROR:01111rn36](https://ror.org/01111rn36))\n4. IRCCS, Istituto delle Scienze Neurologiche di Bologna Bologna Italy ([ROR:02mgzgr95](https://ror.org/02mgzgr95))\n\n\u2020 Corresponding author\n\n## Abstract\n\nParticipant-specific, functionally defined brain areas are usually mapped with functional localizers and estimated by making contrasts between responses to single categories of input. Naturalistic stimuli engage multiple brain systems in parallel, provide more ecologically plausible estimates of real-world statistics, and are friendly to special populations. The current study shows that cortical functional topographies in individual participants can be estimated with high fidelity from naturalistic stimuli. Importantly, we demonstrate that robust, individualized estimates can be obtained even when participants watched different movies, were scanned with different parameters/scanners, and were sampled from different institutes across the world. Our results create a foundation for future studies that allow researchers to estimate a broad range of functional topographies based on naturalistic movies and a normative database, making it possible to integrate high-level cognitive functions across datasets from laboratories worldwide.\n\n## Introduction\n\nCategory-selective functional topographies are a prominent and consistent feature of lateral occipital, ventral temporal, and lateral temporal visual cortices (Downing et al., 2001; Epstein et al., 1999; Grill-Spector and Weiner, 2014; Kanwisher et al., 1997). Category-selective topographies are mostly similar across individuals but are idiosyncratic in terms of their precise conformation and location (Zhen et al., 2015; Zhen et al., 2017). Because of these idiosyncrasies, category-selective topographies and areas are typically mapped in each individual using a functional localizer fMRI scan (Fedorenko et al., 2010; Saxe et al., 2006). Functional localizers map individualized topographies with simple contrasts between responses to different categories, such as contrasting responses to faces versus objects to localize face-selective areas.\n\nWe reported an alternative approach to map category-selective topographies using fMRI data collected while participants view a naturalistic movie (Guntupalli et al., 2016; Haxby et al., 2011; Jiahui et al., 2020). With this approach, movie-viewing and functional localizer data are collected in a normative sample, and new participants need only be scanned during movie viewing. Movie data are used to calculate transformation matrices using hyperalignment (Guntupalli et al., 2016; Haxby et al., 2011; Jiahui et al., 2020; Feilong et al., 2018; Feilong et al., 2021; Feilong et al., 2021; Guntupalli et al., 2018) that afford projecting the localizer data from the normative sample into the idiosyncratic cortical topography of new participants. Using this hyperalignment procedure, we can estimate the idiosyncratic details of individual topographies with high fidelity based on localizer data from the normative sample. Unlike functional localizers, naturalistic stimuli (e.g., movies) evoke a rich variety of brain states and engage multiple brain systems in parallel. This makes it possible to efficiently map multiple functional topographies using data from a single movie and avoid the time and cost of running multiple localizers. Compared to controlled localizers, movies better simulate real-world cognition and better engage participants\u2019 attention (Vanderwal et al., 2015; Vanderwal et al., 2017; Vanderwal et al., 2019), contributing to more ecologically valid and higher-quality maps. In addition, movies are more friendly and engaging for special populations, such as young children.\n\nIn previous work, we used response hyperalignment (RHA) to predict functional topographies in new participants. RHA requires that all participants watch the same movie to obtain time-locked responses to the same stimuli. It is often important, however, to tailor the movie to meet the specific needs of participants in different experiments. For example, participants from different countries may prefer movies that reflect their diverse backgrounds and are in their native languages (Hanke et al., 2016; Sengupta et al., 2016); movies for infants and young children are differently structured from those for adults (Vanderwal et al., 2015). Thus, it is unrealistic to limit all participants from diverse populations and backgrounds to watch the same movie. Additionally, experimenters may need to shorten or edit the stimuli to fit their data collection schedule. Finally, participants are often scanned with different parameters from one experiment to another, at different institutes across the world, and with different scanner models. Due to these factors, it is impractical to expect two laboratories to acquire the same movie scans across individuals.\n\nHere, we test whether connectivity hyperalignment (CHA) (Guntupalli et al., 2018) can be used to map category-selective functional topographies. CHA, in contrast to RHA, affords calculation of transformation matrices using stimuli that are not the same for normative and index participants. We analyzed four different datasets collected with three different movies, three different scanners, and two different types of functional localizers that used dynamic or static stimuli. We first demonstrated that CHA based on participants\u2019 connectomes that were calculated using their responses to movies was able to generate high-fidelity maps of category-selective topographies within datasets that were equivalent to maps estimated using RHA. Then, critically, we showed that cross-dataset predictions that used connectomes calculated from different movies for the normative and index brains were as good as those from participants in the same dataset. This means that different laboratories can use different movies to derive functional topographies from a normative sample.\n\nIn summary, we demonstrate that a target participant\u2019s individualized category-selective topography can be accurately estimated using CHA, regardless of whether different movies are used to calculate the connectome and regardless of other data collection parameters. Movies engage multiple cognitive domains in parallel, such as visual perception, audition, language comprehension, theory of mind, and social interaction. In addition to estimating different functional topographies from a single movie, our approach allows us to estimate topographies from different movies. We provide a novel alternative for future data collection that can save time and money using rich and efficient movie scans.\n\n## Results\n\n### High-fidelity prediction with CHA\n\nWe predicted category-selective topographies by projecting other participants\u2019 functional localizer data into each participant\u2019s native cortical topography using a new, enhanced CHA algorithm. For each participant, we calculated transformation matrices based on functional connectivity estimated during movie viewing in an iterative way (see Materials and methods). These transformation matrices resample fMRI data from others\u2019 brains into a given participant\u2019s cortex. We then projected the functional localizer data for all other participants into the given participant\u2019s native cortical space and calculated independent functional contrasts based on that participant\u2019s own localizer data and based on other participants\u2019 localizer data projected into that participant\u2019s cortex. We also estimated functional topographies by projecting others\u2019 localizer data into that participant\u2019s cortex based on high-performing surface-based anatomical alignment as a control analysis. We calculated the correlations between topographies based on participants\u2019 own localizer contrasts and on other participants\u2019 data. Because the localizer task comprises several scanning runs, we calculated the reliability of the localizer across runs with Cronbach\u2019s alpha to provide an estimate of the noise ceiling for these correlations. We repeated this procedure for all participants.\n\nWe tested the estimation of visual category-selective functional topographies (faces, bodies, scenes, and objects) in four different datasets using three different movies, localizers with static or dynamic stimuli, different scanning sequence parameters, and three different scanner models (see Materials and methods).\n\nCategory-selective topographies estimated with CHA recovered the idiosyncrasies of individuals\u2019 topographies, capturing fine details of the individual-specific configuration and extent. By contrast, topographies estimated with anatomical alignment generated highly blurred maps that were essentially the same for all participants, losing individual-specific idiosyncratic features (Figure 1A).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/86037/elife-86037-fig1-v1.jpg)\n\n**Figure 1.:** (A) Face-selective topographies (faces-vs-all) and zoomed-in views of an example participant estimated from this participant\u2019s own localizer (Own Localizer), and other participants\u2019 localizers using CHA, and surface anatomical alignment (AA). (B) Scatter plots display the Pearson correlation coefficients between estimated face-selective topographies based on own localizer data and other participants\u2019 localizer data in individual participants in four different datasets. The y-axis corresponds to correlations between each target participant\u2019s own localizer-based face-selective topographies and face-selective topographies estimated from other participants using CHA. The x-axis corresponds to correlations between each target participant\u2019s own localizer-based face-selective topographies and face-selective topographies estimated from other participants with surface-based anatomical alignment. (C) Bar plots show the mean correlations across participants in four datasets (Budapest & Sraiders: n = 20; Forrest: n = 15; Raiders: n = 9. Same sample sizes in other figures for each dataset unless noted.) and for all four category-selective topographies. Black bars stand for the mean Cronbach\u2019s alphas across participants. Error bars indicate \u00b11 standard error of the mean. Category topographies were defined based on contrasts between the target category and all other categories. (D) Scatter plots of Pearson correlation coefficients using CHA and response hyperalignment (RHA) for individual participants within four different datasets for the face-selective topography. Values on the y-axis stand for correlations between each target participant\u2019s own localizer-based topographies and topographies estimated from other participants in the same dataset using RHA. Values on the x-axis stand for correlations between each target participant\u2019s own localizer-based topographies and topographies estimated from other participants in the same dataset using CHA.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/86037/elife-86037-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** In the enhanced connectivity hyperalignment (CHA) analysis, transformation matrices derived from projecting connectome based on the movie data in each training participant\u2019s cortical space to the target participant\u2019s space were applied to each training participant\u2019s localizer runs. These steps were iterated six times, and in each step, the connectome and the localizer data were both updated. The original localizer runs were used to calculate category-selective topographies for each training participant and averaged across runs and participants to obtain the surface alignment predicted topography for the target participant. The localizer runs hyperaligned after all iteration steps were used to obtain CHA predicted topographies with similar procedures. Outside of this loop, each target participant\u2019 own original localizer runs were used to obtain this participant\u2019s own localizer estimated topographies.\n\nThe superior performance of CHA-based estimation over anatomical-alignment-based estimation was consistent across participants, visual stimulus categories, and datasets. In all four category-selective topographies and in all four datasets, correlations between estimations based on hyperalignment and their own localizer data were significantly higher than the correlations between estimations based on anatomical alignment and each participant\u2019s own localizer (Fisher z-transformed, p<0.001, Bonferroni corrected). We compared these correlations between topographies estimated from a participant\u2019s own localizer data and those from other participants\u2019 data to the reliability of the localizer, calculated with Cronbach\u2019s alpha. Predictions made with hyperalignment were close to and sometimes even exceeded the reliability values (Figure 1B), which indicate that the predicted category-selective topographies from other participants\u2019 data using hyperalignment were as precise and sometimes even better than the topographies estimated with their own localizer data.\n\nEstimates using CHA to calculate transformation matrices were also equivalent to estimates using RHA (Figure 1D). RHA, however, requires that all subjects watch the same movie, whereas CHA can use connectivity matrices derived from responses to different movies, potentially making our new approach more flexible. Next we tested the validity of estimating topographies using transformation matrices that were based on functional connectivities calculated from responses to different movies for the test participant and other participants.\n\n### CHA enables cross-movie predictions\n\nExperimental design considerations and constraints can make using the same stimulus across all studies and participants inadvisable, and datasets are often collected under diverse conditions. Here, we aim to test whether connectivity-based hyperalignment can predict category-selective topographies in new individuals even if their connectomes are estimated from data collected while they watched a different movie. Using this method, participants across datasets without matched time-locked functional series can benefit from those who have functional localizer data but were scanned with different naturalistic stimuli.\n\nWe estimated category-selective topographies for each participant in each dataset from participants in the other dataset that used the same type of localizer (dynamic or static) by calculating transformation matrices based on functional connectivities measured while watching different movies. We also estimated topographies based on anatomical alignment. The cross-movie predictions using CHA outperformed predictions based on anatomical alignment and were nearly as precise as within-movie predictions (Figure 2A). The superior performance was consistent across datasets and categories (p<0.001 for all comparisons, Figure 2B) and in all individual participants (Figure 2\u2014figure supplement 2). Similarly, accuracies of these predictions matched and sometimes even exceeded the reliability measures of their own localizer runs (Figure 2B).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/86037/elife-86037-fig2-v1.jpg)\n\n**Figure 2.:** (A) Scatter plots of Pearson correlation coefficients for individual participants in four different datasets and for four categories. Values on the y-axis stand for correlations between each target participant\u2019s own localizer-based topographies and topographies estimated from other participants in the same movie using connectivity hyperalignment (CHA). Values on the x-axis stand for correlations between each target participant\u2019s own localizer-based topographies and topographies estimated from participants in another dataset based on cross-movie CHA. (B) Bar plots display the mean Pearson correlation coefficients (r) and Cronbach\u2019s alphas across participants in all four datasets for all four categories. Error bars stand for \u00b11 standard error of the mean. S to B: Sraiders to Budapest, B to S: Budapest to Sraiders, R to F: Raiders to Forrest, F to R: Forrest to Raiders.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/86037/elife-86037-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Bar plots display the mean Pearson correlation coefficients (r) and Cronbach\u2019s alphas across participants in all four datasets for all four categories. Error bars stand for \u00b11 standard error of the mean. The abbreviations are the same in all figures, including this one. S to B: Sraiders to Budapest, F to B: Forrest to Budapest, R to B: Raiders to Budapest, B to S: Budapest to Sraiders, F to S: Forrest to Sraiders, R to S: Raiders to Sraiders, R to F: Raiders to Forrest, B to F: Budapest to Forrest, S to F: Sraiders to Forrest, F to R: Forrest to Raiders, B to R: Budapest to Raiders, S to R: Sraiders to Raiders.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/86037/elife-86037-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Prediction performance (Pearson r) for the face-selective topography for each individual participant using response hyperalignment (RHA), connectivity hyperalignment (CHA), cross-movie CHA, and surface alignment (AA) in all four datasets. Black dots stand for individual participants\u2019 Cronbach\u2019s alphas of their own face-selective topographies across localizer runs. Dashed lines are the mean values across participants. S to B: Sraiders to Budapest, F to B: Forrest to Budapest, R to B: Raiders to Budapest, B to S: Budapest to Sraiders, F to S: Forrest to Sraiders, R to S: Raiders to Sraiders, R to F: Raiders to Forrest, B to F: Budapest to Forrest, S to F: Sraiders to Forrest, F to R: Forrest to Raiders, B to R: Budapest to Raiders, S to R: Sraiders to Raiders.\n\nCross-movie predictions of cortical topographies based on different localizer types (static to dynamic or dynamic to static) produced lower correlations than did cross-movie predictions based on the same localizer type (Figure 2\u2014figure supplement 1), consistent with previous reports showing significant differences between topographies estimated by static and dynamic localizers, especially in superior temporal and frontal cortices (Fox et al., 2009; Pitcher et al., 2011).\n\nTo demonstrate how hyperalignment increased prediction performance for individual participants from a different dataset, we plotted topographies estimated using hyperalignment and anatomical alignment, as well as from their own localizer runs (Figure 3, Figure 3\u2014figure supplement 1 and Figure 3\u2014figure supplement 2). Topographies between datasets recovered similar idiosyncratic features as the topographies predicted within datasets.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/86037/elife-86037-fig3-v1.jpg)\n\n**Figure 3.:** Contrast maps for face-selective topographies (faces-vs-all) and their zoomed-in views of the ventral temporal cortex were plotted in four sample participants in (A) Budapest, (B) Sraiders, (C) Forrest, and (D) Raiders. In all four subplots, in the left-most panel, faces-vs-all maps were plotted on the sample participants\u2019 own cortical surfaces. The next two columns display maps estimated from other participants\u2019 data. In the right two columns, the first column presents predicted face-selective topographies from participants in the same dataset using connectivity hyperalignment (CHA). The next column presents face-selective topographies from participants in another dataset (cross-movie CHA). The zoomed-in panels are displayed accordingly with the whole-brain map. The color bar is the same as that in Figure 1. S to B: Sraiders to Budapest, B to S: Budapest to Sraiders, R to F: Raiders to Forrest, F to R: Forrest to Raiders.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/86037/elife-86037-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Contrast maps for face-selective topographies (faces-vs-all) and their enlarged views of the ventral temporal cortex were plotted in sample participants in (A) Budapest, (B) Sraiders, (C) Forrest, and (D) Raiders. In all five subplots for the whole-brain maps, the faces-vs-all maps were plotted on the sample participants\u2019 own cortical surfaces (left single panel). The second column presents predicted face-selective topographies from participants in the same dataset using connectivity hyperalignment (top) and surface alignment (bottom). The next three columns present face-selective topographies from participants in another dataset with the same (second column) and a different type (the last two columns) of localizers. In the four right columns, the top row presents the map using hyperalignment (HA), and the bottom row presents the map using surface alignment (AA). The enlarged panels were displayed accordingly with the whole-brain map. The color bar was the same as that in Figure 1.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/86037/elife-86037-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Contrast maps of the other three categories were plotted in participants in (A) Budapest, (B) Sraiders, (C) Forrest, and (D) Raiders. In all five subplots for the whole-brain maps, the maps estimated from their own localizer runs were plotted on the sample participant (left single panel). The other columns present predicted topographies from participants in the same dataset using connectivity hyperalignment (top) and surface alignment (bottom).\n\nTo further examine the topographies predicted using different datasets and compare the prediction performances to reliability measures, we calculated local correlations between maps estimated from each participant\u2019s own localizer runs and those estimated from other participants\u2019 runs with a searchlight analysis. We also calculated Cronbach\u2019s alpha across localizer runs in each searchlight. Generally, searchlights in the high-level visual areas and with strong category selectivity (e.g., ventral temporal cortex, lateral temporal cortex) showed the highest mean correlation values, which often exceeded 0.8 (Figure 4, Figure 4\u2014figure supplement 1, Figure 4\u2014figure supplement 3, and Figure 4\u2014figure supplement 10). The lower mean correlations in other cortices (e.g., sensorimotor cortex) reflect low reliabilities of the localizer runs.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/86037/elife-86037-fig4-v1.jpg)\n\n**Figure 4.:** (A, B, C, and D) The left-most column presents Cronbach\u2019s alphas of the own-localizer-based face-selective topographies in each dataset using a searchlight analysis (15 mm radius). The next two columns present local correlations (correlation maps) using the searchlight analysis between face-selective maps estimated from participants\u2019 own localizers and from other participants based on within-movie and between-movie connectivity hyperalignment (CHA) (hyperalignment [HA], top row) and surface alignment (AA, bottom row). Histogram plots present Cronbach\u2019s alphas (dark gray) and coefficients for the correlation maps above (estimated with CHA in color, with AA in light gray). The left and right hemisphere histograms were plotted separately. B to S: Budapest to Sraiders, S to B: Sraiders to Budapest, R to F: Raiders to Forrest, F to R: Forrest to Raiders.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/86037/elife-86037-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A, B, C, and D) The left-most column shows the Cronbach\u2019s alphas of the own localizer-based face-selective topographies in each dataset using a searchlight analysis (15 mm radius). The next four columns show local correlations (correlation maps) using the searchlight analysis between the face-selective maps estimated from other participants based on within-movie (second column, top row) and between-movie (the next three columns, top row) connectivity hyperalignment (CHA) and surface alignment (AA, bottom row).\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/86037/elife-86037-fig4-figsupp2-v1.jpg)\n\n**Figure 4\u2014figure supplement 2.:** Histogram plots of local Cronbach\u2019s alphas (dark gray) and local correlation coefficients between face-selective topographies estimated from own and others\u2019 localizers across the cortex (hyperalignment [HA] in color, light gray for surface alignment [AA]) in major cortices (ventral temporal, dorsal temporal, occipital, frontal, and parietal) in the four datasets (see Figure 4 for the whole-brain maps and distributions). The left and right hemisphere histograms were plotted separately in each cortical parcel.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/86037/elife-86037-fig4-figsupp3-v1.jpg)\n\n**Figure 4\u2014figure supplement 3.:** (A, B, C, and D) The left-most column shows the Cronbach\u2019s alphas of the own localizer-based topographies in each dataset using a searchlight analysis (15 mm radius). The next four columns show local correlations (correlation maps) using the searchlight analysis between the category-selective maps estimated from other participants based on within-movie (second column, top row) and between-movie (the next three columns, top row) connectivity hyperalignment (CHA) and surface alignment (AA, bottom row).\n\n![Figure 4\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/86037/elife-86037-fig4-figsupp4-v1.jpg)\n\n**Figure 4\u2014figure supplement 4.:** (A) In each subplot, each line with dots showed the improvement of the mean correlation across participants between the category-selective maps estimated from each participant\u2019s own localizer runs and those estimated from participants\u2019 data in other datasets from step 1 to step 6 using our new advanced iterative CHA algorithm. Horizontal dotted lines are the mean Cronbach\u2019s alphas (gray) and the mean performance using response hyperalignment (RHA) (colored). (B, C, and D) had the same layout as A with participants in Sraiders, Forrest, and Raiders dataset as the prediction target.\n\n![Figure 4\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/86037/elife-86037-fig4-figsupp5-v1.jpg)\n\n**Figure 4\u2014figure supplement 5.:** (A) In each subplot, each line with dots showed the improvement of the mean correlation across participants between the category-selective maps (faces, bodies, scenes, and objects) estimated from each participant\u2019s own localizer runs and those estimated from other participants\u2019 data using the 1, 1\u20132, 1\u20133, 1\u20134, and all five runs of the Budapest movie or all four runs of the Sraiders movie. The length of each movie-viewing run in the Budapest dataset is 598 s, 498 s, 535 s, 618 s, and 803 s accordingly, and 840 s for each of the four runs in the Sraiders dataset. Horizontal dotted lines are the mean Cronbach\u2019s alphas (red) and the mean performance based on surface alignment (gray). (B) In each subplot, each line with dots showed the improvement of the mean correlation across participants between the category-selective maps (faces, bodies, scenes, and objects) estimated from each participant\u2019s own localizer runs and those estimated from other participants\u2019 data using 5, 10, 15, or all 20 participants in the Budapest dataset. Horizontal dotted lines are the mean Cronbach\u2019s alphas (red) and gray lines with dots showing the mean performance based on surface alignment.\n\n![Figure 4\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/86037/elife-86037-fig4-figsupp6-v1.jpg)\n\n**Figure 4\u2014figure supplement 6.:** Bar plots display the mean Pearson correlation coefficients (r) and Cronbach\u2019s alphas across participants in all four datasets for all four categories. Bars with solid outlines stand for results based on the 1-step method, and bars with dashed outlines are based on the 2-step method. Error bars stand for \u00b11 standard error of the mean.\n\n![Figure 4\u2014figure supplement 7.](https://cdn.elifesciences.org/articles/86037/elife-86037-fig4-figsupp7-v1.jpg)\n\n**Figure 4\u2014figure supplement 7.:** (A, B, and C) Scatter plots of Pearson correlation coefficients with Budapest dataset, using response hyperalignment (RHA), connectivity hyperalignment (CHA), and cross-movie from Sraiders to Budapest for individual participants for the face, body, scene, and object-selective topographies. Values on the y-axis stand for correlations between each target participant\u2019s own localizer-based topographies and topographies estimated from other participants when transformation matrices were applied to the localizer time series. Values on the x-axis stand for correlations between each target participant\u2019s own localizer-based topographies and topographies estimated from other participants when transformation matrices were applied directly to contrast maps. (D) In each subplot, each line with dots showed the mean correlation across participants between the category-selective maps estimated from each participant\u2019s own localizer runs and those estimated from participants\u2019 data in other datasets from step 1 to step 6 using the new advanced iterative CHA algorithm. Darker shades stand for the performance when transformation matrices were applied to localizer time series, and lighter shades stand for the mean performance when transformation matrices were applied directly to contrast maps. Horizontal dotted lines are the mean Cronbach\u2019s alphas (red) and the mean performance using only surface alignment (gray).\n\n![Figure 4\u2014figure supplement 8.](https://cdn.elifesciences.org/articles/86037/elife-86037-fig4-figsupp8-v1.jpg)\n\n**Figure 4\u2014figure supplement 8.:** Bar plots display the mean Pearson correlation coefficients (r) across participants using all or part of the training participants for face-selective topography using connectivity hyperalignment (CHA) with the Budapest dataset. Participants were divided based on their connectivity profile similarities to the target participant and were measured using a 10 mm searchlight in the right ventral temporal cortex that was roughly at the location of the posterior fusiform face area (rpFFA). Bars in color are based on CHA, and bars in gray are based on surface alignment. Error bars stand for \u00b11 standard error of the mean.\n\n![Figure 4\u2014figure supplement 9.](https://cdn.elifesciences.org/articles/86037/elife-86037-fig4-figsupp9-v1.jpg)\n\n**Figure 4\u2014figure supplement 9.:** (A) For each participant in the Budapest and the Sraiders dataset, connectomes that described the connectivity between each target in the searchlight and each vertex on the cortex were calculated for each dataset and correlated across the two datasets. This whole-brain map shows the mean correlations across participants. (B) Histogram plots of the correlation coefficients in A in the left and the right hemisphere. (C) The two datasets were split into two halves, and similarities of the fine-grained connectivity between the two halves within and across the two movies were calculated following the same procedures above. This plot shows the mean correlations across participants and searchlights.\n\n![Figure 4\u2014figure supplement 10.](https://cdn.elifesciences.org/articles/86037/elife-86037-fig4-figsupp10-v1.jpg)\n\n**Figure 4\u2014figure supplement 10.:** Each set of brain maps shows the averaged local correlations between the category-selective map (column) estimated from other participants in the Budapest dataset based on enhanced connectivity hyperalignment (CHA) and the map estimated from their own localizers using a specific size of searchlight (row). Local correlations remained relatively similar across different searchlight sizes for all categories.\n\n## Discussion\n\nIn this study, using four datasets that contain three different movies, two different types of functional localizers, and collected with three different scanners, we showed that individualized category-selective topographies can be estimated with high fidelity using CHA. Unlike RHA, which requires the same \u2018time-locked\u2019 response time series in the normative sample and new participants, CHA affords the calculation of transformation matrices based on responses to completely different movies. By showing that CHA based on participants\u2019 connectomes calculated using their responses to different movies generated high-fidelity mappings that were as good as those using RHA with participants in the same dataset, we demonstrated that CHA is able to effectively predict topographies across diverse situations. This study opens new possibilities connecting independent public and in-lab datasets for future data analysis so that researchers can derive multiple topographies at once for each individual with excellent performance based on the naturalistic movie data and the localizer data from another normative dataset. Our results also provide a novel alternative for new data collection to take better advantage of naturalistic stimuli.\n\nWe used a new, enhanced CHA in this study that optimized our previous CHA algorithm with iterative steps. In each step, transformation matrices to each index brain were calculated from other participants\u2019 brains and the matrices were applied to both the movie and the localizer data. Because using dense connectivity targets (e.g., using all vertices as connectivity targets) with anatomically alignment data often leads to suboptimal alignment across participants (Hanke et al., 2014), we started with coarse connectivity targets and gradually increased the number of connectivity targets to form a denser representation of connectivity profiles. The iterations improved the prediction performance step by step, and at the final step (step 6, all vertices were used as connectivity targets) in this analysis, the enhanced CHA generated comparable performance with RHA (Figure 4\u2014figure supplement 4). We investigated the influence of naturalistic movie length and the size of the training group on the prediction accuracy of individualized functional topographies. By incrementally increasing both the number of movie runs in the training and target dataset and the participants in the training group in the Budapest and Sraiders dataset, we observed enhanced prediction accuracy (Figure 4\u2014figure supplement 5). Notably, even with just one movie run in the training or target dataset, or with a mere five participants in the training group, our prediction performance (Pearson r) ranged from about 0.6 to 0.7. This accuracy significantly outperformed results obtained using surface-based alignment. In addition, this study is based on the new optimized 1-step hyperalignment procedure (Jiahui et al., 2020). The classic hyperalignment method (2-step), builds a common information model space at the initial step that is based on all normative group participants, then projects information encoded in idiosyncratic representational spaces to the common model space, and lastly projects the information back to the individual participant\u2019s space based on the transpose of the transformation matrices from the former step. Different from the 2-step method, the 1-step method directly projects the data for each normative sample brain to the index participant\u2019s space without the intermediate step of building a common information model space. This method requires fewer steps and is free from the accumulation of errors across steps. The 1-step method consistently improved the prediction performances across all conditions and datasets (Figure 4\u2014figure supplement 6). This method is particularly useful for estimating information encoded in each individual\u2019s brain space. Our original algorithm is designed to apply transformation matrices to the time series of localizer data of training participants before generating contrast maps. To explore whether directly applying these matrices to pre-calculated contrast maps yields comparable results, we conducted an additional analysis across the four categories. Our findings indicate that the prediction outcomes were indeed quite similar between the two approaches for both the within- and across-datasets predictions (Figure 4\u2014figure supplement 7). However, it is worth noting that the improvements observed with enhanced CHA were not as pronounced when applied directly to the contrast maps as opposed to the time series. In our study, we used fine-scale connectomes, noting that some participants are more similar to the target participant in specific searchlights. It is an interesting question whether predictions could be enhanced by exclusively selecting those more similar participants for the target participant. To explore this option, we examined a searchlight in the right ventral temporal cortex that was roughly at the location of the posterior fusiform area using the top and bottom nine participants similar to each target participant measured by their fine-scale connectome similarities in the budapest dataset. Generally, using all or part of the participants for the prediction generated similar results (Figure 4\u2014figure supplement 8). Compared to using all the participants, using only the top nine participants who are the most similar to the target participants did not significantly improve the prediction (Tukey test, z=\u20130.09, p=0.996), but using only the bottom nine participants generated significantly lower prediction accuracies (Tukey test, z=2.492, p=0.034). This suggests a trade-off between the number of participants included in the prediction and the similarity of the participants. Future studies are needed to explore the optimal threshold for the number of participants included for each searchlight to refine the algorithm.\n\nBy leveraging transformation matrices obtained from hyperaligning participants based on movie-viewing data, we successfully mapped these relationships to the training participants\u2019 localizer data, enabling robust predictions. Prior work employing diffusion-weighted imaging has underscored the link between anatomical connectivity and category selectivity across diverse visual fields (Osher et al., 2016; Saygin et al., 2012) and has established a notable congruence between structural and functional connectivities (Hermundstad et al., 2013). These findings suggest that the unique anatomical connectivity patterns of individuals may serve as a foundational mechanism, contributing to the stable fine-scale functional connectome that underpins our approach. The connectivity-based shared response model (cSRM) proposed by Nastase et al., 2020, used connectivity to functionally align individuals similar to the CHA algorithm. While both approaches share overarching goals, they diverge considerably in implementation and application. First and most important, cSRM used inter-subject functional connectivity rather than within-subject functional connectivity to initially estimate the connectome. As a result, cSRM requires participants to have time-locked fMRI time series. Therefore, unlike our algorithm, the cSRM approach does not support cross-content applications and also is not suitable for use with resting-state data. Second, cSRM is implemented based on a predefined cortical parcellation rather than the overlapping, regularly spaced cortical searchlights applied in our method which are not constrained by areal borders. For the application, cSRM has mainly been used to do ROI analysis rather than the estimation of the whole-brain topography that requires broader coverage of the cortex with a searchlight analysis. Third, our method is specifically designed to work in each individual\u2019s space, while cSRM decomposes data across subjects into shared and subject-specific transformations, focusing on a communal connectivity space. In summary, although cSRM presents a promising alternative for similar aims, its current implementation precludes it from fulfilling the range of applications for which our method is optimized.\n\nThe within-movie and cross-movie CHA predictions generated highly similar topographies (Figure 3). This result raises a fascinating question of whether different movie inputs estimate similar fine-grained connectivity profiles in the brain. Previous studies reported that the coarse-grained connectome (based on coarse parcellations) varies across separate cognitive tasks (Shine et al., 2016; Telesford et al., 2016), and that naturalistic movies yield the most condition-specific functional atlases among other classic cognitive tasks (Salehi et al., 2020). In the Budapest and Sraiders datasets, the same group of participants watched the Grand Budapest Hotel and Raiders of the Lost Ark in different sessions in the same 3 T scanner. We built connectivity profiles for each participant separately for the two movies and correlated the two fine-grained connectomes in each searchlight. Results showed that the two fine-grained connectomes based on different movies were very similar in most of the brain regions (r>0.8, Figure 4\u2014figure supplement 9A, B). We split each movie into two halves (Run 1\u20133/Run 4\u20135 for Budapest; Run 1\u20132/Run 3\u20134 for Sraiders) and averaged the connectome similarities across split halves over searchlights and participants. We found that the across-movie connectome similarities for split halves were high (r>0.74), and the within-movie similarities were even higher in both datasets (r>0.85, Figure 4\u2014figure supplement 9C). Our analysis showed that although the fine-grained connectome was affected by the input naturalistic stimulus content, it was nonetheless highly stable. This result suggested the brain may undergo shared cognitive processes across different movie free-viewing tasks. It could be because featured movies sample a broad range of real-life statistics, and the rich information elicits overall similar representations and connectivities when the entire time series is considered. Studies comparing movie-viewing and resting-state functional connectivity have shown that both paradigms yield overlapping macroscale cortical organizations (Samara et al., 2023), though naturalistic viewing introduces unique modality-specific hierarchical gradients. However, there remains a gap in research comparing the fine-scaled connectomes of naturalistic and resting-state paradigms. Guntupalli et al., 2018, revealed a shared fine-scale structure that coexists with the coarse-scale structure, and CHA successfully improved intersubject correlations across a wide variety of tasks. Feilong et al., 2021, noted that the fine-scaled connectivity profiles in both resting and task states are highly predictive of general intelligence. This suggests a reliable and biologically relevant fine-scale resting-state connectivity structure among individuals. Therefore, it is plausible that individualized functional topography could be effectively estimated using resting-state functional connectivity, expanding the applicability of our approach. Future studies are needed to explore this direction.\n\nThe four datasets in our study included two types of category-selective localizers (dynamic and static). The dynamic localizer used short video clips for each category and the traditional static localizer used still images. For all categories, the dynamic localizer elicited stronger and broader category-selective activations than the static localizer, and the searchlight analysis showed that the dynamic localizer had higher reliabilities across the cortex, especially in regions that were selectively responsive to the target category. Due to differences between topographies activated by the dynamic and the static localizers, predictions across localizer types generated lower correlations than those within localizer types. For example, for the face-selective topographies, the dynamic localizer activated more areas than the static localizer (e.g., in superior temporal and frontal cortices). In the ventral temporal cortex, especially in the right hemisphere, both dynamic and static localizers performed well in the cross-localizer-type predictions. But in cortical areas where the static localizer did not match the dynamic localizer, predictions from the same dynamic localizer always outperformed the predictions from a different static localizer (Figure 4\u2014figure supplement 1, Figure 4\u2014figure supplement 3, and Figure 4\u2014figure supplement 10). The low correlations were not because the prediction method failed but reflected the difference in the topographies activated by different types of localizers.\n\nThis study successfully illustrated that accurate individualized predictions are both robust and applicable across a variety of conditions, including movie types, languages, scanning parameters, and scanner models. Importantly, the intricate connectivity profiles remain consistent even when participants view entirely different movies, as evidenced by Figure 4\u2014figure supplement 9, reinforcing the prediction\u2019s stability in various scenarios. However, all four datasets in this study only included typical participants with anatomically intact brains. An unanswered question is whether individualized topographies of neuropsychological populations with atypical cortical function (e.g., developmental prosopagnosics) or with lesioned brains (e.g., acquired prosopagnosics) could also be accurately predicted using the hyperalignment-based methods. Up to now, as far as we know, no previous literature has investigated this question. Beyond neuropsychological groups, it is also valuable to investigate how well the predictions will be across a wide range of age, from infants to the elderly. Future research is essential to adapt our algorithms to diverse populations.\n\nIn summary, our study demonstrated that accurate predictions of individualized category-selective topographies can be achieved with high fidelity using CHA across different naturalistic movie contents, across different scanners, and across different scanning parameters. Compared to traditional functional localizers, naturalistic stimuli are more ecologically valid, engaging multiple cognitive systems in parallel, and more friendly to participants. Our method not only can be applied directly to current public and in-lab datasets, but has the important potential to allow researchers to derive a broad range of topographies based on naturalistic movies and a normative database in the future. By building such a database that comprises various high-quality topographies and naturalistic stimuli, our study opens the gate to new research possibilities that could integrate high-level cognitive functions across datasets from laboratories worldwide.\n\n## Materials and methods\n\n### Datasets\n\n#### The Budapest dataset\n\nThe Budapest dataset included 20 participants (mean age 27.2 years, 10 females) for this analysis. These participants were scanned while watching both Grand Budapest Hotel and Raiders of the Lost Ark and were a subset of the dataset in Jiahui et al., 2020. The Grand Budapest Hotel dataset contained five movie runs (~50 min, each part lasting 9\u201313 min each) and four dynamic localizer runs. Before entering the scanner, participants watched the first part of the movie (~45 min) outside. The rest of the movie was divided into five parts (each part lasting 9\u201313 min, ~50 min in total) and participants watched each part/run with audio. The dynamic localizer data were collected in a separate scanning section (Pitcher et al., 2011). This dataset comprised four blocked-designed runs (3.9 min each), and each run comprised 10 blocks (18 s each), two per category (faces, bodies, scenes, objects, and scrambled objects). Each block comprised six 3-s-long video clips in random order. Participants did a one-back task during the localizer scan to maintain attention.\n\nAll scans in the Grand Budapest Hotel dataset were acquired using a 3 T S Magnetom Prisma MRI scanner with a 32-channel head coil at the Dartmouth Brain Imaging Center. BOLD images were acquired in an interleaved fashion using gradient-echo echo-planar imaging with pre-scan normalization, fat suppression, multiband (i.e., simultaneous multi-slice) acceleration factor of 4 (using blipped CAIPIRINHA), and no in-plane acceleration (i.e., GRAPPA acceleration factor of 1): TR/TE = 1000/33 ms, flip angle = 59\u00b0, resolution = 2.5 mm3 isotropic voxels, matrix size = 96 \u00d7 96, FoV = 240 \u00d7 240 mm2, 52 axial slices with full brain coverage and no gap, anterior-posterior phase encoding. See more details in Visconti di Oleggio Castello et al., 2020.\n\n#### The Sraiders dataset\n\nThe same participants were included for analysis in the Sraiders dataset as in the Budapest dataset. The movie Raiders of the Lost Ark was split into eight parts (~15 min each), and the first four parts were watched outside of the scanner prior to the scanning (~56 min). The later four parts were watched in the scanner (57 min) with audio (Nastase, 2018). The Sraiders dataset and the Budapest dataset shared the same dynamic localizer data. The Sraiders dataset was collected with the same scan protocols as the Budapest dataset (Nastase, 2018; Feilong et al., 2022).\n\n#### The Forrest dataset\n\nThis dataset contains scans from 15 adults (mean age 29.4 years, 6 females). Participants were scanned at the Otto-von-Guericke University in Germany and were native German speakers (Hanke et al., 2016; Sengupta et al., 2016). The dataset is publicly available at http://www.studyforrest.org/ (Hanke et al., 2014). A shortened version of the movie Forrest Gump was divided into eight parts with each part lasting approximately 15 min. Participants watched each part/run in the scanner with audio (Hanke et al., 2016). A category-selective localizer using still images was included in this dataset. This static localizer comprised four runs (5.2 min each). Each run comprised two 16 s blocks for each of the six categories (human faces, human bodies without heads, small objects, houses and outdoor scenes that include nature and street scenes, and phase scrambled images). In each block, 16 images from one category were displayed (900 ms display + 100 ms intertrial interval each). Participants were asked to do a one-back task to maintain attention.\n\nScanning was carried out using a whole-body 3 T Philips Achieva dStream MRI scanner equipped with a 32-channel head coil. Data were collected with gradient-echo, 2 s repetition time (TR), 30 ms echo time (TE), 90\u00b0 flip angle, 1943 Hz/px bandwidth, and parallel acquisition with sensitivity encoding (SENSE) reduction factor 2. Each volume comprised 35 axial slices with anterior-to-posterior phase-encoding direction that were collected in ascending order, which mostly covered the entire brain. Each slice was 3.0 mm thick with a 10% inter-slice gap, and had a 240\u00d7240 mm2 field-of-view comprising 80\u00d780 3 mm2 isotropic voxels. More acquisition parameters can be found in Hanke et al., 2016, and Sengupta et al., 2016.\n\n#### The Raiders dataset\n\nA subset of nine participants from the original eleven participants (7 men, mean age = 24.8 years) participated in the face and object study at Dartmouth in Haxby et al., 2011, and were included in this dataset. The audio-visual movie Raiders of the Lost Ark was split into eight parts (~15 min each), similarly to those used in the Sraiders Dataset. Participants watched all eight parts in the scanner with audio (one part/per run). The Raiders dataset contains a static localizer that was similarly designed as in the Forrest dataset.\n\nBrain images were acquired using a 3 T Philips Intera Achieva scanner with an eight-channel head coil at Dartmouth College. For the movie study, whole-brain volumes of 413-mm-thick sagittal images (TR = 2.5 s, TE = 35 ms, flip angle = 90\u00b0, 80\u00d780 matrix, FOV = 240\u00d7240 mm2, resolution = 0.938\u00d70.938\u00d71.0 mm3) were obtained in an interleaved slice order. For more details see Haxby et al., 2011.\n\n#### MRI preprocessing\n\nAll datasets were preprocessed with fMRIPrep (Esteban et al., 2019), using version 20.1.1 for the Budapest dataset, 20.2.0 for the Sraiders dataset, 20.1.1 for the Forrest dataset, and 20.1.1 for the Raiders dataset. After fMRIPrep, functional data were projected onto a standard cortical surface aligned to the fsaverage template (Fischl et al., 1999) based on cortical folding patterns. The datasets were further preprocessed following Jiahui et al., 2020; Feilong et al., 2018. The datasets were resampled to a cortical mesh with 18,742 vertices across both hemispheres (approximately 3 mm vertex spacing; 20,484 vertices before removing non-cortical vertices). Six motion parameters and their derivatives, global signal, framewise displacement (Power et al., 2014), six principal components from cerebrospinal fluid and white matter (Behzadi et al., 2007), and polynomial trends up to second order were rf out from both movie and localizer data for each run independently.\n\n### Searchlight hyperalignment\n\n#### CHA (step 1)\n\nEach participant\u2019s connectivity profile was built based on that participant\u2019s movie data. We first defined the connectivity seeds and targets. In this analysis, the connectivity seeds were the same as the surface cortical vertices. The connectivity targets were defined using a sparser cortical surface with 642 vertices in each hemisphere before removing the medial wall. We then centered a 13 mm searchlight on each of these vertices and computed the average time series for the searchlight over vertices from the denser cortical model. The mean time series was assigned to the center vertex to serve as the connectivity target. For each hemisphere, the connectivity profile was calculated as the correlation between the connectivity seeds in this hemisphere and the whole-brain 1175 connectivity targets. The connectivity profile of each participant was normalized to zero mean and unit variance for each connectivity seed before hyperalignment.\n\nWe used an optimized hyperalignment method that directly transforms one participant\u2019s connectivity profile to another participant\u2019s cortical space, without the interim step of projecting the connectome into a common model space (Jiahui et al., 2020). In detail, for each 15 mm searchlight, a participant\u2019s patterns of connectivity to targets were aligned to another participant\u2019s connectivity patterns using the Procrustes transformation. The transformation matrices from each searchlight in a hemisphere were then aggregated into a single transformation matrix for each pair of participants.\n\n#### Response hyperalignment\n\nRHA was applied with the same steps as the CHA. The only difference is that instead of using connectivity profiles in each searchlight for each participant, we directly used the response pattern of the movie (time points of the movie \u00d7 vertices in the searchlight) to align a pair of participants. In this method, response patterns in a pair of participants must be from neural responses to the same movie. Due to this restriction, RHA was only applied to participants from the same dataset.\n\n#### Advanced CHA\n\nUsing dense connectivity targets (e.g., using all 18,742 vertices on the surface) with anatomically aligned data usually generates poor functional correspondence across participants (Busch et al., 2021). It is, however, beneficial to include more targets for calculating connectivity patterns after the first iteration of CHA and repeated iterations to lead to a better solution by gradually aligning the information at finer scales.\n\nWe used six steps to further improve the CHA method. Step 1 was the initial CHA step as described above that was based on the raw anatomically aligned movie data. The resultant transformation matrices were applied to those movie runs, and the hyperaligned data were then used in step 2 to calculate new connectivity patterns and calculate new transformation matrices. We repeated this procedure iteratively six times and derived transformation matrices for each step. In steps 1, 2, and 3, 642\u00d72 (icoorder3, before removing the medial wall) connectivity targets were defined with 13 mm searchlights. In steps 4 and 5, 2562\u00d72 (icoorder 4, before removing the medial wall) connectivity targets were used with 7 mm searchlights to calculate target mean time series. In the final step 6, all 18,742 vertices were included as separate connectivity targets, using each vertex\u2019s time series rather than calculating the mean in a searchlight. Each step of this advanced CHA algorithm increased the prediction performance (Figure 4\u2014figure supplement 2).\n\n### Predicting individual contrast maps\n\n#### Estimating contrast maps from each participant\u2019s own localizer data\n\nWe estimated each participant\u2019s category-selective maps by calculating the unthresholded GLM univariate contrasts using his/her own localizer data in each run and averaging the t-values across all the localizer runs. We included face-, body-, scene-, and object-selective maps in the analysis. The contrast maps in each category were calculated based on the contrast of the target category vs. all the other categories. For example, the face-selective map was calculated using faces vs. all the other categories in the localizer data (e.g., bodies, objects).\n\n#### Estimating contrast maps from other participants\u2019 localizer data\n\nTransformation matrices from each participant to a target participant derived from hyperalignment were applied to the localizer runs of all other participants to project their localizer data into that target participant\u2019s cortical anatomy. These hyperaligned localizer runs and anatomical surface aligned localizer runs were used separately for GLM univariate analysis for each run in each other participant, and then averaged across the t-maps from all runs and all other participants to estimate the target participant\u2019s contrast maps for each category.\n\nIn summary, each participant\u2019s category-selective map was estimated based on that target participant\u2019s own localizer data and on all other participants\u2019 localizer data that was projected into that participant\u2019s cortical space using hyperalignment and anatomical surface alignment (see Figure 1\u2014figure supplement 1). After obtaining these estimated maps, we calculated correlations between the target participant\u2019s category-selective maps based on his/her own localizer data and the maps estimated from other participants\u2019 data (hyperaligned or anatomically aligned). We also calculated Cronbach\u2019s alpha values (Jiahui et al., 2020; Feilong et al., 2018; Jiahui et al., 2022) across the multiple runs to measure the reliability of the category-selective maps for each participant and compared the correlations to the reliability values. Cronbach\u2019s alpha calculates the correlation score between localizer-based maps across the runs, and it reflects the amount of noise in maps based on individual localizer runs. Traditionally, the reliability was estimated based on split-half correlations. The common odd/even split measure underestimated reliability and necessitated recalculation of correlations between maps for only half the data to provide valid comparisons. In contrast, Cronbach\u2019s alpha involves all localizer runs and provides a more accurate statistical estimate of the reliability of the topographies estimated with localizer runs. To measure the local estimation performance and compare that to local reliabilities, we calculated correlations and Cronbach\u2019s alphas in searchlights with a radius of 15 mm.\n",
+      "created_at": "2025-12-04T03:49:11.846123Z"
+    },
+    {
+      "id": "befe0ccd-ac39-4e3e-9d07-6f1ce99ace8e",
+      "submission_id": "230b025d-fd93-4fc0-b4f5-a1c32c244fea",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Ming Meng, https://ror.org/01kq0pv72 South China Normal University China\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.86037.sa0](https://doi.org/10.7554/eLife.86037.sa0)\n\nThis valuable study presents a tool for hyperaligning functional brain topography between individuals, which is based on fMRI connectivity data gathered when participants watched different movies. The tool is validated through strong correlations between functional topographic maps generated from a participant's own localizer data and those derived from other participants' data based on this hyperalignment, even when the training and target participants were drawn from different datasets. The study will potentially be of interest to researchers working with a wide range of fMRI datasets.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Ming Meng, https://ror.org/01kq0pv72 South China Normal University China\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.86037.sa1](https://doi.org/10.7554/eLife.86037.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Cross-movie prediction of individualized functional topography\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, including Ming Meng X as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Chris Baker as the Senior Editor. The following individual involved in the review of your submission has agreed to reveal their identity: Zonglei Zhen (Reviewer #2).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1) Add discussion of the limit of the present hyper alignment approach: for example, to what extent the present hyper alignment approach would be applicable to individuals with atypical functional brain topography such as brain lesion patients with e.g., acquired prosopagnosia? Even in typical populations, while bilateral fusiform face areas can be identified in the majority through functional localizer scans, the left fusiform face area sometimes cannot be found. Moreover, many top-down factors are known to modulate functional brain topography. Due to these factors, brain responses and functional connectivity may be different even when the same subject watched the same movie twice (e.g., Cui et al., 2021).\n\n2) Explain how the length of movie-viewing fMRI may affect the accuracy in predicting the idiosyncratic cortical topography? Similarly, how does the number of participants in the normative database affect the prediction of the category-selective topography? This information is important for the researchers who are interested in using the approach in their studies.\n\n3) The data show that category-selective topography can be accurately estimated using connectivity hyper alignment, regardless of whether different movies are used to calculate the connectome and regardless of other data collection parameters. However, can the functional connectome from resting state fMRI accomplish the same as the movie-watching fMRI? If yes, this would expand the approach to much broader data.\n\n4) The authors averaged the hyper-aligned functional localizer data from all of the subjects to predict individual category-selective topographies. As there is large spatial variability in the functional areas across subjects, averaging the data from many subjects may blur the boundaries of the functional areas. A better solution might be to average those subjects who show highly similar connectome to the target subjects.\n\n5) Add discussion to clarify relations between the present hyperalignment approach and approaches in the literature that address the same question. Specifically, as reviewer #2 pointed out, 'Saygin and her colleagues have demonstrated that structural connectivity fingerprints can predict cortical selectivity for multiple visual categories across cortex (Osher DE et al., 2016, Cerebral Cortex; Saygin et al., 2011, Nat. Neurosci). I think there's a connection between those studies and the current study. If the author can discuss the connection between them, it may help us understand why CHA work so well.' And as reviewer #3 pointed out, 'the authors do not cite a paper that has already successfully demonstrated a functional alignment method that can address exactly this need: a connectivity-based Shared Response Model (cSRM; Nastase et al., 2020, NeuroImage). It would be relevant for the authors to consider the cSRM method in relation to their enhanced CHA method in detail. In particular, both the relative predictive performance as well as associated computational costs would be useful for researchers to understand in considering enhanced CHA for their applications.'\n\n6) Justify the particular six step, iterative approach. That is: why were six steps chosen over any other number? At present, it is not clear if there is an explicit loss function that the authors are minimizing over their iterations. The relative computational cost of six iterations is also likely significant, particularly compared to previous hyperalignment algorithms. A more detailed theoretical understanding of why six iterations are necessary-or if other researchers could adopt a variable number according to the characteristics of their data-would significantly improve the transferability of this method.\n\n7) The existing evaluations for enhanced CHA appear to be entirely based on image-derived correlations. That is, the authors compare the predicted image from CHA with the ground-truth image using correlation. While this provides promising initial evidence, correlation-based measures are often difficult to interpret given their sensitivity to image characteristics such as smoothness. Including Cronbach's \u03b1 reliability as a baseline does not address this concern, as it is similarly an image-based statistic. It would be useful to see additional predictive experiments using frameworks such as time-segment classification, inter-subject decoding, or encoding models.\n\n8) Make available the code for implementing CHA, or justify why this could not be done at the present.\n\nReviewer #1 (Recommendations for the authors):\n\nIn addition to adding more discussions on the limit of the present hyperalignment approach as I mentioned in the public review section, I would suggest more direct comparisons of the current CHA results and previous RHA results. I.e., perhaps consider moving Figure S2 to the main text?\n\nReviewer #3 (Recommendations for the authors):\n\n\u2013 On L336 of The Raiders Dataset, the authors note that a subset of nine of the original eleven participants are included in the current experiments; however, from the current it is not obvious why two participants were excluded.\n\n\u2013 Please confirm the radius of the searchlights used throughout the experiments. For example, in L361 of Connectivity Hyperalignment (Step One) the searchlight is described as 13mm radius, while on L370 of the same section it is a 15mm radius.\n\n\u2013 In Figure S2, I noted the following two typos: In section (A), The second axis description should read \"Values on the x-axis stand for correlations between each target participant's own localized-based topographies and topographies from other participants in the same dataset using CHA.\" In section (B), \"Conbach's alphas\" should be \"Cronbach's alphas.\"\n\n\u2013 In Figure S3, the in-figure legend (e.g., F to B) does not appear to relate to the figure content and is not explained in the figure description.\n\n\u2013 It seems that code for implementing CHA is not currently available, as the GitHub repository listed in the Data Availability (but not in-text) does not contain executable code as far as I can tell. This would be particularly useful for other author's hoping to apply this method in their own datasets!\n",
+      "created_at": "2025-12-04T03:49:11.846123Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T03:49:11.846123Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T03:49:11.846123Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "62f6accb-c228-4217-954f-4f1ad125b3a1",
+      "content_id": "28a9dc1d-68e8-4aa5-a8c6-6f34610fe687",
+      "claim_id": "C1",
+      "claim": "Category-selective functional topographies are a prominent and consistent feature of lateral occipital, ventral temporal, and lateral temporal visual cortices.",
+      "claim_type": "EXPLICIT",
+      "source": "Category-selective functional topographies are a prominent and consistent feature of lateral occipital, ventral temporal, and lateral temporal visual cortices (Downing et al., 2001; Epstein et al., 1999; Grill-Spector and Weiner, 2014; Kanwisher et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple citations to prior research studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:49:11.846123Z"
+    },
+    {
+      "id": "eaab9f24-2560-4976-adb7-83d15255eb8d",
+      "content_id": "28a9dc1d-68e8-4aa5-a8c6-6f34610fe687",
+      "claim_id": "C2",
+      "claim": "Category-selective topographies are mostly similar across individuals but are idiosyncratic in terms of their precise conformation and location.",
+      "claim_type": "EXPLICIT",
+      "source": "Category-selective topographies are mostly similar across individuals but are idiosyncratic in terms of their precise conformation and location (Zhen et al., 2015; Zhen et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to research studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:49:11.846123Z"
+    },
+    {
+      "id": "95156abf-3200-4c88-b829-46271fae40dc",
+      "content_id": "28a9dc1d-68e8-4aa5-a8c6-6f34610fe687",
+      "claim_id": "C3",
+      "claim": "Category-selective topographies and areas are typically mapped in each individual using a functional localizer fMRI scan.",
+      "claim_type": "EXPLICIT",
+      "source": "Because of these idiosyncrasies, category-selective topographies and areas are typically mapped in each individual using a functional localizer fMRI scan (Fedorenko et al., 2010; Saxe et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:49:11.846123Z"
+    },
+    {
+      "id": "ec2a148f-e3d3-4501-9f85-b81dcd8b3a52",
+      "content_id": "28a9dc1d-68e8-4aa5-a8c6-6f34610fe687",
+      "claim_id": "C4",
+      "claim": "Functional localizers map individualized topographies with simple contrasts between responses to different categories, such as contrasting responses to faces versus objects to localize face-selective areas.",
+      "claim_type": "EXPLICIT",
+      "source": "Functional localizers map individualized topographies with simple contrasts between responses to different categories, such as contrasting responses to faces versus objects to localize face-selective areas.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge about functional localizer methodology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:49:11.846123Z"
+    },
+    {
+      "id": "9d4a6efd-59a6-4bc0-9994-556408ff455a",
+      "content_id": "28a9dc1d-68e8-4aa5-a8c6-6f34610fe687",
+      "claim_id": "C5",
+      "claim": "An alternative approach to map category-selective topographies using fMRI data collected while participants view a naturalistic movie has been reported.",
+      "claim_type": "EXPLICIT",
+      "source": "We reported an alternative approach to map category-selective topographies using fMRI data collected while participants view a naturalistic movie (Guntupalli et al., 2016; Haxby et al., 2011; Jiahui et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to the authors' prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:49:11.846123Z"
+    },
+    {
+      "id": "a857cdb8-4684-4da1-8db5-47450d025c96",
+      "content_id": "28a9dc1d-68e8-4aa5-a8c6-6f34610fe687",
+      "claim_id": "C6",
+      "claim": "Movie data are used to calculate transformation matrices using hyperalignment that afford projecting the localizer data from the normative sample into the idiosyncratic cortical topography of new participants.",
+      "claim_type": "EXPLICIT",
+      "source": "Movie data are used to calculate transformation matrices using hyperalignment (Guntupalli et al., 2016; Haxby et al., 2011; Jiahui et al., 2020; Feilong et al., 2018; Feilong et al., 2021; Feilong et al., 2021; Guntupalli et al., 2018) that afford projecting the localizer data from the normative sample into the idiosyncratic cortical topography of new participants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:49:11.846123Z"
+    },
+    {
+      "id": "c0d825e5-997d-4166-a086-26674c41a201",
+      "content_id": "28a9dc1d-68e8-4aa5-a8c6-6f34610fe687",
+      "claim_id": "C7",
+      "claim": "Naturalistic stimuli evoke a rich variety of brain states and engage multiple brain systems in parallel.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike functional localizers, naturalistic stimuli (e.g., movies) evoke a rich variety of brain states and engage multiple brain systems in parallel.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge about naturalistic stimuli.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:49:11.846123Z"
+    },
+    {
+      "id": "43dc68b6-ad21-406f-bfaa-c2eee144bff3",
+      "content_id": "28a9dc1d-68e8-4aa5-a8c6-6f34610fe687",
+      "claim_id": "C8",
+      "claim": "Movies better simulate real-world cognition and better engage participants' attention compared to controlled localizers.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to controlled localizers, movies better simulate real-world cognition and better engage participants' attention (Vanderwal et al., 2015; Vanderwal et al., 2017; Vanderwal et al., 2019), contributing to more ecologically valid and higher-quality maps.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:49:11.846123Z"
+    },
+    {
+      "id": "6d727525-4246-4eae-b098-4e700bf83aec",
+      "content_id": "28a9dc1d-68e8-4aa5-a8c6-6f34610fe687",
+      "claim_id": "C9",
+      "claim": "Movies are more friendly and engaging for special populations, such as young children.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, movies are more friendly and engaging for special populations, such as young children.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on logical inference about the properties of movie stimuli.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:49:11.846123Z"
+    },
+    {
+      "id": "e59f3211-9999-4012-8ca2-2563ca184f8e",
+      "content_id": "28a9dc1d-68e8-4aa5-a8c6-6f34610fe687",
+      "claim_id": "C10",
+      "claim": "Response hyperalignment (RHA) requires that all participants watch the same movie to obtain time-locked responses to the same stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "RHA requires that all participants watch the same movie to obtain time-locked responses to the same stimuli.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge about RHA methodology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:49:11.846123Z"
+    },
+    {
+      "id": "ca41211a-ca64-412e-8f4b-7171263f9eae",
+      "content_id": "28a9dc1d-68e8-4aa5-a8c6-6f34610fe687",
+      "claim_id": "C11",
+      "claim": "Connectivity hyperalignment (CHA) affords calculation of transformation matrices using stimuli that are not the same for normative and index participants.",
+      "claim_type": "EXPLICIT",
+      "source": "CHA, in contrast to RHA, affords calculation of transformation matrices using stimuli that are not the same for normative and index participants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the methodological properties of CHA described in the manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:49:11.846123Z"
+    },
+    {
+      "id": "08c180d5-cecd-4081-8279-c7d277f4db0d",
+      "content_id": "28a9dc1d-68e8-4aa5-a8c6-6f34610fe687",
+      "claim_id": "C12",
+      "claim": "Four different datasets were analyzed, collected with three different movies, three different scanners, and two different types of functional localizers that used dynamic or static stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "We analyzed four different datasets collected with three different movies, three different scanners, and two different types of functional localizers that used dynamic or static stimuli.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the datasets used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:49:11.846123Z"
+    },
+    {
+      "id": "5142dfd0-5ba2-4757-b6a6-114278e5753e",
+      "content_id": "28a9dc1d-68e8-4aa5-a8c6-6f34610fe687",
+      "claim_id": "C13",
+      "claim": "CHA based on participants' connectomes calculated using their responses to movies was able to generate high-fidelity maps of category-selective topographies within datasets that were equivalent to maps estimated using RHA.",
+      "claim_type": "EXPLICIT",
+      "source": "We first demonstrated that CHA based on participants' connectomes that were calculated using their responses to movies was able to generate high-fidelity maps of category-selective topographies within datasets that were equivalent to maps estimated using RHA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:49:11.846123Z"
+    },
+    {
+      "id": "99e07e0a-96fc-46af-9020-a221ffed96c7",
+      "content_id": "28a9dc1d-68e8-4aa5-a8c6-6f34610fe687",
+      "claim_id": "C14",
+      "claim": "Cross-dataset predictions that used connectomes calculated from different movies for the normative and index brains were as good as those from participants in the same dataset.",
+      "claim_type": "EXPLICIT",
+      "source": "Then, critically, we showed that cross-dataset predictions that used connectomes calculated from different movies for the normative and index brains were as good as those from participants in the same dataset.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:49:11.846123Z"
+    },
+    {
+      "id": "d3548883-a236-4b8b-8131-e494f456019c",
+      "content_id": "28a9dc1d-68e8-4aa5-a8c6-6f34610fe687",
+      "claim_id": "C15",
+      "claim": "A target participant's individualized category-selective topography can be accurately estimated using CHA, regardless of whether different movies are used to calculate the connectome and regardless of other data collection parameters.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, we demonstrate that a target participant's individualized category-selective topography can be accurately estimated using CHA, regardless of whether different movies are used to calculate the connectome and regardless of other data collection parameters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:49:11.846123Z"
+    },
+    {
+      "id": "f82ea9ea-b7ec-47a8-95ed-08d5040b56f3",
+      "content_id": "28a9dc1d-68e8-4aa5-a8c6-6f34610fe687",
+      "claim_id": "C16",
+      "claim": "Category-selective topographies estimated with CHA recovered the idiosyncrasies of individuals' topographies, capturing fine details of the individual-specific configuration and extent.",
+      "claim_type": "EXPLICIT",
+      "source": "Category-selective topographies estimated with CHA recovered the idiosyncrasies of individuals' topographies, capturing fine details of the individual-specific configuration and extent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by visual evidence in Figure 1A and experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:49:11.846123Z"
+    },
+    {
+      "id": "eda75d3e-68a6-4565-878b-158e2843934a",
+      "content_id": "28a9dc1d-68e8-4aa5-a8c6-6f34610fe687",
+      "claim_id": "C17",
+      "claim": "Topographies estimated with anatomical alignment generated highly blurred maps that were essentially the same for all participants, losing individual-specific idiosyncratic features.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, topographies estimated with anatomical alignment generated highly blurred maps that were essentially the same for all participants, losing individual-specific idiosyncratic features (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by visual evidence in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:49:11.846123Z"
+    },
+    {
+      "id": "1dde50b4-b2a4-44ae-a69f-f3dc5ff0bfc6",
+      "content_id": "28a9dc1d-68e8-4aa5-a8c6-6f34610fe687",
+      "claim_id": "C18",
+      "claim": "In all four category-selective topographies and in all four datasets, correlations between estimations based on hyperalignment and their own localizer data were significantly higher than the correlations between estimations based on anatomical alignment and each participant's own localizer.",
+      "claim_type": "EXPLICIT",
+      "source": "In all four category-selective topographies and in all four datasets, correlations between estimations based on hyperalignment and their own localizer data were significantly higher than the correlations between estimations based on anatomical alignment and each participant's own localizer (Fisher z-transformed, p<0.001, Bonferroni corrected).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by statistical analysis of experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:49:11.846123Z"
+    },
+    {
+      "id": "2aa36f9b-61b0-47d9-a1b8-41aedfe7f075",
+      "content_id": "28a9dc1d-68e8-4aa5-a8c6-6f34610fe687",
+      "claim_id": "C19",
+      "claim": "Predictions made with hyperalignment were close to and sometimes even exceeded the reliability values calculated with Cronbach's alpha.",
+      "claim_type": "EXPLICIT",
+      "source": "Predictions made with hyperalignment were close to and sometimes even exceeded the reliability values (Figure 1B), which indicate that the predicted category-selective topographies from other participants' data using hyperalignment were as precise and sometimes even better than the topographies estimated with their own localizer data.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:49:11.846123Z"
+    },
+    {
+      "id": "6eb6a95e-894e-4044-8add-1e912d795ed6",
+      "content_id": "28a9dc1d-68e8-4aa5-a8c6-6f34610fe687",
+      "claim_id": "C20",
+      "claim": "Estimates using CHA to calculate transformation matrices were equivalent to estimates using RHA.",
+      "claim_type": "EXPLICIT",
+      "source": "Estimates using CHA to calculate transformation matrices were also equivalent to estimates using RHA (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:49:11.846123Z"
+    },
+    {
+      "id": "dd44dff4-37dc-4c29-b33d-6c4006762213",
+      "content_id": "28a9dc1d-68e8-4aa5-a8c6-6f34610fe687",
+      "claim_id": "C21",
+      "claim": "The cross-movie predictions using CHA outperformed predictions based on anatomical alignment and were nearly as precise as within-movie predictions.",
+      "claim_type": "EXPLICIT",
+      "source": "The cross-movie predictions using CHA outperformed predictions based on anatomical alignment and were nearly as precise as within-movie predictions (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:49:11.846123Z"
+    },
+    {
+      "id": "b46011cb-5f90-4d2f-a441-afabfe4098c3",
+      "content_id": "28a9dc1d-68e8-4aa5-a8c6-6f34610fe687",
+      "claim_id": "C22",
+      "claim": "The superior performance of cross-movie predictions was consistent across datasets and categories.",
+      "claim_type": "EXPLICIT",
+      "source": "The superior performance was consistent across datasets and categories (p<0.001 for all comparisons, Figure 2B) and in all individual participants (Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by statistical analysis and visual evidence in figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:49:11.846123Z"
+    },
+    {
+      "id": "e83e6c06-29bf-480c-8aef-a22c14445167",
+      "content_id": "28a9dc1d-68e8-4aa5-a8c6-6f34610fe687",
+      "claim_id": "C23",
+      "claim": "Accuracies of cross-movie predictions matched and sometimes even exceeded the reliability measures of their own localizer runs.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, accuracies of these predictions matched and sometimes even exceeded the reliability measures of their own localizer runs (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:49:11.846123Z"
+    },
+    {
+      "id": "5adaf419-9f60-497d-a16e-a2d647e2e6dd",
+      "content_id": "28a9dc1d-68e8-4aa5-a8c6-6f34610fe687",
+      "claim_id": "C24",
+      "claim": "Cross-movie predictions of cortical topographies based on different localizer types (static to dynamic or dynamic to static) produced lower correlations than did cross-movie predictions based on the same localizer type.",
+      "claim_type": "EXPLICIT",
+      "source": "Cross-movie predictions of cortical topographies based on different localizer types (static to dynamic or dynamic to static) produced lower correlations than did cross-movie predictions based on the same localizer type (Figure 2\u2014figure supplement 1), consistent with previous reports showing significant differences between topographies estimated by static and dynamic localizers, especially in superior temporal and frontal cortices (Fox et al., 2009; Pitcher et al., 2011).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data and citations to prior research.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:49:11.846123Z"
+    },
+    {
+      "id": "7836b6e8-2c3f-45e6-a95c-f020180d7c49",
+      "content_id": "28a9dc1d-68e8-4aa5-a8c6-6f34610fe687",
+      "claim_id": "C25",
+      "claim": "Searchlights in the high-level visual areas and with strong category selectivity (e.g., ventral temporal cortex, lateral temporal cortex) showed the highest mean correlation values, which often exceeded 0.8.",
+      "claim_type": "EXPLICIT",
+      "source": "Generally, searchlights in the high-level visual areas and with strong category selectivity (e.g., ventral temporal cortex, lateral temporal cortex) showed the highest mean correlation values, which often exceeded 0.8 (Figure 4, Figure 4\u2014figure supplement 1, Figure 4\u2014figure supplement 3, and Figure 4\u2014figure supplement 10).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in multiple figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:49:11.846123Z"
+    },
+    {
+      "id": "58f2b91c-7a5e-4afa-9cbb-5e88c7683d26",
+      "content_id": "28a9dc1d-68e8-4aa5-a8c6-6f34610fe687",
+      "claim_id": "C26",
+      "claim": "The lower mean correlations in other cortices (e.g., sensorimotor cortex) reflect low reliabilities of the localizer runs.",
+      "claim_type": "EXPLICIT",
+      "source": "The lower mean correlations in other cortices (e.g., sensorimotor cortex) reflect low reliabilities of the localizer runs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the experimental data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:49:11.846123Z"
+    },
+    {
+      "id": "e486befb-2faf-4045-b436-048202bc0540",
+      "content_id": "28a9dc1d-68e8-4aa5-a8c6-6f34610fe687",
+      "claim_id": "C27",
+      "claim": "The enhanced CHA used in this study optimized the previous CHA algorithm with iterative steps.",
+      "claim_type": "EXPLICIT",
+      "source": "We used a new, enhanced CHA in this study that optimized our previous CHA algorithm with iterative steps.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the methodological approach used in the study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:49:11.846123Z"
+    },
+    {
+      "id": "1cd5af52-0cc6-4ab5-b1d4-af7558cfd3f3",
+      "content_id": "28a9dc1d-68e8-4aa5-a8c6-6f34610fe687",
+      "claim_id": "C28",
+      "claim": "At the final step (step 6, all vertices were used as connectivity targets) in this analysis, the enhanced CHA generated comparable performance with RHA.",
+      "claim_type": "EXPLICIT",
+      "source": "The iterations improved the prediction performance step by step, and at the final step (step 6, all vertices were used as connectivity targets) in this analysis, the enhanced CHA generated comparable performance with RHA (Figure 4\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 4\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:49:11.846123Z"
+    },
+    {
+      "id": "1d6a207f-522e-44c8-8fa7-c6aab99ec7bd",
+      "content_id": "28a9dc1d-68e8-4aa5-a8c6-6f34610fe687",
+      "claim_id": "C29",
+      "claim": "Even with just one movie run in the training or target dataset, or with a mere five participants in the training group, prediction performance (Pearson r) ranged from about 0.6 to 0.7.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, even with just one movie run in the training or target dataset, or with a mere five participants in the training group, our prediction performance (Pearson r) ranged from about 0.6 to 0.7.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 4\u2014figure supplement 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:49:11.846123Z"
+    },
+    {
+      "id": "95cbe9e4-7dab-4441-ab18-cf74f727ae43",
+      "content_id": "28a9dc1d-68e8-4aa5-a8c6-6f34610fe687",
+      "claim_id": "C30",
+      "claim": "The 1-step method consistently improved the prediction performances across all conditions and datasets compared to the 2-step method.",
+      "claim_type": "EXPLICIT",
+      "source": "The 1-step method consistently improved the prediction performances across all conditions and datasets (Figure 4\u2014figure supplement 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 4\u2014figure supplement 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:49:11.846123Z"
+    },
+    {
+      "id": "5a075050-7537-41b4-882c-fab70e5e9116",
+      "content_id": "28a9dc1d-68e8-4aa5-a8c6-6f34610fe687",
+      "claim_id": "C31",
+      "claim": "The prediction outcomes were quite similar between applying transformation matrices to time series versus directly to contrast maps for both within- and across-datasets predictions.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings indicate that the prediction outcomes were indeed quite similar between the two approaches for both the within- and across-datasets predictions (Figure 4\u2014figure supplement 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 4\u2014figure supplement 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:49:11.846123Z"
+    },
+    {
+      "id": "8ad40709-5a6f-401d-90c4-2fd75e062a12",
+      "content_id": "28a9dc1d-68e8-4aa5-a8c6-6f34610fe687",
+      "claim_id": "C32",
+      "claim": "Using all or part of the participants for the prediction generated similar results.",
+      "claim_type": "EXPLICIT",
+      "source": "Generally, using all or part of the participants for the prediction generated similar results (Figure 4\u2014figure supplement 8).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 4\u2014figure supplement 8.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:49:11.846123Z"
+    },
+    {
+      "id": "c32aaa5f-06c0-4f66-a362-dd7a446a14a5",
+      "content_id": "28a9dc1d-68e8-4aa5-a8c6-6f34610fe687",
+      "claim_id": "C33",
+      "claim": "Using only the top nine participants who are the most similar to the target participants did not significantly improve the prediction compared to using all the participants.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to using all the participants, using only the top nine participants who are the most similar to the target participants did not significantly improve the prediction (Tukey test, z=\u20130.09, p=0.996), but using only the bottom nine participants generated significantly lower prediction accuracies (Tukey test, z=2.492, p=0.034).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by statistical analysis of experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:49:11.846123Z"
+    },
+    {
+      "id": "cd62ab78-634b-4a20-ac18-f60d99f2af2f",
+      "content_id": "28a9dc1d-68e8-4aa5-a8c6-6f34610fe687",
+      "claim_id": "C34",
+      "claim": "Prior work employing diffusion-weighted imaging has underscored the link between anatomical connectivity and category selectivity across diverse visual fields.",
+      "claim_type": "EXPLICIT",
+      "source": "Prior work employing diffusion-weighted imaging has underscored the link between anatomical connectivity and category selectivity across diverse visual fields (Osher et al., 2016; Saygin et al., 2012) and has established a notable congruence between structural and functional connectivities (Hermundstad et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:49:11.846123Z"
+    },
+    {
+      "id": "b0557cff-8295-463f-8466-48439cc07588",
+      "content_id": "28a9dc1d-68e8-4aa5-a8c6-6f34610fe687",
+      "claim_id": "C35",
+      "claim": "The unique anatomical connectivity patterns of individuals may serve as a foundational mechanism, contributing to the stable fine-scale functional connectome.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings suggest that the unique anatomical connectivity patterns of individuals may serve as a foundational mechanism, contributing to the stable fine-scale functional connectome that underpins our approach.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from cited prior research.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:49:11.846123Z"
+    },
+    {
+      "id": "6cd8baba-76d3-4972-8032-75e0d5f6db27",
+      "content_id": "28a9dc1d-68e8-4aa5-a8c6-6f34610fe687",
+      "claim_id": "C36",
+      "claim": "The two fine-grained connectomes based on different movies were very similar in most of the brain regions (r>0.8).",
+      "claim_type": "EXPLICIT",
+      "source": "Results showed that the two fine-grained connectomes based on different movies were very similar in most of the brain regions (r>0.8, Figure 4\u2014figure supplement 9A, B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 4\u2014figure supplement 9.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:49:11.846123Z"
+    },
+    {
+      "id": "b27ac503-4b53-4fe1-80fc-a07e1ab90fc7",
+      "content_id": "28a9dc1d-68e8-4aa5-a8c6-6f34610fe687",
+      "claim_id": "C37",
+      "claim": "The across-movie connectome similarities for split halves were high (r>0.74), and the within-movie similarities were even higher in both datasets (r>0.85).",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the across-movie connectome similarities for split halves were high (r>0.74), and the within-movie similarities were even higher in both datasets (r>0.85, Figure 4\u2014figure supplement 9C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 4\u2014figure supplement 9C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:49:11.846123Z"
+    },
+    {
+      "id": "86333c75-6cbb-4c85-bc48-cd7cd97e322d",
+      "content_id": "28a9dc1d-68e8-4aa5-a8c6-6f34610fe687",
+      "claim_id": "C38",
+      "claim": "The fine-grained connectome was affected by the input naturalistic stimulus content, but was nonetheless highly stable.",
+      "claim_type": "EXPLICIT",
+      "source": "Our analysis showed that although the fine-grained connectome was affected by the input naturalistic stimulus content, it was nonetheless highly stable.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from experimental data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:49:11.846123Z"
+    },
+    {
+      "id": "15e74cc7-3c0a-4bc1-81af-44277a660fe6",
+      "content_id": "28a9dc1d-68e8-4aa5-a8c6-6f34610fe687",
+      "claim_id": "C39",
+      "claim": "The dynamic localizer used short video clips for each category and the traditional static localizer used still images.",
+      "claim_type": "EXPLICIT",
+      "source": "The dynamic localizer used short video clips for each category and the traditional static localizer used still images.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the experimental methods used in the study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:49:11.846123Z"
+    },
+    {
+      "id": "e50d5ee1-80a6-4ba6-893f-52b5742a4ab6",
+      "content_id": "28a9dc1d-68e8-4aa5-a8c6-6f34610fe687",
+      "claim_id": "C40",
+      "claim": "For all categories, the dynamic localizer elicited stronger and broader category-selective activations than the static localizer.",
+      "claim_type": "EXPLICIT",
+      "source": "For all categories, the dynamic localizer elicited stronger and broader category-selective activations than the static localizer, and the searchlight analysis showed that the dynamic localizer had higher reliabilities across the cortex, especially in regions that were selectively responsive to the target category.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:49:11.846123Z"
+    },
+    {
+      "id": "7831c3e2-5beb-48a8-bf50-e75fcc495248",
+      "content_id": "28a9dc1d-68e8-4aa5-a8c6-6f34610fe687",
+      "claim_id": "C41",
+      "claim": "The Budapest dataset included 20 participants (mean age 27.2 years, 10 females).",
+      "claim_type": "EXPLICIT",
+      "source": "The Budapest dataset included 20 participants (mean age 27.2 years, 10 females) for this analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the dataset used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:49:11.846123Z"
+    },
+    {
+      "id": "b3d6a031-af3b-4ece-9939-6fdce2e34772",
+      "content_id": "28a9dc1d-68e8-4aa5-a8c6-6f34610fe687",
+      "claim_id": "C42",
+      "claim": "The Forrest dataset contains scans from 15 adults (mean age 29.4 years, 6 females).",
+      "claim_type": "EXPLICIT",
+      "source": "This dataset contains scans from 15 adults (mean age 29.4 years, 6 females).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the dataset used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:49:11.846123Z"
+    },
+    {
+      "id": "1c94fb0e-b45c-44bf-9e53-274f54d5591d",
+      "content_id": "28a9dc1d-68e8-4aa5-a8c6-6f34610fe687",
+      "claim_id": "C43",
+      "claim": "A subset of nine participants from the original eleven participants (7 men, mean age = 24.8 years) participated in the face and object study at Dartmouth in Haxby et al., 2011, and were included in the Raiders dataset.",
+      "claim_type": "EXPLICIT",
+      "source": "A subset of nine participants from the original eleven participants (7 men, mean age = 24.8 years) participated in the face and object study at Dartmouth in Haxby et al., 2011, and were included in this dataset.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the dataset used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:49:11.846123Z"
+    },
+    {
+      "id": "39e10097-c339-41e7-8926-0b04a90ba81c",
+      "content_id": "28a9dc1d-68e8-4aa5-a8c6-6f34610fe687",
+      "claim_id": "C44",
+      "claim": "All datasets were preprocessed with fMRIPrep.",
+      "claim_type": "EXPLICIT",
+      "source": "All datasets were preprocessed with fMRIPrep (Esteban et al., 2019), using version 20.1.1 for the Budapest dataset, 20.2.0 for the Sraiders dataset, 20.1.1 for the Forrest dataset, and 20.1.1 for the Raiders dataset.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the preprocessing methods used in the study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:49:11.846123Z"
+    },
+    {
+      "id": "d311f4c4-e79a-443c-92f1-fcea843cdf1f",
+      "content_id": "28a9dc1d-68e8-4aa5-a8c6-6f34610fe687",
+      "claim_id": "C45",
+      "claim": "Functional data were projected onto a standard cortical surface aligned to the fsaverage template based on cortical folding patterns.",
+      "claim_type": "EXPLICIT",
+      "source": "After fMRIPrep, functional data were projected onto a standard cortical surface aligned to the fsaverage template (Fischl et al., 1999) based on cortical folding patterns.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the preprocessing methods used in the study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:49:11.846123Z"
+    },
+    {
+      "id": "99776521-fbe1-499b-885d-c26c90722a16",
+      "content_id": "28a9dc1d-68e8-4aa5-a8c6-6f34610fe687",
+      "claim_id": "C46",
+      "claim": "The datasets were resampled to a cortical mesh with 18,742 vertices across both hemispheres (approximately 3 mm vertex spacing; 20,484 vertices before removing non-cortical vertices).",
+      "claim_type": "EXPLICIT",
+      "source": "The datasets were resampled to a cortical mesh with 18,742 vertices across both hemispheres (approximately 3 mm vertex spacing; 20,484 vertices before removing non-cortical vertices).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the preprocessing methods used in the study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:49:11.846123Z"
+    },
+    {
+      "id": "4dc2eb2b-018e-47d5-a37e-bbf391326764",
+      "content_id": "28a9dc1d-68e8-4aa5-a8c6-6f34610fe687",
+      "claim_id": "C47",
+      "claim": "Six motion parameters and their derivatives, global signal, framewise displacement, six principal components from cerebrospinal fluid and white matter, and polynomial trends up to second order were regressed out from both movie and localizer data for each run independently.",
+      "claim_type": "EXPLICIT",
+      "source": "Six motion parameters and their derivatives, global signal, framewise displacement (Power et al., 2014), six principal components from cerebrospinal fluid and white matter (Behzadi et al., 2007), and polynomial trends up to second order were rf out from both movie and localizer data for each run independently.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the preprocessing methods used in the study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:49:11.846123Z"
+    },
+    {
+      "id": "29b4497e-a3bf-4e8d-9a99-43b2f914662e",
+      "content_id": "28a9dc1d-68e8-4aa5-a8c6-6f34610fe687",
+      "claim_id": "C48",
+      "claim": "Cronbach's alpha calculates the correlation score between localizer-based maps across the runs, and it reflects the amount of noise in maps based on individual localizer runs.",
+      "claim_type": "EXPLICIT",
+      "source": "Cronbach's alpha calculates the correlation score between localizer-based maps across the runs, and it reflects the amount of noise in maps based on individual localizer runs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the statistical method used in the study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:49:11.846123Z"
+    },
+    {
+      "id": "51543cc7-4064-49e4-8618-816703cb6d01",
+      "content_id": "28a9dc1d-68e8-4aa5-a8c6-6f34610fe687",
+      "claim_id": "C49",
+      "claim": "Cronbach's alpha provides a more accurate statistical estimate of the reliability of the topographies estimated with localizer runs compared to split-half correlations.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, Cronbach's alpha involves all localizer runs and provides a more accurate statistical estimate of the reliability of the topographies estimated with localizer runs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge about statistical methods.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:49:11.846123Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "f094531f-d047-4c5b-80b0-953aa3db186d",
+      "content_id": "28a9dc1d-68e8-4aa5-a8c6-6f34610fe687",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Category-selective functional topographies in visual cortex are prominent and consistent across individuals but show idiosyncratic variations in precise location and conformation, necessitating individual mapping using functional localizers that contrast responses to different stimulus categories.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C4 establish well-documented background knowledge about category-selective topographies in visual cortex, supported by multiple citations to established literature. These claims accurately describe the current state of knowledge regarding functional localization methods and the rationale for individualized mapping.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:49:11.846123Z"
+    },
+    {
+      "id": "51105f1e-c439-4bd9-953c-a3bcf9110737",
+      "content_id": "28a9dc1d-68e8-4aa5-a8c6-6f34610fe687",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "An alternative approach using naturalistic movie stimuli combined with hyperalignment can map category-selective topographies. Connectivity hyperalignment (CHA) offers advantages over response hyperalignment (RHA) by not requiring participants to watch the same movie, while movies provide more ecologically valid, engaging stimuli that better simulate real-world cognition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C11 establish the methodological foundation and motivation for the study. The advantages of movie stimuli (C7-C9) are supported by citations, and the distinction between RHA and CHA (C10-C11) is clearly articulated. These claims provide appropriate context for the experimental work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:49:11.846123Z"
+    },
+    {
+      "id": "a9d0ebd2-5945-4908-b5d6-f4047a76a977",
+      "content_id": "28a9dc1d-68e8-4aa5-a8c6-6f34610fe687",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Within-dataset predictions using CHA generated high-fidelity maps of category-selective topographies that captured individual-specific idiosyncrasies and were equivalent to RHA-based estimates. CHA-based predictions significantly outperformed anatomical alignment and approached or exceeded the reliability of participants' own localizer data.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C20 are strongly supported by quantitative data in Figures 1B-D showing correlations between predicted and actual topographies. Statistical significance is properly reported (p<0.001, Bonferroni corrected, C18), and comparisons to reliability measures (Cronbach's alpha) provide appropriate benchmarks. Visual evidence in Figure 1A demonstrates preservation of individual-specific features.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:49:11.846123Z"
+    },
+    {
+      "id": "46629af8-e62c-41bc-8082-2bc180f0aac0",
+      "content_id": "28a9dc1d-68e8-4aa5-a8c6-6f34610fe687",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Cross-dataset predictions using CHA with different movies for normative and target participants performed as well as within-dataset predictions, consistently outperforming anatomical alignment across all datasets and categories, with accuracies matching or exceeding the reliability of participants' own localizer runs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14 and C21-C23 represent the central finding of the manuscript and are well-supported by extensive data in Figure 2A-B and supplementary figures. Statistical significance is reported (p<0.001 for all comparisons, C22), and the consistency across datasets, categories, and individual participants strengthens the conclusions. This demonstrates the key innovation of cross-movie prediction.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:49:11.846123Z"
+    },
+    {
+      "id": "36a1b16c-2633-478c-9c3b-d7fc12943a89",
+      "content_id": "28a9dc1d-68e8-4aa5-a8c6-6f34610fe687",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Cross-movie predictions based on different localizer types (static vs. dynamic) produced lower correlations than predictions based on the same localizer type, consistent with known differences between static and dynamic localizer topographies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C24 is supported by data in Figure 2\u2014figure supplement 1 and is appropriately contextualized with citations to prior work showing differences between static and dynamic localizers. This represents an important control analysis demonstrating that prediction quality depends on localizer compatibility.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:49:11.846123Z"
+    },
+    {
+      "id": "75b1e273-882d-4714-ade4-93b3e4cd0c2d",
+      "content_id": "28a9dc1d-68e8-4aa5-a8c6-6f34610fe687",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Searchlight analysis revealed that high-level visual areas with strong category selectivity showed the highest prediction correlations (often exceeding 0.8), while lower correlations in other cortices reflected low localizer reliability rather than prediction failure.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C25 is supported by extensive data in Figure 4 and multiple supplementary figures showing spatial patterns of prediction accuracy. Claim C26 provides a reasonable interpretation of lower correlations in non-visual areas, though this is based on inference rather than direct evidence. The overall pattern is consistent and well-documented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:49:11.846123Z"
+    },
+    {
+      "id": "1f518f8f-8b20-4709-b211-49e71f12d07d",
+      "content_id": "28a9dc1d-68e8-4aa5-a8c6-6f34610fe687",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The enhanced iterative CHA algorithm with six steps progressively improved prediction performance to match RHA. The method showed robustness with minimal data requirements (single movie run or five participants yielding r=0.6-0.7) and the 1-step method consistently outperformed the 2-step approach.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C30 describe methodological optimizations supported by data in Figure 4\u2014figure supplements 4-6. The iterative improvement is demonstrated quantitatively (C28), minimal data requirements are tested systematically (C29), and the 1-step vs 2-step comparison is shown across conditions (C30). These represent important methodological contributions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:49:11.846123Z"
+    },
+    {
+      "id": "044e5fb4-0b3b-4aba-a9de-db2cc1302dd6",
+      "content_id": "28a9dc1d-68e8-4aa5-a8c6-6f34610fe687",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Prediction outcomes were similar whether transformation matrices were applied to time series or contrast maps. Using all participants versus subsets produced similar results, with the top nine most similar participants not significantly improving predictions (p=0.996) but the bottom nine significantly reducing accuracy (p=0.034).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C33 describe methodological validation analyses supported by data in Figure 4\u2014figure supplements 7-8. Statistical tests are appropriately reported for C33 (Tukey test with z-scores and p-values). These analyses demonstrate the robustness of the method to different implementation choices.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:49:11.846123Z"
+    },
+    {
+      "id": "a5e23d80-3b78-4816-a475-7be16c73842d",
+      "content_id": "28a9dc1d-68e8-4aa5-a8c6-6f34610fe687",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Fine-grained connectomes based on different movies were highly similar (r>0.8 in most brain regions), with across-movie split-half similarities of r>0.74 and within-movie similarities of r>0.85. This stability, despite some influence from stimulus content, may be underpinned by individual anatomical connectivity patterns.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C38 provide mechanistic insight into why cross-movie prediction works. C36-C37 are supported by quantitative data in Figure 4\u2014figure supplement 9. C34 appropriately cites prior work linking anatomical and functional connectivity. C35 and C38 represent reasonable inferences from the data, though they remain somewhat speculative about underlying mechanisms.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:49:11.846123Z"
+    },
+    {
+      "id": "a2429ed5-7c5c-4978-95e5-cda22f99918d",
+      "content_id": "28a9dc1d-68e8-4aa5-a8c6-6f34610fe687",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Dynamic localizers using video clips elicited stronger and broader category-selective activations than static localizers using still images, with higher reliabilities across cortex, especially in category-selective regions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C40 describe differences between localizer types. C39 is a straightforward methodological description. C40 is supported by experimental data comparing the two localizer types, though the specific figures are not clearly referenced. This comparison is important for interpreting cross-localizer-type predictions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:49:11.846123Z"
+    },
+    {
+      "id": "d90020c3-31a3-44d5-85ad-3bf330ef394f",
+      "content_id": "28a9dc1d-68e8-4aa5-a8c6-6f34610fe687",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Four datasets were analyzed with different movies, scanners, and localizer types, including Budapest (n=20), Sraiders (n=20), Forrest (n=15), and Raiders (n=9) datasets. All data were preprocessed with fMRIPrep, projected to fsaverage cortical surface, resampled to 18,742 vertices, and subjected to standard nuisance regression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12 and C41-C47 provide essential methodological details about datasets and preprocessing. Sample sizes, scanner parameters, and preprocessing steps are clearly documented. The use of multiple datasets with different acquisition parameters strengthens the generalizability of findings. Preprocessing follows standard practices with appropriate software versions specified.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:49:11.846123Z"
+    },
+    {
+      "id": "aca362c7-9c14-4795-855d-d85fc569ac17",
+      "content_id": "28a9dc1d-68e8-4aa5-a8c6-6f34610fe687",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Cronbach's alpha was used to calculate reliability of localizer-based maps across runs, providing a more accurate statistical estimate than split-half correlations by incorporating all localizer runs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C49 describe the statistical approach for assessing reliability. The rationale for using Cronbach's alpha over split-half correlations is clearly stated and represents an appropriate methodological choice for multi-run data. This provides the noise ceiling for evaluating prediction accuracy.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:49:11.846123Z"
+    },
+    {
+      "id": "a5995c68-e322-46d1-af79-ce433ec28e2e",
+      "content_id": "28a9dc1d-68e8-4aa5-a8c6-6f34610fe687",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "A target participant's individualized category-selective topography can be accurately estimated using CHA regardless of whether different movies are used to calculate the connectome and regardless of other data collection parameters.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C15 represents the main conclusion of the manuscript, synthesizing results from multiple analyses. It is well-supported by the convergent evidence from within-dataset predictions (C13), cross-dataset predictions (C14, C21-C23), robustness analyses (C29-C33), and the demonstration of connectome stability (C36-C38). The claim is appropriately qualified to the conditions tested.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:49:11.846123Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "62f6accb-c228-4217-954f-4f1ad125b3a1",
+      "result_id": "f094531f-d047-4c5b-80b0-953aa3db186d"
+    },
+    {
+      "claim_id": "eaab9f24-2560-4976-adb7-83d15255eb8d",
+      "result_id": "f094531f-d047-4c5b-80b0-953aa3db186d"
+    },
+    {
+      "claim_id": "95156abf-3200-4c88-b829-46271fae40dc",
+      "result_id": "f094531f-d047-4c5b-80b0-953aa3db186d"
+    },
+    {
+      "claim_id": "ec2a148f-e3d3-4501-9f85-b81dcd8b3a52",
+      "result_id": "f094531f-d047-4c5b-80b0-953aa3db186d"
+    },
+    {
+      "claim_id": "9d4a6efd-59a6-4bc0-9994-556408ff455a",
+      "result_id": "51105f1e-c439-4bd9-953c-a3bcf9110737"
+    },
+    {
+      "claim_id": "a857cdb8-4684-4da1-8db5-47450d025c96",
+      "result_id": "51105f1e-c439-4bd9-953c-a3bcf9110737"
+    },
+    {
+      "claim_id": "c0d825e5-997d-4166-a086-26674c41a201",
+      "result_id": "51105f1e-c439-4bd9-953c-a3bcf9110737"
+    },
+    {
+      "claim_id": "43dc68b6-ad21-406f-bfaa-c2eee144bff3",
+      "result_id": "51105f1e-c439-4bd9-953c-a3bcf9110737"
+    },
+    {
+      "claim_id": "6d727525-4246-4eae-b098-4e700bf83aec",
+      "result_id": "51105f1e-c439-4bd9-953c-a3bcf9110737"
+    },
+    {
+      "claim_id": "e59f3211-9999-4012-8ca2-2563ca184f8e",
+      "result_id": "51105f1e-c439-4bd9-953c-a3bcf9110737"
+    },
+    {
+      "claim_id": "ca41211a-ca64-412e-8f4b-7171263f9eae",
+      "result_id": "51105f1e-c439-4bd9-953c-a3bcf9110737"
+    },
+    {
+      "claim_id": "5142dfd0-5ba2-4757-b6a6-114278e5753e",
+      "result_id": "a9d0ebd2-5945-4908-b5d6-f4047a76a977"
+    },
+    {
+      "claim_id": "f82ea9ea-b7ec-47a8-95ed-08d5040b56f3",
+      "result_id": "a9d0ebd2-5945-4908-b5d6-f4047a76a977"
+    },
+    {
+      "claim_id": "eda75d3e-68a6-4565-878b-158e2843934a",
+      "result_id": "a9d0ebd2-5945-4908-b5d6-f4047a76a977"
+    },
+    {
+      "claim_id": "1dde50b4-b2a4-44ae-a69f-f3dc5ff0bfc6",
+      "result_id": "a9d0ebd2-5945-4908-b5d6-f4047a76a977"
+    },
+    {
+      "claim_id": "2aa36f9b-61b0-47d9-a1b8-41aedfe7f075",
+      "result_id": "a9d0ebd2-5945-4908-b5d6-f4047a76a977"
+    },
+    {
+      "claim_id": "6eb6a95e-894e-4044-8add-1e912d795ed6",
+      "result_id": "a9d0ebd2-5945-4908-b5d6-f4047a76a977"
+    },
+    {
+      "claim_id": "99e07e0a-96fc-46af-9020-a221ffed96c7",
+      "result_id": "46629af8-e62c-41bc-8082-2bc180f0aac0"
+    },
+    {
+      "claim_id": "dd44dff4-37dc-4c29-b33d-6c4006762213",
+      "result_id": "46629af8-e62c-41bc-8082-2bc180f0aac0"
+    },
+    {
+      "claim_id": "b46011cb-5f90-4d2f-a441-afabfe4098c3",
+      "result_id": "46629af8-e62c-41bc-8082-2bc180f0aac0"
+    },
+    {
+      "claim_id": "e83e6c06-29bf-480c-8aef-a22c14445167",
+      "result_id": "46629af8-e62c-41bc-8082-2bc180f0aac0"
+    },
+    {
+      "claim_id": "5adaf419-9f60-497d-a16e-a2d647e2e6dd",
+      "result_id": "36a1b16c-2633-478c-9c3b-d7fc12943a89"
+    },
+    {
+      "claim_id": "7836b6e8-2c3f-45e6-a95c-f020180d7c49",
+      "result_id": "75b1e273-882d-4714-ade4-93b3e4cd0c2d"
+    },
+    {
+      "claim_id": "58f2b91c-7a5e-4afa-9cbb-5e88c7683d26",
+      "result_id": "75b1e273-882d-4714-ade4-93b3e4cd0c2d"
+    },
+    {
+      "claim_id": "e486befb-2faf-4045-b436-048202bc0540",
+      "result_id": "1f518f8f-8b20-4709-b211-49e71f12d07d"
+    },
+    {
+      "claim_id": "1cd5af52-0cc6-4ab5-b1d4-af7558cfd3f3",
+      "result_id": "1f518f8f-8b20-4709-b211-49e71f12d07d"
+    },
+    {
+      "claim_id": "1d6a207f-522e-44c8-8fa7-c6aab99ec7bd",
+      "result_id": "1f518f8f-8b20-4709-b211-49e71f12d07d"
+    },
+    {
+      "claim_id": "95cbe9e4-7dab-4441-ab18-cf74f727ae43",
+      "result_id": "1f518f8f-8b20-4709-b211-49e71f12d07d"
+    },
+    {
+      "claim_id": "5a075050-7537-41b4-882c-fab70e5e9116",
+      "result_id": "044e5fb4-0b3b-4aba-a9de-db2cc1302dd6"
+    },
+    {
+      "claim_id": "8ad40709-5a6f-401d-90c4-2fd75e062a12",
+      "result_id": "044e5fb4-0b3b-4aba-a9de-db2cc1302dd6"
+    },
+    {
+      "claim_id": "c32aaa5f-06c0-4f66-a362-dd7a446a14a5",
+      "result_id": "044e5fb4-0b3b-4aba-a9de-db2cc1302dd6"
+    },
+    {
+      "claim_id": "cd62ab78-634b-4a20-ac18-f60d99f2af2f",
+      "result_id": "a5e23d80-3b78-4816-a475-7be16c73842d"
+    },
+    {
+      "claim_id": "b0557cff-8295-463f-8466-48439cc07588",
+      "result_id": "a5e23d80-3b78-4816-a475-7be16c73842d"
+    },
+    {
+      "claim_id": "6cd8baba-76d3-4972-8032-75e0d5f6db27",
+      "result_id": "a5e23d80-3b78-4816-a475-7be16c73842d"
+    },
+    {
+      "claim_id": "b27ac503-4b53-4fe1-80fc-a07e1ab90fc7",
+      "result_id": "a5e23d80-3b78-4816-a475-7be16c73842d"
+    },
+    {
+      "claim_id": "86333c75-6cbb-4c85-bc48-cd7cd97e322d",
+      "result_id": "a5e23d80-3b78-4816-a475-7be16c73842d"
+    },
+    {
+      "claim_id": "15e74cc7-3c0a-4bc1-81af-44277a660fe6",
+      "result_id": "a2429ed5-7c5c-4978-95e5-cda22f99918d"
+    },
+    {
+      "claim_id": "e50d5ee1-80a6-4ba6-893f-52b5742a4ab6",
+      "result_id": "a2429ed5-7c5c-4978-95e5-cda22f99918d"
+    },
+    {
+      "claim_id": "08c180d5-cecd-4081-8279-c7d277f4db0d",
+      "result_id": "d90020c3-31a3-44d5-85ad-3bf330ef394f"
+    },
+    {
+      "claim_id": "7831c3e2-5beb-48a8-bf50-e75fcc495248",
+      "result_id": "d90020c3-31a3-44d5-85ad-3bf330ef394f"
+    },
+    {
+      "claim_id": "b3d6a031-af3b-4ece-9939-6fdce2e34772",
+      "result_id": "d90020c3-31a3-44d5-85ad-3bf330ef394f"
+    },
+    {
+      "claim_id": "1c94fb0e-b45c-44bf-9e53-274f54d5591d",
+      "result_id": "d90020c3-31a3-44d5-85ad-3bf330ef394f"
+    },
+    {
+      "claim_id": "39e10097-c339-41e7-8926-0b04a90ba81c",
+      "result_id": "d90020c3-31a3-44d5-85ad-3bf330ef394f"
+    },
+    {
+      "claim_id": "d311f4c4-e79a-443c-92f1-fcea843cdf1f",
+      "result_id": "d90020c3-31a3-44d5-85ad-3bf330ef394f"
+    },
+    {
+      "claim_id": "99776521-fbe1-499b-885d-c26c90722a16",
+      "result_id": "d90020c3-31a3-44d5-85ad-3bf330ef394f"
+    },
+    {
+      "claim_id": "4dc2eb2b-018e-47d5-a37e-bbf391326764",
+      "result_id": "d90020c3-31a3-44d5-85ad-3bf330ef394f"
+    },
+    {
+      "claim_id": "29b4497e-a3bf-4e8d-9a99-43b2f914662e",
+      "result_id": "aca362c7-9c14-4795-855d-d85fc569ac17"
+    },
+    {
+      "claim_id": "51543cc7-4064-49e4-8618-816703cb6d01",
+      "result_id": "aca362c7-9c14-4795-855d-d85fc569ac17"
+    },
+    {
+      "claim_id": "d3548883-a236-4b8b-8131-e494f456019c",
+      "result_id": "a5995c68-e322-46d1-af79-ce433ec28e2e"
+    }
+  ],
+  "comparisons": []
+}

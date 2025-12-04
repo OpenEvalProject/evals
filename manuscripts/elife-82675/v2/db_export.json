@@ -1,0 +1,1749 @@
+{
+  "submission": {
+    "id": "9455ff0d-3909-4e8d-9c15-3fc835760f73",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-04T01:32:57.161976Z",
+    "updated_at": "2025-12-04T01:32:57.161976Z"
+  },
+  "content": [
+    {
+      "id": "aa0516dd-3d70-42f5-9593-88e0dc805a07",
+      "submission_id": "9455ff0d-3909-4e8d-9c15-3fc835760f73",
+      "content_type": "manuscript",
+      "content_text": "# Precise temporal control of neuroblast migration through combined regulation and feedback of a Wnt receptor\n\n## Authors\n\n- Erik S Schild<sup>1</sup>\n- Shivam Gupta<sup>2</sup>\n- Cl\u00e9ment Dubois<sup>3</sup>\n- Euclides E Fernandes P\u00f3voa<sup>1</sup> ([ORCID: 0000-0002-0920-7783](https://orcid.org/0000-0002-0920-7783))\n- Marie-Anne F\u00e9lix<sup>3</sup>\n- Andrew Mugler<sup>2</sup> ([ORCID: 0000-0001-9367-7026](https://orcid.org/0000-0001-9367-7026)) \u2020\n- Hendrik C Korswagen<sup>1</sup> ([ORCID: 0000-0001-7931-4472](https://orcid.org/0000-0001-7931-4472)) \u2020\n\n### Affiliations\n\n1. Hubrecht Institute, Royal Netherlands Academy of Arts and Sciences and University Medical Center Utrecht Utrecht Netherlands ([ROR:043c0p156](https://ror.org/043c0p156))\n2. Department of Physics and Astronomy, Purdue University West Lafayette United States ([ROR:02dqehb95](https://ror.org/02dqehb95))\n3. Institut de Biologie de l'Ecole Normale Sup\u00e9rieure, CNRS, INSERM Paris France ([ROR:02feahw73](https://ror.org/02feahw73))\n4. Department of Physics and Astronomy, University of Pittsburgh Pittsburgh United States ([ROR:01an3r305](https://ror.org/01an3r305))\n5. Institute of Biodynamics and Biocomplexity, Department of Biology, Utrecht University Utrecht Netherlands ([ROR:04pp8hn57](https://ror.org/04pp8hn57))\n\n\u2020 Corresponding author\n\n## Abstract\n\nMany developmental processes depend on precise temporal control of gene expression. We have previously established a theoretical framework for regulatory strategies that can govern such high temporal precision, but experimental validation of these predictions was still lacking. Here, we use the time-dependent expression of a Wnt receptor that controls neuroblast migration in Caenorhabditis elegans as a tractable system to study a robust, cell-intrinsic timing mechanism in vivo. Single-molecule mRNA quantification showed that the expression of the receptor increases non-linearly, a dynamic that is predicted to enhance timing precision over an unregulated, linear increase in timekeeper abundance. We show that this upregulation depends on transcriptional activation, providing in vivo evidence for a model in which the timing of receptor expression is regulated through an accumulating activator that triggers expression when a specific threshold is reached. This timing mechanism acts across a cell division that occurs in the neuroblast lineage and is influenced by the asymmetry of the division. Finally, we show that positive feedback of receptor expression through the canonical Wnt pathway enhances temporal precision. We conclude that robust cell-intrinsic timing can be achieved by combining regulation and feedback of the timekeeper gene.\n\n## Introduction\n\nTiming plays a central role in development, coordinating processes ranging from cell division (Tyson and Novak, 2008) and differentiation (Ray et al., 2022), to the complex segmentation (Dequ\u00e9ant and Pourqui\u00e9, 2008) and limb development of vertebrate embryos (Pickering et al., 2018). To measure time, biological clocks generally utilize a component that increases or decreases in activity or abundance (a timer) or cycles through a high and low state (an oscillator) and triggers a response when a specific threshold is crossed (Gliech and Holland, 2020). An example of such a biological clock is the time-dependent expression of Neuropilin-1 in retinal ganglion cells (RGCs), which influences the trajectory of the outgrowing RGC axons (Baudet et al., 2011; Campbell et al., 2001). Here, the clock mechanism consists of a transcriptional repressor (CoREST) that gradually decreases in abundance as a result of miRNA dependent inhibition and releases Neuropilin-1 expression once it reaches a specific threshold. With its dependence on protein production, degradation and molecular interactions between proteins, such a timekeeping mechanism is inherently noisy, raising questions on the regulatory strategies that biological clocks have evolved to increase precision.\n\nIn clocks that act across multiple cells, robustness can be increased through averaging, synchronization through intercellular communication (Dequ\u00e9ant and Pourqui\u00e9, 2008; Oates, 2020) or entrainment using external signals (Aydogan et al., 2020; Bell-Pedersen et al., 2005). The cell intrinsic mechanisms that control the timekeeping mechanism itself are, however, still poorly understood. Mathematical modeling has provided insight into regulatory circuits that can enhance timing precision. One mechanism for temporal regulation is the constant production of a stable timer molecule, which leads to a gradual accumulation and activation of the time-dependent response once a specific abundance threshold is reached. Modeling has shown that such a linear increase is more precise than a strategy where the timer molecule positively regulates its own expression, as such autoregulation also amplifies the noise (Ghusinga et al., 2017). Using a first-passage time approach, we have recently shown that a regulated strategy where the timekeeping molecule increases non-linearly over time can increase precision (Gupta et al., 2018). Such regulation can be mediated through an accumulating transcriptional activator or a gradually decreasing transcriptional repressor that controls the expression of the timekeeper molecule in a threshold-dependent manner, and we showed this to be robust to additional effects such as cell division and bursts in transcription (Gupta et al., 2018). Moreover, in contrast to autoregulation on its own, we found that precision could be further increased when the regulator was combined with autoregulation of the timekeeper (Gupta et al., 2020). It is not known, however, if this predicted regulatory strategy is utilized by biological clocks in vivo.\n\nThe migration of the Caenorhabditis elegans QR neuroblast descendants is controlled in a time-dependent fashion (Mentink et al., 2014) and provides a tractable system to study a biological clock at the single-cell level in vivo. QR is born in the mid-body as a sister cell of the hypodermal seam cell V5 and divides at the beginning of the first larval stage into an anterior daughter cell called QR.a and a posterior daughter QR.p (Figure 1A). Both daughter cells migrate a relatively long distance toward the anterior and divide at highly stereotypic positions to generate descendants that differentiate into neurons (Sulston and Horvitz, 1977). While QR.a divides only once to generate QR.ap and an apoptotic sister cell QR.aa, QR.p first divides into QR.pa and an apoptotic sister cell QR.pp. QR.pa continues with a short-range migration toward the anterior but then stops to divide into QR.paa and QR.pap, which migrate dorsally and ventrally to occupy their final positions, where they differentiate into a mechanosensory neuron and an interneuron, respectively. Compared to other neurons that undergo long-range migration in C. elegans, the final position of the QR.p descendants was found to be robust to stochastic variation (Dubois et al., 2021).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/82675/elife-82675-fig1-v2.jpg)\n\n**Figure 1.:** (A) Schematic representation of the QR lineage and the migration of the QR descendants. V1\u2013V6 are seam cells, used as landmarks to determine the position of QR and its descendants. For clarity, the QR.a branch of the QR lineage is not represented. (B) Single-molecule FISH (smFISH) quantification of mig-1 expression in QR and its descendants relative to the position of the seam cells H2 to V5. n=200 from 11 independent experiments, with three replicates each. (C) DNA content in division-blocked QR.p (QR.p*), relative to 2C (Vn.p) seam cells. The DNA content of QR.p* does not significantly deviate from 4C (p=0.31, n=32, from five independent experiments, with three replicates each), indicating the cells do not undergo an additional S-phase after the division is blocked. Whiskers represent 1.5x interquartile range. (D) Representative images of mig-1 smFISH spots in cdk-1(hu277[AID::cdk-1]). Top: control without auxin and bottom: QR.p division is blocked in the presence of auxin. Scale bar is 10 \u00b5m. Green Fluorescent Protein (GFP) is expressed in the seam cells and the Q neuroblast descendants (heIs63; Wildwater et al., 2011). (E) smFISH quantification of mig-1 expression in QR and its descendants relative to the position of the seam cells H2 to V5 in cdk-1(hu277[AID::cdk-1]) in the absence (left) and presence (right) of auxin. Data are from seven independent experiments, with three replicates each.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/82675/elife-82675-fig1-figsupp1-v2.jpg)\n\nThe anterior migration of QR.p and QR.pa is dependent on Wnt signaling (Mentink et al., 2014; Rella et al., 2021). Wnt proteins are an evolutionarily conserved family of extracellular ligands that can signal through a canonical, \u03b2-catenin-dependent pathway to induce the expression of specific target genes, or through \u03b2-catenin-independent, non-canonical pathways that directly influence cytoskeletal dynamics (Angers and Moon, 2009; Clevers and Nusse, 2012). We have previously shown that the anterior migration of QR.p and QR.pa is mediated through parallel acting non-canonical Wnt pathways that separately control speed and polarity (Mentink et al., 2014). Once QR.pa reaches its final position, migration is stopped through activation of canonical, BAR-1/\u03b2-catenin-dependent Wnt signaling, which induces the expression of target genes that inhibit migration (Rella et al., 2021). This switch in signaling response is mediated through the Wnt receptor MIG-1/Frizzled (Mentink et al., 2014). Quantitative in vivo measurement of mig-1 expression using single-molecule FISH (smFISH) showed that mig-1 expression is rapidly upregulated in QR.pa, and transgenic rescue experiments demonstrated that mig-1 is both necessary and sufficient for migration termination (Mentink et al., 2014). Importantly, we found that this upregulation is not dependent on positional information but that the expression of mig-1 is temporally regulated. Thus, in mutants in which the QR descendants migrate at a slower speed, mig-1 is still expressed at the same time but at a more posterior position, while in animals with faster migrating QR descendants, mig-1 is expressed at a more anterior position. These results demonstrate that mig-1 expression is regulated through a timing mechanism and that the final position of the QR descendants is determined by the speed of migration and the time at which mig-1 expression is induced. Consistent with such a timing mechanism, the final QR descendants localize to a more anterior position in mutants with a shorter body size and at a more posterior position in animals with a longer body size, although it should be noted that some compensation takes place at the level of migration speed (Dubois et al., 2021).\n\nHere, we combine mutant analysis and mathematical modeling to examine the timekeeping mechanism that controls mig-1 expression in the QR lineage. We show that the rapid upregulation of mig-1 expression in QR.pa is dependent on transcriptional activation, supporting a model in which the non-linear increase in mig-1 expression is mediated through threshold-crossing of an accumulating transcriptional activator. We find that this timing mechanism acts across the division of QR.p but is influenced by the asymmetry of the division. Finally, we show that positive feedback of mig-1 expression through the canonical Wnt pathway decreases temporal variability. We conclude that robust timing of gene expression can be achieved by combining an accumulating transcriptional activator with feedback regulation of the timekeeper molecule.\n\n## Results\n\n### Temporal regulation of mig-1 expression in the QR lineage is independent of cell division and cell cycle progression\n\nDuring the anterior migration of the QR descendants, mig-1 expression is low in QR.p but is strongly upregulated in its daughter QR.pa (Mentink et al., 2014; Figure 1B), where it triggers the canonical Wnt signaling response that is necessary to stop migration (Rella et al., 2021). The presence of a cell division prior to the upregulation of mig-1 expression \u2013 the timing of which is tightly controlled as part of the invariant cell lineage of C. elegans development (Sulston and Horvitz, 1977) \u2013 raises the question whether the two are mechanistically linked. To investigate whether the upregulation of mig-1 expression is dependent on the division of QR.p (or subsequent cell cycle reentry in QR.pa), we blocked QR.p mitosis by conditionally depleting the M-phase regulator CDK-1 using the auxin inducible protein degradation system (Zhang et al., 2015). In this system, proteins tagged with an auxin inducible degron (AID) sequence are degraded in the presence of auxin and the F-box protein TIR1 (Zhang et al., 2015). We endogenously tagged cdk-1 with the AID sequence (AID::CDK-1) using CRISPR/Cas9-mediated genome editing and specifically expressed TIR1 in the Q neuroblast lineage using the egl-17 promoter (Branda and Stern, 2000). Since continuous exposure to auxin would block all divisions in the QR lineage, auxin was only applied from the stage at which QR has completed its division (300\u2013345 min after hatching). We found that this efficiently inhibited the subsequent division of QR.p and its sister cell QR.a, as judged by the absence of their descendants (the apoptotic QR.pp and QR.aa cells and the neuronal QR.paa, QR.pap, and QR.ap cells).\n\nStudies in yeast and mammalian cells have shown that loss of CDK1 not only inhibits mitosis but also cell cycle reentry and DNA replication (Coudreuse and Nurse, 2010). To investigate if the cell cycle is similarly blocked in the undivided QR.p cells, we examined DNA content by measuring total 4\u2019,6-diamidino-2-phenylindole (DAPI) fluorescence at a time point at which the daughter of QR.p (QR.pa) would normally have divided into the final descendants QR.paa and QR.pap (8\u20139 hr after hatching) and normalizing to total DAPI fluorescence of the Vn.p (seam) cell nuclei, which have two unreplicated sets of chromosomes (2C) at this stage in L1 larval development (Hedgecock and White, 1985) and have a similarly sized nucleus. When mitosis and subsequent cell cycle progression is blocked by CDK-1 depletion, the DNA content of the replicated but non-divided QR.p nucleus is expected to be 4C. However, if cycling and DNA replication continues, a DNA content of 8C or higher is expected. As shown in Figure 1C, we observed no significant deviation from a DNA content of 4C. These results show that CDK-1 depletion inhibits mitosis as well as cell cycle reentry in the undivided QR.p cells.\n\nNext, we measured mig-1 expression in the AID::CDK-1 strain using smFISH (Ji et al., 2013). In the absence of auxin, mig-1 expression was not significantly different from animals containing wild type CDK-1 (Figure 1B, D and E). Importantly, however, we found that in the presence of auxin, upregulation of mig-1 expression in undivided QR.p cells occurs at a similar time and range of expression as in the control animals (Figure 1D and E). We conclude that the temporal regulation of mig-1 expression is independent of the cell cycle and QR.p division.\n\n### The early and late phases of mig-1 expression are independently regulated\n\nThe expression of mig-1 in the QR lineage occurs in two phases (Mentink et al., 2014; Figure 1B): an early phase in which it is expressed in the QR neuroblast, followed by a rapid decrease during QR polarization (Ji et al., 2013) and low expression in QR.p until mig-1 is upregulated again in QR.pa (the late phase). To gain insight into the transcriptional regulation of mig-1, we made the assumption that cis-regulatory elements that control the expression of mig-1 are under stabilizing selection and therefore conserved across species (Gord\u00e2n et al., 2010; Harbison et al., 2004; Nitta et al., 2015). By comparing the upstream region and first intron of mig-1 in 23 Caenorhabditis species, we found eight conserved 25 bp motifs that are located in four closely linked pairs (Figure 2\u2014figure supplement 1, Figure 3\u2014figure supplement 1).\n\nTwo pairs of motifs are located in the first intron (motif pair A and B; Figure 2A, Figure 2\u2014figure supplement 1). To test if these motifs are required for the expression of mig-1, we independently deleted each of the two pairs using CRISPR/Cas9-mediated genome editing and quantified the number of mig-1 transcripts in QR and its descendants using smFISH. While deletion of motif pair B had no effect on mig-1 expression, deletion of motif pair A strongly reduced the early expression of mig-1 in the QR neuroblast (Figure 2B and C). The late expression of mig-1 in QR.pa was, however, not affected by deletion of this motif pair. Moreover, using the final position of the QR.pa daughter cell QR.pap as a measure of total migration distance, we found that the final position of the QR descendants was not significantly different from control animals (Figure 2\u2014figure supplement 2). This is consistent with the observation that only the late phase of mig-1 expression is required for correct QR descendant migration (Mentink et al., 2014). Taken together, these results show that intron motif pair A is necessary for the early but not the late expression of mig-1 and support the notion that the two phases are independently regulated.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/82675/elife-82675-fig2-v2.jpg)\n\n**Figure 2.:** (A) Schematic representation of the two conserved intron regions that were deleted from the mig-1 locus. Green rectangles are exons, the gray dashed line is the upstream region, and black solid lines are introns. The orange rectangles represent the deleted regions that contain intron motif pair A (\u0394intron A) and intron motif pair B (\u0394intron B). Data are from three independent experiments, with three replicates each. (B) Single-molecule FISH (smFISH) quantification of mig-1 expression in QR and its descendants relative to the position of the seam cells H2 to V5 in control and the intron deletion mutants hu295 (intron deletion A) and hu299 (intron deletion B). AP, anteroposterior. (C) Quantification of mig-1 smFISH spots in QR (***p<0.0001, n=30, Welch\u2019s t-test). Whiskers represent 1.5x interquartile range. (D) Mathematical model for the mig-1 dynamics $mt$ regulated by an increasing activator (left) or decreasing repressor (right), fit to the control data (see Materials and methods and Figure 2-figure supplement 3). The sequences of the intron motifs in 23 different Caenorhabditis species are in Figure 2\u2014figure supplement 1. Figure 2\u2014figure supplement 2 shows that deletion of the intron motif pairs does not significantly change the final position of QR.pap.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/82675/elife-82675-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Intron motifs A.1 and A.2 are in intron motif pair A and motifs B.1 and B.2 in intron motif pair B.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/82675/elife-82675-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** The position of QR.pap relative to the seam cells V1.p and V2.p in control, the two mig-1 intron deletions, and the mig-1(e1787) loss-of-function allele. AP, anteroposterior. mig-1(e1787), p<0.0001, n=55. Welch\u2019s t-test, data are from three independent experiments with three replicates each. Whiskers represent 1.5x interquartile range.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/82675/elife-82675-fig2-figsupp3-v2.jpg)\n\n### A dynamical model of the temporal regulation of mig-1 expression\n\nTaking into account that the late phase of mig-1 expression is independent of cell division and the early phase of expression, we developed a dynamical model of a cell-intrinsic timer mechanism driving mig-1 transcription. Since the speed of QR.p migration \u2013 which crosses most of the distance covered by the QR descendants \u2013 is roughly constant (Mentink et al., 2014), we treated distance along the anteroposterior axis as proportional to time. To account for the decrease (QR), followed by the increase (QR.pa), in the mig-1 amount over time, we hypothesized that mig-1 mRNA is continuously degraded and upregulated by a component with its own dynamics: either a transcriptional activator that increases in time or a repressor that decreases in time (Gupta et al., 2018). Thus, the dynamics of mig-1 mRNA number $m$ are described by $dm/dt=-\u03bdm+Ft$, where $\u03bd$ is the degradation rate, and $Ft$ accounts for the regulation. For the activator model, we set $Ft=\\alphaa^{H}/a^{H}+K^{H}$, where the activator molecule number increases with rate $k$ according to $at=kt$. For the repressor model, we set $Ft=\\alphaK^{H}/r^{H}+K^{H}$, where the repressor molecule number decreases with rate \u03bc from initial value $r_{0}$ according to $rt=r_{0}e^{-\\mut}$. In both models, $\\alpha$ is the maximal production rate of mig-1, $H$ is the Hill coefficient, and $K$ is the half-maximal value of the regulator. Fitting either model to the mig-1 expression data (see Materials and methods) gave good agreement (Figure 2D, Figure 2\u2014figure supplement 3). Consistent with the intron motif pair A deletion data, we found that lowering the initial mig-1 amount ($m0=0$) does not affect the later upregulation dynamics (Figure 2D). Therefore, the model captures the observation that early and late mig-1 expression dynamics are independently regulated.\n\n### The late phase of mig-1 expression is dependent on two conserved, upstream activating cis-regulatory elements\n\nThe increasing transcriptional activator model and the decreasing transcriptional repressor model make contrasting predictions if the regulator is removed. Removing the activator does not influence mig-1 expression at early timepoints and only prevents upregulation of mig-1 at later timepoints (Figure 3A). Conversely, removing the repressor causes premature upregulation at early timepoints (Figure 3A). To gain insight into the transcriptional regulation of the late phase of mig-1 expression and to test the predictions of the activator and repressor models, we focused on conserved motifs in the mig-1 upstream region.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/82675/elife-82675-fig3-v2.jpg)\n\n**Figure 3.:** (A) Mathematical model with decreasing activator production rates $k=6.6,5.6,4.6,0$ (left) or decreasing initial repressor numbers $r_{0}=19,13,7,0$ (right). (B) Schematic representation of the two conserved regions in the mig-1 upstream sequence. Green rectangles are exons, the gray dashed line is the upstream region, and black solid lines are introns. The orange rectangles represent the deleted regions that contain upstream motif pair #1 (\u0394upstream 1) and upstream motif pair #2 (\u0394upstream 2). (C) Single-molecule FISH (smFISH) quantification of mig-1 expression in QR and its descendants relative to the position of the seam cells H2 to V5 in control and deletion mutants of the two regions upstream of mig-1. None of the deletions affect the early phase of mig-1 expression in the QR neuroblast (hu314 \u0394upstream 1), p=0.59, n=22; hu315 (\u0394upstream 2), p=0.07, n=40; hu335 (\u0394upstream 1\u20132), p=0.89, n=22, Welch\u2019s t-test. The upregulation of mig-1 expression in QR.pa is not significantly changed in \u0394upstream 1 (p=0.44, n=51) but is significantly reduced in \u0394upstream 2 (p<0.0001, n=83) and abolished in the double \u0394upstream 1\u20132 deletion (p<0.0001, n=29). Data are from eight independent experiments with three replicates for \u0394upstream 1 and 2 and three independent experiments with three replicates for the double \u0394upstream 1\u20132 deletion. The sequences of the upstream motifs in 23 different Caenorhabditis species are in Figure 3\u2014figure supplement 1. Figure 3\u2014figure supplement 2 shows the effect of the upstream motif pair deletions on the final position of QR.pap.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/82675/elife-82675-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Upstream motifs 1.1 and 1.2 are in upstream pair #1 and motifs 2.1 and 2.2 in upstream pair #2.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/82675/elife-82675-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** The position of QR.pap relative to the seam cells V1.p and V2.p of control, the single and double deletions of the mig-1 upstream motif pairs, and the mig-1(e1787) loss-of-function allele. All upstream motif pair deletion mutants showed significant overmigration of QR.pap hu314 (upstream motif pair 1): p=0.0017, n=60; hu315 (upstream motif pair 2): p<0.0001, n=50; hu335 (upstream motif pair 1\u20132 double mutant): p<0.0001, n=88, Welch\u2019s t-test. Data are from three independent experiments with three replicates each. Whiskers represent 1.5x interquartile range.\n\nTwo pairs of conserved, closely spaced motifs were identified in a 3 kb region upstream of the mig-1 locus (Figure 3B, Figure 3\u2014figure supplement 1): a distal pair (#1) at 2781\u20132571 bp and a proximal pair (#2) at 267\u2013137 bp from the start of the mig-1 coding sequence. Using CRISPR/Cas9-mediated genome editing, we individually deleted each of the motif pairs and also created a double mutant in which both pairs are deleted simultaneously. None of the deletions had an effect on the early phase of mig-1 expression in the QR neuroblast (Figure 3C). However, we found that in the double deletion mutant, the late phase of mig-1 expression in QR.pa was completely lost (Figure 3C). A similar but less penetrant reduction was observed in the single motif pair 2 deletion, while in the motif pair 1 deletion a minor fraction of QR.pa cells failed to upregulate mig-1 expression (Figure 3C), a difference that did not result in a statistically significant difference in the mean expression of mig-1. Consistent with the role of the late phase of mig-1 expression in terminating the anterior migration of QR.pa, the average position of QR.pa (p<0.0001 for the single and double deletions) and the total migration of the QR descendants (as determined from the final position of QR.pap) was shifted anteriorly (Figure 3\u2014figure supplement 2). As expected, this effect on total migration distance was most pronounced in the double deletion and the single motif pair 2 deletion, but there was also significant overmigration in the motif pair 1 deletion mutant, indicating that the mild reduction in mig-1 expression observed in this mutant is still sufficient to affect the final position of the QR descendants. Taken together, these results demonstrate that the two motif pairs represent partially redundant cis-regulatory elements that are required for the late phase of mig-1 expression and provide further support for the conclusion that the early and late phases of the expression are independently regulated.\n\nImportantly, the loss of the late phase of mig-1 expression \u2013 instead of premature expression earlier in the lineage \u2013 is in agreement with the activator model, not the repressor model, of mig-1 regulation (Figure 3A).\n\n### Asymmetry of the QR.p division is required for upregulation of mig-1 expression in QR.pa\n\nThe division of QR.p that precedes the upregulation of mig-1 expression in QR.pa is asymmetric in the size and fate of its daughter cells: the large anterior daughter cell QR.pa remains a neuroblast, while the small posterior daughter cell QR.pp undergoes apoptosis and is rapidly engulfed and degraded by neighboring cells (Sulston and Horvitz, 1977). Although we found that the division per se is not necessary for the late phase of mig-1 expression, the size difference of the daughter cells and potentially unequal inheritance of the mig-1 activator could contribute to the temporal regulation of mig-1 expression.\n\nTo investigate the role of the asymmetric division of QR.p in mig-1 regulation, we first compared mig-1 expression in the two daughter cells using a null mutation in the essential cell death regulator ced-3 to prevent apoptosis of QR.pp (Ellis and Horvitz, 1986). As expected, loss of ced-3 did not affect the upregulation of mig-1 expression in QR.pa (Figure 4A). In contrast, the number of mig-1 transcripts that could be detected in the surviving QR.pp cells remained low. These results indicate that mig-1 is differently regulated in the two daughter cells. Next, we investigated if disrupting the asymmetry of the QR.p division affects the expression of mig-1 in QR.pa and QR.pp. A key regulator of asymmetric neuroblast division is the serine/threonine kinase PIG-1/MELK (Cordes et al., 2006), which controls the size difference of the QR.p daughters by inducing posterior displacement of the mitotic spindle (Chien et al., 2013) and may also contribute to the asymmetric segregation of cell fate determinants (Chien et al., 2013). As expected from these previous studies, loss of pig-1 resulted in a variable defect in cell size asymmetry, with a significant reduction in the mean cell size difference between QR.pa and QR.pp (Figure 4B). smFISH analysis showed that mig-1 expression in QR.pa was significantly decreased under these conditions (Figure 4A). However, there was no corresponding increase in the number of mig-1 transcripts in QR.pp, and no evidence of active transcription \u2013 which is visible as one or two bright smFISH spots in the nucleus (Ji et al., 2013) \u2013 was observed. To examine if mig-1 expression in QR.pa correlates with the level of cell size asymmetry, we compared the size ratio of QR.pa/QR.pp pairs with mig-1 expression in QR.pa. As shown in Figure 4C, we found a moderate correlation, with QR.pa cells from less asymmetric pairs showing lower mig-1 expression than QR.pa cells from more asymmetric pairs.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/82675/elife-82675-fig4-v2.jpg)\n\n**Figure 4.:** (A) Single-molecule FISH (smFISH) quantification of mig-1 expression in QR and its descendants relative to the position of the seam cells H2 to V5 in control, ced-3(n717), and pig-1(gm344) mutants. mig-1 expression in QR.pa is not significantly different between control and ced-3 mutants (p=0.36, n=34, Welch\u2019s t-test) but is significantly reduced in pig-1 mutants (p<0.0001, n=56). Data are from four independent experiments with three replicates each. (B) The size ratio of QR.pa and QR.pp in control (heIs63) and pig-1(gm344) mutants (***p<0.0001, n=48, from three independent experiments with three replicates each). Whiskers represent 1.5x interquartile range. (C) The QR.pa/QR.pp size ratio and mig-1 expression show a moderately positive correlation in pig-1(gm344) mutants (Pearson correlation, R=0.47, n=48). (D) Nuclear size is not significantly different in QR.p and its daughter QR.pa in wild type control animals (p=0.22, n=12, Welch\u2019s t-test). Whiskers represent 1.5x interquartile range. (E) Mathematical model incorporating cell division, fit to control data (see Materials and methods and Figure 4\u2014figure supplement 1) with wild type QR.pa/QR.pp size ratio $\u03c1=3.5$ (dark colors) and for lowered size ratios $\u03c1=2.7,1.8,1$ (light colors). Dashed line: time corresponding to moment in QR lineage migration that seam cell V2 is reached. Gray box: time window corresponding to gray region in F. (F) Plot of mig-1 molecule number in QR.pa vs. QR.pa/QR.pp size ratio in model at times between $t=3$ and $t=3.3$ (gray region) and at the midpoint time $t=3.15$ (black line).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/82675/elife-82675-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** For the fits, the QR.pa/QR.pp size ratios from Figure 4B were used (3.48 for control and 1.83 for pig-1[gm344], respectively).\n\nTo understand the effect of division asymmetry on mig-1 expression, we returned to our activator-based mathematical model. First, we incorporated QR.p division into the model at a time inferred from the data (see Materials and methods). Because no active transcription of mig-1 was observed in QR.pp experimentally, we set the mig-1 production rate to zero in QR.pp. Despite changes in the overall cell size, we experimentally observed that the nuclear size of QR.pa is not significantly different from that of its parent QR.p (Figure 4D). Since the activator is likely a transcription factor and therefore acts in the nucleus, the nuclear concentration of the activator in QR.pa should thus depend on its molecule number but not the cell size. Therefore, as before, we assumed that the production of mig-1 in QR.pa is dependent on the number of molecules, and not the concentration, of the activator. Finally, because the nuclear envelope breaks down before division, we assumed that at division, both the activator and preexisting mig-1 transcripts are distributed according to the relative sizes of QR.pa and QR.pp. Thus, at the division time, both the activator and mig-1 transcript numbers in QR.p are multiplied by a factor of $f$ in QR.pa and $1-f$ in QR.pp, where $f=\u03c1/1+\u03c1$ for a given QR.pa/QR.pp size ratio $\u03c1$. The solution to this model with parameters fit to the control data (see Materials and methods and Figure 4\u2014figure supplement 1) and the wild type mean $\u03c1=3.5$ is shown in Figure 4E (dark colors). We observed that decreasing the QR.pa/QR.pp size ratio leads to reduced mig-1 levels in the QR.pa dynamics (Figure 4E, light colors), consistent with the experiments (Figure 4A). Correspondingly, plotting the mig-1 level as a function of the size ratio gave a positive dependency in the model (Figure 4F), which is in agreement with the positive correlation in the experiments (Figure 4C). We conclude that the asymmetry of the QR.p division, with the concomitant difference in cell size and the share of the mig-1 activator that is inherited by the two daughter cells, is required for upregulation of mig-1 expression in QR.pa.\n\n### Positive feedback regulation enhances timing precision of mig-1 expression\n\nMathematical modeling of the regulator-based timekeeping mechanism has shown that temporal precision is enhanced when the regulated timekeeper molecule amplifies its own expression through positive feedback (Gupta et al., 2020), but the in vivo relevance of this predicted strategy is not known.\n\nmig-1 encodes a Frizzled Wnt receptor that triggers a BAR-1/\u03b2-catenin-dependent signaling pathway in QR.pa that induces the expression of target genes that inhibit migration (Mentink et al., 2014; Rella et al., 2021). Interestingly, mRNA sequencing showed that mig-1 itself is among the genes that are significantly upregulated when BAR-1 signaling is prematurely activated in QR.p using a constitutively active, N-terminally truncated version of BAR-1 (\u0394N-BAR-1; Rella et al., 2021). To examine this further, we quantified mig-1 expression in bar-1(ga80) null mutants (Eisenmann et al., 1998) using smFISH. As shown in Figure 5\u2014figure supplement 1, mig-1 expression in QR.pa was significantly reduced in the absence of BAR-1 signaling. These results support the notion that MIG-1 stimulates its own expression through BAR-1/\u03b2-catenin-dependent positive feedback.\n\nNext, we investigated whether positive feedback regulation of mig-1 expression influences timing precision. Because BAR-1 signaling inhibits QR.pa migration (Mentink et al., 2014), the mean position of QR.pa is shifted anteriorly in the bar-1 null mutant and posteriorly in \u0394N-BAR-1 expressing animals (Figure 5A). We therefore used the coefficient of variation (CV, standard deviation divided by the mean) in position as a relative measure of timing noise across these different conditions. As shown in Figure 5B, the CV in the position at which QR.pa expresses mig-1 at \u226525 transcripts was increased in both the bar-1 null mutant and animals expressing \u0394N-BAR-1.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/82675/elife-82675-fig5-v2.jpg)\n\n**Figure 5.:** (A) Single-molecule FISH (smFISH) quantification of mig-1 expression in QR.p and QR.pa relative to the position of the seam cells H2 to V5 in control, bar-1(ga80) null mutants and animals expressing a constitutively active, N-terminally truncated version of BAR-1 (\u0394N-BAR-1) in a mab-5(gk670) mutant background. Data are from four independent experiments with three replicates each. (B) Coefficient of variation (CV) squared of the position of QR.pa cells with \u226525 mig-1 smFISH spots. Brown\u2013Forsythe test for thresholds of 10\u201325 transcripts gives p=0.07\u20130.9 for control vs. bar-1(ga80), and 3\u00d710\u20136 to 0.008 for control vs. \u0394N-BAR-1. Inset: CV2 in the model in which positive feedback acts on mig-1 both through the activator and independently of the activator (see Figure 5\u2014figure supplement 2, purple).\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/82675/elife-82675-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Number of mig-1 mRNA spots in QR.pa in control, bar-1(ga80) null mutants and \u0394N-BAR-1 expressing animals. Significantly lower mig-1 expression (p=0.018, n=77, Welch\u2019s t-test) was observed in the bar-1(ga80) null mutant. Data are from four independent experiments, with three replicates each. Whiskers represent 1.5x interquartile range.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/82675/elife-82675-fig5-figsupp2-v2.jpg)\n\n**Figure 5\u2014figure supplement 2.:** (A) The three possibilities considered for modeling feedback mediated by bar-1 (denoted B): (1) left, the feedback acts on mig-1 (M) independently of the activator A; (2) middle, the feedback acts on mig-1 through the activator; (3) both. (B) The activator dynamics (top row) and mig-1 dynamics (bottom row) for possibilities 1, 2, and 3 (red, cyan, and purple, respectively), fit to the control data (left), bar-1(ga80) null data (middle), and \u0394N-BAR-1 data (right). See Materials and methods for fitting procedures and parameter values. (C) Coefficient of variation (CV) values (squared) for the data (left, from Figure 5B), possibility 1 (middle), and possibility 3 (right) for mig-1 threshold $m\\geqm_{\u2217}=25$.\n\nTo model the positive feedback, we considered three possibilities: the positive feedback (1) acts on mig-1 independently of the activator, (2) acts on mig-1 through the activator, or (3) both (Figure 5\u2014figure supplement 2A). In all cases, we neglected cell division and mig-1 degradation for simplicity, and we calculated the CV in the time at which $m$ reaches a threshold numerically from the master equation following our previous work (Gupta et al., 2018). In case 1, we found that removing the feedback has little effect on the CV because the removal does not affect the dynamics of the activator (Figure 5\u2014figure supplement 2), and the timing precision of an activated species is only marginally improved by autoregulation (Gupta et al., 2020). In case 2, because removing the feedback affects the dynamics of the activator but not the activation function of mig-1, we found that the removal produces mig-1 dynamics that are dramatically different from those observed in the bar-1 null and \u0394N-BAR-1 data (Figure 5\u2014figure supplement 2). In case 3, because removing the feedback affects both the dynamics of the activator and the activation function of mig-1, we found that the removal produces linear mig-1 dynamics whose CV is significantly larger than that with the feedback intact (Figure 5B inset and Figure 5\u2014figure supplement 2). Since the bar-1 null and \u0394N-BAR-1 data are more linear (Figure 5A) and have a higher CV (Figure 5B) than the control data, we conclude that case 3 best describes the positive feedback. These results provide experimental support for the model prediction that positive feedback of a regulated timekeeper enhances timing precision.\n\n## Discussion\n\nMathematical modeling of biological timekeeping mechanisms has provided insight into regulatory strategies that can achieve hightemporal precision (Gupta et al., 2020; Gupta et al., 2018), but the relevance of these predicted mechanisms for in vivo timekeeping remains to be determined. Using the time-dependent expression of the Wnt receptor gene mig-1/Frizzled in the C. elegans QR neuroblast lineage as a model system, we provide experimental evidence for a mechanism that combines regulation and positive feedback to mediate precise temporal control of gene expression.\n\nIn its most basic form, timing can be achieved through the linear increase of a stable timekeeper molecule that induces a response when a specific abundance threshold is reached (Ghusinga et al., 2017). Using mathematical modeling, we have previously shown that the temporal precision at which this threshold is crossed is enhanced when the concentration of the timekeeper molecule increases in a non-linear fashion due to upstream regulation (Gupta et al., 2018). Moreover, we showed that such a non-linear increase can be mediated through either the gradual accumulation of a transcriptional activator or the gradual decrease of a transcriptional repressor, which induces the expression of the timekeeper gene in a threshold-dependent manner (Gupta et al., 2018). As an experimental model to test these predictions, we used the time-dependent expression of the Wnt receptor mig-1 (Mentink et al., 2014; Rella et al., 2021). Quantification of mig-1 expression during QR lineage progression showed that it is sharply upregulated in QR.pa, which is consistent with a non-linear mode of regulation. However, we found that mig-1 is also expressed in the QR founder cell, raising the question whether these early and late phases of mig-1 expression are linked. Examination of evolutionarily conserved cis-regulatory elements that we deleted from the endogenous mig-1 locus using CRSPR/Cas9-mediated genome-editing showed that the two phases are independently regulated. Thus, we identified a small region in the first intron that is required for the early expression of mig-1 in QR but is dispensable for the late phase of expression in QR.pa. Conversely, two partially redundant regions upstream of the mig-1 coding sequence are required for the late phase of expression but have no detectable role in the early expression. The early phase of mig-1 expression could therefore be disregarded in the analysis of the late phase of expression, which was confirmed using a dynamic model that was fit to the mig-1 expression data.\n\nThe dynamic model also made predictions on the regulation of mig-1 expression. In an activator-based model, removal of the activator disrupts the upregulation of mig-1 expression in QR.pa, while in the case of a repressor, removal of the repressor results in premature expression of mig-1 in QR.p. We found that mig-1 expression in QR.pa was lost when the presumptive binding sites of the mig-1 regulator were deleted from the mig-1 upstream region, which supports the conclusion that the time-dependent expression of mig-1 depends on transcriptional activation and not on repression.\n\nAnother prediction from our mathematical modeling is that the timing precision of a regulated timekeeper system can be enhanced when the timekeeper molecule also stimulates its own expression through positive feedback (Gupta et al., 2020). mig-1 encodes a Frizzled-type Wnt receptor that triggers a canonical, BAR-1/\u03b2-catenin-dependent signaling pathway which induces the expression of target genes controlling QR.pa migration (Mentink et al., 2014; Rella et al., 2021). We found that the expression of mig-1 is enhanced through BAR-1/\u03b2-catenin signaling, creating a positive feedback loop. Using the relative position at which QR.pa upregulates mig-1 expression as a measure of timing precision, we discovered that timing was more variable when this feedback loop was disrupted through loss or constitutive activation of the BAR-1 pathway. Our modeling suggested that this effect is consistent with feedback on mig-1 that acts both (1) independently of the activator and (2) through the activator pathway; either type alone was insufficient. We, therefore, speculate that BAR-1/\u03b2-catenin-dependent positive feedback on mig-1 acts through multiple pathways. Our model assumed that disrupting the feedback disrupts the activator dynamics completely (the activator level becomes static in time). We also assumed that all of the positional variability in the disrupted cases comes from the expression dynamics and not, for example, from altered variability in the migration speed. Investigating feedback-independent contributions to the activator dynamics or perturbations to migration speed are interesting avenues for future study.\n\nAn intriguing aspect of the mig-1 timer is that it acts across the division of QR.p into QR.pa and its apoptotic sister cell QR.pp. Inhibition of QR.p mitosis and cell cycle progression through depletion of the M-phase regulator CDK-1 showed that the temporal regulation of mig-1 expression is independent of the division, ruling out a model in which the expression of mig-1 is linked to the invariant developmental timing of C. elegans cell divisions. However, even though the division itself is not necessary for the upregulation of mig-1 expression, we found that the asymmetry of the QR.p division influences the expression dynamics of mig-1. Our mathematical model allowed us to make predictions regarding the effect of cell division on the timing of mig-1 expression upregulation. First, the model assumed that upregulation is governed by the activator molecule number, not concentration. This assumption is justified by our finding that the activator acts transcriptionally in a cell whose nuclear size does not change upon division. However, for regulators that act post-transcriptionally or for cells whose nuclear volume changes upon division, the model would predict that the upregulation is governed by the cellular or nuclear concentration of the regulator, respectively, and not its molecule number. Second, the model assumes that the activator and mig-1 transcripts are partitioned at division according to cell volume. This assumption is critical, particularly for the activator. If instead the activator were sequestered to QR.pa, for example, the molecule number would not change after division, and the dynamics of mig-1 expression upregulation, therefore, would not depend on the QR.pa/QR.pp size ratio. Consequently, we predict that the activator is not sequestered at division and that unequal partitioning of the mig-1 activator between the differently sized daughter cells is necessary for the upregulation of mig-1 expression in QR.pa.\n\nExamination of conserved cis-regulatory elements upstream of mig-1 showed that two small, partially redundantly acting regions are required for the upregulation of mig-1 expression in QR.pa. Chromatin immunoprecipitation followed by deep sequencing experiments (Araya et al., 2014) show that both regions overlap with binding peaks of multiple transcription factors, including homeobox transcription factors that are known to regulate Q neuroblast descendant migration (Clark et al., 1993), providing an entry point for the identification of the transcriptional regulators that control mig-1 expression. Molecular insight into the expression dynamics and activity of these regulators will provide further insight into how robust timing precision can be mediated through a regulator-based timekeeping mechanism.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Gene (Caenorhabditis elegans)</td>\n      <td>mig-1</td>\n      <td>Wormbase</td>\n      <td>Wormbase ID: WBGene00003238</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (C. elegans)</td>\n      <td>cdk-1</td>\n      <td>Wormbase</td>\n      <td>Wormbase ID: WBGene00000405</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (C. elegans)</td>\n      <td>ced-3</td>\n      <td>Wormbase</td>\n      <td>Wormbase ID: WBGene00000417</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (C. elegans)</td>\n      <td>pig-1</td>\n      <td>Wormbase</td>\n      <td>Wormbase ID: WBGene00021012</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (C. elegans)</td>\n      <td>bar-1</td>\n      <td>Wormbase</td>\n      <td>Wormbase ID: WBGene00000238</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain and strain background (C. elegans)</td>\n      <td>For strains used in this study, see Supplementary file 1b</td>\n      <td>This paper</td>\n      <td></td>\n      <td>Strains are available upon request.</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>Pegl-17::tir1::TagBFP::unc-54 3\u2019 UTR in pDESTR4-R3</td>\n      <td>This paper</td>\n      <td>pKN618</td>\n      <td>See Materials and methods. Plasmid is available upon request.</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>For sgRNA and ssODN sequences used for CRISPR/Cas9-based gene editing, see Supplementary file 1c</td>\n      <td>This paper</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound and drug</td>\n      <td>Auxin (natural indole-3-acetic acid)</td>\n      <td>Alfa Aesar</td>\n      <td>#A10556</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software and algorithm</td>\n      <td>R Studio</td>\n      <td>https://www.r-project.org/</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software and algorithm</td>\n      <td>MATLAB</td>\n      <td>https://www.mathworks.com/</td>\n      <td></td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### C. elegans strains and culture\n\nAll C. elegans strains were grown at 20\u00b0C using standard culture conditions unless otherwise stated. The Bristol N2 strain was used as a wild type control. The alleles and transgenes generated and used in this work are: LGI: mig-1(hu295)[\u0394intron A]; mig-1(hu299)[\u0394intron B]; mig-1(hu314)[\u0394upstream 1]; mig-1(hu315)[\u0394upstream 2]; mig-1(hu335)[\u0394upstream 1\u20132]; LGIII: huIs210[Pegl-17::tir1::TagBFP, Pmyo-2::TdTomato], cdk-1(hu277[AID::cdk-1]); mab-5(gk670); LGIV: huIs179[Pegl-17::\u0394N-bar-1, Pmyo-2::mCherry]; pig-1(gm344); ced-3(n717); LGV: heIs63[Pwrt-2::GFP::PH, Pwrt-2::GFP::H2B, Plin-48::mCherry]; LGX: bar-1(ga80); huIs166[Pwrt-2::mCherry::PH, Pwrt-2::mCherry::H2B, dpy-20(+)]. Details on CRISPR/Cas9-mediated genome edits can be found in Supplementary file 1a and a list of strains used in this study is in Supplementary file 1b.\n\n### C. elegans expression constructs and transgenesis\n\nThe Q lineage-specific TIR1 expressing transgene huEx744 was generated by microinjection of expression construct pKN618 (Pegl-17::tir1::TagBFP::unc-54 3\u2019 untranslated region [UTR]) in the pDESTR4-R3 backbone plasmid at 20 ng/\u00b5l, using 5 ng/\u00b5l Pmyo-2::mCherry as co-injection marker. pBluescriptII was added for a final DNA concentration of 150 ng/\u00b5l in the microinjection mix. huIs210 was generated by genomic integration of huEx744 using gamma irradiation.\n\n### CRISPR/Cas9-mediated genome editing\n\nThe allele cdk-1(hu277[AID::cdk-1]) was generated using CRISPR/Cas9-based genome editing, dpy-10 co-conversion, and single-stranded DNA repair templates as previously described (Paix et al., 2015). Alleles mig-1(hu295) and mig-1(hu299) were generated using CRISPR/Cas9-based genome editing, pha-1 co-conversion, and single-stranded DNA repair templates (Ward, 2015). Alleles mig-1(hu314), mig-1(hu315), and mig-1(hu335) were generated using CRISPR/Cas9-based genome editing as described (Dokshin et al., 2018). PCR fragments containing the T7 promoter and the single guide RNA (sgRNA) sequence of interest were used to synthesize sgRNA in vitro. Repair templates and sgRNAs were co-injected with recombinant SpCas9 (D\u2019Astolfo et al., 2015). sgRNAs and repair template sequences can be found in Supplementary file 1c.\n\n### Analysis of QR descendant migration\n\nThe final position of the QR descendant QR.pap was determined using widefield fluorescence microscopy at the late L1 larval stage (between 12 and 16 hr after hatching). In all experiments, transgenic animals expressing GFP in the seam cells and the Q lineage were used (transgene heIs63; Wildwater et al., 2011). The position of QR.pap was determined by measuring the distance of QR.pap to the seam cells V1.p and V2.p. This distance was then normalized to the distance between V1.p and V2.p to determine the relative position of QR.pap to these cells. The average of two position measurements (one using V1.p and one using V2.p) was used in the analyses. Measurements were performed using the FIJI package (Schindelin et al., 2012).\n\n### Single-molecule FISH\n\nThe smFISH protocol was performed as described (Ji et al., 2013; Ji and van Oudenaarden, 2012). In all experiments, transgenic animals expressing GFP or mCherry in the seam cells and the Q neuroblast lineage were used (heIs63 and huIs166, respectively; Wildwater et al., 2011). Synchronized L1 larvae were fixed using 4% paraformaldehyde and kept in 70% ethanol. Hybridization was performed overnight at 37\u00b0C, in the dark. Oligonucleotide probes used in hybridization were designed using the Stellaris probe designer and chemically coupled to fluorescent dyes Cy5 (mig-1; Ji and van Oudenaarden, 2012) or ATTO565 (larp-1, a positive control for smFISH staining quality). Animals were incubated in buffer containing DAPI for nuclear counterstaining prior to mounting. Z-stacks of 0.2\u20130.3 \u00b5m thickness were collected on a Perkin Elmer Ultraview VoX mounted on a Leica DMI6000 microscope with a 100\u00d7/NA 1.47 oil objective, or a Nikon Ti2 microscope with a 100\u00d7/NA 1.45 oil objective. Both systems used a Yokogawa X1 spinning disk and Hamamatsu Orca Flash4.0 V3 camera. Images were acquired at 1024\u00d71024 resolution. mRNA spots were quantified manually from the z-stacks. Only spots detected in two or more consecutive focal planes were counted. Image analysis was performed in FIJI (Schindelin et al., 2012).\n\n### AID of CDK-1\n\nThe Arabidopsis thaliana TIR1 protein was expressed as an integrated transgene driven by the egl-17 promoter (huIs210; Branda and Stern, 2000). This ensured CDK-1 was only depleted in the Q neuroblast lineage. By transferring L1 larvae to plates containing 0.5 mM natural auxin indole-3-acetic acid (Alfa Aesar, #A10556) during the time window between QR and QR.p division (300\u2013345 min after hatching), QR.p division was specifically blocked.\n\n### Quantification of DNA content\n\nDNA content was determined using images from smFISH experiments as follows. Per cell, the range of focal planes spanning the nucleus was determined. A z-stack of the focal planes with the nucleus was then made using the \u2018sum slices\u2019 option in FIJI. A region of interest (ROI) was subsequently drawn around the nucleus, and total intensity was measured in the ROI. Intensity measurements from multiple seam (Vn.p) cells were averaged as the 2C internal control for each animal. The intensity of DAPI staining in QR.p was then divided by this average internal control to produce the DNA content ratio. A ratio of 1 corresponds to 2C, a ratio of 2\u20134C, and a ratio of 4\u20138C.\n\n### Identification of evolutionarily conserved regions in the mig-1 upstream region and first intron\n\nThe homologous gene of C. elegans mig-1 was first identified in 22 other Caenorhabditis species using the BLASTP algorithm on the following genomes: Caenorhabditis monodelphis (JU1667_v1), Caenorhabditis plicata (SB355_v1), Caenorhabditis virilis (JU1968_v1), Caenorhabditis quiockensis (C. sp. 38, JU2809_v1), Caenorhabditis castelli (JU1956_v1), Caenorhabditis uteleia (C. sp. 31, JU2585_v1), Caenorhabditis afra (JU1286_v1), Caenorhabditis sulstoni (C. sp.32, JU2788_v1), Caenorhabditis waitukubuli (C. sp. 39, NIC564_v1), Caenorhabditis panamensis (C. sp. 28, QG2080_v1), Caenorhabditis becei (C. sp. 29, QG2083_v1), Caenorhabditis nouraguensis (JU2079_v1), Caenorhabditis kamaaina (QG2077_v1), Caenorhabditis inopinata (C. sp. 34, NK74SC_v1), Caenorhabditis tropicalis (JU1373_301), Caenorhabditis doughertyi (JU1771_v1), Caenorhabditis brenneri (C_brenneri-6.0.1b), Caenorhabditis latens (PX534_v1), Caenorhabditis briggsae (CB4), Caenorhabditis sinica (JU800_v1), Caenorhabditis tribulationis (C. sp. 40, JU2818_v1), and Caenorhabditis zanzibari (C. sp. 26, JU2190_v1). BLASTP was performed on this set of species on http://caenorhabditis.org/. We then looked for motif conservation in mig-1 regulatory regions in this set of species using the MEME Suite tools (Bailey et al., 2009) with the following parameter settings: -mod zoops, -nmotifs 4, -minw 8, and -maxw 18 for the first intron and -mod zoops, -nmotifs 4, -minw 10, and -maxw 25 for the upstream region.\n\n### Fitting of mathematical model to data\n\nWe find the parameters of either the increasing activator model or the decreasing repressor model (Figure 2D) using a least-squares fit to the control data (Figure 2B). Specifically, to find $m0$ and $\u03bd$, we perform a linear fit to the log of the mig-1 mRNA number for the QR data only, corresponding to exponential decay; we find $m0=31$ mRNAs and $\u03bd^{-1}=0.65$ (in the arbitrary time units of Figure 2D). Then, to find the remaining parameters, we fit the numerical solution of the $dm/dt$ equation to all of the control data, minimizing the sum of the squares of both the vertical and horizontal residuals, scaled by the average value of mRNA number and time across all data, respectively. For the activator model, we find $\\alpha=390$, $K/k=3.0$, and $H=14$. For the repressor model, we find $\\alpha=130$, $\\muH=6.7$, and $Hlnr_{0}/K=18$. The high value of the Hill coefficients here and below is a reflection of the fact that mig-1 expression remains low in QR.p cells and then increases very sharply in QR.pa cells. Because we model this increase with a single regulating species, whereas mig-1 is likely regulated by more than one species in reality, the Hill coefficient can be viewed as an effective parameter rather than a biochemical constant. Furthermore, we see that some parameters need only be determined in particular combinations. The reason is the following. For the activator model, plugging $at=kt$ into $Ft=\\alphaa^{H}/a^{H}+K^{H}$ obtains $Ft=\\alpha/1+K/kt^{H}$, which depends only on the ratio $K/k$. For the repressor model, plugging $rt=r_{0}e^{-\\mut}$ into $Ft=\\alphaK^{H}/r^{H}+K^{H}$ obtains $Ft=\\alpha/1+r_{0}e^{-\\mut}/K^{H}=\\alpha/{1+expHlnr_{0}/K-\\muHt}$, which depends only on the combinations $Hlnr_{0}/K$ and $\\muH$. Although these parameter combinations are sufficient to specify the mig-1 dynamics, for illustrative purposes, we plot example activator and repressor dynamics consistent with these values in Figure 2D by choosing $K=20$ for the activator model (giving $k=6.6$), and $K=5$ and $H=14$ for the repressor model (giving $r_{0}=19$ and $\\mu=0.48$). For the zero initial mig-1 condition (Figure 2D), we set $m0=0$.\n\nTo find the division time from the control data (Figure 4A), we count the cumulative number of QR.p data points as a function of position (moving posteriorly), count the cumulative number of QR.pa data points as a function of position (moving anteriorly), and find the position at which these numbers are equal. This position is $T=2.32$ in the arbitrary time units of Figure 4E. The QR.pa dynamics from the model with division, using the wild type mean size ratio $\u03c1=3.5$, are fit to the control data using the same procedure as above, yielding the parameters $\\alpha=240$, $K/k=2.6$, and $H=17$. This fit is shown for QR.p, QR.pa, and QR.pp in Figure 4E (dark colors). To illustrate the effect of decreasing size ratio $\u03c1$, we also plot these dynamics with $\u03c1=2.7,1.8,1$ in Figure 4E (light colors). To illustrate the dependence of the QR.pa mig-1 molecule number $mt$ on the size ratio $\u03c1$, we plot $mt$ vs. $\u03c1$ at times between $t=3$ and $t=3.3$ (gray region) and at the midpoint time $t=3.15$ (black line) in Figure 4F.\n\n### Modeling the effect of feedback on timing precision\n\nTo model the effect of BAR-1/$\\beta$-catenin dependent feedback on the noise in mig-1 expression, we consider three possibilities: (1) the feedback acts on mig-1 independently of the activator (Figure 5\u2014figure supplement 2A, left), (2) the feedback acts on mig-1 through the activator (Figure 5\u2014figure supplement 2A, middle), or (3) both (Figure 5\u2014figure supplement 2A, right). In all cases, we neglect cell division and mig-1 degradation for simplicity, and we set $t=0$ using the rightmost position data point in Figure 5A (\u0394N-BAR-1). We calculate the mean $t\u00af$ and variance $\\sigma_{t}^{2}$ in the time at which $m$ reaches its threshold $m_{\u2217}$ numerically from the master equation following our previous work (Gupta et al., 2018).\n\nPossibility 1 (Figure 5\u2014figure supplement 2A, left) corresponds to the dynamics $at=kt$ and $dm/dt=Fa,m$. Both the bar-1(ga80) null mutant and the constitutively active \u0394N-BAR-1 break the feedback, corresponding to $Fa,m=Fa$. In these cases, we take $Fa=\\alpha/1+K/a^{H}$ as before. For the control case, previous work Gupta et al., 2020 found that this topology reduces noise when the feedback is negative for low $a$ and positive for high $a$. The simplest modification that achieves this property is $Fa,m=\\alpha/1+K/a^{H_{0}m}$, corresponding to a regulation function that sharpens with $m$. Because breaking the feedback can also affect the activation parameters for this topology, we fit the bar-1(ga80) and \u0394N-BAR-1 cases separately from the control case. Fitting as above results in $\\alpha=260$, $K/k=3.4$, and $H_{0}=6.7$ for the control (Figure 5\u2014figure supplement 2B, left, red); $\\alpha=490$, $K/k=4.2$, and $H=13$ for bar-1(ga80) (Figure 5\u2014figure supplement 2B, middle, red); and $\\alpha=490$, $K/k=4.2$, and $H=6$ for \u0394N-BAR-1 (Figure 5\u2014figure supplement 2B, right, red). Calculation of $t\u00af$ and $\\sigma_{t}^{2}$ requires specifying $k$, and we find that for no $k$ value is the  $CV=\\sigma_{t}/t\u00af$ significantly increased upon breaking the feedback (Figure 5\u2014figure supplement 2C, middle); Figure 5\u2014figure supplement 2 shows the results for $k=30$ and $m_{\u2217}=25$.\n\nPossibilities 2 (Figure 5\u2014figure supplement 2A, middle) and 3 (Figure 5\u2014figure supplement 2A, right) both correspond to the dynamics $da/dt=Gm$, but possibility 2 has $dm/dt=Fa$, whereas possibility 3 has $dm/dt=Fa,m$. Because we found above that breaking autoregulatory feedback has little effect on the $CV$, we simplify the dynamics in possibility 3 to also read $dm/dt=Fa$. Nevertheless, we retain the key topological difference that breaking the feedback cannot change the activation parameters in possibility 2 but can in possibility 3. Thus, in possibility 2, the bar-1(ga80) and \u0394N-BAR-1 cases inherit the activation parameters from the control case, whereas in possibility 3, the bar-1(ga80) and \u0394N-BAR-1 cases are fit separately from the control case.\n\nFor the control case in possibilities 2 and 3, we take $Fa=\\alpha_{0}+\\alpha/1+K/a^{H}$ and analogously $Gm=\\beta_{0}+\\beta/1+J/m^{H}$, where the Hill coefficients are equal for simplicity, and at least one of $\\alpha_{0}$ and $\\beta_{0}$ must be nonzero to initiate production from zero molecules. Previous work Gupta et al., 2020 found that this topology reduces noise when the times at which $a$ and $m$ cross their thresholds $K$ and $J$, respectively, are well separated. We focus on the regime where $a$ crosses first ($K\u226aJ$), although we will see below that noise is reduced even for $K>J$. To reduce the number of fitting parameters, we recognize that the limit $K\u226aJ$ corresponds to the simplification $Gm=\\beta_{0}$. Therefore we fit in this limit, with $\\alpha_{0}=0$, and we later check the robustness of our results as we reintroduce $J$ and $\\beta$. Fitting results in $\\alpha=2800$, $K/\\beta_{0}=4.5$, and $H=12$ (Figure 5\u2014figure supplement 2B, left, cyan and purple).\n\nFor the bar-1(ga80) and \u0394N-BAR-1 cases in possibilities 2 and 3, we recognize that, unlike in possibility 1, breaking the feedback disrupts the production of the activator. In these cases, we take $a$ to be a constant $a_{0}$, and therefore, we have $dm/dt=Fa_{0}$. As discussed above, in possibility 2, the parameters of $F$ are inherited from the control case. Consequently, the bar-1(ga80) case, which corresponds to a low value of $a_{0}$ , produces a shallow linear increase in mig-1 (Figure 5\u2014figure supplement 2B, middle, cyan); while the \u0394N-BAR-1 case, which corresponds to a high value of $a_{0}$, produces a steep linear increase in mig-1 (Figure 5\u2014figure supplement 2B, right, cyan). Because neither is a reasonable description of the data, we conclude that possibility 2 is not a good model of the feedback, and we do not consider the $CV$ for possibility 2.\n\nIn possibility 3, as discussed above, the bar-1(ga80) and \u0394N-BAR-1 cases are fit separately from the control case. Fitting results in $Fa_{0}=5.1$ for bar-1(ga80) (Figure 5\u2014figure supplement 2B, middle, purple) and $Fa_{0}=7.7$ for \u0394N-BAR-1 (Figure 5\u2014figure supplement 2B, right, purple). The $CV$ in these cases can be calculated analytically (Gupta et al., 2018) as $CV=m_{\u2217}^{\u22121/2}$. The control case requires specifying $\\beta_{0}$, and we find that for $\\beta_{0}\u227310$, the $CV$ is increased upon breaking the feedback (Figure 5\u2014figure supplement 2C, right) in agreement with the experimental data (Figure 5B and Figure 5\u2014figure supplement 2C, left). Indeed, we find that this property remains true even for $J$ as small as 1 and for $\\beta\u226b\\beta_{0}$. Figure 5B (inset) and Figure 5\u2014figure supplement 2 show the results for $\\beta_{0}=25$, $J=10$, $\\beta=75$, and $m_{}=25$.\n\n### Statistical ANOVA data\n\nTo compare the CVs of mig-1 expression in bar-1 mutants (Figure 5B), we performed a Brown\u2013Forsythe ANOVA test. Specifically, we made two comparisons (control vs. bar-1 null and control vs. \u0394N-BAR-1) and, therefore, multiplied p-values by two to account for the Bonferroni correction. Position data were included if the mig-1 mRNA molecule number was greater than or equal to a threshold and rescaled by their mean to obtain the CV. We performed the test for thresholds in the range 10\u201325. For the control vs. bar-1 null comparison, the Bonferroni-corrected p-values ranged from 0.07 to 0.9, with a mean value of 0.4. For the control vs. \u0394N-BAR-1comparison, the Bonferroni-corrected p-values ranged from 3\u00d710\u20136 to 0.008, with a mean value of 0.001.\n\n### Statistical testing and modeling software\n\nStatistical testing and plot generation was performed using R 4.1.0 and RStudio 1.4.1717, using various packages from the tidyverse. Mathematical modeling was performed in Matlab.\n\n### Data availability statement\n\nSource datafiles containing the numerical data used to generate the figures can be accessed at https://github.com/erikschild/mig1_timer_code, (copy archived at Schild, 2023a) and the code used for modeling can be found at https://github.com/amugler/mig1, (copy archived at Schild, 2023b).\n",
+      "created_at": "2025-12-04T01:32:57.161976Z"
+    },
+    {
+      "id": "649e7d1d-6213-492c-aa76-424663bc1a10",
+      "submission_id": "9455ff0d-3909-4e8d-9c15-3fc835760f73",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Marianne E Bronner, https://ror.org/05dxps055 California Institute of Technology United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.82675.sa0](https://doi.org/10.7554/eLife.82675.sa0)\n\nThis paper deals with an important unsolved problem in developmental biology: how cells execute their dynamics at the right time. The study combines compelling quantitative single-cell and single-transcript experiments with genetic perturbations and computational modelling and provides important insights into how the timing of transcription is regulated.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Marianne E Bronner, https://ror.org/05dxps055 California Institute of Technology United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.82675.sa1](https://doi.org/10.7554/eLife.82675.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Precise temporal control of neuroblast migration through combined regulation and feedback of a Wnt receptor\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Marianne Bronner as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1. Both reviewers raise the lack of integration between the model and data.\n\n2. Secondly, the evidence for the positive feedback loop is weak/lacking. Additional experiments would be optimal. Alternatively, modelling could be used to interpret or strengthen these results, but this would require explicitly including the positive feedback loop and stochastic variability. At least it would be important to substantially rephrase the conclusions, to recognize that the evidence is relatively weak. I refer you to the comments of the reviewers for details.\n\nReviewer #1 (Recommendations for the authors):\n\n- l. 151. \"2C\". Given the article's mixed audience of biologists and modelers, it would be good to explain the 2C, 4C, and 8C notation. Currently, it is not easy to deduce the meaning of 2C for the article text, if you do not already know it.\n\n- l. 154. It is not explained why it is expected that CDK1-inhibited neuroblasts are 4C, not 2C. This is presumably because inhibiting CDK1 does not inhibit DNA duplication but does inhibit the subsequent division. It would be good to mention this explicitly.\n\n- l. 189-208. In general, the fitting procedures outlined in this section and the Materials and methods seem fine, but it would be helpful if they would be presented in a way that allows visual comparison of the quality of the fit. Currently, smFISH data is always shown separately from fits, and plots with fitting data are mostly used to highlight predictions of the model. It would be good if somewhere, either in the main text or in the SI, the fitting data is plotted on top of the data, just to see how good the fit actually is. I realize that data and fit have different time axes, but this should not be a fundamental problem in plotting data and fit together if I understand the fitting procedure correctly.\n\n- l. 189-208, l. 508-533. The fitted parameter values are only mentioned in the Methods. The values for the Hill coefficients for both the repressor and activator model are very high, H=14 or H=17, but this is not really commented on. I understand from the rest of the paper that mig-1 likely has some form of positive feedback on its own expression, which could in principle explain high Hill coefficients. But are such high Hill coefficients consistent with such a positive feedback mechanism? I think the authors should discuss the high Hill coefficient and whether such high values are plausible based on their proposed mechanism.\n\n- l. 228, Figure 3A, C. The model predicts that decreasing the activator (hereby mutating activator binding sites) leads to a slower increase in mig-1 level. In the experiments, this is not visible for \u0394 upstream 1, but here a substantial number of animals appear to fail in inducing mig-1. For \u0394 upstream 2, there are even more animals like this. This fact is mentioned in the main text, but not interpreted in any way. How do the authors interpret this in light of the activator model?\n\n- l. 245. 'required for the rapid upregulation'. To me, this formulation seems too strong. Looking at Figure 4A, I still see rapid upregulation in pig-1 mutants, as in happening quickly after the division of QR.p, but with lower mig-1 levels reached compared to the control.\n\n- l. 245-298, Figure 4. Related to the above point, it is not clear to me how the authors interpret the pig-1 experiments in relation to the fitting results in Figure 4E. The model predicts that decreasing the size ratio between QR.pa and QR.pp leads to a slower accumulation of mig-1, but with the same mig-1 level ultimately reached, albeit at a later time. The pig-1 data in Figure 4A could be consistent with slower accumulation, but, in contrast to Figure 4E, mig-1 expression never reaches the peak control level. How do the authors interpret this contrasting result? An alternative model to explain the data could be that in pig-1 mutants mig-1 expression is induced at the same time as in control animals, but with a lower 'amplitude' of mig-1 expression. Can the authors rule out such an alternative model? Finally, in the author's model QR.pa migration stops once a specific mig-1 level is reached. In that case, wouldn't one expect a positional defect for pig-1 mutants? I didn't see this mentioned anywhere in the article.\n\n- l. 281-285. I found the explanation here confusing. I think I understand the main point: the cells may have different sizes, but have the same nuclear volume. As the activator is likely in the nucleus, one can therefore just use the same molecular level as before, without taking into account the difference in volume. However, the way it is written here suggested initially to me that a modification was made to the model by focusing on a number of molecules rather than concentration, even though, if I understand correctly, the model was formulated in terms of a number of molecules from the beginning. It would be good to clarify this.\n\n- l. 296-298. I have the same issue here as above: it is not clear to me that division asymmetry is required for rapid upregulation. The proposed role of asymmetry can also be formulated more sharply. If I understand it correctly, according to the model, the only impact of size asymmetry is in the asymmetric inheritance of the activator. In particular, the subsequent rate of production of the activator in Q.pa does not depend on its size, correct? Or am I missing something?\n\n- l. 300-329. I find this section the weakest of the manuscript, both in terms of experiments and modelling. The main aim of this section is to test the model prediction from an earlier paper (Gupta 2020) that positive feedback of mig-1 on its own expression reduces variability in timing. The main experimental weakness is that the authors do not specifically perturb this positive feedback loop, but instead use two Wnt mutants (the loss-of-function bar-1(0) and constitutively active DeltaN-BAR-1) that likely impact many genes, including those responsible for migration (l. 95,96), as also evidenced by the resulting change in average Q.pa position. While the authors find an increase in variability of Q.pa position, this could also be explained by changes in the expression of any of the other BAR-1 targets. The proper experiment, I think, would be to remove the POP-1/TCF sites in the mig-1 promoter, although there might be experimental reasons why this is not feasible. The last sentence of the section (l. 328-329) is a bit careful in drawing strong conclusions from these result, but this caution is absent from the abstract and introduction. I also think that the limits of the BAR-1 experiments should be explicitly discussed.\n\nIn terms of modelling, I found it surprising that, in contrast to the rest of the paper, here the experiments are not compared to the model (apart from a brief reference to the main conclusion of an earlier publication). It seems to me that the experimental results raise questions that are not addressed by these earlier publications. For instance, DeltaN-BAR-1 animals show no increase in mig-1 levels, indicating that Wnt signaling is completely saturated. Would the model predict an increase in variability in timing (and position) when Wnt signaling is saturated? That seems to me, at first sight, a different kind of perturbation than removing positive feedback, e.g. by removing mig-1's POP-1/TCF sites. I would think that for saturated Wnt signaling, mig-1 expression becomes less dependent on the activator level, and thus less susceptible to variability in the activator level.\n\n- l. 405-412. Unless there are very many transcription factors that bind these sequences, it seems a bit odd to not mention the identity of these transcription factors.\n\n- l. 516-517. Apparently, some parameters, like H, r0, and K, are only constrained by the experimental data in specific ratios. It would be good if the authors provide some form of explanation for this.\n\n-l. 526. \"T=2.32\". What does this time correspond to in terms of cell position?\n\n- Figure 1D. What is the GFP reporter?\n\n- Figure 2-supplement 2. What statistical test has been used? I am also asking because from looking at the data it is not so clear that control and \u0394 intron A are really not significantly different. What is the P value?\n\n- Figure 4E. The figure shows that decreasing the size ratio leads to slower mig-1 induction, but it is not clear how well it fits the data. If you split the data in Figure 4C into brackets of different ratios/rho, would it then fit the model data for the rho of that bracket? Based on Figure 4E, F, it remains open to me how well the model actually fits the data.\n\n- l.823-824. What is this a test of? I am confused because the text mentions transcripts, but the panel is about position.\n\nReviewer #2 (Recommendations for the authors):\n\nThe strength of the manuscript is the overall question, the experimental data, and the simple model. But given the quality of the data, the data analysis, model fitting, and predictions could be improved or at least better presented.\n\nSpecifically, I would like to see how much variation exists between different replica experiments. Right now, all the RNA-FISH data is pooled and not separated by replica experiments. One simple way to address this would be to plot the data points separated by different symbols specific to each biological replica experiment. This comment is relevant to all figures with data.\n\nHow did the authors determine a threshold in these data sets? Applying a piecewise linear fit to the experimental data without the model enables very precise quantification of the threshold. This should be done for each replica experiment to determine the mean and standard deviation in the threshold. This should be also done for all the WT and mutant data sets to show how the expression levels and threshold are effects by different mutants.\n\nWith regard to the model, the authors need to show how the model fits to the data, by overlaying the model and the data in the same plot. The authors state in the manuscript that the spatial position of the cells is proportional to time, so this should be possible. This should be done for each replica to determine the mean and standard deviation in the model parameter. The model parameters and their errors should be added to the manuscript.\n\nBy comparing the model fits and predictions using the estimated parameter errors, authors can better determine if the differences seen in the WT and mutant experiment are significantly large to explain this difference by changing specific rates in the model.\n\nAlthough the authors quantify the position equals temporal variance in the mig1 expression, they do not use their model to make this prediction or even analyze the data with their model. Why is this? Can the model not compute temporal variances? Please clarify.\n",
+      "created_at": "2025-12-04T01:32:57.161976Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T01:32:57.161976Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T01:32:57.161976Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "5a8eceae-24ae-4f0d-abba-808c36387ecc",
+      "content_id": "aa0516dd-3d70-42f5-9593-88e0dc805a07",
+      "claim_id": "C1",
+      "claim": "The expression of the Wnt receptor MIG-1/Frizzled increases non-linearly during QR neuroblast lineage progression in C. elegans.",
+      "claim_type": "EXPLICIT",
+      "source": "Single-molecule mRNA quantification showed that the expression of the receptor increases non-linearly, a dynamic that is predicted to enhance timing precision over an unregulated, linear increase in timekeeper abundance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract explicitly states this finding based on single-molecule mRNA quantification experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:32:57.161976Z"
+    },
+    {
+      "id": "cc504f20-a52d-4a5a-88ca-9a3899442627",
+      "content_id": "aa0516dd-3d70-42f5-9593-88e0dc805a07",
+      "claim_id": "C2",
+      "claim": "Non-linear increase in timekeeper abundance enhances timing precision compared to linear increase.",
+      "claim_type": "EXPLICIT",
+      "source": "Single-molecule mRNA quantification showed that the expression of the receptor increases non-linearly, a dynamic that is predicted to enhance timing precision over an unregulated, linear increase in timekeeper abundance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a prediction from theoretical modeling that is being tested experimentally.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:32:57.161976Z"
+    },
+    {
+      "id": "d71032b9-976f-4b81-99da-65515a63c19f",
+      "content_id": "aa0516dd-3d70-42f5-9593-88e0dc805a07",
+      "claim_id": "C3",
+      "claim": "The upregulation of mig-1 expression depends on transcriptional activation.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that this upregulation depends on transcriptional activation, providing in vivo evidence for a model in which the timing of receptor expression is regulated through an accumulating activator that triggers expression when a specific threshold is reached.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract states this as a finding demonstrated in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:32:57.161976Z"
+    },
+    {
+      "id": "1782d84c-3286-41ca-8f25-aa35ce982d16",
+      "content_id": "aa0516dd-3d70-42f5-9593-88e0dc805a07",
+      "claim_id": "C4",
+      "claim": "The timing of mig-1 receptor expression is regulated through an accumulating activator that triggers expression when a specific threshold is reached.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that this upregulation depends on transcriptional activation, providing in vivo evidence for a model in which the timing of receptor expression is regulated through an accumulating activator that triggers expression when a specific threshold is reached.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This model is supported by the experimental findings on transcriptional activation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:32:57.161976Z"
+    },
+    {
+      "id": "09239568-f0cd-4ef5-b6db-d6a9d7b131f2",
+      "content_id": "aa0516dd-3d70-42f5-9593-88e0dc805a07",
+      "claim_id": "C5",
+      "claim": "The timing mechanism for mig-1 expression acts across a cell division in the neuroblast lineage.",
+      "claim_type": "EXPLICIT",
+      "source": "This timing mechanism acts across a cell division that occurs in the neuroblast lineage and is influenced by the asymmetry of the division.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract explicitly states this finding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:32:57.161976Z"
+    },
+    {
+      "id": "a35865d9-de59-4cb7-bf6d-64c30b0d48ff",
+      "content_id": "aa0516dd-3d70-42f5-9593-88e0dc805a07",
+      "claim_id": "C6",
+      "claim": "The timing mechanism for mig-1 expression is influenced by the asymmetry of cell division.",
+      "claim_type": "EXPLICIT",
+      "source": "This timing mechanism acts across a cell division that occurs in the neuroblast lineage and is influenced by the asymmetry of the division.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract explicitly states this finding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:32:57.161976Z"
+    },
+    {
+      "id": "b672c3a6-fbc6-426a-97e7-ab2d3e25b12f",
+      "content_id": "aa0516dd-3d70-42f5-9593-88e0dc805a07",
+      "claim_id": "C7",
+      "claim": "Positive feedback of mig-1 receptor expression through the canonical Wnt pathway enhances temporal precision.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we show that positive feedback of receptor expression through the canonical Wnt pathway enhances temporal precision.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract explicitly states this as a finding of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:32:57.161976Z"
+    },
+    {
+      "id": "7de53fb9-8aa3-46d8-9763-3fd53d586a89",
+      "content_id": "aa0516dd-3d70-42f5-9593-88e0dc805a07",
+      "claim_id": "C8",
+      "claim": "Robust cell-intrinsic timing can be achieved by combining regulation and feedback of the timekeeper gene.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that robust cell-intrinsic timing can be achieved by combining regulation and feedback of the timekeeper gene.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion stated in the abstract.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:32:57.161976Z"
+    },
+    {
+      "id": "a4299682-b592-482f-a380-6bf861dc2720",
+      "content_id": "aa0516dd-3d70-42f5-9593-88e0dc805a07",
+      "claim_id": "C9",
+      "claim": "Neuropilin-1 expression in retinal ganglion cells is time-dependent and influences RGC axon trajectory.",
+      "claim_type": "EXPLICIT",
+      "source": "An example of such a biological clock is the time-dependent expression of Neuropilin-1 in retinal ganglion cells (RGCs), which influences the trajectory of the outgrowing RGC axons (Baudet et al., 2011; Campbell et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from previous literature as an example of a biological clock.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:32:57.161976Z"
+    },
+    {
+      "id": "43a21a11-dd2f-4b52-a040-e64e34f62250",
+      "content_id": "aa0516dd-3d70-42f5-9593-88e0dc805a07",
+      "claim_id": "C10",
+      "claim": "The Neuropilin-1 clock mechanism consists of a transcriptional repressor (CoREST) that gradually decreases in abundance due to miRNA-dependent inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, the clock mechanism consists of a transcriptional repressor (CoREST) that gradually decreases in abundance as a result of miRNA dependent inhibition and releases Neuropilin-1 expression once it reaches a specific threshold.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a known mechanism from the literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:32:57.161976Z"
+    },
+    {
+      "id": "f979432a-138d-4050-9703-0f397ef7a15c",
+      "content_id": "aa0516dd-3d70-42f5-9593-88e0dc805a07",
+      "claim_id": "C11",
+      "claim": "A linear increase in timer molecule abundance is more precise than autoregulation where the timer positively regulates its own expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Modeling has shown that such a linear increase is more precise than a strategy where the timer molecule positively regulates its own expression, as such autoregulation also amplifies the noise (Ghusinga et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from previous modeling work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:32:57.161976Z"
+    },
+    {
+      "id": "daf616d5-53cf-4a1a-8949-5b1c95f868c4",
+      "content_id": "aa0516dd-3d70-42f5-9593-88e0dc805a07",
+      "claim_id": "C12",
+      "claim": "A regulated strategy where the timekeeping molecule increases non-linearly over time can increase precision.",
+      "claim_type": "EXPLICIT",
+      "source": "Using a first-passage time approach, we have recently shown that a regulated strategy where the timekeeping molecule increases non-linearly over time can increase precision (Gupta et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from the authors' previous theoretical work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:32:57.161976Z"
+    },
+    {
+      "id": "88b51aa8-3911-496b-82ea-8c5db445bc73",
+      "content_id": "aa0516dd-3d70-42f5-9593-88e0dc805a07",
+      "claim_id": "C13",
+      "claim": "Non-linear increase in timekeeper expression can be mediated through an accumulating transcriptional activator or a gradually decreasing transcriptional repressor.",
+      "claim_type": "EXPLICIT",
+      "source": "Such regulation can be mediated through an accumulating transcriptional activator or a gradually decreasing transcriptional repressor that controls the expression of the timekeeper molecule in a threshold-dependent manner, and we showed this to be robust to additional effects such as cell division and bursts in transcription (Gupta et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from the authors' previous theoretical work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:32:57.161976Z"
+    },
+    {
+      "id": "e59d38f0-a889-44b0-be0f-c5ae5591ae83",
+      "content_id": "aa0516dd-3d70-42f5-9593-88e0dc805a07",
+      "claim_id": "C14",
+      "claim": "Precision can be further increased when the regulator is combined with autoregulation of the timekeeper.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, in contrast to autoregulation on its own, we found that precision could be further increased when the regulator was combined with autoregulation of the timekeeper (Gupta et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from the authors' previous theoretical work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:32:57.161976Z"
+    },
+    {
+      "id": "3b7ca532-3e08-41ec-9de2-cd954656fc42",
+      "content_id": "aa0516dd-3d70-42f5-9593-88e0dc805a07",
+      "claim_id": "C15",
+      "claim": "The migration of C. elegans QR neuroblast descendants is controlled in a time-dependent fashion.",
+      "claim_type": "EXPLICIT",
+      "source": "The migration of the Caenorhabditis elegans QR neuroblast descendants is controlled in a time-dependent fashion (Mentink et al., 2014) and provides a tractable system to study a biological clock at the single-cell level in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from previous work and serves as the basis for the current study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:32:57.161976Z"
+    },
+    {
+      "id": "3fb800aa-0406-4530-a195-f30beeb4f9dd",
+      "content_id": "aa0516dd-3d70-42f5-9593-88e0dc805a07",
+      "claim_id": "C16",
+      "claim": "QR is born in the mid-body as a sister cell of the hypodermal seam cell V5.",
+      "claim_type": "EXPLICIT",
+      "source": "QR is born in the mid-body as a sister cell of the hypodermal seam cell V5 and divides at the beginning of the first larval stage into an anterior daughter cell called QR.a and a posterior daughter QR.p (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the developmental biology of the QR lineage, with reference to Figure 1A.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:32:57.161976Z"
+    },
+    {
+      "id": "b381d386-5aaf-4163-9240-f44fc2d3cba7",
+      "content_id": "aa0516dd-3d70-42f5-9593-88e0dc805a07",
+      "claim_id": "C17",
+      "claim": "QR divides at the beginning of the first larval stage into QR.a (anterior) and QR.p (posterior).",
+      "claim_type": "EXPLICIT",
+      "source": "QR is born in the mid-body as a sister cell of the hypodermal seam cell V5 and divides at the beginning of the first larval stage into an anterior daughter cell called QR.a and a posterior daughter QR.p (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the developmental biology of the QR lineage.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:32:57.161976Z"
+    },
+    {
+      "id": "c8b025fd-06ac-4e31-8663-6382d1754919",
+      "content_id": "aa0516dd-3d70-42f5-9593-88e0dc805a07",
+      "claim_id": "C18",
+      "claim": "Both QR.a and QR.p migrate toward the anterior and divide at highly stereotypic positions.",
+      "claim_type": "EXPLICIT",
+      "source": "Both daughter cells migrate a relatively long distance toward the anterior and divide at highly stereotypic positions to generate descendants that differentiate into neurons (Sulston and Horvitz, 1977).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from classic C. elegans lineage work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:32:57.161976Z"
+    },
+    {
+      "id": "42500351-32bd-49a5-a180-85516ef424e4",
+      "content_id": "aa0516dd-3d70-42f5-9593-88e0dc805a07",
+      "claim_id": "C19",
+      "claim": "The final position of QR.p descendants is robust to stochastic variation.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to other neurons that undergo long-range migration in C. elegans, the final position of the QR.p descendants was found to be robust to stochastic variation (Dubois et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from recent work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:32:57.161976Z"
+    },
+    {
+      "id": "c28b56bb-efb3-4a2c-9ad5-457186f50639",
+      "content_id": "aa0516dd-3d70-42f5-9593-88e0dc805a07",
+      "claim_id": "C20",
+      "claim": "The anterior migration of QR.p and QR.pa is dependent on Wnt signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "The anterior migration of QR.p and QR.pa is dependent on Wnt signaling (Mentink et al., 2014; Rella et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:32:57.161976Z"
+    },
+    {
+      "id": "7e407ebc-28c0-455a-a618-0678aa3eaa11",
+      "content_id": "aa0516dd-3d70-42f5-9593-88e0dc805a07",
+      "claim_id": "C21",
+      "claim": "The anterior migration of QR.p and QR.pa is mediated through parallel acting non-canonical Wnt pathways that separately control speed and polarity.",
+      "claim_type": "EXPLICIT",
+      "source": "We have previously shown that the anterior migration of QR.p and QR.pa is mediated through parallel acting non-canonical Wnt pathways that separately control speed and polarity (Mentink et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from the authors' previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:32:57.161976Z"
+    },
+    {
+      "id": "e4733cd5-dd40-4c79-9446-651db6c0c214",
+      "content_id": "aa0516dd-3d70-42f5-9593-88e0dc805a07",
+      "claim_id": "C22",
+      "claim": "Migration of QR.pa is stopped through activation of canonical, BAR-1/\u03b2-catenin-dependent Wnt signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Once QR.pa reaches its final position, migration is stopped through activation of canonical, BAR-1/\u03b2-catenin-dependent Wnt signaling, which induces the expression of target genes that inhibit migration (Rella et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from recent work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:32:57.161976Z"
+    },
+    {
+      "id": "90dde648-a11e-4153-a972-099842ac0ec3",
+      "content_id": "aa0516dd-3d70-42f5-9593-88e0dc805a07",
+      "claim_id": "C23",
+      "claim": "The switch in Wnt signaling response is mediated through the Wnt receptor MIG-1/Frizzled.",
+      "claim_type": "EXPLICIT",
+      "source": "This switch in signaling response is mediated through the Wnt receptor MIG-1/Frizzled (Mentink et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:32:57.161976Z"
+    },
+    {
+      "id": "09afd572-cf1b-46c8-b75a-3e0b6e38e288",
+      "content_id": "aa0516dd-3d70-42f5-9593-88e0dc805a07",
+      "claim_id": "C24",
+      "claim": "mig-1 expression is rapidly upregulated in QR.pa.",
+      "claim_type": "EXPLICIT",
+      "source": "Quantitative in vivo measurement of mig-1 expression using single-molecule FISH (smFISH) showed that mig-1 expression is rapidly upregulated in QR.pa, and transgenic rescue experiments demonstrated that mig-1 is both necessary and sufficient for migration termination (Mentink et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:32:57.161976Z"
+    },
+    {
+      "id": "0a7e922b-acf1-4130-8209-45f4308140d8",
+      "content_id": "aa0516dd-3d70-42f5-9593-88e0dc805a07",
+      "claim_id": "C25",
+      "claim": "mig-1 is both necessary and sufficient for migration termination.",
+      "claim_type": "EXPLICIT",
+      "source": "Quantitative in vivo measurement of mig-1 expression using single-molecule FISH (smFISH) showed that mig-1 expression is rapidly upregulated in QR.pa, and transgenic rescue experiments demonstrated that mig-1 is both necessary and sufficient for migration termination (Mentink et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:32:57.161976Z"
+    },
+    {
+      "id": "505afb97-2726-4a14-8b21-58088e6f185f",
+      "content_id": "aa0516dd-3d70-42f5-9593-88e0dc805a07",
+      "claim_id": "C26",
+      "claim": "The upregulation of mig-1 is not dependent on positional information but is temporally regulated.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, we found that this upregulation is not dependent on positional information but that the expression of mig-1 is temporally regulated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from previous work.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:32:57.161976Z"
+    },
+    {
+      "id": "61457fd9-49f7-43bb-b085-0568cd34f0ea",
+      "content_id": "aa0516dd-3d70-42f5-9593-88e0dc805a07",
+      "claim_id": "C27",
+      "claim": "In mutants with slower migrating QR descendants, mig-1 is expressed at the same time but at a more posterior position.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, in mutants in which the QR descendants migrate at a slower speed, mig-1 is still expressed at the same time but at a more posterior position, while in animals with faster migrating QR descendants, mig-1 is expressed at a more anterior position.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited as evidence for temporal rather than positional regulation.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:32:57.161976Z"
+    },
+    {
+      "id": "ea93ce04-9796-4f59-9883-27124a6ca6df",
+      "content_id": "aa0516dd-3d70-42f5-9593-88e0dc805a07",
+      "claim_id": "C28",
+      "claim": "In mutants with faster migrating QR descendants, mig-1 is expressed at a more anterior position.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, in mutants in which the QR descendants migrate at a slower speed, mig-1 is still expressed at the same time but at a more posterior position, while in animals with faster migrating QR descendants, mig-1 is expressed at a more anterior position.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited as evidence for temporal rather than positional regulation.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:32:57.161976Z"
+    },
+    {
+      "id": "0d8b8601-f6aa-4ef1-b30c-4f1c1d78a4be",
+      "content_id": "aa0516dd-3d70-42f5-9593-88e0dc805a07",
+      "claim_id": "C29",
+      "claim": "The final position of QR descendants is determined by the speed of migration and the time at which mig-1 expression is induced.",
+      "claim_type": "EXPLICIT",
+      "source": "These results demonstrate that mig-1 expression is regulated through a timing mechanism and that the final position of the QR descendants is determined by the speed of migration and the time at which mig-1 expression is induced.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion from previous observations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:32:57.161976Z"
+    },
+    {
+      "id": "82f9fbd3-b0f2-4a88-94b5-410a70c6ef91",
+      "content_id": "aa0516dd-3d70-42f5-9593-88e0dc805a07",
+      "claim_id": "C30",
+      "claim": "mig-1 expression is low in QR.p but strongly upregulated in its daughter QR.pa.",
+      "claim_type": "EXPLICIT",
+      "source": "During the anterior migration of the QR descendants, mig-1 expression is low in QR.p but is strongly upregulated in its daughter QR.pa (Mentink et al., 2014; Figure 1B), where it triggers the canonical Wnt signaling response that is necessary to stop migration (Rella et al., 2021).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated with reference to previous work and Figure 1B showing the data.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:32:57.161976Z"
+    },
+    {
+      "id": "bf93560e-df36-47ea-9610-042fa895ed49",
+      "content_id": "aa0516dd-3d70-42f5-9593-88e0dc805a07",
+      "claim_id": "C31",
+      "claim": "Upregulated mig-1 in QR.pa triggers the canonical Wnt signaling response necessary to stop migration.",
+      "claim_type": "EXPLICIT",
+      "source": "During the anterior migration of the QR descendants, mig-1 expression is low in QR.p but is strongly upregulated in its daughter QR.pa (Mentink et al., 2014; Figure 1B), where it triggers the canonical Wnt signaling response that is necessary to stop migration (Rella et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from recent work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:32:57.161976Z"
+    },
+    {
+      "id": "ace112a1-350b-41a3-bb7d-21f57a4a9ff3",
+      "content_id": "aa0516dd-3d70-42f5-9593-88e0dc805a07",
+      "claim_id": "C32",
+      "claim": "The upregulation of mig-1 expression is independent of the division of QR.p.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that this efficiently inhibited the subsequent division of QR.p and its sister cell QR.a, as judged by the absence of their descendants (the apoptotic QR.pp and QR.aa cells and the neuronal QR.paa, QR.pap, and QR.ap cells).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by the auxin-inducible CDK-1 depletion experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:32:57.161976Z"
+    },
+    {
+      "id": "11413697-486c-46ef-ab27-42250a9aa6ff",
+      "content_id": "aa0516dd-3d70-42f5-9593-88e0dc805a07",
+      "claim_id": "C33",
+      "claim": "CDK-1 depletion blocks mitosis and cell cycle reentry in QR.p cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Studies in yeast and mammalian cells have shown that loss of CDK1 not only inhibits mitosis but also cell cycle reentry and DNA replication (Coudreuse and Nurse, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from previous work in other systems.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:32:57.161976Z"
+    },
+    {
+      "id": "5c89081c-f07c-47b5-a674-d4d9f75f46a7",
+      "content_id": "aa0516dd-3d70-42f5-9593-88e0dc805a07",
+      "claim_id": "C34",
+      "claim": "The DNA content of undivided QR.p cells after CDK-1 depletion is 4C.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 1C, we observed no significant deviation from a DNA content of 4C.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1C with quantitative data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:32:57.161976Z"
+    },
+    {
+      "id": "0fba2e3b-5493-4908-8e7e-601d2dd99fcd",
+      "content_id": "aa0516dd-3d70-42f5-9593-88e0dc805a07",
+      "claim_id": "C35",
+      "claim": "CDK-1 depletion inhibits mitosis and cell cycle reentry in undivided QR.p cells.",
+      "claim_type": "EXPLICIT",
+      "source": "These results show that CDK-1 depletion inhibits mitosis as well as cell cycle reentry in the undivided QR.p cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the DNA content measurements.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:32:57.161976Z"
+    },
+    {
+      "id": "1117bfc0-3440-4586-b866-fc0251f8bd7d",
+      "content_id": "aa0516dd-3d70-42f5-9593-88e0dc805a07",
+      "claim_id": "C36",
+      "claim": "In the presence of auxin, upregulation of mig-1 expression in undivided QR.p cells occurs at a similar time and range of expression as in control animals.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, however, we found that in the presence of auxin, upregulation of mig-1 expression in undivided QR.p cells occurs at a similar time and range of expression as in the control animals (Figure 1D and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1D and E with smFISH data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:32:57.161976Z"
+    },
+    {
+      "id": "4bb5ccfb-e25e-4f2a-93b2-11ecc0fd9b29",
+      "content_id": "aa0516dd-3d70-42f5-9593-88e0dc805a07",
+      "claim_id": "C37",
+      "claim": "The temporal regulation of mig-1 expression is independent of the cell cycle and QR.p division.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that the temporal regulation of mig-1 expression is independent of the cell cycle and QR.p division.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the conclusion from the CDK-1 depletion experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:32:57.161976Z"
+    },
+    {
+      "id": "744802a2-bff5-40f1-a08c-ba4b6fc875e7",
+      "content_id": "aa0516dd-3d70-42f5-9593-88e0dc805a07",
+      "claim_id": "C38",
+      "claim": "The expression of mig-1 in the QR lineage occurs in two phases: an early phase in QR and a late phase in QR.pa.",
+      "claim_type": "EXPLICIT",
+      "source": "The expression of mig-1 in the QR lineage occurs in two phases (Mentink et al., 2014; Figure 1B): an early phase in which it is expressed in the QR neuroblast, followed by a rapid decrease during QR polarization (Ji et al., 2013) and low expression in QR.p until mig-1 is upregulated again in QR.pa (the late phase).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated with reference to previous work and Figure 1B.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:32:57.161976Z"
+    },
+    {
+      "id": "306f9553-03d6-4011-8a72-3e978de4f439",
+      "content_id": "aa0516dd-3d70-42f5-9593-88e0dc805a07",
+      "claim_id": "C39",
+      "claim": "Eight conserved 25 bp motifs are located in four closely linked pairs in the mig-1 regulatory region.",
+      "claim_type": "EXPLICIT",
+      "source": "By comparing the upstream region and first intron of mig-1 in 23 Caenorhabditis species, we found eight conserved 25 bp motifs that are located in four closely linked pairs (Figure 2\u2014figure supplement 1, Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as a finding from comparative genomics analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:32:57.161976Z"
+    },
+    {
+      "id": "3feb2ab9-8025-4e31-a773-649a572d016f",
+      "content_id": "aa0516dd-3d70-42f5-9593-88e0dc805a07",
+      "claim_id": "C40",
+      "claim": "Deletion of intron motif pair A strongly reduced the early expression of mig-1 in the QR neuroblast.",
+      "claim_type": "EXPLICIT",
+      "source": "While deletion of motif pair B had no effect on mig-1 expression, deletion of motif pair A strongly reduced the early expression of mig-1 in the QR neuroblast (Figure 2B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2B and C with smFISH data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:32:57.161976Z"
+    },
+    {
+      "id": "34984a0e-8f10-487c-b8a9-15b46a1ffc54",
+      "content_id": "aa0516dd-3d70-42f5-9593-88e0dc805a07",
+      "claim_id": "C41",
+      "claim": "Deletion of intron motif pair B had no effect on mig-1 expression.",
+      "claim_type": "EXPLICIT",
+      "source": "While deletion of motif pair B had no effect on mig-1 expression, deletion of motif pair A strongly reduced the early expression of mig-1 in the QR neuroblast (Figure 2B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2B and C with smFISH data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:32:57.161976Z"
+    },
+    {
+      "id": "7f39f7cc-dfdc-410e-a811-200acca6b189",
+      "content_id": "aa0516dd-3d70-42f5-9593-88e0dc805a07",
+      "claim_id": "C42",
+      "claim": "The late expression of mig-1 in QR.pa was not affected by deletion of intron motif pair A.",
+      "claim_type": "EXPLICIT",
+      "source": "The late expression of mig-1 in QR.pa was, however, not affected by deletion of this motif pair.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from the deletion experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:32:57.161976Z"
+    },
+    {
+      "id": "1ef28f3f-efa7-46a2-9e63-e322d51e7117",
+      "content_id": "aa0516dd-3d70-42f5-9593-88e0dc805a07",
+      "claim_id": "C43",
+      "claim": "The final position of QR descendants was not significantly different from control animals in intron motif pair A deletion mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, using the final position of the QR.pa daughter cell QR.pap as a measure of total migration distance, we found that the final position of the QR descendants was not significantly different from control animals (Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:32:57.161976Z"
+    },
+    {
+      "id": "dcb1d57e-7d5c-4ca0-a4e9-f7cb14880eb4",
+      "content_id": "aa0516dd-3d70-42f5-9593-88e0dc805a07",
+      "claim_id": "C44",
+      "claim": "Only the late phase of mig-1 expression is required for correct QR descendant migration.",
+      "claim_type": "EXPLICIT",
+      "source": "This is consistent with the observation that only the late phase of mig-1 expression is required for correct QR descendant migration (Mentink et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:32:57.161976Z"
+    },
+    {
+      "id": "59294385-e5e4-4c16-9fbb-8dbd0d6a05ad",
+      "content_id": "aa0516dd-3d70-42f5-9593-88e0dc805a07",
+      "claim_id": "C45",
+      "claim": "Intron motif pair A is necessary for the early but not the late expression of mig-1.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these results show that intron motif pair A is necessary for the early but not the late expression of mig-1 and support the notion that the two phases are independently regulated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the deletion experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:32:57.161976Z"
+    },
+    {
+      "id": "c9cf66af-f216-4cd9-80ae-b638d0a994ee",
+      "content_id": "aa0516dd-3d70-42f5-9593-88e0dc805a07",
+      "claim_id": "C46",
+      "claim": "The early and late phases of mig-1 expression are independently regulated.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these results show that intron motif pair A is necessary for the early but not the late expression of mig-1 and support the notion that the two phases are independently regulated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the deletion experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:32:57.161976Z"
+    },
+    {
+      "id": "449e76cb-b9db-4eb0-84c3-8e81641282f1",
+      "content_id": "aa0516dd-3d70-42f5-9593-88e0dc805a07",
+      "claim_id": "C47",
+      "claim": "The late phase of mig-1 expression is independent of cell division and the early phase of expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Taking into account that the late phase of mig-1 expression is independent of cell division and the early phase of expression, we developed a dynamical model of a cell-intrinsic timer mechanism driving mig-1 transcription.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a basis for the mathematical modeling.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:32:57.161976Z"
+    },
+    {
+      "id": "dd72483a-c33d-4d9f-80c4-1cc8dfad9e51",
+      "content_id": "aa0516dd-3d70-42f5-9593-88e0dc805a07",
+      "claim_id": "C48",
+      "claim": "The speed of QR.p migration is roughly constant.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the speed of QR.p migration \u2013 which crosses most of the distance covered by the QR descendants \u2013 is roughly constant (Mentink et al., 2014), we treated distance along the anteroposterior axis as proportional to time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from previous work and used as an assumption in the model.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:32:57.161976Z"
+    },
+    {
+      "id": "49ddc3ff-45a6-42d0-a53a-896a6d91a4cf",
+      "content_id": "aa0516dd-3d70-42f5-9593-88e0dc805a07",
+      "claim_id": "C50",
+      "claim": "The model captures the observation that early and late mig-1 expression dynamics are independently regulated.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the model captures the observation that early and late mig-1 expression dynamics are independently regulated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion from the modeling.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:32:57.161976Z"
+    },
+    {
+      "id": "e13d8853-9903-42b0-bca4-e24160ab2a4b",
+      "content_id": "aa0516dd-3d70-42f5-9593-88e0dc805a07",
+      "claim_id": "C51",
+      "claim": "In an activator model, removing the activator does not influence mig-1 expression at early timepoints and only prevents upregulation at later timepoints.",
+      "claim_type": "EXPLICIT",
+      "source": "Removing the activator does not influence mig-1 expression at early timepoints and only prevents upregulation of mig-1 at later timepoints (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 3A with model predictions.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:32:57.161976Z"
+    },
+    {
+      "id": "168453de-e3ea-4219-91b5-52363b0f4aa0",
+      "content_id": "aa0516dd-3d70-42f5-9593-88e0dc805a07",
+      "claim_id": "C52",
+      "claim": "In a repressor model, removing the repressor causes premature upregulation at early timepoints.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, removing the repressor causes premature upregulation at early timepoints (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 3A with model predictions.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:32:57.161976Z"
+    },
+    {
+      "id": "3b54104c-f2c1-4398-b1a9-97666cdad0fa",
+      "content_id": "aa0516dd-3d70-42f5-9593-88e0dc805a07",
+      "claim_id": "C53",
+      "claim": "Two pairs of conserved, closely spaced motifs were identified in a 3 kb region upstream of the mig-1 locus.",
+      "claim_type": "EXPLICIT",
+      "source": "Two pairs of conserved, closely spaced motifs were identified in a 3 kb region upstream of the mig-1 locus (Figure 3B, Figure 3\u2014figure supplement 1): a distal pair (#1) at 2781\u20132571 bp and a proximal pair (#2) at 267\u2013137 bp from the start of the mig-1 coding sequence.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as a finding from comparative genomics analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:32:57.161976Z"
+    },
+    {
+      "id": "fc5440bc-08f0-42b7-b909-ff021aa790ec",
+      "content_id": "aa0516dd-3d70-42f5-9593-88e0dc805a07",
+      "claim_id": "C54",
+      "claim": "None of the upstream motif pair deletions had an effect on the early phase of mig-1 expression in the QR neuroblast.",
+      "claim_type": "EXPLICIT",
+      "source": "None of the deletions had an effect on the early phase of mig-1 expression in the QR neuroblast (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 3C with smFISH data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:32:57.161976Z"
+    },
+    {
+      "id": "b403fd33-7bf0-490c-b057-92277e261f8d",
+      "content_id": "aa0516dd-3d70-42f5-9593-88e0dc805a07",
+      "claim_id": "C55",
+      "claim": "In the double upstream motif pair deletion mutant, the late phase of mig-1 expression in QR.pa was completely lost.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we found that in the double deletion mutant, the late phase of mig-1 expression in QR.pa was completely lost (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 3C with smFISH data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:32:57.161976Z"
+    },
+    {
+      "id": "242b9b09-e510-4190-b44a-c93bedf05dbb",
+      "content_id": "aa0516dd-3d70-42f5-9593-88e0dc805a07",
+      "claim_id": "C56",
+      "claim": "A reduction in mig-1 expression was observed in the single motif pair 2 deletion.",
+      "claim_type": "EXPLICIT",
+      "source": "A similar but less penetrant reduction was observed in the single motif pair 2 deletion, while in the motif pair 1 deletion a minor fraction of QR.pa cells failed to upregulate mig-1 expression (Figure 3C), a difference that did not result in a statistically significant difference in the mean expression of mig-1.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 3C with smFISH data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:32:57.161976Z"
+    },
+    {
+      "id": "f9ff9c8b-fda2-491c-974a-bb2a0043f75a",
+      "content_id": "aa0516dd-3d70-42f5-9593-88e0dc805a07",
+      "claim_id": "C57",
+      "claim": "The average position of QR.pa was shifted anteriorly in upstream motif pair deletion mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the role of the late phase of mig-1 expression in terminating the anterior migration of QR.pa, the average position of QR.pa (p<0.0001 for the single and double deletions) and the total migration of the QR descendants (as determined from the final position of QR.pap) was shifted anteriorly (Figure 3\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 3\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:32:57.161976Z"
+    },
+    {
+      "id": "335ddb94-5f4b-49c1-a075-61e90c83d40b",
+      "content_id": "aa0516dd-3d70-42f5-9593-88e0dc805a07",
+      "claim_id": "C58",
+      "claim": "The two upstream motif pairs represent partially redundant cis-regulatory elements required for the late phase of mig-1 expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these results demonstrate that the two motif pairs represent partially redundant cis-regulatory elements that are required for the late phase of mig-1 expression and provide further support for the conclusion that the early and late phases of the expression are independently regulated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the deletion experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:32:57.161976Z"
+    },
+    {
+      "id": "1ffe0300-0572-48d2-90a9-17764a237f5e",
+      "content_id": "aa0516dd-3d70-42f5-9593-88e0dc805a07",
+      "claim_id": "C59",
+      "claim": "The loss of the late phase of mig-1 expression is in agreement with the activator model, not the repressor model.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the loss of the late phase of mig-1 expression \u2013 instead of premature expression earlier in the lineage \u2013 is in agreement with the activator model, not the repressor model, of mig-1 regulation (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as a conclusion comparing experimental results to model predictions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:32:57.161976Z"
+    },
+    {
+      "id": "a4059a33-eab6-44ac-bcb1-2e791408521f",
+      "content_id": "aa0516dd-3d70-42f5-9593-88e0dc805a07",
+      "claim_id": "C60",
+      "claim": "The division of QR.p is asymmetric in the size and fate of its daughter cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The division of QR.p that precedes the upregulation of mig-1 expression in QR.pa is asymmetric in the size and fate of its daughter cells: the large anterior daughter cell QR.pa remains a neuroblast, while the small posterior daughter cell QR.pp undergoes apoptosis and is rapidly engulfed and degraded by neighboring cells (Sulston and Horvitz, 1977).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from classic C. elegans lineage work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:32:57.161976Z"
+    },
+    {
+      "id": "04b70acd-2e9b-4033-ae56-fa86caf8e723",
+      "content_id": "aa0516dd-3d70-42f5-9593-88e0dc805a07",
+      "claim_id": "C61",
+      "claim": "Loss of ced-3 did not affect the upregulation of mig-1 expression in QR.pa.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, loss of ced-3 did not affect the upregulation of mig-1 expression in QR.pa (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 4A with smFISH data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:32:57.161976Z"
+    },
+    {
+      "id": "e44bcbfc-565f-4f5e-accf-d8d5ed31579a",
+      "content_id": "aa0516dd-3d70-42f5-9593-88e0dc805a07",
+      "claim_id": "C62",
+      "claim": "The number of mig-1 transcripts in surviving QR.pp cells remained low in ced-3 mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the number of mig-1 transcripts that could be detected in the surviving QR.pp cells remained low.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from the ced-3 mutant analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:32:57.161976Z"
+    },
+    {
+      "id": "74873dec-2248-4231-bd9a-a4aab52ec95e",
+      "content_id": "aa0516dd-3d70-42f5-9593-88e0dc805a07",
+      "claim_id": "C63",
+      "claim": "mig-1 is differently regulated in QR.pa and QR.pp daughter cells.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that mig-1 is differently regulated in the two daughter cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the ced-3 mutant analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:32:57.161976Z"
+    },
+    {
+      "id": "201199e2-49da-4d12-be9e-785be42d7f3e",
+      "content_id": "aa0516dd-3d70-42f5-9593-88e0dc805a07",
+      "claim_id": "C64",
+      "claim": "PIG-1/MELK is a key regulator of asymmetric neuroblast division.",
+      "claim_type": "EXPLICIT",
+      "source": "A key regulator of asymmetric neuroblast division is the serine/threonine kinase PIG-1/MELK (Cordes et al., 2006), which controls the size difference of the QR.p daughters by inducing posterior displacement of the mitotic spindle (Chien et al., 2013) and may also contribute to the asymmetric segregation of cell fate determinants (Chien et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:32:57.161976Z"
+    },
+    {
+      "id": "79eca886-eabc-41a3-aa23-fac773eb3f6f",
+      "content_id": "aa0516dd-3d70-42f5-9593-88e0dc805a07",
+      "claim_id": "C65",
+      "claim": "Loss of pig-1 resulted in a variable defect in cell size asymmetry with a significant reduction in the mean cell size difference between QR.pa and QR.pp.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected from these previous studies, loss of pig-1 resulted in a variable defect in cell size asymmetry, with a significant reduction in the mean cell size difference between QR.pa and QR.pp (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 4B with quantitative data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:32:57.161976Z"
+    },
+    {
+      "id": "634cb0d0-2723-4dc2-a1b6-602551de2140",
+      "content_id": "aa0516dd-3d70-42f5-9593-88e0dc805a07",
+      "claim_id": "C66",
+      "claim": "mig-1 expression in QR.pa was significantly decreased in pig-1 mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "smFISH analysis showed that mig-1 expression in QR.pa was significantly decreased under these conditions (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 4A with smFISH data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:32:57.161976Z"
+    },
+    {
+      "id": "7267481b-a076-4e3d-bb42-c0bda6c137f8",
+      "content_id": "aa0516dd-3d70-42f5-9593-88e0dc805a07",
+      "claim_id": "C67",
+      "claim": "There was no corresponding increase in the number of mig-1 transcripts in QR.pp in pig-1 mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "However, there was no corresponding increase in the number of mig-1 transcripts in QR.pp, and no evidence of active transcription \u2013 which is visible as one or two bright smFISH spots in the nucleus (Ji et al., 2013) \u2013 was observed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from the pig-1 mutant analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:32:57.161976Z"
+    },
+    {
+      "id": "43c37ff3-c692-47ce-8e76-c9de0b6e8e8f",
+      "content_id": "aa0516dd-3d70-42f5-9593-88e0dc805a07",
+      "claim_id": "C68",
+      "claim": "mig-1 expression in QR.pa shows a moderate positive correlation with the QR.pa/QR.pp size ratio in pig-1 mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 4C, we found a moderate correlation, with QR.pa cells from less asymmetric pairs showing lower mig-1 expression than QR.pa cells from more asymmetric pairs.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 4C with correlation analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:32:57.161976Z"
+    },
+    {
+      "id": "040ca396-e008-4b1a-8ece-4e94b0a535d3",
+      "content_id": "aa0516dd-3d70-42f5-9593-88e0dc805a07",
+      "claim_id": "C69",
+      "claim": "The nuclear size of QR.pa is not significantly different from that of its parent QR.p.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite changes in the overall cell size, we experimentally observed that the nuclear size of QR.pa is not significantly different from that of its parent QR.p (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 4D with quantitative data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:32:57.161976Z"
+    },
+    {
+      "id": "b1cbe29e-d814-4810-9070-a57ee9ea59b1",
+      "content_id": "aa0516dd-3d70-42f5-9593-88e0dc805a07",
+      "claim_id": "C70",
+      "claim": "Decreasing the QR.pa/QR.pp size ratio leads to reduced mig-1 levels in the QR.pa dynamics in the mathematical model.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that decreasing the QR.pa/QR.pp size ratio leads to reduced mig-1 levels in the QR.pa dynamics (Figure 4E, light colors), consistent with the experiments (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 4E with model predictions.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:32:57.161976Z"
+    },
+    {
+      "id": "e0f62143-2cf8-47b2-95ac-8553f7d5f2d0",
+      "content_id": "aa0516dd-3d70-42f5-9593-88e0dc805a07",
+      "claim_id": "C71",
+      "claim": "The asymmetry of the QR.p division is required for upregulation of mig-1 expression in QR.pa.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that the asymmetry of the QR.p division, with the concomitant difference in cell size and the share of the mig-1 activator that is inherited by the two daughter cells, is required for upregulation of mig-1 expression in QR.pa.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the pig-1 mutant analysis and modeling.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:32:57.161976Z"
+    },
+    {
+      "id": "5188b15a-2e01-48be-adee-dac1c2c9c117",
+      "content_id": "aa0516dd-3d70-42f5-9593-88e0dc805a07",
+      "claim_id": "C72",
+      "claim": "Temporal precision is enhanced when the regulated timekeeper molecule amplifies its own expression through positive feedback.",
+      "claim_type": "EXPLICIT",
+      "source": "Mathematical modeling of the regulator-based timekeeping mechanism has shown that temporal precision is enhanced when the regulated timekeeper molecule amplifies its own expression through positive feedback (Gupta et al., 2020), but the in vivo relevance of this predicted strategy is not known.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from the authors' previous theoretical work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:32:57.161976Z"
+    },
+    {
+      "id": "76274505-0c4b-493a-a0c4-64474c7387e1",
+      "content_id": "aa0516dd-3d70-42f5-9593-88e0dc805a07",
+      "claim_id": "C73",
+      "claim": "mig-1 encodes a Frizzled Wnt receptor that triggers a BAR-1/\u03b2-catenin-dependent signaling pathway in QR.pa.",
+      "claim_type": "EXPLICIT",
+      "source": "mig-1 encodes a Frizzled Wnt receptor that triggers a BAR-1/\u03b2-catenin-dependent signaling pathway in QR.pa that induces the expression of target genes that inhibit migration (Mentink et al., 2014; Rella et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:32:57.161976Z"
+    },
+    {
+      "id": "9536e3ab-b4a5-45af-ac9f-cd1ff98971f2",
+      "content_id": "aa0516dd-3d70-42f5-9593-88e0dc805a07",
+      "claim_id": "C74",
+      "claim": "mig-1 itself is among the genes that are significantly upregulated when BAR-1 signaling is prematurely activated in QR.p.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, mRNA sequencing showed that mig-1 itself is among the genes that are significantly upregulated when BAR-1 signaling is prematurely activated in QR.p using a constitutively active, N-terminally truncated version of BAR-1 (\u0394N-BAR-1; Rella et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from recent work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:32:57.161976Z"
+    },
+    {
+      "id": "98a6bdff-734d-4a4d-9acd-18ecae013f95",
+      "content_id": "aa0516dd-3d70-42f5-9593-88e0dc805a07",
+      "claim_id": "C75",
+      "claim": "mig-1 expression in QR.pa was significantly reduced in the absence of BAR-1 signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 5\u2014figure supplement 1, mig-1 expression in QR.pa was significantly reduced in the absence of BAR-1 signaling.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 5\u2014figure supplement 1 with smFISH data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:32:57.161976Z"
+    },
+    {
+      "id": "a9130562-4ba5-4ca6-a041-9332c8be2d4c",
+      "content_id": "aa0516dd-3d70-42f5-9593-88e0dc805a07",
+      "claim_id": "C76",
+      "claim": "MIG-1 stimulates its own expression through BAR-1/\u03b2-catenin-dependent positive feedback.",
+      "claim_type": "EXPLICIT",
+      "source": "These results support the notion that MIG-1 stimulates its own expression through BAR-1/\u03b2-catenin-dependent positive feedback.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the bar-1 mutant analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:32:57.161976Z"
+    },
+    {
+      "id": "eca58593-d66b-4404-b9d1-d5690ef72eb9",
+      "content_id": "aa0516dd-3d70-42f5-9593-88e0dc805a07",
+      "claim_id": "C77",
+      "claim": "The coefficient of variation in the position at which QR.pa expresses mig-1 at \u226525 transcripts was increased in both the bar-1 null mutant and animals expressing \u0394N-BAR-1.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 5B, the CV in the position at which QR.pa expresses mig-1 at \u226525 transcripts was increased in both the bar-1 null mutant and animals expressing \u0394N-BAR-1.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 5B with quantitative analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:32:57.161976Z"
+    },
+    {
+      "id": "829a813e-d68d-4bd8-a398-244cc05da180",
+      "content_id": "aa0516dd-3d70-42f5-9593-88e0dc805a07",
+      "claim_id": "C78",
+      "claim": "Positive feedback of mig-1 expression through BAR-1/\u03b2-catenin acts both independently of the activator and through the activator pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "Our modeling suggested that this effect is consistent with feedback on mig-1 that acts both (1) independently of the activator and (2) through the activator pathway; either type alone was insufficient.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the mathematical modeling.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:32:57.161976Z"
+    },
+    {
+      "id": "827adb6f-36dd-494e-87ca-a950434330c8",
+      "content_id": "aa0516dd-3d70-42f5-9593-88e0dc805a07",
+      "claim_id": "C79",
+      "claim": "Positive feedback regulation enhances timing precision of mig-1 expression.",
+      "claim_type": "EXPLICIT",
+      "source": "These results provide experimental support for the model prediction that positive feedback of a regulated timekeeper enhances timing precision.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion from the bar-1 mutant analysis and modeling.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:32:57.161976Z"
+    },
+    {
+      "id": "d6ef2d1d-bde1-4665-8717-e9497ac5b310",
+      "content_id": "aa0516dd-3d70-42f5-9593-88e0dc805a07",
+      "claim_id": "C80",
+      "claim": "The temporal precision at which a threshold is crossed is enhanced when the concentration of the timekeeper molecule increases in a non-linear fashion due to upstream regulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Using mathematical modeling, we have previously shown that the temporal precision at which this threshold is crossed is enhanced when the concentration of the timekeeper molecule increases in a non-linear fashion due to upstream regulation (Gupta et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from the authors' previous theoretical work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:32:57.161976Z"
+    },
+    {
+      "id": "5cb59a91-2531-4321-8d4f-e0ee0a48a46e",
+      "content_id": "aa0516dd-3d70-42f5-9593-88e0dc805a07",
+      "claim_id": "C81",
+      "claim": "mig-1 is sharply upregulated in QR.pa, which is consistent with a non-linear mode of regulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Quantification of mig-1 expression during QR lineage progression showed that it is sharply upregulated in QR.pa, which is consistent with a non-linear mode of regulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from the quantification experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:32:57.161976Z"
+    },
+    {
+      "id": "544d5eb7-01bf-48a7-8eb0-64a539de1cf0",
+      "content_id": "aa0516dd-3d70-42f5-9593-88e0dc805a07",
+      "claim_id": "C82",
+      "claim": "The early and late phases of mig-1 expression are independently regulated.",
+      "claim_type": "EXPLICIT",
+      "source": "Examination of evolutionarily conserved cis-regulatory elements that we deleted from the endogenous mig-1 locus using CRSPR/Cas9-mediated genome-editing showed that the two phases are independently regulated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the deletion experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:32:57.161976Z"
+    },
+    {
+      "id": "8c3342bf-7ff6-416d-8249-6bd908c0e3c3",
+      "content_id": "aa0516dd-3d70-42f5-9593-88e0dc805a07",
+      "claim_id": "C83",
+      "claim": "A small region in the first intron is required for the early expression of mig-1 in QR but is dispensable for the late phase of expression in QR.pa.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we identified a small region in the first intron that is required for the early expression of mig-1 in QR but is dispensable for the late phase of expression in QR.pa.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from the deletion experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:32:57.161976Z"
+    },
+    {
+      "id": "d5b31430-f3f7-4594-8b37-3e5b946aef84",
+      "content_id": "aa0516dd-3d70-42f5-9593-88e0dc805a07",
+      "claim_id": "C84",
+      "claim": "Two partially redundant regions upstream of the mig-1 coding sequence are required for the late phase of expression but have no detectable role in the early expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, two partially redundant regions upstream of the mig-1 coding sequence are required for the late phase of expression but have no detectable role in the early expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from the deletion experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:32:57.161976Z"
+    },
+    {
+      "id": "0fa73983-494b-4f1b-a1a4-ea648cb18c95",
+      "content_id": "aa0516dd-3d70-42f5-9593-88e0dc805a07",
+      "claim_id": "C85",
+      "claim": "In an activator-based model, removal of the activator disrupts the upregulation of mig-1 expression in QR.pa.",
+      "claim_type": "EXPLICIT",
+      "source": "In an activator-based model, removal of the activator disrupts the upregulation of mig-1 expression in QR.pa, while in the case of a repressor, removal of the repressor results in premature expression of mig-1 in QR.p.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a prediction from the mathematical model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:32:57.161976Z"
+    },
+    {
+      "id": "ba163496-4bb8-4c19-9072-b90f59e14506",
+      "content_id": "aa0516dd-3d70-42f5-9593-88e0dc805a07",
+      "claim_id": "C86",
+      "claim": "In a repressor-based model, removal of the repressor results in premature expression of mig-1 in QR.p.",
+      "claim_type": "EXPLICIT",
+      "source": "In an activator-based model, removal of the activator disrupts the upregulation of mig-1 expression in QR.pa, while in the case of a repressor, removal of the repressor results in premature expression of mig-1 in QR.p.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a prediction from the mathematical model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:32:57.161976Z"
+    },
+    {
+      "id": "8e17c049-b05a-4309-94de-3ef77332d0c4",
+      "content_id": "aa0516dd-3d70-42f5-9593-88e0dc805a07",
+      "claim_id": "C87",
+      "claim": "mig-1 expression in QR.pa was lost when the presumptive binding sites of the mig-1 regulator were deleted from the mig-1 upstream region.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that mig-1 expression in QR.pa was lost when the presumptive binding sites of the mig-1 regulator were deleted from the mig-1 upstream region, which supports the conclusion that the time-dependent expression of mig-1 depends on transcriptional activation and not on repression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from the deletion experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:32:57.161976Z"
+    },
+    {
+      "id": "6e05aac9-a610-4a66-af14-39e777014e64",
+      "content_id": "aa0516dd-3d70-42f5-9593-88e0dc805a07",
+      "claim_id": "C88",
+      "claim": "The time-dependent expression of mig-1 depends on transcriptional activation and not on repression.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that mig-1 expression in QR.pa was lost when the presumptive binding sites of the mig-1 regulator were deleted from the mig-1 upstream region, which supports the conclusion that the time-dependent expression of mig-1 depends on transcriptional activation and not on repression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the deletion experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:32:57.161976Z"
+    },
+    {
+      "id": "bd356b76-5c81-44bf-bb96-4b4cdcfcebdf",
+      "content_id": "aa0516dd-3d70-42f5-9593-88e0dc805a07",
+      "claim_id": "C89",
+      "claim": "The expression of mig-1 is enhanced through BAR-1/\u03b2-catenin signaling, creating a positive feedback loop.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the expression of mig-1 is enhanced through BAR-1/\u03b2-catenin signaling, creating a positive feedback loop.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from the bar-1 mutant analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:32:57.161976Z"
+    },
+    {
+      "id": "bfdce7f4-1fef-4929-a513-fce6728ba721",
+      "content_id": "aa0516dd-3d70-42f5-9593-88e0dc805a07",
+      "claim_id": "C90",
+      "claim": "Timing was more variable when the BAR-1 feedback loop was disrupted through loss or constitutive activation of the BAR-1 pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "Using the relative position at which QR.pa upregulates mig-1 expression as a measure of timing precision, we discovered that timing was more variable when this feedback loop was disrupted through loss or constitutive activation of the BAR-1 pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from the bar-1 mutant analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:32:57.161976Z"
+    },
+    {
+      "id": "8de1531d-515c-4a24-bb3e-3fef0dc92d7f",
+      "content_id": "aa0516dd-3d70-42f5-9593-88e0dc805a07",
+      "claim_id": "C91",
+      "claim": "Inhibition of QR.p mitosis and cell cycle progression through depletion of CDK-1 showed that the temporal regulation of mig-1 expression is independent of the division.",
+      "claim_type": "EXPLICIT",
+      "source": "Inhibition of QR.p mitosis and cell cycle progression through depletion of the M-phase regulator CDK-1 showed that the temporal regulation of mig-1 expression is independent of the division, ruling out a model in which the expression of mig-1 is linked to the invariant developmental timing of C. elegans cell divisions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from the CDK-1 depletion experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:32:57.161976Z"
+    },
+    {
+      "id": "5cdd6f54-ca8a-48e4-8404-1ea61f2497d6",
+      "content_id": "aa0516dd-3d70-42f5-9593-88e0dc805a07",
+      "claim_id": "C92",
+      "claim": "The asymmetry of the QR.p division influences the expression dynamics of mig-1.",
+      "claim_type": "EXPLICIT",
+      "source": "However, even though the division itself is not necessary for the upregulation of mig-1 expression, we found that the asymmetry of the QR.p division influences the expression dynamics of mig-1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from the pig-1 mutant analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:32:57.161976Z"
+    },
+    {
+      "id": "97966bf5-596e-405c-bf2c-73f8b326bbde",
+      "content_id": "aa0516dd-3d70-42f5-9593-88e0dc805a07",
+      "claim_id": "C93",
+      "claim": "Unequal partitioning of the mig-1 activator between the differently sized daughter cells is necessary for the upregulation of mig-1 expression in QR.pa.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, we predict that the activator is not sequestered at division and that unequal partitioning of the mig-1 activator between the differently sized daughter cells is necessary for the upregulation of mig-1 expression in QR.pa.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a prediction from the mathematical modeling.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:32:57.161976Z"
+    },
+    {
+      "id": "161e6a85-0e06-47db-a7c2-f65c53e3907c",
+      "content_id": "aa0516dd-3d70-42f5-9593-88e0dc805a07",
+      "claim_id": "C94",
+      "claim": "Both upstream regions that control late mig-1 expression overlap with binding peaks of multiple transcription factors.",
+      "claim_type": "EXPLICIT",
+      "source": "Chromatin immunoprecipitation followed by deep sequencing experiments (Araya et al., 2014) show that both regions overlap with binding peaks of multiple transcription factors, including homeobox transcription factors that are known to regulate Q neuroblast descendant migration (Clark et al., 1993), providing an entry point for the identification of the transcriptional regulators that control mig-1 expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from previous ChIP-seq work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:32:57.161976Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "4ac2d3b1-88c9-4fc4-986b-fe094baff788",
+      "content_id": "aa0516dd-3d70-42f5-9593-88e0dc805a07",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "mig-1 expression increases non-linearly during QR lineage progression, as demonstrated by single-molecule mRNA quantification showing sharp upregulation in QR.pa.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1 and C81 are directly supported by smFISH data presented in Figure 1B showing the non-linear, sharp upregulation of mig-1 in QR.pa. The quantitative measurements provide clear evidence for this dynamic expression pattern.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:32:57.161976Z"
+    },
+    {
+      "id": "0b812b4a-f2a4-44f2-bbae-c7663892172c",
+      "content_id": "aa0516dd-3d70-42f5-9593-88e0dc805a07",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The temporal regulation of mig-1 expression is independent of cell division and cell cycle progression, as demonstrated by CDK-1 depletion experiments that block QR.p division without affecting mig-1 upregulation timing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C37 and C91 are well-supported by the auxin-inducible CDK-1 depletion experiments (Figure 1C-E). The DNA content measurements confirm cell cycle arrest at 4C, and smFISH data show that mig-1 upregulation occurs at similar times in undivided QR.p cells as in controls, providing strong evidence for division-independent timing.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:32:57.161976Z"
+    },
+    {
+      "id": "c447195a-dcc2-446d-a63f-72538cf159ac",
+      "content_id": "aa0516dd-3d70-42f5-9593-88e0dc805a07",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The early and late phases of mig-1 expression are independently regulated through distinct cis-regulatory elements: intron motif pair A controls early expression in QR, while upstream motif pairs control late expression in QR.pa.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C46, C82-C84 are strongly supported by CRISPR/Cas9-mediated deletion experiments (Figures 2 and 3). The differential effects of intron vs. upstream deletions on early vs. late expression phases, combined with comparative genomics identifying conserved motifs, provide compelling evidence for independent regulation of the two phases.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:32:57.161976Z"
+    },
+    {
+      "id": "df0e154e-ee8f-40b7-b9d4-182e228dead8",
+      "content_id": "aa0516dd-3d70-42f5-9593-88e0dc805a07",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The time-dependent expression of mig-1 depends on transcriptional activation through an accumulating activator rather than a decreasing repressor, as demonstrated by loss of late-phase expression upon deletion of upstream regulatory elements and supported by mathematical modeling predictions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C4, C47, C50-C59, C85-C88 are well-supported by the combination of experimental deletion data (Figure 3C) and mathematical modeling (Figures 2D, 3A). The loss of late-phase expression (rather than premature expression) upon deletion of upstream motifs matches the activator model prediction and contradicts the repressor model, providing strong evidence for activation-based regulation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:32:57.161976Z"
+    },
+    {
+      "id": "f7f5cd0b-5ddb-41d2-a284-42f02369699b",
+      "content_id": "aa0516dd-3d70-42f5-9593-88e0dc805a07",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The asymmetry of QR.p division influences mig-1 expression dynamics through unequal partitioning of the activator between daughter cells, with reduced division asymmetry in pig-1 mutants correlating with decreased mig-1 expression in QR.pa.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C71, C92-C93 are supported by ced-3 and pig-1 mutant analyses (Figure 4A-D) combined with mathematical modeling (Figure 4E-F). The correlation between QR.pa/QR.pp size ratio and mig-1 expression (R=0.47), the nuclear size measurements, and model predictions together provide strong evidence that division asymmetry influences mig-1 regulation through activator partitioning.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:32:57.161976Z"
+    },
+    {
+      "id": "d2eae894-a630-4e58-a92e-f17f8015b939",
+      "content_id": "aa0516dd-3d70-42f5-9593-88e0dc805a07",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Positive feedback of mig-1 expression through BAR-1/\u03b2-catenin signaling enhances temporal precision, as demonstrated by increased coefficient of variation in mig-1 expression timing when feedback is disrupted in bar-1 mutants or constitutively activated.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C73-C79, C89-C90 are well-supported by bar-1 mutant and \u0394N-BAR-1 experiments (Figure 5, Figure 5\u2014figure supplement 1) combined with mathematical modeling (Figure 5\u2014figure supplement 2). The increased CV in both loss-of-function and gain-of-function conditions, along with modeling showing that feedback acting both independently and through the activator is necessary, provide strong evidence for feedback-enhanced precision.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:32:57.161976Z"
+    },
+    {
+      "id": "acbe560f-6ca9-4fe4-bdd3-b64f991e2f85",
+      "content_id": "aa0516dd-3d70-42f5-9593-88e0dc805a07",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Non-linear increase in timekeeper abundance and positive feedback are predicted by mathematical modeling to enhance timing precision compared to linear increase or autoregulation alone.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C11-C14, C72, C80 are supported by citations to the authors' previous theoretical work (Gupta et al., 2018, 2020; Ghusinga et al., 2017). While these are theoretical predictions rather than new experimental findings in this manuscript, they provide the conceptual framework that is experimentally validated by the current work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:32:57.161976Z"
+    },
+    {
+      "id": "5251d5b6-4a26-4f3f-a75e-61892d65a670",
+      "content_id": "aa0516dd-3d70-42f5-9593-88e0dc805a07",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Robust cell-intrinsic timing can be achieved by combining regulation and feedback of the timekeeper gene.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C8 represents the main conclusion synthesizing the experimental findings on activator-based regulation (C3-C4, C87-C88) and positive feedback (C7, C89-C90). This conclusion is well-supported by the collective evidence from deletion experiments, mutant analyses, and mathematical modeling presented throughout the manuscript.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:32:57.161976Z"
+    },
+    {
+      "id": "dcd68d0d-1032-4f6f-9bd9-d6d020ee1c13",
+      "content_id": "aa0516dd-3d70-42f5-9593-88e0dc805a07",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Background information on biological timing mechanisms, the C. elegans QR lineage system, and Wnt signaling in QR migration is established through citations to prior literature.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C10, C15-C31, C48, C94 are appropriately cited from previous literature and provide essential context for the current study. These claims establish the QR lineage as a tractable system for studying temporal regulation and summarize prior findings on mig-1's role in migration control. The citations appear accurate and relevant.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:32:57.161976Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "5a8eceae-24ae-4f0d-abba-808c36387ecc",
+      "result_id": "4ac2d3b1-88c9-4fc4-986b-fe094baff788"
+    },
+    {
+      "claim_id": "5cb59a91-2531-4321-8d4f-e0ee0a48a46e",
+      "result_id": "4ac2d3b1-88c9-4fc4-986b-fe094baff788"
+    },
+    {
+      "claim_id": "ace112a1-350b-41a3-bb7d-21f57a4a9ff3",
+      "result_id": "0b812b4a-f2a4-44f2-bbae-c7663892172c"
+    },
+    {
+      "claim_id": "11413697-486c-46ef-ab27-42250a9aa6ff",
+      "result_id": "0b812b4a-f2a4-44f2-bbae-c7663892172c"
+    },
+    {
+      "claim_id": "5c89081c-f07c-47b5-a674-d4d9f75f46a7",
+      "result_id": "0b812b4a-f2a4-44f2-bbae-c7663892172c"
+    },
+    {
+      "claim_id": "0fba2e3b-5493-4908-8e7e-601d2dd99fcd",
+      "result_id": "0b812b4a-f2a4-44f2-bbae-c7663892172c"
+    },
+    {
+      "claim_id": "1117bfc0-3440-4586-b866-fc0251f8bd7d",
+      "result_id": "0b812b4a-f2a4-44f2-bbae-c7663892172c"
+    },
+    {
+      "claim_id": "4bb5ccfb-e25e-4f2a-93b2-11ecc0fd9b29",
+      "result_id": "0b812b4a-f2a4-44f2-bbae-c7663892172c"
+    },
+    {
+      "claim_id": "8de1531d-515c-4a24-bb3e-3fef0dc92d7f",
+      "result_id": "0b812b4a-f2a4-44f2-bbae-c7663892172c"
+    },
+    {
+      "claim_id": "744802a2-bff5-40f1-a08c-ba4b6fc875e7",
+      "result_id": "c447195a-dcc2-446d-a63f-72538cf159ac"
+    },
+    {
+      "claim_id": "306f9553-03d6-4011-8a72-3e978de4f439",
+      "result_id": "c447195a-dcc2-446d-a63f-72538cf159ac"
+    },
+    {
+      "claim_id": "3feb2ab9-8025-4e31-a773-649a572d016f",
+      "result_id": "c447195a-dcc2-446d-a63f-72538cf159ac"
+    },
+    {
+      "claim_id": "34984a0e-8f10-487c-b8a9-15b46a1ffc54",
+      "result_id": "c447195a-dcc2-446d-a63f-72538cf159ac"
+    },
+    {
+      "claim_id": "7f39f7cc-dfdc-410e-a811-200acca6b189",
+      "result_id": "c447195a-dcc2-446d-a63f-72538cf159ac"
+    },
+    {
+      "claim_id": "1ef28f3f-efa7-46a2-9e63-e322d51e7117",
+      "result_id": "c447195a-dcc2-446d-a63f-72538cf159ac"
+    },
+    {
+      "claim_id": "dcb1d57e-7d5c-4ca0-a4e9-f7cb14880eb4",
+      "result_id": "c447195a-dcc2-446d-a63f-72538cf159ac"
+    },
+    {
+      "claim_id": "59294385-e5e4-4c16-9fbb-8dbd0d6a05ad",
+      "result_id": "c447195a-dcc2-446d-a63f-72538cf159ac"
+    },
+    {
+      "claim_id": "c9cf66af-f216-4cd9-80ae-b638d0a994ee",
+      "result_id": "c447195a-dcc2-446d-a63f-72538cf159ac"
+    },
+    {
+      "claim_id": "544d5eb7-01bf-48a7-8eb0-64a539de1cf0",
+      "result_id": "c447195a-dcc2-446d-a63f-72538cf159ac"
+    },
+    {
+      "claim_id": "8c3342bf-7ff6-416d-8249-6bd908c0e3c3",
+      "result_id": "c447195a-dcc2-446d-a63f-72538cf159ac"
+    },
+    {
+      "claim_id": "d5b31430-f3f7-4594-8b37-3e5b946aef84",
+      "result_id": "c447195a-dcc2-446d-a63f-72538cf159ac"
+    },
+    {
+      "claim_id": "d71032b9-976f-4b81-99da-65515a63c19f",
+      "result_id": "df0e154e-ee8f-40b7-b9d4-182e228dead8"
+    },
+    {
+      "claim_id": "1782d84c-3286-41ca-8f25-aa35ce982d16",
+      "result_id": "df0e154e-ee8f-40b7-b9d4-182e228dead8"
+    },
+    {
+      "claim_id": "449e76cb-b9db-4eb0-84c3-8e81641282f1",
+      "result_id": "df0e154e-ee8f-40b7-b9d4-182e228dead8"
+    },
+    {
+      "claim_id": "49ddc3ff-45a6-42d0-a53a-896a6d91a4cf",
+      "result_id": "df0e154e-ee8f-40b7-b9d4-182e228dead8"
+    },
+    {
+      "claim_id": "e13d8853-9903-42b0-bca4-e24160ab2a4b",
+      "result_id": "df0e154e-ee8f-40b7-b9d4-182e228dead8"
+    },
+    {
+      "claim_id": "168453de-e3ea-4219-91b5-52363b0f4aa0",
+      "result_id": "df0e154e-ee8f-40b7-b9d4-182e228dead8"
+    },
+    {
+      "claim_id": "3b54104c-f2c1-4398-b1a9-97666cdad0fa",
+      "result_id": "df0e154e-ee8f-40b7-b9d4-182e228dead8"
+    },
+    {
+      "claim_id": "fc5440bc-08f0-42b7-b909-ff021aa790ec",
+      "result_id": "df0e154e-ee8f-40b7-b9d4-182e228dead8"
+    },
+    {
+      "claim_id": "b403fd33-7bf0-490c-b057-92277e261f8d",
+      "result_id": "df0e154e-ee8f-40b7-b9d4-182e228dead8"
+    },
+    {
+      "claim_id": "242b9b09-e510-4190-b44a-c93bedf05dbb",
+      "result_id": "df0e154e-ee8f-40b7-b9d4-182e228dead8"
+    },
+    {
+      "claim_id": "f9ff9c8b-fda2-491c-974a-bb2a0043f75a",
+      "result_id": "df0e154e-ee8f-40b7-b9d4-182e228dead8"
+    },
+    {
+      "claim_id": "335ddb94-5f4b-49c1-a075-61e90c83d40b",
+      "result_id": "df0e154e-ee8f-40b7-b9d4-182e228dead8"
+    },
+    {
+      "claim_id": "1ffe0300-0572-48d2-90a9-17764a237f5e",
+      "result_id": "df0e154e-ee8f-40b7-b9d4-182e228dead8"
+    },
+    {
+      "claim_id": "0fa73983-494b-4f1b-a1a4-ea648cb18c95",
+      "result_id": "df0e154e-ee8f-40b7-b9d4-182e228dead8"
+    },
+    {
+      "claim_id": "ba163496-4bb8-4c19-9072-b90f59e14506",
+      "result_id": "df0e154e-ee8f-40b7-b9d4-182e228dead8"
+    },
+    {
+      "claim_id": "8e17c049-b05a-4309-94de-3ef77332d0c4",
+      "result_id": "df0e154e-ee8f-40b7-b9d4-182e228dead8"
+    },
+    {
+      "claim_id": "6e05aac9-a610-4a66-af14-39e777014e64",
+      "result_id": "df0e154e-ee8f-40b7-b9d4-182e228dead8"
+    },
+    {
+      "claim_id": "a4059a33-eab6-44ac-bcb1-2e791408521f",
+      "result_id": "f7f5cd0b-5ddb-41d2-a284-42f02369699b"
+    },
+    {
+      "claim_id": "04b70acd-2e9b-4033-ae56-fa86caf8e723",
+      "result_id": "f7f5cd0b-5ddb-41d2-a284-42f02369699b"
+    },
+    {
+      "claim_id": "e44bcbfc-565f-4f5e-accf-d8d5ed31579a",
+      "result_id": "f7f5cd0b-5ddb-41d2-a284-42f02369699b"
+    },
+    {
+      "claim_id": "74873dec-2248-4231-bd9a-a4aab52ec95e",
+      "result_id": "f7f5cd0b-5ddb-41d2-a284-42f02369699b"
+    },
+    {
+      "claim_id": "201199e2-49da-4d12-be9e-785be42d7f3e",
+      "result_id": "f7f5cd0b-5ddb-41d2-a284-42f02369699b"
+    },
+    {
+      "claim_id": "79eca886-eabc-41a3-aa23-fac773eb3f6f",
+      "result_id": "f7f5cd0b-5ddb-41d2-a284-42f02369699b"
+    },
+    {
+      "claim_id": "634cb0d0-2723-4dc2-a1b6-602551de2140",
+      "result_id": "f7f5cd0b-5ddb-41d2-a284-42f02369699b"
+    },
+    {
+      "claim_id": "7267481b-a076-4e3d-bb42-c0bda6c137f8",
+      "result_id": "f7f5cd0b-5ddb-41d2-a284-42f02369699b"
+    },
+    {
+      "claim_id": "43c37ff3-c692-47ce-8e76-c9de0b6e8e8f",
+      "result_id": "f7f5cd0b-5ddb-41d2-a284-42f02369699b"
+    },
+    {
+      "claim_id": "040ca396-e008-4b1a-8ece-4e94b0a535d3",
+      "result_id": "f7f5cd0b-5ddb-41d2-a284-42f02369699b"
+    },
+    {
+      "claim_id": "b1cbe29e-d814-4810-9070-a57ee9ea59b1",
+      "result_id": "f7f5cd0b-5ddb-41d2-a284-42f02369699b"
+    },
+    {
+      "claim_id": "e0f62143-2cf8-47b2-95ac-8553f7d5f2d0",
+      "result_id": "f7f5cd0b-5ddb-41d2-a284-42f02369699b"
+    },
+    {
+      "claim_id": "5cdd6f54-ca8a-48e4-8404-1ea61f2497d6",
+      "result_id": "f7f5cd0b-5ddb-41d2-a284-42f02369699b"
+    },
+    {
+      "claim_id": "97966bf5-596e-405c-bf2c-73f8b326bbde",
+      "result_id": "f7f5cd0b-5ddb-41d2-a284-42f02369699b"
+    },
+    {
+      "claim_id": "b672c3a6-fbc6-426a-97e7-ab2d3e25b12f",
+      "result_id": "d2eae894-a630-4e58-a92e-f17f8015b939"
+    },
+    {
+      "claim_id": "76274505-0c4b-493a-a0c4-64474c7387e1",
+      "result_id": "d2eae894-a630-4e58-a92e-f17f8015b939"
+    },
+    {
+      "claim_id": "9536e3ab-b4a5-45af-ac9f-cd1ff98971f2",
+      "result_id": "d2eae894-a630-4e58-a92e-f17f8015b939"
+    },
+    {
+      "claim_id": "98a6bdff-734d-4a4d-9acd-18ecae013f95",
+      "result_id": "d2eae894-a630-4e58-a92e-f17f8015b939"
+    },
+    {
+      "claim_id": "a9130562-4ba5-4ca6-a041-9332c8be2d4c",
+      "result_id": "d2eae894-a630-4e58-a92e-f17f8015b939"
+    },
+    {
+      "claim_id": "eca58593-d66b-4404-b9d1-d5690ef72eb9",
+      "result_id": "d2eae894-a630-4e58-a92e-f17f8015b939"
+    },
+    {
+      "claim_id": "829a813e-d68d-4bd8-a398-244cc05da180",
+      "result_id": "d2eae894-a630-4e58-a92e-f17f8015b939"
+    },
+    {
+      "claim_id": "827adb6f-36dd-494e-87ca-a950434330c8",
+      "result_id": "d2eae894-a630-4e58-a92e-f17f8015b939"
+    },
+    {
+      "claim_id": "bd356b76-5c81-44bf-bb96-4b4cdcfcebdf",
+      "result_id": "d2eae894-a630-4e58-a92e-f17f8015b939"
+    },
+    {
+      "claim_id": "bfdce7f4-1fef-4929-a513-fce6728ba721",
+      "result_id": "d2eae894-a630-4e58-a92e-f17f8015b939"
+    },
+    {
+      "claim_id": "cc504f20-a52d-4a5a-88ca-9a3899442627",
+      "result_id": "acbe560f-6ca9-4fe4-bdd3-b64f991e2f85"
+    },
+    {
+      "claim_id": "f979432a-138d-4050-9703-0f397ef7a15c",
+      "result_id": "acbe560f-6ca9-4fe4-bdd3-b64f991e2f85"
+    },
+    {
+      "claim_id": "daf616d5-53cf-4a1a-8949-5b1c95f868c4",
+      "result_id": "acbe560f-6ca9-4fe4-bdd3-b64f991e2f85"
+    },
+    {
+      "claim_id": "88b51aa8-3911-496b-82ea-8c5db445bc73",
+      "result_id": "acbe560f-6ca9-4fe4-bdd3-b64f991e2f85"
+    },
+    {
+      "claim_id": "e59d38f0-a889-44b0-be0f-c5ae5591ae83",
+      "result_id": "acbe560f-6ca9-4fe4-bdd3-b64f991e2f85"
+    },
+    {
+      "claim_id": "5188b15a-2e01-48be-adee-dac1c2c9c117",
+      "result_id": "acbe560f-6ca9-4fe4-bdd3-b64f991e2f85"
+    },
+    {
+      "claim_id": "d6ef2d1d-bde1-4665-8717-e9497ac5b310",
+      "result_id": "acbe560f-6ca9-4fe4-bdd3-b64f991e2f85"
+    },
+    {
+      "claim_id": "7de53fb9-8aa3-46d8-9763-3fd53d586a89",
+      "result_id": "5251d5b6-4a26-4f3f-a75e-61892d65a670"
+    },
+    {
+      "claim_id": "a4299682-b592-482f-a380-6bf861dc2720",
+      "result_id": "dcd68d0d-1032-4f6f-9bd9-d6d020ee1c13"
+    },
+    {
+      "claim_id": "43a21a11-dd2f-4b52-a040-e64e34f62250",
+      "result_id": "dcd68d0d-1032-4f6f-9bd9-d6d020ee1c13"
+    },
+    {
+      "claim_id": "3b7ca532-3e08-41ec-9de2-cd954656fc42",
+      "result_id": "dcd68d0d-1032-4f6f-9bd9-d6d020ee1c13"
+    },
+    {
+      "claim_id": "3fb800aa-0406-4530-a195-f30beeb4f9dd",
+      "result_id": "dcd68d0d-1032-4f6f-9bd9-d6d020ee1c13"
+    },
+    {
+      "claim_id": "b381d386-5aaf-4163-9240-f44fc2d3cba7",
+      "result_id": "dcd68d0d-1032-4f6f-9bd9-d6d020ee1c13"
+    },
+    {
+      "claim_id": "c8b025fd-06ac-4e31-8663-6382d1754919",
+      "result_id": "dcd68d0d-1032-4f6f-9bd9-d6d020ee1c13"
+    },
+    {
+      "claim_id": "42500351-32bd-49a5-a180-85516ef424e4",
+      "result_id": "dcd68d0d-1032-4f6f-9bd9-d6d020ee1c13"
+    },
+    {
+      "claim_id": "c28b56bb-efb3-4a2c-9ad5-457186f50639",
+      "result_id": "dcd68d0d-1032-4f6f-9bd9-d6d020ee1c13"
+    },
+    {
+      "claim_id": "7e407ebc-28c0-455a-a618-0678aa3eaa11",
+      "result_id": "dcd68d0d-1032-4f6f-9bd9-d6d020ee1c13"
+    },
+    {
+      "claim_id": "e4733cd5-dd40-4c79-9446-651db6c0c214",
+      "result_id": "dcd68d0d-1032-4f6f-9bd9-d6d020ee1c13"
+    },
+    {
+      "claim_id": "90dde648-a11e-4153-a972-099842ac0ec3",
+      "result_id": "dcd68d0d-1032-4f6f-9bd9-d6d020ee1c13"
+    },
+    {
+      "claim_id": "09afd572-cf1b-46c8-b75a-3e0b6e38e288",
+      "result_id": "dcd68d0d-1032-4f6f-9bd9-d6d020ee1c13"
+    },
+    {
+      "claim_id": "0a7e922b-acf1-4130-8209-45f4308140d8",
+      "result_id": "dcd68d0d-1032-4f6f-9bd9-d6d020ee1c13"
+    },
+    {
+      "claim_id": "505afb97-2726-4a14-8b21-58088e6f185f",
+      "result_id": "dcd68d0d-1032-4f6f-9bd9-d6d020ee1c13"
+    },
+    {
+      "claim_id": "61457fd9-49f7-43bb-b085-0568cd34f0ea",
+      "result_id": "dcd68d0d-1032-4f6f-9bd9-d6d020ee1c13"
+    },
+    {
+      "claim_id": "ea93ce04-9796-4f59-9883-27124a6ca6df",
+      "result_id": "dcd68d0d-1032-4f6f-9bd9-d6d020ee1c13"
+    },
+    {
+      "claim_id": "0d8b8601-f6aa-4ef1-b30c-4f1c1d78a4be",
+      "result_id": "dcd68d0d-1032-4f6f-9bd9-d6d020ee1c13"
+    },
+    {
+      "claim_id": "82f9fbd3-b0f2-4a88-94b5-410a70c6ef91",
+      "result_id": "dcd68d0d-1032-4f6f-9bd9-d6d020ee1c13"
+    },
+    {
+      "claim_id": "bf93560e-df36-47ea-9610-042fa895ed49",
+      "result_id": "dcd68d0d-1032-4f6f-9bd9-d6d020ee1c13"
+    },
+    {
+      "claim_id": "dd72483a-c33d-4d9f-80c4-1cc8dfad9e51",
+      "result_id": "dcd68d0d-1032-4f6f-9bd9-d6d020ee1c13"
+    },
+    {
+      "claim_id": "161e6a85-0e06-47db-a7c2-f65c53e3907c",
+      "result_id": "dcd68d0d-1032-4f6f-9bd9-d6d020ee1c13"
+    }
+  ],
+  "comparisons": []
+}

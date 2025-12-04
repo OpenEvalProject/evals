@@ -1,0 +1,376 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C5",
+      "C27",
+      "C37",
+      "C38",
+      "C50",
+      "C117"
+    ],
+    "result": "Obox4 is a bona fide multicopy protein-coding gene encoding a homeodomain-containing transcription factor that is highly expressed in mouse two-cell embryos and 2C-like cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C27, C37, C38, and C117 collectively demonstrate that Obox4 encodes a functional protein. The evidence includes immunofluorescence detection of endogenous OBOX4 protein (C37), Ribo-seq confirmation of translation (C38), presence of a homeobox domain (C50), and high expression in 2C embryos and TBLCs (C27, C35). The generation of specific monoclonal antibodies and detection of protein in multiple systems provides strong support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C51",
+      "C52"
+    ],
+    "result": "Obox4 induces 2C-like gene expression and activates transposable elements in mESCs, with effects similar to but milder than Dux.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C47 demonstrate that Obox4 overexpression induces tdTomato reporter activity (C41-C42) and upregulates 2C-genes and TEs (C43) with substantial overlap with Dux targets (C44, 159/164 genes). RNA-seq data shows high correlation between Dux and Obox4-induced transcriptomic changes (C46), though Obox4 effects are quantitatively milder (C45). The mutual induction between Dux and Obox4 (C47) further supports functional relationship.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C69"
+    ],
+    "result": "OBOX4 directly binds to promoters of 2C-genes through a specific DNA binding motif, with substantial overlap with DUX targets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "CUT&RUN data (C54-C56) identifies ~24,000 OBOX4 binding peaks, with 39.5% in promoter regions covering 26.8% of 2C-genes. De novo motif discovery identifies CTGGGATYWRMR as the OBOX4 binding motif (C57-C58). The 36.3% overlap between OBOX4 and DUX targets (C59-C60), including key ZGA genes like Dppa2, Sp110, and Zscan4d (C61), demonstrates direct transcriptional regulation. The validation with published DUX ChIP data (C53) strengthens confidence in the CUT&RUN approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C67",
+      "C68",
+      "C123",
+      "C124"
+    ],
+    "result": "OBOX4 binds and activates both MERVL and MERVK LTR elements, with preferential binding to MERVK elements (RLTR9/RLTR13), while DUX strongly prefers MERVL (MT2_Mm).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "CUT&RUN data shows OBOX4 binds both MERVL and MERVK LTRs (C7-C8), with MT2_Mm among top 10 targets for both factors (C62). However, OBOX4 shows bias toward MERVK elements RLTR9 and RLTR13 (C64), while DUX strongly prefers MT2_Mm (C63). Reporter assays in double knockout cells confirm Obox4 activates both RLTR13B2 and MT2_Mm, while Dux only activates MT2_Mm (C67-C68), demonstrating functional activation in Dux-independent manner (C124).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C9",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Single depletion of Obox4 is tolerated by embryogenesis, with Obox4 knockout mice developing normally and remaining fertile.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple lines of evidence demonstrate Obox4 is dispensable for development. Obox4KO mice are born at expected Mendelian ratios (7/29, consistent with 25%, C76), develop to adulthood without abnormalities (C77), and are fertile when intercrossed (C78). This is consistent across SCNT experiments (C9, 38.5% blastocyst rate vs 54.4% WT) and ASO knockdown (C84, ~50% reach blastocyst). The consistency across multiple experimental approaches strongly supports this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C10",
+      "C30",
+      "C74",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C118",
+      "C119",
+      "C120",
+      "C122"
+    ],
+    "result": "Concomitant depletion of both Obox4 and Dux severely compromises embryonic development and ZGA, demonstrating functional redundancy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple experimental approaches consistently show severe developmental defects with double depletion. SCNT with double KO mESCs yields only 29.3% blastocysts with severe morphological abnormalities (C74-C75). Double KO mice are produced at sub-Mendelian ratios (C80, C119) with only one DuxKO/Obox4KO pup observed. ASO double knockdown results in >80% embryos arrested before 4C stage (C86-C87). RNA-seq shows dysregulation of 2C-genes and TEs (C82, C95, C122), with transcriptomic analysis indicating dysfunctional rather than delayed development (C88-C89). The consistency across SCNT, genetic knockout, and ASO approaches provides strong support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Microinjection of Obox4 mRNA rescues the developmental arrest and transcriptomic defects of Obox4/Dux double knockdown embryos.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The rescue experiment provides functional validation of Obox4's role. Immunofluorescence confirms OBOX4 restoration (C93), developmental monitoring shows blastocyst formation restored to Dux single knockdown levels (C94), and RNA-seq demonstrates rescue of transcriptomic dysregulation (C95-C96) with 58% (102/175) of downregulated 2C-genes rescued (C97). This gain-of-function experiment strongly supports that OBOX4 can promote ZGA in the absence of DUX (C98).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C6",
+      "C11",
+      "C32",
+      "C70",
+      "C90",
+      "C91",
+      "C92",
+      "C98",
+      "C125"
+    ],
+    "result": "OBOX4 provides genetic redundancy to DUX in driving zygotic genome activation and preimplantation development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is the central conclusion of the manuscript, supported by convergent evidence from multiple experimental approaches. OBOX4 activates overlapping target genes (C44, C59-C60), binds similar LTR elements (C62), can activate targets in Dux-independent manner (C70, C91), and rescues double knockdown phenotypes (C98). The severe phenotype only upon double depletion (C10, C30) across SCNT, genetic knockout, and ASO approaches (C90) demonstrates functional redundancy. Claims C6, C11, C32, C92, and C125 represent this conclusion stated at different points in the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "Obox4 has distinct transcriptional targets compared to other Obox family members (Obox3/Obox5), with functional redundancy to Dux being a unique feature of Obox4.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Comparative transcriptomic analysis shows that while Obox3 and Obox5 targets overlap substantially (C101, C103, R\u00b2=high), Obox4-induced genes show poor correlation with Obox3/Obox5 (C102, C104). Most 2C-genes and TEs induced by Obox3/Obox5 are not induced by Obox4 except MERVL (C105). Similarly, Dux/Obox4 DKD and Obox mzKO embryos show distinct transcriptomic signatures (C106-C107), with Obox4 KD correlating more with Dux/Obox4 DKD than Obox mzKO (C108). This supports Obox4's unique redundancy with Dux (C109).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Bioinformatic screening identified Obox4 as a candidate ZGA factor based on expression patterns and response to Dux knockout.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The screening approach is well-documented. Clustering of scRNA-seq data identified 45 homeobox genes with peak expression before late 2C stage (C34). Analysis of TBLC RNA-seq identified four genes (Duxf3, Emx2, Hoxd13, Obox4) with >10-fold higher expression than mESCs (C35). Among these, only Obox4 expression was partially affected in Dux KO embryos (C36), making it the lead candidate. This rational screening approach is supported by appropriate data analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C53",
+      "C66"
+    ],
+    "result": "CUT&RUN methodology was validated for DUX and applied to OBOX4 in knockout cell lines where 14 of 15 protein-coding Obox4 copies were removed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The technical validation is appropriate. CUT&RUN against 3\u00d7FLAG-DUX recapitulated published HA-DUX ChIP data (C53), validating the approach. The generation of Obox4/Dux double knockout mESC lines with 14/15 protein-coding Obox4 copies removed (C66) is confirmed by genotyping data in supplementary figures. This provides confidence in the specificity of OBOX4 binding data and functional assays in knockout backgrounds.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "SCNT experiments show reduced blastocyst formation with single knockouts (Obox4: 38.5%, Dux: 39.7%) compared to wildtype (54.4%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The SCNT data provides quantitative assessment of developmental competence. WT mESC-derived SCNT embryos show 54.4% blastocyst formation (C71), while Obox4 and Dux single KO show reduced rates of 38.5% and 39.7% respectively (C72-C73). These data support that both factors contribute to development, though the manuscript notes statistical analysis in Figure 4B. The consistency with ASO knockdown data (C84-C85) strengthens these findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C84",
+      "C85"
+    ],
+    "result": "ASO-mediated single knockdown of Obox4 or Dux results in moderate developmental defects with ~50% and ~25% reaching blastocyst stage, respectively.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "ASO knockdown provides an alternative approach to assess gene function. Obox4 single knockdown shows ~50% blastocyst formation (C84), while Dux single knockdown shows ~25% (C85), consistent with prior studies. These data complement the genetic knockout experiments and demonstrate that transient depletion recapitulates the phenotypes observed with constitutive knockout, supporting the robustness of the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C75"
+    ],
+    "result": "All blastocysts derived from Obox4/Dux double knockout mESCs in SCNT experiments showed severe morphological abnormalities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This qualitative observation (C75) is supported by images in Figure 4C showing morphological defects in double KO blastocysts. While the assessment is based on morphological criteria, it provides additional evidence beyond the quantitative blastocyst formation rate (C74) that double knockout severely compromises embryo quality. This supports the functional importance of both factors.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "The Obox family consists of 67 members clustered on mouse chromosome 7, divided into six subfamilies, with Obox4 comprising ~60% (39/67) of family members.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are established facts about Obox gene family structure cited from prior literature (C114-C116). The claims accurately represent the genomic organization and are relevant for understanding why Obox4 was selected for study and the complexity of generating knockout models. The citations to Zhong and Holland 2011 and Wilming et al. 2015 are appropriate sources for this information.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C33",
+      "C39",
+      "C40",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C126",
+      "C127"
+    ],
+    "result": "Background knowledge about ZGA, homeobox genes, and Dux function in early embryonic development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C1-C2, C12-C26, C33, C39-C40, C110-C113, C126-C127) represent established knowledge from prior literature that provides context for the study. They accurately describe ZGA processes, the role of DUX in activating MERVL LTRs, the paradox of fertile Dux knockout mice, homeobox gene function, and Obox gene discovery. The citations are appropriate and these claims establish the scientific rationale for investigating Obox4 as a redundant ZGA factor.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C99",
+      "C100"
+    ],
+    "result": "Recent work by Ji et al. 2023 demonstrated that OBOX family proteins regulate ZGA in a DUX-independent manner, with maternal and zygotic Obox members showing redundancy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C99-C100) accurately cite concurrent work from Ji et al. 2023 that is relevant to the current study. The citation is appropriate and the claims correctly represent the findings of that study. This provides important context for understanding how the current work on Obox4 relates to and extends beyond the broader Obox family functions described by Ji et al.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "Mouse ZGA represents an evolutionary innovation with overlapping minor and major ZGA, supported by intronless structure and tandem clustering of Dux and Obox4, resulting in a strongly canalized developmental program.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C128-C131 present evolutionary interpretations that are speculative (C131 explicitly states \"may represent\"). While the observations about intronless structure (C129) and tandem clustering (C130) are factual, the functional interpretations about \"earliest possible translation\" and \"rapid accumulation\" are inferences. The claim about strong canalization (C132-C133) is based on the observation that some ZGA genes remain expressed in double knockouts, but this could alternatively indicate additional redundant factors rather than canalization. These interpretations require additional experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141"
+    ],
+    "result": "The Obox family underwent mouse-specific duplication from an ancestral locus syntenic to TPRX2 in other mammals, with TPRX2 potentially showing functionally convergent evolution despite divergent genetic context.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C134-C135 about evolutionary history are appropriately cited from prior literature. However, the speculation about functional convergent evolution (C139, C141) is based on limited functional similarity between TPRX2 and Obox4 (C136-C138). The claim that \"homeobox gene-mediated LTR activation might be a common principle of ZGA\" (C141) is highly speculative and would require comparative functional studies across species. The use of \"might\" and \"suggesting\" appropriately indicates uncertainty, but the evidence is insufficient for strong conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148"
+    ],
+    "result": "The barely established repressive epigenetic landscape during minor ZGA may allow DUX and OBOX4 to shape the zygotic transcriptome, though mESCs cannot fully recapitulate 2C embryo transcriptomes, and OBOX4 may be less potent than DUX in the repressive mESC environment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These claims involve mechanistic speculation about epigenetic permissiveness. While C146-C147 present data showing OBOX4 is equally potent at activating reporters but less potent at inducing 2C-genes in mESCs, the interpretation that this reflects differential epigenetic permissiveness (C148) is speculative. Claims C142-C143 about the epigenetic landscape during ZGA are inferences rather than direct measurements. The observation that mESCs cannot fully recapitulate 2C transcriptomes (C144-C145) is cited from other studies but the mechanistic interpretation requires additional validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C29"
+    ],
+    "result": "OBOX4 affects the deposition of active epigenetic modifications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNSUPPORTED",
+    "evaluation": "Claim C29 states that OBOX4 \"affects the deposition of active epigenetic modifications,\" but this is inferred from binding data and functional effects rather than directly demonstrated. The manuscript does not present ChIP-seq or CUT&RUN data for histone modifications (e.g., H3K4me3, H3K27ac) showing changes upon OBOX4 binding or manipulation. While the functional activation of target genes suggests epigenetic changes may occur, direct evidence of altered histone modification deposition is not provided. This claim requires additional experimental validation.",
+    "result_type": "MINOR"
+  }
+]

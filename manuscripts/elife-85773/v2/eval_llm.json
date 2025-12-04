@@ -1,0 +1,261 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Tyrosine PUFA analogues (NALT, Lin-tyr, DHA-tyr, Pin-tyr) robustly activate the IKs channel by shifting voltage dependence (\u0394V0.5 ranging from -56.2 to -74.4 mV at 20 \u03bcM), increasing maximal conductance (Gmax 1.43-2.0 at 20 \u03bcM), and increasing overall current (I/I0 5.0-12.8 at 20 \u03bcM). Lin-tyr shows the strongest effects, while Lin-glycine shows more modest voltage shifts but similar Gmax increases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C47 provide comprehensive quantitative data from electrophysiological experiments showing consistent activation of IKs channels by tyrosine PUFAs across multiple parameters (voltage shift, conductance, current). The data include error estimates and are presented with dose-response relationships, supporting the conclusion that tyrosine PUFAs are potent IKs activators.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C105"
+    ],
+    "result": "Cation-pi interactions are not the primary mechanism of IKs activation by tyrosine PUFAs. Phenylalanine PUFAs (Lin-phe, NAL-phe) show significantly reduced effects compared to tyrosine PUFAs (I/I0 ~2.4-2.6 vs 5.1-12.8; \u0394V0.5 ~-12.5 to -13.1 mV vs -56.2 to -74.4 mV; p<0.0001), indicating the distal -OH group is critical for potent activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C60 and C105 present a logical experimental test of the cation-pi hypothesis using phenylalanine analogues lacking the hydroxyl group. The statistically significant reduction in all activation parameters (I/I0, \u0394V0.5, Gmax) when the -OH is removed provides strong evidence against cation-pi interactions as the primary mechanism and supports the importance of the hydroxyl group.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C111"
+    ],
+    "result": "Adding highly electronegative groups (Br, F) to phenylalanine PUFAs improves IKs activation, particularly Gmax effects (1.9-2.4 at 20 \u03bcM), with 3,4,5F-NAL-phe showing significantly greater effects than NAL-phe (I/I0 p=0.0186; \u0394V0.5 p=0.0096). However, these modified phenylalanine PUFAs still produce smaller voltage shifts than tyrosine PUFAs (NALT: p=0.0003-0.0021), indicating electronegative groups alone cannot fully recapitulate tyrosine PUFA effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C75, C106-C109, and C111 demonstrate through systematic comparison that electronegative substitutions improve phenylalanine PUFA efficacy but do not achieve tyrosine PUFA-level voltage shifts. The statistical comparisons are appropriate and the conclusion that tri-fluorination disrupts cation-pi interactions (C106) yet improves activation (C107) further supports that cation-pi is not the primary mechanism. The data consistently show preferential effects on Gmax over voltage dependence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C93",
+      "C112",
+      "C122"
+    ],
+    "result": "Hydrogen bonding by the tyrosine hydroxyl group is critical for voltage-dependent activation. 3F-NALT, with enhanced hydrogen bonding capacity, produces a significantly greater voltage shift (\u0394V0.5 = -69.3 \u00b1 1.4 mV) compared to NALT (-56.1 \u00b1 3.6 mV; p=0.0298), while Gmax effects remain unchanged (p=0.7324). This demonstrates hydrogen bonding preferentially influences voltage dependence rather than maximal conductance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C81, C93, C112, and C122 present a well-designed experiment using fluorine substitution to enhance hydrogen bonding without adding bulk. The selective enhancement of voltage shift without affecting Gmax, supported by statistical significance, provides strong evidence for hydrogen bonding as a mechanism specifically affecting voltage sensor interactions. The chemical rationale (fluorine reduces pKa, enhances H-bonding) is sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C102",
+      "C119"
+    ],
+    "result": "Aromatic PUFAs activate IKs through two independent mechanisms: (1) voltage sensor interaction via R231 in S4, which mediates >50% of the voltage shift effect (Lin-tyr: \u0394V0.5 reduced from -74.4 to -36.5 mV with R231Q+Q234R, p<0.0001), and (2) pore interaction via K326 in S6, which mediates Gmax increases (3,4,5F-NAL-phe: Gmax reduced from 2.4 to 1.22 with K326C, p=0.0287). These effects are independent as mutations selectively affect either voltage shift or Gmax but not both.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C92, C102, and C119 demonstrate through mutagenesis that aromatic PUFAs act at two distinct sites previously identified for non-aromatic PUFAs. The independence of the two mechanisms is convincingly shown by the selective effects of R231Q+Q234R (affects \u0394V0.5 but not Gmax) and K326C (affects Gmax but not \u0394V0.5) mutations. Statistical significance is reported and the results are consistent with prior work on non-aromatic PUFAs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C123",
+      "C124"
+    ],
+    "result": "T224 in the S3-S4 loop is a novel hydrogen bonding site for tyrosine PUFAs. The T224V mutation specifically reduces NALT voltage shift effects (\u0394V0.5 from -56.1 to -32.1 mV, p=0.03) but does not affect NAL-phe (lacking -OH group), while other S3-S4 loop mutations (S217A, Q220L, S225A) show no effect. This identifies T224 as the hydrogen bonding partner for the tyrosine hydroxyl group.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C98, C123-C124 present a systematic mutagenesis screen of hydrogen-bonding-capable residues in the S3-S4 loop. The specificity of the T224V effect (reduces NALT but not NAL-phe effects) provides strong evidence for hydrogen bonding as the mechanism. The negative results for other residues strengthen the conclusion. However, the statistical significance is modest (p=0.03) and only one concentration is tested for the comparison.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C103",
+      "C104",
+      "C120"
+    ],
+    "result": "Structural modeling shows the tyrosine head group (8.5 \u00c5) fits between R231 and T224 (9.1 \u00c5 apart), supporting a binding mode where the carboxyl group interacts electrostatically with R231 in S4 while the distal -OH hydrogen bonds with T224 in the S3-S4 loop (site 1), and separately the carboxyl interacts with K326 in S6 with the distal electronegative atom providing electrostatic stabilization (site 2).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C101, C103-C104, and C120 integrate structural measurements with the functional data to propose a mechanistic model. The spatial compatibility (8.5 \u00c5 head group fitting in 9.1 \u00c5 space) supports the proposed interactions. However, this is in silico modeling without experimental validation of the binding pose, and the proposed mechanism is based on inference from mutagenesis data rather than direct structural evidence of PUFA binding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C110",
+      "C121",
+      "C126"
+    ],
+    "result": "Aromatic PUFA head group modifications can independently modulate voltage-shifting versus Gmax-increasing effects, with electronegative groups preferentially enhancing Gmax and hydrogen bonding capacity preferentially enhancing voltage shifts. This allows for potential design of compounds tailored to specific functional deficits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110, C121, and C126 synthesize the findings to propose a structure-activity relationship principle. This is well-supported by the differential effects observed: fluorinated phenylalanines enhance Gmax more than voltage shift, while 3F-NALT enhances voltage shift without affecting Gmax. The conclusion is a logical inference from the experimental data presented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C5",
+      "C6",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Background on KV channels and LQTS: KV channels regulate cellular excitability and action potential repolarization; mutations cause hyperexcitability leading to epilepsy and cardiac arrhythmias. LQTS is caused by loss-of-function of the IKs channel (KV7.1/KCNE1 complex), predisposing to ventricular fibrillation and sudden death. Current treatments (\u03b2-blockers, defibrillators) have limitations, creating need for novel therapeutics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C5-C6, C11-C19 present established background knowledge about KV channel biology, structure, and clinical significance, all supported by appropriate citations. These claims provide context for the study but do not represent novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "Background on PUFA mechanisms: PUFAs are amphipathic molecules that activate IKs channels through two independent effects - (1) electrostatic interaction with S4 arginines shifting voltage dependence, and (2) interaction with K326 in S6 increasing Gmax. The lipoelectric hypothesis describes how the negatively charged head interacts with positive charges while the tail incorporates into the membrane. PUFAs with low pKa head groups (glycine, taurine) show robust effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C29 and C113-C118 summarize established knowledge about PUFA structure, mechanism, and structure-activity relationships, all supported by appropriate citations. This provides the mechanistic framework for interpreting the novel aromatic PUFA findings but represents prior work rather than new results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C4",
+      "C7",
+      "C8",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Discovery of aromatic PUFA analogues: A set of aromatic PUFA analogues with tyrosine head groups, particularly NALT, produce robust IKs activation with potent leftward voltage shifts and increased maximal conductance. These compounds are unique in possessing a large aromatic tyrosine head group rather than the carboxyl/sulfonyl groups typical of previously characterized PUFAs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C7-C8, C30-C32 introduce the novel aromatic PUFAs as the focus of the study. While C4 and C22 include speculative statements about therapeutic potential, the core claims about robust activation effects are supported by the extensive experimental data presented in the manuscript (detailed in other result groups).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C125",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "Therapeutic implications: The mechanistic understanding of aromatic PUFA activation may aid LQTS drug development. Since LQTS mutations can cause either decreased Gmax or rightward voltage shifts, independently modulating these effects could enable personalized therapies targeting specific mutations. Drugs targeting the T224 hydrogen bonding interaction would be more effective at shifting voltage dependence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C125, C127-C129 present speculative therapeutic applications of the findings. While C127 correctly states that LQTS mutations are heterogeneous, the proposals for personalized therapy (C128) and drug development (C125, C129) are not supported by any drug development data, efficacy studies, or validation in disease models. These remain hypothetical applications requiring substantial future work.",
+    "result_type": "MINOR"
+  }
+]

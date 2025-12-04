@@ -1,0 +1,341 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "Rate-distortion theory provides a general framework for understanding memory optimization, where systems with higher capacity achieve lower distortion along an optimal trade-off curve. The authors claim this framework allows deduction of known working memory regularities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C9-C11 establish the theoretical foundation using established rate-distortion theory (C9 cites Shannon, 1959). The framework's applicability to memory is demonstrated through subsequent empirical validations showing the model reproduces known behavioral patterns (Figures 2-7), supporting the claim that operating near the optimal curve explains memory regularities.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C14",
+      "C24",
+      "C25",
+      "C28"
+    ],
+    "result": "A modified population coding model with spiking neurons implements the Blahut-Arimoto algorithm for rate-distortion optimization through a winner-take-all circuit architecture.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14, C24-C25, C28 describe the neural implementation. The mathematical equivalence between the circuit equations (Equations 4-5, 9-10) and the Blahut-Arimoto algorithm is demonstrated through derivations showing the firing rate equation has the same functional form as the optimal channel. The winner-take-all dynamics (C28) naturally emerge from divisive normalization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "The Lagrange multiplier \u03b2 controls population code precision and is adapted through a homeostatic learning rule (Equation 14) to maintain performance at the capacity limit by regulating stimulus-driven firing rate deviations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C17, C31-C33 describe the gain control mechanism. The mathematical derivation (Equation 13-14) shows channel capacity corresponds to constraints on firing rate deviations (C31), with biological justification through metabolic costs (C32, supported by citations). The homeostatic rule is demonstrated in simulations (Figures 3-4) and validated with neural data (Figure 8).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Memory precision decreases with set size because the capacity constraint is divided across more neurons, resulting in lower gain and broader population activity for multiple stimuli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C43, C103-C105 address set size effects. The empirical regularity (C42, cited from Bays et al., 2009) is reproduced by model simulations (Figure 2D-F). The mechanistic explanation (C43) is illustrated in Figure 1C-E showing narrower spike distributions for M=1 vs. M=4 (C103-C104), with rate-distortion curves demonstrating the capacity division principle (C105).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C44",
+      "C45"
+    ],
+    "result": "Attentional cues that probabilistically predict the probed stimulus reduce error variance by altering the probing probability \u03c0m, which reallocates capacity budget toward cued stimuli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C45 explain prioritization effects. The empirical finding (C44, cited from Bays, 2014; Yoo et al., 2018) is reproduced in Figure 2B-C, E-F. The model mechanism (C45) through probing probability is mathematically specified (Equation 6) and demonstrated to produce the observed variance reduction for cued vs. uncued stimuli.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Memory performance depends on the ratio between intertrial interval (ITI) and retention interval (RI), exhibiting timescale invariance where longer ITIs compensate for longer RIs by reducing the information rate during silent periods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C52 address timing effects. The empirical patterns (C46, C48, C50-C51 from Souza & Oberauer, 2015) are reproduced in Figure 3. The model explanation (C47, C49) through Equation 16 shows ITI/RI ratio determines effective capacity. Timescale invariance (C52) emerges directly from this formulation, with strong model comparison support (Table 1: protected exceedance probability 0.98).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Serial dependence arises from the marginal firing rate biasing excitatory input, with strength varying inversely with information rate and thus increasing with RI and decreasing with ITI.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C58 explain serial dependence. The phenomenon (C53-C54, cited from multiple sources) is explained mechanistically through marginal firing rate dynamics (C55-C56, Equation 10). The critical RI/ITI dependencies (C57, from Bliss et al., 2017) are reproduced in Figure 4, with the model explanation (C58) linking to information rate providing a unified account with timing effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C59",
+      "C60"
+    ],
+    "result": "Serial dependence builds up over experimental sessions because the marginal firing rate integrates over entire stimulus history through continuous incremental adjustments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C60 address temporal buildup. The empirical finding (C59, from Barbosa & Compte, 2020) is reproduced in Figure 5. The model mechanism (C60) through incremental marginal firing rate updates naturally produces integration over stimulus history, distinguishing this account from purely short-term explanations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C61",
+      "C62"
+    ],
+    "result": "Serial dependence increases with set size, as predicted by the capacity limit hypothesis requiring lower \u03b2 for more stimuli. This novel prediction is confirmed with p < 0.05 in reanalysis of Panichello et al. (2019) data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C62 present a novel prediction and its validation. The prediction (C61) follows logically from the model's capacity constraint mechanism. The empirical test (C62) uses appropriate statistical methods (group permutation test) on a large dataset (N=90), with Figure 6 showing stronger attractive bias for M=3 vs. M=1.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Working memory exhibits systematic biases toward high-frequency stimuli that increase with RI and build up over sessions, explained by marginal firing rate asymptotically approaching the stimulus distribution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C67 address frequency-dependent biases. The empirical patterns (C63-C64, from Panichello et al., 2019) are reproduced in Figure 7. The model explanation (C65-C67) through marginal firing rate convergence to stimulus distribution provides a mechanistic account linking to serial dependence, with RI amplification through capacity modulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C68"
+    ],
+    "result": "Bayesian model comparison across eight datasets shows the full rate-distortion model has an average protected exceedance probability of 0.76, providing moderate to strong evidence over alternative models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C68 summarizes quantitative model comparison. Table 1 presents protected exceedance probabilities from random-effects Bayesian model selection (Rigoux et al., 2014) across multiple datasets. The full model outperforms fixed gain and no plasticity variants in 7 of 8 datasets, with the average of 0.76 accurately computed from the reported values.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "The model predicts performance adapts to maintain channel capacity, with recall improving after poor performance and degrading after good performance. Neural data from monkey prefrontal cortex confirms error decreases after high error (p < 0.001) and correlates negatively with fitted \u03b2 (r = -0.32, p < 0.02).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C74 present predictions and neural validation. The predictions (C69-C71) follow from Equation 14. Behavioral validation (C72) uses appropriate linear mixed models on monkey data (N=2), and neural validation (C73-C74) shows the predicted \u03b2-error relationship using Poisson regression with proper model comparison (BIC values reported). Figure 8 illustrates both findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C30",
+      "C34",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "The spike-triggered learning rule for excitability (Equation 12) is consistent with experimental studies of intrinsic plasticity, and adaptive gain modulation has been observed in neural circuits, potentially implemented through calcium-based mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30, C34, C36-C38 establish biological plausibility. The learning rule (C30) is supported by citations to experimental work (Daoudal & Debanne, 2003; Cudmore & Turrigiano, 2004). Adaptive gain modulation (C34) is documented (Desai et al., 1999; Hengen et al., 2013, 2016). The calcium mechanism (C36-C38) is speculative but grounded in prior work (King et al., 2001; LeMasson et al., 1993).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C35",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Gain control mechanisms could be implemented through background activity changes, voltage conductance adaptation, or neuromodulators like dopamine. Pharmacological evidence suggests dopaminergic modulation controls capacity limits with compensatory gain adjustments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C35, C89-C97 propose mechanistic implementations. While supported by relevant citations (Chance et al., 2002; Stemmler & Koch, 1999; Sawaguchi & Goldman-Rakic, 1991; Cools & D'Esposito, 2011), these remain speculative proposals (C35, C89-C90 explicitly marked as speculation). The dopamine hypothesis (C96-C97) is plausible given cited evidence but lacks direct experimental validation in the context of this model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C76",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "The current approach differs from prior information bottleneck implementations by using arbitrary distortion functions with a reference distribution, modeling populations rather than single neurons, and proposing an algorithm for optimizing \u03b2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76, C78-C83 position the work relative to prior models. The distinctions from information bottleneck methods (C76, C78-C79) and Leibfried & Braun (2015) (C80-C83) are clearly articulated with appropriate citations. The advantages of the reference distribution approach and population-level modeling are explained, though the practical significance of these differences for explaining behavioral data could be more directly demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "The capacity limit corresponds to constraints on firing rate, justified by metabolic costs of spiking. Firing rates are maintained around a set point rather than minimized, consistent with the model's capacity constraint.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C88 provide biological justification for capacity limits. The metabolic cost argument (C84-C85) is well-supported by citations (Attwell & Laughlin, 2001; Lennie, 2003; Levy & Baxter, 1996). The set point observation (C87) is documented experimentally (Desai et al., 1999; Hengen et al., 2013, 2016). The connection to capacity (C88) is a reasonable inference from the model framework.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C102"
+    ],
+    "result": "Model comparison using BIC established that both distortion function and spiking history significantly predict neural spiking behavior in prefrontal cortex recordings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C102 reports model comparison on neural data. The BIC values (full: 54,545; no history: 59,163; neither: 67,903) show clear improvement with both predictors included. The analysis appropriately uses Poisson regression for spike count data. However, details about sample size, number of neurons, and cross-validation are limited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C15"
+    ],
+    "result": "The population coding model reproduces key regularities of visual working memory, including phenomena like serial dependence that were not previously explained by population coding models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C3, C15 assert the model's explanatory scope. The simulations throughout (Figures 2-7) demonstrate reproduction of multiple empirical regularities. Serial dependence (C15) is particularly notable as previous population coding models struggled with this phenomenon. The model comparison results (Table 1) provide quantitative support, though the claim of novelty for some explanations could be more precisely qualified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C4",
+      "C19",
+      "C20",
+      "C75"
+    ],
+    "result": "A novel prediction about performance adaptation to maintain channel capacity is verified by reanalyzing monkey prefrontal neuron recordings, showing variations in performance track changes in neural gain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C19-C20, C75 describe neural validation. The prediction (C19) is novel and follows from the homeostatic learning rule. The reanalysis uses appropriate methods (linear mixed models, Poisson regression) on recordings from a brain region relevant to working memory (C75, well-established by citations). However, the sample size (N=2 monkeys) is small, and the correlation (r=-0.32) is modest.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "The rate-distortion framework could potentially be extended to other working memory tasks and more complex stimuli, though linking large-scale neural networks to realistic circuits remains challenging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C98-C101 discuss future directions. These are explicitly speculative (C98-C99 propose extensions without implementation). The citations to prior work (C100-C101) establish relevant context, but no evidence is provided that these extensions are feasible or would maintain the model's explanatory power. These represent research directions rather than established results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C12",
+      "C13"
+    ],
+    "result": "Memory systems are capacity-limited, with brain memory being error-prone unlike digital systems. Working memory errors follow systematic patterns that may emerge from optimization under capacity constraints, as studied in prior rate-distortion and population coding work.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C8, C12-C13 establish background context. These are well-established principles in cognitive science and information theory (C5-C6), supported by extensive prior work (C7-C8, C12-C13 with multiple citations). The claims accurately represent the state of the field and provide appropriate motivation for the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "When multiple stimuli are encoded, \u03b2 decreases because capacity is divided across neurons. The gain parameter \u03b2 determines memory trace persistence, with the learning rule reducing \u03b2 when information rate exceeds capacity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C41 describe multi-stimulus dynamics. The capacity division principle (C39) follows from Equation 15 and is demonstrated in simulations (Figures 1-2). The trace persistence mechanism (C40-C41) provides a functional account of memory decay through gain reduction, though the specific neural implementation of trace maintenance is left unspecified (acknowledged in text).",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,248 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "result": "UDP and UDP-Glc activate P2Y14 with similar potencies (EC50 ~40-51 nM), but UDP-Glc shows increased potency at high concentrations, suggesting the sugar moiety contributes to receptor activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4 are supported by calcium mobilization assays with clear EC50 values and concentration-response curves (Figure 1A-C). The differential potency at high concentrations provides evidence for sugar moiety contribution, though the mechanistic interpretation (C4) is inferential but reasonable given the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "Molecular docking identifies an extracellular binding pocket for UDP and UDP-Glc in P2Y14, with five residues (K77, D81, N90, I170, E278) predicted to specifically stabilize UDP-Glc but not UDP binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C5-C9 rely on computational docking to a homology model (not crystal structure). While docking scores suggest binding (C6-C7), the energy decomposition predictions (C8-C9) require experimental validation. The threshold for 'few energetic contributions' (>-0.25 REU) appears arbitrary and lacks justification.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Mutagenesis experiments identify K77 and D81 on TM2 as critical for UDP-Glc recognition, with K77A showing differential effects on UDP-Glc versus UDP responses, while N90A and I170A mutations have no significant effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C16 are supported by systematic mutagenesis and functional assays (Figure 1H-I). The differential effect of K77A on UDP-Glc versus UDP (C12-C14) provides strong evidence for sugar-specific interactions. Statistical significance is indicated, though exact p-values and sample sizes should be verified in supplementary data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "MD simulations reveal that UDP-Glc binding induces conformational changes in TM6 and TM7 (3-4 \u00c5 shifts), with specific interactions involving K277, E278, and R253 that stabilize a tight helical bundle. Mutagenesis of these residues reduces UDP-Glc potency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C26 combine MD simulation data with experimental validation. The conformational changes (C17-C18) are quantified, specific interactions are identified (C19-C20, C23-C24), and mutations at predicted sites (C21-C22, C25) show expected functional effects. The 'glue' model (C26) is a reasonable interpretation of converging computational and experimental evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Different UDP-sugars activate P2Y14 with distinct potencies: UDP-Glc (40.3 nM) > UDP-GlcA (59.9 nM) > UDP-Gal (78.3 nM) > UDP-GlcNAc (184.4 nM).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C30 present clear EC50 values from calcium mobilization assays with error estimates (Figure 3A-B). The rank order of potencies is well-established and provides the basis for subsequent mechanistic studies. Statistical comparisons would strengthen the claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "A conserved K77-D81-K277-E278 (KDKE) salt bridge chain serves as a sugar-binding site in P2Y14, with different UDP-sugars showing distinct binding modes. E278 interactions with TM7 correlate with ligand potency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C44 integrate MD simulations showing the KDKE salt bridge across all UDP-sugar systems (C31-C33) with sugar-specific binding modes (C34-C41) and mutagenesis validation (C35, C38, C41). The correlation between TM7 interactions and potency (C44) is supported by the differential effects of E278A mutation on different ligands.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "The KDKE motif is conserved between P2Y14 and P2Y12. Three novel ADP-sugar compounds (ADP-Glc, ADP-GlcA, ADP-Man) activate P2Y12 with micromolar potencies, and mutations in the KDKE motif reduce their activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C55 demonstrate conservation of the KDKE motif (C45), predict binding of ADP-sugars (C48-C50), experimentally validate their activity (C51-C53), and show that KDKE mutations reduce responses (C54). This extends the sugar-binding mechanism to P2Y12, though the ~100-fold lower potency compared to P2Y14 suggests additional determinants of selectivity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "F277 in P2Y12 (adjacent to KDKE motif) contributes to ADP-Glc responses, while the corresponding position in P2Y14 does not affect UDP-Glc activation, indicating receptor-specific differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C58 identify a receptor-specific residue through sequence analysis (C56) and differential mutagenesis effects (C57-C58). This explains some of the potency differences between P2Y12 and P2Y14 for sugar nucleotides.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Background claims establishing P2Y14 as a UDP-sugar receptor involved in immune responses and inflammation, P2Y12 as its closest homolog, and the biological importance of carbohydrate signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C73 are literature-based background claims supported by appropriate citations. These establish context but do not represent novel findings from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Comparison with P2Y12 crystal structures shows similar agonist-induced conformational changes in TM6 and TM7, suggesting a common activation mechanism for purinergic receptors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C77 compare the observed P2Y14 conformational changes with published P2Y12 structures. The parallel is well-supported by citations (C74-C76), and the inference of a common mechanism (C77) is reasonable given the structural and functional similarities.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Sequence analysis suggests P2Y13 and GPR87 may also be regulated by carbohydrates based on conservation of the KDKE motif or similar residues at corresponding positions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C78-C82 are speculative predictions based solely on sequence conservation without experimental validation. While the hypothesis is reasonable, it remains untested and should be clearly marked as speculation requiring future work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Comparison with sugar transferases shows that while both use charged residues for UDP-sugar binding, the KDKE salt bridge chain is unique to P2Y receptors and may determine sugar selectivity differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C87 compare the P2Y14 binding site with literature on sugar transferases. The comparison is supported by citations (C83-C85), the distinction regarding salt bridge chains (C86) is accurate, and the speculation about selectivity determinants (C87) is reasonable though untested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Concluding claims that a conserved carbohydrate-binding motif exists in P2Y12 and P2Y14, the models provide insights for drug development, and whether other GPCR carbohydrate-binding motifs exist remains unknown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C90 appropriately summarize the main findings (C88-C89) and acknowledge limitations of current knowledge (C90). These are supported by the totality of evidence presented in the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C91",
+      "C92"
+    ],
+    "result": "Additional background claims about P2Y12 crystal structures and UDP-sugar signaling through P2Y14.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C92 are literature-based background supported by citations, providing context for the study.",
+    "result_type": "MINOR"
+  }
+]

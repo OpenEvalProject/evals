@@ -1,0 +1,1810 @@
+{
+  "submission": {
+    "id": "4868e940-dc29-4e5d-9478-8ad5bd52f5d4",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-04T03:45:42.272697Z",
+    "updated_at": "2025-12-04T03:45:42.272697Z"
+  },
+  "content": [
+    {
+      "id": "fe06c943-491f-49f0-9b32-7391a1f8921e",
+      "submission_id": "4868e940-dc29-4e5d-9478-8ad5bd52f5d4",
+      "content_type": "manuscript",
+      "content_text": "# Identification of a carbohydrate recognition motif of purinergic receptors\n\n## Authors\n\n- Lifen Zhao<sup>1</sup> ([ORCID: 0009-0000-4158-790X](https://orcid.org/0009-0000-4158-790X))\n- Fangyu Wei<sup>1</sup>\n- Xinheng He<sup>1</sup>\n- Antao Dai<sup>1</sup>\n- Dehua Yang<sup>1</sup> ([ORCID: 0000-0003-3028-3243](https://orcid.org/0000-0003-3028-3243))\n- Hualiang Jiang<sup>1</sup>\n- Liuqing Wen<sup>1</sup> \u2020\n- Xi Cheng<sup>1</sup> ([ORCID: 0000-0003-3735-645X](https://orcid.org/0000-0003-3735-645X)) \u2020\n\n### Affiliations\n\n1. State Key Laboratory of Drug Research, Carbohydrate-Based Drug Research Center and National Center for Drug Screening, Shanghai Institute of Materia Medica, Chinese Academy of Sciences Shanghai China ([ROR:022syn853](https://ror.org/022syn853))\n2. University of Chinese Academy of Sciences Beijing China ([ROR:05qbk4x57](https://ror.org/05qbk4x57))\n3. School of Pharmaceutical Science and Technology, Hangzhou Institute of Advanced Study Hangzhou China\n\n\u2020 Corresponding author\n\n## Abstract\n\nAs a major class of biomolecules, carbohydrates play indispensable roles in various biological processes. However, it remains largely unknown how carbohydrates directly modulate important drug targets, such as G-protein coupled receptors (GPCRs). Here, we employed P2Y purinoceptor 14 (P2Y14), a drug target for inflammation and immune responses, to uncover the sugar nucleotide activation of GPCRs. Integrating molecular dynamics simulation with functional study, we identified the uridine diphosphate (UDP)-sugar-binding site on P2Y14, and revealed that a UDP-glucose might activate the receptor by bridging the transmembrane (TM) helices 2 and 7. Between TM2 and TM7 of P2Y14, a conserved salt bridging chain (K2.60-D2.64-K7.35-E7.36 [KDKE]) was identified to distinguish different UDP-sugars, including UDP-glucose, UDP-galactose, UDP-glucuronic acid, and UDP-N-acetylglucosamine. We identified the KDKE chain as a conserved functional motif of sugar binding for both P2Y14 and P2Y purinoceptor 12 (P2Y12), and then designed three sugar nucleotides as agonists of P2Y12. These results not only expand our understanding for activation of purinergic receptors but also provide insights for the carbohydrate drug development for GPCRs.\n\n## Introduction\n\nAs significant components of the organism, carbohydrates play indispensable roles in energy supply, cell signaling, and immune responses (Gagneux and Varki, 1999). Dysregulation of carbohydrates has been proved to be associated with the development of various diseases (Reily et al., 2019). However, it is still elusive how carbohydrates directly act on major therapeutic targets, including G-protein coupled receptors (GPCRs) (Cheng and Jiang, 2019; Hauser et al., 2017). P2Y purinoceptor 14 (P2Y14) represents an outstanding model system for understanding carbohydrate modulation of GPCRs. It belongs to P2Y purinoceptor subfamily, consisting of receptors responding to nucleotides, including adenosine diphosphate (ADP) and UDP (Ralevic and Burnstock, 1998). Distinct from the other purinoceptors, P2Y14 is potently activated by UDP and a class of carbohydrates, that is, UDP-sugars (Abbracchio et al., 2006; Jacobson et al., 2020). UDP-sugars activate P2Y14 with a relative potency order of UDP-glucose (UDP-Glc), UDP-galactose (UDP-Gal), UDP-glucuronic acid (UDP-GlcA), and UDP-N-acetylglucosamine (UDP-GlcNAc) (Chambers et al., 2000; Hamel et al., 2011; Ko et al., 2009; Ko et al., 2007). These sugar nucleotides act as important signaling molecules via P2Y14 to mediate many physiological processes (Amison et al., 2017; Breton and Brown, 2018; Ferreira et al., 2017; Lazarowski, 2010; M\u00fcller et al., 2005; Sesma et al., 2016). Particularly, UDP-Glc regulates immune responses and associate with asthma, kidney injury, and lung inflammation (Amison et al., 2017; Breton and Brown, 2018; Ferreira et al., 2017; M\u00fcller et al., 2005; Sesma et al., 2016). As an isomer of UDP-Glc, UDP-Gal is present in various cell models, including physiologically relevant primary cultures of human bronchial epithelial cells (Lazarowski, 2010). It remains unknown how these sugar nucleotides are recognized by P2Y14.\n\nAs the closest homolog to P2Y14, P2Y purinoceptor 12 (P2Y12) has not been reported to be activated by any sugar nucleotide (Jacobson et al., 2020; Ralevic and Burnstock, 1998). P2Y12 is potently activated ADP. The reported agonist-bound structures of P2Y12 provide insights to understand the nucleotide activation of P2Y purinoceptors. The crystal structures of P2Y12 show that a full agonist 2-methylthio-adenosine-5\u2019-diphosphate (2MeSADP, a close analogue of ADP) binds to an extracellular pocket consisting of transmembrane (TM) helices and extracellular loops (Zhang et al., 2014a). Since P2Y12 is highly similar to P2Y14 with 45.67% amino acid sequence identity, it would be interesting to investigate whether this receptor is also sensible to sugar nucleotides.\n\nHere, we combined molecular docking, molecular dynamics (MD) simulations, and functional study to reveal the molecular mechanism how P2Y14 is activated by a sugar nucleotide. The ligand-binding models of different UDP-sugars (UDP-Glc, UDP-Gal, UDP-GlcA, and UDP-GlcNAc) were quantitatively characterized to identify the sugar recognition site of P2Y14. Both P2Y14 and P2Y12 were employed to unveil a conserved sugar-binding motif. Multiple carbohydrates were designed and validated as their agonists targeting the conserved functional motif.\n\n## Results\n\n### Identification of sugar-binding site in P2Y14\n\nBoth UDP and UDP-Glc potently activate P2Y14 with EC50 values of 50.9\u00b16.1 nM and 40.3\u00b11.5 nM, respectively (Figure 1A\u2013C). Compared with UDP, UDP-Glc showed an increased potency on P2Y14 at high concentration (Figure 1B\u2013C), suggesting that the sugar moiety of UDP-Glc contributes to activating P2Y14. To investigate how UDP-Glc regulates the P2Y14 via its sugar moiety, we used molecular docking to construct UDP-Glc-bound models of P2Y14 and compared them with UDP-bound P2Y14 models (Figure 1D\u2013G). Because the protein structure of P2Y14 is unrevealed, we employed the X-ray structures of P2Y12 (Zhang et al., 2014a) as templates to constructed homology models of human P2Y14. The molecular docking showed that both UDP and UDP-Glc bind to an extracellular pocket consisting of TM helices 2\u20137 and extracellular loop (ECL) 2 (Figure 1D), which is corresponding to a known agonist binding pocket of P2Y12 (Zhang et al., 2014a). The docking score of UDP-Glc is \u20139.3 kcal/mol, and that of UDP is \u20138.5 kcal/mol, indicating that both UDP and UDP-Glc bind to P2Y14.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/85449/elife-85449-fig1-v1.jpg)\n\n**Figure 1.:** (A) Chemical structures of uridine diphosphate (UDP) and UDP-glucose (UDP-Glc). (B) Concentration-response curves of calcium mobilization for UDP or UDP-Glc in HEK293 cells transiently co-transfected with human P2Y14 and G\u03b1qi5. Data are shown as mean \u00b1 SEM (n=3). See also Figure 1\u2014source data 1 and Supplementary file 1. (C) Concentration-dependent comparison of calcium mobilization for UDP and UDP-Glc in HEK293 cells transiently co-transfected with human P2Y14 and G\u03b1qi5 (n=3); **p<0.01, ***p<0.001, ****p<0.0001. (D) Ligand-bound model of P2Y14. Protein and compound are shown in cartoon and stick representations. (E, F) Docking models of UDP (E) and UDP-Glc (F) to P2Y14. Key residues are highlighted in yellow. Two sub-pockets for ligand binding are marked with circles. (G) Decomposition of ligand-binding energy for each receptor residue (n=10). (H) Calcium mobilization concentration-response curves for UDP or UDP-Glc in HEK293 expressing P2Y14 wild-type (WT) and mutants (n=3). See also Figure 1\u2014source data 2 and Supplementary file 1. (I) Comparison of EC50s for UDP-Glc and UDP in HEK293 cells expressing P2Y14 mutants in calcium mobilization assay (n=3); **p<0.01, ***p<0.001. See also Figure 1\u2014source data 3.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/85449/elife-85449-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A, B) Docking models of UDP (A) and UDP-Glc (B) to P2Y14 showing binding sites for UDP moieties. Protein is shown in cartoon representation. UDP (blue), UDP-Glc (salmon), and key residues (yellow) are shown in stick representation. (C, D) Calcium mobilization concentration-response curves for UDP (C) or UDP-glucose (D) in HEK293 expressing P2Y14 wild-type (WT) and mutants. Data are shown as mean \u00b1 SEM (n=3). See also Figure 1\u2014source data 2.\n\nCompared with the UDP-bound receptor model (Figure 1E), the UDP-Glc-bound model showed extra interactions between the glucose moiety and the TM2, TM3, TM7, and ECL2 of P2Y14 (Figure 1F), enhancing the binding of UDP-Glc. Based on these molecular docking models, we further decomposed the ligand-binding energy to each receptor residue (Figure 1G). Five residues (K772.60, D812.64, N903.21, I170ECL2, and E2787.36; superscript indicates Ballesteros-Weinstein residue numbering; Ballesteros and Weinstein, 1995) were predicted to stabilize UDP-Glc binding (Figure 1F and G), while they made few energetic contributions (van der Waals energy >\u20130.25 Rosetta energy unit) to UDP binding (Figure 1E and G). As shown in Figure 1E and F, two sub-pockets of P2Y14 were unveiled for ligand binding. The sub-pocket 1 is formed by 16 residues of TMs 3\u20137 and ECL2 (Figure 1G, Figure 1\u2014figure supplement 1A,B) and binds to the nucleotide moiety of the agonist, that is, UDP. The sub-pocket 2 is the specific sugar-binding site involving K772.60, D812.64, N903.21, I170ECL2, and E2787.36 (Figure 1F and G). These residues are primarily charged or polar amino acids, which could made hydrogen bonds with the glucose hydroxyl groups of UDP-Glc (Figure 1F). To validate the proposed sugar-binding sites, we designed single-point mutations of these five residues (K77A, D81A, N90A, I170A, and E278A). Among these mutants, D81A showed significantly reduced activities by UDP-Glc compared with the wild-type (WT) group (Figure 1H). However, substitution of D812.64 by alanine did not significantly affect the receptor activities by UDP (Figure 1H). Interestingly, K77A mutation diminished both UDP-Glc- and UDP-induced calcium mobilization (Figure 1H), but it showed greater impact on UDP-Glc-induced receptor responses than UDP-induced ones (Figure 1H, I), suggesting extra interactions between K772.60 and sugar moiety of UDP-Glc. Two mutations on TM3 and ECL2 (N90A and I170A) did not significantly affect the receptor responses by UDP or UDP-Glc (Figure 1\u2014figure supplement 1C, D). These findings indicate that sub-pocket 2 residues of TM2 provide major contributions to stabilizing the sugar moiety of UDP-Glc.\n\n### UDP-Glc as a \u2018glue\u2019 for P2Y14 activation\n\nThe molecular docking employs rigid side chains of the receptor and does not include the influence of explicit environment on molecular interactions. To investigate how UDP-Glc interacts with P2Y14, we performed all-atom MD simulations of the P2Y14 receptor with and without UDP-Glc (Figure 2A). We used the molecular docking model of P2Y14 to construct the simulation systems. Each system was replicated to performed three independent simulations (see Materials and methods for detailed information). Apo P2Y14 and UDP-Glc-bound P2Y14 simulation models showed different conformations in TM6 and TM7 (Figure 2A and B). In UDP-Glc-bound P2Y14 simulations, the extracellular tip of TM6 shifted over 3 \u00c5 and TM7 over 4 \u00c5 toward the receptor core, compared with the apo P2Y14 simulations (Figure 2A and B). This inward shift of TM6 and TM7 allowed formation of polar and ionic interactions with the UDP-Glc (Figure 2B and C). During UDP-Glc-bound P2Y14 simulations, two charged residues K2777.35 and E2787.36 formed hydrogen bonds with the glucose 6\u2019 hydroxyl group of UDP-Glc to keep TM7 close to the receptor core (Figure 2B and C), and an arginine residue (R2536.55) formed a salt bridge with the phosphate group of UDP-Glc to stabilize the inward shift of TM6 (Figure 2B and C). Consistently, compared with WT group (EC50 of 40.3\u00b11.5 nM), single-point mutations (R253A and E278A) of TM6 and TM7 helices resulted to diminished UDP-Glc-induced calcium mobilization (EC50 of 808.6\u00b143.6 nM for R253A and 60.2\u00b13.6 nM for E278A) (Figure 1H, Figure 2D). In addition, at the extracellular side, the distance between TM5 and TM6 of UDP-Glc-bound P2Y14 was 5.9 \u00c5 shorter than that in the apo system (Figure 2\u2014figure supplement 1A, B). Y1895.41 and T2576.59 made stable hydrophobic interactions to maintain the tight compact between TM5 and TM6 in UDP-Glc-bound-P2Y14 simulations, while TM6 did not interact with TM5 at the extracellular side in the apo simulations (Figure 2\u2014figure supplement 1A, B). Compared with WT group (EC50 of 40.3\u00b11.5 nM), a mutation of TM6 (T257A) showed significantly reduced UDP-Glc-induced responses (EC50 of 504.9\u00b115.9 nM) (Figure 2\u2014figure supplement 1C), fully agreeing with our simulation models. Collectively, these data suggest that UDP-Glc might serve as intramolecular \u2018glue\u2019 to make a tight helical bundle of P2Y14, involving TM6 and TM7.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/85449/elife-85449-fig2-v1.jpg)\n\n**Figure 2.:** (A\u2013B) Side (A) and top (B) views of representative models of apo P2Y14 and UDP-Glc-bound P2Y14. Receptor is shown as cartoon. Ligand and key residues are shown as sticks. Movement of the extracellular tips of transmembrane (TM)6 and TM7 toward the receptor core is shown by arrows. See Supplementary file 2 for computational characterization of conformational changes. (C) Key interactions between P2Y14 and UDP-Glc. Hydrogen bonds and salt bridges are displayed as red dashed lines. See Supplementary file 2 for pairwise interaction details. (D) Concentration-response curves of calcium mobilization for UDP-Glc in HEK293 expressing P2Y14 wild-type (WT) and mutants. Data are shown as mean \u00b1 SEM (n=3). See also Figure 2\u2014source data 1 and Supplementary file 1.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/85449/elife-85449-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A\u2013B) Side (A) and top (B) views of representative models of apo P2Y14 and UDP-Glc-bound P2Y14. Receptor is shown as cartoon. Ligand and key residues are shown as sticks. Movement of the extracellular tip of TM6 toward TM5 is shown by arrows. See Supplementary file 2 for pairwise interaction details. (C) Concentration-response curves of calcium mobilization for UDP-Glc in HEK293 expressing P2Y14 wild-type (WT) and T257A mutant. Data are shown as mean \u00b1 SEM (n=3). See also Figure 2\u2014source data 1 and Supplementary file 1.\n\n### Molecular recognition of P2Y14 via sugar-binding site\n\nP2Y14 could be activated by different UDP-sugars with distinct potencies. With only one group substitution at the sugar moiety, UDP-Glc induced stronger activity on P2Y14 (EC50=40.3 \u00b1 1.5 nM) than the other UDP-sugars, that is, UDP-Gal (EC50=78.3 \u00b1 9.2 nM), UDP-GlcA (EC50=59.9 \u00b1 4.8 nM), and UDP-GlcNAc (EC50=184.4 \u00b1 11.8 nM) (Figure 3A and B). To investigate how P2Y14 recognizes different sugar moieties, we performed MD simulations of the human P2Y14 receptor complex with UDP-Gal, UDP-GlcA, and UDP-GlcNAc, respectively, and compared them with the UDP-Glc-bound P2Y14 simulations. We observed that UDP-Gal, UDP-GlcA, and UDP-GlcNAc bound to P2Y14 at the same pocket as UDP-Glc. Similar to UDP-Glc, their uridine groups occupied the sub-pocket 1 of P2Y14, while their sugar moieties bound to the sub-pocket 2 during simulations (Figure 3C\u2013F, Figure 3\u2014figure supplements 1 and 2). At the sub-pocket 2, a stable salt bridging chain formed by four charged residues (K772.60, D812.64, K2777.35, and E2787.36) were observed in all systems (Figure 3C\u2013F). The negative charged glutamic acid residue E2787.36 linked TM2 and TM7 helices by forming salt bridges with K772.60 and K2777.35, while the other negative charged residue D812.64 forming a salt bridge with K772.60 to further stabilize these ionic interactions (Figure 3C\u2013F).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/85449/elife-85449-fig3-v1.jpg)\n\n**Figure 3.:** (A) Chemical structures of uridine diphosphate-glucose (UDP-Glc), UDP-glucuronic acid (GlcA), UDP-N-acetylglucosamine (GlcNAc), and UDP-galactose (Gal). (B) Concentration-response curves of calcium mobilization for different UDP-sugars in HEK293 cells transiently co-transfected with human P2Y14 and G\u03b1qi5. Data are shown as mean \u00b1 SEM (n=3). See also Figure 3\u2014source data 1. (C\u2013F) Molecular recognition of P2Y14 for UDP-Glc (C), UDP-GlcA (D), UDP-GlcNAc (E), and UDP-Gal (F). Receptor, ligands, and key residues are shown in cartoon and stick representations. Hydrogen bonds and salt bridges are displayed as red dashed lines. See Supplementary file 2 for pairwise interaction details. (G\u2013I) Concentration-response curves of calcium mobilization for UDP-GlcA (G), UDP-GlcNAc (H), and UDP-Gal (I) in HEK293 expressing P2Y14 wild-type (WT) and mutants. Data are shown as mean \u00b1 SEM (n=3). See also Figure 3\u2014source data 2.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/85449/elife-85449-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Error bars indicate standard deviations involving three independent molecular dynamics (MD) simulation trajectories.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/85449/elife-85449-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Three replicated simulations were indicated by different colors.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/85449/elife-85449-fig3-figsupp3-v1.jpg)\n\n**Figure 3\u2014figure supplement 3.:** Putative hydrogen bonds and salt bridges are displayed as red dashed lines.\n\n![Figure 3\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/85449/elife-85449-fig3-figsupp4-v1.jpg)\n\n**Figure 3\u2014figure supplement 4.:** (A\u2013D) Distribution of distance between key residues (K277, E278, R253, and K77) and a group of UDP-glucose (Glc) (A), UDP-glucuronic acid (GlcA) (B), UDP-N-acetylglucosamine (GlcNAc) (C), or UDP-galactose (Gal) (D) in simulations.\n\nIn simulations, different sugar moieties bound to the K772.60-D812.64-K2777.35-E2787.36 salt bridging chain with distinct binding modes (Figure 3C\u2013F, Figure 3\u2014figure supplement 3). For UDP-Glc, both K2777.35 and E2787.36 could form hydrogen bonds with the glucose 6\u2019 hydroxyl group to keep TM7 close to the receptor core (Figure 3C, Figure 3\u2014figure supplement 4A). However, in UDP-GlcA-bound P2Y14 simulations, at the corresponding position, the 5\u2019 carboxyl group of the sugar moiety failed to form hydrogen bond with the negatively charged E2787.36 (Figure 3D, Figure 3\u2014figure supplement 4B). Compared with that of WT group (EC50=59.9 \u00b1 4.8 nM), the single-point mutation of E278A did not decrease the UDP-GlcA-induced calcium mobilization (EC50=38.2 \u00b1 2.2 nM) (Figure 3G), supporting with the proposed sugar-binding model (Figure 3D). Substitution of 2\u2019 hydroxyl group by an acetamido group led to a rotation of the sugar moiety of UDP-GlcNAc in simulations (Figure 3E). Consequentially, the 6\u2019 hydroxyl of N-acetylglucosamine group flipped to form hydrogen bonds with K772.60 and D812.64 instead of K2777.35 and E2787.36 (Figure 3E, Figure 3\u2014figure supplement 4C). Consistently, single-point mutation of D81A made significant effect to reduce the UDP-GlcNAc-induced receptor activities (Figure 3H). Compared with the other three UDP-sugars, UDP-Gal has a different orientation of 4\u2019 hydroxyl group. The 4\u2019 hydroxyl group of galactose formed a stable hydrogen bond with K772.60 and disrupted the interaction between 6\u2019 hydroxyl group with E2787.36 (Figure 3F, Figure 3\u2014figure supplement 4D). Compared with UDP-Glc, UDP-Gal had more interactions with TM2 and less interactions with TM7 (E2787.36). Substitution of E2787.36 by alanine did not significantly affect the UDP-Gal-induced receptor response (Figure 3I), agreeing with the proposed UDP-Gal-binding model (Figure 3F). For all UDP-sugars, at least three residues of K772.60, D812.64, K2777.35, and E2787.36 participated in ligand binding (Figure 2, Figure 3). Both computational models and experimental data indicate the K772.60-D812.64-K2777.35-E2787.36 salt bridging chain as a sugar-binding site of P2Y14, which can recognize different sugar moieties. The interactions of ligands with the TM7 might determine the ligand potency on P2Y14.\n\n### Conserved sugar-binding motif for P2Y12 and P2Y14\n\nIn previous sections, we have identified K772.60-D812.64-K2777.35-E2787.36 salt bridging chain as an important functional site for sugar moiety recognition and UDP-sugar activation of P2Y14. These four residues (K2.60, D2.64, K7.35, and E7.36) are conserved between P2Y14 and its closest homolog, that is, P2Y12 (Figure 4A, Figure 4\u2014figure supplement 1A). Therefore, we assumed that P2Y12 can also be activated by carbohydrate ligands. P2Y12 is activated by ADP (Herbert and Savi, 2003), but it has not been reported to be activated by any sugar nucleotide. To validate our assumption, we designed and synthesized three ADP-sugars, that is, ADP-glucose (ADP-Glc), ADP-glucuronic acid (ADP-GlcA), and ADP-mannose (ADP-Man), and then tested whether they can activate P2Y12 (Figure 4B and C). We docked ADP-Glc and ADP-Man to the X-ray structure of P2Y12 (Zhang et al., 2014a). The docking scores are \u20139.4 kcal/mol for ADP-Glc, for \u201310.0 kcal/mol for ADP-GlcA, and \u20139.3 kcal/mol for ADP-Man (Figure 4\u2014figure supplement 1B), suggesting they stably bound to P2Y12. Consistently, in calcium mobilization assays, ADP-Glc, ADP-GlcA, and ADP-Man activated P2Y12 with EC50 values of 3.4\u00b10.4 \u03bcM, 1.3\u00b10.1 \u03bcM, and 12.3\u00b10.9 \u03bcM, respectively (Figure 4C). Single-point mutations of K802.60, D842.64, K2807.35, and E2817.36 significantly diminished ADP-Glc-, ADP-GlcA-, and ADP-Man-induced responses, compared with WT P2Y12 (Figure 4C). These findings not only validate our assumption that P2Y12 can be activated by sugar nucleotides, but also indicate the conserved KDKE salt bridging chain as a functional motif for sugar binding. In addition, we found a less conserved phenylalanine residue F2777.32, which is adjacent to the KDKE motif of P2Y12 (Figure 4\u2014figure supplement 2A). The alanine substitution of F2777.32 significantly reduced ADP-Glc-induced responses of P2Y12, compared with that of the WT group (Figure 4\u2014figure supplement 2B, C). However, single-point mutations at the corresponding position of P2Y14 did not significantly affect the UDP-Glc-induced activation (Figure 4\u2014figure supplement 2C\u2013F). These findings indicate different nature of P2Y12 and P2Y14.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/85449/elife-85449-fig4-v1.jpg)\n\n**Figure 4.:** (A) Sequence log of the alignment between P2Y12 and P2Y14. Sequences of P2Y12 and P2Y14 involving 359 species were collected for making sequence alignments. See Supplementary file 3 and Figure 4\u2014source data 1 for species repertoire information. The height of a letter is proportional to the relative frequency of that residue at a particular site. Four residues of K2.60-D2.64-K7.35-E7.36 (KDKE) sugar-binding motif are marked by arrows, with the corresponding residues in P2Y12 and P2Y14. (B) Chemical structure of ADP-glucose (Glc), ADP-glucuronic acid (GlcA), and ADP-mannose (Man). (C) Calcium mobilization concentration-response curves for ADP-Glc, ADP-GlcA, and ADP-Man in HEK293 expressing P2Y12 wild-type (WT) and mutants. Data are shown as mean \u00b1 SEM (n=3). See also Figure 4\u2014source data 1 and Supplementary file 1.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/85449/elife-85449-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Conservation of each residue on P2Y12. The height of a letter is proportional to the relative frequency of that residue at a particular site. Residues of K2.60-D2.64-K7.35-E7.36 (KDKE) sugar-binding motif are labeled with red arrows. See Supplementary file 3 for species repertoire information. (B) Docking models of adenosine diphosphate (ADP)-sugars to P2Y12. Receptor is shown as cartoon. Ligands and key residues are shown as sticks. Residues of KDKE sugar-binding motif are highlighted in yellow. Putative salt bridges are shown as red dashed lines.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/85449/elife-85449-fig4-figsupp2-v1.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A) Location of F2777.32 in the docking model of adenosine diphosphate-glucose (ADP-Glc)-bound P2Y12. Receptor is shown as cartoon. Ligands and key residues are shown as sticks. Residues of K2.60-D2.64-K7.35-E7.36 (KDKE) sugar-binding motif are highlighted in yellow. F2777.32 is highlighted in green. Putative salt bridges are shown as red dashed lines. (B, C) Calcium mobilization concentration-response curves (B) and EC50 values (C) for ADP-Glc in HEK293 expressing P2Y12 wild-type (WT) and mutants. Data are shown as mean \u00b1 SEM (n=3). **** indicates p value less than 0.0001. (D) Location of R2747.32 in the molecular dynamics (MD) model of uridine diphosphate (UDP)-Glc-bound P2Y14. R2747.32 is highlighted in green. (E, F) Calcium mobilization concentration-response curves (E) and EC50 values (F) for UDP-Glc in HEK293 expressing P2Y14 wild-type (WT) and mutants. See also Figure 4\u2014source data 1 and Supplementary file 1.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/85449/elife-85449-fig4-figsupp3-v1.jpg)\n\n**Figure 4\u2014figure supplement 3.:** The height of a letter is proportional to the relative frequency of that residue at a particular site. Residues of K2.60, D2.64, K7.35, and E7.36 sites are labeled with red arrows. N.S. indicates the conservation is not significant. See Supplementary file 3 for species repertoire information.\n\n![Figure 4\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/85449/elife-85449-fig4-figsupp4-v1.jpg)\n\n**Figure 4\u2014figure supplement 4.:** The height of a letter is proportional to the relative frequency of that residue at a particular site. Residues of K/R2.60, D2.64, K/E7.35, and E7.36 sites are labeled with red arrows. See Supplementary file 3 for species repertoire information.\n\n## Discussion\n\nMediated by UDP-sugars, P2Y14 plays an important role in immune responses and inflammation (Arase et al., 2009; Barrett et al., 2013; Breton and Brown, 2018; Ferreira et al., 2017; M\u00fcller et al., 2005; Sesma et al., 2012; Sesma et al., 2016), and possibly insulin resistance (Wang et al., 2008). Breton et al. found that kidney collecting duct intercalated cells present high levels of P2Y14, which is activated by UDP-Glc to promote neutrophil infiltration and renal inflammation (Breton and Brown, 2018). Exerting excessive P2Y14-mediated inflammatory reactions, high concentration of UDP-sugars was observed in extracellular tissue surrounding airway epithelial cells and lung secretions of cystic fibrosis patients (Ferreira et al., 2017; M\u00fcller et al., 2005; Sesma et al., 2016). UDP-Glc is also released from liver cells in obese states, possibly via hepatocellular apoptosis, leading to liver inflammation and insulin resistance (Wang et al., 2008). All these results indicate importance of UDP-sugar regulation of P2Y14 in pathological progresses.\n\nIn this work, we built the molecular model of UDP-Glc-bound P2Y14 to answer the long-standing question of sugar nucleotide regulation of the purinergic receptor. Binding to an extracellular pocket involving TMs 2 and 7 (Figure 1), the UDP-Glc might serve as intramolecular \u2018glue\u2019 attaching to TM6 and TM7 to activate P2Y14 (Figure 2). The agonist-induced remarkable conformational changes of TM6 and TM7 are also reported for P2Y12 (Zhang et al., 2014a). Compared with the AZD1283-bound (antagonist-bound) P2Y12 structure (Zhang et al., 2014b), the extracellular part of TM6 in the 2MeSADP-bound (agonist-bound) P2Y12 structure shifts over 10 \u00c5 and TM7 over 5 \u00c5 toward the center of TM helix bundle (Zhang et al., 2014a). The close parallel of P2Y12 and P2Y14 in the agonist-induced conformational changes indicates a common ligand-induced activation mechanism shared by purinergic receptors. In addition, in the studies involving the other UDP-sugars, we also found that the interactions between sugar-moieties of agonists with TM7 (E2787.36) is determinant for UDP-sugars\u2019 potencies (Figure 3).\n\nThe carbohydrate-binding site has not been fully characterized for GPCRs. Except for P2Y14, it has not been reported that the other members of P2Y12-like subfamily can be directly activated by carbohydrates. Integrated computational modeling with mutagenesis study, we identified a conserved carbohydrate-binding motif (KDKE) for both P2Y14 and P2Y12 (Figure 4). The KDKE motif not only participates in receptor activation by bridging TM2 and TM7 (K772.60, D812.64, K2777.35, and E2787.36) (Figure 2), but also recognize different sugar moieties, including glucose, galactose, glucuronic acid, and N-acetylglucosamine groups (Figure 3, Figure 4). Remarkably, this KDKE motif can distinguish isomers as UDP-Glc and UDP-Gal. Our MD simulations showed that KDKE motif attracted the 6\u2019 hydroxyl group of glucose and interacted with the 4\u2019 hydroxyl group of galactose (Figure 3C and F). Consistent with our observations, a previous structure-activity relationship study revealed that selective mono-fluorination of the 6\u2019 hydroxyl group of the glucose moiety results to fourfold less potency on P2Y14 (Ko et al., 2009). As another member of P2Y12-like subfamily, P2Y13 also has the conserved KDKE site (Figure 4\u2014figure supplement 3), suggesting it might be regulated by carbohydrates. GPR87 is a close homolog of P2Y14 with the sequence identity of 44.94%. GPR87 has K/R2.60, D2.64, K/E7.35, and E7.36 at the corresponding positions of the KDKE sugar-binding motif, indicating varied carbohydrate sensitivities of this receptor in different species (Figure 4\u2014figure supplement 4). The species repertoires of these receptors consist of many amniotes but a few anamniotes (Supplementary file 3a). Distant relatives of the amniote receptors might show different sensitivities to carbohydrates. Similar to the KDKE motif of the receptors, the UDP-sugar-binding sites consisting of charged residues have been discovered for sugar transferases (Gerlach et al., 2018; Hao et al., 2021). In typical glycosylation transfers as TarP and SseK3, two aspartic acids and one positively charged residue (arginine or lysine) participate in recognition of 3\u2019 or 4\u2019 hydroxyl groups of GlcNAc or GalNAc moiety (Gerlach et al., 2018; Hao et al., 2021). However, a salt bridging chain has not been observed in these sugar-binding sites. The different arrangements of UDP-sugar-binding sites between P2Y14 and these sugar transferases might be determinant for their sugar selectivity.\n\nIn conclusion, we revealed a conserved carbohydrate-binding motif in both P2Y12 and P2Y14, extending our understanding of how carbohydrates regulate GPCRs. Our molecular models of different sugar nucleotides provide great details for carbohydrate activation and recognition of these receptors, which would inspire further carbohydrate drug development for GPCRs. Whether the other carbohydrate-binding motifs exist in GPCRs is currently unknown. Further investigations focused on carbohydrate regulation of GPCRs will continue to add both new concepts and physiological understanding to the field.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Gene (Homo sapiens)</td>\n      <td>P2Y14</td>\n      <td>GenBank</td>\n      <td>NM_001081455.2</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (Homo sapiens)</td>\n      <td>P2Y12</td>\n      <td>GenBank</td>\n      <td>NM_022788.5</td>\n      <td>Optimized</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Escherichia coli)</td>\n      <td>Trans5\u03b1 Chemically Competent Cell</td>\n      <td>TransGen Biotech</td>\n      <td>Cat.No: CD201-01</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (Homo sapiens)</td>\n      <td>HEK293</td>\n      <td>ATCC</td>\n      <td>CRL-1573</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-HA primary antibody(Rabit monoclonal)</td>\n      <td>Cell SignalingTechnology</td>\n      <td>Cat.No: 3724.</td>\n      <td>FCM (1:800)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Goat anti-rabbit IgG(H+L) FITC conjugate secondary antibody(Goat monoclonal)</td>\n      <td>TransGen Biotech</td>\n      <td>Cat.No: HS111</td>\n      <td>FCM (1:200)</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pCDNA3-HA(plasmid)</td>\n      <td>This paper</td>\n      <td></td>\n      <td>HA version of pCDNA3</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>P2Y14-K77A-F</td>\n      <td>This paper</td>\n      <td>PCR primers</td>\n      <td>GACTTTTCCTTTCGCGATCCTTGGTGAC</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>P2Y14-K77A-R</td>\n      <td>This paper</td>\n      <td>PCR primers</td>\n      <td>GTCACCAAGGATCGCGAAAGGAAAAGTC</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>P2Y14-D81A-F</td>\n      <td>This paper</td>\n      <td>PCR primers</td>\n      <td>CAAGATCCTTGGTGCCTCAGGCCTTGG</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>P2Y14-D81A-R</td>\n      <td>This paper</td>\n      <td>PCR primers</td>\n      <td>GACCAAGGCCTGAGGCACCAAGGATCTTG</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>P2Y14-N90A-F</td>\n      <td>This paper</td>\n      <td>PCR primers</td>\n      <td>GTCCCTGGCAGCTGGCCGTGTTTGTGTGCAG</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>P2Y14-N90A-R</td>\n      <td>This paper</td>\n      <td>PCR primers</td>\n      <td>CTGCACACAAACACGGCCAGCTGCCAGGGAC</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>P2Y14-I170A-F</td>\n      <td>This paper</td>\n      <td>PCR primers</td>\n      <td>GAGGTTACACAAGCAAAATGTATAGAACTG</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>P2Y14-I170A-R</td>\n      <td>This paper</td>\n      <td>PCR primers</td>\n      <td>GTTCTATACATTTTGCTTGTGTAACCTC</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>P2Y14-R274A-F</td>\n      <td>This paper</td>\n      <td>PCR primers</td>\n      <td>CAAAAGAAATCTTGGCGTATATGAAAGAATTC</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>P2Y14-R274A-R</td>\n      <td>This paper</td>\n      <td>PCR primers</td>\n      <td>GAATTCTTTCATATACGCCAAGATTTCTTTTG</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>P2Y14-K277A-F</td>\n      <td>This paper</td>\n      <td>PCR primers</td>\n      <td>CTTGCGGTATATGGCAGAATTCACTCTG</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>P2Y14-K277A-R</td>\n      <td>This paper</td>\n      <td>PCR primers</td>\n      <td>CAGAGTGAATTCTGCCATATACCGCAAG</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>P2Y14-E278A-F</td>\n      <td>This paper</td>\n      <td>PCR primers</td>\n      <td>GCGGTATATGAAAGCATTCACTCTGCTAC</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>P2Y14-E278A-R</td>\n      <td>This paper</td>\n      <td>PCR primers</td>\n      <td>GTAGCAGAGTGAATGCTTTCATATACCG</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>P2Y12-K80A-F</td>\n      <td>This paper</td>\n      <td>PCR primers</td>\n      <td>CACATTCCCATTCGCGATCCTGTCAGATG</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>P2Y12-K80A-R</td>\n      <td>This paper</td>\n      <td>PCR primers</td>\n      <td>CATCTGACAGGATCGCGAATGGGAATGTG</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>P2Y12-D84A-F</td>\n      <td>This paper</td>\n      <td>PCR primers</td>\n      <td>CAAGATCCTGTCAGCTGCCAAGCTCGGTAC</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>P2Y12-D84A-R</td>\n      <td>This paper</td>\n      <td>PCR primers</td>\n      <td>GTACCGAGCTTGGCAGCTGACAGGATCTTG</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>P2Y12-F277A-F</td>\n      <td>This paper</td>\n      <td>PCR primers</td>\n      <td>GAGAACACTCTGGCCTACGTCAAGGAATC</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>P2Y12-F277A-R</td>\n      <td>This paper</td>\n      <td>PCR primers</td>\n      <td>GATTCCTTGACGTAGGCCAGAGTGTTCTC</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>P2Y12-K280A-F</td>\n      <td>This paper</td>\n      <td>PCR primers</td>\n      <td>CTGTTCTACGTCGCGGAATCCACATTG</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>P2Y12-K280A-R</td>\n      <td>This paper</td>\n      <td>PCR primers</td>\n      <td>CAATGTGGATTCCGCGACGTAGAACAG</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>P2Y12-E281A-F</td>\n      <td>This paper</td>\n      <td>PCR primers</td>\n      <td>GTTCTACGTCAAGGCATCCACATTGTGGC</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>P2Y12-E281A-R</td>\n      <td>This paper</td>\n      <td>PCR primers</td>\n      <td>GCCACAATGTGGATGCCTTGACGTAGAAC</td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>KOD-plus-Ver.2</td>\n      <td>TOYOBO</td>\n      <td>Cat.No:KOD-211</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>MycoBlue Mycoplasma Detector</td>\n      <td>Vazyme</td>\n      <td>Cat.No: D101-01</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>GraphPad Prism 6</td>\n      <td>GraphPad Prism 6</td>\n      <td></td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Chemicals\n\nUDP-GlcNAc was prepared from D-GlcNAc as reported previously (Zheng et al., 2022). UDP-Glc and UDP-GlcA were prepared from Sucrose (Wang et al., 2022). UDP-Gal was prepared from D-Gal (Muthana et al., 2012). ADP-Man was synthesized by a two-step strategy. In detail, Man-1-p was first synthesized from D-Man using NahK from Bifidobacterium longum (Nishimoto and Kitaoka, 2007) and ATP as phosphorylation donor. Man-1-p was purified from the reaction mixture by the silver nitrate precipitation method (Wen et al., 2016; Wen et al., 2015). Then, ADP-Man was synthesized from Man-1-p and ATP by a GDP-mannose pyrophosphorylase from Pyrococcus furiosus, which could take ATP as substrate.\n\n### Cell lines\n\nHEK293 were purchased from ATCC and the identity of the cell line was confirmed by carrying out fingerprinting (Shanghai Genening Biotechnologies Inc, Shanghai, China). In addition, HEK293 cells were tested using the MycoBlue Mycoplasma Detector Kit (Vazyme,China), indicating that the cells were not contaminated by Mycoplasma.\n\n### Cell culture and transient transfections\n\nHEK293 cells were cultured in Dulbecco\u2019s modified Eagle\u2019s medium with 10% fetal bovine serum. All cells were maintained at 37\u00b0C in humidified incubators with 5% CO2 and 95% air. Human P2Y14 or P2Y12 receptors and G protein \u03b1-subunit (G\u03b1qi5) were transiently co-transfected with HEK293 cells using PolyJet In Vitro DNA Transfection Reagent (SignaGen) according to the manufacturer\u2019s instructions. Thus, a mixture of 1 \u03bcg of receptor DNA and 1 \u03bcg of G\u03b1qi5 DNA was used to transfect with the six-well plate cells at 90% confluency. HEK293 cells transiently expressing P2Y14 or P2Y12 receptor were subsequently used for the intracellular Ca2+ assays after 48 hr post-transfection.\n\n### Cell surface expression\n\nHuman P2Y14 or P2Y12 was cloned into a pcDNA3 vector with HA tag for expression in HEK293 cells. Mutants of P2Y14 or P2Y12 were constructed according to Fast Mutagenesis System (TransGen). Cell surface expression of P2Y14 or P2Y12 was analyzed by flow cytometry. HEK293 cells were transfected with pCDNA3-HA-P2Y14 or P2Y12 in six-well plate overnight. After having been incubated with rabbit anti-HA primary antibody (1:800, CST) for 1 hr at 4\u00b0C, the cells were incubated with goat anti-rabbit IgG(H+L) FITC conjugate secondary antibody (1:200, TransGen) for 50 min at 4\u00b0C. Data were collected with a flow cytometer (FACS Calibur, BD) and analyzed with FlowJo software.\n\n### Intracellular Ca2+ mobilization\n\nIntracellular Ca2+ assays were carried out as follows. HEK293 cells were seeded (80,000 cells/well) into Matrigel-coated 96-well plate 24 hr prior to assay. The cells were incubated with 2 \u03bcM Fluo-4 AM (Invitrogen) diluted in HBSS solution (0.4 g L\u22121 KCl, 0.12 g L\u22121 Na2HPO4\u00b712H2O, 0.06 g L\u22121 KH2PO4, 0.35 g L\u22121 NaHCO3, 0.14 g L\u22121 CaCl2, 0.10 g L\u22121 MgCl2\u00b76H2O, 0.05 g L\u22121 MgSO4, and 8.0 g L\u22121 NaCl) at 37\u00b0C for 50 min. After dye loading, the cells were treated with the compounds of interest. Then, calcium response (relative fluorescence unit) was measured using Flexstation 3 (Molecular Device) with fluorescence excitation made at 485 nm and emission at 525 nm.\n\n### Molecular modeling, docking, and energy decomposition\n\nUsing the crystal structures of agonist-bound P2Y12 (PDB codes 4PXZ, 4PY0) (Zhang et al., 2014a) as templates, we employed Modeller (Sali and Blundell, 1993) to construct the human P2Y14 models. The human P2Y12 models are also built using these P2Y12 crystal structures (PDB codes 4PXZ, 4PY0) (Zhang et al., 2014a). The models with the lowest root mean square deviations from their template structures were selected for further analysis. A ligand was docked to the receptor using Schodinger Glide software in SP mode with default parameters (Friesner et al., 2004). A pocket binding to the ligand with Glide G-scores below \u20136.5 kcal/mol was considered as a possible ligand-binding pocket. To involve receptor flexibility, we used RosettaLigand (Davis and Baker, 2009) to generate representative ligand-bound receptor models. After Rosetta-based docking, the top 1000 models with lowest binding energy score were selected. Then, they were further scored with the ligand-binding energy between ligand and receptor. The top 10 models with the lowest ligand-binding energy were selected for energy decomposition. The van der Waals energy of ligand binding was mapped to each receptor residue by residue_energy_breakdown utility (Davis and Baker, 2009). The model with the lowest ligand binding energy was used as the representative model.\n\n### Modeling and simulations\n\nTo build a simulation system, we place the molecular model into a 1-palmitoyl-2-oleoyl-sn-glycero-3-phosphocholine lipid bilayer. The lipid-embedded complex model was solvated in periodic boundary condition box (80 \u00c5 \u00d7 80 \u00c5 \u00d7 120 \u00c5) filled with TIP3P water molecules and 0.15 M KCl using CHARMM-GUI (Wu et al., 2014). Each system was replicated to perform three independent simulations. On the basis of the CHARMM36m all-atom force field (Guvench et al., 2011; Huang et al., 2017; MacKerell et al., 1998), MD simulations were conducted using GROMAS 5.1.4 (Hess et al., 2008; Van Der Spoel et al., 2005). After 100 ns equilibration, a 500 ns production run was carried out for each simulation. All productions were carried out in the NPT ensemble at temperature of 303.15 K and a pressure of 1 atm. Temperature and pressure were controlled using the velocity-rescale thermostat (Bussi et al., 2007) and the Parrinello-Rahman barostat with isotropic coupling (Aoki and Yonezawa, 1992), respectively. Equations of motion were integrated with a 2 fs time step; the LINCS algorithm was used to constrain bond length (Hess, 2008). Non-bonded pair lists were generated every 10 steps using distance cutoff of 1.4 nm. A cutoff of 1.2 nm was used for Lennard-Jones (excluding scales 1\u20134) interactions, which were smoothly switched off between 1 nm and 1.2 nm. Electrostatic interactions were computed using particle-mesh-Ewald algorithm with a real-space cutoff of 1.2 nm. The last 200 ns trajectory of each simulation was used to calculate average values.\n\n### Sequence analysis\n\nTo analyze the conservation of residual sites, we collected sequences of receptors from UniProt database involving 359 species. Among these, we only found five anamniotes, including Astyanax mexicanus, Xenopus tropicalis, Microcaecilia unicolor, Geotrypetes seraphini, and Xenopus laevis. See Supplementary file 3 for species repertoire information. The multiple sequence alignments were performed using Clustal Omega. Logplots generated for these alignments by WebLog. In each logplot, the height of a letter is proportional to the information content of an amino acid in bits, which was calculated by Equation 1 as follows:\n\n$$\nI=log_{2}\u2061N-\\sumpilog_{2}\u2061pi\n$$\n\nwhere N is the number of all sequences and pi is the probability of the amino acid in all sequences. A large value of the unit bits indicates a high conservation of a particular site.\n\n### Statistics\n\nStatistical analyses were performed using GraphPad Prism 6 (GraphPad Software). EC50 values for compounds were obtained from concentration-response curves by nonlinear regression analysis. Comparison of two compounds or two constructs was analyzed by unpaired t test to determine statistical difference. All statistical data are given as mean \u00b1 SEM of at least three independent experiments performed in duplicate or triplicate.\n",
+      "created_at": "2025-12-04T03:45:42.272697Z"
+    },
+    {
+      "id": "0ba3ff0c-d06c-4320-b584-e3443788644a",
+      "submission_id": "4868e940-dc29-4e5d-9478-8ad5bd52f5d4",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Dan Larhammar, https://ror.org/048a87296 Uppsala University Sweden\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.85449.sa0](https://doi.org/10.7554/eLife.85449.sa0)\n\nThis study describes a valuable model for the interaction of nucleotides, an important group of signalling molecules in health and disease, with their receptors. By combining experimental and theoretical methods, the authors provide compelling evidence for the mechanism of receptor activation. The results will be useful for drug design to target these receptors.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Dan Larhammar, https://ror.org/048a87296 Uppsala University Sweden\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.85449.sa1](https://doi.org/10.7554/eLife.85449.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Identification of a carbohydrate-recognition motif of purinergic receptors\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Kenton Swartz as the Senior Editor.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nI apologize for the delay in handling your manuscript. It took some time to find the second reviewer and when reviewers 1 and 2 had submitted their reports, I was deeply involved in hosting a conference and other time-demanding matters at the end of the academic semester.\n\nEssential Revisions (for the authors):\n\nReviewing Editor (Recommendations for the authors):\n\nIn addition to the comments provided by the other two reviewers, I wish to bring the authors' attention to the following matters:\n\n1) The authors mention the sequence alignment repertoire of species on lines 360, 642-644, and in the legend to Figure 4A, but refer the reader to Supplementary file 3 for specific information apart from the fact that 379 species were included. It is far more important to describe the evolutionary range of species than the number of species, so I urge the authors to provide this information in the text. As far as I can see, the list in the supplementary file includes large numbers of mammals and birds and some turtles, lizards, and a snake, thus a panel consisting of amniotes. A quick look identified no amphibians nor any more distant relatives of the amniotes such as rayfinned fishes or cartilaginous fishes, although my tentative exploration of the members of this receptor family indicates that they existed before the origin of vertebrates. If the species repertoire is restricted to amniotes, this must be clearly stated in the text in the places discussing alignment and sequence conservation.\n\n2) Another aspect of the alignment displayed in Figure 4 is that some positions are extremely difficult to read, for instance, positions 1, 2, 3, 4, and 266. The less frequent residues at many positions are totally impossible to see. But it may suffice to highlight the predominant residue at each position in this way if the authors do not discuss any of the secondary or tertiary amino acids that occur at a certain position.\n\n3) Why does the alignment in Figure 4 use both capital F and small f? All other amino acid abbreviations use capital letters as far as I can see. Position 34 has both F and f \u2013 what is the difference? This may be explained somewhere in the text, but if so I must have missed it.\n\nReviewer #1 (Recommendations for the authors):\n\nI will proceed with a detailed list of suggestions and criticisms following the article reading, irrespective of minor/major suggestions, the last of which will have an easy match for the authors with the weaknesses identified in the public review:\n\n1) Line 59 \u2013 typo in the full name of 2MeSADP. Line 61 \u2013 please mention EL2 as part of the binding site for this ligand, it makes important interactions.\n\n2) Lines 74-77 \u2013 Figure 1B and Figure 1H show a decrease in max EFFICACY for some ligands (UDP-Glc, 1H; K77A and D81A for the UDP-Glc mutations, panel of 1H). The way this is presented is confusing, I would classify UDP as a PARTIAL agonist as compared to UDP-Glc based on this graph. The implications of the effect of the mutations on UDP-Glc are however more delicate, it seems that these residues are involved in the activation of the receptor since the mutation leads to partial efficacy (reduction of the max efficacy) for this ligand. You must use the appropriate pharmacological parameters (Bmax) for presenting and discussing these results.\n\n3) Lines 84-87 \u2013 docking scores are not sensible enough to prove this affirmation. The stability of binding has nothing to do with a score of docking, which can only be used to rank docking poses and, in the best cases, to distinguish good and bad binders (according to this data, both UDP and UDP-Glc bind equally well, which correlates with the experimental data and that is as far as you can go).\n\n4) Lines 105 \u2013 The effect of a mutation like E278A on the potency (as measured in functional assay) of UDP-Glc is as low as 1.5 fold, which is far from being significant, despite the P value to compare with UDP, and in this sense, I don't see a proof for the specific role of this residue in the sugar binding. K77 and D81 definitely have a role which, despite EC50, modifies Bmax (see my comment below, you must discuss the last value)\n\n5) The MD trajectories are minimally analyzed. The salt bridge analysis and inter-helical distances (Supplementary file 2-appendix table 1) are fine. But for the proposed H-bonds, only the distance between each of the four residues here postulated as forming the carbohydrate-binding site (K277, E278, R253, K77) are monitored with respect to the minimum distance to a sugar atom, (Figure 3 Figure supplement 2). It is well known that the occurrence of a H Bond depends not only on the distance but also on the geometry, so the percentage of occurrence of a H Bond should be reported. In addition, RMSF of the ligand would be informative as to the stability of the binding pose (even if it is an evolved binding pose from the initial docking, we need to verify that this is stable).\n\n6) In this sense, it is stated (l 168 \u2013 170) that E278 causes an electrostatic repulsion only on the UDP-GlcA derivative and this explains the increase in efficacy of this molecule upon E278A mutation. I don't see such a selective repulsion as all molecules except UDP-Glc show the same increased distance to this residue, and as happened before, the experimental data is again overinterpreted since E278A (Figure 3G, compare purple vs black curves) does not enhance the activity of UDP-GlcA in a meaningful way (60 vs 38 nM EC50, p<0.01).\n\n7) The same applies to the discussion of the binding mode of UDP-GlcNAc (l177, Figure 3H). A selective interaction is postulated with D81 based on MD going away from the initial interaction with E278A; but indeed alanine mutation of both residues affects equally. Please modify your interpretation of the data accordingly.\n\n8) Generally speaking, I am convinced that the carbohydrates binding site identified is consistent with the mutagenesis data, but the discussion of specific interactions for each molecule goes beyond what can be demonstrated by the data, and one should draw general lines when not certain of specific interactions, or clearly state these are hypothesis, not all of them backed up by the experimental data.\n\n9) P2Y12 data (Figure 4) \u2013 It seems clear that the conserved positions for the four amino acids discussed affect the ADP-sugar activation on P2Y12, but at any point, the authors comment the much lower potencies of the WT for the sugar-derivatives of ADP on this receptor, as compared to the UDP-sugars on P2Y12. The nature of the binding site of the two receptors can probably explain why this difference in potency.\n\nl250 \u2013 incomplete sentence, modify accordingly.\n\nReviewer #2 (Recommendations for the authors):\n\n1. As the author noted in line 117, the molecular docking process only considers the rigidity of the receptor, thereby excluding the receptor's flexibility. To provide a more comprehensive understanding of the system's dynamic properties and validate the docking results, the use of the representative binding pose from molecular dynamic simulations is commendable. Furthermore, it is noteworthy that K77 is relatively far away from the UDP in the present predicted binding pose, despite functional data indicating its importance. MD analysis may offer some insights into this discrepancy.\n\n2. In Figure G, the residue contribution is solely based on the docking results. However, using MM/PB(GB)SA for a similar decomposition analysis can yield more precise outcomes. As such, it would be worthwhile to perform this analysis using the MD trajectory.\n\n3. Having only a single replica with 500 ns of simulation may not provide enough sampling to achieve meaningful results. It is recommended that the author provides the agonist RMSD vs time to assess the convergence of the simulations. Furthermore, performing at least three replicas can increase the statistical significance of the findings and further validate the results.\n",
+      "created_at": "2025-12-04T03:45:42.272697Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T03:45:42.272697Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T03:45:42.272697Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "28efb8a9-ed37-4cad-bc72-fbf36d65fd68",
+      "content_id": "fe06c943-491f-49f0-9b32-7391a1f8921e",
+      "claim_id": "C1",
+      "claim": "UDP activates P2Y14 with an EC50 value of 50.9\u00b16.1 nM",
+      "claim_type": "EXPLICIT",
+      "source": "Both UDP and UDP-Glc potently activate P2Y14 with EC50 values of 50.9\u00b16.1 nM and 40.3\u00b11.5 nM, respectively (Figure 1A\u2013C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental calcium mobilization assay data presented in the manuscript and referenced in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:42.272697Z"
+    },
+    {
+      "id": "5c072285-4a73-4d32-9419-7b8a2a2eeeb6",
+      "content_id": "fe06c943-491f-49f0-9b32-7391a1f8921e",
+      "claim_id": "C2",
+      "claim": "UDP-Glc activates P2Y14 with an EC50 value of 40.3\u00b11.5 nM",
+      "claim_type": "EXPLICIT",
+      "source": "Both UDP and UDP-Glc potently activate P2Y14 with EC50 values of 50.9\u00b16.1 nM and 40.3\u00b11.5 nM, respectively (Figure 1A\u2013C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental calcium mobilization assay data presented in the manuscript and referenced in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:42.272697Z"
+    },
+    {
+      "id": "f39a3b2f-23fe-49d8-a70f-dc78593e0cc8",
+      "content_id": "fe06c943-491f-49f0-9b32-7391a1f8921e",
+      "claim_id": "C3",
+      "claim": "UDP-Glc shows increased potency on P2Y14 at high concentration compared with UDP",
+      "claim_type": "EXPLICIT",
+      "source": "Compared with UDP, UDP-Glc showed an increased potency on P2Y14 at high concentration (Figure 1B\u2013C), suggesting that the sugar moiety of UDP-Glc contributes to activating P2Y14.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 1B-C comparing concentration-response curves.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:42.272697Z"
+    },
+    {
+      "id": "c7d992de-afdf-46c7-a933-32ca2ffd3341",
+      "content_id": "fe06c943-491f-49f0-9b32-7391a1f8921e",
+      "claim_id": "C4",
+      "claim": "The sugar moiety of UDP-Glc contributes to activating P2Y14",
+      "claim_type": "EXPLICIT",
+      "source": "Compared with UDP, UDP-Glc showed an increased potency on P2Y14 at high concentration (Figure 1B\u2013C), suggesting that the sugar moiety of UDP-Glc contributes to activating P2Y14.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the experimental observation that UDP-Glc shows increased potency compared to UDP.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:42.272697Z"
+    },
+    {
+      "id": "e41c4765-f532-4045-a15b-b7f077a1817b",
+      "content_id": "fe06c943-491f-49f0-9b32-7391a1f8921e",
+      "claim_id": "C5",
+      "claim": "Both UDP and UDP-Glc bind to an extracellular pocket consisting of TM helices 2\u20137 and extracellular loop (ECL) 2",
+      "claim_type": "EXPLICIT",
+      "source": "The molecular docking showed that both UDP and UDP-Glc bind to an extracellular pocket consisting of TM helices 2\u20137 and extracellular loop (ECL) 2 (Figure 1D), which is corresponding to a known agonist binding pocket of P2Y12 (Zhang et al., 2014a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by molecular docking simulations and comparison with known P2Y12 structures.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:42.272697Z"
+    },
+    {
+      "id": "a67f42a3-9de4-4b7b-a896-c1108e76809a",
+      "content_id": "fe06c943-491f-49f0-9b32-7391a1f8921e",
+      "claim_id": "C6",
+      "claim": "The docking score of UDP-Glc is \u20139.3 kcal/mol",
+      "claim_type": "EXPLICIT",
+      "source": "The docking score of UDP-Glc is \u20139.3 kcal/mol, and that of UDP is \u20138.5 kcal/mol, indicating that both UDP and UDP-Glc bind to P2Y14.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by computational docking calculations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:42.272697Z"
+    },
+    {
+      "id": "d2764bd6-c0df-4cc9-8f46-af436d454905",
+      "content_id": "fe06c943-491f-49f0-9b32-7391a1f8921e",
+      "claim_id": "C7",
+      "claim": "The docking score of UDP is \u20138.5 kcal/mol",
+      "claim_type": "EXPLICIT",
+      "source": "The docking score of UDP-Glc is \u20139.3 kcal/mol, and that of UDP is \u20138.5 kcal/mol, indicating that both UDP and UDP-Glc bind to P2Y14.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by computational docking calculations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:42.272697Z"
+    },
+    {
+      "id": "49c22965-e491-4c39-a128-c686d5d8c02f",
+      "content_id": "fe06c943-491f-49f0-9b32-7391a1f8921e",
+      "claim_id": "C8",
+      "claim": "Five residues (K772.60, D812.64, N903.21, I170ECL2, and E2787.36) stabilize UDP-Glc binding",
+      "claim_type": "EXPLICIT",
+      "source": "Five residues (K772.60, D812.64, N903.21, I170ECL2, and E2787.36; superscript indicates Ballesteros-Weinstein residue numbering; Ballesteros and Weinstein, 1995) were predicted to stabilize UDP-Glc binding (Figure 1F and G), while they made few energetic contributions (van der Waals energy >\u20130.25 Rosetta energy unit) to UDP binding (Figure 1E and G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by energy decomposition analysis from molecular docking.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:42.272697Z"
+    },
+    {
+      "id": "9c201568-9faa-4607-bb7f-cafea348c79f",
+      "content_id": "fe06c943-491f-49f0-9b32-7391a1f8921e",
+      "claim_id": "C9",
+      "claim": "K772.60, D812.64, N903.21, I170ECL2, and E2787.36 make few energetic contributions to UDP binding",
+      "claim_type": "EXPLICIT",
+      "source": "Five residues (K772.60, D812.64, N903.21, I170ECL2, and E2787.36; superscript indicates Ballesteros-Weinstein residue numbering; Ballesteros and Weinstein, 1995) were predicted to stabilize UDP-Glc binding (Figure 1F and G), while they made few energetic contributions (van der Waals energy >\u20130.25 Rosetta energy unit) to UDP binding (Figure 1E and G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by energy decomposition analysis from molecular docking.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:42.272697Z"
+    },
+    {
+      "id": "b8984ac3-ad97-46c8-823f-711f64f3ac63",
+      "content_id": "fe06c943-491f-49f0-9b32-7391a1f8921e",
+      "claim_id": "C10",
+      "claim": "D81A mutation significantly reduces P2Y14 activities by UDP-Glc compared with wild-type",
+      "claim_type": "EXPLICIT",
+      "source": "Among these mutants, D81A showed significantly reduced activities by UDP-Glc compared with the wild-type (WT) group (Figure 1H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental mutagenesis and calcium mobilization assay data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:42.272697Z"
+    },
+    {
+      "id": "e9dad327-a0f5-45d7-a551-bc019a8ef422",
+      "content_id": "fe06c943-491f-49f0-9b32-7391a1f8921e",
+      "claim_id": "C11",
+      "claim": "D81A mutation does not significantly affect receptor activities by UDP",
+      "claim_type": "EXPLICIT",
+      "source": "However, substitution of D812.64 by alanine did not significantly affect the receptor activities by UDP (Figure 1H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental mutagenesis and calcium mobilization assay data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:42.272697Z"
+    },
+    {
+      "id": "70f7675c-5e73-4ec6-b5bd-411c3088f69b",
+      "content_id": "fe06c943-491f-49f0-9b32-7391a1f8921e",
+      "claim_id": "C12",
+      "claim": "K77A mutation diminishes both UDP-Glc- and UDP-induced calcium mobilization",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, K77A mutation diminished both UDP-Glc- and UDP-induced calcium mobilization (Figure 1H), but it showed greater impact on UDP-Glc-induced receptor responses than UDP-induced ones (Figure 1H, I), suggesting extra interactions between K772.60 and sugar moiety of UDP-Glc.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental mutagenesis and calcium mobilization assay data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:42.272697Z"
+    },
+    {
+      "id": "255d0857-ef9a-46f9-99cb-f2e33bc59e59",
+      "content_id": "fe06c943-491f-49f0-9b32-7391a1f8921e",
+      "claim_id": "C13",
+      "claim": "K77A mutation shows greater impact on UDP-Glc-induced receptor responses than UDP-induced ones",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, K77A mutation diminished both UDP-Glc- and UDP-induced calcium mobilization (Figure 1H), but it showed greater impact on UDP-Glc-induced receptor responses than UDP-induced ones (Figure 1H, I), suggesting extra interactions between K772.60 and sugar moiety of UDP-Glc.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental mutagenesis and calcium mobilization assay data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:42.272697Z"
+    },
+    {
+      "id": "164ded1d-6660-48fa-8cae-346848aeae9a",
+      "content_id": "fe06c943-491f-49f0-9b32-7391a1f8921e",
+      "claim_id": "C14",
+      "claim": "K772.60 has extra interactions with the sugar moiety of UDP-Glc",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, K77A mutation diminished both UDP-Glc- and UDP-induced calcium mobilization (Figure 1H), but it showed greater impact on UDP-Glc-induced receptor responses than UDP-induced ones (Figure 1H, I), suggesting extra interactions between K772.60 and sugar moiety of UDP-Glc.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the differential effects of K77A mutation on UDP-Glc versus UDP responses.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:42.272697Z"
+    },
+    {
+      "id": "d95ea90d-988e-4824-835e-9fda0cf82355",
+      "content_id": "fe06c943-491f-49f0-9b32-7391a1f8921e",
+      "claim_id": "C15",
+      "claim": "N90A and I170A mutations do not significantly affect receptor responses by UDP or UDP-Glc",
+      "claim_type": "EXPLICIT",
+      "source": "Two mutations on TM3 and ECL2 (N90A and I170A) did not significantly affect the receptor responses by UDP or UDP-Glc (Figure 1\u2014figure supplement 1C, D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental mutagenesis and calcium mobilization assay data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:42.272697Z"
+    },
+    {
+      "id": "d1ea9fa9-5399-40db-8218-48828941b21d",
+      "content_id": "fe06c943-491f-49f0-9b32-7391a1f8921e",
+      "claim_id": "C16",
+      "claim": "Sub-pocket 2 residues of TM2 provide major contributions to stabilizing the sugar moiety of UDP-Glc",
+      "claim_type": "EXPLICIT",
+      "source": "These findings indicate that sub-pocket 2 residues of TM2 provide major contributions to stabilizing the sugar moiety of UDP-Glc.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the combined computational and experimental mutagenesis results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:42.272697Z"
+    },
+    {
+      "id": "aece8c0a-59cb-44b0-b8a0-06ff6878e120",
+      "content_id": "fe06c943-491f-49f0-9b32-7391a1f8921e",
+      "claim_id": "C17",
+      "claim": "In UDP-Glc-bound P2Y14 simulations, the extracellular tip of TM6 shifted over 3 \u00c5 toward the receptor core compared with apo P2Y14 simulations",
+      "claim_type": "EXPLICIT",
+      "source": "In UDP-Glc-bound P2Y14 simulations, the extracellular tip of TM6 shifted over 3 \u00c5 and TM7 over 4 \u00c5 toward the receptor core, compared with the apo P2Y14 simulations (Figure 2A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by molecular dynamics simulation data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:42.272697Z"
+    },
+    {
+      "id": "b4c0dbba-bd7c-4e08-9136-c44581534697",
+      "content_id": "fe06c943-491f-49f0-9b32-7391a1f8921e",
+      "claim_id": "C18",
+      "claim": "In UDP-Glc-bound P2Y14 simulations, TM7 shifted over 4 \u00c5 toward the receptor core compared with apo P2Y14 simulations",
+      "claim_type": "EXPLICIT",
+      "source": "In UDP-Glc-bound P2Y14 simulations, the extracellular tip of TM6 shifted over 3 \u00c5 and TM7 over 4 \u00c5 toward the receptor core, compared with the apo P2Y14 simulations (Figure 2A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by molecular dynamics simulation data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:42.272697Z"
+    },
+    {
+      "id": "26f11b62-f72d-422c-a418-04afcc11c98a",
+      "content_id": "fe06c943-491f-49f0-9b32-7391a1f8921e",
+      "claim_id": "C19",
+      "claim": "K2777.35 and E2787.36 form hydrogen bonds with the glucose 6' hydroxyl group of UDP-Glc during UDP-Glc-bound P2Y14 simulations",
+      "claim_type": "EXPLICIT",
+      "source": "During UDP-Glc-bound P2Y14 simulations, two charged residues K2777.35 and E2787.36 formed hydrogen bonds with the glucose 6' hydroxyl group of UDP-Glc to keep TM7 close to the receptor core (Figure 2B and C), and an arginine residue (R2536.55) formed a salt bridge with the phosphate group of UDP-Glc to stabilize the inward shift of TM6 (Figure 2B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by molecular dynamics simulation data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:42.272697Z"
+    },
+    {
+      "id": "1dbcd2b1-5be7-43fd-8e09-97116fae9461",
+      "content_id": "fe06c943-491f-49f0-9b32-7391a1f8921e",
+      "claim_id": "C20",
+      "claim": "R2536.55 forms a salt bridge with the phosphate group of UDP-Glc to stabilize the inward shift of TM6",
+      "claim_type": "EXPLICIT",
+      "source": "During UDP-Glc-bound P2Y14 simulations, two charged residues K2777.35 and E2787.36 formed hydrogen bonds with the glucose 6' hydroxyl group of UDP-Glc to keep TM7 close to the receptor core (Figure 2B and C), and an arginine residue (R2536.55) formed a salt bridge with the phosphate group of UDP-Glc to stabilize the inward shift of TM6 (Figure 2B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by molecular dynamics simulation data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:42.272697Z"
+    },
+    {
+      "id": "e0d4a4f2-74f2-4b8d-a7df-5ba35cd4e999",
+      "content_id": "fe06c943-491f-49f0-9b32-7391a1f8921e",
+      "claim_id": "C21",
+      "claim": "R253A mutation results in diminished UDP-Glc-induced calcium mobilization with EC50 of 808.6\u00b143.6 nM compared with WT EC50 of 40.3\u00b11.5 nM",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, compared with WT group (EC50 of 40.3\u00b11.5 nM), single-point mutations (R253A and E278A) of TM6 and TM7 helices resulted to diminished UDP-Glc-induced calcium mobilization (EC50 of 808.6\u00b143.6 nM for R253A and 60.2\u00b13.6 nM for E278A) (Figure 1H, Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental mutagenesis and calcium mobilization assay data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:42.272697Z"
+    },
+    {
+      "id": "6e08f1db-c61d-441c-9540-60665f54cbf0",
+      "content_id": "fe06c943-491f-49f0-9b32-7391a1f8921e",
+      "claim_id": "C22",
+      "claim": "E278A mutation results in diminished UDP-Glc-induced calcium mobilization with EC50 of 60.2\u00b13.6 nM compared with WT EC50 of 40.3\u00b11.5 nM",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, compared with WT group (EC50 of 40.3\u00b11.5 nM), single-point mutations (R253A and E278A) of TM6 and TM7 helices resulted to diminished UDP-Glc-induced calcium mobilization (EC50 of 808.6\u00b143.6 nM for R253A and 60.2\u00b13.6 nM for E278A) (Figure 1H, Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental mutagenesis and calcium mobilization assay data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:42.272697Z"
+    },
+    {
+      "id": "10ee7e3c-3eb9-4e83-892b-5657a149b79a",
+      "content_id": "fe06c943-491f-49f0-9b32-7391a1f8921e",
+      "claim_id": "C23",
+      "claim": "The distance between TM5 and TM6 of UDP-Glc-bound P2Y14 was 5.9 \u00c5 shorter than that in the apo system at the extracellular side",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, at the extracellular side, the distance between TM5 and TM6 of UDP-Glc-bound P2Y14 was 5.9 \u00c5 shorter than that in the apo system (Figure 2\u2014figure supplement 1A, B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by molecular dynamics simulation data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:42.272697Z"
+    },
+    {
+      "id": "59bf82d6-562c-4fba-b784-59ea14b96b31",
+      "content_id": "fe06c943-491f-49f0-9b32-7391a1f8921e",
+      "claim_id": "C24",
+      "claim": "Y1895.41 and T2576.59 make stable hydrophobic interactions to maintain tight compact between TM5 and TM6 in UDP-Glc-bound-P2Y14 simulations",
+      "claim_type": "EXPLICIT",
+      "source": "Y1895.41 and T2576.59 made stable hydrophobic interactions to maintain the tight compact between TM5 and TM6 in UDP-Glc-bound-P2Y14 simulations, while TM6 did not interact with TM5 at the extracellular side in the apo simulations (Figure 2\u2014figure supplement 1A, B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by molecular dynamics simulation data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:42.272697Z"
+    },
+    {
+      "id": "fed8b0c9-f077-44a7-8227-f87e02126481",
+      "content_id": "fe06c943-491f-49f0-9b32-7391a1f8921e",
+      "claim_id": "C25",
+      "claim": "T257A mutation shows significantly reduced UDP-Glc-induced responses with EC50 of 504.9\u00b115.9 nM compared with WT EC50 of 40.3\u00b11.5 nM",
+      "claim_type": "EXPLICIT",
+      "source": "Compared with WT group (EC50 of 40.3\u00b11.5 nM), a mutation of TM6 (T257A) showed significantly reduced UDP-Glc-induced responses (EC50 of 504.9\u00b115.9 nM) (Figure 2\u2014figure supplement 1C), fully agreeing with our simulation models.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental mutagenesis and calcium mobilization assay data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:42.272697Z"
+    },
+    {
+      "id": "366dddc9-0fc1-42e4-be6e-15774b168086",
+      "content_id": "fe06c943-491f-49f0-9b32-7391a1f8921e",
+      "claim_id": "C26",
+      "claim": "UDP-Glc might serve as intramolecular 'glue' to make a tight helical bundle of P2Y14, involving TM6 and TM7",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, these data suggest that UDP-Glc might serve as intramolecular 'glue' to make a tight helical bundle of P2Y14, involving TM6 and TM7.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the combined computational and experimental results showing conformational changes and interactions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:42.272697Z"
+    },
+    {
+      "id": "b84f9c70-2a16-402b-b8c0-483f49995056",
+      "content_id": "fe06c943-491f-49f0-9b32-7391a1f8921e",
+      "claim_id": "C27",
+      "claim": "UDP-Glc induces activity on P2Y14 with EC50 of 40.3 \u00b1 1.5 nM",
+      "claim_type": "EXPLICIT",
+      "source": "With only one group substitution at the sugar moiety, UDP-Glc induced stronger activity on P2Y14 (EC50=40.3 \u00b1 1.5 nM) than the other UDP-sugars, that is, UDP-Gal (EC50=78.3 \u00b1 9.2 nM), UDP-GlcA (EC50=59.9 \u00b1 4.8 nM), and UDP-GlcNAc (EC50=184.4 \u00b1 11.8 nM) (Figure 3A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental calcium mobilization assay data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:42.272697Z"
+    },
+    {
+      "id": "354ec950-523f-4bd3-91a8-a68785d90ed1",
+      "content_id": "fe06c943-491f-49f0-9b32-7391a1f8921e",
+      "claim_id": "C28",
+      "claim": "UDP-Gal induces activity on P2Y14 with EC50 of 78.3 \u00b1 9.2 nM",
+      "claim_type": "EXPLICIT",
+      "source": "With only one group substitution at the sugar moiety, UDP-Glc induced stronger activity on P2Y14 (EC50=40.3 \u00b1 1.5 nM) than the other UDP-sugars, that is, UDP-Gal (EC50=78.3 \u00b1 9.2 nM), UDP-GlcA (EC50=59.9 \u00b1 4.8 nM), and UDP-GlcNAc (EC50=184.4 \u00b1 11.8 nM) (Figure 3A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental calcium mobilization assay data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:42.272697Z"
+    },
+    {
+      "id": "2717e16e-6e09-497e-8e3b-f32bd456cade",
+      "content_id": "fe06c943-491f-49f0-9b32-7391a1f8921e",
+      "claim_id": "C29",
+      "claim": "UDP-GlcA induces activity on P2Y14 with EC50 of 59.9 \u00b1 4.8 nM",
+      "claim_type": "EXPLICIT",
+      "source": "With only one group substitution at the sugar moiety, UDP-Glc induced stronger activity on P2Y14 (EC50=40.3 \u00b1 1.5 nM) than the other UDP-sugars, that is, UDP-Gal (EC50=78.3 \u00b1 9.2 nM), UDP-GlcA (EC50=59.9 \u00b1 4.8 nM), and UDP-GlcNAc (EC50=184.4 \u00b1 11.8 nM) (Figure 3A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental calcium mobilization assay data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:42.272697Z"
+    },
+    {
+      "id": "749c0b8f-fc3f-4b55-8cc5-d2ef65df64f6",
+      "content_id": "fe06c943-491f-49f0-9b32-7391a1f8921e",
+      "claim_id": "C30",
+      "claim": "UDP-GlcNAc induces activity on P2Y14 with EC50 of 184.4 \u00b1 11.8 nM",
+      "claim_type": "EXPLICIT",
+      "source": "With only one group substitution at the sugar moiety, UDP-Glc induced stronger activity on P2Y14 (EC50=40.3 \u00b1 1.5 nM) than the other UDP-sugars, that is, UDP-Gal (EC50=78.3 \u00b1 9.2 nM), UDP-GlcA (EC50=59.9 \u00b1 4.8 nM), and UDP-GlcNAc (EC50=184.4 \u00b1 11.8 nM) (Figure 3A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental calcium mobilization assay data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:42.272697Z"
+    },
+    {
+      "id": "11015f03-9e20-4b27-9063-a9e210b55bc4",
+      "content_id": "fe06c943-491f-49f0-9b32-7391a1f8921e",
+      "claim_id": "C31",
+      "claim": "A stable salt bridging chain formed by K772.60, D812.64, K2777.35, and E2787.36 was observed in all UDP-sugar-bound P2Y14 simulation systems",
+      "claim_type": "EXPLICIT",
+      "source": "At the sub-pocket 2, a stable salt bridging chain formed by four charged residues (K772.60, D812.64, K2777.35, and E2787.36) were observed in all systems (Figure 3C\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by molecular dynamics simulation data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:42.272697Z"
+    },
+    {
+      "id": "17b5ae73-d51d-42e7-a009-144f09c5bb77",
+      "content_id": "fe06c943-491f-49f0-9b32-7391a1f8921e",
+      "claim_id": "C32",
+      "claim": "E2787.36 links TM2 and TM7 helices by forming salt bridges with K772.60 and K2777.35",
+      "claim_type": "EXPLICIT",
+      "source": "The negative charged glutamic acid residue E2787.36 linked TM2 and TM7 helices by forming salt bridges with K772.60 and K2777.35, while the other negative charged residue D812.64 forming a salt bridge with K772.60 to further stabilize these ionic interactions (Figure 3C\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by molecular dynamics simulation data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:42.272697Z"
+    },
+    {
+      "id": "2d3cfe8c-cf57-4278-99ed-97ed960877e2",
+      "content_id": "fe06c943-491f-49f0-9b32-7391a1f8921e",
+      "claim_id": "C33",
+      "claim": "D812.64 forms a salt bridge with K772.60 to further stabilize ionic interactions",
+      "claim_type": "EXPLICIT",
+      "source": "The negative charged glutamic acid residue E2787.36 linked TM2 and TM7 helices by forming salt bridges with K772.60 and K2777.35, while the other negative charged residue D812.64 forming a salt bridge with K772.60 to further stabilize these ionic interactions (Figure 3C\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by molecular dynamics simulation data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:42.272697Z"
+    },
+    {
+      "id": "cf36106e-32e2-4919-82c4-c23c1d75aa7d",
+      "content_id": "fe06c943-491f-49f0-9b32-7391a1f8921e",
+      "claim_id": "C34",
+      "claim": "In UDP-GlcA-bound P2Y14 simulations, the 5' carboxyl group of the sugar moiety fails to form hydrogen bond with E2787.36",
+      "claim_type": "EXPLICIT",
+      "source": "However, in UDP-GlcA-bound P2Y14 simulations, at the corresponding position, the 5' carboxyl group of the sugar moiety failed to form hydrogen bond with the negatively charged E2787.36 (Figure 3D, Figure 3\u2014figure supplement 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by molecular dynamics simulation data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:42.272697Z"
+    },
+    {
+      "id": "33c7ead5-d01f-49c8-bcf0-e2e4c1d6527d",
+      "content_id": "fe06c943-491f-49f0-9b32-7391a1f8921e",
+      "claim_id": "C35",
+      "claim": "E278A mutation does not decrease UDP-GlcA-induced calcium mobilization with EC50 of 38.2 \u00b1 2.2 nM compared with WT EC50 of 59.9 \u00b1 4.8 nM",
+      "claim_type": "EXPLICIT",
+      "source": "Compared with that of WT group (EC50=59.9 \u00b1 4.8 nM), the single-point mutation of E278A did not decrease the UDP-GlcA-induced calcium mobilization (EC50=38.2 \u00b1 2.2 nM) (Figure 3G), supporting with the proposed sugar-binding model (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental mutagenesis and calcium mobilization assay data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:42.272697Z"
+    },
+    {
+      "id": "ee77fd33-01b3-4cf1-b095-9fb8d7c18c57",
+      "content_id": "fe06c943-491f-49f0-9b32-7391a1f8921e",
+      "claim_id": "C36",
+      "claim": "Substitution of 2' hydroxyl group by an acetamido group leads to a rotation of the sugar moiety of UDP-GlcNAc in simulations",
+      "claim_type": "EXPLICIT",
+      "source": "Substitution of 2' hydroxyl group by an acetamido group led to a rotation of the sugar moiety of UDP-GlcNAc in simulations (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by molecular dynamics simulation data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:42.272697Z"
+    },
+    {
+      "id": "66a91b23-26b5-4452-b84d-c77fb4521346",
+      "content_id": "fe06c943-491f-49f0-9b32-7391a1f8921e",
+      "claim_id": "C37",
+      "claim": "The 6' hydroxyl of N-acetylglucosamine group flips to form hydrogen bonds with K772.60 and D812.64 instead of K2777.35 and E2787.36",
+      "claim_type": "EXPLICIT",
+      "source": "Consequentially, the 6' hydroxyl of N-acetylglucosamine group flipped to form hydrogen bonds with K772.60 and D812.64 instead of K2777.35 and E2787.36 (Figure 3E, Figure 3\u2014figure supplement 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by molecular dynamics simulation data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:42.272697Z"
+    },
+    {
+      "id": "5f4722c0-dae2-4c0f-8c8c-dbbb011b9065",
+      "content_id": "fe06c943-491f-49f0-9b32-7391a1f8921e",
+      "claim_id": "C38",
+      "claim": "D81A mutation makes significant effect to reduce UDP-GlcNAc-induced receptor activities",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, single-point mutation of D81A made significant effect to reduce the UDP-GlcNAc-induced receptor activities (Figure 3H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental mutagenesis and calcium mobilization assay data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:42.272697Z"
+    },
+    {
+      "id": "f6c1ce5a-635f-48a1-a367-ab664ff46da1",
+      "content_id": "fe06c943-491f-49f0-9b32-7391a1f8921e",
+      "claim_id": "C39",
+      "claim": "The 4' hydroxyl group of galactose forms a stable hydrogen bond with K772.60",
+      "claim_type": "EXPLICIT",
+      "source": "Compared with the other three UDP-sugars, UDP-Gal has a different orientation of 4' hydroxyl group. The 4' hydroxyl group of galactose formed a stable hydrogen bond with K772.60 and disrupted the interaction between 6' hydroxyl group with E2787.36 (Figure 3F, Figure 3\u2014figure supplement 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by molecular dynamics simulation data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:42.272697Z"
+    },
+    {
+      "id": "5dcb995a-af68-4d45-a7b9-4a8f2de0371b",
+      "content_id": "fe06c943-491f-49f0-9b32-7391a1f8921e",
+      "claim_id": "C40",
+      "claim": "The 4' hydroxyl group of galactose disrupts the interaction between 6' hydroxyl group with E2787.36",
+      "claim_type": "EXPLICIT",
+      "source": "Compared with the other three UDP-sugars, UDP-Gal has a different orientation of 4' hydroxyl group. The 4' hydroxyl group of galactose formed a stable hydrogen bond with K772.60 and disrupted the interaction between 6' hydroxyl group with E2787.36 (Figure 3F, Figure 3\u2014figure supplement 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by molecular dynamics simulation data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:42.272697Z"
+    },
+    {
+      "id": "ce1959c2-c468-4108-9900-3f63fbb51aa3",
+      "content_id": "fe06c943-491f-49f0-9b32-7391a1f8921e",
+      "claim_id": "C41",
+      "claim": "E278A mutation does not significantly affect UDP-Gal-induced receptor response",
+      "claim_type": "EXPLICIT",
+      "source": "Substitution of E2787.36 by alanine did not significantly affect the UDP-Gal-induced receptor response (Figure 3I), agreeing with the proposed UDP-Gal-binding model (Figure 3F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental mutagenesis and calcium mobilization assay data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:42.272697Z"
+    },
+    {
+      "id": "70ce749f-940d-4848-99c4-3fba3e78b2c3",
+      "content_id": "fe06c943-491f-49f0-9b32-7391a1f8921e",
+      "claim_id": "C42",
+      "claim": "For all UDP-sugars, at least three residues of K772.60, D812.64, K2777.35, and E2787.36 participate in ligand binding",
+      "claim_type": "EXPLICIT",
+      "source": "For all UDP-sugars, at least three residues of K772.60, D812.64, K2777.35, and E2787.36 participated in ligand binding (Figure 2, Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by molecular dynamics simulation data and mutagenesis experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:42.272697Z"
+    },
+    {
+      "id": "f91abece-9d68-4042-b24a-e19b256ee34d",
+      "content_id": "fe06c943-491f-49f0-9b32-7391a1f8921e",
+      "claim_id": "C43",
+      "claim": "The K772.60-D812.64-K2777.35-E2787.36 salt bridging chain is a sugar-binding site of P2Y14 that can recognize different sugar moieties",
+      "claim_type": "EXPLICIT",
+      "source": "Both computational models and experimental data indicate the K772.60-D812.64-K2777.35-E2787.36 salt bridging chain as a sugar-binding site of P2Y14, which can recognize different sugar moieties.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by combined computational and experimental evidence.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:42.272697Z"
+    },
+    {
+      "id": "965a5356-6457-4b19-823e-060be52a6a06",
+      "content_id": "fe06c943-491f-49f0-9b32-7391a1f8921e",
+      "claim_id": "C44",
+      "claim": "The interactions of ligands with TM7 might determine the ligand potency on P2Y14",
+      "claim_type": "EXPLICIT",
+      "source": "The interactions of ligands with the TM7 might determine the ligand potency on P2Y14.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the differential binding modes and potencies of various UDP-sugars.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:42.272697Z"
+    },
+    {
+      "id": "715ea966-cc90-4978-96fb-df13848e37bf",
+      "content_id": "fe06c943-491f-49f0-9b32-7391a1f8921e",
+      "claim_id": "C45",
+      "claim": "K2.60, D2.64, K7.35, and E7.36 are conserved between P2Y14 and P2Y12",
+      "claim_type": "EXPLICIT",
+      "source": "These four residues (K2.60, D2.64, K7.35, and E7.36) are conserved between P2Y14 and its closest homolog, that is, P2Y12 (Figure 4A, Figure 4\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by sequence alignment analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:42.272697Z"
+    },
+    {
+      "id": "aac89f3b-a39a-46ec-8d02-18c0e7a96a2a",
+      "content_id": "fe06c943-491f-49f0-9b32-7391a1f8921e",
+      "claim_id": "C46",
+      "claim": "P2Y12 is activated by ADP",
+      "claim_type": "EXPLICIT",
+      "source": "P2Y12 is activated by ADP (Herbert and Savi, 2003), but it has not been reported to be activated by any sugar nucleotide.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:42.272697Z"
+    },
+    {
+      "id": "dd289d4b-c488-4e47-84ab-031e88a8a391",
+      "content_id": "fe06c943-491f-49f0-9b32-7391a1f8921e",
+      "claim_id": "C47",
+      "claim": "P2Y12 has not been reported to be activated by any sugar nucleotide",
+      "claim_type": "EXPLICIT",
+      "source": "P2Y12 is activated by ADP (Herbert and Savi, 2003), but it has not been reported to be activated by any sugar nucleotide.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the absence of reports in the literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:42.272697Z"
+    },
+    {
+      "id": "8f87f80e-980c-4151-950b-e7a77f6255f7",
+      "content_id": "fe06c943-491f-49f0-9b32-7391a1f8921e",
+      "claim_id": "C48",
+      "claim": "The docking score for ADP-Glc to P2Y12 is \u20139.4 kcal/mol",
+      "claim_type": "EXPLICIT",
+      "source": "The docking scores are \u20139.4 kcal/mol for ADP-Glc, for \u201310.0 kcal/mol for ADP-GlcA, and \u20139.3 kcal/mol for ADP-Man (Figure 4\u2014figure supplement 1B), suggesting they stably bound to P2Y12.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by computational docking calculations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:42.272697Z"
+    },
+    {
+      "id": "5a9d0845-6d32-45f5-ac66-b8ef77214284",
+      "content_id": "fe06c943-491f-49f0-9b32-7391a1f8921e",
+      "claim_id": "C49",
+      "claim": "The docking score for ADP-GlcA to P2Y12 is \u201310.0 kcal/mol",
+      "claim_type": "EXPLICIT",
+      "source": "The docking scores are \u20139.4 kcal/mol for ADP-Glc, for \u201310.0 kcal/mol for ADP-GlcA, and \u20139.3 kcal/mol for ADP-Man (Figure 4\u2014figure supplement 1B), suggesting they stably bound to P2Y12.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by computational docking calculations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:42.272697Z"
+    },
+    {
+      "id": "a474ddf5-f87f-4451-a4c9-b33f10bd98f9",
+      "content_id": "fe06c943-491f-49f0-9b32-7391a1f8921e",
+      "claim_id": "C50",
+      "claim": "The docking score for ADP-Man to P2Y12 is \u20139.3 kcal/mol",
+      "claim_type": "EXPLICIT",
+      "source": "The docking scores are \u20139.4 kcal/mol for ADP-Glc, for \u201310.0 kcal/mol for ADP-GlcA, and \u20139.3 kcal/mol for ADP-Man (Figure 4\u2014figure supplement 1B), suggesting they stably bound to P2Y12.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by computational docking calculations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:42.272697Z"
+    },
+    {
+      "id": "a84d008d-06a7-4e88-80af-1e021d9bba01",
+      "content_id": "fe06c943-491f-49f0-9b32-7391a1f8921e",
+      "claim_id": "C51",
+      "claim": "ADP-Glc activates P2Y12 with EC50 of 3.4\u00b10.4 \u03bcM",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, in calcium mobilization assays, ADP-Glc, ADP-GlcA, and ADP-Man activated P2Y12 with EC50 values of 3.4\u00b10.4 \u03bcM, 1.3\u00b10.1 \u03bcM, and 12.3\u00b10.9 \u03bcM, respectively (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental calcium mobilization assay data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:42.272697Z"
+    },
+    {
+      "id": "5550195b-cf1f-4e1c-a760-11523c496d01",
+      "content_id": "fe06c943-491f-49f0-9b32-7391a1f8921e",
+      "claim_id": "C52",
+      "claim": "ADP-GlcA activates P2Y12 with EC50 of 1.3\u00b10.1 \u03bcM",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, in calcium mobilization assays, ADP-Glc, ADP-GlcA, and ADP-Man activated P2Y12 with EC50 values of 3.4\u00b10.4 \u03bcM, 1.3\u00b10.1 \u03bcM, and 12.3\u00b10.9 \u03bcM, respectively (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental calcium mobilization assay data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:42.272697Z"
+    },
+    {
+      "id": "7aaa51e5-8bc0-41b5-b2c1-4277fc32ad2d",
+      "content_id": "fe06c943-491f-49f0-9b32-7391a1f8921e",
+      "claim_id": "C53",
+      "claim": "ADP-Man activates P2Y12 with EC50 of 12.3\u00b10.9 \u03bcM",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, in calcium mobilization assays, ADP-Glc, ADP-GlcA, and ADP-Man activated P2Y12 with EC50 values of 3.4\u00b10.4 \u03bcM, 1.3\u00b10.1 \u03bcM, and 12.3\u00b10.9 \u03bcM, respectively (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental calcium mobilization assay data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:42.272697Z"
+    },
+    {
+      "id": "853fba39-a20f-422d-9c7c-f70ce8a4d42e",
+      "content_id": "fe06c943-491f-49f0-9b32-7391a1f8921e",
+      "claim_id": "C54",
+      "claim": "Single-point mutations of K802.60, D842.64, K2807.35, and E2817.36 significantly diminish ADP-Glc-, ADP-GlcA-, and ADP-Man-induced responses compared with WT P2Y12",
+      "claim_type": "EXPLICIT",
+      "source": "Single-point mutations of K802.60, D842.64, K2807.35, and E2817.36 significantly diminished ADP-Glc-, ADP-GlcA-, and ADP-Man-induced responses, compared with WT P2Y12 (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental mutagenesis and calcium mobilization assay data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:42.272697Z"
+    },
+    {
+      "id": "c40855f4-3267-4c9b-9ccd-323b36e6f367",
+      "content_id": "fe06c943-491f-49f0-9b32-7391a1f8921e",
+      "claim_id": "C55",
+      "claim": "The KDKE salt bridging chain is a conserved functional motif for sugar binding in both P2Y14 and P2Y12",
+      "claim_type": "EXPLICIT",
+      "source": "These findings not only validate our assumption that P2Y12 can be activated by sugar nucleotides, but also indicate the conserved KDKE salt bridging chain as a functional motif for sugar binding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by combined computational and experimental evidence from both receptors.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:42.272697Z"
+    },
+    {
+      "id": "1b02aacc-c3c4-4e18-aae6-283480be9b2a",
+      "content_id": "fe06c943-491f-49f0-9b32-7391a1f8921e",
+      "claim_id": "C56",
+      "claim": "F2777.32 is a less conserved residue adjacent to the KDKE motif of P2Y12",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we found a less conserved phenylalanine residue F2777.32, which is adjacent to the KDKE motif of P2Y12 (Figure 4\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by sequence analysis and structural modeling.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:42.272697Z"
+    },
+    {
+      "id": "54dda1e6-cbb1-406d-abe7-135e70383abc",
+      "content_id": "fe06c943-491f-49f0-9b32-7391a1f8921e",
+      "claim_id": "C57",
+      "claim": "F277A mutation significantly reduces ADP-Glc-induced responses of P2Y12 compared with WT",
+      "claim_type": "EXPLICIT",
+      "source": "The alanine substitution of F2777.32 significantly reduced ADP-Glc-induced responses of P2Y12, compared with that of the WT group (Figure 4\u2014figure supplement 2B, C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental mutagenesis and calcium mobilization assay data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:42.272697Z"
+    },
+    {
+      "id": "dfc8b44e-9410-4b85-a8aa-7ec026261c3f",
+      "content_id": "fe06c943-491f-49f0-9b32-7391a1f8921e",
+      "claim_id": "C58",
+      "claim": "Single-point mutations at the corresponding position of P2Y14 do not significantly affect UDP-Glc-induced activation",
+      "claim_type": "EXPLICIT",
+      "source": "However, single-point mutations at the corresponding position of P2Y14 did not significantly affect the UDP-Glc-induced activation (Figure 4\u2014figure supplement 2C\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental mutagenesis and calcium mobilization assay data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:42.272697Z"
+    },
+    {
+      "id": "8155de87-7a10-4717-be38-7792ffefae1a",
+      "content_id": "fe06c943-491f-49f0-9b32-7391a1f8921e",
+      "claim_id": "C59",
+      "claim": "P2Y14 belongs to P2Y purinoceptor subfamily consisting of receptors responding to nucleotides including ADP and UDP",
+      "claim_type": "EXPLICIT",
+      "source": "It belongs to P2Y purinoceptor subfamily, consisting of receptors responding to nucleotides, including adenosine diphosphate (ADP) and UDP (Ralevic and Burnstock, 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:42.272697Z"
+    },
+    {
+      "id": "08a92e9f-3acf-4127-bf98-7a283ed238ea",
+      "content_id": "fe06c943-491f-49f0-9b32-7391a1f8921e",
+      "claim_id": "C60",
+      "claim": "P2Y14 is potently activated by UDP and UDP-sugars",
+      "claim_type": "EXPLICIT",
+      "source": "Distinct from the other purinoceptors, P2Y14 is potently activated by UDP and a class of carbohydrates, that is, UDP-sugars (Abbracchio et al., 2006; Jacobson et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:42.272697Z"
+    },
+    {
+      "id": "95bada78-4509-404f-8799-ee27db7baab4",
+      "content_id": "fe06c943-491f-49f0-9b32-7391a1f8921e",
+      "claim_id": "C61",
+      "claim": "UDP-sugars activate P2Y14 with a relative potency order of UDP-glucose, UDP-galactose, UDP-glucuronic acid, and UDP-N-acetylglucosamine",
+      "claim_type": "EXPLICIT",
+      "source": "UDP-sugars activate P2Y14 with a relative potency order of UDP-glucose (UDP-Glc), UDP-galactose (UDP-Gal), UDP-glucuronic acid (UDP-GlcA), and UDP-N-acetylglucosamine (UDP-GlcNAc) (Chambers et al., 2000; Hamel et al., 2011; Ko et al., 2009; Ko et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:42.272697Z"
+    },
+    {
+      "id": "9c0b1160-cfbc-4f84-a870-4fdfa3c2a124",
+      "content_id": "fe06c943-491f-49f0-9b32-7391a1f8921e",
+      "claim_id": "C62",
+      "claim": "UDP-Glc regulates immune responses and associates with asthma, kidney injury, and lung inflammation",
+      "claim_type": "EXPLICIT",
+      "source": "Particularly, UDP-Glc regulates immune responses and associate with asthma, kidney injury, and lung inflammation (Amison et al., 2017; Breton and Brown, 2018; Ferreira et al., 2017; M\u00fcller et al., 2005; Sesma et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:42.272697Z"
+    },
+    {
+      "id": "468dbb85-00f0-440a-be16-ea8b65cc86e0",
+      "content_id": "fe06c943-491f-49f0-9b32-7391a1f8921e",
+      "claim_id": "C63",
+      "claim": "UDP-Gal is present in various cell models including physiologically relevant primary cultures of human bronchial epithelial cells",
+      "claim_type": "EXPLICIT",
+      "source": "As an isomer of UDP-Glc, UDP-Gal is present in various cell models, including physiologically relevant primary cultures of human bronchial epithelial cells (Lazarowski, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:42.272697Z"
+    },
+    {
+      "id": "b11422bc-6bfc-4796-bf9f-9e940f5531b1",
+      "content_id": "fe06c943-491f-49f0-9b32-7391a1f8921e",
+      "claim_id": "C64",
+      "claim": "P2Y12 is the closest homolog to P2Y14",
+      "claim_type": "EXPLICIT",
+      "source": "As the closest homolog to P2Y14, P2Y purinoceptor 12 (P2Y12) has not been reported to be activated by any sugar nucleotide (Jacobson et al., 2020; Ralevic and Burnstock, 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:42.272697Z"
+    },
+    {
+      "id": "ccfcc244-44a8-41bd-8fe4-8acfa4c88862",
+      "content_id": "fe06c943-491f-49f0-9b32-7391a1f8921e",
+      "claim_id": "C65",
+      "claim": "P2Y12 has 45.67% amino acid sequence identity with P2Y14",
+      "claim_type": "EXPLICIT",
+      "source": "Since P2Y12 is highly similar to P2Y14 with 45.67% amino acid sequence identity, it would be interesting to investigate whether this receptor is also sensible to sugar nucleotides.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by sequence alignment analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:42.272697Z"
+    },
+    {
+      "id": "0dd1ce3b-3cdf-4152-be3a-456234c4db02",
+      "content_id": "fe06c943-491f-49f0-9b32-7391a1f8921e",
+      "claim_id": "C66",
+      "claim": "Carbohydrates play indispensable roles in energy supply, cell signaling, and immune responses",
+      "claim_type": "EXPLICIT",
+      "source": "As significant components of the organism, carbohydrates play indispensable roles in energy supply, cell signaling, and immune responses (Gagneux and Varki, 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:42.272697Z"
+    },
+    {
+      "id": "e612d051-f37b-4296-a739-30a5d0608f50",
+      "content_id": "fe06c943-491f-49f0-9b32-7391a1f8921e",
+      "claim_id": "C67",
+      "claim": "Dysregulation of carbohydrates has been proved to be associated with the development of various diseases",
+      "claim_type": "EXPLICIT",
+      "source": "Dysregulation of carbohydrates has been proved to be associated with the development of various diseases (Reily et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:42.272697Z"
+    },
+    {
+      "id": "1f9a71e6-5f6c-4535-8dca-f4cfdd5f53e5",
+      "content_id": "fe06c943-491f-49f0-9b32-7391a1f8921e",
+      "claim_id": "C68",
+      "claim": "P2Y14 plays an important role in immune responses and inflammation mediated by UDP-sugars",
+      "claim_type": "EXPLICIT",
+      "source": "Mediated by UDP-sugars, P2Y14 plays an important role in immune responses and inflammation (Arase et al., 2009; Barrett et al., 2013; Breton and Brown, 2018; Ferreira et al., 2017; M\u00fcller et al., 2005; Sesma et al., 2012; Sesma et al., 2016), and possibly insulin resistance (Wang et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:42.272697Z"
+    },
+    {
+      "id": "81159dc6-5423-4d3a-965e-e289a22c0e62",
+      "content_id": "fe06c943-491f-49f0-9b32-7391a1f8921e",
+      "claim_id": "C69",
+      "claim": "P2Y14 possibly plays a role in insulin resistance",
+      "claim_type": "EXPLICIT",
+      "source": "Mediated by UDP-sugars, P2Y14 plays an important role in immune responses and inflammation (Arase et al., 2009; Barrett et al., 2013; Breton and Brown, 2018; Ferreira et al., 2017; M\u00fcller et al., 2005; Sesma et al., 2012; Sesma et al., 2016), and possibly insulin resistance (Wang et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to previous literature with speculative language.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:42.272697Z"
+    },
+    {
+      "id": "7988b99b-bbcb-413d-9051-23950ae7d5eb",
+      "content_id": "fe06c943-491f-49f0-9b32-7391a1f8921e",
+      "claim_id": "C70",
+      "claim": "Kidney collecting duct intercalated cells present high levels of P2Y14",
+      "claim_type": "EXPLICIT",
+      "source": "Breton et al. found that kidney collecting duct intercalated cells present high levels of P2Y14, which is activated by UDP-Glc to promote neutrophil infiltration and renal inflammation (Breton and Brown, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:42.272697Z"
+    },
+    {
+      "id": "ddf5a269-96c7-4a78-8a77-c6ed7c684fba",
+      "content_id": "fe06c943-491f-49f0-9b32-7391a1f8921e",
+      "claim_id": "C71",
+      "claim": "P2Y14 is activated by UDP-Glc to promote neutrophil infiltration and renal inflammation",
+      "claim_type": "EXPLICIT",
+      "source": "Breton et al. found that kidney collecting duct intercalated cells present high levels of P2Y14, which is activated by UDP-Glc to promote neutrophil infiltration and renal inflammation (Breton and Brown, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:42.272697Z"
+    },
+    {
+      "id": "ed58bdfa-fa04-40d9-923b-0defd349b599",
+      "content_id": "fe06c943-491f-49f0-9b32-7391a1f8921e",
+      "claim_id": "C72",
+      "claim": "High concentration of UDP-sugars was observed in extracellular tissue surrounding airway epithelial cells and lung secretions of cystic fibrosis patients",
+      "claim_type": "EXPLICIT",
+      "source": "Exerting excessive P2Y14-mediated inflammatory reactions, high concentration of UDP-sugars was observed in extracellular tissue surrounding airway epithelial cells and lung secretions of cystic fibrosis patients (Ferreira et al., 2017; M\u00fcller et al., 2005; Sesma et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:42.272697Z"
+    },
+    {
+      "id": "21c7f3df-ae9d-40c6-b341-8cbe0cd7c23f",
+      "content_id": "fe06c943-491f-49f0-9b32-7391a1f8921e",
+      "claim_id": "C73",
+      "claim": "UDP-Glc is released from liver cells in obese states possibly via hepatocellular apoptosis leading to liver inflammation and insulin resistance",
+      "claim_type": "EXPLICIT",
+      "source": "UDP-Glc is also released from liver cells in obese states, possibly via hepatocellular apoptosis, leading to liver inflammation and insulin resistance (Wang et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to previous literature with speculative language about the mechanism.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:42.272697Z"
+    },
+    {
+      "id": "8a0c19ff-6d60-4152-886a-3de9e9673a29",
+      "content_id": "fe06c943-491f-49f0-9b32-7391a1f8921e",
+      "claim_id": "C74",
+      "claim": "The agonist-induced conformational changes of TM6 and TM7 are reported for P2Y12",
+      "claim_type": "EXPLICIT",
+      "source": "The agonist-induced remarkable conformational changes of TM6 and TM7 are also reported for P2Y12 (Zhang et al., 2014a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:42.272697Z"
+    },
+    {
+      "id": "7ad3b9db-0b2d-4b9e-9c0e-1979c7f6bbd2",
+      "content_id": "fe06c943-491f-49f0-9b32-7391a1f8921e",
+      "claim_id": "C75",
+      "claim": "In the 2MeSADP-bound P2Y12 structure, the extracellular part of TM6 shifts over 10 \u00c5 toward the center of TM helix bundle compared with the AZD1283-bound P2Y12 structure",
+      "claim_type": "EXPLICIT",
+      "source": "Compared with the AZD1283-bound (antagonist-bound) P2Y12 structure (Zhang et al., 2014b), the extracellular part of TM6 in the 2MeSADP-bound (agonist-bound) P2Y12 structure shifts over 10 \u00c5 and TM7 over 5 \u00c5 toward the center of TM helix bundle (Zhang et al., 2014a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to previous literature describing crystal structures.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:42.272697Z"
+    },
+    {
+      "id": "895760e7-9d54-4828-87f7-98f019899b30",
+      "content_id": "fe06c943-491f-49f0-9b32-7391a1f8921e",
+      "claim_id": "C76",
+      "claim": "In the 2MeSADP-bound P2Y12 structure, TM7 shifts over 5 \u00c5 toward the center of TM helix bundle compared with the AZD1283-bound P2Y12 structure",
+      "claim_type": "EXPLICIT",
+      "source": "Compared with the AZD1283-bound (antagonist-bound) P2Y12 structure (Zhang et al., 2014b), the extracellular part of TM6 in the 2MeSADP-bound (agonist-bound) P2Y12 structure shifts over 10 \u00c5 and TM7 over 5 \u00c5 toward the center of TM helix bundle (Zhang et al., 2014a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to previous literature describing crystal structures.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:42.272697Z"
+    },
+    {
+      "id": "996e5895-937e-4a38-9522-5f5ad48ae19b",
+      "content_id": "fe06c943-491f-49f0-9b32-7391a1f8921e",
+      "claim_id": "C77",
+      "claim": "The close parallel of P2Y12 and P2Y14 in agonist-induced conformational changes indicates a common ligand-induced activation mechanism shared by purinergic receptors",
+      "claim_type": "EXPLICIT",
+      "source": "The close parallel of P2Y12 and P2Y14 in the agonist-induced conformational changes indicates a common ligand-induced activation mechanism shared by purinergic receptors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from comparing conformational changes in both receptors.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:42.272697Z"
+    },
+    {
+      "id": "2c6f9383-4d20-4de2-9cea-8b7550798b1c",
+      "content_id": "fe06c943-491f-49f0-9b32-7391a1f8921e",
+      "claim_id": "C78",
+      "claim": "P2Y13 has the conserved KDKE site",
+      "claim_type": "EXPLICIT",
+      "source": "As another member of P2Y12-like subfamily, P2Y13 also has the conserved KDKE site (Figure 4\u2014figure supplement 3), suggesting it might be regulated by carbohydrates.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by sequence alignment analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:42.272697Z"
+    },
+    {
+      "id": "c345e7c6-a69e-4b51-a104-d9529187911d",
+      "content_id": "fe06c943-491f-49f0-9b32-7391a1f8921e",
+      "claim_id": "C79",
+      "claim": "P2Y13 might be regulated by carbohydrates",
+      "claim_type": "EXPLICIT",
+      "source": "As another member of P2Y12-like subfamily, P2Y13 also has the conserved KDKE site (Figure 4\u2014figure supplement 3), suggesting it might be regulated by carbohydrates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative, inferred from the presence of the conserved KDKE motif.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:42.272697Z"
+    },
+    {
+      "id": "29e229b5-cdb3-4396-988a-c3b18d84f224",
+      "content_id": "fe06c943-491f-49f0-9b32-7391a1f8921e",
+      "claim_id": "C80",
+      "claim": "GPR87 is a close homolog of P2Y14 with sequence identity of 44.94%",
+      "claim_type": "EXPLICIT",
+      "source": "GPR87 is a close homolog of P2Y14 with the sequence identity of 44.94%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by sequence alignment analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:42.272697Z"
+    },
+    {
+      "id": "23c5d1a2-90be-42ec-8060-647a76aeb068",
+      "content_id": "fe06c943-491f-49f0-9b32-7391a1f8921e",
+      "claim_id": "C81",
+      "claim": "GPR87 has K/R2.60, D2.64, K/E7.35, and E7.36 at the corresponding positions of the KDKE sugar-binding motif",
+      "claim_type": "EXPLICIT",
+      "source": "GPR87 has K/R2.60, D2.64, K/E7.35, and E7.36 at the corresponding positions of the KDKE sugar-binding motif, indicating varied carbohydrate sensitivities of this receptor in different species (Figure 4\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by sequence alignment analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:42.272697Z"
+    },
+    {
+      "id": "e36b8e77-bf6e-443e-b483-87623330f972",
+      "content_id": "fe06c943-491f-49f0-9b32-7391a1f8921e",
+      "claim_id": "C82",
+      "claim": "GPR87 shows varied carbohydrate sensitivities in different species",
+      "claim_type": "EXPLICIT",
+      "source": "GPR87 has K/R2.60, D2.64, K/E7.35, and E7.36 at the corresponding positions of the KDKE sugar-binding motif, indicating varied carbohydrate sensitivities of this receptor in different species (Figure 4\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the sequence variation at the KDKE motif positions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:42.272697Z"
+    },
+    {
+      "id": "4379539b-987e-47e3-b3ab-3099816ea2e4",
+      "content_id": "fe06c943-491f-49f0-9b32-7391a1f8921e",
+      "claim_id": "C83",
+      "claim": "Selective mono-fluorination of the 6' hydroxyl group of the glucose moiety results in fourfold less potency on P2Y14",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with our observations, a previous structure-activity relationship study revealed that selective mono-fluorination of the 6' hydroxyl group of the glucose moiety results to fourfold less potency on P2Y14 (Ko et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:42.272697Z"
+    },
+    {
+      "id": "5d644788-3cce-423c-ac7b-7f9e5019b827",
+      "content_id": "fe06c943-491f-49f0-9b32-7391a1f8921e",
+      "claim_id": "C84",
+      "claim": "UDP-sugar-binding sites consisting of charged residues have been discovered for sugar transferases",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to the KDKE motif of the receptors, the UDP-sugar-binding sites consisting of charged residues have been discovered for sugar transferases (Gerlach et al., 2018; Hao et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:42.272697Z"
+    },
+    {
+      "id": "42b5ba77-3c64-42ea-a8b1-702345abd52a",
+      "content_id": "fe06c943-491f-49f0-9b32-7391a1f8921e",
+      "claim_id": "C85",
+      "claim": "In typical glycosylation transfers as TarP and SseK3, two aspartic acids and one positively charged residue participate in recognition of 3' or 4' hydroxyl groups of GlcNAc or GalNAc moiety",
+      "claim_type": "EXPLICIT",
+      "source": "In typical glycosylation transfers as TarP and SseK3, two aspartic acids and one positively charged residue (arginine or lysine) participate in recognition of 3' or 4' hydroxyl groups of GlcNAc or GalNAc moiety (Gerlach et al., 2018; Hao et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:42.272697Z"
+    },
+    {
+      "id": "40fed67f-b8d5-4aee-bd9f-94a9d14e6254",
+      "content_id": "fe06c943-491f-49f0-9b32-7391a1f8921e",
+      "claim_id": "C86",
+      "claim": "A salt bridging chain has not been observed in sugar-binding sites of sugar transferases",
+      "claim_type": "EXPLICIT",
+      "source": "However, a salt bridging chain has not been observed in these sugar-binding sites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the absence of reports in the literature about sugar transferases.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:42.272697Z"
+    },
+    {
+      "id": "dd5e59ff-b98a-4cfc-858e-bcff969207b8",
+      "content_id": "fe06c943-491f-49f0-9b32-7391a1f8921e",
+      "claim_id": "C87",
+      "claim": "The different arrangements of UDP-sugar-binding sites between P2Y14 and sugar transferases might be determinant for their sugar selectivity",
+      "claim_type": "EXPLICIT",
+      "source": "The different arrangements of UDP-sugar-binding sites between P2Y14 and these sugar transferases might be determinant for their sugar selectivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative, inferred from comparing binding site architectures.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:42.272697Z"
+    },
+    {
+      "id": "237a0012-999e-4078-a120-2eea5a73b254",
+      "content_id": "fe06c943-491f-49f0-9b32-7391a1f8921e",
+      "claim_id": "C88",
+      "claim": "A conserved carbohydrate-binding motif exists in both P2Y12 and P2Y14",
+      "claim_type": "EXPLICIT",
+      "source": "In conclusion, we revealed a conserved carbohydrate-binding motif in both P2Y12 and P2Y14, extending our understanding of how carbohydrates regulate GPCRs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the combined computational and experimental evidence presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:42.272697Z"
+    },
+    {
+      "id": "fd4f551a-baa3-4e36-8c34-e0a90a382fa3",
+      "content_id": "fe06c943-491f-49f0-9b32-7391a1f8921e",
+      "claim_id": "C89",
+      "claim": "The molecular models of different sugar nucleotides provide details for carbohydrate activation and recognition of P2Y14 and P2Y12",
+      "claim_type": "EXPLICIT",
+      "source": "Our molecular models of different sugar nucleotides provide great details for carbohydrate activation and recognition of these receptors, which would inspire further carbohydrate drug development for GPCRs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the computational modeling and experimental validation presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:42.272697Z"
+    },
+    {
+      "id": "f832b6f9-1465-4df5-b45a-76522fb1d814",
+      "content_id": "fe06c943-491f-49f0-9b32-7391a1f8921e",
+      "claim_id": "C90",
+      "claim": "Whether other carbohydrate-binding motifs exist in GPCRs is currently unknown",
+      "claim_type": "EXPLICIT",
+      "source": "Whether the other carbohydrate-binding motifs exist in GPCRs is currently unknown.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim acknowledges the limits of current knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:42.272697Z"
+    },
+    {
+      "id": "02dbe41d-4c25-4b4f-803e-907956a60545",
+      "content_id": "fe06c943-491f-49f0-9b32-7391a1f8921e",
+      "claim_id": "C91",
+      "claim": "The crystal structures of P2Y12 show that 2MeSADP binds to an extracellular pocket consisting of transmembrane helices and extracellular loops",
+      "claim_type": "EXPLICIT",
+      "source": "The crystal structures of P2Y12 show that a full agonist 2-methylthio-adenosine-5'-diphosphate (2MeSADP, a close analogue of ADP) binds to an extracellular pocket consisting of transmembrane (TM) helices and extracellular loops (Zhang et al., 2014a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to previous literature describing crystal structures.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:42.272697Z"
+    },
+    {
+      "id": "5cba5dd5-a7fb-4111-a252-6b69554b763f",
+      "content_id": "fe06c943-491f-49f0-9b32-7391a1f8921e",
+      "claim_id": "C92",
+      "claim": "UDP-sugars act as important signaling molecules via P2Y14 to mediate many physiological processes",
+      "claim_type": "EXPLICIT",
+      "source": "These sugar nucleotides act as important signaling molecules via P2Y14 to mediate many physiological processes (Amison et al., 2017; Breton and Brown, 2018; Ferreira et al., 2017; Lazarowski, 2010; M\u00fcller et al., 2005; Sesma et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:42.272697Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "99f69922-28db-4b03-b593-88cd1e745ebf",
+      "content_id": "fe06c943-491f-49f0-9b32-7391a1f8921e",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "UDP and UDP-Glc activate P2Y14 with similar potencies (EC50 ~40-51 nM), but UDP-Glc shows increased potency at high concentrations, suggesting the sugar moiety contributes to receptor activation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C4 are supported by calcium mobilization assays with clear EC50 values and concentration-response curves (Figure 1A-C). The differential potency at high concentrations provides evidence for sugar moiety contribution, though the mechanistic interpretation (C4) is inferential but reasonable given the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:45:42.272697Z"
+    },
+    {
+      "id": "a5a69d1b-a830-4ee6-b1a0-9366cf0062fc",
+      "content_id": "fe06c943-491f-49f0-9b32-7391a1f8921e",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Molecular docking identifies an extracellular binding pocket for UDP and UDP-Glc in P2Y14, with five residues (K77, D81, N90, I170, E278) predicted to specifically stabilize UDP-Glc but not UDP binding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C5-C9 rely on computational docking to a homology model (not crystal structure). While docking scores suggest binding (C6-C7), the energy decomposition predictions (C8-C9) require experimental validation. The threshold for 'few energetic contributions' (>-0.25 REU) appears arbitrary and lacks justification.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:45:42.272697Z"
+    },
+    {
+      "id": "18be988d-2d08-4a63-90c0-05d65543a265",
+      "content_id": "fe06c943-491f-49f0-9b32-7391a1f8921e",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Mutagenesis experiments identify K77 and D81 on TM2 as critical for UDP-Glc recognition, with K77A showing differential effects on UDP-Glc versus UDP responses, while N90A and I170A mutations have no significant effect.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C16 are supported by systematic mutagenesis and functional assays (Figure 1H-I). The differential effect of K77A on UDP-Glc versus UDP (C12-C14) provides strong evidence for sugar-specific interactions. Statistical significance is indicated, though exact p-values and sample sizes should be verified in supplementary data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:45:42.272697Z"
+    },
+    {
+      "id": "71a87456-8b84-4e2d-a1c9-f8595521b2e8",
+      "content_id": "fe06c943-491f-49f0-9b32-7391a1f8921e",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "MD simulations reveal that UDP-Glc binding induces conformational changes in TM6 and TM7 (3-4 \u00c5 shifts), with specific interactions involving K277, E278, and R253 that stabilize a tight helical bundle. Mutagenesis of these residues reduces UDP-Glc potency.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C26 combine MD simulation data with experimental validation. The conformational changes (C17-C18) are quantified, specific interactions are identified (C19-C20, C23-C24), and mutations at predicted sites (C21-C22, C25) show expected functional effects. The 'glue' model (C26) is a reasonable interpretation of converging computational and experimental evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:45:42.272697Z"
+    },
+    {
+      "id": "f8013479-dd88-4ce3-b961-cbc7b971c546",
+      "content_id": "fe06c943-491f-49f0-9b32-7391a1f8921e",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Different UDP-sugars activate P2Y14 with distinct potencies: UDP-Glc (40.3 nM) > UDP-GlcA (59.9 nM) > UDP-Gal (78.3 nM) > UDP-GlcNAc (184.4 nM).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C30 present clear EC50 values from calcium mobilization assays with error estimates (Figure 3A-B). The rank order of potencies is well-established and provides the basis for subsequent mechanistic studies. Statistical comparisons would strengthen the claims.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:45:42.272697Z"
+    },
+    {
+      "id": "f4ade7bb-5959-4590-bd85-0e543d0209db",
+      "content_id": "fe06c943-491f-49f0-9b32-7391a1f8921e",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "A conserved K77-D81-K277-E278 (KDKE) salt bridge chain serves as a sugar-binding site in P2Y14, with different UDP-sugars showing distinct binding modes. E278 interactions with TM7 correlate with ligand potency.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C44 integrate MD simulations showing the KDKE salt bridge across all UDP-sugar systems (C31-C33) with sugar-specific binding modes (C34-C41) and mutagenesis validation (C35, C38, C41). The correlation between TM7 interactions and potency (C44) is supported by the differential effects of E278A mutation on different ligands.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:45:42.272697Z"
+    },
+    {
+      "id": "74083640-ed6e-4879-9b30-ae737fc92d0f",
+      "content_id": "fe06c943-491f-49f0-9b32-7391a1f8921e",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The KDKE motif is conserved between P2Y14 and P2Y12. Three novel ADP-sugar compounds (ADP-Glc, ADP-GlcA, ADP-Man) activate P2Y12 with micromolar potencies, and mutations in the KDKE motif reduce their activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C55 demonstrate conservation of the KDKE motif (C45), predict binding of ADP-sugars (C48-C50), experimentally validate their activity (C51-C53), and show that KDKE mutations reduce responses (C54). This extends the sugar-binding mechanism to P2Y12, though the ~100-fold lower potency compared to P2Y14 suggests additional determinants of selectivity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:45:42.272697Z"
+    },
+    {
+      "id": "70b20dc9-78a4-43c0-99ed-58c83359244b",
+      "content_id": "fe06c943-491f-49f0-9b32-7391a1f8921e",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "F277 in P2Y12 (adjacent to KDKE motif) contributes to ADP-Glc responses, while the corresponding position in P2Y14 does not affect UDP-Glc activation, indicating receptor-specific differences.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C58 identify a receptor-specific residue through sequence analysis (C56) and differential mutagenesis effects (C57-C58). This explains some of the potency differences between P2Y12 and P2Y14 for sugar nucleotides.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:45:42.272697Z"
+    },
+    {
+      "id": "45b7298d-4baf-45cd-98c4-be6f645ad53d",
+      "content_id": "fe06c943-491f-49f0-9b32-7391a1f8921e",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Background claims establishing P2Y14 as a UDP-sugar receptor involved in immune responses and inflammation, P2Y12 as its closest homolog, and the biological importance of carbohydrate signaling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C73 are literature-based background claims supported by appropriate citations. These establish context but do not represent novel findings from this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:45:42.272697Z"
+    },
+    {
+      "id": "d60544cb-9843-47fb-b541-1269fbcebe5f",
+      "content_id": "fe06c943-491f-49f0-9b32-7391a1f8921e",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Comparison with P2Y12 crystal structures shows similar agonist-induced conformational changes in TM6 and TM7, suggesting a common activation mechanism for purinergic receptors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C74-C77 compare the observed P2Y14 conformational changes with published P2Y12 structures. The parallel is well-supported by citations (C74-C76), and the inference of a common mechanism (C77) is reasonable given the structural and functional similarities.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:45:42.272697Z"
+    },
+    {
+      "id": "12158e01-6344-49f6-811a-baeaa523eecd",
+      "content_id": "fe06c943-491f-49f0-9b32-7391a1f8921e",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Sequence analysis suggests P2Y13 and GPR87 may also be regulated by carbohydrates based on conservation of the KDKE motif or similar residues at corresponding positions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C78-C82 are speculative predictions based solely on sequence conservation without experimental validation. While the hypothesis is reasonable, it remains untested and should be clearly marked as speculation requiring future work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:45:42.272697Z"
+    },
+    {
+      "id": "82b6edc1-ee61-422e-aa9f-0669fbd08790",
+      "content_id": "fe06c943-491f-49f0-9b32-7391a1f8921e",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Comparison with sugar transferases shows that while both use charged residues for UDP-sugar binding, the KDKE salt bridge chain is unique to P2Y receptors and may determine sugar selectivity differences.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C83-C87 compare the P2Y14 binding site with literature on sugar transferases. The comparison is supported by citations (C83-C85), the distinction regarding salt bridge chains (C86) is accurate, and the speculation about selectivity determinants (C87) is reasonable though untested.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:45:42.272697Z"
+    },
+    {
+      "id": "29790d67-f011-476f-af1d-b9f996feee60",
+      "content_id": "fe06c943-491f-49f0-9b32-7391a1f8921e",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Concluding claims that a conserved carbohydrate-binding motif exists in P2Y12 and P2Y14, the models provide insights for drug development, and whether other GPCR carbohydrate-binding motifs exist remains unknown.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C88-C90 appropriately summarize the main findings (C88-C89) and acknowledge limitations of current knowledge (C90). These are supported by the totality of evidence presented in the manuscript.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:45:42.272697Z"
+    },
+    {
+      "id": "b3588d27-e44c-428f-a864-ce83e13522f6",
+      "content_id": "fe06c943-491f-49f0-9b32-7391a1f8921e",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Additional background claims about P2Y12 crystal structures and UDP-sugar signaling through P2Y14.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C91-C92 are literature-based background supported by citations, providing context for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:45:42.272697Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "28efb8a9-ed37-4cad-bc72-fbf36d65fd68",
+      "result_id": "99f69922-28db-4b03-b593-88cd1e745ebf"
+    },
+    {
+      "claim_id": "5c072285-4a73-4d32-9419-7b8a2a2eeeb6",
+      "result_id": "99f69922-28db-4b03-b593-88cd1e745ebf"
+    },
+    {
+      "claim_id": "f39a3b2f-23fe-49d8-a70f-dc78593e0cc8",
+      "result_id": "99f69922-28db-4b03-b593-88cd1e745ebf"
+    },
+    {
+      "claim_id": "c7d992de-afdf-46c7-a933-32ca2ffd3341",
+      "result_id": "99f69922-28db-4b03-b593-88cd1e745ebf"
+    },
+    {
+      "claim_id": "e41c4765-f532-4045-a15b-b7f077a1817b",
+      "result_id": "a5a69d1b-a830-4ee6-b1a0-9366cf0062fc"
+    },
+    {
+      "claim_id": "a67f42a3-9de4-4b7b-a896-c1108e76809a",
+      "result_id": "a5a69d1b-a830-4ee6-b1a0-9366cf0062fc"
+    },
+    {
+      "claim_id": "d2764bd6-c0df-4cc9-8f46-af436d454905",
+      "result_id": "a5a69d1b-a830-4ee6-b1a0-9366cf0062fc"
+    },
+    {
+      "claim_id": "49c22965-e491-4c39-a128-c686d5d8c02f",
+      "result_id": "a5a69d1b-a830-4ee6-b1a0-9366cf0062fc"
+    },
+    {
+      "claim_id": "9c201568-9faa-4607-bb7f-cafea348c79f",
+      "result_id": "a5a69d1b-a830-4ee6-b1a0-9366cf0062fc"
+    },
+    {
+      "claim_id": "b8984ac3-ad97-46c8-823f-711f64f3ac63",
+      "result_id": "18be988d-2d08-4a63-90c0-05d65543a265"
+    },
+    {
+      "claim_id": "e9dad327-a0f5-45d7-a551-bc019a8ef422",
+      "result_id": "18be988d-2d08-4a63-90c0-05d65543a265"
+    },
+    {
+      "claim_id": "70f7675c-5e73-4ec6-b5bd-411c3088f69b",
+      "result_id": "18be988d-2d08-4a63-90c0-05d65543a265"
+    },
+    {
+      "claim_id": "255d0857-ef9a-46f9-99cb-f2e33bc59e59",
+      "result_id": "18be988d-2d08-4a63-90c0-05d65543a265"
+    },
+    {
+      "claim_id": "164ded1d-6660-48fa-8cae-346848aeae9a",
+      "result_id": "18be988d-2d08-4a63-90c0-05d65543a265"
+    },
+    {
+      "claim_id": "d95ea90d-988e-4824-835e-9fda0cf82355",
+      "result_id": "18be988d-2d08-4a63-90c0-05d65543a265"
+    },
+    {
+      "claim_id": "d1ea9fa9-5399-40db-8218-48828941b21d",
+      "result_id": "18be988d-2d08-4a63-90c0-05d65543a265"
+    },
+    {
+      "claim_id": "aece8c0a-59cb-44b0-b8a0-06ff6878e120",
+      "result_id": "71a87456-8b84-4e2d-a1c9-f8595521b2e8"
+    },
+    {
+      "claim_id": "b4c0dbba-bd7c-4e08-9136-c44581534697",
+      "result_id": "71a87456-8b84-4e2d-a1c9-f8595521b2e8"
+    },
+    {
+      "claim_id": "26f11b62-f72d-422c-a418-04afcc11c98a",
+      "result_id": "71a87456-8b84-4e2d-a1c9-f8595521b2e8"
+    },
+    {
+      "claim_id": "1dbcd2b1-5be7-43fd-8e09-97116fae9461",
+      "result_id": "71a87456-8b84-4e2d-a1c9-f8595521b2e8"
+    },
+    {
+      "claim_id": "e0d4a4f2-74f2-4b8d-a7df-5ba35cd4e999",
+      "result_id": "71a87456-8b84-4e2d-a1c9-f8595521b2e8"
+    },
+    {
+      "claim_id": "6e08f1db-c61d-441c-9540-60665f54cbf0",
+      "result_id": "71a87456-8b84-4e2d-a1c9-f8595521b2e8"
+    },
+    {
+      "claim_id": "10ee7e3c-3eb9-4e83-892b-5657a149b79a",
+      "result_id": "71a87456-8b84-4e2d-a1c9-f8595521b2e8"
+    },
+    {
+      "claim_id": "59bf82d6-562c-4fba-b784-59ea14b96b31",
+      "result_id": "71a87456-8b84-4e2d-a1c9-f8595521b2e8"
+    },
+    {
+      "claim_id": "fed8b0c9-f077-44a7-8227-f87e02126481",
+      "result_id": "71a87456-8b84-4e2d-a1c9-f8595521b2e8"
+    },
+    {
+      "claim_id": "366dddc9-0fc1-42e4-be6e-15774b168086",
+      "result_id": "71a87456-8b84-4e2d-a1c9-f8595521b2e8"
+    },
+    {
+      "claim_id": "b84f9c70-2a16-402b-b8c0-483f49995056",
+      "result_id": "f8013479-dd88-4ce3-b961-cbc7b971c546"
+    },
+    {
+      "claim_id": "354ec950-523f-4bd3-91a8-a68785d90ed1",
+      "result_id": "f8013479-dd88-4ce3-b961-cbc7b971c546"
+    },
+    {
+      "claim_id": "2717e16e-6e09-497e-8e3b-f32bd456cade",
+      "result_id": "f8013479-dd88-4ce3-b961-cbc7b971c546"
+    },
+    {
+      "claim_id": "749c0b8f-fc3f-4b55-8cc5-d2ef65df64f6",
+      "result_id": "f8013479-dd88-4ce3-b961-cbc7b971c546"
+    },
+    {
+      "claim_id": "11015f03-9e20-4b27-9063-a9e210b55bc4",
+      "result_id": "f4ade7bb-5959-4590-bd85-0e543d0209db"
+    },
+    {
+      "claim_id": "17b5ae73-d51d-42e7-a009-144f09c5bb77",
+      "result_id": "f4ade7bb-5959-4590-bd85-0e543d0209db"
+    },
+    {
+      "claim_id": "2d3cfe8c-cf57-4278-99ed-97ed960877e2",
+      "result_id": "f4ade7bb-5959-4590-bd85-0e543d0209db"
+    },
+    {
+      "claim_id": "cf36106e-32e2-4919-82c4-c23c1d75aa7d",
+      "result_id": "f4ade7bb-5959-4590-bd85-0e543d0209db"
+    },
+    {
+      "claim_id": "33c7ead5-d01f-49c8-bcf0-e2e4c1d6527d",
+      "result_id": "f4ade7bb-5959-4590-bd85-0e543d0209db"
+    },
+    {
+      "claim_id": "ee77fd33-01b3-4cf1-b095-9fb8d7c18c57",
+      "result_id": "f4ade7bb-5959-4590-bd85-0e543d0209db"
+    },
+    {
+      "claim_id": "66a91b23-26b5-4452-b84d-c77fb4521346",
+      "result_id": "f4ade7bb-5959-4590-bd85-0e543d0209db"
+    },
+    {
+      "claim_id": "5f4722c0-dae2-4c0f-8c8c-dbbb011b9065",
+      "result_id": "f4ade7bb-5959-4590-bd85-0e543d0209db"
+    },
+    {
+      "claim_id": "f6c1ce5a-635f-48a1-a367-ab664ff46da1",
+      "result_id": "f4ade7bb-5959-4590-bd85-0e543d0209db"
+    },
+    {
+      "claim_id": "5dcb995a-af68-4d45-a7b9-4a8f2de0371b",
+      "result_id": "f4ade7bb-5959-4590-bd85-0e543d0209db"
+    },
+    {
+      "claim_id": "ce1959c2-c468-4108-9900-3f63fbb51aa3",
+      "result_id": "f4ade7bb-5959-4590-bd85-0e543d0209db"
+    },
+    {
+      "claim_id": "70ce749f-940d-4848-99c4-3fba3e78b2c3",
+      "result_id": "f4ade7bb-5959-4590-bd85-0e543d0209db"
+    },
+    {
+      "claim_id": "f91abece-9d68-4042-b24a-e19b256ee34d",
+      "result_id": "f4ade7bb-5959-4590-bd85-0e543d0209db"
+    },
+    {
+      "claim_id": "965a5356-6457-4b19-823e-060be52a6a06",
+      "result_id": "f4ade7bb-5959-4590-bd85-0e543d0209db"
+    },
+    {
+      "claim_id": "715ea966-cc90-4978-96fb-df13848e37bf",
+      "result_id": "74083640-ed6e-4879-9b30-ae737fc92d0f"
+    },
+    {
+      "claim_id": "aac89f3b-a39a-46ec-8d02-18c0e7a96a2a",
+      "result_id": "74083640-ed6e-4879-9b30-ae737fc92d0f"
+    },
+    {
+      "claim_id": "dd289d4b-c488-4e47-84ab-031e88a8a391",
+      "result_id": "74083640-ed6e-4879-9b30-ae737fc92d0f"
+    },
+    {
+      "claim_id": "8f87f80e-980c-4151-950b-e7a77f6255f7",
+      "result_id": "74083640-ed6e-4879-9b30-ae737fc92d0f"
+    },
+    {
+      "claim_id": "5a9d0845-6d32-45f5-ac66-b8ef77214284",
+      "result_id": "74083640-ed6e-4879-9b30-ae737fc92d0f"
+    },
+    {
+      "claim_id": "a474ddf5-f87f-4451-a4c9-b33f10bd98f9",
+      "result_id": "74083640-ed6e-4879-9b30-ae737fc92d0f"
+    },
+    {
+      "claim_id": "a84d008d-06a7-4e88-80af-1e021d9bba01",
+      "result_id": "74083640-ed6e-4879-9b30-ae737fc92d0f"
+    },
+    {
+      "claim_id": "5550195b-cf1f-4e1c-a760-11523c496d01",
+      "result_id": "74083640-ed6e-4879-9b30-ae737fc92d0f"
+    },
+    {
+      "claim_id": "7aaa51e5-8bc0-41b5-b2c1-4277fc32ad2d",
+      "result_id": "74083640-ed6e-4879-9b30-ae737fc92d0f"
+    },
+    {
+      "claim_id": "853fba39-a20f-422d-9c7c-f70ce8a4d42e",
+      "result_id": "74083640-ed6e-4879-9b30-ae737fc92d0f"
+    },
+    {
+      "claim_id": "c40855f4-3267-4c9b-9ccd-323b36e6f367",
+      "result_id": "74083640-ed6e-4879-9b30-ae737fc92d0f"
+    },
+    {
+      "claim_id": "1b02aacc-c3c4-4e18-aae6-283480be9b2a",
+      "result_id": "70b20dc9-78a4-43c0-99ed-58c83359244b"
+    },
+    {
+      "claim_id": "54dda1e6-cbb1-406d-abe7-135e70383abc",
+      "result_id": "70b20dc9-78a4-43c0-99ed-58c83359244b"
+    },
+    {
+      "claim_id": "dfc8b44e-9410-4b85-a8aa-7ec026261c3f",
+      "result_id": "70b20dc9-78a4-43c0-99ed-58c83359244b"
+    },
+    {
+      "claim_id": "8155de87-7a10-4717-be38-7792ffefae1a",
+      "result_id": "45b7298d-4baf-45cd-98c4-be6f645ad53d"
+    },
+    {
+      "claim_id": "08a92e9f-3acf-4127-bf98-7a283ed238ea",
+      "result_id": "45b7298d-4baf-45cd-98c4-be6f645ad53d"
+    },
+    {
+      "claim_id": "95bada78-4509-404f-8799-ee27db7baab4",
+      "result_id": "45b7298d-4baf-45cd-98c4-be6f645ad53d"
+    },
+    {
+      "claim_id": "9c0b1160-cfbc-4f84-a870-4fdfa3c2a124",
+      "result_id": "45b7298d-4baf-45cd-98c4-be6f645ad53d"
+    },
+    {
+      "claim_id": "468dbb85-00f0-440a-be16-ea8b65cc86e0",
+      "result_id": "45b7298d-4baf-45cd-98c4-be6f645ad53d"
+    },
+    {
+      "claim_id": "b11422bc-6bfc-4796-bf9f-9e940f5531b1",
+      "result_id": "45b7298d-4baf-45cd-98c4-be6f645ad53d"
+    },
+    {
+      "claim_id": "ccfcc244-44a8-41bd-8fe4-8acfa4c88862",
+      "result_id": "45b7298d-4baf-45cd-98c4-be6f645ad53d"
+    },
+    {
+      "claim_id": "0dd1ce3b-3cdf-4152-be3a-456234c4db02",
+      "result_id": "45b7298d-4baf-45cd-98c4-be6f645ad53d"
+    },
+    {
+      "claim_id": "e612d051-f37b-4296-a739-30a5d0608f50",
+      "result_id": "45b7298d-4baf-45cd-98c4-be6f645ad53d"
+    },
+    {
+      "claim_id": "1f9a71e6-5f6c-4535-8dca-f4cfdd5f53e5",
+      "result_id": "45b7298d-4baf-45cd-98c4-be6f645ad53d"
+    },
+    {
+      "claim_id": "81159dc6-5423-4d3a-965e-e289a22c0e62",
+      "result_id": "45b7298d-4baf-45cd-98c4-be6f645ad53d"
+    },
+    {
+      "claim_id": "7988b99b-bbcb-413d-9051-23950ae7d5eb",
+      "result_id": "45b7298d-4baf-45cd-98c4-be6f645ad53d"
+    },
+    {
+      "claim_id": "ddf5a269-96c7-4a78-8a77-c6ed7c684fba",
+      "result_id": "45b7298d-4baf-45cd-98c4-be6f645ad53d"
+    },
+    {
+      "claim_id": "ed58bdfa-fa04-40d9-923b-0defd349b599",
+      "result_id": "45b7298d-4baf-45cd-98c4-be6f645ad53d"
+    },
+    {
+      "claim_id": "21c7f3df-ae9d-40c6-b341-8cbe0cd7c23f",
+      "result_id": "45b7298d-4baf-45cd-98c4-be6f645ad53d"
+    },
+    {
+      "claim_id": "8a0c19ff-6d60-4152-886a-3de9e9673a29",
+      "result_id": "d60544cb-9843-47fb-b541-1269fbcebe5f"
+    },
+    {
+      "claim_id": "7ad3b9db-0b2d-4b9e-9c0e-1979c7f6bbd2",
+      "result_id": "d60544cb-9843-47fb-b541-1269fbcebe5f"
+    },
+    {
+      "claim_id": "895760e7-9d54-4828-87f7-98f019899b30",
+      "result_id": "d60544cb-9843-47fb-b541-1269fbcebe5f"
+    },
+    {
+      "claim_id": "996e5895-937e-4a38-9522-5f5ad48ae19b",
+      "result_id": "d60544cb-9843-47fb-b541-1269fbcebe5f"
+    },
+    {
+      "claim_id": "2c6f9383-4d20-4de2-9cea-8b7550798b1c",
+      "result_id": "12158e01-6344-49f6-811a-baeaa523eecd"
+    },
+    {
+      "claim_id": "c345e7c6-a69e-4b51-a104-d9529187911d",
+      "result_id": "12158e01-6344-49f6-811a-baeaa523eecd"
+    },
+    {
+      "claim_id": "29e229b5-cdb3-4396-988a-c3b18d84f224",
+      "result_id": "12158e01-6344-49f6-811a-baeaa523eecd"
+    },
+    {
+      "claim_id": "23c5d1a2-90be-42ec-8060-647a76aeb068",
+      "result_id": "12158e01-6344-49f6-811a-baeaa523eecd"
+    },
+    {
+      "claim_id": "e36b8e77-bf6e-443e-b483-87623330f972",
+      "result_id": "12158e01-6344-49f6-811a-baeaa523eecd"
+    },
+    {
+      "claim_id": "4379539b-987e-47e3-b3ab-3099816ea2e4",
+      "result_id": "82b6edc1-ee61-422e-aa9f-0669fbd08790"
+    },
+    {
+      "claim_id": "5d644788-3cce-423c-ac7b-7f9e5019b827",
+      "result_id": "82b6edc1-ee61-422e-aa9f-0669fbd08790"
+    },
+    {
+      "claim_id": "42b5ba77-3c64-42ea-a8b1-702345abd52a",
+      "result_id": "82b6edc1-ee61-422e-aa9f-0669fbd08790"
+    },
+    {
+      "claim_id": "40fed67f-b8d5-4aee-bd9f-94a9d14e6254",
+      "result_id": "82b6edc1-ee61-422e-aa9f-0669fbd08790"
+    },
+    {
+      "claim_id": "dd5e59ff-b98a-4cfc-858e-bcff969207b8",
+      "result_id": "82b6edc1-ee61-422e-aa9f-0669fbd08790"
+    },
+    {
+      "claim_id": "237a0012-999e-4078-a120-2eea5a73b254",
+      "result_id": "29790d67-f011-476f-af1d-b9f996feee60"
+    },
+    {
+      "claim_id": "fd4f551a-baa3-4e36-8c34-e0a90a382fa3",
+      "result_id": "29790d67-f011-476f-af1d-b9f996feee60"
+    },
+    {
+      "claim_id": "f832b6f9-1465-4df5-b45a-76522fb1d814",
+      "result_id": "29790d67-f011-476f-af1d-b9f996feee60"
+    },
+    {
+      "claim_id": "02dbe41d-4c25-4b4f-803e-907956a60545",
+      "result_id": "b3588d27-e44c-428f-a864-ce83e13522f6"
+    },
+    {
+      "claim_id": "5cba5dd5-a7fb-4111-a252-6b69554b763f",
+      "result_id": "b3588d27-e44c-428f-a864-ce83e13522f6"
+    }
+  ],
+  "comparisons": []
+}

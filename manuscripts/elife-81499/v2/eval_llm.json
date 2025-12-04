@@ -1,0 +1,318 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C46",
+      "C47",
+      "C48",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C181",
+      "C182",
+      "C183",
+      "C184",
+      "C185",
+      "C188",
+      "C189",
+      "C190",
+      "C191",
+      "C192",
+      "C193",
+      "C194",
+      "C195"
+    ],
+    "result": "The authors generated a large synthetic dataset of 200,000 human arm trajectories tracing 20 Latin alphabet characters in 3D space. The dataset was created by augmenting pen-tip trajectories through scaling, rotation, shearing, translation, and speed variation, then computing joint angles via inverse kinematics and muscle activities using an OpenSim musculoskeletal model with 25 muscles. Proprioceptive inputs were approximated as muscle length and velocity signals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The dataset generation methodology is thoroughly described with clear steps from pen-tip trajectories to proprioceptive inputs (C5-C7, C46-C67). The use of established models (OpenSim, spindle models) and systematic data augmentation with quality control (smoothness criteria) provides a solid foundation. The final dataset characteristics are well-specified (C66, C194-C195).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C31",
+      "C35",
+      "C36",
+      "C37",
+      "C49",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C84",
+      "C85"
+    ],
+    "result": "Three types of neural network architectures (spatial-temporal, spatiotemporal, and LSTM) were trained on two contrasting tasks: trajectory decoding (TDT) to decode end-effector position/velocity, and action recognition (ART) to classify characters. The tasks represent different invariance requirements: TDT enforces invariance to 'what' is done, while ART enforces invariance to 'where' it is done.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The experimental design is clearly described with well-motivated task contrasts (C8-C9, C35-C36). The architecture search methodology is systematic (C81, C84-C85), and the different network types provide appropriate architectural diversity for testing the hypothesis (C77-C80). The task definitions align with the stated goals.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C10",
+      "C50",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Neural networks successfully solved both tasks with high performance: ART models achieved 97.93-99.56% accuracy and TDT models achieved 0.05-0.22 cm decoding error, substantially better than linear baselines. Network depth was the most influential hyperparameter, and performance on the two tasks was correlated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The performance metrics are clearly reported with appropriate baselines for comparison (C10, C50, C94). The hyperparameter analysis provides insight into model design (C95), and the correlation between tasks is an interesting finding (C96). However, statistical significance testing across model instantiations could strengthen these claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Character recognition from proprioceptive inputs is challenging because end-effector position exists only as distributed muscle activity patterns and the same character produces different proprioceptive inputs in different arm configurations. Multi-class SVM performance was poor (poor separability), while linear regression could decode position with 1.72 cm error.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The difficulty of the task is well-demonstrated through multiple analyses: t-SNE visualization (C70), SVM classification (C71, C73-C74), and comparison with position decoding (C75). The reasoning about distributed representations and configuration dependence (C68-C69) is supported by the empirical results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Training substantially changed network representations, with trained models diverging from untrained models in middle-to-final layers. Task type also affected representations: ART models progressively disentangled characters across the hierarchy (similarity to Oracle RDM increased in final layers), while TDT models maintained entangled character representations but could decode position throughout the hierarchy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The representational analysis using CKA, t-SNE, and RDMs provides converging evidence for task-dependent representations (C99-C107). The Oracle RDM analysis quantifies the progressive disentanglement in ART models (C104), and the contrast with TDT models is clear. The methods are appropriate for characterizing representational geometry.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C51",
+      "C108",
+      "C113",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "ART-trained models, but not TDT-trained models, exhibited uniformly distributed directional selective units in intermediate layers, similar to neurons in primate somatosensory cortex. ART models showed strong directional and speed tuning, while TDT models showed positional tuning. Character identity was represented in a distributed manner in ART models, not by single-character-specific units.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The single-unit tuning analysis is comprehensive, examining multiple kinematic variables (C108, C113). The key finding of directional selectivity in ART but not TDT models is consistent across architectures (C122) and supported by statistical tests. The comparison to biological neurons (C11) is appropriate, though direct quantitative comparison metrics would strengthen this claim. The distributed coding finding (C116-C117) is well-supported by SVM analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "Population decoding analysis revealed that direction and speed are better decoded from ART-trained than TDT-trained models, while position is better decoded from TDT-trained models. Remarkably, directional selectivity was similar in ART-trained and untrained models, but ART training reduced positional tuning while TDT training increased it (and decreased directional tuning).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The population decoding results (C123-C124) complement the single-unit findings and are consistent across architectures. The comparison with untrained models (C125-C130) is particularly insightful, revealing that directional selectivity emerges from architecture rather than task training, while task training modulates the balance between directional and positional coding. This is a key mechanistic insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C131",
+      "C133",
+      "C134",
+      "C135",
+      "C141"
+    ],
+    "result": "As a control, models trained to decode both position and velocity (TDT-PV) also unlearned directional selectivity similar to position-only TDT models, were tuned more strongly for position and less for direction than ART models, and had non-uniform preferred direction distributions similar to untrained models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The TDT-PV control experiment addresses the important question of whether velocity prediction would induce directional tuning (C131, C133-C135). The results clearly show that even with velocity in the training objective, TDT-type models do not develop the uniform directional selectivity seen in ART models (C141), strengthening the main hypothesis about action recognition driving this property.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C136",
+      "C137",
+      "C138",
+      "C140",
+      "C142",
+      "C160",
+      "C161",
+      "C162",
+      "C163"
+    ],
+    "result": "The distribution of preferred directions became more uniform across the processing hierarchy in ART-trained models, similar to primate S1, while remaining non-uniform in untrained and TDT models. Spindle afferents showed biased distributions along major axes. The models predict that in brainstem (cuneate nucleus), preferred directions should be aligned along major axes inherited from spindles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The uniformity analysis provides quantitative comparison to biological data (C136-C138, C160) with statistical testing showing significant differences between trained and untrained models. The prediction about brainstem (C162-C163) is a testable hypothesis that follows logically from the model results. The comparison to prior experimental work (Prud'homme and Kalaska, 1994) is appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C143",
+      "C144",
+      "C145",
+      "C165"
+    ],
+    "result": "Training on the action recognition task made directional tuning more invariant across different workspaces (vertical and horizontal planes). For the spatial-temporal model, layers 3-6 showed significantly greater invariance in preferred directions across vertical workspaces compared to untrained models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The invariance analysis addresses an important property of robust representations (C164-C165). The statistical testing shows significant differences for specific layers (C145), though the pattern differs somewhat between horizontal and vertical planes. The analysis appropriately accounts for the multiple workspaces in the dataset (C143-C144).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C13",
+      "C32",
+      "C33",
+      "C34",
+      "C149",
+      "C169"
+    ],
+    "result": "The study demonstrates that proprioceptive encoding is associated with higher-level functions such as action recognition, not just canonical posture representation. This provides experimentally testable hypotheses about how proprioception aids adaptive motor control through action segmentation, which could directly drive action maps in motor cortex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is the main conclusion of the study, supported by the convergent findings about directional selectivity, uniformity, and invariance in ART-trained models (C13, C169). The hypothesis about action segmentation (C33-C34) is well-motivated and the study provides computational support. However, this remains a hypothesis requiring experimental validation in biological systems.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C4",
+      "C52",
+      "C148",
+      "C150",
+      "C151",
+      "C152"
+    ],
+    "result": "The study presents a task-driven modeling framework for studying proprioception by combining human movement data, biomechanical modeling, and deep learning. The passive character recognition task was chosen because it is ecologically relevant, covers natural arm movements, and likely involves fast feed-forward processing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The framework is well-described and represents a significant methodological contribution (C52, C148). The task choice is justified (C150-C152), though the justifications are somewhat speculative (e.g., 'likely fast'). The approach successfully addresses the challenge of limited proprioceptive datasets (C45).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C174",
+      "C175",
+      "C176",
+      "C177"
+    ],
+    "result": "The study uses an open-loop model without motor control, which is justified as important for isolating proprioception and establishing a baseline for future comparisons. The supervised training can be interpreted as feedback from other sensory modalities (vision) or the motor system during voluntary movement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The limitation of open-loop modeling is acknowledged (C53) with reasonable justification (C55). The interpretation of supervised feedback as multimodal integration (C175-C177) is plausible but speculative. This is an appropriate simplification for a first study, though closed-loop models would be valuable future work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159"
+    ],
+    "result": "The study confirms prior work showing that ART-trained models contain uniformly distributed directional selective neurons in intermediate layers. However, these results do not hold for TDT-trained models, where directionally tuned neurons are 'unlearned' compared to untrained models. The predicted biased distribution in early layers was experimentally validated in cuneate nucleus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The confirmation of prior predictions (C155, C157) with different receptor models strengthens the findings. The contrast with TDT models (C158-C159) is a novel contribution. The experimental validation by Versteeg et al. (2021) provides important support for the modeling predictions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C146",
+      "C147",
+      "C178",
+      "C179",
+      "C180"
+    ],
+    "result": "Recording proprioceptive activity during natural movements is technically challenging, and presenting proprioceptive-only stimuli is difficult. The study acknowledges that multiple receptor types (cutaneous, joint, muscle) contribute to proprioception, and that receptor activity can be modulated by other modalities through fusimotor drive.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims appropriately contextualize the study's limitations and the broader complexity of proprioception (C146-C147, C178-C180). The citations support these statements about experimental challenges and biological complexity. These are important caveats for interpreting the simplified model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C167",
+      "C168",
+      "C171",
+      "C172",
+      "C173"
+    ],
+    "result": "The predictions depend on the musculoskeletal model and movement statistics, and may differ across species (e.g., mice vs. primates). The ART task likely captures aspects of higher-order processing but is not exhaustive, and proprioception likely multiplexes multiple goals including posture representation and action recognition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are appropriate caveats about the generalizability and scope of the findings (C167-C168, C171-C172). The acknowledgment that the task is not exhaustive (C171) and that proprioception likely serves multiple functions (C172) shows appropriate scientific caution. The species prediction (C168) is a testable hypothesis.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,304 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Seroprevalence data from England in 2006, 2011, and 2017 show age-stratified patterns consistent with maternal antibody decline in infants and increasing seropositivity with age. Seroprevalence was generally lower in 2006 compared to later years, and varied substantially depending on the seropositivity cut-off used (1:16 vs 1:64).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C41 describe observed seroprevalence patterns across three time points and different age groups. The data are directly measured from serum samples (C28) and show consistent patterns including maternal antibody decline (C30, C35-C41) and age-related increases (C29). The differences between 2006 and later years (C33) and between cut-offs (C31-C32, C40-C41) are clearly documented in the figures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "A catalytic model with time-varying force of infection (Model 2, random walk) provided better fit to the seroprevalence data than a constant force of infection model (Model 1), based on LOO information criterion. Model 2 estimated an increase in transmission over the study period for both seropositivity cut-offs, though the temporal patterns differed between cut-offs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C47 describe model selection and parameter estimation results. Model comparison using LOO criterion (C42) is an appropriate statistical approach. The better fit of Model 2 is demonstrated visually in figures (C43-C44). The model assumptions (C110-C113) are clearly stated. However, the interpretation is limited by only three time points of data, which constrains the ability to detect finer temporal patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C63",
+      "C64"
+    ],
+    "result": "The estimated duration of maternal antibody protection differed substantially between seropositivity cut-offs: 4.9 months (95% CrI 3.3-7.2) for 1:64 versus 17.6 months (95% CrI 11.5-26.8) for 1:16. The authors judge the 1:64 cut-off results as more biologically realistic.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C48-C51 report model-estimated parameters with credible intervals. However, the large discrepancy between cut-offs (C63) raises questions about model assumptions and biological interpretation. The judgment that 1:64 is \"more realistic\" (C64) is based on biological plausibility rather than empirical validation, and no external data are provided to validate either estimate. The 17.6-month estimate for 1:16 seems implausibly long for maternal antibody persistence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C2",
+      "C60",
+      "C62",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Mathematical modeling estimated an approximately 50% increase in the annual probability of EV-D68 infection between 2006 and 2017 in England. For the 1:16 cut-off, annual probability ranged from 0.32-0.52; for 1:64, from 0.13-0.20. The increase in force of infection was robust to cut-off choice, though the 1:64 analysis suggested the FOI plateaued after 2011.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C60, C62, C65-C67 describe the main quantitative findings from the modeling analysis. The ~50% increase (C2) is supported by the model estimates shown in Figure 3A. The robustness to cut-off choice (C62) is demonstrated by consistent qualitative findings across both analyses. The specific probability ranges (C65-C66) are derived from the model. The plateau after 2011 for 1:64 (C67) is visible in Figure 3A, though uncertainty is substantial.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Reconstructed overall seroprevalence in England increased from 91% (1:16) or 70% (1:64) in 2006 to 97% (1:16) or 87% (1:64) in 2017, indicating EV-D68 was already highly prevalent before the 2014 AFM outbreaks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C55 report model-reconstructed population-level seroprevalence estimates incorporating age structure. These are derived from the fitted models and population data as described in Methods. The high baseline seroprevalence in 2006 (C52-C53) is a key finding supporting the conclusion that the virus was already widely circulating before AFM emergence (C4).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C73"
+    ],
+    "result": "Model reconstruction suggests the 2-year-old age class had the highest annual incidence of infection, with infections shifting to younger ages over time. Mean age at infection decreased from 8.5 to 4.2 years (1:16 cut-off) or 14.3 to 9.8 years (1:64 cut-off) between 2007 and 2017. The increase in transmission was primarily driven by increased infections in children aged 1-5 years.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C59, C73 describe age-specific infection patterns reconstructed from the model. These findings follow logically from the estimated FOI and population structure. The shift to younger ages (C57-C59) is consistent with increased transmission. However, these reconstructions depend heavily on model assumptions, particularly the assumption of no reinfection and age-independent FOI (C111), which may not fully capture reality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Despite increased EV-D68 transmission, the virus was already widely circulating before AFM outbreaks, and the age distribution of increased infections does not match the age distribution of AFM cases. AFM cases occur across a broader age range (median ~4-7 years depending on location) than the youngest children where infection increases were concentrated. Therefore, increased neuropathogenicity, rather than just increased transmission, is required to explain AFM emergence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C6, C75-C81 present the key interpretive conclusion of the paper. The high 2006 seroprevalence (C4, supported by C52-C53) demonstrates prior circulation. The mismatch between modeled infection increases (concentrated in ages 1-5, C73) and AFM case age distributions (C75-C79, median 4-7 years with broader range) is well-documented with citations. The logical inference that increased neuropathogenicity is needed (C6) follows from this mismatch, though alternative explanations (age-varying susceptibility, C80) are acknowledged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C3",
+      "C61",
+      "C91",
+      "C92",
+      "C99",
+      "C100"
+    ],
+    "result": "The timing of increased EV-D68 transmission (before 2011) coincides with the emergence of clade B around 2007-2009. The authors hypothesize that increased transmissibility may be a trait associated with clade B, which has been specifically associated with AFM cases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C3, C61, C99-C100 link the modeled transmission increase to viral evolution. The temporal correspondence between transmission increase (before 2011, C60) and clade B emergence (~2007-2009, C100) is noted. However, this is explicitly presented as a hypothesis (C99) rather than demonstrated causation. The association between clade B and AFM (C92) is supported by citations, but the link to transmissibility is speculative. No direct virological or phylogenetic analysis is performed in this study to test this hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C1",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "EV-D68 emerged globally in 2014 as a cause of AFM in children, though the virus was first isolated in 1962 and caused sporadic respiratory disease for decades. From 2009-2010 onwards, increasing outbreaks of severe respiratory illness were reported, with major AFM outbreaks in the US in 2014, 2016, and 2018. Similar patterns were observed in Europe including the UK. Evidence increasingly supports EV-D68 as the main cause of AFM outbreaks, though other enteroviruses may play a role.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C8-C27 provide background context on EV-D68 and AFM epidemiology, all supported by appropriate citations. These establish the historical context (C9-C10), recent emergence patterns (C11-C17), clinical significance (C20-C21), and surveillance limitations (C23, C27). The biennial patterns in the US and UK (C24-C26) are documented. This background appropriately frames the research question.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Most published EV-D68 seroepidemiological studies use cut-offs of 1:8 or 1:16. Only one prior study (China, 2010) reported detailed seroprevalence in children <1 year old, finding 100% in neonates declining to 28% by 9-11 months, which differs from the current study's findings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C72 provide context on prior serological studies and justify the cut-off choices. The literature review (C68-C69) is supported by citations. The comparison to the China study (C70-C72) highlights differences that may reflect temporal or geographic variation, though the authors note their data combine multiple years which may affect comparisons.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "The high seroprevalence in young children (<5 years) observed for EV-D68 is unusual compared to other enteroviruses but has been reported in multiple countries. It remains unclear whether cross-reactivity with other enteroviruses contributes to this pattern. Evidence exists for amino acid changes in VP1 epitope regions that might alter antigenic properties, but neutralization studies have yielded inconsistent results.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C88 discuss uncertainties in interpreting serological data. The unusual high seroprevalence pattern (C82-C83) is documented across multiple studies. The uncertainty about cross-reactivity (C84) is appropriately acknowledged as a limitation. The discussion of antigenic variation (C86-C88) is supported by citations but notes inconsistencies in the literature, appropriately reflecting scientific uncertainty.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C103",
+      "C104"
+    ],
+    "result": "EV-D68 may exhibit biennial transmission cycles in England similar to patterns observed in the US and common for other enteroviruses. Enterovirus dynamics are generally driven by population immunity, and other enteroviruses like CVA6 have emerged as major causes of disease (HFMD) over the past decade.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C90, C103-C104 provide context on enterovirus transmission dynamics. The speculation about biennial cycles (C89) is appropriately cautious and supported by analogy to US data and other enteroviruses (C90). The role of population immunity (C103) and the CVA6 example (C104) are supported by citations and provide relevant context for interpreting EV-D68 emergence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Three major EV-D68 clades (A-C) emerged in the 2000s. Only the B clade (B1/B3 genotypes, common ancestor ~2009) has been consistently associated with AFM, with rare exceptions. Individual lineages show rapid global spread with synchronized outbreaks. In vitro studies of neurotropism have yielded conflicting results regarding whether recent strains show increased neurotropism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C98 summarize the viral evolution and phylogenetic context, all supported by appropriate citations. The clade structure (C91), AFM association with clade B (C92-C93), global spread patterns (C94-C95), and outbreak strain characterization (C96-C97) are well-documented. The conflicting in vitro neurotropism results (C98) appropriately reflect uncertainty in the literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C101",
+      "C102"
+    ],
+    "result": "The authors speculate that more efficient viral replication may enhance both transmission and the probability of virus reaching the central nervous system, though changes in receptor usage could also play a role.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C101-C102 present mechanistic speculation about how increased transmissibility and neurotropism might be linked. These are explicitly speculative (\"may\") and no experimental data are provided to test these hypotheses. While biologically plausible, these remain untested conjectures.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "The study used serum samples from three cross-sectional studies in England (2006: n=516, 2011: n=504, 2017: n=566) from the National Seroepidemiology Programme. Neutralization assays measured antibodies against a B3 strain, with similar neutralization observed across different EV-D68 strains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C109 describe the study materials and methods. Sample sources and sizes (C105) are clearly stated. The neutralization assay methods (C106-C107) reference prior publications. The observation of similar neutralization across strains (C108) is important for interpreting results and is supported by citation. The FOI definition (C109) is standard.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C7"
+    ],
+    "result": "The authors conclude that their results provide evidence that changes in enterovirus phenotypes cause major changes in disease epidemiology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C7 is the overarching conclusion. It is supported by the combination of findings: increased transmission coinciding with clade emergence (C3, C61), high baseline seroprevalence (C4), mismatch between infection and disease age patterns (C5, C81), and the inference that neuropathogenicity changes are required (C6). However, the evidence is indirect and inferential rather than mechanistic, as the study does not directly measure phenotypic changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C34",
+      "C74"
+    ],
+    "result": "The observed decrease in mean age of exposure could be consistent with increased transmission, and increased transmission in young children may align with observed increases in respiratory illness in children <5 years old.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34 and C74 present interpretations linking model results to clinical observations. C34 appropriately presents this as one possible explanation (\"could potentially\") for the observed pattern. C74 notes consistency with external data on respiratory illness (supported by citation to Bubba et al., 2020), though this is presented cautiously (\"may be consistent\").",
+    "result_type": "MINOR"
+  }
+]

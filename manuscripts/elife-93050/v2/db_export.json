@@ -1,0 +1,1325 @@
+{
+  "submission": {
+    "id": "2ed8aa76-669a-4de4-b064-f53962e9da60",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-04T04:13:21.535800Z",
+    "updated_at": "2025-12-04T04:13:21.535800Z"
+  },
+  "content": [
+    {
+      "id": "c158be51-1684-4c4c-9bbb-3b0b0bfa89a1",
+      "submission_id": "2ed8aa76-669a-4de4-b064-f53962e9da60",
+      "content_type": "manuscript",
+      "content_text": "# Region of Attainable Redaction, an extension of Ellipse of Insignificance analysis for gauging impacts of data redaction in dichotomous outcome trials\n\n## Authors\n\n- David Robert Grimes<sup>1</sup> ([ORCID: 0000-0003-3140-3278](https://orcid.org/0000-0003-3140-3278)) \u2020\n\n### Affiliations\n\n1. School of Medicine, Trinity College Dublin Dublin Ireland ([ROR:02tyrky19](https://ror.org/02tyrky19))\n2. School of Physical Sciences, Dublin City University Dublin Ireland ([ROR:04a1a1e81](https://ror.org/04a1a1e81))\n\n\u2020 Corresponding author\n\n## Abstract\n\nIn biomedical science, it is a reality that many published results do not withstand deeper investigation, and there is growing concern over a replicability crisis in science. Recently, Ellipse of Insignificance (EOI) analysis was introduced as a tool to allow researchers to gauge the robustness of reported results in dichotomous outcome design trials, giving precise deterministic values for the degree of miscoding between events and non-events tolerable simultaneously in both control and experimental arms (Grimes, 2022). While this is useful for situations where potential miscoding might transpire, it does not account for situations where apparently significant findings might result from accidental or deliberate data redaction in either the control or experimental arms of an experiment, or from missing data or systematic redaction. To address these scenarios, we introduce Region of Attainable Redaction (ROAR), a tool that extends EOI analysis to account for situations of potential data redaction. This produces a bounded cubic curve rather than an ellipse, and we outline how this can be used to identify potential redaction through an approach analogous to EOI. Applications are illustrated, and source code, including a web-based implementation that performs EOI and ROAR analysis in tandem for dichotomous outcome trials is provided.\n\n## Introduction\n\nDespite the crucial importance of biomedical science for human well-being, the uncomfortable reality is that swathes of published results in fields from psychology to cancer research are less robust than optimum (Ioannidis, 2005; Krawczyk, 2015; Loken and Gelman, 2017; Grimes et al., 2018; Errington et al., 2021). In cases when findings are spurious, inappropriate or errant statistical methods are often the primary cause of untrustworthy research, from incorrect interpretations of p-values to unsuitable tests to data redaction and under-reporting of overtesting, leading to research waste and unsound conclusions (Hoffmann et al., 2013; Altman and Krzywinski, 2017; Colquhoun, 2014; Glasziou et al., 2014; Grimes and Heathers, 2021a; Itaya et al., 2022; Baer et al., 2021a; Baer et al., 2021b). Across biomedical sciences, dichotomous outcome trials and studies are of paramount importance, forming the basis of everything from preclinical observational studies to randomized controlled trials. Such investigations contrast experimental and control groups for a given intervention, comparing the numbers experiencing a particular event in both arms to infer whether differences between the intervention and control arm might exist.\n\nSuch investigations are vital, but concern has been raised over the fragility of many published works, where small amounts of recoding from event to non-event in experimental arms or vice versa in control arms can create an illusion of a relationship where none truly exists. In previous work by the author (Grimes, 2022), Ellipse of Insignificance (EOI) analysis was introduced as a refined fragility index capable of handling even huge data sets analytically with ease, considering both control and experimental arms simultaneously, which traditional fragility analysis cannot. EOI analysis is robust and analytical, suitable not only for Randomized Controlled Trial (RCT) analysis but for observational trials, cohort studies, and general preclinical work. Additionally, it also links the concept of fragility to test sensitivity and specificity when these are known for the detection of events, enabling investigators to probe not only whether a result is arbitrarily fragile, but to truly probe whether consider certain results are even possible. Accordingly, it yields both objective metrics for fragility and can be employed to detect inappropriate manipulation of results if the statistical properties of the tests used are known. A web implementation of this is available at https://drg85.shinyapps.io/EOIanalysis/, replete with code in $R$ and other popular languages for general application.\n\nWhile EOI analysis is a powerful method for ascertaining trial robustness, it does not explicitly consider the scenario where data is redacted. Data redaction in biomedical science creates spurious results and untrustworthy findings (Grimes and Heathers, 2021b), and can be difficult to detect. Data redaction can be accidental due to some systematic error in analysis, due to missing data, or arise through deliberate cherry-picking, and there are currently few tools for gauging its likely impact outside of direct simulation. In this technical note, we unveil a novel and powerful method for quantifying how much redaction would be required to explain a seemingly significant finding in dichotomous outcome trials, automatically finding the degree of redaction required to yield spurious results, and objective metrics for defining this. While EOI analysis produced a conic section in the form of an inclined ellipse where significance disappeared, this new tool instead produces a bounded region where significance disappears attainable by redaction and calculates the minimal vector to this regions. This technical note outlines the methodology of Region of Attainable Redaction (ROAR) analysis, including examples, R and MATLAB code for user implementations, and a web implementation for ease of deployability.\n\n## Methods\n\nThe underlying geometrical and statistical basis for EOI analysis has been previously derived and described. In brief, EOI arises from chi-squared analysis, ascertaining how many participants in experimental and control groups could be recoded from events to non-events and vice versa before apparently significance was lost. This is a powerful approach for determining robustness of outcomes, and a web implementation and code are available at https://drg85.shinyapps.io/EOIanalysis/. EOI in its current form, however, does not consider the situation where a significant result might be obtained by data redaction, where an experimenter censors or neglects observations in the final analysis.\n\nDefining $a$ as the reported data of endpoint positive cases in the experimental or exposure arm, $b$ as the reported experimental endpoint negative, $c$ as reported endpoint positive cases in the control arm, and $d$ as the reported endpoint negative cases in the control arm, we may define $x$ and $y$ as hypothetical redacted data in the experimental and control arm, respectively. We further define the total reported sample as $n=a+b+c+d$. To account for the impact of redaction, consider that an experimenter may obtain a significant result in favour of the experimental group in several ways. When relative risk is given by $\\frac{a(c+d)}{c(a+b)}$ with no significant difference, the experimental arm could still yield a greater relative risk ($RR_{E}>1$) than the control arm if either $x$ endpoint negative events had been jettisoned from the experimental arm, $y$ endpoint positive events jettisoned from the control or comparison arm, or a combination of both. Equally, if there is no significant difference but a lower relative risk in the experimental group is sought ($RR_{E}<1$), such a finding can be manipulated by either jettisoning $x$ endpoint positive cases from the experimental arm, $y$ endpoint negative cases from the control arm, or a combination of both. These situations are given in Table 1. Risk ratio is used in this work for simplicity in gauging the relative impact of an ostensibly significant effect in the experimental arm and can be readily converted to odds ratio if preferred.\n\n**Table 1.**\n Reported groups and related variables.\n\n\n<table>\n  <thead>\n    <tr>\n      <th colspan=\"3\">Redaction for RRe&gt;1</th>\n    </tr>\n    <tr>\n      <th></th>\n      <th>Endpoint positive</th>\n      <th>Endpoint negative</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Experimental group</td>\n      <td>a</td>\n      <td>b+x</td>\n    </tr>\n    <tr>\n      <td>Control group</td>\n      <td>c+y</td>\n      <td>d</td>\n    </tr>\n    <tr>\n      <td colspan=\"3\">Redaction for RRe&lt;1</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>Endpoint positive</td>\n      <td>Endpoint negative</td>\n    </tr>\n    <tr>\n      <td>Experimental group</td>\n      <td>a+x</td>\n      <td>b</td>\n    </tr>\n    <tr>\n      <td>Control group</td>\n      <td>c</td>\n      <td>d+y</td>\n    </tr>\n  </tbody>\n</table>\n\nApplying the chi-square statistic outlined previously with a threshold critical value for significance of $\u03bd_{c}$, the resulting identity when $RR_{E}>1$ is\n\n$$\n\\frac{(n+x+y)(ad\u2212(b+x)(c+y))^{2}}{(a+b+x)(c+d+y)(a+c+y)(b+d+x)}\u2212\u03bd_{c}=0\n$$\n\nand when $RR_{E}<1$, the identity is\n\n$$\n\\frac{(n+x+y)((a+x)(d+y)\u2212bc)^{2}}{(a+b+x)(c+d+y)(a+c+x)(b+d+y)}\u2212\u03bd_{c}=0\n$$\n\nSimilar to EOI analysis, these forms can be expanded. However, the resultant equations in either case are not the conic sections of an inclined ellipse as with EOI analysis, but a more complicated cubic curve also in two variables. The resultant identity is $g(x,y)$, polynomial in $x$ and $y$, with the list of 15 coefficients in either case in given in the mathematical appendix (Supplementary file 1, Table S1). The region bound by this equation is the ROAR, and any $g(x,y)\\leq0$ changes an ostensibly significant finding to the null one, with $x$ and $y$ respectively yielding the redaction from the experimental and control group required.\n\n### ROAR derivation and FOCK vector\n\nIn EOI analysis, we derived an analytical method for finding the minimum distance from the origin to the EOI. This point and vector, the Fewest Experimental/Control Knowingly Uncoded Participants (FECKUP) vector, allowed us to ascertain the minimal error which would render results insignificant. The resultant curve and bound region are inherently more complex in ROAR analysis, but the general principle remains. We seek the minimum distance from the origin to the region bound by $g(x,y)=0$, defining the vector to this point $(x_{e},y_{e})$ as the Fewest Observations/Censored Knowledge (FOCK) vector. Unlike EOI analysis, we cannot exploit geometric arguments to solve this analytically, and instead we proceed by the method of Lagrange multipliers. The minimum distance from the origin to a point is given by\n\n$$\nD(x,y)=\\sqrt{x^{2}+y^{2}}\n$$\n\nDefining the polynomial defined in Supplementary file 1, Table S1 as $g(x,y)$, we can exploit the properties of Lagrange multipliers to write\n\n$$\n\\frac{\u2202D}{\u2202x}=\\lambda\\frac{\u2202g}{\u2202x}\n$$\n\n\n\n$$\n\\frac{\u2202D}{\u2202y}=\\lambda\\frac{\u2202g}{\u2202y}.\n$$\n\nAs we know $\\lambda\\neq0$, we can rearrange these equations for the constant scalar $\\lambda$ and equate them, subject to the constraint $g(x,y)=0$. After rearrangement, we deduce that\n\n$$\ny\\frac{\u2202g}{\u2202x}\u2212x\\frac{\u2202g}{\u2202y}=0.\n$$\n\nThis yields another unwieldy polynomial in two variables with 18 coefficients, listed in the mathematical appendix (Supplementary file 1, Table S2) for both cases. If we define the resultant function as $h(x,y)$, we seek to solve the simultaneous equations\n\n$$\ng(x_{e},y_{e})=0\n$$\n\n\n\n$$\nh(x_{e},y_{e})=0.\n$$\n\nWhile analytical solutions are likely intractable, this can be readily solved numerically subject to the constraints that $x_{e}>0$ and $y_{e}>0$. By B\u00e9zout\u2019s theorem, there are potentially up to 25 solutions to this simultaneous equation, so we restrict potential solution pairs to the real domain and select the pair yielding the minimum length FOCK vector, corresponding to ($x_{e}.y_{e}$) as illustrated in Figure 1. Additionally, we solve $g(x_{c},0)=0$ and $g(0,y_{c})=0$ as simple cubic equations to find the minimum number of observations redacted in exclusively the experimental and control groups to lose significance. The resolution of the FOCK vector yields the minimum redacted combination of experimental and control groups, given by\n\n$$\nr_{min}=\u230ax_{e}+y_{e}\u230b.\n$$\n\n![Figure 1.](https://cdn.elifesciences.org/articles/93050/elife-93050-fig1-v2.jpg)\n\n**Figure 1.:** (a) A simulated example of the Region of Attainable Redaction (ROAR) for $a=70$, $b=30$, $c=50$, $d=50$ ($RR_{E}>1$) with all points bounded by the shaded region depict a degree of redaction which would not lead to the null being rejected. (b) Relevant vectors for ascertaining possible redaction thresholds in $RR_{E}>1$ case. (c) ROAR analysis of the similar data but with ($RR_{E}<1$) ($a=50$, $b=50$, $c=70$, $d=30$). Note that $RR_{E}>1$ case is a transform of $RR_{E}<1$ situation. (d) Relevant vectors for ascertaining possible redaction thresholds in case $RR_{e}<1$.\n\n### Metrics for degree of potential redaction\n\nIn EOI analysis, we established objective metrics to characterize the degree of potential miscoding required to sustain the null hypothesis. In this technical note, we establish analogous parameters. Considering only potential redaction in the experimental group, we define the degree of potential redaction that can be sustained while the null hypothesis remains rejected, given by\n\n$$\n\u03c1_{E}=1\u2212\\frac{a+b}{a+b+x_{c}}.\n$$\n\nFor example, a ROAR analysis with $\u03c1_{E}=0.1$ would inform us that at least 10% of experimental participants would have to be redacted for the result to lose significance. By similar reasoning, the tolerance threshold for error allowable in the control group is then\n\n$$\n\u03c1_{C}=1\u2212\\frac{c+d}{c+d+y_{c}}.\n$$\n\nFinally, errors in both the coding of the experimental and control group can be combined with FECKUP point knowledge. While $f_{min}$ gives a minimum vector distance to the ellipse, we instead take the length of the vector components to reflect to yield an absolute accuracy threshold of\n\n$$\n\u03c1_{A}=1\u2212\\frac{n}{n+r_{min}}.\n$$\n\nUnlike the EOI case, there is no direct relationship between test sensitivity/specificity and potential redaction.\n\n### Application to large data sets and meta-analyses\n\nROAR is also highly effective with large data sets, and with certain caveats can be applied to even meta-analyses results. For a meta-analyses of $i$ dichotomous outcome trials, the crude pool risk ratio is given by\n\n$$\nRR_{C}=\\frac{\\sum1ia_{i}\\sum1i(c_{i}+d_{i})}{\\sum1ic_{i}\\sum1i(a_{i}+b_{i})}\n$$\n\nwhereas the Cochran\u2013Mantel\u2013Haenszel adjusted risk ratio accounts for potential confounding between studies and adjusts for sample size, given by\n\n$$\nRR_{CMH}=\\frac{\\sum1i\\frac{a_{i}(c_{i}+d_{i})}{n_{i}}}{\\sum1i\\frac{c_{i}(a_{i}+b_{i})}{n_{i}}}.\n$$\n\nThe magnitude of confounding between studies is given by $|1\u2212\\frac{RR_{CMH}}{RR_{C}}|$. If this is small (typically <10%), confounding can be assumed minimal and the crude ratio used, allowing ROAR to be deployed directly on pooled meta-analyses results if these conditions are met. When confounding is significant between studies, direct ROAR is not applicable and these caveats are expanded upon in discussion.\n\n## Results\n\n### Example deployment and ROAR behaviour\n\nTo demonstrate the usage of ROAR, we consider a simple twin example with the following arrangement of data.\n\n**Table 2.**\n ROAR-derived metrics for published data (see \u2018Results\u2019 for details).\n\n\n<table>\n  <thead>\n    <tr>\n      <th colspan=\"3\">Statistics for simulated example case</th>\n    </tr>\n    <tr>\n      <th>ROAR statistic (\u03b1=0.05)</th>\n      <th>Calculated ROAR value (simulated RRE&gt;1 data)</th>\n      <th>Calculated ROAR value (simulated RRE&lt;1 data)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Total subjects reported N</td>\n      <td>200</td>\n      <td>200</td>\n    </tr>\n    <tr>\n      <td>Relative risk (95% CI) RRE</td>\n      <td>1.40 (1.11\u20131.77)</td>\n      <td>0.60 (0.46\u20130.76)</td>\n    </tr>\n    <tr>\n      <td>FOCK point</td>\n      <td>(xe,ye)=(6.89,4.79)</td>\n      <td>(xe,ye)=(4.79,6.89)</td>\n    </tr>\n    <tr>\n      <td>rmin</td>\n      <td>12 subjects</td>\n      <td>12 subjects</td>\n    </tr>\n    <tr>\n      <td>Experimental redaction tolerance \u03c1E</td>\n      <td>9.51% (\u2308xc\u2309 = 10 subjects)</td>\n      <td>14.32% (\u2308xc\u2309 = 14 subjects)</td>\n    </tr>\n    <tr>\n      <td>Control redaction tolerance \u03c1C</td>\n      <td>14.32% (\u2308yc\u2309 = 16 subjects)</td>\n      <td>9.51% (\u2308yc\u2309 = 10 subjects)</td>\n    </tr>\n    <tr>\n      <td>Total redaction tolerance \u03c1A</td>\n      <td>5.66% (12 subjects)</td>\n      <td>5.66% (12 subjects)</td>\n    </tr>\n    <tr>\n      <td colspan=\"3\">Statistics for large meta-analysis</td>\n    </tr>\n    <tr>\n      <td>ROAR statistic (\u03b1=0.05)</td>\n      <td>Calculated ROAR value</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Total subjects reported N</td>\n      <td>39,197</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Relative risk (95% CI)</td>\n      <td>0.85 (0.74\u20130.97)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>FOCK point</td>\n      <td>(xe,ye)=(14.17,0.32)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>rmin</td>\n      <td>14 subjects</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Experimental redaction tolerance \u03c1E</td>\n      <td>0.07% (13 subjects)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Control redaction tolerance \u03c1C</td>\n      <td>3.21% (649 subjects)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Total redaction tolerance \u03c1A</td>\n      <td colspan=\"2\">0.04% (14 subjects)</td>\n    </tr>\n  </tbody>\n</table>\n\n_FOCK, Fewest Observations/Censored Knowledge; ROAR, Region of Attainable Redaction._\n\nAs can be seen from Figure 1, the cases $RR_{E}>1$ and $RR_{E}<1$ are essentially geometrical rotations and reflections of one another, with $r_{min}$ the same in both the values of $\u03c1_{E}$ and $\u03c1_{C}$ being transposed on reflection, as it evident from Table 2. This showcases the general behaviour of ROAR analysis, and in this example, it would require a redaction of between 10 and 16 subjects to lose apparent significance in either case, requiring at least 5.66% of the total subjects to have been redacted. Note that the real values of $x_{e}$ and $y_{e}$ are employed in calculating $\u03c1_{E}$ and $\u03c1_{C}$, whereas the integer value $r_{min}$ is used in $\u03c1_{A}$. For $x_{c}$ and $y_{c}$, integer ceiling values yield the greatest possible redaction.\n\n### Application to large data sets and meta-analyses\n\nWe consider a published meta-analysis of vitamin D supplementation on cancer mortality (Zhang et al., 2019), comprising of $N=39,197$ patients from five RCTs, with $a=397$ deaths in the experimental group (supplementation) versus $b=19,204$ non-deaths and $c=468$ deaths in the control group versus $d=19,128$ non-deaths. Although the authors did not see reduction in all-cause mortality, subanalysis for the cancer population yielded an odds ratio of 0.85 (95% confidence interval: 0.74\u20130.97 for supplementation), reporting an \u2248 15% reduction in cancer mortality risk. With $RR_{C}=0.8481$, $RR_{CMH}=0.8474$, the magnitude of confounding is < 0.09% and thus we can apply ROAR to the pooled data. In this case, ROAR is illustrated in Figure 2, and the degree of redaction required is given in Table 2. Despite the ostensible strength of the result and large sample size, redaction of a mere 14 subjects (0.036%) or a small fraction of missing data would be sufficient to nullify the apparent finding, despite it stemming from a large meta-analysis.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/93050/elife-93050-fig2-v2.jpg)\n\n**Figure 2.:** (a) A simulated example of the Region of Attainable Redaction (ROAR) for a meta-analysis of $N=39,197$ as described in the text. (b) Relevant vectors for ascertaining possible redaction thresholds.\n\n### Browser-based implementation and source code\n\nA browser-based implementation combining both EOI and ROAR is hosted at https://drg85.shinyapps.io/EOIROAR/, and relevant source code is hosted online for languages including $R$, MATLAB/OCTAVE, and Mathematica at https://github.com/drg85/EOIROAR_code, copy archieved at Grimes, 2023.\n\n## Discussion\n\nROAR analysis outlined in this technical note extends the functionality and usefulness of EOI analysis, allowing users to estimate the likely impacts of missing data. EOI analysis and related fragility methods had the limitations that while they handled potential miscoding, they were unsuitable for inferences or quantification of impacts of redacted data or subjects lost to follow-up. Accordingly, ROAR is a powerful method of gauging the potential impacts of missing data. While more mathematically complex than EOI analysis, ROAR remains deterministic and rapid, but shares the limitation that it is only currently applicable to dichotomous outcome trials and studies, and should be applied very cautiously to time-to-event data, where it may not be suitable. Like EOI analysis, ROAR differs from typical fragility metrics by avoiding Fisher\u2019s exact test as this is not suitable for large data sets which EOI and ROAR can readily handle. This is typically not a problem as the chi-squared test employed approximates Fisher\u2019s test in most circumstances. However, like EOI analysis, p-values for small trials can differ slightly from chi-squared result. ROAR analysis is built upon chi-squared statistics, and it is thus possible for edge cases of small numbers to yield discordant results with Fisher\u2019s exact test also. This can be shown from a theoretical standpoint to not typically make any appreciable difference except for rare events in very small trials (Grimes, 2022; Baer et al., 2021a).\n\nApplication of ROAR analysis is inherently context specific. For clinical trials, preregistration in principle reduces the potential for experimenter choices like redaction bias changing the outcome. But the implementation of preregistered protocols does not exclude the possibility of data dredging in the form of p-hacking or HARKing (hypothesizing after the results are known). Researchers rarely follow the precise methods, plan, and analyses that they preregistered. A recent analysis found that pre-registered studies, despite having power analysis and higher sample size than non-registered studies, do not a priori seem to prevent p-hacking and HARKing (Bakker et al., 2020; Singh et al., 2021; El\u2010Boghdadly et al., 2018; Sun et al., 2019), with similar proportions of positive results and effect sizes between preregistered and non-preregistered studies (van den Akker et al., 2023). A survey of 27 preregistered studies found researchers deviating from preregistered plans in all cases, most frequently in relation to planned sample size and exclusion criteria (Claesen et al., 2021). This latter aspect lends itself to potential redaction bias (Grimes and Heathers, 2021b), which can be systematic rather than deliberate and thus a means to quantify its impact is important. More importantly, EOI analysis has application for dichotomous beyond clinical trials. In preclinical work, cohort, and observational studies, the scope for redaction bias greatly increases as reporting and selection of data falls entirely on the experimenter, and thus methods like ROAR to probe potential redaction bias are important. ROAR also has potential application in case\u2013control studies, where selection of an inappropriately fragile control group could give spurious conclusions. This again comes with caveats as studies adjusted for potential confounders and predictors might make ROAR inappropriate in such cases.\n\nAs demonstrated in this work, ROAR is under certain circumstances applicable even to large meta-analysis. In this instance, a potential redaction of just 14 subjects from over 39,000 was sufficient to overturn the null hypothesis, despite a relative risk reduction of 15% being widely reported on the basis of this meta-analysis. This of course is not to say that any redaction occurred only to quantify the vulnerability of such a study to missing data. While beyond the scope of this technical note, it is worth noting that a subsequent 2022 meta-analysis (Zhang et al., 2022) of 11 RCTS (including those in the 2019 [Zhang et al., 2019] meta-analysis) found no significant reduction in cancer mortality with vitamin D supplementation, a potential testament to the need to consider the fragility of results to missing or miscoded data, even with ostensibly large samples. There are however important caveats to applying ROAR to meta-analyses. In its naive form, it is only suitable when there is minimal confounding between studies so that the crude relative risk differs minimally from the adjust risk ($RR_{C}\u2248RR_{CMH}$), such as in the illustrative work considered herein. When this is not the case, results from individual studies cannot be crudely pooled and ROAR is not valid in these instances. As ROAR applied to meta-analyses pools studies into a simple crude measure, it does not identity the particular study or studies where hypothetical redaction might have occurred, only the global fragility metric. A full theoretical extension of ROAR and EOI for specifically for meta-analyses is beyond the scope of this work, and accordingly, ROAR must be cautiously implemented and carefully interpreted in investigations of meta-analyses.\n\nAs discussed in the EOI paper (Grimes, 2022), poor research conduct including inappropriate statistical manipulation and data redaction are not uncommon, affecting up to three quarters of all biomedical science (Fanelli, 2009). Like EOI analysis, the ROAR extension has a potential role in detecting manipulations that nudge results towards significance, and identifying inconsistencies in data and adding invaluable context. It is a demonstrable reality that even seemingly strong results can falter under inspection, and tools like ROAR and EOI analysis have a potentially important role in identifying weak results and statistical inconsistencies, with wide potential application across meta-research with the goal of furthering sustainable, reproducible research.\n",
+      "created_at": "2025-12-04T04:13:21.535800Z"
+    },
+    {
+      "id": "3975c9eb-690f-4af0-aed5-d2e9b3e889a7",
+      "submission_id": "2ed8aa76-669a-4de4-b064-f53962e9da60",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Philip Boonstra, https://ror.org/00jmfr291 University of Michigan United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.93050.sa0](https://doi.org/10.7554/eLife.93050.sa0)\n\nThis valuable study develops the Region of Attainable Redaction (ROAR), which quantifies the potential sensitivity of conclusions due to omitted data in two-arm clinical trials and studies of associations between dichotomous outcomes and exposures. The idea is supported by solid numerical examples and an application to a large meta-analysis. The concept of ROAR is a useful reminder of the fragility of some clinical findings.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Philip Boonstra, https://ror.org/00jmfr291 University of Michigan United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.93050.sa1](https://doi.org/10.7554/eLife.93050.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Region of Attainable Redaction, an extension of Ellipse of Insignificance analysis for gauging impacts of data redaction in dichotomous outcome trials\" for consideration by eLife. I apologize for the long delay in reviewing your article. I had a great deal of trouble identifying reviewers who were willing and available to review. I (Phil) have reviewed your article as the Reviewing Editor, and the evaluation has been overseen Detlef Weigel as the Senior Editor.\n\nPlease see my recommendations below to help you prepare a revised submission.\n\nReviewer #1 (Recommendations for the authors):\n\nIn this article, Dr. Grimes develops the Region of Attainable Redaction (ROAR), which is a simple metric for the potential sensitivity of reported findings in two-arm randomized clinical trials due to omitted data. The idea of ROAR is to quantify the minimum number of hypothetical observations that \u2013 had they existed but not been reported \u2013 would have changed a statistically significant finding to a non-statistically significant finding. The author helpfully includes an easy-to-use online app and, for those interested, computer code. The strengths of this work include its ease of use and its intuitive meaning. Weaknesses include its limited scope of application, as discussed below.\n\nThe method is nominally applicable to any analysis of a binary outcome with two exposures in which a chi-squared test is appropriate. The intended use is for randomized clinical trials, but the utility of ROAR seems limited here given the expected rigor and reporting requirements for such studies, including preregistration, multiple levels of scientific and ethical review, and reporting requirements. Given this, it seems unlikely that the published analysis of a clinical trial could successfully \"hide\" observations. Although the Discussion notes that it is applicable to cohort and ecological studies, presumably any such observational study would adjust for other predictors and potential confounders in addition to the exposure of interest. Thus, it is not clear how applicable the concept of ROAR, which is an unadjusted analysis, is for such studies.\n\nDr. Grimes also applies ROAR to a large meta-analysis of vitamin D supplementation (exposure) and cancer mortality (outcome). This application seems more appropriate than those mentioned above. The key finding is that, in a meta-analysis of more than 39000 patients with 865 deaths, the statistical significance of the of 0.85 estimated risk ratio would be lost had there been just 14 additional (unreported) subjects in the exposure arm who had the outcome. Driving this surprising result is the low baseline risk of mortality in either group. For more prevalent events, the number would be much greater than 14.\n\nA final weakness is in the author's claim in the Discussion that \"[ROAR] can be employed\u2026to detect the fingerprints of questionable research practices and even research fraud.\" This claim is surprising and not substantiated in the article, as ROAR is presented as a sensitivity analysis and not a diagnostic tool.\n\n\u2013 Is there utility for single trials which require rigorous definitions and reporting of enrolled, eligible, evaluable patients? It seems unlikely that subjects could simply be redacted from a particular trial.\n\n\u2013 Why do the regions in Figures 1 and 2 have upper limits? Does this correspond to a switching of significance in the other direction?\n\n\u2013 Tables 2 and 3 are probably not of interest to most eLife readers and could probably be moved to a supplement.\n\n\u2013 The notation should be made clearer: a, b, c, and d are the reported data, whereas x and y are the hypothetical redacted data. I don't think this is explicitly stated anywhere. Also, I don't think n is defined anywhere, presumably, it is a+b+c+d.\n\n\u2013 In the second sentence of the second paragraph of the methods, I think the grammar needs to be clarified to reflect the hypothetical nature of the statement. For example, I think instead of '\u2026are jettisoned\u2026' the past perfect form '\u2026had been jettisoned\u2026' would be more appropriate. But more than just this needs to be changed.\n\n\u2013 In section \"ROAR derivation and FOCK vector\", fifth line down: the e in 'ye' should be subscripted.\n\n\u2013 In section \"Results\", in points 1 and 2: it is written \"p < 0039\" presumably there is missing a decimal somewhere. And this should be an equality not an inequality.\n\n\u2013 In section Introduction, the sentence \"EOI analysis in robust and analytical, suitable not only for RCT analysis but for observational trials, cohort studies, and general preclinical work\". Should be changed to \"\u2026is robust and analytical\".\n\n\u2013 In Table 4, the percentages are not clear to me. E.g. Experimental redaction tolerance 9.51%(10 subjects). I thought the tolerance would be 10/110 or 9.1%.\n\n\u2013 I think I had a similar comment on the EOI paper, but the FOCK coordinates seem like they should be integer-valued in order to be clinically applicable since you cannot redact a fraction of an observation. Put differently, I think that the identification of x_e and y_e and r_min should comprise three steps: (i) first identify x_e* and y_e*, the real-valued solutions to g(x,y)=0 and then (ii) identify (x_e, y_e) as the integer-valued coordinates that are closest to x_e* and y_e* and still in the ROAR. Then (iii) r_min = x_e + y_e. For example, in the bottom half of table 4, you cannot redact a fraction of an observation,\n\n\u2013 Can ROAR be used in case-control studies \u2013 if so what special considerations would there need to be? And what about other estimands besides a risk ratio? Can you add some discussion about this?\n",
+      "created_at": "2025-12-04T04:13:21.535800Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T04:13:21.535800Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T04:13:21.535800Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "79e392ae-2bf9-4400-adb5-f45fb7b19605",
+      "content_id": "c158be51-1684-4c4c-9bbb-3b0b0bfa89a1",
+      "claim_id": "C1",
+      "claim": "Many published results in biomedical science do not withstand deeper investigation.",
+      "claim_type": "EXPLICIT",
+      "source": "In biomedical science, it is a reality that many published results do not withstand deeper investigation, and there is growing concern over a replicability crisis in science.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to literature on replicability crisis and research quality issues",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:21.535800Z"
+    },
+    {
+      "id": "345480c3-aeaf-4ff0-90de-d91b20def0db",
+      "content_id": "c158be51-1684-4c4c-9bbb-3b0b0bfa89a1",
+      "claim_id": "C2",
+      "claim": "There is growing concern over a replicability crisis in science.",
+      "claim_type": "EXPLICIT",
+      "source": "In biomedical science, it is a reality that many published results do not withstand deeper investigation, and there is growing concern over a replicability crisis in science.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reflects established scientific consensus about replicability issues",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:21.535800Z"
+    },
+    {
+      "id": "b644beaf-12ad-455b-8b54-5d150d27ef04",
+      "content_id": "c158be51-1684-4c4c-9bbb-3b0b0bfa89a1",
+      "claim_id": "C3",
+      "claim": "Ellipse of Insignificance (EOI) analysis was introduced as a tool to allow researchers to gauge the robustness of reported results in dichotomous outcome design trials.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, Ellipse of Insignificance (EOI) analysis was introduced as a tool to allow researchers to gauge the robustness of reported results in dichotomous outcome design trials, giving precise deterministic values for the degree of miscoding between events and non-events tolerable simultaneously in both control and experimental arms (Grimes, 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to prior work by Grimes, 2022",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:21.535800Z"
+    },
+    {
+      "id": "134382d4-4108-46eb-8187-4930c12b5e4b",
+      "content_id": "c158be51-1684-4c4c-9bbb-3b0b0bfa89a1",
+      "claim_id": "C4",
+      "claim": "EOI analysis gives precise deterministic values for the degree of miscoding between events and non-events tolerable simultaneously in both control and experimental arms.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, Ellipse of Insignificance (EOI) analysis was introduced as a tool to allow researchers to gauge the robustness of reported results in dichotomous outcome design trials, giving precise deterministic values for the degree of miscoding between events and non-events tolerable simultaneously in both control and experimental arms (Grimes, 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to prior work describing EOI methodology",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:21.535800Z"
+    },
+    {
+      "id": "4da9e7c9-9b05-4503-9791-d2e56b9a1af3",
+      "content_id": "c158be51-1684-4c4c-9bbb-3b0b0bfa89a1",
+      "claim_id": "C5",
+      "claim": "EOI analysis does not account for situations where apparently significant findings might result from accidental or deliberate data redaction.",
+      "claim_type": "EXPLICIT",
+      "source": "While this is useful for situations where potential miscoding might transpire, it does not account for situations where apparently significant findings might result from accidental or deliberate data redaction in either the control or experimental arms of an experiment, or from missing data or systematic redaction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Identifies a limitation of existing EOI methodology",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:21.535800Z"
+    },
+    {
+      "id": "b892251c-6902-40bd-8631-2dc6ebfbaf4f",
+      "content_id": "c158be51-1684-4c4c-9bbb-3b0b0bfa89a1",
+      "claim_id": "C6",
+      "claim": "Region of Attainable Redaction (ROAR) extends EOI analysis to account for situations of potential data redaction.",
+      "claim_type": "EXPLICIT",
+      "source": "To address these scenarios, we introduce Region of Attainable Redaction (ROAR), a tool that extends EOI analysis to account for situations of potential data redaction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of the new method's purpose and relationship to EOI",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:21.535800Z"
+    },
+    {
+      "id": "d1ded058-3086-4bba-9ce3-ad7f18294695",
+      "content_id": "c158be51-1684-4c4c-9bbb-3b0b0bfa89a1",
+      "claim_id": "C7",
+      "claim": "ROAR produces a bounded cubic curve rather than an ellipse.",
+      "claim_type": "EXPLICIT",
+      "source": "This produces a bounded cubic curve rather than an ellipse, and we outline how this can be used to identify potential redaction through an approach analogous to EOI.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Mathematical description of ROAR output compared to EOI",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:21.535800Z"
+    },
+    {
+      "id": "4bcaed2e-b091-43a0-b345-ecb8c8afaaf9",
+      "content_id": "c158be51-1684-4c4c-9bbb-3b0b0bfa89a1",
+      "claim_id": "C8",
+      "claim": "Swathes of published results in fields from psychology to cancer research are less robust than optimum.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the crucial importance of biomedical science for human well-being, the uncomfortable reality is that swathes of published results in fields from psychology to cancer research are less robust than optimum (Ioannidis, 2005; Krawczyk, 2015; Loken and Gelman, 2017; Grimes et al., 2018; Errington et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to literature on research robustness",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:21.535800Z"
+    },
+    {
+      "id": "1b7bce73-7970-40f2-835e-7b625251e5e0",
+      "content_id": "c158be51-1684-4c4c-9bbb-3b0b0bfa89a1",
+      "claim_id": "C9",
+      "claim": "Inappropriate or errant statistical methods are often the primary cause of untrustworthy research when findings are spurious.",
+      "claim_type": "EXPLICIT",
+      "source": "In cases when findings are spurious, inappropriate or errant statistical methods are often the primary cause of untrustworthy research, from incorrect interpretations of p-values to unsuitable tests to data redaction and under-reporting of overtesting, leading to research waste and unsound conclusions (Hoffmann et al., 2013; Altman and Krzywinski, 2017; Colquhoun, 2014; Glasziou et al., 2014; Grimes and Heathers, 2021a; Itaya et al., 2022; Baer et al., 2021a; Baer et al., 2021b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to literature on statistical methodology issues",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:21.535800Z"
+    },
+    {
+      "id": "661ddf81-2271-4a95-be23-5833122555cc",
+      "content_id": "c158be51-1684-4c4c-9bbb-3b0b0bfa89a1",
+      "claim_id": "C10",
+      "claim": "Dichotomous outcome trials and studies are of paramount importance across biomedical sciences.",
+      "claim_type": "EXPLICIT",
+      "source": "Across biomedical sciences, dichotomous outcome trials and studies are of paramount importance, forming the basis of everything from preclinical observational studies to randomized controlled trials.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reflects established knowledge about the importance of dichotomous outcome studies",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:21.535800Z"
+    },
+    {
+      "id": "c6bf1616-387f-4ea7-b294-304b9a7f967b",
+      "content_id": "c158be51-1684-4c4c-9bbb-3b0b0bfa89a1",
+      "claim_id": "C11",
+      "claim": "Dichotomous outcome investigations form the basis of everything from preclinical observational studies to randomized controlled trials.",
+      "claim_type": "EXPLICIT",
+      "source": "Across biomedical sciences, dichotomous outcome trials and studies are of paramount importance, forming the basis of everything from preclinical observational studies to randomized controlled trials.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reflects established knowledge about the scope of dichotomous outcome studies",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:21.535800Z"
+    },
+    {
+      "id": "20155da9-e907-479b-9279-fe6ba5968f17",
+      "content_id": "c158be51-1684-4c4c-9bbb-3b0b0bfa89a1",
+      "claim_id": "C12",
+      "claim": "Concern has been raised over the fragility of many published works where small amounts of recoding can create an illusion of a relationship where none truly exists.",
+      "claim_type": "EXPLICIT",
+      "source": "Such investigations are vital, but concern has been raised over the fragility of many published works, where small amounts of recoding from event to non-event in experimental arms or vice versa in control arms can create an illusion of a relationship where none truly exists.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reflects concerns documented in the literature about research fragility",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:21.535800Z"
+    },
+    {
+      "id": "8be27400-3426-4009-94d0-f5dae1f0e5bd",
+      "content_id": "c158be51-1684-4c4c-9bbb-3b0b0bfa89a1",
+      "claim_id": "C13",
+      "claim": "EOI analysis is robust and analytical, suitable for RCT analysis, observational trials, cohort studies, and general preclinical work.",
+      "claim_type": "EXPLICIT",
+      "source": "EOI analysis is robust and analytical, suitable not only for Randomized Controlled Trial (RCT) analysis but for observational trials, cohort studies, and general preclinical work.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Describes the scope and applicability of EOI analysis based on prior work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:21.535800Z"
+    },
+    {
+      "id": "2d89e120-dc16-4f3f-baa6-fbcb39d2167f",
+      "content_id": "c158be51-1684-4c4c-9bbb-3b0b0bfa89a1",
+      "claim_id": "C14",
+      "claim": "EOI analysis links the concept of fragility to test sensitivity and specificity when these are known for the detection of events.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, it also links the concept of fragility to test sensitivity and specificity when these are known for the detection of events, enabling investigators to probe not only whether a result is arbitrarily fragile, but to truly probe whether consider certain results are even possible.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Describes a feature of EOI analysis from prior work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:21.535800Z"
+    },
+    {
+      "id": "7811168e-701b-4d41-ae69-d7d0c1600bf6",
+      "content_id": "c158be51-1684-4c4c-9bbb-3b0b0bfa89a1",
+      "claim_id": "C15",
+      "claim": "EOI analysis yields both objective metrics for fragility and can be employed to detect inappropriate manipulation of results if the statistical properties of the tests used are known.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, it yields both objective metrics for fragility and can be employed to detect inappropriate manipulation of results if the statistical properties of the tests used are known.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Describes capabilities of EOI analysis from prior work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:21.535800Z"
+    },
+    {
+      "id": "36ab0192-3edf-42f6-8422-c084daa8dc48",
+      "content_id": "c158be51-1684-4c4c-9bbb-3b0b0bfa89a1",
+      "claim_id": "C17",
+      "claim": "Data redaction in biomedical science creates spurious results and untrustworthy findings.",
+      "claim_type": "EXPLICIT",
+      "source": "Data redaction in biomedical science creates spurious results and untrustworthy findings (Grimes and Heathers, 2021b), and can be difficult to detect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to prior work on data redaction",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:21.535800Z"
+    },
+    {
+      "id": "45c4e7ad-d111-4d92-9ed4-0bc561337fa3",
+      "content_id": "c158be51-1684-4c4c-9bbb-3b0b0bfa89a1",
+      "claim_id": "C18",
+      "claim": "Data redaction can be difficult to detect.",
+      "claim_type": "EXPLICIT",
+      "source": "Data redaction in biomedical science creates spurious results and untrustworthy findings (Grimes and Heathers, 2021b), and can be difficult to detect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reflects established knowledge about challenges in detecting data redaction",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:21.535800Z"
+    },
+    {
+      "id": "0134823b-1b33-4363-98df-73f076c6744e",
+      "content_id": "c158be51-1684-4c4c-9bbb-3b0b0bfa89a1",
+      "claim_id": "C19",
+      "claim": "Data redaction can be accidental due to some systematic error in analysis, due to missing data, or arise through deliberate cherry-picking.",
+      "claim_type": "EXPLICIT",
+      "source": "Data redaction can be accidental due to some systematic error in analysis, due to missing data, or arise through deliberate cherry-picking, and there are currently few tools for gauging its likely impact outside of direct simulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Describes potential causes of data redaction based on established knowledge",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:21.535800Z"
+    },
+    {
+      "id": "65a4169b-381b-44d1-a66b-19512c72bdca",
+      "content_id": "c158be51-1684-4c4c-9bbb-3b0b0bfa89a1",
+      "claim_id": "C20",
+      "claim": "There are currently few tools for gauging the likely impact of data redaction outside of direct simulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Data redaction can be accidental due to some systematic error in analysis, due to missing data, or arise through deliberate cherry-picking, and there are currently few tools for gauging its likely impact outside of direct simulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Assessment of current methodological landscape",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:21.535800Z"
+    },
+    {
+      "id": "8abe1ced-fa88-46b3-bc50-15877bd09888",
+      "content_id": "c158be51-1684-4c4c-9bbb-3b0b0bfa89a1",
+      "claim_id": "C21",
+      "claim": "ROAR is a novel and powerful method for quantifying how much redaction would be required to explain a seemingly significant finding in dichotomous outcome trials.",
+      "claim_type": "EXPLICIT",
+      "source": "In this technical note, we unveil a novel and powerful method for quantifying how much redaction would be required to explain a seemingly significant finding in dichotomous outcome trials, automatically finding the degree of redaction required to yield spurious results, and objective metrics for defining this.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about the new method's capabilities",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:21.535800Z"
+    },
+    {
+      "id": "30d3a38c-2491-4c49-a6b1-b9abac8ac8e7",
+      "content_id": "c158be51-1684-4c4c-9bbb-3b0b0bfa89a1",
+      "claim_id": "C22",
+      "claim": "ROAR automatically finds the degree of redaction required to yield spurious results.",
+      "claim_type": "EXPLICIT",
+      "source": "In this technical note, we unveil a novel and powerful method for quantifying how much redaction would be required to explain a seemingly significant finding in dichotomous outcome trials, automatically finding the degree of redaction required to yield spurious results, and objective metrics for defining this.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about ROAR's functionality",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:21.535800Z"
+    },
+    {
+      "id": "27014327-f60b-4ce6-8cfd-4e56575638cb",
+      "content_id": "c158be51-1684-4c4c-9bbb-3b0b0bfa89a1",
+      "claim_id": "C23",
+      "claim": "EOI analysis produced a conic section in the form of an inclined ellipse where significance disappeared.",
+      "claim_type": "EXPLICIT",
+      "source": "While EOI analysis produced a conic section in the form of an inclined ellipse where significance disappeared, this new tool instead produces a bounded region where significance disappears attainable by redaction and calculates the minimal vector to this regions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Describes the mathematical output of EOI analysis from prior work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:21.535800Z"
+    },
+    {
+      "id": "24bcab03-5e24-418f-bb94-c0e79f76ca0f",
+      "content_id": "c158be51-1684-4c4c-9bbb-3b0b0bfa89a1",
+      "claim_id": "C24",
+      "claim": "ROAR produces a bounded region where significance disappears attainable by redaction and calculates the minimal vector to this region.",
+      "claim_type": "EXPLICIT",
+      "source": "While EOI analysis produced a conic section in the form of an inclined ellipse where significance disappeared, this new tool instead produces a bounded region where significance disappears attainable by redaction and calculates the minimal vector to this regions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about ROAR's mathematical output",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:21.535800Z"
+    },
+    {
+      "id": "9c6b1551-dd44-4598-b8b6-ae7f6e225b1c",
+      "content_id": "c158be51-1684-4c4c-9bbb-3b0b0bfa89a1",
+      "claim_id": "C25",
+      "claim": "The underlying geometrical and statistical basis for EOI analysis has been previously derived and described.",
+      "claim_type": "EXPLICIT",
+      "source": "The underlying geometrical and statistical basis for EOI analysis has been previously derived and described.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reference to prior work on EOI methodology",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:21.535800Z"
+    },
+    {
+      "id": "1f18707c-e926-47cc-8827-5c872162b006",
+      "content_id": "c158be51-1684-4c4c-9bbb-3b0b0bfa89a1",
+      "claim_id": "C26",
+      "claim": "EOI arises from chi-squared analysis, ascertaining how many participants in experimental and control groups could be recoded from events to non-events and vice versa before apparently significance was lost.",
+      "claim_type": "EXPLICIT",
+      "source": "In brief, EOI arises from chi-squared analysis, ascertaining how many participants in experimental and control groups could be recoded from events to non-events and vice versa before apparently significance was lost.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Describes the statistical basis of EOI from prior work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:21.535800Z"
+    },
+    {
+      "id": "63ff54bf-d71b-4f92-ac2e-74d5f78fc0d9",
+      "content_id": "c158be51-1684-4c4c-9bbb-3b0b0bfa89a1",
+      "claim_id": "C27",
+      "claim": "EOI in its current form does not consider the situation where a significant result might be obtained by data redaction.",
+      "claim_type": "EXPLICIT",
+      "source": "EOI in its current form, however, does not consider the situation where a significant result might be obtained by data redaction, where an experimenter censors or neglects observations in the final analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Identifies a limitation of existing EOI methodology",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:21.535800Z"
+    },
+    {
+      "id": "91200ee2-ff40-43ba-a4e4-3818afb07073",
+      "content_id": "c158be51-1684-4c4c-9bbb-3b0b0bfa89a1",
+      "claim_id": "C29",
+      "claim": "The resultant equations for ROAR are not the conic sections of an inclined ellipse as with EOI analysis, but a more complicated cubic curve also in two variables.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to EOI analysis, these forms can be expanded. However, the resultant equations in either case are not the conic sections of an inclined ellipse as with EOI analysis, but a more complicated cubic curve also in two variables.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Mathematical derivation showing the form of ROAR equations",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:21.535800Z"
+    },
+    {
+      "id": "3c6f0ed7-8038-44b4-bb28-ef47aef67496",
+      "content_id": "c158be51-1684-4c4c-9bbb-3b0b0bfa89a1",
+      "claim_id": "C31",
+      "claim": "In EOI analysis, an analytical method was derived for finding the minimum distance from the origin to the EOI.",
+      "claim_type": "EXPLICIT",
+      "source": "In EOI analysis, we derived an analytical method for finding the minimum distance from the origin to the EOI.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reference to prior work on EOI methodology",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:21.535800Z"
+    },
+    {
+      "id": "317c776d-398f-4ecf-b92d-9fc937910388",
+      "content_id": "c158be51-1684-4c4c-9bbb-3b0b0bfa89a1",
+      "claim_id": "C32",
+      "claim": "The FECKUP vector in EOI analysis allowed ascertainment of the minimal error which would render results insignificant.",
+      "claim_type": "EXPLICIT",
+      "source": "This point and vector, the Fewest Experimental/Control Knowingly Uncoded Participants (FECKUP) vector, allowed us to ascertain the minimal error which would render results insignificant.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Describes functionality of FECKUP vector from prior EOI work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:21.535800Z"
+    },
+    {
+      "id": "e43c7189-aab0-4752-8980-9626a83aa0a2",
+      "content_id": "c158be51-1684-4c4c-9bbb-3b0b0bfa89a1",
+      "claim_id": "C34",
+      "claim": "Unlike EOI analysis, ROAR cannot exploit geometric arguments to solve analytically, and instead proceeds by the method of Lagrange multipliers.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike EOI analysis, we cannot exploit geometric arguments to solve this analytically, and instead we proceed by the method of Lagrange multipliers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Describes the mathematical approach used for ROAR",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:21.535800Z"
+    },
+    {
+      "id": "f99d837b-e9f9-4420-b1c5-91c594153424",
+      "content_id": "c158be51-1684-4c4c-9bbb-3b0b0bfa89a1",
+      "claim_id": "C37",
+      "claim": "In the simulated example with a=70, b=30, c=50, d=50 (RRE>1), it would require a redaction of between 10 and 16 subjects to lose apparent significance.",
+      "claim_type": "EXPLICIT",
+      "source": "This showcases the general behaviour of ROAR analysis, and in this example, it would require a redaction of between 10 and 16 subjects to lose apparent significance in either case, requiring at least 5.66% of the total subjects to have been redacted.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Results from simulated data analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:21.535800Z"
+    },
+    {
+      "id": "33ae8fa6-837f-4078-8ee2-d67ec7abe898",
+      "content_id": "c158be51-1684-4c4c-9bbb-3b0b0bfa89a1",
+      "claim_id": "C38",
+      "claim": "In the simulated example, at least 5.66% of the total subjects would have to be redacted to lose significance.",
+      "claim_type": "EXPLICIT",
+      "source": "This showcases the general behaviour of ROAR analysis, and in this example, it would require a redaction of between 10 and 16 subjects to lose apparent significance in either case, requiring at least 5.66% of the total subjects to have been redacted.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Results from simulated data analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:21.535800Z"
+    },
+    {
+      "id": "b548ebb9-3c10-447d-b685-579b2fbd9175",
+      "content_id": "c158be51-1684-4c4c-9bbb-3b0b0bfa89a1",
+      "claim_id": "C40",
+      "claim": "The Zhang et al., 2019 meta-analysis reported an odds ratio of 0.85 (95% confidence interval: 0.74\u20130.97) for vitamin D supplementation in the cancer population.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the authors did not see reduction in all-cause mortality, subanalysis for the cancer population yielded an odds ratio of 0.85 (95% confidence interval: 0.74\u20130.97 for supplementation), reporting an \u2248 15% reduction in cancer mortality risk.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Data from published meta-analysis cited",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:21.535800Z"
+    },
+    {
+      "id": "d98fdbf8-ee67-472c-852a-57aaadd0513b",
+      "content_id": "c158be51-1684-4c4c-9bbb-3b0b0bfa89a1",
+      "claim_id": "C41",
+      "claim": "The Zhang et al., 2019 meta-analysis reported approximately 15% reduction in cancer mortality risk with vitamin D supplementation.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the authors did not see reduction in all-cause mortality, subanalysis for the cancer population yielded an odds ratio of 0.85 (95% confidence interval: 0.74\u20130.97 for supplementation), reporting an \u2248 15% reduction in cancer mortality risk.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Data from published meta-analysis cited",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:21.535800Z"
+    },
+    {
+      "id": "ccbcf5ae-60a5-4c40-935a-03d2f9b007bb",
+      "content_id": "c158be51-1684-4c4c-9bbb-3b0b0bfa89a1",
+      "claim_id": "C43",
+      "claim": "For the Zhang et al., 2019 meta-analysis, redaction of a mere 14 subjects (0.036%) would be sufficient to nullify the apparent finding.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the ostensible strength of the result and large sample size, redaction of a mere 14 subjects (0.036%) or a small fraction of missing data would be sufficient to nullify the apparent finding, despite it stemming from a large meta-analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Results from ROAR analysis of the meta-analysis data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:21.535800Z"
+    },
+    {
+      "id": "ac7512b9-18ca-4eda-9962-fd22cced088b",
+      "content_id": "c158be51-1684-4c4c-9bbb-3b0b0bfa89a1",
+      "claim_id": "C45",
+      "claim": "ROAR analysis extends the functionality and usefulness of EOI analysis, allowing users to estimate the likely impacts of missing data.",
+      "claim_type": "EXPLICIT",
+      "source": "ROAR analysis outlined in this technical note extends the functionality and usefulness of EOI analysis, allowing users to estimate the likely impacts of missing data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary statement about ROAR's contribution",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:21.535800Z"
+    },
+    {
+      "id": "3d224def-e2cb-4699-8311-949084a9ebc8",
+      "content_id": "c158be51-1684-4c4c-9bbb-3b0b0bfa89a1",
+      "claim_id": "C46",
+      "claim": "EOI analysis and related fragility methods had the limitations that while they handled potential miscoding, they were unsuitable for inferences or quantification of impacts of redacted data or subjects lost to follow-up.",
+      "claim_type": "EXPLICIT",
+      "source": "EOI analysis and related fragility methods had the limitations that while they handled potential miscoding, they were unsuitable for inferences or quantification of impacts of redacted data or subjects lost to follow-up.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Identifies limitations of prior methods",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:21.535800Z"
+    },
+    {
+      "id": "611f5041-65d1-4c64-a5c2-2c50dbfb5cbf",
+      "content_id": "c158be51-1684-4c4c-9bbb-3b0b0bfa89a1",
+      "claim_id": "C47",
+      "claim": "ROAR is a powerful method of gauging the potential impacts of missing data.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, ROAR is a powerful method of gauging the potential impacts of missing data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Assessment of ROAR's capabilities",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:21.535800Z"
+    },
+    {
+      "id": "4c54d838-0339-4ab2-8048-ac48b01ba91f",
+      "content_id": "c158be51-1684-4c4c-9bbb-3b0b0bfa89a1",
+      "claim_id": "C48",
+      "claim": "ROAR is only currently applicable to dichotomous outcome trials and studies.",
+      "claim_type": "EXPLICIT",
+      "source": "While more mathematically complex than EOI analysis, ROAR remains deterministic and rapid, but shares the limitation that it is only currently applicable to dichotomous outcome trials and studies, and should be applied very cautiously to time-to-event data, where it may not be suitable.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about the scope and limitations of ROAR",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:21.535800Z"
+    },
+    {
+      "id": "ad9bbd73-2633-41ac-b4e2-795ab9e02549",
+      "content_id": "c158be51-1684-4c4c-9bbb-3b0b0bfa89a1",
+      "claim_id": "C49",
+      "claim": "ROAR should be applied very cautiously to time-to-event data, where it may not be suitable.",
+      "claim_type": "EXPLICIT",
+      "source": "While more mathematically complex than EOI analysis, ROAR remains deterministic and rapid, but shares the limitation that it is only currently applicable to dichotomous outcome trials and studies, and should be applied very cautiously to time-to-event data, where it may not be suitable.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about limitations of ROAR application",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:21.535800Z"
+    },
+    {
+      "id": "cb286910-08f2-474b-83c3-2fa0283fbe0c",
+      "content_id": "c158be51-1684-4c4c-9bbb-3b0b0bfa89a1",
+      "claim_id": "C50",
+      "claim": "ROAR differs from typical fragility metrics by avoiding Fisher's exact test as this is not suitable for large data sets which EOI and ROAR can readily handle.",
+      "claim_type": "EXPLICIT",
+      "source": "Like EOI analysis, ROAR differs from typical fragility metrics by avoiding Fisher's exact test as this is not suitable for large data sets which EOI and ROAR can readily handle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Describes methodological choice and its justification",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:21.535800Z"
+    },
+    {
+      "id": "4ab5d2c0-e5ba-48da-84c1-cb7697f8097b",
+      "content_id": "c158be51-1684-4c4c-9bbb-3b0b0bfa89a1",
+      "claim_id": "C51",
+      "claim": "The chi-squared test employed in ROAR approximates Fisher's test in most circumstances.",
+      "claim_type": "EXPLICIT",
+      "source": "This is typically not a problem as the chi-squared test employed approximates Fisher's test in most circumstances.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reflects established statistical knowledge",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:21.535800Z"
+    },
+    {
+      "id": "2edefeb3-033b-4ebd-b8d9-b119efd796c7",
+      "content_id": "c158be51-1684-4c4c-9bbb-3b0b0bfa89a1",
+      "claim_id": "C52",
+      "claim": "It is possible for edge cases of small numbers to yield discordant results between ROAR and Fisher's exact test.",
+      "claim_type": "EXPLICIT",
+      "source": "However, like EOI analysis, p-values for small trials can differ slightly from chi-squared result. ROAR analysis is built upon chi-squared statistics, and it is thus possible for edge cases of small numbers to yield discordant results with Fisher's exact test also.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference about potential limitations based on statistical properties",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:21.535800Z"
+    },
+    {
+      "id": "0f93e677-4b3b-4462-9c66-a1aa2f35f2a9",
+      "content_id": "c158be51-1684-4c4c-9bbb-3b0b0bfa89a1",
+      "claim_id": "C53",
+      "claim": "Edge case discordance between ROAR and Fisher's exact test can be shown from a theoretical standpoint to not typically make any appreciable difference except for rare events in very small trials.",
+      "claim_type": "EXPLICIT",
+      "source": "This can be shown from a theoretical standpoint to not typically make any appreciable difference except for rare events in very small trials (Grimes, 2022; Baer et al., 2021a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:21.535800Z"
+    },
+    {
+      "id": "a4519a15-6e77-4e4e-a082-1c3346620daa",
+      "content_id": "c158be51-1684-4c4c-9bbb-3b0b0bfa89a1",
+      "claim_id": "C54",
+      "claim": "Application of ROAR analysis is inherently context specific.",
+      "claim_type": "EXPLICIT",
+      "source": "Application of ROAR analysis is inherently context specific.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "General statement about ROAR application",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:21.535800Z"
+    },
+    {
+      "id": "9c25fb92-5233-4157-9b84-e04a2399f650",
+      "content_id": "c158be51-1684-4c4c-9bbb-3b0b0bfa89a1",
+      "claim_id": "C55",
+      "claim": "For clinical trials, preregistration in principle reduces the potential for experimenter choices like redaction bias changing the outcome.",
+      "claim_type": "EXPLICIT",
+      "source": "For clinical trials, preregistration in principle reduces the potential for experimenter choices like redaction bias changing the outcome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reflects established knowledge about preregistration benefits",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:21.535800Z"
+    },
+    {
+      "id": "6a758350-2415-4fde-b24c-7f77cff28b3f",
+      "content_id": "c158be51-1684-4c4c-9bbb-3b0b0bfa89a1",
+      "claim_id": "C56",
+      "claim": "The implementation of preregistered protocols does not exclude the possibility of data dredging in the form of p-hacking or HARKing.",
+      "claim_type": "EXPLICIT",
+      "source": "But the implementation of preregistered protocols does not exclude the possibility of data dredging in the form of p-hacking or HARKing (hypothesizing after the results are known).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reflects established knowledge about limitations of preregistration",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:21.535800Z"
+    },
+    {
+      "id": "e902f076-90a9-44c2-bd2e-c5e4b5a291f7",
+      "content_id": "c158be51-1684-4c4c-9bbb-3b0b0bfa89a1",
+      "claim_id": "C57",
+      "claim": "Researchers rarely follow the precise methods, plan, and analyses that they preregistered.",
+      "claim_type": "EXPLICIT",
+      "source": "Researchers rarely follow the precise methods, plan, and analyses that they preregistered.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reflects findings from research on preregistration practices",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:21.535800Z"
+    },
+    {
+      "id": "d0a90649-0eef-4bcc-b34f-b215fba2f0fb",
+      "content_id": "c158be51-1684-4c4c-9bbb-3b0b0bfa89a1",
+      "claim_id": "C58",
+      "claim": "A recent analysis found that pre-registered studies do not a priori seem to prevent p-hacking and HARKing.",
+      "claim_type": "EXPLICIT",
+      "source": "A recent analysis found that pre-registered studies, despite having power analysis and higher sample size than non-registered studies, do not a priori seem to prevent p-hacking and HARKing (Bakker et al., 2020; Singh et al., 2021; El\u2010Boghdadly et al., 2018; Sun et al., 2019), with similar proportions of positive results and effect sizes between preregistered and non-preregistered studies (van den Akker et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to research on preregistration effectiveness",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:21.535800Z"
+    },
+    {
+      "id": "76831701-7ae7-4826-b2c5-4be31d67bb73",
+      "content_id": "c158be51-1684-4c4c-9bbb-3b0b0bfa89a1",
+      "claim_id": "C59",
+      "claim": "Pre-registered studies have similar proportions of positive results and effect sizes compared to non-preregistered studies.",
+      "claim_type": "EXPLICIT",
+      "source": "A recent analysis found that pre-registered studies, despite having power analysis and higher sample size than non-registered studies, do not a priori seem to prevent p-hacking and HARKing (Bakker et al., 2020; Singh et al., 2021; El\u2010Boghdadly et al., 2018; Sun et al., 2019), with similar proportions of positive results and effect sizes between preregistered and non-preregistered studies (van den Akker et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to research comparing preregistered and non-preregistered studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:21.535800Z"
+    },
+    {
+      "id": "908d32e8-65cd-4ba7-aa18-e1a2407e3fb2",
+      "content_id": "c158be51-1684-4c4c-9bbb-3b0b0bfa89a1",
+      "claim_id": "C60",
+      "claim": "A survey of 27 preregistered studies found researchers deviating from preregistered plans in all cases.",
+      "claim_type": "EXPLICIT",
+      "source": "A survey of 27 preregistered studies found researchers deviating from preregistered plans in all cases, most frequently in relation to planned sample size and exclusion criteria (Claesen et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to survey research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:21.535800Z"
+    },
+    {
+      "id": "6f4bcd75-bc3c-44b4-9f58-07e91e54440f",
+      "content_id": "c158be51-1684-4c4c-9bbb-3b0b0bfa89a1",
+      "claim_id": "C61",
+      "claim": "Researchers most frequently deviate from preregistered plans in relation to planned sample size and exclusion criteria.",
+      "claim_type": "EXPLICIT",
+      "source": "A survey of 27 preregistered studies found researchers deviating from preregistered plans in all cases, most frequently in relation to planned sample size and exclusion criteria (Claesen et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to survey research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:21.535800Z"
+    },
+    {
+      "id": "2bb2156c-5d37-4060-96c1-c50eca17314e",
+      "content_id": "c158be51-1684-4c4c-9bbb-3b0b0bfa89a1",
+      "claim_id": "C62",
+      "claim": "Deviations in exclusion criteria lend themselves to potential redaction bias.",
+      "claim_type": "EXPLICIT",
+      "source": "This latter aspect lends itself to potential redaction bias (Grimes and Heathers, 2021b), which can be systematic rather than deliberate and thus a means to quantify its impact is important.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference about implications of exclusion criteria deviations with citation support",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:21.535800Z"
+    },
+    {
+      "id": "9d8e3111-804b-41bc-a984-ef2021aacffa",
+      "content_id": "c158be51-1684-4c4c-9bbb-3b0b0bfa89a1",
+      "claim_id": "C63",
+      "claim": "EOI analysis has application for dichotomous studies beyond clinical trials.",
+      "claim_type": "EXPLICIT",
+      "source": "More importantly, EOI analysis has application for dichotomous beyond clinical trials.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about broader applicability of EOI",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:21.535800Z"
+    },
+    {
+      "id": "385bed45-7a2a-4000-af58-106179b2471a",
+      "content_id": "c158be51-1684-4c4c-9bbb-3b0b0bfa89a1",
+      "claim_id": "C64",
+      "claim": "In preclinical work, cohort, and observational studies, the scope for redaction bias greatly increases as reporting and selection of data falls entirely on the experimenter.",
+      "claim_type": "EXPLICIT",
+      "source": "In preclinical work, cohort, and observational studies, the scope for redaction bias greatly increases as reporting and selection of data falls entirely on the experimenter, and thus methods like ROAR to probe potential redaction bias are important.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference about increased risk in non-RCT contexts",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:21.535800Z"
+    },
+    {
+      "id": "307851f1-3478-427c-b528-7182354d7baa",
+      "content_id": "c158be51-1684-4c4c-9bbb-3b0b0bfa89a1",
+      "claim_id": "C65",
+      "claim": "ROAR has potential application in case\u2013control studies, where selection of an inappropriately fragile control group could give spurious conclusions.",
+      "claim_type": "EXPLICIT",
+      "source": "ROAR also has potential application in case\u2013control studies, where selection of an inappropriately fragile control group could give spurious conclusions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation about potential application of ROAR",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:21.535800Z"
+    },
+    {
+      "id": "54c31657-d226-4aba-83be-b4b820c462e9",
+      "content_id": "c158be51-1684-4c4c-9bbb-3b0b0bfa89a1",
+      "claim_id": "C66",
+      "claim": "ROAR is under certain circumstances applicable even to large meta-analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "As demonstrated in this work, ROAR is under certain circumstances applicable even to large meta-analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated through application to vitamin D meta-analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:21.535800Z"
+    },
+    {
+      "id": "8760b733-c4e5-40f9-a01d-c85c7bbf6a82",
+      "content_id": "c158be51-1684-4c4c-9bbb-3b0b0bfa89a1",
+      "claim_id": "C67",
+      "claim": "In the vitamin D meta-analysis example, a potential redaction of just 14 subjects from over 39,000 was sufficient to overturn the null hypothesis.",
+      "claim_type": "EXPLICIT",
+      "source": "In this instance, a potential redaction of just 14 subjects from over 39,000 was sufficient to overturn the null hypothesis, despite a relative risk reduction of 15% being widely reported on the basis of this meta-analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Results from ROAR analysis of the meta-analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:21.535800Z"
+    },
+    {
+      "id": "f4fe7e3b-33e6-466b-be5e-75eea2a9e625",
+      "content_id": "c158be51-1684-4c4c-9bbb-3b0b0bfa89a1",
+      "claim_id": "C68",
+      "claim": "A subsequent 2022 meta-analysis by Zhang et al. of 11 RCTs found no significant reduction in cancer mortality with vitamin D supplementation.",
+      "claim_type": "EXPLICIT",
+      "source": "While beyond the scope of this technical note, it is worth noting that a subsequent 2022 meta-analysis (Zhang et al., 2022) of 11 RCTS (including those in the 2019 [Zhang et al., 2019] meta-analysis) found no significant reduction in cancer mortality with vitamin D supplementation, a potential testament to the need to consider the fragility of results to missing or miscoded data, even with ostensibly large samples.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to subsequent meta-analysis",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:21.535800Z"
+    },
+    {
+      "id": "1eba97ad-cb5d-40bc-8677-0064bf282a67",
+      "content_id": "c158be51-1684-4c4c-9bbb-3b0b0bfa89a1",
+      "claim_id": "C70",
+      "claim": "When crude and adjusted relative risks differ substantially in a meta-analysis, results from individual studies cannot be crudely pooled and ROAR is not valid.",
+      "claim_type": "EXPLICIT",
+      "source": "When this is not the case, results from individual studies cannot be crudely pooled and ROAR is not valid in these instances.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about limitations of ROAR application",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:21.535800Z"
+    },
+    {
+      "id": "d2fdcf9b-e426-415e-8a8e-1567573a93df",
+      "content_id": "c158be51-1684-4c4c-9bbb-3b0b0bfa89a1",
+      "claim_id": "C71",
+      "claim": "ROAR applied to meta-analyses does not identify the particular study or studies where hypothetical redaction might have occurred, only the global fragility metric.",
+      "claim_type": "EXPLICIT",
+      "source": "As ROAR applied to meta-analyses pools studies into a simple crude measure, it does not identity the particular study or studies where hypothetical redaction might have occurred, only the global fragility metric.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about limitations of ROAR when applied to meta-analyses",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:21.535800Z"
+    },
+    {
+      "id": "dfcb1d3d-153d-4333-bc95-78315dc7eaa6",
+      "content_id": "c158be51-1684-4c4c-9bbb-3b0b0bfa89a1",
+      "claim_id": "C72",
+      "claim": "Poor research conduct including inappropriate statistical manipulation and data redaction affect up to three quarters of all biomedical science.",
+      "claim_type": "EXPLICIT",
+      "source": "As discussed in the EOI paper (Grimes, 2022), poor research conduct including inappropriate statistical manipulation and data redaction are not uncommon, affecting up to three quarters of all biomedical science (Fanelli, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior work on research conduct",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:21.535800Z"
+    },
+    {
+      "id": "ec972086-ff6b-4d4a-9eb3-d54555729a4e",
+      "content_id": "c158be51-1684-4c4c-9bbb-3b0b0bfa89a1",
+      "claim_id": "C73",
+      "claim": "ROAR has a potential role in detecting manipulations that nudge results towards significance.",
+      "claim_type": "EXPLICIT",
+      "source": "Like EOI analysis, the ROAR extension has a potential role in detecting manipulations that nudge results towards significance, and identifying inconsistencies in data and adding invaluable context.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation about potential applications of ROAR",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:21.535800Z"
+    },
+    {
+      "id": "31d9139f-e69e-4dad-9db8-6fe0092c3040",
+      "content_id": "c158be51-1684-4c4c-9bbb-3b0b0bfa89a1",
+      "claim_id": "C74",
+      "claim": "Even seemingly strong results can falter under inspection.",
+      "claim_type": "EXPLICIT",
+      "source": "It is a demonstrable reality that even seemingly strong results can falter under inspection, and tools like ROAR and EOI analysis have a potentially important role in identifying weak results and statistical inconsistencies, with wide potential application across meta-research with the goal of furthering sustainable, reproducible research.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reflects established knowledge about research robustness issues, demonstrated by vitamin D example",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:21.535800Z"
+    },
+    {
+      "id": "45b0b8d6-199e-4055-b787-83866b9b7674",
+      "content_id": "c158be51-1684-4c4c-9bbb-3b0b0bfa89a1",
+      "claim_id": "C75",
+      "claim": "Tools like ROAR and EOI analysis have a potentially important role in identifying weak results and statistical inconsistencies.",
+      "claim_type": "EXPLICIT",
+      "source": "It is a demonstrable reality that even seemingly strong results can falter under inspection, and tools like ROAR and EOI analysis have a potentially important role in identifying weak results and statistical inconsistencies, with wide potential application across meta-research with the goal of furthering sustainable, reproducible research.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation about potential impact of these methods",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:21.535800Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "655bc3fa-9f49-4564-a7d7-3e83542661be",
+      "content_id": "c158be51-1684-4c4c-9bbb-3b0b0bfa89a1",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The manuscript establishes the context that many published biomedical results lack robustness, with inappropriate statistical methods and data fragility being major contributors to unreliable research findings.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C2, C8, C9, and C12 are well-supported by multiple citations to established literature on the replicability crisis, research quality issues, and statistical methodology problems. These claims reflect documented scientific consensus and provide appropriate context for the work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:13:21.535800Z"
+    },
+    {
+      "id": "88c866ec-0a1b-408f-a5a6-a1a4ee0bcdca",
+      "content_id": "c158be51-1684-4c4c-9bbb-3b0b0bfa89a1",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The manuscript describes the prior Ellipse of Insignificance (EOI) analysis method, which quantifies robustness of dichotomous outcome trials by determining how much miscoding between events and non-events would be required to lose statistical significance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C4, C13-C15, C23, C25-C26, and C31-C32 accurately describe the EOI methodology from prior work (Grimes, 2022). These are appropriately cited and provide necessary background for understanding ROAR's contribution.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:13:21.535800Z"
+    },
+    {
+      "id": "996d6931-a9d6-4788-9ce3-d2624c34a9ab",
+      "content_id": "c158be51-1684-4c4c-9bbb-3b0b0bfa89a1",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The manuscript identifies a key limitation of EOI analysis: it does not account for data redaction scenarios where significant results might arise from censoring or neglecting observations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C27, and C46 correctly identify the gap that ROAR addresses. This limitation is a logical inference from EOI's design (which handles miscoding but not redaction) and establishes the motivation for the new method.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:13:21.535800Z"
+    },
+    {
+      "id": "53c8f62b-b791-4c05-bb75-4d4844dbeb79",
+      "content_id": "c158be51-1684-4c4c-9bbb-3b0b0bfa89a1",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The manuscript establishes that data redaction creates spurious results, can be difficult to detect, may arise from multiple causes (accidental or deliberate), and currently lacks adequate analytical tools for impact assessment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C20 are supported by citations and reflect established knowledge about data redaction challenges. These claims appropriately motivate the need for ROAR as a tool to quantify redaction impacts.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:13:21.535800Z"
+    },
+    {
+      "id": "0fdd9803-8cd6-4a1e-b5f9-56fe6eb6fc02",
+      "content_id": "c158be51-1684-4c4c-9bbb-3b0b0bfa89a1",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The manuscript introduces ROAR as a novel method that extends EOI to quantify the impact of data redaction in dichotomous outcome trials, producing a bounded cubic curve rather than an ellipse and calculating the minimal redaction required to lose significance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C7, C21-C22, C24, C29, C34, C45, and C47 describe ROAR's core functionality. The mathematical derivation is presented (using Lagrange multipliers for the cubic curve), and the method's capabilities are clearly stated. The approach is mathematically sound.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:13:21.535800Z"
+    },
+    {
+      "id": "724eff02-d936-4632-941e-fa99fa9d4619",
+      "content_id": "c158be51-1684-4c4c-9bbb-3b0b0bfa89a1",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "In a simulated example with specific parameters (a=70, b=30, c=50, d=50), ROAR analysis demonstrates that redaction of 10-16 subjects (5.66% of total) would be required to lose statistical significance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C38 present results from a simulated dataset shown in Figure 1 and Table 2. The calculations appear consistent with the described methodology, and the example effectively demonstrates ROAR's behavior.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:13:21.535800Z"
+    },
+    {
+      "id": "4d1a9fb4-7551-478f-ab6e-5ce37aeb73f8",
+      "content_id": "c158be51-1684-4c4c-9bbb-3b0b0bfa89a1",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "ROAR analysis applied to a large vitamin D supplementation meta-analysis (N=39,197) reveals that redaction of only 14 subjects (0.036%) would be sufficient to nullify the reported 15% reduction in cancer mortality risk.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C41, C43, C66-C67 present a compelling real-world application. The meta-analysis data is properly cited (Zhang et al., 2019), confounding is assessed as minimal (<0.09%), and ROAR calculations are shown in Figure 2 and Table 2. This demonstrates ROAR's utility in revealing fragility even in large studies.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:13:21.535800Z"
+    },
+    {
+      "id": "1821da19-a0c1-498d-9d64-90d02875d8d0",
+      "content_id": "c158be51-1684-4c4c-9bbb-3b0b0bfa89a1",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "A subsequent 2022 meta-analysis found no significant reduction in cancer mortality with vitamin D supplementation, potentially validating ROAR's identification of fragility in the 2019 meta-analysis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C68 is supported by citation to Zhang et al., 2022. This provides external validation that the fragility identified by ROAR may have been real, as later evidence failed to replicate the finding. This strengthens the case for ROAR's utility.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:13:21.535800Z"
+    },
+    {
+      "id": "64804523-4385-485a-87a8-a807cda5062c",
+      "content_id": "c158be51-1684-4c4c-9bbb-3b0b0bfa89a1",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "ROAR has specific limitations: it is only applicable to dichotomous outcome trials, should be used cautiously with time-to-event data, uses chi-squared rather than Fisher's exact test, and may show discordance with Fisher's test in edge cases with small sample sizes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C53 appropriately acknowledge methodological limitations. The chi-squared vs. Fisher's exact test issue is well-documented (C53 cites prior work), and the authors appropriately note that discordance is typically negligible except in rare events with very small trials.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:13:21.535800Z"
+    },
+    {
+      "id": "df212025-418f-44a3-8bf7-32bdf8502c6b",
+      "content_id": "c158be51-1684-4c4c-9bbb-3b0b0bfa89a1",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "When applied to meta-analyses, ROAR has important limitations: it is only valid when confounding between studies is minimal (crude RR \u2248 adjusted RR), and it provides only a global fragility metric without identifying which specific studies might have redaction issues.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C70-C71 appropriately identify limitations of ROAR's application to meta-analyses. The confounding threshold is reasonable, and the acknowledgment that ROAR cannot identify specific problematic studies is an important caveat for interpretation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:13:21.535800Z"
+    },
+    {
+      "id": "3639c43e-e531-4108-aca9-3c2ab4a7c7ff",
+      "content_id": "c158be51-1684-4c4c-9bbb-3b0b0bfa89a1",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The manuscript discusses how preregistration, while theoretically reducing redaction bias, does not prevent p-hacking or HARKing in practice, with researchers frequently deviating from preregistered plans, particularly regarding sample size and exclusion criteria.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C62 are well-supported by multiple citations to research on preregistration effectiveness (Bakker et al., 2020; Singh et al., 2021; van den Akker et al., 2023; Claesen et al., 2021). This contextualizes ROAR's utility even in preregistered studies.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:13:21.535800Z"
+    },
+    {
+      "id": "8b38bd35-78fe-44b3-a647-09b0cce27e23",
+      "content_id": "c158be51-1684-4c4c-9bbb-3b0b0bfa89a1",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "ROAR has broader applicability beyond clinical trials, including preclinical work, cohort studies, observational studies, and potentially case-control studies, where redaction bias risk is higher due to less oversight.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C63-C64 make reasonable inferences about broader applicability, but C65 explicitly states this is speculative ('potential application'). No empirical validation is provided for these applications beyond the simulated and meta-analysis examples. Further validation would strengthen these claims.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:13:21.535800Z"
+    },
+    {
+      "id": "fc402d93-3faf-49a8-9df1-e773bf758fd9",
+      "content_id": "c158be51-1684-4c4c-9bbb-3b0b0bfa89a1",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The manuscript concludes that ROAR, like EOI, has potential for detecting statistical manipulations and identifying weak results, with broad applicability in meta-research to improve research reproducibility.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C72-C75 make broad statements about ROAR's potential impact. While C72 is supported by citation (Fanelli, 2009), claims C73 and C75 are explicitly speculative ('potential role'). The vitamin D example (C74) provides some support, but systematic validation of ROAR's ability to detect manipulation or improve reproducibility would be needed for full support.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:13:21.535800Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "79e392ae-2bf9-4400-adb5-f45fb7b19605",
+      "result_id": "655bc3fa-9f49-4564-a7d7-3e83542661be"
+    },
+    {
+      "claim_id": "345480c3-aeaf-4ff0-90de-d91b20def0db",
+      "result_id": "655bc3fa-9f49-4564-a7d7-3e83542661be"
+    },
+    {
+      "claim_id": "4bcaed2e-b091-43a0-b345-ecb8c8afaaf9",
+      "result_id": "655bc3fa-9f49-4564-a7d7-3e83542661be"
+    },
+    {
+      "claim_id": "1b7bce73-7970-40f2-835e-7b625251e5e0",
+      "result_id": "655bc3fa-9f49-4564-a7d7-3e83542661be"
+    },
+    {
+      "claim_id": "20155da9-e907-479b-9279-fe6ba5968f17",
+      "result_id": "655bc3fa-9f49-4564-a7d7-3e83542661be"
+    },
+    {
+      "claim_id": "b644beaf-12ad-455b-8b54-5d150d27ef04",
+      "result_id": "88c866ec-0a1b-408f-a5a6-a1a4ee0bcdca"
+    },
+    {
+      "claim_id": "134382d4-4108-46eb-8187-4930c12b5e4b",
+      "result_id": "88c866ec-0a1b-408f-a5a6-a1a4ee0bcdca"
+    },
+    {
+      "claim_id": "8be27400-3426-4009-94d0-f5dae1f0e5bd",
+      "result_id": "88c866ec-0a1b-408f-a5a6-a1a4ee0bcdca"
+    },
+    {
+      "claim_id": "2d89e120-dc16-4f3f-baa6-fbcb39d2167f",
+      "result_id": "88c866ec-0a1b-408f-a5a6-a1a4ee0bcdca"
+    },
+    {
+      "claim_id": "7811168e-701b-4d41-ae69-d7d0c1600bf6",
+      "result_id": "88c866ec-0a1b-408f-a5a6-a1a4ee0bcdca"
+    },
+    {
+      "claim_id": "27014327-f60b-4ce6-8cfd-4e56575638cb",
+      "result_id": "88c866ec-0a1b-408f-a5a6-a1a4ee0bcdca"
+    },
+    {
+      "claim_id": "9c6b1551-dd44-4598-b8b6-ae7f6e225b1c",
+      "result_id": "88c866ec-0a1b-408f-a5a6-a1a4ee0bcdca"
+    },
+    {
+      "claim_id": "1f18707c-e926-47cc-8827-5c872162b006",
+      "result_id": "88c866ec-0a1b-408f-a5a6-a1a4ee0bcdca"
+    },
+    {
+      "claim_id": "3c6f0ed7-8038-44b4-bb28-ef47aef67496",
+      "result_id": "88c866ec-0a1b-408f-a5a6-a1a4ee0bcdca"
+    },
+    {
+      "claim_id": "317c776d-398f-4ecf-b92d-9fc937910388",
+      "result_id": "88c866ec-0a1b-408f-a5a6-a1a4ee0bcdca"
+    },
+    {
+      "claim_id": "4da9e7c9-9b05-4503-9791-d2e56b9a1af3",
+      "result_id": "996d6931-a9d6-4788-9ce3-d2624c34a9ab"
+    },
+    {
+      "claim_id": "63ff54bf-d71b-4f92-ac2e-74d5f78fc0d9",
+      "result_id": "996d6931-a9d6-4788-9ce3-d2624c34a9ab"
+    },
+    {
+      "claim_id": "3d224def-e2cb-4699-8311-949084a9ebc8",
+      "result_id": "996d6931-a9d6-4788-9ce3-d2624c34a9ab"
+    },
+    {
+      "claim_id": "36ab0192-3edf-42f6-8422-c084daa8dc48",
+      "result_id": "53c8f62b-b791-4c05-bb75-4d4844dbeb79"
+    },
+    {
+      "claim_id": "45c4e7ad-d111-4d92-9ed4-0bc561337fa3",
+      "result_id": "53c8f62b-b791-4c05-bb75-4d4844dbeb79"
+    },
+    {
+      "claim_id": "0134823b-1b33-4363-98df-73f076c6744e",
+      "result_id": "53c8f62b-b791-4c05-bb75-4d4844dbeb79"
+    },
+    {
+      "claim_id": "65a4169b-381b-44d1-a66b-19512c72bdca",
+      "result_id": "53c8f62b-b791-4c05-bb75-4d4844dbeb79"
+    },
+    {
+      "claim_id": "b892251c-6902-40bd-8631-2dc6ebfbaf4f",
+      "result_id": "0fdd9803-8cd6-4a1e-b5f9-56fe6eb6fc02"
+    },
+    {
+      "claim_id": "d1ded058-3086-4bba-9ce3-ad7f18294695",
+      "result_id": "0fdd9803-8cd6-4a1e-b5f9-56fe6eb6fc02"
+    },
+    {
+      "claim_id": "8abe1ced-fa88-46b3-bc50-15877bd09888",
+      "result_id": "0fdd9803-8cd6-4a1e-b5f9-56fe6eb6fc02"
+    },
+    {
+      "claim_id": "30d3a38c-2491-4c49-a6b1-b9abac8ac8e7",
+      "result_id": "0fdd9803-8cd6-4a1e-b5f9-56fe6eb6fc02"
+    },
+    {
+      "claim_id": "24bcab03-5e24-418f-bb94-c0e79f76ca0f",
+      "result_id": "0fdd9803-8cd6-4a1e-b5f9-56fe6eb6fc02"
+    },
+    {
+      "claim_id": "91200ee2-ff40-43ba-a4e4-3818afb07073",
+      "result_id": "0fdd9803-8cd6-4a1e-b5f9-56fe6eb6fc02"
+    },
+    {
+      "claim_id": "e43c7189-aab0-4752-8980-9626a83aa0a2",
+      "result_id": "0fdd9803-8cd6-4a1e-b5f9-56fe6eb6fc02"
+    },
+    {
+      "claim_id": "ac7512b9-18ca-4eda-9962-fd22cced088b",
+      "result_id": "0fdd9803-8cd6-4a1e-b5f9-56fe6eb6fc02"
+    },
+    {
+      "claim_id": "611f5041-65d1-4c64-a5c2-2c50dbfb5cbf",
+      "result_id": "0fdd9803-8cd6-4a1e-b5f9-56fe6eb6fc02"
+    },
+    {
+      "claim_id": "f99d837b-e9f9-4420-b1c5-91c594153424",
+      "result_id": "724eff02-d936-4632-941e-fa99fa9d4619"
+    },
+    {
+      "claim_id": "33ae8fa6-837f-4078-8ee2-d67ec7abe898",
+      "result_id": "724eff02-d936-4632-941e-fa99fa9d4619"
+    },
+    {
+      "claim_id": "b548ebb9-3c10-447d-b685-579b2fbd9175",
+      "result_id": "4d1a9fb4-7551-478f-ab6e-5ce37aeb73f8"
+    },
+    {
+      "claim_id": "d98fdbf8-ee67-472c-852a-57aaadd0513b",
+      "result_id": "4d1a9fb4-7551-478f-ab6e-5ce37aeb73f8"
+    },
+    {
+      "claim_id": "ccbcf5ae-60a5-4c40-935a-03d2f9b007bb",
+      "result_id": "4d1a9fb4-7551-478f-ab6e-5ce37aeb73f8"
+    },
+    {
+      "claim_id": "54c31657-d226-4aba-83be-b4b820c462e9",
+      "result_id": "4d1a9fb4-7551-478f-ab6e-5ce37aeb73f8"
+    },
+    {
+      "claim_id": "8760b733-c4e5-40f9-a01d-c85c7bbf6a82",
+      "result_id": "4d1a9fb4-7551-478f-ab6e-5ce37aeb73f8"
+    },
+    {
+      "claim_id": "f4fe7e3b-33e6-466b-be5e-75eea2a9e625",
+      "result_id": "1821da19-a0c1-498d-9d64-90d02875d8d0"
+    },
+    {
+      "claim_id": "4c54d838-0339-4ab2-8048-ac48b01ba91f",
+      "result_id": "64804523-4385-485a-87a8-a807cda5062c"
+    },
+    {
+      "claim_id": "ad9bbd73-2633-41ac-b4e2-795ab9e02549",
+      "result_id": "64804523-4385-485a-87a8-a807cda5062c"
+    },
+    {
+      "claim_id": "cb286910-08f2-474b-83c3-2fa0283fbe0c",
+      "result_id": "64804523-4385-485a-87a8-a807cda5062c"
+    },
+    {
+      "claim_id": "4ab5d2c0-e5ba-48da-84c1-cb7697f8097b",
+      "result_id": "64804523-4385-485a-87a8-a807cda5062c"
+    },
+    {
+      "claim_id": "2edefeb3-033b-4ebd-b8d9-b119efd796c7",
+      "result_id": "64804523-4385-485a-87a8-a807cda5062c"
+    },
+    {
+      "claim_id": "0f93e677-4b3b-4462-9c66-a1aa2f35f2a9",
+      "result_id": "64804523-4385-485a-87a8-a807cda5062c"
+    },
+    {
+      "claim_id": "1eba97ad-cb5d-40bc-8677-0064bf282a67",
+      "result_id": "df212025-418f-44a3-8bf7-32bdf8502c6b"
+    },
+    {
+      "claim_id": "d2fdcf9b-e426-415e-8a8e-1567573a93df",
+      "result_id": "df212025-418f-44a3-8bf7-32bdf8502c6b"
+    },
+    {
+      "claim_id": "9c25fb92-5233-4157-9b84-e04a2399f650",
+      "result_id": "3639c43e-e531-4108-aca9-3c2ab4a7c7ff"
+    },
+    {
+      "claim_id": "6a758350-2415-4fde-b24c-7f77cff28b3f",
+      "result_id": "3639c43e-e531-4108-aca9-3c2ab4a7c7ff"
+    },
+    {
+      "claim_id": "e902f076-90a9-44c2-bd2e-c5e4b5a291f7",
+      "result_id": "3639c43e-e531-4108-aca9-3c2ab4a7c7ff"
+    },
+    {
+      "claim_id": "d0a90649-0eef-4bcc-b34f-b215fba2f0fb",
+      "result_id": "3639c43e-e531-4108-aca9-3c2ab4a7c7ff"
+    },
+    {
+      "claim_id": "76831701-7ae7-4826-b2c5-4be31d67bb73",
+      "result_id": "3639c43e-e531-4108-aca9-3c2ab4a7c7ff"
+    },
+    {
+      "claim_id": "908d32e8-65cd-4ba7-aa18-e1a2407e3fb2",
+      "result_id": "3639c43e-e531-4108-aca9-3c2ab4a7c7ff"
+    },
+    {
+      "claim_id": "6f4bcd75-bc3c-44b4-9f58-07e91e54440f",
+      "result_id": "3639c43e-e531-4108-aca9-3c2ab4a7c7ff"
+    },
+    {
+      "claim_id": "2bb2156c-5d37-4060-96c1-c50eca17314e",
+      "result_id": "3639c43e-e531-4108-aca9-3c2ab4a7c7ff"
+    },
+    {
+      "claim_id": "9d8e3111-804b-41bc-a984-ef2021aacffa",
+      "result_id": "8b38bd35-78fe-44b3-a647-09b0cce27e23"
+    },
+    {
+      "claim_id": "385bed45-7a2a-4000-af58-106179b2471a",
+      "result_id": "8b38bd35-78fe-44b3-a647-09b0cce27e23"
+    },
+    {
+      "claim_id": "307851f1-3478-427c-b528-7182354d7baa",
+      "result_id": "8b38bd35-78fe-44b3-a647-09b0cce27e23"
+    },
+    {
+      "claim_id": "dfcb1d3d-153d-4333-bc95-78315dc7eaa6",
+      "result_id": "fc402d93-3faf-49a8-9df1-e773bf758fd9"
+    },
+    {
+      "claim_id": "ec972086-ff6b-4d4a-9eb3-d54555729a4e",
+      "result_id": "fc402d93-3faf-49a8-9df1-e773bf758fd9"
+    },
+    {
+      "claim_id": "31d9139f-e69e-4dad-9db8-6fe0092c3040",
+      "result_id": "fc402d93-3faf-49a8-9df1-e773bf758fd9"
+    },
+    {
+      "claim_id": "45b0b8d6-199e-4055-b787-83866b9b7674",
+      "result_id": "fc402d93-3faf-49a8-9df1-e773bf758fd9"
+    }
+  ],
+  "comparisons": []
+}

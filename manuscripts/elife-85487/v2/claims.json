@@ -1,0 +1,1320 @@
+[
+  {
+    "claim_id": "C1",
+    "claim": "Twenty-seven participants were recruited in Korea, all native Korean speakers, with two left-handed, 15 females, and age range 18\u201330 years with mean age 23 \u00b1 3.16 years.",
+    "claim_type": "EXPLICIT",
+    "source": "Twenty-seven participants were recruited in Korea (all native Korean speakers; two left-handed, 15 females; age range 18\u201330 y with mean age 23 \u00b1 3.16 y).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a direct description of the participant demographics in the SONG dataset.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C2",
+    "claim": "Participants reported no history of visual, hearing, or any form of neurological impairment.",
+    "claim_type": "EXPLICIT",
+    "source": "Participants reported no history of visual, hearing, or any form of neurological impairment, passed the Ishihara 38 plates color vision deficiency test (https://www.color-blindness.com/ishihara-38-plates-cvd-test) for red-green color blindness, provided informed consent before taking part in the study, and were monetarily compensated.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the inclusion criteria for participants in the study.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C3",
+    "claim": "The study was approved by the Institutional Review Board of Sungkyunkwan University.",
+    "claim_type": "EXPLICIT",
+    "source": "The study was approved by the Institutional Review Board of Sungkyunkwan University.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This states the ethical approval for the study.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C4",
+    "claim": "None of the participants were excluded from analysis.",
+    "claim_type": "EXPLICIT",
+    "source": "None of the participants were excluded from analysis.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the data inclusion criteria.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C5",
+    "claim": "Each participant performed seven fMRI runs over 2 days: two eye-fixated resting-state runs, two gradual-onset continuous performance task (gradCPT) runs with either face or scene images, two runs of comedy sitcom watching, and a single run of educational documentary watching.",
+    "claim_type": "EXPLICIT",
+    "source": "Each participant performed seven fMRI runs over 2 d: two eye-fixated resting-state runs, two gradual-onset continuous performance task (gradCPT) runs with either face or scene images, two runs of comedy sitcom watching, and a single run of educational documentary watching.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the experimental design of the SONG dataset.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C6",
+    "claim": "The gradCPT measures fluctuations of sustained attention over time as participants respond to images (every 1 s) from a frequent category (90% of trials) and inhibit response to images from an infrequent category (10%).",
+    "claim_type": "EXPLICIT",
+    "source": "The gradCPT measures fluctuations of sustained attention over time (Esterman et al., 2013; Rosenberg et al., 2013) as participants respond to images (every 1 s) from a frequent category (90% of trials) and inhibit response to images from an infrequent category (10%).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the gradCPT task design and cites prior work establishing the task.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C7",
+    "claim": "The sitcom episodes were the first and second episodes of a South Korean comedy sitcom, High Kick Through the Roof.",
+    "claim_type": "EXPLICIT",
+    "source": "The sitcom episodes were the first and second episodes of a South Korean comedy sitcom, High Kick Through the Roof.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the naturalistic stimuli used in the study.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C8",
+    "claim": "The educational documentary described the geography and history of Korean rivers.",
+    "claim_type": "EXPLICIT",
+    "source": "The educational documentary described the geography and history of Korean rivers.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the content of the documentary stimulus.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C9",
+    "claim": "A hidden Markov model (HMM) was fit to probabilistically infer a sequence of discrete latent states from observed fMRI activity.",
+    "claim_type": "EXPLICIT",
+    "source": "To infer latent state dynamics, we fit a hidden Markov model (HMM) to probabilistically infer a sequence of discrete latent states from observed fMRI activity (Rabiner and Juang, 1986).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the computational method used to identify brain states, citing the foundational HMM reference.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C10",
+    "claim": "The observed variables were the BOLD signal time series from 25 parcels in a whole-brain parcellation of the cortex (17 functional networks) and subcortex (8 regions) sampled at a 1 s TR resolution.",
+    "claim_type": "EXPLICIT",
+    "source": "The observed variables here were the BOLD signal time series from 25 parcels in a whole-brain parcellation of the cortex (17 functional networks) (Yeo et al., 2011) and subcortex (8 regions) (Tian et al., 2020) sampled at a 1 s TR resolution (Figure 1A, left).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This describes the input data to the HMM, referencing the parcellation schemes used and Figure 1A.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C12",
+    "claim": "Four latent states were inferred by the HMM in the SONG dataset, labeled the default mode network (DMN), dorsal attention network (DAN), somatosensory motor (SM), and base states.",
+    "claim_type": "EXPLICIT",
+    "source": "Figure 1B illustrates the four latent neural states inferred by the HMM in the SONG dataset (see Figure 1\u2014figure supplement 2 for condition-specific latent states). We labeled three states the default mode network (DMN), dorsal attention network (DAN), and somatosensory motor (SM) states based on high activation of these canonical brain networks (Yeo et al., 2011). (Note that these state labels are only applied for convenience. Each state is characterized by whole-brain patterns of activation, deactivation, and covariance, rather than simply corresponding to activation of the named network.) The fourth state was labeled the 'base' state because activity was close to baseline (z = 0) and covariance strength (i.e., the sum of the absolute covariance weights of the edges) was comparatively low during this state.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This describes the four identified brain states shown in Figure 1B, with labels based on canonical networks and the base state defined by near-zero activity.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C13",
+    "claim": "The SM state exhibited the highest covariance strength, whereas the covariance strengths of the DMN and DAN states were comparable.",
+    "claim_type": "EXPLICIT",
+    "source": "The SM state, on the other hand, exhibited the highest covariance strength, whereas the covariance strengths of the DMN and DAN states were comparable.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a quantitative comparison of covariance patterns across the identified states.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C14",
+    "claim": "The four states exhibited activity patterns more similar to large-scale functional systems and significantly higher covariance strength compared to null latent states derived from surrogate fMRI time series.",
+    "claim_type": "EXPLICIT",
+    "source": "Compared to null latent states derived from surrogate fMRI time series, the four states exhibited activity patterns more similar to large-scale functional systems (Buckner et al., 2008; Corbetta and Shulman, 2002; Fox et al., 2005; Smith et al., 2009) and significantly higher covariance strength (see Figure 1\u2014figure supplement 3 for examples of null latent states).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This describes a validation analysis comparing the identified states to null models, citing prior work on functional systems.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C17",
+    "claim": "HCP states closely mirrored the DMN, DAN, SM, and base states identified in the SONG dataset.",
+    "claim_type": "EXPLICIT",
+    "source": "HCP states closely mirrored the DMN, DAN, SM, and base states (Pearson's correlations between activity patterns of SONG- and HCP-defined states: DMN: 0.831; DAN: 0.814; SM: 0.865; base: 0.399).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the quantitative similarity between states identified in two independent datasets.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C18",
+    "claim": "The latent states are reliable and generalize across independent datasets.",
+    "claim_type": "EXPLICIT",
+    "source": "Thus, the latent states are reliable and generalize across independent datasets.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a conclusion drawn from the replication analysis in the HCP dataset.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C19",
+    "claim": "Margulies et al., 2016 applied a nonlinear dimensionality reduction algorithm to capture the main axes of variance in the resting-state static functional connectome of 820 individuals.",
+    "claim_type": "EXPLICIT",
+    "source": "In a seminal paper, Margulies et al., 2016 applied a nonlinear dimensionality reduction algorithm to capture the main axes of variance in the resting-state static functional connectome of 820 individuals.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This cites prior work that defined functional connectivity gradients.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C20",
+    "claim": "The primary gradient identified by Margulies et al., 2016 dissociated unimodal (visual and SM regions) from transmodal (DMN) systems.",
+    "claim_type": "EXPLICIT",
+    "source": "They found that the primary gradient dissociated unimodal (visual and SM regions) from transmodal (DMN) systems.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the functional interpretation of the primary gradient from prior work.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C21",
+    "claim": "The secondary gradient identified by Margulies et al., 2016 fell within the unimodal end of the primary gradient, dissociating the visual processing from the SM systems.",
+    "claim_type": "EXPLICIT",
+    "source": "The secondary gradient fell within the unimodal end of the primary gradient, dissociating the visual processing from the SM systems.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the functional interpretation of the secondary gradient from prior work.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C22",
+    "claim": "The gradients identified by Margulies et al., 2016 are argued to be an 'intrinsic coordinate system' of the human brain.",
+    "claim_type": "EXPLICIT",
+    "source": "These gradients, argued to be an 'intrinsic coordinate system' of the human brain (Huntenburg et al., 2018), reflect variations in brain structure (Huntenburg et al., 2017; Paquola et al., 2019; V\u00e1zquez-Rodr\u00edguez et al., 2019), gene expressions (Burt et al., 2018), and information processing (Huntenburg et al., 2018).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This cites prior work characterizing the functional significance of the gradients.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C23",
+    "claim": "The spatial gradients reported by Margulies et al., 2016 act as a low-dimensional manifold over which large-scale dynamics operate.",
+    "claim_type": "EXPLICIT",
+    "source": "We hypothesized that the spatial gradients reported by Margulies et al., 2016 act as a low-dimensional manifold over which large-scale dynamics operate (Bolt et al., 2022; Brown et al., 2021; Karapanagiotidis et al., 2020; Turnbull et al., 2020), such that traversals within this manifold explain large variance in neural dynamics and, consequently, cognition and behavior (Figure 1C).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This states the hypothesis of the study, citing related work and referencing Figure 1C.",
+    "evidence_type": [
+      "INFERENCE",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C24",
+    "claim": "The brain states tiled the two-dimensional gradient space with the base state at the center.",
+    "claim_type": "EXPLICIT",
+    "source": "The brain states tiled the two-dimensional gradient space with the base state at the center (Figure 1D, Figure 1\u2014figure supplement 7).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This describes the spatial arrangement of the identified states in gradient space, referencing Figure 1D.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C25",
+    "claim": "The Euclidean distances between the four states were maximized in the two-dimensional gradient space compared to a chance where the four states were inferred from circular-shifted time series (p<0.001).",
+    "claim_type": "EXPLICIT",
+    "source": "The Euclidean distances between these four states were maximized in the two-dimensional gradient space compared to a chance where the four states were inferred from circular-shifted time series (p<0.001).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a statistical test showing that the states are maximally separated in gradient space.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C26",
+    "claim": "For the SONG dataset, the DMN and SM states fell at more extreme positions on the primary gradient than expected by chance (both FDR-p-values=0.004).",
+    "claim_type": "EXPLICIT",
+    "source": "For the SONG dataset, the DMN and SM states fell at more extreme positions on the primary gradient than expected by chance (both FDR-p-values=0.004; DAN and SM states, FDR-p values=0.171).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a statistical test showing specific states occupy extreme positions on the primary gradient.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C27",
+    "claim": "For the HCP dataset, the DMN and DAN states fell at more extreme positions on the primary gradient (both FDR-p values=0.004).",
+    "claim_type": "EXPLICIT",
+    "source": "For the HCP dataset, the DMN and DAN states fell at more extreme positions on the primary gradient (both FDR-p values=0.004; SM and base states, FDR-p values=0.076).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a statistical test in the HCP dataset showing specific states occupy extreme positions on the primary gradient.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C28",
+    "claim": "No state was consistently found at the extremes of the secondary gradient (all FDR-p values>0.021).",
+    "claim_type": "EXPLICIT",
+    "source": "No state was consistently found at the extremes of the secondary gradient (all FDR-p values>0.021).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a negative result regarding the secondary gradient.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C29",
+    "claim": "The SONG-specific gradients closely resembled the predefined gradients, with Pearson's correlations observed for the first (r = 0.876) and second (r = 0.877) gradient embeddings.",
+    "claim_type": "EXPLICIT",
+    "source": "Despite these differences, the SONG-specific gradients closely resembled the predefined gradients, with Pearson's correlations observed for the first (r = 0.876) and second (r = 0.877) gradient embeddings (Figure 1\u2014figure supplement 8).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This describes the similarity between data-specific and predefined gradients.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C30",
+    "claim": "Gradients identified with the HCP data recapitulated Margulies et al.'s (2016) first (r = 0.880) and second (r = 0.871) gradients.",
+    "claim_type": "EXPLICIT",
+    "source": "Gradients identified with the HCP data also recapitulated Margulies et al.'s (2016) first (r = 0.880) and second (r = 0.871) gradients.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the similarity between HCP-specific and predefined gradients.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C31",
+    "claim": "The two gradients together explained roughly 50% of the variance of the functional brain connectome (SONG: 46.94%; HCP: 52.08%).",
+    "claim_type": "EXPLICIT",
+    "source": "We restricted our analysis to the first two gradients because the two gradients together explained roughly 50% of the variance of the functional brain connectome (SONG: 46.94%; HCP: 52.08%), and the explained variance dropped drastically from the third gradients (more than 1/3 drop compared to the second gradients).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This justifies the focus on the first two gradients based on explained variance.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C33",
+    "claim": "The low-dimensional manifold captured by Margulies et al.'s (2016) gradients is highly replicable, explaining brain activity dynamics as well as data-specific gradients, and is largely shared across contexts and datasets.",
+    "claim_type": "EXPLICIT",
+    "source": "Thus, the low-dimensional manifold captured by Margulies et al.'s (2016) gradients is highly replicable, explaining brain activity dynamics as well as data-specific gradients, and is largely shared across contexts and datasets.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a conclusion drawn from the gradient comparison analyses.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C34",
+    "claim": "The state space of whole-brain dynamics closely recapitulates low-dimensional gradients of the static functional brain connectome.",
+    "claim_type": "EXPLICIT",
+    "source": "This suggests that the state space of whole-brain dynamics closely recapitulates low-dimensional gradients of the static functional brain connectome.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a conclusion drawn from the relationship between brain states and gradients.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C35",
+    "claim": "A decrease in cofluctuation prior to the neural state transitions (at time t-1) was observed for every pair of cortico-cortical networks (z = 645.75, FDR-p=0.001).",
+    "claim_type": "EXPLICIT",
+    "source": "A decrease in cofluctuation prior to the neural state transitions (at time t-1) was observed for every pair of cortico-cortical networks (z = 645.75, FDR-p=0.001).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a statistical finding about network interactions before state transitions.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C36",
+    "claim": "Cortico-subcortical pairs (z = 424.05, FDR-p=0.001) and subcortico-subcortical connections (z = 64.85, FDR-p=0.037) also showed decreased cofluctuation before state transitions, although the effects were less pronounced.",
+    "claim_type": "EXPLICIT",
+    "source": "Cortico-subcortical pairs (z = 424.05, FDR-p=0.001) and subcortico-subcortical connections (z = 64.85, FDR-p=0.037) also showed decreased cofluctuation before state transitions, although the effects were less pronounced, especially for subcortico-subcortical connections (paired Wilcoxon signed-rank tests comparing the degrees of cofluctuation change, FDR-p-values<0.001).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes statistical findings about different types of network connections before state transitions.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C37",
+    "claim": "Results showing decreased cofluctuation before state transitions were replicated with the 250-ROI parcellation scheme as well as with the HCP dataset.",
+    "claim_type": "EXPLICIT",
+    "source": "Results were replicated with the 250-ROI parcellation scheme as well as with the HCP dataset (Figure 2\u2014figure supplement 1).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This describes replication of the cofluctuation findings across different parcellations and datasets.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C38",
+    "claim": "Repeating the cofluctuation analysis with null HMMs on circular-shifted time series suggests that the effect is not simply a by-product of the chosen computational model.",
+    "claim_type": "EXPLICIT",
+    "source": "Furthermore, repeating this analysis with null HMMs on circular-shifted time series suggests that the effect is not simply a by-product of the chosen computational model (Figure 2\u2014figure supplement 2).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This describes a control analysis validating the cofluctuation findings.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C39",
+    "claim": "These results are consistent with prior empirical findings that desynchronization, a 'transient excursion away from the synchronized manifold', allows the brain to switch flexibly between states.",
+    "claim_type": "EXPLICIT",
+    "source": "These results are consistent with prior empirical findings that desynchronization, a 'transient excursion away from the synchronized manifold' (Breakspear, 2002), allows the brain to switch flexibly between states (Deco et al., 2017; Harris and Thiele, 2011; Pedersen et al., 2018; Roberts et al., 2019).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This relates the findings to prior theoretical and empirical work on desynchronization and state transitions.",
+    "evidence_type": [
+      "CITATION",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C40",
+    "claim": "The probability of remaining in the same state was dominant (>85%), whereas the probability of transitioning to a different state was less than 8%.",
+    "claim_type": "EXPLICIT",
+    "source": "The probability of remaining in the same state was dominant (>85%), whereas the probability of transitioning to a different state was less than 8% (Figure 2B, Figure 2\u2014figure supplement 3).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This describes the transition probabilities between states from the HMM.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C41",
+    "claim": "The DMN, DAN, and SM states were more likely to transition to and from the base state and less likely to transition to and from one another than would be expected by chance.",
+    "claim_type": "EXPLICIT",
+    "source": "The DMN, DAN, and SM states were more likely to transition to and from the base state and less likely to transition to and from one another than would be expected by chance (Figure 2B, Figure 2\u2014figure supplement 3; FDR-p-values<0.05).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This describes the pattern of state transitions compared to null models.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C42",
+    "claim": "The result suggests that the base state acts as a hub in neural state transitions, replicating a past finding of the base state as a transitional hub in resting-state fMRI data.",
+    "claim_type": "EXPLICIT",
+    "source": "The result suggests that the base state acts as a hub in neural state transitions, replicating a past finding of the base state as a transitional hub in resting-state fMRI data (Chen et al., 2016).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This interprets the transition probability findings and cites prior work showing similar results.",
+    "evidence_type": [
+      "INFERENCE",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C43",
+    "claim": "The base state exhibited the lowest degree of global cofluctuation compared to the DMN, DAN, and SM states (paired t-tests, SONG: t(187) > 61, HCP: t(3093) > 170, FDR-p-values<0.001).",
+    "claim_type": "EXPLICIT",
+    "source": "When comparing the degree of global cofluctuation across the four latent states, we found that the base state exhibited the lowest degree of global cofluctuation (paired t-tests comparing cofluctuation in base state vs. DMN, DAN, and SM states, SONG: t(187) > 61, HCP: t(3093) > 170, FDR-p-values<0.001), which was significantly below chance (FDR-p-values<0.001).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a statistical comparison of global cofluctuation across states.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C44",
+    "claim": "The base state was the most desynchronized state among the four, potentially operating as a transition-prone state.",
+    "claim_type": "EXPLICIT",
+    "source": "This suggests that the base state was the most desynchronized state among the four, potentially operating as a transition-prone state.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an interpretation of the cofluctuation findings.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C45",
+    "claim": "Low global synchrony during the base state was not driven by spurious head motion.",
+    "claim_type": "EXPLICIT",
+    "source": "Low global synchrony during the base state was not driven by spurious head motion (Figure 2\u2014figure supplement 4).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This describes a control analysis ruling out motion artifacts.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C46",
+    "claim": "The base state, situated at the center of the gradient space, is a flexible 'hub' state with a high degree of freedom to transition to other functionally specialized states.",
+    "claim_type": "EXPLICIT",
+    "source": "Thus, the base state, situated at the center of the gradient space, is a flexible 'hub' state with a high degree of freedom to transition to other functionally specialized states.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a conclusion drawn from the transition probability and cofluctuation analyses.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C47",
+    "claim": "All four states occurred in all fMRI runs, with no state occurring on more than 50% of time points in a run.",
+    "claim_type": "EXPLICIT",
+    "source": "All four states occurred in all fMRI runs, with no state occurring on more than 50% of time points in a run.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the fractional occupancy of states across different contexts.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C48",
+    "claim": "These states are common across contexts rather than specific to one context.",
+    "claim_type": "EXPLICIT",
+    "source": "Thus, these states are common across contexts rather than specific to one context.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a conclusion drawn from the fractional occupancy analysis.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C49",
+    "claim": "Fractional occupancy differed across rest, task, and naturalistic contexts, with strikingly similar values between runs of similar contexts.",
+    "claim_type": "EXPLICIT",
+    "source": "Fractional occupancy, however, differed across rest, task, and naturalistic contexts, with strikingly similar values between runs of similar contexts (e.g., rest runs 1 and 2).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes differences in state occupancy across contexts.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C50",
+    "claim": "During the documentary, the base state occurred less frequently, whereas the SM state occurred more frequently than during the sitcom episodes.",
+    "claim_type": "EXPLICIT",
+    "source": "In contrast to the similar fractional occupancy values of the two sitcom-episode runs, fractional occupancy in the documentary-watching condition differed despite the fact that it also involved watching an audiovisual stimulus. During the documentary, the base state occurred less frequently, whereas the SM state occurred more frequently than during the sitcom episodes.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes specific differences in state occupancy between different naturalistic stimuli.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C51",
+    "claim": "Latent state dynamics were synchronized across participants watching the comedy sitcom episodes (mean pairwise participant similarity: episode 1: 40.81 \u00b1 3.84%, FDR-p=0.001; episode 2: 40.79 \u00b1 3.27%, FDR-p=0.001).",
+    "claim_type": "EXPLICIT",
+    "source": "Latent state dynamics were synchronized across participants watching the comedy sitcom episodes (mean pairwise participant similarity: episode 1: 40.81 \u00b1 3.84%, FDR-p=0.001; episode 2: 40.79 \u00b1 3.27%, FDR-p=0.001; paired comparisons, non-parametric p=0.063; Figure 3C).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This describes intersubject synchrony of brain states during sitcom watching.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C52",
+    "claim": "Less synchrony was observed between participants watching the educational documentary (30.39 \u00b1 3.38 %, FDR-p=0.001).",
+    "claim_type": "EXPLICIT",
+    "source": "Less synchrony was observed between participants watching the educational documentary (30.39 \u00b1 3.38 %, FDR-p=0.001; paired comparisons with the two sitcom episodes, both p<0.001).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes lower intersubject synchrony during documentary watching compared to sitcom watching.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C53",
+    "claim": "No significant synchrony was observed during the resting-state runs (run 1: 25.81 \u00b1 4.00 %, FDR-p=0.230; run 2: 25.84 \u00b1 4.08 %, FDR-p=0.183).",
+    "claim_type": "EXPLICIT",
+    "source": "No significant synchrony was observed during the resting-state runs (run 1: 25.81 \u00b1 4.00 %, FDR-p=0.230; run 2: 25.84 \u00b1 4.08 %, FDR-p=0.183).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the absence of intersubject synchrony during rest.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C54",
+    "claim": "The four neural states occurred in every run of every dataset tested, with maximal fractional occupancies all below 50%.",
+    "claim_type": "EXPLICIT",
+    "source": "The four neural states occurred in every run of every dataset tested, with maximal fractional occupancies all below 50%.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the generalizability of the states across multiple independent datasets.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C55",
+    "claim": "Intersubject synchrony of the latent state sequence was high during movie watching and story listening but at chance during rest.",
+    "claim_type": "EXPLICIT",
+    "source": "Intersubject synchrony of the latent state sequence was high during movie watching and story listening but at chance during rest.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This summarizes the pattern of intersubject synchrony across different contexts.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C56",
+    "claim": "These results validate that neural states identified from the SONG dataset generalize not only across contexts but also to independent datasets.",
+    "claim_type": "EXPLICIT",
+    "source": "Together the results validate that neural states identified from the SONG dataset generalize not only across contexts but also to independent datasets.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a conclusion drawn from the generalization analyses.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C57",
+    "claim": "Prior studies reported that regional activity and functional connectivity are synchronized across individuals during movie watching and story listening, and that attentional engagement modulates the degree of intersubject synchrony.",
+    "claim_type": "EXPLICIT",
+    "source": "Prior studies reported that regional activity (Hasson et al., 2004; Nastase et al., 2019) and functional connectivity (Betzel et al., 2020; Chang et al., 2022; Simony et al., 2016) are synchronized across individuals during movie watching and story listening, and that attentional engagement modulates the degree of intersubject synchrony (Dmochowski et al., 2012; Ki et al., 2016; Song et al., 2021a).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This cites prior work on intersubject synchrony during naturalistic stimuli.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C58",
+    "claim": "The results indicate that the intersubject synchrony occurs not only at regional and pairwise regional scales, but also at a global scale via interactions of functional networks.",
+    "claim_type": "EXPLICIT",
+    "source": "Our results indicate that the intersubject synchrony occurs not only at regional and pairwise regional scales, but also at a global scale via interactions of functional networks.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an interpretation of the intersubject synchrony findings in relation to prior work.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C59",
+    "claim": "Stronger entrainment to the stimulus during sitcom episodes compared to documentary-watching condition suggests that overall attentional engagement may mediate the degree of large-scale synchrony.",
+    "claim_type": "EXPLICIT",
+    "source": "Furthermore, stronger entrainment to the stimulus during sitcom episodes compared to documentary-watching condition suggests that overall attentional engagement may mediate the degree of large-scale synchrony (mean reports on overall engagement from a scale of 1 [not at all engaging] to 9 [completely engaging]: sitcom episode1: 6.78 \u00b1 1.05, episode2: 6.93 \u00b1 1.41, documentary: 3.59 \u00b1 1.21).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This relates differences in intersubject synchrony to differences in reported engagement.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C60",
+    "claim": "Participant pairs that exhibited similar engagement dynamics showed similar neural state dynamics (sitcom episode 1: Spearman's r = 0.274, FDR-p=0.005; episode 2: r = 0.229, FDR-p=0.010; documentary: r = 0.225, FDR-p=0.005).",
+    "claim_type": "EXPLICIT",
+    "source": "Indeed, demonstrating a relationship between neural state dynamics and narrative engagement, participant pairs that exhibited similar engagement dynamics showed similar neural state dynamics (sitcom episode 1: Spearman's r = 0.274, FDR-p=0.005; episode 2: r = 0.229, FDR-p=0.010; documentary: r = 0.225, FDR-p=0.005).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a correlation between behavioral and neural synchrony.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C61",
+    "claim": "The comedy sitcom episodes had unique event structures where scenes alternated between two distinct storylines (A and B) that took place in different places with different characters.",
+    "claim_type": "EXPLICIT",
+    "source": "Our comedy sitcom episodes had unique event structures. Scenes alternated between two distinct storylines (A and B) that took place in different places with different characters.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the structure of the naturalistic stimuli.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C62",
+    "claim": "Each episode included 13 events (seven events of story A and six events of B) ordered in an ABAB sequence.",
+    "claim_type": "EXPLICIT",
+    "source": "Each episode included 13 events (seven events of story A and six events of B) ordered in an ABAB sequence.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the event structure of the sitcom episodes.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C63",
+    "claim": "This interleaved event structure required participants to switch between the two storylines at event boundaries and integrate them in memory to form a coherent narrative representation.",
+    "claim_type": "EXPLICIT",
+    "source": "This interleaved event structure required participants to switch between the two storylines at event boundaries and integrate them in memory to form a coherent narrative representation (Clewett et al., 2019; DuBrow and Davachi, 2013; Zacks, 2020).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the cognitive demands of the event structure, citing prior work on event segmentation.",
+    "evidence_type": [
+      "INFERENCE",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C64",
+    "claim": "In both sitcom episodes, the DMN state was more likely to occur than would be expected by chance after event boundaries (~50% probability, FDR-p<0.01).",
+    "claim_type": "EXPLICIT",
+    "source": "In both sitcom episodes, the DMN state was more likely to occur than would be expected by chance after event boundaries (~50% probability, FDR-p<0.01), complementing past work that showed the involvement of the DMN at event boundaries (Baldassano et al., 2017; Chen et al., 2017; Reagh et al., 2020).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the relationship between the DMN state and event boundaries, citing prior work.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C65",
+    "claim": "The base state was less likely to occur after event boundaries (~10% probability).",
+    "claim_type": "EXPLICIT",
+    "source": "The base state, on the other hand, was less likely to occur after event boundaries (~10% probability).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the relationship between the base state and event boundaries.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C66",
+    "claim": "DAN and SM state occurrences were not modulated by event boundaries.",
+    "claim_type": "EXPLICIT",
+    "source": "DAN and SM state occurrences were not modulated by event boundaries (Figure 4\u2014figure supplement 1).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This describes the absence of modulation for specific states at event boundaries.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C67",
+    "claim": "These results replicated when the SONG-defined HMM was applied to a 50 min story-listening dataset in which 45 events were interleaved in an ABAB sequence.",
+    "claim_type": "EXPLICIT",
+    "source": "These results replicated when the SONG-defined HMM was applied to a 50 min story-listening dataset (Chang et al., 2021b) in which 45 events were interleaved in an ABAB sequence (Figure 4).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This describes replication of the event boundary findings in an independent dataset.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C68",
+    "claim": "A transient increase in hippocampal BOLD activity occurred after event boundaries, replicating previous work.",
+    "claim_type": "EXPLICIT",
+    "source": "A transient increase in hippocampal BOLD activity occurred after event boundaries (Figure 4\u2014figure supplement 1), replicating previous work (Baldassano et al., 2017; Ben-Yakov and Dudai, 2011; Ben-Yakov and Henson, 2018; Reagh et al., 2020).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This describes hippocampal activity at event boundaries, citing prior work.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C69",
+    "claim": "The results suggest that event boundaries affect neural activity not only at a regional level, but also at a whole-brain systems level.",
+    "claim_type": "EXPLICIT",
+    "source": "Together, our results suggest that event boundaries affect neural activity not only at a regional level, but also at a whole-brain systems level.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a conclusion drawn from the event boundary analyses.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C70",
+    "claim": "At non-event boundaries, the DMN state was most likely to transition from the base state, accounting for more than 50% of the transitions to the DMN state.",
+    "claim_type": "EXPLICIT",
+    "source": "At non-event boundaries, the DMN state was most likely to transition from the base state, accounting for more than 50% of the transitions to the DMN state.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the typical transition pattern to the DMN state.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C71",
+    "claim": "At event boundaries, base-to-DMN state transitions significantly dropped while DAN-to-DMN and SM-to-DMN state transitions increased.",
+    "claim_type": "EXPLICIT",
+    "source": "Interestingly, however, at event boundaries, base-to-DMN state transitions significantly dropped while DAN-to-DMN and SM-to-DMN state transitions increased (Figure 4C).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This describes changes in transition patterns at event boundaries.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C72",
+    "claim": "A repeated-measures ANOVA showed a significant interaction between the latent states and the event boundary conditions (sitcom episode 1: F(2,50) = 10.398; episode 2: F(2,52) = 12.794; Chang et al.: F(2,48) = 31.194; all p-values<0.001).",
+    "claim_type": "EXPLICIT",
+    "source": "A repeated-measures ANOVA showed a significant interaction between the latent states and the event boundary conditions (sitcom episode 1: F(2,50) = 10.398; episode 2: F(2,52) = 12.794; Chang et al.: F(2,48) = 31.194; all p-values<0.001).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a statistical test of the interaction between states and event boundaries.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C73",
+    "claim": "Although the base state typically acts as a transitional hub, neural state transitions at event boundaries are more likely to occur directly from the DAN or SM state to the DMN state without passing through the base state due to the DMN state's functional role at event boundaries.",
+    "claim_type": "EXPLICIT",
+    "source": "Thus, although the base state typically acts as a transitional hub (Figure 2B), neural state transitions at event boundaries are more likely to occur directly from the DAN or SM state to the DMN state without passing through the base state due to the DMN state's functional role at event boundaries.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an interpretation of the transition pattern changes at event boundaries.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C74",
+    "claim": "These results illustrate one way in which neural systems adaptively reconfigure in response to environmental demands.",
+    "claim_type": "EXPLICIT",
+    "source": "These results illustrate one way in which neural systems adaptively reconfigure in response to environmental demands.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a conclusion drawn from the event boundary analyses.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C75",
+    "claim": "Previous studies showed that large-scale neural dynamics that evolve over tens of seconds capture meaningful variance in arousal and attentional states.",
+    "claim_type": "EXPLICIT",
+    "source": "Previous studies showed that large-scale neural dynamics that evolve over tens of seconds capture meaningful variance in arousal (Raut et al., 2021; Zhang et al., 2023) and attentional states (Rosenberg et al., 2020; Yamashita et al., 2021).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This cites prior work relating neural dynamics to attention and arousal.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C76",
+    "claim": "The RT variability time course was used as a proxy for fluctuating attentional state, with moments of less variable RTs (i.e., stable performance) indicating attentive states.",
+    "claim_type": "EXPLICIT",
+    "source": "To infer participants' attentional fluctuations during the gradCPT, we recorded response times (RT) to every frequent-category trial (~1 s). The RT variability time course was used as a proxy for fluctuating attentional state, with moments of less variable RTs (i.e., stable performance) indicating attentive states (Figure 5A and B).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This describes the behavioral measure of attention during the task.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C77",
+    "claim": "Paying attention to a comedy sitcom involves less cognitive effort than attending to controlled psychological tasks, more akin to a 'flow'-like state compared to controlled tasks that require top-down exertion of control.",
+    "claim_type": "EXPLICIT",
+    "source": "Paying attention to a comedy sitcom, on the other hand, involves less cognitive effort than attending to controlled psychological tasks, more akin to a 'flow'-like state compared to controlled tasks that require top-down exertion of control (Bellana et al., 2022; Busselle and Bilandzic, 2009; Csikszentmihalyi and Nakamura, 2010; Kahneman, 1973).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the nature of attention during naturalistic stimuli, citing prior work on flow states.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C78",
+    "claim": "Attending to a narrative is affected by a rich set of cognitive processes such as emotion, social cognition, or causal reasoning.",
+    "claim_type": "EXPLICIT",
+    "source": "Attending to a narrative is further affected by a rich set of cognitive processes such as emotion (Chang et al., 2021a; Smirnov et al., 2019), social cognition (Nguyen et al., 2019; Yeshurun et al., 2021), or causal reasoning (Lee and Chen, 2022; Song et al., 2021b).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the complexity of attention during narratives, citing prior work.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C79",
+    "claim": "Participants continuously self-reported their levels of engagement on a scale of 1 (not engaging at all) to 9 (completely engaging) as they rewatched the stimuli outside the fMRI.",
+    "claim_type": "EXPLICIT",
+    "source": "To assess participants' fluctuating levels of attentional engagement during the sitcom episodes and documentary, we asked participants to continuously self-report their levels of engagement on a scale of 1 (not engaging at all) to 9 (completely engaging) as they rewatched the stimuli outside the fMRI (Figure 5A and B; Song et al., 2021a).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This describes the behavioral measure of engagement during naturalistic stimuli.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C80",
+    "claim": "During the gradCPT, participants were in a high attentional state when the DMN state occurred.",
+    "claim_type": "EXPLICIT",
+    "source": "During the gradCPT, participants were in a high attentional state when the DMN state occurred (Figure 5C).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This describes the relationship between the DMN state and attention during the task.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C81",
+    "claim": "Results showing the DMN state associated with high attention during gradCPT replicated when the SONG-trained HMM was applied to the gradCPT data collected by Rosenberg et al., 2016.",
+    "claim_type": "EXPLICIT",
+    "source": "Results replicated when the SONG-trained HMM was applied to the gradCPT data collected by Rosenberg et al., 2016 (Figure 5D).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This describes replication of the DMN-attention relationship in an independent dataset.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C82",
+    "claim": "This finding conceptually replicates previous work that showed the DMN involvement during in-the-zone moments of the gradCPT and supports the role of the DMN in automated processing of both the extrinsic and intrinsic information.",
+    "claim_type": "EXPLICIT",
+    "source": "This finding conceptually replicates previous work that showed the DMN involvement during in-the-zone moments of the gradCPT (Esterman et al., 2013; Kucyi et al., 2020) and supports the role of the DMN in automated processing of both the extrinsic and intrinsic information (Kucyi et al., 2016; Vatansever et al., 2017; Yeshurun et al., 2021).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This relates the findings to prior work on the DMN during attention tasks.",
+    "evidence_type": [
+      "CITATION",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C83",
+    "claim": "During comedy sitcoms, the base state was associated with engaged attention.",
+    "claim_type": "EXPLICIT",
+    "source": "Other neural states indicated moments of high attention during movie watching. During comedy sitcoms, the base state was associated with engaged attention (Figure 5E).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This describes the relationship between the base state and attention during sitcom watching.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C84",
+    "claim": "Results showing the base state associated with engaged attention during sitcoms replicated when the SONG-trained HMM was applied to television episode watching data collected by Chen et al., 2017.",
+    "claim_type": "EXPLICIT",
+    "source": "Results replicated when the SONG-trained HMM was applied to television episode watching data collected by Chen et al., 2017 (N = 16) (Figure 5F).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This describes replication of the base state-attention relationship in an independent dataset.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C85",
+    "claim": "To our knowledge, the involvement of the base state at engaging moments of movie watching has not been reported previously.",
+    "claim_type": "EXPLICIT",
+    "source": "To our knowledge, the involvement of the base state at engaging moments of movie watching has not been reported previously.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This states the novelty of the base state finding.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C86",
+    "claim": "During the educational documentary, the DAN state was associated with engaged attention.",
+    "claim_type": "EXPLICIT",
+    "source": "During the educational documentary, on the other hand, the DAN state was associated with engaged attention (Figure 5G).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This describes the relationship between the DAN state and attention during documentary watching.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C87",
+    "claim": "When watching a less engaging but information-rich documentary, focusing may require goal-directed and voluntary control of attention.",
+    "claim_type": "EXPLICIT",
+    "source": "When watching a less engaging but information-rich documentary, focusing may require goal-directed and voluntary control of attention (Corbetta and Shulman, 2002).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This interprets the DAN state finding during documentary watching, citing prior work on attention control.",
+    "evidence_type": [
+      "INFERENCE",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C88",
+    "claim": "Different neural states indicate engaged attention in different contexts.",
+    "claim_type": "EXPLICIT",
+    "source": "Together, the results imply that different neural states indicate engaged attention in different contexts.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a conclusion drawn from the attention analyses across contexts.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C89",
+    "claim": "The SM state occurred during moments of poor gradCPT performance in the SONG dataset (with the exception of the gradCPT scene run which had the shortest run duration, FDR-p=0.589).",
+    "claim_type": "EXPLICIT",
+    "source": "In contrast to moments of engaged attention, moments of attention lapses were associated with the same brain state during gradCPT performance and movie watching. The SM state occurred during moments of poor gradCPT performance in the SONG (with the exception of the gradCPT scene run which had the shortest run duration, FDR-p=0.589; Figure 5C) and Rosenberg et al., 2016 datasets (Figure 5D).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This describes the relationship between the SM state and poor attention during the task.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C90",
+    "claim": "The SM state occurred during periods of disengaged focus on the comedy sitcoms, the television episode of Chen et al., 2017, and the educational documentary.",
+    "claim_type": "EXPLICIT",
+    "source": "It also occurred during periods of disengaged focus on the comedy sitcoms (Figure 5E), the television episode of Chen et al., 2017 (N = 16) (Figure 5F), and the educational documentary (Figure 5G).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This describes the relationship between the SM state and disengagement during naturalistic stimuli.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C91",
+    "claim": "Higher head motion was observed during the SM state compared to the three other states.",
+    "claim_type": "EXPLICIT",
+    "source": "Higher head motion was observed during the SM state compared to the three other states (Figure 2\u2014figure supplement 4).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This describes a correlation between the SM state and head motion.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C92",
+    "claim": "The latent states consistently predicted attention when head motion was included as a predictor in a linear model (main effect of HMM latent states, F > 3, p-values<0.05 for 7 fMRI runs in Figure 5C\u2013G), demonstrating that the effects were not driven by motion alone.",
+    "claim_type": "EXPLICIT",
+    "source": "However, the latent states consistently predicted attention when head motion was included as a predictor in a linear model (main effect of HMM latent states, F > 3, p-values<0.05 for 7 fMRI runs in Figure 5C\u2013G; whereas the effect of head motion was inconsistent), demonstrating that the effects were not driven by motion alone.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a control analysis showing the attention effects are not explained by motion.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C93",
+    "claim": "In both the gradCPT and working memory task, the SM state occurred more frequently during intermittent rest breaks in between the task blocks, whereas the DMN, DAN, and base states occurred prominently during the task blocks.",
+    "claim_type": "EXPLICIT",
+    "source": "In both the gradCPT and working memory task, the SM state occurred more frequently during intermittent rest breaks in between the task blocks, whereas the DMN, DAN, and base states occurred prominently during the task blocks (Figure 5\u2014figure supplement 1).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This describes the pattern of SM state occurrence during task versus rest periods.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C94",
+    "claim": "These results suggest that the SM state indicates a state of inattention or disengagement common across task contexts.",
+    "claim_type": "EXPLICIT",
+    "source": "These results suggest that the SM state indicates a state of inattention or disengagement common across task contexts.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a conclusion drawn from the SM state analyses across contexts.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C95",
+    "claim": "Large-scale human fMRI activity can be characterized as a traversal between latent states in a low-dimensional state space.",
+    "claim_type": "EXPLICIT",
+    "source": "Our study characterizes large-scale human fMRI activity as a traversal between latent states in a low-dimensional state space.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a summary statement of the main finding.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C96",
+    "claim": "Neural states spanned predefined gradients of functional brain organization, with the state at the center functioning as a transitional hub.",
+    "claim_type": "EXPLICIT",
+    "source": "Neural states spanned predefined gradients of functional brain organization, with the state at the center functioning as a transitional hub.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a summary statement of the main finding.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C97",
+    "claim": "These gradients explained significant variance in neural dynamics, suggesting their role as a general latent manifold shared across cognitive processes.",
+    "claim_type": "EXPLICIT",
+    "source": "These gradients explained significant variance in neural dynamics, suggesting their role as a general latent manifold shared across cognitive processes.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a summary statement of the main finding.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C98",
+    "claim": "Global desynchronization marked moments of neural state transitions, with decreases in cofluctuation of the pairwise functional networks preceding state changes.",
+    "claim_type": "EXPLICIT",
+    "source": "Global desynchronization marked moments of neural state transitions, with decreases in cofluctuation of the pairwise functional networks preceding state changes.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a summary statement of the main finding.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C99",
+    "claim": "The same latent states recurred across fMRI runs and independent datasets, with distinct state-traversal patterns during rest, task, and naturalistic conditions.",
+    "claim_type": "EXPLICIT",
+    "source": "The same latent states recurred across fMRI runs and independent datasets, with distinct state-traversal patterns during rest, task, and naturalistic conditions.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a summary statement of the main finding.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C100",
+    "claim": "Neural state dynamics were synchronized across participants during movie watching and temporally aligned to narrative event boundaries.",
+    "claim_type": "EXPLICIT",
+    "source": "Neural state dynamics were synchronized across participants during movie watching and temporally aligned to narrative event boundaries.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a summary statement of the main finding.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C101",
+    "claim": "Whereas different neural states were involved in attentionally engaged states in task and naturalistic contexts, a common neural state indicated inattention in both contexts.",
+    "claim_type": "EXPLICIT",
+    "source": "Whereas different neural states were involved in attentionally engaged states in task and naturalistic contexts, a common neural state indicated inattention in both contexts.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a summary statement of the main finding.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C102",
+    "claim": "Human cognition and attention arise from neural dynamics that traverse latent states in a shared low-dimensional gradient space.",
+    "claim_type": "EXPLICIT",
+    "source": "Together, our findings suggest that human cognition and attention arise from neural dynamics that traverse latent states in a shared low-dimensional gradient space.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is the main conclusion of the study.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  }
+]

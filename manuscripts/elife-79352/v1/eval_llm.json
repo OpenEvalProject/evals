@@ -1,0 +1,246 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C8",
+      "C9"
+    ],
+    "result": "The manuscript establishes the scientific context that schizophrenia involves prefrontal network dysfunction and NMDAR synaptic malfunction, with a gap in understanding how synaptic disruptions cause network-level failures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C8, and C9 are well-supported by citations to prior research (Fromer et al., 2014; Goldman-Rakic, 1999; Javitt et al., 2012; Wang et al., 2013) and represent established knowledge in the field. These claims appropriately frame the research problem and motivation for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C13",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "The authors developed a recurrent spiking network model of prefrontal local circuits using leaky integrate-and-fire neurons with realistic NMDAR, GABAR, and AMPAR synaptic currents that can explain the link between NMDAR synaptic deficits and 0-lag spike synchrony deficits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, and C13 describe the model development, while C29-C36 provide detailed specifications. The model structure is clearly described with appropriate biological parameters. The claim that the model can explain experimental observations (C4) is supported by simulation results shown in Figures 3-7.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C6",
+      "C7",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Prior experimental work by the authors showed that blocking NMDAR in monkeys performing a cognitive control task reduced 0-lag spike synchrony and effective communication between prefrontal neurons, with synchrony increasing sharply before motor response in drug-naive conditions but being markedly weakened under NMDAR blockade.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C12, C6-C7, and C22-C28 describe previously published experimental findings (Zick et al., 2018; Kummerfeld et al., 2020) that are appropriately cited. Figure 1 provides supporting data showing temporal dynamics of spike synchrony and rate. These experimental observations provide the biological foundation that the computational model aims to explain.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Synchrony can occur naturally in cortical neurons due to local recurrent network connectivity in both asynchronous irregular and synchronous irregular regimes, distinguished by whether population spike rate is steady or oscillatory.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C17 are supported by extensive citations to prior theoretical work (Amit, 1989; Brunel, 2000; Brunel and Hakim, 1999; Brunel and Wang, 2003; etc.). These claims establish the theoretical framework for understanding network dynamics and are well-established in the computational neuroscience literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C5"
+    ],
+    "result": "Simulated prefrontal networks operating near the boundary between steady and oscillatory regimes achieve biologically realistic firing patterns, can shift to oscillatory states with increased external inputs causing 0-lag synchrony, but reducing NMDAR currents prevents this transition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C20 and C5 describe key findings from network simulations. These are supported by Figures 3-5 showing network dynamics, spike rasters, and state diagrams. The simulations demonstrate that networks near the critical boundary can transition between asynchronous and synchronous states depending on external input and NMDAR conductance, matching experimental observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Mean field analysis and linear stability analysis were used to parametrize network dynamics and determine stability, with the asynchronous state stable when \u03bb<0, critical at \u03bb=0, and unstable when \u03bb>0.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C42 describe the analytical methods used to derive network parameters and assess stability. The mean field approach and stability analysis are standard techniques in computational neuroscience, appropriately applied here. The mathematical framework is detailed in the Materials and methods section with equations provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "The balance between AMPA and GABA currents controls network oscillation frequency, which is virtually independent of NMDA/GABA balance, but the NMDA/GABA balance determines the strength of external input modulation needed for state switching.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C45 are supported by Figure 2 and Figure 2\u2014figure supplement 1, showing that oscillation frequency depends on AMPA/GABA balance but not NMDA/GABA balance. Figure 8 demonstrates that NMDA/GABA balance affects the critical line orientation in state space, determining sensitivity to external input modulation. These findings are consistent with prior work (Brunel and Wang, 2003).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "The oscillatory instability growth rate \u03bb directly depends on AMPAR conductance but is virtually independent of NMDAR conductance due to slow synaptic kinetics, while all conductances affect \u03bb indirectly through their influence on the neuron's operating point on the current-frequency response curve.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C54 describe analytical findings about mechanisms controlling network instability. These are supported by the linearized stability analysis (Equations 1-2, 93-94) and Figure 9, which shows that \u039bAMPA dominates contributions to \u03bb while \u039bNMDA and \u039bGABA are negligible. The distinction between direct and indirect effects is mathematically derived and provides mechanistic insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "The current model resolves an apparent paradox between prior modeling work (Compte et al., 2000) showing NMDAR reduction causes synchronization and experimental findings showing NMDAR blockade causes desynchronization, by demonstrating that the mechanism depends on whether AMPAR conductance is simultaneously modulated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C62 explain how the current model reconciles seemingly contradictory findings. The explanation is supported by the analytical framework showing that in Compte et al. (2000), concurrent AMPAR increase and NMDAR decrease produced synchronization via direct effects, while in the current model, NMDAR reduction prevents synchronization by affecting the indirect pathway through the operating point. This is a well-reasoned theoretical explanation consistent with Equations 6-7.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C4"
+    ],
+    "result": "The study establishes that spiking networks near the boundary between asynchronous and synchronous states can explain experimental observations including emergence of 0-lag synchrony when external inputs push the network across the boundary and failure of synchrony to emerge when NMDAR currents are reduced.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C89 summarize the main contribution. This is supported by Figure 6 showing strong parallels between model predictions and experimental data, including temporal correlation patterns and the effects of NMDAR blockade. Figure 7 demonstrates that transient external inputs produce dynamics matching experimental observations in Figure 1. The model successfully captures key features of the biological data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C21"
+    ],
+    "result": "Prior modeling studies of working memory and NMDAR function in prefrontal networks (Compte et al., 2000; Murray et al., 2014) did not address how NMDAR and external input jointly influence spike timing and oscillatory dynamics, which is the focus of the current study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C68 and C21 appropriately cite and distinguish the current work from prior modeling studies. The claims accurately represent prior work on working memory and attractor dynamics while identifying the novel contribution of the current study: explaining the relationship between NMDAR mechanisms, spike timing, and network oscillations observed in neural recordings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "The authors previously hypothesized that reduced spike synchrony could disconnect prefrontal circuits via STDP, but acknowledge that diverse results from STDP modeling studies make it difficult to conclude definitively that reduced synchrony would lead to synaptic disconnection, although this remains a possibility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C76 present a hypothesis and appropriately acknowledge its limitations based on divergent findings in STDP literature. The authors cite relevant studies (Izhikevich et al., 2004; Morrison et al., 2007; Litwin-Kumar and Doiron, 2014) and honestly assess that their prior hypothesis requires additional validation. This represents appropriate scientific caution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Genetic studies have implicated NMDAR dysfunction in schizophrenia, and since NMDARs play a central role in STDP mechanisms, NMDAR disruption may alter STDP directly, independent of effects on spiking dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C79 are supported by citations to genetic studies (Fromer et al., 2014; Schizophrenia Working Group, 2014) and established knowledge about NMDAR's role in STDP. Claim C79 is appropriately presented as speculation ('may alter') about potential mechanisms, not as a demonstrated finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Convergent spike desynchronization observed in monkey NMDAR blockade and mouse Dgcr8 deletion models could potentially be explained by an inverted U-shaped relationship between NMDAR function and spike synchrony, but additional experimental data are needed to establish this relationship directly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C80-C85 propose an inverted U-shaped hypothesis to explain convergent findings from two different models. While the hypothesis is plausible and analogous to established U-shaped relationships for dopamine (C84, Vijayraghavan et al., 2007), the authors appropriately acknowledge (C85) that their prior studies did not directly test this relationship. The hypothesis requires additional experimental validation.",
+    "result_type": "MINOR"
+  }
+]

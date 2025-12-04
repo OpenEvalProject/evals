@@ -1,0 +1,1496 @@
+{
+  "submission": {
+    "id": "0b6a9a12-80cc-497f-acdd-1af4eeecaa19",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-04T04:59:10.922210Z",
+    "updated_at": "2025-12-04T04:59:10.922210Z"
+  },
+  "content": [
+    {
+      "id": "66f7b4a2-2d04-4932-9bd6-e1711ee7dbbc",
+      "submission_id": "0b6a9a12-80cc-497f-acdd-1af4eeecaa19",
+      "content_type": "manuscript",
+      "content_text": "# Dynamic readout of the Hh gradient in the Drosophila wing disc reveals pattern-specific tradeoffs between robustness and precision\n\n## Authors\n\n- Rosal\u00edo Reyes<sup>1</sup>\n- Arthur D Lander<sup>3</sup> ([ORCID: 0000-0002-4380-5525](https://orcid.org/0000-0002-4380-5525))\n- Marcos Nahmad<sup>1</sup> ([ORCID: 0000-0001-6300-5608](https://orcid.org/0000-0001-6300-5608)) \u2020\n\n### Affiliations\n\n1. Department of Physiology, Biophysics, and Neurosciences; Center for Research and Advanced Studies of the National Polytechnic Institute (Cinvestav) Mexico City Mexico ([ROR:009eqmr18](https://ror.org/009eqmr18))\n2. Interdisciplinary Polytechnic Unit of Biotechnology of the National Polytechnic Institute Mexico City Mexico\n3. Department of Developmental and Cell Biology and Center for Complex Biological Systems, University of California, Irvine Irvine United States ([ROR:04gyf1771](https://ror.org/04gyf1771))\n\n\u2020 Corresponding author\n\n## Abstract\n\nUnderstanding the principles underlying the design of robust, yet flexible patterning systems is a key problem in developmental biology. In the Drosophila wing, Hedgehog (Hh) signaling determines patterning outputs using dynamical properties of the Hh gradient. In particular, the pattern of collier (col) is established by the steady-state Hh gradient, whereas the pattern of decapentaplegic (dpp), is established by a transient gradient of Hh known as the Hh overshoot. Here, we use mathematical modeling to suggest that this dynamical interpretation of the Hh gradient results in specific robustness and precision properties. For instance, the location of the anterior border of col, which is subject to self-enhanced ligand degradation is more robustly specified than that of dpp to changes in morphogen dosage, and we provide experimental evidence of this prediction. However, the anterior border of dpp expression pattern, which is established by the overshoot gradient is much more precise to what would be expected by the steady-state gradient. Therefore, the dynamical interpretation of Hh signaling offers tradeoffs between robustness and precision to establish tunable patterning properties in a target-specific manner.\n\n## Introduction\n\nDevelopmental patterning must be robust to variety of genetic and environmental perturbations in order to ensure a reproducible and functional body plan. Since patterns of gene expression are often specified by morphogen gradients, there has been considerable interest in understanding how these gradients reliably establish positional boundaries (Neumann and Cohen, 1997; Gurdon and Bourillot, 2001; Lander, 2007; Claret et al., 2007; Iba\u00f1es and Izpis\u00faa Belmonte, 2008; Rogers and Schier, 2011; Li et al., 2018; Stapornwongkul et al., 2018). This reliability depends on the robustness of pattern specification with respect to different perturbations, as well as the precision or sharpness of pattern boundaries. Several theoretical studies have investigated the properties in which patterning robustness is ensured (Eldar et al., 2003; Bergmann et al., 2007; Lander et al., 2009; Adelmann et al., 2023). These studies are generally based solely on steady-state morphogen profiles and therefore, robustness applies equally to all patterning targets. As a result, steady-state morphogen gradients cannot tune these patterning properties in a target-specific manner. The Drosophila wing imaginal disc has become a useful system to study the mechanisms of morphogen formation and interpretation and offers testable patterning outputs in terms of both robustness and precision in the adult wing (Hartl and Scott, 2014; Restrepo et al., 2014; Chen and Zou, 2019). Along the anterior\u2013posterior (AP) axis, the Drosophila wing is patterned by the Hedgehog (Hh) and Decapentaplegic (Dpp) morphogen gradients that determine the position of the longitudinal veins L2\u2013L5 (Blair, 2007). Hh is produced in cells of the posterior compartment during the third larval instar and forms a short-range signaling gradient into the anterior compartment (Tabata and Kornberg, 1994). The Hh gradient organizes AP patterning of the wing both directly and indirectly; it defines adult patterning outcomes, such as the expression of the transcription factor knot or collier (col) which sets the distance between the longitudinal veins L3 and L4 (Vervoort et al., 1999; Anonymous, 2000); and the expression of decapentaplegic (dpp) in a domain broader than col (Basler and Struhl, 1994; Vervoort, 2000). While dpp does not have a direct patterning output in the adult wing, Dpp then acts as a long-range morphogen to globally coordinate patterning and growth along the AP axis (Affolter and Basler, 2007).\n\nContrary to other signaling pathways in which a ligand activates a signaling cascade by binding to its receptor, Hh signaling is activated by removing the receptor Patched (Ptc) from the plasma membrane, a process that is promoted by Hh binding and endocytosis (Torroja et al., 2005). This suggests that Hh signaling activity solely depends on the number of unbound Ptc receptors. However, a study suggested that the levels of Hh-bound Ptc can titrate the inhibitory effects of unbound Ptc and proposed that Hh signaling activity is more accurately represented by the ratio of bound to unbound Ptc receptor (Casali and Struhl, 2004). Importantly, an evolutionary conserved feature of the Hh signaling pathway is that ptc is itself a target of the signal. Since Ptc expression attenuates the dispersion and strength of signaling activity, Hh-dependent Ptc upregulation acts as a negative feedback that self-limits the range of the gradient (Chen and Struhl, 1996; Briscoe et al., 2001). This feedback property of Hh signaling results in self-enhanced ligand degradation which makes a narrower, but more robust gradient to perturbations in ligand dosage (Eldar et al., 2003; Lander et al., 2009).\n\nHh-dependent Ptc upregulation also provides an alternative interpretation of positional information, in which instead of using multiple concentration thresholds of the Hh steady state as in the classical morphogen model, patterning is established by interpreting positional information in a temporal manner using a single-threshold signaling range defined by a transient and the steady-state gradients (Nahmad and Stathopoulos, 2009). In particular, the boundary of dpp is established by an extended pre-steady-state gradient, known as the overshoot, while the anterior border of col is established by the steady-state gradient. Since the overshoot occurs prior to Hh-dependent Ptc upregulation, dpp should not exhibit the robustness property offered by the self-enhanced ligand degradation mechanism, but this has not yet been documented experimentally.\n\nA study by Irons et al. compared the width of col expression in the wing disc as well as the L3\u2013L4 intervein distance in adult wings of hh heterozygous and wild-type animals and found that they are not statistically different, supporting that some robustness to Hh dosage is exhibited by the system (Irons et al., 2010). Furthermore, Hatori et al. showed that the widths of col or ptc patterns do not significantly change in discs with 1, 2, 3, or 4 hh gene copies (Hatori et al., 2021). However, it remains unclear if the same robustness is exhibited by dpp which depends on the dynamics of the Hh gradient. By using mathematical modeling, here we show that when patterns are established by steady-state models of patterning all target genes exhibit the same robustness with respect to changes in morphogen production, in agreement with prior theoretical work (Eldar et al., 2003). However, when the Hh gradient is interpreted dynamically through the overshoot model (Nahmad and Stathopoulos, 2009), robustness to hh dosage becomes target specific. In particular, the specification of the anterior border of col is more robust than that of dpp, since the latter is independent of Hh-dependent Ptc upregulation. In contrast, we show that the anterior border of dpp model under the overshoot model offers increased precision, relative to what would be expected in the steady state only patterning model. Taken together, our work shows that the overshoot model of Hh signaling enables tunable robustness and precision properties in a target-specific manner. We discuss implications of this dynamic patterning model in the context of balancing reliability and flexibility during developmental patterning.\n\n## Results\n\n### Steady-state interpretation of morphogen gradients predicts identical robustness to morphogen dosage for all targets\n\nPrior work on morphogen robustness has relied on quantifying displacements of the overall gradient shape (Gurdon and Bourillot, 2001; Tabata and Takei, 2004) or a single-threshold location of a gradient (Eldar et al., 2003). Robustness can be measured by computing the displacement ($\u0394x$) of the pattern boundary defined by a given morphogen threshold concentration, $T$, as result of a specific perturbation:\n\n$$\n\u0394x=|x(T)\u2212x~(T)|,\n$$\n\nwhere $x(T)$ and $x~(T)$ are the positions defined by the concentration threshold $T$ of the unperturbed and perturbed morphogen gradients, respectively. Since Equation 1 is an absolute measure of robustness, in practice, perfect robustness occurs when $\u0394x$ is less than the diameter of a single cell.\n\nTo investigate robustness of different target genes, we first analyze robustness predicted by classical morphogen models, that is, in which territories are defined by different thresholds of the steady-state gradient. As a starting model, we consider a free-diffusion, linear-degradation model at the steady state:\n\n$$\n\\frac{d^{2}M}{dx^{2}}\u2212\\frac{1}{\\lambda^{2}}M=0,\n$$\n\nwhere $M$ is the concentration of the morphogen and $\\lambda^{2}$ is the square of the characteristic gradient length, defined by the ratio between the diffusion coefficient and the degradation rate of the ligand $M$, subject to the following boundary conditions:\n\n$$\nB.C.1.M(0)=M_{0},B.C.2.limx\u2192\u221eM(x)=0.\n$$\n\nIn this case, a perturbation in the morphogen source, $M_{0}\u2192M~_{0}$, results in a uniform displacement of the gradient which is given by $\u0394x=\\lambdaln\u2061(M~_{0}/M_{0})$ (Eldar et al., 2003), showing that patterns established by different thresholds exhibit the same response to this perturbation. This occurs because the solution of the perturbed problem is just a constant shift of the morphogen profile (Figure 1b\u2013d).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/85755/elife-85755-fig1-v2.jpg)\n\n**Figure 1.:** (a) Simple model of Hh signaling using a time-dependent step-wise degradation function. Diagrams displays a pre steady-state gradient that then retracts upon Hh-dependent ptc upregulation, resulting in a narrower gradient. (b, c) Plots of the analytical solution for the model in a using full ($Hh(x=0)=1$); (b, b\u2019) or half ($Hh(x=0)=0.5$); (c, c\u2019) Hh dosage. (d, d\u2019) Displacements upon the above perturbation for the steady-state model with two thresholds (dotted horizontal lines corresponding to the locations of col and dpp) d; and for the dynamical interpretation model with a single-threshold readout (single dotted horizontal line) using the overshoot vs. the steady-state gradient predicts different shifts d\u2019. The parameter values used for these plots are: $\\lambda_{over}=21\u03bcm$, $\\lambda_{SS}=12\u03bcm$ which approximately correspond to the anterior border positions of col and dpp, respectively. The color coding of dpp in red and col in green, will be used in the rest of the article.\n\nWe then considered a very simple model of Hh signaling in the Drosophila wing. Since the expression of Ptc, the Hh receptor, is upregulated by Hh signaling and contributes to Hh degradation by binding the Hh ligand, we considered a model in which ligand degradation has different values within and beyond a presumptive Ptc expression domain:\n\n$$\n\\frac{\u2202Hh}{\u2202t}=D\\frac{\u2202^{2}Hh}{\u2202x^{2}}+\\theta(x)\\alpha_{Hh}\u2212\\beta(x,t)Hh\n$$\n\nwhere $\\theta(x)\\alpha_{Hh}$ represents the source of Hh in the posterior compartment of the wing disc (i.e., $\\theta(x)$ is equal to 1 or 0, depending on whether $x$ is a location in the posterior [$x<0$] or anterior compartment [$x>0$], respectively), and\n\n$$\n\\beta(x,t)=\\gamma_{Hh_Ptc}Ptc+\\beta_{Hh},\n$$\n\nwhere $\\gamma_{Hh_Ptc}$ is the mass action constant for $Hh_Ptc$ binding. At the steady state, we expect that $Ptc$ forms a uniform expression pattern over a stripe of anterior cells abutting the AP border (referred as $Ptc_{ss}$) and away from the stripe, $Ptc$ is expressed at basal levels, $Ptc_{0}$. Then, at the steady state $\\beta_{steady-state}(x)$ can be modeled as the step function\n\n$$\n\\beta_{steady-state}(x)={\\gamma_{Hh_Ptc}Ptc_{ss}+\\beta_{Hh},0<x<b,\\gamma_{Hh_Ptc}Ptc_{0}+\\beta_{Hh},otherwise,\n$$\n\nwhere $b$ is the width of the Ptc stripe. For $x>0$, the steady-state solution of Equation 4 is given by\n\n$$\nHh(x)={Hh_{stripe}(x)=Ae^{x/\\lambda_{2}}+Be^{\u2212x/\\lambda_{2}},0<x<bHh_{beyondPtc}(x)=Ce^{\u2212x/\\lambda_{1}},x\\geqb.\n$$\n\nwhere $\\lambda_{1}$ and $\\lambda_{2}$ are the morphogens characteristic lengths within and beyond the Ptc stripe, and A, B, and C are constants determined by the boundary conditions. Upon a perturbation $\\alpha_{Hh}\u2192\\alpha~_{Hh}$, perturbed Hh concentrations are given by:\n\n$$\nHh~_{stripe}(x)=Ae^{[x+\\frac{1}{\\lambda_{2}}ln\u2061\u27ee\\frac{\\alpha~_{Hh}}{\\alpha_{Hh}}\u27ef]/\\lambda_{2}}+Be^{\u2212[x\u2212\\frac{1}{\\lambda_{2}}ln\u2061\u27ee\\frac{\\alpha~_{Hh}}{\\alpha_{Hh}}\u27ef]/\\lambda_{2}},\n$$\n\nand\n\n$$\nHh~_{beyondPtc}(x)=Ce^{\u2212[x\u2212\\frac{1}{\\lambda_{1}}ln\u2061\u27ee\\frac{\\alpha~_{Hh}}{\\alpha_{Hh}}\u27ef]/\\lambda_{1}}.\n$$\n\nNote that once again, all territories defined by $Hh_{beyondPtc}$ are shifted by the same amount, $\\lambda_{1}ln\u2061(\\frac{\\alpha~_{Hh}}{\\alpha_{Hh}})$, upon variations in $\\alpha_{Hh}$. Therefore, any two target genes whose borders are defined by different concentration thresholds will exhibit the same robustness response.\n\n### Dynamic models of Hh signaling using a single threshold for different targets predict differential robustness\n\nPrevious work showed that Hh signaling in the Drosophila wing disc the anterior border of the Hh targets dpp and col are established by a single threshold at two time points during the formation of the Hh gradient; namely, at the overshoot and the steady state, respectively (Nahmad and Stathopoulos, 2009). To consider this dynamical patterning mechanism, we analyzed a simplified model which takes into accountx the temporal upregulation of ptc as a time-dependent switch function (Figure 1a). Following the overshoot model in Nahmad and Stathopoulos, 2009, we defined the overshoot gradient as the transient profile of maximum range. Since the timescale of Hh diffusion is much faster than the timescale of Ptc upregulation, we will assume that the Hh gradient reaches a pre-steady state with the first degradation rate, $\\beta_{early}$, where the anterior border of dpp is approximately defined and then the real steady state with the second degradation rate, $\\beta_{late}$ (Figure 1b\u2019). Under this simple model of Hh signaling, the shift in patterning borders defined by the overshoot (i.e., dpp) and the displacement at the steady state are related by the following simple equation:\n\n$$\n\u0394x_{SS}=\\frac{\\lambda_{SS}}{\\lambda_{over}}\u0394x_{over},\n$$\n\nwhere $\\lambda_{over}$ and $\\lambda_{SS}$ are the morphogen characteristic lengths before and after ptc upregulation, respectively (see Figure 1a). Since $\\beta_{early}<\\beta_{late}$, then $\\lambda_{SS}<\\lambda_{over}$ and $\u0394x_{SS}<\u0394x_{over}$, that is, overshoot-dependent targets are less robust than those established by the steady-state gradient. Then, in contrast to the steady-state model (Figure 1b\u2013d), the overshoot model predicts differences in target gene displacement upon perturbation of morphogen dosages (Figure 1b\u2019\u2013d\u2019), that is, robustness is target dependent, with higher robustness predicted for col patterning due to self-enhanced ligand degradation, than for dpp patterning (Figure 1d, d\u2019). The ratio $\\lambda_{SS}/\\lambda_{over}$ in Equation 10 may be written in terms of the kinetic parameters of Hh signaling (see Equation 6):\n\n$$\n\u0394x_{SS}=\\frac{\\beta_{over}}{\\beta_{SS}}\u0394_{over}=\\frac{\\gamma_{Hh_Ptc}Ptc_{SS}+\\beta_{Hh}}{\\gamma_{Hh_Ptc}Ptc_{over}+\\beta_{Hh}}\u0394x_{over}\u2248\\frac{Ptc_{SS}}{Ptc_{over}}\u0394x_{over}.\n$$\n\nThe last approximation, which assumes that Ptc-dependent Hh degradation is much faster than other means of Hh degradation, provides an estimate of the difference in robustess for overshoot and steady-state targets as a function of Ptc levels. Note that in Equation 11, the difference in $\u0394x$ between the steady state and overshoot model is independent of the specific threshold at which the Hh gradient establishes positional information. Thus, this equation provides a way to experimentally relate pattern robustness to actual patterning outputs in the system, such as Ptc expression levels (see Discusion).\n\nWe then asked if these results also hold in a more explicit model of the Hh pathway (Nahmad and Stathopoulos, 2009):\n\n$$\n\\frac{\u2202Hh}{\u2202t}=D\\frac{\u2202^{2}Hh}{\u2202x^{2}}+S^{+}(x)\\alpha_{Hh}\u2212\\gamma_{Hh_Ptc}Hh\\timesPtc\u2212\\beta_{Hh}Hh,\n$$\n\n\n\n$$\n\\frac{\u2202ptc}{\u2202t}=S^{\u2212}(x)\\alpha_{ptc0}+\\frac{\\alpha_{ptc}Signal^{m}}{k_{ptc}^{m}+Signal^{m}}\u2212\\beta_{ptc}ptc,\n$$\n\n\n\n$$\n\\frac{\u2202Ptc}{\u2202t}=\\mu_{Ptc}ptc\u2212\\gamma_{Hh_Ptc}Hh\\timesPtc\u2212\\beta_{Ptc}Ptc,\n$$\n\n\n\n$$\n\\frac{\u2202Hh_Ptc}{\u2202t}=\\gamma_{Hh_Ptc}Hh\\timesPtc\u2212\\beta_{Hh_Ptc}Hh_Ptc,\n$$\n\n\n\n$$\n\\frac{\u2202Signal}{\u2202t}=\\frac{S^{\u2212}(x)\\alpha_{Signal}(\\frac{Hh_Ptc}{Ptc})^{n}}{k_{Signal}^{n}+(\\frac{Hh_Ptc}{Ptc})^{n}}\u2212\\beta_{Signal}Signal,\n$$\n\nwhere $Hh$, $ptc$, $Ptc$, and $Hh_Ptc$ are the concentrations of Hh, ptc (mRNA), Ptc (protein), and the Hh-Ptc complex, respectively. The coefficients $\\alpha$, $\\beta$, $\\gamma$, and \u03bc represent the rates of synthesis, degradation, complex formation, and translation, respectively (see Figure 2-source data 6). We used a system of coordinates centered on the AP boundary with the anterior compartment on the negative side. $S^{+}(x)$ [alternatively, $S^{\u2212}(x)$] is a step function of the form $S^{+}(x)=1$ if $x>0$ (alternatively, $S^{\u2212}(x)=1$ if $x<0$) and zero otherwise. $Signal$ represents the intracellular response of Hh signaling activity that activates target gene expression. The system of Equations 12\u201316 is subject to the following boundary and initial conditions:\n\n$$\nI.C. 1ptc(x,0)=S^{\u2212}(x)\\frac{\\alpha_{ptc0}}{\\beta_{ptc}},I.C. 2Ptc(x,0)=\\frac{\\mu_{Ptc}}{\\beta_{Ptc}}ptc(x,0)=S^{\u2212}(x)\\frac{\\alpha_{ptc0}\\mu_{Ptc}}{\\beta_{ptc}\\beta_{Ptc}},B. C.\\frac{\u2202Hh}{\u2202x}|_{x=\u2212100}=\\frac{\u2202Hh}{\u2202x}|_{x=100}=0.\n$$\n\nWe solved Equations 12\u201316 numerically and computed $\u0394x$ (as in Equation 1) for the overshoot and steady-state $Signal$ gradients upon a range of perturbations of the wild-type Hh production rate, $\\alpha_{Hh_{0}}$ (Figure 2a). In agreement with our previous result (Figure 1), we found that the steady-state outputs are more robust than the overshoot outputs (Figure 2a). Moreover, this result holds independently of the specific choice of model parameters (Figure 2b). We conclude that higher robustness is predicted for targets specified by the steady-state gradient (col), with respect to those specified by the overshoot profile (dpp).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/85755/elife-85755-fig2-v2.jpg)\n\n**Figure 2.:** (a) $\u0394x$ (defined as in Equation 1, but for the $Signal$ function, see Materials and Methods) for overshoot (red) vs. steady-state (green) outputs upon different perturbations in $\\alpha_{Hh}$ using the values of the parameters reported in Nahmad and Stathopoulos, 2009 (Figure 2\u2014source code 2 and 3 and Figure 2\u2014source data 1, 2, and 6). (a\u2019) $\u0394x$ defined and color coded as in a, for different combinations of parameter runs, when all parameters (other than $\\alpha_{Hh}$) are varied through a random normal distribution around the mean value with a standard deviation of 10% of the mean value (Figure 2\u2014source data 2). (b) Same as a, but for perturbations in $\\alpha_{ptc}$ (Figure 2\u2014source data 3). (b\u2019) Comparison of $\u0394x$ for different parameters runs as in a\u2019 for steady-state outputs (light green dots) and when $\\alpha_{ptc=0}$ (dark green empty circles; Figure 2\u2014source data 4). (c) $\u0394x$ defined as in a, computed for the $Signal$ gradient over time (Figure 2\u2014source data 5). Red and green vertical lines indicate the overshoot and steady-state values corresponding to the anterior borders of dpp and col, respectively (Figure 2\u2014source code 1).\n\n### Robustness of steady-state outputs depends on Hh-dependent Ptc regulation\n\nSince previous work suggests that Hh-dependent ptc upregulation determines the range of the signal (Chen and Struhl, 1996), we wanted to confirm that Hh-dependent ptc regulation is responsible for the difference in robustness of Hh outputs. We perturbed the ptc production rate, $\\alpha_{ptc}$, and noticed that $\u0394x$ computed using the steady-state $Signal$ profile is clearly reduced, but has little effect when computed with the overshoot $Signal$ function (green vs. red dots in Figure 2b). Once again, this result is largely independent of the choice of parameters since robustness always improves compared to the case when $\\alpha_{ptc}=0$ (Figure 2b\u2019). Therefore, we suggest that Hh-dependent Ptc upregulation is responsible for differential robustness in this system by making steady-state outputs more robust with respect to overshoot-defined outputs.\n\nPrior theoretical work suggests that when positional information is established before the steady state, it enhances robustness (Bergmann et al., 2007). This idea appears to contradicts our finding that overshoot-dependent patterning (which occurs prior to steady state) is less robust than steady-state-dependent patterning (Figure 2a, b). In order to understand the relative robustness of pre-steady-state gradients, we computed $\u0394x$, upon perturbations of $\\alpha_{Hh}$ as a function of time in our model of Hh signaling. We found that early transient states exhibit the smallest $\u0394x$ and therefore are the gradients that drive the more robust outputs, although they have a very limited range (Figure 2c), in agreement with the study of Bergmann et al., 2007. Then, $\u0394x$ increases as the gradient approaches the overshoot when it reaches a maximum, before it starts to decrease again toward the steady state (Figure 2c).\n\n### col expression is more robust than dpp expression in the Drosophila wing disc\n\nWe then proceeded to test experimentally whether Hh targets are diferentially robust to changes in Hh dosage as predicted by the overshoot model. Previous studies showed that the width of the col domain is largely unaffected in hh heterozygous wing discs (Irons et al., 2010; Hatori et al., 2021). To investigate if this robustness property also holds for dpp, which is established by the overshoot (Nahmad and Stathopoulos, 2009), we examined the patterns of col (using a Col antibody) and dpp (using a dpplacZ reporter) in discs carrying 1 or 2 copies of hh (referred as hh(+/\u2212) and hh(+/+), respectively). We found that the width of the Col pattern in hh(+/\u2212) mutant discs is reduced by 1.66 $\u03bcm$ relative to hh(+/+) wild-type discs (Figure 3a, b, e). Although this difference is statistically significant, it is less than the average diameter of a single cell (about 2.5 \u03bcm) and therefore, it confirms previous experimental findings (Irons et al., 2010; Hatori et al., 2021). However, the pattern of dppLacZ is reduced by 4.44 \u03bcm in hh(+/\u2212) discs relative to hh(+/+) controls (Figure 3c\u2013e). This result does not depend on the size of the wing disc, since the pouch area in both, hh(+/\u2212) and hh(+/+) discs are approximately the same (Figure 3\u2014figure supplement 1), nor on the threshold used to measure the width of the patterns (see Figure 3\u2014figure supplement 2). We conclude that, in agreement with the overshoot model of Hh signaling, but not with any of the steady-state models, the pattern width of Col is more robust than the pattern width of anterior dppLacZ.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/85755/elife-85755-fig3-v2.jpg)\n\n**Figure 3.:** (a-d) Representative third-instar wild-type, hh(+/+) (a, c), and hh heterozygous hh(+/\u2212) (b, d) wing discs immunostained with Col (a, b) and \u03b2-galactosidase (c, d) antibodies. Both hh(+/+) and hh(+/\u2212) flies carry a transgene with a dppLacZ enhancer trap, so \u03b2-galactosidase marks the pattern of dpp expression. The scale bars in a, a\u2019 apply to b, b\u2019; c, c\u2019; and d, d\u2019 panels, respectively. (a\u2019-d\u2019) Enlarged areas of the white boxes shown in (a-d). (e) Widths of the col and dppLacZ patterns (color coded as in a\u2013d) measured in the region marked by the white rectangle (see Figure 3\u2014source data 1 and Figure 3\u2014source code 1). The brackets on the right represent the difference between the medians of both groups. A non-parametric Mann\u2013Whitney U test was applied in both cases (Figure 3\u2014source data 1). Statistical p-values are $3.0\\times10^{\u22124}$ for Col (**) and $6.0\\times10^{\u22123}$ for dppLacZ (***). hh(+/\u2212) discs (n = 14). hh(+/+) discs (n = 23). See Figure 3\u2014source code 1.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/85755/elife-85755-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** The pouch area was calculated as the area enclosed by the hinge-pouch folds. Statistical p-value after a Student t-test.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/85755/elife-85755-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Width of the gene patterns measured at different threshold concentrations measured as in Figure 3e (color coding is as in Figure 3). Numbers at the top are the differences between medians of both groups. **** indicates that p-values after a non-parametric Mann-Whitney U test are less than 0.00005.\n\n### The overshoot model predicts higher precision in the establishment of the dpp border than would be expected from the classical steady-state model\n\nOur findings that the width of dpp is less robust than the width of col in agreement with the overshoot model is puzzling. Why would Hh patterning uses a dynamic mechanism that patterns dpp at the time of least robustness (Figure 2c)? Why would col and dpp have different robustness properties (Figures 1d, 2a, and 3)? We wondered if this dynamical model trades off one patterning advantage over another in a target-specific manner. Morphogen concentrations are naturally noisy, which may cause territories to have a diffuse border especially when the morphogen narrowly declines due to self-dependent ligand degradation (Lander et al., 2009). In particular, we noticed that if dpp had to be specified by the steady-state gradient subject to Ptc-dependent degradation, instead that with the overshoot gradient, it would have to be specified at a location where the Hh gradient is nearly flat (Figure 4a). But at this same location, the Hh gradient is not as flat (Figure 4b). Therefore, we predicted that the overshoot model would establish a more precise dpp anterior boundary compared to a steady-state model, suggesting that the dynamic interpretation of Hh signaling would trade off robustness for precision. Therefore, we analyzed the performance of the overshoot and steady-state models at specifying the sharpness of a pattern boundary. We defined a measure of precision, $\\sigma_{x}$, for an experimental or simulated pattern boundary as the standard deviation of different measurements along the extension of the pattern (Figure 4c). Evidently, perfect precision occurs for $\\sigma_{x}=0$, when the pattern would be completely sharp. In contrast, as $\\sigma_{x}$ increases, the less precise the pattern boundary is.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/85755/elife-85755-fig4-v2.jpg)\n\n**Figure 4.:** (a, b). Representation of the steady-state (a) and overshoot (b) Hh gradients. At the location of the dpp anterior border, the slope of the gradient is steeper for the overshoot gradient than for the steady-state gradient. (c) Schematic representation of how we define our measure of precision for a patterning border (both in experimental and in simulated patterns). First, a box defines the region of interest (ROI) in the pattern. Then, this ROI is subdivided in $n$ boxes, each of which define a position $x_{i}$. The measure of precision is the standard deviation of all the $x_{i}$ values. (d, e) Representative Col (d) and dppLacZ (e) patterns in which the $x_{i}$ for each ROI as defined in c is measured and marked with an asterisk along the anterior border. (f) Quantification of $\\sigma_{x}$ in several experimental (exp) and simulated (sim) patterns of col (green) and dpp (red). In the simulated patterns, noise levels are adjusted so that the distributions of col are not statistically significant and these noise levels are used to computed the simulated $\\sigma_{x}$ of dpp as determined by the steady state (ss) or overshot (over) models. exp sample sizes as in Figure 3. sim sample sizes is n = 50 in all cases. For the statistical comparison, a Mann\u2013Whitney U tests were applied in all cases. Statistical p-value for col was $p=0.42$. For experimental vs. overshoot dpp: $p=1.0\\times10^{\u22123}$ (**), and for experimental vs. simulated steady-state dpp: $p=9.0\\times10^{\u22123}$ (**).\n\nWe first measured $\\sigma_{x}$ at the anterior border of col and dpp in hh(+/+) wing discs reported in Figure 3. We found that col is about twice more precise than dpp (Figure 4d\u2013f). Then, we compared the precision of the anterior border in simulated patterns of col and dpp (as defined both by the overshoot and steady-state gradients). To do so, we introduced Gaussian noise in the threshold $T$ at which the Signal function establishes a patterning position (see Materials and methods). Since the mechanism that sets the anterior border of the col pattern is the same in both the overshoot and steady-state interpretations, we fitted the extent of noise in the threshold $T$ such that the precision of the simulated border of col is the same as the one we measured in the experimental pattern ($\\sigma_{x}$ = 1.23 $\u03bcm$). At this extent of noise in $T$, we compared the simulated border of $dpp$ defined by the overshoot ($dpp_{over}$) and steady-state models ($dpp_{SS}$). We found that under the overshoot model, the anterior border of $dpp$ is predicted to be more precise than under the steady-state model (Figure 4f). Indeed, the overshoot model predicts a sharper border to what is observed experimentally, but this is not biologically significant since $\\sigma_{x}$ is less than one cell diameter in both cases. However, the mean of $\\sigma_{x}$ for the simulated dpp border under the steady-state model is 4.36 \u03bcm, suggesting that if the anterior border of dpp was established by a steady-state gradient, it would have an imprecision of approximately two cell diameters, which could have some patterning impact in the adult wing (see Discussion).\n\n## Discussion\n\nThe robust architecture of body plans to genetic and environmental perturbations is a general feature of developmental systems (Waddington, 1942; Csete and Doyle, 2002; Kitano, 2004). At the same time, this robust design should also admit some flexibility in order to allow the system to evolve and adapt under certain genetic or environmental challenges (Barkai and Shilo, 2007). While much work has been dedicated to the understanding of network features that confer robustness in developmental patterning, it is unclear how a robust, yet flexible architecture could be encoded in the interpretation of morphogen gradients (Lander et al., 2009; Lo et al., 2015). In particular, despite much prior theoretical work, the ability of a single morphogen to produce different patterning outputs with target-specific properties has not been studied in detail.\n\nRelative to the classical view of morphogen interpretation, in which different morphogen concentration thresholds at the steady state define different borders of gene expression patterns, two strategies have been proposed to increase robustness to changes in the rates of morphogen production. First, morphogen gradients that promote their own degradation and sharply decay near the source of ligand production (Eldar et al., 2003). And second, gradients that specify patterns prior to steady state (Bergmann et al., 2007). When implementing either of these strategies, increased robustness is achieved for all gene expression patterns, regardless of the concentration thresholds at which they are established. However, both of these strategies have a clear inconvenience; they significantly narrow the patterning domain, and therefore, morphogen readout occurs where the gradient is essentially flat (Adelmann et al., 2023). Thus, these strategies provide robustness at the expense of a narrower gradient which may result in an imprecise border of gene expression. In agreement with this idea, Adelmann et al., 2023 recently showed that a linearly decaying gradient establishes more precise patterning boundaries with respect to a gradient established by a self-enhanced ligand degradation mechanism when interpreted several cells away from the morphogen source. The dynamic interpretation of Hh patterning in the Drosophila wing disc (Nahmad and Stathopoulos, 2009) offers a mechanistic implementation of this idea. First, a linearly decaying Hh gradient (the overshoot gradient) establishes the anterior border of dpp prior to upregulation of the Hh receptor, Ptc; once Ptc is upregulated, self-enhanced ligand degradation narrows the gradient and the anterior border of col is established (Figure 1). Under this model, the col border exhibits higher robustness than the dpp border to hh dosage (Figure 2), and our experimental data supports this prediction (Figure 3). This reduced robustness of dpp patterning occurs as a trade off for increased precision, relative to what would be expected by the steady-state interpretation model (Figure 4). Therefore, the dynamical interpretation of Hh signaling offers a target-specific, robust-yet-flexible architecture of patterning in this system (Figure 5).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/85755/elife-85755-fig5-v2.jpg)\n\n**Figure 5.:** In the steady-state interpretation, all the target genes are established with the same robustness ($\u0394x$) upon perturbations in the amount of ligand. In the overshoot model interpretation one of the target genes (red) is established with less robustness than the other (green). However, it allows the less robust gene to be defined with greater precision than the steady state would define it (compare the sharpness of the boundaries of these patterns).\n\nThe finding that the displacement of the anterior borders of Hh targets is more than twice for dpp than for col ($\u22482.65$, from their median values; Figure 3e) provides a interesting prediction about the overshoot gradient. From Equation 11, it can be inferred that the overshoot occurs when Ptc expressions is about twice its basal levels in the anterior compartment, but estimates suggest that Ptc reaches about seven times its basal levels in Ptc domain (Casali and Struhl, 2004). This suggests that the overshoot occurs significantly earlier than Ptc reaches its steady-state levels and that Ptc is produced at much larger amounts than what actually is needed to control the range of the Hh gradient. But since unbound Ptc represses Hh signaling, perhaps the purpose of building very high levels of Ptc is to desensitize Hh signaling over time as has been proposed for the vertebrate neural tube (Dessaud et al., 2008).\n\nWhy does this patterning system is wired to ensure robustness for the col border, but favors precision over robustness for dpp? In the Drosophila wing, the expression of col defines directly a specific feature in the adult wing, the L3\u2013L4 intervein area (Vervoort et al., 1999), which corresponds to the more central area of the wing, whereas the dpp pattern does not have a direct positional role in the adult wing, but it acts as the source of another morphogen. As suggested by prior theoretical work, the source where a morphogen is produced does not have a significant impact on patterning (Mizutani et al., 2006), so the robustness of the dpp pattern may not subject to strong selection pressure during evolution, or perhaps other mechanisms downstream of Hh signaling exist to provide robustness at the level of Dpp signaling (Aguilar-Hidalgo et al., 2018; Romanova-Michaelides et al., 2022). In contrast, in the adult wing of Drosophila, precision could have a direct role on the sharpness of vein patterning. Thus, robustness ensures the correct positioning of veins whereas precision may be related to ensure straight veins. While it is unclear if a more imprecise dpp pattern would impact the straightness of veins 2 and 5 which are positioned by Dpp signaling, it suggests that in general, the overshoot model ensures robust positioning close to the morphogen source, but prioritize straightness of stripe-like patterns over positioning in more distant locations. Given that Ptc-dependent Hh degradation is evolutionary conserved (Chen and Struhl, 1996), our findings could have implications for robust and precise patterning in other systems as well.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>strain, strain background (Drosophila melanogaster)</td>\n      <td>hh(+/\u2212) allele</td>\n      <td>Bloomington Drosophila Stock Center</td>\n      <td>1749</td>\n      <td>ry[506] hh[AC]/TM3, Sb. hh[AC] is an amorphic allele</td>\n    </tr>\n    <tr>\n      <td>strain, strain background (Drosophila melanogaster)</td>\n      <td>dppLacZ</td>\n      <td>Bloomington Drosophila Stock Center</td>\n      <td>12379</td>\n      <td>cn[1] dpp[10638]/CyO; ry[506]. dpp[10638] is a lacZ is a dpp enhancer trap.</td>\n    </tr>\n    <tr>\n      <td>antibody</td>\n      <td>anti-Col (mouse monoclonal)</td>\n      <td>Gift from M. Crozatier Vervoort et al., 1999</td>\n      <td></td>\n      <td>1:250; overnight incubation</td>\n    </tr>\n    <tr>\n      <td>antibody</td>\n      <td>anti-\u03b2-gal (rabbit polyclonal)</td>\n      <td>MP Biomedicals</td>\n      <td>Cat. # 55976</td>\n      <td>1:250; overnight incubation</td>\n    </tr>\n    <tr>\n      <td>software, algorithm</td>\n      <td>Python</td>\n      <td>this paper</td>\n      <td>pandas; numpy;OpenCV;matplotlib;seaborn;odeint;solve_bvp</td>\n      <td>Customized source codes (available from this paper)</td>\n    </tr>\n  </tbody>\n</table>\n\n### Fly stocks and crosses\n\nFly crosses were conducted at 25\u00b0C. For experiments using one copy of hh [hh(+/-)] (Figure 3), ry[506],hh[AC]/TM3,Sb[1] flies (Bloomington Drosophila Stock Center, BDSC, #1749) were crossed to cn[1],dpp10638/CyO (BDSC # 12379) flies at 25\u00b0C to obtain cn[1],dpp[10638]/$+$; ry[506],hh[AC]/ry[506] discs. hh[AC] is a lost of function hh allele and dpp10638 is a transgene containing a LacZ reporter that drives nuclear \u03b2-galactosidase in the location of the dpp gene. Control discs with two copies of hh [hh(+/+)] are obtained from crossing the dppLacZ reporter stock to wild-type flies.\n\n### Wing imaginal disc dissection and immunostaining\n\nWing imaginal discs were dissected from third-instar larvae. Third-instar larvae were dissected under a stereoscopic microscope and fixed in PEM-T (PEM with 0.1% of Triton X-100) with 4% paraformaldehyde, washed three times, and blocked in PEM-T with 0.5% of bovine serum albumin for 2 hr at room temperature. Then, samples were stained with primary antibodies at 4\u00b0C overnight at the following dilutions: monoclonal mouse anti-Col (a gift from M. Crozatier, 1:250), rabbit anti-\u03b2-gal (MP Biomedicals, Cat. # 55976, 1:250). Primary antibodies were detected with Alexa Fluor 488 anti-mouse and Alexa Fluor 555 anti-rabbit secondary antibodies (1:1000). Imaging was done in a Leica TC5 SP8 confocal microscope using a 40\u00d7 oil-immersion objective.\n\n### Numerical simulations\n\nFor computations in Figure 2, a Forward-in-Time-Centered-in-Space (FTCS) algorithm (using space and time steps of $1\u00a0\u03bcm$ and time steps of $0.5s$, respectively) was implemented to solve Equations 12\u201316 in Python, using the parameters reported by Nahmad and Stathopoulos, 2009. At the steady state, the equations can be reduced to a single equation in each compartment (Nahmad and Stathopoulos, 2009):\n\n$$\nD\\frac{d^{2}Hh_{SS}}{dx^{2}}+S^{+}(x)\\alpha_{Hh}\u2212\\frac{\u03c7S^{\u2212}(x)Hh_{SS}}{\\gamma_{Hh_Ptc}Hh+\\beta_{Ptc}}[\\alpha_{ptc0}+\\frac{\\alpha_{ptc}Hh_{SS}^{nm}}{\u03b7^{m}(k^{n}+Hh_{SS}^{n}^{m})+S^{\u2212}(x)Hh_{SS}^{nm}}]\u2212\\beta_{Hh}Hh_{SS}=0,\n$$\n\nwhere\n\n$$\nk=\\frac{k_{Signal}\\beta_{Hh_Ptc}}{\\gamma_{Hh_Ptc}},\n$$\n\n\n\n$$\n\u03b7=\\frac{k_{ptc}\\beta_{Signal}}{\\alpha_{Signal}},\n$$\n\n\n\n$$\n\u03c7=\\frac{\\mu_{Ptc}\\gamma_{Hh_Ptc}}{\\beta_{ptc}}.\n$$\n\nThe steady-state Equation 18 was solved using solve_bvp and solve_ivp from scipy.integrate Python package. Plots were made with matplotlib and seaborn libraries of Python (see Figure 3\u2014source code 1 and Figure 4\u2014source code 1). To compute $\u0394x$ as defined in Equation 1 in Figure 2, we used 0.2 of the maximum value of the $Signal$ function and numerically solved for corresponding location $x$.\n\nFor simulations of col and $dpp_{SS}$ patterns in Figure 4, we considered an exponential decay gradient of Hh, like obtained with the simple model in Figure 1, evaluated on a matrix of $80\\times50$. Patterns were determined by the position defined by the threshold $T$ of 20% of the maximum $Signal$ value (with a Gaussian noise with mean $T$ and standard deviation determined in such a way that noise of simulated col coincides width background distribution noise of experimental col pattern, i.e., 1.23 \u03bcm). For $dpp_{over}$, we used numerical solution of $Signal$ overshoot (i.e., the $Signal$ function at the time of maximum range) to fit a Hill function, $A\\frac{Hh^{n}}{k^{n}+Hh^{n}}$, using the function fit_curve of scipy.optimize. We found $A=0.2372$, $k=0.0483$, and $n=4.6212$. Then, we used the approximation function of $Signal$ overshoot to evaluate an exponential decay gradient of Hh overshoot and made an analysis analogous to what was done at the steady state. We measure the width of the pattern at 0.2 of the profile maximun obtained through a vertical projection of the simulated pattern.\n\n### Image analysis\n\nFor image analysis, we took the Z projection of the confocal images using ImageJ. 16-bit resolution images were saved in TIF format and then processed to measure the width of the fluorescence patterns using OpenCv library of Python. We normalized the intensity values after dividing them by the maximum intensity value and then we measured the width of each pattern domain at 0.2 of relative intensity (in Figure 3\u2014figure supplement 2 we varied this threshold value from 0.1 to 0.6). Graphs were plotted with matplotlib and seaborn libraries of Python (see Source code for each panel of Figure 2). The same images were used to measure robustness (Figure 3) and precision (Figure 4).\n",
+      "created_at": "2025-12-04T04:59:10.922210Z"
+    },
+    {
+      "id": "e7d0e562-4150-4f11-8fb5-b4be1c3c2a49",
+      "submission_id": "0b6a9a12-80cc-497f-acdd-1af4eeecaa19",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- David E James, https://ror.org/0384j8v12 University of Sydney Australia\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.85755.sa0](https://doi.org/10.7554/eLife.85755.sa0)\n\nThis study presents a valuable finding on the precision conferred by dynamical interpretation of morphogen gradients. The evidence supporting the claims of the authors is convincing, with compelling theoretical analysis and solid experimental data. The authors have adequately addressed most concerns raised and so the work will be of considerable interest to the developmental biology and developmental systems biology communities.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- David E James, https://ror.org/0384j8v12 University of Sydney Australia\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.85755.sa1](https://doi.org/10.7554/eLife.85755.sa1)\n\nOur editorial process produces two outputs: i) public reviews designed to be posted alongside the preprint for the benefit of readers; ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Dynamic readout of the Hh gradient in the Drosophila wing disc reveals pattern-specific tradeoffs between robustness and precision\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, and the evaluation has been overseen by David James as the Senior and Reviewing Editor.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\nWhile your manuscript was deemed of interest there were significant shortcomings identified that need to be addressed. Most notably both referees felt the experimental part was less compelling than the modelling part and in fact, one referee indicated that they felt this was at best an incremental advance over previous findings. We would like to provide you with an opportunity to address these serious concerns as both reviewers did see positive aspects of the study. However, it is critical that you address the issue concerning the nature of the advance compared to previous studies before we can proceed.\n\nThe reviewer found this study presents at best incremental advances to the field. It doesn't provide substantial progress conceptually or experimentally from Eldar et al., 2003, Adleman et al., 2022 and particularly Nahmad and Stathopoulos, 2009. The experimental data and interpretation appear to lack the rigor needed to challenge the model predictions.\n\nReviewer #1 (Recommendations for the authors):\n\nThe manuscript presents an elegant theoretical analysis of robustness and precision in morphogen ingredients, focusing on hedgehog signaling. I have found the proposal made by the authors interesting and convincing. However, I have found that some parts of the manuscript are not very clear. In addition, I believe the experimental results need to be improved in their presentation and to be broadened in scope if possible. Here below I detail my comments:\n\n1) In the Introduction, paragraph starting at 75 indicates the properties of Hh signaling as if they were disconnected to the features described in the previous paragraph. Please, rewrite it to make all appropriate connections with the previous paragraph.\n\n2) Clarify how robustness is exactly defined. The displacement of the boundary of the pattern upon perturbation of Hh level is used in Figure 1 to say whether a target is more robust. However, the coefficient of robustness is not defined as such displacement. These different definitions should be related and preferably refer to them with different names. In addition, the meaning of m in the definition of the coefficient of robustness is not totally clear to me. A plot depicting it would help. Is m the slope of the non-perturbed gradient at the threshold?\n\n3) The coefficient of robustness used is a different measure of the Robustness introduced by Eldar et al.2003. The latter one considered the displacement upon perturbation relative to the extent of the unperturbed gradient. Why the authors do not use the definition of robustness introduced by Eldar et al? Why the definition of robustness in this manuscript does not take into account whether the gradient spans over a larger or a smaller spatial region? The overshoot gradient produces larger displacements yet it is a gradient spanning a larger domain than the steady-state gradient. I am not sure whether the over-shoot gradient is less robust than the steady gradient if the definition of robustness introduced by Eldar et al. 2003 is used. Please justify and clarify all this.\n\n4) These differences in definitions (point 3) make the comparison of the analysis in Box2 with the results from Eldar et al.2003, described in lines 168-169, awkward. Box 2 analyses exponential gradients. It compares the robustness of two exponential gradients with different spatial characteristic lengths (\u03bb). Based on the definition of the coefficient of robustness of this manuscript, these two exponential gradients have a different robustness. However, if we use the definition of robustness by Eldar et al. 2003, all exponential gradients have the same robustness, R=1, independently of their characteristic length \u03bb. Please clarify.\n\n5) In the text, at the beginning of section 2.3, state more explicitly the concept of precision.\n\n6) Define mathematically how precision is measured. The text refers to Box2 (line 187) but there is no definition of coefficient of precision in that Box (nowhere else either).\n\n7) As far as I understand, precision is related to how fluctuations (noise) on the amount of morphogen impact on the position of the boundary. These fluctuations can be from cell to cell and over time within the same cell. The current manuscript does not model fluctuations or noise. Instead, it uses the slope of the deterministic gradient to define the precision (lines 188-190, using Figure 2A to visualize this idea). The manuscript would benefit from indicating the assumptions behind this claim :\n\nA) It assumes uniform noise, i.e. that noise/fluctuations are independent of the slope of the gradient, in other words, are of the same amplitude at any spatial position. Indeed, what we may expect is not this, since intrinsic noise is proportional to the square root of the number of molecules. Hence, the fluctuations will be larger where the morphogen is in high amounts than where it is in low amounts.\n\nB) It also assumes that the range of Hh concentrations that are not discernible/distinguishable under fluctuations (i.e the widths of the red and green bands in the Hh axis) is independent of the Hh concentration (i.e the width of the red band is located around Hh=0.1 and has the same width as that of the green band which is located at Hh=0.77), and that this range does not change over time (it is the same for the steady and the overshoot gradients).\n\n8) The \"Dynamical interpretation\" model is used with two (related) different meanings, in my opinion, and this drives confusion. On the one hand, according to Figure 1A',B',C', the Dynamical interpretation model corresponds to a single threshold used by different targets: one uses it in the steady gradient and the other target uses it in the overshoot gradient. On the other hand, in the text, in line 198, the dynamic interpretation is used only to refer to the overshoot gradient. I suggest revising how \"dynamical interpretation\" is used: whether it applies only to the overshoot gradient and then whether a different name must be used to the whole framework of single-threshold interpretation.\n\n9) The results assume that Dpp and col use the same threshold. This is supported by Nahmad and Stathopoulos 2009. Which threshold value is used? Which value is used for the simulations with different sets of the parameter values?\n\n10) Why Robustness is not analysed for the Signal (x)? I would expect that the target is activated by the Signal and not directly by the morphogen gradient. Hence it is valuable to analyse the robustness in the signal and to add these results. Perhaps Figure 3A-C already compute the magnitudes from the signal profile (and not from the morphogen Hh(x) profile), but it is unclear from the main text and figure caption.\n\n11) In Figure 3 precision is much less analyzed than robustness. I suggest that the type of analysis already done in Figure 3B and C for robustness is also done for precision. These analyses will show whether the conclusions on precision are maintained for different parameter values. By the way, \"parameters are varied between 0,5 and 2 of the reported values\" means that they are varied between 0,5 and 2 TIMES the reported values? Perhaps is standard but the meaning of the sentence was unclear to me.\n\n12) How the overshoot gradient is identified for the different set of parameters to compute Figure 3B?\n\n13) I suggest computing Figure 4B for the overshoot gradient and therefore show that the trend in Figure 4A is kept for different parameter values.\n\n14) Figures 5-6 should be improved by adding: Scale bars, magnifications of images, and detail at cell resolution to observe the displacements in terms of cell length scales. What is exactly measured should be also depicted: How the width is measured and which width is measured for the blurry boundary of Dpp? Which is the number of samples?\n\n15) The finding that the robustness of Col depends on Ptc regulation supports the results by Eldar et al. 2003 and that Col is a target of the steady gradient. Hence these new experimental results support proposals made in previous papers. In my opinion, this experimental result in this manuscript (section 2.7) is not very relevant since it validates previous proposals but not the new ones from this manuscript.\n\n16) The manuscript indicates that Dpp is less robust but more precise than it would be if it was specified by the steady-state gradient. Since the authors have analysed the case of non-regulated patch, I suggest addressing how Dpp would change when patched is not regulated, and to address it both theoretically, and if possible, experimentally. If Patched is not regulated, then there will not be an overshoot gradient and Dpp should be as robust as col. Is this indeed the theoretical prediction? And experimentally: what is observed? In addition, will precision become worse or better? What is the prediction from the model when patch is not regulated?\n\nReviewer #2 (Recommendations for the authors):\n\nFigure 5 \u2013 elaborate on how exactly the results are consistent with the model predictions? While the Dpp width changes more, the width is also larger to begin with- taking into account these rather small changes, can a much simpler model with noise explain the experimental results already (does one have to resort to overshoot and dynamic interpretation?)\n\nWidth panels: individual data points should be shown, with \"n\" defined in the legends\n",
+      "created_at": "2025-12-04T04:59:10.922210Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T04:59:10.922210Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T04:59:10.922210Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "5e70b468-ce99-4876-829a-bf6437623212",
+      "content_id": "66f7b4a2-2d04-4932-9bd6-e1711ee7dbbc",
+      "claim_id": "C1",
+      "claim": "In the Drosophila wing, Hedgehog (Hh) signaling determines patterning outputs using dynamical properties of the Hh gradient.",
+      "claim_type": "EXPLICIT",
+      "source": "In the Drosophila wing, Hedgehog (Hh) signaling determines patterning outputs using dynamical properties of the Hh gradient.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as a general claim about the system being studied.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:59:10.922210Z"
+    },
+    {
+      "id": "0b2e2e95-35ed-4ce1-ad8c-74dc85e5d340",
+      "content_id": "66f7b4a2-2d04-4932-9bd6-e1711ee7dbbc",
+      "claim_id": "C2",
+      "claim": "The pattern of collier (col) is established by the steady-state Hh gradient.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, the pattern of collier (col) is established by the steady-state Hh gradient, whereas the pattern of decapentaplegic (dpp), is established by a transient gradient of Hh known as the Hh overshoot.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by reference to the overshoot model and is tested experimentally in the manuscript.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:59:10.922210Z"
+    },
+    {
+      "id": "8f048dcb-3ed5-455a-a3bd-163ced6421cd",
+      "content_id": "66f7b4a2-2d04-4932-9bd6-e1711ee7dbbc",
+      "claim_id": "C3",
+      "claim": "The pattern of decapentaplegic (dpp) is established by a transient gradient of Hh known as the Hh overshoot.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, the pattern of collier (col) is established by the steady-state Hh gradient, whereas the pattern of decapentaplegic (dpp), is established by a transient gradient of Hh known as the Hh overshoot.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by reference to the overshoot model (Nahmad and Stathopoulos, 2009) and is tested experimentally.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:59:10.922210Z"
+    },
+    {
+      "id": "bc7c27b9-0b4b-4028-ae4d-bcaf780e3cff",
+      "content_id": "66f7b4a2-2d04-4932-9bd6-e1711ee7dbbc",
+      "claim_id": "C4",
+      "claim": "The location of the anterior border of col is more robustly specified than that of dpp to changes in morphogen dosage.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, the location of the anterior border of col, which is subject to self-enhanced ligand degradation is more robustly specified than that of dpp to changes in morphogen dosage, and we provide experimental evidence of this prediction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by mathematical modeling predictions and experimental data shown in Figure 3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:59:10.922210Z"
+    },
+    {
+      "id": "bfeab5d4-af14-4af7-9f44-9abce3be3cd3",
+      "content_id": "66f7b4a2-2d04-4932-9bd6-e1711ee7dbbc",
+      "claim_id": "C5",
+      "claim": "The anterior border of dpp expression pattern is much more precise than what would be expected by the steady-state gradient.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the anterior border of dpp expression pattern, which is established by the overshoot gradient is much more precise to what would be expected by the steady-state gradient.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by modeling and experimental measurements of precision shown in Figure 4.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:59:10.922210Z"
+    },
+    {
+      "id": "969650ef-f9ea-413e-ad5f-09514aff38b4",
+      "content_id": "66f7b4a2-2d04-4932-9bd6-e1711ee7dbbc",
+      "claim_id": "C6",
+      "claim": "The dynamical interpretation of Hh signaling offers tradeoffs between robustness and precision to establish tunable patterning properties in a target-specific manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the dynamical interpretation of Hh signaling offers tradeoffs between robustness and precision to establish tunable patterning properties in a target-specific manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion of the manuscript, supported by both modeling and experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:59:10.922210Z"
+    },
+    {
+      "id": "fdb8ad4e-765f-49c8-b940-3317b470b90a",
+      "content_id": "66f7b4a2-2d04-4932-9bd6-e1711ee7dbbc",
+      "claim_id": "C7",
+      "claim": "Patterns of gene expression are often specified by morphogen gradients.",
+      "claim_type": "EXPLICIT",
+      "source": "Since patterns of gene expression are often specified by morphogen gradients, there has been considerable interest in understanding how these gradients reliably establish positional boundaries (Neumann and Cohen, 1997; Gurdon and Bourillot, 2001; Lander, 2007; Claret et al., 2007; Iba\u00f1es and Izpis\u00faa Belmonte, 2008; Rogers and Schier, 2011; Li et al., 2018; Stapornwongkul et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior work in the field.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:59:10.922210Z"
+    },
+    {
+      "id": "98f84f81-43bc-4a62-a083-08437f091972",
+      "content_id": "66f7b4a2-2d04-4932-9bd6-e1711ee7dbbc",
+      "claim_id": "C8",
+      "claim": "Steady-state morphogen gradients cannot tune patterning properties in a target-specific manner.",
+      "claim_type": "EXPLICIT",
+      "source": "These studies are generally based solely on steady-state morphogen profiles and therefore, robustness applies equally to all patterning targets. As a result, steady-state morphogen gradients cannot tune these patterning properties in a target-specific manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from prior theoretical studies and is contrasted with the dynamical model presented in this work.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:59:10.922210Z"
+    },
+    {
+      "id": "e755d1fa-4129-4a4a-ac63-1feb61a731a0",
+      "content_id": "66f7b4a2-2d04-4932-9bd6-e1711ee7dbbc",
+      "claim_id": "C9",
+      "claim": "The Drosophila wing imaginal disc has become a useful system to study the mechanisms of morphogen formation and interpretation.",
+      "claim_type": "EXPLICIT",
+      "source": "The Drosophila wing imaginal disc has become a useful system to study the mechanisms of morphogen formation and interpretation and offers testable patterning outputs in terms of both robustness and precision in the adult wing (Hartl and Scott, 2014; Restrepo et al., 2014; Chen and Zou, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work establishing the wing disc as a model system.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:59:10.922210Z"
+    },
+    {
+      "id": "df39129a-c0e5-4bd6-948c-27491791ce5c",
+      "content_id": "66f7b4a2-2d04-4932-9bd6-e1711ee7dbbc",
+      "claim_id": "C10",
+      "claim": "Along the anterior\u2013posterior (AP) axis, the Drosophila wing is patterned by the Hedgehog (Hh) and Decapentaplegic (Dpp) morphogen gradients that determine the position of the longitudinal veins L2\u2013L5.",
+      "claim_type": "EXPLICIT",
+      "source": "Along the anterior\u2013posterior (AP) axis, the Drosophila wing is patterned by the Hedgehog (Hh) and Decapentaplegic (Dpp) morphogen gradients that determine the position of the longitudinal veins L2\u2013L5 (Blair, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Blair, 2007.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:59:10.922210Z"
+    },
+    {
+      "id": "bf0df4c6-baaa-48df-b71f-4aeb09effc75",
+      "content_id": "66f7b4a2-2d04-4932-9bd6-e1711ee7dbbc",
+      "claim_id": "C11",
+      "claim": "Hh is produced in cells of the posterior compartment during the third larval instar and forms a short-range signaling gradient into the anterior compartment.",
+      "claim_type": "EXPLICIT",
+      "source": "Hh is produced in cells of the posterior compartment during the third larval instar and forms a short-range signaling gradient into the anterior compartment (Tabata and Kornberg, 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Tabata and Kornberg, 1994.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:59:10.922210Z"
+    },
+    {
+      "id": "e23850a3-cfdc-4d21-99a1-989406891d99",
+      "content_id": "66f7b4a2-2d04-4932-9bd6-e1711ee7dbbc",
+      "claim_id": "C12",
+      "claim": "The expression of the transcription factor knot or collier (col) sets the distance between the longitudinal veins L3 and L4.",
+      "claim_type": "EXPLICIT",
+      "source": "it defines adult patterning outcomes, such as the expression of the transcription factor knot or collier (col) which sets the distance between the longitudinal veins L3 and L4 (Vervoort et al., 1999; Anonymous, 2000)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Vervoort et al., 1999 and Anonymous, 2000.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:59:10.922210Z"
+    },
+    {
+      "id": "383b9ec8-6575-4104-a0a0-55767f18f298",
+      "content_id": "66f7b4a2-2d04-4932-9bd6-e1711ee7dbbc",
+      "claim_id": "C13",
+      "claim": "Dpp acts as a long-range morphogen to globally coordinate patterning and growth along the AP axis.",
+      "claim_type": "EXPLICIT",
+      "source": "While dpp does not have a direct patterning output in the adult wing, Dpp then acts as a long-range morphogen to globally coordinate patterning and growth along the AP axis (Affolter and Basler, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Affolter and Basler, 2007.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:59:10.922210Z"
+    },
+    {
+      "id": "301375bc-d7dc-4794-92f3-7dccd4c8755f",
+      "content_id": "66f7b4a2-2d04-4932-9bd6-e1711ee7dbbc",
+      "claim_id": "C14",
+      "claim": "Hh signaling is activated by removing the receptor Patched (Ptc) from the plasma membrane, a process that is promoted by Hh binding and endocytosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Contrary to other signaling pathways in which a ligand activates a signaling cascade by binding to its receptor, Hh signaling is activated by removing the receptor Patched (Ptc) from the plasma membrane, a process that is promoted by Hh binding and endocytosis (Torroja et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Torroja et al., 2005.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:59:10.922210Z"
+    },
+    {
+      "id": "3cff372b-059a-4582-a42c-1570a46fc3c2",
+      "content_id": "66f7b4a2-2d04-4932-9bd6-e1711ee7dbbc",
+      "claim_id": "C15",
+      "claim": "Hh signaling activity is more accurately represented by the ratio of bound to unbound Ptc receptor.",
+      "claim_type": "EXPLICIT",
+      "source": "However, a study suggested that the levels of Hh-bound Ptc can titrate the inhibitory effects of unbound Ptc and proposed that Hh signaling activity is more accurately represented by the ratio of bound to unbound Ptc receptor (Casali and Struhl, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Casali and Struhl, 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:59:10.922210Z"
+    },
+    {
+      "id": "ca0fa504-2082-4a36-a9ad-f8bd322cbe13",
+      "content_id": "66f7b4a2-2d04-4932-9bd6-e1711ee7dbbc",
+      "claim_id": "C16",
+      "claim": "ptc is itself a target of the Hh signal.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, an evolutionary conserved feature of the Hh signaling pathway is that ptc is itself a target of the signal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an established feature of the Hh pathway.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:59:10.922210Z"
+    },
+    {
+      "id": "d22aa2c2-ab95-4708-ac54-f8a0ea78e5ca",
+      "content_id": "66f7b4a2-2d04-4932-9bd6-e1711ee7dbbc",
+      "claim_id": "C17",
+      "claim": "Hh-dependent Ptc upregulation acts as a negative feedback that self-limits the range of the gradient.",
+      "claim_type": "EXPLICIT",
+      "source": "Since Ptc expression attenuates the dispersion and strength of signaling activity, Hh-dependent Ptc upregulation acts as a negative feedback that self-limits the range of the gradient (Chen and Struhl, 1996; Briscoe et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Chen and Struhl, 1996 and Briscoe et al., 2001.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:59:10.922210Z"
+    },
+    {
+      "id": "29b2e87d-b39d-446e-b367-720f948ddffd",
+      "content_id": "66f7b4a2-2d04-4932-9bd6-e1711ee7dbbc",
+      "claim_id": "C18",
+      "claim": "Self-enhanced ligand degradation makes a narrower, but more robust gradient to perturbations in ligand dosage.",
+      "claim_type": "EXPLICIT",
+      "source": "This feedback property of Hh signaling results in self-enhanced ligand degradation which makes a narrower, but more robust gradient to perturbations in ligand dosage (Eldar et al., 2003; Lander et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Eldar et al., 2003 and Lander et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:59:10.922210Z"
+    },
+    {
+      "id": "0af023da-5adb-414e-bb3c-8df0617b6097",
+      "content_id": "66f7b4a2-2d04-4932-9bd6-e1711ee7dbbc",
+      "claim_id": "C19",
+      "claim": "The boundary of dpp is established by an extended pre-steady-state gradient, known as the overshoot.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, the boundary of dpp is established by an extended pre-steady-state gradient, known as the overshoot, while the anterior border of col is established by the steady-state gradient.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on the overshoot model from Nahmad and Stathopoulos, 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:59:10.922210Z"
+    },
+    {
+      "id": "62722322-046e-465e-bd1e-82611d8a188c",
+      "content_id": "66f7b4a2-2d04-4932-9bd6-e1711ee7dbbc",
+      "claim_id": "C20",
+      "claim": "The anterior border of col is established by the steady-state gradient.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, the boundary of dpp is established by an extended pre-steady-state gradient, known as the overshoot, while the anterior border of col is established by the steady-state gradient.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on the overshoot model from Nahmad and Stathopoulos, 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:59:10.922210Z"
+    },
+    {
+      "id": "283d957d-7ab5-41c4-b84c-8c1d94a151db",
+      "content_id": "66f7b4a2-2d04-4932-9bd6-e1711ee7dbbc",
+      "claim_id": "C21",
+      "claim": "dpp should not exhibit the robustness property offered by the self-enhanced ligand degradation mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the overshoot occurs prior to Hh-dependent Ptc upregulation, dpp should not exhibit the robustness property offered by the self-enhanced ligand degradation mechanism, but this has not yet been documented experimentally.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction based on the overshoot model that is tested experimentally in this manuscript.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:59:10.922210Z"
+    },
+    {
+      "id": "8f09426f-57d7-434c-8df1-b3e4eee64f87",
+      "content_id": "66f7b4a2-2d04-4932-9bd6-e1711ee7dbbc",
+      "claim_id": "C22",
+      "claim": "The width of col expression in the wing disc and the L3\u2013L4 intervein distance in adult wings of hh heterozygous and wild-type animals are not statistically different.",
+      "claim_type": "EXPLICIT",
+      "source": "A study by Irons et al. compared the width of col expression in the wing disc as well as the L3\u2013L4 intervein distance in adult wings of hh heterozygous and wild-type animals and found that they are not statistically different, supporting that some robustness to Hh dosage is exhibited by the system (Irons et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Irons et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:59:10.922210Z"
+    },
+    {
+      "id": "73f55a4c-4585-41f9-bf5a-760a5cc85cb7",
+      "content_id": "66f7b4a2-2d04-4932-9bd6-e1711ee7dbbc",
+      "claim_id": "C23",
+      "claim": "The widths of col or ptc patterns do not significantly change in discs with 1, 2, 3, or 4 hh gene copies.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, Hatori et al. showed that the widths of col or ptc patterns do not significantly change in discs with 1, 2, 3, or 4 hh gene copies (Hatori et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Hatori et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:59:10.922210Z"
+    },
+    {
+      "id": "bd91798d-c83f-451b-87bd-d6696751661e",
+      "content_id": "66f7b4a2-2d04-4932-9bd6-e1711ee7dbbc",
+      "claim_id": "C24",
+      "claim": "When patterns are established by steady-state models of patterning all target genes exhibit the same robustness with respect to changes in morphogen production.",
+      "claim_type": "EXPLICIT",
+      "source": "By using mathematical modeling, here we show that when patterns are established by steady-state models of patterning all target genes exhibit the same robustness with respect to changes in morphogen production, in agreement with prior theoretical work (Eldar et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by mathematical modeling results and a citation to Eldar et al., 2003.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:59:10.922210Z"
+    },
+    {
+      "id": "422ff99d-96ef-4e99-92e0-42ab55fea39d",
+      "content_id": "66f7b4a2-2d04-4932-9bd6-e1711ee7dbbc",
+      "claim_id": "C25",
+      "claim": "When the Hh gradient is interpreted dynamically through the overshoot model, robustness to hh dosage becomes target specific.",
+      "claim_type": "EXPLICIT",
+      "source": "However, when the Hh gradient is interpreted dynamically through the overshoot model (Nahmad and Stathopoulos, 2009), robustness to hh dosage becomes target specific.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by mathematical modeling results presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:59:10.922210Z"
+    },
+    {
+      "id": "b6ca7b58-a477-4f49-8b11-776ea525afa6",
+      "content_id": "66f7b4a2-2d04-4932-9bd6-e1711ee7dbbc",
+      "claim_id": "C26",
+      "claim": "The specification of the anterior border of col is more robust than that of dpp, since the latter is independent of Hh-dependent Ptc upregulation.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, the specification of the anterior border of col is more robust than that of dpp, since the latter is independent of Hh-dependent Ptc upregulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by mathematical modeling and experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:59:10.922210Z"
+    },
+    {
+      "id": "d5597829-23b9-419f-8775-6310d89ab551",
+      "content_id": "66f7b4a2-2d04-4932-9bd6-e1711ee7dbbc",
+      "claim_id": "C27",
+      "claim": "The anterior border of dpp model under the overshoot model offers increased precision, relative to what would be expected in the steady state only patterning model.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, we show that the anterior border of dpp model under the overshoot model offers increased precision, relative to what would be expected in the steady state only patterning model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by modeling and experimental measurements of precision.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:59:10.922210Z"
+    },
+    {
+      "id": "73c33110-bce1-4643-8709-51b866cd4735",
+      "content_id": "66f7b4a2-2d04-4932-9bd6-e1711ee7dbbc",
+      "claim_id": "C30",
+      "claim": "The solution of the perturbed problem is just a constant shift of the morphogen profile in a free-diffusion, linear-degradation model.",
+      "claim_type": "EXPLICIT",
+      "source": "This occurs because the solution of the perturbed problem is just a constant shift of the morphogen profile (Figure 1b\u2013d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by mathematical reasoning and Figure 1b-d.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:59:10.922210Z"
+    },
+    {
+      "id": "f786a1ed-384f-4d11-9327-a82a38b74c29",
+      "content_id": "66f7b4a2-2d04-4932-9bd6-e1711ee7dbbc",
+      "claim_id": "C32",
+      "claim": "The overshoot model predicts differences in target gene displacement upon perturbation of morphogen dosages.",
+      "claim_type": "EXPLICIT",
+      "source": "Then, in contrast to the steady-state model (Figure 1b\u2013d), the overshoot model predicts differences in target gene displacement upon perturbation of morphogen dosages (Figure 1b'\u2013d'), that is, robustness is target dependent, with higher robustness predicted for col patterning due to self-enhanced ligand degradation, than for dpp patterning (Figure 1d, d').",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by mathematical modeling shown in Figure 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:59:10.922210Z"
+    },
+    {
+      "id": "6fd7a690-2300-44da-8b2f-1449c6defa9e",
+      "content_id": "66f7b4a2-2d04-4932-9bd6-e1711ee7dbbc",
+      "claim_id": "C33",
+      "claim": "The difference in robustness between overshoot and steady-state targets is independent of the specific threshold at which the Hh gradient establishes positional information.",
+      "claim_type": "EXPLICIT",
+      "source": "Note that in Equation 11, the difference in \u0394x between the steady state and overshoot model is independent of the specific threshold at which the Hh gradient establishes positional information.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mathematical inference from Equation 11.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:59:10.922210Z"
+    },
+    {
+      "id": "0505041d-e6c6-465f-bcf5-3c8f801cd6b5",
+      "content_id": "66f7b4a2-2d04-4932-9bd6-e1711ee7dbbc",
+      "claim_id": "C34",
+      "claim": "The steady-state outputs are more robust than the overshoot outputs in the explicit model of the Hh pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with our previous result (Figure 1), we found that the steady-state outputs are more robust than the overshoot outputs (Figure 2a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by numerical simulations shown in Figure 2a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:59:10.922210Z"
+    },
+    {
+      "id": "51ea8481-3651-451b-94ec-f28c8da7382d",
+      "content_id": "66f7b4a2-2d04-4932-9bd6-e1711ee7dbbc",
+      "claim_id": "C35",
+      "claim": "Higher robustness is predicted for targets specified by the steady-state gradient (col), with respect to those specified by the overshoot profile (dpp), independently of the specific choice of model parameters.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, this result holds independently of the specific choice of model parameters (Figure 2b). We conclude that higher robustness is predicted for targets specified by the steady-state gradient (col), with respect to those specified by the overshoot profile (dpp).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by parameter sensitivity analysis shown in Figure 2b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:59:10.922210Z"
+    },
+    {
+      "id": "0bf79c47-a04b-4b67-b594-350ca8592f3c",
+      "content_id": "66f7b4a2-2d04-4932-9bd6-e1711ee7dbbc",
+      "claim_id": "C36",
+      "claim": "Hh-dependent ptc upregulation is responsible for the difference in robustness of Hh outputs.",
+      "claim_type": "EXPLICIT",
+      "source": "Since previous work suggests that Hh-dependent ptc upregulation determines the range of the signal (Chen and Struhl, 1996), we wanted to confirm that Hh-dependent ptc regulation is responsible for the difference in robustness of Hh outputs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is tested by perturbing ptc production rate in the model.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:59:10.922210Z"
+    },
+    {
+      "id": "ce87e7ce-ee35-4c8d-8107-cb7a65e49691",
+      "content_id": "66f7b4a2-2d04-4932-9bd6-e1711ee7dbbc",
+      "claim_id": "C39",
+      "claim": "Hh-dependent Ptc upregulation is responsible for differential robustness in this system by making steady-state outputs more robust with respect to overshoot-defined outputs.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, we suggest that Hh-dependent Ptc upregulation is responsible for differential robustness in this system by making steady-state outputs more robust with respect to overshoot-defined outputs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the modeling results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:59:10.922210Z"
+    },
+    {
+      "id": "942ba01a-5a35-4d9a-8d79-8a9e81f6528e",
+      "content_id": "66f7b4a2-2d04-4932-9bd6-e1711ee7dbbc",
+      "claim_id": "C40",
+      "claim": "Early transient states exhibit the smallest \u0394x and therefore are the gradients that drive the more robust outputs, although they have a very limited range.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that early transient states exhibit the smallest \u0394x and therefore are the gradients that drive the more robust outputs, although they have a very limited range (Figure 2c), in agreement with the study of Bergmann et al., 2007.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by numerical simulations shown in Figure 2c and a citation to Bergmann et al., 2007.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:59:10.922210Z"
+    },
+    {
+      "id": "43214ee2-2616-474c-b84f-b7f4e3dfde72",
+      "content_id": "66f7b4a2-2d04-4932-9bd6-e1711ee7dbbc",
+      "claim_id": "C41",
+      "claim": "\u0394x increases as the gradient approaches the overshoot when it reaches a maximum, before it starts to decrease again toward the steady state.",
+      "claim_type": "EXPLICIT",
+      "source": "Then, \u0394x increases as the gradient approaches the overshoot when it reaches a maximum, before it starts to decrease again toward the steady state (Figure 2c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by numerical simulations shown in Figure 2c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:59:10.922210Z"
+    },
+    {
+      "id": "57c1fdcc-dc93-414f-8b22-3ac424a081b2",
+      "content_id": "66f7b4a2-2d04-4932-9bd6-e1711ee7dbbc",
+      "claim_id": "C42",
+      "claim": "The width of the Col pattern in hh(+/\u2212) mutant discs is reduced by 1.66 \u03bcm relative to hh(+/+) wild-type discs.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the width of the Col pattern in hh(+/\u2212) mutant discs is reduced by 1.66 \u03bcm relative to hh(+/+) wild-type discs (Figure 3a, b, e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental measurements shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:59:10.922210Z"
+    },
+    {
+      "id": "c0564fae-33fb-4d60-92ef-022c51fd66e1",
+      "content_id": "66f7b4a2-2d04-4932-9bd6-e1711ee7dbbc",
+      "claim_id": "C43",
+      "claim": "The reduction in Col pattern width in hh(+/\u2212) discs is less than the average diameter of a single cell (about 2.5 \u03bcm).",
+      "claim_type": "EXPLICIT",
+      "source": "Although this difference is statistically significant, it is less than the average diameter of a single cell (about 2.5 \u03bcm) and therefore, it confirms previous experimental findings (Irons et al., 2010; Hatori et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on experimental measurements and comparison to cell size.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:59:10.922210Z"
+    },
+    {
+      "id": "c0aab923-b4a8-4b6f-94b1-c6f8a6350c4e",
+      "content_id": "66f7b4a2-2d04-4932-9bd6-e1711ee7dbbc",
+      "claim_id": "C44",
+      "claim": "The pattern of dppLacZ is reduced by 4.44 \u03bcm in hh(+/\u2212) discs relative to hh(+/+) controls.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the pattern of dppLacZ is reduced by 4.44 \u03bcm in hh(+/\u2212) discs relative to hh(+/+) controls (Figure 3c\u2013e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental measurements shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:59:10.922210Z"
+    },
+    {
+      "id": "910056fa-d796-4670-baa2-8434afc43dac",
+      "content_id": "66f7b4a2-2d04-4932-9bd6-e1711ee7dbbc",
+      "claim_id": "C45",
+      "claim": "The difference in dpp pattern width does not depend on the size of the wing disc, since the pouch area in both, hh(+/\u2212) and hh(+/+) discs are approximately the same.",
+      "claim_type": "EXPLICIT",
+      "source": "This result does not depend on the size of the wing disc, since the pouch area in both, hh(+/\u2212) and hh(+/+) discs are approximately the same (Figure 3\u2014figure supplement 1)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by measurements shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:59:10.922210Z"
+    },
+    {
+      "id": "a5af52b8-9839-4b0e-99a6-f3f03a1b65ab",
+      "content_id": "66f7b4a2-2d04-4932-9bd6-e1711ee7dbbc",
+      "claim_id": "C46",
+      "claim": "The difference in dpp pattern width does not depend on the threshold used to measure the width of the patterns.",
+      "claim_type": "EXPLICIT",
+      "source": "This result does not depend on the size of the wing disc, since the pouch area in both, hh(+/\u2212) and hh(+/+) discs are approximately the same (Figure 3\u2014figure supplement 1), nor on the threshold used to measure the width of the patterns (see Figure 3\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by measurements at different thresholds shown in Figure 3\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:59:10.922210Z"
+    },
+    {
+      "id": "f18841e2-2ddb-44b8-88c7-c7c2068ac20d",
+      "content_id": "66f7b4a2-2d04-4932-9bd6-e1711ee7dbbc",
+      "claim_id": "C47",
+      "claim": "In agreement with the overshoot model of Hh signaling, but not with any of the steady-state models, the pattern width of Col is more robust than the pattern width of anterior dppLacZ.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that, in agreement with the overshoot model of Hh signaling, but not with any of the steady-state models, the pattern width of Col is more robust than the pattern width of anterior dppLacZ.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:59:10.922210Z"
+    },
+    {
+      "id": "16c6814a-0875-4067-97f7-8d037cd35a67",
+      "content_id": "66f7b4a2-2d04-4932-9bd6-e1711ee7dbbc",
+      "claim_id": "C48",
+      "claim": "If dpp had to be specified by the steady-state gradient subject to Ptc-dependent degradation, instead that with the overshoot gradient, it would have to be specified at a location where the Hh gradient is nearly flat.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, we noticed that if dpp had to be specified by the steady-state gradient subject to Ptc-dependent degradation, instead that with the overshoot gradient, it would have to be specified at a location where the Hh gradient is nearly flat (Figure 4a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference from comparing the steady-state and overshoot gradients shown in Figure 4a.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:59:10.922210Z"
+    },
+    {
+      "id": "ced2ba45-d824-467e-acf0-3562c4095304",
+      "content_id": "66f7b4a2-2d04-4932-9bd6-e1711ee7dbbc",
+      "claim_id": "C49",
+      "claim": "At the location of the dpp anterior border, the Hh overshoot gradient is not as flat as the steady-state gradient.",
+      "claim_type": "EXPLICIT",
+      "source": "But at this same location, the Hh gradient is not as flat (Figure 4b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 4b comparing the gradients.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:59:10.922210Z"
+    },
+    {
+      "id": "8c52f4b4-a644-44be-8182-63ff4d77e6fd",
+      "content_id": "66f7b4a2-2d04-4932-9bd6-e1711ee7dbbc",
+      "claim_id": "C50",
+      "claim": "The overshoot model would establish a more precise dpp anterior boundary compared to a steady-state model.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, we predicted that the overshoot model would establish a more precise dpp anterior boundary compared to a steady-state model, suggesting that the dynamic interpretation of Hh signaling would trade off robustness for precision.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction based on the gradient shapes.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:59:10.922210Z"
+    },
+    {
+      "id": "3522ebc2-2085-4bdf-aeed-0c0168c2e649",
+      "content_id": "66f7b4a2-2d04-4932-9bd6-e1711ee7dbbc",
+      "claim_id": "C52",
+      "claim": "Under the overshoot model, the anterior border of dpp is predicted to be more precise than under the steady-state model.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that under the overshoot model, the anterior border of dpp is predicted to be more precise than under the steady-state model (Figure 4f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by simulations shown in Figure 4f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:59:10.922210Z"
+    },
+    {
+      "id": "741fff14-dd16-49c2-b0a6-6ae82ec24c1b",
+      "content_id": "66f7b4a2-2d04-4932-9bd6-e1711ee7dbbc",
+      "claim_id": "C55",
+      "claim": "The robust architecture of body plans to genetic and environmental perturbations is a general feature of developmental systems.",
+      "claim_type": "EXPLICIT",
+      "source": "The robust architecture of body plans to genetic and environmental perturbations is a general feature of developmental systems (Waddington, 1942; Csete and Doyle, 2002; Kitano, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to foundational work on robustness.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:59:10.922210Z"
+    },
+    {
+      "id": "1194167a-6209-4563-a2d2-5022679c38c3",
+      "content_id": "66f7b4a2-2d04-4932-9bd6-e1711ee7dbbc",
+      "claim_id": "C56",
+      "claim": "A robust design should also admit some flexibility in order to allow the system to evolve and adapt under certain genetic or environmental challenges.",
+      "claim_type": "EXPLICIT",
+      "source": "At the same time, this robust design should also admit some flexibility in order to allow the system to evolve and adapt under certain genetic or environmental challenges (Barkai and Shilo, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Barkai and Shilo, 2007.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:59:10.922210Z"
+    },
+    {
+      "id": "ee41d7b8-de19-4de3-ae97-df835d61d22a",
+      "content_id": "66f7b4a2-2d04-4932-9bd6-e1711ee7dbbc",
+      "claim_id": "C57",
+      "claim": "It is unclear how a robust, yet flexible architecture could be encoded in the interpretation of morphogen gradients.",
+      "claim_type": "EXPLICIT",
+      "source": "While much work has been dedicated to the understanding of network features that confer robustness in developmental patterning, it is unclear how a robust, yet flexible architecture could be encoded in the interpretation of morphogen gradients (Lander et al., 2009; Lo et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This identifies a gap in current understanding.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:59:10.922210Z"
+    },
+    {
+      "id": "2ab644c2-0fd5-4a49-b8a4-28e0b47b3087",
+      "content_id": "66f7b4a2-2d04-4932-9bd6-e1711ee7dbbc",
+      "claim_id": "C58",
+      "claim": "The ability of a single morphogen to produce different patterning outputs with target-specific properties has not been studied in detail.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, despite much prior theoretical work, the ability of a single morphogen to produce different patterning outputs with target-specific properties has not been studied in detail.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This identifies a gap in current understanding that this manuscript addresses.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:59:10.922210Z"
+    },
+    {
+      "id": "96cd1c94-3aec-4919-899f-5d262c4b4432",
+      "content_id": "66f7b4a2-2d04-4932-9bd6-e1711ee7dbbc",
+      "claim_id": "C59",
+      "claim": "Two strategies have been proposed to increase robustness to changes in the rates of morphogen production: morphogen gradients that promote their own degradation and sharply decay near the source, and gradients that specify patterns prior to steady state.",
+      "claim_type": "EXPLICIT",
+      "source": "Relative to the classical view of morphogen interpretation, in which different morphogen concentration thresholds at the steady state define different borders of gene expression patterns, two strategies have been proposed to increase robustness to changes in the rates of morphogen production. First, morphogen gradients that promote their own degradation and sharply decay near the source of ligand production (Eldar et al., 2003). And second, gradients that specify patterns prior to steady state (Bergmann et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Eldar et al., 2003 and Bergmann et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:59:10.922210Z"
+    },
+    {
+      "id": "b6610f81-9431-4952-a776-f1519a131adc",
+      "content_id": "66f7b4a2-2d04-4932-9bd6-e1711ee7dbbc",
+      "claim_id": "C60",
+      "claim": "When implementing either of these strategies, increased robustness is achieved for all gene expression patterns, regardless of the concentration thresholds at which they are established.",
+      "claim_type": "EXPLICIT",
+      "source": "When implementing either of these strategies, increased robustness is achieved for all gene expression patterns, regardless of the concentration thresholds at which they are established.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about the properties of these strategies.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:59:10.922210Z"
+    },
+    {
+      "id": "3fd637a2-7037-4e6b-bb97-fdc1c61322a3",
+      "content_id": "66f7b4a2-2d04-4932-9bd6-e1711ee7dbbc",
+      "claim_id": "C61",
+      "claim": "Both robustness strategies significantly narrow the patterning domain, and therefore, morphogen readout occurs where the gradient is essentially flat.",
+      "claim_type": "EXPLICIT",
+      "source": "However, both of these strategies have a clear inconvenience; they significantly narrow the patterning domain, and therefore, morphogen readout occurs where the gradient is essentially flat (Adelmann et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Adelmann et al., 2023.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:59:10.922210Z"
+    },
+    {
+      "id": "9d53b6c7-b488-4740-8e8f-0e65aa746eab",
+      "content_id": "66f7b4a2-2d04-4932-9bd6-e1711ee7dbbc",
+      "claim_id": "C62",
+      "claim": "A linearly decaying gradient establishes more precise patterning boundaries with respect to a gradient established by a self-enhanced ligand degradation mechanism when interpreted several cells away from the morphogen source.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with this idea, Adelmann et al., 2023 recently showed that a linearly decaying gradient establishes more precise patterning boundaries with respect to a gradient established by a self-enhanced ligand degradation mechanism when interpreted several cells away from the morphogen source.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Adelmann et al., 2023.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:59:10.922210Z"
+    },
+    {
+      "id": "7e7b6bc7-b4e7-49de-9b2b-b42c486efa1e",
+      "content_id": "66f7b4a2-2d04-4932-9bd6-e1711ee7dbbc",
+      "claim_id": "C63",
+      "claim": "The dynamic interpretation of Hh patterning in the Drosophila wing disc offers a mechanistic implementation of the tradeoff between robustness and precision.",
+      "claim_type": "EXPLICIT",
+      "source": "The dynamic interpretation of Hh patterning in the Drosophila wing disc (Nahmad and Stathopoulos, 2009) offers a mechanistic implementation of this idea.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the results of the manuscript.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:59:10.922210Z"
+    },
+    {
+      "id": "08d6aef9-1ad5-4170-b70b-f4371ed87414",
+      "content_id": "66f7b4a2-2d04-4932-9bd6-e1711ee7dbbc",
+      "claim_id": "C64",
+      "claim": "A linearly decaying Hh gradient (the overshoot gradient) establishes the anterior border of dpp prior to upregulation of the Hh receptor, Ptc.",
+      "claim_type": "EXPLICIT",
+      "source": "First, a linearly decaying Hh gradient (the overshoot gradient) establishes the anterior border of dpp prior to upregulation of the Hh receptor, Ptc; once Ptc is upregulated, self-enhanced ligand degradation narrows the gradient and the anterior border of col is established (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the mechanism shown in Figure 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:59:10.922210Z"
+    },
+    {
+      "id": "6c555138-f95b-491e-b484-5e5e7dbc674c",
+      "content_id": "66f7b4a2-2d04-4932-9bd6-e1711ee7dbbc",
+      "claim_id": "C65",
+      "claim": "Once Ptc is upregulated, self-enhanced ligand degradation narrows the gradient and the anterior border of col is established.",
+      "claim_type": "EXPLICIT",
+      "source": "First, a linearly decaying Hh gradient (the overshoot gradient) establishes the anterior border of dpp prior to upregulation of the Hh receptor, Ptc; once Ptc is upregulated, self-enhanced ligand degradation narrows the gradient and the anterior border of col is established (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the mechanism shown in Figure 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:59:10.922210Z"
+    },
+    {
+      "id": "a1ec276b-ce7d-4b78-8ea6-f6ecb728ce91",
+      "content_id": "66f7b4a2-2d04-4932-9bd6-e1711ee7dbbc",
+      "claim_id": "C66",
+      "claim": "Under the overshoot model, the col border exhibits higher robustness than the dpp border to hh dosage.",
+      "claim_type": "EXPLICIT",
+      "source": "Under this model, the col border exhibits higher robustness than the dpp border to hh dosage (Figure 2), and our experimental data supports this prediction (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by modeling (Figure 2) and experimental data (Figure 3).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:59:10.922210Z"
+    },
+    {
+      "id": "4b21de29-88ed-4864-abfa-67412da4415f",
+      "content_id": "66f7b4a2-2d04-4932-9bd6-e1711ee7dbbc",
+      "claim_id": "C67",
+      "claim": "The reduced robustness of dpp patterning occurs as a trade off for increased precision, relative to what would be expected by the steady-state interpretation model.",
+      "claim_type": "EXPLICIT",
+      "source": "This reduced robustness of dpp patterning occurs as a trade off for increased precision, relative to what would be expected by the steady-state interpretation model (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by modeling and experimental data shown in Figure 4.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:59:10.922210Z"
+    },
+    {
+      "id": "1b83db64-63a3-43a9-86c8-0158ad7631d9",
+      "content_id": "66f7b4a2-2d04-4932-9bd6-e1711ee7dbbc",
+      "claim_id": "C68",
+      "claim": "The dynamical interpretation of Hh signaling offers a target-specific, robust-yet-flexible architecture of patterning in this system.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the dynamical interpretation of Hh signaling offers a target-specific, robust-yet-flexible architecture of patterning in this system (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is the main conclusion of the manuscript, supported by all the data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:59:10.922210Z"
+    },
+    {
+      "id": "40652ff9-c00a-42c5-9a36-0c9469221922",
+      "content_id": "66f7b4a2-2d04-4932-9bd6-e1711ee7dbbc",
+      "claim_id": "C69",
+      "claim": "The displacement of the anterior borders of Hh targets is more than twice for dpp than for col (\u22482.65, from their median values).",
+      "claim_type": "EXPLICIT",
+      "source": "The finding that the displacement of the anterior borders of Hh targets is more than twice for dpp than for col (\u22482.65, from their median values; Figure 3e) provides a interesting prediction about the overshoot gradient.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is calculated from the experimental data in Figure 3e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:59:10.922210Z"
+    },
+    {
+      "id": "5c09f983-c4c4-4178-b8b7-e0469c2d54bc",
+      "content_id": "66f7b4a2-2d04-4932-9bd6-e1711ee7dbbc",
+      "claim_id": "C70",
+      "claim": "The overshoot occurs when Ptc expression is about twice its basal levels in the anterior compartment.",
+      "claim_type": "EXPLICIT",
+      "source": "From Equation 11, it can be inferred that the overshoot occurs when Ptc expressions is about twice its basal levels in the anterior compartment, but estimates suggest that Ptc reaches about seven times its basal levels in Ptc domain (Casali and Struhl, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from Equation 11 and the experimental data, with a citation to Casali and Struhl, 2004.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:59:10.922210Z"
+    },
+    {
+      "id": "5cc0300d-e70e-4625-ad5d-0290c90cf2d3",
+      "content_id": "66f7b4a2-2d04-4932-9bd6-e1711ee7dbbc",
+      "claim_id": "C71",
+      "claim": "Ptc reaches about seven times its basal levels in Ptc domain.",
+      "claim_type": "EXPLICIT",
+      "source": "From Equation 11, it can be inferred that the overshoot occurs when Ptc expressions is about twice its basal levels in the anterior compartment, but estimates suggest that Ptc reaches about seven times its basal levels in Ptc domain (Casali and Struhl, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Casali and Struhl, 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:59:10.922210Z"
+    },
+    {
+      "id": "03705df1-a556-4c83-b0db-4f25b45cec74",
+      "content_id": "66f7b4a2-2d04-4932-9bd6-e1711ee7dbbc",
+      "claim_id": "C72",
+      "claim": "The overshoot occurs significantly earlier than Ptc reaches its steady-state levels.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that the overshoot occurs significantly earlier than Ptc reaches its steady-state levels and that Ptc is produced at much larger amounts than what actually is needed to control the range of the Hh gradient.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the comparison of Ptc levels at overshoot and steady state.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:59:10.922210Z"
+    },
+    {
+      "id": "6e89f290-5b4e-4b60-a64b-b3ff2b7eee6b",
+      "content_id": "66f7b4a2-2d04-4932-9bd6-e1711ee7dbbc",
+      "claim_id": "C73",
+      "claim": "Ptc is produced at much larger amounts than what actually is needed to control the range of the Hh gradient.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that the overshoot occurs significantly earlier than Ptc reaches its steady-state levels and that Ptc is produced at much larger amounts than what actually is needed to control the range of the Hh gradient.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the comparison of Ptc levels at overshoot and steady state.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:59:10.922210Z"
+    },
+    {
+      "id": "352c5031-4a3d-4493-a161-054b71cf76ae",
+      "content_id": "66f7b4a2-2d04-4932-9bd6-e1711ee7dbbc",
+      "claim_id": "C74",
+      "claim": "The purpose of building very high levels of Ptc may be to desensitize Hh signaling over time as has been proposed for the vertebrate neural tube.",
+      "claim_type": "EXPLICIT",
+      "source": "But since unbound Ptc represses Hh signaling, perhaps the purpose of building very high levels of Ptc is to desensitize Hh signaling over time as has been proposed for the vertebrate neural tube (Dessaud et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative claim with a citation to Dessaud et al., 2008.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:59:10.922210Z"
+    },
+    {
+      "id": "13ab94f3-ca9b-4ee3-bd10-40ddb25d733b",
+      "content_id": "66f7b4a2-2d04-4932-9bd6-e1711ee7dbbc",
+      "claim_id": "C75",
+      "claim": "The expression of col defines directly a specific feature in the adult wing, the L3\u2013L4 intervein area.",
+      "claim_type": "EXPLICIT",
+      "source": "In the Drosophila wing, the expression of col defines directly a specific feature in the adult wing, the L3\u2013L4 intervein area (Vervoort et al., 1999), which corresponds to the more central area of the wing",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Vervoort et al., 1999.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:59:10.922210Z"
+    },
+    {
+      "id": "29bdef8d-98de-4277-87e5-178c74adb66e",
+      "content_id": "66f7b4a2-2d04-4932-9bd6-e1711ee7dbbc",
+      "claim_id": "C76",
+      "claim": "The dpp pattern does not have a direct positional role in the adult wing, but it acts as the source of another morphogen.",
+      "claim_type": "EXPLICIT",
+      "source": "whereas the dpp pattern does not have a direct positional role in the adult wing, but it acts as the source of another morphogen.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known feature of dpp function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:59:10.922210Z"
+    },
+    {
+      "id": "3e12debc-68e3-4d82-bb76-cd813373e946",
+      "content_id": "66f7b4a2-2d04-4932-9bd6-e1711ee7dbbc",
+      "claim_id": "C77",
+      "claim": "The source where a morphogen is produced does not have a significant impact on patterning.",
+      "claim_type": "EXPLICIT",
+      "source": "As suggested by prior theoretical work, the source where a morphogen is produced does not have a significant impact on patterning (Mizutani et al., 2006)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Mizutani et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:59:10.922210Z"
+    },
+    {
+      "id": "5ba8f719-8421-4a5d-be6e-4eb84394c0f3",
+      "content_id": "66f7b4a2-2d04-4932-9bd6-e1711ee7dbbc",
+      "claim_id": "C78",
+      "claim": "The robustness of the dpp pattern may not be subject to strong selection pressure during evolution.",
+      "claim_type": "EXPLICIT",
+      "source": "so the robustness of the dpp pattern may not subject to strong selection pressure during evolution, or perhaps other mechanisms downstream of Hh signaling exist to provide robustness at the level of Dpp signaling (Aguilar-Hidalgo et al., 2018; Romanova-Michaelides et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative claim with citations to Aguilar-Hidalgo et al., 2018 and Romanova-Michaelides et al., 2022.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:59:10.922210Z"
+    },
+    {
+      "id": "9eeed665-ab04-420b-a4be-c61f8bb3737b",
+      "content_id": "66f7b4a2-2d04-4932-9bd6-e1711ee7dbbc",
+      "claim_id": "C79",
+      "claim": "Other mechanisms downstream of Hh signaling may exist to provide robustness at the level of Dpp signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "so the robustness of the dpp pattern may not subject to strong selection pressure during evolution, or perhaps other mechanisms downstream of Hh signaling exist to provide robustness at the level of Dpp signaling (Aguilar-Hidalgo et al., 2018; Romanova-Michaelides et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative claim with citations to Aguilar-Hidalgo et al., 2018 and Romanova-Michaelides et al., 2022.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:59:10.922210Z"
+    },
+    {
+      "id": "ccb65325-ca45-4633-8f96-914a7cc0b470",
+      "content_id": "66f7b4a2-2d04-4932-9bd6-e1711ee7dbbc",
+      "claim_id": "C80",
+      "claim": "In the adult wing of Drosophila, robustness ensures the correct positioning of veins whereas precision may be related to ensure straight veins.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, in the adult wing of Drosophila, precision could have a direct role on the sharpness of vein patterning. Thus, robustness ensures the correct positioning of veins whereas precision may be related to ensure straight veins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the functional significance of robustness and precision.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:59:10.922210Z"
+    },
+    {
+      "id": "a2eb6783-24be-4310-ab5c-117aa4e41388",
+      "content_id": "66f7b4a2-2d04-4932-9bd6-e1711ee7dbbc",
+      "claim_id": "C81",
+      "claim": "It is unclear if a more imprecise dpp pattern would impact the straightness of veins 2 and 5 which are positioned by Dpp signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "While it is unclear if a more imprecise dpp pattern would impact the straightness of veins 2 and 5 which are positioned by Dpp signaling, it suggests that in general, the overshoot model ensures robust positioning close to the morphogen source, but prioritize straightness of stripe-like patterns over positioning in more distant locations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This acknowledges uncertainty about the functional consequences.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:59:10.922210Z"
+    },
+    {
+      "id": "6f085791-bd2d-4686-8a03-ecf73cb22f2a",
+      "content_id": "66f7b4a2-2d04-4932-9bd6-e1711ee7dbbc",
+      "claim_id": "C82",
+      "claim": "The overshoot model ensures robust positioning close to the morphogen source, but prioritizes straightness of stripe-like patterns over positioning in more distant locations.",
+      "claim_type": "EXPLICIT",
+      "source": "While it is unclear if a more imprecise dpp pattern would impact the straightness of veins 2 and 5 which are positioned by Dpp signaling, it suggests that in general, the overshoot model ensures robust positioning close to the morphogen source, but prioritize straightness of stripe-like patterns over positioning in more distant locations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general interpretation of the overshoot model's properties.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:59:10.922210Z"
+    },
+    {
+      "id": "3f2db701-b1a6-4308-abe0-e58ae7817e37",
+      "content_id": "66f7b4a2-2d04-4932-9bd6-e1711ee7dbbc",
+      "claim_id": "C83",
+      "claim": "Ptc-dependent Hh degradation is evolutionary conserved.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that Ptc-dependent Hh degradation is evolutionary conserved (Chen and Struhl, 1996), our findings could have implications for robust and precise patterning in other systems as well.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Chen and Struhl, 1996.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:59:10.922210Z"
+    },
+    {
+      "id": "52167871-948c-4ec6-88ba-fd427930bf01",
+      "content_id": "66f7b4a2-2d04-4932-9bd6-e1711ee7dbbc",
+      "claim_id": "C84",
+      "claim": "The findings could have implications for robust and precise patterning in other systems.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that Ptc-dependent Hh degradation is evolutionary conserved (Chen and Struhl, 1996), our findings could have implications for robust and precise patterning in other systems as well.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative claim about the broader implications of the work.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:59:10.922210Z"
+    },
+    {
+      "id": "a54cffa7-7889-4726-b9d2-c94197b09fc4",
+      "content_id": "66f7b4a2-2d04-4932-9bd6-e1711ee7dbbc",
+      "claim_id": "C85",
+      "claim": "hh[AC] is an amorphic allele.",
+      "claim_type": "EXPLICIT",
+      "source": "ry[506] hh[AC]/TM3, Sb. hh[AC] is an amorphic allele",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the key resources table.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:59:10.922210Z"
+    },
+    {
+      "id": "fc095c70-f3d6-4a7e-b217-bcbc943f7794",
+      "content_id": "66f7b4a2-2d04-4932-9bd6-e1711ee7dbbc",
+      "claim_id": "C86",
+      "claim": "dpp[10638] is a lacZ enhancer trap for dpp.",
+      "claim_type": "EXPLICIT",
+      "source": "cn[1] dpp[10638]/CyO; ry[506]. dpp[10638] is a lacZ is a dpp enhancer trap.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the key resources table.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:59:10.922210Z"
+    },
+    {
+      "id": "2826ab39-4056-431f-901d-7dae221999e7",
+      "content_id": "66f7b4a2-2d04-4932-9bd6-e1711ee7dbbc",
+      "claim_id": "C87",
+      "claim": "Fly crosses were conducted at 25\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "Fly crosses were conducted at 25\u00b0C.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:59:10.922210Z"
+    },
+    {
+      "id": "d48a48d5-c1f1-4d1f-ad90-fd303cff7c33",
+      "content_id": "66f7b4a2-2d04-4932-9bd6-e1711ee7dbbc",
+      "claim_id": "C88",
+      "claim": "Wing imaginal discs were dissected from third-instar larvae.",
+      "claim_type": "EXPLICIT",
+      "source": "Wing imaginal discs were dissected from third-instar larvae.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:59:10.922210Z"
+    },
+    {
+      "id": "d3606631-4459-4430-8bba-85e9702cfc7b",
+      "content_id": "66f7b4a2-2d04-4932-9bd6-e1711ee7dbbc",
+      "claim_id": "C89",
+      "claim": "A Forward-in-Time-Centered-in-Space (FTCS) algorithm was implemented to solve Equations 12\u201316 in Python.",
+      "claim_type": "EXPLICIT",
+      "source": "For computations in Figure 2, a Forward-in-Time-Centered-in-Space (FTCS) algorithm (using space and time steps of 1 \u03bcm and time steps of 0.5s, respectively) was implemented to solve Equations 12\u201316 in Python, using the parameters reported by Nahmad and Stathopoulos, 2009.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail about the numerical simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:59:10.922210Z"
+    },
+    {
+      "id": "a1666835-1d9d-468e-af8a-b3b7b2794de1",
+      "content_id": "66f7b4a2-2d04-4932-9bd6-e1711ee7dbbc",
+      "claim_id": "C90",
+      "claim": "Space steps of 1 \u03bcm and time steps of 0.5s were used in the FTCS algorithm.",
+      "claim_type": "EXPLICIT",
+      "source": "For computations in Figure 2, a Forward-in-Time-Centered-in-Space (FTCS) algorithm (using space and time steps of 1 \u03bcm and time steps of 0.5s, respectively) was implemented to solve Equations 12\u201316 in Python, using the parameters reported by Nahmad and Stathopoulos, 2009.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail about the numerical simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:59:10.922210Z"
+    },
+    {
+      "id": "8a61160c-bd70-4110-a874-d7f0929772a6",
+      "content_id": "66f7b4a2-2d04-4932-9bd6-e1711ee7dbbc",
+      "claim_id": "C91",
+      "claim": "The parameters used in the simulations were reported by Nahmad and Stathopoulos, 2009.",
+      "claim_type": "EXPLICIT",
+      "source": "For computations in Figure 2, a Forward-in-Time-Centered-in-Space (FTCS) algorithm (using space and time steps of 1 \u03bcm and time steps of 0.5s, respectively) was implemented to solve Equations 12\u201316 in Python, using the parameters reported by Nahmad and Stathopoulos, 2009.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail about the numerical simulations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:59:10.922210Z"
+    },
+    {
+      "id": "d7140b60-91f5-4582-aef6-e0a325d761c4",
+      "content_id": "66f7b4a2-2d04-4932-9bd6-e1711ee7dbbc",
+      "claim_id": "C92",
+      "claim": "16-bit resolution images were saved in TIF format and then processed to measure the width of the fluorescence patterns using OpenCv library of Python.",
+      "claim_type": "EXPLICIT",
+      "source": "For image analysis, we took the Z projection of the confocal images using ImageJ. 16-bit resolution images were saved in TIF format and then processed to measure the width of the fluorescence patterns using OpenCv library of Python.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail about image analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:59:10.922210Z"
+    },
+    {
+      "id": "f8d05878-ea56-43f2-a5e8-83b668f08c04",
+      "content_id": "66f7b4a2-2d04-4932-9bd6-e1711ee7dbbc",
+      "claim_id": "C93",
+      "claim": "The width of each pattern domain was measured at 0.2 of relative intensity.",
+      "claim_type": "EXPLICIT",
+      "source": "We normalized the intensity values after dividing them by the maximum intensity value and then we measured the width of each pattern domain at 0.2 of relative intensity (in Figure 3\u2014figure supplement 2 we varied this threshold value from 0.1 to 0.6).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail about how pattern width was measured.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:59:10.922210Z"
+    },
+    {
+      "id": "09b21964-c59f-446f-9367-9b8e904ce164",
+      "content_id": "66f7b4a2-2d04-4932-9bd6-e1711ee7dbbc",
+      "claim_id": "C94",
+      "claim": "The same images were used to measure robustness (Figure 3) and precision (Figure 4).",
+      "claim_type": "EXPLICIT",
+      "source": "The same images were used to measure robustness (Figure 3) and precision (Figure 4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:59:10.922210Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "e2891a9b-6f2c-4d70-8abe-ada5595034ce",
+      "content_id": "66f7b4a2-2d04-4932-9bd6-e1711ee7dbbc",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Mathematical modeling demonstrates that steady-state morphogen interpretation predicts equal robustness for all targets, whereas dynamic interpretation through the overshoot model predicts target-specific robustness, with col (steady-state target) being more robust than dpp (overshoot target) to changes in morphogen dosage.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The mathematical derivations in C24, C30, and C32-C33 provide clear analytical support showing that steady-state models produce uniform shifts (constant \u0394x) while the overshoot model produces differential shifts. The independence from threshold choice (C33) strengthens the generality. The logic is mathematically sound and builds appropriately on prior work (Eldar et al., 2003).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:59:10.922210Z"
+    },
+    {
+      "id": "58bdec33-ebb3-4414-977b-f70d0a8be671",
+      "content_id": "66f7b4a2-2d04-4932-9bd6-e1711ee7dbbc",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Numerical simulations of an explicit Hh pathway model confirm that steady-state outputs are more robust than overshoot outputs, and this differential robustness is specifically attributable to Hh-dependent Ptc upregulation, with results holding across diverse parameter choices.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C35 show computational validation across parameter space (Figure 2a-b), and C36/C39 demonstrate mechanistic attribution through perturbation of \u03b1ptc. The parameter sensitivity analysis (C35, Figure 2b) addresses potential concerns about model-specific artifacts. However, the manuscript lacks details on random seed specification for stochastic elements, which could affect reproducibility.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:59:10.922210Z"
+    },
+    {
+      "id": "7750c5b0-562b-4fa7-b46e-dc850e8873e4",
+      "content_id": "66f7b4a2-2d04-4932-9bd6-e1711ee7dbbc",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Experimental measurements in hh heterozygous wing discs show that col pattern width is reduced by only 1.66 \u03bcm (less than one cell diameter) while dpp pattern width is reduced by 4.44 \u03bcm (~2.65-fold greater displacement), confirming the overshoot model's prediction of differential robustness.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The experimental data (C42-C44, Figure 3) provide clear quantitative support with appropriate statistical testing (Mann-Whitney U test, p<0.001). Controls for disc size (C45) and threshold dependence (C46) strengthen the conclusion. Sample sizes appear adequate (n=14 and n=23). The ~2.65-fold difference (C69) aligns with model predictions. However, the manuscript does not report whether experimenters were blinded to genotype during measurements.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:59:10.922210Z"
+    },
+    {
+      "id": "4cdaecda-c723-469b-889f-5c631c865837",
+      "content_id": "66f7b4a2-2d04-4932-9bd6-e1711ee7dbbc",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Temporal analysis of gradient robustness reveals that early transient states exhibit the smallest \u0394x (highest robustness) despite limited range, \u0394x increases to a maximum at the overshoot, then decreases toward steady state.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C41 describe temporal dynamics shown in Figure 2c, with appropriate citation to Bergmann et al., 2007 for context. This reconciles the apparent contradiction between pre-steady-state robustness and overshoot vulnerability. The computational analysis appears sound, though the biological relevance of very early transient states with 'very limited range' is unclear.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:59:10.922210Z"
+    },
+    {
+      "id": "e965ace0-1c25-42d5-92bf-3112bdb16090",
+      "content_id": "66f7b4a2-2d04-4932-9bd6-e1711ee7dbbc",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The overshoot model predicts and simulations confirm that dpp patterning achieves greater precision than would be expected under steady-state interpretation, because the overshoot gradient has a steeper slope at the dpp border location than the steady-state gradient, representing a tradeoff where reduced robustness is exchanged for increased precision.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "The gradient slope comparison (C48-C49, Figure 4a-b) provides mechanistic rationale, and simulations (C52, Figure 4f) show predicted precision differences. However, the experimental validation is problematic: the manuscript fits noise levels to match col precision, then tests dpp precision using those same noise parameters. This circular approach (acknowledged in Methods) cannot independently validate the precision prediction. The experimental \u03c3x for dpp (~1.96 \u03bcm) falls between overshoot and steady-state predictions, but statistical comparison is limited.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:59:10.922210Z"
+    },
+    {
+      "id": "bd8aa819-ee89-4150-b42a-cb264b7b89c7",
+      "content_id": "66f7b4a2-2d04-4932-9bd6-e1711ee7dbbc",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The dynamic interpretation of Hh signaling, where a linearly decaying overshoot gradient establishes dpp before Ptc upregulation and self-enhanced ligand degradation subsequently narrows the gradient to establish col, provides a mechanistic implementation of target-specific, robust-yet-flexible patterning architecture with tunable tradeoffs between robustness and precision.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This integrative conclusion (C6, C68) is well-supported by the combination of modeling (C64-C65) and experimental validation (C66). The mechanism is clearly articulated and the experimental data for differential robustness is strong. However, the precision component remains less certain (see previous result), which somewhat weakens the 'tradeoff' narrative. The claim of 'tunable' properties is supported conceptually but not demonstrated experimentally through systematic manipulation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:59:10.922210Z"
+    },
+    {
+      "id": "0f52d01d-deb8-4fe1-ba47-172c7daa3997",
+      "content_id": "66f7b4a2-2d04-4932-9bd6-e1711ee7dbbc",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Analysis of experimental displacement ratios suggests the overshoot occurs when Ptc expression is approximately twice basal levels, significantly earlier than Ptc reaches steady-state levels (~7-fold basal), implying Ptc is produced in excess of what is needed to control gradient range.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C70 makes a quantitative inference from Equation 11 and the ~2.65-fold displacement ratio, but this calculation depends on multiple assumptions about the relationship between displacement and Ptc levels. The comparison to Casali & Struhl 2004 data (C71) provides context, but C73 represents speculation rather than demonstrated fact. The inference chain is logical but indirect, and alternative explanations are not excluded.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:59:10.922210Z"
+    },
+    {
+      "id": "b320e339-1475-4f65-a8e9-0873cdcd6f63",
+      "content_id": "66f7b4a2-2d04-4932-9bd6-e1711ee7dbbc",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "In the Drosophila wing disc, Hh signaling establishes col pattern via the steady-state gradient and dpp pattern via a transient overshoot gradient, with the prediction that dpp should not exhibit robustness from self-enhanced ligand degradation since the overshoot precedes Ptc upregulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims establish the core framework based on the overshoot model (Nahmad & Stathopoulos, 2009). Claims C2-C3 and C19-C20 describe the established model, while C21 articulates the testable prediction. This is well-supported by prior work and provides the foundation for experimental testing. The manuscript appropriately cites the original overshoot model and builds logically on it.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:59:10.922210Z"
+    },
+    {
+      "id": "05e45cb9-002e-44a3-ab26-2553fe710e3d",
+      "content_id": "66f7b4a2-2d04-4932-9bd6-e1711ee7dbbc",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Prior studies have shown that col pattern width and L3-L4 intervein distance are not statistically different between hh heterozygous and wild-type animals, and col/ptc pattern widths do not significantly change across 1-4 hh gene copies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims accurately represent prior work (Irons et al., 2010; Hatori et al., 2021) and provide important context for the current study. The citations appear appropriate and the characterization of prior findings is accurate. This establishes that col robustness was known, making the dpp comparison novel.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:59:10.922210Z"
+    },
+    {
+      "id": "ed37c3dc-2d69-4768-b693-f47a6aff1b51",
+      "content_id": "66f7b4a2-2d04-4932-9bd6-e1711ee7dbbc",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Numerical simulations employed a Forward-in-Time-Centered-in-Space (FTCS) algorithm with 1 \u03bcm space steps and 0.5s time steps to solve the Hh pathway equations using parameters from Nahmad & Stathopoulos 2009, and image analysis measured pattern widths at 0.2 relative intensity using Python OpenCV.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "The methodological details (C89-C93) provide reasonable information about computational and image analysis approaches. However, critical details are missing: no mention of random seeds for stochastic elements, no specification of Python/library versions, and no discussion of numerical stability or convergence criteria for the FTCS algorithm. The choice of 0.2 relative intensity threshold (C93) is tested for robustness (Figure 3\u2014supplement 2), which is appropriate. Code availability is mentioned but reproducibility cannot be fully assessed.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:59:10.922210Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "bd91798d-c83f-451b-87bd-d6696751661e",
+      "result_id": "e2891a9b-6f2c-4d70-8abe-ada5595034ce"
+    },
+    {
+      "claim_id": "422ff99d-96ef-4e99-92e0-42ab55fea39d",
+      "result_id": "e2891a9b-6f2c-4d70-8abe-ada5595034ce"
+    },
+    {
+      "claim_id": "b6ca7b58-a477-4f49-8b11-776ea525afa6",
+      "result_id": "e2891a9b-6f2c-4d70-8abe-ada5595034ce"
+    },
+    {
+      "claim_id": "73c33110-bce1-4643-8709-51b866cd4735",
+      "result_id": "e2891a9b-6f2c-4d70-8abe-ada5595034ce"
+    },
+    {
+      "claim_id": "f786a1ed-384f-4d11-9327-a82a38b74c29",
+      "result_id": "e2891a9b-6f2c-4d70-8abe-ada5595034ce"
+    },
+    {
+      "claim_id": "6fd7a690-2300-44da-8b2f-1449c6defa9e",
+      "result_id": "e2891a9b-6f2c-4d70-8abe-ada5595034ce"
+    },
+    {
+      "claim_id": "0505041d-e6c6-465f-bcf5-3c8f801cd6b5",
+      "result_id": "58bdec33-ebb3-4414-977b-f70d0a8be671"
+    },
+    {
+      "claim_id": "51ea8481-3651-451b-94ec-f28c8da7382d",
+      "result_id": "58bdec33-ebb3-4414-977b-f70d0a8be671"
+    },
+    {
+      "claim_id": "0bf79c47-a04b-4b67-b594-350ca8592f3c",
+      "result_id": "58bdec33-ebb3-4414-977b-f70d0a8be671"
+    },
+    {
+      "claim_id": "ce87e7ce-ee35-4c8d-8107-cb7a65e49691",
+      "result_id": "58bdec33-ebb3-4414-977b-f70d0a8be671"
+    },
+    {
+      "claim_id": "57c1fdcc-dc93-414f-8b22-3ac424a081b2",
+      "result_id": "7750c5b0-562b-4fa7-b46e-dc850e8873e4"
+    },
+    {
+      "claim_id": "c0564fae-33fb-4d60-92ef-022c51fd66e1",
+      "result_id": "7750c5b0-562b-4fa7-b46e-dc850e8873e4"
+    },
+    {
+      "claim_id": "c0aab923-b4a8-4b6f-94b1-c6f8a6350c4e",
+      "result_id": "7750c5b0-562b-4fa7-b46e-dc850e8873e4"
+    },
+    {
+      "claim_id": "910056fa-d796-4670-baa2-8434afc43dac",
+      "result_id": "7750c5b0-562b-4fa7-b46e-dc850e8873e4"
+    },
+    {
+      "claim_id": "a5af52b8-9839-4b0e-99a6-f3f03a1b65ab",
+      "result_id": "7750c5b0-562b-4fa7-b46e-dc850e8873e4"
+    },
+    {
+      "claim_id": "f18841e2-2ddb-44b8-88c7-c7c2068ac20d",
+      "result_id": "7750c5b0-562b-4fa7-b46e-dc850e8873e4"
+    },
+    {
+      "claim_id": "40652ff9-c00a-42c5-9a36-0c9469221922",
+      "result_id": "7750c5b0-562b-4fa7-b46e-dc850e8873e4"
+    },
+    {
+      "claim_id": "942ba01a-5a35-4d9a-8d79-8a9e81f6528e",
+      "result_id": "4cdaecda-c723-469b-889f-5c631c865837"
+    },
+    {
+      "claim_id": "43214ee2-2616-474c-b84f-b7f4e3dfde72",
+      "result_id": "4cdaecda-c723-469b-889f-5c631c865837"
+    },
+    {
+      "claim_id": "16c6814a-0875-4067-97f7-8d037cd35a67",
+      "result_id": "e965ace0-1c25-42d5-92bf-3112bdb16090"
+    },
+    {
+      "claim_id": "ced2ba45-d824-467e-acf0-3562c4095304",
+      "result_id": "e965ace0-1c25-42d5-92bf-3112bdb16090"
+    },
+    {
+      "claim_id": "8c52f4b4-a644-44be-8182-63ff4d77e6fd",
+      "result_id": "e965ace0-1c25-42d5-92bf-3112bdb16090"
+    },
+    {
+      "claim_id": "3522ebc2-2085-4bdf-aeed-0c0168c2e649",
+      "result_id": "e965ace0-1c25-42d5-92bf-3112bdb16090"
+    },
+    {
+      "claim_id": "4b21de29-88ed-4864-abfa-67412da4415f",
+      "result_id": "e965ace0-1c25-42d5-92bf-3112bdb16090"
+    },
+    {
+      "claim_id": "969650ef-f9ea-413e-ad5f-09514aff38b4",
+      "result_id": "bd8aa819-ee89-4150-b42a-cb264b7b89c7"
+    },
+    {
+      "claim_id": "7e7b6bc7-b4e7-49de-9b2b-b42c486efa1e",
+      "result_id": "bd8aa819-ee89-4150-b42a-cb264b7b89c7"
+    },
+    {
+      "claim_id": "08d6aef9-1ad5-4170-b70b-f4371ed87414",
+      "result_id": "bd8aa819-ee89-4150-b42a-cb264b7b89c7"
+    },
+    {
+      "claim_id": "6c555138-f95b-491e-b484-5e5e7dbc674c",
+      "result_id": "bd8aa819-ee89-4150-b42a-cb264b7b89c7"
+    },
+    {
+      "claim_id": "a1ec276b-ce7d-4b78-8ea6-f6ecb728ce91",
+      "result_id": "bd8aa819-ee89-4150-b42a-cb264b7b89c7"
+    },
+    {
+      "claim_id": "1b83db64-63a3-43a9-86c8-0158ad7631d9",
+      "result_id": "bd8aa819-ee89-4150-b42a-cb264b7b89c7"
+    },
+    {
+      "claim_id": "5c09f983-c4c4-4178-b8b7-e0469c2d54bc",
+      "result_id": "0f52d01d-deb8-4fe1-ba47-172c7daa3997"
+    },
+    {
+      "claim_id": "5cc0300d-e70e-4625-ad5d-0290c90cf2d3",
+      "result_id": "0f52d01d-deb8-4fe1-ba47-172c7daa3997"
+    },
+    {
+      "claim_id": "03705df1-a556-4c83-b0db-4f25b45cec74",
+      "result_id": "0f52d01d-deb8-4fe1-ba47-172c7daa3997"
+    },
+    {
+      "claim_id": "6e89f290-5b4e-4b60-a64b-b3ff2b7eee6b",
+      "result_id": "0f52d01d-deb8-4fe1-ba47-172c7daa3997"
+    },
+    {
+      "claim_id": "5e70b468-ce99-4876-829a-bf6437623212",
+      "result_id": "b320e339-1475-4f65-a8e9-0873cdcd6f63"
+    },
+    {
+      "claim_id": "0b2e2e95-35ed-4ce1-ad8c-74dc85e5d340",
+      "result_id": "b320e339-1475-4f65-a8e9-0873cdcd6f63"
+    },
+    {
+      "claim_id": "8f048dcb-3ed5-455a-a3bd-163ced6421cd",
+      "result_id": "b320e339-1475-4f65-a8e9-0873cdcd6f63"
+    },
+    {
+      "claim_id": "0af023da-5adb-414e-bb3c-8df0617b6097",
+      "result_id": "b320e339-1475-4f65-a8e9-0873cdcd6f63"
+    },
+    {
+      "claim_id": "62722322-046e-465e-bd1e-82611d8a188c",
+      "result_id": "b320e339-1475-4f65-a8e9-0873cdcd6f63"
+    },
+    {
+      "claim_id": "283d957d-7ab5-41c4-b84c-8c1d94a151db",
+      "result_id": "b320e339-1475-4f65-a8e9-0873cdcd6f63"
+    },
+    {
+      "claim_id": "8f09426f-57d7-434c-8df1-b3e4eee64f87",
+      "result_id": "05e45cb9-002e-44a3-ab26-2553fe710e3d"
+    },
+    {
+      "claim_id": "73f55a4c-4585-41f9-bf5a-760a5cc85cb7",
+      "result_id": "05e45cb9-002e-44a3-ab26-2553fe710e3d"
+    },
+    {
+      "claim_id": "d3606631-4459-4430-8bba-85e9702cfc7b",
+      "result_id": "ed37c3dc-2d69-4768-b693-f47a6aff1b51"
+    },
+    {
+      "claim_id": "a1666835-1d9d-468e-af8a-b3b7b2794de1",
+      "result_id": "ed37c3dc-2d69-4768-b693-f47a6aff1b51"
+    },
+    {
+      "claim_id": "8a61160c-bd70-4110-a874-d7f0929772a6",
+      "result_id": "ed37c3dc-2d69-4768-b693-f47a6aff1b51"
+    },
+    {
+      "claim_id": "d7140b60-91f5-4582-aef6-e0a325d761c4",
+      "result_id": "ed37c3dc-2d69-4768-b693-f47a6aff1b51"
+    },
+    {
+      "claim_id": "f8d05878-ea56-43f2-a5e8-83b668f08c04",
+      "result_id": "ed37c3dc-2d69-4768-b693-f47a6aff1b51"
+    }
+  ],
+  "comparisons": []
+}

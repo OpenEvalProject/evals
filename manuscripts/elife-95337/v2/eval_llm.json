@@ -1,0 +1,267 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "result": "Ema2 is exclusively expressed during conjugation and localizes to the parental MAC during mid-conjugation stages (3-6 hpm), then relocates to the developing new MAC (8 hpm) before fading away (12-14 hpm). This expression and localization pattern resembles other DNA elimination factors like Twi1 and PRC2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 are directly supported by mRNA expression data (Figure 1A) and immunofluorescence localization data (Figure 1B) showing conjugation-specific expression and dynamic MAC localization. C4 appropriately contextualizes these findings by comparison to known DNA elimination factors, supported by citations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "EMA2 knockout results in partial blockage of DNA elimination and complete loss of viable sexual progeny. FISH analysis shows retention of the Tlr1 transposon element in both MICs and MACs of EMA2 KO exconjugants, with lower signal intensity than complete TWI1 KO blockage, indicating maternally expressed EMA2 is required for completing DNA elimination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C10 are well-supported by FISH data (Figure 2A-B) showing partial DNA elimination defects and viability assays (Figure 2C) demonstrating complete loss of viable progeny. The quantitative comparison to TWI1 KO provides appropriate context for the 'partial' characterization. The conclusion about maternal expression requirement (C10) is appropriately drawn from the collective data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Ema2 is required for target-directed small RNA degradation (TDSD) at the genome-wide level. Northern blot and small RNA sequencing show that MDS-complementary scnRNAs persist in EMA2 KO cells at 6-8 hpm instead of being degraded, while IES-complementary scnRNAs remain unaffected. The TDSD defect in EMA2 KO is milder than in EMA1 KO, indicating different mechanisms of action.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C25 are strongly supported by northern blot data (Figure 3A) and genome-wide small RNA sequencing (Figure 3B). The data clearly demonstrate persistence of MDS-complementary scnRNAs in EMA2 KO while IES-complementary scnRNAs are unaffected, consistent with selective TDSD. The comparison to EMA1 KO provides important mechanistic distinction. The connection to partial DNA elimination defects (C24-C25) is appropriately supported by citation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Ema2 possesses an atypical SP-RING domain characteristic of SUMO E3 ligases and directly interacts with the SUMO E2 enzyme Ubc9 in vitro, establishing Ema2 as a bona fide SUMO E3 ligase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C30 are supported by sequence analysis (Figure 4A) showing the SP-RING domain with noted atypical features, and GST pull-down assays (Figure 4B) demonstrating direct Ema2-Ubc9 interaction. The characterization as 'atypical' is appropriately qualified with specific structural differences. The conclusion that Ema2 is a SUMO E3 ligase (C30) is reasonably inferred from domain presence and E2 interaction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Ema2 is the major SUMO E3 ligase during mid-conjugation stages (4.5-6 hpm), as evidenced by ~50% reduction in high molecular weight SUMOylated proteins in EMA2 KO crosses. The involvement of SUMOylation in DNA elimination appears conserved among ciliates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C33 are directly supported by western blot data (Figure 4C) showing substantial reduction in SUMOylated proteins in EMA2 KO. The characterization as 'major' E3 ligase is appropriate given the ~50% reduction. C34 appropriately speculates about residual SUMOylation. C35-C36 appropriately cite prior work in Paramecium to support evolutionary conservation, though this is comparative inference rather than direct demonstration.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Spt6 is the major Ema2 target for SUMOylation during mid-conjugation. Mass spectrometry identified Spt6 as most abundant in WT but greatly reduced in EMA2 KO. Western blots show slower-migrating Spt6-HA species in WT that are barely detectable in EMA2 KO, and these species are recognized by anti-SUMO antibodies, confirming they represent SUMOylated Spt6.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C48 are well-supported by converging lines of evidence: mass spectrometry (Figure 5A), western blots showing mobility shifts (Figure 5B, Figure 5-supplement 1), and immunoprecipitation with anti-SUMO detection (Figure 5C). The temporal correlation with Ema2 expression (C42) strengthens the conclusion. C44 appropriately speculates about new MAC SUMOylation. C49 appropriately acknowledges residual SUMOylation mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Ema2 is required for genome-wide accumulation of pMAC-lncRNAs. RT-PCR shows pMAC-lncRNAs are detected in WT but not EMA2 KO at 6 hpm for three tested loci. Immunofluorescence with anti-dsRNA antibody shows loss of signal specifically in the parental MAC of EMA2 KO cells, while MIC and new MAC signals remain. Loss of pMAC-lncRNAs explains the absence of H3K27me3 in the parental MAC of EMA2 KO cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C67 are strongly supported by RT-PCR data (Figure 6A), immunofluorescence with J2 antibody (Figure 6B), and H3K27me3 staining (Figure 6C). The control genomic PCR (Figure 6-supplement 1) appropriately rules out alternative explanations for RT-PCR results. The specific loss of dsRNA signal in parental MAC but not MIC or new MAC (C57-C58) demonstrates specificity. The connection to H3K27me3 loss (C63-C67) is logical given the requirement for lncRNAs in recruiting PRC2. C61 appropriately speculates about Ema2-independent TDSD mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Ema2 promotes the association of Spt6 and RNAPII with chromatin in the parental MAC during mid-conjugation. While cytological localization appears normal, cell fractionation shows SUMOylated Spt6 is exclusively in the chromatin-bound fraction in WT, and both Spt6 and RNAPII are greatly reduced in the chromatin-bound fraction in EMA2 KO. This chromatin association does not require RNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C79 are supported by immunofluorescence (Figure 7A, Figure 7-supplement 1) and cell fractionation experiments (Figure 7B, Figure 7-supplements 2-3). The distinction between cytological and biochemical fractionation results (C71) is important and well-documented. The RNase treatment experiment (Figure 7C, C76) appropriately demonstrates RNA-independent chromatin association, with Twi1 as an appropriate RNA-dependent control. The conclusion (C79) is well-supported by the fractionation data showing reduced chromatin-bound Spt6/RNAPII in EMA2 KO.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Spt6 SUMOylation per se is not required for pMAC-lncRNA transcription, but plays another role in DNA elimination. A SUMOylation-defective Spt6 mutant (C-KR) that lacks detectable SUMOylation still supports chromatin association of Spt6/RNAPII and lncRNA accumulation in both parental and new MACs, yet shows mild DNA elimination defects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C95 are supported by genetic rescue experiments (Figure 8-supplement 1), western blots showing loss of SUMOylation in C-KR mutant (Figure 8B), cell fractionation showing normal chromatin association (Figure 8C, Figure 8-supplement 2), dsRNA detection (Figure 8D, Figure 8-supplement 3), and FISH showing DNA elimination defects (Figure 8E). The key finding that SUMOylation-defective Spt6 still supports lncRNA transcription (C93) contradicts the initial hypothesis but is well-supported by the data. The observation of DNA elimination defects despite normal lncRNA transcription (C94-C95) suggests additional roles for Spt6 SUMOylation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Summary of main findings: Ema2 is a conjugation-specific SUMO E3 ligase required for lncRNA accumulation, TDSD, heterochromatin formation in the parental MAC, and completing DNA elimination. Ema2 SUMOylates Spt6 and promotes Spt6/RNAPII chromatin association, facilitating genome-wide lncRNA transcription that is prerequisite for scnRNA-chromatin communication.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C102 appropriately summarize the major findings supported by the collective data from the study. These summary claims accurately reflect the conclusions drawn from the experimental results without overstating the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "Discussion of mechanism: The temporal loss of Spt6/RNAPII from chromatin in EMA2 KO must be a transient event during mid-conjugation, as these proteins are essential for vegetative growth. Two alternative hypotheses are proposed: (1) radical chromatin environment changes require Ema2-dependent SUMOylation to maintain transcription machinery on chromatin, or (2) pMAC-lncRNA transcription requires excess transcriptional machinery that must be committed to chromatin via Ema2-dependent SUMOylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C103-C108 are speculative interpretations (appropriately labeled as such) attempting to reconcile the observation that Spt6/RNAPII are essential yet show reduced chromatin association in EMA2 KO. While the reasoning is logical, these hypotheses lack direct experimental support and represent future directions rather than demonstrated findings. The speculation is appropriate for a Discussion section but cannot be evaluated as supported or unsupported without additional experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "Discussion of alternative mechanisms: Since SUMOylation-defective Spt6 still supports lncRNA transcription, Ema2 may facilitate transcription through SUMOylation of other proteins. Alternative explanations include: undetected Ema2-dependent SUMOylation events, SUMOylation-induced protein degradation, or competition between SUMOylation and other lysine modifications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C109-C112 are speculative explanations for the unexpected finding that Spt6 SUMOylation is not required for lncRNA transcription. These are reasonable hypotheses appropriately presented as speculation, but lack experimental support. The authors acknowledge failure to detect other Ema2-dependent SUMOylation targets (C110-C111) and propose technical limitations, which is appropriate scientific reasoning but cannot be evaluated as supported without additional data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "Comparative analysis with other organisms: SUMOylation in small RNA-directed processes in fission yeast, C. elegans, and Drosophila occurs downstream of lncRNA transcription, whereas Ema2-dependent SUMOylation in Tetrahymena occurs upstream of lncRNA transcription. Additionally, heterochromatin formation is not a prerequisite for lncRNA transcription in Tetrahymena, suggesting a unique evolutionary solution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C121 appropriately cite prior work in other organisms (C113-C116) and correctly characterize the Tetrahymena findings as occurring upstream of lncRNA transcription based on the data presented (C118, supported by Figure 6). C119-C120 appropriately cite prior work showing TWI1 loss blocks H3K27me3 but not lncRNA accumulation, supporting the conclusion that heterochromatin is not prerequisite for lncRNA transcription. The conclusion about unique evolutionary solution (C121) is a reasonable inference from the comparative analysis. C122 appropriately identifies future research directions.",
+    "result_type": "MAJOR"
+  }
+]

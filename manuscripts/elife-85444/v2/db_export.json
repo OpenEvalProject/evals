@@ -1,0 +1,1346 @@
+{
+  "submission": {
+    "id": "a1f5b8a7-f176-4ae1-aad7-067537e25e64",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-04T02:54:06.011415Z",
+    "updated_at": "2025-12-04T02:54:06.011415Z"
+  },
+  "content": [
+    {
+      "id": "bf59429f-b131-4a63-b769-e350cd6ee712",
+      "submission_id": "a1f5b8a7-f176-4ae1-aad7-067537e25e64",
+      "content_type": "manuscript",
+      "content_text": "# The Axin scaffold protects the kinase GSK3\u03b2 from cross-pathway inhibition\n\n## Authors\n\n- Maire Gavagan<sup>1</sup> ([ORCID: 0000-0003-3986-6760](https://orcid.org/0000-0003-3986-6760))\n- Noel Jameson<sup>1</sup> ([ORCID: 0000-0001-9231-3765](https://orcid.org/0000-0001-9231-3765))\n- Jesse G Zalatan<sup>1</sup> ([ORCID: 0000-0002-1458-0654](https://orcid.org/0000-0002-1458-0654)) \u2020\n\n### Affiliations\n\n1. Department of Chemistry, University of Washington Seattle United States ([ROR:00cvxb145](https://ror.org/00cvxb145))\n\n\u2020 Corresponding author\n\n## Abstract\n\nMultiple signaling pathways regulate the kinase GSK3\u03b2 by inhibitory phosphorylation at Ser9, which then occupies the GSK3\u03b2 priming pocket and blocks substrate binding. Since this mechanism should affect GSK3\u03b2 activity toward all primed substrates, it is unclear why Ser9 phosphorylation does not affect other GSK3\u03b2-dependent pathways, such as Wnt signaling. We used biochemical reconstitution and cell culture assays to evaluate how Wnt-associated GSK3\u03b2 is insulated from cross-activation by other signals. We found that the Wnt-specific scaffold protein Axin allosterically protects GSK3\u03b2 from phosphorylation at Ser9 by upstream kinases, which prevents accumulation of pS9-GSK3\u03b2 in the Axin\u2022GSK3\u03b2 complex. Scaffold proteins that protect bound proteins from alternative pathway reactions could provide a general mechanism to insulate signaling pathways from improper crosstalk.\n\n## Introduction\n\nGlycogen Synthase Kinase 3\u03b2 (GSK3\u03b2) is a potential therapeutic target for a range of diseases (Beurel et al., 2015; Nusse and Clevers, 2017), but targeting GSK3\u03b2 is complicated because it has important roles in multiple signaling pathways (Bhat et al., 2018). Understanding how GSK3\u03b2 is regulated by different signaling pathways could enable strategies to target distinct sub-populations of GSK3\u03b2.\n\nBoth Wnt and growth factor/insulin signaling pathways regulate GSK3\u03b2, but these pathways do not cross-activate (Ding et al., 2000; McManus et al., 2005; Ng et al., 2009). In Wnt signaling, the scaffold protein Axin binds GSK3\u03b2, its substrate \u03b2-catenin, and other proteins in a Wnt-specific complex called the destruction complex. Wnt signals inhibit GSK3\u03b2 phosphorylation of \u03b2-catenin (Hern\u00e1ndez et al., 2012; Stamos et al., 2014), causing \u03b2-catenin levels to rise and activate downstream transcription (Nusse and Clevers, 2017). Axin regulates kinase activity in the destruction complex, providing a mechanism to inhibit Wnt-associated GSK3\u03b2 without affecting other GSK3\u03b2-dependent pathways (Beurel et al., 2015; Gavagan et al., 2020). In contrast, in growth factor/insulin signaling, the kinases PKA and PKB/Akt phosphorylate GSK3\u03b2 at Ser9 (Cross et al., 1995; Fang et al., 2000; Jensen et al., 2007; Sutherland et al., 1993), which inhibits GSK3\u03b2 by binding in the priming pocket and blocking substrate binding (Dajani et al., 2001; Frame and Cohen, 2001; Stamos et al., 2014; ter Haar et al., 2001; Figure 1A). It remains unclear why growth factor/insulin signaling does not globally inhibit GSK3\u03b2 and cross-activate the Wnt pathway.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/85444/elife-85444-fig1-v2.jpg)\n\n**Figure 1.:** (A) In the Wnt pathway, the scaffold protein Axin coordinates a GSK3\u03b2 complex that phosphorylates \u03b2-catenin, which is then degraded. Wnt signals inhibit phosphorylation, allowing \u03b2-catenin levels to rise and initiate a transcriptional program (Nusse and Clevers, 2017). In other signaling pathways, upstream signals regulate GSK3\u03b2 through phosphorylation at Ser9, which blocks substrate binding, inhibits activity toward downstream substrates, and activates downstream signaling (Sutherland, 2011). (B) The scaffold protein Axin could insulate Wnt-associated GSK3\u03b2 from Ser9 inhibition by restoring GSK3\u03b2 activity toward \u03b2-catenin even when phosphorylated at Ser9 (Model 1) or by preventing accumulation of pS9-GSK3\u03b2 in the Wnt destruction complex (Model 2).\n\nPrevious work in the field suggests two potential biochemical mechanisms that could insulate Wnt signaling from insulin and growth factor signals. First, by tethering GSK3\u03b2 and the Wnt substrate \u03b2-catenin together, the Axin scaffold could rescue enzyme activity from the inhibitory effects of Ser9 phosphorylation (Figure 1B; Beurel et al., 2015; Frame and Cohen, 2001). A second possibility is that Axin prevents accumulation of pS9-GSK3\u03b2, either through direct steric effects or indirect allosteric effects (Figure 1B). This model is supported by in vivo experiments showing that in insulin-treated cells, Ser9 phosphorylation increases in the total GSK3\u03b2 population but is unchanged in the Axin-associated GSK3\u03b2 pool (Ding et al., 2000; Ng et al., 2009). Using a reconstituted biochemical system, we found that Axin allosterically protects GSK3\u03b2 from phosphorylation at Ser9. The ability of scaffold proteins to allosterically regulate bound enzymes and substrates is well-established (Good et al., 2011), but the use of similar mechanisms to prevent competing, scaffold-independent signaling reactions has not previously been characterized. Our findings suggest a new mechanism for how scaffold proteins can promote specificity in interconnected signaling networks by shielding bound proteins.\n\n## Results and Discussion\n\n### Phosphorylation at Ser9 inhibits GSK3\u03b2\n\nIt is well-established that Ser9 phosphorylation inhibits GSK3\u03b2 activity, but quantitative measurements are limited and variable (Frame and Cohen, 2001; Stambolic and Woodgett, 1994; Sutherland et al., 1993). To assess if the Wnt pathway can overcome Ser9 phosphorylation, we need quantitative metrics for comparison. We therefore used a biochemically reconstituted system to measure initial rates for the GSK3\u03b2 reaction with pS45-\u03b2-catenin and determined the steady state kinetic parameters kcat, KM, and kcat/KM as described previously (Gavagan et al., 2020). Comparing these parameters can distinguish whether Ser9 phosphorylation affects accumulation of the kinase-substrate complex or catalytic turnover. We used PKA to prepare fully-phosphorylated pS9-GSK3\u03b2 (see Methods and Figure 2\u2014figure supplement 1C). We observed that phosphorylation of GSK3\u03b2 at Ser9 decreases kcat/KM toward pS45-\u03b2-catenin by a factor of ~200-fold compared with unphosphorylated or mutant S9A GSK3\u03b2 (Figure 2). The observed rates for unphosphorylated GSK3\u03b2 and PKA-treated GSK3\u03b2_S9A are indistinguishable, indicating that the large rate decrease in pS9-GSK3\u03b2 is from phosphorylation at Ser9, not any other unknown PKA phosphosites. pS9-GSK3\u03b2 does not detectably saturate at high substrate concentration, giving a limit for the KM of \u22652 \u03bcM. The >sevenfold increase in KM is consistent with the model that Ser9 phosphorylation inhibits GSK3\u03b2 by interfering with substrate binding, although we cannot rule out the possibility that pSer9 also affects other catalytic steps.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/85444/elife-85444-fig2-v2.jpg)\n\n**Figure 2.:** Kinetic scheme and Michaelis-Menten plots for reactions of unphosphorylated GSK3\u03b2, pS9-GSK3\u03b2, and GSK3\u03b2_S9A with pS45-\u03b2-catenin. Plots are Vobs versus [pS45-\u03b2-catenin] at 10 nM GSK3\u03b2. GSK3\u03b2 phosphorylates pS45-\u03b2-catenin at three sites: S33, S37, and T41. Values are mean \u00b1 SD for at least three biological replicates. See Supplementary file 1a for values of fitted kinetic parameters. See Figure 2\u2014figure supplement 1C and D and Figure 2\u2014figure supplement 9 for characterization of GSK3\u03b2 phosphorylation states and mutants.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/85444/elife-85444-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Coomassie-stained SDS-PAGE of purified proteins used in this work. All proteins except PKA were purified as MBP fusion proteins (see Materials and methods). Unphosphorylated GSK3\u03b2 was purified after coexpression with lambda phosphatase (see Methods). pS45-\u03b2-catenin was purified after coexpression with CK1\u03b1 as described previously (Gavagan et al., 2020). Phosphorylated GSK3\u03b2 and GSK3\u03b2_S9A were purified after in vitro phosphorylation with PKA (see Materials and methods). Each lane was loaded with 10 \u03bcL of 4 \u03bcM protein. (B) Western blot for phosphorylation state of GSK3\u03b2 at Ser9 and Tyr216. GSK3\u03b2 samples are unphosphorylated GSK3\u03b2, pS9-GSK3\u03b2, GSK3\u03b2_S9A, and untreated GSK3\u03b2 (unmodified recombinant protein, not coexpressed with lambda phosphatase or treated with PKA). After the western blot transfer, the membrane was cut down the center of the MW ladder lanes so each third of the membrane could be incubated with separate antibodies (\u03b1-pS9-GSK3\u03b2, \u03b1-MBP for total protein, and \u03b1-pY216-GSK3\u03b2). The membrane fragments were placed back together for imaging. (C) PKA phosphorylates GSK3\u03b2 at Ser9. The extent of Ser9 phosphorylation was quantified by western blot (B). Fluorescence values were normalized using the \u03b1-MBP total protein loading control. No significant phosphorylation at Ser9 was detected for unphosphorylated GSK3\u03b2 (phosphatase-treated) or GSK3\u03b2_S9A. Untreated GSK3\u03b2 is partially (~10%) phosphorylated at Ser9. (D) Recombinant GSK3\u03b2 is phosphorylated at Tyr216. The extent of Tyr216 phosphorylation was quantified by western blot (B). Fluorescence values were normalized using the \u03b1-MBP total protein loading control.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/85444/elife-85444-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) Representative western blots for reactions of GSK3\u03b2 with pS45-\u03b2-catenin, PKA with GSK3\u03b2, and PKA with CREB127-135. Reactions were conducted with 10 nM GSK3\u03b2 or 20 nM PKA and the substrate concentrations indicated. Each gel was cut before transferring to the membrane to facilitate multiple simultaneous transfers in the same apparatus (as seen in Figure 2\u2014figure supplement 4, Figure 2\u2014figure supplement 6, and Figure 4\u2014figure supplement 1). The images shown are the complete, uncropped blot membrane images. (B) Timecourses of phosphorylation of endpoint standards for GSK3\u03b2-phosphorylated pS33/pS37/pT41-\u03b2-catenin, PKA-phosphorylated pS9-GSK3\u03b2, and PKA-phosphorylated pS133-CREB127-135. (C) The antibody signals are linear over a broad range spanning the observed signal in kinetic assays. The pS33/pS37/pT41-\u03b2-catenin data shows serial dilutions from a reaction timepoint with 3 \u00b5M pS45-\u03b2-catenin, 20 nM GSK3\u03b2 and 500 nM miniAxin. The reaction was quenched at 1.5 min, which produces ~500 nM pS33/pS37/pT41-\u03b2-catenin. The quenched timepoint was diluted 1:5, then a set of twofold serial dilutions was loaded on the gel. The signal is linear over a concentration range of at least 1.5\u2013100 nM. These data were published previously (Gavagan et al., 2020). The pS9-GSK3\u03b2 and pS133-CREB127-135 plots show sets of twofold serial dilutions from a 1:4 dilution of pS9-GSK3\u03b2 endpoint (PKA reactions with GSK3\u03b2) or undiluted endpoint (PKA reactions with CREB127-135), respectively. The pS9-GSK3\u03b2 signal is linear over a range of at least 0.2\u201312.5 nM. The CREB127-135 signal is linear over a range of at least 1\u201350 nM.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/85444/elife-85444-fig2-figsupp3-v2.jpg)\n\n**Figure 2\u2014figure supplement 3.:** (A) Michaelis-Menten plot of Vobs vs. [ATP] at 10 nM unphosphorylated GSK3\u03b2 and 50 nM pS45-\u03b2-catenin in the presence and absence of 500 nM Axin. Fits to the Michaelis-Menten equation give KM, ATP values of 4.6\u00b10.9 \u03bcM and 3.7\u00b11.3 \u03bcM in the presence and absence of Axin, respectively. (B) Michaelis-Menten plot of Vobs vs. [ATP] at 20 nM PKA and 20 nM GSK3\u03b2 in the presence and absence of 500 nM Axin. Fits to the Michaelis-Menten equation give KM, ATP values of 3.0\u00b10.6 \u03bcM and 3.3\u00b10.8 \u03bcM in the presence and absence of Axin, respectively. (C) Michaelis-Menten plot of Vobs vs. [ATP] at 20 nM PKA and 20 nM CREB127-135 in the presence and absence of 500 nM Axin. Fits to the Michaelis-Menten equation give KM, ATP values of 2.1\u00b10.4 \u03bcM and 2.1\u00b10.2 \u03bcM in the presence and absence of Axin, respectively. KM values for (A)-(C) are compiled in Supplementary file 1c.\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/85444/elife-85444-fig2-figsupp4-v2.jpg)\n\n**Figure 2\u2014figure supplement 4.:** Western blots for reactions of varying concentrations of pS45-\u03b2-catenin with 10 nM GSK3\u03b2 in the presence and absence of 500 nM Axin. All gel samples were diluted 1:5 to prevent a gel smearing artifact (see Materials and methods). See Figure 2\u2014figure supplement 5 for quantification.\n\n![Figure 2\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/85444/elife-85444-fig2-figsupp5-v2.jpg)\n\n**Figure 2\u2014figure supplement 5.:** (A) Product vs. time plots for reactions of unphosphorylated GSK3\u03b2 with pS45-\u03b2-catenin in the absence of Axin. (B) Product vs. time plots for reactions of GSK3\u03b2 with pS45-\u03b2-catenin in the presence of 500 nM Axin. Data in (A) and (B) correspond to the reaction conditions and western blots shown in Figure 2\u2014figure supplement 4.\n\n![Figure 2\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/85444/elife-85444-fig2-figsupp6-v2.jpg)\n\n**Figure 2\u2014figure supplement 6.:** Western blots for reactions of varying concentrations of pS45-\u03b2-catenin with 10 nM pS9-GSK3\u03b2 in the presence and absence of 500 nM Axin. All gel samples were diluted 1:5 to prevent a gel smearing artifact (see Materials and methods). See Figure 2\u2014figure supplement 7 for quantification.\n\n![Figure 2\u2014figure supplement 7.](https://cdn.elifesciences.org/articles/85444/elife-85444-fig2-figsupp7-v2.jpg)\n\n**Figure 2\u2014figure supplement 7.:** (A) Product vs. time plots for reactions of pS9-GSK3\u03b2 with pS45-\u03b2-catenin in the absence of Axin. (B) Product vs. time plots for reactions of pS9-GSK3\u03b2 with pS45-\u03b2-catenin in the presence of 500 nM Axin. Data in (A) and (B) correspond to the reaction conditions and western blots shown in Figure 2\u2014figure supplement 6.\n\n![Figure 2\u2014figure supplement 8.](https://cdn.elifesciences.org/articles/85444/elife-85444-fig2-figsupp8-v2.jpg)\n\n**Figure 2\u2014figure supplement 8.:** Vobs for fixed concentrations of substrate with varying concentrations of GSK3\u03b2 or PKA in the presence or absence of Axin. (A) Plot of Vobs vs. [unphosphorylated GSK3\u03b2], [pS9-GSK3\u03b2], or [GSK3\u03b2_S9A] with 50 nM pS45-\u03b2-catenin in the presence and absence of 500 nM Axin. Vobs increases linearly with enzyme concentration, as expected. (B) Plot of Vobs vs. [pS9-GSK3\u03b2] with 50 nM pS45-\u03b2-catenin in the presence and absence of 500 nM Axin. (C) Plot of Vobs vs. [GSK3\u03b2_S9A] with 50 nM pS45-\u03b2-catenin in the presence and absence of 500 nM Axin. (D) Plot of Vobs vs. [PKA] with 20 nM GSK3\u03b2 in the presence and absence of 500 nM Axin_FL or miniAxin. (E) Plot of Vobs vs. [PKA] at 20 nM CREB127-135 in the presence and absence of 500 nM Axin. Error bars are mean \u00b1 SD for at least three biological replicates.\n\n![Figure 2\u2014figure supplement 9.](https://cdn.elifesciences.org/articles/85444/elife-85444-fig2-figsupp9-v2.jpg)\n\n**Figure 2\u2014figure supplement 9.:** (A) Recombinant GSK3\u03b2 is phosphorylated at phosphosites other than Ser9. Phos-tag gel of GSK3\u03b2 and GSK3\u03b2_S9A with and without treatment with lambda phosphatase. Phos-tag gels were prepared and run as previously described (Gavagan et al., 2020; see Materials and methods). Samples with GSK3\u03b2 or GSK3\u03b2_S9A were prepared in PMP buffer (NEB) with 1 mM MnCl2 and 400 nM GSK3\u03b2 or GSK3\u03b2_S9A and incubated in the presence or absence of 30 \u03bcM lambda phosphatase for 30 min at 30 \u00b0C. The slower-migrating species are phosphorylated GSK3\u03b2 or GSK3\u03b2_S9A. The presence of phosphorylated bands in GSK3\u03b2_S9A indicates that additional sites besides Ser9 are phosphorylated in recombinant GSK3\u03b2. (B) Michaelis-Menten plot of Vobs versus [pS45-\u03b2-catenin] at 10 nM GSK3\u03b2_S9A or 10 nM lambda phosphatase-treated GSK3\u03b2_S9A. Dephosphorylation of GSK3\u03b2_S9A by lambda phosphatase produces an ~5 fold increase in kcat/KM, largely due to a ~fivefold increase in kcat. See Supplementary file 1d for values of fitted kinetic parameters. (C) GSK3\u03b2 kinase activity is affected by phosphorylation state at Ser9 and other phosphosites. Values on arrows are fold-change in kcat/KM for different preparations of GSK3\u03b2 in reactions with pS45-\u03b2-catenin. Dephosphorylation of wt GSK3\u03b2 or GSK3\u03b2 _S9A by lambda phosphatase produces ~fivefold increases in kcat/KM (Supplementary file 1e). PKA phosphorylation of lambda phosphatase-treated GSK3\u03b2 to produce pS9-GSK3\u03b2 leads to a ~200-fold decrease in kcat/KM (Figure 2, Supplementary file 1a and e). PKA phosphorylation of lambda phosphatase-treated GSK3\u03b2_S9A produces no effect on kcat/KM because GSK3\u03b2_S9A cannot be phosphorylated at the inhibitory Ser9 phosphosite (Figure 2, Supplementary file 1e).\n\n### The scaffold protein Axin cannot overcome pS9-GSK3\u03b2 inhibition\n\nAddition of Axin to reactions with unphosphorylated GSK3\u03b2 and PKA-treated GSK3\u03b2_S9A produced modest ~twofold increases in kcat/KM arising from small changes to both kcat and KM, (Figure 3), consistent with previous results (Gavagan et al., 2020). In the pS9-GSK3\u03b2 reaction, however, Axin produced a ~20-fold kcat/KM increase. Notably, this effect is primarily due to a decrease in the KM to 0.27 \u00b5M (Figure 3A), similar to the values for unphosphorylated GSK3\u03b2 and GSK3\u03b2_S9A (Figure 3B & C and Supplementary file 1a). This result suggests that Axin can compensate for the inhibitory effect of pS9-GSK3\u03b2 on substrate binding, possibly because the Axin binding site for \u03b2-catenin allows formation of an Axin\u2022GSK3\u03b2\u2022\u03b2-catenin ternary complex even when the GSK3\u03b2 priming pocket is blocked.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/85444/elife-85444-fig3-v2.jpg)\n\n**Figure 3.:** (A\u2013C) Michaelis-Menten plots of Vobs versus [pS45-\u03b2-catenin] in the presence and absence of 500 nM Axin with 10 nM pS9-GSK3\u03b2 (A), unphosphorylated GSK3\u03b2 (B) or PKA-treated GSK3\u03b2_S9A (C). At the Axin concentrations used in these experiments all the GSK3\u03b2 is bound to Axin (Gavagan et al., 2020). (D) Minimal kinetic scheme and Michaelis-Menten plots for reactions of GSK3\u03b2 with pS45-\u03b2-catenin in the presence of Axin plotted on the same scale. Values are mean \u00b1 SD for at least three biological replicates. See Supplementary file 1a for values of fitted kinetic parameters.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/85444/elife-85444-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Plots of Vobs vs. [Axin] with 10 nM unphosphorylated GSK3\u03b2 and 50 nM pS45-\u03b2-catenin. (B) Plots of Vobs vs. [Axin] with 10 nM pS9-GSK3\u03b2 and 50 nM pS45-\u03b2-catenin. (C) Plots of Vobs vs. [Axin] with 20 nM PKA and 20 nM GSK3\u03b2. Error bars are mean \u00b1 SD for at least three biological replicates.\n\nAlthough Axin appears to fully rescue the KM effect from Ser9 phosphorylation, there is still a substantial ~10-fold kcat decrease. This behavior is consistent with a non-productive binding model (Fersht, 1998), in which Axin assembles a pS9-GSK3\u03b2\u2022pS45-\u03b2-catenin complex that is still inhibited by pSer9 occupying the priming pocket. In this model, Axin-mediated assembly of the kinase-substrate complex reduces the KM, but this complex cannot react so kcat remains impaired. In cells, if pS9-GSK3\u03b2 accumulates in the Axin-mediated destruction complex, \u03b2-catenin phosphorylation will be inhibited by ~10-fold, likely leading to improper activation of the Wnt pathway. Stimulation with high levels of Wnt ligand produces ~fivefold decreases in GSK3\u03b2 phosphorylation of \u03b2-catenin (Hannoush, 2008; Hern\u00e1ndez et al., 2012), and in vivo changes in \u03b2-catenin levels as low as twofold can have measurable effects on transcription of Wnt output genes (Jacobsen et al., 2016).\n\n### Axin prevents accumulation of pS9-GSK3\u03b2 in the destruction complex\n\nTo test if Axin-bound GSK3\u03b2 is shielded from upstream kinases, we evaluated the effect of Axin on PKA, a kinase upstream of GSK3\u03b2 in growth factor signaling (Fang et al., 2000). We found that Axin produced a 7-fold drop in kcat/KM for PKA phosphorylation of GSK3\u03b2 at Ser9, primarily from a fourfold increase in KM (Figure 4A). This KM increase suggests that Axin interferes with formation of the PKA\u2022GSK3\u03b2 complex. To determine if this effect is specific to GSK3\u03b2, we measured the effect of Axin on the reaction with another PKA substrate, CREB (Naqvi et al., 2014). Axin has no effect on observed rates or kcat/KM for the CREB reaction (Figure 4B). This result indicates that Axin is not a competitive inhibitor of PKA at the concentrations used in our assays, nor is Axin directly binding PKA to regulate its activity.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/85444/elife-85444-fig4-v2.jpg)\n\n**Figure 4.:** (A) Michaelis-Menten plots of Vobs versus [GSK3\u03b2] with 20 nM PKA in the presence and absence of 500 nM Axin. (B) Michaelis-Menten plots of Vobs versus [CREB127-135] with 20 nM PKA in the presence and absence of 500 nM Axin. Values are mean \u00b1 SD for at least three biological replicates. See Supplementary file 1b for values of fitted kinetic parameters from (A) and (B). (C) Normalized western blot analysis and blot images of pS9-GSK3\u03b2 in HEK293 cells transiently expressing Axin or a negative control (see Materials and methods). Normalized pS9-GSK3\u03b2 levels were calculated for each biological sample by dividing pS9-GSK3\u03b2 signal by total GSK3\u03b2 and then averaging across three biological replicates. The p-value between Axin-expressing cells and non-Axin negative control cells is 0.00356 (two-tailed unpaired t-test). Full, uncropped western blot images are shown in Figure 4\u2014figure supplement 3.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/85444/elife-85444-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Western blots for reactions of varying concentrations of GSK3\u03b2 with 20 nM PKA +/-500 nM Axin. 500 nM GSK3\u03b2 reaction gel samples without Axin were diluted 1:4 to prevent overloading the gel; all other reactions were diluted 1:2 (see Materials and methods). See Figure 4\u2014figure supplement 2 for quantification.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/85444/elife-85444-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A) Product vs. time plots for reactions of PKA with GSK3\u03b2 in the absence of Axin. (B) Product vs. time plots for reactions of PKA with GSK3\u03b2 in the presence of 500 nM Axin. Data in (A) and (B) correspond to the reaction conditions and western blots shown in Figure 4\u2014figure supplement 1.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/85444/elife-85444-fig4-figsupp3-v2.jpg)\n\n**Figure 4\u2014figure supplement 3.:** Western blot images of pS9-GSK3\u03b2 and total GSK3\u03b2 in HEK293 cells transiently expressing Axin or a negative control.\n\n![Figure 4\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/85444/elife-85444-fig4-figsupp4-v2.jpg)\n\n**Figure 4\u2014figure supplement 4.:** (A) Schematics of full length Axin, miniAxin, and the minimal Axin peptide used in functional studies. Full length Axin and miniAxin were purified with an N-terminal maltose binding protein (MBP) and a C-terminal His tag. The Axin peptide was expressed as an MBP fusion and cleaved with TEV protease to produce the minimal sequence GS-Axin381-407-SGR-His6 (see Methods). (B) Crystal structure of GSK3\u03b2 in complex with Axin381-401 (pdb 4nm0, Stamos et al., 2014). The GSK3\u03b2 N-terminal residues 1\u201325 are not resolved. The C\u03b1-C\u03b1 distance from Axin Ile381 to GSK3\u03b2 Met26 is ~45 \u00c5 along the surface of GSK3\u03b2, determined by manually plotting five possible paths from C\u03b1-C\u03b1 along the surface of GSK3\u03b2 with distances of 48.1 \u00c5, 44.7 \u00c5, 45.4 \u00c5, 49.9 \u00c5, and 44.3 \u00c5. For example, one path was calculated by measuring and summing the distances between the C\u03b1 of Met26 on GSK3\u03b2 to the C\u03b1 of Lys123 on GSK3\u03b2 and from the C\u03b1 of Lys123 on GSK3\u03b2 to the C\u03b1 of Ile381 on Axin. These estimates are likely conservative, as we did not consider steric clash with GSK3\u03b2 side chains. The direct linear C\u03b1-C\u03b1 distance from Axin Ile381 to GSK3\u03b2 Met26 is 41 \u00c5, but this path sterically clashes with the N-lobe of the kinase. To estimate the distance of ~19 \u00c5 from GSK3\u03b2 Met26 to Ser9, we used a worm-like chain model for a flexible peptide (Bertagna et al., 2008). Therefore, the minimal Axin381-407 peptide is unlikely to sterically occlude access to Ser9. Molecular graphics and analyses performed with UCSF Chimera, developed by the Resource for Biocomputing, Visualization, and Informatics at the University of California, San Francisco, with support from NIH P41-GM103311 (Pettersen et al., 2004).\n\nThere are several plausible models for how the Axin\u2022GSK3\u03b2 interaction might disrupt PKA phosphorylation. The simplest model is that Axin sterically occludes upstream kinases from accessing the Ser9 site on GSK3\u03b2. The Axin binding site on GSK3\u03b2 does not directly overlap with Ser9, nor is it immediately adjacent (Ikeda et al., 1998), but Axin is a large, disordered protein and could potentially extend toward the N-terminus of GSK3\u03b2. Another possibility is that Axin binding to GSK3\u03b2 produces allosteric changes that make the GSK3\u03b2 N-terminus less accessible to upstream kinases.\n\nTo distinguish between these possible models, we first measured the effect of a truncated Axin scaffold on PKA phosphorylation of GSK3\u03b2. This miniAxin scaffold (residues 384\u2013518) binds GSK3\u03b2 with a similar affinity as full-length Axin1-826 (Gavagan et al., 2020). Addition of miniAxin produced a sixfold decrease in kcat/KM with a fourfold increase in KM, similar to full length Axin (Figure 4A). Although miniAxin is substantially smaller than full-length Axin, this construct does not allow us to conclusively rule out a steric blocking mechanism. We therefore expressed a minimal, 27 amino acid peptide, Axin381-407, that binds GSK3\u03b2 (Hedgepeth et al., 1999; Stamos et al., 2014) and cannot sterically occlude the GSK3\u03b2 phosphorylation site (Stamos et al., 2014; Figure 4\u2014figure supplement 4). Axin381-407 produced an eightfold decrease in kcat/KM, with a sevenfold increase in KM, similar to full length Axin and miniAxin (Figure 4A). This result supports the model that Axin binding leads to allosteric changes in GSK3\u03b2 that make it less accessible to PKA.\n\nOne possible structural explanation for the functional data is that the Ser9 phosphorylation site adopts an inaccessible conformation when Axin binds GSK3\u03b2. However, Ser9 is located in a flexible N-terminal tail that is unresolved in x-ray crystal structures with or without Axin bound, providing no clear indication for structural changes upon Axin binding (Dajani et al., 2003; Dajani et al., 2001; Stamos et al., 2014; ter Haar et al., 2001). An alternative possibility is that the N-terminal tail remains disordered upon Axin binding but adopts altered conformational dynamics that prevent kinase access. Distinct conformational states in intrinsically disordered peptides have been observed previously (Choi et al., 2011; Clouser et al., 2019). Potentially similar functional behavior has been observed for the activation loop in the MAPK Fus3, which requires the Ste5 scaffold for phosphorylation (Good et al., 2009). Free Fus3 is inaccessible to its upstream kinase even though the activation loop is flexible and unresolved in x-ray crystal structures (Rem\u00e9nyi et al., 2005).\n\nTo determine if Axin prevents pS9-GSK3\u03b2 accumulation in vivo, we overexpressed Axin in HEK293 cells. In the absence of Axin overexpression, we observed significant basal levels of pS9-GSK3\u03b2, in agreement with previous results (Cantoria et al., 2023; Fang et al., 2000; Whiting et al., 2015). When Axin is overexpressed, we observed a significant decrease in pS9-GSK3\u03b2 levels (Figure 4C), consistent with our observation that Axin prevents phosphorylation of Ser9 in vitro.\n\n### Conclusions\n\nThe observation that Axin protects GSK3\u03b2 from PKA phosphorylation in vitro is consistent with previous in vivo co-immunoprecipitation experiments suggesting that Axin-associated GSK3\u03b2 is not phosphorylated at Ser9 (Ng et al., 2009). Beyond Axin-mediated shielding of GSK3\u03b2, other mechanisms could also contribute to preventing accumulation of pS9-GSK3\u03b2 in the Wnt destruction complex. Axin interacts with the phosphatase PP2A and may promote PP2A-mediated dephosphorylation of pS9-GSK3\u03b2 (Cantoria et al., 2023). Alternatively, subcellular localization or phase separation could sequester GSK3\u03b2 in distinct pools that are associated with different signaling pathways and independently regulated (Anton et al., 2022; Bock et al., 2020; Su et al., 2016; Zhang et al., 2020). Wnt pathway proteins also phase separate (Nong et al., 2021; Schaefer et al., 2018), which could exclude kinases like Akt and PKA from accessing Wnt-associated GSK3\u03b2. Other components of the destruction complex, such as the accessory scaffold protein APC (Nong et al., 2021; Nusse and Clevers, 2017), could contribute to these effects. Although these other mechanisms may play an important role, here we have used biochemical reconstitution to systematically evaluate two possible direct contributions of the Axin scaffold to pathway insulation, and our results suggest that Axin can allosterically control the accessibility of GSK3\u03b2 to upstream signals from competing pathways. These findings provide a biochemical mechanism to explain how scaffold proteins can regulate crosstalk between interconnected cell signaling pathways.\n\n## Materials and methods\n\n### Protein expression constructs\n\nThe human Wnt pathway proteins GSK3\u03b2, \u03b2-catenin, and Axin (hAxin1 isoform 2, Uniprot O15169-2), along with the human CREB127-135 peptide ILSRRPSYR and mouse PKA were cloned and expressed as previously described (Gavagan et al., 2020). All sequences except PKA were cloned into E. coli expression vectors containing an N-terminal maltose binding protein (MBP) and a C-terminal His6 tag. The catalytic subunit of mouse PKA was expressed from pET15b with an N-terminal His-tag (addgene #14921) (Narayana et al., 1997).\n\npS45-\u03b2-catenin was produced by coexpression with CK1\u03b1, as previously described (Gavagan et al., 2020). Lambda phosphatase (\u03bbPPase) was cloned with an N-terminal GST tag and a C-terminal His6 tag; the human \u03bbPPase sequence was obtained from VMG950 (Good et al., 2009). Unphosphorylated GSK3\u03b2 was produced by coexpression with \u03bbPPase. The coexpression plasmid for GSK3\u03b2 and \u03bbPPase was constructed by inserting the GST-\u03bbPPase expression cassette (without the His6 tag) into the MBP-GSK3\u03b2-His6 plasmid. GSK3\u03b2 point mutants and Axin truncations were constructed by assembling PCR fragments. Unless otherwise noted, all wt and mutant GSK3\u03b2 constructs in this work were coexpressed with \u03bbPPase to ensure they are unphosphorylated.\n\n### Protein expression and purification\n\nFor quantitative kinetic and binding assays, all Wnt pathway, CREB, and PKA proteins were expressed in Rosetta (DE3) pLysS E. coli cells by inducing with 0.5 mM IPTG overnight at 18 \u00b0C. Constructs with N-terminal MBP and C-terminal His6 tags (pS45-\u03b2-catenin, Axin, and CREB127-135) were affinity purified with HisPur Ni-NTA resin (Thermo Scientific) and amylose resin (NEB). The PKA catalytic subunit was purified on Ni-NTA resin. pS45-\u03b2-catenin was produced by coexpression with CK1\u03b1, as previously described (Gavagan et al., 2020). The Axin peptide, Axin381-407 was expressed with an N-terminal MBP tag and a C-terminal His tag. The N-terminal MBP tag was removed using TEV protease in an on-bead cleavage during the purification process. Ni-NTA-purified MBP-Axin381-407 was loaded onto amylose resin, washed with 5 column volumes of amylose wash buffer (20 mM Tris pH 8, 200 mM NaCl, 2 mM \u03b2ME) and then dialyzed overnight at 4 \u00b0C in the presence of 500 nM TEV protease. The solution containing the cleaved peptide was separated from the amylose resin, concentrated, and purified by size exclusion chromatography using a Superdex 75 10/300 GL column (GE Healthcare) to remove TEV protease. Chromatography fractions were monitored by Coomassie-stained SDS-PAGE as the peptide is not detectable by UV. The final purified Axin peptide is GS-Axin381-407-SGR-His6.\n\nUnphosphorylated GSK3\u03b2 and GSK3\u03b2_S9A were produced by coexpression with lambda phosphatase and affinity purified with HisPur Ni-NTA resin (Thermo Scientific). Treatment of GSK3\u03b2 and GSK3\u03b2_S9A with lambda phosphatase produces an ~fivefold increase in kcat/KM that is due to an ~fivefold increase in kcat (Figure 2\u2014figure supplement 9 and Supplementary file 1d & e). To produce PKA-treated pS9-GSK3\u03b2 and GSK3\u03b2_S9A, 10 \u03bcM of \u03bbPPase-treated, Ni-NTA-purified GSK3\u03b2 and GSK3\u03b2_S9A were incubated with 5 \u03bcM PKA and 500 \u03bcM ATP for 2 hr at 25 \u00b0C. Phosphorylated GSK3\u03b2 and GSK3\u03b2_S9A were separated from PKA by affinity purification with amylose resin (NEB). GSK3\u03b2 phosphorylation at Ser9 and Tyr216 was assessed by western blot using antibodies for pSer9 GSK3\u03b2 (Cell Signaling Technology #5558), pTyr216 GSK3\u03b2 (BD Biosciences #612312), and MBP (Cell Signaling Technology #2396; Figure 2\u2014figure supplement 1). The secondary antibodies were IRDye 800CW Goat Anti-Rabbit IgG antibody (Li-Cor #926\u201332211) for pSer9 and pTyr216 GSK3\u03b2 and IRDye 800CW Donkey Anti-Mouse IgG antibody (Li-Cor #926\u201332212) for MBP. Supplementary file 1h includes a summary of antibodies used in this work.\n\nPurified proteins were dialyzed into 20 mM Tris-HCl pH 8.0, 150 mM NaCl, 10% glycerol, and 2 mM DTT at 4 \u00b0C, aliquoted and stored at \u201380 \u00b0C. If necessary, proteins were concentrated using 10000 or 30000 MWCO Amicon Ultra-15 Centrifugal Filter devices at 4 \u00b0C, 2000\u00d7g. Protein concentrations were determined using a Bradford assay (Thermo Scientific). pS45-\u03b2-catenin was further purified by size exclusion chromatography using a Superdex 200 Increase 10/300 GL column (GE Healthcare) to remove a copurifying fragment before being dialyzed into 20 mM Tris-HCl pH 8.0, 150 mM NaCl, 10% glycerol, and 2 mM DTT, aliquoted, and stored at \u201380 \u00b0C. A Coomassie gel showing the purity of the proteins in this work is shown in Figure 2\u2014figure supplement 1A.\n\n### Quantitative kinetic assays\n\nIn vitro kinetic assays were conducted in kinase assay buffer (40 mM HEPES pH 7.4, 50 mM NaCl, 10 mM MgCl2, and 0.05% IGEPAL) at 25 \u00b0C in 60 \u00b5L total volume. Reactions were initiated by adding ATP to a final concentration of 100 \u00b5M. This ATP concentration is saturating for all reactions (Figure 2\u2014figure supplement 3 and Supplementary file 1c). Reaction timepoints for initial rate kinetics were obtained at 10, 30, 60, and 90 s (pS45-\u03b2-catenin reactions with unphosphorylated GSK3\u03b2 and GSK3\u03b2_S9A, Figure 2\u2014figure supplements 4 and 5); 1, 2, 5, and 10 min (pS45-\u03b2-catenin reactions with pS9-GSK3\u03b2, Figure 2\u2014figure supplements 6 and 7); and 0.5, 1, 2, and 4 min (vary [GSK3\u03b2] and [CREB127-135] reactions with PKA, Figure 4\u2014figure supplements 1 and 2). Ten \u00b5L aliquots were quenched by boiling in 5 X SDS loading buffer. Samples were analyzed by SDS-PAGE and quantitative western blotting as described below (Figure 2\u2014figure supplements 4\u20137 and Figure 4\u2014figure supplements 1 and 2). For reactions with pS45-\u03b2-catenin, all gel samples were diluted fivefold in 1 X SDS loading buffer to prevent a gel smearing artifact that occurs with [pS45-\u03b2-catenin]\u2265500 nM. For reactions with PKA phosphorylation of GSK3\u03b2, samples were diluted fourfold (500 nM GSK3\u03b2 reactions without Axin) or twofold (all other GSK3\u03b2 concentrations) to prevent signal saturation of the western blot scan.\n\nGSK3\u03b2-phosphorylated \u03b2-catenin was detected using a primary anti-Phospho-\u03b2-Catenin (Ser33/37/Thr41) antibody (Cell Signaling Technology #9561) that recognizes triply phosphorylated pS33/pS37/pT41-\u03b2-catenin (Figure 2\u2014figure supplement 2). PKA-phosphorylated GSK3\u03b2 was detected using a primary anti-phospho-GSK3\u03b2 (Ser9) antibody (Cell Signaling Technology #5558) that recognizes pS9-GSK3\u03b2 (Figure 2\u2014figure supplement 2). PKA-phosphorylated CREB127-135 was detected using a primary anti-phospho-CREB (Ser133) antibody (Cell Signaling Technology #9198) that recognizes pS133-CREB127-135 (Figure 2\u2014figure supplement 2). For all reactions, the secondary antibody was IRDye 800CW Goat Anti-Rabbit IgG antibody (Li-Cor #926\u201332211).\n\nConcentrations of phosphorylated product in each reaction were determined by comparing western blot signal intensities to an endpoint standard containing 50 nM product phosphorylated to completion (Figure 2\u2014figure supplement 2). For pS45-\u03b2-catenin reactions the endpoint is pS45-\u03b2-catenin phosphorylated to completion by GSK3\u03b2 as previously described (Gavagan et al., 2020). The pS45-\u03b2-catenin standard was prepared in a reaction with 50 nM pS45-\u03b2-catenin, 100 nM GSK3\u03b2, and 100 \u00b5M ATP in kinase assay buffer at 25 \u00b0C for 15 min. For PKA phosphorylation of GSK3\u03b2 reactions the endpoint is pS9-GSK3\u03b2, phosphorylated to completion by PKA. The pS9-GSK3\u03b2 standard was prepared in a reaction with 50 nM unphosphorylated GSK3\u03b2, 100 nM PKA, and 500 \u00b5M ATP in kinase assay buffer at 25 \u00b0C for twenty-four hr. To prevent signal saturation of the western blot scan, the pS9-GSK3\u03b2 standard was diluted fourfold in 1 x SDS loading dye, to a final concentration of 12.5 nM pS9-GSK3\u03b2. For CREB127-135 reactions the endpoint is pS133-CREB127-135, phosphorylated to completion by PKA. The pS133-CREB127-135 standard was prepared in a reaction with 50 nM CREB127-135, 100 nM PKA, and 200 \u00b5M ATP in kinase assay buffer at 25 \u00b0C for 20 hr.\n\nInitial rate measurements were obtained from three independent reactions (biological replicates). Phosphorylated product levels from quantitative western blots were analyzed using Image Studio Lite 5.2.5 (Li-Cor) and kinetic parameters were determined by fitting to the Michaelis-Menten equation or to a linear equation using Kaleidagraph 4.1.3. Initial rates for each reaction were determined by fitting a linear model to a graph of [product] vs time. Kinetic parameters were determined by fitting plots of initial rates (Vobs) vs. [substrate] to the Michaelis-Menten equation $V_{obs}=k_{cat}E_{0}S/K_{M}+[S]$ . Standard errors for kcat and KM reported in Supplementary file 1a \u2013 1e are from non-linear least squares fits to this equation. Standard errors for kcat/KM were obtained by fitting an alternative form of the equation $V_{obs}=k_{cat}/K_{M}E_{0}S/1+[S]/K_{M}$ . For the pS9-GSK3\u03b2 reactions without Axin, which did not detectably saturate, the value of kcat/KM was obtained from the slope of linear fit to the plot of Vobs vs. [substrate].\n\nThe reaction conditions for in vitro kinetics experiments were tested to confirm the underlying assumptions in the kinetic model. As expected, reaction rates increase linearly with increasing enzyme concentration in all reactions (Figure 2\u2014figure supplement 8). We also identified the optimal scaffold concentration for all reactions (Figure 3\u2014figure supplement 1). Scaffold-dependent reactions typically have optimal scaffold concentrations, and can be slow at high concentrations of scaffold protein when kinase and substrate are bound to different scaffolds (Gavagan et al., 2020; Levchenko et al., 2000; Figure 3\u2014figure supplement 1).\n\n### Phos-tag gel analysis of GSK3\u03b2 phosphorylation\n\nPhos-tag gels were prepared and run as previously described (Gavagan et al., 2020). After electrophoresis, the gel was incubated 3 x with transfer buffer +10 mM EDTA for 10 min before the transfer to increase transfer efficiency. Protein levels were detected with anti-MBP antibody (Cell Signaling Technology #2396; Figure 2\u2014figure supplement 9A). The secondary antibody was IRDye 800CW Donkey Anti-Mouse IgG antibody (Li-Cor #926\u201332212).\n\n### Cell lines\n\nCell culture experiments were performed with HEK293 cells (ATCC #CRL-1573, RRID:CVCL_0045). Cell cultures were tested monthly for mycoplasma contamination (Southern Biotech #13100\u201301).\n\n### In vivo cell culture experiments\n\nThe Axin open reading frame (Gavagan et al., 2020) was cloned into the human expression vector pcDNA3.1(+) (Thermo Fisher) with a C-terminal mCherry tag. For a protein overexpression negative control, mCherry was cloned into the same pcDNA3.1(+) vector. Supplementary file 1g contains a summary of plasmids used in cell culture experiments.\n\nHEK293 cells were plated at 5\u00d7105 cells/mL in 10% FBS DMEM in a 24-well plate. Twenty-four hr after plating, individual wells were transfected with 50 \u03bcL Opti-MEM media containing 1 \u03bcg DNA and 1.5 \u03bcL TurboFectin (Origene TF81001). Twenty-four hr following transfection, cells were starved by replacing media with 1% FBS DMEM. Twenty-four hr after starvation, cells were treated with DMSO (2 \u03bcL in 10 mL 1% FBS DMEM). Serum starvation and DMSO treatment were included in our protocol for consistency with previously published experiments (Cantoria et al., 2023; Fang et al., 2000; Whiting et al., 2015). Two hr after DMSO treatment, cells were washed twice with 500 \u03bcL PBS and lysed on ice in 40 \u03bcL lysis buffer (20 mM TRIS pH 7.5, 30 mM NaCl, 20 mM NaF, 1% NP-40, 0.5% DOC, 0.1% SDS, HALT protease and phosphatase inhibitor mixture [Thermo Scientific #78440]). Lysate was then centrifuged at 13,000\u00d7g for 10 min at 4 \u00b0C. The resulting supernatant was boiled for 10 min in 5 X SDS loading buffer and analyzed by SDS page and quantitative western blotting (Figure 4\u2014figure supplement 3).\n\npS9-GSK3\u03b2 was detected using the same antibody used in kinetics assays (Cell Signaling Technology #5558). Total GSK3\u03b2 was detected using a primary anti-GSK3\u03b2 antibody (Cell Signaling Technology #9832). The secondary antibodies were IRDye 800CW Goat Anti-Rabbit IgG antibody (Li-Cor #926\u201332211) for pS9-GSK3\u03b2 and IRDye 680RD Donkey Anti-Mouse IgG antibody (Li-Cor #926\u201368072) for total GSK3\u03b2. pS9-GSK3\u03b2 and total GSK3\u03b2 levels were analyzed using Image Studio Lite 5.2.5 (Li-Cor).\n\n### Materials availability statement\n\nProtein expression plasmids (Supplementary file 1f) generated in this work are available from Addgene or upon request.\n",
+      "created_at": "2025-12-04T02:54:06.011415Z"
+    },
+    {
+      "id": "3537bab2-21fc-41e6-a8d8-4b275ba0244d",
+      "submission_id": "a1f5b8a7-f176-4ae1-aad7-067537e25e64",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Natalia Jura, https://ror.org/05t99sp05 University of California, San Francisco United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.85444.sa0](https://doi.org/10.7554/eLife.85444.sa0)\n\nThis study presents a valuable and elegant kinetic analysis of the GSKbeta activity as a function of phosphorylation and Axin binding - providing insights into critical steps of Wnt pathway signaling. The results will be of big use to the broader signaling community. The work will be of broad interest to cell biologists and biochemists.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Natalia Jura, https://ror.org/05t99sp05 University of California, San Francisco United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.85444.sa1](https://doi.org/10.7554/eLife.85444.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\n[Editors\u2019 note: the authors submitted for reconsideration following the decision after peer review. What follows is the decision letter after the first round of review.]\n\nThank you for submitting the paper \"The Axin scaffold protects the kinase GSK3\u03b2 from cross-pathway inhibition\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and a Senior Editor. The reviewers have opted to remain anonymous.\n\nComments to the Authors:\n\nWe are sorry to say that, after consultation with the reviewers, we have decided that this work will not be considered for publication by eLife within its current scope. Both reviewers agree that the elegant kinetics analysis of GSKb activity as a function of phosphorylation and Axin binding is thorough and will be very useful for the broader scientific community. However, the main criticism shared by the reviewers, is that the study does not present a big conceptual advance in mechanistic understanding of how the Axin scaffold shields GSKb from phosphorylation and contributes to the insulation of this kinase from other activating stimuli. If you are confident that such evidence could be provided within the revisions time frame, eLife would welcome the resubmission and will do its best to send the revised manuscript for assessment to the same reviewers. However, if such evidence cannot be provided in a reasonable time frame, we encourage you to submit your study for consideration for publication in a more specialized journal.\n\nReviewer #1 (Recommendations for the authors):\n\n\u2013 At the start of the Results section and in Figure 2, the definitions of kCAT and Km should be given in a bit more detail (at present the reader is only provided with a reference to the 2020 paper). This will make the story a bit easier to read for non-biochemists. For example, lines 106-109 are not intuitive to follow.\n\n\u2013 The added value of the kinetic schemes in each of the figure panels is unclear as the link to specific biological/signal transduction steps is not made clear.\n\n\u2013 The cartoons in Figure 1 could also be improved to clarify the questions/knowledge gaps and specific mechanistic options.\n\n\u2013 The authors convincingly show that AXIN1 can play a role in shielding GSK3 from auto- inhibition. As it stands, the impact of this work on the field of WNT/CTNNB1 signaling is likely to remain limited. This is mainly due to the reason that the mechanism by which AXIN1 shields the WNT/CTNNB1 signaling pool of GSK3 from pSer9 inhibition remains unresolved. Based on the fact that a mini AXIN1 (i.e. an AXIN1 fragment) behaves the same as WT AXIN1, the authors conclude that AXIN1 likely causes allosteric changes on GSK3 but is less likely to block PKA from binding. They cannot conclusively show this, however, as they do not have evidence in favour of one or the other explanation.\n\n\u2013 The impact of this work would be greater if the authors could indeed discriminate between the two possible mechanisms they present (allosteric changes on GSK3 or blocking the binding of PKA).\n",
+      "created_at": "2025-12-04T02:54:06.011415Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T02:54:06.011415Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T02:54:06.011415Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "b2ec3ce8-0cec-494c-8da4-1036e0314153",
+      "content_id": "bf59429f-b131-4a63-b769-e350cd6ee712",
+      "claim_id": "C1",
+      "claim": "Multiple signaling pathways regulate the kinase GSK3\u03b2 by inhibitory phosphorylation at Ser9.",
+      "claim_type": "EXPLICIT",
+      "source": "Multiple signaling pathways regulate the kinase GSK3\u03b2 by inhibitory phosphorylation at Ser9, which then occupies the GSK3\u03b2 priming pocket and blocks substrate binding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a well-established fact in the field, supported by the manuscript's introduction and citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:54:06.011415Z"
+    },
+    {
+      "id": "bdb3410f-2441-4171-a0b9-2e9047c7a607",
+      "content_id": "bf59429f-b131-4a63-b769-e350cd6ee712",
+      "claim_id": "C2",
+      "claim": "Ser9 phosphorylation occupies the GSK3\u03b2 priming pocket and blocks substrate binding.",
+      "claim_type": "EXPLICIT",
+      "source": "Multiple signaling pathways regulate the kinase GSK3\u03b2 by inhibitory phosphorylation at Ser9, which then occupies the GSK3\u03b2 priming pocket and blocks substrate binding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This mechanism is cited in the introduction with references to structural studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:54:06.011415Z"
+    },
+    {
+      "id": "27ec90ea-6d74-45d8-9d66-80e396060c51",
+      "content_id": "bf59429f-b131-4a63-b769-e350cd6ee712",
+      "claim_id": "C3",
+      "claim": "The Wnt-specific scaffold protein Axin allosterically protects GSK3\u03b2 from phosphorylation at Ser9 by upstream kinases.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the Wnt-specific scaffold protein Axin allosterically protects GSK3\u03b2 from phosphorylation at Ser9 by upstream kinases, which prevents accumulation of pS9-GSK3\u03b2 in the Axin\u2022GSK3\u03b2 complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the primary finding of the study, supported by biochemical reconstitution experiments shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:54:06.011415Z"
+    },
+    {
+      "id": "36a8cb66-72c7-4c4d-9614-4dabf1e50e25",
+      "content_id": "bf59429f-b131-4a63-b769-e350cd6ee712",
+      "claim_id": "C4",
+      "claim": "Axin prevents accumulation of pS9-GSK3\u03b2 in the Axin\u2022GSK3\u03b2 complex.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the Wnt-specific scaffold protein Axin allosterically protects GSK3\u03b2 from phosphorylation at Ser9 by upstream kinases, which prevents accumulation of pS9-GSK3\u03b2 in the Axin\u2022GSK3\u03b2 complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by in vitro kinetic data (Figure 4) and cell culture experiments (Figure 4C).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:54:06.011415Z"
+    },
+    {
+      "id": "21ab32a2-2c19-4da9-8687-13ef84d787e9",
+      "content_id": "bf59429f-b131-4a63-b769-e350cd6ee712",
+      "claim_id": "C5",
+      "claim": "GSK3\u03b2 is a potential therapeutic target for a range of diseases.",
+      "claim_type": "EXPLICIT",
+      "source": "Glycogen Synthase Kinase 3\u03b2 (GSK3\u03b2) is a potential therapeutic target for a range of diseases (Beurel et al., 2015; Nusse and Clevers, 2017), but targeting GSK3\u03b2 is complicated because it has important roles in multiple signaling pathways (Bhat et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:54:06.011415Z"
+    },
+    {
+      "id": "cb9e5bb3-0c94-4eb8-84ea-19987509ba2d",
+      "content_id": "bf59429f-b131-4a63-b769-e350cd6ee712",
+      "claim_id": "C6",
+      "claim": "Targeting GSK3\u03b2 is complicated because it has important roles in multiple signaling pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "Glycogen Synthase Kinase 3\u03b2 (GSK3\u03b2) is a potential therapeutic target for a range of diseases (Beurel et al., 2015; Nusse and Clevers, 2017), but targeting GSK3\u03b2 is complicated because it has important roles in multiple signaling pathways (Bhat et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Bhat et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:54:06.011415Z"
+    },
+    {
+      "id": "52f8b763-2e75-46c1-b0d9-e8f442849ca2",
+      "content_id": "bf59429f-b131-4a63-b769-e350cd6ee712",
+      "claim_id": "C7",
+      "claim": "Wnt and growth factor/insulin signaling pathways regulate GSK3\u03b2 but do not cross-activate.",
+      "claim_type": "EXPLICIT",
+      "source": "Both Wnt and growth factor/insulin signaling pathways regulate GSK3\u03b2, but these pathways do not cross-activate (Ding et al., 2000; McManus et al., 2005; Ng et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:54:06.011415Z"
+    },
+    {
+      "id": "42d340ac-d32a-4f71-b48c-c454726d51ae",
+      "content_id": "bf59429f-b131-4a63-b769-e350cd6ee712",
+      "claim_id": "C8",
+      "claim": "The scaffold protein Axin binds GSK3\u03b2, its substrate \u03b2-catenin, and other proteins in a Wnt-specific complex called the destruction complex.",
+      "claim_type": "EXPLICIT",
+      "source": "In Wnt signaling, the scaffold protein Axin binds GSK3\u03b2, its substrate \u03b2-catenin, and other proteins in a Wnt-specific complex called the destruction complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the Wnt pathway.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:54:06.011415Z"
+    },
+    {
+      "id": "11011e55-caba-4976-98d4-0e5d357e1898",
+      "content_id": "bf59429f-b131-4a63-b769-e350cd6ee712",
+      "claim_id": "C9",
+      "claim": "Wnt signals inhibit GSK3\u03b2 phosphorylation of \u03b2-catenin.",
+      "claim_type": "EXPLICIT",
+      "source": "Wnt signals inhibit GSK3\u03b2 phosphorylation of \u03b2-catenin (Hern\u00e1ndez et al., 2012; Stamos et al., 2014), causing \u03b2-catenin levels to rise and activate downstream transcription (Nusse and Clevers, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:54:06.011415Z"
+    },
+    {
+      "id": "df14b57e-1992-41b7-a9cc-aa0dc5c7bbbf",
+      "content_id": "bf59429f-b131-4a63-b769-e350cd6ee712",
+      "claim_id": "C10",
+      "claim": "Inhibition of GSK3\u03b2 phosphorylation of \u03b2-catenin causes \u03b2-catenin levels to rise and activate downstream transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "Wnt signals inhibit GSK3\u03b2 phosphorylation of \u03b2-catenin (Hern\u00e1ndez et al., 2012; Stamos et al., 2014), causing \u03b2-catenin levels to rise and activate downstream transcription (Nusse and Clevers, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Nusse and Clevers, 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:54:06.011415Z"
+    },
+    {
+      "id": "96b671dd-e7ff-4ba6-9579-8ae6a83dc724",
+      "content_id": "bf59429f-b131-4a63-b769-e350cd6ee712",
+      "claim_id": "C11",
+      "claim": "Axin regulates kinase activity in the destruction complex, providing a mechanism to inhibit Wnt-associated GSK3\u03b2 without affecting other GSK3\u03b2-dependent pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "Axin regulates kinase activity in the destruction complex, providing a mechanism to inhibit Wnt-associated GSK3\u03b2 without affecting other GSK3\u03b2-dependent pathways (Beurel et al., 2015; Gavagan et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:54:06.011415Z"
+    },
+    {
+      "id": "370dfbb1-0d12-43c8-b1ce-4cc1b9add80e",
+      "content_id": "bf59429f-b131-4a63-b769-e350cd6ee712",
+      "claim_id": "C12",
+      "claim": "In growth factor/insulin signaling, the kinases PKA and PKB/Akt phosphorylate GSK3\u03b2 at Ser9.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, in growth factor/insulin signaling, the kinases PKA and PKB/Akt phosphorylate GSK3\u03b2 at Ser9 (Cross et al., 1995; Fang et al., 2000; Jensen et al., 2007; Sutherland et al., 1993), which inhibits GSK3\u03b2 by binding in the priming pocket and blocking substrate binding (Dajani et al., 2001; Frame and Cohen, 2001; Stamos et al., 2014; ter Haar et al., 2001; Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by multiple citations and illustrated in Figure 1A.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:54:06.011415Z"
+    },
+    {
+      "id": "576eece5-953c-4d32-bf11-9f4ba63dc8df",
+      "content_id": "bf59429f-b131-4a63-b769-e350cd6ee712",
+      "claim_id": "C13",
+      "claim": "Ser9 phosphorylation inhibits GSK3\u03b2 by binding in the priming pocket and blocking substrate binding.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, in growth factor/insulin signaling, the kinases PKA and PKB/Akt phosphorylate GSK3\u03b2 at Ser9 (Cross et al., 1995; Fang et al., 2000; Jensen et al., 2007; Sutherland et al., 1993), which inhibits GSK3\u03b2 by binding in the priming pocket and blocking substrate binding (Dajani et al., 2001; Frame and Cohen, 2001; Stamos et al., 2014; ter Haar et al., 2001; Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This mechanism is supported by structural studies cited and shown in Figure 1A.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:54:06.011415Z"
+    },
+    {
+      "id": "2dea0832-9abb-42e9-8fd7-db3a80c49dd4",
+      "content_id": "bf59429f-b131-4a63-b769-e350cd6ee712",
+      "claim_id": "C14",
+      "claim": "Phosphorylation of GSK3\u03b2 at Ser9 decreases kcat/KM toward pS45-\u03b2-catenin by approximately 200-fold compared with unphosphorylated or mutant S9A GSK3\u03b2.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that phosphorylation of GSK3\u03b2 at Ser9 decreases kcat/KM toward pS45-\u03b2-catenin by a factor of ~200-fold compared with unphosphorylated or mutant S9A GSK3\u03b2 (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative measurement from the biochemical reconstitution experiments shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:54:06.011415Z"
+    },
+    {
+      "id": "c326e4e4-28c1-4d0e-827c-609be7abf486",
+      "content_id": "bf59429f-b131-4a63-b769-e350cd6ee712",
+      "claim_id": "C15",
+      "claim": "The observed rates for unphosphorylated GSK3\u03b2 and PKA-treated GSK3\u03b2_S9A are indistinguishable.",
+      "claim_type": "EXPLICIT",
+      "source": "The observed rates for unphosphorylated GSK3\u03b2 and PKA-treated GSK3\u03b2_S9A are indistinguishable, indicating that the large rate decrease in pS9-GSK3\u03b2 is from phosphorylation at Ser9, not any other unknown PKA phosphosites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on experimental data comparing different GSK3\u03b2 preparations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:54:06.011415Z"
+    },
+    {
+      "id": "b96b266a-982f-4013-985b-3ea17f197ab5",
+      "content_id": "bf59429f-b131-4a63-b769-e350cd6ee712",
+      "claim_id": "C16",
+      "claim": "The large rate decrease in pS9-GSK3\u03b2 is from phosphorylation at Ser9, not any other unknown PKA phosphosites.",
+      "claim_type": "EXPLICIT",
+      "source": "The observed rates for unphosphorylated GSK3\u03b2 and PKA-treated GSK3\u03b2_S9A are indistinguishable, indicating that the large rate decrease in pS9-GSK3\u03b2 is from phosphorylation at Ser9, not any other unknown PKA phosphosites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is inferred from the comparison of GSK3\u03b2 and GSK3\u03b2_S9A mutant data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:54:06.011415Z"
+    },
+    {
+      "id": "68746f26-97ed-4f03-9dec-9cb97ed61ea6",
+      "content_id": "bf59429f-b131-4a63-b769-e350cd6ee712",
+      "claim_id": "C17",
+      "claim": "pS9-GSK3\u03b2 does not detectably saturate at high substrate concentration, giving a limit for the KM of \u22652 \u03bcM.",
+      "claim_type": "EXPLICIT",
+      "source": "pS9-GSK3\u03b2 does not detectably saturate at high substrate concentration, giving a limit for the KM of \u22652 \u03bcM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the kinetic experiments shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:54:06.011415Z"
+    },
+    {
+      "id": "a16c74c0-44fe-44f5-bc44-48651b1f6437",
+      "content_id": "bf59429f-b131-4a63-b769-e350cd6ee712",
+      "claim_id": "C18",
+      "claim": "The >sevenfold increase in KM is consistent with the model that Ser9 phosphorylation inhibits GSK3\u03b2 by interfering with substrate binding.",
+      "claim_type": "EXPLICIT",
+      "source": "The >sevenfold increase in KM is consistent with the model that Ser9 phosphorylation inhibits GSK3\u03b2 by interfering with substrate binding, although we cannot rule out the possibility that pSer9 also affects other catalytic steps.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the kinetic data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:54:06.011415Z"
+    },
+    {
+      "id": "2eb28254-0260-4bca-9834-396be7211eb1",
+      "content_id": "bf59429f-b131-4a63-b769-e350cd6ee712",
+      "claim_id": "C19",
+      "claim": "Addition of Axin to reactions with unphosphorylated GSK3\u03b2 and PKA-treated GSK3\u03b2_S9A produced modest ~twofold increases in kcat/KM arising from small changes to both kcat and KM.",
+      "claim_type": "EXPLICIT",
+      "source": "Addition of Axin to reactions with unphosphorylated GSK3\u03b2 and PKA-treated GSK3\u03b2_S9A produced modest ~twofold increases in kcat/KM arising from small changes to both kcat and KM, (Figure 3), consistent with previous results (Gavagan et al., 2020).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on kinetic measurements shown in Figure 3.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:54:06.011415Z"
+    },
+    {
+      "id": "5f7059df-5622-46e8-be98-e90a50fdb402",
+      "content_id": "bf59429f-b131-4a63-b769-e350cd6ee712",
+      "claim_id": "C20",
+      "claim": "In the pS9-GSK3\u03b2 reaction, Axin produced a ~20-fold kcat/KM increase.",
+      "claim_type": "EXPLICIT",
+      "source": "In the pS9-GSK3\u03b2 reaction, however, Axin produced a ~20-fold kcat/KM increase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from the kinetic experiments shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:54:06.011415Z"
+    },
+    {
+      "id": "57c5ec49-79fa-496a-bb33-72158924a782",
+      "content_id": "bf59429f-b131-4a63-b769-e350cd6ee712",
+      "claim_id": "C21",
+      "claim": "The effect of Axin on pS9-GSK3\u03b2 is primarily due to a decrease in the KM to 0.27 \u00b5M, similar to the values for unphosphorylated GSK3\u03b2 and GSK3\u03b2_S9A.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, this effect is primarily due to a decrease in the KM to 0.27 \u00b5M (Figure 3A), similar to the values for unphosphorylated GSK3\u03b2 and GSK3\u03b2_S9A (Figure 3B & C and Supplementary file 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on kinetic parameter measurements shown in Figure 3 and Supplementary file 1a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:54:06.011415Z"
+    },
+    {
+      "id": "48afd129-43b4-4572-b75e-734e14717cbc",
+      "content_id": "bf59429f-b131-4a63-b769-e350cd6ee712",
+      "claim_id": "C22",
+      "claim": "Axin can compensate for the inhibitory effect of pS9-GSK3\u03b2 on substrate binding, possibly because the Axin binding site for \u03b2-catenin allows formation of an Axin\u2022GSK3\u03b2\u2022\u03b2-catenin ternary complex even when the GSK3\u03b2 priming pocket is blocked.",
+      "claim_type": "EXPLICIT",
+      "source": "This result suggests that Axin can compensate for the inhibitory effect of pS9-GSK3\u03b2 on substrate binding, possibly because the Axin binding site for \u03b2-catenin allows formation of an Axin\u2022GSK3\u03b2\u2022\u03b2-catenin ternary complex even when the GSK3\u03b2 priming pocket is blocked.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic interpretation of the kinetic data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:54:06.011415Z"
+    },
+    {
+      "id": "c1d01828-fbd7-441b-85d6-c869b3b7d96e",
+      "content_id": "bf59429f-b131-4a63-b769-e350cd6ee712",
+      "claim_id": "C23",
+      "claim": "Although Axin appears to fully rescue the KM effect from Ser9 phosphorylation, there is still a substantial ~10-fold kcat decrease.",
+      "claim_type": "EXPLICIT",
+      "source": "Although Axin appears to fully rescue the KM effect from Ser9 phosphorylation, there is still a substantial ~10-fold kcat decrease.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on analysis of the kinetic parameters from Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:54:06.011415Z"
+    },
+    {
+      "id": "b50c1fb9-e720-4c41-a197-8c880a422886",
+      "content_id": "bf59429f-b131-4a63-b769-e350cd6ee712",
+      "claim_id": "C24",
+      "claim": "The behavior of Axin with pS9-GSK3\u03b2 is consistent with a non-productive binding model, in which Axin assembles a pS9-GSK3\u03b2\u2022pS45-\u03b2-catenin complex that is still inhibited by pSer9 occupying the priming pocket.",
+      "claim_type": "EXPLICIT",
+      "source": "This behavior is consistent with a non-productive binding model (Fersht, 1998), in which Axin assembles a pS9-GSK3\u03b2\u2022pS45-\u03b2-catenin complex that is still inhibited by pSer9 occupying the priming pocket.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic interpretation based on kinetic theory and the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:54:06.011415Z"
+    },
+    {
+      "id": "70d4fc65-2754-4449-ac81-c9d6e2ba1a05",
+      "content_id": "bf59429f-b131-4a63-b769-e350cd6ee712",
+      "claim_id": "C25",
+      "claim": "In cells, if pS9-GSK3\u03b2 accumulates in the Axin-mediated destruction complex, \u03b2-catenin phosphorylation will be inhibited by ~10-fold, likely leading to improper activation of the Wnt pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "In cells, if pS9-GSK3\u03b2 accumulates in the Axin-mediated destruction complex, \u03b2-catenin phosphorylation will be inhibited by ~10-fold, likely leading to improper activation of the Wnt pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction based on the in vitro kinetic data and knowledge of cellular signaling.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:54:06.011415Z"
+    },
+    {
+      "id": "ac21ed30-5602-4620-933a-08bb1916d745",
+      "content_id": "bf59429f-b131-4a63-b769-e350cd6ee712",
+      "claim_id": "C26",
+      "claim": "Stimulation with high levels of Wnt ligand produces ~fivefold decreases in GSK3\u03b2 phosphorylation of \u03b2-catenin.",
+      "claim_type": "EXPLICIT",
+      "source": "Stimulation with high levels of Wnt ligand produces ~fivefold decreases in GSK3\u03b2 phosphorylation of \u03b2-catenin (Hannoush, 2008; Hern\u00e1ndez et al., 2012), and in vivo changes in \u03b2-catenin levels as low as twofold can have measurable effects on transcription of Wnt output genes (Jacobsen et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:54:06.011415Z"
+    },
+    {
+      "id": "905588d0-107c-4d96-9b90-d852634c69a3",
+      "content_id": "bf59429f-b131-4a63-b769-e350cd6ee712",
+      "claim_id": "C27",
+      "claim": "In vivo changes in \u03b2-catenin levels as low as twofold can have measurable effects on transcription of Wnt output genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Stimulation with high levels of Wnt ligand produces ~fivefold decreases in GSK3\u03b2 phosphorylation of \u03b2-catenin (Hannoush, 2008; Hern\u00e1ndez et al., 2012), and in vivo changes in \u03b2-catenin levels as low as twofold can have measurable effects on transcription of Wnt output genes (Jacobsen et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Jacobsen et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:54:06.011415Z"
+    },
+    {
+      "id": "aba87eb6-5f2d-478c-ba45-4233105f3de2",
+      "content_id": "bf59429f-b131-4a63-b769-e350cd6ee712",
+      "claim_id": "C28",
+      "claim": "Axin produced a 7-fold drop in kcat/KM for PKA phosphorylation of GSK3\u03b2 at Ser9, primarily from a fourfold increase in KM.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that Axin produced a 7-fold drop in kcat/KM for PKA phosphorylation of GSK3\u03b2 at Ser9, primarily from a fourfold increase in KM (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on kinetic measurements shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:54:06.011415Z"
+    },
+    {
+      "id": "345ec2d7-9556-4fc5-b6fa-258950c197e9",
+      "content_id": "bf59429f-b131-4a63-b769-e350cd6ee712",
+      "claim_id": "C29",
+      "claim": "The KM increase suggests that Axin interferes with formation of the PKA\u2022GSK3\u03b2 complex.",
+      "claim_type": "EXPLICIT",
+      "source": "This KM increase suggests that Axin interferes with formation of the PKA\u2022GSK3\u03b2 complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the kinetic data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:54:06.011415Z"
+    },
+    {
+      "id": "5ac7f1ea-9a76-4d92-b961-4519bffb1222",
+      "content_id": "bf59429f-b131-4a63-b769-e350cd6ee712",
+      "claim_id": "C30",
+      "claim": "Axin has no effect on observed rates or kcat/KM for the CREB reaction with PKA.",
+      "claim_type": "EXPLICIT",
+      "source": "Axin has no effect on observed rates or kcat/KM for the CREB reaction (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on kinetic measurements shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:54:06.011415Z"
+    },
+    {
+      "id": "2fe5caa2-3e58-4982-b8f9-f5707c70f02c",
+      "content_id": "bf59429f-b131-4a63-b769-e350cd6ee712",
+      "claim_id": "C31",
+      "claim": "Axin is not a competitive inhibitor of PKA at the concentrations used in the assays, nor is Axin directly binding PKA to regulate its activity.",
+      "claim_type": "EXPLICIT",
+      "source": "This result indicates that Axin is not a competitive inhibitor of PKA at the concentrations used in our assays, nor is Axin directly binding PKA to regulate its activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is inferred from the CREB control experiment.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:54:06.011415Z"
+    },
+    {
+      "id": "47890389-9a9b-427e-8d7f-92d6382d8e9a",
+      "content_id": "bf59429f-b131-4a63-b769-e350cd6ee712",
+      "claim_id": "C32",
+      "claim": "Addition of miniAxin produced a sixfold decrease in kcat/KM with a fourfold increase in KM for PKA phosphorylation of GSK3\u03b2, similar to full length Axin.",
+      "claim_type": "EXPLICIT",
+      "source": "Addition of miniAxin produced a sixfold decrease in kcat/KM with a fourfold increase in KM, similar to full length Axin (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on kinetic measurements shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:54:06.011415Z"
+    },
+    {
+      "id": "3780af8e-51bb-4de5-bb7e-4ab5a354c412",
+      "content_id": "bf59429f-b131-4a63-b769-e350cd6ee712",
+      "claim_id": "C33",
+      "claim": "Axin381-407 produced an eightfold decrease in kcat/KM, with a sevenfold increase in KM, similar to full length Axin and miniAxin.",
+      "claim_type": "EXPLICIT",
+      "source": "Axin381-407 produced an eightfold decrease in kcat/KM, with a sevenfold increase in KM, similar to full length Axin and miniAxin (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on kinetic measurements shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:54:06.011415Z"
+    },
+    {
+      "id": "5d1e2a19-899d-4fb1-8057-902e38ebabe5",
+      "content_id": "bf59429f-b131-4a63-b769-e350cd6ee712",
+      "claim_id": "C34",
+      "claim": "The result with Axin381-407 supports the model that Axin binding leads to allosteric changes in GSK3\u03b2 that make it less accessible to PKA.",
+      "claim_type": "EXPLICIT",
+      "source": "This result supports the model that Axin binding leads to allosteric changes in GSK3\u03b2 that make it less accessible to PKA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic interpretation of the data with the minimal Axin peptide.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:54:06.011415Z"
+    },
+    {
+      "id": "2703b902-f4b0-4803-8ce0-5b0c3ee82b1d",
+      "content_id": "bf59429f-b131-4a63-b769-e350cd6ee712",
+      "claim_id": "C35",
+      "claim": "Ser9 is located in a flexible N-terminal tail that is unresolved in x-ray crystal structures with or without Axin bound, providing no clear indication for structural changes upon Axin binding.",
+      "claim_type": "EXPLICIT",
+      "source": "However, Ser9 is located in a flexible N-terminal tail that is unresolved in x-ray crystal structures with or without Axin bound, providing no clear indication for structural changes upon Axin binding (Dajani et al., 2003; Dajani et al., 2001; Stamos et al., 2014; ter Haar et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on analysis of published crystal structures.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:54:06.011415Z"
+    },
+    {
+      "id": "0ec7ef67-cef0-44be-af6e-03ee4cce2329",
+      "content_id": "bf59429f-b131-4a63-b769-e350cd6ee712",
+      "claim_id": "C36",
+      "claim": "The N-terminal tail of GSK3\u03b2 may remain disordered upon Axin binding but adopt altered conformational dynamics that prevent kinase access.",
+      "claim_type": "EXPLICIT",
+      "source": "An alternative possibility is that the N-terminal tail remains disordered upon Axin binding but adopts altered conformational dynamics that prevent kinase access.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative mechanistic explanation for the observed data.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:54:06.011415Z"
+    },
+    {
+      "id": "6cb6fbc9-c903-4522-9121-74f1b631c0e5",
+      "content_id": "bf59429f-b131-4a63-b769-e350cd6ee712",
+      "claim_id": "C37",
+      "claim": "Distinct conformational states in intrinsically disordered peptides have been observed previously.",
+      "claim_type": "EXPLICIT",
+      "source": "Distinct conformational states in intrinsically disordered peptides have been observed previously (Choi et al., 2011; Clouser et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:54:06.011415Z"
+    },
+    {
+      "id": "a726a620-c638-4050-a362-2e16720da442",
+      "content_id": "bf59429f-b131-4a63-b769-e350cd6ee712",
+      "claim_id": "C38",
+      "claim": "The activation loop in the MAPK Fus3 requires the Ste5 scaffold for phosphorylation, and free Fus3 is inaccessible to its upstream kinase even though the activation loop is flexible and unresolved in x-ray crystal structures.",
+      "claim_type": "EXPLICIT",
+      "source": "Potentially similar functional behavior has been observed for the activation loop in the MAPK Fus3, which requires the Ste5 scaffold for phosphorylation (Good et al., 2009). Free Fus3 is inaccessible to its upstream kinase even though the activation loop is flexible and unresolved in x-ray crystal structures (Rem\u00e9nyi et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies on Fus3.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:54:06.011415Z"
+    },
+    {
+      "id": "f308e734-110b-4c48-8d6b-8102ab8340c4",
+      "content_id": "bf59429f-b131-4a63-b769-e350cd6ee712",
+      "claim_id": "C39",
+      "claim": "When Axin is overexpressed in HEK293 cells, there is a significant decrease in pS9-GSK3\u03b2 levels.",
+      "claim_type": "EXPLICIT",
+      "source": "When Axin is overexpressed, we observed a significant decrease in pS9-GSK3\u03b2 levels (Figure 4C), consistent with our observation that Axin prevents phosphorylation of Ser9 in vitro.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on western blot analysis of cell lysates shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:54:06.011415Z"
+    },
+    {
+      "id": "d7f96f84-4cb0-46c3-9d29-a50d23e4ca52",
+      "content_id": "bf59429f-b131-4a63-b769-e350cd6ee712",
+      "claim_id": "C40",
+      "claim": "In the absence of Axin overexpression, significant basal levels of pS9-GSK3\u03b2 are observed in HEK293 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In the absence of Axin overexpression, we observed significant basal levels of pS9-GSK3\u03b2, in agreement with previous results (Cantoria et al., 2023; Fang et al., 2000; Whiting et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on western blot data and supported by citations to previous studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:54:06.011415Z"
+    },
+    {
+      "id": "a0f1255a-7faf-4229-9ec6-f085513bd1e5",
+      "content_id": "bf59429f-b131-4a63-b769-e350cd6ee712",
+      "claim_id": "C41",
+      "claim": "The observation that Axin protects GSK3\u03b2 from PKA phosphorylation in vitro is consistent with previous in vivo co-immunoprecipitation experiments suggesting that Axin-associated GSK3\u03b2 is not phosphorylated at Ser9.",
+      "claim_type": "EXPLICIT",
+      "source": "The observation that Axin protects GSK3\u03b2 from PKA phosphorylation in vitro is consistent with previous in vivo co-immunoprecipitation experiments suggesting that Axin-associated GSK3\u03b2 is not phosphorylated at Ser9 (Ng et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This connects the in vitro findings to previous in vivo observations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:54:06.011415Z"
+    },
+    {
+      "id": "8cceebff-2da8-42a9-a962-1c98b0d477aa",
+      "content_id": "bf59429f-b131-4a63-b769-e350cd6ee712",
+      "claim_id": "C42",
+      "claim": "Axin interacts with the phosphatase PP2A and may promote PP2A-mediated dephosphorylation of pS9-GSK3\u03b2.",
+      "claim_type": "EXPLICIT",
+      "source": "Axin interacts with the phosphatase PP2A and may promote PP2A-mediated dephosphorylation of pS9-GSK3\u03b2 (Cantoria et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a potential alternative mechanism supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:54:06.011415Z"
+    },
+    {
+      "id": "220feeff-f9ed-43eb-bb09-3386b2c07e38",
+      "content_id": "bf59429f-b131-4a63-b769-e350cd6ee712",
+      "claim_id": "C43",
+      "claim": "Subcellular localization or phase separation could sequester GSK3\u03b2 in distinct pools that are associated with different signaling pathways and independently regulated.",
+      "claim_type": "EXPLICIT",
+      "source": "Alternatively, subcellular localization or phase separation could sequester GSK3\u03b2 in distinct pools that are associated with different signaling pathways and independently regulated (Anton et al., 2022; Bock et al., 2020; Su et al., 2016; Zhang et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a potential alternative mechanism supported by citations.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:54:06.011415Z"
+    },
+    {
+      "id": "196403f2-ae35-4990-bfa8-4642afdaf2f3",
+      "content_id": "bf59429f-b131-4a63-b769-e350cd6ee712",
+      "claim_id": "C44",
+      "claim": "Wnt pathway proteins phase separate.",
+      "claim_type": "EXPLICIT",
+      "source": "Wnt pathway proteins also phase separate (Nong et al., 2021; Schaefer et al., 2018), which could exclude kinases like Akt and PKA from accessing Wnt-associated GSK3\u03b2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:54:06.011415Z"
+    },
+    {
+      "id": "b2f38ebc-d393-41fe-b7b8-7ab34a9385c1",
+      "content_id": "bf59429f-b131-4a63-b769-e350cd6ee712",
+      "claim_id": "C45",
+      "claim": "Phase separation of Wnt pathway proteins could exclude kinases like Akt and PKA from accessing Wnt-associated GSK3\u03b2.",
+      "claim_type": "EXPLICIT",
+      "source": "Wnt pathway proteins also phase separate (Nong et al., 2021; Schaefer et al., 2018), which could exclude kinases like Akt and PKA from accessing Wnt-associated GSK3\u03b2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative mechanism based on the phase separation literature.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:54:06.011415Z"
+    },
+    {
+      "id": "b387aa1e-f97d-45c0-a944-7d4a5458fcf6",
+      "content_id": "bf59429f-b131-4a63-b769-e350cd6ee712",
+      "claim_id": "C46",
+      "claim": "Other components of the destruction complex, such as the accessory scaffold protein APC, could contribute to pathway insulation effects.",
+      "claim_type": "EXPLICIT",
+      "source": "Other components of the destruction complex, such as the accessory scaffold protein APC (Nong et al., 2021; Nusse and Clevers, 2017), could contribute to these effects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about potential contributions from other proteins.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:54:06.011415Z"
+    },
+    {
+      "id": "957d9a77-aed1-40c0-98ac-9640970f81f2",
+      "content_id": "bf59429f-b131-4a63-b769-e350cd6ee712",
+      "claim_id": "C47",
+      "claim": "Axin can allosterically control the accessibility of GSK3\u03b2 to upstream signals from competing pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "Although these other mechanisms may play an important role, here we have used biochemical reconstitution to systematically evaluate two possible direct contributions of the Axin scaffold to pathway insulation, and our results suggest that Axin can allosterically control the accessibility of GSK3\u03b2 to upstream signals from competing pathways.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion of the study, based on the biochemical reconstitution experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:54:06.011415Z"
+    },
+    {
+      "id": "d2454d86-2cad-4379-b7a1-a38af6d2f2bb",
+      "content_id": "bf59429f-b131-4a63-b769-e350cd6ee712",
+      "claim_id": "C48",
+      "claim": "These findings provide a biochemical mechanism to explain how scaffold proteins can regulate crosstalk between interconnected cell signaling pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings provide a biochemical mechanism to explain how scaffold proteins can regulate crosstalk between interconnected cell signaling pathways.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the broader significance of the findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:54:06.011415Z"
+    },
+    {
+      "id": "bd25cfb0-0a2d-40fd-a041-125ca180e568",
+      "content_id": "bf59429f-b131-4a63-b769-e350cd6ee712",
+      "claim_id": "C49",
+      "claim": "Recombinant GSK3\u03b2 is phosphorylated at Tyr216.",
+      "claim_type": "EXPLICIT",
+      "source": "Recombinant GSK3\u03b2 is phosphorylated at Tyr216.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown by western blot analysis in Figure 2\u2014figure supplement 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:54:06.011415Z"
+    },
+    {
+      "id": "ff2248f4-db72-42d8-a731-a3a5c4cd9015",
+      "content_id": "bf59429f-b131-4a63-b769-e350cd6ee712",
+      "claim_id": "C50",
+      "claim": "PKA phosphorylates GSK3\u03b2 at Ser9.",
+      "claim_type": "EXPLICIT",
+      "source": "PKA phosphorylates GSK3\u03b2 at Ser9.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown by western blot analysis in Figure 2\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:54:06.011415Z"
+    },
+    {
+      "id": "8715e3ba-261f-490c-be25-b2b93f5b05ba",
+      "content_id": "bf59429f-b131-4a63-b769-e350cd6ee712",
+      "claim_id": "C51",
+      "claim": "No significant phosphorylation at Ser9 was detected for unphosphorylated GSK3\u03b2 (phosphatase-treated) or GSK3\u03b2_S9A.",
+      "claim_type": "EXPLICIT",
+      "source": "No significant phosphorylation at Ser9 was detected for unphosphorylated GSK3\u03b2 (phosphatase-treated) or GSK3\u03b2_S9A.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown by western blot analysis in Figure 2\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:54:06.011415Z"
+    },
+    {
+      "id": "17a98147-1797-47b3-88ca-f286268298dd",
+      "content_id": "bf59429f-b131-4a63-b769-e350cd6ee712",
+      "claim_id": "C52",
+      "claim": "Untreated GSK3\u03b2 is partially (~10%) phosphorylated at Ser9.",
+      "claim_type": "EXPLICIT",
+      "source": "Untreated GSK3\u03b2 is partially (~10%) phosphorylated at Ser9.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown by western blot analysis in Figure 2\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:54:06.011415Z"
+    },
+    {
+      "id": "45f670cf-7075-4c85-a468-c732a06eb281",
+      "content_id": "bf59429f-b131-4a63-b769-e350cd6ee712",
+      "claim_id": "C53",
+      "claim": "Recombinant GSK3\u03b2 is phosphorylated at phosphosites other than Ser9.",
+      "claim_type": "EXPLICIT",
+      "source": "Recombinant GSK3\u03b2 is phosphorylated at phosphosites other than Ser9.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown by Phos-tag gel analysis in Figure 2\u2014figure supplement 9A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:54:06.011415Z"
+    },
+    {
+      "id": "0b3100bf-12a9-40a7-b6ea-930130a1743c",
+      "content_id": "bf59429f-b131-4a63-b769-e350cd6ee712",
+      "claim_id": "C54",
+      "claim": "Dephosphorylation of GSK3\u03b2_S9A by lambda phosphatase produces an ~5 fold increase in kcat/KM, largely due to a ~fivefold increase in kcat.",
+      "claim_type": "EXPLICIT",
+      "source": "Dephosphorylation of GSK3\u03b2_S9A by lambda phosphatase produces an ~5 fold increase in kcat/KM, largely due to a ~fivefold increase in kcat.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on kinetic measurements shown in Figure 2\u2014figure supplement 9B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:54:06.011415Z"
+    },
+    {
+      "id": "cbf52178-14a4-4438-9fdc-693433e35772",
+      "content_id": "bf59429f-b131-4a63-b769-e350cd6ee712",
+      "claim_id": "C55",
+      "claim": "The minimal Axin381-407 peptide is unlikely to sterically occlude access to Ser9 on GSK3\u03b2.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the minimal Axin381-407 peptide is unlikely to sterically occlude access to Ser9.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on structural analysis and distance calculations shown in Figure 4\u2014figure supplement 4B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:54:06.011415Z"
+    },
+    {
+      "id": "ecd94fd7-bcf1-4561-bb34-6b75aa8fd1d0",
+      "content_id": "bf59429f-b131-4a63-b769-e350cd6ee712",
+      "claim_id": "C56",
+      "claim": "The C\u03b1-C\u03b1 distance from Axin Ile381 to GSK3\u03b2 Met26 is ~45 \u00c5 along the surface of GSK3\u03b2.",
+      "claim_type": "EXPLICIT",
+      "source": "The C\u03b1-C\u03b1 distance from Axin Ile381 to GSK3\u03b2 Met26 is ~45 \u00c5 along the surface of GSK3\u03b2, determined by manually plotting five possible paths from C\u03b1-C\u03b1 along the surface of GSK3\u03b2 with distances of 48.1 \u00c5, 44.7 \u00c5, 45.4 \u00c5, 49.9 \u00c5, and 44.3 \u00c5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on structural analysis of the GSK3\u03b2-Axin crystal structure (pdb 4nm0).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:54:06.011415Z"
+    },
+    {
+      "id": "f84a0c6a-03ef-4f40-bfac-2200feb66116",
+      "content_id": "bf59429f-b131-4a63-b769-e350cd6ee712",
+      "claim_id": "C57",
+      "claim": "The distance from GSK3\u03b2 Met26 to Ser9 is estimated to be ~19 \u00c5 using a worm-like chain model for a flexible peptide.",
+      "claim_type": "EXPLICIT",
+      "source": "To estimate the distance of ~19 \u00c5 from GSK3\u03b2 Met26 to Ser9, we used a worm-like chain model for a flexible peptide (Bertagna et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on a theoretical model for flexible peptides.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:54:06.011415Z"
+    },
+    {
+      "id": "d6eefa78-d939-4cfd-b471-cf38ec15870c",
+      "content_id": "bf59429f-b131-4a63-b769-e350cd6ee712",
+      "claim_id": "C58",
+      "claim": "The p-value between Axin-expressing cells and non-Axin negative control cells for pS9-GSK3\u03b2 levels is 0.00356.",
+      "claim_type": "EXPLICIT",
+      "source": "The p-value between Axin-expressing cells and non-Axin negative control cells is 0.00356 (two-tailed unpaired t-test).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical analysis of the cell culture western blot data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:54:06.011415Z"
+    },
+    {
+      "id": "e9312212-8ce5-4b14-a6ee-67ef482643b8",
+      "content_id": "bf59429f-b131-4a63-b769-e350cd6ee712",
+      "claim_id": "C59",
+      "claim": "All Wnt pathway, CREB, and PKA proteins were expressed in Rosetta (DE3) pLysS E. coli cells by inducing with 0.5 mM IPTG overnight at 18 \u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "For quantitative kinetic and binding assays, all Wnt pathway, CREB, and PKA proteins were expressed in Rosetta (DE3) pLysS E. coli cells by inducing with 0.5 mM IPTG overnight at 18 \u00b0C.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail from the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:54:06.011415Z"
+    },
+    {
+      "id": "becf2373-192c-45dc-8fa7-76ec2e683f1b",
+      "content_id": "bf59429f-b131-4a63-b769-e350cd6ee712",
+      "claim_id": "C60",
+      "claim": "In vitro kinetic assays were conducted in kinase assay buffer (40 mM HEPES pH 7.4, 50 mM NaCl, 10 mM MgCl2, and 0.05% IGEPAL) at 25 \u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "In vitro kinetic assays were conducted in kinase assay buffer (40 mM HEPES pH 7.4, 50 mM NaCl, 10 mM MgCl2, and 0.05% IGEPAL) at 25 \u00b0C in 60 \u00b5L total volume.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail from the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:54:06.011415Z"
+    },
+    {
+      "id": "58c2ae71-fc80-48f1-8652-93db47119457",
+      "content_id": "bf59429f-b131-4a63-b769-e350cd6ee712",
+      "claim_id": "C61",
+      "claim": "Reactions were initiated by adding ATP to a final concentration of 100 \u00b5M.",
+      "claim_type": "EXPLICIT",
+      "source": "Reactions were initiated by adding ATP to a final concentration of 100 \u00b5M.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail from the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:54:06.011415Z"
+    },
+    {
+      "id": "ea441f63-492b-4bbf-bd80-9e1b4ff16c72",
+      "content_id": "bf59429f-b131-4a63-b769-e350cd6ee712",
+      "claim_id": "C62",
+      "claim": "The ATP concentration of 100 \u00b5M is saturating for all reactions.",
+      "claim_type": "EXPLICIT",
+      "source": "This ATP concentration is saturating for all reactions (Figure 2\u2014figure supplement 3 and Supplementary file 1c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 2\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:54:06.011415Z"
+    },
+    {
+      "id": "2173f2c4-9a44-45ce-a126-70b787afcea7",
+      "content_id": "bf59429f-b131-4a63-b769-e350cd6ee712",
+      "claim_id": "C63",
+      "claim": "GSK3\u03b2-phosphorylated \u03b2-catenin was detected using a primary anti-Phospho-\u03b2-Catenin (Ser33/37/Thr41) antibody that recognizes triply phosphorylated pS33/pS37/pT41-\u03b2-catenin.",
+      "claim_type": "EXPLICIT",
+      "source": "GSK3\u03b2-phosphorylated \u03b2-catenin was detected using a primary anti-Phospho-\u03b2-Catenin (Ser33/37/Thr41) antibody (Cell Signaling Technology #9561) that recognizes triply phosphorylated pS33/pS37/pT41-\u03b2-catenin (Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a methodological detail with supporting data in Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:54:06.011415Z"
+    },
+    {
+      "id": "5a07d97b-73d0-41ed-8c1e-4b1bb901bb40",
+      "content_id": "bf59429f-b131-4a63-b769-e350cd6ee712",
+      "claim_id": "C64",
+      "claim": "PKA-phosphorylated GSK3\u03b2 was detected using a primary anti-phospho-GSK3\u03b2 (Ser9) antibody that recognizes pS9-GSK3\u03b2.",
+      "claim_type": "EXPLICIT",
+      "source": "PKA-phosphorylated GSK3\u03b2 was detected using a primary anti-phospho-GSK3\u03b2 (Ser9) antibody (Cell Signaling Technology #5558) that recognizes pS9-GSK3\u03b2 (Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a methodological detail with supporting data in Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:54:06.011415Z"
+    },
+    {
+      "id": "258c13dd-3e81-4c25-892b-f1b0e9785472",
+      "content_id": "bf59429f-b131-4a63-b769-e350cd6ee712",
+      "claim_id": "C65",
+      "claim": "PKA-phosphorylated CREB127-135 was detected using a primary anti-phospho-CREB (Ser133) antibody that recognizes pS133-CREB127-135.",
+      "claim_type": "EXPLICIT",
+      "source": "PKA-phosphorylated CREB127-135 was detected using a primary anti-phospho-CREB (Ser133) antibody (Cell Signaling Technology #9198) that recognizes pS133-CREB127-135 (Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a methodological detail with supporting data in Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:54:06.011415Z"
+    },
+    {
+      "id": "923507f1-c99d-4aa0-a82d-d404fb95ef87",
+      "content_id": "bf59429f-b131-4a63-b769-e350cd6ee712",
+      "claim_id": "C66",
+      "claim": "Reaction rates increase linearly with increasing enzyme concentration in all reactions.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, reaction rates increase linearly with increasing enzyme concentration in all reactions (Figure 2\u2014figure supplement 8).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a validation of the kinetic model shown in Figure 2\u2014figure supplement 8.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:54:06.011415Z"
+    },
+    {
+      "id": "fc4679dd-eed0-4e29-9b4b-335a694f4170",
+      "content_id": "bf59429f-b131-4a63-b769-e350cd6ee712",
+      "claim_id": "C67",
+      "claim": "Cell culture experiments were performed with HEK293 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Cell culture experiments were performed with HEK293 cells (ATCC #CRL-1573, RRID:CVCL_0045).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail from the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:54:06.011415Z"
+    },
+    {
+      "id": "d2ca904d-f2f9-442c-a119-c276c032547a",
+      "content_id": "bf59429f-b131-4a63-b769-e350cd6ee712",
+      "claim_id": "C68",
+      "claim": "Cell cultures were tested monthly for mycoplasma contamination.",
+      "claim_type": "EXPLICIT",
+      "source": "Cell cultures were tested monthly for mycoplasma contamination (Southern Biotech #13100\u201301).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quality control measure described in the methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:54:06.011415Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "0f3bb87a-b5ce-4037-b4a3-298a1e405207",
+      "content_id": "bf59429f-b131-4a63-b769-e350cd6ee712",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Phosphorylation of GSK3\u03b2 at Ser9 by PKA decreases kcat/KM toward pS45-\u03b2-catenin by approximately 200-fold compared to unphosphorylated GSK3\u03b2, primarily through a >7-fold increase in KM. This inhibition is specifically due to Ser9 phosphorylation and not other PKA phosphosites, as demonstrated by the S9A mutant control.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C18 provide quantitative kinetic data showing the inhibitory effect of Ser9 phosphorylation. The use of the S9A mutant (C15-C16) and phosphatase-treated controls (C51-C54) provides strong evidence that the effect is specifically due to Ser9 phosphorylation. The kinetic parameters are consistent with the proposed mechanism of substrate binding interference. Western blot validation (C49-C52) confirms the phosphorylation states of the proteins used.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:54:06.011415Z"
+    },
+    {
+      "id": "2b15d33e-748c-449c-a2bc-988c85a5b104",
+      "content_id": "bf59429f-b131-4a63-b769-e350cd6ee712",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Axin produces a ~20-fold increase in kcat/KM for pS9-GSK3\u03b2 reactions with pS45-\u03b2-catenin, primarily by decreasing KM to levels similar to unphosphorylated GSK3\u03b2. However, a ~10-fold decrease in kcat remains, consistent with a non-productive binding model where Axin facilitates substrate binding but pSer9 still blocks catalysis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C24 provide detailed kinetic analysis showing that Axin partially rescues pS9-GSK3\u03b2 activity by restoring substrate binding (KM rescue) but not catalytic turnover (kcat remains impaired). The data are internally consistent and support the non-productive binding model. However, C25 is speculative about cellular consequences and lacks direct experimental validation in cells at the time of this result.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:54:06.011415Z"
+    },
+    {
+      "id": "930cdfb0-1cd9-497c-8a5d-225af0bc7a49",
+      "content_id": "bf59429f-b131-4a63-b769-e350cd6ee712",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Axin decreases the rate of PKA phosphorylation of GSK3\u03b2 at Ser9 by 7-8-fold, primarily through a 4-7-fold increase in KM. This effect is specific to GSK3\u03b2 (not observed with CREB substrate) and is mediated by allosteric changes rather than steric occlusion, as demonstrated by the minimal Axin381-407 peptide producing similar effects to full-length Axin.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C34 provide strong evidence for Axin-mediated protection of GSK3\u03b2 from PKA phosphorylation. The CREB control (C30-C31) demonstrates specificity. The use of progressively smaller Axin constructs (C32-C34) combined with structural analysis (C55-C57) provides compelling evidence for an allosteric rather than steric mechanism. The kinetic data are consistent across different Axin constructs.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:54:06.011415Z"
+    },
+    {
+      "id": "12438ff9-eeb7-44d3-89b6-85d7df780a00",
+      "content_id": "bf59429f-b131-4a63-b769-e350cd6ee712",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Overexpression of Axin in HEK293 cells significantly decreases pS9-GSK3\u03b2 levels (p=0.00356), consistent with in vitro observations that Axin protects GSK3\u03b2 from Ser9 phosphorylation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C41 and C58 provide cell culture validation of the in vitro findings. The statistical significance (p=0.00356) supports the conclusion. The result is consistent with previous co-immunoprecipitation studies (C41). However, the experiment uses overexpression which may not fully reflect endogenous conditions, and the mechanism in cells could involve additional factors beyond direct protection.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:54:06.011415Z"
+    },
+    {
+      "id": "9a016d43-89ad-4243-9ff3-b86ea4112b27",
+      "content_id": "bf59429f-b131-4a63-b769-e350cd6ee712",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The Wnt-specific scaffold protein Axin allosterically protects GSK3\u03b2 from phosphorylation at Ser9 by upstream kinases, preventing accumulation of pS9-GSK3\u03b2 in the Axin\u2022GSK3\u03b2 complex. This provides a biochemical mechanism for how scaffold proteins regulate crosstalk between interconnected signaling pathways.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims represent the main conclusions of the study and are well-supported by the collective experimental evidence from the biochemical reconstitution experiments (kinetic data in Figures 2-4) and cell culture validation (Figure 4C). The allosteric mechanism is supported by the minimal peptide experiments and the specificity controls.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:54:06.011415Z"
+    },
+    {
+      "id": "cb5610bd-0e73-405a-856e-a3fd19d620d1",
+      "content_id": "bf59429f-b131-4a63-b769-e350cd6ee712",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The structural basis for Axin-mediated protection remains unclear, as Ser9 is in a flexible N-terminal tail unresolved in crystal structures. The mechanism may involve altered conformational dynamics of the disordered tail rather than a fixed structural change, analogous to observations in other systems like MAPK Fus3.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C35-C38 acknowledge the lack of direct structural evidence for the mechanism. C36 is explicitly speculative, and C37-C38 provide analogies from other systems but not direct evidence for GSK3\u03b2. While the speculation is reasonable and grounded in precedent, the actual structural mechanism remains unresolved and would require additional biophysical studies (e.g., NMR, hydrogen-deuterium exchange).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:54:06.011415Z"
+    },
+    {
+      "id": "ad3b6ade-7e0e-4a7a-a288-4c57f8aeed6e",
+      "content_id": "bf59429f-b131-4a63-b769-e350cd6ee712",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Wnt stimulation produces ~5-fold decreases in GSK3\u03b2 phosphorylation of \u03b2-catenin, and 2-fold changes in \u03b2-catenin levels can affect Wnt target gene transcription, providing context for the physiological relevance of the ~10-fold inhibition observed with pS9-GSK3\u03b2 in the destruction complex.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C27 are supported by citations to previous literature and provide important context for interpreting the magnitude of effects observed in this study. These are established findings from prior work that help frame the significance of the current results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:54:06.011415Z"
+    },
+    {
+      "id": "1627d594-d48f-482d-9b24-e8faea7c4fbc",
+      "content_id": "bf59429f-b131-4a63-b769-e350cd6ee712",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Alternative mechanisms beyond direct Axin-mediated protection may contribute to pathway insulation, including PP2A-mediated dephosphorylation, subcellular localization, phase separation of Wnt pathway proteins, and contributions from other destruction complex components like APC.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C42-C46 are explicitly speculative and cite previous literature suggesting these mechanisms. While these are reasonable alternative or complementary mechanisms, they are not directly tested in this study. The authors appropriately present these as possibilities that may work alongside the demonstrated Axin-mediated protection mechanism.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:54:06.011415Z"
+    },
+    {
+      "id": "7a17e5d2-cf37-4a5b-9a5a-01f850aac296",
+      "content_id": "bf59429f-b131-4a63-b769-e350cd6ee712",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Background context on GSK3\u03b2 regulation: Multiple signaling pathways regulate GSK3\u03b2 through Ser9 phosphorylation which blocks substrate binding. Wnt and growth factor/insulin pathways regulate GSK3\u03b2 but do not cross-activate. Axin scaffolds the Wnt destruction complex and can provide pathway-specific regulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C13 provide established background knowledge supported by extensive citations to previous literature. These are well-accepted facts in the field that provide context for the current study. The claims are appropriately cited and represent accurate summaries of prior work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:54:06.011415Z"
+    },
+    {
+      "id": "05c8ccbf-f8be-4c2c-b4bd-73c895af9d34",
+      "content_id": "bf59429f-b131-4a63-b769-e350cd6ee712",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Methodological details: Proteins were expressed in E. coli, kinetic assays were performed under defined buffer conditions with saturating ATP (100 \u03bcM), specific phospho-antibodies were validated for detection, reaction rates scale linearly with enzyme concentration, and cell culture experiments used mycoplasma-free HEK293 cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C68 describe methodological details that are well-documented in the Materials and Methods section and supplementary figures. The validation experiments (C62, C66) support the assumptions of the kinetic model. These are standard biochemical methods appropriately applied and validated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:54:06.011415Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "2dea0832-9abb-42e9-8fd7-db3a80c49dd4",
+      "result_id": "0f3bb87a-b5ce-4037-b4a3-298a1e405207"
+    },
+    {
+      "claim_id": "c326e4e4-28c1-4d0e-827c-609be7abf486",
+      "result_id": "0f3bb87a-b5ce-4037-b4a3-298a1e405207"
+    },
+    {
+      "claim_id": "b96b266a-982f-4013-985b-3ea17f197ab5",
+      "result_id": "0f3bb87a-b5ce-4037-b4a3-298a1e405207"
+    },
+    {
+      "claim_id": "68746f26-97ed-4f03-9dec-9cb97ed61ea6",
+      "result_id": "0f3bb87a-b5ce-4037-b4a3-298a1e405207"
+    },
+    {
+      "claim_id": "a16c74c0-44fe-44f5-bc44-48651b1f6437",
+      "result_id": "0f3bb87a-b5ce-4037-b4a3-298a1e405207"
+    },
+    {
+      "claim_id": "bd25cfb0-0a2d-40fd-a041-125ca180e568",
+      "result_id": "0f3bb87a-b5ce-4037-b4a3-298a1e405207"
+    },
+    {
+      "claim_id": "ff2248f4-db72-42d8-a731-a3a5c4cd9015",
+      "result_id": "0f3bb87a-b5ce-4037-b4a3-298a1e405207"
+    },
+    {
+      "claim_id": "8715e3ba-261f-490c-be25-b2b93f5b05ba",
+      "result_id": "0f3bb87a-b5ce-4037-b4a3-298a1e405207"
+    },
+    {
+      "claim_id": "17a98147-1797-47b3-88ca-f286268298dd",
+      "result_id": "0f3bb87a-b5ce-4037-b4a3-298a1e405207"
+    },
+    {
+      "claim_id": "45f670cf-7075-4c85-a468-c732a06eb281",
+      "result_id": "0f3bb87a-b5ce-4037-b4a3-298a1e405207"
+    },
+    {
+      "claim_id": "0b3100bf-12a9-40a7-b6ea-930130a1743c",
+      "result_id": "0f3bb87a-b5ce-4037-b4a3-298a1e405207"
+    },
+    {
+      "claim_id": "2eb28254-0260-4bca-9834-396be7211eb1",
+      "result_id": "2b15d33e-748c-449c-a2bc-988c85a5b104"
+    },
+    {
+      "claim_id": "5f7059df-5622-46e8-be98-e90a50fdb402",
+      "result_id": "2b15d33e-748c-449c-a2bc-988c85a5b104"
+    },
+    {
+      "claim_id": "57c5ec49-79fa-496a-bb33-72158924a782",
+      "result_id": "2b15d33e-748c-449c-a2bc-988c85a5b104"
+    },
+    {
+      "claim_id": "48afd129-43b4-4572-b75e-734e14717cbc",
+      "result_id": "2b15d33e-748c-449c-a2bc-988c85a5b104"
+    },
+    {
+      "claim_id": "c1d01828-fbd7-441b-85d6-c869b3b7d96e",
+      "result_id": "2b15d33e-748c-449c-a2bc-988c85a5b104"
+    },
+    {
+      "claim_id": "b50c1fb9-e720-4c41-a197-8c880a422886",
+      "result_id": "2b15d33e-748c-449c-a2bc-988c85a5b104"
+    },
+    {
+      "claim_id": "70d4fc65-2754-4449-ac81-c9d6e2ba1a05",
+      "result_id": "2b15d33e-748c-449c-a2bc-988c85a5b104"
+    },
+    {
+      "claim_id": "aba87eb6-5f2d-478c-ba45-4233105f3de2",
+      "result_id": "930cdfb0-1cd9-497c-8a5d-225af0bc7a49"
+    },
+    {
+      "claim_id": "345ec2d7-9556-4fc5-b6fa-258950c197e9",
+      "result_id": "930cdfb0-1cd9-497c-8a5d-225af0bc7a49"
+    },
+    {
+      "claim_id": "5ac7f1ea-9a76-4d92-b961-4519bffb1222",
+      "result_id": "930cdfb0-1cd9-497c-8a5d-225af0bc7a49"
+    },
+    {
+      "claim_id": "2fe5caa2-3e58-4982-b8f9-f5707c70f02c",
+      "result_id": "930cdfb0-1cd9-497c-8a5d-225af0bc7a49"
+    },
+    {
+      "claim_id": "47890389-9a9b-427e-8d7f-92d6382d8e9a",
+      "result_id": "930cdfb0-1cd9-497c-8a5d-225af0bc7a49"
+    },
+    {
+      "claim_id": "3780af8e-51bb-4de5-bb7e-4ab5a354c412",
+      "result_id": "930cdfb0-1cd9-497c-8a5d-225af0bc7a49"
+    },
+    {
+      "claim_id": "5d1e2a19-899d-4fb1-8057-902e38ebabe5",
+      "result_id": "930cdfb0-1cd9-497c-8a5d-225af0bc7a49"
+    },
+    {
+      "claim_id": "cbf52178-14a4-4438-9fdc-693433e35772",
+      "result_id": "930cdfb0-1cd9-497c-8a5d-225af0bc7a49"
+    },
+    {
+      "claim_id": "ecd94fd7-bcf1-4561-bb34-6b75aa8fd1d0",
+      "result_id": "930cdfb0-1cd9-497c-8a5d-225af0bc7a49"
+    },
+    {
+      "claim_id": "f84a0c6a-03ef-4f40-bfac-2200feb66116",
+      "result_id": "930cdfb0-1cd9-497c-8a5d-225af0bc7a49"
+    },
+    {
+      "claim_id": "f308e734-110b-4c48-8d6b-8102ab8340c4",
+      "result_id": "12438ff9-eeb7-44d3-89b6-85d7df780a00"
+    },
+    {
+      "claim_id": "d7f96f84-4cb0-46c3-9d29-a50d23e4ca52",
+      "result_id": "12438ff9-eeb7-44d3-89b6-85d7df780a00"
+    },
+    {
+      "claim_id": "a0f1255a-7faf-4229-9ec6-f085513bd1e5",
+      "result_id": "12438ff9-eeb7-44d3-89b6-85d7df780a00"
+    },
+    {
+      "claim_id": "d6eefa78-d939-4cfd-b471-cf38ec15870c",
+      "result_id": "12438ff9-eeb7-44d3-89b6-85d7df780a00"
+    },
+    {
+      "claim_id": "27ec90ea-6d74-45d8-9d66-80e396060c51",
+      "result_id": "9a016d43-89ad-4243-9ff3-b86ea4112b27"
+    },
+    {
+      "claim_id": "36a8cb66-72c7-4c4d-9614-4dabf1e50e25",
+      "result_id": "9a016d43-89ad-4243-9ff3-b86ea4112b27"
+    },
+    {
+      "claim_id": "957d9a77-aed1-40c0-98ac-9640970f81f2",
+      "result_id": "9a016d43-89ad-4243-9ff3-b86ea4112b27"
+    },
+    {
+      "claim_id": "d2454d86-2cad-4379-b7a1-a38af6d2f2bb",
+      "result_id": "9a016d43-89ad-4243-9ff3-b86ea4112b27"
+    },
+    {
+      "claim_id": "2703b902-f4b0-4803-8ce0-5b0c3ee82b1d",
+      "result_id": "cb5610bd-0e73-405a-856e-a3fd19d620d1"
+    },
+    {
+      "claim_id": "0ec7ef67-cef0-44be-af6e-03ee4cce2329",
+      "result_id": "cb5610bd-0e73-405a-856e-a3fd19d620d1"
+    },
+    {
+      "claim_id": "6cb6fbc9-c903-4522-9121-74f1b631c0e5",
+      "result_id": "cb5610bd-0e73-405a-856e-a3fd19d620d1"
+    },
+    {
+      "claim_id": "a726a620-c638-4050-a362-2e16720da442",
+      "result_id": "cb5610bd-0e73-405a-856e-a3fd19d620d1"
+    },
+    {
+      "claim_id": "ac21ed30-5602-4620-933a-08bb1916d745",
+      "result_id": "ad3b6ade-7e0e-4a7a-a288-4c57f8aeed6e"
+    },
+    {
+      "claim_id": "905588d0-107c-4d96-9b90-d852634c69a3",
+      "result_id": "ad3b6ade-7e0e-4a7a-a288-4c57f8aeed6e"
+    },
+    {
+      "claim_id": "8cceebff-2da8-42a9-a962-1c98b0d477aa",
+      "result_id": "1627d594-d48f-482d-9b24-e8faea7c4fbc"
+    },
+    {
+      "claim_id": "220feeff-f9ed-43eb-bb09-3386b2c07e38",
+      "result_id": "1627d594-d48f-482d-9b24-e8faea7c4fbc"
+    },
+    {
+      "claim_id": "196403f2-ae35-4990-bfa8-4642afdaf2f3",
+      "result_id": "1627d594-d48f-482d-9b24-e8faea7c4fbc"
+    },
+    {
+      "claim_id": "b2f38ebc-d393-41fe-b7b8-7ab34a9385c1",
+      "result_id": "1627d594-d48f-482d-9b24-e8faea7c4fbc"
+    },
+    {
+      "claim_id": "b387aa1e-f97d-45c0-a944-7d4a5458fcf6",
+      "result_id": "1627d594-d48f-482d-9b24-e8faea7c4fbc"
+    },
+    {
+      "claim_id": "b2ec3ce8-0cec-494c-8da4-1036e0314153",
+      "result_id": "7a17e5d2-cf37-4a5b-9a5a-01f850aac296"
+    },
+    {
+      "claim_id": "bdb3410f-2441-4171-a0b9-2e9047c7a607",
+      "result_id": "7a17e5d2-cf37-4a5b-9a5a-01f850aac296"
+    },
+    {
+      "claim_id": "21ab32a2-2c19-4da9-8687-13ef84d787e9",
+      "result_id": "7a17e5d2-cf37-4a5b-9a5a-01f850aac296"
+    },
+    {
+      "claim_id": "cb9e5bb3-0c94-4eb8-84ea-19987509ba2d",
+      "result_id": "7a17e5d2-cf37-4a5b-9a5a-01f850aac296"
+    },
+    {
+      "claim_id": "52f8b763-2e75-46c1-b0d9-e8f442849ca2",
+      "result_id": "7a17e5d2-cf37-4a5b-9a5a-01f850aac296"
+    },
+    {
+      "claim_id": "42d340ac-d32a-4f71-b48c-c454726d51ae",
+      "result_id": "7a17e5d2-cf37-4a5b-9a5a-01f850aac296"
+    },
+    {
+      "claim_id": "11011e55-caba-4976-98d4-0e5d357e1898",
+      "result_id": "7a17e5d2-cf37-4a5b-9a5a-01f850aac296"
+    },
+    {
+      "claim_id": "df14b57e-1992-41b7-a9cc-aa0dc5c7bbbf",
+      "result_id": "7a17e5d2-cf37-4a5b-9a5a-01f850aac296"
+    },
+    {
+      "claim_id": "96b671dd-e7ff-4ba6-9579-8ae6a83dc724",
+      "result_id": "7a17e5d2-cf37-4a5b-9a5a-01f850aac296"
+    },
+    {
+      "claim_id": "370dfbb1-0d12-43c8-b1ce-4cc1b9add80e",
+      "result_id": "7a17e5d2-cf37-4a5b-9a5a-01f850aac296"
+    },
+    {
+      "claim_id": "576eece5-953c-4d32-bf11-9f4ba63dc8df",
+      "result_id": "7a17e5d2-cf37-4a5b-9a5a-01f850aac296"
+    },
+    {
+      "claim_id": "e9312212-8ce5-4b14-a6ee-67ef482643b8",
+      "result_id": "05c8ccbf-f8be-4c2c-b4bd-73c895af9d34"
+    },
+    {
+      "claim_id": "becf2373-192c-45dc-8fa7-76ec2e683f1b",
+      "result_id": "05c8ccbf-f8be-4c2c-b4bd-73c895af9d34"
+    },
+    {
+      "claim_id": "58c2ae71-fc80-48f1-8652-93db47119457",
+      "result_id": "05c8ccbf-f8be-4c2c-b4bd-73c895af9d34"
+    },
+    {
+      "claim_id": "ea441f63-492b-4bbf-bd80-9e1b4ff16c72",
+      "result_id": "05c8ccbf-f8be-4c2c-b4bd-73c895af9d34"
+    },
+    {
+      "claim_id": "2173f2c4-9a44-45ce-a126-70b787afcea7",
+      "result_id": "05c8ccbf-f8be-4c2c-b4bd-73c895af9d34"
+    },
+    {
+      "claim_id": "5a07d97b-73d0-41ed-8c1e-4b1bb901bb40",
+      "result_id": "05c8ccbf-f8be-4c2c-b4bd-73c895af9d34"
+    },
+    {
+      "claim_id": "258c13dd-3e81-4c25-892b-f1b0e9785472",
+      "result_id": "05c8ccbf-f8be-4c2c-b4bd-73c895af9d34"
+    },
+    {
+      "claim_id": "923507f1-c99d-4aa0-a82d-d404fb95ef87",
+      "result_id": "05c8ccbf-f8be-4c2c-b4bd-73c895af9d34"
+    },
+    {
+      "claim_id": "fc4679dd-eed0-4e29-9b4b-335a694f4170",
+      "result_id": "05c8ccbf-f8be-4c2c-b4bd-73c895af9d34"
+    },
+    {
+      "claim_id": "d2ca904d-f2f9-442c-a119-c276c032547a",
+      "result_id": "05c8ccbf-f8be-4c2c-b4bd-73c895af9d34"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,311 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "SPP1+ macrophages are consistently identified across six human tissues (liver, lung, heart, skin, endometrium, kidney) and are significantly increased in fibrotic disease states compared to healthy controls. Analysis of 235,930 macrophages from 15 integrated scRNA-seq datasets revealed SPP1+ macrophages as a common population enriched for ECM degradation/remodeling and metabolic processes, with marker genes including SPP1, GPNMB, CAPG, and ALCAM consistently upregulated across tissues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C40 provide comprehensive evidence from integrated multi-tissue scRNA-seq analysis showing SPP1+ macrophages are conserved across organs and consistently elevated in fibrotic conditions. The data includes appropriate sample sizes (n=235,930 cells from multiple patients per condition), statistical testing (Wilcoxon rank-sum tests with reported p-values), and visualization across all six tissues. Individual-level analysis (C39) confirms the finding holds at patient level, though statistical significance varies by tissue.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "A distinct matrisome-associated macrophage (MAM) subpopulation (SPP1+MAM+) was identified within SPP1+ macrophages through unsupervised clustering. This MAM state is characterized by a 158-gene signature enriched for ECM remodeling genes (MMPs, TIMPs, cathepsins) and metabolic processes, with unique markers including CHI3L1, MMP9, and GPC4. SPP1+MAM+ cells show significantly higher ECM remodeling and metabolic signatures compared to SPP1+MAM- cells and other macrophage states (TAMs, DAMs, LAMs, SAMs), and are significantly increased in fibrotic disease states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C59 demonstrate rigorous identification of the MAM subpopulation using multiple complementary approaches: unsupervised clustering, COMET marker selection, differential expression analysis, GSEA pathway enrichment, and comparative analysis with established macrophage states. The functional characterization is well-supported by gene signature scoring (C55-C57) and statistical testing at both population and individual patient levels (C58-C59). The tissue-independent clustering (C44) strengthens the conclusion of a conserved state.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Trajectory analysis using Slingshot identified differentiation paths from FCN1+ monocytes toward both homeostatic macrophages and SPP1+MAM+ macrophages, with SPP1+MAM+ representing a terminal state preceded by SPP1+MAM- in most tissues. Cell propensity scoring revealed significantly increased probability of SPP1+MAM- to SPP1+MAM+ differentiation in fibrotic disease states across all six tissues, though some healthy tissues (liver, endometrium, kidney) showed elevated baseline propensity potentially reflecting non-healthy control samples.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C67 present trajectory analysis validated with two independent methods (Slingshot and Monocle per C60-C61 and Figure 3 supplement 1). The cell propensity analysis (C64-C65) provides quantitative support with statistical testing across tissues. The caveat about control sample quality (C66-C67) demonstrates appropriate critical interpretation of the data, noting that liver controls came from cancer patients and endometrium from eutopic tissue, which could confound baseline measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Regulon analysis identified JDP2, KLF3, and CEBPD as key transcription factors associated with SPP1+MAM+ polarization. These regulons showed highest specificity for the SPP1+MAM+ signature and were active prior to SPP1+ polarization based on trajectory analysis. Linear regression modeling demonstrated similar correlations between regulon activity and SPP1+MAM+ signature across both differentiation trajectories (transitional\u2192SPP1+MAM- and SPP1+MAM-\u2192SPP1+MAM+).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C74 describe comprehensive regulon analysis using pySCENIC with appropriate methodology including diagnostic odds ratio calculation (C68-C69), specificity scoring (C69), and linear regression along trajectories (C70-C71). The analysis identifies conserved transcriptional regulators across tissues. However, the inference that regulons are active \"prior to polarization\" (C71) is based on correlation analysis rather than temporal or functional validation, representing a limitation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Analysis of healthy human lung tissue from the Human Lung Cell Atlas revealed significant positive correlation between SPP1+MAM- activity score and age (p=0.001), with weaker correlation for homeostatic score (p=0.011). Neither SPP1+MAM+ signature nor ECM remodeling processes showed significant age association. The homeostatic score association was confounded by smoking status. Similar increased SPP1+MAM- activity with aging was observed in mouse lung macrophages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C84 present age-association analysis with appropriate statistical testing (linear regression with reported p-values and correlation coefficients) and adequate sample size (n=85 individuals, 86,484 cells). The identification of smoking as a confounder (C81-C82) demonstrates rigorous analysis. Cross-species validation in mice (C83) strengthens the finding. However, the interpretation that SPP1+MAM- \"may progress\" to SPP1+MAM+ during fibrosis (C84) is speculative and not directly tested in the aging analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Background context establishing that tissue fibrosis involves macrophages responding to inflammatory insults, with prior work showing SPP1+ macrophages associate with lung and liver fibrosis. However, the conservation of SPP1+ macrophages across tissues and their specificity to different fibrotic etiologies remained unclear, and SPP1+ SAMs share transcriptomic overlap with other macrophage states (TAMs, LAMs, DAM), lacking fibrosis-specific functionality.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C26 provide literature context supported by appropriate citations to establish the knowledge gap addressed by the study. These are primarily background claims from prior work rather than novel findings. The claims accurately represent established knowledge about macrophage roles in fibrosis and identify the specific gap regarding SPP1+ macrophage conservation and specificity that motivates the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Discussion contextualizing findings within the broader literature on lipid-associated macrophage states (LAMs, TAMs, DAM) that share markers like TREM2, FABP5, and SPP1. The study proposes SPP1 as a suitable marker for pro-fibrotic macrophages across tissues and implicates a potential role for SPP1+ macrophages in endometrial fibrosis, an increasingly recognized feature of endometriosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C93 synthesize the study's findings with extensive prior literature (supported by multiple citations C87). The proposal of SPP1 as a pan-tissue fibrosis marker (C93) is a reasonable inference from the multi-tissue data presented. The connection to endometrial fibrosis (C91-C92) appropriately cites recent work and extends the study's findings to this context, though direct functional validation is not provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Discussion comparing SPP1 versus TREM2 as markers for fibrosis-associated macrophages. While TREM2+ macrophages exist in fibrotic disease models, evidence suggests TREM2 has pro-resolution roles and is not optimal for identifying SAMs. In contrast, SPP1 is an established biomarker of fibrosis in multiple diseases (NASH, primary sclerosing cholangitis, SSC-associated lung disease), with unequivocal evidence for pro-fibrotic roles based on mouse deletion/neutralization studies across multiple organs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C103 provide well-cited discussion comparing two candidate markers. The argument for SPP1 over TREM2 is supported by extensive citations to functional studies in mice (C103) and biomarker studies in humans (C99-C101). The characterization of TREM2's role as \"not optimal\" (C97) is appropriately nuanced given conflicting evidence in the literature (C95-C96). This represents synthesis of prior work rather than novel experimental findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "Discussion of MAM state characteristics and differentiation. The MAM state is characterized by ECM remodeling genes (MMPs, TIMPs, cathepsins), metabolic processes, and osteoclast development regulons (JDP2, NFATC1). SPP1+MAM- macrophages show enrichment for secretory and inflammatory pathways, suggesting MAM polarization is acquired from inflammatory SPP1+ macrophages. Trajectory analysis across tissues supports a common differentiation path for SPP1+ macrophages independent of tissue microenvironment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C114 synthesize the study's findings on MAM characteristics and differentiation. The characterization is well-supported by the data presented (pathway enrichment, trajectory analysis). The inference that MAM state is \"acquired from\" inflammatory SPP1+ cells (C112) is supported by both pathway enrichment and trajectory data. The conclusion about tissue-independent differentiation (C114) is appropriately supported by multi-tissue trajectory analysis, though functional validation is not provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "Discussion proposing transcriptional resemblance between SPP1+MAM+ macrophages and osteoclasts based on expression of osteoclast genes (MMP9, CTSK), osteoclast network genes, enrichment for osteoclast development pathways, and activation of osteoclast-regulating regulons (JDP2, NFATC1). This resemblance may explain enrichment for ECM remodeling and energy metabolism pathways. Supporting evidence includes prior observations of osteoclast-like features in other SPP1-expressing macrophage populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C125 present a well-reasoned hypothesis about osteoclast-like features of MAM cells, supported by gene expression data (C116), pathway enrichment (C117), regulon analysis (C118), and citations to similar observations in other contexts (C121-C123). However, this remains a transcriptional similarity without functional validation of osteoclast-like activity. The inference about metabolic requirements (C119-C120) is reasonable but indirect. This represents an interesting hypothesis requiring further experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "Hypothesis proposing dual roles for SPP1+ macrophages: (1) involvement in initial fibrosis stages through secretory phenotype and fibroblast activation, and (2) acquisition of MAM signature as compensatory phenotype to counteract established fibrosis. Evidence from prior work supports SPP1+ macrophage-fibroblast interactions through secreted factors (CXCL4, cytokines) and direct SPP1-mediated effects on fibroblast migration and proliferation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C126-C132 present an interesting two-stage hypothesis about SPP1+ macrophage function, but this is explicitly speculative (\"we thus postulate\" C126). While supporting evidence from prior work is cited (C128-C132), the current study does not directly test this temporal model or demonstrate that MAM+ cells have anti-fibrotic activity. The hypothesis is plausible given the trajectory and propensity data, but requires functional validation to determine whether MAM+ cells are pro-fibrotic, anti-fibrotic, or have context-dependent roles.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139"
+    ],
+    "result": "Discussion linking aging to fibrosis through inflammaging (chronic inflammation without pathogens) characterized by pro-inflammatory macrophages. Aging alveolar macrophages express SPP1, suggesting chronic inflammation causes early fibrogenesis. During advanced fibrosis, SPP1+MAM- macrophages show increased propensity to polarize toward the matrix-degrading, osteoclast-like MAM+ state, suggesting dynamic polarization states depending on inflammation/fibrosis degree.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C133-C139 integrate the study's aging analysis with literature on inflammaging (C133-C134, well-cited). The connection between SPP1 expression in aging macrophages and early fibrogenesis (C135-C136) is supported by citation but represents inference rather than direct demonstration. The characterization of MAM+ as \"matrix-degrading\" (C138) is supported by gene expression data. The model of dynamic polarization (C139) is a reasonable synthesis of the trajectory and propensity data, though temporal dynamics are not directly measured.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145"
+    ],
+    "result": "Discussion placing findings within the continuum model of monocyte-to-macrophage differentiation. In healthy tissue, monocyte-derived macrophages undergo homeostatic differentiation to tissue-resident macrophages, while disease involves infiltrating monocytes losing this ability due to pathological environmental cues. The study proposes MAM+ as an advanced polarization state of monocyte-derived macrophages showing conserved activation pathways from prolonged inflammatory and fibrogenic cues across tissues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C140-C145 appropriately contextualize the study's findings within established models of macrophage differentiation (well-cited C140-C143). The trajectory analysis supports monocyte origin of SPP1+ and MAM+ cells. The proposal that MAM+ represents an \"advanced polarization state\" (C145) is consistent with the trajectory and propensity data showing it as a terminal state. However, the study does not directly trace cells from monocytes through these states or demonstrate that \"prolonged\" cues are required, representing reasonable inference rather than direct demonstration.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Background establishing that physiological aging is a risk factor for fibrotic disease, often associated with impaired resolution of inflammatory insults and metabolically activated macrophages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C77 provide well-cited background context for the aging analysis. These are established findings from prior work rather than novel results from the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "Summary of key findings from the abstract: identification of MAM subpopulation expressing matrisome genes, enriched for ECM remodeling and metabolism, following a differentiation trajectory from SPP1+ macrophages with associated regulon activity. SPP1+MAM- shows positive association with aging, suggesting an advanced conserved polarization state from prolonged inflammatory cues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C11 accurately summarize the major findings detailed in the results sections. These abstract claims are supported by the comprehensive data presented in the manuscript (covered in other result groups). The interpretation of \"advanced and conserved polarization state\" (C11) is a reasonable synthesis of the trajectory, propensity, and aging data, though some aspects remain inferential.",
+    "result_type": "MINOR"
+  }
+]

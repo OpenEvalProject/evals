@@ -1,0 +1,1765 @@
+{
+  "submission": {
+    "id": "b73ab3e5-3c87-45dc-9823-6f3c6f5f51db",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-04T02:00:37.207484Z",
+    "updated_at": "2025-12-04T02:00:37.207484Z"
+  },
+  "content": [
+    {
+      "id": "03b9b160-b819-4388-866a-39c774e1c708",
+      "submission_id": "b73ab3e5-3c87-45dc-9823-6f3c6f5f51db",
+      "content_type": "manuscript",
+      "content_text": "# Accumbens cholinergic interneurons dynamically promote dopamine release and enable motivation\n\n## Authors\n\n- Ali Mohebi<sup>1</sup> ([ORCID: 0000-0001-7291-3448](https://orcid.org/0000-0001-7291-3448))\n- Val L Collins<sup>1</sup>\n- Joshua D Berke<sup>1</sup> ([ORCID: 0000-0003-1436-6823](https://orcid.org/0000-0003-1436-6823)) \u2020\n\n### Affiliations\n\n1. Department of Neurology, University of California, San Francisco San Francisco United States ([ROR:043mz5j54](https://ror.org/043mz5j54))\n2. Department of Psychiatry and Behavioral Sciences, University of California, San Francisco San Francisco United States ([ROR:043mz5j54](https://ror.org/043mz5j54))\n3. Neuroscience Graduate Program, University of California, San Francisco San Francisco United States ([ROR:043mz5j54](https://ror.org/043mz5j54))\n4. Weill Institute for Neurosciences, University of California, San Francisco San Francisco United States ([ROR:043mz5j54](https://ror.org/043mz5j54))\n\n\u2020 Corresponding author\n\n## Abstract\n\nMotivation to work for potential rewards is critically dependent on dopamine (DA) in the nucleus accumbens (NAc). DA release from NAc axons can be controlled by at least two distinct mechanisms: (1) action potentials propagating from DA cell bodies in the ventral tegmental area (VTA), and (2) activation of \u03b22* nicotinic receptors by local cholinergic interneurons (CINs). How CIN activity contributes to NAc DA dynamics in behaving animals is not well understood. We monitored DA release in the NAc Core of awake, unrestrained rats using the DA sensor RdLight1, while simultaneously monitoring or manipulating CIN activity at the same location. CIN stimulation rapidly evoked DA release, and in contrast to slice preparations, this DA release showed no indication of short-term depression or receptor desensitization. The sound of unexpected food delivery evoked a brief joint increase in CIN population activity and DA release, with a second joint increase as rats approached the food. In an operant task, we observed fast ramps in CIN activity during approach behaviors, either to start the trial or to collect rewards. These CIN ramps co-occurred with DA release ramps, without corresponding changes in the firing of lateral VTA DA neurons. Finally, we examined the effects of blocking CIN influence over DA release through local NAc infusion of DH\u03b2E, a selective antagonist of \u03b22* nicotinic receptors. DH\u03b2E dose-dependently interfered with motivated approach decisions, mimicking the effects of a DA antagonist. Our results support a key influence of CINs over motivated behavior via the local regulation of DA release.\n\n## Introduction\n\nObtaining rewards typically takes work: time-consuming sequences of unrewarded actions before the reward is reached. Deciding when such work is worthwhile is an essential aspect of adaptive behavior. Dopamine (DA) in the nucleus accumbens (NAc) is a critical modulator of such motivated decision-making (Berke, 2018; Salamone and Correa, 2012), especially choices to approach potential rewards (Ikemoto and Panksepp, 1999; Nicola, 2010). Yet how NAc DA release is itself dynamically regulated to achieve appropriate motivation is not well understood.\n\nSome features of DA release mirror the spiking of DA cell bodies. Burst firing (or strong artificial stimulation) of ventral tegmental area (VTA) DA cell bodies is accompanied by a corresponding pulse of NAc DA release (Mohebi et al., 2019; Phillips et al., 2003; Suaud-Chagny et al., 1992). This pulse can encode reward prediction error (RPE), an important learning signal (Schultz et al., 1997). Other aspects of DA release appear to be dissociated from spiking. Enhancing motivation by increasing reward availability does not change VTA DA cell firing rates (Cohen et al., 2012; Mohebi et al., 2019), but does boost NAc Core DA levels, as measured on a time scale of minutes by microdialysis (Hamid et al., 2016; McCullough and Salamone, 1992). On faster time scales (seconds), many groups have reported ramps in NAc DA as animals approach rewards (Hamid et al., 2016; Howe et al., 2013; Roitman et al., 2004; Wassum et al., 2012). These ramps may reflect discounted estimates of future reward (value), a useful motivational signal. Yet we found no evidence for corresponding ramps in spiking rate among identified DA cells in the lateral VTA (Mohebi et al., 2019), which provide the major DA input to NAc Core (Breton et al., 2019).\n\nAn alternative means of controlling DA release involves local circuit components within the NAc (Sulzer et al., 2016). Prominent among these are cholinergic interneurons (CINs) which, despite constituting only 1\u20132% of striatal neurons, provide a very dense network of fibers releasing acetylcholine (ACh) intermeshed with the DA axon network (Descarries et al., 1996). DA axons possess nicotinic ACh receptors (nAChRs) that specifically contain the \u03b22 subunit (\u03b22*; Jones et al., 2002). Activation of nAChRs is sufficient to locally evoke action potentials in DA axons, and consequent DA release, even in the absence of DA cell bodies (Liu et al., 2022; Threlfell et al., 2012; Cachope and Cheer, 2014; Zhou et al., 2001).\n\nYet how CINs contribute to NAc DA dynamics in behaving animals is largely unknown. Slice studies suggest that DA release is evoked only by highly synchronous activation of multiple CINs (Threlfell et al., 2012), as might occur in response to a salient cue (Kimura et al., 1984). Furthermore, DA release in slices shows a lack of summation to repetitive CIN stimulation (Threlfell et al., 2012) and strong paired-pulse depression (Cachope et al., 2012; Wang et al., 2014). This is apparently due to rapid desensitization of nAChRs (Giniatullin et al., 2005; Quick and Lester, 2002) and feedback inhibition of CINs via DA D2 receptors (Shin et al., 2017). These features might limit the ability of CINs to sculpt motivation-related DA release, including ramping. Furthermore, results on CIN contributions to motivation are mixed. Suppression of CINs has been reported to produce a depression-like state in some behavioral tests (Warner-Schmidt et al., 2012) but to boost motivation in others (Collins et al., 2019).\n\nWe examined the relationships between CIN activity, DA release, and motivation. We took advantage of recent advances in optical DA sensors (Patriarchi et al., 2020) and a specific operant task in which we previously found a dissociation between DA spiking and release (Mohebi et al., 2019). We report that CINs can indeed control DA release in awake behaving animals, but with quite distinct temporal characteristics compared to slices. We find that CIN population activity ramps up during approach behaviors in parallel with DA ramps. Furthermore, selective pharmacological blockade of NAc \u03b22* nAChRs interferes with motivated approach, as does blockade of DA receptors. Our results provide convergent evidence supporting the possibility that CINs are a key mechanism regulating motivation via local control of DA release.\n\n## Results\n\n### ACh reliably drives DA release in NAc, without rapid depression\n\nTo study the rapid influence of CINs over striatal DA release in freely moving animals, we employed an all-optical approach. We expressed the excitatory opsin ChR2 in NAc CINs, using ChAT-Cre rats (Witten et al., 2011) and Cre-dependent expression from a virus (AAV5::DIO::EF1a::ChR2::eYFP). In the same region, we expressed the red-shifted DA sensor RdLight1 (Patriarchi et al., 2020) using another virus (AAV-DJ::CAG::RdLight1). We recorded DA release dynamics by fiber photometry while driving CINs through the same fiber, in awake unrestrained rats not performing any particular task (Figure 1a). CIN stimulation immediately increased the DA signal, and this increase was maintained as long as stimulation was applied (up to 4 s; Figure 1b and c). In contrast to results in slices (Threlfell et al., 2012), the amplitude of DA release scaled with the duration and frequency of laser pulses (Figure 1d and e). CIN-evoked DA release remained robust to the second of a pair of pulses across a range of inter-pulse intervals (Figure 1f), indicating that neither the directly evoked ACh release nor the consequent DA release show rapid synaptic depression in behaving animals (see also Collins et al., 2019 for related results with choline measurements). To assess short-term plasticity at higher stimulation frequencies, we conducted an additional quantitative analysis (Koester and Sakmann, 2000; ). We compared the observed DA response to four CIN stimulation pulses to that predicted by linearly summating the response to a single pulse, four times. Regardless of stimulation frequency, the ratio between observed and predicted peak response remained close to 1 (Figure 1\u2014figure supplement 1), confirming the absence of short-term depression in CIN-evoked DA release.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/85011/elife-85011-fig1-v2.jpg)\n\n**Figure 1.:** (a) Rat brain atlas section (Paxinos and Watson, 2006) showing the approximate location of fiber tips. (b) Representative traces of DA release (565 nm excitation, red) and isosbestic control (405 nm, purple), recorded from the location marked by a triangle in (a). Laser stimulation was delivered as two trains of pulses (470 nm, 10 mW, 4 ms, 16 Hz). Scale bars: 1 s, 1% dF/F. (c) Top: example session showing DA release in response to 16 Hz optogenetic stimulation of nucleus accumbens (NAc) CINs, with 1, 4, 16, 32, or 64 pulses, in pseudo-random order. Dashed lines demarcate trials with similar stimulation parameters. Bottom: normalized dF/F from RdLight aligned to the first pulse in a train of laser stimulation of NAc CINs (Stim parameters: 4 ms pulse, 16 Hz, 10 mW; n = 4 rats). Band shows \u00b1 SEM. dF/F traces for each recording were normalized to the maximum response evoked by 64 stimulation pulses. (d) DA release in response to a single laser pulse of varying duration (1, 2, 4, 6 ms) at 10 mW. Responses are normalized to 1 ms width evoked response for each subject and averaged. Band shows \u00b1 SEM. The magnitude of DA release depends on the pulse width (ANOVA: F(3,12) = 5.52, p=0.013). (e) DA release in response to four laser pulses (4 ms) of varying frequency (4, 8, 16 Hz; all 10 mW). Release patterns are normalized to the single pulse response of the same width and power for each subject, and averaged. Band shows \u00b1 SEM. The magnitude of DA release depends on the frequency of stimulation (bottom, ANOVA: F(3,12) = 9.17, p=0.002). (f) Paired-pulse ratio test: DA release patterns in response to a pair of 4 ms, 10 mW pulses. A two-way ANOVA revealed that there was no statistically significant interaction between the pulse order (first or second) and the delay between two pulses (F(2,6) = 1.05, p=0.35), and there were no main effects of inter-pulse interval (p=0.47) or pulse order (p=0.06).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/85011/elife-85011-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (a) Representative evoked DA release following a single 4 ms pulse of optogenetic CIN stimulation on the left. This response is then summated four times at different frequencies (4, 8, 16 Hz) to calculate the predicted amplitude of DA response at those stimulation frequencies (black) and compare it to the measured DA response (red). (b) Quantitative comparison of measured and calculated DA response to repeated CIN stimulation. Two-way ANOVA finds no interaction between stimulation frequency and the ratio of measured to predicted peak DA response (F(2,9) = 1.41, p=0.293).\n\n### CIN activity and DA release each respond to reward-related cues and ramp up during motivated approach\n\nWe next examined how CIN activity and DA release co-vary in freely moving rats. We expressed the Ca2+ indicator GCaMP6f in CINs (AAV5::Syn::Flex::GCaMP6f) and RdLight1 in the same area (AAV-DJ::CAG::RdLight1). This allowed us to monitor DA release and CIN Ca2+ dynamics through the same fiber (Figure 2a). CIN activity and DA release showed distinct time courses (Figure 2b), but both showed rapid increases in response to the unexpected sound of reward delivery (food hopper \u2018Click,\u2019 occurring at random intervals drawn from a uniform distribution of 15\u201330 s). After delivery, rats took a variable amount of time to collect the food rewards, allowing us to distinguish between neural changes associated with the sensory cue and those associated with the subsequent food retrieval. Aligning signals on food port entry revealed that both CIN GCaMP and DA release rapidly ramped up as rats approached the food port (Figure 2c and d).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/85011/elife-85011-fig2-v2.jpg)\n\n**Figure 2.:** (a) Dual-color photometry of CIN activity and DA fluctuations measured simultaneously through the same fiber. The locations of recording fiber tips are shown projected onto the nearest rat brain atlas section (Paxinos and Watson, 2006). (b) Example of simultaneous recording of spontaneous activity, from the triangle location in (a). Green: CIN GCaMP6f signal (excitation: 470 nm); red: RdLight1 (565 nm); purple: isosbestic control (405 nm). Dashed lines: unexpected food hopper clicks, delivering a sucrose pellet. Inset shows a zoomed-in epoch around a reward click. Note that CIN GCaMP and DA signals are distinct: transients in one signal are not always accompanied by transients in the other. Scale: 1% dF/F, 5 s. (c) A representative session with simultaneous CIN GCaMP6f and RdLight1 recording, aligned to hopper clicks. Trials are sorted by the reward collection time (the black dot indicates food-port entry). Both CIN activity and DA fluctuations show a rapid response to the click, and a separate ramping increase during the food-port approach is apparent for longer collection times. Color scale indicates z-scored signal range. (d) Top: average traces showing CIN activity and DA fluctuations aligned to the hopper click, peak responses (within 1 s from click) significantly differed from peak values aligned to random time points in the task (n = 1000 shuffles). Bottom: the slope of the signal ramps was significantly different from ramp slopes aligned to random time points throughout the session. The slope was determined by fitting a line that connects the maximum and minimum signal, 0.5 s before the food-port entry. Filled gray rectangles show chance levels (95% confidence ranges, from 1000 shuffles).\n\n### CIN ramps can account for DA release ramps in the absence of DA firing changes\n\nWe next turned to a trial-and-error operant task, in which we have previously observed increases in NAc DA release during motivated approach (Hamid et al., 2016) without apparent increases in DA cell firing (at least in the lateral VTA; Mohebi et al., 2019). In brief, each trial starts with the illumination of a center port (Figure 3a). To obtain sucrose pellet rewards, rats approach and place their nose in this center port, and wait for a variable period (500\u20131500 ms) until an auditory Go cue. They then nose-poke an adjacent port to the left or right. These left/right choices are probabilistically rewarded (10, 50, or 90%, probabilities change independently after blocks of 35\u201345 trials). Rewarded trials are made apparent by a hopper click, after which rats approach the food port to collect the pellets (Figure 3b).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/85011/elife-85011-fig3-v2.jpg)\n\n**Figure 3.:** (a) Illustration at top: trial initiation involves an approach to an illuminated center port. Data panels: upper and middle data rows: previously reported (Mohebi et al., 2019) spiking of identified lateral VTA DA cells (n = 29) and dLight DA signals (n = 10). Lower row shows CIN GCaMP signals (n = 8). Each panel shows a representative single example on top and the population average on the bottom. Shading indicates \u00b1 SEM. (b) Same as (a), but for the approach to the food port following the food delivery Click! sound, on rewarded trials. (c) Quantification of slopes during approach. Data points indicate individual DA neurons (top) or fiber placements (middle, bottom). Filled gray rectangles show chance levels (95% confidence ranges, from 1000 shuffles).\n\nTo assess whether ramps in CIN activity might provide the \u2018missing\u2019 control of DA release without changes in DA cell firing, we recorded CIN GCaMP6f signals. We compared these to previously obtained data of VTA DA cell firing and NAc DA release (Mohebi et al., 2019). To help disentangle signals related to sensory cue onset versus approach behavior, we examined trials in which light-on and center-in are more than 1 s apart (i.e., \u2018latency\u2019 > 1 s). We measured ramping as the slope of the signal in the last 0.5 s before approach completion. We compared these slopes to a 95% confidence interval generated by measuring slopes at random times during the task (1000 shuffles). None of the optogenetically identified lateral VTA DA cells (0/29) showed significant ramps preceding center-in, but ramps were reliably observed in both DA release (10/10 fiber placements in seven rats) and CIN GCaMP (7/8 fiber placements, five rats). Repeating the same analysis for the food-port-in event produced significant ramping up for none of the 29 DA cells (one ramped down instead), but virtually all recordings of DA release (9/10) and CIN GCaMP (8/8) recordings. These observations are consistent with the hypothesis that ramps in NAc DA release are sculpted via CIN activity rather than DA cell firing.\n\n### Motivated approach relies on NAc \u03b22-containing nicotinic receptors\n\nIf NAc CINs directly act upon nearby axons to boost DA release and thereby enhance approach behaviors, such behavior should be sensitive to the blockade of the relevant nAChRs. We tested this in the trial-and-error task, using local drug infusions into the NAc Core (bilaterally, volume 0.5 \u00b5l/side). On consecutive days, rats received either aCSF (vehicle), DH\u03b2E (selective antagonist of \u03b22* nAChRs [Changeux, 2018; Picciotto et al., 2012]; 15 or 30 \u00b5g/side), or flupenthixol, a non-selective D1 and D2 DA receptor antagonist (FLU; 10 \u00b5g/side), 10 min before beginning the task. The drug treatment order was randomly assigned and counterbalanced across rats.\n\nBlockade of \u03b22* nAChRs reduced the number of completed trials in a dose-dependent manner, similarly to (though not as strongly as) FLU (Figure 4b). Both FLU and the higher dose of DH\u03b2E increased the latency to initiate a trial (Figure 4c). Specifically, both the higher dose of DH\u03b2E and FLU decreased the instantaneous likelihood (hazard rate) of decisions to approach the center port, shortly after the center port became illuminated (Figure 4d). These observations are consistent with our prior finding that bidirectional optogenetic manipulations of dopamine affect approach hazard rates during the same period (Hamid et al., 2016) and support the hypothesis that nAChR-mediated DA release in NAc is involved in the motivation to work.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/85011/elife-85011-fig4-v2.jpg)\n\n**Figure 4.:** (a) Placement of infusion cannula tips (circles) in NAc Core, based on postmortem histology. (b). The number of trials completed during a 2 hr Bandit session compared to the veh session. F(3,36) = 24.64, p<7.6 \u00d7 10\u20139. Rats treated with DH\u03b2E-30 \u00b5g and FLU completed fewer trials compared to the vehicle session (p<0.013, p<1 \u00d7 10\u20139, respectively). DH\u03b2E-15\u00b5g treatment caused a trend toward fewer completed trials (p=0.074) (c). Cumulative distribution of long latencies (latency >1 s) for different treatment conditions, binned at 250 ms. Filled circles denote statistical differences from the Vehicle condition (p<0.01). (d) The hazard rate of long latencies for different condition treatments demonstrates that blocking nicotinic transmission decreases the likelihood of a self-initiated approach (between 1 and 2 s from light-on) in a dose-dependent manner. Filled circles denote statistical differences from the veh condition (p<0.01).\n\n## Discussion\n\nLocal regulation of striatal DA by ACh has long been established in brain slices (Giorguieff et al., 1976). However, how this influence shapes DA signals in vivo has remained obscure. As a result, cholinergic modulation of DA release has not typically been incorporated into functional accounts of DA dynamics (Berke, 2018), which have instead emphasized the faithful transmission of RPEs encoded in DA cell spiking. An accurate characterization of local modulation of NAc DA in behaving animals is essential not simply for understanding the neural control of motivation, but also altered physiological states evoked by disorders or abused drugs (notably, nicotine).\n\nSeminal slice studies reported that while CINs can profoundly influence DA release via \u03b22* nicotinic receptors, this effect shows strong short-term depression that can take minutes to recover (Cachope et al., 2012; Threlfell et al., 2012). If these desensitizing mechanisms apply in the awake behaving case, we might expect little functional contribution of CINs to DA signaling, and that stimulating CINs would not evoke appreciable extra DA release. Our results clearly demonstrate otherwise: stimulating CINs evoked strong DA release in a frequency-dependent manner, with no evidence of depression. This result both confirms the presence of powerful ACh modulation of DA release under physiological conditions and demonstrates that this modulation has the dynamic range to be a major, continuing influence over behaviorally relevant DA signals.\n\nWhat can explain the discrepancy between ex vivo and in vivo experiments? One possibility involves the very different conditions for acetylcholinesterase (AChE), an enzyme that provides critical constraints over ACh signaling dynamics. AChE functions very rapidly, almost approaching the rate of ACh diffusion (Dvir et al., 2010; Quinn, 1987), but this rate will be slower at the lower temperature of slice experiments compared to whole animals. Furthermore, AChE is soluble in the extracellular matrix (Sirvi\u00f6 et al., 1989), and so can be partly washed away in the slice preparation. Taken together, released ACh in the slice may escape degradation in the synaptic space for longer than normal, and thereby provoke desensitization of a larger proportion of nAChRs.\n\nOne of the most prominent reported features of striatal CINs is a reliable pause in response to reward-predicting cues, in contrast to DA release (Morris et al., 2004). However, at least in NAc we found that both DA release and CIN activity increase rapidly in response to such cues (see also Atallah et al., 2014; Howe et al., 2019). Of course, bulk CIN GCaMP signals are at best an incomplete readout of either CIN firing or the spatiotemporal dynamics of ACh release. In particular, imaging of CINs GCaMP in the dorsal striatum found a mismatch between signals at cell bodies and the rest of the field of view (considered to be neuropil; Rehani et al., 2019). Understanding whether control of DA release via nAChRs directly reflects CIN firing will require more experiments adding either optogenetic tagging of CINs (Duhne, 2022) or high-resolution voltage imaging (Piatkevich et al., 2019). One related important direction for future studies is to understand why some transient fluctuations in CIN activity evoke DA release (Liu et al., 2022) but others do not (e.g., Figure 2b).\n\nIn animals performing an operant task, we demonstrated a correspondence between increasing ramps in NAc DA release during motivated approach and increasing NAc CIN activity (measured with GCaMP), at times when VTA DA cell firing is not increasing. This observation supports the idea that CINs can drive behaviorally relevant DA release even in the absence of DA firing changes. We further showed that, in the same task, interfering with NAc \u03b22* nAChRs reduces the likelihood that rats perform the motivated approach behavior. However, one limitation of this study is that we did not causally establish that CINs are directly driving DA release, via \u03b22* nAChRs, at the specific moments of DA ramping during approach. In subsequent studies, we hope to do this through combined local pharmacology, optogenetics, and photometry in behaving animals, as technical advances permit. Designing a conclusive manipulation experiment is not trivial; for example, if CINs tonically promote DA release, simple suppression of CINs could interfere with DA ramps during approach, even if CINs do not normally drive ramping.\n\nGiven that ACh can promote NAc DA release and thereby motivation, a continuing conundrum is to explain long-standing evidence for opposing roles for striatal DA and ACh in behavioral control (Mcgeer et al., 1961; Hikida et al., 2001; Collins et al., 2019). One potentially relevant behavioral dimension is whether actions are prompted by external events versus being \u2018self-initiated.\u2019 Increases in both (presumed) CIN activity and striatal DA release have been reported in conjunction with self-timed actions (e.g., Lee et al., 2006; Hamilos et al., 2021). This seems consistent with our observation of prominent joint DA and CIN activity ramps in longer-latency trials in our operant task, where rats are not simply reacting to the trial start light, but rather approaching at a variable time after its onset. However, if CIN control of NAc DA release is always important for self-initiated, motivated behavior, DH\u03b2E should suppress the hazard rate of approach across a wide range of delays after the light onset. In fact, both DH\u03b2E and FLU particularly depressed approach behavior in the 1\u20133 s range after light onset, with the hazard rate returning to control levels by ~4 s (Figure 4d). This suggests that the NAc joint ACh-DA mechanisms investigated here may be particularly involved in deciding whether it is worthwhile reorganizing ongoing behavior to respond to an external cue (Blazquez et al., 2002).\n\nFinally, if CINs do indeed help locally sculpt motivational aspects of DA release, a natural question becomes how relevant CIN signals are themselves generated. CINs receive inputs from a wide range of areas that can supply motivational information and influence DA release, including the basolateral amygdala (Floresco et al., 1998), parafascicular thalamus (Bradfield et al., 2013), frontal cortex (Kosillo et al., 2016), and long-range GABAergic subpopulations in the VTA (Al-Hasani et al., 2021; Brown et al., 2012). They also sample the state of surrounding networks of striatal projection cells, allowing them to potentially extract useful decision variables (Franklin and Frank, 2015). Resolving how motivational signals are computed remains an ongoing challenge, but monitoring and manipulating each of these various circuit components within the same behavioral context is a promising approach.\n\n## Methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Strain, strain background (LE rats, both male and female)</td>\n      <td>ChAT-Cre, Long-Evans (male and female rats)</td>\n      <td>RRRC</td>\n      <td>Long-Evans-Tg(ChAT-Cre)5.1Deis</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>AAV5-EF1a-DIO- ChR2-eYFP</td>\n      <td>Addgene</td>\n      <td>Cat# 20298-AAV5</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pAAV.Syn.Flex.GCaMP6f.WPRE.SV40</td>\n      <td>Addgene</td>\n      <td>Cat# 100833-AAV5</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>AAV-CAG-RdLight1</td>\n      <td>Patriarchi et al., 2020</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>DH\u03b2E</td>\n      <td>Tocris Bioscience</td>\n      <td>Cat# 2349</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Flupenthixol</td>\n      <td>Sigma-Aldrich</td>\n      <td>CAS# 51529-01-2</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>MATLAB</td>\n      <td>MathWorks, Inc.</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>LabView</td>\n      <td>National Instruments</td>\n      <td></td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Animals\n\nIn the conduct of this study, the animals involved were accommodated at the University of California San Francisco (UCSF) Animal Research Facility, which is accredited by AAALAC (#001084). The facility strictly adheres to institutional, federal, and AAALAC guidelines to ensure the highest standards of animal care. Procedures such as euthanasia for perfusion fixation were performed under profound anesthesia to minimize discomfort. The use of animals in this study was in strict compliance with the Public Health Service Policy on Humane Care and Use of Laboratory Animals. The UCSF Institutional Animal Care and Use Committee granted approval for this study (protocol # AN196232-01B). Furthermore, UCSF holds a PHS-approved Animal Welfare Assurance D16-00253/A3400-01, further affirming our commitment to ethical animal use.\n\n### Behavioral task\n\nRats were trained in the operant \u2018bandit\u2019 task described in detail previously (Hamid et al., 2016; Mohebi et al., 2019). Reward probabilities for left and right choices were pseudorandomly chosen from 10, 50, or 90% for blocks of 35\u201345 trials, over an ~2 hr session. Procedural errors (e.g., failure to hold until the Go cue) resulted in illumination of the house light and a timeout period of 1.5 s.\n\n### Photometry and optogenetic stimulation\n\nWe used a viral approach to express the genetically encoded optical DA sensor RdLight1 and the Ca2+ indicator GCaMP6f. Under isoflurane anesthesia, a 1 \u03bcl cocktail of AAV-DJ-CAG-RdLight1 and AAV5-Syn-Flex-GCaMP6f was slowly (100 nl/min) injected (Nanoject III, Drummond) through a glass micropipette targeting nucleus accumbens: (AP: 1.7, ML: 1.7, DV: 7.0 mm relative to bregma). During the same surgery, optical fibers (400 \u03bcm core, 430 \u03bcm total diameter) attached to a metal ferrule (Doric) were inserted (target depth 200 \u03bcm higher than AAV) and cemented in place. Data were collected >3 wk later, to allow for transgene expression. We used time-division multiplexing (Akam and Walton, 2019): green (565 nm), blue (470 nm), and violet (405 nm; isosbestic control) LEDs were alternately switched on and off in 10 ms frames (4 ms on, 6 ms off). Excitation power at the fiber tip was set to 30 \u03bcW for each wavelength. Both excitation and emission signals passed through minicube filters (Doric), and bulk fluorescence was measured with a femtowatt detector (Newport, Model 2151) sampling at 10 kHz. The separate signals were then rescaled to each other via a least-square fit before analysis.\n\nTo combine fiber photometry with optogenetics, we infused a cocktail of AAV-DJ-CAG-RdLight1 and AAV5-EF1a-DIO-ChR2-eYFP into the nucleus accumbens and implanted 400 \u00b5m fibers above the infusion site during the same surgery. We used time division multiplexing with interleaved LED illumination (565 nm, 405 nm), as above. We used brief laser pulses (470 nm, 20 mW) to activate ChR2.\n\n### Drugs and infusion procedures\n\nRats were bilaterally infused with either the selective \u03b14\u03b22 nicotinic antagonist DH\u03b2E (low dose: 15 \u00b5g/0.5 \u00b5l/side, high dose 30 \u00b5g/0.5 \u00b5l/side; Tocris Bioscience, Bristol, UK) the non-selective dopamine receptor antagonist flupenthixol (15 \u00b5g/0.5 \u00b5l/side; Tocris) or sterile saline (0.5 \u00b5l/side), which served as the vehicle control. All rats received all drug infusions, counterbalanced for order. Drugs were infused as described previously (Collins et al., 2016). Briefly, dummies were removed, and injectors were inserted into the guide cannulae protruding 3 mm past the guide tip targeted to the NAc. Using a micro infusion pump (Harvard Apparatus), drugs were infused at a rate of 0.5 \u00b5l/min for 1 min. Following a 1 min post-infusion wait time, injectors were removed and dummies inserted. Rats were given 10 min post-infusion before being placed in operant chambers for the bandit task.\n",
+      "created_at": "2025-12-04T02:00:37.207484Z"
+    },
+    {
+      "id": "127da236-1abe-4522-aec6-aa3e26303704",
+      "submission_id": "b73ab3e5-3c87-45dc-9823-6f3c6f5f51db",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Joseph F Cheer, https://ror.org/04rq5mt64 University of Maryland School of Medicine United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.85011.sa0](https://doi.org/10.7554/eLife.85011.sa0)\n\nThe manuscript by Mohebi et al. examines the interaction between cholinergic interneurons (CINs) and transmitter release from dopaminergic axons in the nucleus accumbens of behaving animals. The authors propose that CIN activity facilitates dopamine release through activation of DA varicosities, and enhances the motivation to obtain a reward. This study represents an important step forward in our understanding of how dopamine release regulates behavior in concert with acetylcholine signaling, and more broadly how dopamine terminals modulate behavior independently from activity at cell bodies.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Joseph F Cheer, https://ror.org/04rq5mt64 University of Maryland School of Medicine United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.85011.sa1](https://doi.org/10.7554/eLife.85011.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Cholinergic Interneurons Drive Motivation by Promoting Dopamine Release in the Nucleus Accumbens\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Michael Taffe as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1) Although there is significance to the paper, all reviewers are of the mindset that the authors need to show that, at physiologically relevant patterns of activity, CINs drive DA release in a behaviorally-relevant manner (manipulating CIN activity while at the same time measuring behaviorally evoked DA fluorescence, for example). This experiment is crucial in light of recent papers showing a disconnect between the two processes in behaving animals (the recent work of the Sabatini and Tritsch labs).\n\n2) It is also very important for the authors to show that optically evoked DA fluorescence is indeed dependent on a4b2 receptors (see Mateo et al., 2017).\n\n3) Please thoroughly explain the observation of a lack of frequency-dependent depression, which greatly contrasts with previously published reports (Cachope et al., 2012; Threlfell et al., 2012).\n\n4) Please clarify whether independent single-unit VTA DA neuron data was collected for this study.\n\nReviewer #1 (Recommendations for the authors):\n\nDetailed comments follow below.\n\n\u2013 Figure 1 shows that synchronous optogenetic activation of CINs induces DA release in vivo. These results confirm those obtained in previous slice experiments, although the lack of frequency-dependent depression is intriguing. The authors discuss potential reasons such as the different ACH-E dynamics in slices vs in vivo, temperature effects, and more. Could this difference also be due to the methods used to measure DA release (voltammetry vs optical)?\n\n\u2013 The dual wavelength imaging presented in figures 2-3 shows a high similarity between the DA signal and CIN activity in response to auditory stimuli and approach to the reward port. Are the simultaneous measurements completely independent? No chance of \"cross talk\" between the channels? Would the results hold if the imaging of CIN calcium activity and DA release were measured separately in different animals, or simultaneously but in different hemispheres?\n\n\u2013 It is also not completely clear if the spiking data was obtained simultaneously or if it is actually the data from a previous paper by the lab. It says in the figure legend that the spiking activity of DA neurons during this task was previously reported, but does this mean that only the imaging data was acquired simultaneously while the spiking data are from different animals?\n\n\u2013 Figure 3 indeed shows that the ramping in DA release is not accompanied by ramping in VTA cell spiking but with a ramping of CIN activity. While this does not contradict the potential involvement of CINs in mediating the DA ramp, it does not prove it.\n\n\u2013 One open question regarding the local DA release vs spiking activity is whether CIN-induced release generates spikes that backpropagate to the cell bodies. Using the experimental setup presented in figure 3, the authors are positioned to answer this question by optogenetically activating CINs and recording backpropagating spikes in VTA cells.\n\n\u2013 The last figure (4) shows a decrease in performance in the operant task following the application of DHBE in the NAc. The impact of the DA agonist FLU was clearly larger, and the DHBE application was effective only in higher concentrations. The changes in behavioral performance are clear in both FLU and DHBE-30ug applications. This does not, however, prove that the impact of DHBE is mediated via DA release. Such a strong manipulation of nicotinic receptor-mediated transmission would affect other cells in the NAc, including several types of GABAergic interneurons (See papers by Assous 2021, 2022). It is therefore not clear that the data presented in Fig, 4 adds to our understanding of CIN-mediated DA release.\n\n\u2013 This leads me to the main concern, that the role of CINs in mediating DA release is not directly shown. It is shown that synchronous optogenetic activation of CINs indeed causes DA release (Figure 1). It is also shown that CIN and DA release are often correlated, such as in approach-related ramping and sensory responses. However, whether CIN-induced DA release underlies these correlated activities is not proven. This could be done by suppressing CIN activity and showing the impact on DA release. Will the ramping be affected? Will the sensory responses decrease? Manipulation of CIN activity can be done by optogenetic or chemogenetic inhibition while imaging DA release.\n\n\u2013 Two recent studies by the Sabatini and Tritsch labs address similar questions regarding the interactions between CINs and DA release. Although the striatal regions tested are not the same as in this study, a common claim is that there is little impact of CINs on DA release in behaving mice and that to a large degree their fluctuations are negatively correlated. It would be important to discuss the discrepancies between these recent studies, in addition to the comparison with older slice studies.\n\nReviewer #2 (Recommendations for the authors):\n\n\u2013 The data presented here suggests that \"ramp\" increases in spiking do not occur. However, this stands in contrast to data from the Witten lab showing that ramping does occur in somatic spiking. Could a difference in recording region or experimental approach account for this difference?\n\n\u2013 The authors mention in the discussion that \"stimulating CINs evoked strong DA release\u2026\". Strong relative to what? The signals in this study are reported as normalized values or presented as z-scores in nearly all instances. The authors should provide clearer justification based on absolute data values for why they think the CIN-evoked DA signals are strong.\n\n\u2013 In the final paragraph of the results, flupenthixol is probably more accurately described as a \"non-selective dopamine receptor antagonist.\"\n\n\u2013 It would be helpful to give readers an idea of where electrical VTA DA neurons were made (lateral, medial, etc).\n\n[Editors' note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Cholinergic Interneurons Drive Motivation by Promoting Dopamine Release in the Nucleus Accumbens\" for further consideration by eLife. Your revised article has been evaluated by Michael Taffe (Senior Editor) and a Reviewing Editor.\n\nThe manuscript has been improved but there are some remaining issues that need to be addressed, as outlined below:\n\nThe reviewers find that your rebuttal is fine on all points, except for the key experiment showing that cholinergic interneurons causally drive motivation by promoting dopamine release. In light of the fact that you could not complete the required experiments, this needs to be thoroughly addressed as a limitation in the discussion. All reviewers suggest toning down the message in the title and in the introduction (lines 86-88), to claim that the results support the possibility of CINs sculpting DA release, as this is not directly and unambiguously demonstrated.\n",
+      "created_at": "2025-12-04T02:00:37.207484Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T02:00:37.207484Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T02:00:37.207484Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "63115e14-0610-4106-ad84-c60ba365219d",
+      "content_id": "03b9b160-b819-4388-866a-39c774e1c708",
+      "claim_id": "C1",
+      "claim": "Motivation to work for potential rewards is critically dependent on dopamine (DA) in the nucleus accumbens (NAc).",
+      "claim_type": "EXPLICIT",
+      "source": "Motivation to work for potential rewards is critically dependent on dopamine (DA) in the nucleus accumbens (NAc).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established scientific consensus about the role of dopamine in motivation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:00:37.207484Z"
+    },
+    {
+      "id": "5f7a780e-9e47-4d66-80b8-f7f9431c704b",
+      "content_id": "03b9b160-b819-4388-866a-39c774e1c708",
+      "claim_id": "C2",
+      "claim": "DA release from NAc axons can be controlled by action potentials propagating from DA cell bodies in the ventral tegmental area (VTA).",
+      "claim_type": "EXPLICIT",
+      "source": "DA release from NAc axons can be controlled by at least two distinct mechanisms: (1) action potentials propagating from DA cell bodies in the ventral tegmental area (VTA), and (2) activation of \u03b22* nicotinic receptors by local cholinergic interneurons (CINs).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about mechanisms of DA release control.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:00:37.207484Z"
+    },
+    {
+      "id": "912487c9-6f90-4027-b1a4-41f398dcc660",
+      "content_id": "03b9b160-b819-4388-866a-39c774e1c708",
+      "claim_id": "C3",
+      "claim": "DA release from NAc axons can be controlled by activation of \u03b22* nicotinic receptors by local cholinergic interneurons (CINs).",
+      "claim_type": "EXPLICIT",
+      "source": "DA release from NAc axons can be controlled by at least two distinct mechanisms: (1) action potentials propagating from DA cell bodies in the ventral tegmental area (VTA), and (2) activation of \u03b22* nicotinic receptors by local cholinergic interneurons (CINs).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about mechanisms of DA release control.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:00:37.207484Z"
+    },
+    {
+      "id": "9e5e7857-0503-4b2a-8bf0-5c98545bdd38",
+      "content_id": "03b9b160-b819-4388-866a-39c774e1c708",
+      "claim_id": "C4",
+      "claim": "CIN stimulation rapidly evoked DA release in awake, unrestrained rats.",
+      "claim_type": "EXPLICIT",
+      "source": "CIN stimulation rapidly evoked DA release, and in contrast to slice preparations, this DA release showed no indication of short-term depression or receptor desensitization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from the study using optogenetic stimulation and photometry.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:00:37.207484Z"
+    },
+    {
+      "id": "f47b1de2-6d1f-418a-8392-07d8cd156b0c",
+      "content_id": "03b9b160-b819-4388-866a-39c774e1c708",
+      "claim_id": "C5",
+      "claim": "CIN-evoked DA release in behaving animals showed no indication of short-term depression or receptor desensitization.",
+      "claim_type": "EXPLICIT",
+      "source": "CIN stimulation rapidly evoked DA release, and in contrast to slice preparations, this DA release showed no indication of short-term depression or receptor desensitization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data comparing in vivo results to slice preparations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:00:37.207484Z"
+    },
+    {
+      "id": "00777b04-300a-421b-ab8f-d844ae371ec2",
+      "content_id": "03b9b160-b819-4388-866a-39c774e1c708",
+      "claim_id": "C6",
+      "claim": "The sound of unexpected food delivery evoked a brief joint increase in CIN population activity and DA release.",
+      "claim_type": "EXPLICIT",
+      "source": "The sound of unexpected food delivery evoked a brief joint increase in CIN population activity and DA release, with a second joint increase as rats approached the food.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from simultaneous recording of CIN activity and DA release.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:00:37.207484Z"
+    },
+    {
+      "id": "2f42ab73-39cb-4036-96e7-2273d285e651",
+      "content_id": "03b9b160-b819-4388-866a-39c774e1c708",
+      "claim_id": "C7",
+      "claim": "A second joint increase in CIN activity and DA release occurred as rats approached the food.",
+      "claim_type": "EXPLICIT",
+      "source": "The sound of unexpected food delivery evoked a brief joint increase in CIN population activity and DA release, with a second joint increase as rats approached the food.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from simultaneous recording during food approach behavior.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:00:37.207484Z"
+    },
+    {
+      "id": "af15618a-4bd1-4ad3-9239-8ffd5870e1e9",
+      "content_id": "03b9b160-b819-4388-866a-39c774e1c708",
+      "claim_id": "C8",
+      "claim": "Fast ramps in CIN activity were observed during approach behaviors to start the trial or to collect rewards in an operant task.",
+      "claim_type": "EXPLICIT",
+      "source": "In an operant task, we observed fast ramps in CIN activity during approach behaviors, either to start the trial or to collect rewards.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from CIN activity recordings during operant behavior.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:00:37.207484Z"
+    },
+    {
+      "id": "6a7b97fb-3f0c-46f0-8f1c-d40606338803",
+      "content_id": "03b9b160-b819-4388-866a-39c774e1c708",
+      "claim_id": "C9",
+      "claim": "CIN ramps co-occurred with DA release ramps without corresponding changes in the firing of lateral VTA DA neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "These CIN ramps co-occurred with DA release ramps, without corresponding changes in the firing of lateral VTA DA neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data comparing CIN activity, DA release, and VTA DA neuron firing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:00:37.207484Z"
+    },
+    {
+      "id": "3eb985d5-6334-4e67-8536-13e5fce84a1f",
+      "content_id": "03b9b160-b819-4388-866a-39c774e1c708",
+      "claim_id": "C10",
+      "claim": "Local NAc infusion of DH\u03b2E, a selective antagonist of \u03b22* nicotinic receptors, dose-dependently interfered with motivated approach decisions.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we examined the effects of blocking CIN influence over DA release through local NAc infusion of DH\u03b2E, a selective antagonist of \u03b22* nicotinic receptors. DH\u03b2E dose-dependently interfered with motivated approach decisions, mimicking the effects of a DA antagonist.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from pharmacological manipulation experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:00:37.207484Z"
+    },
+    {
+      "id": "71f2165a-2637-4a52-abf7-5c5badd364e7",
+      "content_id": "03b9b160-b819-4388-866a-39c774e1c708",
+      "claim_id": "C11",
+      "claim": "DH\u03b2E effects on motivated approach decisions mimicked the effects of a DA antagonist.",
+      "claim_type": "EXPLICIT",
+      "source": "DH\u03b2E dose-dependently interfered with motivated approach decisions, mimicking the effects of a DA antagonist.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data comparing DH\u03b2E and DA antagonist effects.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:00:37.207484Z"
+    },
+    {
+      "id": "9721f0a3-e2d1-49ba-9a9e-44738228be15",
+      "content_id": "03b9b160-b819-4388-866a-39c774e1c708",
+      "claim_id": "C12",
+      "claim": "Deciding when work for rewards is worthwhile is an essential aspect of adaptive behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "Obtaining rewards typically takes work: time-consuming sequences of unrewarded actions before the reward is reached. Deciding when such work is worthwhile is an essential aspect of adaptive behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about behavioral principles based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:00:37.207484Z"
+    },
+    {
+      "id": "2a5557af-4580-40e3-9fab-9738160ca4a8",
+      "content_id": "03b9b160-b819-4388-866a-39c774e1c708",
+      "claim_id": "C13",
+      "claim": "Dopamine in the nucleus accumbens is a critical modulator of motivated decision-making, especially choices to approach potential rewards.",
+      "claim_type": "EXPLICIT",
+      "source": "Dopamine (DA) in the nucleus accumbens (NAc) is a critical modulator of such motivated decision-making (Berke, 2018; Salamone and Correa, 2012), especially choices to approach potential rewards (Ikemoto and Panksepp, 1999; Nicola, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:00:37.207484Z"
+    },
+    {
+      "id": "42b202c3-3a79-4c57-94dc-af6ffd72bcd3",
+      "content_id": "03b9b160-b819-4388-866a-39c774e1c708",
+      "claim_id": "C14",
+      "claim": "Burst firing of ventral tegmental area DA cell bodies is accompanied by a corresponding pulse of NAc DA release.",
+      "claim_type": "EXPLICIT",
+      "source": "Burst firing (or strong artificial stimulation) of ventral tegmental area (VTA) DA cell bodies is accompanied by a corresponding pulse of NAc DA release (Mohebi et al., 2019; Phillips et al., 2003; Suaud-Chagny et al., 1992).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:00:37.207484Z"
+    },
+    {
+      "id": "13288ce1-b720-40f7-989b-d3d3342c5255",
+      "content_id": "03b9b160-b819-4388-866a-39c774e1c708",
+      "claim_id": "C15",
+      "claim": "DA release pulses can encode reward prediction error (RPE), an important learning signal.",
+      "claim_type": "EXPLICIT",
+      "source": "This pulse can encode reward prediction error (RPE), an important learning signal (Schultz et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior research on reward prediction error.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:00:37.207484Z"
+    },
+    {
+      "id": "067e9b6f-db22-4642-8f01-d6e663454180",
+      "content_id": "03b9b160-b819-4388-866a-39c774e1c708",
+      "claim_id": "C16",
+      "claim": "Enhancing motivation by increasing reward availability does not change VTA DA cell firing rates.",
+      "claim_type": "EXPLICIT",
+      "source": "Enhancing motivation by increasing reward availability does not change VTA DA cell firing rates (Cohen et al., 2012; Mohebi et al., 2019), but does boost NAc Core DA levels, as measured on a time scale of minutes by microdialysis (Hamid et al., 2016; McCullough and Salamone, 1992).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:00:37.207484Z"
+    },
+    {
+      "id": "9ad89e47-d679-40af-afdd-df77a8a386e4",
+      "content_id": "03b9b160-b819-4388-866a-39c774e1c708",
+      "claim_id": "C17",
+      "claim": "Enhancing motivation by increasing reward availability boosts NAc Core DA levels, as measured on a time scale of minutes by microdialysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Enhancing motivation by increasing reward availability does not change VTA DA cell firing rates (Cohen et al., 2012; Mohebi et al., 2019), but does boost NAc Core DA levels, as measured on a time scale of minutes by microdialysis (Hamid et al., 2016; McCullough and Salamone, 1992).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:00:37.207484Z"
+    },
+    {
+      "id": "fa73ca69-5d9f-4756-ba0d-4c7bd377053b",
+      "content_id": "03b9b160-b819-4388-866a-39c774e1c708",
+      "claim_id": "C18",
+      "claim": "Many groups have reported ramps in NAc DA as animals approach rewards on time scales of seconds.",
+      "claim_type": "EXPLICIT",
+      "source": "On faster time scales (seconds), many groups have reported ramps in NAc DA as animals approach rewards (Hamid et al., 2016; Howe et al., 2013; Roitman et al., 2004; Wassum et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to multiple prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:00:37.207484Z"
+    },
+    {
+      "id": "55454754-5c17-49e1-8376-0354a6cfc88c",
+      "content_id": "03b9b160-b819-4388-866a-39c774e1c708",
+      "claim_id": "C19",
+      "claim": "DA ramps during approach may reflect discounted estimates of future reward (value), a useful motivational signal.",
+      "claim_type": "EXPLICIT",
+      "source": "These ramps may reflect discounted estimates of future reward (value), a useful motivational signal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the functional significance of DA ramps.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:00:37.207484Z"
+    },
+    {
+      "id": "0fcbe8c1-6252-4055-a84e-d44841c3e72e",
+      "content_id": "03b9b160-b819-4388-866a-39c774e1c708",
+      "claim_id": "C20",
+      "claim": "No evidence was found for corresponding ramps in spiking rate among identified DA cells in the lateral VTA during approach behaviors.",
+      "claim_type": "EXPLICIT",
+      "source": "Yet we found no evidence for corresponding ramps in spiking rate among identified DA cells in the lateral VTA (Mohebi et al., 2019), which provide the major DA input to NAc Core (Breton et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior research by the authors and others.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:00:37.207484Z"
+    },
+    {
+      "id": "93346e39-40c2-4da7-b75a-ad25b4485c5d",
+      "content_id": "03b9b160-b819-4388-866a-39c774e1c708",
+      "claim_id": "C21",
+      "claim": "Lateral VTA provides the major DA input to NAc Core.",
+      "claim_type": "EXPLICIT",
+      "source": "Yet we found no evidence for corresponding ramps in spiking rate among identified DA cells in the lateral VTA (Mohebi et al., 2019), which provide the major DA input to NAc Core (Breton et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:00:37.207484Z"
+    },
+    {
+      "id": "a2bdfec8-7a6b-4dd4-afa7-db65d0cffde7",
+      "content_id": "03b9b160-b819-4388-866a-39c774e1c708",
+      "claim_id": "C22",
+      "claim": "Cholinergic interneurons constitute only 1\u20132% of striatal neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Prominent among these are cholinergic interneurons (CINs) which, despite constituting only 1\u20132% of striatal neurons, provide a very dense network of fibers releasing acetylcholine (ACh) intermeshed with the DA axon network (Descarries et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:00:37.207484Z"
+    },
+    {
+      "id": "5c91fd42-8089-43a2-82b2-1a2007df223e",
+      "content_id": "03b9b160-b819-4388-866a-39c774e1c708",
+      "claim_id": "C23",
+      "claim": "Cholinergic interneurons provide a very dense network of fibers releasing acetylcholine intermeshed with the DA axon network.",
+      "claim_type": "EXPLICIT",
+      "source": "Prominent among these are cholinergic interneurons (CINs) which, despite constituting only 1\u20132% of striatal neurons, provide a very dense network of fibers releasing acetylcholine (ACh) intermeshed with the DA axon network (Descarries et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:00:37.207484Z"
+    },
+    {
+      "id": "d96b6c78-2e26-4cf4-ae38-ff87989675d7",
+      "content_id": "03b9b160-b819-4388-866a-39c774e1c708",
+      "claim_id": "C24",
+      "claim": "DA axons possess nicotinic ACh receptors that specifically contain the \u03b22 subunit (\u03b22*).",
+      "claim_type": "EXPLICIT",
+      "source": "DA axons possess nicotinic ACh receptors (nAChRs) that specifically contain the \u03b22 subunit (\u03b22*; Jones et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:00:37.207484Z"
+    },
+    {
+      "id": "80933294-5050-4a85-9271-73ee8f435578",
+      "content_id": "03b9b160-b819-4388-866a-39c774e1c708",
+      "claim_id": "C25",
+      "claim": "Activation of nAChRs is sufficient to locally evoke action potentials in DA axons and consequent DA release, even in the absence of DA cell bodies.",
+      "claim_type": "EXPLICIT",
+      "source": "Activation of nAChRs is sufficient to locally evoke action potentials in DA axons, and consequent DA release, even in the absence of DA cell bodies (Liu et al., 2022; Threlfell et al., 2012; Cachope and Cheer, 2014; Zhou et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:00:37.207484Z"
+    },
+    {
+      "id": "806f668f-a5ea-42e5-af77-26112b17140a",
+      "content_id": "03b9b160-b819-4388-866a-39c774e1c708",
+      "claim_id": "C26",
+      "claim": "Slice studies suggest that DA release is evoked only by highly synchronous activation of multiple CINs.",
+      "claim_type": "EXPLICIT",
+      "source": "Slice studies suggest that DA release is evoked only by highly synchronous activation of multiple CINs (Threlfell et al., 2012), as might occur in response to a salient cue (Kimura et al., 1984).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:00:37.207484Z"
+    },
+    {
+      "id": "0bff57c6-7012-4321-9f2d-638b0357f1a8",
+      "content_id": "03b9b160-b819-4388-866a-39c774e1c708",
+      "claim_id": "C27",
+      "claim": "DA release in slices shows a lack of summation to repetitive CIN stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, DA release in slices shows a lack of summation to repetitive CIN stimulation (Threlfell et al., 2012) and strong paired-pulse depression (Cachope et al., 2012; Wang et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:00:37.207484Z"
+    },
+    {
+      "id": "fd33d0b6-3886-46e9-a220-be5f8c0e04a8",
+      "content_id": "03b9b160-b819-4388-866a-39c774e1c708",
+      "claim_id": "C28",
+      "claim": "DA release in slices shows strong paired-pulse depression.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, DA release in slices shows a lack of summation to repetitive CIN stimulation (Threlfell et al., 2012) and strong paired-pulse depression (Cachope et al., 2012; Wang et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:00:37.207484Z"
+    },
+    {
+      "id": "e6ee242d-57e0-43aa-b2b6-c13f4268bd41",
+      "content_id": "03b9b160-b819-4388-866a-39c774e1c708",
+      "claim_id": "C29",
+      "claim": "The lack of summation and paired-pulse depression in slices is apparently due to rapid desensitization of nAChRs.",
+      "claim_type": "EXPLICIT",
+      "source": "This is apparently due to rapid desensitization of nAChRs (Giniatullin et al., 2005; Quick and Lester, 2002) and feedback inhibition of CINs via DA D2 receptors (Shin et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research and represents an inference about mechanisms.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:00:37.207484Z"
+    },
+    {
+      "id": "07558bc3-ed5f-4a0f-b9fc-c525f27d2516",
+      "content_id": "03b9b160-b819-4388-866a-39c774e1c708",
+      "claim_id": "C30",
+      "claim": "The lack of summation and paired-pulse depression in slices is apparently due to feedback inhibition of CINs via DA D2 receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "This is apparently due to rapid desensitization of nAChRs (Giniatullin et al., 2005; Quick and Lester, 2002) and feedback inhibition of CINs via DA D2 receptors (Shin et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research and represents an inference about mechanisms.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:00:37.207484Z"
+    },
+    {
+      "id": "a97054f5-89bc-4aef-ae80-abbb83caf35b",
+      "content_id": "03b9b160-b819-4388-866a-39c774e1c708",
+      "claim_id": "C31",
+      "claim": "Suppression of CINs has been reported to produce a depression-like state in some behavioral tests.",
+      "claim_type": "EXPLICIT",
+      "source": "Suppression of CINs has been reported to produce a depression-like state in some behavioral tests (Warner-Schmidt et al., 2012) but to boost motivation in others (Collins et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:00:37.207484Z"
+    },
+    {
+      "id": "14e20abb-b868-41bd-8487-32c5c5726569",
+      "content_id": "03b9b160-b819-4388-866a-39c774e1c708",
+      "claim_id": "C32",
+      "claim": "Suppression of CINs has been reported to boost motivation in some behavioral tests.",
+      "claim_type": "EXPLICIT",
+      "source": "Suppression of CINs has been reported to produce a depression-like state in some behavioral tests (Warner-Schmidt et al., 2012) but to boost motivation in others (Collins et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:00:37.207484Z"
+    },
+    {
+      "id": "aa5e0428-d51b-4dbf-8d71-9eb8a24f6955",
+      "content_id": "03b9b160-b819-4388-866a-39c774e1c708",
+      "claim_id": "C33",
+      "claim": "CIN-evoked DA release was maintained as long as stimulation was applied (up to 4 s).",
+      "claim_type": "EXPLICIT",
+      "source": "CIN stimulation immediately increased the DA signal, and this increase was maintained as long as stimulation was applied (up to 4 s; Figure 1b and c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1b and c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:00:37.207484Z"
+    },
+    {
+      "id": "ad897790-76c8-4358-a8a3-b15d14351be9",
+      "content_id": "03b9b160-b819-4388-866a-39c774e1c708",
+      "claim_id": "C34",
+      "claim": "The amplitude of DA release scaled with the duration of laser pulses.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to results in slices (Threlfell et al., 2012), the amplitude of DA release scaled with the duration and frequency of laser pulses (Figure 1d and e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1d and e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:00:37.207484Z"
+    },
+    {
+      "id": "5a6f994e-b1b1-4698-8571-16b9e4c7c210",
+      "content_id": "03b9b160-b819-4388-866a-39c774e1c708",
+      "claim_id": "C35",
+      "claim": "The amplitude of DA release scaled with the frequency of laser pulses.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to results in slices (Threlfell et al., 2012), the amplitude of DA release scaled with the duration and frequency of laser pulses (Figure 1d and e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1d and e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:00:37.207484Z"
+    },
+    {
+      "id": "f935ca70-f5bd-4cfa-aa6b-c3972d590596",
+      "content_id": "03b9b160-b819-4388-866a-39c774e1c708",
+      "claim_id": "C36",
+      "claim": "CIN-evoked DA release remained robust to the second of a pair of pulses across a range of inter-pulse intervals.",
+      "claim_type": "EXPLICIT",
+      "source": "CIN-evoked DA release remained robust to the second of a pair of pulses across a range of inter-pulse intervals (Figure 1f), indicating that neither the directly evoked ACh release nor the consequent DA release show rapid synaptic depression in behaving animals (see also Collins et al., 2019 for related results with choline measurements).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:00:37.207484Z"
+    },
+    {
+      "id": "207e12b8-e440-4026-9a32-e77df1c181fd",
+      "content_id": "03b9b160-b819-4388-866a-39c774e1c708",
+      "claim_id": "C37",
+      "claim": "Neither the directly evoked ACh release nor the consequent DA release show rapid synaptic depression in behaving animals.",
+      "claim_type": "EXPLICIT",
+      "source": "CIN-evoked DA release remained robust to the second of a pair of pulses across a range of inter-pulse intervals (Figure 1f), indicating that neither the directly evoked ACh release nor the consequent DA release show rapid synaptic depression in behaving animals (see also Collins et al., 2019 for related results with choline measurements).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is inferred from the paired-pulse data and supported by citation to related research.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:00:37.207484Z"
+    },
+    {
+      "id": "0124bb3a-0fae-4c73-bb8f-0372a40e6254",
+      "content_id": "03b9b160-b819-4388-866a-39c774e1c708",
+      "claim_id": "C38",
+      "claim": "Regardless of stimulation frequency, the ratio between observed and predicted peak DA response remained close to 1.",
+      "claim_type": "EXPLICIT",
+      "source": "Regardless of stimulation frequency, the ratio between observed and predicted peak response remained close to 1 (Figure 1\u2014figure supplement 1), confirming the absence of short-term depression in CIN-evoked DA release.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:00:37.207484Z"
+    },
+    {
+      "id": "95ca2e0f-627c-4d85-8718-f17f51ca5e9a",
+      "content_id": "03b9b160-b819-4388-866a-39c774e1c708",
+      "claim_id": "C39",
+      "claim": "The magnitude of DA release depends on the pulse width.",
+      "claim_type": "EXPLICIT",
+      "source": "The magnitude of DA release depends on the pulse width (ANOVA: F(3,12) = 5.52, p=0.013).",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This claim is supported by statistical analysis of experimental data shown in Figure 1d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:00:37.207484Z"
+    },
+    {
+      "id": "82082842-ea22-4cf1-a3e6-7420660996d4",
+      "content_id": "03b9b160-b819-4388-866a-39c774e1c708",
+      "claim_id": "C40",
+      "claim": "The magnitude of DA release depends on the frequency of stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "The magnitude of DA release depends on the frequency of stimulation (bottom, ANOVA: F(3,12) = 9.17, p=0.002).",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This claim is supported by statistical analysis of experimental data shown in Figure 1e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:00:37.207484Z"
+    },
+    {
+      "id": "9a168282-cb34-4710-aec3-581bf5b71378",
+      "content_id": "03b9b160-b819-4388-866a-39c774e1c708",
+      "claim_id": "C41",
+      "claim": "There was no statistically significant interaction between pulse order and delay between two pulses in paired-pulse testing.",
+      "claim_type": "EXPLICIT",
+      "source": "A two-way ANOVA revealed that there was no statistically significant interaction between the pulse order (first or second) and the delay between two pulses (F(2,6) = 1.05, p=0.35), and there were no main effects of inter-pulse interval (p=0.47) or pulse order (p=0.06).",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This claim is supported by statistical analysis of experimental data shown in Figure 1f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:00:37.207484Z"
+    },
+    {
+      "id": "a9fcc1a6-0a10-4d24-bbe8-05efef0a8806",
+      "content_id": "03b9b160-b819-4388-866a-39c774e1c708",
+      "claim_id": "C42",
+      "claim": "CIN activity and DA release showed distinct time courses.",
+      "claim_type": "EXPLICIT",
+      "source": "CIN activity and DA release showed distinct time courses (Figure 2b), but both showed rapid increases in response to the unexpected sound of reward delivery (food hopper 'Click,' occurring at random intervals drawn from a uniform distribution of 15\u201330 s).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:00:37.207484Z"
+    },
+    {
+      "id": "0c439443-6dbd-46be-bfdd-2a0f70db1f32",
+      "content_id": "03b9b160-b819-4388-866a-39c774e1c708",
+      "claim_id": "C43",
+      "claim": "Both CIN GCaMP and DA release rapidly ramped up as rats approached the food port.",
+      "claim_type": "EXPLICIT",
+      "source": "Aligning signals on food port entry revealed that both CIN GCaMP and DA release rapidly ramped up as rats approached the food port (Figure 2c and d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2c and d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:00:37.207484Z"
+    },
+    {
+      "id": "16e33446-227a-4b18-a663-a0b421d8f0c1",
+      "content_id": "03b9b160-b819-4388-866a-39c774e1c708",
+      "claim_id": "C44",
+      "claim": "Peak responses of CIN activity and DA fluctuations to hopper click significantly differed from peak values aligned to random time points in the task.",
+      "claim_type": "EXPLICIT",
+      "source": "Top: average traces showing CIN activity and DA fluctuations aligned to the hopper click, peak responses (within 1 s from click) significantly differed from peak values aligned to random time points in the task (n = 1000 shuffles).",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This claim is supported by statistical analysis of experimental data shown in Figure 2d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:00:37.207484Z"
+    },
+    {
+      "id": "bb24345f-e8f2-47de-a356-ceb999275f5c",
+      "content_id": "03b9b160-b819-4388-866a-39c774e1c708",
+      "claim_id": "C45",
+      "claim": "The slope of CIN and DA signal ramps during food-port approach was significantly different from ramp slopes aligned to random time points throughout the session.",
+      "claim_type": "EXPLICIT",
+      "source": "Bottom: the slope of the signal ramps was significantly different from ramp slopes aligned to random time points throughout the session. The slope was determined by fitting a line that connects the maximum and minimum signal, 0.5 s before the food-port entry.",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This claim is supported by statistical analysis of experimental data shown in Figure 2d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:00:37.207484Z"
+    },
+    {
+      "id": "449f05bb-d64d-4fa6-963c-a89896f8e91f",
+      "content_id": "03b9b160-b819-4388-866a-39c774e1c708",
+      "claim_id": "C46",
+      "claim": "None of the optogenetically identified lateral VTA DA cells (0/29) showed significant ramps preceding center-in.",
+      "claim_type": "EXPLICIT",
+      "source": "None of the optogenetically identified lateral VTA DA cells (0/29) showed significant ramps preceding center-in, but ramps were reliably observed in both DA release (10/10 fiber placements in seven rats) and CIN GCaMP (7/8 fiber placements, five rats).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data comparing VTA DA cell firing, DA release, and CIN activity.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:00:37.207484Z"
+    },
+    {
+      "id": "15c0d4a1-d6b5-4dd7-8ec9-48926b1584f6",
+      "content_id": "03b9b160-b819-4388-866a-39c774e1c708",
+      "claim_id": "C47",
+      "claim": "Ramps preceding center-in were reliably observed in DA release (10/10 fiber placements in seven rats).",
+      "claim_type": "EXPLICIT",
+      "source": "None of the optogenetically identified lateral VTA DA cells (0/29) showed significant ramps preceding center-in, but ramps were reliably observed in both DA release (10/10 fiber placements in seven rats) and CIN GCaMP (7/8 fiber placements, five rats).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from DA release recordings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:00:37.207484Z"
+    },
+    {
+      "id": "070d6ecf-604b-46ea-98d2-cecbdcbb3501",
+      "content_id": "03b9b160-b819-4388-866a-39c774e1c708",
+      "claim_id": "C48",
+      "claim": "Ramps preceding center-in were reliably observed in CIN GCaMP (7/8 fiber placements, five rats).",
+      "claim_type": "EXPLICIT",
+      "source": "None of the optogenetically identified lateral VTA DA cells (0/29) showed significant ramps preceding center-in, but ramps were reliably observed in both DA release (10/10 fiber placements in seven rats) and CIN GCaMP (7/8 fiber placements, five rats).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from CIN activity recordings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:00:37.207484Z"
+    },
+    {
+      "id": "0533ca6e-1a9d-4ae9-b257-5698065137ef",
+      "content_id": "03b9b160-b819-4388-866a-39c774e1c708",
+      "claim_id": "C49",
+      "claim": "For the food-port-in event, significant ramping up was observed for none of the 29 DA cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Repeating the same analysis for the food-port-in event produced significant ramping up for none of the 29 DA cells (one ramped down instead), but virtually all recordings of DA release (9/10) and CIN GCaMP (8/8) recordings.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from VTA DA cell recordings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:00:37.207484Z"
+    },
+    {
+      "id": "16bfdc0b-7aa8-48e6-86a7-fefa4b5068ea",
+      "content_id": "03b9b160-b819-4388-866a-39c774e1c708",
+      "claim_id": "C50",
+      "claim": "For the food-port-in event, virtually all recordings of DA release (9/10) showed significant ramping up.",
+      "claim_type": "EXPLICIT",
+      "source": "Repeating the same analysis for the food-port-in event produced significant ramping up for none of the 29 DA cells (one ramped down instead), but virtually all recordings of DA release (9/10) and CIN GCaMP (8/8) recordings.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from DA release recordings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:00:37.207484Z"
+    },
+    {
+      "id": "ec24477d-0f74-4713-bd51-46f4e8cfca8e",
+      "content_id": "03b9b160-b819-4388-866a-39c774e1c708",
+      "claim_id": "C51",
+      "claim": "For the food-port-in event, all CIN GCaMP recordings (8/8) showed significant ramping up.",
+      "claim_type": "EXPLICIT",
+      "source": "Repeating the same analysis for the food-port-in event produced significant ramping up for none of the 29 DA cells (one ramped down instead), but virtually all recordings of DA release (9/10) and CIN GCaMP (8/8) recordings.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from CIN activity recordings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:00:37.207484Z"
+    },
+    {
+      "id": "085a55cc-3476-454d-9c02-f420fd69b3e9",
+      "content_id": "03b9b160-b819-4388-866a-39c774e1c708",
+      "claim_id": "C52",
+      "claim": "The observations are consistent with the hypothesis that ramps in NAc DA release are sculpted via CIN activity rather than DA cell firing.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations are consistent with the hypothesis that ramps in NAc DA release are sculpted via CIN activity rather than DA cell firing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the experimental data comparing DA cell firing, DA release, and CIN activity.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:00:37.207484Z"
+    },
+    {
+      "id": "9ce45e53-af7e-4da0-bfbc-36a2e35a3a0f",
+      "content_id": "03b9b160-b819-4388-866a-39c774e1c708",
+      "claim_id": "C53",
+      "claim": "Blockade of \u03b22* nAChRs reduced the number of completed trials in a dose-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Blockade of \u03b22* nAChRs reduced the number of completed trials in a dose-dependent manner, similarly to (though not as strongly as) FLU (Figure 4b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data from pharmacological manipulation shown in Figure 4b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:00:37.207484Z"
+    },
+    {
+      "id": "3ac8bd82-dc25-4fdc-8e35-906619ebbb5b",
+      "content_id": "03b9b160-b819-4388-866a-39c774e1c708",
+      "claim_id": "C54",
+      "claim": "Both FLU and the higher dose of DH\u03b2E increased the latency to initiate a trial.",
+      "claim_type": "EXPLICIT",
+      "source": "Both FLU and the higher dose of DH\u03b2E increased the latency to initiate a trial (Figure 4c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data from pharmacological manipulation shown in Figure 4c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:00:37.207484Z"
+    },
+    {
+      "id": "a0d03abd-63ad-4d81-b754-655fa65fed40",
+      "content_id": "03b9b160-b819-4388-866a-39c774e1c708",
+      "claim_id": "C55",
+      "claim": "Both the higher dose of DH\u03b2E and FLU decreased the instantaneous likelihood (hazard rate) of decisions to approach the center port, shortly after the center port became illuminated.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, both the higher dose of DH\u03b2E and FLU decreased the instantaneous likelihood (hazard rate) of decisions to approach the center port, shortly after the center port became illuminated (Figure 4d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data from pharmacological manipulation shown in Figure 4d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:00:37.207484Z"
+    },
+    {
+      "id": "194bf0a4-5ba3-4f5f-b7a5-c03f876ca1cd",
+      "content_id": "03b9b160-b819-4388-866a-39c774e1c708",
+      "claim_id": "C56",
+      "claim": "The observations are consistent with the prior finding that bidirectional optogenetic manipulations of dopamine affect approach hazard rates during the same period.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations are consistent with our prior finding that bidirectional optogenetic manipulations of dopamine affect approach hazard rates during the same period (Hamid et al., 2016) and support the hypothesis that nAChR-mediated DA release in NAc is involved in the motivation to work.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior research and inference from current data.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:00:37.207484Z"
+    },
+    {
+      "id": "19304698-1d08-4c61-b15a-badbd28dfddd",
+      "content_id": "03b9b160-b819-4388-866a-39c774e1c708",
+      "claim_id": "C57",
+      "claim": "nAChR-mediated DA release in NAc is involved in the motivation to work.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations are consistent with our prior finding that bidirectional optogenetic manipulations of dopamine affect approach hazard rates during the same period (Hamid et al., 2016) and support the hypothesis that nAChR-mediated DA release in NAc is involved in the motivation to work.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis supported by the experimental data from pharmacological manipulations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:00:37.207484Z"
+    },
+    {
+      "id": "05c7d8c0-f65f-49a5-93dc-f2ccf4bd637e",
+      "content_id": "03b9b160-b819-4388-866a-39c774e1c708",
+      "claim_id": "C58",
+      "claim": "Rats treated with DH\u03b2E-30 \u00b5g completed fewer trials compared to the vehicle session.",
+      "claim_type": "EXPLICIT",
+      "source": "Rats treated with DH\u03b2E-30 \u00b5g and FLU completed fewer trials compared to the vehicle session (p<0.013, p<1 \u00d7 10\u20139, respectively).",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This claim is supported by statistical analysis of experimental data shown in Figure 4b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:00:37.207484Z"
+    },
+    {
+      "id": "0f9fb595-d01b-4039-9fe8-71b084c2c8fc",
+      "content_id": "03b9b160-b819-4388-866a-39c774e1c708",
+      "claim_id": "C59",
+      "claim": "Rats treated with FLU completed fewer trials compared to the vehicle session.",
+      "claim_type": "EXPLICIT",
+      "source": "Rats treated with DH\u03b2E-30 \u00b5g and FLU completed fewer trials compared to the vehicle session (p<0.013, p<1 \u00d7 10\u20139, respectively).",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This claim is supported by statistical analysis of experimental data shown in Figure 4b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:00:37.207484Z"
+    },
+    {
+      "id": "2e7ad6a7-a7a9-4c75-89bf-966cc5449abd",
+      "content_id": "03b9b160-b819-4388-866a-39c774e1c708",
+      "claim_id": "C60",
+      "claim": "DH\u03b2E-15\u00b5g treatment caused a trend toward fewer completed trials.",
+      "claim_type": "EXPLICIT",
+      "source": "DH\u03b2E-15\u00b5g treatment caused a trend toward fewer completed trials (p=0.074)",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This claim is supported by statistical analysis of experimental data shown in Figure 4b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:00:37.207484Z"
+    },
+    {
+      "id": "b0d1133b-0d6c-462a-92d8-0473b840cc85",
+      "content_id": "03b9b160-b819-4388-866a-39c774e1c708",
+      "claim_id": "C61",
+      "claim": "Blocking nicotinic transmission decreases the likelihood of a self-initiated approach (between 1 and 2 s from light-on) in a dose-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "The hazard rate of long latencies for different condition treatments demonstrates that blocking nicotinic transmission decreases the likelihood of a self-initiated approach (between 1 and 2 s from light-on) in a dose-dependent manner.",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:00:37.207484Z"
+    },
+    {
+      "id": "3977aba4-84ea-4027-bd77-af3cf7ac0049",
+      "content_id": "03b9b160-b819-4388-866a-39c774e1c708",
+      "claim_id": "C62",
+      "claim": "Local regulation of striatal DA by ACh has long been established in brain slices.",
+      "claim_type": "EXPLICIT",
+      "source": "Local regulation of striatal DA by ACh has long been established in brain slices (Giorguieff et al., 1976).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:00:37.207484Z"
+    },
+    {
+      "id": "ff9a914f-dc5b-4ec4-85ba-f4ec76929d9a",
+      "content_id": "03b9b160-b819-4388-866a-39c774e1c708",
+      "claim_id": "C63",
+      "claim": "Cholinergic modulation of DA release has not typically been incorporated into functional accounts of DA dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "As a result, cholinergic modulation of DA release has not typically been incorporated into functional accounts of DA dynamics (Berke, 2018), which have instead emphasized the faithful transmission of RPEs encoded in DA cell spiking.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation and represents a characterization of the field.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:00:37.207484Z"
+    },
+    {
+      "id": "da4c5dcf-a1b6-46c0-bf32-2c2745daeaee",
+      "content_id": "03b9b160-b819-4388-866a-39c774e1c708",
+      "claim_id": "C64",
+      "claim": "Functional accounts of DA dynamics have emphasized the faithful transmission of RPEs encoded in DA cell spiking.",
+      "claim_type": "EXPLICIT",
+      "source": "As a result, cholinergic modulation of DA release has not typically been incorporated into functional accounts of DA dynamics (Berke, 2018), which have instead emphasized the faithful transmission of RPEs encoded in DA cell spiking.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation and represents a characterization of the field.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:00:37.207484Z"
+    },
+    {
+      "id": "ef0f1446-966e-4180-9848-945cd4dfa918",
+      "content_id": "03b9b160-b819-4388-866a-39c774e1c708",
+      "claim_id": "C65",
+      "claim": "One possibility for the discrepancy between ex vivo and in vivo experiments involves the very different conditions for acetylcholinesterase (AChE).",
+      "claim_type": "EXPLICIT",
+      "source": "What can explain the discrepancy between ex vivo and in vivo experiments? One possibility involves the very different conditions for acetylcholinesterase (AChE), an enzyme that provides critical constraints over ACh signaling dynamics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation for the observed differences between slice and in vivo experiments.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:00:37.207484Z"
+    },
+    {
+      "id": "ab0709f1-cbd8-48c0-85a3-f3c429498fa3",
+      "content_id": "03b9b160-b819-4388-866a-39c774e1c708",
+      "claim_id": "C66",
+      "claim": "AChE functions very rapidly, almost approaching the rate of ACh diffusion.",
+      "claim_type": "EXPLICIT",
+      "source": "AChE functions very rapidly, almost approaching the rate of ACh diffusion (Dvir et al., 2010; Quinn, 1987), but this rate will be slower at the lower temperature of slice experiments compared to whole animals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:00:37.207484Z"
+    },
+    {
+      "id": "4b62b31b-c339-49bc-a39b-a32791cad87a",
+      "content_id": "03b9b160-b819-4388-866a-39c774e1c708",
+      "claim_id": "C67",
+      "claim": "AChE function rate will be slower at the lower temperature of slice experiments compared to whole animals.",
+      "claim_type": "EXPLICIT",
+      "source": "AChE functions very rapidly, almost approaching the rate of ACh diffusion (Dvir et al., 2010; Quinn, 1987), but this rate will be slower at the lower temperature of slice experiments compared to whole animals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on known temperature effects on enzyme function.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:00:37.207484Z"
+    },
+    {
+      "id": "d2e70d90-598e-4ced-bac3-c96e31511590",
+      "content_id": "03b9b160-b819-4388-866a-39c774e1c708",
+      "claim_id": "C68",
+      "claim": "AChE is soluble in the extracellular matrix and can be partly washed away in the slice preparation.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, AChE is soluble in the extracellular matrix (Sirvi\u00f6 et al., 1989), and so can be partly washed away in the slice preparation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior research and inference about slice preparation effects.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:00:37.207484Z"
+    },
+    {
+      "id": "11aae52b-c360-4056-88b7-c772c26cc39f",
+      "content_id": "03b9b160-b819-4388-866a-39c774e1c708",
+      "claim_id": "C69",
+      "claim": "Released ACh in the slice may escape degradation in the synaptic space for longer than normal, and thereby provoke desensitization of a larger proportion of nAChRs.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, released ACh in the slice may escape degradation in the synaptic space for longer than normal, and thereby provoke desensitization of a larger proportion of nAChRs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation for the observed differences between slice and in vivo experiments.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:00:37.207484Z"
+    },
+    {
+      "id": "c31fe784-441f-45be-a312-b910d3c079c5",
+      "content_id": "03b9b160-b819-4388-866a-39c774e1c708",
+      "claim_id": "C70",
+      "claim": "One of the most prominent reported features of striatal CINs is a reliable pause in response to reward-predicting cues, in contrast to DA release.",
+      "claim_type": "EXPLICIT",
+      "source": "One of the most prominent reported features of striatal CINs is a reliable pause in response to reward-predicting cues, in contrast to DA release (Morris et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:00:37.207484Z"
+    },
+    {
+      "id": "f4baf286-02ba-4879-88be-84b3044d23bc",
+      "content_id": "03b9b160-b819-4388-866a-39c774e1c708",
+      "claim_id": "C71",
+      "claim": "In NAc, both DA release and CIN activity increase rapidly in response to reward-predicting cues.",
+      "claim_type": "EXPLICIT",
+      "source": "However, at least in NAc we found that both DA release and CIN activity increase rapidly in response to such cues (see also Atallah et al., 2014; Howe et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from the current study and citations to related research.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:00:37.207484Z"
+    },
+    {
+      "id": "b6ee6ad9-be8b-4e87-8c6a-2be63389f3d0",
+      "content_id": "03b9b160-b819-4388-866a-39c774e1c708",
+      "claim_id": "C72",
+      "claim": "Bulk CIN GCaMP signals are at best an incomplete readout of either CIN firing or the spatiotemporal dynamics of ACh release.",
+      "claim_type": "EXPLICIT",
+      "source": "Of course, bulk CIN GCaMP signals are at best an incomplete readout of either CIN firing or the spatiotemporal dynamics of ACh release.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the limitations of the measurement technique based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:00:37.207484Z"
+    },
+    {
+      "id": "33726e9a-5af0-4d7f-8e15-6ba17fb447b4",
+      "content_id": "03b9b160-b819-4388-866a-39c774e1c708",
+      "claim_id": "C73",
+      "claim": "Imaging of CINs GCaMP in the dorsal striatum found a mismatch between signals at cell bodies and the rest of the field of view (considered to be neuropil).",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, imaging of CINs GCaMP in the dorsal striatum found a mismatch between signals at cell bodies and the rest of the field of view (considered to be neuropil; Rehani et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:00:37.207484Z"
+    },
+    {
+      "id": "82d7caf7-4208-4b63-8d5e-c81ea18ae1b6",
+      "content_id": "03b9b160-b819-4388-866a-39c774e1c708",
+      "claim_id": "C74",
+      "claim": "Understanding whether control of DA release via nAChRs directly reflects CIN firing will require more experiments adding either optogenetic tagging of CINs or high-resolution voltage imaging.",
+      "claim_type": "EXPLICIT",
+      "source": "Understanding whether control of DA release via nAChRs directly reflects CIN firing will require more experiments adding either optogenetic tagging of CINs (Duhne, 2022) or high-resolution voltage imaging (Piatkevich et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about future research directions based on current limitations.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:00:37.207484Z"
+    },
+    {
+      "id": "bbe770b1-095a-4614-843e-2fa2c89db2f8",
+      "content_id": "03b9b160-b819-4388-866a-39c774e1c708",
+      "claim_id": "C75",
+      "claim": "Some transient fluctuations in CIN activity evoke DA release but others do not.",
+      "claim_type": "EXPLICIT",
+      "source": "One related important direction for future studies is to understand why some transient fluctuations in CIN activity evoke DA release (Liu et al., 2022) but others do not (e.g., Figure 2b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by citation to prior research and observation from Figure 2b.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:00:37.207484Z"
+    },
+    {
+      "id": "0bc4eb93-421b-49e0-9ced-76634f3a276f",
+      "content_id": "03b9b160-b819-4388-866a-39c774e1c708",
+      "claim_id": "C76",
+      "claim": "The observation of correspondence between increasing ramps in NAc DA release and increasing NAc CIN activity supports the idea that CINs can drive behaviorally relevant DA release even in the absence of DA firing changes.",
+      "claim_type": "EXPLICIT",
+      "source": "In animals performing an operant task, we demonstrated a correspondence between increasing ramps in NAc DA release during motivated approach and increasing NAc CIN activity (measured with GCaMP), at times when VTA DA cell firing is not increasing. This observation supports the idea that CINs can drive behaviorally relevant DA release even in the absence of DA firing changes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the experimental data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:00:37.207484Z"
+    },
+    {
+      "id": "2ba70e81-3312-47af-966b-2cf16c5ae292",
+      "content_id": "03b9b160-b819-4388-866a-39c774e1c708",
+      "claim_id": "C77",
+      "claim": "Interfering with NAc \u03b22* nAChRs reduces the likelihood that rats perform the motivated approach behavior in the operant task.",
+      "claim_type": "EXPLICIT",
+      "source": "We further showed that, in the same task, interfering with NAc \u03b22* nAChRs reduces the likelihood that rats perform the motivated approach behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from pharmacological manipulation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:00:37.207484Z"
+    },
+    {
+      "id": "b126e5bb-4a51-4dda-970f-94637919f4ba",
+      "content_id": "03b9b160-b819-4388-866a-39c774e1c708",
+      "claim_id": "C78",
+      "claim": "The study did not causally establish that CINs are directly driving DA release, via \u03b22* nAChRs, at the specific moments of DA ramping during approach.",
+      "claim_type": "EXPLICIT",
+      "source": "However, one limitation of this study is that we did not causally establish that CINs are directly driving DA release, via \u03b22* nAChRs, at the specific moments of DA ramping during approach.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explicit acknowledgment of a limitation of the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:00:37.207484Z"
+    },
+    {
+      "id": "6ea49293-c642-4a99-82b2-fdbe494fa184",
+      "content_id": "03b9b160-b819-4388-866a-39c774e1c708",
+      "claim_id": "C79",
+      "claim": "If CINs tonically promote DA release, simple suppression of CINs could interfere with DA ramps during approach, even if CINs do not normally drive ramping.",
+      "claim_type": "EXPLICIT",
+      "source": "Designing a conclusive manipulation experiment is not trivial; for example, if CINs tonically promote DA release, simple suppression of CINs could interfere with DA ramps during approach, even if CINs do not normally drive ramping.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative consideration about experimental design challenges.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:00:37.207484Z"
+    },
+    {
+      "id": "ce6faf3a-0164-4ca9-b905-f936b8870473",
+      "content_id": "03b9b160-b819-4388-866a-39c774e1c708",
+      "claim_id": "C80",
+      "claim": "Increases in both (presumed) CIN activity and striatal DA release have been reported in conjunction with self-timed actions.",
+      "claim_type": "EXPLICIT",
+      "source": "Increases in both (presumed) CIN activity and striatal DA release have been reported in conjunction with self-timed actions (e.g., Lee et al., 2006; Hamilos et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:00:37.207484Z"
+    },
+    {
+      "id": "5fa1293e-9a9a-4856-a189-2180357ea189",
+      "content_id": "03b9b160-b819-4388-866a-39c774e1c708",
+      "claim_id": "C81",
+      "claim": "Prominent joint DA and CIN activity ramps were observed in longer-latency trials where rats are not simply reacting to the trial start light.",
+      "claim_type": "EXPLICIT",
+      "source": "This seems consistent with our observation of prominent joint DA and CIN activity ramps in longer-latency trials in our operant task, where rats are not simply reacting to the trial start light, but rather approaching at a variable time after its onset.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the experimental data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:00:37.207484Z"
+    },
+    {
+      "id": "fb9c2e13-ee65-4d38-a508-8ea32f284ff6",
+      "content_id": "03b9b160-b819-4388-866a-39c774e1c708",
+      "claim_id": "C82",
+      "claim": "Both DH\u03b2E and FLU particularly depressed approach behavior in the 1\u20133 s range after light onset, with the hazard rate returning to control levels by ~4 s.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, both DH\u03b2E and FLU particularly depressed approach behavior in the 1\u20133 s range after light onset, with the hazard rate returning to control levels by ~4 s (Figure 4d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:00:37.207484Z"
+    },
+    {
+      "id": "b05d583c-e17c-4d1e-97e3-4c4120fb0611",
+      "content_id": "03b9b160-b819-4388-866a-39c774e1c708",
+      "claim_id": "C83",
+      "claim": "The NAc joint ACh-DA mechanisms may be particularly involved in deciding whether it is worthwhile reorganizing ongoing behavior to respond to an external cue.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that the NAc joint ACh-DA mechanisms investigated here may be particularly involved in deciding whether it is worthwhile reorganizing ongoing behavior to respond to an external cue (Blazquez et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the functional significance of the findings, supported by citation.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:00:37.207484Z"
+    },
+    {
+      "id": "55e3aa6f-1270-40a3-b25f-48c16c35cfae",
+      "content_id": "03b9b160-b819-4388-866a-39c774e1c708",
+      "claim_id": "C84",
+      "claim": "CINs receive inputs from the basolateral amygdala that can supply motivational information and influence DA release.",
+      "claim_type": "EXPLICIT",
+      "source": "CINs receive inputs from a wide range of areas that can supply motivational information and influence DA release, including the basolateral amygdala (Floresco et al., 1998), parafascicular thalamus (Bradfield et al., 2013), frontal cortex (Kosillo et al., 2016), and long-range GABAergic subpopulations in the VTA (Al-Hasani et al., 2021; Brown et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:00:37.207484Z"
+    },
+    {
+      "id": "3a844509-875d-461b-a27a-3ae0d870c040",
+      "content_id": "03b9b160-b819-4388-866a-39c774e1c708",
+      "claim_id": "C85",
+      "claim": "CINs receive inputs from the parafascicular thalamus that can supply motivational information and influence DA release.",
+      "claim_type": "EXPLICIT",
+      "source": "CINs receive inputs from a wide range of areas that can supply motivational information and influence DA release, including the basolateral amygdala (Floresco et al., 1998), parafascicular thalamus (Bradfield et al., 2013), frontal cortex (Kosillo et al., 2016), and long-range GABAergic subpopulations in the VTA (Al-Hasani et al., 2021; Brown et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:00:37.207484Z"
+    },
+    {
+      "id": "d7d2d3fc-e122-4fe9-8386-3e6dab219826",
+      "content_id": "03b9b160-b819-4388-866a-39c774e1c708",
+      "claim_id": "C86",
+      "claim": "CINs receive inputs from the frontal cortex that can supply motivational information and influence DA release.",
+      "claim_type": "EXPLICIT",
+      "source": "CINs receive inputs from a wide range of areas that can supply motivational information and influence DA release, including the basolateral amygdala (Floresco et al., 1998), parafascicular thalamus (Bradfield et al., 2013), frontal cortex (Kosillo et al., 2016), and long-range GABAergic subpopulations in the VTA (Al-Hasani et al., 2021; Brown et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:00:37.207484Z"
+    },
+    {
+      "id": "bcf282a7-0587-4417-bfa9-4571c072c661",
+      "content_id": "03b9b160-b819-4388-866a-39c774e1c708",
+      "claim_id": "C87",
+      "claim": "CINs receive inputs from long-range GABAergic subpopulations in the VTA that can supply motivational information and influence DA release.",
+      "claim_type": "EXPLICIT",
+      "source": "CINs receive inputs from a wide range of areas that can supply motivational information and influence DA release, including the basolateral amygdala (Floresco et al., 1998), parafascicular thalamus (Bradfield et al., 2013), frontal cortex (Kosillo et al., 2016), and long-range GABAergic subpopulations in the VTA (Al-Hasani et al., 2021; Brown et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:00:37.207484Z"
+    },
+    {
+      "id": "1d167273-5188-4063-9616-03e088355979",
+      "content_id": "03b9b160-b819-4388-866a-39c774e1c708",
+      "claim_id": "C88",
+      "claim": "CINs sample the state of surrounding networks of striatal projection cells, allowing them to potentially extract useful decision variables.",
+      "claim_type": "EXPLICIT",
+      "source": "They also sample the state of surrounding networks of striatal projection cells, allowing them to potentially extract useful decision variables (Franklin and Frank, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior research and involves speculation about functional implications.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:00:37.207484Z"
+    },
+    {
+      "id": "b3b79dcf-4028-4d2d-9e96-3c780f96c09e",
+      "content_id": "03b9b160-b819-4388-866a-39c774e1c708",
+      "claim_id": "C89",
+      "claim": "ChAT-Cre Long-Evans rats (both male and female) were used in the study.",
+      "claim_type": "EXPLICIT",
+      "source": "ChAT-Cre, Long-Evans (male and female rats)",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This is stated in the Key resources table.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:00:37.207484Z"
+    },
+    {
+      "id": "18906149-b5f2-490c-ae6b-c0daf71e55b9",
+      "content_id": "03b9b160-b819-4388-866a-39c774e1c708",
+      "claim_id": "C90",
+      "claim": "AAV5-EF1a-DIO-ChR2-eYFP was used to express ChR2 in CINs.",
+      "claim_type": "EXPLICIT",
+      "source": "We expressed the excitatory opsin ChR2 in NAc CINs, using ChAT-Cre rats (Witten et al., 2011) and Cre-dependent expression from a virus (AAV5::DIO::EF1a::ChR2::eYFP).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental methods used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:00:37.207484Z"
+    },
+    {
+      "id": "c03a0db0-be33-431e-9a28-2e0590fb2801",
+      "content_id": "03b9b160-b819-4388-866a-39c774e1c708",
+      "claim_id": "C91",
+      "claim": "AAV-DJ-CAG-RdLight1 was used to express the DA sensor RdLight1.",
+      "claim_type": "EXPLICIT",
+      "source": "In the same region, we expressed the red-shifted DA sensor RdLight1 (Patriarchi et al., 2020) using another virus (AAV-DJ::CAG::RdLight1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental methods used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:00:37.207484Z"
+    },
+    {
+      "id": "36e07512-789a-41fd-b984-92ccda35061f",
+      "content_id": "03b9b160-b819-4388-866a-39c774e1c708",
+      "claim_id": "C92",
+      "claim": "Reward probabilities for left and right choices were pseudorandomly chosen from 10, 50, or 90% for blocks of 35\u201345 trials in the operant task.",
+      "claim_type": "EXPLICIT",
+      "source": "Reward probabilities for left and right choices were pseudorandomly chosen from 10, 50, or 90% for blocks of 35\u201345 trials, over an ~2 hr session.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental methods used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:00:37.207484Z"
+    },
+    {
+      "id": "9b6a3be8-6533-4826-8a60-4c153d81ce4f",
+      "content_id": "03b9b160-b819-4388-866a-39c774e1c708",
+      "claim_id": "C93",
+      "claim": "Time-division multiplexing was used with green (565 nm), blue (470 nm), and violet (405 nm) LEDs alternately switched on and off in 10 ms frames.",
+      "claim_type": "EXPLICIT",
+      "source": "We used time-division multiplexing (Akam and Walton, 2019): green (565 nm), blue (470 nm), and violet (405 nm; isosbestic control) LEDs were alternately switched on and off in 10 ms frames (4 ms on, 6 ms off).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental methods used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:00:37.207484Z"
+    },
+    {
+      "id": "7fcc8cd4-56f8-47e0-9810-acc500695a94",
+      "content_id": "03b9b160-b819-4388-866a-39c774e1c708",
+      "claim_id": "C94",
+      "claim": "Excitation power at the fiber tip was set to 30 \u03bcW for each wavelength in photometry experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "Excitation power at the fiber tip was set to 30 \u03bcW for each wavelength.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental methods used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:00:37.207484Z"
+    },
+    {
+      "id": "978464c2-dfea-48e3-8725-0706e11543d9",
+      "content_id": "03b9b160-b819-4388-866a-39c774e1c708",
+      "claim_id": "C95",
+      "claim": "Drugs were infused bilaterally into the NAc Core at a volume of 0.5 \u00b5l/side.",
+      "claim_type": "EXPLICIT",
+      "source": "We tested this in the trial-and-error task, using local drug infusions into the NAc Core (bilaterally, volume 0.5 \u00b5l/side).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental methods used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:00:37.207484Z"
+    },
+    {
+      "id": "f4cad285-abac-4549-971d-58475dec15c5",
+      "content_id": "03b9b160-b819-4388-866a-39c774e1c708",
+      "claim_id": "C96",
+      "claim": "DH\u03b2E was infused at doses of 15 or 30 \u00b5g/side.",
+      "claim_type": "EXPLICIT",
+      "source": "On consecutive days, rats received either aCSF (vehicle), DH\u03b2E (selective antagonist of \u03b22* nAChRs [Changeux, 2018; Picciotto et al., 2012]; 15 or 30 \u00b5g/side), or flupenthixol, a non-selective D1 and D2 DA receptor antagonist (FLU; 10 \u00b5g/side), 10 min before beginning the task.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental methods used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:00:37.207484Z"
+    },
+    {
+      "id": "e9ae61de-f20d-4f78-b155-5a0bf732adc4",
+      "content_id": "03b9b160-b819-4388-866a-39c774e1c708",
+      "claim_id": "C97",
+      "claim": "Flupenthixol was infused at a dose of 10 \u00b5g/side.",
+      "claim_type": "EXPLICIT",
+      "source": "On consecutive days, rats received either aCSF (vehicle), DH\u03b2E (selective antagonist of \u03b22* nAChRs [Changeux, 2018; Picciotto et al., 2012]; 15 or 30 \u00b5g/side), or flupenthixol, a non-selective D1 and D2 DA receptor antagonist (FLU; 10 \u00b5g/side), 10 min before beginning the task.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental methods used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:00:37.207484Z"
+    },
+    {
+      "id": "8cbc7b12-0e53-4a1d-9473-53a5d135f7b2",
+      "content_id": "03b9b160-b819-4388-866a-39c774e1c708",
+      "claim_id": "C98",
+      "claim": "DH\u03b2E is a selective antagonist of \u03b22* nAChRs.",
+      "claim_type": "EXPLICIT",
+      "source": "DH\u03b2E (selective antagonist of \u03b22* nAChRs [Changeux, 2018; Picciotto et al., 2012]; 15 or 30 \u00b5g/side)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:00:37.207484Z"
+    },
+    {
+      "id": "6fe69adb-22b7-41a8-8189-54a8dd47e8f2",
+      "content_id": "03b9b160-b819-4388-866a-39c774e1c708",
+      "claim_id": "C99",
+      "claim": "Flupenthixol is a non-selective D1 and D2 DA receptor antagonist.",
+      "claim_type": "EXPLICIT",
+      "source": "flupenthixol, a non-selective D1 and D2 DA receptor antagonist (FLU; 10 \u00b5g/side)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the pharmacological properties of flupenthixol.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:00:37.207484Z"
+    },
+    {
+      "id": "872e15f2-a09d-415c-9977-7841b3f551a2",
+      "content_id": "03b9b160-b819-4388-866a-39c774e1c708",
+      "claim_id": "C100",
+      "claim": "The drug treatment order was randomly assigned and counterbalanced across rats.",
+      "claim_type": "EXPLICIT",
+      "source": "The drug treatment order was randomly assigned and counterbalanced across rats.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental design used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:00:37.207484Z"
+    },
+    {
+      "id": "bbfe2d4e-30a0-40df-93ef-052528c70bea",
+      "content_id": "03b9b160-b819-4388-866a-39c774e1c708",
+      "claim_id": "C101",
+      "claim": "The UCSF Institutional Animal Care and Use Committee granted approval for this study (protocol # AN196232-01B).",
+      "claim_type": "EXPLICIT",
+      "source": "The UCSF Institutional Animal Care and Use Committee granted approval for this study (protocol # AN196232-01B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about ethical approval for the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:00:37.207484Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "e5d1c733-107a-4b98-a39a-f6908327d1ed",
+      "content_id": "03b9b160-b819-4388-866a-39c774e1c708",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Optogenetic stimulation of cholinergic interneurons (CINs) in awake, behaving rats rapidly evokes dopamine (DA) release in the nucleus accumbens (NAc) that scales with stimulation duration and frequency, without showing short-term depression or receptor desensitization observed in slice preparations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C5, C33-C41 provide converging experimental evidence from optogenetic stimulation combined with photometry measurements. The data demonstrate frequency-dependent (C39, C40) and duration-dependent (C34, C39) DA release with statistical support (ANOVA p<0.05), and absence of paired-pulse depression (C36, C41) confirmed by quantitative analysis (C38). This directly contrasts with slice preparation results (C27, C28), establishing a key in vivo finding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:00:37.207484Z"
+    },
+    {
+      "id": "d82a77e3-999a-4b78-899e-b667c95d73c1",
+      "content_id": "03b9b160-b819-4388-866a-39c774e1c708",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "During unexpected food delivery, both CIN activity and DA release show rapid, coordinated increases in response to the auditory cue and during subsequent approach to the food port, with statistically significant ramping during approach behavior.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C7, C42-C45 describe simultaneous dual-color photometry recordings showing coordinated CIN and DA dynamics. Statistical validation using shuffle analysis (C44, C45, n=1000 shuffles) confirms that both peak responses to cues and ramp slopes during approach significantly differ from chance. The experimental design appropriately separates cue-evoked from approach-related signals by analyzing variable-latency trials.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:00:37.207484Z"
+    },
+    {
+      "id": "27d85046-398a-4208-b348-55479a0c9c62",
+      "content_id": "03b9b160-b819-4388-866a-39c774e1c708",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "In an operant task, CIN activity and DA release both show ramping increases during motivated approach behaviors (center-in and food-port-in), while lateral VTA DA neurons show no corresponding ramping, suggesting CINs sculpt DA release ramps independently of DA cell firing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8, C9, C46-C52 integrate current photometry data with previously published electrophysiology (Mohebi et al., 2019). The dissociation is striking: 0/29 VTA DA cells showed ramps (C46, C49) while 10/10 DA release and 7-8/8 CIN recordings showed significant ramps (C47-C51). Statistical validation via shuffle analysis supports the inference (C52) that CINs control DA ramps. However, this remains correlational rather than causal.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:00:37.207484Z"
+    },
+    {
+      "id": "b4d6e65f-5760-494c-a9e3-808e44ba4603",
+      "content_id": "03b9b160-b819-4388-866a-39c774e1c708",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Pharmacological blockade of \u03b22* nicotinic receptors in NAc with DH\u03b2E dose-dependently reduces motivated approach behavior in an operant task, mimicking effects of dopamine receptor antagonism and particularly affecting self-initiated approaches 1-3 seconds after cue onset.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10, C11, C53-C61, C77, C82 describe a well-controlled pharmacological experiment with appropriate controls (vehicle, two DH\u03b2E doses, DA antagonist FLU). Statistical support is strong (p<0.013 for 30\u00b5g DH\u03b2E, p<1\u00d710\u207b\u2079 for FLU; C58-C59). The experimental design includes counterbalancing (C100) and bilateral infusions (C95). The temporal specificity of effects (C55, C61, C82) and dose-dependence (C53, C60) strengthen causal inference about nAChR involvement in motivation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:00:37.207484Z"
+    },
+    {
+      "id": "2ff5553b-76be-4306-a16f-dd636ec1f57b",
+      "content_id": "03b9b160-b819-4388-866a-39c774e1c708",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The authors propose that differences in acetylcholinesterase (AChE) function between slice and in vivo conditions\u2014due to temperature effects and washout during slice preparation\u2014may explain why CIN-evoked DA release shows depression in slices but not in behaving animals.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C65-C69 present a mechanistic hypothesis to reconcile slice versus in vivo findings. While the reasoning is plausible and supported by citations about AChE kinetics (C66) and solubility (C68), this remains speculative (C65, C69) without direct experimental validation. Testing this hypothesis would require measuring AChE activity or ACh dynamics under different conditions, which was not performed.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:00:37.207484Z"
+    },
+    {
+      "id": "110077a7-9061-48a8-8ce9-05b94d1a0921",
+      "content_id": "03b9b160-b819-4388-866a-39c774e1c708",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "In NAc, both CIN activity and DA release increase in response to reward-predicting cues, contrasting with prior reports of CIN pauses in dorsal striatum, though bulk GCaMP signals have limitations in fully capturing CIN firing dynamics and ACh release.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C70-C75 address an apparent discrepancy with prior literature. The current data (C71, supported by C6, C44) clearly show CIN increases in NAc, with appropriate citations to supporting work. The authors appropriately acknowledge measurement limitations (C72-C73) and suggest future technical approaches (C74). The observation that some CIN fluctuations evoke DA release while others do not (C75) highlights complexity requiring further investigation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:00:37.207484Z"
+    },
+    {
+      "id": "9f1b6c70-358e-4410-9957-3d265aa607a7",
+      "content_id": "03b9b160-b819-4388-866a-39c774e1c708",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "While the correspondence between CIN activity ramps and DA release ramps supports the hypothesis that CINs drive behaviorally relevant DA release, the study acknowledges it did not establish direct causal linkage at specific moments of DA ramping during approach.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C76, C78, C79 represent appropriate scientific interpretation and limitation acknowledgment. C76 summarizes the correlational evidence supporting the hypothesis, while C78 explicitly states the causal limitation. C79 thoughtfully discusses experimental design challenges for future causal experiments. This honest assessment of what was and was not demonstrated strengthens the overall evaluation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:00:37.207484Z"
+    },
+    {
+      "id": "b4913c3b-aa48-43c3-be44-caa2b4597fcb",
+      "content_id": "03b9b160-b819-4388-866a-39c774e1c708",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The joint CIN-DA dynamics may be particularly important for self-initiated actions and deciding whether to reorganize ongoing behavior in response to external cues, as suggested by the temporal specificity of pharmacological effects and consistency with prior literature on self-timed actions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C80, C81, C83 propose functional interpretations of the findings. While C80 cites relevant prior work and C81 draws reasonable inferences from the data, C83 remains speculative about the specific computational role. The temporal window of DH\u03b2E effects (C82) provides some support, but alternative explanations for this temporal specificity are not fully excluded. Additional experiments would be needed to definitively establish this functional role.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:00:37.207484Z"
+    },
+    {
+      "id": "75ec54a4-98f1-4dbd-959e-7d4922d907a9",
+      "content_id": "03b9b160-b819-4388-866a-39c774e1c708",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The study employed ChAT-Cre rats with viral expression of optogenetic and sensor constructs, dual-color fiber photometry with time-division multiplexing, an operant bandit task, and bilateral pharmacological manipulations with appropriate controls and counterbalancing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C89-C101 describe methodological details that are clearly stated and appropriate for the experiments. The use of ChAT-Cre rats (C89) with Cre-dependent viral constructs (C90) ensures cell-type specificity. Time-division multiplexing (C93) allows simultaneous dual-color recording. Drug doses (C96, C97) and experimental design (C100) are clearly specified. Ethical approval is documented (C101). These methods are standard and well-executed for this type of study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:00:37.207484Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "9e5e7857-0503-4b2a-8bf0-5c98545bdd38",
+      "result_id": "e5d1c733-107a-4b98-a39a-f6908327d1ed"
+    },
+    {
+      "claim_id": "f47b1de2-6d1f-418a-8392-07d8cd156b0c",
+      "result_id": "e5d1c733-107a-4b98-a39a-f6908327d1ed"
+    },
+    {
+      "claim_id": "aa5e0428-d51b-4dbf-8d71-9eb8a24f6955",
+      "result_id": "e5d1c733-107a-4b98-a39a-f6908327d1ed"
+    },
+    {
+      "claim_id": "ad897790-76c8-4358-a8a3-b15d14351be9",
+      "result_id": "e5d1c733-107a-4b98-a39a-f6908327d1ed"
+    },
+    {
+      "claim_id": "5a6f994e-b1b1-4698-8571-16b9e4c7c210",
+      "result_id": "e5d1c733-107a-4b98-a39a-f6908327d1ed"
+    },
+    {
+      "claim_id": "f935ca70-f5bd-4cfa-aa6b-c3972d590596",
+      "result_id": "e5d1c733-107a-4b98-a39a-f6908327d1ed"
+    },
+    {
+      "claim_id": "207e12b8-e440-4026-9a32-e77df1c181fd",
+      "result_id": "e5d1c733-107a-4b98-a39a-f6908327d1ed"
+    },
+    {
+      "claim_id": "0124bb3a-0fae-4c73-bb8f-0372a40e6254",
+      "result_id": "e5d1c733-107a-4b98-a39a-f6908327d1ed"
+    },
+    {
+      "claim_id": "95ca2e0f-627c-4d85-8718-f17f51ca5e9a",
+      "result_id": "e5d1c733-107a-4b98-a39a-f6908327d1ed"
+    },
+    {
+      "claim_id": "82082842-ea22-4cf1-a3e6-7420660996d4",
+      "result_id": "e5d1c733-107a-4b98-a39a-f6908327d1ed"
+    },
+    {
+      "claim_id": "9a168282-cb34-4710-aec3-581bf5b71378",
+      "result_id": "e5d1c733-107a-4b98-a39a-f6908327d1ed"
+    },
+    {
+      "claim_id": "00777b04-300a-421b-ab8f-d844ae371ec2",
+      "result_id": "d82a77e3-999a-4b78-899e-b667c95d73c1"
+    },
+    {
+      "claim_id": "2f42ab73-39cb-4036-96e7-2273d285e651",
+      "result_id": "d82a77e3-999a-4b78-899e-b667c95d73c1"
+    },
+    {
+      "claim_id": "a9fcc1a6-0a10-4d24-bbe8-05efef0a8806",
+      "result_id": "d82a77e3-999a-4b78-899e-b667c95d73c1"
+    },
+    {
+      "claim_id": "0c439443-6dbd-46be-bfdd-2a0f70db1f32",
+      "result_id": "d82a77e3-999a-4b78-899e-b667c95d73c1"
+    },
+    {
+      "claim_id": "16e33446-227a-4b18-a663-a0b421d8f0c1",
+      "result_id": "d82a77e3-999a-4b78-899e-b667c95d73c1"
+    },
+    {
+      "claim_id": "bb24345f-e8f2-47de-a356-ceb999275f5c",
+      "result_id": "d82a77e3-999a-4b78-899e-b667c95d73c1"
+    },
+    {
+      "claim_id": "af15618a-4bd1-4ad3-9239-8ffd5870e1e9",
+      "result_id": "27d85046-398a-4208-b348-55479a0c9c62"
+    },
+    {
+      "claim_id": "6a7b97fb-3f0c-46f0-8f1c-d40606338803",
+      "result_id": "27d85046-398a-4208-b348-55479a0c9c62"
+    },
+    {
+      "claim_id": "449f05bb-d64d-4fa6-963c-a89896f8e91f",
+      "result_id": "27d85046-398a-4208-b348-55479a0c9c62"
+    },
+    {
+      "claim_id": "15c0d4a1-d6b5-4dd7-8ec9-48926b1584f6",
+      "result_id": "27d85046-398a-4208-b348-55479a0c9c62"
+    },
+    {
+      "claim_id": "070d6ecf-604b-46ea-98d2-cecbdcbb3501",
+      "result_id": "27d85046-398a-4208-b348-55479a0c9c62"
+    },
+    {
+      "claim_id": "0533ca6e-1a9d-4ae9-b257-5698065137ef",
+      "result_id": "27d85046-398a-4208-b348-55479a0c9c62"
+    },
+    {
+      "claim_id": "16bfdc0b-7aa8-48e6-86a7-fefa4b5068ea",
+      "result_id": "27d85046-398a-4208-b348-55479a0c9c62"
+    },
+    {
+      "claim_id": "ec24477d-0f74-4713-bd51-46f4e8cfca8e",
+      "result_id": "27d85046-398a-4208-b348-55479a0c9c62"
+    },
+    {
+      "claim_id": "085a55cc-3476-454d-9c02-f420fd69b3e9",
+      "result_id": "27d85046-398a-4208-b348-55479a0c9c62"
+    },
+    {
+      "claim_id": "3eb985d5-6334-4e67-8536-13e5fce84a1f",
+      "result_id": "b4d6e65f-5760-494c-a9e3-808e44ba4603"
+    },
+    {
+      "claim_id": "71f2165a-2637-4a52-abf7-5c5badd364e7",
+      "result_id": "b4d6e65f-5760-494c-a9e3-808e44ba4603"
+    },
+    {
+      "claim_id": "9ce45e53-af7e-4da0-bfbc-36a2e35a3a0f",
+      "result_id": "b4d6e65f-5760-494c-a9e3-808e44ba4603"
+    },
+    {
+      "claim_id": "3ac8bd82-dc25-4fdc-8e35-906619ebbb5b",
+      "result_id": "b4d6e65f-5760-494c-a9e3-808e44ba4603"
+    },
+    {
+      "claim_id": "a0d03abd-63ad-4d81-b754-655fa65fed40",
+      "result_id": "b4d6e65f-5760-494c-a9e3-808e44ba4603"
+    },
+    {
+      "claim_id": "194bf0a4-5ba3-4f5f-b7a5-c03f876ca1cd",
+      "result_id": "b4d6e65f-5760-494c-a9e3-808e44ba4603"
+    },
+    {
+      "claim_id": "19304698-1d08-4c61-b15a-badbd28dfddd",
+      "result_id": "b4d6e65f-5760-494c-a9e3-808e44ba4603"
+    },
+    {
+      "claim_id": "05c7d8c0-f65f-49a5-93dc-f2ccf4bd637e",
+      "result_id": "b4d6e65f-5760-494c-a9e3-808e44ba4603"
+    },
+    {
+      "claim_id": "0f9fb595-d01b-4039-9fe8-71b084c2c8fc",
+      "result_id": "b4d6e65f-5760-494c-a9e3-808e44ba4603"
+    },
+    {
+      "claim_id": "2e7ad6a7-a7a9-4c75-89bf-966cc5449abd",
+      "result_id": "b4d6e65f-5760-494c-a9e3-808e44ba4603"
+    },
+    {
+      "claim_id": "b0d1133b-0d6c-462a-92d8-0473b840cc85",
+      "result_id": "b4d6e65f-5760-494c-a9e3-808e44ba4603"
+    },
+    {
+      "claim_id": "2ba70e81-3312-47af-966b-2cf16c5ae292",
+      "result_id": "b4d6e65f-5760-494c-a9e3-808e44ba4603"
+    },
+    {
+      "claim_id": "fb9c2e13-ee65-4d38-a508-8ea32f284ff6",
+      "result_id": "b4d6e65f-5760-494c-a9e3-808e44ba4603"
+    },
+    {
+      "claim_id": "ef0f1446-966e-4180-9848-945cd4dfa918",
+      "result_id": "2ff5553b-76be-4306-a16f-dd636ec1f57b"
+    },
+    {
+      "claim_id": "ab0709f1-cbd8-48c0-85a3-f3c429498fa3",
+      "result_id": "2ff5553b-76be-4306-a16f-dd636ec1f57b"
+    },
+    {
+      "claim_id": "4b62b31b-c339-49bc-a39b-a32791cad87a",
+      "result_id": "2ff5553b-76be-4306-a16f-dd636ec1f57b"
+    },
+    {
+      "claim_id": "d2e70d90-598e-4ced-bac3-c96e31511590",
+      "result_id": "2ff5553b-76be-4306-a16f-dd636ec1f57b"
+    },
+    {
+      "claim_id": "11aae52b-c360-4056-88b7-c772c26cc39f",
+      "result_id": "2ff5553b-76be-4306-a16f-dd636ec1f57b"
+    },
+    {
+      "claim_id": "f4baf286-02ba-4879-88be-84b3044d23bc",
+      "result_id": "110077a7-9061-48a8-8ce9-05b94d1a0921"
+    },
+    {
+      "claim_id": "c31fe784-441f-45be-a312-b910d3c079c5",
+      "result_id": "110077a7-9061-48a8-8ce9-05b94d1a0921"
+    },
+    {
+      "claim_id": "b6ee6ad9-be8b-4e87-8c6a-2be63389f3d0",
+      "result_id": "110077a7-9061-48a8-8ce9-05b94d1a0921"
+    },
+    {
+      "claim_id": "33726e9a-5af0-4d7f-8e15-6ba17fb447b4",
+      "result_id": "110077a7-9061-48a8-8ce9-05b94d1a0921"
+    },
+    {
+      "claim_id": "82d7caf7-4208-4b63-8d5e-c81ea18ae1b6",
+      "result_id": "110077a7-9061-48a8-8ce9-05b94d1a0921"
+    },
+    {
+      "claim_id": "bbe770b1-095a-4614-843e-2fa2c89db2f8",
+      "result_id": "110077a7-9061-48a8-8ce9-05b94d1a0921"
+    },
+    {
+      "claim_id": "0bc4eb93-421b-49e0-9ced-76634f3a276f",
+      "result_id": "9f1b6c70-358e-4410-9957-3d265aa607a7"
+    },
+    {
+      "claim_id": "b126e5bb-4a51-4dda-970f-94637919f4ba",
+      "result_id": "9f1b6c70-358e-4410-9957-3d265aa607a7"
+    },
+    {
+      "claim_id": "6ea49293-c642-4a99-82b2-fdbe494fa184",
+      "result_id": "9f1b6c70-358e-4410-9957-3d265aa607a7"
+    },
+    {
+      "claim_id": "ce6faf3a-0164-4ca9-b905-f936b8870473",
+      "result_id": "b4913c3b-aa48-43c3-be44-caa2b4597fcb"
+    },
+    {
+      "claim_id": "5fa1293e-9a9a-4856-a189-2180357ea189",
+      "result_id": "b4913c3b-aa48-43c3-be44-caa2b4597fcb"
+    },
+    {
+      "claim_id": "b05d583c-e17c-4d1e-97e3-4c4120fb0611",
+      "result_id": "b4913c3b-aa48-43c3-be44-caa2b4597fcb"
+    },
+    {
+      "claim_id": "b3b79dcf-4028-4d2d-9e96-3c780f96c09e",
+      "result_id": "75ec54a4-98f1-4dbd-959e-7d4922d907a9"
+    },
+    {
+      "claim_id": "18906149-b5f2-490c-ae6b-c0daf71e55b9",
+      "result_id": "75ec54a4-98f1-4dbd-959e-7d4922d907a9"
+    },
+    {
+      "claim_id": "c03a0db0-be33-431e-9a28-2e0590fb2801",
+      "result_id": "75ec54a4-98f1-4dbd-959e-7d4922d907a9"
+    },
+    {
+      "claim_id": "36e07512-789a-41fd-b984-92ccda35061f",
+      "result_id": "75ec54a4-98f1-4dbd-959e-7d4922d907a9"
+    },
+    {
+      "claim_id": "9b6a3be8-6533-4826-8a60-4c153d81ce4f",
+      "result_id": "75ec54a4-98f1-4dbd-959e-7d4922d907a9"
+    },
+    {
+      "claim_id": "7fcc8cd4-56f8-47e0-9810-acc500695a94",
+      "result_id": "75ec54a4-98f1-4dbd-959e-7d4922d907a9"
+    },
+    {
+      "claim_id": "978464c2-dfea-48e3-8725-0706e11543d9",
+      "result_id": "75ec54a4-98f1-4dbd-959e-7d4922d907a9"
+    },
+    {
+      "claim_id": "f4cad285-abac-4549-971d-58475dec15c5",
+      "result_id": "75ec54a4-98f1-4dbd-959e-7d4922d907a9"
+    },
+    {
+      "claim_id": "e9ae61de-f20d-4f78-b155-5a0bf732adc4",
+      "result_id": "75ec54a4-98f1-4dbd-959e-7d4922d907a9"
+    },
+    {
+      "claim_id": "8cbc7b12-0e53-4a1d-9473-53a5d135f7b2",
+      "result_id": "75ec54a4-98f1-4dbd-959e-7d4922d907a9"
+    },
+    {
+      "claim_id": "6fe69adb-22b7-41a8-8189-54a8dd47e8f2",
+      "result_id": "75ec54a4-98f1-4dbd-959e-7d4922d907a9"
+    },
+    {
+      "claim_id": "872e15f2-a09d-415c-9977-7841b3f551a2",
+      "result_id": "75ec54a4-98f1-4dbd-959e-7d4922d907a9"
+    },
+    {
+      "claim_id": "bbfe2d4e-30a0-40df-93ef-052528c70bea",
+      "result_id": "75ec54a4-98f1-4dbd-959e-7d4922d907a9"
+    }
+  ],
+  "comparisons": []
+}

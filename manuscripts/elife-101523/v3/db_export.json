@@ -1,0 +1,1740 @@
+{
+  "submission": {
+    "id": "a98e42e6-3a9b-4a7f-8f18-2f2799f5fc8a",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-04T05:09:06.890098Z",
+    "updated_at": "2025-12-04T05:09:06.890098Z"
+  },
+  "content": [
+    {
+      "id": "f3291109-6704-48cc-8521-9536d0815f8d",
+      "submission_id": "a98e42e6-3a9b-4a7f-8f18-2f2799f5fc8a",
+      "content_type": "manuscript",
+      "content_text": "# Parabrachial CGRP neurons modulate active defensive behavior under a naturalistic threat\n\n## Authors\n\n- Gyeong Hee Pyeon<sup>1</sup> ([ORCID: 0000-0003-4013-3206](https://orcid.org/0000-0003-4013-3206))\n- Hyewon Cho<sup>1</sup>\n- Byung Min Chung<sup>1</sup>\n- June-Seek Choi<sup>1</sup> ([ORCID: 0000-0002-4394-2140](https://orcid.org/0000-0002-4394-2140))\n- Yong Sang Jo<sup>1</sup> ([ORCID: 0000-0002-7716-0964](https://orcid.org/0000-0002-7716-0964)) \u2020\n\n### Affiliations\n\n1. School of Psychology, Korea University Seoul Republic of Korea ([ROR:047dqcg40](https://ror.org/047dqcg40))\n\n\u2020 Corresponding author\n\n## Abstract\n\nRecent studies suggest that calcitonin gene-related peptide (CGRP) neurons in the parabrachial nucleus (PBN) represent aversive information and signal a general alarm to the forebrain. If CGRP neurons serve as a true general alarm, their activation would modulate both passive and active defensive behaviors depending on the magnitude and context of the threat. However, most prior research has focused on the role of CGRP neurons in passive freezing responses, with limited exploration of their involvement in active defensive behaviors. To address this, we examined the role of CGRP neurons in active defensive behavior using a predator-like robot programmed to chase mice. Our electrophysiological results revealed that CGRP neurons encode the intensity of aversive stimuli through variations in firing durations and amplitudes. Optogenetic activation of CGRP neurons during robot chasing elevated flight responses in both conditioning and retention tests, presumably by amplifying the perception of the threat as more imminent and dangerous. In contrast, animals with inactivated CGRP neurons exhibited reduced flight responses, even when the robot was programmed to appear highly threatening during conditioning. These findings expand the understanding of CGRP neurons in the PBN as a critical alarm system, capable of dynamically regulating active defensive behaviors by amplifying threat perception, and ensuring adaptive responses to varying levels of danger.\n\n## Introduction\n\nEffective survival necessitates a repertoire of dynamic defensive behaviors, encompassing both passive and active responses. Passive defensive strategies, such as freezing, help avoid detection from predators by reducing motion (Blanchard and Blanchard, 1969a; Fanselow, 1980; Fanselow, 1982). In contrast, active defensive behaviors, including fleeing or fighting, enable animals to swiftly escape or confront imminent threats (Blanchard and Blanchard, 1969b; Bolles, 1970). The ability to adaptively switch between passive and active defenses in response to varying threat contexts is essential for optimizing survival outcomes, as demonstrated by studies utilizing naturalistic threat stimuli like predator-like robots or looming disks, which allowed the observation of various critical defensive behaviors (Choi and Kim, 2010; Kang et al., 2022; Pyeon et al., 2023; Telensky et al., 2011). A critical component of this adaptive response is the general alarm signal, which detects danger and plays a role in eliciting appropriate defensive behaviors in the face of threats. These signals help organisms quickly recognize and respond to potential threats. The mechanisms underlying these alarm signals can be studied through Pavlovian fear conditioning (Bolles and Collier, 1976; Fanselow and Poulos, 2005; LeDoux, 2000; Maren, 2001). In this process, a neutral sensory stimulus (conditioned stimulus or CS) is paired with an aversive unconditioned stimulus (US), leading to a conditioned response (CR) that can be expressed as either freezing or fleeing, depending on the specific features of the CS (Borkar and Fadok, 2021; Fadok et al., 2017) and US (Lee et al., 2018; Pyeon et al., 2023).\n\nNeurons within the PBN that express CGRP have been suggested to function as general alarm signals in the brain (Palmiter, 2018). These neurons respond to noxious stimuli of diverse sensory modalities (Campos et al., 2018; Carter et al., 2013; Chen et al., 2018; Kang et al., 2022) and transmit interoceptive and exteroceptive information to the forebrain (Bernard and Besson, 1988; Chiang et al., 2019). Additionally, these CGRP neurons relay US information to the central amygdala during conventional fear conditioning with electric footshock (Han et al., 2015). Prior studies have primarily focused on the role of CGRP neurons in mediating passive freezing behavior, demonstrating that activation of these neurons exclusively elicits immediate freezing behavior and contributes to the formation of fear memories (Bowen et al., 2020; Han et al., 2015). However, for CGRP neurons to serve as a true general alarm system, they must be capable of transmitting threat-related signals and facilitating the coordination of appropriate defensive behaviors, whether passive or active. While the role of CGRP neurons in passive responses is well-established, their potential involvement in active defensive behaviors remains unexplored.\n\nTo address this, we employed a more dynamic and ecologically relevant US by using a predator-like robot to chase the animals, thereby incorporating an imminent threat. We hypothesized that CGRP neurons modulate adaptive defensive behaviors depending on the severity or type of threat. We first recorded CGRP neuron activity in response to various aversive stimuli including the robot chasing to determine whether they encode noxious stimuli differentially. We then manipulated CGRP activity\u2014both activating and inactivating\u2014during fear conditioning with robot chasing and footshock. Our results suggest that manipulation of CGRP neurons bidirectionally modulates conditioned fleeing behaviors through altering the perception of the threat. These results highlight the role of CGRP neurons as a general alarm signal, primarily facilitating passive defensive behaviors, while also engaging in active defensive behaviors in response to high-threat conditions.\n\n## Results\n\n### Differential responses of CGRP neurons to aversive stimuli of varying intensities\n\nThe response profiles of CGRP neurons in conventional fear conditioning with footshock have been well-reported (Han et al., 2015). However, how CGRP neurons respond to chasing threats has not been established. To investigate the activity of CGRP neurons in response to robot chasing, in vivo recordings using the optical-tagging strategy were performed (Jo et al., 2018; Juarez et al., 2023). Heterozygous mice expressing Cre-recombinase at the Calca locus (CalcaCre/+) were injected with a Cre-dependent adeno-associated virus (AAV) carrying an excitatory channelrhodopsin (ChR2) with red fluorescent protein (AAV-DIO-ChR2-mScarlet). Then, a movable optrode array containing one optic fiber with four tetrodes was implanted over the PBN (Figure 1A).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/101523/elife-101523-fig1-v3.jpg)\n\n**Figure 1.:** (A) Schematic of AAV-DIO-ChR2-mScarlet injection and optrode implantation into the parabrachial nucleus (PBN) of CalcaCre/+ mice (n=6) and the corresponding representative histology image. (B) Procedures for fear conditioning experiments with the chasing robot and a schematic diagram of the context used. (C\u2013D) Freezing (C) and fleeing behaviors (D) in response to the conditioned stimulus (CS) during habituation, conditioning, and retention test. (E) Characteristics of light-evoked responses. Neurons with a short spike latency and a high spike probability response to light stimulation (filled circles) were classified as CGRP neurons. Inset: histograms showing firing patterns of two representative opto-tagged CGRP neurons response to 10 blue light pulses at 30 Hz. (F) Population firing rates of all recorded CGRP neurons (hab: n=28; cond: n=29, test: n=27) during fear conditioning with the robot. (G) Normalized firing in response to CS and unconditioned stimulus (US). (H) Population responses of all recorded CGRP neurons (n=31) in response to three aversive stimuli. (I) Average firing rates of CGRP neurons to pinprick, tail pinch, and robot chasing. Among these aversive stimuli, tail pinch induced a significantly greater increase in firing rates compared to both pinprick and robot chasing (one-way ANOVA, F(2, 90)=35.87, p<0.001; post-hoc tests, <i>p-values <0.001). ***p<0.001.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/101523/elife-101523-fig1-figsupp1-v3.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Reconstruction of optrode implantation sites along the anterior-posterior extent of the parabrachial nucleus (PBN).Each bar indicates an optrode track included for data analysis in the experiment shown in Figure 1. (B) Correlations between spontaneous and light-evoked waveforms. Calcitonin gene-related peptide (CGRP) neurons showed higher correlations between spontaneous and light-evoked waveforms compared to non-CGRP neurons (t(181) = 15.16, p<0.001). (C) Velocity traces from a representative animal across fear conditioning trials. Red arrows indicate collisions with the robot. The animal exhibited both freezing and flight responses during the tone conditioned stimulus (CS). Freezing was defined as any immobile movement lasting at least 0.8 s, while flight was characterized by movement velocity exceeding 8 cm/s. (D) Color-coded, normalized firing rates of CGRP neurons during fear conditioning using the robot. (E\u2013G) Color-coded, normalized firing rates of CGRP neurons during (E) pinprick, (F) tail pinch, and (G) chasing. ***p<0.001.\n\nAfter 2 wk of recovery, neuronal activity was recorded during fear conditioning with a robot over three consecutive days (Figure 1B). Animals were first habituated to a tone (4 kHz; 70 dB; 10 s) as a CS in a rectangular box. The following day, the animals were placed in a donut-shaped maze and presented with the CS 10 times, each paired with an US of being chased by the robot at a speed of 70 cm/s for 3 s. When animals collided with the robot, it pushed them forward, increasing their fleeing speed (Figure 1\u2014figure supplement 1C). If an animal blocked its path, the robot continued to push it, but its speed decreased due to friction and reduced motor power, ensuring it did not run over the animal. On day 3, fear memory was assessed by presenting the CS alone 10 times in the same context as the habituation session. In this behavioral paradigm, animals engaged in both passive and active defensive strategies, as evidenced by freezing and flight responses during conditioning (Figure 1\u2014figure supplement 1C). Passive behavior was measured by freezing, defined as the absence of movement, while active behavior was represented by flight, quantified with a flight score calculated by dividing the average velocity during the CS by the average velocity during the pre-CS period (Borkar et al., 2024; Fadok et al., 2017). While both responses were observed during conditioning, the test day, conducted without the robot, showed increased freezing and reduced fleeing responses (Figure 1C and D).\n\nTo identify CGRP neurons, 10 pulses of blue light (5 ms duration) at 30 Hz were delivered 10 times at the end of each behavioral recording session. Out of 183 PBN neurons, 84 cells with a high probability of light-evoked spikes (>0.8) and a short spike latency (<5.5 ms) after light onset were classified as CGRP neurons (Figure 1E). Compared to habituation, CGRP neurons showed significantly increased excitation to the CS during conditioning and retention, but only within the first 1 s after CS onset (1.5-fold increase); this difference became non-significant starting at 2 s (Figure 1G). However, these neurons exhibited significant excitation to the US with a fourfold increase (Figure 1F and G). Our findings using the robot as the US revealed that CGRP neurons primarily represent US information, albeit to a lesser extent, the onset of US-predictive information.\n\nGiven that CGRP neurons preferentially respond to the aversive US, we next asked how CGRP neurons encode different types of aversive stimuli. To address this, we monitored the activity of CGRP neurons while the animals received three types of stimuli, each varying in perceived threat intensity: (1) a pinprick to the hind paw using a needle (approximately 0.5 s); (2) a tail pinch 2 cm from the tail base using forceps (1 s); and (3) being chased by a robot (3 s). These aversive stimuli elicited different defensive behaviors. The pinprick caused hind paw withdrawal, and the tail pinch triggered vocalizations (audible squeaks) and immediate escaping behavior, indicating the highest threat intensity, whereas the robot chasing prompted only escaping behavior without any vocalization. CGRP neurons showed significantly excited firing that was time-locked to the onset of all three aversive stimuli and maintained this activity throughout the duration of each stimulus. After the offset of the stimuli, neuronal activity gradually restored back to the baseline with a slight delay (Figure 1H). These aversive stimuli elicited significantly different amplitudes of firing rates (Figure 1I). During the tail pinch, which generated the strongest defensive behavior, CGRP neurons exhibited the highest excitation amplitude, ranging from 33 to 98 Hz, with an average of 58 Hz. Taken together, these results indicate that CGRP neurons represent the temporal characteristics and intensity of different aversive stimuli through variations in firing duration and amplitude.\n\n### CGRP activation promotes conditioned fleeing in robot chasing and conditioned freezing in footshock\n\nTo determine whether increasing or decreasing CGRP neuronal activity would induce defensive behaviors other than freezing, we first observed which defensive behaviors were elicited by either stimulating or inhibiting CGRP neurons in the absence of any external stimuli. CalcaCre/+ mice were randomly assigned to groups and bilaterally injected with either AAV-DIO-ChR2-mScarlet for activation, AAV-DIO-Jaws-GFP for inactivation, or AAV-DIO-eYFP for control, followed by the implantation of optic fibers over the PBN (Figure 2A). To activate CGRP neurons, mice received 30 s of 40 Hz photostimulation, delivered four times, based on the observed spontaneous firing rate of approximately 43 Hz in response to robot chasing (Figure 1I). For inactivation, CGRP neurons were inhibited for 2 s, followed by a 1 s ramp down, repeated in cycles until a total duration of 30 s. Jaws and control groups showed no difference in movement during light on and off phases, indicating that light delivery did not alter their defensive behavior (Figure 2B). However, activation of CGRP neurons immediately induced robust freezing behavior, consistent with previous studies (Bowen et al., 2020; Han et al., 2015). These results confirmed that stimulating CGRP neurons without external aversive stimuli generates rapid, unconditioned freezing behavior in mice.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/101523/elife-101523-fig2-v3.jpg)\n\n**Figure 2.:** (A) Schematic of bilateral AAV-DIO-ChR2-mScarlet or AAV-DIO-Jaws-GFP injections and optic fiber implantation into the parabrachial nucleus (PBN), with representative histological images of viral expression. (B) 30 s stimulation of CGRP neurons at 40 Hz resulted in significantly higher time-locked freezing behaviors in the ChR2 group compared to both the Jaws and control groups (n=10 per group; significant group \u00d7time interaction in a repeated-measures two-way ANOVA, F(26, 351)=61.32, p<0.001; post-hoc tests at each time, <i>p-values <0.001). ***p<0.001.\n\nWe then tested whether manipulating the activity of CGRP neurons during fear conditioning with robot chasing promotes fleeing behavior or amplifies freezing behavior. To effectively enhance the general alarm signal, additional activation of CGRP neurons was applied at 30 Hz during the robot chasing. CalcaCre/+ mice underwent the fear conditioning paradigm in which the CS was paired with the robot chasing (3 s, 70 cm/s), with CGRP neurons selectively activated (30 Hz) or inhibited (3 s on and 1 s ramp down) throughout the presentation of the chasing (Figure 3A). To rule out the possibility that the observed behavior was merely a reaction to the cue and confirm that it resulted from the CS-US pairing, an unpaired group was included. In this group, the CS was not paired with the robot chasing; instead, the robot chasing was delivered within the inter-trial interval. Physical bumping occurred during robot chasing, potentially influencing the perception of threat. To ensure that differences in defensive behavior were not due to variations in bumping among the four groups, we analyzed bumping incidents and found no significant differences (Figure 3\u2014figure supplement 1C; Video 1). This confirms that any observed differences in defensive responses are likely attributable to alterations in CGRP neuronal activity.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/101523/elife-101523-fig3-v3.jpg)\n\n**Figure 3.:** (A) A schematic diagram of fear conditioning protocol with the robot. CGRP neuronal activity was bidirectionally manipulated during the presentation of the robot chasing. (B) Freezing to the conditioned stimulus (CS) during habituation and conditioning sessions. A progressive increase in freezing was observed in all four groups (n=10 per group), but the Jaws and unpaired groups showed significantly lower freezing levels compared to the other two groups (significant group effect in a repeated-measures two-way ANOVA, F(3, 36)=5.50, p<0.01; subsequent post-hoc tests, <i>p-values <0.05). (C) Flight scores during habituation and conditioning sessions. The ChR2 group displayed significantly higher flight scores compared to other three groups (significant group effect in a repeated-measures two-way ANOVA, F(3, 36)=102.05, p<0.001; post-hoc tests, <i>p-values <0.001), while both the Jaws and unpaired groups had lower flight scores than the control group (<i>p-values <0.05). (D) Average velocities in response to the CS during the conditioning. The average velocity of the ChR2 group during the CS (first 7 s from onset) was significantly higher compared to that observed in all three groups (significant group effect in a repeated-measures two-way ANOVA, F(3, 36)=20.47, p<0.001; post-hoc test, <i>p-values <0.01). (E) Average freezing in response to the CS during the retention test. The ChR2 group froze significantly less than the control group (one-way ANOVA, F(3, 36)=10.82, p<0.001; post-hoc test, <i>p-value <0.001). The unpaired group also exhibited significantly lower freezing compared to the control group (<i>p-value <0.001). (F) Average flight scores in response to the CS during the retention test. The ChR2 group exhibited significantly higher flight scores than all three groups (one-way ANOVA, F(3, 36)=50.56, p<0.001; post-hoc test, <i>p-values <0.001). The unpaired group showed a significantly lower flight response compared to the control group (<i>p-value <0.05). *p<0.05, ***p<0.001.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/101523/elife-101523-fig3-figsupp1-v3.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A\u2013B) Anatomical locations of optic fiber tips above the parabrachial nucleus (PBN) of (A) ChR2 and (B) Jaws groups.(C) Number of times bumping with the robot. No group differences were observed throughout the trials across the three groups (repeated-measures two-way ANOVA, F(3, 36)=1.41, p=0.26). (D) Average velocities in response to the conditioned stimulus (CS) during the retention test. The average velocity of the ChR2 group during the CS was significantly higher compared to that observed in the Jaws and control groups (significant group effect in a repeated-measures two-way ANOVA, F(3, 36)=56.65, p<0.001; post-hoc test, <i>p-values <0.01). ***p<0.001.\n\n![Video 1.](https://cdn.elifesciences.org/articles/101523/elife-101523-video1.mp4.jpg)\n\n**Video 1.:** The video shows the behavior of a representative animal from the control, ChR2, and Jaws groups during the last trial of conditioning. The sequence includes 10 s pre-CS, 10 s of CS (7 s of CS alone followed by 3 s of robot chasing), and 10 s post-CS. The ChR2 animal demonstrated high levels of fleeing behavior in response to the CS, compared to the control and Jaws groups.\n\nDuring conditioning, all four groups demonstrated fear memory formation, as evidenced by a progressive increase in freezing levels (Figure 3B). However, the Jaws and unpaired groups showed significantly lower freezing levels than the control and ChR2 groups. For the flight score on the conditioning day, the ChR2 group displayed significantly higher levels compared to the other three groups (Figure 3C), while the Jaws and unpaired groups consistently had lower flight scores than the control group. Additionally, analysis of movement velocity revealed that ChR2 mice had a higher fleeing speed in response to the CS compared to the other four groups (Figure 3D).\n\nFear memory was assessed 24 hr after conditioning by presenting four CSs alone. During the retention test, the control group exhibited robust freezing as its dominant defensive behavior. In contrast, the ChR2 group displayed significantly higher fight scores compared to the other three groups (Figure 3E and F; Video 2). The Jaws group exhibited lower flight responses due to inhibited US signaling during conditioning. However, contrary to our expectations, the Jaws group displayed freezing levels that were not significantly different from those of the control group (Figure 3E). This result may be attributed to post-illumination rebound excitation, as Jaws has been shown to yield residual activity even when ramped illumination is used to minimize this effect (Chuong et al., 2014). The unpaired group exhibited significantly lower freezing levels compared to the paired control group. However, flight scores in the unpaired group were significantly higher than those in the control group. This was likely due to the tendency of the control group to remain frozen before and during the CS presentation. The unpaired group, however, showed sensory orientation responses to the CS, contributing to their elevated fleeing scores. Moreover, the movement speed of the unpaired group during the tone CS did not exceed 3 cm/s, suggesting exploratory rather than defensive behavior in the test environment (Figure 3\u2014figure supplement 1D). Taken together, these findings suggest that enhanced CGRP activity during imminent threat promotes fleeing behavior during conditioning, sustaining the heightened flight response through the retention test.\n\n![Video 2.](https://cdn.elifesciences.org/articles/101523/elife-101523-video2.mp4.jpg)\n\n**Video 2.:** To test the fear memory in the retention test, we used a rectangular box instead of the donut maze used during conditioning. The box was placed on top of the donut maze, preventing the animals from seeing the robot\u2019s location. The CS was delivered from the robot\u2019s speaker, with the flashing light indicating the onset of the CS. The video shows the animals' behavior during the first trial of the retention test, where the ChR2 mouse showed more fleeing behavior compared to the other two mice.\n\nWe next examined whether the same modulation of CGRP neuron activity paired with electric footshock (1 s; 0.3 mA) would also engage in active defensive behavior. After a 1 wk rest period following the conditioning paradigm with the robot, the control, ChR2, and Jaws groups of mice underwent conventional fear conditioning (Figure 4A). Although the CS used in the conventional fear conditioning (12 kHz; 70 dB; 10 s) differed from the one used with the robot (4 kHz; 70 dB; 10 s), residual effects were observed in the ChR2 group during the habituation session and the first block of conditioning (Figure 4C).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/101523/elife-101523-fig4-v3.jpg)\n\n**Figure 4.:** (A) A schematic diagram of fear conditioning protocol with the footshock. (B) Freezing to the conditioned stimulus (CS) during habituation and conditioning sessions. All three groups showed a progressive increase in freezing as trials progressed, but the Jaws group froze significantly less compared to the other two groups (significant group effect in a repeated-measures two-way ANOVA, F(2, 27)=19.74, p<0.001; subsequent post-hoc tests, <i>p-values <0.01). (C) Flight scores in response to the CS during habituation and conditioning sessions. The ChR2 group showed significantly higher fleeing responses during habituation, suggesting some residual effect from fear conditioning with the robot (one-way ANOVA, F(2, 27)=9.37, p<0.01; post-hoc test, <i>p-value <0.01). A repeated-measures two-way ANOVA revealed significant group differences during conditioning (F(2, 27)=8.91, p<0.01); however, post-hoc analysis showed that these differences were only significant in the first block of trials, where the ChR2 group exhibited higher fleeing responses than the other two groups, with no group differences observed in subsequent blocks. (D) Average freezing in response to the CS during the retention test. The ChR2 group froze significantly more than the Jaws and control groups (one-way ANOVA, F(2, 27)=13.31, p<0.001; post-hoc tests, <i>p-values <0.05). (E) Average flight scores to the CS during the retention test. Fleeing responses were minimal across all three groups, and no significant differences were observed (one-way ANOVA, F(2, 27)=0.12, p=0.63). *p<0.05, **p<0.01, ***p<0.001.\n\nDuring conditioning, both ChR2 and control groups exhibited a gradual increase in freezing as the trials progressed (Figure 4B). However, consistent with the previous experiment with the robot, the Jaws group showed significantly lower levels of freezing compared to the other two groups. Moreover, although some high flight scores were observed in the ChR2 group during the first block of trials, all three groups exhibited equivalently low levels of fleeing responses as trials progressed (Figure 4C). When fear memory was tested 24 hr later, ChR2-expressing mice displayed significantly more freezing compared to both control and Jaws-expressing mice (Figure 4D). The Jaws and control groups exhibited similar levels of freezing, with no significant difference between the two groups. In terms of fleeing response, since all three groups demonstrated minimal fleeing responses, there was no significant difference observed (Figure 4E). These data show that the same CGRP stimulation did not promote fleeing responses; however, with footshock as in the US, the freezing response observed during conditioning was intensified in the retention test. Overall, additional activation of CGRP neurons enhances fear learning and memory, resulting in conditioned fleeing responses following robot chasing and conditioned freezing responses after footshock.\n\n### CGRP neurons intensify threat perceptions and regulate defensive behaviors\n\nTo further investigate whether the previously observed fleeing responses with additional CGRP activation in the presence of the robot (Figure 3C) were due to the intensified perception of the US threat, we systematically escalated the threat level of the US by increasing the robot\u2019s speed without manipulating CGRP activity. The robot speed, ranging from 70 to 90 cm/s, was carefully selected after testing various speeds to ensure that it effectively induced a conditioned response without posing harm to the animals. In the previous experiments, the robot moved at a speed of 70 cm/s, making one-and-a-half turns in the donut maze within 3 s. By increasing the speed to 80 cm/s, the robot made two full turns, and at 90 cm/s, it made two and a half turns within the same time frame. Additionally, we analyzed the correlation between robot speed and the number of physical bumps, revealing a significant positive relationship in which higher robot speeds led to more bumps (Figure 5\u2014figure supplement 1A and B). These findings suggest that the increased robot speed resulted in the animals perceiving a greater threat due to more physical contact.\n\nOn the conditioning day, all three groups showed equivalent levels of freezing behavior (Figure 5A). However, animals exposed to the highest speed exhibited significantly higher flight scores compared to the other two groups (Figure 5B). Analysis of movement further revealed that animals in the 90 cm/s condition exhibited the highest speeds in response to the CS compared to those in the 70 cm/s and 80 cm/s groups (Figure 5C). On the retention test day, no group differences in freezing were observed between the 70 cm/s and 80 cm/s groups, but 90 cm/s group exhibited significantly lower freezing levels than the other two groups (Figure 5D). In contrast, animals in the 90 cm/s speed displayed a significantly higher number of flight scores compared to the other two groups (Figure 5E). There was a positive correlation between robot speed and fleeing responses, and a negative correlation between robot speed and freezing responses (Figure 5D and E). Furthermore, animals exposed to the 90 cm/s speed exhibited a fleeing response similar to that of those subjected to 70 cm/s robot chasing with CGRP stimulation (Figure 3C and F). Considering the combined results of these experiments, the increased activity of CGRP neurons likely enhances fleeing behavior by amplifying the perceived threat of the US.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/101523/elife-101523-fig5-v3.jpg)\n\n**Figure 5.:** (A) Freezing to the conditioned stimulus (CS) during habituation and conditioning sessions for groups subjected to three different robot speeds (n=8 per group). All three groups showed an equivalent progressive increase in freezing as trials progressed, with no significant differences between the groups (repeated-measures two-way ANOVA, F(2, 21)=0.11, p=0.89). (B) Flight scores in response to the CS during habituation and conditioning sessions. Animals exposed to 90 cm/s robot speed exhibited higher flight scores compared to the other two groups (repeated-measures two-way ANOVA, F(2, 21)=76.43, p<0.001; post-hoc tests, <i>p-values <0.001). (C) Average velocities in response to the CS during the conditioning. The average velocity of the 90 cm/s group during the CS was significantly higher than that observed in the 70- and 80 cm/s groups (significant group effect in a repeated-measures two-way ANOVA, F(2, 21)=8.42, p<0.001; post-hoc test, <i>p-values <0.01). (D) Average freezing in response to the CS during the retention test. Animals exposed to 70- or 80 cm/s robot speed froze significantly more compared to those subjected to 90 cm/s (one-way ANOVA, F(2, 21)=6.60, p<0.01; post-hoc tests, <i>p-values <0.05). There was a negative correlation between freezing responses and robot speed (gray line; r=\u20130.61, p<0.01). (E) Average flight scores in response to the CS during the retention test. Animals subjected to 90 cm/s robot speed displayed significantly higher flight scores compared to those exposed to 70- and 80 cm/s (one-way ANOVA, F(2, 21)=58.09, p<0.001; post-hoc tests, <i>p-values <0.001). Fleeing responses were positively correlated with robot speed (gray line; r=0.82, p<0.001).\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/101523/elife-101523-fig5-figsupp1-v3.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Number of times bumping with the robot at different speeds.Bumping occurrence increased with robot speeds (significant group effect in a mixed-design ANOVA, F(2, 21)=29.44, p<0.001): 80 cm/s resulted in more bumps than 70 cm/s (p<0.001), 90 cm/s resulted in more bumps than 80 cm/s (p<0.05), and 90 cm/s resulted in more bumps than 70 cm/s (p<0.001). (B) Average number of times bumping during conditioning. There was a positive correlation between number of bumping and robot speed (gray line; r=0.85, p<0.001). (C) Average velocities in response to the conditioned stimulus (CS) during the retention test. The average velocity of the 90 cm/s group during the CS was significantly higher than that observed in the 70- and 80 cm/s groups (significant group effect in a repeated-measures two-way ANOVA, F(2, 21)=38.55, p<0.001; post-hoc test, <i>p-values <0.001). *p<0.05, ***p<0.001.\n\nWe next sought to confirm whether CGRP neurons are necessary for inducing active defensive behavior under high-speed conditions. Since Jaws inhibition was insufficient to block fear memory formation (Figures 3E and 4D), we bilaterally injected either Cre-dependent tetanus toxin light chain (TetTox; AAV-DIO-GFP:TetTox) for effective silencing by selectively blocking neurotransmitter release, or AAV-DIO-eYFP (control) into the PBN (Figure 6A; Jo et al., 2020). Mice then underwent fear conditioning with the robot at a speed of 90 cm/s. On the conditioning day, the TetTox group exhibited significantly lower levels of both freezing and fleeing compared to the control group (Figure 6B and C). Moreover, velocity analysis confirmed that the TetTox group, with silenced CGRP neurons, showed little to no fleeing behavior in response to the CS, while the control group exhibited robust flight responses (Figure 6D). This persisted on the retention day, with the TetTox group consistently showing reduced levels of freezing and fleeing compared to controls (Figure 6E and F). These results suggest that CGRP neurons are necessary for perceiving threats and promoting fleeing. Enhancing CGRP neuronal activity, either optogenetically or by increasing threat levels, strengthens fear learning and memory, leading to intensified active defensive behaviors.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/101523/elife-101523-fig6-v3.jpg)\n\n**Figure 6.:** (A) Schematic of bilateral AAV-DIO-GFP:TetTox or AAV-DIO-eYFP (control) injections into the parabrachial nucleus (PBN) and representative histological images of TetTox expression. (B) Freezing to the conditioned stimulus (CS) during habituation and conditioning sessions (n=10 per group). Both groups showed a progressive increase in freezing, but the TetTox group, with inactivated CGRP neurons, exhibited significantly lower levels of freezing compared to the control group (significant group effect in a repeated-measures two-way ANOVA, F(1, 18)=6.42, p<0.05). (C) Flight scores in response to the CS during habituation and conditioning sessions. The control group showed significantly greater levels of fleeing responses compared to the TetTox group (significant group effect in a repeated-measures two-way ANOVA, F(1, 18)=235.27, p<0.001). (D) Average velocities in response to the CS during the conditioning. Control animals displayed significantly higher flight scores compared to the TetTox group (repeated-measures two-way ANOVA, F(1, 18)=31.91, p<0.001). (E) Average freezing to the CS during the retention test. The TetTox group displayed significantly lower levels of freezing compared to the control group (independent t-test, t(18) = 2.7, p<0.05). (F) Average flight scores in response to the CS during the retention test. The TetTox group showed significantly lower levels of fleeing compared to the control group (independent t-test, t(18) = 6.29, p<0.001). *p<0.05, ***p<0.001.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/101523/elife-101523-fig6-figsupp1-v3.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) Number of times bumping with the robot.No group differences were observed throughout the trials (repeated-measures two-way ANOVA, F(1, 18)=0.41, p=0.84). (B) Average velocities in response to the conditioned stimulus (CS) during the retention test. The average velocity of the control group during the CS was significantly higher than that of the TetTox group (significant group effect in a repeated-measures two-way ANOVA, F(1, 18)=43.02, p<0.001). ***p<0.001.\n\n## Discussion\n\nCGRP neurons, known for relaying US information to the forebrain and inducing passive freezing behavior (Han et al., 2015), were examined to explore their role in active defensive responses. Using a naturalistic paradigm with a robot and other aversive stimuli of varying threat levels, we recorded neuronal activity and found that CGRP neurons encode different threat intensities through variations in firing duration and amplitude. Optogenetic activation of these neurons during fear conditioning amplified the perceived threat posed by the US, making it seem more dangerous, while inhibiting them weakened it. The expression of defensive behaviors varied depending on the type of US: under robot chasing conditions, increased CGRP activity made the robot seem as if it were moving faster, driving the animals to flee more during both conditioning and the retention test. In contrast, under footshock conditions, elevated CGRP activity predominantly enhanced freezing responses. Systematically escalating robot speed to simulate higher threat levels strengthened conditioned fleeing responses, whereas silencing these neurons prevented the formation of active defensive behaviors. Overall, our findings indicate that CGRP neurons act as a general alarm system, primarily orchestrating freezing responses but also contributing to active defensive behaviors by intensifying the perception of heightened threats, ensuring responses are adapted to the level of danger.\n\nThe choice of defensive strategies depends on the perceived severity of the threat (Fanselow and Lester, 2013). For instance, when an animal detects a predator at a relatively safe distance, freezing is the most likely defensive behavior, as it helps avoid detection. However, as the threat becomes more imminent and threat levels increase, freezing is no longer the optimal choice. At this point, the animal shifts from passive freezing to more active defense, adopting behaviors such as fleeing or, if necessary, fighting. However, most research on CGRP has utilized footshock (Bowen et al., 2020; Han et al., 2015) or other aversive stimuli in small arenas (Kang et al., 2022), potentially limiting the observation of fleeing responses and leading to a focus on passive freezing as the predominant behavior studied. In our study, we introduced different types of US designed to present an imminent threat. This approach allowed animals to perceive the threat through dynamic sensory inputs, with the distance to the threat being discernible. By incorporating the predator-like robot, we developed a behavioral paradigm that enabled animals to form fear memory while minimizing differences in bumping incidents between groups. Additionally, this paradigm allowed for the observation of two distinct defensive responses to the CS: passive freezing and active fleeing, providing a platform to explore defensive behaviors across varying threat contexts.\n\nRecent studies have modified conventional fear conditioning protocols to investigate active defensive behaviors in animals (Borkar et al., 2024; Fadok et al., 2017). One such example is changing the CS to a serial-compound stimulus, where a pure tone is immediately followed by a white noise, inducing freezing and flight responses, respectively. While effective for observing transitions between freezing and fleeing, our electrophysiological data show that CGRP neurons are more excited in response to the US compared to the CS (Figure 1F and G). Thus, altering the type of US is more appropriate for studying CGRP neurons. In addition, the robot allowed us to systematically increase threat levels by adjusting its speed, providing a more controlled approach to studying defensive behaviors. Our results showed that a robot speed of 70 cm/s did not induce fleeing response during the retention test (Figures 3F and 5E); however, increasing the robot\u2019s speed to 90 cm/s elicited conditioned flight responses in control mice. Moreover, CGRP activation combined with a 70 cm/s robot speed induced flight responses similar to those observed with a 90 cm/s robot speed in control mice. This suggests that CGRP activation amplifies the perceived threat, thereby promoting active defensive behaviors.\n\nWe optogenetically inhibited CGRP neurons in animals while they were being chased by the robot during conditioning. During this session, the Jaws group showed less freezing and fleeing compared to the control group. However, the reduced fear responses were not sustained on the retention test day, suggesting that transient inhibition during the chasing was insufficient to suppress the acquisition of fear memory (Figure 3E). It has been reported that a square pulse can cause strong rebound excitation following inhibition (Chuong et al., 2014). While ramped illumination reduces the magnitude of rebound excitation, it does not eliminate it entirely, leaving small residual excitation. This residual activity may have contributed to the formation of fear memory despite the inhibition of CGRP neurons. In a subsequent experiment with increased robot speed, we used TetTox to silence CGRP neurons more effectively compared to temporary inhibition. This group consistently showed lower fear responses compared to the control group even on the retention day, indicating a more significant impact on fear learning compared to transient inhibition. However, the progressive increase in freezing levels across trials during conditioning, even with CGRP neurons silenced (Figure 6B), suggests the involvement of other pathways in processing the aversive stimuli. For instance, different populations of CGRP neurons in the parvocellular subparafascicular nucleus of the thalamus also respond to threats and relay negative emotional signals to the amygdala thereby contributing to aversive memory formation (Kang et al., 2022). Additionally, the midbrain periaqueductal gray (PAG) transmits aversive signals to the amygdala (Johansen et al., 2010; Johansen et al., 2012; Ozawa et al., 2017) and other forebrain structures (Lefler et al., 2020; Esteban Masferrer et al., 2020), ensuring effective expression of defensive responses upon the detection of a threat. Although fear learning can occur through various pathways, our use of optogenetics and TetTox suggested that CGRP neurons contribute to both active and passive defensive behaviors, facilitating responses that are appropriate to the magnitude of the threat.\n\nIn conclusion, by employing both conventional footshock and a naturalistic paradigm, the present study emphasizes the role of CGRP neurons in facilitating both passive and active defensive behaviors. Optogenetic stimulation of CGRP neurons in the absence of external stimuli induced robust freezing, and their activation during conventional fear conditioning further amplified conditioned freezing, demonstrating their primary role in driving passive defensive responses. However, under heightened threat conditions, such as enhanced CGRP activation or faster robot speeds, these neurons also strengthened active defensive behaviors by amplifying perceived threat. These findings suggest that CGRP neurons detect and process threats, predominantly driving freezing behavior, while also enabling active responses under heightened danger to facilitate appropriate defensive behaviors aligned with the intensity of the threat.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Strain, strain background(Mus musculus)</td>\n      <td>B6.Cg-Calcatm1.1(cre/EGFP)Rpa/J</td>\n      <td>The Jackson Laboratory</td>\n      <td>RRID:IMSR_JAX:033168</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background(C57BL/6 J, C57BL/6 J)</td>\n      <td>C57BL/6 J</td>\n      <td>The Jackson Laboratory</td>\n      <td>RRID:IMSR_JAX:000664</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>AAV-DIO-ChR2-mScarlet</td>\n      <td>IBS Virus Facility</td>\n      <td>N/A</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>AAV-DIO-Jaws-GFP</td>\n      <td>Jo et al., 2018</td>\n      <td>N/A</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>AAV-DIO-eYFP</td>\n      <td>Addgene</td>\n      <td>RRID:Addgene_27056</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>AAV-DIO-TetTox-GFP</td>\n      <td>Han et al., 2015</td>\n      <td>N/A</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>ANY-maze 5.3</td>\n      <td>Stoelting Co</td>\n      <td>N/A</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>GraphPad Prism</td>\n      <td>GraphPad software</td>\n      <td>N/A</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>SPSS</td>\n      <td>IBM</td>\n      <td>N/A</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Offline Sorter</td>\n      <td>Plexon Inc</td>\n      <td>N/A</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Animals\n\nWe used heterozygous CalcaCre/+ mice, generated by breeding CalcaCre/Cre (Cat. 033168) with C57BL/6 J (Cat. 000664) from Jackson Laboratory. Both male and female mice, aged 3\u20136 mo, were used in all studies, and no sex differences were observed. Mice were housed in a temperature- and humidity-controlled facility on a 12 hr light/dark cycle (lights off at 7 AM) with ad libitum access to food and water. All experiments were performed during the dark phase of the cycle under the guidelines of the Institutional Animal Care and Use Committee at the Korea University (KUIACUC-2022\u20130057).\n\n### Virus production\n\nAll AAV vectors were prepared as described previously (Pyeon et al., 2024). Cre-dependent optogenetic viruses included AAV-DIO-ChR2-mScarlet, AAV-DIO-Jaws-GFP, and AAV-DIO-eYFP (control and unpaired). For selective inactivation of CGRP neurons, AAV-DIO-TetTox-GFP was used. Viral aliquots were stored at \u201380\u2103 before stereotaxic injection.\n\n### Stereotaxic surgery\n\nMice were anesthetized with isoflurane (4% induction, 1.5\u20132% maintenance) and fixed on a stereotaxic frame (Model 942, David Kopf Instruments). After exposing the skull, bregma and lambda were aligned on the same horizontal plane. Small burr holes were then made for viral injections and optic fibers, and additional holes were drilled for anchoring screws. Cre-dependent virus (0.5 \u00b5l per side) was injected unilaterally or bilaterally into the PBN (5.0 mm posterior, 1.5 mm lateral, and 3.5 mm ventral to bregma) at a rate of 0.25 \u00b5l /min. Microdrives or optic fibers (200 \u00b5m diameter, 0.22 numerical aperture) were implanted 0.3 mm dorsal to the virus injection sites and secured with dental cement. Meloxicam (1.5 mg/kg) was administered subcutaneously to alleviate pain and reduce inflammation. Mice were allowed to recover for 2\u20133 wk before the start of behavioral experiments.\n\n### 30s stimulation of CGRP stimulation\n\nTwo weeks after surgery, the optic fibers implanted in the mice were connected to optic cables, and the animals were placed in an open arena (30 \u00d7 22 \u00d7 22 cm). After 2 min of exploration, CGRP neurons were either stimulated or inhibited four times at 60 s intervals. For activation, 40 Hz of blue light (473 nm; LaserGlow) was delivered for 30 s. For inactivation, continuous red light (640 nm; LaserGlow) was delivered for 3 s followed by a 1 s ramp down, repeated in cycles until a total duration of 30 s. The light output from the bilateral branching cable was set to 9\u00b10.5 mW. The animals\u2019 behavior was recorded using a camera mounted on the ceiling of the chamber. Freezing and movement velocities were analyzed using video-tracking software (ANY-maze, Stoelting Co.).\n\n### Fear conditioning with chasing robot\n\nFear conditioning experiment was conducted using a box-shaped robot (15 \u00d7 26 \u00d7 35 cm) with four high-traction wheels that moved quickly inside a white acrylic track (18 cm width) of a donut-shaped maze (60 cm outer diameter). The speed of the robot was controlled by a Bluetooth-based microcontroller with a custom-written program in Arduino, and the CS (4 kHz; 80 dB; 10 s) was generated by speakers mounted in the front and back of the robot. Habituation and fear responses to the CS were tested before and after conditioning in a rectangular box (30 \u00d7 27 \u00d7 20 cm). The maze and rectangular box were wiped with 70% ethanol between animals. The custom-written program required for the robot\u2019s operation is provided in the source code file 1.\n\nOn the first day of fear conditioning paradigm, habituation to the CS was performed. Mice were introduced to the rectangular box and allowed a 3 min exploratory period, followed by the presentation of 4 CSs at intervals of 60 s. During this phase, the chasing robot was positioned outside the rectangular box to prevent the animals from seeing it. On day 2, optic fiber cables were attached to the head of each mouse, which were then placed in the donut-shaped maze. After 3 min, mice received 10 associations of a 10 s CS, each co-terminating with 3 s of chasing (speed of 70, 80, or 90 cm/s) with 60 s interval. The robot chased animals at high speeds and posed a physical threat by colliding and pushing them. During robot chasing, CGRP neurons were either activated or inhibited. To optogenetically stimulate, 30 Hz of blue light was delivered for 3 s with the robot. For inhibition, continuous red light was delivered for 3 s followed by a 1 s ramp down with the robot. For the unpaired group, the same number of CSs was presented; however, the robot chased the animals at a random time within the ITI. On day 3, fear response to the CS was measured. Mice were placed in the same rectangular box used on the first day, and after 3 min, the CS was presented alone 4 times at 60 s intervals. During conditioning procedures, the animals\u2019 behavior was recorded using a camera mounted on the ceiling of the chamber. Freezing and movement velocities were analyzed using ANY-maze. Freezing behavior was automatically detected when movement was absent for at least 0.8 s. For fleeing responses, flight score was calculated following previous studies (Borkar and Fadok, 2021; Fadok et al., 2017). Speed (cm/s) was extracted using the animal\u2019s center body point, and the flight score was measured by dividing the average speed during each CS alone period by the speed during the same length of the pre-CS period. For conditioning trials, the CS alone period was the first 7 s from CS onset, while for the habituation and retention tests, it was 10 s. Vertical movements, such as jumping, were manually recorded by an experimenter blind to the group assignments, with 1 point added to the flight score for each escape jump. The number of times the mice bumped into the robot was manually scored by an experimenter who was blinded to the group assignments of the animals. We divided each group into two to three animal batches and replicated the experiments to confirm the consistency of the results across these batches.\n\n### Fear conditioning with electrical footshock\n\nA standard fear conditioning paradigm with electric footshock was conducted in four identical chambers (21.6 \u00d7 17.8 \u00d7 12.7 cm; Med Associates) placed inside sound-attenuating boxes. Each chamber was equipped with two speakers on one wall with 24 shock grids on the floor wired to a scrambled shock generator. Tone habituation and retention test of fear memory was tested in a different context where white plastic panels (20 \u00d7 16 \u00d7 12 cm) were inserted inside the chamber covering the walls and grids. The chamber and inserts were cleaned with 70% ethanol between animals.\n\nAfter a week of resting period from fear conditioning paradigm with the robot, animals underwent conventional fear conditioning paradigm. On day 1, mice were habituated to a different CS (12 kHz; 80 dB; 10 s). The white plastic panels were inserted inside the chamber, and the animals were allowed to freely explore the context for 3 min. The CS was then presented four times with an ITI of 60 s. On the next day, after 3 min of free exploration, the animals received 10 CS\u2013US trials, each co-terminating with a 1 s footshock (0.3 mA) with a 60 s ITI. CGRP neurons were either activated or inhibited during footshock delivery. For activation, 30 Hz of blue light was delivered during footshock presentation. For inhibition, continuous red light was delivered for 1 s followed by a 1 s ramp down during footshock presentation. To add a context-specific odor, a petri dish filled with a 1% acetic acid solution was placed under the grid floor. On day 3, fear memory in response to the CS was tested. As on the first day, animals were placed in the chamber with the white plastic panels, and the CS was presented four times at 60 s intervals. Animal behavior was recorded during the experiments by a camera installed on the ceiling, and freezing and fleeing responses were analyzed afterward.\n\n### Single-unit recording\n\nA custom-made microdrive containing four tetrodes (20 \u00b5m diameter tungsten wire; California Fine Wire) glued to one optic fiber (200 \u00b5m core diameter, 0.22 numerical aperture) was used. Tetrode tips were cut to protrude beyond the optic fiber by 400\u2013500 \u00b5m and were gold-plated to reach impedances of 200\u2013500 k\u03a9, tested at 1 kHz. After the recovery period from surgery, individual mice were placed in a holding cage, and single-unit activity was monitored using a Cheetah data acquisition system (Digital Lynx SX, Neuralynx). Neural signals were filtered between 0.6 and 6 kHz, digitized at 32 kHz, and amplified 1000\u20138000 times. To identify ChR2-expressing units in the PBN, 10 blue light pulses (473 nm; 5 ms width; 4\u201310 mW/mm2 intensity; Laswerglow technologies) were delivered at 30 Hz via the optic fiber. If no light-responsive units were detected, the tetrodes were lowered by 40\u201380 \u00b5m increments, up to 160 \u00b5m per day. Once light-responsive units were found, behavioral recording sessions began.\n\nDuring daily recording sessions, spontaneous spikes from PBN neurons were recorded in the home cage for 10 min. Neuronal firing rates were further recorded during fear conditioning sessions over three consecutive days. On day 1, mice were first habituated to a tone (10 kHz, 80 dB, 10 s duration) as the conditioned stimulus (CS) for 10 times. On day 2, mice underwent 10 exposures to the CS, each co-terminated with an unconditioned aversive stimulus (US) consisting of 3 s of chasing by a robot, with an average inter-trial interval (ITI) of 100 s. On day 3, mice were tested for fear retention with 10 presentations of the CS alone. At the end of each recording session, 10 trains of 10 light pulses (total 100 presentations; 30 s intervals) were delivered to identify ChR2-expressing CGRP neurons in the PBN. The tetrodes were kept in the same location to compare neuronal responses to the CS across 3 d of conditioning. However, neurons recorded across 3 d were considered independent units rather than the same units.\n\nAfter completing the fear conditioning sessions, neuronal firing rates were recorded in response to three different aversive stimuli: pinprick, tail pinch, and robot chasing. Pinprick and tail pinch were administered by a trained experimenter throughout all recording sessions to ensure minimal variability, as described previously (Pyeon et al., 2024). For the pinprick, mice were placed in a white cylindrical Plexiglass container (14 cm in diameter, 20 cm in height) with a plastic grid floor, and hind paws were pinpricked with a 26 G syringe needle (approximately 0.5 s duration). For the tail pinch, mice were placed in a rectangular Plexiglass cage (27 \u00d7 18 \u00d7 8 cm), and the tail was pinched using forceps (1 s duration). For the robot chasing, mice were chased by the same robot used in the conditioning sessions but without the predictive CS. After the daily recording session, all tetrodes were lowered by 40\u201380 \u00b5m to find different light-responsive neurons and the mouse was returned to its home cage.\n\nNeuronal spikes were isolated based on various waveform characteristics using Offline Sorter (Plexon). Stably firing units throughout the behavioral recording session were further analyzed using MATLAB software (MathWorks). To classify CGRP neurons, peri-event time histograms (PETHs; 11.11 ms bins) were constructed around the light presentations. Spike probability and latency were calculated for individual units in response to a total of 100 light pulses, and a cluster analysis was conducted on all units. The cluster with the highest spike probability (>0.8) and the shortest latency (<5.5 ms) was identified as CGRP neurons. These neurons also showed higher correlations between spontaneous and light-evoked waveforms, compared with optically insensitive PBN neurons. To further examine responses of CGRP neurons to aversive stimuli, PETHs (50 s-ms bins) were generated around the time of these aversive stimuli. Firing rates in PETHs were converted to z-scores relative to baseline firing rates observed during 3 s period before each stimulus. Average neuronal responses to aversive stimuli were measured during 0.65 s window from stimulus onset.\n\n### Histology\n\nAfter completion of all behavioral experiments, mice were anesthetized and transcardially perfused with phosphate-buffered saline (PBS) followed by 4% paraformaldehyde (PFA). Dissected brains were post-fixed overnight in 4% PFA, then cryoprotected in 30% sucrose in PBS at 4 \u00b0C for 72 hr. Brains were frozen and sectioned into 30 \u00b5m coronal slices on a cryostat (CM1860, Leica Biosystems). Sections were mounted on microscopic slides and cover-slipped with DAPI Fluoromount-G (Southern Biotech). Using a fluorescence microscope (EVOS M5000, Thermo Fisher Scientific), images were taken to examine recording sites, fiber placements, and fluorescent expression levels.\n\n### Statistical analysis\n\nStatistical analyses were performed using a statistical software package (SPSS version 27.0, IBM SPSS, Armonk, NY). Statistical tests for electrophysiological and behavioral results were assessed with mixed-design ANOVA that contained within-subjects variables (e.g. trials) and between-subjects variables (e.g. group) as well as one-way ANOVA across groups. Once significant interactions were observed, Bonferroni corrections were used for post hoc pairwise comparisons. Two-tailed p-values <0.05 were considered significant. All data were expressed as mean \u00b1 SEM. All statistical results are summarized in the Supplementary file 1.\n",
+      "created_at": "2025-12-04T05:09:06.890098Z"
+    },
+    {
+      "id": "28152589-c962-4d45-bb4a-045646a81062",
+      "submission_id": "a98e42e6-3a9b-4a7f-8f18-2f2799f5fc8a",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Michael A McDannald, https://ror.org/02n2fzt79 Boston College United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.101523.sa0](https://doi.org/10.7554/eLife.101523.sa0)\n\nThis valuable work advances our understanding of parabrachial CGRP threat function. The evidence supporting CGRP aversive outcome signaling to promote active defensive behavior is solid. The work will be of interest to neuroscientists studying defensive behaviors.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Michael A McDannald, https://ror.org/02n2fzt79 Boston College United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.101523.sa1](https://doi.org/10.7554/eLife.101523.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Parabrachial CGRP neurons modulates conditioned active defensive behavior under a naturalistic threat\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Kate Wassum as the Senior Editor.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions (for the authors):\n\nThree reviewers have assessed your manuscript and are asking that you revise and resubmit your findings. While all three reviewers saw the experiments as addressing an important topic, there were a variety of concerns about the experimental design and statistical reporting. These concerns must be fully addressed in any resubmission.\n\nThe biggest concern was how fleeing is being reported \u2013 by flight count. Flight counts are very low and may not be amendable to standard statistical analyses. Reporting an additional flight metric, such as speed, may provide a better overall picture of the behavior and be more amendable to statistical analyses.\n\nAnother concern was the design and reporting of behavior during the predator-like robot experiments. First, these experiments did not use any sort of control cue, so it is unclear to what degree cue-evoked behavior is due to the relationship with predator rotation. Second, from the manuscript it is totally unclear how the mice behaved during this session, and how they are interacting with the predator. Are there frequent collisions? What is the pattern of fleeing like during these sessions?\n\nFinally, experimental evidence showing that CGRP neuron activation is necessary and sufficient to produce flight is not substantiated. Instead, manipulations are focused on altering the intensity of the unconditioned stimulus \u2013 the predator-like robot.\n\nIn addition to these consensus concerns, several other concerns were raised by individual reviewers. These concerns should also be addressed in any resubmission.\n\nReviewer #1 (Recommendations for the authors):\n\nExcellent work. My only recommendation is to use control (unpaired) procedures in the robot US setting. Need to be confident your observed flight behavior is due to pairing of the CS and US.\n\nReviewer #2 (Recommendations for the authors):\n\nI would like to congratulate the authors on a well-executed and insightful study. The innovative approach and comprehensive analysis presented in this manuscript make a significant contribution to our understanding of the role of CGRP neurons in defensive behaviors. The findings are robust and clearly demonstrate the dual role of these neurons in modulating both passive and active responses to threats. The manuscript is well-written, the methods are sound, and the results are compelling. I believe this work will have a meaningful impact on the field and offer valuable insights for future research. I commend the authors for their excellent work and have no further suggestions at this time.\n\nReviewer #3 (Recommendations for the authors):\n\n1. In this study, Pyeon et al. employ a predator-like robot to chase the animals to simulate naturalistic threat imminence in mice. While the idea and attempt are well intentioned, the overall data suggests the model is only inducing weak unconditional responses to the robot. Mice show only a small number of fleeing attempts compared to the number of robot chase trials.\n\n2. For the conventional threat conditioning experiment, the authors subjected previously robot-conditioned mice to sequential conditioning. This resulted in a higher fleeing count in the ChR2 group during the habituation session (Figure 4 C). This effect could be due to a sensitization effect caused by previous ChR2 stimulation of the CGRP neurons.\n\n3. The speed of the robot used in this study (70-90 cm/s) is quite high and is likely to cause frequent collisions with the mouse. The paper does not describe what happens if the robot collides with the mouse. Does it stop? Does it push the mouse forward? The behavior during the conditioning session needs to be reported in much more detail. Also, the small number of flight bouts in all experiments suggests that the robot is not being perceived as a high-intensity threat.\n\n4. It is exceedingly difficult to discern how fleeing counts are defined and quantified. Because fleeing is being reported as counts, this indicates that these are discrete data, therefore, ANOVA is not an appropriate statistical method. ANOVAs assume continuous data and a normal distribution.\n\n5. In Figure 3 B-C, ChR2 stimulation did not further elevate the freezing or fleeing count during the conditioning phase. Since US-mediated neuronal activation was elevated for at least 3 sec post termination of the US (Figure 1F, H), ChR2 stimulation should be performed for such an extended period. If possible, authors should also present the post-US data (do the mice freeze after the robot?).\n\n6. The intensity of the pinprick and tail pinches are not defined and are potentially inconsistent across the mice as these stimuli are administered manually.\n\n7. On page 9, the authors state the following about the ChR2 stimulation, \"Combined with the spontaneous firing rate during robot chasing (about 40 Hz), this totaled approximately 70 Hz, matching the peak firing rate observed in the upper quartile during tail pinch\". ChR2 simulation will entrain the neuron to fire with each pulse up to approximately 20 Hz, after which the failure rate increases. In effect, neurophysiology does not work in an additive fashion.\n\n8. The authors claim, \"We hypothesized that CGRP neurons contribute to the selection of adaptive defensive behaviors by signaling the severity of the threat\". The selection of defensive behavior is not tested in these experiments\n\n[Editors' note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Parabrachial CGRP neurons modulate conditioned active defensive behavior under a naturalistic threat\" for further consideration by eLife. Your revised article has been evaluated by Kate Wassum (Senior Editor) and Michael McDannald (Reviewing Editor).\n\nThe three reviewers agree that the revisions made strengthened the manuscript. However, additional revisions are needed. These are addressed in full below. The most important changes are clarifying language about the non-associative nature of flight and the role for CGRP neurons in flight vs US activity.\n\nReviewer #1 (Recommendations for the authors):\n\nIn my initial review I expressed concern that the flight observed to the cue was not due to pairing with the chasing robot, but would be observed to any cue played in the context. In response, the authors ran a cohort of unpaired mice which received cue presentations and the chasing robot at different times. I appreciate the authors including this control group. However, as was my concern, there is very poor evidence that flight in this setting is due to pairing with the chasing robot. Within the chasing sessions, paired and unpaired mice are showing comparable levels of flight. Further, in the extinction test unpaired mice appear to show even greater flight than the paired mice. By contrast, freezing shows specificity to paired mice and is readily observed during extinction testing. This is problematic for flight because it shows that the same mice not showing conditioned flight show conditioned freezing. Recent studies in both mice and rats that have used appropriate control cues have observed robust conditioned flight. That bar is not reached in this manuscript.\n\nBecause the authors addressed my concerns, I am positively inclined towards the manuscript. However, because there is very little evidence that conditioned active defensive behaviors were observed, the authors need to refrain from using the term in the title and the manuscript. Further, the authors need to describe flight in a way that does not describe or suggest that it is conditioned or learned. This only seems correct given their observations of unpaired responding.\n\nReviewer #3 (Recommendations for the authors):\n\nThe manuscript by Pyeon et al. has been improved by the addition of additional analysis, an unpaired control condition, and clarification of experimental design. I have a few remaining concerns which should be addressed.\n\n1. There remain numerous instances in the text that imply that CGRP neurons are capable of inducing escape behavior (Lines 59-60; 71-72; 260-262; 315-316), yet this is not demonstrated experimentally. In fact, when CGRP neurons are optogenetically activated in the absence of external stimuli, they induce freezing behavior, not flight (Figure 2; Lines 142-143). What the authors show is that CGRP neurons are important for US encoding, which under the right experimental conditions can allow the CS to elicit flight behavior (i.e., under high threat conditions). The authors should change their language or demonstrate that CGRP neurons can elicit flight. Further to this point, the TetTox approach does not allow for the disambiguation of CGRP neuron involvement in different phases of learning or expression (Lines 312-313).\n\n2. The authors describe what happens when the robot collides with the mouse (e.g., Lines 89-90). The authors should provide a video demonstrating this, and I would like to see a quantification of how the animal's speed is altered by collision. The authors also state that bumping leads to stronger conditioned defensive behaviors (Lines 155-156) but these data are not shown. This correlation should be shown.\n\n3. The argument given in Lines 174-176 should be rephrased to indicate that this is a hypothesis for why the Jaws group had freezing similar to control levels.\n\n4. The authors claim that collisions with the robot push the mouse forward but do not harm the animal, yet in Lines 298-299 they posit that prolonged neuronal excitation was \"presumably due to the pain experienced after bumping into robot\". Which is it, painful or innocuous?\n\n5. A more accurate Figure title for Figure 3 would be \"Activation of CGRP neurons during US presentation enhances active defensive behavior\".\n\n6. Figure 5 needs a new title as CGRP neurons are not manipulated or recorded in these experiments.\n\n7. The authors should comment on the fact that the TetTox mice react normally to US exposure (Figure 6). Which pathways are mediating the US behavioral response?\n",
+      "created_at": "2025-12-04T05:09:06.890098Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T05:09:06.890098Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T05:09:06.890098Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "19ea771c-6104-47b5-8163-6e45e4c45329",
+      "content_id": "f3291109-6704-48cc-8521-9536d0815f8d",
+      "claim_id": "C1",
+      "claim": "Calcitonin gene-related peptide (CGRP) neurons in the parabrachial nucleus (PBN) represent aversive information and signal a general alarm to the forebrain.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent studies suggest that calcitonin gene-related peptide (CGRP) neurons in the parabrachial nucleus (PBN) represent aversive information and signal a general alarm to the forebrain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research in the field.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:09:06.890098Z"
+    },
+    {
+      "id": "c782a8c0-70ab-448f-92cb-19daf6d054de",
+      "content_id": "f3291109-6704-48cc-8521-9536d0815f8d",
+      "claim_id": "C2",
+      "claim": "Most prior research on CGRP neurons has focused on their role in passive freezing responses, with limited exploration of their involvement in active defensive behaviors.",
+      "claim_type": "EXPLICIT",
+      "source": "However, most prior research has focused on the role of CGRP neurons in passive freezing responses, with limited exploration of their involvement in active defensive behaviors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the state of the literature, drawing from established knowledge of prior research.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:09:06.890098Z"
+    },
+    {
+      "id": "a098b604-92d2-4918-861d-9075866bfe80",
+      "content_id": "f3291109-6704-48cc-8521-9536d0815f8d",
+      "claim_id": "C3",
+      "claim": "CGRP neurons encode the intensity of aversive stimuli through variations in firing durations and amplitudes.",
+      "claim_type": "EXPLICIT",
+      "source": "Our electrophysiological results revealed that CGRP neurons encode the intensity of aversive stimuli through variations in firing durations and amplitudes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by electrophysiological recordings presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:09:06.890098Z"
+    },
+    {
+      "id": "acec6d71-8024-4669-92e0-7935b97e8ee1",
+      "content_id": "f3291109-6704-48cc-8521-9536d0815f8d",
+      "claim_id": "C4",
+      "claim": "Optogenetic activation of CGRP neurons during robot chasing elevated flight responses in both conditioning and retention tests.",
+      "claim_type": "EXPLICIT",
+      "source": "Optogenetic activation of CGRP neurons during robot chasing elevated flight responses in both conditioning and retention tests, presumably by amplifying the perception of the threat as more imminent and dangerous.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from optogenetic manipulation experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:09:06.890098Z"
+    },
+    {
+      "id": "273af027-6cf0-474e-9b7d-6ad937b0fcc9",
+      "content_id": "f3291109-6704-48cc-8521-9536d0815f8d",
+      "claim_id": "C5",
+      "claim": "Optogenetic activation of CGRP neurons amplifies the perception of the threat as more imminent and dangerous.",
+      "claim_type": "EXPLICIT",
+      "source": "Optogenetic activation of CGRP neurons during robot chasing elevated flight responses in both conditioning and retention tests, presumably by amplifying the perception of the threat as more imminent and dangerous.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the experimental results, involving inference about the mechanism.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:09:06.890098Z"
+    },
+    {
+      "id": "0f2ee5eb-c9c2-45a5-bd86-cb86ded6a80a",
+      "content_id": "f3291109-6704-48cc-8521-9536d0815f8d",
+      "claim_id": "C6",
+      "claim": "Animals with inactivated CGRP neurons exhibited reduced flight responses, even when the robot was programmed to appear highly threatening during conditioning.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, animals with inactivated CGRP neurons exhibited reduced flight responses, even when the robot was programmed to appear highly threatening during conditioning.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from CGRP neuron inactivation experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:09:06.890098Z"
+    },
+    {
+      "id": "406098e7-b9a7-43f5-8424-c44509b28188",
+      "content_id": "f3291109-6704-48cc-8521-9536d0815f8d",
+      "claim_id": "C7",
+      "claim": "CGRP neurons in the PBN function as a critical alarm system capable of dynamically regulating active defensive behaviors by amplifying threat perception.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings expand the understanding of CGRP neurons in the PBN as a critical alarm system, capable of dynamically regulating active defensive behaviors by amplifying threat perception, and ensuring adaptive responses to varying levels of danger.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental findings presented in the manuscript.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:09:06.890098Z"
+    },
+    {
+      "id": "09906020-83f9-4a7a-a53e-12cb29290dba",
+      "content_id": "f3291109-6704-48cc-8521-9536d0815f8d",
+      "claim_id": "C8",
+      "claim": "Passive defensive strategies, such as freezing, help avoid detection from predators by reducing motion.",
+      "claim_type": "EXPLICIT",
+      "source": "Passive defensive strategies, such as freezing, help avoid detection from predators by reducing motion (Blanchard and Blanchard, 1969a; Fanselow, 1980; Fanselow, 1982).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:09:06.890098Z"
+    },
+    {
+      "id": "5a132480-4dd6-4143-b911-66391ccfa8ac",
+      "content_id": "f3291109-6704-48cc-8521-9536d0815f8d",
+      "claim_id": "C9",
+      "claim": "Active defensive behaviors, including fleeing or fighting, enable animals to swiftly escape or confront imminent threats.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, active defensive behaviors, including fleeing or fighting, enable animals to swiftly escape or confront imminent threats (Blanchard and Blanchard, 1969b; Bolles, 1970).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:09:06.890098Z"
+    },
+    {
+      "id": "5d4597d8-7ece-4b23-919d-55476fcfa27f",
+      "content_id": "f3291109-6704-48cc-8521-9536d0815f8d",
+      "claim_id": "C10",
+      "claim": "The ability to adaptively switch between passive and active defenses in response to varying threat contexts is essential for optimizing survival outcomes.",
+      "claim_type": "EXPLICIT",
+      "source": "The ability to adaptively switch between passive and active defenses in response to varying threat contexts is essential for optimizing survival outcomes, as demonstrated by studies utilizing naturalistic threat stimuli like predator-like robots or looming disks, which allowed the observation of various critical defensive behaviors (Choi and Kim, 2010; Kang et al., 2022; Pyeon et al., 2023; Telensky et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research and represents established knowledge.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:09:06.890098Z"
+    },
+    {
+      "id": "3ea89922-3a0a-4c1c-987e-6137cf80f423",
+      "content_id": "f3291109-6704-48cc-8521-9536d0815f8d",
+      "claim_id": "C11",
+      "claim": "Neurons within the PBN that express CGRP respond to noxious stimuli of diverse sensory modalities.",
+      "claim_type": "EXPLICIT",
+      "source": "These neurons respond to noxious stimuli of diverse sensory modalities (Campos et al., 2018; Carter et al., 2013; Chen et al., 2018; Kang et al., 2022) and transmit interoceptive and exteroceptive information to the forebrain (Bernard and Besson, 1988; Chiang et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:09:06.890098Z"
+    },
+    {
+      "id": "6bdad41a-ecd8-4943-8c92-6dae3601ba3f",
+      "content_id": "f3291109-6704-48cc-8521-9536d0815f8d",
+      "claim_id": "C12",
+      "claim": "CGRP neurons transmit interoceptive and exteroceptive information to the forebrain.",
+      "claim_type": "EXPLICIT",
+      "source": "These neurons respond to noxious stimuli of diverse sensory modalities (Campos et al., 2018; Carter et al., 2013; Chen et al., 2018; Kang et al., 2022) and transmit interoceptive and exteroceptive information to the forebrain (Bernard and Besson, 1988; Chiang et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:09:06.890098Z"
+    },
+    {
+      "id": "05af690d-2edb-44c1-9be9-fdb9730a2373",
+      "content_id": "f3291109-6704-48cc-8521-9536d0815f8d",
+      "claim_id": "C13",
+      "claim": "CGRP neurons relay US information to the central amygdala during conventional fear conditioning with electric footshock.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, these CGRP neurons relay US information to the central amygdala during conventional fear conditioning with electric footshock (Han et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:09:06.890098Z"
+    },
+    {
+      "id": "53122d1a-06b2-4340-a474-5c11c94b5e2b",
+      "content_id": "f3291109-6704-48cc-8521-9536d0815f8d",
+      "claim_id": "C14",
+      "claim": "Prior studies have primarily focused on the role of CGRP neurons in mediating passive freezing behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "Prior studies have primarily focused on the role of CGRP neurons in mediating passive freezing behavior, demonstrating that activation of these neurons exclusively elicits immediate freezing behavior and contributes to the formation of fear memories (Bowen et al., 2020; Han et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:09:06.890098Z"
+    },
+    {
+      "id": "3ed17991-6e6a-42ba-b4da-46c2c46520df",
+      "content_id": "f3291109-6704-48cc-8521-9536d0815f8d",
+      "claim_id": "C15",
+      "claim": "Activation of CGRP neurons exclusively elicits immediate freezing behavior and contributes to the formation of fear memories.",
+      "claim_type": "EXPLICIT",
+      "source": "Prior studies have primarily focused on the role of CGRP neurons in mediating passive freezing behavior, demonstrating that activation of these neurons exclusively elicits immediate freezing behavior and contributes to the formation of fear memories (Bowen et al., 2020; Han et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:09:06.890098Z"
+    },
+    {
+      "id": "4474fe7e-8878-4ad7-95de-27343e39408f",
+      "content_id": "f3291109-6704-48cc-8521-9536d0815f8d",
+      "claim_id": "C16",
+      "claim": "CGRP neurons showed significantly increased excitation to the CS during conditioning and retention compared to habituation, but only within the first 1 s after CS onset (1.5-fold increase).",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to habituation, CGRP neurons showed significantly increased excitation to the CS during conditioning and retention, but only within the first 1 s after CS onset (1.5-fold increase); this difference became non-significant starting at 2 s (Figure 1G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by electrophysiological data presented in Figure 1G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:09:06.890098Z"
+    },
+    {
+      "id": "b8faa515-d5b5-41a0-83be-c8b00e5a1719",
+      "content_id": "f3291109-6704-48cc-8521-9536d0815f8d",
+      "claim_id": "C17",
+      "claim": "CGRP neurons exhibited significant excitation to the US with a fourfold increase.",
+      "claim_type": "EXPLICIT",
+      "source": "However, these neurons exhibited significant excitation to the US with a fourfold increase (Figure 1F and G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by electrophysiological data presented in Figures 1F and 1G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:09:06.890098Z"
+    },
+    {
+      "id": "381e6f5e-f576-4b12-b0fa-02dfa2e03e37",
+      "content_id": "f3291109-6704-48cc-8521-9536d0815f8d",
+      "claim_id": "C18",
+      "claim": "CGRP neurons primarily represent US information, albeit to a lesser extent, the onset of US-predictive information.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings using the robot as the US revealed that CGRP neurons primarily represent US information, albeit to a lesser extent, the onset of US-predictive information.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the electrophysiological data presented in the manuscript.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:09:06.890098Z"
+    },
+    {
+      "id": "5183bf0d-a424-4c19-8a80-c958c005b8f9",
+      "content_id": "f3291109-6704-48cc-8521-9536d0815f8d",
+      "claim_id": "C19",
+      "claim": "CGRP neurons showed significantly excited firing that was time-locked to the onset of all three aversive stimuli (pinprick, tail pinch, robot chasing) and maintained this activity throughout the duration of each stimulus.",
+      "claim_type": "EXPLICIT",
+      "source": "CGRP neurons showed significantly excited firing that was time-locked to the onset of all three aversive stimuli and maintained this activity throughout the duration of each stimulus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by electrophysiological recordings presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:09:06.890098Z"
+    },
+    {
+      "id": "2e4ccfa0-5601-40aa-8220-d1b297eaed02",
+      "content_id": "f3291109-6704-48cc-8521-9536d0815f8d",
+      "claim_id": "C20",
+      "claim": "After the offset of the aversive stimuli, CGRP neuronal activity gradually restored back to the baseline with a slight delay.",
+      "claim_type": "EXPLICIT",
+      "source": "After the offset of the stimuli, neuronal activity gradually restored back to the baseline with a slight delay (Figure 1H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by electrophysiological data presented in Figure 1H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:09:06.890098Z"
+    },
+    {
+      "id": "3a8cbaa2-9efd-4fd7-8a69-28d2ed0c8b02",
+      "content_id": "f3291109-6704-48cc-8521-9536d0815f8d",
+      "claim_id": "C21",
+      "claim": "The three aversive stimuli (pinprick, tail pinch, robot chasing) elicited significantly different amplitudes of firing rates in CGRP neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "These aversive stimuli elicited significantly different amplitudes of firing rates (Figure 1I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by electrophysiological data presented in Figure 1I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:09:06.890098Z"
+    },
+    {
+      "id": "7f9bde47-6530-4521-ab54-422117b17c92",
+      "content_id": "f3291109-6704-48cc-8521-9536d0815f8d",
+      "claim_id": "C22",
+      "claim": "During the tail pinch, CGRP neurons exhibited the highest excitation amplitude, ranging from 33 to 98 Hz, with an average of 58 Hz.",
+      "claim_type": "EXPLICIT",
+      "source": "During the tail pinch, which generated the strongest defensive behavior, CGRP neurons exhibited the highest excitation amplitude, ranging from 33 to 98 Hz, with an average of 58 Hz.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by electrophysiological data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:09:06.890098Z"
+    },
+    {
+      "id": "c2ed4643-628b-497e-b082-841d3790cc02",
+      "content_id": "f3291109-6704-48cc-8521-9536d0815f8d",
+      "claim_id": "C25",
+      "claim": "Activation of CGRP neurons immediately induced robust freezing behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "However, activation of CGRP neurons immediately induced robust freezing behavior, consistent with previous studies (Bowen et al., 2020; Han et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data and citations to prior research.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:09:06.890098Z"
+    },
+    {
+      "id": "20ed6f3a-c55b-48a8-b911-ff6240791837",
+      "content_id": "f3291109-6704-48cc-8521-9536d0815f8d",
+      "claim_id": "C26",
+      "claim": "Stimulating CGRP neurons without external aversive stimuli generates rapid, unconditioned freezing behavior in mice.",
+      "claim_type": "EXPLICIT",
+      "source": "These results confirmed that stimulating CGRP neurons without external aversive stimuli generates rapid, unconditioned freezing behavior in mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data presented in the manuscript.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:09:06.890098Z"
+    },
+    {
+      "id": "a05c8509-5150-4e7b-aea7-bdb7f6977a5d",
+      "content_id": "f3291109-6704-48cc-8521-9536d0815f8d",
+      "claim_id": "C27",
+      "claim": "The Jaws and unpaired groups showed significantly lower freezing levels compared to the control and ChR2 groups during conditioning with robot chasing.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the Jaws and unpaired groups showed significantly lower freezing levels than the control and ChR2 groups.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by behavioral data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:09:06.890098Z"
+    },
+    {
+      "id": "71f2ef8c-6030-4177-a71d-e6ae04e3cdd1",
+      "content_id": "f3291109-6704-48cc-8521-9536d0815f8d",
+      "claim_id": "C28",
+      "claim": "The ChR2 group displayed significantly higher flight scores compared to the other three groups during conditioning with robot chasing.",
+      "claim_type": "EXPLICIT",
+      "source": "For the flight score on the conditioning day, the ChR2 group displayed significantly higher levels compared to the other three groups (Figure 3C), while the Jaws and unpaired groups consistently had lower flight scores than the control group.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by behavioral data presented in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:09:06.890098Z"
+    },
+    {
+      "id": "fe3da837-b0af-4046-80ae-d1d0cf8f7b99",
+      "content_id": "f3291109-6704-48cc-8521-9536d0815f8d",
+      "claim_id": "C29",
+      "claim": "ChR2 mice had a higher fleeing speed in response to the CS compared to the other four groups during conditioning with robot chasing.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, analysis of movement velocity revealed that ChR2 mice had a higher fleeing speed in response to the CS compared to the other four groups (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by behavioral data presented in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:09:06.890098Z"
+    },
+    {
+      "id": "27f4cb48-b742-46ad-84a4-b927bf00fabd",
+      "content_id": "f3291109-6704-48cc-8521-9536d0815f8d",
+      "claim_id": "C30",
+      "claim": "The ChR2 group displayed significantly higher flight scores compared to the other three groups during the retention test following robot chasing conditioning.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the ChR2 group displayed significantly higher fight scores compared to the other three groups (Figure 3E and F; Video 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by behavioral data presented in Figures 3E and 3F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:09:06.890098Z"
+    },
+    {
+      "id": "7742c3bf-cfda-48f6-8fd7-f1d19b0855ee",
+      "content_id": "f3291109-6704-48cc-8521-9536d0815f8d",
+      "claim_id": "C31",
+      "claim": "The Jaws group exhibited lower flight responses due to inhibited US signaling during conditioning.",
+      "claim_type": "EXPLICIT",
+      "source": "The Jaws group exhibited lower flight responses due to inhibited US signaling during conditioning.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the experimental results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:09:06.890098Z"
+    },
+    {
+      "id": "88980fee-d105-474e-9800-034422050383",
+      "content_id": "f3291109-6704-48cc-8521-9536d0815f8d",
+      "claim_id": "C32",
+      "claim": "The Jaws group displayed freezing levels that were not significantly different from those of the control group during the retention test following robot chasing conditioning.",
+      "claim_type": "EXPLICIT",
+      "source": "However, contrary to our expectations, the Jaws group displayed freezing levels that were not significantly different from those of the control group (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by behavioral data presented in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:09:06.890098Z"
+    },
+    {
+      "id": "bcc878be-8e9f-4098-b4ac-c2dc06dbdfff",
+      "content_id": "f3291109-6704-48cc-8521-9536d0815f8d",
+      "claim_id": "C33",
+      "claim": "The lack of significant difference in freezing between the Jaws and control groups may be attributed to post-illumination rebound excitation from Jaws.",
+      "claim_type": "EXPLICIT",
+      "source": "This result may be attributed to post-illumination rebound excitation, as Jaws has been shown to yield residual activity even when ramped illumination is used to minimize this effect (Chuong et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the experimental results, supported by a citation to prior research on Jaws properties.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:09:06.890098Z"
+    },
+    {
+      "id": "e723b612-17da-415d-9a54-827e2f4a2176",
+      "content_id": "f3291109-6704-48cc-8521-9536d0815f8d",
+      "claim_id": "C34",
+      "claim": "Enhanced CGRP activity during imminent threat promotes fleeing behavior during conditioning, sustaining the heightened flight response through the retention test.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these findings suggest that enhanced CGRP activity during imminent threat promotes fleeing behavior during conditioning, sustaining the heightened flight response through the retention test.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data presented in the manuscript.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:09:06.890098Z"
+    },
+    {
+      "id": "3370167b-c712-4705-9874-409e1d1b6f1a",
+      "content_id": "f3291109-6704-48cc-8521-9536d0815f8d",
+      "claim_id": "C35",
+      "claim": "Both ChR2 and control groups exhibited a gradual increase in freezing as the trials progressed during conventional fear conditioning with footshock.",
+      "claim_type": "EXPLICIT",
+      "source": "During conditioning, both ChR2 and control groups exhibited a gradual increase in freezing as the trials progressed (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by behavioral data presented in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:09:06.890098Z"
+    },
+    {
+      "id": "b610056b-dcc3-420f-8660-51d0bcaf6426",
+      "content_id": "f3291109-6704-48cc-8521-9536d0815f8d",
+      "claim_id": "C36",
+      "claim": "The Jaws group showed significantly lower levels of freezing compared to the ChR2 and control groups during conventional fear conditioning with footshock.",
+      "claim_type": "EXPLICIT",
+      "source": "However, consistent with the previous experiment with the robot, the Jaws group showed significantly lower levels of freezing compared to the other two groups.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by behavioral data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:09:06.890098Z"
+    },
+    {
+      "id": "5f5aa846-d4b2-4ac2-953d-b6c6ed3eac22",
+      "content_id": "f3291109-6704-48cc-8521-9536d0815f8d",
+      "claim_id": "C37",
+      "claim": "All three groups exhibited equivalently low levels of fleeing responses as trials progressed during conventional fear conditioning with footshock.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, although some high flight scores were observed in the ChR2 group during the first block of trials, all three groups exhibited equivalently low levels of fleeing responses as trials progressed (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by behavioral data presented in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:09:06.890098Z"
+    },
+    {
+      "id": "2ccc8630-4a15-4fe5-a6a0-8d52801a0e96",
+      "content_id": "f3291109-6704-48cc-8521-9536d0815f8d",
+      "claim_id": "C38",
+      "claim": "ChR2-expressing mice displayed significantly more freezing compared to both control and Jaws-expressing mice during the retention test following footshock conditioning.",
+      "claim_type": "EXPLICIT",
+      "source": "When fear memory was tested 24 hr later, ChR2-expressing mice displayed significantly more freezing compared to both control and Jaws-expressing mice (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by behavioral data presented in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:09:06.890098Z"
+    },
+    {
+      "id": "2045311e-9767-4efe-abd4-9f3c3ef211d9",
+      "content_id": "f3291109-6704-48cc-8521-9536d0815f8d",
+      "claim_id": "C39",
+      "claim": "The same CGRP stimulation did not promote fleeing responses with footshock as the US.",
+      "claim_type": "EXPLICIT",
+      "source": "These data show that the same CGRP stimulation did not promote fleeing responses; however, with footshock as in the US, the freezing response observed during conditioning was intensified in the retention test.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data presented in the manuscript.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:09:06.890098Z"
+    },
+    {
+      "id": "e1720b8b-076d-4853-a143-92312c83348a",
+      "content_id": "f3291109-6704-48cc-8521-9536d0815f8d",
+      "claim_id": "C40",
+      "claim": "Additional activation of CGRP neurons enhances fear learning and memory, resulting in conditioned fleeing responses following robot chasing and conditioned freezing responses after footshock.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, additional activation of CGRP neurons enhances fear learning and memory, resulting in conditioned fleeing responses following robot chasing and conditioned freezing responses after footshock.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data presented in the manuscript.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:09:06.890098Z"
+    },
+    {
+      "id": "50d930ff-9be1-4837-b1ca-755866e59749",
+      "content_id": "f3291109-6704-48cc-8521-9536d0815f8d",
+      "claim_id": "C41",
+      "claim": "All three groups showed equivalent levels of freezing behavior during conditioning with different robot speeds.",
+      "claim_type": "EXPLICIT",
+      "source": "On the conditioning day, all three groups showed equivalent levels of freezing behavior (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by behavioral data presented in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:09:06.890098Z"
+    },
+    {
+      "id": "0b50e19e-6e5f-4d16-8601-70811700dede",
+      "content_id": "f3291109-6704-48cc-8521-9536d0815f8d",
+      "claim_id": "C42",
+      "claim": "Animals exposed to the highest robot speed (90 cm/s) exhibited significantly higher flight scores compared to the other two groups during conditioning.",
+      "claim_type": "EXPLICIT",
+      "source": "However, animals exposed to the highest speed exhibited significantly higher flight scores compared to the other two groups (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by behavioral data presented in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:09:06.890098Z"
+    },
+    {
+      "id": "ab57f82d-b4b9-4c58-bb9e-4ae925cd2672",
+      "content_id": "f3291109-6704-48cc-8521-9536d0815f8d",
+      "claim_id": "C43",
+      "claim": "Animals in the 90 cm/s condition exhibited the highest speeds in response to the CS compared to those in the 70 cm/s and 80 cm/s groups during conditioning.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of movement further revealed that animals in the 90 cm/s condition exhibited the highest speeds in response to the CS compared to those in the 70 cm/s and 80 cm/s groups (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by behavioral data presented in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:09:06.890098Z"
+    },
+    {
+      "id": "6a2b2407-925b-4d26-8ddf-f10b70b5ead8",
+      "content_id": "f3291109-6704-48cc-8521-9536d0815f8d",
+      "claim_id": "C44",
+      "claim": "The 90 cm/s group exhibited significantly lower freezing levels than the 70 cm/s and 80 cm/s groups during the retention test.",
+      "claim_type": "EXPLICIT",
+      "source": "On the retention test day, no group differences in freezing were observed between the 70 cm/s and 80 cm/s groups, but 90 cm/s group exhibited significantly lower freezing levels than the other two groups (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by behavioral data presented in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:09:06.890098Z"
+    },
+    {
+      "id": "67e50e98-7ac2-499a-bf04-e74f43476214",
+      "content_id": "f3291109-6704-48cc-8521-9536d0815f8d",
+      "claim_id": "C45",
+      "claim": "Animals in the 90 cm/s speed displayed a significantly higher number of flight scores compared to the other two groups during the retention test.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, animals in the 90 cm/s speed displayed a significantly higher number of flight scores compared to the other two groups (Figure 5E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by behavioral data presented in Figure 5E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:09:06.890098Z"
+    },
+    {
+      "id": "5fea4b10-9fdf-41f9-a7c0-981d6bd5f089",
+      "content_id": "f3291109-6704-48cc-8521-9536d0815f8d",
+      "claim_id": "C46",
+      "claim": "There was a positive correlation between robot speed and fleeing responses.",
+      "claim_type": "EXPLICIT",
+      "source": "There was a positive correlation between robot speed and fleeing responses, and a negative correlation between robot speed and freezing responses (Figure 5D and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by correlation analysis of behavioral data presented in Figures 5D and 5E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:09:06.890098Z"
+    },
+    {
+      "id": "b163ada8-0a86-4c59-933b-ceac627d7d40",
+      "content_id": "f3291109-6704-48cc-8521-9536d0815f8d",
+      "claim_id": "C47",
+      "claim": "There was a negative correlation between robot speed and freezing responses.",
+      "claim_type": "EXPLICIT",
+      "source": "There was a positive correlation between robot speed and fleeing responses, and a negative correlation between robot speed and freezing responses (Figure 5D and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by correlation analysis of behavioral data presented in Figures 5D and 5E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:09:06.890098Z"
+    },
+    {
+      "id": "5d1c238d-b112-438f-91a0-9c0a27736190",
+      "content_id": "f3291109-6704-48cc-8521-9536d0815f8d",
+      "claim_id": "C48",
+      "claim": "Animals exposed to the 90 cm/s speed exhibited a fleeing response similar to that of those subjected to 70 cm/s robot chasing with CGRP stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, animals exposed to the 90 cm/s speed exhibited a fleeing response similar to that of those subjected to 70 cm/s robot chasing with CGRP stimulation (Figure 3C and F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by comparison of behavioral data presented in Figures 3C, 3F, and 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:09:06.890098Z"
+    },
+    {
+      "id": "aff08d46-7454-45de-a8ad-5b78218c4446",
+      "content_id": "f3291109-6704-48cc-8521-9536d0815f8d",
+      "claim_id": "C49",
+      "claim": "The increased activity of CGRP neurons likely enhances fleeing behavior by amplifying the perceived threat of the US.",
+      "claim_type": "EXPLICIT",
+      "source": "Considering the combined results of these experiments, the increased activity of CGRP neurons likely enhances fleeing behavior by amplifying the perceived threat of the US.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data presented in the manuscript.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:09:06.890098Z"
+    },
+    {
+      "id": "a86455c3-23d8-445d-a418-fa594673979d",
+      "content_id": "f3291109-6704-48cc-8521-9536d0815f8d",
+      "claim_id": "C50",
+      "claim": "The TetTox group exhibited significantly lower levels of both freezing and fleeing compared to the control group during conditioning with 90 cm/s robot speed.",
+      "claim_type": "EXPLICIT",
+      "source": "On the conditioning day, the TetTox group exhibited significantly lower levels of both freezing and fleeing compared to the control group (Figure 6B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by behavioral data presented in Figures 6B and 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:09:06.890098Z"
+    },
+    {
+      "id": "6274bfb2-8a39-4b5c-8756-0b30470513e7",
+      "content_id": "f3291109-6704-48cc-8521-9536d0815f8d",
+      "claim_id": "C51",
+      "claim": "The TetTox group, with silenced CGRP neurons, showed little to no fleeing behavior in response to the CS during conditioning with 90 cm/s robot speed.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, velocity analysis confirmed that the TetTox group, with silenced CGRP neurons, showed little to no fleeing behavior in response to the CS, while the control group exhibited robust flight responses (Figure 6D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by behavioral data presented in Figure 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:09:06.890098Z"
+    },
+    {
+      "id": "2061c662-f3e3-41e1-af96-b1678ea3bfb6",
+      "content_id": "f3291109-6704-48cc-8521-9536d0815f8d",
+      "claim_id": "C52",
+      "claim": "The TetTox group consistently showed reduced levels of freezing and fleeing compared to controls during the retention test following conditioning with 90 cm/s robot speed.",
+      "claim_type": "EXPLICIT",
+      "source": "This persisted on the retention day, with the TetTox group consistently showing reduced levels of freezing and fleeing compared to controls (Figure 6E and F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by behavioral data presented in Figures 6E and 6F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:09:06.890098Z"
+    },
+    {
+      "id": "50be0a2b-5619-4864-9fd1-cc80b59edbde",
+      "content_id": "f3291109-6704-48cc-8521-9536d0815f8d",
+      "claim_id": "C53",
+      "claim": "CGRP neurons are necessary for perceiving threats and promoting fleeing.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that CGRP neurons are necessary for perceiving threats and promoting fleeing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data presented in the manuscript.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:09:06.890098Z"
+    },
+    {
+      "id": "4c9b6235-b147-4ebf-a8eb-934fab93f7c7",
+      "content_id": "f3291109-6704-48cc-8521-9536d0815f8d",
+      "claim_id": "C54",
+      "claim": "Enhancing CGRP neuronal activity, either optogenetically or by increasing threat levels, strengthens fear learning and memory, leading to intensified active defensive behaviors.",
+      "claim_type": "EXPLICIT",
+      "source": "Enhancing CGRP neuronal activity, either optogenetically or by increasing threat levels, strengthens fear learning and memory, leading to intensified active defensive behaviors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data presented in the manuscript.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:09:06.890098Z"
+    },
+    {
+      "id": "48dd55df-fe6a-4ebb-9d91-ba30e8b8e015",
+      "content_id": "f3291109-6704-48cc-8521-9536d0815f8d",
+      "claim_id": "C55",
+      "claim": "The choice of defensive strategies depends on the perceived severity of the threat.",
+      "claim_type": "EXPLICIT",
+      "source": "The choice of defensive strategies depends on the perceived severity of the threat (Fanselow and Lester, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:09:06.890098Z"
+    },
+    {
+      "id": "6d054786-2a1d-42bd-b993-66581c7416f8",
+      "content_id": "f3291109-6704-48cc-8521-9536d0815f8d",
+      "claim_id": "C56",
+      "claim": "When an animal detects a predator at a relatively safe distance, freezing is the most likely defensive behavior, as it helps avoid detection.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, when an animal detects a predator at a relatively safe distance, freezing is the most likely defensive behavior, as it helps avoid detection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This represents established knowledge about defensive behavior.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:09:06.890098Z"
+    },
+    {
+      "id": "715cc861-1136-4d86-a910-83eef2bfc2ae",
+      "content_id": "f3291109-6704-48cc-8521-9536d0815f8d",
+      "claim_id": "C57",
+      "claim": "As the threat becomes more imminent and threat levels increase, the animal shifts from passive freezing to more active defense, adopting behaviors such as fleeing or fighting.",
+      "claim_type": "EXPLICIT",
+      "source": "However, as the threat becomes more imminent and threat levels increase, freezing is no longer the optimal choice. At this point, the animal shifts from passive freezing to more active defense, adopting behaviors such as fleeing or, if necessary, fighting.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This represents established knowledge about defensive behavior.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:09:06.890098Z"
+    },
+    {
+      "id": "94d9b7fe-0cb8-4964-ac5c-c9fffa77e6fb",
+      "content_id": "f3291109-6704-48cc-8521-9536d0815f8d",
+      "claim_id": "C58",
+      "claim": "Most research on CGRP has utilized footshock or other aversive stimuli in small arenas, potentially limiting the observation of fleeing responses.",
+      "claim_type": "EXPLICIT",
+      "source": "However, most research on CGRP has utilized footshock (Bowen et al., 2020; Han et al., 2015) or other aversive stimuli in small arenas (Kang et al., 2022), potentially limiting the observation of fleeing responses and leading to a focus on passive freezing as the predominant behavior studied.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the state of the literature, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:09:06.890098Z"
+    },
+    {
+      "id": "7bb9f974-53dc-467c-8bbd-f3a758404d3d",
+      "content_id": "f3291109-6704-48cc-8521-9536d0815f8d",
+      "claim_id": "C59",
+      "claim": "CGRP neurons are more excited in response to the US compared to the CS.",
+      "claim_type": "EXPLICIT",
+      "source": "While effective for observing transitions between freezing and fleeing, our electrophysiological data show that CGRP neurons are more excited in response to the US compared to the CS (Figure 1F and G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by electrophysiological data presented in Figures 1F and 1G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:09:06.890098Z"
+    },
+    {
+      "id": "8e13c07b-6c90-4bc8-8823-e958a662f425",
+      "content_id": "f3291109-6704-48cc-8521-9536d0815f8d",
+      "claim_id": "C60",
+      "claim": "Altering the type of US is more appropriate for studying CGRP neurons than changing the CS.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, altering the type of US is more appropriate for studying CGRP neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the electrophysiological data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:09:06.890098Z"
+    },
+    {
+      "id": "1932d129-28e9-4b4b-b547-41d08b56773d",
+      "content_id": "f3291109-6704-48cc-8521-9536d0815f8d",
+      "claim_id": "C61",
+      "claim": "A robot speed of 70 cm/s did not induce fleeing response during the retention test.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results showed that a robot speed of 70 cm/s did not induce fleeing response during the retention test (Figures 3F and 5E); however, increasing the robot's speed to 90 cm/s elicited conditioned flight responses in control mice.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by behavioral data presented in Figures 3F and 5E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:09:06.890098Z"
+    },
+    {
+      "id": "162c9cc9-df97-4388-a704-234cf42dd6af",
+      "content_id": "f3291109-6704-48cc-8521-9536d0815f8d",
+      "claim_id": "C62",
+      "claim": "Increasing the robot's speed to 90 cm/s elicited conditioned flight responses in control mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results showed that a robot speed of 70 cm/s did not induce fleeing response during the retention test (Figures 3F and 5E); however, increasing the robot's speed to 90 cm/s elicited conditioned flight responses in control mice.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by behavioral data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:09:06.890098Z"
+    },
+    {
+      "id": "cb30746a-b8f4-42b0-9fc5-76852a4d7628",
+      "content_id": "f3291109-6704-48cc-8521-9536d0815f8d",
+      "claim_id": "C63",
+      "claim": "CGRP activation combined with a 70 cm/s robot speed induced flight responses similar to those observed with a 90 cm/s robot speed in control mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, CGRP activation combined with a 70 cm/s robot speed induced flight responses similar to those observed with a 90 cm/s robot speed in control mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by comparison of behavioral data from different experimental conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:09:06.890098Z"
+    },
+    {
+      "id": "9773bf32-186e-4928-a4a5-5ef2937cc636",
+      "content_id": "f3291109-6704-48cc-8521-9536d0815f8d",
+      "claim_id": "C64",
+      "claim": "CGRP activation amplifies the perceived threat, thereby promoting active defensive behaviors.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that CGRP activation amplifies the perceived threat, thereby promoting active defensive behaviors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:09:06.890098Z"
+    },
+    {
+      "id": "af8dd5bc-b624-4a8a-bf1c-fff2b7b080c7",
+      "content_id": "f3291109-6704-48cc-8521-9536d0815f8d",
+      "claim_id": "C65",
+      "claim": "Transient inhibition of CGRP neurons during the chasing was insufficient to suppress the acquisition of fear memory.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the reduced fear responses were not sustained on the retention test day, suggesting that transient inhibition during the chasing was insufficient to suppress the acquisition of fear memory (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion drawn from the behavioral data presented in Figure 3E.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:09:06.890098Z"
+    },
+    {
+      "id": "35ca461b-c78f-4662-9851-5a121518e4ab",
+      "content_id": "f3291109-6704-48cc-8521-9536d0815f8d",
+      "claim_id": "C66",
+      "claim": "Ramped illumination reduces the magnitude of rebound excitation from Jaws but does not eliminate it entirely, leaving small residual excitation.",
+      "claim_type": "EXPLICIT",
+      "source": "While ramped illumination reduces the magnitude of rebound excitation, it does not eliminate it entirely, leaving small residual excitation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This represents knowledge about the properties of Jaws optogenetic inhibition.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:09:06.890098Z"
+    },
+    {
+      "id": "b3aee6aa-4fce-4182-91c6-bfc90c32a183",
+      "content_id": "f3291109-6704-48cc-8521-9536d0815f8d",
+      "claim_id": "C67",
+      "claim": "Residual activity from Jaws may have contributed to the formation of fear memory despite the inhibition of CGRP neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "This residual activity may have contributed to the formation of fear memory despite the inhibition of CGRP neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the experimental results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:09:06.890098Z"
+    },
+    {
+      "id": "da92d7fa-c319-44e9-a4fe-68289cd29f89",
+      "content_id": "f3291109-6704-48cc-8521-9536d0815f8d",
+      "claim_id": "C68",
+      "claim": "The progressive increase in freezing levels across trials during conditioning, even with CGRP neurons silenced, suggests the involvement of other pathways in processing the aversive stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the progressive increase in freezing levels across trials during conditioning, even with CGRP neurons silenced (Figure 6B), suggests the involvement of other pathways in processing the aversive stimuli.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion drawn from the behavioral data presented in Figure 6B.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:09:06.890098Z"
+    },
+    {
+      "id": "23c5bb68-a2eb-48ec-84f8-55c34425b8ca",
+      "content_id": "f3291109-6704-48cc-8521-9536d0815f8d",
+      "claim_id": "C69",
+      "claim": "Different populations of CGRP neurons in the parvocellular subparafascicular nucleus of the thalamus respond to threats and relay negative emotional signals to the amygdala, contributing to aversive memory formation.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, different populations of CGRP neurons in the parvocellular subparafascicular nucleus of the thalamus also respond to threats and relay negative emotional signals to the amygdala thereby contributing to aversive memory formation (Kang et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:09:06.890098Z"
+    },
+    {
+      "id": "3fb9d519-de2d-4ed3-80b7-df0c6be20066",
+      "content_id": "f3291109-6704-48cc-8521-9536d0815f8d",
+      "claim_id": "C70",
+      "claim": "The midbrain periaqueductal gray (PAG) transmits aversive signals to the amygdala and other forebrain structures.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, the midbrain periaqueductal gray (PAG) transmits aversive signals to the amygdala (Johansen et al., 2010; Johansen et al., 2012; Ozawa et al., 2017) and other forebrain structures (Lefler et al., 2020; Esteban Masferrer et al., 2020), ensuring effective expression of defensive responses upon the detection of a threat.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:09:06.890098Z"
+    },
+    {
+      "id": "ff2505f3-d69f-4e35-aaab-ad27761a6885",
+      "content_id": "f3291109-6704-48cc-8521-9536d0815f8d",
+      "claim_id": "C71",
+      "claim": "CGRP neurons contribute to both active and passive defensive behaviors, facilitating responses that are appropriate to the magnitude of the threat.",
+      "claim_type": "EXPLICIT",
+      "source": "Although fear learning can occur through various pathways, our use of optogenetics and TetTox suggested that CGRP neurons contribute to both active and passive defensive behaviors, facilitating responses that are appropriate to the magnitude of the threat.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data presented in the manuscript.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:09:06.890098Z"
+    },
+    {
+      "id": "211ebb5d-d8dd-439f-b37c-121326003176",
+      "content_id": "f3291109-6704-48cc-8521-9536d0815f8d",
+      "claim_id": "C72",
+      "claim": "Optogenetic stimulation of CGRP neurons in the absence of external stimuli induced robust freezing.",
+      "claim_type": "EXPLICIT",
+      "source": "Optogenetic stimulation of CGRP neurons in the absence of external stimuli induced robust freezing, and their activation during conventional fear conditioning further amplified conditioned freezing, demonstrating their primary role in driving passive defensive responses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:09:06.890098Z"
+    },
+    {
+      "id": "e6dfc7fa-5f87-4d9a-979d-f19a3f4faf69",
+      "content_id": "f3291109-6704-48cc-8521-9536d0815f8d",
+      "claim_id": "C73",
+      "claim": "Activation of CGRP neurons during conventional fear conditioning amplified conditioned freezing.",
+      "claim_type": "EXPLICIT",
+      "source": "Optogenetic stimulation of CGRP neurons in the absence of external stimuli induced robust freezing, and their activation during conventional fear conditioning further amplified conditioned freezing, demonstrating their primary role in driving passive defensive responses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:09:06.890098Z"
+    },
+    {
+      "id": "8ee4d9c3-4a7a-4381-90b4-9ddb6d47d2d9",
+      "content_id": "f3291109-6704-48cc-8521-9536d0815f8d",
+      "claim_id": "C74",
+      "claim": "CGRP neurons have a primary role in driving passive defensive responses.",
+      "claim_type": "EXPLICIT",
+      "source": "Optogenetic stimulation of CGRP neurons in the absence of external stimuli induced robust freezing, and their activation during conventional fear conditioning further amplified conditioned freezing, demonstrating their primary role in driving passive defensive responses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:09:06.890098Z"
+    },
+    {
+      "id": "850291fa-aefc-41bb-a264-8c14d44d312c",
+      "content_id": "f3291109-6704-48cc-8521-9536d0815f8d",
+      "claim_id": "C75",
+      "claim": "Under heightened threat conditions, such as enhanced CGRP activation or faster robot speeds, CGRP neurons strengthened active defensive behaviors by amplifying perceived threat.",
+      "claim_type": "EXPLICIT",
+      "source": "However, under heightened threat conditions, such as enhanced CGRP activation or faster robot speeds, these neurons also strengthened active defensive behaviors by amplifying perceived threat.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:09:06.890098Z"
+    },
+    {
+      "id": "5a9d221f-8765-4f4b-ae52-761ca258e9d6",
+      "content_id": "f3291109-6704-48cc-8521-9536d0815f8d",
+      "claim_id": "C76",
+      "claim": "CGRP neurons detect and process threats, predominantly driving freezing behavior, while also enabling active responses under heightened danger.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings suggest that CGRP neurons detect and process threats, predominantly driving freezing behavior, while also enabling active responses under heightened danger to facilitate appropriate defensive behaviors aligned with the intensity of the threat.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data presented in the manuscript.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:09:06.890098Z"
+    },
+    {
+      "id": "0b11ab29-2de8-4704-ac0a-3f2644d1b87d",
+      "content_id": "f3291109-6704-48cc-8521-9536d0815f8d",
+      "claim_id": "C77",
+      "claim": "Out of 183 PBN neurons, 84 cells with a high probability of light-evoked spikes (>0.8) and a short spike latency (<5.5 ms) after light onset were classified as CGRP neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Out of 183 PBN neurons, 84 cells with a high probability of light-evoked spikes (>0.8) and a short spike latency (<5.5 ms) after light onset were classified as CGRP neurons (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by electrophysiological data and classification criteria presented in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:09:06.890098Z"
+    },
+    {
+      "id": "157b4cba-4303-40ed-9f31-d6385dae8aef",
+      "content_id": "f3291109-6704-48cc-8521-9536d0815f8d",
+      "claim_id": "C78",
+      "claim": "CGRP neurons showed higher correlations between spontaneous and light-evoked waveforms compared to non-CGRP neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Calcitonin gene-related peptide (CGRP) neurons showed higher correlations between spontaneous and light-evoked waveforms compared to non-CGRP neurons (t(181) = 15.16, p<0.001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by statistical analysis of electrophysiological data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:09:06.890098Z"
+    },
+    {
+      "id": "75874593-dc4b-428c-b556-1fac4f8dc58a",
+      "content_id": "f3291109-6704-48cc-8521-9536d0815f8d",
+      "claim_id": "C79",
+      "claim": "Animals exhibited both freezing and flight responses during the tone CS in fear conditioning with robot chasing.",
+      "claim_type": "EXPLICIT",
+      "source": "The animal exhibited both freezing and flight responses during the tone conditioned stimulus (CS).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by behavioral observations presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:09:06.890098Z"
+    },
+    {
+      "id": "a77fd446-09dc-428f-9cb8-68b042bc5c9c",
+      "content_id": "f3291109-6704-48cc-8521-9536d0815f8d",
+      "claim_id": "C80",
+      "claim": "Freezing was defined as any immobile movement lasting at least 0.8 s.",
+      "claim_type": "EXPLICIT",
+      "source": "Freezing was defined as any immobile movement lasting at least 0.8 s, while flight was characterized by movement velocity exceeding 8 cm/s.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological definition used in the study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:09:06.890098Z"
+    },
+    {
+      "id": "0942dee5-82c4-41c4-a073-4236714e1cd3",
+      "content_id": "f3291109-6704-48cc-8521-9536d0815f8d",
+      "claim_id": "C81",
+      "claim": "Flight was characterized by movement velocity exceeding 8 cm/s.",
+      "claim_type": "EXPLICIT",
+      "source": "Freezing was defined as any immobile movement lasting at least 0.8 s, while flight was characterized by movement velocity exceeding 8 cm/s.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological definition used in the study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:09:06.890098Z"
+    },
+    {
+      "id": "e34abec1-082d-48d7-9c96-360779da195c",
+      "content_id": "f3291109-6704-48cc-8521-9536d0815f8d",
+      "claim_id": "C82",
+      "claim": "No group differences in bumping with the robot were observed throughout the trials across the three groups in the robot chasing experiment.",
+      "claim_type": "EXPLICIT",
+      "source": "No group differences were observed throughout the trials across the three groups (repeated-measures two-way ANOVA, F(3, 36)=1.41, p=0.26).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by statistical analysis of behavioral data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:09:06.890098Z"
+    },
+    {
+      "id": "dc97c6ff-e5a5-47fa-861a-fc0b71be97d0",
+      "content_id": "f3291109-6704-48cc-8521-9536d0815f8d",
+      "claim_id": "C84",
+      "claim": "Bumping occurrence increased with robot speeds.",
+      "claim_type": "EXPLICIT",
+      "source": "Bumping occurrence increased with robot speeds (significant group effect in a mixed-design ANOVA, F(2, 21)=29.44, p<0.001): 80 cm/s resulted in more bumps than 70 cm/s (p<0.001), 90 cm/s resulted in more bumps than 80 cm/s (p<0.05), and 90 cm/s resulted in more bumps than 70 cm/s (p<0.001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by statistical analysis of behavioral data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:09:06.890098Z"
+    },
+    {
+      "id": "69c5f5b4-cea5-48a0-9198-aaccf98073f2",
+      "content_id": "f3291109-6704-48cc-8521-9536d0815f8d",
+      "claim_id": "C85",
+      "claim": "There was a positive correlation between number of bumping and robot speed.",
+      "claim_type": "EXPLICIT",
+      "source": "There was a positive correlation between number of bumping and robot speed (gray line; r=0.85, p<0.001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by correlation analysis of behavioral data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:09:06.890098Z"
+    },
+    {
+      "id": "9d67ba8b-057d-42c0-bc46-306f01689e13",
+      "content_id": "f3291109-6704-48cc-8521-9536d0815f8d",
+      "claim_id": "C87",
+      "claim": "No group differences in bumping with the robot were observed throughout the trials between the control and TetTox groups.",
+      "claim_type": "EXPLICIT",
+      "source": "No group differences were observed throughout the trials (repeated-measures two-way ANOVA, F(1, 18)=0.41, p=0.84).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by statistical analysis of behavioral data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:09:06.890098Z"
+    },
+    {
+      "id": "b2dc6c11-212e-48c9-9850-c7e785383b57",
+      "content_id": "f3291109-6704-48cc-8521-9536d0815f8d",
+      "claim_id": "C88",
+      "claim": "The average velocity of the control group during the CS was significantly higher than that of the TetTox group during the retention test following conditioning with 90 cm/s robot speed.",
+      "claim_type": "EXPLICIT",
+      "source": "The average velocity of the control group during the CS was significantly higher than that of the TetTox group (significant group effect in a repeated-measures two-way ANOVA, F(1, 18)=43.02, p<0.001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by statistical analysis of behavioral data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:09:06.890098Z"
+    },
+    {
+      "id": "77e5d4de-6b39-4afe-9818-11034a62b39f",
+      "content_id": "f3291109-6704-48cc-8521-9536d0815f8d",
+      "claim_id": "C89",
+      "claim": "Heterozygous mice expressing Cre-recombinase at the Calca locus (CalcaCre/+) were used in the study.",
+      "claim_type": "EXPLICIT",
+      "source": "Heterozygous mice expressing Cre-recombinase at the Calca locus (CalcaCre/+) were injected with a Cre-dependent adeno-associated virus (AAV) carrying an excitatory channelrhodopsin (ChR2) with red fluorescent protein (AAV-DIO-ChR2-mScarlet).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail about the animals used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:09:06.890098Z"
+    },
+    {
+      "id": "e26d5228-8c37-4204-aca1-7c497114b460",
+      "content_id": "f3291109-6704-48cc-8521-9536d0815f8d",
+      "claim_id": "C90",
+      "claim": "A movable optrode array containing one optic fiber with four tetrodes was implanted over the PBN for in vivo recordings.",
+      "claim_type": "EXPLICIT",
+      "source": "Then, a movable optrode array containing one optic fiber with four tetrodes was implanted over the PBN (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a methodological detail about the recording technique.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:09:06.890098Z"
+    },
+    {
+      "id": "7ebe5e2b-c02a-4a17-9bc9-8e434b4a8878",
+      "content_id": "f3291109-6704-48cc-8521-9536d0815f8d",
+      "claim_id": "C91",
+      "claim": "The robot moved at a speed of 70 cm/s, making one-and-a-half turns in the donut maze within 3 s.",
+      "claim_type": "EXPLICIT",
+      "source": "In the previous experiments, the robot moved at a speed of 70 cm/s, making one-and-a-half turns in the donut maze within 3 s.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail about the experimental setup.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:09:06.890098Z"
+    },
+    {
+      "id": "13e42a8c-ae78-44a1-958a-dbd65e6b28b5",
+      "content_id": "f3291109-6704-48cc-8521-9536d0815f8d",
+      "claim_id": "C92",
+      "claim": "By increasing the robot speed to 80 cm/s, the robot made two full turns within 3 s.",
+      "claim_type": "EXPLICIT",
+      "source": "By increasing the speed to 80 cm/s, the robot made two full turns, and at 90 cm/s, it made two and a half turns within the same time frame.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail about the experimental setup.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:09:06.890098Z"
+    },
+    {
+      "id": "32cd63fa-a121-41a4-b833-9de1e1ab5c68",
+      "content_id": "f3291109-6704-48cc-8521-9536d0815f8d",
+      "claim_id": "C93",
+      "claim": "At 90 cm/s, the robot made two and a half turns within 3 s.",
+      "claim_type": "EXPLICIT",
+      "source": "By increasing the speed to 80 cm/s, the robot made two full turns, and at 90 cm/s, it made two and a half turns within the same time frame.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail about the experimental setup.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:09:06.890098Z"
+    },
+    {
+      "id": "1a14f79b-8e26-41c9-bfc9-6d94c8ef12f7",
+      "content_id": "f3291109-6704-48cc-8521-9536d0815f8d",
+      "claim_id": "C94",
+      "claim": "Higher robot speeds led to more physical contact with the animals.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings suggest that the increased robot speed resulted in the animals perceiving a greater threat due to more physical contact.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the analysis of bumping data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:09:06.890098Z"
+    },
+    {
+      "id": "84ab4731-74dc-476a-991e-516ac765f92b",
+      "content_id": "f3291109-6704-48cc-8521-9536d0815f8d",
+      "claim_id": "C95",
+      "claim": "Both male and female mice, aged 3\u20136 mo, were used in all studies, and no sex differences were observed.",
+      "claim_type": "EXPLICIT",
+      "source": "Both male and female mice, aged 3\u20136 mo, were used in all studies, and no sex differences were observed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail about the animals used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:09:06.890098Z"
+    },
+    {
+      "id": "3e1c607b-d452-48d5-a833-ebbbb72f620a",
+      "content_id": "f3291109-6704-48cc-8521-9536d0815f8d",
+      "claim_id": "C96",
+      "claim": "All experiments were performed during the dark phase of the cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "All experiments were performed during the dark phase of the cycle under the guidelines of the Institutional Animal Care and Use Committee at the Korea University (KUIACUC-2022\u20130057).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail about the experimental procedures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:09:06.890098Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "4ad06d7d-45d8-40d4-88fd-81e14605c88f",
+      "content_id": "f3291109-6704-48cc-8521-9536d0815f8d",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "CGRP neurons encode aversive stimulus intensity through variations in firing duration and amplitude. Electrophysiological recordings show that CGRP neurons respond more strongly to the US than the CS, with differential responses to stimuli of varying threat levels (pinprick < robot chasing < tail pinch), where tail pinch elicited the highest firing rate (average 58 Hz).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C16-C22, C59, C77-C78 provide converging electrophysiological evidence that CGRP neurons encode stimulus intensity through firing patterns. The optical tagging methodology (C77-C78) validates neuron identification, and the graded responses to different aversive stimuli (C19-C22) with statistical support demonstrate intensity encoding. The preferential US vs. CS response (C16-C18, C59) is well-documented in Figures 1F-1I.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T05:09:06.890098Z"
+    },
+    {
+      "id": "d6e606e4-2adc-4547-831f-8ab9ee046468",
+      "content_id": "f3291109-6704-48cc-8521-9536d0815f8d",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Optogenetic activation of CGRP neurons during robot chasing elevated flight responses during both conditioning and retention tests. ChR2 stimulation increased flight scores and velocity compared to control, Jaws, and unpaired groups, while maintaining equivalent physical contact with the robot across groups.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C25-C30, C34 demonstrate that ChR2 activation enhances active defensive behaviors with robot chasing as US. The behavioral data in Figures 3C-F show significantly elevated flight scores and velocities in ChR2 group. Control for physical contact (C82) rules out confounding effects. The mechanistic interpretation (C5) about threat perception amplification is reasonable given the data pattern, though remains inferential.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T05:09:06.890098Z"
+    },
+    {
+      "id": "47f3f7aa-0201-496c-a413-6cbcec88b7d4",
+      "content_id": "f3291109-6704-48cc-8521-9536d0815f8d",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Optogenetic inhibition of CGRP neurons with Jaws reduced flight responses during conditioning but did not significantly reduce freezing during retention testing. This unexpected result is attributed to post-illumination rebound excitation from Jaws, which may have allowed fear memory formation despite transient inhibition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C6, C27, C31-C33, C65-C67 describe Jaws inhibition results that partially contradict expectations. While C6 and C27 show reduced flight during conditioning, C32 shows no difference in freezing during retention. The authors' explanation invoking Jaws rebound excitation (C33, C66-C67) is plausible but speculative. The failure to block memory formation undermines strong conclusions about necessity. This is addressed more definitively with TetTox experiments.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T05:09:06.890098Z"
+    },
+    {
+      "id": "a4b08d6c-cf8b-4c33-aa9d-a2918749edba",
+      "content_id": "f3291109-6704-48cc-8521-9536d0815f8d",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "CGRP activation during footshock conditioning amplified freezing but not fleeing responses. ChR2 stimulation during footshock US enhanced conditioned freezing in retention tests, while all groups showed equivalently low flight responses, demonstrating that CGRP neurons primarily drive passive defensive behaviors in this context.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C40, C72-C74 demonstrate US-dependent effects of CGRP manipulation. With footshock as US, ChR2 activation enhanced freezing (C38, C73) but not fleeing (C37, C39), contrasting with robot chasing results. This supports the conclusion (C40, C74) that CGRP neurons primarily mediate passive defenses but can engage active defenses depending on threat context. Data in Figure 4 support these claims.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T05:09:06.890098Z"
+    },
+    {
+      "id": "16a7bbe3-1059-4884-b51e-956c327823fc",
+      "content_id": "f3291109-6704-48cc-8521-9536d0815f8d",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Increasing robot speed from 70 to 90 cm/s systematically increased flight responses and decreased freezing during retention, mimicking the effect of optogenetic CGRP activation. The 90 cm/s condition produced flight responses similar to 70 cm/s with ChR2 stimulation, suggesting CGRP activity amplifies perceived threat.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C49, C61-C64, C84-C85, C94 demonstrate that manipulating physical threat level (robot speed) produces behavioral effects similar to manipulating CGRP activity. The positive correlation between speed and flight (C46, C85) and negative correlation with freezing (C47) support graded threat encoding. The equivalence between 90 cm/s and 70 cm/s+ChR2 (C48, C63) provides strong evidence for the threat amplification hypothesis (C49, C64). Bumping data (C84-C85, C94) confirm increased physical contact at higher speeds.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T05:09:06.890098Z"
+    },
+    {
+      "id": "012a7f2d-4b4e-4980-bb95-07ffc0c06da5",
+      "content_id": "f3291109-6704-48cc-8521-9536d0815f8d",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Chronic silencing of CGRP neurons with TetTox reduced both freezing and fleeing responses during conditioning and retention with high-speed robot (90 cm/s), demonstrating that CGRP neurons are necessary for threat perception and defensive behavior expression. However, progressive freezing increases during conditioning suggest involvement of other pathways.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C54, C68, C71, C87-C88 show that TetTox silencing, unlike transient Jaws inhibition, effectively blocks both active and passive defensive behaviors. The sustained reduction in both freezing and flight during retention (C52) demonstrates necessity. The observation of progressive freezing despite silencing (C68) appropriately acknowledges alternative pathways (C69-C70). Control for bumping (C87) rules out confounds. Data in Figure 6 strongly support these claims.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T05:09:06.890098Z"
+    },
+    {
+      "id": "b82524fc-0b3d-4780-baae-8e321009f34b",
+      "content_id": "f3291109-6704-48cc-8521-9536d0815f8d",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "CGRP neurons function as a critical alarm system that dynamically regulates defensive behaviors by amplifying threat perception, predominantly driving freezing but also enabling active responses under heightened danger to ensure adaptive responses aligned with threat intensity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C75-C76 represent the main conclusions integrating all experimental findings. The evidence from optogenetic manipulation (activation and silencing), threat level manipulation (robot speed), and US type manipulation (robot vs. footshock) converges to support this model. CGRP neurons show graded responses to threat intensity, their manipulation bidirectionally modulates defensive behaviors, and the behavioral output depends on threat context. This synthesis is well-supported by the collective data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T05:09:06.890098Z"
+    },
+    {
+      "id": "9badf025-8955-43c4-ab87-1e14f3f6799f",
+      "content_id": "f3291109-6704-48cc-8521-9536d0815f8d",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Prior research established that CGRP neurons respond to diverse aversive stimuli and primarily mediate passive freezing responses, with limited exploration of active defensive behaviors. The choice of defensive strategy depends on perceived threat severity, and most prior CGRP research used footshock in small arenas, potentially limiting observation of fleeing responses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2, C8-C15, C55-C58, C60, C69-C70 summarize established knowledge and prior work. These are appropriately cited and provide context for the current study. The characterization of the literature gap (C2, C14-C15, C58) justifies the experimental approach. The discussion of alternative pathways (C69-C70) appropriately acknowledges complexity. These background claims are well-supported by citations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T05:09:06.890098Z"
+    },
+    {
+      "id": "556cdf0a-bfc9-44a2-8bb0-918b74896e5c",
+      "content_id": "f3291109-6704-48cc-8521-9536d0815f8d",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Methodological details include the use of CalcaCre/+ mice, optrode recordings, specific behavioral definitions (freezing \u22650.8s immobility, flight >8 cm/s velocity), robot speeds (70-90 cm/s), and experimental timing (dark phase, 3-6 month old mice of both sexes with no sex differences observed).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C79-C81, C89-C93, C95-C96 provide essential methodological details. These are clearly stated and internally consistent. The behavioral definitions (C80-C81) are operationally defined. The animal details (C89, C95-C96) are appropriate. The robot speed specifications (C91-C93) are precise. These methodological claims are well-documented and support reproducibility.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T05:09:06.890098Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "a098b604-92d2-4918-861d-9075866bfe80",
+      "result_id": "4ad06d7d-45d8-40d4-88fd-81e14605c88f"
+    },
+    {
+      "claim_id": "4474fe7e-8878-4ad7-95de-27343e39408f",
+      "result_id": "4ad06d7d-45d8-40d4-88fd-81e14605c88f"
+    },
+    {
+      "claim_id": "b8faa515-d5b5-41a0-83be-c8b00e5a1719",
+      "result_id": "4ad06d7d-45d8-40d4-88fd-81e14605c88f"
+    },
+    {
+      "claim_id": "381e6f5e-f576-4b12-b0fa-02dfa2e03e37",
+      "result_id": "4ad06d7d-45d8-40d4-88fd-81e14605c88f"
+    },
+    {
+      "claim_id": "5183bf0d-a424-4c19-8a80-c958c005b8f9",
+      "result_id": "4ad06d7d-45d8-40d4-88fd-81e14605c88f"
+    },
+    {
+      "claim_id": "2e4ccfa0-5601-40aa-8220-d1b297eaed02",
+      "result_id": "4ad06d7d-45d8-40d4-88fd-81e14605c88f"
+    },
+    {
+      "claim_id": "3a8cbaa2-9efd-4fd7-8a69-28d2ed0c8b02",
+      "result_id": "4ad06d7d-45d8-40d4-88fd-81e14605c88f"
+    },
+    {
+      "claim_id": "7f9bde47-6530-4521-ab54-422117b17c92",
+      "result_id": "4ad06d7d-45d8-40d4-88fd-81e14605c88f"
+    },
+    {
+      "claim_id": "7bb9f974-53dc-467c-8bbd-f3a758404d3d",
+      "result_id": "4ad06d7d-45d8-40d4-88fd-81e14605c88f"
+    },
+    {
+      "claim_id": "0b11ab29-2de8-4704-ac0a-3f2644d1b87d",
+      "result_id": "4ad06d7d-45d8-40d4-88fd-81e14605c88f"
+    },
+    {
+      "claim_id": "157b4cba-4303-40ed-9f31-d6385dae8aef",
+      "result_id": "4ad06d7d-45d8-40d4-88fd-81e14605c88f"
+    },
+    {
+      "claim_id": "acec6d71-8024-4669-92e0-7935b97e8ee1",
+      "result_id": "d6e606e4-2adc-4547-831f-8ab9ee046468"
+    },
+    {
+      "claim_id": "273af027-6cf0-474e-9b7d-6ad937b0fcc9",
+      "result_id": "d6e606e4-2adc-4547-831f-8ab9ee046468"
+    },
+    {
+      "claim_id": "c2ed4643-628b-497e-b082-841d3790cc02",
+      "result_id": "d6e606e4-2adc-4547-831f-8ab9ee046468"
+    },
+    {
+      "claim_id": "20ed6f3a-c55b-48a8-b911-ff6240791837",
+      "result_id": "d6e606e4-2adc-4547-831f-8ab9ee046468"
+    },
+    {
+      "claim_id": "a05c8509-5150-4e7b-aea7-bdb7f6977a5d",
+      "result_id": "d6e606e4-2adc-4547-831f-8ab9ee046468"
+    },
+    {
+      "claim_id": "71f2ef8c-6030-4177-a71d-e6ae04e3cdd1",
+      "result_id": "d6e606e4-2adc-4547-831f-8ab9ee046468"
+    },
+    {
+      "claim_id": "fe3da837-b0af-4046-80ae-d1d0cf8f7b99",
+      "result_id": "d6e606e4-2adc-4547-831f-8ab9ee046468"
+    },
+    {
+      "claim_id": "27f4cb48-b742-46ad-84a4-b927bf00fabd",
+      "result_id": "d6e606e4-2adc-4547-831f-8ab9ee046468"
+    },
+    {
+      "claim_id": "e723b612-17da-415d-9a54-827e2f4a2176",
+      "result_id": "d6e606e4-2adc-4547-831f-8ab9ee046468"
+    },
+    {
+      "claim_id": "e34abec1-082d-48d7-9c96-360779da195c",
+      "result_id": "d6e606e4-2adc-4547-831f-8ab9ee046468"
+    },
+    {
+      "claim_id": "0f2ee5eb-c9c2-45a5-bd86-cb86ded6a80a",
+      "result_id": "47f3f7aa-0201-496c-a413-6cbcec88b7d4"
+    },
+    {
+      "claim_id": "7742c3bf-cfda-48f6-8fd7-f1d19b0855ee",
+      "result_id": "47f3f7aa-0201-496c-a413-6cbcec88b7d4"
+    },
+    {
+      "claim_id": "88980fee-d105-474e-9800-034422050383",
+      "result_id": "47f3f7aa-0201-496c-a413-6cbcec88b7d4"
+    },
+    {
+      "claim_id": "bcc878be-8e9f-4098-b4ac-c2dc06dbdfff",
+      "result_id": "47f3f7aa-0201-496c-a413-6cbcec88b7d4"
+    },
+    {
+      "claim_id": "af8dd5bc-b624-4a8a-bf1c-fff2b7b080c7",
+      "result_id": "47f3f7aa-0201-496c-a413-6cbcec88b7d4"
+    },
+    {
+      "claim_id": "35ca461b-c78f-4662-9851-5a121518e4ab",
+      "result_id": "47f3f7aa-0201-496c-a413-6cbcec88b7d4"
+    },
+    {
+      "claim_id": "b3aee6aa-4fce-4182-91c6-bfc90c32a183",
+      "result_id": "47f3f7aa-0201-496c-a413-6cbcec88b7d4"
+    },
+    {
+      "claim_id": "3370167b-c712-4705-9874-409e1d1b6f1a",
+      "result_id": "a4b08d6c-cf8b-4c33-aa9d-a2918749edba"
+    },
+    {
+      "claim_id": "b610056b-dcc3-420f-8660-51d0bcaf6426",
+      "result_id": "a4b08d6c-cf8b-4c33-aa9d-a2918749edba"
+    },
+    {
+      "claim_id": "5f5aa846-d4b2-4ac2-953d-b6c6ed3eac22",
+      "result_id": "a4b08d6c-cf8b-4c33-aa9d-a2918749edba"
+    },
+    {
+      "claim_id": "2ccc8630-4a15-4fe5-a6a0-8d52801a0e96",
+      "result_id": "a4b08d6c-cf8b-4c33-aa9d-a2918749edba"
+    },
+    {
+      "claim_id": "2045311e-9767-4efe-abd4-9f3c3ef211d9",
+      "result_id": "a4b08d6c-cf8b-4c33-aa9d-a2918749edba"
+    },
+    {
+      "claim_id": "e1720b8b-076d-4853-a143-92312c83348a",
+      "result_id": "a4b08d6c-cf8b-4c33-aa9d-a2918749edba"
+    },
+    {
+      "claim_id": "211ebb5d-d8dd-439f-b37c-121326003176",
+      "result_id": "a4b08d6c-cf8b-4c33-aa9d-a2918749edba"
+    },
+    {
+      "claim_id": "e6dfc7fa-5f87-4d9a-979d-f19a3f4faf69",
+      "result_id": "a4b08d6c-cf8b-4c33-aa9d-a2918749edba"
+    },
+    {
+      "claim_id": "8ee4d9c3-4a7a-4381-90b4-9ddb6d47d2d9",
+      "result_id": "a4b08d6c-cf8b-4c33-aa9d-a2918749edba"
+    },
+    {
+      "claim_id": "50d930ff-9be1-4837-b1ca-755866e59749",
+      "result_id": "16a7bbe3-1059-4884-b51e-956c327823fc"
+    },
+    {
+      "claim_id": "0b50e19e-6e5f-4d16-8601-70811700dede",
+      "result_id": "16a7bbe3-1059-4884-b51e-956c327823fc"
+    },
+    {
+      "claim_id": "ab57f82d-b4b9-4c58-bb9e-4ae925cd2672",
+      "result_id": "16a7bbe3-1059-4884-b51e-956c327823fc"
+    },
+    {
+      "claim_id": "6a2b2407-925b-4d26-8ddf-f10b70b5ead8",
+      "result_id": "16a7bbe3-1059-4884-b51e-956c327823fc"
+    },
+    {
+      "claim_id": "67e50e98-7ac2-499a-bf04-e74f43476214",
+      "result_id": "16a7bbe3-1059-4884-b51e-956c327823fc"
+    },
+    {
+      "claim_id": "5fea4b10-9fdf-41f9-a7c0-981d6bd5f089",
+      "result_id": "16a7bbe3-1059-4884-b51e-956c327823fc"
+    },
+    {
+      "claim_id": "b163ada8-0a86-4c59-933b-ceac627d7d40",
+      "result_id": "16a7bbe3-1059-4884-b51e-956c327823fc"
+    },
+    {
+      "claim_id": "5d1c238d-b112-438f-91a0-9c0a27736190",
+      "result_id": "16a7bbe3-1059-4884-b51e-956c327823fc"
+    },
+    {
+      "claim_id": "aff08d46-7454-45de-a8ad-5b78218c4446",
+      "result_id": "16a7bbe3-1059-4884-b51e-956c327823fc"
+    },
+    {
+      "claim_id": "1932d129-28e9-4b4b-b547-41d08b56773d",
+      "result_id": "16a7bbe3-1059-4884-b51e-956c327823fc"
+    },
+    {
+      "claim_id": "162c9cc9-df97-4388-a704-234cf42dd6af",
+      "result_id": "16a7bbe3-1059-4884-b51e-956c327823fc"
+    },
+    {
+      "claim_id": "cb30746a-b8f4-42b0-9fc5-76852a4d7628",
+      "result_id": "16a7bbe3-1059-4884-b51e-956c327823fc"
+    },
+    {
+      "claim_id": "9773bf32-186e-4928-a4a5-5ef2937cc636",
+      "result_id": "16a7bbe3-1059-4884-b51e-956c327823fc"
+    },
+    {
+      "claim_id": "dc97c6ff-e5a5-47fa-861a-fc0b71be97d0",
+      "result_id": "16a7bbe3-1059-4884-b51e-956c327823fc"
+    },
+    {
+      "claim_id": "69c5f5b4-cea5-48a0-9198-aaccf98073f2",
+      "result_id": "16a7bbe3-1059-4884-b51e-956c327823fc"
+    },
+    {
+      "claim_id": "1a14f79b-8e26-41c9-bfc9-6d94c8ef12f7",
+      "result_id": "16a7bbe3-1059-4884-b51e-956c327823fc"
+    },
+    {
+      "claim_id": "a86455c3-23d8-445d-a418-fa594673979d",
+      "result_id": "012a7f2d-4b4e-4980-bb95-07ffc0c06da5"
+    },
+    {
+      "claim_id": "6274bfb2-8a39-4b5c-8756-0b30470513e7",
+      "result_id": "012a7f2d-4b4e-4980-bb95-07ffc0c06da5"
+    },
+    {
+      "claim_id": "2061c662-f3e3-41e1-af96-b1678ea3bfb6",
+      "result_id": "012a7f2d-4b4e-4980-bb95-07ffc0c06da5"
+    },
+    {
+      "claim_id": "50be0a2b-5619-4864-9fd1-cc80b59edbde",
+      "result_id": "012a7f2d-4b4e-4980-bb95-07ffc0c06da5"
+    },
+    {
+      "claim_id": "4c9b6235-b147-4ebf-a8eb-934fab93f7c7",
+      "result_id": "012a7f2d-4b4e-4980-bb95-07ffc0c06da5"
+    },
+    {
+      "claim_id": "da92d7fa-c319-44e9-a4fe-68289cd29f89",
+      "result_id": "012a7f2d-4b4e-4980-bb95-07ffc0c06da5"
+    },
+    {
+      "claim_id": "ff2505f3-d69f-4e35-aaab-ad27761a6885",
+      "result_id": "012a7f2d-4b4e-4980-bb95-07ffc0c06da5"
+    },
+    {
+      "claim_id": "9d67ba8b-057d-42c0-bc46-306f01689e13",
+      "result_id": "012a7f2d-4b4e-4980-bb95-07ffc0c06da5"
+    },
+    {
+      "claim_id": "b2dc6c11-212e-48c9-9850-c7e785383b57",
+      "result_id": "012a7f2d-4b4e-4980-bb95-07ffc0c06da5"
+    },
+    {
+      "claim_id": "406098e7-b9a7-43f5-8424-c44509b28188",
+      "result_id": "b82524fc-0b3d-4780-baae-8e321009f34b"
+    },
+    {
+      "claim_id": "850291fa-aefc-41bb-a264-8c14d44d312c",
+      "result_id": "b82524fc-0b3d-4780-baae-8e321009f34b"
+    },
+    {
+      "claim_id": "5a9d221f-8765-4f4b-ae52-761ca258e9d6",
+      "result_id": "b82524fc-0b3d-4780-baae-8e321009f34b"
+    },
+    {
+      "claim_id": "19ea771c-6104-47b5-8163-6e45e4c45329",
+      "result_id": "9badf025-8955-43c4-ab87-1e14f3f6799f"
+    },
+    {
+      "claim_id": "c782a8c0-70ab-448f-92cb-19daf6d054de",
+      "result_id": "9badf025-8955-43c4-ab87-1e14f3f6799f"
+    },
+    {
+      "claim_id": "09906020-83f9-4a7a-a53e-12cb29290dba",
+      "result_id": "9badf025-8955-43c4-ab87-1e14f3f6799f"
+    },
+    {
+      "claim_id": "5a132480-4dd6-4143-b911-66391ccfa8ac",
+      "result_id": "9badf025-8955-43c4-ab87-1e14f3f6799f"
+    },
+    {
+      "claim_id": "5d4597d8-7ece-4b23-919d-55476fcfa27f",
+      "result_id": "9badf025-8955-43c4-ab87-1e14f3f6799f"
+    },
+    {
+      "claim_id": "3ea89922-3a0a-4c1c-987e-6137cf80f423",
+      "result_id": "9badf025-8955-43c4-ab87-1e14f3f6799f"
+    },
+    {
+      "claim_id": "6bdad41a-ecd8-4943-8c92-6dae3601ba3f",
+      "result_id": "9badf025-8955-43c4-ab87-1e14f3f6799f"
+    },
+    {
+      "claim_id": "05af690d-2edb-44c1-9be9-fdb9730a2373",
+      "result_id": "9badf025-8955-43c4-ab87-1e14f3f6799f"
+    },
+    {
+      "claim_id": "53122d1a-06b2-4340-a474-5c11c94b5e2b",
+      "result_id": "9badf025-8955-43c4-ab87-1e14f3f6799f"
+    },
+    {
+      "claim_id": "3ed17991-6e6a-42ba-b4da-46c2c46520df",
+      "result_id": "9badf025-8955-43c4-ab87-1e14f3f6799f"
+    },
+    {
+      "claim_id": "48dd55df-fe6a-4ebb-9d91-ba30e8b8e015",
+      "result_id": "9badf025-8955-43c4-ab87-1e14f3f6799f"
+    },
+    {
+      "claim_id": "6d054786-2a1d-42bd-b993-66581c7416f8",
+      "result_id": "9badf025-8955-43c4-ab87-1e14f3f6799f"
+    },
+    {
+      "claim_id": "715cc861-1136-4d86-a910-83eef2bfc2ae",
+      "result_id": "9badf025-8955-43c4-ab87-1e14f3f6799f"
+    },
+    {
+      "claim_id": "94d9b7fe-0cb8-4964-ac5c-c9fffa77e6fb",
+      "result_id": "9badf025-8955-43c4-ab87-1e14f3f6799f"
+    },
+    {
+      "claim_id": "8e13c07b-6c90-4bc8-8823-e958a662f425",
+      "result_id": "9badf025-8955-43c4-ab87-1e14f3f6799f"
+    },
+    {
+      "claim_id": "23c5bb68-a2eb-48ec-84f8-55c34425b8ca",
+      "result_id": "9badf025-8955-43c4-ab87-1e14f3f6799f"
+    },
+    {
+      "claim_id": "3fb9d519-de2d-4ed3-80b7-df0c6be20066",
+      "result_id": "9badf025-8955-43c4-ab87-1e14f3f6799f"
+    },
+    {
+      "claim_id": "75874593-dc4b-428c-b556-1fac4f8dc58a",
+      "result_id": "556cdf0a-bfc9-44a2-8bb0-918b74896e5c"
+    },
+    {
+      "claim_id": "a77fd446-09dc-428f-9cb8-68b042bc5c9c",
+      "result_id": "556cdf0a-bfc9-44a2-8bb0-918b74896e5c"
+    },
+    {
+      "claim_id": "0942dee5-82c4-41c4-a073-4236714e1cd3",
+      "result_id": "556cdf0a-bfc9-44a2-8bb0-918b74896e5c"
+    },
+    {
+      "claim_id": "77e5d4de-6b39-4afe-9818-11034a62b39f",
+      "result_id": "556cdf0a-bfc9-44a2-8bb0-918b74896e5c"
+    },
+    {
+      "claim_id": "e26d5228-8c37-4204-aca1-7c497114b460",
+      "result_id": "556cdf0a-bfc9-44a2-8bb0-918b74896e5c"
+    },
+    {
+      "claim_id": "7ebe5e2b-c02a-4a17-9bc9-8e434b4a8878",
+      "result_id": "556cdf0a-bfc9-44a2-8bb0-918b74896e5c"
+    },
+    {
+      "claim_id": "13e42a8c-ae78-44a1-958a-dbd65e6b28b5",
+      "result_id": "556cdf0a-bfc9-44a2-8bb0-918b74896e5c"
+    },
+    {
+      "claim_id": "32cd63fa-a121-41a4-b833-9de1e1ab5c68",
+      "result_id": "556cdf0a-bfc9-44a2-8bb0-918b74896e5c"
+    },
+    {
+      "claim_id": "84ab4731-74dc-476a-991e-516ac765f92b",
+      "result_id": "556cdf0a-bfc9-44a2-8bb0-918b74896e5c"
+    },
+    {
+      "claim_id": "3e1c607b-d452-48d5-a833-ebbbb72f620a",
+      "result_id": "556cdf0a-bfc9-44a2-8bb0-918b74896e5c"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,230 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "A high-throughput screening of ~1200 clinically approved drugs identified 6 compounds that induce lysosomal clustering around the MTOC. The screening used a novel image-based quantification system in SH-SY5Y cells expressing lysosomal and MTOC markers. The 6 compounds were categorized as topoisomerase II inhibitors (teniposide, amsacrine, etoposide) and benzimidazole anthelmintics (albendazole, oxibendazole, mebendazole).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C35-C38 are well-supported by experimental data shown in Figures 1 and 2. The screening methodology is clearly described, validation with starvation as positive control is shown (C35), and the identification of 63 initial hits narrowed to 6 final compounds is documented with appropriate imaging and quantification data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C42",
+      "C41"
+    ],
+    "result": "The six identified compounds induce autophagy as demonstrated by LC3B lipidation and increased RFP/GFP ratio in tandem-tagged LC3 assays. Importantly, these compounds induce autophagy independently of mTORC1 activity, as evidenced by minimal effects on phosphorylation of mTOR pathway components (p-mTOR, p-ULK1, p-S6) compared to the mTOR inhibitor Torin1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C42 are supported by experimental data in Figures 2C and 3A. The autophagy flux assays show LC3B lipidation enhanced by bafilomycin A1, and the mTOR pathway analysis clearly distinguishes the compounds' mechanism from canonical mTOR-dependent autophagy induction. The comparison with Torin1 provides appropriate controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "The identified compounds induce lysosomal clustering through a JIP4-TRPML1-dependent mechanism. Teniposide-induced clustering requires JIP4 and TRPML1 but not TMEM55B, ALG2, Rab7, or RILP. Albendazole-induced clustering requires JIP4, TRPML1, ALG2, and Rab7 but not TMEM55B or RILP. JIP4 knockout suppresses clustering by all six compounds, and both compounds increase JIP4-LAMP2 colocalization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C43-C47 are well-supported by comprehensive knockdown and knockout experiments shown in Figure 4. The differential pathway requirements for topo-i versus benzimidazole compounds are clearly demonstrated through systematic siRNA knockdown studies with appropriate controls and quantification. The JIP4 knockout data provide strong genetic validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Topoisomerase inhibitors induce lysosomal clustering through JIP4 phosphorylation at T217 by CaMK2G. Jak3 inhibitor VI and CaMK2G knockdown suppress topo-i-induced clustering but not benzimidazole-induced clustering. Teniposide increases Ca2+ flux and induces JIP4 phosphorylation. Rescue experiments show that only wild-type JIP4, not the T217A phosphorylation-defective mutant, restores teniposide-induced clustering in JIP4 KO cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C52 are strongly supported by multiple complementary experiments in Figure 5. The Phos-tag gel analysis directly demonstrates JIP4 phosphorylation, pharmacological and genetic inhibition of CaMK2G show specificity for topo-i compounds, Ca2+ imaging provides mechanistic insight, and the rescue experiment with phospho-mutant provides definitive evidence for the requirement of T217 phosphorylation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Lysosomal-clustering compounds efficiently induce autophagy by transporting both autophagosomes and lysosomes in a JIP4-dependent manner. JIP4 KO cells show reduced autophagy flux as measured by HaloTag-LC3B cleavage. JIP4 itself is degraded by autophagy following compound treatment. Co-treatment with lysosomal-clustering compounds and Torin1 induces autophagy more effectively than Torin1 alone, indicating enhanced autolysosome formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C58 are supported by data in Figure 6. The HaloTag-LC3B assay provides quantitative evidence for JIP4-dependent autophagy induction, bafilomycin A1 experiments confirm lysosomal degradation of JIP4, immunofluorescence shows enhanced autophagosome-lysosome colocalization, and the Torin1 co-treatment experiment demonstrates synergistic effects on autophagy induction through distinct mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C4",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Albendazole promotes autophagy-dependent degradation of proteasome inhibitor-induced protein aggregates. MG132 treatment increases p62 and ubiquitinated proteins in the insoluble fraction, which decrease over time after washout in an autophagy-dependent manner (blocked in FIP200 KO cells). Albendazole accelerates this degradation compared to DMSO control, and this effect is also blocked in FIP200 KO cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C59-C64 are well-supported by systematic experiments in Figure 7. The time-course experiments establish that basal autophagy degrades MG132-induced aggregates, the FIP200 KO experiments confirm autophagy-dependence, and the albendazole treatment experiments demonstrate enhanced degradation that is also autophagy-dependent. The experimental design with appropriate controls is rigorous.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C5",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "In a cellular PD model using \u03b1Syn fibril-induced aggregation, albendazole enhances degradation of insoluble \u03b1Syn aggregates through autophagy. Lysosomes naturally accumulate around \u03b1Syn aggregates, and albendazole further enhances this clustering. Electron microscopy shows increased recruitment of autophagosomes and lysosomes to aggregates. Albendazole reduces insoluble \u03b1Syn-GFP levels in a bafilomycin A1-sensitive manner and degrades both monomers and aggregates more effectively than Torin1. JIP4 and TRPML1 knockdown reduce \u03b1Syn degradation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C65-C70, C72-C74 are strongly supported by comprehensive data in Figure 8 and supplements. The cellular PD model is well-established, multiple complementary techniques (confocal microscopy, EM, biochemical fractionation, HaloTag assay) provide converging evidence, bafilomycin A1 controls confirm autophagy-dependence, and the comparison with Torin1 demonstrates superior efficacy of the lysosomal clustering approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Topoisomerase inhibitors induce lysosomal clustering through ROS production and p38 MAPK activation. Topo-i compounds significantly increase ROS levels, and the ROS scavenger N-acetyl-L-cysteine partially attenuates topo-i-induced clustering. A p38 inhibitor prevents topo-i-induced clustering but has no effect on benzimidazole. Western blot shows topo-i triggers p38 phosphorylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C78 are supported by data in Figure 9. The ROS measurements, pharmacological inhibition with NAC and p38 inhibitor, and Western blot analysis of p38 phosphorylation provide mechanistic insight into the topo-i pathway. The specificity for topo-i versus benzimidazole is clearly demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Topoisomerase inhibitors and benzimidazole compounds show cell-type-specific effects. Topo-i fails to induce lysosomal clustering or autophagy in HeLa cells. Benzimidazole not only fails to induce clustering in HeLa cells but transports lysosomes to the cell periphery and does not induce autophagy flux.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C80, C83-C85 are supported by data in Figure 10A-B. The cell-type specificity is clearly demonstrated through imaging and Western blot analysis. However, the mechanistic basis for this difference is not fully elucidated, though the authors suggest differences in expression of trafficking factors.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C81",
+      "C82"
+    ],
+    "result": "Benzimidazole compounds exhibit dose-dependent effects on tubulin and lysosomal clustering. At low concentrations, oxibendazole and albendazole promote lysosomal clustering with selective tubulin depolymerization at the cell periphery while maintaining filaments near the MTOC. At high concentrations, they disrupt tubulin throughout the cell and inhibit lysosomal clustering.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C82 are supported by dose-response experiments and confocal microscopy in Figure 10C-D. The imaging clearly shows the spatial pattern of tubulin depolymerization at different concentrations. This provides mechanistic insight into the narrow concentration range for benzimidazole activity and explains the bell-shaped dose-response curve.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C6",
+      "C30",
+      "C33",
+      "C34"
+    ],
+    "result": "Lysosomal clustering facilitates the breakdown of protein aggregates, particularly those that accumulate near the MTOC. This is supported by prior evidence that protein aggregates including \u03b1Syn (Lewy bodies) in PD patients accumulate near the MTOC, and that Arl8b overexpression (which promotes lysosomal anterograde transport) inhibits \u03b1Syn-A53T degradation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C6 is the main conclusion supported by the experimental data throughout the manuscript (particularly Figures 7-8). Claims C30, C33-C34 provide literature context that supports the biological relevance of the findings. The convergence of prior knowledge about aggregate localization and the current experimental results on enhanced degradation through lysosomal clustering provides strong support for this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C71"
+    ],
+    "result": "Torin1 induces degradation of \u03b1Syn aggregates in an autophagy-dependent manner, as shown by inhibition with bafilomycin A1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C71 is supported by data in Figure 8\u2014figure supplement 1B-C. This serves as a positive control demonstrating that mTOR-dependent autophagy induction can also degrade \u03b1Syn aggregates, though less effectively than albendazole (C72).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C31",
+      "C32"
+    ],
+    "result": "Background claims establishing the role of autophagy-lysosome pathway in PD, epidemiology of PD, current treatments and limitations, \u03b1Syn aggregation in disease pathogenesis, autophagy as a therapeutic target, mechanisms of lysosomal transport, and connections between lysosomal trafficking defects and neurodegenerative diseases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C7-C29, C31-C32 are background/context claims supported by established knowledge and citations to prior literature. These provide the scientific rationale for the study but are not novel findings from this work. The citations appear appropriate and the background is accurately represented.",
+    "result_type": "MINOR"
+  }
+]

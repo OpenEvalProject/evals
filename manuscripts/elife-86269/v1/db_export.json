@@ -1,0 +1,2147 @@
+{
+  "submission": {
+    "id": "1ecd5632-25c3-41eb-af36-65765bb03251",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-04T04:02:39.426254Z",
+    "updated_at": "2025-12-04T04:02:39.426254Z"
+  },
+  "content": [
+    {
+      "id": "075ff2aa-c417-4563-bb65-0192d3e05539",
+      "submission_id": "1ecd5632-25c3-41eb-af36-65765bb03251",
+      "content_type": "manuscript",
+      "content_text": "# Apoptosis recognition receptors regulate skin tissue repair in mice\n\n## Authors\n\n- Olivia Justynski<sup>1</sup> ([ORCID: 0000-0002-0774-5983](https://orcid.org/0000-0002-0774-5983))\n- Kate Bridges<sup>2</sup> ([ORCID: 0000-0003-3642-7068](https://orcid.org/0000-0003-3642-7068))\n- Will Krause<sup>1</sup> ([ORCID: 0000-0001-7585-5749](https://orcid.org/0000-0001-7585-5749))\n- Maria Fernanda Forni<sup>1</sup> ([ORCID: 0000-0002-3335-9023](https://orcid.org/0000-0002-3335-9023))\n- Quan M Phan<sup>3</sup>\n- Teresa Sandoval-Schaefer<sup>1</sup>\n- Kristyn Carter<sup>1</sup>\n- Diane E King<sup>4</sup>\n- Henry C Hsia<sup>5</sup>\n- Michael I Gazes<sup>6</sup>\n- Steven D Vyce<sup>6</sup>\n- Ryan R Driskell<sup>3</sup> ([ORCID: 0000-0001-7673-2564](https://orcid.org/0000-0001-7673-2564))\n- Kathryn Miller-Jensen<sup>1</sup> ([ORCID: 0000-0002-7233-0100](https://orcid.org/0000-0002-7233-0100))\n- Valerie Horsley<sup>1</sup> ([ORCID: 0000-0002-1254-5839](https://orcid.org/0000-0002-1254-5839)) \u2020\n\n### Affiliations\n\n1. Dept. of Molecular Cellular and Developmental Biology, Yale University New Haven United States ([ROR:03v76x132](https://ror.org/03v76x132))\n2. Dept. of Biomedical Engineering, Yale University New Haven United States ([ROR:03v76x132](https://ror.org/03v76x132))\n3. Washington State University, SMB Pullman United States ([ROR:05dk0ce17](https://ror.org/05dk0ce17))\n4. Sunnycrest Bioinformatics Flemington United States\n5. Dept. of Surgery (Plastic), Yale School of Medicine New Haven United States\n6. Dept of Podiatric Surgery, Yale New Haven Hospital New Haven United States ([ROR:05tszed37](https://ror.org/05tszed37))\n7. Dept. of Dermatology, Yale School of Medicine New Haven United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nApoptosis and clearance of apoptotic cells via efferocytosis are evolutionarily conserved processes that drive tissue repair. However, the mechanisms by which recognition and clearance of apoptotic cells regulate repair are not fully understood. Here, we use single-cell RNA sequencing to provide a map of the cellular dynamics during early inflammation in mouse skin wounds. We find that apoptotic pathways and efferocytosis receptors are elevated in fibroblasts and immune cells, including resident Lyve1+ macrophages, during inflammation. Interestingly, human diabetic foot wounds upregulate mRNAs for efferocytosis pathway genes and display altered efferocytosis signaling via the receptor Axl and its ligand Gas6. During early inflammation in mouse wounds, we detect upregulation of Axl in dendritic cells and fibroblasts via TLR3-independent mechanisms. Inhibition studies in vivo in mice reveal that Axl signaling is required for wound repair but is dispensable for efferocytosis. By contrast, inhibition of another efferocytosis receptor, Timd4, in mouse wounds decreases efferocytosis and abrogates wound repair. These data highlight the distinct mechanisms by which apoptotic cell detection coordinates tissue repair and provides potential therapeutic targets for chronic wounds in diabetic patients.\n\n## Introduction\n\nProper tissue function and homeostasis require efficient and effective repair of injury. Repair of mammalian tissues requires highly dynamic changes in cellular heterogeneity and communication to correctly heal tissue, usually resulting in a scar rather than true tissue regeneration. Cell death is a common event during tissue injury, and several studies from hydra to mice have shown the importance of apoptosis in the initiation of inflammation to drive reparative processes (Greenhalgh, 1998). Proper initiation and subsequent resolution of inflammation is essential for tissue repair and progression to the proliferation stage of healing, when fibroblasts, blood vessels, and other tissue-specific cells proliferate and migrate, forming new tissue to repair the wound. While several signaling factors have been shown to induce apoptosis in wounds (Guerin et al., 2021), the mechanisms by which apoptotic cells are recognized and regulate tissue repair are not well understood.\n\nThe skin is an excellent model to define the mechanisms by which apoptotic cells regulate tissue repair. After injury, mammalian skin undergoes stages of repair beginning with inflammation, which removes debris and pathogens. As inflammation regresses, the proliferative phase leads to the coordination of epidermal keratinocytes, fibroblasts, endothelial, and immune cells to reseal the epidermal barrier and generate a reparative scar including new ECM production and revascularization (Eming et al., 2014). Apoptosis occurs after skin injury, and phagocytosis of apoptotic cells \u2013 or efferocytosis \u2013 by macrophages reduces inflammatory signaling and repair in several tissues (Bosurgi et al., 2017a; Peiseler and Kubes, 2019). Yet, it is unclear how apoptosis controls skin wound healing.\n\nApoptotic cell death is characterized by cytomorphological alterations, DNA fragmentation, activation of caspases and other regulators, and finally membrane alterations including outer membrane exposure of phosphatidylserine (PtdSer), which allows the recognition of apoptotic cells by cellular receptors on phagocytes (Elmore, 2007). The most well-studied receptors that allow phagocytes to bind and phagocytose apoptotic cells include the TAM (Tyro3, Axl, and Mertk) tyrosine kinases and the TIM (T cell immunoglobulin and mucin domain) family of receptors (Lemke, 2019). While TIM receptors can directly bind PtdSer, TAM receptors require their ligands growth-arrest-specific 6 (Gas6) and protein S (Pros1) to bind to PtdSer (Lew et al., 2014; Elliott et al., 2017).\n\nTo understand the cellular and molecular mechanisms by which apoptosis regulates skin wound healing, we performed single-cell RNA sequencing (scRNA-seq) on cells from murine wound beds 24 hr and 48 hr after injury. We found that transcriptional alterations in apoptotic pathways occur in this interval in fibroblasts, monocytes/macrophages, neutrophils, and dendritic cells. In addition, inhibition of two efferocytosis receptors, Axl and Timd4, abrogates proper wound repair. The results provide an atlas of cellular dynamics during the early stages of wound healing and reveal the essential role of the recognition and clearance of apoptotic cells in driving tissue repair after injury.\n\n## Results\n\n### Dramatic transcriptional heterogeneity during early skin inflammation after injury\n\nTo assess cellular and molecular heterogeneity of the wound bed during the inflammatory phase, we performed scRNA-seq on cells isolated from 4 mm full-thickness biopsy punches on mouse back skin at 24 hr and 48 hr after injury (Shook et al., 2016). To ensure that we also captured the immediately adjacent tissue as well as cells that may have migrated into the wound site, we used a 6 mm biopsy punch to collect the tissue before isolating cells using enzymatic digestion (Figure 1A). By training a neural network to identify cell types based on expression of established marker genes (as in Wasko et al., 2022; Figure 1\u2014figure supplement 1A\u2013B), we classified four major cell types in the scRNA-seq data, including monocytes/macrophages (Mono/MO), neutrophils (Neut), dendritic cells (DC), and fibroblasts (FB) at both timepoints (Figure 1B\u2013E).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/86269/elife-86269-fig1-v1.jpg)\n\n**Figure 1.:** (A) Schematic of experimental design. (B) UMAP plot of single-cell RNA sequencing (scRNA-seq) data for cells from 24 hr wound beds in murine back skin. (C) UMAP plot of scRNA-seq data for cells from 48 hr wound beds in murine back skin. (D) UMAP plot of scRNA-seq data for cells from both 24 hr and 48 hr wound beds in murine back skin annotated by timepoint. (E) Top: UMAP plot of scRNA-seq data for cells from 24 hr and 48 hr wound beds annotated by cell identity. Bottom: Heatmap of differentially expressed marker genes in 24 hr and 48 hr wound beds. (F) Gene ontology terms enriched in each cell type compared to the full dataset. (G) Heatmap of differentially expressed apoptosis-related genes from 24 hr and 48 hr wound beds. (H) Immunostaining for cleaved caspase 3 (Act. Casp3) (green) in wound bed 24 hr after injury. Arrow indicates cleaved caspase 3+ cells. (I) Immunostaining for CD11c (green) and cleaved caspase 3 (red) in wound bed 24 hr after injury. Arrows indicate double-positive CD11c+ cleaved caspase 3+ cells. (J) Immunostaining for GFP (green) and cleaved caspase 3 (red) in PdgfraCreER;mTmG wound bed 24 hr after injury. Arrow indicates double-positive GFP+ cleaved caspase 3+ cells. * indicates scab. Scale bars = 500 \u00b5m. In E and G, expression indicates scaled log-normalized mRNA counts.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/86269/elife-86269-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) UMAP plot of scRNA-seq data for cells from 24 hr and 48 hr wound beds in murine back skin annotated by cell identity. (B) Feature plots showing expression of two marker genes for each major cell type. (C) Number of cells identified by cell type at 24 hr and 48 hr. (D) Proportion of total cells represented by 24 hr or 48 hr for each major cell type. (E) Venn diagrams representing significantly upregulated genes shared by both timepoints or specific to 24 hr or 48 hr for each major cell type. (F) Top, Bottom left: Immunostaining for cleaved caspase 3 (green) in 48 hr wound bed. Arrow indicates cleaved caspase 3+ cell. * indicates scab. Scale bar = 500 \u00b5m. Bottom right: Quantification of cleaved caspase 3+ cells per mm2 in the wound bed. *p<0.05.\n\nSurprisingly, the 24 hr and 48 hr samples clustered separately with minimal overlap, suggesting that dramatic changes occurred in the first 2 days of inflammation (Figure 1B\u2013D). The absolute number of macrophages and neutrophils increased >2-fold over this interval (Figure 1\u2014figure supplement 1C). While approximately 70% of each of the three immune cell populations was collected at 48 hr, the majority of fibroblasts were found in the 24 hr population (Figure 1\u2014figure supplement 1D). We also found that genes upregulated by each cell type were markedly different between timepoints (Figure 1\u2014figure supplement 1E), indicating major changes to expression patterns in the same cell type over time.\n\nTo explore the changes in the major cell types in early wound beds (fibroblasts, neutrophils, DCs, and monocytes/macrophages), we analyzed the genes that were significantly upregulated in each group relative to the mRNAs expressed by the full dataset to determine gene ontology (GO) terms that were enriched for each cell type (Figure 1F). Monocytes/macrophages, neutrophils, and DCs upregulated mRNAs involved in their specific function in inflammation for cytokine production, chemotaxis, and antigen presentation, respectively. Similarly, fibroblasts uniquely upregulated genes involved in extracellular matrix (ECM) organization. Interestingly, DCs, fibroblasts, and neutrophils upregulated genes involved in apoptosis and cell death (Figure 1F and G). Neutrophils upregulated the largest number of mRNAs for apoptosis including Casp3, which is cleaved to activate apoptosis, and S100a8 and S100a9, which induce apoptosis of several cell types (Yui et al., 2003). Fibroblasts and DCs also upregulated apoptotic genes ranging from receptors (Fgfr1 and Bmpr1a), cytokines (Il12b), to mediators of apoptotic pathways (Bcl2l14 and Cth).\n\nSince apoptosis also involves post-transcriptional activation of several proteins, we sought to confirm that apoptosis occurred during early skin wound inflammation in vivo. Sections of mouse wounds at 24 hr (Figure 1H) and 48 hr (Figure 1\u2014figure supplement 1F) were stained with antibodies (Abs) against cleaved (active) caspase 3 to detect activation of apoptosis. We found that significantly more cleaved caspase 3+ cells were present in 48 hr wounds (Figure 1\u2014figure supplement 1F). We also detected cleaved caspase 3 in CD11c+ dendritic cells (Figure 1I) and Pdgfra+ fibroblasts (Figure 1J) in 24 hr wound beds. Overall, these data suggest that apoptosis occurs during inflammation after skin injury.\n\n### Apoptosis recognition receptors, ligands, and downstream factors are expressed in the wound bed\n\nGiven the upregulation of mRNAs associated with apoptosis and the relatively low level of apoptotic cells in early wound beds, we hypothesized that efficient efferocytosis clears apoptotic cells during inflammation. Initially, we inspected mRNA levels of efferocytosis receptors, their ligands, and downstream factors in scRNA-seq data from 24 hr and 48 hr wounds (Figure 2A). Interestingly, fibroblasts upregulated several genes encoding efferocytosis receptors (Tyro3, Axl, Itgav, and Slc7a11), as well as genes encoding for ligands Gas6, Pros1, C3, C4b, and Mfge8. DCs, macrophages, and neutrophils also upregulated several receptors that mediate detection of apoptotic cells. Macrophages were enriched for the downstream activators Arg1 and Retnla, whereas other cell types upregulated Socs1 and Socs3, which are downstream of the TAM receptors (Rothlin et al., 2007).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/86269/elife-86269-fig2-v1.jpg)\n\n**Figure 2.:** (A) Heatmap of differentially expressed efferocytosis pathway genes in 24 hr and 48 hr wound beds. Expression indicates scaled log-normalized mRNA counts. (B) Feature plots showing expression of Gas6, Lyve1, Timd4, and Retnla with Lyve1+ region highlighted. (C) Immunostaining for GFP (green) and Lyve1 (red) in Lyz2CreER;mTmG wound bed 24 hr after injury. Arrows indicate Lyve1+ cells. (D) Immunostaining for Gas6 (green) and Lyve1 (red) in wild-type (WT) wound bed 24 hr after injury. Arrows indicate double-positive Gas6+ Lyve1+ cells. (E) Immunostaining for Timd4 (green) in WT wound bed 24 hr after injury. Arrows indicate Timd4+ cells. (F) Immunostaining for CD11c (green) and Axl (red) in wound bed 24 hr after injury. Arrows indicate double-positive CD11c+ Axl+ cells. (G) Immunostaining for GFP (green) and Axl (red) in PdgfraCreER;mTmG wound bed 24 hr after injury. Arrows indicate double-positive GFP+ Axl+ cells. (H) Schematic of experimental design. (I) Immunostaining for CFSE-stained apoptotic neutrophils in wound beds 1 and 5 days after injury. (J) Example of CFSE-stained whole neutrophil in the wound bed. Scale bar = 100 \u00b5m. (K) Example of active efferocytosis of CFSE-stained whole neutrophil in the wound bed. Scale bar = 100 \u00b5m. (L) Quantification of instances of efferocytosis observed per mm2 in the wound bed. (M) Quantification of percentage of all stained cells that are undergoing efferocytosis in the wound bed. In L and M, n=6, error bars indicate mean \u00b1 SEM, unpaired t-test, *p<0.05, **p<0.01. * indicates scab. In C\u2013I, scale bars = 500 \u00b5m.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/86269/elife-86269-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Immunostaining for GFP (green) and Lyve1 (red) in Lyz2CreERmTmG wound bed-adjacent skin 24 hr after injury. Arrows indicate Lyve1+ cells, * indicates scab. Scale bar = 500 \u00b5m. (B) mRNA expression of genes relative to NW control at 24 hr and 48 hr after injury. Red line indicates normalized control mRNA levels. Error bars indicate mean \u00b1 SEM, n=3 independent experiments. Statistics using unpaired t-test are indicated; *p<0.05, **p<0.01, ***p<0.001.\n\nWe noted that Axl\u2019s ligand, Gas6, and several other genes involved in efferocytosis were expressed predominantly in the fibroblast cluster, but were also lowly expressed in the monocyte/macrophage cluster (Figure 2A). Examining the UMAP plot to determine the heterogeneity of efferocytosis gene expression within individual cell types, we observed that Gas6 was highly expressed by a specific subset of monocyte/macrophage cells. These cells also overexpressed the resident macrophage marker Lyve1, the apoptosis receptor Timd4, and Retnla, a downstream factor of efferocytosis (Figure 2B), indicating that they may play a role in apoptosis detection and response in wound healing. Lyve1 has been identified as a marker for resident macrophages, which are distinct from the majority of wound macrophages that differentiate from bone marrow-derived monocytes and are recruited to the wound after injury (Lim et al., 2018; Wang et al., 2020). To confirm the presence of Lyve1+ resident cells in vivo, we used a Lyz2CreER;mTmG mouse model, in which myeloid cells in the bone marrow can be induced to express GFP prior to injury, such that any GFP+ cells observed in the wound bed are interpreted as newly recruited to the site of injury, while GFP- cells are interpreted to be resident to the skin. We observed that Lyve1 was expressed at the protein level both in wound beds (Figure 2C) and adjacent to the wound (Figure 2\u2014figure supplement 1A) with immunofluorescence staining, and confirmed that these cells were resident rather than recruited to the wound bed after injury, since they did not express GFP. Further, we confirmed that Lyve1+ cells co-expressed Gas6 protein (Figure 2D) and that Timd4 protein (Figure 2E) was expressed in wound beds.\n\nThe TAM receptor Axl was uniquely expressed in the single-cell dataset by both dendritic cells and fibroblasts (Figure 2A). Using immunofluorescence staining, we confirmed Axl expression in 24 hr wound beds in both dendritic cells (CD11c) (Figure 2F) and fibroblasts (Pdgfra-GFP) (Figure 2G), which displayed elongated GFP+ processes with central localization of Axl. Thus, while we cannot rule out Axl expression by other cell types in skin wounds, these data are consistent with our single-cell results, confirming that Axl is expressed by fibroblasts and dendritic cells during the inflammatory response of skin repair.\n\nWe also analyzed mRNA expression of apoptosis-related genes by qPCR to determine their expression in wound beds compared to naive skin (Figure 2\u2014figure supplement 1B). All efferocytosis receptor mRNAs studied, including the TAM receptors, were significantly upregulated in the wound bed compared to naive skin, while the ligand Gas6 was significantly downregulated. The downstream factor of efferocytosis Retnla was also significantly downregulated in the wound bed, while Socs1 and Socs3 were significantly upregulated.\n\nTo analyze efferocytosis activity after injury, we intradermally injected labeled apoptotic neutrophils from bone marrow into wound beds 1, 3, and 5 days after injury. Wound beds were collected 1 hr after injections, sectioned, and imaged to quantify labeled cells (Figure 2H). We detected and quantified labeled intact neutrophils and efferocytosed neutrophils in wounds at all three timepoints (Figure 2H\u2013M). While wounds at 5 days had significantly more cells undergoing efferocytosis (Figure 2L), the efferocytosis rate was generally constant, with a slight but nonsignificant increase at 3 days (Figure 2J). Taken together, these data indicate that the machinery for multiple efferocytosis pathways are active in the inflammatory and proliferative stages of wound healing.\n\n### Cell death signaling in human diabetic and non-diabetic wounds\n\nWe next set out to explore whether these apoptosis and efferocytosis-related pathways were also relevant in pathological states associated with dysregulated wound healing, such as diabetes. Previous studies have indicated that apoptosis is increased in diabetic wounds, including an elevation in apoptotic lymphocytes (Arya et al., 2014). Additional studies have shown that hypoxic environments (such as those found in diabetic wounds) increase macrophage efferocytosis (Wang et al., 2023), though other studies have indicated that macrophage efferocytosis is defective in diabetic wounds (Khanna et al., 2010).\n\nTo analyze the expression of transcriptional changes in apoptosis and efferocytosis signaling in foot wounds, we analyzed genes in these categories in four non-diabetic and five diabetic human patients (to be published elsewhere). We found several alterations in the expression of mRNAs associated with apoptotic signaling pathways between non-diabetic and diabetic foot ulcers (Figure 3\u2014figure supplement 1A). Specifically, monocytes/macrophages increased expression of several apoptosis genes (including BCL2, FGFR3, FGFR1, CTH, CASP3, IL19, NME5, and S100A8/9) in diabetic foot ulcers compared to monocytes/macrophages in non-diabetic wounds.\n\nWhen we compared the expression of genes associated with the efferocytosis pathway between non-diabetic and diabetic foot ulcers, we found a striking increase in overall expression of efferocytosis pathway genes in diabetic wounds compared to non-diabetic wounds (Figure 3A). In particular, the expression of AXL increased in all cell types in diabetic wounds, while expression of its ligand GAS6 increased in all cell types with the exception of basal keratinocytes and mast cells.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/86269/elife-86269-fig3-v1.jpg)\n\n**Figure 3.:** (A) Heatmaps of differentially expressed genes related to efferocytosis in non-diabetic and diabetic wound beds. Expression indicates scaled log-normalized mRNA counts. (B) CellChat circle plot diagrams showing GAS6-AXL communication in non-diabetic and diabetic wound beds. (C) Left: Immunostaining for CD68 (green) and Gas6 (red) in non-diabetic foot wound. Right: Immunostaining for CD68 (green) and Gas6 (red) in diabetic foot ulcer. Scale bars = 50 \u00b5m. (D) Quantification of Gas6 corrected total fluorescence. Error bars indicate mean \u00b1 SEM. n=2 for Non-diabetic, and 6 for diabetic foot wound; ns, nonsignificant.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/86269/elife-86269-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Heatmaps of differentially expressed genes related to efferocytosis in non-diabetic and diabetic wound beds. Expression indicates scaled log-normalized mRNA counts.\n\nTo further investigate the AXL/GAS6 signaling pathway, we analyzed these data with CellChat, which quantitatively infers intercellular signaling networks from scRNA-seq data (Jin et al., 2021). This analysis revealed altered signaling between AXL and its ligand GAS6 between the two groups. In non-diabetic patient wounds, GAS6 expression by several cell types, including monocytes/macrophages and fibroblasts, stimulated signaling via AXL receptors on fibroblasts and pericytes. However, in diabetic patient wounds, GAS6 and AXL expression was more robust in several cell types. Notably, monocytes/macrophages increased GAS6 stimulation and newly expressed AXL to receive pathway signaling in diabetic wounds (Figure 3B).\n\nTo validate these findings, we stained sections of non-diabetic foot wounds and diabetic foot ulcers with Abs against Gas6 and CD68, a macrophage marker. Indeed, we found that Gas6 staining was more prevalent in diabetic skin sections, and that it colocalized with the macrophage marker (Figure 3C). Further, when quantified via corrected total fluorescence (CTF), more Gas6 staining was observed in diabetic samples, though this was not significant. This supported the CellChat results, indicating that macrophages express Gas6 more highly in diabetic wounds. Taken together, these data indicate that diabetic wounds may activate and modulate GAS6-AXL signaling, and suggest a potential avenue for future research.\n\n### TLR3 stimulation is sufficient, but not necessary, for Axl upregulation in skin\n\nNext, we sought to examine the molecular mechanisms that induce Axl mRNA expression after injury. Prior work showed that Axl expression was induced by toll-like receptor 3 (TLR3) stimulation (Rothlin et al., 2007) and that TLR3 is essential for skin wound repair (Lin et al., 2011). Thus, we experimentally tested the role of TLR3 signaling in Axl expression in the skin. scRNA-seq of early wounds revealed that TLR mRNAs are highly expressed in neutrophils and macrophages with a few expressed in dendritic cells and fibroblasts (Figure 4A). Interestingly, TLR3 is unique among the TLRs in that it is expressed by both dendritic cells and fibroblasts, which also express high levels of Axl in the single-cell dataset (Figure 2A). To determine if TLR3 stimulation upregulates Axl expression in the skin, we injected the synthetic double-stranded RNA polyinosinic:polycytidylic acid (poly(I:C)) or a PBS control in naive mouse back skin of either wild-type (WT) or TLR3 knockout (KO) mice. We collected the injection site and surrounding area after 2 hr and processed the skin samples for qPCR and immunostaining (Figure 4B). We first analyzed cytokine mRNA expression, a target of TLR3 signaling that promotes inflammation (Rothlin et al., 2007). While several inflammatory cytokines were not induced in skin injected with poly(I:C) (Figure 4\u2014figure supplement 1A), interferon (IFN)-\u03b2 (Ifnb) was upregulated in WT mice injected with poly(I:C) but not in the skin of TLR3 KO mice (Figure 4C), confirming the specificity of poly(I:C) for activation of TLR3 in the skin (Alexopoulou et al., 2001). Axl protein (Figure 4D) and mRNA (Figure 4E) were induced in naive skin upon poly(I:C) injection, and Axl mRNA induction and protein expression were abrogated in skin of TLR3 KO mice (Figure 4E and Figure 4\u2014figure supplement 1B). Axl protein expression around the dermal injection site was quantified via CTF (Figure 4F), confirming these results. Taken together, these data indicate that TLR3 signaling is sufficient to activate Axl expression in naive skin.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/86269/elife-86269-fig4-v1.jpg)\n\n**Figure 4.:** (A) Heatmap of differentially expressed TLR genes in 24 hr and 48 hr wound beds. Expression indicates scaled log-normalized mRNA counts. (B) Schematic of injection and collection protocol. (C) mRNA expression of interferon genes relative to respective PBS injection. Red line indicates normalized control mRNA levels. Error bars indicate mean \u00b1 SEM, unpaired t-test, n=4-6 mice; **p<0.01. ns, nonsignificant. (D) Immunostaining for Axl (red) in naive back skin injected with PBS or Poly(I:C). Arrows indicate Axl+ cells. * indicates injection site. (E) mRNA expression of Axl relative to respective PBS injection control 2 hr after injection. Red line indicates normalized control mRNA levels. Error bars indicate mean \u00b1 SEM, unpaired t-test, n=4-8 mice; ***p<0.001. ns, nonsignificant. (F) Quantification of corrected total fluorescence for Axl immunostaining in a 1 mm square containing the injection site. n=6-10 mice; Error bars indicate mean \u00b1 SEM, one-way ANOVA with multiple comparisons, *p<0.05. (G) Schematic of injection and collection protocol. (H) Immunostaining for Axl (red) in naive back skin injected with PBS or IFNB. Arrows indicate Axl+ cells. * indicates injection site. (I) Immunostaining for Axl (red) in wound beds 24 hr after injury in wild-type (WT) or TLR3 knockout (KO) mice. Arrows indicate Axl+ cells. * indicates scab. Scale bars = 500 \u00b5m.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/86269/elife-86269-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) mRNA expression of cytokine genes relative to respective PBS injection. Red line indicates normalized control mRNA levels. Error bars indicate mean \u00b1 SEM, n=4-6 mice. (B) Immunostaining for Axl (red) in naive back skin of TLR3 KO mice injected with PBS or Poly(I:C). Arrows indicate Axl+ cells. * indicates injection site. Scale bar = 500 \u00b5m.\n\nSince Ifnb was elevated by TLR3 signaling in naive skin, we determined whether injecting recombinant IFN-\u03b2 intradermally into naive mouse back skin was sufficient to induce Axl protein expression (Figure 4G). Two hours after injection, Axl protein was detected by immunostaining in skin injected with IFN-\u03b2 but not control skin (Figure 4H and F). Next, to determine if TLR3 activation was necessary for Axl expression in skin wounds, we analyzed Axl expression in wound beds of TLR3 KO mice. In contrast to our previous results in naive skin, Axl protein expression was stimulated in TLR3 KO wound beds similar to WT mice (Figure 4I). Thus, these data suggest that while TLR3 is sufficient to drive Axl expression in naive skin, additional mechanisms drive Axl upregulation within skin wounds in its absence.\n\n### Axl is required for skin wound healing\n\nBased on our data showing upregulation of Axl mRNA and protein expression in wound beds, even in the absence of TLR3, we hypothesized that Axl may play a role in wound healing. To examine whether Axl signaling was required for wound repair, we intraperitoneally injected mice 3 hr prior to injury with either a control IgG Ab or anti-Axl function blocking Ab, which binds to Axl\u2019s extracellular domain and blocks Axl-mediated viral infection (Retallack et al., 2016), and has been shown to inhibit Axl activity in vitro (Bauer et al., 2012; Figure 5A). Since Axl activity upregulates Axl mRNA expression in a positive feedback loop (Brand et al., 2014), we analyzed Axl mRNA expression in wounds of Ab-treated mice. While we saw a nonsignificant downregulation of Axl mRNA at 1 day (D) post injury, Axl mRNA was significantly downregulated in skin wounds treated with anti-Axl Ab on day 5 compared to control IgG Ab injected wounds (Figure 5B), indicating that the anti-Axl Ab treatment reduced Axl signaling in skin wounds.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/86269/elife-86269-fig5-v1.jpg)\n\n**Figure 5.:** (A) Schematic of experimental design. (B) Axl mRNA expression normalized to respective IgG Ab control. Error bars indicate mean \u00b1 SEM, one-way ANOVA with multiple comparisons, n=4 mice, *p<0.05. (C) Representative flow cytometry gates used to analyze cells isolated from wounds 3 days after injection and injury. Live singlet CD45+ cells were identified as macrophages, neutrophils, or dendritic cells via fluorescent antibody staining. (D) Top: Quantification of CD45+ cells by cell type in anti-Axl Ab or IgG Ab-treated wound beds 3 days after injury. Error bars indicate mean \u00b1 SEM, one-way ANOVA with multiple comparisons, n=4 mice, ns, nonsignificant. Bottom: Quantification of Axl+ cells by cell type in anti-Axl Ab or IgG Ab-treated wound beds 3 days after injury. Error bars indicate mean \u00b1 SEM, two-way ANOVA with multiple comparisons, n=4 mice, **p<0.01. ns, nonsignificant. (E) Left: Hematoxylin and eosin (H&E) staining of wound beds 5 days after antibody injection and injury. Center: Immunostaining for aSMA (green) in wound beds 5 days after antibody injection and injury. Right: Immunostaining for CD31 (green) in wound beds 5 days after antibody injection and injury. * indicates scab. (F) Top: Quantification of aSMA corrected total fluorescence. Error bars indicate mean \u00b1 SEM, unpaired t-test, n=10 mice, *p<0.05. Bottom: Quantification of CD31+ pixels in wound bed. Error bars indicate mean \u00b1 SEM, unpaired t-test, **p<0.01. Scale bars = 500 \u00b5m.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/86269/elife-86269-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Left: Immunostaining for TUNEL (green) in wound beds injected with anti-Axl Ab or IgG Ab control 1 day after injury. Arrows indicate TUNEL+ cells. * indicates scab. Scale bars = 500 \u00b5m. Right: Quantification of TUNEL+ cells per 106 square pixels in 1-day wounds. Error bars indicate mean \u00b1 SEM. ns, nonsignificant. (B) Quantification of cleaved caspase 3+ cells per 106 square pixels in 3- and 5-day wounds. Error bars indicate mean \u00b1 SEM. ns, nonsignificant. (C) mRNA expression of genes involved in TAM receptor signaling and cytokines relative to IgG Ab control 1 and 5 days after injury. Red line indicates normalized control mRNA levels for respective IgG control. Error bars indicate mean \u00b1 SEM, one-way ANOVA with multiple comparisons, *p<0.05, **p<0.01, ***p<0.001. (D) Representative fluorescence-activated single-cell sorting (FACS) dot plots of gating strategy to identify single cells, CD45+ immune cells, Axl+ cells, and immune cell populations. (E) Left: Immunostaining for ITGA6 (green) in wound beds 5 days after antibody injection and injury. Right: Quantification of % re-epithelialization for 5-day wound beds. Error bars indicate mean \u00b1 SEM, ns, nonsignificant.\n\nNext, we examined the effect of Axl inhibition on apoptotic cell clearance in skin wounds. TUNEL+ cells were present but rare in both anti-Axl Ab and IgG Ab-treated 1-day wounds (Figure 5\u2014figure supplement 1A). Additional staining in sections from wounds 3 and 5 days after injury also showed no significant difference in cleaved (active) caspase 3+ cells in anti-Axl Ab and IgG Ab-treated wounds (Figure 5\u2014figure supplement 1B). Further, we detected no significant changes to gene expression of selected members of the efferocytosis signaling pathway or common inflammatory cytokines 1 day after injury, indicating no major inflammatory defects (Figure 5\u2014figure supplement 1C). Thus, additional efferocytosis mechanisms, potentially including other members of the TAM family, likely clear apoptotic cells in early skin wounds despite Axl inhibition.\n\nTo characterize the impact of Axl inhibition on inflammation at 3 days after injury, we used flow cytometry to quantify the immune cells present in the wound bed (Figure 5C\u2013D and Figure 5\u2014figure supplement 1D). Interestingly, no significant change was observed in the proportion of dendritic cells, neutrophils, or macrophages that were present in IgG or anti-Axl Ab-treated wound beds. However, the proportion of cell types expressing Axl was altered, with more Axl+ macrophages and fewer Axl+ DCs present in the anti-Axl Ab-treated group compared to the IgG Ab control.\n\nDespite the relatively normal inflammatory cell numbers at day 3 after injury, wounds treated with anti-Axl Ab exhibited observable healing defects at 5 days post injury compared to wounds treated with control IgG Ab, including a qualitative lack of granulation tissue visible with hematoxylin and eosin (H&E) staining (Figure 5E). We also observed that upon Axl inhibition, fibroblast repopulation was significantly reduced (Figure 5E\u2013F). Revascularization was also defective; Axl inhibition significantly reduced the CD31+ area of wound beds (Figure 5E\u2013F). However, we observed no significant difference in the percentage of wound closure by keratinocytes as indicated by ITGA6 staining between the two treatments (Figure 5\u2014figure supplement 1E).\n\nWe observed significant changes in gene expression at 5 days after injury in wounds lacking Axl activity, including a significant downregulation of Arg1, Tgfb, and Il1a, and significant upregulation of Ifnb, Socs1, and Socs3 upon Axl inhibition (Figure 5\u2014figure supplement 1C). Taken together, these changes suggest that Axl inhibition impairs proper healing, resulting in significant defects to revascularization and fibroblast repopulation.\n\n### Timd4 function is required for normal skin repair\n\nTo further examine the role of efferocytosis receptors in skin wound repair, we abrogated the function of a member of the TIM family of receptors, Timd4. Intraperitoneal injection of a function blocking anti-Timd4 Ab effectively blocks efferocytosis in an atherosclerosis mouse model (Foks et al., 2016). Strikingly, we found that wounds of mice treated with anti-Timd4 Ab displayed significantly more TUNEL+ apoptotic cells in 1- and 5-day wound beds compared to wounds of IgG Ab-treated mice (Figure 6A\u2013B). Similarly, we observed an increase in cleaved caspase 3+ cells in wounds of anti-Timd4 Ab-treated mice (Figure 6\u2014figure supplement 1A). While this does not preclude the possibility of an increase in apoptosis upon Ab treatment, it is consistent with a defect to efferocytosis.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/86269/elife-86269-fig6-v1.jpg)\n\n**Figure 6.:** (A) Immunostaining for TUNEL (green) in wound beds injected with anti-Timd4 antibody (Ab) or IgG Ab control 1, 3, or 5 days after injury. Arrows indicate TUNEL+ cells. * indicates scab. (B) Quantification of TUNEL+ cells per mm2 in the wound bed. Error bars indicate mean \u00b1 SEM, one-way ANOVA, n=3-7 mice; *p<0.05, ns, nonsignificant. (C) Hematoxylin and eosin (H&E) staining of wound beds 5 days after antibody injection and injury. (D) Immunostaining for aSMA (red) in wound beds 5 days after antibody injection and injury. (E) Immunostaining for CD31 (green) in wound beds 5 days after antibody injection and injury. (F) Left: Quantification of aSMA corrected total fluorescence. Error bars indicate mean \u00b1 SEM. ns, nonsignificant. Right: Quantification of CD31+ pixels in wound bed. Error bars indicate mean \u00b1 SEM, unpaired t-test, n=6-9 mice; *p<0.05. (G) mRNA expression of genes relative to respective IgG Ab control. Red line indicates normalized control mRNA levels. Error bars indicate mean \u00b1 SEM, n=4-6 mice; unpaired t-test *p<0.01, **p<0.01. Scale bars = 500 \u00b5m.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/86269/elife-86269-fig6-figsupp1-v1.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) Immunostaining for cleaved caspase 3 (red) in wound beds 5 days after antibody injection and injury. (B) Immunostaining for ITGA6 (green) in wound beds 5 days after antibody injection and injury. (C) Quantification of % re-epithelialization for 5-day wound beds. Error bars indicate mean \u00b1 SEM. n=3 mice; * indicates scab. Scale bars = 500 \u00b5m.\n\nInhibition of Timd4 resulted in qualitative defects in granulation tissue in H&E-stained sections of 5-day wounds (Figure 6C). Immunostaining of wound sections with Abs against aSMA (Figure 6D and F) and ITGA6 (Figure 6\u2014figure supplement 1B\u2013C) did not indicate significant changes to either fibroblast repopulation or re-epithelialization, respectively. However, staining for CD31 (Figure 6E\u2013F) revealed a significant defect to revascularization in wounds of anti-Timd4 Ab mice compared to wounds of IgG Ab-treated mice, which indicates a defect to proper healing in the proliferative phase of wound repair.\n\nNext, we examined mRNA expression profiles of inflammatory and efferocytosis signaling pathways in IgG Ab and anti-Timd4 Ab-treated wound beds (Figure 6G). The inflammatory cytokines Ifng and Ifnb were significantly upregulated at day 1 or 3, respectively, in Timd4-inhibited wounds compared to control wounds, suggesting altered inflammatory signaling. Interestingly, at day 1 and/or day 3, Socs1 and Socs3 were also significantly upregulated, similar to the gene expression pattern observed after Axl inhibition (Figure 5I). Taken together, these results indicate that Timd4 activity is required for reducing apoptotic cells, inflammation gene expression, and revascularization after injury.\n\n## Discussion\n\nHere, we provide an atlas for the dynamic changes that occur in the early inflammatory stage of wound repair in the skin at the single-cell level. We found that apoptotic and efferocytosis pathways were upregulated in distinct cell types in mouse wounds and in diabetic foot wounds of human patients. Using functional inhibition studies in mouse wounds, our data show that efferocytosis receptors, Axl and Timd4, have differential effects on efferocytosis and wound repair.\n\nWe found that apoptotic genes were upregulated in most of the cell types present in early wounds, which likely allows the dynamic shifts in transcriptional profiles of inflammatory cells we observed in the first few days of tissue repair. Apoptotic cells are required for tail regeneration of Xenopus laevis (Tseng et al., 2007) and tissue regeneration of planaria (Hwang et al., 2004) and have been widely implicated in early wound repair (Greenhalgh, 1998; Arya et al., 2014). Mechanistically, apoptotic cells can release signaling factors including Wnts and PGE2 to promote proliferation of tissue resident cells and tissue repair in multiple species (Codispoti et al., 2019; Li et al., 2010; Fuchs et al., 2013). Detection of apoptotic cells has also been linked to inflammation and context-dependent integration of IL-4 signaling to activate an anti-inflammatory and tissue repair gene program (Bosurgi et al., 2017a).\n\nExposure of PtdSer on the outer leaflet of apoptotic cell membranes acts as a sensor for engulfment in evolutionarily conserved mechanisms (Rothlin and Ghosh, 2020). Our data suggest that in skin wounds, apoptotic cells are rapidly detected and removed via efferocytosis, which is consistent with the large number of phagocytic neutrophils and macrophages in early wounds. We also found that mRNAs encoding efferocytosis receptors and signaling pathways are upregulated in the early skin wound beds and in diabetic foot wounds, and confirmed protein upregulation of the efferocytosis receptors Axl and Timd4 in murine wounds. Interestingly, efferocytosis receptors were upregulated in professional phagocytes as well as in fibroblasts, which also increased expression of a large number of efferocytosis ligands in both mouse wounds and diabetic foot ulcers (Figures 2 and 3). These data resonate with recent data suggesting that fibroblasts can engulf apoptotic endothelial cells to alter their contractility, migration, and ECM production (Romana-Souza et al., 2021), and may indicate a direct role for fibroblasts in modulating the inflammatory milieu of early wounds through detection of apoptotic cells.\n\nGrowing evidence suggests that distinct efferocytosis receptors elicit cell- and tissue-specific responses. Axl and Mer exhibit differential ligand specificity and shedding upon activation (Zag\u00f3rska et al., 2014). Furthermore, Axl null bone marrow-derived macrophages are unable to perform efferocytosis with TLR3 activation in vitro, which suggests that Axl plays a central role in efferocytosis in inflammatory environments (Bosurgi et al., 2017b). Here, we show that in early murine skin wounds, Axl inhibition did not impact efferocytosis in a detectable manner, but rather Axl expression shifted from dendritic cells to macrophages, suggesting possible compensatory mechanisms via other efferocytosis receptors. Furthermore, we did not detect differences in Axl expression in TLR3 null and control wounds, further suggesting the inflammatory wound environment in vivo displays activation of Axl receptor expression independent of TLR3. Axl may function in skin wounds by interacting with other tyrosine kinase receptors, which has been shown for EGFR, MET, and PDGFR (Meyer et al., 2013). Interestingly, Axl/Gas6 signaling can also regulate tumorigenesis to support tumor cell survival (Linger et al., 2008), migration (Wilson et al., 2014), and angiogenesis (Li et al., 2009; Zhu et al., 2019). Future work exploring Axl\u2019s function in a cell type-dependent manner, including possibly directly activating angiogenesis in skin wounds, will decipher these possibilities.\n\nOur data also implicate an important role for resident macrophages in regulating early wound repair mechanisms. In particular, we identified the expression of several efferocytosis receptors and ligands on Lyve1+ resident macrophages including Timd4. Timd4 is expressed on tissue resident macrophages in multiple tissues including in the peritoneal and resident cardiac macrophages. In the heart, Lyve1+ resident macrophages act in a cardioprotective manner during myocardial infarction (Dick et al., 2019) and are immunoregulatory and promote engraftment of cardiac allografts (Thornley et al., 2014). Interestingly, similar to our data, Timd4 promotes efferocytosis in the heart. During cardiac infarction, Timd4 is also required for T cell responses and support of regulatory T cells (Tregs) (Foks et al., 2016). In the skin, Timd4 is essential for allograft survival (Yeung et al., 2013), which has been proposed to act through DCs to support Tregs. Indeed, Timd4 is expressed in DCs in later stages of wound repair (Haensel et al., 2020). Our future studies will test the role of Timd4 on DCs and resident macrophages, T cell immunity, and how they impact wound repair phenotypes noted with Timd4 inhibition.\n\nIn summary, our data implicate apoptosis recognition receptors as an important regulator of skin wound healing. We find that early murine wound beds and human diabetic foot wounds significantly upregulate apoptotic genes and receptors that recognize apoptotic cells and that inhibition of multiple apoptotic receptors impairs wound repair. Given the importance of apoptosis in wound repair and the expression of distinct apoptotic receptors in different cells, skin wound healing is an excellent model to decipher the mechanisms by which distinct cells recognize and respond to interactions with apoptotic cells. Given further research into the healing phenotypes of efferocytosis-inhibited wounds, it may be that targeting these mechanisms may reveal therapeutic avenues that promote healing in chronic, non-healing wounds, particularly in diabetic patients.\n\n## Methods\n\n### Animals\n\nWT C57BL/6J mice (Strain #:000664), B6;129S1-Tlr3tm1Flv/J (TLR3 KO) mice (Strain #:005217), Lyz2tm1(cre/ERT2)Grtn/J (Lyz2CreER) mice (Strain #:031674), and B6.129(Cg)-Gt(ROSA)26Sortm4(ACTB-tdTomato,-EGFP)Luo/J (mTmG) mice (Strain #:007676) were purchased from The Jackson Laboratories. PdgfraCreER mice were developed in the laboratory of B. Hogan (Duke University, Durham, NC, USA). Mice were maintained through routine breeding in an Association for Assessment and Accreditation of Laboratory Animal Care (AALAC)-accredited animal facility at Yale University (Protocol # 11248). Animals were maintained on a standard chow diet ad libitum (Harlan Laboratories, 2018S) in 12 hr light/dark cycling. Up to five injured mice were housed per cage. All experimental procedures were approved and in accordance with the Institutional Animal Care and Use Committee. For experiments using intraperitoneal (i.p.) tamoxifen administration, 100 \u03bcL of 30 mg/mL tamoxifen (Sigma-Aldrich) in sesame oil was injected daily for 3 days prior to experiments.\n\n### Human subjects\n\nDiabetic and non-diabetic adults with chronic foot ulcers that were undergoing skin wound debridement were consented to donate discarded tissue for this study (IRB approval # 1609018360). The diabetic foot ulcer specimens for scRNA-seq were obtained from five individuals diagnosed with Type 2 diabetes. The non-diabetic foot wound specimens for scRNA-seq were obtained from four individuals, two of whom provided multiple samples. The diabetic foot ulcer specimens for immunofluorescence staining were obtained from five individuals diagnosed with Type 2 diabetes and one individual diagnosed with Type 1 diabetes. The non-diabetic foot wound specimens for immunofluorescence staining were obtained from two individuals. Demographic information listed in Supplementary file 1 .\n\n### Wounding\n\nSeven- to 9-week-old male mice were wounded during the telogen phase of hair cycling. Mice were anesthetized using isoflurane and six full-thickness wounds, at least 4 mm apart, were made on shaved back skin using a 4 mm biopsy punch (Millitex). Animals were sacrificed at noted intervals after injury and wound beds were processed for subsequent analysis.\n\n### Single-cell digestion of mouse wounds\n\nWound beds were digested for scRNA-seq analysis in a buffer of Roswell Park Memorial Institute (RPMI) medium with glutamine (Gibco), Liberase Thermolysin Medium (TM) (Roche), DNase, N-2-hydroxyethylpiperazine-N-2-ethane sulfonic acid (Gibco), sodium pyruvate (Gibco), non-essential amino acids (Gibco), and antibiotic-antimycotic (100X) (Gibco). Blood cells were removed with ammonium-chloride-potassium (ACK) lysing buffer (Gibco). Cells were resuspended in Dulbecco\u2019s Modified Eagle\u2019s Medium (DMEM) (ATCC) with 0.1% bovine serum albumin (BSA) for analysis.\n\n### Human skin collection and processing for scRNA-seq\n\nSkin wound specimens were collected at the clinical setting in PBS with antibiotic-antimycotic (100X) (Gibco), and transported to the lab on ice for processing. All specimens were processed within 3 hr of collection. The specimen was cleaned by immersion with 10% betadine, 70% ethanol, and PBS. Excess blood and subcutaneous fat were removed, and skin was mechanically minced before being digested in an enzyme cocktail consisting of dispase (Stemcell Technologies), collagenase I (Worthington), and collagenase II (Worthington) in 0.25% trypsin-EDTA (Gibco). Blood cells were removed with ACK lysing buffer (Gibco). Cells were resuspended in DMEM (ATCC) with 0.1% BSA for analysis.\n\n### Human skin collection and processing for staining\n\nHuman tissue sections were kept for at least 24 hr in 10% neutral buffered formalin and dehydrated in alcohol diluted in 0.9% NaCl/dH2O; the sequence being 30% EtOH, 50% EtOH, 70%EtOH. Specimens remained in 70% EtOH overnight. The following day, sections were dehydrated further in 85%, 95%, and 100% ethanol diluted in distilled water before being preserved in 50% EtOH/ 50% xylene and then 100% xylene. Tissue sections were allowed to soak in paraffin for at least 1 hr and then embedded in disposable molds with melted paraffin wax. Five \u00b5m tissue sections were obtained and adhered to charged slides for histological analysis.\n\n### Single-cell data of mouse samples\n\nscRNA-seq data from 24 hr and 48 hr mouse wound beds were processed using the standard cellranger pipeline (10X Genomics). Downstream analysis was performed using the Scanpy package in Python (Wolf et al., 2018). Cells were filtered for quality control to avoid doublets and dead cells. Dimensionality reduction and downstream data visualization were completed using the Scanpy implementation of UMAP (McInnes et al., 2020) and the ShinyCell package in R (Ouyang et al., 2021), respectively. Data is presented as scaled log-normalized mRNA counts (i.e., expression).\n\nWe adapted the cell-type annotation pipeline from Kumar et al., 2018, to label our sequencing data by broad cell type, as was done in Wasko et al., 2022. Differentially expressed genes (DEGs) across timepoints were calculated using the rank_genes_groups function from the Scanpy module in Python with default parameters. We then performed enrichment analysis on the top (logfoldchanges >1.5) DEGs for each group using g:Profiler (Raudvere et al., 2019), with the GO knowledgebase as the reference database.\n\n### Neutrophil injection\n\nCells were collected from WT bone marrow as previously described (Rios et al., 2017). Neutrophils were isolated using MACS Ly6G beads (Miltenyi Biotech 130-120-337). Neutrophils were stained with CFSE cell labeling kit (Abcam ab113853) for 15 min. Stained neutrophils were incubated overnight in RPMI medium to induce apoptosis. 10,000 neutrophils in 50 \u00b5L PBS or 50 \u00b5L PBS control were injected under the scab and into the wound bed of 1-, 3-, or 5-day wounded mice. Injected mice were sacrificed after 1 hr.\n\n### Single-cell data of human samples\n\nHuman scRNA-seq data from human samples were generated from 10X Genomics 3\u2019-end single-cell gene expression V2. Analysis was performed in Scanpy (Wolf et al., 2018). Cells were filtered for doublets and dead cells for downstream analysis. Batch correction was performed to integrate cells across samples using Scanorama (Hie et al., 2019). Gene expression was scaled, log-transformed, and normalized. Dimensionality reduction was done using PCA and UMAP in Scanpy (McInnes et al., 2020). DEGs were calculated using Wilcoxon rank_genes_groups function from Scanpy. Cell-cell communication analysis and data visualization of circos plot were performed using CellChat (Jin et al., 2021). CellChat is superior to similar methods because its algorithm accounts for the roles of both signaling cofactors and protein-protein signaling in its predictions of ligand-receptor interaction (Bridges and Miller-Jensen, 2022). CellChat is available as an open-source software package in R.\n\n### Staining and imaging\n\nMouse skin and wound beds were embedded in optimum cutting temperature compound (VWR) and wound beds were sectioned through their entirety to identify the center. 7 \u00b5m or 14 \u00b5m cryosections were processed as previously described (Shook et al., 2016) and stained with Abs listed below or H&E.\n\nHuman tissue slides were warmed in the oven at 60\u00b0C for an hour before being deparaffinized and rehydrated in ethanol diluted in water. Antigen retrieval was performed at 80\u00b0C for an hour and after slides had cooled, nonspecific blocking was performed, the primary Ab was added, and the slides rested overnight at 4\u00b0C. The next day, slides were warmed to room temperature, washed, and the secondary Ab was allowed to penetrate for 1 hr at room temperature. Prolong Gold plus DAPI was added to each tissue section and cover slides were added. Slides rested at 4\u00b0C for at least 1 day before imaging.\n\nComposite images were acquired using the tiles module on a Zeiss AxioImager M1 (Zeiss) equipped with an Orca camera (Hamamatsu).\n\n### Quantitative real-time PCR\n\nWhole wound bed samples were digested using TRIzol LS (Invitrogen). RNA was extracted from the aqueous phase using the RNeasy Plus Mini Kit (QIAGEN). cDNA was generated using equal amounts of total RNA with the Superscript III First Strand Synthesis Kit (Invitrogen) per manufacturer\u2019s instructions. All quantitative real-time PCR was performed using SYBR green on a LightCycler 480 (Roche). Primers for specific genes are listed below. Results were normalized to \u03b2-actin as previously described.\n\n### Injections\n\nSeven- to 9-week-old male mice were injected intradermally with 10 \u00b5L PBS, 50 \u00b5g/mL Poly(I:C) (Invivogen), or 5 \u00b5g/mL IFNB (R&D) with 0.5% BSA. The injection site was isolated using a 6 mm biopsy punch 2 hr after injection and processed for staining.\n\nTo inhibit signaling pathways in vivo, 7- to 9-week-old male mice were injected intraperitoneally with 25 \u00b5g/100 \u00b5L anti-Axl Ab (R&D), 200 \u00b5g/100 \u00b5L anti-Timd4 (BioXCell), or equivalent unit IgG control (R&D) in PBS 3 hr before wounding.\n\n### Flow cytometry\n\nMouse wound beds were dissected and digested into single cells using Liberase TM (Roche) and cells were suspended in fluorescence-activated single-cell sorting (FACS) staining buffer (0.05% BSA in DMEM). Digested tissue was filtered with a 70 \u03bcm and 40 \u03bcm cell strainer prior to centrifugation. Cell suspensions were stained with Abs for 30 min on ice. Dendritic cells were defined as CD11b+ Cd11c+ cells; macrophages were defined as CD11b+ CD11c- CD64+ Ly6G- cells; neutrophils were defined as CD11b+ CD11c- CD64- Ly6G+ cells. To exclude dead cells, Sytox Blue (Invitrogen, 1:1000) was added immediately before analysis or sorting using a FACS Aria III with FACS DiVA software (BD Biosciences). Flow cytometry analysis was performed using FlowJo Software (FlowJo).\n\n### Image quantification\n\nHistological quantification for each wound bed was conducted on multiple central sections for each wound bed when available. The percentage of the wound bed covered by ITGA6 staining (re-epithelialization) and CTF for Axl (in a 1 mm square around the injection site) or aSMA (in the wound bed) were calculated using ImageJ software (National Institutes of Health, Bethesda, MD, USA) as described previously (Schmidt and Horsley, 2013; Shook et al., 2018). Revascularization (CD31+) was calculated using Adobe Photoshop to measure the total pixels positive for Ab staining divided by the total number of pixels in wound beds. Cell death was quantified using the RETINA Analysis Toolkit in FIJI (https://imagej.net/plugins/retina-analysis-toolkit).\n\n### Statistics\n\nTo determine significance between two groups, comparisons were made using Student\u2019s t-test. Analyses across multiple groups were made using a one- or two-way ANOVA with Bonferroni\u2019s post hoc using GraphPad Prism for Mac (GraphPad Software, La Jolla, CA, USA) with significance set at p<0.05. Sample sizes were determined using power analysis and taking into consideration our experience with the wounding model.\n\n### Antibodies\n\n### FACS antibodies\n\n### Primers\n\n### Inclusion and diversity\n\nOne or more of the authors of this paper self-identifies as: (1) an underrepresented ethnic minority in their field of research or within their geographical location, (2) a gender minority in their field of research, and (3) a member of the LGBTQ+ community. While citing references scientifically relevant for this work, we also actively worked to promote gender balance in our reference list.\n",
+      "created_at": "2025-12-04T04:02:39.426254Z"
+    },
+    {
+      "id": "f9981041-efa2-465f-be7d-98c1385159a6",
+      "submission_id": "1ecd5632-25c3-41eb-af36-65765bb03251",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Colin Jamora, https://ror.org/007wpch15 Institute for Stem Cell Biology and Regenerative Medicine India\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.86269.sa0](https://doi.org/10.7554/eLife.86269.sa0)\n\nThe manuscript reports important new information on how dead cells are cleared from the wound site in order to promote effective repair of the damaged tissue. Interestingly, the authors find that the components of this clearance pathway are abnormally high in diabetics who have difficulty healing wounds and their results suggest that tampering them down may be a therapy to restore normal wound healing.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Colin Jamora, https://ror.org/007wpch15 Institute for Stem Cell Biology and Regenerative Medicine India\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.86269.sa1](https://doi.org/10.7554/eLife.86269.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Apoptosis recognition receptors regulate skin tissue repair in mice\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Satyajit Rath as the Senior Editor.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\nOverall, the reviewers are uniform in finding the manuscript a valuable contribution to the field and generally solid in methodology. However, there were a few consistent points that the technical rigor of the manuscript needs to be improved in order to better support the conclusions that are drawn from them. For instance, the suggested additional experiments are relatively straightforward and would substantially improve the data:\n\n1. Quantify the apoptotic cells observed in the sections (Figure 1 I and J) and compare to control treatment on sections. It is not clear from the data presented whether the number of apoptotic cells increases or not in the time frame analyzed since the controls are lacking.\n\n2. In a similar vein, it would be important to demonstrate in their system that there is actually an increase in apoptotic cells in the wounds. This data is absent and the inclusion of this would provide temporal insights into the initiation and speed of efferocytosis.\n\n3. Conclusions based on CellChat analysis should be experimentally validated.\n\nReviewer #1 (Recommendations for the authors):\n\nMore recent datasets of efferocytosis related genes involved in diabetic wound healing such as SLC7 gene family members could be included in the analysis as it has direct bearing on the work.\n\nThe inhibition of Axl seems to have a dramatic effect scab formation, fibroblast representation in the wound bed, and vascularization but no significant effect on wound closure rates. This is a surprising observation and perhaps too much weight is given to ITGA6 staining and other assays of reepithelialization should be assessed. In addition, the potential therapeutic applications that the authors note for chronic wounds suggest that they should test the physiological parameters of the healed skin to determine how \"normal\" it truly is.\n",
+      "created_at": "2025-12-04T04:02:39.426254Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T04:02:39.426254Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T04:02:39.426254Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "64422840-a86d-46d7-9302-10d5ef36edea",
+      "content_id": "075ff2aa-c417-4563-bb65-0192d3e05539",
+      "claim_id": "C1",
+      "claim": "Single-cell RNA sequencing was performed on cells isolated from 4 mm full-thickness biopsy punches on mouse back skin at 24 hr and 48 hr after injury.",
+      "claim_type": "EXPLICIT",
+      "source": "To assess cellular and molecular heterogeneity of the wound bed during the inflammatory phase, we performed scRNA-seq on cells isolated from 4 mm full-thickness biopsy punches on mouse back skin at 24 hr and 48 hr after injury (Shook et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly describes the experimental method used to generate the scRNA-seq data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:02:39.426254Z"
+    },
+    {
+      "id": "def01a5c-9be6-469b-9c42-9a64ca551095",
+      "content_id": "075ff2aa-c417-4563-bb65-0192d3e05539",
+      "claim_id": "C2",
+      "claim": "A 6 mm biopsy punch was used to collect tissue to ensure capture of immediately adjacent tissue and cells that may have migrated into the wound site.",
+      "claim_type": "EXPLICIT",
+      "source": "To ensure that we also captured the immediately adjacent tissue as well as cells that may have migrated into the wound site, we used a 6 mm biopsy punch to collect the tissue before isolating cells using enzymatic digestion (Figure 1A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the experimental design rationale and method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:02:39.426254Z"
+    },
+    {
+      "id": "f4f48947-e663-4a9b-819f-e56d34168adb",
+      "content_id": "075ff2aa-c417-4563-bb65-0192d3e05539",
+      "claim_id": "C3",
+      "claim": "Four major cell types were classified in the scRNA-seq data: monocytes/macrophages, neutrophils, dendritic cells, and fibroblasts at both timepoints.",
+      "claim_type": "EXPLICIT",
+      "source": "By training a neural network to identify cell types based on expression of established marker genes (as in Wasko et al., 2022; Figure 1\u2014figure supplement 1A\u2013B), we classified four major cell types in the scRNA-seq data, including monocytes/macrophages (Mono/MO), neutrophils (Neut), dendritic cells (DC), and fibroblasts (FB) at both timepoints (Figure 1B\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes the computational analysis method and references figures showing the cell type classifications.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:02:39.426254Z"
+    },
+    {
+      "id": "bfdf174b-e937-400a-8618-81bcfdeffbc5",
+      "content_id": "075ff2aa-c417-4563-bb65-0192d3e05539",
+      "claim_id": "C4",
+      "claim": "The 24 hr and 48 hr samples clustered separately with minimal overlap, suggesting dramatic changes occurred in the first 2 days of inflammation.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, the 24 hr and 48 hr samples clustered separately with minimal overlap, suggesting that dramatic changes occurred in the first 2 days of inflammation (Figure 1B\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes the observation from the UMAP plots and provides an interpretation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:02:39.426254Z"
+    },
+    {
+      "id": "ab134d68-95cd-40ae-a4f5-8fbbcb977bef",
+      "content_id": "075ff2aa-c417-4563-bb65-0192d3e05539",
+      "claim_id": "C5",
+      "claim": "The absolute number of macrophages and neutrophils increased >2-fold between 24 hr and 48 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "The absolute number of macrophages and neutrophils increased >2-fold over this interval (Figure 1\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript states a quantitative finding and references a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:02:39.426254Z"
+    },
+    {
+      "id": "d9260bde-fb89-4280-b14c-0adc10d5f0cc",
+      "content_id": "075ff2aa-c417-4563-bb65-0192d3e05539",
+      "claim_id": "C6",
+      "claim": "Approximately 70% of each of the three immune cell populations was collected at 48 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "While approximately 70% of each of the three immune cell populations was collected at 48 hr, the majority of fibroblasts were found in the 24 hr population (Figure 1\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript provides a quantitative observation from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:02:39.426254Z"
+    },
+    {
+      "id": "1cbbc6a2-f45a-4aaa-8b2f-13fda88af813",
+      "content_id": "075ff2aa-c417-4563-bb65-0192d3e05539",
+      "claim_id": "C7",
+      "claim": "The majority of fibroblasts were found in the 24 hr population.",
+      "claim_type": "EXPLICIT",
+      "source": "While approximately 70% of each of the three immune cell populations was collected at 48 hr, the majority of fibroblasts were found in the 24 hr population (Figure 1\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript provides a quantitative observation from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:02:39.426254Z"
+    },
+    {
+      "id": "a80e00f9-8f81-4fa7-9faf-4ed903e8a0a2",
+      "content_id": "075ff2aa-c417-4563-bb65-0192d3e05539",
+      "claim_id": "C8",
+      "claim": "Genes upregulated by each cell type were markedly different between timepoints.",
+      "claim_type": "EXPLICIT",
+      "source": "We also found that genes upregulated by each cell type were markedly different between timepoints (Figure 1\u2014figure supplement 1E), indicating major changes to expression patterns in the same cell type over time.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes a finding from differential gene expression analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:02:39.426254Z"
+    },
+    {
+      "id": "5eacd979-2e5a-4b46-88f6-9dd15ebbbbe3",
+      "content_id": "075ff2aa-c417-4563-bb65-0192d3e05539",
+      "claim_id": "C9",
+      "claim": "Monocytes/macrophages, neutrophils, and DCs upregulated mRNAs involved in their specific function in inflammation for cytokine production, chemotaxis, and antigen presentation, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Monocytes/macrophages, neutrophils, and DCs upregulated mRNAs involved in their specific function in inflammation for cytokine production, chemotaxis, and antigen presentation, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes gene ontology analysis results for immune cell types.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:02:39.426254Z"
+    },
+    {
+      "id": "ec21fb8c-a6b3-4e6e-ac02-ab29ac998b16",
+      "content_id": "075ff2aa-c417-4563-bb65-0192d3e05539",
+      "claim_id": "C10",
+      "claim": "Fibroblasts uniquely upregulated genes involved in extracellular matrix (ECM) organization.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, fibroblasts uniquely upregulated genes involved in extracellular matrix (ECM) organization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes gene ontology analysis results for fibroblasts.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:02:39.426254Z"
+    },
+    {
+      "id": "f8623f15-7564-42b6-9b6b-0b14555ed634",
+      "content_id": "075ff2aa-c417-4563-bb65-0192d3e05539",
+      "claim_id": "C11",
+      "claim": "DCs, fibroblasts, and neutrophils upregulated genes involved in apoptosis and cell death.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, DCs, fibroblasts, and neutrophils upregulated genes involved in apoptosis and cell death (Figure 1F and G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes gene ontology analysis results and references figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:02:39.426254Z"
+    },
+    {
+      "id": "3271be96-65e6-4f31-bcce-f82f01377382",
+      "content_id": "075ff2aa-c417-4563-bb65-0192d3e05539",
+      "claim_id": "C12",
+      "claim": "Neutrophils upregulated the largest number of mRNAs for apoptosis including Casp3, S100a8, and S100a9.",
+      "claim_type": "EXPLICIT",
+      "source": "Neutrophils upregulated the largest number of mRNAs for apoptosis including Casp3, which is cleaved to activate apoptosis, and S100a8 and S100a9, which induce apoptosis of several cell types (Yui et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes specific genes upregulated in neutrophils and cites a reference for their function.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:02:39.426254Z"
+    },
+    {
+      "id": "45a0e5d3-81ea-4421-9814-d778c9e58be2",
+      "content_id": "075ff2aa-c417-4563-bb65-0192d3e05539",
+      "claim_id": "C13",
+      "claim": "S100a8 and S100a9 induce apoptosis of several cell types.",
+      "claim_type": "EXPLICIT",
+      "source": "Neutrophils upregulated the largest number of mRNAs for apoptosis including Casp3, which is cleaved to activate apoptosis, and S100a8 and S100a9, which induce apoptosis of several cell types (Yui et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites a reference to support the function of S100a8 and S100a9.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:02:39.426254Z"
+    },
+    {
+      "id": "76fdd777-2d61-4031-988f-30dce73dac46",
+      "content_id": "075ff2aa-c417-4563-bb65-0192d3e05539",
+      "claim_id": "C14",
+      "claim": "Fibroblasts and DCs upregulated apoptotic genes ranging from receptors (Fgfr1 and Bmpr1a), cytokines (Il12b), to mediators of apoptotic pathways (Bcl2l14 and Cth).",
+      "claim_type": "EXPLICIT",
+      "source": "Fibroblasts and DCs also upregulated apoptotic genes ranging from receptors (Fgfr1 and Bmpr1a), cytokines (Il12b), to mediators of apoptotic pathways (Bcl2l14 and Cth).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript lists specific genes upregulated in fibroblasts and DCs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:02:39.426254Z"
+    },
+    {
+      "id": "464ad870-16b2-416d-9283-505e21378b0b",
+      "content_id": "075ff2aa-c417-4563-bb65-0192d3e05539",
+      "claim_id": "C15",
+      "claim": "Cleaved (active) caspase 3 was detected in mouse wounds at 24 hr and 48 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "Sections of mouse wounds at 24 hr (Figure 1H) and 48 hr (Figure 1\u2014figure supplement 1F) were stained with antibodies (Abs) against cleaved (active) caspase 3 to detect activation of apoptosis.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes immunostaining results and references figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:02:39.426254Z"
+    },
+    {
+      "id": "131412ea-864c-4938-91ab-1987ba76c85e",
+      "content_id": "075ff2aa-c417-4563-bb65-0192d3e05539",
+      "claim_id": "C16",
+      "claim": "Significantly more cleaved caspase 3+ cells were present in 48 hr wounds compared to 24 hr wounds.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that significantly more cleaved caspase 3+ cells were present in 48 hr wounds (Figure 1\u2014figure supplement 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes a quantitative comparison with statistical significance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:02:39.426254Z"
+    },
+    {
+      "id": "11dedace-985b-4ead-a438-ddf8f613e226",
+      "content_id": "075ff2aa-c417-4563-bb65-0192d3e05539",
+      "claim_id": "C17",
+      "claim": "Cleaved caspase 3 was detected in CD11c+ dendritic cells in 24 hr wound beds.",
+      "claim_type": "EXPLICIT",
+      "source": "We also detected cleaved caspase 3 in CD11c+ dendritic cells (Figure 1I) and Pdgfra+ fibroblasts (Figure 1J) in 24 hr wound beds.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes immunostaining results showing colocalization.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:02:39.426254Z"
+    },
+    {
+      "id": "87d9e1e1-7cc9-4fd6-98d4-67074ec46d0e",
+      "content_id": "075ff2aa-c417-4563-bb65-0192d3e05539",
+      "claim_id": "C18",
+      "claim": "Cleaved caspase 3 was detected in Pdgfra+ fibroblasts in 24 hr wound beds.",
+      "claim_type": "EXPLICIT",
+      "source": "We also detected cleaved caspase 3 in CD11c+ dendritic cells (Figure 1I) and Pdgfra+ fibroblasts (Figure 1J) in 24 hr wound beds.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes immunostaining results showing colocalization.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:02:39.426254Z"
+    },
+    {
+      "id": "0539694a-7872-4ef7-b1d1-7228ddbfb5d9",
+      "content_id": "075ff2aa-c417-4563-bb65-0192d3e05539",
+      "claim_id": "C19",
+      "claim": "Apoptosis occurs during inflammation after skin injury.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, these data suggest that apoptosis occurs during inflammation after skin injury.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides a summary conclusion based on the presented data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:02:39.426254Z"
+    },
+    {
+      "id": "f0fa52f5-006c-492d-8573-77b1ca54030b",
+      "content_id": "075ff2aa-c417-4563-bb65-0192d3e05539",
+      "claim_id": "C20",
+      "claim": "Fibroblasts upregulated several genes encoding efferocytosis receptors (Tyro3, Axl, Itgav, and Slc7a11).",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, fibroblasts upregulated several genes encoding efferocytosis receptors (Tyro3, Axl, Itgav, and Slc7a11), as well as genes encoding for ligands Gas6, Pros1, C3, C4b, and Mfge8.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes gene expression analysis results for fibroblasts.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:02:39.426254Z"
+    },
+    {
+      "id": "b2cde78a-e4a0-4b44-94bf-98437ba3c052",
+      "content_id": "075ff2aa-c417-4563-bb65-0192d3e05539",
+      "claim_id": "C21",
+      "claim": "Fibroblasts upregulated genes encoding for ligands Gas6, Pros1, C3, C4b, and Mfge8.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, fibroblasts upregulated several genes encoding efferocytosis receptors (Tyro3, Axl, Itgav, and Slc7a11), as well as genes encoding for ligands Gas6, Pros1, C3, C4b, and Mfge8.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes gene expression analysis results for fibroblasts.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:02:39.426254Z"
+    },
+    {
+      "id": "c713ffe6-b47e-4fe0-936a-567be18fb5de",
+      "content_id": "075ff2aa-c417-4563-bb65-0192d3e05539",
+      "claim_id": "C22",
+      "claim": "DCs, macrophages, and neutrophils upregulated several receptors that mediate detection of apoptotic cells.",
+      "claim_type": "EXPLICIT",
+      "source": "DCs, macrophages, and neutrophils also upregulated several receptors that mediate detection of apoptotic cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes gene expression analysis results for immune cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:02:39.426254Z"
+    },
+    {
+      "id": "f0676515-831b-4d5d-882b-2633921d918b",
+      "content_id": "075ff2aa-c417-4563-bb65-0192d3e05539",
+      "claim_id": "C23",
+      "claim": "Macrophages were enriched for the downstream activators Arg1 and Retnla.",
+      "claim_type": "EXPLICIT",
+      "source": "Macrophages were enriched for the downstream activators Arg1 and Retnla, whereas other cell types upregulated Socs1 and Socs3, which are downstream of the TAM receptors (Rothlin et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes gene expression analysis results and cites a reference for the pathway.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:02:39.426254Z"
+    },
+    {
+      "id": "24877e60-e78a-4de2-b179-fe9198489384",
+      "content_id": "075ff2aa-c417-4563-bb65-0192d3e05539",
+      "claim_id": "C24",
+      "claim": "Socs1 and Socs3 are downstream of the TAM receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "Macrophages were enriched for the downstream activators Arg1 and Retnla, whereas other cell types upregulated Socs1 and Socs3, which are downstream of the TAM receptors (Rothlin et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites a reference to support the pathway relationship.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:02:39.426254Z"
+    },
+    {
+      "id": "5688034a-0e1f-40de-a8a3-c12e6e71f542",
+      "content_id": "075ff2aa-c417-4563-bb65-0192d3e05539",
+      "claim_id": "C25",
+      "claim": "Gas6 was highly expressed by a specific subset of monocyte/macrophage cells that also overexpressed Lyve1, Timd4, and Retnla.",
+      "claim_type": "EXPLICIT",
+      "source": "Examining the UMAP plot to determine the heterogeneity of efferocytosis gene expression within individual cell types, we observed that Gas6 was highly expressed by a specific subset of monocyte/macrophage cells. These cells also overexpressed the resident macrophage marker Lyve1, the apoptosis receptor Timd4, and Retnla, a downstream factor of efferocytosis (Figure 2B), indicating that they may play a role in apoptosis detection and response in wound healing.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes single-cell analysis results and references a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:02:39.426254Z"
+    },
+    {
+      "id": "c321758b-cb0b-400f-b17d-0d9ee103a716",
+      "content_id": "075ff2aa-c417-4563-bb65-0192d3e05539",
+      "claim_id": "C26",
+      "claim": "Lyve1 has been identified as a marker for resident macrophages, which are distinct from the majority of wound macrophages that differentiate from bone marrow-derived monocytes and are recruited to the wound after injury.",
+      "claim_type": "EXPLICIT",
+      "source": "Lyve1 has been identified as a marker for resident macrophages, which are distinct from the majority of wound macrophages that differentiate from bone marrow-derived monocytes and are recruited to the wound after injury (Lim et al., 2018; Wang et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites references to support the characterization of Lyve1+ macrophages.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:02:39.426254Z"
+    },
+    {
+      "id": "4fb5ca7f-ef3f-4362-bb56-db12278467e9",
+      "content_id": "075ff2aa-c417-4563-bb65-0192d3e05539",
+      "claim_id": "C27",
+      "claim": "Lyve1+ cells in wound beds are resident rather than recruited to the wound bed after injury.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that Lyve1 was expressed at the protein level both in wound beds (Figure 2C) and adjacent to the wound (Figure 2\u2014figure supplement 1A) with immunofluorescence staining, and confirmed that these cells were resident rather than recruited to the wound bed after injury, since they did not express GFP.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes lineage tracing results using the Lyz2CreER;mTmG mouse model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:02:39.426254Z"
+    },
+    {
+      "id": "730edb97-057a-4bf2-8eef-cf9c7c8657ce",
+      "content_id": "075ff2aa-c417-4563-bb65-0192d3e05539",
+      "claim_id": "C28",
+      "claim": "Lyve1+ cells co-expressed Gas6 protein.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, we confirmed that Lyve1+ cells co-expressed Gas6 protein (Figure 2D) and that Timd4 protein (Figure 2E) was expressed in wound beds.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes immunostaining results showing colocalization.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:02:39.426254Z"
+    },
+    {
+      "id": "bbe5a8e5-1cb8-47cb-835d-0cd4620f6ceb",
+      "content_id": "075ff2aa-c417-4563-bb65-0192d3e05539",
+      "claim_id": "C29",
+      "claim": "Timd4 protein was expressed in wound beds.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, we confirmed that Lyve1+ cells co-expressed Gas6 protein (Figure 2D) and that Timd4 protein (Figure 2E) was expressed in wound beds.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes immunostaining results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:02:39.426254Z"
+    },
+    {
+      "id": "fe77d9b0-655f-4504-9b00-7d42487afaf0",
+      "content_id": "075ff2aa-c417-4563-bb65-0192d3e05539",
+      "claim_id": "C30",
+      "claim": "The TAM receptor Axl was uniquely expressed in the single-cell dataset by both dendritic cells and fibroblasts.",
+      "claim_type": "EXPLICIT",
+      "source": "The TAM receptor Axl was uniquely expressed in the single-cell dataset by both dendritic cells and fibroblasts (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes single-cell gene expression analysis results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:02:39.426254Z"
+    },
+    {
+      "id": "bec434e1-dd5e-4151-971f-7ad29489a720",
+      "content_id": "075ff2aa-c417-4563-bb65-0192d3e05539",
+      "claim_id": "C31",
+      "claim": "Axl expression was confirmed in 24 hr wound beds in both dendritic cells (CD11c) and fibroblasts (Pdgfra-GFP).",
+      "claim_type": "EXPLICIT",
+      "source": "Using immunofluorescence staining, we confirmed Axl expression in 24 hr wound beds in both dendritic cells (CD11c) (Figure 2F) and fibroblasts (Pdgfra-GFP) (Figure 2G), which displayed elongated GFP+ processes with central localization of Axl.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes immunostaining results confirming protein expression.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:02:39.426254Z"
+    },
+    {
+      "id": "d0bff118-0a80-4727-89fd-aad6e89be70c",
+      "content_id": "075ff2aa-c417-4563-bb65-0192d3e05539",
+      "claim_id": "C32",
+      "claim": "Fibroblasts displayed elongated GFP+ processes with central localization of Axl.",
+      "claim_type": "EXPLICIT",
+      "source": "Using immunofluorescence staining, we confirmed Axl expression in 24 hr wound beds in both dendritic cells (CD11c) (Figure 2F) and fibroblasts (Pdgfra-GFP) (Figure 2G), which displayed elongated GFP+ processes with central localization of Axl.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes morphological observations from immunostaining.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:02:39.426254Z"
+    },
+    {
+      "id": "0f507082-1ed8-443f-9669-e701ec562edc",
+      "content_id": "075ff2aa-c417-4563-bb65-0192d3e05539",
+      "claim_id": "C33",
+      "claim": "All efferocytosis receptor mRNAs studied, including the TAM receptors, were significantly upregulated in the wound bed compared to naive skin.",
+      "claim_type": "EXPLICIT",
+      "source": "All efferocytosis receptor mRNAs studied, including the TAM receptors, were significantly upregulated in the wound bed compared to naive skin, while the ligand Gas6 was significantly downregulated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes qPCR results comparing wound beds to naive skin.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:02:39.426254Z"
+    },
+    {
+      "id": "23c1d9e7-3e72-40a2-b4da-0e10fca03add",
+      "content_id": "075ff2aa-c417-4563-bb65-0192d3e05539",
+      "claim_id": "C34",
+      "claim": "The ligand Gas6 was significantly downregulated in wound beds compared to naive skin.",
+      "claim_type": "EXPLICIT",
+      "source": "All efferocytosis receptor mRNAs studied, including the TAM receptors, were significantly upregulated in the wound bed compared to naive skin, while the ligand Gas6 was significantly downregulated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes qPCR results comparing wound beds to naive skin.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:02:39.426254Z"
+    },
+    {
+      "id": "1e8a44aa-7cd8-4be0-93e8-032bd4a94487",
+      "content_id": "075ff2aa-c417-4563-bb65-0192d3e05539",
+      "claim_id": "C35",
+      "claim": "The downstream factor of efferocytosis Retnla was significantly downregulated in the wound bed compared to naive skin.",
+      "claim_type": "EXPLICIT",
+      "source": "The downstream factor of efferocytosis Retnla was also significantly downregulated in the wound bed, while Socs1 and Socs3 were significantly upregulated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes qPCR results comparing wound beds to naive skin.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:02:39.426254Z"
+    },
+    {
+      "id": "14c7c350-9263-47ea-bb56-17a9fefe7a96",
+      "content_id": "075ff2aa-c417-4563-bb65-0192d3e05539",
+      "claim_id": "C36",
+      "claim": "Socs1 and Socs3 were significantly upregulated in wound beds compared to naive skin.",
+      "claim_type": "EXPLICIT",
+      "source": "The downstream factor of efferocytosis Retnla was also significantly downregulated in the wound bed, while Socs1 and Socs3 were significantly upregulated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes qPCR results comparing wound beds to naive skin.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:02:39.426254Z"
+    },
+    {
+      "id": "0e3e1aba-36f5-42a6-8d4a-a4398e5fe9bc",
+      "content_id": "075ff2aa-c417-4563-bb65-0192d3e05539",
+      "claim_id": "C37",
+      "claim": "Labeled intact neutrophils and efferocytosed neutrophils were detected in wounds at 1, 3, and 5 days after injury.",
+      "claim_type": "EXPLICIT",
+      "source": "We detected and quantified labeled intact neutrophils and efferocytosed neutrophils in wounds at all three timepoints (Figure 2H\u2013M).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes results from the neutrophil injection experiment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:02:39.426254Z"
+    },
+    {
+      "id": "ca0c452e-2136-46dd-bac9-04800c4d8e49",
+      "content_id": "075ff2aa-c417-4563-bb65-0192d3e05539",
+      "claim_id": "C38",
+      "claim": "Wounds at 5 days had significantly more cells undergoing efferocytosis compared to earlier timepoints.",
+      "claim_type": "EXPLICIT",
+      "source": "While wounds at 5 days had significantly more cells undergoing efferocytosis (Figure 2L), the efferocytosis rate was generally constant, with a slight but nonsignificant increase at 3 days (Figure 2J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes quantitative results with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:02:39.426254Z"
+    },
+    {
+      "id": "45ba646a-9210-461d-b2ea-5655e7a2d4ef",
+      "content_id": "075ff2aa-c417-4563-bb65-0192d3e05539",
+      "claim_id": "C39",
+      "claim": "The efferocytosis rate was generally constant across timepoints, with a slight but nonsignificant increase at 3 days.",
+      "claim_type": "EXPLICIT",
+      "source": "While wounds at 5 days had significantly more cells undergoing efferocytosis (Figure 2L), the efferocytosis rate was generally constant, with a slight but nonsignificant increase at 3 days (Figure 2J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes quantitative results with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:02:39.426254Z"
+    },
+    {
+      "id": "fd09300b-ce71-42cc-91ad-15ef516c4f2d",
+      "content_id": "075ff2aa-c417-4563-bb65-0192d3e05539",
+      "claim_id": "C40",
+      "claim": "The machinery for multiple efferocytosis pathways are active in the inflammatory and proliferative stages of wound healing.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these data indicate that the machinery for multiple efferocytosis pathways are active in the inflammatory and proliferative stages of wound healing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides a summary conclusion based on the presented data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:02:39.426254Z"
+    },
+    {
+      "id": "331b473f-90e6-477c-bb47-d7ab74082d7e",
+      "content_id": "075ff2aa-c417-4563-bb65-0192d3e05539",
+      "claim_id": "C41",
+      "claim": "Apoptosis is increased in diabetic wounds, including an elevation in apoptotic lymphocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies have indicated that apoptosis is increased in diabetic wounds, including an elevation in apoptotic lymphocytes (Arya et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites a reference to support this statement about diabetic wounds.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:02:39.426254Z"
+    },
+    {
+      "id": "c2f3d357-4576-48a8-864b-0508d536f70a",
+      "content_id": "075ff2aa-c417-4563-bb65-0192d3e05539",
+      "claim_id": "C42",
+      "claim": "Hypoxic environments (such as those found in diabetic wounds) increase macrophage efferocytosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Additional studies have shown that hypoxic environments (such as those found in diabetic wounds) increase macrophage efferocytosis (Wang et al., 2023), though other studies have indicated that macrophage efferocytosis is defective in diabetic wounds (Khanna et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites a reference to support this statement.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:02:39.426254Z"
+    },
+    {
+      "id": "4b7617a3-5c7e-46c3-9731-74d50e6d748e",
+      "content_id": "075ff2aa-c417-4563-bb65-0192d3e05539",
+      "claim_id": "C43",
+      "claim": "Macrophage efferocytosis is defective in diabetic wounds.",
+      "claim_type": "EXPLICIT",
+      "source": "Additional studies have shown that hypoxic environments (such as those found in diabetic wounds) increase macrophage efferocytosis (Wang et al., 2023), though other studies have indicated that macrophage efferocytosis is defective in diabetic wounds (Khanna et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites a reference to support this statement.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:02:39.426254Z"
+    },
+    {
+      "id": "5534194f-4c85-4994-9cf0-ab452c035f50",
+      "content_id": "075ff2aa-c417-4563-bb65-0192d3e05539",
+      "claim_id": "C44",
+      "claim": "Several alterations in the expression of mRNAs associated with apoptotic signaling pathways were found between non-diabetic and diabetic foot ulcers.",
+      "claim_type": "EXPLICIT",
+      "source": "We found several alterations in the expression of mRNAs associated with apoptotic signaling pathways between non-diabetic and diabetic foot ulcers (Figure 3\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes analysis of human patient samples.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:02:39.426254Z"
+    },
+    {
+      "id": "fa085ab5-6646-48e2-b0c2-8e8c04a81152",
+      "content_id": "075ff2aa-c417-4563-bb65-0192d3e05539",
+      "claim_id": "C45",
+      "claim": "Monocytes/macrophages increased expression of several apoptosis genes (including BCL2, FGFR3, FGFR1, CTH, CASP3, IL19, NME5, and S100A8/9) in diabetic foot ulcers compared to non-diabetic wounds.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, monocytes/macrophages increased expression of several apoptosis genes (including BCL2, FGFR3, FGFR1, CTH, CASP3, IL19, NME5, and S100A8/9) in diabetic foot ulcers compared to monocytes/macrophages in non-diabetic wounds.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes gene expression analysis results from human samples.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:02:39.426254Z"
+    },
+    {
+      "id": "a3927d46-e4ab-4cb7-a4f7-24e3bb465527",
+      "content_id": "075ff2aa-c417-4563-bb65-0192d3e05539",
+      "claim_id": "C46",
+      "claim": "There was a striking increase in overall expression of efferocytosis pathway genes in diabetic wounds compared to non-diabetic wounds.",
+      "claim_type": "EXPLICIT",
+      "source": "When we compared the expression of genes associated with the efferocytosis pathway between non-diabetic and diabetic foot ulcers, we found a striking increase in overall expression of efferocytosis pathway genes in diabetic wounds compared to non-diabetic wounds (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes gene expression analysis results from human samples.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:02:39.426254Z"
+    },
+    {
+      "id": "ad04cc69-4a0b-4cdf-846a-3d1f8a1af2a5",
+      "content_id": "075ff2aa-c417-4563-bb65-0192d3e05539",
+      "claim_id": "C47",
+      "claim": "The expression of AXL increased in all cell types in diabetic wounds.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, the expression of AXL increased in all cell types in diabetic wounds, while expression of its ligand GAS6 increased in all cell types with the exception of basal keratinocytes and mast cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes gene expression analysis results from human samples.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:02:39.426254Z"
+    },
+    {
+      "id": "ffd42e94-f33b-4f42-a06e-ad577afef581",
+      "content_id": "075ff2aa-c417-4563-bb65-0192d3e05539",
+      "claim_id": "C48",
+      "claim": "Expression of GAS6 increased in all cell types in diabetic wounds with the exception of basal keratinocytes and mast cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, the expression of AXL increased in all cell types in diabetic wounds, while expression of its ligand GAS6 increased in all cell types with the exception of basal keratinocytes and mast cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes gene expression analysis results from human samples.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:02:39.426254Z"
+    },
+    {
+      "id": "685b7654-8537-4d4d-820f-563947749228",
+      "content_id": "075ff2aa-c417-4563-bb65-0192d3e05539",
+      "claim_id": "C49",
+      "claim": "In non-diabetic patient wounds, GAS6 expression by several cell types, including monocytes/macrophages and fibroblasts, stimulated signaling via AXL receptors on fibroblasts and pericytes.",
+      "claim_type": "EXPLICIT",
+      "source": "In non-diabetic patient wounds, GAS6 expression by several cell types, including monocytes/macrophages and fibroblasts, stimulated signaling via AXL receptors on fibroblasts and pericytes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes CellChat analysis results from human samples.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:02:39.426254Z"
+    },
+    {
+      "id": "cf671ffc-5737-40aa-becf-992931a51194",
+      "content_id": "075ff2aa-c417-4563-bb65-0192d3e05539",
+      "claim_id": "C50",
+      "claim": "In diabetic patient wounds, GAS6 and AXL expression was more robust in several cell types.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in diabetic patient wounds, GAS6 and AXL expression was more robust in several cell types.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes CellChat analysis results from human samples.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:02:39.426254Z"
+    },
+    {
+      "id": "e5bf2ccd-3489-47dc-a655-b03085464c6d",
+      "content_id": "075ff2aa-c417-4563-bb65-0192d3e05539",
+      "claim_id": "C51",
+      "claim": "Monocytes/macrophages increased GAS6 stimulation and newly expressed AXL to receive pathway signaling in diabetic wounds.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, monocytes/macrophages increased GAS6 stimulation and newly expressed AXL to receive pathway signaling in diabetic wounds (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes CellChat analysis results from human samples.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:02:39.426254Z"
+    },
+    {
+      "id": "aabbf6d1-d2c9-48db-8a5c-3f67f8dab0a5",
+      "content_id": "075ff2aa-c417-4563-bb65-0192d3e05539",
+      "claim_id": "C52",
+      "claim": "Gas6 staining was more prevalent in diabetic skin sections and colocalized with the macrophage marker CD68.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, we found that Gas6 staining was more prevalent in diabetic skin sections, and that it colocalized with the macrophage marker (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes immunostaining results from human samples.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:02:39.426254Z"
+    },
+    {
+      "id": "d0957c86-0402-437a-bb8c-a8095b6307cd",
+      "content_id": "075ff2aa-c417-4563-bb65-0192d3e05539",
+      "claim_id": "C53",
+      "claim": "More Gas6 staining was observed in diabetic samples compared to non-diabetic samples, though this was not significant.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, when quantified via corrected total fluorescence (CTF), more Gas6 staining was observed in diabetic samples, though this was not significant.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes quantitative immunostaining results with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:02:39.426254Z"
+    },
+    {
+      "id": "09338a11-1e44-4e10-aead-8921b53676a2",
+      "content_id": "075ff2aa-c417-4563-bb65-0192d3e05539",
+      "claim_id": "C54",
+      "claim": "Diabetic wounds may activate and modulate GAS6-AXL signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these data indicate that diabetic wounds may activate and modulate GAS6-AXL signaling, and suggest a potential avenue for future research.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides a summary conclusion based on the presented data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:02:39.426254Z"
+    },
+    {
+      "id": "c924645a-ba40-43f4-ba52-422fc63c9803",
+      "content_id": "075ff2aa-c417-4563-bb65-0192d3e05539",
+      "claim_id": "C55",
+      "claim": "Axl expression was induced by toll-like receptor 3 (TLR3) stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Prior work showed that Axl expression was induced by toll-like receptor 3 (TLR3) stimulation (Rothlin et al., 2007) and that TLR3 is essential for skin wound repair (Lin et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites references to support this statement.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:02:39.426254Z"
+    },
+    {
+      "id": "3242310a-f33f-4f8a-b658-58b3230ad232",
+      "content_id": "075ff2aa-c417-4563-bb65-0192d3e05539",
+      "claim_id": "C56",
+      "claim": "TLR3 is essential for skin wound repair.",
+      "claim_type": "EXPLICIT",
+      "source": "Prior work showed that Axl expression was induced by toll-like receptor 3 (TLR3) stimulation (Rothlin et al., 2007) and that TLR3 is essential for skin wound repair (Lin et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites a reference to support this statement.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:02:39.426254Z"
+    },
+    {
+      "id": "16820546-f12a-4d22-891d-2e8ca3a78605",
+      "content_id": "075ff2aa-c417-4563-bb65-0192d3e05539",
+      "claim_id": "C57",
+      "claim": "TLR mRNAs are highly expressed in neutrophils and macrophages with a few expressed in dendritic cells and fibroblasts.",
+      "claim_type": "EXPLICIT",
+      "source": "scRNA-seq of early wounds revealed that TLR mRNAs are highly expressed in neutrophils and macrophages with a few expressed in dendritic cells and fibroblasts (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes single-cell gene expression analysis results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:02:39.426254Z"
+    },
+    {
+      "id": "c2a58dd5-2d4a-44c9-b993-3212f28869a4",
+      "content_id": "075ff2aa-c417-4563-bb65-0192d3e05539",
+      "claim_id": "C58",
+      "claim": "TLR3 is unique among the TLRs in that it is expressed by both dendritic cells and fibroblasts.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, TLR3 is unique among the TLRs in that it is expressed by both dendritic cells and fibroblasts, which also express high levels of Axl in the single-cell dataset (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes single-cell gene expression analysis results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:02:39.426254Z"
+    },
+    {
+      "id": "dbf537bd-acc9-4091-a154-ed40cef26627",
+      "content_id": "075ff2aa-c417-4563-bb65-0192d3e05539",
+      "claim_id": "C59",
+      "claim": "Interferon (IFN)-\u03b2 (Ifnb) was upregulated in WT mice injected with poly(I:C) but not in the skin of TLR3 KO mice.",
+      "claim_type": "EXPLICIT",
+      "source": "While several inflammatory cytokines were not induced in skin injected with poly(I:C) (Figure 4\u2014figure supplement 1A), interferon (IFN)-\u03b2 (Ifnb) was upregulated in WT mice injected with poly(I:C) but not in the skin of TLR3 KO mice (Figure 4C), confirming the specificity of poly(I:C) for activation of TLR3 in the skin (Alexopoulou et al., 2001).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes experimental results and cites a reference for the specificity.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:02:39.426254Z"
+    },
+    {
+      "id": "4437f605-cb5a-48d5-a21f-e778328415a8",
+      "content_id": "075ff2aa-c417-4563-bb65-0192d3e05539",
+      "claim_id": "C60",
+      "claim": "Poly(I:C) is specific for activation of TLR3 in the skin.",
+      "claim_type": "EXPLICIT",
+      "source": "While several inflammatory cytokines were not induced in skin injected with poly(I:C) (Figure 4\u2014figure supplement 1A), interferon (IFN)-\u03b2 (Ifnb) was upregulated in WT mice injected with poly(I:C) but not in the skin of TLR3 KO mice (Figure 4C), confirming the specificity of poly(I:C) for activation of TLR3 in the skin (Alexopoulou et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites a reference to support the specificity of poly(I:C).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:02:39.426254Z"
+    },
+    {
+      "id": "e5bb2a24-2732-428e-a5f3-2cbb15fece35",
+      "content_id": "075ff2aa-c417-4563-bb65-0192d3e05539",
+      "claim_id": "C61",
+      "claim": "Axl protein and mRNA were induced in naive skin upon poly(I:C) injection.",
+      "claim_type": "EXPLICIT",
+      "source": "Axl protein (Figure 4D) and mRNA (Figure 4E) were induced in naive skin upon poly(I:C) injection, and Axl mRNA induction and protein expression were abrogated in skin of TLR3 KO mice (Figure 4E and Figure 4\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes experimental results from injection studies.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:02:39.426254Z"
+    },
+    {
+      "id": "0b289751-ffc3-421a-ad2b-ef5086479fb7",
+      "content_id": "075ff2aa-c417-4563-bb65-0192d3e05539",
+      "claim_id": "C62",
+      "claim": "Axl mRNA induction and protein expression were abrogated in skin of TLR3 KO mice injected with poly(I:C).",
+      "claim_type": "EXPLICIT",
+      "source": "Axl protein (Figure 4D) and mRNA (Figure 4E) were induced in naive skin upon poly(I:C) injection, and Axl mRNA induction and protein expression were abrogated in skin of TLR3 KO mice (Figure 4E and Figure 4\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes experimental results from injection studies.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:02:39.426254Z"
+    },
+    {
+      "id": "f6bb966f-c4de-4bf4-9657-7014d3495467",
+      "content_id": "075ff2aa-c417-4563-bb65-0192d3e05539",
+      "claim_id": "C63",
+      "claim": "TLR3 signaling is sufficient to activate Axl expression in naive skin.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these data indicate that TLR3 signaling is sufficient to activate Axl expression in naive skin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides a summary conclusion based on the presented data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:02:39.426254Z"
+    },
+    {
+      "id": "a78bcf54-89b7-4368-82b8-ed5f03240855",
+      "content_id": "075ff2aa-c417-4563-bb65-0192d3e05539",
+      "claim_id": "C64",
+      "claim": "Injecting recombinant IFN-\u03b2 intradermally into naive mouse back skin was sufficient to induce Axl protein expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Two hours after injection, Axl protein was detected by immunostaining in skin injected with IFN-\u03b2 but not control skin (Figure 4H and F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes experimental results from injection studies.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:02:39.426254Z"
+    },
+    {
+      "id": "3292947e-d084-40ec-b76b-3e8f9ce46b2a",
+      "content_id": "075ff2aa-c417-4563-bb65-0192d3e05539",
+      "claim_id": "C65",
+      "claim": "Axl protein expression was stimulated in TLR3 KO wound beds similar to WT mice.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to our previous results in naive skin, Axl protein expression was stimulated in TLR3 KO wound beds similar to WT mice (Figure 4I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes experimental results comparing WT and TLR3 KO wounds.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:02:39.426254Z"
+    },
+    {
+      "id": "5f7611d3-72e7-4131-b83c-258c6c62fc21",
+      "content_id": "075ff2aa-c417-4563-bb65-0192d3e05539",
+      "claim_id": "C66",
+      "claim": "While TLR3 is sufficient to drive Axl expression in naive skin, additional mechanisms drive Axl upregulation within skin wounds in its absence.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, these data suggest that while TLR3 is sufficient to drive Axl expression in naive skin, additional mechanisms drive Axl upregulation within skin wounds in its absence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides a summary conclusion based on the presented data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:02:39.426254Z"
+    },
+    {
+      "id": "bf99e286-1115-4472-8b0b-d3377adb005b",
+      "content_id": "075ff2aa-c417-4563-bb65-0192d3e05539",
+      "claim_id": "C67",
+      "claim": "Axl mRNA was significantly downregulated in skin wounds treated with anti-Axl Ab on day 5 compared to control IgG Ab injected wounds.",
+      "claim_type": "EXPLICIT",
+      "source": "While we saw a nonsignificant downregulation of Axl mRNA at 1 day (D) post injury, Axl mRNA was significantly downregulated in skin wounds treated with anti-Axl Ab on day 5 compared to control IgG Ab injected wounds (Figure 5B), indicating that the anti-Axl Ab treatment reduced Axl signaling in skin wounds.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes qPCR results with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:02:39.426254Z"
+    },
+    {
+      "id": "7337dcd2-0fb2-4291-8c3d-c6334f6886f0",
+      "content_id": "075ff2aa-c417-4563-bb65-0192d3e05539",
+      "claim_id": "C68",
+      "claim": "The anti-Axl Ab treatment reduced Axl signaling in skin wounds.",
+      "claim_type": "EXPLICIT",
+      "source": "While we saw a nonsignificant downregulation of Axl mRNA at 1 day (D) post injury, Axl mRNA was significantly downregulated in skin wounds treated with anti-Axl Ab on day 5 compared to control IgG Ab injected wounds (Figure 5B), indicating that the anti-Axl Ab treatment reduced Axl signaling in skin wounds.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides an interpretation of the qPCR results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:02:39.426254Z"
+    },
+    {
+      "id": "4decac93-970a-4018-ac02-5ed9f39e3e84",
+      "content_id": "075ff2aa-c417-4563-bb65-0192d3e05539",
+      "claim_id": "C69",
+      "claim": "Axl activity upregulates Axl mRNA expression in a positive feedback loop.",
+      "claim_type": "EXPLICIT",
+      "source": "Since Axl activity upregulates Axl mRNA expression in a positive feedback loop (Brand et al., 2014), we analyzed Axl mRNA expression in wounds of Ab-treated mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites a reference to support this mechanism.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:02:39.426254Z"
+    },
+    {
+      "id": "55f3a9e2-c27d-402c-ba6b-7da8953d0f8f",
+      "content_id": "075ff2aa-c417-4563-bb65-0192d3e05539",
+      "claim_id": "C70",
+      "claim": "No significant change was observed in the proportion of dendritic cells, neutrophils, or macrophages present in IgG or anti-Axl Ab-treated wound beds at 3 days after injury.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, no significant change was observed in the proportion of dendritic cells, neutrophils, or macrophages that were present in IgG or anti-Axl Ab-treated wound beds.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes flow cytometry results with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:02:39.426254Z"
+    },
+    {
+      "id": "620b3920-5f5c-4bf1-83f6-e5e2754d63eb",
+      "content_id": "075ff2aa-c417-4563-bb65-0192d3e05539",
+      "claim_id": "C71",
+      "claim": "The proportion of cell types expressing Axl was altered, with more Axl+ macrophages and fewer Axl+ DCs present in the anti-Axl Ab-treated group compared to the IgG Ab control.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the proportion of cell types expressing Axl was altered, with more Axl+ macrophages and fewer Axl+ DCs present in the anti-Axl Ab-treated group compared to the IgG Ab control.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes flow cytometry results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:02:39.426254Z"
+    },
+    {
+      "id": "6b16b6e5-3a2a-4f89-90a0-3b6b30b80c46",
+      "content_id": "075ff2aa-c417-4563-bb65-0192d3e05539",
+      "claim_id": "C72",
+      "claim": "Wounds treated with anti-Axl Ab exhibited observable healing defects at 5 days post injury compared to wounds treated with control IgG Ab, including a qualitative lack of granulation tissue visible with H&E staining.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the relatively normal inflammatory cell numbers at day 3 after injury, wounds treated with anti-Axl Ab exhibited observable healing defects at 5 days post injury compared to wounds treated with control IgG Ab, including a qualitative lack of granulation tissue visible with hematoxylin and eosin (H&E) staining (Figure 5E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes histological observations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:02:39.426254Z"
+    },
+    {
+      "id": "b71cbb6d-34f3-4b0f-823e-f57004fb617f",
+      "content_id": "075ff2aa-c417-4563-bb65-0192d3e05539",
+      "claim_id": "C73",
+      "claim": "Upon Axl inhibition, fibroblast repopulation was significantly reduced.",
+      "claim_type": "EXPLICIT",
+      "source": "We also observed that upon Axl inhibition, fibroblast repopulation was significantly reduced (Figure 5E\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes quantitative immunostaining results with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:02:39.426254Z"
+    },
+    {
+      "id": "6de96984-dc69-4eef-8154-f4d45c863732",
+      "content_id": "075ff2aa-c417-4563-bb65-0192d3e05539",
+      "claim_id": "C74",
+      "claim": "Axl inhibition significantly reduced the CD31+ area of wound beds.",
+      "claim_type": "EXPLICIT",
+      "source": "Revascularization was also defective; Axl inhibition significantly reduced the CD31+ area of wound beds (Figure 5E\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes quantitative immunostaining results with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:02:39.426254Z"
+    },
+    {
+      "id": "70e8aa4b-ad9d-4bd8-a2b3-f9cd5b8814b2",
+      "content_id": "075ff2aa-c417-4563-bb65-0192d3e05539",
+      "claim_id": "C75",
+      "claim": "No significant difference in the percentage of wound closure by keratinocytes was observed between anti-Axl Ab and IgG Ab treatments.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we observed no significant difference in the percentage of wound closure by keratinocytes as indicated by ITGA6 staining between the two treatments (Figure 5\u2014figure supplement 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes quantitative immunostaining results with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:02:39.426254Z"
+    },
+    {
+      "id": "a18954b1-e46f-4dc6-9927-8920f0fc42e3",
+      "content_id": "075ff2aa-c417-4563-bb65-0192d3e05539",
+      "claim_id": "C76",
+      "claim": "Significant changes in gene expression at 5 days after injury in wounds lacking Axl activity included a significant downregulation of Arg1, Tgfb, and Il1a, and significant upregulation of Ifnb, Socs1, and Socs3.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed significant changes in gene expression at 5 days after injury in wounds lacking Axl activity, including a significant downregulation of Arg1, Tgfb, and Il1a, and significant upregulation of Ifnb, Socs1, and Socs3 upon Axl inhibition (Figure 5\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes qPCR results with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:02:39.426254Z"
+    },
+    {
+      "id": "6bb413cd-a216-4a22-ad5f-742df4e9fe06",
+      "content_id": "075ff2aa-c417-4563-bb65-0192d3e05539",
+      "claim_id": "C77",
+      "claim": "Axl inhibition impairs proper healing, resulting in significant defects to revascularization and fibroblast repopulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these changes suggest that Axl inhibition impairs proper healing, resulting in significant defects to revascularization and fibroblast repopulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides a summary conclusion based on the presented data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:02:39.426254Z"
+    },
+    {
+      "id": "1f10637b-a89e-4fa8-9fca-789d9c987364",
+      "content_id": "075ff2aa-c417-4563-bb65-0192d3e05539",
+      "claim_id": "C78",
+      "claim": "Intraperitoneal injection of a function blocking anti-Timd4 Ab effectively blocks efferocytosis in an atherosclerosis mouse model.",
+      "claim_type": "EXPLICIT",
+      "source": "Intraperitoneal injection of a function blocking anti-Timd4 Ab effectively blocks efferocytosis in an atherosclerosis mouse model (Foks et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites a reference to support the efficacy of the antibody.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:02:39.426254Z"
+    },
+    {
+      "id": "3820a7ed-d286-483a-8772-45e49e2d2986",
+      "content_id": "075ff2aa-c417-4563-bb65-0192d3e05539",
+      "claim_id": "C79",
+      "claim": "Wounds of mice treated with anti-Timd4 Ab displayed significantly more TUNEL+ apoptotic cells in 1- and 5-day wound beds compared to wounds of IgG Ab-treated mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, we found that wounds of mice treated with anti-Timd4 Ab displayed significantly more TUNEL+ apoptotic cells in 1- and 5-day wound beds compared to wounds of IgG Ab-treated mice (Figure 6A\u2013B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes quantitative immunostaining results with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:02:39.426254Z"
+    },
+    {
+      "id": "e85b6004-84d9-4f32-94da-c9c3367140ac",
+      "content_id": "075ff2aa-c417-4563-bb65-0192d3e05539",
+      "claim_id": "C80",
+      "claim": "An increase in cleaved caspase 3+ cells was observed in wounds of anti-Timd4 Ab-treated mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, we observed an increase in cleaved caspase 3+ cells in wounds of anti-Timd4 Ab-treated mice (Figure 6\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes immunostaining observations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:02:39.426254Z"
+    },
+    {
+      "id": "af2730d3-e9c2-40fa-aa39-419a8bc6240f",
+      "content_id": "075ff2aa-c417-4563-bb65-0192d3e05539",
+      "claim_id": "C81",
+      "claim": "The increase in TUNEL+ and cleaved caspase 3+ cells upon anti-Timd4 Ab treatment is consistent with a defect to efferocytosis.",
+      "claim_type": "EXPLICIT",
+      "source": "While this does not preclude the possibility of an increase in apoptosis upon Ab treatment, it is consistent with a defect to efferocytosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides an interpretation of the results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:02:39.426254Z"
+    },
+    {
+      "id": "bfffc5c8-c133-45f3-a1de-d37b2dfa5a77",
+      "content_id": "075ff2aa-c417-4563-bb65-0192d3e05539",
+      "claim_id": "C82",
+      "claim": "Inhibition of Timd4 resulted in qualitative defects in granulation tissue in H&E-stained sections of 5-day wounds.",
+      "claim_type": "EXPLICIT",
+      "source": "Inhibition of Timd4 resulted in qualitative defects in granulation tissue in H&E-stained sections of 5-day wounds (Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes histological observations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:02:39.426254Z"
+    },
+    {
+      "id": "cb135357-c048-4b33-a387-579c62cf0a12",
+      "content_id": "075ff2aa-c417-4563-bb65-0192d3e05539",
+      "claim_id": "C83",
+      "claim": "Immunostaining of wound sections with Abs against aSMA and ITGA6 did not indicate significant changes to either fibroblast repopulation or re-epithelialization, respectively, upon Timd4 inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "Immunostaining of wound sections with Abs against aSMA (Figure 6D and F) and ITGA6 (Figure 6\u2014figure supplement 1B\u2013C) did not indicate significant changes to either fibroblast repopulation or re-epithelialization, respectively.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes quantitative immunostaining results with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:02:39.426254Z"
+    },
+    {
+      "id": "8c29f93a-91dc-459d-b81e-c15879f1a9ce",
+      "content_id": "075ff2aa-c417-4563-bb65-0192d3e05539",
+      "claim_id": "C84",
+      "claim": "Staining for CD31 revealed a significant defect to revascularization in wounds of anti-Timd4 Ab mice compared to wounds of IgG Ab-treated mice.",
+      "claim_type": "EXPLICIT",
+      "source": "However, staining for CD31 (Figure 6E\u2013F) revealed a significant defect to revascularization in wounds of anti-Timd4 Ab mice compared to wounds of IgG Ab-treated mice, which indicates a defect to proper healing in the proliferative phase of wound repair.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes quantitative immunostaining results with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:02:39.426254Z"
+    },
+    {
+      "id": "73ec1f07-2284-4df0-8720-15c6b3b0ae96",
+      "content_id": "075ff2aa-c417-4563-bb65-0192d3e05539",
+      "claim_id": "C85",
+      "claim": "The inflammatory cytokines Ifng and Ifnb were significantly upregulated at day 1 or 3, respectively, in Timd4-inhibited wounds compared to control wounds.",
+      "claim_type": "EXPLICIT",
+      "source": "The inflammatory cytokines Ifng and Ifnb were significantly upregulated at day 1 or 3, respectively, in Timd4-inhibited wounds compared to control wounds, suggesting altered inflammatory signaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes qPCR results with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:02:39.426254Z"
+    },
+    {
+      "id": "a5c5c624-a2e3-4d4d-94fc-40575aa3f9b4",
+      "content_id": "075ff2aa-c417-4563-bb65-0192d3e05539",
+      "claim_id": "C86",
+      "claim": "At day 1 and/or day 3, Socs1 and Socs3 were significantly upregulated in Timd4-inhibited wounds.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, at day 1 and/or day 3, Socs1 and Socs3 were also significantly upregulated, similar to the gene expression pattern observed after Axl inhibition (Figure 5I).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes qPCR results with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:02:39.426254Z"
+    },
+    {
+      "id": "620f54da-f6b2-4aad-8459-5c88065bc472",
+      "content_id": "075ff2aa-c417-4563-bb65-0192d3e05539",
+      "claim_id": "C87",
+      "claim": "Timd4 activity is required for reducing apoptotic cells, inflammation gene expression, and revascularization after injury.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these results indicate that Timd4 activity is required for reducing apoptotic cells, inflammation gene expression, and revascularization after injury.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides a summary conclusion based on the presented data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:02:39.426254Z"
+    },
+    {
+      "id": "93f88d78-b1c3-4864-af35-083005692815",
+      "content_id": "075ff2aa-c417-4563-bb65-0192d3e05539",
+      "claim_id": "C88",
+      "claim": "Apoptotic and efferocytosis pathways were upregulated in distinct cell types in mouse wounds and in diabetic foot wounds of human patients.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that apoptotic and efferocytosis pathways were upregulated in distinct cell types in mouse wounds and in diabetic foot wounds of human patients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides a summary of findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:02:39.426254Z"
+    },
+    {
+      "id": "e86a7546-bcb4-426f-a23b-f553e1181666",
+      "content_id": "075ff2aa-c417-4563-bb65-0192d3e05539",
+      "claim_id": "C89",
+      "claim": "Efferocytosis receptors, Axl and Timd4, have differential effects on efferocytosis and wound repair.",
+      "claim_type": "EXPLICIT",
+      "source": "Using functional inhibition studies in mouse wounds, our data show that efferocytosis receptors, Axl and Timd4, have differential effects on efferocytosis and wound repair.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides a summary of findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:02:39.426254Z"
+    },
+    {
+      "id": "2c680d68-beb9-45a9-ae53-b0935a3658d1",
+      "content_id": "075ff2aa-c417-4563-bb65-0192d3e05539",
+      "claim_id": "C90",
+      "claim": "Apoptotic cells are required for tail regeneration of Xenopus laevis.",
+      "claim_type": "EXPLICIT",
+      "source": "Apoptotic cells are required for tail regeneration of Xenopus laevis (Tseng et al., 2007) and tissue regeneration of planaria (Hwang et al., 2004) and have been widely implicated in early wound repair (Greenhalgh, 1998; Arya et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites a reference to support this statement.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:02:39.426254Z"
+    },
+    {
+      "id": "86a6c08c-5649-469e-a29d-a1c22a5e7aad",
+      "content_id": "075ff2aa-c417-4563-bb65-0192d3e05539",
+      "claim_id": "C91",
+      "claim": "Apoptotic cells are required for tissue regeneration of planaria.",
+      "claim_type": "EXPLICIT",
+      "source": "Apoptotic cells are required for tail regeneration of Xenopus laevis (Tseng et al., 2007) and tissue regeneration of planaria (Hwang et al., 2004) and have been widely implicated in early wound repair (Greenhalgh, 1998; Arya et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites a reference to support this statement.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:02:39.426254Z"
+    },
+    {
+      "id": "b615c55a-80d7-4efd-a034-23bb274ef758",
+      "content_id": "075ff2aa-c417-4563-bb65-0192d3e05539",
+      "claim_id": "C92",
+      "claim": "Apoptotic cells have been widely implicated in early wound repair.",
+      "claim_type": "EXPLICIT",
+      "source": "Apoptotic cells are required for tail regeneration of Xenopus laevis (Tseng et al., 2007) and tissue regeneration of planaria (Hwang et al., 2004) and have been widely implicated in early wound repair (Greenhalgh, 1998; Arya et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites references to support this statement.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:02:39.426254Z"
+    },
+    {
+      "id": "5a91e5d7-0668-4a16-a22a-e4c3ddbcd658",
+      "content_id": "075ff2aa-c417-4563-bb65-0192d3e05539",
+      "claim_id": "C93",
+      "claim": "Apoptotic cells can release signaling factors including Wnts and PGE2 to promote proliferation of tissue resident cells and tissue repair in multiple species.",
+      "claim_type": "EXPLICIT",
+      "source": "Mechanistically, apoptotic cells can release signaling factors including Wnts and PGE2 to promote proliferation of tissue resident cells and tissue repair in multiple species (Codispoti et al., 2019; Li et al., 2010; Fuchs et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites references to support this mechanism.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:02:39.426254Z"
+    },
+    {
+      "id": "e39d12ff-dbd7-4f34-ac0f-df5606f6f063",
+      "content_id": "075ff2aa-c417-4563-bb65-0192d3e05539",
+      "claim_id": "C94",
+      "claim": "Detection of apoptotic cells has been linked to inflammation and context-dependent integration of IL-4 signaling to activate an anti-inflammatory and tissue repair gene program.",
+      "claim_type": "EXPLICIT",
+      "source": "Detection of apoptotic cells has also been linked to inflammation and context-dependent integration of IL-4 signaling to activate an anti-inflammatory and tissue repair gene program (Bosurgi et al., 2017a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites a reference to support this mechanism.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:02:39.426254Z"
+    },
+    {
+      "id": "5f944724-d5b5-466e-bcb3-535b6193b0c9",
+      "content_id": "075ff2aa-c417-4563-bb65-0192d3e05539",
+      "claim_id": "C95",
+      "claim": "Exposure of PtdSer on the outer leaflet of apoptotic cell membranes acts as a sensor for engulfment in evolutionarily conserved mechanisms.",
+      "claim_type": "EXPLICIT",
+      "source": "Exposure of PtdSer on the outer leaflet of apoptotic cell membranes acts as a sensor for engulfment in evolutionarily conserved mechanisms (Rothlin and Ghosh, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites a reference to support this mechanism.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:02:39.426254Z"
+    },
+    {
+      "id": "6c6783fb-82a4-424d-bd55-b9a5922be3bf",
+      "content_id": "075ff2aa-c417-4563-bb65-0192d3e05539",
+      "claim_id": "C96",
+      "claim": "In skin wounds, apoptotic cells are rapidly detected and removed via efferocytosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data suggest that in skin wounds, apoptotic cells are rapidly detected and removed via efferocytosis, which is consistent with the large number of phagocytic neutrophils and macrophages in early wounds.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides an interpretation based on the presented data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:02:39.426254Z"
+    },
+    {
+      "id": "87bf9dac-53b6-46f8-b331-9d10750b02f7",
+      "content_id": "075ff2aa-c417-4563-bb65-0192d3e05539",
+      "claim_id": "C97",
+      "claim": "Fibroblasts can engulf apoptotic endothelial cells to alter their contractility, migration, and ECM production.",
+      "claim_type": "EXPLICIT",
+      "source": "These data resonate with recent data suggesting that fibroblasts can engulf apoptotic endothelial cells to alter their contractility, migration, and ECM production (Romana-Souza et al., 2021), and may indicate a direct role for fibroblasts in modulating the inflammatory milieu of early wounds through detection of apoptotic cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites a reference to support this statement.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:02:39.426254Z"
+    },
+    {
+      "id": "6cf54e8f-607e-494d-aaad-772d89de3c28",
+      "content_id": "075ff2aa-c417-4563-bb65-0192d3e05539",
+      "claim_id": "C98",
+      "claim": "Axl and Mer exhibit differential ligand specificity and shedding upon activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Axl and Mer exhibit differential ligand specificity and shedding upon activation (Zag\u00f3rska et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites a reference to support this statement.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:02:39.426254Z"
+    },
+    {
+      "id": "fbdca6e8-b463-4d48-bb34-18b2d9e5b8ea",
+      "content_id": "075ff2aa-c417-4563-bb65-0192d3e05539",
+      "claim_id": "C99",
+      "claim": "Axl null bone marrow-derived macrophages are unable to perform efferocytosis with TLR3 activation in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, Axl null bone marrow-derived macrophages are unable to perform efferocytosis with TLR3 activation in vitro, which suggests that Axl plays a central role in efferocytosis in inflammatory environments (Bosurgi et al., 2017b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites a reference to support this statement.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:02:39.426254Z"
+    },
+    {
+      "id": "67ae2be4-5b01-4ad8-b69e-a383cbd2e03c",
+      "content_id": "075ff2aa-c417-4563-bb65-0192d3e05539",
+      "claim_id": "C100",
+      "claim": "In early murine skin wounds, Axl inhibition did not impact efferocytosis in a detectable manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show that in early murine skin wounds, Axl inhibition did not impact efferocytosis in a detectable manner, but rather Axl expression shifted from dendritic cells to macrophages, suggesting possible compensatory mechanisms via other efferocytosis receptors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes experimental findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:02:39.426254Z"
+    },
+    {
+      "id": "d11f2616-ea95-415c-a464-15155112cd60",
+      "content_id": "075ff2aa-c417-4563-bb65-0192d3e05539",
+      "claim_id": "C101",
+      "claim": "Axl expression shifted from dendritic cells to macrophages upon Axl inhibition, suggesting possible compensatory mechanisms via other efferocytosis receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show that in early murine skin wounds, Axl inhibition did not impact efferocytosis in a detectable manner, but rather Axl expression shifted from dendritic cells to macrophages, suggesting possible compensatory mechanisms via other efferocytosis receptors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides an interpretation of experimental findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:02:39.426254Z"
+    },
+    {
+      "id": "279d954b-945c-4e58-a778-3968b07951a6",
+      "content_id": "075ff2aa-c417-4563-bb65-0192d3e05539",
+      "claim_id": "C102",
+      "claim": "Axl may function in skin wounds by interacting with other tyrosine kinase receptors, which has been shown for EGFR, MET, and PDGFR.",
+      "claim_type": "EXPLICIT",
+      "source": "Axl may function in skin wounds by interacting with other tyrosine kinase receptors, which has been shown for EGFR, MET, and PDGFR (Meyer et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites a reference to support this possibility.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:02:39.426254Z"
+    },
+    {
+      "id": "506b5004-a3a0-45b9-8284-b71f33b2c22b",
+      "content_id": "075ff2aa-c417-4563-bb65-0192d3e05539",
+      "claim_id": "C103",
+      "claim": "Axl/Gas6 signaling can regulate tumorigenesis to support tumor cell survival, migration, and angiogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, Axl/Gas6 signaling can also regulate tumorigenesis to support tumor cell survival (Linger et al., 2008), migration (Wilson et al., 2014), and angiogenesis (Li et al., 2009; Zhu et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites references to support these functions.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:02:39.426254Z"
+    },
+    {
+      "id": "07c25bf0-0707-4cbc-a6b2-958d97603e2d",
+      "content_id": "075ff2aa-c417-4563-bb65-0192d3e05539",
+      "claim_id": "C104",
+      "claim": "Timd4 is expressed on tissue resident macrophages in multiple tissues including in the peritoneal and resident cardiac macrophages.",
+      "claim_type": "EXPLICIT",
+      "source": "Timd4 is expressed on tissue resident macrophages in multiple tissues including in the peritoneal and resident cardiac macrophages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states this as established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:02:39.426254Z"
+    },
+    {
+      "id": "d0b6546e-240b-411c-9aaa-3746faf04f74",
+      "content_id": "075ff2aa-c417-4563-bb65-0192d3e05539",
+      "claim_id": "C105",
+      "claim": "In the heart, Lyve1+ resident macrophages act in a cardioprotective manner during myocardial infarction and are immunoregulatory and promote engraftment of cardiac allografts.",
+      "claim_type": "EXPLICIT",
+      "source": "In the heart, Lyve1+ resident macrophages act in a cardioprotective manner during myocardial infarction (Dick et al., 2019) and are immunoregulatory and promote engraftment of cardiac allografts (Thornley et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites references to support these functions.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:02:39.426254Z"
+    },
+    {
+      "id": "df405265-88d2-46e4-9586-6d7073763322",
+      "content_id": "075ff2aa-c417-4563-bb65-0192d3e05539",
+      "claim_id": "C106",
+      "claim": "During cardiac infarction, Timd4 is required for T cell responses and support of regulatory T cells (Tregs).",
+      "claim_type": "EXPLICIT",
+      "source": "During cardiac infarction, Timd4 is also required for T cell responses and support of regulatory T cells (Tregs) (Foks et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites a reference to support this function.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:02:39.426254Z"
+    },
+    {
+      "id": "79003b56-5736-4283-bbba-7e42b6a0c59a",
+      "content_id": "075ff2aa-c417-4563-bb65-0192d3e05539",
+      "claim_id": "C107",
+      "claim": "Timd4 is essential for allograft survival in the skin.",
+      "claim_type": "EXPLICIT",
+      "source": "In the skin, Timd4 is essential for allograft survival (Yeung et al., 2013), which has been proposed to act through DCs to support Tregs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites a reference to support this function.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:02:39.426254Z"
+    },
+    {
+      "id": "e3cf4a53-442c-4947-8096-178edbbc638e",
+      "content_id": "075ff2aa-c417-4563-bb65-0192d3e05539",
+      "claim_id": "C108",
+      "claim": "Timd4 is expressed in DCs in later stages of wound repair.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, Timd4 is expressed in DCs in later stages of wound repair (Haensel et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites a reference to support this statement.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:02:39.426254Z"
+    },
+    {
+      "id": "2d98c68c-033b-4cd0-b54d-c894b408e4b7",
+      "content_id": "075ff2aa-c417-4563-bb65-0192d3e05539",
+      "claim_id": "C109",
+      "claim": "Early murine wound beds and human diabetic foot wounds significantly upregulate apoptotic genes and receptors that recognize apoptotic cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that early murine wound beds and human diabetic foot wounds significantly upregulate apoptotic genes and receptors that recognize apoptotic cells and that inhibition of multiple apoptotic receptors impairs wound repair.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides a summary of findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:02:39.426254Z"
+    },
+    {
+      "id": "da57591c-6c88-4f04-82fd-a388c173c18c",
+      "content_id": "075ff2aa-c417-4563-bb65-0192d3e05539",
+      "claim_id": "C110",
+      "claim": "Inhibition of multiple apoptotic receptors impairs wound repair.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that early murine wound beds and human diabetic foot wounds significantly upregulate apoptotic genes and receptors that recognize apoptotic cells and that inhibition of multiple apoptotic receptors impairs wound repair.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides a summary of findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:02:39.426254Z"
+    },
+    {
+      "id": "09211a05-0e0c-426b-b7b7-f1db526d82a7",
+      "content_id": "075ff2aa-c417-4563-bb65-0192d3e05539",
+      "claim_id": "C111",
+      "claim": "Targeting efferocytosis mechanisms may reveal therapeutic avenues that promote healing in chronic, non-healing wounds, particularly in diabetic patients.",
+      "claim_type": "EXPLICIT",
+      "source": "Given further research into the healing phenotypes of efferocytosis-inhibited wounds, it may be that targeting these mechanisms may reveal therapeutic avenues that promote healing in chronic, non-healing wounds, particularly in diabetic patients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides a speculative conclusion about potential therapeutic applications.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:02:39.426254Z"
+    },
+    {
+      "id": "95130e17-03a5-4c07-93f5-62b60dbde26d",
+      "content_id": "075ff2aa-c417-4563-bb65-0192d3e05539",
+      "claim_id": "C112",
+      "claim": "Axl signaling is required for wound repair but is dispensable for efferocytosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Inhibition studies in vivo in mice reveal that Axl signaling is required for wound repair but is dispensable for efferocytosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript summarizes experimental findings in the abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:02:39.426254Z"
+    },
+    {
+      "id": "4d48626b-12ea-4b34-b452-d7b8a295b698",
+      "content_id": "075ff2aa-c417-4563-bb65-0192d3e05539",
+      "claim_id": "C113",
+      "claim": "Inhibition of Timd4 in mouse wounds decreases efferocytosis and abrogates wound repair.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, inhibition of another efferocytosis receptor, Timd4, in mouse wounds decreases efferocytosis and abrogates wound repair.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript summarizes experimental findings in the abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:02:39.426254Z"
+    },
+    {
+      "id": "208166e5-fc25-4bb1-8461-9288f4e48942",
+      "content_id": "075ff2aa-c417-4563-bb65-0192d3e05539",
+      "claim_id": "C114",
+      "claim": "Human diabetic foot wounds upregulate mRNAs for efferocytosis pathway genes and display altered efferocytosis signaling via the receptor Axl and its ligand Gas6.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, human diabetic foot wounds upregulate mRNAs for efferocytosis pathway genes and display altered efferocytosis signaling via the receptor Axl and its ligand Gas6.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript summarizes findings from human samples in the abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:02:39.426254Z"
+    },
+    {
+      "id": "b520a7c8-d9ef-4662-8005-61e9f8b7a25e",
+      "content_id": "075ff2aa-c417-4563-bb65-0192d3e05539",
+      "claim_id": "C115",
+      "claim": "During early inflammation in mouse wounds, upregulation of Axl was detected in dendritic cells and fibroblasts via TLR3-independent mechanisms.",
+      "claim_type": "EXPLICIT",
+      "source": "During early inflammation in mouse wounds, we detect upregulation of Axl in dendritic cells and fibroblasts via TLR3-independent mechanisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript summarizes experimental findings in the abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:02:39.426254Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "68611d45-ebce-4083-9371-51c8d0fa030f",
+      "content_id": "075ff2aa-c417-4563-bb65-0192d3e05539",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Single-cell RNA sequencing of mouse wound beds at 24 hr and 48 hr after injury revealed four major cell types (monocytes/macrophages, neutrophils, dendritic cells, and fibroblasts) with dramatic transcriptional changes between timepoints, including separate clustering of 24 hr and 48 hr samples, >2-fold increase in macrophages and neutrophils, and markedly different gene expression patterns in each cell type over time.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C8 collectively describe the scRNA-seq experimental design, cell type classification using neural networks, and temporal dynamics. The methods are clearly described, figures are referenced, and the observations about temporal clustering and cell type proportions are supported by the data presented. The use of established marker genes and neural network classification (C3) provides methodological rigor.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:02:39.426254Z"
+    },
+    {
+      "id": "e5c404dd-7715-4ee5-8dff-357924695e71",
+      "content_id": "075ff2aa-c417-4563-bb65-0192d3e05539",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Gene ontology analysis revealed that immune cells upregulated genes for their specific inflammatory functions, while fibroblasts upregulated ECM organization genes. Importantly, DCs, fibroblasts, and neutrophils upregulated apoptotic genes, which was validated by immunostaining showing cleaved caspase 3+ cells in wound beds, with significantly more at 48 hr than 24 hr, including in CD11c+ dendritic cells and Pdgfra+ fibroblasts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C19 describe GO analysis results and validation by immunostaining. The functional enrichment analysis is appropriate for scRNA-seq data, and the protein-level validation of apoptosis (C15-C18) strengthens the transcriptional findings. The quantitative comparison showing increased cleaved caspase 3+ cells at 48 hr (C16) with statistical significance supports the temporal dynamics of apoptosis. The citation for S100a8/S100a9 function (C13) appropriately supports the interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:02:39.426254Z"
+    },
+    {
+      "id": "5d7f7424-64ff-4c8f-9672-ef1231c5de88",
+      "content_id": "075ff2aa-c417-4563-bb65-0192d3e05539",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Efferocytosis pathway genes were upregulated in wound beds, with fibroblasts expressing multiple receptors (Tyro3, Axl, Itgav, Slc7a11) and ligands (Gas6, Pros1, C3, C4b, Mfge8), immune cells expressing detection receptors, and a specific subset of Lyve1+ resident macrophages highly expressing Gas6, Timd4, and Retnla. Axl was uniquely expressed by dendritic cells and fibroblasts, confirmed by immunostaining showing Axl protein in CD11c+ cells and Pdgfra-GFP+ fibroblasts with elongated processes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C32 describe efferocytosis gene expression patterns and protein validation. The scRNA-seq data showing cell type-specific expression is complemented by immunostaining validation (C28, C29, C31). The lineage tracing experiment using Lyz2CreER;mTmG mice (C27) provides strong evidence that Lyve1+ cells are resident rather than recruited. The characterization of the Lyve1+ macrophage subset (C25) is supported by co-expression of multiple markers. Citations appropriately support the characterization of Lyve1+ cells as resident macrophages (C26).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:02:39.426254Z"
+    },
+    {
+      "id": "a6f0af57-877c-429b-a639-1f7594b60380",
+      "content_id": "075ff2aa-c417-4563-bb65-0192d3e05539",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "qPCR analysis showed significant upregulation of efferocytosis receptor mRNAs (including TAM receptors) in wound beds compared to naive skin, while Gas6 and Retnla were downregulated and Socs1/Socs3 were upregulated. Functional efferocytosis was demonstrated by injecting labeled apoptotic neutrophils into wounds at 1, 3, and 5 days, showing active efferocytosis at all timepoints with significantly more efferocytosing cells at 5 days, though the efferocytosis rate remained relatively constant.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C40 describe qPCR validation and functional efferocytosis assays. The qPCR data (C33-C36) validates the scRNA-seq findings at the tissue level. The neutrophil injection experiment (C37-C39) provides direct functional evidence of efferocytosis activity. The quantification distinguishes between absolute numbers of efferocytosing cells (C38) and efferocytosis rate (C39), showing appropriate statistical analysis. The experimental design with multiple timepoints strengthens the conclusions about temporal dynamics.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:02:39.426254Z"
+    },
+    {
+      "id": "6be440ab-ad39-4779-a9c7-507ddd11ac92",
+      "content_id": "075ff2aa-c417-4563-bb65-0192d3e05539",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Analysis of human diabetic and non-diabetic foot wounds revealed alterations in apoptotic gene expression, with monocytes/macrophages in diabetic wounds showing increased expression of multiple apoptosis genes. Diabetic wounds displayed a striking increase in efferocytosis pathway genes, particularly AXL (increased in all cell types) and GAS6 (increased in most cell types). CellChat analysis revealed altered GAS6-AXL signaling in diabetic wounds, with monocytes/macrophages newly expressing AXL and increasing GAS6 stimulation. Immunostaining showed more prevalent Gas6 staining in diabetic samples colocalizing with CD68+ macrophages, though quantification was not statistically significant.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C44-C54 describe human sample analysis comparing diabetic and non-diabetic wounds. While the scRNA-seq analysis and CellChat predictions are methodologically sound (C46-C51), the immunostaining validation (C52-C53) shows a trend but lacks statistical significance (C53). The sample sizes are small (n=2 non-diabetic, n=6 diabetic for immunostaining), limiting statistical power. The conclusion that diabetic wounds 'may activate and modulate GAS6-AXL signaling' (C54) is appropriately cautious but requires additional validation. The demographic information is provided in supplementary materials but not fully described in the main text.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:02:39.426254Z"
+    },
+    {
+      "id": "ccfc1c43-53fb-4af8-acfd-60750a461c99",
+      "content_id": "075ff2aa-c417-4563-bb65-0192d3e05539",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "TLR3 signaling is sufficient but not necessary for Axl expression in skin. scRNA-seq showed TLR3 is uniquely expressed by dendritic cells and fibroblasts among TLRs. Poly(I:C) injection in naive skin induced Ifnb and Axl expression in WT but not TLR3 KO mice, confirming TLR3 specificity. IFN-\u03b2 injection was sufficient to induce Axl protein expression. However, in wound beds, Axl protein was expressed similarly in TLR3 KO and WT mice, indicating TLR3-independent mechanisms drive Axl upregulation in wounds.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C66 describe experiments testing TLR3's role in Axl expression. The experimental design using poly(I:C) injections with appropriate controls (PBS, TLR3 KO mice) is rigorous (C59, C61-C62). The specificity of poly(I:C) for TLR3 is supported by citation (C60) and confirmed by Ifnb induction only in WT mice (C59). The IFN-\u03b2 sufficiency experiment (C64) establishes a mechanistic link. The key finding that Axl is expressed in TLR3 KO wounds (C65) is clearly demonstrated and appropriately interpreted as indicating additional mechanisms (C66). The distinction between sufficiency in naive skin and necessity in wounds is well-supported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:02:39.426254Z"
+    },
+    {
+      "id": "6da7d0ee-3936-4313-b521-0513cea46b7a",
+      "content_id": "075ff2aa-c417-4563-bb65-0192d3e05539",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Axl inhibition using function-blocking antibody impaired wound repair but not efferocytosis. Anti-Axl Ab treatment significantly reduced Axl mRNA at day 5 (indicating reduced signaling), but did not change immune cell proportions at day 3 or apoptotic cell numbers. However, Axl expression shifted from dendritic cells to macrophages. At day 5, anti-Axl Ab-treated wounds showed healing defects including reduced granulation tissue, significantly decreased fibroblast repopulation (aSMA) and revascularization (CD31), but normal re-epithelialization. Gene expression changes included downregulation of Arg1, Tgfb, Il1a and upregulation of Ifnb, Socs1, Socs3.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C77 describe Axl inhibition experiments with appropriate controls. The use of Axl mRNA downregulation as a readout of reduced signaling (C67-C68) is supported by citation of the positive feedback mechanism (C69). Flow cytometry analysis (C70-C71) provides quantitative assessment of immune cell populations and Axl expression shifts. The histological and immunostaining analyses (C72-C75) are quantified with statistical tests showing significant defects in fibroblast repopulation and revascularization but not re-epithelialization, indicating specific rather than global healing defects. The gene expression changes (C76) are consistent with altered inflammatory signaling. The conclusion (C77) is appropriately supported by the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:02:39.426254Z"
+    },
+    {
+      "id": "6d037638-f4ac-4b28-b70e-50d3eb772bb5",
+      "content_id": "075ff2aa-c417-4563-bb65-0192d3e05539",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Timd4 inhibition using function-blocking antibody impaired efferocytosis and wound repair. Anti-Timd4 Ab-treated wounds showed significantly more TUNEL+ apoptotic cells at days 1 and 5, and increased cleaved caspase 3+ cells, consistent with defective efferocytosis. At day 5, wounds displayed qualitative defects in granulation tissue and significant reduction in revascularization (CD31), but no significant changes in fibroblast repopulation (aSMA) or re-epithelialization (ITGA6). Gene expression analysis showed significant upregulation of inflammatory cytokines (Ifng, Ifnb) and downstream factors (Socs1, Socs3) at early timepoints.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C79-C87 describe Timd4 inhibition experiments. The efficacy of the anti-Timd4 Ab is supported by citation (C78, though this claim is not included in this result). The increase in TUNEL+ and cleaved caspase 3+ cells (C79-C80) provides strong evidence for defective efferocytosis, with appropriate statistical analysis. The interpretation (C81) appropriately acknowledges that increased apoptosis cannot be ruled out but the data are consistent with efferocytosis defects. The histological analysis (C82-C84) shows specific defects in revascularization without affecting other repair processes, indicating a distinct phenotype from Axl inhibition. The gene expression changes (C85-C86) showing upregulation of inflammatory markers support altered inflammatory resolution. The conclusion (C87) is well-supported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:02:39.426254Z"
+    },
+    {
+      "id": "bb42d031-4a89-4d2e-b2aa-39a58f731270",
+      "content_id": "075ff2aa-c417-4563-bb65-0192d3e05539",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The study demonstrates that apoptotic and efferocytosis pathways are upregulated in distinct cell types in mouse wounds and human diabetic foot wounds, with efferocytosis receptors Axl and Timd4 having differential effects on wound repair. Axl signaling is required for wound repair (affecting revascularization and fibroblast repopulation) but is dispensable for efferocytosis, while Timd4 inhibition decreases efferocytosis and abrogates wound repair (affecting revascularization). In mouse wounds, Axl is upregulated in dendritic cells and fibroblasts via TLR3-independent mechanisms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C88-C89 and C112-C115 represent the main conclusions synthesized from the experimental results. These summary claims are well-supported by the detailed experimental evidence described in previous result groups. The differential roles of Axl and Timd4 (C89, C112-C113) are clearly demonstrated by the distinct phenotypes observed in inhibition experiments. The human diabetic wound findings (C114) add translational relevance, though with the caveats noted in the human sample result group. The TLR3-independence of Axl upregulation in wounds (C115) is strongly supported by the TLR3 KO experiments.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:02:39.426254Z"
+    },
+    {
+      "id": "d0324a7d-145c-49a2-b20b-a0d1ba6945ba",
+      "content_id": "075ff2aa-c417-4563-bb65-0192d3e05539",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The manuscript contextualizes findings within existing literature on apoptosis and efferocytosis in wound healing and other systems, citing prior work on: increased apoptosis in diabetic wounds, conflicting reports on macrophage efferocytosis in diabetic wounds, apoptosis in regeneration, TLR3's role in Axl induction and wound repair, mechanisms of apoptotic cell signaling, PtdSer exposure, fibroblast efferocytosis, differential TAM receptor properties, Axl's role in tumor biology, and Timd4's functions in various tissues including heart and skin.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C43, C55-C56, C90-C95, C97-C99, C102-C108 represent citations of prior work that contextualize the current findings. These claims appropriately cite relevant literature and accurately represent the cited work based on the context provided. The citations support the rationale for the experiments (e.g., C55-C56 for TLR3 experiments) and help interpret the findings (e.g., C98-C99 for understanding Axl's role). Some claims note conflicting prior findings (C42-C43), which appropriately acknowledges complexity in the field. The citations are used to support background knowledge rather than as primary evidence for the current study's conclusions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:02:39.426254Z"
+    },
+    {
+      "id": "b4c3a5a1-bc58-44b8-ad8d-fdf5a36e5a99",
+      "content_id": "075ff2aa-c417-4563-bb65-0192d3e05539",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The authors interpret their findings and propose future directions, suggesting that apoptotic cells are rapidly cleared via efferocytosis in skin wounds, that Axl inhibition did not detectably impact efferocytosis but showed compensatory shifts in Axl expression between cell types, and that targeting efferocytosis mechanisms may reveal therapeutic avenues for chronic wounds in diabetic patients.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C96, C100-C101, and C111 represent interpretations and speculations based on the data. C96 is a reasonable interpretation supported by the efferocytosis assay data and high numbers of phagocytic cells. C100-C101 appropriately interpret the Axl inhibition results, noting the lack of detectable efferocytosis defects and the shift in Axl expression between cell types, suggesting compensation. C111 is appropriately speculative ('may reveal') about therapeutic applications, acknowledging that further research is needed. These interpretations are logical extensions of the data but represent inferences rather than direct observations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:02:39.426254Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "64422840-a86d-46d7-9302-10d5ef36edea",
+      "result_id": "68611d45-ebce-4083-9371-51c8d0fa030f"
+    },
+    {
+      "claim_id": "def01a5c-9be6-469b-9c42-9a64ca551095",
+      "result_id": "68611d45-ebce-4083-9371-51c8d0fa030f"
+    },
+    {
+      "claim_id": "f4f48947-e663-4a9b-819f-e56d34168adb",
+      "result_id": "68611d45-ebce-4083-9371-51c8d0fa030f"
+    },
+    {
+      "claim_id": "bfdf174b-e937-400a-8618-81bcfdeffbc5",
+      "result_id": "68611d45-ebce-4083-9371-51c8d0fa030f"
+    },
+    {
+      "claim_id": "ab134d68-95cd-40ae-a4f5-8fbbcb977bef",
+      "result_id": "68611d45-ebce-4083-9371-51c8d0fa030f"
+    },
+    {
+      "claim_id": "d9260bde-fb89-4280-b14c-0adc10d5f0cc",
+      "result_id": "68611d45-ebce-4083-9371-51c8d0fa030f"
+    },
+    {
+      "claim_id": "1cbbc6a2-f45a-4aaa-8b2f-13fda88af813",
+      "result_id": "68611d45-ebce-4083-9371-51c8d0fa030f"
+    },
+    {
+      "claim_id": "a80e00f9-8f81-4fa7-9faf-4ed903e8a0a2",
+      "result_id": "68611d45-ebce-4083-9371-51c8d0fa030f"
+    },
+    {
+      "claim_id": "5eacd979-2e5a-4b46-88f6-9dd15ebbbbe3",
+      "result_id": "e5c404dd-7715-4ee5-8dff-357924695e71"
+    },
+    {
+      "claim_id": "ec21fb8c-a6b3-4e6e-ac02-ab29ac998b16",
+      "result_id": "e5c404dd-7715-4ee5-8dff-357924695e71"
+    },
+    {
+      "claim_id": "f8623f15-7564-42b6-9b6b-0b14555ed634",
+      "result_id": "e5c404dd-7715-4ee5-8dff-357924695e71"
+    },
+    {
+      "claim_id": "3271be96-65e6-4f31-bcce-f82f01377382",
+      "result_id": "e5c404dd-7715-4ee5-8dff-357924695e71"
+    },
+    {
+      "claim_id": "45a0e5d3-81ea-4421-9814-d778c9e58be2",
+      "result_id": "e5c404dd-7715-4ee5-8dff-357924695e71"
+    },
+    {
+      "claim_id": "76fdd777-2d61-4031-988f-30dce73dac46",
+      "result_id": "e5c404dd-7715-4ee5-8dff-357924695e71"
+    },
+    {
+      "claim_id": "464ad870-16b2-416d-9283-505e21378b0b",
+      "result_id": "e5c404dd-7715-4ee5-8dff-357924695e71"
+    },
+    {
+      "claim_id": "131412ea-864c-4938-91ab-1987ba76c85e",
+      "result_id": "e5c404dd-7715-4ee5-8dff-357924695e71"
+    },
+    {
+      "claim_id": "11dedace-985b-4ead-a438-ddf8f613e226",
+      "result_id": "e5c404dd-7715-4ee5-8dff-357924695e71"
+    },
+    {
+      "claim_id": "87d9e1e1-7cc9-4fd6-98d4-67074ec46d0e",
+      "result_id": "e5c404dd-7715-4ee5-8dff-357924695e71"
+    },
+    {
+      "claim_id": "0539694a-7872-4ef7-b1d1-7228ddbfb5d9",
+      "result_id": "e5c404dd-7715-4ee5-8dff-357924695e71"
+    },
+    {
+      "claim_id": "f0fa52f5-006c-492d-8573-77b1ca54030b",
+      "result_id": "5d7f7424-64ff-4c8f-9672-ef1231c5de88"
+    },
+    {
+      "claim_id": "b2cde78a-e4a0-4b44-94bf-98437ba3c052",
+      "result_id": "5d7f7424-64ff-4c8f-9672-ef1231c5de88"
+    },
+    {
+      "claim_id": "c713ffe6-b47e-4fe0-936a-567be18fb5de",
+      "result_id": "5d7f7424-64ff-4c8f-9672-ef1231c5de88"
+    },
+    {
+      "claim_id": "f0676515-831b-4d5d-882b-2633921d918b",
+      "result_id": "5d7f7424-64ff-4c8f-9672-ef1231c5de88"
+    },
+    {
+      "claim_id": "24877e60-e78a-4de2-b179-fe9198489384",
+      "result_id": "5d7f7424-64ff-4c8f-9672-ef1231c5de88"
+    },
+    {
+      "claim_id": "5688034a-0e1f-40de-a8a3-c12e6e71f542",
+      "result_id": "5d7f7424-64ff-4c8f-9672-ef1231c5de88"
+    },
+    {
+      "claim_id": "c321758b-cb0b-400f-b17d-0d9ee103a716",
+      "result_id": "5d7f7424-64ff-4c8f-9672-ef1231c5de88"
+    },
+    {
+      "claim_id": "4fb5ca7f-ef3f-4362-bb56-db12278467e9",
+      "result_id": "5d7f7424-64ff-4c8f-9672-ef1231c5de88"
+    },
+    {
+      "claim_id": "730edb97-057a-4bf2-8eef-cf9c7c8657ce",
+      "result_id": "5d7f7424-64ff-4c8f-9672-ef1231c5de88"
+    },
+    {
+      "claim_id": "bbe5a8e5-1cb8-47cb-835d-0cd4620f6ceb",
+      "result_id": "5d7f7424-64ff-4c8f-9672-ef1231c5de88"
+    },
+    {
+      "claim_id": "fe77d9b0-655f-4504-9b00-7d42487afaf0",
+      "result_id": "5d7f7424-64ff-4c8f-9672-ef1231c5de88"
+    },
+    {
+      "claim_id": "bec434e1-dd5e-4151-971f-7ad29489a720",
+      "result_id": "5d7f7424-64ff-4c8f-9672-ef1231c5de88"
+    },
+    {
+      "claim_id": "d0bff118-0a80-4727-89fd-aad6e89be70c",
+      "result_id": "5d7f7424-64ff-4c8f-9672-ef1231c5de88"
+    },
+    {
+      "claim_id": "0f507082-1ed8-443f-9669-e701ec562edc",
+      "result_id": "a6f0af57-877c-429b-a639-1f7594b60380"
+    },
+    {
+      "claim_id": "23c1d9e7-3e72-40a2-b4da-0e10fca03add",
+      "result_id": "a6f0af57-877c-429b-a639-1f7594b60380"
+    },
+    {
+      "claim_id": "1e8a44aa-7cd8-4be0-93e8-032bd4a94487",
+      "result_id": "a6f0af57-877c-429b-a639-1f7594b60380"
+    },
+    {
+      "claim_id": "14c7c350-9263-47ea-bb56-17a9fefe7a96",
+      "result_id": "a6f0af57-877c-429b-a639-1f7594b60380"
+    },
+    {
+      "claim_id": "0e3e1aba-36f5-42a6-8d4a-a4398e5fe9bc",
+      "result_id": "a6f0af57-877c-429b-a639-1f7594b60380"
+    },
+    {
+      "claim_id": "ca0c452e-2136-46dd-bac9-04800c4d8e49",
+      "result_id": "a6f0af57-877c-429b-a639-1f7594b60380"
+    },
+    {
+      "claim_id": "45ba646a-9210-461d-b2ea-5655e7a2d4ef",
+      "result_id": "a6f0af57-877c-429b-a639-1f7594b60380"
+    },
+    {
+      "claim_id": "fd09300b-ce71-42cc-91ad-15ef516c4f2d",
+      "result_id": "a6f0af57-877c-429b-a639-1f7594b60380"
+    },
+    {
+      "claim_id": "5534194f-4c85-4994-9cf0-ab452c035f50",
+      "result_id": "6be440ab-ad39-4779-a9c7-507ddd11ac92"
+    },
+    {
+      "claim_id": "fa085ab5-6646-48e2-b0c2-8e8c04a81152",
+      "result_id": "6be440ab-ad39-4779-a9c7-507ddd11ac92"
+    },
+    {
+      "claim_id": "a3927d46-e4ab-4cb7-a4f7-24e3bb465527",
+      "result_id": "6be440ab-ad39-4779-a9c7-507ddd11ac92"
+    },
+    {
+      "claim_id": "ad04cc69-4a0b-4cdf-846a-3d1f8a1af2a5",
+      "result_id": "6be440ab-ad39-4779-a9c7-507ddd11ac92"
+    },
+    {
+      "claim_id": "ffd42e94-f33b-4f42-a06e-ad577afef581",
+      "result_id": "6be440ab-ad39-4779-a9c7-507ddd11ac92"
+    },
+    {
+      "claim_id": "685b7654-8537-4d4d-820f-563947749228",
+      "result_id": "6be440ab-ad39-4779-a9c7-507ddd11ac92"
+    },
+    {
+      "claim_id": "cf671ffc-5737-40aa-becf-992931a51194",
+      "result_id": "6be440ab-ad39-4779-a9c7-507ddd11ac92"
+    },
+    {
+      "claim_id": "e5bf2ccd-3489-47dc-a655-b03085464c6d",
+      "result_id": "6be440ab-ad39-4779-a9c7-507ddd11ac92"
+    },
+    {
+      "claim_id": "aabbf6d1-d2c9-48db-8a5c-3f67f8dab0a5",
+      "result_id": "6be440ab-ad39-4779-a9c7-507ddd11ac92"
+    },
+    {
+      "claim_id": "d0957c86-0402-437a-bb8c-a8095b6307cd",
+      "result_id": "6be440ab-ad39-4779-a9c7-507ddd11ac92"
+    },
+    {
+      "claim_id": "09338a11-1e44-4e10-aead-8921b53676a2",
+      "result_id": "6be440ab-ad39-4779-a9c7-507ddd11ac92"
+    },
+    {
+      "claim_id": "16820546-f12a-4d22-891d-2e8ca3a78605",
+      "result_id": "ccfc1c43-53fb-4af8-acfd-60750a461c99"
+    },
+    {
+      "claim_id": "c2a58dd5-2d4a-44c9-b993-3212f28869a4",
+      "result_id": "ccfc1c43-53fb-4af8-acfd-60750a461c99"
+    },
+    {
+      "claim_id": "dbf537bd-acc9-4091-a154-ed40cef26627",
+      "result_id": "ccfc1c43-53fb-4af8-acfd-60750a461c99"
+    },
+    {
+      "claim_id": "4437f605-cb5a-48d5-a21f-e778328415a8",
+      "result_id": "ccfc1c43-53fb-4af8-acfd-60750a461c99"
+    },
+    {
+      "claim_id": "e5bb2a24-2732-428e-a5f3-2cbb15fece35",
+      "result_id": "ccfc1c43-53fb-4af8-acfd-60750a461c99"
+    },
+    {
+      "claim_id": "0b289751-ffc3-421a-ad2b-ef5086479fb7",
+      "result_id": "ccfc1c43-53fb-4af8-acfd-60750a461c99"
+    },
+    {
+      "claim_id": "f6bb966f-c4de-4bf4-9657-7014d3495467",
+      "result_id": "ccfc1c43-53fb-4af8-acfd-60750a461c99"
+    },
+    {
+      "claim_id": "a78bcf54-89b7-4368-82b8-ed5f03240855",
+      "result_id": "ccfc1c43-53fb-4af8-acfd-60750a461c99"
+    },
+    {
+      "claim_id": "3292947e-d084-40ec-b76b-3e8f9ce46b2a",
+      "result_id": "ccfc1c43-53fb-4af8-acfd-60750a461c99"
+    },
+    {
+      "claim_id": "5f7611d3-72e7-4131-b83c-258c6c62fc21",
+      "result_id": "ccfc1c43-53fb-4af8-acfd-60750a461c99"
+    },
+    {
+      "claim_id": "bf99e286-1115-4472-8b0b-d3377adb005b",
+      "result_id": "6da7d0ee-3936-4313-b521-0513cea46b7a"
+    },
+    {
+      "claim_id": "7337dcd2-0fb2-4291-8c3d-c6334f6886f0",
+      "result_id": "6da7d0ee-3936-4313-b521-0513cea46b7a"
+    },
+    {
+      "claim_id": "4decac93-970a-4018-ac02-5ed9f39e3e84",
+      "result_id": "6da7d0ee-3936-4313-b521-0513cea46b7a"
+    },
+    {
+      "claim_id": "55f3a9e2-c27d-402c-ba6b-7da8953d0f8f",
+      "result_id": "6da7d0ee-3936-4313-b521-0513cea46b7a"
+    },
+    {
+      "claim_id": "620b3920-5f5c-4bf1-83f6-e5e2754d63eb",
+      "result_id": "6da7d0ee-3936-4313-b521-0513cea46b7a"
+    },
+    {
+      "claim_id": "6b16b6e5-3a2a-4f89-90a0-3b6b30b80c46",
+      "result_id": "6da7d0ee-3936-4313-b521-0513cea46b7a"
+    },
+    {
+      "claim_id": "b71cbb6d-34f3-4b0f-823e-f57004fb617f",
+      "result_id": "6da7d0ee-3936-4313-b521-0513cea46b7a"
+    },
+    {
+      "claim_id": "6de96984-dc69-4eef-8154-f4d45c863732",
+      "result_id": "6da7d0ee-3936-4313-b521-0513cea46b7a"
+    },
+    {
+      "claim_id": "70e8aa4b-ad9d-4bd8-a2b3-f9cd5b8814b2",
+      "result_id": "6da7d0ee-3936-4313-b521-0513cea46b7a"
+    },
+    {
+      "claim_id": "a18954b1-e46f-4dc6-9927-8920f0fc42e3",
+      "result_id": "6da7d0ee-3936-4313-b521-0513cea46b7a"
+    },
+    {
+      "claim_id": "6bb413cd-a216-4a22-ad5f-742df4e9fe06",
+      "result_id": "6da7d0ee-3936-4313-b521-0513cea46b7a"
+    },
+    {
+      "claim_id": "3820a7ed-d286-483a-8772-45e49e2d2986",
+      "result_id": "6d037638-f4ac-4b28-b70e-50d3eb772bb5"
+    },
+    {
+      "claim_id": "e85b6004-84d9-4f32-94da-c9c3367140ac",
+      "result_id": "6d037638-f4ac-4b28-b70e-50d3eb772bb5"
+    },
+    {
+      "claim_id": "af2730d3-e9c2-40fa-aa39-419a8bc6240f",
+      "result_id": "6d037638-f4ac-4b28-b70e-50d3eb772bb5"
+    },
+    {
+      "claim_id": "bfffc5c8-c133-45f3-a1de-d37b2dfa5a77",
+      "result_id": "6d037638-f4ac-4b28-b70e-50d3eb772bb5"
+    },
+    {
+      "claim_id": "cb135357-c048-4b33-a387-579c62cf0a12",
+      "result_id": "6d037638-f4ac-4b28-b70e-50d3eb772bb5"
+    },
+    {
+      "claim_id": "8c29f93a-91dc-459d-b81e-c15879f1a9ce",
+      "result_id": "6d037638-f4ac-4b28-b70e-50d3eb772bb5"
+    },
+    {
+      "claim_id": "73ec1f07-2284-4df0-8720-15c6b3b0ae96",
+      "result_id": "6d037638-f4ac-4b28-b70e-50d3eb772bb5"
+    },
+    {
+      "claim_id": "a5c5c624-a2e3-4d4d-94fc-40575aa3f9b4",
+      "result_id": "6d037638-f4ac-4b28-b70e-50d3eb772bb5"
+    },
+    {
+      "claim_id": "620f54da-f6b2-4aad-8459-5c88065bc472",
+      "result_id": "6d037638-f4ac-4b28-b70e-50d3eb772bb5"
+    },
+    {
+      "claim_id": "93f88d78-b1c3-4864-af35-083005692815",
+      "result_id": "bb42d031-4a89-4d2e-b2aa-39a58f731270"
+    },
+    {
+      "claim_id": "e86a7546-bcb4-426f-a23b-f553e1181666",
+      "result_id": "bb42d031-4a89-4d2e-b2aa-39a58f731270"
+    },
+    {
+      "claim_id": "95130e17-03a5-4c07-93f5-62b60dbde26d",
+      "result_id": "bb42d031-4a89-4d2e-b2aa-39a58f731270"
+    },
+    {
+      "claim_id": "4d48626b-12ea-4b34-b452-d7b8a295b698",
+      "result_id": "bb42d031-4a89-4d2e-b2aa-39a58f731270"
+    },
+    {
+      "claim_id": "208166e5-fc25-4bb1-8461-9288f4e48942",
+      "result_id": "bb42d031-4a89-4d2e-b2aa-39a58f731270"
+    },
+    {
+      "claim_id": "b520a7c8-d9ef-4662-8005-61e9f8b7a25e",
+      "result_id": "bb42d031-4a89-4d2e-b2aa-39a58f731270"
+    },
+    {
+      "claim_id": "331b473f-90e6-477c-bb47-d7ab74082d7e",
+      "result_id": "d0324a7d-145c-49a2-b20b-a0d1ba6945ba"
+    },
+    {
+      "claim_id": "c2f3d357-4576-48a8-864b-0508d536f70a",
+      "result_id": "d0324a7d-145c-49a2-b20b-a0d1ba6945ba"
+    },
+    {
+      "claim_id": "4b7617a3-5c7e-46c3-9731-74d50e6d748e",
+      "result_id": "d0324a7d-145c-49a2-b20b-a0d1ba6945ba"
+    },
+    {
+      "claim_id": "c924645a-ba40-43f4-ba52-422fc63c9803",
+      "result_id": "d0324a7d-145c-49a2-b20b-a0d1ba6945ba"
+    },
+    {
+      "claim_id": "3242310a-f33f-4f8a-b658-58b3230ad232",
+      "result_id": "d0324a7d-145c-49a2-b20b-a0d1ba6945ba"
+    },
+    {
+      "claim_id": "2c680d68-beb9-45a9-ae53-b0935a3658d1",
+      "result_id": "d0324a7d-145c-49a2-b20b-a0d1ba6945ba"
+    },
+    {
+      "claim_id": "86a6c08c-5649-469e-a29d-a1c22a5e7aad",
+      "result_id": "d0324a7d-145c-49a2-b20b-a0d1ba6945ba"
+    },
+    {
+      "claim_id": "b615c55a-80d7-4efd-a034-23bb274ef758",
+      "result_id": "d0324a7d-145c-49a2-b20b-a0d1ba6945ba"
+    },
+    {
+      "claim_id": "5a91e5d7-0668-4a16-a22a-e4c3ddbcd658",
+      "result_id": "d0324a7d-145c-49a2-b20b-a0d1ba6945ba"
+    },
+    {
+      "claim_id": "e39d12ff-dbd7-4f34-ac0f-df5606f6f063",
+      "result_id": "d0324a7d-145c-49a2-b20b-a0d1ba6945ba"
+    },
+    {
+      "claim_id": "5f944724-d5b5-466e-bcb3-535b6193b0c9",
+      "result_id": "d0324a7d-145c-49a2-b20b-a0d1ba6945ba"
+    },
+    {
+      "claim_id": "87bf9dac-53b6-46f8-b331-9d10750b02f7",
+      "result_id": "d0324a7d-145c-49a2-b20b-a0d1ba6945ba"
+    },
+    {
+      "claim_id": "6cf54e8f-607e-494d-aaad-772d89de3c28",
+      "result_id": "d0324a7d-145c-49a2-b20b-a0d1ba6945ba"
+    },
+    {
+      "claim_id": "fbdca6e8-b463-4d48-bb34-18b2d9e5b8ea",
+      "result_id": "d0324a7d-145c-49a2-b20b-a0d1ba6945ba"
+    },
+    {
+      "claim_id": "279d954b-945c-4e58-a778-3968b07951a6",
+      "result_id": "d0324a7d-145c-49a2-b20b-a0d1ba6945ba"
+    },
+    {
+      "claim_id": "506b5004-a3a0-45b9-8284-b71f33b2c22b",
+      "result_id": "d0324a7d-145c-49a2-b20b-a0d1ba6945ba"
+    },
+    {
+      "claim_id": "07c25bf0-0707-4cbc-a6b2-958d97603e2d",
+      "result_id": "d0324a7d-145c-49a2-b20b-a0d1ba6945ba"
+    },
+    {
+      "claim_id": "d0b6546e-240b-411c-9aaa-3746faf04f74",
+      "result_id": "d0324a7d-145c-49a2-b20b-a0d1ba6945ba"
+    },
+    {
+      "claim_id": "df405265-88d2-46e4-9586-6d7073763322",
+      "result_id": "d0324a7d-145c-49a2-b20b-a0d1ba6945ba"
+    },
+    {
+      "claim_id": "79003b56-5736-4283-bbba-7e42b6a0c59a",
+      "result_id": "d0324a7d-145c-49a2-b20b-a0d1ba6945ba"
+    },
+    {
+      "claim_id": "e3cf4a53-442c-4947-8096-178edbbc638e",
+      "result_id": "d0324a7d-145c-49a2-b20b-a0d1ba6945ba"
+    },
+    {
+      "claim_id": "6c6783fb-82a4-424d-bd55-b9a5922be3bf",
+      "result_id": "b4c3a5a1-bc58-44b8-ad8d-fdf5a36e5a99"
+    },
+    {
+      "claim_id": "67ae2be4-5b01-4ad8-b69e-a383cbd2e03c",
+      "result_id": "b4c3a5a1-bc58-44b8-ad8d-fdf5a36e5a99"
+    },
+    {
+      "claim_id": "d11f2616-ea95-415c-a464-15155112cd60",
+      "result_id": "b4c3a5a1-bc58-44b8-ad8d-fdf5a36e5a99"
+    },
+    {
+      "claim_id": "09211a05-0e0c-426b-b7b7-f1db526d82a7",
+      "result_id": "b4c3a5a1-bc58-44b8-ad8d-fdf5a36e5a99"
+    }
+  ],
+  "comparisons": []
+}

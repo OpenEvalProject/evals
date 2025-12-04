@@ -1,0 +1,162 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "The study recruited 14 participants (N=13 after exclusion) who performed a continuous random dot motion detection task with three difficulty contexts (weak, strong, mixed) while EEG was recorded from 128 electrodes at 512 Hz.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C54 provide comprehensive methodological details about participant recruitment, experimental setup, and data acquisition. The methods are clearly described with appropriate ethical approval (C47), adequate sample size for EEG studies, and justified exclusion criteria (C54). The experimental design with counterbalancing (C51) and control conditions (C52) is appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4"
+    ],
+    "result": "Participants responded faster in the mixed context compared to fixed contexts, with a significant main effect of difficulty context on reaction time (F(1,13)=21.3, p<0.001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C4 reports a statistically significant behavioral finding with appropriate statistical test (rANOVA) and clear p-value. The effect is well-powered given the large F-statistic and small p-value, indicating a robust context effect on reaction time.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C8",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "A leaky accumulator model with adjustable decision bounds across contexts (G\u00b2=16) successfully reproduced behavioral data including context-dependent false alarm patterns, but was matched in fit by a criterion-adjustment model (G\u00b2=16) despite the latter being constrained by neural data showing opposite bound adjustments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C23-C25 demonstrate that multiple computational mechanisms can explain the same behavioral patterns. The goodness-of-fit metrics (G\u00b2=16 for both bound-adjustment and criterion-adjustment models) are clearly reported with model comparisons showing the criterion-adjustment model achieves equal behavioral fit despite neural constraints. However, the leak-adjustment model shows poorer fit (G\u00b2=23), providing discriminative evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C15",
+      "C55"
+    ],
+    "result": "Beta oscillatory activity (15-30 Hz) over motor cortex serves as a neural signature of motor preparation that builds at evidence-dependent rates, reaches stereotyped threshold levels at response, predicts trial-to-trial behavioral variability, and shows consistent amplitude prior to both hits and false alarms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C12, C15, and C55 establish beta activity as a valid neural marker of decision-bound dynamics through convergent evidence from prior literature (C9-C12) and current empirical observations (C15, C55). The consistency of beta amplitude across hits and false alarms (C15) particularly validates the threshold interpretation. These linking propositions are critical for the neurally-informed modeling approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C21",
+      "C22"
+    ],
+    "result": "Beta amplitude decreased (motor preparation increased) progressively throughout the inter-target interval in all contexts, mirroring the temporal increase in false alarm rates during the ITI.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C22 report converging behavioral and neural evidence for dynamic urgency signals. The parallel between beta dynamics and false alarm rate increases provides strong support for the urgency interpretation, as both measures independently indicate increasing motor preparation over time. This is a key empirical foundation for constraining the computational models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C26"
+    ],
+    "result": "In a revised model fitting procedure that simultaneously fit behavior and beta excursion, the criterion-adjustment model (G\u00b2+penalty=24) still outperformed the leak-adjustment model (G\u00b2+penalty=33).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C26 reports results from a more stringent model comparison that addresses potential confounds in the original fitting procedure. The criterion-adjustment model maintains superior fit even when both behavioral and neural constraints are applied simultaneously, strengthening the case for this mechanism. The penalty term appropriately accounts for model complexity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "The empirical CPP slope profile showed a plateau (5% drop in fixed strong, 1.5% drop in mixed strong), matching predictions of the criterion-adjustment model (6% and 3% drops) but not the leak-adjustment model (27.5% and 17% drops, with the former falling outside empirical 95% CI).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C35 provide critical model validation through CPP slope analysis. The quantitative comparison with bootstrap confidence intervals (C30, C33) demonstrates that the leak-adjustment model's predictions fall outside empirical bounds (C32), while the criterion-adjustment model predictions fall within confidence intervals (C31, C34). This constitutes strong discriminative evidence between models based on independent neural data not used in model fitting.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C56"
+    ],
+    "result": "The centro-parietal positivity (CPP) reflects pure cumulative evidence that feeds into the motor-level decision variable alongside urgency, as supported by previous simulations matching empirical CPP dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C19 and C56 establish the CPP as a motor-independent signature of evidence accumulation based on substantial prior literature. While C18 explicitly notes this is a \"working hypothesis,\" the convergent evidence from multiple prior studies (C19) and the current data provide strong support for using CPP to validate model predictions about evidence accumulation dynamics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C57"
+    ],
+    "result": "When adjusting for expected difficulty during continuous detection, people regulate the transfer of sensory evidence into the accumulator via sensory criterion adjustment rather than changing the decision bound, suggesting the brain employs a broader range of decision policy mechanisms than previously recognized.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C59 present the main conclusion of the study, which is well-supported by the convergent evidence from behavioral modeling (equal fit to bound-adjustment), neural constraints (beta excursion showing opposite pattern), and independent validation (CPP slope analysis discriminating models). The conclusion appropriately acknowledges this as an alternative mechanism rather than claiming exclusivity, and is justified by the multi-level evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "The study builds on established theoretical frameworks of evidence accumulation and decision bounds, while noting that continuous detection tasks may require different adjustment mechanisms than discrete choice tasks due to the need for continuous operation and management of false alarms from noise.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1 and C60-C68 establish the theoretical context and rationale for the study. These claims appropriately cite established literature (C1, C61-C65) and make logical inferences about task demands (C60, C66-C68). The reasoning that continuous detection may require different mechanisms is well-justified and provides clear motivation for testing alternative models beyond bound adjustment.",
+    "result_type": "MINOR"
+  }
+]

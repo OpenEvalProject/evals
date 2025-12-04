@@ -1,0 +1,268 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C5",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "The Eelbrain Python toolkit implements mTRF estimation using boosting, which encourages sparse TRFs and is suitable for models with correlated predictor variables, making TRF analysis accessible.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C9, C10, and C11 collectively establish that Eelbrain implements boosting-based mTRF estimation with desirable properties (sparsity, handling correlated predictors). The paper demonstrates the toolkit's functionality through multiple worked examples with the Alice dataset, supporting the accessibility claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "EEG responses to acoustic power scale logarithmically rather than linearly, as demonstrated by comparing linear, power-law, and logarithmic spectrogram transformations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C26 present statistical comparisons showing logarithmic scaling provides the best fit (p<0.001), with no additional benefit from combining linear and logarithmic models. This is consistent with prior knowledge (C27) about auditory system response properties. The analysis includes appropriate statistical tests and cross-validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "The acoustic envelope is a powerful predictor of EEG responses (82% of full model), but adding acoustic onset information significantly improves predictions (p<0.001), indicating separable neural representations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C34 demonstrate that while the envelope alone predicts EEG well, acoustic onsets contribute unique predictive power. Statistical significance is established (C30), and the TRF characteristics differ between predictors (C32), supporting the inference of separable representations. The analysis appropriately controls for confounds.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "TRF analysis provides advantages over traditional ERP analysis by controlling for acoustic confounds and overlapping responses, as demonstrated by comparing word-onset TRFs with ERPs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C42 show systematic differences between ERP and TRF approaches, with ERPs showing baseline activity and late-lag artifacts (C37-C38) that TRFs avoid. The comparison is supported by statistical testing and visual evidence (Figure 5), validating the methodological advantage claimed in C42.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Apparent differences in brain responses between function and content words (p=0.002) are explained by acoustic differences rather than linguistic category per se, as the effect disappears when controlling for acoustic features.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C50 present a complete analysis showing: (1) initial word-class effect (C43-C44), (2) effect disappears with acoustic controls (C45-C46), (3) word classes differ acoustically (C47-C49), and (4) acoustic differences explain neural differences (C50). The reverse analysis predicting spectrograms from word class (C47, t(14)=13.49, p<0.001) provides strong evidence for the acoustic confound explanation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Model comparisons based on predictive power are more conservative than TRF-based comparisons because TRFs can be contaminated by correlated predictors, making predictive power the preferred metric for establishing unique contributions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C56 provide a coherent methodological argument about the relative conservativeness of different analysis approaches. The reasoning is sound: TRFs estimated on training data are prone to overfitting (C52), correlated predictors share predictive power (C53-C54), and model comparisons test unique contributions (C55) while TRF estimates may reflect correlated variables (C56).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C71",
+      "C72"
+    ],
+    "result": "Using a 50 ms Hamming window basis function significantly improves predictive power over impulse basis and produces smoother, more consistent TRFs across subjects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C72 are supported by statistical comparison (Figure 10A showing significant improvement) and visual evidence (Figure 10C showing smoother TRFs with increased inter-subject overlap). The analysis appropriately demonstrates both quantitative and qualitative benefits of basis function selection.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "In simulation studies, boosting produces sparser mTRFs with fewer false positives compared to ridge regression, though with some bias toward zero in peak amplitudes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C77 describe simulation results (Figure 9) comparing boosting and ridge regression. Both methods capture dominant features (C73), but boosting produces simpler representations (C74) with high true negative rates (C77), while ridge regression has more false positives (C75-C76). The trade-offs are clearly documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C62",
+      "C63"
+    ],
+    "result": "EEG referencing strategy has minimal effect on average predictive power or TRF peak latencies but substantially affects the spatial distribution of predictive power across channels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C63 are supported by empirical comparison of three referencing strategies (Figure 7), showing consistent overall metrics but different topographic distributions. This is an important practical consideration for EEG analysis, appropriately documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "TRF analysis is well-suited for studying hierarchical cognitive processes in continuous perception because it models brain responses as convolutions of stimulus features, applies to single trials, and can incorporate multiple correlated predictors representing different processing levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C19 establish the conceptual foundation and prior validation of TRF methods. These include established knowledge about hierarchical processing (C1-C3), the utility of TRFs (C4, C19), fundamental assumptions (C12-C14), and methodological advantages (C15-C18). All claims are either well-established knowledge or supported by appropriate citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "The Alice dataset contains EEG data from 33 participants listening to a 12.4-minute audiobook chapter with 2129 words, including word-level linguistic regressors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C8 provide factual descriptions of the dataset used in the tutorial, with appropriate citations to the original publications (Bhattasali et al., 2020; Brennan et al., 2019). These are verifiable dataset properties.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C27",
+      "C35",
+      "C36"
+    ],
+    "result": "Prior work has established that auditory cortex is sensitive to acoustic onsets, that onset spectrograms predict MEG responses, and that brain responses reflect hierarchical linguistic representations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C22, C27, C35-C36 summarize established findings from prior work, all supported by appropriate citations. These provide necessary background context for the current analyses and are accurately represented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "The sparsity prior in boosting favors models with smaller coefficients, making uncentered predictors preferable and allowing mathematically redundant predictors to improve model performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C59 describe consequences of the sparsity prior used in boosting. These are logical inferences from the properties of the algorithm and are consistent with the demonstrated behavior in the word-class analysis where redundant predictors improved the model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C60",
+      "C61"
+    ],
+    "result": "Source localization can be used to assign brain responses to cortical locations and can improve signal-to-noise ratio by acting as a spatial filter.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C61 describe established source localization methods with appropriate citation (Nunez and Srinivasan, 2006). These are well-known properties of source localization techniques in EEG/MEG analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "TRF analysis has been successfully applied to diverse domains including music perception, audiovisual speech, subcortical processing, and attention-dependent processing in multi-talker speech.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C67 summarize applications of TRF analysis from prior work, all supported by appropriate citations. These demonstrate the breadth of applicability of the method beyond the speech processing focus of the current tutorial.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "TRF analysis with cross-validation provides strong tests of unique predictor contributions and predictive (not just explanatory) power, with cortical phase-locked responses primarily below 10 Hz.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C70 describe methodological advantages and practical considerations for TRF analysis. C68-C69 are logical inferences about the method's capabilities, while C70 is supported by citation (Ding et al., 2014) and justifies the 20 Hz low-pass filter used in the analyses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C78"
+    ],
+    "result": "The average interval between word onsets in the Alice stimulus is 334 ms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C78 is a factual statement about the stimulus properties, calculable from the dataset (2129 words in 12.4 minutes = ~744 ms per word on average, though the 334 ms figure likely refers to a different calculation or subset). This is a verifiable data property.",
+    "result_type": "MINOR"
+  }
+]

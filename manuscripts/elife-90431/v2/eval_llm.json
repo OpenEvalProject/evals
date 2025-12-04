@@ -1,0 +1,344 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "CaMKII\u03b1 is robustly expressed in all LGN layers of tree shrews, making it a suitable promotor for optogenetic targeting. Parvalbumin (PV) expression varies across layers and is more useful for delineating laminar structure than CaMKII\u03b1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C62 are supported by immunohistochemistry data shown in Figure 1A and supplementary figures, with consistent findings from prior literature (C61). The inference that CaMKII\u03b1 is a useful target (C59) and that PV better delineates layers (C62) are reasonable conclusions from the observed expression patterns.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "AAV2-CaMKII\u03b1-ChR2 viral injection into tree shrew LGN resulted in robust expression in LGN cell bodies and thalamocortical axons projecting to V1 layers 2/3 and 4, indicating that neurons in both LGN layer groups express the light-sensitive ion channel.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C68 are well-supported by histological data in Figures 1B, 1C, and supplementary figures. The inference that both LGN layer groups express ChR2 (C66-C67) is logically derived from observed axonal labeling patterns in V1 and supported by anatomical knowledge (C68).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "LGN neurons reliably follow optogenetic stimulation up to 60 Hz with striking phase locking between V1 LFP and LGN spiking maintained up to 80 Hz. Spike field coherence favors higher frequencies, indicating the ability to relay temporally precise information to V1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C75 are supported by simultaneous LGN-V1 recordings and spike field coherence analysis. The data demonstrate reliable entrainment and phase relationships across frequencies. However, C71 states \"up to 60 Hz\" while C73 extends to \"80 Hz\" - this minor inconsistency reflects different aspects measured (reliable following vs. phase relationship maintenance).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Functional validation shows LGN neurons entrain to optogenetic stimulation at multiple frequencies with clear spectral peaks. At 80 Hz, neurons show rapid adaptation. Optogenetic activation elicited mostly tonic spikes with minimal bursting, and neurons showed significant phase-locking without frequency-dependent differences in magnitude.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C86 are supported by electrophysiological recordings shown in Figure 2A-B. The burst analysis (C83) provides quantitative data (0.7\u00b10.3%), and phase-locking analysis (C85-C86) includes appropriate statistical testing (Rayleigh test, p<0.05). The findings are consistent with prior reports (C84).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Tree shrews were successfully trained on a visual detection task using a 2\u00b0 moving dot stimulus. Animals achieved narrow response time distributions (median 290 ms), 76% correct performance, and d' values between 1 and 2.5 after 7 days of training, with all animals showing significant sensitivity (p<0.01).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C96 are well-supported by behavioral data in Figure 3. The experimental design is clearly described (C90-C91), the rationale for stimulus choice is cited (C92), and quantitative performance metrics are provided with statistical validation (C96). The data demonstrate successful task acquisition across all animals.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Animals generalized visual detection performance across the visual field up to 120\u00b0 eccentricity, with performance declining at 150\u00b0 in most animals. Generalization was statistically significant (p<0.01), though bias increased with eccentricity as animals missed more targets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C100 are supported by behavioral data in Figure 3E-G with appropriate statistical testing. However, the study design has limitations: only single sessions per eccentricity were tested, and head position uncertainty (\u00b115\u00b0) affects precise eccentricity measurements. These caveats are acknowledged by the authors.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "LGN-implanted animals achieved d' sensitivity values \u22651.0 for optogenetic detection, while control animals implanted outside LGN showed d'<0.5, demonstrating that tree shrews can detect optogenetic activation of the thalamocortical pathway. Higher stimulation amplitudes were detected more readily, with individual animals showing frequency preferences (10 Hz for two animals, 50 Hz for one).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C107 are supported by behavioral data in Figure 4B-C and supplementary figures. The comparison between LGN-implanted and control animals provides critical evidence for specificity (C102-C103). However, the variability in frequency preferences (C106-C107) may reflect technical factors like probe placement rather than fundamental differences, as the authors acknowledge.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "Tree shrews showed rapid generalization from visual to optogenetic stimulation and reliably detected optogenetic stimulation with significant d' values (p<0.01). Significant bias differences between animals (p<0.05) suggest individual strategy differences, documenting reproducibility of optogenetic LGN detection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C111 are supported by behavioral data in Figure 5 and supplementary Figure 4-2, with appropriate statistical analyses (two-way ANOVA for d', one-way ANOVA for bias). The rapid generalization (C108) is evidenced by performance in early sessions, though the degree of generalization varied across animals.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "Optogenetic LGN stimulation produced significant activation in 22/111 LGN MUA sites but only 5/111 V1 MUA sites (p<0.05). Many LGN sites showed robust short-latency responses, while V1 sites were weakly modulated. Offset responses (~50 ms latency) were observed in both LGN (n=16) and V1 (n=8), suggesting circuit-level effects involving recurrent processing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C117 are supported by electrophysiological data in Figure 6A-B with appropriate statistical testing (paired t-tests, p<0.05). The low proportion of activated V1 MUA sites is explained by incomplete receptive field overlap. The offset response latencies and their interpretation (C116) are reasonable given the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "V1 LFPs showed strong modulation by LGN optogenetic stimulation (29/111 sites with 40 Hz entrainment, p<0.01), while LGN LFPs were relatively insensitive (11/111 sites). Laser-induced LGN spikes were followed by V1 depth-negative potentials at ~3 ms latency, with spectral coherence across gamma frequencies (30-80 Hz). Nine of 22 V1 sites with increased 40 Hz power also showed significant spike-field coherence with LGN.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C124 are well-supported by LFP and spike-triggered average analyses in Figure 7, with appropriate statistical testing. The ~3 ms latency (C121) is consistent with monosynaptic transmission. The lower LGN LFP magnitude (C120) is explained by anatomical differences in dendritic organization. The coherence analysis (C123-C124) provides strong evidence for functional coupling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "Spike-triggered average analysis revealed V1 response latency to LGN spikes of 3.8\u00b11.5 ms (n=9) with no significant frequency dependence (p>0.05), suggesting LGN can monosynaptically drive V1 oscillatory activity up to 80 Hz without degradation. These results support that CaMKII\u03b1 thalamocortical projections can activate V1 circuits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125-C128 are supported by spike-triggered average data with appropriate statistical analysis (one-way ANOVA). The inference about monosynaptic drive (C127) is reasonable given the short, frequency-independent latency, though the term 'monosynaptic' is an interpretation rather than direct demonstration. The conclusion (C128) appropriately summarizes the functional coupling evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "V1 LFP responses to optogenetic stimulation varied with frequency: at 30 Hz, only 3/16 sites were significantly modulated despite high amplitude, while higher frequencies showed more pronounced spectral peaks (e.g., 9 sites at 80 Hz, p<0.01). Signal detection analysis revealed V1 sensitivity increased with frequency, reaching d'\u22482.0 at 80 Hz, with sensitivity at behavioral frequencies (up to 50 Hz) matching behavioral performance (d'=1-1.5).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C129-C133 are supported by frequency-dependent LFP analysis in Figure 8 with appropriate statistical testing (paired t-tests). The signal detection approach for LFP analysis is methodologically sound. The comparison between V1 LFP sensitivity and behavioral performance (C133) is compelling, though the caveat about anesthesia effects is appropriately noted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C76",
+      "C135",
+      "C136"
+    ],
+    "result": "V1 LFP responses showed sensitivity values to LGN optogenetic activation similar to behavioral performance. CaMKII\u03b1-ChR2 expression permits efficient thalamocortical activation up to 80 Hz, and V1 LFPs are sufficiently sensitive for accurate single-trial detection of LGN optogenetic stimulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76, C135-C136 are supported by comparison of V1 LFP sensitivity (Figure 8) and behavioral performance (Figures 4-5). The correspondence between neural and behavioral sensitivity strengthens the conclusion that V1 responses reflect behaviorally relevant signals. However, the LFP recordings were under anesthesia while behavior was in awake animals, which could affect the comparison.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C137",
+      "C139",
+      "C140",
+      "C141",
+      "C146"
+    ],
+    "result": "Optogenetic LGN activation triggers local neuronal activity and artificial visual percepts that tree shrews can detect. Animals quickly generalized from visual to optogenetic tasks, suggesting visual nature of percepts. However, optogenetic performance remained lower than visual stimulation, indicating artificially induced percepts were less detectable than high-contrast visual stimuli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C137-C141, C146 are supported by the combined behavioral and electrophysiological data. The rapid generalization (C139) and performance comparison (C140-C141) are well-documented. The conclusion about robust artificial percepts (C146) is justified by the consistent behavioral detection, though the qualification about lower performance compared to visual stimulation is important.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C151",
+      "C152",
+      "C153",
+      "C156",
+      "C158"
+    ],
+    "result": "Neural spiking activations were found predominantly in LGN with some V1 neurons. Most neurons showed ON-type responses to stimulation onset, while a minority exhibited OFF-type responses at stimulation offset. Unlike natural vision where OFF responses have shorter latencies, optogenetic OFF responses showed longer latencies (~50 ms) in both LGN and V1, which might complicate perception in artificial vision.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C151-C153, C156, C158 are supported by electrophysiological data. The observation of inverted OFF response dynamics (C156) compared to natural vision is well-documented. However, the speculation about perceptual complications (C158) is reasonable but not directly tested. The functional significance of altered OFF responses requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C163",
+      "C168",
+      "C169",
+      "C170"
+    ],
+    "result": "V1 gamma activity frequency can be tuned through LGN optogenetic activation. Stimulation frequency profoundly affects V1 LFP detectability, with 80 Hz triggering more reliable activation than 30 Hz, suggesting higher frequencies might be preferable for artificial vision based on neural circuit activation reliability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C163, C168-C170 are supported by frequency-dependent V1 LFP analysis in Figure 8. The ability to tune gamma frequency (C163) is clearly demonstrated. However, the suggestion that higher frequencies are preferable (C170) is qualified as speculation based on one criterion (reliability) and doesn't account for other factors like behavioral performance variability or potential tissue heating at higher frequencies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C77",
+      "C187",
+      "C188"
+    ],
+    "result": "The findings confirm LGN as a potential target for visual prosthetics in tree shrews, a highly visual mammal closely related to primates. Tree shrews appear well-suited for translational work in visual prosthetics before testing in macaques and humans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77, C187-C188 represent the main conclusions of the study, supported by the combined anatomical, electrophysiological, and behavioral evidence. The demonstration of behavioral detection, neural entrainment, and V1 activation provides proof-of-concept. However, these are preliminary findings in a single species, and significant additional work would be needed before clinical translation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C69",
+      "C70"
+    ],
+    "result": "In macaques, CaMKII\u03b1 is expressed mostly in interlaminar LGN layers composed of konio-type relay neurons, activating a more restricted group of thalamocortical projections compared to tree shrews where expression is broader across layers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C70 are supported by citations to prior work (Benson et al., 1991; Klein et al., 2016). This comparison is important for understanding the translational implications of the tree shrew findings. The inference about more restricted activation in macaques (C70) is reasonable given the expression pattern differences.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Tree shrew LGN layers are specialized for ON- and OFF-type visual inputs, allowing functional identification of stimulated layers through local recordings. These results suggest robust ChR2 expression in thalamocortical relay cells across LGN layers under the CaMKII\u03b1 promotor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C89 are supported by functional validation data in Figure 2C and supplementary figures, with anatomical knowledge cited (Conway and Schiller, 1983). The functional identification approach (C88) is demonstrated, and the conclusion about robust expression (C89) is justified by the combined anatomical and functional evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C142",
+      "C143"
+    ],
+    "result": "Since V1 responses scale with stimulus contrast, artificial stimulation detectability matches visual detectability at low to intermediate contrast values, explaining why optogenetic performance was lower than high-contrast visual stimulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C142-C143 are supported by citation to prior work (Bhattacharyya et al., 2013) and provide a reasonable explanation for the performance difference. However, this is an inference rather than direct demonstration, as contrast was not systematically varied in the visual detection experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C148",
+      "C149",
+      "C150"
+    ],
+    "result": "Artificial stimulation necessarily co-activates both ON and OFF contrast channels, which never occurs in natural vision, potentially producing cortical activation patterns that explain perceptual performance decrements. In tree shrew LGN, ON- and OFF neurons are segregated in separate layers, offering potential for selective targeting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C148-C150 are supported by citations and anatomical knowledge. The argument about ON/OFF coactivation (C148-C149) is logical and cited (Beyeler et al., 2017; Nguyen et al., 2016). The tree shrew layer segregation (C150) is well-documented (Conway and Schiller, 1983) and represents an advantage for future selective targeting experiments, though such experiments were not performed in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C190",
+      "C191",
+      "C192",
+      "C193"
+    ],
+    "result": "Robust opsin expression in V1 layers 2/3 and 4 opens the possibility of illuminating thalamocortical axon terminals via cortical surface light arrays. Such flexible implants could deliver stimulation less invasively than implanted electrodes, highlighting a potential advantage of LGN targeting for artificial vision.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C190 is supported by histological data (Figures 1C, supplementary figures). However, claims C191-C193 are speculative about future applications. While the opsin expression pattern does suggest this possibility, no experiments were performed to test cortical surface stimulation. The speculation is reasonable but represents future work rather than demonstrated results.",
+    "result_type": "MINOR"
+  }
+]

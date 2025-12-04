@@ -1,0 +1,307 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "The canonical model of V2 and V3 organization posits mirror-symmetrical representations around the calcarine sulcus, with consistent organization across individuals. However, deviations from this pattern have been observed but historically dismissed as artifactual.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4, C13-C17, C21-C23 collectively establish the traditional understanding of V2/V3 organization and acknowledge that deviations exist but have been treated as artifacts. These claims are well-supported by citations to prior work and represent established knowledge in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C27",
+      "C28",
+      "C29",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "The study systematically investigated individual variability in visual field maps of human early visual cortex using the 7T HCP retinotopy dataset (181 participants), with aims to quantify variability and identify common modes of organization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C27-C29, C101-C111 describe the dataset, study design, and methodological approach. The dataset is well-characterized, ethically approved, and uses standard preprocessing pipelines. The methods are clearly described with appropriate citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Individual variability in polar angle maps was quantified using a linear mixed-effects model, revealing significant main effects of hemisphere (left > right), portion (dorsal > ventral), and visual area (V3 > V2 > V1), with significant interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C43 describe the individual variability metric and statistical analysis. The LME model is appropriate for the dataset structure (including twins), and the results show statistically significant effects with reported p-values and effect sizes. The methodology is sound and results are clearly presented in Tables 1-2.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "For eccentricity maps, significant main effects of hemisphere and portion were found, with V3 showing higher variability than V1, though the pattern differed from polar angle maps.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C49 report findings for eccentricity maps using the same LME approach. Results are presented with statistical support (p-values, effect sizes) in Table 2. The findings are less pronounced than for polar angle but still statistically significant.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C73"
+    ],
+    "result": "After controlling for covariates (curvature, mean BOLD signal, intra-individual variability in pRF estimates), the main effects of hemisphere, visual area, and portion on polar angle variability persisted, though slightly reduced, indicating the effects are not merely due to these confounds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C57, C73 address potential confounds through correlation analysis and LME models with covariates. The analysis shows that while covariates are correlated with retinotopy, the main effects persist after controlling for them (Tables 3-4). This strengthens the interpretation that observed variability reflects genuine neurobiological differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C74",
+      "C93"
+    ],
+    "result": "Clustering analysis of polar angle maps in the left hemisphere dorsal cortex revealed that only one-third of individuals (clusters 1 and 5) showed canonical organization, while two-thirds showed deviations including Y-shaped lower vertical representations (cluster 2) and truncated V3 boundaries (clusters 3 and 4).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C58-C64, C74, C93 describe clustering results showing common patterns of deviation. While the Jaccard similarity analysis and spectral clustering are methodologically sound, the substantial overlap between within- and between-cluster distributions (C63-C64) and qualitative mismatches (Figure 5) suggest clustering quality is limited. The choice of 6 clusters is justified but somewhat arbitrary (C118). The finding is important but requires validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C68",
+      "C69",
+      "C75"
+    ],
+    "result": "Visual field sign analysis revealed that individuals with Y-shaped lower vertical representations show a discontinuity in the mirror-image representation of dorsal V3, while those with truncated V3 do not show such discontinuity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C66, C68-C69, C75 describe visual field sign analysis results. The method is well-established (cited) and provides clearer boundary delineation than polar angle maps alone. The finding of discontinuity in dorsal V3 for Y-shaped patterns is clearly demonstrated in Figure 7 and Figure 7\u2014figure supplement 1.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C30",
+      "C31",
+      "C71",
+      "C72",
+      "C76",
+      "C92"
+    ],
+    "result": "The study demonstrates substantial individual variability in dorsal V2 and V3, particularly in the left hemisphere, with only one-third of individuals conforming to the canonical pattern. These findings challenge the view that inter-individual variability is negligible and that dorsal areas are mirror images of ventral areas.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C11, C30-C31, C71-C72, C76, C92 summarize the main findings. These conclusions are well-supported by the statistical analyses (LME models), clustering results, and visual field sign analysis. The quantitative finding that only one-third conform to the canonical pattern is based on clustering (C8, C58-C59), though clustering quality has limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C67",
+      "C70",
+      "C77",
+      "C78",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "The observed patterns of variability in human dorsal V3, including discontinuous representations, parallel findings in non-human primates (macaque, owl monkey, marmoset) and other mammals (cat), suggesting this may be a common feature of mammals with developed vision.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67, C70, C77-C78, C80-C84 connect current findings to prior work in non-human primates and other mammals. The comparison is well-supported by citations, and the finding that similar discontinuities were reported by Gattass et al. (1988) in macaques strengthens the interpretation. However, C70 is somewhat speculative about coexistence of models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Variability increases from V1 to V2 to V3, compatible with a developmental model where maps form sequentially from genetically determined core areas (V1) to areas with greater developmental degrees of freedom, with dorsal-ventral differences potentially related to MT as a second anchor node.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C85-C87 propose a developmental interpretation of the gradient of variability. While C85 is supported by the data (C38-C40), C86-C87 are speculative interpretations citing developmental models. The explanation is plausible but not directly tested in this study and requires further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "No meaningful differences were found in eccentricity map clusters, possibly due to the limited visual stimulus extent (8\u00b0 eccentricity), though complex polar angle patterns can coexist with preserved eccentricity gradients as shown in other species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C91 acknowledge a negative finding for eccentricity clustering and provide plausible explanations. The limitation of stimulus extent is a valid methodological constraint (C89), and the possibility of preserved eccentricity with complex polar angle is supported by citations to work in other species (C91).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "The interhemispheric difference (left > right variability) is a novel finding not previously reported in other mammals, possibly due to small sample sizes in animal studies or potentially reflecting human-specific differences related to callosal connection scaling with brain size.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C94-C97 highlight the interhemispheric difference and propose explanations. While the finding is statistically robust (C36, C41, C45), the explanations are speculative. The lack of reports in other species could reflect either sampling limitations or genuine species differences, but this cannot be determined from the current data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "The clustering methodology used spectral clustering on Jaccard similarity indices of discrete polar angle maps, with the number of clusters (6) chosen based on models from non-human primate literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C118 describe the clustering methodology. The approach is methodologically sound with appropriate citations. However, the choice of 6 clusters, while justified by reference to primate models (C118), is acknowledged as somewhat arbitrary and could be explored further.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C98"
+    ],
+    "result": "Prior work has established that dorsal V2/V3 borders are variable in other mammals, and recent computational models predict individual variability in human retinotopy correlated with anatomy, with developmental models suggesting multistable solutions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C26, C98 cite prior work establishing context for the current findings. These claims are well-supported by citations to relevant literature on variability in other species, deep learning predictions, and developmental models.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C99",
+      "C100"
+    ],
+    "result": "The study provides new insights into variability in human visual cortex organization that may guide future investigations and theories about retinotopic organization across species, development, and individuals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C100 are summary statements about the study's contribution and potential impact. These are reasonable conclusions given the systematic nature of the investigation and the large dataset used. The potential for future impact is appropriately framed as speculative (C100).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C12",
+      "C18",
+      "C19",
+      "C20",
+      "C79"
+    ],
+    "result": "Prior observations of departures from canonical organization in dorsal regions have been reported but limited by small datasets and methodological constraints, with no systematic investigation of individual variability in non-human primates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12, C18-C20, C79 provide context about prior work and its limitations. These statements are supported by citations and accurately characterize the state of the field, justifying the need for the current systematic investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "In V1, meridian representations correlate with sulcal patterns, a relationship leveraged for individual-level retinotopy predictions. Voxels near large veins show lower mean BOLD signal (venous eclipse), affecting pRF estimates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C114 describe established relationships between anatomy and retinotopy, and between vasculature and BOLD signal. These are well-supported by multiple citations and provide important context for the covariate analysis.",
+    "result_type": "MINOR"
+  }
+]

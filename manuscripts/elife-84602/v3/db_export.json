@@ -1,0 +1,1954 @@
+{
+  "submission": {
+    "id": "aeb0ccca-6f6f-4d14-ba81-e2adad05908a",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-04T03:15:05.064870Z",
+    "updated_at": "2025-12-04T03:15:05.064870Z"
+  },
+  "content": [
+    {
+      "id": "3ff358bf-c6bc-4e0e-9353-4fa467f4409d",
+      "submission_id": "aeb0ccca-6f6f-4d14-ba81-e2adad05908a",
+      "content_type": "manuscript",
+      "content_text": "# Bayesian analysis of phase data in EEG and MEG\n\n## Authors\n\n- Sydney Dimmock<sup>1</sup> ([ORCID: 0000-0002-0163-2048](https://orcid.org/0000-0002-0163-2048)) \u2020\n- Cian O'Donnell<sup>1</sup> ([ORCID: 0000-0003-2031-9177](https://orcid.org/0000-0003-2031-9177))\n- Conor Houghton<sup>1</sup> ([ORCID: 0000-0001-5017-9473](https://orcid.org/0000-0001-5017-9473))\n\n### Affiliations\n\n1. Faculty of Engineering, University of Bristol Bristol United Kingdom ([ROR:0524sp257](https://ror.org/0524sp257))\n2. School of Computing, Engineering & Intelligent Systems, Ulster University Derry/Londonderry United Kingdom ([ROR:01yp9g959](https://ror.org/01yp9g959))\n\n\u2020 Corresponding author\n\n## Abstract\n\nElectroencephalography and magnetoencephalography recordings are non-invasive and temporally precise, making them invaluable tools in the investigation of neural responses in humans. However, these recordings are noisy, both because the neuronal electrodynamics involved produces a muffled signal and because the neuronal processes of interest compete with numerous other processes, from blinking to day-dreaming. One fruitful response to this noisiness has been to use stimuli with a specific frequency and to look for the signal of interest in the response at that frequency. Typically this signal involves measuring the coherence of response phase: here, a Bayesian approach to measuring phase coherence is described. This Bayesian approach is illustrated using two examples from neurolinguistics and its properties are explored using simulated data. We suggest that the Bayesian approach is more descriptive than traditional statistical approaches because it provides an explicit, interpretable generative model of how the data arises. It is also more data-efficient: it detects stimulus-related differences for smaller participant numbers than the standard approach.\n\n## Introduction\n\nIn an electroencephalography (EEG) or magnetoencephalography (MEG) frequency-tagged experiment, the stimuli are presented at a specific frequency and the neural response is quantified at that frequency. This provides a more robust response than the typical event-related potential (ERP) paradigm because the response the brain makes to the stimuli occurs at the predefined stimulus frequency while noise from other frequencies, which will correspond to other cognitive and neurological processes, does not contaminate the response of interest. This quantification is often approached by calculating the inter-trial phase coherence (ITPC). Indeed, estimating coherence is an important methodological tool in EEG and MEG research and is used to answer a wide variety of scientific questions. There is, however, scope for improving how the phase coherence is measured by building a Bayesian approach to estimation. This is a per-item analysis and gives a better description of uncertainty. In contrast, the ITPC discards information by averaging across trials. As a demonstration, both approaches are compared by applying them to two different frequency-tagged experimental datasets and through the use of simulated data.\n\nFrequency tagging is a well-established tool in the study of vision, where it is often referred to as the steady-state visual-evoked potential (Regan, 1966). At first, it was predominately used to study low-level processing and attention (see Norcia et al., 2015 for a review). Latterly, though, it been used for more complex cognitive tasks, such as face recognition and discrimination (Alonso-Prieto et al., 2013; Farzin et al., 2012; Liu-Shuang et al., 2014), perception of number (Guillaume et al., 2018; Van Rinsveld et al., 2020), and the \u2018human quality\u2019 of dance movements (Alp et al., 2017). It has been applied to other modalities: audition (Galambos et al., 1981; Picton et al., 2003; Bharadwaj et al., 2014), somatosensation (Tobimatsu et al., 1999; Galloway, 1990), and nociception (Colon et al., 2012; Colon et al., 2014). It has been used to study broad phenomenon like memory (Lewis et al., 2018) and lateralisation (Lochy et al., 2015; Lochy et al., 2016) along with more specific types of neurocognitive response, such as visual acuity (Barzegaran and Norcia, 2020) and the perception of music (Nozaradan, 2014). Furthermore, frequency tagging can be used in the assessment of disorders such as autism (Vettori et al., 2020a; Vettori et al., 2020b) and schizophrenia (Clementz et al., 2008). It has even been used to study neural responses to social interaction (Oomen et al., 2022). Beyond EEG and MEG, phase coherence has been proposed as a mechanism for signal routing (Abeles, 1982; Salinas and Sejnowski, 2001; B\u00f6rgers and Kopell, 2008), assembly formation (Singer, 1999; Buzs\u00e1ki, 2010), and coding (O\u2019Keefe and Recce, 1993; Panzeri et al., 2010), so the measurement of phase coherence for electrocorticography, local field potentials, and neuronal spiking is important for the neuroscience of neuronal systems.\n\nOne striking application of frequency tagging is in neurolinguistics (Ding et al., 2016; Ding et al., 2017). Neurolinguistic experiments are difficult; since language experiments inevitably involve humans and target a phenomenon whose temporal grain is often too fine for magnetic resonance imaging, the principal neural imaging techniques are EEG and MEG. However, the complexity of the neural processing of language makes the signals recorded in these experiments particularly noisy, difficult to analyse, and difficult to disentangle from other cognitive processes. A further difficulty in neurolinguistics is that an ERP is often difficult to obtain because the tens or hundreds of repetitions required would render the stimulus meaningless to the participant, a phenomenon known as the semantic satiation (Jakobovits, 1962).\n\nConsider, as an example, the frequency-tagged experiment described in Burroughs et al., 2021 and following the paradigm shown in Ding et al., 2017. This is used here as a paradigmatical example of a frequency-tagged experiment in neurolinguistics and, although the description here is specific to this example, much of the methodology is typical. In Burroughs et al., 2021, the neural response to phrases was investigated by comparing the response to grammatical adjective\u2013noun (AN) phrases\n\n$$\n...old\u00a0rat_\u00a0sad\u00a0man\u00a0ill_\u00a0wife_...\n$$\n\nto ungrammatical adjective\u2013verb (AV) pairs\n\n$$\n...rough\u00a0give\u00a0ill\u00a0tell\u00a0thin\u00a0chew\u00a0...\n$$\n\nwhere care had been taken to have a similar 2 g frequency for adjacent word pairs in each condition. The words are all presented at 3.125 Hz; however, the frequency of interest is the phrase rate, 1.5625 Hz, corresponding to the phrase structure of the AN stimuli (see Figure 1). In Burroughs et al., 2021, it is suggested that the strength of the response to AN stimuli relative to AV stimuli at this frequency measures a neural response to the grammatical structure, rather than to lexical category of the words.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/84602/elife-84602-fig1-v3.jpg)\n\n**Figure 1.:** In the adjective\u2013noun (AN) stimulus, there are noun phrases at the phrase rate, 1.5625 Hz; this structure is absent in the adjective\u2013verb (AV) stimulus because AV pairs do not form a phrase. 3.125 Hz corresponds to the syllable rate in this experiment.\n\nThis investigation required a quantitative measurement of the strength of the response. The obvious choice: the induced power at 1.5625 Hz does not work, empirically this proves too noisy a quantity for the stimulus-dependent signal to be easily detected and, indeed, although the frequency tag produces a more robust signal than an ERP, for more high-level or cognitive tasks, particularly neurolinguistic tasks, where frequency-tagging is now proving valuable, the power is not a useful measure; more needs to be done to remove the noise. Typically this is done by assuming the response is phase-locked to the stimulus, and so for frequency-tagged data in cognitive tasks it is common to use the ITPC. The ITPC is defined using the mean phase angle:\n\n$$\nR(f,\u03d5)=\\frac{1}{K}\\sumke^{i\\theta_{fk\u03d5}}\n$$\n\nwhere $f$ is the frequency, $k$ is the trial index, $K$ is the number of trials, $\u03d5$ represents other indices such as electrode number or experimental condition, and $\\theta_{f\u2062k\u2062\u03d5}$ is the phase of the complex Fourier coefficient for the EEG or MEG trace $(f,k,\u03d5)$. Across different applications, the mean phase angle is often called the mean resultant, a term we will use here. The ITPC is the length of the mean resultant:\n\n$$\nR(f,\u03d5)=|R(f,\u03d5)|\n$$\n\nThe ITPC is chosen as a quantitative measure to extract the portion of the response at the frequency of interest that is phase-locked to the stimulus and therefore consistent in phase from trial to trial. This is another of the denoising strategies required by these noisy data.\n\nIn the case of the experiment, we are discussing here the hold-all index $\u03d5$ is made up of participant, condition, and electrode indices. To produce a result, the ITPC is averaged over the 32 electrodes used in the experiment to give $R\u2062(f,p,c)$, where $p$ labels participants, $c$ labels conditions, and $f$ labels frequency. The principal result of Burroughs et al., 2021 is that, in the language of frequentist statistics, $R\u2062(f=1.5626\u2062 Hz,p,c=AN)$ is significantly larger than $R\u2062(f=1.5626\u2062 Hz,p,c=AV)$.\n\nThe result of these experiments analysed using ITPC are summarised in Figure 2. This plots the ITPC measure for all six experimental conditions, the two, AN and AV, that have already been described and four others; a table of the experimental conditions is provided in Appendix 3. In Figure 2A, it is seen that there is a strong peak in ITPC at the syllable rate, 3.125 Hz, and, in the case of AN, at the phrase rate 1.5625 Hz. The ITPC at the phase rate is graphed in Figure 2B, where, again, it appears only AN has a response at the phrase rate.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/84602/elife-84602-fig2-v3.jpg)\n\n**Figure 2.:** (A) Coloured lines show the ITPC for each participant after averaging over electrodes and is traced across all frequencies. The mean trace, calculated by averaging over all participant traces, is overlaid in black. Vertical lines mark the sentence, phrase, and syllable frequencies as increasing frequencies, respectively. (B) Statistical significance was observed with an uncorrected paired two-sided Wilcoxon signed-rank test (\u22170.05, \u2217\u22170.01). (C) ITPC differences for each condition pair calculated at the phrase frequency and interpolated across the skull. Filled circular points mark clusters of electrodes that were discovered to be significantly different (p<0.05) by the cluster-based permutation test.\n\nIn Burroughs et al., 2021, all analyses are done for ITPC averaged across electrodes; nonetheless in Figure 2C, we show the condition-to-condition difference in ITPC at each electrode, but averaged across participants:\n\n$$\n\u0394R_{ce}=\u27e8\u0394R_{pce}\u27e9_{p}\n$$\n\nwhere\n\n$$\n\u0394R_{pce}=R(f=1.5626 Hz,e,c=AN)\u2212R(f=1.5626 Hz,e,c=RR).\n$$\n\nVisually these data appear to show a left temporal and right parietal response. However, the data are noisy and deciding the significance of any comparison is complicated: a straightforward calculation of the p-value using an uncorrected paired two-sided Wilcoxon signed-rank test gives a value <0.05 for 54 of the 480 possible comparisons. This includes some comparisons that fit well with the overall picture, for example, when comparing AN to AV the P4 electrode shows a difference with $p=0.002$ and the T7 electrode with $p=0.044$. It also includes some more surprising results: for the comparison of RR to RV, the CP5 electrode has $p=0.0182$ and the FC1 electrode has $p=0.0213$. If we interpret these as significant difference, the apparent difference between two conditions without an apparent phrase structure is odd and presumably misleading. However, a na\u00efve Bonferroni correction would use a factor of $32\\times15$, and in a manner typical of this very conservative approach, it massively reduces the number of significantly different responses, to one in this case.\n\nAs part of our reanalysis of these data, we used cluster-based permutation testing (Maris and Oostenveld, 2007) to identify significant clusters of electrodes for each ITPC condition difference, thereby providing a quantification of the observed structure in the headcaps. See Appendix 4 for an outline of the method. This statistical test is a widely adopted approach to significance testing EEG data because it does not fall prey to the high false-negative rate of a Bonferroni correction and takes advantage of spatiotemporal correlations in the data. However, this is different to testing individual electrode effects, and we must be careful to articulate this difference. With this method it is not possible to make inferential claims about the strength of the effect of any one electrode appearing in a significant cluster; electrodes appearing in significant clusters cannot be defined as significant as these comparisons are not controlled for under the null (Sassenhagen and Draschkow, 2019). As will be discussed later, this is a weaker claim than that based of the Bayesian posterior that can quantify this effect through a probabilistic statement.\n\nThere are a number of disadvantages to the ITPC. The most obvious problem is that the item in the statistical analysis of ITPC is a participant, not a trial. In the results described in Burroughs et al., 2021, the statistical significance relied on a $t$-test between conditions with a pair of data points for each participant: there are actually 24 trials for each participant but these are used to calculate the ITPC values. Some of the analysis in Burroughs et al., 2021 is done using 20 participants, some using 16; sticking to the latter for simplicity, the hypothesis testing is performed using 16 pairs of values, rather than $16\\times24=384$ or even $16\\times24\\times32=12288$ items if the individual electrodes are included. In short, the ITPC is itself a summary statistic, a circular version of variance, and so it hides the individual items inside a two-stage analysis\n\n$$\nitems\u2192ITPC\u2192statistical analysis\n$$\n\nHowever, this is hard to rectify: it is difficult to compare items across participants, or across electrodes, because the mean phase, $phase[R(f,\u03d5)]$, is very variable and not meaningful to the scientific questions of interest. This variability is graphed in Figure 4: this figure shows the value of\n\n$$\n\\mu_{pe}=phase[R(f=1.5625,p,e,c=AN)]\n$$\n\nthe phase of the mean resultant for the AN condition. For illustrative purposes, three example electrodes are picked out and the distribution across participants is plotted. What is clear is how variable these phases are; this means that individual responses cannot be compared across participants and electrode since $p$ and $e$ have such a strong effect on their value.\n\nThere are other classical tests of coherence which use phase information. One example is the Rayleigh test (Rayleigh, 1880; Rayleigh, 1919); this test can be used to check for either significant departure from uniformity or from the \u2018expected phase\u2019, that is, a particular phase angle specified by the researcher based on some other insight into the behaviour. Other tests, such as Hotelling\u2019s $T^{2}$, apply jointly to phase and amplitude (Hotelling, 1931; Picton et al., 2001; Picton et al., 1987). These classical approaches are incompatible with the neurolinguistic study presented here. Firstly, it would be difficult to provide an expected phase; as demonstrated in Figure 4, the mean phase angle is highly variable across participants. There is also no substantive prior information available that could be used to supplement this value because language experiments vary from experiment to experiment. Secondly, because of the problem of semantic satiation the experiments we consider here are relatively short and lack the frequency resolution these classical approaches require.\n\nHere we provide a Bayesian approach to phase data. We believe this has advantages when compared to the ITPC: it permits a per-item analysis and correspondingly a more statistically efficient and richer use of the data. Furthermore, as a Bayesian approach, it supports a better description of the data because it quantifies uncertainty and because it describes a putative abstraction of the stochastic process that may have generated the data while explicitly stating the underpinning assumptions. This replaces a hypothesis-testing and significance-based account with a narrative phrased in terms of models and their consequences, so, in place of an often contentious or Procrustean framework based on hypotheses, a Bayesian approach describes a putative model and quantifies the evidence for it.\n\nA Bayesian account starts with a parameterised probabilistic model of the data. The model proposes a distribution for the data given a set of model parameters: this is the likelihood. In our case, the likelihood will be the probability distribution for the phases of the responses, given our model. Our interest is in how the variance of this distribution depends on the condition. In addition to the likelihood, the full Bayesian model also includes a prior distribution for parameters, for example, it includes priors for the parameters which determine the relationship between the condition and the distribution of phases. The goal is to calculate the posterior distribution, the probability distribution for the parameters given the experimental data; this follows from Bayes\u2019 theorem:\n\n$$\nP(\u0398|\u0394)=\\frac{P(\u0394|\u0398)P(\u0398)}{P(\u0394)}\n$$\n\nwhere $\u0398$ are the parameters and $\u0394$ the data. Essentially, $P\u2062(\u0394|\u0398)$ is the likelihood, the distribution of the data given some parameters: the goal is to take the data and from them calculate the posterior distribution of the parameters: $P\u2062(\u0398|\u0394)$. The denominator $P\u2062(\u0394)$ can usually be ignored because it is just a normalising constant that is independent of the parameter values and therefore does not change the shape of the posterior distribution. There are a number of excellent descriptions of the Bayesian approach to data, including the textbook (Gelman et al., 1995) and a recent review (van de Schoot et al., 2021); our terminology and notation will often follow conventions established by the textbook (McElreath, 2018).\n\nIn many ways Bayesian descriptions are more intuitive and easier to follow than the frequentist approaches that have been favoured over the last century. The impediment to their use has been the difficulty of calculating the posterior distribution. These days, however, powerful computing resources and new insight into how to treat these models mean that there are a variety of approaches to estimating the posterior; one approach, the one used here, is to sample from the posterior without calculating it analytically using Markov chain Monte Carlo (MCMC) techniques. Probabilistic programming languages such as Stan (Carpenter et al., 2017) and Turing (Ge et al., 2018) make it easy to use advanced MCMC sampling methods such as Hamiltonian/Hybrid Monte Carlo (HMC) and the no U-turn sampler (NUTS) (Duane et al., 1987; Neal, 2011; Betancourt, 2013), making the complexity of a frequentist analysis unnecessary. Here, we report results calculated using Stan though many of the computations were carried out in both Stan and Turing.\n\n## Materials and methods\n\n### Data\n\nIn this article, we consider two experimental datasets and simulated data. The first experimental dataset is the phrase data described above; this can be considered the primary example, and these data are familiar to us and formed the target data while developing the approach. In this section, the methods are described with reference to these particular data; we believe using a particular example allows us to describe the method with greater clarity. However, to demonstrate the generality of the approach we also apply it to another dataset measuring statistical learning of an artificial language. These data are described briefly here. The experiments we performed with simulated data used data generated by the Bayesian model with different effect sizes; this is described in the \u2018Results\u2019 section.\n\nThe second experimental dataset is related to statistical learning of an artificial language. Statistical learning refers to the implicit capacity of the brain to extract the rules and relationships between different stimuli in the environment. We used our Bayesian model to analyse data from an interesting frequency-tagged experiment that investigated statistical learning in an artificial language task (Pinto et al., 2022). In the experiment, 18 syllables are arranged into six three-syllable words and played in a stream so that the transition probabilities inside a pseudoword are 1 while the transition between the last syllable of a pseudoword and the first of another is 0.2. The goal is to assess the degree to which pseudowords are learned. A frequency-tagged paradigm was used. The syllables were presented at a constant rate $f$, such that three-syllable pseudowords had a frequency of $f/3$. Evidence of statistical learning can then be quantified using ITPC at this frequency and its harmonics.\n\nIn the experiment, syllables were presented at 4 Hz, resulting in a three-syllable pseudoword frequency of 1.33 Hz. Each participant was subject to two conditions, which we refer to as baseline (BL) and experimental (EXP) in line with Pinto et al., 2022. For the EXP condition, there were six pseudowords with a between-word transitional probability of 0.2; a summary of these are shown in Figure 3. The BL condition contained the same 18 syllables as EXP, but adopted different transitional probability rules to remove regularities. In this study, recordings were taken from 40 adult participants (25 females, 35 right-handed, ages 20\u201338) using 64 electrodes sampled over three blocks of 44 trials; of these participants, 39 had complete EEG recordings to use in the analysis. In the \u2018Results\u2019 section, we recapitulate the original ITPC analysis of these data and consider a Bayesian model.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/84602/elife-84602-fig3-v3.jpg)\n\n**Figure 3.:** All six pseudowords used in the experiment are numbered. Groups of position-controlled syllables have been coloured.\n\n### Circular distributions\n\nHere, the data are a set of phases and so the model for the data is a probability distribution on a circle. The motivation which informs the ITPC is that the phases to a greater or lesser extent have a unimodal distribution around the circle and so the model should be a unimodal distribution on the circle (see Figure 5). One common class of distributions on the circle is given by the wrapped distributions with probability density function\n\n$$\np(\\theta)=\\sumn=\u2212\u221e\u221ep_{r}(\\theta+2\\pin)\n$$\n\nwhere $p_{r}\u2062(x)$ is a probability density of a distribution on the real line and $\\theta$ is the angle. It might seem that the obvious choice for $p_{r}\u2062(x)$ would be the Gaussian distribution. In fact, the wrapped Gaussian distribution is not a very satisfactory example of a wrapped distribution because $p\u2062(\\theta)$ cannot be calculated in closed form. A much better example is the Cauchy distribution\n\n$$\np_{r}(x)=\\frac{1}{\\pi\\gamma}\\frac{\\gamma^{2}}{(x\u2212x_{0})^{2}+\\gamma^{2}}\n$$\n\nwhere x0 is a parameter giving the median of the distribution and $\\gamma$ is a scale parameter; the corresponding wrapped distribution has the closed form:\n\n$$\np(\\theta)=\\frac{1}{2\\pi}\\frac{sinh\u2061\\gamma}{cosh\u2061\\gamma\u2212cos\u2061(\\theta\u2212\\mu)}\n$$\n\nand, in contrast to the Cauchy distribution on the real line, where the moments are not defined, the wrapped distribution has a well-defined and convenient value for the mean resultant:\n\n$$\nR=e^{i\\mu\u2212\\gamma}\n$$\n\nThe circular variance $S$ of the wrapped Cauchy distribution can be derived from the length of this complex vector:\n\n$$\nS=1\u2212|R|\n$$\n\n\n\n$$\n=1\u2212e^{\u2212\\gamma}\n$$\n\nThus, as illustrated in Figure 5A, a large value of $\\gamma$ corresponds to a highly dispersed distribution; a low value to a concentrated one. With this explicit relationship between parameter values and the mean resultant, the Cauchy distribution is a convenient choice for our model.\n\n### Prior distributions\n\nThe next important element is the choice of priors both for the mean of the wrapped distribution, \u00b5, and for $\\gamma$, which determines how dispersed the distribution is. The prior for \u00b5 is the more straightforward: a different value of \u00b5 is required for each participant, condition, and electrode. This prior should be uniform over the unit circle (Figure 4). Although there is likely to be correlations in \u00b5 values for the same electrode across participants and for the electrodes for a given participant, since the value of \u00b5 is not of interest, it is convenient to ignore this and pick an independent value $\\mu_{p\u2062c\u2062e}$ for each triplet of participant\u2013condition\u2013electrode values. Future studies that aim to extend this model could consider adding correlations to \u00b5.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/84602/elife-84602-fig4-v3.jpg)\n\n**Figure 4.:** The left-hand panel shows the distribution of phases across electrodes for each participant: each column corresponds to one participant and each dot marks the mean phase \u00b5 for each of the 32 electrodes calculated at the phrase frequency for the adjective\u2013noun (AN) grammatical condition. To show how a given electrode varies across participant, three example electrodes are marked, T7 in green, P4 in orange, and F8 in purple. The right-hand panel shows the distribution of mean phases, \u00b5, across participants.\n\nSince \u00b5 has a uniform prior over the unit circle, it would seem that the correct prior is\n\n$$\n\\mu_{epc}\u223cUniform(\u2212\\pi,\\pi)\n$$\n\nThis is, however, wrong; the ideal distribution is a uniform distribution on the circle, not on the interval, and while the uniform distribution on an interval has the same numerical probability values, it has a different topology. This matters when sampling using an MCMC method. In MCMC, to create the list of samples, referred to as the chain, the sampler moves from sample to sample, exploring the parameter space. In this exploration for \u00b5, if the posterior value is, for example, close to $\\pi$, then the chain should explore the region near to $\\pi$, which includes values near $-\\pi$ in $[-\\pi,\\pi)$. A small change should move the sampler from $\\pi$ to $-\\pi$. However, dynamics on the interval $[-\\pi,\\pi)$ can only get from one to the other by traversing the potentially low-likelihood interval in between. Nothing in the mathematical description of the common MCMC samplers, such as NUTS, prevents the prior from being defined on a circle or other compact region. However, there is a problem: the current high-quality implementations of these methods in do not allow priors over circles.\n\n### Sampling from a circular prior distribution\n\nAs a practical approach to avoiding this difficulty, we introduce a two-dimensional distribution which, in polar coordinates, is uniform in the angle coordinate and in the radial part restricts sampling to a ring around the origin. Because its probability density function resembles the Bundt cake tin, used to make kugelhopf (Hudgins, 2010, see Figure 5B), this will be referred to as a Bundt distribution. The choice of the radial profile of the Bundt distribution is not critical; its purpose is to restrict the samples to a ring: we sample points $(x,y)$ on a plane so that their radius $\u03c1=\\sqrt{x^{2}+y^{2}}$ is drawn from a gamma distribution\n\n$$\n\u03c1\u223cGamma(10,0.1).\n$$\n\n![Figure 5.](https://cdn.elifesciences.org/articles/84602/elife-84602-fig5-v3.jpg)\n\n**Figure 5.:** (A) Example wrapped Cauchy density functions for different values of the scale parameter. (B) The Bundt distribution has a shape reminiscent of a cake made in a Bundt tin. (C) The mean phase is sampled from an axially symmetric prior distribution with a soft constraint on the radius. Highlighted pairs $(x,y)$ give the location of example points; these points correspond to the mean angle for a wrapped Cauchy distribution using $angle\u2062(x,y)$. (D) An example distribution for $S=1-R$ which determines the $\\gamma$ parameter in the wrapped Cauchy distribution. $S$ is related to other parameters such a condition and participant number through a logistic regression, as in Equation 19, the priors for the slopes in the regression are used to produce the distribution shown here; as before, two example points are chosen, each will correspond to a different value of $\\gamma$ in the corresponding wrapped Cauchy distribution. (E) Example wrapped Cauchy distributions are plotted in correspondence with the numbered prior proposals in (C) and (D).\n\ngiving what we will call a Bundt-gamma distribution. This distribution has mean 1 and standard deviation 0.1, giving the golden ring of likely $(x,y)$ values seen in Figure 5C. In fact, the radial values are not used in the model; what is used is the angle:\n\n$$\n\\mu_{pce}=angle(x_{pce},y_{pce})\n$$\n\n### A linear model for the scale of the wrapped Cauchy distribution\n\nThe final element of the model is the prior for $\\gamma$; obviously the intention is to have this depend on the condition. To make our priors easier to interpret, it is convenient to use a link function, first converting from $\\gamma$ to the circular variance $S$:\n\n$$\n\\gamma_{pce}=\u2212log\u2061(1\u2212S_{pce})\n$$\n\n$S$ is bound between 0 and 1, so a second link function is applied\n\n$$\nS_{pce}=\\sigma(\u03c5_{pce})\n$$\n\nwhere $\\sigma\u2062(\u03c5)$ is the logistic function. The quantity $\u03c5_{p\u2062c\u2062e}$ quantifies the effect of participant, condition, and electrode on response. In this model it is linear\n\n$$\n\u03c5_{pce}=\\alpha_{c}+\\beta_{pc}+\\delta_{ce}\n$$\n\nso $\\alpha_{c}$ is understood as quantifying the effect of condition, $\\beta_{p\u2062c}$ the effect of the participant, and $\\delta_{c\u2062e}$ the effect of electrode. In the language of regression, these are slopes. In the case of $\\beta_{p\u2062c}$ and $\\delta_{c\u2062e}$, experimenting with different models has demonstrated a better fit when these are interaction terms, allowing the effect of respectively participant and electrode to be condition dependent.\n\nThus, the main objects of interest are $\\alpha_{c}$, $\\beta_{p\u2062c}$, and $\\delta_{c\u2062e}$, and our result is calculated by sampling the posterior distribution for these quantities. Of course, these quantities also require priors. The obvious place to start is the condition effects ac; because effects are weak in these data, our prior belief is that for any condition the circular variance should be reasonably large, likely bigger than a half. Conversely, the parameters $\\beta_{p\u2062c}$ and $\\delta_{c\u2062e}$ correspond to deviations about the baseline level $\\alpha_{c}$ which can be represented easily using unbounded symmetric distributions. The prior for the slopes $\\beta_{p\u2062c}$ has a hierarchical structure, allowing correlations across conditions; $\\beta_{p\u2062c}$ models the participant response: roughly speaking the idea that a participant who is not paying attention in one condition is likely to be inattentive for all of them. The participants slopes, $\\beta_{p\u2062c}$, were assigned a multivariate $t$-distribution, chosen because its heavy tails give a more robust estimation in the presence of \u2018unusual\u2019 participants: exceptionally strong or exceptionally weak, probably due to lack of attention. This multivariate parameterisation allows for a simultaneous two-way regularisation process due to information sharing both within conditions and across conditions. The idea of self-regularising priors is common in hierarchical Bayesian models and is often referred to as partial pooling (see Gelman et al., 1995 for a review). A similar approach was adopted for the electrode slopes, but with partially pooling only within condition, and not across conditions: testing showed that this was not useful. These priors are described in further detail as part of a full description of the model in the supporting information (see Appendix 1).\n\nAt the moment one disadvantage of Bayesian analysis is that the process of selecting priors is unfamiliar and this might appear intimidating, particularly for experimental scientists hoping to benefit from the approach without being interested in the nitty-gritty of defining priors. Hopefully, as our understanding matures, this process will become both better established and better understood, with good default choices available as suggestions from analysis libraries.\n\n## Results\n\nThe posterior distribution was sampled using the NUTS algorithm implementation in Stan. Four chains were run for 4000 iterations, with half dedicated to a warm up or calibration epoch. Details of the software packages and libraries used can be found in Appendix 2.\n\n### Comparison with ITPC results\n\nThe posterior distributions are described in Figure 6. This figure reprises, using our analysis, the ITPC analysis exhibited in Figure 2. Figure 6A shows a point estimate of the mean resultant length across all frequencies estimated using the optimise function within RStan; as in the earlier figure (Figure 2A), there is a phase peak visible at the phrase frequency 1.5626 Hz for AN, but not for the other conditions.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/84602/elife-84602-fig6-v3.jpg)\n\n**Figure 6.:** (A) The traces show point estimates of the mean resultant length calculated across all 58 frequencies using the optimisation procedure. (B) The marginal posterior distributions for each transformed condition effect $\\alpha_{c}$ are shown with a violin plot. Posteriors over condition differences are given directly above, the colour of which represents the condition against which the comparison is made. For example, the green interval above the adjective\u2013verb (AV) condition describes the posterior difference $AN-AV$. Posterior differences and marginal intervals are all given as 90% highest density intervals (HDIs) marked with posterior medians. (C) Posterior medians are interpolated across the skull for all condition comparisons. Filled circle shows those electrodes where zero was not present in the 95% HDI for the marginal posteriors over the quantity in Equation 22.\n\nFigure 6B represents our attempt to find a way to present the results of Bayesian analysis in a way which resembles as much as possible the \u2018significance difference bracket\u2019 often used in presenting experimental results. At the bottom of Figure 6B, we see the posterior distributions over the mean resultant length for each condition. These posteriors are obtained by transforming posterior samples of the parameter $\\alpha_{c}$, which describes the effect of condition on the response within the regression to circular variance $S_{c}$, as described in Equation 18, then subtracting from one to obtain the mean resultant length.\n\n$$\nR_{c}=1\u2212S_{c}\n$$\n\n\n\n$$\n=1\u2212\\sigma(\\alpha_{c})\n$$\n\nIt appears that the AN condition has a higher value of the mean resultant length than the other five conditions. To examine this further, the upper panel in Figure 6B also shows the 90% highest density intervals (HDIs) and posterior medians of the posterior distribution over the differences between the mean resultant length of all condition pairings. The HDI provides a summary of the full posterior distribution: it is the smallest width interval that contains a specified proportion of the total probability, and here, above the violin plot for each $\\alpha_{c}$, we have plotted the HDI for that condition relative to the other four: this could be considered as a Bayesian equivalent to the confidence brackets common in frequentist plots like Figure 2. Here, only the HDIs that do not overlap zero are the ones corresponding to a difference between AN and another condition: this clearly shows that in our model there is a neural response at the phrase stimulus frequency for AN but not for the other conditions. It appears, for example, that although the MP condition consists of grammatical phrases, the fact that these phrases are of different types means that there does not appear to be a response. This suggests that the neuronal response observed for AN is a response to a specific type of phrase, not to any phrase.\n\nIn Figure 6C, we see the electrode-by-electrode comparisons across conditions. These graphs show a clearer structure than the corresponding ITPC analysis in Figure 2C; there is a left temporal and right parietal response for AN and nothing else. In an attempt to draw a comparison with the headcaps in Figure 2C, we have highlighted the electrodes whose marginal posteriors did not contain zero. This is not a one-to-one comparison: in Figure 2C, no claims of significance can be made about any specific electrode, only the clusters of activity themselves are significant. Here we are presenting evidence given by the Bayesian model based on each marginal distribution and argue that false-positives arising from these 32 comparisons should be reduced by the multivariate machinery of the Bayesian model. In Figure 6C, only a summary of the posterior for each electrode-by-electrode comparison is shown. It is important to note that, in contrast with the ITPC analysis in Figure 2C, the posterior is much more than a point estimate. In Appendix 9, an example of the plausible patterns of activity captured by the posterior distribution for the AN\u2013AV comparison is provided.\n\n### Participant effects\n\nIn Figure 7A, we plot the 90% HDIs for the participant slopes, $\\beta_{p\u2062c}$, for $c=$ AN; more positive values of $\\beta$ correspond to less attentive participants, more negative values correspond to more attentive. These have been arranged in increasing order of $\\beta$ with the participant number $p$ given on the x-axis. From an experimental point of view, this plot gives some reassurance that there is no systematic trend, with participation becoming better or worse as the experiment progressed through participants. Our model includes a condition-dependent standard deviation for the participant response (see Appendix 1); posterior distributions for these standard deviations are plotted in Figure 7B. This appears to indicate that there is more across-participant variation in responses to the MP and ML conditions, where there is a structure but a complicated or confusing one, than to either the highly structured and grammatical AN condition or the RV and RR conditions, with little or no structure at the phrase rate.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/84602/elife-84602-fig7-v3.jpg)\n\n**Figure 7.:** (A) The intervals show participant effects for the grammatical adjective\u2013noun (AN) condition given as 50/90% highest density intervals (HDIs) and posterior medians. (B) The posterior distributions over the standard deviation of participant slopes for each condition. Outer vertical lines mark the 90% posterior HDIs, inner lines mark the posterior median. (C) The skull plot from Figure 6C for the AN\u2013AV difference with electrode names marked. (D) Posterior distributions over electrode differences for those positions on the skull where the grammatical condition shows a higher coherence of phases at the average participant in (C). Intervals give 50/90% HDIs and the posterior medians. AV, adjective\u2013verb.\n\n### Electrode effects\n\nTo investigate the electrode-dependent response, Figure 7C is an enlarged version of the first headcap plot from Figure 6C: the difference in mean resultant between AN and AV. The heatmap colour scale is recalibrated since here it refers only to this one plot. The localisation of the response is seen very clearly. It is difficult to combine a headcap plot and information about the posterior distribution, so the HDI for\n\n$$\n\u0394R_{e}=R_{c_{1}e}\u2212R_{c_{2}e}\n$$\n\nwhere $c_{1}=AN$, $c_{2}=AV$ and\n\n$$\nR_{ce}=1\u2212\\sigma(\\alpha_{c}+\\delta_{ce})\n$$\n\nis plotted for three example electrodes, one electrode from each of the two active areas and one from an area that shows little activity. The response for P4 and T7 is clearly different from zero, indicating that there is a stronger response to the AN condition than to the AV condition at these two electrode. The same HDI analysis for RR versus RN does not show any electrodes whose HDI does not overlap zero; the presumably misleading results for CP5 and FC1 noted in the discussion of ITPC results do not appear here.\n\nIn Figure 2C, we see that even for conditions, such as RR and RV, which contain no linguistic structure at the phase rate, there are patterns of electrode activity in the topographic headcaps. In contrast, the analogous Bayesian headcaps in Figure 6C did not show similar patterns. We used simulated data to investigate whether the Bayesian model is correctly demonstrating that there is no phrase-level response for these conditions, rather than the other possibility: that the beguiling patterns seen in the ITPC headcaps represent a real activity invisible to the Bayesian analysis. In fact, the evidence points to the first alternative; Figure 8 presents evidence that the Bayesian model is more faithful to the data when there is no meaningful variation in electrode effects. Figure 8A shows the real data again; however, whereas previously the headcap was plotted for differences between conditions, here we fit directly to the RR condition. There is no effect visible for the Bayesian headcap, but for the ITPC headcap there are variations that may suggest localised activity, even though this condition does not have any structure at the phrase rate. In Figure 8B, four datasets were simulated from the generative Bayesian model with electrode effects set to zero; other parameters were centred on the posterior means of the ungrammatical AV condition. The four simulations are marked as $1-4$ in the figure. For simplicity, there is only one condition, but in other respects the simulated data mimics the real data: it has 16 participants, 32 electrodes, and 24 trials. These simulations are intended to represent four different iterations of the same experiment; apart from differing in any random numbers, they are identical. The data resulting from these four simulations were fitted with both methods. Evidently, the Bayesian results are much closer to the ground truth. The ITPC results show variations that could easily be misinterpreted.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/84602/elife-84602-fig8-v3.jpg)\n\n**Figure 8.:** (A) Topographic headcaps for the phrase data using the random words condition (RR). When calculating phase coherence using the inter-trial phase coherence (ITPC) for this condition, there is an apparent high but misleading variation in electrodes across the skull. This does not manifest in the Bayesian result due to regularisation of the electrode effects. (B) Data was simulated from the generative Bayesian model four times with electrode effects set to zero to provide a known ground truth. Plots $1-4$ can be thought of as results from four separate experiments. On this simulated data, the ITPC shows variation similar to (A); the Bayesian results are consistent with the ground truth. The ITPC has an upward bias, so in all figures the mean was subtracted for ease of comparison.\n\n### Sampler diagnostics\n\nWhen calculating posteriors using MCMC, it is necessary to check the success of sampling; sometimes it can become stuck in one part of the parameter space (Gelman et al., 1995; McElreath, 2018). Figure 9 plots the standard MCMC diagnostic measures calculated from our posterior samples. There does not appear to have been any problems: the most commonly used measure of the success of sampling is $R^$, often referred to as R-hat. This is a measure of convergence that compares the means and variances of chains; ideally it would be 1.0, but typically a value of <1.05 is considered acceptable and <1.02 desirable. Here, all values of R-hat are <1.006, indicating good mixing; values are plotted in Figure 9A; Figure 9C plots the chains for the parameter with the largest R-hat value for each parameter type; none of these plots appear to show the sort of pathological behaviour associated with poor sampling, and chains are both stationary and convergent. Another measure of sampling success, the comparison of marginal and transitional probabilities of the Hamiltonian, is exhibited in Figure 9B; this also indicates good sampling. See Appendix 2 for a note on tree depth warnings.\n\n![Figure 9.](https://cdn.elifesciences.org/articles/84602/elife-84602-fig9-v3.jpg)\n\n**Figure 9.:** (A) The performance of the sampler is illustrated by plotting $R^$ (R-hat) against the ratio of the effective number of samples for each parameter in the model. Points represent individual model parameters grouped by colour with a different colour for each parameter type. For convenience, the dot sizes are scaled, so the more numerous parameters have smaller dots, the less numerous, fewer, so, for example, $\\alpha_{c}$ with only six examples, is large. (B) A histogram comparing the marginal energy distribution $\\pi_{E}$, and the transitional energy distribution $\\pi_{\u0394\u2062E}$ of the Hamiltonian. (C) Post-warmup trace plots. All four chains for the poorest performing parameter within each parameter group are overlaid. Corresponding points in (A) are marked with a black border and zero transparency.\n\n### Case study: Statistical learning for an artificial language\n\nAs for the phrase data in Figure 2, we perform a standard ITPC analysis at the group level for this dataset. In Figure 10A, we replicate the original statistical analysis in Pinto et al., 2022 with a one-tailed t-test for each frequency. Since ITPC is bounded by zero and one, it cannot be normally distributed, so we also present the results of a Wilcoxon signed-rank test. There is a strong response at the syllable frequency (4 Hz) for both the BL and EXP conditions; however, statistical tests give complicated results. A small increase in coherence can be observed at the pseudoword rate (1.33 Hz) and an even stronger one at the second harmonic (5.33 Hz). No significant difference was observed between BL and EXP at the first harmonic (2.66 Hz), although four participants showed a considerable increase in coherence at this frequency, exceeding values $1.5*IQR$ above the 75th percentile of the data.\n\n![Figure 10.](https://cdn.elifesciences.org/articles/84602/elife-84602-fig10-v3.jpg)\n\n**Figure 10.:** (A) ITPC averages across all trials and electrodes for each of the 39 participants. We replicate the statistical procedure as stated in Pinto et al., 2022 of paired one-sided test of a greater ITPC mean of experimental condition (EXP) at the pseudoword rate (1.33 Hz) and its first and second harmonics (2.66 Hz, 5.33 Hz). A one-sided test for a larger ITPC value of the baseline condition (BL) at the syllable rate is also performed. Significance values on the specified test results of an uncorrected paired Wilcoxon signed-rank test (left) and an uncorrected paired t-test (right). (B) Statistically significant clusters of electrodes were found using a cluster-based permutation test between these two conditions at 4 Hz and 5.33 Hz.\n\nThe headcaps in Figure 10B present the condition-to-condition difference in ITPC at each electrode averaged across participants (Equation 3) and interpolated across the skull. We used cluster-based permutation testing to identify significant clusters of activity that describe the differences in average electrode response between conditions. No significant clusters of activity were found at the pseudoword frequency or its first harmonic; however, a stronger mid-to-frontal cluster appears at the second harmonic, suggesting a larger ITPC of electrodes in EXP compared to BL. A significant cluster of activity also appears at the syllable rate and describes an opposite effect of condition: frontal electrodes have a larger ITPC for BL compared to EXP.\n\n#### Bayesian analysis\n\nThe model was fit separately for each frequency using four chains sampling for 2000 iterations each, with half of these attributed to the warmup phase. No divergent transitions were detected during sampling, and convergence diagnostic $R^<1.03$. The posteriors over the difference in mean resultant length for each frequency are shown in Figure 11A. Despite a preference of the posterior at the pseudoword rate to prefer values greater than zero, there are some values in the left tail consistent with no difference. From the summary statistics of the posterior differences in Table 1, we can calculate that zero is approximately 1.6 standard deviations from the posterior mean.\n\n![Figure 11.](https://cdn.elifesciences.org/articles/84602/elife-84602-fig11-v3.jpg)\n\n**Figure 11.:** (A) Posterior distributions over the condition difference $EXP-BL$ are shown for all frequencies of interest. In each case, the full posterior is given by the histogram and is annotated by its 90% highest density interval (HDI) and posterior median. (B) Marginal posterior distributions over the mean resultant length for each condition and frequency of interest. (C) Posterior means for the difference $EXP-BL$ at each of the 64 electrodes are interpolated across the skull. Filled circles label those electrodes where zero was not contained by the 95% HDI calculated from the quantity in Equation 22.\n\n**Table 1.**\n Summary of posterior values for the statistical learning dataset.All values are rounded to three decimal places. The difference shown is EXP-BL. HDI: highest density interval.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Frequency (Hz)</th>\n      <th>Mean</th>\n      <th>Median</th>\n      <th>SD</th>\n      <th>90% HDI</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>1.33</td>\n      <td>0.016</td>\n      <td>0.016</td>\n      <td>0.010</td>\n      <td>[0.001, 0.032]</td>\n    </tr>\n    <tr>\n      <td>2.66</td>\n      <td>0.000</td>\n      <td>0.000</td>\n      <td>0.009</td>\n      <td>[\u20130.014, 0.015]</td>\n    </tr>\n    <tr>\n      <td>4</td>\n      <td>\u20130.025</td>\n      <td>\u20130.025</td>\n      <td>0.016</td>\n      <td>[\u20130.052, 0.000]</td>\n    </tr>\n    <tr>\n      <td>5.33</td>\n      <td>0.030</td>\n      <td>0.030</td>\n      <td>0.009</td>\n      <td>[0.016, 0.046]</td>\n    </tr>\n  </tbody>\n</table>\n\nIf we are interested in the full extent of the posterior distribution, it would be more appropriate to calculate the total probability associated with any value of the parameter that supports it. For example, we can calculate from posterior samples that $P(\u0394R>0|y)\u22480.956$. This analysis indicates that there is no strong evidence for a large difference in expectation between conditions at the pseudoword frequency, but it is plausible that a difference exists. The first harmonic of the pseudoword rate clearly demonstrates no difference between the experimental groups. The posterior is peaked symmetrically around a mean of zero and has low variance. The second harmonic shows the largest difference between the groups; zero is approximately 3.24 standard deviations away from the mean. Consistent with the ITPC analysis, the results at the syllable frequency also show BL as having a larger value than EXP. In this case, zero lies approximately 1.59 standard deviations from the mean.\n\nPosterior means at each electrode for the same difference are shown in Figure 11B. As before, filled points are those electrodes where the 95% HDI of the marginal posterior over the condition difference does not contain zero. In line with the ITPC analysis for the pseudoword frequency, and its first harmonic (Figure 10B), there is no evidence to suggest any localised patterns of activity occurring in either condition by the Bayesian model. A strong result appears for the second harmonic; according to the Bayesian result, every electrode has a higher mean resultant length in EXP compared to BL. At the syllable rate, a frontal response is discovered; this also reprises the findings from the ITPC analysis.\n\nThe Bayesian results give evidence of statistical learning in the second harmonic of the pseudoword frequency; however, results for the pseudoword frequency are not so strong as to rule out no difference entirely. It appears that the strength of conclusions to be made is limited by some participants demonstrating an opposite effect. In Appendix 8, we plot the posterior distribution over the EXP-BL comparison at each frequency and for each participant. In the strongest result, 5.33 Hz, the majority of participants show an increased response in EXP. However in 2.33 Hz and 1.33 Hz, the number of participants that show an opposite effect of condition to those that do not is much more even. In Pinto et al., 2022, it is suggested that evidence of SL is difficult to find in individual participants. The high variance of participant posteriors both within and across frequencies supports this conclusion.\n\n### Simulation study\n\nIn this article, we have tried to concentrate on real experimental data: real data often has characteristics and irregularities that are hard to reproduce using fictive data. In our approach here, we have been fortunate that there are datasets which have already been analysed using other, more traditional methods, allowing us to test our method in a situation with something akin to ground truth. Nonetheless, it is useful to also explore the characteristics of our method on fictive data; using fictive data allows us to manipulate effect sizes and the amount of data and contains a ground truth, albeit one located in the perhaps too regular a context provided by simulated data generation.\n\nThe Bayesian model reduces bias in the estimation of $R$. If $R_{i}$ is the true value of the mean resultant length for a condition $i$, then $R\u00af_{i}$, as calculated by the formula for ITPC (Equation 2), is a positively biased overestimate of this quantity (Kutil, 2012). In a simulation study, we demonstrate that our Bayesian model reduces bias in the estimation of this quantity compared to a typical ITPC analysis. We sampled R1 and R2 as ground truth mean resultant lengths for two fictive conditions uniformly over the interval $[0,1]$ by replacing the Beta distribution, which described an explicit prior assumption, with a uniform distribution (see Equation 35). We then use this modified model to generate fictive datasets with different numbers of participants and trials over the sampled ground truth values R1 and R2. The estimation bias in each dataset was then analysed with both the ITPC and Bayesian approaches.\n\nFigure 12A plots the result of this study for fictive datasets of 5 participants, 10 trials, and 8 electrodes. Each point on the graph is a summary of the performance of each method on its estimation of the true difference in mean resultant length. The $x$ axis gives the absolute value of the true difference, and the $y$ axis gives the ratio of the estimated difference and the true difference:\n\n$$\nratio of difference=\\frac{R\u00af_{1}\u2212R\u00af_{2}}{R_{1}\u2212R_{2}}\n$$\n\n![Figure 12.](https://cdn.elifesciences.org/articles/84602/elife-84602-fig12-v3.jpg)\n\n**Figure 12.:** (A) The Bayesian model has a higher true detection rate for lower participant numbers. The bias of the estimate is also greatly reduced by the Bayesian model. As the real difference increases along the x axis, the variation in model estimates reduces in both methods; however, the distribution of these points around $y=1$ is much more symmetric for the Bayesian model; this result highlights its bias reduction. The y axis has been restricted to help highlight the behaviour of interest. (B) Simulation-based calibration for the same participant and trial numbers where the rank of $\u0394\u2062R$ is analysed. There is no evidence to suggest a tendency of the Bayesian model to overestimate or underestimate the difference.\n\nAny systematic deviation from the ideal value of 1 implies a bias in the estimation. Such a trend is present with the ITPC estimation but reduced in the Bayesian one.\n\nUsing the same simulated datasets, we looked at how well each method detects a real difference in the mean resultant length. In Figure 12A, points are coloured orange when a difference is correctly detected by the method (zero lies outside the 95% HDI for Bayes, p<0.05 for the ITPC using a paired two-tailed Wilcoxon signed-rank test). The Bayesian model can detect a real difference in mean resultant length for smaller participant numbers. Interestingly, even after a doubling of the number of trials for the same participant number, a difference still cannot be detected by the statistical test: see Appendix 5 and Appendix 6 for the comparison of true-positive and false-positive rates on simulated data between both methods.\n\nWe used simulation-based calibration (SBC) (Talts et al., 2018) to demonstrate the calibration of our model. SBC is primarily an algorithm for unit-testing a Bayesian model and is used to provide a visual proof that the model \u2013 and its geometry \u2013 are not so complex that the sampling algorithm, on average, cannot sample from it without providing a dishonest description of parameters in the posterior. We can use this method to show that our Bayesian model does not provide a biased estimation of $\u0394\u2062R$ arising from systematic overestimates or underestimates of $R\u00af$.\n\nChecks for calibration using SBC require that the histogram of rank statistics produced by the algorithm is demonstrably uniform. Figure 12B gives the straightforward histogram of rank statistics and the quantiles containing 99% of the total variation we expect of a true uniform distribution estimated from a finite sample size (details are provided in Appendix 7). The histogram gives no indication of behaviour deviating from a uniform distribution in specific bins or by a more general trend such as a sloping histogram of ranks. Smaller deviations can be hard to detect using this approach, so a second, more sensitive approach is recommended (Talts et al., 2018). The second plot shows the difference between the empirical cumulative distribution function (ECDF) for a uniform distribution and the ECDF estimated from the histogram of rank statistics. The area containing the variability expected of the difference between the uniform ECDF and uniform CDF is shaded. Even with this more sensitive approach no deviation from permissible variation is present. From this result, we can be confident that under its generating process the Bayesian model does not provide a biased estimate of $\u0394\u2062R$.\n\n## Discussion\n\nHere, we have presented a Bayesian description of phase data using examples from neurolinguistics. Our approach reprises the original conclusions of the statistical analysis of these data, but, we believe, does so in a more expressive and more natural way. Our account focuses on neurolinguistics, where frequency tagging is common, and we use specific neurolinguistic examples: an example with which we are familiar and for which data is openly available (Burroughs et al., 2021), and an example from a recent study that investigated the presence of statistical learning for an artificial language (Pinto et al., 2022). However, we believe that our approach has broad application across the multiple applications of frequency tagging. Bayesian analysis is, essentially, a more modest approach to data than the more commonly used frequentist analysis: where a frequentist approach seeks to establish with significant certainty whether a hypothesis is true or false, perhaps also using Bayes factors to quantify evidence for a particular hypothesis using a discrete set of models, in a Bayesian analysis we restrict ourselves to the more achievable goal of estimating the values of parameters in a model of the data and calculating our certainty or uncertainty in making those estimates.\n\n### Model extensions\n\nThe resemblance of a logistic regression for the scale of the wrapped Cauchy allows the model to be easily adjusted to include other terms typical of a linear model. For example, the statistical learning dataset (Pinto et al., 2022) records from participants in blocks. One extension to the model would be to include an additional term to capture any block effects; alternatively it could also be implemented as an interaction between block and condition.\n\nIt is clear from the ITPC headcaps in both analyses that electrodes have spatial correlation. The datasets used in the analyses have been relatively large, both in terms of participants and trials; this has been an important factor in helping the Bayesian model, and the ITPC, resolve activity patterns across the skull. However, for smaller datasets this is not a guarantee. An extension to the model would incorporate prior knowledge about electrode locations, modifying the current independent approach to one that encodes a correlated response between neighbouring electrodes. An initial starting point would be a multivariate normal with a correlation matrix calculated using an appropriate kernel function, such as an exponentiated quadratic, applied to a 2/3D distance matrix of electrode locations.\n\nThe statistical learning dataset (Pinto et al., 2022) differs from the phrase dataset (Burroughs et al., 2021) as effects of condition also appear in the harmonics of the main frequency. In the Bayesian analysis we presented, each harmonic is fitted independently of each other. However, if a response is expected at a selection of harmonics of the baseline, then a model that jointly handles these frequencies would be potential avenue for improvement, especially for smaller datasets where information sharing between dependent parameters is a powerful tool for obtaining better estimates.\n\n### Data efficiency\n\nThe Bayesian approach also appears to make more efficient use of the data. In order to investigate the data efficiency of the frequentist and Bayesian approaches, we used the phrase data (Burroughs et al., 2021) and simulated the result we would have had if the experiment had been stopped early, with fewer participants. It can be misleading to directly compare frequentist and Bayesian results; the aims of the two approaches are different. Nonetheless, we have done just that. In Figure 13A, we plot the confidence intervals arising from the two-sided paired Wilcoxon signed-rank test alongside the HDIs from the posterior distribution for decreasing participants numbers. This is produced by removing participants from the data starting with the last recorded. It shows that the posterior still points to a real difference of condition in cases where the low participant number causes the frequentist confidence interval to overlap with zero and fail. The width of these intervals is derived from the critical values outlined below. In Figure 13B, we plot the p-value produced by the same test, and the corresponding probability, calculated from the posterior, of observing a difference less than zero. We also mark the lines for $\\alpha=0.1$, $\\alpha=0.05$, and $\\alpha=0.003$; these correspond to the critical values in an uncorrected one-sided test, an uncorrected two-sided test, and a two-sided test in which a Bonferroni correction of $C\u2062(6,2)$ is used to correct for multiple comparisons across the six phrase conditions. We are not advocating for any of these $\\alpha$ values, and the uncertainty in deciding an appropriate value of $\\alpha$ plagues frequentist approaches. Interestingly, when both participants 15 and 16 are removed from the data, leaving 14 participants, the p-value increases by a factor of approximately 2 ($n=15$: 0.005, $n=14$ : 0.011). Figure 7A can explain this result: the posteriors for $\\beta$ show that participant 15 performs better on the task than participant 16, so removing participant 15 from the analysis weakens the result more than removing participant 16.\n\n![Figure 13.](https://cdn.elifesciences.org/articles/84602/elife-84602-fig13-v3.jpg)\n\n**Figure 13.:** (A) Confidence intervals arising from a two-sided paired Wilcoxon signed-rank (left), alongside Bayesian highest density intervals (right), calculated for the condition difference AN-RR in the phrase dataset. The intervals give widths 90/95/99.7% for each method respectively. (B) The p-value arising from the same significance test (left) compared with the probability of observing a value less than zero by the posterior distribution (right).\n\nFigure 14 is similar to Figure 13; however, it uses the statistical learning dataset (Pinto et al., 2022), comparing conditions BL and EXP at the frequency 5.33 Hz. In fact, for these data we saw little evidence that the Bayesian approach works better when the number of participants is reduced: we attribute this to the large number of trials; generally the extra efficiency of a Bayesian approach appears most apparent in low data regimes and the statistical learning dataset is admirably well sampled. For this reason, we used this dataset to investigate data efficiency when the number of trials is reduced for a fixed number of participants. In Figure 14, data from the first 20 participants are considered and the analysis is repeated with different numbers of trials, discarding trials from the end. It is clear from Figure 14A that the Bayesian model can reliably detect the signal in the data with at least half the number of trials that the frequentist approach requires; this is potentially useful especially because of the challenge semantic satiation poses to some neurolinguistic experiments. Figure 14B compares the p-values arising from the significance test with $P(\u0394R<0)$ calculated from the posterior and shows the fast convergence of the posterior to the signal; the p-value is much slower and also more variable across trials. For these analyses regarding data efficiency, the degrees of freedom parameter $\u03bd$ was fixed to 30 to address divergent transitions arising for small participant numbers. HDIs were calculated from 8000 posterior samples.\n\n![Figure 14.](https://cdn.elifesciences.org/articles/84602/elife-84602-fig14-v3.jpg)\n\n**Figure 14.:** (A) Confidence intervals arising from a two-sided paired Wilcoxon signed-rank (left), alongside Bayesian highest density intervals (HDIs) (right), calculated for the condition difference EXP-BL in the statistical learning dataset. The intervals are given for confidence levels of 90 and 95%. On the right are the HDIs for the same levels. (B) The p-value arising from the significance test (left) compared with the probability of observing a value less than zero by the posterior distribution (right).\n\nThrough simulation we have shown that for lower participant numbers there is evidence that the Bayesian model can detect a true difference more quickly. Similarly, if you have many participants but few trials the Bayesian model also provides a benefit. The probability of making a type 1 error also appeared markedly reduced when using the Bayesian approach for a range of data sizes. Together, these promote the adoption of the Bayesian approach to analysing phase data, especially in studies where data is limited, such as pilot studies, where findings influence the direction of subsequent research.\n\nIt may appear that our motivation is contradictory; we first explain that frequency-tagging produces robust encephalography results, but then explain that a new framework is required to analyse these results because they are often too noisy to study using a na\u00efve power analysis. Of course, there is no contradiction; the encephalographic study of cognitive phenomena like language demands both a robust experimental paradigm and a cutting-edge analysis pipeline!\n\n### EEG data can benefit from a Bayesian analysis\n\nThe Bayesian approach we have advanced in this article is undoubtedly much more computationally demanding than a frequentist approach; it also demands some thought and experiment in the formulation of the model and its priors. Frequency tagging is, in this regard, a particularly demanding application of the approach. However, we believe that the clarity of a Bayesian description and the complete way it presents the model and its evidence, along with the great data efficiency it provides, make it superior. Some of the complexity of our approach derives from the difficulty of sampling a circle, and we hope this example will be helpful in incorporating compact distributions into the standard probabilistic packages such as Stan and Turing.\n\nIn general, Bayesian models become worth the effort in scenarios with two properties: (1) where the data are limited and noisy, so statistical uncertainty is high and therefore worth representing explicitly; (2) where the dataset has a strong structure, which the Bayesian model can be designed to match and therefore share information across parameters. For these reasons, we also believe that similar Bayesian approaches will have broad application to EEG data. The nature of EEG data, its noisiness high-dimension, and the tendency to small participant numbers make it likely that Bayesian methods will be helpful. This certainly is evident in the preliminary work report in Turco and Houghton, 2022.\n",
+      "created_at": "2025-12-04T03:15:05.064870Z"
+    },
+    {
+      "id": "5d06aa24-17b7-4705-bfb7-840455afd082",
+      "submission_id": "aeb0ccca-6f6f-4d14-ba81-e2adad05908a",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Andrea E Martin, https://ror.org/00671me87 Max Planck Institute for Psycholinguistics Netherlands\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.84602.sa0](https://doi.org/10.7554/eLife.84602.sa0)\n\nThis important work advances the available statistical methods for estimating the degree to which the neural response is phase-locked to a stimulus. It does so by taking a compelling Bayesian approach that leverages the circular nature of the phase readout and demonstrates the added value of the approach in both simulated and empirical datasets.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Andrea E Martin, https://ror.org/00671me87 Max Planck Institute for Psycholinguistics Netherlands\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.84602.sa1](https://doi.org/10.7554/eLife.84602.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Bayesian analysis of phase data in EEG and MEG\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by Reviewing Editor Andrea Martin and Senior Editor Joshua Gold. The following individual involved in the review of your submission has agreed to reveal their identity: Benedikt Zoefel (Reviewer #2).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1) All reviewers agree that a more extensive quantitative demonstration of the advantages of your methodological approach compared to existing approaches is needed. For example, first, quantifying the advantage of your analysis over the ITPC analysis in the manuscript would be more convincing than the current graphical approach.\n\nFurthermore, it seems that using a simulation approach could be helpful. Simulation of common experimental and data situations, as well as extreme or tough cases where traditional methods run into problems (but your method does not, or is more robust), could be persuasive and help make the impact of the approach more demonstrable and quantifiable.\n\n2) Comparison of data \u2013 More thorough and extensive quantitative comparison of the performance of your method compared to existing approaches, as all Reviewers mention, could be carried out on multiple (open) datasets of various sample sizes.\n\n3) Reviewer 3 gives helpful concrete suggestions and concerns regarding the impact of this method for statistical inference (viz., mixed models). These, too, need to be addressed, ideally also quantitatively, but could also be addressed formally/mathematically.\n\n4) Reviewer 1 helpfully explains how the perspective of experimentalists needs to be taken into approach in order for the work to have more impact. Similar to (3) above.\n\nReviewer #1 (Recommendations for the authors):\n\nThe study by Dimmock et al. proposes a Bayesian approach to measuring phase coherence. Although I'm familiar with the kind of EEG data analyzed here, I didn't figure out the purpose of the study. It seems like the aim of the study is neither to provide a more powerful statistical test nor to demonstrate some new neural phenomena. The only purpose seems to provide a Bayesian test, but why do we want it?\n\nIf the aim is to provide a more powerful test, it should be compared to classic tests for steady-state responses, such as the ones described in the following article.\n\nPicton, Terence W., et al. \"The use of phase in the detection of auditory steady-state responses.\" Clinical Neurophysiology 112.9 (2001): 1698-1711.\n\nThe current article is certainly not written in a way that can be understood by an experimentalist. It doesn't matter too much if the methods are hard to follow, but it does matters if no interpretable results are shown. For example, the authors argue that the topographic plots using the new method have a clearer structure than the traditional ones. As an experimentalist, however, I can't figure out which structure is clearer and why it helps to answer scientific questions.\n\nAs a methodological paper, testing the method on multiple datasets is a basic requirement. More importantly, the method has to have a clear goal and clearly demonstrate how the goal is achieved.\n\nReviewer #2 (Recommendations for the authors):\n\nThis paper presents a novel Bayesian approach to testing for phase coherence in neurophysiological recordings. The approach is centred on probability distributions and therefore allows for more fine-grained conclusions about the existence of such phase consistency, in contrast to the often artificial yes/no decision on the acceptance of the alternative hypothesis that can be found in the literature.\n\nI find this manuscript well written and the rationale well explained. The authors demonstrate that their approach can produce similar, but potentially clearer and less noisy results as compared to more commonly applied techniques (such as inter-trial coherence). It remains difficult to quantify differences between the two approaches (Bayesian vs frequentist) \u2013 for instance, the authors write that \"these graphs [from Bayesian analysis] show a clearer structure than the corresponding ITPC analysis\" without providing a quantification of the difference.\n\nTogether, this paper will be useful to the community, possibly opening up new ways of analysing phase-locked neural responses.\n\nReviewer #3 (Recommendations for the authors):\n\nThis paper proposes a Bayesian take on the inter-trial phase coherence (ITPC) used to estimate how consistent the oscillatory phase is across trials for a given condition of interest. For standard ITPC the statistical power of the comparisons on the group level is determined by the sample size of the dataset since estimates are derived by first averaging across trials to derive a single condition-level estimate per subject. The advantage of the proposed Bayesian approach is that the resulting model is more robust as it is estimated from the trial level without averaging. It also allows us to derive subject-level estimates (slopes) and explore subject-variable noise. The authors illustrated this by replicating the ITPC analysis from the paper by Burroughs et al. (2021a) using the Bayesian ITPC and demonstrating perceivable noise reduction in the resulting estimates across frequencies and topographical EEG plots. Another key advantage of this method, as illustrated by the authors, is the ability to generate stable estimates for much smaller EEG datasets. While the authors show that Bayesian ITPC can replicate the findings obtained with the standard ITPC, it is not clear what advantages the proposed Bayesian approach offers over other previously proposed methods that allow for trial-level modelling such as linear mixed effects modelling. Secondly, a broader and more accessible description of the steps of the model settings, estimation, and the derivation of the summary statistics should be provided to enable the reader to replicate this method for their own dataset\n\nAbstract\n\n1) lines 12-17 please consider re-phrasing as the message here is not very clear. Please be more specific (based on your analysis findings) what Bayesian approach to coherence contributes more than the traditional one? 'More descriptive' and 'data-efficient' are vague descriptions.\n\nIntroduction\n\n2) Lines 26-44. Here to help the readers I would recommend communicating your main point early in the paragraph \u2013 that measurement of coherence is an important methodological tool in M/EEG research that is used to answer a wide variety of scientific questions, yet there is room for improvement in how ITPC is estimated.\n\n3) Line 84 \u2013 'this plots', instead of 'this graphs'\n\n4) Lines 96-107 \u2013 the main message from this section is not clear. Do authors argue that in the per-electrode ITPC approach the Bonferroni correction for multiple comparisons precludes finding meaningful spatial patterns in the data? In such cases, Bonferroni is rarely used, and spatial cluster-based permutation is a typically used approach that is less conservative and allows the finding of significant clusters of spatially connected electrodes.\n\n5) Lines 126-128 \u2013 please unpack a bit more what is meant by 'a better description of the data' and 'a narrative phrased in terms of models and their consequence'.\n\n6) Line 161 \u2013 here you mean Figure 4?\n\nMethods section\n\n7) Authors provide a detailed explanation and mathematical descriptions for the distributions from which the phase data can be modelled, and parameters are sampled when building up a Bayesian model of the ITPC. The supplementary materials then detail equations behind the full model used. Yet from these two sources of information, it is challenging for the reader to reconstruct the set of steps authors took to derive the results they plot in Figure 5. If the aim of the paper is to have the reader use the Bayesian approach to ITPC for their own datasets a more accessible step-by-step description of the model estimation is necessary \u2013 from calculating participant and electrode slopes/estimates to averaging steps used to produce Figure 5. This can be done by expanding relevant sections in the Methods.\n\n8) Other methods such as Linear mixed models that likewise allow trial-level analysis and model subject slopes have been broadly applied to the EEG data and also ITPC. To increase the contribution of this paper, authors need to outline and demonstrate analytically the advantages of the Bayesian approach over these other non-Bayesian methods.\n\nDiscussion section\n\n9) The section Model design choices seem to belong in the Results and not the Discussion section.\n\n10) The Data efficiency section is very helpful in demonstrating the advantage of the Bayesian approach for smaller datasets. This section can be expanded by demonstrating further key advantages of the Bayesian approach over other non-Bayesian methods that use a trial-level approach (as proposed in point 8).\n\n[Editors\u2019 note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Bayesian analysis of phase data in EEG and MEG\" for further consideration by eLife. Your revised article has been evaluated by Joshua Gold (Senior Editor) and a Reviewing Editor.\n\nThe manuscript has been improved but there are some remaining issues that need to be addressed, as outlined below:\n\nReviewers 2 and 3 are satisfied with your revisions, however, given that eLife works on consensus and the fact that Reviewer 1 is not satisfied with a major concern of theirs from the first round of review, we ask that you directly address Reviewer 1's queries thoroughly. This includes those concerns regarding interpretability for experimentalists, and specifically, that you compare your method to the classic tests for steady-state responses as the Reviewer suggests. Please pay close attention to each of Reviewer 1's queries and address them in full.\n\nReviewer #1 (Recommendations for the authors):\n\n1. The authors did not address my all my comments and I copied them here.\n\nIf the aim is to provide a more powerful test, it should be compared to classic tests for steady-state responses, such as the ones described in the following article.\n\nPicton, Terence W., et al. \"The use of phase in the detection of auditory steady-state responses.\" Clinical Neurophysiology 112.9 (2001): 1698-1711.\n\nThe current article is certainly not written in a way that can be understood by an experimentalist. It doesn't matter too much if the methods are hard to follow, but it does matter if no interpretable results are shown. For example, the authors argue that the topographic plots using the new method have a clearer structure than the traditional ones. As an experimentalist, however, I can't figure out which structure is clearer and why it helps to answer scientific questions.\n\n2. I'm glad that the authors included a new dataset in the analysis. However, as an experimentalist, I still cannot see why the new method outperforms the traditional ITPC analysis in the newly added experiment. For the session \"Case study \u2013 statistical learning for an artificial language\", we need at least a few conclusions, explicitly stating whether the new method or the traditional method gives a more reasonable result and why.\n\n3. Simulation is also important. However, I can't really understand the \"Simulation study\" section. What is exactly R1 or R2? Why do we care about the bias? A more helpful simulation is probably just to simulate the time-domain EEG signal (e.g., using sinusoids and noise) and demonstrate that the new method, e.g., can yield statistical significance with fewer subjects.\n\n\"We then use this modified model to generate fictive datasets with different numbers of participants and trials\", but where are the results? It seems like Figure 11 does not show how the results change with the number of participants and trials.\n\nFor the new section on \"Data efficiency\", why just one dataset and why only 4 participants? Testing two datasets and all possible numbers of participants are minimal requirements. Also, as an experimentalist, I really cannot understand what is shown in Figure 12.\n\n4. \"the power is not a useful measure. Instead, the typical approach to frequency-tagged data for cognitive tasks is to use the inter-trial phase coherence.\" In fact, most of the studies cited in the introduction used power rather than phase analysis.\n\n5. \"The Bayesian approach is more descriptive than traditional statistical approaches: it is a generative model of how the data arises and each component is interpretable and informative about data characteristics.\"\n\nIt's great. But why is the method more interpretable? Could you please summarize it in a way that can be understood by experimentalists?\n\n\"It is also more data-efficient: it detects stimulus-related differences for smaller participant numbers than the standard approach.\"\n\nHow is this demonstrated in the two datasets? Is there a guideline about how many participants can be saved using the new approach?\n",
+      "created_at": "2025-12-04T03:15:05.064870Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T03:15:05.064870Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T03:15:05.064870Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "4b3d2efb-6dfe-4c29-883d-e0de71d09337",
+      "content_id": "3ff358bf-c6bc-4e0e-9353-4fa467f4409d",
+      "claim_id": "C1",
+      "claim": "Electroencephalography and magnetoencephalography recordings are non-invasive and temporally precise.",
+      "claim_type": "EXPLICIT",
+      "source": "Electroencephalography and magnetoencephalography recordings are non-invasive and temporally precise, making them invaluable tools in the investigation of neural responses in humans.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known property of EEG and MEG in the abstract.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:15:05.064870Z"
+    },
+    {
+      "id": "bca7f6ab-88ca-4fbd-90ba-126ca0acab1c",
+      "content_id": "3ff358bf-c6bc-4e0e-9353-4fa467f4409d",
+      "claim_id": "C2",
+      "claim": "EEG and MEG recordings are noisy because the neuronal electrodynamics involved produces a muffled signal.",
+      "claim_type": "EXPLICIT",
+      "source": "However, these recordings are noisy, both because the neuronal electrodynamics involved produces a muffled signal and because the neuronal processes of interest compete with numerous other processes, from blinking to day-dreaming.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an explanation for the noisiness of EEG/MEG recordings.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:15:05.064870Z"
+    },
+    {
+      "id": "d1167c45-781f-49cb-9ced-a1efafce94b0",
+      "content_id": "3ff358bf-c6bc-4e0e-9353-4fa467f4409d",
+      "claim_id": "C3",
+      "claim": "EEG and MEG recordings are noisy because neuronal processes of interest compete with numerous other processes.",
+      "claim_type": "EXPLICIT",
+      "source": "However, these recordings are noisy, both because the neuronal electrodynamics involved produces a muffled signal and because the neuronal processes of interest compete with numerous other processes, from blinking to day-dreaming.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an explanation for the noisiness of EEG/MEG recordings.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:15:05.064870Z"
+    },
+    {
+      "id": "4427d9a5-88d3-41f4-b01f-6e12240bb8f4",
+      "content_id": "3ff358bf-c6bc-4e0e-9353-4fa467f4409d",
+      "claim_id": "C4",
+      "claim": "Frequency-tagged stimuli allow looking for the signal of interest in the response at that frequency.",
+      "claim_type": "EXPLICIT",
+      "source": "One fruitful response to this noisiness has been to use stimuli with a specific frequency and to look for the signal of interest in the response at that frequency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the frequency-tagging approach as a method to address noisiness.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:15:05.064870Z"
+    },
+    {
+      "id": "2904db7c-6d59-445d-9438-4a7d9a0c699b",
+      "content_id": "3ff358bf-c6bc-4e0e-9353-4fa467f4409d",
+      "claim_id": "C5",
+      "claim": "The Bayesian approach provides an explicit, interpretable generative model of how the data arises.",
+      "claim_type": "EXPLICIT",
+      "source": "We suggest that the Bayesian approach is more descriptive than traditional statistical approaches because it provides an explicit, interpretable generative model of how the data arises.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim made by the authors about their Bayesian approach.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:15:05.064870Z"
+    },
+    {
+      "id": "3d551d09-1eaa-4ab5-bccb-95568a273cdd",
+      "content_id": "3ff358bf-c6bc-4e0e-9353-4fa467f4409d",
+      "claim_id": "C6",
+      "claim": "The Bayesian approach is more data-efficient than the standard approach.",
+      "claim_type": "EXPLICIT",
+      "source": "It is also more data-efficient: it detects stimulus-related differences for smaller participant numbers than the standard approach.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim made by the authors about their Bayesian approach, supported by simulation studies shown in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:15:05.064870Z"
+    },
+    {
+      "id": "d35f595a-845d-4b83-9b83-54247ce1ce73",
+      "content_id": "3ff358bf-c6bc-4e0e-9353-4fa467f4409d",
+      "claim_id": "C7",
+      "claim": "Frequency tagging provides a more robust response than the typical event-related potential paradigm.",
+      "claim_type": "EXPLICIT",
+      "source": "This provides a more robust response than the typical event-related potential (ERP) paradigm because the response the brain makes to the stimuli occurs at the predefined stimulus frequency while noise from other frequencies, which will correspond to other cognitive and neurological processes, does not contaminate the response of interest.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known advantage of frequency tagging.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:15:05.064870Z"
+    },
+    {
+      "id": "7b3d4c36-ee74-4241-af09-b969e81e3216",
+      "content_id": "3ff358bf-c6bc-4e0e-9353-4fa467f4409d",
+      "claim_id": "C8",
+      "claim": "Frequency tagging is a well-established tool in the study of vision, often referred to as the steady-state visual-evoked potential.",
+      "claim_type": "EXPLICIT",
+      "source": "Frequency tagging is a well-established tool in the study of vision, where it is often referred to as the steady-state visual-evoked potential (Regan, 1966).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Regan, 1966.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:15:05.064870Z"
+    },
+    {
+      "id": "e8e1b129-669b-4cd1-96c2-a39bbdcd57a8",
+      "content_id": "3ff358bf-c6bc-4e0e-9353-4fa467f4409d",
+      "claim_id": "C9",
+      "claim": "Frequency tagging was initially used to study low-level processing and attention.",
+      "claim_type": "EXPLICIT",
+      "source": "At first, it was predominately used to study low-level processing and attention (see Norcia et al., 2015 for a review).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a review by Norcia et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:15:05.064870Z"
+    },
+    {
+      "id": "dd576394-0228-4dac-bf28-4b7c48bd0212",
+      "content_id": "3ff358bf-c6bc-4e0e-9353-4fa467f4409d",
+      "claim_id": "C10",
+      "claim": "Frequency tagging has been used for face recognition and discrimination.",
+      "claim_type": "EXPLICIT",
+      "source": "Latterly, though, it been used for more complex cognitive tasks, such as face recognition and discrimination (Alonso-Prieto et al., 2013; Farzin et al., 2012; Liu-Shuang et al., 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to multiple studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:15:05.064870Z"
+    },
+    {
+      "id": "37c88ac8-23aa-424a-aa0b-6f38e94d59a9",
+      "content_id": "3ff358bf-c6bc-4e0e-9353-4fa467f4409d",
+      "claim_id": "C11",
+      "claim": "Frequency tagging has been used for perception of number.",
+      "claim_type": "EXPLICIT",
+      "source": "perception of number (Guillaume et al., 2018; Van Rinsveld et al., 2020)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Guillaume et al., 2018 and Van Rinsveld et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:15:05.064870Z"
+    },
+    {
+      "id": "da63b950-f6a0-49e3-9fbf-b263b9fbd694",
+      "content_id": "3ff358bf-c6bc-4e0e-9353-4fa467f4409d",
+      "claim_id": "C12",
+      "claim": "Frequency tagging has been applied to audition.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been applied to other modalities: audition (Galambos et al., 1981; Picton et al., 2003; Bharadwaj et al., 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to multiple studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:15:05.064870Z"
+    },
+    {
+      "id": "efaea2bb-532c-41cb-b4d2-4e2eb27fa67a",
+      "content_id": "3ff358bf-c6bc-4e0e-9353-4fa467f4409d",
+      "claim_id": "C13",
+      "claim": "Frequency tagging has been applied to somatosensation.",
+      "claim_type": "EXPLICIT",
+      "source": "somatosensation (Tobimatsu et al., 1999; Galloway, 1990)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Tobimatsu et al., 1999 and Galloway, 1990.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:15:05.064870Z"
+    },
+    {
+      "id": "f1569c07-0cc7-4ee8-8c58-9517b7c8a41c",
+      "content_id": "3ff358bf-c6bc-4e0e-9353-4fa467f4409d",
+      "claim_id": "C14",
+      "claim": "Frequency tagging has been applied to nociception.",
+      "claim_type": "EXPLICIT",
+      "source": "and nociception (Colon et al., 2012; Colon et al., 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Colon et al., 2012 and Colon et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:15:05.064870Z"
+    },
+    {
+      "id": "eb8968d6-6b97-4405-8780-d105fe486b39",
+      "content_id": "3ff358bf-c6bc-4e0e-9353-4fa467f4409d",
+      "claim_id": "C15",
+      "claim": "Frequency tagging has been used to study memory.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been used to study broad phenomenon like memory (Lewis et al., 2018)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Lewis et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:15:05.064870Z"
+    },
+    {
+      "id": "558b2efd-4738-4abb-8cda-012db95175f3",
+      "content_id": "3ff358bf-c6bc-4e0e-9353-4fa467f4409d",
+      "claim_id": "C16",
+      "claim": "Frequency tagging has been used to study lateralisation.",
+      "claim_type": "EXPLICIT",
+      "source": "and lateralisation (Lochy et al., 2015; Lochy et al., 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Lochy et al., 2015 and Lochy et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:15:05.064870Z"
+    },
+    {
+      "id": "d91b2fc3-6a97-452d-91de-feed8f0a8eda",
+      "content_id": "3ff358bf-c6bc-4e0e-9353-4fa467f4409d",
+      "claim_id": "C17",
+      "claim": "Frequency tagging can be used in the assessment of autism.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, frequency tagging can be used in the assessment of disorders such as autism (Vettori et al., 2020a; Vettori et al., 2020b)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Vettori et al., 2020a and Vettori et al., 2020b.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:15:05.064870Z"
+    },
+    {
+      "id": "a1733fd3-b4d2-4748-9ed8-be87803d03df",
+      "content_id": "3ff358bf-c6bc-4e0e-9353-4fa467f4409d",
+      "claim_id": "C18",
+      "claim": "Frequency tagging can be used in the assessment of schizophrenia.",
+      "claim_type": "EXPLICIT",
+      "source": "and schizophrenia (Clementz et al., 2008)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Clementz et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:15:05.064870Z"
+    },
+    {
+      "id": "e0503973-6f2e-4fdb-bed0-f59df279e70d",
+      "content_id": "3ff358bf-c6bc-4e0e-9353-4fa467f4409d",
+      "claim_id": "C19",
+      "claim": "Phase coherence has been proposed as a mechanism for signal routing.",
+      "claim_type": "EXPLICIT",
+      "source": "Beyond EEG and MEG, phase coherence has been proposed as a mechanism for signal routing (Abeles, 1982; Salinas and Sejnowski, 2001; B\u00f6rgers and Kopell, 2008)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to multiple studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:15:05.064870Z"
+    },
+    {
+      "id": "963214ba-20af-406b-9864-a3aab9716376",
+      "content_id": "3ff358bf-c6bc-4e0e-9353-4fa467f4409d",
+      "claim_id": "C20",
+      "claim": "Phase coherence has been proposed as a mechanism for assembly formation.",
+      "claim_type": "EXPLICIT",
+      "source": "assembly formation (Singer, 1999; Buzs\u00e1ki, 2010)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Singer, 1999 and Buzs\u00e1ki, 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:15:05.064870Z"
+    },
+    {
+      "id": "ea8c7e4a-ddf5-4ace-8d9b-c2d6a324872c",
+      "content_id": "3ff358bf-c6bc-4e0e-9353-4fa467f4409d",
+      "claim_id": "C21",
+      "claim": "Phase coherence has been proposed as a mechanism for coding.",
+      "claim_type": "EXPLICIT",
+      "source": "and coding (O'Keefe and Recce, 1993; Panzeri et al., 2010)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to O'Keefe and Recce, 1993 and Panzeri et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:15:05.064870Z"
+    },
+    {
+      "id": "102dd183-a2ef-4a88-a331-61372e6f4974",
+      "content_id": "3ff358bf-c6bc-4e0e-9353-4fa467f4409d",
+      "claim_id": "C22",
+      "claim": "Neurolinguistic experiments are difficult because language experiments inevitably involve humans.",
+      "claim_type": "EXPLICIT",
+      "source": "Neurolinguistic experiments are difficult; since language experiments inevitably involve humans and target a phenomenon whose temporal grain is often too fine for magnetic resonance imaging, the principal neural imaging techniques are EEG and MEG.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known challenge in neurolinguistics.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:15:05.064870Z"
+    },
+    {
+      "id": "cce97aea-0b6f-4c6c-866b-c4c05b510d58",
+      "content_id": "3ff358bf-c6bc-4e0e-9353-4fa467f4409d",
+      "claim_id": "C23",
+      "claim": "The temporal grain of language phenomena is often too fine for magnetic resonance imaging.",
+      "claim_type": "EXPLICIT",
+      "source": "since language experiments inevitably involve humans and target a phenomenon whose temporal grain is often too fine for magnetic resonance imaging, the principal neural imaging techniques are EEG and MEG.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a reason why EEG and MEG are the principal techniques for language studies.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:15:05.064870Z"
+    },
+    {
+      "id": "53ef0128-afbd-4dad-a823-79ccc127da30",
+      "content_id": "3ff358bf-c6bc-4e0e-9353-4fa467f4409d",
+      "claim_id": "C24",
+      "claim": "An ERP is often difficult to obtain in neurolinguistics because the tens or hundreds of repetitions required would render the stimulus meaningless to the participant.",
+      "claim_type": "EXPLICIT",
+      "source": "A further difficulty in neurolinguistics is that an ERP is often difficult to obtain because the tens or hundreds of repetitions required would render the stimulus meaningless to the participant, a phenomenon known as the semantic satiation (Jakobovits, 1962).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a difficulty in neurolinguistics, with a citation to Jakobovits, 1962 for semantic satiation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:15:05.064870Z"
+    },
+    {
+      "id": "a997e28f-53a4-4ae2-8f6c-d1c9e3e50ded",
+      "content_id": "3ff358bf-c6bc-4e0e-9353-4fa467f4409d",
+      "claim_id": "C25",
+      "claim": "In the Burroughs et al., 2021 experiment, words are presented at 3.125 Hz.",
+      "claim_type": "EXPLICIT",
+      "source": "The words are all presented at 3.125 Hz; however, the frequency of interest is the phrase rate, 1.5625 Hz, corresponding to the phrase structure of the AN stimuli (see Figure 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a fact about the experimental design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:15:05.064870Z"
+    },
+    {
+      "id": "54f0c6d6-bf9e-4a1d-aa9e-f238f26ca9c7",
+      "content_id": "3ff358bf-c6bc-4e0e-9353-4fa467f4409d",
+      "claim_id": "C26",
+      "claim": "In the Burroughs et al., 2021 experiment, the frequency of interest is the phrase rate, 1.5625 Hz.",
+      "claim_type": "EXPLICIT",
+      "source": "The words are all presented at 3.125 Hz; however, the frequency of interest is the phrase rate, 1.5625 Hz, corresponding to the phrase structure of the AN stimuli (see Figure 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a fact about the experimental design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:15:05.064870Z"
+    },
+    {
+      "id": "f2bfbd6b-cc30-4cfc-ba2d-2d448545981a",
+      "content_id": "3ff358bf-c6bc-4e0e-9353-4fa467f4409d",
+      "claim_id": "C27",
+      "claim": "The strength of the response to AN stimuli relative to AV stimuli at 1.5625 Hz measures a neural response to grammatical structure.",
+      "claim_type": "EXPLICIT",
+      "source": "In Burroughs et al., 2021, it is suggested that the strength of the response to AN stimuli relative to AV stimuli at this frequency measures a neural response to the grammatical structure, rather than to lexical category of the words.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim from the cited study Burroughs et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:15:05.064870Z"
+    },
+    {
+      "id": "06580b6e-7457-45d2-ad8b-58cfdf8b53f7",
+      "content_id": "3ff358bf-c6bc-4e0e-9353-4fa467f4409d",
+      "claim_id": "C28",
+      "claim": "Induced power at 1.5625 Hz is too noisy for the stimulus-dependent signal to be easily detected.",
+      "claim_type": "EXPLICIT",
+      "source": "The obvious choice: the induced power at 1.5625 Hz does not work, empirically this proves too noisy a quantity for the stimulus-dependent signal to be easily detected",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an empirical observation from the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:15:05.064870Z"
+    },
+    {
+      "id": "be0fcac4-ebd2-43b1-8be7-6a3af64e8ccb",
+      "content_id": "3ff358bf-c6bc-4e0e-9353-4fa467f4409d",
+      "claim_id": "C29",
+      "claim": "For frequency-tagged data in cognitive tasks, it is common to use the ITPC.",
+      "claim_type": "EXPLICIT",
+      "source": "Typically this is done by assuming the response is phase-locked to the stimulus, and so for frequency-tagged data in cognitive tasks it is common to use the ITPC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a common practice in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:15:05.064870Z"
+    },
+    {
+      "id": "2ba1f441-e9ea-4272-a15d-5ded9cf72ffd",
+      "content_id": "3ff358bf-c6bc-4e0e-9353-4fa467f4409d",
+      "claim_id": "C30",
+      "claim": "The ITPC is chosen to extract the portion of the response at the frequency of interest that is phase-locked to the stimulus.",
+      "claim_type": "EXPLICIT",
+      "source": "The ITPC is chosen as a quantitative measure to extract the portion of the response at the frequency of interest that is phase-locked to the stimulus and therefore consistent in phase from trial to trial.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as the rationale for using ITPC.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:15:05.064870Z"
+    },
+    {
+      "id": "958e05b4-dfa0-4599-a487-a8831aa6b957",
+      "content_id": "3ff358bf-c6bc-4e0e-9353-4fa467f4409d",
+      "claim_id": "C31",
+      "claim": "In Burroughs et al., 2021, R(f=1.5626 Hz,p,c=AN) is significantly larger than R(f=1.5626 Hz,p,c=AV).",
+      "claim_type": "EXPLICIT",
+      "source": "The principal result of Burroughs et al., 2021 is that, in the language of frequentist statistics, R\u2062(f=1.5626\u2062 Hz,p,c=AN) is significantly larger than R\u2062(f=1.5626\u2062 Hz,p,c=AV).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as the principal result from the cited study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:15:05.064870Z"
+    },
+    {
+      "id": "ac3d2848-3139-48bc-ada1-a5bb9c826460",
+      "content_id": "3ff358bf-c6bc-4e0e-9353-4fa467f4409d",
+      "claim_id": "C32",
+      "claim": "There is a strong peak in ITPC at the syllable rate, 3.125 Hz.",
+      "claim_type": "EXPLICIT",
+      "source": "In Figure 2A, it is seen that there is a strong peak in ITPC at the syllable rate, 3.125 Hz, and, in the case of AN, at the phrase rate 1.5625 Hz.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:15:05.064870Z"
+    },
+    {
+      "id": "c2789cd4-6ccd-4883-8063-064f0c4a44c1",
+      "content_id": "3ff358bf-c6bc-4e0e-9353-4fa467f4409d",
+      "claim_id": "C33",
+      "claim": "In the case of AN, there is a strong peak in ITPC at the phrase rate 1.5625 Hz.",
+      "claim_type": "EXPLICIT",
+      "source": "In Figure 2A, it is seen that there is a strong peak in ITPC at the syllable rate, 3.125 Hz, and, in the case of AN, at the phrase rate 1.5625 Hz.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:15:05.064870Z"
+    },
+    {
+      "id": "36a6f9ee-b3b2-452c-a6b1-01744125c30b",
+      "content_id": "3ff358bf-c6bc-4e0e-9353-4fa467f4409d",
+      "claim_id": "C34",
+      "claim": "Only AN has a response at the phrase rate.",
+      "claim_type": "EXPLICIT",
+      "source": "The ITPC at the phase rate is graphed in Figure 2B, where, again, it appears only AN has a response at the phrase rate.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:15:05.064870Z"
+    },
+    {
+      "id": "6787bfa4-dcd5-443b-925b-a4938816c45d",
+      "content_id": "3ff358bf-c6bc-4e0e-9353-4fa467f4409d",
+      "claim_id": "C35",
+      "claim": "An uncorrected paired two-sided Wilcoxon signed-rank test gives a p-value <0.05 for 54 of the 480 possible comparisons.",
+      "claim_type": "EXPLICIT",
+      "source": "a straightforward calculation of the p-value using an uncorrected paired two-sided Wilcoxon signed-rank test gives a value <0.05 for 54 of the 480 possible comparisons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a result of the statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:15:05.064870Z"
+    },
+    {
+      "id": "8956b8ad-f3e5-4445-bc79-a11ed33261c9",
+      "content_id": "3ff358bf-c6bc-4e0e-9353-4fa467f4409d",
+      "claim_id": "C40",
+      "claim": "Cluster-based permutation testing does not allow making inferential claims about the strength of the effect of any one electrode appearing in a significant cluster.",
+      "claim_type": "EXPLICIT",
+      "source": "With this method it is not possible to make inferential claims about the strength of the effect of any one electrode appearing in a significant cluster; electrodes appearing in significant clusters cannot be defined as significant as these comparisons are not controlled for under the null (Sassenhagen and Draschkow, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a limitation of cluster-based permutation testing, with a citation to Sassenhagen and Draschkow, 2019.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:15:05.064870Z"
+    },
+    {
+      "id": "bec0c7cd-f06c-44d5-9cda-c44021b76f6f",
+      "content_id": "3ff358bf-c6bc-4e0e-9353-4fa467f4409d",
+      "claim_id": "C41",
+      "claim": "The ITPC is a summary statistic, a circular version of variance.",
+      "claim_type": "EXPLICIT",
+      "source": "In short, the ITPC is itself a summary statistic, a circular version of variance, and so it hides the individual items inside a two-stage analysis",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a characterization of ITPC.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:15:05.064870Z"
+    },
+    {
+      "id": "b19b7cd0-5fb1-41a9-a7dd-2645669801d9",
+      "content_id": "3ff358bf-c6bc-4e0e-9353-4fa467f4409d",
+      "claim_id": "C44",
+      "claim": "The Rayleigh test can be used to check for significant departure from uniformity or from the 'expected phase'.",
+      "claim_type": "EXPLICIT",
+      "source": "One example is the Rayleigh test (Rayleigh, 1880; Rayleigh, 1919); this test can be used to check for either significant departure from uniformity or from the 'expected phase', that is, a particular phase angle specified by the researcher based on some other insight into the behaviour.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a description of the Rayleigh test, with citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:15:05.064870Z"
+    },
+    {
+      "id": "19a07645-60c9-4f64-82d9-e252511c8345",
+      "content_id": "3ff358bf-c6bc-4e0e-9353-4fa467f4409d",
+      "claim_id": "C45",
+      "claim": "Classical approaches like the Rayleigh test are incompatible with the neurolinguistic study presented here.",
+      "claim_type": "EXPLICIT",
+      "source": "These classical approaches are incompatible with the neurolinguistic study presented here.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion about classical approaches.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:15:05.064870Z"
+    },
+    {
+      "id": "69a78f75-250d-42d1-ab57-5bd67262904c",
+      "content_id": "3ff358bf-c6bc-4e0e-9353-4fa467f4409d",
+      "claim_id": "C46",
+      "claim": "It would be difficult to provide an expected phase for the neurolinguistic study.",
+      "claim_type": "EXPLICIT",
+      "source": "Firstly, it would be difficult to provide an expected phase; as demonstrated in Figure 4, the mean phase angle is highly variable across participants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a reason why classical approaches are incompatible.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:15:05.064870Z"
+    },
+    {
+      "id": "a9ee2049-6a8b-4d74-b7ae-737063f1919f",
+      "content_id": "3ff358bf-c6bc-4e0e-9353-4fa467f4409d",
+      "claim_id": "C47",
+      "claim": "The Bayesian approach permits a per-item analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we provide a Bayesian approach to phase data. We believe this has advantages when compared to the ITPC: it permits a per-item analysis and correspondingly a more statistically efficient and richer use of the data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an advantage of the Bayesian approach.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:15:05.064870Z"
+    },
+    {
+      "id": "6518bc0f-55ba-4111-9be8-3ec098553b34",
+      "content_id": "3ff358bf-c6bc-4e0e-9353-4fa467f4409d",
+      "claim_id": "C48",
+      "claim": "The Bayesian approach supports a better description of the data because it quantifies uncertainty.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, as a Bayesian approach, it supports a better description of the data because it quantifies uncertainty and because it describes a putative abstraction of the stochastic process that may have generated the data while explicitly stating the underpinning assumptions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an advantage of the Bayesian approach.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:15:05.064870Z"
+    },
+    {
+      "id": "07dab980-d2de-4ea9-93d5-cae91a5c78c5",
+      "content_id": "3ff358bf-c6bc-4e0e-9353-4fa467f4409d",
+      "claim_id": "C49",
+      "claim": "The Bayesian approach describes a putative abstraction of the stochastic process that may have generated the data.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, as a Bayesian approach, it supports a better description of the data because it quantifies uncertainty and because it describes a putative abstraction of the stochastic process that may have generated the data while explicitly stating the underpinning assumptions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an advantage of the Bayesian approach.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:15:05.064870Z"
+    },
+    {
+      "id": "6ca17496-2e5e-4b9f-833c-2dad92dbaffc",
+      "content_id": "3ff358bf-c6bc-4e0e-9353-4fa467f4409d",
+      "claim_id": "C50",
+      "claim": "The wrapped Cauchy distribution has a closed form.",
+      "claim_type": "EXPLICIT",
+      "source": "A much better example is the Cauchy distribution... the corresponding wrapped distribution has the closed form:",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a property of the wrapped Cauchy distribution.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:15:05.064870Z"
+    },
+    {
+      "id": "0d4a4a2e-a1af-441f-b7b1-2c5fc070f911",
+      "content_id": "3ff358bf-c6bc-4e0e-9353-4fa467f4409d",
+      "claim_id": "C51",
+      "claim": "The wrapped Cauchy distribution has a well-defined and convenient value for the mean resultant.",
+      "claim_type": "EXPLICIT",
+      "source": "and, in contrast to the Cauchy distribution on the real line, where the moments are not defined, the wrapped distribution has a well-defined and convenient value for the mean resultant:",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a property of the wrapped Cauchy distribution.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:15:05.064870Z"
+    },
+    {
+      "id": "e006d2d4-37a8-4653-8d1e-1df80d085106",
+      "content_id": "3ff358bf-c6bc-4e0e-9353-4fa467f4409d",
+      "claim_id": "C54",
+      "claim": "The posterior distribution was sampled using the NUTS algorithm implementation in Stan.",
+      "claim_type": "EXPLICIT",
+      "source": "The posterior distribution was sampled using the NUTS algorithm implementation in Stan.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as the method used for sampling.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:15:05.064870Z"
+    },
+    {
+      "id": "de6ae50c-6606-4702-bb4d-962c8de01745",
+      "content_id": "3ff358bf-c6bc-4e0e-9353-4fa467f4409d",
+      "claim_id": "C55",
+      "claim": "Four chains were run for 4000 iterations, with half dedicated to a warm up or calibration epoch.",
+      "claim_type": "EXPLICIT",
+      "source": "Four chains were run for 4000 iterations, with half dedicated to a warm up or calibration epoch.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as the sampling procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:15:05.064870Z"
+    },
+    {
+      "id": "5cb3eeac-2f75-449c-befa-d224b9cb2347",
+      "content_id": "3ff358bf-c6bc-4e0e-9353-4fa467f4409d",
+      "claim_id": "C56",
+      "claim": "There is a phase peak visible at the phrase frequency 1.5626 Hz for AN, but not for the other conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 6A shows a point estimate of the mean resultant length across all frequencies estimated using the optimise function within RStan; as in the earlier figure (Figure 2A), there is a phase peak visible at the phrase frequency 1.5626 Hz for AN, but not for the other conditions.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:15:05.064870Z"
+    },
+    {
+      "id": "7f953ec8-32e1-4c5b-8359-9d5a7ada230c",
+      "content_id": "3ff358bf-c6bc-4e0e-9353-4fa467f4409d",
+      "claim_id": "C57",
+      "claim": "The AN condition has a higher value of the mean resultant length than the other five conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "It appears that the AN condition has a higher value of the mean resultant length than the other five conditions.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:15:05.064870Z"
+    },
+    {
+      "id": "15dc0f61-3db8-477f-aae1-319e48ca3a51",
+      "content_id": "3ff358bf-c6bc-4e0e-9353-4fa467f4409d",
+      "claim_id": "C58",
+      "claim": "There is a neural response at the phrase stimulus frequency for AN but not for the other conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, only the HDIs that do not overlap zero are the ones corresponding to a difference between AN and another condition: this clearly shows that in our model there is a neural response at the phrase stimulus frequency for AN but not for the other conditions.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 6B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:15:05.064870Z"
+    },
+    {
+      "id": "6466fa6a-587a-460e-9a8f-c8d17698cdef",
+      "content_id": "3ff358bf-c6bc-4e0e-9353-4fa467f4409d",
+      "claim_id": "C59",
+      "claim": "The MP condition consists of grammatical phrases.",
+      "claim_type": "EXPLICIT",
+      "source": "It appears, for example, that although the MP condition consists of grammatical phrases, the fact that these phrases are of different types means that there does not appear to be a response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a description of the MP condition.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:15:05.064870Z"
+    },
+    {
+      "id": "a34a93f5-55ea-4c47-8880-fbc53c8efa81",
+      "content_id": "3ff358bf-c6bc-4e0e-9353-4fa467f4409d",
+      "claim_id": "C60",
+      "claim": "The neuronal response observed for AN is a response to a specific type of phrase, not to any phrase.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that the neuronal response observed for AN is a response to a specific type of phrase, not to any phrase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an interpretation of the results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:15:05.064870Z"
+    },
+    {
+      "id": "9ccb8d42-2f13-470a-922a-a7c53521ed67",
+      "content_id": "3ff358bf-c6bc-4e0e-9353-4fa467f4409d",
+      "claim_id": "C61",
+      "claim": "There is a left temporal and right parietal response for AN and nothing else.",
+      "claim_type": "EXPLICIT",
+      "source": "In Figure 6C, we see the electrode-by-electrode comparisons across conditions. These graphs show a clearer structure than the corresponding ITPC analysis in Figure 2C; there is a left temporal and right parietal response for AN and nothing else.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:15:05.064870Z"
+    },
+    {
+      "id": "d769fdcb-2022-4f25-be9b-4f93776775ff",
+      "content_id": "3ff358bf-c6bc-4e0e-9353-4fa467f4409d",
+      "claim_id": "C62",
+      "claim": "There is more across-participant variation in responses to the MP and ML conditions than to the AN, RV, and RR conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "This appears to indicate that there is more across-participant variation in responses to the MP and ML conditions, where there is a structure but a complicated or confusing one, than to either the highly structured and grammatical AN condition or the RV and RR conditions, with little or no structure at the phrase rate.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 7B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:15:05.064870Z"
+    },
+    {
+      "id": "63b54f21-8b65-4fcf-8161-a8647bca87e2",
+      "content_id": "3ff358bf-c6bc-4e0e-9353-4fa467f4409d",
+      "claim_id": "C63",
+      "claim": "The response for P4 and T7 is clearly different from zero, indicating a stronger response to the AN condition than to the AV condition at these two electrodes.",
+      "claim_type": "EXPLICIT",
+      "source": "The response for P4 and T7 is clearly different from zero, indicating that there is a stronger response to the AN condition than to the AV condition at these two electrode.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 7D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:15:05.064870Z"
+    },
+    {
+      "id": "3a8176b8-f25a-4de3-928a-77503d4d6419",
+      "content_id": "3ff358bf-c6bc-4e0e-9353-4fa467f4409d",
+      "claim_id": "C66",
+      "claim": "The Bayesian model can detect a real difference in mean resultant length for smaller participant numbers.",
+      "claim_type": "EXPLICIT",
+      "source": "The Bayesian model can detect a real difference in mean resultant length for smaller participant numbers.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 12A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:15:05.064870Z"
+    },
+    {
+      "id": "010f697d-6135-4e2e-af8e-be2c008bacf4",
+      "content_id": "3ff358bf-c6bc-4e0e-9353-4fa467f4409d",
+      "claim_id": "C68",
+      "claim": "In the statistical learning dataset, syllables were presented at 4 Hz.",
+      "claim_type": "EXPLICIT",
+      "source": "In the experiment, syllables were presented at 4 Hz, resulting in a three-syllable pseudoword frequency of 1.33 Hz.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a fact about the experimental design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:15:05.064870Z"
+    },
+    {
+      "id": "58645c64-ab9b-4143-bc3e-57b892b3a4f8",
+      "content_id": "3ff358bf-c6bc-4e0e-9353-4fa467f4409d",
+      "claim_id": "C69",
+      "claim": "In the statistical learning dataset, the three-syllable pseudoword frequency is 1.33 Hz.",
+      "claim_type": "EXPLICIT",
+      "source": "In the experiment, syllables were presented at 4 Hz, resulting in a three-syllable pseudoword frequency of 1.33 Hz.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a fact about the experimental design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:15:05.064870Z"
+    },
+    {
+      "id": "351da1e1-504c-4f27-9854-f15d17a86d03",
+      "content_id": "3ff358bf-c6bc-4e0e-9353-4fa467f4409d",
+      "claim_id": "C70",
+      "claim": "In the statistical learning dataset, recordings were taken from 40 adult participants using 64 electrodes sampled over three blocks of 44 trials.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, recordings were taken from 40 adult participants (25 females, 35 right-handed, ages 20\u201338) using 64 electrodes sampled over three blocks of 44 trials; of these participants, 39 had complete EEG recordings to use in the analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a fact about the experimental design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:15:05.064870Z"
+    },
+    {
+      "id": "c4500242-f10c-49ac-9c4c-1d8ac7cbd343",
+      "content_id": "3ff358bf-c6bc-4e0e-9353-4fa467f4409d",
+      "claim_id": "C71",
+      "claim": "Of the 40 participants in the statistical learning dataset, 39 had complete EEG recordings to use in the analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, recordings were taken from 40 adult participants (25 females, 35 right-handed, ages 20\u201338) using 64 electrodes sampled over three blocks of 44 trials; of these participants, 39 had complete EEG recordings to use in the analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a fact about the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:15:05.064870Z"
+    },
+    {
+      "id": "f9f556c2-4b69-4b76-b65c-f944c769065b",
+      "content_id": "3ff358bf-c6bc-4e0e-9353-4fa467f4409d",
+      "claim_id": "C72",
+      "claim": "There is a strong response at the syllable frequency (4 Hz) for both the BL and EXP conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "There is a strong response at the syllable frequency (4 Hz) for both the BL and EXP conditions; however, statistical tests give complicated results.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 10A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:15:05.064870Z"
+    },
+    {
+      "id": "db74fe53-6d09-44d5-af98-0dca549ed72d",
+      "content_id": "3ff358bf-c6bc-4e0e-9353-4fa467f4409d",
+      "claim_id": "C73",
+      "claim": "A small increase in coherence can be observed at the pseudoword rate (1.33 Hz).",
+      "claim_type": "EXPLICIT",
+      "source": "A small increase in coherence can be observed at the pseudoword rate (1.33 Hz) and an even stronger one at the second harmonic (5.33 Hz).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 10A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:15:05.064870Z"
+    },
+    {
+      "id": "15c31fe3-340f-48fb-adeb-cf5b174e5188",
+      "content_id": "3ff358bf-c6bc-4e0e-9353-4fa467f4409d",
+      "claim_id": "C74",
+      "claim": "An even stronger increase in coherence can be observed at the second harmonic (5.33 Hz).",
+      "claim_type": "EXPLICIT",
+      "source": "A small increase in coherence can be observed at the pseudoword rate (1.33 Hz) and an even stronger one at the second harmonic (5.33 Hz).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 10A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:15:05.064870Z"
+    },
+    {
+      "id": "3a4832fb-d408-4fb9-8f09-10fd49ce53d9",
+      "content_id": "3ff358bf-c6bc-4e0e-9353-4fa467f4409d",
+      "claim_id": "C76",
+      "claim": "No significant clusters of activity were found at the pseudoword frequency or its first harmonic.",
+      "claim_type": "EXPLICIT",
+      "source": "No significant clusters of activity were found at the pseudoword frequency or its first harmonic; however, a stronger mid-to-frontal cluster appears at the second harmonic, suggesting a larger ITPC of electrodes in EXP compared to BL.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 10B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:15:05.064870Z"
+    },
+    {
+      "id": "a354c927-1442-4c61-8b6b-d93001431cac",
+      "content_id": "3ff358bf-c6bc-4e0e-9353-4fa467f4409d",
+      "claim_id": "C77",
+      "claim": "A stronger mid-to-frontal cluster appears at the second harmonic, suggesting a larger ITPC of electrodes in EXP compared to BL.",
+      "claim_type": "EXPLICIT",
+      "source": "No significant clusters of activity were found at the pseudoword frequency or its first harmonic; however, a stronger mid-to-frontal cluster appears at the second harmonic, suggesting a larger ITPC of electrodes in EXP compared to BL.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 10B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:15:05.064870Z"
+    },
+    {
+      "id": "3e1c82b2-13b9-4f17-8cb2-0a9ffb53c903",
+      "content_id": "3ff358bf-c6bc-4e0e-9353-4fa467f4409d",
+      "claim_id": "C78",
+      "claim": "A significant cluster of activity appears at the syllable rate and describes an opposite effect of condition: frontal electrodes have a larger ITPC for BL compared to EXP.",
+      "claim_type": "EXPLICIT",
+      "source": "A significant cluster of activity also appears at the syllable rate and describes an opposite effect of condition: frontal electrodes have a larger ITPC for BL compared to EXP.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 10B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:15:05.064870Z"
+    },
+    {
+      "id": "ac59874e-7e7c-4e3f-81ea-7c674f2fbcca",
+      "content_id": "3ff358bf-c6bc-4e0e-9353-4fa467f4409d",
+      "claim_id": "C79",
+      "claim": "For the statistical learning dataset, the model was fit separately for each frequency using four chains sampling for 2000 iterations each.",
+      "claim_type": "EXPLICIT",
+      "source": "The model was fit separately for each frequency using four chains sampling for 2000 iterations each, with half of these attributed to the warmup phase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as the sampling procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:15:05.064870Z"
+    },
+    {
+      "id": "574b0b7d-d6dd-496f-8606-69ab1cfd40dd",
+      "content_id": "3ff358bf-c6bc-4e0e-9353-4fa467f4409d",
+      "claim_id": "C82",
+      "claim": "At the pseudoword rate, zero is approximately 1.6 standard deviations from the posterior mean.",
+      "claim_type": "EXPLICIT",
+      "source": "From the summary statistics of the posterior differences in Table 1, we can calculate that zero is approximately 1.6 standard deviations from the posterior mean.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a calculation from the posterior.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:15:05.064870Z"
+    },
+    {
+      "id": "137ff95b-81a9-4a3f-bac1-eba80c053aee",
+      "content_id": "3ff358bf-c6bc-4e0e-9353-4fa467f4409d",
+      "claim_id": "C84",
+      "claim": "The first harmonic of the pseudoword rate clearly demonstrates no difference between the experimental groups.",
+      "claim_type": "EXPLICIT",
+      "source": "The first harmonic of the pseudoword rate clearly demonstrates no difference between the experimental groups.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 11A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:15:05.064870Z"
+    },
+    {
+      "id": "713a3d7b-7919-4fe5-943e-d77d414b137b",
+      "content_id": "3ff358bf-c6bc-4e0e-9353-4fa467f4409d",
+      "claim_id": "C85",
+      "claim": "The second harmonic shows the largest difference between the groups.",
+      "claim_type": "EXPLICIT",
+      "source": "The second harmonic shows the largest difference between the groups; zero is approximately 3.24 standard deviations away from the mean.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 11A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:15:05.064870Z"
+    },
+    {
+      "id": "4262879b-1aca-4007-9034-0e34a474b710",
+      "content_id": "3ff358bf-c6bc-4e0e-9353-4fa467f4409d",
+      "claim_id": "C86",
+      "claim": "At the second harmonic, zero is approximately 3.24 standard deviations away from the mean.",
+      "claim_type": "EXPLICIT",
+      "source": "The second harmonic shows the largest difference between the groups; zero is approximately 3.24 standard deviations away from the mean.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a calculation from the posterior.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:15:05.064870Z"
+    },
+    {
+      "id": "f6a5a4f1-6bdc-4b16-a5d8-18bb51846413",
+      "content_id": "3ff358bf-c6bc-4e0e-9353-4fa467f4409d",
+      "claim_id": "C87",
+      "claim": "At the syllable frequency, the results show BL as having a larger value than EXP.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the ITPC analysis, the results at the syllable frequency also show BL as having a larger value than EXP.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 11A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:15:05.064870Z"
+    },
+    {
+      "id": "ecb9b7b5-1905-4bdf-9182-0a0b1287bb04",
+      "content_id": "3ff358bf-c6bc-4e0e-9353-4fa467f4409d",
+      "claim_id": "C88",
+      "claim": "At the syllable frequency, zero lies approximately 1.59 standard deviations from the mean.",
+      "claim_type": "EXPLICIT",
+      "source": "In this case, zero lies approximately 1.59 standard deviations from the mean.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a calculation from the posterior.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:15:05.064870Z"
+    },
+    {
+      "id": "54fd3768-9e1e-4ef7-900e-dccbb701b635",
+      "content_id": "3ff358bf-c6bc-4e0e-9353-4fa467f4409d",
+      "claim_id": "C89",
+      "claim": "For the second harmonic, every electrode has a higher mean resultant length in EXP compared to BL.",
+      "claim_type": "EXPLICIT",
+      "source": "A strong result appears for the second harmonic; according to the Bayesian result, every electrode has a higher mean resultant length in EXP compared to BL.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 11B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:15:05.064870Z"
+    },
+    {
+      "id": "d1413c13-29ee-41c3-93ce-bfa8996c6f82",
+      "content_id": "3ff358bf-c6bc-4e0e-9353-4fa467f4409d",
+      "claim_id": "C90",
+      "claim": "At the syllable rate, a frontal response is discovered.",
+      "claim_type": "EXPLICIT",
+      "source": "At the syllable rate, a frontal response is discovered; this also reprises the findings from the ITPC analysis.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 11B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:15:05.064870Z"
+    },
+    {
+      "id": "a9777699-6534-49fe-825f-f86971d9126d",
+      "content_id": "3ff358bf-c6bc-4e0e-9353-4fa467f4409d",
+      "claim_id": "C91",
+      "claim": "The Bayesian results give evidence of statistical learning in the second harmonic of the pseudoword frequency.",
+      "claim_type": "EXPLICIT",
+      "source": "The Bayesian results give evidence of statistical learning in the second harmonic of the pseudoword frequency; however, results for the pseudoword frequency are not so strong as to rule out no difference entirely.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion from the Bayesian analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:15:05.064870Z"
+    },
+    {
+      "id": "15c456bd-bc80-4a27-a20c-80bf0ce1c1f9",
+      "content_id": "3ff358bf-c6bc-4e0e-9353-4fa467f4409d",
+      "claim_id": "C92",
+      "claim": "Results for the pseudoword frequency are not so strong as to rule out no difference entirely.",
+      "claim_type": "EXPLICIT",
+      "source": "The Bayesian results give evidence of statistical learning in the second harmonic of the pseudoword frequency; however, results for the pseudoword frequency are not so strong as to rule out no difference entirely.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion from the Bayesian analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:15:05.064870Z"
+    },
+    {
+      "id": "a94c1cee-69e1-404d-b163-b72bf4805742",
+      "content_id": "3ff358bf-c6bc-4e0e-9353-4fa467f4409d",
+      "claim_id": "C93",
+      "claim": "The strength of conclusions to be made is limited by some participants demonstrating an opposite effect.",
+      "claim_type": "EXPLICIT",
+      "source": "It appears that the strength of conclusions to be made is limited by some participants demonstrating an opposite effect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an interpretation of the results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:15:05.064870Z"
+    },
+    {
+      "id": "783eb244-d7ae-434c-abee-7023c4485e3f",
+      "content_id": "3ff358bf-c6bc-4e0e-9353-4fa467f4409d",
+      "claim_id": "C94",
+      "claim": "Evidence of statistical learning is difficult to find in individual participants.",
+      "claim_type": "EXPLICIT",
+      "source": "In Pinto et al., 2022, it is suggested that evidence of SL is difficult to find in individual participants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a claim from the cited study Pinto et al., 2022.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:15:05.064870Z"
+    },
+    {
+      "id": "40759120-10cd-43f7-bd4f-87db44f2207a",
+      "content_id": "3ff358bf-c6bc-4e0e-9353-4fa467f4409d",
+      "claim_id": "C95",
+      "claim": "The Bayesian approach is more computationally demanding than a frequentist approach.",
+      "claim_type": "EXPLICIT",
+      "source": "The Bayesian approach we have advanced in this article is undoubtedly much more computationally demanding than a frequentist approach; it also demands some thought and experiment in the formulation of the model and its priors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a characteristic of the Bayesian approach.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:15:05.064870Z"
+    },
+    {
+      "id": "6a88ed09-d185-4587-9649-df52dea1465b",
+      "content_id": "3ff358bf-c6bc-4e0e-9353-4fa467f4409d",
+      "claim_id": "C96",
+      "claim": "The Bayesian approach demands some thought and experiment in the formulation of the model and its priors.",
+      "claim_type": "EXPLICIT",
+      "source": "The Bayesian approach we have advanced in this article is undoubtedly much more computationally demanding than a frequentist approach; it also demands some thought and experiment in the formulation of the model and its priors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a characteristic of the Bayesian approach.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:15:05.064870Z"
+    },
+    {
+      "id": "9dd2dfe2-5a42-41b7-9abb-ccc60ed2e0bb",
+      "content_id": "3ff358bf-c6bc-4e0e-9353-4fa467f4409d",
+      "claim_id": "C97",
+      "claim": "The clarity of a Bayesian description and the complete way it presents the model and its evidence, along with the great data efficiency it provides, make it superior.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we believe that the clarity of a Bayesian description and the complete way it presents the model and its evidence, along with the great data efficiency it provides, make it superior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as the authors' belief about the Bayesian approach.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:15:05.064870Z"
+    },
+    {
+      "id": "06e3daff-5161-4a7a-b9ef-6760c04fda5b",
+      "content_id": "3ff358bf-c6bc-4e0e-9353-4fa467f4409d",
+      "claim_id": "C98",
+      "claim": "Bayesian models become worth the effort in scenarios where the data are limited and noisy, so statistical uncertainty is high.",
+      "claim_type": "EXPLICIT",
+      "source": "In general, Bayesian models become worth the effort in scenarios with two properties: (1) where the data are limited and noisy, so statistical uncertainty is high and therefore worth representing explicitly; (2) where the dataset has a strong structure, which the Bayesian model can be designed to match and therefore share information across parameters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a general principle about when Bayesian models are useful.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:15:05.064870Z"
+    },
+    {
+      "id": "fa652d84-3933-46e8-827c-a239823a6f5a",
+      "content_id": "3ff358bf-c6bc-4e0e-9353-4fa467f4409d",
+      "claim_id": "C99",
+      "claim": "Bayesian models become worth the effort in scenarios where the dataset has a strong structure, which the Bayesian model can be designed to match.",
+      "claim_type": "EXPLICIT",
+      "source": "In general, Bayesian models become worth the effort in scenarios with two properties: (1) where the data are limited and noisy, so statistical uncertainty is high and therefore worth representing explicitly; (2) where the dataset has a strong structure, which the Bayesian model can be designed to match and therefore share information across parameters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a general principle about when Bayesian models are useful.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:15:05.064870Z"
+    },
+    {
+      "id": "aac5bdd4-de29-4b17-88cc-c015962b49fd",
+      "content_id": "3ff358bf-c6bc-4e0e-9353-4fa467f4409d",
+      "claim_id": "C100",
+      "claim": "The noisiness, high-dimension, and tendency to small participant numbers of EEG data make it likely that Bayesian methods will be helpful.",
+      "claim_type": "EXPLICIT",
+      "source": "The nature of EEG data, its noisiness high-dimension, and the tendency to small participant numbers make it likely that Bayesian methods will be helpful.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion about the applicability of Bayesian methods to EEG data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:15:05.064870Z"
+    },
+    {
+      "id": "c470691a-1057-43f5-b196-55d77e60264b",
+      "content_id": "3ff358bf-c6bc-4e0e-9353-4fa467f4409d",
+      "claim_id": "C101",
+      "claim": "In the Burroughs et al., 2021 experiment, care had been taken to have a similar 2-gram frequency for adjacent word pairs in each condition.",
+      "claim_type": "EXPLICIT",
+      "source": "to ungrammatical adjective\u2013verb (AV) pairs... where care had been taken to have a similar 2 g frequency for adjacent word pairs in each condition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a fact about the experimental design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:15:05.064870Z"
+    },
+    {
+      "id": "9bc5ffd1-0ea8-46a2-ada4-55a57f0c27ab",
+      "content_id": "3ff358bf-c6bc-4e0e-9353-4fa467f4409d",
+      "claim_id": "C102",
+      "claim": "3.125 Hz corresponds to the syllable rate in the Burroughs et al., 2021 experiment.",
+      "claim_type": "EXPLICIT",
+      "source": "3.125 Hz corresponds to the syllable rate in this experiment.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:15:05.064870Z"
+    },
+    {
+      "id": "d0c4dd59-b56e-4679-8d60-10fdecec548b",
+      "content_id": "3ff358bf-c6bc-4e0e-9353-4fa467f4409d",
+      "claim_id": "C103",
+      "claim": "In the AN stimulus, there are noun phrases at the phrase rate, 1.5625 Hz.",
+      "claim_type": "EXPLICIT",
+      "source": "In the adjective\u2013noun (AN) stimulus, there are noun phrases at the phrase rate, 1.5625 Hz; this structure is absent in the adjective\u2013verb (AV) stimulus because AV pairs do not form a phrase.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:15:05.064870Z"
+    },
+    {
+      "id": "e179b4c5-b15d-4fb4-9f31-704b899430b1",
+      "content_id": "3ff358bf-c6bc-4e0e-9353-4fa467f4409d",
+      "claim_id": "C104",
+      "claim": "The phrase structure is absent in the AV stimulus because AV pairs do not form a phrase.",
+      "claim_type": "EXPLICIT",
+      "source": "In the adjective\u2013noun (AN) stimulus, there are noun phrases at the phrase rate, 1.5625 Hz; this structure is absent in the adjective\u2013verb (AV) stimulus because AV pairs do not form a phrase.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 1.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:15:05.064870Z"
+    },
+    {
+      "id": "7f95d4e4-73d2-4aee-a85d-80daad7527c3",
+      "content_id": "3ff358bf-c6bc-4e0e-9353-4fa467f4409d",
+      "claim_id": "C105",
+      "claim": "In the statistical learning experiment, 18 syllables are arranged into six three-syllable words.",
+      "claim_type": "EXPLICIT",
+      "source": "In the experiment, 18 syllables are arranged into six three-syllable words and played in a stream so that the transition probabilities inside a pseudoword are 1 while the transition between the last syllable of a pseudoword and the first of another is 0.2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a fact about the experimental design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:15:05.064870Z"
+    },
+    {
+      "id": "c050a213-f78b-4444-a517-fc5a5f9bc7de",
+      "content_id": "3ff358bf-c6bc-4e0e-9353-4fa467f4409d",
+      "claim_id": "C106",
+      "claim": "In the statistical learning experiment, the transition probabilities inside a pseudoword are 1.",
+      "claim_type": "EXPLICIT",
+      "source": "In the experiment, 18 syllables are arranged into six three-syllable words and played in a stream so that the transition probabilities inside a pseudoword are 1 while the transition between the last syllable of a pseudoword and the first of another is 0.2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a fact about the experimental design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:15:05.064870Z"
+    },
+    {
+      "id": "c1e6ad36-19a6-4196-81e7-a868d72008a8",
+      "content_id": "3ff358bf-c6bc-4e0e-9353-4fa467f4409d",
+      "claim_id": "C107",
+      "claim": "In the statistical learning experiment, the transition between the last syllable of a pseudoword and the first of another is 0.2.",
+      "claim_type": "EXPLICIT",
+      "source": "In the experiment, 18 syllables are arranged into six three-syllable words and played in a stream so that the transition probabilities inside a pseudoword are 1 while the transition between the last syllable of a pseudoword and the first of another is 0.2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a fact about the experimental design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:15:05.064870Z"
+    },
+    {
+      "id": "a7240932-a371-417d-8341-3c453f341b90",
+      "content_id": "3ff358bf-c6bc-4e0e-9353-4fa467f4409d",
+      "claim_id": "C108",
+      "claim": "For the EXP condition, there were six pseudowords with a between-word transitional probability of 0.2.",
+      "claim_type": "EXPLICIT",
+      "source": "For the EXP condition, there were six pseudowords with a between-word transitional probability of 0.2; a summary of these are shown in Figure 3.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:15:05.064870Z"
+    },
+    {
+      "id": "46fb417f-5c44-4e72-8b72-de44e6a52ebb",
+      "content_id": "3ff358bf-c6bc-4e0e-9353-4fa467f4409d",
+      "claim_id": "C109",
+      "claim": "The BL condition contained the same 18 syllables as EXP, but adopted different transitional probability rules to remove regularities.",
+      "claim_type": "EXPLICIT",
+      "source": "The BL condition contained the same 18 syllables as EXP, but adopted different transitional probability rules to remove regularities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a fact about the experimental design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:15:05.064870Z"
+    },
+    {
+      "id": "c8c83df0-bb9a-440d-8ca8-d65ffa9cd504",
+      "content_id": "3ff358bf-c6bc-4e0e-9353-4fa467f4409d",
+      "claim_id": "C110",
+      "claim": "All values of R-hat are <1.006, indicating good mixing.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, all values of R-hat are <1.006, indicating good mixing; values are plotted in Figure 9A",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 9A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:15:05.064870Z"
+    },
+    {
+      "id": "01410cc5-0760-4e9a-bd9c-83318f825d40",
+      "content_id": "3ff358bf-c6bc-4e0e-9353-4fa467f4409d",
+      "claim_id": "C111",
+      "claim": "The Bayesian approach reprises the original conclusions of the statistical analysis of the phrase data.",
+      "claim_type": "EXPLICIT",
+      "source": "Our approach reprises the original conclusions of the statistical analysis of these data, but, we believe, does so in a more expressive and more natural way.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a summary of the results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:15:05.064870Z"
+    },
+    {
+      "id": "d4f1f622-0b2f-445b-8fcc-19ed30469b2f",
+      "content_id": "3ff358bf-c6bc-4e0e-9353-4fa467f4409d",
+      "claim_id": "C112",
+      "claim": "The posterior still points to a real difference of condition in cases where the low participant number causes the frequentist confidence interval to overlap with zero and fail.",
+      "claim_type": "EXPLICIT",
+      "source": "It shows that the posterior still points to a real difference of condition in cases where the low participant number causes the frequentist confidence interval to overlap with zero and fail.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 13A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:15:05.064870Z"
+    },
+    {
+      "id": "297a788b-d676-4574-ad54-06793ea13bd9",
+      "content_id": "3ff358bf-c6bc-4e0e-9353-4fa467f4409d",
+      "claim_id": "C115",
+      "claim": "The Bayesian model can reliably detect the signal in the data with at least half the number of trials that the frequentist approach requires.",
+      "claim_type": "EXPLICIT",
+      "source": "It is clear from Figure 14A that the Bayesian model can reliably detect the signal in the data with at least half the number of trials that the frequentist approach requires",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 14A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:15:05.064870Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "03e7db9f-8994-4f4f-8e00-5418e1c335bc",
+      "content_id": "3ff358bf-c6bc-4e0e-9353-4fa467f4409d",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "EEG/MEG recordings are noisy but temporally precise, making them valuable for neurolinguistic studies. Frequency tagging addresses this noisiness by isolating responses at specific frequencies, providing more robust signals than traditional ERP paradigms, which are particularly difficult to obtain in language studies due to semantic satiation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C4, C7, C22-C24 establish well-known properties of EEG/MEG and frequency tagging based on general knowledge and citations. These are background claims that provide context for the study and are appropriately supported by the literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:15:05.064870Z"
+    },
+    {
+      "id": "ebf7c22c-413c-4bcc-9894-456128a13ec6",
+      "content_id": "3ff358bf-c6bc-4e0e-9353-4fa467f4409d",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Frequency tagging has been extensively applied across multiple domains including vision, audition, somatosensation, nociception, and various cognitive phenomena. It has also been used in clinical assessment of disorders and proposed as a mechanism for neural signal routing, assembly formation, and coding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C21 are all supported by appropriate citations to prior work. These establish the broad applicability and theoretical importance of frequency tagging and phase coherence, providing necessary background for the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:15:05.064870Z"
+    },
+    {
+      "id": "7fed0e0a-3bf7-4696-a0bf-50b5a36194f4",
+      "content_id": "3ff358bf-c6bc-4e0e-9353-4fa467f4409d",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "In the Burroughs et al. 2021 phrase experiment, words were presented at 3.125 Hz (syllable rate) with a phrase frequency of 1.5625 Hz. The AN (adjective-noun) condition showed a significant neural response at the phrase rate compared to AV (adjective-verb), as measured by ITPC, suggesting sensitivity to grammatical phrase structure.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C34, C101-C104 describe the experimental design and ITPC results from Burroughs et al. 2021. These are appropriately cited and the ITPC analysis is shown in Figure 2, providing empirical support for the phrase-rate response in the AN condition.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:15:05.064870Z"
+    },
+    {
+      "id": "81e928ea-f0dd-45d8-9226-f40a63745735",
+      "content_id": "3ff358bf-c6bc-4e0e-9353-4fa467f4409d",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Standard statistical approaches to the phrase data have limitations: uncorrected tests yield many significant comparisons (54/480), cluster-based permutation testing cannot make claims about individual electrodes, and ITPC is a summary statistic that hides individual trial information in a two-stage analysis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35, C40-C41 identify specific limitations of traditional approaches. C35 provides concrete statistical results, C40 cites appropriate literature (Sassenhagen and Draschkow, 2019) on cluster-based testing limitations, and C41 correctly characterizes ITPC as a summary statistic.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:15:05.064870Z"
+    },
+    {
+      "id": "59e5e340-fb71-489b-9845-1ef2deade812",
+      "content_id": "3ff358bf-c6bc-4e0e-9353-4fa467f4409d",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Classical circular statistics approaches like the Rayleigh test are incompatible with the neurolinguistic study because it would be difficult to specify an expected phase, given the high variability of mean phase angles across participants (as shown in Figure 4).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C46 correctly describe the Rayleigh test and explain why it's unsuitable for this application. The high variability in mean phase across participants is demonstrated in Figure 4, supporting the argument that classical approaches requiring an expected phase are inappropriate.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:15:05.064870Z"
+    },
+    {
+      "id": "db20a95b-1839-46dd-b11d-1a789fc6956f",
+      "content_id": "3ff358bf-c6bc-4e0e-9353-4fa467f4409d",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The Bayesian approach provides advantages over ITPC: it permits per-item analysis, provides an explicit interpretable generative model, quantifies uncertainty, and describes the putative stochastic process generating the data while stating underlying assumptions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C47-C49 describe theoretical advantages of the Bayesian approach. These are standard benefits of Bayesian methods and are demonstrated through the subsequent analysis. The per-item analysis is shown throughout the results, and uncertainty quantification is evident in the HDI plots.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:15:05.064870Z"
+    },
+    {
+      "id": "4b2edb42-ac76-433b-b6ef-46547f751263",
+      "content_id": "3ff358bf-c6bc-4e0e-9353-4fa467f4409d",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The wrapped Cauchy distribution has a closed form and a well-defined convenient value for the mean resultant, making it suitable for modeling circular phase data.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C51 state mathematical properties of the wrapped Cauchy distribution. These are correct mathematical facts, and the equations provided in the manuscript support these claims. The choice is well-justified for the application.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:15:05.064870Z"
+    },
+    {
+      "id": "6c029275-ea4d-4c2b-9557-225643290a56",
+      "content_id": "3ff358bf-c6bc-4e0e-9353-4fa467f4409d",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The Bayesian model was implemented using NUTS sampling in Stan with 4 chains of 4000 iterations (half warmup). Convergence diagnostics showed good mixing with all R-hat values <1.006.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C55, C110 describe the computational implementation and diagnostics. Figure 9 shows the diagnostic plots supporting good convergence. The R-hat values and other diagnostics indicate successful sampling without pathological behavior.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:15:05.064870Z"
+    },
+    {
+      "id": "ea952085-562e-4e56-908b-2e0b7eaf6ec4",
+      "content_id": "3ff358bf-c6bc-4e0e-9353-4fa467f4409d",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Bayesian analysis of the phrase data shows a phase peak at 1.5625 Hz for AN but not other conditions, with higher mean resultant length for AN. The response is localized to left temporal and right parietal regions and appears specific to adjective-noun phrases rather than phrases in general.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C58, C60-C61 describe the main Bayesian results for the phrase data, supported by Figure 6. The HDI analysis clearly shows AN differs from other conditions, and the electrode-level analysis (Figure 6C) shows clearer spatial localization than ITPC. The specificity to AN (not MP) supports the interpretation about phrase type.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:15:05.064870Z"
+    },
+    {
+      "id": "3546fc25-9e39-40c6-9926-d29bed2f65cc",
+      "content_id": "3ff358bf-c6bc-4e0e-9353-4fa467f4409d",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The MP condition (mixed phrases) shows no response despite containing grammatical phrases, with higher across-participant variation than AN or unstructured conditions. Specific electrodes (P4, T7) show clear differences between AN and AV conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59, C62-C63 provide additional details about the Bayesian results. Figure 7B shows the variation patterns across conditions, and Figure 7D shows the electrode-specific posteriors for P4 and T7, supporting these claims with appropriate uncertainty quantification.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:15:05.064870Z"
+    },
+    {
+      "id": "b9c33fab-dacd-4486-93b9-a34d4e103b1d",
+      "content_id": "3ff358bf-c6bc-4e0e-9353-4fa467f4409d",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The Bayesian approach is more data-efficient than standard approaches, detecting real differences with smaller participant numbers and fewer trials. Simulations show the Bayesian model can detect signals with at least half the trials required by frequentist approaches.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C66, C112, C115 assert superior data efficiency. Figures 12-14 provide simulation and subsampling evidence supporting these claims. Figure 12A shows bias reduction and better detection at low sample sizes, while Figure 14A demonstrates detection with half the trials.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:15:05.064870Z"
+    },
+    {
+      "id": "d0b550a1-f192-42af-8d75-6cf9a837ed77",
+      "content_id": "3ff358bf-c6bc-4e0e-9353-4fa467f4409d",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The statistical learning dataset presented syllables at 4 Hz (pseudoword frequency 1.33 Hz) to 39 participants with 64 electrodes. The EXP condition had six pseudowords with within-word transition probability of 1 and between-word probability of 0.2, while BL used the same syllables with different transition rules.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C71, C105-C109 describe the statistical learning experimental design. These are factual descriptions of the dataset from Pinto et al. 2022, appropriately cited and illustrated in Figure 3.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:15:05.064870Z"
+    },
+    {
+      "id": "58b1853c-aa38-43d4-bfbb-2573667edce9",
+      "content_id": "3ff358bf-c6bc-4e0e-9353-4fa467f4409d",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "ITPC analysis of the statistical learning data shows strong responses at 4 Hz for both conditions, with increases at 1.33 Hz and 5.33 Hz. Cluster-based testing found no significant clusters at the pseudoword frequency or first harmonic, but a mid-to-frontal cluster at the second harmonic (EXP>BL) and a frontal cluster at syllable rate (BL>EXP).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C72-C74, C76-C78 describe ITPC results for the statistical learning data, shown in Figure 10. The statistical tests and cluster analysis are appropriately conducted, though the results show a complex pattern with the strongest effect at the second harmonic rather than the fundamental frequency.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:15:05.064870Z"
+    },
+    {
+      "id": "3a68a8b1-a63a-48b1-a844-11abcc45b5e8",
+      "content_id": "3ff358bf-c6bc-4e0e-9353-4fa467f4409d",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Bayesian analysis of the statistical learning data (2000 iterations per chain) shows weak evidence at the pseudoword rate (1.33 Hz, zero ~1.6 SD from mean), no difference at the first harmonic (2.66 Hz), the largest difference at the second harmonic (5.33 Hz, zero ~3.24 SD from mean), and BL>EXP at syllable rate (4 Hz, zero ~1.59 SD from mean).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C79, C82, C84-C88 describe the Bayesian results for statistical learning, shown in Figure 11A and Table 1. The posterior distributions and standard deviation calculations are clearly presented. The pattern matches the ITPC results but provides more nuanced uncertainty quantification.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:15:05.064870Z"
+    },
+    {
+      "id": "64df170d-8a5d-4a83-805f-9c05d3aab0b1",
+      "content_id": "3ff358bf-c6bc-4e0e-9353-4fa467f4409d",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "At the second harmonic, every electrode shows higher mean resultant length for EXP vs BL, with a frontal response at syllable rate. Evidence for statistical learning is strongest at the second harmonic, with weaker evidence at the pseudoword frequency, limited by some participants showing opposite effects. Individual participant evidence for statistical learning is difficult to find.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C89-C94 provide interpretation of the statistical learning results. Figure 11B shows the electrode-level effects, and the claim about participant variability is supported by the posterior distributions. The citation to Pinto et al. 2022 (C94) appropriately contextualizes the difficulty of finding individual-level effects.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:15:05.064870Z"
+    },
+    {
+      "id": "1684ff39-2d3d-4962-a7cc-ce043384fc27",
+      "content_id": "3ff358bf-c6bc-4e0e-9353-4fa467f4409d",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The Bayesian approach reprises the original conclusions of the phrase data analysis but does so in a more expressive and natural way.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C111 is supported by the comparison between Figures 2 and 6, showing that the Bayesian analysis reaches similar conclusions (AN shows phrase-rate response) but with clearer spatial localization and better uncertainty quantification.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:15:05.064870Z"
+    },
+    {
+      "id": "acd018ec-7279-44a0-aa6b-5b447b6fa4a9",
+      "content_id": "3ff358bf-c6bc-4e0e-9353-4fa467f4409d",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The Bayesian approach is more computationally demanding and requires careful model formulation and prior selection, but is superior due to its clarity, complete presentation of evidence, and data efficiency. Bayesian methods are particularly valuable when data are limited and noisy with high uncertainty, and when datasets have strong structure. These properties make Bayesian methods likely to be helpful for EEG data generally.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C95-C100 provide a balanced assessment of the Bayesian approach. The computational demands are acknowledged (C95-C96), the advantages are demonstrated throughout the results (C97), and the conditions favoring Bayesian methods (C98-C99) are well-established principles. The application to EEG (C100) is a reasonable inference given the demonstrated benefits.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:15:05.064870Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "4b3d2efb-6dfe-4c29-883d-e0de71d09337",
+      "result_id": "03e7db9f-8994-4f4f-8e00-5418e1c335bc"
+    },
+    {
+      "claim_id": "bca7f6ab-88ca-4fbd-90ba-126ca0acab1c",
+      "result_id": "03e7db9f-8994-4f4f-8e00-5418e1c335bc"
+    },
+    {
+      "claim_id": "d1167c45-781f-49cb-9ced-a1efafce94b0",
+      "result_id": "03e7db9f-8994-4f4f-8e00-5418e1c335bc"
+    },
+    {
+      "claim_id": "4427d9a5-88d3-41f4-b01f-6e12240bb8f4",
+      "result_id": "03e7db9f-8994-4f4f-8e00-5418e1c335bc"
+    },
+    {
+      "claim_id": "d35f595a-845d-4b83-9b83-54247ce1ce73",
+      "result_id": "03e7db9f-8994-4f4f-8e00-5418e1c335bc"
+    },
+    {
+      "claim_id": "102dd183-a2ef-4a88-a331-61372e6f4974",
+      "result_id": "03e7db9f-8994-4f4f-8e00-5418e1c335bc"
+    },
+    {
+      "claim_id": "cce97aea-0b6f-4c6c-866b-c4c05b510d58",
+      "result_id": "03e7db9f-8994-4f4f-8e00-5418e1c335bc"
+    },
+    {
+      "claim_id": "53ef0128-afbd-4dad-a823-79ccc127da30",
+      "result_id": "03e7db9f-8994-4f4f-8e00-5418e1c335bc"
+    },
+    {
+      "claim_id": "7b3d4c36-ee74-4241-af09-b969e81e3216",
+      "result_id": "ebf7c22c-413c-4bcc-9894-456128a13ec6"
+    },
+    {
+      "claim_id": "e8e1b129-669b-4cd1-96c2-a39bbdcd57a8",
+      "result_id": "ebf7c22c-413c-4bcc-9894-456128a13ec6"
+    },
+    {
+      "claim_id": "dd576394-0228-4dac-bf28-4b7c48bd0212",
+      "result_id": "ebf7c22c-413c-4bcc-9894-456128a13ec6"
+    },
+    {
+      "claim_id": "37c88ac8-23aa-424a-aa0b-6f38e94d59a9",
+      "result_id": "ebf7c22c-413c-4bcc-9894-456128a13ec6"
+    },
+    {
+      "claim_id": "da63b950-f6a0-49e3-9fbf-b263b9fbd694",
+      "result_id": "ebf7c22c-413c-4bcc-9894-456128a13ec6"
+    },
+    {
+      "claim_id": "efaea2bb-532c-41cb-b4d2-4e2eb27fa67a",
+      "result_id": "ebf7c22c-413c-4bcc-9894-456128a13ec6"
+    },
+    {
+      "claim_id": "f1569c07-0cc7-4ee8-8c58-9517b7c8a41c",
+      "result_id": "ebf7c22c-413c-4bcc-9894-456128a13ec6"
+    },
+    {
+      "claim_id": "eb8968d6-6b97-4405-8780-d105fe486b39",
+      "result_id": "ebf7c22c-413c-4bcc-9894-456128a13ec6"
+    },
+    {
+      "claim_id": "558b2efd-4738-4abb-8cda-012db95175f3",
+      "result_id": "ebf7c22c-413c-4bcc-9894-456128a13ec6"
+    },
+    {
+      "claim_id": "d91b2fc3-6a97-452d-91de-feed8f0a8eda",
+      "result_id": "ebf7c22c-413c-4bcc-9894-456128a13ec6"
+    },
+    {
+      "claim_id": "a1733fd3-b4d2-4748-9ed8-be87803d03df",
+      "result_id": "ebf7c22c-413c-4bcc-9894-456128a13ec6"
+    },
+    {
+      "claim_id": "e0503973-6f2e-4fdb-bed0-f59df279e70d",
+      "result_id": "ebf7c22c-413c-4bcc-9894-456128a13ec6"
+    },
+    {
+      "claim_id": "963214ba-20af-406b-9864-a3aab9716376",
+      "result_id": "ebf7c22c-413c-4bcc-9894-456128a13ec6"
+    },
+    {
+      "claim_id": "ea8c7e4a-ddf5-4ace-8d9b-c2d6a324872c",
+      "result_id": "ebf7c22c-413c-4bcc-9894-456128a13ec6"
+    },
+    {
+      "claim_id": "a997e28f-53a4-4ae2-8f6c-d1c9e3e50ded",
+      "result_id": "7fed0e0a-3bf7-4696-a0bf-50b5a36194f4"
+    },
+    {
+      "claim_id": "54f0c6d6-bf9e-4a1d-aa9e-f238f26ca9c7",
+      "result_id": "7fed0e0a-3bf7-4696-a0bf-50b5a36194f4"
+    },
+    {
+      "claim_id": "f2bfbd6b-cc30-4cfc-ba2d-2d448545981a",
+      "result_id": "7fed0e0a-3bf7-4696-a0bf-50b5a36194f4"
+    },
+    {
+      "claim_id": "06580b6e-7457-45d2-ad8b-58cfdf8b53f7",
+      "result_id": "7fed0e0a-3bf7-4696-a0bf-50b5a36194f4"
+    },
+    {
+      "claim_id": "be0fcac4-ebd2-43b1-8be7-6a3af64e8ccb",
+      "result_id": "7fed0e0a-3bf7-4696-a0bf-50b5a36194f4"
+    },
+    {
+      "claim_id": "2ba1f441-e9ea-4272-a15d-5ded9cf72ffd",
+      "result_id": "7fed0e0a-3bf7-4696-a0bf-50b5a36194f4"
+    },
+    {
+      "claim_id": "958e05b4-dfa0-4599-a487-a8831aa6b957",
+      "result_id": "7fed0e0a-3bf7-4696-a0bf-50b5a36194f4"
+    },
+    {
+      "claim_id": "ac3d2848-3139-48bc-ada1-a5bb9c826460",
+      "result_id": "7fed0e0a-3bf7-4696-a0bf-50b5a36194f4"
+    },
+    {
+      "claim_id": "c2789cd4-6ccd-4883-8063-064f0c4a44c1",
+      "result_id": "7fed0e0a-3bf7-4696-a0bf-50b5a36194f4"
+    },
+    {
+      "claim_id": "36a6f9ee-b3b2-452c-a6b1-01744125c30b",
+      "result_id": "7fed0e0a-3bf7-4696-a0bf-50b5a36194f4"
+    },
+    {
+      "claim_id": "c470691a-1057-43f5-b196-55d77e60264b",
+      "result_id": "7fed0e0a-3bf7-4696-a0bf-50b5a36194f4"
+    },
+    {
+      "claim_id": "9bc5ffd1-0ea8-46a2-ada4-55a57f0c27ab",
+      "result_id": "7fed0e0a-3bf7-4696-a0bf-50b5a36194f4"
+    },
+    {
+      "claim_id": "d0c4dd59-b56e-4679-8d60-10fdecec548b",
+      "result_id": "7fed0e0a-3bf7-4696-a0bf-50b5a36194f4"
+    },
+    {
+      "claim_id": "e179b4c5-b15d-4fb4-9f31-704b899430b1",
+      "result_id": "7fed0e0a-3bf7-4696-a0bf-50b5a36194f4"
+    },
+    {
+      "claim_id": "6787bfa4-dcd5-443b-925b-a4938816c45d",
+      "result_id": "81e928ea-f0dd-45d8-9226-f40a63745735"
+    },
+    {
+      "claim_id": "8956b8ad-f3e5-4445-bc79-a11ed33261c9",
+      "result_id": "81e928ea-f0dd-45d8-9226-f40a63745735"
+    },
+    {
+      "claim_id": "bec0c7cd-f06c-44d5-9cda-c44021b76f6f",
+      "result_id": "81e928ea-f0dd-45d8-9226-f40a63745735"
+    },
+    {
+      "claim_id": "b19b7cd0-5fb1-41a9-a7dd-2645669801d9",
+      "result_id": "59e5e340-fb71-489b-9845-1ef2deade812"
+    },
+    {
+      "claim_id": "19a07645-60c9-4f64-82d9-e252511c8345",
+      "result_id": "59e5e340-fb71-489b-9845-1ef2deade812"
+    },
+    {
+      "claim_id": "69a78f75-250d-42d1-ab57-5bd67262904c",
+      "result_id": "59e5e340-fb71-489b-9845-1ef2deade812"
+    },
+    {
+      "claim_id": "2904db7c-6d59-445d-9438-4a7d9a0c699b",
+      "result_id": "db20a95b-1839-46dd-b11d-1a789fc6956f"
+    },
+    {
+      "claim_id": "a9ee2049-6a8b-4d74-b7ae-737063f1919f",
+      "result_id": "db20a95b-1839-46dd-b11d-1a789fc6956f"
+    },
+    {
+      "claim_id": "6518bc0f-55ba-4111-9be8-3ec098553b34",
+      "result_id": "db20a95b-1839-46dd-b11d-1a789fc6956f"
+    },
+    {
+      "claim_id": "07dab980-d2de-4ea9-93d5-cae91a5c78c5",
+      "result_id": "db20a95b-1839-46dd-b11d-1a789fc6956f"
+    },
+    {
+      "claim_id": "6ca17496-2e5e-4b9f-833c-2dad92dbaffc",
+      "result_id": "4b2edb42-ac76-433b-b6ef-46547f751263"
+    },
+    {
+      "claim_id": "0d4a4a2e-a1af-441f-b7b1-2c5fc070f911",
+      "result_id": "4b2edb42-ac76-433b-b6ef-46547f751263"
+    },
+    {
+      "claim_id": "e006d2d4-37a8-4653-8d1e-1df80d085106",
+      "result_id": "6c029275-ea4d-4c2b-9557-225643290a56"
+    },
+    {
+      "claim_id": "de6ae50c-6606-4702-bb4d-962c8de01745",
+      "result_id": "6c029275-ea4d-4c2b-9557-225643290a56"
+    },
+    {
+      "claim_id": "c8c83df0-bb9a-440d-8ca8-d65ffa9cd504",
+      "result_id": "6c029275-ea4d-4c2b-9557-225643290a56"
+    },
+    {
+      "claim_id": "5cb3eeac-2f75-449c-befa-d224b9cb2347",
+      "result_id": "ea952085-562e-4e56-908b-2e0b7eaf6ec4"
+    },
+    {
+      "claim_id": "7f953ec8-32e1-4c5b-8359-9d5a7ada230c",
+      "result_id": "ea952085-562e-4e56-908b-2e0b7eaf6ec4"
+    },
+    {
+      "claim_id": "15dc0f61-3db8-477f-aae1-319e48ca3a51",
+      "result_id": "ea952085-562e-4e56-908b-2e0b7eaf6ec4"
+    },
+    {
+      "claim_id": "a34a93f5-55ea-4c47-8880-fbc53c8efa81",
+      "result_id": "ea952085-562e-4e56-908b-2e0b7eaf6ec4"
+    },
+    {
+      "claim_id": "9ccb8d42-2f13-470a-922a-a7c53521ed67",
+      "result_id": "ea952085-562e-4e56-908b-2e0b7eaf6ec4"
+    },
+    {
+      "claim_id": "6466fa6a-587a-460e-9a8f-c8d17698cdef",
+      "result_id": "3546fc25-9e39-40c6-9926-d29bed2f65cc"
+    },
+    {
+      "claim_id": "d769fdcb-2022-4f25-be9b-4f93776775ff",
+      "result_id": "3546fc25-9e39-40c6-9926-d29bed2f65cc"
+    },
+    {
+      "claim_id": "63b54f21-8b65-4fcf-8161-a8647bca87e2",
+      "result_id": "3546fc25-9e39-40c6-9926-d29bed2f65cc"
+    },
+    {
+      "claim_id": "3d551d09-1eaa-4ab5-bccb-95568a273cdd",
+      "result_id": "b9c33fab-dacd-4486-93b9-a34d4e103b1d"
+    },
+    {
+      "claim_id": "3a8176b8-f25a-4de3-928a-77503d4d6419",
+      "result_id": "b9c33fab-dacd-4486-93b9-a34d4e103b1d"
+    },
+    {
+      "claim_id": "d4f1f622-0b2f-445b-8fcc-19ed30469b2f",
+      "result_id": "b9c33fab-dacd-4486-93b9-a34d4e103b1d"
+    },
+    {
+      "claim_id": "297a788b-d676-4574-ad54-06793ea13bd9",
+      "result_id": "b9c33fab-dacd-4486-93b9-a34d4e103b1d"
+    },
+    {
+      "claim_id": "010f697d-6135-4e2e-af8e-be2c008bacf4",
+      "result_id": "d0b550a1-f192-42af-8d75-6cf9a837ed77"
+    },
+    {
+      "claim_id": "58645c64-ab9b-4143-bc3e-57b892b3a4f8",
+      "result_id": "d0b550a1-f192-42af-8d75-6cf9a837ed77"
+    },
+    {
+      "claim_id": "351da1e1-504c-4f27-9854-f15d17a86d03",
+      "result_id": "d0b550a1-f192-42af-8d75-6cf9a837ed77"
+    },
+    {
+      "claim_id": "c4500242-f10c-49ac-9c4c-1d8ac7cbd343",
+      "result_id": "d0b550a1-f192-42af-8d75-6cf9a837ed77"
+    },
+    {
+      "claim_id": "7f95d4e4-73d2-4aee-a85d-80daad7527c3",
+      "result_id": "d0b550a1-f192-42af-8d75-6cf9a837ed77"
+    },
+    {
+      "claim_id": "c050a213-f78b-4444-a517-fc5a5f9bc7de",
+      "result_id": "d0b550a1-f192-42af-8d75-6cf9a837ed77"
+    },
+    {
+      "claim_id": "c1e6ad36-19a6-4196-81e7-a868d72008a8",
+      "result_id": "d0b550a1-f192-42af-8d75-6cf9a837ed77"
+    },
+    {
+      "claim_id": "a7240932-a371-417d-8341-3c453f341b90",
+      "result_id": "d0b550a1-f192-42af-8d75-6cf9a837ed77"
+    },
+    {
+      "claim_id": "46fb417f-5c44-4e72-8b72-de44e6a52ebb",
+      "result_id": "d0b550a1-f192-42af-8d75-6cf9a837ed77"
+    },
+    {
+      "claim_id": "f9f556c2-4b69-4b76-b65c-f944c769065b",
+      "result_id": "58b1853c-aa38-43d4-bfbb-2573667edce9"
+    },
+    {
+      "claim_id": "db74fe53-6d09-44d5-af98-0dca549ed72d",
+      "result_id": "58b1853c-aa38-43d4-bfbb-2573667edce9"
+    },
+    {
+      "claim_id": "15c31fe3-340f-48fb-adeb-cf5b174e5188",
+      "result_id": "58b1853c-aa38-43d4-bfbb-2573667edce9"
+    },
+    {
+      "claim_id": "3a4832fb-d408-4fb9-8f09-10fd49ce53d9",
+      "result_id": "58b1853c-aa38-43d4-bfbb-2573667edce9"
+    },
+    {
+      "claim_id": "a354c927-1442-4c61-8b6b-d93001431cac",
+      "result_id": "58b1853c-aa38-43d4-bfbb-2573667edce9"
+    },
+    {
+      "claim_id": "3e1c82b2-13b9-4f17-8cb2-0a9ffb53c903",
+      "result_id": "58b1853c-aa38-43d4-bfbb-2573667edce9"
+    },
+    {
+      "claim_id": "ac59874e-7e7c-4e3f-81ea-7c674f2fbcca",
+      "result_id": "3a68a8b1-a63a-48b1-a844-11abcc45b5e8"
+    },
+    {
+      "claim_id": "574b0b7d-d6dd-496f-8606-69ab1cfd40dd",
+      "result_id": "3a68a8b1-a63a-48b1-a844-11abcc45b5e8"
+    },
+    {
+      "claim_id": "137ff95b-81a9-4a3f-bac1-eba80c053aee",
+      "result_id": "3a68a8b1-a63a-48b1-a844-11abcc45b5e8"
+    },
+    {
+      "claim_id": "713a3d7b-7919-4fe5-943e-d77d414b137b",
+      "result_id": "3a68a8b1-a63a-48b1-a844-11abcc45b5e8"
+    },
+    {
+      "claim_id": "4262879b-1aca-4007-9034-0e34a474b710",
+      "result_id": "3a68a8b1-a63a-48b1-a844-11abcc45b5e8"
+    },
+    {
+      "claim_id": "f6a5a4f1-6bdc-4b16-a5d8-18bb51846413",
+      "result_id": "3a68a8b1-a63a-48b1-a844-11abcc45b5e8"
+    },
+    {
+      "claim_id": "ecb9b7b5-1905-4bdf-9182-0a0b1287bb04",
+      "result_id": "3a68a8b1-a63a-48b1-a844-11abcc45b5e8"
+    },
+    {
+      "claim_id": "54fd3768-9e1e-4ef7-900e-dccbb701b635",
+      "result_id": "64df170d-8a5d-4a83-805f-9c05d3aab0b1"
+    },
+    {
+      "claim_id": "d1413c13-29ee-41c3-93ce-bfa8996c6f82",
+      "result_id": "64df170d-8a5d-4a83-805f-9c05d3aab0b1"
+    },
+    {
+      "claim_id": "a9777699-6534-49fe-825f-f86971d9126d",
+      "result_id": "64df170d-8a5d-4a83-805f-9c05d3aab0b1"
+    },
+    {
+      "claim_id": "15c456bd-bc80-4a27-a20c-80bf0ce1c1f9",
+      "result_id": "64df170d-8a5d-4a83-805f-9c05d3aab0b1"
+    },
+    {
+      "claim_id": "a94c1cee-69e1-404d-b163-b72bf4805742",
+      "result_id": "64df170d-8a5d-4a83-805f-9c05d3aab0b1"
+    },
+    {
+      "claim_id": "783eb244-d7ae-434c-abee-7023c4485e3f",
+      "result_id": "64df170d-8a5d-4a83-805f-9c05d3aab0b1"
+    },
+    {
+      "claim_id": "01410cc5-0760-4e9a-bd9c-83318f825d40",
+      "result_id": "1684ff39-2d3d-4962-a7cc-ce043384fc27"
+    },
+    {
+      "claim_id": "40759120-10cd-43f7-bd4f-87db44f2207a",
+      "result_id": "acd018ec-7279-44a0-aa6b-5b447b6fa4a9"
+    },
+    {
+      "claim_id": "6a88ed09-d185-4587-9649-df52dea1465b",
+      "result_id": "acd018ec-7279-44a0-aa6b-5b447b6fa4a9"
+    },
+    {
+      "claim_id": "9dd2dfe2-5a42-41b7-9abb-ccc60ed2e0bb",
+      "result_id": "acd018ec-7279-44a0-aa6b-5b447b6fa4a9"
+    },
+    {
+      "claim_id": "06e3daff-5161-4a7a-b9ef-6760c04fda5b",
+      "result_id": "acd018ec-7279-44a0-aa6b-5b447b6fa4a9"
+    },
+    {
+      "claim_id": "fa652d84-3933-46e8-827c-a239823a6f5a",
+      "result_id": "acd018ec-7279-44a0-aa6b-5b447b6fa4a9"
+    },
+    {
+      "claim_id": "aac5bdd4-de29-4b17-88cc-c015962b49fd",
+      "result_id": "acd018ec-7279-44a0-aa6b-5b447b6fa4a9"
+    }
+  ],
+  "comparisons": []
+}

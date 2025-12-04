@@ -1,0 +1,365 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "The study cohort comprised 26,840 people diagnosed with pancreatic cancer from January 2015 to March 2023 in the OpenSAFELY-TPP dataset of 24 million patients. The cohort had a mean age of 72 years (\u00b111 SD), was 48% female, 95% White ethnicity (with 26% missing ethnicity data), and 40% had diabetes diagnosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C6 and C40-C45 provide consistent descriptive statistics about the study population. The dataset size, demographic characteristics, and comorbidity rates are clearly stated with appropriate measures of central tendency and dispersion. These are straightforward descriptive findings from the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C46",
+      "C47",
+      "C48",
+      "C94",
+      "C95"
+    ],
+    "result": "The rate of pancreatic cancer diagnosis (1 per 100,000 registered people per month) and diabetes diagnosis in the pancreatic cancer cohort (41% of people) were not affected by the COVID-19 pandemic, with observed rates matching predicted rates based on pre-pandemic trends.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C18 and C46-C48, C94-C95 demonstrate no significant pandemic effect on cancer or diabetes diagnosis rates using interrupted time series analysis with GLM predictions. The observed rates fell within the 95% confidence intervals of predicted rates, and this is supported by Figure 1A-B showing overlapping observed and predicted trends.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C7",
+      "C58",
+      "C59",
+      "C105",
+      "C106",
+      "C115"
+    ],
+    "result": "Surgical resections for pancreatic cancer were reduced by 25-28% during the pandemic, with only 6 per 100 people diagnosed receiving resection compared to predicted rates of 8-9 per 100, representing a statistically significant reduction in both lockdown and recovery periods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C58-C59, C105-C106, and C115 consistently report a major reduction in surgical resections. The observed rates (6%) were significantly below the 95% confidence intervals of predicted rates (6-10 in lockdown, 7-11 in recovery), indicating statistical significance. This is a key clinical finding with potential patient outcome implications.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C51",
+      "C52",
+      "C53",
+      "C110",
+      "C81"
+    ],
+    "result": "Pre-diagnosis testing for BMI, HbA1c, and liver function was reduced during the pandemic by 20%, 10%, and 4% respectively in the lockdown period, with BMI and HbA1c testing remaining below pre-pandemic levels through March 2023.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C10, C51-C53, C110, and C81 document statistically significant reductions in pre-diagnosis testing. The percentage reductions are consistent across claims, supported by Table 2 showing observed rates below 95% CI of predictions. The persistent deficit in BMI/HbA1c testing 3 years into the pandemic (C81) is particularly concerning and well-documented in Figure 3.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C111"
+    ],
+    "result": "Post-diagnosis testing of BMI, HbA1c, and liver function for people already diagnosed with pancreatic cancer was more resilient to the pandemic, with initial reductions recovering by the end of the lockdown period (March 2021), except for BMI which showed persistent reductions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C83 and C111 describe differential pandemic impact on post-diagnosis versus pre-diagnosis testing. The temporal recovery pattern is supported by Figure 3 showing convergence of observed and predicted rates for HbA1c and liver function by March 2021. The exception for BMI (C111) is appropriately noted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C11",
+      "C49",
+      "C50",
+      "C67",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C108",
+      "C109"
+    ],
+    "result": "Over 90% of people with pancreatic cancer contacted primary care before and after diagnosis, a rate unaffected by the pandemic. However, among those who made contact, the number of contacts increased by 1-2 per person during the pandemic compared to predicted levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11, C49-C50, C67, C96-C101, C108-C109 consistently show that while the proportion of people contacting primary care remained stable (>90%), the frequency of contacts per person increased significantly during the pandemic. This is supported by Figure 2 and Table 2 showing observed rates exceeding 95% CI of predictions for contact frequency but not for proportion contacting.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C54",
+      "C55",
+      "C112",
+      "C114"
+    ],
+    "result": "Reporting of jaundice in primary care decreased by 28% during the lockdown period but recovered to pre-pandemic levels by April 2021, representing a transient disruption.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C13, C54-C55, C112, and C114 document a significant but transient reduction in jaundice reporting. The 28% reduction (7 vs 10 predicted per 100 diagnosed) is statistically significant based on 95% CI (9-11), and the recovery timeline is supported by Figure 4A showing convergence by April 2021.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C56",
+      "C103",
+      "C104",
+      "C113"
+    ],
+    "result": "Abdominal imaging in secondary care showed a 5% reduction during the lockdown period that did not reach statistical significance when averaged across the entire period, though the reduction was most pronounced in the first 6 months and recovered by August 2020.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56, C103-C104, and C113 explain why the overall reduction in abdominal imaging was not statistically significant despite an initial drop. The observed rate (29%) fell within the 95% CI of predicted (27-33), but Figure 4B shows a clear initial reduction followed by rapid recovery. The temporal heterogeneity explains the lack of overall significance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C57",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "Emergency department visits, hospital admissions, deaths within 6 months of diagnosis, and pancreatic enzyme replacement prescribing were not significantly affected by the pandemic, with observed rates matching predicted rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C16, C57, and C116-C121 consistently report no significant pandemic effect on these outcomes. Table 2 shows observed rates within 95% CI of predictions for all these measures, and Figure 5 visually confirms overlapping observed and predicted trends. These null findings are important for understanding the selective impact of the pandemic.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Cancer services were already overstretched before COVID-19, and the pandemic exacerbated the healthcare crisis through resource reallocation, changes in healthcare access, increased waiting times, adapted treatment pathways, and altered patient healthcare-seeking behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C27 provide contextual background supported by multiple citations to published literature and NHS reports. These claims establish the pre-existing healthcare crisis and document well-established pandemic impacts on healthcare systems. The citations are appropriate and the claims represent accepted knowledge in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Pancreatic cancer presents diagnostic challenges due to non-specific symptoms and rapid progression, with weight loss, hyperglycemia, diabetes, and bile duct obstruction as common complications. Timely assessments of BMI, HbA1c, and liver function can support early diagnosis and monitoring.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C32 describe established medical knowledge about pancreatic cancer, supported by appropriate citations. These claims provide clinical context for why the observed reductions in testing (BMI, HbA1c, liver function) are concerning. The citations to published literature validate these as accepted clinical facts.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C33",
+      "C34"
+    ],
+    "result": "The negative effect of the COVID-19 pandemic resulted in delays and missed opportunities throughout the cancer pathway, which affected patient outcomes including survival.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C34 are supported by multiple citations to published literature documenting pandemic impacts on cancer care and outcomes. These claims provide important context for interpreting the study findings, though they represent prior work rather than findings from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C35",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "The OpenSAFELY-TPP dataset is nationally representative, links primary care with hospital and mortality data, and enables interrupted time series analysis accounting for trends and seasonality. Pancreatic cancer case ascertainment via primary care coding is valid in the UK context, with incidence rates aligning with published rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35, C70-C75 describe methodological strengths and validation of the data source. The national representativeness is supported by citation (C35), the interrupted time series advantages are based on sound statistical principles (C71), and the validation of case ascertainment through alignment with published rates (C75) strengthens confidence in the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "The UK implemented three national lockdowns: the first starting 26 March 2020, the second on 5 November 2020, the third on 6 January 2021, with phased exit beginning 8 March 2021.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C39 state historical facts about UK pandemic policy that are verifiable and well-documented. These dates define the study periods and are essential for interpreting the temporal patterns in the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Many non-emergency diagnostic services including abdominal imaging were suspended during the first pandemic peak but gradually reopened from July 2020 following infection control guidelines. Emergency presentations remain the main route of pancreatic cancer diagnosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C62 are supported by citations and provide context for interpreting the study's findings on imaging and diagnosis rates. The claim about emergency presentations (C62) is supported by citation to a 2013 report and represents established knowledge about pancreatic cancer diagnosis pathways in the UK.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Prior studies showed conflicting results on pandemic impact on pancreatic cancer surgery recommendations and survival, with one study showing 25% fewer surgery recommendations and reduced survival (7.4 to 3.3 months), while another showed no significant survival difference (3.5 vs 4.4 months).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C65 accurately cite prior published work on pandemic impacts on pancreatic cancer care. The conflicting findings from different studies (Hall et al. 2023 vs Madge et al. 2022) are appropriately presented, highlighting uncertainty in the literature and justifying the need for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C66"
+    ],
+    "result": "In the general population, there was a significant reduction in diabetes diagnosis and management services during the pandemic, contrasting with the lack of effect observed in the pancreatic cancer cohort.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C66 is supported by citation and provides important context for interpreting the study's finding that diabetes diagnosis in the pancreatic cancer cohort was not affected. This contrast suggests the pancreatic cancer population may have been prioritized or followed different care pathways.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C89",
+      "C90"
+    ],
+    "result": "Primary care transitioned to remote consulting with increased telephone triage during the pandemic, which may explain increased contact frequency. However, remote consulting can be more time-consuming for complex conditions, and the increase may also reflect enhanced recording in electronic health records.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C69 and C89-C90 provide plausible explanations for the observed increase in primary care contacts, supported by citations. The authors appropriately present alternative explanations (true increase vs. recording artifact) and acknowledge uncertainty about the mechanism, which is scientifically appropriate given the observational data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "The pandemic affected healthcare across the pancreatic cancer pathway in England. The reductions in healthcare have potential to lead to worse outcomes. Current efforts should address unmet needs, continue monitoring services, evaluate new healthcare approaches, and investigate health inequalities through stratified analyses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C80 and C91-C93 represent the study's main conclusions and recommendations. The conclusion that the pandemic affected the pancreatic cancer pathway (C80) is well-supported by the documented reductions in testing and surgery. The recommendations (C78-C79, C91-C93) are appropriate given the findings, though some are speculative about future work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "The study could not fully evaluate pandemic effects on pancreatic cancer diagnosis because staging information was unavailable. Pancreatic cancer may not rely on screening programs that were severely affected. More research is needed on staging, survival, and ongoing pandemic effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C88 appropriately acknowledge study limitations and identify gaps requiring future research. The explanation for why diagnosis rates were unaffected (C84) is a reasonable inference based on knowledge of cancer screening programs. The acknowledgment of limitations (C85) and calls for future research (C86-C88) are scientifically appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C102"
+    ],
+    "result": "Contacts with primary care included all contact events for all reasons and purposes, not only healthcare appointments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C102 provides an important methodological clarification about how the outcome was defined. This is essential for interpreting the findings on increased contact frequency, as it indicates the measure captures a broader range of interactions than just clinical appointments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C107"
+    ],
+    "result": "The decrease in death rates toward the end of the study period is most likely due to delays in deaths being entered into registry data rather than a true decrease in mortality.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C107 provides a plausible explanation for an apparent artifact in the data, supported by citation to ONS documentation about registry delays. This interpretation is appropriate and prevents misinterpretation of the temporal pattern visible in Figure 5E. The authors correctly identify this as a data quality issue rather than a true effect.",
+    "result_type": "MINOR"
+  }
+]

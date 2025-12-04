@@ -1,0 +1,988 @@
+{
+  "submission": {
+    "id": "70bca3a7-f4ab-4dca-b816-d74c0c67a64f",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-04T05:04:49.630796Z",
+    "updated_at": "2025-12-04T05:04:49.630796Z"
+  },
+  "content": [
+    {
+      "id": "c499ded3-3ea7-4a6a-bb15-985f7487634d",
+      "submission_id": "70bca3a7-f4ab-4dca-b816-d74c0c67a64f",
+      "content_type": "manuscript",
+      "content_text": "# Emergence of power law distributions in protein-protein interaction networks through study bias\n\n## Authors\n\n- David B Blumenthal<sup>1</sup> ([ORCID: 0000-0001-8651-750X](https://orcid.org/0000-0001-8651-750X)) \u2020\n- Marta Lucchetta<sup>2</sup>\n- Linda Kleist<sup>3</sup>\n- S\u00e1ndor P Fekete<sup>3</sup>\n- Markus List<sup>5</sup> ([ORCID: 0000-0002-0941-4168](https://orcid.org/0000-0002-0941-4168)) \u2020\n- Martin H Schaefer<sup>2</sup> ([ORCID: 0000-0001-7503-6364](https://orcid.org/0000-0001-7503-6364)) \u2020\n\n### Affiliations\n\n1. Biomedical Network Science Lab, Department Artificial Intelligence in Biomedical Engineering, Friedrich-Alexander-Universit\u00e4t Erlangen-N\u00fcrnberg Erlangen Germany ([ROR:00f7hpc57](https://ror.org/00f7hpc57))\n2. Department of Experimental Oncology, IEO European Institute of Oncology IRCCS Milan Italy ([ROR:02vr0ne26](https://ror.org/02vr0ne26))\n3. Department of Computer Science, TU Braunschweig Braunschweig Germany ([ROR:010nsgg66](https://ror.org/010nsgg66))\n4. Braunschweig Integrated Centre of Systems Biology (BRICS) Braunschweig Germany\n5. Data Science in Systems Biology, TUM School of Life Sciences, Technical University of Munich Freising Germany ([ROR:02kkvpp62](https://ror.org/02kkvpp62))\n6. Munich Data Science Institute (MDSI), Technical University of Munich Garching Germany ([ROR:02kkvpp62](https://ror.org/02kkvpp62))\n\n\u2020 Corresponding author\n\n## Abstract\n\nDegree distributions in protein-protein interaction (PPI) networks are believed to follow a power law (PL). However, technical and study biases affect the experimental procedures for detecting PPIs. For instance, cancer-associated proteins have received disproportional attention. Moreover, bait proteins in large-scale experiments tend to have many false-positive interaction partners. Studying the degree distributions of thousands of PPI networks of controlled provenance, we address the question if PL distributions in observed PPI networks could be explained by these biases alone. Our findings are supported by mathematical models and extensive simulations, and indicate that study bias and technical bias suffice to produce the observed PL distribution. It is, hence, problematic to derive hypotheses about the topology of the true biological interactome from the PL distributions in observed PPI networks. Our study casts doubt on the use of the PL property of biological networks as a modeling assumption or quality criterion in network biology.\n\n## Introduction\n\nBarabasi and Albert, 1999 proposed in the late 1990s that naturally occurring networks have a commonality: The distribution of their node degrees $k$ (i. e. the number of interactions each node is participating in) tends to follow a PL distribution $P(k)\u221dk^{\u2212\\alpha}$. For $2<\\alpha<3$, this distribution is scale-free, as its variance diverges with increasing network size. An important consequence of this assumed long-tail distribution of the node degrees is that it explains the existence of hub nodes with many connections (which are unlikely to occur under other statistical models), contrasting a large number of lowly connected nodes. Another feature of PL-distributed networks is their small world property, where a small network diameter leads to relatively high resilience against random perturbations (Cohen et al., 2000). This commonality in the topology of real-world networks is considered a universal law, as it seems to describe common features of such diverse networks such as food webs, metabolic networks, the internet, and (PPI) networks (Jeong et al., 2001; Barab\u00e1si and Oltvai, 2004; Yook et al., 2004).\n\nWith respect to PPI networks, the PL property is typically explained with biological considerations: Protein families that are involved in general biological processes such as protein folding, gene regulation, or post-translational modifications are very promiscuous and bind to a large number of other proteins, whereas the majority of proteins show few interactions (Nobeli et al., 2009). Moreover, it is crucial for the emergence of the PL property that, in the evolution of networks, \u2018new vertices attach preferentially to sites that are already well connected\u2019 (Barabasi and Albert, 1999). It has been suggested that, in the evolution of PPI networks, such preferential attachment can be explained via gene duplication and subsequent mutation (Pastor-Satorras et al., 2003).\n\nToday, the assumption that PPI networks show a PL distribution has been codified in textbooks (Barab\u00e1si and P\u00f3sfai, 2016) and training material (Mill\u00e1n, 2016). This has had an important implications on the network biology field: Some studies use PL fittings as quality criteria for their measured networks Stelzl et al., 2005; others use topological protein properties ex- or implicitly for predicting disease genes (Xu and Li, 2006; Janyasupab et al., 2021). Further examples are the co-expression module inference tools WGCNA (Zhang and Horvath, 2005; Langfelder and Horvath, 2008) and CEMiTool (Russo et al., 2018). In these tools, the assumption that biological networks are PL-distributed directly informs the automated choice of hyper-parameters used to prune or transform the co-expression matrices, i.e., the hyper-parameters are chosen such that the resulting degree distributions yield good PL fits. Since WGCNA is extremely widely used (more than 17,000 citations according to Google Scholar as of February 2024), the PL assumption has hence potentially shaped the results reported in thousands of studies.\n\nEven though it was reported that PL properties of networks across disciplines often lack statistical support or mechanistic backing (Stumpf and Porter, 2012), the assumption that PPI networks are PL-distributed has become mainstream in the network biology field. With respect to PPI networks, critical voices have been raised since the 2000s. Broadly, these studies can be categorized in two groups. Firstly, various studies exist that challenge the correctness of the claim that empirical PPI networks are scale-free or PL-distributed (Pr\u017eulj et al., 2004; Tanaka et al., 2005; Khanin and Wit, 2006; Lima-Mendez and van Helden, 2009; Przulj et al., 2010; Broido and Clauset, 2019): In some of these studies, goodness-of-fit tests are used to show that, in some empirical PPI networks, PL distributions actually do not provide a good fit of the empirical degree distributions (Tanaka et al., 2005; Khanin and Wit, 2006; Lima-Mendez and van Helden, 2009; Broido and Clauset, 2019). In others, networks are simulated using random network generation models that do and do not yield PL-distributed networks, and it is then argued that the simulated non-PL networks are often more similar to empirical PPI networks than the simulated PL networks (Pr\u017eulj et al., 2004; Przulj et al., 2010).\n\nSecond, there are studies which concede (at least for the sake of the argument) that empirical PPI networks are PL-distributed, but challenge that this is sufficient evidence to conclude that the same holds for the ground truth interactome (Stumpf et al., 2005; Han et al., 2005; Deeds et al., 2006): In some of these studies, it is argued that (dis-)appearance of PLs in empirical PPI networks may be artifacts of sampling from the full interactome (Stumpf et al., 2005; Han et al., 2005). In another study, a physical network generation model is presented, which allows us to explain the emergence of PLs in empirical PPI networks as an artifact of technical biases in yeast-2-hybrid (Y2H) screens (Deeds et al., 2006).\n\nIn this work, we aim to rekindle interest in a critical assessment of the assumption that PPI networks are PL-distributed and posit biased research interest in proteins as another possible non-biological explanations (Figure 1A). Based on data from more than 40,000 affinity purification-mass spectrometry (AP-MS) and Y2H studies, we argue that the emergence of PL distributions in empirical PPI networks can be explained by a combination of the following three factors:\n\n![Figure 1.](https://cdn.elifesciences.org/articles/99951/elife-99951-fig1-v2.jpg)\n\n**Figure 1.:** (A) We seek to answer the question of how much we can learn about the topology of ground truth networks from the topology of observed and aggregated protein-protein interaction (PPI) networks and how much-biased measurements might impact the observed power law (PL) degree distribution. (B) To answer this question we decompose aggregated, observed networks into single study-networks and investigate their individual degree distributions. We then ask how much the aggregation process of those single studies into larger networks could explain the PL property of the observed network. (C) We aim to identify true hub proteins by applying different types of normalization strategies, which reveals that disease-associated functions disappear that are likely associated with hub proteins because of their inflated testing frequency due to the study bias. (D) Starting from the empirical observation that bait usage is PL-distributed, we mathematically show that, in such a scenario, a PL-distributed observed PPI network can emerge even if the ground truth is binomially distributed. (E) Finally, we simulated the measurement of observed aggregated PPI networks under study bias from ground truth networks with either PL or binomial degree distribution.\n\nTo do so, we show that only a subset of networks exhibit a node degree distribution following a PL. We then systematically test if the PL property arises simply by aggregating studies (Figure 1B), as is common practice in PPI databases. Next, we test if the node degree distribution still follows a PL if we account for the bias introduced by bait proteins. Furthermore, we test to which extent accounting for such biases changes the functional enrichment of highly promiscuous hub proteins, where we expect that heavily studied disease-related proteins show reduced enrichment whereas functions carried out by proteins known to be promiscuous should show increased enrichment (Figure 1C). We then show mathematically that, given PL-distributed bait usage, PL-distributed PPI networks can emerge through aggregated AP-MS testing even if node degrees are binomially distributed in the unknown ground truth interactome (Figure 1D). Finally, we simulate the measurement process of observed PPI networks under study bias for different false negative and false positive rates, given hypothetical PL-distributed and binomially distributed ground truth interactomes (Figure 1E). Using $K$-nearest neighbors ($K$-NN) classification in the space of degree distributions of the simulated PPI networks, we then quantify to which extent the degree distributions of observed PPI networks allow us to derive conclusions about the topology of the true biological interactome. Overall, our results indicate that technical and study bias can indeed largely explain the fact that observed PPI networks tend to be PL-distributed. This implies that it is problematic to derive hypotheses about the degree distribution and emergence of the true biological interactome from the fact that node degrees in observed PPI networks tend to be PL-distributed.\n\n## Results\n\n### Less than one in three study-specific protein-protein interaction networks are power law distributed\n\nMosca et al., 2021 recently showed that aggregated observed PPI networks generally show a node degree distribution following the PL. To confirm this, we aggregated a large human PPI network consisting of 41,862 studies and a total of 471,693 unique interactions among 17,865 proteins. We tested if the resulting degree distribution follows a PL by quantifying the plausibility of a goodness-of-fit test as described before (Clauset et al., 2009). We observed that the resulting degree distribution can be approximated by a PL distribution ($p=0.35$; where $p\\geq0.1$ is by convention (Clauset et al., 2009) indicative of a PL distribution; Figure 2A).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/99951/elife-99951-fig2-v2.jpg)\n\n**Figure 2.:** (A) The black dots represent the degree distribution of our aggregated network and the red line corresponds to the fitted power law (PL) distribution with parameters $k_{min}=278$ and $\\alpha=3.3$ in a log-log scale. (B) Plot of the ratio between the number of non-PL and PL studies with more than a certain number of protein-protein interactions (PPIs specified in the $x$-axis).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/99951/elife-99951-fig2-figsupp1-v2.jpg)\n\nAn interesting question is if the PL property is inherent to single PPI networks or if it possibly arises through the aggregation process. To investigate this, we next tested for the PL property of the constituting single studies. We observed that when considering networks of size 200 or larger, there were approximately 3.5 times as many non-PL-distributed networks as compared to PL-distributed networks (Figure 2B). The ratio reduces to 1 when also small networks were considered. However, we reasoned that this is likely an artifact of the relatively poor fit of the degree distribution for small networks: The majority of networks have a small size (Figure 2\u2014figure supplement 1) and those small networks that are not filtered out (see Methods), are typically classified as PL-distributed. E. g., 84% of the 739 single-study networks with at most 20 PPIs (a network size which we consider unlikely to lead to reasonable degree distribution fits) are classified as PL-distributed. This suggests that for network sizes where it is possible to reliably fit degree distributions, the non-PL networks largely outnumber PL networks.\n\n### The power law property is associated with research interest\n\nWe next systematically tested if the PL property of networks can emerge from aggregating non-PL networks. We, therefore, randomly merged non-PL networks (1000 times 100, 200, and 300 non-PL studies). As shown in Figure 3A, we obtained more than 50% of PL aggregated networks after the aggregation of non-PL studies. In particular, the more studies we merged, the greater the fraction of PL studies (from 53 to 83%), demonstrating that the PL property can emerge from the aggregation of non-PL networks.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/99951/elife-99951-fig3-v2.jpg)\n\n**Figure 3.:** (A) Distribution of p-values obtained through the aggregation of 100, 200, and 300 random non-power law (PL) studies. The numbers on the top of each boxplot represent the fraction of PL networks obtained among the 1000 tests. The dotted red line represents the limit of significance (i.e. 0.1); above the line, the PL hypothesis is plausible. (B) The black points correspond to the bait usage distribution and the red line corresponds to the fitted PL distribution (in a log-log scale) with parameters $k_{min}=8$ and $\\alpha=3.13$. (C) The number of publications indexed in PubMed associated with different human genes follows a PL distribution ($k_{min}=201$ and $\\alpha=2.53$).\n\nWe observed a good correlation between the number of times a protein has been tested for interaction partners as a bait protein and its degree ($r=0.57$, $p<10^{\u221216}$; Pearson correlation test) in agreement with what has been previously described (Schaefer et al., 2015). This raises the question whether the PL property of the merged network could have been inherited from a potential bias in the number of times proteins have been tested for interaction partners. Indeed, we observed that the bait usage distribution follows a PL ($p=0.34$; Figure 3B). To test if the bait usage distribution could impact the observed degree distribution, we randomly subsampled networks for which we have bait information 3000 times (1000 times 50, 100, and 150 non-PL studies). For each resulting aggregated network, we fitted PL distributions to both the bait usage distribution and the degree distribution. We observed a significant association between finding that if one of the distributions follows a PL distribution the other one would tend to do so as well ($p=0.04$; one-sided Fisher\u2019s exact test). To more broadly investigate the association between the PL property and research interest in proteins, we also counted the numbers of publications indexed in PubMed linked to different human genes. Again, the obtained distribution follows a PL ($p=0.23$; Figure 3C).\n\n### Power law distributed research interest can explain the power law property of protein-protein interaction networks\n\nThe descriptive findings summarized in the previous paragraphs indicate that the PL property in aggregated PPI networks may reflect biases in the PPI measurement process, instead of capturing the topology of the ground truth interactome. In particular, analyses of the proteins\u2019 bait usage counts (Figure 3B) as well as their coverage by publications indexed in PubMed (Figure 3C) revealed that protein research is itself PL-distributed.\n\nIn the following, we mathematically establish that, given PL-distributed bait usage, the degree distribution of an observed PPI network $G_{obs}$ measured via repeated AP-MS testing has to be expected to be PL-distributed, even if the underlying ground truth interactome $G$ has a radically different topology or does not even contain any interaction at all, with observed interactions only being the result of a small false positive error rate. Technically speaking, we establish this fact for the following range of possible interactomes: It is valid for any ground truth interactome $G$ that is a sparse Erd\u0151s-R\u00e9nyi (ER) graph $H_{p}$ with $n$ nodes, which arises by choosing each of the $(\\frac{n}{2})$ possible edges with a small edge probability $p\\inO(n^{\u22121})$ uniformly at random (Erd\u0151s and R\u00e9nyi, 1959). The degree distribution of these graphs is known to follow a binomial distribution, not a PL. We show that a small false positive rate $FPR\\inO(n^{\u22121})$ and selection bias via a PL-distributed bait usage will result in an expected degree distribution in $G_{obs}$ that follows a PL. More precisely, we show the following Proposition 1 (see Methods for proofs).\n\nProposition 1. Let $G_{obs}=(V,E_{obs})$ be an observed PPI network on $n=|V|$ nodes, which is constructed via aggregated AP-MS testing of the unknown ground truth interactome $G=(V,E)$ as follows: Each protein $u\\inV$ is selected $b(u)$ times as bait, and each time $u$ is selected, all of its possible connections ${uv\u2223v\\inV}$ are tested. An edge $uv$ is added to $E_{obs}$ if it is tested positive at least once. The individual AP-MS studies have fixed false-positive and false-negative rates FPR and FNR. Then, if $G$ is an ER graph with edge probability $p$, the expected degrees of $G_{obs}$ are PL-distributed, following the bait usage distribution $b$, if $FPR\\inO(n^{\u22121})$ and $p\\inO(n^{\u22121})$ are small and $n\u226b1$ is large. In particular, this remains true for $p=0$, where the ground truth is the empty graph.\n\nProposition 1 demonstrates that we may observe a PL degree distribution in $G_{obs}$, even if the ground truth $G$ does not have such a distribution. Proposition 1 does of course not prove that the ground truth network does not follow a PL distribution. However, it demonstrates that stronger arguments than just a PL-distributed observed network $G_{obs}$ are necessary. To exemplify Proposition 1, we simulated the simplified aggregated AP-MS testing protocol assumed by Proposition 1, using the real-world distribution $b$ obtained from IntAct (Figure 3B), an empty ground truth interactome $G=H_{0}$, and parameters $n=16777$ (numbers of proteins in IntAct) and $FPR=1/1700$ (such that the expected number of edges in $G_{obs}$ matches the number of PPIs retrieved from IntAct). Figure 4 shows the obtained degree distribution of $G_{obs}$. The observed degrees are PL-distributed ($p=0.35$), although the underlying ground truth interactome $G$ is empty.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/99951/elife-99951-fig4-v2.jpg)\n\n**Figure 4.:** Exemplification of Proposition 1 for an empty ground truth interactome, a small positive error rate, and the real-world bait distribution $b$ obtained from IntAct.The simulated observed degree distribution is power law (PL)-distributed with parameters $k_{min}=64$ and $\\alpha=3.63$.\n\n### The power law property often vanishes when correcting for bait usage\n\nWe focused on the 27 single-study networks with PL distribution that consisted of more than 200 PPIs (as our initial analysis suggested that the ratio between non-PL and PL studies converges from this value) and for which we had bait and prey information. We observed that the ratio between baits and preys usage varied largely across those studies (Figure 5B), resulting in some studies with a symmetric design (i. e. relatively similar number of baits and preys) and some with rather asymmetric design (i. e. big differences in the numbers of baits and preys). We hypothesized that strongly uneven bait vs. prey usage may contribute to the PL property by inflating the degree of a few proteins, effectively favouring them to become hub proteins. To test this hypothesis, we attempted to correct this bias to check whether it is possible to transform PL networks into non-PL networks, solely by correcting for study bias. To this end, we recomputed the degree distribution by only considering the number of interactions formed by the larger set (either baits or preys, see Methods for details and Figure 5A for a graphical visualization).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/99951/elife-99951-fig5-v2.jpg)\n\n**Figure 5.:** (A) Scheme to illustrate how the degree is recalculated when the number of baits is smaller than the number of preys. (B) Distribution of the size balance (ratio between the number of baits and preys, see Equation 2 for details) among the 27 power law (PL) studies. (C) Distribution of the size balance in the nine studies that switch from PL to non-PL and the 18 studies whose degree distributions remain PL-distributed after the correction.\n\nWe observed that in 9 out of the 27 cases, we turned PL degree distributions into non-PL degree distributions by applying this correction. We observed that symmetry scores for networks that changed from PL to non-PL were significantly smaller ($p=0.038$, one-sided Wilcoxon test; Figure 5C), demonstrating that the bait-to-prey ratio has a considerable influence on the PL property.\n\n### Accounting for study bias reveals functionally meaningful hub proteins\n\nThe described observations make it critically important to understand how far the degree distribution of proteins is inflated by study bias: To what extent is the degree of proteins with a high degree in the aggregated PPI networks not primarily an indication of proteins with a higher number of interactions, but mainly a result of more frequent testing due to their relevance in disease or other assumed importance in cellular systems? We hence asked if we could reveal the true identity of hub proteins. To this end, we employed three different strategies:\n\nWe then tested the top 50 hubs for functional (Gene Ontology) and disease gene (Disease Ontology) enrichment. Interestingly, we observed that the prey hubs are most strongly enriched for \u2018protein folding\u2019 and \u2018chaperone-mediated protein folding\u2019 (Figure 6A, Figure 6\u2014source data 1). The majority of genes in these categories are chaperones whose function is to mediate protein folding. Since the majority of human proteins require assistance in folding by chaperones (Fink, 1999), they might indeed be true hub proteins. As chaperones compose 10% of the cellular proteome mass in humans (Finka and Goloubinoff, 2013), we were concerned that the enrichment of chaperones among the prey hubs could be an artifact of a detection bias of AP-MS toward highly abundant proteins. To rule out this possibility, we retrieved MS quantifications of human proteins in different tissues (Jiang et al., 2020) and performed a Gene Ontology enrichment analysis on sets of the most abundant protein (of different sizes). None had chaperones among the top-enriched terms (Figure 6\u2014figure supplement 1), suggesting that the enrichment among prey hubs was not simply an artifact of protein abundance. Similarly, pathway enrichment analysis (Figure 6\u2014figure supplement 2) showed protein folding among the top enriched pathways.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/99951/elife-99951-fig6-v2.jpg)\n\n**Figure 6.:** (A) Gene ontology enrichment analysis of the top 50 corrected (prey hubs, normalized hubs, and Y2H hubs) and non-corrected hubs (uncorrected aggregated network hubs). (B) Disease ontology enrichment analysis of the top 50 corrected and non-corrected hubs. The numbers in parentheses represent the number of hubs included in the reference databases, and the \u2018Gene ratio\u2019 represents the fraction of hubs included in the corresponding (gene or disease ontology) term. If a column is empty, it means there are no significant terms.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/99951/elife-99951-fig6-figsupp1-v2.jpg)\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/99951/elife-99951-fig6-figsupp2-v2.jpg)\n\n**Figure 6\u2014figure supplement 2.:** The numbers in brackets represent the number of hubs included in the reference databases, and the \u2018Gene ratio\u2019 represents the fraction of hubs included in the corresponding pathway.\n\n![Figure 6\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/99951/elife-99951-fig6-figsupp3-v2.jpg)\n\n**Figure 6\u2014figure supplement 3.:** (A) Overlap between schizophrenia-related genes and chaperones ($p=0.01$; one-sided Fisher test). (B) Overlap between psychotic disorder-related genes and chaperones ($p=0.005$; one-sided Fisher test).\n\nThe disease gene enrichment analysis confirms the previous observation that uncorrected hubs are associated with many different types of diseases (Figure 6\u2014source data 1), in particular with cancer (Figure 6B). Prey hubs exhibit an enrichment of diseases related to the nervous system (though much weaker as compared to the enrichment of cancer among the uncorrected hubs). In contrast, normalized and Y2H hubs do not show any significant enrichment in diseases, challenging the idea that disease genes per se have a higher connectivity in PPI networks.\n\nWe were surprised to find several nervous system diseases enriched among the prey hubs. Many of the prey hubs related to nervous system diseases were in fact chaperones. To test if the enrichment of nervous system diseases were caused by the chaperones, we retrieved the proteins of the most strongly enriched disease classes (schizophrenia and psychotic disorder) and tested if chaperones were enriched among those proteins (Figure 6\u2014figure supplement 3). Indeed, we found a significant enrichment ($p<0.05$, one-sided Fisher test) in both cases, suggesting that chaperones might cause the observed disease enrichment among true hubs toward the nervous system diseases. This is likely because protein misfolding is a hallmark of many nervous system diseases (Tittelmeier et al., 2020; Nucifora et al., 2019) and indeed chaperones play a role in the prevention of misfolding.\n\n### Similarity of simulated to observed networks does not depend on the topology of ground truth network\n\nTo further assess if the PL property in aggregated PPI networks might be due to biases in the PPI measurement process, we simulated the measurement of observed aggregated PPI networks under preferential interaction testing (see Methods for details). We parameterized our simulator with four hyper-parameters: The test method (AP-MS or Y2H testing), the false positive, and the false negative rates of the test method, and the acceptance threshold $\\gamma\\in[0,1]$ (our simulator includes a PPI $(u,v)$ into the simulated aggregated network if it has been detected at least once and the fraction of positive simulated experiments that test for $(u,v)$ exceeds $\\gamma$). For each hyper-parameter setup, we simulated 50 hypothetical ground truth networks generated with the Barabasi-Albert (BA) model (Barabasi and Albert, 1999) and 50 hypothetical ground truth networks generated with the ER model. In BA networks, node degrees are PL-distributed; in ER networks, they follow a binomial distribution. Subsequently, we simulated the detection of the PPIs in the hypothetical ground truth networks via aggregated PPI testing under study bias.\n\nFor each hyper-parameter setup, we hence obtained sets $G_{BA}$, and $G_{ER}$ which each contains 50 simulated aggregated PPI networks that have emerged from, respectively, PL-distributed ($G_{BA}$) and binomially distributed ($G_{ER}$) hypothetical ground truth networks. We then asked if the degree distribution of the empirical aggregated PPI network $G_{IntAct}$ obtained from IntAct is more similar to the degree distributions of the simulated aggregated networks contained in $G_{BA}$ than to the degree distributions of the networks contained in $G_{ER}$. If so, this would indicate that the unknown true biological interactome underlying $G_{IntAct}$ is more likely to be PL- than binomially distributed. To answer this question, we computed earth mover\u2019s distances between the degree distribution of $G_{IntAct}$ and the degree distributions of the networks contained in $G_{BA}$ and $G_{ER}$. Using these distances, we computed a signed relative sum of distance differences $\u0394SOD\\in[\u22121,1]$ (Equation 13), which is negative if $G_{IntAct}$\u2019s degree distribution is more similar to the degree distributions of the networks in $G_{BA}$ than to the degree distributions of the networks in $G_{ER}$. Moreover, we used the earth mover\u2019s distances between $G_{IntAct}$\u2019s degree distributions and the degree distributions of the networks in $G_{BA}$ and $G_{ER}$ to predict via $K$-NN classification if $G_{IntAct}$ is more likely to have emerged from a PL-distributed or from a binomially distributed true biological interactome (see Equation 14 and Equation 15 for details and Figure 7 for a conceptual visualization).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/99951/elife-99951-fig7-v2.jpg)\n\n**Figure 7.:** Conceptual overview of simulated aggregated protein-protein interaction (PPI) testing under study bias and downstream analyses to assess if the empirical aggregated PPI network $G_{IntAct}$ obtained from IntAct is more likely to have emerged from a power law (PL)-distributed than from a binomially distributed true biological interactome.The colored dots in the gray area represent degree distributions; dissimilarity between degree distributions is quantified using the earth mover\u2019s distance.\n\nThe results of our simulation studies for AP-MS testing are shown in Figure 8. When comparing the empirical network $G_{IntAct}$ to hypothetical PL-distributed and binomially distributed ground truth networks, we observe that $G_{IntAct}$\u2019s degree distribution is much more similar to the degree distributions of the PL-distributed networks (Figure 8A). This is not surprising, given that $G_{IntAct}$ is itself PL-distributed (Figure 8\u2014figure supplement 1A). However, the picture changes when looking at the sums of distances between $G_{IntAct}$ and the simulated aggregated networks: Already for very small false positive rates, the gain in similarity between $G_{IntAct}$ and networks emerging from PL-distributed ground truth networks vanishes. For $\\gamma=0$ (each PPI detected by at least one simulated study is included in the aggregated network), the tipping point lies between $FPR=0.00625$ and $FPR=0.0125$ (Figure 8B); for $\\gamma=0.5$ (a PPI is included in the aggregated network only if it is detected by the majority of the simulated studies that test for it), it lies between $FPR=0.0125$ and $FPR=0.025$ (Figure 8C). By increasing $\\gamma$ and keeping only consensus PPIs in our simulated networks, we can hence slightly improve the robustness of our simulated PPI network measurement process w. r. t. the false positive rate of the PPI detection method.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/99951/elife-99951-fig8-v2.jpg)\n\n**Figure 8.:** (A) Histogram of earth mover\u2019s distances between the degree distribution of the observed protein-protein interaction (PPI) network $G_{IntAct}$ obtained via aggregation of all AP-MS studies annotated in IntAct and the degree distributions of 50 PL-distributed and 50 binomially distributed hypothetical ground truth networks. (B, C) Signed relative differences $\u0394SOD\\in[\u22121,1]$ between the sum of distances between the degree distribution of $G_{IntAct}$ and degree distributions of networks simulated from, respectively, power law (PL)-distributed and binomially distributed hypothetical ground truth networks, given different choices of the hyper-parameters FPR, FNR, and $\\gamma$. Negative values of $\u0394SOD$ indicate that $G_{IntAct}$ is more similar to simulated networks emerging from PL-distributed hypothetical ground truths; positive values are indicative of the opposite scenario. (D-G) $K$-NN classification-based probabilities that $G_{IntAct}$ emerged from a PL-distributed or from a binomially distributed ground truth interactome. (D, E) Probabilities just before the tipping points in the false positive rate. (F, G) Probabilities just after the tipping points.\n\n![Figure 8\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/99951/elife-99951-fig8-figsupp1-v2.jpg)\n\n**Figure 8\u2014figure supplement 1.:** (A) Degree distribution for observed protein-protein interaction (PPI) network obtained via aggregation of all AP-MS studies annotated in IntAct. Node degrees are power law (PL)-distributed ($p=0.36$). (B) Degree distribution for observed PPI network obtained via aggregation of all Y2H studies annotated in IntAct. Node degrees are not PL-distributed ($p=0$).\n\n![Figure 8\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/99951/elife-99951-fig8-figsupp2-v2.jpg)\n\n**Figure 8\u2014figure supplement 2.:** (A) Histogram of earth mover\u2019s distances between the degree distribution of the observed protein-protein interaction (PPI) network $G_{IntAct}$ obtained via aggregation of all Y2H studies annotated in IntAct and the degree distributions of 50 PL-distributed and 50 binomially distributed hypothetical ground truth networks. (B, C) Signed relative differences $\u0394SOD\\in[\u22121,1]$ between the sum of distances between the degree distribution of $G_{IntAct}$ and degree distributions of networks simulated from, respectively, PL-distributed and binomially distributed hypothetical ground truth networks, given different choices of the hyper-parameters FPR, FNR, and.$\\gamma$ Negative values of $\u0394SOD$ indicate that $G_{IntAct}$ is more similar to simulated networks emerging from PL-distributed hypothetical ground truths; positive values are indicative of the opposite scenario. (D-G) $K$-NN classification-based probabilities that $G_{IntAct}$ emerged from a PL-distributed or from a binomially distributed ground truth interactome. (D, E) Probabilities just before the tipping points in the false positive rate. (F, G) Probabilities just after the tipping points.\n\n$K$-NN classification-based probabilities for $G_{IntAct}$ having emerged from a PL-distributed or a binomially distributed ground truth interactome for false positive rates just below and just above the tipping points are shown in Figure 8D to Figure 8G: For false positive rates below the tipping points, a PL-distributed ground truth interactome is clearly the more likely origin of $G_{IntAct}$, independently of the parameter $K$ used for the $K$-NN classification. For false positive rates above the tipping points and $K\\geq18$, binomially distributed and PL-distributed interactomes are roughly equally probable origins of $G_{IntAct}$. With smaller $K$, the estimated probabilities are actually larger for binomially distributed ground truth networks.\n\nIf the estimated AP-MS false positive rates of 10 to 40% (Armean et al., 2013) are only remotely realistic, they clearly exceed the tipping points between $0.625$% and $2.5$% uncovered by our simulation study. The results summarized above hence indicate that the observed PL behavior of empirical PPI networks obtained via aggregation of AP-MS studies tells us very little about the topology of the ground truth interactome and is even compatible with binomially distributed node degrees in the ground truth interactome.\n\nThe results for simulated Y2H testing (Figure 8\u2014figure supplement 2) are very similar to the ones for AP-MS testing. The only difference is that we observe even smaller tipping points. A likely explanation for this is that, unlike the PPI network obtained by aggregating all AP-MS studies annotated in IntAct, the PPI network obtained by aggregating all Y2H studies is itself not PL-distributed (Figure 8\u2014figure supplement 1B). For both simulated AP-MS and simulated Y2H testing, the false negative rate did not have a strong effect on the results (see small row-wise variances in the heatmaps shown in Figure 8, Figure 8\u2014figure supplement 2).\n\n## Discussion\n\nIt is widely believed that the PL behavior of PPI networks arose through evolution, where frequent gene duplication events have led to protein copies that retain the original interaction partners. As one can mathematically prove, such a model eventually leads to a scale-free network (Chung et al., 2003). Recently, doubts have emerged that PPI networks are truly scale-free (Broido and Clauset, 2019). Furthermore, it was shown that active module discovery methods perform equally well on real and random networks in which the node degree is preserved (Lazareva et al., 2021). Such methods, which are typically applied to PPI networks to extract disease modules in the form of subnetworks, thus do not benefit from the interactions of the network but merely learn from the node degree, suggesting that study bias may be driving these analyses.\n\nHere, we offer an alternative explanation, demonstrating that the PL behavior of PPI networks may emerge through a combination of biases. Firstly, we show that typically used experimental designs display an asymmetry between bait and prey proteins, which may contribute to the PL property. Second, we find that the current practice of aggregating study-based PPI networks tends to introduce a PL behavior of the node degree distribution that is not found in the individual studies. Based on the observation that bait usage counts are PL-distributed, we suspect that aggregating studies emphasize study bias, over-representing proteins frequently used as bait. We show that correcting such biases by the three described methods leads to the emergence of alternative hub proteins that drive the network. Thirdly, we mathematically show that, given PL-distributed bait usage, PL-distributed node degrees in observed PPI networks measured via aggregated AP-MS testing can emerge even if the ground truth interactome is an (empty) ER graph. Fourthly, we show through simulation that, already for very small false positive rates, binomially distributed ground truth networks generated with the ER model are equally likely origins for aggregated observed PPI networks as PL-distributed ground truth networks generated with the BA model. This finding is robust across different parameters for the false positive, the false negative, and the study acceptance rate.\n\nIt is important to note that the aggregated AP-MS testing model underlying our theoretical results (Proposition 1) is simplified in that we assume study bias to act only on the baits. More precisely, we assume that, in the individual studies, a bait is always tested against the entire proteome. In reality, this is not the case for at least three reasons: Firstly, possible interaction partners of a bait are restricted to the proteins expressed in the employed cell line. Second, several inherent properties of proteins correlate with their degrees. E.g., when considering only the subset of AP-MS studies in the here described network, the mass of a protein and its abundance are positively correlated with its degree ($p<10^{\u221216}$; Spearman correlation test; Appendix 1\u2014figure 1). Third, some studies use targeted proteomics approaches that restrict a priori which peptides can be detected. Moreover, our theoretical results are obtained by modeling the ground truth network as an ER graph, although it is of course very unlikely that this model correctly describes the biological interactome. We chose the ER model for Proposition 1 because ER graphs are extremely different from PL-distributed networks, and we wanted to show that, even for such radically different ground truths, PL-distributed bait usage and non-zero false positive rates can lead to PLs in the observed PPI networks. We hypothesize that similar results could be obtained for more realistic non-PL models such as random geometric graphs (Pr\u017eulj et al., 2004; Przulj et al., 2010) but do not provide a formal proof for this here.\n\nSimilarly, also the design of our simulation study is based on two major simplifications: First, we only consider ER and BA networks as possible models for the ground truth interactome, although most likely none of the two models fully captures the topology of the unknown true biological interactome. Here, this simplification serves as a conceptual framework which allows us to address the question on the origin of the PL behavior of observed PPI networks via $K$-NN classification. Second, our simulator assumes that study bias affects the emergence of aggregated observed PPI networks via a direct feedback loop (high-degree proteins are preferentially sampled for experimental testing). In reality, the feedback loop is much less direct: Study bias in the emergence of aggregated PPI networks is not only mediated via studies reporting PPIs but also and primarily via more indirect pathways such as over-representation of genes encoding highly studied proteins in gene annotation databases (Haynes et al., 2018). It is hence likely that real-world repeated PPI testing is slightly less sensitive to the experimental false positive rates than suggested by our simulations. However, in view of the huge margin between the uncovered tipping points (0.0625 to 2.5%) and the estimated false positive rates in AP-MS and Y2H testing (10\u201340% according to Armean et al., 2013), our conclusion remains valid that the topologies of observed PPI networks have little inferential value w. r. t. the unknown ground truth interactome.\n\nSome analyses in the study focus on the two most commonly used PPI detection methods AP-MS and Y2H, both of which rely on the selection of bait proteins to identify interacting partners. Our findings demonstrate that the frequency with which proteins are tested as bait significantly influences the degree distribution of the aggregated human PPI network. An additional complexity arising in AP-MS studies is that more than two interaction partners can be detected. These $n$-ary interactions are commonly transformed into binary interactions using either the spoke model, which reports all interactions with the bait protein (as used by IntAct, for example), or the matrix expansion model, which reports all pairwise interactions. Both expansion models can, in principle, introduce false positives and it would be interesting to consider the effect of the expansion model choice on the PL property in future work.\n\nCombined, Y2H and AP-MS account for more than 70% of all reported interactions in the network used here. Other, less commonly used methods such as protein structure-based approaches also depends on bait protein selection. Conversely, cross-linking mass spectrometry (XL-MS) does not require bait protein selection. XL-MS employs chemical cross-linkers on protein complexes within human cellular lysates, with mass spectrometry (MS) subsequently identifying peptides in close spatial proximity. Given its low assumed error rates and lack of study bias if applied to a proteome-wide scale, XL-MS has the potential to more accurately represent the true topology of the human PPI network. However, XL-MS studies have focused on specific complexes, organelles, or compartments through sample fractionation or purification (Graziadei and Rappsilber, 2022), likely introducing through those choices a similar type of bias that influences the observed degree distribution. Hence, a biased choice is applied and will affect the overall degree distribution in a similar manner as exemplified with other experimental methods here.\n\nWe point out several strategies that could help to reduce biases of PPI networks. Employing techniques that can detect PPIs with an FDR as low as 1% (Lenz et al., 2021) would considerably reduces the technical bias in detecting PPIs. Our study suggests a tipping point in the FPR at which study bias can no longer be tolerated, but this may in reality be higher or lower than what we anticipate here. It is thus not clear how robust techniques need to be to entirely avoid that study bias distorts the topology of observed PPI networks. However, even the use of an error-free technique would not mitigate pre-existing study bias, which is not just ingrained into existing PPI networks but also indirectly influences the choice of bait and prey proteins used in future studies. An alternative strategy is thus to systematically and objectively study PPIs without prior evidence for the relevance of a protein, a strategy currently followed by the HuRI project (Luck et al., 2020). Our results indicate that also the aggregation of non-PL studies tends to lead to networks with PL property, possibly because study bias present in individual studies is magnified in this process. In view of this, an interesting question for the future will be if the aggregation of study-bias-free studies such as HuRI will still favor the emergence of the PL property.\n\nFinally, there are also cost-effective ways to assess and address biases in PPI networks. For instance, we could show that the problem of study bias can be partially mitigated by relying on the information of prey proteins alone. An interesting observation we made was that accounting for this bias revealed a different set of hub proteins enriched for protein folding rather than disease genes. Further work will be needed to establish if true hub proteins exist in the PPI network and what their role is. For instance, it was previously claimed (Han et al., 2004) \u2014 and controversially discussed (Agarwal et al., 2010) \u2014 that the correlation of gene expression values between hub nodes with their interaction partners follow a bimodal distribution, leading to the distinction of the party (high correlation) and date (low correlation) hubs. In the future, it would be interesting to study if the ratio of party and date hubs changes when considering prey degree only. We also encourage the field to report negative interactions, since these could be used to define a reasonable study acceptance rate (ratio of positive and negative interactions, $\\lambda$ in our simulation) to limit the distorting effect of the FPR, whereas, in the current practice, even unique false positive interactions may be added to the aggregated PPI network.\n\nIn conclusion, our analysis supports the alternative hypothesis that the PL behavior observed in aggregated observed PPI networks cannot be treated per se as biologically motivated as the gene duplication model suggests. We face the issue that we currently have no means to reliably disentangle study and experimental bias in the node degree distribution. Our attempts to remove this bias led to differing results depending on the type of normalization we used. In all three cases, disease-associated proteins were demoted. Only the prey hub normalization revealed a significant functional enrichment where proteins such as chaperones that are involved in protein folding have been significantly enriched. While these results seem plausible, we cannot prove that this normalization indeed corrects for all conceivable forms of bias. Our results hence suggest that further work is needed to either perform additional studies that avoid known sources of bias or to develops a robust normalization that removes known biases from existing networks.\n\n## Methods\n\n### Analyzed protein-protein interaction networks\n\nWe retrieved human PPIs from IntAct (Orchard et al., 2014) (version of 2022-02-03 on https://ftp.ebi.ac.uk/pub/databases/intact/2022-02-03/psimitab/) and HIPPIE (Alanis-Lobato et al., 2017) (version 2.2 on http://cbdm-01.zdv.uni-mainz.de/~mschaefer/hippie/download.php). 78% of the interactions in IntAct are annotated with the information of which protein within the pair was used as a bait and which as a prey during the experimental determination of the interaction. To increase the total number of studies, we expanded the IntAct interactions by merging with HIPPIE. After that, we downloaded a list of all 20,401 human proteins from UniProt (Consortium, 2023) (only reviewed entries from Swiss-Prot/UniProt, https://www.uniprot.org/uniprotkb?facets=model_organism%3A9606&query=reviewed%3Atrue, version from December 13, 2022). We kept only interactions where both the proteins are in this list resulting in a network consisting of 471,693 interactions and 17,865 proteins were detected by 41,862 studies.\n\n### Testing the power law property of empirical distributions\n\nIn order to test if sequences of the proteins\u2019 node degrees or bait usages (numbers of times the proteins have been tested as a bait) are PL-distributed, we used the poweRlaw R package Gillespie, 2015 (version 0.70.6). The package implements methods proposed by Clauset et al., 2009. It estimates the best-fitting PL distribution to the data of the form\n\n$$\np(k)\u221dk^{\u2212\\alpha},\n$$\n\nwhere $\\alpha>1$ is the scaling exponent, $k\\geqk_{min}$ is the degree or the bait usage sequence, and $k_{min}\\geq1$ is the cutoff above which the PL distribution is fit to the data. The package estimates the $k_{min}$ via a minimization of the Kolmogorov\u2013Smirnov (KS) statistic and uses a maximum likelihood estimator to choose $\\alpha$. Subsequently, it carries out a goodness-of-fit test between the empirical data and the fitted PL model. Here, the KS statistic between the fitted model and the empirical distributions is compared to KS statistics between the fitted model and synthetic distributions sampled from the fitted model. Then, a p-value can be computed as the fraction of distances between the fitted model and the synthetic distributions that exceed the distance between the fitted model and the empirical distribution. Following the convention introduced by Clauset et al., 2009, we consider the PL distribution a plausible model for the empirical data if the p-value of the goodness-of-fit test exceeds $0.1$. In the poweRlaw R package, the p-value can be computed with the bootstrap_p function, which we ran with 100 (default parameter) bootstrap simulations.\n\nWe tested the PL property for each single study included in our aggregated network. We discarded studies where the used method failed to estimate the $k_{min}$ and hence could not test the PL hypothesis. Moreover, we filtered out studies for which more than 10% of the 100 bootstrapping simulations failed to produce meaningful results (as pointed out in the documentation of the poweRlaw package, this can occasionally happen if all values in the synthetically sampled distribution are below $k_{min}$). We applied those exclusion criteria to any analysis that required a PL computation. After these two filtering steps, the remaining studies are 1427 in total, of which 986 are PL-distributed ($p\\geq0.1$, goodness-of-fit test).\n\nWe retrieved the PubMed IDs in which each gene has been studied from PubMed (Sayers et al., 2022) (gene2pubmed file, downloaded on April 19, 2023 from https://ftp.ncbi.nih.gov/gene/DATA/) and we selected studies carried out only in human genes (114,548 in total). We calculated how many publications are associated with each gene and after we tested the resulting distribution for its PL property.\n\n### Aggregation of study-specific protein-protein interaction networks\n\nIn order to investigate if the PL property arises through the aggregation process, we randomly aggregated 100, 200, and 300 non-PL studies (of 441 in total) 1000 times and we tested the PL hypothesis of the degree distribution after the aggregation. We used a similar randomization strategy to test if there is an association between the degree and the bait usage distribution: We considered only non-PL studies with bait annotations (184 in total) and we randomly merged 50, 100, and 150 studies 1000 times. For each aggregated network, we tested the PL property of the degree and bait usage distribution. We used the one-sided Fisher\u2019s exact test to analyse any significant association between the two distributions.\n\n### Computing the degree distributions based on baits or prey only\n\nTo assess if the asymmetry in experimental design (i.e. number of baits and preys) affects the PL property, we focused on the 27 single-study networks with PL distribution, having more than 200 interactions (we removed one study with less than 10 bait-prey-annotated interactions) and for which we had bait and prey information. For each of them, we recalculated the degree distribution as follows: If, in the study under consideration, the number of baits is smaller than the number of preys, we only counted those interactions $(u,v)$ for the degree of $u$ where $u$ was tested as a prey. Like this, the degree of a protein only depends on interactions where it was tested as a prey not where it was tested as a bait. If a protein has been tested only as prey, its degree does not change. For studies with less prey than baits, we proceeded conversely and only counted $(u,v)$ for the degree of $u$ if $u$ has been tested as a bait. In other words, we recomputed the degrees as the prey-degree for studies with fewer baits than preys and as the bait-degree for studies with fewer preys than baits.\n\nAfter the degree recalculation, we computed the size balance between the number of baits and preys, which is defined as follows:\n\n$$\nSize balance={n^{bait}/n^{prey}if\u00a0n^{bait}\\leqn^{prey}n^{prey}/n^{bait}if\u00a0n^{bait}>n^{prey}\n$$\n\nIn order to test if the asymmetric design has an effect on PL property, we compared the size balances of studies that switch from PL to non-PL with the size balances of studies for which also the recomputed degree distributions are PL-distributed, using the one-sided Wilcoxon test.\n\n### Functional and disease properties of proteins\n\nWe performed functional and disease enrichment analyses of the top 50 hubs detected by the three strategies proposed to reveal the true hub proteins (prey hubs, normalized hubs, and Y2H hubs) and the top 50 hubs of our aggregated network. We used the enrichGO function of the clusterProfiler R package (Wu et al., 2021) (version 4.4.4) and the enrichDO function of the DOSE R package (Yu et al., 2015) (version 3.22.1) to perform the Gene and Disease Ontology analyses, respectively. We also performed pathway enrichment analyses (Reactome-based) using the enrichPathway function of the ReactomePA R package (Yu and He, 2016) (version 1.40). We used the FDR method to correct p-values and we took into account only terms with a $q$-value $<0.05$. For each enrichment analysis, we used the entire lists of genes from which we retrieved our hypothetical true hubs and all the genes in our aggregated network as background genes.\n\nTo investigate the biological functions of the most abundant human proteins, we retrieved protein abundance data from GTEx (Jiang et al., 2020) (https://gtexportal.org/home/downloads/egtex/proteomics), consisting of 201 samples from 32 normal human tissues. We removed proteins with more than 50% of NA values across all the samples (resulting in 8104 proteins), and we calculated the median abundance for each protein. We ordered the proteins according to the median (descending order) to perform the Gene Ontology enrichment analysis of the most abundant proteins (of different set sizes). We used the FDR method to correct p-values and we took into account only terms with a q-value <0.05. To test if there is a significant enrichment of chaperones among nervous system disease genes (in particular for schizophrenia and psychotic disorder), we retrieved the chaperone classification from UniProt and nervous system disease-related genes from Disease Ontology (Schriml et al., 2019) database using the DOSE R package (Yu et al., 2015).\n\nTo study the link between degree and protein properties, we used GTEx expression data and protein mass information from UniProt (by querying the web service provided at https://www.uniprot.org/id-mapping with the UniProt IDs of all proteins within our aggregated network).\n\n### Proof of proposition 1\n\nWe start with useful facts on edge probabilities. We begin by noting the lower and upper bounds on edge probabilities, based on the probability $p_{(u,v)}$ of an edge $uv$ occurring with $v$ as bait, and the probability $p_{(v,u)}$ of $uv$ occurring with $v$ as prey.\n\nLemma 1. For any ground truth graph $G$ and an observed PPI network $G_{obs}=(V,E_{obs})$, the probability $p_{uv}$ that an edge $uv$ occurs in $G_{obs}$ satisfies the following chain of inequalities.\n\n$$\np_{(u,v)}\\leqp_{uv}\\leqp_{(u,v)}+p_{(v,u)}.\n$$\n\nProof. We have $p_{uv}=p_{(u,v)}+p_{(v,u)}\u2212Pr[(u,v)\\inE_{obs}\u2227(v,u)\\inE_{% obs}]$. This immediately yields the second inequality $p_{uv}\\leqp_{(u,v)}+p_{(v,u)}$ because the last term is upper bounded by 0. Because of $p_{(v,u)}\\geqPr[(u,v)\\inE_{obs}\u2227(v,u)\\inE_{obs}]$, we have $p_{(u,v)}\\leqp_{uv}$. This proves the first inequality. \u25a1\n\nNote that these preceding statements apply independent of specific assumptions on the involved graphs. In the following, we will focus on more specific settings to demonstrate how non-PL distributions (such as in ER graphs) can give rise to observed PL distributions.\n\nLemma 2. If $G=(V,E)$ is an ER graph $H_{p}$, then the probability $p_{uv}$ that the edge $uv$ occurs in the observed PPI network $G_{obs}$ subject to the bait distribution $b$, false negative rate FNR, and false positive rate FPR is\n\n$$\np_{uv}=Pr[uv\\inE_{obs}]=p\u22c5(1\u2212FNR^{b(u)+b(v)})+(1\u2212p)\u22c5(1\u2212(1\u2212FPR)^{b(u)+b(v)}).\n$$\n\nProof. Because $G$ is an ER graph with edge probability $p$, we have $Pr[uv\\inE]=p$ and $Pr[(u,v)\u2209E]=1\u2212p$. We distinguish two cases:\n\nCombined, this yields $Pr[(u,v)\\inE_{obs}]=p\u22c5(1\u2212FNR^{b(u)+b(v)})+(1\u2212p)$ $\u22c5(1\u2212(1\u2212FPR)^{b(u)+b(v)})$, as claimed. \u25a1\n\nAs a special case, this implies the following statement about edges occurring purely because of the bait degree of one of its vertices:\n\nLemma 3. If $G=(V,E)$ is an ER graph $H_{p}$, then the probability $p_{(u,v)}$ that some edge $uv$ in the observed PPI network $G_{obs}=(V,E_{obs})$ occurs as the consequence of testing with $u$ as prey and $v$ as bait is\n\n$$\np_{(u,v)}=Pr[(u,v)\\inE_{obs}]=p\u22c5(1\u2212FNR^{b(v)})+(1\u2212p)\u22c5(1\u2212(1\u2212FPR)^{b(v)})\n$$\n\nNow we consider the case that $G$ is an ER graph with small $p$ and small FPR. For FPR sufficiently small, i.e., $a\u22c5FPR\\ino(1)$, the classic first-order binomial approximation of the respective edge probabilities work out as follows:\n\n$$\n(1\u2212FPR)^{a}\u22481\u2212a\u22c5FPR\n$$\n\nWith this simplification, we can express the expected degree of nodes as follows:\n\nLemma 4. Assume that $G$ is an ER graph on $n$ nodes with edge probability $p$ and that FPR is small. Then, for each node $v\\inV$, the expected degree satisfies\n\n$$\n(1\u2212p)FPR\u22c5((n\u22121)b(v))\\leqE[deg\u2061(v)]\\leq(1\u2212p)(FPR\u22c5(n\u22121)b(v))+A,\n$$\n\nwhere $B=\\sumu\\inVb(u)$ and $A=(pn+(1\u2212p)FPR\u22c5B)$.\n\nProof. Exploiting linearity of expectation, Lemma 1, Lemma 2, Lemma 3, and Equation 6, the expected degree of a node $v$ satisfies\n\n$$\n(1\u2212p)(FPR\u22c5(n\u22121)b(v))=(1\u2212p)\u22c5\\sumu\\inV\u2216{v}(FPR\u22c5b(v))\u2248(Equation6)(1\u2212p)\u22c5\\sumu\\inV\u2216{v}(1\u2212(1\u2212FPR)^{b(v)})\\leq(Lemma 3)\\sumu\\inV\u2216{v}p_{(u,v)}\\leq(Lemma 1)E[deg\u2061(v)]=\\sumu\\inV\u2216{v}p_{uv}=(Lemma 2)\\sumu\\inV\u2216{v}(p\u22c5(1\u2212FNR^{b(u)+b(v)})+(1\u2212p)\u22c5(1\u2212(1\u2212FPR)^{b(u)+b(v)}))\\leq\\sumu\\inV\u2216{v}p+\\sumu\\inV\u2216{v}(1\u2212p)\u22c5(1\u2212(1\u2212FPR)^{b(u)+b(v)})\\leqpn+(1\u2212p)\u22c5\\sumu\\inV\u2216{v}(1\u2212(1\u2212FPR)^{b(u)+b(v)})\u2248(Equation 6)pn+(1\u2212p)\u22c5\\sumu\\inV\u2216{v}(b(u)+b(v))FPR=pn+(1\u2212p)FPR\u22c5(B+(n\u22122)b(v))\\leq(pn+(1\u2212p)FPR\u22c5B)+(1\u2212p)(FPR\u22c5(n\u22121)b(v)),=A+(1\u2212p)(FPR\u22c5(n\u22121)b(v)),\n$$\n\nas claimed. \u25a1\n\nUnder suitable choice of parameters \u2014 e.g., $FPR\\inO(n^{\u22121})$ and $p\\inO(n^{\u22121})$ \u2014 this implies that the expected degree of a node $v$ in the observed network $G_{obs}$ corresponds to the bait usage $b(v)$ with some uniform additive correction corresponding to the average prey degree. For a sufficiently unbalanced PL distribution $b$, this implies that the overall distribution remains PL distributed, as the average bait usage $n^{\u22121}B$ is dominated by larger bait usages. For instance, the following choices suffice for this kind of behavior:\n\nLemma 5. Let $b(v)$ be PL-distributed with $\\alpha=3.13$ (just as the real-world bait usage distribution obtained from IntAct), $k_{min}=1$, and $Pr[b(v)=0]=0.24$ (corresponding to the fraction of proteins from IntAct with $b(v)=0$). Moreover, let $n\u226b1$, $FPR=n^{\u22121}$, and $G=H_{0}=(V,\u2205)$ be a large ER graph with $p=0$. Then $deg\u2061(v)$ in $G_{obs}$ is also PL-distributed with $\\alpha=3.13$.\n\nProof. With $\u03b6(x):=\\sumk=1\u221ek^{\u2212x}$ being Riemann\u2019s Zeta function, we have $\\sumk=1\u221ek^{\u22123.13}=\u03b6(3.13)\u22481.1782$. Thus,\n\n$$\nPr[b(v)=k]={0.24k=00.76\u22c5\u03b6(3.13)^{\u22121}\u22c5k^{\u22123.13}k\\geq1\n$$\n\nis a probability distribution following a power law with $\\alpha=3.13$. The average bait degree $n^{\u22121}B$ of a node $v$ works out to\n\n$$\nE[b(v)]=0.76\u22c5\u03b6(3.13)^{\u22121}\\sumk=1\u221ek\u22c5k^{\u22123.13}=0.76\u22c5\u03b6(3.13)^{\u22121}\\sumk=1\u221ek^{\u22122.13}=0.76\u22c5\\frac{\u03b6(2.13)}{\u03b6(3.13)}\u22480.99.\n$$\n\nBy Lemma 4, the expected degree of a node $v$ in $G_{obs}$ satisfies\n\n$$\n\\frac{n\u22121}{n}\u22c5b(v)\\leqE[deg\u2061(v)]\\leq\\frac{n\u22121}{n}\u22c5b(v)+A\u2248\\frac{n\u22121}{n}\u22c5b(v)+0.99.\n$$\n\nBecause of this uniformity, the actual distribution is tightly distributed around this expected value, so the expected degree distribution follows the distribution of $b$, with a small additive constant that becomes insignificant for larger $b(v)=k$. \u25a1\n\nSimilar behavior can be demonstrated for small positive $p$. It is straightforward to see that, in this case, the additive term $A$ gets increased by not more than $pn$, e. g., it becomes $1.99$ for $p=n^{\u22121}$. In summary, this yields the claims from Proposition 1 both for $p=0$ and for small $p$, summarized as follows:\n\nProposition 2. For an ER graph $G=(V,E)$, large $n\u226b1$, small $FPR\\inO(n^{\u22121})$ and $p\\inO(n^{\u22121})$, and PL-distributed bait usage $b(v)$ for the nodes, the expected degrees of the observed graph $G_{obs}$ are PL-distributed, following the degree distribution of $b$. In particular, this remains true for $p=0$, where the ground truth is the empty graph.\n\n### Design of simulation study\n\nWe simulated observed aggregated PPI networks $G^{\u2032}=(V,E^{\u2032})$ under study bias and different false negative rates FNR false positive rates FPR and from hypothetical ground truth networks $G=(V,E)$. The hypothetical ground truth networks were generated using the BA model, parameterized with the number of nodes $n$ and the number $m_{BA}$ of edges added per iteration, and the ER model, parameterized with the number of nodes $n$ and the number of edges $m_{ER}$. The degree distributions of BA graphs are known to follow the power law, while node degrees in ER graphs are binomially distributed. Details on choices of $n$, $m_{BA}$, and $m_{ER}$ are provided at the end of this subsection.\n\nWe start the simulation of $G^{\u2032}$ with a network on the nodes $V$ without any edges. Throughout the simulation, we add edges to the network by iteratively sampling lists of protein pairs $L_{i}\u2282V\\timesV$ and then simulating an experiment which, for all $(u,v)\\inL_{i}$, tests if the proteins $u$ and $v$ interact. The experiment returns a binary flag $result(uv)\\in{0,1}$, where 1 encodes \u2018$u$ and $v$ interact\u2019 and 0 encodes \u2018$u$ and $v$ do not interact.\u2019 The result probabilities depend on whether $uv$ is an edge in the ground truth network $G$, as well as on the false negative and false positive rates:\n\n$$\nPr[result(uv)=1]={1\u2212FNRif\u00a0uv\\inEFPRif\u00a0uv\u2209E\n$$\n\nTo simulate $G^{\u2032}$, we maintain symmetric matrices $A=(a_{u,v})\\inN^{V\\timesV}$ and $B=(b_{u,v})\\inN^{V\\timesV}$. The entry $a_{u,v}$ of the matrix $A$ counts the number of times the proteins $u$ and $v$ have been tested for interaction, while $b_{u,v}=\\sumi=1a_{u,v}result(uv)$ counts the number of times the experiments have returned that $u$ and $v$ interact. Both $a_{u,v}$ and $b_{u,v}$ are initially set to 0 and increase during simulation. Note that we always have $b_{u,v}\\leqa_{u,v}$. After each simulated experiment, $A$ and $B$ are updated. Subsequently, we update the edge set of the simulated network as\n\n$$\nE^{\u2032}={uv\u2223b_{u,v}>0\u2227b_{u,v}/a_{u,v}>\\gamma},\n$$\n\nwhere $\\gamma\\in[0,1)$ is the minimum required fraction of experiments with positive result. The simulation stops once we have carried out $N$ simulated experiments (see end of this subsection for details on choice of $N$). Note that the simulated experiments are asymmetric (i. e. $L_{i}$ is a list of ordered pairs) but both the hypothetical ground truth interactome $G$ and the simulated observed aggregated network $G^{\u2032}$ are undirected.\n\nTo sample the list $L_{i}$ of protein pairs to be tested for interaction in the $i$th experiment, three hyper-parameters are required: the number of baits $n_{i}^{bait}\\inN$, the number of preys $n_{i}^{prey}\\inN$, and the test method $M\\in{Y2H,AP-MS}$ (which does not depend on $i$). $L_{i}$ is constructed as $L_{i}=B_{i}\\timesP_{i}$, where $B_{i}\u2286V$ and $P_{i}\u2286V$ are sampled lists of baits and preys, respectively. To construct $B_{i}$, $n_{i}^{bait}$ proteins are sampled without replacement from $V$. A protein $u\\inV$ is included in $B_{i}$ with probability\n\n$$\nPr[u\\inB_{i}]\u221ddeg_{i\u22121}\u2061(u)+\\delta,\n$$\n\nwhere $deg_{i\u22121}\u2061(u)$ is $u$\u2019s node degree in the version of the simulated network $G^{\u2032}$ after $i\u22121$ experiments and $\\delta>0$ is a hyper-parameter encoding a baseline probability (set to $\\delta=0.01$ in our simulation study). $Pr(u\\inB_{i})$ hence increases with increasing node degree in the simulated observed network. This leads to a positive feedback loop in the selection of bait proteins, which models study bias in our simulation study.\n\nSince the selection of bait proteins is influenced by study bias both in AP-MS and in Y2H experiments, we use Equation 10 independently of the test method $M$. In contrast to AP-MS studies, also preys are actively selected in Y2H studies and are thus also directly subject to study bias. Consequently, we construct $P_{i}$ by sampling $n_{i}^{prey}$ proteins without replacement from $V$, where $u\\inV$ is included in $P_{i}$ with probability\n\n$$\nPr[u\\inP_{i}]\u221d{1if\u00a0M=AP-MSdeg_{i\u22121}\u2061(u)+\\deltaif\u00a0M=Y2H.\n$$\n\nWe carried out our simulations for $M\\in{AP-MS,Y2H}$, $FNR\\in{0.0,0.1,\u2026,0.4}$, $FPR\\in{0.0,0.4\u22c52^{\u22127},\u2026,0.4\u22c52^{\u22121},0.4}$, and $\\gamma\\in{0.0,0.5}$. The upper bound $0.4$ for FNR and FPR was chosen based on estimates for false positive and negative rates in AP-MS and Y2H experiments found in the literature Armean et al., 2013. The values for $\\gamma$ were chosen to mirror a scenario where a PPI is included in the aggregated PPI network as soon as it is reported by at least one study ($\\gamma=0.0$), as well as a scenario where only those PPIs $(u,v)$ are included for which the majority of studies testing $(u,v)$ report an interaction ($\\gamma=0.5$). Overall, we hence carried out simulations for 180 configurations $(M,FNR,FPR,\\gamma)$ of free hyper-parameters.\n\nThe remaining hyper-parameters were chosen based on the sizes of observed PPI networks obtained for IntAct. For $M=AP-MS$, we set the overall number of simulated experiments $N$ to the number of AP-MS studies annotated in IntAct where, for each PPI, information about the roles (bait or prey) of the interacting proteins is available. For each study $i$, $n_{i}^{bait}$ is set to the number of unique baits used in the study. The number of preys $n_{i}^{prey}$ is set to the number of proteins for which an interaction with at least one of the $n_{i}^{bait}$ baits is reported by study $i$. Here, we hence make the simplifying assumption that this set equals the set of prima facie detectable preys, given the technical setup of the study $i$. To set the hyper-parameters of the hypothetical ground truth networks $G=(V,E)$, we aggregated the PPIs from all $N$ IntAct AP-MS studies and then set $n$ and $m_{ER}$ to the numbers of nodes and edges in the aggregated network $G_{IntAct}$. To ensure that also the ground truth networks generated with the BA model have approximately the same number of edges as $G_{IntAct}$, we set\n\n$$\nm_{BA}=round(\\frac{n}{2}\u2212\\sqrt{\\frac{n^{2}}{4}\u2212m_{ER}})\n$$\n\nand initialized the generation of the BA graph with the star on $m_{BA}+1$ node (default in NetworkX). With this initialization, the number of edges in the final BA graph equals $|E|=m_{BA}+m_{BA}\u22c5(n\u2212(m_{BA}+1))$, which implies $|E|\u2248m_{ER}$ if $m_{BA}$ is chosen as specified in Equation 12. For $M=Y2H$, the hyper-parameters $N$, $n_{i}^{bait}$, $n$, $m_{ER}$, and $m_{BA}$ were chosen analogously, and $n_{i}^{prey}$ was set to the number of preys used in study $i$ (which, unlike in AP-MS studies, are actively selected in Y2H studies).\n\nFor each configuration $(M,FNR,FPR,\\gamma)$ of free hyper-parameters, we sought to answer the question whether, given $(M,FNR,FPR,\\gamma)$, the observed PPI network $G_{IntAct}$ is more similar to simulated networks that emerged from a PL-distributed or from a binomially distributed ground truth. For this, we simulated 50 networks $G^{\u2032}$ from BA ground truths (which we collect in the set $G_{BA}$) and 50 networks $G^{\u2032}$ from ER ground truths (which we collect in the set $G_{ER}$), using the simulator described above. Next, for each $G^{\u2032}\\inG_{BA}\u222aG_{ER}$, we computed the earth mover\u2019s distance $EMD(G_{IntAct},G^{\u2032})$ between the node degree distributions of $G_{IntAct}$ and $G^{\u2032}$, and then computed the normalized signed difference\n\n$$\n\u0394SOD=\\frac{\\sumG^{\u2032}\\inG_{BA}EMD(G_{IntAct},G^{\u2032})\u2212\\sumG^{\u2032}\\inG_{ER}EMD(G_{IntAct},G^{\u2032})}{\\sumG^{\u2032}\\inG_{ER}EMD(G_{IntAct},G^{\u2032})}\n$$\n\nbetween the sum of distances between the observed PPI network $G_{IntAct}$ and the simulated networks contained in $G_{BA}$ and $G_{ER}$, respectively. $\u0394SOD$ is negative if $G_{IntAct}$\u2019s degree distribution is closer to the degree distributions of simulated networks which emerged from a PL-distributed ground truth rather than from a binomially distributed ground truth. Positive values of $\u0394SOD$ are indicative of the opposite scenario.\n\nWe also addressed the question of whether the observed PPI network $G_{IntAct}$ is more likely to have emerged from a PL-distributed or from a binomially distributed biological interactome, using a simple $K$-NN classifier. More specifically, we sorted the simulated networks $G^{\u2032}\\inG_{BA}\u222aG_{ER}$ in increasing order w. r. t. $EMD(G_{IntAct},G^{\u2032})$, leading to a sorted list of networks $(G_{j}^{\u2032})_{j=1}^{100}$. For varying $K\\in{1,2,\u2026,100}$, we then computed\n\n$$\nPr[G_{IntAct}\u00a0emerged from PL-distributed biological interactome]=\\frac{1}{K}\u22c5\\sumj=1K[G_{j}^{\u2032}\\inG_{BA}]\n$$\n\n\n\n$$\nPr[G_{IntAct}\u00a0emerged from binomially distributed biological interactome]=\\frac{1}{K}\u22c5\\sumj=1K[G_{j}^{\u2032}\\inG_{ER}],\n$$\n\nwhere $[\u22c5]$ is the Iverson bracket (i.e. $[true]=1$ and $[false]=0$).\n\n### Code availability\n\nSource code to reproduce the results of the simulation study is available at https://github.com/bionetslab/ppi-network-simulation (copy archived at Blumenthal and Lucchetta, 2024). Source code to reproduce all other analyses is available at https://github.com/martaluc/powerlaw-ppi-network (copy archived at Lucchetta, 2023).\n",
+      "created_at": "2025-12-04T05:04:49.630796Z"
+    },
+    {
+      "id": "5a857952-df59-4c63-8773-5045c87fb9ad",
+      "submission_id": "70bca3a7-f4ab-4dca-b816-d74c0c67a64f",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Mariana G\u00f3mez-Schiavon, https://ror.org/01tmp8f25 Universidad Nacional Aut\u00f3noma de M\u00e9xico Mexico\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.99951.sa0](https://doi.org/10.7554/eLife.99951.sa0)\n\nThis manuscript makes an important contribution to the understanding of protein-protein interaction (PPI) networks by challenging the widely held assumption that their degree distributions uniformly follow a power law. The authors present convincing evidence that biases in study design, such as data aggregation and selective research focus, may contribute to the appearance of power-law-like distributions. While the power law assumption has already been questioned in network biology, the methodological rigor and correction procedures introduced here help to advance our understanding of PPI network structure.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Mariana G\u00f3mez-Schiavon, https://ror.org/01tmp8f25 Universidad Nacional Aut\u00f3noma de M\u00e9xico Mexico\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.99951.sa1](https://doi.org/10.7554/eLife.99951.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Emergence of power-law distributions in protein-protein interaction networks through study bias\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Aleksandra Walczak as the Senior Editor.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nWe have now received all reviewer feedback on your manuscript, and I am pleased to share that the reviewers are in agreement regarding its merit. All three reviewers find your work to be a valuable contribution to the field and are in favor of publication. They have pointed out a few minor revisions that would improve the overall clarity and precision of the manuscript, particularly in the mathematical formulation. We encourage you to address these points to ensure the best possible presentation of your work.\n\nPlease carefully review the detailed comments from the reviewers below. To briefly summarize the main points:\n\n1. Improve the presentation and accessibility for readers, especially in the sections presenting the mathematical results.\n\n2. Clarify the section titled \"Similarity of simulated to observed networks does not depend on the topology of ground truth network\" to ensure the key ideas are more clearly conveyed.\n\nReviewer #2 (Recommendations for the authors):\n\nMy main problem with the paper as it is now is presentational, i.e. the authors make an excessive effort to stress the formal aspects which is only partially successful. The main issue is Proposition 1, which is attempting to be a \"mathematical\" result but is presented in a vague way (\"even if the true graph is ER\", 'can be\", \"FPR [\u2026] are small\"). This is unhelpful and falls short of a true mathematical result where you'd expect some quantification (e.g. some bounds or asymptotic of probability of misclassification). Such a result would be difficult to prove I think because it also depends on the test used to decide whether a network is actually PL. As it stands, it is a purely existential result which is actually shown via simulation, and that is totally fine: you state the generative mechanism, and you show that under this ER+bias generative mechanism, you get PL in a variety of scenarios (of course you may wish to explore more scenario, like changing the threshold to declare a network PL, but I don't think it is necessary).\n\nReviewer #3 (Recommendations for the authors):\n\nBeyond of what was written in my public report, I would recommend to rewrite the section \"Similarity of simulated to observed networks does not depend on the topology of ground truth network\". It was difficult to follow and could benefit from a figure showing the concept.\n",
+      "created_at": "2025-12-04T05:04:49.630796Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T05:04:49.630796Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T05:04:49.630796Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "457e8999-e6fe-4802-b0a7-65cf43a5f54a",
+      "content_id": "c499ded3-3ea7-4a6a-bb15-985f7487634d",
+      "claim_id": "C1",
+      "claim": "Degree distributions in protein-protein interaction (PPI) networks are believed to follow a power law (PL).",
+      "claim_type": "EXPLICIT",
+      "source": "Degree distributions in protein-protein interaction (PPI) networks are believed to follow a power law (PL).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the current belief in the field, supported by citations in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:04:49.630796Z"
+    },
+    {
+      "id": "cc5afe31-4502-42d5-81a2-07b423144ee3",
+      "content_id": "c499ded3-3ea7-4a6a-bb15-985f7487634d",
+      "claim_id": "C2",
+      "claim": "Technical and study biases affect the experimental procedures for detecting PPIs.",
+      "claim_type": "EXPLICIT",
+      "source": "However, technical and study biases affect the experimental procedures for detecting PPIs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known fact in the abstract.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:04:49.630796Z"
+    },
+    {
+      "id": "f54865d6-8ea5-415f-a62f-69e3e4aa68e1",
+      "content_id": "c499ded3-3ea7-4a6a-bb15-985f7487634d",
+      "claim_id": "C3",
+      "claim": "Cancer-associated proteins have received disproportional attention.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, cancer-associated proteins have received disproportional attention.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as an example of study bias.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:04:49.630796Z"
+    },
+    {
+      "id": "a2ff97a5-2527-4c6f-bf6e-b083458bed60",
+      "content_id": "c499ded3-3ea7-4a6a-bb15-985f7487634d",
+      "claim_id": "C4",
+      "claim": "Bait proteins in large-scale experiments tend to have many false-positive interaction partners.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, bait proteins in large-scale experiments tend to have many false-positive interaction partners.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known issue with experimental methods.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:04:49.630796Z"
+    },
+    {
+      "id": "de4f63b9-aabb-47f1-aede-ca7ea0abc246",
+      "content_id": "c499ded3-3ea7-4a6a-bb15-985f7487634d",
+      "claim_id": "C5",
+      "claim": "Study bias and technical bias suffice to produce the observed PL distribution in PPI networks.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings are supported by mathematical models and extensive simulations, and indicate that study bias and technical bias suffice to produce the observed PL distribution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main finding of the study, supported by mathematical models and simulations described in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:04:49.630796Z"
+    },
+    {
+      "id": "b4eef3e7-fc4f-43c9-9471-cd205474e28a",
+      "content_id": "c499ded3-3ea7-4a6a-bb15-985f7487634d",
+      "claim_id": "C6",
+      "claim": "It is problematic to derive hypotheses about the topology of the true biological interactome from the PL distributions in observed PPI networks.",
+      "claim_type": "EXPLICIT",
+      "source": "It is, hence, problematic to derive hypotheses about the topology of the true biological interactome from the PL distributions in observed PPI networks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the study's findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:04:49.630796Z"
+    },
+    {
+      "id": "4c2a80fc-7dcc-48d1-b9f2-019383f86e2b",
+      "content_id": "c499ded3-3ea7-4a6a-bb15-985f7487634d",
+      "claim_id": "C9",
+      "claim": "PL-distributed networks have a small world property with relatively high resilience against random perturbations.",
+      "claim_type": "EXPLICIT",
+      "source": "Another feature of PL-distributed networks is their small world property, where a small network diameter leads to relatively high resilience against random perturbations (Cohen et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a cited property of PL-distributed networks.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:04:49.630796Z"
+    },
+    {
+      "id": "02971f93-a91d-40ae-99cb-d3fa9579c1f9",
+      "content_id": "c499ded3-3ea7-4a6a-bb15-985f7487634d",
+      "claim_id": "C10",
+      "claim": "The PL property seems to describe common features of diverse networks such as food webs, metabolic networks, the internet, and PPI networks.",
+      "claim_type": "EXPLICIT",
+      "source": "This commonality in the topology of real-world networks is considered a universal law, as it seems to describe common features of such diverse networks such as food webs, metabolic networks, the internet, and (PPI) networks (Jeong et al., 2001; Barab\u00e1si and Oltvai, 2004; Yook et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a cited claim about the universality of power laws in networks.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:04:49.630796Z"
+    },
+    {
+      "id": "50f99dbd-0493-44aa-a6be-bef30027af91",
+      "content_id": "c499ded3-3ea7-4a6a-bb15-985f7487634d",
+      "claim_id": "C11",
+      "claim": "Protein families involved in general biological processes such as protein folding, gene regulation, or post-translational modifications are very promiscuous and bind to a large number of other proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Protein families that are involved in general biological processes such as protein folding, gene regulation, or post-translational modifications are very promiscuous and bind to a large number of other proteins, whereas the majority of proteins show few interactions (Nobeli et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a cited biological explanation for the PL property.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:04:49.630796Z"
+    },
+    {
+      "id": "6739912f-ad2d-46a5-a593-c2c78580acab",
+      "content_id": "c499ded3-3ea7-4a6a-bb15-985f7487634d",
+      "claim_id": "C12",
+      "claim": "In the evolution of networks, new vertices attach preferentially to sites that are already well connected.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, it is crucial for the emergence of the PL property that, in the evolution of networks, 'new vertices attach preferentially to sites that are already well connected' (Barabasi and Albert, 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a cited mechanism for the emergence of power laws.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:04:49.630796Z"
+    },
+    {
+      "id": "ce0dbb94-9575-4d15-a7a2-80a2dc4a7079",
+      "content_id": "c499ded3-3ea7-4a6a-bb15-985f7487634d",
+      "claim_id": "C13",
+      "claim": "In the evolution of PPI networks, preferential attachment can be explained via gene duplication and subsequent mutation.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been suggested that, in the evolution of PPI networks, such preferential attachment can be explained via gene duplication and subsequent mutation (Pastor-Satorras et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a cited hypothesis about the biological mechanism.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:04:49.630796Z"
+    },
+    {
+      "id": "41e16a5b-628a-45eb-af5d-74d19c9235a6",
+      "content_id": "c499ded3-3ea7-4a6a-bb15-985f7487634d",
+      "claim_id": "C14",
+      "claim": "The assumption that PPI networks show a PL distribution has been codified in textbooks and training material.",
+      "claim_type": "EXPLICIT",
+      "source": "Today, the assumption that PPI networks show a PL distribution has been codified in textbooks (Barab\u00e1si and P\u00f3sfai, 2016) and training material (Mill\u00e1n, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to textbooks and training materials.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:04:49.630796Z"
+    },
+    {
+      "id": "37c561e6-4b41-48d3-82a5-3fe346fe88f7",
+      "content_id": "c499ded3-3ea7-4a6a-bb15-985f7487634d",
+      "claim_id": "C15",
+      "claim": "Some studies use PL fittings as quality criteria for their measured networks.",
+      "claim_type": "EXPLICIT",
+      "source": "Some studies use PL fittings as quality criteria for their measured networks Stelzl et al., 2005; others use topological protein properties ex- or implicitly for predicting disease genes (Xu and Li, 2006; Janyasupab et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to studies that use this approach.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:04:49.630796Z"
+    },
+    {
+      "id": "b8437668-4a0f-4c07-a375-4a77153c431d",
+      "content_id": "c499ded3-3ea7-4a6a-bb15-985f7487634d",
+      "claim_id": "C16",
+      "claim": "WGCNA and CEMiTool use the assumption that biological networks are PL-distributed to inform the automated choice of hyper-parameters.",
+      "claim_type": "EXPLICIT",
+      "source": "Further examples are the co-expression module inference tools WGCNA (Zhang and Horvath, 2005; Langfelder and Horvath, 2008) and CEMiTool (Russo et al., 2018). In these tools, the assumption that biological networks are PL-distributed directly informs the automated choice of hyper-parameters used to prune or transform the co-expression matrices, i.e., the hyper-parameters are chosen such that the resulting degree distributions yield good PL fits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to the tools and description of their methodology.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:04:49.630796Z"
+    },
+    {
+      "id": "a480f408-1fbd-4c9a-b8c3-71c9fda8413d",
+      "content_id": "c499ded3-3ea7-4a6a-bb15-985f7487634d",
+      "claim_id": "C17",
+      "claim": "WGCNA has more than 17,000 citations according to Google Scholar as of February 2024.",
+      "claim_type": "EXPLICIT",
+      "source": "Since WGCNA is extremely widely used (more than 17,000 citations according to Google Scholar as of February 2024), the PL assumption has hence potentially shaped the results reported in thousands of studies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a verifiable fact from Google Scholar.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:04:49.630796Z"
+    },
+    {
+      "id": "f53f8d07-8b2f-426b-b836-4c8c3ce68b4d",
+      "content_id": "c499ded3-3ea7-4a6a-bb15-985f7487634d",
+      "claim_id": "C18",
+      "claim": "PL properties of networks across disciplines often lack statistical support or mechanistic backing.",
+      "claim_type": "EXPLICIT",
+      "source": "Even though it was reported that PL properties of networks across disciplines often lack statistical support or mechanistic backing (Stumpf and Porter, 2012), the assumption that PPI networks are PL-distributed has become mainstream in the network biology field.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a cited critical perspective on power laws in networks.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:04:49.630796Z"
+    },
+    {
+      "id": "864a4c98-11a9-4e6f-8dbf-18ab9c882f54",
+      "content_id": "c499ded3-3ea7-4a6a-bb15-985f7487634d",
+      "claim_id": "C19",
+      "claim": "Various studies challenge the correctness of the claim that empirical PPI networks are scale-free or PL-distributed.",
+      "claim_type": "EXPLICIT",
+      "source": "Broadly, these studies can be categorized in two groups. Firstly, various studies exist that challenge the correctness of the claim that empirical PPI networks are scale-free or PL-distributed (Pr\u017eulj et al., 2004; Tanaka et al., 2005; Khanin and Wit, 2006; Lima-Mendez and van Helden, 2009; Przulj et al., 2010; Broido and Clauset, 2019)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to critical studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:04:49.630796Z"
+    },
+    {
+      "id": "f488bcd2-44b1-4d44-8911-2ce817f86ee9",
+      "content_id": "c499ded3-3ea7-4a6a-bb15-985f7487634d",
+      "claim_id": "C20",
+      "claim": "Some studies use goodness-of-fit tests to show that PL distributions do not provide a good fit of the empirical degree distributions in some empirical PPI networks.",
+      "claim_type": "EXPLICIT",
+      "source": "In some of these studies, goodness-of-fit tests are used to show that, in some empirical PPI networks, PL distributions actually do not provide a good fit of the empirical degree distributions (Tanaka et al., 2005; Khanin and Wit, 2006; Lima-Mendez and van Helden, 2009; Broido and Clauset, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to studies using this methodology.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:04:49.630796Z"
+    },
+    {
+      "id": "6a4b0b98-eebd-45c7-b321-ecc836bf662e",
+      "content_id": "c499ded3-3ea7-4a6a-bb15-985f7487634d",
+      "claim_id": "C21",
+      "claim": "Some studies argue that simulated non-PL networks are often more similar to empirical PPI networks than simulated PL networks.",
+      "claim_type": "EXPLICIT",
+      "source": "In others, networks are simulated using random network generation models that do and do not yield PL-distributed networks, and it is then argued that the simulated non-PL networks are often more similar to empirical PPI networks than the simulated PL networks (Pr\u017eulj et al., 2004; Przulj et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to studies using this approach.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:04:49.630796Z"
+    },
+    {
+      "id": "f82e18ce-0026-45b4-9e67-f3089105df7c",
+      "content_id": "c499ded3-3ea7-4a6a-bb15-985f7487634d",
+      "claim_id": "C22",
+      "claim": "Some studies challenge that PL distribution in empirical PPI networks is sufficient evidence to conclude that the same holds for the ground truth interactome.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, there are studies which concede (at least for the sake of the argument) that empirical PPI networks are PL-distributed, but challenge that this is sufficient evidence to conclude that the same holds for the ground truth interactome (Stumpf et al., 2005; Han et al., 2005; Deeds et al., 2006)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to critical studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:04:49.630796Z"
+    },
+    {
+      "id": "b5d45f41-cbcd-45b4-9847-97f515e681be",
+      "content_id": "c499ded3-3ea7-4a6a-bb15-985f7487634d",
+      "claim_id": "C23",
+      "claim": "The aggregated human PPI network consists of 41,862 studies and a total of 471,693 unique interactions among 17,865 proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "To confirm this, we aggregated a large human PPI network consisting of 41,862 studies and a total of 471,693 unique interactions among 17,865 proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is data from the study's analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:04:49.630796Z"
+    },
+    {
+      "id": "e816a579-066a-4e22-bbb6-861ddc6e6fa5",
+      "content_id": "c499ded3-3ea7-4a6a-bb15-985f7487634d",
+      "claim_id": "C25",
+      "claim": "When considering networks of size 200 or larger, there were approximately 3.5 times as many non-PL-distributed networks as compared to PL-distributed networks.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that when considering networks of size 200 or larger, there were approximately 3.5 times as many non-PL-distributed networks as compared to PL-distributed networks (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the analysis shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:04:49.630796Z"
+    },
+    {
+      "id": "2413fccd-6666-4792-ab67-d6ed6a44128b",
+      "content_id": "c499ded3-3ea7-4a6a-bb15-985f7487634d",
+      "claim_id": "C26",
+      "claim": "84% of the 739 single-study networks with at most 20 PPIs are classified as PL-distributed.",
+      "claim_type": "EXPLICIT",
+      "source": "E. g., 84% of the 739 single-study networks with at most 20 PPIs (a network size which we consider unlikely to lead to reasonable degree distribution fits) are classified as PL-distributed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:04:49.630796Z"
+    },
+    {
+      "id": "0f678ac7-2b54-4ab2-9d7f-d42299af38e4",
+      "content_id": "c499ded3-3ea7-4a6a-bb15-985f7487634d",
+      "claim_id": "C27",
+      "claim": "More than 50% of PL aggregated networks were obtained after the aggregation of non-PL studies.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 3A, we obtained more than 50% of PL aggregated networks after the aggregation of non-PL studies.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the aggregation experiment shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:04:49.630796Z"
+    },
+    {
+      "id": "5684f06c-a6d7-406d-8211-7735a51a9484",
+      "content_id": "c499ded3-3ea7-4a6a-bb15-985f7487634d",
+      "claim_id": "C28",
+      "claim": "The more studies merged, the greater the fraction of PL studies (from 53 to 83%).",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, the more studies we merged, the greater the fraction of PL studies (from 53 to 83%), demonstrating that the PL property can emerge from the aggregation of non-PL networks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the aggregation experiment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:04:49.630796Z"
+    },
+    {
+      "id": "6505bc80-9baa-4558-ba6f-ac3d8e64053f",
+      "content_id": "c499ded3-3ea7-4a6a-bb15-985f7487634d",
+      "claim_id": "C34",
+      "claim": "In 9 out of 27 cases, PL degree distributions were turned into non-PL degree distributions by applying bait usage correction.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that in 9 out of the 27 cases, we turned PL degree distributions into non-PL degree distributions by applying this correction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the correction analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:04:49.630796Z"
+    },
+    {
+      "id": "1f316dc4-77bd-45f3-b31d-f34a4ed12351",
+      "content_id": "c499ded3-3ea7-4a6a-bb15-985f7487634d",
+      "claim_id": "C36",
+      "claim": "Prey hubs are most strongly enriched for 'protein folding' and 'chaperone-mediated protein folding'.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we observed that the prey hubs are most strongly enriched for 'protein folding' and 'chaperone-mediated protein folding' (Figure 6A, Figure 6\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from functional enrichment analysis shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:04:49.630796Z"
+    },
+    {
+      "id": "1ff38c77-64f1-4fe3-adc4-3c8424405730",
+      "content_id": "c499ded3-3ea7-4a6a-bb15-985f7487634d",
+      "claim_id": "C37",
+      "claim": "The majority of human proteins require assistance in folding by chaperones.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the majority of human proteins require assistance in folding by chaperones (Fink, 1999), they might indeed be true hub proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a cited biological fact.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:04:49.630796Z"
+    },
+    {
+      "id": "92f2bb1c-af73-40e4-9457-be2a1bdf0a3c",
+      "content_id": "c499ded3-3ea7-4a6a-bb15-985f7487634d",
+      "claim_id": "C38",
+      "claim": "Chaperones compose 10% of the cellular proteome mass in humans.",
+      "claim_type": "EXPLICIT",
+      "source": "As chaperones compose 10% of the cellular proteome mass in humans (Finka and Goloubinoff, 2013), we were concerned that the enrichment of chaperones among the prey hubs could be an artifact of a detection bias of AP-MS toward highly abundant proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a cited biological fact.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:04:49.630796Z"
+    },
+    {
+      "id": "3dfae510-f9ee-428c-a127-319be76117a1",
+      "content_id": "c499ded3-3ea7-4a6a-bb15-985f7487634d",
+      "claim_id": "C39",
+      "claim": "Uncorrected hubs are associated with many different types of diseases, in particular with cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "The disease gene enrichment analysis confirms the previous observation that uncorrected hubs are associated with many different types of diseases (Figure 6\u2014source data 1), in particular with cancer (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from disease enrichment analysis shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:04:49.630796Z"
+    },
+    {
+      "id": "a1481653-aeac-4d01-8404-b52dcd6fd82c",
+      "content_id": "c499ded3-3ea7-4a6a-bb15-985f7487634d",
+      "claim_id": "C40",
+      "claim": "Prey hubs exhibit an enrichment of diseases related to the nervous system.",
+      "claim_type": "EXPLICIT",
+      "source": "Prey hubs exhibit an enrichment of diseases related to the nervous system (though much weaker as compared to the enrichment of cancer among the uncorrected hubs).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from disease enrichment analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:04:49.630796Z"
+    },
+    {
+      "id": "3fe15635-3478-408a-a404-a65f1d663b4d",
+      "content_id": "c499ded3-3ea7-4a6a-bb15-985f7487634d",
+      "claim_id": "C41",
+      "claim": "Normalized and Y2H hubs do not show any significant enrichment in diseases.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, normalized and Y2H hubs do not show any significant enrichment in diseases, challenging the idea that disease genes per se have a higher connectivity in PPI networks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from disease enrichment analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:04:49.630796Z"
+    },
+    {
+      "id": "7d9e12cc-aafa-4a0a-85b2-f38e481243d0",
+      "content_id": "c499ded3-3ea7-4a6a-bb15-985f7487634d",
+      "claim_id": "C43",
+      "claim": "Protein misfolding is a hallmark of many nervous system diseases.",
+      "claim_type": "EXPLICIT",
+      "source": "This is likely because protein misfolding is a hallmark of many nervous system diseases (Tittelmeier et al., 2020; Nucifora et al., 2019) and indeed chaperones play a role in the prevention of misfolding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a cited biological fact.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:04:49.630796Z"
+    },
+    {
+      "id": "2de30781-01ba-4a17-817a-d804540e2022",
+      "content_id": "c499ded3-3ea7-4a6a-bb15-985f7487634d",
+      "claim_id": "C47",
+      "claim": "The observed PL behavior of empirical PPI networks obtained via aggregation of AP-MS studies tells us very little about the topology of the ground truth interactome.",
+      "claim_type": "EXPLICIT",
+      "source": "The results summarized above hence indicate that the observed PL behavior of empirical PPI networks obtained via aggregation of AP-MS studies tells us very little about the topology of the ground truth interactome and is even compatible with binomially distributed node degrees in the ground truth interactome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the simulation results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:04:49.630796Z"
+    },
+    {
+      "id": "b7f01469-7409-4ac9-9f2d-de7fc85ce565",
+      "content_id": "c499ded3-3ea7-4a6a-bb15-985f7487634d",
+      "claim_id": "C48",
+      "claim": "The PPI network obtained by aggregating all Y2H studies is not PL-distributed (p=0).",
+      "claim_type": "EXPLICIT",
+      "source": "A likely explanation for this is that, unlike the PPI network obtained by aggregating all AP-MS studies annotated in IntAct, the PPI network obtained by aggregating all Y2H studies is itself not PL-distributed (Figure 8\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from statistical testing shown in Figure 8\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:04:49.630796Z"
+    },
+    {
+      "id": "0f48a134-64c9-47a4-975b-c3f1bc310171",
+      "content_id": "c499ded3-3ea7-4a6a-bb15-985f7487634d",
+      "claim_id": "C49",
+      "claim": "The false negative rate did not have a strong effect on the simulation results.",
+      "claim_type": "EXPLICIT",
+      "source": "For both simulated AP-MS and simulated Y2H testing, the false negative rate did not have a strong effect on the results (see small row-wise variances in the heatmaps shown in Figure 8, Figure 8\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the simulation results shown in the figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:04:49.630796Z"
+    },
+    {
+      "id": "607f553c-b4ae-46d9-8444-a06d5beddb43",
+      "content_id": "c499ded3-3ea7-4a6a-bb15-985f7487634d",
+      "claim_id": "C50",
+      "claim": "Active module discovery methods perform equally well on real and random networks in which the node degree is preserved.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, it was shown that active module discovery methods perform equally well on real and random networks in which the node degree is preserved (Lazareva et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a cited finding from the literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:04:49.630796Z"
+    },
+    {
+      "id": "6d3e19e5-2b8b-417e-8ab2-ef19964ec45e",
+      "content_id": "c499ded3-3ea7-4a6a-bb15-985f7487634d",
+      "claim_id": "C52",
+      "claim": "Y2H and AP-MS account for more than 70% of all reported interactions in the network used in this study.",
+      "claim_type": "EXPLICIT",
+      "source": "Combined, Y2H and AP-MS account for more than 70% of all reported interactions in the network used here.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistic about the data used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:04:49.630796Z"
+    },
+    {
+      "id": "f10a05ce-9bb5-408b-b10e-d6ecfc648bc5",
+      "content_id": "c499ded3-3ea7-4a6a-bb15-985f7487634d",
+      "claim_id": "C53",
+      "claim": "XL-MS does not require bait protein selection.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, cross-linking mass spectrometry (XL-MS) does not require bait protein selection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the methodology of XL-MS.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:04:49.630796Z"
+    },
+    {
+      "id": "7de7062d-1770-4b23-a42b-d65644f7d150",
+      "content_id": "c499ded3-3ea7-4a6a-bb15-985f7487634d",
+      "claim_id": "C54",
+      "claim": "XL-MS employs chemical cross-linkers on protein complexes within human cellular lysates, with mass spectrometry subsequently identifying peptides in close spatial proximity.",
+      "claim_type": "EXPLICIT",
+      "source": "XL-MS employs chemical cross-linkers on protein complexes within human cellular lysates, with mass spectrometry (MS) subsequently identifying peptides in close spatial proximity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the XL-MS methodology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:04:49.630796Z"
+    },
+    {
+      "id": "48cab49f-58fc-43cd-b987-0dc278426c0b",
+      "content_id": "c499ded3-3ea7-4a6a-bb15-985f7487634d",
+      "claim_id": "C55",
+      "claim": "Techniques that can detect PPIs with an FDR as low as 1% would considerably reduce the technical bias in detecting PPIs.",
+      "claim_type": "EXPLICIT",
+      "source": "Employing techniques that can detect PPIs with an FDR as low as 1% (Lenz et al., 2021) would considerably reduces the technical bias in detecting PPIs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a suggestion based on cited methodology.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:04:49.630796Z"
+    },
+    {
+      "id": "071b8c7b-c70e-419c-bfb3-9afb445a6382",
+      "content_id": "c499ded3-3ea7-4a6a-bb15-985f7487634d",
+      "claim_id": "C56",
+      "claim": "The HuRI project is currently following a strategy to systematically and objectively study PPIs without prior evidence for the relevance of a protein.",
+      "claim_type": "EXPLICIT",
+      "source": "An alternative strategy is thus to systematically and objectively study PPIs without prior evidence for the relevance of a protein, a strategy currently followed by the HuRI project (Luck et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a cited example of an alternative approach.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:04:49.630796Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "cbb6c767-2dc3-420d-82a6-a053f69a6838",
+      "content_id": "c499ded3-3ea7-4a6a-bb15-985f7487634d",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Analysis of 41,862 studies comprising 471,693 interactions among 17,865 proteins reveals that most single-study PPI networks are not power law (PL)-distributed. When considering networks of size 200 or larger, non-PL-distributed networks outnumber PL-distributed networks by approximately 3.5 to 1, though smaller networks (\u226420 PPIs) are predominantly classified as PL-distributed (84%), likely due to poor fit quality.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23, C25, and C26 provide consistent empirical evidence from a large-scale analysis. The observation that the ratio of non-PL to PL networks depends on network size is appropriately qualified, with the authors acknowledging that small network classifications may be artifacts. The data directly supports the conclusion that individual studies typically do not exhibit PL distributions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T05:04:49.630796Z"
+    },
+    {
+      "id": "57c0a461-5ea3-4ee6-8f7a-06f4ca31658a",
+      "content_id": "c499ded3-3ea7-4a6a-bb15-985f7487634d",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Aggregation of non-PL studies can produce PL-distributed networks. Random merging of 100, 200, and 300 non-PL studies yielded PL aggregated networks in more than 50% of cases, with the fraction increasing from 53% to 83% as more studies were merged.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27 and C28 present results from systematic randomization experiments (1000 iterations each) showing that PL properties emerge through aggregation. The dose-response relationship (more studies \u2192 higher PL fraction) strengthens the causal inference. The experimental design appropriately tests the aggregation hypothesis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T05:04:49.630796Z"
+    },
+    {
+      "id": "2a096761-ca78-4d59-9011-507a04506450",
+      "content_id": "c499ded3-3ea7-4a6a-bb15-985f7487634d",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Correcting for bait usage asymmetry converted PL degree distributions to non-PL distributions in 9 out of 27 cases (33%) among single-study networks with PL distribution, more than 200 PPIs, and available bait/prey information.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C34 reports a specific empirical result from applying a defined correction method. The result is quantified and the denominator is clearly specified. However, the evaluation would be strengthened by statistical testing of whether networks that switched differ systematically from those that didn't (addressed in C5 with p=0.038).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T05:04:49.630796Z"
+    },
+    {
+      "id": "aa3f6ea4-5f6d-4c11-b3e2-718b69de2ff9",
+      "content_id": "c499ded3-3ea7-4a6a-bb15-985f7487634d",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Prey hubs (corrected for bait usage bias) are most strongly enriched for protein folding and chaperone-mediated protein folding functions. This enrichment is biologically plausible given that most human proteins require chaperone assistance for folding, and chaperones compose 10% of cellular proteome mass.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C38 present functional enrichment results with biological context. The enrichment analysis (C36) is supported by cited biological facts (C37, C38) that provide mechanistic plausibility. The authors appropriately considered and ruled out protein abundance as a confounding factor (Figure 6\u2014figure supplement 1), strengthening the interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T05:04:49.630796Z"
+    },
+    {
+      "id": "5fdca30d-1c1b-4d53-a352-a0df2505ebb8",
+      "content_id": "c499ded3-3ea7-4a6a-bb15-985f7487634d",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Disease enrichment patterns differ dramatically between corrected and uncorrected hub definitions. Uncorrected hubs are strongly associated with cancer, prey hubs show weak enrichment for nervous system diseases, while normalized and Y2H hubs show no significant disease enrichment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C41 present consistent disease enrichment results across different hub definitions. The contrasting patterns support the hypothesis that study bias inflates disease associations. However, the claim that this \"challenges the idea that disease genes per se have a higher connectivity\" (C41) is somewhat overstated\u2014it shows that the METHOD of identifying hubs matters, not necessarily that disease genes lack higher connectivity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T05:04:49.630796Z"
+    },
+    {
+      "id": "8c432754-7566-48be-b271-7163d5cc2692",
+      "content_id": "c499ded3-3ea7-4a6a-bb15-985f7487634d",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The enrichment of nervous system diseases among prey hubs is explained by the role of chaperones in preventing protein misfolding, which is a hallmark of many nervous system diseases.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C43 provides a mechanistic explanation supported by citations and is consistent with the observed enrichment of both chaperones and nervous system diseases among prey hubs. The overlap analysis (Figure 6\u2014figure supplement 3) showing significant enrichment of chaperones among schizophrenia and psychotic disorder genes provides additional support.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T05:04:49.630796Z"
+    },
+    {
+      "id": "da148796-e820-44c0-ba5e-32ed2a59323b",
+      "content_id": "c499ded3-3ea7-4a6a-bb15-985f7487634d",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Mathematical models and simulations demonstrate that study bias and technical bias are sufficient to produce observed PL distributions in PPI networks, and that observed PL behavior in empirical networks tells us very little about the topology of the ground truth interactome.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5 and C47 represent the central conclusion supported by Proposition 1 (mathematical proof), simulations showing PL emergence from empty or binomial ground truths, and empirical analyses of bait usage and aggregation effects. The mathematical framework is rigorous, though simplified. The simulation results consistently show that PL-distributed and binomially distributed ground truths become indistinguishable at realistic false positive rates.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T05:04:49.630796Z"
+    },
+    {
+      "id": "20978597-155c-4f23-a462-cece5d8d68ee",
+      "content_id": "c499ded3-3ea7-4a6a-bb15-985f7487634d",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Simulation results for Y2H testing show similar patterns to AP-MS, with even smaller tipping points in false positive rates. The aggregated Y2H network from IntAct is not PL-distributed (p=0), and false negative rates had minimal effect on simulation outcomes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48 and C49 present simulation results for Y2H as a complementary analysis to AP-MS. The observation that the Y2H aggregated network is not PL-distributed provides a plausible explanation for the lower tipping points. The robustness to false negative rate variation (shown by small row-wise variance in heatmaps) strengthens confidence in the findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T05:04:49.630796Z"
+    },
+    {
+      "id": "7f2ba673-a228-471b-93e7-8ba923dcbcfd",
+      "content_id": "c499ded3-3ea7-4a6a-bb15-985f7487634d",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The field widely believes that PPI networks follow power law distributions, with this assumption codified in textbooks and supported by biological explanations including preferential attachment through gene duplication and the promiscuity of proteins involved in general cellular processes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C9-C14 establish the current state of knowledge in the field through multiple citations. These are appropriately characterized as beliefs and assumptions rather than proven facts. The claims accurately represent the mainstream view that the manuscript challenges, providing necessary context for the study's motivation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T05:04:49.630796Z"
+    },
+    {
+      "id": "a673ece3-7c98-4ecf-92c0-52e128a4252d",
+      "content_id": "c499ded3-3ea7-4a6a-bb15-985f7487634d",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The PL assumption has practical consequences in network biology, with tools like WGCNA and CEMiTool using PL-distributed network assumptions to inform automated parameter choices. WGCNA's widespread use (>17,000 citations) means this assumption has potentially shaped thousands of studies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C17 document the practical impact of the PL assumption with specific examples and verifiable citation counts. The description of how WGCNA and CEMiTool use the PL assumption is supported by citations to the tools' documentation. This establishes the importance of critically examining the PL assumption.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T05:04:49.630796Z"
+    },
+    {
+      "id": "13aa8705-ec85-469e-bcd2-3bbce60d988d",
+      "content_id": "c499ded3-3ea7-4a6a-bb15-985f7487634d",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Critical voices have challenged the PL assumption in PPI networks through two main approaches: (1) demonstrating that empirical networks often fail goodness-of-fit tests or are better fit by non-PL models, and (2) arguing that even if empirical networks are PL-distributed, this doesn't prove the ground truth interactome has the same property.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C22 accurately summarize prior critical work through multiple citations. The categorization into two groups of criticism is logical and well-supported. This literature review appropriately positions the current work within ongoing debates about network topology.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T05:04:49.630796Z"
+    },
+    {
+      "id": "9362556b-4bae-41f0-93a5-e7152fbbdf10",
+      "content_id": "c499ded3-3ea7-4a6a-bb15-985f7487634d",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Technical and study biases affect PPI detection procedures, including disproportionate attention to cancer-associated proteins and false-positive interaction partners for bait proteins in large-scale experiments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2-C4 state known issues in the field that motivate the study. These are presented as established knowledge rather than novel findings. The claims are reasonable characterizations of recognized biases in PPI detection, though C4 could benefit from more specific quantification.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T05:04:49.630796Z"
+    },
+    {
+      "id": "ac43811f-c07f-427c-a80f-7d7e5d68a209",
+      "content_id": "c499ded3-3ea7-4a6a-bb15-985f7487634d",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "It is problematic to derive hypotheses about the topology of the true biological interactome from PL distributions in observed PPI networks.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C6 represents the main conclusion of the manuscript, supported by the convergence of multiple lines of evidence: mathematical proofs, simulations, empirical analyses of aggregation effects, and bait usage corrections. The conclusion is appropriately cautious, stating it is \"problematic\" rather than \"impossible\" to make such inferences.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T05:04:49.630796Z"
+    },
+    {
+      "id": "96db556e-faab-4ab5-9c7a-d05ebfc7ea48",
+      "content_id": "c499ded3-3ea7-4a6a-bb15-985f7487634d",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Active module discovery methods perform equally well on real and random networks where node degree is preserved, suggesting these methods learn from node degree rather than network structure.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C50 cites a specific finding from Lazareva et al., 2021. This is appropriately used to support the broader argument about the importance of understanding degree distributions. The claim is accurately represented as a cited finding rather than a result of the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T05:04:49.630796Z"
+    },
+    {
+      "id": "239811dc-de10-4747-82e0-4f3c9fc68cfe",
+      "content_id": "c499ded3-3ea7-4a6a-bb15-985f7487634d",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Y2H and AP-MS account for more than 70% of reported interactions in the analyzed network. Unlike these methods which require bait selection, XL-MS employs chemical cross-linkers on protein complexes and identifies peptides in close spatial proximity without bait selection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C54 provide methodological context about PPI detection methods. C52 is a verifiable statistic from the study's data. C53-C54 accurately describe XL-MS methodology as an alternative approach. These claims appropriately contextualize the scope and limitations of the study's focus on bait-dependent methods.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T05:04:49.630796Z"
+    },
+    {
+      "id": "a43cb1a8-4249-4af0-94d3-d6b6887033da",
+      "content_id": "c499ded3-3ea7-4a6a-bb15-985f7487634d",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Future strategies to reduce bias include employing techniques with FDR as low as 1% to reduce technical bias, and systematic unbiased approaches like the HuRI project that study PPIs without prior evidence for protein relevance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C56 propose future directions based on the study's findings and cite relevant examples. These are appropriately framed as suggestions rather than tested solutions. The proposals are logical extensions of the identified problems, though their effectiveness remains to be demonstrated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T05:04:49.630796Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "b5d45f41-cbcd-45b4-9847-97f515e681be",
+      "result_id": "cbb6c767-2dc3-420d-82a6-a053f69a6838"
+    },
+    {
+      "claim_id": "e816a579-066a-4e22-bbb6-861ddc6e6fa5",
+      "result_id": "cbb6c767-2dc3-420d-82a6-a053f69a6838"
+    },
+    {
+      "claim_id": "2413fccd-6666-4792-ab67-d6ed6a44128b",
+      "result_id": "cbb6c767-2dc3-420d-82a6-a053f69a6838"
+    },
+    {
+      "claim_id": "0f678ac7-2b54-4ab2-9d7f-d42299af38e4",
+      "result_id": "57c0a461-5ea3-4ee6-8f7a-06f4ca31658a"
+    },
+    {
+      "claim_id": "5684f06c-a6d7-406d-8211-7735a51a9484",
+      "result_id": "57c0a461-5ea3-4ee6-8f7a-06f4ca31658a"
+    },
+    {
+      "claim_id": "6505bc80-9baa-4558-ba6f-ac3d8e64053f",
+      "result_id": "2a096761-ca78-4d59-9011-507a04506450"
+    },
+    {
+      "claim_id": "1f316dc4-77bd-45f3-b31d-f34a4ed12351",
+      "result_id": "aa3f6ea4-5f6d-4c11-b3e2-718b69de2ff9"
+    },
+    {
+      "claim_id": "1ff38c77-64f1-4fe3-adc4-3c8424405730",
+      "result_id": "aa3f6ea4-5f6d-4c11-b3e2-718b69de2ff9"
+    },
+    {
+      "claim_id": "92f2bb1c-af73-40e4-9457-be2a1bdf0a3c",
+      "result_id": "aa3f6ea4-5f6d-4c11-b3e2-718b69de2ff9"
+    },
+    {
+      "claim_id": "3dfae510-f9ee-428c-a127-319be76117a1",
+      "result_id": "5fdca30d-1c1b-4d53-a352-a0df2505ebb8"
+    },
+    {
+      "claim_id": "a1481653-aeac-4d01-8404-b52dcd6fd82c",
+      "result_id": "5fdca30d-1c1b-4d53-a352-a0df2505ebb8"
+    },
+    {
+      "claim_id": "3fe15635-3478-408a-a404-a65f1d663b4d",
+      "result_id": "5fdca30d-1c1b-4d53-a352-a0df2505ebb8"
+    },
+    {
+      "claim_id": "7d9e12cc-aafa-4a0a-85b2-f38e481243d0",
+      "result_id": "8c432754-7566-48be-b271-7163d5cc2692"
+    },
+    {
+      "claim_id": "de4f63b9-aabb-47f1-aede-ca7ea0abc246",
+      "result_id": "da148796-e820-44c0-ba5e-32ed2a59323b"
+    },
+    {
+      "claim_id": "2de30781-01ba-4a17-817a-d804540e2022",
+      "result_id": "da148796-e820-44c0-ba5e-32ed2a59323b"
+    },
+    {
+      "claim_id": "b7f01469-7409-4ac9-9f2d-de7fc85ce565",
+      "result_id": "20978597-155c-4f23-a462-cece5d8d68ee"
+    },
+    {
+      "claim_id": "0f48a134-64c9-47a4-975b-c3f1bc310171",
+      "result_id": "20978597-155c-4f23-a462-cece5d8d68ee"
+    },
+    {
+      "claim_id": "457e8999-e6fe-4802-b0a7-65cf43a5f54a",
+      "result_id": "7f2ba673-a228-471b-93e7-8ba923dcbcfd"
+    },
+    {
+      "claim_id": "4c2a80fc-7dcc-48d1-b9f2-019383f86e2b",
+      "result_id": "7f2ba673-a228-471b-93e7-8ba923dcbcfd"
+    },
+    {
+      "claim_id": "02971f93-a91d-40ae-99cb-d3fa9579c1f9",
+      "result_id": "7f2ba673-a228-471b-93e7-8ba923dcbcfd"
+    },
+    {
+      "claim_id": "50f99dbd-0493-44aa-a6be-bef30027af91",
+      "result_id": "7f2ba673-a228-471b-93e7-8ba923dcbcfd"
+    },
+    {
+      "claim_id": "6739912f-ad2d-46a5-a593-c2c78580acab",
+      "result_id": "7f2ba673-a228-471b-93e7-8ba923dcbcfd"
+    },
+    {
+      "claim_id": "ce0dbb94-9575-4d15-a7a2-80a2dc4a7079",
+      "result_id": "7f2ba673-a228-471b-93e7-8ba923dcbcfd"
+    },
+    {
+      "claim_id": "41e16a5b-628a-45eb-af5d-74d19c9235a6",
+      "result_id": "7f2ba673-a228-471b-93e7-8ba923dcbcfd"
+    },
+    {
+      "claim_id": "37c561e6-4b41-48d3-82a5-3fe346fe88f7",
+      "result_id": "a673ece3-7c98-4ecf-92c0-52e128a4252d"
+    },
+    {
+      "claim_id": "b8437668-4a0f-4c07-a375-4a77153c431d",
+      "result_id": "a673ece3-7c98-4ecf-92c0-52e128a4252d"
+    },
+    {
+      "claim_id": "a480f408-1fbd-4c9a-b8c3-71c9fda8413d",
+      "result_id": "a673ece3-7c98-4ecf-92c0-52e128a4252d"
+    },
+    {
+      "claim_id": "f53f8d07-8b2f-426b-b836-4c8c3ce68b4d",
+      "result_id": "13aa8705-ec85-469e-bcd2-3bbce60d988d"
+    },
+    {
+      "claim_id": "864a4c98-11a9-4e6f-8dbf-18ab9c882f54",
+      "result_id": "13aa8705-ec85-469e-bcd2-3bbce60d988d"
+    },
+    {
+      "claim_id": "f488bcd2-44b1-4d44-8911-2ce817f86ee9",
+      "result_id": "13aa8705-ec85-469e-bcd2-3bbce60d988d"
+    },
+    {
+      "claim_id": "6a4b0b98-eebd-45c7-b321-ecc836bf662e",
+      "result_id": "13aa8705-ec85-469e-bcd2-3bbce60d988d"
+    },
+    {
+      "claim_id": "f82e18ce-0026-45b4-9e67-f3089105df7c",
+      "result_id": "13aa8705-ec85-469e-bcd2-3bbce60d988d"
+    },
+    {
+      "claim_id": "cc5afe31-4502-42d5-81a2-07b423144ee3",
+      "result_id": "9362556b-4bae-41f0-93a5-e7152fbbdf10"
+    },
+    {
+      "claim_id": "f54865d6-8ea5-415f-a62f-69e3e4aa68e1",
+      "result_id": "9362556b-4bae-41f0-93a5-e7152fbbdf10"
+    },
+    {
+      "claim_id": "a2ff97a5-2527-4c6f-bf6e-b083458bed60",
+      "result_id": "9362556b-4bae-41f0-93a5-e7152fbbdf10"
+    },
+    {
+      "claim_id": "b4eef3e7-fc4f-43c9-9471-cd205474e28a",
+      "result_id": "ac43811f-c07f-427c-a80f-7d7e5d68a209"
+    },
+    {
+      "claim_id": "607f553c-b4ae-46d9-8444-a06d5beddb43",
+      "result_id": "96db556e-faab-4ab5-9c7a-d05ebfc7ea48"
+    },
+    {
+      "claim_id": "6d3e19e5-2b8b-417e-8ab2-ef19964ec45e",
+      "result_id": "239811dc-de10-4747-82e0-4f3c9fc68cfe"
+    },
+    {
+      "claim_id": "f10a05ce-9bb5-408b-b10e-d6ecfc648bc5",
+      "result_id": "239811dc-de10-4747-82e0-4f3c9fc68cfe"
+    },
+    {
+      "claim_id": "7de7062d-1770-4b23-a42b-d65644f7d150",
+      "result_id": "239811dc-de10-4747-82e0-4f3c9fc68cfe"
+    },
+    {
+      "claim_id": "48cab49f-58fc-43cd-b987-0dc278426c0b",
+      "result_id": "a43cb1a8-4249-4af0-94d3-d6b6887033da"
+    },
+    {
+      "claim_id": "071b8c7b-c70e-419c-bfb3-9afb445a6382",
+      "result_id": "a43cb1a8-4249-4af0-94d3-d6b6887033da"
+    }
+  ],
+  "comparisons": []
+}

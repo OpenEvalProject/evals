@@ -1,0 +1,1975 @@
+{
+  "submission": {
+    "id": "504a5ed9-cf08-4590-b046-0e360dbaeb03",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-04T05:07:44.899188Z",
+    "updated_at": "2025-12-04T05:07:44.899188Z"
+  },
+  "content": [
+    {
+      "id": "b035a02e-519a-4d65-a41e-36daefa443a2",
+      "submission_id": "504a5ed9-cf08-4590-b046-0e360dbaeb03",
+      "content_type": "manuscript",
+      "content_text": "# Drosulfakinin signaling encodes early-life memory for adaptive social plasticity\n\n## Authors\n\n- Jiwon Jeong<sup>1</sup> ([ORCID: 0009-0006-3111-2656](https://orcid.org/0009-0006-3111-2656))\n- Kujin Kwon<sup>2</sup> ([ORCID: 0009-0004-6642-222X](https://orcid.org/0009-0004-6642-222X))\n- Terezia Klaudia Geisseova<sup>1</sup>\n- Jongbin Lee<sup>3</sup> ([ORCID: 0000-0002-5868-7437](https://orcid.org/0000-0002-5868-7437))\n- Taejoon Kwon<sup>2</sup> ([ORCID: 0000-0002-9794-6112](https://orcid.org/0000-0002-9794-6112)) \u2020\n- Chunghun Lim<sup>3</sup> ([ORCID: 0000-0001-8473-9272](https://orcid.org/0000-0001-8473-9272)) \u2020\n\n### Affiliations\n\n1. Department of Biological Sciences, Ulsan National Institute of Science and Technology Ulsan Republic of Korea ([ROR:017cjz748](https://ror.org/017cjz748))\n2. Department of Biomedical Engineering, Ulsan National Institute of Science and Technology Ulsan Republic of Korea ([ROR:017cjz748](https://ror.org/017cjz748))\n3. Research Center for Cellular Identity, Korea Advanced Institute of Science and Technology Daejeon Republic of Korea ([ROR:05apxxy63](https://ror.org/05apxxy63))\n4. Center for Genomic Integrity, Institute for Basic Science Ulsan Republic of Korea ([ROR:00y0zf565](https://ror.org/00y0zf565))\n5. Graduate School of Health Science and Technology, Ulsan National Institute of Science and Technology Ulsan Republic of Korea ([ROR:017cjz748](https://ror.org/017cjz748))\n6. Department of Biological Sciences, Korea Advanced Institute of Science and Technology Daejeon Republic of Korea ([ROR:05apxxy63](https://ror.org/05apxxy63))\n7. Graduate School of Stem Cell and Regenerative Biology, Korea Advanced Institute of Science and Technology Daejeon Republic of Korea ([ROR:05apxxy63](https://ror.org/05apxxy63))\n\n\u2020 Corresponding author\n\n## Abstract\n\nDrosophila establishes social clusters in groups, yet the underlying principles remain poorly understood. Here, we performed a systemic analysis of social network behavior (SNB) that quantifies individual social distance (SD) in a group over time. The SNB assessment in 175 inbred strains from the Drosophila Genetics Reference Panel showed a tight association of short SD with long developmental time, low food intake, and hypoactivity. The developmental inferiority in short-SD individuals was compensated by their group culturing. By contrast, developmental isolation silenced the beneficial effects of social interactions in adults and blunted the plasticity of SNB under physiological challenges. Transcriptome analyses revealed genetic diversity for SD traits, whereas social isolation reprogrammed select genetic pathways, regardless of SD phenotypes. In particular, social deprivation suppressed the expression of the neuropeptide Drosulfakinin (Dsk) in three pairs of adult brain neurons. Male-specific DSK signaling to cholecystokinin-like receptor 17D1 mediated the SNB plasticity. In fact, transgenic manipulations of the DSK neuron activity were sufficient to imitate the state of social experience. Given the functional conservation of mammalian Dsk homologs, we propose that animals may have evolved a dedicated neural mechanism to encode early-life experience and transform group properties adaptively.\n\n## Introduction\n\nAnimals interact with other individuals in distinct social environments (Clutton-Brock, 2021; Jezovit et al., 2021; Sokolowski, 2010). For instance, a pair of animals display aggression or mating behaviors, whereas a group of individuals may show collective behaviors through intricate networks of social interactions. Such social network behaviors (SNBs) are believed to enhance group fitness and are conserved across many species, underscoring their evolutionary significance (Sokolowski, 2010; Blumstein et al., 2010). Additionally, social interactions influence various physiological activities in individuals, including feeding, sleep/circadian rhythms, aggression, stress response, and longevity (Levine et al., 2002; Ganguly-Fitzgerald et al., 2006; Arzate-Mej\u00eda et al., 2020; Li et al., 2021; Chen and Sokolowski, 2022; Vora et al., 2022; Xiong et al., 2023). Nonetheless, it remains elusive how group properties have evolved with other individual traits and how animals process social experiences to shape their behavior and physiology.\n\nDrosophila has long been considered a solitary species. Yet a group of flies can display distinct SNB under specific experimental conditions (Schneider et al., 2012; Simon et al., 2012; Ramdya et al., 2015; Dombrovski et al., 2017; Sun et al., 2020; Burg et al., 2013), serving as an ideal genetic model to address our questions above (Jezovit et al., 2021). Previous studies have employed various biophysical parameters to quantify both individual and network behaviors in groups, establishing criteria for social interactions in Drosophila (Jezovit et al., 2021; Simon et al., 2012; Ramdya et al., 2015; Bentzur et al., 2021). While these measurements give a comprehensive view of group behaviors, our study focuses on the clustering property of social interactions within a group (Simon et al., 2012; Jiang et al., 2020). Social clustering is an intuitive measure that integrates diverse social interactions via multiple sensory cues (Schneider et al., 2012; Simon et al., 2012; Bentzur et al., 2021; Jiang et al., 2020), accompanying reductions in social distance (SD) among group members and their moving speed over time. We also reasoned that simple SD assessment could facilitate the alignment of large-scale datasets of group behaviors with physiological traits, differential gene expression, and neurogenetic manipulations.\n\nThese approaches lead to our demonstration that the group property for high social clustering (i.e., short SD) is closely associated with and compensates for inferior developmental traits in individuals. Moreover, Drosophila can adjust their social preferences according to physiological changes, indicating the adaptive plasticity of SNB. This social plasticity requires early-life social experiences that persist throughout development. We also define a specific neuropeptide signaling pathway that encodes social memory and supports SNB plasticity. Our findings thus provide new insights into the principles of SNB, offering a deeper understanding of the evolutionary and genetic bases of social behaviors in Drosophila and possibly other species.\n\n## Results\n\n### SNB is a quantitative trait in a natural Drosophila population\n\nWe employed the Drosophila Genetics Reference Panel (DGRP) to determine whether SNB has evolved with specific genetic factors and physiology. The DGRP consists of approximately 200 inbred wild-type strains and functions as a practical genetic library to explore the correlation between naturally occurring genetic variations and complex animal behaviors (Mackay et al., 2012; Mackay and Huang, 2018; Gardeux et al., 2024). We video-recorded a group of 16 male flies freely moving in an open arena for 10 min and quantitatively assessed their group properties over time (Figure 1A). These included SD between individual group members (Figure 1B), walking speed, and the centroid velocity of a given group. The DGRP lines displayed a range of distributions for the three parameters (Figure 1C, Figure 1\u2014source data 1), and we found their significant correlations among 175 DGRP lines (Figure 1D, Figure 1\u2014source data 1; Spearman correlation analysis). For instance, short-SD lines gradually reduced SD and walking speed over time to stay in the cluster, thereby exhibiting short travel distances, slow walking speeds, and low centroid velocities on average (e.g., DGRP73, DGRP 563, and DGRP370) (Figure 2A, Figure 2\u2014figure supplement 1, Figure 2\u2014source data 1, Video 1). By contrast, long-SD lines persistently explored the arena during video recording and sustained \u2018social distancing\u2019 to display long travel distances, fast walking speeds, and high centroid velocities (e.g., DGRP360, DGRP707, and DGRP317) (Figure 2B, Figure 2\u2014figure supplement 1, Figure 2\u2014source data 1, Video 2), although their locomotion was modestly slowed down over time. The locomotion trajectories of individual flies confirmed these characteristics (Figure 2C and D, Figure 2\u2014source data 1), and long-SD individuals traveled much longer distances than short-SD individuals across the DGRP lines (Figure 2\u2014figure supplement 1C, Figure 2\u2014source data 1). Short-SD flies did not significantly change their locomotor activity over time when we placed a single fly in the same arena and assessed its behavior (Figure 2\u2014figure supplement 2, Figure 2\u2014source data 1). Thus, reduced activity in a group of short-SD flies is likely an effect of their clustering phenotypes but not necessarily the cause. Short- and long-SD flies retained their clustering properties even in a larger arena (Figure 2\u2014figure supplement 3, Videos 3 and 4; 8.5 cm in diameter), indicating active social preferences that persist in different environments. Both types of DGRP lines displayed no chaining behaviors in the open arena, excluding the possible implication of male-to-male courtship in their SD phenotypes (Figure 2\u2014figure supplement 4, Figure 2\u2014source data 1). These results provide convincing evidence that SD is an inheritable group trait from natural Drosophila variants. Based on the average ranking of individual DGRP lines in the two group properties (i.e., SD and centroid velocity), we selected the top and bottom three DGRP lines representing short- and long-SD phenotypes, respectively, to elucidate the physiological significance of Drosophila SNB and its underlying mechanisms.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/103973/elife-103973-fig1-v2.jpg)\n\n**Figure 1.:** (A) The 10 min video recording of SNB in a group of 16 male flies. Representative snapshot images at each quarter time point (Q1, Q2, Q3, and Q4) were obtained from Drosophila strains with high (top, short social distance [SD]) or low clustering properties (bottom, long SD). (B) The definition of SD. SD was measured in each fly over the 10 min recording and averaged from a given group. Representative SD dynamics from short- (top) or long-SD strains (bottom) were shown. Dotted lines, group-averaged SD over the 10 min recordings. (C) Quantitative assessment of SNB by ranking SD, walking speed, and centroid velocity among 175 DGRP lines. Data represent means \u00b1 SEM (n = 5). (D) Significant correlation among SD, walking speed, and centroid velocity. ***p<0.001, as determined by Spearman correlation analysis. Red, representative short-SD lines; blue, representative long-SD lines.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/103973/elife-103973-fig2-v2.jpg)\n\n**Figure 2.:** (A, B) SNB dynamics in short-SD (A) and long-SD lines (B). SD dynamics in a representative group of 16 male flies over the 10 min recordings (left, n = 16), quarter-averaged SD (middle, n = 8), and quarter-averaged walking speed (right, n = 8) were shown for each Drosophila Genetics Reference Panel (DGRP) line. Error bars indicate SEM. n.s., not significant; *p<0.05, **p<0.01, ***p<0.001 as determined by paired t-test (DGRP73, DGRP563, DGRP370, DGRP707, and DGRP317 for quarter-averaged SD; DGRP563, DGRP360, and DGRP317 for quarter-averaged walking speed) or Wilcoxon matched-pairs signed rank test (DGRP360 for quarter-averaged SD; DGRP73, DGRP370, and DGRP707 for quarter-averaged walking speed). (C) The 10 min locomotion trajectories of representative individual flies from short- (red) or long-SD lines (blue). (D) Cumulative travel distances of individual flies over the 10 min recording. Colored lines represent means (n = 128).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/103973/elife-103973-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Centroid trajectories of short- (red; DGRP73, 563, 370) or long-SD lines (blue; DGRP360, 707, 317) over the 10 min video recording. (B) The short-SD lines exhibit slow walking speeds and low centroid velocities compared to the long-SD lines. Social isolation significantly impaired SNB only in the short-SD lines. Data represent means \u00b1 SEM (n = 8). n.s., not significant; *p<0.05, **p<0.01, ***p<0.001, as determined by unpaired t-test. (C) Long-SD individuals show longer travel distances than short-SD ones during the 10 min video recording. Data represent means \u00b1 SEM (n = 8 for averaged data; n = 128 for individual data). ***p<0.001 as determined by ordinary one-way ANOVA with Tukey\u2019s multiple comparisons test (averaged data) or aligned ranks transformation ANOVA with Wilcoxon rank-sum test (individual data).\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/103973/elife-103973-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** A single male fly from each Drosophila Genetics Reference Panel (DGRP) line was placed in the arena for social network behaviors (SNB) analysis and video-recorded for 10 min to quantify its locomotor activity. Data represent means \u00b1 SEM (n = 20). n.s., not significant; *p<0.05, **p<0.01, as determined by Wilcoxon matched-pairs signed rank test (DGRP73, DGRP563, DGRP370, and DGRP360) or paired t-test (DGRP707 and DGRP317).\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/103973/elife-103973-fig2-figsupp3-v2.jpg)\n\n**Figure 2\u2014figure supplement 3.:** A group of 16 male flies was placed in a large arena (8.5 cm in diameter), and their locomotor behaviors were video-recorded for 10 min. Representative snapshot images were obtained at each quarter of the 10 min recording. The heatmap illustrates the relative distribution of individual flies in the arena.\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/103973/elife-103973-fig2-figsupp4-v2.jpg)\n\n**Figure 2\u2014figure supplement 4.:** (A) A representative snapshot image of courtship chaining behavior (dotted circle) in a group of rut1 mutant flies. (B) The chaining index was calculated from the 10 min video-recording of 16 male flies in the arena. Data represent means \u00b1 SEM (n = 8). Drosophila Genetics Reference Panel (DGRP) lines did not display any detectable courtship chaining behavior.\n\n![Video 1.](https://cdn.elifesciences.org/articles/103973/elife-103973-video1.mp4.jpg)\n\n![Video 2.](https://cdn.elifesciences.org/articles/103973/elife-103973-video2.mp4.jpg)\n\n![Video 3.](https://cdn.elifesciences.org/articles/103973/elife-103973-video3.mp4.jpg)\n\n![Video 4.](https://cdn.elifesciences.org/articles/103973/elife-103973-video4.mp4.jpg)\n\n### Social interactions compensate for developmental inferiority in short-SD larvae\n\nWhy do flies display SNB? One clue comes from the previous observation that Drosophila larvae collectively dig culture media and improve food accessibility, possibly facilitating their constitutive feeding during early development (Dombrovski et al., 2017). In fact, we found that the short-SD lines had higher numbers of larvae per cluster than the long-SD lines (Figure 3A, Figure 3\u2014source data 1). These observations suggest that Drosophila express SNB traits from early development, and the sociality persists in adults. To better define the social-interaction effects on Drosophila physiology, we obtained socially enriched or deprived larvae from fertilized eggs (Figure 3B) and then compared their developmental phenotypes among DGRP lines. Social isolation substantially impaired larval activity and development in both short- and long-SD lines (Figure 3C\u2013G, Figure 3\u2014source data 1). We further found that the short-SD trait is tightly associated with inferior phenotypes, particularly in isolated larvae. For instance, socially isolated larvae from the short-SD lines displayed poor digging activity (Figure 3C, Figure 3\u2014source data 1), low food intake (Figure 3D, Figure 3\u2014source data 1), and long developmental time (Figure 3E, Figure 3\u2014source data 1) compared to those from the long-SD lines. Short-SD larvae also had lower eclosion success (Figure 3F, Figure 3\u2014source data 1) and a lower ratio of the adult male progeny (Figure 3G, Figure 3\u2014source data 1) than long-SD larvae, although isolated cultures reduced the eclosion success regardless of the SD trait. Grouping of short-SD larvae blunted or partially rescued these phenotypes (i.e., digging activity, developmental time, eclosion success, and male progeny ratio). Our group culture was not a competitive environment for limited resources to delay developmental time (Horv\u00e1th and Kalinka, 2016; Klepsatel et al., 2018), but it actually promoted food intake comparably in short- and long-SD larvae (Figure 3D, Figure 3\u2014source data 1). The significant interaction effects of SD (i.e., short- vs. long-SD trait) and socialization (i.e., grouped vs. isolated cultures) on digging activity, developmental time, and male progeny ratio suggest that the clustering property of short-SD lines may have evolved as a compensation mechanism for the developmental inferiority in individuals. Considering that a low percentage of male likely limits mating choice, reproductive efficiency, and genetic diversity in a given group, social interactions may also contribute to the group fitness in short-SD lines across generations. We speculate that the feeding amount of isolated long-SD individuals is saturating for normal development (e.g., developmental time, male progeny ratio), possibly explaining the lack of interaction effects on food intake while displaying developmental inferiorities most evidently in isolated short-SD individuals.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/103973/elife-103973-fig3-v2.jpg)\n\n**Figure 3.:** (A) Larval clustering in short- (red) or long-social distance (SD) lines (blue). % clusters were calculated from 30 vials. Arrows indicate individual larvae. Scale bar = 0.5 mm. (B) Schematic for grouped (grp) vs. developmentally isolated (iso) culture conditions. (C, D) Grouped culture compensated for low food accessibility in the short-SD larvae. Aligned ranks transformation ANOVA detected significant effects of SD trait and social isolation on both digging depth (C, p<0.0001) and food intake (D, p<0.0001), and their significant interaction effects were detected only on digging depth (C, p=0.0338). Data represent means \u00b1 SEM (n = 36; 12 per line \u00d7 3 lines). ***p<0.001, as determined by Wilcoxon rank sum test. (E\u2013G) Grouped culture rescued developmental delay and low male-progeny ratio in the short-SD larvae. Aligned ranks transformation ANOVA or ordinary two-way ANOVA detected significant effects of SD trait and social isolation on developmental time (E, p<0.0001), eclosion success (F, p=0.0116 for SD trait; p<0.0001 for social isolation), and male progeny ratio (G, p<0.0001). Significant interaction effects between SD trait and social isolation were also detected on developmental time (E, p<0.0001) and male progeny ratio (G, p<0.0001). Data represent means \u00b1 SEM (n = 24; 8 per line \u00d7 3 lines). n.s., not significant; *p<0.05, ***p<0.001, as determined by Wilcoxon rank sum test (developmental time and male progeny ratio) or Tukey\u2019s multiple comparisons test (eclosion success).\n\n### Early-life experience is necessary for social benefits on adult physiology and adaptive social plasticity\n\nWe further asked whether social interactions also benefit adult physiology in the short-SD lines. To this end, we designed a maze experiment where a group of flies were placed in a novel arena to determine how fast they could reach a food resource in the presence or absence of pretrained flies (Figure 4A). Our prediction was that social interactions between na\u00efve and trained flies might facilitate their food-seeking, possibly mimicking social foraging in other species (Giraldeau and Caraco, 2000). We first confirmed that both short- and long-SD lines significantly shortened latency to the arrival of 75% of flies on food by iterative exposures to the maze (Figure 4B, Figure 4\u2014figure supplement 1, Figure 4\u2014source data 1). Representative plasticity mutants of the rutabaga (rut) gene did not significantly shorten the arrival latency after three consecutive training sessions in our maze paradigm (Figure 4\u2014figure supplement 2A, Figure 4\u2014source data 1), implicating rut-dependent learning and memory in this process (Levin et al., 1992). The short-SD lines displayed poor performance in the maze assay as assessed by longer latency to the arrival of 75% na\u00efve flies on food than the long-SD lines (Figure 4B, Figure 4\u2014figure supplement 1, Figure 4\u2014source data 1). Combining the trained \u2018pioneers\u2019 with a group of na\u00efve flies significantly improved the group property of food-seeking behaviors in both short- and long-SD lines (Figure 4B, Figure 4\u2014figure supplement 1, Figure 4\u2014source data 1). The pioneer effects disappeared when the na\u00efve group consisted of socially isolated individuals from egg development. These results support that social foraging in our maze paradigm is unlikely a simple collective response in adults, but it specifically requires early-life social experience. Of note, social deprivation effects on pioneer-free group foraging somewhat varied across the long SD lines (Figure 4B, Figure 4\u2014figure supplement 1, Figure 4\u2014source data 1). We reason that the hyperactivity of individual long-SD flies facilitates their food-seeking behaviors in the maze, weakening the pioneer effects or even overriding the group property.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/103973/elife-103973-fig4-v2.jpg)\n\n**Figure 4.:** (A) Experimental scheme for assessing social interactions in a maze assay. Representative images were shown for a group of Drosophila strains with high (short latency) or low social foraging (long latency). (B) Pioneer groups of flies from either grouped (grp) or isolated cultures (iso) were effectively trained in the maze assay, but social isolation of both short- (red, DGRP73) and long-SD flies (blue, DGRP360) blunted the pioneer effects on food-seeking behaviors in a group of naive flies. Two-way repeated measures ANOVA detected significant effects of training (p<0.0001 for DGRP73 and DGRP360) but not social isolation on latency during the training session of pioneer groups. Ordinary two-way ANOVA also detected significant interaction effects of pioneer and social isolation on latency during the maze test (p=0.0131 for DGRP73; p=0.0310 for DGRP360). Data represent means \u00b1 SEM (n = 6\u201216). n.s., not significant; *p<0.05, **p<0.01, ***p<0.001, as determined by Sidak\u2019s multiple comparisons test (training session) or Tukey\u2019s multiple comparisons test (maze test). (C) Experimental scheme for assessing injury-induced social network behavior (SNB) plasticity. GTI, grouped-to-isolated culture transition; ITG, isolated-to-grouped culture transition. (D) Physical injury induced clustering behaviors in group-cultured but not developmentally isolated flies. Data represent means \u00b1 SEM (n = 8). n.s., not significant; *p<0.05, **p<0.01, ***p<0.001, as determined by one-way ANOVA with Tukey\u2019s multiple comparisons test.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/103973/elife-103973-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Pioneer groups of short- (DGRP563 and DGRP370) and long-social distance (SD) lines (DGRP707 and DGRP317) were effectively trained in the maze assay but they failed to improve the efficiency of food-seeking behaviors with groups of socially isolated flies. Data represent means \u00b1 SEM (n = 6\u201312). n.s., not significant; *p<0.05, **p<0.01, ***p<0.001, as determined by two-way repeated measures ANOVA with Sidak\u2019s multiple comparisons test (pioneer training) or two-way ANOVA with Tukey\u2019s multiple comparisons test (group test). Grp, grouped; iso, isolated.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/103973/elife-103973-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A) Plasticity mutants of rutabaga (rut1 and rut2080) fail to improve food-seeking behaviors in the maze after repetitive trainings. Canton-S (CS) served as a wild-type control. Data represent means \u00b1 SEM (n = 9 for rut1; n = 8 for rut2080). n.s., not significant; **p<0.01, ***p<0.001, as determined by paired t-test. (B) rut mutants display injury-induced clustering comparable to control flies. Social distance (SD) was measured in group-cultured male flies under distinct experimental conditions (ctrl, control; inj, injured). Two-way ANOVA detected no significant interaction effects of genotype and inj on SD. Data represent means \u00b1 SEM (n = 8 for rut1; n = 10 for rut2080). *p<0.05, **p<0.01, as determined by Tukey\u2019s multiple comparisons test.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/103973/elife-103973-fig4-figsupp3-v2.jpg)\n\n**Figure 4\u2014figure supplement 3.:** (A) Physical injury induced clustering behaviors in group-cultured but not developmentally isolated flies. Social distance (SD) was measured in a group of male flies under distinct experimental conditions (ctrl, control; inj, injured; rec, recovered; grp, grouped; iso, isolated; GTI, grouped-to-isolated culture transition; ITG, isolated-to-grouped culture transition). Data represent means \u00b1 SEM (n = 8). n.s., not significant; *p<0.05, **p<0.01, ***p<0.001, as determined by one-way ANOVA with Tukey\u2019s multiple comparisons test. (B) Female flies did not display injury-induced clustering. SD was measured in group-cultured female flies from individual Drosophila Genetics Reference Panel (DGRP) lines. Data represent means \u00b1 SEM (n = 8). n.s., not significant as determined by one-way ANOVA with Tukey\u2019s multiple comparisons test.\n\n![Figure 4\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/103973/elife-103973-fig4-figsupp4-v2.jpg)\n\n**Figure 4\u2014figure supplement 4.:** Locomotor activities were quantified in a group of long- and short-SD male flies under distinct experimental conditions (ctrl, control; inj, injured; rec, recovered; grp, grouped; iso, isolated). Two-way ANOVA detected significant interaction effects of inj and iso on walking speed and centroid velocity only in long-SD lines (***p<0.001 for DGRP360 and DGRP707; *p<0.05 for DGRP317, except centroid velocity). Data represent means \u00b1 SEM (n = 8). n.s., not significant; *p<0.05, **p<0.01, ***p<0.001, as determined by Tukey\u2019s multiple comparisons test.\n\n![Figure 4\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/103973/elife-103973-fig4-figsupp5-v2.jpg)\n\n**Figure 4\u2014figure supplement 5.:** Social distance (SD) was measured in a group of male mutants for each sensory-pathway gene as described in Figure 1. Data represent means \u00b1 SEM (n = 8). n.s., not significant; *p<0.05, **p<0.01, ***p<0.001, as determined by two-way ANOVA with Tukey\u2019s multiple comparisons test. Ctrl, control; inj, injured.\n\nThe long-SD lines outcompeted the short-SD lines in both larval and adult assays, and the beneficial effects of their social experience were barely detectable. SNB in the long-SD adults was also insensitive to early-life experience, whereas the grouped culture promoted SNB in the short-SD lines (Bentzur et al., 2021; Figure 2\u2014figure supplement 1B, Figure 2\u2014source data 1). We hypothesized that superior traits in long-SD individuals led to their genetic selection toward the degeneration of social interaction effects. Alternatively, long-SD genomes may still encode genetic programs for social activity, but they only express social traits under physiologically challenging conditions. Given the positive correlation between locomotion activity and SD trait among DGRP lines (Figure 1D, Figure 1\u2014source data 1), we reasoned that modest injury could serve as a physiological cue to reduce locomotor activity in individuals, facilitate their interactions in a group, and induce SNB even in the long-SD flies. We indeed discovered that mechanical injury shortened SD in both sociality types of DGRP lines (Figure 4C and D, Figure 4\u2014figure supplement 3A, Figure 4\u2014source data 1; Videos 5 and 6;) while reducing walking speed and centroid velocity only in the long-SD lines (Figure 4\u2014figure supplement 4, Figure 4\u2014source data 1). The injury effects were transient because 1 week of recovery was sufficient to restore the original SD traits (Figure 4D, Figure 4\u2014figure supplement 3A, Figure 4\u2014source data 1). The injury-induced plasticity of SNB and locomotor activity was not detectable in a group of socially isolated flies (Figure 4D, Figure 4\u2014figure supplements 3A and 4, Figure 4\u2014source data 1, Videos 7\u201310). We thus reason that the mechanical injury does not severely impair general locomotion per se to abolish or overestimate SNB under our experimental conditions, but low activity in grouped long-SD flies is likely a consequence of their injury-induced clustering. The injury-induced SNB plasticity required no receptor potential A (norpA) among sensory pathway genes tested (Figure 4\u2014figure supplement 5, Figure 4\u2014source data 1), indicating a crucial role of norpA-dependent visual sensing. It is consistent with the previous finding that vision is required for larval clustering behaviors in Drosophila (Dombrovski et al., 2017). We further found that an adult-specific grouping of developmentally isolated flies was insufficient to support the social plasticity (Figure 4D, Figure 4\u2014figure supplement 3A, Figure 4\u2014source data 1). Finally, the rut-dependent memory pathway seems dispensable for developmental \u2018social memory\u2019 since rut mutants displayed injury-induced social plasticity comparable to control flies (Figure 4\u2014figure supplement 2B, Figure 4\u2014source data 1). These results suggest that individual Drosophila strains differentially display social traits in adults; however, the potency of adaptive social plasticity is acquired through their early-life experience of social interactions.\n\n![Video 5.](https://cdn.elifesciences.org/articles/103973/elife-103973-video5.mp4.jpg)\n\n![Video 6.](https://cdn.elifesciences.org/articles/103973/elife-103973-video6.mp4.jpg)\n\n![Video 7.](https://cdn.elifesciences.org/articles/103973/elife-103973-video7.mp4.jpg)\n\n![Video 8.](https://cdn.elifesciences.org/articles/103973/elife-103973-video8.mp4.jpg)\n\n![Video 9.](https://cdn.elifesciences.org/articles/103973/elife-103973-video9.mp4.jpg)\n\n![Video 10.](https://cdn.elifesciences.org/articles/103973/elife-103973-video10.mp4.jpg)\n\n### Unraveling the genetic basis of SNB and its plasticity\n\nHow is early-life social experience encoded in individual larvae to persist throughout development? To define the molecular signatures of social interaction phenotypes and their plasticity, we profiled differentially expressed genes (DEGs) in adult fly heads among distinct contexts of genetic and environmental sociality. The transcriptome analyses revealed significantly upregulated genes in the short- and long-SD lines (n genes = 191 and 199, respectively), as well as in grouped and socially isolated flies (n genes = 159 and 755, respectively) (Figure 5A and B, Figure 5\u2014source data 1,Figure 5\u2014source data 2). Genes upregulated in socially isolated DGRP lines overlapped substantially with those identified in previous studies using independent wild-type strains (Li et al., 2021; Wang et al., 2008; Agrawal et al., 2020; Figure 5\u2014figure supplement 1A, Figure 5\u2014source data 3), whereas upregulated genes in short- or long-SD lines barely overlapped with DEGs between grouped and socially isolated flies (Figure 5\u2014figure supplement 1B, Figure 5\u2014source data 3). Gene Ontology (GO) analyses showed no significant enrichment of specific GO terms in DEGs between the short- and long-SD lines. We thus concluded that diverse genetic pathways shape baseline SD phenotypes, as suggested previously (Schneider et al., 2012). It is also consistent with the lack of the phylogenetic correlation between Drosophila species and their social network phenotypes (Jezovit et al., 2020). By contrast, select metabolic pathways were upregulated in both types of DGRP lines by social isolation (Figure 5C and D, Figure 5\u2014source data 2;Figure 5\u2014source data 4). These observations were consistent with previous findings that chronic social isolation acts as a hunger cue to suppress sleep, induce feeding, and alter metabolic gene expression, including those involved in lipid metabolism (Li et al., 2021; Liu et al., 2018). Considering that the number of commonly upregulated genes in group-cultured flies was very limited, we speculate that Drosophila has evolved a genetic reprogram where social isolation elevates metabolic gene expression to adaptively induce a metabolic shift for energy storage and fitness.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/103973/elife-103973-fig5-v2.jpg)\n\n**Figure 5.:** (A) Heatmaps for differentially expressed genes (DEGs, more than twofold difference with adjusted p<0.05) in short- vs. long-social distance (SD) lines (left); in grouped (grp) vs. isolated (iso) condition (right). Fly heads were harvested from individual Drosophila Genetics Reference Panel (DGRP) lines in grouped or isolated cultures and their gene expression profiles were analyzed by RNA sequencing. Averaged counts per million were converted to z-score for visualization. (B) Volcano plots for differentially expressed genes (DEGs) in short- vs. long-SD lines (top); in grp vs. iso flies (bottom). Social interactions evidently upregulated the neuropeptide Drosulfakinin (Dsk) expression. (C) Overlapping DEGs in grp vs. iso conditions across DGRP lines. Dsk was identified as a commonly upregulated gene by social interactions in short- (top, red) and long-SD lines (middle, blue). (D) Gene Ontology analysis reveals upregulation of select metabolic pathways upon social isolation. False discovery rate (FDR) < 0.05, as determined by Fisher\u2019s exact test (grp vs. iso). (E) Significant phenotypic correlation of SNB to food intake, starvation-induced activity, and mean aggressive encounters among DGRP lines. Raw data for food intake (n = 52 DGRP lines), starvation-induced activity (n = 60 DGRP lines), and aggression (n = 57 DGRP lines) were obtained from previous studies (Garlapow et al., 2015; Shorter et al., 2015; Chi et al., 2021) and then aligned to SD, centroid velocity, and walking speed in the corresponding DGRP lines that were measured by our SNB analyses. *p<0.05, **p<0.01, ***p<0.001, as determined by Spearman correlation analysis. (F) Expression heatmap for genes implicated in feeding, adult locomotor behavior, and aggression. Downregulation of Dsk and its two receptors (CCKLR-17D1 and CCKLR-17D3) by social isolation was visualized in relevant gene categories.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/103973/elife-103973-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Venn diagrams depict the numbers of upregulated genes under grouped (top, grp) and socially isolated conditions (bottom, iso), as identified by the previous and current studies. The numbers of overlapping DEGs between independent gene expression analyses were shown accordingly. (B) Venn diagrams illustrate the overlap of DEGs between short-social distance (SD) lines and group-culturing conditions (top, short SD vs. grp) and between long-SD lines and socially isolated conditions (bottom, long SD vs. iso).\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/103973/elife-103973-fig5-figsupp2-v2.jpg)\n\n**Figure 5\u2014figure supplement 2.:** A pair of male flies from each Drosophila Genetics Reference Panel (DGRP) line were starved for 6 hr and then placed into a circular arena with yeast paste and a female carcass in the center. The number of lunges was counted during the 10 min video recording. Data represent means \u00b1 SEM (n = 6). *p<0.05, as determined by one-way ANOVA with Tukey\u2019s multiple comparisons test.\n\nInterestingly, the phenotypic alignment of DGRP lines revealed significant correlations of their social interaction behaviors to food intake, starvation-induced activity, and aggression, among others (Garlapow et al., 2015; Shorter et al., 2015; Chi et al., 2021; Figure 5E, Figure 5\u2014source data 5). We validated that the long-SD lines showed more lunges than the short-SD lines, indicative of high aggression behaviors (Figure 5\u2014figure supplement 2, Figure 5\u2014source data 5, Videos 11 and 12). The association of multiple behaviors raised the possibility of their overlapping evolution of regulatory genes and mechanisms. The expression heatmaps of relevant gene categories visualized a subset of genes that indeed displayed social experience-dependent expression across the DGRP lines analyzed (Figure 5F, Figure 5\u2014source data 1). These included Drosulfakinin (Dsk), a neuropeptide implicated in aggression, food intake, satiety, and sexual behaviors (Agrawal et al., 2020; Wu et al., 2019; Wu et al., 2020; Guo et al., 2021; Wang et al., 2022). The mammalian Dsk homolog cholecystokinin (CCK) has also been shown to play a similar role in relevant physiology, suggesting the possible conservation of Dsk function (Nichols et al., 1988; Staljanssens et al., 2011; N\u00e4ssel and Wu, 2022). In fact, Dsk was the only overlapping gene that was downregulated upon social isolation across independent studies (Li et al., 2021; Wang et al., 2008; Agrawal et al., 2020; Figure 5\u2014figure supplement 1A, Figure 5\u2014source data 3). We also found that social isolation of the DGRP lines significantly downregulated the expression of Dsk and the two CCK-like receptors (i.e., CCKLR-17D1 and CCKLR-17D3), although Dsk receptor gene expression showed less than twofold change (Figure 5F, Figure 5\u2014source data 2). These observations prompted us to ask whether DSK signaling contributes to the plasticity of social behaviors through early-life experience.\n\n![Video 11.](https://cdn.elifesciences.org/articles/103973/elife-103973-video11.mp4.jpg)\n\n![Video 12.](https://cdn.elifesciences.org/articles/103973/elife-103973-video12.mp4.jpg)\n\n### DSK neuron activity encodes early-life experience for SNB plasticity\n\nImmunostaining of whole-mount brains identified three groups of DSK-expressing neurons with distinct neuroanatomical morphology (i.e., MP1a, MP1b, and MP3) (Wu et al., 2019; Wu et al., 2020; Figure 6A). The long-SD lines displayed relatively high DSK signals in the cell bodies compared to the short-SD lines (Figure 6B, Figure 6\u2014source data 1). However, DSK levels in the neural projections were comparable between the two groups, raising the possibility that axonal transport or processing of the neuropeptide was limiting under the group-culture condition. Social isolation lowered DSK levels irrespective of the SD phenotype (Figure 6A and B, Figure 6\u2014source data 1), consistent with our DEG analysis above. The social experience effects on DSK levels were most evident in the MP1a neuron projections. Live-brain imaging of the genetically encoded Ca2+ indicator GCaMP showed that DSK neuron activity correlated with social experience and plasticity in a wild-type background. Social deprivation reduced relative Ca2+ levels in DSK neurons, whereas mechanical injury generally elevated DSK neuron activity (Figure 6C, Figure 6\u2014source data 1). The two conditions, however, acted independently on the GCaMP signals in DSK neurons since their interaction effects were not significantly detected. Nonetheless, MP1a neuron activity did not respond to injury when transgenic flies were socially deprived during development, which may contribute to the lack of social behavior plasticity upon isolation (Figure 6C, Figure 6\u2014figure supplement 1, Figure 6\u2014source data 1). These observations are unlikely due to transgenic Dsk-Gal4 activity per se given that social isolation did not comparably affect the Gal4-dependent expression of a dendritic marker transgene in the DSK neurons (Figure 6\u2014figure supplement 1, Figure 6\u2014source data 1). We also confirmed that GCaMP levels in other neuropeptide-expressing neurons (i.e., pigment-dispersing factor) were insensitive to social isolation or mechanical injury (Figure 6\u2014figure supplement 2, Figure 6\u2014source data 1).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/103973/elife-103973-fig6-v2.jpg)\n\n**Figure 6.:** (A, B) Social experience elevates DSK levels in the Drosophila brains. Whole-mount brains from each Drosophila Genetics Reference Panel (DGRP) line in grouped (grp) or socially isolated cultures (iso) were co-immunostained with anti-DSK (green) and anti-BRUCHPILOT antibodies (BRP, a synaptic protein; magenta). The fluorescent DSK signals from confocal images were quantified using ImageJ. Ordinary two-way ANOVA or aligned ranks transformation ANOVA detected significant effects of social isolation on DSK levels in MP1a/MP1b/MP3 cell bodies and their projections (p<0.0001). The social distance (SD) trait effects (i.e., short vs. long SD) were more evident on DSK levels in cell bodies (p<0.0001). Data represent means \u00b1 SEM (n = 13). n.s., not significant; **p<0.01, ***p<0.001, as determined by Tukey\u2019s multiple comparisons test (MP1a/MP1b cell bodies and MP1a projections) or Wilcoxon rank sum test (MP3 cell bodies and projections). Scale bar = 40 \u00b5m. (C) Social experience and physical injury elevate DSK neuron activity. Social isolation masked an injury-induced Ca2+ increase in the MP1a neurons among other DSK neurons as assessed by the genetically encoded Ca2+ sensor GCaMP in live-brain imaging. Two-way ANOVA detected significant effects of social isolation (p<0.0001) and injury (inj, p<0.01) on GCaMP levels in DSK neurons. Data represent means \u00b1 SEM (n = 10). n.s., not significant; *p<0.05, **p<0.01, ***p<0.001, as determined by Tukey\u2019s multiple comparisons test. Scale bar = 5 \u00b5m. (D\u2013F) Social experience strengthens postsynaptic signaling of DSK neurons only in males. Whole-mount brains were dissected from group-cultured (grp) or isolated (iso) flies and immunostained with anti-DSK antibody (white). Postsynaptic partner of DSK neurons was visualized by the heterologous ligand-receptor signaling embedded in the transsynaptic mapping transgene (Dsk>trans-Tango, magenta) while DSK neurons were further labeled by the presynaptic marker of the trans-Tango (green). The fluorescent trans-Tango signals and anti-DSK staining intensities from confocal images were quantified using ImageJ. Aligned ranks transformation ANOVA or ordinary 2-way ANOVA detected significant interaction effects of social isolation and gender on trans-Tango signals (E, p<0.0001) and DSK levels in MP1a projection (F, p<0.0001). Data represent means \u00b1 SEM (n = 13). n.s., not significant; ***p<0.001, as determined by Wilcoxon rank sum test (trans-Tango signals) or Tukey\u2019s multiple comparisons test (DSK levels). Scale bar = 40 \u00b5m.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/103973/elife-103973-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) Transgenic Dsk-Gal4 flies (Dsk>GCaMP7f and Dsk>DenMark + SytGFP) and heterozygous controls (Dsk-Gal4/+) display social experience-dependent plasticity of social network behavior (SNB). Social distance (SD) was measured in a group of transgenic male flies under distinct experimental conditions (ctrl, control; inj, injured; grp, grouped; iso, isolated). Data represent means \u00b1 SEM (n = 8). n.s., not significant; ***p<0.001, as determined by two-way ANOVA with Tukey\u2019s multiple comparisons test. (B) Dendrites (DenMark, magenta) and axons (SytGFP, green) in DSK neurons were visualized by confocal imaging of a whole-mount transgenic brain (Dsk>DenMark + SytGFP). Scale bar = 40 \u00b5m. (C) Social isolation or mechanical injury did not affect the transgenic DenMark expression in DSK neurons. The fluorescence intensities of the DenMark signals in DSK neurons were quantified from confocal images using ImageJ. Data represent means \u00b1 SEM (n = 6). n.s., not significant as determined by two-way ANOVA with Tukey\u2019s multiple comparisons test. Dotted lines indicate ROI. Scale bar = 5 \u00b5m.\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/103973/elife-103973-fig6-figsupp2-v2.jpg)\n\n**Figure 6\u2014figure supplement 2.:** (A) Circadian-clock neurons expressing the neuropeptide pigment-dispersing factor were visualized in whole-mount adult brain by the combination of Pdf-Gal4 driver and red fluorescent protein transgenes (Pdf>mRFP). Arrows in each hemisphere indicate PDF-expressing large ventral lateral neurons (l-LNv). Scale bar = 40 \u00b5m. (B) The genetically encoded Ca2+ sensor GCaMP was expressed by the Pdf-Gal4 driver (Pdf>GCaMP7f) and the transgenic flies were harvested under distinct experimental conditions (ctrl, control; inj, injured; grp, grouped; iso, isolated). Live-brain Ca2+ imaging was then conducted in dissected brains. The GCaMP signals in l-LNv were quantified using ImageJ. Data represent means \u00b1 SEM (n = 5). n.s., not significant as determined by two-way ANOVA with Tukey\u2019s multiple comparisons test. Scale bar = 5 \u00b5m.\n\nWe used the transsynaptic mapping transgene trans-Tango to visualize the postsynaptic partner of DSK neurons via heterologous ligand-receptor signaling (Talay et al., 2017; Sorka\u00e7 et al., 2023). Socially enriched, but not socially isolated, male flies displayed strong postsynaptic signals of the trans-Tango-expressing DSK neurons in the lateral protocerebrum where transgenic signals of DSK neuron axons (Dsk>SytGFP) were readily detectable (Figure 6D and E, Figure 6\u2014figure supplement 1B, Figure 6\u2014source data 1). Previous studies also demonstrated that MP1a neuron projections are specifically enriched in this brain region (Wu et al., 2019; Wu et al., 2020). DSK neurons have gender-specific presynaptic partners, which may mediate distinct signaling for sexual behaviors (Wu et al., 2019; Wu et al., 2020; Wang et al., 2022). To our surprise, socially enriched female brains did not show trans-Tango signals as evidently as male brains (Figure 6D and E, Figure 6\u2014source data 1). Moreover, social deprivation downregulated DSK levels in the MP1a projections less potently in females than in males (Figure 6D and F, Figure 6\u2014source data 1). These observations suggest sexual dimorphism in social behavior plasticity. Indeed, female flies from select DGRP lines showed baseline SD phenotypes consistent with their male counterparts, yet mechanical injury did not significantly affect female SD (Figure 4\u2014figure supplement 3B, Figure 4\u2014source data 1; also see Figure 7G, Figure 7\u2014source data 1). Considering that DSK-expressing MP1 neurons originate from the larval brain (Oikawa et al., 2023), we hypothesized that early-life experience is developmentally encoded in DSK neuron activity via the male-specific neural pathway and adaptively expressed for social plasticity in adults. We further reason that low food intake upon social isolation may not directly implicate DSK expression or DSK neuron activity since DSK signaling has been shown to suppress feeding behavior as a satiety cue (Wu et al., 2020; Guo et al., 2021; S\u00f6derberg et al., 2012; Williams et al., 2014).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/103973/elife-103973-fig7-v2.jpg)\n\n**Figure 7.:** (A) DskattP mutant brain expresses barely detectable DSK peptides. Whole-mount brains from Canton S (CS, a wild-type control) and DskattP mutant flies were co-immunostained with anti-DSK (green) and anti-BRUCHPILOT antibodies (BRP, a synaptic protein; magenta). Scale bar = 40 \u00b5m. (B, C) Genetic silencing of DSK-CCKLR-17D1 signaling by genomic deletions (DskattP or CCKLR-17D1attP) or DSK depletion (Dsk >DskRNAi) blocks injury-induced clustering behaviors. Data represent means \u00b1 SEM (n = 8). n.s., not significant; **p<0.01, ***p<0.001, as determined by two-way ANOVA with Tukey\u2019s multiple comparisons test. (D, E) Conditional blockade of DSK neuron transmission at larval stage is sufficient to blunt social experience-dependent plasticity of social network behavior (SNB). Transgenic crosses for DSK-specific expression of the temperature-sensitive shibire allele (Dsk >shits) were kept at either restrictive (29\u00b0C) or permissive temperature (18\u00b0C) for synaptic transmission until the end of larval stage. Two-way ANOVA detected significant interaction effects of injury (inj) and temperature on social distance (SD) in Dsk>shits flies (p=0.0169) but not in heterozygous controls (p=0.7549 for Dsk-Gal4/+; p=0.2030 for shits/+). Data represent means \u00b1 SEM (n = 6). n.s., not significant; *p<0.05, **p<0.01, ***p<0.001, as determined by Tukey\u2019s multiple comparisons test. (F) CCKLR-17D1 neurons display sexually dimorphic dendrites around MP1 projections. Transgenic male or female brains (CCKLR-17D1>DenMark + SytGFP) were immunostained with anti-DSK antibody to visualize DSK neuron projections (white) along with dendrites (DenMark, magenta) and axons (SytGFP, green) of neurons expressing CCKLR-17D1-Gal4 knock-in. Scale bar = 40 \u00b5m. (G) Transgenic excitation of CCKLR-17D1 neurons confers injury-induced plasticity of SNB in socially isolated males but not females. Two-way ANOVA detected significant interaction effects of injury (inj) and social isolation on SD in male heterozygous controls (p=0.0040 for 17D1-Gal4/+; p=0.0007 for NaChBac/+) but not in all the other genotypes. Data represent means \u00b1 SEM (n = 8). n.s., not significant; *p<0.05, **p<0.01, as determined by Tukey\u2019s multiple comparisons test.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/103973/elife-103973-fig7-figsupp1-v2.jpg)\n\n**Figure 7\u2014figure supplement 1.:** The Dsk RNAi transgene was expressed in DSK neurons by the Dsk-Gal4 knock-in driver (Dsk>DskRNAi). Whole-mount transgenic brains were co-immunostained with anti-DSK (green) and anti-BRP (magenta) antibodies. Heterozygous flies for Gal4 (Dsk-Gal4/+) or RNAi transgenes (DskRNAi/+) served as negative controls. Scale bar = 40 \u00b5m.\n\n![Figure 7\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/103973/elife-103973-fig7-figsupp2-v2.jpg)\n\n**Figure 7\u2014figure supplement 2.:** Deletion mutants of the two Dsk receptor genes (CCKLR-17D1 and CCKLR-17D3) and hemizygous control flies (+/Y) were obtained from standard group cultures. Social distance (SD) was measured in a group of male flies as described in Figure 1. Two-way ANOVA detected significant interaction effects of injury (inj) with CCKLR-17D1 deletions (p=0.0404 for CCKLR-17D1\u03941; p=0.0254 for CCKLR-17D1\u03942) but not with CCKLR-17D3 deletions (p=0.1051 for CCKLR-17D3\u03941; p=0.6697 for CCKLR-17D3\u03942) on SD. Data represent means \u00b1 SEM (n = 8). n.s., not significant; *p<0.05, **p<0.01, ***p<0.001, as determined by Tukey\u2019s multiple comparisons test.\n\n![Figure 7\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/103973/elife-103973-fig7-figsupp3-v2.jpg)\n\n**Figure 7\u2014figure supplement 3.:** Synaptic transmission in CCKLR-17D1 neurons was blocked by transgenic expression of a tetanus toxin light chain (17D1>TNT). Heterozygous flies for Gal4 (17D1-Gal4/+) or TNT transgenes (TNT/+) served as negative controls. Two-way ANOVA detected significant interaction effects of genotype and injury (inj) on SD (p=0.0003 for 17D1-Gal4/+vs. 17D1>TNT; p=0.0012 for TNT/+vs. 17D1>TNT). Data represent means \u00b1 SEM (n = 8). n.s., not significant; ***p<0.001, as determined by Tukey\u2019s multiple comparisons test.\n\n### Male-specific DSK-CCKLR-17D1 signaling mediates SNB plasticity\n\nTo determine whether DSK signaling actually contributes to social behavior plasticity, we first examined the loss-of-function effects of relevant genes. Genomic deletion of the Dsk locus (DskattP) or DSK depletion by RNA interference (Dsk>DskRNAi) abolished injury-induced clustering behaviors (Figure 7A\u2013C, Figure 7\u2014figure supplement 1, Figure 7\u2014source data 1). Furthermore, genomic deletions of the Dsk receptor CCKLR-17D1 (CCKLR-17D1attP and CCKLR-17D1\u0394) but not CCKLR-17D3 (CCKLR-17D3attP and CCKLR-17D3\u0394) comparably masked injury-induced social interactions (Figure 7B, Figure 7\u2014figure supplement 2, Figure 7\u2014source data 1). Genetic effects of Dsk deletion and DSK depletion were not consistent on baseline SD in grouped cultures. These observations suggest that Dsk is not crucial for shaping the SD traits per se, but genetic backgrounds may substantially contribute to it. Nonetheless, genetic evidence from independent alleles and transgenic RNAi convincingly supports specific implication of the DSK-CCKLR-17D1 pathway in experience-dependent social plasticity.\n\nWe further validated if neuronal activity or synaptic transmission for DSK-CCLKR-17D1 signaling controls injury-induced SNB plasticity. To this end, a temperature-sensitive allele of Drosophila dynamin (shibirets) (Kitamoto, 2001) was transgenically expressed in DSK neurons to block their synaptic transmission only at restrictive temperatures (Figure 7D). The conditional manipulation of larval DSK neurons was sufficient to suppress injury-induced clustering in group-cultured adults (Figure 7E, Figure 7\u2014source data 1). CCKLR-17D1-expressing neurons displayed a gender-specific distribution in the adult brain when their dendrites and axons were visualized using specific transgenic markers (i.e., DenMark and SytGFP, respectively) (Figure 7F). In particular, male brains expressing the CCKLR-17D1 knock-in transgene showed more signals for cell bodies and dendrites around MP1a axon projections than females (Wu et al., 2020). This was consistent with the high levels of axonal DSK expression and trans-Tango signals in the same region of male brains (Figure 6D\u2013F, Figure 6\u2014source data 1). We hypothesized that transgenic activation of DSK-CCKLR-17D1 signaling genetically mimics social experience in developmentally isolated flies. Supporting this idea, transgenic excitation of CCKLR-17D1 neurons was sufficient to confer injury-induced social interactions to isolated male flies (Figure 7G, Figure 7\u2014source data 1). The same transgenic manipulation of CCKLR-17D1 neurons did not induce social plasticity in females, irrespective of their early-life experience. On the other hand, blocking synaptic transmission in CCKLR-17D1 neurons suppressed injury-induced clustering in group-cultured male flies (Figure 7\u2014figure supplement 3, Figure 7\u2014source data 1). These findings convincingly provide a neuroanatomical basis for early-life social memory and male-specific social plasticity.\n\n## Discussion\n\nOur study demonstrated that conspecific individuals show a wide range of preferences for social distancing, and it has likely co-evolved with their inferior traits as a compensatory mechanism (Figure 8). Physiological challenges (e.g., mechanical injury) may adaptively modify the clustering property of a given group. However, the plasticity of group behaviors requires social experience during development. We propose that a subset of the Drosophila brain neurons expressing the neuropeptide DSK serves as a neural substrate for social memory, as supported by the intimate coupling of early-life social experience and SNB plasticity to DSK expression, DSK neuron activity, and postsynaptic signaling.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/103973/elife-103973-fig8-v2.jpg)\n\n**Figure 8.:** Social distancing is an inheritable trait in Drosophila. Diverse genetic pathways contribute to active social preferences while the clustering property may have evolved to compensate for inferior traits in individuals and confer their group fitness. Nonetheless, Drosophila can tune their social distance depending on physiological states (e.g., mechanical injury) and this feature of SNB is defined as \u2018social plasticity\u2019. In fact, the social plasticity requires early-life social experience or \u2018social memory\u2019 during development. Group culturing elevates DSK expression and DSK neuron activity to reinforce its postsynaptic signals likely to the cognate receptor CCKLR-17D1. The activation of DSK-CCKLR-17D1 pathway thus encodes early-life social experience in developing brains to support social plasticity in adults.\n\nDistinct social behaviors in Drosophila (i.e., aggression and mating) have been commonly mapped to specific pairs of DSK neurons (Wu et al., 2019; Wu et al., 2020; Wang et al., 2022). Presynaptic partners of DSK neurons are sexually dimorphic, while their postsynaptic effects are differentially mediated via the two DSK receptor pathways (i.e., CCKLR-17D1 for aggression and SNB plasticity; CCKLR-17D3 for sexual behaviors). Intriguingly, this neural architecture for balancing aggression and mating behaviors has been proposed to be analogously conserved between flies and mammals (Anderson, 2016). Furthermore, DSK neuron activity correlates with social dominance (i.e., winner effects from aggression) (Wu et al., 2020) and group housing (Wu et al., 2019), but not with mating status (Wang et al., 2022). Accordingly, the DSK-CCKLR-17D1 pathway meets the necessary criteria for male-specific SNB plasticity.\n\nThe phenotypic correlates of aggression and SNB in natural populations (i.e., DGRP lines) are consistent with their common neural locus. However, these findings do not necessarily imply that DSK neurons control the two social behaviors in a similar manner. For instance, DSK excitation promotes aggression in both males and females (Wu et al., 2020), whereas DSK signaling is unlikely to trigger grouping behaviors per se. What remains to be clarified is how DSK signaling gates SNB plasticity and why this process is missing in female flies. Considering that social hierarchy is established in male fights only (Nilsen et al., 2004; Simon and Heberlein, 2020), we speculate that male-specific DSK pathways may include extra circuit modalities for contextual processing of social environments and adaptive social structures. The development of neuroanatomical differences between male and female brains may coincide with the acquisition of gender-specified demands for innate behaviors and physiology during evolution (e.g., a reproductive advantage of male clustering under physiologically challenging conditions).\n\nThe mammalian DSK homolog CCK shows sexual dimorphism in brain expression and mating behavior response (Bloch et al., 1987; Bloch et al., 1988; Micevych et al., 1988). Moreover, CCK activation is implicated in aggression and exploratory behaviors (Raud et al., 2005; Li et al., 2007). It would thus be interesting to determine whether DSK/CCK signaling indeed represents an ancestral mechanism for social memory, sexually dimorphic social behaviors, and their plasticity.\n\n## Materials and methods\n\n### Fly stocks\n\nFlies were raised on standard cornmeal-yeast-agar food at 25\u00b0C and 40\u201350% humidity under 12 hr light:12 hr dark cycles. Behavioral experiments were primarily conducted between Zeitgeber time (ZT) 4 and 8 (lights-on at ZT0; lights-off at ZT12). DGRP lines, Canton-S (BL64349), rut1 (BL9404), rut2080 (BL9405), DskattP (BL84497), Dsk2A-Gal4 (BL84630), UAS-DskRNAi (BL25869), CCKLR-17D1attP (BL84462), CCKLR-17D12A-Gal4 (BL84605), CCKLR-17D3attP (BL84463), Orco1 (BL23129), UAS-myrGFP.QUAS-mtdTomato-3xHA; trans-Tango (BL77124), 20XUAS-IVS-jGCaMP7f (BL80906), and UAS-DenMark, UAS-syt.eGFP (BL33065) were obtained from Bloomington Drosophila Stock Center. CCKLR-17D1\u03941 (119026), CCKLR-17D1\u03942 (119027), CCKLR-17D3\u03941 (119029), CCKLR-17D3\u03942 (119030), iav1 (101174), norpA7 (108362), and Poxn68 (119155) were obtained from Kyoto Drosophila Stock Center. UAS-shits, UAS-NaChBac, and UAS-TNT have been described previously (Kitamoto, 2001; Nitabach et al., 2006).\n\n### SNB analysis\n\nA Petri dish (5.5 cm [d] \u00d7 1.5 cm [h]) was filled with 2% agar media (1.3 cm [h]) to prepare a circular arena for SNB analysis. This setup minimizes side-wall walking or z-stacking of individual flies that interferes with tracing group behaviors over time (Simon and Dickinson, 2010). Three-to-five-day-old flies from standard cultures (n = 16) were briefly cold-anesthetized (<15 s) and then transferred to the circular arena. Each arena was video-recorded for 10 min using a cellular phone (Samsung Galaxy Note 8 or Samsung Galaxy Note 20). Time-series coordinates of each fly\u2019s position in the arena were extracted from raw video data using an in-house Python code (https://github.com/taejoonlab/tracking-fly, copy archived at Jeong et al., 2021a). SD was calculated from the position coordinates of individual flies at a given time and averaged over time. The average walking speed of individual flies and the interquartile ranges of the positional centroid in a given group of flies were also calculated over time (https://github.com/KJKwon/2023_FlyBehavior, copy archived at Jeong et al., 2023). The centroid velocity was determined from the fourth quarter of video-recording data, given more evident clustering phenotypes at the later period. Single-fly recordings in the circular arena were analyzed using a MATLAB-based fly_tracker code (https://github.com/jstaf/fly_tracker, copy archived at Stafford, 2016).\n\n### Fly manipulations\n\nDrosophila eggs were collected on a plate filled with grape juice media (https://cshprotocols.cshlp.org/content/2007/9/pdb.rec11113). Each egg was gently transferred to an isolation chamber containing 300 ul of cornmeal-yeast-agar food for social isolation. The chamber was sealed using parafilm with a tiny hole for air circulation and kept at 25\u00b0C before relevant experiments. To generate grouped-to-isolated (GTI) flies, 3-day-old flies from standard culture vials were individually transferred to each isolation chamber and further incubated for a week. To generate isolated-to-grouped (ITG) flies, 3-day-old flies eclosed from isolated eggs were collected into a standard food vial for group-culturing (~20 isolated flies per vial) and further incubated for a week. To assess SNB in isolated or GTI flies, each fly was reared in the isolation chamber before collectively transferring into the SNB arena. Flies were briefly cold-anesthetized during GTI/ITG transitions or before transferring to the SNB arena. For physical injury, the mesothoracic segment of 3-day-old flies was pierced (<1 mm depth) using a sterilized needle.\n\n### Larval behavior and developmental analyses\n\nFor clustering assay, third-instar larvae were obtained from grouped-egg cultures (50 eggs per culture). A group of the third-instar larvae (n = 20) were then loaded onto a cylinder vial (2.3 cm [d] \u00d7 9.5 cm [h]) containing standard cornmeal-yeast-agar food. The food vial was divided into four sectors. The maximum number of clustering larvae per sector was scored from each vial, and the percentage of clusters with given larvae numbers was calculated from 30 vials. For digging assay, a 3D arena (2 cm [w] \u00d7 0.5 cm [d] \u00d7 4 cm [h]) was filled up to 2 cm with standard cornmeal-yeast-agar food. Either a group of third-instar larvae (n = 20) from standard culture vials or an isolated third-instar larva from single-egg cultures (one egg per culture) was transferred to the digging-assay arena and then allowed to explore it for 12 hr before measuring digging depth from the surface (Dombrovski et al., 2017). For food intake assay, a wider 3D arena (8 cm [w] \u00d7 0.5 cm [d] \u00d7 4 cm [h]) was filled up to 2 cm with standard cornmeal-yeast-agar media containing 1% brilliant blue FCF (JUNSEI, 64350-0410). A group of third-instar larvae (n = 20) from standard culture vials or an isolated third-instar larva from single-egg cultures was transferred to the food intake arena and then allowed to explore it for 12 hr. Each larva was gently homogenized in 50 ul of distilled water, and the absorbance of individual larval extracts was measured at 627 nm using a microplate reader (Tecan, Infinite M200). Developmental time was measured by the first eclosion day in a grouped-egg culture (50 eggs per culture) vs. a set of 81 single-egg cultures per experiment. The percentage of eclosed flies was scored from a grouped-egg culture (100 eggs per culture) vs. a set of 81 single-egg cultures per experiment, and the ratio of males to total flies was then calculated accordingly.\n\n### Maze assay\n\nYeast paste was placed at the corner of a 14 cm \u00d7 14 cm transparent maze, and the maze was put on a white-light box to avoid any phototatic effects. A group of four flies was starved for 6 hr and then transferred to the maze by an aspirator. A training session was completed when three or more pioneer flies reached the food, and the trained flies were transferred to an empty vial containing water only. The pioneer training was repeated three times. For the maze test, a group of 16 flies (16 naive or 12 naive + 4 pioneer flies) was briefly cold-anesthetized (<15 s) and then placed at the opposite corner of the maze to the yeast paste. The 75% arrival time was recorded when 12 or more flies reached the food.\n\n### Aggression assay\n\nQuantitative assessment of aggression behaviors was performed as described previously with minor modifications (Chen et al., 2002). Three-to-five-day-old male flies were separated from females and starved for 6 hr. A pair of male flies with the same genotype were then transferred by gentle aspiration into a cylinder arena (1.4 cm [d] \u00d7 0.5 cm [h]), where a thin droplet of yeast paste with a decapitated female carcass was placed in the center. The arena was video-recorded for 10 min, and the number of lunges was counted manually.\n\n### Courtship chaining behavior assay\n\nMale\u2013male courtship was quantified by the courtship chaining index as described previously with minor modifications (Kitamoto, 2002). A group of 3-to-5-day-old male flies (n = 16) from standard cultures were briefly cold-anesthetized (<15 s), transferred to the circular arena for SNB analysis, and then video-recorded for 10 min. Courtship chain was scored when three or more male flies were engaged in chaining with courtship behavior (Kitamoto, 2002). The chaining index was calculated by the percentage of courtship chaining duration over the 10 min recording.\n\n### Transcriptome analysis\n\nThree-to-five-day-old flies were harvested at ZT4-6. Total RNAs were extracted from 35 fly heads and purified using the PureLink RNA mini kit according to the manufacturer\u2019s instructions (Invitrogen). RNA quality was assessed by Bioanalyzer using the Agilent RNA 6000 pico kit (Agilent Technologies). RNA-seq libraries were constructed using the NEBNext Ultra Directional RNA Library Prep Kit for Illumina (New England Biolabs), together with NEBNext Poly(A) mRNA Magnetic Isolation Module (New England Biolabs) and subsequently sequenced by Illumina NovaSeq 6000 or Illumina NextSeq 500/550 (LabGenomics, Republic of Korea). RNA-seq reads were processed using trimmomatic (Bolger et al., 2014) (version 0.39) with the default option to remove bases with low-quality scores or from sequencing adapters. The trimmed reads were then mapped to the Drosophila melanogaster reference genome R6.46 using STAR (Dobin et al., 2013) (version 2.7.10b). DEGs were determined using DEseq2 (Love et al., 2014) (version 1.40.0; more than twofold change with adjusted p<0.05). Transcripts undetectable in more than half of the RNA-seq libraries were excluded from the analysis. Overrepresented GO terms were identified by Fisher\u2019s exact test (false discovery rate < 0.05) with PANTHER (Thomas et al., 2022) (version 17.0).\n\n### Quantitative brain imaging\n\nWhole-mount brain imaging was performed as described previously (Jeong et al., 2021b). The primary antibodies used in immunostaining included rabbit anti-DSK (Boster Bio, DZ41371; diluted at 0.5 ug/ml) and mouse anti-BRP antibodies (Developmental Studies Hybridoma Bank, nc82; diluted at 1:1,000). The GCaMP signals from live brains were recorded at room temperature using an FV1000 (Olympus) or A1 confocal microscope (Nikon). Fluorescence intensities from regions of interest in confocal images were quantified by background normalization [(S-B)/B] using ImageJ software.\n\n### Statistical analysis\n\nStatistical analyses were performed using GraphPad Prism or R (version 4.2.3). Shapiro\u2013Wilk test was followed by F-test (two samples) or Brown\u2013Forsythe test (multiple samples) to check normality (p<0.05) and equality of variances (p<0.05), respectively. For two-sample comparisons, parametric datasets with equal variance were analyzed by unpaired t-test. For multiple-sample comparisons, (1) parametric datasets with equal variance were analyzed by ordinary ANOVA with Tukey\u2019s multiple comparisons test; (2) parametric datasets with unequal variance were analyzed by Welch\u2019s ANOVA with Dunnett\u2019s T3 multiple comparisons test (one-way) or by aligned ranks transformation ANOVA with Wilcoxon rank sum test (two-way); and (3) nonparametric datasets with equal variance were analyzed by Kruskal\u2013Wallis test with Dunn\u2019s multiple comparisons test (one-way) or by aligned ranks transformation ANOVA with Wilcoxon rank sum test (two-way). For comparisons between repeatedly measured samples, datasets were analyzed by paired t-test (two samples) or two-way repeated measures ANOVA with Sidak\u2019s multiple comparisons test (multiple samples). The significance of the correlation among SD, walking speed, centroid velocity, food intake, starvation-induced activity, and aggression in DGRP strains was determined by Spearman correlation analysis. Sample sizes and p values obtained from individual statistical analyses were all summarized in each source data and indicated in the figure legends accordingly.\n",
+      "created_at": "2025-12-04T05:07:44.899188Z"
+    },
+    {
+      "id": "30ddcd0b-d7c1-4ae5-8ccf-c0e5f61ffee3",
+      "submission_id": "504a5ed9-cf08-4590-b046-0e360dbaeb03",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- John Ewer, https://ror.org/00h9jrb69 Universidad de Valparaiso Chile\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.103973.sa0](https://doi.org/10.7554/eLife.103973.sa0)\n\nThis study presents important findings on the role of Drosulfakinin signaling in encoding early-life social memory in Drosophila, which influences adaptive social plasticity in adulthood. The research demonstrates the neurogenetic basis of social clustering and behavioral adaptation, advancing our understanding of social behavior's molecular and evolutionary bases. The evidence is solid, given the robust genetic, behavioral, and transcriptomic analyses.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- John Ewer, https://ror.org/00h9jrb69 Universidad de Valparaiso Chile\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.103973.sa1](https://doi.org/10.7554/eLife.103973.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\n[Editors' note: this paper was reviewed by Review Commons.]\n",
+      "created_at": "2025-12-04T05:07:44.899188Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T05:07:44.899188Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T05:07:44.899188Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "47442c71-6c23-4552-bd0c-ba014ccef145",
+      "content_id": "b035a02e-519a-4d65-a41e-36daefa443a2",
+      "claim_id": "C1",
+      "claim": "The SNB assessment in 175 inbred strains from the Drosophila Genetics Reference Panel showed a tight association of short SD with long developmental time, low food intake, and hypoactivity.",
+      "claim_type": "EXPLICIT",
+      "source": "The SNB assessment in 175 inbred strains from the Drosophila Genetics Reference Panel showed a tight association of short SD with long developmental time, low food intake, and hypoactivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by data from SNB analysis across 175 DGRP lines and correlations with physiological measurements.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:07:44.899188Z"
+    },
+    {
+      "id": "8ee4bd08-8903-4f97-8f01-7fed8ca6ac55",
+      "content_id": "b035a02e-519a-4d65-a41e-36daefa443a2",
+      "claim_id": "C2",
+      "claim": "The developmental inferiority in short-SD individuals was compensated by their group culturing.",
+      "claim_type": "EXPLICIT",
+      "source": "The developmental inferiority in short-SD individuals was compensated by their group culturing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data comparing grouped versus isolated cultures showing rescue of developmental phenotypes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:07:44.899188Z"
+    },
+    {
+      "id": "2e1f7c59-2f89-43e2-b01b-a8a157724bd6",
+      "content_id": "b035a02e-519a-4d65-a41e-36daefa443a2",
+      "claim_id": "C3",
+      "claim": "Developmental isolation silenced the beneficial effects of social interactions in adults and blunted the plasticity of SNB under physiological challenges.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, developmental isolation silenced the beneficial effects of social interactions in adults and blunted the plasticity of SNB under physiological challenges.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data showing that developmentally isolated flies do not respond to injury with clustering behavior.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:07:44.899188Z"
+    },
+    {
+      "id": "818efdc0-bb78-49e5-9d74-bd9d3bddac72",
+      "content_id": "b035a02e-519a-4d65-a41e-36daefa443a2",
+      "claim_id": "C4",
+      "claim": "Social isolation reprogrammed select genetic pathways, regardless of SD phenotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "Transcriptome analyses revealed genetic diversity for SD traits, whereas social isolation reprogrammed select genetic pathways, regardless of SD phenotypes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by RNA-seq data showing common differentially expressed genes in socially isolated flies across different SD phenotypes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:07:44.899188Z"
+    },
+    {
+      "id": "eda86702-0962-401b-8203-290c934c26ad",
+      "content_id": "b035a02e-519a-4d65-a41e-36daefa443a2",
+      "claim_id": "C5",
+      "claim": "Social deprivation suppressed the expression of the neuropeptide Drosulfakinin (Dsk) in three pairs of adult brain neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, social deprivation suppressed the expression of the neuropeptide Drosulfakinin (Dsk) in three pairs of adult brain neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by immunostaining data showing reduced DSK levels in socially isolated flies.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:07:44.899188Z"
+    },
+    {
+      "id": "c41a5f11-ad69-4b32-9fc8-2b7e7f181825",
+      "content_id": "b035a02e-519a-4d65-a41e-36daefa443a2",
+      "claim_id": "C6",
+      "claim": "Male-specific DSK signaling to cholecystokinin-like receptor 17D1 mediated the SNB plasticity.",
+      "claim_type": "EXPLICIT",
+      "source": "Male-specific DSK signaling to cholecystokinin-like receptor 17D1 mediated the SNB plasticity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by genetic manipulation experiments showing that CCKLR-17D1 but not CCKLR-17D3 is required for injury-induced clustering, and that this effect is male-specific.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:07:44.899188Z"
+    },
+    {
+      "id": "cf58ca9d-fd90-4101-9e49-85aa317fdc5d",
+      "content_id": "b035a02e-519a-4d65-a41e-36daefa443a2",
+      "claim_id": "C7",
+      "claim": "Transgenic manipulations of the DSK neuron activity were sufficient to imitate the state of social experience.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, transgenic manipulations of the DSK neuron activity were sufficient to imitate the state of social experience.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experiments showing that activation of CCKLR-17D1 neurons confers injury-induced social interactions to isolated male flies.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:07:44.899188Z"
+    },
+    {
+      "id": "982e8e34-1f10-46a7-88cb-4e4a07bac2de",
+      "content_id": "b035a02e-519a-4d65-a41e-36daefa443a2",
+      "claim_id": "C8",
+      "claim": "The DGRP consists of approximately 200 inbred wild-type strains and functions as a practical genetic library to explore the correlation between naturally occurring genetic variations and complex animal behaviors.",
+      "claim_type": "EXPLICIT",
+      "source": "The DGRP consists of approximately 200 inbred wild-type strains and functions as a practical genetic library to explore the correlation between naturally occurring genetic variations and complex animal behaviors (Mackay et al., 2012; Mackay and Huang, 2018; Gardeux et al., 2024).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous publications describing the DGRP resource.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:07:44.899188Z"
+    },
+    {
+      "id": "23b296cc-e3d3-4081-963a-987f90f3171b",
+      "content_id": "b035a02e-519a-4d65-a41e-36daefa443a2",
+      "claim_id": "C9",
+      "claim": "Short-SD lines gradually reduced SD and walking speed over time to stay in the cluster, thereby exhibiting short travel distances, slow walking speeds, and low centroid velocities on average.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, short-SD lines gradually reduced SD and walking speed over time to stay in the cluster, thereby exhibiting short travel distances, slow walking speeds, and low centroid velocities on average (e.g., DGRP73, DGRP 563, and DGRP370) (Figure 2A, Figure 2\u2014figure supplement 1, Figure 2\u2014source data 1, Video 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantitative behavioral data and video recordings shown in Figure 2A and supplementary materials.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:07:44.899188Z"
+    },
+    {
+      "id": "fc4d281f-2315-4d6e-9bce-87bf7b1ccc37",
+      "content_id": "b035a02e-519a-4d65-a41e-36daefa443a2",
+      "claim_id": "C10",
+      "claim": "Long-SD lines persistently explored the arena during video recording and sustained 'social distancing' to display long travel distances, fast walking speeds, and high centroid velocities.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, long-SD lines persistently explored the arena during video recording and sustained 'social distancing' to display long travel distances, fast walking speeds, and high centroid velocities (e.g., DGRP360, DGRP707, and DGRP317) (Figure 2B, Figure 2\u2014figure supplement 1, Figure 2\u2014source data 1, Video 2), although their locomotion was modestly slowed down over time.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantitative behavioral data and video recordings shown in Figure 2B and supplementary materials.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:07:44.899188Z"
+    },
+    {
+      "id": "68973a33-0935-4420-8dc1-8494ca08946e",
+      "content_id": "b035a02e-519a-4d65-a41e-36daefa443a2",
+      "claim_id": "C11",
+      "claim": "Short-SD flies did not significantly change their locomotor activity over time when placed as a single fly in the same arena.",
+      "claim_type": "EXPLICIT",
+      "source": "Short-SD flies did not significantly change their locomotor activity over time when we placed a single fly in the same arena and assessed its behavior (Figure 2\u2014figure supplement 2, Figure 2\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by single-fly locomotor activity data shown in Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:07:44.899188Z"
+    },
+    {
+      "id": "7b6d14a9-b8b9-4876-94c7-029f3e9077ff",
+      "content_id": "b035a02e-519a-4d65-a41e-36daefa443a2",
+      "claim_id": "C12",
+      "claim": "Reduced activity in a group of short-SD flies is likely an effect of their clustering phenotypes but not necessarily the cause.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, reduced activity in a group of short-SD flies is likely an effect of their clustering phenotypes but not necessarily the cause.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the observation that single short-SD flies do not show reduced activity over time.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:07:44.899188Z"
+    },
+    {
+      "id": "f6ff0044-a1c1-49f7-9c58-59d57992c4c3",
+      "content_id": "b035a02e-519a-4d65-a41e-36daefa443a2",
+      "claim_id": "C13",
+      "claim": "Short- and long-SD flies retained their clustering properties even in a larger arena (8.5 cm in diameter).",
+      "claim_type": "EXPLICIT",
+      "source": "Short- and long-SD flies retained their clustering properties even in a larger arena (Figure 2\u2014figure supplement 3, Videos 3 and 4; 8.5 cm in diameter), indicating active social preferences that persist in different environments.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by behavioral data in a larger arena shown in Figure 2\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:07:44.899188Z"
+    },
+    {
+      "id": "e221612f-23ec-4cf1-b096-c48d4ab71259",
+      "content_id": "b035a02e-519a-4d65-a41e-36daefa443a2",
+      "claim_id": "C14",
+      "claim": "Both types of DGRP lines displayed no chaining behaviors in the open arena, excluding the possible implication of male-to-male courtship in their SD phenotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "Both types of DGRP lines displayed no chaining behaviors in the open arena, excluding the possible implication of male-to-male courtship in their SD phenotypes (Figure 2\u2014figure supplement 4, Figure 2\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by chaining index measurements shown in Figure 2\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:07:44.899188Z"
+    },
+    {
+      "id": "0815114e-3146-457c-9d03-bac0a0555869",
+      "content_id": "b035a02e-519a-4d65-a41e-36daefa443a2",
+      "claim_id": "C15",
+      "claim": "The short-SD lines had higher numbers of larvae per cluster than the long-SD lines.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, we found that the short-SD lines had higher numbers of larvae per cluster than the long-SD lines (Figure 3A, Figure 3\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by larval clustering data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:07:44.899188Z"
+    },
+    {
+      "id": "4223716a-e1f9-426a-9cb8-2a358e0dbf8a",
+      "content_id": "b035a02e-519a-4d65-a41e-36daefa443a2",
+      "claim_id": "C16",
+      "claim": "Social isolation substantially impaired larval activity and development in both short- and long-SD lines.",
+      "claim_type": "EXPLICIT",
+      "source": "Social isolation substantially impaired larval activity and development in both short- and long-SD lines (Figure 3C\u2013G, Figure 3\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by multiple developmental assays shown in Figure 3C-G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:07:44.899188Z"
+    },
+    {
+      "id": "5f56f71f-c343-4cff-a0ce-f8acabbe58dd",
+      "content_id": "b035a02e-519a-4d65-a41e-36daefa443a2",
+      "claim_id": "C17",
+      "claim": "Socially isolated larvae from the short-SD lines displayed poor digging activity compared to those from the long-SD lines.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, socially isolated larvae from the short-SD lines displayed poor digging activity (Figure 3C, Figure 3\u2014source data 1), low food intake (Figure 3D, Figure 3\u2014source data 1), and long developmental time (Figure 3E, Figure 3\u2014source data 1) compared to those from the long-SD lines.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by digging assay data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:07:44.899188Z"
+    },
+    {
+      "id": "8c8e1b39-9c8a-419c-b66b-4b4359ce3cb2",
+      "content_id": "b035a02e-519a-4d65-a41e-36daefa443a2",
+      "claim_id": "C18",
+      "claim": "Socially isolated larvae from the short-SD lines displayed low food intake compared to those from the long-SD lines.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, socially isolated larvae from the short-SD lines displayed poor digging activity (Figure 3C, Figure 3\u2014source data 1), low food intake (Figure 3D, Figure 3\u2014source data 1), and long developmental time (Figure 3E, Figure 3\u2014source data 1) compared to those from the long-SD lines.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by food intake assay data shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:07:44.899188Z"
+    },
+    {
+      "id": "c3bde978-f637-4646-a14e-5a2e66770593",
+      "content_id": "b035a02e-519a-4d65-a41e-36daefa443a2",
+      "claim_id": "C19",
+      "claim": "Socially isolated larvae from the short-SD lines displayed long developmental time compared to those from the long-SD lines.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, socially isolated larvae from the short-SD lines displayed poor digging activity (Figure 3C, Figure 3\u2014source data 1), low food intake (Figure 3D, Figure 3\u2014source data 1), and long developmental time (Figure 3E, Figure 3\u2014source data 1) compared to those from the long-SD lines.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by developmental time measurements shown in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:07:44.899188Z"
+    },
+    {
+      "id": "ed96a38a-6237-448a-acd7-e79fe19525e9",
+      "content_id": "b035a02e-519a-4d65-a41e-36daefa443a2",
+      "claim_id": "C20",
+      "claim": "Short-SD larvae had lower eclosion success than long-SD larvae.",
+      "claim_type": "EXPLICIT",
+      "source": "Short-SD larvae also had lower eclosion success (Figure 3F, Figure 3\u2014source data 1) and a lower ratio of the adult male progeny (Figure 3G, Figure 3\u2014source data 1) than long-SD larvae, although isolated cultures reduced the eclosion success regardless of the SD trait.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by eclosion success data shown in Figure 3F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:07:44.899188Z"
+    },
+    {
+      "id": "1c49c65c-ac7c-4a57-a501-175e95f015ac",
+      "content_id": "b035a02e-519a-4d65-a41e-36daefa443a2",
+      "claim_id": "C21",
+      "claim": "Short-SD larvae had a lower ratio of the adult male progeny than long-SD larvae.",
+      "claim_type": "EXPLICIT",
+      "source": "Short-SD larvae also had lower eclosion success (Figure 3F, Figure 3\u2014source data 1) and a lower ratio of the adult male progeny (Figure 3G, Figure 3\u2014source data 1) than long-SD larvae, although isolated cultures reduced the eclosion success regardless of the SD trait.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by male progeny ratio data shown in Figure 3G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:07:44.899188Z"
+    },
+    {
+      "id": "37add53d-a605-4879-a5cb-34eef8f9ec1e",
+      "content_id": "b035a02e-519a-4d65-a41e-36daefa443a2",
+      "claim_id": "C22",
+      "claim": "Grouping of short-SD larvae blunted or partially rescued developmental phenotypes including digging activity, developmental time, eclosion success, and male progeny ratio.",
+      "claim_type": "EXPLICIT",
+      "source": "Grouping of short-SD larvae blunted or partially rescued these phenotypes (i.e., digging activity, developmental time, eclosion success, and male progeny ratio).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by comparisons between grouped and isolated cultures in developmental assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:07:44.899188Z"
+    },
+    {
+      "id": "029c4c91-5bf2-44bc-9b83-bf6d7cdb2501",
+      "content_id": "b035a02e-519a-4d65-a41e-36daefa443a2",
+      "claim_id": "C23",
+      "claim": "Group culture promoted food intake comparably in short- and long-SD larvae.",
+      "claim_type": "EXPLICIT",
+      "source": "Our group culture was not a competitive environment for limited resources to delay developmental time (Horv\u00e1th and Kalinka, 2016; Klepsatel et al., 2018), but it actually promoted food intake comparably in short- and long-SD larvae (Figure 3D, Figure 3\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by food intake data comparing grouped cultures across SD types shown in Figure 3D.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:07:44.899188Z"
+    },
+    {
+      "id": "c2446841-b32f-46a5-b973-1ba4590d6651",
+      "content_id": "b035a02e-519a-4d65-a41e-36daefa443a2",
+      "claim_id": "C24",
+      "claim": "The clustering property of short-SD lines may have evolved as a compensation mechanism for the developmental inferiority in individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "The significant interaction effects of SD (i.e., short- vs. long-SD trait) and socialization (i.e., grouped vs. isolated cultures) on digging activity, developmental time, and male progeny ratio suggest that the clustering property of short-SD lines may have evolved as a compensation mechanism for the developmental inferiority in individuals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from statistical interaction effects observed in developmental assays.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:07:44.899188Z"
+    },
+    {
+      "id": "217d001e-9f03-4d2f-8678-6071b1dbaa6c",
+      "content_id": "b035a02e-519a-4d65-a41e-36daefa443a2",
+      "claim_id": "C25",
+      "claim": "Both short- and long-SD lines significantly shortened latency to the arrival of 75% of flies on food by iterative exposures to the maze.",
+      "claim_type": "EXPLICIT",
+      "source": "We first confirmed that both short- and long-SD lines significantly shortened latency to the arrival of 75% of flies on food by iterative exposures to the maze (Figure 4B, Figure 4\u2014figure supplement 1, Figure 4\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by maze training data shown in Figure 4B and Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:07:44.899188Z"
+    },
+    {
+      "id": "20fd624a-5b14-4bb0-8f11-989d89cd1654",
+      "content_id": "b035a02e-519a-4d65-a41e-36daefa443a2",
+      "claim_id": "C26",
+      "claim": "Plasticity mutants of the rutabaga (rut) gene did not significantly shorten the arrival latency after three consecutive training sessions in the maze paradigm.",
+      "claim_type": "EXPLICIT",
+      "source": "Representative plasticity mutants of the rutabaga (rut) gene did not significantly shorten the arrival latency after three consecutive training sessions in our maze paradigm (Figure 4\u2014figure supplement 2A, Figure 4\u2014source data 1), implicating rut-dependent learning and memory in this process (Levin et al., 1992).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by maze training data for rut mutants shown in Figure 4\u2014figure supplement 2A.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:07:44.899188Z"
+    },
+    {
+      "id": "56dbb8bf-0546-44e4-9c1e-049da1040514",
+      "content_id": "b035a02e-519a-4d65-a41e-36daefa443a2",
+      "claim_id": "C27",
+      "claim": "The short-SD lines displayed poor performance in the maze assay as assessed by longer latency to the arrival of 75% na\u00efve flies on food than the long-SD lines.",
+      "claim_type": "EXPLICIT",
+      "source": "The short-SD lines displayed poor performance in the maze assay as assessed by longer latency to the arrival of 75% na\u00efve flies on food than the long-SD lines (Figure 4B, Figure 4\u2014figure supplement 1, Figure 4\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by maze test data comparing short- and long-SD lines shown in Figure 4B and Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:07:44.899188Z"
+    },
+    {
+      "id": "df8be324-d40f-4a05-a97b-5752401badda",
+      "content_id": "b035a02e-519a-4d65-a41e-36daefa443a2",
+      "claim_id": "C28",
+      "claim": "Combining the trained 'pioneers' with a group of na\u00efve flies significantly improved the group property of food-seeking behaviors in both short- and long-SD lines.",
+      "claim_type": "EXPLICIT",
+      "source": "Combining the trained 'pioneers' with a group of na\u00efve flies significantly improved the group property of food-seeking behaviors in both short- and long-SD lines (Figure 4B, Figure 4\u2014figure supplement 1, Figure 4\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by maze test data with pioneer flies shown in Figure 4B and Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:07:44.899188Z"
+    },
+    {
+      "id": "a379f4e2-6f90-44a7-ba27-05fb51d80ef2",
+      "content_id": "b035a02e-519a-4d65-a41e-36daefa443a2",
+      "claim_id": "C29",
+      "claim": "The pioneer effects disappeared when the na\u00efve group consisted of socially isolated individuals from egg development.",
+      "claim_type": "EXPLICIT",
+      "source": "The pioneer effects disappeared when the na\u00efve group consisted of socially isolated individuals from egg development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by maze test data comparing grouped and isolated flies shown in Figure 4B and Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:07:44.899188Z"
+    },
+    {
+      "id": "935096a8-c2fe-4f1f-9acf-cdd8091cf39d",
+      "content_id": "b035a02e-519a-4d65-a41e-36daefa443a2",
+      "claim_id": "C30",
+      "claim": "Social foraging in the maze paradigm is unlikely a simple collective response in adults, but it specifically requires early-life social experience.",
+      "claim_type": "EXPLICIT",
+      "source": "These results support that social foraging in our maze paradigm is unlikely a simple collective response in adults, but it specifically requires early-life social experience.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the observation that pioneer effects require early-life social experience.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:07:44.899188Z"
+    },
+    {
+      "id": "83dce7c9-dfa3-456e-a8a7-6d4ca04df572",
+      "content_id": "b035a02e-519a-4d65-a41e-36daefa443a2",
+      "claim_id": "C31",
+      "claim": "Mechanical injury shortened SD in both sociality types of DGRP lines.",
+      "claim_type": "EXPLICIT",
+      "source": "We indeed discovered that mechanical injury shortened SD in both sociality types of DGRP lines (Figure 4C and D, Figure 4\u2014figure supplement 3A, Figure 4\u2014source data 1; Videos 5 and 6;) while reducing walking speed and centroid velocity only in the long-SD lines (Figure 4\u2014figure supplement 4, Figure 4\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by injury-induced clustering data shown in Figure 4D and Figure 4\u2014figure supplement 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:07:44.899188Z"
+    },
+    {
+      "id": "73795e2f-ff0d-4492-a50b-6d3a9b2caa02",
+      "content_id": "b035a02e-519a-4d65-a41e-36daefa443a2",
+      "claim_id": "C32",
+      "claim": "Mechanical injury reduced walking speed and centroid velocity only in the long-SD lines.",
+      "claim_type": "EXPLICIT",
+      "source": "We indeed discovered that mechanical injury shortened SD in both sociality types of DGRP lines (Figure 4C and D, Figure 4\u2014figure supplement 3A, Figure 4\u2014source data 1; Videos 5 and 6;) while reducing walking speed and centroid velocity only in the long-SD lines (Figure 4\u2014figure supplement 4, Figure 4\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by locomotor activity data following injury shown in Figure 4\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:07:44.899188Z"
+    },
+    {
+      "id": "1bf46501-9133-451d-9ff9-24102b31237d",
+      "content_id": "b035a02e-519a-4d65-a41e-36daefa443a2",
+      "claim_id": "C33",
+      "claim": "One week of recovery was sufficient to restore the original SD traits after injury.",
+      "claim_type": "EXPLICIT",
+      "source": "The injury effects were transient because 1 week of recovery was sufficient to restore the original SD traits (Figure 4D, Figure 4\u2014figure supplement 3A, Figure 4\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by recovery data shown in Figure 4D and Figure 4\u2014figure supplement 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:07:44.899188Z"
+    },
+    {
+      "id": "2c244f6c-b0c2-440f-9e86-4ae7b195312d",
+      "content_id": "b035a02e-519a-4d65-a41e-36daefa443a2",
+      "claim_id": "C34",
+      "claim": "The injury-induced plasticity of SNB and locomotor activity was not detectable in a group of socially isolated flies.",
+      "claim_type": "EXPLICIT",
+      "source": "The injury-induced plasticity of SNB and locomotor activity was not detectable in a group of socially isolated flies (Figure 4D, Figure 4\u2014figure supplements 3A and 4, Figure 4\u2014source data 1, Videos 7\u201310).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data comparing injury responses in grouped versus isolated flies shown in Figure 4D and supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:07:44.899188Z"
+    },
+    {
+      "id": "23c062af-e5b4-4d11-9b0b-4f9c75e441b5",
+      "content_id": "b035a02e-519a-4d65-a41e-36daefa443a2",
+      "claim_id": "C35",
+      "claim": "The injury-induced SNB plasticity required no receptor potential A (norpA) among sensory pathway genes tested.",
+      "claim_type": "EXPLICIT",
+      "source": "The injury-induced SNB plasticity required no receptor potential A (norpA) among sensory pathway genes tested (Figure 4\u2014figure supplement 5, Figure 4\u2014source data 1), indicating a crucial role of norpA-dependent visual sensing.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by genetic analysis of sensory pathway mutants shown in Figure 4\u2014figure supplement 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:07:44.899188Z"
+    },
+    {
+      "id": "2a1b300a-9688-4a57-9088-33fa2a93797a",
+      "content_id": "b035a02e-519a-4d65-a41e-36daefa443a2",
+      "claim_id": "C36",
+      "claim": "Vision is required for larval clustering behaviors in Drosophila.",
+      "claim_type": "EXPLICIT",
+      "source": "It is consistent with the previous finding that vision is required for larval clustering behaviors in Drosophila (Dombrovski et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:07:44.899188Z"
+    },
+    {
+      "id": "493fa03c-593e-4f51-b45f-d47ac23dad8c",
+      "content_id": "b035a02e-519a-4d65-a41e-36daefa443a2",
+      "claim_id": "C37",
+      "claim": "An adult-specific grouping of developmentally isolated flies was insufficient to support the social plasticity.",
+      "claim_type": "EXPLICIT",
+      "source": "We further found that an adult-specific grouping of developmentally isolated flies was insufficient to support the social plasticity (Figure 4D, Figure 4\u2014figure supplement 3A, Figure 4\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data from isolated-to-grouped (ITG) culture transitions shown in Figure 4D and Figure 4\u2014figure supplement 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:07:44.899188Z"
+    },
+    {
+      "id": "7520afa7-c8c1-4068-a30c-5d80ebe3151d",
+      "content_id": "b035a02e-519a-4d65-a41e-36daefa443a2",
+      "claim_id": "C38",
+      "claim": "The rut-dependent memory pathway seems dispensable for developmental 'social memory' since rut mutants displayed injury-induced social plasticity comparable to control flies.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, the rut-dependent memory pathway seems dispensable for developmental 'social memory' since rut mutants displayed injury-induced social plasticity comparable to control flies (Figure 4\u2014figure supplement 2B, Figure 4\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by injury-induced clustering data in rut mutants shown in Figure 4\u2014figure supplement 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:07:44.899188Z"
+    },
+    {
+      "id": "d2803fd0-2539-426e-a999-c547dccd8da0",
+      "content_id": "b035a02e-519a-4d65-a41e-36daefa443a2",
+      "claim_id": "C39",
+      "claim": "The transcriptome analyses revealed significantly upregulated genes in the short-SD lines (n genes = 191).",
+      "claim_type": "EXPLICIT",
+      "source": "The transcriptome analyses revealed significantly upregulated genes in the short- and long-SD lines (n genes = 191 and 199, respectively), as well as in grouped and socially isolated flies (n genes = 159 and 755, respectively) (Figure 5A and B, Figure 5\u2014source data 1,Figure 5\u2014source data 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by RNA-seq data shown in Figure 5A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:07:44.899188Z"
+    },
+    {
+      "id": "99d39172-569a-47e8-a7b0-6cfc3ce9c5b5",
+      "content_id": "b035a02e-519a-4d65-a41e-36daefa443a2",
+      "claim_id": "C40",
+      "claim": "The transcriptome analyses revealed significantly upregulated genes in the long-SD lines (n genes = 199).",
+      "claim_type": "EXPLICIT",
+      "source": "The transcriptome analyses revealed significantly upregulated genes in the short- and long-SD lines (n genes = 191 and 199, respectively), as well as in grouped and socially isolated flies (n genes = 159 and 755, respectively) (Figure 5A and B, Figure 5\u2014source data 1,Figure 5\u2014source data 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by RNA-seq data shown in Figure 5A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:07:44.899188Z"
+    },
+    {
+      "id": "b6bc7ec4-3438-418e-ba33-b58a8bf4447f",
+      "content_id": "b035a02e-519a-4d65-a41e-36daefa443a2",
+      "claim_id": "C41",
+      "claim": "The transcriptome analyses revealed significantly upregulated genes in grouped flies (n genes = 159).",
+      "claim_type": "EXPLICIT",
+      "source": "The transcriptome analyses revealed significantly upregulated genes in the short- and long-SD lines (n genes = 191 and 199, respectively), as well as in grouped and socially isolated flies (n genes = 159 and 755, respectively) (Figure 5A and B, Figure 5\u2014source data 1,Figure 5\u2014source data 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by RNA-seq data shown in Figure 5A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:07:44.899188Z"
+    },
+    {
+      "id": "f288c9fe-91de-428c-abd3-6c1bba31b688",
+      "content_id": "b035a02e-519a-4d65-a41e-36daefa443a2",
+      "claim_id": "C42",
+      "claim": "The transcriptome analyses revealed significantly upregulated genes in socially isolated flies (n genes = 755).",
+      "claim_type": "EXPLICIT",
+      "source": "The transcriptome analyses revealed significantly upregulated genes in the short- and long-SD lines (n genes = 191 and 199, respectively), as well as in grouped and socially isolated flies (n genes = 159 and 755, respectively) (Figure 5A and B, Figure 5\u2014source data 1,Figure 5\u2014source data 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by RNA-seq data shown in Figure 5A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:07:44.899188Z"
+    },
+    {
+      "id": "b97aff1a-7cfa-4818-8161-279daceab876",
+      "content_id": "b035a02e-519a-4d65-a41e-36daefa443a2",
+      "claim_id": "C43",
+      "claim": "Genes upregulated in socially isolated DGRP lines overlapped substantially with those identified in previous studies using independent wild-type strains.",
+      "claim_type": "EXPLICIT",
+      "source": "Genes upregulated in socially isolated DGRP lines overlapped substantially with those identified in previous studies using independent wild-type strains (Li et al., 2021; Wang et al., 2008; Agrawal et al., 2020; Figure 5\u2014figure supplement 1A, Figure 5\u2014source data 3), whereas upregulated genes in short- or long-SD lines barely overlapped with DEGs between grouped and socially isolated flies (Figure 5\u2014figure supplement 1B, Figure 5\u2014source data 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by comparison of DEGs across studies shown in Figure 5\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:07:44.899188Z"
+    },
+    {
+      "id": "2ac76081-3891-4b56-a5d1-4db1b3c3d218",
+      "content_id": "b035a02e-519a-4d65-a41e-36daefa443a2",
+      "claim_id": "C44",
+      "claim": "Upregulated genes in short- or long-SD lines barely overlapped with DEGs between grouped and socially isolated flies.",
+      "claim_type": "EXPLICIT",
+      "source": "Genes upregulated in socially isolated DGRP lines overlapped substantially with those identified in previous studies using independent wild-type strains (Li et al., 2021; Wang et al., 2008; Agrawal et al., 2020; Figure 5\u2014figure supplement 1A, Figure 5\u2014source data 3), whereas upregulated genes in short- or long-SD lines barely overlapped with DEGs between grouped and socially isolated flies (Figure 5\u2014figure supplement 1B, Figure 5\u2014source data 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by Venn diagram analysis shown in Figure 5\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:07:44.899188Z"
+    },
+    {
+      "id": "5256a7a1-dab2-44f4-80ef-d4b14d59cb2f",
+      "content_id": "b035a02e-519a-4d65-a41e-36daefa443a2",
+      "claim_id": "C45",
+      "claim": "Gene Ontology (GO) analyses showed no significant enrichment of specific GO terms in DEGs between the short- and long-SD lines.",
+      "claim_type": "EXPLICIT",
+      "source": "Gene Ontology (GO) analyses showed no significant enrichment of specific GO terms in DEGs between the short- and long-SD lines.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on GO analysis of DEGs between SD phenotypes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:07:44.899188Z"
+    },
+    {
+      "id": "45a19c42-73ab-47e1-b916-7441ce039dd9",
+      "content_id": "b035a02e-519a-4d65-a41e-36daefa443a2",
+      "claim_id": "C46",
+      "claim": "Diverse genetic pathways shape baseline SD phenotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "We thus concluded that diverse genetic pathways shape baseline SD phenotypes, as suggested previously (Schneider et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the lack of specific GO term enrichment and is supported by citation to a previous study.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:07:44.899188Z"
+    },
+    {
+      "id": "b47cb0c1-e4ec-49a4-b4b9-289436762a4e",
+      "content_id": "b035a02e-519a-4d65-a41e-36daefa443a2",
+      "claim_id": "C47",
+      "claim": "Select metabolic pathways were upregulated in both types of DGRP lines by social isolation.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, select metabolic pathways were upregulated in both types of DGRP lines by social isolation (Figure 5C and D, Figure 5\u2014source data 2;Figure 5\u2014source data 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by GO analysis shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:07:44.899188Z"
+    },
+    {
+      "id": "d490da6a-f8e3-4e3c-abb9-7b704d0b6aa8",
+      "content_id": "b035a02e-519a-4d65-a41e-36daefa443a2",
+      "claim_id": "C48",
+      "claim": "Chronic social isolation acts as a hunger cue to suppress sleep, induce feeding, and alter metabolic gene expression, including those involved in lipid metabolism.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations were consistent with previous findings that chronic social isolation acts as a hunger cue to suppress sleep, induce feeding, and alter metabolic gene expression, including those involved in lipid metabolism (Li et al., 2021; Liu et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:07:44.899188Z"
+    },
+    {
+      "id": "e37c3254-a695-43af-8014-4d4ea7f6b342",
+      "content_id": "b035a02e-519a-4d65-a41e-36daefa443a2",
+      "claim_id": "C49",
+      "claim": "Drosophila has evolved a genetic reprogram where social isolation elevates metabolic gene expression to adaptively induce a metabolic shift for energy storage and fitness.",
+      "claim_type": "EXPLICIT",
+      "source": "Considering that the number of commonly upregulated genes in group-cultured flies was very limited, we speculate that Drosophila has evolved a genetic reprogram where social isolation elevates metabolic gene expression to adaptively induce a metabolic shift for energy storage and fitness.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is speculative based on the pattern of gene expression changes observed.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:07:44.899188Z"
+    },
+    {
+      "id": "5eaae77a-3844-47f0-825f-d70e4407fb96",
+      "content_id": "b035a02e-519a-4d65-a41e-36daefa443a2",
+      "claim_id": "C50",
+      "claim": "The phenotypic alignment of DGRP lines revealed significant correlations of their social interaction behaviors to food intake, starvation-induced activity, and aggression.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the phenotypic alignment of DGRP lines revealed significant correlations of their social interaction behaviors to food intake, starvation-induced activity, and aggression, among others (Garlapow et al., 2015; Shorter et al., 2015; Chi et al., 2021; Figure 5E, Figure 5\u2014source data 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by correlation analysis shown in Figure 5E using data from previous studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:07:44.899188Z"
+    },
+    {
+      "id": "d3fa88b6-0416-43d8-98f9-d590468e7074",
+      "content_id": "b035a02e-519a-4d65-a41e-36daefa443a2",
+      "claim_id": "C51",
+      "claim": "The long-SD lines showed more lunges than the short-SD lines, indicative of high aggression behaviors.",
+      "claim_type": "EXPLICIT",
+      "source": "We validated that the long-SD lines showed more lunges than the short-SD lines, indicative of high aggression behaviors (Figure 5\u2014figure supplement 2, Figure 5\u2014source data 5, Videos 11 and 12).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by aggression assay data shown in Figure 5\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:07:44.899188Z"
+    },
+    {
+      "id": "37a427d5-6863-42be-99b1-7035ceb80bf5",
+      "content_id": "b035a02e-519a-4d65-a41e-36daefa443a2",
+      "claim_id": "C52",
+      "claim": "Dsk is a neuropeptide implicated in aggression, food intake, satiety, and sexual behaviors.",
+      "claim_type": "EXPLICIT",
+      "source": "These included Drosulfakinin (Dsk), a neuropeptide implicated in aggression, food intake, satiety, and sexual behaviors (Agrawal et al., 2020; Wu et al., 2019; Wu et al., 2020; Guo et al., 2021; Wang et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:07:44.899188Z"
+    },
+    {
+      "id": "759d8f5e-73dd-4d02-b914-92fb65dc1c16",
+      "content_id": "b035a02e-519a-4d65-a41e-36daefa443a2",
+      "claim_id": "C53",
+      "claim": "The mammalian Dsk homolog cholecystokinin (CCK) has been shown to play a similar role in relevant physiology, suggesting the possible conservation of Dsk function.",
+      "claim_type": "EXPLICIT",
+      "source": "The mammalian Dsk homolog cholecystokinin (CCK) has also been shown to play a similar role in relevant physiology, suggesting the possible conservation of Dsk function (Nichols et al., 1988; Staljanssens et al., 2011; N\u00e4ssel and Wu, 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies on CCK function.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:07:44.899188Z"
+    },
+    {
+      "id": "73259fd6-4496-42da-86b7-1ee26fda0c69",
+      "content_id": "b035a02e-519a-4d65-a41e-36daefa443a2",
+      "claim_id": "C54",
+      "claim": "Dsk was the only overlapping gene that was downregulated upon social isolation across independent studies.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, Dsk was the only overlapping gene that was downregulated upon social isolation across independent studies (Li et al., 2021; Wang et al., 2008; Agrawal et al., 2020; Figure 5\u2014figure supplement 1A, Figure 5\u2014source data 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by comparison of DEGs across studies shown in Figure 5\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:07:44.899188Z"
+    },
+    {
+      "id": "78dcfcb6-801d-4248-a251-8cd7ff71f80a",
+      "content_id": "b035a02e-519a-4d65-a41e-36daefa443a2",
+      "claim_id": "C55",
+      "claim": "Social isolation of the DGRP lines significantly downregulated the expression of Dsk and the two CCK-like receptors (i.e., CCKLR-17D1 and CCKLR-17D3).",
+      "claim_type": "EXPLICIT",
+      "source": "We also found that social isolation of the DGRP lines significantly downregulated the expression of Dsk and the two CCK-like receptors (i.e., CCKLR-17D1 and CCKLR-17D3), although Dsk receptor gene expression showed less than twofold change (Figure 5F, Figure 5\u2014source data 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by RNA-seq data shown in Figure 5F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:07:44.899188Z"
+    },
+    {
+      "id": "5309fc23-a4e7-4f4f-bbc3-674c9b9e35c0",
+      "content_id": "b035a02e-519a-4d65-a41e-36daefa443a2",
+      "claim_id": "C56",
+      "claim": "Immunostaining of whole-mount brains identified three groups of DSK-expressing neurons with distinct neuroanatomical morphology (i.e., MP1a, MP1b, and MP3).",
+      "claim_type": "EXPLICIT",
+      "source": "Immunostaining of whole-mount brains identified three groups of DSK-expressing neurons with distinct neuroanatomical morphology (i.e., MP1a, MP1b, and MP3) (Wu et al., 2019; Wu et al., 2020; Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunostaining data shown in Figure 6A and citations to previous studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:07:44.899188Z"
+    },
+    {
+      "id": "dacc92b7-b0a4-495e-ac1b-51f43984231e",
+      "content_id": "b035a02e-519a-4d65-a41e-36daefa443a2",
+      "claim_id": "C57",
+      "claim": "The long-SD lines displayed relatively high DSK signals in the cell bodies compared to the short-SD lines.",
+      "claim_type": "EXPLICIT",
+      "source": "The long-SD lines displayed relatively high DSK signals in the cell bodies compared to the short-SD lines (Figure 6B, Figure 6\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantification of DSK immunostaining shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:07:44.899188Z"
+    },
+    {
+      "id": "3f18defe-7ca8-4e86-abe9-6d46898acdcf",
+      "content_id": "b035a02e-519a-4d65-a41e-36daefa443a2",
+      "claim_id": "C58",
+      "claim": "DSK levels in the neural projections were comparable between short-SD and long-SD lines.",
+      "claim_type": "EXPLICIT",
+      "source": "However, DSK levels in the neural projections were comparable between the two groups, raising the possibility that axonal transport or processing of the neuropeptide was limiting under the group-culture condition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by quantification of DSK immunostaining in projections.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:07:44.899188Z"
+    },
+    {
+      "id": "247d4e9f-ff36-497e-be95-df0eeddcd2d2",
+      "content_id": "b035a02e-519a-4d65-a41e-36daefa443a2",
+      "claim_id": "C59",
+      "claim": "Social isolation lowered DSK levels irrespective of the SD phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "Social isolation lowered DSK levels irrespective of the SD phenotype (Figure 6A and B, Figure 6\u2014source data 1), consistent with our DEG analysis above.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantification of DSK immunostaining comparing grouped and isolated flies shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:07:44.899188Z"
+    },
+    {
+      "id": "fe09fc2f-a42a-409b-a940-86f4cbda0693",
+      "content_id": "b035a02e-519a-4d65-a41e-36daefa443a2",
+      "claim_id": "C60",
+      "claim": "The social experience effects on DSK levels were most evident in the MP1a neuron projections.",
+      "claim_type": "EXPLICIT",
+      "source": "The social experience effects on DSK levels were most evident in the MP1a neuron projections.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the DSK immunostaining data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:07:44.899188Z"
+    },
+    {
+      "id": "f655d1ea-987b-4525-8486-8e6302fe9267",
+      "content_id": "b035a02e-519a-4d65-a41e-36daefa443a2",
+      "claim_id": "C61",
+      "claim": "DSK neuron activity correlated with social experience and plasticity in a wild-type background.",
+      "claim_type": "EXPLICIT",
+      "source": "Live-brain imaging of the genetically encoded Ca2+ indicator GCaMP showed that DSK neuron activity correlated with social experience and plasticity in a wild-type background.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by GCaMP imaging data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:07:44.899188Z"
+    },
+    {
+      "id": "ac5708f1-8e18-4354-899d-40c9c11e6802",
+      "content_id": "b035a02e-519a-4d65-a41e-36daefa443a2",
+      "claim_id": "C62",
+      "claim": "Social deprivation reduced relative Ca2+ levels in DSK neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Social deprivation reduced relative Ca2+ levels in DSK neurons, whereas mechanical injury generally elevated DSK neuron activity (Figure 6C, Figure 6\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by GCaMP imaging data shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:07:44.899188Z"
+    },
+    {
+      "id": "04bd0817-81e3-4615-a5ad-62d73b5e8c8a",
+      "content_id": "b035a02e-519a-4d65-a41e-36daefa443a2",
+      "claim_id": "C63",
+      "claim": "Mechanical injury generally elevated DSK neuron activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Social deprivation reduced relative Ca2+ levels in DSK neurons, whereas mechanical injury generally elevated DSK neuron activity (Figure 6C, Figure 6\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by GCaMP imaging data shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:07:44.899188Z"
+    },
+    {
+      "id": "a138f282-5314-4591-8f37-e786e19f8c7a",
+      "content_id": "b035a02e-519a-4d65-a41e-36daefa443a2",
+      "claim_id": "C64",
+      "claim": "MP1a neuron activity did not respond to injury when transgenic flies were socially deprived during development.",
+      "claim_type": "EXPLICIT",
+      "source": "Nonetheless, MP1a neuron activity did not respond to injury when transgenic flies were socially deprived during development, which may contribute to the lack of social behavior plasticity upon isolation (Figure 6C, Figure 6\u2014figure supplement 1, Figure 6\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by GCaMP imaging data comparing injury responses in grouped versus isolated flies shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:07:44.899188Z"
+    },
+    {
+      "id": "884ce830-e8e9-42c7-8f62-380f9fe78572",
+      "content_id": "b035a02e-519a-4d65-a41e-36daefa443a2",
+      "claim_id": "C65",
+      "claim": "Social isolation did not comparably affect the Gal4-dependent expression of a dendritic marker transgene in the DSK neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations are unlikely due to transgenic Dsk-Gal4 activity per se given that social isolation did not comparably affect the Gal4-dependent expression of a dendritic marker transgene in the DSK neurons (Figure 6\u2014figure supplement 1, Figure 6\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by DenMark expression data shown in Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:07:44.899188Z"
+    },
+    {
+      "id": "9da4126c-2d3c-4732-8b7a-6bd852de5181",
+      "content_id": "b035a02e-519a-4d65-a41e-36daefa443a2",
+      "claim_id": "C66",
+      "claim": "GCaMP levels in other neuropeptide-expressing neurons (i.e., pigment-dispersing factor) were insensitive to social isolation or mechanical injury.",
+      "claim_type": "EXPLICIT",
+      "source": "We also confirmed that GCaMP levels in other neuropeptide-expressing neurons (i.e., pigment-dispersing factor) were insensitive to social isolation or mechanical injury (Figure 6\u2014figure supplement 2, Figure 6\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by GCaMP imaging data in PDF neurons shown in Figure 6\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:07:44.899188Z"
+    },
+    {
+      "id": "01512aad-4a61-4648-b644-e544ef870795",
+      "content_id": "b035a02e-519a-4d65-a41e-36daefa443a2",
+      "claim_id": "C67",
+      "claim": "Socially enriched, but not socially isolated, male flies displayed strong postsynaptic signals of the trans-Tango-expressing DSK neurons in the lateral protocerebrum.",
+      "claim_type": "EXPLICIT",
+      "source": "Socially enriched, but not socially isolated, male flies displayed strong postsynaptic signals of the trans-Tango-expressing DSK neurons in the lateral protocerebrum where transgenic signals of DSK neuron axons (Dsk>SytGFP) were readily detectable (Figure 6D and E, Figure 6\u2014figure supplement 1B, Figure 6\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by trans-Tango imaging data shown in Figure 6D and E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:07:44.899188Z"
+    },
+    {
+      "id": "269d18bc-ae47-47bf-8832-33fc91cfca3f",
+      "content_id": "b035a02e-519a-4d65-a41e-36daefa443a2",
+      "claim_id": "C68",
+      "claim": "MP1a neuron projections are specifically enriched in the lateral protocerebrum.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies also demonstrated that MP1a neuron projections are specifically enriched in this brain region (Wu et al., 2019; Wu et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:07:44.899188Z"
+    },
+    {
+      "id": "d97b4768-472d-446b-a48a-47656144bb2e",
+      "content_id": "b035a02e-519a-4d65-a41e-36daefa443a2",
+      "claim_id": "C69",
+      "claim": "DSK neurons have gender-specific presynaptic partners, which may mediate distinct signaling for sexual behaviors.",
+      "claim_type": "EXPLICIT",
+      "source": "DSK neurons have gender-specific presynaptic partners, which may mediate distinct signaling for sexual behaviors (Wu et al., 2019; Wu et al., 2020; Wang et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:07:44.899188Z"
+    },
+    {
+      "id": "9ebbf0b3-af9f-4e43-a4f7-a1331739b157",
+      "content_id": "b035a02e-519a-4d65-a41e-36daefa443a2",
+      "claim_id": "C70",
+      "claim": "Socially enriched female brains did not show trans-Tango signals as evidently as male brains.",
+      "claim_type": "EXPLICIT",
+      "source": "To our surprise, socially enriched female brains did not show trans-Tango signals as evidently as male brains (Figure 6D and E, Figure 6\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by trans-Tango imaging data comparing males and females shown in Figure 6D and E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:07:44.899188Z"
+    },
+    {
+      "id": "ff78eb35-8dcc-4d23-bfd7-ef26379e847d",
+      "content_id": "b035a02e-519a-4d65-a41e-36daefa443a2",
+      "claim_id": "C71",
+      "claim": "Social deprivation downregulated DSK levels in the MP1a projections less potently in females than in males.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, social deprivation downregulated DSK levels in the MP1a projections less potently in females than in males (Figure 6D and F, Figure 6\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by DSK immunostaining data comparing males and females shown in Figure 6F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:07:44.899188Z"
+    },
+    {
+      "id": "97aff6c4-8112-4ffa-85e1-c65a8fc9eebe",
+      "content_id": "b035a02e-519a-4d65-a41e-36daefa443a2",
+      "claim_id": "C72",
+      "claim": "Female flies from select DGRP lines showed baseline SD phenotypes consistent with their male counterparts, yet mechanical injury did not significantly affect female SD.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, female flies from select DGRP lines showed baseline SD phenotypes consistent with their male counterparts, yet mechanical injury did not significantly affect female SD (Figure 4\u2014figure supplement 3B, Figure 4\u2014source data 1; also see Figure 7G, Figure 7\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by injury response data in females shown in Figure 4\u2014figure supplement 3B and Figure 7G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:07:44.899188Z"
+    },
+    {
+      "id": "403e76e0-1dbb-425e-9fc3-9916171e77ce",
+      "content_id": "b035a02e-519a-4d65-a41e-36daefa443a2",
+      "claim_id": "C73",
+      "claim": "DSK-expressing MP1 neurons originate from the larval brain.",
+      "claim_type": "EXPLICIT",
+      "source": "Considering that DSK-expressing MP1 neurons originate from the larval brain (Oikawa et al., 2023), we hypothesized that early-life experience is developmentally encoded in DSK neuron activity via the male-specific neural pathway and adaptively expressed for social plasticity in adults.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:07:44.899188Z"
+    },
+    {
+      "id": "85130027-724c-42ec-aa81-3109301bfa83",
+      "content_id": "b035a02e-519a-4d65-a41e-36daefa443a2",
+      "claim_id": "C74",
+      "claim": "Early-life experience is developmentally encoded in DSK neuron activity via the male-specific neural pathway and adaptively expressed for social plasticity in adults.",
+      "claim_type": "EXPLICIT",
+      "source": "Considering that DSK-expressing MP1 neurons originate from the larval brain (Oikawa et al., 2023), we hypothesized that early-life experience is developmentally encoded in DSK neuron activity via the male-specific neural pathway and adaptively expressed for social plasticity in adults.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis based on the developmental origin of DSK neurons and the observed sexual dimorphism.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:07:44.899188Z"
+    },
+    {
+      "id": "3110c0f7-e588-4661-b3d7-8233cc9e6fed",
+      "content_id": "b035a02e-519a-4d65-a41e-36daefa443a2",
+      "claim_id": "C75",
+      "claim": "Social hierarchy is established in male fights only.",
+      "claim_type": "EXPLICIT",
+      "source": "Considering that social hierarchy is established in male fights only (Nilsen et al., 2004; Simon and Heberlein, 2020), we speculate that male-specific DSK pathways may include extra circuit modalities for contextual processing of social environments and adaptive social structures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:07:44.899188Z"
+    },
+    {
+      "id": "00a6e93e-8e4d-4851-bc8d-6083e8847955",
+      "content_id": "b035a02e-519a-4d65-a41e-36daefa443a2",
+      "claim_id": "C76",
+      "claim": "Genomic deletion of the Dsk locus (DskattP) abolished injury-induced clustering behaviors.",
+      "claim_type": "EXPLICIT",
+      "source": "Genomic deletion of the Dsk locus (DskattP) or DSK depletion by RNA interference (Dsk>DskRNAi) abolished injury-induced clustering behaviors (Figure 7A\u2013C, Figure 7\u2014figure supplement 1, Figure 7\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by behavioral data in Dsk mutants shown in Figure 7B and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:07:44.899188Z"
+    },
+    {
+      "id": "c6c14a14-b8e6-4fc0-9f00-3bb68219ea21",
+      "content_id": "b035a02e-519a-4d65-a41e-36daefa443a2",
+      "claim_id": "C77",
+      "claim": "DSK depletion by RNA interference (Dsk>DskRNAi) abolished injury-induced clustering behaviors.",
+      "claim_type": "EXPLICIT",
+      "source": "Genomic deletion of the Dsk locus (DskattP) or DSK depletion by RNA interference (Dsk>DskRNAi) abolished injury-induced clustering behaviors (Figure 7A\u2013C, Figure 7\u2014figure supplement 1, Figure 7\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by behavioral data in Dsk RNAi flies shown in Figure 7C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:07:44.899188Z"
+    },
+    {
+      "id": "f44aec97-e81a-436f-8865-81776d4f762a",
+      "content_id": "b035a02e-519a-4d65-a41e-36daefa443a2",
+      "claim_id": "C78",
+      "claim": "Genomic deletions of the Dsk receptor CCKLR-17D1 (CCKLR-17D1attP and CCKLR-17D1\u0394) but not CCKLR-17D3 (CCKLR-17D3attP and CCKLR-17D3\u0394) comparably masked injury-induced social interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, genomic deletions of the Dsk receptor CCKLR-17D1 (CCKLR-17D1attP and CCKLR-17D1\u0394) but not CCKLR-17D3 (CCKLR-17D3attP and CCKLR-17D3\u0394) comparably masked injury-induced social interactions (Figure 7B, Figure 7\u2014figure supplement 2, Figure 7\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by behavioral data in receptor mutants shown in Figure 7B and Figure 7\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:07:44.899188Z"
+    },
+    {
+      "id": "f92666c8-106a-4ab0-a830-6121f050961b",
+      "content_id": "b035a02e-519a-4d65-a41e-36daefa443a2",
+      "claim_id": "C79",
+      "claim": "Dsk is not crucial for shaping the SD traits per se, but genetic backgrounds may substantially contribute to it.",
+      "claim_type": "EXPLICIT",
+      "source": "Genetic effects of Dsk deletion and DSK depletion were not consistent on baseline SD in grouped cultures. These observations suggest that Dsk is not crucial for shaping the SD traits per se, but genetic backgrounds may substantially contribute to it.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the variable effects of Dsk manipulations on baseline SD.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:07:44.899188Z"
+    },
+    {
+      "id": "8ef20a53-8f74-48e6-8901-95e2063f2072",
+      "content_id": "b035a02e-519a-4d65-a41e-36daefa443a2",
+      "claim_id": "C80",
+      "claim": "The conditional manipulation of larval DSK neurons was sufficient to suppress injury-induced clustering in group-cultured adults.",
+      "claim_type": "EXPLICIT",
+      "source": "The conditional manipulation of larval DSK neurons was sufficient to suppress injury-induced clustering in group-cultured adults (Figure 7E, Figure 7\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by behavioral data using temperature-sensitive shibire shown in Figure 7E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:07:44.899188Z"
+    },
+    {
+      "id": "3257d5e3-830f-4365-b4f6-2d96d72e1ab6",
+      "content_id": "b035a02e-519a-4d65-a41e-36daefa443a2",
+      "claim_id": "C81",
+      "claim": "CCKLR-17D1-expressing neurons displayed a gender-specific distribution in the adult brain.",
+      "claim_type": "EXPLICIT",
+      "source": "CCKLR-17D1-expressing neurons displayed a gender-specific distribution in the adult brain when their dendrites and axons were visualized using specific transgenic markers (i.e., DenMark and SytGFP, respectively) (Figure 7F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by imaging of CCKLR-17D1 neurons shown in Figure 7F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:07:44.899188Z"
+    },
+    {
+      "id": "37ee3073-7b79-41fb-8278-7e611a5f7faf",
+      "content_id": "b035a02e-519a-4d65-a41e-36daefa443a2",
+      "claim_id": "C82",
+      "claim": "Male brains expressing the CCKLR-17D1 knock-in transgene showed more signals for cell bodies and dendrites around MP1a axon projections than females.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, male brains expressing the CCKLR-17D1 knock-in transgene showed more signals for cell bodies and dendrites around MP1a axon projections than females (Wu et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by imaging data and citation to a previous study.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:07:44.899188Z"
+    },
+    {
+      "id": "2d65f67c-1a17-4ca8-bb89-dc0e69f96571",
+      "content_id": "b035a02e-519a-4d65-a41e-36daefa443a2",
+      "claim_id": "C83",
+      "claim": "Transgenic excitation of CCKLR-17D1 neurons was sufficient to confer injury-induced social interactions to isolated male flies.",
+      "claim_type": "EXPLICIT",
+      "source": "Supporting this idea, transgenic excitation of CCKLR-17D1 neurons was sufficient to confer injury-induced social interactions to isolated male flies (Figure 7G, Figure 7\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by behavioral data using NaChBac to activate CCKLR-17D1 neurons shown in Figure 7G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:07:44.899188Z"
+    },
+    {
+      "id": "71af7d99-5dbe-41f8-992b-e4085d78e568",
+      "content_id": "b035a02e-519a-4d65-a41e-36daefa443a2",
+      "claim_id": "C84",
+      "claim": "The same transgenic manipulation of CCKLR-17D1 neurons did not induce social plasticity in females, irrespective of their early-life experience.",
+      "claim_type": "EXPLICIT",
+      "source": "The same transgenic manipulation of CCKLR-17D1 neurons did not induce social plasticity in females, irrespective of their early-life experience.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by behavioral data in females shown in Figure 7G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:07:44.899188Z"
+    },
+    {
+      "id": "3e526b60-88f1-470b-a8a7-73da642a41ed",
+      "content_id": "b035a02e-519a-4d65-a41e-36daefa443a2",
+      "claim_id": "C85",
+      "claim": "Blocking synaptic transmission in CCKLR-17D1 neurons suppressed injury-induced clustering in group-cultured male flies.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, blocking synaptic transmission in CCKLR-17D1 neurons suppressed injury-induced clustering in group-cultured male flies (Figure 7\u2014figure supplement 3, Figure 7\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by behavioral data using TNT to block CCKLR-17D1 neuron transmission shown in Figure 7\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:07:44.899188Z"
+    },
+    {
+      "id": "4fe31dee-96f6-4486-8a6f-5be30a2d72ee",
+      "content_id": "b035a02e-519a-4d65-a41e-36daefa443a2",
+      "claim_id": "C86",
+      "claim": "Conspecific individuals show a wide range of preferences for social distancing, and it has likely co-evolved with their inferior traits as a compensatory mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "Our study demonstrated that conspecific individuals show a wide range of preferences for social distancing, and it has likely co-evolved with their inferior traits as a compensatory mechanism (Figure 8).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a summary claim integrating multiple findings from the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:07:44.899188Z"
+    },
+    {
+      "id": "125c2ef6-4aa8-4cd7-aeb1-196d9e44cce7",
+      "content_id": "b035a02e-519a-4d65-a41e-36daefa443a2",
+      "claim_id": "C87",
+      "claim": "A subset of the Drosophila brain neurons expressing the neuropeptide DSK serves as a neural substrate for social memory.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose that a subset of the Drosophila brain neurons expressing the neuropeptide DSK serves as a neural substrate for social memory, as supported by the intimate coupling of early-life social experience and SNB plasticity to DSK expression, DSK neuron activity, and postsynaptic signaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary claim integrating multiple findings about DSK neurons.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:07:44.899188Z"
+    },
+    {
+      "id": "084cfbb5-3407-4e1b-941d-4aea87d2e69b",
+      "content_id": "b035a02e-519a-4d65-a41e-36daefa443a2",
+      "claim_id": "C88",
+      "claim": "DSK excitation promotes aggression in both males and females.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, DSK excitation promotes aggression in both males and females (Wu et al., 2020), whereas DSK signaling is unlikely to trigger grouping behaviors per se.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:07:44.899188Z"
+    },
+    {
+      "id": "da6a2b9e-dc5c-44d8-8c05-59c9af557c00",
+      "content_id": "b035a02e-519a-4d65-a41e-36daefa443a2",
+      "claim_id": "C89",
+      "claim": "DSK neuron activity correlates with social dominance (i.e., winner effects from aggression) and group housing, but not with mating status.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, DSK neuron activity correlates with social dominance (i.e., winner effects from aggression) (Wu et al., 2020) and group housing (Wu et al., 2019), but not with mating status (Wang et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:07:44.899188Z"
+    },
+    {
+      "id": "74de082c-dc9d-4df9-853f-3cce9980372e",
+      "content_id": "b035a02e-519a-4d65-a41e-36daefa443a2",
+      "claim_id": "C90",
+      "claim": "The mammalian DSK homolog CCK shows sexual dimorphism in brain expression and mating behavior response.",
+      "claim_type": "EXPLICIT",
+      "source": "The mammalian DSK homolog CCK shows sexual dimorphism in brain expression and mating behavior response (Bloch et al., 1987; Bloch et al., 1988; Micevych et al., 1988).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:07:44.899188Z"
+    },
+    {
+      "id": "2d38346c-7362-4883-9edb-f7cae70bc2b3",
+      "content_id": "b035a02e-519a-4d65-a41e-36daefa443a2",
+      "claim_id": "C91",
+      "claim": "CCK activation is implicated in aggression and exploratory behaviors.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, CCK activation is implicated in aggression and exploratory behaviors (Raud et al., 2005; Li et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:07:44.899188Z"
+    },
+    {
+      "id": "03f5a4bd-d777-4163-94e3-8a56af1772cf",
+      "content_id": "b035a02e-519a-4d65-a41e-36daefa443a2",
+      "claim_id": "C92",
+      "claim": "There is a significant correlation between SD and centroid velocity among 175 DGRP lines (Spearman correlation, p<0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "We found their significant correlations among 175 DGRP lines (Figure 1D, Figure 1\u2014source data 1; Spearman correlation analysis).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by correlation analysis shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:07:44.899188Z"
+    },
+    {
+      "id": "bb802464-8b8c-45ef-9008-acb85e43ad94",
+      "content_id": "b035a02e-519a-4d65-a41e-36daefa443a2",
+      "claim_id": "C93",
+      "claim": "There is a significant correlation between SD and walking speed among 175 DGRP lines (Spearman correlation, p<0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "We found their significant correlations among 175 DGRP lines (Figure 1D, Figure 1\u2014source data 1; Spearman correlation analysis).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by correlation analysis shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:07:44.899188Z"
+    },
+    {
+      "id": "df893efe-d1ed-4a20-85a4-7ed207fa4c7f",
+      "content_id": "b035a02e-519a-4d65-a41e-36daefa443a2",
+      "claim_id": "C94",
+      "claim": "There is a significant correlation between centroid velocity and walking speed among 175 DGRP lines (Spearman correlation, p<0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "We found their significant correlations among 175 DGRP lines (Figure 1D, Figure 1\u2014source data 1; Spearman correlation analysis).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by correlation analysis shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:07:44.899188Z"
+    },
+    {
+      "id": "ffe379e5-c9dd-4cc3-8ea1-7bfe5ae44f1e",
+      "content_id": "b035a02e-519a-4d65-a41e-36daefa443a2",
+      "claim_id": "C95",
+      "claim": "Social interactions influence various physiological activities in individuals, including feeding, sleep/circadian rhythms, aggression, stress response, and longevity.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, social interactions influence various physiological activities in individuals, including feeding, sleep/circadian rhythms, aggression, stress response, and longevity (Levine et al., 2002; Ganguly-Fitzgerald et al., 2006; Arzate-Mej\u00eda et al., 2020; Li et al., 2021; Chen and Sokolowski, 2022; Vora et al., 2022; Xiong et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to multiple previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:07:44.899188Z"
+    },
+    {
+      "id": "1a695ab9-f798-440e-9915-c0d01bec864a",
+      "content_id": "b035a02e-519a-4d65-a41e-36daefa443a2",
+      "claim_id": "C96",
+      "claim": "A group of flies can display distinct SNB under specific experimental conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Yet a group of flies can display distinct SNB under specific experimental conditions (Schneider et al., 2012; Simon et al., 2012; Ramdya et al., 2015; Dombrovski et al., 2017; Sun et al., 2020; Burg et al., 2013), serving as an ideal genetic model to address our questions above (Jezovit et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:07:44.899188Z"
+    },
+    {
+      "id": "03f49e4a-4f80-4c7d-a232-6312b4ab3825",
+      "content_id": "b035a02e-519a-4d65-a41e-36daefa443a2",
+      "claim_id": "C97",
+      "claim": "Previous studies have employed various biophysical parameters to quantify both individual and network behaviors in groups, establishing criteria for social interactions in Drosophila.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies have employed various biophysical parameters to quantify both individual and network behaviors in groups, establishing criteria for social interactions in Drosophila (Jezovit et al., 2021; Simon et al., 2012; Ramdya et al., 2015; Bentzur et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:07:44.899188Z"
+    },
+    {
+      "id": "4225ce9a-b94b-4be8-9af6-69c0732c1ef4",
+      "content_id": "b035a02e-519a-4d65-a41e-36daefa443a2",
+      "claim_id": "C98",
+      "claim": "Social clustering is an intuitive measure that integrates diverse social interactions via multiple sensory cues.",
+      "claim_type": "EXPLICIT",
+      "source": "Social clustering is an intuitive measure that integrates diverse social interactions via multiple sensory cues (Schneider et al., 2012; Simon et al., 2012; Bentzur et al., 2021; Jiang et al., 2020), accompanying reductions in social distance (SD) among group members and their moving speed over time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies and the authors' reasoning.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:07:44.899188Z"
+    },
+    {
+      "id": "bb17cb08-2c10-4edb-bd39-b16dc99128c5",
+      "content_id": "b035a02e-519a-4d65-a41e-36daefa443a2",
+      "claim_id": "C99",
+      "claim": "Drosophila larvae collectively dig culture media and improve food accessibility, possibly facilitating their constitutive feeding during early development.",
+      "claim_type": "EXPLICIT",
+      "source": "One clue comes from the previous observation that Drosophila larvae collectively dig culture media and improve food accessibility, possibly facilitating their constitutive feeding during early development (Dombrovski et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:07:44.899188Z"
+    },
+    {
+      "id": "decc4558-cd8c-4af9-a2f9-4a0159a1703f",
+      "content_id": "b035a02e-519a-4d65-a41e-36daefa443a2",
+      "claim_id": "C100",
+      "claim": "Drosophila express SNB traits from early development, and the sociality persists in adults.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations suggest that Drosophila express SNB traits from early development, and the sociality persists in adults.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the observation of larval clustering and adult SNB.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:07:44.899188Z"
+    },
+    {
+      "id": "5e0f610e-f57a-4d63-b4ff-b7805005d0e5",
+      "content_id": "b035a02e-519a-4d65-a41e-36daefa443a2",
+      "claim_id": "C101",
+      "claim": "Low food intake upon social isolation may not directly implicate DSK expression or DSK neuron activity since DSK signaling has been shown to suppress feeding behavior as a satiety cue.",
+      "claim_type": "EXPLICIT",
+      "source": "We further reason that low food intake upon social isolation may not directly implicate DSK expression or DSK neuron activity since DSK signaling has been shown to suppress feeding behavior as a satiety cue (Wu et al., 2020; Guo et al., 2021; S\u00f6derberg et al., 2012; Williams et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on reasoning and citations to previous studies showing DSK's role in satiety.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:07:44.899188Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "7544519b-8ab9-4db3-9f20-f2f814785342",
+      "content_id": "b035a02e-519a-4d65-a41e-36daefa443a2",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Social distance (SD) is a quantitative trait in natural Drosophila populations. Analysis of 175 DGRP lines revealed significant correlations between SD, walking speed, and centroid velocity, with short-SD lines showing long developmental time, low food intake, and hypoactivity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1 and C92-C94 are supported by comprehensive behavioral analysis across 175 DGRP lines with appropriate statistical testing (Spearman correlation, p<0.001). The data in Figures 1 and 2 demonstrate consistent phenotypic correlations and behavioral patterns across multiple independent measurements.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T05:07:44.899188Z"
+    },
+    {
+      "id": "f333b51a-9757-42bf-a690-68498dfc533f",
+      "content_id": "b035a02e-519a-4d65-a41e-36daefa443a2",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Short-SD and long-SD lines display distinct behavioral patterns. Short-SD lines gradually reduce SD and walking speed to maintain clusters, while long-SD lines persistently explore and maintain social distancing. These properties persist across different arena sizes and are not due to courtship behaviors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C14 are well-supported by quantitative behavioral data, video recordings, and appropriate controls. The single-fly control (C11) effectively demonstrates that reduced activity in short-SD groups is a consequence rather than cause of clustering. Arena size and courtship controls strengthen the conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T05:07:44.899188Z"
+    },
+    {
+      "id": "33838d21-486b-4d1e-b0da-fcdc79192f02",
+      "content_id": "b035a02e-519a-4d65-a41e-36daefa443a2",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Social interactions compensate for developmental inferiority in short-SD larvae. Isolated short-SD larvae show poor digging activity, low food intake, long developmental time, lower eclosion success, and lower male progeny ratio compared to long-SD larvae. Group culturing rescues these phenotypes, suggesting clustering evolved as a compensatory mechanism.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C24 are supported by comprehensive developmental assays with appropriate statistical analysis (ANOVA detecting significant interaction effects between SD trait and socialization). The data demonstrate both main effects and critical interaction effects that support the compensatory evolution hypothesis. Sample sizes appear adequate (n=24-36 per condition).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T05:07:44.899188Z"
+    },
+    {
+      "id": "c0f15746-ceba-4cbc-86d1-dad2d37233d0",
+      "content_id": "b035a02e-519a-4d65-a41e-36daefa443a2",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Early-life social experience is necessary for social foraging benefits in adults. Both SD types can learn maze navigation, but pioneer effects on group foraging require developmental social experience. Rutabaga mutants fail to improve in the maze, implicating learning and memory.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C30 are supported by maze assay data with appropriate controls including rut mutants and isolated flies. The disappearance of pioneer effects in developmentally isolated flies (C29) provides strong evidence for the requirement of early-life social experience. Statistical analysis shows significant interaction effects.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T05:07:44.899188Z"
+    },
+    {
+      "id": "43fa3853-8cf6-481b-a130-e80d72345af8",
+      "content_id": "b035a02e-519a-4d65-a41e-36daefa443a2",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Mechanical injury induces adaptive social plasticity that requires early-life social experience. Injury shortened SD in both sociality types and reduced locomotion in long-SD lines. This plasticity was absent in developmentally isolated flies, required norpA-dependent vision, and was independent of rut-dependent memory.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C38 are well-supported by injury experiments with multiple controls including recovery, isolation conditions, sensory mutants, and memory mutants. The requirement for norpA (C35) is supported by genetic analysis. The independence from rut (C38) is demonstrated but the interpretation that rut is 'dispensable' may be overstated given that only injury-induced plasticity was tested, not the encoding of social memory itself.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T05:07:44.899188Z"
+    },
+    {
+      "id": "954e1568-db40-45a8-a98c-c608d26db8ec",
+      "content_id": "b035a02e-519a-4d65-a41e-36daefa443a2",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Transcriptome analysis reveals genetic diversity for SD traits and common metabolic reprogramming by social isolation. DEGs between short- and long-SD lines show no GO term enrichment, suggesting diverse genetic pathways shape baseline SD. Social isolation upregulates select metabolic pathways regardless of SD phenotype.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C47 are supported by RNA-seq data with appropriate statistical thresholds (>2-fold, adjusted p<0.05). The overlap with previous studies (C43) validates the findings. The lack of GO enrichment for SD traits (C45) and the conclusion about diverse pathways (C46) are appropriately cautious. However, the manuscript does not provide details about RNA-seq replication, batch effects, or normalization methods.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T05:07:44.899188Z"
+    },
+    {
+      "id": "3963017d-548a-44c4-b12b-3fee2f880b16",
+      "content_id": "b035a02e-519a-4d65-a41e-36daefa443a2",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Social interaction behaviors correlate with food intake, starvation-induced activity, and aggression across DGRP lines. Dsk was identified as the only gene consistently downregulated by social isolation across independent studies, along with its receptors CCKLR-17D1 and CCKLR-17D3.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C51 and C54-C55 are supported by correlation analysis using data from multiple previous studies and validation experiments. The identification of Dsk as the only overlapping downregulated gene across studies (C54) is a strong finding. However, the receptor expression changes were less than 2-fold (C55), which may limit their biological significance.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T05:07:44.899188Z"
+    },
+    {
+      "id": "73f40e9e-44bb-48f2-93fc-e5c08e7d7fa4",
+      "content_id": "b035a02e-519a-4d65-a41e-36daefa443a2",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "DSK neuron activity encodes social experience and plasticity. Three groups of DSK neurons (MP1a, MP1b, MP3) show social experience-dependent expression and activity. Social isolation reduces DSK levels and Ca2+ activity, while injury elevates activity. MP1a neurons specifically fail to respond to injury in isolated flies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C66 are supported by immunostaining and GCaMP imaging data with appropriate controls. The specificity is demonstrated by PDF neuron controls (C66) and DenMark expression controls (C65). However, the two-way ANOVA did not detect significant interaction effects between isolation and injury on GCaMP levels, which somewhat weakens the interpretation that MP1a specifically fails to respond to injury in isolated flies (C64).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T05:07:44.899188Z"
+    },
+    {
+      "id": "9488c554-d525-47ec-9a75-3cf2c6763e25",
+      "content_id": "b035a02e-519a-4d65-a41e-36daefa443a2",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "DSK signaling shows male-specific sexual dimorphism. Trans-Tango analysis revealed strong postsynaptic signals in socially enriched males but not females or isolated males. Social deprivation downregulated DSK less potently in females, and females did not show injury-induced clustering. This suggests male-specific encoding of early-life experience in DSK neurons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C72 are supported by trans-Tango imaging and behavioral data demonstrating clear sexual dimorphism. The developmental origin of MP1 neurons (C73) is supported by citation. However, C74 is presented as a hypothesis rather than a demonstrated result, and should be evaluated more cautiously. The sexual dimorphism is well-documented but the mechanistic basis remains speculative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T05:07:44.899188Z"
+    },
+    {
+      "id": "905054f8-7fbb-4e5a-a929-145c294002e8",
+      "content_id": "b035a02e-519a-4d65-a41e-36daefa443a2",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "DSK-CCKLR-17D1 signaling is necessary for injury-induced social plasticity. Genomic deletion of Dsk or CCKLR-17D1, but not CCKLR-17D3, abolished injury-induced clustering. Conditional blockade of larval DSK neurons was sufficient to suppress adult plasticity. Dsk is not crucial for baseline SD traits.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C76-C80 are supported by genetic loss-of-function experiments using multiple independent alleles and RNAi. The receptor specificity (C78) is demonstrated with multiple deletion alleles. The temporal requirement (C80) is shown with temperature-sensitive shibire. The conclusion that Dsk is not crucial for baseline SD (C79) is appropriately cautious given inconsistent effects across genetic backgrounds.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T05:07:44.899188Z"
+    },
+    {
+      "id": "c3db5d2c-e7f1-4dec-93ac-f961c5e53f12",
+      "content_id": "b035a02e-519a-4d65-a41e-36daefa443a2",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "CCKLR-17D1 neurons mediate male-specific social plasticity. These neurons show sexually dimorphic distribution with more dendrites around MP1a projections in males. Transgenic activation of CCKLR-17D1 neurons was sufficient to confer injury-induced clustering to isolated males but not females, while blocking transmission suppressed plasticity in grouped males.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C81-C85 are supported by neuroanatomical imaging and gain/loss-of-function experiments. The sufficiency experiment (C83) using NaChBac is particularly strong, demonstrating that CCKLR-17D1 activation can bypass the requirement for developmental social experience. The sexual dimorphism is consistently demonstrated across multiple approaches.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T05:07:44.899188Z"
+    },
+    {
+      "id": "8823dab7-2b19-45cd-abed-b17710b1c0ec",
+      "content_id": "b035a02e-519a-4d65-a41e-36daefa443a2",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The study demonstrates that social distancing is an inheritable trait that co-evolved with inferior traits as a compensatory mechanism, and that DSK neurons serve as a neural substrate for social memory by coupling early-life experience to adult social plasticity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C3, C86, and C87 represent the main conclusions integrating multiple findings. These are well-supported by the comprehensive data from behavioral, developmental, transcriptomic, and neurogenetic experiments. The compensatory evolution hypothesis is supported by interaction effects in developmental assays. The role of DSK neurons as a social memory substrate is supported by the tight coupling between early-life experience, DSK expression/activity, and adult plasticity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T05:07:44.899188Z"
+    },
+    {
+      "id": "d6904b95-f780-4024-8b1e-26ab5c374153",
+      "content_id": "b035a02e-519a-4d65-a41e-36daefa443a2",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Background claims about DGRP, social interactions, and Drosophila social behaviors establish the context and rationale for the study.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8 and C95-C99 are background/contextual claims supported by appropriate citations to previous literature. These establish the foundation for the study but do not represent novel findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T05:07:44.899188Z"
+    },
+    {
+      "id": "a072c481-f8c9-47f1-a2f4-19596a195f68",
+      "content_id": "b035a02e-519a-4d65-a41e-36daefa443a2",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Discussion claims about metabolic reprogramming, DSK/CCK function, and evolutionary conservation provide context for interpreting the findings.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48, C49, C52, C53, C88-C91, and C101 are discussion/interpretation claims supported by citations to previous literature. C49 is explicitly speculative. These provide important context but represent interpretation rather than novel experimental findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T05:07:44.899188Z"
+    },
+    {
+      "id": "03aacfcd-9049-4401-9a56-c568e83d270f",
+      "content_id": "b035a02e-519a-4d65-a41e-36daefa443a2",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Drosophila express SNB traits from early development that persist in adults.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C100 is an inference from the observation of larval clustering (C15) and adult SNB. This is a reasonable conclusion supported by the data showing continuity of social traits across development.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T05:07:44.899188Z"
+    },
+    {
+      "id": "bb4fffb2-978d-4bb0-9a88-13076cb3f5ec",
+      "content_id": "b035a02e-519a-4d65-a41e-36daefa443a2",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Social hierarchy is established in male fights only.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C75 is a background claim supported by citations to previous studies. This provides context for the sexual dimorphism findings but is not a novel result of this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T05:07:44.899188Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "47442c71-6c23-4552-bd0c-ba014ccef145",
+      "result_id": "7544519b-8ab9-4db3-9f20-f2f814785342"
+    },
+    {
+      "claim_id": "03f5a4bd-d777-4163-94e3-8a56af1772cf",
+      "result_id": "7544519b-8ab9-4db3-9f20-f2f814785342"
+    },
+    {
+      "claim_id": "bb802464-8b8c-45ef-9008-acb85e43ad94",
+      "result_id": "7544519b-8ab9-4db3-9f20-f2f814785342"
+    },
+    {
+      "claim_id": "df893efe-d1ed-4a20-85a4-7ed207fa4c7f",
+      "result_id": "7544519b-8ab9-4db3-9f20-f2f814785342"
+    },
+    {
+      "claim_id": "23b296cc-e3d3-4081-963a-987f90f3171b",
+      "result_id": "f333b51a-9757-42bf-a690-68498dfc533f"
+    },
+    {
+      "claim_id": "fc4d281f-2315-4d6e-9bce-87bf7b1ccc37",
+      "result_id": "f333b51a-9757-42bf-a690-68498dfc533f"
+    },
+    {
+      "claim_id": "68973a33-0935-4420-8dc1-8494ca08946e",
+      "result_id": "f333b51a-9757-42bf-a690-68498dfc533f"
+    },
+    {
+      "claim_id": "7b6d14a9-b8b9-4876-94c7-029f3e9077ff",
+      "result_id": "f333b51a-9757-42bf-a690-68498dfc533f"
+    },
+    {
+      "claim_id": "f6ff0044-a1c1-49f7-9c58-59d57992c4c3",
+      "result_id": "f333b51a-9757-42bf-a690-68498dfc533f"
+    },
+    {
+      "claim_id": "e221612f-23ec-4cf1-b096-c48d4ab71259",
+      "result_id": "f333b51a-9757-42bf-a690-68498dfc533f"
+    },
+    {
+      "claim_id": "0815114e-3146-457c-9d03-bac0a0555869",
+      "result_id": "33838d21-486b-4d1e-b0da-fcdc79192f02"
+    },
+    {
+      "claim_id": "4223716a-e1f9-426a-9cb8-2a358e0dbf8a",
+      "result_id": "33838d21-486b-4d1e-b0da-fcdc79192f02"
+    },
+    {
+      "claim_id": "5f56f71f-c343-4cff-a0ce-f8acabbe58dd",
+      "result_id": "33838d21-486b-4d1e-b0da-fcdc79192f02"
+    },
+    {
+      "claim_id": "8c8e1b39-9c8a-419c-b66b-4b4359ce3cb2",
+      "result_id": "33838d21-486b-4d1e-b0da-fcdc79192f02"
+    },
+    {
+      "claim_id": "c3bde978-f637-4646-a14e-5a2e66770593",
+      "result_id": "33838d21-486b-4d1e-b0da-fcdc79192f02"
+    },
+    {
+      "claim_id": "ed96a38a-6237-448a-acd7-e79fe19525e9",
+      "result_id": "33838d21-486b-4d1e-b0da-fcdc79192f02"
+    },
+    {
+      "claim_id": "1c49c65c-ac7c-4a57-a501-175e95f015ac",
+      "result_id": "33838d21-486b-4d1e-b0da-fcdc79192f02"
+    },
+    {
+      "claim_id": "37add53d-a605-4879-a5cb-34eef8f9ec1e",
+      "result_id": "33838d21-486b-4d1e-b0da-fcdc79192f02"
+    },
+    {
+      "claim_id": "029c4c91-5bf2-44bc-9b83-bf6d7cdb2501",
+      "result_id": "33838d21-486b-4d1e-b0da-fcdc79192f02"
+    },
+    {
+      "claim_id": "c2446841-b32f-46a5-b973-1ba4590d6651",
+      "result_id": "33838d21-486b-4d1e-b0da-fcdc79192f02"
+    },
+    {
+      "claim_id": "217d001e-9f03-4d2f-8678-6071b1dbaa6c",
+      "result_id": "c0f15746-ceba-4cbc-86d1-dad2d37233d0"
+    },
+    {
+      "claim_id": "20fd624a-5b14-4bb0-8f11-989d89cd1654",
+      "result_id": "c0f15746-ceba-4cbc-86d1-dad2d37233d0"
+    },
+    {
+      "claim_id": "56dbb8bf-0546-44e4-9c1e-049da1040514",
+      "result_id": "c0f15746-ceba-4cbc-86d1-dad2d37233d0"
+    },
+    {
+      "claim_id": "df8be324-d40f-4a05-a97b-5752401badda",
+      "result_id": "c0f15746-ceba-4cbc-86d1-dad2d37233d0"
+    },
+    {
+      "claim_id": "a379f4e2-6f90-44a7-ba27-05fb51d80ef2",
+      "result_id": "c0f15746-ceba-4cbc-86d1-dad2d37233d0"
+    },
+    {
+      "claim_id": "935096a8-c2fe-4f1f-9acf-cdd8091cf39d",
+      "result_id": "c0f15746-ceba-4cbc-86d1-dad2d37233d0"
+    },
+    {
+      "claim_id": "83dce7c9-dfa3-456e-a8a7-6d4ca04df572",
+      "result_id": "43fa3853-8cf6-481b-a130-e80d72345af8"
+    },
+    {
+      "claim_id": "73795e2f-ff0d-4492-a50b-6d3a9b2caa02",
+      "result_id": "43fa3853-8cf6-481b-a130-e80d72345af8"
+    },
+    {
+      "claim_id": "1bf46501-9133-451d-9ff9-24102b31237d",
+      "result_id": "43fa3853-8cf6-481b-a130-e80d72345af8"
+    },
+    {
+      "claim_id": "2c244f6c-b0c2-440f-9e86-4ae7b195312d",
+      "result_id": "43fa3853-8cf6-481b-a130-e80d72345af8"
+    },
+    {
+      "claim_id": "23c062af-e5b4-4d11-9b0b-4f9c75e441b5",
+      "result_id": "43fa3853-8cf6-481b-a130-e80d72345af8"
+    },
+    {
+      "claim_id": "2a1b300a-9688-4a57-9088-33fa2a93797a",
+      "result_id": "43fa3853-8cf6-481b-a130-e80d72345af8"
+    },
+    {
+      "claim_id": "493fa03c-593e-4f51-b45f-d47ac23dad8c",
+      "result_id": "43fa3853-8cf6-481b-a130-e80d72345af8"
+    },
+    {
+      "claim_id": "7520afa7-c8c1-4068-a30c-5d80ebe3151d",
+      "result_id": "43fa3853-8cf6-481b-a130-e80d72345af8"
+    },
+    {
+      "claim_id": "d2803fd0-2539-426e-a999-c547dccd8da0",
+      "result_id": "954e1568-db40-45a8-a98c-c608d26db8ec"
+    },
+    {
+      "claim_id": "99d39172-569a-47e8-a7b0-6cfc3ce9c5b5",
+      "result_id": "954e1568-db40-45a8-a98c-c608d26db8ec"
+    },
+    {
+      "claim_id": "b6bc7ec4-3438-418e-ba33-b58a8bf4447f",
+      "result_id": "954e1568-db40-45a8-a98c-c608d26db8ec"
+    },
+    {
+      "claim_id": "f288c9fe-91de-428c-abd3-6c1bba31b688",
+      "result_id": "954e1568-db40-45a8-a98c-c608d26db8ec"
+    },
+    {
+      "claim_id": "b97aff1a-7cfa-4818-8161-279daceab876",
+      "result_id": "954e1568-db40-45a8-a98c-c608d26db8ec"
+    },
+    {
+      "claim_id": "2ac76081-3891-4b56-a5d1-4db1b3c3d218",
+      "result_id": "954e1568-db40-45a8-a98c-c608d26db8ec"
+    },
+    {
+      "claim_id": "5256a7a1-dab2-44f4-80ef-d4b14d59cb2f",
+      "result_id": "954e1568-db40-45a8-a98c-c608d26db8ec"
+    },
+    {
+      "claim_id": "45a19c42-73ab-47e1-b916-7441ce039dd9",
+      "result_id": "954e1568-db40-45a8-a98c-c608d26db8ec"
+    },
+    {
+      "claim_id": "b47cb0c1-e4ec-49a4-b4b9-289436762a4e",
+      "result_id": "954e1568-db40-45a8-a98c-c608d26db8ec"
+    },
+    {
+      "claim_id": "5eaae77a-3844-47f0-825f-d70e4407fb96",
+      "result_id": "3963017d-548a-44c4-b12b-3fee2f880b16"
+    },
+    {
+      "claim_id": "d3fa88b6-0416-43d8-98f9-d590468e7074",
+      "result_id": "3963017d-548a-44c4-b12b-3fee2f880b16"
+    },
+    {
+      "claim_id": "73259fd6-4496-42da-86b7-1ee26fda0c69",
+      "result_id": "3963017d-548a-44c4-b12b-3fee2f880b16"
+    },
+    {
+      "claim_id": "78dcfcb6-801d-4248-a251-8cd7ff71f80a",
+      "result_id": "3963017d-548a-44c4-b12b-3fee2f880b16"
+    },
+    {
+      "claim_id": "5309fc23-a4e7-4f4f-bbc3-674c9b9e35c0",
+      "result_id": "73f40e9e-44bb-48f2-93fc-e5c08e7d7fa4"
+    },
+    {
+      "claim_id": "dacc92b7-b0a4-495e-ac1b-51f43984231e",
+      "result_id": "73f40e9e-44bb-48f2-93fc-e5c08e7d7fa4"
+    },
+    {
+      "claim_id": "3f18defe-7ca8-4e86-abe9-6d46898acdcf",
+      "result_id": "73f40e9e-44bb-48f2-93fc-e5c08e7d7fa4"
+    },
+    {
+      "claim_id": "247d4e9f-ff36-497e-be95-df0eeddcd2d2",
+      "result_id": "73f40e9e-44bb-48f2-93fc-e5c08e7d7fa4"
+    },
+    {
+      "claim_id": "fe09fc2f-a42a-409b-a940-86f4cbda0693",
+      "result_id": "73f40e9e-44bb-48f2-93fc-e5c08e7d7fa4"
+    },
+    {
+      "claim_id": "f655d1ea-987b-4525-8486-8e6302fe9267",
+      "result_id": "73f40e9e-44bb-48f2-93fc-e5c08e7d7fa4"
+    },
+    {
+      "claim_id": "ac5708f1-8e18-4354-899d-40c9c11e6802",
+      "result_id": "73f40e9e-44bb-48f2-93fc-e5c08e7d7fa4"
+    },
+    {
+      "claim_id": "04bd0817-81e3-4615-a5ad-62d73b5e8c8a",
+      "result_id": "73f40e9e-44bb-48f2-93fc-e5c08e7d7fa4"
+    },
+    {
+      "claim_id": "a138f282-5314-4591-8f37-e786e19f8c7a",
+      "result_id": "73f40e9e-44bb-48f2-93fc-e5c08e7d7fa4"
+    },
+    {
+      "claim_id": "884ce830-e8e9-42c7-8f62-380f9fe78572",
+      "result_id": "73f40e9e-44bb-48f2-93fc-e5c08e7d7fa4"
+    },
+    {
+      "claim_id": "9da4126c-2d3c-4732-8b7a-6bd852de5181",
+      "result_id": "73f40e9e-44bb-48f2-93fc-e5c08e7d7fa4"
+    },
+    {
+      "claim_id": "01512aad-4a61-4648-b644-e544ef870795",
+      "result_id": "9488c554-d525-47ec-9a75-3cf2c6763e25"
+    },
+    {
+      "claim_id": "269d18bc-ae47-47bf-8832-33fc91cfca3f",
+      "result_id": "9488c554-d525-47ec-9a75-3cf2c6763e25"
+    },
+    {
+      "claim_id": "d97b4768-472d-446b-a48a-47656144bb2e",
+      "result_id": "9488c554-d525-47ec-9a75-3cf2c6763e25"
+    },
+    {
+      "claim_id": "9ebbf0b3-af9f-4e43-a4f7-a1331739b157",
+      "result_id": "9488c554-d525-47ec-9a75-3cf2c6763e25"
+    },
+    {
+      "claim_id": "ff78eb35-8dcc-4d23-bfd7-ef26379e847d",
+      "result_id": "9488c554-d525-47ec-9a75-3cf2c6763e25"
+    },
+    {
+      "claim_id": "97aff6c4-8112-4ffa-85e1-c65a8fc9eebe",
+      "result_id": "9488c554-d525-47ec-9a75-3cf2c6763e25"
+    },
+    {
+      "claim_id": "403e76e0-1dbb-425e-9fc3-9916171e77ce",
+      "result_id": "9488c554-d525-47ec-9a75-3cf2c6763e25"
+    },
+    {
+      "claim_id": "85130027-724c-42ec-aa81-3109301bfa83",
+      "result_id": "9488c554-d525-47ec-9a75-3cf2c6763e25"
+    },
+    {
+      "claim_id": "00a6e93e-8e4d-4851-bc8d-6083e8847955",
+      "result_id": "905054f8-7fbb-4e5a-a929-145c294002e8"
+    },
+    {
+      "claim_id": "c6c14a14-b8e6-4fc0-9f00-3bb68219ea21",
+      "result_id": "905054f8-7fbb-4e5a-a929-145c294002e8"
+    },
+    {
+      "claim_id": "f44aec97-e81a-436f-8865-81776d4f762a",
+      "result_id": "905054f8-7fbb-4e5a-a929-145c294002e8"
+    },
+    {
+      "claim_id": "f92666c8-106a-4ab0-a830-6121f050961b",
+      "result_id": "905054f8-7fbb-4e5a-a929-145c294002e8"
+    },
+    {
+      "claim_id": "8ef20a53-8f74-48e6-8901-95e2063f2072",
+      "result_id": "905054f8-7fbb-4e5a-a929-145c294002e8"
+    },
+    {
+      "claim_id": "3257d5e3-830f-4365-b4f6-2d96d72e1ab6",
+      "result_id": "c3db5d2c-e7f1-4dec-93ac-f961c5e53f12"
+    },
+    {
+      "claim_id": "37ee3073-7b79-41fb-8278-7e611a5f7faf",
+      "result_id": "c3db5d2c-e7f1-4dec-93ac-f961c5e53f12"
+    },
+    {
+      "claim_id": "2d65f67c-1a17-4ca8-bb89-dc0e69f96571",
+      "result_id": "c3db5d2c-e7f1-4dec-93ac-f961c5e53f12"
+    },
+    {
+      "claim_id": "71af7d99-5dbe-41f8-992b-e4085d78e568",
+      "result_id": "c3db5d2c-e7f1-4dec-93ac-f961c5e53f12"
+    },
+    {
+      "claim_id": "3e526b60-88f1-470b-a8a7-73da642a41ed",
+      "result_id": "c3db5d2c-e7f1-4dec-93ac-f961c5e53f12"
+    },
+    {
+      "claim_id": "8ee4bd08-8903-4f97-8f01-7fed8ca6ac55",
+      "result_id": "8823dab7-2b19-45cd-abed-b17710b1c0ec"
+    },
+    {
+      "claim_id": "2e1f7c59-2f89-43e2-b01b-a8a157724bd6",
+      "result_id": "8823dab7-2b19-45cd-abed-b17710b1c0ec"
+    },
+    {
+      "claim_id": "4fe31dee-96f6-4486-8a6f-5be30a2d72ee",
+      "result_id": "8823dab7-2b19-45cd-abed-b17710b1c0ec"
+    },
+    {
+      "claim_id": "125c2ef6-4aa8-4cd7-aeb1-196d9e44cce7",
+      "result_id": "8823dab7-2b19-45cd-abed-b17710b1c0ec"
+    },
+    {
+      "claim_id": "982e8e34-1f10-46a7-88cb-4e4a07bac2de",
+      "result_id": "d6904b95-f780-4024-8b1e-26ab5c374153"
+    },
+    {
+      "claim_id": "ffe379e5-c9dd-4cc3-8ea1-7bfe5ae44f1e",
+      "result_id": "d6904b95-f780-4024-8b1e-26ab5c374153"
+    },
+    {
+      "claim_id": "1a695ab9-f798-440e-9915-c0d01bec864a",
+      "result_id": "d6904b95-f780-4024-8b1e-26ab5c374153"
+    },
+    {
+      "claim_id": "03f49e4a-4f80-4c7d-a232-6312b4ab3825",
+      "result_id": "d6904b95-f780-4024-8b1e-26ab5c374153"
+    },
+    {
+      "claim_id": "4225ce9a-b94b-4be8-9af6-69c0732c1ef4",
+      "result_id": "d6904b95-f780-4024-8b1e-26ab5c374153"
+    },
+    {
+      "claim_id": "bb17cb08-2c10-4edb-bd39-b16dc99128c5",
+      "result_id": "d6904b95-f780-4024-8b1e-26ab5c374153"
+    },
+    {
+      "claim_id": "d490da6a-f8e3-4e3c-abb9-7b704d0b6aa8",
+      "result_id": "a072c481-f8c9-47f1-a2f4-19596a195f68"
+    },
+    {
+      "claim_id": "e37c3254-a695-43af-8014-4d4ea7f6b342",
+      "result_id": "a072c481-f8c9-47f1-a2f4-19596a195f68"
+    },
+    {
+      "claim_id": "37a427d5-6863-42be-99b1-7035ceb80bf5",
+      "result_id": "a072c481-f8c9-47f1-a2f4-19596a195f68"
+    },
+    {
+      "claim_id": "759d8f5e-73dd-4d02-b914-92fb65dc1c16",
+      "result_id": "a072c481-f8c9-47f1-a2f4-19596a195f68"
+    },
+    {
+      "claim_id": "084cfbb5-3407-4e1b-941d-4aea87d2e69b",
+      "result_id": "a072c481-f8c9-47f1-a2f4-19596a195f68"
+    },
+    {
+      "claim_id": "da6a2b9e-dc5c-44d8-8c05-59c9af557c00",
+      "result_id": "a072c481-f8c9-47f1-a2f4-19596a195f68"
+    },
+    {
+      "claim_id": "74de082c-dc9d-4df9-853f-3cce9980372e",
+      "result_id": "a072c481-f8c9-47f1-a2f4-19596a195f68"
+    },
+    {
+      "claim_id": "2d38346c-7362-4883-9edb-f7cae70bc2b3",
+      "result_id": "a072c481-f8c9-47f1-a2f4-19596a195f68"
+    },
+    {
+      "claim_id": "5e0f610e-f57a-4d63-b4ff-b7805005d0e5",
+      "result_id": "a072c481-f8c9-47f1-a2f4-19596a195f68"
+    },
+    {
+      "claim_id": "decc4558-cd8c-4af9-a2f9-4a0159a1703f",
+      "result_id": "03aacfcd-9049-4401-9a56-c568e83d270f"
+    },
+    {
+      "claim_id": "3110c0f7-e588-4661-b3d7-8233cc9e6fed",
+      "result_id": "bb4fffb2-978d-4bb0-9a88-13076cb3f5ec"
+    }
+  ],
+  "comparisons": []
+}

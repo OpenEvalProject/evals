@@ -1,0 +1,324 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "OTTR successfully captures full-length tRNAs from yeast and mouse testis without enzymatic pretreatment, with 70-90% of tRNA-mapping reads representing full-length sequences. MirVana spin column size selection yields more full-length tRNAs than gel purification, suggesting gel-mediated size selection causes tRNA fragmentation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C24-C26 are well-supported by experimental data in Figures 1A-D showing efficient capture of full-length tRNAs and comparison of size selection methods. The data demonstrate OTTR's capability without requiring enzymatic pretreatment, though the inference about gel-induced fragmentation (C25) is reasonable but not definitively proven.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Comparison of OTTR to published tRNA sequencing protocols shows YAMAT-seq captures the highest percentage of full-length tRNAs but with poor library complexity (82-86% from two tRNAs). OTTR and mim-tRNAseq perform comparably with 70-90% full-length capture and better complexity. mim-tRNAseq shows the best correlation (R=0.96) with tRNA gene copy number, followed by OTTR (R=0.5-0.7).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C31 are supported by comparative analysis in Figure 1\u2014figure supplements 2-3. The data clearly show trade-offs between different protocols, with quantitative metrics provided. However, the comparison involves datasets from different labs and conditions, which could introduce technical variability beyond protocol differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Nucleotide modifications, particularly m22G, present partial barriers to reverse transcription in OTTR. Analysis of trm1\u0394 yeast lacking m22G shows improved full-length tRNA capture compared to wild-type, with coverage plots revealing reduced premature termination at modification sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C34 are supported by data in Figures 1D-F comparing wild-type and trm1\u0394 yeast. The genetic approach provides strong evidence that m22G specifically impedes RT. However, the effect is described as 'partial' and 'modest', indicating modifications are not absolute barriers to OTTR.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "OTTR datasets reveal misincorporation signatures at modified nucleotide positions, including m1G (position 9), m22G (position 26), m3C (position 32), and m1A (position 58). The m22G signature is completely lost in trm1\u0394 yeast, confirming the causal link between modification and misincorporation. Mismatches are only observed in tRNA species known to carry modifications at specific positions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C43 are well-supported by data in Figure 2, including genome-wide analysis and validation using trm1\u0394 mutant. The loss of position 26 mismatches in trm1\u0394 provides strong genetic evidence. The specificity of mismatches to known modification sites (C42) is validated against the MODOMICS database.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Budding yeast encode a single RNase T2 family member (RNY1p) and no RNase A or L family members. Overexpression of RNY1p under galactose-inducible control drives high levels of tRNA cleavage, as confirmed by Northern blot showing tRNA-Gly-GCC cleavage products.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C46 are supported by established knowledge about yeast nucleases (C44, with citations) and experimental validation by Northern blot (C46, Figure 3A). This provides a well-controlled system for benchmarking tRF capture protocols.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "In RNY1p-overexpressing yeast, OTTR captures the greatest diversity of tRNA fragments compared to NEBNext and Fu2018 protocols, with more even representation of 5' and 3' tRNA halves. OTTR results better match Northern blot validation for tRNAs showing protocol-dependent differences in coverage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C55 are strongly supported by data in Figure 3, including size distributions, tRNA coverage analysis, and Northern blot validation. The Northern blot comparison (C54) provides critical 'ground truth' validation. The even representation of tRNA species and halves (C52) is consistent with RNase T2 specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Prior studies documented abundant 5' tRNA fragments in mammalian sperm, but standard sequencing protocols incompletely capture the sperm RNA payload. PNK treatment to resolve 3' phosphates reveals additional rRNA fragments and longer 5' tRFs. Northern blots show 3' tRNA halves present in sperm but not captured by typical protocols.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C60 summarize prior work (supported by citations) establishing the incomplete nature of previous sperm RNA characterization. This provides essential context for the current study's findings but represents background knowledge rather than new results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "PNK treatment substantially increases rRNA fragment capture in ligation-based protocols (TruSeq, NEBNext), consistent with RNase A/T/L family cleavage generating 3' phosphates. OTTR library composition is far less dependent on PNK treatment, capturing many tRFs already abundant without treatment, though PNK still enhances capture of some tRF species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C66 are supported by data in Figure 4B and Figure 4\u2014figure supplement 2. The differential PNK dependence between protocols is clearly demonstrated. However, the inference about RNase family involvement (C62) is based on 3' end chemistry rather than direct nuclease identification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "AlkB treatment removes m1A and m3C modifications (assessed by loss of mismatches) but not m1G or m22G. AlkB treatment results in globally increased capture of 3' tRNA halves, consistent with m1A at position 58 impeding RT. In trm1\u0394 yeast, 5' tRNA halves carrying m22G show ~4-fold increased capture. AlkB demethylation should be routinely included for quantitative tRNA analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C76 are well-supported by data in Figure 5 comparing control and AlkB-treated samples, plus trm1\u0394 genetic validation. The specificity of AlkB for m1A/m3C (C69-C70) is clearly demonstrated. The recommendation for routine AlkB treatment (C76) is a reasonable inference from the data, though it's a methodological suggestion rather than an experimental result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C6",
+      "C97",
+      "C98"
+    ],
+    "result": "OTTR reveals mouse sperm contain a far more complex tRNA fragment population than previously appreciated, including both 5' and 3' tRNA halves from the majority of tRNAs. The small RNA payload is dominated by rRNA fragments, with smaller populations of microRNAs and piRNAs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C97-C98 are supported by OTTR sequencing data from mouse sperm (Figure 4). This represents a major revision of understanding of sperm RNA composition. However, the claim of 'most accurate picture to date' (C96, not grouped here) requires accepting that OTTR's technical advantages translate to biological accuracy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "For full-length tRNA cloning, OTTR performs comparably to mim-tRNAseq and YAMAT-seq. All three protocols detect nucleotide modifications via misincorporation signatures. YAMAT-seq provides the most specific intact tRNA capture but exhibits poor complexity (82-86% from two tRNAs). OTTR and mim-tRNAseq show similar capture efficiency and complexity with good correlation (R~0.5) between protocols.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C81 are supported by comparative analysis in Figure 1\u2014figure supplement 2-3. The trade-offs between protocols are clearly documented. However, comparisons involve different labs and samples, potentially confounding technical and biological variation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "OTTR more accurately captures tRNA fragments than NEBNext, TruSeq, Fu2018, and PANDORA protocols. Among published mouse sperm datasets, only LIDAR exhibits similar tRF capture complexity to OTTR. OTTR is suitable for cloning both full-length tRNAs and tRNA fragments, unlike protocols requiring intact acceptor stem ligation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C84 are supported by comparative data in Figures 3-4 and supplements. The versatility of OTTR for both intact and fragmented tRNAs is demonstrated. However, 'more accurately' (C82) is based on Northern blot validation for a limited number of tRNAs, not comprehensive validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Nano-tRNAseq captures full-length tRNAs but with orders of magnitude fewer reads than short-read sequencing and cannot capture tRNA fragments. OTTR is comparable to mim-tRNAseq in applicability. LIDAR's random priming captures full-length tRNAs as partial fragments but can capture RNAs with blocked 3' ends regardless of block type.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C88 are supported by analysis of published data and understanding of protocol designs. These represent fair assessments of protocol trade-offs. However, C86 about mim-tRNAseq applicability to tRFs is speculative ('has not yet been benchmarked'), and C88 about LIDAR's advantages is inference rather than direct demonstration.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "AlkB-mediated demethylation significantly improves 3' tRNA half capture. Eliminating m22G via trm1\u0394 deletion improves relevant tRNA half capture. For tRNA/tRF quantification, OTTR should be performed on AlkB-demethylated RNAs. Altered tRNA levels could reflect either production/stability changes or altered modification levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C92 are supported by data in Figure 5. The recommendation for AlkB treatment (C91) is reasonable based on the data. The cautionary note (C92) about interpreting tRNA level changes is an important inference about potential confounders, though it's a methodological consideration rather than an experimental result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C99",
+      "C100"
+    ],
+    "result": "The consensus view held that mammalian sperm RNAs are dominated by specific 5' tRFs. OTTR data reveal a more complex picture consistent with generalized RNA cleavage rather than selective tRF accumulation. This motivates reappraisal of germline small RNA biogenesis, though the data do not address whether fragments derive from in situ cleavage or somatic cell production.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C96, C99-C100 represent the authors' interpretation of their findings in the context of prior work. The revised view is supported by the OTTR data showing diverse tRFs. However, the interpretation of 'generalized cleavage' (C99) versus selective processes is inference, and the authors acknowledge key mechanistic questions remain unaddressed (C100).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Given that both 5' and 3' tRNA halves are found at similar abundance in sperm, understanding their biochemical context (e.g., whether associated as nicked tRNAs or dissociated) is important for understanding potential embryonic functions. The data significantly update understanding of the sperm epigenome and motivate reappraisal of germline small RNA biogenesis and environmental effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C101-C103 represent forward-looking interpretations and implications rather than experimental results. While the observation of both tRNA halves (C101) is supported by data, the questions about biochemical context are explicitly not addressed by the current study. The broader impact statements (C103) are reasonable but represent the authors' perspective on significance rather than demonstrated outcomes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C3"
+    ],
+    "result": "tRNA cloning efficiency can be further enhanced via AlkB-mediated demethylation of modified nucleotides.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C3 is directly supported by experimental data in Figure 5 showing increased capture of 3' tRNA halves and specific tRNA species following AlkB treatment. The enhancement is quantified (e.g., ~4-fold for m22G-containing 5' halves in trm1\u0394) and mechanistically linked to removal of RT-blocking modifications.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C4"
+    ],
+    "result": "A subset of nucleotide modifications leave misincorporation signatures in OTTR datasets, enabling their detection without additional protocol steps.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C4 is well-supported by data in Figure 2 showing misincorporation patterns at known modification sites. The ability to detect modifications without additional steps is a significant practical advantage, validated by comparison to known modification databases and genetic controls (trm1\u0394).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C5"
+    ],
+    "result": "OTTR provides the most accurate picture of tRNA fragment levels by comparison to 'ground truth' Northern blots.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C5 is supported by Northern blot validation in Figure 3D-E and supplements showing OTTR results better match Northern blots than other protocols for tRNAs with protocol-dependent differences. However, validation is limited to a small number of tRNAs (four shown), not comprehensive across all tRFs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C1",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Background context on tRNA biology and sequencing challenges: tRNAs are difficult to sequence due to structure and modifications. The cellular tRNA repertoire varies by cell type and conditions. tRNAs are cleaved under stress to produce regulatory tRFs. ~15-20% of tRNA nucleotides are modified, with some modifications (m1G, m1A, m3C, m22G) interfering with RT. Various protocols have been developed to address these challenges, including OTTR which uses R2 RT for template jumping and shows low bias in synthetic RNA benchmarking.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C7-C23 provide essential background knowledge supported by extensive citations to prior work. These establish the scientific context and rationale for the study. While not new results, they accurately represent the state of the field and are appropriately supported by references.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,280 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C6"
+    ],
+    "result": "The authors developed a novel geometrical readout mechanism that maps synaptic enzyme (CaMKII and CaN) dynamics to plasticity outcomes. Using a single set of parameters, this model successfully reproduced nine published ex vivo experiments covering various spike-timing and frequency-dependent plasticity protocols, animal ages, and experimental conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C4 describe the model's core innovation and validation. The model includes biophysically detailed components (C3) and demonstrates robust performance across diverse experimental conditions with a single parameter set (C4). The geometrical readout represents a methodological advance over existing approaches (C1), though the generalizability claim (C6) is speculative and not experimentally validated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C52",
+      "C53",
+      "C54",
+      "C70",
+      "C74"
+    ],
+    "result": "The model predicts that in vivo-like spike timing irregularity (jitter and spike failures) strongly shapes plasticity outcomes, with different protocols showing varying sensitivity to noise. The model suggests that millisecond-timescale structure of individual spike pairs is unlikely to play an important role in hippocampal plasticity in vivo, and that plasticity rules are inherently stochastic.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C52-C54 present model predictions about the effects of spike variability on plasticity, supported by simulations in Figure 7. Claims C70 and C74 draw broader conclusions about the stochastic nature of plasticity and the limited role of precise spike timing in vivo. These are well-supported inferences from the model's behavior, though they remain predictions requiring experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C58",
+      "C99"
+    ],
+    "result": "The model successfully distinguishes between subtly different stimulation protocols from Tigaret et al. 2016 by analyzing joint CaMKII-CaN activity trajectories in a 2D plane. Three leading spike-timing and calcium-dependent plasticity models failed to fit these data, while the new model achieved more accurate fitting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C32 describe specific mechanisms by which the model distinguishes protocols, supported by Figure 2. Claims C58 and C99 demonstrate superior performance compared to existing models (Song et al., Pfister and Gerstner, Graupner and Brunel), shown in Figures 2b-d and 3g. The comparative analysis provides strong evidence for the model's advantages.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C101"
+    ],
+    "result": "The model reproduces frequency-dependent plasticity from Dudek and Bear 1992, predicting that LTD requires at least ~300 pulses at 1-3 Hz, while LTP can be induced with ~50 pulses at \u226520 Hz. The model follows a classic BCM-like curve as a function of stimulation frequency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C36 present specific quantitative predictions about frequency-dependent plasticity, supported by simulations in Figure 4f. Claim C101 demonstrates good agreement with experimental data (Figure 4e) and consistency with theoretical frameworks (BCM theory). The predictions are well-grounded in the model's dynamics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "The model accounts for developmental changes in plasticity by incorporating age-dependent changes in NMDAr subunit composition, GABAr reversal potential, and BaP efficiency. Model analysis suggests that the NMDAr switch dominantly affects LTD induction while BaP maturation dominantly affects LTP induction during development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C42 describe experimental observations and the model's ability to reproduce developmental plasticity changes (Figure 5a-b). Claims C43-C44 present model predictions about developmental trajectories. Claims C102-C104 identify the relative contributions of different mechanisms through model analysis (Figure 5\u2014figure supplement 1). The model successfully captures complex developmental phenomena with mechanistic insights.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "The model reproduces the spectrum of STDP rules observed by Inglebert et al. 2020 across different extracellular calcium and magnesium concentrations, ranging from no plasticity or full-LTD at physiological [Ca2+]o to bidirectional rules at high [Ca2+]o. The model predicts that temperature can change STDP rules in a similar fashion to [Ca2+]o.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C48 describe the model's reproduction of experimental data across different [Ca2+]o conditions (Figure 6a-c). Claims C49-C50 identify critical transitions and frequency dependencies. Claim C51 extends predictions to temperature effects. The model successfully captures the sensitivity of plasticity to extracellular ionic conditions, though temperature predictions await experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "The geometrical readout mechanism assumes that all information determining LTP vs. LTD induction is contained in the time-dependent CaMKII and CaN concentrations. The readout uses non-overlapping polygonal plasticity regions in the CaN-CaMKII plane, with LTD having slower transition rates than LTP to reflect the requirement for sustained stimulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C57 state the core assumptions of the readout mechanism. Claims C95-C98 describe the implementation details (Figure 3a-c, Table 13). The mechanism is conceptually novel and well-defined, though the assumption that CaMKII and CaN are sufficient (C55-C56) is a simplification that may not capture all aspects of plasticity expression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C61",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "The model incorporates intrinsic noise by modeling receptors and ion channels as stochastic processes, reflecting the small numbers of these components at individual synapses (~10 NMDArs, <15 VGCCs). Intrinsic noise is demonstrated to be an essential component of the model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C20 and C78 cite experimental evidence for small receptor/channel numbers. Claims C61, C79-C80 describe the stochastic implementation. The importance of stochasticity is demonstrated in Figure 4\u2014figure supplement 2, showing that deterministic substitution of any component alters model outcomes. The stochastic approach is well-justified and validated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "The model includes CaMKII and CaN as key signaling molecules based on experimental evidence that CaMKII activation is necessary for LTP and CaN activation is necessary for LTD. NMDArs are the major calcium source, and the model captures the multi-timescale dynamics of calcium, CaM, CaMKII, and CaN.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C17 cite experimental evidence for the necessity of CaMKII and CaN. Claims C24-C27 describe the model's calcium dynamics and enzyme kinetics, supported by Figure 1 and citations to experimental data. The model's representation of these components is biophysically grounded and captures key temporal dynamics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C73"
+    ],
+    "result": "The model proposes that plasticity induction is robust due to temporal averaging by slow-timescale signaling processes, and that successful plasticity induction requires a balance between variables that attenuate (vesicle pools, BaP) and those that accumulate (enzymatic integration).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C63 propose mechanisms for robustness to noise, supported by the model's behavior and citations. Claim C73 identifies a key principle from model analysis. These are well-supported inferences from the model's dynamics, though they represent interpretations rather than direct experimental validations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C100"
+    ],
+    "result": "The model makes testable predictions including: LTD could be induced with extended pairing repetitions for post-before-pre protocols (Figure 3h-i), LTD in adults can be recovered using spike doublets/triplets/quadruplets (Figure 5d), and a LTD window appears after ~500 repetitions for some anticausal pairings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C72 and C100 present specific, testable predictions from model simulations. These predictions are logical extensions of the model's validated behavior and are supported by the underlying mechanisms. However, they remain predictions requiring experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C64",
+      "C75",
+      "C76",
+      "C77",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "The model simultaneously incorporates multiple biological variables including electrical components, vesicle dynamics, receptor/channel kinetics, calcium dynamics, and enzyme reactions. The model structure includes three compartments (spine, dendrite, soma) with specific biophysical components.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64 and C75-C88 describe the model's components and structure. These are well-documented in the Materials and methods section with appropriate citations. The model's comprehensiveness is a strength, though the level of detail represents choices about which processes to include.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C60",
+      "C105",
+      "C106"
+    ],
+    "result": "The model is computationally efficient (taking ~1 min CPU time per 1 min biological time), implemented in Julia programming language (version 1.4.2), and is publicly available on GitHub.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60, C105-C106 provide practical information about the model's implementation and availability. These are straightforward factual statements that support reproducibility and accessibility of the work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "The model has acknowledged limitations including: abstraction of plasticity expression mechanisms, exclusion of protein-synthesis-dependent processes, parameter redundancy, and modeling of only a single synapse despite synaptic heterogeneity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C69 acknowledge important limitations of the model. These are honest assessments supported by citations to relevant literature. The authors appropriately recognize the scope and boundaries of their model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "The authors review established principles and experimental findings about synaptic plasticity, including the Hebb postulate, STDP models, and the sensitivity of plasticity to various experimental conditions (rate, timing, depolarization, age, temperature, extracellular ions).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C15 summarize established knowledge from the literature, all supported by appropriate citations. These provide context for the study and are accurately represented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "The model's parameters are constrained by experimental data, including release probability values from Tigaret et al. 2016 and Hardingham et al. 2006, and enzyme kinetics from various sources. Specific parameter choices are justified by experimental measurements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C82 and C89-C94 describe specific parameter values and their experimental justification. These are well-documented in the Materials and methods with appropriate citations. The parameter choices are physiologically grounded, though some represent adjustments to fit the model's simplified structure.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,180 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C30",
+      "C31",
+      "C32",
+      "C35",
+      "C36",
+      "C37",
+      "C39",
+      "C40",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "BABY is a computational pipeline that uses a modified U-net CNN with custom training targets to segment overlapping budding yeast cells, track them over time, assign mother-bud lineages, and estimate single-cell growth rates from label-free bright-field images. The key innovation is dividing training data into three size categories and applying morphological erosion to reduce overlaps, combined with bud neck detection and radial spline boundary parameterization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C21, C30-C32, C35-C37, C39-C40, and C71-C73 collectively describe BABY's architecture, training approach, and capabilities. The training data (3233 annotated cells from 1028 time points) is well-documented (C72), the technical innovations are clearly described (C31, C35-C36), and performance metrics are provided (C39). The methodological description is sufficiently detailed and internally consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "BABY outperforms existing algorithms (Cellpose, YeaZ, DISCO) in segmenting budding yeast cells, particularly for smaller cell sizes and overlapping buds. BABY achieves higher tracking completeness and more accurate growth rate estimation compared to alternatives, even when those alternatives are retrained on BABY's training data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C47 present comparative performance data with appropriate metrics (IoU, track completeness, RMSE for growth rates) and are supported by multiple figures (Figure 3a-e). The comparisons include both pre-trained and retrained versions of competing algorithms, and validation against manually curated ground truth strengthens the claims. The performance advantage is particularly notable for small buds (C43), which aligns with BABY's design goals.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Using BABY, the authors discovered that bud growth exhibits two regulatory phases: a nutrient-independent sizer mechanism where buds reach similar sizes at peak growth rate across different carbon sources, followed by a nutrient-dependent timer mechanism that determines final daughter size. The peak in bud growth rate occurs at similar times relative to cytokinesis despite different S/G2/M phase durations in different media.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C54 present a coherent biological finding supported by experimental data across multiple carbon sources (glucose, raffinose, pyruvate, palatinose) with appropriate fluorescent markers (Figure 4a-b, Figure 3\u2014figure supplement 6). The observation that buds have similar sizes at peak growth rate across conditions (C51) despite different birth sizes (C50) supports the sizer-then-timer model (C54). The correlation between average bud growth rate and daughter volume (C52) provides additional support. However, the mechanistic interpretation (C53-C54) involves inference beyond direct observation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Fluctuations in nuclear Sfp1 concentration precede changes in growth rate by 25 minutes in glucose and 50 minutes in palatinose. Sfp1 and growth rate respond quickly to nutrient downshifts (8\u00b11 min for growth rate), but growth rate lags Sfp1 during upshifts (30\u00b12 min delay). The weak correlation strength suggests substantial growth control beyond Sfp1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C64 describe Sfp1's role (supported by citations C55-C57) and present original experimental observations using nutrient shifts (C58-C59, C62-C63). The quantitative timing measurements are specific and include confidence intervals (C62-C63), and the cross-correlation analysis (Figure 5d) supports the temporal relationship. The interpretation acknowledging weak correlation and additional control mechanisms (C64) is appropriately cautious. The differential response to upshifts versus downshifts (C59, C62) is consistent with known biology of ribosome synthesis versus inactivation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C65",
+      "C66"
+    ],
+    "result": "During nutrient downshift from glucose to palatinose, growth rate transiently drops to zero regardless of cell cycle stage, coinciding with an increase in the fraction of cells in G1 phase, suggesting cell cycle arrest in G1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C66 describe observations from the nutrient shift experiments supported by Figure 5b and Figure 5\u2014figure supplement 1. The transient growth arrest is documented across cell cycle phases (C65), and the coincident increase in G1 cells (C66) supports the arrest interpretation. However, the inference that cells arrest specifically in G1 (C66) is based on correlation rather than direct cell cycle markers.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C25"
+    ],
+    "result": "BABY enables real-time control of experiments based on growth rate measurements. The authors demonstrated this by automatically switching media when 50% of cells resumed dividing after a nutrient downshift, showing that growth rate can serve as a control variable for feedback experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C70 and C25 describe BABY's real-time capabilities with a proof-of-principle experiment (Figure 6). The demonstration shows automatic detection of cells escaping lag phase (C68) and triggered media switching (C25), with observed synchronous growth resumption (C69). The claim that this enables more sophisticated feedback control (C70) is reasonable but represents future potential rather than demonstrated capability. The experiment successfully validates real-time operation but is relatively simple compared to model-predictive control mentioned in the text.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C33",
+      "C34"
+    ],
+    "result": "Segmenting budding yeast is challenging because mothers and buds differ in size and appearance, buds frequently overlap with mothers and neighbors in microfluidic devices, and buds move in the Z-axis changing their appearance. The frequency and extent of overlap depends on cell size, with most overlaps occurring between mid-sized cells and fast-growing buds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C29 and C33-C34 establish the computational challenge that motivates BABY's design. The observations are supported by direct imaging data (Figure 1a-c) and analysis of overlap patterns (Appendix 1\u2014figure 2, Figure 1\u2014figure supplement 1a). These claims provide important context for understanding BABY's innovations and are well-documented with visual evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Cell overlap is a widespread but often undeclared problem in yeast microscopy across multiple experimental platforms. While cell segmentation and tracking software is well-established and enhanced by deep learning, few algorithms handle overlaps, and lineage assignment typically requires manual annotation or fluorescent markers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C16 establish the state of the field and identify gaps that BABY addresses. The claims about overlap prevalence (C10-C11) are supported by the authors' observations and multiple citations to different experimental setups. The characterization of existing software capabilities (C12-C16) is well-supported by citations to relevant algorithms. These claims effectively motivate the need for BABY but represent background rather than novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "Growth rate correlates with fitness in microbes, cells regulate growth through ribosome synthesis and nutrient balance, and coordinate growth with division to achieve target sizes. Time-lapse microscopy with microfluidics has been pivotal for single-cell studies, but measuring growth rates in budding yeast is more challenging than in symmetrically dividing cells like E. coli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C8 provide biological and technical background supported by appropriate citations. These are established facts from prior work rather than novel findings from this study. The claims accurately represent the state of knowledge and provide context for the manuscript's contributions. All claims are properly attributed to prior literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C38"
+    ],
+    "result": "Cytokinesis is sometimes visible as a darkening of the bud neck in bright-field images, indicating that these images contain information about cytokinesis that the U-net can potentially learn.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C38 describes an observation about bright-field imaging that informs BABY's design. The claim is reasonable based on known biology and imaging physics, though the inference that U-net can learn this feature is speculative. This represents a minor technical observation supporting the inclusion of bud neck as a training target.",
+    "result_type": "MINOR"
+  }
+]

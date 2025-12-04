@@ -1,0 +1,1928 @@
+{
+  "submission": {
+    "id": "1544bbb3-c754-4c1d-97d8-41f29d1acde5",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-04T04:19:02.011116Z",
+    "updated_at": "2025-12-04T04:19:02.011116Z"
+  },
+  "content": [
+    {
+      "id": "ba457033-bbb9-40bf-afa9-792a8959015d",
+      "submission_id": "1544bbb3-c754-4c1d-97d8-41f29d1acde5",
+      "content_type": "manuscript",
+      "content_text": "# Transcriptional regulation of SARS-CoV-2 receptor ACE2 by SP1\n\n## Authors\n\n- Hui Han<sup>1</sup>\n- Rong-Hua Luo<sup>2</sup>\n- Xin-Yan Long<sup>2</sup>\n- Li-Qiong Wang<sup>3</sup>\n- Qian Zhu<sup>1</sup>\n- Xin-Yue Tang<sup>1</sup>\n- Rui Zhu<sup>1</sup>\n- Yi-Cheng Ma<sup>1</sup> \u2020\n- Yong-Tang Zheng<sup>2</sup> \u2020\n- Cheng-Gang Zou<sup>1</sup> ([ORCID: 0000-0001-5519-4402](https://orcid.org/0000-0001-5519-4402)) \u2020\n\n### Affiliations\n\n1. State Key Laboratory for Conservation and Utilization of Bio-Resources in Yunnan, School of Life Sciences, Yunnan University Kunming China ([ROR:0040axw97](https://ror.org/0040axw97))\n2. Key Laboratory of Bioactive Peptides of Yunnan Province/Key Laboratory of Animal Models and Human Disease Mechanisms of the Chinese Academy of Sciences, KIZ-CUHK Joint Laboratory of Bio-Resources and Molecular Research in Common Diseases, Center for Biosafety Mega-Science, Kunming Institute of Zoology, Chinese Academy of Sciences Kunming China ([ROR:034t30j35](https://ror.org/034t30j35))\n3. Department of Pathology, Yan\u2019an Hospital, Kunming Medical University Kunming China ([ROR:038c3w259](https://ror.org/038c3w259))\n\n\u2020 Corresponding author\n\n## Abstract\n\nAngiotensin-converting enzyme 2 (ACE2) is a major cell entry receptor for severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2). The induction of ACE2 expression may serve as a strategy by SARS-CoV-2 to facilitate its propagation. However, the regulatory mechanisms of ACE2 expression after viral infection remain largely unknown. Using 45 different luciferase reporters, the transcription factors SP1 and HNF4\u03b1 were found to positively and negatively regulate ACE2 expression, respectively, at the transcriptional level in human lung epithelial cells (HPAEpiCs). SARS-CoV-2 infection increased the transcriptional activity of SP1 while inhibiting that of HNF4\u03b1. The PI3K/AKT signaling pathway, activated by SARS-CoV-2 infection, served as a crucial regulatory node, inducing ACE2 expression by enhancing SP1 phosphorylation\u2014a marker of its activity\u2014and reducing the nuclear localization of HNF4\u03b1. However, colchicine treatment inhibited the PI3K/AKT signaling pathway, thereby suppressing ACE2 expression. In Syrian hamsters (Mesocricetus auratus) infected with SARS-CoV-2, inhibition of SP1 by either mithramycin A or colchicine resulted in reduced viral replication and tissue injury. In summary, our study uncovers a novel function of SP1 in the regulation of ACE2 expression and identifies SP1 as a potential target to reduce SARS-CoV-2 infection.\n\n## Introduction\n\nSevere acute respiratory syndrome coronavirus 2 (SARS-CoV-2) is the causative pathogen of the coronavirus disease 2019 (COVID-19) pandemic (Wu et al., 2020; Lu et al., 2020). Patients with severe COVID-19 often exhibit pathophysiological characteristics related to a systemic inflammatory response, manifesting as acute respiratory distress syndrome and multiorgan dysfunction (Pan et al., 2021; van Eijk et al., 2021). Viral entry into host cells occurs through the binding of the SARS-CoV-2 spike protein to its cellular receptor, angiotensin-converting enzyme 2 (ACE2), followed by proteolytic cleavage of the spike protein via the transmembrane serine protease TMPRSS2 (Yan et al., 2020), facilitating the fusion of the viral and host cell membranes, a crucial step for viral internalization (Hoffmann et al., 2020). ACE2 is widely expressed in different human tissues, including the lungs, small intestine, kidneys, liver, testes, heart, and brain (Dong et al., 2020; Verdecchia et al., 2020). Such widespread expression of ACE2 may account for the multi-organ targeting observed with SARS-CoV-2.\n\nVaccination is regarded as an effective strategy for mitigating SARS-CoV-2 infections, as well as reducing hospitalization and mortality rates. Despite this, the evolving mutational landscape of SARS-CoV-2 has compromised the ability of certain individuals to generate a sufficient immune response through vaccination alone. Notably, the efficacy of existing vaccines has shown a marked decline against emergent variants such as Omicron (Kuhlmann et al., 2022; Wilhelm et al., 2022). Modifications in the spike protein of these variants have been observed to increase their binding affinity to ACE2, thereby enhancing transmissibility (Liu et al., 2021; McCallum et al., 2022). Consequently, need to identify and develop novel host-directed therapeutics against SARS-CoV-2 remains urgent, especially in vulnerable populations such as the elderly.\n\nAccumulating evidence suggests that SARS-CoV-2 infection significantly up-regulates ACE2 expression (Gao et al., 2022; Wei et al., 2021; Xu et al., 2021a; Zhuang et al., 2020). Specifically, SARS-CoV-2 infection can increase the expression of HMGB1, which subsequently induces the expression of ACE2, possibly through an epigenetic mechanism (Wei et al., 2021). Furthermore, overexpression of the SARS-CoV-2 spike protein markedly up-regulates ACE2 expression, a process reliant on type I interferon signaling pathways, with ACE2 being identified as an interferon-stimulated gene (Zhou et al., 2021; Ziegler et al., 2020). Several studies have demonstrated that the androgen receptor positively regulates the expression of ACE2 at the transcriptional level (Qiao et al., 2021; Samuel et al., 2020). Importantly, attenuation of ACE2 expression via suppression of the androgen receptor signaling decreases SARS-CoV-2 infectivity (Qiao et al., 2021). Recent research has also demonstrated that ursodeoxycholic acid (UDCA), an inhibitor of the farnesoid X receptor (FXR), reduces ACE2 expression in human lung, intestinal, and liver organoids, thereby inhibiting SARS-CoV-2 infection (Brevini et al., 2023). Accordingly, ACE2 represents a promising therapeutic target in combating COVID-19, although the molecular mechanisms related to SARS-CoV-2-induced regulation of ACE2 remain largely unknown.\n\nTo elucidate the molecular mechanisms governing the regulation of ACE2 expression by SARS-CoV-2, we employed 45 different luciferase reporters to assay a range of signaling pathways. Our results indicated that SARS-CoV-2 up-regulated ACE2 expression by activating the transcription factor SP1, while concurrently inhibiting HNF4\u03b1 via the PI3K/AKT signaling pathway. Furthermore, we demonstrated that mithramycin A (MithA), an inhibitor of SP1, exhibited efficacy against SARS-CoV-2 in both cellular and animal models. Thus, these findings suggest that SP1 serves as an important transcription factor in the regulation of ACE2 expression.\n\n## Results\n\n### SARS-CoV-2 infection up-regulates ACE2 expression, which is inhibited by colchicine treatment\n\nServing as the entry receptor for SARS-CoV-2 in host cells, ACE2 is considered a promising therapeutic target against COVID-19 (Monteil et al., 2020). Consistent with prior studies indicating a significant up-regulation of ACE2 mRNA expression following SARS-CoV-2 infection (Gao et al., 2022; Wei et al., 2021; Xu et al., 2021b; Zhuang et al., 2020), we found that SARS-CoV-2 infection up-regulated ACE2 protein expression in HPAEpiCs, a human lung epithelial cell line (Figure 1A, B), with further corroboration based on immunofluorescence analysis (Figure 1C, D). Recent clinical investigations have reported a mortality benefit among COVID-19 patients treated with colchicine (Drosos et al., 2022; Elshafei et al., 2021), a drug used for the treatment of (auto-)inflammatory conditions such as acute gout and familial Mediterranean fever (Dasgeb et al., 2018; Schlesinger et al., 2020). In the present study, we observed that colchicine treatment substantially inhibited ACE2 expression in HPAEpiCs, irrespective of SARS-CoV-2 infection status (Figure 1A\u2013D).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/85985/elife-85985-fig1-v1.jpg)\n\n**Figure 1.:** (A and B) SARS-CoV-2 infection up-regulated protein levels of ACE2. Colchicine (20 nM) significantly reduced protein levels of ACE2 in HPAEpiCs. Blot is typical of three independent experiments (A). Quantification of ACE2 to Actin ratio (B). Results are means \u00b1 standard deviation (SD) of three independent experiments. *p<0.05 (Student\u2019s t-test). (C) Representative images of immunofluorescence staining for ACE2. Scale bar: 10 \u03bcm. (D) Quantification of ACE2 fluorescence intensity. Results are means \u00b1 SD of three independent experiments. *p<0.05 (Student\u2019s t-test). Veh, Vehicle. Col, Colchicine. nCoV-2, SARS-CoV-2.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/85985/elife-85985-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Colchicine (20 nM) inhibited SARS-CoV-2 replication in HPAEpiCs. Cell culture supernatants were collected for viral load determination (n=8 each group). Error bars show means \u00b1 SD. ***p<0.001 (Student\u2019s t-test). (B) Dose-response analysis of HPAEpiCs treated with colchicine at indicated concentrations and infected with SARS-CoV-2 (MOI = 1) for 48 hr.\n\nAs colchicine inhibits ACE2 expression, we assessed the in vitro inhibitory effects of colchicine on SARS-CoV-2 replication in HPAEpiCs. After preincubation with colchicine at different concentrations for 1 hr, cells were infected with SARS-CoV-2 for 1 hr, then cultured in fresh medium for 24 hr to measure viral RNA copy number. Based on quantitative reverse transcriptase polymerase chain reaction (RT-qPCR), colchicine treatment reduced extracellular SARS-CoV-2 replication in cells (Figure 1\u2014figure supplement 1A). The half-maximal effective concentration (EC50) of colchicine for inhibiting viral replication was 0.2703 \u03bcM (Figure 1\u2014figure supplement 1B). These results suggest that inhibition of ACE2 expression by colchicine suppresses SARS-CoV-2 infection.\n\n### SARS-CoV-2 infection regulates transcriptional activities of SP1 and HNF4\u03b1\n\nTo clarify the molecular mechanisms governing ACE2 expression regulation, we used colchicine as a proof-of-principle agent. Using the Cignal Finder 45-Pathway Reporter Array (Manzini et al., 2014; Xu et al., 2021a), we analyzed a range of signaling pathways in response to SARS-CoV-2 infection, both in the presence and absence of colchicine (Figure 2A). Among the tested signaling pathways, three transcription factors (SP1, NF-\u03baB, and GATA) enhanced by SARS-CoV-2 infection and suppressed by colchicine treatment (Figure 2A). Conversely, two signaling pathways (HNF4\u03b1 and estrogen receptor) were inactivated by SARS-CoV-2 infection but activated by colchicine treatment (Figure 2A). These transcription factors thus emerged as potential candidates for regulating ACE2 expression. To further explore this, we investigated the DNA motifs located 1.5 kb upstream of the transcription start site (TSS) of the ACE2 gene using the MEME program (Bailey et al., 2015). Our analysis revealed two significantly enriched motifs (Figure 2B), annotated as the motifs of the transcription factors SP1 (p=6.1e-5) and HNF4\u03b1 (p=4.2e-5). These findings suggest that these two transcription factors are likely regulators of ACE2 expression.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/85985/elife-85985-fig2-v1.jpg)\n\n**Figure 2.:** (A) Assays for signaling pathways in response to SARS-CoV-2 infection and colchicine treatment (20 nM) using Cignal Finder 45-Pathway Reporter Array. (B) SP1 and HNF4\u03b1 binding elements 1.5 kb upstream of TSS of ACE2 gene identified by MEME program. (C and D) SARS-CoV-2 significantly increased phosphorylation of SP1 (p\u2013SP1) in HPAEpiCs, which was suppressed by treatment with colchicine (20 nM). Representative images of immunofluorescence staining for p-SP1 (C). Scale bar: 10 \u03bcm. Quantification of p-SP1 fluorescence intensity (D). Results are means \u00b1 SD of three independent experiments. *p<0.05, **p<0.01 (Student\u2019s t-test). (E and F) SARS-CoV-2 induced cytoplasmic translocation of HNF4\u03b1, whereas colchicine (20 nM) promoted its nuclear accumulation in HPAEpiCs. Representative images of immunofluorescence staining for HNF4\u03b1 (E). Scale bar: 10 \u03bcm. Quantification of HNF4\u03b1 fluorescence intensity (F). Results are means \u00b1 SD of three independent experiments. *p<0.05, ***p<0.001 (Student\u2019s t-test). Veh, Vehicle. Col, Colchicine. nCoV-2, SARS-CoV-2.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/85985/elife-85985-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Scale bar: 10 \u03bcm.\n\nTo assess the impact of SARS-CoV-2 and colchicine on SP1 and HNF4\u03b1 activities, we examined their subcellular distributions using immunofluorescence analysis. Although SP1 was mainly located in the nucleus of HPAEpiCs (Figure 2\u2014figure supplement 1), only a small proportion of total SP1 was phosphorylated at Thr453 (Figure 2C), a modification indicative of its activation (Milanini-Mongiat et al., 2002). SARS-CoV-2 infection markedly increased the phosphorylation levels of SP1 at Thr453, whereas colchicine treatment significantly inhibited the phosphorylation of SP1, regardless of the presence or absence of SARS-CoV-2 infection (Figure 2C, D). In contrast to SP1, HNF4\u03b1 displayed both nuclear and cytoplasmic distribution in HPAEpiCs under basal conditions (Figure 2E). SARS-CoV-2 infection prompted a redistribution of HNF4\u03b1 from the nucleus to cytoplasm, while colchicine treatment induced its nuclear accumulation both in the presence and absence of SARS-CoV-2 infection (Figure 2E, F). These results suggest that SARS-CoV-2 infection activates SP1 and inactivates HNF4\u03b1, which can be counteracted by colchicine treatment.\n\n### Involvement of SP1 and HNF4\u03b1 in ACE2 expression\n\nNext, we investigated whether colchicine inhibited ACE2 expression via regulation of SP1 and HNF4\u03b1. First, western blot analysis demonstrated that treatment with MithA, a selective SP1 inhibitor, or knockdown of SP1 by small interfering RNA (siRNA) down-regulated ACE2 protein expression in HPAEpiCs (Figure 3A, B). However, inhibition of SP1 by MithA or siSP1 did not further reduce the down-regulation of ACE2 protein levels achieved by colchicine. In contrast, treatment with the HNF4\u03b1 antagonist BI6015 and knockdown of HNF4\u03b1 by siRNA up-regulated ACE2 protein expression (Figure 3C, D), which was blocked by colchicine administration.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/85985/elife-85985-fig3-v1.jpg)\n\n**Figure 3.:** (A and B) HPAEpiCs were treated with colchicine (20 nM), MithA (100 nM), colchicine +MithA, siSP1, or siSP1 +colchicine, respectively. Inhibition of SP1 significantly suppressed ACE2 levels in HPAEpiCs. Blot is typical of three independent experiments (A). Quantification of ACE2 to Actin ratio (B). Results are means \u00b1 SD of three independent experiments. *p<0.05, **p<0.01 (Student\u2019s t-test). (C and D) Supplementation with colchicine (20 nM) significantly suppressed ACE2 levels in HPAEpiCs, which was reversed by treatment with BI6015 (20 \u03bcM) or siHNF4\u03b1. Blot is typical of three independent experiments (C). Quantification of ACE2 to Actin ratio (D). Results are means \u00b1 SD of three independent experiments. *p<0.05, **p<0.01 (Student\u2019s t-test). (E and F) HPAEpiCs were treated with MithA (100 nM), BI6015 (20 \u03bcM), colchicine (20 nM), colchicine + MithA, or colchicine +BI6015, respectively. Representative images of immunofluorescence staining for ACE2 in HPAEpiCs (E). Scale bar: 10 \u03bcm. Quantification of ACE2 fluorescence intensity (F). Results are means \u00b1 SD of three independent experiments. *p<0.05, **p<0.01, ns, not significant (Student\u2019s t-test). (G) Luciferase activity analysis of ACE2 promoter in HPAEpiCs. Results are means \u00b1 SD of three independent experiments. *p<0.05, **p<0.01, ***p<0.001, ns, not significant (Student\u2019s t-test). (H) Putative SP1 and HNF4\u03b1 binding sites in promoter regions of ACE2 were detected by ChIP-qPCR with anti-SP1 and anti-HNF4\u03b1 antibodies, respectively. Results are means \u00b1 SD of three independent experiments. *p<0.05. Veh, Vehicle. Col, Colchicine.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/85985/elife-85985-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Representative images of immunofluorescence staining for ACE2 in A549 cells. A549 cells were treated with MithA, BI6015, colchicine, colchicine +MithA, or colchicine +BI6015, respectively. Scale bar: 10 \u03bcm. (B) Quantification of ACE2 fluorescence intensity. Results are means \u00b1 SD of three independent experiments. *p<0.05, **p<0.01, ns, not significant (Student\u2019s t-test). Veh, Vehicle. Col, Colchicine.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/85985/elife-85985-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A and B) SARS-CoV-2 infection up-regulated protein levels of ACE2. Colchicine (20 nM) significantly reduced protein levels of ACE2 in HK-2 cells. Blot is typical of three independent experiments (A). Quantification of ACE2 to Actin ratio in HK-2 cells (B). Results are means \u00b1 SD of three independent experiments. *p<0.05, **p<0.01 (Student\u2019s t-test). (C and D) SARS-CoV-2 infection up-regulated protein levels of ACE2. Colchicine (20 nM) significantly reduced protein levels of ACE2 in SARS-CoV-2-infected Huh-7 cells. Blot is typical of three independent experiments (C). Quantification of ACE2 to Actin ratio in Huh-7 cells (D). Results are means \u00b1 SD of three independent experiments. *p<0.05, **p<0.01, ns, not significant (Student\u2019s t-test). (E) Colchicine (20 nM) and MithA (100 nM) inhibited SARS-CoV-2 replication in HK-2 cells. Cell culture supernatants were collected for viral load determination. Error bars show means \u00b1 SD. **p<0.01, ***p<0.001 (Student\u2019s t-test). (F) Colchicine (20 nM) and MithA (100 nM) inhibited SARS-CoV-2 replication in Huh-7 cells. Cell culture supernatants were collected for viral load determination. Error bars show means \u00b1 SD. **p<0.01, ***p<0.001 (Student\u2019s t-test).\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/85985/elife-85985-fig3-figsupp3-v1.jpg)\n\n**Figure 3\u2014figure supplement 3.:** Dose-response analysis of HPAEpiCs treated with indicated concentrations of MithA and infected with SARS-CoV-2 (MOI = 1) for 48 hr. EC50 was achieved by plaque reduction assay and plotted using logistic non-linear regression.\n\nImmunofluorescence staining further confirmed that although MithA treatment inhibited the protein expression of ACE2, it did not further reduce the expression of ACE2 suppressed by colchicine (Figure 3E, F). Supplementation with BI6015 markedly increased the expression of ACE2 in HPAEpiCs, which was reduced by colchicine treatment (Figure 3E, F). Similar results were obtained in human epithelial cells A549, human renal tubular cells HK-2, and human hepatoma cells Huh-7 (Figure 3\u2014figure supplements 1 and 2).\n\nBased on a luciferase reporter gene containing the ACE2 promoter, MithA treatment inhibited luciferase activity, but not in the presence of colchicine (Figure 3G), while BI6015 treatment increased luciferase activity. In addition, chromatin immunoprecipitation (ChIP)-qPCR analysis indicated that the binding of SP1 to the GC box of the ACE2 promoter was significantly reduced, while the binding of HNF4\u03b1 to the AGGTCA element was markedly increased after colchicine treatment (Figure 3H). As MithA inhibited the expression of ACE2, we also tested its effects on SARS-CoV-2 infection in vitro. Results showed that MithA inhibited SARS-CoV-2 replication in HPAEpiCs, with an EC50 value of 0.1948 \u03bcM (Figure 3\u2014figure supplement 3). These data suggest that SP1 and HNF4\u03b1 exert opposing effects on the transcriptional regulation of ACE2 expression, thereby influencing cellular susceptibility to SARS-CoV-2 infection.\n\n### Dual antagonism of SP1 and HNF4\u03b1\n\nInterestingly, treatment with the SP1 inhibitor MithA markedly suppressed SP1 phosphorylation, whereas treatment with the HNF4\u03b1 antagonist BI6015 increased SP1 phosphorylation at Thr453 (Figure 4A, B). In addition, BI6015 induced the cytoplasmic translocation of HNF4\u03b1, while MithA promoted its nuclear accumulation (Figure 4C, D). Western blot analysis showed an elevation in SP1 phosphorylation levels following the knockdown of HNF4\u03b1 by siRNA (Figure 4E, F), whereas the knockdown of SP1 had no discernible impact on the total levels of HNF4\u03b1. We subsequently confirmed potential interactions between SP1 and HNF4\u03b1 in HPAEpiCs using co-immunoprecipitation assay (co-IP; Figure 4G). Overall, these findings suggest that SP1 and HNF4\u03b1 antagonize each other, likely through protein-protein interactions.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/85985/elife-85985-fig4-v1.jpg)\n\n**Figure 4.:** (A and B) Supplementation with colchicine (20 nM) and MithA (100 nM) significantly suppressed SP1 phosphorylation (p\u2013SP1) in HPAEpiCs, which was reversed by treatment with BI6015 (20 \u03bcM). Representative images of immunofluorescence staining for p-SP1 (A). Scale bar: 10 \u03bcm. Quantification of p-SP1 fluorescence intensity (B). Results are means \u00b1 SD of three independent experiments. *p<0.05, **p<0.01 (Student\u2019s t-test). (C and D) Supplementation with colchicine (20 nM) and MithA (100 nM) promoted nuclear accumulation of HNF4\u03b1 in HPAEpiCs, which was inhibited by treatment with BI6015 (20 \u03bcM). Representative images of immunofluorescence staining for HNF4\u03b1 (C). Scale bar: 10 \u03bcm. Quantification of HNF4\u03b1 fluorescence intensity (D). Results are means \u00b1 SD of three independent experiments. *p<0.05, **p<0.01 (Student\u2019s t-test). (E and F) Phosphorylation levels of SP1 and total protein levels of HNF4\u03b1 were measured in HPAEpiCs by western blotting. Blot is typical of three independent experiments (E). Quantification of p-SP1 or HNF4\u03b1 to Actin ratio (F). Results are means \u00b1 SD of three independent experiments. *p<0.05, ns, not significant (Student\u2019s t-test). (G) Interactions between SP1 and HNF4\u03b1 were measured by co-IP in HPAEpiCs. NC, Negative control. Veh, Vehicle. Col, Colchicine.\n\n### Colchicine reduces ACE2 expression by inhibiting the PI3K/AKT signaling pathway\n\nThe PI3K/AKT signaling pathway is reportedly activated by SARS-CoV-2 infection (Callahan et al., 2021; Klann et al., 2020; Sun et al., 2021). Consistently, we found that SARS-CoV-2 infection enhanced the phosphorylation of AKT at Ser473 and Thr308, which is required for its activation (Su et al., 2011; Figure 5A\u2013C). However, treatment with colchicine markedly reduced the phosphorylation of AKT induced by SARS-CoV-2 infection (Figure 5A\u2013C). Furthermore, knockdown of AKT by siRNA or treatment with PI3K inhibitors (LY294002 and wortmannin) down-regulated the expression of ACE2 in HPAEpiCs (Figure 5D\u2013G). Notably, both LY294002 and wortmannin inhibited SARS-CoV-2 infection in HPAEpiCs, with EC50 values of 0.2381 \u03bcM and 0.04228 \u03bcM, respectively (Figure 5\u2014figure supplement 1). These data suggest that the PI3K/AKT signaling pathway is essential for effective SARS-CoV-2 infection.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/85985/elife-85985-fig5-v1.jpg)\n\n**Figure 5.:** (A\u2013C) Phosphorylation levels of AKT (S473 and T308) were measured in HPAEpiCs by western blotting. Blot is typical of three independent experiments (A). Quantification of p-AKT (S473) (B) or p-AKT (T308) (C) to Actin ratio. Results are means \u00b1 SD of three independent experiments. *p<0.05, **p<0.01, ***p<0.001 (Student\u2019s t-test). (D\u2013G) Supplementation with LY294002 (30 \u03bcM) and wortmannin (50 nM) or siAKT significantly suppressed ACE2 levels in HPAEpiCs. Blot is typical of three independent experiments (D). Quantification of ACE2 to Actin ratio (E). Results are means \u00b1 SD of three independent experiments. *p<0.05, **p<0.01, ***p<0.001 (Student\u2019s t-test). Representative images of immunofluorescence staining for ACE2 (F). Scale bar: 10 \u03bcm. Quantification of ACE2 fluorescence intensity (G). Results are means \u00b1 SD of three independent experiments. *p<0.05 (Student\u2019s t-test). (H and I) Supplementation with LY294002 (30 \u03bcM) and wortmannin (50 nM) or siAKT significantly suppressed phosphorylation of SP1 (p\u2013SP1) in HPAEpiCs. Representative images of immunofluorescence staining for p-SP1 (H). Scale bar: 10 \u03bcm. Quantification of p-SP1 fluorescence intensity (I). Results are means \u00b1 SD of three independent experiments. **p<0.01, **p<0.01 (Student\u2019s t-test). (J and K) Supplementation with LY294002 (30 \u03bcM) and wortmannin (50 nM) or siAKT promoted nuclear accumulation of HNF4\u03b1 in HPAEpiCs. Representative images of immunofluorescence staining for HNF4\u03b1 (J). Scale bar: 10 \u03bcm. Quantification of HNF4\u03b1 fluorescence intensity (K). Results are means \u00b1 SD of three independent experiments. *p<0.05, **p<0.01 (Student\u2019s t-test). Ctrl, Control. Veh, Vehicle. Col, Colchicine. LY, LY294002. Wort, wortmannin. nCoV-2, SARS-CoV-2.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/85985/elife-85985-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A and B) Dose-response analysis of HPAEpiCs treated with indicated concentrations of PI3K/AKT inhibitors LY294002 (A) or wortmannin (B) and infected with SARS-CoV-2 (MOI = 1) for 48 hr. EC50 was achieved by plaque reduction assay and plotted using logistic non-linear regression model.\n\nThe PI3K/AKT signaling pathway plays an important role in regulating the transcriptional activities of SP1 and HNF4\u03b1 (Adapala et al., 2019; G\u00f3mez-Villafuertes et al., 2015; Li et al., 2019; Zhao et al., 2015). Activation of AKT promotes the stability and localization of SP1 by phosphorylating SP1 at Thr453 and Thr739 (Adapala et al., 2019; G\u00f3mez-Villafuertes et al., 2015; Zhao et al., 2015), and prevents the nuclear translocation of HNF4\u03b1 (Li et al., 2019). Consistent with these observations, we found that suppression of AKT by siRNA or its inhibitors significantly reduced the accumulation of phospho-SP1 in the nucleus, but markedly promoted the nuclear translocation of HNF4\u03b1 (Figure 5H\u2013K). Taken together, these findings suggest that the down-regulation of ACE2 expression by colchicine is contingent upon the inhibition of the PI3K/AKT signaling pathway, which, in turn, modulates the transcriptional activities of SP1 and HNF4\u03b1.\n\n### Inhibition of SP1 reduces viral load and damage to the respiratory and renal systems\n\nWe tested whether inhibition of SP1 by colchicine and MithA inhibits the replication of SARS-CoV-2 in vivo using Syrian hamsters (Mesocricetus auratus), an animal model used for the study of COVID-19 pneumonia and therapeutic evaluation (Chan et al., 2020; Choudhary et al., 2022; Mu\u00f1oz-Fontela et al., 2020; Rosenke et al., 2021; Sia et al., 2020). These hamsters were intranasally infected with SARS-CoV-2 at a 50% tissue culture infectious dose (TCID50) of 104. After 1 hr, the hamsters were inoculated intraperitoneally with colchicine or MithA at 0.2 mg/kg, respectively. A mock group was treated with vehicle (1% DMSO and 99% saline) using the same route and timing (Figure 6\u2014figure supplement 1). The animals were dosed every 24 hr with either colchicine or MithA at 0.2 mg/kg, respectively. Lung and tracheal samples were collected at 3 days post-infection (dpi) to assess viral RNA and ACE2 expression. Immunofluorescence analysis demonstrated that the expression of ACE2 was significantly up-regulated in the lungs and trachea of hamsters infected with SARS-CoV-2 compared to the non-infected control group (Figure 6A; Figure 6\u2014figure supplement 2A, B). However, colchicine or MithA treatment substantially inhibited the expression of ACE2 in both the lungs and trachea of hamsters infected with SARS-CoV-2. Based on immunofluorescence analysis of SARS-CoV-2 nucleocapsid and RT-qPCR, treatment with colchicine or MithA reduced viral replication in both the lungs and trachea of hamsters (Figure 6B\u2013D; Figure 6\u2014figure supplement 2C, D), respectively.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/85985/elife-85985-fig6-v1.jpg)\n\n**Figure 6.:** (A) Treatment with colchicine or MithA inhibited ACE2 expression in lung and trachea of hamsters infected with SARS-CoV-2. Representative images of immunofluorescence staining of ACE2 in lung and trachea of hamsters. Parts on right side are high-power images. Scale bar: 20 \u03bcm. (B) Treatment with colchicine or MithA inhibited replication of SARS-CoV-2 in lung and trachea of hamsters. Representative images of immunofluorescence staining of SARS-CoV-2-N and p-SP1 in lung and trachea of hamsters. Parts on right side are high-power images. Scale bar: 20 \u03bcm. Viral loads of SARS-CoV-2 were measured in lung (C) and trachea (D) of hamsters by RT-qPCR (n=5 each group). Error bars show means \u00b1 SD. *p<0.05, **p<0.01 (Student\u2019s t-test). (E\u2013H) Supplementation with colchicine or MithA attenuated histopathological damage in lung of hamsters infected with SARS-CoV-2. Representative images of H&E staining in lung of hamsters infected with SARS-CoV-2 at 3 dpi (E). Bronchial epithelial cell necrosis and pyknosis (black arrow), edema, loose arrangement of muscle fibers, and massive lymphocyte infiltration (blue arrow), extensive hemorrhage (green arrow), and alveolar wall thickening (yellow arrow). Parts on lower side are high-power images of black and blue arrows, respectively. Scale bar: 40 \u03bcm. Representative images of Masson staining in lung of hamsters infected with SARS-CoV-2 at 3 dpi (F). Scale bar: 40 \u03bcm. Summary of lung lesion scoring in different groups at 3 dpi (n=5 each group) (G). Error bars show means \u00b1 SD. **p<0.01 (Student\u2019s t-test). Quantitative analysis of fibrotic area in lung tissues (H). Error bars show means \u00b1 SD. **p<0.01 (Student\u2019s t-test). Ctrl, Control. Veh, Vehicle. Col, Colchicine. nCoV-2, SARS-CoV-2.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/85985/elife-85985-fig6-figsupp1-v1.jpg)\n\n**Figure 6\u2014figure supplement 1.:** On day 0 of SARS-CoV-2 infection in Syrian hamsters, colchicine and MithA were injected intraperitoneally at doses of 0.2 mg/kg/day. According to different groups, drugs were injected up to 3 dpi. Uninfected and placebo groups were given the same dose of vehicle daily. Five animals in each group were euthanized at 3 dpi.\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/85985/elife-85985-fig6-figsupp2-v1.jpg)\n\n**Figure 6\u2014figure supplement 2.:** (A and B) Quantification of ACE2 fluorescence intensity in both lung (A) and trachea (B) of hamsters. Error bars show means \u00b1 SD. **p<0.01, ***p<0.001 (Student\u2019s t-test). (C and D) Quantification of SARS-CoV-2-N fluorescence intensity in both lung (C) and trachea (D) of hamsters. Error bars show means \u00b1 SD. *p<0.05, **p<0.01, ***p<0.001 (Student\u2019s t-test). Quantification of p-SP1 fluorescence intensity in both lung (E) and trachea (F) of hamsters. Error bars show means \u00b1 SD. *p<0.05, **p<0.01, ***p<0.001 (Student\u2019s t-test). Ctrl, Control. Veh, Vehicle. Col, Colchicine. nCoV-2, SARS-CoV-2.\n\nSubsequent histopathological analysis of lung tissues 3 dpi revealed a range of pulmonary abnormalities, including bronchial epithelial cell necrosis and nuclear pyknosis, extensive alveolar hemorrhage, marked infiltration of inflammatory cells, significant edema, and notably thickened alveolar walls (Figure 6E, G). Although similar pathological features were present, their severity was markedly reduced in the treatment groups compared to the mock group. Using Masson\u2019s trichrome staining, collagen deposition indicative of fibrosis was evident in the lungs of infected hamsters (Figure 6F, H). Of note, treatment with either colchicine or MithA effectively reversed lung fibrosis. These findings suggest that colchicine and MithA antagonize SARS-CoV-2 replication in the lung and trachea while also ameliorating associated histopathological damage.\n\nAlthough acute kidney injury associated with severe SARS-CoV-2 serves as an independent risk factor for in-hospital death in patients (Nadim et al., 2020), whether SARS-CoV-2 directly infects the kidney remains unclear (Smith and Akilesh, 2021; Wysocki et al., 2021). Prevailing evidence appears to favor indirect kidney injury by SARS-CoV-2 (Smith and Akilesh, 2021). Here, immunofluorescence analysis detected the substantial presence of SARS-CoV-2 in the kidneys of infected hamsters, an effect markedly mitigated by colchicine or MithA treatment (Figure 7A, B). Further analysis also showed that both drugs effectively down-regulated ACE2 expression (Figure 7C, D). Histopathological evaluation showed significant renal damage in SARS-CoV-2-infected hamsters, including renal tubular epithelial cell nuclear pyknosis, brush border disappearance, renal interstitial vascular congestion, inflammatory cell infiltration, and glomerular atrophy (Figure 7E, F). In the drug-treated hamsters, however, the glomeruli displayed uniform distribution and intact structure, tubular epithelial cells appeared normal, and brush borders showed neat arrangement, with no evident abnormality in the renal medulla or obvious hyperplasia in the renal interstitium. Collectively, these findings underscore the therapeutic efficacy of colchicine and MithA in ameliorating renal histopathological alterations.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/85985/elife-85985-fig7-v1.jpg)\n\n**Figure 7.:** (A and B) Treatment with colchicine or MithA inhibited SARS-CoV-2 replication in kidney of hamsters. Representative images of immunofluorescence staining of SARS-CoV-2-N in kidney of hamsters (A). Parts on right side are high-power images. Scale bar: 20 \u03bcm. Quantification of SARS-CoV-2-N fluorescence intensity in kidney of hamsters (B). Error bars show means \u00b1 SD. **p<0.01, ***p<0.001 (Student\u2019s t-test). (C and D) Treatment with colchicine or MithA inhibited ACE2 expression in kidney of hamsters infected with SARS-CoV-2. Representative images of immunofluorescence staining of ACE2 in kidney of hamsters (C). Parts on right side are high-power images. Scale bar: 20 \u03bcm. Quantification of ACE2 fluorescence intensity in kidney of hamsters (D). Error bars show means \u00b1 SD. *p<0.05, **p<0.01 (Student\u2019s t-test). (E and F) Supplementation with colchicine or MithA attenuated histopathological damage in kidney of hamsters infected with SARS-CoV-2. Representative images of H&E staining in kidney of hamsters infected with SARS-CoV-2 at 3 dpi (E). Histopathology of kidney showed renal interstitial vascular congestion (black arrow), renal tubular epithelial cell nuclear pyknosis (red arrow), brush border disappearance (green arrow), renal interstitial inflammatory cell infiltration (blue arrow), and glomerular atrophy (yellow arrow). Parts on lower side are high-power images of red, green, and blue arrows, respectively. Scale bar: 40 \u03bcm. Summary of kidney lesion scoring in different groups at 3 dpi (n=5 each group) (F). Error bars show means \u00b1 SD. *p<0.05, **p<0.01 (Student\u2019s t-test). Ctrl, Control. Veh, Vehicle. Col, Colchicine. nCoV-2, SARS-CoV-2.\n\n## Discussion\n\nBased on our study and current understanding of SARS-CoV-2 infection, a mechanistic model is proposed regarding how SARS-CoV-2 infection induces ACE2 expression via two transcription factors, SP1 and HNF4\u03b1, in host cells. Under physiological conditions, SP1 is primarily localized in the nucleus, while HNF4\u03b1 exhibits a dual distribution in the nucleus and cytoplasm. These transcription factors exert opposing effects on the regulation of ACE2 expression, thereby maintaining basal expression of ACE2. Upon infection by SARS-CoV-2, the PI3K/AKT signaling pathway becomes activated (Klann et al., 2020). This activation subsequently promotes the transcriptional activity of SP1 through increased phosphorylation in the nucleus and suppresses the transcriptional activity of HNF4\u03b1 by inducing its translocation to the cytoplasm. Disruption of this balance leads to the up-regulation of ACE2 after viral infection. Given that ACE2 serves as the entry receptor for SARS-CoV-2, induction of ACE2 expression may represent a strategic adaptation of the virus to facilitate its own propagation.\n\nRecent advances in multi-omics approaches have facilitated our understanding of host responses to SARS-CoV-2, thereby accelerating the development and repositioning of therapeutic agents against COVID-19 (Chu et al., 2021; Ho et al., 2021; Kamel et al., 2021; Klann et al., 2020; Lu et al., 2022). Phosphoproteomic analysis of SARS-CoV-2-infected cells has revealed the activation of the growth factor receptor (GFR) and its downstream pathways, including the RAF/MEK/ERK MAPK and PI3K/AKT/mTOR signaling pathways, in SARS-CoV-2-infected cells (Klann et al., 2020). Blockage of the GFR signaling pathway via application of prominent anti-cancer drugs, such as sorafenib (RAF inhibitor), RO5126766 (dual RAF/MEK inhibitor), pictilisib (PI3K inhibitor), and omipalisib (dual PI3K and mTOR inhibitor), effectively prevents SARS-CoV-2 replication in cellular models. Here, through screening 45 signaling pathways in SARS-CoV-2-infected HPAEpiCs, either in the presence or absence of colchicine, our study elucidated the opposite regulatory roles of two transcription factors, SP1 and HNF4\u03b1, in the modulation of ACE2 expression at the transcriptional level, which exerted positive and negative regulatory effects, respectively. Notably, our findings indicated that the PI3K/AKT signaling cascade, activated following SARS-CoV-2 infection (Klann et al., 2020), served as a crucial regulatory node in the induction of ACE2 expression by enhancing and reducing the transcriptional activities of SP1 and HNF4\u03b1, respectively.\n\nOur findings also showed that inhibition of SP1 activity, leading to the down-regulation of ACE2 expression, effectively mitigated SARS-CoV-2 replication in the lung and trachea of Syrian hamsters. Importantly, this decrease in viral replication was associated with a marked reduction in lung pathology. In addition to lung-associated issues, acute kidney injury has also been identified as an extrapulmonary manifestation of severe COVID-19 (Legrand et al., 2021), although the direct causal association between SARS-CoV-2 infection and acute kidney injury remains controversial (Legrand et al., 2021; Smith and Akilesh, 2021). Recent evidence has indicated that SARS-CoV-2 can directly infect kidney cells in human-induced pluripotent stem cell-derived kidney organoids (Jansen et al., 2022). Consistent with these findings, we found that colchicine treatment effectively suppressed ACE2 expression in the proximal kidney tubule, which was associated with diminished SARS-CoV-2-induced kidney injury in Syrian hamsters. These results support ACE2 as a promising therapeutic target against COVID-19 (Monteil et al., 2020). Notably, proxalutamide, a potent androgen receptor antagonist, has been shown to suppress androgen-induced ACE2 expression (Qiao et al., 2021). Moreover, RIPK1 inhibition has been found to reduce viral loads in SARS-CoV-2-infected human lung organoids, accompanied by a down-regulation in the transcriptional induction of ACE2 (Xu et al., 2021a). A recent study also demonstrated that inhibition of FXR activity via UDCA can lead to the down-regulation of ACE2 expression, consequently reducing SARS-CoV-2 infection in vitro, in vivo, and ex vivo (Brevini et al., 2023).\n\nIn further examination of ACE2 expression, an unexpected observation emerged. Notably, inhibition of SP1 by its inhibitor MithA induced nuclear accumulation of HNF4\u03b1, whereas inhibition of HNF4\u03b1 by its antagonist BI6015 increased phosphorylation levels of SP1 in the nucleus. Further exploration is warranted to elucidate the mechanisms underlying the antagonistic interactions between the two transcription factors. Although the established role of MithA is to disrupt the binding of SP1 to its consensus site (Lee et al., 2011), it is also capable of inducing proteasome-dependent SP1 degradation (Choi et al., 2014; Lee et al., 2012). This may explain why MithA treatment significantly suppressed the phosphorylation of SP1 in our study. Similarly, BI6015, known to repress the DNA-binding activity HNF4\u03b1 (Kiselyuk et al., 2012), can also diminish HNF4\u03b1 expression. This may provide a ready explanation of our observation that BI6015 could reduce nuclear accumulation of HNF4\u03b1 induced by colchicine. Our results demonstrated that non-phosphorylated SP1 interacted with HNF4\u03b1 and potentially inhibited the phosphorylation of SP1. Notably, upon reduction of HNF4\u03b1 protein levels by BI6015, SP1 was released and subsequently phosphorylated by AKT, resulting in the binding of phosphorylated SP1 to the GC box and subsequent up-regulation of ACE2 expression. Conversely, upon reduction of SP1 protein levels by MithA, HNF4\u03b1 was released, which inhibited ACE2 expression by binding to the HNF4\u03b1-specific binding motif. These observations enhance our understanding of the counteracting transcriptional activities between SP1 and HNF4\u03b1. However, additional research is needed to elucidate these mechanisms, particularly in the context of current findings.\n\nThis study has several limitations. Firstly, although SP1 was identified as a pivotal transcription factor in modulating ACE2 expression via the action of colchicine and MithA, neither of these compounds currently qualify as a candidate for the treatment of COVID-19. Primarily used to treat several types of cancer, including testicular cancer (Kennedy and Torkelson, 1995) and myeloid leukemia (Dutcher et al., 1997), the clinical application of MithA is substantially limited by its range of adverse effects, including liver, kidney, gastrointestinal, and bone marrow toxicity (Green and Donehower, 1984; Kennedy, 1970; Quarni et al., 2019). Additionally, the efficacy of colchicine as a treatment for COVID-19 remains inconclusive. While some studies suggest benefits (Chiu et al., 2021; Drosos et al., 2022; Elshafei et al., 2021), others indicate negligible impact on mortality or disease progression (RECOVERY Collaborative Group, 2021; Mikolajewska et al., 2021). Secondly, although inhibition of SP1 phosphorylation in Syrian hamsters was shown to effectively reduce viral replication and inflammatory responses, these effects need to be further evaluated in other model animals, such as ferrets and non-human primates (Shi et al., 2020).\n\nIncreased ACE2 expression in respiratory and pulmonary tissues has been implicated in the exacerbation of COVID-19 symptom severity among elderly individuals (Inde et al., 2021). Importantly, the Omicron variant of SARS-CoV-2, the current dominant global strain, exhibits a spike protein with a six- to nine-fold enhanced binding affinity for ACE2 (Yin et al., 2022). Thus, our observations have the potential to inform the development of novel host-targeting strategies to combat COVID-19, particularly in elderly populations affected by the SARS-CoV-2 Omicron variant.\n\n## Materials and methods\n\n### Cell culture\n\nImmortalized human alveolar epithelial cells (HPAEpiCs) were generated from human lung tissue type II pneumocytes purchased from the ScienCell Research Laboratory (San Diego, CA, USA) and maintained in RPMI 1640 medium (01-100-1ACS, Biological Industries, Israel) supplemented with 10% fetal bovine serum (FBS) (C04001\u2212050X10, VivaCell, Shanghai, China) and 1% penicillin-streptomycin. A549 cells were maintained in Dulbecco\u2019s Modified Eagle Medium-Nutrient Mixture F12 (DMEM/F12) (C3130-0500, VivaCell) containing 10% FBS and 1% penicillin-streptomycin. All cells were cultured in 5% CO2, 95% air incubator at 37 \u00b0C.\n\nThe HPAEpiCs and A549 cells were treated with colchicine (C804812, Macklin, Shanghai, China), mithramycin A (MithA, A600668, Sangon Biotech, Shanghai, China), BI6015 (HY-108469, Med Chem Express, Shanghai, China), LY294002 (HY-10108, Med Chem Express), or wortmannin (HY-10197, Med Chem Express). Dimethyl sulfoxide (DMSO) was used as a control. Cells were infected with SARS-CoV-2 at a multiplicity of infection (MOI) of 1 for 1 hr.\n\n### SARS-CoV-2\n\nThe SARS-CoV-2 strain (accession number: NMDCN0000HUI) was provided by the Guangdong Provincial Center for Disease Control and Prevention (Guangzhou, China). The virus was propagated in African green monkey kidney epithelial cells (Vero-E6) (ATCC, No. 1586) and titrated. All infection experiments were performed in a Biosafety Level-3 (BLS-3) Laboratory.\n\n### Half-maximal effect concentration (EC50)\n\nThe HPAEpiCs were seeded at a density of 1.6\u00d7104 cells/well in 48-well plates and grown overnight at 37 \u00b0C. The cells were infected with SARS-CoV-2 at an MOI of 1 and the test compounds were added to the wells at different concentrations. After 1 hr of incubation at 37 \u00b0C, the virus-drug mixture was removed and washed three times with phosphate-buffered saline (PBS) to eliminate free virus, before being replenished with fresh medium containing the compounds. After 48 hr, the supernatants were collected to extract viral RNA for RT-qPCR analysis. The EC50 values were calculated using a dose-response model in GraphPad Prism v8.0 (GraphPad Software Inc, La Jolla, CA, USA).\n\n### Cellular antiviral activity assay\n\nThe HPAEpiCs were seeded at a density of 4\u00d7105 cells/well in 24-well plates and grown overnight at 37 \u00b0C. Following preincubation with the test compounds for 2 hr, the cells were infected with SARS-CoV-2 at an MOI of 1. After 1 hr of incubation at 37 \u00b0C, the virus-drug mixtures were replaced with fresh medium containing compounds. After 24 hr, the cells were collected to extract total RNA and total cell protein. Viral RNA was quantified using a Thunderbird Probe One-step RT-qPCR Kit (QRZ-101, Toyobo, Shanghai, China). The TaqMan primers used for SARS-CoV-2 were 5\u2019-GGG GAA CTT CTC CTG CTA GAA T-3\u2019 and 5\u2019-CAG ACA TTT TGC TCT CAA GCT G-3\u2019 with SARS-CoV-2 probe FAM-TTG CTG CTG CTT GAC AGA TT-TAMRA-3\u2019.\n\n### RT-qPCR\n\nTotal RNA was extracted from trachea and lung tissues using RNAiso Plus (Takara, Dalian, China). Total RNA was extracted from cells using TRIzol Reagent (R1100, Solarbio, Shanghai, China), and reverse-transcribed into cDNA using a FastKing RT Kit (KR116, TIANGEN, Beijing, China). RT-qPCR analysis was performed using SuperReal PreMix Plus (SYBR Green) (FP205, TIANGEN) on a Roche LightCycler 480 System (Roche Applied Science, Mannheim, Germany). The primers used for RT-qPCR were: ACE2 (Forward 5\u2019-GGG ATC AGA GAT CGG AAG AAG AAA-3\u2019; Reverse 5\u2019-AGG AGG TCT GAA CAT CAT CAG TG-3\u2019); ACTB (Forward 5\u2019-CCC TGG ACT TCG AGC AAG AG-3\u2019; Reverse 5\u2019-ACT CCA TGC CCA GGA AGG AA-3\u2019). Beta-actin was used to calculate relative expression normalized to an internal control.\n\n### 45-Pathway Reporter Array\n\nCignal Finder 45-Pathway Reporter Arrays (CCA-901, Qiagen, Hilden, Germany) were used according to the manufacturer\u2019s instructions to identify potential pathways regulated by SARS-CoV-2. Briefly, HPAEpiCs were reverse transfected with firefly luciferase reporter constructs containing response elements for the indicated pathways, and with control Renilla luciferase constructs for 24 hr. Cells were then pretreated with colchicine for 2 hr and incubated with SARS-CoV-2 for 24 hr. Luciferase activities of the cells were then measured using a dual-luciferase reporter assay system (E1910, Promega) on a fluorescent microplate reader (Molecular Devices Inc). Reporter luciferase activity was normalized to Renilla luciferase activity for each sample. All experiments were performed with three biological replicates.\n\n### Immunofluorescence\n\nCells were fixed with 4% paraformaldehyde (PFA) for 10 min at room temperature. Paraformaldehyde-fixed, paraffin-embedded tissue samples was cut into 4 \u03bcm slices and adhered to frosted glass slides. After washing with PBS and treating with PBS containing 0.1% Triton X-100 for 15 min, the sections and cells were permeabilized and blocked with 0.1% Tween-20 in PBS (PBST) containing 5% FBS for 90 min at room temperature. The cells were immunostained with anti-ACE2 (ab15348, 1:500, Abcam), anti-SP1 (T453) (ab59257, 1:500, Abcam), or anti-HNF4\u03b1 antibodies (3113, 1:1\u202f000, Cell Signaling Technology) overnight at 4 \u00b0C. The tissue sections were immunostained with anti-ACE2 (GB11267, 1:200, Servicebio, Wuhan, China) or anti-SARS-CoV-2-N antibodies (40143-MM05, 1:500, SinoBiological, Beijing, China) overnight at 4 \u00b0C. After washing three times with 0.1% Tween-20 in PBS (PBST), the cells were incubated with Alexa Fluor 594 anti-rabbit IgG (H+L) (A-21207, 1:200, ThermoFisher Scientific), Cy3 conjugated goat anti-mouse IgG (H+L) (GB21301, 1:300, Servicebio), or Alexa Fluor 488-conjugated goat anti-rabbit IgG (H+L) (GB25303, 1:500, Servicebio) at room temperature for 1 hr. After staining with primary antibodies, nuclei were counterstained with 4\u2019,6-diamidino-2-phenylindole (DAPI). Images were acquired using a Zeiss Axioskop 2 plus fluorescence microscope (Carl Zeiss, Jena, Germany).\n\n### Luciferase reporter assay\n\nThe HPAEpiCs were co-transfected at a density of 3\u00d7103 with pRL-SV40 vector and phACE2-promoter-TA-luc (D2488, Beyotime) using Lipofectamine 3000 reagent (L3000015, Invitrogen). After 48 hr of transfection, luciferase activity was measured using the dual\u2010luciferase reporter assay system (E1910, Promega, Shanghai, China) on a fluorescent microplate reader (Molecular Devices Inc, Sunnyvale, CA, USA). The ratio of firefly luciferase to Renilla luciferase was calculated for each experiment and averaged from three replicates. All experiments were performed with three biological replicates.\n\n### Transcription factor binding motif enrichment\n\nThe ACE2 promoter sequence (1\u202f500 bp upstream of TSS) was extracted from the NCBI database. The DNA-binding motifs of transcription factors estrogen receptor GATA6, HNF4\u03b1, NF-\u03baB, and SP1 were obtained from the JASPAR CORE database (genereg.net). MEME Suite (meme-suite.org) was used to determine the enrichment of the transcription factor motifs and binding sites in the ACE2 promoter sequence (Bailey et al., 2015). FIMO analysis was performed using stringent criteria, including p<1E-4 and a maximum of two mismatched residues.\n\n### ChIP-qPCR\n\nChIP was performed as described previously (Tao et al., 2016) using a ChIP assay kit (P2078, Beyotime) following the manufacturer\u2019s directions. After crosslinking with formaldehyde, the chromatin solutions were sonicated and incubated with anti-SP1 (9389, 1:100, Cell Signaling Technology) and anti-HNF4\u03b1 (ab181604, 1:100, Abcam) antibodies and control IgG, then rotated overnight at 4 \u00b0C, respectively. After purification using a DNA purification kit (BioTeke Corp.), the immunoprecipitated DNA was detected for PCR analysis. All ChIP-qPCR experiments were performed with three biological replicates.\n\n### RNA interference for cells\n\nAll chemically synthesized siRNAs were obtained from the Gene-Pharma Corporation (Shanghai, China). To silence HNF4\u03b1, SP1, or AKT expression by siRNA, HPAEpiCs were seeded at a density of 5\u00d7105 cells/well in six-well plates containing complete culture medium. After 24 hr, the cells were transiently transfected with 100 nM of siRNAs using Lipofectamine 3000 (L3000015, Invitrogen, Beijing, China). Gene silencing efficiency was confirmed by RT-qPCR at 48 hr post-transfection. The following siRNAs were used (sense strand sequences): HNF4\u03b1, 5\u2019-GUC AUC GUU GCC AAC ACA AUG-3\u2019; SP1, 5\u2019-CUC CAA GGC CUG GCU AAU AAU-3\u2019; AKT, 5\u2019-CGC GUG ACC AUG AAC GAG UUU-3\u2019; negative control, 5\u2019-UUC UCC GAA CGU GUC ACG UUU-3\u2019.\n\n### Co-immunoprecipitation (co-IP)\n\nFor the co-IP experiments, HPAEpiCs were lysed on ice for 30 min in cell lysis buffer (P0013, Beyotime, Shanghai, China). After centrifugation at 12,000 rpm for 30 min at 4 \u00b0C, the supernatant was collected and incubated with anti-HNF4\u03b1 antibodies (ab181604, 1:70, Abcam, Shanghai, China) overnight. After 4 hr of incubation with Protein A Agarose (20333, Thermo Scientific, Shanghai, China) at 4 \u00b0C, the complexes were washed three times. Immunoblotting was performed after elution.\n\n### Western blotting\n\nFor measurement of protein expression, HPAEpiCs were re-suspended in RIPA buffer (R0278, Sigma-Aldrich, Shanghai, China) on ice for 1 hr. The protein samples were separated using sodium dodecyl-sulfate polyacrylamide gel electrophoresis (SDS-PAGE), then transferred to polyvinylidene fluoride (PVDF) membranes. After blocking with 5% bovine serum albumin (BSA) in PBS-T buffer containing 0.05% Tween-20, the membranes were incubated at 4 \u00b0C overnight with primary antibodies, including anti-ACE2 (ab108252, 1:1\u202f000, Abcam), anti-HNF4\u03b1 (ab181604, 1:1\u202f000, Abcam), anti-phospho-AKT (Thr308) (13038, 1:1\u202f000, Cell Signaling Technology, Shanghai, China), anti-phospho-AKT (Ser473) (4060, 1:1\u202f000, Cell Signaling Technology), anti-pan-AKT (4691, 1:1\u202f000, Cell Signaling Technology), anti-phospho-SP1 (T453) (ab59257, 1:1\u202f000, Abcam), and anti-Actin antibodies (sc-47778, 1:5\u202f000, Santa Cruz-Biotechnology, Shanghai, China). After washing with PBS-T, the membranes were incubated for 2 hr at room temperature with horseradish peroxidase (HRP)-conjugated anti-mouse (7076, 1:2\u202f000, Cell Signaling Technology) or anti-rabbit IgG secondary antibodies (7074, 1:2\u202f000, Cell Signaling Technology). Protein bands were detected using ECL (RPN2232, GE Healthcare, Little Chalfont, UK) on an Amersham Imager 600. Subsequent image analysis was performed using ImageJ software. All experiments were performed with three biological replicates.\n\n### Animal experiments and in vivo procedures\n\nMale Syrian hamsters (Mesocricetus auratus) were purchased from Beijing Vital River Laboratory Animal Technology Co., Ltd. (China) (85\u2013100 g, 5 weeks old). All animals used were chosen randomly. Colchicine (C804812, Macklin, Shanghai, China) and MithA (A600668, Sangon Biotech, Shanghai, China) were dissolved in 1% (v/v) DMSO and 99% saline. The hamsters were anesthetized by inhalation of isoflurane and infected with 104 TCID50 of SARS-CoV-2 by intranasal instillation. After 1 hr, 0.2 mg/kg of either colchicine or MithA was given intraperitoneally once daily. Trachea, lung, and kidney tissues were collected 3 dpi.\n\n### Hematoxylin and eosin (H&E) staining and histopathology scores\n\nLung, trachea, and kidney samples were collected from the Syrian hamsters, then fixed with 4% paraformaldehyde, embedded in paraffin, and sectioned (4 \u03bcm thick). The tissue sections were then stained with H&E for histopathological examination. After staining, a four-point scoring system was applied to assess the severity of pathology in tissues, evaluated by a trained pathologist (L.-Q.W.) blind to group identity. Scoring was graded from 0, indicating no pathological change, to 1\u20134, indicating increasing severity. Lung histopathological scores were assessed based on alveolar wall thickening, edema, hemorrhage, and inflammatory cell infiltration. Kidney histopathological scores were assessed based on cellular degeneration, necrosis, hemorrhage, inflammatory cell infiltration, and congestion. Histopathological scores represented the sum of the injury subtype scores for each condition on a 0\u201320 scale.\n\n### Statistical analysis\n\nDifferences in gene expression, mRNA and protein levels, viral RNA, Luciferase reporter assay, ChIP-qPCR assay, and fluorescence intensity were assessed by Student\u2019s t-test. Data were analyzed using GraphPad Prism v8 (GraphPad Software Inc, La Jolla, CA, USA).\n",
+      "created_at": "2025-12-04T04:19:02.011116Z"
+    },
+    {
+      "id": "b585bfe9-f96c-4708-b37c-41f2621930b1",
+      "submission_id": "1544bbb3-c754-4c1d-97d8-41f29d1acde5",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Frank L van de Veerdonk, https://ror.org/05wg1m734 Radboud University Nijmegen Medical Centre Netherlands\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.85985.sa0](https://doi.org/10.7554/eLife.85985.sa0)\n\nThis is a valuable report that describes that ACE2 expression is upregulated by SARS-CoV-2 infection via activation of transcription factor Sp1 and inhibition of HNF4\u03b1 through the PI3K/AKT pathway. Inhibition of Sp1 reduces SARS-CoV-2 infection in vitro and in an animal model. This work is solid and will be of interest to those interested in ACE2 biology and its impact in COVID-19.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Frank L van de Veerdonk, https://ror.org/05wg1m734 Radboud University Nijmegen Medical Centre Netherlands\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.85985.sa1](https://doi.org/10.7554/eLife.85985.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Transcription regulation of SARS-CoV-2 receptor ACE2 by Sp1: a potential therapeutic target\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Jos van der Meer as the Senior Editor.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nReviewer #1 (Recommendations for the authors):\n\nLanguage: I suggest moderate changes to the English language.\n\nLine 103: Colchicine is used for more than just acute gout and familial Mediterranean fever. More correct would be to write \"used for the treatment of (auto-)inflammatory disorders such as acute gout or familial Mediterranean fever\"\n\nFigure 2C: For the experiment carried out for Figure 2C, we should know whether cells not infected by SARS-CoV-2 but that are merely in the vicinity of infected cells also express increased p-Sp1. If only cells with active infection of SARS-CoV-2 express increased p-Sp1, this would not add to the spread of the infection (as these cells are already infected). Please add similar experiments in which SARS-CoV-2 virus is also stained (be it by RNAscope or by protein staining).\n\nDiscussion: The discussion lacks a \"limitations\" section, please add this.\n\nReviewer #2 (Recommendations for the authors):\n\nThe authors sought to identify the transcription factors that regulate ACE2 expression. The phenotype of Sp1 and HNF4\u03b1 was mild in the study, and direct evidence that shows PI3K/AKT inhibitors work through Sp1 was lacking.\n\nSp1 inhibitor was used to demonstrate the antiviral activity in vivo. It would be more convincing to have genetic data besides pharmacological inhibitors due to specificity concerns.\n",
+      "created_at": "2025-12-04T04:19:02.011116Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T04:19:02.011116Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T04:19:02.011116Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "ac3eb0c0-f24b-4b86-b212-97bc2ed8302b",
+      "content_id": "ba457033-bbb9-40bf-afa9-792a8959015d",
+      "claim_id": "C1",
+      "claim": "ACE2 is a major cell entry receptor for SARS-CoV-2",
+      "claim_type": "EXPLICIT",
+      "source": "Angiotensin-converting enzyme 2 (ACE2) is a major cell entry receptor for severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the abstract and is supported by citations in the introduction",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:19:02.011116Z"
+    },
+    {
+      "id": "ba8bd5af-458f-467b-a649-815cd126750c",
+      "content_id": "ba457033-bbb9-40bf-afa9-792a8959015d",
+      "claim_id": "C2",
+      "claim": "Using 45 different luciferase reporters, the transcription factors SP1 and HNF4\u03b1 were found to positively and negatively regulate ACE2 expression, respectively, at the transcriptional level in human lung epithelial cells (HPAEpiCs)",
+      "claim_type": "EXPLICIT",
+      "source": "Using 45 different luciferase reporters, the transcription factors SP1 and HNF4\u03b1 were found to positively and negatively regulate ACE2 expression, respectively, at the transcriptional level in human lung epithelial cells (HPAEpiCs).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This finding is based on experimental data using the Cignal Finder 45-Pathway Reporter Array as described in the methods and results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:19:02.011116Z"
+    },
+    {
+      "id": "296be5e6-e94a-4216-adf8-8503b30c76bf",
+      "content_id": "ba457033-bbb9-40bf-afa9-792a8959015d",
+      "claim_id": "C3",
+      "claim": "SARS-CoV-2 infection increased the transcriptional activity of SP1 while inhibiting that of HNF4\u03b1",
+      "claim_type": "EXPLICIT",
+      "source": "SARS-CoV-2 infection increased the transcriptional activity of SP1 while inhibiting that of HNF4\u03b1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data showing increased SP1 phosphorylation and cytoplasmic translocation of HNF4\u03b1 upon SARS-CoV-2 infection",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:19:02.011116Z"
+    },
+    {
+      "id": "efa99003-4c34-4059-bcf9-b1d383c4a88e",
+      "content_id": "ba457033-bbb9-40bf-afa9-792a8959015d",
+      "claim_id": "C4",
+      "claim": "The PI3K/AKT signaling pathway, activated by SARS-CoV-2 infection, served as a crucial regulatory node, inducing ACE2 expression by enhancing SP1 phosphorylation and reducing the nuclear localization of HNF4\u03b1",
+      "claim_type": "EXPLICIT",
+      "source": "The PI3K/AKT signaling pathway, activated by SARS-CoV-2 infection, served as a crucial regulatory node, inducing ACE2 expression by enhancing SP1 phosphorylation\u2014a marker of its activity\u2014and reducing the nuclear localization of HNF4\u03b1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data showing AKT phosphorylation upon SARS-CoV-2 infection and effects of PI3K inhibitors on ACE2 expression",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:19:02.011116Z"
+    },
+    {
+      "id": "38455ed4-f532-4279-b3b2-c1d2886f9f8f",
+      "content_id": "ba457033-bbb9-40bf-afa9-792a8959015d",
+      "claim_id": "C5",
+      "claim": "Colchicine treatment inhibited the PI3K/AKT signaling pathway, thereby suppressing ACE2 expression",
+      "claim_type": "EXPLICIT",
+      "source": "However, colchicine treatment inhibited the PI3K/AKT signaling pathway, thereby suppressing ACE2 expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data showing reduced AKT phosphorylation and ACE2 expression upon colchicine treatment",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:19:02.011116Z"
+    },
+    {
+      "id": "ce0d1944-6552-4b78-a3c9-d2eb079d6516",
+      "content_id": "ba457033-bbb9-40bf-afa9-792a8959015d",
+      "claim_id": "C6",
+      "claim": "In Syrian hamsters infected with SARS-CoV-2, inhibition of SP1 by either mithramycin A or colchicine resulted in reduced viral replication and tissue injury",
+      "claim_type": "EXPLICIT",
+      "source": "In Syrian hamsters (Mesocricetus auratus) infected with SARS-CoV-2, inhibition of SP1 by either mithramycin A or colchicine resulted in reduced viral replication and tissue injury.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by in vivo experimental data in Syrian hamsters showing reduced viral loads and histopathological damage",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:19:02.011116Z"
+    },
+    {
+      "id": "86586814-6f05-4522-b9f6-34b88f509bd8",
+      "content_id": "ba457033-bbb9-40bf-afa9-792a8959015d",
+      "claim_id": "C7",
+      "claim": "SARS-CoV-2 is the causative pathogen of the coronavirus disease 2019 (COVID-19) pandemic",
+      "claim_type": "EXPLICIT",
+      "source": "Severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) is the causative pathogen of the coronavirus disease 2019 (COVID-19) pandemic (Wu et al., 2020; Lu et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:19:02.011116Z"
+    },
+    {
+      "id": "bff507db-83aa-4a67-af0b-c521e74056e0",
+      "content_id": "ba457033-bbb9-40bf-afa9-792a8959015d",
+      "claim_id": "C8",
+      "claim": "Patients with severe COVID-19 often exhibit pathophysiological characteristics related to a systemic inflammatory response, manifesting as acute respiratory distress syndrome and multiorgan dysfunction",
+      "claim_type": "EXPLICIT",
+      "source": "Patients with severe COVID-19 often exhibit pathophysiological characteristics related to a systemic inflammatory response, manifesting as acute respiratory distress syndrome and multiorgan dysfunction (Pan et al., 2021; van Eijk et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:19:02.011116Z"
+    },
+    {
+      "id": "87dd517b-e351-46bf-9334-a443866c5119",
+      "content_id": "ba457033-bbb9-40bf-afa9-792a8959015d",
+      "claim_id": "C9",
+      "claim": "Viral entry into host cells occurs through the binding of the SARS-CoV-2 spike protein to its cellular receptor, angiotensin-converting enzyme 2 (ACE2), followed by proteolytic cleavage of the spike protein via the transmembrane serine protease TMPRSS2",
+      "claim_type": "EXPLICIT",
+      "source": "Viral entry into host cells occurs through the binding of the SARS-CoV-2 spike protein to its cellular receptor, angiotensin-converting enzyme 2 (ACE2), followed by proteolytic cleavage of the spike protein via the transmembrane serine protease TMPRSS2 (Yan et al., 2020), facilitating the fusion of the viral and host cell membranes, a crucial step for viral internalization (Hoffmann et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:19:02.011116Z"
+    },
+    {
+      "id": "623875fc-8f58-4e53-92b4-1d2277779ba4",
+      "content_id": "ba457033-bbb9-40bf-afa9-792a8959015d",
+      "claim_id": "C10",
+      "claim": "ACE2 is widely expressed in different human tissues, including the lungs, small intestine, kidneys, liver, testes, heart, and brain",
+      "claim_type": "EXPLICIT",
+      "source": "ACE2 is widely expressed in different human tissues, including the lungs, small intestine, kidneys, liver, testes, heart, and brain (Dong et al., 2020; Verdecchia et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:19:02.011116Z"
+    },
+    {
+      "id": "e6daf00c-1692-4d96-9848-4388cde8b827",
+      "content_id": "ba457033-bbb9-40bf-afa9-792a8959015d",
+      "claim_id": "C11",
+      "claim": "The widespread expression of ACE2 may account for the multi-organ targeting observed with SARS-CoV-2",
+      "claim_type": "EXPLICIT",
+      "source": "Such widespread expression of ACE2 may account for the multi-organ targeting observed with SARS-CoV-2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the known expression pattern of ACE2 and clinical observations",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:19:02.011116Z"
+    },
+    {
+      "id": "3fe147c1-e95f-48b9-b70d-4d731a2e5a8c",
+      "content_id": "ba457033-bbb9-40bf-afa9-792a8959015d",
+      "claim_id": "C12",
+      "claim": "The efficacy of existing vaccines has shown a marked decline against emergent variants such as Omicron",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the efficacy of existing vaccines has shown a marked decline against emergent variants such as Omicron (Kuhlmann et al., 2022; Wilhelm et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:19:02.011116Z"
+    },
+    {
+      "id": "7bb0138c-cd16-4985-8225-e770c1842abd",
+      "content_id": "ba457033-bbb9-40bf-afa9-792a8959015d",
+      "claim_id": "C13",
+      "claim": "Modifications in the spike protein of SARS-CoV-2 variants have been observed to increase their binding affinity to ACE2, thereby enhancing transmissibility",
+      "claim_type": "EXPLICIT",
+      "source": "Modifications in the spike protein of these variants have been observed to increase their binding affinity to ACE2, thereby enhancing transmissibility (Liu et al., 2021; McCallum et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:19:02.011116Z"
+    },
+    {
+      "id": "5000fe33-ebca-4caf-8cc0-bfa345436d8e",
+      "content_id": "ba457033-bbb9-40bf-afa9-792a8959015d",
+      "claim_id": "C14",
+      "claim": "SARS-CoV-2 infection significantly up-regulates ACE2 expression",
+      "claim_type": "EXPLICIT",
+      "source": "Accumulating evidence suggests that SARS-CoV-2 infection significantly up-regulates ACE2 expression (Gao et al., 2022; Wei et al., 2021; Xu et al., 2021a; Zhuang et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research and confirmed by experimental data in this study",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:19:02.011116Z"
+    },
+    {
+      "id": "6cc97c6f-6cab-4139-8bec-6356f52ae55e",
+      "content_id": "ba457033-bbb9-40bf-afa9-792a8959015d",
+      "claim_id": "C15",
+      "claim": "SARS-CoV-2 infection can increase the expression of HMGB1, which subsequently induces the expression of ACE2, possibly through an epigenetic mechanism",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, SARS-CoV-2 infection can increase the expression of HMGB1, which subsequently induces the expression of ACE2, possibly through an epigenetic mechanism (Wei et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:19:02.011116Z"
+    },
+    {
+      "id": "5309477d-13db-4045-9dc2-cfd52123bf19",
+      "content_id": "ba457033-bbb9-40bf-afa9-792a8959015d",
+      "claim_id": "C16",
+      "claim": "Overexpression of the SARS-CoV-2 spike protein markedly up-regulates ACE2 expression, a process reliant on type I interferon signaling pathways, with ACE2 being identified as an interferon-stimulated gene",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, overexpression of the SARS-CoV-2 spike protein markedly up-regulates ACE2 expression, a process reliant on type I interferon signaling pathways, with ACE2 being identified as an interferon-stimulated gene (Zhou et al., 2021; Ziegler et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:19:02.011116Z"
+    },
+    {
+      "id": "de963136-fb65-4852-b40c-4fcc683843ef",
+      "content_id": "ba457033-bbb9-40bf-afa9-792a8959015d",
+      "claim_id": "C17",
+      "claim": "The androgen receptor positively regulates the expression of ACE2 at the transcriptional level",
+      "claim_type": "EXPLICIT",
+      "source": "Several studies have demonstrated that the androgen receptor positively regulates the expression of ACE2 at the transcriptional level (Qiao et al., 2021; Samuel et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:19:02.011116Z"
+    },
+    {
+      "id": "151eea70-1b78-4195-8bbb-9bcc48e4530e",
+      "content_id": "ba457033-bbb9-40bf-afa9-792a8959015d",
+      "claim_id": "C18",
+      "claim": "Attenuation of ACE2 expression via suppression of the androgen receptor signaling decreases SARS-CoV-2 infectivity",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, attenuation of ACE2 expression via suppression of the androgen receptor signaling decreases SARS-CoV-2 infectivity (Qiao et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:19:02.011116Z"
+    },
+    {
+      "id": "e475f7cb-49bf-423e-b348-81ff35546cb8",
+      "content_id": "ba457033-bbb9-40bf-afa9-792a8959015d",
+      "claim_id": "C19",
+      "claim": "Ursodeoxycholic acid (UDCA), an inhibitor of the farnesoid X receptor (FXR), reduces ACE2 expression in human lung, intestinal, and liver organoids, thereby inhibiting SARS-CoV-2 infection",
+      "claim_type": "EXPLICIT",
+      "source": "Recent research has also demonstrated that ursodeoxycholic acid (UDCA), an inhibitor of the farnesoid X receptor (FXR), reduces ACE2 expression in human lung, intestinal, and liver organoids, thereby inhibiting SARS-CoV-2 infection (Brevini et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:19:02.011116Z"
+    },
+    {
+      "id": "68d2fbd7-c314-4f45-b65b-2f28262003c7",
+      "content_id": "ba457033-bbb9-40bf-afa9-792a8959015d",
+      "claim_id": "C20",
+      "claim": "SARS-CoV-2 infection up-regulated ACE2 protein expression in HPAEpiCs",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with prior studies indicating a significant up-regulation of ACE2 mRNA expression following SARS-CoV-2 infection (Gao et al., 2022; Wei et al., 2021; Xu et al., 2021b; Zhuang et al., 2020), we found that SARS-CoV-2 infection up-regulated ACE2 protein expression in HPAEpiCs, a human lung epithelial cell line (Figure 1A, B), with further corroboration based on immunofluorescence analysis (Figure 1C, D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1 and citations to prior research",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:19:02.011116Z"
+    },
+    {
+      "id": "957e1810-fa68-49f1-acf4-9ea517289556",
+      "content_id": "ba457033-bbb9-40bf-afa9-792a8959015d",
+      "claim_id": "C21",
+      "claim": "Colchicine treatment substantially inhibited ACE2 expression in HPAEpiCs, irrespective of SARS-CoV-2 infection status",
+      "claim_type": "EXPLICIT",
+      "source": "In the present study, we observed that colchicine treatment substantially inhibited ACE2 expression in HPAEpiCs, irrespective of SARS-CoV-2 infection status (Figure 1A\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:19:02.011116Z"
+    },
+    {
+      "id": "338b7362-6113-46c1-a1dc-b7a94fac7a9e",
+      "content_id": "ba457033-bbb9-40bf-afa9-792a8959015d",
+      "claim_id": "C22",
+      "claim": "Colchicine treatment reduced extracellular SARS-CoV-2 replication in HPAEpiCs",
+      "claim_type": "EXPLICIT",
+      "source": "Based on quantitative reverse transcriptase polymerase chain reaction (RT-qPCR), colchicine treatment reduced extracellular SARS-CoV-2 replication in cells (Figure 1\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1\u2014figure supplement 1A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:19:02.011116Z"
+    },
+    {
+      "id": "41f1b031-0db8-460c-a678-e23382b55de0",
+      "content_id": "ba457033-bbb9-40bf-afa9-792a8959015d",
+      "claim_id": "C23",
+      "claim": "The half-maximal effective concentration (EC50) of colchicine for inhibiting viral replication was 0.2703 \u03bcM",
+      "claim_type": "EXPLICIT",
+      "source": "The half-maximal effective concentration (EC50) of colchicine for inhibiting viral replication was 0.2703 \u03bcM (Figure 1\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1\u2014figure supplement 1B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:19:02.011116Z"
+    },
+    {
+      "id": "b331382c-4f6d-46d0-a6a7-1e75139511bf",
+      "content_id": "ba457033-bbb9-40bf-afa9-792a8959015d",
+      "claim_id": "C24",
+      "claim": "Three transcription factors (SP1, NF-\u03baB, and GATA) were enhanced by SARS-CoV-2 infection and suppressed by colchicine treatment",
+      "claim_type": "EXPLICIT",
+      "source": "Among the tested signaling pathways, three transcription factors (SP1, NF-\u03baB, and GATA) enhanced by SARS-CoV-2 infection and suppressed by colchicine treatment (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data from the Cignal Finder 45-Pathway Reporter Array shown in Figure 2A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:19:02.011116Z"
+    },
+    {
+      "id": "16307391-1c6e-42a8-8fc4-923daf0dc0d3",
+      "content_id": "ba457033-bbb9-40bf-afa9-792a8959015d",
+      "claim_id": "C25",
+      "claim": "Two signaling pathways (HNF4\u03b1 and estrogen receptor) were inactivated by SARS-CoV-2 infection but activated by colchicine treatment",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, two signaling pathways (HNF4\u03b1 and estrogen receptor) were inactivated by SARS-CoV-2 infection but activated by colchicine treatment (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data from the Cignal Finder 45-Pathway Reporter Array shown in Figure 2A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:19:02.011116Z"
+    },
+    {
+      "id": "845ae7a7-b326-4dd6-9fb8-11c3da3c2791",
+      "content_id": "ba457033-bbb9-40bf-afa9-792a8959015d",
+      "claim_id": "C26",
+      "claim": "Two significantly enriched motifs were found 1.5 kb upstream of the transcription start site of the ACE2 gene, annotated as the motifs of the transcription factors SP1 (p=6.1e-5) and HNF4\u03b1 (p=4.2e-5)",
+      "claim_type": "EXPLICIT",
+      "source": "Our analysis revealed two significantly enriched motifs (Figure 2B), annotated as the motifs of the transcription factors SP1 (p=6.1e-5) and HNF4\u03b1 (p=4.2e-5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by computational analysis using the MEME program shown in Figure 2B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:19:02.011116Z"
+    },
+    {
+      "id": "29a6c3e8-6b8d-4d39-8f85-368972201f90",
+      "content_id": "ba457033-bbb9-40bf-afa9-792a8959015d",
+      "claim_id": "C27",
+      "claim": "SARS-CoV-2 infection markedly increased the phosphorylation levels of SP1 at Thr453",
+      "claim_type": "EXPLICIT",
+      "source": "SARS-CoV-2 infection markedly increased the phosphorylation levels of SP1 at Thr453, whereas colchicine treatment significantly inhibited the phosphorylation of SP1, regardless of the presence or absence of SARS-CoV-2 infection (Figure 2C, D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunofluorescence data shown in Figure 2C, D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:19:02.011116Z"
+    },
+    {
+      "id": "479fa352-53cf-472b-92df-5d4a27b0c56d",
+      "content_id": "ba457033-bbb9-40bf-afa9-792a8959015d",
+      "claim_id": "C28",
+      "claim": "SARS-CoV-2 infection prompted a redistribution of HNF4\u03b1 from the nucleus to cytoplasm",
+      "claim_type": "EXPLICIT",
+      "source": "SARS-CoV-2 infection prompted a redistribution of HNF4\u03b1 from the nucleus to cytoplasm, while colchicine treatment induced its nuclear accumulation both in the presence and absence of SARS-CoV-2 infection (Figure 2E, F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunofluorescence data shown in Figure 2E, F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:19:02.011116Z"
+    },
+    {
+      "id": "9369a48f-7bea-4c74-b901-54b20fd0c9a7",
+      "content_id": "ba457033-bbb9-40bf-afa9-792a8959015d",
+      "claim_id": "C29",
+      "claim": "Treatment with MithA or knockdown of SP1 by siRNA down-regulated ACE2 protein expression in HPAEpiCs",
+      "claim_type": "EXPLICIT",
+      "source": "First, western blot analysis demonstrated that treatment with MithA, a selective SP1 inhibitor, or knockdown of SP1 by small interfering RNA (siRNA) down-regulated ACE2 protein expression in HPAEpiCs (Figure 3A, B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by western blot data shown in Figure 3A, B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:19:02.011116Z"
+    },
+    {
+      "id": "10365082-87f8-446e-98b9-4bf03e145579",
+      "content_id": "ba457033-bbb9-40bf-afa9-792a8959015d",
+      "claim_id": "C30",
+      "claim": "Treatment with the HNF4\u03b1 antagonist BI6015 and knockdown of HNF4\u03b1 by siRNA up-regulated ACE2 protein expression",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, treatment with the HNF4\u03b1 antagonist BI6015 and knockdown of HNF4\u03b1 by siRNA up-regulated ACE2 protein expression (Figure 3C, D), which was blocked by colchicine administration.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by western blot data shown in Figure 3C, D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:19:02.011116Z"
+    },
+    {
+      "id": "21e257ca-3be8-4876-8cbc-7b10040ac092",
+      "content_id": "ba457033-bbb9-40bf-afa9-792a8959015d",
+      "claim_id": "C31",
+      "claim": "MithA treatment inhibited the protein expression of ACE2, but did not further reduce the expression of ACE2 suppressed by colchicine",
+      "claim_type": "EXPLICIT",
+      "source": "Immunofluorescence staining further confirmed that although MithA treatment inhibited the protein expression of ACE2, it did not further reduce the expression of ACE2 suppressed by colchicine (Figure 3E, F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunofluorescence data shown in Figure 3E, F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:19:02.011116Z"
+    },
+    {
+      "id": "d60a7afd-dc73-48ba-8c14-ae60b66c471e",
+      "content_id": "ba457033-bbb9-40bf-afa9-792a8959015d",
+      "claim_id": "C32",
+      "claim": "Supplementation with BI6015 markedly increased the expression of ACE2 in HPAEpiCs, which was reduced by colchicine treatment",
+      "claim_type": "EXPLICIT",
+      "source": "Supplementation with BI6015 markedly increased the expression of ACE2 in HPAEpiCs, which was reduced by colchicine treatment (Figure 3E, F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunofluorescence data shown in Figure 3E, F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:19:02.011116Z"
+    },
+    {
+      "id": "381692d4-a382-4341-aa71-ae2c796d52f9",
+      "content_id": "ba457033-bbb9-40bf-afa9-792a8959015d",
+      "claim_id": "C33",
+      "claim": "MithA treatment inhibited luciferase activity of the ACE2 promoter, but not in the presence of colchicine",
+      "claim_type": "EXPLICIT",
+      "source": "Based on a luciferase reporter gene containing the ACE2 promoter, MithA treatment inhibited luciferase activity, but not in the presence of colchicine (Figure 3G), while BI6015 treatment increased luciferase activity.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by luciferase reporter assay data shown in Figure 3G",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:19:02.011116Z"
+    },
+    {
+      "id": "59a5afa4-fed4-453c-9784-edea8e2cfcb6",
+      "content_id": "ba457033-bbb9-40bf-afa9-792a8959015d",
+      "claim_id": "C34",
+      "claim": "The binding of SP1 to the GC box of the ACE2 promoter was significantly reduced after colchicine treatment",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, chromatin immunoprecipitation (ChIP)-qPCR analysis indicated that the binding of SP1 to the GC box of the ACE2 promoter was significantly reduced, while the binding of HNF4\u03b1 to the AGGTCA element was markedly increased after colchicine treatment (Figure 3H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by ChIP-qPCR data shown in Figure 3H",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:19:02.011116Z"
+    },
+    {
+      "id": "9f1b9e68-e1fd-4c85-b5da-4d446055c2ad",
+      "content_id": "ba457033-bbb9-40bf-afa9-792a8959015d",
+      "claim_id": "C35",
+      "claim": "The binding of HNF4\u03b1 to the AGGTCA element of the ACE2 promoter was markedly increased after colchicine treatment",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, chromatin immunoprecipitation (ChIP)-qPCR analysis indicated that the binding of SP1 to the GC box of the ACE2 promoter was significantly reduced, while the binding of HNF4\u03b1 to the AGGTCA element was markedly increased after colchicine treatment (Figure 3H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by ChIP-qPCR data shown in Figure 3H",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:19:02.011116Z"
+    },
+    {
+      "id": "493b9b8c-a057-4dc3-8882-15953a490ab0",
+      "content_id": "ba457033-bbb9-40bf-afa9-792a8959015d",
+      "claim_id": "C36",
+      "claim": "MithA inhibited SARS-CoV-2 replication in HPAEpiCs, with an EC50 value of 0.1948 \u03bcM",
+      "claim_type": "EXPLICIT",
+      "source": "Results showed that MithA inhibited SARS-CoV-2 replication in HPAEpiCs, with an EC50 value of 0.1948 \u03bcM (Figure 3\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3\u2014figure supplement 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:19:02.011116Z"
+    },
+    {
+      "id": "2c1908b6-8a02-4c78-adf7-a6a7a2288b6f",
+      "content_id": "ba457033-bbb9-40bf-afa9-792a8959015d",
+      "claim_id": "C37",
+      "claim": "Treatment with the SP1 inhibitor MithA markedly suppressed SP1 phosphorylation",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, treatment with the SP1 inhibitor MithA markedly suppressed SP1 phosphorylation, whereas treatment with the HNF4\u03b1 antagonist BI6015 increased SP1 phosphorylation at Thr453 (Figure 4A, B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunofluorescence data shown in Figure 4A, B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:19:02.011116Z"
+    },
+    {
+      "id": "3bfc330c-3cb6-4eb3-9324-6e0b881e134c",
+      "content_id": "ba457033-bbb9-40bf-afa9-792a8959015d",
+      "claim_id": "C38",
+      "claim": "Treatment with the HNF4\u03b1 antagonist BI6015 increased SP1 phosphorylation at Thr453",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, treatment with the SP1 inhibitor MithA markedly suppressed SP1 phosphorylation, whereas treatment with the HNF4\u03b1 antagonist BI6015 increased SP1 phosphorylation at Thr453 (Figure 4A, B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunofluorescence data shown in Figure 4A, B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:19:02.011116Z"
+    },
+    {
+      "id": "1570dbe8-24b5-4b05-9ce9-73dbcb719fe4",
+      "content_id": "ba457033-bbb9-40bf-afa9-792a8959015d",
+      "claim_id": "C39",
+      "claim": "BI6015 induced the cytoplasmic translocation of HNF4\u03b1",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, BI6015 induced the cytoplasmic translocation of HNF4\u03b1, while MithA promoted its nuclear accumulation (Figure 4C, D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunofluorescence data shown in Figure 4C, D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:19:02.011116Z"
+    },
+    {
+      "id": "009b156a-42fe-451b-80b7-91abe92d7ce7",
+      "content_id": "ba457033-bbb9-40bf-afa9-792a8959015d",
+      "claim_id": "C40",
+      "claim": "MithA promoted nuclear accumulation of HNF4\u03b1",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, BI6015 induced the cytoplasmic translocation of HNF4\u03b1, while MithA promoted its nuclear accumulation (Figure 4C, D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunofluorescence data shown in Figure 4C, D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:19:02.011116Z"
+    },
+    {
+      "id": "fc5de240-7abf-4d87-a5c3-c9e9fa7bbfef",
+      "content_id": "ba457033-bbb9-40bf-afa9-792a8959015d",
+      "claim_id": "C41",
+      "claim": "Western blot analysis showed an elevation in SP1 phosphorylation levels following the knockdown of HNF4\u03b1 by siRNA",
+      "claim_type": "EXPLICIT",
+      "source": "Western blot analysis showed an elevation in SP1 phosphorylation levels following the knockdown of HNF4\u03b1 by siRNA (Figure 4E, F), whereas the knockdown of SP1 had no discernible impact on the total levels of HNF4\u03b1.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by western blot data shown in Figure 4E, F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:19:02.011116Z"
+    },
+    {
+      "id": "2be3761d-1fcc-4b04-8983-5ab2aa92cc0c",
+      "content_id": "ba457033-bbb9-40bf-afa9-792a8959015d",
+      "claim_id": "C42",
+      "claim": "The knockdown of SP1 had no discernible impact on the total levels of HNF4\u03b1",
+      "claim_type": "EXPLICIT",
+      "source": "Western blot analysis showed an elevation in SP1 phosphorylation levels following the knockdown of HNF4\u03b1 by siRNA (Figure 4E, F), whereas the knockdown of SP1 had no discernible impact on the total levels of HNF4\u03b1.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by western blot data shown in Figure 4E, F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:19:02.011116Z"
+    },
+    {
+      "id": "3abfd9ef-8fe3-4627-975a-c8a5159c0a30",
+      "content_id": "ba457033-bbb9-40bf-afa9-792a8959015d",
+      "claim_id": "C43",
+      "claim": "Potential interactions between SP1 and HNF4\u03b1 in HPAEpiCs were confirmed using co-immunoprecipitation assay",
+      "claim_type": "EXPLICIT",
+      "source": "We subsequently confirmed potential interactions between SP1 and HNF4\u03b1 in HPAEpiCs using co-immunoprecipitation assay (co-IP; Figure 4G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by co-IP data shown in Figure 4G",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:19:02.011116Z"
+    },
+    {
+      "id": "3c193a4d-d60f-44a8-b3f4-bc9fea6d675e",
+      "content_id": "ba457033-bbb9-40bf-afa9-792a8959015d",
+      "claim_id": "C44",
+      "claim": "The PI3K/AKT signaling pathway is activated by SARS-CoV-2 infection",
+      "claim_type": "EXPLICIT",
+      "source": "The PI3K/AKT signaling pathway is reportedly activated by SARS-CoV-2 infection (Callahan et al., 2021; Klann et al., 2020; Sun et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research and confirmed by experimental data in this study",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:19:02.011116Z"
+    },
+    {
+      "id": "78011a39-7eb5-4170-8365-637ec508cfc6",
+      "content_id": "ba457033-bbb9-40bf-afa9-792a8959015d",
+      "claim_id": "C45",
+      "claim": "SARS-CoV-2 infection enhanced the phosphorylation of AKT at Ser473 and Thr308",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, we found that SARS-CoV-2 infection enhanced the phosphorylation of AKT at Ser473 and Thr308, which is required for its activation (Su et al., 2011; Figure 5A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by western blot data shown in Figure 5A\u2013C and a citation",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:19:02.011116Z"
+    },
+    {
+      "id": "b7fca53b-3573-4f01-8a16-a50411c83c94",
+      "content_id": "ba457033-bbb9-40bf-afa9-792a8959015d",
+      "claim_id": "C46",
+      "claim": "Colchicine treatment markedly reduced the phosphorylation of AKT induced by SARS-CoV-2 infection",
+      "claim_type": "EXPLICIT",
+      "source": "However, treatment with colchicine markedly reduced the phosphorylation of AKT induced by SARS-CoV-2 infection (Figure 5A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by western blot data shown in Figure 5A\u2013C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:19:02.011116Z"
+    },
+    {
+      "id": "e45b9c66-3392-46b6-ac49-601218a97377",
+      "content_id": "ba457033-bbb9-40bf-afa9-792a8959015d",
+      "claim_id": "C47",
+      "claim": "Knockdown of AKT by siRNA or treatment with PI3K inhibitors (LY294002 and wortmannin) down-regulated the expression of ACE2 in HPAEpiCs",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, knockdown of AKT by siRNA or treatment with PI3K inhibitors (LY294002 and wortmannin) down-regulated the expression of ACE2 in HPAEpiCs (Figure 5D\u2013G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by western blot and immunofluorescence data shown in Figure 5D\u2013G",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:19:02.011116Z"
+    },
+    {
+      "id": "15990335-ccf6-4eb8-a2e2-5ac3cfa9ca00",
+      "content_id": "ba457033-bbb9-40bf-afa9-792a8959015d",
+      "claim_id": "C48",
+      "claim": "LY294002 inhibited SARS-CoV-2 infection in HPAEpiCs, with an EC50 value of 0.2381 \u03bcM",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, both LY294002 and wortmannin inhibited SARS-CoV-2 infection in HPAEpiCs, with EC50 values of 0.2381 \u03bcM and 0.04228 \u03bcM, respectively (Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:19:02.011116Z"
+    },
+    {
+      "id": "0cf48389-08ad-4941-aa64-8d91d3a90e07",
+      "content_id": "ba457033-bbb9-40bf-afa9-792a8959015d",
+      "claim_id": "C49",
+      "claim": "Wortmannin inhibited SARS-CoV-2 infection in HPAEpiCs, with an EC50 value of 0.04228 \u03bcM",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, both LY294002 and wortmannin inhibited SARS-CoV-2 infection in HPAEpiCs, with EC50 values of 0.2381 \u03bcM and 0.04228 \u03bcM, respectively (Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:19:02.011116Z"
+    },
+    {
+      "id": "296be89c-b5ed-4187-a8e6-8b5d07bb6a86",
+      "content_id": "ba457033-bbb9-40bf-afa9-792a8959015d",
+      "claim_id": "C50",
+      "claim": "Activation of AKT promotes the stability and localization of SP1 by phosphorylating SP1 at Thr453 and Thr739",
+      "claim_type": "EXPLICIT",
+      "source": "Activation of AKT promotes the stability and localization of SP1 by phosphorylating SP1 at Thr453 and Thr739 (Adapala et al., 2019; G\u00f3mez-Villafuertes et al., 2015; Zhao et al., 2015), and prevents the nuclear translocation of HNF4\u03b1 (Li et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:19:02.011116Z"
+    },
+    {
+      "id": "32e129da-c6a2-4759-8203-18839df6395b",
+      "content_id": "ba457033-bbb9-40bf-afa9-792a8959015d",
+      "claim_id": "C51",
+      "claim": "Activation of AKT prevents the nuclear translocation of HNF4\u03b1",
+      "claim_type": "EXPLICIT",
+      "source": "Activation of AKT promotes the stability and localization of SP1 by phosphorylating SP1 at Thr453 and Thr739 (Adapala et al., 2019; G\u00f3mez-Villafuertes et al., 2015; Zhao et al., 2015), and prevents the nuclear translocation of HNF4\u03b1 (Li et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:19:02.011116Z"
+    },
+    {
+      "id": "b33bf987-1a11-4444-b1ae-c694feab5f71",
+      "content_id": "ba457033-bbb9-40bf-afa9-792a8959015d",
+      "claim_id": "C52",
+      "claim": "Suppression of AKT by siRNA or its inhibitors significantly reduced the accumulation of phospho-SP1 in the nucleus",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with these observations, we found that suppression of AKT by siRNA or its inhibitors significantly reduced the accumulation of phospho-SP1 in the nucleus, but markedly promoted the nuclear translocation of HNF4\u03b1 (Figure 5H\u2013K).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunofluorescence data shown in Figure 5H\u2013K",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:19:02.011116Z"
+    },
+    {
+      "id": "daf4c8f5-a5b2-4bb2-a250-86d39ceca9c9",
+      "content_id": "ba457033-bbb9-40bf-afa9-792a8959015d",
+      "claim_id": "C53",
+      "claim": "Suppression of AKT by siRNA or its inhibitors markedly promoted the nuclear translocation of HNF4\u03b1",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with these observations, we found that suppression of AKT by siRNA or its inhibitors significantly reduced the accumulation of phospho-SP1 in the nucleus, but markedly promoted the nuclear translocation of HNF4\u03b1 (Figure 5H\u2013K).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunofluorescence data shown in Figure 5H\u2013K",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:19:02.011116Z"
+    },
+    {
+      "id": "4b6439e7-7297-4302-b892-db695ecb13ed",
+      "content_id": "ba457033-bbb9-40bf-afa9-792a8959015d",
+      "claim_id": "C54",
+      "claim": "The expression of ACE2 was significantly up-regulated in the lungs and trachea of hamsters infected with SARS-CoV-2 compared to the non-infected control group",
+      "claim_type": "EXPLICIT",
+      "source": "Immunofluorescence analysis demonstrated that the expression of ACE2 was significantly up-regulated in the lungs and trachea of hamsters infected with SARS-CoV-2 compared to the non-infected control group (Figure 6A; Figure 6\u2014figure supplement 2A, B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunofluorescence data shown in Figure 6A and Figure 6\u2014figure supplement 2A, B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:19:02.011116Z"
+    },
+    {
+      "id": "4a86f89f-dab6-4437-a442-e37c11e7b66e",
+      "content_id": "ba457033-bbb9-40bf-afa9-792a8959015d",
+      "claim_id": "C55",
+      "claim": "Colchicine or MithA treatment substantially inhibited the expression of ACE2 in both the lungs and trachea of hamsters infected with SARS-CoV-2",
+      "claim_type": "EXPLICIT",
+      "source": "However, colchicine or MithA treatment substantially inhibited the expression of ACE2 in both the lungs and trachea of hamsters infected with SARS-CoV-2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by immunofluorescence data shown in Figure 6A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:19:02.011116Z"
+    },
+    {
+      "id": "6c678e1b-8a33-44d1-aa72-4284ff121c4d",
+      "content_id": "ba457033-bbb9-40bf-afa9-792a8959015d",
+      "claim_id": "C56",
+      "claim": "Treatment with colchicine or MithA reduced viral replication in both the lungs and trachea of hamsters",
+      "claim_type": "EXPLICIT",
+      "source": "Based on immunofluorescence analysis of SARS-CoV-2 nucleocapsid and RT-qPCR, treatment with colchicine or MithA reduced viral replication in both the lungs and trachea of hamsters (Figure 6B\u2013D; Figure 6\u2014figure supplement 2C, D), respectively.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunofluorescence and RT-qPCR data shown in Figure 6B\u2013D and Figure 6\u2014figure supplement 2C, D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:19:02.011116Z"
+    },
+    {
+      "id": "f9d8c988-a013-4069-ba00-4b1bffd3ba2c",
+      "content_id": "ba457033-bbb9-40bf-afa9-792a8959015d",
+      "claim_id": "C57",
+      "claim": "Histopathological analysis of lung tissues 3 dpi revealed a range of pulmonary abnormalities, including bronchial epithelial cell necrosis and nuclear pyknosis, extensive alveolar hemorrhage, marked infiltration of inflammatory cells, significant edema, and notably thickened alveolar walls",
+      "claim_type": "EXPLICIT",
+      "source": "Subsequent histopathological analysis of lung tissues 3 dpi revealed a range of pulmonary abnormalities, including bronchial epithelial cell necrosis and nuclear pyknosis, extensive alveolar hemorrhage, marked infiltration of inflammatory cells, significant edema, and notably thickened alveolar walls (Figure 6E, G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by histopathological data shown in Figure 6E, G",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:19:02.011116Z"
+    },
+    {
+      "id": "16dc5c30-34b6-4896-bf80-c261b10d147e",
+      "content_id": "ba457033-bbb9-40bf-afa9-792a8959015d",
+      "claim_id": "C58",
+      "claim": "The severity of pathological features in the lungs was markedly reduced in the treatment groups compared to the mock group",
+      "claim_type": "EXPLICIT",
+      "source": "Although similar pathological features were present, their severity was markedly reduced in the treatment groups compared to the mock group.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by histopathological data shown in Figure 6E, G",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:19:02.011116Z"
+    },
+    {
+      "id": "244998e0-3276-4c42-9846-52df9882bbe8",
+      "content_id": "ba457033-bbb9-40bf-afa9-792a8959015d",
+      "claim_id": "C59",
+      "claim": "Collagen deposition indicative of fibrosis was evident in the lungs of infected hamsters",
+      "claim_type": "EXPLICIT",
+      "source": "Using Masson's trichrome staining, collagen deposition indicative of fibrosis was evident in the lungs of infected hamsters (Figure 6F, H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by Masson staining data shown in Figure 6F, H",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:19:02.011116Z"
+    },
+    {
+      "id": "32951104-165e-4a90-9eab-663cf91f9c44",
+      "content_id": "ba457033-bbb9-40bf-afa9-792a8959015d",
+      "claim_id": "C60",
+      "claim": "Treatment with either colchicine or MithA effectively reversed lung fibrosis",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, treatment with either colchicine or MithA effectively reversed lung fibrosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by Masson staining data shown in Figure 6F, H",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:19:02.011116Z"
+    },
+    {
+      "id": "fe3f93aa-8464-453c-a777-9c2a1ed33b33",
+      "content_id": "ba457033-bbb9-40bf-afa9-792a8959015d",
+      "claim_id": "C61",
+      "claim": "Acute kidney injury associated with severe SARS-CoV-2 serves as an independent risk factor for in-hospital death in patients",
+      "claim_type": "EXPLICIT",
+      "source": "Although acute kidney injury associated with severe SARS-CoV-2 serves as an independent risk factor for in-hospital death in patients (Nadim et al., 2020), whether SARS-CoV-2 directly infects the kidney remains unclear (Smith and Akilesh, 2021; Wysocki et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:19:02.011116Z"
+    },
+    {
+      "id": "1711953b-d62b-4112-a6e4-8622a84e98d6",
+      "content_id": "ba457033-bbb9-40bf-afa9-792a8959015d",
+      "claim_id": "C62",
+      "claim": "Immunofluorescence analysis detected the substantial presence of SARS-CoV-2 in the kidneys of infected hamsters",
+      "claim_type": "EXPLICIT",
+      "source": "Here, immunofluorescence analysis detected the substantial presence of SARS-CoV-2 in the kidneys of infected hamsters, an effect markedly mitigated by colchicine or MithA treatment (Figure 7A, B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunofluorescence data shown in Figure 7A, B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:19:02.011116Z"
+    },
+    {
+      "id": "367dbde8-fcfd-4fb7-a732-a0f74f0bd6b0",
+      "content_id": "ba457033-bbb9-40bf-afa9-792a8959015d",
+      "claim_id": "C63",
+      "claim": "Colchicine or MithA treatment markedly mitigated the presence of SARS-CoV-2 in the kidneys of infected hamsters",
+      "claim_type": "EXPLICIT",
+      "source": "Here, immunofluorescence analysis detected the substantial presence of SARS-CoV-2 in the kidneys of infected hamsters, an effect markedly mitigated by colchicine or MithA treatment (Figure 7A, B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunofluorescence data shown in Figure 7A, B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:19:02.011116Z"
+    },
+    {
+      "id": "08e32046-8f85-44c0-9dc2-8be85e922a6e",
+      "content_id": "ba457033-bbb9-40bf-afa9-792a8959015d",
+      "claim_id": "C64",
+      "claim": "Both colchicine and MithA effectively down-regulated ACE2 expression in the kidneys of infected hamsters",
+      "claim_type": "EXPLICIT",
+      "source": "Further analysis also showed that both drugs effectively down-regulated ACE2 expression (Figure 7C, D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunofluorescence data shown in Figure 7C, D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:19:02.011116Z"
+    },
+    {
+      "id": "9ad85c0b-5cac-4cfc-8506-b4ff557098e2",
+      "content_id": "ba457033-bbb9-40bf-afa9-792a8959015d",
+      "claim_id": "C65",
+      "claim": "Histopathological evaluation showed significant renal damage in SARS-CoV-2-infected hamsters, including renal tubular epithelial cell nuclear pyknosis, brush border disappearance, renal interstitial vascular congestion, inflammatory cell infiltration, and glomerular atrophy",
+      "claim_type": "EXPLICIT",
+      "source": "Histopathological evaluation showed significant renal damage in SARS-CoV-2-infected hamsters, including renal tubular epithelial cell nuclear pyknosis, brush border disappearance, renal interstitial vascular congestion, inflammatory cell infiltration, and glomerular atrophy (Figure 7E, F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by histopathological data shown in Figure 7E, F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:19:02.011116Z"
+    },
+    {
+      "id": "3ad54475-0524-4370-b507-dbee38fc6099",
+      "content_id": "ba457033-bbb9-40bf-afa9-792a8959015d",
+      "claim_id": "C66",
+      "claim": "In the drug-treated hamsters, the glomeruli displayed uniform distribution and intact structure, tubular epithelial cells appeared normal, and brush borders showed neat arrangement, with no evident abnormality in the renal medulla or obvious hyperplasia in the renal interstitium",
+      "claim_type": "EXPLICIT",
+      "source": "In the drug-treated hamsters, however, the glomeruli displayed uniform distribution and intact structure, tubular epithelial cells appeared normal, and brush borders showed neat arrangement, with no evident abnormality in the renal medulla or obvious hyperplasia in the renal interstitium.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by histopathological data shown in Figure 7E, F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:19:02.011116Z"
+    },
+    {
+      "id": "ef437160-4db8-4473-a52d-714fbb551e4b",
+      "content_id": "ba457033-bbb9-40bf-afa9-792a8959015d",
+      "claim_id": "C67",
+      "claim": "Under physiological conditions, SP1 is primarily localized in the nucleus, while HNF4\u03b1 exhibits a dual distribution in the nucleus and cytoplasm",
+      "claim_type": "EXPLICIT",
+      "source": "Under physiological conditions, SP1 is primarily localized in the nucleus, while HNF4\u03b1 exhibits a dual distribution in the nucleus and cytoplasm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on experimental observations from immunofluorescence data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:19:02.011116Z"
+    },
+    {
+      "id": "82f71735-db99-4fed-9d0d-33c72ce8b0e0",
+      "content_id": "ba457033-bbb9-40bf-afa9-792a8959015d",
+      "claim_id": "C68",
+      "claim": "SP1 and HNF4\u03b1 exert opposing effects on the regulation of ACE2 expression, thereby maintaining basal expression of ACE2",
+      "claim_type": "EXPLICIT",
+      "source": "These transcription factors exert opposing effects on the regulation of ACE2 expression, thereby maintaining basal expression of ACE2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the experimental data showing opposite regulatory effects",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:19:02.011116Z"
+    },
+    {
+      "id": "15047322-7cf2-4dfd-b14d-4bb92a93f20b",
+      "content_id": "ba457033-bbb9-40bf-afa9-792a8959015d",
+      "claim_id": "C69",
+      "claim": "Upon infection by SARS-CoV-2, the PI3K/AKT signaling pathway becomes activated",
+      "claim_type": "EXPLICIT",
+      "source": "Upon infection by SARS-CoV-2, the PI3K/AKT signaling pathway becomes activated (Klann et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation and confirmed by experimental data in this study",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:19:02.011116Z"
+    },
+    {
+      "id": "1a1fd582-46fc-4fa7-b59d-9c68b4572eb8",
+      "content_id": "ba457033-bbb9-40bf-afa9-792a8959015d",
+      "claim_id": "C70",
+      "claim": "Activation of the PI3K/AKT signaling pathway promotes the transcriptional activity of SP1 through increased phosphorylation in the nucleus",
+      "claim_type": "EXPLICIT",
+      "source": "This activation subsequently promotes the transcriptional activity of SP1 through increased phosphorylation in the nucleus and suppresses the transcriptional activity of HNF4\u03b1 by inducing its translocation to the cytoplasm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data showing increased SP1 phosphorylation and effects of AKT inhibition",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:19:02.011116Z"
+    },
+    {
+      "id": "adf77858-4579-4646-92d3-2eddc8539336",
+      "content_id": "ba457033-bbb9-40bf-afa9-792a8959015d",
+      "claim_id": "C71",
+      "claim": "Activation of the PI3K/AKT signaling pathway suppresses the transcriptional activity of HNF4\u03b1 by inducing its translocation to the cytoplasm",
+      "claim_type": "EXPLICIT",
+      "source": "This activation subsequently promotes the transcriptional activity of SP1 through increased phosphorylation in the nucleus and suppresses the transcriptional activity of HNF4\u03b1 by inducing its translocation to the cytoplasm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data showing cytoplasmic translocation of HNF4\u03b1 and effects of AKT inhibition",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:19:02.011116Z"
+    },
+    {
+      "id": "2b929252-4ec0-4967-bfec-23f60406f7f2",
+      "content_id": "ba457033-bbb9-40bf-afa9-792a8959015d",
+      "claim_id": "C72",
+      "claim": "Induction of ACE2 expression may represent a strategic adaptation of SARS-CoV-2 to facilitate its own propagation",
+      "claim_type": "EXPLICIT",
+      "source": "Given that ACE2 serves as the entry receptor for SARS-CoV-2, induction of ACE2 expression may represent a strategic adaptation of the virus to facilitate its own propagation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative inference based on the observed up-regulation of ACE2 and its role as a viral receptor",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:19:02.011116Z"
+    },
+    {
+      "id": "ec68a517-9061-45b1-9b90-235ff36c6240",
+      "content_id": "ba457033-bbb9-40bf-afa9-792a8959015d",
+      "claim_id": "C73",
+      "claim": "Phosphoproteomic analysis of SARS-CoV-2-infected cells has revealed the activation of the growth factor receptor (GFR) and its downstream pathways, including the RAF/MEK/ERK MAPK and PI3K/AKT/mTOR signaling pathways",
+      "claim_type": "EXPLICIT",
+      "source": "Phosphoproteomic analysis of SARS-CoV-2-infected cells has revealed the activation of the growth factor receptor (GFR) and its downstream pathways, including the RAF/MEK/ERK MAPK and PI3K/AKT/mTOR signaling pathways, in SARS-CoV-2-infected cells (Klann et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:19:02.011116Z"
+    },
+    {
+      "id": "b49f2113-8b58-4a7c-aeb9-73185bc3df85",
+      "content_id": "ba457033-bbb9-40bf-afa9-792a8959015d",
+      "claim_id": "C74",
+      "claim": "Blockage of the GFR signaling pathway via application of prominent anti-cancer drugs effectively prevents SARS-CoV-2 replication in cellular models",
+      "claim_type": "EXPLICIT",
+      "source": "Blockage of the GFR signaling pathway via application of prominent anti-cancer drugs, such as sorafenib (RAF inhibitor), RO5126766 (dual RAF/MEK inhibitor), pictilisib (PI3K inhibitor), and omipalisib (dual PI3K and mTOR inhibitor), effectively prevents SARS-CoV-2 replication in cellular models.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:19:02.011116Z"
+    },
+    {
+      "id": "dead5068-308c-4702-97d0-b2a269f47b60",
+      "content_id": "ba457033-bbb9-40bf-afa9-792a8959015d",
+      "claim_id": "C75",
+      "claim": "The PI3K/AKT signaling cascade served as a crucial regulatory node in the induction of ACE2 expression by enhancing and reducing the transcriptional activities of SP1 and HNF4\u03b1, respectively",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, our findings indicated that the PI3K/AKT signaling cascade, activated following SARS-CoV-2 infection (Klann et al., 2020), served as a crucial regulatory node in the induction of ACE2 expression by enhancing and reducing the transcriptional activities of SP1 and HNF4\u03b1, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data showing effects of PI3K/AKT inhibition on SP1 and HNF4\u03b1 activities",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:19:02.011116Z"
+    },
+    {
+      "id": "25a7a3b5-97c8-4c41-bca2-1583c1f12baa",
+      "content_id": "ba457033-bbb9-40bf-afa9-792a8959015d",
+      "claim_id": "C76",
+      "claim": "Inhibition of SP1 activity, leading to the down-regulation of ACE2 expression, effectively mitigated SARS-CoV-2 replication in the lung and trachea of Syrian hamsters",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings also showed that inhibition of SP1 activity, leading to the down-regulation of ACE2 expression, effectively mitigated SARS-CoV-2 replication in the lung and trachea of Syrian hamsters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by in vivo experimental data in Syrian hamsters",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:19:02.011116Z"
+    },
+    {
+      "id": "2579cc1d-9044-4a93-824f-fe9592f1789f",
+      "content_id": "ba457033-bbb9-40bf-afa9-792a8959015d",
+      "claim_id": "C77",
+      "claim": "The decrease in viral replication was associated with a marked reduction in lung pathology",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, this decrease in viral replication was associated with a marked reduction in lung pathology.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by histopathological data from Syrian hamsters",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:19:02.011116Z"
+    },
+    {
+      "id": "b9aa8144-abde-41ab-92fc-11148a724dfe",
+      "content_id": "ba457033-bbb9-40bf-afa9-792a8959015d",
+      "claim_id": "C78",
+      "claim": "Acute kidney injury has been identified as an extrapulmonary manifestation of severe COVID-19",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to lung-associated issues, acute kidney injury has also been identified as an extrapulmonary manifestation of severe COVID-19 (Legrand et al., 2021), although the direct causal association between SARS-CoV-2 infection and acute kidney injury remains controversial (Legrand et al., 2021; Smith and Akilesh, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:19:02.011116Z"
+    },
+    {
+      "id": "bd53a4f3-4d00-4609-9126-2b5237ffb9cb",
+      "content_id": "ba457033-bbb9-40bf-afa9-792a8959015d",
+      "claim_id": "C79",
+      "claim": "SARS-CoV-2 can directly infect kidney cells in human-induced pluripotent stem cell-derived kidney organoids",
+      "claim_type": "EXPLICIT",
+      "source": "Recent evidence has indicated that SARS-CoV-2 can directly infect kidney cells in human-induced pluripotent stem cell-derived kidney organoids (Jansen et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:19:02.011116Z"
+    },
+    {
+      "id": "7a13c35b-8fcd-4cdd-805c-5cfbb0a76a9d",
+      "content_id": "ba457033-bbb9-40bf-afa9-792a8959015d",
+      "claim_id": "C80",
+      "claim": "Colchicine treatment effectively suppressed ACE2 expression in the proximal kidney tubule, which was associated with diminished SARS-CoV-2-induced kidney injury in Syrian hamsters",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with these findings, we found that colchicine treatment effectively suppressed ACE2 expression in the proximal kidney tubule, which was associated with diminished SARS-CoV-2-induced kidney injury in Syrian hamsters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from Syrian hamsters",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:19:02.011116Z"
+    },
+    {
+      "id": "eb340d5a-c2e1-4546-a317-45d7b455932c",
+      "content_id": "ba457033-bbb9-40bf-afa9-792a8959015d",
+      "claim_id": "C81",
+      "claim": "Proxalutamide, a potent androgen receptor antagonist, has been shown to suppress androgen-induced ACE2 expression",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, proxalutamide, a potent androgen receptor antagonist, has been shown to suppress androgen-induced ACE2 expression (Qiao et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:19:02.011116Z"
+    },
+    {
+      "id": "74c3e477-eee0-456b-a09d-52030af4ea9f",
+      "content_id": "ba457033-bbb9-40bf-afa9-792a8959015d",
+      "claim_id": "C82",
+      "claim": "RIPK1 inhibition has been found to reduce viral loads in SARS-CoV-2-infected human lung organoids, accompanied by a down-regulation in the transcriptional induction of ACE2",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, RIPK1 inhibition has been found to reduce viral loads in SARS-CoV-2-infected human lung organoids, accompanied by a down-regulation in the transcriptional induction of ACE2 (Xu et al., 2021a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:19:02.011116Z"
+    },
+    {
+      "id": "47190513-c4de-4105-8bf0-712f3bb5dce2",
+      "content_id": "ba457033-bbb9-40bf-afa9-792a8959015d",
+      "claim_id": "C83",
+      "claim": "Inhibition of FXR activity via UDCA can lead to the down-regulation of ACE2 expression, consequently reducing SARS-CoV-2 infection in vitro, in vivo, and ex vivo",
+      "claim_type": "EXPLICIT",
+      "source": "A recent study also demonstrated that inhibition of FXR activity via UDCA can lead to the down-regulation of ACE2 expression, consequently reducing SARS-CoV-2 infection in vitro, in vivo, and ex vivo (Brevini et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:19:02.011116Z"
+    },
+    {
+      "id": "6cc825b2-18b6-4d17-b32a-adf10cd81425",
+      "content_id": "ba457033-bbb9-40bf-afa9-792a8959015d",
+      "claim_id": "C84",
+      "claim": "Inhibition of SP1 by its inhibitor MithA induced nuclear accumulation of HNF4\u03b1",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, inhibition of SP1 by its inhibitor MithA induced nuclear accumulation of HNF4\u03b1, whereas inhibition of HNF4\u03b1 by its antagonist BI6015 increased phosphorylation levels of SP1 in the nucleus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from immunofluorescence and western blot analyses",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:19:02.011116Z"
+    },
+    {
+      "id": "c2d7f0a8-2ec2-40fc-ade3-45a957e9c732",
+      "content_id": "ba457033-bbb9-40bf-afa9-792a8959015d",
+      "claim_id": "C85",
+      "claim": "Inhibition of HNF4\u03b1 by its antagonist BI6015 increased phosphorylation levels of SP1 in the nucleus",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, inhibition of SP1 by its inhibitor MithA induced nuclear accumulation of HNF4\u03b1, whereas inhibition of HNF4\u03b1 by its antagonist BI6015 increased phosphorylation levels of SP1 in the nucleus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from immunofluorescence and western blot analyses",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:19:02.011116Z"
+    },
+    {
+      "id": "dfe2a705-d884-4cf1-a567-1ea06379543a",
+      "content_id": "ba457033-bbb9-40bf-afa9-792a8959015d",
+      "claim_id": "C86",
+      "claim": "MithA is capable of inducing proteasome-dependent SP1 degradation",
+      "claim_type": "EXPLICIT",
+      "source": "Although the established role of MithA is to disrupt the binding of SP1 to its consensus site (Lee et al., 2011), it is also capable of inducing proteasome-dependent SP1 degradation (Choi et al., 2014; Lee et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:19:02.011116Z"
+    },
+    {
+      "id": "96a0b493-1e26-46c4-84b1-83f0497547bd",
+      "content_id": "ba457033-bbb9-40bf-afa9-792a8959015d",
+      "claim_id": "C87",
+      "claim": "BI6015 can diminish HNF4\u03b1 expression",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, BI6015, known to repress the DNA-binding activity HNF4\u03b1 (Kiselyuk et al., 2012), can also diminish HNF4\u03b1 expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:19:02.011116Z"
+    },
+    {
+      "id": "fe3aa4a0-a7fb-4876-a766-f5776b1e0264",
+      "content_id": "ba457033-bbb9-40bf-afa9-792a8959015d",
+      "claim_id": "C88",
+      "claim": "Non-phosphorylated SP1 interacted with HNF4\u03b1 and potentially inhibited the phosphorylation of SP1",
+      "claim_type": "EXPLICIT",
+      "source": "Our results demonstrated that non-phosphorylated SP1 interacted with HNF4\u03b1 and potentially inhibited the phosphorylation of SP1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on co-IP data and the observed effects of HNF4\u03b1 knockdown",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:19:02.011116Z"
+    },
+    {
+      "id": "8f79b515-6326-43bd-8f2a-630df7e49d9f",
+      "content_id": "ba457033-bbb9-40bf-afa9-792a8959015d",
+      "claim_id": "C89",
+      "claim": "Upon reduction of HNF4\u03b1 protein levels by BI6015, SP1 was released and subsequently phosphorylated by AKT, resulting in the binding of phosphorylated SP1 to the GC box and subsequent up-regulation of ACE2 expression",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, upon reduction of HNF4\u03b1 protein levels by BI6015, SP1 was released and subsequently phosphorylated by AKT, resulting in the binding of phosphorylated SP1 to the GC box and subsequent up-regulation of ACE2 expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the experimental observations of the effects of BI6015",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:19:02.011116Z"
+    },
+    {
+      "id": "5d50a421-cf80-4c4c-95ab-a039adb8ceab",
+      "content_id": "ba457033-bbb9-40bf-afa9-792a8959015d",
+      "claim_id": "C90",
+      "claim": "Upon reduction of SP1 protein levels by MithA, HNF4\u03b1 was released, which inhibited ACE2 expression by binding to the HNF4\u03b1-specific binding motif",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, upon reduction of SP1 protein levels by MithA, HNF4\u03b1 was released, which inhibited ACE2 expression by binding to the HNF4\u03b1-specific binding motif.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the experimental observations of the effects of MithA",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:19:02.011116Z"
+    },
+    {
+      "id": "3989365c-1612-4fbe-a22d-1eb2e5a9a243",
+      "content_id": "ba457033-bbb9-40bf-afa9-792a8959015d",
+      "claim_id": "C91",
+      "claim": "The clinical application of MithA is substantially limited by its range of adverse effects, including liver, kidney, gastrointestinal, and bone marrow toxicity",
+      "claim_type": "EXPLICIT",
+      "source": "Primarily used to treat several types of cancer, including testicular cancer (Kennedy and Torkelson, 1995) and myeloid leukemia (Dutcher et al., 1997), the clinical application of MithA is substantially limited by its range of adverse effects, including liver, kidney, gastrointestinal, and bone marrow toxicity (Green and Donehower, 1984; Kennedy, 1970; Quarni et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:19:02.011116Z"
+    },
+    {
+      "id": "77c8d810-84dd-4536-8f6a-4761944f9a0f",
+      "content_id": "ba457033-bbb9-40bf-afa9-792a8959015d",
+      "claim_id": "C92",
+      "claim": "The efficacy of colchicine as a treatment for COVID-19 remains inconclusive",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, the efficacy of colchicine as a treatment for COVID-19 remains inconclusive. While some studies suggest benefits (Chiu et al., 2021; Drosos et al., 2022; Elshafei et al., 2021), others indicate negligible impact on mortality or disease progression (RECOVERY Collaborative Group, 2021; Mikolajewska et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research showing conflicting results",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:19:02.011116Z"
+    },
+    {
+      "id": "b5390142-f03b-4c70-b465-34a2d14c71a9",
+      "content_id": "ba457033-bbb9-40bf-afa9-792a8959015d",
+      "claim_id": "C93",
+      "claim": "Increased ACE2 expression in respiratory and pulmonary tissues has been implicated in the exacerbation of COVID-19 symptom severity among elderly individuals",
+      "claim_type": "EXPLICIT",
+      "source": "Increased ACE2 expression in respiratory and pulmonary tissues has been implicated in the exacerbation of COVID-19 symptom severity among elderly individuals (Inde et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:19:02.011116Z"
+    },
+    {
+      "id": "4c807081-f93e-46ca-b618-7521d57a8184",
+      "content_id": "ba457033-bbb9-40bf-afa9-792a8959015d",
+      "claim_id": "C94",
+      "claim": "The Omicron variant of SARS-CoV-2 exhibits a spike protein with a six- to nine-fold enhanced binding affinity for ACE2",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the Omicron variant of SARS-CoV-2, the current dominant global strain, exhibits a spike protein with a six- to nine-fold enhanced binding affinity for ACE2 (Yin et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:19:02.011116Z"
+    },
+    {
+      "id": "ad291ee4-30f3-4f92-aa17-4642d89c3808",
+      "content_id": "ba457033-bbb9-40bf-afa9-792a8959015d",
+      "claim_id": "C95",
+      "claim": "Immortalized human alveolar epithelial cells (HPAEpiCs) were generated from human lung tissue type II pneumocytes",
+      "claim_type": "EXPLICIT",
+      "source": "Immortalized human alveolar epithelial cells (HPAEpiCs) were generated from human lung tissue type II pneumocytes purchased from the ScienCell Research Laboratory (San Diego, CA, USA) and maintained in RPMI 1640 medium (01-100-1ACS, Biological Industries, Israel) supplemented with 10% fetal bovine serum (FBS) (C04001\u2212050X10, VivaCell, Shanghai, China) and 1% penicillin-streptomycin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological description",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:19:02.011116Z"
+    },
+    {
+      "id": "83c95d19-1bf8-4cc7-a660-2d6a93c818c5",
+      "content_id": "ba457033-bbb9-40bf-afa9-792a8959015d",
+      "claim_id": "C96",
+      "claim": "The SARS-CoV-2 strain used in this study has accession number NMDCN0000HUI",
+      "claim_type": "EXPLICIT",
+      "source": "The SARS-CoV-2 strain (accession number: NMDCN0000HUI) was provided by the Guangdong Provincial Center for Disease Control and Prevention (Guangzhou, China).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological description",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:19:02.011116Z"
+    },
+    {
+      "id": "90694039-8d4b-48c1-bfef-2f15c319dcc3",
+      "content_id": "ba457033-bbb9-40bf-afa9-792a8959015d",
+      "claim_id": "C97",
+      "claim": "All infection experiments were performed in a Biosafety Level-3 (BLS-3) Laboratory",
+      "claim_type": "EXPLICIT",
+      "source": "All infection experiments were performed in a Biosafety Level-3 (BLS-3) Laboratory.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological description",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:19:02.011116Z"
+    },
+    {
+      "id": "70d8ad50-527c-43ce-9683-970e9893f0a3",
+      "content_id": "ba457033-bbb9-40bf-afa9-792a8959015d",
+      "claim_id": "C98",
+      "claim": "Syrian hamsters were purchased from Beijing Vital River Laboratory Animal Technology Co., Ltd. (China) (85\u2013100 g, 5 weeks old)",
+      "claim_type": "EXPLICIT",
+      "source": "Male Syrian hamsters (Mesocricetus auratus) were purchased from Beijing Vital River Laboratory Animal Technology Co., Ltd. (China) (85\u2013100 g, 5 weeks old).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological description",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:19:02.011116Z"
+    },
+    {
+      "id": "fe0363b4-76c6-42af-a2bf-0fae2ea0d479",
+      "content_id": "ba457033-bbb9-40bf-afa9-792a8959015d",
+      "claim_id": "C99",
+      "claim": "Hamsters were infected with 104 TCID50 of SARS-CoV-2 by intranasal instillation",
+      "claim_type": "EXPLICIT",
+      "source": "The hamsters were anesthetized by inhalation of isoflurane and infected with 104 TCID50 of SARS-CoV-2 by intranasal instillation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological description",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:19:02.011116Z"
+    },
+    {
+      "id": "cb65ed16-f5ca-4ec1-8af7-6ed999a6fba9",
+      "content_id": "ba457033-bbb9-40bf-afa9-792a8959015d",
+      "claim_id": "C100",
+      "claim": "After 1 hr of SARS-CoV-2 infection, 0.2 mg/kg of either colchicine or MithA was given intraperitoneally once daily to hamsters",
+      "claim_type": "EXPLICIT",
+      "source": "After 1 hr, 0.2 mg/kg of either colchicine or MithA was given intraperitoneally once daily.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological description",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:19:02.011116Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "7d884abd-3bfd-4fe1-8483-d4c5409c8963",
+      "content_id": "ba457033-bbb9-40bf-afa9-792a8959015d",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "SARS-CoV-2 infection up-regulates ACE2 protein expression in HPAEpiCs, and colchicine treatment substantially inhibits ACE2 expression and reduces viral replication with an EC50 of 0.2703 \u03bcM.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C23 are supported by Western blot, immunofluorescence, and RT-qPCR data (Figure 1). The data show consistent up-regulation of ACE2 by SARS-CoV-2 and down-regulation by colchicine, with quantified EC50 values. The experimental design includes appropriate controls and replicates.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:19:02.011116Z"
+    },
+    {
+      "id": "b87c9fce-0644-44cc-8d68-7b012ca873de",
+      "content_id": "ba457033-bbb9-40bf-afa9-792a8959015d",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "SP1 and HNF4\u03b1 are identified as transcriptional regulators of ACE2 expression with opposing effects. SARS-CoV-2 infection increases SP1 phosphorylation and induces cytoplasmic translocation of HNF4\u03b1, while colchicine reverses these effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C24-C28 are supported by the 45-pathway reporter array, MEME motif analysis (p=6.1e-5 for SP1, p=4.2e-5 for HNF4\u03b1), and immunofluorescence data (Figure 2). The computational and experimental approaches converge to identify these transcription factors as key regulators.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:19:02.011116Z"
+    },
+    {
+      "id": "d00ef864-63fc-46a8-a913-bed38d444e33",
+      "content_id": "ba457033-bbb9-40bf-afa9-792a8959015d",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "SP1 positively regulates ACE2 expression while HNF4\u03b1 negatively regulates it. Inhibition of SP1 by MithA or siRNA reduces ACE2 expression, while inhibition of HNF4\u03b1 by BI6015 or siRNA increases ACE2 expression. MithA inhibits SARS-CoV-2 replication with an EC50 of 0.1948 \u03bcM.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C36 are supported by Western blot, immunofluorescence, luciferase reporter assays, and ChIP-qPCR data (Figure 3). Multiple complementary approaches demonstrate the opposing regulatory roles of SP1 and HNF4\u03b1 on ACE2 transcription, with colchicine acting through these pathways.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:19:02.011116Z"
+    },
+    {
+      "id": "ad1e7fd8-b9ca-4494-9731-6e1d71343d24",
+      "content_id": "ba457033-bbb9-40bf-afa9-792a8959015d",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "SP1 and HNF4\u03b1 exhibit reciprocal antagonism: MithA suppresses SP1 phosphorylation and promotes HNF4\u03b1 nuclear accumulation, while BI6015 increases SP1 phosphorylation and induces HNF4\u03b1 cytoplasmic translocation. SP1 and HNF4\u03b1 physically interact.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C43 are supported by immunofluorescence, Western blot, and co-IP data (Figure 4). The co-IP confirms physical interaction between SP1 and HNF4\u03b1, and the reciprocal effects of inhibitors suggest a regulatory relationship. However, the mechanistic details of how this interaction regulates phosphorylation remain incompletely characterized.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:19:02.011116Z"
+    },
+    {
+      "id": "cca96731-9047-44d4-bdfc-a68a81c2dd23",
+      "content_id": "ba457033-bbb9-40bf-afa9-792a8959015d",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The PI3K/AKT signaling pathway, activated by SARS-CoV-2 infection, serves as a crucial regulatory node for ACE2 expression by enhancing SP1 phosphorylation and reducing nuclear localization of HNF4\u03b1. Colchicine inhibits this pathway.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C44-C53, and C75 are supported by Western blot and immunofluorescence data showing AKT phosphorylation upon SARS-CoV-2 infection and its inhibition by colchicine (Figure 5). PI3K inhibitors (LY294002, wortmannin) and AKT siRNA reduce ACE2 expression and affect SP1/HNF4\u03b1 localization. The EC50 values for PI3K inhibitors are provided.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:19:02.011116Z"
+    },
+    {
+      "id": "079faf0d-66ba-4a70-be39-bef185b8e3b0",
+      "content_id": "ba457033-bbb9-40bf-afa9-792a8959015d",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "In SARS-CoV-2-infected Syrian hamsters, colchicine or MithA treatment inhibits ACE2 expression, reduces viral replication in lungs and trachea, and ameliorates histopathological damage including inflammation and fibrosis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C6, C54-C60, C76-C77 are supported by in vivo data from Syrian hamsters (Figure 6). Immunofluorescence, RT-qPCR, H&E staining, and Masson's trichrome staining demonstrate reduced ACE2 expression, viral loads, and tissue damage. The study includes appropriate controls and quantification (n=5 per group).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:19:02.011116Z"
+    },
+    {
+      "id": "01e1c5f0-599f-4bdb-9df6-2d89cc0a21e7",
+      "content_id": "ba457033-bbb9-40bf-afa9-792a8959015d",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "SARS-CoV-2 directly infects kidneys of Syrian hamsters, and colchicine or MithA treatment reduces viral presence, suppresses ACE2 expression, and ameliorates renal histopathological damage.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C66 and C80 are supported by immunofluorescence and histopathological data from hamster kidneys (Figure 7). The data demonstrate substantial SARS-CoV-2 presence in kidneys and therapeutic effects of colchicine/MithA. This addresses the controversial question of direct kidney infection by SARS-CoV-2.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:19:02.011116Z"
+    },
+    {
+      "id": "1910390e-e5bd-4243-955d-0e6771c6f39d",
+      "content_id": "ba457033-bbb9-40bf-afa9-792a8959015d",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Under physiological conditions, SP1 and HNF4\u03b1 maintain basal ACE2 expression through opposing regulatory effects. SARS-CoV-2 infection activates PI3K/AKT signaling, which promotes SP1 activity and suppresses HNF4\u03b1 activity, leading to ACE2 up-regulation that may facilitate viral propagation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C72 represent a mechanistic model synthesized from the experimental data. Claims C67-C71 are well-supported by the collective evidence. Claim C72 (strategic adaptation hypothesis) is speculative but reasonable given the data showing virus-induced ACE2 up-regulation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:19:02.011116Z"
+    },
+    {
+      "id": "e65ddd4f-0c17-4125-b3e3-fb215f84a8d3",
+      "content_id": "ba457033-bbb9-40bf-afa9-792a8959015d",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The mechanism of SP1-HNF4\u03b1 antagonism involves protein-protein interaction where non-phosphorylated SP1 interacts with HNF4\u03b1. MithA and BI6015 can induce degradation of their respective targets, releasing the opposing factor for activation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C84-C90 propose mechanistic details based on co-IP data and effects of inhibitors. While C84-C85 are supported by experimental data, C86-C87 rely on citations to prior work about drug mechanisms. Claims C88-C90 are inferences that extend beyond the direct experimental evidence. The proposed mechanism is plausible but requires additional validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:19:02.011116Z"
+    },
+    {
+      "id": "f5448d44-91d6-4cc2-9f42-1b5aa2bd4db6",
+      "content_id": "ba457033-bbb9-40bf-afa9-792a8959015d",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "MithA has substantial clinical limitations due to toxicity, and the efficacy of colchicine for COVID-19 treatment remains inconclusive based on conflicting clinical trial results.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C91-C92 are supported by citations to prior clinical research. These claims appropriately contextualize the limitations of the therapeutic agents studied and acknowledge the uncertain clinical utility of colchicine for COVID-19.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:19:02.011116Z"
+    },
+    {
+      "id": "70f528a0-4935-49ef-939e-e64f96b0c1dd",
+      "content_id": "ba457033-bbb9-40bf-afa9-792a8959015d",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Background knowledge claims about SARS-CoV-2, ACE2, COVID-19 pathophysiology, and prior research on ACE2 regulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C7-C19 represent established knowledge and prior research findings, all supported by appropriate citations. These provide necessary context for the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:19:02.011116Z"
+    },
+    {
+      "id": "5e2cac23-e01d-46d8-8cab-78183c08619b",
+      "content_id": "ba457033-bbb9-40bf-afa9-792a8959015d",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Additional context from prior research on COVID-19 complications, signaling pathways, therapeutic targets, and variant characteristics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61, C73-C74, C78-C79, C81-C83, C93-C94 are supported by citations to prior research. These claims provide important context for interpreting the current findings, particularly regarding kidney injury, PI3K/AKT signaling, and variant characteristics.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:19:02.011116Z"
+    },
+    {
+      "id": "60df39ff-b586-46ad-b124-f5f6d73b919d",
+      "content_id": "ba457033-bbb9-40bf-afa9-792a8959015d",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Methodological details including cell lines, virus strain, biosafety procedures, and animal model specifications.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C95-C100 are methodological descriptions that are clearly stated and provide necessary experimental details. These are standard reporting elements for reproducibility.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:19:02.011116Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "68d2fbd7-c314-4f45-b65b-2f28262003c7",
+      "result_id": "7d884abd-3bfd-4fe1-8483-d4c5409c8963"
+    },
+    {
+      "claim_id": "957e1810-fa68-49f1-acf4-9ea517289556",
+      "result_id": "7d884abd-3bfd-4fe1-8483-d4c5409c8963"
+    },
+    {
+      "claim_id": "338b7362-6113-46c1-a1dc-b7a94fac7a9e",
+      "result_id": "7d884abd-3bfd-4fe1-8483-d4c5409c8963"
+    },
+    {
+      "claim_id": "41f1b031-0db8-460c-a678-e23382b55de0",
+      "result_id": "7d884abd-3bfd-4fe1-8483-d4c5409c8963"
+    },
+    {
+      "claim_id": "ba8bd5af-458f-467b-a649-815cd126750c",
+      "result_id": "b87c9fce-0644-44cc-8d68-7b012ca873de"
+    },
+    {
+      "claim_id": "b331382c-4f6d-46d0-a6a7-1e75139511bf",
+      "result_id": "b87c9fce-0644-44cc-8d68-7b012ca873de"
+    },
+    {
+      "claim_id": "16307391-1c6e-42a8-8fc4-923daf0dc0d3",
+      "result_id": "b87c9fce-0644-44cc-8d68-7b012ca873de"
+    },
+    {
+      "claim_id": "845ae7a7-b326-4dd6-9fb8-11c3da3c2791",
+      "result_id": "b87c9fce-0644-44cc-8d68-7b012ca873de"
+    },
+    {
+      "claim_id": "29a6c3e8-6b8d-4d39-8f85-368972201f90",
+      "result_id": "b87c9fce-0644-44cc-8d68-7b012ca873de"
+    },
+    {
+      "claim_id": "479fa352-53cf-472b-92df-5d4a27b0c56d",
+      "result_id": "b87c9fce-0644-44cc-8d68-7b012ca873de"
+    },
+    {
+      "claim_id": "9369a48f-7bea-4c74-b901-54b20fd0c9a7",
+      "result_id": "d00ef864-63fc-46a8-a913-bed38d444e33"
+    },
+    {
+      "claim_id": "10365082-87f8-446e-98b9-4bf03e145579",
+      "result_id": "d00ef864-63fc-46a8-a913-bed38d444e33"
+    },
+    {
+      "claim_id": "21e257ca-3be8-4876-8cbc-7b10040ac092",
+      "result_id": "d00ef864-63fc-46a8-a913-bed38d444e33"
+    },
+    {
+      "claim_id": "d60a7afd-dc73-48ba-8c14-ae60b66c471e",
+      "result_id": "d00ef864-63fc-46a8-a913-bed38d444e33"
+    },
+    {
+      "claim_id": "381692d4-a382-4341-aa71-ae2c796d52f9",
+      "result_id": "d00ef864-63fc-46a8-a913-bed38d444e33"
+    },
+    {
+      "claim_id": "59a5afa4-fed4-453c-9784-edea8e2cfcb6",
+      "result_id": "d00ef864-63fc-46a8-a913-bed38d444e33"
+    },
+    {
+      "claim_id": "9f1b9e68-e1fd-4c85-b5da-4d446055c2ad",
+      "result_id": "d00ef864-63fc-46a8-a913-bed38d444e33"
+    },
+    {
+      "claim_id": "493b9b8c-a057-4dc3-8882-15953a490ab0",
+      "result_id": "d00ef864-63fc-46a8-a913-bed38d444e33"
+    },
+    {
+      "claim_id": "2c1908b6-8a02-4c78-adf7-a6a7a2288b6f",
+      "result_id": "ad1e7fd8-b9ca-4494-9731-6e1d71343d24"
+    },
+    {
+      "claim_id": "3bfc330c-3cb6-4eb3-9324-6e0b881e134c",
+      "result_id": "ad1e7fd8-b9ca-4494-9731-6e1d71343d24"
+    },
+    {
+      "claim_id": "1570dbe8-24b5-4b05-9ce9-73dbcb719fe4",
+      "result_id": "ad1e7fd8-b9ca-4494-9731-6e1d71343d24"
+    },
+    {
+      "claim_id": "009b156a-42fe-451b-80b7-91abe92d7ce7",
+      "result_id": "ad1e7fd8-b9ca-4494-9731-6e1d71343d24"
+    },
+    {
+      "claim_id": "fc5de240-7abf-4d87-a5c3-c9e9fa7bbfef",
+      "result_id": "ad1e7fd8-b9ca-4494-9731-6e1d71343d24"
+    },
+    {
+      "claim_id": "2be3761d-1fcc-4b04-8983-5ab2aa92cc0c",
+      "result_id": "ad1e7fd8-b9ca-4494-9731-6e1d71343d24"
+    },
+    {
+      "claim_id": "3abfd9ef-8fe3-4627-975a-c8a5159c0a30",
+      "result_id": "ad1e7fd8-b9ca-4494-9731-6e1d71343d24"
+    },
+    {
+      "claim_id": "efa99003-4c34-4059-bcf9-b1d383c4a88e",
+      "result_id": "cca96731-9047-44d4-bdfc-a68a81c2dd23"
+    },
+    {
+      "claim_id": "3c193a4d-d60f-44a8-b3f4-bc9fea6d675e",
+      "result_id": "cca96731-9047-44d4-bdfc-a68a81c2dd23"
+    },
+    {
+      "claim_id": "78011a39-7eb5-4170-8365-637ec508cfc6",
+      "result_id": "cca96731-9047-44d4-bdfc-a68a81c2dd23"
+    },
+    {
+      "claim_id": "b7fca53b-3573-4f01-8a16-a50411c83c94",
+      "result_id": "cca96731-9047-44d4-bdfc-a68a81c2dd23"
+    },
+    {
+      "claim_id": "e45b9c66-3392-46b6-ac49-601218a97377",
+      "result_id": "cca96731-9047-44d4-bdfc-a68a81c2dd23"
+    },
+    {
+      "claim_id": "15990335-ccf6-4eb8-a2e2-5ac3cfa9ca00",
+      "result_id": "cca96731-9047-44d4-bdfc-a68a81c2dd23"
+    },
+    {
+      "claim_id": "0cf48389-08ad-4941-aa64-8d91d3a90e07",
+      "result_id": "cca96731-9047-44d4-bdfc-a68a81c2dd23"
+    },
+    {
+      "claim_id": "296be89c-b5ed-4187-a8e6-8b5d07bb6a86",
+      "result_id": "cca96731-9047-44d4-bdfc-a68a81c2dd23"
+    },
+    {
+      "claim_id": "32e129da-c6a2-4759-8203-18839df6395b",
+      "result_id": "cca96731-9047-44d4-bdfc-a68a81c2dd23"
+    },
+    {
+      "claim_id": "b33bf987-1a11-4444-b1ae-c694feab5f71",
+      "result_id": "cca96731-9047-44d4-bdfc-a68a81c2dd23"
+    },
+    {
+      "claim_id": "daf4c8f5-a5b2-4bb2-a250-86d39ceca9c9",
+      "result_id": "cca96731-9047-44d4-bdfc-a68a81c2dd23"
+    },
+    {
+      "claim_id": "dead5068-308c-4702-97d0-b2a269f47b60",
+      "result_id": "cca96731-9047-44d4-bdfc-a68a81c2dd23"
+    },
+    {
+      "claim_id": "38455ed4-f532-4279-b3b2-c1d2886f9f8f",
+      "result_id": "079faf0d-66ba-4a70-be39-bef185b8e3b0"
+    },
+    {
+      "claim_id": "ce0d1944-6552-4b78-a3c9-d2eb079d6516",
+      "result_id": "079faf0d-66ba-4a70-be39-bef185b8e3b0"
+    },
+    {
+      "claim_id": "4b6439e7-7297-4302-b892-db695ecb13ed",
+      "result_id": "079faf0d-66ba-4a70-be39-bef185b8e3b0"
+    },
+    {
+      "claim_id": "4a86f89f-dab6-4437-a442-e37c11e7b66e",
+      "result_id": "079faf0d-66ba-4a70-be39-bef185b8e3b0"
+    },
+    {
+      "claim_id": "6c678e1b-8a33-44d1-aa72-4284ff121c4d",
+      "result_id": "079faf0d-66ba-4a70-be39-bef185b8e3b0"
+    },
+    {
+      "claim_id": "f9d8c988-a013-4069-ba00-4b1bffd3ba2c",
+      "result_id": "079faf0d-66ba-4a70-be39-bef185b8e3b0"
+    },
+    {
+      "claim_id": "16dc5c30-34b6-4896-bf80-c261b10d147e",
+      "result_id": "079faf0d-66ba-4a70-be39-bef185b8e3b0"
+    },
+    {
+      "claim_id": "244998e0-3276-4c42-9846-52df9882bbe8",
+      "result_id": "079faf0d-66ba-4a70-be39-bef185b8e3b0"
+    },
+    {
+      "claim_id": "32951104-165e-4a90-9eab-663cf91f9c44",
+      "result_id": "079faf0d-66ba-4a70-be39-bef185b8e3b0"
+    },
+    {
+      "claim_id": "25a7a3b5-97c8-4c41-bca2-1583c1f12baa",
+      "result_id": "079faf0d-66ba-4a70-be39-bef185b8e3b0"
+    },
+    {
+      "claim_id": "2579cc1d-9044-4a93-824f-fe9592f1789f",
+      "result_id": "079faf0d-66ba-4a70-be39-bef185b8e3b0"
+    },
+    {
+      "claim_id": "1711953b-d62b-4112-a6e4-8622a84e98d6",
+      "result_id": "01e1c5f0-599f-4bdb-9df6-2d89cc0a21e7"
+    },
+    {
+      "claim_id": "367dbde8-fcfd-4fb7-a732-a0f74f0bd6b0",
+      "result_id": "01e1c5f0-599f-4bdb-9df6-2d89cc0a21e7"
+    },
+    {
+      "claim_id": "08e32046-8f85-44c0-9dc2-8be85e922a6e",
+      "result_id": "01e1c5f0-599f-4bdb-9df6-2d89cc0a21e7"
+    },
+    {
+      "claim_id": "9ad85c0b-5cac-4cfc-8506-b4ff557098e2",
+      "result_id": "01e1c5f0-599f-4bdb-9df6-2d89cc0a21e7"
+    },
+    {
+      "claim_id": "3ad54475-0524-4370-b507-dbee38fc6099",
+      "result_id": "01e1c5f0-599f-4bdb-9df6-2d89cc0a21e7"
+    },
+    {
+      "claim_id": "7a13c35b-8fcd-4cdd-805c-5cfbb0a76a9d",
+      "result_id": "01e1c5f0-599f-4bdb-9df6-2d89cc0a21e7"
+    },
+    {
+      "claim_id": "ef437160-4db8-4473-a52d-714fbb551e4b",
+      "result_id": "1910390e-e5bd-4243-955d-0e6771c6f39d"
+    },
+    {
+      "claim_id": "82f71735-db99-4fed-9d0d-33c72ce8b0e0",
+      "result_id": "1910390e-e5bd-4243-955d-0e6771c6f39d"
+    },
+    {
+      "claim_id": "15047322-7cf2-4dfd-b14d-4bb92a93f20b",
+      "result_id": "1910390e-e5bd-4243-955d-0e6771c6f39d"
+    },
+    {
+      "claim_id": "1a1fd582-46fc-4fa7-b59d-9c68b4572eb8",
+      "result_id": "1910390e-e5bd-4243-955d-0e6771c6f39d"
+    },
+    {
+      "claim_id": "adf77858-4579-4646-92d3-2eddc8539336",
+      "result_id": "1910390e-e5bd-4243-955d-0e6771c6f39d"
+    },
+    {
+      "claim_id": "2b929252-4ec0-4967-bfec-23f60406f7f2",
+      "result_id": "1910390e-e5bd-4243-955d-0e6771c6f39d"
+    },
+    {
+      "claim_id": "6cc825b2-18b6-4d17-b32a-adf10cd81425",
+      "result_id": "e65ddd4f-0c17-4125-b3e3-fb215f84a8d3"
+    },
+    {
+      "claim_id": "c2d7f0a8-2ec2-40fc-ade3-45a957e9c732",
+      "result_id": "e65ddd4f-0c17-4125-b3e3-fb215f84a8d3"
+    },
+    {
+      "claim_id": "dfe2a705-d884-4cf1-a567-1ea06379543a",
+      "result_id": "e65ddd4f-0c17-4125-b3e3-fb215f84a8d3"
+    },
+    {
+      "claim_id": "96a0b493-1e26-46c4-84b1-83f0497547bd",
+      "result_id": "e65ddd4f-0c17-4125-b3e3-fb215f84a8d3"
+    },
+    {
+      "claim_id": "fe3aa4a0-a7fb-4876-a766-f5776b1e0264",
+      "result_id": "e65ddd4f-0c17-4125-b3e3-fb215f84a8d3"
+    },
+    {
+      "claim_id": "8f79b515-6326-43bd-8f2a-630df7e49d9f",
+      "result_id": "e65ddd4f-0c17-4125-b3e3-fb215f84a8d3"
+    },
+    {
+      "claim_id": "5d50a421-cf80-4c4c-95ab-a039adb8ceab",
+      "result_id": "e65ddd4f-0c17-4125-b3e3-fb215f84a8d3"
+    },
+    {
+      "claim_id": "3989365c-1612-4fbe-a22d-1eb2e5a9a243",
+      "result_id": "f5448d44-91d6-4cc2-9f42-1b5aa2bd4db6"
+    },
+    {
+      "claim_id": "77c8d810-84dd-4536-8f6a-4761944f9a0f",
+      "result_id": "f5448d44-91d6-4cc2-9f42-1b5aa2bd4db6"
+    },
+    {
+      "claim_id": "ac3eb0c0-f24b-4b86-b212-97bc2ed8302b",
+      "result_id": "70f528a0-4935-49ef-939e-e64f96b0c1dd"
+    },
+    {
+      "claim_id": "86586814-6f05-4522-b9f6-34b88f509bd8",
+      "result_id": "70f528a0-4935-49ef-939e-e64f96b0c1dd"
+    },
+    {
+      "claim_id": "bff507db-83aa-4a67-af0b-c521e74056e0",
+      "result_id": "70f528a0-4935-49ef-939e-e64f96b0c1dd"
+    },
+    {
+      "claim_id": "87dd517b-e351-46bf-9334-a443866c5119",
+      "result_id": "70f528a0-4935-49ef-939e-e64f96b0c1dd"
+    },
+    {
+      "claim_id": "623875fc-8f58-4e53-92b4-1d2277779ba4",
+      "result_id": "70f528a0-4935-49ef-939e-e64f96b0c1dd"
+    },
+    {
+      "claim_id": "e6daf00c-1692-4d96-9848-4388cde8b827",
+      "result_id": "70f528a0-4935-49ef-939e-e64f96b0c1dd"
+    },
+    {
+      "claim_id": "3fe147c1-e95f-48b9-b70d-4d731a2e5a8c",
+      "result_id": "70f528a0-4935-49ef-939e-e64f96b0c1dd"
+    },
+    {
+      "claim_id": "7bb0138c-cd16-4985-8225-e770c1842abd",
+      "result_id": "70f528a0-4935-49ef-939e-e64f96b0c1dd"
+    },
+    {
+      "claim_id": "5000fe33-ebca-4caf-8cc0-bfa345436d8e",
+      "result_id": "70f528a0-4935-49ef-939e-e64f96b0c1dd"
+    },
+    {
+      "claim_id": "6cc97c6f-6cab-4139-8bec-6356f52ae55e",
+      "result_id": "70f528a0-4935-49ef-939e-e64f96b0c1dd"
+    },
+    {
+      "claim_id": "5309477d-13db-4045-9dc2-cfd52123bf19",
+      "result_id": "70f528a0-4935-49ef-939e-e64f96b0c1dd"
+    },
+    {
+      "claim_id": "de963136-fb65-4852-b40c-4fcc683843ef",
+      "result_id": "70f528a0-4935-49ef-939e-e64f96b0c1dd"
+    },
+    {
+      "claim_id": "151eea70-1b78-4195-8bbb-9bcc48e4530e",
+      "result_id": "70f528a0-4935-49ef-939e-e64f96b0c1dd"
+    },
+    {
+      "claim_id": "e475f7cb-49bf-423e-b348-81ff35546cb8",
+      "result_id": "70f528a0-4935-49ef-939e-e64f96b0c1dd"
+    },
+    {
+      "claim_id": "fe3f93aa-8464-453c-a777-9c2a1ed33b33",
+      "result_id": "5e2cac23-e01d-46d8-8cab-78183c08619b"
+    },
+    {
+      "claim_id": "ec68a517-9061-45b1-9b90-235ff36c6240",
+      "result_id": "5e2cac23-e01d-46d8-8cab-78183c08619b"
+    },
+    {
+      "claim_id": "b49f2113-8b58-4a7c-aeb9-73185bc3df85",
+      "result_id": "5e2cac23-e01d-46d8-8cab-78183c08619b"
+    },
+    {
+      "claim_id": "b9aa8144-abde-41ab-92fc-11148a724dfe",
+      "result_id": "5e2cac23-e01d-46d8-8cab-78183c08619b"
+    },
+    {
+      "claim_id": "bd53a4f3-4d00-4609-9126-2b5237ffb9cb",
+      "result_id": "5e2cac23-e01d-46d8-8cab-78183c08619b"
+    },
+    {
+      "claim_id": "eb340d5a-c2e1-4546-a317-45d7b455932c",
+      "result_id": "5e2cac23-e01d-46d8-8cab-78183c08619b"
+    },
+    {
+      "claim_id": "74c3e477-eee0-456b-a09d-52030af4ea9f",
+      "result_id": "5e2cac23-e01d-46d8-8cab-78183c08619b"
+    },
+    {
+      "claim_id": "47190513-c4de-4105-8bf0-712f3bb5dce2",
+      "result_id": "5e2cac23-e01d-46d8-8cab-78183c08619b"
+    },
+    {
+      "claim_id": "b5390142-f03b-4c70-b465-34a2d14c71a9",
+      "result_id": "5e2cac23-e01d-46d8-8cab-78183c08619b"
+    },
+    {
+      "claim_id": "4c807081-f93e-46ca-b618-7521d57a8184",
+      "result_id": "5e2cac23-e01d-46d8-8cab-78183c08619b"
+    },
+    {
+      "claim_id": "ad291ee4-30f3-4f92-aa17-4642d89c3808",
+      "result_id": "60df39ff-b586-46ad-b124-f5f6d73b919d"
+    },
+    {
+      "claim_id": "83c95d19-1bf8-4cc7-a660-2d6a93c818c5",
+      "result_id": "60df39ff-b586-46ad-b124-f5f6d73b919d"
+    },
+    {
+      "claim_id": "90694039-8d4b-48c1-bfef-2f15c319dcc3",
+      "result_id": "60df39ff-b586-46ad-b124-f5f6d73b919d"
+    },
+    {
+      "claim_id": "70d8ad50-527c-43ce-9683-970e9893f0a3",
+      "result_id": "60df39ff-b586-46ad-b124-f5f6d73b919d"
+    },
+    {
+      "claim_id": "fe0363b4-76c6-42af-a2bf-0fae2ea0d479",
+      "result_id": "60df39ff-b586-46ad-b124-f5f6d73b919d"
+    },
+    {
+      "claim_id": "cb65ed16-f5ca-4ec1-8af7-6ed999a6fba9",
+      "result_id": "60df39ff-b586-46ad-b124-f5f6d73b919d"
+    }
+  ],
+  "comparisons": []
+}

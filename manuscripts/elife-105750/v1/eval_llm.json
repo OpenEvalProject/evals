@@ -1,0 +1,103 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3"
+    ],
+    "result": "PhoP regulates intracellular cAMP levels primarily under stress conditions. Complementation of the phoPR mutant restores cAMP levels, though higher cAMP in the complemented strain under normal and NO stress conditions is attributed to elevated phoP expression. The authors conclude that PhoP's role in controlling cAMP is mainly in stressed cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C1-C3 present a conclusion that contradicts the supporting data. C1 states complementation 'could restore cAMP levels' (not to WT levels as originally claimed), and C2 acknowledges higher cAMP in the complemented strain under normal and NO stress conditions. However, C3 concludes PhoP controls cAMP 'mainly in stressed cells,' which is inconsistent with the observation that complementation shows effects under normal conditions. The correction from 'restore cAMP to the WT level' to just 'restore cAMP levels' and the acknowledgment of higher expression in the complemented strain suggest incomplete restoration and potential overexpression artifacts. Without seeing the actual data in Figure 1, it's unclear whether the stress-specific conclusion is justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5"
+    ],
+    "result": "Statistical analysis was performed using Student's paired t-test with significance threshold of p\u22640.05.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C4-C5 describe standard statistical methodology. However, the appropriateness of using a paired t-test depends on the experimental design (whether measurements are truly paired). The manuscript is a correction notice, and multiple p-value errors were identified across figures, raising concerns about the rigor of the original statistical analysis. Without details on sample pairing, biological vs. technical replicates, and normality assumptions, the appropriateness of this test cannot be fully evaluated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6"
+    ],
+    "result": "cAMP secretion in culture filtrates does not differ significantly between WT-H37Rv and phoPR-KO mutant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C6 reports a corrected statistical finding where the original two-star significance was changed to non-significant. This correction is explicitly stated and represents a straightforward statistical re-evaluation. The claim is clearly supported as a corrected result, though it contradicts the original publication's finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C7"
+    ],
+    "result": "rv0891c gene expression differs significantly between WT and phoPR-KO strains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C7 reports corrected statistical significance (changed from ** to *) for rv0891c expression differences. The correction is explicitly stated with p<0.05 significance maintained, indicating the difference remains statistically significant albeit at a lower level. The claim is supported as a corrected statistical finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C8"
+    ],
+    "result": "rv0805 gene expression in WT-H37Rv is significantly different between neutral pH (7.0) and acidic pH (4.5).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C8 reports corrected statistical significance (changed from p<0.01 to p<0.05) for pH-dependent rv0805 expression. The correction maintains statistical significance, and the claim is explicitly supported by the corrected Figure 2B data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C9",
+      "C10"
+    ],
+    "result": "cAMP levels vary significantly between WT-Rv0805 and WT-Rv0805M strains, with corrected standard error calculations for gene expression data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C10 report corrected statistical analyses. C9 shows significant cAMP variation between strains (p<0.05 and p<0.01), while C10 corrects a substantial calculation error in standard error (from 0.967 to 0.319). The three-fold reduction in standard error is significant and could affect interpretation of variability, but the claims are supported as corrected findings with updated source data files provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C11"
+    ],
+    "result": "Fluorescence intensity differs significantly between WT and phoPR-KO mutant strains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C11 reports corrected statistical significance for fluorescence measurements in Figure 4B. The correction adds previously omitted p-values and corrects significance levels. The claim is supported as a corrected statistical finding with updated source data files provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C12",
+      "C13"
+    ],
+    "result": "rv0805 gene expression differs significantly between WT and both overexpression strains (WT-Rv0805 and WT-Rv0805M).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C13 report corrected statistical significance for rv0805 expression comparisons (*** changed to ** and ** changed to *). Both comparisons remain statistically significant after correction, though at reduced significance levels. The claims are supported as corrected statistical findings.",
+    "result_type": "MINOR"
+  }
+]

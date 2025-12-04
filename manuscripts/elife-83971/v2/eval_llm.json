@@ -1,0 +1,209 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Monkeys' behavioral performance in the delayed reward task reflects integration of reward size and delay into subjective value estimates consistent with hyperbolic temporal discounting. Both monkeys showed higher rejection rates for smaller rewards and longer delays, with significant interactive effects between reward size and delay (C12-C14). The behavioral data fit well to a hyperbolic discounting model (R\u00b2=0.98 for monkey H, R\u00b2=0.86 for monkey C), with monkey C showing steeper discounting (k=1.62 s\u207b\u00b9) than monkey H (k=1.28 s\u207b\u00b9) (C15-C16).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The behavioral findings are well-supported by appropriate statistical analyses (two-way ANOVAs with significant p-values) and model fitting procedures. The hyperbolic discounting model provides good fits to the data (high R\u00b2 values), and the results are consistent with prior monkey studies (C15 cites supporting work). Control experiments confirmed monkeys could discriminate cue values (C54-C55).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C17",
+      "C18"
+    ],
+    "result": "Control analyses showed that muscle activity patterns were not modulated by reward contingencies during the waiting period, while eye position was affected by both reward size and delay. This indicates that postural control remained constant across conditions while gaze behavior reflected task parameters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These control findings are supported by appropriate statistical analyses (two-way ANOVAs with Bonferroni correction). The EMG results rule out confounding motor effects, while the eye position results confirm that animals were processing the reward/delay information. These controls strengthen interpretation of the neural findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C67",
+      "C68"
+    ],
+    "result": "Single-unit recordings from 231 STN neurons revealed that 48% were modulated by reward size and 39% by delay, with temporal dynamics showing reward encoding preferentially early after cue presentation and delay encoding becoming more common later during the waiting period. Approximately 34% of neurons were sensitive to both parameters, with 22% showing simultaneous integration within the same time bins. The Fano factor analysis indicated sustained task-relevant information processing throughout the post-instruction period.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These findings are well-supported by rigorous statistical analyses using two-way ANOVAs with appropriate multiple comparison corrections (Bonferroni, p<0.05/173 time bins). The temporal dynamics are clearly demonstrated, and the Fano factor analysis provides additional evidence for sustained encoding. Sample sizes are adequate (231 neurons from two monkeys), though the distribution is uneven between animals (21 vs 91 reward-modulated neurons from monkeys H and C).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Time-resolved regression analyses revealed dynamic encoding patterns where neural activities were often influenced in opposite directions by reward and delay. During phase 1 (0-2s), the population showed predominantly Discounting- encoding (48% of task-related neurons, mean angle \u03b8\u2081=-12\u00b0), consistent with temporal discounting. In phase 2 (2-3.5s), encoding shifted to predominantly Compounding+ pattern (34% of neurons, mean angle \u03b8\u2082=65\u00b0). Individual neurons (22%) switched from Discounting- to Compounding+ between phases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The regression analyses are methodologically sound, using appropriate linear models with eye movement controls. The vector analysis in regression space provides a clear framework for categorizing encoding patterns. Statistical validation using Rayleigh's test confirms non-uniform distributions (p<0.001). The dynamic shift between phases is demonstrated both at population and single-neuron levels. However, the interpretation of the Compounding+ pattern as inconsistent with temporal discounting requires careful consideration of what this pattern might represent functionally.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C42",
+      "C43",
+      "C44",
+      "C59",
+      "C71"
+    ],
+    "result": "Neurons encoding temporally discounted value (Discounting- in phase 1 and Compounding+ in phase 2) were preferentially located in the dorso-posterior portion of the STN. PCA component scores for PC1 and PC2 correlated significantly with position along the ventro-anterior to dorso-posterior axis (Spearman's rho=0.35, p<0.001 for PC1; rho=0.19, p=0.003 for PC2). These neurons did not differ from others in firing rate or spike shape, indicating the anatomical gradient reflects functional specialization rather than cell-type differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The anatomical findings are supported by appropriate statistical tests (two-sample t-tests, Spearman correlations with significant p-values). The localization challenges the classical tripartite model of STN organization (C59), as motivational signals were found in traditionally sensorimotor regions. However, the spatial resolution of the recordings and potential sampling biases should be considered. The lack of differences in basic electrophysiological properties (C35) strengthens the interpretation that this represents functional topography.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C45"
+    ],
+    "result": "Principal component analysis of the population revealed four significant PCs explaining 72.4% of total variance. PC1 (45.1% variance) showed temporal discounting evolving to Compounding+ pattern. PC2 (13.9% variance) showed transient reward-only encoding followed by robust Discounting+ pattern. PC3 (7.4% variance) and PC4 (6% variance) showed additional temporal phases of encoding. PC3 and PC4 scores showed no spatial correlation, suggesting anatomically intermixed processing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The PCA is methodologically sound with appropriate validation against surrogate control data (1000 shuffles, 95% confidence intervals). The four significant PCs are clearly identified and their temporal dynamics well-characterized. However, the analysis uses non-overlapped 100ms windows to maintain independence, which may miss some temporal dynamics. The interpretation that PC1 and PC2 represent temporally discounted value is reasonable but requires careful consideration of what the different patterns mean functionally. The lack of spatial correlation for PC3/PC4 is appropriately interpreted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "At both single-neuron and population levels, STN shows cost-benefit integration between reward desirability and delay, with signals dynamically combining both attributes into integrated value estimates. This encoding evolved dynamically across the waiting period and was distributed inhomogeneously along the antero-posterior axis, with dorso-posterior neurons representing temporally discounted value most strongly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This overarching result synthesizes multiple well-supported findings from behavioral, single-unit, and population analyses. The cost-benefit integration is demonstrated through significant reward\u00d7delay interactions in both behavior and neural activity. The dynamic evolution is shown through time-resolved analyses. The anatomical gradient is supported by correlation analyses. All component claims are backed by appropriate statistics and converging evidence from multiple analytical approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "The authors propose that temporal discounting likely originates from different neural circuits than those signaling expected reward value, and that dynamic value integration through STN may regulate persistent behaviors requiring continuous cost-benefit estimation. They suggest STN promotes motivated behavior by computing acceptable costs and may serve as a hub for regulating aberrant reward processing in psychiatric disorders.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These interpretive claims extend beyond what the data directly demonstrate. While the dissociation of reward-only and delay-only neurons (C69) is supported, the inference about separate circuits is speculative without connectivity data. The proposed regulatory roles (C70, C73) are reasonable interpretations but lack direct causal evidence. The clinical implications (C74) are highly speculative, though supported by citations to relevant clinical literature (C61-C63). These represent important hypotheses for future work but are not directly tested in the current study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C54",
+      "C55"
+    ],
+    "result": "In a separate decision task, monkeys reliably selected the more advantageous options, choosing larger rewards when delays were equal (97-99% correct) and shorter delays when rewards were equal (95-99% correct).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This control experiment is well-designed and statistically supported (t-tests with p<0.001). It confirms that monkeys understood and appropriately valued the different cue types, validating the interpretation of their behavior in the main delayed reward task. Sample sizes appear adequate based on the reported statistics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "The present results challenge the classical tripartite model of STN functional topography, which divides STN into segregated motor, associative, and limbic regions. Previous studies found reward-responsive neurons scattered throughout STN rather than localized to the anterior limbic zone, and recent evidence points toward overlapping rather than segregated territories.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This assessment of prior work and its relation to current findings is well-supported by appropriate citations (C56-C58, C60). The challenge to the tripartite model is justified by the current anatomical findings showing value-encoding neurons in dorso-posterior (traditionally motor) regions. The synthesis with recent literature suggesting overlapping territories (C60) is appropriate. However, the resolution of the current recordings and potential sampling biases should be acknowledged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C61",
+      "C62",
+      "C63",
+      "C66"
+    ],
+    "result": "The study is motivated by extensive prior work establishing: (1) temporal discounting as a fundamental phenomenon in reward valuation; (2) STN's role in inhibitory control and reward-seeking behavior; (3) STN's anatomical position at the crossroads of basal ganglia circuits; (4) clinical evidence from DBS-STN effects on motivation; and (5) the relevance of temporal discounting to psychiatric disorders.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The background claims are well-supported by extensive citations to relevant prior literature. The authors appropriately cite foundational work on temporal discounting (C7), STN function in inhibitory control and motivation (C10-C11, C47-C52), anatomical organization (C46, C53), clinical observations (C50-C51, C61-C63), and methodological precedents (C66). These provide solid justification for the current study's hypotheses and approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C64",
+      "C65"
+    ],
+    "result": "The study used two rhesus monkeys (one male, one female) with appropriate ethical approval and compliance with animal care guidelines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The methodological details regarding subjects and ethical approval are clearly stated and appropriate. The use of two animals is a limitation for generalizability but is typical for this type of invasive neurophysiology study. The uneven distribution of task-related neurons between animals (noted in other results) should be considered when interpreting findings.",
+    "result_type": "MINOR"
+  }
+]

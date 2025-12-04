@@ -1,0 +1,369 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C17",
+      "C18",
+      "C29",
+      "C30"
+    ],
+    "result": "The manuscript establishes that the enteric nervous system (ENS) arises from two neural crest populations: vagal neural crest from the caudal hindbrain colonizing the entire gut, and sacral neural crest from the caudal neural tube populating the post-umbilical gut. The foregut/midgut ENS arises solely from vagal neural crest, while the hindgut is populated by both vagal and sacral neural crest.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C12-C15, C17-C18, C29-C30 collectively describe well-established developmental biology knowledge about ENS origins, supported by multiple citations to foundational work (Le Douarin and Teillet, 1973; Burns and Douarin, 1998) and confirmed by the authors' lineage tracing experiments (C71, C77). The dual origin of the ENS is a core premise of the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C31",
+      "C48",
+      "C84"
+    ],
+    "result": "The authors developed and applied RIA retrovirus-based lineage tracing coupled with single-cell RNA sequencing to label and profile vagal and sacral neural crest populations, generating transcriptomic data from 26,993 cells organized into 15 clusters, with neuronal clusters further subdivided into 11 subclusters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31, C48, and C84 describe the methodological approach and data generation. The RIA retrovirus method is supported by citation (Tang et al., 2019), and the cell numbers and clustering results are clearly stated with appropriate computational methods referenced (Zheng et al., 2017; Bray et al., 2016; Butler et al., 2018).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C35",
+      "C36",
+      "C90",
+      "C91"
+    ],
+    "result": "At E10, vagal and sacral neural crest populations form overlapping subsets of neuronal and glial cell types in the post-umbilical gut. The post-umbilical vagal neural crest more closely resembles the sacral neural crest than the pre-umbilical vagal neural crest. However, some neuronal subtypes are vagal-specific (CALB2/TAC1/PBX3+ neurons, sC10) while others are predominantly sacral-derived (>50% in post-umbilical-specific subtypes).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C4, C35-C36, C90-C91 are supported by single-cell transcriptomic analysis (Figure 2C, Figure 6D) showing cluster composition and UMAP distributions. The finding that post-umbilical vagal cells resemble sacral more than pre-umbilical vagal is a key observation supported by the data, though the interpretation of 'resemblance' could benefit from quantitative similarity metrics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C38",
+      "C60",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "RNA velocity trajectory analysis reveals that vagal neural crest maintains a neuronal/glial progenitor pool (cluster C0) at E10, whereas the sacral neural crest is depleted in this progenitor cluster and instead shows differentiation trajectories within enteric glial/SCP or neuronal clusters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6, C38, C60, C95-C97 are supported by RNA velocity analysis (Figure 7A-C) using scVelo dynamical modeling. The absence of C0 progenitor cluster in sacral-derived cells and presence in vagal-derived cells is clearly shown in the data. However, the interpretation that sacral cells are 'depleted' rather than having already differentiated past this stage requires careful consideration of developmental timing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C101",
+      "C102",
+      "C106",
+      "C107",
+      "C108",
+      "C110"
+    ],
+    "result": "Trajectory analysis predicts that sacral neural crest-derived cells give rise to enteric glia/SCPs, which is confirmed by immunohistochemistry showing sacral-derived cells expressing P0, PLP1, and GFAP, with a large population residing in the Nerve of Remak.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C40, C101-C102, C106-C108, C110 are supported by both computational trajectory analysis (Figure 7C, CellRank) and immunohistochemical validation (Figure 8). The convergence of computational prediction and experimental validation strengthens this result. The citation to Laddach et al., 2023 regarding neurogenic potential of enteric glia provides relevant context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Bulk RNA-seq differential gene expression analysis reveals distinct transcriptional profiles between sacral and vagal post-umbilical populations. Sacral-enriched genes include SST1/SSTR, DBH, TH, DDC, PNMT, SLC18A2, GRM3, GFRA3, and CXCL12. Vagal post-umbilical population expresses ADRA1B, GAD1, CALB2, NTS, SEMA3D, TNC, HES5, and DLL1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C47 are supported by differential gene expression analysis shown in Figure 1C-D. The volcano plot and heatmap provide clear evidence for these expression differences. However, the functional interpretation of some genes (e.g., GRM3 reflecting 'transient state') is speculative and not directly tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C61",
+      "C62"
+    ],
+    "result": "Single-cell analysis identified distinct cluster identities: neuronal clusters C2 (VIP/TAC1+, predominantly vagal) and C4 (DDC/PNMT/CHGB+, post-umbilical specific with 65% sacral contribution); glial clusters C1, C6, C8 with varying vagal/sacral contributions; and progenitor clusters C0 (vagal-derived, 92% pre-umbilical), C3 (52% sacral), and C7.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C59, C61-C62 describe cluster characterization supported by gene expression data (Figure 3A-B) and cluster composition analysis (Figure 2\u2014figure supplement 1). The marker genes used for cluster identification are appropriately cited and the proportional contributions are clearly quantified. The classification scheme is logical and well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Dual retroviral lineage tracing and immunohistochemistry confirm that the pre-umbilical gut contains only vagal neural crest-derived cells expressing neuronal markers (ACHR, HUC/D, TH, DBH) and glial markers (P0, SOX10), with no sacral contribution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C76 are supported by immunohistochemistry data (Figure 4, Figure 4\u2014figure supplement 1) showing H2B-RFP+ (vagal) but not H2B-YFP+ (sacral) cells in the pre-umbilical gut. This validates the scRNA-seq findings and confirms established knowledge from quail-chick chimera studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "The post-umbilical ENS contains both vagal and sacral neural crest-derived cells. Immunohistochemistry reveals differential marker expression: ACHR+ cells are more abundant in vagal-derived populations throughout the post-umbilical region, while sacral ACHR+ cells are primarily in the myenteric plexus. Both populations contribute to HUC/D+ neurons, TH+/DBH+ neurons, and SOX10+/P0+ Schwann cells/progenitors, with sacral-derived cells predominantly in the Nerve of Remak.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C83 are supported by dual-label immunohistochemistry (Figure 5, Figure 5\u2014figure supplements 1-2) showing spatial distribution and marker expression of vagal (H2B-RFP+) and sacral (H2B-YFP+) derived cells. The data clearly demonstrate overlapping but distinct contributions, validating the scRNA-seq findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Neuronal subcluster analysis reveals distinct progenitor and differentiated populations: neuroblast-like subclusters (sC0, sC1, sC9) expressing SOX10/ZEB2/ASCL1; immature neurons (sC5) with ASCL1/ETV5/ETV1; and various differentiated subtypes including CALB2/TAC1/PBX3+ (sC10), catecholaminergic (sC8), and post-umbilical-specific subtypes (sC4, sC6, sC7) with >50% sacral contribution. Pre-umbilical vagal heavily contributes to progenitor subclusters (88% and 83% for sC0 and sC5).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C89, C92-C94 are supported by subclustering analysis (Figure 6) with appropriate marker gene expression and proportional contribution data (Figure 6\u2014figure supplement 1). The identification of PBX3+ neurons and comparison to mouse studies (Morarach et al., 2021) provides cross-species validation. The functional assignments are well-justified by marker expression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "RNA velocity analysis reveals additional developmental dynamics: enteric glial clusters in vagal post-umbilical cells show intertwined trajectories including into putative stem cell cluster C3, suggesting plasticity. Both vagal and sacral post-umbilical populations show trajectories from C2 to C4 neurons, potentially reflecting post-mitotic differentiation. CellRank analysis identifies terminal states as VIP/TAC1+ neurons (pre-umbilical vagal) and DDC/PNMT+ neurons (post-umbilical vagal and sacral).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C100 are supported by RNA velocity (Figure 7A-B) and CellRank analysis (Figure 7D). The interpretation of C2\u2192C4 trajectory as post-mitotic differentiation is supported by citation to Morarach et al., 2021. The plasticity interpretation for glial clusters is reasonable but somewhat speculative, though supported by citation to Laddach et al., 2023.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Single-cell analysis identified several non-neural clusters: fibroblasts (C5, LUM/COL1A1/TWIST1+), melanocytes (C9, MITF/MLANA/KIT+, 80% sacral), epithelial cells (C10, EPCAM/KRT7+), vascular muscle (C11, PDGFRA/MYL9/VCAN+), mesenchymal (C12, CDH15/MYOD/PITX2+), endothelial (C13, PECAM1/CDH5/ID3+), and macrophages (C14, CX3CR1/GPR34/MERTK+). Clusters C11-C13 are almost exclusively sacral-derived (95-99%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C63-C70 describe non-neural clusters supported by marker gene expression (Figure 3C) and proportional contributions (Figure 2\u2014figure supplement 1). However, the authors acknowledge these may be contaminating cells due to autofluorescence, though they express RIA transcripts. The neural crest origin of some clusters (especially C11-C13, C14) is questionable and requires additional validation. The presence of RIA transcripts alone may not be sufficient to confirm neural crest derivation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "The Nerve of Remak is a bird-specific structure that serves as a staging ground for sacral neural crest-derived cells. Sacral neural crest cells form the Nerve of Remak at E3 and remain there until entering the gut between E8-E10, possibly due to chemorepellent SEMA3A in the hindgut. In mice, the pelvic plexus serves an analogous function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C20, C103-C105 are supported by citations to established literature (Burns and Douarin, 1998; Pomeranz et al., 1991; Shepherd and Raper, 1999; Nagy et al., 2007) and confirmed by the authors' observations of sacral-derived cells in the Nerve of Remak (C102, Figure 8). The SEMA3A mechanism is cited but not directly tested in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Hirschsprung's disease, affecting 1 in 5000 live births, is characterized by neuronal deficits in the distal colon. Insufficient migration or proliferation of vagal neural crest precursors is thought to cause these deficits. Grafting experiments show sacral neural crest cannot fully compensate for vagal loss, suggesting intrinsic differences. GDNF and ET3 are essential for vagal neural crest migration/differentiation, and mutations are common in Hirschsprung's patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C28 describe established knowledge about Hirschsprung's disease supported by appropriate citations (Amiel et al., 2008; Lake and Heuckeroth, 2013; Burns et al., 2000; Young et al., 2001; Nagy and Goldstein, 2006; Kenny et al., 2010). This provides important clinical context for the study but represents prior work rather than new findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "Prior grafting and transplantation studies have yielded contradictory interpretations about vagal vs. sacral neural crest properties. Some studies suggest autonomous migration properties (vagal grafts to sacral region migrate earlier and produce more neurons), while others suggest environmental influences (interchanged cells migrate according to local environment). Recent work shows both populations are required for repopulating aganglionic colon.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C114 accurately summarize prior literature (Burns and Le Douarin, 2001; Erickson and Goins, 2000; Hearn and Newgreen, 2000; Fan et al., 2023) and provide important context for interpreting the current findings. The authors appropriately acknowledge contradictory interpretations in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "Differential gene expression analysis reveals population-specific markers: TNC is specific to vagal neural crest and required for hindgut migration; sacral neural crest expresses high levels of SOX10-mediated CDH19, PAX3, and 5-HT3; RET is upregulated in vagal neural crest to mediate invasive behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C119 are supported by the authors' differential expression data (Figure 1C-D) and appropriate citations (Akbareian et al., 2013; Huang et al., 2022; Deal et al., 2021; Ritter et al., 2021; Delalande et al., 2008). The functional interpretations are based on cited literature rather than direct testing in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "The pre-umbilical gut is solely populated by vagal neural crest, giving rise predominantly to motor neurons and fibroblasts. Maintenance of proliferative capacity in the vagal neural crest 'wavefront' is critical for gut colonization. Endothelin-3 maintains a pro-proliferative environment for vagal neural crest in avian hindgut and is required for sacral neural crest colonization in murine hindgut.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C120 is supported by the authors' scRNA-seq data (Figure 2). Claims C121-C123 are supported by appropriate citations (Nagy and Goldstein, 2006; Landman et al., 2007; Simpson et al., 2007; Baynash et al., 1994) and provide mechanistic context, though not directly tested in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "Schwann cell precursors (SCPs) contribute to the ENS via different routes: vagal-derived SCPs migrate via the vagus nerve to innervate the esophagus; sacral-derived SCPs migrate via the pelvic nerve, forming ~20% of colon neurons in mice; a subset of SCPs from somite 3-7 invade the esophageal mesenchyme.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124-C126 are supported by appropriate citations (Espinosa-Medina et al., 2017; Uesaka et al., 2015) and provide important context for interpreting the SCP populations identified in the study. However, the authors acknowledge they cannot distinguish early-migrating neural crest from later-migrating SCPs with their labeling approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C32"
+    ],
+    "result": "Background information establishes that the ENS is the largest component of the peripheral nervous system, regulates gut motility and homeostasis, consists of millions of neurons and glia in amniotes, and is often called 'a second brain'. E10 in chick corresponds to E16 mouse and 8 weeks post-conception in human.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C11, C32 provide well-established background information supported by appropriate citations (Nagy and Goldstein, 2017; Gershon, 1999; Laddach et al., 2023). The developmental stage comparison (C32) is stated but not extensively justified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C33",
+      "C34"
+    ],
+    "result": "By E10, the vagal neural crest is undergoing differentiation along the entire gut, while the sacral neural crest has formed the Nerve of Remak and begun neurogenesis in the post-umbilical gut.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C34 describe the developmental state at the timepoint studied, supported by the authors' observations and established knowledge. This justifies the choice of E10 as an appropriate timepoint for capturing both progenitors and differentiated cells from both populations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C37"
+    ],
+    "result": "At E10, sacral-derived neurons are present in the submucosal and myenteric plexuses as well as a major population in the Nerve of Remak.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C37 is directly supported by immunohistochemistry data shown in Figure 5, demonstrating the spatial distribution of sacral-derived neurons. This is a key observational finding that validates the scRNA-seq data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C109"
+    ],
+    "result": "Conditional removal of PLP1-expressing enteric glia disrupts gastrointestinal motility in female mice, indicating the importance of these cells in ENS health.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C109 is supported by citation to Rao et al., 2017 and provides functional context for the PLP1+ glial populations identified in the study. This is prior work, not a finding of the current study.",
+    "result_type": "MINOR"
+  }
+]

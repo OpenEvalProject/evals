@@ -1,0 +1,180 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C8",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Core PCP is not required for normal cellular dynamics during pupal wing morphogenesis. Analysis of tissue shear, cell elongation changes, and cell rearrangements in pk, stbm, and fmi mutants showed no significant differences from wild-type when averaged across the blade, with only subtle, statistically non-significant reductions in total shear by the end of the process.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C5, C39-C42, and C66-C68 collectively demonstrate that core PCP mutants exhibit normal cellular dynamics during blade elongation flows. The data in Figure 1D-D''' show quantitatively similar patterns of tissue shear, cell elongation, and cell rearrangements across all genotypes, with statistical analysis (Figure 1\u2014figure supplement 2C) confirming non-significant differences. The comprehensive analysis across multiple mutants and cellular processes provides strong support for this negative result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C43"
+    ],
+    "result": "Core PCP mutants pk and stbm (but not fmi) exhibit subtle but significant differences in adult wing shape, appearing slightly rounder and wider than wild-type.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C43 is supported by quantitative data in Figure 1\u2014figure supplement 5I showing statistically significant differences in major-to-minor axis ratio for pk and stbm mutants. The power analysis (Figure 1\u2014figure supplement 5J) appropriately addresses the limitation that such subtle phenotypes would be difficult to detect in the smaller pupal wing sample sizes (n=2-4).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Core PCP mutants exhibit significantly lower initial recoil velocity upon laser ablation compared to wild-type, and the displacement dynamics require a two-timescale exponential model with fast (<1 s) and slow (~20 s) components to adequately fit the data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C47 are well-supported by experimental data in Figure 2B and Figure 2\u2014figure supplement 1. The statistical significance of the recoil velocity difference is demonstrated, and the inadequacy of single exponential fits versus the improved fit with two timescales is clearly shown in Figure 2\u2014figure supplement 1B. The rheological modeling provides a mechanistic framework for interpreting these observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C7",
+      "C52",
+      "C69"
+    ],
+    "result": "Despite differences in initial recoil velocity, core PCP mutants show no significant differences in overall tissue mechanical stress as measured by ESCA. The fast timescale elastic constant kf is affected in pk mutants, but tissue stress and the slow elastic constant ks remain unchanged.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49, C50, C7, C52, and C69 are supported by ESCA measurements (Figure 2F-F'') showing no significant differences in anisotropic stress, isotropic stress, or elastic constant ratios between wt and pk at -8 hRPCE. The rheological model analysis provides a coherent interpretation that only the fast timescale response (Xf) differs, attributable to changes in kf rather than tissue stress. This conclusion is consistent with the lack of phenotype in large-scale tissue flows.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C53",
+      "C54"
+    ],
+    "result": "Initial recoil velocity along the PD axis peaks at \u22128 hRPCE in both wild-type and pk mutants, with pk showing qualitatively similar temporal dynamics but significantly lower magnitude throughout blade elongation flows.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53 and C54 are supported by data in Figure 3A showing the temporal profile of initial recoil velocity across developmental time. The peak timing is consistent with previous work (Iyer et al., 2019), and statistical analysis confirms significantly lower values in pk throughout the time course. Similar results in stbm and fmi (Figure 3\u2014figure supplement 1A) strengthen this conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C70"
+    ],
+    "result": "The timing of peaks in mechanical stress (\u22126 hRPCE) and cell elongation (\u22124 to 0 hRPCE) differ, indicating that active stresses change over time. However, core PCP does not affect the peak of cell elongation or the underlying active anisotropic stresses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C65 and C70 are supported by data in Figure 3B-D showing the temporal offset between stress and cell elongation peaks, and the lack of significant differences between wt and core PCP mutants in cell elongation dynamics (Figure 3D, Figure 3\u2014figure supplement 2E). The inference about changing active stresses is reasonable given the temporal mismatch, though the constitutive relation \u03c3\u0303 = 2KQ + \u03b6 is simplified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C6",
+      "C76"
+    ],
+    "result": "Core PCP mutations affect the fast timescale response to laser ablation, but this does not reflect differences in overall tissue stress. Initial recoil velocity is influenced by small-scale mechanical differences not necessarily related to tissue-level stress.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6 and C76 synthesize the key finding that initial recoil velocity, commonly used as a stress proxy, can be misleading. The rheological model analysis demonstrates that the phenotype in pk arises from changes in the fast elastic constant kf affecting the fast displacement Xf, while ESCA measurements show no change in tissue stress. This represents an important methodological insight about interpreting laser ablation experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C74"
+    ],
+    "result": "The fast timescale response (<1 s) to laser ablation may be related to cortical mechanics of cell bonds or cell hydraulics, though the mechanism by which core PCP affects these processes is unclear.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C74 is explicitly speculative. While the hypothesis about cortical mechanics or hydraulics is plausible given the timescale, no direct experimental evidence is provided to test these mechanisms. The connection between core PCP and such fast mechanical processes remains unexplained and would require additional investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C80"
+    ],
+    "result": "Core PCP might affect later developmental stages not examined in this study, and other patterning systems (Fat PCP, Toll-like receptors) or mechano-sensitive mechanisms could act redundantly or independently to guide morphogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C77, C78, and C80 are explicitly speculative about mechanisms not tested in this study. While the authors appropriately acknowledge these possibilities in the Discussion, no experimental evidence is provided to support or refute these hypotheses. The subtle adult wing phenotype (C43) suggests some role for core PCP, but whether this occurs during or after blade elongation flows remains unknown.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C79",
+      "C81",
+      "C82"
+    ],
+    "result": "Background and context claims about the Drosophila wing system, PCP pathways, and prior findings establish the experimental framework and motivation for the study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C9-C35, C79, C81-C82 provide established knowledge and prior findings from the literature that contextualize the current work. These are appropriately cited and represent accepted understanding of the system. While not novel findings of this study, they are accurately presented and relevant to the experimental design and interpretation.",
+    "result_type": "MINOR"
+  }
+]

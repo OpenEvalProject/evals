@@ -1,0 +1,314 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C44",
+      "C45",
+      "C46",
+      "C54",
+      "C57",
+      "C58",
+      "C75",
+      "C76"
+    ],
+    "result": "Protein:carbohydrate intake ratios in S. cancellata declined dramatically through ontogeny, with younger instars (1st-4th) exhibiting protein-biased consumption (peak of 1.37p:1c in 3rd instar) and older locusts becoming carbohydrate-biased (adults: 1p:2.66c). Mass-specific protein consumption decreased fourfold from first instar to adult, while carbohydrate consumption remained relatively stable.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, C44-46, C54, C57-58, C75-76 are well-supported by experimental data shown in Figure 1 with appropriate statistical analyses (ANOVA with p<0.001). The study measured consumption across all developmental stages with adequate sample sizes (30-60 individuals per stage/sex) and used two different diet pairs to confirm tight regulation to intake targets (C48, C49, C106). The quantitative values and trends are clearly documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C59",
+      "C77"
+    ],
+    "result": "The decline in mass-specific protein consumption was tightly correlated with declining specific growth rates in both sexes of S. cancellata, suggesting this relationship explains the ontogenetic shift in protein requirements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59 and C77 are supported by data in Figure 2A showing strong correlations (R\u00b2=0.88 for males, R\u00b2=0.926 for females, both p\u22640.002). The methodology for calculating specific growth rate is clearly described (Equation 1). However, the causal claim in C77 ('likely explaining') is an inference from correlation data, though the biological reasoning is sound given protein's role in tissue growth.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C60",
+      "C89"
+    ],
+    "result": "Mass-specific carbohydrate consumption showed a positive correlation with specific growth rates, with the highest values in early development, though this relationship was only statistically significant in females.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60 and C89 are supported by Figure 2B data. The sex-specific difference is appropriately noted (significant for females: R\u00b2=0.746, p=0.012; not significant for males: R\u00b2=0.515, p=0.07). The biological interpretation linking this to energy costs of tissue growth (C90-91) is reasonable but speculative, appropriately supported by citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C85"
+    ],
+    "result": "In S. cancellata, protein consumption scaled strongly hypometrically with body mass (slope=0.761, 95% CI: 0.744-0.778), while carbohydrate consumption scaled weakly hypometrically with a slope near 1 (slope=0.939, 95% CI: 0.92-0.957).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61, C62, and C85 are well-supported by log-log regression analyses shown in Figure 3 with tight confidence intervals. The contrasting scaling exponents for protein vs. carbohydrate are clearly demonstrated. The comparison to metabolic rate scaling in orthopterans (C86) provides appropriate context with proper citations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C8",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C82",
+      "C83",
+      "C102",
+      "C113"
+    ],
+    "result": "Protein consumption scales hypometrically across animal species and during ontogeny, representing a general pattern across the animal kingdom. Phylogenetically corrected analysis yielded a multispecies slope of 0.776, similar to the within-species slope for S. cancellata (0.761), demonstrating a new scaling rule for nutritional ecology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C63-66, C82-83, C102, C113 are supported by comprehensive comparative analysis (Figure 3A) incorporating data from 8 taxonomic groups with phylogenetic correction (PGLS: slope=0.776, SE=0.086, p<0.001). The methodology appropriately accounts for phylogenetic non-independence and temperature effects (Q10 correction for ectotherms, C114). However, the literature survey method lacks systematic search criteria, and some taxonomic groups have limited data points. The claim of a 'new scaling rule' is justified but would benefit from broader taxonomic sampling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C67",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C79",
+      "C80",
+      "C92",
+      "C93"
+    ],
+    "result": "Field-collected locusts had similar protein consumption rates to lab-reared locusts but consumed 50-90% more carbohydrate, resulting in more carbohydrate-biased intake targets. Protein consumption rates matched between lab and field populations, while carbohydrate consumption was significantly elevated in field populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-6, C67, C69-72, C79-80, C92-93 are supported by statistical comparisons (Mann-Whitney U tests, p<0.001 for carbohydrate differences, p>0.05 for protein). Sample sizes are adequate (N=29 field, N=50 lab for 6th instar metabolic measurements). However, the study only tested 5th and 6th instars in the field, limiting generalization across ontogeny. The timing of measurements within instars may differ between lab and field (acknowledged in Discussion), potentially affecting comparisons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C7",
+      "C73",
+      "C74"
+    ],
+    "result": "The higher carbohydrate consumption in field-collected locusts was partly attributed to elevated resting metabolic rates, with field-collected 6th instar nymphs showing ~23% higher mass-specific oxygen consumption than lab-reared nymphs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C73, and C74 are supported by respirometry data (Mann-Whitney U test: p<0.001). The metabolic rate difference (23%) is substantial and statistically significant. However, the causal link between metabolic rate and carbohydrate consumption (C73) is inferential. The metabolic rate increase only partially explains the 50-90% increase in carbohydrate consumption, suggesting additional factors. The authors appropriately present this as 'partly due to' rather than fully explanatory.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C53",
+      "C55",
+      "C56"
+    ],
+    "result": "Males and females showed minimal sex differences in macronutrient consumption during most developmental stages, with no significant sex \u00d7 diet pair interactions. Small sex differences in protein consumption were observed but were irregular across stages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-48, C53, C55-56 are supported by MANCOVA and ANOVA results (Table 1, Figure 1). The statistical approach is appropriate for testing sex effects while controlling for body mass. The significant but small and irregular sex effects on protein consumption (C55-56) are appropriately characterized as minor. The lack of sex \u00d7 diet pair interactions (C48) supports the conclusion of tight regulation to intake targets.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C49",
+      "C106"
+    ],
+    "result": "The insignificant effect of diet pair on macronutrient consumption indicates that locusts tightly regulated to specific intake targets across all developmental stages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49 and C106 are supported by MANCOVA results (Table 1) showing no significant diet pair effects across all instars. This is a key validation that locusts actively regulate intake rather than feeding randomly. The use of two different diet pair combinations (35p:7c + 7p:35c vs. 28p:14c + 7p:35c) strengthens this conclusion. However, the inference of 'tight regulation' from non-significant effects could be strengthened with explicit power analyses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C51",
+      "C52"
+    ],
+    "result": "Mass-specific carbohydrate consumption rates were approximately 30% higher in first and second instars compared to older animals, with little variation among older developmental stages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-52 are supported by ANOVA results (F6,554=34.459, p<0.001) and Figure 1B. The quantitative estimate (30% higher) is clearly stated and the pattern of high early consumption followed by stable rates in older stages is evident in the data. The statistical support is robust with large sample sizes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C78",
+      "C94"
+    ],
+    "result": "Lab-measured intake targets did not accurately predict field intake targets overall, though protein consumption rates in good field conditions may be predictable from lab-reared animals, while carbohydrate consumption is not.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78 and C94 are supported by the lab-field comparison data. The differential predictability of protein (conserved) vs. carbohydrate (elevated in field) is clearly demonstrated. However, C94's generalization about 'good field conditions' is speculative since only one field site and time point were sampled. The authors appropriately acknowledge multiple confounding factors (C95-101) that could affect field consumption.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C50",
+      "C68"
+    ],
+    "result": "Mortality rates were relatively low during experiments and were not significantly affected by sex or diet treatments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50 and C68 indicate that experimental mortality was low and unbiased, supporting the validity of the consumption measurements. However, no quantitative mortality data or statistical tests are provided, making it impossible to evaluate what 'relatively low' means or verify the lack of treatment effects. This is a methodological detail that should include specific values.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "The study hypothesized that animals would steadily reduce protein consumption during ontogeny because mass-specific growth rate declines, based on established scaling relationships showing hypometric scaling of growth rates across animals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-43 represent the study's hypothesis, appropriately supported by citations to established scaling theory (Brown et al., 2004; West et al., 2001; White et al., 2022; Hatton et al., 2019; Peters, 1983). The hypothesis is clearly stated and well-grounded in prior literature. The subsequent experimental results (C3-4, C59) confirm this hypothesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C90",
+      "C91"
+    ],
+    "result": "The elevated carbohydrate consumption in older locusts is hypothesized to result from increased lipid storage needs (lipids synthesized from carbohydrates) and the high energy costs of tissue growth and protein synthesis in early development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C87-88, C90-91 are mechanistic interpretations supported by citations (Talal et al., 2021; Li et al., 2019; Pace and Manahan, 2007) but not directly tested in this study. The reasoning is biologically plausible, but these remain inferences. The study did not measure lipid stores, lipid synthesis rates, or energy costs of growth directly. These hypotheses would require additional experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "Multiple factors may explain lab-field differences in carbohydrate consumption, including poor resource conditions reducing growth, past feeding history, foraging costs, metabolic suppression in captivity, plant chemical defenses, pathogen exposure, and multi-generational adaptation to lab conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C95-101 present plausible alternative explanations for lab-field differences, appropriately supported by citations. However, these are speculative hypotheses not tested in the current study. The authors appropriately present these as possibilities ('may be due to', 'likely') rather than established facts. These represent important considerations for future research but do not constitute results of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Rising temperatures and CO2 levels are predicted to lower protein:carbohydrate ratios in leaves, which may slow herbivore growth and select for herbivores with larger body sizes, higher activity, and lower mass-specific protein requirements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C103-104 are supported by citations (DeLucia et al., 2012; Kuczyk et al., 2021; Scherber et al., 2013), but C105 is speculative extrapolation from the study's findings. While the logic follows from the demonstrated scaling relationships, this prediction about evolutionary selection is not tested and represents a hypothesis for future work. The speculation is reasonable but should not be considered a supported result of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "The study used S. cancellata from a captive colony (7-10 generations post-collection) maintained under controlled conditions (30% RH, 34\u00b0C day/25\u00b0C night, 14:10 L:D) and fed artificial diets with defined macronutrient ratios (54% cellulose, 4% vitamins/salts, protein as 3:1:1 casein:peptone:albumen, carbohydrate as 1:1 sucrose:dextrin).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-112 describe the materials and methods, which are clearly documented and appropriate for the study objectives. The use of artificial diets with defined compositions allows precise control of macronutrient ratios. The colony history (7-10 generations in captivity) is relevant for interpreting lab-field comparisons. Methods are adequately detailed for replication.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C81",
+      "C84",
+      "C86",
+      "C114"
+    ],
+    "result": "The introduction establishes the theoretical framework and prior literature on macronutrient requirements, nutritional ecology, the Geometric Framework for Nutrition, species-specific intake targets, and evidence for ontogenetic changes in macronutrient consumption across various taxa.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-2, C9-40, C81, C84, C86, C114 represent background knowledge and literature review, appropriately supported by citations to relevant prior work. These establish the context and rationale for the study but are not results of the current research. The literature review is comprehensive and appropriately cited, though the claim about 'lacking clear understanding' (C14) may overstate the knowledge gap given the examples provided.",
+    "result_type": "MINOR"
+  }
+]

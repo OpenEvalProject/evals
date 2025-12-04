@@ -1,0 +1,374 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C90"
+    ],
+    "result": "Drosophila melanogaster larvae display extensive natural variation in nociceptive escape behaviors, with strain-specific median rolling latency ranging from 2.83 s to 10 s and rolling probability within 10 s ranging from around 30% to almost 100% among 38 representative DGRP strains. This variation was observed between commonly used strains (w1118 and Canton-S) and across the DGRP panel.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 and C90 are well-supported by quantitative behavioral data from 38 DGRP strains shown in Figures 1B-D. The specific numerical ranges are clearly stated and documented, with appropriate sample sizes (n=30-31 larvae/line) and statistical comparisons. The data demonstrate substantial phenotypic variation in nociceptive responses across natural populations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C91"
+    ],
+    "result": "GWA analysis identified 37 SNPs, two deletions, and three insertions in or near 36 candidate genes associated with nociceptive behavior at a threshold p-value of 1.0 \u00d7 10\u207b\u2075. The three response classes (rolling probability in 2, 5, and 10 s) used for the analysis are highly correlated with one another.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4 and C91 are supported by the GWA analysis using DGRP 2.0 tool with appropriate statistical methods (linear mixed model, FaST-LMM algorithm). The correlation analysis (Figure 1\u2014figure supplement 1A) validates the use of multiple related behavioral metrics. However, the p-value threshold (1.0 \u00d7 10\u207b\u2075) is below the Bonferroni-corrected threshold (6.95 \u00d7 10\u207b\u2078), which the authors acknowledge may result in false positives.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C92",
+      "C93"
+    ],
+    "result": "Pan-neuronal knockdown of CG9336/bero, which encodes a member of the Ly6/\u03b1-neurotoxin protein superfamily, resulted in significant enhancement of rolling probability. The bero-associated SNP (2L_20859945_SNP) is located in the second intron of CG9336 isoform A and comprises two nucleotide variations: a minor allele (cytosine) and a major allele (thymine).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C6, C92, and C93 are supported by functional RNAi screening data (Figure 2A) and genomic characterization (Figure 2B). The protein family classification is appropriately cited (Loughner et al., 2016). The functional validation through RNAi knockdown provides direct evidence linking the candidate gene to the behavioral phenotype, though only 17 of the 36 candidate genes were tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "Bioinformatics analysis predicted that Bero has a signal peptide sequence at the amino terminus, two possible glycosylation sites, a GPI-anchorage site, a putative transmembrane region at the carboxyl terminus, and five putative disulfide bridges, which are typical structural features of the Ly6/\u03b1-neurotoxin protein superfamily.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C11 are supported by multiple bioinformatics predictions using established tools (SignalP-5.0, NetNGlyc-1.0, Big-PI Predictor, TMHMM-2.0, AlphaFold2) with appropriate citations. The predictions are consistent with the known structural features of the Ly6/\u03b1-neurotoxin protein superfamily. However, these remain computational predictions that would benefit from experimental validation (e.g., mass spectrometry for glycosylation, biochemical assays for GPI-anchoring).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C12",
+      "C13"
+    ],
+    "result": "Most DGRP core lines with the bero minor allele (C) showed higher responsiveness than those with the major allele (T) upon noxious thermal stimulations, and animals with the minor allele have lower expression levels of bero compared with those possessing the major allele.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12 and C13 are supported by behavioral data (Figure 2\u2014figure supplement 2A) and RT-PCR expression analysis (Figure 2\u2014figure supplement 2B). The correlation between SNP genotype, expression level, and behavioral phenotype is consistent with the hypothesis that the intronic SNP affects bero expression. However, the expression analysis is limited to four DGRP strains and uses semi-quantitative RT-PCR rather than qPCR.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C14",
+      "C15"
+    ],
+    "result": "Both bero heterozygous (beroKO/+) and homozygous (beroKO/beroKO) mutant animals displayed enhanced rolling escape behavior, strongly suggesting that bero expression in neurons negatively regulates nociceptive escape behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14 and C15 are well-supported by behavioral data from CRISPR-generated null mutants (Figure 2F) that deleted the entire protein-coding sequence. The dose-dependent effect (heterozygous vs. homozygous) strengthens the conclusion. This genetic evidence, combined with RNAi knockdown and overexpression data, provides strong support for bero's negative regulatory role in nociceptive behavior.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C79"
+    ],
+    "result": "Bero is expressed in several groups of peptidergic neurons including insulin-producing cells (IPCs), a subset of Eclosion hormone-producing neurons (EH neurons) in the larval brain, and all seven pairs of abdominal leucokinin-producing neurons (ABLK neurons) in the ventral nerve cord. Bero is delivered to neurites of ABLK neurons but not expressed in any other LK neurons. Bero is also expressed in midline glia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C22 and C79 are supported by detailed expression analysis using the bero-YFP protein trap strain with immunohistochemistry (Figures 3A-C). The co-localization with leucokinin immunoreactivity validates the ABLK neuron identification. The specificity of expression within LK neuron subtypes is clearly demonstrated. The expression pattern is consistent with a recent single-cell transcriptomic atlas (Corrales et al., 2022).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C23",
+      "C24"
+    ],
+    "result": "Bero localizes on both the plasma membrane and internal membrane of ABLK neurons and distributes along both dendritic and axonal regions of ABLK neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23 and C24 are supported by high-resolution confocal imaging (Figure 3C) and co-localization experiments with subcellular markers (DenMark for dendrites and syt:eGFP for axon terminals, Figure 3D). The subcellular localization is consistent with the predicted GPI-anchored membrane protein structure and suggests both pre- and postsynaptic functions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C80"
+    ],
+    "result": "Cell-type-specific knockdown of bero using Lk-GAL4 caused enhanced rolling escape behavior, while knockdown using Eh-GAL4 or Ilp2-GAL4 did not result in any changes. Conversely, bero overexpression in ABLK neurons suppressed rolling behavior, indicating that bero expression in ABLK neurons plays an essential role in the negative regulation of nociceptive behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C29 and C80 are well-supported by cell-type-specific RNAi knockdown and overexpression experiments (Figures 3E-F) with appropriate effector controls. The bidirectional manipulation (loss-of-function and gain-of-function) provides strong evidence for bero's role specifically in ABLK neurons. The specificity is further supported by the lack of effect in EH neurons and IPCs, which also express bero.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C81"
+    ],
+    "result": "ABLK neurons display persistent fluctuations of intracellular Ca\u00b2\u207a concentration and respond to nociceptive inputs, as demonstrated by weak but reliable evoked neuronal activities upon optogenetic activation of nociceptors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C32 and C81 are supported by calcium imaging data (Figures 4A-D) using jRCaMP1b and optogenetic stimulation of nociceptors with ChR2.T159C. The persistent activity is consistent with previous findings (Okusawa et al., 2014). The evoked responses demonstrate functional connectivity between nociceptors and ABLK neurons. Appropriate ATR(-) controls were included to verify optogenetic specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C83",
+      "C84"
+    ],
+    "result": "bero knockdown almost completely abolished persistent fluctuating activities in ABLK neurons while increasing the amplitude of evoked nociceptive responses, without affecting larval free locomotion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C35, C83, and C84 are well-supported by calcium imaging data comparing control and bero knockdown (Figures 4A-F) and locomotion analysis (Figure 4\u2014figure supplement 2A-C). The dual effect on persistent and evoked activities is striking and mechanistically informative. The lack of effect on free locomotion indicates specificity for nociceptive responses rather than general motor function. Statistical significance is clearly demonstrated (p<0.0001 for both measures).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C75",
+      "C77"
+    ],
+    "result": "bero plays a critical role in generating persistent fluctuating activities and inhibiting evoked nociceptive responses in ABLK neurons, thereby suppressing nociceptive escape behavior. Bero modulates escape responses by regulating distinct neuronal activities in ABLK neurons and regulates Drosophila melanogaster escape behaviors by modulating the excitability of nociceptive peptidergic interneurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C38, C75, and C77 represent the main conclusions synthesizing behavioral and calcium imaging data. The evidence from multiple experimental approaches (knockdown, mutant, overexpression, calcium imaging) converges to support this model. However, the mechanistic link between persistent activity and evoked responses remains unclear, and the authors acknowledge this uncertainty in their discussion of potential mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C82"
+    ],
+    "result": "Optogenetic activation of pan-LK neurons elicited robust rolling behavior, while activation of ABLK neurons almost exclusively resulted in bending behavior rather than rolling. In contrast, activation of SELK neurons induced robust rolling behavior in all tested larvae, suggesting that ABLK neurons initiate nociceptive escape behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C41 and C82 are supported by optogenetic activation experiments using CsChrimson (Figures 5A-B). The differential behavioral outputs from ABLK vs. SELK activation provide important insights into the functional organization of the escape circuit. However, the interpretation that ABLK neurons 'initiate' behavior is somewhat inferential, as bending could represent incomplete activation or a distinct behavioral module.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Silencing ABLK neurons by expressing Kir2.1 mildly enhanced rolling escape behavior, while inhibition using GtACR1 significantly impaired rolling escape behavior, suggesting that acute evoked activity of ABLK neurons is essential for nociceptive escape behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C42-C44 present seemingly contradictory results that the authors acknowledge. Chronic silencing (Kir2.1) enhances behavior while acute inhibition (GtACR1) impairs it (Figures 5D-E). The authors propose that chronic silencing may affect persistent activity or cause developmental compensation, while acute inhibition blocks evoked responses. However, without additional experiments to distinguish these possibilities, the mechanistic interpretation remains uncertain.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C45",
+      "C46"
+    ],
+    "result": "Concurrent activation of ABLK neurons during heat stimulation resulted in significantly decreased rolling escape behavior, suggesting that proper dynamics of acute activity in ABLK neurons is essential for the facilitation of rolling escape behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45 and C46 are supported by optogenetic activation experiments combined with heat stimulation (Figure 5F). The finding that both inhibition and excessive activation impair behavior suggests that ABLK neurons require precise temporal dynamics. However, the interpretation that optogenetic activation produces non-physiological activity patterns is speculative, though reasonable given the artificial nature of optogenetic stimulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "ABLK neurons express tyrosine decarboxylase 2 (Tdc2), a key synthetic enzyme for tyramine and octopamine, but are not GABAergic, glutamatergic, or cholinergic.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C52 are supported by immunohistochemistry data (Figure 6A) using antibodies against neurotransmitter markers. The identification of Tdc2 expression is novel and important for understanding ABLK neuron function. The negative results for GABA, glutamate, and acetylcholine help define the neurochemical identity of these neurons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Suppression of Tbh or Dh44 in ABLK neurons reduced rolling probability, indicating functional roles of octopamine and DH44 in the facilitation of nociceptive escape behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C56 are supported by ABLK-specific RNAi knockdown experiments (Figure 6B) with appropriate controls. The functional requirement for both octopamine (via Tbh) and DH44 provides important insights into the neurotransmitter systems mediating ABLK neuron function. However, the Lk knockdown result (Figure 6\u2014figure supplement 1A) shows confounding effects in the effector control, limiting conclusions about leucokinin's role.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C58",
+      "C59"
+    ],
+    "result": "Most homozygous bero mutant animals with the Canton-S background did not survive to adulthood, suggesting that bero plays an essential role in animal development as well as nociception.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58 and C59 are supported by observations during maintenance of the mutant line. The lethality of homozygous mutants suggests pleiotropic functions of bero beyond nociception. However, the developmental role is not characterized in detail, and the inference is based solely on lethality without identifying the specific developmental defects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C76"
+    ],
+    "result": "Belly roll (Bero) is a GPI-anchored Ly6 protein.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C76 is supported by bioinformatics predictions (SignalP-5.0, Big-PI Predictor) showing signal peptide and GPI-anchorage site, combined with protein family classification as Ly6/\u03b1-neurotoxin superfamily member. However, experimental validation of GPI-anchoring (e.g., phospholipase C treatment, membrane fractionation) would strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C78"
+    ],
+    "result": "Bero negatively regulates Drosophila nociceptive escape behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C78 is strongly supported by converging evidence from multiple experimental approaches: RNAi knockdown (pan-neuronal and ABLK-specific), CRISPR null mutants, and overexpression experiments all show consistent directional effects on behavior. The dose-dependent effect in heterozygous vs. homozygous mutants further supports this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C57"
+    ],
+    "result": "The behavioral variations in a Drosophila population may provide adaptive advantages in ever-changing environments, especially when coexisting with geographically and seasonally variable parasitoid wasp species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C57 is speculative and not directly tested in this study. While the authors cite relevant literature (Bergland et al., 2014; Fleury et al., 2004) on parasitoid wasp variation, no experiments were performed to test adaptive significance of behavioral variation. This represents a reasonable hypothesis for future work but lacks empirical support in the current manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "The manuscript cites established findings from prior literature about Ly6 proteins, nociceptive circuitry, CRF function, and sensory neuron types in Drosophila larvae.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C62, C69-C72, and C85-C88 represent background knowledge appropriately cited from the literature. These citations appear accurate and relevant to the study's context. The authors correctly attribute findings to the appropriate sources and use this prior knowledge to frame their own results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C73",
+      "C74",
+      "C89"
+    ],
+    "result": "The manuscript discusses prior findings about ABLK neuron functions and proposes that ABLK neurons may integrate external and internal sensory stimuli, and that bero may have an essential role in monitoring stresses that modulate nociceptive escape behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C63-C68, C73-C74, and C89 combine cited prior work with speculative interpretations. While the citations to prior studies (Imambocus et al., 2022; Liu et al., 2015; Zandawala et al., 2018) are appropriate, the proposed integrative function and stress-monitoring role of ABLK neurons and bero are hypothetical. These represent reasonable models for future investigation but lack direct experimental support in the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C95",
+      "C96"
+    ],
+    "result": "The manuscript cites prior findings that ABLK neurons produce leucokinin and DH44, and that Rdl and 5-HT1B receptors regulate ABLK neuron function and behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47, C48, C95, and C96 appropriately cite prior literature (de Haro et al., 2010; Zandawala et al., 2018; Hu et al., 2020; Okusawa et al., 2014) establishing the neurochemical identity and receptor expression of ABLK neurons. These citations are accurate and provide important context for the current findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C94",
+      "C97"
+    ],
+    "result": "ABLK-neuron-specific knockdown of Rdl enhanced rolling escape behavior upon lower thermal stimulations (44\u00b0C), while suppression of 5-HT1B in ABLK neurons did not show any significant effects on rolling escape behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94 and C97 are supported by ABLK-specific RNAi experiments (Figure 6\u2014figure supplement 1B-C) with appropriate controls. The Rdl result is consistent with prior findings (Hu et al., 2020) at low stimulus intensity. The lack of effect for 5-HT1B knockdown contrasts with prior work (Okusawa et al., 2014) on turning behavior, suggesting context-dependent or behavior-specific roles.",
+    "result_type": "MINOR"
+  }
+]

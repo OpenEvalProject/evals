@@ -1,0 +1,1294 @@
+{
+  "submission": {
+    "id": "87dab395-b2cb-49c1-937b-ff36c10d9f34",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-04T03:38:08.175026Z",
+    "updated_at": "2025-12-04T03:38:08.175026Z"
+  },
+  "content": [
+    {
+      "id": "ecef6f5b-04d8-40bd-b1f6-5171f85ddae8",
+      "submission_id": "87dab395-b2cb-49c1-937b-ff36c10d9f34",
+      "content_type": "manuscript",
+      "content_text": "# Time-varying and tissue-dependent effects of adiposity on leptin levels: A Mendelian randomization study\n\n## Authors\n\n- Tom G Richardson<sup>1</sup> ([ORCID: 0000-0002-7918-2040](https://orcid.org/0000-0002-7918-2040)) \u2020\n- Genevieve M Leyden<sup>1</sup>\n- George Davey Smith<sup>1</sup> ([ORCID: 0000-0002-1407-8314](https://orcid.org/0000-0002-1407-8314))\n\n### Affiliations\n\n1. MRC Integrative Epidemiology Unit (IEU), Population Health Sciences, Bristol Medical School, University of Bristol, Oakfield House, Oakfield Grove Bristol United Kingdom ([ROR:0524sp257](https://ror.org/0524sp257))\n\n\u2020 Corresponding author\n\n## Abstract\n\nBackground:Findings from Mendelian randomization (MR) studies are conventionally interpreted as lifelong effects, which typically do not provide insight into the molecular mechanisms underlying the effect of an exposure on an outcome. In this study, we apply two recently developed MR approaches (known as \u2018lifecourse\u2019 and \u2018tissue-partitioned\u2019 MR) to investigate lifestage-specific effects and tissues of action in the relationship between adiposity and circulating leptin levels.Methods:Genetic instruments for childhood and adult adiposity were incorporated into a multivariable MR (MVMR) framework to estimate lifestage-specific effects on leptin levels measured during early life (mean age: 10 y) in the Avon Longitudinal Study of Parents and Children and in adulthood (mean age: 55 y) using summary-level data from the deCODE Health study. This was followed by partitioning body mass index (BMI) instruments into those whose effects are putatively mediated by gene expression in either subcutaneous adipose or brain tissues, followed by using MVMR to simultaneously estimate their separate effects on childhood and adult leptin levels.Results:There was strong evidence that childhood adiposity has a direct effect on leptin levels at age 10 y in the lifecourse (\u03b2 = 1.10 SD change in leptin levels, 95% CI = 0.90\u20131.30, p=6 \u00d7 10-28), whereas evidence of an indirect effect was found on adulthood leptin along the causal pathway involving adulthood body size (\u03b2 = 0.74, 95% CI = 0.62\u20130.86, p=1 \u00d7 10-33). Tissue-partitioned MR analyses provided evidence to suggest that BMI exerts its effect on leptin levels during both childhood and adulthood via brain tissue-mediated pathways (\u03b2 = 0.79, 95% CI = 0.22\u20131.36, p=6 \u00d7 10-3 and \u03b2 = 0.51, 95% CI = 0.32\u20130.69, p=1 \u00d7 10-7, respectively).Conclusions:Our findings demonstrate the use of lifecourse MR to disentangle direct and indirect effects of early-life exposures on time-varying complex outcomes. Furthermore, by integrating tissue-specific data, we highlight the etiological importance of appetite regulation in the effect of adiposity on leptin levels.Funding:This work was supported by the Integrative Epidemiology Unit, which receives funding from the UK Medical Research Council and the University of Bristol (MC_UU_00011/1).\n\n## Introduction\n\nPeople living with obesity have elevated levels of the peptide hormone leptin. This can be attributed to the amount of leptin in circulation being proportional to the amount of adipose tissue that an individual has (Obradovic et al., 2021). After being secreted by fat cells in adipose tissue, leptin predominantly acts in the hypothalamus as a major regulator of energy balance (Morrison, 2009). Likewise, both neural and adipose tissues are known to play an important role in the molecular etiology of body mass index (BMI), which is conventionally used to clinically diagnose obesity. However, despite being a cost-effective approach to routinely measure adiposity at scale, BMI is a construct that captures multiple heterogeneous subcomponents. This is epitomized by previous investigations into the functional genes that exert their effects on adiposity via their expression in brain and adipose tissues (Timshel et al., 2020; Rask-Andersen et al., 2019), highlighting the divergent pathways that exist between BMI and downstream complex traits.\n\nMendelian randomization (MR) is a causal inference technique that can exploit the random segregation of genetic variants within a population to evaluate the genetically predicted effects of modifiable exposures on complex outcomes (Davey Smith and Ebrahim, 2003; Richmond and Davey Smith, 2022). We recently extended the principles of MR to evaluate the separate effects of molecular subcomponents of BMI using genetic variants partitioned by their impact on gene expression derived from subcutaneous adipose tissue (SAT) and brain tissue (known as \u2018tissue-partitioned MR\u2019) (Leyden et al., 2022). Using this approach suggested that the brain-derived variants are predominantly responsible for driving the effect of BMI on cardiometabolic disease outcomes (Leyden et al., 2022), which we postulate is due to their involvement in appetite regulation and energy expenditure. These in turn influence the timelines and sites of adipose tissue distribution, which have more adverse consequences at the same level of BMI as do the processes influenced by the SAT-derived variants. Conversely, the SAT-derived set of instruments were predominantly responsible for the effect of BMI on outcomes such as endometrial cancer (Leyden et al., 2023). Differences in components of adiposity at the same level of BMI have previously been demonstrated with these instruments (Leyden et al., 2022), preserving the gene\u2013environment equivalence assumption in MR (Davey Smith, 2012).\n\nIn this study, we sought to dissect the causal pathway between BMI and circulating leptin using tissue-partitioned MR by leveraging these brain- and adipose tissue-derived sets of instruments. However, investigating this hypothesis is made even more challenging given that associations between BMI and leptin levels have been reported as early in life as childhood (Shalitin and Phillip, 2003). Therefore, to further develop insight into the relationship between BMI and circulating leptin, we additionally applied another extension that we have developed in recent years known as \u2018lifecourse MR\u2019 (Richardson et al., 2020). This approach allows the independent effects of childhood and adult adiposity to be simultaneously estimated on an outcome that can also be measured at separate timepoints in the lifecourse (Richardson et al., 2022b; Sanderson et al., 2022), such as childhood (mean age: 10 y) and adulthood (mean age: 55 y) measures of circulating leptin levels in this study. Taken together, we aimed to conduct a proof-of-concept study for these novel extensions of the conventional MR approach.\n\n## Methods\n\n### Lifecourse Mendelian randomization\n\nLifecourse MR has been described in detail previously (Richardson et al., 2020). Briefly, genetic instruments derived in the UK Biobank study based on self-reported body size at age 10 and measured adulthood BMI (Richardson et al., 2020) have been shown to separate clinically measured childhood and adult BMI in three independent cohorts (Avon Longitudinal Study of Parents and Children [ALSPAC] [Richardson et al., 2020], the Young Finns Study [Richardson et al., 2021], and the Tr\u00f8ndelag Health (HUNT) study [Brandkvist et al., 2021]). Both univariable and multivariable MR analyses on childhood leptin were conducted in a one-sample setting using individual-level data from ALSPAC by analyzing genetic risk scores with adjustment for age and sex. Univariable MR analyses to estimate total effects on adulthood leptin were undertaken in a two-sample setting using the inverse variance weighted (IVW) method (Burgess et al., 2013), as well as the weighted median and MR-Egger methods (Bowden et al., 2015; Bowden et al., 2016). Multivariable MR analyses on adulthood leptin were also performed in a two-sample setting to estimate the direct and indirect effects of childhood body size (Sanderson et al., 2019).\n\n### Tissue-partitioned Mendelian randomization\n\nInstrument derivation and methodology for tissue-partitioned MR has also been described in detail previously (Leyden et al., 2022). In brief, 86 independent adult BMI-associated instruments provided evidence of sharing a causal variant with proximal gene expression in subcutaneous adipose tissue through genetic colocalization analyses (based on a posterior probability [PPA] > 0.8). The same approach provided evidence that the effects of 140 adult BMI instruments are putatively mediated by a nearby gene\u2019s expression in brain tissue. These two sets of genetic variants have near identical average effect sizes on BMI (adipose = 0.0148 and brain = 0.0149 standard deviation [SD] change in BMI per effect allele), although the manner in which they relate to other anthropometric traits can markedly differ. For instance, we previously found that the brain tissue instruments were more strongly correlated with waist-to-hip ratio compared to the adipose\u2013tissue instruments (r = 0.733 and r = 0.445, respectively, pcomparison=0.001). Likewise, the brain tissue set was more highly correlated than the adipose set with a measure of visceral adipose tissue from the UK Biobank study (r = 0.554 and r = 0.254, respectively, pcomparison=0.009), further suggesting that the way in which these tissue-partitioned sets of variants exert their effects on BMI likely varies in terms of biological pathways.\n\nUnivariable and multivariable MR analyses on childhood leptin measured in ALSPAC were undertaken as above in a one-sample setting by aggregating the tissue-partitioned BMI instruments as genetic risk scores and analyzing childhood leptin with adjustment for age and sex. Estimates on adulthood leptin were initially evaluated in a two-sample setting using the three univariable MR methods mentioned above, and subsequently using an extension of multivariable MR with instruments weighted by their PPA values for each tissue type (Leyden et al., 2023). An overview of datasets used for exposures and outcomes analyzed in this study can be found in Supplementary file 1a. All analyses were conducted using the \u2018TwoSampleMR\u2019 R package (Hemani et al., 2018).\n\n### Childhood measures of circulating leptin and fat distribution\n\nThe ALSPAC is a population-based cohort investigating genetic and environmental factors that affect the health and development of children. The study methods are described in detail elsewhere (Boyd et al., 2013; Fraser et al., 2013). In brief, 14,541 pregnant women residents in the former region of Avon, UK, with an expected delivery date between April 1, 1991, and December 31, 1992, were eligible to take part in ALSPAC. Of these initial pregnancies, there was a total of 14,676 fetuses, resulting in 14,062 live births and 13,988 children who were alive at 1 y of age. Please note that the study website contains details of all the data that is available through a fully searchable data dictionary and variable search tool and reference the following webpage: http://www.bristol.ac.uk/alspac/researchers/our-data/. Written informed consent was obtained for all study participants. Ethical approval for this study was obtained from the ALSPAC Ethics and Law Committee and the Local Research Ethics Committees. Childhood measures of circulating leptin levels were obtained from non-fasting blood samples taken from ALSPAC participants at mean age 9.9 y (range = 8.9\u201311.5 y). Leptin was measured by an in-house ELISA validated against commercial methods. Analyses in ALSPAC were undertaken on a final sample size of 4155 individuals after removing those without genetic data and withdrawn consent.\n\nA further sensitivity analysis of body composition was conducted on dual-energy X-ray absorptiometry (DXA) and skinfold measures obtained from the ALSPAC study. Trunk and total body DXA measures of lean, bone, and fat mass were obtained for ALSPAC participants at mean age 9.9 y (range = 8.9\u201311.5 y) as above. Skinfold thickness measures were available for 576 ALSPAC participants assessed at the 61-mth clinic (mean age 5.2 y) by skinfold caliper. The mean of three measurements was obtained for biceps, triceps, subscapular and suprailiac skinfold thickness.\n\n### Adulthood estimates for circulating leptin and fat distribution\n\nGenetic estimates on adulthood circulating leptin levels were obtained from a study of 10,708 individuals enrolled in the Fenland study. Full details have been described elsewhere (Pietzner et al., 2021a). Leptin was measured using the SomaScan v4 assay, which applies single-stranded oligonucleotides aptamers with specific binding affinities to protein targets. This assay has also been reported to provide a very highly correlated measure of circulating leptin using the antibody-based Olink platform (r = 0.95) (Pietzner et al., 2021b). The Fenland study was approved by the National Health Service (NHS) Health Research Authority Research Ethics Committee (NRES Committee-East of England Cambridge Central, ref 04/Q018/19). All participants provided written informed consent. Although effect estimates from these summary-level data can be interpreted as a 1-SD change in normalized plasma leptin levels, we note that direct comparisons between estimates derived from childhood measures of leptin in ALSPAC should not be drawn given the various sources of heterogeneity between these measures.\n\nWe also obtained genetic estimates on adulthood circulating leptin levels from a previously conducted large-scale study of 35,559 individuals enrolled in the deCODE Health study (mean age: 55 y, SD: 17 y). Full details on that study have been reported previously (Ferkingstad et al., 2021). Briefly, circulating leptin was measured from plasma samples using the SomaScan version 4 assay by SomaLogic. All participants from this study who donated samples gave informed consent, and the National Bioethics Committee of Iceland approved the study, which was conducted in agreement with conditions issued by the Data Protection Authority of Iceland (VSN_14-015).\n\nGenome-wide effect estimates on measures of fat distribution were obtained from a recent study on 38,965 UK Biobank participants who analyzed MRI-derived measures of visceral, abdominal subcutaneous, and gluteofemoral fat tissue volumes (Agrawal et al., 2022).\n\n## Results\n\n### Disentangling direct and indirect effects of childhood adiposity on early and mid-life measures of leptin levels\n\nWe firstly conducted univariable MR to estimate the total effect of childhood adiposity on circulating leptin using data measured in ALSPAC participants at mean age 9.9 y in the lifecourse (\u03b2 = 1.28 SD change in leptin levels per change in body size category, 95% CI = 1.10\u20131.46, p=2 \u00d7 10\u201341). This was followed by applying multivariable MR, which provided evidence that childhood body size has a direct effect on increased leptin levels at this point in the lifecourse (\u03b2 = 1.10, 95% CI = 0.90\u20131.30, p=6 \u00d7 10\u201328) (Figure 1A and B, Supplementary file 1b). Both childhood and adult adiposity likewise provided evidence of a total effect on circulating leptin measured in adulthood (\u03b2 = 0.48, 95% CI = 0.36\u20130.61, p=5 \u00d7 10\u201314 and \u03b2 = 0.59, 95% CI = 0.49\u20130,69, p=2 \u00d7 10\u201332, respectively) (Supplementary file 1c). However, multivariable MR analyses suggested that childhood adiposity indirectly influences leptin levels measured during adulthood along the causal pathway involving adult body size (\u03b2 = 0.56, 95% CI = 0.42\u20130.69, p=1 \u00d7 10\u201315) (Figure 1C and D, Supplementary file 1d). Similar patterns were found analyzing circulating leptin levels using data from the Icelandic population (Supplementary file 1e).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/84646/elife-84646-fig1-v1.jpg)\n\n**Figure 1.:** (A) A forest plot illustrating the direct effect of childhood body size on circulating leptin levels measured during childhood (mean age: 9.9 y) using individual-level data from the Avon Longitudinal Study of Parents and Children (ALSPAC). (B) provides the corresponding schematic diagram for ALSPAC results. (C) A forest plot depicting the indirect effect of childhood body size on adulthood measured leptin levels using data from the deCODE Health study (mean age: 55 y) as portrayed in the schematic diagram presented in panel (D). \u2018Genetic variants\u2019 refers to instruments for both exposures in the model. The red arrow indicates the causal pathway being assessed. MR, Mendelian randomization. Data underlying this figure can be found in Supplementary file 1b and d.\n\nA further analysis of childhood body composition was conducted to investigate the residual positive effect of adult adiposity on leptin measured in childhood found in the previous multivariable MR analysis. Similarly, this analysis provided evidence that the adult effect attenuated with respect to the childhood adiposity score when evaluating measures of fat mass obtained by DXA scan (e.g. trunk fat; childhood body size: \u03b2 = 1.42, 95% CI = 1.22\u20131.61, p=2.69 \u00d7 10\u201347 and adult body size: \u03b2 = 0.60, 95% CI = 0.44\u20130.77, p=1.6 \u00d7 10\u201312) (Supplementary file 1f). Additionally, an evaluation of skinfold measures provided further evidence of a direct effect of childhood adiposity on fat mass (e.g. childhood: \u03b2 = 1.00, 95% CI = 0.40\u20131.60, p=0.001 and adult: \u03b2 = \u20130.12, 95% CI = \u22120.65\u20130.42, p=0.67) (Supplementary file 1g).\n\n### Separating the tissue-partitioned effects of body mass index on leptin levels measured during childhood and adulthood\n\nUnivariable MR analyses provided evidence of a total effect of adiposity on leptin levels measured during childhood based on analyses using the adipose tissue (\u03b2 = 0.61, 95% CI = 0.13\u20131.08, p=0.01) and brain tissue (\u03b2 = 0.86, 95% CI = 0.40\u20131.31, p=2 \u00d7 10\u20134) partitioned instruments. In a multivariable setting, the brain tissue-derived component of BMI predominated in the model (\u03b2 = 0.79, 95% CI = 0.22\u20131.36, p=6 \u00d7 10\u20133), whereas the adipose tissue-derived estimate attenuated to include the null (\u03b2 = 0.12, 95% CI = \u22120.48\u20130.71, p=0.70) (Figure 2A and B, Supplementary file 1h). Analyses on adulthood measured leptin also provided strong evidence of a total effect based on adipose-and brain tissue-derived estimates (\u03b2 = 0.39, 95% CI = 0.21\u20130.57, p=3 \u00d7 10\u20135 and \u03b2 = 0.42, 95% CI = 0.28\u20130.56, p=2 \u00d7 10\u20139, respectively). Similar to findings for childhood leptin, subcutaneous adipose tissue-derived estimates attenuated substantially more (\u03b2 = 0.14, 95% CI = \u22120.14\u20130.42, p=0.33) compared to the estimates derived using the brain tissue instrument set (\u03b2 = 0.38, 95% CI = 0.14\u20130.62, p=2 \u00d7 10\u20133) in a multivariable setting (Figure 2C and D, Supplementary file 1i and j). Similar conclusions were drawn based on data from the Icelandic population (Supplementary file 1k). Cochran\u2019s Q-statistics for these analyses, as well as those derived in lifecourse MR analyses, can be found in Supplementary file 1l, along with intercept terms for MR-Egger analyses, which did not suggest horizontal pleiotropy may be biasing conclusions.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/84646/elife-84646-fig2-v1.jpg)\n\n**Figure 2.:** (A) A forest plot illustrating the attenuation of the adipose tissue-instrumented body mass index (BMI) effect on childhood leptin levels, whereas estimates for brain tissue-instrumented BMI remained robust. (B) The corresponding schematic diagram for this finding. (C) A forest plot displaying similar conclusions to the estimates found in childhood, but derived using adulthood measured leptin levels. (D) provides the corresponding schematic diagram for estimates portrayed in panel (C). \u2018Genetic variants\u2019 refers to instruments for both exposures in the model. The red arrow indicates the causal pathway being assessed. MR, Mendelian randomization. Data underlying this figure can be found in Supplementary file 1h and j.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/84646/elife-84646-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Data underlying this figure can be found in Supplementary file 1m.\n\nAs a further sensitivity analysis to characterize the causal pathway between these tissue-partitioned variants and fat distribution, we found that in particular the brain-expressed instruments have a predominating effect on visceral fat volume (\u03b2 = 0.51, 95% CI = 0.30\u20130.72, p=2 \u00d7 10\u20136) compared to the subcutaneous adipose instruments (\u03b2 = 0.07, 95% CI = \u22120.18\u20130.32, p=0.57) (Figure 2\u2014figure supplement 1, Supplementary file 1m).\n\n## Discussion\n\nIn this study, we applied two recent approaches in the MR paradigm, known as lifecourse and tissue partitioned MR, to investigate the influence of adiposity on circulating leptin levels as an exemplar relationship to demonstrate the value of these techniques. Whilst there is irrefutable evidence that having a higher BMI increases circulating levels of leptin, these two extensions of MR methodology provide insight into lifecourse-specific effects and the tissues of action underlying this etiological relationship. We propose that these approaches can be conducted to build upon the findings by conventional MR analyses, which use naturally occurring genetic variants as causal anchors to help establish and estimate the causal effect of modifiable exposures on complex outcomes and disease endpoints.\n\nOur application of lifecourse MR in this work supports a breadth of previous research using this technique, which highlights the importance of taking into consideration the age at which data from participants for exposure and outcome datasets are analyzed. Findings from this study provide evidence that adiposity in childhood exerts a direct effect on leptin levels when measured in early life, corroborating findings from observational studies (Shalitin and Phillip, 2003). Conversely, evidence of an indirect effect along the causal pathway involving adulthood adiposity was found when analyzing leptin measured in later life. This provides a powerful proof of concept for this approach, which has previously found evidence of a direct effect of increased childhood adiposity on lower risk of breast cancer (Richardson et al., 2020), elevated risk of type 1 diabetes (Richardson et al., 2022a), and an influence on cardiac structure (O\u2019Nunain et al., 2022). Evidence supporting indirect effects using this approach, as in this study for adulthood leptin, has been found previously for various cardiovascular (Power et al., 2021) and site-specific cancer endpoints (Mariosa et al., 2022; Papadimitriou et al., 2023).\n\nAdditionally, in the multivariable MR analysis of childhood adiposity on childhood leptin, we found that the effect of adulthood adiposity, despite attenuating in comparison to univariable MR estimates, still provided some evidence of an indirect influence. However, within a lifecourse model an effect of adulthood adiposity on childhood leptin levels is impossible given that an adulthood risk factor cannot influence a trait measured at an earlier stage in the lifecourse. We therefore investigated this residual effect of the adulthood adiposity genetic score on in-depth measures of childhood adiposity using data from the age 10 clinic of the ALSPAC study. Similar evidence of a residual effect of the adulthood genetic score on childhood measured DXA-assessed fat mass was found in these analyses, whereas a direct effect of childhood adiposity was found on skinfold measures. These analyses further complement the study design of leveraging both individual- and summary-level data within an MR framework to develop more granular insight into the underlying etiological pathways between risk factors and complex traits. This residual influence of the adulthood BMI score on childhood leptin suggests that the aspects of childhood adiposity that relate to the adulthood genetic score in the multivariable analyses independently of the childhood score importantly influence leptin in childhood. In similar analyses for childhood vitamin D no such relationship was seen (Richardson et al., 2022b). This suggests that different aspects of childhood body composition influence circulating vitamin D and leptin levels, and demonstrates how cognisance of the gene-environment equivalence assumption in MR can motivate improved understanding of genotype to phenotype associations.\n\nTissue-partitioned MR analyses in this work suggest that the subcomponent of BMI proxied using genetic variants whose effects are putatively mediated via gene expression in brain tissue are predominantly responsible for driving effects of adiposity on leptin during both childhood and adulthood. We postulate that these findings highlight a role for appetite regulation and energy expenditure mechanisms as of fundamental importance in the effect of adiposity on leptin levels. This corroborates findings from the literature, which suggest that being overweight has a downstream consequence on elevated leptin levels due to leptin resistance occurring in the central nervous system, particularly the hypothalamus (Gruzdeva et al., 2019). This is influenced by factors such as blood\u2013brain barrier permeability, which results in leptin failing to suppress appetite and consequently leads to circulating hyperleptinemia amongst patients with obesity (Izquierdo et al., 2019). Taken together with the evidence of an indirect effect highlighted by our lifecourse MR analysis, these findings suggest that leptin may have long-term consequences for appetite suppression. This in turn has an influence on excess body weight, which may start in childhood and then can be sustained into later life. Future research in this space should investigate large-scale genome-wide association studies (GWAS) outcomes related to subcutaneous adipose tissues (e.g. skinfold thickness), particularly given that this is where leptin is primarily produced (Russell et al., 1998).\n\nFractionating genetic instruments for the same exposure using molecular datasets has important considerations for the (often overlooked) gene\u2013environment equivalence assumption in MR (Davey Smith, 2012). This states that the effect of germline genetic perturbations should have the same downstream consequence on outcomes as if they were caused by the modifiable exposures themselves. For the adipose- and brain tissue-partitioned sets of instruments used in this study, we found previously that the manner in which they relate to downstream disease and complex traits can drastically differ despite having almost identical average effect estimates on BMI as an exposure. In particular, this finding underlines the heterogeneous nature of BMI as a lifestyle risk factor and highlights that this human-derived construct likely captures various causal pathways underlying the relationship between anthropometry and complex outcomes. For example, we previously found evidence that the brain tissue-derived variants are predominantly responsible for the effect of BMI on both cigarette smoking and lung cancer (Leyden et al., 2023). We emphasize that future application of tissue-partitioned MR should carefully consider both the exposure and functionally relevant tissue types being investigated, as well as ensuring that the derived instrument sets are equally predictive of the exposure (Leyden et al., 2023). In particular, applications of a combined approach using both lifecourse and tissue-partitioned MR will likely be most powerful for exposures that have been analyzed by GWAS in large samples at distinct timepoints in the lifecourse (e.g. childhood and adulthood) where the functionally important tissue types have been well characterized by previous studies.\n\nWe note that both lifecourse and tissue-partitioned MR have important caveats. For instance, the childhood and adult body size instruments used to disentangle direct and indirect effects in this study do not provide insight into other timepoints over the lifecourse (e.g. adolescence). Future efforts should focus on deriving instruments to separate effects of age-specific adiposity at more granular windows over the lifecourse. Moreover, the childhood adiposity instruments are based on recall data, which is why they required validation in three independent cohorts as described in the \u2018Methods\u2019 section. In addition, tissue-partitioned instruments were derived using bulk tissue in this work due to the availability of data and therefore do not take into account cell-type heterogeneity (Glastonbury et al., 2019; Prince et al., 2021). Furthermore, as with all estimates derived from MR, triangulating findings from other orthogonal lines of evidence derived using different study design and datasets provides the most robust conclusions for the approaches applied in this work (Munaf\u00f2 and Davey Smith, 2018).\n\nIn summary, our findings highlight a putative role for genes expressed in neural tissues in the etiology of adiposity and leptin levels during both childhood and adulthood. Furthermore, this innovative study provides a proof of concept into how the principles of MR can be adapted to investigate the hypotheses outside the scope of how this causal inference technique was originally conceived (Davey Smith and Ebrahim, 2003).\n",
+      "created_at": "2025-12-04T03:38:08.175026Z"
+    },
+    {
+      "id": "5b3bac3c-847a-4001-976c-442e09335b92",
+      "submission_id": "87dab395-b2cb-49c1-937b-ff36c10d9f34",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Edward D Janus, https://ror.org/01ej9dk98 University of Melbourne Australia\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.84646.sa0](https://doi.org/10.7554/eLife.84646.sa0)\n\nThe authors have recently developed two novel approaches to Mendelian randomization studies (1) lifecourse MR which relates the genetic instruments to the outcome, eg obesity, at different stages of life eg childhood, and adulthood and (2) tissue partitioned MR to determine if the genetic instruments have different effects on different tissues such as the brain and adipose tissue. They combine these approaches to investigate the influence of adiposity on circulating leptin in order to demonstrate the value/proof of concept of these techniques in extending the use of MR. This is very clearly presented and well conducted work showing both important new methodology and clear-cut results and so providing compelling evidence on the impact of adiposity at age 10 and in middle life and the weight gain in between on leptin levels and that the effect is mediated via the brain.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Edward D Janus, https://ror.org/01ej9dk98 University of Melbourne Australia\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.84646.sa1](https://doi.org/10.7554/eLife.84646.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Time-varying and tissue-dependent effects of adiposity on leptin levels: a Mendelian randomization study\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, including Edward D Janus as Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Matthias Barton as the Senior Editor. The following individual involved in the review of your submission has agreed to reveal their identity: Despoina Manousaki (Reviewer #2).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this letter to help you prepare a revised submission.\n\nEssential revisions:\n\n1) It might not fit directly with the proof of concept aim of the manuscript, but this study could be a nice opportunity to test the opposite association, ie if leptin affects adiposity at different life stages. The relationship between BMI and leptin levels is complex as nicely depicted in lines 248-253 of the discussion. In the introduction, it is stated that leptin acts in the hypothalamus to regulate appetite. If the retroaction works, the regulation of appetite is expected to decrease appetite and food intake, and maintain BMI to a normal level. The knock-outed mice for leptin or congenital leptin deficiency in humans result in uncontrolled satiety and obesity. A bidirectional MR of Steiger filtering in the forward MR could answer this question.\n\n2) In the discussion could the authors say if there are any other examples of already analysed or potentially interesting indirect life course effects ie expand on reference 26? Can they provide other examples of tissue-partitioned effects either already shown or potentially relevant? Can they suggest examples of other issues that this combined approach could address? This could give readers an even better idea of how these new approaches could be used.\n\nReviewer #1 (Recommendations for the authors):\n\nI don't find a lot that needs to be addressed.\n\nI could not find Supplementary notes 1 and 2.\n\nIn the discussion could the authors say if there are any other examples of already analysed or potentially interesting indirect life course effects ie expand on reference 26?\n\nCan they provide other examples of tissue-partitioned effects either already shown or potentially relevant?\n\nAny suggestions/examples for other issues that this combined approach could address?\n\nThis could give readers an even better idea of how these new approaches could be used.\n\nReviewer #2 (Recommendations for the authors):\n\nThis is an interesting study exploring lifecourse effects of adiposity on leptin levels, and using tissue-partitioned MR instruments to study the effects of BMI on leptin levels. While the study question is appealing, the methods are novel and they have been nicely applied in the context of the present study, and the results are interesting, I find that certain parts of the manuscript could be further clarified.\n\nAlso, it might not fit directly with the proof of concept aim of the manuscript, but this study could be a nice opportunity to test the opposite association, ie if leptin affects adiposity at different life stages. The relationship between BMI and leptin levels is complex as nicely depicted in lines 248-253 of the discussion. In the introduction, it is stated that leptin acts in the hypothalamus to regulate appetite. If the retroaction works, the regulation of appetite is expected to decrease appetite and food intake, and maintain BMI to a normal level. The knock-outed mice for leptin or congenital leptin deficiency in humans result in uncontrolled satiety and obesity. A bidirectional MR of Steiger filtering in the forward MR could answer this question.\n\nBelow are my point-by-point comments:\n\nAbstract:\n\nMethods: When the authors say in the results: \"along the causal pathway\", do they mean that they adjusted for adult body size in multivariable MR? If yes, please add this to the methods section of the abstract.\n\nThe units of change in exposure that confer the betas in the leptin outcome are not exposed in the abstract or in the manuscript (see additional comment on this below). This raises a challenge in directly comparing the two betas (ie in the childhood vs adulthood MR analysis).\n\nIn the conclusion, the phrase \"as well as raising implications for the gene-environment equivalence assumption in MR\". It is not clear how this phrase is justified by the analyses presented in the abstract. It is explained in the discussion of the paper, but I would suggest omitting it from the abstract conclusion.\n\nSome specifications are needed in regards to the exposure and the outcome of GWAS sources.\n\nFor the exposure GWAS: In the BMJ paper cited as the source of the SNPs for adult and childhood body size, it is described that adult body size was measured based on the measured body mass index during adulthood (mean age 56.5) while child body mass was self-reported perceived body size at age 10. This is important information that should appear in the methods section of the manuscript. This leads to the question, could the fact that the IVs for measuring adult vs child body mass were based on a different method of estimating body size explain the difference we see in the results of the lifecourse MR? I understand that these IVs successfully predicted adult vs child BMI in 3 cohorts, but the measure of the exposure conferred by the genetic instrument in adults vs children is different. This should be highlighted in the methods, Results section and as a limitation of this study.\n\nIn terms of the outcome GWAS:\n\nIn line 105, could the authors specify how were leptin levels measured in ALSPAC? Was the method the same as that in DECODE? If the method was different, could this as well induce any bias in the MR estimates?\n\nIn terms of comparison between ALSPAC and DECODE, the Icelandic population of DECODE may have a distinct genetic architecture from ALSPAC or other European cohorts. This could introduce bias due to population stratification when using instruments for the exposure that comes from European meta-analyses. Is there another adult proteomic GWAS with available leptin levels which can be used to replicate the results in DECODE?\n\nLine 138: in the multivariable MR analyses, which were the other variables tested as exposures (ie other than the adiposity variants for children or adults?) -this part should be clarified in both methods and Results section. I understand that adulthood and childhood body size were the two exposure variables, based on the DAGs in Figure 1. It would be helpful to put the DAGs in the two boxes entitled \"Genetic variants\" the GWAS source of the genetic variants and specify: \" genetic variants for adulthood adiposity\" or \"genetic variants for childhood adiposity\" depending on the analysis. Also, could the authors explain in the legend the interpretation of the colours of the arrows (ie black vs red?).\n\nLine 144: Could the authors specify if in the tissue partitioned MR analysis the IVs were for adult BMI?\n\nLine 167: in the phrase: \"We firstly estimated the total effect of childhood adiposity on circulating leptin using data measured in ALSPAC participants at mean age 9.9 years in the lifecourse\", please specify that you are referring to a univariate MR analysis.\n\nIn Tables S3 and S5, please provide the p-value of the intercept of the MR-Egger, as well as the Cohrane Q p-values for IVW and MR-Egger, and based on these results, please comment on the presence or absence of evidence of pleiotropy in the IVs used in the MR analyses.\n\nDiscussion: It would be nice to further elaborate on the hypothesis explaining the finding in regards to the indirect effect of childhood adiposity on adult leptin levels. In line 239, the authors explain this finding by \"individuals in a population remaining overweight for many years in the lifecourse\". The effect of early-life adiposity remains after adjustment for adult adiposity. Can the results of the tissue-partitioned MR (in terms of the sole effect of brain BMI SNPs on leptin levels in childhood vs a composite effect of adipose and brain tissue IVs on adult leptin levels) inform us on a possible hypothesis explaining the above phenomenon? Could early-life adiposity be associated with specific hypothalamic responses persisting in adulthood?\n\nIn regards to the sensitivity analysis on the effect of tissue-partitioned BMI on visceral vs subcutaneous fat, the authors could provide further explanation on the relationship between leptin secretion and fat distribution providing a rationale for this analysis.\n",
+      "created_at": "2025-12-04T03:38:08.175026Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T03:38:08.175026Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T03:38:08.175026Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "bdb8e5a1-a70f-4da5-841e-696445f9a588",
+      "content_id": "ecef6f5b-04d8-40bd-b1f6-5171f85ddae8",
+      "claim_id": "C1",
+      "claim": "People living with obesity have elevated levels of the peptide hormone leptin.",
+      "claim_type": "EXPLICIT",
+      "source": "People living with obesity have elevated levels of the peptide hormone leptin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Obradovic et al., 2021",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:38:08.175026Z"
+    },
+    {
+      "id": "df4627db-e4d8-4e69-b61e-c981a295d282",
+      "content_id": "ecef6f5b-04d8-40bd-b1f6-5171f85ddae8",
+      "claim_id": "C2",
+      "claim": "The amount of leptin in circulation is proportional to the amount of adipose tissue that an individual has.",
+      "claim_type": "EXPLICIT",
+      "source": "This can be attributed to the amount of leptin in circulation being proportional to the amount of adipose tissue that an individual has (Obradovic et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Obradovic et al., 2021",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:38:08.175026Z"
+    },
+    {
+      "id": "e7b34e24-af59-4ee3-aae2-2e9b4fc50507",
+      "content_id": "ecef6f5b-04d8-40bd-b1f6-5171f85ddae8",
+      "claim_id": "C3",
+      "claim": "Leptin is secreted by fat cells in adipose tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "After being secreted by fat cells in adipose tissue, leptin predominantly acts in the hypothalamus as a major regulator of energy balance (Morrison, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Morrison, 2009",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:38:08.175026Z"
+    },
+    {
+      "id": "5a5071f0-5a39-4410-a8cb-49fe2110572f",
+      "content_id": "ecef6f5b-04d8-40bd-b1f6-5171f85ddae8",
+      "claim_id": "C4",
+      "claim": "Leptin predominantly acts in the hypothalamus as a major regulator of energy balance.",
+      "claim_type": "EXPLICIT",
+      "source": "After being secreted by fat cells in adipose tissue, leptin predominantly acts in the hypothalamus as a major regulator of energy balance (Morrison, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Morrison, 2009",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:38:08.175026Z"
+    },
+    {
+      "id": "ed0c800c-ad05-4e2b-8611-3a077424e3d6",
+      "content_id": "ecef6f5b-04d8-40bd-b1f6-5171f85ddae8",
+      "claim_id": "C5",
+      "claim": "Both neural and adipose tissues play an important role in the molecular etiology of body mass index (BMI).",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise, both neural and adipose tissues are known to play an important role in the molecular etiology of body mass index (BMI), which is conventionally used to clinically diagnose obesity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as established knowledge in the field",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:38:08.175026Z"
+    },
+    {
+      "id": "0b1f31e6-a5d4-4024-aa5d-718694c3d54b",
+      "content_id": "ecef6f5b-04d8-40bd-b1f6-5171f85ddae8",
+      "claim_id": "C6",
+      "claim": "BMI is conventionally used to clinically diagnose obesity.",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise, both neural and adipose tissues are known to play an important role in the molecular etiology of body mass index (BMI), which is conventionally used to clinically diagnose obesity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as established clinical practice",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:38:08.175026Z"
+    },
+    {
+      "id": "bcb22bfc-f5c0-49e2-b2b0-a54519033bf9",
+      "content_id": "ecef6f5b-04d8-40bd-b1f6-5171f85ddae8",
+      "claim_id": "C7",
+      "claim": "BMI is a construct that captures multiple heterogeneous subcomponents.",
+      "claim_type": "EXPLICIT",
+      "source": "However, despite being a cost-effective approach to routinely measure adiposity at scale, BMI is a construct that captures multiple heterogeneous subcomponents.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by subsequent citations to functional gene studies",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:38:08.175026Z"
+    },
+    {
+      "id": "6cbd6827-aac4-4eb8-9102-c519d1677811",
+      "content_id": "ecef6f5b-04d8-40bd-b1f6-5171f85ddae8",
+      "claim_id": "C8",
+      "claim": "Functional genes exert their effects on adiposity via their expression in brain and adipose tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "This is epitomized by previous investigations into the functional genes that exert their effects on adiposity via their expression in brain and adipose tissues (Timshel et al., 2020; Rask-Andersen et al., 2019), highlighting the divergent pathways that exist between BMI and downstream complex traits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Timshel et al., 2020 and Rask-Andersen et al., 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:38:08.175026Z"
+    },
+    {
+      "id": "de5647e6-f695-4acb-8fd8-fb271bf82689",
+      "content_id": "ecef6f5b-04d8-40bd-b1f6-5171f85ddae8",
+      "claim_id": "C9",
+      "claim": "Divergent pathways exist between BMI and downstream complex traits.",
+      "claim_type": "EXPLICIT",
+      "source": "This is epitomized by previous investigations into the functional genes that exert their effects on adiposity via their expression in brain and adipose tissues (Timshel et al., 2020; Rask-Andersen et al., 2019), highlighting the divergent pathways that exist between BMI and downstream complex traits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from cited studies on functional genes",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:38:08.175026Z"
+    },
+    {
+      "id": "23982551-6d98-4027-bc02-8f42f72ed5ec",
+      "content_id": "ecef6f5b-04d8-40bd-b1f6-5171f85ddae8",
+      "claim_id": "C10",
+      "claim": "Brain-derived BMI variants are predominantly responsible for driving the effect of BMI on cardiometabolic disease outcomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Using this approach suggested that the brain-derived variants are predominantly responsible for driving the effect of BMI on cardiometabolic disease outcomes (Leyden et al., 2022), which we postulate is due to their involvement in appetite regulation and energy expenditure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Leyden et al., 2022",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:38:08.175026Z"
+    },
+    {
+      "id": "f632cc44-711c-4f09-a570-de71b036bf3d",
+      "content_id": "ecef6f5b-04d8-40bd-b1f6-5171f85ddae8",
+      "claim_id": "C11",
+      "claim": "Brain-derived BMI variants' effects on cardiometabolic disease outcomes are due to their involvement in appetite regulation and energy expenditure.",
+      "claim_type": "EXPLICIT",
+      "source": "Using this approach suggested that the brain-derived variants are predominantly responsible for driving the effect of BMI on cardiometabolic disease outcomes (Leyden et al., 2022), which we postulate is due to their involvement in appetite regulation and energy expenditure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Authors' postulation based on previous findings",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:38:08.175026Z"
+    },
+    {
+      "id": "72c8adc1-c77f-44b8-96f0-cc53aeb5bbf8",
+      "content_id": "ecef6f5b-04d8-40bd-b1f6-5171f85ddae8",
+      "claim_id": "C12",
+      "claim": "SAT-derived BMI instruments are predominantly responsible for the effect of BMI on endometrial cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, the SAT-derived set of instruments were predominantly responsible for the effect of BMI on outcomes such as endometrial cancer (Leyden et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Leyden et al., 2023",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:38:08.175026Z"
+    },
+    {
+      "id": "d9e6679e-f10b-4b0b-8700-417f0fd5eef7",
+      "content_id": "ecef6f5b-04d8-40bd-b1f6-5171f85ddae8",
+      "claim_id": "C13",
+      "claim": "Associations between BMI and leptin levels have been reported as early in life as childhood.",
+      "claim_type": "EXPLICIT",
+      "source": "However, investigating this hypothesis is made even more challenging given that associations between BMI and leptin levels have been reported as early in life as childhood (Shalitin and Phillip, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Shalitin and Phillip, 2003",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:38:08.175026Z"
+    },
+    {
+      "id": "ade6c242-751d-4f8a-a665-d8894747c8d2",
+      "content_id": "ecef6f5b-04d8-40bd-b1f6-5171f85ddae8",
+      "claim_id": "C14",
+      "claim": "Genetic instruments for childhood and adult adiposity can separate clinically measured childhood and adult BMI in three independent cohorts.",
+      "claim_type": "EXPLICIT",
+      "source": "Briefly, genetic instruments derived in the UK Biobank study based on self-reported body size at age 10 and measured adulthood BMI (Richardson et al., 2020) have been shown to separate clinically measured childhood and adult BMI in three independent cohorts (Avon Longitudinal Study of Parents and Children [ALSPAC] [Richardson et al., 2020], the Young Finns Study [Richardson et al., 2021], and the Tr\u00f8ndelag Health (HUNT) study [Brandkvist et al., 2021]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Richardson et al., 2020, Richardson et al., 2021, and Brandkvist et al., 2021",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:38:08.175026Z"
+    },
+    {
+      "id": "9ba06e94-c70e-481a-9ac1-2bc682636b94",
+      "content_id": "ecef6f5b-04d8-40bd-b1f6-5171f85ddae8",
+      "claim_id": "C15",
+      "claim": "86 independent adult BMI-associated instruments provided evidence of sharing a causal variant with proximal gene expression in subcutaneous adipose tissue through genetic colocalization analyses (based on a posterior probability [PPA] > 0.8).",
+      "claim_type": "EXPLICIT",
+      "source": "In brief, 86 independent adult BMI-associated instruments provided evidence of sharing a causal variant with proximal gene expression in subcutaneous adipose tissue through genetic colocalization analyses (based on a posterior probability [PPA] > 0.8).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Data from previous methodology described in Leyden et al., 2022",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:38:08.175026Z"
+    },
+    {
+      "id": "13909d2a-d623-4092-af27-5faf390e90cb",
+      "content_id": "ecef6f5b-04d8-40bd-b1f6-5171f85ddae8",
+      "claim_id": "C16",
+      "claim": "140 adult BMI instruments have effects putatively mediated by a nearby gene's expression in brain tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "The same approach provided evidence that the effects of 140 adult BMI instruments are putatively mediated by a nearby gene's expression in brain tissue.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Data from previous methodology described in Leyden et al., 2022",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:38:08.175026Z"
+    },
+    {
+      "id": "6be875c4-5e22-4f72-b5c1-12ddd8292b91",
+      "content_id": "ecef6f5b-04d8-40bd-b1f6-5171f85ddae8",
+      "claim_id": "C17",
+      "claim": "Adipose tissue-derived and brain tissue-derived BMI instruments have near identical average effect sizes on BMI (adipose = 0.0148 and brain = 0.0149 standard deviation change in BMI per effect allele).",
+      "claim_type": "EXPLICIT",
+      "source": "These two sets of genetic variants have near identical average effect sizes on BMI (adipose = 0.0148 and brain = 0.0149 standard deviation [SD] change in BMI per effect allele), although the manner in which they relate to other anthropometric traits can markedly differ.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Data from previous study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:38:08.175026Z"
+    },
+    {
+      "id": "9ce2eaf7-106e-482c-9f02-dc676ee2f135",
+      "content_id": "ecef6f5b-04d8-40bd-b1f6-5171f85ddae8",
+      "claim_id": "C18",
+      "claim": "Brain tissue BMI instruments are more strongly correlated with waist-to-hip ratio compared to adipose tissue instruments (r = 0.733 and r = 0.445, respectively, pcomparison=0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, we previously found that the brain tissue instruments were more strongly correlated with waist-to-hip ratio compared to the adipose\u2013tissue instruments (r = 0.733 and r = 0.445, respectively, pcomparison=0.001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Data from previous study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:38:08.175026Z"
+    },
+    {
+      "id": "1d2725d6-1e49-4b29-9e37-be9646037225",
+      "content_id": "ecef6f5b-04d8-40bd-b1f6-5171f85ddae8",
+      "claim_id": "C19",
+      "claim": "Brain tissue BMI instruments are more highly correlated with visceral adipose tissue than adipose tissue instruments (r = 0.554 and r = 0.254, respectively, pcomparison=0.009).",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise, the brain tissue set was more highly correlated than the adipose set with a measure of visceral adipose tissue from the UK Biobank study (r = 0.554 and r = 0.254, respectively, pcomparison=0.009), further suggesting that the way in which these tissue-partitioned sets of variants exert their effects on BMI likely varies in terms of biological pathways.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Data from previous study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:38:08.175026Z"
+    },
+    {
+      "id": "47fc412b-0063-49de-9a6e-bf40e3614746",
+      "content_id": "ecef6f5b-04d8-40bd-b1f6-5171f85ddae8",
+      "claim_id": "C20",
+      "claim": "Childhood leptin levels were measured from non-fasting blood samples taken from ALSPAC participants at mean age 9.9 y (range = 8.9\u201311.5 y).",
+      "claim_type": "EXPLICIT",
+      "source": "Childhood measures of circulating leptin levels were obtained from non-fasting blood samples taken from ALSPAC participants at mean age 9.9 y (range = 8.9\u201311.5 y).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of data collection methods",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:38:08.175026Z"
+    },
+    {
+      "id": "10b9c95c-10b3-4edc-a613-07369e774f3f",
+      "content_id": "ecef6f5b-04d8-40bd-b1f6-5171f85ddae8",
+      "claim_id": "C21",
+      "claim": "Leptin was measured by an in-house ELISA validated against commercial methods.",
+      "claim_type": "EXPLICIT",
+      "source": "Leptin was measured by an in-house ELISA validated against commercial methods.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of measurement methodology",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:38:08.175026Z"
+    },
+    {
+      "id": "794d2e40-df5e-4558-9e47-044ee1403961",
+      "content_id": "ecef6f5b-04d8-40bd-b1f6-5171f85ddae8",
+      "claim_id": "C22",
+      "claim": "Analyses in ALSPAC were undertaken on a final sample size of 4155 individuals after removing those without genetic data and withdrawn consent.",
+      "claim_type": "EXPLICIT",
+      "source": "Analyses in ALSPAC were undertaken on a final sample size of 4155 individuals after removing those without genetic data and withdrawn consent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of study sample",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:38:08.175026Z"
+    },
+    {
+      "id": "85814431-a02c-4a08-93b2-6f4b48991aec",
+      "content_id": "ecef6f5b-04d8-40bd-b1f6-5171f85ddae8",
+      "claim_id": "C23",
+      "claim": "Genetic estimates on adulthood circulating leptin levels were obtained from a study of 10,708 individuals enrolled in the Fenland study.",
+      "claim_type": "EXPLICIT",
+      "source": "Genetic estimates on adulthood circulating leptin levels were obtained from a study of 10,708 individuals enrolled in the Fenland study.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of data source",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:38:08.175026Z"
+    },
+    {
+      "id": "82828f18-64f1-4fd7-884e-1d9fd8f3e34b",
+      "content_id": "ecef6f5b-04d8-40bd-b1f6-5171f85ddae8",
+      "claim_id": "C24",
+      "claim": "Leptin was measured using the SomaScan v4 assay in the Fenland study.",
+      "claim_type": "EXPLICIT",
+      "source": "Leptin was measured using the SomaScan v4 assay, which applies single-stranded oligonucleotides aptamers with specific binding affinities to protein targets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of measurement methodology",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:38:08.175026Z"
+    },
+    {
+      "id": "abeb4983-3b8f-401f-975f-2c67ee27300f",
+      "content_id": "ecef6f5b-04d8-40bd-b1f6-5171f85ddae8",
+      "claim_id": "C25",
+      "claim": "The SomaScan assay provides a very highly correlated measure of circulating leptin with the antibody-based Olink platform (r = 0.95).",
+      "claim_type": "EXPLICIT",
+      "source": "This assay has also been reported to provide a very highly correlated measure of circulating leptin using the antibody-based Olink platform (r = 0.95) (Pietzner et al., 2021b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Pietzner et al., 2021b",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:38:08.175026Z"
+    },
+    {
+      "id": "85ca5040-710e-482d-982e-362ad96a623c",
+      "content_id": "ecef6f5b-04d8-40bd-b1f6-5171f85ddae8",
+      "claim_id": "C26",
+      "claim": "Genetic estimates on adulthood circulating leptin levels were obtained from 35,559 individuals enrolled in the deCODE Health study (mean age: 55 y, SD: 17 y).",
+      "claim_type": "EXPLICIT",
+      "source": "We also obtained genetic estimates on adulthood circulating leptin levels from a previously conducted large-scale study of 35,559 individuals enrolled in the deCODE Health study (mean age: 55 y, SD: 17 y).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of data source",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:38:08.175026Z"
+    },
+    {
+      "id": "a903b2f8-46b4-458a-aebb-5aa20f2c095a",
+      "content_id": "ecef6f5b-04d8-40bd-b1f6-5171f85ddae8",
+      "claim_id": "C27",
+      "claim": "Childhood adiposity has a total effect on circulating leptin at age 10 y (\u03b2 = 1.28 SD change in leptin levels per change in body size category, 95% CI = 1.10\u20131.46, p=2 \u00d7 10\u201341).",
+      "claim_type": "EXPLICIT",
+      "source": "We firstly conducted univariable MR to estimate the total effect of childhood adiposity on circulating leptin using data measured in ALSPAC participants at mean age 9.9 y in the lifecourse (\u03b2 = 1.28 SD change in leptin levels per change in body size category, 95% CI = 1.10\u20131.46, p=2 \u00d7 10\u201341).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Univariable MR analysis results from ALSPAC data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:38:08.175026Z"
+    },
+    {
+      "id": "7f85224a-7552-4ba1-87f3-62ce522d3ad7",
+      "content_id": "ecef6f5b-04d8-40bd-b1f6-5171f85ddae8",
+      "claim_id": "C28",
+      "claim": "Childhood body size has a direct effect on increased leptin levels at age 10 y (\u03b2 = 1.10, 95% CI = 0.90\u20131.30, p=6 \u00d7 10\u201328).",
+      "claim_type": "EXPLICIT",
+      "source": "This was followed by applying multivariable MR, which provided evidence that childhood body size has a direct effect on increased leptin levels at this point in the lifecourse (\u03b2 = 1.10, 95% CI = 0.90\u20131.30, p=6 \u00d7 10\u201328) (Figure 1A and B, Supplementary file 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Multivariable MR analysis results shown in Figure 1A and B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:38:08.175026Z"
+    },
+    {
+      "id": "ff8005a9-b18c-4cc7-9ab9-b162764aa193",
+      "content_id": "ecef6f5b-04d8-40bd-b1f6-5171f85ddae8",
+      "claim_id": "C29",
+      "claim": "Childhood adiposity has a total effect on circulating leptin measured in adulthood (\u03b2 = 0.48, 95% CI = 0.36\u20130.61, p=5 \u00d7 10\u201314).",
+      "claim_type": "EXPLICIT",
+      "source": "Both childhood and adult adiposity likewise provided evidence of a total effect on circulating leptin measured in adulthood (\u03b2 = 0.48, 95% CI = 0.36\u20130.61, p=5 \u00d7 10\u201314 and \u03b2 = 0.59, 95% CI = 0.49\u20130,69, p=2 \u00d7 10\u201332, respectively) (Supplementary file 1c).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Univariable MR analysis results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:38:08.175026Z"
+    },
+    {
+      "id": "78c34872-6da9-4edc-a1c4-d677ccd2e026",
+      "content_id": "ecef6f5b-04d8-40bd-b1f6-5171f85ddae8",
+      "claim_id": "C30",
+      "claim": "Adult adiposity has a total effect on circulating leptin measured in adulthood (\u03b2 = 0.59, 95% CI = 0.49\u20130.69, p=2 \u00d7 10\u201332).",
+      "claim_type": "EXPLICIT",
+      "source": "Both childhood and adult adiposity likewise provided evidence of a total effect on circulating leptin measured in adulthood (\u03b2 = 0.48, 95% CI = 0.36\u20130.61, p=5 \u00d7 10\u201314 and \u03b2 = 0.59, 95% CI = 0.49\u20130,69, p=2 \u00d7 10\u201332, respectively) (Supplementary file 1c).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Univariable MR analysis results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:38:08.175026Z"
+    },
+    {
+      "id": "86630a59-c67e-498b-b396-a9283a5aebd7",
+      "content_id": "ecef6f5b-04d8-40bd-b1f6-5171f85ddae8",
+      "claim_id": "C31",
+      "claim": "Childhood adiposity indirectly influences leptin levels measured during adulthood along the causal pathway involving adult body size (\u03b2 = 0.56, 95% CI = 0.42\u20130.69, p=1 \u00d7 10\u201315).",
+      "claim_type": "EXPLICIT",
+      "source": "However, multivariable MR analyses suggested that childhood adiposity indirectly influences leptin levels measured during adulthood along the causal pathway involving adult body size (\u03b2 = 0.56, 95% CI = 0.42\u20130.69, p=1 \u00d7 10\u201315) (Figure 1C and D, Supplementary file 1d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Multivariable MR analysis results shown in Figure 1C and D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:38:08.175026Z"
+    },
+    {
+      "id": "18c372e1-5ccc-4770-bae8-955ac777f4e5",
+      "content_id": "ecef6f5b-04d8-40bd-b1f6-5171f85ddae8",
+      "claim_id": "C32",
+      "claim": "Adipose tissue-derived BMI has a total effect on leptin levels measured during childhood (\u03b2 = 0.61, 95% CI = 0.13\u20131.08, p=0.01).",
+      "claim_type": "EXPLICIT",
+      "source": "Univariable MR analyses provided evidence of a total effect of adiposity on leptin levels measured during childhood based on analyses using the adipose tissue (\u03b2 = 0.61, 95% CI = 0.13\u20131.08, p=0.01) and brain tissue (\u03b2 = 0.86, 95% CI = 0.40\u20131.31, p=2 \u00d7 10\u20134) partitioned instruments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Univariable MR analysis results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:38:08.175026Z"
+    },
+    {
+      "id": "344d7289-7654-43c1-9365-06d6e3eaf610",
+      "content_id": "ecef6f5b-04d8-40bd-b1f6-5171f85ddae8",
+      "claim_id": "C33",
+      "claim": "Brain tissue-derived BMI has a total effect on leptin levels measured during childhood (\u03b2 = 0.86, 95% CI = 0.40\u20131.31, p=2 \u00d7 10\u20134).",
+      "claim_type": "EXPLICIT",
+      "source": "Univariable MR analyses provided evidence of a total effect of adiposity on leptin levels measured during childhood based on analyses using the adipose tissue (\u03b2 = 0.61, 95% CI = 0.13\u20131.08, p=0.01) and brain tissue (\u03b2 = 0.86, 95% CI = 0.40\u20131.31, p=2 \u00d7 10\u20134) partitioned instruments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Univariable MR analysis results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:38:08.175026Z"
+    },
+    {
+      "id": "0bbdb365-946b-4d7b-b17f-cd7cd566ce1a",
+      "content_id": "ecef6f5b-04d8-40bd-b1f6-5171f85ddae8",
+      "claim_id": "C34",
+      "claim": "The brain tissue-derived component of BMI predominates in the effect on childhood leptin levels (\u03b2 = 0.79, 95% CI = 0.22\u20131.36, p=6 \u00d7 10\u20133).",
+      "claim_type": "EXPLICIT",
+      "source": "In a multivariable setting, the brain tissue-derived component of BMI predominated in the model (\u03b2 = 0.79, 95% CI = 0.22\u20131.36, p=6 \u00d7 10\u20133), whereas the adipose tissue-derived estimate attenuated to include the null (\u03b2 = 0.12, 95% CI = \u22120.48\u20130.71, p=0.70) (Figure 2A and B, Supplementary file 1h).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Multivariable MR analysis results shown in Figure 2A and B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:38:08.175026Z"
+    },
+    {
+      "id": "a20fe528-a79b-4593-9f69-3133fd50aabc",
+      "content_id": "ecef6f5b-04d8-40bd-b1f6-5171f85ddae8",
+      "claim_id": "C35",
+      "claim": "The adipose tissue-derived estimate for childhood leptin attenuated to include the null in multivariable analysis (\u03b2 = 0.12, 95% CI = \u22120.48\u20130.71, p=0.70).",
+      "claim_type": "EXPLICIT",
+      "source": "In a multivariable setting, the brain tissue-derived component of BMI predominated in the model (\u03b2 = 0.79, 95% CI = 0.22\u20131.36, p=6 \u00d7 10\u20133), whereas the adipose tissue-derived estimate attenuated to include the null (\u03b2 = 0.12, 95% CI = \u22120.48\u20130.71, p=0.70) (Figure 2A and B, Supplementary file 1h).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Multivariable MR analysis results shown in Figure 2A and B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:38:08.175026Z"
+    },
+    {
+      "id": "26cade9a-307d-49a2-974e-77c11dee2956",
+      "content_id": "ecef6f5b-04d8-40bd-b1f6-5171f85ddae8",
+      "claim_id": "C36",
+      "claim": "Adipose tissue-derived BMI has a total effect on adulthood measured leptin (\u03b2 = 0.39, 95% CI = 0.21\u20130.57, p=3 \u00d7 10\u20135).",
+      "claim_type": "EXPLICIT",
+      "source": "Analyses on adulthood measured leptin also provided strong evidence of a total effect based on adipose-and brain tissue-derived estimates (\u03b2 = 0.39, 95% CI = 0.21\u20130.57, p=3 \u00d7 10\u20135 and \u03b2 = 0.42, 95% CI = 0.28\u20130.56, p=2 \u00d7 10\u20139, respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Univariable MR analysis results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:38:08.175026Z"
+    },
+    {
+      "id": "ca48df76-d49d-4199-937e-bddb45d2c40e",
+      "content_id": "ecef6f5b-04d8-40bd-b1f6-5171f85ddae8",
+      "claim_id": "C37",
+      "claim": "Brain tissue-derived BMI has a total effect on adulthood measured leptin (\u03b2 = 0.42, 95% CI = 0.28\u20130.56, p=2 \u00d7 10\u20139).",
+      "claim_type": "EXPLICIT",
+      "source": "Analyses on adulthood measured leptin also provided strong evidence of a total effect based on adipose-and brain tissue-derived estimates (\u03b2 = 0.39, 95% CI = 0.21\u20130.57, p=3 \u00d7 10\u20135 and \u03b2 = 0.42, 95% CI = 0.28\u20130.56, p=2 \u00d7 10\u20139, respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Univariable MR analysis results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:38:08.175026Z"
+    },
+    {
+      "id": "2d3ee66d-3233-4732-9b0e-49ae944a9849",
+      "content_id": "ecef6f5b-04d8-40bd-b1f6-5171f85ddae8",
+      "claim_id": "C38",
+      "claim": "Subcutaneous adipose tissue-derived BMI estimates attenuated substantially in multivariable analysis of adulthood leptin (\u03b2 = 0.14, 95% CI = \u22120.14\u20130.42, p=0.33).",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to findings for childhood leptin, subcutaneous adipose tissue-derived estimates attenuated substantially more (\u03b2 = 0.14, 95% CI = \u22120.14\u20130.42, p=0.33) compared to the estimates derived using the brain tissue instrument set (\u03b2 = 0.38, 95% CI = 0.14\u20130.62, p=2 \u00d7 10\u20133) in a multivariable setting (Figure 2C and D, Supplementary file 1i and j).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Multivariable MR analysis results shown in Figure 2C and D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:38:08.175026Z"
+    },
+    {
+      "id": "cc6ff5c9-b670-4062-84d6-b3fa0be5e0d6",
+      "content_id": "ecef6f5b-04d8-40bd-b1f6-5171f85ddae8",
+      "claim_id": "C39",
+      "claim": "Brain tissue-derived BMI estimates remained robust in multivariable analysis of adulthood leptin (\u03b2 = 0.38, 95% CI = 0.14\u20130.62, p=2 \u00d7 10\u20133).",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to findings for childhood leptin, subcutaneous adipose tissue-derived estimates attenuated substantially more (\u03b2 = 0.14, 95% CI = \u22120.14\u20130.42, p=0.33) compared to the estimates derived using the brain tissue instrument set (\u03b2 = 0.38, 95% CI = 0.14\u20130.62, p=2 \u00d7 10\u20133) in a multivariable setting (Figure 2C and D, Supplementary file 1i and j).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Multivariable MR analysis results shown in Figure 2C and D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:38:08.175026Z"
+    },
+    {
+      "id": "34a178a0-1fa4-448d-9679-99a78b590609",
+      "content_id": "ecef6f5b-04d8-40bd-b1f6-5171f85ddae8",
+      "claim_id": "C40",
+      "claim": "Brain-expressed BMI instruments have a predominating effect on visceral fat volume (\u03b2 = 0.51, 95% CI = 0.30\u20130.72, p=2 \u00d7 10\u20136).",
+      "claim_type": "EXPLICIT",
+      "source": "As a further sensitivity analysis to characterize the causal pathway between these tissue-partitioned variants and fat distribution, we found that in particular the brain-expressed instruments have a predominating effect on visceral fat volume (\u03b2 = 0.51, 95% CI = 0.30\u20130.72, p=2 \u00d7 10\u20136) compared to the subcutaneous adipose instruments (\u03b2 = 0.07, 95% CI = \u22120.18\u20130.32, p=0.57) (Figure 2\u2014figure supplement 1, Supplementary file 1m).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Sensitivity analysis results shown in Figure 2\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:38:08.175026Z"
+    },
+    {
+      "id": "c038b34b-a32a-4463-b33b-97ec227bdb41",
+      "content_id": "ecef6f5b-04d8-40bd-b1f6-5171f85ddae8",
+      "claim_id": "C41",
+      "claim": "Subcutaneous adipose BMI instruments have a minimal effect on visceral fat volume (\u03b2 = 0.07, 95% CI = \u22120.18\u20130.32, p=0.57).",
+      "claim_type": "EXPLICIT",
+      "source": "As a further sensitivity analysis to characterize the causal pathway between these tissue-partitioned variants and fat distribution, we found that in particular the brain-expressed instruments have a predominating effect on visceral fat volume (\u03b2 = 0.51, 95% CI = 0.30\u20130.72, p=2 \u00d7 10\u20136) compared to the subcutaneous adipose instruments (\u03b2 = 0.07, 95% CI = \u22120.18\u20130.32, p=0.57) (Figure 2\u2014figure supplement 1, Supplementary file 1m).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Sensitivity analysis results shown in Figure 2\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:38:08.175026Z"
+    },
+    {
+      "id": "503f9be1-8e0c-48da-9258-6c77942179c5",
+      "content_id": "ecef6f5b-04d8-40bd-b1f6-5171f85ddae8",
+      "claim_id": "C42",
+      "claim": "Adiposity in childhood exerts a direct effect on leptin levels when measured in early life.",
+      "claim_type": "EXPLICIT",
+      "source": "Our application of lifecourse MR in this work supports a breadth of previous research using this technique, which highlights the importance of taking into consideration the age at which data from participants for exposure and outcome datasets are analyzed. Findings from this study provide evidence that adiposity in childhood exerts a direct effect on leptin levels when measured in early life, corroborating findings from observational studies (Shalitin and Phillip, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by MR analysis results and citation to observational studies",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:38:08.175026Z"
+    },
+    {
+      "id": "8faff88b-05b6-4de5-a90a-ea1c9429c41c",
+      "content_id": "ecef6f5b-04d8-40bd-b1f6-5171f85ddae8",
+      "claim_id": "C43",
+      "claim": "Childhood adiposity has an indirect effect on leptin measured in later life along the causal pathway involving adulthood adiposity.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, evidence of an indirect effect along the causal pathway involving adulthood adiposity was found when analyzing leptin measured in later life.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on MR analysis results presented earlier",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:38:08.175026Z"
+    },
+    {
+      "id": "273bb6e7-b3e5-42de-ac17-9f83e815b8a9",
+      "content_id": "ecef6f5b-04d8-40bd-b1f6-5171f85ddae8",
+      "claim_id": "C44",
+      "claim": "Lifecourse MR has previously found evidence of a direct effect of increased childhood adiposity on lower risk of breast cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "This provides a powerful proof of concept for this approach, which has previously found evidence of a direct effect of increased childhood adiposity on lower risk of breast cancer (Richardson et al., 2020), elevated risk of type 1 diabetes (Richardson et al., 2022a), and an influence on cardiac structure (O'Nunain et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Richardson et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:38:08.175026Z"
+    },
+    {
+      "id": "4f5d48d4-7198-4b36-95a6-185d0b518835",
+      "content_id": "ecef6f5b-04d8-40bd-b1f6-5171f85ddae8",
+      "claim_id": "C45",
+      "claim": "Lifecourse MR has previously found evidence of a direct effect of increased childhood adiposity on elevated risk of type 1 diabetes.",
+      "claim_type": "EXPLICIT",
+      "source": "This provides a powerful proof of concept for this approach, which has previously found evidence of a direct effect of increased childhood adiposity on lower risk of breast cancer (Richardson et al., 2020), elevated risk of type 1 diabetes (Richardson et al., 2022a), and an influence on cardiac structure (O'Nunain et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Richardson et al., 2022a",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:38:08.175026Z"
+    },
+    {
+      "id": "f2e42042-8ecb-427f-9b8c-dba7c9762566",
+      "content_id": "ecef6f5b-04d8-40bd-b1f6-5171f85ddae8",
+      "claim_id": "C46",
+      "claim": "Lifecourse MR has previously found evidence of a direct effect of increased childhood adiposity on cardiac structure.",
+      "claim_type": "EXPLICIT",
+      "source": "This provides a powerful proof of concept for this approach, which has previously found evidence of a direct effect of increased childhood adiposity on lower risk of breast cancer (Richardson et al., 2020), elevated risk of type 1 diabetes (Richardson et al., 2022a), and an influence on cardiac structure (O'Nunain et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to O'Nunain et al., 2022",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:38:08.175026Z"
+    },
+    {
+      "id": "99a5920f-a0cf-4d07-8aa9-a58e0ba279fa",
+      "content_id": "ecef6f5b-04d8-40bd-b1f6-5171f85ddae8",
+      "claim_id": "C47",
+      "claim": "The subcomponent of BMI proxied using genetic variants whose effects are putatively mediated via gene expression in brain tissue are predominantly responsible for driving effects of adiposity on leptin during both childhood and adulthood.",
+      "claim_type": "EXPLICIT",
+      "source": "Tissue-partitioned MR analyses in this work suggest that the subcomponent of BMI proxied using genetic variants whose effects are putatively mediated via gene expression in brain tissue are predominantly responsible for driving effects of adiposity on leptin during both childhood and adulthood.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on tissue-partitioned MR analysis results presented earlier",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:38:08.175026Z"
+    },
+    {
+      "id": "9e1fe98a-f54b-4e27-9829-4d68b43e310d",
+      "content_id": "ecef6f5b-04d8-40bd-b1f6-5171f85ddae8",
+      "claim_id": "C48",
+      "claim": "These findings highlight a role for appetite regulation and energy expenditure mechanisms as of fundamental importance in the effect of adiposity on leptin levels.",
+      "claim_type": "EXPLICIT",
+      "source": "We postulate that these findings highlight a role for appetite regulation and energy expenditure mechanisms as of fundamental importance in the effect of adiposity on leptin levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Authors' interpretation of their findings",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:38:08.175026Z"
+    },
+    {
+      "id": "a8fc46c0-1729-4190-adaf-1310b27de75b",
+      "content_id": "ecef6f5b-04d8-40bd-b1f6-5171f85ddae8",
+      "claim_id": "C49",
+      "claim": "Being overweight has a downstream consequence on elevated leptin levels due to leptin resistance occurring in the central nervous system, particularly the hypothalamus.",
+      "claim_type": "EXPLICIT",
+      "source": "This corroborates findings from the literature, which suggest that being overweight has a downstream consequence on elevated leptin levels due to leptin resistance occurring in the central nervous system, particularly the hypothalamus (Gruzdeva et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Gruzdeva et al., 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:38:08.175026Z"
+    },
+    {
+      "id": "4fbff9d4-d2f7-4631-bcd5-cd1e52f72082",
+      "content_id": "ecef6f5b-04d8-40bd-b1f6-5171f85ddae8",
+      "claim_id": "C50",
+      "claim": "Leptin resistance is influenced by factors such as blood\u2013brain barrier permeability, which results in leptin failing to suppress appetite and consequently leads to circulating hyperleptinemia amongst patients with obesity.",
+      "claim_type": "EXPLICIT",
+      "source": "This is influenced by factors such as blood\u2013brain barrier permeability, which results in leptin failing to suppress appetite and consequently leads to circulating hyperleptinemia amongst patients with obesity (Izquierdo et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Izquierdo et al., 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:38:08.175026Z"
+    },
+    {
+      "id": "4410d30e-6d7a-4f92-8aba-be994bb5ecc2",
+      "content_id": "ecef6f5b-04d8-40bd-b1f6-5171f85ddae8",
+      "claim_id": "C51",
+      "claim": "Leptin may have long-term consequences for appetite suppression that influences excess body weight starting in childhood and sustained into later life.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together with the evidence of an indirect effect highlighted by our lifecourse MR analysis, these findings suggest that leptin may have long-term consequences for appetite suppression. This in turn has an influence on excess body weight, which may start in childhood and then can be sustained into later life.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Authors' interpretation combining their findings with literature",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:38:08.175026Z"
+    },
+    {
+      "id": "3e24dacc-98f4-4113-b79a-e8fe4f0c9196",
+      "content_id": "ecef6f5b-04d8-40bd-b1f6-5171f85ddae8",
+      "claim_id": "C52",
+      "claim": "Leptin is primarily produced in subcutaneous adipose tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "Future research in this space should investigate large-scale genome-wide association studies (GWAS) outcomes related to subcutaneous adipose tissues (e.g. skinfold thickness), particularly given that this is where leptin is primarily produced (Russell et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Russell et al., 1998",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:38:08.175026Z"
+    },
+    {
+      "id": "8f9d7ed6-3c76-458f-8dcd-0567ff161c06",
+      "content_id": "ecef6f5b-04d8-40bd-b1f6-5171f85ddae8",
+      "claim_id": "C53",
+      "claim": "The manner in which adipose- and brain tissue-partitioned BMI instruments relate to downstream disease and complex traits can drastically differ despite having almost identical average effect estimates on BMI.",
+      "claim_type": "EXPLICIT",
+      "source": "For the adipose- and brain tissue-partitioned sets of instruments used in this study, we found previously that the manner in which they relate to downstream disease and complex traits can drastically differ despite having almost identical average effect estimates on BMI as an exposure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on previous findings from the authors' work",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:38:08.175026Z"
+    },
+    {
+      "id": "fd6ef243-15f5-4dd0-8112-5b665ff7ef93",
+      "content_id": "ecef6f5b-04d8-40bd-b1f6-5171f85ddae8",
+      "claim_id": "C54",
+      "claim": "Brain tissue-derived BMI variants are predominantly responsible for the effect of BMI on both cigarette smoking and lung cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, we previously found evidence that the brain tissue-derived variants are predominantly responsible for the effect of BMI on both cigarette smoking and lung cancer (Leyden et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Leyden et al., 2023",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:38:08.175026Z"
+    },
+    {
+      "id": "6e48d142-bd1e-41f6-a9b1-61b4ea3b3825",
+      "content_id": "ecef6f5b-04d8-40bd-b1f6-5171f85ddae8",
+      "claim_id": "C55",
+      "claim": "BMI likely captures various causal pathways underlying the relationship between anthropometry and complex outcomes.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, this finding underlines the heterogeneous nature of BMI as a lifestyle risk factor and highlights that this human-derived construct likely captures various causal pathways underlying the relationship between anthropometry and complex outcomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Authors' interpretation based on their findings",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:38:08.175026Z"
+    },
+    {
+      "id": "5040ce27-c925-4913-aaab-3e3bc7ef0770",
+      "content_id": "ecef6f5b-04d8-40bd-b1f6-5171f85ddae8",
+      "claim_id": "C56",
+      "claim": "The childhood and adult body size instruments do not provide insight into other timepoints over the lifecourse (e.g. adolescence).",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, the childhood and adult body size instruments used to disentangle direct and indirect effects in this study do not provide insight into other timepoints over the lifecourse (e.g. adolescence).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Authors' acknowledgment of study limitations",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:38:08.175026Z"
+    },
+    {
+      "id": "6fe5d9f7-ff37-44b3-8deb-5263dbd2d626",
+      "content_id": "ecef6f5b-04d8-40bd-b1f6-5171f85ddae8",
+      "claim_id": "C57",
+      "claim": "The childhood adiposity instruments are based on recall data.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the childhood adiposity instruments are based on recall data, which is why they required validation in three independent cohorts as described in the 'Methods' section.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of instrument derivation methodology",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:38:08.175026Z"
+    },
+    {
+      "id": "5b70ed1b-7ecb-4028-b7b2-f1e74ffa8150",
+      "content_id": "ecef6f5b-04d8-40bd-b1f6-5171f85ddae8",
+      "claim_id": "C58",
+      "claim": "Tissue-partitioned instruments were derived using bulk tissue and do not take into account cell-type heterogeneity.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, tissue-partitioned instruments were derived using bulk tissue in this work due to the availability of data and therefore do not take into account cell-type heterogeneity (Glastonbury et al., 2019; Prince et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Authors' acknowledgment of methodological limitation with supporting citations",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:38:08.175026Z"
+    },
+    {
+      "id": "0f2c90b2-6927-4e9d-942e-8270a9d188e3",
+      "content_id": "ecef6f5b-04d8-40bd-b1f6-5171f85ddae8",
+      "claim_id": "C59",
+      "claim": "The findings highlight a putative role for genes expressed in neural tissues in the etiology of adiposity and leptin levels during both childhood and adulthood.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, our findings highlight a putative role for genes expressed in neural tissues in the etiology of adiposity and leptin levels during both childhood and adulthood.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Authors' summary of their findings",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:38:08.175026Z"
+    },
+    {
+      "id": "34fca18e-9aae-4dce-a1cd-2a56ed3b39b5",
+      "content_id": "ecef6f5b-04d8-40bd-b1f6-5171f85ddae8",
+      "claim_id": "C60",
+      "claim": "This study provides a proof of concept into how the principles of MR can be adapted to investigate hypotheses outside the scope of how this causal inference technique was originally conceived.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, this innovative study provides a proof of concept into how the principles of MR can be adapted to investigate the hypotheses outside the scope of how this causal inference technique was originally conceived (Davey Smith and Ebrahim, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Authors' interpretation of the methodological contribution with citation to original MR conception",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:38:08.175026Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "671669d9-edb8-43b0-b4cb-37eba40b97ad",
+      "content_id": "ecef6f5b-04d8-40bd-b1f6-5171f85ddae8",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Childhood adiposity has a direct causal effect on childhood leptin levels (age ~10y), with multivariable MR showing \u03b2=1.10 (95% CI=0.90-1.30, p=6\u00d710\u207b\u00b2\u2078) after accounting for adult body size.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C28 provide strong statistical evidence from both univariable and multivariable MR analyses with highly significant p-values. The multivariable approach appropriately controls for adult adiposity to isolate the direct childhood effect. C42 correctly interprets this finding as corroborating observational studies.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:38:08.175026Z"
+    },
+    {
+      "id": "40f186e6-fcda-4bf4-bbef-792923d7c257",
+      "content_id": "ecef6f5b-04d8-40bd-b1f6-5171f85ddae8",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Childhood adiposity has an indirect effect on adult leptin levels (age ~55y) mediated through adult body size (\u03b2=0.56, 95% CI=0.42-0.69, p=1\u00d710\u207b\u00b9\u2075), while adult adiposity shows a direct effect.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C31 demonstrate the lifecourse MR approach effectively separates direct and indirect effects. The multivariable MR analysis shows childhood adiposity's effect on adult leptin is mediated through adult body size, with strong statistical support. This is a key finding demonstrating temporal dynamics.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:38:08.175026Z"
+    },
+    {
+      "id": "9db3c742-e023-4aca-849b-e51fce132226",
+      "content_id": "ecef6f5b-04d8-40bd-b1f6-5171f85ddae8",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Brain tissue-derived BMI variants predominantly drive effects on childhood leptin levels (\u03b2=0.79, 95% CI=0.22-1.36, p=6\u00d710\u207b\u00b3), while adipose tissue-derived effects attenuate to null (\u03b2=0.12, 95% CI=-0.48-0.71, p=0.70) in multivariable analysis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C35 provide clear evidence from tissue-partitioned MR that brain-mediated pathways dominate for childhood leptin. The attenuation of adipose tissue effects in multivariable analysis is appropriately interpreted. Statistical evidence is robust with appropriate confidence intervals.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:38:08.175026Z"
+    },
+    {
+      "id": "b042e70e-d946-4789-887d-9fe3b40a0d0b",
+      "content_id": "ecef6f5b-04d8-40bd-b1f6-5171f85ddae8",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Brain tissue-derived BMI variants predominantly drive effects on adult leptin levels (\u03b2=0.38, 95% CI=0.14-0.62, p=2\u00d710\u207b\u00b3), while subcutaneous adipose tissue-derived effects attenuate substantially (\u03b2=0.14, 95% CI=-0.14-0.42, p=0.33) in multivariable analysis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C39 demonstrate consistent findings with childhood leptin analysis. The pattern of brain tissue dominance persists in adulthood, with appropriate statistical support. The parallel findings across life stages strengthen the overall conclusion about tissue-specific pathways.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:38:08.175026Z"
+    },
+    {
+      "id": "97ea2538-a101-4a88-9131-6d45b2cdbb6f",
+      "content_id": "ecef6f5b-04d8-40bd-b1f6-5171f85ddae8",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Brain-expressed BMI instruments have a predominating effect on visceral fat volume (\u03b2=0.51, 95% CI=0.30-0.72, p=2\u00d710\u207b\u2076) compared to minimal effects from subcutaneous adipose instruments (\u03b2=0.07, 95% CI=-0.18-0.32, p=0.57).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C41 provide important sensitivity analysis supporting the mechanistic interpretation. The differential effects on visceral versus subcutaneous fat distribution align with the proposed brain-mediated pathways involving appetite regulation and energy expenditure. Statistical evidence is strong.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:38:08.175026Z"
+    },
+    {
+      "id": "3ecc6da7-e0b6-48a3-98b3-16f80b21c162",
+      "content_id": "ecef6f5b-04d8-40bd-b1f6-5171f85ddae8",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Tissue-partitioned BMI instruments were derived using colocalization analysis (PPA>0.8), identifying 86 adipose tissue-mediated and 140 brain tissue-mediated variants with nearly identical average effect sizes on BMI but differential correlations with anthropometric traits.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C19 describe the instrument derivation methodology from prior work. The colocalization approach is appropriate for tissue partitioning, and the validation showing differential correlations with waist-to-hip ratio and visceral adipose tissue supports the biological validity of the partitioning strategy.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:38:08.175026Z"
+    },
+    {
+      "id": "d227cd0c-b93a-4f75-923d-486bbd60ad91",
+      "content_id": "ecef6f5b-04d8-40bd-b1f6-5171f85ddae8",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Childhood and adult adiposity genetic instruments, derived from UK Biobank self-reported body size at age 10 and measured adult BMI, have been validated to separate clinically measured childhood and adult BMI in three independent cohorts, though childhood instruments are based on recall data.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C14 provides appropriate validation evidence across three independent cohorts (ALSPAC, Young Finns, HUNT). C57 acknowledges the limitation of recall-based instruments, which is appropriately transparent. The validation addresses concerns about measurement error.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:38:08.175026Z"
+    },
+    {
+      "id": "e24538e5-894f-46b2-ae34-9ccb99526c0a",
+      "content_id": "ecef6f5b-04d8-40bd-b1f6-5171f85ddae8",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Leptin measurements were obtained from ALSPAC (n=4,155, age ~10y, in-house ELISA), Fenland study (n=10,708, SomaScan v4), and deCODE Health study (n=35,559, age ~55y, SomaScan v4), with SomaScan showing high correlation (r=0.95) with antibody-based methods.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C26 provide comprehensive description of data sources and measurement methods. The validation of SomaScan against Olink (C25) addresses measurement validity concerns. Sample sizes are adequate for genetic analyses, and measurement protocols are clearly described.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:38:08.175026Z"
+    },
+    {
+      "id": "ebbec1b4-ca4b-4f93-a3db-e45a58ec136d",
+      "content_id": "ecef6f5b-04d8-40bd-b1f6-5171f85ddae8",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The authors interpret brain tissue-mediated effects as reflecting appetite regulation and energy expenditure mechanisms, with leptin resistance in the hypothalamus leading to hyperleptinemia in obesity, potentially having long-term consequences from childhood into adulthood.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C48-C51 involve mechanistic interpretation beyond what the genetic data directly demonstrate. While C49-C50 cite supporting literature on leptin resistance, C48 and C51 are explicitly speculative ('postulate', 'suggest'). The interpretation is plausible but not directly tested by the MR analyses.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:38:08.175026Z"
+    },
+    {
+      "id": "91bca7c2-c084-4f18-ada0-f14ceee9716a",
+      "content_id": "ecef6f5b-04d8-40bd-b1f6-5171f85ddae8",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The study has limitations including lack of insight into adolescent timepoints and use of bulk tissue data that does not account for cell-type heterogeneity in tissue-partitioned instruments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56 and C58 appropriately acknowledge methodological limitations. The lifecourse approach is limited to childhood and adulthood timepoints, and bulk tissue eQTL data cannot capture cell-type-specific effects. These are valid limitations that do not invalidate the findings but suggest areas for future refinement.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:38:08.175026Z"
+    },
+    {
+      "id": "34ca43f0-a89a-4380-91ce-85a01d877b4f",
+      "content_id": "ecef6f5b-04d8-40bd-b1f6-5171f85ddae8",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Background context establishes that leptin is elevated in obesity, proportional to adipose tissue, acts in the hypothalamus for energy balance, and that BMI is a heterogeneous construct with neural and adipose tissue involvement, with divergent pathways to complex traits.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C9 establish appropriate background context supported by citations to prior literature. These claims provide the scientific rationale for the study design. The characterization of BMI as heterogeneous (C7) is well-supported by cited functional genomics studies (C8).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:38:08.175026Z"
+    },
+    {
+      "id": "2836bf4f-f9d1-485a-b7c6-ca7a71f24c3b",
+      "content_id": "ecef6f5b-04d8-40bd-b1f6-5171f85ddae8",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Prior tissue-partitioned MR work showed brain-derived BMI variants drive cardiometabolic disease effects (attributed to appetite regulation/energy expenditure), while SAT-derived variants drive endometrial cancer effects, with BMI-leptin associations reported in childhood.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C13 accurately cite prior work establishing the rationale for the current study. C11 notes the mechanistic interpretation is a 'postulation' from prior work. These claims appropriately contextualize the current investigation within the authors' research program.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:38:08.175026Z"
+    },
+    {
+      "id": "159e817a-e66e-4c2a-8dd8-1ac826b3413c",
+      "content_id": "ecef6f5b-04d8-40bd-b1f6-5171f85ddae8",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Prior lifecourse MR applications found direct effects of childhood adiposity on breast cancer risk (protective), type 1 diabetes risk (elevated), and cardiac structure, demonstrating the approach's utility.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C46 cite prior applications of lifecourse MR methodology to establish proof-of-concept. These citations appropriately demonstrate the method has been validated in other contexts, supporting its application to the leptin question.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:38:08.175026Z"
+    },
+    {
+      "id": "9128584a-2221-4dda-a790-1323c8bcd256",
+      "content_id": "ecef6f5b-04d8-40bd-b1f6-5171f85ddae8",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Despite nearly identical average BMI effect sizes, adipose- and brain tissue-partitioned BMI instruments relate differently to downstream traits, with brain-derived variants driving effects on smoking and lung cancer, highlighting BMI's heterogeneous nature.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C55 cite prior findings demonstrating the biological validity of tissue partitioning. The observation that instruments with similar BMI effects have different downstream consequences supports the gene-environment equivalence assumption and justifies the partitioning approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:38:08.175026Z"
+    },
+    {
+      "id": "d687d7b9-2a05-4d42-bace-44c0bd13992a",
+      "content_id": "ecef6f5b-04d8-40bd-b1f6-5171f85ddae8",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Leptin is primarily produced in subcutaneous adipose tissues, suggesting future research should investigate GWAS outcomes related to subcutaneous adipose measures like skinfold thickness.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C52 cites established knowledge (Russell et al., 1998) about leptin production sites and appropriately suggests future research directions. This is a reasonable recommendation given the study's findings about tissue-specific pathways.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:38:08.175026Z"
+    },
+    {
+      "id": "ce387ad7-2429-4f1c-b0d4-8d7fb4ede817",
+      "content_id": "ecef6f5b-04d8-40bd-b1f6-5171f85ddae8",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The study demonstrates a putative role for neural tissue-expressed genes in adiposity-leptin etiology across the lifecourse and provides proof-of-concept for adapting MR principles to investigate hypotheses beyond conventional applications.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C60 appropriately summarize the study's contributions. The findings do support a role for neural pathways (though 'putative' appropriately acknowledges inferential nature), and the methodological innovation of combining lifecourse and tissue-partitioned MR is demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:38:08.175026Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "a903b2f8-46b4-458a-aebb-5aa20f2c095a",
+      "result_id": "671669d9-edb8-43b0-b4cb-37eba40b97ad"
+    },
+    {
+      "claim_id": "7f85224a-7552-4ba1-87f3-62ce522d3ad7",
+      "result_id": "671669d9-edb8-43b0-b4cb-37eba40b97ad"
+    },
+    {
+      "claim_id": "503f9be1-8e0c-48da-9258-6c77942179c5",
+      "result_id": "671669d9-edb8-43b0-b4cb-37eba40b97ad"
+    },
+    {
+      "claim_id": "ff8005a9-b18c-4cc7-9ab9-b162764aa193",
+      "result_id": "40f186e6-fcda-4bf4-bbef-792923d7c257"
+    },
+    {
+      "claim_id": "78c34872-6da9-4edc-a1c4-d677ccd2e026",
+      "result_id": "40f186e6-fcda-4bf4-bbef-792923d7c257"
+    },
+    {
+      "claim_id": "86630a59-c67e-498b-b396-a9283a5aebd7",
+      "result_id": "40f186e6-fcda-4bf4-bbef-792923d7c257"
+    },
+    {
+      "claim_id": "8faff88b-05b6-4de5-a90a-ea1c9429c41c",
+      "result_id": "40f186e6-fcda-4bf4-bbef-792923d7c257"
+    },
+    {
+      "claim_id": "18c372e1-5ccc-4770-bae8-955ac777f4e5",
+      "result_id": "9db3c742-e023-4aca-849b-e51fce132226"
+    },
+    {
+      "claim_id": "344d7289-7654-43c1-9365-06d6e3eaf610",
+      "result_id": "9db3c742-e023-4aca-849b-e51fce132226"
+    },
+    {
+      "claim_id": "0bbdb365-946b-4d7b-b17f-cd7cd566ce1a",
+      "result_id": "9db3c742-e023-4aca-849b-e51fce132226"
+    },
+    {
+      "claim_id": "a20fe528-a79b-4593-9f69-3133fd50aabc",
+      "result_id": "9db3c742-e023-4aca-849b-e51fce132226"
+    },
+    {
+      "claim_id": "99a5920f-a0cf-4d07-8aa9-a58e0ba279fa",
+      "result_id": "9db3c742-e023-4aca-849b-e51fce132226"
+    },
+    {
+      "claim_id": "26cade9a-307d-49a2-974e-77c11dee2956",
+      "result_id": "b042e70e-d946-4789-887d-9fe3b40a0d0b"
+    },
+    {
+      "claim_id": "ca48df76-d49d-4199-937e-bddb45d2c40e",
+      "result_id": "b042e70e-d946-4789-887d-9fe3b40a0d0b"
+    },
+    {
+      "claim_id": "2d3ee66d-3233-4732-9b0e-49ae944a9849",
+      "result_id": "b042e70e-d946-4789-887d-9fe3b40a0d0b"
+    },
+    {
+      "claim_id": "cc6ff5c9-b670-4062-84d6-b3fa0be5e0d6",
+      "result_id": "b042e70e-d946-4789-887d-9fe3b40a0d0b"
+    },
+    {
+      "claim_id": "34a178a0-1fa4-448d-9679-99a78b590609",
+      "result_id": "97ea2538-a101-4a88-9131-6d45b2cdbb6f"
+    },
+    {
+      "claim_id": "c038b34b-a32a-4463-b33b-97ec227bdb41",
+      "result_id": "97ea2538-a101-4a88-9131-6d45b2cdbb6f"
+    },
+    {
+      "claim_id": "9ba06e94-c70e-481a-9ac1-2bc682636b94",
+      "result_id": "3ecc6da7-e0b6-48a3-98b3-16f80b21c162"
+    },
+    {
+      "claim_id": "13909d2a-d623-4092-af27-5faf390e90cb",
+      "result_id": "3ecc6da7-e0b6-48a3-98b3-16f80b21c162"
+    },
+    {
+      "claim_id": "6be875c4-5e22-4f72-b5c1-12ddd8292b91",
+      "result_id": "3ecc6da7-e0b6-48a3-98b3-16f80b21c162"
+    },
+    {
+      "claim_id": "9ce2eaf7-106e-482c-9f02-dc676ee2f135",
+      "result_id": "3ecc6da7-e0b6-48a3-98b3-16f80b21c162"
+    },
+    {
+      "claim_id": "1d2725d6-1e49-4b29-9e37-be9646037225",
+      "result_id": "3ecc6da7-e0b6-48a3-98b3-16f80b21c162"
+    },
+    {
+      "claim_id": "ade6c242-751d-4f8a-a665-d8894747c8d2",
+      "result_id": "d227cd0c-b93a-4f75-923d-486bbd60ad91"
+    },
+    {
+      "claim_id": "6fe5d9f7-ff37-44b3-8deb-5263dbd2d626",
+      "result_id": "d227cd0c-b93a-4f75-923d-486bbd60ad91"
+    },
+    {
+      "claim_id": "47fc412b-0063-49de-9a6e-bf40e3614746",
+      "result_id": "e24538e5-894f-46b2-ae34-9ccb99526c0a"
+    },
+    {
+      "claim_id": "10b9c95c-10b3-4edc-a613-07369e774f3f",
+      "result_id": "e24538e5-894f-46b2-ae34-9ccb99526c0a"
+    },
+    {
+      "claim_id": "794d2e40-df5e-4558-9e47-044ee1403961",
+      "result_id": "e24538e5-894f-46b2-ae34-9ccb99526c0a"
+    },
+    {
+      "claim_id": "85814431-a02c-4a08-93b2-6f4b48991aec",
+      "result_id": "e24538e5-894f-46b2-ae34-9ccb99526c0a"
+    },
+    {
+      "claim_id": "82828f18-64f1-4fd7-884e-1d9fd8f3e34b",
+      "result_id": "e24538e5-894f-46b2-ae34-9ccb99526c0a"
+    },
+    {
+      "claim_id": "abeb4983-3b8f-401f-975f-2c67ee27300f",
+      "result_id": "e24538e5-894f-46b2-ae34-9ccb99526c0a"
+    },
+    {
+      "claim_id": "85ca5040-710e-482d-982e-362ad96a623c",
+      "result_id": "e24538e5-894f-46b2-ae34-9ccb99526c0a"
+    },
+    {
+      "claim_id": "9e1fe98a-f54b-4e27-9829-4d68b43e310d",
+      "result_id": "ebbec1b4-ca4b-4f93-a3db-e45a58ec136d"
+    },
+    {
+      "claim_id": "a8fc46c0-1729-4190-adaf-1310b27de75b",
+      "result_id": "ebbec1b4-ca4b-4f93-a3db-e45a58ec136d"
+    },
+    {
+      "claim_id": "4fbff9d4-d2f7-4631-bcd5-cd1e52f72082",
+      "result_id": "ebbec1b4-ca4b-4f93-a3db-e45a58ec136d"
+    },
+    {
+      "claim_id": "4410d30e-6d7a-4f92-8aba-be994bb5ecc2",
+      "result_id": "ebbec1b4-ca4b-4f93-a3db-e45a58ec136d"
+    },
+    {
+      "claim_id": "5040ce27-c925-4913-aaab-3e3bc7ef0770",
+      "result_id": "91bca7c2-c084-4f18-ada0-f14ceee9716a"
+    },
+    {
+      "claim_id": "5b70ed1b-7ecb-4028-b7b2-f1e74ffa8150",
+      "result_id": "91bca7c2-c084-4f18-ada0-f14ceee9716a"
+    },
+    {
+      "claim_id": "bdb8e5a1-a70f-4da5-841e-696445f9a588",
+      "result_id": "34ca43f0-a89a-4380-91ce-85a01d877b4f"
+    },
+    {
+      "claim_id": "df4627db-e4d8-4e69-b61e-c981a295d282",
+      "result_id": "34ca43f0-a89a-4380-91ce-85a01d877b4f"
+    },
+    {
+      "claim_id": "e7b34e24-af59-4ee3-aae2-2e9b4fc50507",
+      "result_id": "34ca43f0-a89a-4380-91ce-85a01d877b4f"
+    },
+    {
+      "claim_id": "5a5071f0-5a39-4410-a8cb-49fe2110572f",
+      "result_id": "34ca43f0-a89a-4380-91ce-85a01d877b4f"
+    },
+    {
+      "claim_id": "ed0c800c-ad05-4e2b-8611-3a077424e3d6",
+      "result_id": "34ca43f0-a89a-4380-91ce-85a01d877b4f"
+    },
+    {
+      "claim_id": "0b1f31e6-a5d4-4024-aa5d-718694c3d54b",
+      "result_id": "34ca43f0-a89a-4380-91ce-85a01d877b4f"
+    },
+    {
+      "claim_id": "bcb22bfc-f5c0-49e2-b2b0-a54519033bf9",
+      "result_id": "34ca43f0-a89a-4380-91ce-85a01d877b4f"
+    },
+    {
+      "claim_id": "6cbd6827-aac4-4eb8-9102-c519d1677811",
+      "result_id": "34ca43f0-a89a-4380-91ce-85a01d877b4f"
+    },
+    {
+      "claim_id": "de5647e6-f695-4acb-8fd8-fb271bf82689",
+      "result_id": "34ca43f0-a89a-4380-91ce-85a01d877b4f"
+    },
+    {
+      "claim_id": "23982551-6d98-4027-bc02-8f42f72ed5ec",
+      "result_id": "2836bf4f-f9d1-485a-b7c6-ca7a71f24c3b"
+    },
+    {
+      "claim_id": "f632cc44-711c-4f09-a570-de71b036bf3d",
+      "result_id": "2836bf4f-f9d1-485a-b7c6-ca7a71f24c3b"
+    },
+    {
+      "claim_id": "72c8adc1-c77f-44b8-96f0-cc53aeb5bbf8",
+      "result_id": "2836bf4f-f9d1-485a-b7c6-ca7a71f24c3b"
+    },
+    {
+      "claim_id": "d9e6679e-f10b-4b0b-8700-417f0fd5eef7",
+      "result_id": "2836bf4f-f9d1-485a-b7c6-ca7a71f24c3b"
+    },
+    {
+      "claim_id": "273bb6e7-b3e5-42de-ac17-9f83e815b8a9",
+      "result_id": "159e817a-e66e-4c2a-8dd8-1ac826b3413c"
+    },
+    {
+      "claim_id": "4f5d48d4-7198-4b36-95a6-185d0b518835",
+      "result_id": "159e817a-e66e-4c2a-8dd8-1ac826b3413c"
+    },
+    {
+      "claim_id": "f2e42042-8ecb-427f-9b8c-dba7c9762566",
+      "result_id": "159e817a-e66e-4c2a-8dd8-1ac826b3413c"
+    },
+    {
+      "claim_id": "8f9d7ed6-3c76-458f-8dcd-0567ff161c06",
+      "result_id": "9128584a-2221-4dda-a790-1323c8bcd256"
+    },
+    {
+      "claim_id": "fd6ef243-15f5-4dd0-8112-5b665ff7ef93",
+      "result_id": "9128584a-2221-4dda-a790-1323c8bcd256"
+    },
+    {
+      "claim_id": "6e48d142-bd1e-41f6-a9b1-61b4ea3b3825",
+      "result_id": "9128584a-2221-4dda-a790-1323c8bcd256"
+    },
+    {
+      "claim_id": "3e24dacc-98f4-4113-b79a-e8fe4f0c9196",
+      "result_id": "d687d7b9-2a05-4d42-bace-44c0bd13992a"
+    },
+    {
+      "claim_id": "0f2c90b2-6927-4e9d-942e-8270a9d188e3",
+      "result_id": "ce387ad7-2429-4f1c-b0d4-8d7fb4ede817"
+    },
+    {
+      "claim_id": "34fca18e-9aae-4dce-a1cd-2a56ed3b39b5",
+      "result_id": "ce387ad7-2429-4f1c-b0d4-8d7fb4ede817"
+    }
+  ],
+  "comparisons": []
+}

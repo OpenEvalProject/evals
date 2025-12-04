@@ -1,0 +1,2164 @@
+{
+  "submission": {
+    "id": "1fcf7672-9c16-4063-af3f-47e25bd1c677",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-04T04:34:46.693039Z",
+    "updated_at": "2025-12-04T04:34:46.693039Z"
+  },
+  "content": [
+    {
+      "id": "6a7ca5d5-03c7-464d-bf1e-ad3a652ca6bf",
+      "submission_id": "1fcf7672-9c16-4063-af3f-47e25bd1c677",
+      "content_type": "manuscript",
+      "content_text": "# Predicting metabolic modules in incomplete bacterial genomes with MetaPathPredict\n\n## Authors\n\n- David Geller-McGrath<sup>1</sup> ([ORCID: 0000-0002-5629-9983](https://orcid.org/0000-0002-5629-9983)) \u2020\n- Kishori M Konwar<sup>2</sup>\n- Virginia P Edgcomb<sup>3</sup>\n- Maria Pachiadaki<sup>1</sup>\n- Jack W Roddy<sup>4</sup>\n- Travis J Wheeler<sup>4</sup> \u2020\n- Jason E McDermott<sup>5</sup> ([ORCID: 0000-0003-2961-2572](https://orcid.org/0000-0003-2961-2572)) \u2020\n\n### Affiliations\n\n1. Biology Department, Woods Hole Oceanographic Institution Woods Hole United States ([ROR:03zbnzt98](https://ror.org/03zbnzt98))\n2. Luit Consulting Revere United States\n3. Marine Geology and Geophysics Department, Woods Hole Oceanographic Institution Woods Hole United States ([ROR:03zbnzt98](https://ror.org/03zbnzt98))\n4. R. Ken Coit College of Pharmacy, University of Arizona Tucson United States ([ROR:03m2x1q45](https://ror.org/03m2x1q45))\n5. Computational Sciences Division, Pacific Northwest National Laboratory Richland United States ([ROR:05h992307](https://ror.org/05h992307))\n6. Department of Molecular Microbiology and Immunology, Oregon Health & Science University Portland United States ([ROR:009avj582](https://ror.org/009avj582))\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe reconstruction of complete microbial metabolic pathways using \u2018omics data from environmental samples remains challenging. Computational pipelines for pathway reconstruction that utilize machine learning methods to predict the presence or absence of KEGG modules in incomplete genomes are lacking. Here, we present MetaPathPredict, a software tool that incorporates machine learning models to predict the presence of complete KEGG modules within bacterial genomic datasets. Using gene annotation data and information from the KEGG module database, MetaPathPredict employs deep learning models to predict the presence of KEGG modules in a genome. MetaPathPredict can be used as a command line tool or as a Python module, and both options are designed to be run locally or on a compute cluster. Benchmarks show that MetaPathPredict makes robust predictions of KEGG module presence within highly incomplete genomes.\n\n## Introduction\n\nMicroorganisms play a key role in all major biogeochemical cycles on Earth. Accurate and more complete identification of microbial metabolic pathways within genomic data is crucial to understanding their potential activities. This identification of pathways within genomic data, and assessment of their expression, provides important insight into their influence on the chemistry of their environment and their mediation of interactions with other organisms.\n\nIn recent decades, the scientific community has significantly advanced its capability to gather and sequence genomes from microorganisms. Key steps in the process of working with isolated genomes, single-amplified genomes (SAGs), or metagenome assembled genomes (MAGs), are identifying genes coding for enzymes that catalyze metabolic reactions and inferring the metabolic potential of the associated organism from these data. These analyses involve comparing protein-coding sequences with homologous sequences from reference metabolic pathway databases including KEGG (Kanehisa and Goto, 2000) and MetaCyc (Caspi et al., 2018). Environmental genomes that are recovered from high-throughput sequencing samples vary in their degree of completeness due to numerous factors including limited coverage of low-abundance microbes, composition-based coverage biases, insertion-deletion errors, and substitution errors (Browne et al., 2020). Enzymes encoded in genomes are also missed due to limitations in protein annotation methods, that is, undiscovered protein families may be undetected by traditional homology-based methods. This can limit the ability to determine the extent to which these organisms (or communities) can catalyze metabolic reactions and form pathways.\n\nSequencing biases, novel protein families, and incomplete gene and protein annotation databases lead to missing, ambiguous, or inaccurate gene annotations that create incomplete metabolic networks in recovered environmental genomes. This leads to a challenge in genome analysis: given a set of annotated genes that incompletely covers some known metabolic network, predict whether the network is, in fact, present in that organism (i.e. to predict whether one or more unobserved network components is likely present but unobserved for some reason). Existing algorithms for this metabolic network \u2018gap filling\u2019 largely fall into two categories of approaches: those based on network topology, such as the method utilized by Gapseq (Zimmermann et al., 2021), and those that utilize pre-defined KEGG module cutoffs, such as those used by METABOLIC (Zhou et al., 2022). Network topology and pathway gene presence/absence cutoffs, however, can lead to underestimation of pathways that are present, particularly in highly incomplete genomes. Parsimony-based algorithms such as MinPath detect gaps in a metabolic network and identify the minimum number of modifications to the network that can be made to activate those reactions (Ye and Doak, 2009) its conservative approach, however, can lead to underestimation of the metabolic pathways present in a sample. KEMET (Pal\u00f9 et al., 2022) can detect gaps in metabolic pathways by searching unannotated genes in a genome with custom Hidden Markov Models (HMMs) created based on the genome\u2019s taxonomy. This approach, however, is limited by the genome taxonomies available in the KEGG GENES database. Other modern tools, such as DRAM (Shaffer et al., 2020), provide annotations for metagenomic sequences but do not closely tie these to metabolic pathways. Flux-balance analysis (e.g. Escher-FBA; Rowe et al., 2018) utilizes genome-scale metabolic models of organisms and requires experimental growth data for model parameterization; it is not easily applied to incomplete genome data, and the additional required experimental measurements may prohibit application in many use cases.\n\nAn emerging set of methods utilize machine learning models to a related problem of classifying microbial organisms\u2019 niches based on their genomic features. One such example is a tool called Traitar, which utilizes Support Vector Machines (SVMs) to predict lifestyle and pathogenic traits in prokaryotes based on gene family abundance profiles (Weimann et al., 2016). Other recent approaches have used machine learning approaches to train models using eukaryote MAG and transcriptome data to classify trophic mode (autotroph, mixotroph, or heterotroph) based on gene family abundance profiles (Lambert et al., 2022; Alexander et al., 2021). To our knowledge, there are no existing tools that predict the presence/absence of KEGG metabolic modules via machine learning models trained on gene features of high-quality genomes.\n\nHere, we present \u2018MetaPathPredict\u2019, an open-source tool for metabolic pathway prediction based on a deep learning classification framework. MetaPathPredict addresses critical deficiencies in existing metabolic pathway reconstruction tools that limit the utility and predictive power of \u2018omics data: it connects manually curated, current knowledge of metabolic pathways from the KEGG database with machine learning methods to reconstruct and predict the presence or absence of KEGG metabolic modules within genomic datasets including bacterial isolate genomes, MAGs, and SAGs.\n\nThe models underlying MetaPathPredict contain metabolic reaction and pathway information from taxonomically diverse bacterial isolate genomes and MAGs found in the NCBI RefSeq (O\u2019Leary et al., 2016) and Genome Taxonomy (GTDB, Parks et al., 2022) databases. The set of metabolic modules from the KEGG database is the basis of the tool\u2019s metabolic module reconstruction and prediction. The KEGG database contains metabolic pathway information for thousands of prokaryotic species and strains. KEGG modules are functional units of metabolic pathways composed of sets of ordered reaction steps. Examples include carbon fixation pathways, nitrification, biosynthesis of vitamins, and transporters or two-component systems (see Supplementary file 1a for a description of the distribution of modules covered by MetaPathPredict). MetaPathPredict is designed to run on the command-line locally or on a computing cluster and is available as a Python module on GitHub (https://github.com/d-mcgrath/MetaPathPredict).\n\nA detailed overview of the MetaPathPredict pipeline is provided in Figure 1. The tool accepts as input gene annotations of one or more (possibly-incomplete) genomes, with associated KEGG ortholog (KO) gene identifiers. Because the genomes may be incomplete, it is possible that a KEGG module that is truly present in the organism will not be fully represented in the available data. MetaPathPredict first reconstructs both complete and incomplete KEGG metabolic modules, then predicts whether incomplete modules are in fact present. Input annotations can come from tools such as KofamScan (Aramaki et al., 2020), DRAM, blastKOALA (Kanehisa et al., 2016), ghostKOALA (Kanehisa et al., 2016), or a custom list of KO identifier gene annotations. MetaPathPredict classification models produced accurate results on held-out test genome annotation datasets even when the data were highly incomplete. A set of two deep learning models.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/85749/elife-85749-fig1-v1.jpg)\n\n**Figure 1.:** Input genome annotations are read into MetaPathPredict as a data object. The data are scanned for present KEGG modules and are formatted into a feature matrix. The feature matrix is then used to make predictions for all incomplete modules (or modules specified by the user). A summary and detailed reconstruction and prediction objects, along with gap-filling options are returned in a list as the final output.\n\n(5 hidden layers each) made predictions with a high degree of precision on all test datasets and with high recall on genomes with an estimated completeness as low as 30%. One model was trained to classify the presence or absence of 96 KEGG modules that were present in \u226510% and\u226490% of training genomes. The second model classifies 94 modules with an imbalanced profile of presence/absence (i.e. were present in <10% or>90% of training genomes). False positive predictions were rare in all tests, while false negatives increased when predictions were made with highly incomplete gene annotation information, as would be expected. We believe that MetaPathPredict is a valuable tool to further enhance studies of metabolic potential in environmental microbiome studies as well as synthetic biology efforts.\n\n## Results and discussion\n\nMetaPathPredict is designed to predict the presence of a metabolic module even when annotation support for that module is incomplete, for example due to incomplete sequencing/annotation of the constituent proteins. It was trained on both complete and down-sampled genomes for this task. Complete genomes containing the genes required to non-redundantly complete a KEGG module were labelled as containing the module, otherwise the module was labelled as absent. To create down-sampled genomes for training, protein annotations were randomly removed form complete genomes in increasing increments while still retaining KEGG module class labels (from those complete genomes). To assess MetaPathPredict\u2019s efficacy in this \u2018gap filling\u2019 task, we performed a variety of benchmarking experiments in which the complete genomes/proteomes were down-sampled to artificially produce incomplete modules.\n\nMetaPathPredict\u2019s exhibited superior performance to other recently developed metabolic pathway reconstruction and prediction approaches. Its performance metrics on held-out test datasets suggest its models predict with high fidelity when at least 30% of gene annotations are recovered from a reconstructed genome (Figure 2). The efficacy of MetaPathPredict models was assessed using incomplete gene annotation data simulated from whole genomes, as well as from genomes reconstructed from reads that had been randomly down-sampled. We further benchmarked MetaPathPredict against custom presence/absence classification rules, and existing gap-filling tools METABOLIC and Gapseq.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/85749/elife-85749-fig2-v1.jpg)\n\n**Figure 2.:** Down-sampled gene annotations of high-quality genomes used in held-out test sets are from NCBI RefSeq and GTDB. Each boxplot displays the distribution of model performance metrics for predictions on randomly sampled versions of the gene annotation test sets in downsampling increments of 10% (90% down to 10%, from right to left). The binary classifier performances are based on the classification of the presence or absence of KEGG modules in the complete versions of the gene annotations that were down-sampled for model testing.\n\n### Benchmarking MetaPathPredict on down-sampled NCBI RefSeq and GTDB data\n\nWe compared the performance of MetaPathPredict\u2019s deep learning models to two classes of competitor classifiers: naive rule-based classifiers and various other machine learning model architectures. The evaluation was performed on test datasets comprised of isolate and metagenome-assembled genomes from GTDB and NCBI (30,596 total genomes; see Methods). When evaluating with the same sets of randomly down-sampled gene annotations, we found that each competing method showed poorer performance than MetaPathPredict (Figure 2). We assessed two na\u00efve classification methods. First, we devised a classification rule based on the completeness of a KEGG module relative to the number of genes retained after downsampling: if, in a down-sampled genome, the number of genes involved in a KEGG module are present in at least the same proportion of all genes retained, the KEGG module is classified as \u2018present,\u2019 otherwise it is labeled \u2018absent\u2019. For example, if 50% of gene annotations were removed from a genome during downsampling, then any KEGG module for which 50% of its associated genes are retained would be reported as \u2018present\u2019. The results of this naive approach (Figure 2) show that the relative completeness of a KEGG module alone is not a robust classification strategy. The second classification rule that we tested was: for all gene annotation sets in the dataset, if any genes were present in an annotation set that were unique to a KEGG module (relative to other modules) then the module was classified as \u2018present\u2019, otherwise it was labelled \u2018absent\u2019. The results of this naive approach (Figure 2) suggest that the presence of rare protein annotations or genes unique to a certain KEGG module is not always a strong indicator of the presence of a module in a genome. Ultimately, the performance of these naive classifiers indicate that MetaPathPredict\u2019s models have the advantage of incorporating information from genes outside of KEGG modules. We additionally compared the performance of various machine learning model architectures. Of these, the XGBoost, neural network (single hidden layer) and XGBoost/neural network (single hidden layer) stacked ensemble architectures were the next-best performing models and are included in Figure 2.\n\nMetaPathPredict\u2019s deep learning strategy produced the best observed performance. Mean F1 score (a summary metric of the predictive performance) of the models was 0.96 when predicting on test datasets in which 30\u201390% of gene annotations had been retained. MetaPathPredict rarely made false positive predictions based on data from highly incomplete gene annotation sets; the average precision of the models was consistently above 0.94 for all held-out test sets. MetaPathPredict also did not misclassify most negative class observations. The recall of MetaPathPredict\u2019s models was greater than 0.96 on average for test datasets containing at least 30% of the complete gene annotation data. The mean recall decreased to 0.89 and the mean precision decreased to 0.86 on genomes containing only 20% or less of the complete gene annotation data. The models\u2019 ability to achieve notably high recall even with significantly reduced sampling rates implies that it compensates for limited sequence availability by becoming more assertive in labeling a module as \u2018present\u2019 at the cost of decreased precision.\n\n### Benchmarking MetaPathPredict against Genomes from arth\u2019s Microbiomes repository MAGs\n\nMetaPathPredict was further tested on gene annotations from a set of 40 high-quality metagenome-assembled genomes from the Genomes from Earth\u2019s Microbiomes (GEM; Nayfach et al., 2021) genome repository. This repository contains a set of MAGs recovered from a diverse array of environments that make it ideal for benchmarking MetaPathPredict\u2019s performance (Figure 3). The MAGs selected from the repository had an estimated completeness of 100 and estimated contamination of 0, MIMAG quality score of \u2018High Quality\u2019. The genomes belonged to 7 taxonomic phyla and were recovered from 9 different environments, primarily from human-associated and built environment metagenomes (see Appendix 1\u2014figure 1 for GEM genome taxonomic distributions and environmental sources). We created a set of 9 GEM datasets by randomly downsampling the data to retain 10% to 90% of gene annotations (in 10% increments) as in the previous section. MetaPathPredict classified the presence/absence of KEGG modules in each MAG. Overall, results were comparable to MetaPathPredict\u2019s performance on the GTDB/NCBI benchmark. The models excelled at predicting the presence or absence of KEGG modules in genomes when at least 40% of gene annotations were randomly retained. Predictions were less reliable though still accurate when 30% or less gene annotation data was retained.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/85749/elife-85749-fig3-v1.jpg)\n\n**Figure 3.:** Model performance metrics are for predictions on down-sampled versions of GEM genome gene annotations in decreasing increments of 10% (retaining 10\u201390% of the annotations in each test set). MetaPathPredict\u2019s deep learning models were benchmarked against XGBoost and neural network model architectures.\n\n### Benchmarking MetaPathPredict against existing tools on a dataset with down-sampled reads\n\nIn addition to model assessments made through down-sampling protein annotations, we evaluated a second set of held-out test set genomes from the GTDB/NCBI dataset (n=50). In this analysis, the sequence reads for each genome were randomly down-sampled to simulate genomes incompletely recovered from an environmental sample. This analysis replicates situations with lower sequencing coverage, which can cause proteins to be unobserved due to incomplete or error-filled assemblies. As an example, using only 3% of reads (equivalent to an average of 1.5 x coverage of the genomes), roughly 86% of the genomes\u2019 proteins were assembled; meanwhile a reduction to 1% of reads caused assembly to recover ~40% of proteins. MetaPathPredict\u2019s performance on this test set resembled protein annotation random sampling results (Figure 4a, Figure 4b), although with greater loss in precision for down-sampling <3%.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/85749/elife-85749-fig4-v1.jpg)\n\n**Figure 4.:** Down-sampled sequence reads of high-quality genomes used as a second held-out test set are from NCBI RefSeq and GTDB databases. (Panel a) Boxplots display the distribution of model performance metrics for predictions of KEGG module presence/absence on simulated incomplete genomes down-sampled at the sequence read level by MetaPathPredict models, various next-best performing machine learning architectures, and METABOLIC. Downsampling increments were chosen based on average estimated completeness of the test set genomes at each increment to reflect a range of estimated completeness thresholds. (Panel b) Average estimated genome completeness distributions of test set genomes that were down-sampled at the sequence read level using SeqTK and then assembled with SPAdes.\n\nMetaPathPredict had an average F1 score for all 190 modules of 0.96 on the second held-out test set observations that had an average estimated genome completeness of at least 30%. The similarity of these results to the gene annotation downsampling approach validates the latter approach that was used more broadly to assess MetaPathPredict.\n\nIn addition to evaluating MetaPathPredict against our custom competitor models, we tested the software METABOLIC, which is a command line tool that performs gene annotations and estimates the completeness of individual KEGG modules in genomes and prokaryotic microbial communities (Figure 4a). METABOLIC showed much poorer recall at all levels of read sampling.\n\nMetaPathPredict was also compared to another gap filling tool, Gapseq (Figure 5a). Gapseq makes predictions of the presence or absence of KEGG pathways, and thus indirectly makes predictions of all modules and reactions they contain (instead of predictions for individual modules or reactions). We facilitated the direct comparison of MetaPathPredict to Gapseq by classifying a single KEGG pathway to be present if all modules it contained were predicted \u2018present\u2019 by MetaPathPredict. MetaPathPredict outperformed predictions made by Gapseq, particularly on genomes with low read sampling prior to assembly.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/85749/elife-85749-fig5-v1.jpg)\n\n**Figure 5.:** For MetaPathPredict predictions, the whole KEGG pathway was considered present if the aforementioned KEGG modules were all present. Down-sampled sequence reads of high-quality genomes used as a second held-out test set are from NCBI RefSeq and GTDB databases. Line segments display model performance metrics for MetaPathPredict and Gapseq predictions of KEGG pathway map00290 presence/absence on simulated incomplete genomes down-sampled at the sequence read level. Downsampling increments were chosen based on average estimated completeness of the test set genomes at each increment to reflect a range of estimated completeness thresholds.\n\n### Analysis of model feature importance using SHAP\n\nThough the neural networks of MetaPathPredict produce accurate predictions of module presence/absence, it is not immediately clear what input features contribute to its decision-making process. To gain some insight into this, we calculated the importance of the various features of MetaPathPredict\u2019s models using the SHAP method (Lundberg and Lee, 2017), a mathematical method to explain the predictions of machine learning models. Features with large absolute SHAP values play an important role in calculating a model\u2019s predictions. SHAP values in the first model (trained to classify modules present in \u226510% and\u226490% of training genomes) indicated that 30 of the top 100 most important features (genes) influencing predictions were direct components of KEGG modules predicted by this model (Supplementary file 1b). In the second model (classifies modules present in <10% or>90% of training genomes), 37 of the 100 most influential features were part of KEGG modules this model was trained to predict.\n\nThe two models share 14 most important features out of the top 50 that are not part of KEGG modules. We examined these top features and found that there were a number of proteins annotated as sensors or transcriptional regulators (Supplementary file 1b). Also, we noted a number of transporters annotated as top features in both models and, interestingly, factors related to pathogenesis like toxins and mobile elements. Given the multi-label architecture of our models, it is difficult to draw direct conclusions from SHAP analysis. However, it is clear that MetaPathPredict\u2019s predictions are in part influenced by select genes present in KEGG modules, and also to a larger extent by genes not directly participating in KEGG module reactions.\n\n### Conclusion\n\nMetaPathPredict is an open-source tool that can be used to characterize the functional potential of one or more sample genomes by detecting complete KEGG modules and predicting the presence or absence of those that are incomplete or missing. The tool accepts sets of gene annotations of individual genomes in KO gene identifier format as input. This type of annotation format can be acquired by annotating a genome of interest using KEGG-based annotation tools such as KofamScan (Aramaki et al., 2020), DRAM, blastKOALA (Kanehisa et al., 2016), or ghostKOALA (Kanehisa et al., 2016). MetaPathPredict also provides gene gap-filling options by listing putative KO gene annotations that could fill in missing gaps in predicted modules.\n\nMetaPathPredict further validates the use of gene family presence or absence within a genome as a feature for bacterial metabolic function predictions. The performance metrics of MetaPathPredict on NCBI/GTDB and GEM test datasets validated the use of deep learning models to predict the presence/absence of KEGG metabolic modules with high fidelity on sparse to near-complete bacterial genomes. MetaPathPredict\u2019s multi-label classification models consistently made predictions with high precision and recall on simulated and real genomes using gene annotation and sequence read downsampling methods. The predictive power of the deep learning models was most limited when predicting on 10%\u201330% of protein annotations, and when the mean estimated completeness of reconstructed genomes from down-sampled reads was below 30%. We suggest that optimal performance with MetaPathPredict can be achieved when at least 40% of a genome has been recovered in an input bacterial gene annotation dataset.\n\nBased on our performance tests of MetaPathPredict, the recall of its models was robust (mean >0.9) even when protein sets were down-sampled to 10%. However, MetaPathPredict also surprisingly shows a decrease in precision (i.e. an increase in false calls of module presence). This, combined with surprisingly high recall rates at such low sampling rates, suggests that the model directly compensates for low general sequence availability by increasing aggressiveness in calling a module \u2018present\u2019. This over-exuberant positive class prediction problem arose in our analyses only when <30% of gene annotation data was retained. Though such low sampling rates are not expected to be typical, it suggests an opportunity for method improvement.\n\nDue to the multi-label architecture of MetaPathPredict\u2019s models, it is difficult to draw connections between the important features identified for the models and individual KEGG modules. However, the presence of sensing proteins (e.g. iron sensing and chemotaxis), pathogen proteins (e.g. toxins and lysins), and transporters in these lists may indicate the contribution of lifestyle and environmental factors in predicting presence or absence of individual modules. Additionally, transcriptional regulators may be important due to their outsized influence on the expression of many genes (and thus modules) in each organism. Perhaps the most intriguing finding was that components of mobile elements (transposases) were found to be important features of both models. This could indicate that insertional elements are being used by the model to indicate, for example, evolutionary lineage, which could be used to inform predictions of KEGG module composition.\n\nMetaPathPredict facilitates more complete and accurate reconstruction of the metabolic potential encoded within bacterial genomes from a diverse array of environments and will enhance the ability to infer what metabolisms they are capable of, and/or how they may respond to perturbations. MetaPathPredict connects the field of machine learning with the growing community of environmental microbiologists using genomic sequencing techniques and will help transform and improve the way they work with environmental genomic datasets.\n\n## Materials and methods\n\n### Filtering genome database metadata, downloading high-quality genomes, and gene annotations\n\nThe NCBI RefSeq (Release 205) database metadata file was downloaded and filtered to retain only the information for all bacterial genomes classified as \u2018Complete genome\u2019. These are defined on the NCBI assembly help webpage: \u2018all chromosomes are gapless and have no runs of 10 or more ambiguous bases (Ns), there are no unplaced or unlocalized scaffolds, and all the expected chromosomes are present (i.e. the assembly is not noted as having partial genome representation). Plasmids and organelles may or may not be included in the assembly but if present, then the sequences are gapless\u2019. This resulted in 17,491 complete NCBI genomes.\n\nThe GTDB bacterial metadata file for release 95 was downloaded and filtered to keep the information for all genomes with an estimated completeness greater than 99, an estimated contamination of 0, and a MIMAG (Bowers et al., 2017) quality score of \u201cHigh Quality\u201d. A total of 30,760 non-redundant bacterial genomes from the two database metadata files were downloaded using the ncbi-genome-download command line tool (Blin, 2023). The RefSeq genomes (17,491 total) were downloaded from the RefSeq FTP server, and the GTDB genomes (13,105 total) were downloaded from the GenBank FTP server (Appendix 1\u2014figure 2). Genes were called using Prodigal (Hyatt et al., 2010), and the KofamScan command line tool (Aramaki et al., 2020) was used to generate gene annotations (in KO gene identifier format) for all of the genomes using the KOfam set of HMMs available for download from the KEGG database (Kanehisa, 2002). KofamScan-derived annotations had to surpass their HMM\u2019s adaptive scoring threshold to be included in the training dataset. This approach provides resilience to using specific e-value cutoffs by preventing inflation of our training and assessment datasets with less-confident gene annotations.\n\n### Formatting gene annotation data, fitting KEGG module classification models\n\nThe full dataset of simulated incomplete genomes (n=305,960) was split so that 75% of genomes were used for training and the remaining 25% as a test dataset. The training dataset was further split into 80% training/20% validation test sets. Each observation in the train/test/validation datasets contained a vector of length 8,853 that consisted of KO gene identifier (protein family) presence/absence indicated by ones and zeroes, respectively.\n\nTraining and test sets contained both complete and incomplete gene annotations of bacterial genomes from a diverse array of phyla (Appendix 1\u2014figure 2). The incomplete annotations used in training and testing of MetaPathPredict\u2019s models were constructed from complete genome annotation observations that were randomly down-sampled to retain 10\u201390% of the total gene content while the presence/absence class labels were kept unchanged for all down-sampled data. All complete and down-sampled versions of genomes were retained. The training datasets had a size of 305,960 observations, and the test datasets each contained 76,490 observations. The percent of observations with a positive class (a complete KEGG module \u2018present\u2019 in the gene annotations) in the training and test datasets varied, with a mean of 26.2% (Appendix 1\u2014figure 3).\n\nThe gene copy number data of the downloaded genomes was formatted in a matrix containing KO gene identifier presence/absence (1 or 0, respectively) in columns and genomes in rows. The label of each model was the presence/absence (1 or 0) of a KEGG module, as was determined using the KEGG modules downloaded from the KEGG database and the Anvi\u2019o Python module (Eren et al., 2015). The \u2018unroll_module_definition\u2019 function from the Anvi\u2019o module was utilized with downloaded KEGG module data to create a list of all possible KEGG Ortholog combinations to complete each module. For the module to be categorized as present, at least one possible combination of every step of the module had to be present in a genome, otherwise it was designated as absent. Two models were constructed for 190 KEGG modules for which at least 306 (0.1%) of the complete genomes (n=30,596) contained the module genes, due to an improvement in performance when two models were trained (one model for the more balanced labels, one for highly imbalanced labels) instead of one. The models were trained using the gene annotation data of the genomes consolidated from the NCBI and GTDB databases. The first model was trained to classify modules within \u226510% and\u226490% of training genomes, while the second model classified modules within <10% or>90% of training genomes. The constructed models classify the presence or absence of complete KEGG modules based on the gene annotations of a genome.\n\nA deep learning classification approach was chosen to model the relationship between whole genome KO gene identifier annotation data and the presence of metabolic modules. The same training data was used to train both of the models. MetaPathPredict is built on the Keras deep learning library (Sattler et al., 2015). L2-regularization was utilized to adjust hidden unit weights during training, with a learning rate of 0.001. Features used in each training dataset for classification were the presence or absence of protein families that were assigned KO gene identifiers. A deep learning architecture consisting of one input layer, five hidden layers, and one output layer were used as the machine learning architectures in MetaPathPredict\u2019s models. The input layer consisted of the presence/absence vector of KO gene identifiers (n=8,853), and the hidden layers each contained 2048 hidden units and were fully connected. The output layer of the first and second models contained 94 and 96 nodes for a total of 190 module presence/absence predictions when prediction outputs from both are combined.\n\nStratified sampling is a sampling method that ensures that all groups within the training and test data are represented in the same proportion as they are in the population as a whole. A multi-label stratified sampling method (Sechidis et al., 2011) was used to generate 75% train/25% test dataset splits that each contained data observations with preserved proportions of positive (\u2018KEGG module present\u2019) and negative (\u2018KEGG module absent\u2019) classes that were present in the genome dataset (see boxplot of the distribution of module presence/absence classes in Appendix 1\u2014figure 2, and an example of a held-out test dataset in Appendix 1\u2014figure 4). The training dataset was further separated into 80% train/20% validation dataset splits to fit the deep learning models.\n\nThe binary cross entropy loss function was used in tandem with the Adaptive Moment Estimation (Adam) optimizer. The input and hidden layers utilized the rectified linear unit (ReLu) activation function; the output layer contained a sigmoid activation function. Dropout (Srivastava, 2014) was applied to 10% of edges at all layers except the final layer to avoid overfitting the training data. The input and hidden layers utilized the \u2018he_uniform\u2019 layer weight initializer, and each of these layers contained 2,048 hidden units.\n\nWe assessed and benchmarked MetaPathPredict\u2019s models against two naive classification methods. First, we devised a simple model that predicted the presence of a KEGG module if, after downsampling test sets of gene annotations, the proportion of module genes present in the dataset was greater than or equal to the percentage of annotations retained in the dataset. If the proportion of genes involved in a KEGG module were present in a dataset observation at least equivalently to the proportion of gene annotations retained after downsampling, the module was classified as \u2018present\u2019, otherwise it was classified as \u2018absent\u2019. The second na\u00efve classification rule was: for all gene annotation sets in the dataset, if any genes were present in an annotation set that were unique to a KEGG module (relative to all other KEGG modules) then the module was classified as \u2018present\u2019, otherwise it was labeled \u2018absent\u2019. We additionally benchmarked MetaPathPredict\u2019s deep learning models against several other machine learning model types including single-layer neural network, XGBoost, and neural network/XGBoost stacked ensemble models, each trained on the same input data.\n\n### Evaluating models on test data, including test data randomly down-sampled to simulate varying degrees of genome incompleteness\n\nEach of MetaPathPredict\u2019s models was validated on a held-out test set consisting of a combination of 76,490 complete and simulated incomplete genomes, and the performance metrics were extracted using the Scikit-learn (Pedregosa, 2011) Python module. The genome annotations in each test set were created by randomly downsampling complete genomes to simulate recovered gene annotations from incomplete genomes. 10% to 90% of genes from each annotation set were randomly retained (in increments of 10%) and used as input for MetaPathPredict predictions of KEGG module presence/absence. The performance metrics used in evaluating the models were precision, recall, F1 score, positive predictive value, and negative predictive value (Table 1).\n\n**Table 1.**\n Definitions of machine learning model performance metrics used to assess MetaPathPredict models.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Metric</th>\n      <th>Definition</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Precision</td>\n      <td>true positive/(true positive +false positive)</td>\n    </tr>\n    <tr>\n      <td>Recall</td>\n      <td>true positive/(true positive +false negative)</td>\n    </tr>\n    <tr>\n      <td>Specificity*</td>\n      <td>true negative/(true negative +false positive)</td>\n    </tr>\n    <tr>\n      <td>F1 score</td>\n      <td>2 \u00d7 ((precision \u00d7recall)/(precision +recall))</td>\n    </tr>\n    <tr>\n      <td>Positive predictive value</td>\n      <td>recall \u00d7prevalence / (recall \u00d7prevalence) + (1 \u2013 specificity) \u00d7 (1 \u2013 prevalence)</td>\n    </tr>\n    <tr>\n      <td>Negative predictive value</td>\n      <td>specificity \u00d7 (1 \u2013 prevalence) / ((1 \u2013 recall)\u00d7prevalence) + (specificity \u00d7 (1 \u2013 prevalence))</td>\n    </tr>\n    <tr>\n      <td>Prevalence*</td>\n      <td>(true positive +false negative) / (true positive +false positive +true negative +false negative)</td>\n    </tr>\n    <tr>\n      <td colspan=\"2\"></td>\n    </tr>\n  </tbody>\n</table>\n\n_*Specificity and prevalence are defined due to their use in the definitions of negative and positive predictive value._\n\n### Testing models with a set of high-quality metagenome-assembled genomes from the Genomes from Earth\u2019s Microbiomes online repository\n\nMetaPathPredict was further validated on another test set of genome annotations extracted from the GEM repository of MAGs. The GEM metadata file was downloaded from the repository and filtered to retain a random sample of 40 MAGs with a CheckM2 (Chklovski et al., 2023) estimated completeness of 100, an estimated contamination of 0, and a MIMAG quality score of \u2018High Quality\u2019. The method for this assessment was the same as was described above for testing MetaPathPredict model performances on the held-out test data.\n\n### Evaluating models on test data down-sampled at the read level\n\nA second held-out set of complete genomes (n=50), independent of the training dataset, was downloaded from NCBI/GTDB databases using the SRA, 1988 and SRA explorer (Phil Ewels, 2024). The raw sequencing reads were filtered using fastp (Chen et al., 2018), and the quality-filtered reads were randomly down-sampled using seqtk (Li, 2023). Down-sampled reads were assembled into genomes using the SPAdes assembler (Bankevich et al., 2012), genes were called with Prodigal and then annotated using KofamScan. MetaPathPredict\u2019s deep learning models were then used to predict the presence or absence of all 190 KEGG modules in each genome and predictions were then cross-referenced with their known presence/absence based on the unmodified test dataset. In addition to simple approaches described above, the METABOLIC (Zhou et al., 2022) and Gapseq (Zimmermann et al., 2021) tools were evaluated on the same benchmark dataset. Both tools were used with default settings. Gapseq makes predictions of the presence or absence of entire KEGG pathways, and therefore it was benchmarked against MetaPathPredict by evaluating predictions for the presence or absence of the KEGG pathway map00290 (Valine, leucine, and isoleucine biosynthesis). This pathway consists of KEGG modules M00019, M00432, M00535, and M00570. In order to facilitate a direct comparison to Gapseq\u2019s predictions, the whole KEGG pathway was considered present if the aforementioned KEGG modules were all predicted as present by MetaPathPredict, otherwise it was classified as absent.\n\n### Gapfilling for incomplete modules predicted as present\n\nMetaPathPredict provides enzyme gap-filling options for KEGG modules predicted as present by suggesting putative KO gene annotations missing from an input genome\u2019s gene annotations that could fill in missing gaps in predicted modules.\n",
+      "created_at": "2025-12-04T04:34:46.693039Z"
+    },
+    {
+      "id": "0a266cab-9e66-42af-9a7b-baa07d528d16",
+      "submission_id": "1fcf7672-9c16-4063-af3f-47e25bd1c677",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Marisa Nicol\u00e1s, https://ror.org/0498ekt05 Laborat\u00f3rio Nacional de Computa\u00e7\u00e3o Cient\u00edfica Brazil\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.85749.sa0](https://doi.org/10.7554/eLife.85749.sa0)\n\nThis landmark study presents MetaPathPredict, a method that uses deep neural networks to predict the presence or absence of KEGG modules based on annotated features in the genome. The evidence supporting the conclusions is compelling, with a tool that allows for the prediction of KEGG modules in sparse gene sequence datasets.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Marisa Nicol\u00e1s, https://ror.org/0498ekt05 Laborat\u00f3rio Nacional de Computa\u00e7\u00e3o Cient\u00edfica Brazil\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.85749.sa1](https://doi.org/10.7554/eLife.85749.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"MetaPathPredict: A machine learning-based tool for predicting metabolic modules in incomplete bacterial genomes\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Bavesh Kana as the Senior Editor.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions (for the authors):\n\nReviewer #1 (Recommendations for the authors):\n\nI have only a few questions and comments about the paper:\n\n1. It's possible the training set itself will have some incomplete modules dues to a mixture of novel gene families, poor gene calls, or annotation error. What steps were taken to address this possibility? Were \"nearly complete\" modules considered \"complete\", and what was the threshold?\n\n2. The \"KofamScan command line tool\" was used to annotate the training set for this method. Of course, other annotation methods (e.g. DRAM) may render significant differences in the resulting functional annotations. Did the authors test if the KofamScan-trained classifiers show similar accuracy/performance when applied to annotations from DRAM or some other competing tool?\n\n3. Would it be possible to train the method on KEGG reaction IDs so other approaches that annotate reactions directly could be applied to the method? Not suggesting the authors do this work, but it might be worth mentioning in the discussion.\n\n4. Did the authors look at the features chosen by the classifiers for various modules? It would be interesting to know how often the top-ranking features lie within the module or outside, and when outside, what kind of feature is used?\n\n5. The link in the PDF to the git repo (https://github.com/d-mcgrath/MetaPathPredict) is corrupted somehow and doesn't work. I suspect the \"-\". Manually entering the address does get me to the repo.\n\nReviewer #2 (Recommendations for the authors):\n\nObservation 1: Figures 2-5 present compelling evidence of MetaPathPredict's predictive capabilities. However, the authors have not discussed the potential mechanisms that could be discovered using the stacked ensemble of neural networks. In lines 171-173, the authors mentioned that MetaPathPredict's models incorporate information from genes outside of KEGG modules, but they have not elaborated on how such information can be interpreted. While predictive power is a commendable goal, machine learning models usually trade off explanatory power for predictive power. Therefore, the authors should discuss whether the stacked ensemble of neural networks could provide biological insights (https://doi.org/10.1038/s42256-019-0048-x).\n\nObservation 2: The authors have primarily focused on predicting the presence of complete KEGG modules, which may result in predictions that are overly conservative regarding gene essentiality. For example, some KEGG modules may have functionally redundant reactions, and an incomplete KEGG module could still lead to a viable set of metabolic reactions. To address this issue, the authors could predict gene essentiality, carbon source, or metabolic product. (For further information, see https://doi.org/10.1186/s13059-021-02295-1.)\n",
+      "created_at": "2025-12-04T04:34:46.693039Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T04:34:46.693039Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T04:34:46.693039Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "82fcb860-c497-4335-b5c7-83092b893c59",
+      "content_id": "6a7ca5d5-03c7-464d-bf1e-ad3a652ca6bf",
+      "claim_id": "C1",
+      "claim": "The reconstruction of complete microbial metabolic pathways using 'omics data from environmental samples remains challenging.",
+      "claim_type": "EXPLICIT",
+      "source": "The reconstruction of complete microbial metabolic pathways using 'omics data from environmental samples remains challenging.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the current state of the field presented in the abstract without specific supporting data in the manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:34:46.693039Z"
+    },
+    {
+      "id": "cf2789e7-2fce-4f0b-8c1b-5eda268552dc",
+      "content_id": "6a7ca5d5-03c7-464d-bf1e-ad3a652ca6bf",
+      "claim_id": "C2",
+      "claim": "Computational pipelines for pathway reconstruction that utilize machine learning methods to predict the presence or absence of KEGG modules in incomplete genomes are lacking.",
+      "claim_type": "EXPLICIT",
+      "source": "Computational pipelines for pathway reconstruction that utilize machine learning methods to predict the presence or absence of KEGG modules in incomplete genomes are lacking.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement describes a gap in existing tools, which is supported by the literature review in the introduction showing no existing tools use machine learning for KEGG module prediction.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:34:46.693039Z"
+    },
+    {
+      "id": "141ad3c2-508c-4f74-9a99-86388ee9d102",
+      "content_id": "6a7ca5d5-03c7-464d-bf1e-ad3a652ca6bf",
+      "claim_id": "C3",
+      "claim": "MetaPathPredict is a software tool that incorporates machine learning models to predict the presence of complete KEGG modules within bacterial genomic datasets.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we present MetaPathPredict, a software tool that incorporates machine learning models to predict the presence of complete KEGG modules within bacterial genomic datasets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct description of the tool developed in this study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:34:46.693039Z"
+    },
+    {
+      "id": "284cab3c-908b-4813-b44a-2660c278b4b6",
+      "content_id": "6a7ca5d5-03c7-464d-bf1e-ad3a652ca6bf",
+      "claim_id": "C4",
+      "claim": "MetaPathPredict employs deep learning models to predict the presence of KEGG modules in a genome using gene annotation data and information from the KEGG module database.",
+      "claim_type": "EXPLICIT",
+      "source": "Using gene annotation data and information from the KEGG module database, MetaPathPredict employs deep learning models to predict the presence of KEGG modules in a genome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodology of the tool as implemented and tested in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:34:46.693039Z"
+    },
+    {
+      "id": "a76a2703-8cf9-42f3-a6c5-99676b3cf4b6",
+      "content_id": "6a7ca5d5-03c7-464d-bf1e-ad3a652ca6bf",
+      "claim_id": "C5",
+      "claim": "MetaPathPredict can be used as a command line tool or as a Python module.",
+      "claim_type": "EXPLICIT",
+      "source": "MetaPathPredict can be used as a command line tool or as a Python module, and both options are designed to be run locally or on a compute cluster.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the implementation options for the software tool.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:34:46.693039Z"
+    },
+    {
+      "id": "e9f8f6ea-f85e-45c8-81b6-caf31ace36ed",
+      "content_id": "6a7ca5d5-03c7-464d-bf1e-ad3a652ca6bf",
+      "claim_id": "C6",
+      "claim": "MetaPathPredict makes robust predictions of KEGG module presence within highly incomplete genomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Benchmarks show that MetaPathPredict makes robust predictions of KEGG module presence within highly incomplete genomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by benchmark results presented throughout the manuscript showing high performance metrics on incomplete genomes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:34:46.693039Z"
+    },
+    {
+      "id": "ab0d17a5-6d4b-48d3-8111-5b6ceb8aa894",
+      "content_id": "6a7ca5d5-03c7-464d-bf1e-ad3a652ca6bf",
+      "claim_id": "C7",
+      "claim": "Microorganisms play a key role in all major biogeochemical cycles on Earth.",
+      "claim_type": "EXPLICIT",
+      "source": "Microorganisms play a key role in all major biogeochemical cycles on Earth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established scientific knowledge about the role of microorganisms.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:34:46.693039Z"
+    },
+    {
+      "id": "3374fc29-bcfc-4a09-bd60-a8f84b331bf8",
+      "content_id": "6a7ca5d5-03c7-464d-bf1e-ad3a652ca6bf",
+      "claim_id": "C8",
+      "claim": "Accurate and more complete identification of microbial metabolic pathways within genomic data is crucial to understanding their potential activities.",
+      "claim_type": "EXPLICIT",
+      "source": "Accurate and more complete identification of microbial metabolic pathways within genomic data is crucial to understanding their potential activities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the importance of pathway identification, based on established understanding in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:34:46.693039Z"
+    },
+    {
+      "id": "171675b9-01a5-4a4d-a1e3-663f03ea67c0",
+      "content_id": "6a7ca5d5-03c7-464d-bf1e-ad3a652ca6bf",
+      "claim_id": "C9",
+      "claim": "Environmental genomes recovered from high-throughput sequencing samples vary in their degree of completeness due to numerous factors including limited coverage of low-abundance microbes, composition-based coverage biases, insertion-deletion errors, and substitution errors.",
+      "claim_type": "EXPLICIT",
+      "source": "Environmental genomes that are recovered from high-throughput sequencing samples vary in their degree of completeness due to numerous factors including limited coverage of low-abundance microbes, composition-based coverage biases, insertion-deletion errors, and substitution errors (Browne et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Browne et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:34:46.693039Z"
+    },
+    {
+      "id": "50b6739b-3f71-40fc-9fd1-13a841761109",
+      "content_id": "6a7ca5d5-03c7-464d-bf1e-ad3a652ca6bf",
+      "claim_id": "C10",
+      "claim": "Enzymes encoded in genomes are missed due to limitations in protein annotation methods.",
+      "claim_type": "EXPLICIT",
+      "source": "Enzymes encoded in genomes are also missed due to limitations in protein annotation methods, that is, undiscovered protein families may be undetected by traditional homology-based methods.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about limitations of current annotation methods based on established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:34:46.693039Z"
+    },
+    {
+      "id": "cbafeff5-72e8-4e9b-a950-9546bb5ecb7b",
+      "content_id": "6a7ca5d5-03c7-464d-bf1e-ad3a652ca6bf",
+      "claim_id": "C11",
+      "claim": "Sequencing biases, novel protein families, and incomplete gene and protein annotation databases lead to missing, ambiguous, or inaccurate gene annotations that create incomplete metabolic networks in recovered environmental genomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Sequencing biases, novel protein families, and incomplete gene and protein annotation databases lead to missing, ambiguous, or inaccurate gene annotations that create incomplete metabolic networks in recovered environmental genomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about challenges in genome analysis based on established understanding in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:34:46.693039Z"
+    },
+    {
+      "id": "729470e1-cd11-4705-b07b-823d31ec9812",
+      "content_id": "6a7ca5d5-03c7-464d-bf1e-ad3a652ca6bf",
+      "claim_id": "C12",
+      "claim": "Gapseq utilizes a method based on network topology for metabolic network gap filling.",
+      "claim_type": "EXPLICIT",
+      "source": "Existing algorithms for this metabolic network 'gap filling' largely fall into two categories of approaches: those based on network topology, such as the method utilized by Gapseq (Zimmermann et al., 2021)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Zimmermann et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:34:46.693039Z"
+    },
+    {
+      "id": "017d5828-f22c-46bd-860a-e43ef4c7bbc7",
+      "content_id": "6a7ca5d5-03c7-464d-bf1e-ad3a652ca6bf",
+      "claim_id": "C13",
+      "claim": "METABOLIC utilizes pre-defined KEGG module cutoffs for metabolic network gap filling.",
+      "claim_type": "EXPLICIT",
+      "source": "those that utilize pre-defined KEGG module cutoffs, such as those used by METABOLIC (Zhou et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Zhou et al., 2022.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:34:46.693039Z"
+    },
+    {
+      "id": "2cb71653-b20b-4dbb-a1da-289075d28a5c",
+      "content_id": "6a7ca5d5-03c7-464d-bf1e-ad3a652ca6bf",
+      "claim_id": "C14",
+      "claim": "Network topology and pathway gene presence/absence cutoffs can lead to underestimation of pathways that are present, particularly in highly incomplete genomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Network topology and pathway gene presence/absence cutoffs, however, can lead to underestimation of pathways that are present, particularly in highly incomplete genomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about limitations of existing methods based on the authors' understanding and comparison with their tool.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:34:46.693039Z"
+    },
+    {
+      "id": "f86cbd1f-7a0a-451b-8f17-6cbd815aad01",
+      "content_id": "6a7ca5d5-03c7-464d-bf1e-ad3a652ca6bf",
+      "claim_id": "C15",
+      "claim": "MinPath detects gaps in a metabolic network and identifies the minimum number of modifications to the network that can be made to activate those reactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Parsimony-based algorithms such as MinPath detect gaps in a metabolic network and identify the minimum number of modifications to the network that can be made to activate those reactions (Ye and Doak, 2009)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Ye and Doak, 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:34:46.693039Z"
+    },
+    {
+      "id": "5ecfc44b-b778-48fd-a563-858b71397f91",
+      "content_id": "6a7ca5d5-03c7-464d-bf1e-ad3a652ca6bf",
+      "claim_id": "C16",
+      "claim": "MinPath's conservative approach can lead to underestimation of the metabolic pathways present in a sample.",
+      "claim_type": "EXPLICIT",
+      "source": "its conservative approach, however, can lead to underestimation of the metabolic pathways present in a sample.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about a limitation of MinPath based on understanding of its conservative methodology.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:34:46.693039Z"
+    },
+    {
+      "id": "c056ff3c-ce1e-4d7b-9aaf-55f06fc4cf04",
+      "content_id": "6a7ca5d5-03c7-464d-bf1e-ad3a652ca6bf",
+      "claim_id": "C17",
+      "claim": "KEMET can detect gaps in metabolic pathways by searching unannotated genes in a genome with custom Hidden Markov Models (HMMs) created based on the genome's taxonomy.",
+      "claim_type": "EXPLICIT",
+      "source": "KEMET (Pal\u00f9 et al., 2022) can detect gaps in metabolic pathways by searching unannotated genes in a genome with custom Hidden Markov Models (HMMs) created based on the genome's taxonomy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Pal\u00f9 et al., 2022.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:34:46.693039Z"
+    },
+    {
+      "id": "5353f3c5-38ab-469c-9131-aa2f87f50d4c",
+      "content_id": "6a7ca5d5-03c7-464d-bf1e-ad3a652ca6bf",
+      "claim_id": "C18",
+      "claim": "KEMET's approach is limited by the genome taxonomies available in the KEGG GENES database.",
+      "claim_type": "EXPLICIT",
+      "source": "This approach, however, is limited by the genome taxonomies available in the KEGG GENES database.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about a limitation of KEMET based on understanding of its methodology.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:34:46.693039Z"
+    },
+    {
+      "id": "7e976fbd-5069-4967-8bd6-a28d46dbd69a",
+      "content_id": "6a7ca5d5-03c7-464d-bf1e-ad3a652ca6bf",
+      "claim_id": "C19",
+      "claim": "DRAM provides annotations for metagenomic sequences but does not closely tie these to metabolic pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "Other modern tools, such as DRAM (Shaffer et al., 2020), provide annotations for metagenomic sequences but do not closely tie these to metabolic pathways.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Shaffer et al., 2020 and describes a limitation of the tool.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:34:46.693039Z"
+    },
+    {
+      "id": "a4e7daec-7fee-4f2f-bd7e-d1906515c5b2",
+      "content_id": "6a7ca5d5-03c7-464d-bf1e-ad3a652ca6bf",
+      "claim_id": "C20",
+      "claim": "Flux-balance analysis utilizes genome-scale metabolic models of organisms and requires experimental growth data for model parameterization.",
+      "claim_type": "EXPLICIT",
+      "source": "Flux-balance analysis (e.g. Escher-FBA; Rowe et al., 2018) utilizes genome-scale metabolic models of organisms and requires experimental growth data for model parameterization",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Rowe et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:34:46.693039Z"
+    },
+    {
+      "id": "e0aee341-c2db-4a1b-8622-d94691039cdc",
+      "content_id": "6a7ca5d5-03c7-464d-bf1e-ad3a652ca6bf",
+      "claim_id": "C21",
+      "claim": "Flux-balance analysis is not easily applied to incomplete genome data.",
+      "claim_type": "EXPLICIT",
+      "source": "it is not easily applied to incomplete genome data, and the additional required experimental measurements may prohibit application in many use cases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about limitations of flux-balance analysis based on understanding of its requirements.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:34:46.693039Z"
+    },
+    {
+      "id": "14fbd2a5-84ef-49c1-a51b-03ce46b4fb38",
+      "content_id": "6a7ca5d5-03c7-464d-bf1e-ad3a652ca6bf",
+      "claim_id": "C22",
+      "claim": "Traitar utilizes Support Vector Machines (SVMs) to predict lifestyle and pathogenic traits in prokaryotes based on gene family abundance profiles.",
+      "claim_type": "EXPLICIT",
+      "source": "One such example is a tool called Traitar, which utilizes Support Vector Machines (SVMs) to predict lifestyle and pathogenic traits in prokaryotes based on gene family abundance profiles (Weimann et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Weimann et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:34:46.693039Z"
+    },
+    {
+      "id": "9950e6cb-23b0-44bc-bb54-ef6bf645d3e8",
+      "content_id": "6a7ca5d5-03c7-464d-bf1e-ad3a652ca6bf",
+      "claim_id": "C23",
+      "claim": "Recent approaches have used machine learning to train models using eukaryote MAG and transcriptome data to classify trophic mode based on gene family abundance profiles.",
+      "claim_type": "EXPLICIT",
+      "source": "Other recent approaches have used machine learning approaches to train models using eukaryote MAG and transcriptome data to classify trophic mode (autotroph, mixotroph, or heterotroph) based on gene family abundance profiles (Lambert et al., 2022; Alexander et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Lambert et al., 2022 and Alexander et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:34:46.693039Z"
+    },
+    {
+      "id": "3c8351be-dc0b-4c47-beff-7838db8ece2a",
+      "content_id": "6a7ca5d5-03c7-464d-bf1e-ad3a652ca6bf",
+      "claim_id": "C24",
+      "claim": "There are no existing tools that predict the presence/absence of KEGG metabolic modules via machine learning models trained on gene features of high-quality genomes.",
+      "claim_type": "EXPLICIT",
+      "source": "To our knowledge, there are no existing tools that predict the presence/absence of KEGG metabolic modules via machine learning models trained on gene features of high-quality genomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the novelty of the approach based on the authors' knowledge of the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:34:46.693039Z"
+    },
+    {
+      "id": "c59a48a1-a977-4154-8435-f155a5687b3d",
+      "content_id": "6a7ca5d5-03c7-464d-bf1e-ad3a652ca6bf",
+      "claim_id": "C25",
+      "claim": "MetaPathPredict is an open-source tool for metabolic pathway prediction based on a deep learning classification framework.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we present 'MetaPathPredict', an open-source tool for metabolic pathway prediction based on a deep learning classification framework.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct description of the tool developed in this study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:34:46.693039Z"
+    },
+    {
+      "id": "530ab563-7651-4c87-9f60-023c0b703800",
+      "content_id": "6a7ca5d5-03c7-464d-bf1e-ad3a652ca6bf",
+      "claim_id": "C26",
+      "claim": "The models underlying MetaPathPredict contain metabolic reaction and pathway information from taxonomically diverse bacterial isolate genomes and MAGs found in the NCBI RefSeq and Genome Taxonomy (GTDB) databases.",
+      "claim_type": "EXPLICIT",
+      "source": "The models underlying MetaPathPredict contain metabolic reaction and pathway information from taxonomically diverse bacterial isolate genomes and MAGs found in the NCBI RefSeq (O'Leary et al., 2016) and Genome Taxonomy (GTDB, Parks et al., 2022) databases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the training data sources for the models, supported by citations to O'Leary et al., 2016 and Parks et al., 2022.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:34:46.693039Z"
+    },
+    {
+      "id": "dbdec5f2-be3f-406e-beff-b098fd3dfdab",
+      "content_id": "6a7ca5d5-03c7-464d-bf1e-ad3a652ca6bf",
+      "claim_id": "C27",
+      "claim": "KEGG modules are functional units of metabolic pathways composed of sets of ordered reaction steps.",
+      "claim_type": "EXPLICIT",
+      "source": "KEGG modules are functional units of metabolic pathways composed of sets of ordered reaction steps.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition of KEGG modules based on established knowledge from the KEGG database.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:34:46.693039Z"
+    },
+    {
+      "id": "f809bc2e-5088-4092-ae48-0763a48edb1a",
+      "content_id": "6a7ca5d5-03c7-464d-bf1e-ad3a652ca6bf",
+      "claim_id": "C28",
+      "claim": "MetaPathPredict is available as a Python module on GitHub.",
+      "claim_type": "EXPLICIT",
+      "source": "MetaPathPredict is designed to run on the command-line locally or on a computing cluster and is available as a Python module on GitHub (https://github.com/d-mcgrath/MetaPathPredict).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the availability and implementation of the software.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:34:46.693039Z"
+    },
+    {
+      "id": "613bb933-ea8b-4b83-94ad-0655a1050c67",
+      "content_id": "6a7ca5d5-03c7-464d-bf1e-ad3a652ca6bf",
+      "claim_id": "C29",
+      "claim": "MetaPathPredict accepts as input gene annotations of one or more genomes with associated KEGG ortholog (KO) gene identifiers.",
+      "claim_type": "EXPLICIT",
+      "source": "The tool accepts as input gene annotations of one or more (possibly-incomplete) genomes, with associated KEGG ortholog (KO) gene identifiers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the input requirements for the tool as shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:34:46.693039Z"
+    },
+    {
+      "id": "82689221-6fef-44be-a948-6274160cf621",
+      "content_id": "6a7ca5d5-03c7-464d-bf1e-ad3a652ca6bf",
+      "claim_id": "C30",
+      "claim": "MetaPathPredict first reconstructs both complete and incomplete KEGG metabolic modules, then predicts whether incomplete modules are in fact present.",
+      "claim_type": "EXPLICIT",
+      "source": "MetaPathPredict first reconstructs both complete and incomplete KEGG metabolic modules, then predicts whether incomplete modules are in fact present.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the workflow of the tool as illustrated in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:34:46.693039Z"
+    },
+    {
+      "id": "c0fd2c90-8aac-49e9-b2f3-9a18b681ab82",
+      "content_id": "6a7ca5d5-03c7-464d-bf1e-ad3a652ca6bf",
+      "claim_id": "C31",
+      "claim": "Input annotations for MetaPathPredict can come from tools such as KofamScan, DRAM, blastKOALA, ghostKOALA, or a custom list of KO identifier gene annotations.",
+      "claim_type": "EXPLICIT",
+      "source": "Input annotations can come from tools such as KofamScan (Aramaki et al., 2020), DRAM, blastKOALA (Kanehisa et al., 2016), ghostKOALA (Kanehisa et al., 2016), or a custom list of KO identifier gene annotations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the compatible input sources for the tool, with citations to the respective tools.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:34:46.693039Z"
+    },
+    {
+      "id": "355b73fc-83e3-4640-b6a3-f7b41d797e0a",
+      "content_id": "6a7ca5d5-03c7-464d-bf1e-ad3a652ca6bf",
+      "claim_id": "C32",
+      "claim": "MetaPathPredict classification models produced accurate results on held-out test genome annotation datasets even when the data were highly incomplete.",
+      "claim_type": "EXPLICIT",
+      "source": "MetaPathPredict classification models produced accurate results on held-out test genome annotation datasets even when the data were highly incomplete.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by benchmark results presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:34:46.693039Z"
+    },
+    {
+      "id": "9aac7860-5996-4631-9770-7a6fa5d602f6",
+      "content_id": "6a7ca5d5-03c7-464d-bf1e-ad3a652ca6bf",
+      "claim_id": "C34",
+      "claim": "One MetaPathPredict model was trained to classify the presence or absence of 96 KEGG modules that were present in \u226510% and \u226490% of training genomes.",
+      "claim_type": "EXPLICIT",
+      "source": "One model was trained to classify the presence or absence of 96 KEGG modules that were present in \u226510% and\u226490% of training genomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the training approach for one of the models.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:34:46.693039Z"
+    },
+    {
+      "id": "3948d5fe-db2e-4614-94a9-b0a2f77edd6f",
+      "content_id": "6a7ca5d5-03c7-464d-bf1e-ad3a652ca6bf",
+      "claim_id": "C35",
+      "claim": "The second MetaPathPredict model classifies 94 modules with an imbalanced profile of presence/absence (present in <10% or >90% of training genomes).",
+      "claim_type": "EXPLICIT",
+      "source": "The second model classifies 94 modules with an imbalanced profile of presence/absence (i.e. were present in <10% or>90% of training genomes).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the training approach for the second model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:34:46.693039Z"
+    },
+    {
+      "id": "1a4c749b-e234-44ca-816a-64ff10b14138",
+      "content_id": "6a7ca5d5-03c7-464d-bf1e-ad3a652ca6bf",
+      "claim_id": "C36",
+      "claim": "False positive predictions were rare in all MetaPathPredict tests.",
+      "claim_type": "EXPLICIT",
+      "source": "False positive predictions were rare in all tests, while false negatives increased when predictions were made with highly incomplete gene annotation information, as would be expected.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This summarizes the performance characteristics observed in testing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:34:46.693039Z"
+    },
+    {
+      "id": "4d095883-e8ad-464b-a419-86b680e4d293",
+      "content_id": "6a7ca5d5-03c7-464d-bf1e-ad3a652ca6bf",
+      "claim_id": "C37",
+      "claim": "False negatives increased when MetaPathPredict predictions were made with highly incomplete gene annotation information.",
+      "claim_type": "EXPLICIT",
+      "source": "False positive predictions were rare in all tests, while false negatives increased when predictions were made with highly incomplete gene annotation information, as would be expected.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This summarizes the performance characteristics observed in testing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:34:46.693039Z"
+    },
+    {
+      "id": "df21a011-d72e-4a11-afbc-93d4d602c324",
+      "content_id": "6a7ca5d5-03c7-464d-bf1e-ad3a652ca6bf",
+      "claim_id": "C38",
+      "claim": "MetaPathPredict was trained on both complete and down-sampled genomes.",
+      "claim_type": "EXPLICIT",
+      "source": "It was trained on both complete and down-sampled genomes for this task.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the training methodology used for the models.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:34:46.693039Z"
+    },
+    {
+      "id": "5ad80fc1-0777-430e-86eb-bec92cc73d86",
+      "content_id": "6a7ca5d5-03c7-464d-bf1e-ad3a652ca6bf",
+      "claim_id": "C39",
+      "claim": "Complete genomes containing the genes required to non-redundantly complete a KEGG module were labelled as containing the module, otherwise the module was labelled as absent.",
+      "claim_type": "EXPLICIT",
+      "source": "Complete genomes containing the genes required to non-redundantly complete a KEGG module were labelled as containing the module, otherwise the module was labelled as absent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the labeling strategy used for training data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:34:46.693039Z"
+    },
+    {
+      "id": "508b404b-8f9c-4200-8cd7-ef60448b5085",
+      "content_id": "6a7ca5d5-03c7-464d-bf1e-ad3a652ca6bf",
+      "claim_id": "C40",
+      "claim": "To create down-sampled genomes for training, protein annotations were randomly removed from complete genomes in increasing increments while still retaining KEGG module class labels.",
+      "claim_type": "EXPLICIT",
+      "source": "To create down-sampled genomes for training, protein annotations were randomly removed form complete genomes in increasing increments while still retaining KEGG module class labels (from those complete genomes).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data augmentation strategy used for training.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:34:46.693039Z"
+    },
+    {
+      "id": "7e680171-801e-48f9-9ec7-e192890692c9",
+      "content_id": "6a7ca5d5-03c7-464d-bf1e-ad3a652ca6bf",
+      "claim_id": "C41",
+      "claim": "MetaPathPredict exhibited superior performance to other recently developed metabolic pathway reconstruction and prediction approaches.",
+      "claim_type": "EXPLICIT",
+      "source": "MetaPathPredict's exhibited superior performance to other recently developed metabolic pathway reconstruction and prediction approaches.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by comparative benchmark results presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:34:46.693039Z"
+    },
+    {
+      "id": "a670578b-7ffb-45ca-a022-bed68bb575c6",
+      "content_id": "6a7ca5d5-03c7-464d-bf1e-ad3a652ca6bf",
+      "claim_id": "C42",
+      "claim": "MetaPathPredict's performance metrics on held-out test datasets suggest its models predict with high fidelity when at least 30% of gene annotations are recovered from a reconstructed genome.",
+      "claim_type": "EXPLICIT",
+      "source": "Its performance metrics on held-out test datasets suggest its models predict with high fidelity when at least 30% of gene annotations are recovered from a reconstructed genome (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by performance data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:34:46.693039Z"
+    },
+    {
+      "id": "f5595048-ba7c-4487-9825-ff1c4fb6bb74",
+      "content_id": "6a7ca5d5-03c7-464d-bf1e-ad3a652ca6bf",
+      "claim_id": "C43",
+      "claim": "MetaPathPredict was benchmarked against custom presence/absence classification rules and existing gap-filling tools METABOLIC and Gapseq.",
+      "claim_type": "EXPLICIT",
+      "source": "We further benchmarked MetaPathPredict against custom presence/absence classification rules, and existing gap-filling tools METABOLIC and Gapseq.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the benchmarking approach used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:34:46.693039Z"
+    },
+    {
+      "id": "1e5f8018-5790-444b-8534-771f106d907e",
+      "content_id": "6a7ca5d5-03c7-464d-bf1e-ad3a652ca6bf",
+      "claim_id": "C44",
+      "claim": "The test datasets used for benchmarking MetaPathPredict comprised 30,596 total genomes from GTDB and NCBI.",
+      "claim_type": "EXPLICIT",
+      "source": "The evaluation was performed on test datasets comprised of isolate and metagenome-assembled genomes from GTDB and NCBI (30,596 total genomes; see Methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the size and source of the test dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:34:46.693039Z"
+    },
+    {
+      "id": "29704bc8-14f8-4a65-98fb-7a870ad69b06",
+      "content_id": "6a7ca5d5-03c7-464d-bf1e-ad3a652ca6bf",
+      "claim_id": "C45",
+      "claim": "Each competing method showed poorer performance than MetaPathPredict when evaluated with the same sets of randomly down-sampled gene annotations.",
+      "claim_type": "EXPLICIT",
+      "source": "When evaluating with the same sets of randomly down-sampled gene annotations, we found that each competing method showed poorer performance than MetaPathPredict (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by comparative performance data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:34:46.693039Z"
+    },
+    {
+      "id": "7c8762eb-6bde-4f93-91ea-4715d15d244d",
+      "content_id": "6a7ca5d5-03c7-464d-bf1e-ad3a652ca6bf",
+      "claim_id": "C46",
+      "claim": "The relative completeness of a KEGG module alone is not a robust classification strategy.",
+      "claim_type": "EXPLICIT",
+      "source": "The results of this naive approach (Figure 2) show that the relative completeness of a KEGG module alone is not a robust classification strategy.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This inference is drawn from the poor performance of the naive completeness-based rule shown in Figure 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:34:46.693039Z"
+    },
+    {
+      "id": "062f60e3-ad89-465b-9a7e-f7fb592989ab",
+      "content_id": "6a7ca5d5-03c7-464d-bf1e-ad3a652ca6bf",
+      "claim_id": "C47",
+      "claim": "The presence of rare protein annotations or genes unique to a certain KEGG module is not always a strong indicator of the presence of a module in a genome.",
+      "claim_type": "EXPLICIT",
+      "source": "The results of this naive approach (Figure 2) suggest that the presence of rare protein annotations or genes unique to a certain KEGG module is not always a strong indicator of the presence of a module in a genome.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This inference is drawn from the poor performance of the unique gene-based rule shown in Figure 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:34:46.693039Z"
+    },
+    {
+      "id": "551524b5-c55f-462f-8eb0-c0c44ce034db",
+      "content_id": "6a7ca5d5-03c7-464d-bf1e-ad3a652ca6bf",
+      "claim_id": "C48",
+      "claim": "The performance of naive classifiers indicates that MetaPathPredict's models have the advantage of incorporating information from genes outside of KEGG modules.",
+      "claim_type": "EXPLICIT",
+      "source": "Ultimately, the performance of these naive classifiers indicate that MetaPathPredict's models have the advantage of incorporating information from genes outside of KEGG modules.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the comparative performance of different classification approaches.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:34:46.693039Z"
+    },
+    {
+      "id": "c226a87f-6684-455f-be77-68957fa076f8",
+      "content_id": "6a7ca5d5-03c7-464d-bf1e-ad3a652ca6bf",
+      "claim_id": "C49",
+      "claim": "XGBoost, neural network (single hidden layer) and XGBoost/neural network (single hidden layer) stacked ensemble architectures were the next-best performing models after MetaPathPredict.",
+      "claim_type": "EXPLICIT",
+      "source": "Of these, the XGBoost, neural network (single hidden layer) and XGBoost/neural network (single hidden layer) stacked ensemble architectures were the next-best performing models and are included in Figure 2.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the relative performance of different model architectures as shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:34:46.693039Z"
+    },
+    {
+      "id": "679f9f2e-9e51-4057-a3e9-e5852029dde3",
+      "content_id": "6a7ca5d5-03c7-464d-bf1e-ad3a652ca6bf",
+      "claim_id": "C50",
+      "claim": "MetaPathPredict's deep learning strategy produced the best observed performance.",
+      "claim_type": "EXPLICIT",
+      "source": "MetaPathPredict's deep learning strategy produced the best observed performance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement supported by the comparative benchmark results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:34:46.693039Z"
+    },
+    {
+      "id": "3bd1338f-db5a-44ca-8105-a797d1709630",
+      "content_id": "6a7ca5d5-03c7-464d-bf1e-ad3a652ca6bf",
+      "claim_id": "C51",
+      "claim": "Mean F1 score of MetaPathPredict models was 0.96 when predicting on test datasets in which 30\u201390% of gene annotations had been retained.",
+      "claim_type": "EXPLICIT",
+      "source": "Mean F1 score (a summary metric of the predictive performance) of the models was 0.96 when predicting on test datasets in which 30\u201390% of gene annotations had been retained.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specific performance metric from the benchmark results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:34:46.693039Z"
+    },
+    {
+      "id": "c9bb7388-c893-4201-a4d9-f66c5d768b2d",
+      "content_id": "6a7ca5d5-03c7-464d-bf1e-ad3a652ca6bf",
+      "claim_id": "C52",
+      "claim": "The average precision of MetaPathPredict models was consistently above 0.94 for all held-out test sets.",
+      "claim_type": "EXPLICIT",
+      "source": "MetaPathPredict rarely made false positive predictions based on data from highly incomplete gene annotation sets; the average precision of the models was consistently above 0.94 for all held-out test sets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specific performance metric from the benchmark results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:34:46.693039Z"
+    },
+    {
+      "id": "2e124a01-9800-44b5-8350-c96e82b375bd",
+      "content_id": "6a7ca5d5-03c7-464d-bf1e-ad3a652ca6bf",
+      "claim_id": "C53",
+      "claim": "The recall of MetaPathPredict's models was greater than 0.96 on average for test datasets containing at least 30% of the complete gene annotation data.",
+      "claim_type": "EXPLICIT",
+      "source": "The recall of MetaPathPredict's models was greater than 0.96 on average for test datasets containing at least 30% of the complete gene annotation data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specific performance metric from the benchmark results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:34:46.693039Z"
+    },
+    {
+      "id": "2f167f10-4683-424d-a4d1-44c2a457ff8d",
+      "content_id": "6a7ca5d5-03c7-464d-bf1e-ad3a652ca6bf",
+      "claim_id": "C54",
+      "claim": "The mean recall of MetaPathPredict decreased to 0.89 and the mean precision decreased to 0.86 on genomes containing only 20% or less of the complete gene annotation data.",
+      "claim_type": "EXPLICIT",
+      "source": "The mean recall decreased to 0.89 and the mean precision decreased to 0.86 on genomes containing only 20% or less of the complete gene annotation data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specific performance metric from the benchmark results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:34:46.693039Z"
+    },
+    {
+      "id": "0388b6ae-db53-4a41-ad88-9378abcf6ae4",
+      "content_id": "6a7ca5d5-03c7-464d-bf1e-ad3a652ca6bf",
+      "claim_id": "C55",
+      "claim": "MetaPathPredict's ability to achieve notably high recall even with significantly reduced sampling rates implies that it compensates for limited sequence availability by becoming more assertive in labeling a module as 'present' at the cost of decreased precision.",
+      "claim_type": "EXPLICIT",
+      "source": "The models' ability to achieve notably high recall even with significantly reduced sampling rates implies that it compensates for limited sequence availability by becoming more assertive in labeling a module as 'present' at the cost of decreased precision.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the observed performance patterns.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:34:46.693039Z"
+    },
+    {
+      "id": "81c9848c-9e29-4692-b6e5-9c498256efde",
+      "content_id": "6a7ca5d5-03c7-464d-bf1e-ad3a652ca6bf",
+      "claim_id": "C56",
+      "claim": "MetaPathPredict was tested on gene annotations from a set of 40 high-quality metagenome-assembled genomes from the Genomes from Earth's Microbiomes (GEM) genome repository.",
+      "claim_type": "EXPLICIT",
+      "source": "MetaPathPredict was further tested on gene annotations from a set of 40 high-quality metagenome-assembled genomes from the Genomes from Earth's Microbiomes (GEM; Nayfach et al., 2021) genome repository.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes an additional validation dataset used in the study, with citation to Nayfach et al., 2021.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:34:46.693039Z"
+    },
+    {
+      "id": "575dbf75-42c1-46a4-8223-0fad38cae8d5",
+      "content_id": "6a7ca5d5-03c7-464d-bf1e-ad3a652ca6bf",
+      "claim_id": "C57",
+      "claim": "The MAGs selected from the GEM repository had an estimated completeness of 100 and estimated contamination of 0, MIMAG quality score of 'High Quality'.",
+      "claim_type": "EXPLICIT",
+      "source": "The MAGs selected from the repository had an estimated completeness of 100 and estimated contamination of 0, MIMAG quality score of 'High Quality'.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the quality criteria for selecting genomes from the GEM repository.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:34:46.693039Z"
+    },
+    {
+      "id": "75a0bad2-cdef-4dd4-8003-6a65e8fdf2de",
+      "content_id": "6a7ca5d5-03c7-464d-bf1e-ad3a652ca6bf",
+      "claim_id": "C58",
+      "claim": "The GEM genomes belonged to 7 taxonomic phyla and were recovered from 9 different environments, primarily from human-associated and built environment metagenomes.",
+      "claim_type": "EXPLICIT",
+      "source": "The genomes belonged to 7 taxonomic phyla and were recovered from 9 different environments, primarily from human-associated and built environment metagenomes (see Appendix 1\u2014figure 1 for GEM genome taxonomic distributions and environmental sources).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the diversity of the GEM test dataset, with reference to Appendix 1\u2014figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:34:46.693039Z"
+    },
+    {
+      "id": "dba7063b-b9fe-4c91-88ab-0bccf9a3b090",
+      "content_id": "6a7ca5d5-03c7-464d-bf1e-ad3a652ca6bf",
+      "claim_id": "C59",
+      "claim": "MetaPathPredict's results on the GEM dataset were comparable to its performance on the GTDB/NCBI benchmark.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, results were comparable to MetaPathPredict's performance on the GTDB/NCBI benchmark.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison of performance across different test datasets.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:34:46.693039Z"
+    },
+    {
+      "id": "8001a498-7cd4-495d-933d-36835d95bc4a",
+      "content_id": "6a7ca5d5-03c7-464d-bf1e-ad3a652ca6bf",
+      "claim_id": "C60",
+      "claim": "MetaPathPredict models excelled at predicting the presence or absence of KEGG modules in genomes when at least 40% of gene annotations were randomly retained.",
+      "claim_type": "EXPLICIT",
+      "source": "The models excelled at predicting the presence or absence of KEGG modules in genomes when at least 40% of gene annotations were randomly retained.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the performance on the GEM dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:34:46.693039Z"
+    },
+    {
+      "id": "10faee11-f653-4345-917a-00ee5ef91d10",
+      "content_id": "6a7ca5d5-03c7-464d-bf1e-ad3a652ca6bf",
+      "claim_id": "C61",
+      "claim": "MetaPathPredict predictions were less reliable though still accurate when 30% or less gene annotation data was retained.",
+      "claim_type": "EXPLICIT",
+      "source": "Predictions were less reliable though still accurate when 30% or less gene annotation data was retained.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the performance on the GEM dataset at lower completeness levels.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:34:46.693039Z"
+    },
+    {
+      "id": "9462a977-1841-4467-9a4e-db26dcb90a2c",
+      "content_id": "6a7ca5d5-03c7-464d-bf1e-ad3a652ca6bf",
+      "claim_id": "C62",
+      "claim": "Using only 3% of reads (equivalent to an average of 1.5 x coverage of the genomes), roughly 86% of the genomes' proteins were assembled.",
+      "claim_type": "EXPLICIT",
+      "source": "As an example, using only 3% of reads (equivalent to an average of 1.5 x coverage of the genomes), roughly 86% of the genomes' proteins were assembled",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specific result from the read downsampling experiment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:34:46.693039Z"
+    },
+    {
+      "id": "9d21e212-8967-4d88-86d4-95de34824d1e",
+      "content_id": "6a7ca5d5-03c7-464d-bf1e-ad3a652ca6bf",
+      "claim_id": "C63",
+      "claim": "A reduction to 1% of reads caused assembly to recover ~40% of proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "meanwhile a reduction to 1% of reads caused assembly to recover ~40% of proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specific result from the read downsampling experiment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:34:46.693039Z"
+    },
+    {
+      "id": "20ca3fdb-26c0-487e-915a-6f3d50f69fa0",
+      "content_id": "6a7ca5d5-03c7-464d-bf1e-ad3a652ca6bf",
+      "claim_id": "C64",
+      "claim": "MetaPathPredict's performance on the read-downsampled test set resembled protein annotation random sampling results, although with greater loss in precision for down-sampling <3%.",
+      "claim_type": "EXPLICIT",
+      "source": "MetaPathPredict's performance on this test set resembled protein annotation random sampling results (Figure 4a, Figure 4b), although with greater loss in precision for down-sampling <3%.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This compares performance across different downsampling approaches, with reference to Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:34:46.693039Z"
+    },
+    {
+      "id": "839a0bbf-0e16-4c67-9202-5c3ad062f2c4",
+      "content_id": "6a7ca5d5-03c7-464d-bf1e-ad3a652ca6bf",
+      "claim_id": "C65",
+      "claim": "MetaPathPredict had an average F1 score for all 190 modules of 0.96 on the second held-out test set observations that had an average estimated genome completeness of at least 30%.",
+      "claim_type": "EXPLICIT",
+      "source": "MetaPathPredict had an average F1 score for all 190 modules of 0.96 on the second held-out test set observations that had an average estimated genome completeness of at least 30%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specific performance metric from the read downsampling benchmark.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:34:46.693039Z"
+    },
+    {
+      "id": "bd8f2e6c-fabb-4270-b06f-6522a07e92a0",
+      "content_id": "6a7ca5d5-03c7-464d-bf1e-ad3a652ca6bf",
+      "claim_id": "C66",
+      "claim": "METABOLIC showed much poorer recall than MetaPathPredict at all levels of read sampling.",
+      "claim_type": "EXPLICIT",
+      "source": "METABOLIC showed much poorer recall at all levels of read sampling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparative performance result shown in Figure 4a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:34:46.693039Z"
+    },
+    {
+      "id": "bfe53b43-7408-4b0f-acb4-a2d5651eac57",
+      "content_id": "6a7ca5d5-03c7-464d-bf1e-ad3a652ca6bf",
+      "claim_id": "C67",
+      "claim": "MetaPathPredict outperformed predictions made by Gapseq, particularly on genomes with low read sampling prior to assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "MetaPathPredict outperformed predictions made by Gapseq, particularly on genomes with low read sampling prior to assembly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparative performance result shown in Figure 5a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:34:46.693039Z"
+    },
+    {
+      "id": "ab9824a0-854e-49f2-842d-56919ac279e9",
+      "content_id": "6a7ca5d5-03c7-464d-bf1e-ad3a652ca6bf",
+      "claim_id": "C68",
+      "claim": "In the first MetaPathPredict model, 30 of the top 100 most important features (genes) influencing predictions were direct components of KEGG modules predicted by this model.",
+      "claim_type": "EXPLICIT",
+      "source": "SHAP values in the first model (trained to classify modules present in \u226510% and\u226490% of training genomes) indicated that 30 of the top 100 most important features (genes) influencing predictions were direct components of KEGG modules predicted by this model (Supplementary file 1b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from SHAP analysis of model features.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:34:46.693039Z"
+    },
+    {
+      "id": "769677fe-ba8c-46c6-8366-950fa12c7240",
+      "content_id": "6a7ca5d5-03c7-464d-bf1e-ad3a652ca6bf",
+      "claim_id": "C69",
+      "claim": "In the second MetaPathPredict model, 37 of the 100 most influential features were part of KEGG modules this model was trained to predict.",
+      "claim_type": "EXPLICIT",
+      "source": "In the second model (classifies modules present in <10% or>90% of training genomes), 37 of the 100 most influential features were part of KEGG modules this model was trained to predict.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from SHAP analysis of model features.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:34:46.693039Z"
+    },
+    {
+      "id": "b17ccd39-cf57-46b8-8206-e5b2ea1d23e2",
+      "content_id": "6a7ca5d5-03c7-464d-bf1e-ad3a652ca6bf",
+      "claim_id": "C70",
+      "claim": "The two MetaPathPredict models share 14 most important features out of the top 50 that are not part of KEGG modules.",
+      "claim_type": "EXPLICIT",
+      "source": "The two models share 14 most important features out of the top 50 that are not part of KEGG modules.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from SHAP analysis comparing features across models.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:34:46.693039Z"
+    },
+    {
+      "id": "b5b44c37-b30f-4b5e-bd37-ea4e94d4adee",
+      "content_id": "6a7ca5d5-03c7-464d-bf1e-ad3a652ca6bf",
+      "claim_id": "C71",
+      "claim": "There were a number of proteins annotated as sensors or transcriptional regulators among the top features in both MetaPathPredict models.",
+      "claim_type": "EXPLICIT",
+      "source": "We examined these top features and found that there were a number of proteins annotated as sensors or transcriptional regulators (Supplementary file 1b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from examining the SHAP analysis results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:34:46.693039Z"
+    },
+    {
+      "id": "00bb4431-5aa2-47bd-8be1-3b903c8f32ee",
+      "content_id": "6a7ca5d5-03c7-464d-bf1e-ad3a652ca6bf",
+      "claim_id": "C72",
+      "claim": "A number of transporters were annotated as top features in both MetaPathPredict models.",
+      "claim_type": "EXPLICIT",
+      "source": "Also, we noted a number of transporters annotated as top features in both models",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from examining the SHAP analysis results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:34:46.693039Z"
+    },
+    {
+      "id": "a0bd0139-e917-4da2-9b5a-83e201fd04db",
+      "content_id": "6a7ca5d5-03c7-464d-bf1e-ad3a652ca6bf",
+      "claim_id": "C73",
+      "claim": "Factors related to pathogenesis like toxins and mobile elements were noted as top features in both MetaPathPredict models.",
+      "claim_type": "EXPLICIT",
+      "source": "and, interestingly, factors related to pathogenesis like toxins and mobile elements.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from examining the SHAP analysis results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:34:46.693039Z"
+    },
+    {
+      "id": "e6fd41ae-802a-44d7-828f-c4b44d7458c7",
+      "content_id": "6a7ca5d5-03c7-464d-bf1e-ad3a652ca6bf",
+      "claim_id": "C74",
+      "claim": "MetaPathPredict's predictions are in part influenced by select genes present in KEGG modules, and also to a larger extent by genes not directly participating in KEGG module reactions.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it is clear that MetaPathPredict's predictions are in part influenced by select genes present in KEGG modules, and also to a larger extent by genes not directly participating in KEGG module reactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the SHAP analysis results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:34:46.693039Z"
+    },
+    {
+      "id": "a7965175-53e9-4f7e-bcc7-67767d09adbf",
+      "content_id": "6a7ca5d5-03c7-464d-bf1e-ad3a652ca6bf",
+      "claim_id": "C75",
+      "claim": "MetaPathPredict provides gene gap-filling options by listing putative KO gene annotations that could fill in missing gaps in predicted modules.",
+      "claim_type": "EXPLICIT",
+      "source": "MetaPathPredict also provides gene gap-filling options by listing putative KO gene annotations that could fill in missing gaps in predicted modules.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a feature of the tool.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:34:46.693039Z"
+    },
+    {
+      "id": "a760bef0-f2ae-4052-bcfe-3aa8efca4c53",
+      "content_id": "6a7ca5d5-03c7-464d-bf1e-ad3a652ca6bf",
+      "claim_id": "C76",
+      "claim": "The performance metrics of MetaPathPredict on NCBI/GTDB and GEM test datasets validated the use of deep learning models to predict the presence/absence of KEGG metabolic modules with high fidelity on sparse to near-complete bacterial genomes.",
+      "claim_type": "EXPLICIT",
+      "source": "The performance metrics of MetaPathPredict on NCBI/GTDB and GEM test datasets validated the use of deep learning models to predict the presence/absence of KEGG metabolic modules with high fidelity on sparse to near-complete bacterial genomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion drawn from the benchmark results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:34:46.693039Z"
+    },
+    {
+      "id": "225dc686-a54a-4f99-83ab-e5fd34d1d14e",
+      "content_id": "6a7ca5d5-03c7-464d-bf1e-ad3a652ca6bf",
+      "claim_id": "C77",
+      "claim": "MetaPathPredict's multi-label classification models consistently made predictions with high precision and recall on simulated and real genomes using gene annotation and sequence read downsampling methods.",
+      "claim_type": "EXPLICIT",
+      "source": "MetaPathPredict's multi-label classification models consistently made predictions with high precision and recall on simulated and real genomes using gene annotation and sequence read downsampling methods.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the performance results across different test scenarios.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:34:46.693039Z"
+    },
+    {
+      "id": "f41f6b24-683c-40d8-b36b-421415a9d2c6",
+      "content_id": "6a7ca5d5-03c7-464d-bf1e-ad3a652ca6bf",
+      "claim_id": "C78",
+      "claim": "The predictive power of MetaPathPredict's deep learning models was most limited when predicting on 10%\u201330% of protein annotations, and when the mean estimated completeness of reconstructed genomes from down-sampled reads was below 30%.",
+      "claim_type": "EXPLICIT",
+      "source": "The predictive power of the deep learning models was most limited when predicting on 10%\u201330% of protein annotations, and when the mean estimated completeness of reconstructed genomes from down-sampled reads was below 30%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the limitations observed in the benchmark results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:34:46.693039Z"
+    },
+    {
+      "id": "ed840a1c-e17f-4dab-a5d9-021169a4050b",
+      "content_id": "6a7ca5d5-03c7-464d-bf1e-ad3a652ca6bf",
+      "claim_id": "C79",
+      "claim": "Optimal performance with MetaPathPredict can be achieved when at least 40% of a genome has been recovered in an input bacterial gene annotation dataset.",
+      "claim_type": "EXPLICIT",
+      "source": "We suggest that optimal performance with MetaPathPredict can be achieved when at least 40% of a genome has been recovered in an input bacterial gene annotation dataset.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation based on the observed performance patterns.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:34:46.693039Z"
+    },
+    {
+      "id": "441f4910-f1c5-4afb-9e2d-ade47e51598c",
+      "content_id": "6a7ca5d5-03c7-464d-bf1e-ad3a652ca6bf",
+      "claim_id": "C80",
+      "claim": "The recall of MetaPathPredict models was robust (mean >0.9) even when protein sets were down-sampled to 10%.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on our performance tests of MetaPathPredict, the recall of its models was robust (mean >0.9) even when protein sets were down-sampled to 10%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specific performance observation from the benchmark results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:34:46.693039Z"
+    },
+    {
+      "id": "1755a557-953c-47fd-be21-b4f8e692effa",
+      "content_id": "6a7ca5d5-03c7-464d-bf1e-ad3a652ca6bf",
+      "claim_id": "C81",
+      "claim": "MetaPathPredict shows a decrease in precision (i.e. an increase in false calls of module presence) at low sampling rates.",
+      "claim_type": "EXPLICIT",
+      "source": "However, MetaPathPredict also surprisingly shows a decrease in precision (i.e. an increase in false calls of module presence).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specific performance observation from the benchmark results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:34:46.693039Z"
+    },
+    {
+      "id": "67651b7a-9490-4643-9bc1-458f2d7cb360",
+      "content_id": "6a7ca5d5-03c7-464d-bf1e-ad3a652ca6bf",
+      "claim_id": "C82",
+      "claim": "The model directly compensates for low general sequence availability by increasing aggressiveness in calling a module 'present'.",
+      "claim_type": "EXPLICIT",
+      "source": "This, combined with surprisingly high recall rates at such low sampling rates, suggests that the model directly compensates for low general sequence availability by increasing aggressiveness in calling a module 'present'.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the observed performance patterns.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:34:46.693039Z"
+    },
+    {
+      "id": "9273f5ce-5406-4248-a797-0a4623a6e200",
+      "content_id": "6a7ca5d5-03c7-464d-bf1e-ad3a652ca6bf",
+      "claim_id": "C83",
+      "claim": "The over-exuberant positive class prediction problem arose in analyses only when <30% of gene annotation data was retained.",
+      "claim_type": "EXPLICIT",
+      "source": "This over-exuberant positive class prediction problem arose in our analyses only when <30% of gene annotation data was retained.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specific observation about when the precision problem occurs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:34:46.693039Z"
+    },
+    {
+      "id": "7ae712d0-fbc8-47f0-974e-0c990ef47a0e",
+      "content_id": "6a7ca5d5-03c7-464d-bf1e-ad3a652ca6bf",
+      "claim_id": "C84",
+      "claim": "The presence of sensing proteins (e.g. iron sensing and chemotaxis), pathogen proteins (e.g. toxins and lysins), and transporters in the important features lists may indicate the contribution of lifestyle and environmental factors in predicting presence or absence of individual modules.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the presence of sensing proteins (e.g. iron sensing and chemotaxis), pathogen proteins (e.g. toxins and lysins), and transporters in these lists may indicate the contribution of lifestyle and environmental factors in predicting presence or absence of individual modules.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about the biological meaning of the important features identified by SHAP analysis.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:34:46.693039Z"
+    },
+    {
+      "id": "b80d0179-f8c7-46b3-ac1a-5e09cd28b150",
+      "content_id": "6a7ca5d5-03c7-464d-bf1e-ad3a652ca6bf",
+      "claim_id": "C85",
+      "claim": "Transcriptional regulators may be important features due to their outsized influence on the expression of many genes (and thus modules) in each organism.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, transcriptional regulators may be important due to their outsized influence on the expression of many genes (and thus modules) in each organism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about why transcriptional regulators are important features.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:34:46.693039Z"
+    },
+    {
+      "id": "acd2f2a7-c79d-49b9-abad-b98a03f02c51",
+      "content_id": "6a7ca5d5-03c7-464d-bf1e-ad3a652ca6bf",
+      "claim_id": "C86",
+      "claim": "Components of mobile elements (transposases) being important features could indicate that insertional elements are being used by the model to indicate evolutionary lineage, which could be used to inform predictions of KEGG module composition.",
+      "claim_type": "EXPLICIT",
+      "source": "Perhaps the most intriguing finding was that components of mobile elements (transposases) were found to be important features of both models. This could indicate that insertional elements are being used by the model to indicate, for example, evolutionary lineage, which could be used to inform predictions of KEGG module composition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about the biological meaning of transposases being important features.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:34:46.693039Z"
+    },
+    {
+      "id": "be236975-9a04-489c-8e0b-2cce89036fb5",
+      "content_id": "6a7ca5d5-03c7-464d-bf1e-ad3a652ca6bf",
+      "claim_id": "C87",
+      "claim": "MetaPathPredict facilitates more complete and accurate reconstruction of the metabolic potential encoded within bacterial genomes from a diverse array of environments.",
+      "claim_type": "EXPLICIT",
+      "source": "MetaPathPredict facilitates more complete and accurate reconstruction of the metabolic potential encoded within bacterial genomes from a diverse array of environments and will enhance the ability to infer what metabolisms they are capable of, and/or how they may respond to perturbations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the expected utility of the tool based on its demonstrated performance.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:34:46.693039Z"
+    },
+    {
+      "id": "12c80318-eed6-4f92-9b84-4559856a89ab",
+      "content_id": "6a7ca5d5-03c7-464d-bf1e-ad3a652ca6bf",
+      "claim_id": "C88",
+      "claim": "The NCBI RefSeq database metadata file (Release 205) was filtered to retain only the information for all bacterial genomes classified as 'Complete genome'.",
+      "claim_type": "EXPLICIT",
+      "source": "The NCBI RefSeq (Release 205) database metadata file was downloaded and filtered to retain only the information for all bacterial genomes classified as 'Complete genome'.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data filtering methodology used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:34:46.693039Z"
+    },
+    {
+      "id": "422699e9-f84d-4356-b148-95d41968c9cd",
+      "content_id": "6a7ca5d5-03c7-464d-bf1e-ad3a652ca6bf",
+      "claim_id": "C89",
+      "claim": "The filtering of NCBI RefSeq resulted in 17,491 complete NCBI genomes.",
+      "claim_type": "EXPLICIT",
+      "source": "This resulted in 17,491 complete NCBI genomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specific result from the data filtering process.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:34:46.693039Z"
+    },
+    {
+      "id": "6ce70d23-2f2d-4d00-8e2b-56ca250c9aac",
+      "content_id": "6a7ca5d5-03c7-464d-bf1e-ad3a652ca6bf",
+      "claim_id": "C90",
+      "claim": "The GTDB bacterial metadata file for release 95 was filtered to keep the information for all genomes with an estimated completeness greater than 99, an estimated contamination of 0, and a MIMAG quality score of 'High Quality'.",
+      "claim_type": "EXPLICIT",
+      "source": "The GTDB bacterial metadata file for release 95 was downloaded and filtered to keep the information for all genomes with an estimated completeness greater than 99, an estimated contamination of 0, and a MIMAG (Bowers et al., 2017) quality score of \"High Quality\".",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data filtering methodology used in the study, with citation to Bowers et al., 2017.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:34:46.693039Z"
+    },
+    {
+      "id": "ff43b172-2d70-4192-b4c9-cc742496eb1a",
+      "content_id": "6a7ca5d5-03c7-464d-bf1e-ad3a652ca6bf",
+      "claim_id": "C91",
+      "claim": "A total of 30,760 non-redundant bacterial genomes from the two database metadata files were downloaded.",
+      "claim_type": "EXPLICIT",
+      "source": "A total of 30,760 non-redundant bacterial genomes from the two database metadata files were downloaded using the ncbi-genome-download command line tool (Blin, 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specific result from the data collection process, with citation to Blin, 2023.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:34:46.693039Z"
+    },
+    {
+      "id": "d96f4c92-c66e-4cf6-b946-f81789da66b7",
+      "content_id": "6a7ca5d5-03c7-464d-bf1e-ad3a652ca6bf",
+      "claim_id": "C92",
+      "claim": "17,491 RefSeq genomes were downloaded from the RefSeq FTP server, and 13,105 GTDB genomes were downloaded from the GenBank FTP server.",
+      "claim_type": "EXPLICIT",
+      "source": "The RefSeq genomes (17,491 total) were downloaded from the RefSeq FTP server, and the GTDB genomes (13,105 total) were downloaded from the GenBank FTP server (Appendix 1\u2014figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the data sources and quantities, with reference to Appendix 1\u2014figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:34:46.693039Z"
+    },
+    {
+      "id": "8b6ccff6-74ee-4f21-a64c-198b6a52d015",
+      "content_id": "6a7ca5d5-03c7-464d-bf1e-ad3a652ca6bf",
+      "claim_id": "C93",
+      "claim": "Genes were called using Prodigal.",
+      "claim_type": "EXPLICIT",
+      "source": "Genes were called using Prodigal (Hyatt et al., 2010)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the gene calling methodology, with citation to Hyatt et al., 2010.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:34:46.693039Z"
+    },
+    {
+      "id": "560fa8ac-9252-4cbc-bb92-d943250d56f4",
+      "content_id": "6a7ca5d5-03c7-464d-bf1e-ad3a652ca6bf",
+      "claim_id": "C94",
+      "claim": "The KofamScan command line tool was used to generate gene annotations (in KO gene identifier format) for all of the genomes using the KOfam set of HMMs available for download from the KEGG database.",
+      "claim_type": "EXPLICIT",
+      "source": "and the KofamScan command line tool (Aramaki et al., 2020) was used to generate gene annotations (in KO gene identifier format) for all of the genomes using the KOfam set of HMMs available for download from the KEGG database (Kanehisa, 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the annotation methodology, with citations to Aramaki et al., 2020 and Kanehisa, 2002.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:34:46.693039Z"
+    },
+    {
+      "id": "fd9cf0fc-9bb2-4389-9596-7173302830ca",
+      "content_id": "6a7ca5d5-03c7-464d-bf1e-ad3a652ca6bf",
+      "claim_id": "C95",
+      "claim": "KofamScan-derived annotations had to surpass their HMM's adaptive scoring threshold to be included in the training dataset.",
+      "claim_type": "EXPLICIT",
+      "source": "KofamScan-derived annotations had to surpass their HMM's adaptive scoring threshold to be included in the training dataset.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the quality filtering applied to annotations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:34:46.693039Z"
+    },
+    {
+      "id": "83db7f0c-be06-439c-afc5-499b1a47a3a5",
+      "content_id": "6a7ca5d5-03c7-464d-bf1e-ad3a652ca6bf",
+      "claim_id": "C96",
+      "claim": "The full dataset of simulated incomplete genomes (n=305,960) was split so that 75% of genomes were used for training and the remaining 25% as a test dataset.",
+      "claim_type": "EXPLICIT",
+      "source": "The full dataset of simulated incomplete genomes (n=305,960) was split so that 75% of genomes were used for training and the remaining 25% as a test dataset.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the train/test split methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:34:46.693039Z"
+    },
+    {
+      "id": "54bd10e4-d876-4feb-a170-34fab4e575c5",
+      "content_id": "6a7ca5d5-03c7-464d-bf1e-ad3a652ca6bf",
+      "claim_id": "C97",
+      "claim": "The training dataset was further split into 80% training/20% validation test sets.",
+      "claim_type": "EXPLICIT",
+      "source": "The training dataset was further split into 80% training/20% validation test sets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the train/validation split methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:34:46.693039Z"
+    },
+    {
+      "id": "a58f0e8d-af7d-49e7-a813-f9e019f0b754",
+      "content_id": "6a7ca5d5-03c7-464d-bf1e-ad3a652ca6bf",
+      "claim_id": "C98",
+      "claim": "Each observation in the train/test/validation datasets contained a vector of length 8,853 that consisted of KO gene identifier (protein family) presence/absence indicated by ones and zeroes, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Each observation in the train/test/validation datasets contained a vector of length 8,853 that consisted of KO gene identifier (protein family) presence/absence indicated by ones and zeroes, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the feature representation used in the models.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:34:46.693039Z"
+    },
+    {
+      "id": "3f1ef879-7688-42df-b204-8f31b4705462",
+      "content_id": "6a7ca5d5-03c7-464d-bf1e-ad3a652ca6bf",
+      "claim_id": "C99",
+      "claim": "The training datasets had a size of 305,960 observations, and the test datasets each contained 76,490 observations.",
+      "claim_type": "EXPLICIT",
+      "source": "The training datasets had a size of 305,960 observations, and the test datasets each contained 76,490 observations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the sizes of the training and test datasets.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:34:46.693039Z"
+    },
+    {
+      "id": "e465302f-ac42-49d8-acf1-0ec6f5a21030",
+      "content_id": "6a7ca5d5-03c7-464d-bf1e-ad3a652ca6bf",
+      "claim_id": "C100",
+      "claim": "The percent of observations with a positive class (a complete KEGG module 'present' in the gene annotations) in the training and test datasets varied, with a mean of 26.2%.",
+      "claim_type": "EXPLICIT",
+      "source": "The percent of observations with a positive class (a complete KEGG module 'present' in the gene annotations) in the training and test datasets varied, with a mean of 26.2% (Appendix 1\u2014figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the class balance in the datasets, with reference to Appendix 1\u2014figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:34:46.693039Z"
+    },
+    {
+      "id": "3fd06230-c1ff-4db3-bf9e-258a5b7a6ec4",
+      "content_id": "6a7ca5d5-03c7-464d-bf1e-ad3a652ca6bf",
+      "claim_id": "C101",
+      "claim": "The 'unroll_module_definition' function from the Anvi'o module was utilized with downloaded KEGG module data to create a list of all possible KEGG Ortholog combinations to complete each module.",
+      "claim_type": "EXPLICIT",
+      "source": "The 'unroll_module_definition' function from the Anvi'o module was utilized with downloaded KEGG module data to create a list of all possible KEGG Ortholog combinations to complete each module.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodology for determining module completeness.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:34:46.693039Z"
+    },
+    {
+      "id": "96bc8262-3f55-43ec-b8f6-04bc6413be6c",
+      "content_id": "6a7ca5d5-03c7-464d-bf1e-ad3a652ca6bf",
+      "claim_id": "C102",
+      "claim": "For a module to be categorized as present, at least one possible combination of every step of the module had to be present in a genome, otherwise it was designated as absent.",
+      "claim_type": "EXPLICIT",
+      "source": "For the module to be categorized as present, at least one possible combination of every step of the module had to be present in a genome, otherwise it was designated as absent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the labeling criteria for module presence/absence.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:34:46.693039Z"
+    },
+    {
+      "id": "f8d90043-3ece-4c7b-9923-afebbce764cf",
+      "content_id": "6a7ca5d5-03c7-464d-bf1e-ad3a652ca6bf",
+      "claim_id": "C103",
+      "claim": "Two models were constructed for 190 KEGG modules for which at least 306 (0.1%) of the complete genomes (n=30,596) contained the module genes, due to an improvement in performance when two models were trained instead of one.",
+      "claim_type": "EXPLICIT",
+      "source": "Two models were constructed for 190 KEGG modules for which at least 306 (0.1%) of the complete genomes (n=30,596) contained the module genes, due to an improvement in performance when two models were trained (one model for the more balanced labels, one for highly imbalanced labels) instead of one.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the rationale for using two models and the module selection criteria.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:34:46.693039Z"
+    },
+    {
+      "id": "9a7ce059-8032-4971-ad40-111358fb12a3",
+      "content_id": "6a7ca5d5-03c7-464d-bf1e-ad3a652ca6bf",
+      "claim_id": "C104",
+      "claim": "MetaPathPredict is built on the Keras deep learning library.",
+      "claim_type": "EXPLICIT",
+      "source": "MetaPathPredict is built on the Keras deep learning library (Sattler et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the software framework used, with citation to Sattler et al., 2015.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:34:46.693039Z"
+    },
+    {
+      "id": "e34db77c-6316-4b31-b1ce-b9d7a22afe24",
+      "content_id": "6a7ca5d5-03c7-464d-bf1e-ad3a652ca6bf",
+      "claim_id": "C105",
+      "claim": "L2-regularization was utilized to adjust hidden unit weights during training, with a learning rate of 0.001.",
+      "claim_type": "EXPLICIT",
+      "source": "L2-regularization was utilized to adjust hidden unit weights during training, with a learning rate of 0.001.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the regularization approach used in model training.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:34:46.693039Z"
+    },
+    {
+      "id": "8639383f-ac6b-4ce6-818b-2f3f2f0c73d3",
+      "content_id": "6a7ca5d5-03c7-464d-bf1e-ad3a652ca6bf",
+      "claim_id": "C106",
+      "claim": "A deep learning architecture consisting of one input layer, five hidden layers, and one output layer were used as the machine learning architectures in MetaPathPredict's models.",
+      "claim_type": "EXPLICIT",
+      "source": "A deep learning architecture consisting of one input layer, five hidden layers, and one output layer were used as the machine learning architectures in MetaPathPredict's models.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the neural network architecture.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:34:46.693039Z"
+    },
+    {
+      "id": "c84b13f4-2a3e-4439-8191-45e100bd9530",
+      "content_id": "6a7ca5d5-03c7-464d-bf1e-ad3a652ca6bf",
+      "claim_id": "C107",
+      "claim": "The input layer consisted of the presence/absence vector of KO gene identifiers (n=8,853), and the hidden layers each contained 2048 hidden units and were fully connected.",
+      "claim_type": "EXPLICIT",
+      "source": "The input layer consisted of the presence/absence vector of KO gene identifiers (n=8,853), and the hidden layers each contained 2048 hidden units and were fully connected.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the neural network architecture details.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:34:46.693039Z"
+    },
+    {
+      "id": "e596215e-1f95-4922-b1f1-30e7384dc9fa",
+      "content_id": "6a7ca5d5-03c7-464d-bf1e-ad3a652ca6bf",
+      "claim_id": "C108",
+      "claim": "The output layer of the first and second models contained 94 and 96 nodes for a total of 190 module presence/absence predictions when prediction outputs from both are combined.",
+      "claim_type": "EXPLICIT",
+      "source": "The output layer of the first and second models contained 94 and 96 nodes for a total of 190 module presence/absence predictions when prediction outputs from both are combined.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the output layer architecture.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:34:46.693039Z"
+    },
+    {
+      "id": "61189d38-fbe5-4602-9151-4fc233fa4af3",
+      "content_id": "6a7ca5d5-03c7-464d-bf1e-ad3a652ca6bf",
+      "claim_id": "C109",
+      "claim": "A multi-label stratified sampling method was used to generate 75% train/25% test dataset splits that each contained data observations with preserved proportions of positive and negative classes.",
+      "claim_type": "EXPLICIT",
+      "source": "A multi-label stratified sampling method (Sechidis et al., 2011) was used to generate 75% train/25% test dataset splits that each contained data observations with preserved proportions of positive ('KEGG module present') and negative ('KEGG module absent') classes that were present in the genome dataset",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the sampling methodology, with citation to Sechidis et al., 2011.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:34:46.693039Z"
+    },
+    {
+      "id": "31007880-69a0-48d6-9791-fc543ff1764e",
+      "content_id": "6a7ca5d5-03c7-464d-bf1e-ad3a652ca6bf",
+      "claim_id": "C110",
+      "claim": "The binary cross entropy loss function was used in tandem with the Adaptive Moment Estimation (Adam) optimizer.",
+      "claim_type": "EXPLICIT",
+      "source": "The binary cross entropy loss function was used in tandem with the Adaptive Moment Estimation (Adam) optimizer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the loss function and optimizer used in training.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:34:46.693039Z"
+    },
+    {
+      "id": "60491f1a-821e-408d-bf60-d98eb237bf35",
+      "content_id": "6a7ca5d5-03c7-464d-bf1e-ad3a652ca6bf",
+      "claim_id": "C111",
+      "claim": "The input and hidden layers utilized the rectified linear unit (ReLu) activation function; the output layer contained a sigmoid activation function.",
+      "claim_type": "EXPLICIT",
+      "source": "The input and hidden layers utilized the rectified linear unit (ReLu) activation function; the output layer contained a sigmoid activation function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the activation functions used in the neural network.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:34:46.693039Z"
+    },
+    {
+      "id": "ff09aee5-dade-4da8-a7d2-5acbb1d8ff8b",
+      "content_id": "6a7ca5d5-03c7-464d-bf1e-ad3a652ca6bf",
+      "claim_id": "C112",
+      "claim": "Dropout was applied to 10% of edges at all layers except the final layer to avoid overfitting the training data.",
+      "claim_type": "EXPLICIT",
+      "source": "Dropout (Srivastava, 2014) was applied to 10% of edges at all layers except the final layer to avoid overfitting the training data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the dropout regularization approach, with citation to Srivastava, 2014.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:34:46.693039Z"
+    },
+    {
+      "id": "140fcdab-458c-41bb-a648-57eae513c04c",
+      "content_id": "6a7ca5d5-03c7-464d-bf1e-ad3a652ca6bf",
+      "claim_id": "C113",
+      "claim": "The input and hidden layers utilized the 'he_uniform' layer weight initializer, and each of these layers contained 2,048 hidden units.",
+      "claim_type": "EXPLICIT",
+      "source": "The input and hidden layers utilized the 'he_uniform' layer weight initializer, and each of these layers contained 2,048 hidden units.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the weight initialization approach and layer sizes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:34:46.693039Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "9c9bbbb0-223b-4330-8be2-25fc487e26d2",
+      "content_id": "6a7ca5d5-03c7-464d-bf1e-ad3a652ca6bf",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors identify a gap in existing computational tools: no current methods use machine learning to predict KEGG module presence/absence in incomplete genomes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C2, and C24 establish the motivation for the work by identifying limitations in current approaches. The literature review (C12-C23) supports that existing tools use topology-based or cutoff-based methods rather than machine learning for KEGG module prediction, validating this gap.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:34:46.693039Z"
+    },
+    {
+      "id": "62748d82-3c5a-49c4-8612-ea386098e40e",
+      "content_id": "6a7ca5d5-03c7-464d-bf1e-ad3a652ca6bf",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "MetaPathPredict is a deep learning-based tool that predicts KEGG module presence in bacterial genomes using KO gene annotations as input, trained on diverse genomes from NCBI RefSeq and GTDB databases.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C5, C25-C31, and C75 describe the tool's design, implementation, and functionality. These are well-documented with clear descriptions of inputs, outputs, training data sources, and availability, establishing the basic characteristics of the software.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:34:46.693039Z"
+    },
+    {
+      "id": "66e43a87-a600-48f4-9bba-b8a2a99c80d7",
+      "content_id": "6a7ca5d5-03c7-464d-bf1e-ad3a652ca6bf",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "MetaPathPredict uses two deep learning models (5 hidden layers, 2048 units each) trained on 305,960 observations from 30,760 high-quality genomes, with one model for balanced modules (96 modules, 10-90% prevalence) and another for imbalanced modules (94 modules, <10% or >90% prevalence).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C113 provide comprehensive methodological details including data collection (C88-C95), model architecture (C104-C113), training strategy (C96-C103), and rationale for the two-model approach. The methods are clearly described with specific parameters, sample sizes, and data sources properly cited.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:34:46.693039Z"
+    },
+    {
+      "id": "f0c9f445-f985-4479-aebd-924bc691c6e5",
+      "content_id": "6a7ca5d5-03c7-464d-bf1e-ad3a652ca6bf",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "MetaPathPredict outperforms competing methods (naive rules, XGBoost, single-layer neural networks, METABOLIC, Gapseq) on downsampled NCBI/GTDB test data (30,596 genomes), achieving F1=0.96, precision>0.94, and recall>0.96 when \u226530% of gene annotations are retained.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C32, C41-C54 present comprehensive benchmark results with specific performance metrics shown in Figure 2. The comparison includes multiple baselines and the performance degradation at lower completeness levels is documented. However, statistical significance testing is not reported, and the choice of 30% threshold appears somewhat arbitrary.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:34:46.693039Z"
+    },
+    {
+      "id": "bb7b2212-de15-4d72-aaa1-686be95a61f7",
+      "content_id": "6a7ca5d5-03c7-464d-bf1e-ad3a652ca6bf",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "MetaPathPredict maintains high recall (>0.9) even at 10% gene annotation retention but shows decreased precision at low sampling rates (<30%), suggesting the model compensates for limited data by becoming more aggressive in predicting module presence.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55, C80-C83 describe an interesting performance characteristic where precision decreases while recall remains high at low completeness. This interpretation is supported by the data in Figures 2-4, though the mechanistic explanation (C82) is speculative and would benefit from additional analysis of model behavior.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:34:46.693039Z"
+    },
+    {
+      "id": "44d07b68-97eb-47f3-8f9d-ab2eeb78cce4",
+      "content_id": "6a7ca5d5-03c7-464d-bf1e-ad3a652ca6bf",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "MetaPathPredict performs comparably on 40 high-quality MAGs from the GEM repository (diverse phyla and environments), excelling when \u226540% of annotations are retained and remaining accurate at 30% retention.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C61 describe validation on an independent dataset (GEM) with clear quality criteria (C57). The performance is comparable to NCBI/GTDB results (C59), though the sample size (n=40) is relatively small and the slightly higher threshold (40% vs 30%) is noted but not thoroughly explained.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:34:46.693039Z"
+    },
+    {
+      "id": "d37bc921-b19e-48a8-80b9-db1ab0121f23",
+      "content_id": "6a7ca5d5-03c7-464d-bf1e-ad3a652ca6bf",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "On read-downsampled genomes (n=50), MetaPathPredict achieves F1=0.96 at \u226530% estimated completeness and outperforms METABOLIC (recall) and Gapseq across all sampling levels, with performance resembling protein annotation downsampling except for greater precision loss at <3% reads.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C67 present results from a more realistic benchmark using read downsampling rather than annotation downsampling. The relationship between read retention and protein recovery (C62-C63) is documented, and comparative performance against METABOLIC and Gapseq is shown in Figures 4-5. The consistency with annotation downsampling validates that approach.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:34:46.693039Z"
+    },
+    {
+      "id": "98a6cb9b-8285-4466-8c94-db534f846fac",
+      "content_id": "6a7ca5d5-03c7-464d-bf1e-ad3a652ca6bf",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "SHAP analysis reveals that only 30-37% of the top 100 important features are direct KEGG module components, with sensors, transcriptional regulators, transporters, and pathogenesis factors (toxins, mobile elements) among the most influential non-module features.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C74 present SHAP analysis results showing that the models rely heavily on genes outside KEGG modules. The specific feature categories are identified (C71-C73), though the biological interpretation (C74) acknowledges difficulty due to multi-label architecture. The finding is interesting but the mechanistic understanding is limited.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:34:46.693039Z"
+    },
+    {
+      "id": "874d57aa-c4ab-42b7-8c2a-debbb1343a9d",
+      "content_id": "6a7ca5d5-03c7-464d-bf1e-ad3a652ca6bf",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "MetaPathPredict validates deep learning for KEGG module prediction on sparse-to-complete genomes, with optimal performance at \u226540% genome recovery and limitations at 10-30% completeness or <30% estimated completeness from downsampled reads.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C76-C79 synthesize the performance results into recommendations. The 40% threshold (C79) is supported by the data, though it's presented as a suggestion rather than a hard requirement. The characterization of limitations (C78) is honest and data-driven.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:34:46.693039Z"
+    },
+    {
+      "id": "c3116b51-44c1-4806-adc4-8e774d3076e9",
+      "content_id": "6a7ca5d5-03c7-464d-bf1e-ad3a652ca6bf",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The authors speculate that important non-module features (sensors, regulators, transporters, mobile elements) may indicate lifestyle, environmental factors, or evolutionary lineage that inform module predictions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C84-C86 are explicitly speculative (using 'may' and 'could') about the biological meaning of SHAP results. While plausible, these interpretations lack experimental validation or additional computational analysis to support the proposed mechanisms. The speculation is reasonable but remains unvalidated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:34:46.693039Z"
+    },
+    {
+      "id": "08c78abb-626a-4141-92a1-cefb01a32d6d",
+      "content_id": "6a7ca5d5-03c7-464d-bf1e-ad3a652ca6bf",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "MetaPathPredict facilitates more complete and accurate reconstruction of metabolic potential in bacterial genomes from diverse environments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C87 is a concluding statement about the tool's utility that is supported by the demonstrated performance improvements over existing methods (C41-C67) across multiple test scenarios. However, the claim of 'more complete' reconstruction would be strengthened by direct comparison of biological insights gained.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:34:46.693039Z"
+    },
+    {
+      "id": "72524f93-0502-413e-ad03-b128cedd14df",
+      "content_id": "6a7ca5d5-03c7-464d-bf1e-ad3a652ca6bf",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Environmental genomes have variable completeness due to sequencing biases and annotation limitations, and existing gap-filling methods (topology-based, cutoff-based) can underestimate pathways in incomplete genomes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C11, C14, C16, C18, C21 describe established challenges in the field. C9 is supported by citation, while C10-C11 represent general knowledge. The limitations of existing methods (C14, C16, C18, C21) are inferences that motivate the work and are consistent with the comparative benchmarking results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:34:46.693039Z"
+    },
+    {
+      "id": "354b6be7-9c17-4cec-98b9-d43a2bf4bb15",
+      "content_id": "6a7ca5d5-03c7-464d-bf1e-ad3a652ca6bf",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Existing tools for metabolic pathway analysis include topology-based methods (Gapseq, MinPath), cutoff-based methods (METABOLIC), taxonomy-dependent methods (KEMET), annotation tools (DRAM), flux-balance analysis, and machine learning approaches for trait prediction (Traitar) or trophic mode classification.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C13, C15, C17, C19-C20, C22-C23 describe existing tools with proper citations. These characterizations of prior work appear accurate based on the cited literature and establish the context for MetaPathPredict's novelty. The descriptions are factual and well-supported by citations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:34:46.693039Z"
+    },
+    {
+      "id": "e1e64d18-3794-498c-b85f-334e990ce23f",
+      "content_id": "6a7ca5d5-03c7-464d-bf1e-ad3a652ca6bf",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Microorganisms play key roles in biogeochemical cycles, and accurate metabolic pathway identification is crucial for understanding their activities.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C8 are general statements establishing the importance of the research area. These represent well-established knowledge in microbiology and provide appropriate motivation for the work, though they are not novel findings of this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:34:46.693039Z"
+    },
+    {
+      "id": "1fafb75f-c917-456f-82bb-ae3cdf3e0784",
+      "content_id": "6a7ca5d5-03c7-464d-bf1e-ad3a652ca6bf",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "MetaPathPredict produces rare false positives but increasing false negatives with incomplete data.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C37 summarize the error characteristics observed across all tests. This is consistent with the high precision (C52) and decreasing recall at low completeness (C53-C54) documented in the results, representing an accurate characterization of model behavior.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:34:46.693039Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "82fcb860-c497-4335-b5c7-83092b893c59",
+      "result_id": "9c9bbbb0-223b-4330-8be2-25fc487e26d2"
+    },
+    {
+      "claim_id": "cf2789e7-2fce-4f0b-8c1b-5eda268552dc",
+      "result_id": "9c9bbbb0-223b-4330-8be2-25fc487e26d2"
+    },
+    {
+      "claim_id": "3c8351be-dc0b-4c47-beff-7838db8ece2a",
+      "result_id": "9c9bbbb0-223b-4330-8be2-25fc487e26d2"
+    },
+    {
+      "claim_id": "141ad3c2-508c-4f74-9a99-86388ee9d102",
+      "result_id": "62748d82-3c5a-49c4-8612-ea386098e40e"
+    },
+    {
+      "claim_id": "284cab3c-908b-4813-b44a-2660c278b4b6",
+      "result_id": "62748d82-3c5a-49c4-8612-ea386098e40e"
+    },
+    {
+      "claim_id": "a76a2703-8cf9-42f3-a6c5-99676b3cf4b6",
+      "result_id": "62748d82-3c5a-49c4-8612-ea386098e40e"
+    },
+    {
+      "claim_id": "c59a48a1-a977-4154-8435-f155a5687b3d",
+      "result_id": "62748d82-3c5a-49c4-8612-ea386098e40e"
+    },
+    {
+      "claim_id": "530ab563-7651-4c87-9f60-023c0b703800",
+      "result_id": "62748d82-3c5a-49c4-8612-ea386098e40e"
+    },
+    {
+      "claim_id": "dbdec5f2-be3f-406e-beff-b098fd3dfdab",
+      "result_id": "62748d82-3c5a-49c4-8612-ea386098e40e"
+    },
+    {
+      "claim_id": "f809bc2e-5088-4092-ae48-0763a48edb1a",
+      "result_id": "62748d82-3c5a-49c4-8612-ea386098e40e"
+    },
+    {
+      "claim_id": "613bb933-ea8b-4b83-94ad-0655a1050c67",
+      "result_id": "62748d82-3c5a-49c4-8612-ea386098e40e"
+    },
+    {
+      "claim_id": "82689221-6fef-44be-a948-6274160cf621",
+      "result_id": "62748d82-3c5a-49c4-8612-ea386098e40e"
+    },
+    {
+      "claim_id": "c0fd2c90-8aac-49e9-b2f3-9a18b681ab82",
+      "result_id": "62748d82-3c5a-49c4-8612-ea386098e40e"
+    },
+    {
+      "claim_id": "a7965175-53e9-4f7e-bcc7-67767d09adbf",
+      "result_id": "62748d82-3c5a-49c4-8612-ea386098e40e"
+    },
+    {
+      "claim_id": "9aac7860-5996-4631-9770-7a6fa5d602f6",
+      "result_id": "66e43a87-a600-48f4-9bba-b8a2a99c80d7"
+    },
+    {
+      "claim_id": "3948d5fe-db2e-4614-94a9-b0a2f77edd6f",
+      "result_id": "66e43a87-a600-48f4-9bba-b8a2a99c80d7"
+    },
+    {
+      "claim_id": "df21a011-d72e-4a11-afbc-93d4d602c324",
+      "result_id": "66e43a87-a600-48f4-9bba-b8a2a99c80d7"
+    },
+    {
+      "claim_id": "5ad80fc1-0777-430e-86eb-bec92cc73d86",
+      "result_id": "66e43a87-a600-48f4-9bba-b8a2a99c80d7"
+    },
+    {
+      "claim_id": "508b404b-8f9c-4200-8cd7-ef60448b5085",
+      "result_id": "66e43a87-a600-48f4-9bba-b8a2a99c80d7"
+    },
+    {
+      "claim_id": "12c80318-eed6-4f92-9b84-4559856a89ab",
+      "result_id": "66e43a87-a600-48f4-9bba-b8a2a99c80d7"
+    },
+    {
+      "claim_id": "422699e9-f84d-4356-b148-95d41968c9cd",
+      "result_id": "66e43a87-a600-48f4-9bba-b8a2a99c80d7"
+    },
+    {
+      "claim_id": "6ce70d23-2f2d-4d00-8e2b-56ca250c9aac",
+      "result_id": "66e43a87-a600-48f4-9bba-b8a2a99c80d7"
+    },
+    {
+      "claim_id": "ff43b172-2d70-4192-b4c9-cc742496eb1a",
+      "result_id": "66e43a87-a600-48f4-9bba-b8a2a99c80d7"
+    },
+    {
+      "claim_id": "d96f4c92-c66e-4cf6-b946-f81789da66b7",
+      "result_id": "66e43a87-a600-48f4-9bba-b8a2a99c80d7"
+    },
+    {
+      "claim_id": "8b6ccff6-74ee-4f21-a64c-198b6a52d015",
+      "result_id": "66e43a87-a600-48f4-9bba-b8a2a99c80d7"
+    },
+    {
+      "claim_id": "560fa8ac-9252-4cbc-bb92-d943250d56f4",
+      "result_id": "66e43a87-a600-48f4-9bba-b8a2a99c80d7"
+    },
+    {
+      "claim_id": "fd9cf0fc-9bb2-4389-9596-7173302830ca",
+      "result_id": "66e43a87-a600-48f4-9bba-b8a2a99c80d7"
+    },
+    {
+      "claim_id": "83db7f0c-be06-439c-afc5-499b1a47a3a5",
+      "result_id": "66e43a87-a600-48f4-9bba-b8a2a99c80d7"
+    },
+    {
+      "claim_id": "54bd10e4-d876-4feb-a170-34fab4e575c5",
+      "result_id": "66e43a87-a600-48f4-9bba-b8a2a99c80d7"
+    },
+    {
+      "claim_id": "a58f0e8d-af7d-49e7-a813-f9e019f0b754",
+      "result_id": "66e43a87-a600-48f4-9bba-b8a2a99c80d7"
+    },
+    {
+      "claim_id": "3f1ef879-7688-42df-b204-8f31b4705462",
+      "result_id": "66e43a87-a600-48f4-9bba-b8a2a99c80d7"
+    },
+    {
+      "claim_id": "e465302f-ac42-49d8-acf1-0ec6f5a21030",
+      "result_id": "66e43a87-a600-48f4-9bba-b8a2a99c80d7"
+    },
+    {
+      "claim_id": "3fd06230-c1ff-4db3-bf9e-258a5b7a6ec4",
+      "result_id": "66e43a87-a600-48f4-9bba-b8a2a99c80d7"
+    },
+    {
+      "claim_id": "96bc8262-3f55-43ec-b8f6-04bc6413be6c",
+      "result_id": "66e43a87-a600-48f4-9bba-b8a2a99c80d7"
+    },
+    {
+      "claim_id": "f8d90043-3ece-4c7b-9923-afebbce764cf",
+      "result_id": "66e43a87-a600-48f4-9bba-b8a2a99c80d7"
+    },
+    {
+      "claim_id": "9a7ce059-8032-4971-ad40-111358fb12a3",
+      "result_id": "66e43a87-a600-48f4-9bba-b8a2a99c80d7"
+    },
+    {
+      "claim_id": "e34db77c-6316-4b31-b1ce-b9d7a22afe24",
+      "result_id": "66e43a87-a600-48f4-9bba-b8a2a99c80d7"
+    },
+    {
+      "claim_id": "8639383f-ac6b-4ce6-818b-2f3f2f0c73d3",
+      "result_id": "66e43a87-a600-48f4-9bba-b8a2a99c80d7"
+    },
+    {
+      "claim_id": "c84b13f4-2a3e-4439-8191-45e100bd9530",
+      "result_id": "66e43a87-a600-48f4-9bba-b8a2a99c80d7"
+    },
+    {
+      "claim_id": "e596215e-1f95-4922-b1f1-30e7384dc9fa",
+      "result_id": "66e43a87-a600-48f4-9bba-b8a2a99c80d7"
+    },
+    {
+      "claim_id": "61189d38-fbe5-4602-9151-4fc233fa4af3",
+      "result_id": "66e43a87-a600-48f4-9bba-b8a2a99c80d7"
+    },
+    {
+      "claim_id": "31007880-69a0-48d6-9791-fc543ff1764e",
+      "result_id": "66e43a87-a600-48f4-9bba-b8a2a99c80d7"
+    },
+    {
+      "claim_id": "60491f1a-821e-408d-bf60-d98eb237bf35",
+      "result_id": "66e43a87-a600-48f4-9bba-b8a2a99c80d7"
+    },
+    {
+      "claim_id": "ff09aee5-dade-4da8-a7d2-5acbb1d8ff8b",
+      "result_id": "66e43a87-a600-48f4-9bba-b8a2a99c80d7"
+    },
+    {
+      "claim_id": "140fcdab-458c-41bb-a648-57eae513c04c",
+      "result_id": "66e43a87-a600-48f4-9bba-b8a2a99c80d7"
+    },
+    {
+      "claim_id": "e9f8f6ea-f85e-45c8-81b6-caf31ace36ed",
+      "result_id": "f0c9f445-f985-4479-aebd-924bc691c6e5"
+    },
+    {
+      "claim_id": "355b73fc-83e3-4640-b6a3-f7b41d797e0a",
+      "result_id": "f0c9f445-f985-4479-aebd-924bc691c6e5"
+    },
+    {
+      "claim_id": "7e680171-801e-48f9-9ec7-e192890692c9",
+      "result_id": "f0c9f445-f985-4479-aebd-924bc691c6e5"
+    },
+    {
+      "claim_id": "a670578b-7ffb-45ca-a022-bed68bb575c6",
+      "result_id": "f0c9f445-f985-4479-aebd-924bc691c6e5"
+    },
+    {
+      "claim_id": "f5595048-ba7c-4487-9825-ff1c4fb6bb74",
+      "result_id": "f0c9f445-f985-4479-aebd-924bc691c6e5"
+    },
+    {
+      "claim_id": "1e5f8018-5790-444b-8534-771f106d907e",
+      "result_id": "f0c9f445-f985-4479-aebd-924bc691c6e5"
+    },
+    {
+      "claim_id": "29704bc8-14f8-4a65-98fb-7a870ad69b06",
+      "result_id": "f0c9f445-f985-4479-aebd-924bc691c6e5"
+    },
+    {
+      "claim_id": "7c8762eb-6bde-4f93-91ea-4715d15d244d",
+      "result_id": "f0c9f445-f985-4479-aebd-924bc691c6e5"
+    },
+    {
+      "claim_id": "062f60e3-ad89-465b-9a7e-f7fb592989ab",
+      "result_id": "f0c9f445-f985-4479-aebd-924bc691c6e5"
+    },
+    {
+      "claim_id": "551524b5-c55f-462f-8eb0-c0c44ce034db",
+      "result_id": "f0c9f445-f985-4479-aebd-924bc691c6e5"
+    },
+    {
+      "claim_id": "c226a87f-6684-455f-be77-68957fa076f8",
+      "result_id": "f0c9f445-f985-4479-aebd-924bc691c6e5"
+    },
+    {
+      "claim_id": "679f9f2e-9e51-4057-a3e9-e5852029dde3",
+      "result_id": "f0c9f445-f985-4479-aebd-924bc691c6e5"
+    },
+    {
+      "claim_id": "3bd1338f-db5a-44ca-8105-a797d1709630",
+      "result_id": "f0c9f445-f985-4479-aebd-924bc691c6e5"
+    },
+    {
+      "claim_id": "c9bb7388-c893-4201-a4d9-f66c5d768b2d",
+      "result_id": "f0c9f445-f985-4479-aebd-924bc691c6e5"
+    },
+    {
+      "claim_id": "2e124a01-9800-44b5-8350-c96e82b375bd",
+      "result_id": "f0c9f445-f985-4479-aebd-924bc691c6e5"
+    },
+    {
+      "claim_id": "2f167f10-4683-424d-a4d1-44c2a457ff8d",
+      "result_id": "f0c9f445-f985-4479-aebd-924bc691c6e5"
+    },
+    {
+      "claim_id": "0388b6ae-db53-4a41-ad88-9378abcf6ae4",
+      "result_id": "bb7b2212-de15-4d72-aaa1-686be95a61f7"
+    },
+    {
+      "claim_id": "441f4910-f1c5-4afb-9e2d-ade47e51598c",
+      "result_id": "bb7b2212-de15-4d72-aaa1-686be95a61f7"
+    },
+    {
+      "claim_id": "1755a557-953c-47fd-be21-b4f8e692effa",
+      "result_id": "bb7b2212-de15-4d72-aaa1-686be95a61f7"
+    },
+    {
+      "claim_id": "67651b7a-9490-4643-9bc1-458f2d7cb360",
+      "result_id": "bb7b2212-de15-4d72-aaa1-686be95a61f7"
+    },
+    {
+      "claim_id": "9273f5ce-5406-4248-a797-0a4623a6e200",
+      "result_id": "bb7b2212-de15-4d72-aaa1-686be95a61f7"
+    },
+    {
+      "claim_id": "81c9848c-9e29-4692-b6e5-9c498256efde",
+      "result_id": "44d07b68-97eb-47f3-8f9d-ab2eeb78cce4"
+    },
+    {
+      "claim_id": "575dbf75-42c1-46a4-8223-0fad38cae8d5",
+      "result_id": "44d07b68-97eb-47f3-8f9d-ab2eeb78cce4"
+    },
+    {
+      "claim_id": "75a0bad2-cdef-4dd4-8003-6a65e8fdf2de",
+      "result_id": "44d07b68-97eb-47f3-8f9d-ab2eeb78cce4"
+    },
+    {
+      "claim_id": "dba7063b-b9fe-4c91-88ab-0bccf9a3b090",
+      "result_id": "44d07b68-97eb-47f3-8f9d-ab2eeb78cce4"
+    },
+    {
+      "claim_id": "8001a498-7cd4-495d-933d-36835d95bc4a",
+      "result_id": "44d07b68-97eb-47f3-8f9d-ab2eeb78cce4"
+    },
+    {
+      "claim_id": "10faee11-f653-4345-917a-00ee5ef91d10",
+      "result_id": "44d07b68-97eb-47f3-8f9d-ab2eeb78cce4"
+    },
+    {
+      "claim_id": "9462a977-1841-4467-9a4e-db26dcb90a2c",
+      "result_id": "d37bc921-b19e-48a8-80b9-db1ab0121f23"
+    },
+    {
+      "claim_id": "9d21e212-8967-4d88-86d4-95de34824d1e",
+      "result_id": "d37bc921-b19e-48a8-80b9-db1ab0121f23"
+    },
+    {
+      "claim_id": "20ca3fdb-26c0-487e-915a-6f3d50f69fa0",
+      "result_id": "d37bc921-b19e-48a8-80b9-db1ab0121f23"
+    },
+    {
+      "claim_id": "839a0bbf-0e16-4c67-9202-5c3ad062f2c4",
+      "result_id": "d37bc921-b19e-48a8-80b9-db1ab0121f23"
+    },
+    {
+      "claim_id": "bd8f2e6c-fabb-4270-b06f-6522a07e92a0",
+      "result_id": "d37bc921-b19e-48a8-80b9-db1ab0121f23"
+    },
+    {
+      "claim_id": "bfe53b43-7408-4b0f-acb4-a2d5651eac57",
+      "result_id": "d37bc921-b19e-48a8-80b9-db1ab0121f23"
+    },
+    {
+      "claim_id": "ab9824a0-854e-49f2-842d-56919ac279e9",
+      "result_id": "98a6cb9b-8285-4466-8c94-db534f846fac"
+    },
+    {
+      "claim_id": "769677fe-ba8c-46c6-8366-950fa12c7240",
+      "result_id": "98a6cb9b-8285-4466-8c94-db534f846fac"
+    },
+    {
+      "claim_id": "b17ccd39-cf57-46b8-8206-e5b2ea1d23e2",
+      "result_id": "98a6cb9b-8285-4466-8c94-db534f846fac"
+    },
+    {
+      "claim_id": "b5b44c37-b30f-4b5e-bd37-ea4e94d4adee",
+      "result_id": "98a6cb9b-8285-4466-8c94-db534f846fac"
+    },
+    {
+      "claim_id": "00bb4431-5aa2-47bd-8be1-3b903c8f32ee",
+      "result_id": "98a6cb9b-8285-4466-8c94-db534f846fac"
+    },
+    {
+      "claim_id": "a0bd0139-e917-4da2-9b5a-83e201fd04db",
+      "result_id": "98a6cb9b-8285-4466-8c94-db534f846fac"
+    },
+    {
+      "claim_id": "e6fd41ae-802a-44d7-828f-c4b44d7458c7",
+      "result_id": "98a6cb9b-8285-4466-8c94-db534f846fac"
+    },
+    {
+      "claim_id": "a760bef0-f2ae-4052-bcfe-3aa8efca4c53",
+      "result_id": "874d57aa-c4ab-42b7-8c2a-debbb1343a9d"
+    },
+    {
+      "claim_id": "225dc686-a54a-4f99-83ab-e5fd34d1d14e",
+      "result_id": "874d57aa-c4ab-42b7-8c2a-debbb1343a9d"
+    },
+    {
+      "claim_id": "f41f6b24-683c-40d8-b36b-421415a9d2c6",
+      "result_id": "874d57aa-c4ab-42b7-8c2a-debbb1343a9d"
+    },
+    {
+      "claim_id": "ed840a1c-e17f-4dab-a5d9-021169a4050b",
+      "result_id": "874d57aa-c4ab-42b7-8c2a-debbb1343a9d"
+    },
+    {
+      "claim_id": "7ae712d0-fbc8-47f0-974e-0c990ef47a0e",
+      "result_id": "c3116b51-44c1-4806-adc4-8e774d3076e9"
+    },
+    {
+      "claim_id": "b80d0179-f8c7-46b3-ac1a-5e09cd28b150",
+      "result_id": "c3116b51-44c1-4806-adc4-8e774d3076e9"
+    },
+    {
+      "claim_id": "acd2f2a7-c79d-49b9-abad-b98a03f02c51",
+      "result_id": "c3116b51-44c1-4806-adc4-8e774d3076e9"
+    },
+    {
+      "claim_id": "be236975-9a04-489c-8e0b-2cce89036fb5",
+      "result_id": "08c78abb-626a-4141-92a1-cefb01a32d6d"
+    },
+    {
+      "claim_id": "171675b9-01a5-4a4d-a1e3-663f03ea67c0",
+      "result_id": "72524f93-0502-413e-ad03-b128cedd14df"
+    },
+    {
+      "claim_id": "50b6739b-3f71-40fc-9fd1-13a841761109",
+      "result_id": "72524f93-0502-413e-ad03-b128cedd14df"
+    },
+    {
+      "claim_id": "cbafeff5-72e8-4e9b-a950-9546bb5ecb7b",
+      "result_id": "72524f93-0502-413e-ad03-b128cedd14df"
+    },
+    {
+      "claim_id": "2cb71653-b20b-4dbb-a1da-289075d28a5c",
+      "result_id": "72524f93-0502-413e-ad03-b128cedd14df"
+    },
+    {
+      "claim_id": "5ecfc44b-b778-48fd-a563-858b71397f91",
+      "result_id": "72524f93-0502-413e-ad03-b128cedd14df"
+    },
+    {
+      "claim_id": "5353f3c5-38ab-469c-9131-aa2f87f50d4c",
+      "result_id": "72524f93-0502-413e-ad03-b128cedd14df"
+    },
+    {
+      "claim_id": "e0aee341-c2db-4a1b-8622-d94691039cdc",
+      "result_id": "72524f93-0502-413e-ad03-b128cedd14df"
+    },
+    {
+      "claim_id": "729470e1-cd11-4705-b07b-823d31ec9812",
+      "result_id": "354b6be7-9c17-4cec-98b9-d43a2bf4bb15"
+    },
+    {
+      "claim_id": "017d5828-f22c-46bd-860a-e43ef4c7bbc7",
+      "result_id": "354b6be7-9c17-4cec-98b9-d43a2bf4bb15"
+    },
+    {
+      "claim_id": "f86cbd1f-7a0a-451b-8f17-6cbd815aad01",
+      "result_id": "354b6be7-9c17-4cec-98b9-d43a2bf4bb15"
+    },
+    {
+      "claim_id": "c056ff3c-ce1e-4d7b-9aaf-55f06fc4cf04",
+      "result_id": "354b6be7-9c17-4cec-98b9-d43a2bf4bb15"
+    },
+    {
+      "claim_id": "7e976fbd-5069-4967-8bd6-a28d46dbd69a",
+      "result_id": "354b6be7-9c17-4cec-98b9-d43a2bf4bb15"
+    },
+    {
+      "claim_id": "a4e7daec-7fee-4f2f-bd7e-d1906515c5b2",
+      "result_id": "354b6be7-9c17-4cec-98b9-d43a2bf4bb15"
+    },
+    {
+      "claim_id": "14fbd2a5-84ef-49c1-a51b-03ce46b4fb38",
+      "result_id": "354b6be7-9c17-4cec-98b9-d43a2bf4bb15"
+    },
+    {
+      "claim_id": "9950e6cb-23b0-44bc-bb54-ef6bf645d3e8",
+      "result_id": "354b6be7-9c17-4cec-98b9-d43a2bf4bb15"
+    },
+    {
+      "claim_id": "ab0d17a5-6d4b-48d3-8111-5b6ceb8aa894",
+      "result_id": "e1e64d18-3794-498c-b85f-334e990ce23f"
+    },
+    {
+      "claim_id": "3374fc29-bcfc-4a09-bd60-a8f84b331bf8",
+      "result_id": "e1e64d18-3794-498c-b85f-334e990ce23f"
+    },
+    {
+      "claim_id": "1a4c749b-e234-44ca-816a-64ff10b14138",
+      "result_id": "1fafb75f-c917-456f-82bb-ae3cdf3e0784"
+    },
+    {
+      "claim_id": "4d095883-e8ad-464b-a419-86b680e4d293",
+      "result_id": "1fafb75f-c917-456f-82bb-ae3cdf3e0784"
+    }
+  ],
+  "comparisons": []
+}

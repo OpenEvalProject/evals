@@ -1,0 +1,265 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "The study recruited 33 participants, with 24 included in the final analysis after exclusions for task learning failure (n=3), falling asleep (n=1), and technical/data quality issues (n=5). A control experiment tested 6 additional participants. All participants were aged 18-40 with normal/corrected vision and provided informed consent under ethical approval.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C74 provide complete documentation of participant recruitment, exclusion criteria, and ethical procedures. The exclusion criteria are clearly justified and the final sample size (n=24) is adequately documented with appropriate demographic information.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "EEG data was acquired at 1000 Hz using Synamps amplifiers with 61 scalp electrodes (10-20 layout), bipolar EOG electrodes, ground electrode on left elbow, referenced to left mastoid (later re-referenced to average of both mastoids), with impedances maintained below 15 k\u03a9.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C82 provide standard and complete documentation of EEG acquisition parameters. All technical specifications are clearly stated and follow conventional practices for EEG recording.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C75"
+    ],
+    "result": "Participants showed behavioral adaptations to response period frequency and duration: they were less likely to detect and slower to respond when response periods were RARE vs FREQUENT, requiring more cumulative evidence (up to 3.5s prior to response). Response periods were detected more frequently when LONG vs SHORT, though participants were more conservative (slower RT) for LONG periods. Detection improved with higher motion coherence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C19, C75 are well-supported by statistical analyses with appropriate repeated-measures ANOVAs, clear p-values, and F-statistics. The integration kernel analysis (C17) uses permutation-based correction for multiple comparisons. The behavioral patterns are internally consistent and shown in Figure 2.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C76",
+      "C77"
+    ],
+    "result": "False alarm rates were lower in LONG vs SHORT conditions but unaffected by response period frequency. Integration kernels from false alarms showed exponential decay weighting and were more temporally extended for RARE vs FREQUENT conditions. Stimulus variance affected detection probability but did not alter main effects of coherence, frequency, and length.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C23, C76-C77 are supported by appropriate statistical tests (repeated-measures ANOVA, logistic mixed effects models). The exponential decay finding (C22-C23) is critical for demonstrating continuous evidence integration during baseline periods. The variance analysis (C76-C77) appropriately controls for a potential confound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C24",
+      "C26",
+      "C47",
+      "C48",
+      "C63"
+    ],
+    "result": "An exponential decay model (k(t)=Ae^(-t/\u03c4)) provided good fits to individual integration kernels (median R\u00b2=0.82). The decay time constant \u03c4 was significantly longer for RARE vs FREQUENT conditions but amplitude parameter A did not differ. Substantial inter-individual variability in \u03c4 exceeded between-condition variability, with some participants integrating over several seconds and others rapidly discounting past evidence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24, C26, C47-C48, C63 are well-supported by model fitting statistics, cross-condition reliability analyses, and statistical comparisons. The high R\u00b2 values and confidence intervals demonstrate good model fit. The finding of greater inter-individual than between-condition variability is clearly documented in Figure 3c and supplements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C31"
+    ],
+    "result": "Computational modeling with the Ornstein-Uhlenbeck process showed that optimal performance required reducing leak (\u03bb) when response periods were LONG vs SHORT, and increasing decision threshold (\u03b8) when response periods were RARE vs FREQUENT. The amplitude parameter A of integration kernels was affected by manipulations of both \u03b8 and \u03bb.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C29, C31 are supported by systematic computational modeling shown in Figures 4-5. The grid search over parameter space and analysis of optimal parameterizations provide clear evidence for these conclusions. However, the authors note some inconsistency with behavioral false alarm rates, suggesting additional factors may be involved.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Deconvolutional GLM analysis revealed that jump events and |\u0394evidence| elicited positive-going centroparietal potentials peaking ~300ms post-event, consistent with P300 and CPP components. A triphasic potential over centroparietal electrodes responded to continuous |evidence|, similar to decision update signals in prior trial-based studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C36 are supported by the deconvolutional GLM analysis shown in Figure 6. The scalp topographies, timecourses, and comparisons to prior literature (C33-C34, C36) are appropriately cited. The methodology for separating overlapping responses is sound, though the interpretations linking to P300/CPP (C33-C34) are somewhat inferential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C3",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "The CPP became more sensitive to fluctuations in sensory evidence when response periods were RARE vs FREQUENT: centroparietal responses to \u0394evidence were larger (p=0.017), and preparatory motor activity reached a larger decision threshold (p=0.041) with greater beta desynchronization. No significant differences were found between SHORT vs LONG conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C37-C40 are supported by cluster-based permutation tests controlling for multiple comparisons (Figure 7). The statistical approach is appropriate for time-series EEG data. The lack of SHORT/LONG effects (C40) is a negative result but is clearly documented with appropriate statistical tests.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C4",
+      "C41"
+    ],
+    "result": "The CPP is primarily sensitive to decision-relevant sensory input: centroparietal responses to jump events and |\u0394evidence| were substantially reduced for decision-irrelevant (vertical) motion compared to decision-relevant (horizontal) motion in a control experiment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C41 are supported by the control experiment with superimposed vertical motion (Figure 8, n=6 participants). This demonstrates that the centroparietal responses are not simply driven by low-level sensory surprise but reflect decision-relevant processing. The control is well-designed and appropriately analyzed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C44",
+      "C55"
+    ],
+    "result": "A triphasic occipito-parietal component encodes the sum of recently accumulated sensory evidence, and its amplitude (specifically the negative-going component from ~420ms onwards) reliably predicted individual differences in integration time constant \u03c4 across all four conditions (Spearman's \u03c1 = -0.45 to -0.53, all p<0.027).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6, C44, C55 are supported by the deconvolutional GLM analysis and behavioral-neural correlations (Figure 9). The replication across all four independent conditions (C44) substantially strengthens confidence in this exploratory finding. The correlation is consistently negative across conditions, suggesting a true relationship between neural encoding and behavioral integration.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C7",
+      "C56"
+    ],
+    "result": "A shift in decision threshold between environments is reflected in pre-decision EEG activity magnitude. The pre-response central potential and beta-band signals may reflect threshold changes between RARE and FREQUENT conditions, though the precise functional role remains unclear.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C7 is supported by computational modeling and EEG data (Figure 7b), but C56 acknowledges uncertainty about the functional interpretation. The authors note they could not detect changes in lateralized beta power (C57), which would be expected for choice-specific signals. The interpretation as threshold changes is plausible but speculative, with alternative explanations (e.g., readiness potential, C58) also proposed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C57"
+    ],
+    "result": "No evidence was found for across-subject correlations between integration decay time constants and EEG responses to jump events (\u0394evidence), between amplitude parameters (A) and any EEG regressors, or for changes in lateralized beta power related to specific choice formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C46, C57 report negative results that are clearly documented. These null findings are important for constraining interpretations and are appropriately reported. The lack of correlation with jump event responses (C45) contrasts with the positive correlation for continuous evidence (C55), suggesting specificity in the brain-behavior relationships.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C49"
+    ],
+    "result": "Both between-condition and between-subject variability in evidence integration were reflected by changes in centroparietal EEG responses to time-varying sensory evidence fluctuations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C49 is supported by the combined findings showing condition effects (C37-C39) and individual difference correlations (C44, C55). This represents an integrative conclusion across multiple analyses demonstrating that EEG signals track both experimental manipulations and stable individual differences in integration behavior.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "The centroparietal responses to |\u0394evidence| are consistent with changepoint detection accounts of continuous decision-making, where decision-relevant input is evaluated for latent state changes. The triphasic potential is similar to previous evidence accumulation studies. Changepoint detection may help suppress activity and attend to salient evidence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C52-C54 represent interpretations of the data in relation to theoretical frameworks. While the data (Figure 6b, 8) support the presence of these signals, the mechanistic interpretations are speculative. C52 appropriately cites relevant theoretical work, but C53 is explicitly speculative about functional utility. These are reasonable interpretations but require further experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C64",
+      "C65"
+    ],
+    "result": "Different individuals might achieve similar performance by occupying different locations in the parameter space of leak and threshold. During training, participants could have optimized parameters to maximize points but ended up at different locations on the 'ridge' of optimal parameters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C64-C65 are inferences from the computational modeling (Figure 4a) that provide a potential explanation for inter-individual variability. While the modeling demonstrates a ridge of optimal parameters, the claim that training led participants to different locations on this ridge is speculative. Alternative explanations (e.g., stable trait-like differences) are also discussed by the authors.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C50",
+      "C51"
+    ],
+    "result": "Prior work has established that CPP shows accumulator-like dynamics during trial-based decision-making, motor preparation signals emerge pre-response, and both humans and animals can adapt evidence accumulation decay and thresholds to different environments. The P300 has been associated with surprise detection and proposed as equivalent to CPP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C8-C14, C50-C51 accurately summarize established findings from prior literature with appropriate citations. These provide necessary context for the current study. The citations appear accurate and the characterizations of prior work are fair, though the equivalence of P300 and CPP (C51) remains somewhat debated in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Continuous paradigms allow relating time-varying input to output variables, can dramatically reduce experiment duration compared to trial-based designs, yield improved signal-to-noise ratios, and benefit from high event density (>1000 jump events per 5-min block) that limits 'dead time' in experimental designs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C62 accurately describe methodological advantages of continuous paradigms with appropriate citations to prior work. C62 provides specific quantification of event density in the current study. These claims are well-supported by the cited literature and the authors' own implementation.",
+    "result_type": "MINOR"
+  }
+]

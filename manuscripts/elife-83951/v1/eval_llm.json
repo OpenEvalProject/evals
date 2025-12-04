@@ -1,0 +1,470 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "The C/EBP\u03b1 R35A mutant dramatically accelerates B cell to macrophage transdifferentiation (BMT), producing functional macrophage-like cells similar to wild-type C/EBP\u03b1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C8 demonstrate that the R35A mutation recapitulates the accelerated BMT phenotype, with cells showing macrophage morphology, phagocytic capacity, and F-actin organization (C7) comparable to wild-type-induced cells. The phenotypic characterization by FACS (C6) and functional assays (C7) provide converging evidence for this major finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "C/EBP\u03b1R35A accelerates gene expression changes during BMT, with the largest differences occurring at early timepoints (0-1 hpi), showing faster activation of macrophage genes and silencing of B cell genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "RNA-seq analysis (C9-C10) and hierarchical clustering with GO enrichment (C11-C12) demonstrate that R35A-induced cells at 1 hpi resemble WT cells at 18 hpi. The data show coordinated acceleration of both macrophage gene activation and B cell gene silencing, supported by multiple biological replicates and appropriate statistical analyses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "C/EBP\u03b1R35A accelerates chromatin accessibility changes at both macrophage and B cell gene regulatory elements, with immediate chromatin closing at B cell GREs contrasting with transient opening by wild-type C/EBP\u03b1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "ATAC-seq analysis identified 91,830 differentially accessible regions (C13), with PCA confirming acceleration (C14). The data show rapid chromatin opening at macrophage genes (C15) and immediate closing at B cell genes by R35A (C16), while WT shows transient opening. This is a key mechanistic finding supported by genome-wide chromatin accessibility profiling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "The accelerated BMT by C/EBP\u03b1R35A is not due to differences in DNA binding affinity but correlates with enrichment of specific transcription factor motifs, particularly PU.1, at differentially accessible chromatin regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "EMSA shows no difference in DNA binding between WT and R35A (C17), ruling out this mechanism. Motif analysis reveals enrichment of AP-1 motifs at opening GREs (C18), ETS family motifs at closing GREs (C19), and PU.1 motifs at both (C20), suggesting protein-protein interactions rather than DNA binding drive the phenotype.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "C/EBP\u03b1R35A shows increased interaction with PU.1 compared to wild-type C/EBP\u03b1, demonstrated by multiple orthogonal protein interaction assays.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Three independent methods converge on the same conclusion: proximity-dependent biotin labeling shows 3.6-fold increase (C21), Co-IP shows ~2-fold increase (C22), and PLA shows significantly higher nuclear dots (C23). The consistency across methods with different technical principles strongly supports this key mechanistic finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "In fibroblasts, C/EBP\u03b1R35A synergizes more strongly with PU.1 to activate macrophage markers than wild-type C/EBP\u03b1, and this is not due to increased protein stability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "FACS data show stronger Mac-1 activation with R35A+PU.1 (C24), supported by morphological changes (C25). Cycloheximide experiments demonstrate similar stability but 20-30% lower steady-state expression of R35A (C26), ruling out increased protein levels as the mechanism and strengthening the gain-of-function interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C27",
+      "C28"
+    ],
+    "result": "Single-molecule tracking reveals that C/EBP\u03b1R35A in combination with PU.1 shows enhanced chromatin opening activity, with stronger effects at early timepoints (6 hpi) that diminish by 24 hpi.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "SMT experiments show R35A+PU.1 substantially decreases interaction with low mobility chromatin (closed) and increases interaction with high mobility chromatin (open) at 6 hpi (C27), with effects becoming milder at 24 hpi (C28). This temporal pattern is consistent with the RNA-seq and ATAC-seq data showing early acceleration.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "At the Cyfip2-Havcr2 locus, PU.1 redistributes from B cell GREs to macrophage GREs during BMT, with C/EBP\u03b1R35A accelerating this redistribution and showing selective binding to M-GREs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Analysis of a representative locus using published data (C29-C30) and new ChIP-seq at 3 hpi (C31-C32) demonstrates differential PU.1 and C/EBP\u03b1 occupancy. ATAC-seq kinetics (C33) show R35A induces immediate B-GRE closing while WT shows transient opening. This locus-specific analysis provides detailed mechanistic insight supporting the genome-wide findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Genome-wide analysis reveals that sites with reduced PU.1 binding in R35A cells show accelerated chromatin closing and B cell GO term enrichment, while sites with increased PU.1 binding show accelerated opening and myeloid GO term enrichment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "ChIP-seq identified 4310 differentially bound PU.1 sites, with ATAC-seq showing that 1647 'Less' sites close faster in R35A cells (C34-C35) and 2650 'More' sites open faster (C36). GO analysis confirms appropriate lineage associations (C37). This genome-wide analysis strongly supports the PU.1 redistribution model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "C/EBP\u03b1 binding shows similar redistribution patterns to PU.1, with strong positive correlation between the two factors and no inverse relationships.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Analysis of 7144 differentially occupied C/EBP\u03b1 sites shows 70% of 'Less' bound sites close faster in R35A cells (C38-C39). Overlap analysis reveals 783 sites bound less by both factors and 385 bound more by both (C40), with no inverse relationships (C41), demonstrating coordinated binding dynamics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C42"
+    ],
+    "result": "The R35K mutation (lysine substitution) also accelerates BMT, suggesting the effect is not simply due to loss of positive charge.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "PCA of RNA-seq and ATAC-seq data for R35K shows acceleration similar to R35A (C42), though the claim notes differences that are not shown. This control experiment helps distinguish between charge-based and methylation-based mechanisms, though the incomplete presentation of data introduces some uncertainty.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "C/EBP\u03b1 is asymmetrically di-methylated at arginine 35 specifically by Carm1, as demonstrated in both human and mouse cell systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Immunoprecipitation with asymmetric di-methylation-specific antibodies detects methylated C/EBP\u03b1WT but not R35A in human BLaER2 cells (C43) and 293T cells (C44). Co-transfection experiments with multiple PRMTs show only Carm1 methylates C/EBP\u03b1 (C45). The use of modification-specific antibodies and multiple cell systems provides strong evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Carm1 specifically methylates arginine 35 of C/EBP\u03b1, with both wild-type and R35A proteins capable of interacting with Carm1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Co-IP shows both WT and R35A interact with Carm1 (C46). In vitro methylation with 14 peptides spanning C/EBP\u03b1 identifies only R35-containing peptide as substrate (C47). Testing with multiple PRMTs confirms only Carm1 methylates unmethylated R35 peptide (C48). The systematic peptide scanning and enzyme specificity testing provide definitive evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C49"
+    ],
+    "result": "PU.1 interacts more strongly with unmethylated R35 peptide than with asymmetrically di-methylated R35 peptide.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "PRISMA analysis comparing methylated and unmethylated R35 peptides shows stronger PU.1 interaction with unmethylated form (C49). This direct biochemical evidence links methylation status to PU.1 binding affinity, providing a molecular mechanism for the observed cellular phenotypes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C50",
+      "C51"
+    ],
+    "result": "Carm1 gain- and loss-of-function experiments modulate BMT velocity in opposite directions for wild-type but not R35A-expressing cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Carm1 overexpression delays Mac-1 activation and CD19 silencing in WT but not R35A cells (C50), while Carm1 inhibitor TP064 accelerates BMT in WT but not R35A cells (C51). The reciprocal effects in WT cells and lack of effect in R35A cells provide strong genetic evidence that R35 methylation regulates BMT velocity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C52"
+    ],
+    "result": "Single-cell analysis shows cells with lower Carm1 levels transition faster to macrophage identity, with the most substantial differences at early timepoints.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Analysis of published single-cell data shows inverse correlation between Carm1 levels and BMT velocity (C52), with effects most pronounced early. This population-level analysis complements the genetic perturbation experiments and supports the physiological relevance of Carm1-mediated regulation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C53",
+      "C54"
+    ],
+    "result": "Carm1 expression and activity decrease progressively during myeloid differentiation from GMPs to granulocytes to monocytes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "RNA-seq shows steady decrease in Carm1 expression during differentiation (C53), while FACS measurement of AsDM-BAF155 as activity proxy shows 3.5-fold decrease in granulocytes and further 4.5-fold decrease in monocytes compared to GMPs (C54). The correlation between expression and activity supports physiological relevance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C55",
+      "C56"
+    ],
+    "result": "Carm1 inhibition in GMPs biases differentiation toward monocytes and away from granulocytes in a dose-dependent manner without affecting total colony numbers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Colony forming assays with TP064 show dose-dependent reduction in granulocyte colonies and increase in monocyte colonies (C55), with unchanged total colony numbers (C56). This demonstrates that Carm1 activity influences lineage choice rather than cell survival, linking the BMT findings to normal development.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C57",
+      "C58"
+    ],
+    "result": "Carm1 inhibition increases the interaction between endogenous C/EBP\u03b1 and PU.1 in macrophage cells without altering protein expression levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "PLA in RAW 264.7 cells shows 4-5 fold increase in C/EBP\u03b1-PU.1 nuclear dots with TP064 treatment (C57), while immunofluorescence shows similar protein levels (C58). This demonstrates the mechanism operates with endogenous proteins and is not an overexpression artifact.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "The proposed mechanism involves C/EBP\u03b1 binding to PU.1 in B cells, releasing PU.1 from B cell enhancers, followed by PU.1 redistribution to macrophage enhancers, with all steps accelerated by C/EBP\u03b1R35A.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These summary claims (C59-C61) integrate multiple experimental findings including protein interactions (C21-C23), chromatin dynamics (C13-C16, C34-C36), and TF redistribution (C29-C32). The model is well-supported by converging evidence from orthogonal approaches, though it represents an interpretive synthesis rather than direct observation of the complete process.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C62",
+      "C63"
+    ],
+    "result": "Wild-type C/EBP\u03b1 is methylated by Carm1 at arginine 35, and perturbations of Carm1 modulate BMT velocity as predicted.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims summarize the Carm1 methylation findings (C43-C48) and gain/loss-of-function experiments (C50-C51). The evidence is strong and internally consistent, with the predicted effects of Carm1 perturbations matching the R35A phenotype.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C64",
+      "C65"
+    ],
+    "result": "Increasing unmethylated C/EBP\u03b1 in GMPs by Carm1 inhibition biases differentiation toward macrophages, linking cell fate decision velocity and lineage directionality.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The GMP colony assay (C55-C56) demonstrates lineage bias with Carm1 inhibition. The link between velocity and directionality (C65) is a reasonable inference from the combined BMT and GMP data, though it represents a conceptual conclusion rather than direct experimental demonstration of the link.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C93"
+    ],
+    "result": "Chromatin remodeling can be uncoupled from gene expression during BMT, as chromatin accessibility changes occur between 6-18 hpi without corresponding gene expression changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This inference is drawn from comparing ATAC-seq (showing progressive chromatin changes) with RNA-seq (showing minimal gene expression changes) during the 6-18 hpi window. While the observation is clear, the interpretation of 'uncoupling' could benefit from additional mechanistic investigation to rule out alternative explanations such as threshold effects or post-transcriptional regulation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "Background on C/EBP\u03b1 structure, expression, function, and requirement for PU.1 partnership in BMT.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C1-C5) represent established knowledge supported by appropriate citations. They provide necessary context but are not novel findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Background on transcription factor roles in cell fate decisions, post-translational modifications, and Carm1 function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These introductory claims (C66-C70) cite appropriate literature and establish the conceptual framework for the study. They represent consensus knowledge rather than new findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Summary of main findings: Carm1 methylation of R35 regulates BMT velocity through modulation of C/EBP\u03b1-PU.1 interaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These summary claims (C71-C73) integrate the major experimental findings. They are well-supported by the data but represent synthetic conclusions rather than individual experimental results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C74",
+      "C75"
+    ],
+    "result": "C/EBP\u03b1 acts as a trigger for PU.1, which serves as a 'relay' coupling gene silencing and activation, ensuring faithful macrophage transcriptome establishment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The relay model (C74-C75) is a conceptual framework well-supported by the redistribution data (C29-C41) and the coordinated timing of B cell silencing and macrophage activation. However, it represents an interpretive model rather than direct mechanistic proof of the relay function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Discussion of PU.1 expression differences and comparison to similar TF redistribution mechanisms in other systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These discussion points (C76-C80) appropriately cite relevant literature and place the findings in broader context. C80 is speculative but appropriately qualified. These represent scholarly discussion rather than experimental findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C81",
+      "C82"
+    ],
+    "result": "Discussion of alternative mechanisms (citrullination) and validation of TP064 specificity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C81-C82) address potential alternative interpretations with appropriate citations. They strengthen the methylation-specific interpretation but represent discussion of controls rather than primary findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C83",
+      "C84"
+    ],
+    "result": "C/EBP\u03b1 can bind closed chromatin and induce opening, with acceleration by PU.1 and further acceleration by R35A, exceeding other pioneer factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The SMT data (C27-C28) support chromatin opening activity. The comparison to other pioneer factors (C84) relies on citation to Lerner et al., 2020, but the claim of 'exceeding' other factors may require more direct quantitative comparison.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Discussion of potential relevance to AML, with Carm1 deficiency conferring resistance to MLL-AF9 AML and C/EBP\u03b1 being required for AML formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C85-C87) appropriately cite relevant literature and propose a plausible connection to cancer biology. C87 represents a reasonable inference from the GMP data combined with cited knockout studies, though direct experimental validation in the AML context is not provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R32",
+    "claim_ids": [
+      "C88",
+      "C89"
+    ],
+    "result": "Discussion of Carm1-mediated methylation in other developmental contexts (muscle differentiation, embryo development).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C88-C89) cite appropriate literature showing Carm1 roles in other systems. They provide useful context but represent discussion of prior work rather than new findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R33",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Conclusions about post-translational modification balance determining cell fate directionality, challenging current views, and potential broader applicability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These concluding claims (C90-C92) represent reasonable inferences from the data, particularly the GMP experiments (C55-C56). C91 appropriately challenges existing models with new evidence. C92 is speculative but appropriately qualified as 'may apply more broadly.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R34",
+    "claim_ids": [
+      "C94"
+    ],
+    "result": "C/EBP\u03b1 and PU.1 can act as pioneer factors based on their ability to interact with nucleosomes in vitro.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This claim (C94) is supported by appropriate citations and is consistent with the SMT data showing chromatin opening activity. However, it primarily represents discussion of prior work rather than a new finding of this study.",
+    "result_type": "MINOR"
+  }
+]
